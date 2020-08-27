@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à créer, modifier et supprimer les stratégies anti-hameçonnage disponibles dans les organisations Exchange Online Protection (EOP) avec ou sans boîte aux lettres Exchange Online.
-ms.openlocfilehash: af6577d32d43300867d29a365baaa4e1e7e1b5e3
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 3b83bcd3c60dbd779d727a79f6689fdf0004d340
+ms.sourcegitcommit: 195172dd836e8a793e8e0c2db3323b7391bc51ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825748"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "47255756"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>Configurer des stratégies anti-hameçonnage dans EOP
 
@@ -42,7 +42,7 @@ La différence entre ces deux éléments n’est pas évidente lorsque vous gér
 - Lorsque vous modifiez une stratégie anti-hameçonnage, les paramètres associés aux filtres nom, priorité, activé ou désactivé et filtre de destinataires modifient la règle anti-hameçonnage. Tous les autres paramètres modifient la stratégie anti-hameçonnage associée.
 - Lorsque vous supprimez une stratégie anti-hameçonnage, la règle anti-hameçonnage et la stratégie anti-hameçonnage associée sont supprimées.
 
-Dans Exchange Online PowerShell, vous gérez la stratégie et la règle séparément. Pour plus d’informations, consultez la section [utiliser Exchange Online PowerShell pour configurer les stratégies anti-hameçonnage](#use-exchange-online-powershell-to-configure-anti-phishing-policies) , plus loin dans cette rubrique.
+Dans Exchange Online PowerShell, vous gérez la stratégie et la règle séparément. Pour plus d’informations, consultez la section [utiliser Exchange Online PowerShell pour configurer les stratégies anti-hameçonnage](#use-exchange-online-powershell-to-configure-anti-phishing-policies) plus loin dans cet article.
 
 Chaque organisation dispose d’une stratégie anti-hameçonnage intégrée nommée Office antiphishing par défaut, qui comporte les propriétés suivantes :
 
@@ -60,7 +60,7 @@ Pour accroître l’efficacité de la protection anti-hameçonnage, vous pouvez 
 
   Vous ne pouvez pas gérer les stratégies de détection d’hameçonnage dans une version autonome d’EOP PowerShell.
 
-- Des autorisations doivent vous être attribuées avant de pouvoir exécuter ces procédures. décrites dans cette rubrique :
+- Avant de pouvoir effectuer les procédures décrites dans cet article, vous devez disposer des autorisations suivantes :
 
   - Pour ajouter, modifier et supprimer des stratégies de détection d’hameçonnage, vous devez être membre de l’un des groupes de rôles suivants :
 
@@ -72,7 +72,7 @@ Pour accroître l’efficacité de la protection anti-hameçonnage, vous pouvez 
     - **Lecteur de sécurité** dans le [Centre de conformité et sécurité](permissions-in-the-security-and-compliance-center.md).
     - **Gestion de l’organisation en affichage seul** dans[Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
-- Pour être en mesure de créer et de modifier des stratégies de blocage du courrier indésirable dans EOP autonome, vous devez effectuer une opération qui nécessite l' _hydratation_ de votre client. Par exemple, dans le centre d’administration Exchange, vous pouvez accéder à l’onglet **autorisations** , sélectionner un groupe de rôles existant, cliquer sur **modifier** l' ![ icône modifier ](../../media/ITPro-EAC-EditIcon.png) , puis supprimer un rôle (ce que vous devrez finalement rajouter). Si votre locataire n’a jamais été hydraté, vous obtenez une boîte de dialogue intitulée **mettre à jour les paramètres d’organisation** avec une barre de progression qui doit se terminer avec succès. Pour plus d’informations sur la mise en attente, reportez-vous à la cmdlet [Enable-OrganizationCustomization](https://docs.microsoft.com/powershell/module/exchange/enable-organizationcustomization) (qui n’est pas disponible dans la version autonome d’EOP PowerShell ou dans le centre de conformité & Security).
+- Pour créer et modifier des stratégies de détection d’hameçonnage dans un EOP autonome, vous devez effectuer une opération qui nécessite l' _hydratation_ de votre client. Par exemple, dans le centre d’administration Exchange, vous pouvez accéder à l’onglet **autorisations** , sélectionner un groupe de rôles existant, cliquer sur **modifier** l' ![ icône modifier ](../../media/ITPro-EAC-EditIcon.png) , puis supprimer un rôle (ce que vous devrez finalement rajouter). Si votre locataire n’a jamais été hydraté, vous obtenez une boîte de dialogue intitulée **mettre à jour les paramètres d’organisation** avec une barre de progression qui doit se terminer avec succès. Pour plus d’informations sur la mise en attente, reportez-vous à la cmdlet [Enable-OrganizationCustomization](https://docs.microsoft.com/powershell/module/exchange/enable-organizationcustomization) (qui n’est pas disponible dans la version autonome d’EOP PowerShell ou dans le centre de conformité & Security).
 
 - Pour connaître les paramètres recommandés pour les stratégies de détection d’hameçonnage, consultez les paramètres de la [stratégie anti-hameçonnage par défaut EOP](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings).
 
@@ -269,7 +269,7 @@ Vous ne pouvez pas supprimer la stratégie par défaut.
 
 ## <a name="use-exchange-online-powershell-to-configure-anti-phishing-policies"></a>Utiliser Exchange Online PowerShell pour configurer les stratégies anti-hameçonnage
 
-Comme décrit précédemment, une stratégie de blocage du courrier indésirable se compose d’une stratégie anti-hameçonnage et d’une règle anti-hameçonnage.
+Comme décrit précédemment, une stratégie anti-hameçonnage se compose d’une stratégie anti-hameçonnage et d’une règle anti-hameçonnage.
 
 Dans Exchange Online PowerShell, la différence entre les stratégies anti-hameçonnage et les règles anti-hameçonnage est apparente. Vous pouvez gérer les stratégies anti-hameçonnage à l’aide des cmdlets ** \* -antiphishpolicy permet** et gérer les règles anti-hameçonnage à l’aide des cmdlets ** \* -antiphishrule permet** .
 
@@ -308,7 +308,6 @@ New-AntiPhishPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-Enab
 
 Cet exemple crée une stratégie anti-hameçonnage nommée Research Quarantine avec les paramètres suivants :
 
-- La stratégie est activée (nous n’utilisons pas le paramètre _Enabled_ et la valeur par défaut est `$true` ).
 - Description : stratégie de service de recherche.
 - Remplace l’action par défaut pour l’usurpation en quarantaine.
 
@@ -394,7 +393,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 ### <a name="use-powershell-to-modify-anti-phish-policies"></a>Utiliser PowerShell pour modifier des stratégies anti-hameçonnage
 
-À l’exception des éléments suivants, les mêmes paramètres sont disponibles lorsque vous modifiez une stratégie anti-hameçonnage dans PowerShell comme lors de la création de la stratégie, comme décrit dans la section [étape 1 : utiliser PowerShell pour créer une stratégie anti-hameçonnage](#step-1-use-powershell-to-create-an-anti-phish-policy) plus haut dans cette rubrique.
+À l’exception des éléments suivants, les mêmes paramètres sont disponibles lorsque vous modifiez une stratégie anti-hameçonnage dans PowerShell comme lors de la création d’une stratégie, comme décrit dans l' [étape 1 : utiliser PowerShell pour créer une stratégie anti-hameçonnage](#step-1-use-powershell-to-create-an-anti-phish-policy) plus haut dans cet article.
 
 - Le commutateur _MakeDefault_ qui désactive la stratégie spécifiée dans la stratégie par défaut (appliquée à tout le monde, toujours à la priorité la **plus basse** et vous ne pouvez pas le supprimer) n’est disponible que lorsque vous modifiez une stratégie anti-hameçonnage dans PowerShell.
 
@@ -412,7 +411,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 Le seul paramètre qui n’est pas disponible lorsque vous modifiez une règle anti-hameçonnage dans PowerShell est le paramètre _activé_ qui vous permet de créer une règle désactivée. Pour activer ou désactiver les règles anti-hameçonnage existantes, reportez-vous à la section suivante.
 
-Dans le cas contraire, aucun paramètre supplémentaire n’est disponible lorsque vous modifiez une règle anti-hameçonnage dans PowerShell. Les mêmes paramètres sont disponibles lorsque vous créez une règle, comme décrit dans la section [étape 2 : utiliser PowerShell pour créer une règle anti-hameçonnage](#step-2-use-powershell-to-create-an-anti-phish-rule) , plus haut dans cette rubrique.
+Dans le cas contraire, les mêmes paramètres sont disponibles lorsque vous créez une règle, comme décrit dans la section [étape 2 : utiliser PowerShell pour créer une règle anti-hameçonnage](#step-2-use-powershell-to-create-an-anti-phish-rule) , plus haut dans cet article.
 
 Pour modifier une règle anti-hameçonnage, utilisez la syntaxe suivante :
 
@@ -444,7 +443,7 @@ Cet exemple montre comment activer la même règle.
 Enable-AntiPhishRule -Identity "Marketing Department"
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Enable-antiphishrule permet](https://docs.microsoft.com/powershell/module/exchange/enable-AntiPhishrule) et [Disable-antiphishrule permet](https://docs.microsoft.com/powershell/module/exchange/disable-AntiPhishrule).
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Enable-antiphishrule permet](https://docs.microsoft.com/powershell/module/exchange/enable-antiphishrule) et [Disable-antiphishrule permet](https://docs.microsoft.com/powershell/module/exchange/disable-antiphishrule).
 
 ### <a name="use-powershell-to-set-the-priority-of-anti-phish-rules"></a>Utiliser PowerShell pour définir la priorité des règles anti-hameçonnage
 
@@ -513,7 +512,7 @@ Pour vérifier que vous avez bien configuré les stratégies anti-hameçonnage A
   - Sélectionnez la stratégie dans la liste, puis affichez les détails dans le menu volant.
   - Cliquez sur **stratégie par défaut** et affichez les détails dans le menu volant.
 
-- Dans Exchange Online PowerShell, remplacez \<Name\> par le nom de la stratégie ou de la règle, puis exécutez la commande suivante et vérifiez les paramètres :
+- Dans Exchange Online PowerShell, remplacez \<Name\> par le nom de la stratégie ou de la règle, exécutez la commande suivante et vérifiez les paramètres :
 
   ```PowerShell
   Get-AntiPhishPolicy -Identity "<Name>"

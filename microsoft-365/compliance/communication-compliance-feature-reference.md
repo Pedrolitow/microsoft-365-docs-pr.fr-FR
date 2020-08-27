@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: d8025f6abe9f1b68dea0856b2a53139a711198c6
-ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
+ms.openlocfilehash: 5fe8e01e24f38ddd62649349575bd38ec37ccae4
+ms.sourcegitcommit: b144e8ba1ab0c40fa7e0e8e893b5cb44aa2d8243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46632127"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "47282672"
 ---
 # <a name="communication-compliance-feature-reference"></a>Référence de la fonctionnalité de conformité des communications
 
@@ -150,7 +150,7 @@ Pour en savoir plus sur les détails des informations sensibles et les modèles 
 
 ### <a name="custom-keyword-dictionaries"></a>Dictionnaires de mots clés personnalisés
 
-Configurez des dictionnaires de mots clés personnalisés (ou des lexiques) pour fournir une gestion simple des mots clés propres à votre organisation ou votre secteur d’activité. Les dictionnaires de mots clés prennent en charge jusqu’à 100 000 termes par dictionnaire et prennent en charge n’importe quelle langue. Si nécessaire, vous pouvez appliquer plusieurs dictionnaires de mots clés personnalisés à une seule stratégie ou disposer d’un dictionnaire à Mots clés unique par stratégie. Ces dictionnaires sont affectés dans une stratégie de conformité de communication et peuvent être issus d’un fichier (par exemple, une liste. csv ou. txt) ou d’une liste que vous pouvez [importer dans le centre de conformité](create-a-keyword-dictionary.md). Utilisez des dictionnaires personnalisés lorsque vous devez prendre en charge des termes ou des langues propres à votre organisation et à vos stratégies.
+Configurez des dictionnaires de mots clés personnalisés (ou des lexiques) pour fournir une gestion simple des mots clés propres à votre organisation ou votre secteur d’activité. Les dictionnaires de mots clés prennent en charge jusqu’à 100 to de termes (post-compression) dans le dictionnaire et prennent en charge n’importe quelle langue. La limite client est également de 100Ko après compression. Si nécessaire, vous pouvez appliquer plusieurs dictionnaires de mots clés personnalisés à une seule stratégie ou disposer d’un dictionnaire à Mots clés unique par stratégie. Ces dictionnaires sont affectés dans une stratégie de conformité de communication et peuvent être issus d’un fichier (par exemple, une liste. csv ou. txt) ou d’une liste que vous pouvez [importer dans le centre de conformité](create-a-keyword-dictionary.md). Utilisez des dictionnaires personnalisés lorsque vous devez prendre en charge des termes ou des langues propres à votre organisation et à vos stratégies.
 
 ### <a name="classifiers"></a>Classifieurs requêtes
 

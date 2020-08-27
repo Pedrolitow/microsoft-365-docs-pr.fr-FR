@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.custom: seo-marvel-apr2020
 titleSuffix: Microsoft 365 Compliance
-ms.openlocfilehash: eb57a60643eb6168ad9fbbca178a3baf1b26392b
-ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
+ms.openlocfilehash: 7ebb2673d1d275075cf32cd18996837ec4024622
+ms.sourcegitcommit: b144e8ba1ab0c40fa7e0e8e893b5cb44aa2d8243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46632105"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "47282602"
 ---
 # <a name="supervision-policies"></a>Stratégies de surveillance
 
@@ -143,7 +143,7 @@ Pour en savoir plus sur les détails des informations sensibles et les modèles 
 
 #### <a name="custom-keyword-dictionaries"></a>Dictionnaires de mots clés personnalisés
 
-Configurez des dictionnaires de mots clés personnalisés (ou des lexiques) pour fournir une gestion simple des mots clés propres à votre organisation ou votre secteur d’activité. Les dictionnaires de mots clés prennent en charge jusqu’à 100 000 termes par dictionnaire. Si nécessaire, vous pouvez appliquer plusieurs dictionnaires de mots clés personnalisés à une seule stratégie ou disposer d’un dictionnaire à Mots clés unique par stratégie. Ces dictionnaires sont affectés dans une stratégie de surveillance et peuvent être issus d’un fichier (par exemple, une liste. csv ou. txt) ou d’une liste que vous pouvez [importer dans le centre de conformité](create-a-keyword-dictionary.md).
+Configurez des dictionnaires de mots clés personnalisés (ou des lexiques) pour fournir une gestion simple des mots clés propres à votre organisation ou votre secteur d’activité. Les dictionnaires de mots clés prennent en charge jusqu’à 100 to de termes (post-compression) dans le dictionnaire et prennent en charge n’importe quelle langue. La limite client est également de 100Ko après compression. Si nécessaire, vous pouvez appliquer plusieurs dictionnaires de mots clés personnalisés à une seule stratégie ou disposer d’un dictionnaire à Mots clés unique par stratégie. Ces dictionnaires sont affectés dans une stratégie de surveillance et peuvent être issus d’un fichier (par exemple, une liste. csv ou. txt) ou d’une liste que vous pouvez [importer dans le centre de conformité](create-a-keyword-dictionary.md).
 
 #### <a name="offensive-language"></a>Choquant
 

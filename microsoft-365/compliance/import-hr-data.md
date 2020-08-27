@@ -7,19 +7,19 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur de données pour importer les données des employés depuis le système des ressources humaines (RH) de leur organisation vers Microsoft 365. Cela vous permet d’utiliser des données RH dans des stratégies de gestion des risques initiées pour vous aider à détecter les activités d’utilisateurs spécifiques susceptibles de constituer une menace interne pour votre organisation.
-ms.openlocfilehash: 0febd13003cdcb80867bd7f5b91ac482a463895a
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 49589d2e5a6a716a2e224aa28b73bd14f9048d0b
+ms.sourcegitcommit: 195172dd836e8a793e8e0c2db3323b7391bc51ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527586"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "47255767"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-preview"></a>Configurer un connecteur pour importer des données RH (aperçu)
 
@@ -307,6 +307,9 @@ La dernière étape de la configuration d’un connecteur RH consiste à exécut
     ```
 
    Si le chargement réussit, le script affiche le message **chargement réussi** .
+   
+   > [!NOTE]
+   > Si vous rencontrez des problèmes lors de l’exécution de la commande précédente en raison des stratégies excution, voir [about Execution Policies](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_execution_policies) et [Set-ExecutionPolicy](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy) pour obtenir des instructions sur la définition des stratégies d’exécution. 
 
 ## <a name="step-5-monitor-the-hr-connector"></a>Étape 5 : surveiller le connecteur RH
 

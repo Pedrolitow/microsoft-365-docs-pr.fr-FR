@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Découvrez comment les administrateurs peuvent configurer & utiliser un connecteur natif pour importer des données à partir d’une page de la société LinkedIn vers Microsoft 365.
-ms.openlocfilehash: c7801dc7ab00f1193b05a50ae10ee67d78e11065
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 00e4d233efa6ee86111e3497063ad1276b5df041
+ms.sourcegitcommit: 195172dd836e8a793e8e0c2db3323b7391bc51ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818443"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "47255811"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data"></a>Configurer un connecteur pour archiver des données LinkedIn
 
@@ -68,6 +68,6 @@ Après avoir créé le connecteur, vous pouvez revenir à la page **connecteurs 
 
 Pour afficher plus de détails, sélectionnez le connecteur dans la liste sur la page **connecteurs de données** pour afficher la page de menu volant. Sous **État**, la plage de dates affichée indique le filtre d’âge qui a été sélectionné lors de la création du connecteur.
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
 Les éléments LinkedIn sont importés dans le sous-dossier LinkedIn de la boîte de réception de la boîte aux lettres de stockage dans Microsoft 365. Elles apparaissent sous forme de messages électroniques.
