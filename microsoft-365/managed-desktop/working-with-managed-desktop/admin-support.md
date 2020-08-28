@@ -1,5 +1,5 @@
 ---
-title: Aide administrateur pour Bureau géré Microsoft
+title: Aide administrateur pour le Bureau géré Microsoft
 description: ''
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
@@ -9,14 +9,14 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: a29fa11e43e9be5c8175118ad5b54817c463e929
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: fb786383e448ad3f5c78b22f3cdbf282c2c9f906
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529898"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289720"
 ---
-# <a name="admin-support-for-microsoft-managed-desktop"></a>Aide administrateur pour Bureau géré Microsoft
+# <a name="admin-support-for-microsoft-managed-desktop"></a>Aide administrateur pour le Bureau géré Microsoft
 
 Vous pouvez envoyer des tickets de support ou des demandes de commentaires à Microsoft à l’aide du portail d’administration de bureau géré Microsoft. Les demandes de support sont toujours prioritaires sur les envois de commentaires. Les demandes de support sont triées et gérées en fonction de leur gravité, comme indiqué dans le [tableau définition](#sev)de la gravité. Les commentaires sont vérifiés et une réponse vous est proposée. 
 
@@ -65,6 +65,6 @@ Une fois qu’un ticket est dans l’état **atténué** ou **résolu** , vous p
 
 
 ## <a name="additional-resources"></a>Ressources supplémentaires
-- [Prise en charge de l’utilisateur final pour le bureau géré Microsoft](end-user-support.md). 
+- [Prise en charge des utilisateurs pour le bureau géré Microsoft](end-user-support.md). 
 - [Prise en charge du bureau géré Microsoft](../service-description/support.md). 
 - Si vous vous abonnez déjà à Microsoft Managed Desktop, vous trouverez des procédures détaillées, des flux de processus, des instructions de travail et des FAQ dans le Guide de l’administrateur de bureau géré Microsoft dans la section **ressources en ligne** du [portail d’administration de bureau géré Microsoft](https://aka.ms/mwaasportal).

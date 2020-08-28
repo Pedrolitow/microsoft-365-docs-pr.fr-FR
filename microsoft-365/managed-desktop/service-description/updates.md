@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 7e7889cb1540cb2cb164cbbd44e9ec0e480a6fd5
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.openlocfilehash: 1349b58bdd6243b05323f14197e0ad92c1fc0d7b
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44678693"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289494"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>Gestion des mises à jour dans le bureau géré Microsoft
 
@@ -32,7 +32,7 @@ Pour plus d’informations, reportez-vous à la rubrique [Windows Update for Bus
 
 Microsoft Managed Desktop utilise quatre groupes Azure AD pour gérer les mises à jour :
 
-- **Test**: permet de valider les modifications apportées à la stratégie de bureau géré Microsoft, les mises à jour du système d’exploitation, les mises à jour des fonctionnalités et d’autres modifications envoyées au client. Aucun utilisateur final ne doit être placé dans le groupe de test. Le groupe test est exempté de tout contrat de niveau de service établi et de tout support utilisateur final. Ce groupe peut être utilisé pour valider la compatibilité des applications avec de nouvelles modifications de stratégie ou de système d’exploitation.  
+- **Test**: permet de valider les modifications apportées à la stratégie de bureau géré Microsoft, les mises à jour du système d’exploitation, les mises à jour des fonctionnalités et d’autres modifications envoyées au client. Aucun utilisateur ne doit être placé dans le groupe de test. Le groupe test est exempté de tous les contrats de niveau de service établis et de la prise en charge de l’utilisateur. Ce groupe peut être utilisé pour valider la compatibilité des applications avec de nouvelles modifications de stratégie ou de système d’exploitation.  
 - **Tout d’abord**: contient les dispositifs et les exposants logiciels susceptibles d’être soumis aux mises à jour de pré-publication. Les périphériques de ce groupe peuvent être confronté à des pannes s’il existe des scénarios qui n’ont pas été pris en compte lors des tests dans l’anneau de test.
 - **Fast**: hiérarchise la vitesse sur la stabilité. Utile pour détecter les problèmes de qualité avant de les proposer à l’ensemble du groupe. Ce groupe sert de couche de validation suivante, mais est généralement plus stable que le test et les premiers groupes. 
 - **Large**: dernier groupe avec des mises à jour de la qualité et des fonctionnalités disponibles. Ce groupe contient la majorité des utilisateurs dans le client, et favorise ainsi la stabilité de la vitesse pendant le déploiement. Le test des applications doit être réalisé ici, car l’environnement est le plus stable. 
@@ -44,7 +44,7 @@ Pour plus d’informations sur les rôles et les responsabilités liés à ces g
 
 Fonctionnement du déploiement des mises à jour :
 - Le bureau géré Microsoft déploie une nouvelle fonctionnalité ou mise à jour de qualité en fonction de la planification spécifiée ci-dessous.
-- Lors du déploiement, le bureau géré par Microsoft analyse les signes d’échec ou de perturbation (en fonction des données de diagnostic et du système de prise en charge de l’utilisateur final). Si elles sont détectées, le déploiement sur tous les groupes actuels et futurs est immédiatement suspendu.
+- Lors du déploiement, le bureau géré par Microsoft analyse les signes d’échec ou de perturbation (en fonction des données de diagnostic et du système de support utilisateur). Si elles sont détectées, le déploiement sur tous les groupes actuels et futurs est immédiatement suspendu.
     - Exemple : si un problème est découvert pendant le déploiement d’une mise à jour de la qualité pour le premier groupe, les déploiements de mise à jour vers le premier, le plus rapide et le plus large seront suspendus jusqu’à ce que le problème soit résolu.
     - Les problèmes de compatibilité peuvent être signalés en désignant un ticket dans le portail d’administration de bureau géré Microsoft.
 - Les mises à jour de la fonctionnalité et de la qualité sont suspendues indépendamment. La suspension est appliquée pendant 35 jours par défaut, mais elle peut être réduite ou étendue selon que le problème est résolu ou non.
@@ -56,7 +56,7 @@ Fonctionnement du déploiement des mises à jour :
 
 <table>
 <tr><th colspan="5">Mettre à jour les paramètres de déploiement</th></tr>
-<tr><th>Type de mise à jour</th><th>Test</th><th>Premier</th><th>Rapide</th><th>Larges</th></tr>
+<tr><th>Type de mise à jour</th><th>Tester</th><th>Premier</th><th>Rapide</th><th>Larges</th></tr>
 <tr><td>Mises à jour de la qualité pour le système d’exploitation</td><td>0 jour</td><td>0 jour</td><td>0 jour</td><td>3 jours</td></tr>
 <tr><td>Mises à jour de fonctionnalité pour le système d’exploitation</td><td>0 jour</td><td>30 jours</td><td>60 jours</td><td>90 jours</td></tr>
 <tr><td>Pilotes/microprogramme</td><td colspan="4">Suit la planification des mises à jour de la qualité</td></tr>
@@ -75,7 +75,7 @@ Pour plus d’informations sur le canal actuel pour les applications Microsoft 3
 
 Microsoft Managed Desktop ne prend pas en charge les appareils qui font partie du programme Windows Insider. Le programme Windows Insider est utilisé pour valider le logiciel Windows version préliminaire et est destiné aux appareils qui ne sont pas critiques. Bien qu’il s’agit d’une initiative Microsoft importante, il n’est pas destiné à un déploiement étendu dans les environnements de production. 
 
-Tous les appareils trouvés avec des builds Windows Insider peuvent être placés dans le groupe de test et seront exemptés des contrats de niveau de service de mise à jour et du support utilisateur final à partir du bureau géré Microsoft.
+Tous les appareils trouvés avec des builds de Windows Insider peuvent être placés dans le groupe de test et seront exemptés des contrats de niveau de service de mise à jour et du support utilisateur à partir du bureau géré Microsoft.
 
 ## <a name="bandwidth-management"></a>Gestion de la bande passante
 

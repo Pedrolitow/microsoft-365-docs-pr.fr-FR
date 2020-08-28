@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à configurer une boîte aux lettres pour collecter le courrier indésirable et le courrier indésirable transmis par les utilisateurs.
-ms.openlocfilehash: b21a95629e3b84ea77bbee5a988f84c1d55d717f
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 458938105d03cb82dfa4e9a7824f8b026fddec5d
+ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46866930"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47294752"
 ---
 # <a name="specify-a-mailbox-for-user-submissions-of-spam-and-phishing-messages-in-exchange-online"></a>Spécifier une boîte aux lettres pour les soumissions d’utilisateurs de messages de courrier indésirable et de hameçonnage dans Exchange Online
 
@@ -47,10 +47,10 @@ La remise des messages signalés par l’utilisateur à une boîte aux lettres p
 
   - Pour modifier la configuration des envois utilisateur, vous devez être membre de l’un des groupes de rôles suivants :
 
-    - **Gestion de l’organisation** ou **Administrateur de sécurité** dans le [Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
+    - **[Administrateur Exchange](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** dans Azure ad, **gestion** de l’organisation ou **administrateur de sécurité** , et dans le [Centre de sécurité & conformité](permissions-in-the-security-and-compliance-center.md).
     - **Gestion de l’organisation** ou **Gestion de l’hygiène** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
-  - Pour un accès en lecture seule aux soumissions des utilisateurs, vous devez être membre de l’un des groupes de rôles suivants :
+  - Pour un accès en lecture seule aux soumissions des utilisateurs, vous devez être membre des deux groupes de rôles suivants :
 
     - **Lecteur de sécurité** dans le [Centre de conformité et sécurité](permissions-in-the-security-and-compliance-center.md).
     - **Gestion de l’organisation en affichage seul** dans[Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).

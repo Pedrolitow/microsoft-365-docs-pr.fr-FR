@@ -7,12 +7,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 470047da0a1902a6076add27a6e7ac516edd3150
-ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
+ms.openlocfilehash: e433b10b66b5e4f061227eae7e944c7fd19e2260
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46869006"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289756"
 ---
 # <a name="register-new-devices-yourself"></a>Inscrivez vous-même les nouveaux appareils
 
@@ -93,9 +93,9 @@ Vous pouvez surveiller la progression de l’inscription de l’appareil sur la 
 |---------------|-------------|
 | AutopilotRegistrationRequested | L’inscription n’est pas encore terminée. Réactivez-vous plus tard. |
 | Échec de l’inscription | L’inscription n’a pas pu aboutir. Pour plus d’informations, consultez la rubrique [Troubleshooting Device Registration](#troubleshooting-device-registration) . |
-| Prêt pour l’utilisateur | L’inscription a réussi et l’appareil est maintenant prêt à être remis à l’utilisateur final. Microsoft Managed Desktop les guide tout au long du paramétrage, il n’est donc pas nécessaire d’effectuer d’autres préparatifs. |
-| Actif | L’appareil a été remis à l’utilisateur final et il a été enregistré auprès de votre client. Cela indique également qu’ils utilisent régulièrement l’appareil. |
-| Inactive | L’appareil a été remis à l’utilisateur final et il a été enregistré auprès de votre client. Toutefois, ils n’ont pas utilisé le périphérique récemment (au cours des 7 derniers jours).  | 
+| Prêt pour l’utilisateur | L’inscription a réussi et l’appareil est maintenant prêt à être remis à l’utilisateur. Microsoft Managed Desktop les guide tout au long du paramétrage, il n’est donc pas nécessaire d’effectuer d’autres préparatifs. |
+| Actif | L’appareil a été remis à l’utilisateur et il a été enregistré auprès de votre client. Cela indique également qu’ils utilisent régulièrement l’appareil. |
+| Inactive | L’appareil a été remis à l’utilisateur et il a été enregistré auprès de votre client. Toutefois, ils n’ont pas utilisé le périphérique récemment (au cours des 7 derniers jours).  | 
 
 #### <a name="troubleshooting-device-registration"></a>Dépannage de l’inscription de l’appareil
 

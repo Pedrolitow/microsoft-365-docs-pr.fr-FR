@@ -8,16 +8,16 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 0dee95743e0a504330ebbcc69749e41cdc96da39
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 89dbf0e67c112743a557842bb32555d3a079743b
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529946"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289792"
 ---
 # <a name="microsoft-managed-desktop-product-lifecycle"></a>Cycle de vie des produits bureau géré Microsoft
 
-Les avantages du bureau géré Microsoft ont pour but de s’assurer qu’ils utilisent toujours des appareils offrant les meilleures performances, la fiabilité, la conception et la sécurité (par exemple, la prise en charge de fonctionnalités telles que Windows Hello). Pour ce faire, le bureau géré Microsoft gère un petit catalogue d' [appareils approuvés](device-list.md)mis à jour en permanence. 
+Le bureau géré Microsoft permet aux utilisateurs de s’assurer qu’ils utilisent toujours des appareils offrant les meilleures performances, la fiabilité, la conception et la sécurité (par exemple, la prise en charge de fonctionnalités telles que Windows Hello). Pour ce faire, le bureau géré Microsoft gère un petit catalogue d' [appareils approuvés](device-list.md)mis à jour en permanence. 
  
 Cette rubrique décrit en détail le cycle de vie des appareils à mesure qu’ils sont ajoutés et supprimés du catalogue approuvé. 
 

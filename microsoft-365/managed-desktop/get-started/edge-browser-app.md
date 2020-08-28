@@ -1,6 +1,6 @@
 ---
 title: Nouveau Microsoft Edge
-description: ''
+description: Explique comment le nouveau navigateur Edge est déployé et mis à jour.
 keywords: navigateur, bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 089d9dc79da568a43c1d5701d7bc52d9bed0f4f5
-ms.sourcegitcommit: c76c025fe75cd9c06eccbf9c7fc887b09da36659
+ms.openlocfilehash: 60ffdcddcd069330d3cde2f9cc6b2635cf205a90
+ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46903870"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47294673"
 ---
 # <a name="new-microsoft-edge-app"></a>Nouvelle application Microsoft Edge
 
@@ -35,7 +35,6 @@ Le [canal bêta](https://docs.microsoft.com/deployedge/microsoft-edge-channels#b
 
 Pour vous assurer que les mises à jour Microsoft Edge sont correctes, ne modifiez pas les [stratégies de mise à jour](https://docs.microsoft.com/deployedge/microsoft-edge-update-policies)Microsoft Edge.
 
-### <a name="microsoft-edge-beta-channel"></a>Canal Microsoft Edge bêta
 
 
 ## <a name="settings-managed-by-microsoft-managed-desktop"></a>Paramètres gérés par le bureau géré Microsoft
@@ -44,7 +43,7 @@ Microsoft Managed Desktop a créé un ensemble de stratégies par défaut pour M
 
 ### <a name="microsoft-edge-extensions"></a>Extensions Microsoft Edge
 
-La sécurité Baseline de Microsoft Edge sur les périphériques de bureau gérés Microsoft définit deux stratégies pour désactiver toutes les extensions chrome et sécuriser les utilisateurs finaux. Pour activer et déployer des extensions dans votre environnement, voir paramètres que vous gérez. 
+La sécurité Baseline de Microsoft Edge sur les périphériques de bureau gérés Microsoft définit deux stratégies pour désactiver toutes les extensions chrome et sécuriser les utilisateurs. Pour activer et déployer des extensions dans votre environnement, voir paramètres que vous gérez. 
 
 #### <a name="extension-installation-blocklist"></a>Blocage de l’installation des extensions
 **Valeur par défaut :** Tous les
@@ -77,7 +76,7 @@ Il n’est pas recommandé d’activer ce paramètre, car il permet aux utilisat
 
 **Valeur par défaut :** Activé
 
-Activé par défaut pour protéger les utilisateurs finaux.
+Activé par défaut pour protéger les utilisateurs.
 
 #### <a name="windows-defender-smartscreen-prompts-for-sites"></a>Invites Windows Defender SmartScreen pour les sites
 
@@ -105,7 +104,7 @@ Il n’est pas recommandé d’utiliser flash en raison des risques de sécurit�
 
 **Valeur par défaut :** Activation
 
-Nous vous déconseillons d’autoriser les utilisateurs finaux à enregistrer les mots de passe sur leur appareil.
+Nous vous déconseillons d’autoriser les utilisateurs à enregistrer les mots de passe sur leur appareil.
 
 ### <a name="internet-explorer-mode-in-microsoft-edge"></a>Mode Internet Explorer dans Microsoft Edge
 Le mode IE sur Microsoft Edge facilite l’utilisation de tous les sites dont votre organisation a besoin dans un seul navigateur. Il utilise le moteur de chrome intégré pour les sites qui sont compatibles avec le moteur de rendu de chrome et il utilise le moteur MSHTML de Trident à partir d’Internet Explorer 11 (IE11) pour les sites qui ne dépendent pas ou qui ont des dépendances sur les fonctionnalités d’IE. [En savoir plus] (https://docs.microsoft.com/DeployEdge/edge-ie-mode) 

@@ -10,16 +10,16 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 9efe6ba6704b0e1633973d157c38827221316bbd
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: 0b76a14a30caeb75cfdcb8acc5715fe6710e0625
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430446"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289458"
 ---
 # <a name="work-with-app-control"></a>Utiliser le contrôle d’application
 
-Une fois que le contrôle d’application a été déployé dans votre environnement, vous et les opérations de bureau géré Microsoft ont des responsabilités permanentes. Par exemple, vous pouvez ajouter une nouvelle application dans l’environnement ou ajouter (ou supprimer) un signataire approuvé. Pour améliorer la sécurité, toutes les applications doivent être signées en code avant de les diffuser aux utilisateurs finaux. Les détails de l’éditeur d’une application incluent des informations sur le signataire.
+Une fois que le contrôle d’application a été déployé dans votre environnement, vous et les opérations de bureau géré Microsoft ont des responsabilités permanentes. Par exemple, vous pouvez ajouter une nouvelle application dans l’environnement ou ajouter (ou supprimer) un signataire approuvé. Pour améliorer la sécurité, toutes les applications doivent être signées en code avant de les diffuser aux utilisateurs. Les détails de l’éditeur d’une application incluent des informations sur le signataire.
 
 
 ## <a name="add-a-new-app"></a>Ajout d’une nouvelle application

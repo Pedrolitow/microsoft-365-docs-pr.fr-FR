@@ -20,16 +20,22 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: e31389705ddd8de4854a3477012d7fa90b78c7ee
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 8b0fda2d8a0b7d9cb6b2c6a4cca2e8e34a876fec
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46866894"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289422"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Nouveautés de Microsoft Secure score
 
 Pour faire en sorte que Microsoft Secure score un meilleur représentant de votre position de sécurité, nous avons apporté des modifications. Pour en savoir plus sur les modifications planifiées, consultez [la rubrique what’s from Microsoft Secure score ?](microsoft-secure-score-whats-coming.md).
+
+## <a name="august-2020"></a>Août 2020
+
+### <a name="update-improvement-action-for-azure-active-directory"></a>Mettre à jour l’action d’amélioration pour Azure Active Directory
+
+- Activer la stratégie pour bloquer l’authentification héritée
 
 ## <a name="july-2020"></a>Juillet 2020
 

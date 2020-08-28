@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 4707b95c72200042b17c9e8ff9ae876933522d1f
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 596d67d4967886a2df985793f38f968b40d2c3a9
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46866918"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289662"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Fonctionnalités du score de sécurité Microsoft
 
@@ -30,9 +30,8 @@ Nous apportons des modifications à l’avenir proche pour faire en sorte que [M
 
 ## <a name="proposed-changes"></a>Proposed changes
 
-Ces modifications peuvent venir à votre score de sécurité Microsoft bientôt, en fonction de votre licence. Pour en savoir plus sur les modifications récentes, consultez [la rubrique what’s New in Microsoft Secure score ?](microsoft-secure-score-whats-new.md)
-
-- Modification du score maximal de 7 à 8 pour l’action d’amélioration d’Azure Active Directory appelée « activer la stratégie pour bloquer l’authentification héritée »
+### <a name="september-2020"></a>Septembre 2020
+- Aucune modification prévue
 
 ## <a name="related-resources"></a>Ressources connexes
 

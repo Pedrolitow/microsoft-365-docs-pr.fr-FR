@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Les administrateurs dans le nuage des États-Unis peuvent configurer un connecteur de données pour importer les données des employés à partir du système de ressources humaines (RH) de leur organisation vers Microsoft 365. Cela vous permet d’utiliser des données RH dans des stratégies de gestion des risques initiées pour vous aider à détecter les activités d’utilisateurs spécifiques susceptibles de constituer une menace interne pour votre organisation.
-ms.openlocfilehash: e14f1a23097cddf3b187d4394d5fa5e3afe06d01
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 2f41426003fcf3b6afe14d24cf7176fa4668ad44
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527642"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289815"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-in-us-government-preview"></a>Configurer un connecteur pour importer des données RH dans le secteur public américain (aperçu)
 
@@ -38,15 +38,15 @@ Vous pouvez configurer un connecteur de données dans le centre de conformité M
 
 ## <a name="step-1-create-an-app-in-azure-active-directory"></a>Étape 1 : créer une application dans Azure Active Directory
 
-La première étape consiste à créer et à enregistrer une nouvelle application dans Azure Active Directory (AAD). L’application correspond au connecteur RH que vous créez à l’étape 3. La création de cette application permettra à AAD d’authentifier le connecteur RH lorsqu’il s’exécute et tente d’accéder à votre organisation. Cette application est également utilisée pour authentifier le script que vous exécutez à l’étape 4 pour télécharger vos données RH dans le Cloud de Microsoft. Lors de la création de cette application AAD, veillez à enregistrer les informations suivantes. Ces valeurs seront utilisées dans les étapes ultérieures.
+La première étape consiste à créer et à enregistrer une nouvelle application dans Azure Active Directory (Azure AD). L’application correspond au connecteur RH que vous créez à l’étape 3. La création de cette application permettra à Azure AD d’authentifier le connecteur RH lorsqu’il s’exécute et tente d’accéder à votre organisation. Cette application est également utilisée pour authentifier le script que vous exécutez à l’étape 4 pour télécharger vos données RH dans le Cloud de Microsoft. Lors de la création de cette application Azure AD, veillez à enregistrer les informations suivantes. Ces valeurs seront utilisées dans les étapes ultérieures.
 
-- ID de l’application AAD (également *appelé ID de* l’application ou *ID client*)
+- ID de l’application Azure AD (également appelé *ID* de l’application ou *ID client*)
 
-- Clé secrète de l’application AAD (également appelée *clé secrète client*)
+- Secret d’application Azure AD (également appelé *clé secrète client*)
 
 - ID de client (également appelé *ID d’annuaire*)
 
-Pour obtenir des instructions détaillées sur la création d’une application dans AAD, consultez [la rubrique enregistrer une application avec la plateforme d’identité Microsoft](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
+Pour obtenir des instructions détaillées sur la création d’une application dans Azure AD, consultez [la rubrique enregistrer une application avec la plateforme d’identité Microsoft](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
 
 ## <a name="step-2-prepare-a-csv-file-with-your-hr-data"></a>Étape 2 : préparer un fichier CSV avec vos données RH
 
@@ -83,7 +83,7 @@ L’étape suivante consiste à créer un connecteur RH dans le centre de confor
 
 4. Sur la page **informations d’identification d’authentification** , effectuez les opérations suivantes, puis cliquez sur **suivant**:
 
-   a. Tapez ou collez l’ID d’application AAD pour l’application Azure que vous avez créée à l’étape 1.
+   a. Tapez ou collez l’ID de l’application Azure AD pour l’application Azure que vous avez créée à l’étape 1.
 
    b. Tapez un nom pour le connecteur RH.
 
@@ -140,8 +140,8 @@ La dernière étape de la configuration d’un connecteur RH consiste à exécut
    |**Paramètre**|**Description**
    |:-----|:-----|:-----|
    |`tenantId`|Il s’agit de l’ID de votre organisation Microsoft 365 que vous avez obtenu à l’étape 1. Vous pouvez également obtenir l’ID de client de votre organisation sur le panneau de présentation dans le centre **d'** administration Azure ad. Il est utilisé pour identifier votre organisation.|
-   |`appId` |Il s’agit de l’ID d’application AAD pour l’application que vous avez créée dans Azure AD à l’étape 1. Il est utilisé par Azure AD pour l’authentification lorsque le script tente d’accéder à votre organisation Microsoft 365. | 
-   |`appSecret`|Il s’agit de la clé secrète de l’application AAD pour l’application que vous avez créée dans Azure AD à l’étape 1. Cela est également utilisé pour l’authentification.|
+   |`appId` |Il s’agit de l’ID de l’application Azure AD pour l’application que vous avez créée dans Azure AD à l’étape 1. Il est utilisé par Azure AD pour l’authentification lorsque le script tente d’accéder à votre organisation Microsoft 365. |
+   |`appSecret`|Il s’agit de la clé secrète de l’application Azure AD pour l’application que vous avez créée dans Azure AD à l’étape 1. Cela est également utilisé pour l’authentification.|
    |`jobId`|Il s’agit de l’ID de travail pour le connecteur HR que vous avez créé à l’étape 3. Il est utilisé pour associer les données RH téléchargées vers le Cloud Microsoft avec le connecteur RH.|
    |`csvFilePath`|Il s’agit du chemin d’accès au fichier CSV (stocké sur le même système que le script) que vous avez créé à l’étape 2. Essayez d’éviter les espaces dans le chemin d’accès du fichier ; Sinon, utilisez des guillemets simples.|
    |||
@@ -153,6 +153,9 @@ La dernière étape de la configuration d’un connecteur RH consiste à exécut
     ```
 
    Si le chargement réussit, le script affiche le message **chargement réussi** .
+
+   > [!NOTE]
+   > Si vous rencontrez des problèmes lors de l’exécution de la commande précédente en raison de stratégies d’exécution, voir [about Execution Policies](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_execution_policies) et [Set-ExecutionPolicy](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy) pour obtenir des instructions sur la définition des stratégies d’exécution.
 
 ## <a name="step-5-monitor-the-hr-connector"></a>Étape 5 : surveiller le connecteur RH
 

@@ -15,14 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 08/20/2020
+ms.date: 08/27/2020
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 39ef79f685c216732aa1e3e0ccb28a4ab6e2b07a
-ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
+ms.openlocfilehash: 8eda787a92228fc9705bd329f0df7203b9a1175c
+ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46845855"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47294774"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Nouveautés d’Office 365 - Protection avancée contre les menaces
 
@@ -39,6 +39,9 @@ Cet article répertorie les nouvelles fonctionnalités de la dernière version d
 
 - [Vérifier vos stratégies à l’aide de Configuration Analyzer](configuration-analyzer-for-security-policies.md)
 - [Remplacer manuellement les verdicts de filtre à l’aide de la liste d’autorisation/de blocage de client](tenant-allow-block-list.md)
+- [Fonctionnalités étendues dans l’Explorateur de menaces, y compris les utilisateurs ciblés principaux, les règles de transport et les connecteurs](threat-explorer.md#extended-capabilities-in-Threat-Explorer.md)
+- Le surfaçage remplace les informations dans l' [Explorateur de menaces](threat-explorer.md) (le courrier électronique a été autorisé/bloqué par le client/stratégie utilisateur)
+- Exposition des menaces d’URL dans l' [Explorateur de menaces](threat-explorer.md) (programmes malveillants, hameçons, courrier indésirable ou aucun)
 
 ## <a name="julyaugust-2020"></a>Juillet/août 2020 
 
@@ -55,8 +58,6 @@ Cet article répertorie les nouvelles fonctionnalités de la dernière version d
 - Améliorations apportées à l' [Explorateur de menaces](threat-explorer.md) pour permettre aux équipes des opérations de sécurité d’effectuer des recherches et des filtres sur plusieurs champs lors de l’enquête sur le [courrier électronique](investigate-malicious-email-that-was-delivered.md):
     - Emplacement de remise et actions spéciales
     - Direction (entrant, sortant ou intra-org)
-    - Substitutions (blocage ou autorisation de l’utilisateur)
-    - Menace d’URL (programme malveillant, hameçonnage, courrier indésirable ou aucun)
     - Options non Filter avancé (il s’agit d’options de filtrage avancées qui incluent ne pas inclure, pas, etc.)
     - Filtres de temps granulaire (jour, heure, demi-heure) 
 
@@ -103,5 +104,4 @@ Saviez-vous qu’Office 365 ATP est disponible dans deux plans ? [En savoir plu
 [Feuille de route Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap)
 
 [Description du service ATP Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
-
 

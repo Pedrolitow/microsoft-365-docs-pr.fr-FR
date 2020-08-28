@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: bc7192cf82c825a13780567663695d96a760b3ef
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: da5798b3412cb69580e5d9adc582f0ca4add1e3e
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46530102"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289590"
 ---
 # <a name="apps-in-microsoft-managed-desktop"></a>Applications dans le Bureau géré Microsoft
 
@@ -26,7 +26,7 @@ ms.locfileid: "46530102"
 
 Microsoft inclut certaines applications clés, ainsi que la licence Microsoft 365 E3 ou E5 requise pour participer au bureau géré Microsoft. Toutefois, même si nous fournissons ces applications, vous avez toujours certaines responsabilités et actions à effectuer.
 
-Vous pouvez également déployer des applications supplémentaires non-Microsoft pour les utilisateurs finaux en libre-service via le portail de l’entreprise ou une installation en arrière-plan requise, tout en utilisant le pipeline de déploiement de Microsoft Intune. Si vous disposez de l’expertise, vous pouvez migrer les applications dont vous avez besoin par vous-même ; en guise d’alternative, Microsoft Consulting Services (MCS) ou des fournisseurs non-Microsoft seront ravis de vous aider dans un projet d’empaquetage et de migration. Pour plus d’informations sur l’utilisation de MCS, voir [Working with Microsoft Consulting Services](apps-MCS.md).
+Vous pouvez également déployer des applications supplémentaires non-Microsoft pour vos utilisateurs en libre-service via le portail de l’entreprise ou une installation en arrière-plan requise, tout en utilisant le pipeline de déploiement de Microsoft Intune. Si vous disposez de l’expertise, vous pouvez migrer les applications dont vous avez besoin par vous-même ; en guise d’alternative, Microsoft Consulting Services (MCS) ou des fournisseurs non-Microsoft seront ravis de vous aider dans un projet d’empaquetage et de migration. Pour plus d’informations sur l’utilisation de MCS, voir [Working with Microsoft Consulting Services](apps-MCS.md).
 
 
 ## <a name="apps-provided-by-microsoft"></a>Applications fournies par Microsoft
@@ -35,13 +35,13 @@ Votre licence de bureau géré Microsoft est fournie avec les versions 64 bits d
 
 ### <a name="what-microsoft-does-to-support-the-apps-we-provide"></a>Éléments pris en charge par Microsoft pour prendre en charge les applications que nous fournissons
 
-Microsoft fournira un service complet pour le déploiement, la mise à jour et la prise en charge des applications Microsoft 365 apps pour les applications d’entreprise. Les versions « démarrer en un clic » de Microsoft Project et Visio ne sont *pas* incluses par défaut, mais le bureau géré Microsoft fournit des groupes de déploiement qui permettent à votre administrateur informatique de gérer des licences et de déployer ces applications de manière appropriée pour votre organisation. Microsoft prend en charge les utilisateurs finaux de ces applications par le biais des canaux de support de bureau géré Microsoft.
+Microsoft fournira un service complet pour le déploiement, la mise à jour et la prise en charge des applications Microsoft 365 apps pour les applications d’entreprise. Les versions « démarrer en un clic » de Microsoft Project et Visio ne sont *pas* incluses par défaut, mais le bureau géré Microsoft fournit des groupes de déploiement qui permettent à votre administrateur informatique de gérer des licences et de déployer ces applications de manière appropriée pour votre organisation. Microsoft prend en charge les utilisateurs de ces applications par le biais des canaux de support de bureau géré Microsoft.
 
 ### <a name="what-you-need-to-do-to-support-the-apps-we-provide"></a>Ce que vous devez faire pour prendre en charge les applications que nous fournissons
 
 Il reste certaines choses que vous devez faire avec ces applications :
 
-- **Attribuer des licences** : vous êtes responsable de l’obtention et de l’affectation des licences appropriées aux utilisateurs finaux pour les applications Microsoft 365 pour entreprises.
+- **Attribuer des licences** : vous êtes responsable de l’obtention et de l’affectation des licences appropriées aux utilisateurs pour les applications Microsoft 365 pour les entreprises.
 - **Ajouter des utilisateurs à des groupes de sécurité** : Si vous utilisez Microsoft Project ou Visio, votre administrateur informatique doit ajouter ces utilisateurs aux groupes de déploiement appropriés. Les administrateurs informatiques sont également chargés de récupérer les licences de ces utilisateurs s’ils quittent la société.
 - **Deploy microsoft 365 Add-ons** -si vous avez besoin de tous les modules complémentaires pour les applications Microsoft 365 pour les applications d’entreprise, déployez-les de façon centralisée comme n’importe quelle autre application Windows 32. 
 

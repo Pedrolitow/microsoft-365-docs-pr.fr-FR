@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: c68d12ccd339c863c2dd96b2a56cfaf19e604f79
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: de113fd61fbb8fabaea64d58525a2f8aca052e90
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632000"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289780"
 ---
 # <a name="support-for-microsoft-managed-desktop"></a>Prise en charge du bureau géré Microsoft
 
@@ -27,7 +27,7 @@ Les clients peuvent contacter Microsoft Managed Desktop Operations pour :
 La prise en charge de Microsoft Managed Desktop inclut :
 
 - Une équipe d’ingénieurs dédiée aux appareils de bureau gérés Microsoft
-- Options de prise en charge pour les utilisateurs finaux avec les appareils de bureau gérés Microsoft
+- Options de prise en charge pour les utilisateurs d’appareils de bureau gérés Microsoft
 - Octroie un accès administratif limité aux appareils de bureau gérés Microsoft pour les ingénieurs gérant les appareils de bureau gérés Microsoft 
 
 Produits pris en charge :
@@ -48,4 +48,4 @@ Informations de support technique :
 ## <a name="related-topics"></a>Voir aussi
 
 - [Découvrez comment les administrateurs informatiques peuvent obtenir de l’aide](../working-with-managed-desktop/admin-support.md)
-- [Découvrez comment les utilisateurs finals peuvent obtenir de l’aide](../working-with-managed-desktop/end-user-support.md)
+- [Découvrez comment les utilisateurs peuvent obtenir de l’aide](../working-with-managed-desktop/end-user-support.md)

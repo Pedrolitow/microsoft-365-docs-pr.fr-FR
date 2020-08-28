@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 5fe8e01e24f38ddd62649349575bd38ec37ccae4
-ms.sourcegitcommit: b144e8ba1ab0c40fa7e0e8e893b5cb44aa2d8243
+ms.openlocfilehash: 1aaa73fdc56662335904cbaa152429ea90d6bb08
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47282672"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289353"
 ---
 # <a name="communication-compliance-feature-reference"></a>Référence de la fonctionnalité de conformité des communications
 
@@ -49,19 +49,39 @@ Les modèles de stratégie sont des paramètres de stratégie prédéfinis que v
 
 ## <a name="permissions-preview"></a>Autorisations (aperçu)
 
-Cinq rôles sont utilisés pour configurer les autorisations de gestion des fonctionnalités de conformité des communications. Pour que la conformité de la **communication** soit disponible sous la forme d’une option de menu dans le centre de conformité Microsoft 365, vous devez disposer du rôle d’administrateur de *conformité des communications* .
+>[!Important]
+>Par défaut, les administrateurs globaux n’ont pas accès aux fonctionnalités de conformité des communications. Les rôles attribués au cours de cette étape sont obligatoires avant toute accessibilité des fonctionnalités de conformité de la communication.
 
-En fonction de la façon dont vous souhaitez gérer les stratégies de communication et les alertes, vous devrez créer un ou plusieurs nouveaux groupes de rôles pour les administrateurs, les réviseurs et les enquêteurs. Vous avez la possibilité d’affecter des utilisateurs à des groupes de rôles spécifiques afin de gérer différents ensembles de fonctionnalités de conformité des communications. Vous pouvez également décider de créer un groupe de rôles et d’affecter tous les rôles de conformité de communication au groupe. Créez un groupe de rôles unique ou plusieurs groupes afin de répondre au mieux aux besoins de gestion de la conformité.
+Cinq groupes de rôles sont utilisés pour configurer les autorisations de gestion des fonctionnalités de conformité des communications. Pour que la conformité de la **communication** soit disponible sous la forme d’une option de menu dans le centre de conformité Microsoft 365 et pour poursuivre ces étapes de configuration, vous devez être affecté aux groupes de rôles de *conformité* de communication ou d' *administrateur de conformité* de communication. Pour accéder aux fonctionnalités de conformité de communication et les gérer une fois la configuration initiale, les utilisateurs doivent être membres d’au moins un groupe de rôles de conformité de communication.
 
-Sélectionnez l’une des options de rôle suivantes lors de la configuration de vos groupes de rôles de conformité de communication :
+En fonction de la façon dont vous souhaitez gérer les stratégies de communication et les alertes, vous devez affecter des utilisateurs à des groupes de rôles spécifiques. Vous pouvez attribuer à des groupes de rôles spécifiques des utilisateurs ayant des responsabilités différentes en matière de gestion des fonctionnalités de conformité des communications. Ou vous pouvez décider d’affecter tous les comptes d’utilisateur pour les administrateurs, analystes, investigateurs et visionneuses désignés au groupe de rôles de *conformité de communication* . Utilisez un seul groupe de rôles ou plusieurs groupes de rôles pour répondre au mieux aux besoins de gestion de la conformité.
+
+Sélectionnez l’une des options de groupe de rôles suivantes lors de la configuration de la conformité des communications :
 
 |**Rôle**|**Autorisations de rôle**|
 |:-----|:-----|
-| **Administrateur de conformité de communication** | Les utilisateurs auxquels ce rôle est attribué peuvent créer, lire, mettre à jour et supprimer des stratégies de conformité de communication, des paramètres globaux et des affectations de groupes de rôles. Les utilisateurs auxquels ce rôle est attribué ne peuvent pas afficher les alertes de message. |
-| **Analyse de la conformité de la communication** | Les utilisateurs auxquels ce rôle est attribué peuvent afficher les stratégies pour lesquelles ils sont affectés en tant que relecteurs, afficher les métadonnées de message (et non le contenu des messages), faire remonter aux relecteurs supplémentaires ou envoyer des notifications aux utilisateurs. Les analystes ne peuvent pas résoudre les alertes en attente. |
-| **Enquête sur la conformité de la communication** | Les utilisateurs auxquels ce rôle est attribué peuvent afficher les métadonnées et le contenu des messages, passer à des relecteurs supplémentaires, passer à un cas avancé de découverte électronique, envoyer des notifications aux utilisateurs et résoudre l’alerte. |
-| **Visionneuse de conformité de la communication** | Les utilisateurs auxquels ce rôle est attribué peuvent accéder à tous les widgets de création de rapports sur la page d’accueil de la communication et peuvent afficher tous les rapports de conformité des communications. |
-| **Gestion des cas de conformité de la communication** | Les utilisateurs auxquels ce rôle est attribué peuvent gérer les incidents et agir sur les alertes. Ce rôle est requis pour la création de groupes de rôles personnalisés pour les administrateurs, les analystes et les investigateurs. Les groupes personnalisés pour les visionneuses n’ont pas besoin de ce rôle. |
+| **Conformité de la communication** | Utilisez ce groupe de rôles pour gérer la conformité des communications de votre organisation dans un seul groupe. En ajoutant tous les comptes d’utilisateur pour les administrateurs, analystes, investigateurs et visionneuses désignés, vous pouvez configurer des autorisations de conformité de la communication dans un seul groupe. Ce groupe de rôles contient tous les rôles d’autorisation de conformité de communication. Cette configuration est la méthode la plus simple pour démarrer rapidement la conformité de la communication et convient aux organisations qui n’ont pas besoin d’autorisations distinctes définies pour des groupes d’utilisateurs distincts. |
+| **Administrateur de conformité de communication** | Utilisez ce groupe de rôles pour configurer initialement la conformité de la communication et par la suite pour séparer les administrateurs de conformité des communications en un groupe défini. Les utilisateurs affectés à ce groupe de rôles peuvent créer, lire, mettre à jour et supprimer des stratégies de conformité de communication, des paramètres globaux et des affectations de groupes de rôles. Les utilisateurs affectés à ce groupe de rôles ne peuvent pas afficher les alertes de message. |
+| **Analyste de conformité des communications** | Utilisez ce groupe pour attribuer des autorisations aux utilisateurs qui agiront en tant qu’analystes de conformité des communications. Les utilisateurs affectés à ce groupe de rôles peuvent afficher les stratégies pour lesquelles ils sont affectés en tant que relecteurs, afficher les métadonnées de message (et non le contenu des messages), faire remonter aux relecteurs supplémentaires ou envoyer des notifications aux utilisateurs. Les analystes ne peuvent pas résoudre les alertes en attente. |
+| **Investigation de conformité des communications** | Utilisez ce groupe pour attribuer des autorisations aux utilisateurs qui agiront en tant qu’investigations de conformité des communications. Les utilisateurs affectés à ce groupe de rôles peuvent afficher les métadonnées et le contenu des messages, passer à des relecteurs supplémentaires, passer à un cas avancé eDiscovery, envoyer des notifications aux utilisateurs et résoudre l’alerte. |
+| **Visionneuse de conformité de la communication** | Utilisez ce groupe pour attribuer des autorisations aux utilisateurs qui géreront les rapports de communication. Les utilisateurs affectés à ce groupe de rôles peuvent accéder à tous les widgets de création de rapports sur la page d’accueil de la conformité de la communication et peuvent afficher tous les rapports de conformité des communications. |
+
+### <a name="for-organizations-using-the-original-permissions-and-role-groups"></a>Pour les organisations qui utilisent les autorisations d’origine et les groupes de rôles
+
+La nouvelle structure de groupe de rôles remplace la structure de groupe de rôles initiale pour la conformité de la communication. Pour les organisations qui utilisent déjà la conformité de communication, vous devez disposer du rôle d’administrateur examen de surveillance pour commencer à respecter la conformité des communications dans le centre de conformité Microsoft 365. En outre, vous deviez créer un nouveau groupe de rôles pour les relecteurs avec l’administrateur de révision de surveillance, la gestion des cas, l’administrateur de conformité et les rôles d’examen pour examiner et corriger les messages avec des correspondances de stratégie. En gros, tous les administrateurs et relecteurs se trouvaient dans un seul groupe de rôles et tous disposent des mêmes autorisations d’accès et de gestion. Avec les mises à jour les plus récentes de la conformité de la communication, vous devez planifier la migration de la structure de groupe de rôles précédente vers la nouvelle structure de groupe de rôles. La prise en charge de la structure de groupe de rôles précédente sera progressive.
+
+Pour faciliter la planification de la migration, prenez en compte l’exemple suivant. Vous disposez actuellement de trois types d’utilisateurs dans votre organisation, les administrateurs informatiques, le triage et les relecteurs. Ces trois types d’utilisateurs appartiennent à la structure de groupes de rôles précédente et sont tous membres d’un groupe de rôles unique avec les rôles suivants attribués :
+
+- Administrateur de la vérification de surveillance
+- Gestion des cas
+- Administrateur de conformité
+- Révision
+
+Pour mettre à jour les rôles de ces utilisateurs pour la nouvelle structure de groupe de rôles, et pour séparer les autorisations d’accès et de gestion des utilisateurs, vous pouvez considérer trois nouveaux groupes et les nouvelles affectations de groupe de rôles associées :
+
+- **Administrateurs informatiques**: attribué au nouveau groupe de rôles d' *administrateur de conformité de communication* .
+- **Triage**: affecté au groupe de rôles *analyste de conformité des communications* .
+- **Relecteurs**: affectés au nouveau groupe de rôles contrôle de *conformité de communication* .
 
 ## <a name="supervised-users"></a>Utilisateurs supervisés
 
@@ -150,7 +170,7 @@ Pour en savoir plus sur les détails des informations sensibles et les modèles 
 
 ### <a name="custom-keyword-dictionaries"></a>Dictionnaires de mots clés personnalisés
 
-Configurez des dictionnaires de mots clés personnalisés (ou des lexiques) pour fournir une gestion simple des mots clés propres à votre organisation ou votre secteur d’activité. Les dictionnaires de mots clés prennent en charge jusqu’à 100 to de termes (post-compression) dans le dictionnaire et prennent en charge n’importe quelle langue. La limite client est également de 100Ko après compression. Si nécessaire, vous pouvez appliquer plusieurs dictionnaires de mots clés personnalisés à une seule stratégie ou disposer d’un dictionnaire à Mots clés unique par stratégie. Ces dictionnaires sont affectés dans une stratégie de conformité de communication et peuvent être issus d’un fichier (par exemple, une liste. csv ou. txt) ou d’une liste que vous pouvez [importer dans le centre de conformité](create-a-keyword-dictionary.md). Utilisez des dictionnaires personnalisés lorsque vous devez prendre en charge des termes ou des langues propres à votre organisation et à vos stratégies.
+Configurez des dictionnaires de mots clés personnalisés (ou des lexiques) pour fournir une gestion simple des mots clés propres à votre organisation ou votre secteur d’activité. Les dictionnaires de mots clés prennent en charge jusqu’à 100 Ko de termes (post-compression) dans le dictionnaire et prennent en charge n’importe quelle langue. La limite client est également de 100 Ko après la compression. Si nécessaire, vous pouvez appliquer plusieurs dictionnaires de mots clés personnalisés à une seule stratégie ou disposer d’un dictionnaire à Mots clés unique par stratégie. Ces dictionnaires sont affectés dans une stratégie de conformité de communication et peuvent être issus d’un fichier (par exemple, une liste. csv ou. txt) ou d’une liste que vous pouvez [importer dans le centre de conformité](create-a-keyword-dictionary.md). Utilisez des dictionnaires personnalisés lorsque vous devez prendre en charge des termes ou des langues propres à votre organisation et à vos stratégies.
 
 ### <a name="classifiers"></a>Classifieurs requêtes
 
@@ -162,7 +182,7 @@ Conformité des communications les classifieurs intégrés et les classifieurs g
 - **Harcèlement ciblé**: analyse les comportements offensants ciblant les personnes en matière de race, de couleur, de religion et d’origine nationale.
 - **Blasphèmes**: analyse les expressions à inconvenances qui dépassent la plupart des gens.
 - **Images pour adultes**: recherche des images sexuellement explicites.
-- **Images Racy**: recherche les images qui sont sexuellement inutilisées, mais qui contiennent moins de contenu explicite que les images considérées comme adultes.
+- **Images Racy**: recherche des images sexuellement à l’esprit, mais qui contiennent moins de contenu explicite que les images considérées comme adultes.
 - **Images Gory**: recherche les images qui décrivent la violence et Gore.
 
 Les classifieurs d’image *adulte*, *Racy*et *Gory* analysent les fichiers dans. JPEG,. PNG,. GIF et. Formats BMP. La taille des fichiers image doit être inférieure à 4 méga-octets (Mo) et les dimensions des images doivent être supérieures à 50x50 pixels et supérieures à 50 kilo-octets (Ko) pour que l’image soit considérée comme étant à évaluer. L’identification de l’image est prise en charge pour les messages électroniques Exchange Online, ainsi que pour les canaux et conversations Microsoft Teams.

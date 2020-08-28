@@ -15,12 +15,12 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 description: Forum aux questions (FAQ) sur le programme d’utilisation domestique de Microsoft.
-ms.openlocfilehash: 9d37afb952374b3d01d3ef3212b82cfd1ccde7a7
-ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
+ms.openlocfilehash: f4848e5f84081152fb42e41887b581d7290dfe2f
+ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46903491"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47294685"
 ---
 # <a name="microsoft-home-use-program-frequently-asked-questions-faq"></a>Forum aux questions sur le programme d’utilisation domestique de Microsoft (FAQ)
 
@@ -34,14 +34,13 @@ Tous les autres clients accèdent à HUP à l’aide de cette étape :
 
 Le programme d’utilisation à la maison de Microsoft (HUP) permet aux employés éligibles d’acheter des produits grand public Microsoft à un prix réduit. Vous pouvez vérifier les remises actuelles pour chaque offre de produit en visitant la [page utiliser le produit programme use Home](https://www.microsoft.com/home-use-program).
 
-## <a name="in-which-countries-is-this-benefit-available"></a>Dans quels pays cet avantage est-il disponible ?
+## <a name="in-which-markets-is-the-home-use-program-offered"></a>Dans quels pays le programme d’utilisation à domicile est-il proposé ?
 
-Une fois que vous avez activé votre avantage ici (dans Microsoft Store pour les entreprises), les réductions de HUP sur les produits Microsoft sont disponibles pour les employés de la plupart des pays dans le monde, à l’exception des suivantes :
+Les réductions sur les abonnements personnels et de la famille Microsoft 365 sont proposées aux entreprises éligibles dans le monde entier avec les exceptions suivantes :
 
-- Russie
-- Venezuela
-
-Des remises HUP peuvent également être disponibles sur les achats de périphériques et d’accessoires de surface et sur Xbox Ultimate. Pour en savoir plus, consultez la rubrique [abonnements Microsoft 365](https://go.microsoft.com/fwlink/p/linkid=2139192).
+- Macao, Russie et Venezuela : cette offre n’est pas disponible sur ces marchés.
+- Chine et Hong Kong : un abonnement d’un an est disponible sur ces marchés. Pour la Chine, visitez le site [Microsoft 365 en Chine](https://www.microsoftstore.com.cn/home-use-program/invite). Pour Hong Kong, rendez-vous [sur l’achat de Microsoft 365 à un prix réduit](https://www.microsoftestore.com.hk/partner/hup?locale=en_HK).
+- Japon : la famille Microsoft 365 n’est pas disponible.
 
 ## <a name="how-does-an-organization-qualify-for-hup-discounts"></a>Comment une organisation bénéficie-t-elle des remises HUP ?
 
@@ -64,12 +63,6 @@ Pour mettre à jour et moderniser le programme d’utilisation à domicile avec 
 Vous devez créer un enregistrement spécial dans le système DNS pour prouver que vous êtes propriétaire du domaine de votre entreprise, ex :contoso. com.
 
 Pour obtenir une procédure pas à pas pour devenir un locataire géré, consultez la rubrique [prendre le relais d’un annuaire non géré en tant qu’administrateur dans Azure active](https://docs.microsoft.com/azure/active-directory/users-groups-roles/domains-admin-takeover).
-
-## <a name="where-can-i-find-marketing-materials-to-help-promote-the-program-within-my-company"></a>Où puis-je trouver des documents marketing pour promouvoir le programme au sein de mon entreprise ?
-
-Vous trouverez des documents marketing sur l’intégration d’une société dans la section _à propos_ de votre portail d’administration sous le lien matériel d’intégration de programme à la maison de Microsoft.
-
-Vous pouvez également trouver rapidement des documents promotionnels dans la page ressources d’administration informatique/RH. Visitez la [page d’accueil du programme use Home](https://www.microsoft.com/home-use-program/resources) et faites défiler vers le bas jusqu’à la section _Home Use Program Resources_ de la page.
 
 ## <a name="what-resources-are-available-to-help-promote-the-home-use-program-benefit-to-employees"></a>Quelles sont les ressources disponibles pour aider à promouvoir le programme d’utilisation domestique pour les employés ?
 

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Surveiller et gérer la suppression du contenu, que vous utilisiez une révision de disposition ou que le contenu soit automatiquement supprimé en fonction des paramètres que vous avez configurés.
-ms.openlocfilehash: e70160ef309ad421724f9ad40db0d7c6e00df136
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 20f44244005f5a34a0d82f32f625fb067f02df20
+ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46867209"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47294763"
 ---
 # <a name="disposition-of-content"></a>Disposition de contenu
 
@@ -97,7 +97,7 @@ Le déclenchement d’une révision de disposition à la fin de la période de r
 
 Lorsqu’un réviseur est averti par courrier électronique que le contenu est prêt à être révisé, il passe à l’onglet **disposition** de la **gestion des enregistrements** dans le centre de conformité Microsoft 365. Les relecteurs peuvent voir le nombre d’éléments pour chaque étiquette de rétention en attente de destruction, puis sélectionner une étiquette de rétention pour afficher l’ensemble du contenu portant cette étiquette.
 
-Une fois que vous avez sélectionné une étiquette de rétention, vous voyez toutes les impositions en attente de cette étiquette à partir de l’onglet **destruction en attente** . Sélectionnez un ou plusieurs éléments où vous pouvez choisir une action et entrez un commentaire de justification :
+Une fois que vous avez sélectionné une étiquette de rétention, vous voyez toutes les impositions en attente de cette étiquette à partir de l’onglet **destruction en attente** . Sélectionnez un ou plusieurs éléments dans lesquels vous pouvez choisir une action et entrez un commentaire de justification :
 
 ![Options de disposition](../media/retention-disposition-options.png)
 
@@ -120,11 +120,11 @@ Le contenu en attente d’une révision de disposition est supprimé uniquement 
 ## <a name="disposition-of-records"></a>Destruction des enregistrements
 
 > [!NOTE]
-> Le déploiement de la preuve de la suppression des enregistrements dans SharePoint et OneDrive est terminé. Vous verrez la liste des étiquettes de rétention qui ont marqué le contenu comme enregistrements pour SharePoint et OneDrive dans la section disposition de la page de gestion des enregistrements dans le centre de conformité Microsoft 365. Sous ces étiquettes, vous pouvez voir la liste des éléments dans SharePoint et OneDrive qui ont été supprimés automatiquement ou après une révision de destruction.
+> Le déploiement de la preuve de la suppression des enregistrements dans SharePoint et OneDrive est terminé.
 >
-> La preuve de l’élimination des enregistrements dans Exchange n’est pas encore active. À la fin de cette procédure de déploiement, nous mettrons à jour cette note.
+> La preuve de la sortie des enregistrements dans Exchange vient de commencer à déployer. Une fois cette mise en œuvre terminée, nous mettrons à jour cette note.
 
-Utilisez l’onglet **disposition** de la page **gestion des enregistrements** pour identifier les enregistrements supprimés automatiquement. Ces éléments affichent les **enregistrements supprimés** dans la colonne **type** . Par exemple :
+Utilisez l’onglet **disposition** de la page **gestion des enregistrements** pour identifier les enregistrements qui sont désormais supprimés, automatiquement ou après une révision de destruction. Ces éléments affichent les **enregistrements supprimés** dans la colonne **type** . Par exemple :
 
 ![Éléments qui ont été supprimés sans révision de disposition](../media/records-disposed2.png)
 

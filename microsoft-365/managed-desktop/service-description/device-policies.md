@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: d16f63490de8060eea7ef06a4ad6960d846f16eb
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 319b26261f623a7e19e5bb8fbcd0b5d8a50d10a8
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529384"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289708"
 ---
 # <a name="device-configuration"></a>Configuration des appareils
 
@@ -44,7 +44,7 @@ Connexions limitées | Par défaut, les mises à jour sur les connexions limité
 
 ## <a name="diagnostic-data"></a>Données de diagnostic
 
- Les appareils seront configurés pour fournir des données de diagnostic améliorées à Microsoft sous un identificateur commercial connu. Dans le cadre du bureau géré Microsoft, les administrateurs informatiques ne peuvent pas modifier ces paramètres. Pour les clients qui utilisent des régions générales de protection des données (RGPD), les utilisateurs finaux peuvent réduire le niveau de données de diagnostic fourni, mais une réduction du service est possible. Par exemple, le bureau géré Microsoft ne pourra pas collecter les données nécessaires pour effectuer une itération sur les paramètres et les stratégies afin de mieux répondre aux exigences de performances et de sécurité. Pour plus d’informations, reportez-vous à [la rubrique Configurer les données de diagnostic Windows dans votre organisation.](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enhanced-level)
+ Les appareils seront configurés pour fournir des données de diagnostic améliorées à Microsoft sous un identificateur commercial connu. Dans le cadre du bureau géré Microsoft, les administrateurs informatiques ne peuvent pas modifier ces paramètres. Pour les clients qui utilisent des régions générales de protection des données (RGPD), les utilisateurs peuvent réduire le niveau de données de diagnostic fourni, mais une réduction du service est possible. Par exemple, le bureau géré Microsoft ne pourra pas collecter les données nécessaires pour effectuer une itération sur les paramètres et les stratégies afin de mieux répondre aux exigences de performances et de sécurité. Pour plus d’informations, reportez-vous à [la rubrique Configurer les données de diagnostic Windows dans votre organisation.](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enhanced-level)
 
 ## <a name="security-addendum"></a>Addendum sur la sécurité
 

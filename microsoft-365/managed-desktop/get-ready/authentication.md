@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 7caeee6f476fea7881884cea20bd2a59db2c13d9
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 7181e81a2db94ce26fb8601f8b9156c65084c439
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46530042"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289578"
 ---
 #  <a name="prepare-on-premises-resources-access-for-microsoft-managed-desktop"></a>Préparer l’accès aux ressources locales pour le Bureau géré Microsoft
 
@@ -41,8 +41,8 @@ Dans la plupart des organisations, vos utilisateurs peuvent utiliser l’authent
 
 - Vérifiez qu’Azure AD Connect est configuré et qu’il utilise un serveur Active Directory local exécutant Windows Server 2008 R2 ou une version ultérieure.
 - Vérifiez qu’Azure AD Connect exécute une version prise en charge et qu’il est configuré pour synchroniser ces trois attributs avec Azure AD : 
-    - Nom de domaine DNS de l’annuaire Active Directory local (où se trouvent les utilisateurs finaux)
-    - NetBIOS de votre Active Directory local (où se trouvent les utilisateurs finaux)
+    - Nom de domaine DNS de l’annuaire Active Directory local (où se trouvent les utilisateurs)
+    - NetBIOS de votre Active Directory local (où se trouvent les utilisateurs)
     - Nom de compte SAM de l’utilisateur
 
 
