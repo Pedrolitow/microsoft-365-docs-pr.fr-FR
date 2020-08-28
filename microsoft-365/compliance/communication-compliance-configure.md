@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: c61529b612079c93e3c175a67fccd32a7c561400
-ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
+ms.openlocfilehash: 361e20129e67832c21631ebf1dbf0031319489ed
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46597577"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289115"
 ---
 # <a name="get-started-with-communication-compliance"></a>Prise en main de la conformité des communications
 
@@ -57,69 +57,57 @@ Si vous ne disposez pas d’un plan Office 365 entreprise E5 existant et que vou
 >[!Important]
 >Par défaut, les administrateurs globaux n’ont pas accès aux fonctionnalités de conformité des communications. Les rôles attribués au cours de cette étape sont obligatoires avant toute accessibilité des fonctionnalités de conformité de la communication.
 
-Cinq rôles sont utilisés pour configurer les autorisations de gestion des fonctionnalités de conformité des communications. Pour que la conformité de la **communication** soit disponible sous forme d’option de menu dans le centre de conformité Microsoft 365 et pour poursuivre ces étapes de configuration, vous devez disposer du rôle d’administrateur de *conformité des communications* .
+Cinq groupes de rôles sont utilisés pour configurer les autorisations de gestion des fonctionnalités de conformité des communications. Pour que la conformité de la **communication** soit disponible sous la forme d’une option de menu dans le centre de conformité Microsoft 365 et pour poursuivre ces étapes de configuration, vous devez être affecté aux groupes de rôles de *conformité* de communication ou d' *administrateur de conformité* de communication. Pour accéder aux fonctionnalités de conformité de communication et les gérer une fois la configuration initiale, les utilisateurs doivent être membres d’au moins un groupe de rôles de conformité de communication.
 
-En fonction de la façon dont vous souhaitez gérer les stratégies de communication et les alertes, vous devrez créer un ou plusieurs nouveaux groupes de rôles pour les administrateurs, les réviseurs et les enquêteurs. Vous avez la possibilité d’affecter des utilisateurs à des groupes de rôles spécifiques afin de gérer les différentes zones des fonctionnalités de conformité des communications. Vous pouvez également décider de créer un groupe de rôles et d’affecter tous les rôles de conformité de communication au groupe. Créez un groupe de rôles unique ou plusieurs groupes de rôles pour répondre au mieux aux besoins de gestion de la conformité.
+En fonction de la façon dont vous souhaitez gérer les stratégies de communication et les alertes, vous devez affecter des utilisateurs à des groupes de rôles spécifiques. Vous pouvez attribuer à des groupes de rôles spécifiques des utilisateurs ayant des responsabilités différentes en matière de gestion des fonctionnalités de conformité des communications. Ou vous pouvez décider d’affecter tous les comptes d’utilisateur pour les administrateurs, analystes, investigateurs et visionneuses désignés au groupe de rôles de *conformité de communication* . Utilisez un seul groupe de rôles ou plusieurs groupes de rôles pour répondre au mieux aux besoins de gestion de la conformité.
 
-Sélectionnez l’une des options de rôle suivantes lors de la configuration de vos groupes de rôles de conformité de communication :
+Sélectionnez l’une des options de groupe de rôles suivantes lors de la configuration de la conformité des communications :
 
 |**Rôle**|**Autorisations de rôle**|
 |:-----|:-----|
-| **Administrateur de conformité de communication** | Les utilisateurs auxquels ce rôle est attribué peuvent créer, lire, mettre à jour et supprimer des stratégies de conformité de communication, des paramètres globaux et des affectations de groupes de rôles. Les utilisateurs auxquels ce rôle est attribué ne peuvent pas afficher les alertes de message. |
-| **Analyse de la conformité de la communication** | Les utilisateurs auxquels ce rôle est attribué peuvent afficher les stratégies pour lesquelles ils sont affectés en tant que relecteurs, afficher les métadonnées de message (et non le contenu des messages), faire remonter aux relecteurs supplémentaires ou envoyer des notifications aux utilisateurs. Les analystes ne peuvent pas résoudre les alertes en attente. |
-| **Enquête sur la conformité de la communication** | Les utilisateurs auxquels ce rôle est attribué peuvent afficher les métadonnées et le contenu des messages, passer à des relecteurs supplémentaires, passer à un cas avancé de découverte électronique, envoyer des notifications aux utilisateurs et résoudre l’alerte. |
-| **Visionneuse de conformité de la communication** | Les utilisateurs auxquels ce rôle est attribué peuvent accéder à tous les widgets de création de rapports sur la page d’accueil de la communication et peuvent afficher tous les rapports de conformité des communications. |
-| **Gestion des cas de conformité de la communication** | Les utilisateurs auxquels ce rôle est attribué peuvent gérer les incidents et agir sur les alertes. Ce rôle est requis pour la création de groupes de rôles personnalisés pour les administrateurs, les analystes et les investigateurs. Les groupes personnalisés pour les visionneuses n’ont pas besoin de ce rôle. |
+| **Conformité de la communication** | Utilisez ce groupe de rôles pour gérer la conformité des communications de votre organisation dans un seul groupe. En ajoutant tous les comptes d’utilisateur pour les administrateurs, analystes, investigateurs et visionneuses désignés, vous pouvez configurer des autorisations de conformité de la communication dans un seul groupe. Ce groupe de rôles contient tous les rôles d’autorisation de conformité de communication. Cette configuration est la méthode la plus simple pour démarrer rapidement la conformité de la communication et convient aux organisations qui n’ont pas besoin d’autorisations distinctes définies pour des groupes d’utilisateurs distincts. |
+| **Administrateur de conformité de communication** | Utilisez ce groupe de rôles pour configurer initialement la conformité de la communication et par la suite pour séparer les administrateurs de conformité des communications en un groupe défini. Les utilisateurs affectés à ce groupe de rôles peuvent créer, lire, mettre à jour et supprimer des stratégies de conformité de communication, des paramètres globaux et des affectations de groupes de rôles. Les utilisateurs affectés à ce groupe de rôles ne peuvent pas afficher les alertes de message. |
+| **Analyste de conformité des communications** | Utilisez ce groupe pour attribuer des autorisations aux utilisateurs qui agiront en tant qu’analystes de conformité des communications. Les utilisateurs affectés à ce groupe de rôles peuvent afficher les stratégies pour lesquelles ils sont affectés en tant que relecteurs, afficher les métadonnées de message (et non le contenu des messages), faire remonter aux relecteurs supplémentaires ou envoyer des notifications aux utilisateurs. Les analystes ne peuvent pas résoudre les alertes en attente. |
+| **Investigation de conformité des communications** | Utilisez ce groupe pour attribuer des autorisations aux utilisateurs qui agiront en tant qu’investigations de conformité des communications. Les utilisateurs affectés à ce groupe de rôles peuvent afficher les métadonnées et le contenu des messages, passer à des relecteurs supplémentaires, passer à un cas avancé eDiscovery, envoyer des notifications aux utilisateurs et résoudre l’alerte. |
+| **Visionneuse de conformité de la communication** | Utilisez ce groupe pour attribuer des autorisations aux utilisateurs qui géreront les rapports de communication. Les utilisateurs affectés à ce groupe de rôles peuvent accéder à tous les widgets de création de rapports sur la page d’accueil de la conformité de la communication et peuvent afficher tous les rapports de conformité des communications. |
 
-### <a name="option-1-create-a-new-role-group-with-all-communication-compliance-roles"></a>Option 1 : créer un nouveau groupe de rôles avec tous les rôles de conformité de communication
-
-1. Connectez-vous [https://protection.office.com/permissions](https://protection.office.com/permissions) à l’aide des informations d’identification d’un compte d’administrateur dans votre organisation Microsoft 365.
-
-2. Dans le centre de sécurité &amp; conformité, accédez à **autorisations**. Sélectionnez le lien pour afficher et gérer les rôles dans Office 365.
-
-3. Sélectionnez **Créer**.
-
-4. Dans le champ **nom** , attribuez un nom convivial au nouveau groupe de rôles. Sélectionnez **Suivant**.
-
-5. Sélectionnez **choisir les rôles** , puis **Ajouter**. Activez les cases à cocher pour les rôles suivants :
-
-    - Administrateur de conformité de communication
-    - Analyse de la conformité de la communication
-    - Enquête sur la conformité de la communication
-    - Visionneuse de conformité de la communication
-    - Gestion des cas de conformité de la communication
-
-    ![Rôles de conformité de communication](../media/communication-compliance-case-roles.png)
-
-6. Sélectionnez **Ajouter** et **Terminer**, puis cliquez sur **suivant** pour continuer.
-
-7. Sélectionnez **choisir les membres** , puis **Ajouter**. Activez la case à cocher de tous les utilisateurs et groupes pour lesquels vous souhaitez créer des stratégies et gérer les messages avec des correspondances de stratégie, puis sélectionnez **Ajouter** et **Terminer**. Sélectionnez **Suivant**.
-
-8. Sélectionnez **créer un groupe de rôles** à terminer.
-
-### <a name="option-2-create-new-role-groups-with-different-communication-compliance-roles"></a>Option 2 : créer des groupes de rôles avec différents rôles de conformité de communication
-
-Créez plusieurs groupes de rôles pour segmenter l’accès et les responsabilités de conformité de communication entre différents utilisateurs de votre organisation. Pour chaque nouveau groupe de rôles, vous devez attribuer différents rôles de conformité de communication.
+### <a name="option-1-assign-all-compliance-users-to-the-communication-compliance-role-group"></a>Option 1 : assigner tous les utilisateurs de conformité au groupe de rôles de conformité de communication
 
 1. Connectez-vous [https://protection.office.com/permissions](https://protection.office.com/permissions) à l’aide des informations d’identification d’un compte d’administrateur dans votre organisation Microsoft 365.
 
 2. Dans le centre de sécurité &amp; conformité, accédez à **autorisations**. Sélectionnez le lien pour afficher et gérer les rôles dans Office 365.
 
-3. Sélectionnez **Créer**.
+3. Sélectionnez le groupe de rôles *conformité des communications* , puis sélectionnez Modifier le **groupe de rôles**.
 
-4. Dans le champ **nom** , attribuez un nom convivial au nouveau groupe de rôles. Sélectionnez **Suivant**.
+4. Sélectionnez **choisir les membres** dans le volet de navigation de gauche, puis sélectionnez **modifier**.
 
-5. Sélectionnez **choisir les rôles** , puis **Ajouter**. Cochez la case correspondant aux rôles de conformité de communication que vous souhaitez attribuer à ce groupe. Par exemple, si ce groupe de rôles est destiné aux analystes de conformité au sein de votre organisation, vous devez *Sélectionner les rôles* de gestion de la conformité des communications et de la *gestion des cas* de communication. Si ce groupe de rôles est destiné aux investigateurs de conformité, vous devez *Sélectionner les rôles* de gestion de la conformité des communications et de la *gestion des cas* de conformité des communications.
+5. Sélectionnez **Ajouter** , puis activez la case à cocher de tous les utilisateurs que vous souhaitez ajouter au groupe de rôles de *conformité de communication* .
 
-    ![Rôles de conformité de communication](../media/communication-compliance-analysts-role-group.png)
+6. Sélectionnez **Ajouter**, puis **Terminé**.
 
-6. Sélectionnez **Ajouter** et **Terminer**, puis cliquez sur **suivant** pour continuer.
+7. Sélectionnez **Enregistrer** pour ajouter les utilisateurs au groupe de rôles. Sélectionnez **Fermer** pour effectuer les étapes
 
-7. Sélectionnez **choisir les membres** , puis **Ajouter**. Activez la case à cocher de tous les utilisateurs et groupes pour lesquels vous souhaitez créer des stratégies et gérer les messages avec des correspondances de stratégie, puis sélectionnez **Ajouter** et **Terminer**. Sélectionnez **Suivant**.
+### <a name="option-2-assign-users-to-specific-communication-compliance-role-groups"></a>Option 2 : affecter des utilisateurs à des groupes de rôles de conformité de communication spécifiques
 
-8. Sélectionnez **créer un groupe de rôles** à terminer.
+Utilisez cette option pour affecter des utilisateurs à des groupes de rôles spécifiques afin de segmenter les responsabilités et l’accès à la conformité aux communications entre différents utilisateurs de votre organisation.
 
-9. Créez des groupes de rôles de conformité de communication supplémentaires selon vos besoins.
+1. Connectez-vous [https://protection.office.com/permissions](https://protection.office.com/permissions) à l’aide des informations d’identification d’un compte d’administrateur dans votre organisation Microsoft 365.
+
+2. Dans le centre de sécurité &amp; conformité, accédez à **autorisations**. Sélectionnez le lien pour afficher et gérer les rôles dans Office 365.
+
+3. Sélectionnez l’un des groupes de rôles de conformité de communication, puis sélectionnez **modifier le groupe de rôles**.
+
+4. Sélectionnez **choisir les membres** dans le volet de navigation de gauche, puis sélectionnez **modifier**.
+
+5. Sélectionnez **Ajouter** , puis activez la case à cocher de tous les utilisateurs que vous souhaitez ajouter au groupe de rôles.
+
+6. Sélectionnez **Ajouter**, puis **Terminé**.
+
+7. Sélectionnez **Enregistrer** pour ajouter les utilisateurs au groupe de rôles.
+
+8. Sélectionnez le groupe de rôles de conformité de communication suivant, puis répétez les étapes 4-7 pour chaque groupe de rôles requis.
+
+9. Sélectionnez **Fermer** pour effectuer les étapes.
 
 Pour plus d’informations sur les groupes de rôles et les autorisations, consultez [la rubrique autorisations dans le centre de conformité](../security/office-365-security/protect-against-threats.md).
 
@@ -138,7 +126,7 @@ Utilisez le tableau suivant pour vous aider à configurer les groupes au sein de
 | **Membre de la stratégie** | **Groupes pris en charge** | **Groupes non pris en charge** |
 |:-----|:-----|:-----|
 |Utilisateurs supervisés <br> Utilisateurs non supervisés | Groupes de distribution <br> Groupes Microsoft 365 | Groupes de distribution dynamique |
-| Relecteurs | Aucun | Groupes de distribution <br> groupes de distribution dynamiques <br> Groupes de sécurité à extension messagerie |
+| Relecteurs | Néant | Groupes de distribution <br> groupes de distribution dynamiques <br> Groupes de sécurité à extension messagerie |
   
 Lorsque vous affectez un groupe de distribution dans la stratégie, la stratégie surveille tous les messages électroniques provenant de chaque utilisateur dans le groupe de distribution. Lorsque vous affectez un groupe Microsoft 365 dans la stratégie, la stratégie surveille tous les messages électroniques envoyés à ce groupe, et non les messages électroniques individuels reçus par chaque membre du groupe.
 

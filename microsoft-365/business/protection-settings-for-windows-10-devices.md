@@ -1,5 +1,5 @@
 ---
-title: Définir les paramètres de protection des applications pour les appareils Windows 10
+title: Modifier ou définir les paramètres de protection des applications pour les appareils Windows 10
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -28,38 +28,37 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 02e74022-44af-414b-9d74-0ebf5c2197f0
-description: Découvrez comment créer une stratégie de gestion des applications et protéger les fichiers de travail sur les appareils Windows 10 personnels de vos utilisateurs.
-ms.openlocfilehash: df10470c6bd7aad2f35700a267c4d24d949f569c
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+description: Découvrez comment créer ou modifier des stratégies de gestion des applications et protéger les fichiers de travail sur les appareils Windows 10 personnels de vos utilisateurs.
+ms.openlocfilehash: f85a59649e43c141b62091337b842a490d411833
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44470864"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289196"
 ---
-# <a name="set-application-protection-settings-for-windows-10-devices"></a>Définir les paramètres de protection des applications pour les appareils Windows 10
+# <a name="set-or-edit-application-protection-settings-for-windows-10-devices"></a>Définir ou modifier les paramètres de protection des applications pour les appareils Windows 10
 
 Cet article s’applique à Microsoft 365 Business Premium.
+
+## <a name="edit-an-app-management-policy-for-windows-10"></a>Modifier une stratégie de gestion des applications pour Windows 10
+
+1. Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.     
+2. Dans le volet de navigation de gauche, choisissez stratégies de **périphériques** \> **Policies** .
+1. Choisissez une stratégie d’application Windows existante, puis **Modifiez**.
+1. Sélectionnez **modifier** en regard d’un paramètre que vous souhaitez modifier, puis **Enregistrer**.
 
 ## <a name="create-an-app-management-policy-for-windows-10"></a>Créer une stratégie de gestion des applications pour Windows 10
 
 Si vos utilisateurs disposent d'appareils Windows 10 sur lesquels ils effectuent des tâches professionnelles, vous pouvez également protéger vos données sur ces appareils.
   
 1. Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>. 
-    
 2. Dans le volet de navigation de gauche, choisissez ajout de stratégies de **périphériques** \> **Policies** \> **Add**.
-
 3. Dans le volet **Ajouter une stratégie**, entrez un nom unique pour cette stratégie. 
-    
 4. Sous **Type de stratégie**, sélectionnez **Gestion des applications pour Windows 10**.
-    
 5. Sous **type d’appareil**, choisissez **personnel** ou **société appartenant**.
-    
 6. L'option **Chiffrer les fichiers de travail** est activée automatiquement. 
-    
 7. Définissez **Empêcher les utilisateurs de copier des données d'entreprise dans leurs fichiers personnels et les obliger à enregistrer les fichiers professionnels dans OneDrive Entreprise** sur **Activé** si vous ne souhaitez pas que les utilisateurs enregistrent des fichiers professionnels sur leur PC. 
-    
 9. Développez **récupération de données sur les appareils Windows**. Nous vous recommandons **de**l’activer.
-    
     Avant de pouvoir accéder à l'emplacement du certificat de l'agent de récupération de données, vous devez d'abord créer un tel certificat. Pour obtenir des instructions, consultez la rubrique [créer et vérifier un certificat d’agent de récupération de données (DRA) EFS (Encrypting File System)](https://go.microsoft.com/fwlink/p/?linkid=853700).
     
     Par défaut, les fichiers de travail sont chiffrés à l'aide d'une clé secrète qui est stockée sur l'appareil associé au profil de l'utilisateur. Seul l'utilisateur peut ouvrir et déchiffrer le fichier. Toutefois, si un périphérique est perdu ou si un utilisateur est supprimé, un fichier peut rester bloqué à l'état chiffré. Un administrateur peut utiliser le certificat de l’agent de récupération de données (DRA) pour déchiffrer le fichier.
@@ -71,5 +70,4 @@ Si vos utilisateurs disposent d'appareils Windows 10 sur lesquels ils effectuent
     ![Expand Protect additional network and cloud locations, and enter domains or SharePoint Online sites you own.](../media/7afaa0c7-ba53-456d-8c61-312c45e09625.png)
   
 11. Maintenant, définissez **Qui recevra ces paramètres ?** Si vous ne voulez pas utiliser le groupe de sécurité par défaut **Tous les utilisateurs**, sélectionnez **Modifier**, puis les groupes de sécurité qui recevront ces paramètres \> **Sélectionner**.
-    
 12. Enfin, sélectionnez **Ajouter** pour enregistrer la stratégie et l'affecter à des appareils. 

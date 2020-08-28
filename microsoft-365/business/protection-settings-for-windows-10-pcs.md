@@ -1,5 +1,5 @@
 ---
-title: Définir les paramètres de protection des appareils pour les PC Windows 10
+title: Modifier ou créer des paramètres de protection des appareils pour les PC Windows 10
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -22,32 +22,30 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
-description: Découvrez les paramètres par défaut et d’autres paramètres disponibles dans Microsoft 365 pour les entreprises afin de sécuriser les appareils Windows 10.
-ms.openlocfilehash: af3f58ba13a1011e65be45337c63ff714bfdaf0c
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+description: Découvrez les paramètres disponibles dans Microsoft 365 pour les entreprises afin de sécuriser les appareils Windows 10.
+ms.openlocfilehash: bd992113403c7134fb32bc6cced5bf216843241b
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44470844"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289152"
 ---
-# <a name="set-device-protection-settings-for-windows-10-pcs"></a>Définir les paramètres de protection des appareils pour les PC Windows 10
+# <a name="edit-or-create-device-protection-settings-for-windows-10-pcs"></a>Modifier ou créer des paramètres de protection des appareils pour les PC Windows 10
 
 Cet article s’applique à Microsoft 365 Business Premium.
 
-## <a name="secure-windows-10-devices"></a>Sécuriser les appareils Windows 10
+Une fois que vous avez défini configurer les paramètres de protection Windows par défaut sur la page d’installation, vous pouvez en ajouter de nouveaux qui s’appliquent à tous les utilisateurs ou à un ensemble d’utilisateurs. Vous pouvez également modifier tous ceux que vous avez créés.
 
-Regardez une vidéo sur la sécurisation des appareils Windows 10 avec Microsoft 365 pour les entreprises :
+## <a name="create-protection-settings-for-windows-10-devices"></a>Créer des paramètres de protection pour les appareils Windows 10
+
+Regardez une vidéo sur la sécurisation des appareils Windows 10 avec Microsoft 365 Business Premium :
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/a5734146-620a-4cec-8618-536b3ca37972?autoplay=false]
   
 1. Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>. 
-    
 2. Dans le volet de navigation de gauche, choisissez ajout de stratégies de **périphériques** \> **Policies** \> **Add**.
-  
 3. Dans le volet **Ajouter une stratégie**, entrez un nom unique pour cette stratégie. 
-    
 4. Sous **Type de stratégie**, sélectionnez **Configuration d'appareil Windows 10**.
-    
 5. Expand **Secure Windows 10 Devices** \> configure the settings how you would like. Pour plus d’informations, consultez la rubrique [available Settings](#available-settings). 
     
     Vous pouvez toujours utiliser le lien **Réinitialiser les paramètres par défaut** pour rétablir la valeur par défaut. 
@@ -55,9 +53,15 @@ Regardez une vidéo sur la sécurisation des appareils Windows 10 avec Microsoft
     ![Add policy pane with Windows 10 Device configuration selected](../media/fa9e2dc2-7eae-4c96-af34-765a1f641ecf.png)
   
 6. Maintenant, définissez **Qui recevra ces paramètres ?** Si vous ne voulez pas utiliser le groupe de sécurité par défaut **Tous les utilisateurs**, sélectionnez **Modifier**, puis recherchez le groupe qui obtiendra ces paramètres \> **Sélectionner**.
-    
 7. Enfin, sélectionnez **Terminé** pour enregistrer la stratégie et l'affecter à des appareils. 
-    
+
+## <a name="edit-windows-10-protection-settings"></a>Modifier les paramètres de protection de Windows 10
+ 
+1. Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.     
+2. Dans le volet de navigation de gauche, choisissez stratégies de **périphériques** \> **Policies** .
+1. Choisissez une stratégie d’appareil Windows existante, puis **Modifiez**.
+1. Sélectionnez **modifier** en regard d’un paramètre que vous souhaitez modifier, puis **Enregistrer**.
+
 ## <a name="available-settings"></a>Paramètres disponibles
 
 Par défaut, tous les paramètres sont **Activés**. Les paramètres suivants sont disponibles.

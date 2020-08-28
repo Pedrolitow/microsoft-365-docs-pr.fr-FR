@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: d8a5775d90f592aa5f64dd5f379fb37278032d87
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 8b287200b1c94ff350f7ba00cf0c4e6bc1b4a71f
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529802"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289260"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>Ajouter et vérifier des contacts d’administrateur dans le portail d’administration
 
@@ -42,7 +42,7 @@ Zone de focus | Pour obtenir des questions sur
 Empaquetage d’applications | Résolution des problèmes d’empaquetage d’applications
 Appareils | Intégrité de l’appareil, résolution des problèmes avec les appareils de bureau gérés Microsoft
 Sécurité | Résolution des problèmes de sécurité avec les appareils de bureau gérés Microsoft
-Support technique informatique | dans les cas où notre équipe de support technique effectue des tickets d’utilisateur final en dehors des zones de support de bureau géré Microsoft 
+Support technique informatique | Lorsque le personnel du support technique passe par les tickets d’utilisateur en dehors des zones de prise en charge de bureau géré Microsoft 
 Autre | Pour les problèmes non couverts par d’autres domaines
 
 **Les personnes que vous choisissez pour ces contacts doivent disposer des connaissances et des pouvoirs nécessaires pour prendre des décisions concernant votre environnement de bureau géré Microsoft.** Lorsque vous intégrez votre environnement de bureau géré Microsoft, vous êtes invité à ajouter des contacts pour votre service d’assistance et sécurité locaux. 

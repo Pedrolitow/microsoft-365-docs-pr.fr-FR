@@ -1,5 +1,5 @@
 ---
-title: Contrôle d’application
+title: Contrôle des applications
 description: ''
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
@@ -10,21 +10,21 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: f11c7a4aa69c96232a33c565e7bf20d04b96d1f7
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 32ed3f95ebb4299796c5ad3eb71802c949701b65
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529970"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289126"
 ---
-# <a name="app-control"></a>Contrôle d’application
+# <a name="app-control"></a>Contrôle des applications
 
 Le contrôle d’application est une pratique de sécurité facultative dans Microsoft Managed Desktop qui limite l’exécution du code sur les appareils clients. Ce contrôle réduit le risque de programmes malveillants ou de scripts malveillants en exigeant que seul le code signé par une liste d’éditeurs approuvés par le client puisse s’exécuter. Ce contrôle présente de nombreux avantages en matière de sécurité, mais il vise principalement à protéger les données et l’identité des attaques basées sur les clients.
 
 Microsoft Managed Desktop simplifie la gestion des stratégies de contrôle d’application en créant une stratégie de base qui active les scénarios de productivité principaux. Vous pouvez étendre l’approbation à des signataires supplémentaires spécifiques aux applications et aux scripts de votre environnement. 
 
 
-Toute technologie de sécurité nécessite un équilibre entre l’expérience utilisateur, la sécurité et les coûts. Le contrôle d’application réduit la menace de logiciels malveillants dans votre environnement, mais il y a des conséquences pour l’utilisateur final et des actions supplémentaires pour votre administrateur informatique.
+Toute technologie de sécurité nécessite un équilibre entre l’expérience utilisateur, la sécurité et les coûts. Le contrôle d’application réduit la menace de logiciels malveillants dans votre environnement, mais il y a des conséquences pour l’utilisateur et des actions supplémentaires pour votre administrateur informatique.
 
 **Sécurité supplémentaire :**
 
@@ -73,7 +73,7 @@ Cette stratégie crée des journaux pour enregistrer le blocage ou non d’une a
 ### <a name="enforced-policy"></a>Stratégie appliquée
 Cette stratégie empêche les applications et les scripts non approuvés de s’exécuter et crée des journaux chaque fois qu’une application ou un script est bloqué. Les stratégies appliquées empêchent les utilisateurs standard d’exécuter des applications ou des scripts stockés dans des répertoires accessibles par l’utilisateur.
 
-Les périphériques du groupe de test ont une stratégie d’audit appliquée afin que vous puissiez les utiliser pour vérifier si des applications génèrent des problèmes. Tous les autres groupes (First, Fast et large) utilisent une stratégie appliquée, de sorte que les utilisateurs finaux de ces groupes ne puissent pas exécuter des applications ou des scripts non approuvés.
+Les périphériques du groupe de test ont une stratégie d’audit appliquée afin que vous puissiez les utiliser pour vérifier si des applications génèrent des problèmes. Tous les autres groupes (First, Fast et large) utilisent une stratégie appliquée, de sorte que les utilisateurs de ces groupes ne puissent pas exécuter des applications ou des scripts non approuvés.
 
 
 

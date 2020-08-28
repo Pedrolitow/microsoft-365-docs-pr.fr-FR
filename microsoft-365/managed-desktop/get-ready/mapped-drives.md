@@ -9,12 +9,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: e6311c0ad11d68c870b0c8185974b8913735e2a2
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 04c3901155ecd80fad472e07e7e46620c3ddee1f
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46530174"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289272"
 ---
 #  <a name="prepare-mapped-drives-for-microsoft-managed-desktop"></a>Préparer les lecteurs mappés pour le Bureau géré Microsoft
 
@@ -24,7 +24,7 @@ De nombreux environnements d’entreprise ont des exigences héritées pour les 
 - Migrer des lecteurs mappés utilisés par teams pour partager des fichiers avec SharePoint Online. 
 - Moderniser ou remplacer les applications qui utilisent des partages de fichiers locaux pour supprimer cette exigence.
   
-La modernisation de ces services permettra aux utilisateurs finaux les plus performants avec le bureau géré Microsoft. Microsoft FastTrack services peut vous aider à moderniser votre environnement à l’aide des services de Cloud Computing Microsoft. Vous pouvez vérifier si vous êtes éligible aux services FastTrack dans les [offres et les services éligibles](https://docs.microsoft.com/fasttrack/m365-eligible-services-and-plans) , puis les contacter directement pour préparer le bureau géré Microsoft. Pour en savoir plus sur la migration de FastTrack OneDrive entreprise ou SharePoint Online, consultez la rubrique [migration de données](https://docs.microsoft.com/fasttrack/o365-data-migration).
+La modernisation de ces services permettra une expérience utilisateur optimale avec le bureau géré Microsoft. Microsoft FastTrack services peut vous aider à moderniser votre environnement à l’aide des services de Cloud Computing Microsoft. Vous pouvez vérifier si vous êtes éligible aux services FastTrack dans les [offres et les services éligibles](https://docs.microsoft.com/fasttrack/m365-eligible-services-and-plans) , puis les contacter directement pour préparer le bureau géré Microsoft. Pour en savoir plus sur la migration de FastTrack OneDrive entreprise ou SharePoint Online, consultez la rubrique [migration de données](https://docs.microsoft.com/fasttrack/o365-data-migration).
 
 ## <a name="mapped-drives-on-microsoft-managed-desktop"></a>Lecteurs mappés sur le bureau géré Microsoft
  

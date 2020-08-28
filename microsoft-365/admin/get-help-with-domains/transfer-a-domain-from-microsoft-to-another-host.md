@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: 'Recherchez les étapes à suivre pour transférer un domaine de Microsoft vers un autre serveur d’inscriptions. '
-ms.openlocfilehash: 7e00f5ae2c36a06803a3f7a8acd825dcab90805c
-ms.sourcegitcommit: 6fb2a1c404ea3c3573b0f7803bf17459a9387891
+ms.openlocfilehash: c5c1e98ed14c3ac975e55aadbff65e52165a6f8b
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46788979"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289170"
 ---
 # <a name="transfer-a-domain-from-microsoft-to-another-host"></a>Transférer un domaine de Microsoft vers un autre hôte
 
@@ -43,7 +43,7 @@ Suivez les étapes ci-dessous pour obtenir un code auprès de Microsoft 365, pui
 
 1. Dans le centre d’administration, accédez à  **paramètres**   >  **Domains**.
 
-2. <sur la page **domaines** , sélectionnez le domaine Microsoft 365 que vous souhaitez transférer vers un autre bureau d’enregistrement de domaines, puis sélectionnez **vérifier l’intégrité**.
+2. Sur la page **domaines** , sélectionnez le domaine Microsoft 365 que vous souhaitez transférer vers un autre bureau d’enregistrement de domaines, puis sélectionnez **vérifier l’intégrité**.
 
 3. En haut de la page, sélectionnez **transférer un domaine**.
 

@@ -9,16 +9,16 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 826710bf59acd88494adf1f154e5657d1e039af7
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 0785d7ac12c7b027322338d9949a10ea30168b3b
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529934"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289060"
 ---
 # <a name="exceptions-to-the-service-plan"></a>Exceptions au plan de service
 
-Microsoft Managed Desktop fournit une liste d’appareils organisée, des [paramètres standard des appareils](device-policies.md), des applications requises et certains [paramètres configurables](../working-with-managed-desktop/config-setting-overview.md), conçus pour offrir une expérience sécurisée, productive et agréable aux utilisateurs finaux. Il est préférable de toujours conserver le service tel qu’il est fourni. Toutefois, nous reconnaissons que certains détails du service ne correspondent pas exactement aux besoins de votre organisation. Si vous pensez que vous devez modifier le service d’une certaine façon, il est important de suivre les processus suivants pour demander ces modifications.
+Microsoft Managed Desktop fournit une liste d’appareils organisée, des [paramètres standard des appareils](device-policies.md), des applications requises et certains [paramètres configurables](../working-with-managed-desktop/config-setting-overview.md), tous conçus pour offrir une expérience sécurisée, productive et agréable pour les utilisateurs. Il est préférable de toujours conserver le service tel qu’il est fourni. Toutefois, nous reconnaissons que certains détails du service ne correspondent pas exactement aux besoins de votre organisation. Si vous pensez que vous devez modifier le service d’une certaine façon, il est important de suivre les processus suivants pour demander ces modifications.
  
 ## <a name="types-of-exceptions"></a>Types d’exceptions
 
@@ -26,7 +26,7 @@ Une exception est l’ajout ou la modification de la configuration de base du bu
 
 |Type  |Description  |
 |---------|---------|
-|Logiciels de productivité     |  Logiciels de premier plan requis par les utilisateurs finaux, limités par les exigences de l' [application](mmd-app-requirements.md)       |
+|Logiciels de productivité     |  Logiciels de premier plan requis par les utilisateurs, limités par les exigences de l' [application](mmd-app-requirements.md)       |
 |Agents de sécurité & VPN     |  Logiciel utilisé pour sécuriser, surveiller ou modifier le comportement du périphérique ou du réseau       |
 |Surveillance de l’expérience numérique     |  Logiciel utilisé pour effectuer le suivi des données sur l’appareil d’un utilisateur pour lui faire rapport.       |
 |Pilotes matériels ou logiciels     |   Pilotes de périphériques, restreints par les exigences de l' [application](mmd-app-requirements.md)      |
@@ -48,7 +48,7 @@ Soumettez des demandes via le portail d’administration de bureau géré Micros
 Lorsque nous examinez les demandes d’exception, nous évaluons ces facteurs dans cet ordre :
  
 1.  Certaines applications et stratégies déployées par Microsoft Managed Desktop sur tous les appareils ne sont pas négociables, de sorte que votre requête ne doit pas les affecter. Pour plus d’informations, voir Configuration de l' [appareil](device-policies.md) .
-2.  Les logiciels de productivité restreints requis par un utilisateur final pour effectuer leur travail seront vraisemblablement approuvés. 
+2.  Les logiciels de productivité restreints requis par un utilisateur pour effectuer leur travail seront vraisemblablement approuvés. 
 3.  Si nous pouvons répondre à vos besoins à l’aide de la technologie Microsoft, nous approuverons probablement votre demande pour une période de migration des exceptions de trois à douze mois (en fonction de l’étendue du projet).
 4.  Si nous ne pouvons pas répondre à vos besoins à l’aide de la technologie Microsoft, nous approuvons probablement votre demande, sauf si elle viole l’une des conditions ci-dessous.  
 
