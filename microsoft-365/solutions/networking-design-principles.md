@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 778693787c3d26806b02a2ffbde57e3347326d87
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: a005d56dcca08c05eb433ef75ca3870785b39f19
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46522264"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308128"
 ---
 # <a name="networking-up-to-the-cloud--one-architects-viewpoint"></a>Mise en réseau (vers le Cloud) — point de vue d’un architecte
 
@@ -84,9 +84,9 @@ Lorsque vous n’autorisez pas le trafic UDP sortant des clients vers le service
 ### <a name="split-tunneling-may-seem-scary"></a>Le tunneling fractionné peut sembler effrayant
 Mais ce n’est pas le cas. Toutes les connexions à Office 365 sont sur TLS. Nous proposons une offre TLS 1,2 pour un certain temps maintenant et nous désactiverons les versions plus anciennes bientôt, car les clients hérités continueront à les utiliser et cela est un risque.
 
-En forçant une connexion TLS, ou 32, de le faire passer sur un réseau privé virtuel (VPN) avant de passer au service n’ajoute pas de sécurité. Elle ajoute la latence et réduit le débit global. Dans certaines solutions VPN, il force même le tunnel UDP vers le trafic TCP, ce qui aura un impact très négatif sur le trafic de diffusion en continu. À moins que vous n’effectuiez une inspection TLS, il n’y a aucun inconvénient. Un thème très commun parmi les clients actuellement, maintenant que la plupart de leurs employés sont à distance, il s’agit d’un impact significatif sur la bande passante et les performances de la connexion de tous leurs utilisateurs à l’aide d’un VPN, au lieu de configurer le tunneling fractionné pour l’accès à [optimiser les points de terminaison Office 365](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#new-office-365-endpoint-categories)de la catégorie.
+En forçant une connexion TLS, ou 32, de le faire passer sur un réseau privé virtuel (VPN) avant de passer au service n’ajoute pas de sécurité. Elle ajoute la latence et réduit le débit global. Dans certaines solutions VPN, il force même le tunnel UDP vers le trafic TCP, ce qui aura un impact très négatif sur le trafic de diffusion en continu. À moins que vous n’effectuiez une inspection TLS, il n’y a aucun inconvénient. Un thème très commun parmi les clients actuellement, maintenant que la plupart de leurs employés sont à distance, il s’agit d’un impact significatif sur la bande passante et les performances de la connexion de tous leurs utilisateurs à l’aide d’un VPN, au lieu de configurer le tunneling fractionné pour l’accès à [optimiser les points de terminaison Office 365](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-network-connectivity-principles#new-office-365-endpoint-categories)de la catégorie.
 
-Il est facile de procéder à un tunneling fractionné et c’est une solution à effectuer. Pour plus d’informations, vérifiez que vous avez examiné [optimiser la connectivité Office 365 pour les utilisateurs distants à l’aide du tunneling VPN Split](https://docs.microsoft.com/office365/enterprise/office-365-vpn-split-tunnel).
+Il est facile de procéder à un tunneling fractionné et c’est une solution à effectuer. Pour plus d’informations, vérifiez que vous avez examiné [optimiser la connectivité Office 365 pour les utilisateurs distants à l’aide du tunneling VPN Split](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-split-tunnel).
 
 
 ## <a name="the-sins-of-the-past"></a>Le péchés du passé
@@ -108,32 +108,32 @@ Des dizaines de milliers d’organisations, dont la plupart des 500 fortune, uti
 
 ## <a name="further-reading"></a>Autres lectures
 
-[Principes de connectivité réseau Office 365](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles)
+[Principes de connectivité réseau Office 365](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-network-connectivity-principles)
 
-[URL et plages d’adresses IP Office 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges?redirectSourcePath=%252fen-us%252farticle%252fOffice-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+[URL et plages d’adresses IP Office 365](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges)
 
-[Gestion des points de terminaison Office 365](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints)
+[Gestion des points de terminaison Office 365](https://docs.microsoft.com/microsoft-365/enterprise/managing-office-365-endpoints)
 
-[Service web d’URL et d’adresses IP Office 365](https://docs.microsoft.com/office365/enterprise/office-365-ip-web-service)
+[Service web URL et adresses IP Office 365](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-ip-web-service)
 
-[Évaluation de la connectivité réseau Office 365](https://docs.microsoft.com/office365/enterprise/assessing-network-connectivity)
+[Évaluation de la connectivité réseau Office 365](https://docs.microsoft.com/microsoft-365/enterprise/assessing-network-connectivity)
 
-[Paramétrage des performances et du réseau Office 365](https://docs.microsoft.com/office365/enterprise/network-planning-and-performance)
+[Paramétrage des performances et du réseau Office 365](https://docs.microsoft.com/microsoft-365/enterprise/network-planning-and-performance)
 
-[Évaluation de la connectivité réseau Office 365](https://docs.microsoft.com/office365/enterprise/assessing-network-connectivity)
+[Évaluation de la connectivité réseau Office 365](https://docs.microsoft.com/microsoft-365/enterprise/assessing-network-connectivity)
 
-[Réglage des performances Office 365 à l’aide du planning de référence et de l’historique des performances](https://docs.microsoft.com/office365/enterprise/performance-tuning-using-baselines-and-history)
+[Réglage des performances Office 365 à l’aide du planning de référence et de l’historique des performances](https://docs.microsoft.com/microsoft-365/enterprise/performance-tuning-using-baselines-and-history)
 
-[Plan de résolution des problèmes de performances pour Office 365](https://docs.microsoft.com/office365/enterprise/performance-troubleshooting-plan)
+[Plan de résolution des problèmes de performances pour Office 365](https://docs.microsoft.com/microsoft-365/enterprise/performance-troubleshooting-plan)
 
-[Réseaux de distribution de contenu](https://docs.microsoft.com/office365/enterprise/content-delivery-networks)
+[Réseaux de distribution de contenu](https://docs.microsoft.com/microsoft-365/enterprise/content-delivery-networks)
 
 [Test de connectivité Microsoft 365](https://connectivity.office.com/)
 
-[Comment Microsoft crée un réseau mondial rapide et fiable](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)
+[Comment Microsoft construit son réseau mondial rapide et fiable](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)
 
-[Blog sur le réseau Office 365](https://techcommunity.microsoft.com/t5/office-365-networking/bd-p/Office365Networking)
+[Blog sur la mise en réseau Office 365](https://techcommunity.microsoft.com/t5/office-365-networking/bd-p/Office365Networking)
 
-[Connectivité Office 365 pour les utilisateurs distants utilisant le tunneling VPN Split Tunneling](https://docs.microsoft.com/office365/enterprise/office-365-vpn-split-tunnel)
+[Connectivité Office 365 pour les utilisateurs distants utilisant le tunneling VPN Split Tunneling](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-split-tunnel)
 
 

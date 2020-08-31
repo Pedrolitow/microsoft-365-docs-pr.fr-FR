@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Vue d’ensemble du score de productivité Microsoft.
-ms.openlocfilehash: 66ab028282fb8c74087713083e43e22cf6708897
-ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
+ms.openlocfilehash: 47675f37e9146586b3fe0dd8d974887fd2435bf3
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46868854"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307476"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Score de productivité Microsoft (aperçu)
 
@@ -44,7 +44,7 @@ Nous fournissons des données, des informations et des recommandations dans deux
 
 - **Expérience technologique :** La productivité dépend de la technologie fiable et performante, ainsi que de l’utilisation efficace de Microsoft 365. Nous fournissons des [analyses de point de terminaison](https://aka.ms/endpointanalytics), ce qui vous permet de comprendre comment la productivité de vos utilisateurs peut être affectée par les problèmes de performances et d’intégrité avec votre matériel et votre logiciel de point de terminaison, tout en fournissant des actions recommandées pour les corriger ; et nous fournissons des informations de connectivité réseau Microsoft 365 pour votre organisation.
 
-Voir [qu’est-ce que le point de terminaison Analytics](https://docs.microsoft.com/mem/analytics/overview) pour une vue d’ensemble et les détails prérequis. Pour en savoir plus sur les informations sur la connectivité réseau Microsoft 365, consultez [la rubrique Network Connectivity Overview](https://docs.microsoft.com/office365/enterprise/office-365-networking-overview).
+Voir [qu’est-ce que le point de terminaison Analytics](https://docs.microsoft.com/mem/analytics/overview) pour une vue d’ensemble et les détails prérequis. Pour en savoir plus sur les informations sur la connectivité réseau Microsoft 365, consultez [la rubrique Network Connectivity Overview](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-networking-overview).
   
 
 ## <a name="how-the-score-is-calculated"></a>Mode de calcul du score

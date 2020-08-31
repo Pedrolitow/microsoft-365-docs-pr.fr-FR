@@ -14,12 +14,12 @@ ms.custom:
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: Les administrateurs peuvent apprendre à configurer Exchange Online Protection (EOP) autonome pour protéger les environnements de messagerie locaux.
-ms.openlocfilehash: cf49cf4b0784731c23c0c36de44d3b0b2cb78dc8
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: e6ca3965dd82bf0e6ed7e361984758ab34e3eea0
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827820"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307590"
 ---
 # <a name="set-up-your-standalone-eop-service"></a>Configurer votre service EOP autonome
 
@@ -64,7 +64,7 @@ Vérifiez le flux de messagerie entre le service et votre environnement. Pour pl
 
 ## <a name="step-4-allow-inbound-port-25-smtp-access"></a>Étape 4 : Autoriser l’accès SMTP entrant sur le port 25
 
-Une fois que vous avez configuré les connecteurs, attendez 72 heures pour autoriser la propagation de vos mises à jour des enregistrements DNS. Ensuite, limitez le trafic SMTP entrant sur le port 25 au niveau du pare-feu ou des serveurs de messagerie de façon à accepter uniquement le courrier électronique en provenance des centres de données EOP, en particulier des adresses IP répertoriées dans [Adresses IP d'Exchange Online Protection](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges). Cela protège votre environnement local en limitant l'étendue des messages entrants. Si des paramètres définis sur votre serveur de messagerie contrôlent les adresses IP autorisées à se connecter pour le relais de messagerie, mettez-les à jour également.
+Une fois que vous avez configuré les connecteurs, attendez 72 heures pour autoriser la propagation de vos mises à jour des enregistrements DNS. Ensuite, limitez le trafic SMTP entrant sur le port 25 au niveau du pare-feu ou des serveurs de messagerie de façon à accepter uniquement le courrier électronique en provenance des centres de données EOP, en particulier des adresses IP répertoriées dans [Adresses IP d'Exchange Online Protection](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges). Cela protège votre environnement local en limitant l'étendue des messages entrants. Si des paramètres définis sur votre serveur de messagerie contrôlent les adresses IP autorisées à se connecter pour le relais de messagerie, mettez-les à jour également.
 
 > [!TIP]
 > Configurez les paramètres du serveur SMTP en définissant l'expiration du délai de connexion sur 60 secondes. Ce paramètre est acceptable pour la plupart des situations, ce qui permet un certain délai dans le cas d’un message envoyé avec une pièce jointe de grande taille, par exemple.

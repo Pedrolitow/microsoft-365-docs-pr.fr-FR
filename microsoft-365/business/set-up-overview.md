@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Découvrez les étapes de configuration de Microsoft 365 Business Premium, de l’abonnement, à l’ajout d’un domaine et des utilisateurs, à la configuration des stratégies de sécurité, et bien plus encore.
-ms.openlocfilehash: a808ae5761c1bc5706966a3f7de95f96f8f7c8c8
-ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
+ms.openlocfilehash: fa9c02fa9546437c83b9cc6c1f1e6e0d723ec868
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44785809"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47306466"
 ---
 # <a name="overview-of-setup"></a>Vue d’ensemble de la configuration
 
@@ -50,7 +50,7 @@ La plupart des étapes de configuration peuvent être effectuées dans l’Assis
 
    - **Ajouter des utilisateurs**. Vous pouvez ajouter des utilisateurs de l’une des trois façons suivantes :
         - Dans l' [Assistant](set-up.md#add-users-in-the-wizard).
-        - Utilisez la synchronisation d’annuaires pour [Ajouter des utilisateurs à l’aide d’Azure ad Connect](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) si vous disposez d’un annuaire Active Directory local.
+        - Utilisez la synchronisation d’annuaires pour [Ajouter des utilisateurs à l’aide d’Azure ad Connect](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization) si vous disposez d’un annuaire Active Directory local.
         - Vous pouvez également [Ajouter des utilisateurs ultérieurement](add-users-m365b.md) dans le centre d’administration.
 ## <a name="step-2-set-up-security-policies-and-configure-devices"></a>Étape 2 : configurer les stratégies de sécurité et configurer les appareils 
 

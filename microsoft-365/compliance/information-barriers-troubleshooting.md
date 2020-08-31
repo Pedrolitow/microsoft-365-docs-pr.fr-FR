@@ -14,12 +14,12 @@ ms.collection:
 localization_priority: None
 description: Utilisez cet article pour résoudre les problèmes liés aux barrières relatives aux informations.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5aa45e3e9dea5ce413b2b0e62d825003bc24e20e
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: f4e6087d0e1886d833a6cf0472ed467f8577c5d0
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352323"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307927"
 ---
 # <a name="troubleshooting-information-barriers"></a>Résolution des problèmes d’obstacles aux informations
 
@@ -45,7 +45,7 @@ Déterminez si les utilisateurs sont affectés par une stratégie de barrière d
 
     |Syntaxe  |Exemple  |
     |---------|---------|
-    | `Get-InformationBarrierRecipientStatus -Identity` <p>Vous pouvez utiliser n’importe quelle valeur d’identité qui identifie de façon unique chaque destinataire, comme le nom, l’alias, le nom unique (DN), le DN canonique, l’adresse de messagerie ou le GUID.     |`Get-InformationBarrierRecipientStatus -Identity meganb` <p>Dans cet exemple, nous utilisons un alias (*meganb*) pour le paramètre Identity. Cette applet de commande renvoie des informations qui indiquent si l’utilisateur est concerné par une stratégie de barrière des informations. (Recherchez * ExoPolicyId : \< GUID>.)         |
+    | `Get-InformationBarrierRecipientStatus -Identity` <p>Vous pouvez utiliser n’importe quelle valeur d’identité qui identifie de façon unique chaque destinataire, comme le nom, l’alias, le nom unique (DN), le DN canonique, l’adresse de messagerie ou le GUID.     |`Get-InformationBarrierRecipientStatus -Identity meganb` <p>Dans cet exemple, nous utilisons un alias (*meganb*) pour le paramètre Identity. Cette applet de commande renvoie des informations qui indiquent si l’utilisateur est concerné par une stratégie de barrière des informations. (Recherchez * ExoPolicyId : \<GUID> .)         |
 
     **Si les utilisateurs ne sont pas inclus dans les stratégies de barrière des informations, contactez le support technique**. Sinon, passez à l’étape suivante.
 
@@ -94,7 +94,7 @@ Vérifiez que les utilisateurs en question sont inclus dans une stratégie de ba
 
     
     > [!TIP]
-    > Vous pouvez également utiliser cette applet de commande pour un seul utilisateur :`Get-InformationBarrierRecipientStatus -Identity <value>`
+    > Vous pouvez également utiliser cette applet de commande pour un seul utilisateur : `Get-InformationBarrierRecipientStatus -Identity <value>`
     
 2. Passez en revue les résultats. L’applet de commande **Get-InformationBarrierRecipientStatus** retourne des informations sur les utilisateurs, telles que les valeurs d’attribut et les stratégies de barrière des informations qui sont appliquées. 
 
@@ -102,8 +102,8 @@ Vérifiez que les utilisateurs en question sont inclus dans une stratégie de ba
     
     |Résultats  |Étape suivante  |
     |---------|---------|
-    |Aucun segment n’est répertorié pour le ou les utilisateurs sélectionnés     |Effectuez l’une des opérations suivantes :<br/>-Affecter des utilisateurs à un segment existant en modifiant leurs profils utilisateur dans Azure Active Directory. (Consultez la rubrique [configure User Account Properties with Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell).)<br/>-Définissez un segment à l’aide [d’un attribut pris en charge pour les barrières d’information](information-barriers-attributes.md). Ensuite, [définissez une nouvelle stratégie](information-barriers-policies.md#part-2-define-information-barrier-policies) ou [modifiez une stratégie existante](information-barriers-edit-segments-policies.md#edit-a-policy) pour inclure ce segment.  |
-    |Les segments sont répertoriés, mais aucune stratégie de barrière des informations n’est affectée à ces segments     |Effectuez l’une des opérations suivantes :<br/>- [Définir une nouvelle stratégie de barrière des informations](information-barriers-policies.md#part-2-define-information-barrier-policies) pour chaque segment en question<br/>- [Modifier une stratégie de barrière des informations existante](information-barriers-edit-segments-policies.md#edit-a-policy) pour l’affecter au segment correct         |
+    |Aucun segment n’est répertorié pour le ou les utilisateurs sélectionnés     |Effectuez l'une des opérations suivantes :<br/>-Affecter des utilisateurs à un segment existant en modifiant leurs profils utilisateur dans Azure Active Directory. (Consultez la rubrique [configure User Account Properties with Office 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell).)<br/>-Définissez un segment à l’aide [d’un attribut pris en charge pour les barrières d’information](information-barriers-attributes.md). Ensuite, [définissez une nouvelle stratégie](information-barriers-policies.md#part-2-define-information-barrier-policies) ou [modifiez une stratégie existante](information-barriers-edit-segments-policies.md#edit-a-policy) pour inclure ce segment.  |
+    |Les segments sont répertoriés, mais aucune stratégie de barrière des informations n’est affectée à ces segments     |Effectuez l'une des opérations suivantes :<br/>- [Définir une nouvelle stratégie de barrière des informations](information-barriers-policies.md#part-2-define-information-barrier-policies) pour chaque segment en question<br/>- [Modifier une stratégie de barrière des informations existante](information-barriers-edit-segments-policies.md#edit-a-policy) pour l’affecter au segment correct         |
     |Les segments sont répertoriés et chacun est inclus dans une stratégie de barrière des informations     |-Exécutez l' `Get-InformationBarrierPolicy` applet de commande pour vérifier que les stratégies de barrière des informations sont actives.<br/>-Exécutez l' `Get-InformationBarrierPoliciesApplicationStatus` applet de commande pour vérifier que les stratégies sont appliquées.<br/>-Exécutez l' `Start-InformationBarrierPoliciesApplication` applet de commande pour appliquer toutes les stratégies de barrière des informations actives.          |
     
 
@@ -177,7 +177,7 @@ Assurez-vous que votre organisation ne dispose pas des [stratégies de carnet d�
 Une fois que vous avez défini des segments, défini des stratégies de barrière des informations et que vous avez tenté d’appliquer ces stratégies, vous pouvez constater que la stratégie s’applique à certains destinataires, mais pas à d’autres.
 Lorsque vous exécutez l' `Get-InformationBarrierPoliciesApplicationStatus` applet de commande, recherchez dans la sortie le texte suivant.
 
-> Identification`<application guid>`
+> Identification `<application guid>`
 >
 > Nombre total de destinataires : 81527
 >
@@ -210,7 +210,7 @@ $DetailedLogs = Search-UnifiedAuditLog -EndDate <yyyy-mm-ddThh:mm:ss>  -StartDat
 
 4. Réappliquer les stratégies de barrière des informations à l’aide de ces procédures : [informations sur les stratégies de barrières](information-barriers-policies.md#part-3-apply-information-barrier-policies).
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 [Définir des stratégies pour les barrières d’informations dans Microsoft teams](information-barriers-policies.md)
 

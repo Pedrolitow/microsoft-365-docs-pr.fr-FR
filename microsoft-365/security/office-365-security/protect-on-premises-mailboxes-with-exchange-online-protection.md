@@ -21,12 +21,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs de la Chine utilisant Office 365 géré par 21Vianet peuvent apprendre à utiliser Exchange Online Protection (EOP) autonome pour protéger leurs boîtes aux lettres locales.
-ms.openlocfilehash: 57b9e7519edf92438662ecbf27c93b662d9e8f71
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: ca3f7f1ffc91b404ac59e92b40ae1f95709ec3ff
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826812"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307748"
 ---
 # <a name="protect-on-premises-mailboxes-in-china-with-standalone-eop"></a>Protégez les boîtes aux lettres locales en Chine avec EOP autonome
 
@@ -58,7 +58,7 @@ Créez des connecteurs dans le Centre d'administration Exchange (CAE) qui active
 
 ## <a name="step-4-allow-inbound-port-25-smtp-access"></a>Étape 4 : Autoriser l’accès SMTP entrant sur le port 25
 
-Après avoir configuré les connecteurs, attendez 72 heures avant d’autoriser la propagation de vos mises à jour d’enregistrement DNS. De cette manière, limitez le trafic SMTP entrant-25 sur votre pare-feu ou vos serveurs de messagerie pour qu’ils acceptent uniquement les messages provenant des centres de distribution EOP, en particulier ceux des adresses IP indiquées au niveau [des URL et des plages d’adresses IP pour Office 365](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints). Cela protège votre environnement local en limitant l'étendue des messages entrants. Si des paramètres définis sur votre serveur de messagerie contrôlent les adresses IP autorisées à se connecter pour le relais de messagerie, mettez-les à jour également.
+Après avoir configuré les connecteurs, attendez 72 heures avant d’autoriser la propagation de vos mises à jour d’enregistrement DNS. De cette manière, limitez le trafic SMTP entrant-25 sur votre pare-feu ou vos serveurs de messagerie pour qu’ils acceptent uniquement les messages provenant des centres de distribution EOP, en particulier ceux des adresses IP indiquées au niveau [des URL et des plages d’adresses IP pour Office 365](https://docs.microsoft.com/microsoft-365/enterprise/managing-office-365-endpoints). Cela protège votre environnement local en limitant l'étendue des messages entrants. Si des paramètres définis sur votre serveur de messagerie contrôlent les adresses IP autorisées à se connecter pour le relais de messagerie, mettez-les à jour également.
 
 > [!TIP]
 > Configurez les paramètres du serveur SMTP en définissant l'expiration du délai de connexion sur 60 secondes. Ce paramétrage est acceptable dans la plupart des cas, et autorise un certain délai, par exemple, si le message envoyé contient une pièce jointe volumineuse.

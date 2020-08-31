@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: 'Découvrez comment réinitialiser le mot de passe d’un utilisateur dans Microsoft 365 pour un abonnement professionnel. '
-ms.openlocfilehash: d1c17448a1f9993b056fa2dc428980acf8ef82b4
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 6159b62cb6c1e09cb86732cc27cc4c4c87328a42
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780564"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307288"
 ---
 # <a name="reset-passwords"></a>Réinitialiser les mots de passe
 
@@ -42,7 +42,7 @@ Regardez une courte vidéo sur la réinitialisation des mots de passe utilisateu
 
 Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
   
-## <a name="let-users-reset-their-own-passwords"></a>Autoriser les utilisateurs à réinitialiser leur mot de passe
+## <a name="let-users-reset-their-own-passwords"></a>Autoriser les utilisateurs à réinitialiser leurs mots de passe
 
 Nous vous recommandons vivement de configurer la réinitialisation du mot de passe libre-service. Ainsi, vous n'êtes pas tenu de réinitialiser manuellement les mots de passe de vos utilisateurs. Pour savoir comment procéder, voir [Autoriser les utilisateurs à réinitialiser leur mot de passe dans Office 365](let-users-reset-passwords.md).
   
@@ -53,19 +53,19 @@ Ces étapes sont destinées uniquement aux personnes qui utilisent un forfait Mi
  
 ::: moniker range="o365-worldwide"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
 
 ::: moniker-end
 
@@ -103,7 +103,7 @@ Si vous avez oublié votre mot de passe et que vous ne parvenez pas à vous conn
 
 Ces étapes s'appliquent à une entreprise comptant des dizaines d'utilisateurs. Si vous avez des centaines ou des milliers d’utilisateurs, reportez-vous à la section suivante sur la réinitialisation des mots de passe en bloc (maximum 40 utilisateurs à la fois).
   
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
     
 2. Sélectionnez l’option en regard de **nom d’affichage** pour sélectionner tout le monde dans votre entreprise. Désélectionnez votre nom. Vous ne pouvez pas réinitialiser votre propre mot de passe en même temps que vous réinitialisez le mot de passe de tous les autres utilisateurs.
     
@@ -120,7 +120,7 @@ Ces étapes s'appliquent à une entreprise comptant des dizaines d'utilisateurs.
 
 Utilisez PowerShell. Lisez ce billet rédigé par Eyal Doron : [Gestion des mots de passe avec PowerShell](https://go.microsoft.com/fwlink/?linkid=853696).
   
-Voici un article connexe : [Définir les mots de passe de plusieurs comptes d'utilisateurs](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell).
+Voici un article connexe : [Définir les mots de passe de plusieurs comptes d'utilisateurs](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-with-microsoft-365-powershell).
   
 Pour plus d’informations, reportez-vous à [PowerShell pour les administrateurs Microsoft 365](https://support.microsoft.com/office/40fdcbd4-c34f-42ab-8678-8b3751137ef1).
   
@@ -139,7 +139,7 @@ Essayez cet article : [J'ai oublié le nom d'utilisateur ou le mot de passe du c
   
 [Autoriser les utilisateurs à réinitialiser leur mot de passe](let-users-reset-passwords.md)
 
-[Définir le mot de passe d'un utilisateur de façon à ce qu'il n'expire jamais](set-password-to-never-expire.md)
+[Définir le mot de passe d’un utilisateur de façon à ce qu’il n’expire jamais](set-password-to-never-expire.md)
 
 [Définir la stratégie d'expiration des mots de passe pour votre organisation](../manage/set-password-expiration-policy.md)
 

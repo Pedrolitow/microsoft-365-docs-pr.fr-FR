@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 196cbc0ebc05683315766b736dd9d5fc2d92afd2
-ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
+ms.openlocfilehash: 02dbb22ad47fbacf964308d2b4a989f34b6d6c9d
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44214568"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307681"
 ---
 # <a name="information-protection-for-gdpr-with-microsoft-365-capabilities"></a>Protection des informations concernant le RGPD avec les fonctionnalités Microsoft 365
 
@@ -32,9 +32,9 @@ Pour plus d’informations sur la manière dont Microsoft peut vous aider avec l
 
 ## <a name="information-protection"></a>Protection des informations
 
-Office 365 offre un vaste ensemble de fonctionnalités de gouvernance. Pour obtenir de l’aide à propos de la recherche, de la classification, de la protection et de la surveillance des données personnelles, reportez-vous à l’article [Protection des informations Office 365 concernant le RGPD](https://docs.microsoft.com/office365/enterprise/office-365-information-protection-for-gdpr).
+Office 365 offre un vaste ensemble de fonctionnalités de gouvernance. Pour obtenir de l’aide à propos de la recherche, de la classification, de la protection et de la surveillance des données personnelles, reportez-vous à l’article [Protection des informations Office 365 concernant le RGPD](https://docs.microsoft.com/microsoft-365/compliance/office-365-information-protection-for-gdpr).
 
-Pour obtenir de l’aide avec les serveurs locaux, notamment les partages de fichiers, SharePoint Server, Exchange Server, Skype Entreprise Server, Project Server et Office Online Server, consultez le [RGPD concernant les serveurs Office locaux](https://docs.microsoft.com/office365/enterprise/gdpr-for-office-servers). 
+Pour obtenir de l’aide avec les serveurs locaux, notamment les partages de fichiers, SharePoint Server, Exchange Server, Skype Entreprise Server, Project Server et Office Online Server, consultez le [RGPD concernant les serveurs Office locaux](https://docs.microsoft.com/microsoft-365/compliance/gdpr-for-office-servers). 
 
 ## <a name="identity-and-access-management"></a>Gestion des identités et des accès
 
@@ -50,7 +50,7 @@ Azure Active Directory et d’autres fonctionnalités Microsoft 365 fournisse
 Microsoft propose une configuration recommandée que vous pouvez utiliser comme point de départ :
 
 - [Configurations des identités et de l’accès aux appareils :](../enterprise/microsoft-365-policies-configurations.md): configurations de stratégie recommandées pour obtenir trois niveaux de protection (référence, sensible, hautement réglementée). Ces conseils incluent des stratégies recommandées pour Exchange Online et SharePoint Online (y compris OneDrive Entreprise).
-- [Conseils de sécurité pour les campagnes électorales, les organisations à but non lucratif et d’autres organisations flexibles](https://docs.microsoft.com/office365/enterprise/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o) : incluent le même ensemble de stratégies, mais fournissent des recommandations supplémentaires pour les environnements BYOD et les comptes B2B.
+- [Conseils de sécurité pour les campagnes électorales, les organisations à but non lucratif et d’autres organisations flexibles](https://docs.microsoft.com/microsoft-365/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o) : incluent le même ensemble de stratégies, mais fournissent des recommandations supplémentaires pour les environnements BYOD et les comptes B2B.
 
 ## <a name="threat-protection"></a>Protection contre les menaces
 

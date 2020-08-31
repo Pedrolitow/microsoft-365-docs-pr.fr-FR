@@ -21,12 +21,12 @@ search.appverid:
 - BSA160
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
 description: Découvrez comment ajouter un membre à un groupe, supprimer un membre du groupe et gérer l’état du propriétaire du groupe dans le centre d’administration 365 de Microsoft.
-ms.openlocfilehash: f873d4f4a20804ada3222178b59c4e1cc8ddb6fb
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 1d11e527f4f8759511a64036a71e837689bcbcd3
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780480"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307312"
 ---
 # <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>Ajouter ou supprimer des membres des groupes Microsoft 365 à l’aide du centre d’administration
 
@@ -90,7 +90,7 @@ Dans Microsoft 365, les membres du groupe créent généralement leurs propres g
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.  
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.  
 
 2. Sélectionnez un utilisateur.
 
@@ -98,7 +98,7 @@ Dans Microsoft 365, les membres du groupe créent généralement leurs propres g
 
 4. Recherchez ou sélectionnez le nom du groupe que vous souhaitez ajouter.
 
-5. Cliquez sur **Enregistrer**.
+5. Sélectionnez **Enregistrer**.
 
 ::: moniker-end
 
@@ -112,7 +112,7 @@ Dans Microsoft 365, les membres du groupe créent généralement leurs propres g
 
 4. Recherchez ou sélectionnez le nom du groupe que vous souhaitez ajouter.
 
-5. Cliquez sur **Enregistrer**.
+5. Sélectionnez **Enregistrer**.
 
 ::: moniker-end
 
@@ -287,10 +287,10 @@ Par défaut, la personne qui a créé le groupe en est le propriétaire. Un grou
 
 - [Mettre à niveau les listes de distribution vers des groupes Microsoft 365 dans Outlook](../manage/upgrade-distribution-lists.md)
 
-- [Pourquoi devriez-vous mettre à niveau vos listes de distribution vers des groupes dans Outlook ?](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
+- [Pourquoi vous devriez mettre à niveau vos listes de distribution vers des groupes dans Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
 
 - [Gérer l’accès invité dans les groupes Microsoft 365](manage-guest-access-in-groups.md)
 
-- [Manage Microsoft 365 Groups with PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell): cet article vous présente les applets de commande clés et fournit des exemples
+- [Manage Microsoft 365 Groups with PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell): cet article vous présente les applets de commande clés et fournit des exemples
 
 - [Stratégie de noms de groupes Microsoft 365](groups-naming-policy.md)

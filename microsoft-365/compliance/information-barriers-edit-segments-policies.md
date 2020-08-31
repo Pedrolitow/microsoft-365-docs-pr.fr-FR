@@ -13,14 +13,14 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Découvrez comment modifier ou supprimer des stratégies pour les barrières d’informations.
-ms.openlocfilehash: 5690a1d7a131c006bbff3b087b1ee2983198c068
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6ac739ecff3921b4061d5d22410b2e2b1ada7af2
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637886"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307937"
 ---
-# <a name="edit-or-remove-information-barrier-policies"></a>Modifier (ou supprimer) des stratégies de barrière des informations
+# <a name="edit-or-remove-information-barrier-policies"></a>Modifier (ou supprimer) des stratégies de cloisonnement de l’information
 
 Une fois que vous avez [défini des stratégies de barrière des informations](information-barriers-policies.md), vous devrez peut-être modifier ces stratégies ou vos segments d’utilisateur, dans le cadre de la [résolution des problèmes](information-barriers-troubleshooting.md) ou de la maintenance normale. Utilisez cet article comme guide.
 
@@ -28,19 +28,19 @@ Une fois que vous avez [défini des stratégies de barrière des informations](i
 
 |Opération  |Description |
 |---------|---------|
-|[Modifier les attributs de compte d’utilisateur](#edit-user-account-attributes)     |Renseignez les attributs d’Azure Active Directory qui peuvent être utilisés pour définir des segments.<br/>Modifier les attributs de compte d’utilisateur lorsque les utilisateurs ne sont pas inclus dans les segments, pour modifier les segments dans lesquels ils se trouvent ou pour définir des segments à l’aide de différents attributs.         |
-|[Modifier un segment](#edit-a-segment)     |Modifiez les segments lorsque vous souhaitez modifier le mode de définition d’un segment. <br/>Par exemple, vous avez peut-être défini des segments à l’origine à l’aide de *Department* et vous voulez maintenant utiliser un autre attribut, tel que *memberOf*.         |
-|[Modifier une stratégie](#edit-a-policy)     |Modifiez une stratégie de barrière des informations lorsque vous souhaitez modifier le fonctionnement d’une stratégie.<br/>Par exemple, au lieu de bloquer les communications entre deux segments, vous pouvez décider de n’autoriser que les communications entre certains segments.         |
+|[Modifier les attributs d’un compte d’utilisateur](#edit-user-account-attributes)     |Renseignez les attributs d’Azure Active Directory qui peuvent être utilisés pour définir des segments.<br/>Modifiez les attributs de compte d’utilisateur lorsque les utilisateurs ne sont pas inclus dans les segments qu’ils doivent utiliser, pour modifier les segments utilisés par les utilisateurs ou pour définir des segments à l’aide d’attributs différents.         |
+|[Modifier un segment](#edit-a-segment)     |Modifiez les segments lorsque vous voulez modifier la manière dont un segment est défini. <br/>Par exemple, vous avez peut-être défini des segments à l’origine à l’aide de *Department* et vous voulez maintenant utiliser un autre attribut, tel que *memberOf*.         |
+|[Modifier une stratégie](#edit-a-policy)     |Modifiez une stratégie d’obstacles aux informations lorsque vous voulez modifier le fonctionnement d’une stratégie.<br/>Par exemple, au lieu de bloquer les communications entre deux segments, vous pouvez décider de n’autoriser que les communications entre certains segments.         |
 |[Définir une stratégie sur état inactif](#set-a-policy-to-inactive-status)     |Définissez une stratégie sur état inactif lorsque vous voulez modifier une stratégie ou si vous ne souhaitez pas qu’une stratégie soit appliquée.         |
 |[Supprimer une stratégie](#remove-a-policy)     |Supprimez une stratégie de barrière des informations lorsque vous n’avez plus besoin d’une stratégie particulière en place.         |
 |[Arrêter une application de stratégie](#stop-a-policy-application)     |Procédez comme suit pour arrêter le processus d’application des stratégies de barrière des informations.<br/>Notez que l’arrêt d’une application de stratégie n’est pas instantané et qu’elle n’annule pas les stratégies déjà appliquées aux utilisateurs.         |
 |[Définir des stratégies pour les barrières des informations](information-barriers-policies.md)     |Définissez une stratégie de barrière des informations lorsque vous n’avez pas déjà de telles stratégies, et vous devez limiter ou limiter les communications entre des groupes d’utilisateurs spécifiques.         |
-|[Résolution des problèmes d’obstacles aux informations](information-barriers-troubleshooting.md)     |Reportez-vous à cet article lorsque vous rencontrez des problèmes inattendus avec des barrières d’informations.         |
+|[Résolution des problèmes de cloisonnement de l’information](information-barriers-troubleshooting.md)     |Reportez-vous à cet article lorsque vous rencontrez des problèmes inattendus avec des barrières d’informations.         |
 
 > [!IMPORTANT]
 > Pour effectuer les tâches décrites dans cet article, vous devez disposer d’un rôle approprié, par exemple :<br/>-Administrateur général de Microsoft 365 entreprise<br/>-Administrateur général<br/>-Administrateur de conformité<br/>-IB gestion de la conformité (il s’agit d’un nouveau rôle !)<p>Pour en savoir plus sur les conditions préalables pour les barrières d’informations, reportez-vous à la rubrique [conditions préalables (pour les stratégies de barrière des informations)](information-barriers-policies.md#prerequisites).<p>Veillez à [vous connecter au centre de sécurité & conformité PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
-## <a name="edit-user-account-attributes"></a>Modifier les attributs de compte d’utilisateur
+## <a name="edit-user-account-attributes"></a>Modifier les attributs d’un compte d’utilisateur
 
 Utilisez cette procédure pour modifier les attributs utilisés pour segmenter les utilisateurs. 
 
@@ -52,7 +52,7 @@ Les attributs de compte d’utilisateur sont utilisés pour définir des segment
 
     |Syntaxe  |Exemple  |
     |---------|---------|
-    |`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>   Vous pouvez utiliser n’importe quelle valeur qui identifie de façon unique chaque utilisateur, comme le nom, l’alias, le nom unique, le nom de domaine canonique, l’adresse de messagerie ou le GUID. <p>   (Vous pouvez également utiliser cette applet de commande pour un seul `Get-InformationBarrierRecipientStatus -Identity <value>`utilisateur :)      |`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw`  <p>   Dans cet exemple, nous faisons référence à deux comptes d’utilisateur dans Office 365 : *meganb* pour *Megan*, et *Alexw* pour *Alex*.         |
+    |`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>   Vous pouvez utiliser n’importe quelle valeur qui identifie de façon unique chaque utilisateur, comme le nom, l’alias, le nom unique, le nom de domaine canonique, l’adresse de messagerie ou le GUID. <p>   (Vous pouvez également utiliser cette applet de commande pour un seul utilisateur : `Get-InformationBarrierRecipientStatus -Identity <value>` )      |`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw`  <p>   Dans cet exemple, nous faisons référence à deux comptes d’utilisateur dans Office 365 : *meganb* pour *Megan*, et *Alexw* pour *Alex*.         |
 
 2. Déterminez l’attribut que vous souhaitez modifier pour vos profils de compte d’utilisateur. Pour plus d’informations, reportez-vous à la rubrique [attributs pour les stratégies de barrière des informations](information-barriers-attributes.md) . 
 
@@ -60,7 +60,7 @@ Les attributs de compte d’utilisateur sont utilisés pour définir des segment
 
     - Pour modifier un seul compte, voir [Ajouter ou mettre à jour les informations de profil d’un utilisateur à l’aide d’Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
 
-    - Pour modifier plusieurs comptes (ou utiliser PowerShell pour modifier un seul compte), voir [configure User Account Properties with Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell).
+    - Pour modifier plusieurs comptes (ou utiliser PowerShell pour modifier un seul compte), voir [configure User Account Properties with Office 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell).
 
 ## <a name="edit-a-segment"></a>Modifier un segment
 
@@ -68,7 +68,7 @@ Utilisez cette procédure pour modifier la définition d’un segment d’utilis
 
 1. Pour afficher tous les segments existants, utilisez la cmdlet **Get-OrganizationSegment** .
     
-    Syntaxe`Get-OrganizationSegment`
+    Syntaxe `Get-OrganizationSegment`
 
     Vous verrez une liste de segments et des détails pour chacune d’elles, comme le type de segment, sa valeur UserGroupFilter, l’auteur ou la dernière modification, GUID, etc.
 
@@ -87,15 +87,15 @@ Une fois que vous avez terminé de modifier les segments de votre organisation, 
 
 1. Pour afficher la liste des stratégies de barrière des informations actuelles, utilisez la cmdlet **Get-InformationBarrierPolicy** .
 
-    Syntaxe`Get-InformationBarrierPolicy`
+    Syntaxe `Get-InformationBarrierPolicy`
 
     Dans la liste des résultats, identifiez la stratégie à modifier. Notez le GUID et le nom de la stratégie.
 
 2. Utilisez la cmdlet **Set-InformationBarrierPolicy** avec un paramètre **Identity** et spécifiez les modifications que vous souhaitez effectuer.
 
-    Exemple : Supposons qu’une stratégie a été définie pour empêcher le segment de *recherche* de communiquer avec les segments de *ventes* et de *marketing* . La stratégie a été définie à l’aide de cette applet de commande :`New-InformationBarrierPolicy -Name "Research-SalesMarketing" -AssignedSegment "Research" -SegmentsBlocked "Sales","Marketing"`
+    Exemple : Supposons qu’une stratégie a été définie pour empêcher le segment de *recherche* de communiquer avec les segments de *ventes* et de *marketing* . La stratégie a été définie à l’aide de cette applet de commande : `New-InformationBarrierPolicy -Name "Research-SalesMarketing" -AssignedSegment "Research" -SegmentsBlocked "Sales","Marketing"`
     
-    Supposons que nous voulons la modifier afin que les membres du segment de *recherche* puissent uniquement communiquer avec des personnes dans le segment *RH* . Pour effectuer cette modification, nous utilisons cette applet de commande :`Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471 -SegmentsAllowed "HR"`
+    Supposons que nous voulons la modifier afin que les membres du segment de *recherche* puissent uniquement communiquer avec des personnes dans le segment *RH* . Pour effectuer cette modification, nous utilisons cette applet de commande : `Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471 -SegmentsAllowed "HR"`
 
     Dans cet exemple, nous avons modifié « SegmentsBlocked » en « SegmentsAllowed » et spécifié le segment *HR* .
 
@@ -105,7 +105,7 @@ Une fois que vous avez terminé de modifier les segments de votre organisation, 
 
 1. Pour afficher la liste des stratégies de barrière des informations actuelles, utilisez la cmdlet **Get-InformationBarrierPolicy** .
 
-    Syntaxe`Get-InformationBarrierPolicy`
+    Syntaxe `Get-InformationBarrierPolicy`
 
     Dans la liste des résultats, identifiez la stratégie que vous souhaitez modifier (ou supprimer). Notez le GUID et le nom de la stratégie.
 
@@ -117,7 +117,7 @@ Une fois que vous avez terminé de modifier les segments de votre organisation, 
 
 3. Pour appliquer vos modifications, utilisez l’applet de commande **Start-InformationBarrierPoliciesApplication** .
 
-    Syntaxe`Start-InformationBarrierPoliciesApplication`
+    Syntaxe `Start-InformationBarrierPoliciesApplication`
 
     Les modifications sont appliquées, utilisateur par utilisateur, pour votre organisation. Si votre organisation est volumineuse, cette opération peut prendre 24 heures (ou plus). (En règle générale, il faut environ une heure pour traiter les comptes d’utilisateur 5 000.)
 
@@ -130,7 +130,7 @@ Une fois que vous avez terminé de modifier les segments de votre organisation, 
 
 1. Pour afficher la liste des stratégies de barrière des informations actuelles, utilisez la cmdlet **Get-InformationBarrierPolicy** .
 
-    Syntaxe`Get-InformationBarrierPolicy`
+    Syntaxe `Get-InformationBarrierPolicy`
 
     Dans la liste des résultats, identifiez la stratégie à supprimer. Notez le GUID et le nom de la stratégie. Assurez-vous que la stratégie est définie sur état inactif.
 
@@ -146,7 +146,7 @@ Une fois que vous avez terminé de modifier les segments de votre organisation, 
 
 4. Lorsque vous avez terminé de supprimer des stratégies, appliquez vos modifications. Pour ce faire, utilisez l’applet de commande **Start-InformationBarrierPoliciesApplication** .
 
-    Syntaxe`Start-InformationBarrierPoliciesApplication`
+    Syntaxe `Start-InformationBarrierPoliciesApplication`
 
     Les modifications sont appliquées, utilisateur par utilisateur, pour votre organisation. Si votre organisation est volumineuse, cette opération peut prendre 24 heures (ou plus).
 
@@ -156,7 +156,7 @@ Si, après avoir commencé à appliquer des stratégies de barrière des informa
 
 1. Pour afficher l’état de l’application de stratégie de barrière des informations la plus récente, utilisez la cmdlet **Get-InformationBarrierPoliciesApplicationStatus** .
 
-    Syntaxe`Get-InformationBarrierPoliciesApplicationStatus`
+    Syntaxe `Get-InformationBarrierPoliciesApplicationStatus`
 
     Notez le GUID de l’application.
 

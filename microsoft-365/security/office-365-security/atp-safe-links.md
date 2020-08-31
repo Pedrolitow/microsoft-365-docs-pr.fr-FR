@@ -25,12 +25,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Dans cet article, vous découvrirez comment utiliser les liens fiables pour protéger votre organisation contre le hameçonnage et les autres attaques.
-ms.openlocfilehash: 5baf18c249d67551c7ae1eeb643a401ea16d2b6c
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: d9b3c981cb282c286a5b6edcea367c8c57ffd4d3
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656980"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307636"
 ---
 # <a name="atp-safe-links"></a>Liens fiables ATP
 
@@ -57,7 +57,7 @@ Ensuite, assurez-vous **que vos stratégies de liens fiables ATP sont définies*
 
 - Les stratégies de liens fiables ATP sont configurées pour le courrier électronique et les documents Office. (Voir [configurer des stratégies de liens fiables ATP](set-up-atp-safe-links-policies.md).)
 
-- Les applications clientes Microsoft 365 sont configurées pour utiliser l’authentification moderne (il s’agit de la protection des liens fiables ATP dans les documents Office). (Consultez la rubrique [authentification moderne pour Office 2016](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016).)
+- Les applications clientes Microsoft 365 sont configurées pour utiliser l’authentification moderne (il s’agit de la protection des liens fiables ATP dans les documents Office). (Consultez la rubrique [authentification moderne pour Office 2016](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016).)
 
 - Les utilisateurs se sont connectés à l’aide de leur compte professionnel ou scolaire. (Consultez la rubrique [connexion à Office](https://support.microsoft.com/office/b9582171-fd1f-4284-9846-bdd72bb28426).)
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de confidentialité pour protéger le contenu des sites SharePoint et Microsoft Teams, ainsi que des Groupes Microsoft 365.
-ms.openlocfilehash: 849eae1c2c3153d8f17e561aa82312c95672ec04
-ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
+ms.openlocfilehash: ecc84196435125c83ff9518c2758e3f2611427b3
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46845742"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307793"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint
 
@@ -357,7 +357,7 @@ En plus de masquer les **Sites et paramètres de groupe** page lorsque vous cré
 
 Cela signifie que les paramètres d’étiquette de sites et de groupes précédemment appliqués aux conteneurs ne sont pas appliqués et les conteneurs n’affichent plus les étiquettes.
 
-Si ces conteneurs ont des valeurs de classification Azure AD qui leur sont appliquées, les conteneurs réactivent l’utilisation des classifications. N’oubliez pas que les nouveaux sites ou groupes créés après l’activation de la fonctionnalité n’affichent pas d’étiquette ou de classification. Pour ces conteneurs et les nouveaux conteneurs, vous pouvez désormais appliquer des valeurs de classification. Pour plus d’informations, voir [SharePoint « modern » de la classification de sites](https://docs.microsoft.com/sharepoint/dev/solution-guidance/modern-experience-site-classification) et [Créer des classifications pour les groupes Office dans votre organisation](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell).
+Si ces conteneurs ont des valeurs de classification Azure AD qui leur sont appliquées, les conteneurs réactivent l’utilisation des classifications. N’oubliez pas que les nouveaux sites ou groupes créés après l’activation de la fonctionnalité n’affichent pas d’étiquette ou de classification. Pour ces conteneurs et les nouveaux conteneurs, vous pouvez désormais appliquer des valeurs de classification. Pour plus d’informations, voir [SharePoint « modern » de la classification de sites](https://docs.microsoft.com/sharepoint/dev/solution-guidance/modern-experience-site-classification) et [Créer des classifications pour les groupes Office dans votre organisation](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell).
 
 ## <a name="additional-resources"></a>Ressources supplémentaires
 

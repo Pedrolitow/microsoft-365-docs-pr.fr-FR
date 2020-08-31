@@ -10,12 +10,12 @@ ms.topic: article
 ms.service: o365-seccomp
 localization_priority: Normal
 description: Cet article traite des étiquettes de confidentialité et de classification Azure Active Directory classiques.
-ms.openlocfilehash: f11473653884392048d5f9a84f8e284dba5f6f27
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: 38a3dbe727f3d0759d427944016ae98440f2686f
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44755388"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308171"
 ---
 # <a name="azure-active-directory-classification-and-sensitivity-labels-for-microsoft-365-groups"></a>Étiquettes de sensibilité et de classification Azure Active Directory pour les groupes Microsoft 365
 
@@ -52,7 +52,7 @@ Tableau 1. Comportement des charges de travail compatibles et non compatibles 
 > - Toutefois, lorsque l’utilisateur modifie un groupe et enregistre le groupe avec une étiquette de sensibilité, le paramètre de confidentialité sélectionné est remplacé par le paramètre de confidentialité de l’étiquette de sensibilité appliquée.
 > Nous recommandons à vos utilisateurs sur une ancienne version du client Outlook de procéder à la mise à niveau vers la version la plus récente.
 
-## <a name="scenario-2-tenant-is-already-using-classic-aad-classifications"></a>Scénario 2 : le client utilise déjà les [classifications](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell#create-classifications-for-office-groups-in-your-organization) AAD classiques
+## <a name="scenario-2-tenant-is-already-using-classic-aad-classifications"></a>Scénario 2 : le client utilise déjà les [classifications](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell) AAD classiques
 
 ### <a name="case-a-tenant-never-used-sensitivity-labels-for-documents-and-emails"></a>Cas A : le client n’A jamais utilisé d’étiquettes de confidentialité pour les documents et les e-mails
 

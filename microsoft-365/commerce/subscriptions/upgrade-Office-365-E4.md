@@ -20,12 +20,12 @@ search.appverid:
 description: Découvrez comment effectuer une mise à niveau à partir d’un abonnement Office 365 E4.
 ms.date: 08/14/2020
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3ab3ac1c85dc3726585f9c414449ff4847626fc8
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 2587732a6c4092dcb7b53daf9493e7cee2f1987c
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690029"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308004"
 ---
 # <a name="upgrade-from-an-office-365-e4-subscription"></a>Mise à niveau à partir d’un abonnement Office 365 E4
 
@@ -130,7 +130,7 @@ Avant de passer à l’étape suivante, il est important de s’assurer que tous
 Vous pouvez utiliser le centre d’administration Microsoft 365 pour réattribuer des licences pour un maximum de 20 utilisateurs à la fois. Pour savoir comment procéder, consultez la rubrique [déplacer des utilisateurs vers un autre abonnement](move-users-different-subscription.md).
 
 > [!TIP]
-> Si vous avez un grand nombre d’utilisateurs, vous pouvez [utiliser Office 365 PowerShell pour attribuer des licences utilisateur en bloc](https://docs.microsoft.com/office365/enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell).
+> Si vous avez un grand nombre d’utilisateurs, vous pouvez [utiliser Office 365 PowerShell pour attribuer des licences utilisateur en bloc](https://docs.microsoft.com/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell).
 
 ### <a name="step-4-cancel-the-office-365-e4-subscription"></a>Étape 4 : annuler l’abonnement à Office 365 E4
 

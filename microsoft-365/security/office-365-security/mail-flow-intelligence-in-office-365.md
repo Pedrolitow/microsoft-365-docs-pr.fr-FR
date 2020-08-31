@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Les administrateurs peuvent en savoir plus sur les codes d’erreur associés à la remise des messages à l’aide de connecteurs (également appelés intelligence de flux de messagerie).
-ms.openlocfilehash: b345b52f572efca2aca1fde6ba720d733e521cc4
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: e8427f3e0341ccb381121b6cdc83d20727713d4c
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827712"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307916"
 ---
 # <a name="mail-flow-intelligence-in-eop"></a>Renseignements sur le flux de messagerie dans EOP
 
@@ -62,7 +62,7 @@ En règle générale, cette erreur signifie que Microsoft 365 a rencontré une e
 
 ### <a name="how-do-i-fix-error-code-450-44316"></a>Comment corriger le code d’erreur 450 4.4.316 ?
 
-- Si vous avez des boîtes aux lettres dans votre environnement local, vous devez modifier les paramètres de votre pare-feu pour autoriser les connexions des adresses IP Microsoft 365 sur le port TCP 25 à vos serveurs de messagerie locaux. Pour obtenir la liste des adresses IP Microsoft 365, voir [URL et plages d’adresses IP microsoft 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
+- Si vous avez des boîtes aux lettres dans votre environnement local, vous devez modifier les paramètres de votre pare-feu pour autoriser les connexions des adresses IP Microsoft 365 sur le port TCP 25 à vos serveurs de messagerie locaux. Pour obtenir la liste des adresses IP Microsoft 365, voir [URL et plages d’adresses IP microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges).
 
 - Si aucun autre message ne doit être remis à votre environnement local, cliquez sur **corriger maintenant** dans l’alerte afin que Microsoft 365 puisse rejeter immédiatement les messages dont les destinataires ne sont pas valides. Cette action réduira le risque de dépasser le quota de destinataires non valides de votre organisation, ce qui peut avoir des répercussions négatives sur la remise normale des messages. Vous pouvez également suivre les instructions suivantes pour résoudre manuellement le problème :
 

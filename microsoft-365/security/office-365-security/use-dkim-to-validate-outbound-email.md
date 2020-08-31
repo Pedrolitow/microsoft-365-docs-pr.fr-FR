@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment utiliser DKIM (DomainKeys Identified Mail) avec Microsoft 365 pour vous assurer que les systèmes de messagerie de destination approuvent les messages envoyés à partir de votre domaine personnalisé.
-ms.openlocfilehash: 36e62600836c66b9e7be61ddd07a6081af4ffbeb
-ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
+ms.openlocfilehash: d2035ed0805215f1bd8e343f9edf1c557035b5c1
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46632162"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307846"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Utilisation de DKIM pour valider les messages sortants envoyés à partir de votre domaine personnalisé
 
@@ -83,7 +83,7 @@ Détail important : DKIM utilise une clé privée pour insérer une signature c
 
 1. Lorsque vous **avez déjà configuré DKIM**, vous pouvez faire pivoter le nombre de bits comme suit :
 
-   1. [Connectez-vous aux charges de travail Office 365 via PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window). (L’applet de commande provient d’Exchange Online.)
+   1. [Connectez-vous aux charges de travail Office 365 via PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window). (L’applet de commande provient d’Exchange Online.)
    1. Exécutez la commande suivante :
 
       ```powershell 
@@ -92,7 +92,7 @@ Détail important : DKIM utilise une clé privée pour insérer une signature c
 
 1. Ou pour une **nouvelle implémentation de DKIM** :
 
-   1. [Connectez-vous aux charges de travail Office 365 via PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window). (Il s’agit d’une cmdlet Exchange Online).
+   1. [Connectez-vous aux charges de travail Office 365 via PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window). (Il s’agit d’une cmdlet Exchange Online).
    1. Exécutez la commande suivante :
 
       ```powershell

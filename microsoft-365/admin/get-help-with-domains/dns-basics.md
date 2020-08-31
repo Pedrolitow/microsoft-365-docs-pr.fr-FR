@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: En savoir davantage sur les domaines et les enregistrements DNS associés pour vous aider à gérer vos domaines.
-ms.openlocfilehash: a69f6a34585f7ff033a30e10254f29b89d978d3e
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.openlocfilehash: 9819ec858eecb659f8576d9fa3c1ef426d500e80
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45079990"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47306562"
 ---
 # <a name="dns-basics"></a>Principes de base
 
@@ -188,7 +188,7 @@ Plusieurs enregistrements DNS sont requis pour permettre à Microsoft 365 de fo
   
 Vous pouvez [consulter une liste de valeurs](information-for-dns-records.md) pour configurer votre domaine. Celles-ci sont incluses directement dans le Centre d’administration Microsoft 365. 
   
-Ou, si vous envisagez de procéder à un déploiement, vous pouvez consulter la liste des enregistrements DNS requis pour Microsoft 365 avec leur fonction et des valeurs d'exemple. Consultez les [Enregistrements DNS externes pour Microsoft 365](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records).
+Ou, si vous envisagez de procéder à un déploiement, vous pouvez consulter la liste des enregistrements DNS requis pour Microsoft 365 avec leur fonction et des valeurs d'exemple. Consultez les [Enregistrements DNS externes pour Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records).
   
 ## <a name="how-can-i-learn-more"></a>Pour en savoir plus
 

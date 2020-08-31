@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5f0c840e-4140-4571-88ed-cf235ff142d6
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur Hostgator pour Microsoft.
-ms.openlocfilehash: 8adfc4b6154dad0da7dd2fe037c73fcfc4f84d58
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 103da87956beae868cda84b727a3401dfd9991d9
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400436"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47306970"
 ---
 # <a name="create-dns-records-at-hostgator-for-microsoft"></a>Créer des enregistrements DNS sur Hostgator pour Microsoft
 
@@ -91,8 +91,8 @@ Avant que vous puissiez utiliser votre domaine avec Microsoft, nous devons véri
     
     |||||
     |:-----|:-----|:-----|:-----|
-    |**Name (Nom)** <br/> |**TTL (Durée de vie)** <br/> |**Type** <br/> |**TXT Data (Données TXT)** <br/> |
-    |Utilisez votre *domain_name*. (for example, fourthcoffee.com.)  <br/> **This value MUST end with a period (.)** <br/> |1   <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur spécifique d’**Adresse de destination ou de pointage** ici, à partir du tableau. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |
+    |**Name** <br/> |**TTL (Durée de vie)** <br/> |**Type (Type)** <br/> |**TXT Data (Données TXT)** <br/> |
+    |Utilisez votre  *domain_name*. (for example, fourthcoffee.com.)  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |1   <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur spécifique d’**Adresse de destination ou de pointage** ici, à partir du tableau. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |
    
 4. Sélectionnez **Ajouter un enregistrement**.
     
@@ -119,9 +119,9 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
 > [!IMPORTANT]
 > Avant d'effectuer cette procédure, vous devez suivre celle décrite dans la première section de cet article ([Faire pointer votre domaine vers votre compte d'hébergement](#point-your-domain-to-your-hosting-account)). 
   
-1. To get started, go to your cPanel page at Hostgator. You'll be prompted to log in first.
+1. Pour commencer, accédez à la page cPanel sur Hostgator. Avant toute chose, vous serez invité à vous connecter.
     
-    (Each hosted account at Hostgator is assigned a unique cPanel address. Votre adresse cPanel doit ressembler à ceci : https://YourSiteAddress:secure-port-numberéro-port-sécurisé. Le courrier électronique d’inscription que vous avez reçu de Hostgator spécifie cette adresse et un lien cPanel est également disponible sur la page d' **hébergement** .)
+    (Une adresse cPanel unique est affectée à chaque compte hébergé sur Hostgator. Votre adresse cPanel doit ressembler à ceci : https://YourSiteAddress:secure-port-numberéro-port-sécurisé. Le courrier électronique d’inscription que vous avez reçu de Hostgator spécifie cette adresse et un lien cPanel est également disponible sur la page d' **hébergement** .)
     
     > [!IMPORTANT]
     > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Pour commencer à utiliser Microsoft, vous pouvez acheter un compte d’hébergement auprès de Hostgator ou [redéléguer vos serveurs de noms pour qu’ils pointent vers Microsoft](change-nameservers-at-hostgator.md). 
@@ -131,13 +131,13 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
  
 3. Dans la zone **Email Routing (Routage des courriers électroniques)**, sélectionnez **Remote Mail Exchanger (Serveur de courrier distant)**.
 
-4. Sélectionnez **modifier**.
+4. Sélectionnez **Modifier**.
   
 5. Dans la zone **Ajouter un nouvel enregistrement** , dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs du tableau suivant. 
     
     |**Priority (Priorité)**|**Destination (Destination)**|
     |:-----|:-----|
-    |0  <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> | *\<domain-key\>*. mail.protection.outlook.com  <br/> **Remarque :** Obtenir votre \< *domain-key*  \> à partir de votre compte Microsoft.  [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |
+    |0  <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Remarque :** Obtenez votre \< *domain-key*  \> depuis votre compte Microsoft.  [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |
   
 6. Sélectionnez **Ajouter un nouvel enregistrement**.
    
@@ -151,9 +151,9 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
 > [!IMPORTANT]
 > Avant d'effectuer cette procédure, vous devez suivre celle décrite dans la première section de cet article ([Faire pointer votre domaine vers votre compte d'hébergement](#point-your-domain-to-your-hosting-account)). 
   
-1. To get started, go to your cPanel page at Hostgator. You'll be prompted to log in first.
+1. Pour commencer, accédez à la page cPanel sur Hostgator. Avant toute chose, vous serez invité à vous connecter.
     
-    (Each hosted account at Hostgator is assigned a unique cPanel address. Votre adresse cPanel doit ressembler à ceci : https://YourSiteAddress:secure-port-numberéro-port-sécurisé. Le courrier électronique d’inscription que vous avez reçu de Hostgator spécifie cette adresse et un lien cPanel est également disponible sur la page d' **hébergement** .)
+    (Une adresse cPanel unique est affectée à chaque compte hébergé sur Hostgator. Votre adresse cPanel doit ressembler à ceci : https://YourSiteAddress:secure-port-numberéro-port-sécurisé. Le courrier électronique d’inscription que vous avez reçu de Hostgator spécifie cette adresse et un lien cPanel est également disponible sur la page d' **hébergement** .)
     
     > [!IMPORTANT]
     > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Pour commencer à utiliser Microsoft, vous pouvez acheter un compte d’hébergement auprès de Hostgator ou [redéléguer vos serveurs de noms pour qu’ils pointent vers Microsoft](change-nameservers-at-hostgator.md). 
@@ -166,7 +166,7 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     
     (Choisissez la valeur **Type (Type)** dans la liste déroulante.) 
     
-    |**Name (Nom)**|**TTL (Durée de vie)**|**Type (Type)**|**CNAME**|
+    |**Name**|**TTL (Durée de vie)**|**Type (Type)**|**CNAME**|
     |:-----|:-----|:-----|:-----|
     |autodiscover. *domain_name*. (par exemple, autodiscover.fourthcoffee.com.)  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |3600  <br/> |CNAME  <br/> |autodiscover.outlook.com  <br/> |
     |sip. *domain_name*. (par exemple, sip.fourthcoffee.com.)  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |3600  <br/> |CNAME  <br/> |sipdir.online.lync.com  <br/> |
@@ -183,18 +183,18 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     
     Répétez cette procédure jusqu'à avoir créé les 6 enregistrements CNAME.
     
-## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajouter un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
+## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajoutez un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. Si vous avez déjà un enregistrement SPF pour votre domaine, il n’est pas nécessaire d’en créer un nouveau pour Microsoft. Ajoutez plutôt les valeurs Microsoft requises à l’enregistrement actuel de manière à n’avoir qu’un seul enregistrement SPF qui inclut les deux ensembles de valeurs. Voici quelques exemples. Consultez ces [Enregistrements DNS externes pour Microsoft](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records#bkmk_spfrecords). To validate your SPF record, you can use one of these [SPF validation tools](../setup/domains-faq.md). 
+> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. Si vous avez déjà un enregistrement SPF pour votre domaine, il n’est pas nécessaire d’en créer un nouveau pour Microsoft. Ajoutez plutôt les valeurs Microsoft requises à l’enregistrement actuel de manière à n’avoir qu’un seul enregistrement SPF qui inclut les deux ensembles de valeurs. Voici quelques exemples. Consultez ces [Enregistrements DNS externes pour Microsoft](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records#bkmk_spfrecords). To validate your SPF record, you can use one of these [SPF validation tools](../setup/domains-faq.md). 
   
 > [!IMPORTANT]
 > Avant d'effectuer cette procédure, vous devez suivre celle décrite dans la première section de cet article ([Faire pointer votre domaine vers votre compte d'hébergement](#point-your-domain-to-your-hosting-account)). 
   
-1. To get started, go to your cPanel page at Hostgator. You'll be prompted to log in first.
+1. Pour commencer, accédez à la page cPanel sur Hostgator. Avant toute chose, vous serez invité à vous connecter.
     
-    (Each hosted account at Hostgator is assigned a unique cPanel address. Votre adresse cPanel doit ressembler à ceci : https://YourSiteAddress:secure-port-numberéro-port-sécurisé. Le courrier électronique d’inscription que vous avez reçu de Hostgator spécifie cette adresse et un lien cPanel est également disponible sur la page d' **hébergement** .)
+    (Une adresse cPanel unique est affectée à chaque compte hébergé sur Hostgator. Votre adresse cPanel doit ressembler à ceci : https://YourSiteAddress:secure-port-numberéro-port-sécurisé. Le courrier électronique d’inscription que vous avez reçu de Hostgator spécifie cette adresse et un lien cPanel est également disponible sur la page d' **hébergement** .)
     
     > [!IMPORTANT]
     > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Pour commencer à utiliser Microsoft, vous pouvez acheter un compte d’hébergement auprès de Hostgator ou [redéléguer vos serveurs de noms pour qu’ils pointent vers Microsoft](change-nameservers-at-hostgator.md). 
@@ -205,9 +205,9 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     
     (Choisissez la valeur **Type (Type)** dans la liste déroulante.) 
     
-    |**Name (Nom)**|**TTL (Durée de vie)**|**Type (Type)**|**TXT Data (Données TXT)**|
+    |**Name**|**TTL (Durée de vie)**|**Type (Type)**|**TXT Data (Données TXT)**|
     |:-----|:-----|:-----|:-----|
-    |Utilisez votre *domain_name*. (for example, fourthcoffee.com.)  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |3600  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Remarque :** nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte.           |
+    |Utilisez votre  *domain_name*. (for example, fourthcoffee.com.)  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |3600  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Remarque :** nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte.           |
   
 4. Sélectionnez **Ajouter un enregistrement**.
     
@@ -217,9 +217,9 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
 > [!IMPORTANT]
 > Avant d'effectuer cette procédure, vous devez suivre celle décrite dans la première section de cet article ([Faire pointer votre domaine vers votre compte d'hébergement](#point-your-domain-to-your-hosting-account)). 
   
-1. To get started, go to your cPanel page at Hostgator. You'll be prompted to log in first.
+1. Pour commencer, accédez à la page cPanel sur Hostgator. Avant toute chose, vous serez invité à vous connecter.
     
-    (Each hosted account at Hostgator is assigned a unique cPanel address. Votre adresse cPanel doit ressembler à ceci : https://YourSiteAddress:secure-port-numberéro-port-sécurisé. Le courrier électronique d’inscription que vous avez reçu de Hostgator spécifie cette adresse et un lien cPanel est également disponible sur la page d' **hébergement** .)
+    (Une adresse cPanel unique est affectée à chaque compte hébergé sur Hostgator. Votre adresse cPanel doit ressembler à ceci : https://YourSiteAddress:secure-port-numberéro-port-sécurisé. Le courrier électronique d’inscription que vous avez reçu de Hostgator spécifie cette adresse et un lien cPanel est également disponible sur la page d' **hébergement** .)
     
     > [!IMPORTANT]
     > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Pour commencer à utiliser Microsoft, vous pouvez acheter un compte d’hébergement auprès de Hostgator ou [redéléguer vos serveurs de noms pour qu’ils pointent vers Microsoft](change-nameservers-at-hostgator.md). 
@@ -233,16 +233,16 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     
     (Choisissez la valeur **Type (Type)** dans la liste déroulante.) 
     
-    |**Name (Nom)**|**TTL (Durée de vie)**|**Type**|**Priority (Priorité)**|**Weight (Poids)**|**Port (Port)**|**Target (Cible)**|
+    |**Name**|**TTL (Durée de vie)**|**Type (Type)**|**Priority (Priorité)**|**Weight (Poids)**|**Port (Port)**|**Target (Cible)**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip. _tls. *domain_name*. (par exemple, _sip. _tls. fourthcoffee. com.)  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |_sipfederationtls. _tcp. *domain_name*. (par exemple, _sipfederationtls. _tcp. fourthcoffee. com.)  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |_sip. _tls. *domain_name*. (par exemple, _sip. _tls. fourthcoffee. com.)  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |_sipfederationtls. _tcp. *domain_name*. (par exemple, _sipfederationtls. _tcp. fourthcoffee. com.)  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
    
 
 4. Sélectionnez **Ajouter un enregistrement**.
 
   
-5. Ajoutez l'autre enregistrement SRV.
+5. Ajoutez l’autre enregistrement SRV.
     
     Dans la section **Add a record (ajouter un enregistrement** ), créez un enregistrement en utilisant les valeurs de la ligne suivante du tableau, puis sélectionnez de nouveau **Add record (ajouter un enregistrement** ) pour valider cet enregistrement. 
     

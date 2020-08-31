@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment effectuer la transition de fichiers hérités vers le chiffrement de messages Office 365 (OME) pour votre organisation.
-ms.openlocfilehash: e69a0d3f0d8803630ecff976d0060d8a7447b928
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 06c0e41d6c3b7cbf7d06bf6aae82742211bd2542
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817121"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47306503"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Informations héritées pour le chiffrement de messages Office 365
 
@@ -93,7 +93,7 @@ L’exemple suivant montre un logo personnalisé pour ContosoPharma dans la piè
   
  **Pour personnaliser les messages électroniques de chiffrement et le portail de chiffrement avec la marque de votre organisation**
   
-1. Connectez-vous à Exchange Online à l’aide de Remote PowerShell, comme décrit dans [connexion à Exchange Online à l’aide de Remote PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated).
+1. Connectez-vous à Exchange Online à l’aide de Remote PowerShell, comme décrit dans [connexion à Exchange Online à l’aide de Remote PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Utilisez la cmdlet Set-OMEConfiguration comme décrit ici : [Set-OMEConfiguration](https://technet.microsoft.com/3ef0aec0-ce28-411d-abe8-7236f082af1b) ou utilisez le tableau suivant pour obtenir des instructions.
 
@@ -110,7 +110,7 @@ L’exemple suivant montre un logo personnalisé pour ContosoPharma dans la piè
   
 1. Connectez-vous à Exchange Online à l’aide de Remote PowerShell, comme décrit dans [connexion à Exchange Online à l’aide de Remote PowerShell](https://technet.microsoft.com/library/jj984289%28v=exchg.150%29.aspx).
 
-2. Utilisez la cmdlet Set-OMEConfiguration comme décrit ici : [Set-OMEConfiguration](https://technet.microsoft.com/3ef0aec0-ce28-411d-abe8-7236f082af1b). Pour supprimer les personnalisations personnalisées de votre organisation des valeurs DisclaimerText, EmailText et PortalText, définissez la valeur sur une chaîne vide, `""` . Pour toutes les valeurs d’image, telles que logo, définissez la valeur sur `"$null"` .
+2. Utilisez la cmdlet Set-OMEConfiguration comme décrit ici : [Set-OMEConfiguration](https://technet.microsoft.com/3ef0aec0-ce28-411d-abe8-7236f082af1b). Pour supprimer les personnalisations personnalisées de votre organisation des valeurs DisclaimerText, EmailText et PortalText, définissez la valeur sur une chaîne vide,  `""` . Pour toutes les valeurs d’image, telles que logo, définissez la valeur sur  `"$null"` .
 
    **Options de personnalisation du chiffrement**
 
@@ -141,7 +141,7 @@ Le tableau suivant fournit des détails techniques sur le service de chiffrement
 
 Vous avez des questions sur le chiffrement de messages Office 365 ? Voici les réponses à certaines questions fréquemment posées. Si vous ne trouvez pas ce dont vous avez besoin, consultez les [forums de la communauté technique Microsoft pour Office 365](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365).
   
- **Q. mes utilisateurs envoient des messages électroniques chiffrés à des destinataires externes à notre organisation. Y a-t-il quelque chose que les destinataires externes doivent faire pour lire et répondre aux messages électroniques chiffrés avec le chiffrement de messages Office 365 ?**
+ **Clench. Mes utilisateurs envoient des messages électroniques chiffrés à des destinataires externes à notre organisation. Y a-t-il quelque chose que les destinataires externes doivent faire pour lire et répondre aux messages électroniques chiffrés avec le chiffrement de messages Office 365 ?**
   
 Les destinataires externes à votre organisation qui reçoivent des messages chiffrés Microsoft 365 peuvent les afficher de l’une des deux façons suivantes :
   
@@ -149,7 +149,7 @@ Les destinataires externes à votre organisation qui reçoivent des messages chi
 
 - À l’aide d’un code d’accès unique.
 
- **Q. les messages Microsoft 365 chiffrés sont-ils stockés dans le Cloud ou sur des serveurs Microsoft ?**
+ **Clench. Les messages chiffrés Microsoft 365 sont-ils stockés dans le Cloud ou sur des serveurs Microsoft ?**
   
 Non, les messages chiffrés sont conservés sur le système de courrier du destinataire, et lorsque le destinataire ouvre le message, il est temporairement publié pour l’affichage sur les serveurs Microsoft. Les messages électroniques n’y sont pas stockés.
   
@@ -165,11 +165,11 @@ Une licence est obligatoire pour chaque utilisateur de l’organisation qui envo
   
 Non, les destinataires externes n’ont pas besoin d’un abonnement pour lire ou répondre à des messages chiffrés.
   
- **Q. Comment le chiffrement de messages Office 365 est-il différent des services RMS (Rights Management Services) ?**
+ **Clench. Comment le chiffrement des messages Office 365 est-il différent des services RMS (Rights Management Services) ?**
   
 RMS fournit des fonctionnalités de protection des droits relatifs à l’information pour les messages électroniques internes d’une organisation en fournissant des modèles intégrés, tels que : ne pas transférer et confidentiel. Le chiffrement de messages Office 365 prend en charge le chiffrement des messages électroniques pour ceux envoyés à des destinataires externes et internes.
   
- **Q. Comment le chiffrement de messages Office 365 est-il différent de S/MIME ?**
+ **Clench. Comment le chiffrement des messages Office 365 est-il différent de S/MIME ?**
   
 S/MIME est essentiellement une technologie de chiffrement côté client et exige une gestion de certificats et une infrastructure de publication complexes. Le chiffrement de messages Office 365 utilise des règles de flux de messagerie (également appelées règles de transport) et ne dépend pas de la publication de certificats.
   
@@ -181,11 +181,11 @@ Oui, vous pouvez afficher les messages sur Android et iOS en téléchargeant les
   
 Oui. Les réponses restent chiffrées pendant toute la durée du thread.
   
- **Q. est-ce que le chiffrement de messages Office 365 fournit la localisation ?**
+ **Clench. Est-ce que le chiffrement de messages Office 365 fournit la localisation ?**
   
 Le contenu HTML et les messages électroniques entrants sont localisés en fonction des paramètres de messagerie de l’expéditeur. Le portail d’affichage est localisé en fonction des paramètres de navigateur du destinataire. Cependant, le corps réel (le contenu) du message chiffré n’est pas localisé.
   
- **Q. quelle méthode de chiffrement est utilisée pour le chiffrement de messages Office 365 ?**
+ **Clench. Quelle méthode de chiffrement est utilisée pour le chiffrement de messages Office 365 ?**
   
 Le chiffrement de messages Office 365 utilise Rights Management Services (RMS) comme infrastructure de chiffrement. La méthode de chiffrement utilisée dépend de l’endroit où vous obtenez les clés RMS servant à chiffrer et déchiffrer les messages.
   
@@ -195,19 +195,19 @@ Le chiffrement de messages Office 365 utilise Rights Management Services (RMS) c
 
 Pour plus d’informations, consultez la rubrique [AD RMS Cryptographic modes](https://go.microsoft.com/fwlink/p/?LinkId=398616).
   
- **Q. pourquoi certains messages chiffrés disent-ils qu’ils proviennent de** office365@messaging.microsoft.com ?
+ **Q. Pourquoi certains messages chiffrés disent-ils qu’ils proviennent de** office365@messaging.microsoft.com ?
   
 Lorsqu’une réponse chiffrée est envoyée à partir du portail de chiffrement ou via l’application Visionneuse OME, l’adresse de messagerie de l’expéditeur est définie sur Office365@messaging.microsoft.com, car le message chiffré est envoyé par le biais d’un point de terminaison Microsoft. Cela permet d’éviter que les messages chiffrés soient marqués comme courrier indésirable. Le nom affiché dans le message électronique et l’adresse dans le portail de chiffrement ne sont pas modifiés en raison de cet étiquetage. En outre, cet étiquetage s’applique uniquement aux messages envoyés via le portail, et non par le biais de n’importe quel autre client de messagerie.
   
- **Q. je suis un abonné EHE (Exchange Hosted Encryption). Où puis-je en savoir plus sur la mise à niveau vers le chiffrement de messages Office 365 ?**
+ **Clench. Je suis un abonné EHE (Exchange Hosted Encryption). Où puis-je en savoir plus sur la mise à niveau vers le chiffrement de messages Office 365 ?**
   
 Tous les clients EHE ont été mis à niveau vers le chiffrement de messages Office 365. Pour plus d’informations, visitez le [Centre de mise à niveau de chiffrement hébergé Exchange](https://go.microsoft.com/fwlink/p/?LinkID=511077).
   
- **Q. dois-je ouvrir des URL, des adresses IP ou des ports dans le pare-feu de mon organisation pour prendre en charge le chiffrement des messages Office 365 ?**
+ **Clench. Dois-je ouvrir des URL, des adresses IP ou des ports dans le pare-feu de mon organisation pour prendre en charge le chiffrement des messages Office 365 ?**
   
-Oui. Vous devez ajouter des URL à la liste d’adresses autorisées pour Exchange Online afin que votre organisation permette l’authentification des messages chiffrés par Office 365. Pour obtenir la liste des URL Exchange Online, voir [URL et plages d’adresses IP Microsoft 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
+Oui. Vous devez ajouter des URL à la liste d’adresses autorisées pour Exchange Online afin que votre organisation permette l’authentification des messages chiffrés par Office 365. Pour obtenir la liste des URL Exchange Online, voir [URL et plages d’adresses IP Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges).
   
- **Q. à combien de destinataires puis-je envoyer un message chiffré Microsoft 365 ?**
+ **Clench. À combien de destinataires puis-je envoyer un message chiffré Microsoft 365 ?**
   
 La limite de destinataires est de 500 destinataires par message ou, si elle est combinée après l’expansion de la liste de distribution, 11 980 caractères dans **le champ du** message, selon le premier cas.
   

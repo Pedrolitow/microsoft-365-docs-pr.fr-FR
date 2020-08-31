@@ -27,20 +27,20 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: Découvrez comment attribuer des rôles d’administrateur à un ou plusieurs utilisateurs de votre entreprise afin qu’ils puissent effectuer des tâches spécifiques dans le centre d’administration.
-ms.openlocfilehash: cd50faf5db5e674e865e0913cae14a68a202bd1f
-ms.sourcegitcommit: 2e9e309ec09e5275ac6b3b425fba48a9ffce8eb2
+ms.openlocfilehash: f5449bdb6b05e2a29393ad8e389c562953efd710
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44900775"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307318"
 ---
 # <a name="assign-admin-roles"></a>Attribuer des rôles d’administrateur
 
 Si vous êtes la personne qui a acheté votre abonnement Microsoft professionnel, vous êtes l’administrateur général. Cela signifie que vous disposez d’un contrôle illimité sur les produits dans vos abonnements et que vous pouvez accéder à la plupart des données.
 
-Pour plus d’informations, consultez la rubrique [à propos des rôles d’administrateur](about-admin-roles.md).
+Si vous souhaitez en savoir plus, veuillez consulter la page [À propos des rôles d’administrateur](about-admin-roles.md).
 
-Lorsque vous ajoutez de nouveaux utilisateurs, si vous ne leur attribuez pas un rôle d’administrateur, ils se trouvent dans le *rôle d’utilisateur* et n’ont pas de privilèges d’administrateur pour l’un des centres d’administration Microsoft. Toutefois, si vous avez besoin d’aide, vous pouvez attribuer un rôle d’administrateur à un utilisateur. Par exemple, si vous avez besoin que quelqu’un vous aide à réinitialiser les mots de passe, vous ne devez pas lui attribuer le rôle d’administrateur global, vous devez lui attribuer le rôle d’administrateur de mot de passe. Un trop grand nombre d’administrateurs globaux, avec un accès illimité à vos données et à votre entreprise en ligne, constitue un risque de sécurité.
+Lorsque vous ajoutez de nouveaux utilisateurs, si vous ne leur attribuez pas un rôle d’administrateur, ils se trouvent dans le *rôle d’utilisateur* et n’ont pas de privilèges d’administrateur pour l’un des centres d’administration Microsoft. Toutefois, si vous avez besoin d’aide, vous pouvez attribuer un rôle d’administrateur à un utilisateur. Par exemple, si vous avez besoin que quelqu’un vous aide à réinitialiser les mots de passe, vous ne devez pas lui attribuer le rôle d’administrateur global, vous devez lui attribuer le rôle d’administrateur de mot de passe. Le fait d’avoir un trop grand nombre d’administrateurs généraux, avec un accès illimité à vos données et à votre entreprise en ligne, constitue un risque pour la sécurité.
 
 Regardez une courte vidéo sur l’ajout d’un administrateur.<br><br>
 
@@ -66,13 +66,13 @@ Vous pouvez attribuer des utilisateurs à un rôle de deux manières différente
 5. Ajoutez plusieurs utilisateurs jusqu’à ce que vous ayez fini.
 6. Sélectionnez **Enregistrer**, puis l’utilisateur est ajouté à la liste des administrateurs attribués.
 
-### <a name="assign-a-user-to-an-admin-role-from-active-users"></a>Affecter un utilisateur à un rôle d’administrateur à partir d’utilisateurs actifs
+### <a name="assign-a-user-to-an-admin-role-from-active-users"></a>Attribuer un rôle d’administrateur à un utilisateur via l’option Utilisateurs actifs
 
 1. Dans le centre d’administration, accédez **à la page utilisateurs** > [actifs active](https://go.microsoft.com/fwlink/p/?linkid=834822) Users.
 
 2. Sur la page **utilisateurs actifs** , sélectionnez l’utilisateur dont vous souhaitez modifier le rôle d’administrateur. Dans le volet flyout, en regard de **rôles**, sélectionnez **gérer les rôles**.
 
-3. Sélectionnez le rôle d’administrateur que vous souhaitez attribuer à l’utilisateur. Si vous ne voyez pas le rôle que vous recherchez, sélectionnez **Afficher tout** en bas de la liste.
+3. Sélectionnez le rôle d’administrateur que vous voulez attribuer à l’utilisateur. Si vous ne voyez pas le rôle que vous recherchez, sélectionnez **Afficher tout** en bas de la liste.
 
 ::: moniker-end
 
@@ -122,6 +122,6 @@ Vous ne disposez peut-être pas des autorisations appropriées pour attribuer de
 
 [Autorisations des rôles d’administrateur dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
-[Attribuer des rôles à des comptes d’utilisateur avec PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell)
+[Attribuer des rôles à des comptes d’utilisateur avec PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell)
 
 [Autoriser ou supprimer des relations avec les partenaires](../misc/add-partner.md)

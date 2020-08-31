@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: En utilisant le Centre de sécurité Microsoft 365 ou le Centre de conformité Microsoft 365, vous pouvez gérer les autorisations de façon centralisée pour toutes les tâches liées à la sécurité ou à la conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0a7ca90bfc4a8d323b67528ca850f60059abeb12
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: c18f50fcad7b934e02c2110fa05196874ab0169a
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46652836"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307772"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center-and-microsoft-365-security-center"></a>Autorisations dans le Centre de conformité Microsoft 365 et le Centre de sécurité Microsoft 365
 
@@ -101,7 +101,7 @@ Les utilisateurs disposant de ce rôle sont autorisés à gérer les fonctionnal
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|Affiche des informations relatives à l'utilisateur, l'appareil, l'inscription, la configuration et l'application. <br/><br/> **Ne peut pas** apporter de modifications à Intune.|
 |[**Cloud App Security**](https://docs.microsoft.com/cloud-app-security/manage-admins)|Ajouter des administrateurs, des stratégies et des paramètres, charger des journaux et effectuer des actions de gouvernance.|
 |[**Azure Security Center**](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles) (bientôt disponible)|Afficher les stratégies de sécurité, les états de sécurité, les alertes et les recommandations, et ignorer les alertes et les recommandations.|
-|[**Office 365 Service Health**](https://docs.microsoft.com/office365/enterprise/view-service-health)|Afficher l’intégrité des services Office 365.|
+|[**Office 365 Service Health**](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health)|Afficher l’intégrité des services Office 365.|
 |
 
 ### <a name="security-operator"></a>Opérateur de sécurité
@@ -119,7 +119,7 @@ Les utilisateurs disposant de ce rôle peuvent gérer les alertes et ont un acc�
 |**Windows Defender ATP et EDR**|Faites tout ce que peut faire le lecteur de sécurité. <br/><br/> Afficher, examiner et répondre aux alertes.|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|Affiche des informations relatives à l'utilisateur, l'appareil, l'inscription, la configuration et l'application. <br/><br/> **Ne peut pas** apporter de modifications à Intune.|
 |[**Cloud App Security**](https://docs.microsoft.com/cloud-app-security/manage-admins)|Faites tout ce que peut faire le lecteur de sécurité, avec en plus le droit d’afficher et d’ignorer les alertes.|
-|[**Office 365 Service Health**](https://docs.microsoft.com/office365/enterprise/view-service-health)|Afficher l’intégrité des services Office 365.|
+|[**Office 365 Service Health**](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health)|Afficher l’intégrité des services Office 365.|
 |
 
 ### <a name="security-reader"></a>Lecteur Sécurité
@@ -138,7 +138,7 @@ Les utilisateurs disposant de ce rôle ont un accès en lecture seule au niveau 
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|Affiche des informations relatives à l'utilisateur, l'appareil, l'inscription, la configuration et l'application. <br/><br/> **Ne peut pas** apporter de modifications à Intune.|
 |[**Cloud App Security**](https://docs.microsoft.com/cloud-app-security/manage-admins)|Utiliser des autorisations de lecture seule pour afficher des informations. <br/><br/> Gérer les alertes.|
 |[**Azure Security Center**](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles)|Afficher les recommandations et les alertes. <br/><br/> Afficher les stratégies de sécurité. <br/><br/> Afficher les états de sécurité, mais sans pouvoir les modifier.|
-|[**Office 365 Service Health**](https://docs.microsoft.com/office365/enterprise/view-service-health)|Afficher l’intégrité des services Office 365.|
+|[**Office 365 Service Health**](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health)|Afficher l’intégrité des services Office 365.|
 |
 
 ## <a name="global-administrators-can-manage-roles-in-azure-active-directory"></a>Les administrateurs généraux peuvent gérer les rôles dans Azure Active Directory

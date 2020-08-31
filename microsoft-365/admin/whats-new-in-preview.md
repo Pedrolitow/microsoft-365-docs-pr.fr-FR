@@ -21,12 +21,12 @@ description: Centre d’administration Microsoft 365-Découvrez les fonctionnali
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 84932e13a336d225894683f9e328cb44df8c0e78
-ms.sourcegitcommit: 6319e73b3690b4cf1b7932f2b9f51c2c99e70eaa
+ms.openlocfilehash: 7504fa085c6dd5413a1dcddbb71f3d015ded72c1
+ms.sourcegitcommit: 97ef8f846939c3d31bb0638edf07bb89463ace0b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46635021"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47300452"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Nouveautés du centre d’administration Microsoft 365
 
@@ -39,10 +39,6 @@ ms.locfileid: "46635021"
 
 Nous ajoutons constamment de nouvelles fonctionnalités au [Centre d’administration Microsoft 365](microsoft-365-admin-center-preview.md), à la résolution des problèmes que nous apprendons et en apportant des modifications en fonction de vos commentaires. Jetez un œil à ce qui est disponible dès aujourd’hui. Certaines fonctionnalités sont déployées à des vitesses différentes à nos clients. Si vous ne voyez pas encore de fonctionnalité, [essayez de vous ajouter à la version ciblée](manage/release-options-in-office-365.md).
 
-> [!IMPORTANT]
-> **«La retraite du centre d’administration classique commence en mars**<br><br>
-Lorsque vous vous connectez au centre d’administration Microsoft 365, vous accédez à chaque fois au nouveau centre d’administration. En mars, nous avons commencé à désactiver la fonctionnalité de basculement vers le centre d’administration classique. Pour le moment, vous pouvez toujours revenir en arrière, mais en tant que nouveau centre d’administration, vous êtes en mesure de désactiver le commutateur pour toutes les organisations. <br><br> *Dernière mise à jour : 11 mai 2020*
-
 Et si vous souhaitez connaître les nouveautés d’autres services Cloud de Microsoft :
 
 - [Nouveautés d’Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/whats-new)
@@ -53,6 +49,34 @@ Et si vous souhaitez connaître les nouveautés d’autres services Cloud de Mic
 - [Nouveautés du centre d’administration SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
 - [Mises à jour Office](https://docs.microsoft.com/OfficeUpdates/)
 
+## <a name="july-2020"></a>Juillet 2020
+
+### <a name="getting-ready-for-ignite-2020"></a>Préparation pour enflamme 2020
+
+À mesure que nous passons à la saison d’enflamme chez Microsoft, nous ne publions pas autant de fonctionnalités afin que nous ayons beaucoup à parler pendant nos sessions. 
+
+La prochaine mise à jour de cet article se tiendra le jour de notre première inversion en ligne uniquement. Cette année, c’est gratuit. Pour en savoir plus, connectez-vous : [Microsoft enflamme 2020](https://www.microsoft.com/ignite).
+
+### <a name="your-products"></a>Vos produits
+
+La gestion des abonnements a fait l’objet d’un grand nombre de tâches, ce qui permet de charger la page plus rapidement, de trouver plus rapidement ce que vous recherchez et de respecter les normes acessibility Web ([directives WCAG 2,1](http://www.w3.org/TR/WCAG21/)).
+
+- **Reconception de tableau**: le tableau a été repensé afin que vous puissiez regrouper les abonnements similaires. Accédez à **facturation**de  >  **vos produits**.
+- **Détails**sur le produit : Obtenez plus d’informations sur vos abonnements en sélectionnant le produit dans la liste.
+- **Procédez**comme suit : vous n’avez pas à vous rendre sur plusieurs pages pour gérer un produit. Par exemple, si vous devez annuler un abonnement, le panneau s’ouvrira pour y effectuer l’action immédiatement.
+
+![Page produits dans laquelle le panneau annuler l’abonnement est ouvert.](../media/MAC-WN-SubscrDetails.png)
+
+### <a name="domains"></a>Domaines
+
+La gestion de domaine peut être compliquée et nous avons publié une nouvelle fonctionnalité pour faciliter cette tâche. Accédez à paramètres > domaines, puis sélectionnez un domaine pour obtenir plus d’informations sur votre domaine et l’état du domaine.
+
+:::image type="content" source="../media/MAC-WN-DomainDNS.PNG" alt-text="Page de détails des domaines pour contoso.com":::
+
+### <a name="docs-training-and-videos"></a>Documents, formation et vidéos
+
+Nouveautés de la série de vidéos [Microsoft 365](https://youtu.be/m1Nu8WJgCDY) : ce mois-ci, nous allons aborder la nouvelle expérience Yammer pour le Web et mobile, comment intégrer l’application de communautés Yammer pour Microsoft Teams, les nouveaux packages de stratégie pour prendre en charge les utilisateurs et les responsables terrain, et bien plus encore.
+
 ## <a name="june-2020"></a>Juin 2020
 
 ### <a name="keeping-up-with-office-whats-new-management"></a>Restez au fait des nouveautés d’Office
@@ -62,7 +86,6 @@ Il y a quelques mois, nous avons ajouté un paramètre qui vous permet de gérer
 ### <a name="docs-training-and-videos-june"></a>Documents, formation et vidéos (juin)
 
 - [Prise en main de teams](https://support.microsoft.com/office/184f1aba-2f91-43f0-86e1-9fae607e24f6)
-
 
 ## <a name="may-2020"></a>Mai 2020
 
@@ -100,9 +123,9 @@ Ce mois-ci, nous avons publié un nouveau site [https://docs.microsoft.com](http
 - Conseils spécifiques de l’industrie
 - Principaux de conception de l’architecture d’entreprise
 
-### <a name="docs-training-and-videos"></a>Documents, formation et vidéos
+### <a name="docs-training-and-videos-may"></a>Documents, formation et vidéos (mai)
 
-- **Nouveautés de la série de vidéos Microsoft 365**: ce mois-ci, nous allons aborder la nouvelle expérience de support dans les centres d’administration et de sécurité et de conformité de teams, l’intégration de planificateur avec le centre de messages et la nouvelle disposition vidéo 3x3 dans Microsoft Teams. [Nouveautés de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
+- **Nouveautés de la série de vidéos Microsoft 365**: ce mois-ci, nous allons aborder la nouvelle expérience de support dans les centres d’administration et de sécurité et de conformité de teams, l’intégration de planificateur avec le centre de messages et la nouvelle disposition vidéo 3x3 dans Microsoft Teams. 
 - La page Hub [d’aide du centre d’administration 365 de Microsoft](https://docs.microsoft.com/microsoft-365/admin/) a été mise à jour pour vous aider à trouver plus rapidement ce dont vous avez besoin. Et si vous accédez à cette page pour le moment, nous avons ajouté une carte pour vous informer des mises à jour et des modifications importantes.
 
 ## <a name="april-2020"></a>Avril 2020
@@ -334,7 +357,7 @@ En novembre, nous avons publié un grand nombre de chemins d’apprentissage ver
 - [Microsoft 365-moderniser votre déploiement d’entreprise avec les applications Windows 10 et Microsoft 365 pour les entreprises](https://docs.microsoft.com/learn/paths/m365-getmodern/)
 - [Gérer le déploiement au sein de votre entreprise avec Microsoft 365](https://docs.microsoft.com/learn/paths/manage-enterprise-deployment-m365/)
 - [Mettre à niveau Microsoft Office pour les services informatiques à l’échelle](https://docs.microsoft.com/learn/paths/m365-office-for-it/)
-- [Mettre à disposition des applications et des bureaux distants à partir d’Azure avec le bureau virtuel Windows](https://docs.microsoft.com/learn/paths/m365-wvd/)
+- [Mettre à disposition des applications et des bureaux distants à partir d’Azure avec le bureau virtuel Windows ](https://docs.microsoft.com/learn/paths/m365-wvd/)
 - [Moderniser votre lieu de travail avec Microsoft 365 et Surface pour les entreprises](https://docs.microsoft.com/learn/paths/modernize-workplace-with-m365-and-surface/)
 - [Protéger les identités et accès avec Microsoft 365](https://docs.microsoft.com/learn/paths/m365-identity/)
 - [Protéger les informations d’entreprise avec Microsoft 365](https://docs.microsoft.com/learn/paths/m365-information-protection/)
@@ -382,7 +405,7 @@ Lorsqu’une fonctionnalité Office importante est publiée dans une application
 
 Techniquement, il ne s’agit pas des nouveautés du centre d’administration Microsoft 365, mais nous sommes tellement enthousiastes que nous souhaitions vous assurer que vous voyez cette nouvelle information :
 > [!IMPORTANT]
-> Vous pouvez désormais accéder à votre centre d’administration SharePoint avec une URL normale :[https://admin.microsoft.com/SharePoint](https://admin.microsoft.com/SharePoint)
+> Vous pouvez désormais accéder à votre centre d’administration SharePoint avec une URL normale : [https://admin.microsoft.com/SharePoint](https://admin.microsoft.com/SharePoint)
 
 Pour plus d’informations, consultez [la rubrique what’s New in the SharePoint Admin Center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center).
 
@@ -407,14 +430,14 @@ Une mise à jour a été mise à jour vers l’un des assistants d’installatio
 - **Sécurisez les ordinateurs Windows 10** : configurez des stratégies pour mieux protéger vos appareils Windows 10 contre les virus, les programmes malveillants et les attaques des pirates.
 - **Installer automatiquement Office** : lorsque vous activez cette fonction et que les utilisateurs ont connecté leurs PC à Microsoft 365 Business, leurs ordinateurs sont automatiquement mis à jour vers les dernières applications Office et restent à jour.
 
-## <a name="august-2019"></a>Août 2019
+## <a name="august-2019"></a>Août 2019
 
 ### <a name="billing"></a>Facturation
 
 Nous disposons de mises à jour pour la facturation et les abonnements ce mois-ci :
 
 - Abonnements basés sur des appareils : vous pouvez attribuer ou annuler l’affectation de licences **Microsoft 365 Apps for Education (Device)** à des appareils dans le centre d’administration Microsoft 365. **Microsoft 365 Apps for Education (Device)** est une licence de module complémentaire qui vous permet d’attribuer une licence à un appareil. Accédez à **facturation**de  >  **vos produits** pour trouver et acheter la licence.
-- Gestion des licences basées sur les utilisateurs : nous avons mis à jour la manière dont vous attribuez des licences aux utilisateurs actifs des **utilisateurs dans**  >  **Active users** le nouveau style. Pour plus d’informations, reportez-vous aux rubriques suivantes :
+- Gestion des licences basées sur les utilisateurs : nous avons mis à jour la manière dont vous attribuez des licences aux utilisateurs actifs des **utilisateurs dans**  >  **Active users** le nouveau style. Pour plus d’informations, consultez :
   - [Attribuer des licences aux utilisateurs](manage/assign-licenses-to-users.md)
   - [Annuler l'assignation des licences aux utilisateurs](manage/remove-licenses-from-users.md)
 

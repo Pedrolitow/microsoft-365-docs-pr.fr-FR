@@ -1,5 +1,5 @@
 ---
-title: Dépannage des messages envoyés à Microsoft 365
+title: Résolution des problèmes de courrier envoyé à Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -18,14 +18,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Cet article fournit des informations sur la résolution des problèmes liés à l’envoi de messages électroniques à des boîtes de réception dans Microsoft 365 & meilleures pratiques pour le publipostage vers les clients Microsoft 365.
-ms.openlocfilehash: 0d9c1646aa7491b3da458c7cb0ddeb908873153a
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 4243f46746cb21425fc2dc7493c69818f095e71f
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208596"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307578"
 ---
-# <a name="troubleshooting-mail-sent-to-microsoft-365"></a>Dépannage des messages envoyés à Microsoft 365
+# <a name="troubleshooting-mail-sent-to-microsoft-365"></a>Résolution des problèmes de courrier envoyé à Microsoft 365
 
 Cet article fournit des informations de dépannage pour les expéditeurs qui rencontrent des problèmes lors de la tentative d’envoi de messages électroniques à des boîtes de réception dans Microsoft 365 et les meilleures pratiques pour le publipostage à des clients.
 
@@ -79,7 +79,7 @@ Vous avez reçu une notification d'échec de remise car une activité suspecte a
 
 ## <a name="i-cant-receive-email-from-senders-in-microsoft-365"></a>Je ne parviens pas à recevoir des courriers électroniques des expéditeurs dans Microsoft 365
 
- Afin de recevoir des messages de la part de nos utilisateurs, assurez-vous que votre réseau autorise les connexions provenant des adresses IP utilisées par EOP dans nos centres de données. Pour plus d’informations, consultez la rubrique [Exchange Online Protection IP addresses](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
+ Afin de recevoir des messages de la part de nos utilisateurs, assurez-vous que votre réseau autorise les connexions provenant des adresses IP utilisées par EOP dans nos centres de données. Pour plus d’informations, consultez la rubrique [Exchange Online Protection IP addresses](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges).
 
 ## <a name="best-practices-for-bulk-emailing-to-microsoft-365-users"></a>Meilleures pratiques pour l’envoi en nombre de messages électroniques aux utilisateurs de Microsoft 365
 

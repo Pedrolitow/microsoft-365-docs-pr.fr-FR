@@ -19,12 +19,12 @@ ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 ms.custom:
 - seo-marvel-apr2020
 description: Cette rubrique décrit la configuration recommandée pour les paramètres à l’échelle du client qui affectent la sécurité de votre environnement Microsoft 365.
-ms.openlocfilehash: 821221e9a7602b7eaaf6850284468abd486cf501
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 3a69a27aa544880e428562892832b6d33a2508e4
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653556"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308218"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>Configuration de votre client Microsoft 365 pour une sécurité accrue
 
@@ -77,7 +77,7 @@ De nombreux contrôles de sécurité et de protection dans le centre d’adminis
 |Domaine|Inclut une stratégie par défaut|Recommandation|
 |---|---|---|
 |**Flux de messagerie** (règles de flux de messagerie, également appelées règles de transport)|Non|Ajoutez une règle de flux de messagerie pour vous protéger contre les ransomware en bloquant les types de fichiers exécutables et les types de fichiers Office qui contiennent des macros. Pour plus d’informations, consultez la rubrique [utiliser des règles de flux de messagerie pour inspecter les pièces jointes dans Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments). <br/><br/> Consultez les rubriques supplémentaires suivantes : <br/>* [Protéger contre les ransomware](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/secure-your-business-data#ransomware)<br/>* [Protection contre les programmes malveillants et les ransomware dans Office 365](https://docs.microsoft.com/Office365/Enterprise/office-365-malware-and-ransomware-protection) <br/>* [Récupération suite à une attaque de ransomware dans Office 365](recover-from-ransomware.md) <br/><br/> Créez une règle de flux de messagerie pour empêcher le transfert automatique des messages vers des domaines externes. Pour plus d’informations, consultez la rubrique [minimisation des règles de transfert externe des clients avec le score sécurisé](https://docs.microsoft.com/archive/blogs/office365security/mitigating-client-external-forwarding-rules-with-secure-score). <br/><br/> Plus d’informations : [règles de flux de messagerie (règles de transport) dans Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)|
-|**Activer l’authentification moderne**|Non|L’authentification moderne est une condition préalable à l’utilisation de l’authentification multifacteur (MFA). L’authentification multifacteur est recommandée pour sécuriser l’accès aux ressources Cloud, y compris la messagerie électronique. <br/><br/> Consultez les rubriques suivantes : <br/>* [Activer ou désactiver l’authentification moderne dans Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) <br/>* [Skype entreprise Online : activation de votre client pour l’authentification moderne](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) <br/><br/> L’authentification moderne est activée par défaut pour les clients Office 2016, SharePoint Online et OneDrive entreprise. <br/><br/> Plus d’informations : [fonctionnement de l’authentification moderne pour les applications clientes office 2013 et office 2016](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)|
+|**Activer l’authentification moderne**|Non|L’authentification moderne est une condition préalable à l’utilisation de l’authentification multifacteur (MFA). L’authentification multifacteur est recommandée pour sécuriser l’accès aux ressources Cloud, y compris la messagerie électronique. <br/><br/> Consultez les rubriques suivantes : <br/>* [Activer ou désactiver l’authentification moderne dans Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) <br/>* [Skype entreprise Online : activation de votre client pour l’authentification moderne](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) <br/><br/> L’authentification moderne est activée par défaut pour les clients Office 2016, SharePoint Online et OneDrive entreprise. <br/><br/> Plus d’informations : [fonctionnement de l’authentification moderne pour les applications clientes office 2013 et office 2016](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016)|
 |
 
 ## <a name="configure-tenant-wide-sharing-policies-in-sharepoint-admin-center"></a>Configurer des stratégies de partage à l’échelle du client dans le centre d’administration SharePoint

@@ -21,12 +21,12 @@ search.appverid:
 description: Obtenir un support technique et de facturation à l’aide de numéros de téléphone répertoriés pour votre pays ou région ou en envoyant votre demande de service en ligne.
 feedback_system: None
 ms.date: 7/28/2020
-ms.openlocfilehash: 1db89882db693c2102ca5c8dcb28f7ceb3ebf12e
-ms.sourcegitcommit: 3f9aac62e79799eca751ba9c8510aad1fc3afc5d
+ms.openlocfilehash: f508607bb19a15fa089cf13eecfd7047f2e6f7bf
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46641584"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307360"
 ---
 # <a name="ways-to-contact-support-for-business-products---admin-help"></a>Comment contacter le support relatif aux produits d’entreprises - Aide de l’administrateur
 
@@ -35,7 +35,7 @@ ms.locfileid: "46641584"
 > [!IMPORTANT]
 > Vous devez être un administrateur d’un abonnement pour les entreprises pour utiliser ces méthodes de support. Si vous n’êtes pas un administrateur professionnel, veuillez utiliser [cette page de support](https://support.microsoft.com/help/contactus).
 
-Commencez par [vérifier l’état d’intégrité actuel de vos services](https://docs.microsoft.com/office365/enterprise/view-service-health). Vous pouvez consulter des informations détaillées sur les problèmes actuels et passés dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Tableau de bord d’état d’intégrité du service</a>. Si vous rencontrez un problème qui ne figure pas dans la liste, vous pouvez obtenir une assistance de l’une des façons suivantes :
+Commencez par [vérifier l’état d’intégrité actuel de vos services](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health). Vous pouvez consulter des informations détaillées sur les problèmes actuels et passés dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Tableau de bord d’état d’intégrité du service</a>. Si vous rencontrez un problème qui ne figure pas dans la liste, vous pouvez obtenir une assistance de l’une des façons suivantes :
 
 ## <a name="online-support"></a>Support en ligne
 

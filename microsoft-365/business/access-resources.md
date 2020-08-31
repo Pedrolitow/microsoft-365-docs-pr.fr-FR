@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: Découvrez comment accéder à des ressources locales telles que des applications métier, des partages de fichiers et des imprimantes à partir d’un appareil Azure Active Directory joint à Windows 10.
-ms.openlocfilehash: 9615ecc9469992d3e5a7479f4799c610db11fb41
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+ms.openlocfilehash: 9b83781afee746b06bbdf90962de0f55ffbcb118
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44471248"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307490"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business-premium"></a>Accéder aux ressources locales à partir d’un appareil joint à Azure AD dans Microsoft 365 Business Premium
 
@@ -44,7 +44,7 @@ Les étapes sont également résumées dans les sections suivantes.
 
 Procédez comme suit pour activer les appareils Azure AD joints de votre organisation pour accéder aux ressources locales.
   
-1. Pour synchroniser vos utilisateurs, groupes et contacts à partir d’Active Directory local avec Azure Active Directory, exécutez l’Assistant synchronisation d’annuaires et Azure AD Connect comme décrit dans [set up Directory Synchronization for Office 365](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization).
+1. Pour synchroniser vos utilisateurs, groupes et contacts à partir d’Active Directory local avec Azure Active Directory, exécutez l’Assistant synchronisation d’annuaires et Azure AD Connect comme décrit dans [set up Directory Synchronization for Office 365](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization).
     
 2. Une fois la synchronisation d’annuaires terminée, assurez-vous que les appareils Windows 10 de votre organisation sont joints à Azure AD. Cette étape est effectuée individuellement sur chaque appareil Windows 10. Pour plus d’informations, reportez-vous à la rubrique [configurer des appareils Windows pour les utilisateurs de Microsoft 365 Business Premium](set-up-windows-devices.md) . 
     
@@ -52,7 +52,7 @@ Procédez comme suit pour activer les appareils Azure AD joints de votre organis
     
 Aucune étape supplémentaire n’est requise pour accéder aux ressources locales pour les appareils joints à Azure AD. Cette fonctionnalité est intégrée dans Windows 10. 
 
-Si vous avez l’intention de vous connecter à l’appareil AADJ autre que la méthode de mot de passe comme code confidentiel/bio-métrique via WHFB de connexion d’informations d’identification et d’accéder aux ressources locales (partages, imprimantes.. etc.), suivezhttps://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base
+Si vous avez l’intention de vous connecter à l’appareil AADJ autre que la méthode de mot de passe comme code confidentiel/bio-métrique via WHFB de connexion d’informations d’identification et d’accéder aux ressources locales (partages, imprimantes.. etc.), suivez https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base
   
 Si votre organisation n’est pas prête à être déployée dans la configuration d’appareil joint Azure AD décrite ci-dessus, envisagez de configurer la [configuration hybride Azure ad jointe](manage-windows-devices.md)de l’appareil.
   

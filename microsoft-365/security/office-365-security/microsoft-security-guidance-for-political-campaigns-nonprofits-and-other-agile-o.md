@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 10d1004b-42b6-4e2b-aaa2-18ddd9118f64
 description: 'Résumé : Conseils de planification et d’implémentation pour les organisations à développement rapide présentant un profil susceptible d’attirer les menaces.'
-ms.openlocfilehash: 98ede8a7dade750413dbdf2f35394cb8b15513e5
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 79384277ec470d5545e9fe8127a95532e892fb45
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46652884"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307882"
 ---
 # <a name="microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations"></a>Conseils de sécurité Microsoft pour les campagnes électorales, les organisations à but non lucratif et d’autres organisations flexibles
 
@@ -62,6 +62,6 @@ Pour des fonctionnalités de sécurité supplémentaires pour la démonstration 
 
 ## <a name="see-also"></a>Voir aussi
 
-[Guides de laboratoire de test d’adoption cloud](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)
+[Guides de laboratoire de test d’adoption cloud](https://docs.microsoft.com/microsoft-365/enterprise/cloud-adoption-test-lab-guides-tlgs)
 
-[Ressources relatives à l’architecture informatique du cloud Microsoft](https://docs.microsoft.com/office365/enterprise/microsoft-cloud-it-architecture-resources)
+[Ressources relatives à l’architecture informatique du cloud Microsoft](https://docs.microsoft.com/microsoft-365/solutions/cloud-architecture-models)

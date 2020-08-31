@@ -17,12 +17,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Configurez des stratégies de liens fiables pour protéger votre organisation contre les liens malveillants dans les fichiers Word, Excel, PowerPoint et Visio, ainsi que dans les messages électroniques.
-ms.openlocfilehash: f935002a300bd5f4553cbab429318dad4104b208
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 121de6137e392ae0c66d9961fd2138f003a9d9fa
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662253"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307760"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configuration des stratégies de liens approuvés Office 365 ATP
 
@@ -51,7 +51,7 @@ De [nouvelles fonctionnalités sont continuellement ajoutées à](office-365-atp
 
 - Assurez-vous que vous disposez des autorisations nécessaires. Pour définir (ou modifier) des stratégies ATP, vous devez disposer d’un rôle approprié. Certains exemples sont décrits dans le tableau suivant :
 
-    |Rôle|WHERE/How Assigned|
+    |Role|WHERE/How Assigned|
     |---|---|
     |administrateur général|La personne qui s’inscrit pour acheter Microsoft 365 est un administrateur global par défaut. (Pour en savoir plus, consultez la rubrique [à propos des rôles d’administrateur Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .)|
     |Administrateur de sécurité|Centre d’administration Azure Active Directory ( <https://aad.portal.azure.com> )|
@@ -59,7 +59,7 @@ De [nouvelles fonctionnalités sont continuellement ajoutées à](office-365-atp
 
     Pour en savoir plus sur les rôles et les autorisations, consultez [la rubrique autorisations dans le centre de sécurité & conformité](permissions-in-the-security-and-compliance-center.md).
 
-- Assurez-vous que les clients Office sont configurés pour utiliser [l’authentification moderne](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016) (il s’agit de la protection des liens fiables ATP dans les documents Office).
+- Assurez-vous que les clients Office sont configurés pour utiliser [l’authentification moderne](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016) (il s’agit de la protection des liens fiables ATP dans les documents Office).
 
 - [Découvrez les options de stratégie de liens approuvés ATP](#step-4-learn-about-atp-safe-links-policy-options) (dans cet article).
 

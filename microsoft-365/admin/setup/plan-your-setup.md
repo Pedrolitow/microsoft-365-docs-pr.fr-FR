@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: Découvrez les conditions requises et les considérations à prendre en compte pour effectuer le déplacement vers Microsoft 365 pour les entreprises.
-ms.openlocfilehash: b7d815da012e1c104561d5fccfb9e1704ac5c447
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 14543e3859f06e7f89cf74e2159a70483c7ec228
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529659"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307542"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>Planifier la configuration de Microsoft 365 pour les entreprises
 
@@ -60,7 +60,7 @@ Si vous êtes bloqué à un moment quelconque, contactez-nous. [Nous sommes là 
 
 Il existe deux scénarios qui incluent la migration de données ou d’utilisateurs à partir d’environnements locaux ou la configuration d’un système hybride qui inclut la synchronisation d’annuaires. Si vous êtes dans l’une de ces catégories, suivez les instructions fournies dans les articles suivants :
   
-- Pour configurer la synchronisation d’annuaires avec votre annuaire Active Directory local, voir [configurer la synchronisation d’annuaires pour microsoft 365](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization)et comprendre les différents modèles d’identité dans Microsoft 365, lisez la rubrique [understanding Microsoft 365 Identity and Azure Active Directory](https://docs.microsoft.com/office365/enterprise/about-office-365-identity).
+- Pour configurer la synchronisation d’annuaires avec votre annuaire Active Directory local, voir [configurer la synchronisation d’annuaires pour microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization)et comprendre les différents modèles d’identité dans Microsoft 365, lisez la rubrique [understanding Microsoft 365 Identity and Azure Active Directory](https://docs.microsoft.com/microsoft-365/enterprise/about-microsoft-365-identity).
 
 - Pour configurer un déploiement Exchange hybride, les instructions relatives aux différentes étapes (dont la configuration des enregistrements DNS) sont disponibles ici : [Assistant de déploiement Exchange Server](https://aka.ms/exdeploy)
 
@@ -127,7 +127,7 @@ Pour les grandes organisations ou si vous commencez à partir de Skype entrepris
   
 ## <a name="plan-for-integration-with-active-directory-or-other-software"></a>Planifier l'intégration avec Active Directory ou d'autres logiciels
 
-- **Vous voulez opérer une intégration avec votre Active Directory en local ?** Vous pouvez intégrer votre annuaire Active Directory local à Microsoft 365 à l’aide d’Azure Active Directory Connect. Pour obtenir des instructions, consultez la rubrique [configurer la synchronisation d’annuaires pour Microsoft 365](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization).
+- **Vous voulez opérer une intégration avec votre Active Directory en local ?** Vous pouvez intégrer votre annuaire Active Directory local à Microsoft 365 à l’aide d’Azure Active Directory Connect. Pour obtenir des instructions, consultez la rubrique [configurer la synchronisation d’annuaires pour Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization).
   
 - **Souhaitez-vous intégrer Microsoft 365 avec des logiciels créés par d’autres entreprises ?** Si vous avez besoin d’intégrer Microsoft 365 à d’autres logiciels de votre organisation, nous vous recommandons d’envisager d' [embaucher un partenaire](https://go.microsoft.com/fwlink/?linkid=391089) pour vous aider dans votre déploiement.
   

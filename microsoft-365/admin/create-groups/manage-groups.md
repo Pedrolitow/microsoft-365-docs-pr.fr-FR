@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Apprenez à gérer les groupes Microsoft 365, notamment l’ajout de supprimer des membres du groupe, la modification de l’adresse de messagerie, du nom de groupe ou de la description et la personnalisation du fonctionnement du groupe.
-ms.openlocfilehash: ba88e35713e889ca85a264b1da1d34d9e1e30671
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 26c6c064e454351366c326e665bacdcc9bb855fb
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780648"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307300"
 ---
 # <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>Gérer un groupe dans le centre d’administration Microsoft 365
 
@@ -202,4 +202,4 @@ Cette option est intéressante si vous souhaitez avoir une adresse de messagerie
 
 [Mettre à niveau les listes de distribution vers des groupes Microsoft 365](../manage/upgrade-distribution-lists.md)
 
-[Gérer les groupes Microsoft 365 avec PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)
+[Gérer les groupes Microsoft 365 avec PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/powershell/manage-office-365-groups-with-powershell)

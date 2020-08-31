@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: Découvrez comment ajouter des utilisateurs et attribuer des licences à Microsoft 365 en même temps.
 ms.date: 07/01/2020
-ms.openlocfilehash: 016c98fc93bfa1a92274a5b991cf8adbd1131bc9
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.openlocfilehash: 6745285600b6c5a62b4327d7174b2c249ff5276c
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45015886"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307372"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>Ajouter des utilisateurs et attribuer des licences en même temps
 
@@ -41,7 +41,7 @@ Les membres de votre équipe doivent disposer d’un compte d’utilisateur pour
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Vous devez être un administrateur général, une licence ou un administrateur d’utilisateur pour ajouter des utilisateurs et attribuer des licences. Pour plus d’informations, consultez la rubrique [à propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+Vous devez être un administrateur général, une licence ou un administrateur d’utilisateur pour ajouter des utilisateurs et attribuer des licences. Si vous souhaitez en savoir plus, veuillez consulter la page [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="watch-add-users-in-the-admin-center"></a>Regarder : ajouter des utilisateurs dans le centre d’administration
 
@@ -100,19 +100,19 @@ Vous devez être un administrateur général, une licence ou un administrateur d
 
 Vous pouvez utiliser l’une des méthodes suivantes pour ajouter plusieurs utilisateurs en même temps :
   
-- **Utiliser une feuille de calcul pour ajouter des utilisateurs en bloc.** Voir [ajouter plusieurs utilisateurs en même temps](https://docs.microsoft.com/office365/enterprise/add-several-users-at-the-same-time).
-- **Automatiser l'ajouter de comptes et l'affectation de licences.** Voir [Create User Accounts with Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/create-user-accounts-with-office-365-powershell). Choisissez cette méthode si vous êtes déjà familiarisé avec l'utilisation des applets de commande Windows PowerShell.
-- **À l’aide d’ActiveDirectory ?** [Configurez la synchronisation d’annuaires pour Office 365](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization). Utilisez l’outil Azure AD Connect pour répliquer les comptes d’utilisateurs Active Directory (et autres objets Active Directory) dans Microsoft 365. La synchronisation ajoute uniquement les comptes d'utilisateurs. Vous devez attribuer des licences aux utilisateurs synchronisés avant qu’ils puissent utiliser la messagerie et d’autres applications Office.
+- **Utiliser une feuille de calcul pour ajouter des utilisateurs en bloc.** Voir [ajouter plusieurs utilisateurs en même temps](https://docs.microsoft.com/microsoft-365/enterprise/add-several-users-at-the-same-time).
+- **Automatiser l'ajouter de comptes et l'affectation de licences.** Voir [Create User Accounts with Microsoft 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/create-user-accounts-with-microsoft-365-powershell). Choisissez cette méthode si vous êtes déjà familiarisé avec l'utilisation des applets de commande Windows PowerShell.
+- **À l’aide d’ActiveDirectory ?** [Configurez la synchronisation d’annuaires pour Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization). Utilisez l’outil Azure AD Connect pour répliquer les comptes d’utilisateurs Active Directory (et autres objets Active Directory) dans Microsoft 365. La synchronisation ajoute uniquement les comptes d'utilisateurs. Vous devez attribuer des licences aux utilisateurs synchronisés avant qu’ils puissent utiliser la messagerie et d’autres applications Office.
 - **Migration à partir d’Exchange ?** Consultez la rubrique [méthodes de migration de plusieurs comptes de messagerie vers Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration). Lorsque vous migrez plusieurs boîtes aux lettres vers Microsoft 365 en utilisant soit un basculement, intermédiaire, soit une méthode Exchange hybride, vous ajoutez automatiquement des utilisateurs dans le cadre de la migration. La migration ajoute uniquement les comptes d'utilisateurs. Vous devez attribuer des licences aux utilisateurs avant qu’ils puissent utiliser la messagerie et d’autres applications Office. Si vous n’attribuez pas de licence à un utilisateur, sa boîte aux lettres est désactivée à l’issue d’une période de grâce de 30 jours. Découvrez comment [attribuer des licences à des utilisateurs](../manage/assign-licenses-to-users.md) dans le centre d’administration Microsoft 365.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
 Une fois que vous avez ajouté un utilisateur, vous recevez une notification par courrier électronique de Microsoft. Le courrier électronique contient l’ID utilisateur et le mot de passe de la personne afin qu’ils puissent se connecter à Microsoft 365. Nous vous conseillons d'utiliser le processus normal pour communiquer les nouveaux mots de passe. Partagez le [Guide de démarrage rapide](https://support.microsoft.com/office/b9700090-ce64-4046-ab92-ce8488a7bc0f) de l’employé avec vos nouveaux utilisateurs pour configurer des éléments, par exemple comment [Télécharger et installer des applications Office sur un PC ou un Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) , et comment [configurer des applications Office et le courrier électronique sur un appareil mobile](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f).
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Ajouter un nouvel employé à Microsoft 365](add-new-employee.md) (article) \
-[Ajouter plusieurs utilisateurs en même temps à Microsoft 365](https://docs.microsoft.com/office365/enterprise/add-several-users-at-the-same-time) (article) \
+[Ajouter plusieurs utilisateurs en même temps à Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/add-several-users-at-the-same-time) (article) \
 [Restaurer un utilisateur dans Microsoft 365](restore-user.md) (article) \
 [Attribuer des licences aux utilisateurs](../manage/assign-licenses-to-users.md) (article) \
 [Supprimer un utilisateur de votre organisation](delete-a-user.md) (article)

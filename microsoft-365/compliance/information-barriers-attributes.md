@@ -14,12 +14,12 @@ ms.collection:
 localization_priority: None
 description: Il s’agit d’un article de référence sur les attributs de compte d’utilisateur Azure Active Directory que vous utilisez pour définir des segments de barrière des informations.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 75a568b4d54432de0b72c379e83077c222acb687
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 6b6fb9cbbe5840888114ba99a604d16117ec795d
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035050"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307993"
 ---
 # <a name="attributes-for-information-barrier-policies"></a>Attributs pour les stratégies d’obstacle aux informations
 
@@ -28,7 +28,7 @@ Certains attributs d’Azure Active Directory peuvent être utilisés pour segme
 Cet article explique comment utiliser des attributs avec des barrières d’informations et fournit une liste des attributs qui peuvent être utilisés. Pour en savoir plus sur les barrières d’informations, consultez les ressources suivantes :
 - [Obstacles aux informations](information-barriers.md)
 - [Définir des stratégies pour les barrières d’informations dans Microsoft teams](information-barriers-policies.md)
-- [Modifier (ou supprimer) des stratégies de barrière des informations](information-barriers-edit-segments-policies.md)
+- [Modifier (ou supprimer) des stratégies de cloisonnement de l’information](information-barriers-edit-segments-policies.md)
 
 ## <a name="how-to-use-attributes-in-information-barrier-policies"></a>Comment utiliser les attributs dans les stratégies de barrière des informations
 
@@ -38,7 +38,7 @@ Les attributs mentionnés dans cet article peuvent être utilisés pour définir
 
 2. Assurez-vous que les valeurs des comptes d’utilisateur sont renseignées pour les attributs sélectionnés à l’étape 1. Affichez les détails du compte d’utilisateur et, si nécessaire, modifiez les comptes d’utilisateur pour inclure les valeurs d’attribut. 
 
-    - Pour modifier plusieurs comptes (ou utiliser PowerShell pour modifier un seul compte), voir [configure User Account Properties with Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell).
+    - Pour modifier plusieurs comptes (ou utiliser PowerShell pour modifier un seul compte), voir [configure User Account Properties with Office 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell).
 
     - Pour modifier un seul compte, voir [Ajouter ou mettre à jour les informations de profil d’un utilisateur à l’aide d’Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
 
@@ -61,7 +61,7 @@ Le tableau suivant répertorie les attributs que vous pouvez utiliser avec les b
 |---------|---------|
 |Processeur       | Processeur        |
 |Company     |Company         |
-|Service     |Service         |
+|Département     |Département         |
 |ExtensionAttribute1 |CustomAttribute1  |
 |ExtensionAttribute2 |CustomAttribute2  |
 |ExtensionAttribute3 |CustomAttribute3  |
@@ -98,7 +98,7 @@ Le tableau suivant répertorie les attributs que vous pouvez utiliser avec les b
 
 [Définir des stratégies pour les barrières d’informations dans Microsoft teams](information-barriers-policies.md)
 
-[Résolution des problèmes d’obstacles aux informations](information-barriers-troubleshooting.md)
+[Résolution des problèmes de cloisonnement de l’information](information-barriers-troubleshooting.md)
 
 [Obstacles aux informations](information-barriers.md)
 

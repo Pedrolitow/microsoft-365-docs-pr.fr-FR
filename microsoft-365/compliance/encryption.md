@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Avec Office 365, votre contenu est chiffré au repos et en transit avec le chiffrement, les protocoles et les technologies les plus puissants disponibles. Obtenez une vue d’ensemble du chiffrement dans Office 365.
-ms.openlocfilehash: 7a14cb1ab203ef1ee75962f4e55b4220c4ba06d9
-ms.sourcegitcommit: 234726a1795d984c4659da68f852d30a4dda5711
+ms.openlocfilehash: d3977902dfc1ee726fac696ae8b9cc0470e7dda8
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46794173"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47306433"
 ---
 # <a name="encryption"></a>Chiffrement
 
@@ -64,7 +64,7 @@ Pour en savoir plus, consultez les ressources suivantes :
   
 - [Qu’est-ce que Azure Rights Management?](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
 
-- [Activer la gestion des droits dans le centre d’administration](https://docs.microsoft.com/office365/enterprise/activate-rms-in-office-365)
+- [Activer la gestion des droits dans le centre d’administration](https://docs.microsoft.com/microsoft-365/enterprise/activate-rms-in-microsoft-365)
 
 - [Set up Information Rights Management (IRM) in SharePoint admin center](set-up-irm-in-sp-admin-center.md)
 
@@ -81,7 +81,7 @@ Pour en savoir plus, consultez les ressources suivantes :
 |Supprimer le chiffrement d’un document  <br/> |[Ajouter ou supprimer la protection dans votre document, classeur ou présentation](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) <br/> Choisissez une section **protection contre la suppression** , puis consultez **supprimer le chiffrement du mot de passe**.  |
 
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Planifier les fonctionnalités de protection des informations et de sécurité de Microsoft 365](plan-for-security-and-compliance.md)
 

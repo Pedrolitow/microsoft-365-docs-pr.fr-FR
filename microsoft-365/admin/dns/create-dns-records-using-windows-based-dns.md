@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur le serveur DNS Windows pour Microsoft.
-ms.openlocfilehash: 8f65a397552813f22d4bde82f7fcd51c478d82bd
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: f0c2b8c4aaaa1012e0f11e3778c7ca6b092c053f
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400243"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47306946"
 ---
 # <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>Créer des enregistrements DNS pour Microsoft à l’aide du DNS basé sur Windows
 
@@ -49,7 +49,7 @@ Ajoutez un enregistrement MX afin que les messages électroniques pour votre dom
 - À partir de la ligne MX de la section Exchange Online de la page Ajouter des enregistrements DNS de Microsoft, copiez la valeur figurant sous points à l’adresse. Vous utiliserez cette valeur dans l’enregistrement que vous créez dans cette tâche. 
 - Sur la page Gestionnaire DNS du domaine, accédez à **action**  >  **Mail Exchanger (MX)**. Pour trouver cette page pour le domaine, voir [Rechercher vos enregistrements DNS dans le DNS Windows](#find-your-dns-records-in-windows-based-dns).  
 - Dans la boîte de dialogue **nouvel enregistrement de ressource** , vérifiez que les champs sont définis sur les valeurs suivantes : 
-    - Nom de l’hôte:  
+    - Nom de l’hôte :  
     - @Address : collez la valeur de pointage vers l’adresse que vous venez de copier à partir de Microsoft ici.  
     - Préférences 
 - Sélectionnez **enregistrer les modifications**.
@@ -107,11 +107,11 @@ Ajoutez l'enregistrement CNAME Enterpriseenrollment MDM.
     - Adresse : enterpriseenrollment-s.manage.microsoft.com
 - Sélectionnez **OK**.
    
-## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajouter un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
+## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajoutez un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. Si vous avez déjà un enregistrement SPF pour votre domaine, il n’est pas nécessaire d’en créer un nouveau pour Microsoft. Ajoutez plutôt les valeurs Microsoft requises à l’enregistrement actuel afin de disposer d’un *seul* enregistrement SPF qui inclut les deux ensembles de valeurs. 
+> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. Si vous avez déjà un enregistrement SPF pour votre domaine, il n’est pas nécessaire d’en créer un nouveau pour Microsoft. Ajoutez plutôt les valeurs Microsoft requises à l’enregistrement actuel afin de disposer d’un  *seul*  enregistrement SPF qui inclut les deux ensembles de valeurs. 
   
 Ajoutez l'enregistrement TXT SPF pour votre domaine pour éviter le courrier indésirable.
   
@@ -201,7 +201,7 @@ Vérifiez votre domaine dans Microsoft.
 ## <a name="non-routable-email-address-used-as-a-upn-in-your-on-prem-active-directory"></a>Adresse de courrier non routable utilisée en tant qu'UPN dans votre annuaire Active Directory local
 <a name="BKMK_ADNote"> </a>
 
-Si vous envisagez de synchroniser votre annuaire Active Directory local avec Microsoft, vous devez vous assurer que le suffixe UPN (nom d’utilisateur principal) Active Directory est un suffixe de domaine valide et non pas un suffixe de domaine non pris en charge tel que @contoso. local. Si vous devez modifier votre suffixe UPN, consultez [la rubrique How to prepare a non routable domain for Directory Synchronization](https://docs.microsoft.com/office365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization).
+Si vous envisagez de synchroniser votre annuaire Active Directory local avec Microsoft, vous devez vous assurer que le suffixe UPN (nom d’utilisateur principal) Active Directory est un suffixe de domaine valide et non pas un suffixe de domaine non pris en charge tel que @contoso. local. Si vous devez modifier votre suffixe UPN, consultez [la rubrique How to prepare a non routable domain for Directory Synchronization](https://docs.microsoft.com/microsoft-365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization).
   
 > [!NOTE]
 >  L'application des enregistrements DNS modifiés prend généralement 15 minutes. Il peut toutefois arriver que la répercussion d'une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des problèmes avec le flux de messages ou d'autres problèmes suite à l'ajout des enregistrements DNS, voir [Résolution des problèmes suite à la modification de votre nom de domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md). 

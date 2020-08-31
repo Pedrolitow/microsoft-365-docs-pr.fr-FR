@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: Découvrez comment désaffecter des licences à partir de comptes d’utilisateurs.
 ms.date: 07/01/2020
-ms.openlocfilehash: 29dbdb89550d5bd9bd13071b184ffe1ca340f2a6
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.openlocfilehash: 4441fd253c4cf5304562900bf31869eb4e0f21ff
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45015934"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47306538"
 ---
 # <a name="unassign-licenses-from-users"></a>Annuler l'assignation des licences aux utilisateurs
 
@@ -45,7 +45,7 @@ Vous pouvez annuler l’affectation de licences aux utilisateurs sur la page **u
 ## <a name="before-you-begin"></a>Avant de commencer
 
 - Vous devez être un administrateur général, une licence et un administrateur d’utilisateur pour annuler l’affectation des licences. Si vous souhaitez en savoir plus, consultez l’article [À propos des rôles d’administrateur Microsoft 365](../add-users/about-admin-roles.md).
-- Vous pouvez [supprimer des licences de comptes d'utilisateurs à l'aide d'Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/remove-licenses-from-user-accounts-with-office-365-powershell).
+- Vous pouvez [supprimer des licences de comptes d'utilisateurs à l'aide d'Office 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/remove-licenses-from-user-accounts-with-microsoft-365-powershell).
 - Vous pouvez également [supprimer des comptes d’utilisateurs](../add-users/delete-a-user.md) auxquels une licence a été attribuée afin de mettre leur licence à la disposition d’autres utilisateurs. Lorsque vous supprimez un compte d’utilisateur, sa licence est immédiatement disponible pour l’attribuer à une autre personne.
 
 ::: moniker range="o365-worldwide"
@@ -54,7 +54,7 @@ Vous pouvez annuler l’affectation de licences aux utilisateurs sur la page **u
 
 Lorsque vous utilisez la page **licences** pour annuler l’affectation des licences, vous désaffectez les licences d’un produit spécifique pour un maximum de 20 utilisateurs.
 
-1. Dans le centre d’administration, accédez à **Billing** la > page <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">licences</a> de facturation.
+1. Dans le Centre d’administration, choisissez la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licences</a>.
 2. Sélectionnez le produit pour lequel vous souhaitez annuler l’affectation des licences.
 3. Sélectionnez les utilisateurs pour lesquels vous souhaitez annuler l’affectation des licences.
 4. Sélectionnez **Annuler l’affectation des licences**.
@@ -149,7 +149,7 @@ Lorsque vous utilisez la page **utilisateurs actifs** pour annuler l’affectati
 
 Si vous ne souhaitez pas [réaffecter les licences inutilisées à d’autres utilisateurs](../../managed-desktop/get-started/assign-licenses.md), envisagez [de supprimer les licences de votre abonnement](../../commerce/licenses/buy-licenses.md) afin de ne pas payer plus de licences que vous n’en avez besoin.
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Supprimer des licences de votre abonnement](../../commerce/licenses/remove-licenses-from-subscription.md) (article) \
 [Attribuer des licences aux utilisateurs](assign-licenses-to-users.md) (article) \
