@@ -1,5 +1,5 @@
 ---
-title: Gérer les paramètres des scripts Office
+title: Gérer les paramètres de Office Scripts
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -16,14 +16,14 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Découvrez comment gérer les paramètres des scripts Office pour les utilisateurs de votre organisation.
-ms.openlocfilehash: 12a80f277f6d17a8e7f5228f6948e70b7a93be11
-ms.sourcegitcommit: 97ef8f846939c3d31bb0638edf07bb89463ace0b
+ms.openlocfilehash: 44e2a5c0e0577db344fdbb00a110674df3e71bdc
+ms.sourcegitcommit: 04f196528a7a91b404478553433af3fa94d7eee7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "47300831"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47317492"
 ---
-# <a name="manage-office-scripts-settings"></a>Gérer les paramètres des scripts Office
+# <a name="manage-office-scripts-settings"></a>Gérer les paramètres de Office Scripts
 
 Les scripts Office permettent aux utilisateurs d’automatiser des tâches en enregistrant, modifiant et exécutant des scripts dans Excel sur le Web. Les scripts Office fonctionnent avec Power automate, et les utilisateurs exécutent des scripts sur des classeurs à l’aide du connecteur Excel Online (Business). Les administrateurs 365 de Microsoft peuvent gérer les paramètres des scripts Office à partir du centre d’administration Microsoft 365.
 
@@ -35,7 +35,7 @@ Les scripts Office permettent aux utilisateurs d’automatiser des tâches en en
 
     - Microsoft 365 Business Standard
     - Applications Microsoft 365 pour les entreprises
-    - Applications Microsoft 365 pour les grandes entreprises
+    - Applications Microsoft 365 pour les entreprises
     - Office 365 E3
     - Office 365 E5
     - Office 365 A3
@@ -80,7 +80,7 @@ Les scripts Office permettent aux utilisateurs d’automatiser des tâches en en
 
 7. Sélectionnez **Enregistrer**.
 
-    Les modifications apportées aux paramètres de script Office prennent effet jusqu’à 48 heures.
+    L’application des modifications apportées aux paramètres des scripts Office peut prendre jusqu’à 48 heures.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

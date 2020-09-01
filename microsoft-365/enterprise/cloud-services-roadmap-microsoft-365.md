@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: La feuille de route pour configurer vos services Cloud pour Microsoft 365.
-ms.openlocfilehash: 2b6b69f25888305232ba93d9d738319fe5137019
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 4e9630ad84b5e442f0c8fd6ab95ca9d0c48c780a
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690035"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315764"
 ---
 # <a name="cloud-services-roadmap-for-microsoft-365"></a>Feuille de route des services Cloud pour Microsoft 365
 
@@ -28,11 +28,11 @@ Si vous disposez de déploiements basés sur un serveur pour Exchange, SharePoin
 
 ## <a name="deploy"></a>Déployer
 
-Dans la phase de déploiement de vos services Cloud :
+Pour déployer vos services Cloud :
 
 - [Préparer vos services](configure-services-and-applications.md)
 - [Migrer vos données locales vers Microsoft 365](migrate-data-to-office-365.md)
-- Déployer vos services Cloud
+- Configurer vos services Cloud pour vos utilisateurs
   - [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online)
   - [SharePoint Online](https://docs.microsoft.com/sharepoint/sharepoint-online)
   - [Skype Entreprise](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online)
@@ -42,7 +42,7 @@ Dans la phase de déploiement de vos services Cloud :
 
 ## <a name="manage"></a>Gestion
 
-Dans la phase de gestion de vos services Cloud : 
+Pour gérer vos services Cloud : 
 
 - [Vérifier l’état du service](view-service-health.md)
 - [Comprendre vos options de support](https://support.office.com/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)

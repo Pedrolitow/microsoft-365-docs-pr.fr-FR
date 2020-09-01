@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Ajoutez votre domaine à Microsoft 365 dans le centre d’administration Microsoft 365 en ajoutant un enregistrement DNS au niveau de votre hôte DNS. L’Assistant installation vous guide tout au long du processus.
-ms.openlocfilehash: 0adf8b4dcd5d7bd31038b74a574f449f32bfb037
-ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
+ms.openlocfilehash: 3da99644f339eac2db6f1904e4eb50a7f584bc80
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46814431"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315716"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Ajouter un domaine à Microsoft 365
 
@@ -83,11 +83,13 @@ ms.locfileid: "46814431"
     
 5. Choisissez la manière dont vous souhaitez vérifier que vous êtes propriétaire du domaine.
     
-    1. Si votre domaine est inscrit sur GoDaddy ou 1 &amp; 1, sélectionnez **connexion**  >  **suivante** et Microsoft [configure automatiquement vos enregistrements](../get-help-with-domains/domain-connect.md).
+    1. Si votre bureau d’enregistrement de domaines utilise la [connexion au domaine](#domain-connect-registrars-integrating-with-microsoft-365), sélectionnez se connecter **à**  >  ce**prochain** et Microsoft [configurera automatiquement vos enregistrements](../get-help-with-domains/domain-connect.md).
     
     2. Vous pouvez demander à ce qu'un courrier incluant un code de vérification soit envoyé au contact enregistré pour le domaine. Si vous ne reconnaissez pas ou n’avez pas accès au courrier électronique, vous pouvez utiliser la troisième option.
     
     3. Vous pouvez utiliser un enregistrement TXT pour vérifier votre domaine. Sélectionnez-le et cliquez sur **suivant** pour obtenir des instructions sur la façon d’ajouter cet enregistrement DNS au site Web de votre registraire. La vérification peut prendre jusqu’à 30 minutes après l’ajout de l’enregistrement. 
+
+    4. Vous pouvez ajouter un fichier texte sur le site Web de votre domaine. Sélectionnez et téléchargez le fichier. txt à partir de l’Assistant Installation, puis téléchargez le fichier dans le dossier de niveau supérieur de votre site Web. Le chemin d’accès au fichier doit ressembler à ce qui suit : `http://mydomain.com/ms39978200.txt` . Nous vous confirmons que vous êtes propriétaire du domaine en trouvant le fichier sur votre site Web.
     
 6. Choisissez comment vous souhaitez appliquer les modifications DNS requises pour Office pour utiliser votre domaine.
     

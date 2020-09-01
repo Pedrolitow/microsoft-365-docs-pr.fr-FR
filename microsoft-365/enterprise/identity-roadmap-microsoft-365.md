@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Feuille de route pour l’identité de Microsoft 365.
-ms.openlocfilehash: 206d8598bab294e6ecb9502599e5530dd4942a59
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 2eae98d891672e9fc9adb68e1fee2426fe4934dd
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690229"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315798"
 ---
 # <a name="identity-roadmap-for-microsoft-365"></a>Feuille de route des identités pour Microsoft 365
 
@@ -40,16 +40,16 @@ Cette affiche de deux pages est un moyen rapide d’obtenir des concepts d’ide
 
 Vous pouvez également [télécharger cette affiche](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf) et l’imprimer au format lettre, légal ou tabloïd (11 x 17).
 
-## <a name="plan"></a>Offre
+## <a name="plan"></a>Prévision
 
-Lors de la phase de planification de votre implémentation d’identité :
+Pour planifier l’implémentation de votre identité :
 
 - [Comprendre les différents modèles d’identité](about-microsoft-365-identity.md)
 - [Planifier l’identité hybride et la synchronisation d’annuaires](plan-for-directory-synchronization.md)
 
 ## <a name="deploy"></a>Déployer
 
-Dans la phase de déploiement de votre implémentation d’identité :
+Pour déployer votre implémentation d’identité :
 
 - [Protéger vos comptes Administrateur général](protect-your-global-administrator-accounts.md)
 - [Configurer et utiliser des identités de Cloud uniquement](cloud-only-identities.md)
@@ -59,14 +59,14 @@ Dans la phase de déploiement de votre implémentation d’identité :
 
 ### <a name="identity-and-device-access-recommendations"></a>Recommandations en matière d’identité et d’accès aux appareils
 
-Microsoft fournit un ensemble de recommandations en matière d’[identité et d’accès aux appareils](microsoft-365-policies-configurations.md) afin de garantir un personnel sécurisé et productif. Pour l’identité, utilisez les recommandations et les paramètres des articles suivants, ainsi que les étapes décrites dans cette phase :
+Microsoft fournit un ensemble de recommandations sur l’[accès aux appareils et à l’identité](microsoft-365-policies-configurations.md) pour garantir un personnel conforme et productif. Pour l’identité, utilisez les recommandations et les paramètres présentés dans les articles suivants :
 
 - [Conditions préalables](identity-access-prerequisites.md)
 - [Stratégies communes pour les identités et l’accès aux appareils](identity-access-policies.md)
 
 ## <a name="manage"></a>Gestion
 
-Dans la phase de gestion de votre implémentation d’identité :
+Pour gérer l’implémentation de votre identité :
 
 - [Attribuer des licences et gérer les comptes d’utilisateurs](assign-licenses-to-user-accounts.md)
 - [Surveiller la synchronisation d’annuaires](view-directory-synchronization-status.md)
@@ -83,9 +83,6 @@ Découvrez comment les experts informatiques de [Microsoft gèrent les identité
 
 Découvrez comment Contoso Corporation, une entreprise multinationale fictive mais représentative, [a déployé une infrastructure d’identité hybride](contoso-identity.md) pour les services cloud Microsoft 365.
 
-![Société Contoso](../media/contoso-overview/contoso-icon.png)
-
 ## <a name="next-step"></a>Étape suivante
 
 Commencez votre planification de l’identité avec des [modèles d’identité](about-microsoft-365-identity.md).
-

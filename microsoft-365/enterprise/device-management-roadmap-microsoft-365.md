@@ -15,12 +15,12 @@ ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
 description: La feuille de route pour configurer la gestion des appareils pour Microsoft 365.
-ms.openlocfilehash: 1c5a06c75ede11697e2ecf17c47eb035e78dcd27
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 1a1bdb449aa1d1ba12cf1de422b3e279df6c1376
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46689848"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315740"
 ---
 # <a name="device-management-roadmap-for-microsoft-365"></a>Feuille de route de gestion des appareils pour Microsoft 365
 
@@ -47,17 +47,11 @@ Démarrez [ici](https://support.microsoft.com/office/set-up-basic-mobility-and-s
  
 ## <a name="identity-and-device-access-recommendations"></a>Recommandations en matière d’identité et d’accès aux appareils
 
-Microsoft fournit un ensemble de recommandations sur l’[accès aux appareils et à l’identité](microsoft-365-policies-configurations.md) pour garantir un personnel conforme et productif. Pour l’accès aux appareils, utilisez les recommandations et les paramètres présentés dans les articles suivants, ainsi que les étapes de cette phase :
+Microsoft fournit un ensemble de recommandations sur l’[accès aux appareils et à l’identité](microsoft-365-policies-configurations.md) pour garantir un personnel conforme et productif. Pour l’accès aux appareils, utilisez les recommandations et les paramètres présentés dans les articles suivants :
 
 - [Conditions préalables](identity-access-prerequisites.md)
 - [Stratégies communes pour les identités et l’accès aux appareils](identity-access-policies.md)
 
-## <a name="how-microsoft-does-device-management-for-microsoft-365"></a>Comment Microsoft effectue la gestion des appareils pour Microsoft 365
-
-Découvrez comment les experts informatiques de Microsoft [gèrent les appareils avec EMS](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR8).
-
 ## <a name="how-contoso-did-device-management-for-microsoft-365"></a>Comment Contoso a fait la gestion des appareils pour Microsoft 365
 
 Découvrez comment Contoso Corporation, une entreprise multinationale fictive mais représentative, a [déployé son infrastructure de gestion des appareils mobiles](contoso-mdm.md) avec les services Cloud de Microsoft 365.
-
-![Société Contoso](../media/contoso-overview/contoso-icon.png)

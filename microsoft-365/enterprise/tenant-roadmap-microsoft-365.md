@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: La feuille de route pour configurer vos clients pour Microsoft 365.
-ms.openlocfilehash: db7054d1f6afc7e4835507dc6415e0b240918c1f
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 540d1bc53ac06b85d22a8a60a62e51761e10339c
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690171"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315752"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>Feuille de route de client pour Microsoft 365
 
@@ -28,9 +28,9 @@ Lorsque vous créez un client Microsoft 365, affectez-le à un emplacement géog
 
 Une configuration de client bien planifiée et exécutée est essentielle pour la préparer aux services de base de la mise en réseau et de l’identité.
 
-## <a name="plan"></a>Offre
+## <a name="plan"></a>Prévision
 
-Lors de la phase de planification de votre implémentation de client :
+Pour planifier l’implémentation de votre client, procédez comme suit :
 
 - [Comprendre les abonnements, les licences et les clients Azure Active Directory (Azure AD)](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
 - [Comprendre comment utiliser des certificats SSL tiers](plan-for-third-party-ssl-certificates.md)
@@ -44,7 +44,7 @@ Lors de la phase de planification de votre implémentation de client :
 
 ## <a name="deploy"></a>Déployer
 
-Dans la phase de déploiement de votre implémentation de client, [Ajoutez les domaines DNS](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) de votre organisation.
+Pour déployer votre client, [Ajoutez les domaines DNS](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) de votre organisation.
 
 ## <a name="tenants-with-multiple-geographic-locations"></a>Clients disposant de plusieurs emplacements géographiques
 
@@ -52,7 +52,7 @@ Avec Microsoft 365 Multi-Geo, votre organisation peut étendre sa présence Micr
 
 [Commencez à comprendre](microsoft-365-multi-geo.md) , planifier, configurer et administrer avec Microsoft 365 multi-géo.
 
-## <a name="moving-a-tenants-geographic-locations"></a>Déplacements des emplacements géographiques d’un client
+## <a name="move-a-tenants-geographic-locations"></a>Déplacer les emplacements géographiques d’un client
 
 Microsoft continue d’ouvrir les nouveaux emplacements géographiques des centres de régions centres (Centre de ressources) pour les services Microsoft 365. Ces nouveaux centres de régions centres ajoutent de la capacité et des ressources de calcul afin de prendre en charge la demande des clients et la croissance de l’utilisation. En outre, les nouvelles régions de centre de données permettent d'héberger des données dans la région pour les données client essentielles.
 
