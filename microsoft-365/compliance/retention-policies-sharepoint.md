@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment la rétention fonctionne pour SharePoint et OneDrive.
-ms.openlocfilehash: f19f452a01c093d08dbeed38a34756dcaf7a4e95
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 3c1b2564b0ba9d96d22ab9d3b78da500b54363e2
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127401"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315787"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Découvrir la rétention pour SharePoint et OneDrive
 
@@ -71,7 +71,7 @@ Lorsque les paramètres de la stratégie de rétention sont définis sur conserv
 
 ## <a name="how-retention-works-with-document-versions-in-a-site-collection"></a>Fonctionnement de la rétention avec les versions de document d’une collection de sites
 
-Le contrôle de version est une fonctionnalité présente dans toutes les bibliothèques de documents dans SharePoint et OneDrive. Par défaut, le contrôle de version conserve au moins les 500 versions principales, même si vous pouvez augmenter cette limite. Pour plus d'informations, voir [Activer et configurer le contrôle de version pour une liste ou une bibliothèque](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37).
+Le contrôle de version est une fonctionnalité présente dans toutes les bibliothèques de documents dans SharePoint et OneDrive. Par défaut, le contrôle de version conserve au moins les 500 versions principales, même si vous pouvez augmenter cette limite. Pour plus d’informations, consultez [Activer et configurer le contrôle de version pour une liste ou une bibliothèque](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37) et [Fonctionnement du contrôle de version dans les listes et les bibliothèques](https://support.microsoft.com/office/how-versioning-works-in-lists-and-libraries-0f6cd105-974f-44a4-aadb-43ac5bdfd247).
   
 Les paramètres uniquement pour la rétention conservent toutes les versions d’un document dans une collection de sites SharePoint ou un compte OneDrive. Lorsqu’un document soumis à des paramètres de rétention ou de conservation uniquement est modifié pour la première fois, une version du document d’origine est copiée dans la bibliothèque de conservation et de préservation des documents. Lorsqu’un document soumis à des paramètres de rétention ou de conservation uniquement est supprimé, toutes les versions sont copiées dans la bibliothèque de conservation et de préservation des documents si le contrôle de version est activé. Chaque version d’un document dans la bibliothèque de conservation et de préservation des documents est présente sous la forme d’un élément distinct avec sa propre période de rétention :
   
@@ -81,6 +81,10 @@ Les paramètres uniquement pour la rétention conservent toutes les versions d�
 
 > [!NOTE]
 > Les versions conservées des documents SharePoint et OneDrive ne sont pas consultables par les outils eDiscovery.
+
+Pour les éléments soumis à une stratégie de rétention (ou une conservation légale), les limites de contrôle de version de la bibliothèque de documents sont ignorées jusqu’à ce que la période de rétention du document soit atteinte. Dans ce scénario, les versions antérieures ne sont pas purgées automatiquement et les utilisateurs ne peuvent pas supprimer les versions.
+
+Ce n’est pas le cas des étiquettes de rétention lorsqu’une stratégie de rétention n’est pas appliquée au site. Au lieu de cela, les limites de contrôle de version sont honorées de sorte que les versions antérieures soient automatiquement supprimées afin de pouvoir accueillir les nouvelles versions, mais les utilisateurs ne peuvent pas supprimer les versions.
 
 ## <a name="when-a-user-leaves-the-organization"></a>Lorsqu’un utilisateur quitte l’organisation
 

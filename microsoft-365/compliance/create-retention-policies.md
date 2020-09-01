@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utiliser une stratégie de rétention vous permet de décider de façon proactive de conserver du contenu, de le supprimer (ou les deux), de conserver du contenu, puis de le supprimer ; d’appliquer une stratégie unique à l’ensemble de l’organisation ou à des emplacements ou utilisateurs spécifiques. Cela vous permet également d’appliquer une stratégie à tout le contenu ou au contenu répondant à certaines conditions.
-ms.openlocfilehash: 6a22c1020c7e6d6c1fce4f80ce40da353b095e64
-ms.sourcegitcommit: c76c025fe75cd9c06eccbf9c7fc887b09da36659
+ms.openlocfilehash: 5b0b81d18afad9f0f9cba6ec24e157ad8f96e4ef
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46903859"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315845"
 ---
 # <a name="create-and-configure-retention-policies"></a>Créer et configurer des stratégies de rétention
 
@@ -210,9 +210,7 @@ Une stratégie de rétention peut s’appliquer à tout le contenu des emplaceme
 ### <a name="identify-content-that-contains-specific-keywords"></a>Identifier le contenu qui contient des mots clés spécifiques
 
 Vous pouvez appliquer une stratégie de rétention uniquement au contenu qui répond à des conditions spécifiques et mener des actions de rétention uniquement au niveau de ce contenu. Les conditions disponibles prennent en charge l’application d’une stratégie de rétention à du contenu comprenant des mots ou phrases spécifiques. Vous pouvez affiner votre requête à l’aide des opérateurs de recherche tels que ET, OU et SAUF. Pour plus d’informations sur ces opérateurs, consultez [Requêtes par mots clés et conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md).
-  
-La prise en charge de l’ajout de propriétés utilisables dans une requête (par exemple, **subject:**) sera bientôt disponible.
-  
+
 La rétention basée sur une requête utilise l’index de recherche pour identifier le contenu.
   
 ![Éditeur de requête](../media/2c31b412-922e-4a88-89e4-5175c23d9b5f.png)
