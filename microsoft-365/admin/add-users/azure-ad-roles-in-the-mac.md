@@ -17,12 +17,12 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 description: Gérer ces rôles d’administrateur Azure dans le Centre d’administration Microsoft 365
-ms.openlocfilehash: afb025feb6e867b16be7a844a5f48ef42759b543
-ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
+ms.openlocfilehash: 2295a003fa73cb1805fad3231ff62b37930d0306
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46898027"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289092"
 ---
 # <a name="azure-active-directory-roles-in-the-microsoft-365-admin-center"></a>Rôles Azure Active Directory dans le Centre d’administration Microsoft 365
 
@@ -62,6 +62,8 @@ Voici la liste de tous les rôles d'administrateur disponibles dans le Centre d�
 |Administrateur de groupes   |Crée des groupes et gère tous les paramètres de groupes dans les centres d’administration.|
 |Inviteur d'invités     |    Gère les invitations des utilisateurs invités B2B dans Azure Active Directory.     |
 |Administrateur du support technique     | Réinitialise les mots de passe et effectue une nouvelle authentification pour tous les non administrateurs et certains rôles d’administrateur, gère les demandes de service et surveille l’intégrité du service.      |
+|Administrateur Insights     | Gère tous les aspects de l’application Insights de Microsoft 365, lit les informations Azure Active Directory, peut surveiller l’état du service et créer et gérer les demandes de service.      |
+|Administrateur d’entreprise Insights     | Consultez des rapports et des informations dans l’application Insights de Microsoft 365.      |
 |Administrateur Intune     | Accès total à Intune, gère les utilisateurs et les appareils pour associer des stratégies, crée et gère des groupes.      |
 |Administrateur Kaizala     |    Accès total à la gestion de toutes les fonctionnalités et données de Kaizala, gère les demandes de service.     |
 |Administrateur de licences     |     Attribue et retire les licences d’utilisateurs et modifie leur lieu d’utilisation.    |

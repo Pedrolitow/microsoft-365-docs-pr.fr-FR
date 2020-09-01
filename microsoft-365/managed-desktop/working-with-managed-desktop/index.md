@@ -9,21 +9,21 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 8f2132688ce5e8888e4f63444315204fb3405df3
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 55f8040f2533e60d1ff696845baa195983667859
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529706"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289434"
 ---
 # <a name="working-with-microsoft-managed-desktop"></a>Utilisation du Bureau géré Microsoft
 
-Cette section comprend des informations sur votre quotidien avec le service, comme par exemple la manière dont vos administrateurs informatiques peuvent obtenir de l'aide si nécessaire, la façon dont vos utilisateurs finaux obtiennent de l'aide, la gestion de vos applications une fois déployées, et la manière de travailler avec les paramètres personnalisables des appareils.
+Cette section comprend des informations sur votre quotidien avec le service, comme par exemple la manière dont vos administrateurs informatiques peuvent obtenir de l'aide si nécessaire, la façon dont vos utilisateurs obtiennent de l'aide, la gestion de vos applications une fois déployées, et la manière de travailler les paramètres personnalisables sur les appareils.
 
 
 - [Utiliser les informations](insights.md)
 - [Aide administrateur pour le Bureau géré Microsoft](admin-support.md)
-- [Obtenir de l’aide pour les utilisateurs finaux](end-user-support.md)
+- [Obtenir de l’aide pour les utilisateurs](end-user-support.md)
 - [Gérer les applications métier dans le bureau géré Microsoft](manage-apps.md)
 - [Contrôle des applications](../service-description/app-control.md)
 - [Paramètres configurables : Bureau géré Microsoft](config-setting-overview.md)
