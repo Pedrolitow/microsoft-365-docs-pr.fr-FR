@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de critère de diffusion, vous pouvez affecter automatiquement une étiquette à un document ou message électronique ou vous pouvez inviter les utilisateurs pour sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: 112857d9778cf850613c808474051eb25df74296
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: 5b466084701d2424aeaf9e7ee644d33861fdd5f3
+ms.sourcegitcommit: 87449335d9a1124ee82fa2e95e4745155a95a62f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656825"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47310885"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette sensibilité au contenu
 
@@ -255,7 +255,7 @@ Enfin, vous pouvez utiliser le mode simulation pour fournir une approximation du
     
     ![Choisir la page emplacements auto-labelingwizard ](../media/locations-auto-labeling-wizard.png)
     
-    Vous devez spécifier des comptes individuels pour OneDrive. L’URL de l’utilisateur OneDrive est au format suivant : `https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
+    Vous devez spécifier des sites SharePoint et des comptes OneDrive individuels. Pour OneDrive, l’URL du compte d’un utilisateur OneDrive est au format suivant : `https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
     
     Par exemple, pour un utilisateur du client contoso dont le nom d’utilisateur est « rsimone » : `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`
     
@@ -312,4 +312,44 @@ Vous pouvez également afficher les résultats de votre stratégie d’étiqueta
 
 > [!TIP]
 > Vous pouvez également utiliser l’Explorateur de contenu pour identifier les emplacements qui ont des documents contenant des informations sensibles, mais qui ne sont pas étiquetés. À l’aide de ces informations, songez à ajouter ces emplacements à votre stratégie d’étiquetage automatique, et incluez les types d’informations sensibles identifiés comme règles.
+
+### <a name="use-powershell-for-auto-labeling-policies"></a>Utiliser PowerShell pour les stratégies d’étiquetage automatique
+
+Vous pouvez désormais utiliser l’[Interface PowerShell du Centre de sécurité et conformité](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps) pour créer et configurer les stratégies d’étiquetage automatique. Cela signifie que vous pouvez maintenant créer des scripts pour une prise en charge complète de la création et de la maintenance de vos stratégies d’étiquetage automatique, ce qui permet également de spécifier plus efficacement plusieurs URL pour les emplacements OneDrive et SharePoint.
+
+Avant d’exécuter les commandes dans PowerShell, vous devez tout d’abord vous [connecter au Centre de sécurité et conformité PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+
+Pour créer une stratégie d’étiquetage automatique : 
+
+```powershell
+New-AutoSensitivityLabelPolicy -Name <AutoLabelingPolicyName> -SharePointLocation "<SharePointSiteLocation>" -ApplySensitivityLabel <Label> -Mode TestWithoutNotifications
+```
+Cette commande crée une stratégie d’étiquetage automatique pour un site SharePoint que vous spécifiez. Pour un emplacement OneDrive, utilisez plutôt le paramètre *OneDriveLocation*. 
+
+Pour ajouter des sites à une stratégie d’étiquetage automatique existante :
+
+```powershell
+$spoLocations = @("<SharePointSiteLocation1>","<SharePointSiteLocation2>")
+Set-AutoSensitivityLabelPolicy -Identity <AutoLabelingPolicyName> -AddSharePointLocation $spoLocations -ApplySensitivityLabel <Label> -Mode TestWithoutNotifications
+```
+
+Cette commande spécifie les URL SharePoint supplémentaires dans une variable qui est ensuite ajoutée à une stratégie d’étiquetage automatique existante. Pour ajouter à la place des emplacements OneDrive, utilisez le paramètre *AddOneDriveLocation* avec une variable différente, comme *$OneDriveLocations*.
+
+Pour créer une règle de stratégie d’étiquetage automatique :
+
+```powershell
+New-AutoSensitivityLabelRule -Policy <AutoLabelingPolicyName> -Name <AutoLabelingRuleName> -ContentContainsSensitiveInformation @{"name"= "a44669fe-0d48-453d-a9b1-2cc83f2cba77"; "mincount" = "2"} -Workload SharePoint
+```
+
+Pour une stratégie d’étiquetage automatique existante, cette commande crée une règle de stratégie afin de détecter les informations sensibles de type **Numéro de sécurité sociale américain (SSN)**, dont l’ID d’entité est a44669fe-0d48-453d-a9b1-2cc83f2cba77. Pour trouver les ID d’entité d’autres types d’informations sensibles, voir [Définitions des entités de types d’informations sensibles](sensitive-information-type-entity-definitions.md).
+
+Pour plus d’informations sur les applets de commande PowerShell qui prennent en charge les stratégies d’étiquetage automatique, leurs paramètres disponibles et quelques exemples, voir l’aide des applet de commande suivantes :
+
+- [Get-AutoSensitivityLabelPolicy](https://docs.microsoft.com/powershell/module/exchange/get-autosensitivitylabelpolicy)
+- [New-AutoSensitivityLabelPolicy](https://docs.microsoft.com/powershell/module/exchange/new-autosensitivitylabelpolicy?view=exchange-ps)
+- [New-AutoSensitivityLabelRule](https://docs.microsoft.com/powershell/module/exchange/new-autosensitivitylabelrule?view=exchange-ps)
+- [Remove-AutoSensitivityLabelPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-autosensitivitylabelpolicy?view=exchange-ps)
+- [Remove-AutoSensitivityLabelRule](https://docs.microsoft.com/powershell/module/exchange/remove-autosensitivitylabelrule?view=exchange-ps)
+- [Set-AutoSensitivityLabelPolicy](https://docs.microsoft.com/powershell/module/exchange/set-autosensitivitylabelpolicy?view=exchange-ps)
+- [Set-AutoSensitivityLabelRule](https://docs.microsoft.com/powershell/module/exchange/set-autosensitivitylabelrule?view=exchange-ps)
 

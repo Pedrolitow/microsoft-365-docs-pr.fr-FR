@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: Utilisez ce guide de déploiement étape par étape pour créer et configurer un site d’équipe SharePoint Online isolé dans Microsoft Office 365.
-ms.openlocfilehash: 05fdbcfff792805708bfe0b8027e955d54a1ec6f
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: 3465ec28db8c2045bad6e6c48112861818629524
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44755223"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308414"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>Déploiement d’un site d’équipe SharePoint Online isolé
 
@@ -109,7 +109,7 @@ Si vous gérez des comptes d’utilisateur et des groupes via Office 365, vous p
   
 Pour le centre d’administration Microsoft 365, connectez-vous à l’aide d’un compte d’utilisateur auquel a été attribué le rôle administrateur de compte d’utilisateur ou administrateur de société et utilisez des groupes pour ajouter les comptes d’utilisateur et les groupes d’utilisateurs appropriés aux groupes d’accès appropriés.
   
-Pour PowerShell, [Connectez-vous d’abord avec le module Azure Active Directory PowerShell pour Graph](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).
+Pour PowerShell, [Connectez-vous d’abord avec le module Azure Active Directory PowerShell pour Graph](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell?view=o365-worldwide#connect-with-the-azure-active-directory-powershell-for-graph-module).
   
 Ensuite, utilisez le bloc de commandes suivant pour ajouter un compte d’utilisateur individuel à un groupe d’accès :
   
@@ -175,7 +175,7 @@ Commencez par créer le site d’équipe SharePoint Online en suivant ces étap
     
 7. Dans **administrateur principal**, tapez le compte avec lequel vous vous connectez.
  
-8. Cliquez sur**Terminer**.
+8. Cliquez sur **Terminer**.
     
 Ensuite, dans le nouveau site d’équipe SharePoint Online, configurez les autorisations.
   
@@ -193,7 +193,7 @@ Ensuite, dans le nouveau site d’équipe SharePoint Online, configurez les aut
     
 7. Dans l’onglet **autorisations** de votre navigateur, cliquez sur ** \<site name> membres** de la liste.
     
-8. Dans **Personnes et groupes**, cliquez sur **Nouveau**.
+8. Dans **Utilisateurs et groupes**, cliquez sur **Nouveau**.
     
 9. Dans la boîte de dialogue **Partager**, saisissez le nom du groupe d’accès Membres du site, sélectionnez-le, puis cliquez sur **Partager**.
     
@@ -201,7 +201,7 @@ Ensuite, dans le nouveau site d’équipe SharePoint Online, configurez les aut
     
 11. Cliquez sur ** \<site name> propriétaires** dans la liste.
     
-12. Dans **Personnes et groupes**, cliquez sur **Nouveau**.
+12. Dans **Utilisateurs et groupes**, cliquez sur **Nouveau**.
     
 13. Dans la boîte de dialogue **Partager**, saisissez le nom du groupe d’accès Administrateurs du site, sélectionnez-le, puis cliquez sur **Partager**.
     

@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: 'Résumé : Créez des abonnements d’essai Office 365 et Enterprise Mobility + Security (EMS) avec des utilisateurs et des groupes pour un environnement de développement/test de campagne électorale.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2d8c315364e9a00a49ad825ef2652ff4e8a7476b
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: 7282659399d2541b50c43dffc9fc8690baecd803
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44755271"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308438"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>Configuration de groupes et d’utilisateurs pour un environnement de développement/test pour une campagne électorale
 
@@ -133,7 +133,7 @@ Ensuite, vous configurez les groupes afin que des licences Office 365 E5 et EMS 
 
 Dans cette phase, vous ajoutez les comptes d’utilisateurs de l’exemple pour votre campagne politique.
 
-Pour commencer, [connectez -vous au module PowerShell Azure Active Directory pour le module Graphique](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).
+Pour commencer, [connectez -vous au module PowerShell Azure Active Directory pour le module Graphique](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell).
 
 Ensuite, renseignez le nom de votre organisation, votre emplacement et un mot de passe commun, puis exécutez les commandes suivantes à partir de l’invite de commandes PowerShell ou de l’environnement de script intégré (ISE) :
 
@@ -206,6 +206,6 @@ Créez les quatre différents types de sites d’équipe SharePoint Online dans
 
 [Création de sites d’équipe dans un environnement de développement/test dans le cadre d’une campagne électorale](create-team-sites-in-a-political-campaign-dev-test-environment.md)
 
-[Guides de laboratoire de test d’adoption cloud](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)
+[Guides de laboratoire de test d’adoption cloud](https://docs.microsoft.com/microsoft-365/enterprise/cloud-adoption-test-lab-guides-tlgs)
 
 [Adoption du cloud et solutions hybrides](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)

@@ -8,8 +8,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: tracyp
+author: msfttracyp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -17,12 +17,13 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/27/2020
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8eda787a92228fc9705bd329f0df7203b9a1175c
-ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
+ms.reviewer: vippand
+ms.openlocfilehash: 2e6638480ec3a687b1bed9f2a176b6bf21278ef2
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "47294774"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308378"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Nouveautés d’Office 365 - Protection avancée contre les menaces
 
@@ -39,7 +40,7 @@ Cet article répertorie les nouvelles fonctionnalités de la dernière version d
 
 - [Vérifier vos stratégies à l’aide de Configuration Analyzer](configuration-analyzer-for-security-policies.md)
 - [Remplacer manuellement les verdicts de filtre à l’aide de la liste d’autorisation/de blocage de client](tenant-allow-block-list.md)
-- [Fonctionnalités étendues dans l’Explorateur de menaces, y compris les utilisateurs ciblés principaux, les règles de transport et les connecteurs](threat-explorer.md#extended-capabilities-in-Threat-Explorer.md)
+- [Fonctionnalités étendues dans l’Explorateur de menaces, y compris les utilisateurs ciblés principaux, les règles de transport et les connecteurs](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections)
 - Le surfaçage remplace les informations dans l' [Explorateur de menaces](threat-explorer.md) (le courrier électronique a été autorisé/bloqué par le client/stratégie utilisateur)
 - Exposition des menaces d’URL dans l' [Explorateur de menaces](threat-explorer.md) (programmes malveillants, hameçons, courrier indésirable ou aucun)
 

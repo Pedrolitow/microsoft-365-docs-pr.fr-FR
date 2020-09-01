@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-remotework
 ms.custom: ''
 description: Assurez-vous que vos employés à distance peuvent accéder aux ressources locales tout en optimisant l’accès aux services cloud de Microsoft 365.
-ms.openlocfilehash: 4327f6d7e4815a8720ecc05c7e4dd48ca89ac3d8
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 7c928718a4d0f0d47fb601e6ab6e51f25c88a04a
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46521528"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308390"
 ---
 # <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>Étape 2. Fournir l’accès à distance aux applications et services locaux
 
@@ -54,13 +54,13 @@ Le trafic Microsoft 365 doit emprunter une route indirecte au sein de votre org
 
 La segmentation de tunnel vous permet de configurer votre client VPN pour empêcher l’envoi de certains types de trafic sur la connexion VPN vers le réseau de l’organisation.
 
-Pour optimiser l’accès aux ressources cloud de Microsoft 365, configurez vos clients VPN avec la segmentation de tunnel afin d’exclure le trafic vers la catégorie **Optimiser** des points de terminaison Microsoft 365 sur la connexion VPN. Pour plus d’informations, consultez [Catégories de points de terminaison Office 365](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#new-office-365-endpoint-categories). Consultez la liste des points de terminaison de catégorie Optimiser [ici](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
+Pour optimiser l’accès aux ressources cloud de Microsoft 365, configurez vos clients VPN avec la segmentation de tunnel afin d’exclure le trafic vers la catégorie **Optimiser** des points de terminaison Microsoft 365 sur la connexion VPN. Pour plus d’informations, consultez [Catégories de points de terminaison Office 365](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-network-connectivity-principles#new-office-365-endpoint-categories). Consultez la liste des points de terminaison de catégorie Optimiser [ici](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges).
 
 ![Trafic réseau provenant de clients VPN avec segmentation de tunnel](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-after-tunneling.png)
 
 Cela permet au client VPN d’envoyer et de recevoir du trafic de service cloud Microsoft 365 crucial directement via Internet et vers le point d’entrée le plus proche dans le réseau Microsoft.
 
-Pour plus d’informations et de conseils, voir [Optimiser la connectivité d’Office 365 pour les utilisateurs à distance à l’aide de la segmentation de tunnel de VPN](https://docs.microsoft.com/office365/enterprise/office-365-vpn-split-tunnel).
+Pour plus d’informations et de conseils, voir [Optimiser la connectivité d’Office 365 pour les utilisateurs à distance à l’aide de la segmentation de tunnel de VPN](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-split-tunnel??).
 
 ## <a name="deploy-remote-access-when-all-your-apps-are-web-apps-and-you-have-hybrid-identity"></a>Déployer l’accès à distance lorsque toutes vos applications sont des applications web et que vous avez une identité hybride
 
@@ -116,7 +116,7 @@ Si vous souhaitez plus d’informations, consultez [cet article](https://www.mic
 ## <a name="admin-technical-resources-for-remote-access"></a>Ressources techniques dédiées aux administrateurs pour l’accès à distance
 
 - [Comment optimiser rapidement le trafic Office 365 pour les membres du personnel à distance et réduire la charge sur votre infrastructure](https://techcommunity.microsoft.com/t5/office-365-blog/how-to-quickly-optimize-office-365-traffic-for-remote-staff-amp/ba-p/1214571)
-- [Optimiser la connectivité d’Office 365 pour les utilisateurs à distance à l’aide de la segmentation de tunnel VPN](https://docs.microsoft.com/office365/enterprise/office-365-vpn-split-tunnel)
+- [Optimiser la connectivité d’Office 365 pour les utilisateurs à distance à l’aide de la segmentation de tunnel VPN](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-split-tunnel?)
 
 ## <a name="results-of-step-2"></a>Résultats de l’étape 2
 

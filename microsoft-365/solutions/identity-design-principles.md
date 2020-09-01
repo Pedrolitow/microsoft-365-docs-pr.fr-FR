@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 427d266ea46c184a87b8b0b4fbe242adfb8deff1
-ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
+ms.openlocfilehash: 7c83d3f202851008e93c3f3e9d0c7bc89c49bf20
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46597542"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308366"
 ---
 # <a name="to-identity-and-beyond--one-architects-viewpoint"></a>Pour identifier et au-delà : point de vue d’un architecte
 
@@ -113,7 +113,7 @@ Ce type de dessin de tableau blanc illustre l’endroit où les stratégies de s
 
 Nous avons mis en avant le rêve de l’authentification [unique](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on) (SSO) tant que je m’en rappelle. Certains clients pensent qu’ils peuvent y parvenir en sélectionnant le fournisseur de services de Fédération « Right » (STS). Azure AD peut contribuer de manière significative à l’activation des fonctionnalités [SSO](https://docs.microsoft.com/azure/active-directory/manage-apps/plan-sso-deployment) , mais aucun STS n’est magique. Il existe trop de méthodes d’authentification « héritées » qui sont toujours utilisées pour les applications critiques. L’extension d’Azure AD avec des [solutions partenaires](https://docs.microsoft.com/azure/active-directory/saas-apps/tutorial-list) peut résoudre un grand nombre de ces scénarios. SSO est une stratégie et un voyage. Vous ne pouvez pas y accéder sans passer [aux normes pour les applications](https://docs.microsoft.com/azure/active-directory/develop/v2-app-types). En relation avec cette rubrique, il s’agit d’une authentification sans [mot de passe](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-passwordless) qui n’a pas non plus de réponse magique. 
 
-[L’authentification multifacteur](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks) (MFA) est essentielle aujourd’hui ([ici](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/your-pa-word-doesn-t-matter/ba-p/731984) pour plus d’informations). Ajoutez-lui une [analyse de comportement utilisateur](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-risk-based-sspr-mfa) et vous disposez d’une solution qui empêche la majorité des attaques informatiques courantes. Même les services consommateurs se déplacent vers l’authentification multifacteur. Pourtant, je répond toujours à de nombreux clients qui ne souhaitent pas passer à des approches [d’authentification modernes](https://docs.microsoft.com/office365/enterprise/hybrid-modern-auth-overview) . Le plus grand argument que j’entends est qu’il aura un impact sur les utilisateurs et les applications héritées. Parfois, des clients peuvent aider les clients à se déplacer sur [les modifications annoncées](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-auth-and-exchange-online-february-2020-update/ba-p/1191282)par Exchange Online. De nombreux [rapports](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-block-legacy-authentication) Azure ad sont désormais disponibles pour aider les clients à effectuer cette transition.
+[L’authentification multifacteur](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks) (MFA) est essentielle aujourd’hui ([ici](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/your-pa-word-doesn-t-matter/ba-p/731984) pour plus d’informations). Ajoutez-lui une [analyse de comportement utilisateur](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-risk-based-sspr-mfa) et vous disposez d’une solution qui empêche la majorité des attaques informatiques courantes. Même les services consommateurs se déplacent vers l’authentification multifacteur. Pourtant, je répond toujours à de nombreux clients qui ne souhaitent pas passer à des approches [d’authentification modernes](https://docs.microsoft.com/microsoft-365/enterprise/hybrid-modern-auth-overview) . Le plus grand argument que j’entends est qu’il aura un impact sur les utilisateurs et les applications héritées. Parfois, des clients peuvent aider les clients à se déplacer sur [les modifications annoncées](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-auth-and-exchange-online-february-2020-update/ba-p/1191282)par Exchange Online. De nombreux [rapports](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-block-legacy-authentication) Azure ad sont désormais disponibles pour aider les clients à effectuer cette transition.
 
 
 
@@ -187,12 +187,12 @@ Dans ces scénarios mutualisés, les clients souhaitent souvent conserver une co
 
 ### <a name="multi-geo"></a>Multi-Géo 
 
-Vers [multi-géo](https://docs.microsoft.com/office365/enterprise/office-365-multi-geo) ou non à plusieurs géo, il s’agit de la question. Avec Office 365 multi-géo, vous pouvez mettre en service et stocker des données dans les emplacements géographiques où vous avez choisi de répondre aux exigences de la [résidence des données](https://docs.microsoft.com/office365/enterprise/o365-data-locations) . Il existe de nombreuses idées incertaines sur cette fonctionnalité. Gardez les éléments suivants à l’esprit : 
+Vers [multi-géo](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-multi-geo) ou non à plusieurs géo, il s’agit de la question. Avec Office 365 multi-géo, vous pouvez mettre en service et stocker des données dans les emplacements géographiques où vous avez choisi de répondre aux exigences de la [résidence des données](https://docs.microsoft.com/microsoft-365/enterprise/o365-data-locations) . Il existe de nombreuses idées incertaines sur cette fonctionnalité. Gardez les éléments suivants à l’esprit : 
 - Il ne fournit pas d’avantages en matière de performances. Cela peut aggraver les performances si la [conception du réseau](https://aka.ms/office365networking) est incorrecte. Obtenez des périphériques « proches » sur le réseau Microsoft, pas nécessairement pour vos données.
 - Il ne s’agit pas d’une solution pour [la conformité RGPD](https://www.microsoft.com/trust-center/privacy/gdpr-overview). RGPD n’est pas centré sur la souveraineté ou les emplacements de stockage des données. Il existe d’autres structures de conformité.
 - Il ne permet pas de résoudre la délégation de l’administration (voir ci-dessous) ou les [barrières d’information](https://docs.microsoft.com/microsoft-365/compliance/information-barriers).
 - Il ne s’agit pas de la même chose que la fonction mutualisée et nécessite des flux de travail de [mise en service utilisateur](https:/docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation) supplémentaires.
-- Il ne [déplace pas votre client](https://docs.microsoft.com/office365/enterprise/moving-data-to-new-datacenter-geos) (votre Azure AD) vers une autre géographie. 
+- Il ne [déplace pas votre client](https://docs.microsoft.com/microsoft-365/enterprise/moving-data-to-new-datacenter-geos) (votre Azure AD) vers une autre géographie. 
 
 ## <a name="delegation-of-administration"></a>Délégation de l’administration
 
@@ -202,7 +202,7 @@ Dans la plupart des grandes organisations, la séparation des tâches et le cont
 
 Il existe une liste longue et croissante de [rôles intégrés](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). Chaque rôle se compose d’une liste d’autorisations de rôle regroupées pour permettre l’exécution d’actions spécifiques. Vous pouvez voir ces autorisations dans l’onglet « Description » à l’intérieur de chaque rôle. Vous pouvez également consulter une version plus lisible de ces éléments dans le centre d’administration 365 de Microsoft. Les définitions des rôles intégrés ne peuvent pas être modifiées. Généralement, regroupez-les en trois catégories :
 
-- **Administrateur général** : ce rôle « tout puissant » doit être [hautement protégé](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts) comme vous le feriez dans d’autres systèmes. Les recommandations classiques sont les suivantes : aucune affectation permanente et utiliser Azure AD Privileged Identity Management (PIM); authentification forte ; etc. Il est intéressant de faire attention, ce rôle ne vous permet pas d’accéder à tous les éléments par défaut. En règle générale, je vois une confusion concernant l’accès à la conformité et l’accès à Azure, abordé plus loin. Toutefois, ce rôle peut toujours affecter l’accès à d’autres services dans le client. 
+- **Administrateur général** : ce rôle « tout puissant » doit être [hautement protégé](https://docs.microsoft.com/microsoft-365/enterprise/protect-your-global-administrator-accounts) comme vous le feriez dans d’autres systèmes. Les recommandations classiques sont les suivantes : aucune affectation permanente et utiliser Azure AD Privileged Identity Management (PIM); authentification forte ; etc. Il est intéressant de faire attention, ce rôle ne vous permet pas d’accéder à tous les éléments par défaut. En règle générale, je vois une confusion concernant l’accès à la conformité et l’accès à Azure, abordé plus loin. Toutefois, ce rôle peut toujours affecter l’accès à d’autres services dans le client. 
 - **Administrateurs de service spécifiques** : certains services (Exchange, SharePoint, Power bi, etc.) consomment des rôles d’administration de haut niveau à partir d’Azure ad. Cette fonction n’est pas cohérente pour tous les services et il existe d’autres rôles spécifiques au service abordés plus loin.
 - **Fonctionnel** : il existe une longue liste de rôles centrés sur des opérations spécifiques (invités invité, etc.). De manière périodique, de plus, d’autres sont ajoutés en fonction des besoins des clients.
 
@@ -248,8 +248,8 @@ Comme indiqué précédemment, de nombreux clients cherchent à obtenir un modè
   + **Limites**  -  de conformité [https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries ](https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries )
   + **Découverte électronique avancée**  -  [https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20 ](https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20 )
 - **Yammer** - [https://docs.microsoft.com/yammer/manage-yammer-users/manage-yammer-admins](https://docs.microsoft.com/yammer/manage-yammer-users/manage-yammer-admins) 
-- **Multi-géo** - [https://docs.microsoft.com/office365/enterprise/add-a-sharepoint-geo-admin](https://docs.microsoft.com/office365/enterprise/add-a-sharepoint-geo-admin) 
-- **Dynamics 365** –[https://docs.microsoft.com/dynamics365/](https://docs.microsoft.com/dynamics365/) <br>
+- **Multi-géo** - [https://docs.microsoft.com/microsoft-365/enterprise/add-a-sharepoint-geo-admin](https://docs.microsoft.com/microsoft-365/enterprise/add-a-sharepoint-geo-admin) 
+- **Dynamics 365** – [https://docs.microsoft.com/dynamics365/](https://docs.microsoft.com/dynamics365/) <br>
   Remarque : ce lien se trouve à la racine de la documentation. Il existe plusieurs types de services avec des variantes dans le modèle d’administration/de délégation.
 - **Power Platform**  -  [https://docs.microsoft.com/power-platform/admin/admin-documentation ](https://docs.microsoft.com/power-platform/admin/admin-documentation )
   + **Applications**  -  puissantes [https://docs.microsoft.com/power-platform/admin/wp-security ](https://docs.microsoft.com/power-platform/admin/wp-security ) <br>

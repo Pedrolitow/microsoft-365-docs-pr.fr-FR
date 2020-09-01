@@ -19,12 +19,12 @@ ms.collection:
 - SPO_Content
 description: Découvrez comment activer la protection avancée contre les menaces pour SharePoint, OneDrive et Teams, y compris comment définir des alertes pour les fichiers détectés.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6109cecc79b4db876ee595d4786d176ae7f42f5d
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: 8a3a3939603d30e9024f43517ce23a87cf765b84
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656550"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308334"
 ---
 # <a name="turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Activer PACM pour SharePoint, OneDrive et Microsoft Teams.
 
@@ -72,7 +72,7 @@ Pour définir (ou modifier) des stratégies ATP, vous devez disposer d’un rôl
 
 8. Recommandation Passez à la configuration des alertes pour les fichiers détectés.
 
-Pour en savoir plus sur l’utilisation de PowerShell avec Microsoft 365, consultez la rubrique [Manage Microsoft 365 with PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell).
+Pour en savoir plus sur l’utilisation de PowerShell avec Microsoft 365, consultez la rubrique [Manage Microsoft 365 with PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-with-microsoft-365-powershell).
 
 Pour en savoir plus sur l’expérience utilisateur lorsqu’un fichier a été détecté comme malveillant, consultez la rubrique [que faire lorsqu’un fichier malveillant est trouvé dans SharePoint Online, OneDrive ou Microsoft teams](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2).
 

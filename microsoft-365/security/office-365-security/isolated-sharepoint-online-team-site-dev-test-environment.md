@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: 'Résumé : configurez un site d’équipe SharePoint Online isolé du reste de l’organisation dans votre environnement de développement/test Microsoft 365.'
-ms.openlocfilehash: 07f3ae349f20fd4498e7809955cf0407d8c31d8c
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 095b0e5098d86f69c21576e72439dde48a092db3
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588027"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308402"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>Site d’équipe SharePoint Online isolé dans votre environnement de développement/test
 
@@ -65,7 +65,7 @@ Si vous souhaitez créer un site d’équipe SharePoint Online isolé dans une c
 
 ## <a name="phase-2-create-user-accounts-and-access-groups"></a>Phase 2 : créer des comptes d’utilisateurs et des groupes d’accès
 
-Utilisez les instructions de [connexion à Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell) pour vous connecter à votre abonnement d’évaluation avec votre compte d’administrateur général à partir de :
+Utilisez les instructions de [connexion à Office 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell) pour vous connecter à votre abonnement d’évaluation avec votre compte d’administrateur général à partir de :
 
 - Votre ordinateur (pour l’environnement de développement/test Microsoft 365 léger).
 
@@ -238,7 +238,7 @@ Nous allons maintenant illustrer l’accès à l’aide du compte d’utilisateu
 
 13. Cliquez sur les points de suspension du document **Document.docx**, puis sur **Obtenir un lien**.
 
-14. Copiez l’URL dans la boîte de dialogue **partager « document. docx »** et collez-la dans une nouvelle ligne dans le bloc-notes ou dans votre éditeur de texte, puis fermez la boîte de dialogue **« document. docx » de partage** .
+14. Copiez l’URL dans la boîte de dialogue **« Document.docx » du partage** et collez-la dans une nouvelle ligne dans le bloc-notes ou dans votre éditeur de texte, puis fermez la boîte de dialogue **« Document.docx » de partage** .
 
 15. Fermez les onglets **ProjectX-Documents** et **SharePoint** dans votre navigateur, puis cliquez sur l’onglet **Accueil Microsoft Office**.
 
@@ -286,7 +286,7 @@ Lorsque vous souhaitez déployer un site d'équipe SharePoint Online isolé en p
 
 [Sites d'équipe SharePoint Online isolés](isolated-sharepoint-online-team-sites.md)
 
-[Guides de laboratoire de test d’adoption cloud](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)
+[Guides de laboratoire de test d’adoption cloud](https://docs.microsoft.com/microsoft-365/enterprise/cloud-adoption-test-lab-guides-tlgs)
 
 [Configuration de base d’entreprise simulée](https://docs.microsoft.com/microsoft-365/enterprise/simulated-ent-base-configuration-microsoft-365-enterprise)
 

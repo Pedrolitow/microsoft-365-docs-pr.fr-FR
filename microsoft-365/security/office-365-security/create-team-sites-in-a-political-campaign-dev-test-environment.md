@@ -18,12 +18,12 @@ search.appverid:
 ms.custom: seo-marvel-apr2020
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: 'Résumé : Créez des sites d’équipe SharePoint Online publics, privés, sensibles et hautement confidentiels dans votre environnement de développement/test dans le cadre d’une campagne électorale.'
-ms.openlocfilehash: d22ada823877d4c0996be942c379e12929242eaf
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: 220056c8bb234d762b44431739c683164d7a9905
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44755235"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308426"
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>Création de sites d’équipe dans un environnement de développement/test dans le cadre d’une campagne électorale
 
@@ -420,7 +420,7 @@ Pour protéger un document avec Azure Information Protection et cette nouvelle �
   
 [Configuration de groupes et d’utilisateurs pour un environnement de développement/test pour une campagne électorale](configure-groups-and-users-for-a-political-campaign-dev-test-environment.md)
   
-[Guides de laboratoire de test d’adoption cloud](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)
+[Guides de laboratoire de test d’adoption cloud](https://docs.microsoft.com/microsoft-365/enterprise/cloud-adoption-test-lab-guides-tlgs)
   
 [Adoption du cloud et solutions hybrides](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
 

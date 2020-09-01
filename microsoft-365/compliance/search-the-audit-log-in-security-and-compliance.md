@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Utilisez le Centre de sécurité et conformité pour rechercher dans le journal d’audit unifié les activités des utilisateurs et des administrateurs de votre organisation. '
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 39c58a86b3f8e3bec2225c4a3df53120fac79eea
-ms.sourcegitcommit: 929ca8f4d5fc006c3827f7a8b7d2b43e54c1b42a
+ms.openlocfilehash: 75f807f2d09792838cab2ee5154578b5cbbbfde8
+ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674624"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47294741"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Effectuer des recherches dans le journal d’audit depuis le Centre de sécurité et conformité 
 
@@ -186,9 +186,9 @@ Pour effectuer une recherche dans le journal d’audit dans Office 365, vous dev
 
       > [!TIP]
       >
-      > - Si vous recherchez toutes les activités associées à un **site**, ajoutez le symbole générique (\*) après l’URL pour renvoyer toutes les entrées de ce site, par exemple, **«https://contoso-my.sharepoint.com/personal/*»**.
+      > - Si vous recherchez toutes les activités concernant un **site**, ajoutez le symbole générique (\*) après l’URL pour renvoyer toutes les entrées de ce site ; par exemple, `"https://contoso-my.sharepoint.com/personal*"`
       >
-      > - Si vous recherchez toutes les activités associées à **un fichier**, ajoutez le symbole générique (\*) avant le nom de fichier pour renvoyer toutes les entrées de ce fichier, par exemple, **«*Customer_Profitability_Sample. csv».**.
+      > - Si vous recherchez toutes les activités associées à **un fichier**, ajoutez le symbole générique (\*) avant le nom de fichier pour renvoyer toutes les entrées de ce fichier, par exemple, `"*Customer_Profitability_Sample.csv"`.
 
 5. Cliquez sur **Rechercher** pour effectuer la recherche à l’aide de vos critères de recherche. 
 
