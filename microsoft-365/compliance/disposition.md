@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Surveiller et gérer la suppression du contenu, que vous utilisiez une révision de disposition ou que le contenu soit automatiquement supprimé en fonction des paramètres que vous avez configurés.
-ms.openlocfilehash: 20f44244005f5a34a0d82f32f625fb067f02df20
-ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
+ms.openlocfilehash: 5751857f8b3bf0a7f63df73e9bfaa244897bf429
+ms.sourcegitcommit: 4ac96855d7c269a0055ca8943000b762a70ca4ba
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "47294763"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47321993"
 ---
 # <a name="disposition-of-content"></a>Disposition de contenu
 
@@ -62,7 +62,7 @@ Lorsque le contenu atteint la fin de sa période de rétention, il existe plusie
 
 Lorsqu’une révision de disposition est déclenchée à la fin de la période de rétention :
   
-- Les personnes que vous choisissez reçoivent une notification par courrier électronique dont le contenu doit être révisé. Ces relecteurs peuvent être des utilisateurs individuels, des groupes de distribution ou de sécurité, ou des groupes Microsoft 365 ([anciennement groupes Office 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)). Notez que les notifications sont envoyées chaque semaine.
+- Les personnes que vous choisissez reçoivent une notification par courrier électronique dont le contenu doit être révisé. Ces relecteurs peuvent être des utilisateurs individuels ou des groupes de sécurité à extension messagerie. Notez que les notifications sont envoyées chaque semaine.
     
 - Les réviseurs accèdent à l’onglet **disposition** dans le centre de conformité Microsoft 365 pour examiner le contenu et décider s’il faut le supprimer définitivement, prolonger sa période de rétention ou appliquer une étiquette de rétention différente.
 
