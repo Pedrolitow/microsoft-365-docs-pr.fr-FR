@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,18 +18,15 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
 ms.assetid: 092252f8-08df-4cdb-a8d2-b8653caa29a1
-description: Découvrez comment vérifier les abonnements de votre organisation en accédant à la page abonnements.
-ms.openlocfilehash: fff76f1a9ac127d061460767a41941f4daf2ea32
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+description: Découvrez comment vérifier les abonnements de votre organisation en accédant à la page vos produits.
+ms.openlocfilehash: bd7b7726c93ee6c5022df7ca72342d8d3b7a1c09
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780504"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324547"
 ---
 # <a name="what-subscription-do-i-have"></a>Quel abonnement ai-je ?
 
@@ -40,8 +37,9 @@ Si vous êtes administrateur, vous pouvez vérifier les abonnements de votre org
 ::: moniker range="o365-worldwide"
 
 1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
-
-2. Vos abonnements s’affichent sur la page **vos produits** , avec le nom de l’abonnement, des informations sur l’abonnement et son état. Pour afficher une vue condensée, sélectionnez **affichage tableau**.
+2. Sous l’onglet **produits** , vous pouvez voir tous vos abonnements. Chaque ligne d’abonnement comprend des informations sur les licences, l’état des abonnements et la facturation.
+3. Si vous souhaitez modifier les colonnes qui apparaissent dans la liste, sélectionnez **choisir les colonnes**. Modifiez la sélection des colonnes, puis sélectionnez **Enregistrer**.
+4. Pour obtenir plus de détails sur un abonnement unique, sélectionnez cet abonnement.
 
 ::: moniker-end
   

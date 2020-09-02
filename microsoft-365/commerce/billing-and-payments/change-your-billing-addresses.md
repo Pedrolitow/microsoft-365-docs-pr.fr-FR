@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
 description: Découvrez comment mettre à jour vos adresses de facturation pour Microsoft 365 pour les entreprises. Vous pouvez également mettre à jour l’adresse de messagerie utilisée pour recevoir des notifications de facturation.
-ms.openlocfilehash: 6b2da1e947362db432bf036d9799ddef89526030
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 5e6fc2bad63c445f516ba3cd473bd40c7bfcb2e3
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817028"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324351"
 ---
 # <a name="change-your-billing-addresses"></a>Modifier vos adresses de facturation
 
@@ -49,7 +49,7 @@ Votre facture contient trois adresses :
 
 - **Adresse d'utilisation du service** L'adresse de l'endroit où le service est utilisé, généralement le même que l'adresse de **vente**. Si votre organisation compte des utilisateurs distants ou plusieurs sites, nous vous conseillons d'utiliser l'adresse où sont regroupés la plupart de vos utilisateurs.
 
-Dans la plupart des cas, ces adresses sont identiques. Si vous le souhaitez, vous pouvez modifier une ou plusieurs de ces adresses. Vous pouvez également fournir une adresse e-mail de secours à laquelle vous recevrez des notifications de facturation et modifier l'adresse e-mail de secours pour les autres administrateurs.
+Dans la plupart des cas, ces adresses sont identiques. Si vous le souhaitez, vous pouvez modifier une ou plusieurs de ces adresses. Vous pouvez également fournir une adresse de messagerie de secours pour recevoir des notifications de facturation et modifier l’adresse de messagerie de secours pour les autres administrateurs.
   
 ::: moniker range="o365-worldwide"
 
@@ -68,7 +68,6 @@ Pour en savoir plus sur votre facture, reportez-vous à la rubrique [consulter v
 Si vous utilisez Office 365 géré par 21Vianet en Chine, reportez-vous à [la rubrique consulter votre facture ou obtenir Fapiaos pour Office 365 géré par 21ViaNet](../../admin/services-in-china/view-your-bill-or-get-a-fapiao.md).
 
 ::: moniker-end
-
 
 ## <a name="change-your-sold-to-address"></a>Modifier votre adresse de vente
 
@@ -131,10 +130,9 @@ Si vous utilisez Office 365 géré par 21Vianet en Chine, reportez-vous à [la r
 ::: moniker range="o365-worldwide"
 
 1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
-
-2. Recherchez l’abonnement que vous souhaitez modifier. Dans la section **paramètres & Actions** , sélectionnez **modifier l’adresse d’utilisation du service**.
-
-3. Dans le volet **modifier votre adresse d’utilisation du service** , mettez à jour votre adresse, puis sélectionnez **Enregistrer**.
+2. Sous l’onglet **produits** , sélectionnez l’abonnement que vous souhaitez modifier.
+3. Sur la page Détails de l’abonnement, dans la section **adresse d’utilisation du service** , sélectionnez **modifier l’adresse d’utilisation du service**.
+4. Dans le volet **modifier l’adresse d’utilisation du service** , mettez à jour votre adresse, puis sélectionnez **Enregistrer**.
 
 ::: moniker-end
 

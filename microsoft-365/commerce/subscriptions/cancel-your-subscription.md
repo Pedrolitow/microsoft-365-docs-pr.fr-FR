@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,18 +16,15 @@ ms.collection:
 - commerce
 ms.custom: AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
-ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: Découvrez comment annuler votre abonnement d’évaluation ou payant Microsoft 365 pour les entreprises.
-ms.openlocfilehash: 746060596010fd80816e19dece093d91fe850c30
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.date: ''
+ms.openlocfilehash: 9669551101243f1abe760bf336d3472b50182555
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049747"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324278"
 ---
 # <a name="cancel-your-subscription"></a>Annuler votre abonnement
 
@@ -45,19 +42,22 @@ ms.locfileid: "45049747"
 > [!NOTE]
 > Si vous avez plusieurs abonnements au même produit, comme Microsoft 365 Business Premium, l’annulation de l’un d’entre eux n’a pas d’impact sur les licences ou services achetés dans les autres abonnements.
 
+## <a name="before-you-begin"></a>Avant de commencer
+
+Vous devez être un administrateur général ou un administrateur de facturation pour effectuer les tâches décrites dans cet article. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+
 ## <a name="steps-to-cancel-your-subscription"></a>Étapes d’annulation de votre abonnement
 
 Si vous avez ajouté votre propre nom de domaine à utiliser avec votre abonnement, vous devez supprimer le domaine avant d’annuler votre abonnement. Pour plus d’informations, consultez [la rubrique supprimer un domaine](../../admin/get-help-with-domains/remove-a-domain.md).
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
+1. Dans le centre d’administration, accédez à la page **facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits</a> , puis sélectionnez l’onglet **produits** .
+2. Recherchez l’abonnement que vous souhaitez annuler. Sélectionnez **autres actions** (trois points), puis **Annuler l’abonnement**.
+3. Dans le volet **Annuler l’abonnement** , choisissez une raison pour laquelle vous annulez. Fournissez éventuellement des commentaires.
+4. Sélectionnez **Enregistrer**.
 
-2. Recherchez l’abonnement que vous souhaitez annuler et sous **paramètres & Actions**, sélectionnez Annuler l' **abonnement**.
-
-3. Examinez les dates importantes, fournissez des commentaires sur la raison de l’annulation, puis sélectionnez **Annuler l’abonnement**.
-
-    Votre abonnement s’affiche désormais dans un état **désactivé** et dispose de fonctionnalités réduites jusqu’à ce qu’il soit supprimé. Pour plus d’informations sur ce que vous pouvez vous attendre à l’annulation d’un abonnement payant à Microsoft 365 pour les entreprises, voir [qu’arrive-t-il à mes données et à Access quand mon abonnement microsoft 365 pour entreprises prend fin ?](what-if-my-subscription-expires.md)
+Votre abonnement s’affiche désormais dans un état **désactivé** et dispose de fonctionnalités réduites jusqu’à ce qu’il soit supprimé. Pour plus d’informations sur ce que vous pouvez vous attendre à l’annulation d’un abonnement payant à Microsoft 365 pour les entreprises, voir [qu’arrive-t-il à mes données et à Access quand mon abonnement microsoft 365 pour entreprises prend fin ?](what-if-my-subscription-expires.md)
 
 ::: moniker-end
 
@@ -73,7 +73,7 @@ Si vous avez ajouté votre propre nom de domaine à utiliser avec votre abonneme
 
 4. Examinez les dates importantes, fournissez des commentaires sur la raison de l’annulation, puis sélectionnez **Annuler l’abonnement**.
 
-    Votre abonnement s’affiche désormais dans un état **désactivé** et dispose de fonctionnalités réduites jusqu’à ce qu’il soit supprimé. Pour plus d’informations sur ce que vous pouvez vous attendre à l’annulation d’un abonnement payant à Microsoft 365 pour les entreprises, voir [qu’arrive-t-il à mes données et à Access quand mon abonnement microsoft 365 pour entreprises prend fin ?](what-if-my-subscription-expires.md)
+    Votre abonnement s’affiche désormais dans un état **désactivé** , jusqu’à ce qu’il soit supprimé. Pour plus d’informations sur ce que vous pouvez vous attendre à l’annulation d’un abonnement payant à Microsoft 365 pour les entreprises, voir [qu’arrive-t-il à mes données et à Access quand mon abonnement microsoft 365 pour entreprises prend fin ?](what-if-my-subscription-expires.md)
 
 ::: moniker-end
 
@@ -95,7 +95,9 @@ Si vous avez ajouté votre propre nom de domaine à utiliser avec votre abonneme
 
 ## <a name="what-happens-when-you-cancel-a-subscription"></a>Que se passe-t-il lorsque vous annulez un abonnement ?
 
-Si vous annulez un abonnement avant la fin de votre terme, l’abonnement passe directement à l’état désactivé. Pour la plupart des abonnements et dans la plupart des pays et régions, l'état désactivé dure 90 jours. Quand un abonnement est en état désactivé, les administrateurs peuvent toujours consulter et sauvegarder les données pour leur organisation, mais nous recommandons que les administrateurs [sauvegardent les données](back-up-data-before-switching-plans.md) d'un abonnement avant l'annulation de celui-ci, en particulier s'il s'agit de leur seul abonnement. Toutes les données que vous laissez derrière vous pourront être supprimées après 180 jours, et le seront assurément au plus tard 180 jours après l'annulation.
+Si vous annulez un abonnement avant la fin de votre terme, l’état de l’abonnement passe directement à l’état désactivé. Pour la plupart des abonnements et dans la plupart des pays et régions, l'état désactivé dure 90 jours. Quand un abonnement est en état désactivé, les administrateurs peuvent toujours consulter et sauvegarder les données pour leur organisation, mais nous recommandons que les administrateurs [sauvegardent les données](back-up-data-before-switching-plans.md) d'un abonnement avant l'annulation de celui-ci, en particulier s'il s'agit de leur seul abonnement. Les administrateurs peuvent également réactiver l’abonnement alors qu’il est à l’état désactivé.
+
+Après 90, l’abonnement passe à l’état supprimé. Toutes les données que vous quittez derrière peuvent être supprimées une fois ces 90 jours supprimés au plus tard 180 jours après l’annulation. Vous ne pouvez pas supprimer un mode de paiement d’un abonnement annulé tant qu’il n’a pas atteint l’état supprimé.
 
 ### <a name="what-to-expect-for-you-and-your-users-if-you-cancel-a-subscription"></a>Voici ce à quoi vous et vos utilisateurs devez vous attendre si vous annulez un abonnement.
   
@@ -146,10 +148,12 @@ Lorsque l’annulation devient effective, vos utilisateurs perdent l’accès à
 
 Si vous avez annulé votre abonnement, et que vous n’avez pas [déplacé les utilisateurs vers un autre abonnement](move-users-different-subscription.md) qui inclut Microsoft 365, Microsoft 365 s’exécute en mode de fonctionnalités réduites. Lorsque cela se produit, les utilisateurs peuvent uniquement lire et imprimer des documents, et les applications Microsoft 365 afficher [des notifications de produit sans licence](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx). Pour éviter toute confusion, demandez à vos utilisateurs de [désinstaller Office](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx) de leurs ordinateurs.
 
-## <a name="related-articles"></a>Articles connexes
+## <a name="next-steps"></a>Étapes suivantes
 
-[Renouveler votre abonnement](renew-your-subscription.md)
+Si vous souhaitez clôturer complètement votre compte auprès de Microsoft, reportez-vous à [la rubrique clôturer votre compte](../close-your-account.md).
 
-[Réactiver votre abonnement](reactivate-your-subscription.md)
+## <a name="related-content"></a>Contenu connexe
 
-[Transférer des utilisateurs vers un autre abonnement](move-users-different-subscription.md)
+[Renouveler votre abonnement](renew-your-subscription.md) (article) \
+[Réactiver votre abonnement](reactivate-your-subscription.md) (article) \
+[Déplacer des utilisateurs vers un autre abonnement](move-users-different-subscription.md) (article)

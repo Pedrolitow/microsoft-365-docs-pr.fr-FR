@@ -4,7 +4,7 @@ f1.keywords:
 - CSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,17 +19,15 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
 description: Découvrez comment gérer vos modes de paiement dans le centre d’administration 365 de Microsoft.
-ms.openlocfilehash: 0320f71180a5c2c127217ebf01854943409e6386
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.date: ''
+ms.openlocfilehash: 81c7509fb2f3be982890ec6b68dafb83ff0c1876
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403677"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324233"
 ---
 # <a name="manage-payment-methods"></a>Gestion des modes de paiement
 
@@ -49,46 +47,25 @@ Si votre compte professionnel ne dispose pas d’un profil de facturation, tout 
 >
 > Vous devez utiliser un mode de paiement émis par le même pays que votre client.
 
+## <a name="before-you-begin"></a>Avant de commencer
+
+Vous devez être un administrateur général ou un administrateur de facturation pour effectuer les tâches décrites dans cet article. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+
 ## <a name="add-a-payment-method"></a>Ajouter un mode de paiement
 
 L’ajout d’un mode de paiement n’associe pas d’abonnements à celui-ci. Pour affecter un seul abonnement au mode de paiement, reportez-vous à la rubrique [modifier un mode de paiement pour un seul abonnement](#change-a-payment-method-for-a-single-subscription). Pour remplacer tous les abonnements utilisant un autre mode de paiement par le nouveau, reportez-vous à la rubrique [remplacement d’un mode de paiement](#replace-a-payment-method).
 
-::: moniker range="o365-worldwide"
-1. Dans le centre d’administration, accédez à **la** > page **factures &** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">paiement</a> des paiements.
-::: moniker-end
-
-::: moniker range="o365-germany"
-1. Dans le centre d’administration, accédez à **la** > page **factures &** > **paiement** des paiements.
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-1. Dans le centre d’administration, accédez à **la** > page **factures &** > **paiement** des paiements.
-::: moniker-end
-
+1. Dans le Centre d’administration, accédez à la page **Facturation** > **Factures et paiements** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Modes de paiement</a>.
 2. Sélectionnez **Ajouter ou sélectionner un mode de paiement**.
-
 3. Sur la page **Modes de paiement**, sélectionnez un mode de paiement dans le menu déroulant.
-
 4. Entrez les informations pour la nouvelle carte ou le nouveau compte bancaire, puis sélectionnez **Ajouter**.
 
 ## <a name="update-payment-method-details"></a>Mettre à jour les informations sur le mode de paiement
 
 Vous pouvez modifier le nom de la carte bancaire, de l’adresse de facturation ou de la date d’expiration d’un mode de paiement existant. Toutefois, vous ne pouvez pas modifier la carte ou le numéro de compte. Si le numéro de compte a changé, [Remplacez-le par un autre mode de paiement](#replace-a-payment-method), puis [supprimez l’ancien](#delete-a-payment-method).
 
-::: moniker range="o365-worldwide"
-1. Dans le centre d’administration, accédez à **la** > page **factures &** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">paiement</a> des paiements.
-::: moniker-end
-
-::: moniker range="o365-germany"
-1. Dans le centre d’administration, accédez à **la** > page **factures &** > **paiement** des paiements.
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-1. Dans le centre d’administration, accédez à **la** > page **factures &** > **paiement** des paiements.
-::: moniker-end
-
+1. Dans le Centre d’administration, accédez à la page **Facturation** > **Factures et paiements** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Modes de paiement</a>.
 2. Sélectionnez la ligne du mode de paiement à mettre à jour. Dans le volet droit, sélectionnez **Modifier**.
-
 3. Mettez à jour les informations relatives au mode de paiement, notamment le nom figurant sur la carte de crédit ou de débit, l’adresse de facturation ou la date d’expiration, puis sélectionnez **Enregistrer**.
 
 ## <a name="replace-a-payment-method"></a>Remplacer un mode de paiement
@@ -97,59 +74,26 @@ Lorsque vous remplacez un mode de paiement, vous le remplacez pour tous les abon
 
 Pour modifier le mode de paiement d’un abonnement unique, consultez la rubrique [modifier un mode de paiement pour un seul abonnement](#change-a-payment-method-for-a-single-subscription).
 
-::: moniker range="o365-worldwide"
-1. Dans le centre d’administration, accédez à **la** > page **factures &** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">paiement</a> des paiements.
-::: moniker-end
-
-::: moniker range="o365-germany"
-1. Dans le centre d’administration, accédez à **la** > page **factures &** > **paiement** des paiements.
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-1. Dans le centre d’administration, accédez à **la** > page **factures &** > **paiement** des paiements.
-::: moniker-end
-
+1. Dans le Centre d’administration, accédez à la page **Facturation** > **Factures et paiements** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Modes de paiement</a>.
 2. Sélectionnez la ligne du mode de paiement à changer. Le volet droit répertorie tous les profils de facturation et les abonnements individuels qui utilisent le moyen de paiement sélectionné.
-
 3. Dans le volet droit, sélectionnez **Changer le mode de paiement pour tous les éléments**.
-
 4. Pour utiliser un mode de paiement existant, choisissez-le dans la liste déroulante, puis sélectionnez **Remplacer**.
     > [!NOTE]
     > Si vous avez des abonnements associés à un profil de facturation, vous pouvez uniquement utiliser une carte de débit ou de crédit pour les régler. Si vous avez des comptes bancaires répertoriés sur la page **Modes de paiement**, vous ne pouvez pas les sélectionner dans la liste déroulante.
-
 5. Pour ajouter un nouveau mode de paiement, sélectionnez **Ajouter un mode de paiement**.
-
 6. Dans le volet **Ajouter un mode de paiement**, entrez les informations de compte, puis sélectionnez **Enregistrer**. Vous devez utiliser un mode de paiement provenant du même pays que celui de votre client.
-
 7. Le nouveau mode de paiement est déjà sélectionné dans la liste déroulante. Sélectionnez **Remplacer**.
 
 ## <a name="change-a-payment-method-for-a-single-subscription"></a>Modifier un mode de paiement pour un abonnement unique
 
 Vous pouvez modifier le mode de paiement utilisé pour payer un seul abonnement.
 
-::: moniker range="o365-worldwide"
-1. Dans le centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
-::: moniker-end
-
-::: moniker range="o365-germany"
-1. Dans le centre d’administration, accédez à la page **Facturation** > **Produits**.
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-1. Dans le centre d’administration, accédez à la page **Facturation** > **Produits**.
-::: moniker-end
-
-2. Sous l’onglet **abonnements** , sélectionnez l’abonnement que vous souhaitez payer avec l’autre mode de paiement.
-
-3. Sous **facturation**, en regard de mode de paiement, sélectionnez **modifier**.
-
-4. En regard de votre mode de paiement existant, sélectionnez **modifier**.
-
-5. Dans la liste déroulante, choisissez un autre mode de paiement ou choisissez d’ajouter un mode de paiement.
-
-6. Si vous ajoutez un mode de paiement, entrez les informations sur la carte ou le compte, puis sélectionnez **Enregistrer**.
-
-7. Vérifiez que le mode de paiement sélectionné est correct, puis sélectionnez **Enregistrer**.
+1. Dans le centre d’administration, accédez à la page **facturation**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits</a> .
+2. Sous l’onglet **produits** , recherchez l’abonnement que vous souhaitez payer avec l’autre mode de paiement.
+3. Sélectionnez **autres actions** (trois points), puis sélectionnez **remplacer le mode de paiement**.
+4. Dans le volet **remplacer le mode de paiement** , dans la liste déroulante, choisissez un autre mode de paiement ou choisissez d’ajouter un mode de paiement.
+5. Si vous ajoutez un mode de paiement, entrez les informations sur la carte ou le compte, puis sélectionnez **Enregistrer**.
+6. Vérifiez que le mode de paiement sélectionné est correct, puis sélectionnez **remplacer**.
 
 ## <a name="delete-a-payment-method"></a>Supprimer un mode de paiement
 
@@ -159,52 +103,23 @@ Vous pouvez supprimer uniquement un mode de paiement qui n’est pas associé à
 
 Si aucun mode de paiement n’est associé à des abonnements ou des profils de facturation, vous pouvez immédiatement le supprimer.
 
-::: moniker range="o365-worldwide"
-1. Dans le centre d’administration, accédez à **la** > page **factures &** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">paiement</a> des paiements.
-::: moniker-end
-
-::: moniker range="o365-germany"
-1. Dans le centre d’administration, accédez à **la** > page **factures &** > **paiement** des paiements.
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-1. Dans le centre d’administration, accédez à **la** > page **factures &** > **paiement** des paiements.
-::: moniker-end
-
+1. Dans le Centre d’administration, accédez à la page **Facturation** > **Factures et paiements** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Modes de paiement</a>.
 2. Recherchez le mode de paiement à supprimer, sélectionnez les trois points, puis sélectionnez **supprimer**.
-
 3. En bas du volet droit, sélectionnez **supprimer**.
 
 ### <a name="delete-a-payment-method-with-subscriptions-or-billing-profiles-attached"></a>Supprimer un mode de paiement avec des abonnements ou des profils de facturation liés
 
 Si un mode de paiement est associé à des abonnements ou des profils de facturation, commencez par le remplacer par un mode de paiement existant, ou ajoutez-en un nouveau, puis supprimez l’ancien mode de paiement.
 
-::: moniker range="o365-worldwide"
-1. Dans le centre d’administration, accédez à **la** > page **factures &** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">paiement</a> des paiements.
-::: moniker-end
-
-::: moniker range="o365-germany"
-1. Dans le centre d’administration, accédez à **la** > page **factures &** > **paiement** des paiements.
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-1. Dans le centre d’administration, accédez à **la** > page **factures &** > **paiement** des paiements.
-::: moniker-end
-
+1. Dans le Centre d’administration, accédez à la page **Facturation** > **Factures et paiements** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Modes de paiement</a>.
 2. Sélectionnez la ligne du mode de paiement à supprimer. Le volet droit répertorie les abonnements existants qui utilisent ce mode de paiement.
-
 3. Dans le volet droit, sélectionnez **supprimer**.
-
 4. Pour utiliser un mode de paiement existant, sélectionnez-en un dans la liste déroulante, cliquez sur **suivant**, puis sélectionnez **supprimer**.
     > [!NOTE]
     > Si vous avez des abonnements associés à un profil de facturation, vous pouvez uniquement utiliser une carte de crédit pour les payer. Si vous avez des comptes bancaires répertoriés sur la page **modes de paiement** , ils ne sont pas disponibles dans la liste déroulante.
-
 5. Pour ajouter un nouveau mode de paiement, sélectionnez **Ajouter un mode de paiement**.
-
 6. Choisissez le type de mode de paiement que vous souhaitez ajouter, entrez les informations de compte, puis sélectionnez **Enregistrer**.
-
 7. Le nouveau mode de paiement est déjà sélectionné dans la liste déroulante. Sélectionnez **Suivant**.
-
 8. Sélectionnez **Supprimer**.
 
 ## <a name="troubleshoot-payment-methods"></a>Résolution des problèmes des modes de paiement
@@ -217,10 +132,8 @@ Si un mode de paiement est associé à des abonnements ou des profils de factura
 |**Je ne dispose que d’une carte ou d’un compte bancaire sur mon compte et je souhaite le supprimer.** |Si vous n’avez qu’un seul mode de paiement, vous devez le [remplacer par un nouveau mode de paiement](#replace-a-payment-method) avant de pouvoir le supprimer. |
 |**Je ne parviens pas à ajouter ma carte ou mon compte bancaire.**  |Vous devez utiliser un mode de paiement émis par le même pays que votre client. Si vous ne parvenez pas à entrer les informations de votre carte ou de votre compte bancaire, vous pouvez [contacter le support technique](../../admin/contact-support-for-business-products.md). |
 
-## <a name="related-articles"></a>Articles connexes
+## <a name="related-content"></a>Contenu connexe
 
-[Payez votre abonnement professionnel](pay-for-your-subscription.md)
-
-[Gérer les profils de facturation](manage-billing-profiles.md)
-
-[Modifier la fréquence de paiement](change-payment-frequency.md)
+[Payez votre abonnement professionnel](pay-for-your-subscription.md) (article) \
+[Gérer les profils de facturation](manage-billing-profiles.md) (article) \
+[Modifier votre fréquence de facturation](change-payment-frequency.md) (article)

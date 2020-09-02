@@ -6,7 +6,7 @@ author: JoeDavies-MSFT
 manager: laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
-ms.date: 09/11/2018
+ms.date: 08/31/2020
 f1.keywords:
 - NOCSH
 ms.reviewer: martincoetzer
@@ -17,42 +17,49 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: e76ed8869f2e3bc3198eeff6dc4fcec777d0ce26
-ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
+ms.openlocfilehash: 9eaea7579faedace50ca76a69997fbfd83e452bb
+ms.sourcegitcommit: 4ac96855d7c269a0055ca8943000b762a70ca4ba
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46898163"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47321910"
 ---
 # <a name="identity-and-device-access-configurations"></a>Configurations des identités et de l’accès aux appareils
 
-Cette série d’articles explique comment configurer un accès sécurisé aux services Cloud via les produits Enterprise Mobility + Security (EMS) en implémentant un environnement et une configuration recommandés, y compris un ensemble de stratégies d’accès conditionnel et des fonctionnalités associées. EMS est un composant essentiel de Microsoft 365. Vous pouvez utiliser ces conseils pour protéger l’accès à tous les services intégrés à Azure Active Directory, notamment les services Microsoft 365, d’autres services SaaS et les applications locales publiées avec le proxy d’application Azure AD. 
+Cette série d’articles explique comment configurer un accès sécurisé aux services Cloud via Microsoft 365 pour les produits d’entreprise en implémentant un environnement et une configuration recommandés, y compris un ensemble de stratégies d’accès conditionnel et des fonctionnalités associées. Vous pouvez utiliser ces conseils pour protéger l’accès à tous les services intégrés à Azure Active Directory (Azure AD), y compris les services Microsoft 365, d’autres services SaaS et les applications locales publiées avec le proxy d’application Azure AD.
 
-Ces recommandations sont alignées sur le score de sécurité Microsoft et le [score d’identité dans Azure ad](https://docs.microsoft.com/azure/active-directory/fundamentals/identity-secure-score), et augmentent ces scores pour votre organisation. Ces recommandations vous aideront également à mettre [en œuvre ces cinq étapes pour sécuriser votre infrastructure d’identité](https://docs.microsoft.com/azure/security/azure-ad-secure-steps). 
+Ces recommandations :
 
-Microsoft sait que certaines organisations ont des exigences ou des complexités d’environnement uniques. Si vous êtes l’une de ces organisations, utilisez ces recommandations comme point de départ. Toutefois, la plupart des organisations peuvent mettre en œuvre ces recommandations comme indiqué. 
+- Sont alignés avec le [score de sécurité Microsoft](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score) , ainsi que le [score d’identité dans Azure ad](https://docs.microsoft.com/azure/active-directory/fundamentals/identity-secure-score), et augmenteront ces scores pour votre organisation
+- Vous aidera à implémenter ces [cinq étapes pour sécuriser votre infrastructure d’identité](https://docs.microsoft.com/azure/security/azure-ad-secure-steps). 
+
+Si votre organisation a des besoins ou des complexités d’environnement uniques, utilisez ces recommandations comme point de départ. Toutefois, la plupart des organisations peuvent mettre en œuvre ces recommandations comme indiqué.
+
+>[!Note]
+>Microsoft vend également des licences Enterprise Mobility + Security (EMS) pour les abonnements Office 365. Les fonctionnalités d’EMS E3 et EMS E5 sont approximativement équivalentes à celles de Microsoft 365 E3 et Microsoft 365 E5. Pour plus d’informations, consultez la rubrique [forfaits EMS](https://www.microsoft.com/en-us/microsoft-365/enterprise-mobility-security/compare-plans-and-pricing) .
+>
 
 ## <a name="intended-audience"></a>Public cible
 
-Ces recommandations sont destinées aux architectes d’entreprise et aux professionnels de l’informatique qui sont familiarisés avec [Office 365](https://docs.microsoft.com/microsoft-365/admin) et [Microsoft Enterprise Mobility + Security](https://microsoft.com/ems), qui inclut, entre autres, Azure Active Directory (identité), Microsoft Intune (gestion des appareils) et Azure information protection (protection des données).
+Ces recommandations sont destinées aux architectes d’entreprise et aux professionnels de l’informatique qui sont familiarisés avec les services de productivité et de sécurité en nuage Microsoft 365, qui incluent Azure AD (Identity), Microsoft Intune (gestion des périphériques) et Azure information protection (protection des données).
 
 ### <a name="customer-environment"></a>Environnement du client
 
-Les stratégies recommandées s’appliquent aux organisations d’entreprise opérant entièrement dans le Cloud Microsoft et pour les clients ayant une infrastructure hybride (déployés sur site et dans le Cloud Microsoft).
+Les stratégies recommandées sont applicables aux organisations d’entreprise opérant entièrement dans le Cloud Microsoft et pour les clients ayant une infrastructure d’identité hybride, qui est une forêt de services de domaine Active Directory (AD DS) locale synchronisée avec un client Azure AD.
 
-La plupart des recommandations fournies s’appuient sur les services disponibles uniquement avec les licences Enterprise Mobility + Security (EMS) E5. Les recommandations présentées supposent que les fonctionnalités de licence EMS E5 sont complètes.
+La plupart des recommandations fournies s’appuient sur les services disponibles uniquement avec Microsoft 365 E5, Microsoft 365 E3 avec l’identité & les licences de module complémentaire Threat Protection, EMS E5 ou Azure Premium P2.
 
-Pour les organisations qui ne disposent pas de licences Enterprise Mobility + Security E5, Microsoft vous recommande au moins d’implémenter les fonctionnalités Azure AD Baseline protection incluses dans tous les plans. Vous trouverez plus d’informations dans l’article, [qu’est-ce que la protection de base](/azure/active-directory/active-directory-conditional-access-baseline-protection), dans la bibliothèque Azure ad.
+Pour les organisations qui ne disposent pas de ces licences, Microsoft vous recommande au moins d’implémenter les [paramètres de sécurité par défaut](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults), inclus dans tous les plans Microsoft 365. 
 
 ### <a name="caveats"></a>Observer lors
 
 Votre organisation peut être soumise à des exigences réglementaires ou autres en matière de conformité, notamment des recommandations spécifiques pouvant nécessiter l’application de stratégies qui divergent de ces configurations recommandées. Ces configurations recommandent des contrôles de l’utilisation qui n’étaient pas disponibles par le passé. Nous recommandons ces contrôles car nous pensons qu’ils représentent un équilibre entre la sécurité et la productivité.  
 
-Nous avons réalisé notre meilleure solution pour tenir compte de nombreuses exigences de protection de l’organisation, mais nous ne sommes pas en mesure de tenir compte de toutes les exigences possibles ou de tous les aspects spécifiques de votre organisation.
+Nous avons fait de notre mieux pour prendre en compte un grand nombre de besoins en matière de protection de l’organisation, mais nous ne sommes pas en mesure de tenir compte de toutes les exigences possibles ou de tous les aspects spécifiques de votre organisation.
 
 ## <a name="three-tiers-of-protection"></a>Trois niveaux de protection
 
-La plupart des organisations ont des besoins spécifiques en matière de sécurité et de protection des données. Ces besoins varient selon leur secteur d’activité et selon les postes de travail en leur sein. Par exemple, votre service juridique et les administrateurs peuvent exiger des contrôles de sécurité et de protection des informations supplémentaires concernant la correspondance de leur courrier électronique qui ne sont pas requis pour les autres utilisateurs de divisions. 
+La plupart des organisations ont des besoins spécifiques en matière de sécurité et de protection des données. Ces besoins varient selon leur secteur d’activité et selon les postes de travail en leur sein. Par exemple, votre service juridique et les administrateurs peuvent exiger des contrôles de sécurité et de protection des informations supplémentaires concernant la correspondance de leur courrier électronique qui ne sont pas requis pour d’autres divisions. 
 
 Chaque secteur d’activité possède aussi sa propre réglementation spécialisée. Au lieu de fournir une liste de toutes les options de sécurité possibles ou une recommandation par segment d’industrie ou fonction, des recommandations ont été fournies pour trois niveaux différents de sécurité et de protection pouvant être appliqués en fonction de la granularité de vos besoins.
 
@@ -60,7 +67,7 @@ Chaque secteur d’activité possède aussi sa propre réglementation spécialis
 - **Protection sensible**: certains clients disposent d’un sous-ensemble de données qui doivent être protégées à des niveaux supérieurs, ou nécessitent que toutes les données soient protégées à un niveau supérieur. Vous pouvez renforcer la protection de l’ensemble ou des ensembles de données spécifiques dans votre environnement Microsoft 365. Nous vous recommandons de protéger les identités et les appareils qui accèdent à des données sensibles avec des niveaux de sécurité comparables.  
 - **Hautement réglementé**: certaines organisations peuvent avoir une petite quantité de données qui est hautement classée, qui constituent des secrets commerciaux ou des données réglementées. Microsoft fournit des fonctionnalités pour aider les organisations à respecter de telles exigences, notamment de protection renforcée des appareils et des identités.
 
-![Cône de sécurité : tous les clients > certains clients > des clients spécifiques. Application étendue à une application spécifique](../media/M365-idquality-threetiers.png)
+![Cône de sécurité : tous les clients > certains clients > des clients spécifiques. Application étendue à une application spécifique](../media/microsoft-365-policies-configurations/M365-idquality-threetiers.png)
 
 Ce guide vous montre comment implémenter la protection des identités et des périphériques pour chacune de ces niveaux de protection. Utilisez ces conseils comme point de départ pour votre organisation et ajustez les stratégies pour répondre aux besoins spécifiques de votre organisation.
 
@@ -68,7 +75,7 @@ Il est important d'utiliser des niveaux de protection cohérents pour l'ensemble
 
 Le modèle **d’architecture Identity and Device protection for Office 365** vous indique les fonctionnalités qui sont comparables.
 
-![Miniature de l’affiche « protection des identités et des appareils pour Office 365 »](../media/O365_Identity_device_protection_thumb.png)<br/>
+![Miniature de l’affiche « protection des identités et des appareils pour Office 365 »](../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)<br/>
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [Plus de langues](https://www.microsoft.com/download/details.aspx?id=55032)
 
 De plus, consultez la solution « [déployer la protection des données pour la confidentialité des données](../solutions/information-protection-deploy.md) » pour protéger les informations stockées dans Microsoft 365.
@@ -77,34 +84,34 @@ De plus, consultez la solution « [déployer la protection des données pour la 
 
 L’implémentation d’une stratégie de sécurité nécessite des compromis entre la sécurité et la productivité. Il est utile d’évaluer la façon dont chaque décision influe sur l’équilibre de la sécurité, des fonctionnalités et de la convivialité.
 
-![La sécurité, les fonctionnalités et la facilité d’utilisation de l’équilibrage de la sécurité.](../media/policies-configurations/security-triad.png)
+![La sécurité, les fonctionnalités et la facilité d’utilisation de l’équilibrage de la sécurité.](../media/microsoft-365-policies-configurations/security-triad.png)
 
 Les recommandations fournies sont basées sur les principes suivants :
 
-- Connaître votre public et s’adapte à ses exigences en matière de sécurité et de fonctionnement.
+- Connaître vos utilisateurs et répondre à leurs besoins en matière de sécurité et de fonctionnement.
 - Appliquer une stratégie de sécurité juste à temps et s’assurer qu’elle est significative.
 
 ## <a name="services-and-concepts-for-identity-and-device-access-protection"></a>Services et concepts relatifs à la protection de l’accès aux identités et aux appareils
 
-Microsoft 365 pour Enterprise est conçu pour les grandes organisations et intègre Office 365 Enterprise, Windows 10 entreprise et Enterprise Mobility + Security (EMS), afin de permettre à chacun d’être créatif et de collaborer en toute sécurité.
+Microsoft 365 pour Enterprise est conçu pour les grandes organisations afin de permettre à chacun d’être créatif et de collaborer en toute sécurité.
 
 Cette section fournit une vue d’ensemble des services et des fonctionnalités Microsoft 365 qui sont importants pour l’accès aux identités et aux appareils.
 
-### <a name="microsoft-azure-active-directory"></a>Microsoft Azure Active Directory
+### <a name="azure-ad"></a>Azure AD
 
-Azure AD fournit une suite complète de fonctionnalités de gestion des identités. Pour sécuriser l’accès, nous vous recommandons d’utiliser les fonctionnalités suivantes :
+Azure AD fournit une suite complète de fonctionnalités de gestion des identités. Nous vous recommandons d’utiliser ces fonctionnalités pour sécuriser l’accès.
 
-- **[Réinitialisation du mot de passe en libre-service](/azure/active-directory/authentication/concept-sspr-howitworks)**: permet à vos utilisateurs de réinitialiser leur mot de passe en toute sécurité et sans intervention de l’assistance, en fournissant la vérification de plusieurs méthodes d’authentification que l’administrateur peut contrôler.
+| Fonctionnalité | Description | Licence |
+|:-------|:-----|:-------|
+| [Authentification multifacteur (MFA)](/azure/active-directory/authentication/concept-mfa-howitworks) | L’authentification multifacteur exige que les utilisateurs fournissent deux formes de vérification, telles qu’un mot de passe utilisateur, ainsi qu’une notification de l’application Microsoft Authenticator ou d’un appel téléphonique. MFA réduit considérablement le risque que des informations d’identification volées puissent être utilisées pour accéder à votre environnement. Microsoft 365 utilise le service d’authentification multifacteur Azure pour les connexions MFA. | Microsoft 365 E3 ou E5 |
+| [Accès conditionnel](/azure/active-directory/conditional-access/overview) | Azure AD évalue les conditions de connexion de l’utilisateur et utilise des stratégies d’accès conditionnel pour déterminer l’accès autorisé. Par exemple, dans ce guide, nous vous montrons comment créer une stratégie d’accès conditionnel pour exiger la conformité de l’appareil pour l’accès aux données sensibles. Cela réduit considérablement le risque qu’un pirate avec son propre appareil et des informations d’identification dérobées puisse accéder à vos données sensibles. Il protège également les données sensibles sur les appareils, car les appareils doivent répondre à des exigences spécifiques en matière d’intégrité et de sécurité. | Microsoft 365 E3 ou E5 |
+| [Groupes Azure AD](/azure/active-directory/fundamentals/active-directory-manage-groups) | Les règles d’accès conditionnel, la gestion des appareils avec Intune et même les autorisations sur les fichiers et les sites de votre organisation dépendent de l’affectation à des comptes d’utilisateurs ou à des groupes Azure AD. Nous vous recommandons de créer des groupes Azure AD qui correspondent aux niveaux de protection que vous implémentez. Par exemple, votre personnel exécutif est probablement plus à même de cibler des pirates. Par conséquent, il est logique d’ajouter les comptes d’utilisateur de ces employés à un groupe Azure AD et d’affecter ce groupe aux stratégies d’accès conditionnelles et à d’autres stratégies qui appliquent un niveau de protection plus élevé pour l’accès. | Microsoft 365 E3 ou E5 |
+| [Enregistrement de l’appareil](/azure/active-directory/devices/overview) | Vous inscrivez un appareil dans Azure AD pour créer une identité pour l’appareil. Cette identité est utilisée pour authentifier l’appareil lorsqu’un utilisateur se connecte et pour appliquer des règles d’accès conditionnel qui nécessitent des PC joints à un domaine ou des PC conformes. Pour ce guide, nous utilisons l’inscription d’appareil pour inscrire automatiquement des ordinateurs Windows associés à un domaine. L’enregistrement d’appareil est une condition préalable à la gestion des appareils avec Intune. | Microsoft 365 E3 ou E5 |
+| [Azure AD Identity Protection](/azure/active-directory/identity-protection/overview) | Vous permet de détecter les vulnérabilités potentielles affectant les identités de votre organisation et de configurer la stratégie de correction automatisée sur un risque de connexion faible, moyen et élevé, ainsi que sur un risque utilisateur. Ces instructions s’appuient sur cette évaluation des risques pour appliquer des stratégies d’accès conditionnel pour l’authentification multifacteur. Ce guide inclut également une stratégie d’accès conditionnel qui exige que les utilisateurs modifient leur mot de passe si l’activité à haut risque est détectée pour leur compte. | Microsoft 365 E5, Microsoft 365 E3 avec l’identité & les licences de module complémentaire Threat Protection, EMS E5 ou Azure Premium P2 |
+| [Réinitialisation du mot de passe en libre-service (SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks) | Autorisez vos utilisateurs à réinitialiser leur mot de passe en toute sécurité et sans intervention de l’assistance, en fournissant la vérification de plusieurs méthodes d’authentification que l’administrateur peut contrôler. | Microsoft 365 E3 ou E5 |
+||||
 
-- **[Authentification multifacteur (MFA) : l’authentification multifacteur](/azure/active-directory/authentication/concept-mfa-howitworks)** exige que les utilisateurs fournissent deux formes de vérification, telles qu’un mot de passe utilisateur, ainsi qu’une notification de l’application Microsoft Authenticator ou d’un appel téléphonique. MFA réduit considérablement le risque qu’une identité volée puisse être utilisée pour accéder à votre environnement.
-
-- **[Accès conditionnel](/azure/active-directory/conditional-access/overview)**: Azure ad évalue les conditions de connexion de l’utilisateur et utilise des stratégies d’accès conditionnel que vous créez pour autoriser l’accès. Par exemple, dans ce guide, nous vous montrons comment créer une stratégie d’accès conditionnel pour exiger la conformité de l’appareil pour l’accès aux données sensibles. Cela réduit considérablement le risque qu’un pirate disposant d’une identité volée puisse accéder à vos données sensibles. Il protège également les données sensibles sur les appareils, car les appareils répondent à des exigences spécifiques en matière d’intégrité et de sécurité.
-
-- Les **[groupes Azure ad](/azure/active-directory/fundamentals/active-directory-manage-groups)**: les règles d’accès conditionnel, la gestion des périphériques avec Intune et même les autorisations sur les fichiers et les sites de votre organisation, dépendent de l’attribution à des groupes d’utilisateurs et/ou Azure ad. Nous vous recommandons de créer des groupes Azure AD qui correspondent aux niveaux de protection que vous implémentez. Par exemple, votre personnel exécutif est probablement plus à même de cibler des pirates. Par conséquent, il est logique d’affecter ces employés à un groupe Azure AD et d’affecter ce groupe aux stratégies d’accès conditionnelles et à d’autres stratégies qui appliquent un niveau de protection plus élevé pour l’accès.
-
-- **[Inscription](/azure/active-directory/devices/overview)** de l’appareil : vous inscrivez un appareil dans Azure AD pour fournir une identité à l’appareil. Cette identité est utilisée pour authentifier l’appareil lorsqu’un utilisateur se connecte et pour appliquer des règles d’accès conditionnel qui nécessitent des PC joints à un domaine ou des PC conformes. Pour ce guide, nous utilisons l’inscription de l’appareil pour enregistrer automatiquement des ordinateurs Windows associés à un domaine. L’inscription de l’appareil est une condition préalable à la gestion des appareils avec Intune. 
-
-- **[Azure ad Identity Protection](/azure/active-directory/identity-protection/overview)**: Azure ad Identity Protection vous permet de détecter les vulnérabilités potentielles affectant les identités de votre organisation et de configurer une stratégie de correction automatisée sur un risque de connexion faible, moyen et élevé et de risque utilisateur. Ces instructions s’appuient sur cette évaluation des risques pour appliquer des stratégies d’accès conditionnel pour l’authentification multifacteur. Ce guide inclut également une stratégie d’accès conditionnel qui exige que les utilisateurs modifient leur mot de passe si l’activité à haut risque est détectée pour leur compte.
+![Composants de l’accès aux identités et aux appareils.](../media/microsoft-365-policies-configurations/identity-device-access-components.png)
 
 ### <a name="microsoft-intune"></a>Microsoft Intune
 
@@ -118,15 +125,19 @@ Ce guide vous montre comment créer des stratégies recommandées pour appliquer
 
 ### <a name="microsoft-365"></a>Microsoft 365
 
-Ce guide vous montre comment implémenter un ensemble de stratégies pour protéger l’accès à Office 365, notamment Exchange Online, SharePoint Online et OneDrive entreprise. En plus de mettre en œuvre ces stratégies, nous vous recommandons d’augmenter également le niveau de protection de votre client à l’aide de ces ressources :
+Ce guide vous montre comment implémenter un ensemble de stratégies pour protéger l’accès aux services Cloud de Microsoft 365, notamment Microsoft Teams, Exchange Online, SharePoint Online et OneDrive entreprise. En plus de mettre en œuvre ces stratégies, nous vous recommandons d’augmenter également le niveau de protection de votre client à l’aide de ces ressources :
 
-- [Configurez votre client pour renforcer la sécurité](https://docs.microsoft.com/microsoft-365/security/office-365-security/tenant-wide-setup-for-increased-security): ces recommandations s’appliquent à la sécurité de base pour votre client.
-- Feuille [de route de sécurité Microsoft 365 : les principales priorités des 30 premiers jours, 90 jours et au-delà](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap): ces recommandations incluent la journalisation, la gouvernance des données, l’accès administrateur et la protection contre les menaces.
+- [Configurer votre locataire pour une sécurité accrue](../security/office-365-security/tenant-wide-setup-for-increased-security.md)
 
+  Recommandations qui s’appliquent à la sécurité de base pour votre client.
+
+- [Feuille de route de sécurité : principales priorités des 30 premiers jours, 90 jours et au-delà](../security/office-365-security/security-roadmap.md)
+
+  Les recommandations qui incluent la journalisation, la gouvernance des données, l’accès administrateur et la protection contre les menaces.
 
 ### <a name="windows-10-and-microsoft-365-apps-for-enterprise"></a>Windows 10 et Microsoft 365 Apps for enterprise
 
-Les applications Windows 10 et Microsoft 365 pour Enterprise sont l’environnement client recommandé pour les PC. Nous vous recommandons Windows 10, car Azure est conçu pour offrir l’expérience la plus facile possible pour les versions locale et Azure AD. Windows 10 inclut également des fonctionnalités de sécurité avancées qui peuvent être gérées via Intune. Microsoft 365 Apps for Enterprise inclut les versions les plus récentes des applications Office. Ces éléments utilisent l’authentification moderne, qui est plus sécurisée et nécessite un accès conditionnel. Ces applications incluent également des outils de sécurité et de conformité améliorés.
+Windows 10 avec Microsoft 365 apps pour entreprises est l’environnement client recommandé pour les PC. Nous vous recommandons d’utiliser Windows 10 car Azure est conçu pour offrir l’expérience la plus facile possible pour les versions locale et Azure AD. Windows 10 inclut également des fonctionnalités de sécurité avancées qui peuvent être gérées via Intune. Microsoft 365 Apps for Enterprise inclut les versions les plus récentes des applications Office. Ces éléments utilisent l’authentification moderne, qui est plus sécurisée et nécessite un accès conditionnel. Ces applications incluent également des outils de sécurité et de conformité améliorés.
 
 ## <a name="applying-these-capabilities-across-the-three-tiers-of-protection"></a>Application de ces fonctionnalités aux trois niveaux de protection
 
@@ -137,14 +148,23 @@ Le tableau suivant résume nos recommandations pour l’utilisation de ces fonct
 |**Appliquer une authentification multifacteur**|En cas de risque de connexion moyen ou supérieur|En cas de risque de connexion faible ou supérieur|Pour toutes les nouvelles sessions|
 |**Appliquer la modification du mot de passe**|Pour les utilisateurs à haut risque|Pour les utilisateurs à haut risque|Pour les utilisateurs à haut risque|
 |**Appliquer la protection des applications Intune**|Oui|Oui|Oui|
-|**Appliquer l’enregistrement Intune (COD)**|Exiger un PC conforme ou joint à un domaine, mais autoriser les téléphones/tablettes BYOD|Exiger un appareil compatible ou joint à un domaine|Exiger un appareil compatible ou joint à un domaine|
+|**Appliquer l’enregistrement Intune pour l’appareil appartenant à l’Organisation**|Exiger un PC conforme ou joint à un domaine, mais autoriser les téléphones et les tablettes BYOD|Exiger un appareil compatible ou joint à un domaine|Exiger un appareil compatible ou joint à un domaine|
 
 ## <a name="device-ownership"></a>Propriété des appareils
 
-Le tableau ci-dessus reflète la tendance pour de nombreuses organisations à prendre en charge un mélange d’appareils appartenant à une entreprise, ainsi que des appareils personnels ou BYODs, pour permettre une productivité mobile au sein du personnel. Les stratégies de protection des applications Intune garantissent que les courriers électroniques sont protégés contre les exfiltrating de l’application mobile Outlook et d’autres applications mobiles Office, qu’il s’agisse d’appareils appartenant à une entreprise ou d’BYODs.  
+Le tableau ci-dessus reflète la tendance pour de nombreuses organisations à prendre en charge un mélange d’appareils appartenant à une organisation, ainsi que des périphériques personnels ou BYODs pour permettre une productivité mobile au sein du personnel. Les stratégies de protection des applications Intune garantissent que les messages électroniques sont protégés contre les exfiltrating de l’application mobile Outlook et d’autres applications mobiles Office, sur les appareils appartenant à une organisation et BYODs.  
 
-Nous recommandons que les appareils appartenant à une entreprise soient gérés par Intune ou par un domaine joint pour appliquer des protections et des contrôles supplémentaires. En fonction de la sensibilité des données, votre organisation peut choisir de ne pas autoriser BYODs pour des populations d’utilisateurs spécifiques ou des applications spécifiques.
+Nous recommandons que les appareils appartenant à une organisation soient gérés par Intune ou par un domaine joint pour appliquer des protections et des contrôles supplémentaires. En fonction de la sensibilité des données, votre organisation peut choisir de ne pas autoriser BYODs pour des populations d’utilisateurs spécifiques ou des applications spécifiques.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="steps-in-the-process-of-configuring-identity-and-device-access"></a>Étapes du processus de configuration de l’accès aux identités et aux appareils
+
+![Étapes de configuration de l’accès aux identités et aux appareils.](../media/microsoft-365-policies-configurations/identity-device-access-steps.png)
+
+1. Configurez les fonctionnalités d’identité prérequises et leurs paramètres.
+2. Configurez les stratégies d’accès conditionnel d’accès et d’identité les plus courantes.
+3. Configurez les stratégies d’accès conditionnel pour les utilisateurs invités et externes.
+4. Configurez des stratégies d’accès conditionnel pour les applications Cloud Microsoft 365, telles que Microsoft Teams, Exchange Online et SharePoint.
+
+## <a name="next-step"></a>Étape suivante
 
 [Tâches préalables à l’implémentation de stratégies d’accès aux identités et aux appareils](identity-access-prerequisites.md)

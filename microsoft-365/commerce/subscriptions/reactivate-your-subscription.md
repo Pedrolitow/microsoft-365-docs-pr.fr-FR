@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,19 +19,15 @@ ms.custom:
 - fwlink 874703
 - AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
-- GEA150
 ms.assetid: 23aa9dd5-a2b0-42f5-8893-9541d2f3761f
 description: Découvrez comment réactiver votre abonnement lorsqu’il arrive à expiration, ou si Microsoft le désactive, ou si vous l’annulez au milieu.
-ms.openlocfilehash: 922646dc02cbe8ed2072920a92c5c818d9f682a9
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: cbd5fbc5bd6423f6583701682e63ed93206b562e
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403233"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324291"
 ---
 # <a name="reactivate-your-subscription"></a>Réactiver votre abonnement
 
@@ -44,24 +40,21 @@ ms.locfileid: "44403233"
 
 Si votre abonnement expire ou a été désactivé par Microsoft, ou si vous l’avez annulé au milieu d’un abonnement, vous pouvez le réactiver dans le centre d’administration.
   
- **Vous n’êtes pas administrateur ?** Contactez votre administrateur pour réactiver votre abonnement.
+## <a name="before-you-begin"></a>Avant de commencer
+
+Pour réactiver un abonnement, vous devez être administrateur général ou administrateur de facturation. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+
+**Vous n’êtes pas administrateur ?** Contactez votre administrateur pour réactiver votre abonnement.
+
+## <a name="reactivate-a-subscription"></a>Réactiver un abonnement
 
 ::: moniker range="o365-worldwide"
 
 1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
-
-2. Sur la page **vos produits** , recherchez l’abonnement que vous souhaitez réactiver. Dans la section **facturation** , sélectionnez **réactiver**.
-  
-    Si l’option **réactiver** n’apparaît pas comme action disponible, [appelez le support technique](../../admin/contact-support-for-business-products.md) pour réactiver votre abonnement.
-
-3. Confirmez vos informations de paiement. Vous pouvez mettre à jour vos informations de paiement existantes ici. Lorsque vous avez terminé la saisie de votre mode de paiement, sélectionnez **réactiver**.
-
-      - Si votre abonnement a expiré, une fois que vous avez envoyé vos détails de paiement, votre abonnement revient à un état actif et la prochaine date de **facturation** s’étend d’un mois ou d’un an, en fonction de l’engagement actuel de votre abonnement. Si vous payez par carte de crédit ou compte bancaire, votre compte sera débité dans le cadre du montant de la prolongation. Si vous payez par facture, la prolongation sera reflétée sur la prochaine facture. Pour vous assurer que votre abonnement n’expire pas, [activez la facturation périodique](renew-your-subscription.md#turn-recurring-billing-off-or-on).
-
-    > [!NOTE]
-    > La possibilité de payer par compte bancaire n’est pas disponible dans certains pays ou régions.
-  
-      - Si votre abonnement a été annulé, ou a été désactivé en raison d’un paiement non reçu, il revient à un état actif et votre prochaine date de **facturation** reste la même.
+2. Sur l’onglet **produits** , recherchez l’abonnement que vous souhaitez réactiver. Sélectionnez **autres actions** (trois points), puis **réactiver cet abonnement**. \
+    Si vous ne voyez pas **réactiver cet abonnement**, [Contactez le support technique](../../admin/contact-support-for-business-products.md).
+3. Dans le volet **réactiver cet abonnement** , sélectionnez un mode de paiement dans la liste déroulante ou sélectionnez **Ajouter un mode de paiement**.
+4. Sélectionnez **Enregistrer**.
 
 ::: moniker-end
 
@@ -77,12 +70,12 @@ Si votre abonnement expire ou a été désactivé par Microsoft, ou si vous l’
 
 3. Entrez vos informations de paiement. Vous pouvez mettre à jour vos informations de paiement existantes ici.
 
-      - Si votre abonnement a expiré, une fois que vous avez envoyé vos détails de paiement, votre abonnement revient à un état actif et la prochaine date de **facturation** s’étend d’un mois ou d’un an, en fonction de l’engagement actuel de votre abonnement. Si vous payez par carte de crédit ou compte bancaire, votre compte sera débité dans le cadre du montant de la prolongation. Si vous payez par facture, la prolongation sera reflétée sur la prochaine facture. Pour vous assurer que votre abonnement n’expire pas, [activez la facturation périodique](renew-your-subscription.md#turn-recurring-billing-off-or-on).
+   Si votre abonnement a expiré, une fois que vous avez envoyé vos détails de paiement, votre abonnement revient à un état actif et la prochaine date de **facturation** s’étend d’un mois ou d’un an, en fonction de l’engagement actuel de votre abonnement. Si vous payez par carte de crédit ou compte bancaire, votre compte sera débité dans le cadre du montant de la prolongation. Si vous payez par facture, la prolongation sera reflétée sur la prochaine facture. Pour vous assurer que votre abonnement n’expire pas, [activez la facturation périodique](renew-your-subscription.md#turn-recurring-billing-off-or-on).
 
-    > [!NOTE]
-    > La possibilité de payer par compte bancaire n’est pas disponible dans certains pays ou régions.
+   > [!NOTE]
+   > La possibilité de payer par compte bancaire n’est pas disponible dans certains pays ou régions.
   
-      - Si votre abonnement a été annulé, ou a été désactivé en raison d’un paiement non reçu, il revient à un état actif et votre prochaine date de **facturation** reste la même.
+   Si votre abonnement a été annulé, ou a été désactivé en raison d’un paiement non reçu, il revient à un état actif et votre prochaine date de **facturation** reste la même.
 
 ::: moniker-end
 
@@ -98,11 +91,17 @@ Si votre abonnement expire ou a été désactivé par Microsoft, ou si vous l’
 
 3. Entrez vos informations de paiement. Vous pouvez mettre à jour vos informations de paiement existantes ici.
 
-    - Si votre abonnement a expiré, une fois que vous avez envoyé vos détails de paiement, votre abonnement revient à un état actif et la prochaine date de **facturation** s’étend d’un mois ou d’un an, en fonction de l’engagement actuel de votre abonnement. Si vous payez par carte de crédit ou compte bancaire, votre compte sera débité dans le cadre du montant de la prolongation. Si vous payez par facture, la prolongation sera reflétée sur la prochaine facture. Pour vous assurer que votre abonnement n’expire pas, [activez la facturation périodique](renew-your-subscription.md#turn-recurring-billing-off-or-on).
+   Si votre abonnement a expiré, une fois que vous avez envoyé vos détails de paiement, votre abonnement revient à un état actif et la prochaine date de **facturation** s’étend d’un mois ou d’un an, en fonction de l’engagement actuel de votre abonnement. Si vous payez par carte de crédit ou compte bancaire, votre compte sera débité dans le cadre du montant de la prolongation. Si vous payez par facture, la prolongation sera reflétée sur la prochaine facture. Pour vous assurer que votre abonnement n’expire pas, [activez la facturation périodique](renew-your-subscription.md#turn-recurring-billing-off-or-on).
 
-    > [!NOTE]
-    > La possibilité de payer par compte bancaire n’est pas disponible dans certains pays ou régions.
+   > [!NOTE]
+   > La possibilité de payer par compte bancaire n’est pas disponible dans certains pays ou régions.
   
-    - Si votre abonnement a été annulé, ou a été désactivé en raison d’un paiement non reçu, il revient à un état actif et votre prochaine date de **facturation** reste la même.
+   Si votre abonnement a été annulé, ou a été désactivé en raison d’un paiement non reçu, il revient à un état actif et votre prochaine date de **facturation** reste la même.
 
 ::: moniker-end
+
+## <a name="related-content"></a>Contenu connexe
+
+[Essayez ou achetez un abonnement Microsoft 365 pour les entreprises](../try-or-buy-microsoft-365.md) (article) \
+[Renouveler Microsoft 365 pour les entreprises](renew-your-subscription.md) (article) \
+[Annuler votre abonnement](cancel-your-subscription.md) (article)

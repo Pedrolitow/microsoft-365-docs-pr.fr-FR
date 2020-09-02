@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Vue d’ensemble du score de productivité Microsoft.
-ms.openlocfilehash: 47675f37e9146586b3fe0dd8d974887fd2435bf3
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: a7f6fc5fef9189f7478bcc67e1d24bdf037f561d
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307476"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324433"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Score de productivité Microsoft (aperçu)
 
@@ -40,9 +40,9 @@ Nous fournissons des données, des informations et des recommandations dans deux
 
 - **Expérience de l’employé :** Nous mesurons comment les utilisateurs collaborent sur le contenu, comment ils utilisent les produits Microsoft 365 pour communiquer et s’ils utilisent Microsoft 365 sur toutes les plateformes. 
 
-    Ces informations sont fournies car, lorsque les personnes collaborent en ligne, elles font gagner du temps. Lorsqu’ils ont la liberté de travailler sur n’importe quel appareil, ils sont plus productifs et satisfaits. Lorsqu’ils peuvent communiquer de manière flexible, ils sont plus efficaces, forment de meilleurs relations et votre organisation est plus unifiée. Pour obtenir des preuves, consultez la rubrique [Forrester Report](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
+    Ces informations sont fournies car, lorsque les personnes collaborent en ligne, elles font gagner du temps. En toute liberté de travail sur n’importe quel appareil, ils sont plus productifs et satisfaits. La communication de manière flexible rend les personnes plus efficaces, forment de meilleurs relations et votre organisation est plus unifiée. Pour obtenir des preuves, consultez la rubrique [Forrester Report](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
 
-- **Expérience technologique :** La productivité dépend de la technologie fiable et performante, ainsi que de l’utilisation efficace de Microsoft 365. Nous fournissons des [analyses de point de terminaison](https://aka.ms/endpointanalytics), ce qui vous permet de comprendre comment la productivité de vos utilisateurs peut être affectée par les problèmes de performances et d’intégrité avec votre matériel et votre logiciel de point de terminaison, tout en fournissant des actions recommandées pour les corriger ; et nous fournissons des informations de connectivité réseau Microsoft 365 pour votre organisation.
+- **Expérience technologique :** La productivité dépend de la technologie fiable et performante, ainsi que de l’utilisation efficace de Microsoft 365. Nous fournissons des [analyses de point de terminaison](https://aka.ms/endpointanalytics), ce qui vous permet de comprendre comment la productivité de vos utilisateurs peut être affectée par les problèmes de performances et d’intégrité liés à votre matériel et logiciels de point de terminaison. Nous fournissons également les actions recommandées pour les résoudre, ainsi que les analyses de connectivité réseau Microsoft 365 pour votre organisation.
 
 Voir [qu’est-ce que le point de terminaison Analytics](https://docs.microsoft.com/mem/analytics/overview) pour une vue d’ensemble et les détails prérequis. Pour en savoir plus sur les informations sur la connectivité réseau Microsoft 365, consultez [la rubrique Network Connectivity Overview](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-networking-overview).
   
@@ -66,7 +66,7 @@ Votre score de productivité est basé sur les scores combinés de vos catégori
 
 Le score de productivité inclut des données à partir d’Exchange, SharePoint, OneDrive, teams, Word, Excel, PowerPoint, OneNote, Outlook, Yammer et Skype.
 
-Votre score est mis à jour quotidiennement et reflète les actions de l’utilisateur effectuées au cours des 28 à 180 derniers jours (y compris la date en cours).
+Votre score est mis à jour quotidiennement et reflète les actions de l’utilisateur effectuées au cours des 28 derniers (y compris le jour actuel).
 
 
 ## <a name="pre-requisites"></a>Conditions préalables 
@@ -111,15 +111,15 @@ Chaque page de détails de catégorie présente les mesures principales de l’a
 
 ### <a name="content-collaboration-details"></a>Détails de la collaboration de contenu
 
-Le principal aperçu de la collaboration de contenu est le nombre de personnes qui créent, lisent et collaborent (modifier et partager) en ligne. Ces mesures sont importantes car les recherches montrent que lorsque des personnes collaborent avec des fichiers en ligne, chaque personne enregistre une moyenne de 100 minutes, soit presque 2 heures par semaine.
+Le principal aperçu de la collaboration de contenu est le nombre de personnes qui créent, lisent et collaborent (modifier et partager) en ligne. Ces mesures sont importantes car les recherches montrent que lorsque des personnes collaborent avec des fichiers en ligne, chaque personne enregistre une moyenne de 2 heures par semaine.
 
-Nous définissons la collaboration de contenu comme une seule personne à la création et au partage d’un fichier Office, puis au moins une autre personne qui le modifie. 
+Nous définissons la collaboration de contenu comme une seule personne à la création et au partage d’un fichier Office, puis au moins une autre personne la lisant. 
 
-Lecteurs : personnes qui accèdent ou téléchargent des fichiers en ligne dans OneDrive ou SharePoint.
+**Lecteurs**: personnes qui accèdent ou téléchargent des fichiers en ligne dans OneDrive ou SharePoint.
 
 **Créateurs :** Les personnes qui créent, modifient, chargent, synchronisent, archivent, copient ou déplacent des fichiers OneDrive ou SharePoint en ligne.
 
-Collaborateurs : personnes qui collaborent avec des fichiers en ligne à l’aide de OneDrive ou de SharePoint. Deux personnes sont des collaborateurs qui lisent ou modifient un document Cloud Word, Excel, PowerPoint, OneNote ou PDF en ligne après la création ou la modification par une autre personne, dans une fenêtre de 28 jours.
+**Collaborateurs**: personnes qui collaborent avec des fichiers en ligne à l’aide de OneDrive ou de SharePoint. Deux personnes sont des collaborateurs, si l’une d’elles lit ou modifie une application Office en ligne ou un document Cloud PDF après que l’autre personne l’a créée ou modifiée, dans une fenêtre de 28 jours.
 
 Les types de fichiers pris en compte pour la collaboration sont Word, Excel, PowerPoint, OneNote et PDF.
 
@@ -127,7 +127,7 @@ Nous fournissons des informations sur les heures de démarrage et la configurati
 
 ### <a name="communication-details"></a>Détails de communication
 
-Le premier aperçu de la communication est la fréquence à laquelle les personnes de votre organisation utilisent la messagerie, la conversation et les publications communautaires pour communiquer. Cette compréhension s’explique par le fait que, lorsque les utilisateurs utilisent un grand nombre d’outils de communication en temps réel, ils peuvent choisir le mode de communication qui leur permet d’être le plus efficace et ils disposent d’outils tels que conversation et communautés qui les aident à développer des relations entre les différents emplacements Office.
+Le premier aperçu de la communication est la fréquence à laquelle les personnes de votre organisation utilisent la messagerie, la conversation et les publications communautaires pour communiquer. Lorsque les utilisateurs utilisent un grand nombre d’outils de communication en temps réel, ils peuvent choisir le mode de communication qui leur permet d’être le plus efficace, par exemple les conversations et les communautés qui les aident à développer des relations entre les différents emplacements Office.
 
 ### <a name="mobility-details"></a>Détails de la mobilité
 
@@ -153,4 +153,4 @@ Ce rapport aide les chefs d’entreprise à comprendre les éléments suivants 
 
 ## <a name="we-want-to-hear-from-you"></a>Nous souhaitons être informés
 
-Veuillez partager vos pensées sur la productivité et vos idées sur la façon de l’améliorer. Utilisez les sections de **Commentaires** dans le produit et/ou joignez-vous à l’équipe de score de productivité sur ProductivityScorePreview@service.microsoft.com.
+Partagez vos idées sur le score de productivité et vos idées sur la façon de l’améliorer. Utilisez les sections de **Commentaires** dans le produit et/ou joignez-vous à l’équipe de score de productivité sur ProductivityScorePreview@service.microsoft.com.
