@@ -1,7 +1,7 @@
 ---
 title: Principes fondamentaux de Microsoft 365 de la défense contre les attaques par déni de service
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,14 +15,14 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Utilisation des principes de base de l’absorption, de la détection et de l’atténuation dans sa défense contre les attaques par déni de service (DoS).
-ms.openlocfilehash: b04ec717f7c97e44c6ed4011156666e8c27f06c0
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: fb3446570dd8e99ccdb3005a6a7c90ca90a81aee
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46689819"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47331907"
 ---
-# <a name="core-principles-of-defense-against-denial-of-service-attacks"></a>Principes de base de la défense contre les attaques par déni de service
+# <a name="core-principles-of-defense-against-denial-of-service-attacks"></a>Principes fondamentaux de défense contre les attaques par déni de service
 
 Les trois principes fondamentaux de la défense contre les attaques DoS sur le réseau sont l’absorption, la détection et l’atténuation. L’absorption se produit avant la détection et la détection a lieu avant l’atténuation. L’absorption est la meilleure défense contre une attaque DoS. Si l’attaque ne peut pas être détectée, elle ne peut pas être atténuée. Toutefois, si même la plus petite attaque de refus de service ne peut pas être absorbée, les services ne seront pas en mesure de survivre suffisamment longtemps pour que l’attaque soit détectée.
 

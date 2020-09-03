@@ -1,7 +1,7 @@
 ---
 title: Conservation, suppression et destruction des données dans Microsoft 365
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Vue d’ensemble des stratégies Microsoft pour Microsoft 365 concernant la rétention, la suppression et la destruction des données.
-ms.openlocfilehash: c522c1a1a4de46a4fc36bd87a031be8b47c5523d
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 9708ed618528ce0ad5ef8656a85ffd4311395deb
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46689806"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47331895"
 ---
 # <a name="data-retention-deletion-and-destruction-in-microsoft-365"></a>Conservation, suppression et destruction des données dans Microsoft 365
 

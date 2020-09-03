@@ -1,7 +1,7 @@
 ---
 title: Migrations de boîtes aux lettres Microsoft 365
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: Cet article contient un bref résumé des migrations de boîtes aux lettres Microsoft 365 et une liste des applets de commande utilisées pour les migrations.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1a31eda9c33aa12e4f7c1fe3da4580eba9e1698a
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 86681cbca6f0899268ce11e233e8781619cb18e3
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46689944"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332315"
 ---
 # <a name="microsoft-365-mailbox-migrations"></a>Migrations de boîtes aux lettres Microsoft 365
 

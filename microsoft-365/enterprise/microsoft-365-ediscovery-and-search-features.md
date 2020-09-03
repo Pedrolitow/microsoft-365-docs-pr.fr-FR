@@ -1,7 +1,7 @@
 ---
 title: Présentation des fonctionnalités de découverte électronique et de recherche de Microsoft 365
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Vue d’ensemble de la fonctionnalité de découverte électronique et d’autres fonctionnalités de recherche dans Microsoft 365 pour l’utilisation et la transparence des audits.
-ms.openlocfilehash: 6a30e1aa687807d61b788bd75fcc63129ff0aa0b
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: ea7b221ab8fe2ff41d089bb344d2dce58002d0f5
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690061"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47331858"
 ---
 # <a name="microsoft-365-ediscovery-and-search-features-overview"></a>Présentation des fonctionnalités de découverte électronique et de recherche de Microsoft 365 
 

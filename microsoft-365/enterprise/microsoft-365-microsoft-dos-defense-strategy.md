@@ -1,7 +1,7 @@
 ---
 title: Stratégie de défense contre les attaques par déni de service Microsoft 365
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: Dans cet article, vous trouverez une vue d’ensemble de la stratégie de défense Microsoft pour les attaques par déni de service (DoS).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f28f7bcb9c6241404c8101bffe7268c5a1917ffa
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 3fc436dfe8a63575c8bbeefeed0653c329780247
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690092"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332279"
 ---
 # <a name="microsoft-365-denial-of-service-defense-strategy"></a>Stratégie de défense contre les attaques par déni de service Microsoft 365
 

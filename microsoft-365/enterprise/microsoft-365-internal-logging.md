@@ -1,7 +1,7 @@
 ---
 title: Journalisation interne de Microsoft 365 pour Microsoft 365 Engineering
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,14 +16,14 @@ f1.keywords:
 - NOCSH
 description: Dans cet article, vous trouverez une explication du fonctionnement de la journalisation interne pour Microsoft 365 Engineering Teams.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b4c4b1db876a6b68ec852adbbd51afe7386a1855
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 08f87ba682a88a7efd93735b160af49bf5468ca2
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695869"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332507"
 ---
-# <a name="internal-logging-for-microsoft-365-engineering"></a>Journalisation interne pour l’ingénierie Microsoft 365
+# <a name="internal-logging-for-microsoft-365-engineering"></a>Journalisation interne pour Microsoft 365 Engineering
 
 Outre les événements et les données de journalisation disponibles pour les clients, il existe également un système de collecte de données de journal interne disponible pour les ingénieurs Microsoft 365 de Microsoft. De nombreux types de données de journal sont téléchargés à partir des serveurs Microsoft 365 vers un service informatique interne et de grande taille appelé Cosmos. Chaque équipe de service télécharge les journaux d’audit de leurs serveurs respectifs dans la base de données Cosmos pour l’agrégation et l’analyse. Ce transfert de données se produit sur une connexion TLS validée par FIPS 140-2 sur des ports et protocoles approuvés spécifiquement à l’aide d’un outil Automation propriétaire appelé le chargeur de données Office (ODL). Les outils utilisés dans Microsoft 365 pour collecter et traiter des enregistrements d’audit n’autorisent pas les modifications permanentes ou irréversibles du contenu des enregistrements d’audit d’origine ou de l’ordre des heures.
 
