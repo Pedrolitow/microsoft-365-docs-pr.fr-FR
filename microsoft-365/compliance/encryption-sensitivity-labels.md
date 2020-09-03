@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configurez des étiquettes de confidentialité pour le chiffrement qui protège vos données en limitant l’accès et l’utilisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ae9131b4cd70cfca4cc32116a651bf4642ed94f1
-ms.sourcegitcommit: c4a7b227f7d9abd666dfb93e3ded78ba8288e649
+ms.openlocfilehash: dc7f1e181fcc2ffda6cd9b36596c164f49d23452
+ms.sourcegitcommit: 6ad2e4164ed59d5a58a0df9cb8413531c1be0986
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229434"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47334857"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restreindre l'accès au contenu grâce à la mise en place d'un chiffrement par les étiquettes de confidentialité 
 
@@ -211,9 +211,9 @@ Pour plus d’informations, reportez-vous à [Émetteur Rights Management et pro
 ### <a name="double-key-encryption"></a>Chiffrement à double clé
 
 > [!NOTE]
-> Cette fonctionnalité est actuellement déployée en préversion publique. Pour plus d’informations, voir [Annonce de la préversion publique du Chiffrement à double clé pour Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-security-and/announcing-public-preview-of-double-key-encryption-for-microsoft/ba-p/1534451).
+> Cette fonctionnalité est actuellement disponible en préversion publique. Pour plus d’informations, voir [Annonce de la préversion publique du Chiffrement à double clé pour Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-security-and/announcing-public-preview-of-double-key-encryption-for-microsoft/ba-p/1534451).
 
-Sélectionnez cette option une fois que vous avez configuré le service Chiffrement à double clé et que vous devez l’utiliser pour les documents et courriers auxquels cette étiquette est appliquée.
+Sélectionnez cette option une fois que vous avez configuré le service Chiffrement à double clé et que vous devez l’utiliser pour les fichiers et courriers auxquels cette étiquette est appliquée.
 
 Pour consulter des informations supplémentaires, la configuration requise et des instructions de configuration, voir [Chiffrement à double clé](double-key-encryption.md).
 
