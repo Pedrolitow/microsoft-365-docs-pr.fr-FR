@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: La protection contre la perte de données (DLP) dans le centre de sécurité &amp; conformité inclut 80 types d’informations sensibles que vous pouvez utiliser dans vos stratégies DLP. Cette rubrique répertorie tous ces types d'informations sensibles et indique ce qu'une stratégie DLP recherche pour chaque type.
-ms.openlocfilehash: 71969a58acd64c3e830da398288249cbb8610b5f
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: 17c32ea53d860e54a7c9a8fcf70778151c28c539
+ms.sourcegitcommit: 6ad2e4164ed59d5a58a0df9cb8413531c1be0986
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46797792"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47334847"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Définitions d’entités des types d’informations sensibles
 
@@ -506,9 +506,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
       <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_australian_tax_file_number" />
         <Match idRef="Keyword_Australia_Tax_File_Number" />
-        <Any minMatches="0" maxMatches="0">
-          <Match idRef="Keyword_number_exclusions" />
-        </Any>
       </Pattern>
     </Entity>
 ```
@@ -526,39 +523,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - déclaration d’impôts individuels
 - numéro de dossier fiscal
 - tfn
-
-#### <a name="keyword_number_exclusions"></a>Keyword_number_exclusions
-
-- 00000000
-- 11111111
-- 22222222
-- 33333333
-- 44444444
-- 55555555
-- 66666666
-- 77777777
-- 88888888
-- 99999999
-- 000000000
-- 111111111
-- 222222222
-- 333333333
-- 444444444
-- 555555555
-- 666666666
-- 777777777
-- 888888888
-- 999999999
-- 0000000000
-- 1111111111
-- 2222222222
-- 3333333333
-- 4444444444
-- 5555555555
-- 6666666666
-- 7777777777
-- 8888888888
-- 9999999999
 
 ## <a name="austria-drivers-license-number"></a>Numéro de permis de conduire autrichien
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du pilote de l’UE.
@@ -728,7 +692,9 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction  `Func_austria_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
+- La fonction’Func_austria_eu_
+
+_or_equivalent’trouve le contenu qui correspond au modèle. 
     
 - Un mot clé from  `Keywords_austria_eu_ssn_or_equivalent` est trouvé. 
     
@@ -1790,7 +1756,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Legal entity 
 - Legal entities 
 - Registration Status 
-- Business 
+- Professionnel 
 - Company
 - CNPJ 
 - Cadastro Nacional da Pessoa Jurídica 
@@ -2864,20 +2830,28 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="keyword_cc_verification"></a>Keyword_cc_verification
 
-- vérification de la carte
+- 
+vérification de la carte
+
 - numéro d’identification de la carte
 - cryptogramme
 - nic
 - cvc2
 - cvv2
-- pin block
+- 
+pin block
 - code de sécurité
+
 - numéro de sécurité
+
 - n° de sécurité
+
 - numéro d’émission
+
 - n° d’émission
 - cryptogramme
-- numéro de sécurité
+- 
+numéro de sécurité
 - numéro de sécurité
 - kreditkartenprüfnummer
 - kreditkartenprufnummer
@@ -2888,24 +2862,32 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - sicherheitsnummer
 - verfalldatum
 - codice di verifica
-- contre. sicurezza
-- cod sicurezza
+- contre.sicurezza
+- 
+cod sicurezza
 - n autorizzazione
 - código
 - codigo
-- contre. SEG
-- cod seg
+- contre.SEG
+- 
+cod seg
 - código de segurança
+
 - codigo de seguranca
+
 - codigo de segurança
+
 - código de seguranca
-- cód. segurança
-- contre. Seguranca COD. segurança
-- cód. seguranca
-- cód segurança
-- COD Seguranca COD Segurança
-- cód seguranca
+- cód.segurança
+- contre.seguranca
+- contre.segurança
+- cód.seguranca
+- cód segurança
+- COD Seguranca
+- COD Segurança
+- cód seguranca
 - número de verificação
+
 - numero de verificacao
 - ablauf
 - gültig bis
@@ -2913,54 +2895,79 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - gultig bis
 - gultigkeitsdatum
 - scadenza
-- data scad
+- 
+data scad
 - fecha de expiracion
+
 - fecha de venc
 - vencimiento
-- válido hasta
+- 
+válido hasta
 - valido hasta
 - vto
-- data de expiração
+- 
+data de expiração
 - data de expiracao
+
 - data em que expira
 - validade
 - valorisation
 - vencimento
-- Venc 
+- transaction
+- Numéro de transaction
+- Numéro de référence
+- セキュリティコード
+- セキュリティ コード
+- セキュリティナンバー
+- セキュリティ ナンバー
+- セキュリティ番号
+
 
 #### <a name="keyword_cc_name"></a>Keyword_cc_name
 
 - American
 - american express
 - americanexpress
+- americano espresso
+
 - Délivrance
 - MasterCard
 - master card
-- McDonald 
+- McDonald
 - MasterCard
-- master cards
-- diner’s Club
+- 
+master cards
+- Club de dîner
 - diners club
 - dinersclub
+- connaissance
 - discover card
 - discovercard
 - discover cards
 - JCB
+- BrandSmart
 - japanese card bureau
+
 - carte blanche
 - carteblanche
 - carte de crédit
 - CC #
 - n ° de CC :
-- date d’expiration
-- date d’exp
-- date d’expiration
 - Date d’expiration
 - date d’exp
-- date expiration
+
+- 
+date d’expiration
+- 
+date d’expiration
+- 
+date d’exp
+- 
+date expiration
 - carte bancaire
 - bankcard
-- numéro de carte
+- 
+numéro de carte
 - num de carte
 - carte
 - carte
@@ -2986,14 +2993,36 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - cartes de retrait
 - retrait
 - envoier
-- en route
+- 
+en route
 - type de carte
-- carte bancaire
-- carte de crédit
-- carte de credit
+
+- Cardmember ACCT
+- compte cardmember
+- Cardno
+- Carte d’entreprise
+- Cartes d’entreprise
+- Type de carte
+- Numéro de compte de carte
+- compte de membre de carte
+- Cardmember ACCT.
+- n° carte
+
+- n ° carte
 - numéro de carte
+
+- carte bancaire
+
+- carte de crédit
+
+- carte de credit
+
+- numéro de carte
+
 - numero de carte
+
 - nº de la carte
+
 - nº de carte
 - kreditkarte
 - karte
@@ -3003,61 +3032,124 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - kreditkarteninstitut
 - kreditkartentyp
 - eigentümername
-- kartennr 
+- kartennr
 - kartennummer
 - kreditkartennummer
 - kreditkarten-nummer
-- Carta di credito
+- 
+Carta di credito
 - Carta credito
-- Carta
+- No.Carta
 - n carta
-- Nr. Carta
-- nr carta
+- Nr.Carta
+- 
+nr carta
 - numero carta
+
 - numero della carta
+
 - numero di carta
+
 - tarjeta credito
+
 - tarjeta de credito
-- tarjeta crédito
-- tarjeta de crédito
+
+- 
+tarjeta crédito
+- 
+tarjeta de crédito
 - tarjeta de atm
+
 - tarjeta atm
+
 - tarjeta debito
+
 - tarjeta de debito
-- tarjeta débito
-- tarjeta de débito
+
+- 
+tarjeta débito
+- 
+tarjeta de débito
 - nº de tarjeta
-- Nbre. de tarjeta
-- no de tarjeta
+- Nbre.de tarjeta
+- non de Tarjeta
 - numero de tarjeta
+
 - número de tarjeta
+
 - tarjeta no
 - tarjetahabiente
-- cartão de crédito
+- 
+cartão de crédito
 - cartão de credito
+
 - cartao de crédito
+
 - cartao de credito
+
 - cartão de débito
+
 - cartao de débito
+
 - cartão de debito
+
 - cartao de debito
+
 - débito automático
 - debito automatico
-- número do cartão
-- numero do cartão 
+
+- 
+número do cartão
+- numero do cartão
+
 - número do cartao
+
 - numero do cartao
+
 - número de cartão
+
 - numero de cartão
+
 - número de cartao
+
 - numero de cartao
-- nº do cartão
+
+- n º do cartão
 - nº do cartao
-- n º. do cartão
-- no do cartão
-- no do cartao
-- Nbre. do cartão
-- Nbre. do cartao 
+- n º.do cartão
+- non cartão
+- non cartao
+- Nbre.do cartão
+- Nbre.do cartao
+- クレジットカード番号
+- クレジットカードナンバー
+- クレジットカード＃
+- クレジットカード
+- クレジット
+- クレカ
+- カード番号
+- カードナンバー
+- カード＃
+- アメックス
+- アメリカンエクスプレス
+- アメリカン エクスプレス
+- Visaカード
+- Visa カード
+- マスターカード
+- マスター カード
+- マスター
+- ダイナースクラブ
+- ダイナース クラブ
+- ダイナース
+- 有効期限
+- 期限
+- キャッシュカード
+- キャッシュ カード
+- カード名義人
+- カードの名義人
+- カードの名義
+- デビット カード
+- デビットカード
 
 ## <a name="croatia-drivers-license-number"></a>Numéro de permis de conduire de la Croatie
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du pilote de l’UE.
@@ -4279,7 +4371,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-Aucun
+Néant
 
 ## <a name="estonia-drivers-license-number"></a>Numéro de permis de conduire Estonie
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du pilote de l’UE.
@@ -4894,7 +4986,7 @@ Il s’agit des entités du type d’informations sensibles du pilote de l’UE.
 - [Bulgarie](#bulgaria-drivers-license-number)
 - [Croatie](#croatia-drivers-license-number)
 - [Chypre](#cyprus-drivers-license-number)
-- [Czech](#czech-drivers-license-number)
+- [Tchèque](#czech-drivers-license-number)
 - [Danemark](#denmark-drivers-license-number)
 - [Estonie](#estonia-drivers-license-number)
 - [Finlande](#finland-drivers-license-number)
@@ -4926,7 +5018,7 @@ Il s’agit des entités du type d’informations sensibles du numéro d’ident
 - [Bulgarie](#bulgaria-national-identification-number)
 - [Croatie](#croatia-identity-card-number)
 - [Chypre](#cyprus-national-identification-number)
-- [Czech](#czech-personal-identity-number)
+- [Tchèque](#czech-personal-identity-number)
 - [Danemark](#denmark-personal-identification-number)
 - [Estonie](#estonia-national-identification-number)
 - [Finlande](#finland-national-identification-number)
@@ -4958,7 +5050,7 @@ Il s’agit des entités dans le numéro de passeport UE typeThese sont les enti
 - [Bulgarie](#bulgaria-passport-number)
 - [Croatie](#croatia-passport-number)
 - [Chypre](#cyprus-passport-number)
-- [Czech](#czech-passport-number)
+- [Tchèque](#czech-passport-number)
 - [Danemark](#denmark-passport-number)
 - [Estonie](#estonia-passport-number)
 - [Finlande](#finland-passport-number)
@@ -4989,7 +5081,7 @@ Il s’agit des entités qui sont dans le type d’information de numéro de sé
 - [Autriche](#austria-social-security-number-or-equivalent-identification)
 - [Belgique](#belgium-social-security-number-or-equivalent-identification)
 - [Croatie](#croatia-social-security-number-or-equivalent-identification)
-- [Czech](#czech-social-security-number-or-equivalent-identification)
+- [Tchèque](#czech-social-security-number-or-equivalent-identification)
 - [Danemark](#denmark-social-security-number-or-equivalent-identification)
 - [Finlande](#finland-social-security-number-or-equivalent-identification)
 - [France](#france-social-security-number-insee-or-equivalent-identification)
@@ -5009,7 +5101,7 @@ les entités Hese sont dans le type d’informations sensibles du numéro d’id
 - [Bulgarie](#bulgaria-tax-identification-number)
 - [Croatie](#croatia-tax-identification-number)
 - [Chypre](#cyprus-tax-identification-number)
-- [Czech](#czech-tax-identification-number)
+- [Tchèque](#czech-tax-identification-number)
 - [Danemark](#denmark-tax-identification-number)
 - [Estonie](#estonia-tax-identification-number)
 - [Finlande](#finland-tax-identification-number)
@@ -6724,12 +6816,9 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
 - L’expression régulière Regex_indonesia_id_card trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_indonesia_id_card est trouvé.
-
-Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-- L’expression régulière Regex_indonesia_id_card trouve un contenu qui correspond au modèle.
 
 ```xml
 <!-- Indonesia Identity Card (KTP) Number -->
@@ -6737,10 +6826,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
   <Pattern confidenceLevel="85">
      <IdMatch idRef="Regex_indonesia_id_card"/>
      <Match idRef="Keyword_indonesia_id_card"/>
-  </Pattern>
-  <Pattern confidenceLevel="75">
-     <IdMatch idRef="Regex_indonesia_id_card"/>
-  </Pattern>
 </Entity>
 ```
 
@@ -6791,7 +6876,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-Aucun
+Néant
 
    
 
@@ -11209,7 +11294,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-Aucun
+Néant
 
 ## <a name="spain-tax-identification-number"></a>Numéro d’identification fiscale Espagne
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro d’identification fiscale de l’UE.
@@ -12258,7 +12343,16 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 - sécurité sociale
 - grande-bretagne
-- cotisations
+
+- Nombre NI
+- NI n °.
+- ALLIAGE #
+- ALLIAGE #
+- cotisations #
+- insurancenumber
+- nationalinsurance #
+- nationalinsurancenumber
+
     
 ## <a name="uk-tax-identification-number"></a>impérial Numéro d’identification de taxe
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro d’identification fiscale de l’UE.
@@ -12693,14 +12787,18 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="keyword_ssn"></a>Keyword_ssn
 
-- Sécurité sociale 
-- # sécurité sociale 
-- Sécu sociale 
-- SSN 
-- NUMÉROS 
-- SSN # 
-- SOCIALE # 
-- Identifiant SSID 
+- Numéro SSA
+- numéro de sécurité sociale
+- sécurité sociale #
+- sécurité sociale #
+- Numéro de sécurité sociale
+- # sécurité sociale
+- Sécu sociale
+- SSN
+- NUMÉROS
+- SSN #
+- SOCIALE #
+- Identifiant SSID
    
 ## <a name="us--uk-passport-number"></a>ANGLAIS (ÉTATS-UNIS) numéro de passeport
 Le Royaume-Uni Numéro de passeport le type d’informations sensibles l’entité est disponible dans le type d’informations sensibles du numéro de passeport de l’euro et est disponible en tant qu’entité de type d’informations sensibles autonome.

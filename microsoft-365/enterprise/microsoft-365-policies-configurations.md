@@ -17,12 +17,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: 9eaea7579faedace50ca76a69997fbfd83e452bb
-ms.sourcegitcommit: 4ac96855d7c269a0055ca8943000b762a70ca4ba
+ms.openlocfilehash: 72344e1918a85de65ab7de8a60b7ace0b2629ac6
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47321910"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332748"
 ---
 # <a name="identity-and-device-access-configurations"></a>Configurations des identités et de l’accès aux appareils
 
@@ -161,7 +161,7 @@ Nous recommandons que les appareils appartenant à une organisation soient gér�
 ![Étapes de configuration de l’accès aux identités et aux appareils.](../media/microsoft-365-policies-configurations/identity-device-access-steps.png)
 
 1. Configurez les fonctionnalités d’identité prérequises et leurs paramètres.
-2. Configurez les stratégies d’accès conditionnel d’accès et d’identité les plus courantes.
+2. Configurez les stratégies d’identité et d’accès conditionnel d’accès courantes.
 3. Configurez les stratégies d’accès conditionnel pour les utilisateurs invités et externes.
 4. Configurez des stratégies d’accès conditionnel pour les applications Cloud Microsoft 365, telles que Microsoft Teams, Exchange Online et SharePoint.
 

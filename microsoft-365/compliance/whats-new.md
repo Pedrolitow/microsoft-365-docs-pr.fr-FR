@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Qu’il s’agisse d’ajouter de nouvelles solutions au centre de conformité, de mettre à jour des fonctionnalités existantes en fonction de vos commentaires ou de déployer une documentation actualisée et actualisée, Microsoft 365 vous aide à rester informé de la mise en conformité en perpétuelle évolution. Découvrez ce que nous avons fait dans ce mois-ci.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 95b23ccdb272c9e91ee4c525fd90679c492efc9b
-ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
+ms.openlocfilehash: 750d8274faa5e68f8d36006f8ccf6d7fa55f8250
+ms.sourcegitcommit: 2179abfe0b7a8bea917eb1c1057ed3795bdf91e6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46868971"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47336667"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Nouveautés de la conformité Microsoft 365
 
@@ -36,6 +36,32 @@ Qu’il s’agisse d’ajouter de nouvelles solutions au [Centre de conformité 
 > [!TIP]
 > Que se passe-t-il dans d’autres centres d’administration ? Consultez les articles suivants :<br>[Nouveautés du centre d’administration Microsoft 365](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[Nouveautés du centre d’administration SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br>[Nouveautés de la protection Microsoft contre les menaces](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)<br><br>
 Consultez la feuille de [route de microsoft 365](https://www.microsoft.com/en-us/microsoft-365/roadmap) pour en savoir plus sur les fonctionnalités de Microsoft 365 qui ont été lancées, qui sont déployées, qui sont en cours de développement, qui ont été annulées ou qui ont déjà été publiées.
+
+## <a name="july-2020"></a>Juillet 2020
+
+### <a name="spotlight-on-help-docs"></a>Actualités sur les documents d’aide
+
+Pour vous aider à comprendre quelles solutions de conformité sont utilisées pour protéger et régir les données sensibles de votre organisation, nous avons créé deux nouvelles pages d’accueil présentant la façon dont les solutions fonctionnent ensemble pour atteindre ces objectifs, notamment des liens vers des documents connexes afin que vous puissiez approfondir votre travail.
+
+[Microsoft information protection dans Microsoft 365](protect-information.md)<br>
+[Microsoft information Governance dans Microsoft 365](manage-Information-governance.md)
+
+### <a name="advanced-ediscovery-add-non-custodial-data-sources-to-your-cases"></a>Découverte électronique avancée : ajout de sources de données non-privatives à vos cas
+
+Ajouter des données à un cas sans avoir à l’associer à un dépositaire (connu sous le nom de [sources de données non privatives de cœur](non-custodial-data-sources.md)). Si vous devez placer ces données non privatives de place, vous pourrez le faire à l’aide de notre nouvelle fonctionnalité d’indexation avancée.
+
+### <a name="data-connectors-hr-connector-enhancements"></a>Connecteurs de données : améliorations du connecteur RH
+
+(En mode Aperçu) Une nouvelle version du [connecteur RH](import-hr-data.md) vous permet d’importer des données relatives aux modifications de niveau de travail, aux évaluations de performances et aux plans d’amélioration des performances. Ces données peuvent ensuite être utilisées dans plusieurs [stratégies de risque d’initié](insider-risk-management-policies.md) pour détecter les activités associées.
+
+### <a name="retention-labels-new-support-for-email"></a>Étiquettes de rétention : nouvelle prise en charge pour le courrier électronique
+
+Vous pouvez désormais créer une [étiquette de rétention](retention.md#retention-labels) pour commencer à conserver des messages électroniques en fonction de la façon dont les messages ont été étiquetés. Ceci ne s’applique pas aux éléments de calendrier, qui seront conservés en fonction de la date d’envoi de l’élément.
+
+### <a name="sensitivity-labels-new-feature-and-an-improvement"></a>Étiquettes de sensibilité : nouvelle fonctionnalité et amélioration
+
+- (En mode Aperçu) Lors de la configuration des paramètres de chiffrement pour une étiquette, recherchez la nouvelle option permettant d’utiliser le [chiffrement à double clé](encryption-sensitivity-labels.md#double-key-encryption) pour protéger davantage les fichiers étiquetés et les e-mails.
+- Lors de la création ou de la suppression d’étiquettes de confidentialité ou la création, la modification ou la suppression de leurs stratégies d’étiquette, les modifications sont synchronisées dans une heure à l’ensemble des utilisateurs, des applications et des services.
 
 ## <a name="june-2020"></a>Juin 2020
 
@@ -293,20 +319,3 @@ Accédez à [restreindre l’accès au contenu à l’aide des étiquettes de co
 ### <a name="update-to-data-investigations"></a>Mise à jour des enquêtes de données
 
 Lors de l’exécution d’une enquête sur les données, vous pouvez maintenant supprimer des éléments de leur emplacement d’origine. Cela signifie que vous pouvez supprimer des éléments de boîtes aux lettres Exchange, de sites SharePoint et de comptes OneDrive au sein de votre organisation. Étant donné que vous avez collecté les éléments en tant que preuve, vous pouvez effectuer des copies de ces éléments dans l’ensemble de preuves pour vous faire une étude plus approfondie ou conserver une référence. [En savoir plus](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) Lors de l’exécution d’une enquête sur les données, vous pouvez maintenant supprimer des éléments de leur emplacement d’origine. Cela signifie que vous pouvez supprimer des éléments de boîtes aux lettres Exchange, de sites SharePoint et de comptes OneDrive au sein de votre organisation. Étant donné que vous avez collecté les éléments en tant que preuve, vous pouvez effectuer des copies de ces éléments dans l’ensemble de preuves pour vous faire une étude plus approfondie ou conserver une référence. Pour plus d’informations, consultez [la gestion d’un incident de fuite de données dans Microsoft 365](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) . 
-
-## <a name="july-2019"></a>Juillet 2019
-
-### <a name="new-admin-roles"></a>Nouveaux rôles d’administrateur
-
-Nous avons publié deux nouveaux rôles d’administrateur pour vous aider à gérer la sécurité et la conformité dans votre organisation. informez tous vos amis.
-
-- **Administrateur des données de conformité**. Les utilisateurs disposant de ce rôle disposent d’autorisations pour protéger et suivre les données dans le centre de conformité Microsoft 365, le centre d’administration Microsoft 365 et Azure. Ils peuvent également gérer tout le centre d’administration Exchange, le gestionnaire de conformité, les équipes & Centre d’administration de Skype entreprise et créer des tickets de support pour Azure et Microsoft 365.
-- **Opérateur de sécurité**. Les utilisateurs disposant de ce rôle peuvent gérer les alertes et disposer d’un accès global en lecture seule aux fonctionnalités liées à la sécurité, y compris tout le centre de sécurité Microsoft 365, Azure Active Directory, protection des identités, gestion des identités des identités et Office 365 sécurité & Centre de conformité.
-
-[En savoir plus sur ces rôles](https://docs.microsoft.com/microsoft-365/security//office-365-security/permissions-microsoft-365-compliance-security)
-
-### <a name="search-and-filtering-for-reports"></a>Recherche et filtrage des rapports
-
-Il n’y a plus de défilement dans un océan de rapports pour trouver ceux que vous souhaitez. Vous pouvez désormais Rechercher des rapports (en fonction de leur titre) et filtrer sur des catégories telles que « labels » et « Compliance » et des sources comme « Office 365 » et « Microsoft Cloud App Security ».
-
-![Capture d’écran des boutons de recherche et de filtre des rapports avec un filtre appliqué](../media/mcc_report_filtering.png)
