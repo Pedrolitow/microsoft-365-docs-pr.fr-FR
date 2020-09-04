@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Découvrez comment les administrateurs peuvent configurer et utiliser un connecteur de données pour importer et archiver des données à partir de l’outil de conversation Bloomberg dans Microsoft 365.
-ms.openlocfilehash: 248636d1f343b1f314201ce74dacdf2ecd043e68
-ms.sourcegitcommit: 195172dd836e8a793e8e0c2db3323b7391bc51ac
+ms.openlocfilehash: 4df1a67ae9e372efe5c6e8c654f1a6821b5cb30d
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47255821"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47358236"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data"></a>Configurer un connecteur pour archiver des données Instant Bloomberg
 
@@ -44,7 +44,7 @@ La vue d’ensemble suivante décrit le processus d’utilisation d’un connect
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-La plupart des étapes d’implémentation nécessaires à l’archivage des données de la demande instantanée sont externes à Microsoft 365 et doivent être effectuées avant de pouvoir créer le connecteur dans le centre de conformité.
+Certaines étapes de mise en œuvre requises pour archiver des données de la demande de connexion instantanée sont externes à Microsoft 365 et doivent être terminées avant de pouvoir créer le connecteur dans le centre de conformité.
 
 - Votre organisation doit consentir à autoriser le service d’importation Office 365 à accéder aux données de boîte aux lettres dans votre organisation. Pour accepter cette demande, accédez à [cette page](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), connectez-vous à l’aide des informations d’identification d’un administrateur général, puis acceptez la demande. Vous devez effectuer cette étape avant de pouvoir créer le connecteur Bloomberg instantané à l’étape 3.
 

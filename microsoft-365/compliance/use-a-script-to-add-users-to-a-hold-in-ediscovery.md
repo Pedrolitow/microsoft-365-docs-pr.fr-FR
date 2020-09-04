@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 ms.collection:
 - SPO_Content
@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 ms.custom: seo-marvel-apr2020
 description: Découvrez comment exécuter un script pour ajouter des boîtes aux lettres & des sites OneDrive entreprise à une nouvelle conservation associée à un cas eDiscovery dans le centre de sécurité & Compliance Center.
-ms.openlocfilehash: 55ad3c8c8a4a6b77df4c2d3409fee6e5b43cc5f6
-ms.sourcegitcommit: 41eb898143286755cd36df9f7e769de641263d73
+ms.openlocfilehash: 454fd4ea4517a46410c9d0922cc83b141fdbd893
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45391484"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357674"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-a-core-ediscovery-case"></a>Utiliser un script pour ajouter des utilisateurs à une conservation dans un cas de découverte électronique principale
 
@@ -81,7 +81,7 @@ Voici une commande PowerShell (que vous exécutez à l’aide de PowerShell dist
 Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbox'} | Select-Object PrimarySmtpAddress > HoldUsers.txt
 ```
 
-Après avoir exécuté cette commande, ouvrez le fichier texte et supprimez l’en-tête qui contient le nom de la propriété, `PrimarySmtpAddress` . Ensuite, supprimez toutes les adresses de messagerie sauf celles des utilisateurs que vous souhaitez ajouter à la suspension que vous allez créer à l’étape 3. Assurez-vous qu’il n’y a pas de ligne vide avant ou après la liste des adresses de messagerie.
+Après avoir exécuté cette commande, ouvrez le fichier texte et supprimez l’en-tête qui contient le nom de la propriété,  `PrimarySmtpAddress` . Ensuite, supprimez toutes les adresses de messagerie sauf celles des utilisateurs que vous souhaitez ajouter à la suspension que vous allez créer à l’étape 3. Assurez-vous qu’il n’y a pas de ligne vide avant ou après la liste des adresses de messagerie.
   
 ## <a name="step-3-run-the-script-to-create-a-hold-and-add-users"></a>Étape 3 : exécuter le script pour créer une conservation et ajouter des utilisateurs
 
@@ -89,7 +89,7 @@ Lorsque vous exécutez le script dans cette étape, il vous invite à fournir le
   
 - **Vos informations d’identification utilisateur :** Le script utilise vos informations d’identification pour se connecter au centre de sécurité & conformité à l’aide de PowerShell à distance. Il utilisera également ces informations d’identification pour accéder à SharePoint Online afin d’obtenir les URL OneDrive entreprise pour la liste des utilisateurs.
 
-- **Nom de votre domaine mon site :** Le domaine mon site est le domaine qui contient tous les sites OneDrive entreprise de votre organisation. Par exemple, si l’URL de votre domaine mon site est **https://contoso-my.sharepoint.com** , vous devez entrer `contoso` lorsque le script vous invite à indiquer le nom de votre domaine mon site.
+- **Nom de votre domaine mon site :** Le domaine mon site est le domaine qui contient tous les sites OneDrive entreprise de votre organisation. Par exemple, si l’URL de votre domaine mon site est **https://contoso-my.sharepoint.com** , vous devez entrer  `contoso` lorsque le script vous invite à indiquer le nom de votre domaine mon site.
 
 - **Nom de la demande de devis :** Nom d’un cas existant. Le script crée une nouvelle conservation qui est associée à ce cas.
 

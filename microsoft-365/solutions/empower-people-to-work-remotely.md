@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 07/23/2020
+ms.date: 09/02/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-overview
 ms.custom: ''
 description: Configurez l’infrastructure de service et de sécurité qui permet à vos employés de travailler à distance de n’importe où et à tout moment.
-ms.openlocfilehash: 17cc826f5cf28ff375deaf1e6a4b192700eebf2f
-ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
+ms.openlocfilehash: b0f6816ad758f374f2512076939cfa6392b748de
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46898127"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357301"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Confier des responsabilités aux travailleurs à distance avec Microsoft 365
 
@@ -37,13 +37,33 @@ Microsoft 365 offre les fonctionnalités qui permettent à vos employés de tra
 
 ![Confier des responsabilités aux travailleurs à distance avec Microsoft 365](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
 
-| Fonctionnalité clé | Description |
-|:-------|:-----|
-| Connecté | Où que vous soyez et à tout moment, les travailleurs distants peuvent accéder aux éléments suivants : <ul><li>Services et données dans le cloud de votre abonnement Microsoft 365. </li><li>Ressources d’organisation, telles celles proposées par les centres de données d’application locaux.</li></ul> |
-| Sécurisé | Les connexions sont sécurisées par une authentification multifacteur (MFA) et les fonctionnalités de sécurité intégrées de Microsoft 365 et Windows 10 protègent contre les logiciels malveillants, les attaques malveillantes et la perte de données. |
-| Géré | Les appareils de votre employé distant peuvent être gérés à partir du cloud avec les paramètres de sécurité, les applications autorisées et la conformité avec l’état d’intégrité du système. |
-| Collaboration et productivité | Vos employés distants peuvent être productifs en local de façon très collaborative avec : <ul><li>Réunions en ligne et sessions de conversation avec Teams. </li><li>Les espaces de travail partagés pour le stockage de fichiers dans le Cloud avec une accessibilité globale et une collaboration en temps réel avec SharePoint et OneDrive. </li><li>Les tâches partagées et flux de travail pour répartir le travail et accomplir les tâches. </li></ul> |
-|||
+Regardez cette vidéo de présentation du processus de déploiement.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4F1af]
+
+Cette solution fournit ces fonctionnalités clés.
+
+- Connecté
+
+  Où que vous soyez et à tout moment, les travailleurs distants peuvent accéder aux éléments suivants : 
+
+  - Services et données dans le cloud de votre abonnement Microsoft 365. 
+  - Ressources d’organisation, telles celles proposées par les centres de données d’application locaux.
+
+- Sécurisé
+
+  Les connexions sont sécurisées par une authentification multifacteur (MFA) et les fonctionnalités de sécurité intégrées de Microsoft 365 et Windows 10 protègent contre les logiciels malveillants, les attaques malveillantes et la perte de données.
+
+- Géré
+
+  Les appareils de votre employé distant peuvent être gérés à partir du cloud avec les paramètres de sécurité, les applications autorisées et la conformité avec l’état d’intégrité du système.
+
+- Collaboration et productivité
+
+  Vos employés distants peuvent être productifs en local de façon très collaborative avec :
+  - Réunions en ligne et sessions de conversation avec Teams. 
+  - Les espaces de travail partagés pour le stockage de fichiers dans le Cloud avec une accessibilité globale et une collaboration en temps réel avec SharePoint et OneDrive.
+  - Les tâches partagées et flux de travail pour répartir le travail et accomplir les tâches. 
 
 Pour une expérience de connexion transparente, vos comptes d’utilisateur Services de domaine Active Directory (AD DS) locaux doivent être synchronisés avec Azure Active Directory (Azure AD). Pour protéger vos appareils Windows 10, ils doivent être inscrits dans Intune. Voici un aperçu général de l’infrastructure.
 

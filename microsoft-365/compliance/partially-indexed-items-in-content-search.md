@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - ms.o365.cc.UnindexedItemsLearnMore
 ms.service: O365-seccomp
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: Découvrez les éléments non indexés dans Exchange et SharePoint que vous pouvez inclure dans une recherche de contenu exécutée via le centre de sécurité & conformité.
-ms.openlocfilehash: 587f887a7ecd8e7393b2f6852a070dd040ff1bda
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: d4d9cfec03c4d7ca5af7ee68b077985ffb5d97dc
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936339"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47358556"
 ---
 # <a name="partially-indexed-items-in-content-search"></a>Éléments partiellement indexés dans la recherche de contenu
 
@@ -125,7 +125,7 @@ Pour obtenir la liste des limites d’indexation pour les documents SharePoint, 
 |Sortie maximale de l’analyseur  <br/> |2 millions de caractères  <br/> |Quantité maximale de sortie de texte de l’analyseur qui est indexée. Par exemple, si l’analyseur a extrait 8 millions caractères d’un document, seuls les 2 premiers caractères sont indexés.  <br/> |
 |Nombre maximal de jetons d’annotation  <br/> |2 millions  <br/> |Lorsqu’un message électronique est indexé, chaque mot est annoté avec des instructions de traitement différentes qui définissent le mode d’indexation de Word. Chaque ensemble d’instructions de traitement est appelé un jeton d’annotation. Pour maintenir la qualité de service dans Office 365, il existe une limite de 2 millions jetons d’annotation pour un message électronique.  <br/> |
 |Taille maximale du corps dans l’index  <br/> |67 millions caractères  <br/> |Nombre total de caractères dans le corps d’un message électronique et toutes ses pièces jointes. Lorsqu’un message électronique est indexé, tout le texte dans le corps du message et dans toutes les pièces jointes est concaténé dans une chaîne unique. La taille maximale de cette chaîne indexée est de 67 millions caractères.  <br/> |
-|Nombre maximal de jetons uniques dans le corps  <br/> |1 million  <br/> |Comme expliqué précédemment, les jetons sont le résultat de l’extraction de texte du contenu, la suppression de la ponctuation et des espaces, puis sa division en mots (appelés jetons) stockés dans l’index. Par exemple, l’expression `"cat, mouse, bird, dog, dog"` contient 5 jetons. Mais seulement 4 sont des jetons uniques. Il existe une limite de 1 million jetons uniques par message électronique, ce qui permet d’éviter que l’index soit trop volumineux avec des jetons aléatoires.  <br/> |
+|Nombre maximal de jetons uniques dans le corps  <br/> |1 million  <br/> |Comme expliqué précédemment, les jetons sont le résultat de l’extraction de texte du contenu, la suppression de la ponctuation et des espaces, puis sa division en mots (appelés jetons) stockés dans l’index. Par exemple, l’expression  `"cat, mouse, bird, dog, dog"` contient 5 jetons. Mais seulement 4 sont des jetons uniques. Il existe une limite de 1 million jetons uniques par message électronique, ce qui permet d’éviter que l’index soit trop volumineux avec des jetons aléatoires.  <br/> |
 
 ## <a name="more-information-about-partially-indexed-items"></a>Plus d’informations sur les éléments partiellement indexés
 

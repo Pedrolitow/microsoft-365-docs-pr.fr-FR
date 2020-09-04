@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: 1/30/2017
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 9701a024-c52e-43f0-b545-9a53478aec04
 description: Découvrez comment utiliser la fonctionnalité statistiques de recherche pour afficher et comparer les statistiques de plusieurs recherches de contenu dans le centre de sécurité & conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 30cc893d041819ac1fa2e24c6ecf6178677686b2
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 6f9f6b77a7a557ca363b2a7d56b96ea3d6ccc287
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819034"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47358462"
 ---
 # <a name="view-keyword-statistics-for-content-search-results"></a>Afficher les statistiques de mot clé pour les résultats de recherche de contenu
 
@@ -74,7 +74,7 @@ Pour afficher les statistiques des recherches de contenu :
     
     d. Cette colonne contient la requête de recherche en cours qui est exécutée par l’outil de recherche de contenu. Notez que l’outil ajoute automatiquement quelques composants supplémentaires à la requête que vous créez. 
 
-    - Lorsque vous recherchez tout le contenu dans des boîtes aux lettres (en ne spécifiant pas de mots clés), la requête mot clé réelle est de `size>=0` sorte que tous les éléments soient renvoyés. 
+    - Lorsque vous recherchez tout le contenu dans des boîtes aux lettres (en ne spécifiant pas de mots clés), la requête mot clé réelle est de  `size>=0` sorte que tous les éléments soient renvoyés. 
     
      - Lorsque vous effectuez des recherches dans des sites SharePoint Online et OneDrive entreprise, les deux composants suivants sont ajoutés :
     

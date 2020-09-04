@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Tableau répertoriant les types de fichiers pris en charge et les visiteurs dans lesquels ils peuvent être consultés pour les enquêtes de données (préversion).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: b4aef30c3f2bc15c306a7561bab261bdb0bdcace
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 95af625ece261061d6f797b50a382b1905254326
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034538"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357736"
 ---
 # <a name="supported-file-types-in-data-investigations-preview"></a>Types de fichiers pris en charge dans les enquêtes de données (aperçu)
 
@@ -40,7 +40,7 @@ Les enquêtes de données (aperçu) prennent en charge de nombreux types de fich
 | application/vnd. MS-Outlook | Productivité | Non | Non | Non | Non | . MSG |
 | application/vnd. MS-Outlook-PST | Productivité/collaboration | Non | Non | Non | Oui | . pst |
 | application/vnd. MS-PowerPoint | Document | Oui | Oui | Oui | Non | . ppt ;. pps ;. cafetière |
-| application/vnd. MS-Word. document. macroenabled. 12 | Document | Oui | Oui | Oui | Non | .docm |
+| application/vnd.ms-word.document. macroenabled. 12 | Document | Oui | Oui | Oui | Non | .docm |
 | application/vnd. MS-Word. template. macroenabled. 12 | Document | Oui | Oui | Oui | Non | . dotm |
 | application/vnd. oasis. OpenDocument. Text | Document | Oui | Oui | Oui | Non | ODT  |
 | application/vnd.openxmlformats-officedocument.presentationml.presentation | Document | Oui | Oui | Oui | Non | .pptx |

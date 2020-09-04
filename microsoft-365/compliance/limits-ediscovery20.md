@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez les limites de cas, les limites d’indexation et les limites de recherche en vigueur pour la solution eDiscovery avancée dans Microsoft 365.
-ms.openlocfilehash: 5666bae5315586ed421ad8d6c748505cda8ae3e6
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: c139480f18e0e6d94aae5a38d5fd636fbc62b2dc
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778460"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47358472"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>Limites définies dans Advanced eDiscovery
 
@@ -60,13 +60,13 @@ Les limites décrites dans cette section concernent l’utilisation de l’outil
 |:-----|:-----|
 |Nombre maximal de boîtes aux lettres ou de sites pouvant faire l’objet d’une recherche dans une seule recherche.  <br/> |Sans limite  <br/> |
 |Nombre maximal de recherches pouvant être exécutées en même temps.  <br/> |Sans limite  <br/> | 
-|Nombre maximal de recherches qu’un utilisateur peut démarrer en même temps.  <br/> |10   <br/> | 
+|Nombre maximal de recherches qu’un utilisateur peut démarrer en même temps.  <br/> |10   <br/> | 
 |Nombre maximal de caractères pour une requête de recherche (y compris les opérateurs et les conditions).  <br/> |**Boîtes aux lettres**: 10 000<br/>**Sites**: 4 000 lors de la recherche sur tous les sites ou 2 000 lors de la recherche sur 20 sites <sup>2</sup> <br/> |
 |Nombre minimal de caractères alpha pour les caractères génériques de préfixe ; par exemple **, \* un ou un** **défini \* **. <br/> |3  <br/> |  
 |Nombre maximal de variantes renvoyées lors de l’utilisation d’un caractère générique de préfixe pour rechercher une expression exacte ou avec un caractère générique de préfixe et l’opérateur de type booléen **near** .  <br/> |10 000 <sup>3</sup> <br/> |
 |Nombre maximal d’éléments par boîte aux lettres utilisateur qui s’affichent sur la page d’aperçu pour les recherches. Les éléments les plus récents sont affichés.   <br/> |100  <br/> |
-|Nombre maximal d’éléments de toutes les boîtes aux lettres affichés sur la page d’aperçu pour les recherches.  <br/> |1 000  <br/> |
-|Nombre maximal de boîtes aux lettres qui peuvent être prévisualisées pour les résultats de la recherche.  S’il y a plus de 1000 boîtes aux lettres contenant des éléments qui correspondent à la requête de recherche, seules les 1 000 premières boîtes aux lettres avec le plus de résultats sont disponibles pour l’aperçu.<br/> |1 000  <br/> |
+|Nombre maximal d’éléments de toutes les boîtes aux lettres affichés sur la page d’aperçu pour les recherches.  <br/> |1,000  <br/> |
+|Nombre maximal de boîtes aux lettres qui peuvent être prévisualisées pour les résultats de la recherche.  S’il y a plus de 1000 boîtes aux lettres contenant des éléments qui correspondent à la requête de recherche, seules les 1 000 premières boîtes aux lettres avec le plus de résultats sont disponibles pour l’aperçu.<br/> |1,000  <br/> |
 |Nombre maximal d’éléments provenant de sites SharePoint et OneDrive entreprise affichés sur la page d’aperçu pour les recherches. Les éléments les plus récents sont affichés.  <br/> |200  <br/> |
 |Nombre maximal de sites SharePoint et OneDrive entreprise pouvant être prévisualisés pour les résultats de la recherche. S’il y a plus de 200 sites contenant des éléments qui correspondent à la requête de recherche, seuls les premiers sites 200 avec le plus de résultats sont disponibles pour l’aperçu.  <br/> |200  <br/> |
 |Nombre maximal d’éléments par boîte aux lettres de dossiers publics affiché sur la page d’aperçu pour les recherches.  <br/> |100  <br/> |

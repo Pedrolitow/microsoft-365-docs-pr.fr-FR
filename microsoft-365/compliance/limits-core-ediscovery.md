@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cet article décrit les limites du cas de découverte électronique de base dans Microsoft 365.
-ms.openlocfilehash: 00df8cff683701ce5ee38dca12b6f7af5b31c8b0
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 6224ce5ecb8fc0439e43ab5e1362f8a618194202
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351895"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47358512"
 ---
 # <a name="limits-in-core-ediscovery"></a>Limites de la découverte électronique de base
 
@@ -32,9 +32,9 @@ Le tableau suivant répertorie les limites pour les cas de découverte électron
   |:-----|:-----|
   |Nombre maximal de cas pour une organisation  <br/> |Sans limite  <br/> |
   |Nombre maximal de blocages pour une organisation  <br/> |10 000  <br/> |
-  |Nombre maximal de boîtes aux lettres en une seule suspension de cas  <br/> |1 000  <br/> |
+  |Nombre maximal de boîtes aux lettres en une seule suspension de cas  <br/> |1,000  <br/> |
   |Nombre maximal de sites SharePoint et OneDrive entreprise en une seule suspension de cas  <br/> |100  <br/> |
-  |Nombre maximal de cas affichés sur la page d’accueil eDiscovery principale et nombre maximal d’éléments affichés dans les onglets conservation, recherches et exportation dans un cas. <sup>0,1</sup> |1 000|
+  |Nombre maximal de cas affichés sur la page d’accueil eDiscovery principale et nombre maximal d’éléments affichés dans les onglets conservation, recherches et exportation dans un cas. <sup>1</sup> |1,000|
   |||
 
    > [!NOTE]

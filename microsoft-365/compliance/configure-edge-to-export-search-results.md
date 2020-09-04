@@ -6,18 +6,18 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Vous devez activer la prise en charge de ClickOnce pour utiliser la dernière version de Microsoft Edge pour télécharger les résultats de recherche à partir de la recherche de contenu et eDiscovery dans le centre de sécurité et de conformité.
-ms.openlocfilehash: c48e3fb04747306693364a2cdbc6f18047a0fd9e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 317e19c81a606565fcb18f3256fd5bac007747e1
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632379"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357574"
 ---
 # <a name="use-the-ediscovery-export-tool-in-microsoft-edge"></a>Utiliser l’outil d’exportation de découverte électronique dans Microsoft Edge
 
@@ -29,15 +29,15 @@ En raison de modifications récentes apportées à la version la plus récente d
 
 2. Si la valeur existante est définie sur **default** ou **Disabled** dans la liste déroulante, remplacez-la par **Enabled**.
 
-   ![](../media/ClickOnceimage1.png)
+   ![Sélectionner activé à partir de la liste déroulante](../media/ClickOnceimage1.png)
 
 3. Faites défiler jusqu’au bas de la fenêtre du navigateur et cliquez sur **redémarrer** pour redémarrer le serveur Edge.
 
-   ![](../media/ClickOnceimage2.png)
+   ![Cliquez sur redémarrer](../media/ClickOnceimage2.png)
 
 **Remarque :** Les organisations peuvent utiliser la stratégie de groupe pour désactiver la prise en charge ClickOnce. Pour vérifier s’il existe une stratégie d’organisation pour la prise en charge de ClickOnce, accédez à **Edge://Policy**. La capture d’écran suivante montre que ClickOnce est activé dans l’ensemble de l’organisation. Si cette valeur de stratégie est définie sur **false**, vous devrez contacter un administrateur de votre organisation.
 
-![](../media/ClickOnceimage3.png)
+![Liste des stratégies organisationnelles Edge](../media/ClickOnceimage3.png)
 
 ## <a name="install-and-run-the-ediscovery-export-tool"></a>Installer et exécuter l’outil d’exportation eDiscovery
 

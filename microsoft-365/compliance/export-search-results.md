@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 f1_keywords:
 - ms.o365.cc.CustomizeExport
 ms.service: O365-seccomp
@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'Exportez les résultats de la recherche à partir d’une recherche de contenu dans le centre de sécurité & conformité sur un ordinateur local. Les résultats par courrier électronique sont exportés en tant que fichiers PST. Le contenu de sites SharePoint et OneDrive entreprise est exporté sous forme de documents Office natifs. '
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6fda7c103b90664fc6c31c3f0436b6d360468537
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 97073c95af986afcbe932dfc2b5bc840d5e2dc5c
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817753"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357932"
 ---
 # <a name="export-content-search-results"></a>Exporter les résultats de la recherche de contenu
 
@@ -45,7 +45,7 @@ L’exportation des résultats d’une recherche de contenu implique la prépara
     
   - versions 32 bits ou 64 bits de Windows 7 et versions ultérieures
     
-  - Microsoft .NET Framework 4,7
+  - Microsoft .NET Framework 4.7
     
 - Pour exécuter l’outil d’exportation de découverte électronique<sup>1</sup>, vous devez utiliser l’un des navigateurs pris en charge suivants :
 
@@ -63,13 +63,13 @@ L’exportation des résultats d’une recherche de contenu implique la prépara
     
 - Lorsque vous exportez des résultats de recherche, les données sont stockées temporairement dans un emplacement de stockage Azure fourni par Microsoft dans le Cloud Microsoft avant d’être téléchargé sur votre ordinateur local. Assurez-vous que votre organisation peut se connecter au point de terminaison dans Azure, c’est-à-dire ** \* . blob.Core.Windows.net** (le caractère générique représente un identificateur unique pour votre exportation). Les données de résultats de recherche sont supprimées de l’emplacement de stockage Azure deux semaines après sa création. 
     
-- Si votre organisation utilise un serveur proxy pour communiquer avec Internet, vous devez définir les paramètres de serveur proxy sur l’ordinateur que vous utilisez pour exporter les résultats de la recherche (de sorte que l’outil d’exportation puisse être authentifié par votre serveur proxy). Pour ce faire, ouvrez le fichier *machine.config* à l’emplacement qui correspond à votre version de Windows. 
+- Si votre organisation utilise un serveur proxy pour communiquer avec Internet, vous devez définir les paramètres de serveur proxy sur l’ordinateur que vous utilisez pour exporter les résultats de la recherche (de sorte que l’outil d’exportation puisse être authentifié par votre serveur proxy). Pour ce faire, ouvrez le fichier  *machine.config*  à l’emplacement qui correspond à votre version de Windows. 
     
   - **32-bit :**`%windir%\Microsoft.NET\Framework\[version]\Config\machine.config`
     
   - **64-bit :**`%windir%\Microsoft.NET\Framework64\[version]\Config\machine.config`
     
-    Ajoutez les lignes suivantes au fichier *machine.config* entre les `<configuration>` `</configuration>` balises et. N’oubliez pas de remplacer `ProxyServer` et d' `Port` utiliser les valeurs appropriées pour votre organisation, par exemple `proxy01.contoso.com:80` . 
+    Ajoutez les lignes suivantes au fichier  *machine.config*  entre les  `<configuration>`  `</configuration>` balises et. N’oubliez pas de remplacer  `ProxyServer` et d'  `Port` utiliser les valeurs appropriées pour votre organisation, par exemple  `proxy01.contoso.com:80` . 
     
     ```text
     <system.net>
@@ -176,7 +176,7 @@ Comme expliqué précédemment, vous pouvez augmenter la vitesse de télécharge
     
 
   
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
 Voici plus d’informations sur l’exportation des résultats de la recherche.
   
@@ -289,7 +289,7 @@ Voici plus d’informations sur l’exportation des résultats de la recherche.
   
 - Si le nom du chemin d’accès du fichier d’un message dépasse la limite de caractères maximale pour Windows, le nom du chemin d’accès du fichier est tronqué. Mais le nom du chemin d’accès du fichier d’origine est affiché dans le manifeste et ResultsLog.
     
-- Comme expliqué précédemment, les résultats de la recherche de messagerie sont exportés vers un dossier dans le système de fichiers. Le chemin d’accès du dossier pour les messages individuels réplique le chemin d’accès au dossier dans la boîte aux lettres de l’utilisateur. Par exemple, pour une recherche nommée « ContosoCase101 », les messages de la boîte de réception d’un utilisateur se trouveraient dans le chemin d’accès du dossier `~ContosoCase101\\<date of export\Exchange\user@contoso.com (Primary)\Top of Information Store\Inbox` . 
+- Comme expliqué précédemment, les résultats de la recherche de messagerie sont exportés vers un dossier dans le système de fichiers. Le chemin d’accès du dossier pour les messages individuels réplique le chemin d’accès au dossier dans la boîte aux lettres de l’utilisateur. Par exemple, pour une recherche nommée « ContosoCase101 », les messages de la boîte de réception d’un utilisateur se trouveraient dans le chemin d’accès du dossier  `~ContosoCase101\\<date of export\Exchange\user@contoso.com (Primary)\Top of Information Store\Inbox` . 
     
 - Si vous choisissez d’exporter les messages électroniques dans un fichier PST contenant tous les messages d’un seul dossier, un dossier **éléments supprimés** et un dossier **dossiers de recherche** sont inclus dans le niveau supérieur du dossier PST. Ces dossiers sont vides. 
   
@@ -311,7 +311,7 @@ Voici plus d’informations sur l’exportation des résultats de la recherche.
   
  ### <a name="filenames-of-exported-items"></a>Noms de fichier des éléments exportés
   
-- Il existe une limite de 260 caractères (imposée par le système d’exploitation) pour le chemin d’accès complet des messages électroniques et des documents de site exportés vers votre ordinateur local. Le chemin d’accès complet des éléments exportés inclut l’emplacement d’origine de l’élément et l’emplacement du dossier sur l’ordinateur local où les résultats de la recherche sont téléchargés. Par exemple, si vous spécifiez de télécharger les résultats de la recherche `C:\Users\Admin\Desktop\SearchResults` dans dans l’outil d’exportation de découverte électronique, le nom de chemin complet d’un élément de courrier téléchargé serait `C:\Users\Admin\Desktop\SearchResults\ContentSearch1\03.15.2017-1242PM\Exchange\sarad@contoso.com (Primary)\Top of Information Store\Inbox\Insider trading investigation.msg` .
+- Il existe une limite de 260 caractères (imposée par le système d’exploitation) pour le chemin d’accès complet des messages électroniques et des documents de site exportés vers votre ordinateur local. Le chemin d’accès complet des éléments exportés inclut l’emplacement d’origine de l’élément et l’emplacement du dossier sur l’ordinateur local où les résultats de la recherche sont téléchargés. Par exemple, si vous spécifiez de télécharger les résultats de la recherche  `C:\Users\Admin\Desktop\SearchResults` dans dans l’outil d’exportation de découverte électronique, le nom de chemin complet d’un élément de courrier téléchargé serait  `C:\Users\Admin\Desktop\SearchResults\ContentSearch1\03.15.2017-1242PM\Exchange\sarad@contoso.com (Primary)\Top of Information Store\Inbox\Insider trading investigation.msg` .
     
     Si la limite de 260 caractères est dépassée, le chemin d’accès complet d’un élément est tronqué.
     
@@ -319,11 +319,11 @@ Voici plus d’informations sur l’exportation des résultats de la recherche.
     
   - Si le nom du chemin d’accès complet reste trop long après avoir raccourci le nom du fichier, l’élément est déplacé de son emplacement actuel vers le dossier parent. Si le chemin d’accès est toujours trop long, le processus est répété : raccourcissez le nom de fichier et, le cas échéant, déplacez-le de nouveau vers le dossier parent. Ce processus est répété jusqu’à ce que le chemin d’accès complet se trouve au-dessous de la limite de 260 caractères.
     
-  - S’il existe déjà un nom de chemin d’accès complet tronqué, un numéro de version est ajouté à la fin du nom de fichier ; par exemple, `statusmessage(2).msg` .
+  - S’il existe déjà un nom de chemin d’accès complet tronqué, un numéro de version est ajouté à la fin du nom de fichier ; par exemple,  `statusmessage(2).msg` .
     
-    Pour aider à atténuer ce problème, envisagez de télécharger les résultats de recherche vers un emplacement avec un nom de chemin d’accès court ; par exemple, le téléchargement des résultats de recherche dans un dossier nommé `C:\Results` ajoute des caractères aux noms de chemin d’accès des éléments exportés de sorte qu’ils ne les téléchargent pas dans un dossier nommé `C:\Users\Admin\Desktop\Results` .
+    Pour aider à atténuer ce problème, envisagez de télécharger les résultats de recherche vers un emplacement avec un nom de chemin d’accès court ; par exemple, le téléchargement des résultats de recherche dans un dossier nommé  `C:\Results` ajoute des caractères aux noms de chemin d’accès des éléments exportés de sorte qu’ils ne les téléchargent pas dans un dossier nommé  `C:\Users\Admin\Desktop\Results` .
     
-- Lorsque vous exportez des documents de site, il est également possible que le nom de fichier d’origine d’un document soit modifié. Cela se produit spécifiquement pour les documents qui ont été supprimés d’un site SharePoint ou OneDrive entreprise qui a été mis en attente. Une fois qu’un document se trouvant sur un site en conservation est supprimé, le document supprimé est automatiquement déplacé vers la bibliothèque de conservation de conservation pour le site (qui a été créé lors de la mise en attente du site). Lorsque le document supprimé est déplacé vers la bibliothèque de conservation de conservation, un ID généré de manière aléatoire et unique est ajouté au nom de fichier d’origine du document. Par exemple, si le nom de fichier d’un document est supprimé par la `FY2017Budget.xlsx` suite et déplacé vers la bibliothèque de conservation, le nom de fichier du document déplacé vers la bibliothèque de conservation de conservation est modifié comme suit `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx` . Si un document de la bibliothèque de conservation de conservation correspond à la requête d’une recherche de contenu et que vous exportez les résultats de cette recherche, le nom du fichier exporté est modifié ; dans cet exemple, le nom de fichier du document exporté est `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx` .
+- Lorsque vous exportez des documents de site, il est également possible que le nom de fichier d’origine d’un document soit modifié. Cela se produit spécifiquement pour les documents qui ont été supprimés d’un site SharePoint ou OneDrive entreprise qui a été mis en attente. Une fois qu’un document se trouvant sur un site en conservation est supprimé, le document supprimé est automatiquement déplacé vers la bibliothèque de conservation de conservation pour le site (qui a été créé lors de la mise en attente du site). Lorsque le document supprimé est déplacé vers la bibliothèque de conservation de conservation, un ID généré de manière aléatoire et unique est ajouté au nom de fichier d’origine du document. Par exemple, si le nom de fichier d’un document est supprimé par la  `FY2017Budget.xlsx` suite et déplacé vers la bibliothèque de conservation, le nom de fichier du document déplacé vers la bibliothèque de conservation de conservation est modifié comme suit  `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx` . Si un document de la bibliothèque de conservation de conservation correspond à la requête d’une recherche de contenu et que vous exportez les résultats de cette recherche, le nom du fichier exporté est modifié ; dans cet exemple, le nom de fichier du document exporté est  `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx` .
     
     Lorsqu’un document sur un site en conservation est modifié (et que le contrôle de version de la bibliothèque de documents dans le site a été activé), une copie du fichier est automatiquement créée dans la bibliothèque de conservation de conservation. Dans ce cas, un ID généré de manière aléatoire et unique est également ajouté au nom de fichier du document qui est copié dans la bibliothèque de conservation de conservation.
     

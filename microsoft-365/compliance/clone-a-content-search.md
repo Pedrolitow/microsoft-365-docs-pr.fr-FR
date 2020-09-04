@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: 4/26/2017
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -17,13 +17,13 @@ search.appverid:
 ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
 ms.custom:
 - seo-marvel-apr2020
-description: Utilisez le script Windows PowerShell dans cet article pour cloner rapidement une recherche de contenu existante dans le centre de conformité dans Office 365 ou Microsoft 365.
-ms.openlocfilehash: 28f1264736f158fd686174813b9cefdd087c274c
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+description: Utilisez le script PowerShell dans cet article pour cloner rapidement une recherche de contenu existante dans le centre de conformité dans Office 365 ou Microsoft 365.
+ms.openlocfilehash: 9bc9329d31ae27736bdcd399c555f5d70bb9c761
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818083"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357902"
 ---
 # <a name="clone-a-content-search"></a>Cloner une recherche de contenu
 
@@ -47,7 +47,7 @@ Pourquoi le clonage du contenu effectue des recherches ?
     
 - Ce script prend en compte si la recherche de contenu que vous clonez est associée à un cas de découverte électronique. Si la recherche est associée à un cas, la nouvelle recherche est également associée à la même casse. Si la recherche existante n’est pas associée à un cas, la nouvelle recherche est indiquée sur la page **recherche de contenu** dans le centre de conformité. 
     
-- L’exemple de script fourni dans cette rubrique n’est pas pris en charge dans le cadre d’un service ou d’un programme de support standard Microsoft. L’exemple de script est fourni en l’État sans aucune garantie. Microsoft exclut toute garantie implicite, y compris, sans limitation, les garanties implicites de qualité marchande ou d'adéquation à un usage particulier. L’ensemble des risques liés à l’utilisation ou aux performances de l’exemple de script et de la documentation reste avec vous. En aucun cas, Microsoft, ses auteurs ou toute personne impliquée dans la création, la production ou la livraison des scripts ne sont responsables de dommages quelconques (y compris, sans limitation, pertes de bénéfices, interruption d'activité, perte d'informations commerciales ou toute autre perte pécuniaire) découlant de l'utilisation ou de l'impossibilité d'utiliser les exemples de scripts ou la documentation, même si Microsoft a été informé de la possibilité de tels dommages.
+- L’exemple de script fourni dans cette rubrique n’est pas pris en charge dans le cadre d’un service ou d’un programme de support standard Microsoft. L’exemple de script est fourni en l’État sans aucune garantie. Microsoft Corporation décline aussi toute garantie implicite, y compris et sans limitation, les garanties implicites de qualité marchande ou d’adéquation à un usage particulier. L’ensemble des risques liés à l’utilisation ou aux performances de l’exemple de script et de la documentation reste avec vous. En aucun cas Microsoft, ses auteurs ou quiconque impliqué dans la création, la production ou la livraison des scripts ne sera responsable de tous dommages quels qu’ils soient (y compris, sans limitation, les dommages pour perte de profits, interruption d’activité, perte d’informations commerciales ou toute autre perte pécuniaire) découlant de l’utilisation ou de l’impossibilité d’utiliser les exemples de scripts ou la documentation, même si Microsoft a été informé de la possibilité de tels dommages.
   
 ## <a name="step-1-run-the-script-to-clone-a-search"></a>Étape 1 : exécuter le script pour cloner une recherche
 

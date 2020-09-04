@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
@@ -19,18 +19,18 @@ ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 ms.custom:
 - seo-marvel-apr2020
 description: Créez des stratégies d’alerte dans le centre de sécurité et conformité dans Office 365 et Microsoft 365 pour surveiller les menaces potentielles, les pertes de données et les problèmes d’autorisations.
-ms.openlocfilehash: 48c187d7456f4b0a8e1da7558b7813fc2a8dc9f7
-ms.sourcegitcommit: 33be6075fcc89d4c0a48fa7e59f3b3ebc605d9f3
+ms.openlocfilehash: 460c29c542ccf9be659628b3a2c992760acdb309
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44520168"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357942"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>Stratégies d’alerte dans le Centre de sécurité et de conformité
 
-Vous pouvez utiliser les outils de tableau de bord des stratégies et des alertes d’alerte dans les centres de sécurité et de conformité Microsoft 365 pour créer des stratégies d’alerte, puis afficher les alertes générées lorsque les utilisateurs effectuent des activités qui répondent aux conditions d’une stratégie d’alerte.
+Vous pouvez utiliser les outils de tableau de bord des stratégies et des alertes d’alerte dans les centres de sécurité et de conformité Microsoft 365 pour créer des stratégies d’alerte, puis afficher les alertes générées lorsque les utilisateurs effectuent des activités qui répondent aux conditions d’une stratégie d’alerte. Il existe plusieurs stratégies d’alerte par défaut qui vous aident à surveiller les activités telles que l’attribution de privilèges d’administrateur dans Exchange Online, les attaques de programmes malveillants, les campagnes de hameçonnage et les niveaux inhabituels de suppression de fichiers et de partage externe.
 
-Les stratégies d’alerte s’appuient sur et développent les fonctionnalités des alertes d’activité en vous permettant de catégoriser la stratégie d’alerte, d’appliquer la stratégie à tous les utilisateurs de votre organisation, de définir un niveau de seuil pour le déclenchement d’une alerte et de décider s’il faut recevoir des notifications par courrier électronique. Il existe également une page **afficher les alertes** dans le centre de sécurité et conformité où vous pouvez afficher et filtrer des alertes, définir un statut d’alerte pour vous aider à gérer les alertes, puis ignorer les alertes après avoir résolu ou résolu l’incident sous-jacent. Nous avons également développé le type d’événements pour lesquels vous pouvez créer des alertes. Par exemple, vous pouvez créer des stratégies d’alerte pour suivre les activités de programmes malveillants et les incidents de perte de données. Nous avons également inclus plusieurs stratégies d’alerte par défaut qui vous permettent de surveiller les activités telles que l’attribution de privilèges d’administrateur dans Exchange Online, les attaques de programmes malveillants, les campagnes de hameçonnage et les niveaux inhabituels de suppression de fichiers et de partage externe.
+Les stratégies d’alerte vous permettent de catégoriser les alertes déclenchées par une stratégie, d’appliquer la stratégie à tous les utilisateurs de votre organisation, de définir un niveau de seuil pour le déclenchement d’une alerte et de décider s’il faut recevoir des notifications par courrier électronique lorsque des alertes sont déclenchées. Il existe également une page **afficher les alertes** dans le centre de sécurité et conformité où vous pouvez afficher et filtrer des alertes, définir un statut d’alerte pour vous aider à gérer les alertes, puis ignorer les alertes après avoir résolu ou résolu l’incident sous-jacent.
 
 > [!NOTE]
 > Les stratégies d’alerte sont disponibles pour les organisations disposant d’un abonnement Microsoft 365 Enterprise, Office 365 Enterprise ou Office 365 gouvernement E1/F1/G1, E3/G3 ou E5/G5. Les fonctionnalités avancées sont disponibles uniquement pour les organisations disposant d’un abonnement E5/G5 ou pour les organisations disposant d’un abonnement E1/F1/G1 ou E3/G3 et d’un abonnement Office 365 Advanced Threat Protection (ATP) ou Microsoft 365 E5 Compliance ou un abonnement Microsoft 365 E5 eDiscovery et audit. La fonctionnalité nécessitant un abonnement E5/G5 ou complément est mise en surbrillance dans cette rubrique. Notez également que les stratégies d’alerte sont disponibles dans les environnements Office 365 GCC, GCC High et DoD US Government.
@@ -136,7 +136,7 @@ Le tableau indique également la planification Office 365 entreprise et Office 3
 |||||
 
 > [!NOTE]
-> <sup>1</sup> nous avons supprimé temporairement cette stratégie d’alerte par défaut en fonction des commentaires des clients. Nous travaillons sur l’amélioration de l’informatique et la remplacera par une nouvelle version dans un futur proche. En attendant, vous pouvez créer une stratégie d’alerte personnalisée pour remplacer cette fonctionnalité à l’aide des paramètres suivants :<br/>&nbsp;* L’activité est détectée par courrier électronique hameçon au moment de la remise<br/>&nbsp;* Le courrier n’est pas ZAP<br/>&nbsp;* Le sens du message est entrant<br/>&nbsp;* L’état de remise du courrier est remis<br/>&nbsp;* La technologie de détection est la rétention des URL malveillantes, la détonation d’URL, le filtre de hameçonnage avancé, le filtre de hameçonnage général, l’emprunt d’identité de domaine, l’emprunt d’identité d’utilisateur et l’emprunt d’identité de marque<br/><br/>&nbsp;&nbsp;&nbsp;Pour plus d’informations sur la protection anti-hameçonnage dans Office 365, consultez la rubrique [configurer les stratégies anti-hameçonnage et anti-hameçonnage](../security/office-365-security/set-up-anti-phishing-policies.md).<br/><br/><sup>2</sup> pour recréer cette stratégie d’alerte, suivez les instructions de la note de bas de page précédente, mais choisissez emprunt d’identité de l’utilisateur comme seule technologie de détection.
+> <sup>1</sup> nous avons supprimé temporairement cette stratégie d’alerte par défaut en fonction des commentaires des clients. Nous travaillons sur l’amélioration de l’informatique et la remplacera par une nouvelle version dans un futur proche. En attendant, vous pouvez créer une stratégie d’alerte personnalisée pour remplacer cette fonctionnalité à l’aide des paramètres suivants :<br/>&nbsp; * L’activité est détectée par courrier électronique hameçon au moment de la remise<br/>&nbsp; * Le courrier n’est pas ZAP<br/>&nbsp; * Le sens du message est entrant<br/>&nbsp; * L’état de remise du courrier est remis<br/>&nbsp; * La technologie de détection est la rétention des URL malveillantes, la détonation d’URL, le filtre de hameçonnage avancé, le filtre de hameçonnage général, l’emprunt d’identité de domaine, l’emprunt d’identité d’utilisateur et l’emprunt d’identité de marque<br/><br/>&nbsp;&nbsp;&nbsp;Pour plus d’informations sur la protection anti-hameçonnage dans Office 365, consultez la rubrique [configurer les stratégies anti-hameçonnage et anti-hameçonnage](../security/office-365-security/set-up-anti-phishing-policies.md).<br/><br/><sup>2</sup> pour recréer cette stratégie d’alerte, suivez les instructions de la note de bas de page précédente, mais choisissez emprunt d’identité de l’utilisateur comme seule technologie de détection.
 
 L’activité inhabituelle surveillée par certaines stratégies intégrées est basée sur le même processus que le paramètre de seuil d’alerte précédemment décrit. Microsoft établit une valeur de base qui définit la fréquence normale pour l’activité « normale ». Les alertes sont ensuite déclenchées lorsque la fréquence des activités suivies par la stratégie d’alerte intégrée dépasse largement la valeur de la base.
 
@@ -229,7 +229,7 @@ Pour voir la catégorie affectée à une stratégie d’alerte par défaut, cons
 |Lecteur de sécurité||![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)
 |Vue de service assurance|||||||
 |Administrateur de la vérification de surveillance|||||||
-|Journaux d’audit en affichage seul|||||||
+|Journaux d'audit en affichage seul|||||||
 |Gestion des appareils en affichage seul|||||||
 |Gestion de la conformité DLP en affichage seul||![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||||
 |Vue gérer uniquement les alertes||||||![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|

@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
 description: Utilisez la recherche de contenu dans le centre de sécurité & conformité pour effectuer des collections ciblées, ce qui garantit que les éléments se trouvent dans une boîte aux lettres ou un dossier de site spécifique.
-ms.openlocfilehash: 179d893c153af337cf6b8b9ed633172e22cf208a
-ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
+ms.openlocfilehash: 7257ae669e7d325140af546466fb3e6a8a8a17fe
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324580"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357654"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>Utiliser la recherche de contenu pour les regroupements ciblés
 

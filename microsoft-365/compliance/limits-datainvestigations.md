@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Trouvez des informations sur les limites de description, d’indexation, de recherche, d’exportation et de téléchargement dans les enquêtes de données (aperçu).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 95e779d56861e22f6fdab41442bb3e839329d193
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 53c71e50dd83332ebd1bb1076b3dbf5dd304b927
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036331"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47358502"
 ---
 # <a name="data-investigations-preview-limits"></a>Limites des enquêtes de données (aperçu)
 
@@ -42,7 +42,7 @@ Le tableau suivant répertorie les limites pour les recherches dans les enquête
   |Profondeur des éléments incorporés dans un seul fichier.  <br/> |25 <sup>1</sup> <br/> |
 |||
 > [!NOTE]
-><sup>1</sup> tous les éléments qui dépassent une limite de fichier unique apparaissent comme des erreurs de traitement.
+><sup>1</sup>  tous les éléments qui dépassent une limite de fichier unique apparaissent comme des erreurs de traitement.
 
 ## <a name="indexing-limits"></a>Limites d’indexation
 

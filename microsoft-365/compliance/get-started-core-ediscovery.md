@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cet article explique comment commencer à utiliser la découverte électronique de base dans Microsoft 365. Une fois que vous avez affecté des autorisations eDiscovery et créé un cas, vous pouvez ajouter des membres, créer des suspensions eDiscovery, puis Rechercher et exporter des données pertinentes pour votre enquête.
-ms.openlocfilehash: 5faae81eb81ce8c69e3ae801d153c664ac152bda
-ms.sourcegitcommit: 6ea9a910a8106a5f1aa589c55d166bfa67fd12a8
+ms.openlocfilehash: 94c85987be4cbc5da7a378abb7ea74294f6fe740
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "44280544"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357912"
 ---
 # <a name="get-started-with-core-ediscovery"></a>Prise en main de la découverte électronique de base
 
@@ -86,11 +86,11 @@ Il existe deux sous-groupes dans le groupe de rôles gestionnaire de découverte
 
   - Afficher tous les cas répertoriés sur la page de découverte électronique principale.
   
-  - Gérez tous les cas dans l’organisation une fois qu’ils ont été ajoutés en tant que membre du cas.
+  - Gérer tous les cas au sein l’organisation après s’être ajouté en tant que membre du cas.
 
-  - Accéder à des données de cas et les exporter pour n’importe quel cas dans l’organisation.
+  - Accéder et exporter des données de cas pour tout cas au sein de l’organisation.
 
-  En raison du large éventail d’accès, une organisation ne doit avoir que quelques administrateurs membres du sous-groupe administrateurs eDiscovery.
+  En raison de l’étendue de l’accès, une organisation ne doit avoir que quelques administrateurs membres du sous-groupe administrateurs eDiscovery.
 
 Pour plus d’informations sur les autorisations de découverte électronique, ainsi qu’une description de chaque rôle affecté au groupe de rôles gestionnaire de découverte électronique, consultez la rubrique [attribution d’autorisations eDiscovery](assign-ediscovery-permissions.md).
 
@@ -134,7 +134,7 @@ Pour commencer à utiliser la découverte électronique de base, voici un simple
 
 1. **[Créez un blocage eDiscovery](create-ediscovery-holds.md)**. La première étape après la création d’un cas consiste à placer une conservation (également appelée *conservation eDiscovery*) sur les emplacements de contenu des personnes concernées par votre enquête. Les emplacements de contenu incluent les boîtes aux lettres Exchange, les sites SharePoint, les comptes OneDrive, ainsi que les boîtes aux lettres et les sites associés aux groupes Microsoft teams et Office 365. Bien que cette étape soit facultative, la création d’une conservation eDiscovery préserve le contenu qui peut être pertinent pour le cas au cours de l’enquête. Lorsque vous créez une conservation de découverte électronique, vous pouvez conserver tout le contenu dans des emplacements de contenu spécifiques ou vous pouvez créer une conservation basée sur une requête pour conserver uniquement le contenu qui correspond à une requête de suspension. En plus de la préservation du contenu, une bonne raison de créer des suspensions eDiscovery consiste à rechercher rapidement les emplacements de contenu en conservation (au lieu de sélectionner chaque emplacement de recherche) lorsque vous créez et exécutez des recherches à l’étape suivante. Une fois que vous avez terminé votre enquête, vous pouvez libérer la conservation que vous avez créée.
 
-2. **[Rechercher du contenu](search-for-content-in-core-ediscovery.md)**. Une fois que vous avez créé des suspensions eDiscovery, utilisez l’outil de recherche intégré pour rechercher les emplacements de contenu en conservation. Vous pouvez également rechercher dans d’autres emplacements de contenu des données qui peuvent être pertinentes pour le cas. Vous pouvez créer et exécuter différentes recherches associées au cas. Vous utilisez des mots clés, des propriétés et des conditions pour [créer des requêtes de recherche](keyword-queries-and-search-conditions.md) qui renvoient des résultats de recherche avec les données les plus pertinentes pour le cas. Vous pouvez également effectuer les actions suivantes :
+2. **[Rechercher du contenu](search-for-content-in-core-ediscovery.md)**. Une fois que vous avez créé des suspensions eDiscovery, utilisez l’outil de recherche intégré pour rechercher les emplacements de contenu en conservation. Vous pouvez également rechercher dans d’autres emplacements de contenu des données qui peuvent être pertinentes pour le cas. Vous pouvez créer et exécuter différentes recherches associées au cas. Vous utilisez des mots clés, des propriétés et des conditions pour [créer des requêtes de recherche](keyword-queries-and-search-conditions.md) qui renvoient des résultats de recherche avec les données les plus pertinentes pour le cas. Vous pouvez également :
 
    - Afficher les statistiques de recherche qui peuvent vous aider à affiner une requête de recherche pour affiner les résultats.
 

@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Afficher un tableau répertoriant les champs de métadonnées pour les documents dans un ensemble de preuves dans les enquêtes de données (aperçu).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 3e13d62446cff3efdacaa5f8e1ade8a37006d922
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 4462b2031bc50f3d167b9340b6df5dba5a412d78
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035696"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357624"
 ---
 # <a name="document-metadata-fields-in-data-investigations-preview"></a>Champs de métadonnées de document dans les enquêtes de données (aperçu)
 
@@ -129,4 +129,4 @@ Le tableau suivant répertorie les champs de métadonnées pour les documents da
 |Balise de pertinence (problème)      | Oui (relevanceTag_issueNum)                     |                         |             |
 |||||
 
-  \*Pour ces champs, si des valeurs sont incorporées dans un document, la recherche les affectera en priorité ; dans le cas contraire, il essaiera d’afficher la valeur à partir d’Office 365.
+  \* Pour ces champs, si des valeurs sont incorporées dans un document, la recherche les affectera en priorité ; dans le cas contraire, il essaiera d’afficher la valeur à partir d’Office 365.

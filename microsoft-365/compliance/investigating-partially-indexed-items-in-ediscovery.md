@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: 1/26/2018
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -18,12 +18,12 @@ ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment gérer des éléments partiellement indexés (ou non indexés) à partir d’Exchange, SharePoint et OneDrive au sein de votre organisation.
-ms.openlocfilehash: ed85a9351aad340c5840b6b9b9ea6e55833ed527
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 4c2da954316450e22f481f1a5093077be79cc67e
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817523"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357376"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>Étude des éléments partiellement indexés dans eDiscovery
 
@@ -43,13 +43,13 @@ Bien que cela varie, les clients de la plupart des organisations disposent de mo
   
 ## <a name="why-does-the-partially-indexed-item-count-change-for-a-search"></a>Pourquoi le nombre d’éléments partiellement indexés change pour une recherche ?
 
-Une fois que vous avez exécuté une recherche de contenu dans le centre de sécurité & conformité, le nombre total et la taille des éléments partiellement indexés des emplacements de recherche sont répertoriés dans les statistiques des résultats de la recherche qui s’affichent dans les statistiques détaillées de la recherche. Remarque ces éléments sont appelés *éléments non indexés* dans les statistiques de la recherche. Voici quelques éléments qui affecteront le nombre d’éléments partiellement indexés renvoyés dans les résultats de la recherche : 
+Une fois que vous avez exécuté une recherche de contenu dans le centre de sécurité & conformité, le nombre total et la taille des éléments partiellement indexés des emplacements de recherche sont répertoriés dans les statistiques des résultats de la recherche qui s’affichent dans les statistiques détaillées de la recherche. Remarque ces éléments sont appelés  *éléments non indexés*  dans les statistiques de la recherche. Voici quelques éléments qui affecteront le nombre d’éléments partiellement indexés renvoyés dans les résultats de la recherche : 
   
 - Si un élément est partiellement indexé et correspond à la requête de recherche, il est inclus dans le nombre (et la taille) des éléments de résultat de recherche et des éléments partiellement indexés. Toutefois, lorsque les résultats de cette même recherche sont exportés, l’élément est inclus uniquement avec le jeu de résultats de recherche ; elle n’est pas incluse en tant qu’élément partiellement indexé.
     
 - Si vous spécifiez une plage de dates pour une requête de recherche (en l’incluant dans la requête de mot clé ou à l’aide d’une condition), tout élément partiellement indexé ne correspondant pas à la plage de dates n’est pas inclus dans le nombre d’éléments partiellement indexés. Seuls les éléments partiellement indexés qui appartiennent à la plage de dates sont inclus dans le nombre d’éléments partiellement indexés.
     
- **Remarque :** Les éléments partiellement indexés situés dans les sites SharePoint et OneDrive ne *sont pas* inclus dans l’estimation des éléments partiellement indexés affichés dans les statistiques détaillées de la recherche. Toutefois, les éléments partiellement indexés peuvent être exportés lorsque vous exportez les résultats d’une recherche de contenu. Par exemple, si vous recherchez uniquement des sites dans une recherche de contenu, le nombre estimé des éléments partiellement indexés est égal à zéro. 
+ **Remarque :** Les éléments partiellement indexés situés dans les sites SharePoint et OneDrive ne  *sont pas*  inclus dans l’estimation des éléments partiellement indexés affichés dans les statistiques détaillées de la recherche. Toutefois, les éléments partiellement indexés peuvent être exportés lorsque vous exportez les résultats d’une recherche de contenu. Par exemple, si vous recherchez uniquement des sites dans une recherche de contenu, le nombre estimé des éléments partiellement indexés est égal à zéro. 
   
 ## <a name="calculating-the-ratio-of-partially-indexed-items-in-your-organization"></a>Calcul du ratio d’éléments partiellement indexés dans votre organisation
 
@@ -95,7 +95,7 @@ Les balises d’erreur sont constituées de deux informations, l’erreur et le 
 ```
 
    
- `parseroutputsize`est l’erreur et `xls` est le type de fichier du fichier dans lequel l’erreur s’est produite. Dans les cas où le type de fichier n’a pas été reconnu ou que le type de fichier n’est pas applicable à l’erreur, vous verrez la valeur `noformat` à la place du type de fichier. 
+ `parseroutputsize` est l’erreur et  `xls` est le type de fichier du fichier dans lequel l’erreur s’est produite. Dans les cas où le type de fichier n’a pas été reconnu ou que le type de fichier n’est pas applicable à l’erreur, vous verrez la valeur  `noformat` à la place du type de fichier. 
   
 Voici une liste des erreurs d’indexation et une description de la cause possible de l’erreur.
   
@@ -118,7 +118,7 @@ Voici une liste des erreurs d’indexation et une description de la cause possib
 | `retrieverrms` <br/> |Le extracteur de contenu n’a pas pu décoder un message protégé par RMS.  <br/> |
 | `wordbreakertruncated` <br/> |Trop de mots ont été identifiés dans le document lors de l’indexation. Le traitement de la propriété s’est arrêté lorsque la limite est atteinte, et la propriété est tronquée.  <br/> |
    
-Les champs d’erreur décrivent les champs qui sont affectés par l’erreur de traitement répertoriée dans le champ balises d’erreur. Si vous recherchez une propriété telle que `subject` ou `participants` , les erreurs contenues dans le corps du message n’ont pas d’impact sur les résultats de votre recherche. Cela peut être utile lorsque vous déterminez exactement quels éléments partiellement indexés vous pouvez être amené à approfondir votre enquête.
+Les champs d’erreur décrivent les champs qui sont affectés par l’erreur de traitement répertoriée dans le champ balises d’erreur. Si vous recherchez une propriété telle que  `subject` ou  `participants` , les erreurs contenues dans le corps du message n’ont pas d’impact sur les résultats de votre recherche. Cela peut être utile lorsque vous déterminez exactement quels éléments partiellement indexés vous pouvez être amené à approfondir votre enquête.
   
 ## <a name="using-a-powershell-script-to-determine-your-organizations-exposure-to-partially-indexed-email-items"></a>Utilisation d’un script PowerShell pour déterminer l’exposition de votre organisation à des éléments de courrier électronique partiellement indexés
 

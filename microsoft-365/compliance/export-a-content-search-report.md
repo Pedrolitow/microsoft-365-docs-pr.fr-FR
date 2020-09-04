@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 f1_keywords:
 - ms.o365.cc.CustomizeExportReport
 ms.service: O365-seccomp
@@ -22,18 +22,18 @@ search.appverid:
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: Au lieu d’exporter les résultats réels d’une recherche de contenu dans le centre de sécurité & conformité dans Office 365, vous pouvez exporter un rapport des résultats de la recherche. Le rapport contient un résumé des résultats de la recherche et un document avec des informations détaillées sur chaque élément à exporter.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 25525a0670f31a7e962fb72f6d1559381e8b33cd
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: de27e25945f14f6a6119b4c1776eebca5e84d8ce
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817773"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47358300"
 ---
 # <a name="export-a-content-search-report"></a>Exporter un rapport de recherche de contenu
 
 Au lieu d’exporter l’ensemble complet des résultats de recherche à partir d’une recherche de contenu dans le centre de sécurité & conformité (et à partir d’une recherche de contenu associée à un cas eDiscovery), vous pouvez exporter les mêmes rapports générés lorsque vous exportez les résultats de recherche.
   
-Lorsque vous exportez un État, il est téléchargé dans un dossier portant le même nom que la recherche de contenu, mais avec *_ReportsOnly*. Par exemple, si la recherche de contenu est nommée *ContosoCase0815*, le rapport est téléchargé dans un dossier nommé *ContosoCase0815_ReportsOnly*. Pour obtenir la liste des documents inclus dans le rapport, voir [ce qui est inclus dans le rapport](#whats-included-in-the-report).
+Lorsque vous exportez un État, il est téléchargé dans un dossier portant le même nom que la recherche de contenu, mais avec *_ReportsOnly*. Par exemple, si la recherche de contenu est nommée  *ContosoCase0815*, le rapport est téléchargé dans un dossier nommé *ContosoCase0815_ReportsOnly*. Pour obtenir la liste des documents inclus dans le rapport, voir [ce qui est inclus dans le rapport](#whats-included-in-the-report).
 
 ## <a name="assign-roles-and-check-system-requirements"></a>Affecter des rôles et vérifier la configuration système requise
 
@@ -45,7 +45,7 @@ Lorsque vous exportez un État, il est téléchargé dans un dossier portant le 
     
   - versions 32 bits ou 64 bits de Windows 7 et versions ultérieures
     
-  - Microsoft .NET Framework 4,7
+  - Microsoft .NET Framework 4.7
     
 - Pour exécuter l’outil d’exportation de découverte électronique<sup>1</sup>, vous devez utiliser l’un des navigateurs pris en charge suivants :
 

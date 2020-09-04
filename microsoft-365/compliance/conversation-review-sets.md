@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment utiliser la fonctionnalité de reconstruction de conversation dans Advanced eDiscovery pour reconstruire, examiner et exporter des conversations thématiques.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 45cf4bdbf0956ee28e75878b7db5ec84b81c7230
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: bf5c39f567240b58546dbeb353e3e461e9b69e48
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035492"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47358342"
 ---
 # <a name="review-conversations-in-advanced-ediscovery"></a>Examiner les conversations dans Advanced eDiscovery 
 
@@ -132,7 +132,7 @@ Dans un ensemble de révision de conversation, vous pouvez utiliser les options 
 
 Dans un ensemble de révision de conversation, vous pouvez définir les options suivantes pour exporter des conversations :
 
-![Exporter](../media/export.png)
+![Options d’exportation pour les conversations](../media/export.png)
 
 a. Options de métadonnées
 
@@ -155,7 +155,7 @@ c. Autres options
 
    - **Remplacer le contenu exporté par des fichiers PDF biffés :** Si des fichiers de conversation biffée sont générés pendant le processus de révision, ces fichiers sont disponibles pendant l’exportation. Vous pouvez décider s’il faut exporter uniquement les fichiers natifs (sans sélectionner cette option) ou remplacer les fichiers natifs par les versions biffées des fichiers natifs (en sélectionnant cette option), qui sont exportées en tant que fichiers PDF.
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
 Pour en savoir plus sur l’examen des données de cas dans Advanced eDiscovery, consultez les articles suivants :
 

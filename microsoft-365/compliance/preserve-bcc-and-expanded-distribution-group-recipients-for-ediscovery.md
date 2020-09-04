@@ -7,17 +7,17 @@ author: markjjo
 manager: laurawi
 ms.date: 6/19/2017
 audience: ITPro
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
 description: La conservation inaltérable, la conservation pour litige et les stratégies de rétention de Microsoft 365 vous permettent de conserver le contenu de la boîte aux lettres conformément aux exigences de conformité réglementaire et de découverte électronique.
-ms.openlocfilehash: 07959edc89aa9d3335b9af501743eae4a11a6aa1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 62029ff742f9fe4aec1fed23d74b01b145da6cfe
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634862"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47358482"
 ---
 # <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>Conserver les destinataires Cci et les destinataires de groupe de distribution étendu pour la découverte électronique
   
@@ -68,11 +68,11 @@ Scénario 2 : Bob envoie un courrier électronique à John (À/Cc) et Jack (Cci,
 |Boîte aux lettres de Jack  <br/> |À/Cc:John (directement ou via un groupe de distribution)  <br/> |Oui  <br/> |Les informations des champs À/Cc sont incluses dans le message remis à tous les destinataires.  <br/> |
 |Boîte aux lettres de Jack  <br/> |Cci:Jack (directement ou via un groupe de distribution)  <br/> |Non  <br/> |Les informations du champ Cci ne sont pas stockées dans le message remis aux destinataires. Vous devez les rechercher dans la boîte aux lettres de l'expéditeur.  <br/> |
    
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
  **Q. Quand les informations sur le destinataire en Cci sont-elles stockées et à quel emplacement ?**
   
-A. Les informations relatives au destinataire en Cci sont conservées par défaut dans le message d'origine, dans la boîte aux lettres de l'expéditeur. Si le destinataire CCI est un groupe de distribution, l’appartenance au groupe de distribution n’est étendue que si la boîte aux lettres de l’expéditeur est bloquée ou affectée à une stratégie de rétention Microsoft 365.
+R. Les informations relatives au destinataire en Cci sont conservées par défaut dans le message d'origine, dans la boîte aux lettres de l'expéditeur. Si le destinataire CCI est un groupe de distribution, l’appartenance au groupe de distribution n’est étendue que si la boîte aux lettres de l’expéditeur est bloquée ou affectée à une stratégie de rétention Microsoft 365.
   
  **Q. Quand la liste des destinataires de groupe de distribution étendu est-elle stockée et à quel emplacement ?**
   
@@ -82,7 +82,7 @@ R. L'appartenance au groupe est étendue au moment de l'envoi du message. La lis
   
 R. Non. Ces informations ne sont pas incluses dans les en-têtes de message et ne sont pas visibles pour les destinataires indiqués dans les champs À et Cc. L'expéditeur peut voir le champ Cci stocké dans le message original de sa boîte aux lettres. Les responsables de la mise en conformité peuvent voir ces informations lors d'une recherche dans la boîte aux lettres de l'expéditeur.
   
- **Q. Comment puis-je m’assurer que les destinataires de groupe de distribution étendus sont toujours conservés ?**
+ **Clench. Comment puis-je m’assurer que les destinataires de groupe de distribution étendus sont toujours conservés ?**
   
 A. Pour vous assurer que les membres de groupe de distribution étendus sont toujours conservés avec un message, [Placez toutes les boîtes aux lettres en attente](https://technet.microsoft.com/library/4c141604-3210-44cc-b98e-f3e0f15613b8.aspx) ou créez une stratégie de rétention Microsoft 365 à l’échelle de l’organisation. 
   

@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 f1_keywords:
 - ms.o365.cc.CustomizeExportWithZoom
 ms.service: O365-seccomp
@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
 description: Découvrez comment préparer les résultats d’une recherche de contenu dans le centre de sécurité & Compliance pour une analyse plus poussée avec l’outil eDiscovery avancé.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c0f1540e9745351269e019ea95399ce5c636d8b3
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: b403987c39d1ddcc1f22fd0abbeba85e60591414
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818763"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47358566"
 ---
 # <a name="prepare-search-results-for-advanced-ediscovery-classic"></a>Préparation des résultats de recherche pour Advanced eDiscovery (classique)
 
@@ -34,7 +34,7 @@ ms.locfileid: "44818763"
 
 Une fois qu’une recherche associée à un cas eDiscovery dans le centre de sécurité & conformité est exécutée correctement, vous pouvez préparer les résultats de la recherche pour une analyse plus poussée avec Advanced eDiscovery, qui vous permet d’analyser les ensembles de données non structurés volumineux et de réduire la quantité de données correspondant à un cas juridique. Les fonctionnalités avancées de découverte électronique sont les suivantes :
   
-- **Reconnaissance optique de caractères** : lorsque vous préparez des résultats de recherche pour Advanced eDiscovery, la fonctionnalité de reconnaissance optique de caractères (OCR) extrait automatiquement le texte des images, ainsi que les résultats de recherche chargés dans Advanced eDiscovery for Analysis. La reconnaissance optique de caractères est prise en charge pour les fichiers libres, les pièces jointes et les images incorporées. Cela vous permet d’appliquer les fonctionnalités d’analyse textuelle de la découverte électronique avancée (quasi-doublons, du Threading de messagerie électronique, des thèmes et du codage prédictif) au contenu de texte dans les fichiers image. La reconnaissance optique des caractères eDiscovery avancée prend en charge les formats suivants pour les fichiers image :
+- **Reconnaissance optique de caractères** : lorsque vous préparez des résultats de recherche pour Advanced eDiscovery, la fonctionnalité de reconnaissance optique de caractères (OCR) extrait automatiquement le texte des images, ainsi que les résultats de recherche chargés dans Advanced eDiscovery for Analysis. La reconnaissance optique des caractères est prise en charge pour les fichiers isolés, les pièces jointes et les images incorporées. Cela vous permet d’appliquer les fonctionnalités d’analyse textuelle de la découverte électronique avancée (quasi-doublons, du Threading de messagerie électronique, des thèmes et du codage prédictif) au contenu de texte dans les fichiers image. La reconnaissance optique des caractères eDiscovery avancée prend en charge les formats suivants pour les fichiers image :
 
     - GIF
     - JPEG
@@ -50,7 +50,7 @@ Une fois qu’une recherche associée à un cas eDiscovery dans le centre de sé
     
 - **Codage prédictif** : vous permet de former le système sur ce que vous recherchez, en vous permettant de prendre des décisions (de savoir si un élément est pertinent ou non) sur un petit ensemble de documents. Advanced eDiscovery applique ensuite cette formation (en fonction de vos conseils) lors de l’analyse de tous les documents du jeu de données. En fonction de cette formation, Advanced eDiscovery offre un classement de pertinence afin que vous puissiez décider des documents à examiner en fonction du document le plus susceptible d’être pertinent pour le cas. 
     
-- **Exportation de données pour les applications de révision** : vous pouvez exporter des données à partir de Advanced eDiscovery et de Microsoft 365 après avoir terminé votre analyse et réduit le jeu de données. Le package d’exportation inclut un fichier CSV qui contient les propriétés des métadonnées de contenu et d’analyse exportées. Ce package d’exportation peut ensuite être importé dans une application de consultation de découverte électronique. 
+- **Exportation de données pour les applications de révision**  : vous pouvez exporter des données à partir de Advanced eDiscovery et de Microsoft 365 après avoir terminé votre analyse et réduit le jeu de données. Le package d’exportation inclut un fichier CSV qui contient les propriétés des métadonnées de contenu et d’analyse exportées. Ce package d’exportation peut ensuite être importé dans une application de consultation de découverte électronique. 
     
 ## <a name="get-licenses-and-permissions"></a>Obtenir des licences et des autorisations
 
@@ -115,7 +115,7 @@ Une fois la préparation terminée, l’étape suivante consiste à accéder à 
 
 Une fois que les résultats d’une recherche de découverte électronique sont ajoutés à un cas, l’étape suivante consiste à utiliser les outils avancés de découverte électronique pour analyser les données et identifier le contenu réactif à un cas juridique spécifique. Pour plus d’informations sur l’utilisation d’Advanced eDiscovery, reportez-vous à [Advanced eDiscovery (Classic)](office-365-advanced-ediscovery.md).
   
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
 Tous les messages électroniques chiffrés RMS inclus dans les résultats de la recherche seront déchiffrés lors de leur préparation pour analyse dans Advanced eDiscovery. Cette fonctionnalité de déchiffrement est activée par défaut pour les membres du groupe de rôles gestionnaire de découverte électronique. Cela est dû au fait que le rôle de gestion de déchiffrement RMS est affecté à ce groupe de rôles. Gardez les points suivants à l’esprit concernant le déchiffrement des messages électroniques :
   

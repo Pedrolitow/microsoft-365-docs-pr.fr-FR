@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Utilisez eDiscovery et les outils de recherche pour gérer et répondre à un incident de débordement de données dans votre organisation.
-ms.openlocfilehash: 4246460f2f7d7fdc41754fc2acd3125601bb5f79
-ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
+ms.openlocfilehash: bb342eef057fefafe98de274851ad14e9c588dbe
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44292450"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357564"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>série de solutions eDiscovery : scénario de fuite de données-recherche et purge
 
@@ -110,7 +110,7 @@ Une fois que vous avez vérifié les résultats de la recherche, vous souhaitere
  
     ![Sur la page exporter, cliquez sur Exporter, puis cliquez sur Télécharger le rapport.](../media/O365-eDiscoverySolutions-DataSpillage-ExportReport2.png)
 
-Le rapport Résumé de l' **exportation** contient le nombre d’emplacements trouvés avec les résultats et la taille des résultats de la recherche. Vous pouvez utiliser cette fonction pour effectuer une comparaison avec le rapport généré après suppression et fournir une preuve de suppression. Le rapport de **résultats** contient un résumé plus détaillé des résultats de la recherche, y compris l’objet, l’expéditeur, les destinataires, si le courrier électronique a été lu, les dates et la taille de chaque message. Si l’une des informations contenues dans ce rapport contient des données propagées réelles, veillez à supprimer définitivement le fichier results. csv une fois l’examen terminé.
+Le rapport Résumé de l' **exportation** contient le nombre d’emplacements trouvés avec les résultats et la taille des résultats de la recherche. Vous pouvez utiliser cette fonction pour effectuer une comparaison avec le rapport généré après suppression et fournir une preuve de suppression. Le rapport de **résultats** contient un résumé plus détaillé des résultats de la recherche, y compris l’objet, l’expéditeur, les destinataires, si le courrier électronique a été lu, les dates et la taille de chaque message. Si l’une des informations contenues dans ce rapport contient des données propagées réelles, veillez à supprimer définitivement le fichier Results.csv une fois l’examen terminé.
 
 Pour plus d’informations sur l’exportation des rapports, voir [exporter un rapport de recherche de contenu](export-a-content-search-report.md).
     
@@ -176,7 +176,7 @@ Veillez à rétablir les configurations précédentes de la boîte aux lettres a
 Pour supprimer les messages déversés, reportez-vous aux étapes 2 & 3 dans [Rechercher et supprimer des messages électroniques](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization)
 
 > [!IMPORTANT]
-> Les éléments de messagerie dans un jeu de révision dans un cas avancé de découverte électronique ne peuvent pas être supprimés à l’aide des procédures décrites dans cet article. Cela est dû au fait que les éléments d’un ensemble de révision sont des copies d’éléments du service actif qui sont copiées et stockées dans un emplacement de stockage Azure. Cela signifie qu’ils ne seront pas renvoyés par une recherche de contenu que vous créez à l’étape 3. Pour supprimer des éléments dans un jeu de réexamens, vous devez supprimer le cas avancé de découverte électronique qui contient l’ensemble de révision. Pour plus d’informations, consultez la rubrique [Close or delete a Advanced eDiscovery case](close-or-delete-case.md).
+> Il n’est pas possible de supprimer les éléments de courrier d’un groupe de révision dans un cas Advanced eDiscovery à l’aide des procédures décrites dans cet article. Cela est dû au fait que les éléments d’un ensemble de révision sont des copies d’éléments du service actif qui sont copiées et stockées dans un emplacement de stockage Azure. Cela signifie qu’ils ne seront pas renvoyés par une recherche de contenu que vous créez à l’étape 3. Pour supprimer des éléments d’un groupe de révision, vous devez supprimer le cas Advanced eDiscovery qui contient l’entité de révision. Pour plus d’informations, consultez [Fermer ou supprimer un cas Advanced eDiscovery](close-or-delete-case.md).
   
 ## <a name="step-8-verify-provide-a-proof-of-deletion-and-audit"></a>Étape 8 : vérifier, fournir une preuve de suppression et d’audit
 
@@ -198,7 +198,7 @@ Si les mots clés de la requête de recherche que vous avez créée et utilisée
     
 ### <a name="auditing-the-data-spillage-investigation-process"></a>Audit du processus d’enquête de fuite de données
 
-Vous pouvez rechercher dans le journal d’audit les activités eDiscovery effectuées pendant l’enquête. Vous pouvez également effectuer des recherches dans le journal d’audit pour renvoyer les enregistrements d’audit de la commande **New-ComplianceSearchAction-purge** exécutée à l’étape 7 pour supprimer les données déduites. Pour plus d’informations, voir :
+Vous pouvez rechercher dans le journal d’audit les activités eDiscovery effectuées pendant l’enquête. Vous pouvez également effectuer des recherches dans le journal d’audit pour renvoyer les enregistrements d’audit de la commande **New-ComplianceSearchAction-purge** exécutée à l’étape 7 pour supprimer les données déduites. Pour plus d’informations, reportez-vous aux rubriques suivantes :
 
 - [Rechercher le journal d’audit](search-the-audit-log-in-security-and-compliance.md)
 

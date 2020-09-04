@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Découvrez comment les utilisateurs utilisent les étiquettes de confidentialité dans les applications Office pour ordinateur de bureau, mobile et le Web, et quelles applications prennent en charge les étiquettes de sensibilité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c3e3bf903905ca241053ef110fb92bd220f3233f
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: 513a544239890f2299a7208d2ba2c20c4507a7ef
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46797628"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357776"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Utiliser les étiquettes de confidentialité dans les applications Office
 
@@ -39,9 +39,9 @@ Pour utiliser les étiquettes de confidentialité avec ces éditions autonomes d
 
 ## <a name="support-for-sensitivity-label-capabilities-in-apps"></a>Prise en charge des fonctionnalités d’étiquette de sensibilité dans les applications
 
-Pour chaque fonctionnalité, les tableaux suivants répertorient la version minimale dont vous avez besoin pour cette application afin de prendre en charge les étiquettes de sensibilité à l’aide d’étiquettes intégrées. Ou, si la fonctionnalité étiquette est en préversion publique ou en révision pour une version ultérieure.
+Pour chaque fonctionnalité, les tableaux suivants répertorient la version minimale d’Office dont vous avez besoin pour cette application afin de prendre en charge les étiquettes de sensibilité à l’aide d’étiquettes intégrées. Ou, si la fonctionnalité étiquette est en préversion publique ou en révision pour une version ultérieure. Pour plus d’informations sur les versions ultérieures, consultez la feuille de [route Microsoft 365](https://aka.ms/MIPC/Roadmap) .
 
-De nouvelles versions des applications sont disponibles à différents moments pour différents canaux de mise à jour. Pour plus d’informations, notamment sur la configuration de votre canal de mise à jour afin de pouvoir tester une nouvelle fonctionnalité d’étiquetage qui vous intéresse, reportez-vous à la rubrique [vue d’ensemble des canaux de mise à jour pour les applications Microsoft 365](https://docs.microsoft.com/DeployOffice/overview-update-channels). Les nouvelles fonctionnalités de la préversion privée ne sont pas incluses dans le tableau, mais vous pouvez participer à ces aperçus en décrivant votre organisation pour le [programme d’évaluation privée de la protection des informations Microsoft](https://aka.ms/mip-preview).
+De nouvelles versions des applications Office sont disponibles à différents moments pour différents canaux de mise à jour. Pour plus d’informations, notamment sur la configuration de votre canal de mise à jour afin de pouvoir tester une nouvelle fonctionnalité d’étiquetage qui vous intéresse, reportez-vous à la rubrique [vue d’ensemble des canaux de mise à jour pour les applications Microsoft 365](https://docs.microsoft.com/DeployOffice/overview-update-channels). Les nouvelles fonctionnalités de la préversion privée ne sont pas incluses dans le tableau, mais vous pouvez participer à ces aperçus en décrivant votre organisation pour le [programme d’évaluation privée de la protection des informations Microsoft](https://aka.ms/mip-preview).
 
 > [!NOTE]
 > Les noms des canaux de mise à jour pour les applications Office ont récemment changé. Par exemple, le canal mensuel est désormais le canal actuel et Office Insider est désormais un canal bêta. Pour plus d’informations, consultez la rubrique [modifications apportées aux canaux de mise à jour pour les applications Microsoft 365](https://docs.microsoft.com/deployoffice/update-channels-changes).

@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Cet article explique comment commencer à utiliser Advanced eDiscovery dans Microsoft 365. Une fois que vous avez effectué quelques étapes rapides, l’outil eDiscovery avancé est prêt à être utilisé. La première étape consiste à créer un cas, puis à commencer à utiliser les fonctionnalités avancées de découverte électronique.
-ms.openlocfilehash: 669ca954401242f7ac8da9a752a99b1b32c1041c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: cc593009337a9b78285fbcf98ad78dbf1899bce1
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632475"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357504"
 ---
 # <a name="get-started-with-advanced-ediscovery"></a>Prise en main Advanced eDiscovery
 
@@ -84,11 +84,11 @@ Il existe deux sous-groupes dans le groupe de rôles gestionnaire de découverte
 
   - Afficher tous les cas répertoriés sur la page Advanced eDiscovery.
   
-  - Gérez tous les cas dans l’organisation une fois qu’ils ont été ajoutés en tant que membre du cas.
+  - Gérer tous les cas au sein l’organisation après s’être ajouté en tant que membre du cas.
 
-  - Accéder à des données de cas et les exporter pour n’importe quel cas dans l’organisation.
+  - Accéder et exporter des données de cas pour tout cas au sein de l’organisation.
 
-  En raison du large éventail d’accès, une organisation ne doit avoir que quelques administrateurs membres du sous-groupe administrateurs eDiscovery.
+  En raison de l’étendue de l’accès, une organisation ne doit avoir que quelques administrateurs membres du sous-groupe administrateurs eDiscovery.
 
 Pour plus d’informations sur les autorisations de découverte électronique, ainsi qu’une description de chaque rôle affecté au groupe de rôles gestionnaire de découverte électronique, consultez la rubrique [attribution d’autorisations eDiscovery](assign-ediscovery-permissions.md).
 
@@ -107,7 +107,7 @@ L’étape suivante consiste à créer un cas et à commencer à utiliser Advanc
 
 1. Accédez à [https://compliance.microsoft.com](https://compliance.microsoft.com) et connectez-vous à l’aide des informations d’identification du compte d’utilisateur auquel ont été attribuées les autorisations eDiscovery appropriées. Les membres du groupe de rôles gestion de l’organisation peuvent également créer des cas avancés eDiscovery.
 
-2. Dans le volet de navigation de gauche du centre de conformité Microsoft 365, cliquez sur **Afficher tout**, puis sur **découverte électronique > avancé**.
+2. Dans le volet de navigation gauche du centre de conformité Microsoft 365, cliquez sur **Tout afficher**, puis cliquez sur **eDiscovery >avancée**.
 
 3. Sur la page **découverte électronique avancée** , cliquez sur l’onglet **incidents** , puis cliquez sur **créer un cas**.
 
@@ -127,7 +127,7 @@ L’étape suivante consiste à créer un cas et à commencer à utiliser Advanc
 
 10. Une fois que vous avez sélectionné les personnes à ajouter en tant que membres de la demande, cliquez sur **Ajouter**.
 
-11. Dans la page flyout **gérer ce cas** , cliquez sur **Enregistrer** pour enregistrer la nouvelle liste des membres de cas.
+11. Dans la page de garde **Gérer ce cas**, cliquez sur **Enregistrer** pour enregistrer la nouvelle liste des membres de cas.
 
 12. Cliquez sur l’onglet **Accueil** pour accéder à la page d’accueil du dossier.
 
@@ -149,7 +149,7 @@ Pour commencer à utiliser Advanced eDiscovery, voici un flux de travail simple 
 
    - Vous pouvez utiliser le [flux de travail de communication](managing-custodian-communications.md) dans Advanced eDiscovery pour envoyer une notification de suspension légale aux dépositaires.
 
-2. **[Recherchez des sources de données privatives de Troie pour les données pertinentes pour le cas](collecting-data-for-ediscovery.md)**. Une fois que vous avez ajouté des dépositaires à un cas, utilisez l’outil de recherche intégré pour rechercher des données susceptibles de concerner les emplacements de données des dépositaires. Vous utilisez des mots clés, des propriétés et des conditions pour [créer des requêtes de recherche](building-search-queries.md) qui renvoient des résultats de recherche avec les données les plus pertinentes pour le cas. Vous pouvez également effectuer les actions suivantes :
+2. **[Recherchez des sources de données privatives de Troie pour les données pertinentes pour le cas](collecting-data-for-ediscovery.md)**. Une fois que vous avez ajouté des dépositaires à un cas, utilisez l’outil de recherche intégré pour rechercher des données susceptibles de concerner les emplacements de données des dépositaires. Vous utilisez des mots clés, des propriétés et des conditions pour [créer des requêtes de recherche](building-search-queries.md) qui renvoient des résultats de recherche avec les données les plus pertinentes pour le cas. Vous pouvez également :
 
    - Afficher les [statistiques de recherche](search-statistics.md) qui peuvent vous aider à affiner une requête de recherche pour affiner les résultats.
 
