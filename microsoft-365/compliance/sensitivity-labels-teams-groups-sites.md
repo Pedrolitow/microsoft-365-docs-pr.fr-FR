@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de confidentialité pour protéger le contenu des sites SharePoint et Microsoft Teams, ainsi que des Groupes Microsoft 365.
-ms.openlocfilehash: ecc84196435125c83ff9518c2758e3f2611427b3
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: d0ac249483d888b76915e98429b72da88884e135
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307793"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357786"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint
 
@@ -33,6 +33,9 @@ Outre l’utilisation d' [étiquettes de confidentialité](sensitivity-labels.md
 - Confidentialité (privée ou publique) de sites d’équipes Microsoft 365 connectés au groupe
 - Accès des utilisateurs externes
 - Accès à partir d’appareils enregistrés
+
+> [!IMPORTANT]
+> Le paramètre **Accès à partir d’appareils non gérés** fonctionne conjointement avec la fonctionnalité SharePoint pour [contrôler l’accès à partir d’appareils non gérés](/sharepoint/control-access-from-unmanaged-devices). Vous devez configurer cette fonctionnalité SharePoint dépendante pour votre client afin d’utiliser une étiquette de confidentialité pour laquelle ce paramètre est configuré. Des informations supplémentaires sont incluses dans les instructions qui suivent.
 
 Lorsque vous appliquez cette étiquette de confidentialité à un conteneur pris en charge, l’étiquette applique automatiquement les paramètres de classification et de protection au site ou au groupe connecté.
 
@@ -83,7 +86,13 @@ Dans cette nouvelle page de **Paramètres de site et de groupe**, configurez les
 
 - **Accès des utilisateurs externes** : déterminez si le propriétaire du groupe peut [ajouter des invités au groupe](/office365/admin/create-groups/manage-guest-access-in-groups).
 
-- **Appareils non gérés** : pour les [appareils non gérés](/sharepoint/control-access-from-unmanaged-devices), autorisez l’accès total, l’accès web uniquement ou bloquer totalement l’accès. Si vous avez configuré ce paramètre au niveau du locataire ou d’un site spécifique, le paramètre que vous spécifiez ici est appliqué uniquement s’il est plus restrictif.
+- **Appareils non gérés** : pour cette option, vous devez également configurer la fonctionnalité SharePoint qui utilise l’accès conditionnel Azure AD pour bloquer ou limiter l’accès aux contenus SharePoint et OneDrive provenant d’appareils non gérés. Pour obtenir des instructions, voir [Contrôler l’accès depuis des appareils non gérés](/sharepoint/control-access-from-unmanaged-devices). L’option que vous spécifiez pour ce paramètre d’étiquette est l’équivalent du [blocage ou de la limitation de l’accès à un site SharePoint ou OneDrive spécifique](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive).
+    
+    Si vous ne configurez pas la fonctionnalité SharePoint dépendante, l’option spécifiée ici n’a aucun effet. De plus, elle n’aura aucun effet si elle est moins restrictive que le paramètre configuré au niveau du client. Sélectionnez un paramètre d’étiquette identique au paramètre au niveau du client ou plus restrictif.
+    
+    Par exemple, si votre client est configuré pour **Autoriser un accès limité au web uniquement**, le paramètre d’étiquette qui autorise l’accès complet n’aura aucun effet, car il est moins restrictif. Pour ce paramètre de niveau client, sélectionnez le paramètre d’étiquette pour bloquer l’accès (plus restrictif) ou le paramètre d’étiquette pour un accès limité (identique au paramètre client).
+    
+    Étant donné que vous pouvez configurer la fonctionnalité SharePoint indépendamment de la configuration d’étiquette, l’Assistant d’étiquettes de confidentialité ne vérifie pas si les dépendances sont en place.
 
 ![L’onglet Paramètres de site et de groupe](../media/edit-sensitivity-label-site-group2.png)
 
@@ -272,7 +281,7 @@ Les applications et services suivants ne prennent actuellement pas en charge les
   - Yammer
   - Planificateur
   - Project
-  - PowerBI
+  - Power BI
 
 ## <a name="classic-azure-ad-group-classification"></a>Classification classique de groupes Azure Active Directory
 
