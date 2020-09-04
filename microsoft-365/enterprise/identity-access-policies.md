@@ -16,127 +16,136 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 9819c161cc421117730cb4c58d1db06859125476
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: 4cbc4ceec734587137a284dd800f77b712c0168d
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332099"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47358015"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Stratégies communes pour les identités et l’accès aux appareils
-Cet article décrit les stratégies recommandées courantes pour sécuriser l’accès aux services Cloud, notamment les applications locales publiées avec le proxy d’application Azure AD. 
+Cet article décrit les stratégies recommandées courantes pour sécuriser l’accès aux services Cloud, notamment les applications locales publiées avec le proxy d’application Azure Active Directory (Azure AD). 
 
 Ce guide explique comment déployer les stratégies recommandées dans un environnement nouvellement mis en service. La configuration de ces stratégies dans un environnement de laboratoire distinct vous permet de comprendre et d’évaluer les stratégies recommandées avant de mettre en place le déploiement dans vos environnements de pré-production et de production. Votre environnement nouvellement configuré peut être en nuage seul ou hybride.  
 
 ## <a name="policy-set"></a>Jeu de stratégie 
 
-Le diagramme suivant illustre l’ensemble de stratégies recommandé. Elle indique le niveau de protection auquel chaque stratégie s’applique et indique si les stratégies s’appliquent aux PC, téléphones et tablettes, ou aux deux catégories d’appareils. Il indique également où ces stratégies sont configurées.
+Le diagramme suivant illustre l’ensemble de stratégies recommandé. Elle indique le niveau de protection auquel chaque stratégie s’applique et indique si les stratégies s’appliquent aux PC, téléphones et tablettes, ou aux deux catégories d’appareils. Il indique également l’emplacement où vous configurez ces stratégies.
 
 [ ![ Stratégies courantes de configuration de l’identité et de l’accès aux appareils](../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png) 
  [voir une version plus grande de cette image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
 
 Le reste de cet article explique comment configurer ces stratégies. 
 
-L’utilisation de l’authentification multifacteur est recommandée avant l’inscriptions de périphériques dans Intune pour garantir que l’appareil est en possession de l’utilisateur prévu. Vous devez également inscrire les appareils dans Intune avant d’appliquer les stratégies de conformité des appareils.
+>[!Note]
+>Il est recommandé d’exiger l’utilisation de l’authentification multifacteur (MFA) avant d’inscrire des appareils dans Intune afin de s’assurer que l’appareil est en possession de l’utilisateur prévu. Vous devez inscrire des appareils dans Intune pour pouvoir appliquer des stratégies de conformité des appareils.
+>
 
-Pour vous donner le temps de réaliser ces tâches, nous vous recommandons de mettre en œuvre les stratégies de base dans l’ordre indiqué dans le tableau ci-dessous. Toutefois, les stratégies de MFA pour une protection sensible et hautement réglementée peuvent être mises en œuvre à tout moment.
-
+Pour vous donner le temps de réaliser ces tâches, nous vous recommandons de mettre en œuvre les stratégies de base dans l’ordre indiqué dans le tableau ci-dessous. Toutefois, les stratégies de MFA pour des niveaux de protection sensibles et hautement réglementés peuvent être implémentées à tout moment.
 
 |Niveau de protection|Stratégies|Informations supplémentaires|
 |:---------------|:-------|:----------------|
 |**Baseline**|[Exiger l’authentification multifacteur lorsque le risque de connexion est *moyen* ou *élevé*](#require-mfa-based-on-sign-in-risk)| |
-|        |[Bloquer les clients ne prenant pas en charge l’authentification moderne](#block-clients-that-dont-support-modern-authentication)|Les clients qui n’utilisent pas l’authentification moderne peuvent contourner les règles d’accès conditionnel, c’est pourquoi il est important de bloquer ces|
+|        |[Bloquer les clients ne prenant pas en charge l’authentification moderne](#block-clients-that-dont-support-modern-authentication)|Les clients qui n’utilisent pas l’authentification moderne peuvent contourner des stratégies d’accès conditionnel, c’est pourquoi il est important de les bloquer.|
 |        |[Les utilisateurs à risque élevé doivent modifier leur mot de passe](#high-risk-users-must-change-password)|Force les utilisateurs à modifier leur mot de passe lors de la connexion en cas de détection d’une activité à haut risque pour leur compte.|
-|        |[Appliquer des stratégies de protection des données d’application](#apply-app-data-protection-policies)|Une stratégie par plateforme (iOS, Android, Windows). Les stratégies de protection des applications Intune (application) sont des ensembles de protection prédéfinis, du niveau 1 au niveau 3.|
-|        |[Exiger les applications approuvées et la protection des applications](#require-approved-apps-and-app-protection)|Applique la protection des applications mobiles pour les téléphones et les tablettes|
-|        |[Définir les stratégies de conformité des appareils](#define-device-compliance-policies)|Une stratégie pour chaque plateforme|
-|        |[Exiger des PC conformes](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Applique la gestion Intune des PC|
-|**Sensible**|[Exiger l’authentification multifacteur lorsque le risque de connexion est *faible*, *moyen* ou *élevé*](#require-mfa-based-on-sign-in-risk)| |
-|         |[Exiger des PC conformes *et des* appareils mobiles](#require-compliant-pcs-and-mobile-devices)|Applique la gestion Intune pour les PC et les téléphones/tablettes|
+|        |[Appliquer des stratégies de protection des données d’application](#apply-app-data-protection-policies)|Une stratégie de protection des applications Intune par plateforme (Windows, iOS/iPados, Android).|
+|        |[Exiger les applications approuvées et la protection des applications](#require-approved-apps-and-app-protection)|Applique la protection des applications mobiles pour les téléphones et les tablettes à l’aide d’iOS, de iPados ou Android.|
+|        |[Définir les stratégies de conformité des appareils](#define-device-compliance-policies)|Une stratégie pour chaque plateforme.|
+|        |[Exiger des PC conformes](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Applique la gestion Intune des PC à l’aide de Windows ou de MacOS.|
+|**Sensible**|[Exiger l’authentification multifacteur lorsque le risque de connexion est *faible*, *moyen*ou *élevé*](#require-mfa-based-on-sign-in-risk)| |
+|         |[Exiger des PC conformes *et des* appareils mobiles](#require-compliant-pcs-and-mobile-devices)|Applique la gestion d’Intune pour les PC (Windows ou MacOS) et les téléphones ou tablettes (iOS, iPados ou Android).|
 |**Hautement réglementé**|[*Toujours* exiger l’authentification multifacteur](#require-mfa-based-on-sign-in-risk)|
 | | |
 
-## <a name="assigning-policies-to-users"></a>Affectation de stratégies aux utilisateurs
+## <a name="assigning-policies-to-groups-and-users"></a>Affectation de stratégies à des groupes et à des utilisateurs
+
 Avant de configurer des stratégies, identifiez les groupes Azure AD que vous utilisez pour chaque niveau de protection. En règle générale, la protection de base s’applique à tous les employés de l’organisation. Toutes les stratégies de base, ainsi que les stratégies sensibles, sont appliquées à un utilisateur qui est inclus à la fois pour la protection de référence et la protection sensible. La protection est cumulative et la stratégie la plus restrictive est appliquée. 
 
 Une pratique recommandée consiste à créer un groupe Azure AD pour l’exclusion d’accès conditionnel. Ajoutez ce groupe à toutes vos règles d’accès conditionnel sous « exclure ». Cela vous permet de fournir un accès à un utilisateur pendant que vous dépannez les problèmes d’accès. Il s’agit d’une solution temporaire uniquement. Surveillez ce groupe pour les modifications et assurez-vous que le groupe d’exclusion n’est utilisé que comme prévu. 
 
-Le diagramme suivant fournit un exemple d’affectations et d’exclusions d’utilisateurs.
+Voici un exemple d’affectations et d’exclusions de groupe pour l’authentification MFA.
 
-![Exemple d’affectations et d’exclusions d’utilisateurs pour les règles MFA](../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png)
+![Exemple d’affectations et d’exclusions de groupe pour les règles MFA](../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png)
 
-Dans l’illustration, l’équipe « top secret Project X Team » est affectée à une stratégie d’accès conditionnel qui requiert la MFA *Always*. Soyez judicieuses lorsque vous appliquez des niveaux de protection plus élevés aux utilisateurs. Les membres de cette équipe de projet devront fournir deux formulaires d’authentification à chaque fois qu’ils se connectent, même s’ils n’affichent pas de contenu hautement réglementé.  
+Voici les résultats :
 
-Tous les groupes Azure AD créés dans le cadre de ces recommandations doivent être créés en tant que groupes Microsoft 365. Ceci est particulièrement important pour le déploiement des étiquettes de sensibilité lors de la sécurisation des documents dans SharePoint Online.
+- Tous les utilisateurs doivent utiliser MFA lorsque le risque de connexion est moyen ou élevé.
+
+- Les membres du groupe Executive staff doivent utiliser l’authentification multifacteur lorsque le risque de connexion est faible, moyen ou élevé.
+
+  Dans ce cas, les membres du groupe Executive staff correspondent à la fois aux stratégies d’accès conditionnel de base et sensibles. Les contrôles d’accès pour les deux stratégies sont combinés, ce qui est dans ce cas l’équivalent de la stratégie d’accès conditionnel sensible.
+
+- Les membres du groupe top secret Project X doivent toujours utiliser l’authentification multifacteur
+
+  Dans ce cas, les membres du groupe Project secret supérieur X correspondent à la fois aux stratégies de ligne de base et aux stratégies d’accès conditionnel hautement réglementées. Les contrôles d’accès pour les deux stratégies sont combinés. Étant donné que le contrôle d’accès pour la stratégie d’accès conditionnel hautement réglementé est plus restrictif, il est utilisé.
+
+Soyez vigilant lorsque vous appliquez des niveaux de protection plus élevés aux groupes et aux utilisateurs. Par exemple, les membres du groupe top secret Project X devront utiliser MFA à chaque fois qu’ils se connectent, même s’ils ne travaillent pas sur le contenu hautement réglementé pour Project X.  
+
+Tous les groupes Azure AD créés dans le cadre de ces recommandations doivent être créés en tant que groupes Microsoft 365. Ceci est important pour le déploiement des étiquettes de sensibilité lors de la sécurisation des documents dans Microsoft teams et SharePoint Online.
 
 ![Capture d’écran pour la création de groupes Microsoft 365](../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png)
 
-
 ## <a name="require-mfa-based-on-sign-in-risk"></a>Exiger une authentification multifacteur basée sur le risque de connexion
-Avant d’exiger MFA, utilisez d’abord une stratégie d’inscription MFA de protection des identités pour inscrire les utilisateurs pour MFA. Une fois que les utilisateurs sont inscrits, vous pouvez appliquer l’authentification multifacteur à la connexion. Le [travail requis](identity-access-prerequisites.md) inclut l’inscription de tous les utilisateurs avec authentification multifacteur.
 
-Pour créer une stratégie d’accès conditionnel : 
+Vos utilisateurs doivent s’inscrire pour l’authentification multifacteur avant d’exiger leur utilisation. Si vous avez Microsoft 365 E5, Microsoft 365 E3 avec l’identité & le module complémentaire protection contre les menaces, Office 365 avec EMS E5 ou des licences Azure AD Premium P2 individuelles, vous pouvez utiliser la stratégie d’inscription MFA avec Azure AD Identity Protection pour exiger que les utilisateurs s’inscrivent à l’authentification multifacteur. Le [travail requis](identity-access-prerequisites.md) inclut l’inscription de tous les utilisateurs avec authentification multifacteur.
 
-1. Accédez au [portail Azure](https://portal.azure.com) et connectez-vous avec vos informations d’identification. Une fois connecté, le tableau de bord Azure s’affiche.
+Une fois que vous avez enregistré vos utilisateurs, vous pouvez exiger l’authentification MFA pour la connexion.
 
-2. Dans le menu de gauche, choisissez **Azure Active Directory**.
+Pour créer une stratégie d’accès conditionnel : 
 
-3. Sous la section **Sécurité**, choisissez **Accès conditionnel**.
+1. Accédez au [portail Azure](https://portal.azure.com) et connectez-vous avec vos informations d’identification.
 
-4. Choisissez **Nouvelle stratégie**.
+2. Dans la liste des services Azure, sélectionnez **Azure Active Directory**.
 
-![Stratégie d’accès conditionnel de base de référence](../media/secure-email/CA-EXO-policy-1.png)
+3. Dans la liste **gérer** , choisissez **sécurité**, puis **accès conditionnel**.
 
- Le tableau suivant décrit les paramètres de stratégie d’accès conditionnel à implémenter pour cette stratégie.
+4. Choisissez **nouvelle stratégie** et tapez le nom de la nouvelle stratégie.
 
-**Affectations**
+Le tableau suivant décrit les paramètres de stratégie d’accès conditionnel pour exiger la fonction MFA en fonction du risque de connexion.
 
-|Type|Propriétés|Valeurs|Remarques|
+Dans la section **affectations** :
+
+|Paramètres|Propriétés|Valeurs|Remarques|
 |:---|:---------|:-----|:----|
-|Utilisateurs et groupes|Inclure|Sélectionner des utilisateurs et des groupes : sélectionnez un groupe de sécurité spécifique contenant les utilisateurs ciblés|Commencer avec un groupe de sécurité comprenant les utilisateurs pilotes|
-||Exclure|Groupe de sécurité d’exception ; comptes de service (identités d’application)|Appartenance modifiée en fonction de vos besoins temporaires|
-|Applications cloud|Inclure|Sélectionnez les applications auxquelles cette règle doit s’appliquer. Par exemple, sélectionnez Exchange Online.||
-|Conditions|Configuré|Oui|Les configurer en fonction de votre environnement et de vos besoins spécifiques|
-|Risque de connexion|Niveau de risque||Consultez les conseils dans le tableau suivant.|
+|Utilisateurs et groupes|Inclure| **Sélectionnez utilisateurs et groupes > utilisateurs et groupes**: sélectionnez des groupes spécifiques contenant des comptes d’utilisateurs ciblés. |Commencez par le groupe qui inclut les comptes d’utilisateur pilote.|
+||Exclure| **Utilisateurs et groupes**: sélectionnez votre groupe d’exceptions d’accès conditionnel ; comptes de service (identités d’application).|L’appartenance doit être modifiée en fonction de vos besoins et de manière temporaire.|
+|Actions ou applications Cloud|Include| **Sélectionnez applications**: sélectionnez les applications auxquelles cette règle doit s’appliquer. Par exemple, sélectionnez Exchange Online.||
+|Conditions| | |Configurez les conditions propres à votre environnement et à vos besoins.|
+||Risque de connexion||Consultez les conseils dans le tableau suivant.|
+|||||
 
-**Risque de connexion**
+**Paramètres de la condition de risque de connexion**
 
-Appliquez les paramètres en fonction du niveau de protection que vous ciblez.
+Appliquez les paramètres de niveau de risque en fonction du niveau de protection que vous ciblez.
 
-|Propriété|Niveau de protection|Valeurs|Remarques|
+|Niveau de protection|Valeurs de niveau de risque requises|Action|
+|:---------|:-----|:----|
+|Baseline|Élevé, moyen|Cochez les deux.|
+|Sensible|Élevé, moyen, faible|Sélectionnez les trois.|
+|Hautement réglementé| |Laissez toutes les options désactivées pour toujours appliquer l’authentification multifacteur.|
+||||
+
+Dans la section **contrôles d’accès** :
+
+|Paramètres|Propriétés|Valeurs|Action|
 |:---|:---------|:-----|:----|
-|Niveau de risque|Baseline|Élevé, moyen|Cocher les deux|
-| |Sensible|Élevé, moyen, faible|Cocher les trois|
-| |Hautement réglementé| |Laissez toutes les options désactivées pour toujours appliquer l’authentification multifacteur|
+|Accorder|**Grant access**| | Sélectionner |
+|||**Exiger l’authentification multifacteur**| Vérifier |
+||**Demander tous les contrôles sélectionnés** ||Sélectionner|
+|||||
 
-**Contrôles d’accès**
+Choisissez **Sélectionner** pour enregistrer les paramètres de **concession** .
 
-|Type|Propriétés|Valeurs|Remarques|
-|:---|:---------|:-----|:----|
-|Accorder|Accorder l'accès|True|Sélectionné|
-||Exiger MFA|True|Check|
-||Exiger que l’appareil soit marqué comme conforme|Faux||
-||Exiger un appareil joint Azure AD hybride|Faux||
-||Exiger une application client approuvée|False||
-||Demander tous les contrôles sélectionnés|True|Sélectionné|
+Enfin, sélectionnez **activé** pour **activer la stratégie**.
 
-> [!NOTE]
-> N’oubliez pas d’activer cette stratégie en sélectionnant **activé**. Vous pouvez également utiliser l’outil [What If](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) pour tester la stratégie.
-
+Vous pouvez également utiliser l’outil [What If](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) pour tester la stratégie.
 
 
 ## <a name="block-clients-that-dont-support-modern-authentication"></a>Bloquer les clients ne prenant pas en charge l’authentification moderne
-1. Accédez au [portail Azure](https://portal.azure.com) et connectez-vous avec vos informations d’identification. Une fois connecté, le tableau de bord Azure s’affiche.
 
-2. Dans le menu de gauche, choisissez **Azure Active Directory**.
+Utilisez les paramètres de ces tableaux pour une stratégie d’accès conditionnel afin de bloquer les clients qui ne prennent pas en charge l’authentification moderne.
 
-3. Sous la section **Sécurité**, choisissez **Accès conditionnel**.
-
-4. Choisissez **Nouvelle stratégie**.
-
-Le tableau suivant décrit les paramètres de stratégie d’accès conditionnel à implémenter pour cette stratégie.
-
-**Affectations**
+Dans la section **affectations** :
 
 |Type|Propriétés|Valeurs|Remarques|
 |:---|:---------|:-----|:----|
@@ -146,7 +155,7 @@ Le tableau suivant décrit les paramètres de stratégie d’accès conditionnel
 |Conditions|Configuré|Oui|Configurer les applications clientes|
 |Applications clientes|Configuré|Oui|Applications mobiles et clients de bureau, autres clients (sélectionnez les deux)|
 
-**Contrôles d’accès**
+Dans la section **contrôles d’accès** :
 
 |Type|Propriétés|Valeurs|Remarques|
 |:---|:---------|:-----|:----|
@@ -227,7 +236,7 @@ Si vous activez l’accès mobile à Exchange Online, implémentez [bloquer les 
 Enfin, le blocage de l’authentification héritée pour d’autres applications clientes sur les appareils iOS et Android garantit que ces clients ne peuvent pas contourner les règles d’accès conditionnel. Si vous suivez les instructions de cet article, vous avez déjà configuré [bloquer les clients qui ne prennent pas en charge l’authentification moderne](#block-clients-that-dont-support-modern-authentication).
 
 <!---
-With Conditional Access, organizations can restrict access to approved (modern authentication capable) iOS and Android client apps with Intune app protection policies applied to them. Several conditional access policies are required, with each policy targeting all potential users. Details on creating these policies can be found in [Require app protection policy for cloud app access with Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access).
+With Conditional Access, organizations can restrict access to approved (modern authentication capable) iOS and Android client apps with Intune app protection policies applied to them. Several Conditional Access policies are required, with each policy targeting all potential users. Details on creating these policies can be found in [Require app protection policy for cloud app access with Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access).
 
 1. Follow "Step 1: Configure an Azure AD Conditional Access policy for Microsoft 365" in [Scenario 1: Microsoft 365 apps require approved apps with app protection policies](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), which allows Outlook for iOS and Android, but blocks OAuth capable Exchange ActiveSync clients from connecting to Exchange Online.
 
@@ -250,7 +259,6 @@ Créez une stratégie pour chaque plateforme :
 - Android Enterprise
 - iOS/iPad
 - macOS
-- Windows Phone 8.1
 - Windows 8,1 et versions ultérieures
 - Windows 10 et versions ultérieures
 
@@ -314,7 +322,7 @@ Pour exiger des PC conformes :
 
 2. Dans le menu de gauche, choisissez **Azure Active Directory**.
 
-3. Sous la section **Sécurité**, choisissez **Accès conditionnel**.
+3. Dans la section **sécurité** , cliquez sur **accès conditionnel**.
 
 4. Choisissez **Nouvelle stratégie**.
 
@@ -342,7 +350,7 @@ Pour exiger la conformité de tous les périphériques, procédez comme suit :
 
 2. Dans le menu de gauche, choisissez **Azure Active Directory**.
 
-3. Sous la section **Sécurité**, choisissez **Accès conditionnel**.
+3. Dans la section **sécurité** , cliquez sur **accès conditionnel**.
 
 4. Choisissez **Nouvelle stratégie**.
 
@@ -363,4 +371,7 @@ Lors de la création de cette stratégie, ne sélectionnez pas de plateformes. C
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Découvrir les recommandations de stratégies pour sécuriser les e-mails](secure-email-recommended-policies.md)
+![Étape 3 : stratégies pour les utilisateurs invités et externes](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-3.png)
+
+
+[En savoir plus sur les recommandations de stratégie pour les utilisateurs invités et externes](identity-access-policies-guest-access.md)

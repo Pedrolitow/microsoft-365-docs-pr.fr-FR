@@ -13,16 +13,16 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à utiliser le rapport et l’analyseur d’authentification SMTP dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité afin de surveiller les expéditeurs de messages électroniques de leur organisation qui utilisent SMTP authentifié (authentification SMTP) pour envoyer des messages électroniques.
-ms.openlocfilehash: 65e5569bcd79caef071ee2103d18a4e985c19dbb
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 4123edcfa08e31217dcd6a29186492bc036fa7a0
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826868"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357433"
 ---
 # <a name="smtp-auth-clients-insight-and-report-in-the-security--compliance-center"></a>Clients d’authentification SMTP Insight and report dans le centre de conformité & Security
 
-Les **clients d’authentification SMTP** du [tableau de bord de flux de messagerie](mail-flow-insights-v2.md) et du [rapport clients SMTP](#smtp-auth-clients-report) associés mettent en surbrillance l’utilisation du protocole de soumission du client SMTP AUTH par les utilisateurs ou les comptes système de votre organisation. Ce protocole hérité (qui utilise le point de terminaison smtp.office365.com) offre uniquement l’authentification de base et est susceptible d’être utilisé par des comptes compromis pour envoyer des courriers électroniques. L’aperçu et le rapport vous permettent de vérifier l’activité inhabituelle pour les envois de courrier électronique SMTP. Il indique également les données d’utilisation TLS pour les clients ou les appareils utilisant l’authentification SMTP.
+Les **clients d’authentification SMTP** du [tableau de bord de flux de messagerie](mail-flow-insights-v2.md) et le [rapport clients SMTP AUTH](#smtp-auth-clients-report) associés dans le [Centre de conformité &](https://protection.office.com) mettent en surbrillance l’utilisation du protocole d’envoi de client SMTP AUTH par les utilisateurs ou les comptes système de votre organisation. Ce protocole hérité (qui utilise le point de terminaison smtp.office365.com) offre uniquement l’authentification de base et est susceptible d’être utilisé par des comptes compromis pour envoyer des courriers électroniques. L’aperçu et le rapport vous permettent de vérifier l’activité inhabituelle pour les envois de courrier électronique SMTP. Il indique également les données d’utilisation TLS pour les clients ou les appareils utilisant l’authentification SMTP.
 
 Le widget indique le nombre d’utilisateurs ou de comptes de service qui ont utilisé le protocole SMTP AUTH au cours des 7 derniers jours.
 
@@ -85,6 +85,6 @@ Cliquez sur **demander un rapport** pour recevoir une version plus détaillée d
 
 Pour revenir à l’affichage rapports, cliquez sur **afficher le rapport**.
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 Pour plus d’informations sur les autres informations du tableau de bord de flux de messagerie, consultez [la rubrique mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).

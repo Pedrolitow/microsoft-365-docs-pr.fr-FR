@@ -1,5 +1,5 @@
 ---
-title: Autoriser les utilisateurs à réinitialiser leur mot de passe
+title: Autoriser les utilisateurs à réinitialiser leurs mots de passe
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -24,18 +24,18 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Découvrez comment réinitialiser vos mots de passe à l’aide de l’outil de réinitialisation du mot de passe libre-service.
-ms.openlocfilehash: 288613023ee61626bf12f7090ad0ff73139ef06d
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 1684afd1baf32acc6c4245938b2ac7ee024d7374
+ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780588"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47361806"
 ---
-# <a name="let-users-reset-their-own-passwords"></a>Autoriser les utilisateurs à réinitialiser leur mot de passe
+# <a name="let-users-reset-their-own-passwords"></a>Autoriser les utilisateurs à réinitialiser leurs mots de passe
 
-Vous êtes inondé de demandes de réinitialisation de mots de passe ? En tant qu’administrateur 365 de Microsoft, vous pouvez autoriser les utilisateurs à utiliser l' [outil de réinitialisation du mot de passe libre-service](https://go.microsoft.com/fwlink/p/?LinkId=522677) afin de ne pas avoir à réinitialiser leur mot de passe. Moins de travail pour vous ! 
+En tant qu’administrateur 365 de Microsoft, vous pouvez autoriser les utilisateurs à utiliser l' [outil de réinitialisation du mot de passe libre-service](https://go.microsoft.com/fwlink/p/?LinkId=522677) afin de ne pas avoir à réinitialiser leur mot de passe. Moins de travail pour vous !
   
-Voici quelques informations à retenir :
+## <a name="before-you-begin"></a>Avant de commencer
   
 - Vous bénéficiez d’une réinitialisation du mot de passe en libre-service pour les utilisateurs du Cloud **gratuitement** avec les plans payants Microsoft 365 Business, Education ou imprévus. Elle ne fonctionne pas avec la version d’évaluation de Microsoft 365.
 
@@ -43,13 +43,17 @@ Voici quelques informations à retenir :
 
 - **Si vous utilisez un annuaire Active Directory local**, les deux points ci-dessus ne s’appliquent pas. Au lieu de cela, vous pouvez configurer cela, mais **il nécessite un abonnement payant à Azure ad Premium**.
 
-Regardez une courte vidéo sur la façon de permettre aux utilisateurs de réinitialiser leur mot de passe. <br><br>
+Cet article s’adresse aux personnes responsables de la stratégie d’expiration des mots de passe au sein d’une entreprise, d’une école ou d’une association. Pour effectuer ces étapes, vous devez vous connecter à l’aide de votre compte d’administrateur Microsoft 365. [Qu’est-ce qu’un compte administrateur ?](../admin-overview/admin-overview.md)
+
+Pour effectuer ces étapes, vous devez être [administrateur général ou administrateur de mots de passe](about-admin-roles.md) .
+
+## <a name="watch-let-users-reset-their-own-passwords"></a>Regarder : autoriser les utilisateurs à réinitialiser leur mot de passe
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AY8S]
 
 Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
-## <a name="let-people-reset-their-own-passwords"></a>Autoriser les utilisateurs à réinitialiser leur mot de passe
+## <a name="steps-let-people-reset-their-own-passwords"></a>Étapes : autoriser les utilisateurs à réinitialiser leur mot de passe
 
 Ces étapes activent la réinitialisation du mot de passe libre-service pour tout le monde dans votre entreprise.
   
@@ -83,10 +87,10 @@ Ces étapes activent la réinitialisation du mot de passe libre-service pour tou
   
 7. Lorsque les utilisateurs se connectent, ils sont invités à entrer des informations de contact supplémentaires qui les aideront à réinitialiser leur mot de passe à l’avenir.
 
-## <a name="related-articles"></a>Articles connexes
+## <a name="related-content"></a>Contenu connexe
 
 [Définir la stratégie d'expiration des mots de passe pour votre organisation](../manage/set-password-expiration-policy.md)
-  
+
 [Définir le mot de passe d'un utilisateur de façon à ce qu'il n'expire jamais](set-password-to-never-expire.md)
 
 [Vidéos de formation Microsoft 365 Entreprise](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

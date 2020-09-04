@@ -1,5 +1,5 @@
 ---
-title: Renvoyer le mot de passe d’un utilisateur-aide de l’administrateur
+title: Renvoyer le mot de passe d’un utilisateur – Aide de l’administrateur
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -19,42 +19,52 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9b838071-94aa-4b8e-8d84-d17ece1ee951
-description: 'Découvrez comment réinitialiser le mot de passe et envoyer un courrier électronique de notification à un nouvel utilisateur de Microsoft 365. '
-ms.openlocfilehash: 2f9d4fd829e4378b245fd3b8277e9b913d17ab69
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Découvrez comment réinitialiser le mot de passe et envoyer un courrier électronique de notification à un nouvel utilisateur de Microsoft 365.
+ms.openlocfilehash: d39a448cdea9e986c46fbebc1d4cfcdf63882daf
+ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386984"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47361818"
 ---
-# <a name="resend-a-users-password---admin-help"></a>Renvoyer le mot de passe d’un utilisateur-aide de l’administrateur
+# <a name="resend-a-users-password---admin-help"></a>Renvoyer le mot de passe d’un utilisateur – Aide de l’administrateur
 
-Cet article explique comment renvoyer le courrier électronique de notification à un nouvel utilisateur dans Office 365. Pour ce faire, vous devez réinitialiser le mot de passe de l’utilisateur.
-  
-Pour effectuer ces étapes, vous devez être [administrateur général ou administrateur de mots de passe](about-admin-roles.md) . 
+Cet article explique comment renvoyer le courrier électronique de notification à un nouvel utilisateur dans Office 365. Cela peut se produire lorsque vous créez un nouvel utilisateur et qu’il n’obtient pas de message électronique avec son nouveau mot de passe. Pour ce faire, vous devez réinitialiser le mot de passe de l’utilisateur.
+
+## <a name="before-you-begin"></a>Avant de commencer
+
+Cet article s’adresse aux personnes responsables de la stratégie d’expiration des mots de passe au sein d’une entreprise, d’une école ou d’une association. Pour effectuer ces étapes, vous devez vous connecter à l’aide de votre compte d’administrateur Microsoft 365. [Qu’est-ce qu’un compte administrateur ?](../admin-overview/admin-overview.md).
+
+Pour effectuer ces étapes, vous devez être [administrateur général ou administrateur de mots de passe](about-admin-roles.md) .
+
+## <a name="resend-user-password"></a>Renvoyer le mot de passe utilisateur
   
 ::: moniker range="o365-worldwide"  
   
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
-     
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.  
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.  
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>. 
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>. 
 
 ::: moniker-end
 
 2. Sur la page **utilisateurs actifs** , sélectionnez l’utilisateur, puis **Réinitialiser le mot de passe**.
-    
+
 3. Suivez les instructions de la page **Réinitialiser le mot de passe** pour générer automatiquement un nouveau mot de passe pour l’utilisateur ou en créer un pour celui-ci, puis sélectionnez **Réinitialiser**.  
-    
+
 4. Entrez une adresse de messagerie à laquelle l’utilisateur peut accéder afin qu’il reçoive le nouveau mot de passe et de le suivre pour s’assurer qu’il a reçu le nouveau mot de passe.
-    
-  
+
+## <a name="related-content"></a>Contenu connexe
+
+[Autoriser les utilisateurs à réinitialiser leur mot de passe](../add-users/let-users-reset-passwords.md)
+
+[Réinitialiser les mots de passe](../add-users/reset-passwords.md)
