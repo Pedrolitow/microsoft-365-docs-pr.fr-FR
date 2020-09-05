@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données Reuters Eikon à partir de Globanet dans Microsoft 365. Ce connecteur vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 de sorte que vous puissiez utiliser les fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: ee28cd33e6c4531bf769a1e178d733eff453cb75
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: a5cd6e6266c9e5d8b74f50a5712e436e6225c9df
+ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47362013"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47399337"
 ---
 # <a name="set-up-a-connector-to-archive-reuters-eikon-data-preview"></a>Configuration d’un connecteur pour l’archivage des données Reuters eikon (aperçu)
 
@@ -28,7 +28,7 @@ Une fois que les données de Reuters Eikon sont stockées dans les boîtes aux l
 
 ## <a name="overview-of-archiving-reuters-eikon-data"></a>Vue d’ensemble des données d’archivage Reuters Eikon
 
-La vue d’ensemble suivante décrit le processus d’utilisation d’un connecteur pour archiver les informations de Reuters Eikon dans Microsoft 365.
+La vue d’ensemble suivante décrit le processus d’utilisation d’un connecteur pour archiver des données Reuters Eikon dans Microsoft 365.
 
 ![Flux de travail d’archivage pour les données Reuters Eikon](../media/ReutersEikonConnectorWorkflow.png)
 
@@ -62,13 +62,13 @@ La première étape consiste à accéder à la page **connecteurs de données** 
 
 ## <a name="step-2-configure-the-reuters-eikon-connector-on-the-globanet-merge1-site"></a>Étape 2 : configurer le connecteur Reuters Eikon sur le site Merge1 Globanet
 
-La deuxième étape consiste à configurer le connecteur Reuters Eikon sur le site Merge1. Pour plus d’informations sur la configuration du connecteur Reuters Eikon dans le site Merge1 Globanet, voir [Merge1 le Guide de l’utilisateur des connecteurs tiers](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Reuters%20Eikon%20User%20Guide%20.pdf).
+La deuxième étape consiste à configurer le connecteur Reuters Eikon sur le site Merge1. Pour plus d’informations sur la configuration du connecteur Reuters Eikon sur le site Merge1 Globanet, voir Merge1 le Guide de l' [utilisateur des connecteurs tiers](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Reuters%20Eikon%20User%20Guide%20.pdf).
 
 Une fois que vous avez cliqué sur **enregistrer & terminer**, vous êtes redirigé vers le centre de conformité Microsoft 365, sur la page **mappage utilisateur** de l’Assistant connecteur.
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Étape 3 : mapper les utilisateurs et terminer l’installation du connecteur
 
-Pour mapper les utilisateurs et terminer le connecteur configuré dans le centre de conformité Microsoft 365, procédez comme suit :
+Pour mapper les utilisateurs et terminer l’installation du connecteur dans le centre de conformité Microsoft 365, procédez comme suit :
 
 1. Sur la page **connecter des utilisateurs externes à des utilisateurs de Microsoft 365** , activez le mappage utilisateur automatique. Les éléments de Reuters Eikon incluent une propriété appelée *courrier électronique*, qui contient des adresses de messagerie pour les utilisateurs de votre organisation. Si le connecteur peut associer cette adresse à un utilisateur de Microsoft 365, les éléments sont importés dans la boîte aux lettres de cet utilisateur.
 

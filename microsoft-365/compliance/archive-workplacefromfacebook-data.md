@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données à partir de l’espace de travail à partir de Facebook, qui est archivé sur le site Merge1 de Globanet, dans Microsoft 365. La configuration d’un connecteur nécessite que vous utilisiez Globanet ce connecteur vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 de sorte que vous puissiez utiliser les fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: b57ad60133fdb7cee7db24781755bda032b10a89
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: e7cdb81b2b676424c289c42490fe23e7b5441239
+ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47362003"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47399131"
 ---
 # <a name="set-up-a-connector-to-archive-workplace-from-facebook-data-preview"></a>Configurer un connecteur pour archiver un espace de travail à partir de données Facebook (aperçu)
 
@@ -72,7 +72,7 @@ Une fois que vous avez cliqué sur **enregistrer & terminer**, vous êtes rediri
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Étape 3 : mapper les utilisateurs et terminer l’installation du connecteur
 
-Pour mapper les utilisateurs et terminer le connecteur configuré dans le centre de conformité Microsoft 365, procédez comme suit :
+Pour mapper les utilisateurs et terminer l’installation du connecteur dans le centre de conformité Microsoft 365, procédez comme suit :
 
 1. Sur la page **connecter des utilisateurs externes à des utilisateurs de Microsoft 365** , activez le mappage utilisateur automatique. Les éléments de l’espace de travail incluent une propriété appelée *courrier électronique* qui contient des adresses de messagerie pour les utilisateurs de votre organisation. Si le connecteur peut associer cette adresse à un utilisateur de Microsoft 365, les éléments sont importés dans la boîte aux lettres de cet utilisateur.
 

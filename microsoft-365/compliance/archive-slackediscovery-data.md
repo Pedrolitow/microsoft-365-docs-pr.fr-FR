@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données à partir de la découverte 365 électronique Globanet. Ce connecteur vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 de sorte que vous puissiez utiliser les fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: 2d24f2784b07446f529057d9abfc05cf2688be4a
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: 86a6595ae12201e5083b524661ef53dba54f8cf3
+ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47361971"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47399305"
 ---
 # <a name="set-up-a-connector-to-archive-slack-ediscovery-data-preview"></a>Configurer un connecteur pour archiver les données eDiscovery de la marge (aperçu)
 
@@ -64,7 +64,7 @@ La première étape consiste à accéder à la page **connecteurs de données** 
 
 ## <a name="step-2-configure-slack-ediscovery"></a>Étape 2 : configurer la découverte électronique des marges
 
-La deuxième étape consiste à configurer le connecteur eDiscovery de la marge sur le site Merge1. Pour plus d’informations sur la configuration du connecteur eDiscovery de la marge dans le site Globanet Merge1, voir [Merge1 le Guide de l’utilisateur des connecteurs tiers](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Slack%20eDiscovery%20User%20Guide.pdf).
+La deuxième étape consiste à configurer le connecteur eDiscovery de la marge sur le site Merge1. Pour plus d’informations sur la configuration du connecteur eDiscovery de la marge sur le site Merge1 Globanet, voir [Merge1 le Guide de l’utilisateur des connecteurs tiers](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Slack%20eDiscovery%20User%20Guide.pdf).
 
 Une fois que vous avez cliqué sur **enregistrer & terminer**, vous êtes redirigé vers le centre de conformité Microsoft 365, sur la page **mappage utilisateur** de l’Assistant connecteur.
 

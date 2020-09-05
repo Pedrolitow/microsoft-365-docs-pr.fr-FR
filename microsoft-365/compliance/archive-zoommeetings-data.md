@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données à partir de réunions zoom Globanet dans Microsoft 365. Cela vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 de sorte que vous puissiez utiliser les fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: 6c040d6955b8b3ef737fdccd648bd5993fc5c135
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: c053137c67276fa76dd84c38e1aca602a0b9c151
+ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47361981"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47399141"
 ---
 # <a name="set-up-a-connector-to-archive-zoom-meetings-data-preview"></a>Configuration d’un connecteur pour l’archivage des données de réunions zoom (aperçu)
 
@@ -74,7 +74,7 @@ La première étape consiste à accéder aux **connecteurs de données** dans le
 
 ## <a name="step-2-configure-the-zoom-meetings-connector"></a>Étape 2 : configurer le connecteur de réunions zoom
 
-La deuxième étape consiste à configurer le connecteur de réunions zoom sur le site Merge1. Pour plus d’informations sur la configuration du connecteur de réunions zoom dans le site Globanet Merge1, voir [Merge1 le Guide de l’utilisateur des connecteurs tiers](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Zoom%20Meetings%20User%20Guide%20.pdf).
+La deuxième étape consiste à configurer le connecteur de réunions zoom sur le site Merge1. Pour plus d’informations sur la configuration du connecteur de réunions zoom sur le site Merge1 Globanet, voir Merge1 le Guide de l' [utilisateur des connecteurs tiers](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Zoom%20Meetings%20User%20Guide%20.pdf).
 
 Une fois que vous avez cliqué sur **enregistrer & terminer**, vous êtes redirigé vers le centre de conformité Microsoft 365, sur la page **mappage utilisateur** de l’Assistant connecteur.
 

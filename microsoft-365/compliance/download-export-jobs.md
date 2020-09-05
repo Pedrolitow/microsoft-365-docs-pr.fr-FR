@@ -1,5 +1,5 @@
 ---
-title: Télécharger des travaux d’exportation pour un cas
+title: Télécharger des travaux d’exportation pour un cas avancé eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,19 +14,19 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
+ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-mar2020
 description: Installez et utilisez l’Explorateur de stockage Azure pour télécharger des documents qui ont été exportés à partir d’un jeu de vérification dans Advanced eDiscovery.
-ms.openlocfilehash: 617ef0b27d5cab4098c505eaefb935ba8ae4ae2a
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 4b09521b4a72fc8fda68f5892c899fe76a066809
+ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035676"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47399161"
 ---
-# <a name="download-export-jobs"></a>Télécharger l’exportation des travaux
+# <a name="download-export-jobs-in-an-advanced-ediscovery-case"></a>Télécharger des travaux d’exportation dans un cas avancé eDiscovery
 
-Lorsque vous exportez des documents à partir d’un jeu de réexamen dans un cas avancé de découverte électronique, les documents sont téléchargés vers un emplacement de stockage Azure fourni par Microsoft ou vers un emplacement de stockage Azure géré par votre organisation. Le type d’emplacement de stockage Azure utilisé dépend de l’option sélectionnée lors de l’exportation des documents. 
+Lorsque vous exportez des documents à partir d’un jeu de réexamen dans un cas avancé de découverte électronique, les documents sont téléchargés vers un emplacement de stockage Azure fourni par Microsoft ou vers un emplacement de stockage Azure géré par votre organisation. Le type d’emplacement de stockage Azure utilisé dépend de l’option sélectionnée lors de l’exportation des documents.
 
 Cet article fournit des instructions sur l’utilisation de l’Explorateur de stockage Microsoft Azure pour se connecter à un emplacement de stockage Azure afin de parcourir et télécharger les documents exportés. Pour plus d’informations sur l’Explorateur de stockage Azure, voir [démarrage rapide : utiliser l’Explorateur de stockage Azure](https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-storage-explorer).
 
@@ -40,7 +40,7 @@ L’étape suivante consiste à obtenir l’URL de signature d’accès partagé
 
 1. Sur la page **Advanced eDiscovery** , accédez au cas, puis cliquez sur l’onglet **exports** .
 
-2. Sous l’onglet **exportations** , cliquez sur le travail d’exportation que vous souhaitez télécharger.
+2. Dans l'onglet **Exportations** cliquez sur la tâche d'exportation que vous souhaitez télécharger.
 
 3. Sur la page de menu volant, sous **emplacements**, copiez l’URL de la version SAS affichée. Si nécessaire, vous pouvez l’enregistrer dans un fichier pour pouvoir y accéder à l’étape 3.
  
@@ -50,31 +50,31 @@ L’étape suivante consiste à obtenir l’URL de signature d’accès partagé
 
 La dernière étape consiste à utiliser l’Explorateur de stockage Azure et l’URL SAS pour se connecter à l’emplacement de stockage Azure et télécharger les documents que vous avez exportés vers un ordinateur local.
 
-1.  Ouvrez l’Explorateur de stockage Azure que vous avez installé à l’étape 1.
+1. Ouvrez l’Explorateur de stockage Azure que vous avez installé à l’étape 1.
 
 2. Cliquez sur l’icône **Ajouter un compte** . Vous pouvez également cliquer avec le bouton droit sur **comptes de stockage**.
 
    ![Cliquez sur l’icône Ajouter un compte](../media/AzureStorageConnect.png)
 
-3.  Sur la page **connexion à Azure Storage** , cliquez sur **utiliser un URI de signature d’accès partagé (SAS)** , puis cliquez sur **suivant**.
+3. Sur la page **connexion à Azure Storage** , cliquez sur **utiliser un URI de signature d’accès partagé (SAS)** , puis cliquez sur **suivant**.
 
     ![Cliquez sur utiliser un URI de signature d’accès partagé (SAS), puis sur suivant.](../media/AzureStorageConnect2.png)
 
-4.  Dans la page **attacher avec l’URI SAS** , cliquez dans la zone URI, puis collez l’URL SAS que vous avez obtenue à l’étape 2. 
+4. Dans la page **attacher avec l’URI SAS** , cliquez dans la zone URI, puis collez l’URL SAS que vous avez obtenue à l’étape 2. 
 
     ![Coller l’URL SAS dans la zone URI](../media/AzureStorageConnect3.png)
 
-    Notez qu’une partie de l’URL SAS apparaît dans la zone **nom d’affichage** . Il sera utilisé comme nom d’affichage du conteneur créé sous les **comptes de stockage** une fois que vous vous êtes connecté à l’emplacement de stockage. Ce nom se compose de l’ID du cas de découverte électronique avancée, de et d’un identificateur unique. Vous pouvez conserver le nom d’affichage par défaut ou le modifier. Si vous le modifiez, le nom d’affichage doit être unique.
+    Notez qu’une partie de l’URL SAS apparaît dans la zone **nom d’affichage** . Il sera utilisé comme nom d’affichage du conteneur créé sous les **comptes de stockage** une fois que vous vous êtes connecté à l’emplacement de stockage. Ce nom est constitué de l'identifiant de l'affaire Advanced eDiscovery et d'un identifiant unique. Vous pouvez conserver le nom d'affichage par défaut ou le changer. Si vous le changez, le nom d'affichage doit être unique.
 
-5.  Cliquez sur **Suivant**.
+5. Cliquez sur **Suivant**.
 
     La page **Résumé de connexion** s’affiche.
-   
+
     ![Cliquez sur se connecter sur la page de résumé de connexion pour vous connecter à l’emplacement de stockage Azure.](../media/AzureStorageConnect4.png)
 
-6. Sur la page **Résumé de connexion** , passez en revue les informations de connexion, puis cliquez sur **se connecter**. 
+6. Sur la page **Résumé de connexion** , passez en revue les informations de connexion, puis cliquez sur **se connecter**.
 
-    Le nœud **conteneurs BLOB** (sous **comptes** > **de stockage (conteneurs associés)** \> est ouvert. 
+    Le nœud **conteneurs BLOB** (sous **comptes**  >  **de stockage (conteneurs associés)** \> est ouvert.
 
     ![Exporter des travaux dans le nœud conteneurs d’objets BLOB](../media/AzureStorageConnect5.png)
 
@@ -88,9 +88,9 @@ La dernière étape consiste à utiliser l’Explorateur de stockage Azure et l�
 
    Le dossier exporter le travail contient les éléments suivants. Les éléments réels dans le dossier d’exportation sont déterminés par les options d’exportation configurées lors de la création du travail d’exportation. Pour plus d’informations, consultez [la rubrique exporter des documents à partir d’un jeu de révision](export-documents-from-review-set.md).
 
-    - Export_load_file. csv : ce fichier CSV est un rapport d’exportation détaillé qui contient des informations sur chaque document exporté. Le fichier se compose d’une colonne pour chaque propriété de métadonnées d’un document. Pour obtenir la liste et la description des métadonnées incluses dans ce rapport, reportez-vous à la colonne **nom du champ exporté** du tableau dans les [champs de métadonnées de document dans Advanced eDiscovery](document-metadata-fields.md).
+    - Export_load_file.csv : ce fichier CSV est un rapport d’exportation détaillé qui contient des informations sur chaque document exporté. Le fichier se compose d’une colonne pour chaque propriété de métadonnées d’un document. Pour obtenir la liste et la description des métadonnées incluses dans ce rapport, reportez-vous à la colonne **nom du champ exporté** du tableau dans les [champs de métadonnées de document dans Advanced eDiscovery](document-metadata-fields.md).
     
-    - Summary. txt : fichier texte contenant un résumé de l’exportation, y compris les statistiques d’exportation.
+    - Summary.txt : un fichier texte qui contient un résumé de l’exportation, y compris les statistiques d’exportation.
     
     - Extracted_text_files : ce dossier contient une version de fichier texte de chaque document exporté.
      
@@ -98,17 +98,17 @@ La dernière étape consiste à utiliser l’Explorateur de stockage Azure et l�
     
     - Error_files : ce dossier inclut les éléments suivants lorsque le travail d’exportation contient des fichiers d’erreur : 
         
-      - ExtractionError. csv : ce fichier CSV contient les métadonnées disponibles pour les fichiers qui n’ont pas été correctement extraits de leur élément parent.
+      - ExtractionError.csv : ce fichier CSV contient les métadonnées disponibles pour les fichiers qui n’ont pas été correctement extraits de leur élément parent.
         
       - ProcessingError : ce dossier contient des documents contenant des erreurs de traitement. Ce contenu se trouve au niveau de l’élément, ce qui signifie qu’en cas d’erreur de traitement d’une pièce jointe, le document contenant la pièce jointe est également inclus dans ce dossier.
  
-8. Pour exporter tout le contenu de l’exportation, sélectionnez le dossier exporter, puis cliquez sur **Télécharger**.
+8. Pour exporter tous les contenus de l'exportation, sélectionnez le dossier d'exportation, puis cliquez sur**Télécharger**.
 
-9. Spécifiez l’emplacement où vous souhaitez télécharger les fichiers exportés, puis cliquez sur Sélectionner un dossier.
+9. Indiquez l'endroit où vous souhaitez télécharger les fichiers exportés, puis cliquez sur Sélectionnez le dossier.
 
     L’Explorateur de stockage Azure démarre le processus d’exportation. L’état de téléchargement des éléments exportés est affiché dans le volet **activités** . Un message s’affiche lorsque le téléchargement est terminé.
 
     ![Un message s’affiche lorsque le téléchargement est terminé.](../media/AzureStorageConnect8.png)
 
 > [!NOTE]
-> Au lieu de télécharger l’intégralité du travail d’exportation, vous pouvez sélectionner des éléments spécifiques à télécharger. Et au lieu de télécharger des éléments, vous pouvez double-cliquer sur un élément pour l’afficher.
+> Au lieu de télécharger l'ensemble du travail d'exportation, vous pouvez sélectionner des éléments spécifiques à télécharger. Et au lieu de télécharger des éléments, vous pouvez faire double-cliquer sur un élément pour le visualiser.
