@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Les rôles d’administrateur correspondent à des fonctions professionnelles et accordent l'autorisation d'effectuer des tâches spécifiques dans le centre d’administration. Par exemple, l’administrateur du service ouvre les tickets de support avec Microsoft.
-ms.openlocfilehash: 361c6599dfccbe7a80fa520bcd1fa988a1fae536
-ms.sourcegitcommit: 6cf29958aff90d8bc1df0fe5fb9238d338db8237
+ms.openlocfilehash: d80207ac264cb1b649f631d358c86809c2992a8e
+ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46506284"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47361772"
 ---
 # <a name="about-admin-roles"></a>À propos des rôles d’administrateur
 
@@ -40,6 +40,10 @@ Vous recherchez la liste complète des descriptions de rôle Azure AD détaillé
 Vous recherchez la liste complète des descriptions de rôle Intune détaillées que vous pouvez gérer dans le centre d’administration Microsoft 365 ?  Consultez la page [Contrôle d’accès basé sur un rôle dans Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control).
 
 Si vous souhaitez en savoir plus sur l’attribution de rôles dans le Centre d’administration Microsoft 365, consultez la page [Attribuer des rôles d’administrateur](assign-admin-roles.md).
+
+### <a name="watch-what-is-an-admin"></a>Regardez : qu’est-ce qu’un administrateur ?
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SRc0]
 
 ## <a name="security-guidelines-for-assigning-roles"></a>Directives de sécurité pour l'attribution des rôles
 
