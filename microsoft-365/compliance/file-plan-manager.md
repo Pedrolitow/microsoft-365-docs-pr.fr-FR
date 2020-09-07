@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Le plan de gestion de fichiers offre des fonctionnalités de gestion avancées pour les étiquettes de rétention.
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: 96150005421f6c2e28183c6e4417edd64b80a814
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: eb35915861c08588fab309210a49585a49d1b9da
+ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126877"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47399211"
 ---
 # <a name="use-file-plan-to-manage-retention-labels"></a>Utiliser le plan de gestion de fichiers pour gérer les étiquettes de rétention
 
@@ -108,11 +108,11 @@ Pour commencer, il existe des valeurs prêtes à l’emploi pour les descripteur
 
 Exemple de descripteurs de plan de gestion de fichiers lorsque vous créez ou modifiez une étiquette de rétention :
 
-![Descripteurs de plan de gestion de fichiers](../media/file-plan-descriptors.png)
+![Descripteurs de plan de gestion de fichiers lorsque vous créez ou modifiez une étiquette de rétention](../media/file-plan-descriptors.png)
 
 Exemple de vue des colonnes des descripteurs de plan de gestion de fichiers :
 
-![file-plan-descriptors-on-labels-tab.png](../media/file-plan-descriptors-on-labels-tab.png)
+![Colonnes des descripteurs de plan de gestion de fichiers](../media/file-plan-descriptors-on-labels-tab.png)
 
 ## <a name="export-all-retention-labels-to-analyze-or-enable-offline-reviews"></a>Exporter toutes les étiquettes de rétention pour analyse ou activer les révisions en mode hors connexion
 

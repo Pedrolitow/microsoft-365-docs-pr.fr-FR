@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir le fonctionnement de la rétention pour Exchange.
-ms.openlocfilehash: e1860b9ff9c521a5a6a61c58d822a2a893570e99
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: e12f46b68feb4b64ade14cfb046061d89e1a607c
+ms.sourcegitcommit: 916fa2dacbc13287b49823176375259d7af03f86
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127441"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47394711"
 ---
 # <a name="learn-about-retention-for-exchange"></a>Découvrir la rétention pour Exchange
 
@@ -70,4 +70,9 @@ Si un utilisateur quitte votre organisation et que sa boîte aux lettres est inc
 
 ## <a name="configuration-guidance"></a>Instructions de configuration
 
-Si vous êtes prêt à configurer la rétention dans Microsoft 365, voir [Prise en main des stratégies de rétention et des étiquettes de rétention](get-started-with-retention.md).
+Si vous n’avez jamais configurer la rétention dans Microsoft 365, voir [Prise en main des stratégies et des étiquettes de rétention](get-started-with-retention.md).
+
+Si vous êtes prêt à configurer une stratégie ou une étiquette de rétention pour Exchange, consultez les instructions suivantes :
+- [Créer et configurer des stratégies de rétention](create-retention-policies.md)
+- [Créer des étiquettes de rétention et les appliquer dans les applications](create-apply-retention-labels.md)
+- [Appliquer automatiquement une étiquette de rétention au contenu](apply-retention-labels-automatically.md)

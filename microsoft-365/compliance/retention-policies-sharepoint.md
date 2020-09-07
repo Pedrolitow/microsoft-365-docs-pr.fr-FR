@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment la rétention fonctionne pour SharePoint et OneDrive.
-ms.openlocfilehash: 3c1b2564b0ba9d96d22ab9d3b78da500b54363e2
-ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
+ms.openlocfilehash: da700c72a03bad85310be8807bf94e54ec6a4048
+ms.sourcegitcommit: 916fa2dacbc13287b49823176375259d7af03f86
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "47315787"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47394701"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Découvrir la rétention pour SharePoint et OneDrive
 
@@ -98,4 +98,9 @@ Si un utilisateur quitte votre organisation, tous les fichiers soumis à une str
 
 ## <a name="configuration-guidance"></a>Instructions de configuration
 
-Si vous êtes prêt à configurer la rétention dans Microsoft 365, voir [Prise en main des stratégies de rétention et des étiquettes de rétention](get-started-with-retention.md).
+Si vous n’avez jamais configurer la rétention dans Microsoft 365, voir [Prise en main des stratégies et des étiquettes de rétention](get-started-with-retention.md).
+
+Si vous êtes prêt à configurer une stratégie ou une étiquette de rétention pour Exchange, consultez les instructions suivantes :
+- [Créer et configurer des stratégies de rétention](create-retention-policies.md)
+- [Créer des étiquettes de rétention et les appliquer dans les applications](create-apply-retention-labels.md)
+- [Appliquer automatiquement une étiquette de rétention au contenu](apply-retention-labels-automatically.md)

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Configurez les points de terminaison contre la protection contre la perte de données Microsoft 365 pour surveiller les activités des fichiers et implémenter des actions de protection pour ces fichiers aux points de terminaison.
-ms.openlocfilehash: 67bd00a83314590d1ca1ab71c32d5a325686dc46
-ms.sourcegitcommit: f3a02584c9354a46c082f8f948b34a177adf65bb
+ms.openlocfilehash: f24dff993a125de9ecd126b232abfcfa503deb83
+ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46514777"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47399221"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention-preview"></a>Prise en main des points de terminaison de protection contre la perte de données (aperçu)
 
@@ -99,17 +99,17 @@ Dans ce scénario de déploiement, vous allez intégrer des appareils qui n’on
 1. Ouvrez le [Centre de conformité Microsoft](https://compliance.microsoft.com).
 2. Ouvrez la page Paramètres du centre de conformité et sélectionnez **Appareils intégrés**. 
 
-![activer la gestion des appareils](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
+   ![activer la gestion des appareils](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
 
-> [!NOTE]
-> Bien que l’activation de l’intégration des appareils dure généralement environ 60 secondes, patientez jusqu’à 30 minutes avant de contacter le support Microsoft.
+   > [!NOTE]
+   > Bien que l’activation de l’intégration des appareils dure généralement environ 60 secondes, patientez jusqu’à 30 minutes avant de contacter le support Microsoft.
 
 3. Sélectionnez **Gestion des appareils** pour ouvrir la liste des **Appareils**. La liste est vide tant que vous n’avez pas intégré de périphériques.
 4. Sélectionnez **Intégration** pour lancer le processus d’intégration.
 5. Choisissez la manière dont vous voulez déployer ces autres appareils à partir de la liste**Méthode de déploiement**, puis **Télécharger le package**.
 
-![Méthode de déploiement](../media/endpoint-dlp-getting-started-3-deployment-method.png)
-1. Suivez les procédures appropriées dans [Outils et méthodes d’intégration pour les ordinateurs Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Ce lien vous permet d’accéder à une page d’accueil dans laquelle vous pouvez accéder aux procédures MDATP qui correspondent au package de déploiement que vous avez sélectionné à l’étape 5 :
+   ![Méthode de déploiement](../media/endpoint-dlp-getting-started-3-deployment-method.png)
+6. Suivez les procédures appropriées dans [Outils et méthodes d’intégration pour les ordinateurs Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Ce lien vous permet d’accéder à une page d’accueil dans laquelle vous pouvez accéder aux procédures MDATP qui correspondent au package de déploiement que vous avez sélectionné à l’étape 5 :
     - Intégrer les ordinateurs Windows 10 utilisant une stratégie de groupe
     - Intégrer les ordinateurs Windows à l’aide du gestionnaire de configuration de point de terminaison Microsoft
     - Intégrer les ordinateurs Windows 10 à l’aide des outils de gestion des appareils mobiles
@@ -152,7 +152,7 @@ Une fois l’opération effectuée et le point de terminaison intégré, celui-c
 ## <a name="next-steps"></a>Étapes suivantes
 Maintenant que vous disposez d’appareils intégrés et que vous pouvez afficher les données d’activité dans l’Explorateur d’activités, vous êtes prêt à passer à l’étape suivante dans laquelle vous créez des stratégies DLP qui protègent vos éléments sensibles.
 
-1) [Utilisation des points de terminaison de protection contre la perte de données (aperçu)](endpoint-dlp-using.md)
+- [Utilisation des points de terminaison de protection contre la perte de données (aperçu)](endpoint-dlp-using.md)
 
 ## <a name="see-also"></a>Voir aussi
 
