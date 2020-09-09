@@ -16,12 +16,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Quelles sont les meilleures pratiques pour les paramètres de sécurité Exchange Online Protection (EOP) et Advanced Threat Protection (ATP) ? Quelles sont les recommandations actuelles pour la protection standard ? Qu’est-ce qui doit être utilisé si vous voulez être plus strict ? Quels sont les autres éléments que vous obtenez si vous utilisez également la protection avancée contre les menaces ?
-ms.openlocfilehash: ea1c04c503fa6ecac66a6378ec466c7ea6cc4133
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 1022accb992fbc0aee92b8da97f9d8a48cbe35f2
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653575"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405382"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Paramètres recommandés pour la sécurité ATP d’Office 365
 
@@ -56,7 +56,7 @@ Pour créer et configurer des stratégies de blocage du courrier indésirable, c
 |Action de détection de **courrier d’hameçonnage** <br/><br/> _PhishSpamAction_|**Mettre en quarantaine le message** <br/><br/> `Quarantine`|**Mettre en quarantaine le message** <br/><br/> `Quarantine`||
 |Action de détection de **courrier d’hameçonnage à haut niveau de fiabilité** <br/><br/> _HighConfidencePhishAction_|**Mettre en quarantaine le message** <br/><br/> `Quarantine`|**Mettre en quarantaine le message** <br/><br/> `Quarantine`||
 |Action de détection de **courrier en nombre** <br/><br/> _BulkSpamAction_|**Déplacer le message dans le dossier Courrier indésirable** <br/><br/> `MoveToJmf`|**Mettre en quarantaine le message** <br/><br/> `Quarantine`||
-|Seuil de courrier électronique en masse <br/><br/> _BulkThreshold_|6 |4 |La valeur par défaut est actuellement 7, mais nous vous recommandons de la remplacer par 6. Pour plus d’informations, reportez-vous à [Bulk Complaint Level (BCL) in Office 365](bulk-complaint-level-values.md).|
+|Seuil de courrier électronique en masse <br/><br/> _BulkThreshold_|6 |4 |La valeur par défaut est actuellement 7, mais nous vous recommandons de la remplacer par 6. Pour plus d’informations, reportez-vous à [Bulk Complaint Level (BCL) in Office 365](bulk-complaint-level-values.md).|
 |Période de rétention de quarantaine <br/><br/> _QuarantineRetentionPeriod_|30 jours|30 jours||
 |**Conseils de sécurité** <br/><br/> _InlineSafetyTipsEnabled_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`||
 |Expéditeurs autorisés <br/><br/> _AllowedSenders_|Aucun|Aucun||
@@ -146,7 +146,7 @@ Des avantages supplémentaires en matière de sécurité sont inclus dans un abo
 La protection avancée contre les menaces Office 365 inclut les stratégies de pièces jointes fiables et de liens fiables pour empêcher la remise des messages contenant des pièces jointes potentiellement malveillantes et empêcher les utilisateurs de cliquer sur les URL potentiellement dangereuses.
 
 > [!IMPORTANT]
-> La protection avancée contre le hameçonnage est l’un des avantages d’un abonnement Office 365 ATP. Bien qu’elle soit activée par défaut, vous ***devez*** configurer au moins une stratégie anti-hameçonnage avant de pouvoir commencer à filtrer les messages. Oublier de configurer des stratégies anti-hameçonnage pourrait exposer les utilisateurs à des courriers électroniques risqués. Veillez à configurer vos stratégies anti-hameçonnage après avoir ajouté un abonnement Office 365 ATP.
+> La protection avancée contre le hameçonnage est l’un des avantages d’un abonnement Office 365 ATP. La stratégie anti-hameçonnage par défaut ATP fournit une [protection contre les falsifications](set-up-anti-phishing-policies.md#spoof-settings) pour tous les destinataires. Toutefois, les paramètres de [protection contre l’emprunt d’identité](#impersonation-settings-in-atp-anti-phishing-policies) disponibles pour des expéditeurs ou des domaines d’envoi spécifiques ne sont pas configurés ou activés dans la stratégie par défaut. Pour activer la protection contre l’emprunt d’identité, vous devez configurer au moins une stratégie anti-hameçonnage de protection avancée contre les menaces.
 
 Si vous avez ajouté un abonnement Office 365 ATP à votre EOP, définissez les configurations suivantes.
 
@@ -213,14 +213,14 @@ Pour configurer ces paramètres, reportez-vous à la rubrique [set up Office 365
 |Nom de la fonctionnalité de sécurité|Standard|Empêcher|Commentaire|
 |---|---|---|---|
 |**Utiliser les liens fiables dans : applications Office 365** <br/><br/> _EnableSafeLinksForO365Clients_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`|Utilisez des liens fiables ATP dans les clients Office 365 Desktop et mobile (iOS et Android).|
-|**Utiliser les liens fiables dans : compagnons Office Web Access** <br/><br/> _EnableSafeLinksForWebAccessCompanion_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`|Utiliser les liens fiables ATP dans Office Web Apps.|
+|**Utiliser les liens fiables dans : compagnons Office Web Access** <br/><br/> _EnableSafeLinksForWebAccessCompanion_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`|Utiliser les liens fiables ATP dans Office Web Apps. Notez que ce paramètre n’est pas configurable.|
 |**Ne pas suivre lorsque les utilisateurs cliquent sur les liens fiables** <br/><br/> _TrackClicks_|Désactivé <br/><br/> `$true`|Désactivé <br/><br/> `$true`||
 |**Ne pas autoriser les utilisateurs à cliquer sur les liens fiables vers l’URL d’origine** <br/><br/> _AllowClickThrough_|Activé <br/><br/> `$false`|Activé <br/><br/> `$false`||
 |
 
 #### <a name="safe-links-policy-settings-in-custom-policies-for-specific-users"></a>Paramètres de stratégie de liens fiables dans les stratégies personnalisées pour des utilisateurs spécifiques
 
-**Remarque**: dans PowerShell, vous utilisez les applets de commande [New-Safelinkspolicy permet](https://docs.microsoft.com/powershell/module/exchange/new-safelinkspolicy) et [Set-safelinkspolicy permet] ( https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy ] pour ces paramètres.
+**Remarque**: dans PowerShell, vous utilisez les applets de commande [New-safelinkspolicy permet](https://docs.microsoft.com/powershell/module/exchange/new-safelinkspolicy) et [Set-safelinkspolicy permet](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) pour ces paramètres.
 
 ****
 
@@ -260,7 +260,7 @@ Pour configurer ces paramètres, reportez-vous à la rubrique [set up Office 365
 
 |Nom de la fonctionnalité de sécurité|Standard|Empêcher|Commentaire|
 |---|---|---|---|
-|**Pièces jointes fiables réponse aux programmes malveillants inconnus** <br/><br/> _Action_|Bloc <br/><br/> `Block`|Bloc <br/><br/> `Block`||
+|**Pièces jointes fiables réponse aux programmes malveillants inconnus** <br/><br/> _Action_|Bloquer <br/><br/> `Block`|Bloquer <br/><br/> `Block`||
 |**Redirection de la pièce jointe sur la détection** : **activer la redirection** <br/><br/> _Redirect_ <br/><br/> _RedirectAddress_|Sur et spécifiez une adresse de messagerie. <br/><br/> `$true` <br/><br/> une adresse de messagerie|Sur et spécifiez une adresse de messagerie. <br/><br/> `$true` <br/><br/> une adresse de messagerie|Rediriger les messages vers un administrateur de sécurité pour révision.|
 |**Appliquer la sélection ci-dessus si l’analyse anti-programme malveillant pour les pièces jointes expire ou si une erreur se produit.** <br/><br/> _ActionOnError_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`||
 |

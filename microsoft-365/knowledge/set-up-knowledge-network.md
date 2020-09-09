@@ -11,12 +11,12 @@ ms.service: ''
 search.appverid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: ba8cb8ceb3c98019099bfe5438d274c9d2b32280
-ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
+ms.openlocfilehash: d6495f297f09ddc167d7c36835ac82a15abc91ac
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46612547"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405648"
 ---
 # <a name="set-up-knowledge-management-preview"></a>Configurer la gestion des connaissances (aperçu)
 
@@ -38,7 +38,7 @@ Vous pouvez utiliser le centre d’administration Microsoft 365 pour installer e
 
 Un administrateur peut également [modifier les paramètres sélectionnés à tout moment après l’installation](manage-knowledge-network.md) via les paramètres de gestion des connaissances dans le centre d’administration 365 de Microsoft.
 
-## <a name="requirements"></a>Conditions préalables 
+## <a name="requirements"></a>Configuration requise 
 Vous devez disposer d’autorisations d’administrateur général ou d’administrateur SharePoint pour pouvoir accéder au centre d’administration Microsoft 365 et configurer des tâches de connaissances organisationnelles.
 
 ## <a name="set-up-your-knowledge-network"></a>Configurer votre réseau de connaissances
@@ -71,11 +71,27 @@ Pour configurer votre réseau de connaissances :
    
 5. Dans la section **exclure des rubriques par nom** , vous pouvez choisir d’inclure les noms des rubriques dont vous ne voulez pas dans les résultats découverts. Utilisez ce paramètre pour empêcher les rubriques sensibles d’être incluses dans le cadre du réseau de connaissances. Vos options sont les suivantes :</br>
     a. **Ne pas exclure les rubriques** </br>
-    b. **Exclure la rubrique contenant ces termes**: Si vous avez des rubriques que vous ne souhaitez pas afficher aux utilisateurs dans le cadre du réseau de connaissances.
-   -Téléchargez le modèle fourni.
-   -Entrez les noms de rubrique à exclure. Vous devez indiquer le type de correspondance comme exact ou partiel. Une correspondance exacte signifie que les rubriques qui correspondent au terme exact seront exclues. La correspondance partielle est plus stricte et signifie que les rubriques qui contiennent le terme seront exclues. Par exemple, si vous saisissez *doc* comme nom de rubrique, l' *assembly doc* sera exclu au lieu de l' *ancrage* . Les noms de rubrique ne respectent pas la casse.  
-        -Sélectionnez  **+**   pour importer votre fichier CSV terminé. Ensuite, sélectionnez **Télécharger**. Une coche verte s’affiche si votre fichier a été traité avec succès. Sélectionnez **Suivant**.</br>
+    b. **Exclure les rubriques par nom**: Si vous avez des rubriques que vous ne voulez pas afficher aux utilisateurs dans le cadre du réseau de connaissances.</br>
 
+    ![Exclure des rubriques](../media/content-understanding/topics-excluded-by-name.png) </br>
+
+    #### <a name="how-to-exclude-topics-by-name"></a>Procédure exclure des rubriques par nom    
+
+    Si vous devez exclure des rubriques, après avoir sélectionné **exclure les rubriques par nom**, sélectionnez **Télécharger le modèle. csv**. Utilisez Excel. Modèle CSV pour inclure une liste des rubriques que vous souhaitez exclure de vos résultats de découverte.
+
+    ![Exclure les rubriques du modèle CSV](../media/content-understanding/csv1.png) </br>
+
+    Dans le modèle CSV, entrez les informations suivantes sur les rubriques à exclure :
+
+    - **Nom**: tapez le nom de la rubrique à exclure. Vous pouvez procéder de deux manières :</br>
+        - Correspondance exacte : vous pouvez inclure le nom exact ou un acronyme (par exemple, *contoso* ou *ATL*).</br>
+        - Correspondance partielle : vous pouvez exclure toutes les rubriques qui contiennent un mot spécifique.  Par exemple, *arc* exclut toutes les rubriques contenant le mot *arc* , comme un *cercle arc*, un *soudage*à l’arc de plasma ou un *arc de formation*. Notez qu’il n’exclura pas les rubriques dans lesquelles le texte est inclus dans un mot, tel que *architecture*.</br>
+    - **Expansion (facultatif)**: Si vous souhaitez exclure un acronyme, tapez les mots de l’acronyme.</br>
+    - **MatchType-exacte/partielle**: spécifiez si le nom que vous avez entré est un type de correspondance *exacte* ou *partielle* .</br>
+
+    Une fois que vous avez terminé et enregistré votre fichier de modèle CSV, sélectionnez **Parcourir** pour le localiser et le sélectionner.
+    
+    Sélectionnez **Suivant**.</br>
 
 6. Sur la page **qui peut voir les rubriques et où elles peuvent les afficher** , vous allez configurer la visibilité des rubriques. Dans le paramètre **qui peut voir les rubriques du paramètre de réseau de connaissances** , vous choisissez les utilisateurs qui auront accès aux détails de la rubrique, comme les rubriques en surbrillance, les fiches de rubrique, les réponses aux questions dans la recherche et les pages de rubrique. Vous pouvez sélectionner :</br>
     a. **Tout le monde dans votre organisation**</br>

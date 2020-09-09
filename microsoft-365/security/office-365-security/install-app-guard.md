@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Obtenez la dernière version de l’isolation matérielle. Empêcher les attaques actuelles et émergentes, telles que les attaques ou les liens malveillants, de perturber la productivité des employés et la sécurité de l’entreprise.
-ms.openlocfilehash: d0a89e8f8874c9ad298bf862384019b9e1ace0bf
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 32a8705255bf4ae4f0e3678de9cd812b64107cfd
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46867409"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405540"
 ---
 # <a name="application-guard-for-office-public-preview-for-admins"></a>Application Guard pour Office (préversion publique) pour les administrateurs
 
@@ -45,7 +45,7 @@ Microsoft Defender application Guard pour Office (application Guard pour Office)
 
 * **Windows 10**: Windows 10 Enterprise Edition, client build version 2004 (20H1) Build 19041
 * **Office**: Office Beta Channel Build version 2008 16.0.13212 ou version ultérieure
-* **Package de mise à jour**: mises à jour de sécurité mensuelles Windows 10 [KB4566782](https://support.microsoft.com/help/4566782/windows-10-update-kb4566782) 
+* **Package de mise à jour**: mises à jour de sécurité mensuelles Windows 10 [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756) 
 
 Pour plus d’informations sur la configuration système requise, reportez-vous à la [Configuration système requise pour Microsoft Defender application Guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard). Pour en savoir plus sur les versions d’évaluation d’Office Insider, consultez la rubrique [prise en main du déploiement des builds Office Insider](https://insider.office.com/business/deploy).
 
@@ -56,28 +56,9 @@ Pour plus d’informations sur la configuration système requise, reportez-vous 
 
 ### <a name="enable-application-guard-for-office"></a>Activer application Guard pour Office
 
-1.  Téléchargez et installez les **mises à jour de sécurité mensuelles cumulatives de Windows 10 KB4566782**. 
+1.  Téléchargez et installez les **mises à jour de sécurité mensuelles cumulatives de Windows 10 KB4571756**. 
 
-2. Téléchargez et installez le [**package d’activation des fonctionnalités d’application Guard pour Office**](https://download.microsoft.com/download/e/4/c/e4c1180a-fcff-462a-8324-4151c44973a8/Windows%20Preview%20-%20WDAG%20Office%20070920%2001.msi). Ce package installe une stratégie de groupe appelée « KB4559004 issue 001 Preview » sous **Computer Configuration\Administrative templates**. Définissez cette stratégie de groupe sur **activé**.
-     ![Éditeur d’objets de stratégie de groupe](../../media/ag01-deploy.png)
-
-     ![Préversion du problème KB4559004 001](../../media/ag02-deploy.png)
-
-    Vous pouvez également définir directement les clés de Registre suivantes : 
-    
-    ```
-    reg add HKLM\SYSTEM\CurrentControlSet\Policies\Microsoft\FeatureManagement\Overrides /v 3457697930 /t REG_DWORD /d 1 
-    ```
-    ```
-    reg add HKLM\SYSTEM\CurrentControlSet\Policies\Microsoft\FeatureManagement\Overrides /v 94539402 /t REG_DWORD /d 1 
-    ```
-    Ensuite, exécutez la commande PowerShell suivante : 
-    
-    ```powershell
-    Get-ScheduledTask -TaskName "ReconcileFeatures" -TaskPath "\Microsoft\Windows\Flighting\FeatureConfig\" | Start-ScheduledTask 
-    ```
-
-3.  Sélectionnez **Microsoft Defender application Guard** sous fonctionnalités Windows, puis cliquez sur **OK**. L’activation de la fonctionnalité application Guard demande un redémarrage du système. Vous pouvez choisir de redémarrer maintenant ou après l’étape 4.
+2.  Sélectionnez **Microsoft Defender application Guard** sous fonctionnalités Windows, puis cliquez sur **OK**. L’activation de la fonctionnalité application Guard demande un redémarrage du système. Vous pouvez choisir de redémarrer maintenant ou après l’étape 3.
 
     ![Boîte de dialogue fonctionnalités Windows affichant AG](../../media/ag03-deploy.png)
     
@@ -87,7 +68,7 @@ Pour plus d’informations sur la configuration système requise, reportez-vous 
     Enable-WindowsOptionalFeature -online -FeatureName Windows-Defender-ApplicationGuard 
     ```
 
-4.  Recherchez la stratégie de groupe Microsoft Defender application Guard en mode managé située dans Configuration de l' **ordinateur \\ modèles d’administration \\ composants Windows Components \\ Microsoft Defender application Guard**. Activez cette stratégie en définissant la valeur sous options sur **2** ou **3** , puis en sélectionnant **OK** ou **appliquer**.
+3.  Recherchez la stratégie de groupe Microsoft Defender application Guard en mode managé située dans Configuration de l' **ordinateur \\ modèles d’administration \\ composants Windows Components \\ Microsoft Defender application Guard**. Activez cette stratégie en définissant la valeur sous options sur **2** ou **3** , puis en sélectionnant **OK** ou **appliquer**.
 
     ![Activer AG en mode géré](../../media/ag04-deploy.png)
   
@@ -98,7 +79,7 @@ Pour plus d’informations sur la configuration système requise, reportez-vous 
     <br>Valeur : **2**
 
 
-5.  Redémarrez le système.
+4.  Redémarrez le système.
 
 ### <a name="set-diagnostics--feedback-to-send-full-data"></a>Set Diagnostics & feedback pour envoyer des données complètes
 

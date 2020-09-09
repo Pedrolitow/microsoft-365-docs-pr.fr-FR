@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur les stratégies anti-hameçonnage disponibles dans Exchange Online Protection (EOP) et Office 365 Advanced Threat Protection (Office 365 ATP).
-ms.openlocfilehash: 7118bca15102fd52e7825ee873187fa11d9fc0f9
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: a68baf8f2598b8ca0cd13e45d18919ecfdccdacc
+ms.sourcegitcommit: 294a51ef0ff48dddb659c602e047d7fd98f91172
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308194"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47407927"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Stratégies anti-hameçonnage dans Microsoft 365
 
@@ -106,21 +106,23 @@ Les paramètres d’usurpation suivants sont disponibles dans les stratégies an
     - [Gérer les messages et les fichiers mis en quarantaine en tant qu’administrateur dans Microsoft 365](manage-quarantined-messages-and-files.md)
     - [Rechercher et débloquer les messages mis en quarantaine en tant qu’utilisateur dans Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
-- **Expéditeur non authentifié**: consultez la description dans la section suivante.
+- **Expéditeur non authentifié**: consultez les informations de la section suivante.
 
 ### <a name="unauthenticated-sender"></a>Expéditeur non authentifié
 
 L’identification de l’expéditeur non authentifié fait partie des [paramètres d’usurpation d’identité](#spoof-settings) disponibles dans les stratégies anti-hameçonnage et les stratégies anti-hameçonnage ATP, comme décrit dans la section précédente.
 
-Le paramètre **expéditeur non authentifié** active ou désactive l’identification d’expéditeur non identifiée dans Outlook. Notamment :
+Le paramètre **expéditeur non authentifié** active ou désactive l’identification de l’expéditeur non authentifié dans Outlook. Notamment :
 
-- Un point d’interrogation ( ?) est ajouté à la photo de l’expéditeur si le message ne passe pas les vérifications SPF ou DKIM **et** que le message ne passe pas l’authentification DMARC ou [composite](email-validation-and-authentication.md#composite-authentication).
+- Un point d’interrogation ( ?) est ajouté à la photo de l’expéditeur si le message ne passe pas les vérifications SPF ou DKIM **et** que le message ne passe pas l’authentification DMARC ou [composite](email-validation-and-authentication.md#composite-authentication). La désactivation de l’identification de l’expéditeur non authentifié empêche l’ajout du point d’interrogation à la photo de l’expéditeur.
 
-- La balise via (chris@contoso.com <u>via</u> Michelle@fabrikam.com) est ajoutée si le domaine de l’adresse de provenance (l’expéditeur du message affiché dans les clients de messagerie) est différent du domaine dans la signature DKIM ou l’adresse **de provenance du courrier** . Pour plus d’informations sur ces adresses, consultez la rubrique [vue d’ensemble des normes relatives aux messages électroniques](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards) .
+- La balise via (chris@contoso.com <u>via</u> Michelle@fabrikam.com) est ajoutée si le domaine de l’adresse de provenance (l’expéditeur du message affiché dans les clients de messagerie) est différent du domaine dans la signature DKIM ou l’adresse **de provenance du courrier** . Pour plus d’informations sur ces adresses, consultez la rubrique [vue d’ensemble des normes relatives aux messages électroniques](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards).
 
-Pour empêcher l’ajout de ces identificateurs à des messages provenant d’expéditeurs spécifiques, vous disposez des options suivantes :
+  La désactivation de l’identification de l’expéditeur non authentifié n’empêche pas l’ajout de la balise via si le domaine de l’adresse de l’expéditeur est différent du domaine dans la signature DKIM ou l’adresse de l’expéditeur du message.
 
-- Autoriser l’expéditeur à usurper la stratégie d’intelligence d’usurpation d’identité. Pour obtenir des instructions, consultez la rubrique [configure usurpation Intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
+Pour empêcher l’ajout d’un point d’interrogation ou d’une balise à des messages provenant d’expéditeurs spécifiques, vous disposez des options suivantes :
+
+- Autoriser l’expéditeur à usurper la stratégie d’intelligence d’usurpation d’identité. Cette action empêche l’affichage de la balise via dans les messages provenant de l’expéditeur lorsque l’identification de l’expéditeur non authentifié est désactivée. Pour obtenir des instructions, consultez la rubrique [configure usurpation Intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
 
 - [Configurez l’authentification de messagerie](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own) pour le domaine de l’expéditeur.
   

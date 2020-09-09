@@ -13,17 +13,29 @@ f1.keywords:
 ms.author: jaimeo
 ms.article: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 72155563a3249aa61075bc9f246b2a553e7b5191
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: f1606e62813aa63225113b38414338c4e2ff7d57
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289602"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405676"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Historique des modifications de la documentation relative au Bureau géré Microsoft
 
 Cet article répertorie les articles nouveaux et mis à jour dans la [documentation du bureau géré Microsoft](index.yml). Les articles « mis à jour » sont ceux qui ont eu des ajouts ou corrections de matériel (correctifs mineurs, tels que la correction des fautes de frappe, de style ou de mise en forme). Vous pouvez toujours afficher l’historique des validations spécifiques (y compris les détails de toutes les modifications) en visitant le [référentiel sur GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
 
+## <a name="august-2020"></a>Août 2020
+Article nouveau ou modifié | Description
+--- | ---
+[Rapport d’inventaire des appareils](working-with-managed-desktop/device-inventory-report.md) | Nouvel article
+[Nouvelle application Microsoft Edge](get-started/edge-browser-app.md) | Article mis à jour
+[Inscrivez vous-même les nouveaux appareils](get-started/register-devices-self.md) | Article mis à jour
+[Inscrivez vous-même les appareils existant](get-started/register-reused-devices-self.md) | Article mis à jour
+[Configuration requise pour le Bureau géré Microsoft](get-ready/prerequisites.md) | Article mis à jour
+[Opérations de sécurité dans le bureau géré Microsoft](service-description/security-operations.md) | Nouvel article
+[Accéder au portail d’administration](get-started/access-admin-portal.md) | Article mis à jour
+[Applications Microsoft 365 pour les entreprises](get-started/m365-apps.md) | Nouvel article
+[Confidentialité et données personnelles](service-description/privacy-personal-data.md) | Nouvel article
 
 ## <a name="july-2020"></a>Juillet 2020
 Article nouveau ou modifié | Description

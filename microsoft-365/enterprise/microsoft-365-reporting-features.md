@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: Découvrez les différentes fonctionnalités de création de rapports dans Microsoft 365, notamment Azure Active Directory et Exchange Online.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3beb327bd5cb995c378a414e19cc54dea8ad1304
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: 59a7569518ad3e4704b3528d175c092b0a19b819
+ms.sourcegitcommit: 294a51ef0ff48dddb659c602e047d7fd98f91172
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332735"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47407915"
 ---
 # <a name="microsoft-365-reporting-features"></a>Fonctionnalités de création de rapports Microsoft 365
 
@@ -71,9 +71,9 @@ Les rapports d’audit Exchange Online incluent des détails sur l’accès aux 
 
 ## <a name="device-compliance-reports"></a>Rapports de conformité des appareils
 
-Vous pouvez gérer et sécuriser les appareils mobiles connectés à votre abonnement à l’aide de la gestion des appareils mobiles (MDM) de Microsoft 365. Les appareils mobiles utilisés pour accéder au courrier électronique, au calendrier, aux contacts et aux documents jouent un rôle important dans la façon de s’assurer que les employés peuvent travailler à tout moment et depuis n’importe quel endroit. Il est essentiel de protéger les informations de votre organisation. Vous utilisez Microsoft 365 MDM pour définir les stratégies de sécurité des appareils et les règles d’accès. En cas de perte ou de vol, vous utilisez également Microsoft 365 MDM pour réinitialiser les appareils mobiles.
+Vous pouvez gérer et sécuriser les appareils mobiles connectés à votre abonnement à l’aide de la mobilité et de la sécurité de base pour Microsoft 365. Les appareils mobiles utilisés pour accéder au courrier électronique, au calendrier, aux contacts et aux documents jouent un rôle important dans la façon de s’assurer que les employés peuvent travailler à tout moment et depuis n’importe quel endroit. Il est essentiel de protéger les informations de votre organisation. Vous utilisez la mobilité et la sécurité de base pour Microsoft 365 afin de définir les stratégies de sécurité des appareils et les règles d’accès. En cas de perte ou de vol, vous utilisez également la mobilité et la sécurité de base pour la réinitialisation des appareils mobiles à l’aide de Microsoft 365.
 
-Les rapports de conformité MDM fournissent une vue d’ensemble des stratégies configurées par une organisation pour sécuriser les appareils mobiles qui accèdent aux données Microsoft 365. Le rapport autorise le filtrage des appareils par État de conformité, les violations signalées, les appareils bloqués et le nombre d’appareils effacés à la suite de stratégies de sécurité. Pour plus d’informations, consultez la rubrique [vue d’ensemble de la gestion des appareils mobiles pour Microsoft 365](https://support.microsoft.com/office/overview-of-mobile-device-management-mdm-for-microsoft-365-faa7d8e5-645d-4d59-839c-c8d4c1869e4a).
+Basic Mobility and Security Compliance Reports fournissent une vue d’ensemble des stratégies configurées par une organisation pour sécuriser les appareils mobiles qui accèdent aux données Microsoft 365. Le rapport autorise le filtrage des appareils par État de conformité, les violations signalées, les appareils bloqués et le nombre d’appareils effacés à la suite de stratégies de sécurité. Pour plus d’informations, reportez-vous à la rubrique [Overview of Basic Mobility and Security for Microsoft 365](https://support.microsoft.com/office/overview-of-basic-mobility-and-security-for-microsoft-365-faa7d8e5-645d-4d59-839c-c8d4c1869e4a).
 
 ## <a name="data-loss-prevention"></a>Protection contre la perte de données
 

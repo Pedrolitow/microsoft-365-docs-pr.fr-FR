@@ -11,12 +11,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Décrit la principale différence entre la présentation des documents et les modèles de traitement des formulaires.
-ms.openlocfilehash: 7c480b91c1ddd75016b4bd35faa3d5692cacd103
-ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
+ms.openlocfilehash: 972fa9e8446a44f6220baa7cde3f484172c50da6
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46612737"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405616"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models-preview"></a>Différence entre la présentation des documents et les modèles de traitement des formulaires (aperçu)
 
@@ -31,7 +31,7 @@ Content Understanding vous permet de créer des *modèles* pour identifier et ex
 - [Modèles de présentation des documents](document-understanding-overview.md)
 - [Modèles de traitement des formulaires](form-processing-overview.md)
 
-Même si les deux modèles sont utilisés pour le même objectif, il existe des différences clés qui affectent celles que vous pouvez choisir.
+Même si les deux modèles sont utilisés pour le même objectif, il existe des différences clés qui affecteront celle que vous pouvez choisir.
 
 
 ## <a name="structured-versus-unstructured-and-semi-structured-content"></a>Contenu structuré et non structuré et semi-structuré
