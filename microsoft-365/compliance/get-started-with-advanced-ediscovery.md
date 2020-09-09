@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Cet article explique comment commencer à utiliser Advanced eDiscovery dans Microsoft 365. Une fois que vous avez effectué quelques étapes rapides, l’outil eDiscovery avancé est prêt à être utilisé. La première étape consiste à créer un cas, puis à commencer à utiliser les fonctionnalités avancées de découverte électronique.
-ms.openlocfilehash: cc593009337a9b78285fbcf98ad78dbf1899bce1
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 47647c2f4f944812fa066be272a39ded77099c75
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357504"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405417"
 ---
 # <a name="get-started-with-advanced-ediscovery"></a>Prise en main Advanced eDiscovery
 
@@ -155,7 +155,7 @@ Pour commencer à utiliser Advanced eDiscovery, voici un flux de travail simple 
 
    - Affichez un aperçu des résultats de la recherche pour vérifier rapidement si les données pertinentes sont trouvées.
 
-   - Réviser une requête et réexécuter la recherche.
+   - Réviser une requête et relancer la recherche.
 
 3. **[Ajouter des données à un ensemble de révision](add-data-to-review-set.md)**. Une fois que vous avez configuré et vérifié qu’une recherche renvoie les données souhaitées, l’étape suivante consiste à ajouter les résultats de la recherche à un jeu de révision. Lorsque vous ajoutez des données à un ensemble de vérification, les éléments sont copiés de leur emplacement d’origine vers un emplacement de stockage Azure sécurisé. Les données sont réindexées pour les optimiser pour les recherches rapides et rapides lors de l’examen et de l’analyse des éléments de l’ensemble de révision. En outre, vous pouvez également [Ajouter des données non-Office 365 dans un jeu de révision](load-non-office-365-data-into-a-review-set.md).
 

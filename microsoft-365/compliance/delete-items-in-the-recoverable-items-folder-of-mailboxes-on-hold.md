@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: Découvrez comment les administrateurs peuvent supprimer des éléments du dossier éléments récupérables d’un utilisateur pour une boîte aux lettres Exchange Online, même si cette boîte aux lettres est placée en conservation légale.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 52cfe237bb05bc151058a41914af5725bdacee18
-ms.sourcegitcommit: 4ac96855d7c269a0055ca8943000b762a70ca4ba
+ms.openlocfilehash: d0983a3ce10a3980f23af68736acac1382ef938f
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47321961"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405465"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold"></a>Supprimer des éléments en attente dans le dossier Éléments récupérables des boîtes aux lettres basées sur le cloud
 
@@ -292,7 +292,7 @@ Voici une vue d’ensemble du processus de recherche et de suppression d’élé
 
 3. Utilisez la cmdlet **New-ComplianceSearch** (dans Security & Compliance Center PowerShell) ou utilisez l’outil de recherche de contenu dans le centre de conformité pour créer une recherche de contenu qui renvoie des éléments à partir du dossier éléments récupérables de l’utilisateur cible. Pour ce faire, vous pouvez inclure le FolderId dans la requête de recherche pour tous les sous-dossiers dans lesquels vous souhaitez effectuer une recherche. Par exemple, la requête suivante renvoie tous les messages dans les sous-dossiers purges et eDiscoveryHolds :
 
-   ```powershell
+   ```text
    folderid:<folder ID of Purges subfolder> OR folderid:<folder ID of DiscoveryHolds subfolder>
    ```
 
@@ -307,8 +307,15 @@ Voici une vue d’ensemble du processus de recherche et de suppression d’élé
    New-ComplianceSearchAction -SearchName "RecoverableItems" -Purge -PurgeType HardDelete
    ```
 
-   > [!NOTE]
-   > Un nombre maximal de 10 éléments (par boîte aux lettres) est supprimé lorsque vous exécutez la commande précédente. Cela signifie que vous devrez peut-être exécuter la `New-ComplianceSearchAction -Purge` commande plusieurs fois pour supprimer les éléments que vous souhaitez supprimer dans le dossier éléments récupérables.
+5. Un nombre maximal de 10 éléments par boîte aux lettres est supprimé lorsque vous exécutez la commande précédente. Cela signifie que vous devrez peut-être exécuter la `New-ComplianceSearchAction -Purge` commande plusieurs fois pour supprimer tous les éléments que vous souhaitez supprimer dans le dossier éléments récupérables. Pour supprimer des éléments supplémentaires, vous devez d’abord supprimer l’action de vidage de la recherche de conformité précédente. Pour ce faire, exécutez l' `Remove-ComplianceSearchAction` applet de commande. Par exemple, pour supprimer l’action de vidage exécutée à l’étape précédente, exécutez la commande suivante :
+
+   ```powershell
+   Remove-ComplianceSearchAction "RecoverableItems_Purge"
+   ```
+
+   Une fois cette opération effectuée, vous pouvez créer une nouvelle action de vidage de la recherche de conformité pour supprimer d’autres éléments. Vous devrez supprimer chaque action de purge avant de créer une nouvelle.
+
+   Pour obtenir la liste des actions de recherche de conformité, vous pouvez exécuter l’applet de commande `Get-ComplianceSearchAction` . Les actions de purge sont identifiées en `_Purge` ajoutant le nom de la recherche.
 
 ### <a name="verify-that-items-were-deleted"></a>Vérifier que les éléments ont été supprimés
 

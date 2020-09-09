@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données à partir du connecteur WebEx teams d’Globanet dans Microsoft 365. Ce connecteur vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 de sorte que vous puissiez utiliser les fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: 65a0f6eb6e3b7d3e7147cc3eaf96212d75d687c0
-ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
+ms.openlocfilehash: c345edd3a560fff3818cdc7a52ad04e03279f339
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47399412"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405443"
 ---
 # <a name="set-up-a-connector-to-archive-webex-teams-data-preview"></a>Configuration d’un connecteur pour l’archivage des données de teams WebEx (aperçu)
 
@@ -26,7 +26,7 @@ Utilisez un connecteur Globanet dans le centre de conformité Microsoft 365 pour
 
 Une fois que les données des équipes WebEx sont stockées dans des boîtes aux lettres utilisateur, vous pouvez appliquer les fonctionnalités de conformité de Microsoft 365 telles que la conservation pour litige, eDiscovery, les stratégies de rétention et les étiquettes de rétention et la conformité des communications. L’utilisation d’un connecteur WebEx teams pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à respecter les stratégies gouvernementales et réglementaires.
 
-## <a name="overview-of-archiving-webex-teams"></a>Vue d’ensemble de l’archivage de teams WebEx
+## <a name="overview-of-archiving-webex-teams-data"></a>Vue d’ensemble des données d’archivage WebEx teams
 
 La vue d’ensemble suivante décrit le processus d’utilisation d’un connecteur pour archiver les données des équipes WebEx dans Microsoft 365.
 
@@ -42,7 +42,7 @@ La vue d’ensemble suivante décrit le processus d’utilisation d’un connect
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Créez un compte Globanet Merge1 en acceptant les conditions générales d’un connecteur WebEx Teams. Pour ce faire, contactez le [support client Globanet](https://globanet.com/contact-us). Vous devez vous connecter à ce compte lorsque vous créez le connecteur à l’étape 1.
+- Créez un compte Globanet Merge1 pour Microsoft Connectors. Pour ce faire, contactez le [support client Globanet](https://globanet.com/ms-connectors-contact). Vous devez vous connecter à ce compte lorsque vous créez le connecteur à l’étape 1.
 
 - Créez une application à [https://developer.webex.com/](https://developer.webex.com) pour extraire les données de votre compte WebEx Teams. Pour obtenir des instructions détaillées sur la création de l’application, reportez-vous au Guide de l' [utilisateur des connecteurs tiers Merge1](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Webex%20Teams%20User%20Guide%20.pdf)
 
