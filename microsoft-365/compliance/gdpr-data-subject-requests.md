@@ -2,7 +2,7 @@
 title: Demandes des personnes concernées pour le RGPD et le CCPA
 keywords: Microsoft 365, Microsoft 365 Éducation, documentation Microsoft 365, RGPD, CCPA
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -16,12 +16,12 @@ ms.collection:
 titleSuffix: Microsoft GDPR
 description: Découvrez comment effectuer des demandes de la personne concernée (DPC) dans le cadre des règlements généraux sur la protection des données (GPDR) et le California Consumer Privacy Act (CCPA) à l’aide de produits et services Microsoft.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 7342c0ae4105c05ae2e2956df51581d3afedb286
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: a9dc9c390aa912bbbfa433a6c98acc188eb0f024
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035472"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417957"
 ---
 # <a name="data-subject-requests-and-the-gdpr-and-ccpa"></a>Demandes des personnes concernées et le RGPD et CCPA
 

@@ -3,7 +3,7 @@ title: Conseils pour les contrôleurs de données utilisant d’Office 365
 description: Ce document vise à fournir les informations concernant Microsoft Office 365 qui permettront aux contrôleurs de données de déterminer si une analyse d’impact sur la protection des données DPIA est nécessaire et, le cas échéant, les informations à inclure.
 keywords: Documentation relatif à Microsoft 365 DPIA, Office 365, RGPD
 ms.localizationpriority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: d0fe3092d0ea3004097aba9a86e1916025b87841
-ms.sourcegitcommit: 0da80ba7b504841c502ab06fea659a985c06fe8f
+ms.openlocfilehash: 2408445598ab1e474ac1967be6e13f19887144a8
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43547564"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417898"
 ---
 # <a name="data-protection-impact-assessments-guidance-for-data-controllers-using-microsoft-office-365"></a>Analyses d’impact sur la protection des données: conseils pour les contrôleurs de données qui utilisent Microsoft Office 365 
 

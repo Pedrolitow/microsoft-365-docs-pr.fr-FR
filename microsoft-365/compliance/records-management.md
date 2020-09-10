@@ -31,13 +31,13 @@ ms.locfileid: "46778322"
 
 Les organisations de tous types ont besoin d’une solution de gestion des enregistrements pour gérer les documents réglementaires, juridiques et commerciaux critiques dans l'ensemble de leurs données d'entreprise. La gestion des enregistrements dans Microsoft 365 aide les organisations à gérer leurs obligations juridiques ainsi qu’à démontrer leur conformité avec les réglementations, et renforce leur efficacité grâce à la destruction régulière d’éléments dont la conservation n'est plus requise, qui n’ont plus de valeur ou qui ne sont plus nécessaires.
 
-Utilisez les fonctionnalités suivantes pour prendre en charge votre solution de gestion des enregistrements dans Microsoft 365 :
+Les fonctionnalités suivantes permettent la prise en charge votre solution de gestion des enregistrements dans Microsoft 365 :
 
-- **Étiqueter du contenu comme enregistrement** Créer et configurer des étiquettes de rétention pour marquer le contenu comme[un enregistrement](#records) qui peut ensuite être appliqué par les utilisateurs ou appliqué automatiquement en identifiant les informations sensibles, les mots clés ou les types de contenu.
+- **Étiqueter du contenu comme enregistrement** Créez et configurez des étiquettes de rétention pour indiquer que le contenu est un [enregistrement](#records) qui peut ensuite être appliqué par les utilisateurs ou appliqué automatiquement en identifiant les informations sensibles, les mots clés ou les types de contenu.
 
 - **Migrer et gérer vos exigences de conservation avec le plan de classement**. L’utilisation d’un [plan de gestion des fichiers ](file-plan-manager.md)vous permet de mettre en place un plan de rétention existante à Microsoft 365 ou d’en créer une nouvelle pour les fonctionnalités de gestion améliorées.
 
-- **Configurer les paramètres de rétention et de suppression avec les étiquettes de rétention **. Configurer [ les étiquettes de rétention ](retention.md#retention-labels) avec les périodes de rétention et les actions basées sur divers facteurs qui incluent la date de la dernière modification ou création.
+- **Configurer les paramètres de rétention et de suppression avec les étiquettes de rétention**. Configurez les [étiquettes de rétention](retention.md#retention-labels) avec les périodes de rétention et les actions basées sur divers facteurs tels que la date de la dernière modification ou création.
 
 - **Démarrer différentes périodes de rétention lorsqu’un événement se produit**avec[rétention basée sur des événements](event-driven-retention.md).
 
@@ -49,7 +49,7 @@ Utilisez les fonctionnalités suivantes pour prendre en charge votre solution de
 
 Grâce à ces capacités, vous pouvez intégrer les calendriers de rétention et les exigences de votre organisation dans une solution de gestion des documents qui gère la rétention, la déclaration et l'élimination des enregistrements, afin de prendre en charge le cycle de vie complet de votre contenu.
 
-En plus de la documentation en ligne, il peut être utile d'écouter [ l'enregistrement du webinaire](https://aka.ms/MIPC/Video-RecordsManagementWebinar)sur la gestion des enregistrements et de télécharger le dossier d'accompagnement [avec les FAQ](https://aka.ms/MIPC/Blog-RecordsManagementWebinar).
+En plus de la documentation en ligne, nous vous conseillons d’écouter l’[enregistrement du webinaire](https://aka.ms/MIPC/Video-RecordsManagementWebinar) sur la gestion des enregistrements et de télécharger la [documentation associée à cette présentation, ainsi que les FAQ](https://aka.ms/MIPC/Blog-RecordsManagementWebinar).
 
 ## <a name="records"></a>Enregistrements
 
@@ -69,7 +69,7 @@ En utilisant des étiquettes de rétention pour marquer du contenu en tant qu’
 
 Utilisez le tableau suivant pour identifier les restrictions placées sur du contenu suite à l’application d’une étiquette de rétention standard, ainsi que les étiquettes de rétention qui marquent du contenu en tant qu’enregistrement. 
 
-Une étiquette de rétention standard comporte des paramètres et des actions de rétention mais ne marque pas le contenu comme un enregistrement.
+Une étiquette de rétention standard comporte des paramètres et des actions de rétention mais n’indique pas que le contenu est un enregistrement.
 
 >[!NOTE] 
 > Pour couvrir tous les cas de figure, le tableau inclut les colonnes d’un enregistrement verrouillé et déverrouillé, applicable à SharePoint et OneDrive, mais pas à Exchange. La possibilité de verrouiller et de déverrouiller un enregistrement utilise le [contrôle de version](record-versioning.md) qui n’est pas pris en charge pour les éléments Exchange. Par conséquent, pour tous les éléments Exchange marqués en tant qu’enregistrement, le comportement mappe vers l’**Enregistrement – colonne verrouillée**, et l’**Enregistrement – colonne déverrouillée** n’est pas pertinent.
@@ -100,6 +100,6 @@ Message qu’un utilisateur voit s’il essaie de supprimer un document étiquet
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Voir [Démarrer avec la gestion des enregistrements](get-started-with-records-management.md).
+Veuillez consulter la page [Prise en main de la gestion des enregistrements](get-started-with-records-management.md).
 
 Pour marquer du contenu en tant qu’enregistrement, consultez [Déclarer des enregistrements à l’aide d’étiquettes de rétention](declare-records.md).

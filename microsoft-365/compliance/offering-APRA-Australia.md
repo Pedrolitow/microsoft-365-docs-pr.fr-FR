@@ -3,7 +3,7 @@ title: Autorité de régulation prudentielle australienne (APRA)
 description: Conseils Microsoft pour aider les clients des services financiers à respecter les normes d’externalisation de l’autorité de régulation prudentielle australienne.
 keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b344f9c4d750c6e6571c0e76be0c9db0c421271b
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: fb964bd6dcf229f362476b68ad87d05053e87f74
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065889"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417748"
 ---
 # <a name="australian-prudential-regulation-authority-apra"></a>Autorité de régulation prudentielle australienne (APRA)
 
@@ -76,7 +76,7 @@ Bénéficiez d’un support pratique pour le transfert de données et de charges
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Dynamics 365
 
-## <a name="frequently-asked-questions"></a>Forum Aux Questions
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
 **Les institutions financières ont-elles besoin d’une approbation APRA avant d’externaliser les activités de gestion des matières ?**
 

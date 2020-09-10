@@ -3,7 +3,7 @@ title: Analyse d’impact sur la protection des données (DPIA) Azure pour le RG
 description: Trouvez des informations pour déterminer si une évaluation d’impact sur la protection des données (DPIA) est nécessaire lorsque vous utilisez Microsoft Azure.
 keywords: DPIA, analyse d’impact sur la protection des données, Microsoft 365, Microsoft 365 Éducation, documentation Microsoft 365, RGPD
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -17,12 +17,12 @@ ms.collection:
 hideEdit: true
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: ec7bcf7a3211531e1c0cd2abf514752c6099e8d1
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: c60079bbbb5f141751e5f4526dcf327e876746ac
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035462"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417928"
 ---
 # <a name="data-protection-impact-assessments-guidance-for-data-controllers-using-microsoft-azure"></a>Analyses d’impact sur la protection des données : conseils pour les contrôleurs de données qui utilisent Microsoft Azure
 

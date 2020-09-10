@@ -3,7 +3,7 @@ title: Règlement général sur la protection des données
 description: Découvrez les conseils techniques de Microsoft et trouvez des informations utiles concernant le Règlement général sur la protection des données (RGPD)
 keywords: Microsoft 365, Microsoft 365 Éducation, documentation Microsoft 365, RGPD
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5d1e6730d215fcef6bd0cad6244c82b960ed39ce
-ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
+ms.openlocfilehash: cd17ac35c732189fe8699d75ceb054cc4c900364
+ms.sourcegitcommit: eb3c30d53a5434d8bad7c8f48a5612f3e2675945
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44800019"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422452"
 ---
 # <a name="general-data-protection-regulation-summary"></a>Sythèse du règlement général sur la protection des données
 
@@ -209,7 +209,7 @@ Microsoft utilise depuis longtemps les clauses contractuelles standard (égaleme
 
 **Quelles sont les autres offres de conformité Microsoft ?**
 
-En tant qu’entreprise mondiale avec des clients dans presque tous les pays au monde, Microsoft dispose d’un solide portefeuille de conformité pour aider ses clients. Pour consulter la liste complète des offres de conformité, notamment FedRamp, HIPAA/Hi, ISO 27001, ISO 27002, ISO 27018, NIST 800-171, G-Cloud Royaume-Uni et bien d’autres encore, visitez nos [rubriques d’offre de conformité](offering-home.md).
+En tant qu’entreprise mondiale avec des clients dans presque tous les pays au monde, Microsoft dispose d’un solide portefeuille de conformité pour aider ses clients. Pour consulter la liste complète des offres de conformité, notamment FedRamp, HIPAA/Hi, ISO 27001, ISO 27002, ISO 27018, NIST 800-171, G-Cloud Royaume-Uni et bien d’autres encore, visitez nos [rubriques d’offre de conformité](offering-home.yml).
 
 **Quel effet le RGPD aura-t-il sur mon entreprise ?**
 

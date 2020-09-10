@@ -3,7 +3,7 @@ title: NEN 7510
 description: Les organismes exerçant des activités aux Pays-Bas doivent démontrer leur contrôle sur les dossiers de santé des patients, conformément à la norme NEN 7510.
 keywords: Offres pour la conformité Microsoft 365
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 572e41368c7046f0ad9fd8c68c7f26e4aaad93ce
-ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
+ms.openlocfilehash: 90d1634ffd9b8f52dc3ccd19d44363bb2eae2227
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44800049"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417878"
 ---
 # <a name="nen-7510"></a>NEN 7510
 
