@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: ccb7b049ee3bc2aa25847886b57341ae936d20b9
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: c24f5891573b8541a97a35d228c57642766fe4a0
+ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649342"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47419143"
 ---
 # <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>Recherche de menaces sur les appareils, les e-mails, les applications et les identités
 
@@ -62,9 +62,6 @@ EmailEvents
 
 Vous pouvez obtenir des noms de compte et d’autres informations de compte en fusionnant ou en joignant la [table IdentityInfo](advanced-hunting-identityinfo-table.md). La requête ci-dessous obtient la liste des détections de hameçonnage et de programmes malveillants dans la [table EmailEvents](advanced-hunting-emailevents-table.md) , puis joint ces informations à la `IdentityInfo` table pour obtenir des informations détaillées sur chaque destinataire. 
 
->[!Tip]
-> Cette requête utilise `kind=inner` pour spécifier une [jointure interne](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor), ce qui empêche la déduplication des valeurs du côté gauche ou des adresses de messagerie des destinataires.
-
 ```kusto
 EmailEvents
 | where Timestamp > ago(7d)
@@ -81,6 +78,9 @@ Department, City, Country
 
 ### <a name="get-device-information"></a>Obtenir des informations sur les appareils
 Le [schéma de chasse avancé](advanced-hunting-schema-tables.md) fournit des informations détaillées sur l’appareil dans différentes tables. Par exemple, le [tableau DeviceInfo](advanced-hunting-deviceinfo-table.md) fournit des informations complètes sur l’appareil en fonction des données d’événements regroupées régulièrement. Cette requête utilise la `DeviceInfo` table pour vérifier si un utilisateur potentiellement compromis () s' `<account-name>` est connecté à un appareil, puis répertorie les alertes déclenchées sur ces appareils.
+
+>[!Tip]
+> Cette requête utilise `kind=inner` pour spécifier une [jointure interne](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor), ce qui empêche la déduplication des valeurs côté gauche de `DeviceId` .
 
 ```kusto
 DeviceInfo

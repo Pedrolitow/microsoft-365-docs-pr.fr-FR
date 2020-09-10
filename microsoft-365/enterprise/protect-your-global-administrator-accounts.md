@@ -3,7 +3,7 @@ title: Protéger vos comptes d’administrateur général Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/15/2020
+ms.date: 09/08/2020
 audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -20,16 +20,16 @@ f1.keywords:
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Cet article fournit des informations sur la protection de l’accès administrateur général à votre abonnement Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 08e0960e7150395b2997dbd9ff0a1818822e17e2
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: fb8f85b3ee5c0f72c2dd93517e68784459c32e7e
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695839"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416385"
 ---
 # <a name="protect-your-microsoft-365-global-administrator-accounts"></a>Protéger vos comptes d’administrateur général Microsoft 365
 
-*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
 Les violations de sécurité d’un abonnement Microsoft 365, y compris la collecte d’informations et les attaques par hameçonnage, sont généralement réalisées en compromettant les informations d’identification d’un compte d’administrateur général Microsoft 365. La sécurité dans le Cloud est un partenariat entre vous et Microsoft :
   
@@ -43,13 +43,14 @@ Microsoft offre des fonctionnalités pour vous aider à protéger votre organisa
     
 2. Configurez l’authentification multifacteur pour vos comptes d’administrateur général Microsoft 365 dédiés et utilisez la forme d’authentification secondaire la plus puissante.
     
-> [! Remarques] bien que cet article soit axé sur les comptes d’administrateur général, vous devez déterminer si des comptes supplémentaires avec des autorisations étendues pour accéder aux données de votre abonnement, tels que les comptes d’administrateur eDiscovery ou d’administrateur de sécurité ou de conformité, doivent être protégés de la même manière. <br > Il est possible de créer un compte d’administrateur général sans ajouter de licences.
+> [!Note]
+> Bien que cet article soit axé sur les comptes d’administrateur général, vous devez déterminer si les comptes supplémentaires avec des autorisations étendues pour accéder aux données de votre abonnement, tels que les comptes d’administrateur eDiscovery ou d’administrateur de sécurité ou de conformité, doivent être protégés de la même manière. <br > Il est possible de créer un compte d’administrateur général sans ajouter de licences.
   
 ## <a name="step-1-create-dedicated-microsoft-365-global-administrator-accounts-and-use-them-only-when-necessary"></a>Étape 1. Créez des comptes d’administrateur général Microsoft 365 dédiés et utilisez-les uniquement lorsque cela est nécessaire.
 
 Il existe relativement peu de tâches administratives, telles que l’affectation de rôles à des comptes d’utilisateur, qui nécessitent des privilèges d’administrateur général. Par conséquent, au lieu d’utiliser tous les comptes d’utilisateur qui ont été affectés au rôle d’administrateur global, procédez comme suit :
   
-1. Déterminez l’ensemble des comptes d’utilisateur auxquels a été attribué le rôle d’administrateur général. Vous pouvez effectuer cette opération avec Azure active (Azure AD) Directory PowerShell for Graph :
+1. Déterminez l’ensemble des comptes d’utilisateur auxquels a été attribué le rôle d’administrateur général. Pour ce faire, vous pouvez utiliser la commande Azure Active Directory (Azure AD) Directory PowerShell pour Graph :
   
   ```powershell
   Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
@@ -120,15 +121,15 @@ Si vous êtes une organisation plus importante qui utilise un modèle d’identi
     
 Si l’infrastructure de sécurité pour la méthode de vérification renforcée souhaitée n’est pas en place et ne fonctionne pas pour Microsoft 365 MFA, nous vous recommandons vivement de configurer des comptes d’administrateur global dédiés avec MFA à l’aide de l’application Microsoft Authenticator, un appel téléphonique ou un code de vérification de message texte envoyé à un téléphone intelligent pour vos comptes d’administrateur général comme mesure de sécurité provisoire. Ne laissez pas vos comptes d’administrateur général dédiés sans la protection supplémentaire fournie par MFA.
   
-Pour plus d’informations, reportez-vous à la rubrique [plan for Multi-Factor Authentication for Microsoft 365 Deployments](https://docs.microsoft.com/office365/admin/security-and-compliance/multi-factor-authentication-plan).
+Pour plus d’informations, consultez la rubrique [MFA pour Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/multi-factor-authentication-microsoft-365).
   
 Pour vous connecter aux services Microsoft 365 avec MFA et PowerShell, consultez les articles suivants :
 
 - [PowerShell pour Microsoft 365 pour les comptes d’utilisateur, les groupes et les licences](connect-to-microsoft-365-powershell.md)
 - [Microsoft Teams](https://docs.microsoft.com/microsoftteams/teams-powershell-install)
-- [Exchange Online](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell?view=exchange-ps#connect-to-exchange-online-powershell-by-using-mfa)
+- [Exchange Online](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-using-mfa)
 - [SharePoint Online](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online#to-connect-with-multifactor-authentication-mfa)
-- [Skype entreprise Online] Manage-Skype-for-Business-Online-with-Microsoft-365-PowerShell # Connect-using-a-Skype-for-Business-Online-Administrator-Account-with-Multi-Factor-Authentication)
+- [Skype Entreprise Online](manage-skype-for-business-online-with-microsoft-365-powershell.md#connect-using-a-skype-for-business-online-administrator-account-with-multi-factor-authentication)
 
 ## <a name="additional-protections-for-enterprise-organizations"></a>Protections supplémentaires pour les organisations d’entreprise
 

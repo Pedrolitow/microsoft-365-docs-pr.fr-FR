@@ -26,16 +26,16 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Indique comment attribuer des licences Microsoft 365 à des comptes d’utilisateur, individuellement ou en fonction de l’appartenance au groupe.
-ms.openlocfilehash: 60936e52bffa58d50419f771e670848ee76271fd
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: e132a8c2d65c401899624b9d255050385f2cb721
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46689663"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417097"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts"></a>Attribuer des licences Microsoft 365 à des comptes d’utilisateur
 
-*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
 Pour le modèle d’identité Cloud uniquement, vous pouvez attribuer des licences Microsoft 365 à des comptes d’utilisateur au fur et à mesure de leur création, en fonction de leur création.
 
@@ -58,5 +58,5 @@ Pour l’attribution automatique de licence, consultez la rubrique [Group-based 
 
 - [Implémenter la sécurité](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
 - [Déployer le logiciel client, tel que les applications Microsoft 365](https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps)
-- [Configurer la gestion des appareils mobiles dans Microsoft 365](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
+- [Configuration de la mobilité et de la sécurité de base dans Microsoft 365](https://support.microsoft.com/office/set-up-basic-mobility-and-security-dd892318-bc44-4eb1-af00-9db5430be3cd)
 - [Configurer les services et les applications](configure-services-and-applications.md)
