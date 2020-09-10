@@ -1,9 +1,9 @@
 ---
 title: Loi HIPAA (Health Insurance Portability and Accountability Act) & Hi-Tech
 description: Microsoft propose des accords de portabilité de l’assurance maladie & la Loi d’entreprise Associate Act (HIPAA).
-keywords: Microsoft 365, conformité, offres
+keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 825d8bac0d20534310864801b1d8eaef32c9b417
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: bb1452bc0f33b56cd9fee6bb4846a8e623c0b96a
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936349"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416848"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>Loi HIPAA (Health Insurance Portability and Accountability Act) & Hi-Tech
 
@@ -34,7 +34,7 @@ La loi réglemente l’utilisation et la diffusion de la PHI dans quatre zones g
 - Les identificateurs, qui sont les types d’informations qui ne peuvent pas être libérés s’ils sont collectés à des fins de recherche.
 - Codes de transmission électronique de données dans les transactions liées au secteur médical, notamment le droit et les demandes d’assurance et les paiements.
 
-Le champ d’application du HIPAA a été prolongé avec l’adoption des technologies de l’information sur l’état de santé pour l’assurance économique et clinique (HI). Les règles de loi HIPAA et Hi-Tech sont les suivantes :
+Le champ d’application du HIPAA a été prolongé avec l’adoption de la technologie de l’information sur l’état de santé (HI) Act (assurance maladie). ensemble, les règles de loi HIPAA et Hi-Tech incluent :
 
 - La règle de confidentialité HIPAA, qui se concentre sur le droit des personnes à contrôler l’utilisation de leurs informations personnelles, et couvre la confidentialité de la fonction PHI, en limitant l’utilisation et la divulgation.
 - La règle de sécurité HIPAA, qui définit les normes pour les protections administratives, techniques et physiques en matière de protection de la norme électronique PHI contre l’accès, l’utilisation et la divulgation non autorisés. Elle inclut également des exigences organisationnelles telles que les accords de partenariat commercial (HIPAA).
@@ -51,7 +51,7 @@ Les services Cloud d’entreprise de Microsoft sont également couverts par les 
 
 Pour savoir comment le Cloud Microsoft aide les clients à prendre en charge les normes HIPAA et Hi-Tech, consultez les [témoignages des clients Microsoft](https://customers.microsoft.com).
 
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft concernés
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
 
 - [Azure et Azure Government](https://aka.ms/AzureCompliance)
 - Microsoft Cloud App Security
@@ -72,7 +72,7 @@ Commencez à tirer parti des avantages du Cloud pour les solutions de données d
 
 [Commencer à utiliser le modèle Azure HIPAA/HITRUST](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust/)
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
 **Mon organisation peut-elle entrer dans un contrat avec Microsoft ?**
 

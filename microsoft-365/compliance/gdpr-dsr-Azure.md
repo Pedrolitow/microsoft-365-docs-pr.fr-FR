@@ -3,7 +3,7 @@ title: Demandes des personnes concernées en lien avec des données Azure dans l
 description: Découvrez comment utiliser les produits Microsoft, les services et les outils d’administration pour rechercher et agir sur des données personnelles afin de répondre aux DSRs.
 keywords: Microsoft 365, Microsoft 365 Éducation, documentation Microsoft 365, RGPD, CCPA
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -17,12 +17,12 @@ ms.collection:
 hideEdit: true
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 47aca22a5766b39bce513772874bca56de3420c5
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: b22baa48293e48567d801227996d080e8ee1cce2
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035452"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416648"
 ---
 # <a name="azure-data-subject-requests-for-the-gdpr-and-ccpa"></a>Demandes des personnes concernées en lien avec des données Azure dans le cadre du RGPD et du CCPA
 
@@ -78,7 +78,7 @@ Les DPC par rapport à un compte de service Microsoft lui-même, **en dehors d�
 Microsoft permet de supprimer et d’exporter certaines données client, et d’y accéder, via le portail Azure et directement aussi via des interfaces de programmation d’applications (API) ou des interfaces utilisateur (UI) préexistantes pour des services spécifiques (également appelées *expériences intégrées au produit*). Vous trouverez des informations sur ces expériences intégrées au produit dans la documentation de référence des services respectifs.
 
 >[!IMPORTANT]  
-> Les services qui prennent en charge les DSRs du service nécessitent l’utilisation directe de l’interface de programmation d’application (API) ou de l’interface utilisateur (UI) du service, qui décrit les opérations de CRUD (Create, Read, Update, Delete) appropriées. Par conséquent, l’exécution de DSRs au sein d’un service donné doit être effectuée en plus de l’exécution d’un DSR dans le portail Azure afin de remplir une demande complète pour une personne donnée. Pour plus d’informations, consultez la documentation de référence des services spécifiques.
+> Les services qui prennent en charge les DPC intégrées au produit requièrent l’utilisation directe de l’API ou de l’UI du service, décrivant les applications CRUD (créer, lire, mettre à jour, supprimer) applicables. Par conséquent, l’exécution des DPC dans un service donné doit être effectuée en plus de l’exécution d’une DPC dans le portail Azure afin d’effectuer une demande complète pour une personne concernée par le traitement des données. Consultez la documentation de référence des services spécifiques pour plus d’informations.
 
 ### <a name="step-1-discover"></a>Étape 1 : Découvrir
 
@@ -114,7 +114,7 @@ Microsoft permet de découvrir des données client directement via des interface
 
 ### <a name="step-2-access"></a>Étape 2 : Accéder
 
-Une fois que vous avez trouvé les données client contenant des données personnelles susceptibles de répondre à un DSR, il vous incombe, et à votre organisation, de choisir les données à fournir à la personne concernée. Vous pouvez fournir une copie du document réel, une version biffée appropriée ou une capture d’écran des parties que vous avez jugées appropriées. Pour chacune de ces réponses à une demande d’accès, vous devez récupérer une copie du document ou d’un autre élément contenant les données réactives.
+Lorsque vous avez trouvé les données client contenant des données personnelles répondant potentiellement à une DPC, vous et votre organisation devez décider quelles données fournir à la personne concernée par le traitement des données. Vous pouvez les fournir avec une copie du document réel, une version correctement rédigée ou une capture d’écran des parties que vous considérez pouvoir partager. Pour chacune de ces réponses à une demande d’accès, vous devrez récupérer une copie du document ou de tout autre élément contenant les données pertinentes.
 
 Lorsque vous fournissez une copie à la personne concernée, vous devrez peut-être supprimer ou modifier des informations personnelles sur d’autres personnes concernées et des informations confidentielles.
 

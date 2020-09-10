@@ -3,7 +3,7 @@ title: Securities and Exchange Commission-réglementation sur la conformité et 
 description: Les règles du SIC s’appliquent aux entités SCI, qui incluent de telles organisations d’autoréglementation (SROs) en tant qu’échanges boursiers et d’options, de prestataires de services de compensation et autres systèmes commerciaux (ATSs).
 keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e2b314934a51c16ab4e907b7d9f6208e7de21641
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: fd4817f31aa91698a77de45fd8315b3f84431289
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065709"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415928"
 ---
 # <a name="securities-and-exchange-commission-regulation-systems-compliance-and-integrity-sci"></a>Securities and Exchange Commission : réglementation sur la conformité et l’intégrité des systèmes (SIC)
 
@@ -52,9 +52,9 @@ Ce document fournit une liste de contrôle approfondie des zones ciblées du SIC
 - [Guide de mise en œuvre de la réglementation SIC](https://servicetrust.microsoft.com/ViewPage/TrustDocumentsV3?command=Download&downloadType=Document&downloadId=a69ce0c1-7b7e-44e9-9143-867241e6b2f9&tab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913&docTab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913_FAQ_and_White_Papers): mappe les fonctionnalités Azure sur le règlement et détaille la responsabilité partagée de la conformité.
 - [Conception d’applications Azure fiables](https://docs.microsoft.com/azure/architecture/resiliency/): présentation succincte de la façon de créer la fiabilité à chaque étape de la conception d’une application Azure.
 - [Conception d’applications à haut niveau de disponibilité](https://docs.microsoft.com/azure/storage/common/storage-designing-ha-apps-with-ragrs): les développeurs peuvent s’assurer que leurs applications de stockage Azure sont hautement disponibles.
-- [Guide d'évaluation des risques et de la conformité](https://aka.ms/RiskGovernanceGuide): créez un modèle de gouvernance pour l'évaluation des risques des services de cloud computing Microsoft et la notification aux autorités de régulation.
+- [Guide d'évaluation des risques et de conformité](https://aka.ms/RiskGovernanceGuide): créez un modèle de gouvernance pour l'évaluation des risques des services de cloud computing Microsoft et la notification aux autorités de réglementation.
 
-## <a name="frequently-asked-questions"></a>Forum Aux Questions
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
 **Que signifie les responsabilités partagées lors de l’utilisation de la technologie Cloud ?**
 

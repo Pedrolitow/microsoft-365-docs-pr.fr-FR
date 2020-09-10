@@ -3,7 +3,7 @@ title: NIST SP 800 – 171
 description: Les services de Cloud Computing Microsoft sont conformes aux directives NIST SP 800 – 171 afin de protéger les informations non classifiées contrôlées (CUI) dans les systèmes d’information non fédéraux.
 keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 47e001fafedbdcaab6e1aa6365789bc309d9f65c
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 757541aa86049106ad06f02419fee02033c6a0e3
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065809"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417066"
 ---
 # <a name="nist-sp-800171"></a>NIST SP 800 – 171
 
@@ -57,7 +57,7 @@ Toute entité qui traite ou stocke les CUIs du gouvernement américain (institut
 
 - [Exemples de modèle Azure](https://docs.microsoft.com/azure/governance/blueprints/samples/): obtenez de la prise en charge de la mise en œuvre de charges de travail conformes aux contrôles NIST.
 
-## <a name="frequently-asked-questions"></a>Forum Aux Questions
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
 **Puis-je utiliser Microsoft Compliance avec NIST SP 800 – 171 pour mon organisation ?**
 

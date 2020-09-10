@@ -3,7 +3,7 @@ title: Protection des informations
 description: Découvrez les fonctionnalités de protection des informations dans Microsoft 365 pour le règlement général sur la protection des données (RGPD).
 keywords: Microsoft 365, Microsoft 365 Éducation, documentation Microsoft 365, RGPD
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 04/13/2018
 f1.keywords:
@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 02dbb22ad47fbacf964308d2b4a989f34b6d6c9d
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 8716af366e2ec75775f3e34cbd121fe14fbb11f1
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307681"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416798"
 ---
 # <a name="information-protection-for-gdpr-with-microsoft-365-capabilities"></a>Protection des informations concernant le RGPD avec les fonctionnalités Microsoft 365
 

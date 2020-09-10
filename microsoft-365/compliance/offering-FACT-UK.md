@@ -3,7 +3,7 @@ title: Fédération contre le vol de droits d’auteur (fait)
 description: Microsoft Azure a atteint la certification de la Fédération avec le vol de Copyright au Royaume-Uni.
 keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e8d7ce93438ce3699dd30ac8b5f0f8818045eaf5
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: acc0ab379cdd93d873cc0b1eb2f0d729eff251c8
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066397"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416110"
 ---
 # <a name="federation-against-copyright-theft-fact"></a>Fédération contre le vol de droits d’auteur (fait)
 
@@ -41,7 +41,7 @@ En fonction de l’envoi volontaire par Microsoft à un audit de faits, le véri
 
 La certification Azure est renouvelée annuellement : [certificat de faits Azure](https://aka.ms/azurefactcert)
 
-## <a name="frequently-asked-questions"></a>Forum Aux Questions
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
 **Pourquoi est-il important ?**
 

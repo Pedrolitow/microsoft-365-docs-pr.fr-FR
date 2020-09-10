@@ -3,7 +3,7 @@ title: Autorisation provisoire du ministère américain de la défense (DoD)
 description: Microsoft a reçu des autorisations provisoires du ministère de la défense (DoD) aux niveaux d’impact 5, 4 et 2.
 keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 333333ad274c569337c2cbab7fd00c7337e26160
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: fee91c384850b5a1593cc17e6215985217ada033
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44064765"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415472"
 ---
 # <a name="us-department-of-defense-dod-provisional-authorization-at-impact-levels-2-4-and-5"></a>Autorisation provisoire du ministère américain de la défense aux niveaux d’impact 2, 4 et 5
 
@@ -84,7 +84,7 @@ Une fois qu’un DoD PA est accordé, les services de Cloud Computing Microsoft 
 
 Prenez le temps de tirer parti des avantages du Cloud dans le secteur public avec le plan de défense du département de sécurité et de conformité Azure. Ce plan fournit des outils et des conseils pour vous aider à créer des solutions conformes au DoD dès aujourd’hui. [Commencez à utiliser le modèle Azure DoD](https://docs.microsoft.com/azure/governance/blueprints/samples/dod-impact-level-4/).
 
-## <a name="frequently-asked-questions"></a>Forum Aux Questions
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
 **Puis-je tirer parti de la conformité Microsoft dans le processus de certification de mon organisation ?**
 

@@ -4,7 +4,7 @@ description: 'Conseils techniques Microsoft : ENSEMBLE D’OUTILS DE MIGRATION 
 keywords: Migration FastTrack, Microsoft 365 Éducation, documentation Microsoft 365, RGPD
 localization_priority: Priority
 Robots: NOFOLLOW,NOINDEX
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -16,12 +16,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 7e4f7fb72d6fb2b84c85ecb55301fc2024630f58
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 162a64535f82f24411121ed81e36078511eb8eba
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632485"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416910"
 ---
 # <a name="fasttrack-migration-toolset-for-submitting-delete-request"></a>Ensemble d’outils de migration FastTrack pour envoyer une demande de suppression
 
@@ -73,7 +73,7 @@ Pour exécuter correctement ce module, vous devrez peut-être installer des modu
 
 Pour envoyer une DSR, vous devez tout d’abord vous connecter à l’aide de vos identifiants Office 365 : saisissez les identifiants corrects pour valider votre statut d’administrateur général et collecter des informations client. 
 
-**Login-FastTrackAccount -ApiKey: \<clé API fournie par FastTrack MVM\>**
+**Clé Api de la Recherche Rapide de Compte de la Connexion: \<API Key provided by FastTrack MVM\>**
 
 Une fois que vous êtes connecté, les identifiants et la clé sont stockés pour être utilisés avec les modules FastTrack pendant le reste de la session PowerShell actuelle.
 

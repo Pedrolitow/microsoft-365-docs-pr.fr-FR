@@ -3,7 +3,7 @@ title: Publication 140-2 (Federal Information Processing Standard)
 description: Microsoft certifie que ses modules de chiffrement sont conformes à la norme américaine Federal Information Processing Standard.
 keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 8288438eed0f658d8058125bc90315e9a2626c08
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: f193e1846b957a26475cdfc48add6679a951841f
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066579"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415848"
 ---
 # <a name="federal-information-processing-standard-fips-publication-140-2"></a>Publication 140-2 (Federal Information Processing Standard)
 
@@ -43,7 +43,7 @@ Alors que le Guide d’implémentation actuel de CMVP FIPS 140-2 exclut une vali
 - [Dynamics 365 et Dynamics 365 Government](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-microsoft-dynamics-365)
 - [Office 365, Office 365 U.S. Government, Office 365 U.S. Government Defense](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-risks-and-protections)
 
-## <a name="frequently-asked-questions"></a>Forum Aux Questions
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
 **Quelle est la différence entre « FIPS 140 Valided » et « FIPS 140 compatible » ?**
 

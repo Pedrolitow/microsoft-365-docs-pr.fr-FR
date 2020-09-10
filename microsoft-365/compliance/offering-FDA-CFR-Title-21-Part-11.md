@@ -3,7 +3,7 @@ title: Food and Drug Administration CFR titre 21, partie 11
 description: Microsoft aide les clients à se conformer à ces réglementations en matière d’administration des médicaments et de l’alimentation.
 keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 1b24460940d583eeb9ed431b61453e87a218a816
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: fa93c78d240c243911e21e687ef5d02c29b714b2
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066377"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417338"
 ---
 # <a name="food-and-drug-administration-cfr-title-21-part-11"></a>Food and Drug Administration CFR titre 21, partie 11
 
@@ -59,7 +59,7 @@ Bien qu’il n’existe pas de certification pour se conformer au titre CFR 21 p
 
 Les rapports d’audit pour les normes SOC 1 et SOC 2 type 2, ISO/IEC 27001 et ISO/IEC 27018 attestent de l’efficacité des contrôles que Microsoft a mis en œuvre et peuvent aider les clients à se conformer à la norme FDA CFR titre 21 partie 11.
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
 **À qui la norme s'applique-t-elle ?**
 

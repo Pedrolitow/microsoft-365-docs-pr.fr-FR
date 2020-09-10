@@ -3,7 +3,7 @@ title: Étapes supplémentaires pour exporter les données des journaux génér�
 description: Étapes supplémentaires pour exporter les données des journaux générés par le système
 keywords: Exporter les données de journal, Office 365 Microsoft 365 Éducation, documentation Microsoft 365, RGPD
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: f3a0229d77c4b679a1b5bf91c8e5243ad2037086
-ms.sourcegitcommit: a418195dc11e6251ae37e788c102bbaa7087e44e
+ms.openlocfilehash: 26dffdbe783344938abd67d75601c17070048252
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44579001"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417438"
 ---
 # <a name="additional-steps-to-export-system-generated-log-data"></a>Étapes supplémentaires pour exporter les données des journaux générés par le système
 

@@ -4,7 +4,7 @@ description: Découvrez comment utiliser les produits Microsoft, les services et
 keywords: Microsoft 365, Microsoft 365 Éducation, documentation Microsoft 365, RGPD
 localization_priority: Priority
 ROBOTS: NOINDEX, NOFOLLOW
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -15,12 +15,12 @@ audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: bc88f8911f44c9c7b8aad8fbecbbeb073fdcb9ba
-ms.sourcegitcommit: 209a9963719f1ca85ca2075c02721e1a318a7a13
+ms.openlocfilehash: b113935ce31aa7992eab1d57f78b6cdec5919cc4
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45374800"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416900"
 ---
 # <a name="data-processor-service-for-windows-enterprise-data-subject-requests-for-the-gdpr-and-ccpa"></a>Service de processeur de données pour les demandes des personnes concernées Windows Entreprise pour le RGPD et le CCPA 
 

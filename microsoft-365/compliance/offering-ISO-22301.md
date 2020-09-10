@@ -3,7 +3,7 @@ title: Norme de gestion de la continuité des activités ISO/IEC 22301:2012
 description: Microsoft est certifié pour sa mise en œuvre de ces normes de gestion de la continuité des activités.
 keywords: Offres pour la conformité Microsoft 365
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 64a43fc281e5074314ca2b272306a0733297d34e
-ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
+ms.openlocfilehash: 2e470972e1d1549bff5cce107666a930a9b29969
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44254433"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416232"
 ---
 # <a name="iso-223012012-business-continuity-management-standard"></a>Norme de gestion de la continuité des activités ISO/IEC 22301:2012
 

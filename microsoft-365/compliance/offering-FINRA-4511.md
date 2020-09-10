@@ -1,9 +1,9 @@
 ---
 title: Règle de l’autorité réglementaire du secteur financier (FINRA) 4511 (c) États-Unis
 description: Une entreprise d’évaluation indépendante a validé que Azure et Office 365 peuvent aider les entreprises financières à respecter la règle FINRA 4511 enregistrer les besoins en matière de conservation et de stockage non modifiable.
-keywords: Microsoft 365, conformité, offres
+keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 328aa52473fbb8b51ad580379c103e3759c2bff6
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: b70393bfff32d855e49c74bab340379cdaf488f1
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126695"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415868"
 ---
 # <a name="financial-industry-regulatory-authority-finra-rule-4511c-united-states"></a>Règle de l’autorité réglementaire du secteur financier (FINRA) 4511 (c) États-Unis
 
@@ -51,7 +51,7 @@ Pour évaluer la conformité d’Office 365 avec la règle FINRA 4511 (c), Micro
 
 L’archivage dans Office 365 permet de conserver un large éventail de données, notamment la messagerie électronique, la messagerie vocale, les documents partagés, les messages instantanés et les données tierces. En particulier, l’archivage dans Office 365 permet aux clients de définir des stratégies de rétention de messagerie globales ou granulaires pour stocker des données pendant une période définie et au-delà dans un format non réinscriptible et non effaçable.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft concernés
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
 
 - [Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
 - [Office 365](https://aka.ms/Office365ComplianceOfferings)

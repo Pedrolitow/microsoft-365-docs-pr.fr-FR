@@ -3,7 +3,7 @@ title: Demandes des données Intune des personnes concernées pour le RGPD et le
 description: Découvrez comment trouver des données personnelles et agir sur celles-ci, et de répondre aux demandes DSR et CCPA par des clients à l’aide de Microsoft Intune.
 keywords: Microsoft 365, Microsoft 365 Éducation, documentation Microsoft 365, RGPD, CCPA
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-mar2020
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: a9dd161edd740aa97e97afa02a6c53933a6ac211
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 56ccf1cb2cb858c87d6d8791734d4cfb2bbf098a
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817653"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416608"
 ---
 # <a name="intune-data-subject-requests-for-the-gdpr-and-ccpa"></a>Demandes des données Intune des personnes concernées pour le RGPD et le CCPA
 

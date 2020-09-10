@@ -3,7 +3,7 @@ title: Installations sécurisées de police (PASF)
 description: Les services Cloud d’entreprise Microsoft prennent en charge l’application de la loi britannique qui requiert des installations sécurisées de police pour traiter et stocker leurs données dans le Cloud.
 keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 3207d0d29c837064ac5c27cc7022a8d0d7e63a22
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 828a16ce825a21a532a22d60cd0005db10c97a75
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065789"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416396"
 ---
 # <a name="police-assured-secure-facilities-pasf-united-kingdom"></a>Installations sécurisées de police (PASF)
 
@@ -51,7 +51,7 @@ Le NPIRMT audite un centre de gestion des datacenters chaque année, en parcoura
 
 - [Public officiel Azure UK](https://servicetrust.microsoft.com/ViewPage/UKBlueprints): aide les clients britanniques à accélérer le déploiement d’IaaS et de services PaaS de charges de travail conformes dans Azure.
 
-## <a name="frequently-asked-questions"></a>Forum Aux Questions
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
 **Les services de police au Royaume-Uni peuvent-ils utiliser l’évaluation Azure PASF dans le cadre de leurs évaluations des risques propres ?**
 

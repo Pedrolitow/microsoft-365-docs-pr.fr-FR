@@ -3,7 +3,7 @@ title: Programme FedRAMP (Federal Risk and Authorization Management Program)
 description: Microsoft a obtenu un programme de gestion des autorisations et des risques fédéraux américains P-ATOs et ATOs.
 keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 0ddb997246f2b7a23b25e1b611170c6163e1d670
-ms.sourcegitcommit: b8a9994b26a6d9865212f5b1871286e719d1608e
+ms.openlocfilehash: c91c71f199ef36c1c9a0da023c7b26d6cb64282e
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43781474"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415778"
 ---
 # <a name="federal-risk-and-authorization-management-program-fedramp"></a>Programme FedRAMP (Federal Risk and Authorization Management Program)
 
@@ -71,7 +71,7 @@ Dynamics 365 le gouvernement des États-Unis a reçu un « ATO » de l’Agenc
 - [Office 365 et Office 365 régies américaines](https://go.microsoft.com/fwlink/p/?linkid=2077751)
 - Office 365 U.S. Government Defense
 - Service Cloud Power BI soit en service autonome, soit inclus dans un plan ou une suite Office 365
-- Microsoft Defender ATP
+- Microsoft Defender - PACM
 
 > [!NOTE]
 > L’utilisation d’Azure Active Directory au sein d’Azure Government nécessite l’utilisation de composants déployés en dehors du gouvernement Azure sur le cloud public Azure.
@@ -91,7 +91,7 @@ Microsoft vous guide tout au long du processus de l’ATO et déploie rapidement
 
 [Commencer à utiliser le modèle FedRAMP](https://aka.ms/fedrampblueprint)
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
 **Est-ce que les services de Cloud Computing Microsoft sont conformes à la loi FISMA (Federal Information Security Management Act) ?**
 

@@ -3,7 +3,7 @@ title: Royaume-Uni Cyber Essentials PLUS
 description: Cyber Essentials PLUS est un modèle défini par le gouvernement britannique pour aider les organisations à se protéger contre les menaces courantes de protection contre la cybercriminalité.
 keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 8a95d2037c95f62b955e830b23e1d1ea46f31bf4
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 6b0d28c853c540e72c4287b141097f12ddf23419
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066427"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415574"
 ---
 # <a name="united-kingdom-cyber-essentials-plus"></a>Royaume-Uni Cyber Essentials PLUS
 

@@ -3,7 +3,7 @@ title: Banque de réserve de l’Inde (RBI) et autorité réglementaire et de d�
 description: Microsoft a publié des conseils pour aider les institutions financières en Inde à adopter le Cloud.
 keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: d76289740a117979ec4ac2d91a2e24782995d0fb
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: c037a36154f14cc0db2092bc2eeea6344b5544ff
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066181"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416070"
 ---
 # <a name="reserve-bank-of-india-rbi-and-insurance-regulatory-and-development-authority-of-india-irdai"></a>Banque de réserve de l’Inde (RBI) et autorité réglementaire et de développement de l’assurance de l’Inde (IRDAi)
 
@@ -43,7 +43,7 @@ Lorsque les établissements financiers Indiens ont externalisé des activités p
 
 La liste de vérification Microsoft aide les sociétés financières en Inde à évaluer la diligence des services Cloud d’entreprise Microsoft et comprend les éléments suivants :
 
-- Vue d’ensemble du paysage réglementaire dans le contexte.
+- Vue d’ensemble du paysage de la réglementation pour le contexte.
 - Liste de vérification qui décrit les problèmes à résoudre et les cartes Microsoft Azure, Microsoft Dynamics 365 et Microsoft Office 365 services par rapport à ces obligations réglementaires. La liste de contrôle peut être utilisée comme outil pour mesurer la conformité par rapport à un cadre réglementaire et fournir une structure interne pour documenter la conformité, et aider les clients à effectuer leurs propres évaluations des risques des services Cloud entreprise Microsoft.
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
@@ -55,12 +55,12 @@ La liste de vérification Microsoft aide les sociétés financières en Inde à 
 ## <a name="how-to-implement"></a>Modalités de mise en œuvre
 
 - [Liste de vérification de conformité pour l’Inde](https://servicetrust.microsoft.com/Documents/TrustDocuments?command=Download&downloadType=Document&downloadId=26f4af15-2771-4cd4-a7c7-9328149f9453&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides): les cabinets financiers peuvent obtenir de l’aide pour effectuer des évaluations de risques de Microsoft Business cloud services.
-- [Guide d'évaluation des risques et de la conformité](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers): créez un modèle de gouvernance pour l'évaluation des risques des services de cloud computing Microsoft et la notification aux autorités de régulation.
+- [Guide d'évaluation des risques et de conformité](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers): créez un modèle de gouvernance pour l'évaluation des risques des services de cloud computing Microsoft et la notification aux autorités de réglementation.
 - [Exemples d’utilisation financière pour Azure](https://docs.microsoft.com/azure/industry/financial/): présentations de cas d’utilisation, didacticiels et autres ressources pour créer des solutions Azure pour les services financiers.
 
-## <a name="frequently-asked-questions"></a>Forum Aux Questions
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
-**Existe-t-il des conditions impératives devant être incluses dans le contrat avec le fournisseur de services cloud computing ?**
+**Existe-t-il des conditions impératives devant être incluses dans le contrat avec le fournisseur de services Cloud ?**
 
 Oui. Les recommandations mentionnées ci-dessus précisent certains points spécifiques que les établissements financiers doivent incorporer dans leurs contrats de services Cloud. La partie 2 de la [liste de contrôle](https://servicetrust.microsoft.com/Documents/TrustDocuments?command=Download&downloadType=Document&downloadId=26f4af15-2771-4cd4-a7c7-9328149f9453&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides) (page 70) les mappe par rapport aux sections des documents contractuels de Microsoft où elles sont adressées.
 

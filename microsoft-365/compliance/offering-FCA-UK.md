@@ -3,7 +3,7 @@ title: Autorité financière pour le Royaume-Uni (FCA)
 description: Les conseils Microsoft pour les entreprises financières au Royaume-Uni suivent l’autorité financière et les directives d’externalisation sur le Cloud.
 keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 1a45b101363c3b881161384a241c1ea50e951552
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 03e8bcc51acb1a8210492b6d1ea0f00a886d6cdd
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066387"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417368"
 ---
 # <a name="united-kingdom-financial-conduct-authority-fca"></a>Autorité financière pour le Royaume-Uni (FCA)
 
@@ -49,7 +49,7 @@ Découvrez comment Azure active la conformité FCA aux banques britanniques : [
 - Intune
 - Service Cloud Power BI soit en service autonome, soit inclus dans un plan ou une suite Office 365
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
 **Puis-je utiliser les réponses Microsoft à cette infrastructure dans le cadre du processus de conformité de mon organisation ?**
 

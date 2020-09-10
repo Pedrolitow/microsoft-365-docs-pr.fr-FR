@@ -3,7 +3,7 @@ title: Loi Sarbanes-Oxley de 2002 (SOX)
 description: Les sociétés de services financiers peuvent utiliser les rapports de conformité Microsoft pour respecter la loi Sarbanes-Oxley.
 keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: a1ee3987a762d3ff9555a8e992dda67e4a154849
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: ca91606910c38664e74d650f750769121ea11957
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066307"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415352"
 ---
 # <a name="sarbanes-oxley-act-of-2002-sox"></a>Loi Sarbanes-Oxley de 2002 (SOX)
 
@@ -59,7 +59,7 @@ Rapports [SOC 1 type 2](offering-SOC.md) pour :
 - Dynamics 365
 - Office 365
 
-## <a name="frequently-asked-questions"></a>Forum Aux Questions
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
 **Comment puis-je utiliser la conformité Microsoft SOX pour faciliter le processus de conformité de mon organisation ?**
 

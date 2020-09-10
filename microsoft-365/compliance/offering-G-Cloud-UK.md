@@ -1,9 +1,9 @@
 ---
 title: Gouvernement britannique-Cloud (G-Cloud)
 description: Le service commercial de la Couronne a renouvelé la classification des services de Cloud Computing Microsoft sur le cloud public v. 6.
-keywords: Microsoft 365, conformité, offres
+keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 6392c591ab5db083f00da97c50e6c388e8656815
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 2d0498ab48190758f6f21f538eefe131fb1edd70
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560771"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416050"
 ---
 # <a name="united-kingdom-government-cloud-g-cloud"></a>Gouvernement britannique-Cloud (G-Cloud)
 
@@ -39,7 +39,7 @@ Le rendez-vous des services Microsoft sur le marché numérique signifie que les
 
  [14 les contrôles de sécurité du Cloud pour le Cloud britannique à l’aide de Microsoft Azure](https://azure.microsoft.com/resources/14-cloud-security-controls-for-uk-cloud-using-microsoft-azure/) fournissent des stratégies client pour déplacer leurs services vers Azure et aider à répondre à leurs obligations britanniques imposées par le CESG/NSCS. Le livre blanc fournit des informations sur l’utilisation d’Azure pour aider à répondre aux 14 contrôles décrits dans les principaux de sécurité du Cloud et explique comment les clients peuvent se déplacer plus rapidement et gagner en argent lorsqu’ils adoptent Microsoft Azure services.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft concernés
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Microsoft Cloud App Security
@@ -80,7 +80,7 @@ Le transfert de vos services gouvernementaux vers le nuage est désormais plus f
 
 [Commencer à utiliser le modèle Azure UK G-Cloud](https://aka.ms/ukofficialblueprint)
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
 **Qui est éligible pour utiliser le marché numérique ?**
 

@@ -3,7 +3,7 @@ title: Section américaine 508
 description: Microsoft propose des rapports de conformité d’accessibilité détaillés pour un grand nombre de ses services Cloud qui décrivent les fonctionnalités d’accessibilité de ces services.
 keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 7f61248fc6e31d0982eedd153aa71ae3eed71de5
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 1037232f7e72bd6d82cd0818dfad2ca2722144ec
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066297"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415342"
 ---
 # <a name="us-section-508"></a>Section américaine 508
 
@@ -41,7 +41,7 @@ L’attention de Microsoft de la section américaine 508 dans le développement 
 - Intune
 - [Office 365 et Office 365 U.S. Governement](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - [Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- Windows Server 2016
+- Windows Server 2016
 
 ## <a name="microsoft-accessibility-conformance-reports"></a>Rapports de conformité de l’accessibilité Microsoft
 

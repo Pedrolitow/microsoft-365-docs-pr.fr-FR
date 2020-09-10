@@ -3,7 +3,7 @@ title: Institut Cybersecurity (CSF) National Institute of Standards and Technolo
 description: Les services de Cloud Computing Microsoft sont conformes à l’Cybersecurity Framework (CSF) de l’Institut NIST (National Institute of Standards and Technology).
 keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 2b705d26efa513214164c05703acafe8d5d141c2
-ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
+ms.openlocfilehash: 90670c8102afe0dcf0814726bde36bd422e802a9
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44799979"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417086"
 ---
 # <a name="national-institute-of-standards-and-technology-nist-cybersecurity-framework-csf"></a>Institut Cybersecurity (CSF) National Institute of Standards and Technology (CSF)
 
@@ -40,7 +40,7 @@ Découvrez comment accélérer le déploiement de l’infrastructure NIST Cybers
 - [Vue d’ensemble de l’exemple de modèle NIST SP 800-53 R4](https://docs.microsoft.com/azure/governance/blueprints/samples/nist-sp-800-53-rev4/)
 - [En savoir plus sur l’évaluation CSF CSF pour Office 365 dans le score de conformité](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/New-NIST-CSF-and-CSA-CCM-assessments-available-in-Compliance/ba-p/218554)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft concernés
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
 
 - [Public Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365 pour le gouvernement](https://aka.ms/d365-compliance-list)
@@ -64,7 +64,7 @@ Cybersecurity reste un problème de gestion critique dans l’ère de la transfo
 
 - [Commencer à utiliser le score de conformité](compliance-score.md)
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
 **Un évaluateur indépendant a-t-il validé qu’Azure Government, Dynamics 365 et Office 365 prennent en charge la configuration CSF CSF ?**
 

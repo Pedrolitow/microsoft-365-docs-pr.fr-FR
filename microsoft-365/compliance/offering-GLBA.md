@@ -3,7 +3,7 @@ title: La loi Gramm-Leach-Bliley Act (GLBA)
 description: Microsoft aide les clients des services financiers à respecter les exigences de confidentialité et de sécurité de la loi Gramm-Leach-Bliley Act (GLBA).
 keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: bbc5f9e74e67dc121b151684145bd41635af1ca0
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 1b3cf1017a3ed64cecafe269e313ab5a6980af25
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066549"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417728"
 ---
 # <a name="gramm-leach-bliley-act-glba"></a>La loi Gramm-Leach-Bliley Act (GLBA)
 
@@ -46,7 +46,7 @@ Microsoft a développé des outils d’évaluation des risques pour [Azure](http
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Service Cloud Power BI soit en service autonome, soit inclus dans un plan ou une suite Office 365
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
 **Comment savoir si mon institution financière doit respecter la loi GLB ?**
 

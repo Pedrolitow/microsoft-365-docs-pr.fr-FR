@@ -3,7 +3,7 @@ title: N ° de Comité sur les systèmes de sécurité nationaux 1253 (CNSSI 125
 description: Les pouvoirs publics Azure sont conformes aux contrôles de sécurité CNSSI 1253 pour les systèmes gouvernementaux américains exigeant une haute confidentialité, une intégrité élevée et une haute disponibilité.
 keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 59bb5fd9e692cc5c69a4baf1cdc14cc200dba7a6
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: d84f31f38fb8e4ff71de067ca30abc39b58704fc
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066267"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415595"
 ---
 # <a name="committee-on-national-security-systems-instruction-no-1253-cnssi-1253"></a>N ° de Comité sur les systèmes de sécurité nationaux 1253 (CNSSI 1253)
 
@@ -51,7 +51,7 @@ CNSSI 1253 d’Azure Government attestation de conformité avec la base de CNSSI
 
 - [Documentation sur les pouvoirs publics Azure](https://docs.microsoft.com/azure/azure-government/): didacticiels et guides de procédures permettant aux développeurs de déployer et de gérer les services à l’aide d’Azure Government.
 
-## <a name="frequently-asked-questions"></a>Forum Aux Questions
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
 **À qui s’applique CNSSI 1253 ?**
 

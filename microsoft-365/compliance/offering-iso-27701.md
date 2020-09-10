@@ -3,7 +3,7 @@ title: ISO/CEI 27701 Système de gestion de l'information sur la protection de l
 description: La norme ISO/IEC 27701 pour la prise en charge de la confidentialité et de la conformité réglementaire des contrôleurs et des processeurs au sein de la chaîne logistique globale de traitement des données.
 keywords: Offres pour la conformité Microsoft 365
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 8a4f59a817e8ddd38ee8132e7028a3357d15d578
-ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
+ms.openlocfilehash: b46a1996d1a86601efe21ec71b19adfc9fa02c61
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44254167"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417212"
 ---
 # <a name="isoiec-27701-privacy-information-management-system-pims"></a>ISO/CEI 27701 Système de gestion de l'information sur la protection de la vie privée (SGIP)
 

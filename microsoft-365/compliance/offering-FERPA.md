@@ -1,9 +1,9 @@
 ---
 title: Loi sur la confidentialité et les droits d’enseignement familial (FERPA)
 description: Microsoft s’aligne sur les exigences des droits éducatifs et de la confidentialité de la famille américain.
-keywords: Microsoft 365, conformité, offres
+keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c7d3120f7094e91157c5a20df435c1c1438677bf
-ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
+ms.openlocfilehash: cbf8b04fe4e3d301d3ee79c09895093f97c2e785
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44254267"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417348"
 ---
 # <a name="family-educational-rights-and-privacy-act-ferpa"></a>Loi sur la confidentialité et les droits d’enseignement familial (FERPA)
 
@@ -41,7 +41,7 @@ FERPA n’exige ni ne reconnaît des audits ou d’autres certifications, de sor
 
 À la suite de ces engagements contractuels, les clients soumis à FERPA, à la fois les établissements scolaires et les tiers auxquels ils donnent accès aux données des étudiants sensibles, peuvent utiliser en toute confiance les services Cloud d’entreprise de Microsoft pour traiter, stocker et transmettre ces données.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le champ d’application
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
 
 Les services pour lesquels Microsoft s’engagent à être désignés comme un « fonctionnaire scolaire » avec des « intérêts éducatifs légitimes » dans les données client sont les suivants :
 
@@ -57,7 +57,7 @@ Les services pour lesquels Microsoft s’engagent à être désignés comme un �
 
 FERPA n’exige ni ne reconnaît les audits ou les certifications.
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
 **Pourquoi FERPA est-il important ?**
 

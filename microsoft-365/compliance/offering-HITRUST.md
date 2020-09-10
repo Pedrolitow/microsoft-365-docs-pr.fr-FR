@@ -3,7 +3,7 @@ title: Infrastructure de sécurité commune HITRUST (Health Information Trust Al
 description: Azure et Office 365 sont certifiés pour l’infrastructure de sécurité commune (CSF) Common Security information Alliance (HITRUST).
 keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e94cc9164938189e1b6fb07d897cf4bbf1e73c5d
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 5ee3e77624650f0a5c1b913081620695cdc13142
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066671"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417036"
 ---
 # <a name="health-information-trust-alliance-hitrust-common-security-framework-csf"></a>Infrastructure de sécurité commune HITRUST (Health Information Trust Alliance)
 

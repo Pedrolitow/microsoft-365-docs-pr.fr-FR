@@ -3,7 +3,7 @@ title: Listes de vérification de préparation sur la responsabilité concernant
 description: Dans cet articles, vous allez découvrir les listes de vérification de préparation sur la responsabilité pour accéder aux informations permettant de prendre en charge le RGPD lorsque vous utilisez les produits et services Microsoft.
 keywords: Microsoft 365, Microsoft 365 Éducation, documentation Microsoft 365, RGPD
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-mar2020
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 154ba945db3bd5cfab25881bfdbbdc6738a3dfd7
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 8bee0c58075c535b5175d9f5ecbed6c6f2f5044c
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036112"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416984"
 ---
 # <a name="support-your-gdpr-program-with-accountability-readiness-checklists"></a>Prise en charge de votre programme RGPD avec des listes de vérification de préparation sur la responsabilité
 

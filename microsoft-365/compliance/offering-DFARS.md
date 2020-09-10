@@ -3,7 +3,7 @@ title: Supplément du règlement sur la défense fédérale de l’acquisition (
 description: Le gouvernement Microsoft Azure prend en charge la configuration requise pour le DFARS (Defense Federal acquisition Regulation).
 keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 1b850db09306f3cb4664433fb5659e8b65b421ba
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 07e3104881688b81d126cbd8b65844c7a2853d16
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602551"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415544"
 ---
 # <a name="defense-federal-acquisition-regulation-supplement-dfars"></a>Supplément du règlement sur la défense fédérale de l’acquisition (DFARS)
 
 ## <a name="dfars-overview"></a>Vue d’ensemble de DFARS
 
-Le 2016 21 octobre, le ministère de la défense (DoD) a publié sa règle finale modifiant le supplément DFARS (Defense Federal acquisition Regulational) et imposant des obligations de création de rapports sur la protection des données et des incidents de défense dont les informations System Process, Store ou Transmit information protection (CDI).  
+Le 2016 21 octobre, le ministère de la défense (DoD) a publié sa règle finale modifiant le supplément DFARS (Defense Federal acquisition Regulational) et imposant des obligations de création de rapports sur la protection des informations relatives aux entreprises de défense dont les systèmes d’information traitent, stockent ou transmettent des informations de défense couvertes (CDI).  
   
 La clause DFARS finale 252.204 – 7012 (protection des informations couvertes par la défense et des rapports des incidents informatiques) spécifie des mesures de protection qui incluent les exigences de signalement des incidents informatiques et des considérations supplémentaires pour les fournisseurs de services Cloud. Par DFARS 252.204 – 7012, tous les entrepreneurs DoD et la base de défense industrielle sont tenus de se conformer aux exigences de DFARS pour assurer une sécurité appropriée» dès que possible, mais au plus tard le 31 décembre 2017.
 
@@ -56,7 +56,7 @@ Public Azure et Office 365 la défense du gouvernement américain permet aux cli
 
 **Un évaluateur indépendant a-t-il validé que le gouvernement Azure et Office 365 la défense du gouvernement américain prend-il en charge les exigences DFARS ?**
 
-Oui, une organisation d’évaluation tierce a sanctionné l’offre de service Cloud pour le gouvernement Azure et Office 365, qui répond aux exigences applicables de la clause DFARS 252.204 – 7012 (protection contre les techniques contrôlées non classées Informations).
+Oui, une organisation tierce de l’évaluation atteste que l’offre de service Cloud pour le gouvernement Azure et Office 365 est conforme aux exigences applicables de la clause DFARS 252.204 – 7012 (protection des informations techniques contrôlées non classées).
 
 **Quelle est la relation entre les informations non classifiées contrôlées (CUI) et les informations de défense couvertes (CDI) ?**
 
@@ -69,7 +69,7 @@ CDI est des informations techniques contrôlées ou d’autres informations (com
 
 **Tous les services Microsoft répondent-ils aux exigences de « sécurité appropriée » applicables aux « informations de défense couvertes » dans le règlement DFARS ?**
 
-En octobre 2016, le ministère de la défense (DoD) promulgué une règle finale mettant en œuvre les clauses de DFARS (Defense Federal acquisition Regulation Supplement) qui s’appliquent à tous les entrepreneurs de DoD qui traitent, stockent ou transmettent « les informations de défense couvertes » via leurs systèmes d’information. La règle indique que ces systèmes doivent respecter les exigences de sécurité définies dans NIST SP 800 – 171, [protégeant les informations non classifiées contrôlées dans les organisations et les systèmes d’information non fédéraux](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171.pdf), ou une mesure de sécurité alternative, mais également efficace, approuvée par le directeur contractuel DoD. Et lorsqu’un entrepreneur DoD utilise un fournisseur de services Cloud externe pour traiter, stocker ou transmettre les informations de défense couvertes, ce fournisseur doit répondre aux exigences de sécurité qui sont équivalentes à la base de référence modérée FedRAMP.
+En octobre 2016, le ministère de la défense (DoD) promulgué une règle finale mettant en œuvre les clauses de DFARS (Defense Federal acquisition Regulation Supplement) qui s’appliquent à tous les fournisseurs DoD qui traitent, stockent ou transmettent « les informations de défense couvertes » via leurs systèmes d’information. La règle indique que ces systèmes doivent respecter les exigences de sécurité définies dans NIST SP 800 – 171, [protégeant les informations non classifiées contrôlées dans les organisations et les systèmes d’information non fédéraux](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171.pdf), ou une mesure de sécurité alternative, mais également efficace, approuvée par le directeur contractuel DoD. Et lorsqu’un entrepreneur DoD utilise un fournisseur de services Cloud externe pour traiter, stocker ou transmettre les informations de défense couvertes, ce fournisseur doit répondre aux exigences de sécurité qui sont équivalentes à la base de référence modérée FedRAMP.
 
 Les services de Cloud Computing Microsoft suivants ont reçu une autorisation FedRAMP modérée et sont suffisants pour DFARS : Azure Governance, Dynamics 365 le gouvernement américain, Office 365 le gouvernement américain et Office 365.
 

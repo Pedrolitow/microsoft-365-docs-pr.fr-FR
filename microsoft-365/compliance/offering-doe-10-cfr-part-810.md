@@ -3,7 +3,7 @@ title: US DoE 10 CFR part 810
 description: Les clients soumis aux exigences en matière de contrôle d’exportation de US DoE 10 CFR part 810 peuvent utiliser le gouvernement Azure.
 keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b34babe60781858b85a3c76280c2126094442851
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: a809ae91bbe1302ae4087b3a430dea87e2c913a1
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066437"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415694"
 ---
 # <a name="us-doe-10-cfr-part-810"></a>US DoE 10 CFR part 810
 
@@ -47,7 +47,7 @@ Par ailleurs, les gouvernements Azure sont un nuage communautaire du gouvernemen
 
 Le contrôle d’exportation USA Department of Energy (DoE) Règlement [10 CFR Part 810](https://www.govinfo.gov/content/pkg/FR-2015-02-23/pdf/2015-03479.pdf) régit l’exportation des technologies et des interventions nucléaires non classifiées. Elle permet de s’assurer que les technologies nucléaires exportées à partir des États-Unis ne seront utilisées qu’à des fins pacifiques. La partie révisée 810 (règle finale) a pris effet le 1er mars 2015 et est gérée par l’administration de la [sécurité nucléaire nationale](https://www.energy.gov/nnsa/national-nuclear-security-administration). La section 810,6 indique que l’autorisation spécifique DoE est requise pour les deux dispositions de l’assistance et des transferts de technologies nucléaires sensibles qui sont « généralement autorisées », ainsi que celles nécessitant une autorisation spécifique (par exemple, pour les interventions impliquant des technologies nucléaires sensibles telles que l’enrichissement et la production d’eau lourde).
 
-## <a name="frequently-asked-questions"></a>Forum Aux Questions
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
 **Les 10 CFR part 110 règlements de la Commission de réglementation nucléaire américaine s’appliquent-ils au gouvernement Azure ?**
 

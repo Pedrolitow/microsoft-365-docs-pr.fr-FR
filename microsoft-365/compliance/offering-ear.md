@@ -3,7 +3,7 @@ title: Réglementation de l’administration des exportations américaines (EAR)
 description: Les services de Cloud Computing Microsoft aident les clients soumis aux réglementations de l’administration des exportations américaines à respecter les exigences de conformité et à gérer le risque de contrôle d’exportation.
 keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 1adf0bab35c921dd416028747b0309e5ad5f3055
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4ad12f785a76f6ee733cb3b459ad58370a330f51
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601961"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416060"
 ---
 # <a name="us-export-administration-regulations-ear"></a>Réglementation de l’administration des exportations américaines (EAR)
 
@@ -27,7 +27,7 @@ ms.locfileid: "41601961"
 
 Le ministère américain du commerce applique les réglementations de l’administration des exportations (EAR) par le [Bureau de l’industrie et la sécurité (bis)](https://www.bis.doc.gov/). L’oreille régit et impose des contrôles sur l’exportation et la réexportation de la plupart des biens commerciaux, logiciels et technologies, y compris les éléments « double utilisation » qui peuvent être utilisés à des fins commerciales et militaires et pour certains éléments de défense.
 
-Les directives BIS tiennent compte du fait que, lorsque des données ou des logiciels sont chargés dans le Cloud ou transférés entre des nœuds d’utilisateur, le client, et non le fournisseur de Cloud, est le « exportateur » qui a la responsabilité de s’assurer que les transferts de, le stockage et l’accès à ces données ou logiciels est conforme aux EAR.
+Les directives BIS tiennent compte du fait que, lorsque des données ou des logiciels sont chargés dans le Cloud ou transférés entre des nœuds d’utilisateur, le client, et non le fournisseur de Cloud, est le « exportateur » qui est chargé de s’assurer que les transferts, le stockage et l’accès à ces données ou logiciels sont conformes aux EAR.
 
 [Conformément à la BRI](https://www.bis.doc.gov/index.php/documents/regulation-docs/412-part-734-scope-of-the-export-administration-regulations/file), l' *exportation* désigne le transfert de technologies protégées ou de données techniques vers une destination étrangère ou sa publication vers une personne étrangère aux États-Unis (également appelé « *exportation présumée*»). L’oreille régit largement :
 
@@ -41,7 +41,7 @@ La [règle finale](https://www.federalregister.gov/documents/2016/06/03/2016-127
 
 ## <a name="microsoft-and-the-ear"></a>Microsoft et l’oreille
 
-Les technologies, produits et services Microsoft sont soumis à la réglementation américaine sur l’administration des exportations (EAR). S’il n’existe pas de certification de conformité pour les EAR, Microsoft Azure, Microsoft Azure Government et Microsoft Office 365 Government (environnements GCCHigh et DoD) offrant des fonctionnalités et des outils importants pour aider les clients éligibles à l’oreille à gérer l’exportation Contrôlez les risques et répondez aux exigences de conformité.
+Les technologies, produits et services Microsoft sont soumis à la réglementation américaine sur l’administration des exportations (EAR). Bien qu’il n’existe pas de certification de conformité pour les EAR, Microsoft Azure, Microsoft Azure Government et Microsoft Office 365 Government (environnements GCCHigh et DoD), il offre des fonctionnalités et des outils importants pour aider les clients éligibles à l’oreille à gérer les risques de contrôle d’exportation et à respecter les exigences de conformité.
 
 Le service de commerce américain, qui applique les EAR, a pris la position que les clients, pas les fournisseurs de service Cloud tels que Microsoft, sont considérés comme exportateurs de leurs propres données client. Alors que la plupart des données client ne sont pas considérées comme des « technologies » ou des « données techniques » soumises aux contrôles d’exportation EAR, les services Cloud de Microsoft à l’échelle de l’étendue sont structurés pour aider les clients à gérer et à atténuer de manière significative les risques de contrôle d’exportation potentiels auxquels ils sont confrontés. En règle générale, Microsoft recommande l’utilisation de ses services Cloud gouvernementaux pour les clients éligibles. Avec une planification appropriée, les clients peuvent utiliser les outils suivants et leurs procédures internes pour garantir une conformité complète avec les contrôles d’exportation US.
 
@@ -66,7 +66,7 @@ Vue d’ensemble des États-Unis exporter des contrôles et des conseils pour le
 
 **Que dois-je faire pour se conformer aux contrôles d’exportation lors de l’utilisation des services de Cloud Computing Microsoft ?**
 
-Sous la languette, lorsque les données sont téléchargées vers un serveur Cloud tel que le Cloud Microsoft, le client propriétaire des données, et non le fournisseur de services Cloud, est considéré comme exportateur. Pour cette raison, le propriétaire des données (c’est-à-dire, le client Microsoft) doit évaluer avec soin comment leur utilisation du Cloud Microsoft peut concerner les contrôles d’exportation US et déterminer si les données qu’ils souhaitent utiliser ou stocker peuvent être soumises à des contrôles de l’oreille. et si c’est le cas, les contrôles s’appliquent. En savoir plus sur la façon dont les services Cloud [Azure](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=c24c11f2-2cd4-444a-9160-19762855ad3a&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers) et [Office 365](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE1s5kI) peuvent aider les clients à garantir leur conformité complète avec les contrôles d’exportation US.
+Sous la languette, lorsque les données sont téléchargées vers un serveur Cloud tel que le Cloud Microsoft, le client propriétaire des données, et non le fournisseur de services Cloud, est considéré comme exportateur. Pour cette raison, le propriétaire des données, c’est-à-dire le client Microsoft, doit évaluer avec soin comment leur utilisation du Cloud Microsoft peut mettre en cause les contrôles d’exportation US et déterminer si les données qu’ils souhaitent utiliser ou stocker peuvent être soumises à des contrôles de l’oreille et, si c’est le cas, les contrôles qui s’appliquent. En savoir plus sur la façon dont les services Cloud [Azure](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=c24c11f2-2cd4-444a-9160-19762855ad3a&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers) et [Office 365](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE1s5kI) peuvent aider les clients à garantir leur conformité complète avec les contrôles d’exportation US.
 
 **Les technologies, produits et services Microsoft sont-ils soumis aux EAR ?**
 

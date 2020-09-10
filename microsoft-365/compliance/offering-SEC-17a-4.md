@@ -1,9 +1,9 @@
 ---
 title: Règles de Securities and Exchange Commission (SEC) 17A -4 (f)
 description: Une entreprise d’évaluation indépendante a validé que Azure et Office 365 peuvent aider les entreprises financières à respecter la réglementation SEC 17A -4 (f) des enregistrements sur la rétention et le stockage non modifiable.
-keywords: Microsoft 365, conformité, offres
+keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 63a7c4f7385ec3d782ff030374ba344406c6d094
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: bd91e2439b501a20396763358f35a94aa31b4672
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126663"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417232"
 ---
 # <a name="securities-and-exchange-commission-sec-rule-17a-4f-united-states"></a>Règles de Securities and Exchange Commission (SEC) 17A -4 (f)
 
@@ -42,7 +42,7 @@ Pour évaluer la conformité Azure et Office 365 avec la règle SEC 17A -4 (f), 
 - **Azure**: [sec 17A -4 (f) évaluation de la conformité : Microsoft Azure Storage](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=19b08fd4-d276-43e8-9461-715981d0ea20&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_GRC_Assessment_Reports), Cohasset validée que le [stockage d’objets BLOB Azure inaltérables](https://docs.microsoft.com/azure/storage/blobs/storage-blob-immutable-storage) avec l’option de verrouillage de stratégie, lorsqu’il est utilisé pour conserver les objets BLOB basés sur l’heure dans un format non effaçable et non réinscriptible (Worm), répond aux exigences de stockage non modifiables de la règle sec. La modification, l’écrasement ou la suppression de chaque objet BLOB (enregistrement) est protégée jusqu’à ce que la période de rétention requise ait expiré et que toutes les suspensions juridiques associées aient été publiées. Les fournisseurs de logiciels et les partenaires avec des charges de travail sensibles peuvent désormais compter sur le stockage d’objets BLOB Azure inaltérables en tant que solution cloud OneStop Shop pour les enregistrements de rétention et de stockage non modifiable. Les établissements financiers peuvent désormais créer leurs propres applications en tirant parti de ces fonctionnalités tout en restant conformes.
 - **Office 365**: [utiliser Exchange Online pour se conformer à la norme sec 17A -4](https://docs.microsoft.com/office365/securitycompliance/use-exchange-online-to-comply-with-sec-rule-17a-4), Cohasset validée [que Office 365 avec verrouillage de conservation](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements) inclut des fonctionnalités d’archivage permettant aux clients réglementés, y compris le service des concessionnaires, de stocker les données d’une manière qui les aide à se conformer aux exigences de la rétention des enregistrements. Les stratégies de rétention dans Office 365 aident à conserver un large éventail de données, notamment la messagerie électronique, la messagerie vocale, les documents partagés, les messages instantanés et les données tierces. En particulier, l’archivage dans Office 365 permet aux clients de définir des stratégies de rétention de messagerie globales ou granulaires pour stocker des données pour une période définie et au-delà dans un format non réinscriptible et non effaçable.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft concernés
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
 
 - [Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
 - [Office 365](https://aka.ms/Office365ComplianceOfferings)

@@ -3,7 +3,7 @@ title: Stratégie de sécurité CJIS (pénal Justice Information Services)
 description: Les services Cloud du gouvernement Microsoft adhèrent à la politique de sécurité des services informatiques pénales.
 keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 02be641b93ffdb245ae6073358b66c1204e46093
-ms.sourcegitcommit: 4581afb3116ccd7d0144398e83cd6a6990e3683b
+ms.openlocfilehash: 5680cc1bf8f3a0290f82baaccea1de7b982317a7
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43772515"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416416"
 ---
 # <a name="criminal-justice-information-services-cjis-security-policy"></a>Stratégie de sécurité CJIS (pénal Justice Information Services)
 
@@ -64,7 +64,7 @@ Alabama, Alaska, Arkansas, Arizona, Californie, Colorado, Floride, Géorgie, Haw
 
 L’engagement de Microsoft à respecter les contrôles de réglementation CJIS applicables permet aux organisations de justice pénale de mettre en œuvre des solutions basées sur le nuage et de respecter la stratégie de sécurité CJIS V 5.8.
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
 **Où puis-je demander des informations de conformité ?**
 

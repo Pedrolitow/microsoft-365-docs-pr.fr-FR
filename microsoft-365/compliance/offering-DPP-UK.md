@@ -3,7 +3,7 @@ title: Partenariat de production numérique (DPP) Royaume-Uni
 description: Microsoft Azure a reçu le DPP engagé à la marque de sécurité pour diffusion.
 keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 4f97b0c0d5af681ed55a119f7ebbaf6c89fb1393
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: ce688fbf933cc14884e989572e222396f4ccec52
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066631"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415452"
 ---
 # <a name="digital-production-partnership-dpp-united-kingdom"></a>Partenariat de production numérique (DPP) Royaume-Uni
 
