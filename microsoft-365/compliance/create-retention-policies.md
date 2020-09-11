@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utiliser une stratégie de rétention vous permet de décider de façon proactive de conserver du contenu, de le supprimer (ou les deux), de conserver du contenu, puis de le supprimer ; d’appliquer une stratégie unique à l’ensemble de l’organisation ou à des emplacements ou utilisateurs spécifiques. Cela vous permet également d’appliquer une stratégie à tout le contenu ou au contenu répondant à certaines conditions.
-ms.openlocfilehash: 5b0b81d18afad9f0f9cba6ec24e157ad8f96e4ef
-ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
+ms.openlocfilehash: 01a5137c3ab098101ebfeab71be38ee3ca28088f
+ms.sourcegitcommit: 2b8c3fc39a7cbd4ca35e98dca430d2470cd2c925
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "47315845"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47426961"
 ---
 # <a name="create-and-configure-retention-policies"></a>Créer et configurer des stratégies de rétention
 
@@ -297,7 +297,7 @@ Vous devez utiliser PowerShell si vous avez besoin d’utiliser le [Verrouillage
 
 Toutes les stratégies de rétention incluant une configuration prennent en charge le Verrouillage de conservation. Toutefois, lorsque vous utilisez les commandes PowerShell suivantes, vous remarquerez que le paramètre **Charge de travail** affiche toujours **Exchange, SharePoint, OneDriveForBusines, Skype, ModernGroup** plutôt que de refléter les charges de travail réelles configurées dans la stratégie. Il s’agit uniquement d’un problème d’affichage.
 
-1. [Connectez-vous au Centre de conformité et sécurité PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+1. [Connectez-vous au Centre de conformité et sécurité PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
 2. Répertoriez vos stratégies de rétention et recherchez le nom de la stratégie que vous souhaitez verrouiller en exécutant [Get-RetentionCompliancePolicy](https://powershell/module/exchange/get-retentioncompliancepolicy). Par exemple :
     
