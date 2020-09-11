@@ -16,21 +16,21 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: 26b9ff81-93b0-4251-beaf-3c9f1d7c80c8
-description: Dans cet article, Découvrez comment gérer les comptes d’utilisateur, les licences et les groupes Microsoft 365 avec PowerShell.
-ms.openlocfilehash: a262cbb62cd457e3a22550af2f773551cf67bb43
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: Découvrez comment gérer les comptes d’utilisateur, les licences et les groupes Microsoft 365 avec PowerShell.
+ms.openlocfilehash: 0c6ca6a4165b616097405a9de178c254aa489a3c
+ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695864"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47429985"
 ---
 # <a name="manage-microsoft-365-user-accounts-licenses-and-groups-with-powershell"></a>Gérer les comptes d’utilisateurs, les licences et les groupes Microsoft 365 avec PowerShell
 
-*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-L’une des principales tâches des administrateurs de Microsoft 365 est la gestion des comptes d’utilisateur, des licences et des groupes. Bien que vous puissiez accomplir la plupart des aspects de ces tâches dans le centre d’administration 365 de Microsoft, les autres tâches sont beaucoup plus rapides et plus faciles avec PowerShell. 
+Les administrateurs de Microsoft 365 doivent gérer les comptes d’utilisateur, les licences et les groupes. Bien que vous puissiez effectuer la plupart de ces tâches dans le centre d’administration 365 de Microsoft, certains sont plus faciles à utiliser dans PowerShell.
 
-Pour plus d’informations, consultez les rubriques suivantes.
+Pour plus d'informations, consultez les articles suivants :
 
 ## <a name="user-accounts"></a>Comptes d’utilisateur
 
@@ -54,4 +54,3 @@ Pour plus d’informations, consultez les rubriques suivantes.
 ## <a name="groups"></a>Groupes
 - [Maintenir l’appartenance à un groupe](maintain-group-membership-with-microsoft-365-powershell.md)
 - [Gestion des groupes Microsoft 365](manage-microsoft-365-groups-with-powershell.md)
-

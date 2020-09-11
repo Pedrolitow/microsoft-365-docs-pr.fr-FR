@@ -18,16 +18,19 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à utiliser un simulateur d’attaque pour exécuter des attaques de hameçonnage et de mot de passe simulées dans les organisations plan 2 de Microsoft 365 E5 ou ATP.
-ms.openlocfilehash: 017376d8002811398fe3ce2d94f7c207cd718a78
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 9fc28cdecc07f5325918e3d5176e52d1051a626c
+ms.sourcegitcommit: 2b8c3fc39a7cbd4ca35e98dca430d2470cd2c925
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825832"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47426992"
 ---
 # <a name="attack-simulator-in-atp"></a>Simulateur d’attaques dans ATP
 
 Si votre organisation dispose d’Office 365 Advanced Threat Protection (ATP) plan 2, qui inclut des [fonctionnalités d’enquête et de réponse aux menaces](office-365-ti.md), vous pouvez utiliser un simulateur d’attaque dans le centre de sécurité & conformité pour exécuter des scénarios d’attaque réaliste dans votre organisation. Ces attaques simulées peuvent vous aider à identifier et à trouver des utilisateurs vulnérables avant qu’une véritable attaque n’influe sur votre ligne de base. Pour en savoir plus, lisez cet article.
+
+> [!NOTE]
+> Les données de formation et de simulation d’attaque sont stockées avec d’autres données client pour les services Microsoft 365. Pour plus d’informations, consultez la rubrique [emplacements des données Microsoft 365](/microsoft-365/enterprise/o365-data-locations).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 

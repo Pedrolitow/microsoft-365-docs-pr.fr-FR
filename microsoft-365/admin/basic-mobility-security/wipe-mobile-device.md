@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Utilisez la sécurité et la mobilité de base intégrées pour supprimer les informations des périphériques.
-ms.openlocfilehash: 4d854c7d4d81cd0b49ec7f81a49de5478b08f049
-ms.sourcegitcommit: 2179abfe0b7a8bea917eb1c1057ed3795bdf91e6
+ms.openlocfilehash: 4627b0cb2d0963ae724c425a6a7ea6279f271856
+ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47336853"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47429949"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>Réinitialiser un appareil mobile dans la sécurité et la mobilité de base
 
@@ -39,7 +39,7 @@ Les appareils mobiles peuvent stocker des informations organisationnelles sensib
 
 - **Lorsqu’un appareil est effacé (réinitialisation ou suppression des données d’entreprise)**, l’appareil est supprimé de la liste des appareils gérés.
     
-- **Réinitialiser un appareil automatiquement**: vous pouvez configurer une stratégie de sécurité et de mobilité de base qui réinitialise automatiquement un appareil une fois que l’utilisateur n’a pas tenté d’entrer le mot de passe d’appareil un certain nombre de fois. Pour ce faire, suivez les étapes décrites dans [Create Device Security Policies in Basic Mobility and Security](create-device-security-policies-in-basic-mmobility-and-security.md).
+- **Réinitialiser un appareil automatiquement**: vous pouvez configurer une stratégie de sécurité et de mobilité de base qui réinitialise automatiquement un appareil une fois que l’utilisateur n’a pas tenté d’entrer le mot de passe d’appareil un certain nombre de fois. Pour ce faire, suivez les étapes décrites dans [Create Device Security Policies in Basic Mobility and Security](create-device-security-policies.md).
     
 - **Si vous souhaitez connaître l’expérience utilisateur lors de la** réinitialisation de son appareil, consultez  [la rubrique quel est l’impact sur les utilisateurs et les appareils ?](#whats-the-user-and-device-impact).   
 
@@ -91,4 +91,4 @@ La réinitialisation est envoyée immédiatement à l’appareil mobile et l’a
 
 ## <a name="related-topics"></a>Voir aussi
 
-[Configurer Mobility + Security](set-up-basic-mobility-and-security.md)
+[Configurer Mobility + Security](set-up.md)
