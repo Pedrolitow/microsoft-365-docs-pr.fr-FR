@@ -16,16 +16,16 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 41ead64a7a94dcd5afb22a311d7637326949fc7c
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 4dde82ef9deb4d515ea5223470f7c96c1fe28a26
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685653"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546352"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>Recommandations de stratégie pour la sécurisation des conversations, des groupes et des fichiers teams
 
-Cet article explique comment implémenter les stratégies d’identité et d’accès aux appareils recommandées pour protéger les conversations, les groupes et le contenu des équipes, tels que les fichiers et les calendriers. Ce guide s’appuie sur les [stratégies courantes d’identité et d’accès aux appareils](identity-access-policies.md), avec des informations supplémentaires spécifiques à Teams. Étant donné que teams s’intègre à nos autres produits, reportez-vous à la rubrique [stratégies recommandées pour sécuriser les sites et les fichiers SharePoint](sharepoint-file-access-policies.md) , ainsi que [les recommandations en matière de sécurisation](secure-email-recommended-policies.md)
+Cet article explique comment implémenter les stratégies d’identité et d’accès aux appareils recommandées pour protéger les conversations, les groupes et le contenu de Microsoft Teams, tels que les fichiers et les calendriers. Ce guide s’appuie sur les [stratégies courantes d’identité et d’accès aux appareils](identity-access-policies.md), avec des informations supplémentaires spécifiques à Teams. Étant donné que teams s’intègre à nos autres produits, reportez-vous à la rubrique [stratégies recommandées pour sécuriser les sites et les fichiers SharePoint](sharepoint-file-access-policies.md) , ainsi que [les recommandations en matière de sécurisation](secure-email-recommended-policies.md)
 
 Ces recommandations sont basées sur trois niveaux différents de sécurité et de protection pour les équipes qui peuvent être appliquées en fonction de la granularité de vos besoins : planification, sensible et hautement réglementé. Vous pouvez en savoir plus sur ces niveaux de sécurité et les stratégies recommandées référencées par ces recommandations dans les [configurations d’identité et d’accès aux appareils](microsoft-365-policies-configurations.md).
 
@@ -38,25 +38,27 @@ Vous n’avez pas besoin d’activer les services dépendants pour commencer à 
 - Groupes Microsoft 365
 - Sites d’équipe SharePoint
 - OneDrive Entreprise
-- Boîtes aux lettres
+- Les boîtes aux lettres Exchange
 - Diffuser des vidéos et des plans du planificateur (si ces services sont activés)
 
 ## <a name="updating-common-policies-to-include-teams"></a>Mise à jour de stratégies communes pour inclure teams
 
-Le diagramme suivant illustre l’ensemble des stratégies recommandées pour la protection de la conversation, des groupes et du contenu dans Teams. L’icône représentant un crayon indique quelles stratégies doivent être revisitées afin de s’assurer que les services teams et les services dépendants sont inclus dans l’affectation d’applications Cloud.
+Pour protéger la conversation, les groupes et le contenu dans Teams, le diagramme suivant illustre les stratégies à mettre à jour à partir des stratégies courantes d’identité et d’accès aux appareils. Pour chaque stratégie à mettre à jour, assurez-vous que les services teams et dépendants sont inclus dans l’affectation d’applications Cloud.
 
-![Diagramme illustrant l’utilisation de Microsoft teams sur différents appareils.](../media/identity-access-ruleset-teams.png)
+[![Résumé des mises à jour de stratégie pour protéger l’accès à teams et à ses services dépendants](../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png)
+
+[Afficher une version plus grande de cette image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png)
 
 Il s’agit des services dépendants à inclure dans l’affectation d’applications Cloud pour teams :
 
 - Microsoft Teams
-- Sharepoint Online et OneDrive Entreprise
+- SharePoint et OneDrive Entreprise
 - Exchange Online
-- Skype Entreprise Online
+- Skype Entreprise Online
 - Microsoft Stream (enregistrements de réunions)
 - Planificateur Microsoft (tâches du planificateur et données de plan)
 
-Ce tableau répertorie les stratégies qui doivent être revisitées, ainsi que les liens vers chaque stratégie dans les [stratégies d’accès aux identités et aux appareils communs](identity-access-policies.md), dont l’ensemble de règles est plus large pour toutes les applications Office.
+Ce tableau répertorie les stratégies qui doivent être revisitées, ainsi que les liens vers chaque stratégie dans les [stratégies d’identité et d’accès aux appareils communes](identity-access-policies.md), dont la stratégie plus large est définie pour toutes les applications Office.
 
 |Niveau de protection|Stratégies|Informations supplémentaires pour l’implémentation de teams|
 |:---------------|:-------|:----------------|
@@ -76,13 +78,13 @@ Ce tableau répertorie les stratégies qui doivent être revisitées, ainsi que 
 
 Pour référence, le diagramme suivant illustre la façon dont les équipes des services s’appuient sur. Pour plus d’informations et des illustrations supplémentaires, consultez [la rubrique Microsoft teams et les services de productivité associés dans microsoft 365 pour les architectes informatiques](../solutions/productivity-illustrations.md).
 
-![Diagramme montrant les dépendances de teams sur SharePoint Online, OneDrive entreprise et Exchange.](../media/identity-access-logical-architecture-teams.png)
+![Diagramme illustrant les dépendances de teams sur SharePoint, OneDrive entreprise et Exchange](../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)
 
 ## <a name="enabling-guest-and-external-access-for-teams"></a>Activation de l’accès invité et externe pour teams
 
 Dans Azure AD, les utilisateurs invités et les utilisateurs externes sont les mêmes. Le type d’utilisateur pour les deux est Guest. Les utilisateurs invités sont des utilisateurs B2B. Microsoft teams différencie les utilisateurs invités et les utilisateurs externes dans l’application. Bien qu’il soit important de comprendre comment chacune d’entre elles est traitée dans Teams, les deux types d’utilisateurs sont des utilisateurs B2B dans Azure AD et les stratégies recommandées pour les utilisateurs B2B s’appliquent aux deux. Pour les stratégies recommandées pour autoriser l’accès invité, consultez la rubrique [stratégies pour autoriser l’accès B2B et l’accès B2B externe](identity-access-policies-guest-access.md).
 
-### <a name="guest-access-in-teams"></a>Accès invité dans teams
+### <a name="guest-access-in-teams"></a>Accès invité dans Microsoft Teams
 
 En plus des stratégies pour les utilisateurs internes à votre entreprise ou organisation, les administrateurs peuvent autoriser l’accès invité à autoriser, de manière individuelle, les personnes externes à votre entreprise ou organisation à accéder aux ressources de teams et à interagir avec les utilisateurs internes pour des tâches telles que les conversations de groupe, les conversations et les réunions. Pour plus d’informations sur l’accès invité, consultez le lien suivant : [teams Guest Access](https://docs.microsoft.com/microsoftteams/guest-access)
 
@@ -120,6 +122,10 @@ Pour plus d’informations sur les stratégies d’autorisation des applications
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Découvrez comment activer l’accès conditionnel pour Exchange Online](secure-email-recommended-policies.md)
+![Étape 4 : stratégies pour les applications Cloud Microsoft 365](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 
+Configurez les stratégies d’accès conditionnel pour :
+
+- [Exchange Online](secure-email-recommended-policies.md)
+- [SharePoint](secure-email-recommended-policies.md)
 

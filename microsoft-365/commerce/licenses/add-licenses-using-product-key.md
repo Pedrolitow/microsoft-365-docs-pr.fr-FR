@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,19 +18,16 @@ ms.custom:
 - TopSMBIssues
 - AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
 ms.assetid: 4fb4bd7e-3920-4ce0-98fb-0c06e3fedf53
 ROBOTS: NOINDEX
-description: Découvrez comment ajouter des licences à votre abonnement.
-ms.openlocfilehash: 370ed833a1c7c5142c7725666885a945e1524b53
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Découvrez comment ajouter des licences ou étendre votre abonnement avec une clé de produit.
+ms.openlocfilehash: 583014c98207f98abc55248159aafd371c96b6c0
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44404009"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545783"
 ---
 # <a name="add-licenses-to-or-extend-a-subscription-paid-for-using-a-product-key"></a>Ajouter des licences ou prolonger un abonnement payé pour l’utilisation d’une clé de produit
 
@@ -44,17 +41,13 @@ Les licences prépayées vous sont émises sous la forme d’un code alphanumér
 ::: moniker range="o365-worldwide"
 
 1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
-
-2. Recherchez l’abonnement auquel vous souhaitez ajouter des licences. Dans la section **licences** , sélectionnez **ajouter d’autres licences**.
-
-3. Dans le **volet ajouter des licences supplémentaires**, sélectionnez **utiliser une clé de produit nouvelle et inutilisée**, puis sélectionnez **suivant**.
-
-4. Entrez la clé de produit, puis cliquez sur **suivant**.
-
+2. Sous l’onglet **produits** , sélectionnez l’abonnement auquel vous souhaitez ajouter des licences.
+3. Sur la page Détails de l’abonnement, dans la section **licences** , sélectionnez **ajouter d’autres licences**.
+4. Dans le **volet ajouter des licences supplémentaires**, sélectionnez **utiliser une clé de produit nouvelle et inutilisée**, puis sélectionnez **suivant**.
+5. Entrez la clé de produit, puis cliquez sur **suivant**.
     > [!NOTE]
     > Si vous avez plusieurs clés de produit, vous pouvez sélectionner **Ajouter une autre clé de produit** pour les entrer.
-  
-5. Vérifiez les détails de votre commande, puis sélectionnez **échanger**.
+6. Vérifiez les détails de votre commande, puis sélectionnez **échanger**.
 
 ::: moniker-end
 
@@ -101,17 +94,13 @@ Les licences prépayées vous sont émises sous la forme d’un code alphanumér
 ::: moniker range="o365-worldwide"
 
 1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
-
-2. Recherchez l’abonnement que vous souhaitez étendre. Dans la section **facturation** , sélectionnez **prolonger la date de fin**.
-
-3. Dans le volet **abonnement étendre** , sélectionnez **utiliser une clé de produit nouvelle et inutilisée**, puis sélectionnez **suivant**.
-
-4. Entrez la clé de produit, puis cliquez sur **suivant**.
-
+2. Sous l’onglet **produits** , sélectionnez l’abonnement que vous souhaitez étendre.
+3. Sur la page Détails de l’abonnement, dans la section **paramètres d’abonnement et de paiement** , sélectionnez **prolonger la date de fin**.
+4. Sur la page **renouveler ou ajouter des licences utilisateur** , sélectionnez **utiliser une clé de produit nouvelle et inutilisée**, puis sélectionnez **suivant**.
+5. Entrez la clé de produit, puis cliquez sur **suivant**.
     > [!NOTE]
     > Si vous avez plusieurs clés de produit, vous pouvez sélectionner **Ajouter une autre clé de produit** pour les entrer.
-  
-5. Vérifiez les détails de votre commande, puis sélectionnez **échanger**.
+6. Vérifiez les détails de votre commande, puis sélectionnez **échanger**.
 
 ::: moniker-end
 

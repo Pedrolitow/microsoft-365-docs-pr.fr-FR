@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 7c83d3f202851008e93c3f3e9d0c7bc89c49bf20
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: a1e85b2089663208e8b6004462211263a1b27242
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308366"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547793"
 ---
 # <a name="to-identity-and-beyond--one-architects-viewpoint"></a>Pour identifier et au-delà : point de vue d’un architecte
 
@@ -117,7 +117,7 @@ Nous avons mis en avant le rêve de l’authentification [unique](https://docs.m
 
 
 
-### <a name="authorization"></a>Autorisation
+### <a name="authorization"></a>Authorization
 
 Par [Wikipédia](https://en.wikipedia.org/wiki/Authorization), « pour autoriser » consiste à définir une stratégie d’accès. De nombreuses personnes l’considèrent comme la possibilité de définir des contrôles d’accès à un objet (fichier, service, etc.). Dans le monde actuel des menaces informatiques, ce concept évolue rapidement vers une stratégie dynamique pouvant réagir aux différents vecteurs de menace et ajuster rapidement les contrôles d’accès en réponse à ces besoins. Par exemple, si j’accède à mon compte bancaire à partir d’un emplacement inhabituel, j’obtiens des étapes de confirmation supplémentaires. Pour ce faire, nous devons prendre en considération non seulement la stratégie elle-même, mais aussi l’écosystème des méthodologies de détection de menace et de corrélation de signal.
 
@@ -272,7 +272,7 @@ Office 365 dispose d’un [Journal d’audit unifié](https://docs.microsoft.com
 
 Des exemples de journaux Microsoft 365 accessibles via d’autres API sont les suivants :
 - [Azure ad](https://docs.microsoft.com/azure/azure-monitor/platform/diagnostic-settings) (activités non liées à Office 365)
-- [Suivi des messages Exchange](https://docs.microsoft.com/powershell/module/exchange/get-messagetrace?view=exchange-ps)
+- [Suivi des messages Exchange](https://docs.microsoft.com/powershell/module/exchange/get-messagetrace)
 - Systèmes de menace/UEBA présentés ci-dessus (par exemple, Azure AD Identity Protection, Microsoft Cloud App Security, Microsoft Defender ATP, etc.)
 - [Protection des informations Microsoft](https://docs.microsoft.com/microsoft-365/compliance/data-classification-activity-explorer?view=o365-worldwide)
 - [Microsoft Defender - PACM](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/api-power-bi)

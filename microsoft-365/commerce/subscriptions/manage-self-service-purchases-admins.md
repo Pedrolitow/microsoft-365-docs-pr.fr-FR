@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Les administrateurs peuvent apprendre à gérer les achats en libre-service effectués par les utilisateurs au sein de leur organisation.
-ms.openlocfilehash: f10f525f8efc6bc63e2fa042c299a6d03c77d0cb
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: ca25bf0c3e3539196e81dcc289592028cc4dfa47
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47429997"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546673"
 ---
 # <a name="manage-self-service-purchases-admin"></a>Gérer les achats libre-service (administrateur)
 
@@ -38,13 +38,13 @@ Vous pouvez également contrôler si les utilisateurs de votre organisation peuv
 ## <a name="view-self-service-subscriptions"></a>Afficher les abonnements en libre-service
 
 1. Dans le centre d’administration, accédez à la page **facturation**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits</a> .
-2. En regard d' **affiner les résultats**, dans la liste déroulante **type de compte** , choisissez **self-service**.
+2. Sur l’onglet **produits** , sélectionnez l’icône de filtre, puis sélectionnez **self-service**.
 3. Pour afficher plus de détails sur un abonnement, choisissez-en un dans la liste.
 
 ## <a name="view-who-has-licenses-for-a-self-service-purchase-subscription"></a>Afficher les personnes ayant des licences pour un abonnement achat libre-service
 
 1. Dans le centre d’administration, accédez à **Billing**la  >  page<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">licences</a> de facturation.
-2. Choisissez l’icône de filtre, puis choisissez **self-service**.
+2. Sélectionnez l’icône de filtre, puis choisissez **self-service**.
 3. Sélectionnez un produit pour afficher les licences attribuées à des personnes.
     > [!NOTE]
     > S’il existe plusieurs achats pour un produit, ce produit n’est répertorié qu’une seule fois et la colonne **quantité disponible** indique le total de tous les abonnements achetés pour ce produit.
@@ -67,13 +67,12 @@ Pour plus d’informations, voir [use AllowSelfServicePurchase pour le module MS
 
 Vous pouvez attribuer des licences existantes ou acheter des abonnements supplémentaires via des accords existants pour les utilisateurs affectés à des achats en libre-service. Une fois que vous avez attribué ces licences achetées de manière centralisée, vous pouvez demander à ce que les acheteurs annulent leurs abonnements existants.
 
-1. Connectez-vous au <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration</a> à l’aide de votre administrateur général ou de votre compte d’administrateur de facturation.
-2. Accédez à la **Billing**  >  page<a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">services d’achat</a> de facturation.
-3. Recherchez et sélectionnez le produit que vous souhaitez acheter, puis choisissez **acheter**.
-4. Suivez les étapes restantes pour terminer votre achat.
-5. Suivez les étapes de la procédure [affichage des licences pour un abonnement acheté en libre-service](#view-who-has-licenses-for-a-self-service-purchase-subscription) pour exporter une liste d’utilisateurs à référencer à l’étape 6.
-6. Attribuez des licences à toutes les personnes disposant d’une licence dans l’autre abonnement. Pour connaître les étapes complètes, consultez la rubrique [attribuer des licences aux utilisateurs](../../admin/manage/assign-licenses-to-users.md).
-7. Contactez la personne qui a acheté l’abonnement d’achat en libre-service et demandez-lui de l’annuler.
+1. Dans le centre d’administration, accédez **Billing** à la \> page <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">services d’achat</a> de facturation.
+2. Recherchez et sélectionnez le produit que vous souhaitez acheter, puis choisissez **acheter**.
+3. Suivez les étapes restantes pour terminer votre achat.
+4. Suivez les étapes de la procédure [affichage des licences pour un abonnement acheté en libre-service](#view-who-has-licenses-for-a-self-service-purchase-subscription) pour exporter une liste d’utilisateurs à référencer à l’étape suivante.
+5. Attribuez des licences à toutes les personnes disposant d’une licence dans l’autre abonnement. Pour connaître les étapes complètes, consultez la rubrique [attribuer des licences aux utilisateurs](../../admin/manage/assign-licenses-to-users.md).
+6. Contactez la personne qui a acheté l’abonnement d’achat en libre-service et demandez-lui de l' [Annuler](manage-self-service-purchases-users.md#cancel-a-subscription).
 
 ## <a name="take-over-a-self-service-purchase-subscription"></a>Prendre le relais d’un abonnement achat libre-service
 

@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 description: En savoir plus sur l’application Microsoft Office pour iOS pour Office 365 géré par 21Vianet et sur la façon de la télécharger pour les clients en Chine.
 monikerRange: o365-21vianet
-ms.openlocfilehash: bd36684f7fa5365c3f680128cbbd0132c6a8876d
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: a29d645f5f3d5624159cfb0e8416e2223834f3f3
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399049"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545819"
 ---
 # <a name="office-app-for-ios-for-office-365-operated-by-21vianet"></a>Application Office pour iOS pour Office 365 géré par 21Vianet
 
@@ -36,7 +36,7 @@ Quelques fonctionnalités d’application Office pour iOS ne sont pas disponible
 - Image en texte et image en tableau 
 - Conversion de photos en documents Word à partir d’une lentille 
 - Action de transfert de fichiers 
-- Les notes restent locales et ne sont pas synchronisées avec le serveur
+- Les notes demeurent locales et ne sont pas synchronisées avec le serveur
 - Aperçu des liens dans Scan QR
 - Cartes de personnages Live dans la section moi
 - Classification, étiquetage et protection (CLP)

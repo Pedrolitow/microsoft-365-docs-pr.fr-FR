@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Découvrez comment déplacer un site SharePoint vers un emplacement géographique différent au sein de votre environnement multi-géo et communiquer les attentes des modifications à vos utilisateurs.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e96c422b1d2685c9fe3d4c8c45aa8437a6776621
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 819496b9f7612afa1db902e6fc5a0844e99d7a8e
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46689599"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545635"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>Déplacer un site SharePoint vers un autre emplacement géographique
 
@@ -36,13 +36,13 @@ Les types de sites pouvant être déplacés entre emplacements géographiques so
 Pour pouvoir déplacer un site, vous devez être un administrateur général ou un administrateur SharePoint.
 
 Lors du déplacement géographique de site SharePoint, il existe une fenêtre en lecture seule d’environ 4 à 6 heures, selon le contenu du site.
- 
+
 ## <a name="best-practices"></a>Meilleures pratiques
 
-- Essayez d’effectuer un déplacement de site SharePoint sur un site de test pour vous familiariser avec la procédure. 
-- Avant de planifier ou d’effectuer le déplacement, vérifiez si le site peut être déplacé. 
+- Essayez d’effectuer un déplacement de site SharePoint sur un site de test pour vous familiariser avec la procédure.
+- Avant de planifier ou d’effectuer le déplacement, vérifiez si le site peut être déplacé.
 - Autant que possible, planifiez les déplacements intersites en dehors des heures d’ouverture afin de réduire l’impact sur les utilisateurs.
-- Avant de déplacer des sites, communiquez avec les utilisateurs concernés. 
+- Avant de déplacer des sites, communiquez avec les utilisateurs concernés.
 
 ## <a name="communicating-to-your-users"></a>Communication avec vos utilisateurs
 
@@ -62,10 +62,11 @@ Vous pouvez planifier les déplacements de sites SharePoint (voir plus loin dans
 
 - Vous pouvez planifier jusqu’à 4 000 déplacements à la fois.
 - Lorsque les déplacements commencent, vous pouvez planifier plus d’informations, avec un maximum de 4 000 déplacements dans la file d’attente et à un moment donné.
- 
+
 Pour planifier un déplacement géographique de site SharePoint, lorsque vous commencez le déplacement, incluez parmi l’un des paramètres suivants :
+
 - `PreferredMoveBeginDate` – Le déplacement commencera probablement à l’heure indiquée.
-- `PreferredMoveEndDate` – Le déplacement devrait être terminé à l’heure indiquée. 
+- `PreferredMoveEndDate` – Le déplacement devrait être terminé à l’heure indiquée.
 
 L’heure doit être exprimée en Temps universel coordonné (UTC) pour les deux paramètres.
 
@@ -73,19 +74,22 @@ L’heure doit être exprimée en Temps universel coordonné (UTC) pour les deux
 
 Un déplacement géographique de site SharePoint nécessite que vous vous connectiez et opériez le déplacement de l’URL d’administration SharePoint vers l’emplacement géographique du site.
 
-Par exemple, si l’URL du site est https://contosohealthcare.sharepoint.com/sites/Turbines, connectez-vous à l’URL d’administration SharePoint https://contosohealthcare-admin.sharepoint.com:
+Par exemple, si l’URL du site est <https://contosohealthcare.sharepoint.com/sites/Turbines> , connectez-vous à l’URL d’administration de SharePoint à l’adresse <https://contosohealthcare-admin.sharepoint.com> suivante :
 
-`Connect-SPOService -url https://contosohealthcare-admin.sharepoint.com`
+```powershell
+Connect-SPOService -Url https://contosohealthcare-admin.sharepoint.com
+```
 
-![](../media/move-onedrive-between-geo-locations-image1.png)
- 
+![Fenêtre SharePoint Online Management Shell affichant la commande Connect-SPOService](../media/move-onedrive-between-geo-locations-image1.png)
+
 ### <a name="validating-the-environment"></a>Validation de l’environnement
 
 Avant de planifier le déplacement d’un site, nous vous recommandons de vérifier que celui-ci peut être déplacé.
 
 Il n’est pas possible de déplacer des sites avec :
--    Business Connectivity Services
--    InfoPath Forms 
+
+- Business Connectivity Services
+- InfoPath Forms
 - Modèles d’IRM (Gestion des Droits relatifs à l’Information) appliqués
 
 Pour vous assurer que tous les emplacements géographiques sont compatibles, exécutez la cmdlet `Get-SPOGeoMoveCrossCompatibilityStatus`. Cela a pour effet d’afficher les emplacements géographiques et d’indiquer si leur environnement est compatible avec l’emplacement géographique cible.
@@ -102,15 +106,17 @@ Cette cmdlet retourne *Success* si le site peut être déplacé, ou *Fail* en ca
 
 Par défaut, l’URL initiale du site est remplacée par l’URL de l’emplacement géographique cible. Par exemple :
 
-https://Contoso.sharepoint.com/sites/projectx devient https://ContosoEUR.sharepoint.com/sites/projectx
+<https://Contoso.sharepoint.com/sites/projectx> devient <https://ContosoEUR.sharepoint.com/sites/projectx>
 
 Quand un site est dépourvu d’association de groupe Microsoft 365, vous pouvez également le renommer à l’aide du paramètre `-DestinationUrl`. Par exemple :
 
-https://Contoso.sharepoint.com/sites/projectx devient https://ContosoEUR.sharepoint.com/sites/projecty
+<https://Contoso.sharepoint.com/sites/projectx> devient <https://ContosoEUR.sharepoint.com/sites/projecty>
 
 Pour commencer à déplacer le site, exécutez la cmdlet suivante :
 
-`Start-SPOSiteContentMove -SourceSiteUrl <siteURL> -DestinationDataLocation <DestinationDataLocation> -DestinationUrl <DestinationSiteURL>`
+```powershell
+Start-SPOSiteContentMove -SourceSiteUrl <siteURL> -DestinationDataLocation <DestinationDataLocation> -DestinationUrl <DestinationSiteURL>
+```
 
 ![Capture d’écran de la fenêtre de PowerShell affichant la cmdlet Start-SPOSiteContentMove](../media/multi-geo-sharepoint-site-move-powershell.png)
 
@@ -124,7 +130,8 @@ Pour définir l’emplacement par défaut des données pour un groupe Microsoft�
 Set-SPOUnifiedGroup -PreferredDataLocation <PDL> -GroupAlias <GroupAlias>
 Get-SPOUnifiedGroup -GroupAlias <GroupAlias>
 ```
-Une fois l’emplacement par défaut des données mis à jour, vous pouvez commencer à déplacer le site : 
+
+Une fois l’emplacement par défaut des données mis à jour, vous pouvez commencer à déplacer le site :
 
 ```PowerShell
 Start-SPOUnifiedGroupMove -GroupAlias <GroupAlias> -DestinationDataLocation <DestinationDataLocation>
@@ -139,19 +146,22 @@ Vous pouvez arrêter un déplacement géographique de site OneDrive, à la condi
 Vous pouvez déterminer l’état d’un déplacement de site hors de la zone géographique à laquelle vous êtes connecté à l’aide des cmdlets suivantes :
 
 - [Get-SPOSiteContentMoveState](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spositecontentmovestate) (sites non connectés à un groupe)
-- Get-SPOUnifiedGroupMoveState (sites connectés à un groupe)
+- [Get-SPOUnifiedGroupMoveState](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spounifiedgroupmovestate) (sites connectés à un groupe)
 
 Pour spécifier le site dont vous voulez voir l’état de déplacement, utilisez le paramètre `-SourceSiteUrl`.
 
 Les états de déplacement sont décrits dans le tableau suivant.
 
+****
+
 |Statut|Description|
-|:-----|:----------|
+|---|---|
 |Ready to Trigger|Le déplacement n’a pas commencé.|
 |Scheduled|Le déplacement est en file d’attente mais n’a pas encore commencé.|
 |InProgress (n/4)|Le déplacement est en cours dans l’un des états suivants : Validation (1/4), Sauvegarde (2/4), Restauration (3/4), Nettoyage (4/4).|
 |Opération réussie|Le déplacement a réussi.|
 |Échec|Le déplacement a échoué.|
+|
 
 Vous pouvez également appliquer l’option `-Verbose` pour voir des informations supplémentaires sur le déplacement.
 
@@ -215,4 +225,4 @@ Les applications PowerApps doivent être recréées dans l’emplacement cible.
 
 ### <a name="data-movement-between-geo-locations"></a>Déplacement de données entre emplacements géographiques
 
-SharePoint utilise Stockage Blob Azure pour son contenu, tandis que les métadonnées associés à des sites et à ses fichiers sont stockées dans SharePoint. Le déplacement du site de son emplacement géographique source vers son emplacement géographique cible implique également le déplacement de son Stockage Blob. Le déplacement du Stockage Blob prend environ 40 jours. 
+SharePoint utilise Stockage Blob Azure pour son contenu, tandis que les métadonnées associés à des sites et à ses fichiers sont stockées dans SharePoint. Le déplacement du site de son emplacement géographique source vers son emplacement géographique cible implique également le déplacement de son Stockage Blob. Le déplacement du Stockage Blob prend environ 40 jours.

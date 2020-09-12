@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
 description: Découvrez comment gérer les utilisateurs, les licences et les applications 365 Microsoft 365 avec PowerShell.
-ms.openlocfilehash: 0af4a47b713da1f0316ae4be91fb7c6472f0e625
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: ef6146744909755efb974ee57f34ae3b924a7f2c
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47429901"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547913"
 ---
 # <a name="manage-microsoft-365-with-powershell"></a>Gestion de Microsoft 365 à l’aide de PowerShell
 
@@ -47,7 +47,7 @@ Pour savoir comment utiliser PowerShell pour les utilisateurs et licences Micros
 
     Commencez ici si vous avez installé les modules Microsoft 365 et que vous souhaitez utiliser des commandes d’automatisation pour gérer SharePoint.
 
-- [**Exchange Online PowerShell**](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)
+- [**Exchange Online PowerShell**](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)
 
     Commencez par là si vous souhaitez utiliser les commandes d’automatisation pour gérer Exchange Online.
 
@@ -55,7 +55,7 @@ Pour savoir comment utiliser PowerShell pour les utilisateurs et licences Micros
 
     Commencez ici si vous avez installé les modules PowerShell 365 et que vous souhaitez migrer votre courrier électronique à partir de systèmes préexistants.
 
-- [**Centre de sécurité et de conformité**](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell)
+- [**Centre de sécurité et de conformité**](https://docs.microsoft.com/powershell/exchange/scc-powershell)
 
     Commencez par là si vous souhaitez utiliser des commandes d’automatisation pour gérer la sécurité & PowerShell du centre de conformité.
 

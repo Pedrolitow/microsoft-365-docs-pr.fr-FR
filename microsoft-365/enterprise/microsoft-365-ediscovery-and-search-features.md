@@ -16,14 +16,14 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Vue d’ensemble de la fonctionnalité de découverte électronique et d’autres fonctionnalités de recherche dans Microsoft 365 pour l’utilisation et la transparence des audits.
-ms.openlocfilehash: ea7b221ab8fe2ff41d089bb344d2dce58002d0f5
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: d18d3d4776c434788ee8fef7fb8be9edf339ff04
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47331858"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547769"
 ---
-# <a name="microsoft-365-ediscovery-and-search-features-overview"></a>Présentation des fonctionnalités de découverte électronique et de recherche de Microsoft 365 
+# <a name="microsoft-365-ediscovery-and-search-features-overview"></a>Présentation des fonctionnalités de découverte électronique et de recherche de Microsoft 365
 
 ## <a name="ediscovery"></a>eDiscovery
 
@@ -67,6 +67,6 @@ Pour obtenir la procédure détaillée pour la recherche des journaux d’audit 
 
 ## <a name="search-unified-audit-log"></a>Rechercher dans le journal d’audit unifié
 
-Utilisez la fonctionnalité de recherche du journal d’audit pour rechercher dans le journal d’audit unifié. Microsoft 365 offre également la possibilité d’effectuer des recherches dans ce journal à l’aide de PowerShell à distance. La [cmdlet Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/Search-UnifiedAuditLog?view=exchange-ps) dans Exchange Online PowerShell est utilisée pour effectuer des recherches dans le journal d’audit unifié des événements liés aux opérations de l’utilisateur à partir d’Exchange Online, SharePoint Online, OneDrive entreprise et Azure ad. 
+Utilisez la fonctionnalité de recherche du journal d’audit pour rechercher dans le journal d’audit unifié. Microsoft 365 offre également la possibilité d’effectuer des recherches dans ce journal à l’aide de PowerShell à distance. La [cmdlet Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) dans Exchange Online PowerShell est utilisée pour effectuer des recherches dans le journal d’audit unifié des événements liés aux opérations de l’utilisateur à partir d’Exchange Online, SharePoint Online, OneDrive entreprise et Azure ad.
 
 Vous pouvez rechercher tous les événements dans une plage de dates spécifique ou vous pouvez filtrer les résultats en fonction de critères spécifiques, tels qu’une action spécifique, l’utilisateur qui a effectué l’action ou l’objet cible. Les administrateurs peuvent utiliser jusqu’à trois sessions PowerShell Exchange Online simultanément pour fractionner les recherches de plage de dates volumineuses.

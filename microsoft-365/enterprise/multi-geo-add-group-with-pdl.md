@@ -13,12 +13,12 @@ ms.collection: Strat_SP_gtc
 localization_priority: Normal
 description: Découvrez comment créer un groupe Microsoft 365 avec un emplacement de données par défaut spécifié dans un environnement multi-géo.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0906d0b4881dd69bbf47cbb536c6c448a1a4f611
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 5af32827d11289f7a966311080d2c15197786799
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46689935"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547733"
 ---
 # <a name="create-a-microsoft-365-group-with-a-specific-pdl"></a>Créer un groupe Microsoft 365 avec un PDL spécifique
 
@@ -57,4 +57,4 @@ Notez que l’approvisionnement du site du groupe SharePoint est à la demande. 
 
 ## <a name="related-topics"></a>Voir aussi
 
-[Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)
+[Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)

@@ -20,23 +20,23 @@ search.appverid:
 - GEA150
 description: En savoir plus sur l’application Microsoft Office pour Android pour Office 365 géré par 21Vianet et sur la façon de la télécharger pour les clients en Chine.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 4ebb044835321a91109659ca9e58094345bc0d0c
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b2c35c2f9b4ea8e10ace3c9426aed7aadefe0b1d
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399061"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545795"
 ---
 # <a name="office-app-for-android-for-office-365-operated-by-21vianet"></a>Application Office pour Android pour Office 365 géré par 21Vianet
 
-L’application Microsoft Office pour Android combine les applications mobiles Word, Excel et PowerPoint dans une seule application disponible pour téléchargement pour les téléphones Android. Avec l’application Office pour Android, vous pouvez vous connecter à Office 365 exactement comme vous le feriez avec les applications mobiles Word, Excel et PowerPoint. L’application Office pour le téléchargement Android n’affecte pas les installations existantes de Word, Excel et PowerPoint.
+L’application Microsoft Office pour Android combine les applications mobiles Word, Excel et PowerPoint dans une seule application disponible pour téléchargement pour les téléphones Android. Avec l’application Office pour Android, vous pouvez vous connecter à Office 365 comme vous le feriez avec les applications mobiles Word, Excel et PowerPoint. L’application Office pour le téléchargement Android n’affecte pas les installations existantes de Word, Excel et PowerPoint.
 
 Quelques fonctionnalités d’application Office pour Android ne sont pas disponibles pour les clients Office 365 gérés par 21Vianet :
 
 - Image en texte et image en tableau 
 - Conversion de photos en documents Word à partir d’une lentille 
 - Action de transfert de fichiers 
-- Les notes restent locales et ne sont pas synchronisées avec le serveur
+- Les notes demeurent locales et ne sont pas synchronisées avec le serveur
 - Aperçu des liens dans Scan QR
 - Cartes de personnages Live dans la section moi
 - Classification, étiquetage et protection (CLP)

@@ -4,7 +4,7 @@ author: msfttracyp
 ms.author: tracyp
 manager: dansimp
 ms.topic: article
-ms.service: Microsoft Threat Protection
+ms.service: O365-seccomp
 audience: admin
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ search.appverid: MET150
 description: Correction des menaces
 appliesto:
 - Microsoft Threat Protection
-ms.openlocfilehash: 44f20b29dcc88b1d991f9e93929aacc0e8aece32
-ms.sourcegitcommit: c76c025fe75cd9c06eccbf9c7fc887b09da36659
+ms.openlocfilehash: 2542f7af8a34088a79aae8a14f7ccdb8ea8fd121
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46903882"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547239"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Correction des courriers électroniques malveillants remis dans Office 365
 
@@ -39,7 +39,6 @@ Pour effectuer des opérations comme afficher les en-têtes des messages ou tél
 |Utilisation de l’Explorateur de menaces (et des détections en temps réel) pour analyser les menaces |Administrateur général <br> Administrateur de sécurité <br> Lecteur de sécurité|Non|
 |Utiliser l’Explorateur de menaces (et la détection en temps réel) pour afficher des en-têtes de messages électroniques et pour afficher un aperçu et télécharger des messages électroniques mis en quarantaine|Administrateur général <br> Administrateur de sécurité <br>Lecteur de sécurité|Non|
 |Utiliser l’Explorateur de menaces pour afficher les en-têtes et télécharger les messages électroniques remis aux boîtes aux lettres|Administrateur général <br>Administrateur de sécurité <br> Lecteur de sécurité <br> Aperçu|Oui|
-
 
 > [!NOTE]
 > La préversion est un *rôle*et non un *groupe de rôles*. Le rôle aperçu doit être ajouté à un groupe de rôles existant pour Office 365. Le *rôle administrateur général* est affecté dans le [centre d’administration 365 de Microsoft](https://admin.microsoft.com). Les rôles Administrateur de sécurité et lecteur de sécurité sont affectés dans les [centres de sécurité et de conformité](https://protection.office.com). Pour en savoir plus sur les rôles et les autorisations, consultez [la rubrique autorisations dans les centres de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).

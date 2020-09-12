@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: La sécurité et la mobilité de base peuvent vous aider à sécuriser et gérer les appareils mobiles.
-ms.openlocfilehash: a88afd539209d20046a778f8c6d16cadd51b5a9a
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: aed4f4c2d252e487d24496ac00f3de24bc57ab55
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47430169"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545895"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>Fonctionnalités de la mobilité et de la sécurité de base
 
@@ -141,8 +141,8 @@ L’option suivante permet d’empêcher les utilisateurs d’accéder à leur m
 |Bloquer la sauvegarde sur le cloud |Oui|Non|Non|
 |Bloquer la synchronisation de documents |Oui|Non|Non|
 |Bloquer la synchronisation de photos  |Oui|Non|Non|
-|Autoriser la sauvegarde Google  |N/A|Non|Oui|
-|Autoriser la synchronisation automatique des comptes Google  |N/A|Non|Oui|
+|Autoriser la sauvegarde Google  |S/O|Non|Oui|
+|Autoriser la synchronisation automatique des comptes Google  |S/O|Non|Oui|
 
 ## <a name="system-settings"></a>Paramètres système 
 
@@ -166,9 +166,9 @@ L’option suivante permet d’empêcher les utilisateurs d’accéder à leur m
 |Bloquer la connexion au stockage amovible |Oui|Oui|Non|
 |Bloquer la connexion Bluetooth |Oui|Oui|Non|
 
-##  <a name="additional-settings"></a>Paramètres supplémentaires 
+## <a name="additional-settings"></a>Paramètres supplémentaires
 
-Vous pouvez définir les paramètres de stratégie supplémentaires suivants à l’aide des cmdlets PowerShell. Pour plus d’informations, consultez [la rubrique Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps).
+Vous pouvez définir les paramètres de stratégie supplémentaires suivants à l’aide des applets de commande PowerShell du centre de conformité et de & sécurité. Pour plus d’informations, consultez [la rubrique Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/scc-powershell).
 
 |**Nom du paramètre**|**iOS 7,1 et versions ultérieures**|**Android 5 et versions ultérieures**|
 |:-----|:-----|:-----|

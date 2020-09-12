@@ -13,12 +13,12 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: Découvrez comment configurer la recherche dans un environnement multi-géo. Seuls certains clients, tels que OneDrive entreprise, peuvent renvoyer des résultats dans un environnement multi-géo.
-ms.openlocfilehash: 22c71661e8f3b643a1fd7afa33b38584a1cd1be5
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: e213e93cfbc967a723b4d27f4b36a83fe6687da9
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695063"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547151"
 ---
 # <a name="configure-search-for-microsoft-365-multi-geo"></a>Configurer la recherche pour Microsoft 365 Multi-Geo
 
@@ -30,15 +30,11 @@ Par exemple, un utilisateur d’un emplacement géographique peut rechercher du 
 
 Ces clients peuvent renvoyer des résultats de tous les emplacements géographiques :
 
--   OneDrive Entreprise
-
--   Delve
-
--   Page d’accueil SharePoint
-
--   Centre de recherche
-
--   Applications de recherche personnalisée qui utilisent l’API de recherche SharePoint
+- OneDrive Entreprise
+- Delve
+- Page d’accueil SharePoint
+- Centre de recherche
+- Applications de recherche personnalisée qui utilisent l’API de recherche SharePoint
 
 ### <a name="onedrive-for-business"></a>OneDrive Entreprise
 
@@ -135,14 +131,12 @@ Certaines fonctionnalités de recherche auxquelles vous êtes habitué ne sont p
 
 Tous les clients de recherche utilisent les API REST de recherche SharePoint existantes pour interagir avec les index de recherche.
 
-<img src="../media/configure-search-for-multi-geo-image1-1.png" />
+![Diagramme illustrant la façon dont les API REST de recherche SharePoint interagissent avec les index de recherche](../media/configure-search-for-multi-geo-image1-1.png)
 
 1. Un client de recherche appelle le point de terminaison REST de recherche avec la propriété de requête EnableMultiGeoSearch= true.
 2. La requête est envoyée à tous les emplacements géographiques dans le client.
 3. Les résultats de recherche de chaque emplacement géographique sont fusionnés et classés.
 4. Le client obtient des résultats de recherche unifiés.
-
-
 
 <span id="_Set_up_a" class="anchor"><span id="_Ref501388384" class="anchor"></span></span>Notez que nous ne fusionnons pas les résultats de recherche avant d’avoir reçu les résultats de tous les emplacements géographiques. Cela signifie que les recherches géographiques multiples souffrent d’une latence supplémentaire par rapport aux recherches dans un environnement ne comportant qu’un seul emplacement géographique.
 
@@ -151,29 +145,32 @@ Tous les clients de recherche utilisent les API REST de recherche SharePoint exi
 
 Chaque centre de recherche possède plusieurs secteurs verticaux et vous devez configurer chaque secteur vertical individuellement.
 
-1.  Vérifiez que vous effectuez ces étapes avec un compte doté d’autorisations pour modifier la page des résultats de la recherche et le composant WebPart Search Result.
+1. Vérifiez que vous effectuez ces étapes avec un compte doté d’autorisations pour modifier la page des résultats de la recherche et le composant WebPart Search Result.
 
-2.  Accédez à la page des résultats de la recherche (reportez-vous à la [liste](https://support.office.com/article/174d36e0-2f85-461a-ad9a-8b3f434a4213) des pages des résultats de la recherche)
+2. Accédez à la page des résultats de la recherche (reportez-vous à la [liste](https://support.office.com/article/174d36e0-2f85-461a-ad9a-8b3f434a4213) des pages des résultats de la recherche)
 
-3.  Sélectionnez le secteur vertical à configurer, cliquez sur l’icône d’engrenage **Paramètres** située en haut à droite, puis cliquez sur **Modifier la page**. La page des résultats de la recherche s’ouvre en mode Édition.
+3. Sélectionnez le secteur vertical à configurer, cliquez sur l’icône d’engrenage **Paramètres** située en haut à droite, puis cliquez sur **Modifier la page**. La page des résultats de la recherche s’ouvre en mode Édition.
 
-     ![](../media/configure-search-for-multi-geo-image2.png)
-1.  Dans le composant WebPart de résultats de recherche, déplacez le pointeur vers le coin supérieur droit et cliquez sur la flèche, puis sur **Modifier le composant WebPart** dans le menu. Le volet des outils du composant WebPart des résultats de recherche s’ouvre sous le ruban en haut à droite de la page. ![](../media/configure-search-for-multi-geo-image3.png)
+   ![Modifier la sélection de la page dans les paramètres](../media/configure-search-for-multi-geo-image2.png)
 
-1.  Dans le volet des outils du composant WebPart, dans la section **Paramètres**, sous **Paramètres de contrôle des résultats**, sélectionnez **Afficher les résultats multigéographiques** pour que le composant WebPart Résultats de la recherche affiche les résultats de tous les emplacements géographiques.
+4. Dans le composant WebPart de résultats de recherche, déplacez le pointeur vers le coin supérieur droit et cliquez sur la flèche, puis sur **Modifier le composant WebPart** dans le menu. Le volet des outils du composant WebPart des résultats de recherche s’ouvre sous le ruban en haut à droite de la page.
 
-2.  Cliquez sur **OK** pour enregistrer vos changements et fermer le volet des outils du composant WebPart.
+   ![Modifier la sélection de composant WebPart](../media/configure-search-for-multi-geo-image3.png)
 
-3.  Vérifiez les changements que vous avez apportés au composant WebPart Résultats de la recherche en cliquant sur **Archiver** sur l’onglet Page du menu principal.
+5. Dans le volet des outils du composant WebPart, dans la section **Paramètres**, sous **Paramètres de contrôle des résultats**, sélectionnez **Afficher les résultats multigéographiques** pour que le composant WebPart Résultats de la recherche affiche les résultats de tous les emplacements géographiques.
 
-4.  Publiez les changements en utilisant le lien fourni dans la note en haut de la page.
+6. Cliquez sur **OK** pour enregistrer vos changements et fermer le volet des outils du composant WebPart.
+
+7. Vérifiez les changements que vous avez apportés au composant WebPart Résultats de la recherche en cliquant sur **Archiver** sur l’onglet Page du menu principal.
+
+8. Publiez les changements en utilisant le lien fourni dans la note en haut de la page.
 
 <span id="_Get_custom_search" class="anchor"><span id="_Ref501388387" class="anchor"></span></span>
 ## <a name="get-custom-search-applications-to-show-results-from-all-or-some-geo-locations"></a>Configurer des applications de recherche personnalisée pour qu’elles affichent les résultats de l’ensemble ou d’une partie des emplacements géographiques
 
 Les applications de recherche personnalisée obtiennent les résultats de l’ensemble (ou d’une partie) des emplacements géographiques en spécifiant des paramètres de requête avec la demande à l’API REST de recherche SharePoint. Selon les paramètres, la requête est distribuée à tous les emplacements géographiques ou à certains emplacements géographiques. Par exemple, si vous devez seulement interroger un sous-ensemble des emplacements géographiques pour rechercher des informations pertinentes, vous pouvez contrôler la distribution ramifiée à ces derniers uniquement. Si la demande fonctionne, l’API REST de recherche SharePoint renvoie des données de réponse.
 
-**Configuration requise**
+### <a name="requirement"></a>Conditions requises
 
 Pour chaque emplacement géographique, vous devez vous assurer que tous les utilisateurs de l’organisation ont reçu l’autorisation de **lecture** du site web racine (par exemple contoso**APAC**.sharepoint.com/ et contoso**EU**.sharepoint.com/). [En savoir plus sur les autorisations](https://support.office.com/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848).
 
@@ -230,14 +227,12 @@ MultiGeoSearchStatus : il s’agit d’une propriété renvoyée par l’API de
 <td align="left">Partielle</td>
 <td align="left">Résultats partiels d’un ou plusieurs emplacements géographiques. Les résultats sont incomplets en raison d’une erreur temporaire.</td>
 </tr>
-
 </tbody>
 </table>
 
 ### <a name="query-using-the-rest-service"></a>Requête à l’aide du service REST
 
 Avec une demande GET, spécifiez les paramètres de la requête dans l’URL. Avec une demande POST, vous transmettez les paramètres de la requête dans le corps au format JSON (JavaScript Object Notation).
-
 
 #### <a name="request-headers"></a>En-têtes de demande
 
@@ -269,8 +264,9 @@ Avec une demande GET, spécifiez les paramètres de la requête dans l’URL. Av
 
 #### <a name="sample-post-request-thats-fanned-out-to-all-geo-locations"></a>Exemple de demande POST étendue à **tous** les emplacements géographiques
 
+```text
     {
-        "request": {
+    "request": {
             "__metadata": {
             "type": "Microsoft.Office.Server.Search.REST.SearchRequest"
         },
@@ -289,11 +285,11 @@ Avec une demande GET, spécifiez les paramètres de la requête dans l’URL. Av
         "ClientType": "my_client_id"
         }
     }
-
+```
 
 #### <a name="sample-post-request-thats-fanned-out-to-some-geo-locations"></a>Exemple de demande POST étendue à **certains** emplacements géographiques
 
-
+```text
     {
         "request": {
             "Querytext": "SharePoint",
@@ -318,13 +314,15 @@ Avec une demande GET, spécifiez les paramètres de la requête dans l’URL. Av
             }
         }
     }
+```
 
 ### <a name="query-using-csom"></a>Requête utilisant CSOM
 
 Voici un exemple de requête CSOM étendue à **tous** les emplacements géographiques :
 
-    var keywordQuery = new KeywordQuery(ctx);
-    keywordQuery.QueryText = query.SearchQueryText;
-    keywordQuery.ClientType = <enter a string here>;
-    keywordQuery["EnableMultiGeoSearch"] = true;
-
+```text
+var keywordQuery = new KeywordQuery(ctx);
+keywordQuery.QueryText = query.SearchQueryText;
+keywordQuery.ClientType = <enter a string here>;
+keywordQuery["EnableMultiGeoSearch"] = true;
+```

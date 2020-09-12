@@ -13,12 +13,12 @@ ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 ms.collection: Strat_SP_gtc
 description: Découvrez comment utiliser le paramètre region pour configurer la fonctionnalité eDiscovery à des fins d’utilisation dans des emplacements satellites dans Microsoft 365 multi-géo.
-ms.openlocfilehash: 83141f824c76ca5531e1b390b91adcdb4f3874de
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 216012791473776395d27821293e8fc565568c2c
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46689783"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547949"
 ---
 # <a name="microsoft-365-multi-geo-ediscovery-configuration"></a>Configuration eDiscovery dans Microsoft 365 Multi-Geo
 
@@ -35,7 +35,7 @@ Quand un gestionnaire ou un administrateur eDiscovery est défini pour un emplac
 
 Pour définir le filtre de sécurité de conformité pour une région :
 
-1. [Connectez-vous au centre de conformité Microsoft 365 Security & PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)
+1. [Connectez-vous au centre de conformité Microsoft 365 Security & PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
 
 2. Utilisez la syntaxe suivante :
 
@@ -49,4 +49,4 @@ Pour définir le filtre de sécurité de conformité pour une région :
    New-ComplianceSecurityFilter -Action All -FilterName "NAM eDiscovery Managers" -Region NAM -Users adwood@contoso.onmicrosoft.com
    ```
 
-Consultez l’article [New-ComplianceSecurityFilter](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesecurityfilter) pour en savoir plus sur la syntaxe et les paramètres supplémentaires.
+Consultez l’article [New-ComplianceSecurityFilter](https://docs.microsoft.com/powershell/module/exchange/new-compliancesecurityfilter) pour en savoir plus sur la syntaxe et les paramètres supplémentaires.

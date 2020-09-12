@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: Cet article contient un bref résumé des migrations de boîtes aux lettres Microsoft 365 et une liste des applets de commande utilisées pour les migrations.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 86681cbca6f0899268ce11e233e8781619cb18e3
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: 63080643e4994d6b16e77298907725a827997cef
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332315"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546797"
 ---
 # <a name="microsoft-365-mailbox-migrations"></a>Migrations de boîtes aux lettres Microsoft 365
 
@@ -29,14 +29,14 @@ Avec un déploiement hybride basé sur Exchange, les clients peuvent choisir de 
 
 Les clients peuvent consulter les statistiques et d’autres informations sur les migrations de boîtes aux lettres avec les cmdlets suivantes :
 
-- [Get-MoveRequestStatistics](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/Get-MoveRequestStatistics?view=exchange-ps): fournit des statistiques par défaut pour une boîte aux lettres d’utilisateur, qui inclut l’État, la taille de boîte aux lettres, la taille de boîte aux lettres d’archivage et le pourcentage d’achèvement.
-- [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Get-Mailbox?view=exchange-ps
+- [Get-MoveRequestStatistics](https://docs.microsoft.com/powershell/module/exchange/get-moverequeststatistics): fournit des statistiques par défaut pour une boîte aux lettres d’utilisateur, qui inclut l’État, la taille de boîte aux lettres, la taille de boîte aux lettres d’archivage et le pourcentage d’achèvement.
+- [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Get-Mailbox
 ): fournit une liste récapitulative des objets et des attributs de boîte aux lettres dans l’organisation.
-- [Get-Recipient](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/Get-Recipient?view=exchange-ps): fournit une liste des objets à extension messagerie existants, tels que les boîtes aux lettres, les utilisateurs de messagerie, les contacts et les groupes de distribution.
-- [Get-MoveRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/Get-MoveRequest?view=exchange-ps): fournit un état détaillé de la migration de boîte aux lettres en cours.
-- [Get-MigrationUser](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/Get-MigrationUser?view=exchange-ps): fournit des informations sur les utilisateurs de migration et de déplacement de boîtes aux lettres.
-- [Get-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/Get-MigrationBatch?view=exchange-ps): fournit des informations sur l’état du lot de migration actuel.
-- [Get-MigrationUserStatistics](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/Get-MigrationUserStatistics?view=exchange-ps): fournit des informations détaillées sur l’état de la migration pour un utilisateur spécifique.
-- [Get-MailboxStatistics](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Get-MailboxStatistics?view=exchange-ps): fournit des informations sur les boîtes aux lettres, telles que la taille, le nombre de messages et l’heure du dernier accès.
+- [Get-Recipient](https://docs.microsoft.com/powershell/module/exchange/get-recipient): fournit une liste des objets à extension messagerie existants, tels que les boîtes aux lettres, les utilisateurs de messagerie, les contacts et les groupes de distribution.
+- [Get-MoveRequest](https://docs.microsoft.com/powershell/module/exchange/get-moverequest): fournit un état détaillé de la migration de boîte aux lettres en cours.
+- [Get-MigrationUser](https://docs.microsoft.com/powershell/module/exchange/get-migrationuser): fournit des informations sur les utilisateurs de migration et de déplacement de boîtes aux lettres.
+- [Get-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/get-migrationbatch): fournit des informations sur l’état du lot de migration actuel.
+- [Get-MigrationUserStatistics](https://docs.microsoft.com/powershell/module/exchange/get-migrationuserstatistics): fournit des informations détaillées sur l’état de la migration pour un utilisateur spécifique.
+- [Get-MailboxStatistics](https://docs.microsoft.com/powershell/module/exchange/get-mailboxstatistics): fournit des informations sur les boîtes aux lettres, telles que la taille, le nombre de messages et l’heure du dernier accès.
 
-Pour plus d’informations sur les applets de commande, voir [Move and migration cmdlets in Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps).
+Pour plus d’informations sur les applets de commande, voir [Move and migration cmdlets in Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell).

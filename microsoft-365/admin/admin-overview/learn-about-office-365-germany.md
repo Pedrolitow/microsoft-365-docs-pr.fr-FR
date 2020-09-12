@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: 8a5a4bbc-667a-4cac-8769-d8ac9015db4c
 description: Découvrez Office 365 Germany.
-ms.openlocfilehash: 694f1a2ebbe3740c09cb306a26729b6482497d0b
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: a9ad8f88f48315c77d17ca51855d75d1c443f6f2
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307276"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545917"
 ---
 # <a name="learn-about-office-365-germany"></a>En savoir plus sur Office 365 Germany
 
@@ -35,11 +35,11 @@ ms.locfileid: "47307276"
 
 Office 365 Germany était une option différenciée des services Office 365 disponibles dans l’Europe. Elle a permis de répondre aux besoins des clients les plus réglementés en Allemagne, l’Union européenne (UE) et l’Association de libre-échange européenne (AELE) en fournissant nos services de productivité de pointe pour le travail numérique, les centres de données allemands, la résidence des données en Allemagne, ainsi que les mesures d’accès aux données et de contrôle strictes via un modèle de tiers de confiance de
   
-Le client de données approuvé, T-Systems International, une société allemande indépendante et filiale de Deutsche Telekom, contrôle l'accès logique et physique aux données client. Il est impossible d'accéder aux données client sans approbation ou supervision du client de données approuvé, qui est régi par la législation allemande.
+Le client de données approuvé, T-Systems International, une société allemande indépendante et filiale de Deutsche Telekom, contrôle l'accès logique et physique aux données client. Les données client ne sont pas accessibles sans approbation ou supervision par le tiers de confiance des données, qui est régi par la loi allemande.
   
-Les besoins des clients ont été déplacés, et l’isolation d’Office 365 Germany a imposé des limites sur sa capacité à répondre à la flexibilité et à la cohérence que les clients souhaitent. Depuis le 2018 août, nous n’acceptons plus de nouveaux clients ni ne déployons de nouveaux services à partir de la Microsoft Cloud Germany actuellement disponible. Pour plus d’informations, reportez-vous au billet de blog suivant : [Microsoft pour fournir des services Cloud à partir de nouveaux datacentres en Allemagne dans 2019 afin de répondre aux besoins évolutifs des clients](https://go.microsoft.com/fwlink/p/?linkid=839016).
+Les besoins des clients ont été déplacés, et l’isolation d’Office 365 Germany a imposé des limites sur sa capacité à répondre à la flexibilité et à la cohérence que les clients souhaitent. Depuis le 2018 août, nous n’acceptons plus de nouveaux clients ni ne déployons de nouveaux services à partir de la Microsoft Cloud Germany actuellement disponible. Pour plus d’informations, consultez ce billet de blog : [Microsoft pour fournir des services Cloud de nouvelle datacentres en Allemagne dans 2019 afin de répondre aux besoins évolutifs des clients](https://go.microsoft.com/fwlink/p/?linkid=839016).
   
-## <a name="what-microsoft-online-services-are-available-in-office-365-germany"></a>Quels services en ligne Microsoft sont disponibles dans Office 365 Germany ?
+## <a name="which-microsoft-online-services-are-available-in-office-365-germany"></a>Quels sont les services Microsoft Online disponibles dans Office 365 Germany ?
 
 Les offres de plan Office 365 Germany sont alignées sur des offres globales autant que possible dans cet environnement isolé. Cela ne s'applique pas aux offres liées à Yammer, aux offres qui approchent de leur fin de vie et aux offres disponibles via les programmes destinés aux associations. Office 365 E5, SPE et d’autres services seront disponibles après la disponibilité générale d’Office 365 Germany. 
   
@@ -89,7 +89,7 @@ Les fonctionnalités et services suivants sont disponibles dans certaines [offre
   
 ## <a name="general-information"></a>Informations générales
 
-|||
+|Item|Informations|
 |-----|-----|
 |Portail de connexion  <br/> |[https://portal.office.de](https://portal.office.de)  <br/> |
 |Support technique, sur les abonnements et la facturation  <br/> |Prise en charge en Allemagne disponible en allemand et en anglais pour plus d’informations, consultez la rubrique [contacter le support pour les entreprises-aide de l’administrateur](../contact-support-for-business-products.md).  <br/> |

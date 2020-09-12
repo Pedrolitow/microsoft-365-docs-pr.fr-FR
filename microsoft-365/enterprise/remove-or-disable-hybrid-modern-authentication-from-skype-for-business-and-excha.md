@@ -18,16 +18,16 @@ f1.keywords:
 ms.custom:
 - seo-marvel-apr2020
 description: Cet article explique comment supprimer ou désactiver l’authentification moderne hybride de Skype entreprise et d’Exchange.
-ms.openlocfilehash: da0887936f5def69ad80c8f04381bcb3a85c2349
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 70f62b9b2165464837aa1dea0e12854df116efe0
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46689688"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547095"
 ---
 # <a name="removing-or-disabling-hybrid-modern-authentication-from-skype-for-business-and-exchange"></a>Suppression ou désactivation de l’authentification moderne hybride à partir de Skype Entreprise et Exchange
 
-*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
 Si vous avez activé uniquement l’authentification moderne hybride (HMA) pour qu’elle ne soit pas appropriée pour votre environnement actuel, vous pouvez désactiver la HMA. Cet article explique comment procéder.
   
@@ -47,7 +47,7 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled $false
 Set-AuthServer -Identity evoSTS -IsDefaultAuthorizationEndpoint $false
 ```
 
-2. **Exchange Online**: [Connectez-vous à Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) à l’aide de PowerShell à distance. Exécutez la commande suivante pour transformer votre indicateur  *OAuth2ClientProfileEnabled*  en « false » :
+2. **Exchange Online**: [Connectez-vous à Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) à l’aide de PowerShell à distance. Exécutez la commande suivante pour transformer votre indicateur  *OAuth2ClientProfileEnabled*  en « false » :
 
 ```powershell    
 Set-OrganizationConfig -OAuth2ClientProfileEnabled:$false

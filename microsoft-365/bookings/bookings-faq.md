@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: Questions fréquemment posées sur Microsoft bookings.
-ms.openlocfilehash: db04c2759187f66503bcc28660b5177f636eaa6c
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: ee0de2d1412aa5ec38759a3a2512de05b9e02621
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419630"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545715"
 ---
 # <a name="microsoft-bookings-frequently-asked-questions"></a>Questions fréquemment posées sur Microsoft bookings
 
@@ -180,7 +180,7 @@ Il n’existe aucune provision pour définir le fuseau horaire du personnel dans
 
 ### <a name="can-email-notifications-be-sent-as-the-tenant-domain-name"></a>Les notifications par courrier électronique peuvent-elles être envoyées en tant que nom de domaine client ?
 
-Les adresses de messagerie sont contrôlées et gérées au niveau des paramètres de Microsoft 365 et dépendent des paramètres de configuration de domaine. Vous trouverez plus d’informations [ici](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-accepteddomain?view=exchange-ps).
+Les adresses de messagerie sont contrôlées et gérées au niveau des paramètres de Microsoft 365 et dépendent des paramètres de configuration de domaine. Vous trouverez plus d’informations [ici](https://docs.microsoft.com/powershell/module/exchange/get-accepteddomain).
 
 ### <a name="is-the-ability-to-send-sms-messages-dependent-on-a-different-service-or-specific-configuration"></a>Est-il possible d’envoyer des messages SMS en fonction d’un autre service ou d’une configuration spécifique ?
 
@@ -366,7 +366,7 @@ Si cette erreur se produit toujours après une période prolongée ou si vous la
 
   - [Personnaliser et publier votre page de réservation](customize-booking-page.md)
 
-  - [Configuration de la boîte aux lettres client](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-accepteddomain?view=exchange-ps)
+  - [Configuration de la boîte aux lettres client](https://docs.microsoft.com/powershell/module/exchange/get-accepteddomain)
 
   - [Réservations de groupe](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-now-supports-online-meetings-and-group/ba-p/1214120)
 
