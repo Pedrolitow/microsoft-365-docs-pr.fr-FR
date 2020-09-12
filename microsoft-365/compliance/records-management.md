@@ -1,5 +1,5 @@
 ---
-title: Gestion des enregistrements
+title: Gestion des Enregistrements dans Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -18,14 +18,14 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: La gestion des enregistrements dans Microsoft 365 vous permet d’appliquer des planifications de rétention dans un plan de gestion de fichiers afin de gérer la rétention, la déclaration d’enregistrements et la destruction de ceux-ci.
-ms.openlocfilehash: c2ff344d22286fcd865aa08344389dad6334d48d
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: d8ea68d8fbbf67928bae4f6d09712658f364e3ef
+ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778322"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46868909"
 ---
-# <a name="learn-about-records-management"></a>En savoir plus sur la gestion des documents
+# <a name="learn-about-records-management-in-microsoft-365"></a>Découvrez la gestion des enregistrements dans Microsoft 365
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](https://aka.ms/ComplianceSD).*
 
