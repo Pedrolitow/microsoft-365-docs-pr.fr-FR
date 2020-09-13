@@ -17,12 +17,12 @@ ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment identifier les différents types de conservation pouvant être placés sur une boîte aux lettres Exchange Online dans Microsoft 365.
-ms.openlocfilehash: ea7beb34107fb5eaf61c56ece7bde8070e6467a6
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 1cd947f70c57d453b038ac419abccde006f393ae
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126805"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547452"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Comment identifier le type de conservation placé sur une boîte aux lettres Exchange Online
 
@@ -58,7 +58,7 @@ Vous pouvez exécuter les deux cmdlets suivantes dans Exchange Online PowerShell
 
 - **Get-OrganizationConfig :** Utilisez cette applet de commande pour obtenir les GUID pour les stratégies de rétention à l’échelle de l’organisation.
 
-Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
+Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 ### <a name="get-mailbox"></a>Get-Mailbox
 
@@ -116,8 +116,8 @@ Le tableau suivant définit les trois actions de rétention possibles :
 
 |Valeur  |Description  |
 |---------|---------|
-|**0,1**     | Indique que la stratégie de rétention est configurée pour supprimer des éléments. La stratégie ne conserve pas d’éléments.        |
-|**n°2**    |    Indique que la stratégie de rétention est configurée pour conserver les éléments. La stratégie ne supprime pas les éléments après l’expiration de la période de rétention.     |
+|**1**     | Indique que la stratégie de rétention est configurée pour supprimer des éléments. La stratégie ne conserve pas d’éléments.        |
+|**2**    |    Indique que la stratégie de rétention est configurée pour conserver les éléments. La stratégie ne supprime pas les éléments après l’expiration de la période de rétention.     |
 |**3**     |   Indique que la stratégie de rétention est configurée pour conserver les éléments, puis les supprimer une fois la période de rétention expirée.      |
 
 Pour plus d’informations sur les actions de rétention, consultez la section [conservation du contenu pendant une période de temps spécifique](create-retention-policies.md#retaining-content-for-a-specific-period-of-time) .
@@ -142,7 +142,7 @@ Get-ComplianceCase $CaseHold.CaseId | FL Name
 $CaseHold | FL Name,ExchangeLocation
 ```
 
-Pour vous connecter au centre de sécurité & de conformité PowerShell, consultez la rubrique [Connect to security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+Pour vous connecter au centre de sécurité & de conformité PowerShell, consultez la rubrique  [Connect to security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
 ### <a name="in-place-holds"></a>Archives permanentes
 
@@ -238,9 +238,9 @@ Gardez les points suivants à l’esprit lors de la gestion d’une boîte aux l
 
 Une fois que vous avez identifié les conservations appliquées à une boîte aux lettres, vous pouvez effectuer des tâches telles que modifier la durée de la suspension, supprimer temporairement ou définitivement la conservation ou exclure une boîte aux lettres inactive d’une stratégie de rétention Microsoft 365. Pour plus d’informations sur l’exécution de tâches relatives aux suspensions, consultez l’une des rubriques suivantes :
 
-- Exécutez la commande [Set-retentioncompliancepolicy permet- \<user mailbox> AddExchangeLocationException](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy?view=exchange-ps) dans Security & Compliance Center PowerShell pour exclure une boîte aux lettres d’une stratégie de rétention Microsoft 365 à l’échelle de l’organisation. Cette commande ne peut être utilisée que pour les stratégies de rétention pour lesquelles la valeur de la propriété *exchangelocation permet* est égale à `All` .
+- Exécutez la commande [Set-retentioncompliancepolicy permet- \<user mailbox> AddExchangeLocationException](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) dans Security & Compliance Center PowerShell pour exclure une boîte aux lettres d’une stratégie de rétention Microsoft 365 à l’échelle de l’organisation. Cette commande ne peut être utilisée que pour les stratégies de rétention pour lesquelles la valeur de la propriété *exchangelocation permet* est égale à `All` .
 
-- Exécutez la commande [Set-Mailbox- \<hold GUID without prefix or suffix> ExcludeFromOrgHolds](https://docs.microsoft.com/powershell/module/exchange/set-mailbox?view=exchange-ps) dans Exchange Online PowerShell pour exclure une boîte aux lettres inactive d’une stratégie de rétention Microsoft 365 à l’échelle de l’organisation.
+- Exécutez la commande [Set-Mailbox- \<hold GUID without prefix or suffix> ExcludeFromOrgHolds](https://docs.microsoft.com/powershell/module/exchange/set-mailbox) dans Exchange Online PowerShell pour exclure une boîte aux lettres inactive d’une stratégie de rétention Microsoft 365 à l’échelle de l’organisation.
 
 - [Modifier la durée de conservation pour une boîte aux lettres inactive](change-the-hold-duration-for-an-inactive-mailbox.md)
 

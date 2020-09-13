@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: Dans cet article, vous apprendrez à créer, tester et régler une stratégie DLP en fonction des besoins de votre organisation.
-ms.openlocfilehash: b8e82e1304cb411a1e73e6f7bdc02fecdda9784f
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: ef88da90d8e009d3ea634c9142d7d917fbfd288a
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46648781"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546934"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Création, test et réglage d’une stratégie DLP
 
@@ -218,7 +218,7 @@ Lorsque vous êtes satisfait que votre stratégie DLP détecte des types d’inf
 
 ![Option d’activation de la stratégie](../media/DLP-create-test-tune-turn-on-policy.png)
  
-Si vous attendez que la stratégie prenne effet, [Connectez-vous à la sécurité & Centre de conformité PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) et exécutez la [cmdlet Get-dlpcompliancepolicy permet](https://docs.microsoft.com/powershell/module/exchange/get-dlpcompliancepolicy?view=exchange-ps) pour afficher le DistributionStatus.
+Si vous attendez que la stratégie prenne effet, [Connectez-vous à la sécurité & Centre de conformité PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) et exécutez la [cmdlet Get-dlpcompliancepolicy permet](https://docs.microsoft.com/powershell/module/exchange/get-dlpcompliancepolicy) pour afficher le DistributionStatus.
 
 ![Exécution d’une cmdlet dans PowerShell](../media/DLP-create-test-tune-PowerShell.png)
 

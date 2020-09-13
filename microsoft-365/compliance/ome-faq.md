@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Vous avez une question sur la façon dont les nouvelles fonctionnalités de protection des messages fonctionnent ? Recherchez une réponse ici.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 927b81c3a1ce049f1a2427bbbf1d306608be35cb
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: efccbdf2be33fb771e7e68ba5a0b3dafa82d9ce8
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46798186"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546058"
 ---
 # <a name="message-encryption-faq"></a>FAQ sur le chiffrement de messages
 
@@ -120,7 +120,7 @@ Pour Outlook sur le Web, Outlook pour iOS et Outlook pour Android, vous pouvez c
 
 Outlook Desktop ne prend pas en charge le chiffrement des pièces jointes des fichiers PDF en mode natif. Au lieu de cela, vous devez configurer des règles de flux de messagerie Exchange ou DLP pour appliquer d’abord le chiffrement aux pièces jointes PDF. Lorsque vous envoyez des messages à partir d’un bureau Outlook avec une pièce jointe au format PDF, le client envoie d’abord le message avec la pièce jointe au service. Lorsque le service reçoit le fichier, le service applique la protection OME de la stratégie de protection contre la perte de données (DLP) ou de la règle de flux de messagerie dans Exchange Online. Ensuite, Exchange Online envoie le message avec la pièce jointe au fichier PDF protégé.
 
-Pour activer le chiffrement des pièces jointes au format PDF, exécutez la commande suivante dans [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell):
+Pour activer le chiffrement des pièces jointes au format PDF, exécutez la commande suivante dans [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell):
 
 ```powershell
 Set-IRMConfiguration -EnablePdfEncryption $true

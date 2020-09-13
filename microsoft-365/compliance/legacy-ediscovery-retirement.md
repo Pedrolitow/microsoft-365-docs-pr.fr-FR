@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: La découverte électronique inaltérable et la conservation inaltérable (et les cmdlets PowerShell correspondantes) dans Exchange Online seront supprimées au cours de la première moitié de 2020. La cmdlet Search-Mailbox et Advanced eDiscovery v 1.0 est également en cours de retrait dans la même période.
-ms.openlocfilehash: 12de88fe3c9de7806b12bd610e0dbeeb404524ca
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 98e04ada0afa03404ba36da2004a9352a01f598a
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126941"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546280"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Retrait des outils eDiscovery hérités
 
@@ -44,7 +44,7 @@ Au fil des années, Microsoft a fourni des outils eDiscovery qui vous permettent
    > [!NOTE]
    > Les cmdlets [Get-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/get-mailboxsearch) et [Remove-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/remove-mailboxsearch) seront disponibles une fois que les autres cmdlets * * * *-MailboxSearch * * * seront déclassées afin que vous puissiez les utiliser pour accéder à d’autres outils de découverte électronique et de conservation. Toutefois, après une certaine date (citée ci-dessous), le support Microsoft ne prend plus en charge ces deux cmdlets.
 
-- Cmdlet [Search-Mailbox](https://docs.microsoft.com/powershell/module/exchange/search-mailbox?view=exchange-ps) dans Exchange Online PowerShell.
+- Cmdlet [Search-Mailbox](https://docs.microsoft.com/powershell/module/exchange/search-mailbox) dans Exchange Online PowerShell.
 
 - Les opérations suivantes dans l’API des services Web Exchange :
 
@@ -77,7 +77,7 @@ Conformément à l’annonce d’origine le 1er juillet 2017, la fonctionnalité
 
 - Organisations gouvernementales Office 365 et Microsoft 365 ; Cela inclut GCC, GCC High et DoD
 
-- Office 365 Allemagne
+- Office 365 Allemagne
 
 ### <a name="timeline-for-retirement"></a>Chronologie de la retraite
 
@@ -94,7 +94,7 @@ Le tableau suivant décrit les autres outils que vous pouvez utiliser pour rempl
 <tr class="header">
 <th><strong>Fonctionnalité</strong></th>
 <th><strong>Outil de remplacement</strong></th>
-<th><strong>Comments</strong></th>
+<th><strong>Commentaires</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -111,7 +111,7 @@ Le tableau suivant décrit les autres outils que vous pouvez utiliser pour rempl
 </li>
 <li>
 <p>Recherche de contenu dans pour Exchange Online, SharePoint Online, OneDrive entreprise, Skype entreprise, Microsoft Teams, groupes Yammer, groupes Microsoft 365 et d’autres contenus stockés dans les applications Office 365</p></li></ul>
-<p>Pour plus d’informations, consultez la rubrique <a href="https://docs.microsoft.com/microsoft-365/compliance/manage-legal-investigations">Manage Legal investigations in Office 365</a>.</td>
+<p>Pour plus d’informations, consultez la rubrique <a href="https://docs.microsoft.com/microsoft-365/compliance/manage-legal-investigations"> Manage Legal investigations in Office 365</a>.</td>
 </tr>
 <tr class="even">
 <td>Conservation à des fins de rétention</td>
@@ -124,7 +124,7 @@ Le tableau suivant décrit les autres outils que vous pouvez utiliser pour rempl
 <p>Application de stratégies à des emplacements de contenu spécifiques, tels que les groupes Exchange Online, SharePoint Online, OneDrive entreprise, Skype entreprise, Microsoft teams et Office 365</p></li>
 <li>
 <p>Application de stratégies à des utilisateurs spécifiques</p></li></ul>
-<p>Pour plus d’informations, voir <a href="https://docs.microsoft.com/microsoft-365/compliance/retention-policies">en savoir plus sur les stratégies de rétention et les étiquettes de rétention</a>.</td>
+<p>Pour plus d’informations, voir <a href="https://docs.microsoft.com/microsoft-365/compliance/retention-policies"> en savoir plus sur les stratégies de rétention et les étiquettes de rétention</a>.</td>
 </tr>
 <tr class="odd">
 <td>Copier les résultats de la recherche de messagerie vers une boîte aux lettres de découverte pour révision</td><td>Examiner les ensembles dans Advanced eDiscovery v 2.0</td>
@@ -180,7 +180,7 @@ Conformément à la note d’origine annoncée le 1er juillet 2017 dans le centr
 
 - Organisations gouvernementales Office 365 et Microsoft 365 ; Cela inclut GCC, GCC High et DoD
 
-- Office 365 Allemagne
+- Office 365 Allemagne
 
 ### <a name="timeline"></a>Chronologie
 
@@ -197,7 +197,7 @@ Le tableau suivant décrit les autres outils que vous pouvez utiliser pour rempl
 <tr class="header">
 <th><strong>Fonctionnalité</strong></th>
 <th><strong>Outils de remplacement</strong></th>
-<th><strong>Comments</strong></th>
+<th><strong>Commentaires</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -261,7 +261,7 @@ La cmdlet **Search-Mailbox** dans Exchange Online PowerShell est en cours de ret
 
 - Organisations gouvernementales Office 365 et Microsoft 365 ; Cela inclut GCC, GCC High et DoD
 
-- Office 365 Allemagne
+- Office 365 Allemagne
 
 ### <a name="timeline"></a>Chronologie
 
@@ -276,14 +276,14 @@ Le tableau suivant décrit les autres outils que vous pouvez utiliser pour rempl
 <tr class="header">
 <th><strong>Fonctionnalité</strong></th>
 <th><strong>Outils de remplacement</strong></th>
-<th><strong>Comments</strong></th>
+<th><strong>Commentaires</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>Rechercher une boîte aux lettres</td>
-<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch?view=exchange-ps"><span class="underline">*-ComplianceSearch</span></a></p>
-<p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction?view=exchange-ps"><span class="underline">*-ComplianceSearchAction</span></a></p>
+<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch"><span class="underline">*-ComplianceSearch</span></a></p>
+<p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction"><span class="underline">*-ComplianceSearchAction</span></a></p>
 <p></a></p></td>
 <td><p>Les cmdlets ComplianceSearch et ComplianceSearchAction fonctionnent ensemble pour vous aider à rechercher et exporter du contenu. Vous pouvez créer une recherche et afficher l’estimation de la recherche à l’aide des cmdlets <strong>New-</strong>, <strong>Get-</strong>et <strong>Start-ComplianceSearch</strong> . Vous pouvez ensuite utiliser la commande <strong>New-ComplianceSearchAction-Export</strong> pour exporter les résultats de la recherche. Vous devrez toujours utiliser l’outil eDiscovery principal dans le centre de conformité Microsoft 365 pour télécharger ces résultats de recherche sur votre ordinateur local.</p></p>
 </td>
@@ -307,8 +307,8 @@ Le tableau suivant décrit les autres outils que vous pouvez utiliser pour rempl
 </tr>
 <tr class=even>
   <td>Purger les messages d’une boîte aux lettres</td>
-<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch?view=exchange-ps"><span class="underline">*-ComplianceSearch</span></a></p>
-<p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction?view=exchange-ps"><span class="underline">*-ComplianceSearchAction</span></a></p>
+<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch"><span class="underline">*-ComplianceSearch</span></a></p>
+<p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction"><span class="underline">*-ComplianceSearchAction</span></a></p>
 <p></p></td>
 <td><p>Les cmdlets ComplianceSearch et ComplianceSearchAction fonctionnent ensemble pour vous aider à rechercher et à purger le contenu. Vous pouvez créer et exécuter une recherche à l’aide des cmdlets <strong>New-ComplianceSearch</strong> et <strong>New-ComplianceSearch</strong> , puis purger le contenu à l’aide de la commande <strong>New-ComplianceSearchAction-purge-PurgeType permet</strong> . Pour plus d’informations, consultez la rubrique <a href="https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization"><span class="underline">Rechercher et supprimer des messages</span></a>.</p>
 </td>
@@ -333,7 +333,7 @@ Ces opérations dans l’API des services Web Exchange sont utilisées par la fo
 
 - Organisations gouvernementales Office 365 et Microsoft 365 ; Cela inclut GCC, GCC High et DoD
 
-- Office 365 Allemagne
+- Office 365 Allemagne
 
 ### <a name="timeline"></a>Chronologie
 
@@ -353,11 +353,11 @@ Pour déterminer si votre organisation utilise Advanced eDiscovery v 1.0 :
 
 La nouvelle solution eDiscovery avancée de Microsoft 365 (également appelée *Advanced eDiscovery v 2.0*) offre toutes les fonctionnalités de la solution d’origine, mais inclut désormais une approche basée sur le dépositaire pour identifier le contenu dans d’autres services Microsoft 365, recueillir ce contenu, puis l’ajouter à un ensemble de révisions où les réviseurs peuvent tirer parti des requêtes de recherche rapide, des balises et des fonctionnalités d’analyse pour vous aider à rechercher des documents pertinents. Advanced eDiscovery inclut désormais un traitement amélioré et des visionneuses natives pour les types de fichier Microsoft et non-Microsoft, une liste complète des types de fichiers est [ici](https://docs.microsoft.com/microsoft-365/compliance/supported-filetypes-ediscovery20) et les champs de métadonnées pris en charge sont présents [ici](https://docs.microsoft.com/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery). Par ailleurs, la nouvelle solution eDiscovery avancée fournit une fonctionnalité de gestion des blocages de gestion puissante qui vous permet d’appliquer des suspensions au contenu dans différents services, d’avertir les utilisateurs des suspensions et de suivre les réponses des dépositaires, tout cela dans un cas avancé de découverte électronique.
 
-Pour accéder à Advanced eDiscovery v 2.0 :
+Pour accéder à eDiscovery avancée v 2.0 :
 
-1. Accédez au [Centre de conformité Microsoft 365](https://compliance.microsoft.com).
+1. Accédez au [centre de conformité Microsoft 365](https://compliance.microsoft.com).
 
-2. Dans le volet de navigation de gauche du centre de conformité Microsoft 365, cliquez sur **Afficher tout**, puis sur **découverte électronique > avancé**.
+2. Dans le volet de navigation gauche du centre de conformité Microsoft 365, cliquez sur **Tout afficher**, puis cliquez sur **eDiscovery >avancée**.
 
 Pour l’instant, nous vous recommandons de commencer la transition de votre flux de travail eDiscovery vers la nouvelle fonctionnalité eDiscovery avancée. Bien que vous puissiez toujours accéder à Advanced eDiscovery v 1.0 dans des cas existants, le support Microsoft ne sera pas pris en charge après le 1er octobre 2020. Pour plus d’informations, consultez la chronologie suivante.
 
@@ -367,7 +367,7 @@ Pour l’instant, nous vous recommandons de commencer la transition de votre flu
 
 - Organisations Office 365 et Microsoft 365 éducation
 
-- Office 365 Allemagne
+- Office 365 Allemagne
 
 ### <a name="timeline"></a>Chronologie
 

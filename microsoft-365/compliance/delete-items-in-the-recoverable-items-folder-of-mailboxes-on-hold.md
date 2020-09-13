@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: Découvrez comment les administrateurs peuvent supprimer des éléments du dossier éléments récupérables d’un utilisateur pour une boîte aux lettres Exchange Online, même si cette boîte aux lettres est placée en conservation légale.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d0983a3ce10a3980f23af68736acac1382ef938f
-ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
+ms.openlocfilehash: 5f111a19e3baf57f2b6f2e2254df97d21689de2e
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47405465"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546148"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold"></a>Supprimer des éléments en attente dans le dossier Éléments récupérables des boîtes aux lettres basées sur le cloud
 
@@ -226,7 +226,7 @@ Pour plus d’informations sur les étiquettes, voir [en savoir plus sur les str
 
 ### <a name="ediscovery-holds"></a>conservations eDiscovery
   
-Exécutez les commandes suivantes dans [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) pour identifier la conservation associée à un cas eDiscovery (appelé *conservations eDiscovery*) qui est appliquée à la boîte aux lettres. Utilisez le GUID (sans le  `UniH` préfixe) pour le blocage eDiscovery que vous avez identifié à l’étape 1. La deuxième commande affiche le nom du cas eDiscovery auquel la conservation est associée ; la troisième commande affiche le nom de la suspension.
+Exécutez les commandes suivantes dans [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) pour identifier la conservation associée à un cas eDiscovery (appelé *conservations eDiscovery*) qui est appliquée à la boîte aux lettres. Utilisez le GUID (sans le  `UniH` préfixe) pour le blocage eDiscovery que vous avez identifié à l’étape 1. La deuxième commande affiche le nom du cas eDiscovery auquel la conservation est associée ; la troisième commande affiche le nom de la suspension.
   
 ```powershell
 $CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>
@@ -412,7 +412,7 @@ Effectuez les étapes suivantes (dans la séquence spécifiée) dans Exchange On
     Get-CASMailbox <username> | FL EwsEnabled,ActiveSyncEnabled,MAPIEnabled,OWAEnabled,ImapEnabled,PopEnabled
     ```
 
-## <a name="more-information"></a>Informations supplémentaires
+## <a name="more-information"></a>Plus d’informations
 
 Voici un tableau qui décrit comment identifier différents types de suspensions en fonction des valeurs de la propriété  *InPlaceHolds*  lorsque vous exécutez les cmdlets **Get-Mailbox** ou **Get-OrganizationConfig** . Pour plus d’informations, voir [Comment identifier le type de suspension placé sur une boîte aux lettres Exchange Online](identify-a-hold-on-an-exchange-online-mailbox.md).
 
