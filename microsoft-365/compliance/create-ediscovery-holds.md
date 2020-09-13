@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous pouvez créer une conservation associée à un cas de découverte électronique de base pour conserver le contenu qui peut être pertinent pour une enquête.
-ms.openlocfilehash: d68ca8a15713e20184e39af447cb03ccb5c9e7d7
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: bf04fd0f0637247e4637b5d3fce82f911ca51f0e
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46798060"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546880"
 ---
 # <a name="create-an-ediscovery-hold"></a>Créer une suspension de cas eDiscovery
 
@@ -151,7 +151,7 @@ Gardez les points suivants à l’esprit lorsque vous placez les groupes teams e
 
 - Comme expliqué précédemment, pour placer le contenu situé dans des groupes teams et Office 365 en conservation, vous devez spécifier la boîte aux lettres et le site SharePoint associés à un groupe ou une équipe.
 
-- Exécutez la cmdlet **Get-UnifiedGroup** dans [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) pour afficher les propriétés des groupes teams et Office 365. Il s’agit d’un moyen efficace pour obtenir l’URL du site associé à un groupe Team ou Office 365. Par exemple, la commande suivante affiche les propriétés sélectionnées d’un groupe Office365 nommé Senior Leadership Team :
+- Exécutez la cmdlet **Get-UnifiedGroup** dans [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) pour afficher les propriétés des groupes teams et Office 365. Il s’agit d’un moyen efficace pour obtenir l’URL du site associé à un groupe Team ou Office 365. Par exemple, la commande suivante affiche les propriétés sélectionnées d’un groupe Office365 nommé Senior Leadership Team :
 
     ```text
     Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl
@@ -176,7 +176,7 @@ Gardez les points suivants à l’esprit lorsque vous placez les groupes teams e
     > [!NOTE]
     > Pour exécuter l'applet de commande **Get-UnifiedGroupLinks**, vous devez avoir le rôle de destinataires en affichage seul dans Exchange Online ou être membre d’un groupe de rôles affecté du rôle de destinataires en affichage seul.
 
-## <a name="onedrive-accounts"></a>Comptes OneDrive
+## <a name="onedrive-accounts"></a>Les comptes OneDrive
 
 Pour collecter une liste des URL pour les sites OneDrive entreprise de votre organisation afin de pouvoir les ajouter à une suspension ou une recherche associée à un cas eDiscovery, consultez la rubrique [créer une liste de tous les emplacements OneDrive de votre organisation](https://docs.microsoft.com/onedrive/list-onedrive-urls). Le script de cet article crée un fichier texte qui contient une liste de tous les sites OneDrive de votre organisation. Pour exécuter ce script, vous devez installer et utiliser SharePoint Online Management Shell. N’oubliez pas d’ajouter l’URL du domaine MySite de votre organisation à chaque site OneDrive dans lequel vous souhaitez effectuer une recherche. Il s’agit du domaine où se trouve tout le contenu de votre OneDrive (par exemple,`https://contoso-my.sharepoint.com`). Voici un exemple d’URL pour le site d’un utilisateur OneDrive : `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`.
 
@@ -211,9 +211,9 @@ Le tableau suivant répertorie les limites pour les cas de découverte électron
   |:-----|:-----|
   |Nombre maximal de cas pour une organisation  <br/> |Sans limite  <br/> |
   |Nombre maximal de conservations eDiscovery pour une organisation  <br/> |10 000  <br/> |
-  |Nombre maximal de boîtes aux lettres dans une seule conservation eDiscovery  <br/> |1 000  <br/> |
+  |Nombre maximal de boîtes aux lettres dans une seule conservation eDiscovery  <br/> |1,000  <br/> |
   |Nombre maximal de sites SharePoint et OneDrive entreprise dans une conservation eDiscovery unique  <br/> |100  <br/> |
-  |Nombre maximal de cas affichés sur la page d’accueil eDiscovery et nombre maximal d’éléments affichés dans les onglets conservations, recherches et exporter dans un cas. <sup>1</sup> |1 000|
+  |Nombre maximal de cas affichés sur la page d’accueil eDiscovery et nombre maximal d’éléments affichés dans les onglets conservations, recherches et exporter dans un cas. <sup>1</sup> |1,000|
   |||
 
    > [!NOTE]

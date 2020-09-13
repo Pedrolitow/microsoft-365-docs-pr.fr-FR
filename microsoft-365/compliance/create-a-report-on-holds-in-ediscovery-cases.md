@@ -20,12 +20,12 @@ ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment générer un rapport qui contient des informations sur toutes les conservations associées à des cas eDiscovery.
-ms.openlocfilehash: 4da2b93ad9055363a5f8a7d61eff04270dfd00dc
-ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
+ms.openlocfilehash: 35e432104e7c1358887eb89ae96b9bb0d1d12a0f
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46845866"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546976"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases"></a>Créer un rapport sur les conservations définies dans les cas eDiscovery 
 
@@ -43,7 +43,7 @@ Consultez la section [plus d’informations](#more-information) pour obtenir une
 
 ## <a name="step-1-connect-to-the-security--compliance-center-powershell"></a>Étape 1 : Connectez-vous au centre de sécurité & conformité PowerShell
 
-La première étape consiste à vous connecter à la sécurité & Centre de conformité PowerShell pour votre organisation. Pour consulter des instructions détaillées, voir [Se connecter au Centre de sécurité et conformité PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+La première étape consiste à vous connecter à la sécurité & Centre de conformité PowerShell pour votre organisation. Pour consulter des instructions détaillées, voir [Se connecter au Centre de sécurité et conformité PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
 ## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a>Étape 2 : exécuter le script pour signaler les suspensions associées à des cas de découverte électronique
 

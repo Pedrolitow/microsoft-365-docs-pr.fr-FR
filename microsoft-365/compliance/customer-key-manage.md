@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Après avoir configuré la clé client, Découvrez comment la gérer en restaurant les clés AKV et en gérant les autorisations et vos stratégies de chiffrement de données.
-ms.openlocfilehash: 8f5f23fa1b8ce8baa8fafd3f29ca5fb8905887a1
-ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
+ms.openlocfilehash: de85edd5c53fc2b76be4361575e1a85655c0f297
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324256"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547084"
 ---
 # <a name="manage-customer-key"></a>Gérer la clé client
 
@@ -80,7 +80,7 @@ Les handles de clé du client DEPs différemment entre les différents services.
 
 Pour afficher la liste de tous les DEPs que vous avez créés pour Exchange Online et Skype entreprise à l’aide de l’applet de commande Get-DataEncryptionPolicy PowerShell, procédez comme suit.
 
-1. À l’aide d’un compte professionnel ou scolaire doté d’autorisations d’administrateur globales dans votre organisation, [Connectez-vous à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
+1. À l’aide d’un compte professionnel ou scolaire doté d’autorisations d’administrateur globales dans votre organisation, [Connectez-vous à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Pour renvoyer tous les DEPs de votre organisation, exécutez la cmdlet Get-DataEncryptionPolicy sans aucun paramètre.
 
@@ -88,7 +88,7 @@ Pour afficher la liste de tous les DEPs que vous avez créés pour Exchange Onli
    Get-DataEncryptionPolicy
    ```
 
-   Pour plus d’informations sur la cmdlet Get-DataEncryptionPolicy, consultez la rubrique [Get-DataEncryptionPolicy](https://docs.microsoft.com/powershell/module/exchange/get-dataencryptionpolicy?view=exchange-ps).
+   Pour plus d’informations sur la cmdlet Get-DataEncryptionPolicy, consultez la rubrique [Get-DataEncryptionPolicy](https://docs.microsoft.com/powershell/module/exchange/get-dataencryptionpolicy).
 
 ### <a name="assign-a-dep-before-you-migrate-a-mailbox-to-the-cloud"></a>Affectation d’une DEP avant la migration d’une boîte aux lettres vers le Cloud
 
@@ -96,7 +96,7 @@ Lorsque vous affectez la DEP, Microsoft 365 chiffre le contenu de la boîte aux 
 
 Pour affecter une DEP à une boîte aux lettres avant de la migrer vers Office 365, exécutez la cmdlet Set-MailUser dans Exchange Online PowerShell :
 
-1. À l’aide d’un compte professionnel ou scolaire doté d’autorisations d’administrateur globales dans votre organisation, [Connectez-vous à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
+1. À l’aide d’un compte professionnel ou scolaire doté d’autorisations d’administrateur globales dans votre organisation, [Connectez-vous à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Exécutez la cmdlet Set-MailUser.
 
@@ -104,19 +104,19 @@ Pour affecter une DEP à une boîte aux lettres avant de la migrer vers Office 3
    Set-MailUser -Identity <GeneralMailboxOrMailUserIdParameter> -DataEncryptionPolicy <DataEncryptionPolicyIdParameter>
    ```
 
-   Où *GeneralMailboxOrMailUserIdParameter* spécifie une boîte aux lettres et *DATAENCRYPTIONPOLICYIDPARAMETER* est l’ID de la DEP. Pour plus d’informations sur la cmdlet Set-MailUser, voir [Set-MailUser](https://docs.microsoft.com/powershell/module/exchange/set-mailuser?view=exchange-ps).
+   Où *GeneralMailboxOrMailUserIdParameter* spécifie une boîte aux lettres et *DATAENCRYPTIONPOLICYIDPARAMETER* est l’ID de la DEP. Pour plus d’informations sur la cmdlet Set-MailUser, voir [Set-MailUser](https://docs.microsoft.com/powershell/module/exchange/set-mailuser).
 
 ### <a name="determine-the-dep-assigned-to-a-mailbox"></a>Déterminer la DEP affectée à une boîte aux lettres
 
 Pour déterminer la DEP affectée à une boîte aux lettres, utilisez la cmdlet Get-MailboxStatistics. L’applet de commande renvoie un identificateur unique (GUID).
   
-1. À l’aide d’un compte professionnel ou scolaire doté d’autorisations d’administrateur globales dans votre organisation, [Connectez-vous à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
+1. À l’aide d’un compte professionnel ou scolaire doté d’autorisations d’administrateur globales dans votre organisation, [Connectez-vous à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
    ```powershell
    Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl DataEncryptionPolicyID
    ```
 
-   Où *GeneralMailboxOrMailUserIdParameter* spécifie une boîte aux lettres et DataEncryptionPolicyID renvoie le GUID de la DEP. Pour plus d’informations sur la cmdlet Get-MailboxStatistics, consultez la rubrique [Get-MailboxStatistics](https://docs.microsoft.com/powershell/module/exchange/get-mailboxstatistics?view=exchange-ps).
+   Où *GeneralMailboxOrMailUserIdParameter* spécifie une boîte aux lettres et DataEncryptionPolicyID renvoie le GUID de la DEP. Pour plus d’informations sur la cmdlet Get-MailboxStatistics, consultez la rubrique [Get-MailboxStatistics](https://docs.microsoft.com/powershell/module/exchange/get-mailboxstatistics).
   
 2. Exécutez la cmdlet Get-DataEncryptionPolicy pour connaître le nom convivial de la DEP à laquelle la boîte aux lettres est affectée.
   
@@ -174,7 +174,7 @@ Vous annulez l’affectation d’une DEP à partir d’une boîte aux lettres à
 
 Pour annuler l’affectation de la DEP à partir d’une boîte aux lettres à l’aide de la cmdlet Set-Mailbox PowerShell, procédez comme suit.
 
-1. À l’aide d’un compte professionnel ou scolaire doté d’autorisations d’administrateur globales dans votre organisation, [Connectez-vous à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
+1. À l’aide d’un compte professionnel ou scolaire doté d’autorisations d’administrateur globales dans votre organisation, [Connectez-vous à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Exécutez la cmdlet Set-Mailbox.
 
@@ -207,7 +207,7 @@ Pour lancer le chemin de purge des données, procédez comme suit :
 
 1. Supprimez les autorisations Wrap et Unwrap pour « O365 Exchange Online » à partir de coffres de clés Azure.
 
-2. À l’aide d’un compte professionnel ou scolaire disposant de privilèges d’administrateur général dans votre organisation, [Connectez-vous à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
+2. À l’aide d’un compte professionnel ou scolaire disposant de privilèges d’administrateur général dans votre organisation, [Connectez-vous à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 3. Pour chaque DEP contenant des boîtes aux lettres que vous souhaitez supprimer, exécutez la cmdlet [Set-DataEncryptionPolicy](https://docs.microsoft.com/powershell/module/exchange/set-dataencryptionpolicy) comme suit.
 

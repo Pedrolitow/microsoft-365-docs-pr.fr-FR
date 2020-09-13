@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 titleSuffix: Office 365 Compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 54ff4012767b156bc72289473e289fa4d93d1a2c
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 74244b5288043a1d1bc62e0ae09ee8c25ff7d4e1
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352157"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546776"
 ---
 # <a name="configure-supervision-policies-in-office-365"></a>Configurer des stratégies de surveillance dans Office 365
 
@@ -54,7 +54,7 @@ Procédez comme suit pour configurer et utiliser la surveillance au sein de votr
 
 - **Étape 2 (obligatoire)**: [rendez la surveillance disponible dans votre organisation](#step-2-make-supervision-available-in-your-organization-required)
 
-    Ajoutez-vous au groupe de rôles examen de surveillance afin de pouvoir configurer des stratégies. Tous les utilisateurs auxquels ce rôle est attribué peuvent accéder à la page **surveillance** dans le centre de sécurité & conformité. Si la messagerie Reviewable est hébergée sur Exchange Online, chaque réviseur doit disposer [d’un accès à PowerShell à distance à Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
+    Ajoutez-vous au groupe de rôles examen de surveillance afin de pouvoir configurer des stratégies. Tous les utilisateurs auxquels ce rôle est attribué peuvent accéder à la page **surveillance** dans le centre de sécurité & conformité. Si la messagerie Reviewable est hébergée sur Exchange Online, chaque réviseur doit disposer [d’un accès à PowerShell à distance à Exchange Online](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell).
 
 - **Étape 3 (facultative)**: [créer des types d’informations sensibles personnalisés et des dictionnaires de mots clés personnalisés](#step-3-create-custom-sensitive-information-types-and-custom-keyword-dictionaries-optional)
 
@@ -83,7 +83,7 @@ Lorsque vous sélectionnez un groupe Microsoft 365 pour les utilisateurs supervi
 
 Pour gérer les utilisateurs supervisés dans les grandes organisations d’entreprise, il se peut que vous deviez surveiller tous les utilisateurs entre les grands groupes. Vous pouvez utiliser PowerShell pour configurer un groupe de distribution pour une stratégie de surveillance globale pour le groupe affecté. Cela vous permet de surveiller des milliers d’utilisateurs à l’aide d’une seule stratégie et de mettre à jour la stratégie de supervision lorsque de nouveaux employés rejoignent votre organisation.
 
-1. Créez un [groupe de distribution](https://docs.microsoft.com/powershell/module/exchange/new-distributiongroup?view=exchange-ps) dédié pour votre stratégie de surveillance globale avec les propriétés suivantes : Assurez-vous que ce groupe de distribution n’est pas utilisé à d’autres fins ou d’autres services Office 365.
+1. Créez un [groupe de distribution](https://docs.microsoft.com/powershell/module/exchange/new-distributiongroup) dédié pour votre stratégie de surveillance globale avec les propriétés suivantes : Assurez-vous que ce groupe de distribution n’est pas utilisé à d’autres fins ou d’autres services Office 365.
 
     - **MemberDepartRestriction = fermé**. Garantit que les utilisateurs ne peuvent pas se supprimer eux-mêmes du groupe de distribution.
     - **MemberJoinRestriction = fermé**. Garantit que les utilisateurs ne peuvent pas s’ajouter eux-mêmes au groupe de distribution.
@@ -146,7 +146,7 @@ Pour plus d’informations sur les groupes de rôles et les autorisations, consu
 
 ### <a name="enable-remote-powershell-access-for-reviewers-if-email-is-hosted-on-exchange-online"></a>Activer l’accès à PowerShell à distance pour les relecteurs (si le courrier électronique est hébergé sur Exchange Online)
 
-1. Suivez les instructions [pour activer ou désactiver l’accès à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
+1. Suivez les instructions [pour activer ou désactiver l’accès à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell).
 
 ## <a name="step-3-create-custom-sensitive-information-types-and-custom-keyword-dictionaries-optional"></a>Étape 3 : créer des types d’informations sensibles personnalisés et des dictionnaires personnels de mots clés personnalisés (facultatif)
 

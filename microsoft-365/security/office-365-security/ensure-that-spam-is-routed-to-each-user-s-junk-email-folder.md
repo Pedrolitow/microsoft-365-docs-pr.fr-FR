@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à acheminer le courrier indésirable vers les dossiers de courrier indésirable de l’utilisateur dans un environnement hybride Exchange Online Protection.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5d8ba6aae599ee4dd327bd1ec82b46e8f3ee3ca8
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.openlocfilehash: 15acc9ad87fa0c785998895d026dae036d9ddd7b
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44679119"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547663"
 ---
 # <a name="configure-standalone-eop-to-deliver-spam-to-the-junk-email-folder-in-hybrid-environments"></a>Configurer EOP autonome pour envoyer du courrier indésirable dans le dossier courrier indésirable dans des environnements hybrides
 
@@ -33,11 +33,11 @@ Si vous êtes un client Exchange Online Protection (EOP) autonome dans un enviro
 
 Plus précisément, vous devez créer des règles de flux de messagerie (également appelées règles de transport) dans votre organisation Exchange locale avec des conditions qui recherchent les messages avec l’un des en-têtes et valeurs de blocage du courrier indésirable EOP suivants, ainsi que les actions qui définissent le seuil de probabilité de courrier indésirable (SCL) de ces messages à 6 :
 
-- `X-Forefront-Antispam-Report: SFV:SPM`(message marqué comme courrier indésirable par le filtrage du courrier indésirable)
+- `X-Forefront-Antispam-Report: SFV:SPM` (message marqué comme courrier indésirable par le filtrage du courrier indésirable)
 
-- `X-Forefront-Antispam-Report: SFV:SKS`(message marqué comme courrier indésirable par les règles de flux de messagerie dans EOP avant le filtrage du courrier indésirable)
+- `X-Forefront-Antispam-Report: SFV:SKS` (message marqué comme courrier indésirable par les règles de flux de messagerie dans EOP avant le filtrage du courrier indésirable)
 
-- `X-Forefront-Antispam-Report: SFV:SKB`(message marqué comme courrier indésirable par filtrage du courrier indésirable, car l’adresse de messagerie ou le domaine de messagerie de l’expéditeur se trouve dans la liste des expéditeurs bloqués ou dans la liste des domaines bloqués dans EOP)
+- `X-Forefront-Antispam-Report: SFV:SKB` (message marqué comme courrier indésirable par filtrage du courrier indésirable, car l’adresse de messagerie ou le domaine de messagerie de l’expéditeur se trouve dans la liste des expéditeurs bloqués ou dans la liste des domaines bloqués dans EOP)
 
 Pour plus d’informations sur ces valeurs d’en-tête, consultez la rubrique [anti-spam message headers](anti-spam-message-headers.md).
 
@@ -59,7 +59,7 @@ Cette rubrique décrit comment créer ces règles de flux de messagerie le centr
   Pour plus d’informations, consultez la rubrique [seuils de probabilité de courrier indésirable Exchange](https://docs.microsoft.com/Exchange/antispam-and-antimalware/antispam-protection/scl).
 
   - Si la règle de courrier indésirable est activée sur la boîte aux lettres (la valeur du paramètre _Enabled_ est $true sur la cmdlet [Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/set-mailboxjunkemailconfiguration) dans l’environnement de commande Exchange Management Shell). Il s’agit de la règle de courrier indésirable qui déplace le message vers le dossier courrier indésirable après la remise. Par défaut, la règle de courrier indésirable est activée sur les boîtes aux lettres. Pour plus d’informations, consultez la rubrique [Configure Exchange antispam settings on mailboxes](https://docs.microsoft.com/Exchange/antispam-and-antimalware/antispam-protection/configure-antispam-settings).
-  
+
 - Pour ouvrir le centre d’administration Exchange sur un serveur Exchange, consultez la rubrique [Exchange Admin Center in Exchange Server](https://docs.microsoft.com/Exchange/architecture/client-access/exchange-admin-center). Pour ouvrir l’environnement de commande Exchange Management Shell, consultez [la rubrique Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 - Pour plus d’informations sur les règles de flux de messagerie dans Exchange sur site, consultez les rubriques suivantes :
@@ -94,7 +94,7 @@ Cette rubrique décrit comment créer ces règles de flux de messagerie le centr
 
      - Cliquez sur **entrer du texte**. Dans la boîte de dialogue spécifier le nom de l' **en-tête** qui s’affiche, entrez **X-Forefront-antispam-Report** , puis cliquez sur **OK**.
 
-     - Cliquez sur **Entrez les mots**. Dans la boîte de dialogue **spécifier des mots ou des expressions** qui s’affiche, entrez l’une des valeurs d’en-tête de courrier indésirable EOP (**SFV : SPM**, **SFV : SKS**ou **SFV : SKB**), cliquez sur **Ajouter** une ![ icône d’ajout, puis ](../../media/ITPro-EAC-AddIcon.png) cliquez sur **OK**.
+     - Cliquez sur  **Entrez les mots**. Dans la boîte de dialogue **spécifier des mots ou des expressions** qui s’affiche, entrez l’une des valeurs d’en-tête de courrier indésirable EOP (**SFV : SPM**, **SFV : SKS**ou **SFV : SKB**), cliquez sur **Ajouter** une ![ icône d’ajout, puis ](../../media/ITPro-EAC-AddIcon.png) cliquez sur **OK**.
 
    - **Procédez comme suit**: sélectionnez **modifier les propriétés du message** \> **définir le seuil de probabilité de courrier indésirable (SCL)**.
 

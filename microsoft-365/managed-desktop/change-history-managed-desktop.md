@@ -2,7 +2,7 @@
 title: Historique des modifications de la documentation relative au Bureau géré Microsoft
 description: Cet article répertorie les articles nouveaux et mis à jour pour le bureau géré Microsoft.
 keywords: historique des modifications
-ms.prod: m365-md
+ms.service: m365-md
 ms.sitesec: library
 author: jaimeo
 ms.topic: article
@@ -13,12 +13,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.article: article
 ms.localizationpriority: normal
-ms.openlocfilehash: f1606e62813aa63225113b38414338c4e2ff7d57
-ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
+ms.openlocfilehash: a483a03fc913a019f58e80fb2713bb0367a6db44
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47405676"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546269"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Historique des modifications de la documentation relative au Bureau géré Microsoft
 
@@ -157,7 +157,7 @@ Article nouveau ou modifié | Description
 [Inscrivez vous-même les appareils existant](get-started/register-reused-devices-self.md) | Nouvel article
 [Gestion des mises à jour dans le bureau géré Microsoft](service-description/updates.md) | Article mis à jour
 
-## <a name="august-2019"></a>Août 2019
+## <a name="august-2019"></a>Août 2019
 Article nouveau ou modifié | Description
 --- | ---
 [Utilisation de Microsoft Consulting Services](get-ready/apps-mcs.md) | Article mis à jour

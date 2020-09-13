@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à créer, modifier et supprimer les stratégies anti-hameçonnage avancées disponibles dans les organisations avec Office 365 Advanced Threat Protection (Office 365 ATP).
-ms.openlocfilehash: f7770945e6b99a3d2f3fa2b12daa13b2cc3c2612
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 83f100cab12c91af1405ffc5f386ff51028710a9
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825736"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547651"
 ---
 # <a name="configure-atp-anti-phishing-policies"></a>Configurer des stratégies anti-hameçonnage ATP
 
@@ -144,7 +144,7 @@ Utilisez les procédures suivantes pour modifier les stratégies anti-hameçonna
 
 4. **Paramètre de stratégie**: cliquez sur **modifier** pour modifier les mêmes paramètres que ceux qui étaient disponibles lorsque vous avez [créé la stratégie](#use-the-security--compliance-center-to-create-atp-anti-phishing-policies) dans la section précédente :
 
-   - **Nom**
+   - **Name**
    - **Description**
    - **Appliqué à**
    - **Vérifiez vos paramètres**
@@ -544,7 +544,7 @@ Cet exemple montre comment activer la même règle.
 Enable-AntiPhishRule -Identity "Marketing Department"
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Enable-antiphishrule permet](https://docs.microsoft.com/powershell/module/exchange/enable-AntiPhishrule) et [Disable-antiphishrule permet](https://docs.microsoft.com/powershell/module/exchange/disable-AntiPhishrule).
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Enable-antiphishrule permet](https://docs.microsoft.com/powershell/module/exchange/enable-antiphishrule) et [Disable-antiphishrule permet](https://docs.microsoft.com/powershell/module/exchange/disable-antiphishrule).
 
 ### <a name="use-powershell-to-set-the-priority-of-anti-phish-rules"></a>Utiliser PowerShell pour définir la priorité des règles anti-hameçonnage
 

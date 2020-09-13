@@ -16,12 +16,12 @@ description: Découvrez comment placer une boîte aux lettres en conservation po
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: 9c62dfcd9e4cf1e3cc75e029b250c7abe80de6df
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 4bcb857095a63c06caa6e9762496ca74afeead04
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818043"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546986"
 ---
 # <a name="create-a-litigation-hold"></a>Créer une suspension pour litige
 
@@ -68,7 +68,7 @@ Voici les étapes à suivre pour placer une boîte aux lettres en conservation p
 
 ### <a name="create-a-litigation-hold-using-powershell"></a>Création d’une conservation pour litige à l’aide de PowerShell
 
-Vous pouvez également créer une conservation pour litige en exécutant la commande suivante dans [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell):
+Vous pouvez également créer une conservation pour litige en exécutant la commande suivante dans [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell):
 
 ```powershell
 Set-Mailbox <username> -LitigationHoldEnabled $true

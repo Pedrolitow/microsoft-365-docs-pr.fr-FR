@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez les demandes de référentiel sécurisé du client qui vous permettent de contrôler la manière dont un technicien du support technique Microsoft peut accéder à vos données lorsque vous rencontrez un problème.
-ms.openlocfilehash: 67662c34ed3aedb22c3462a2ba8aff9e338e07c6
-ms.sourcegitcommit: 234726a1795d984c4659da68f852d30a4dda5711
+ms.openlocfilehash: d71fbaa42fba49bd0f06b26d34d2257f8a4a60ba
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46794253"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546500"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Référentiel sécurisé du client dans Office 365
 
@@ -101,7 +101,7 @@ Vous pouvez activer les contrôles Customer Lockbox dans le Centre d’administr
     ![Approuver ou refuser les demandes de référentiel sécurisé du client](../media/CustomerLockbox8.png)
 
 > [!NOTE]
-> Utilisez l’applet de commande Set-AccessToCustomerDataRequest pour approuver, refuser ou annuler des demandes de référentiel sécurisé Microsoft 365 qui contrôlent l’accès à vos données par les ingénieurs du support technique Microsoft. Pour plus d’informations, consultez la rubrique [Set-AccessToCustomerDataRequest](https://docs.microsoft.com/powershell/module/exchange/set-accesstocustomerdatarequest?view=exchange-ps).
+> Utilisez l’applet de commande Set-AccessToCustomerDataRequest pour approuver, refuser ou annuler des demandes de référentiel sécurisé Microsoft 365 qui contrôlent l’accès à vos données par les ingénieurs du support technique Microsoft. Pour plus d’informations, consultez la rubrique [Set-AccessToCustomerDataRequest](https://docs.microsoft.com/powershell/module/exchange/set-accesstocustomerdatarequest).
 
 
 ## <a name="auditing-customer-lockbox-requests"></a>Audit des demandes d’accès au Customer Lockbox
@@ -177,7 +177,7 @@ Les actions exécutées par un ingénieur Microsoft après l’approbation d’u
 | Activité   | Le nom de l’activité effectuée par l’ingénieur Microsoft.|
 | Élément       | \<empty\>                                             |
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 #### <a name="which-microsoft-365-services-does-customer-lockbox-apply-to"></a>Quels sont les services Microsoft 365 auxquels s’applique le référentiel client ?
 

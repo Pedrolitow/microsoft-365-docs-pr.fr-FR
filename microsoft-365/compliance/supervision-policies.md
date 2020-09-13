@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.custom: seo-marvel-apr2020
 titleSuffix: Microsoft 365 Compliance
-ms.openlocfilehash: 7ebb2673d1d275075cf32cd18996837ec4024622
-ms.sourcegitcommit: b144e8ba1ab0c40fa7e0e8e893b5cb44aa2d8243
+ms.openlocfilehash: 27c4d4603396089cb58cfed192f09d0db70cac5a
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47282602"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547584"
 ---
 # <a name="supervision-policies"></a>Stratégies de surveillance
 
@@ -143,7 +143,7 @@ Pour en savoir plus sur les détails des informations sensibles et les modèles 
 
 #### <a name="custom-keyword-dictionaries"></a>Dictionnaires de mots clés personnalisés
 
-Configurez des dictionnaires de mots clés personnalisés (ou des lexiques) pour fournir une gestion simple des mots clés propres à votre organisation ou votre secteur d’activité. Les dictionnaires de mots clés prennent en charge jusqu’à 100 to de termes (post-compression) dans le dictionnaire et prennent en charge n’importe quelle langue. La limite client est également de 100Ko après compression. Si nécessaire, vous pouvez appliquer plusieurs dictionnaires de mots clés personnalisés à une seule stratégie ou disposer d’un dictionnaire à Mots clés unique par stratégie. Ces dictionnaires sont affectés dans une stratégie de surveillance et peuvent être issus d’un fichier (par exemple, une liste. csv ou. txt) ou d’une liste que vous pouvez [importer dans le centre de conformité](create-a-keyword-dictionary.md).
+Configurez des dictionnaires de mots clés personnalisés (ou des lexiques) pour fournir une gestion simple des mots clés propres à votre organisation ou votre secteur d’activité. Les dictionnaires de mots clés prennent en charge jusqu’à 100 to de termes (post-compression) dans le dictionnaire et prennent en charge n’importe quelle langue. La limite du client est également de 100 Ko après compression. Si nécessaire, vous pouvez appliquer plusieurs dictionnaires de mots clés personnalisés à une seule stratégie ou disposer d’un dictionnaire à Mots clés unique par stratégie. Ces dictionnaires sont affectés dans une stratégie de surveillance et peuvent être issus d’un fichier (par exemple, une liste. csv ou. txt) ou d’une liste que vous pouvez [importer dans le centre de conformité](create-a-keyword-dictionary.md).
 
 #### <a name="offensive-language"></a>Choquant
 
@@ -159,7 +159,7 @@ Le modèle ne fournit pas de liste exhaustive du langage injurieux. De plus, les
 
 Le modèle de langage offensant surveille le courrier électronique en fonction des types de langue suivants :
 
-|**Type**|**Description**|
+|**Type (Type)**|**Description**|
 |:-----|:-----|
 | **Blasphèmes** | Expressions qui dépassent la plupart des gens. |
 | **Slurs** | Expressions qui portent préjudice à des groupes spécifiques (par exemple, race, ethnique, orientation sexuelle, handicap). |
@@ -301,7 +301,7 @@ Cet exemple renvoie les activités de mise à jour pour vos stratégies de confo
 Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations SupervisionPolicyCreated,SupervisionPolicyUpdated,SupervisionPolicyDeletedAuditData
 ```
 
-Outre les informations fournies dans les journaux et les rapports de surveillance, vous pouvez également utiliser l’applet de commande PowerShell [Get-SupervisoryReviewActivity](https://docs.microsoft.com/powershell/module/exchange/get-supervisoryreviewactivity?view=exchange-ps) pour renvoyer une liste complète et détaillée de toutes les activités de stratégie de surveillance.
+Outre les informations fournies dans les journaux et les rapports de surveillance, vous pouvez également utiliser l’applet de commande PowerShell [Get-SupervisoryReviewActivity](https://docs.microsoft.com/powershell/module/exchange/get-supervisoryreviewactivity) pour renvoyer une liste complète et détaillée de toutes les activités de stratégie de surveillance.
 
 ## <a name="ready-to-get-started"></a>Vous êtes prêt ?
 

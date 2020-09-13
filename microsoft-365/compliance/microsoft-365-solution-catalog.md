@@ -7,16 +7,16 @@ author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
-ms.service: o365-seccomp
+ms.service: O365-seccomp
 localization_priority: Normal
 description: Découvrez le catalogue de solutions Microsoft 365, y compris son contenu, comment l’obtenir et les étapes suivantes.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c2fad2726b7e923f871c0307f17f28ea3f99b1bd
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f396801d4241b06c5523e4f3312c9ce597ac015e
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637946"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547562"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Catalogue de solutions Microsoft 365
 
@@ -77,19 +77,19 @@ La section **réponse &** de la recherche sur la page d’accueil vous montre co
 
 ## <a name="how-do-i-get-this"></a>Comment puis-je obtenir cela ?
 
-Pour visiter le catalogue de solutions Microsoft 365, accédez [https://compliance.microsoft.com](https://compliance.microsoft.com) à et connectez-vous en tant qu’administrateur général, administrateur de conformité ou administrateur de données de conformité. Sélectionnez **catalogue** dans le volet de navigation sur le côté gauche de l’écran pour ouvrir la page d’accueil du catalogue.
+Pour visiter le catalogue de solutions Microsoft 365, accédez à [https://compliance.microsoft.com](https://compliance.microsoft.com) et connectez-vous en tant qu’administrateur général, administrateur de conformité ou administrateur de données de conformité. Sélectionnez **catalogue** dans le volet de navigation sur le côté gauche de l’écran pour ouvrir la page d’accueil du catalogue.
 
 ## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 **Pourquoi ne puis-je pas voir le catalogue de solutions Microsoft 365 ?**
 
-Tout d’abord, vérifiez que vous disposez des autorisations et des licences appropriées. Ensuite, connectez-vous [https://compliance.microsoft.com](https://compliance.microsoft.com) en tant qu’administrateur général, administrateur de conformité ou administrateur de données de conformité.
+Tout d’abord, vérifiez que vous disposez des autorisations et des licences appropriées. Ensuite, connectez-vous en [https://compliance.microsoft.com](https://compliance.microsoft.com) tant qu’administrateur général, administrateur de conformité ou administrateur de données de conformité.
 
 **Certaines des fonctionnalités de conformité indiquées dans la page catalogue de solutions ne sont pas disponibles dans le centre de conformité Microsoft 365. Que faire ?**
 
 Nous travaillons en permanence à ajouter de nouvelles fonctionnalités au centre de conformité Microsoft 365 et au catalogue de solutions. Si vous ne trouvez pas une solution spécifique dans la zone de navigation, elle sera accessible lorsque la solution sera disponible dans votre abonnement.
 
-Si vous recherchez une solution de conformité existante et qu’elle n’est pas disponible dans le centre de conformité Microsoft 365, vous pouvez toujours accéder aux solutions dans le &amp; Centre de sécurité conformité existant [https://protection.office.com](https://protection.office.com)en accédant à. Vous pouvez également cliquer sur l’onglet **ressources supplémentaires** dans le volet de navigation de gauche du centre de conformité Microsoft 365 et sélectionner la fiche centre de sécurité et conformité Office 365.  
+Si vous recherchez une solution de conformité existante et qu’elle n’est pas disponible dans le centre de conformité Microsoft 365, vous pouvez toujours accéder aux solutions dans le &amp; Centre de sécurité conformité existant en accédant à [https://protection.office.com](https://protection.office.com) . Vous pouvez également cliquer sur l’onglet **ressources supplémentaires** dans le volet de navigation de gauche du centre de conformité Microsoft 365 et sélectionner la fiche centre de sécurité et conformité Office 365.  
 
 ## <a name="next-steps"></a>Étapes suivantes
 

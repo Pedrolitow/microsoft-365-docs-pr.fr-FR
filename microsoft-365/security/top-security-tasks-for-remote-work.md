@@ -7,7 +7,7 @@ author: brendacarter
 manager: johmar
 audience: Admin
 ms.topic: tutorial
-ms.service: o365-seccomp
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - remotework
 description: Protégez votre courrier électronique et vos données professionnelles contre les menaces informatiques, notamment les ransomware, le hameçonnage et les pièces jointes malveillantes.
-ms.openlocfilehash: 1b21c59e95eccced66a7b64ec7c67354de53e59d
-ms.sourcegitcommit: 76edb413cbd7436252075ea7e314f5e1d07d8d55
+ms.openlocfilehash: f364b4100efb3d8b9ab4eda2e370794ca4f0f469
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44267178"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547973"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>12 premières tâches pour les équipes de sécurité qui prennent en charge le travail à domicile
 
@@ -35,11 +35,11 @@ Pour les clients qui utilisent nos plans d’entreprise, Microsoft vous recomman
 - Microsoft 365 E3 inclut Enterprise Mobility + Security (EMS) E3 et Azure AD P1
 - Microsoft 365 E5 inclut EMS E5 et Azure AD P2
   
-||**Task**| Tous les plans Office 365 Enterprise|**Microsoft 365 E3** |**Microsoft 365 E5**|
+||**Tâche**| Tous les plans Office 365 Enterprise|**Microsoft 365 E3** |**Microsoft 365 E5**|
 |:-----|:-----|:-----|:-----|:-----|
 |1       |[Activer l’authentification multifacteur Azure](#1-enable-azure-multi-factor-authentication-mfa)   |   ![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)  |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)   | ![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
 |2      | [Se protéger contre les menaces](#2-protect-against-threats) |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png) |  ![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)       | ![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)       | 
-|3      |  [Configurer la protection avancée contre les menaces Office 365](#3-configure-office-365-advanced-threat-protection)  |   |      |  ![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)     | 
+|3       |  [Configurer la protection avancée contre les menaces Office 365](#3-configure-office-365-advanced-threat-protection)  |   |      |  ![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)     | 
 |4       | [Configurer Azure Advanced Threat Protection (ATP)](#4-configure-azure-advanced-threat-protection)   |   |      |  ![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)     | 
 |5      |   [Activer la Protection Microsoft contre les menaces](#5-turn-on-microsoft-threat-protection)  |  |      | ![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
 |6       | [Configurer la protection des applications mobiles Intune pour les téléphones et les tablettes](#6-configure-intune-mobile-app-protection-for-phones-and-tablets) |    |  ![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)       |  ![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)       | 
@@ -47,7 +47,7 @@ Pour les clients qui utilisent nos plans d’entreprise, Microsoft vous recomman
 |8       |  [Inscrire des PC dans la gestion des appareils et exiger des PC conformes](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)   |  | ![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)        | ![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)        | 
 |9       | [Optimiser votre réseau pour la connectivité Cloud](#9-optimize-your-network-for-cloud-connectivity)  |  ![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png) |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)      |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)        | 
 |10    | [Former les utilisateurs](#10-train-users) |    ![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png) |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)      |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
-|a4 |[Pris en main de Microsoft Cloud App Security](#11-get-started-with-microsoft-cloud-app-security) |  |  |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)   |
+|11  |[Pris en main de Microsoft Cloud App Security](#11-get-started-with-microsoft-cloud-app-security) |  |  |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)   |
 |12  |[Surveiller les menaces et prendre des mesures](#12-monitor-for-threats-and-take-action) |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)  |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)  |
 | | | |
 
@@ -203,7 +203,7 @@ Microsoft 365 fournit les ressources suivantes pour aider les utilisateurs au se
 |Concept  |Ressources  |
 |---------|---------|
 |Microsoft 365     |[Voies de formation personnalisables](https://docs.microsoft.com/office365/customlearning/) <p>Ces ressources peuvent vous aider à réunir des formations pour les utilisateurs finaux de votre organisation.        |
-|Sécurité Microsoft 365 |[Module d’apprentissage : sécurisez votre organisation à l’aide de la sécurité intégrée et intelligente de Microsoft 365](https://docs.microsoft.com/learn/modules/security-with-microsoft-365) <p>Ce module vous permet de décrire les fonctionnalités de sécurité de Microsoft 365 et d’expliquer les avantages de ces fonctionnalités de sécurité. |
+|Sécurité Microsoft 365 |[Module d’apprentissage : sécurisez votre organisation à l’aide de la sécurité intégrée et intelligente de Microsoft 365](https://docs.microsoft.com/learn/modules/security-with-microsoft-365) <p>Ce module vous permet de décrire les fonctionnalités de sécurité de Microsoft 365 et d’expliquer les avantages de ces fonctionnalités de sécurité. |
 |Authentification multifacteur     | [Vérification en deux étapes : qu’est-ce que la page de vérification supplémentaire ?](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p>Cet article permet aux utilisateurs finaux de comprendre ce qu’est l’authentification multifacteur et pourquoi elle est utilisée au sein de votre organisation.    |
 | | |
 

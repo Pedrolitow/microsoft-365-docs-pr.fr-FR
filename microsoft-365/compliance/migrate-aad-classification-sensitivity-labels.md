@@ -7,15 +7,15 @@ manager: pamgreen
 audience: ITPro
 f1.keywords: NOCSH
 ms.topic: article
-ms.service: o365-seccomp
+ms.service: O365-seccomp
 localization_priority: Normal
 description: Cet article traite des étiquettes de confidentialité et de classification Azure Active Directory classiques.
-ms.openlocfilehash: 38a3dbe727f3d0759d427944016ae98440f2686f
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 2506e7f467a485878f1e26a23ee1071907b41614
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308171"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545658"
 ---
 # <a name="azure-active-directory-classification-and-sensitivity-labels-for-microsoft-365-groups"></a>Étiquettes de sensibilité et de classification Azure Active Directory pour les groupes Microsoft 365
 
@@ -48,8 +48,10 @@ Tableau 1. Comportement des charges de travail compatibles et non compatibles 
 
 > [!NOTE]
 > Dans le cas du client de bureau Outlook (Win 32), une fois que l’administrateur a activé les étiquettes de sensibilité sur son client, et que son utilisateur se trouve sur une version plus ancienne du client de bureau Outlook (Win 32) :
+>
 > - L’utilisateur voit des étiquettes de confidentialité apparaître sur l’ancienne version du client de bureau Outlook.
 > - Toutefois, lorsque l’utilisateur modifie un groupe et enregistre le groupe avec une étiquette de sensibilité, le paramètre de confidentialité sélectionné est remplacé par le paramètre de confidentialité de l’étiquette de sensibilité appliquée.
+>
 > Nous recommandons à vos utilisateurs sur une ancienne version du client Outlook de procéder à la mise à niveau vers la version la plus récente.
 
 ## <a name="scenario-2-tenant-is-already-using-classic-aad-classifications"></a>Scénario 2 : le client utilise déjà les [classifications](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell) AAD classiques
@@ -76,8 +78,10 @@ Tableau 2. Comportement des charges de travail compatibles et non compatibles 
 
 > [!NOTE]
 > Dans le cas du client de bureau Outlook (Win 32), une fois que l’administrateur a activé les étiquettes de sensibilité sur son client, et que son utilisateur se trouve sur une version plus ancienne du client de bureau Outlook (Win 32) :
+>
 > - L’utilisateur voit des étiquettes de confidentialité apparaître sur l’ancienne version du client de bureau Outlook.
 > - Toutefois, lorsque l’utilisateur modifie un groupe et enregistre le groupe avec une étiquette de sensibilité, le paramètre de confidentialité sélectionné est remplacé par le paramètre de confidentialité de l’étiquette de sensibilité appliquée.
+>
 > Nous recommandons à vos utilisateurs sur une ancienne version du client Outlook de procéder à la mise à niveau vers la version la plus récente.
 
 ### <a name="case-b-tenant-used-sensitivity-labels-for-documents-and-emails"></a>Case B : étiquettes de confidentialité utilisées par le client pour les documents et les e-mails
@@ -90,4 +94,3 @@ Tableau 2. Comportement des charges de travail compatibles et non compatibles 
 ## <a name="sample-script"></a>Exemple de script
 
 Pour obtenir un exemple de script permettant de migrer des groupes avec des étiquettes AAD classiques vers des étiquettes de sensibilité, consultez la rubrique [Classic Azure ad Group classification](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites#classic-azure-ad-group-classification).
-

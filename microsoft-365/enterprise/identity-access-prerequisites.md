@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 40910c00a91a1e98d01fe2e25a4f9aed828a024a
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 2c654cb0ec2afd138c7c9fb4b339b53a8522e5e4
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357973"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547203"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Tâches préalables à l’implémentation de stratégies d’accès aux identités et aux appareils
 
@@ -40,7 +40,7 @@ Le tableau suivant détaille les fonctionnalités prérequises et leur configura
 
 | Configuration | Exceptions |
 | :------------- | :-----------: |
-|  [Configurez la synchronisation de hachage de mot de passe](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization).  Cette option doit être activée pour détecter les informations d’identification divulguées et agir sur celles-ci pour un accès conditionnel basé sur les risques. **Remarque :** Ceci est obligatoire, que votre organisation utilise l’authentification fédérée hybride ou non. |  Cloud uniquement |
+|  [Configurez hachage](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization).  Cette option doit être activée pour détecter les informations d’identification divulguées et agir sur celles-ci pour un accès conditionnel basé sur les risques. **Remarque :** Ceci est obligatoire, que votre organisation utilise l’authentification fédérée ou non. |  Cloud uniquement |
 | [Activer l’authentification unique transparente](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso) pour authentifier automatiquement les utilisateurs lorsqu’ils se trouvent sur leur organisation périphériques connectés au réseau de votre organisation. | Cloud uniquement et fédéré  |
 | [Configurer des réseaux nommés](https://docs.microsoft.com/azure/active-directory/active-directory-known-networks-azure-portal). Azure AD Identity Protection collecte et analyse toutes les données de session disponibles pour générer un indice de risque. Nous vous recommandons de spécifier les plages d’adresses IP publiques de votre organisation pour votre réseau dans la configuration de réseaux Azure AD appelée Networks. Le trafic provenant de ces plages reçoit une note de risque réduite et le trafic en provenance de l’extérieur de l’environnement de l’organisation reçoit un score de risque plus élevé. | |
 |[Inscrivez tous les utilisateurs pour la réinitialisation du mot de passe en libre-service (SSPR) et l’authentification multifacteur (MFA)](https://docs.microsoft.com/azure/active-directory/authentication/concept-registration-mfa-sspr-converged). Nous vous recommandons d’enregistrer les utilisateurs pour l’authentification multifacteur Azure à l’avance. Azure AD Identity Protection utilise l’authentification multifacteur Azure pour effectuer une vérification de sécurité supplémentaire. De plus, pour l’expérience de connexion optimale, nous recommandons aux utilisateurs d’installer l' [application Microsoft Authenticator](https://docs.microsoft.com/azure/active-directory/user-help/microsoft-authenticator-app-how-to) et l’application portail d’entreprise Microsoft sur leurs appareils. Ceux-ci peuvent être installés à partir de l’App Store pour chaque plateforme. | |
@@ -49,7 +49,7 @@ Le tableau suivant détaille les fonctionnalités prérequises et leur configura
 | [Configurer la réécriture du mot de passe dans AD local](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started). L’écriture différée de mot de passe permet à Azure AD de demander aux utilisateurs de modifier leurs mots de passe locaux lorsqu’une compromission de compte à haut risque est détectée. Vous pouvez activer cette fonctionnalité à l’aide d’Azure AD Connect de l’une des deux manières suivantes : activer l' **écriture différée du mot de passe** dans l’écran des fonctionnalités facultatives de l’Assistant Installation d’Azure ad Connect ou l’activer via Windows PowerShell. | Cloud uniquement |
 | [Configurer la protection par mot de passe Azure ad](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad). La protection par mot de passe Azure AD détecte et bloque les mots de passe faibles connus et leurs variantes, et peut également bloquer des termes faibles supplémentaires propres à votre organisation. Les listes de mots de passe interdites globaux par défaut sont automatiquement appliquées à tous les utilisateurs d’un client Azure AD. Vous pouvez définir des entrées supplémentaires dans une liste de mots de passe interdits personnalisés. Lorsque les utilisateurs modifient ou réinitialisent leur mot de passe, ces listes de mots de passe bannis sont vérifiées pour appliquer l’utilisation de mots de passe forts. | |
 | [Activer la protection des identités Azure Active Directory](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection). Azure AD Identity Protection vous permet de détecter les vulnérabilités potentielles affectant les identités de votre organisation et de configurer une stratégie de correction automatisée sur un risque de connexion faible, moyen et élevé et un risque utilisateur.  | |
-| **Activer l’authentification moderne** pour [Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) et [Skype entreprise Online](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx). L’authentification moderne est une condition préalable à l’utilisation de l’authentification multifacteur (MFA). L’authentification moderne est activée par défaut pour les clients Office 2016, SharePoint Online et OneDrive entreprise. |  |
+| **Activer l’authentification moderne** pour [Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) et [Skype entreprise Online](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx). L’authentification moderne est une condition préalable à l’utilisation de l’authentification multifacteur. L’authentification moderne est activée par défaut pour les clients Office 2016, SharePoint et OneDrive entreprise. |  |
 |||
 
 ## <a name="recommended-client-configurations"></a>Configurations clientes recommandées
