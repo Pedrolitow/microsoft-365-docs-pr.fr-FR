@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Apprenez à créer et importer un type d’informations sensibles personnalisé pour la protection contre la perte de données dans le Centre de sécurité et conformité.
-ms.openlocfilehash: e0b2cbdad49c19e34237095b7825b4a3496fd570
-ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
+ms.openlocfilehash: e5669e51dd22c2f33334797a808b50ef1c0861fc
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45086621"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546766"
 ---
 # <a name="create-a-custom-sensitive-information-type-in-security--compliance-center-powershell"></a>Créer un type d’informations sensibles personnalisé dans l’interface PowerShell du Centre de sécurité et conformité
 
@@ -350,7 +350,7 @@ Lorsque vous avez terminé, votre élément RulePack doit ressembler à ce qui s
 
 Auparavant, vous utilisiez peut-être Exchange Online PowerShell pour importer vos types d’informations sensibles personnalisés pour DLP. Désormais, vos types d’informations sensibles personnalisés peuvent être utilisés dans le Centre d’administration Exchange et le Centre de sécurité et de conformité. Dans le cadre de cette amélioration, vous devez utiliser le Centre de sécurité et de conformité PowerShell pour importer vos types d’informations sensibles personnalisés (vous ne pouvez plus les importer à partir d’Exchange PowerShell). Vos types d’informations sensibles personnalisés continueront de fonctionner comme avant. Cependant, l’affichage des modifications apportées aux types d’informations sensibles personnalisés dans le Centre de sécurité et de conformité dans le Centre d’administration Exchange peut prendre jusqu’à une heure.
   
-Notez que, dans le Centre de sécurité et de conformité, vous pouvez utiliser la cmdlet **[New-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage?view=exchange-ps)** pour charger un package de règles (auparavant, dans le Centre d’administration Exchange, vous utilisiez la cmdlet **ClassificationRuleCollection**). 
+Notez que, dans le Centre de sécurité et de conformité, vous pouvez utiliser la cmdlet **[New-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage)** pour charger un package de règles (auparavant, dans le Centre d’administration Exchange, vous utilisiez la cmdlet **ClassificationRuleCollection**). 
   
 ## <a name="upload-your-rule-package"></a>Télécharger votre package de règles
 
@@ -381,13 +381,13 @@ Pour télécharger votre package de règles, procédez comme suit :
 
 4. Pour vérifier que vous avez correctement créé un nouveau type d’informations sensibles, effectuez l’une des opérations suivantes :
 
-   - Exécutez la cmdlet [Get-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtyperulepackage?view=exchange-ps) pour vérifier que le nouveau package de règles est répertorié :
+   - Exécutez la cmdlet [Get-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtyperulepackage) pour vérifier que le nouveau package de règles est répertorié :
 
      ```powershell
      Get-DlpSensitiveInformationTypeRulePackage
      ``` 
 
-   - Exécutez la cmdlet [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtype?view=exchange-ps) pour vérifier que le type d’informations sensibles est répertorié :
+   - Exécutez la cmdlet [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtype) pour vérifier que le type d’informations sensibles est répertorié :
 
      ```powershell
      Get-DlpSensitiveInformationType
@@ -395,7 +395,7 @@ Pour télécharger votre package de règles, procédez comme suit :
 
      Pour les types d’informations sensibles personnalisés, la valeur de propriété Publisher sera un numéro autre que Microsoft Corporation.
 
-   - Remplacez \<Name\> par la valeur Name du type d’informations sensibles (par exemple, Réf employé), puis exécutez la cmdlet [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtype?view=exchange-ps) :
+   - Remplacez \<Name\> par la valeur Name du type d’informations sensibles (par exemple, Réf employé), puis exécutez la cmdlet [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtype) :
 
      ```powershell
      Get-DlpSensitiveInformationType -Identity "<Name>"
@@ -456,7 +456,7 @@ Dans le Centre de Conformité et de sécurité PowerShell, il existe deux métho
 
 1. [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](https://go.microsoft.com/fwlink/p/?LinkID=799771)
 
-2. Pour supprimer un règle de package personnalisé, utilisez la cmdlet [Remove-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/remove-dlpsensitiveinformationtyperulepackage?view=exchange-ps) :
+2. Pour supprimer un règle de package personnalisé, utilisez la cmdlet [Remove-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/remove-dlpsensitiveinformationtyperulepackage) :
 
    ```powershell
    Remove-DlpSensitiveInformationTypeRulePackage -Identity "RulePackageIdentity"
@@ -474,13 +474,13 @@ Dans le Centre de Conformité et de sécurité PowerShell, il existe deux métho
 
 3. Afin de vérifier que vous avez correctement retiré un nouveau type d’informations sensibles, effectuez l’une des opérations suivantes :
 
-   - Exécutez la cmdlet [Get-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtyperulepackage?view=exchange-ps) et vérifiez que le package de règles n’est plus répertorié :
+   - Exécutez la cmdlet [Get-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtyperulepackage) et vérifiez que le package de règles n’est plus répertorié :
 
      ```powershell
      Get-DlpSensitiveInformationTypeRulePackage
      ```
 
-   - Exécutez la cmdlet [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtype?view=exchange-ps) pour vérifier que les types d’informations sensibles dans le package de règles supprimé ne sont plus répertoriés :
+   - Exécutez la cmdlet [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtype) pour vérifier que les types d’informations sensibles dans le package de règles supprimé ne sont plus répertoriés :
 
      ```powershell
      Get-DlpSensitiveInformationType
@@ -488,7 +488,7 @@ Dans le Centre de Conformité et de sécurité PowerShell, il existe deux métho
 
      Pour les types d’informations sensibles personnalisés, la valeur de propriété Publisher sera un numéro autre que Microsoft Corporation.
 
-   - Remplacez \<Name\> avec la valeur Name du type d’informations sensibles (par exemple, ID d’employé), puis exécutez la cmdlet [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtype?view=exchange-ps) pour vérifier que le type d’informations sensibles n’est plus répertorié :
+   - Remplacez \<Name\> avec la valeur Name du type d’informations sensibles (par exemple, ID d’employé), puis exécutez la cmdlet [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtype) pour vérifier que le type d’informations sensibles n’est plus répertorié :
 
      ```powershell
      Get-DlpSensitiveInformationType -Identity "<Name>"
@@ -511,7 +511,7 @@ Pour vous connecter à l’interface PowerShell du Centre de sécurité et confo
 > [!NOTE]
 > Si vous avez une copie du fichier XML (par exemple, vous venez de le créer et de l’importer), vous pouvez passer directement à l’étape suivante pour modifier le fichier XML.
 
-1. Si vous ne connaissez pas encore le nom du package de règles personnalisé, exécutez la cmdlet [Get-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtype?view=exchange-ps) pour le trouver :
+1. Si vous ne connaissez pas encore le nom du package de règles personnalisé, exécutez la cmdlet [Get-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtype) pour le trouver :
 
    ```powershell
    Get-DlpSensitiveInformationTypeRulePackage
@@ -520,7 +520,7 @@ Pour vous connecter à l’interface PowerShell du Centre de sécurité et confo
    > [!NOTE]
    > Le package de règles intégré qui contient les types d’informations sensibles intégrés s’intitule Microsoft Rule Package. Le package de règles qui contient les types d’informations sensibles personnalisés que vous avez créés dans l’interface utilisateur du Centre de sécurité et conformité est nommé Microsoft.SCCManaged.CustomRulePack.
 
-2. Utilisez la cmdlet [Get-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtyperulepackage?view=exchange-ps) pour stocker le package de règles personnalisé dans une variable :
+2. Utilisez la cmdlet [Get-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtyperulepackage) pour stocker le package de règles personnalisé dans une variable :
 
    ```powershell
    $rulepak = Get-DlpSensitiveInformationTypeRulePackage -Identity "RulePackageName"
@@ -550,7 +550,7 @@ Les types d’informations sensibles dans le fichier XML et d’autres élément
 
 #### <a name="step-3-import-the-updated-xml-file-back-into-the-existing-rule-package"></a>Étape 3: Importer de nouveau le fichier XML mis à jour vers le package de règles existant.
 
-Pour réimporter le XML mis à jour dans le package de règles existant, utilisez la cmdlet [Set-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/set-dlpsensitiveinformationtyperulepackage?view=exchange-ps) :
+Pour réimporter le XML mis à jour dans le package de règles existant, utilisez la cmdlet [Set-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/set-dlpsensitiveinformationtyperulepackage) :
 
 ```powershell
 Set-DlpSensitiveInformationTypeRulePackage -FileData ([Byte[]]$(Get-Content -Path "C:\My Documents\External Sensitive Info Type Rule Collection.xml" -Encoding Byte -ReadCount 0))

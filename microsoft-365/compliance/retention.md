@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En savoir plus sur les stratégies de rétention et les étiquettes de rétention, qui permettent de conserver les éléments dont vous avez besoin et de supprimer ceux qui ne vous servent pas.
-ms.openlocfilehash: ed8390b9c773e04723c0f409eb9649e20af0dac3
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: 4dc328cdba9f01177b3e8239ab2c09317774eb31
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778398"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546542"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>En savoir plus sur les stratégies et les étiquettes de rétention
 
@@ -316,7 +316,7 @@ Les actions de l'administrateur concernant les politiques de rétention et les �
 
 ## <a name="powershell-cmdlets-for-retention-policies-and-retention-labels"></a>Applets de commande pour les stratégies et étiquettes de rétention
 
-Pour utiliser les applets de commande, vous devez tout d’abord [vous connecter au Centre de sécurité et conformité Office 365 – PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell). Utilisez ensuite l’une des applets de commande suivantes :
+Pour utiliser les applets de commande, vous devez tout d’abord [vous connecter au Centre de sécurité et conformité Office 365 – PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell). Utilisez ensuite l’une des applets de commande suivantes :
 
 - [Get-ComplianceTag](https://docs.microsoft.com/powershell/module/exchange/get-compliancetag)
 

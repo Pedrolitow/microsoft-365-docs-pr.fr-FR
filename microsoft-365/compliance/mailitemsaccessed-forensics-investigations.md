@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Utilisez l’action d’audit de boîte aux lettres MailItemsAccessed pour effectuer des enquêtes légales sur des comptes d'utilisateur compromis.
-ms.openlocfilehash: cd76a49e1f7b6e52d2a21e74162781771a8552a1
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 908c2a22b05d7daef8d55c7e0aac61f25489692a
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327648"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546290"
 ---
 # <a name="use-advanced-audit-to-investigate-compromised-accounts"></a>Utiliser l’audit avancé pour analyser des comptes compromis
 
@@ -67,7 +67,7 @@ Pour consulter un exemple d’affichage de la propriété IsThrottled dans un en
 
 L’audit de boîte aux lettres génère des enregistrements d’audit pour l’accès aux courriers afin d'être certain que les messages n’ont pas été compromis. En conséquence, si des circonstances ne permettent pas d'affirmer qu'un accès aux données a eu lieu, nous supposons qu'il s'est produit en enregistrant toute l'activité d'accès au courrier.
 
-L'enregistrement à l'aide d’audit MailItemsAccessed à des fins d’enquête légale est généralement effectué après la résolution d’une violation de données et l'éviction de la personne malveillante. Pour commencer votre enquête, vous devez identifier les boîtes aux lettres qui ont été compromises et déterminer la période durant laquelle la personne malveillante a eu accès aux boîtes aux lettres de votre organisation. Puis vous pouvez utiliser les applets de commande **Search-UnifiedAuditLog** ou **Search-MailboxAuditLog** dans [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) pour rechercher les enregistrements d’audit correspondant à la violation de données. 
+L'enregistrement à l'aide d’audit MailItemsAccessed à des fins d’enquête légale est généralement effectué après la résolution d’une violation de données et l'éviction de la personne malveillante. Pour commencer votre enquête, vous devez identifier les boîtes aux lettres qui ont été compromises et déterminer la période durant laquelle la personne malveillante a eu accès aux boîtes aux lettres de votre organisation. Puis vous pouvez utiliser les applets de commande **Search-UnifiedAuditLog** ou **Search-MailboxAuditLog** dans [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) pour rechercher les enregistrements d’audit correspondant à la violation de données. 
 
 Vous pouvez exécuter l’une des commandes suivantes pour rechercher les enregistrements d’audit MailItemsAccessed :
 

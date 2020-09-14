@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment identifier, surveiller et protéger automatiquement les informations sensibles de votre organisation dans Office 365.
-ms.openlocfilehash: 8d507a32a6f36555eabfa0216febdb167ad4241c
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: fc2287743bbe0239442e9507464dda4599880eb0
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127531"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546214"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Vue d’ensemble de la protection contre la perte de données
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -529,19 +529,19 @@ Ces autorisations sont requises uniquement pour créer et appliquer une stratég
 
 Pour utiliser la plupart des applets de commande du Centre de conformité et de sécurité, vous devez :
   
-1. [Vous connecter au Centre de sécurité &amp; conformité Office 365 à l’aide de PowerShell à distance](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+1. [Vous connecter au Centre de sécurité &amp; conformité Office 365 à l’aide de PowerShell à distance](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
     
-2. Utiliser l’une de ces [applets de commande de stratégie et de conformité DLP](https://docs.microsoft.com/powershell/module/exchange/export-dlppolicycollection?view=exchange-ps).
+2. Utiliser l’une de ces [applets de commande de stratégie et de conformité DLP](https://docs.microsoft.com/powershell/module/exchange/export-dlppolicycollection).
     
 Toutefois, les rapports DLP doivent extraire des données de Microsoft 365, y compris Exchange Online. Pour cette raison, les **applets de commande des rapports DLP sont disponibles dans Exchange Online Powershell (et non dans le centre de conformité &amp; sécurité Powershell)**. Par conséquent, pour utiliser les applets de commande pour les rapports DLP, vous devez :
   
-1. [Vous connecter à Exchange Online à l'aide de Remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
+1. [Vous connecter à Exchange Online à l'aide de Remote PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
     
 2. Utilisez l’une de ces applets de commande pour les rapports DLP :
     
-    - [Get-DlpDetectionsReport](https://docs.microsoft.com/powershell/module/exchange/Get-DlpDetectionsReport?view=exchange-ps)
+    - [Get-DlpDetectionsReport](https://docs.microsoft.com/powershell/module/exchange/Get-DlpDetectionsReport)
 
-    - [Get-DlpDetailReport](https://docs.microsoft.com/powershell/module/exchange/Get-DlpDetailReport?view=exchange-ps)
+    - [Get-DlpDetailReport](https://docs.microsoft.com/powershell/module/exchange/Get-DlpDetailReport)
     
 ## <a name="more-information"></a>Plus d’informations
 

@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Utilisez le Centre de sécurité et conformité pour rechercher dans le journal d’audit unifié les activités des utilisateurs et des administrateurs de votre organisation. '
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d65b64f80dc9d8c3c799e8044d6fc5d3dfec4321
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 21a8ea6f930efcd106c541021c9b9bd47af43f23
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357806"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547250"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Effectuer des recherches dans le journal d’audit depuis le Centre de sécurité et conformité 
 
@@ -830,14 +830,14 @@ Le tableau suivant répertorie les événements provoquant des activités d’é
 
 |Nom facile à retenir|Opération|Description|
 |:-----|:-----|:-----|
-| Paramètres configurés pour une stratégie de rétention |NewRetentionComplianceRule |L’administrateur a configuré les paramètres de rétention pour une nouvelle stratégie de rétention. Les paramètres de rétention incluent la durée de conservation des éléments et ce qu’il advient des éléments à l’expiration de la période de rétention (comme la suppression d’éléments, la conservation des éléments ou leur conservation puis leur suppression). Cette activité correspond également à l’exécution du cmdlet [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancerule).|
+| Paramètres configurés pour une stratégie de rétention |NewRetentionComplianceRule |L’administrateur a configuré les paramètres de rétention pour une nouvelle stratégie de rétention. Les paramètres de rétention incluent la durée de conservation des éléments et ce qu’il advient des éléments à l’expiration de la période de rétention (comme la suppression d’éléments, la conservation des éléments ou leur conservation puis leur suppression). Cette activité correspond également à l’exécution du cmdlet [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancerule).|
 | Étiquette de rétention créée |NewComplianceTag |Un administrateur a créé une étiquette de rétention.|
 | Stratégie de rétention créée |NewRetentionCompliancePolicy|Un administrateur a créé une stratégie de rétention.|
 | Paramètres supprimés d’une stratégie de rétention| RemoveRetentionComplianceRule<br/>| Un administrateur a supprimé les paramètres de configuration d’une stratégie de rétention. Cette activité est probablement enregistrée lorsqu’un administrateur supprime une stratégie de rétention ou exécute le cmdlet [Remove-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/Remove-RetentionComplianceRule).|
 | Étiquette de rétention supprimée |RemoveComplianceTag | Un administrateur a supprimé une étiquette de rétention.|
 | Stratégie de rétention supprimée |RemoveRetentionCompliancePolicy<br/> |Un administrateur a supprimé une stratégie de rétention. |
 | Option d’enregistrement réglementaire activée pour les étiquettes de rétention<br/> |SetRestrictiveRetentionUI |Un administrateur a exécuté le cmdlet [RegulatoryComplianceUI](https://docs.microsoft.com/powershell/module/exchange/set-regulatorycomplianceui) afin qu’un administrateur puisse ensuite sélectionner l’option de configuration de l’interface utilisateur pour une étiquette de rétention et identifier le contenu en tant qu’enregistrement réglementaire.|
-| Paramètres mis à jour pour une stratégie de rétention | SetRetentionComplianceRule | L’administrateur a modifié les paramètres de rétention d’une stratégie de rétention existante. Les paramètres de rétention incluent la durée de conservation des éléments et ce qu’il advient des éléments à l’expiration de la période de rétention (comme la suppression d’éléments, la conservation des éléments ou leur conservation puis leur suppression). Cette activité correspond également à l’exécution du cmdlet [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentioncompliancerule). |
+| Paramètres mis à jour pour une stratégie de rétention | SetRetentionComplianceRule | L’administrateur a modifié les paramètres de rétention d’une stratégie de rétention existante. Les paramètres de rétention incluent la durée de conservation des éléments et ce qu’il advient des éléments à l’expiration de la période de rétention (comme la suppression d’éléments, la conservation des éléments ou leur conservation puis leur suppression). Cette activité correspond également à l’exécution du cmdlet [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancerule). |
 | Étiquette de rétention mise à jour |SetComplianceTag  | Un administrateur a mis à jour une étiquette de rétention existante.|
 | Stratégie de rétention mise à jour |SetRetentionCompliancePolicy |Un administrateur a mis à jour une stratégie de rétention existante. Les mises à jour qui déclenchent cet événement incluent l’ajout ou l’exclusion d’emplacements de contenu auxquels la stratégie de rétention est appliquée.|
 

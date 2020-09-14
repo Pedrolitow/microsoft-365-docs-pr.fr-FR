@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de critère de diffusion, vous pouvez affecter automatiquement une étiquette à un document ou message électronique ou vous pouvez inviter les utilisateurs pour sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: efe09796b7c3048fd9c6026a5e6a2ca6fbc234a3
-ms.sourcegitcommit: 2b8c3fc39a7cbd4ca35e98dca430d2470cd2c925
+ms.openlocfilehash: 88ad35b2bc07f85a86a1900d9f551b92d4646ba1
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47427033"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546726"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette sensibilité au contenu
 
@@ -315,9 +315,9 @@ Vous pouvez également afficher les résultats de votre stratégie d’étiqueta
 
 ### <a name="use-powershell-for-auto-labeling-policies"></a>Utiliser PowerShell pour les stratégies d’étiquetage automatique
 
-Vous pouvez désormais utiliser l’[Interface PowerShell du Centre de sécurité et conformité](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell) pour créer et configurer les stratégies d’étiquetage automatique. Cela signifie que vous pouvez maintenant créer des scripts pour une prise en charge complète de la création et de la maintenance de vos stratégies d’étiquetage automatique, ce qui permet également de spécifier plus efficacement plusieurs URL pour les emplacements OneDrive et SharePoint.
+Vous pouvez désormais utiliser l’[Interface PowerShell du Centre de sécurité et conformité](https://docs.microsoft.com/powershell/exchange/scc-powershell) pour créer et configurer les stratégies d’étiquetage automatique. Cela signifie que vous pouvez maintenant créer des scripts pour une prise en charge complète de la création et de la maintenance de vos stratégies d’étiquetage automatique, ce qui permet également de spécifier plus efficacement plusieurs URL pour les emplacements OneDrive et SharePoint.
 
-Avant d’exécuter les commandes dans PowerShell, vous devez tout d’abord vous [connecter au Centre de sécurité et conformité PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+Avant d’exécuter les commandes dans PowerShell, vous devez tout d’abord vous [connecter au Centre de sécurité et conformité PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
 Pour créer une stratégie d’étiquetage automatique : 
 

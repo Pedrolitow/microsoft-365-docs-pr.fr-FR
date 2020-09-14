@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Utilisez l’outil recherche de contenu dans le centre de conformité et de sécurité pour rechercher et exporter des données de conversation Teams pour les utilisateurs locaux dans un déploiement hybride Exchange.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 159c9c674feca4b01618289b194dd162c9020d59
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: e3bb1f187faf3196dae6aa663af89dcb2b9e7e53
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818883"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547594"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users"></a>Recherche de boîtes aux lettres sur le cloud des utilisateurs locaux
 
@@ -110,7 +110,7 @@ Une fois la fonctionnalité activée, vous pouvez utiliser la recherche de conte
 
 Vous pouvez utiliser les applets de commande **New-ComplianceSearch** et **ComplianceSearch** dans le centre de sécurité et conformité PowerShell pour effectuer une recherche dans la boîte aux lettres basée sur le Cloud pour les utilisateurs locaux. Comme indiqué précédemment, vous n’êtes pas obligé de soumettre une demande de support pour utiliser PowerShell pour rechercher des données de conversation Teams pour les utilisateurs locaux. 
   
-1. [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+1. [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
 2. Exécutez la commande PowerShell suivante pour créer une recherche de contenu qui recherche dans les boîtes aux lettres basées sur le cloud des utilisateurs locaux.
 

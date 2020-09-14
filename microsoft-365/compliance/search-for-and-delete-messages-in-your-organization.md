@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Utilisez la fonctionnalité de recherche et de purge dans le Centre de sécurité et de conformité pour rechercher et supprimer un message électronique dans toutes les boîtes aux lettres de votre organisation.
-ms.openlocfilehash: e6183104d8cacf0ae75a2a81073dee85a128fcb2
-ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
+ms.openlocfilehash: f4bcd012708c0b7e9fa37b06288cda18ad4766cf
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46845929"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546532"
 ---
 # <a name="search-for-and-delete-email-messages"></a>Rechercher et supprimer des messages électroniques
 
@@ -105,7 +105,7 @@ Start-ComplianceSearch -Identity $Search.Identity
 
 ## <a name="step-2-connect-to-security--compliance-center-powershell"></a>Étape 2 : connectez-vous au Centre de sécurité et conformité PowerShell
 
-L’étape suivante consiste à se connecter au Centre de sécurité et conformité PowerShell de votre organisation. Pour consulter des instructions détaillées, voir [Se connecter au Centre de sécurité et conformité PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+L’étape suivante consiste à se connecter au Centre de sécurité et conformité PowerShell de votre organisation. Pour consulter des instructions détaillées, voir [Se connecter au Centre de sécurité et conformité PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
 Une fois que vous vous êtes connecté au Centre de sécurité et de conformité PowerShell, exécutez les applets de commande **New-ComplianceSearch** et **Start-ComplianceSearch** préparés à l’étape précédente.
 

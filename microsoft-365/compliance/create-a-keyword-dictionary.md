@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez les étapes principales de la création d’un dictionnaire de mots clés dans le Centre de sécurité et conformité Office 365.
-ms.openlocfilehash: bad95e9a5605631de3e8652e7243909f28b2abde
-ms.sourcegitcommit: b144e8ba1ab0c40fa7e0e8e893b5cb44aa2d8243
+ms.openlocfilehash: 7fe425a1f8ac954c6c24752927b218fc7e6f37c7
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47282734"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547008"
 ---
 # <a name="create-a-keyword-dictionary"></a>Créer un dictionnaire de mots clés
 
@@ -86,7 +86,7 @@ Procédez comme suit pour créer et importer des mots clés pour un dictionnaire
     
 ## <a name="create-a-keyword-dictionary-from-a-file-using-powershell"></a>Création d’un dictionnaire de mots clés à partir d’un fichier avec PowerShell
 
-Lorsque vous devez créer un dictionnaire volumineux, c’est souvent pour utiliser les mots clés d’un fichier ou d’une liste exportée à partir d’une autre source. Dans cet exemple, vous allez créer un dictionnaire de mots clés, contenant une liste de langages inappropriés à filtrer dans un courrier électronique externe. Vous devez d’abord [vous connecter au Centre de sécurité &amp; de conformité PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+Lorsque vous devez créer un dictionnaire volumineux, c’est souvent pour utiliser les mots clés d’un fichier ou d’une liste exportée à partir d’une autre source. Dans cet exemple, vous allez créer un dictionnaire de mots clés, contenant une liste de langages inappropriés à filtrer dans un courrier électronique externe. Vous devez d’abord [vous connecter au Centre de sécurité &amp; de conformité PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
   
 1. Copiez les mots clés dans un fichier texte et assurez-vous que chaque mot clé est sur une ligne distincte.
     

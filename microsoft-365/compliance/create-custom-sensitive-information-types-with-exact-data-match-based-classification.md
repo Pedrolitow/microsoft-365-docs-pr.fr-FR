@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Découvrez comment créer des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f4bbbe8726370297e9ef6317cd468789bb3b3bfe
-ms.sourcegitcommit: 97ef8f846939c3d31bb0638edf07bb89463ace0b
+ms.openlocfilehash: 1c47d682d7b3c52fa5ca5b71386a764f3b3da693
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "47300432"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546956"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Créez des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
 
@@ -141,7 +141,7 @@ La configuration de la classification basée sur EDM inclut les étapes suivante
       </EdmSchema>
       ```
 
-4. Connectez-vous au Centre de sécurité et conformité en utilisant la procédure [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+4. Connectez-vous au Centre de sécurité et conformité en utilisant la procédure [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
 5. Pour charger le schéma de base de données, exécutez les cmdlets suivantes, l’une après l’autre :
 
@@ -273,7 +273,7 @@ Si vous souhaitez modifier votre fichier **edm.xml**, par exemple pour changer l
 
 1. Modifiez votre fichier **edm.xml** (présenté dans la section  [Définir le schéma](#define-the-schema-for-your-database-of-sensitive-information)  de cet article).
 
-2. Connectez-vous au Centre de sécurité et conformité en utilisant la procédure [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+2. Connectez-vous au Centre de sécurité et conformité en utilisant la procédure [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
 3. Pour mettre à jour votre schéma de base de données, exécutez les cmdlets suivantes, l’une après l’autre :
 
@@ -302,7 +302,7 @@ Si vous souhaitez modifier votre fichier **edm.xml**, par exemple pour changer l
 
 (Le cas échéant) Si vous voulez supprimer le schéma que vous utilisez pour la classification EDM, procédez comme suit :
 
-1. Connectez-vous au Centre de sécurité et conformité en utilisant la procédure [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+1. Connectez-vous au Centre de sécurité et conformité en utilisant la procédure [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
 2. Exécutez les applets de commande PowerShell suivantes, en remplaçant le nom de magasin de données « patient records » par celui que vous voulez supprimer :
 
@@ -647,5 +647,5 @@ Les types d’informations sensibles EDM pour les scénarios suivants sont en co
 - [Types d’informations sensibles personnalisés](custom-sensitive-info-types.md)
 - [Vue d’ensemble des stratégies DLP](data-loss-prevention-policies.md)
 - [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
-- [New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/new-dlpedmschema?view=exchange-ps)
+- [New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/new-dlpedmschema)
 

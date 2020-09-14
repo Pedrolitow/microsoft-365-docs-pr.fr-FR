@@ -12,28 +12,28 @@ ms.service: O365-seccomp
 localization_priority: Priority
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4efb3803df2baa1ca37aeda05ae81947c3b65010
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 5ee42a12f65ad5eff0a33ef2b61d328ebdc7af3e
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036259"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547330"
 ---
 # <a name="gdpr-for-office-on-premises-servers"></a>RGPD pour les serveurs Office locaux
 
 Le Règlement général sur la protection des données (RGPD) présente les exigences que doivent respecter les organisations pour protéger les données personnelles et répondre aux demandes de personnes concernées de façon appropriée. Cette série d’articles présente les approches recommandées pour les charges de travail locales :
 
--   [SharePoint Server](gdpr-for-sharepoint-server.md)
+- [SharePoint Server](gdpr-for-sharepoint-server.md)
 
--   [Exchange Server](gdpr-for-exchange-server.md)
+- [Exchange Server](gdpr-for-exchange-server.md)
 
--   [Skype Entreprise Server](gdpr-for-skype-for-business-server.md)
+- [Skype Entreprise Server](gdpr-for-skype-for-business-server.md)
 
--   [Project Server](gdpr-for-project-server.md)
+- [Project Server](gdpr-for-project-server.md)
 
--   [Office Web Apps Server et Office Online Server](gdpr-for-office-online-server.md)
+- [Office Web Apps Server et Office Online Server](gdpr-for-office-online-server.md)
 
--   [Partages de fichiers en local](gdpr-for-on-premises-file-shares.md)
+- [Partages de fichiers en local](gdpr-for-on-premises-file-shares.md)
 
 Pour plus d’informations sur le RGPD et sur l’aide que peut vous apporter Microsoft, reportez-vous au [centre de gestion de la confidentialité](https://www.microsoft.com/trust-center/privacy/gdpr-overview
 ).
@@ -42,17 +42,20 @@ Avant d’entreprendre toute action concernant des données locales, consultez v
 
 L’illustration suivante regroupe les fonctionnalités que nous vous recommandons d’utiliser pour chacune des charges de travail suivantes afin de repérer, classer, protéger et surveiller les données personnelles. Consultez les articles de cette section pour obtenir plus d’informations.
 
-![](../media/gdpr-for-office-servers-image1.png)
+![Diagramme décrivant les fonctionnalités de découverte, de classement, de protection et de surveillance des données personnelles dans les charges de travail](../media/gdpr-for-office-servers-image1.png)
 
 ## <a name="illustration-description"></a>Description de l’illustration
 
 Concernant l’accessibilité, le tableau suivant fournit les mêmes exemples dans l’illustration.
 
-|             |Partages de fichiers Windows Server|SharePoint Server|Exchange Server|Skype Entreprise|Project Server|
-|:------------|:-------------------------|:----------------|:--------------|:-----------------|:-------------|
-|Découvrir|Scanneur Azure Information Protection*|Centre de recherche ou eDiscovery (une fois les données classées) ; scanneur Azure Information Protection*|Portail eDiscovery Exchange|Portail eDiscovery Exchange|Scripts SQL de découverte et d’exportation|
-|Classer|Scanneur Azure Information Protection* ; types d’informations sensibles Office 365|Scanneur Azure Information Protection* ; types d’informations sensibles Office 365|Balises et stratégies de rétention Exchange|Balises et stratégies de rétention Exchange||
-|Protéger||Règles de protection contre la perte de données Exchange Server ; autorisations, protection IRM pour bibliothèques|Règles de protection contre la perte de données Exchange Server ; intégration IRM avec Exchange Server|||
-|Surveiller|Intégrer des outils SIEM aux journaux|Intégrer des outils SIEM aux journaux|Intégrer des outils SIEM aux journaux|Intégrer des outils SIEM aux journaux|Intégrer des outils SIEM aux journaux|
+****
 
-*Veuillez noter que toute protection chiffre le fichier, empêchant ainsi SharePoint Server de trouver les types d’informations sensibles dans les fichiers protégés.
+|Action|Partages de fichiers Windows Server|SharePoint Server|Exchange Server|Skype Entreprise|Project Server|
+|---|---|---|---|---|---|
+|Découvrir|Scanneur Azure Information Protection<sup>\*</sup>|Centre de recherche ou eDiscovery (une fois les données classées) <br/><br/> Scanneur Azure Information Protection<sup>\*</sup>|Portail eDiscovery Exchange|Portail eDiscovery Exchange|Scripts SQL de découverte et d’exportation|
+|Classer|Scanneur Azure Information Protection<sup>\*</sup> <br/><br/> Types d'informations sensibles Office 365|Scanneur Azure Information Protection<sup>\*</sup> <br/><br/> Types d'informations sensibles Office 365|Balises et stratégies de rétention Exchange|Balises et stratégies de rétention Exchange||
+|Protéger||Règles de protection contre la perte de données Exchange Server <br/><br/> Autorisations, protection par IRM pour les bibliothèques|Règles de protection contre la perte de données Exchange Server <br/><br/> Intégration IRM à Exchange Server|||
+|Surveiller|Intégrer des outils SIEM aux journaux|Intégrer des outils SIEM aux journaux|Intégrer des outils SIEM aux journaux|Intégrer des outils SIEM aux journaux|Intégrer des outils SIEM aux journaux|
+|
+
+<sup>\*</sup>Veuillez noter qu’une protection chiffre le fichier. Cela empêche SharePoint Server de trouver les types d’informations sensibles dans les fichiers protégés.
