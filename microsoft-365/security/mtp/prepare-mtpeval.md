@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: da0fd99aaa533c6e4f65b5b279adcd9a4b648c9c
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: ad2f34fbb94cafd22976c6ff7c75cdd254e913e3
+ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049626"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "47650092"
 ---
 # <a name="prepare-your-microsoft-threat-protection-trial-lab-environment"></a>Préparer votre environnement de laboratoire d’évaluation de la protection contre les menaces Microsoft
 
@@ -35,12 +35,12 @@ La création d’un environnement de laboratoire de test Microsoft Threat Protec
     <td align="center" style="width:25%; border:0;" bgcolor="#d5f5e3">
       <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval"> 
         <img src="../../media/prepare.png" alt="Prepare your Microsoft Threat Protection trial lab environment" title="Préparer votre environnement de laboratoire d’évaluation de la protection contre les menaces Microsoft" />
-      <br/>Phase 1 : préparer</a><br>
+      <br/>Phase 1 : préparer </a><br>
     </td>
      <td align="center"  >
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/setup-mtpeval">
         <img src="../../media/setup.png" alt="Set up your Microsoft Threat Protection trial lab environment" title="Configuration de votre environnement de laboratoire d’évaluation de la protection contre les menaces Microsoft" />
-      <br/>Phase 2 : configuration</a><br>
+      <br/>Phase 2 : configuration </a><br>
         </td>
     <td align="center">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval">
@@ -66,7 +66,7 @@ Vous êtes actuellement en phase de préparation.
 
 La préparation est essentielle à tout déploiement réussi. Cette section vous guide tout au long de ce que vous devez prendre en compte lors de la préparation de la création d’un environnement de laboratoire d’évaluation pour votre déploiement de la protection contre les menaces Microsoft.
 
-## <a name="prerequisites"></a>Conditions requises
+## <a name="prerequisites"></a>Configuration requise
 Découvrez la gestion des licences, la configuration matérielle et logicielle requise, ainsi que d’autres paramètres de configuration pour mettre en service et utiliser la protection contre les menaces Microsoft. Voir la configuration minimale requise pour la [protection contre les menaces Microsoft](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites?view=o365-worldwide), [Microsoft Defender atp](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements), [Office 365 ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description), [Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites), [sécurité des applications Cloud Microsoft](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites).
 
 ## <a name="stakeholders-and-sign-off"></a>Parties prenantes et déconnexion
@@ -83,7 +83,7 @@ Ajoutez des parties prenantes dans le tableau ci-dessous selon les besoins de vo
 
 -   I = informé de ce projet
 
-| Nom                 | Role                                                                                                                                                                                                          | Action |
+| Nom                 | Rôle                                                                                                                                                                                                          | Action |
 |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|
 | Entrer le nom et l’adresse de messagerie | **Directeur de la sécurité des informations (CISO)** *un représentant exécutif qui sert de sponsor au sein de l’Organisation pour le déploiement de la nouvelle technologie.*                                                  | C'     |
 | Entrer le nom et l’adresse de messagerie | **Directeur du centre d’opérations Cyber Defense (Cdoc)** *représentant de l’équipe Cdoc chargée de définir la manière dont cette modification est alignée sur les processus de l’équipe des opérations de sécurité des clients.*       | C'     |
@@ -126,13 +126,11 @@ Le tableau ci-dessous indique l’ordre dans lequel Microsoft recommande de conf
 
 | Composant                               | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Classement de la commande de configuration |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
-| Office 365-Protection avancée contre les menaces| Office 365 ATP protège votre organisation contre les menaces malveillantes posées par les messages électroniques, les liens (URL) et les outils de collaboration. <br> [Pour en savoir plus.](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide)                                                                                                                                                                                                                                             | 0,1                   |
-|Azure Advanced Threat Protection|Azure ATP utilise des signaux Active Directory pour identifier, détecter et examiner les menaces avancées, les identités compromises et les actions malveillantes dirigées vers votre organisation. <br> [En savoir plus](https://docs.microsoft.com/azure-advanced-threat-protection/).| n°2 |
-|Microsoft Cloud App Security| La sécurité des applications Cloud Microsoft est un courtier en matière de sécurité d’accès au Cloud (CASB) qui fonctionne sur plusieurs nuages. Il offre une visibilité riche, un contrôle sur le déplacement des données et des analyses sophistiquées pour identifier et combattre Cyber dans tous vos services Cloud. <br> [En savoir plus](https://docs.microsoft.com/cloud-app-security/).                                                                                                                                                                                                                                                                                                                                                                       |3                   |
-|Microsoft Defender – Protection avancée contre les menaces | Les fonctionnalités de détection et de réponse des points de terminaison de Microsoft Defender – Protection avancée contre les menaces assurent des détections avancées des attaques en quasi temps réel et exploitables. Les analystes de la sécurité peuvent hiérarchiser efficacement les alertes, avoir une meilleure visibilité de l’ampleur d’une faille et prendre des mesures correctives pour remédier aux menaces. <br> [Pour en savoir plus.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)                                     |4                    |                                                                                                                                                                                                                                    
+| Office 365 – Protection avancée contre les menaces| Office 365 ATP protège votre organisation contre les menaces malveillantes posées par les messages électroniques, les liens (URL) et les outils de collaboration. <br> [Pour en savoir plus.](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide)                                                                                                                                                                                                                                             | 1                    |
+|Azure Advanced Threat Protection|Azure ATP utilise des signaux Active Directory pour identifier, détecter et examiner les menaces avancées, les identités compromises et les actions malveillantes dirigées vers votre organisation. <br> [En savoir plus](https://docs.microsoft.com/azure-advanced-threat-protection/).| 2  |
+|Microsoft Cloud App Security| La sécurité des applications Cloud Microsoft est un courtier en matière de sécurité d’accès au Cloud (CASB) qui fonctionne sur plusieurs nuages. Il offre une visibilité riche, un contrôle sur le déplacement des données et des analyses sophistiquées pour identifier et combattre Cyber dans tous vos services Cloud. <br> [En savoir plus](https://docs.microsoft.com/cloud-app-security/).                                                                                                                                                                                                                                                                                                                                                                       |3                    |
+|Microsoft Defender – Protection avancée contre les menaces | Les fonctionnalités de détection et de réponse des points de terminaison de Microsoft Defender – Protection avancée contre les menaces assurent des détections avancées des attaques en quasi temps réel et exploitables. Les analystes de la sécurité peuvent hiérarchiser efficacement les alertes, avoir une meilleure visibilité de l’ampleur d’une faille et prendre des mesures correctives pour remédier aux menaces. <br> [Pour en savoir plus.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)                                     |4                    |                                                                                                                                                                                                                                    
 
 ## <a name="next-step"></a>Étape suivante
-|||
-|:-------|:-----|
-|![Phase 2 : configuration](../../media/setup.png) <br>[Phase 2 : configuration](setup-mtpeval.md) | Configurer votre environnement de laboratoire d’évaluation de la protection contre les menaces Microsoft
+![Phase 2 : configuration](../../media/setup.png) <br>[Phase 2 : configuration](setup-mtpeval.md)<br> Configurer votre environnement de laboratoire d’évaluation de la protection contre les menaces Microsoft
 

@@ -1,5 +1,5 @@
 ---
-title: Enquêter sur les incidents dans la protection Microsoft contre les menaces
+title: Vue d’ensemble des incidents dans la protection Microsoft contre les menaces
 description: Enquêter sur les incidents détectés entre les appareils, les utilisateurs et les boîtes aux lettres.
 keywords: incidents, alertes, enquêter, corrélation, attaque, machines, appareils, utilisateurs, identités, identité, boîte de réception, e-mail, 365, microsoft, m365
 search.product: eADQiWindows 10XVcnh
@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 29eeb5f0699321441543057040b434c4dad61925
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 805b83262bd9d91500dc7e8b6b82542dfbc7e9c5
+ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235113"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "47649936"
 ---
 # <a name="incidents-overview-in-microsoft-threat-protection"></a>Vue d’ensemble des incidents dans la protection Microsoft contre les menaces
 

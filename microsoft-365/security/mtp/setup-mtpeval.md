@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 6cba773d0c4bea259db151d5a8f1d8e03954a045
-ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
+ms.openlocfilehash: 69a883263952b7c20225659ae023399e0242606d
+ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44717294"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "47650068"
 ---
 # <a name="set-up-your-microsoft-threat-protection-trial-lab-environment"></a>Configurer votre environnement de laboratoire d’évaluation de la protection contre les menaces Microsoft 
 
@@ -36,19 +36,19 @@ La création d’un environnement de laboratoire de test Microsoft Threat Protec
     <td align="center" style="width:25%; border:0;" >
       <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval?view=o365-worldwide"> 
         <img src="../../media/prepare.png" alt="Prepare your Microsoft Threat Protection trial lab environment" title="Préparer votre atelier d’évaluation de la protection contre les menaces Microsoft" />
-      <br/>Phase 1 : préparer</a><br>
+      <br/>Phase 1 : préparer </a><br>
     </td>
      <td align="center"bgcolor="#d5f5e3">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/setup-mtpeval?view=o365-worldwide">
         <img src="../../media/setup.png" alt="Set up your Microsoft Threat Protection trial lab environment" title="Configurer votre atelier d’évaluation de la protection contre les menaces Microsoft" />
-      <br/>Phase 2 : configuration</a><br>
+      <br/>Phase 2 : configuration </a><br>
     </td>
     <td align="center">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide">
         <img src="../../media/config-onboard.png" alt="
 Configure each Microsoft Threat Protection pillar for your Microsoft Threat Protection trial lab environment and onboard your endpoints" title="
 Configurez chaque pilier de protection contre les menaces Microsoft pour votre environnement de laboratoire d’évaluation de la protection contre les menaces Microsoft et embarquez vos points de terminaison." />
-      <br/>Phase 3 : configurer & Onboard</a><br>
+      <br/>Phase 3 : configurer & Onboard </a><br>
 </td>
 
 
@@ -149,6 +149,4 @@ Dans cette phase, vous serez guidé pour :
 
 
 ## <a name="next-step"></a>Étape suivante
-|||
-|:-------|:-----|
-|![Phase 3 : configurer & Onboard](../../media/config-onboard.png) <br>[Phase 3 : configurer & Onboard](config-mtpeval.md) | Configurez chaque pilier de protection contre les menaces Microsoft pour votre laboratoire d’évaluation de la protection contre les menaces Microsoft et embarquez vos points de terminaison.
+![Phase 3 : configurer & Onboard](../../media/config-onboard.png) <br>[Phase 3 : configurer & Onboard](config-mtpeval.md) <br>Configurez chaque pilier de protection contre les menaces Microsoft pour votre laboratoire d’évaluation de la protection contre les menaces Microsoft et embarquez vos points de terminaison.

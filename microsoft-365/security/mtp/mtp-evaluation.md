@@ -1,5 +1,5 @@
 ---
-title: Évaluer la protection contre les menaces Microsoft
+title: Évaluer la Protection Microsoft contre les menaces
 description: Configurez votre environnement de laboratoire de test Microsoft Threat Protection pour tester la solution de protection coordonnée contre les menaces conçue pour protéger les appareils, l’identité, les données et les applications peuvent aider votre organisation
 keywords: Version d’évaluation de la protection de Microsoft contre les menaces, essayez Microsoft Threat Protection, évaluez Microsoft Threat Protection, l’atelier d’évaluation de la protection contre les menaces Microsoft, la cyber sécurité, la protection avancée contre les menaces, la sécurité des entreprises, les appareils, l’appareil, l’identité, les utilisateurs, les données, les applications, les incidents, l’analyse et la correction
 search.product: eADQiWindows 10XVcnh
@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: f6ee8147965a29b87d84690535116f096e4c6006
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: a9d7b514aac8d1a769c0dabf6dcdb54f4bcb447b
+ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049638"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "47649960"
 ---
 # <a name="create-a-microsoft-threat-protection-trial-lab-environment"></a>Créer un environnement de laboratoire d’évaluation de la protection contre les menaces Microsoft 
 
@@ -65,10 +65,10 @@ Les éléments suivants sont inclus dans le cadre de ce guide de laboratoire d�
     -   Affecter des licences Microsoft 365 E5
     -   Fin de l’Assistant Installation dans le portail
 -   Configurer tous les piliers de protection contre les menaces Microsoft en fonction des meilleures pratiques
-    -   Office 365-Protection avancée contre les menaces
+    -   Office 365 – Protection avancée contre les menaces
     -   Azure Advanced Threat Protection
     -   Microsoft Cloud App Security
-    -   Microsoft Defender – Protection avancée contre les menaces
+    -   Microsoft Defender – Protection avancée contre les menaces
 
 ## <a name="out-of-scope"></a>Non compris
 
@@ -78,6 +78,5 @@ Ce guide de déploiement ne comporte pas les éléments suivants :
 -   Test de pénétration dans l’environnement de production
 
 ## <a name="next-step"></a>Étape suivante
-|||
-|:-------|:-----|
-|![Phase 1 : préparer](../../media/prepare.png) <br>[Phase 1 : préparer](prepare-mtpeval.md) | Préparer votre environnement d’atelier d’évaluation de la protection contre les menaces Microsoft
+![Phase 1 : préparer](../../media/prepare.png) <br>[Phase 1 : préparer](prepare-mtpeval.md) 
+<br> Préparer votre environnement d’atelier d’évaluation de la protection contre les menaces Microsoft

@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: ff610cee46b2b48815af82fa86d0b30aa99f4b5c
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: 502dc87b45c42f0ae95ea9da898c4d4589b19671
+ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46798233"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "47649948"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Fonctionnalités d’aperçu de la protection contre les menaces Microsoft
 
@@ -50,13 +50,14 @@ Activez le paramètre aperçu de l’expérience pour commencer à utiliser les 
 
 3. Sélectionnez **Aperçu**  >  **des fonctionnalités activer les fonctionnalités d’aperçu**. 
 
-3. Sélectionnez **Enregistrer**.
+3. Cliquez sur **Enregistrer**.
 
 Vous saurez que les fonctionnalités d’aperçu sont activées lorsque vous voyez que la case à cocher **activer l’aperçu des fonctionnalités** est activée. 
 
 ## <a name="preview-features"></a>Fonctionnalités de préversion
 Les fonctionnalités et améliorations suivantes sont actuellement disponibles lors de l’aperçu :
 
+- **[API de protection contre les menaces Microsoft](api-overview.md)** : les API de protection contre les menaces Microsoft Lop vous permettent d’automatiser les flux de travail en fonction de l’incident partagé et des tableaux de la chasse avancée. 
 - **[Table IdentityDirectoryEvents dans la chasse avancée](advanced-hunting-identitydirectoryevents-table.md)** : recherchez des événements impliquant un contrôleur de domaine sur site exécutant Active Directory (AD). Ce tableau couvre un éventail d’événements liés à l’identité, ainsi que des événements système sur le contrôleur de domaine.
 - **[Fonction AssignedIPAddresses ()](advanced-hunting-assignedipaddresses-function.md)** : utilisez cette fonction dans la chasse avancée pour obtenir rapidement les dernières adresses IP qui ont été affectées à un appareil ou les adresses IP les plus récentes à partir d’un moment donné.
 - **[Effectuer des actions dans la chasse avancée](advanced-hunting-take-action.md)** — il doit rapidement contenir des menaces ou des ressources compromises que vous trouvez dans la [chasse avancée](advanced-hunting-overview.md).
