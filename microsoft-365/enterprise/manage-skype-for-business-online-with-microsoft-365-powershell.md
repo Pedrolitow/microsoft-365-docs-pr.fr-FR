@@ -13,28 +13,28 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
-description: 'Résumé : utilisez PowerShell pour Microsoft 365 pour gérer des stratégies Skype Entreprise Online, des stratégies par utilisateur et des paramètres de réunion.'
-ms.openlocfilehash: aea78d135a5d7ffbb5d8480c549d0fdee88f7d51
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: Utilisez PowerShell pour Microsoft 365 pour gérer des stratégies Skype Entreprise Online, des stratégies par utilisateur et des paramètres de réunion.
+ms.openlocfilehash: d50f35d7d5e81622eb8dfc3bbf8328a8c43e9676
+ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690071"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47430033"
 ---
 # <a name="manage-skype-for-business-online-with-powershell"></a>Gestion de Skype Entreprise Online avec PowerShell
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-L’une des tâches principales de tout administrateur Skype Entreprise Online est de gérer les stratégies. Bien que vous puissiez effectuer certaines de ces tâches dans le Centre d’administration Microsoft 365, d’autres tâches sont beaucoup plus rapides et plus simples à exécuter dans PowerShell. 
+Les administrateurs Skype Entreprise Online sont responsables de la gestion des stratégies. Bien que vous puissiez effectuer certaines de ces tâches dans le Centre d’administration Microsoft 365, d’autres sont plus faciles à faire dans PowerShell.
 
 ## <a name="before-you-start"></a>Avant de commencer
 
-Téléchargez et installez le [module Connecteur Skype Entreprise Online](https://www.microsoft.com/download/details.aspx?id=39366), puis redémarrez votre ordinateur.
+Téléchargez et installez le [module Skype Entreprise Online Windows PowerShell](https://www.microsoft.com/download/details.aspx?id=39366), puis redémarrez votre ordinateur.
 
 
-## <a name="connect-using-a-skype-for-business-online-administrator-account-name-and-password"></a>Connectez-vous à l’aide du nom et du mot de passe du compte d'administrateur Skype Entreprise Online
+## <a name="connect-using-skype-for-business-online-admin-credentials"></a>Se connecter à l’aide des informations d’identification de l’administrateur Skype Entreprise Online
 
-1. Ouvrez l’invite de commandes Windows PowerShell et exécutez les commandes suivantes : 
+1. Ouvrez une fenêtre d’invite de commandes Windows PowerShell et exécutez les commandes suivantes :
     
    ```powershell
    Import-Module SkypeOnlineConnector
@@ -43,12 +43,12 @@ Téléchargez et installez le [module Connecteur Skype Entreprise Online](https:
    Import-PSSession $sfbSession
    ```
 
-2. Dans la boîte de dialogue **Demande d’informations d’identification Windows PowerShell**, saisissez le nom et le mot de passe de votre compte d'administrateur Skype Entreprise Online, puis cliquez sur **OK**.
+2. Dans la boîte de dialogue **Demande d’informations d’identification Windows PowerShell**, saisissez le nom et le mot de passe de votre compte d'administrateur Skype Entreprise Online, puis sélectionnez **OK**.
 
 
-## <a name="connect-using-a-skype-for-business-online-administrator-account-with-multi-factor-authentication"></a>Connectez-vous à l’aide du compte d'administrateur Skype Entreprise Online avec l’authentification multifacteur
+## <a name="connect-using-an-admin-account-with-multi-factor-authentication"></a>Se connecter à l’aide d’un compte d’administrateur avec l’authentification multifacteur
 
-1. Ouvrez l’invite de commandes Windows PowerShell et exécutez les commandes suivantes :
+1. Ouvrez une fenêtre d’invite de commandes Windows PowerShell et exécutez les commandes suivantes :
 
    ```powershell
    Import-Module SkypeOnlineConnector
@@ -58,11 +58,11 @@ Téléchargez et installez le [module Connecteur Skype Entreprise Online](https:
 
 2. Lorsque vous y êtes invité par la commande **New-CsOnlineSession**, entrez le nom de votre compte d'administrateur Skype Entreprise Online.
 
-3. Dans la boîte de dialogue **Vous connecter à votre compte**, tapez votre mot de passe d’administrateur Skype Entreprise Online, puis cliquez sur **Connexion**.
+3. Dans la boîte de dialogue **Vous connecter à votre compte**, tapez votre mot de passe d’administrateur Skype Entreprise Online, puis sélectionnez **Connexion**.
 
-4. Suivez les instructions de la boîte de dialogue **Vous connecter à votre compte** pour fournir des informations d’authentification supplémentaires, telles qu’un code de vérification, puis cliquez sur **Vérifier**.
+4. Dans la boîte de dialogue **Vous connecter à votre compte** , suivez les instructions d’ajout d’informations d’authentification, telles qu’un code de vérification, puis sélectionnez **Vérifier**.
 
-Pour plus d’informations, voir les rubriques suivantes :
+Pour plus d’informations, consultez :
   
 - [Gestion des stratégies Skype Entreprise Online avec PowerShell](manage-skype-for-business-online-policies-with-microsoft-365-powershell.md)
     
@@ -75,4 +75,3 @@ Pour plus d’informations, voir les rubriques suivantes :
 [Prise en main de PowerShell pour Microsoft 365](getting-started-with-microsoft-365-powershell.md)
 
 [Références sur l’applet de commande Skype Entreprise PowerShell](https://docs.microsoft.com/powershell/module/skype/?view=skype-ps)
-

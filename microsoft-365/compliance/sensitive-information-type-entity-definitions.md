@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: La protection contre la perte de données (DLP) dans le centre de sécurité &amp; conformité inclut 80 types d’informations sensibles que vous pouvez utiliser dans vos stratégies DLP. Cette rubrique répertorie tous ces types d'informations sensibles et indique ce qu'une stratégie DLP recherche pour chaque type.
-ms.openlocfilehash: 17c32ea53d860e54a7c9a8fcf70778151c28c539
-ms.sourcegitcommit: 6ad2e4164ed59d5a58a0df9cb8413531c1be0986
+ms.openlocfilehash: 9df6bd1918ec8f4c3b5f55d864468d17be31b119
+ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47334847"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47775099"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Définitions d’entités des types d’informations sensibles
 
@@ -33,18 +33,18 @@ La protection contre la perte de données (DLP) dans le centre de conformité co
 
 ### <a name="format"></a>Format
 
-9 chiffres mis en forme ou non mis en forme
+neuf chiffres pouvant être mis en forme ou non mis en forme
 
 ### <a name="pattern"></a>Modèle
 
 Avec
-- Quatre chiffres commençant par 0, 1, 2, 3, 6, 7 ou 8
-- Un trait d’union
-- Quatre chiffres
-- Un trait d’union
-- Un chiffre
+- quatre chiffres commençant par 0, 1, 2, 3, 6, 7 ou 8
+- un trait d’Union
+- quatre chiffres
+- un trait d’Union
+- un chiffre
 
-Non mis en forme : 9 chiffres consécutifs commençant par 0, 1, 2, 3, 6, 7 ou 8 
+Non mis en forme : neuf chiffres consécutifs commençant par 0, 1, 2, 3, 6, 7 ou 8 
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -69,7 +69,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-#### <a name="keyword_aba_routing"></a>Keyword_ABA_Routing
+#### <a name="keyword_aba_routing"></a>Keyword_aba_routing
 
 - ABA
 - # aba
@@ -98,11 +98,11 @@ Huit chiffres séparés par des points
 ### <a name="pattern"></a>Modèle
 
 Huit chiffres :
-- Deux chiffres
-- Un point 
-- Trois chiffres
-- Un point 
-- Trois chiffres
+- deux chiffres
+- un point
+- trois chiffres
+- un point
+- trois chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -142,15 +142,16 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="format"></a>Format
 
-6 à 10 chiffres avec ou sans le numéro d’agence bancaire de l’État
+six à TWN chiffres avec ou sans numéro de succursale d’état bancaire
 
 ### <a name="pattern"></a>Modèle
 
-Le numéro de compte est composé de 6 à 10 chiffres.
+Le numéro de compte est compris entre six et dix chiffres.
+
 Numéro de succursale bancaire en Australie :
-- Trois chiffres 
-- Un trait d’union 
-- Trois chiffres
+- trois chiffres 
+- un trait d’Union 
+- trois chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -200,29 +201,137 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - noms complets
 - auront
 
-   
+## <a name="australia-business-number"></a>Numéro d’entreprise Australie
+
+### <a name="format"></a>Format
+
+11 chiffres avec des délimiteurs facultatifs
+
+### <a name="pattern"></a>Modèle
+
+11 chiffres avec des délimiteurs facultatifs :
+
+- deux chiffres
+- un tiret ou un espace d’option
+- trois chiffres
+- un tiret ou un espace d’option
+- trois chiffres
+- un tiret ou un espace d’option
+- trois chiffres
+
+### <a name="checksum"></a>Somme de contrôle
+
+Oui
+
+### <a name="definition"></a>Définition
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
+- La fonction Func_australian_business_number trouve le contenu qui correspond au modèle.
+- Un mot clé depuis Keywords_australian_business_number est trouvé.
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
+- La fonction Func_australian_business_number trouve le contenu qui correspond au modèle.
+
+```xml
+      <!-- Australia Business Number -->
+      <Entity id="76e83b3b-01ee-4530-aced-e667a6609f49" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_australian_business_number" />
+          <Match idRef="Keywords_australian_business_number" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_australian_business_number" />
+        </Pattern>
+      </Entity>
+```
+### <a name="keywords"></a>Mots-clés
+
+#### <a name="keyword_australia_business_number"></a>Keyword_australia_business_number
+
+- n ° d’entreprise Australie
+- numéro professionnel
+- ABN #
+- businessid #
+- ID d’entreprise
+- ABN
+- businessno #
+
+## <a name="australia-company-number"></a>Numéro de société Australie
+
+### <a name="format"></a>Format
+
+neuf chiffres avec des délimiteurs
+
+### <a name="pattern"></a>Modèle
+
+neuf chiffres avec des délimiteurs :
+
+- trois chiffres
+- un espace
+- trois chiffres
+- un espace
+- trois chiffres
+
+
+### <a name="checksum"></a>Somme de contrôle
+
+Oui
+
+### <a name="definition"></a>Définition
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
+- La fonction Func_Australian_Company_Number trouve le contenu qui correspond au modèle.
+- Un mot clé depuis Keyword_Australian_Company_Number est trouvé.
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 65 % si, dans une proximité de 300 caractères :
+- La fonction Func_Australian_Company_Number trouve le contenu qui correspond au modèle.
+
+```xml
+      <!-- Australia Company Number -->
+      <Entity id="b1fba4f7-7b3e-4bb9-8f9a-9366df604dbb" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_Australian_Company_Number" />
+          <Match idRef="Keyword_Australian_Company_Number" />
+        </Pattern>
+        <Pattern confidenceLevel="65">
+          <IdMatch idRef="Func_Australian_Company_Number" />
+        </Pattern>
+      </Entity>
+```
+### <a name="keywords"></a>Mots-clés
+
+#### <a name="keyword_australia_company_number"></a>Keyword_australia_company_number
+
+- suffit
+- n ° de société Australie
+- n ° de société Australie #
+- Numéro de société Australie
+- Numéro de société australien
+- Numéro de société australien #
+- Numéro de société australien
+
 ## <a name="australia-drivers-license-number"></a>Numéro de permis de conduire Australie
 
 ### <a name="format"></a>Format
 
-Neuf lettres et chiffres
+neuf lettres et chiffres
 
 ### <a name="pattern"></a>Modèle
 
-Neuf lettres et chiffres : 
+neuf lettres et chiffres : 
 
-- Deux chiffres ou lettres (ne respectent pas la casse) 
-- Deux chiffres 
-- Cinq chiffres ou lettres (ne respectent pas la casse)
-
-OR
-
-- 1 ou 2 lettres facultatives (ne respectant pas la casse)  
-- 4 à 9 chiffres
+- deux chiffres ou lettres (ne respectant pas la casse) 
+- deux chiffres 
+- cinq chiffres ou lettres (ne respectant pas la casse)
 
 OR
 
-- Neuf chiffres ou lettres (ne respectant pas la casse)
+- une à deux lettres facultatives (ne respectant pas la casse) 
+- quatre à neuf chiffres
+
+OR
+
+- neuf chiffres ou lettres (ne respectant pas la casse)
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -361,10 +470,10 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 ### <a name="pattern"></a>Modèle
 
 10 à 11 chiffres :
-- Le premier chiffre est compris entre 2 et 6
-- Le neuvième chiffre est un chiffre de contrôle
-- Le dixième chiffre est le chiffre d’émission
-- Le onzième chiffre (facultatif) est le numéro individuel
+- le premier chiffre se trouve dans la plage 2-6
+- neuvième chiffre est un chiffre de contrôle
+- le dixième chiffre est le chiffre de l’émission
+- le onzième chiffre (facultatif) est le numéro individuel
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -478,16 +587,16 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="format"></a>Format
 
-8 ou 9 chiffres
+huit à neuf chiffres
 
 ### <a name="pattern"></a>Modèle
 
-8 à 9 chiffres généralement entrecoupés d’espaces comme suit :
-- Trois chiffres 
-- Un espace facultatif 
-- Trois chiffres 
-- Un espace facultatif 
-- 2 à 3 chiffres où le dernier chiffre est un chiffre de contrôle
+huit à neuf chiffres généralement présentés par des espaces, comme suit :
+- trois chiffres 
+- un espace facultatif 
+- trois chiffres 
+- un espace facultatif 
+- deux à trois chiffres où le dernier chiffre est un chiffre de contrôle
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -512,7 +621,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-#### <a name="keyword_australia_tax_file_number"></a>Keyword_Australia_Tax_File_Number
+#### <a name="keyword_australia_tax_file_number"></a>Keyword_australia_tax_file_number
 
 - numéro d’entreprise australien
 - taux d’imposition marginale
@@ -529,11 +638,11 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 ### <a name="format"></a>Format
 
-Huit chiffres sans espaces ni délimiteurs
+huit chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
-Huit chiffres
+huit chiffres
   
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -544,7 +653,6 @@ Non
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
 - L’expression régulière  `Regex_austria_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
-    
 - Un mot clé from  `Keywords_austria_eu_driver's_license_number` est trouvé. 
     
 ```xml
@@ -559,7 +667,8 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-**Keywords_austria_eu_driver’s_license_number**
+#### <a name="keywords_austria_eu_drivers_license_number"></a>Keywords_austria_eu_driver’s_license_number
+
 - LD #
 - Permis de conduire
 - Numéro de permis de conduire
@@ -588,7 +697,7 @@ Combinaison de 24 caractères de lettres, de chiffres et de caractères spéciau
   
 -  22 lettres (ne respectent pas la casse), chiffres, barres obliques inverses, barres obliques ou signes plus 
     
-- Deux lettres (ne respectent pas la casse), des chiffres, des barres obliques inverses, des barres obliques, des signes plus ou des signes égal
+- deux lettres (ne respectent pas la casse), des chiffres, des barres obliques inverses, des barres obliques, des signes plus ou des signes égal
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -599,7 +708,6 @@ Non applicable
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
 - L’expression régulière  `Regex_austria_eu_national_id_card` trouve le contenu qui correspond au modèle. 
-    
 - Un mot clé from  `Keywords_austria_eu_national_id_card` est trouvé. 
    
 ```xml
@@ -632,11 +740,9 @@ Une lettre suivie d’un espace facultatif et de sept chiffres
 
 Une combinaison d’une lettre, de sept chiffres et d’un espace :
   
-- Une lettre (ne respecte pas la casse)
-    
-- Un espace (facultatif)
-    
-- Sept chiffres
+- une lettre (ne respecte pas la casse)
+- un espace (facultatif)
+- sept chiffres
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -645,9 +751,7 @@ Non applicable
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - L’expression régulière  `Regex_austria_eu_passport_number` trouve le contenu qui correspond au modèle. 
-    
 - Un mot clé from  `Keywords_austria_eu_passport_number` est trouvé. 
     
 ```xml
@@ -662,7 +766,8 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-**Keywords_austria_eu_passport_number**
+#### <a name="keywords_austria_eu_passport_number"></a>Keywords_austria_eu_passport_number
+
 - numéro de passeport
 - Numéro de passeport autrichien
 - Numéro de passeport
@@ -680,9 +785,9 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 10 chiffres :
   
--  Trois chiffres correspondant à un numéro de série 
-- Un chiffre de contrôle
-- Six chiffres correspondant à la date de naissance (JJMMAA)
+- trois chiffres correspondant à un numéro de série 
+- un chiffre de contrôle
+- six chiffres correspondant à la date de naissance (JJMMAA)
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -691,15 +796,11 @@ Oui
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
-  
 - La fonction’Func_austria_eu_
-
-_or_equivalent’trouve le contenu qui correspond au modèle. 
-    
-- Un mot clé from  `Keywords_austria_eu_ssn_or_equivalent` est trouvé. 
+- _or_equivalent’trouve le contenu qui correspond au modèle. 
+- un mot clé from  `Keywords_austria_eu_ssn_or_equivalent` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_austria_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
     
 ```xml
@@ -738,17 +839,17 @@ Cette entité de type d’informations sensibles est uniquement disponible pour 
 
 ### <a name="format"></a>Format
 
-Neuf chiffres avec un trait d’union conditionnel et une barre oblique
+neuf chiffres avec un trait d’union conditionnel et une barre oblique
   
 ### <a name="pattern"></a>Modèle
 
-Neuf chiffres avec un trait d’Union et une barre oblique facultatifs :
+neuf chiffres avec un trait d’Union et une barre oblique facultatifs :
   
-- Deux chiffres
-- Un trait d’union (facultatif)
-- Trois chiffres
-- Une barre oblique (facultative)
-- Quatre chiffres
+- deux chiffres
+- un trait d’Union (facultatif)
+- trois chiffres
+- une barre oblique (facultatif)
+- quatre chiffres
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -757,12 +858,10 @@ Oui
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_austria_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_austria_eu_tax_file_number` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_austria_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```xml
@@ -803,6 +902,73 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - n ° d’étain
 - Etain #
 - Numéro de taxe
+ 
+## <a name="austria-value-added-tax"></a>Taxe sur la valeur ajoutée autrichienne
+
+### <a name="format"></a>Format
+
+modèle alphanumérique de 11 caractères
+
+### <a name="pattern"></a>Modèle
+
+modèle alphanumérique de 11 caractères :
+
+- A ou a
+- T ou t
+- Espace facultatif
+- U ou u
+- espace facultatif
+- deux ou trois chiffres
+- espace facultatif
+- quatre chiffres
+- espace facultatif
+- un ou deux chiffres
+
+### <a name="checksum"></a>Somme de contrôle
+
+Oui
+
+### <a name="definition"></a>Définition
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
+- La fonction Func_Austria_Value_Added_Tax trouve le contenu qui correspond au modèle.
+- Un mot clé depuis Keyword_Austria_Value_Added_Tax est trouvé.
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
+- La fonction Func_Austria_Value_Added_Tax trouve le contenu qui correspond au modèle.
+
+```xml
+      <!-- Austria Value Added Tax -->
+      <Entity id="b6a3eda2-c56c-4b69-a5f7-dca34db00f48" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_Austria_Value_Added_Tax" />
+          <Match idRef="Keyword_Austria_Value_Added_Tax" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_Austria_Value_Added_Tax" />
+        </Pattern>
+      </Entity>
+```
+### <a name="keywords"></a>Mots-clés
+
+#### <a name="keyword_austria_value_added_tax"></a>Keyword_austria_value_added_tax
+
+- Numéro de TVA
+- compt #
+- Numéro de TVA autrichien
+- n ° TVA
+- vatno #
+- Numéro de taxe sur la valeur ajoutée
+- TVA autrichienne
+- mwst
+- umsatzsteuernummer
+- mwstnummer
+- ust.-identifikationsnummer
+- umsatzsteuer-identifikationsnummer
+- Numéro d’identification de TVA
+- numéro ATU
+- Numéro d’UID
+
 
 ## <a name="azure-documentdb-auth-key"></a>Clé d’authentification Azure DocumentDB
 
@@ -864,19 +1030,19 @@ La chaîne « Server », « Server » ou « Data source » suivie des cara
 
 ### <a name="pattern"></a>Modèle
 
-- Chaîne « serveur », « serveur » ou « source de données »
-- 0-2 espaces blancs
-- Signe égal (=)
-- 0-2 espaces blancs
-- N’importe quelle combinaison entre 1-200 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
+- chaîne « serveur », « serveur » ou « source de données »
+- zéro à deux espaces
+- signe égal (=)
+- zéro à deux espaces
+- n’importe quelle combinaison entre 1-200 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
 - La chaîne «cloudapp. Azure.<!--no-hyperlink-->com "," cloudapp. Azure.<!--no-hyperlink-->NET "ou" Database. Windows.<!--no-hyperlink-->NET
-- N’importe quelle combinaison entre 1-300 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
-- La chaîne "password", "password" ou "PWD"
-- 0-2 espaces blancs
-- Signe égal (=)
-- 0-2 espaces blancs
-- Un ou plusieurs caractères qui ne sont pas des points-virgules (;), guillemets (") ou apostrophe (')
-- Un point-virgule (;), guillemet (") ou apostrophe (')
+- n’importe quelle combinaison entre 1-300 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
+- la chaîne "password", "password" ou "PWD"
+- zéro à deux espaces
+- signe égal (=)
+- zéro à deux espaces
+- un ou plusieurs caractères qui ne sont pas des points-virgules (;), guillemets (") ou apostrophe (')
+- un point-virgule (;), guillemet (") ou apostrophe (')
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -902,7 +1068,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-#### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
+#### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
 (Notez que techniquement, ce type d’informations sensibles identifie ces mots clés à l’aide d’une expression régulière, et non d’une liste de mots clés.)
 
@@ -924,19 +1090,19 @@ La chaîne « nomhôte » suivie des caractères et des chaînes décrits dans
 
 ### <a name="pattern"></a>Modèle
 
-- La chaîne « nomhôte »
-- 0-2 espaces blancs
-- Signe égal (=)
-- 0-2 espaces blancs
-- N’importe quelle combinaison entre 1-200 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
-- La chaîne «Azure-appareils.<!--no-hyperlink-->NET
-- N’importe quelle combinaison entre 1-200 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
-- La chaîne « SharedAccessKey »
-- 0-2 espaces blancs
-- Signe égal (=)
-- 0-2 espaces blancs
-- Toute combinaison de 43 lettres majuscules ou minuscules, des chiffres, une barre oblique (/) ou un signe plus (+)
-- Signe égal (=)
+- la chaîne « nomhôte »
+- zéro à deux espaces
+- signe égal (=)
+- zéro à deux espaces
+- n’importe quelle combinaison entre 1-200 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
+- la chaîne «Azure-appareils.<!--no-hyperlink-->NET
+- n’importe quelle combinaison entre 1-200 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
+- la chaîne « SharedAccessKey »
+- zéro à deux espaces
+- signe égal (=)
+- zéro à deux espaces
+- toute combinaison de 43 lettres majuscules ou minuscules, des chiffres, une barre oblique (/) ou un signe plus (+)
+- signe égal (=)
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -962,7 +1128,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-#### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
+#### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
 (Notez que techniquement, ce type d’informations sensibles identifie ces mots clés à l’aide d’une expression régulière, et non d’une liste de mots clés.)
 
@@ -984,9 +1150,9 @@ La chaîne « userpwd = » suivie d’une chaîne alphanumérique.
 
 ### <a name="pattern"></a>Modèle
 
-- La chaîne « userpwd = »
-- N’importe quelle combinaison de 60 lettres minuscules ou chiffres
-- Guillemet (")
+- la chaîne « userpwd = »
+- n’importe quelle combinaison de 60 lettres minuscules ou chiffres
+- guillemet (")
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -1013,7 +1179,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-#### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
+#### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
 (Notez que techniquement, ce type d’informations sensibles identifie ces mots clés à l’aide d’une expression régulière, et non d’une liste de mots clés.)
 
@@ -1035,14 +1201,14 @@ La chaîne «ReDim. cache. Windows.<!--no-hyperlink-->NET "suivi des caractères
 
 ### <a name="pattern"></a>Modèle
 
-- La chaîne «ReDim. cache. Windows.<!--no-hyperlink-->NET
-- N’importe quelle combinaison entre 1-200 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
-- La chaîne « password » ou « pwd »
-- 0-2 espaces blancs
-- Signe égal (=)
-- 0-2 espaces blancs
-- Toute combinaison de 43 caractères majuscules ou minuscules, des chiffres, une barre oblique (/) ou un signe plus (+)
-- Signe égal (=)
+- la chaîne «ReDim. cache. Windows.<!--no-hyperlink-->NET
+- n’importe quelle combinaison entre 1-200 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
+- la chaîne « password » ou « pwd »
+- zéro à deux espaces
+- signe égal (=)
+- zéro à deux espaces
+- toute combinaison de 43 caractères majuscules ou minuscules, des chiffres, une barre oblique (/) ou un signe plus (+)
+- signe égal (=)
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -1068,7 +1234,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-#### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
+#### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
 (Notez que techniquement, ce type d’informations sensibles identifie ces mots clés à l’aide d’une expression régulière, et non d’une liste de mots clés.)
 
@@ -1090,13 +1256,13 @@ La chaîne « SIG » suivie des caractères et des chaînes présentés dans l
 
 ### <a name="pattern"></a>Modèle
 
-- La chaîne « SIG »
-- 0-2 espaces blancs
-- Signe égal (=)
-- 0-2 espaces blancs
-- Toute combinaison comprise entre 43-53 caractères majuscules ou minuscules, des chiffres ou le signe pourcentage (%)
-- La chaîne « % 3D »
-- Tout caractère qui n’est pas une lettre majuscule, un chiffre ou un signe de pourcentage (%)
+- la chaîne « SIG »
+- zéro à deux espaces
+- signe égal (=)
+- zéro à deux espaces
+- toute combinaison comprise entre 43-53 caractères majuscules ou minuscules, des chiffres ou le signe pourcentage (%)
+- la chaîne « % 3D »
+- tout caractère qui n’est pas une lettre majuscule, un chiffre ou un signe de pourcentage (%)
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -1124,19 +1290,19 @@ La chaîne « point de terminaison » suivie des caractères et des chaînes d
 
 ### <a name="pattern"></a>Modèle
 
-- Chaîne « point de terminaison »
-- 0-2 espaces blancs
-- Signe égal (=)
-- 0-2 espaces blancs
-- N’importe quelle combinaison entre 1-200 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
-- La chaîne «ServiceBus. Windows.<!--no-hyperlink-->NET
-- N’importe quelle combinaison entre 1-200 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
-- La chaîne « SharedAccessKey »
-- 0-2 espaces blancs
-- Signe égal (=)
-- 0-2 espaces blancs
-- Toute combinaison de 43 caractères majuscules ou minuscules, des chiffres, une barre oblique (/) ou un signe plus (+)
-- Signe égal (=)
+- chaîne « point de terminaison »
+- zéro à deux espaces
+- signe égal (=)
+- zéro à deux espaces
+- n’importe quelle combinaison entre 1-200 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
+- la chaîne «ServiceBus. Windows.<!--no-hyperlink-->NET
+- n’importe quelle combinaison entre 1-200 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
+- la chaîne « SharedAccessKey »
+- zéro à deux espaces
+- signe égal (=)
+- zéro à deux espaces
+- toute combinaison de 43 caractères majuscules ou minuscules, des chiffres, une barre oblique (/) ou un signe plus (+)
+- signe égal (=)
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -1162,7 +1328,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-#### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
+#### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
 (Notez que techniquement, ce type d’informations sensibles identifie ces mots clés à l’aide d’une expression régulière, et non d’une liste de mots clés.)
 
@@ -1184,17 +1350,17 @@ La chaîne « DefaultEndpointsProtocol » suivie des caractères et des chaîn
 
 ### <a name="pattern"></a>Modèle
 
-- La chaîne « DefaultEndpointsProtocol »
-- 0-2 espaces blancs
-- Signe égal (=)
-- 0-2 espaces blancs
-- N’importe quelle combinaison entre 1-200 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
-- La chaîne « AccountKey »
-- 0-2 espaces blancs
-- Signe égal (=)
-- 0-2 espaces blancs
-- Toute combinaison de 86 caractères majuscules ou minuscules, des chiffres, une barre oblique (/) ou un signe plus (+)
-- Deux signes égal (=)
+- la chaîne « DefaultEndpointsProtocol »
+- zéro à deux espaces
+- signe égal (=)
+- zéro à deux espaces
+- n’importe quelle combinaison entre 1-200 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
+- la chaîne « AccountKey »
+- zéro à deux espaces
+- signe égal (=)
+- zéro à deux espaces
+- toute combinaison de 86 caractères majuscules ou minuscules, des chiffres, une barre oblique (/) ou un signe plus (+)
+- deux signes égal (=)
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -1222,13 +1388,13 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-#### <a name="cep_azureemulatorstorageaccountfilter"></a>CEP_AzureEmulatorStorageAccountFilter
+#### <a name="cep_azure_emulator_storage_account_filter"></a>CEP_azure_emulator_storage_account_filter
 
 (Notez que techniquement, ce type d’informations sensibles identifie ces mots clés à l’aide d’une expression régulière, et non d’une liste de mots clés.)
 
 - Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw = =
 
-#### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
+#### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
 (Notez que techniquement, ce type d’informations sensibles identifie ces mots clés à l’aide d’une expression régulière, et non d’une liste de mots clés.)
 
@@ -1250,10 +1416,9 @@ Toute combinaison de 86 lettres majuscules ou minuscules, des chiffres, la barre
 
 ### <a name="pattern"></a>Modèle
 
-- 0-1 du symbole supérieur à (>), apostrophe ('), signe égal (=), guillemet (") ou dièse (#)
-- Toute combinaison de 86 caractères majuscules ou minuscules, des chiffres, la barre oblique (/) ou le signe plus (+)
-- Deux signes égal (=)
-
+- zéro à l’un des symboles supérieur à (>), apostrophe ('), signe égal (=), guillemet (") ou numérique (#)
+- toute combinaison de 86 caractères majuscules ou minuscules, des chiffres, la barre oblique (/) ou le signe plus (+)
+- deux signes égal (=)
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -1277,11 +1442,11 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 ### <a name="format"></a>Format
 
-10 chiffres sans espaces ni délimiteurs
+dix chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
-10 chiffres
+dix chiffres
   
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -1290,7 +1455,6 @@ Non
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - L’expression régulière  `Regex_belgium_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_belgium_eu_driver's_license_number` est trouvé.
     
@@ -1338,11 +1502,11 @@ Cette entité de type d’informations sensibles est incluse dans le type d’in
 ### <a name="pattern"></a>Modèle
 
 11 chiffres plus des délimiteurs :
-- Six chiffres et deux points au format AA.MM.JJ pour la date de naissance  
-- Un trait d’union  
-- Trois chiffres séquentiels (impairs pour les hommes, pairs pour les femmes)  
-- Un point  
-- Deux chiffres de contrôle
+- six chiffres et deux points au format YY. M. DD pour la date de naissance 
+- un trait d’Union 
+- trois chiffres séquentiels (impairs pour les hommes, pairs pour les femelles) 
+- un point 
+- deux chiffres qui sont un chiffre de contrôle
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -1434,11 +1598,11 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 ### <a name="format"></a>Format
 
-Deux lettres suivies de six chiffres sans espaces ni délimiteurs
+deux lettres suivies de six chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
-Deux lettres et suivies de six chiffres
+deux lettres et suivies de six chiffres
   
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -1447,7 +1611,6 @@ Non applicable
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - L’expression régulière  `Regex_belgium_eu_passport_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_belgium_eu_passport_number` est trouvé.
 
@@ -1463,7 +1626,8 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-**Keywords_belgium_eu_passport_number**
+#### <a name="keywords_belgium_eu_passport_number"></a>Keywords_belgium_eu_passport_number
+
 - numéro de passeport
 - Numéro de passeport belge
 - Numéro de passeport
@@ -1495,7 +1659,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Un mot clé from  `Keywords_belgium_eu_ssn_or_equivalent` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_belgium_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
     
 ```xml
@@ -1544,11 +1707,11 @@ Cette entité de type d’informations sensibles est disponible uniquement pour 
 
 11 chiffres :
   
-- Deux chiffres
+- deux chiffres
 - « 0 » ou « 1 »
-- Un chiffre
+- un chiffre
 - « 0 » ou « 1 » ou « 2 » ou « 3 » 
-- Six chiffres
+- six chiffres
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -1557,7 +1720,6 @@ Non applicable
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - L’expression régulière  `Regex_belgium_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_belgium_eu_tax_file_number` est trouvé. 
     
@@ -1636,6 +1798,68 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Etain #
 
 
+## <a name="belgium-value-added-tax-number"></a>Valeur belge-valeur ajoutée de la taxe
+
+### <a name="format"></a>Format
+
+modèle alphanumérique de 12 caractères
+
+### <a name="pattern"></a>Modèle
+
+modèle alphanumérique de 12 caractères :
+
+- une lettre B ou b
+- lettre E ou e
+- un chiffre 0
+- un chiffre compris entre 1 et 9
+- un point ou un tiret ou un espace facultatif
+- quatre chiffres
+- un point ou un tiret ou un espace facultatif
+- quatre chiffres
+
+
+### <a name="checksum"></a>Somme de contrôle
+
+Oui
+
+
+### <a name="definition"></a>Définition
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
+- La fonction Func_belgium_value_added_tax_number trouve le contenu qui correspond au modèle.
+- Un mot clé depuis Keywords_belgium_value_added_tax_number est trouvé.
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
+- La fonction Func_belgium_value_added_tax_number trouve le contenu qui correspond au modèle.
+
+```xml
+      <!-- Belgium Value Added Tax Number -->
+      <Entity id="85b5b3c3-f2de-4ae8-ac46-fd3cb38bf9ed" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_belgium_value_added_tax_number" />
+          <Match idRef="Keywords_belgium_value_added_tax_number" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_belgium_value_added_tax_number" />
+        </Pattern>
+      </Entity>
+    </Version>
+```
+### <a name="keywords"></a>Mots-clés
+
+#### <a name="keyword_belgium_value_added_tax_number"></a>Keyword_belgium_value_added_tax_number
+
+- n º TVA
+- Numéro de TVA
+- n ° TVA
+- numéro t. v. a
+- umsatzsteuer-identifikationsnummer
+- umsatzsteuernummer
+- btw
+- btw #
+- compt #
+
+
 ## <a name="brazil-cpf-number"></a>Numéro CPF Brésil
 
 ### <a name="format"></a>Format
@@ -1645,13 +1869,13 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 ### <a name="pattern"></a>Modèle
 
 Avec
-- Trois chiffres
-- Un point 
-- Trois chiffres
-- Un point 
-- Trois chiffres
-- Un trait d’union 
-- Deux chiffres de contrôle
+- trois chiffres
+- un point
+- trois chiffres
+- un point
+- trois chiffres
+- un trait d’Union
+- deux chiffres qui sont des chiffres de contrôle
 
 Non
 - 11 chiffres où les deux derniers sont des chiffres de contrôle
@@ -1697,6 +1921,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Identificação 
 - Inscrição 
 - Receita 
+
    
 ## <a name="brazil-legal-entity-number-cnpj"></a>Numéro d’entité juridique Brésil (CNPJ)
 
@@ -1705,16 +1930,18 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 14 chiffres qui incluent un numéro d’enregistrement, un numéro de succursale et des chiffres de contrôle, avec des délimiteurs en plus
 
 ### <a name="pattern"></a>Modèle
+
 14 chiffres plus des délimiteurs :
-- Deux chiffres 
-- Un point  
-- Trois chiffres 
-- Un point  
-- Trois chiffres (ces huit premiers chiffres composent le numéro d’enregistrement)  
-- Une barre oblique  
-- Le numéro de succursale à quatre chiffres  
-- Un trait d’union  
-- Deux chiffres de contrôle
+
+- deux chiffres 
+- un point 
+- trois chiffres 
+- un point 
+- trois chiffres (ces huit premiers chiffres correspondent au numéro d’enregistrement) 
+- une barre oblique 
+- Numéro de succursale à quatre chiffres 
+- un trait d’Union 
+- deux chiffres qui sont des chiffres de contrôle
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -1767,6 +1994,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Situação cadastral 
 - Inscrição 
 - Empresa 
+
    
 ## <a name="brazil-national-identification-card-rg"></a>Carte d’identification nationale (RG) du Brésil
 
@@ -1779,18 +2007,18 @@ Registro de identidade (RIC) (nouveau format) : 11 chiffres
 ### <a name="pattern"></a>Modèle
 
 Registro Geral (ancien format) :
-- Deux chiffres 
-- Un point  
-- Trois chiffres 
-- Un point  
-- Trois chiffres 
-- Un trait d’union  
-- Un chiffre de contrôle
+- deux chiffres 
+- un point 
+- trois chiffres 
+- un point 
+- trois chiffres 
+- un trait d’Union 
+- un chiffre qui est un chiffre de contrôle
 
 Registro de identidade (RIC) (nouveau format) :
-- 10 chiffres 
-- Un trait d’union  
-- Un chiffre de contrôle
+- dix chiffres 
+- un trait d’Union 
+- un chiffre qui est un chiffre de contrôle
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -1839,11 +2067,11 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 ### <a name="format"></a>Format
 
-Neuf chiffres sans espaces ni délimiteurs
+neuf chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
-Neuf chiffres
+neuf chiffres
   
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -1852,7 +2080,6 @@ Non
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - L’expression régulière  `Regex_bulgaria_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_bulgaria_eu_driver's_license_number` est trouvé. 
     
@@ -1868,7 +2095,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-**Keywords_bulgaria_eu_driver’s_license_number**
+#### <a name="keywords_bulgaria_eu_drivers_license_number"></a>Keywords_bulgaria_eu_driver’s_license_number
 - LD #
 - Permis de conduire
 - Numéro de permis de conduire
@@ -1886,21 +2113,22 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - сумпс
 - шофьорска книжка
 
+
 ## <a name="bulgaria-national-identification-number"></a>Numéro d’identification nationale de la Bulgarie
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro d’identification national de l’UE.
 
 ### <a name="format"></a>Format
 
-Dix chiffres sans espaces ni délimiteurs
+dix chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
-Dix chiffres sans espaces ni délimiteurs
+dix chiffres sans espaces ni délimiteurs
   
-- Six chiffres correspondant à la date de naissance (AAMMJJ) 
-- Deux chiffres correspondant à l’ordre de naissance
-- Un chiffre correspondant au sexe : un chiffre pair pour le mâle et un chiffre impair pour femelle.
-- Un chiffre de contrôle
+- six chiffres correspondant à la date de naissance (AAMMJJ) 
+- deux chiffres correspondant à l’ordre de naissance
+- un chiffre correspondant au sexe : un chiffre pair pour le mâle et un chiffre impair pour femelle.
+- un chiffre de contrôle
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -1909,12 +2137,10 @@ Oui
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_bulgaria_eu_national_id_card` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_bulgaria_national_number` est trouvé. 
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_bulgaria_eu_national_id_card` trouve le contenu qui correspond au modèle. 
     
 ```xml
@@ -1979,16 +2205,17 @@ id national
 - униформгражданскиid #
 - униформгражданскине. #
 
+
 ## <a name="bulgaria-passport-number"></a>Numéro de passeport pour la Bulgarie
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro de passeport de l’UE.
 
 ### <a name="format"></a>Format
 
-Neuf chiffres sans espaces ni délimiteurs
+neuf chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
- Neuf chiffres 
+neuf chiffres 
   
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -1997,7 +2224,6 @@ Non
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - L’expression régulière  `Regex_bulgaria_eu_passport_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_bulgaria_eu_passport_number` est trouvé. 
 
@@ -2012,22 +2238,24 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 ```
 ### <a name="keywords"></a>Mots-clés
 
-**Keywords_bulgaria_eu_passport_number**
+#### <a name="keywords_bulgaria_eu_passport_number"></a>Keywords_bulgaria_eu_passport_number
+
 - numéro de passeport
 - Numéro de Passeport bulgare
 - Numéro de passeport
 - номер на паспорта
+
 
 ## <a name="bulgaria-tax-identification-number"></a>Numéro d’identification fiscale de la Bulgarie
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro d’identification fiscale de l’UE.
 
 ### <a name="format"></a>Format
 
-Dix chiffres sans espaces ni délimiteurs
+dix chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
-10 chiffres
+dix chiffres
   
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -2036,12 +2264,10 @@ Oui
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_bulgaria_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_bulgaria_eu_tax_file_number` est trouvé. 
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_bulgaria_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
 
 ```xml
@@ -2060,6 +2286,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 ### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywords_bulgaria_eu_tax_file_number"></a>Keywords_bulgaria_eu_tax_file_number
+
 - bnn #
 - bnn
 - bucn #
@@ -2111,18 +2338,18 @@ id national
 
 ### <a name="format"></a>Format
 
-Sept ou douze chiffres
+sept ou douze chiffres
 
 ### <a name="pattern"></a>Modèle
 
 Un numéro de compte bancaire au Canada est composé de sept ou douze chiffres.
 
 Un numéro de transit de compte bancaire du Canada est indiqué au format suivant :
-- Cinq chiffres 
-- Un trait d’union 
-- Trois chiffres ou
-- Un zéro « 0 »  
-- Huit chiffres
+- cinq chiffres 
+- un trait d’Union 
+- trois chiffres ou
+- zéro « 0 » 
+- huit chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -2179,6 +2406,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - demande de dépôt
 - informations bancaires
 - dépôt direct
+
    
 ## <a name="canada-drivers-license-number"></a>Numéro de permis de conduire Canada
 
@@ -2396,16 +2624,17 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - #carte d’identification 
 - #cartes d’identification 
 - identificateur # 
+
    
 ## <a name="canada-health-service-number"></a>Numéro de service d’intégrité Canada
 
 ### <a name="format"></a>Format
 
-10 chiffres
+dix chiffres
 
 ### <a name="pattern"></a>Modèle
 
-10 chiffres
+dix chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -2442,16 +2671,17 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - psychiatrist
 - indemnisation des salariés
 - incapacité
+
       
 ## <a name="canada-passport-number"></a>Numéro de Passeport Canada
 
 ### <a name="format"></a>Format
 
-Deux lettres majuscules suivies de six chiffres
+deux lettres majuscules suivies de six chiffres
 
 ### <a name="pattern"></a>Modèle
 
-Deux lettres majuscules suivies de six chiffres
+deux lettres majuscules suivies de six chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -2509,16 +2739,17 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Passeport #
 - PasseportNon
 - Passeportn °
+
    
 ## <a name="canada-personal-health-identification-number-phin"></a>Numéro d’identification médicale personnelle (PHIN) Canada
 
 ### <a name="format"></a>Format
 
-Neuf chiffres
+neuf chiffres
 
 ### <a name="pattern"></a>Modèle
 
-Neuf chiffres
+neuf chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -2526,8 +2757,9 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP est sûre à 75% d’avoir détecté ce type d’informations sensibles si, dans une proximité de 300 caractères : l’expression régulière Regex_canada_phin trouve le contenu qui correspond au modèle.
-Au moins deux mots clés provenant d’Keyword_canada_phin ou de Keyword_canada_provinces sont trouvés..
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
+- L’expression régulière Regex_canada_phin trouve un contenu qui correspond au modèle.
+- Au moins deux mots clés provenant d’Keyword_canada_phin ou de Keyword_canada_provinces sont trouvés.
 
 ```xml
 <!-- Canada PHIN -->
@@ -2578,21 +2810,22 @@ Au moins deux mots clés provenant d’Keyword_canada_phin ou de Keyword_canada_
 - Nouvelle-Écosse
 - Île-du-Prince-Édouard
 - Canada
+
    
 ## <a name="canada-social-insurance-number"></a>Numéro d’assurance sociale Canada
 
 ### <a name="format"></a>Format
 
-Neuf chiffres avec éventuellement des traits d’union ou des espaces
+neuf chiffres avec des traits d’Union ou des espaces facultatifs
 
 ### <a name="pattern"></a>Modèle
 
 Avec
-- Trois chiffres 
-- Un trait d’union ou un espace 
-- Trois chiffres 
-- Un trait d’union ou un espace 
-- Trois chiffres
+- trois chiffres 
+- un trait d’Union ou un espace 
+- trois chiffres 
+- un trait d’Union ou un espace 
+- trois chiffres
 
 Non mis en forme : neuf chiffres
 
@@ -2661,23 +2894,24 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Birthdate 
 - Birthday 
 - Date of Birth 
+
    
 ## <a name="chile-identity-card-number"></a>Numéro de carte d’identité Chili
 
 ### <a name="format"></a>Format
 
-7-8 chiffres plus des délimiteurs un chiffre ou une lettre
+sept à huit chiffres plus des délimiteurs un chiffre ou une lettre
 
 ### <a name="pattern"></a>Modèle
 
-7 ou 8 chiffres, plus des délimiteurs :
-- 1 ou 2 chiffres  
-- Un point  
-- Trois chiffres 
-- Un point  
-- Trois chiffres 
-- Un tiret 
-- Un chiffre ou une lettre (ne respectant pas la casse) de contrôle
+sept à huit chiffres plus des délimiteurs :
+- un à deux chiffres 
+- un point 
+- trois chiffres 
+- un point 
+- trois chiffres 
+- un tiret 
+- un chiffre ou une lettre (ne respectant pas la casse), qui est un chiffre de contrôle
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -2723,6 +2957,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Número De Identificación Nacional 
 - Tarjeta de identificación 
 - Identificación 
+
    
 ## <a name="china-resident-identity-card-prc-number"></a>Numéro de carte d’identité de résident chinoise (PRC)
 
@@ -2733,10 +2968,10 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 ### <a name="pattern"></a>Modèle
 
 18 chiffres :
-- Six chiffres qui composent un code d’adresse  
-- Huit chiffres sous la forme AAAAMMJJ qui correspondent à la date de naissance  
-- Trois chiffres qui correspondent à un code d’opération  
-- Un chiffre de contrôle
+- six chiffres qui sont un code d’adresse 
+- huit chiffres au format AAAAMMJJ, qui correspondent à la date de naissance 
+- trois chiffres correspondant à un code de commande 
+- un chiffre qui est un chiffre de contrôle
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -2780,6 +3015,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - 身分證 
 - 居民 身份證
 - 鑑定 
+
    
 ## <a name="credit-card-number"></a>Numéro de carte de crédit
 
@@ -2921,7 +3157,6 @@ data de expiração
 - セキュリティナンバー
 - セキュリティ ナンバー
 - セキュリティ番号
-
 
 #### <a name="keyword_cc_name"></a>Keyword_cc_name
 
@@ -3151,16 +3386,17 @@ número do cartão
 - デビット カード
 - デビットカード
 
+
 ## <a name="croatia-drivers-license-number"></a>Numéro de permis de conduire de la Croatie
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du pilote de l’UE.
 
 ### <a name="format"></a>Format
 
-Huit chiffres sans espaces ni délimiteurs
+huit chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
-Huit chiffres
+huit chiffres
   
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -3185,7 +3421,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-**Keywords_croatia_eu_driver’s_license_number**
+#### <a name="keywords_croatia_eu_drivers_license_number"></a>Keywords_croatia_eu_driver’s_license_number
 
 - LD #
 - Permis de conduire
@@ -3201,17 +3437,17 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - dlno #
 - vozačka dozvola
 
+
 ## <a name="croatia-identity-card-number"></a>Numéro de carte d’identité Croatie
 Cette entité de type d’informations sensibles est incluse dans le type d’informations sensibles du numéro d’identification national de l’UE et est disponible en tant qu’entité de type d’informations sensibles autonome.
 
-
 ### <a name="format"></a>Format
 
-Neuf chiffres
+neuf chiffres
 
 ### <a name="pattern"></a>Modèle
 
-Neuf chiffres consécutifs
+neuf chiffres consécutifs
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -3267,16 +3503,17 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - n ° d’étain
 - Etain #
 
+
 ## <a name="croatia-passport-number"></a>Numéro de passeport croate
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro de passeport de l’UE.
 
 ### <a name="format"></a>Format
 
-Neuf chiffres sans espaces ni délimiteurs
+neuf chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
- Neuf chiffres 
+neuf chiffres 
   
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -3285,7 +3522,6 @@ Non
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - L’expression régulière  `Regex_croatia_eu_passport_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_croatia_eu_passport_number` est trouvé. 
     
@@ -3300,7 +3536,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 ```
 ### <a name="keywords"></a>Mots-clés
 
-**Keywords_croatia_eu_passport_number**
+#### <a name="keywords_croatia_eu_passport_number"></a>Keywords_croatia_eu_passport_number
 
 - numéro de passeport
 - Numéro de passeport croate
@@ -3317,8 +3553,8 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 ### <a name="pattern"></a>Modèle
 
 11 chiffres :
-- 10 chiffres 
-- Le chiffre final est un chiffre de contrôle aux fins de l’échange de données internationales, les lettres HR sont ajoutées avant les onze chiffres.
+- dix chiffres 
+- le chiffre final est un chiffre de contrôle aux fins de l’échange de données internationales, les lettres HR sont ajoutées avant les onze chiffres.
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -3356,6 +3592,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Osobni identifikacijski broj 
 - OIB 
 
+
 ## <a name="croatia-social-security-number-or-equivalent-identification"></a>Numéro de sécurité sociale ou identification équivalent de la Croatie
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’information de numéro de sécurité sociale ou d’ID équivalent.
 
@@ -3365,10 +3602,10 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
   
 ### <a name="pattern"></a>Modèle
 
- 11 chiffres :
+11 chiffres :
   
-- Dix chiffres
-- Un chiffre de contrôle
+- dix chiffres
+- un chiffre de contrôle
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -3416,6 +3653,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - personalidnumber #
 - OIB
 - osobni identifikacijski broj
+
    
 ## <a name="croatia-tax-identification-number"></a>Numéro d’identification fiscale de la Croatie
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles identificaiton Tax UE.
@@ -3428,8 +3666,8 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 11 chiffres :
   
-- Dix chiffres, choisis de manière aléatoire
-- Un chiffre de contrôle
+- dix chiffres, choisis de manière aléatoire
+- un chiffre de contrôle
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -3438,14 +3676,12 @@ Oui
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_croatia_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_croatia_eu_tax_file_number` est trouvé. 
-    
+
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_croatia_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
-    
+
 ```xml
  <!-- EU Tax File Number -->
 <Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
@@ -3493,6 +3729,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - n ° d’étain
 - Etain #
 
+
 ## <a name="cyprus-drivers-license-number"></a>Numéro de permis de conduire Chypre
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du pilote de l’UE.
 
@@ -3511,7 +3748,6 @@ Non
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - L’expression régulière  `Regex_cyprus_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_cyprus_eu_driver's_license_number` est trouvé.
 
@@ -3527,7 +3763,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-**Keywords_cyprus_eu_driver’s_license_number**
+#### <a name="keywords_cyprus_eu_drivers_license_number"></a>Keywords_cyprus_eu_driver’s_license_number
 
 - LD #
 - Permis de conduire
@@ -3542,16 +3778,17 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - dlno #
 - άδεια οδήγησης
 
+
 ## <a name="cyprus-national-identification-number"></a>Numéro d’identification national de Chypre
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro d’identification national de l’UE.
 
 ### <a name="format"></a>Format
 
-Dix chiffres sans espaces ni délimiteurs
+dix chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
- Dix chiffres 
+dix chiffres 
   
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -3560,7 +3797,6 @@ Non applicable
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - L’expression régulière  `Regex_cyprus_eu_national_id_card` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_cyprus_eu_national_id_card` est trouvé. 
     
@@ -3584,16 +3820,17 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Numéro d’identification personnel
 - ταυτοτητασ
 
+
 ## <a name="cyprus-passport-number"></a>Numéro de passeport de Chypre
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro de passeport de l’UE.
 
 ### <a name="format"></a>Format
 
-Une lettre suivie de 6-8 chiffres sans espaces ni délimiteurs
+une lettre suivie de 6-8 chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
-Une lettre suivie de six à huit chiffres
+une lettre suivie de six à huit chiffres
   
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -3602,7 +3839,6 @@ Non
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - L’expression régulière  `Regex_cyprus_eu_passport_number` trouve le contenu qui correspond au modèle.
 - Un mot clé from  `Keywords_cyprus_eu_passport_number` est trouvé. 
     
@@ -3618,27 +3854,28 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-**Keywords_cyprus_eu_passport_number**
+#### <a name="keywords_cyprus_eu_passport_number"></a>Keywords_cyprus_eu_passport_number
 
 - numéro de passeport
 - Numéro de passeport de Chypre
 - Numéro de passeport
 - αριθμό διαβατηρίου
 
+
 ## <a name="cyprus-tax-identification-number"></a>Numéro d’identification fiscale de Chypre
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro d’identification fiscale de l’UE.
 
 ### <a name="format"></a>Format
 
-Huit chiffres et une lettre dans le modèle spécifié
+huit chiffres et une lettre dans le modèle spécifié
   
 ### <a name="pattern"></a>Modèle
 
-Huit chiffres et une lettre :
+huit chiffres et une lettre :
   
--  « 0 » 
-- Sept chiffres 
-- Une lettre (ne respecte pas la casse)
+- « 0 » 
+- sept chiffres
+- une lettre (ne respecte pas la casse)
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -3647,12 +3884,10 @@ Non applicable
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_cyprus_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_cyprus_eu_tax_file_number` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_cyprus_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```xml
@@ -3700,20 +3935,21 @@ Pattern confidenceLevel="75">
 - φορολογικού κωδικού
 - Numéro de taxe
 
+
 ## <a name="czech-drivers-license-number"></a>Numéro de permis de conduire tchèque
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du pilote de l’UE.
 
 ### <a name="format"></a>Format
 
-Deux lettres suivies de six chiffres
+deux lettres suivies de six chiffres
   
 ### <a name="pattern"></a>Modèle
 
-Huit lettres et chiffres :
+huit lettres et chiffres :
   
-- Deux lettres (ne respectent pas la casse)
-- Un espace (facultatif) 
-- Six chiffres
+- deux lettres (ne respectent pas la casse)
+- un espace (facultatif)
+- six chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -3722,7 +3958,6 @@ Non
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - L’expression régulière  `Regex_czech_republic_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_czech_republic_eu_driver's_license_number` est trouvé. 
 
@@ -3739,7 +3974,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-**Keywords_czech_republic_eu_driver’s_license_number**
+#### <a name="keywords_czech_republic_eu_drivers_license_number"></a>Keywords_czech_republic_eu_driver’s_license_number
 
 - LD #
 - Permis de conduire
@@ -3756,16 +3991,17 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - dlno #
 - řidičský prúkaz
 
+
 ## <a name="czech-passport-number"></a>Numéro de passeport tchèque
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro de passeport de l’UE.
 
 ### <a name="format"></a>Format
 
-Huit chiffres sans espaces ni délimiteurs
+huit chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
-Huit chiffres sans espaces ni délimiteurs
+huit chiffres sans espaces ni délimiteurs
   
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -3774,7 +4010,6 @@ Non
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - L’expression régulière  `Regex_czech_republic_eu_passport_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_czech_republic_eu_passport_number` est trouvé. 
     
@@ -3790,7 +4025,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-**Keywords_czech_republic_eu_passport_number**
+#### <a name="keywords_czech_republic_eu_passport_number"></a>Keywords_czech_republic_eu_passport_number
 
 - numéro de passeport
 - Numéro de passeport tchèque
@@ -3798,32 +4033,33 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - CESTOVNÍ pas
 - boîte
 
+
 ## <a name="czech-personal-identity-number"></a>Numéro d’identité personnelle tchèque
 Cette entité de type d’informations sensibles est incluse dans le bundle de numéro d’identification national de l’UE et est disponible en tant qu’entité de type d’informations sensibles autonome.
 
 ### <a name="format"></a>Format
 
-Neuf chiffres avec une barre oblique inverse facultative (ancien format) 10 chiffres avec une barre oblique inverse facultative (nouvelle mise en forme)
+neuf chiffres avec une barre oblique inverse facultative (ancien format) dix chiffres avec une barre oblique facultative (nouveau format)
 
 ### <a name="pattern"></a>Modèle
 
-Neuf chiffres (ancien format) :
-- Neuf chiffres
+neuf chiffres (ancien format) :
+- neuf chiffres
 
 OR
 
-- Six chiffres qui représentent la date de naissance
-- Une barre oblique 
-- Trois chiffres
+- six chiffres qui représentent la date de naissance
+- une barre oblique
+- trois chiffres
 
-10 chiffres (nouveau format) :
-- 10 chiffres
+dix chiffres (nouveau format) :
+- dix chiffres
 
 OR
 
-- Six chiffres qui représentent la date de naissance
-- Une barre oblique  
-- Quatre chiffres où le dernier chiffre est un chiffre de contrôle
+- six chiffres qui représentent la date de naissance
+- une barre oblique 
+- quatre chiffres où le dernier chiffre est un chiffre de contrôle
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -3831,9 +4067,11 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP est sûre à 85% d’avoir détecté ce type d’informations sensibles si, dans une proximité de 300 caractères : la fonction Func_czech_id_card trouve le contenu qui correspond au modèle.
-Un mot clé figurant dans la liste Keyword_czech_id_card est trouvé.
-La somme de contrôle est correcte.
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
+
+- La fonction Func_czech_id_card trouve un contenu qui correspond au modèle.
+- Un mot clé figurant dans la liste Keyword_czech_id_card est trouvé.
+- La somme de contrôle est correcte.
 
 ```xml
 <!-- Czech Personal Identity Number -->
@@ -3850,8 +4088,8 @@ La somme de contrôle est correcte.
 - Rodné číslo
 
 
-
 ## <a name="czech-social-security-number-or-equivalent-identification"></a>Numéro de sécurité sociale tchèque ou identification équivalente
+
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’information de numéro de sécurité sociale ou d’ID équivalent.
 
 ### <a name="format"></a>Format
@@ -3860,15 +4098,12 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
   
 ### <a name="pattern"></a>Modèle
 
-Dix chiffres et une barre oblique inverse :
+dix chiffres et une barre oblique inverse :
   
-- Six chiffres correspondant à la date de naissance (AAMMJJ) : 
-    
-- Une barre oblique inverse
-    
-- Trois chiffres correspondant à un numéro de série qui sépare les personnes nés à la même date
-    
-- Un chiffre de contrôle
+- six chiffres correspondant à la date de naissance (AAMMJJ) : 
+- une barre oblique inverse
+- trois chiffres correspondant à un numéro de série qui sépare les personnes nés à la même date
+- un chiffre de contrôle
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -3877,12 +4112,10 @@ Oui
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_czech_republic_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_czech_republic_eu_ssn_or_equivalent` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_czech_republic_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
 
 ```xml
@@ -3916,19 +4149,20 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - rodné číslo
 - rodne cislo
 
+
 ## <a name="czech-tax-identification-number"></a>Numéro d’identification de taxe tchèque
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro d’identification fiscale de l’UE.
 
 ### <a name="format"></a>Format
 
-Neuf ou dix chiffres avec une barre oblique inverse facultative
+neuf ou dix chiffres avec une barre oblique inverse facultative
   
 ### <a name="pattern"></a>Modèle
 
-Neuf ou dix chiffres avec une barre oblique inverse facultative :
+neuf ou dix chiffres avec une barre oblique inverse facultative :
   
-- Six chiffres 
-- Une barre oblique inverse (facultatif)
+- six chiffres 
+- une barre oblique inverse (facultatif)
 - 3 ou 4 chiffres
     
 ### <a name="checksum"></a>Somme de contrôle
@@ -3938,7 +4172,6 @@ Non applicable
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - L’expression régulière  `Regex_czech_republic_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_czech_republic_eu_tax_file_number` est trouvé. 
     
@@ -3994,16 +4227,17 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Numéro d’identification unique
 - Numéro de taxe
 
+
 ## <a name="denmark-drivers-license-number"></a>Numéro de permis de conduire Danemark
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du pilote de l’UE.
 
 ### <a name="format"></a>Format
 
-Huit chiffres sans espaces ni délimiteurs
+huit chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
-Huit chiffres
+huit chiffres
   
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -4012,7 +4246,6 @@ Oui
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - L’expression régulière  `Regex_denmark_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_denmark_eu_driver's_license_number` est trouvé. 
     
@@ -4028,7 +4261,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-**Keywords_denmark_eu_driver’s_license_number**
+#### <a name="keywords_denmark_eu_drivers_license_number"></a>Keywords_denmark_eu_driver’s_license_number
 
 - | DL #
 - Permis de conduire
@@ -4051,11 +4284,11 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 ### <a name="format"></a>Format
 
-Neuf chiffres sans espaces ni délimiteurs
+neuf chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
- Neuf chiffres 
+neuf chiffres 
   
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -4064,7 +4297,6 @@ Non
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - L’expression régulière  `Regex_denmark_eu_passport_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_denmark_eu_passport_number` est trouvé. 
     
@@ -4080,7 +4312,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-**Keywords_denmark_eu_passport_number**
+#### <a name="keywords_denmark_eu_passport_number"></a>Keywords_denmark_eu_passport_number
 
 - numéro de passeport
 - Numéro de passeport danois
@@ -4088,19 +4320,20 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - boîte
 - pasnummer
 
+
 ## <a name="denmark-personal-identification-number"></a>Numéro d’identification personnel Danemark
 Cette entité de type d’informations sensibles est incluse dans le type d’informations sensibles du numéro d’identification national de l’UE et est disponible en tant qu’entité de type d’informations sensibles autonome.
 
 ### <a name="format"></a>Format
 
-10 chiffres contenant un trait d’union
+dix chiffres contenant un trait d’Union
 
 ### <a name="pattern"></a>Modèle
 
-10 chiffres :
-- Six chiffres au format JJMMAA qui correspondent à la date de naissance  
-- Un trait d’union  
-- Quatre chiffres où le dernier chiffre est un chiffre de contrôle
+dix chiffres :
+- six chiffres au format JJMMAA qui correspondent à la date de naissance 
+- un trait d’Union 
+- quatre chiffres où le dernier chiffre est un chiffre de contrôle
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -4108,9 +4341,10 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP est sûre à 75% d’avoir détecté ce type d’informations sensibles si, dans une proximité de 300 caractères : l’expression régulière Regex_denmark_id trouve le contenu qui correspond au modèle.
-Un mot clé figurant dans la liste Keyword_denmark_id est trouvé.
-La somme de contrôle est correcte.
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
+- L’expression régulière Regex_denmark_id trouve un contenu qui correspond au modèle.
+- Un mot clé figurant dans la liste Keyword_denmark_id est trouvé.
+- La somme de contrôle est correcte.
 
 ```xml
 <!-- Denmark Personal Identification Number -->
@@ -4178,6 +4412,7 @@ La somme de contrôle est correcte.
 - ID d’étain
 - n ° d’étain
 
+
 ## <a name="denmark-social-security-number-or-equivalent-identification"></a>Numéro de sécurité sociale ou identification équivalente Danemark
 Cette entité de type d’informations sensibles n’est disponible que pour le type d’informations sensibles de l’UE ou ID équivalent.
 
@@ -4187,12 +4422,12 @@ Cette entité de type d’informations sensibles n’est disponible que pour le 
   
 ### <a name="pattern"></a>Modèle
 
-Dix chiffres et un trait d’Union :
+dix chiffres et un trait d’Union :
   
-- Six chiffres correspondant à la date de naissance (JJMMAA) 
-- Un trait d’union 
-- Quatre chiffres correspondant à un numéro de séquence
-    
+- six chiffres correspondant à la date de naissance (JJMMAA) 
+- un trait d’Union
+- quatre chiffres correspondant à un numéro de séquence
+
 ### <a name="checksum"></a>Somme de contrôle
 
 Oui
@@ -4200,12 +4435,10 @@ Oui
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_denmark_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_denmark_eu_ssn_or_equivalent` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_denmark_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
     
 ```xml
@@ -4237,20 +4470,21 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - CPR-nummer
 - personnummer
 
+
 ## <a name="denmark-tax-identification-number"></a>Numéro d’identification fiscale Danemark
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro d’identification fiscale de l’UE.
 
 ### <a name="format"></a>Format
 
-Dix chiffres contenant un trait d’Union
+dix chiffres contenant un trait d’Union
   
 ### <a name="pattern"></a>Modèle
 
-Dix chiffres contenant un trait d’Union :
+dix chiffres contenant un trait d’Union :
   
--  Six chiffres correspondant à la date de naissance (JJMMAA)
-- Un trait d’union 
-- Quatre chiffres correspondant à un numéro de séquence où le premier chiffre correspond au siècle de naissance et le dernier chiffre correspond au sexe de l’individu (impair pour les hommes et les femmes)
+- six chiffres correspondant à la date de naissance (JJMMAA)
+- un trait d’Union
+- quatre chiffres correspondant à un numéro de séquence où le premier chiffre correspond au siècle de naissance et le dernier chiffre correspond au sexe de l’individu (impair pour les hommes et les femmes)
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -4259,12 +4493,10 @@ Oui
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_denmark_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_denmark_eu_tax_file_number` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_denmark_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```xml
@@ -4341,14 +4573,14 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="format"></a>Format
 
-Deux lettres suivies de sept chiffres
+deux lettres suivies de sept chiffres
 
 ### <a name="pattern"></a>Modèle
 
 Le modèle doit inclure tous les éléments suivants :
-- Une lettre (ne respecte pas la casse) à partir de cet ensemble de lettres possibles : abcdefghjklmnprstux, qui est un code d’utilisateur enregistré 
-- Une lettre (ne respecte pas la casse), qui est la première lettre du nom de l’utilisateur enregistré 
-- Sept chiffres, le dernier est le chiffre de contrôle
+- une lettre (ne respecte pas la casse) à partir de cet ensemble de lettres possibles : abcdefghjklmnprstux, qui est un code de l’abonné 
+- une lettre (ne respecte pas la casse), qui est la première lettre du nom de famille de l’inscrit 
+- sept chiffres, dont le dernier est le chiffre de contrôle
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -4371,21 +4603,22 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-Néant
+aucune
+
 
 ## <a name="estonia-drivers-license-number"></a>Numéro de permis de conduire Estonie
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du pilote de l’UE.
 
 ### <a name="format"></a>Format
 
-Deux lettres suivies de six chiffres
+deux lettres suivies de six chiffres
   
 ### <a name="pattern"></a>Modèle
 
-Deux lettres et six chiffres :
+deux lettres et six chiffres :
   
--  Les lettres "ET" (ne respectent pas la casse) 
-- Six chiffres
+- les lettres "ET" (ne respectent pas la casse) 
+- six chiffres
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -4394,7 +4627,6 @@ Non
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - L’expression régulière  `Regex_estonia_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_estonia_eu_driver's_license_number` est trouvé. 
     
@@ -4410,7 +4642,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-**Keywords_estonia_eu_driver’s_license_number**
+#### <a name="keywords_estonia_eu_drivers_license_number"></a>Keywords_estonia_eu_driver’s_license_number
 
 - LD #
 - Permis de conduire
@@ -4426,6 +4658,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - dlno #
 - permis de conduire
 
+
 ## <a name="estonia-national-identification-number"></a>Numéro d’identification nationale de l’Estonie
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro d’identification national de l’UE.
 
@@ -4437,11 +4670,11 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 11 chiffres :
   
-- Un chiffre correspondant au sexe et au siècle de naissance (nombre impair mâle, numéro pair femelle ; 1-2:19 siècle ; 3-4:20ème siècle ; 5-6:21ème siècle)
+- un chiffre correspondant au sexe et au siècle de naissance (nombre impair mâle, numéro pair femelle ; 1-2:19 siècle ; 3-4:20ème siècle ; 5-6:21ème siècle)
     
-- Six chiffres correspondant à la date de naissance (AAMMJJ)
-- Trois chiffres correspondant à un numéro de série séparant les personnes nés à la même date
-- Un chiffre de contrôle
+- six chiffres correspondant à la date de naissance (AAMMJJ)
+- trois chiffres correspondant à un numéro de série séparant les personnes nés à la même date
+- un chiffre de contrôle
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -4450,12 +4683,10 @@ Oui
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_estonia_eu_national_id_card` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_estonia_eu_national_id_card` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_estonia_eu_national_id_card` trouve le contenu qui correspond au modèle. 
     
 ```xml
@@ -4507,16 +4738,17 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - n ° d’étain
 - Etain #
 
+
 ## <a name="estonia-passport-number"></a>Numéro de passeport Estonie
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro de passeport de l’UE.
 
 ### <a name="format"></a>Format
 
-Une lettre suivie de sept chiffres sans espaces ni délimiteurs
+une lettre suivie de sept chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
-Une lettre suivie de sept chiffres
+une lettre suivie de sept chiffres
   
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -4525,7 +4757,6 @@ Non
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - L’expression régulière  `Regex_estonia_eu_passport_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_estonia_eu_passport_number` est trouvé. 
     
@@ -4541,12 +4772,13 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-**Keywords_estonia_eu_passport_number**
+#### <a name="keywords_estonia_eu_passport_number"></a>Keywords_estonia_eu_passport_number
 
 - numéro de passeport
 - Numéro de passeport estonien
 - Numéro de passeport
 - Eesti kodaniku
+
 
 ## <a name="estonia-tax-identification-number"></a>Numéro d’identification de taxe Estonie
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro d’identification fiscale de l’UE.
@@ -4559,11 +4791,11 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 11 chiffres :
   
--  Un chiffre correspondant au sexe et au siècle de naissance, où un nombre impair indique le mâle et le nombre pair, la femme comme suit : 1,2 pour le 19 siècle ; 3, 4 pour le vingtième siècle ; et 5, 6 pour le 21ème siècle 
+- Un chiffre correspondant au sexe et au siècle de naissance, où un nombre impair indique le mâle et le nombre pair, la femme comme suit : 1,2 pour le 19 siècle ; 3, 4 pour le vingtième siècle ; et 5, 6 pour le 21ème siècle 
     
-- Six chiffres correspondant à la date de naissance (AAMMJJ)
-- Trois chiffres correspondant à un numéro de série séparant les personnes nés à la même date
-- Un chiffre de contrôle
+- six chiffres correspondant à la date de naissance (AAMMJJ)
+- trois chiffres correspondant à un numéro de série séparant les personnes nés à la même date
+- un chiffre de contrôle
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -4572,12 +4804,10 @@ Oui
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_estonia_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_estonia_eu_tax_file_number` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_estonia_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```xml
@@ -4978,7 +5208,9 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - vto 
 - válido hasta 
 
+
 ## <a name="eu-drivers-license-number"></a>Numéro de permis de conduire de l’UE
+
 Il s’agit des entités du type d’informations sensibles du pilote de l’UE.
 
 - [Autriche](#austria-drivers-license-number) 
@@ -5010,7 +5242,9 @@ Il s’agit des entités du type d’informations sensibles du pilote de l’UE.
 - [Suède](#sweden-drivers-license-number)
 - [impérial](#uk-drivers-license-number)
 
+
 ## <a name="eu-national-identification-number"></a>Numéro d’identification nationale de l’UE
+
 Il s’agit des entités du type d’informations sensibles du numéro d’identification national UE.
 
 - [Autriche](#austria-national-identification-number)
@@ -5043,6 +5277,7 @@ Il s’agit des entités du type d’informations sensibles du numéro d’ident
 
 
 ## <a name="eu-passport-number"></a>Numéro de passeport UE 
+
 Il s’agit des entités dans le numéro de passeport UE typeThese sont les entités du groupe de numéros de passeport UE.
 
 - [Autriche](#austria-passport-number)
@@ -5076,6 +5311,7 @@ Il s’agit des entités dans le numéro de passeport UE typeThese sont les enti
 
 
 ## <a name="eu-social-security-number-or-equivalent-identification"></a>Numéro de sécurité sociale de l’UE ou identification équivalente
+
 Il s’agit des entités qui sont dans le type d’information de numéro de sécurité sociale ou d’identification équivalent.
 
 - [Autriche](#austria-social-security-number-or-equivalent-identification)
@@ -5092,9 +5328,10 @@ Il s’agit des entités qui sont dans le type d’information de numéro de sé
 - [Espagne](#spain-social-security-number-ssn)
 - [Suède](#sweden-social-security-number-or-equivalent-identification)
 
+
 ## <a name="eu-tax-identification-number"></a>Numéro d’identification fiscale de l’UE
 
-les entités Hese sont dans le type d’informations sensibles du numéro d’identification fiscale de l’UE.
+Ces entités sont dans le type d’informations sensibles du numéro d’identification fiscale de l’UE.
 
 - [Autriche](#austria-tax-identification-number)
 - [Belgique](#belgium-tax-identification-number)
@@ -5131,15 +5368,15 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 ### <a name="format"></a>Format
 
-10 chiffres contenant un trait d’union
+dix chiffres contenant un trait d’Union
   
 ### <a name="pattern"></a>Modèle
 
-10 chiffres contenant un trait d’Union :
+dix chiffres contenant un trait d’Union :
   
--  Six chiffres 
-- Un trait d’union
--  Quatre chiffres 
+- six chiffres 
+- un trait d’Union
+- quatre chiffres 
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -5148,9 +5385,7 @@ Non
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - L’expression régulière  `Regex_finland_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
-    
 - Un mot clé from  `Keywords_finland_eu_driver's_license_number` est trouvé. 
     
 ```xml
@@ -5165,7 +5400,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-**Keywords_finland_eu_driver’s_license_number**
+#### <a name="keywords_finland_eu_drivers_license_number"></a>Keywords_finland_eu_driver’s_license_number
 
 - LD #
 - Permis de conduire
@@ -5181,20 +5416,75 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - dlno #
 - ajokortti
 
+
+## <a name="finland-european-health-insurance-number"></a>Numéro d’assurance maladie européenne pour la Finlande
+
+### <a name="format"></a>Format
+
+numéro à 20 chiffres
+
+### <a name="pattern"></a>Modèle
+
+nombre à 20 chiffres :
+
+- dix chiffres-8024680246
+- un espace ou un tiret facultatif
+- dix chiffres
+
+### <a name="checksum"></a>Somme de contrôle
+
+Non
+
+### <a name="definition"></a>Définition
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
+- L’expression Regex Regex_Finland_European_Health_Insurance_Number trouve le contenu qui correspond au modèle.
+- Un mot clé depuis Keyword_Finland_European_Health_Insurance_Number est trouvé.
+
+```xml
+      <!-- Finland European Health Insurance Number -->
+      <Entity id="60f75aed-81bf-4625-89b0-0846b9248ee7" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_Finland_European_Health_Insurance_Number"/>
+          <Match idRef="Keyword_Finland_European_Health_Insurance_Number"/>
+        </Pattern>
+      </Entity>
+```
+### <a name="keywords"></a>Mots-clés
+
+#### <a name="keyword_finland_european_health_insurance_number"></a>Keyword_finland_european_health_insurance_number
+
+- ehic #
+- ehic
+- finlandehicnumber #
+- finska sjukförsäkringskort
+- carte d’intégrité
+- carte d’assurance-maladie
+- Numéro d’assurance-maladie
+- hälsokort
+- sairaanhoitokortin
+- sairausvakuutuskortti
+- sairausvakuutusnumero
+- sjukförsäkring nummer
+- sjukförsäkringskort
+- suomen sairausvakuutuskortti
+- terveyskortti
+
+
 ## <a name="finland-national-identification-number"></a>Numéro d’identification national de Finlande
 Cette entité de type d’informations sensibles est incluse dans le type d’informations sensibles du numéro d’identification national de l’UE et est disponible en tant qu’entité de type d’informations sensibles autonome.
 
 ### <a name="format"></a>Format
 
-Six chiffres plus un caractère indiquant un siècle plus trois chiffres plus un chiffre de contrôle
+six chiffres plus un caractère indiquant un siècle plus trois chiffres plus un chiffre de contrôle
 
 ### <a name="pattern"></a>Modèle
 
 Le modèle doit inclure tous les éléments suivants :
-- Six chiffres au format JJMMAA qui représentent la date de naissance 
-- Marqueur de siècle (soit « - », « + » ou « a ») 
+- six chiffres au format de format JJMMAA qui correspondent à une date de naissance 
+- marqueur siècle (« - », « + » ou « a ») 
 - Numéro d’identification personnel à trois chiffres 
-- Un chiffre ou une lettre (ne respectant pas la casse) de contrôle
+- un chiffre ou une lettre (ne respectant pas la casse), qui est un chiffre de contrôle
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -5203,9 +5493,9 @@ Oui
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
-- La fonction Func_finnish_national_id trouve un contenu qui correspond au modèle.
-- Un mot clé figurant dans la liste Keyword_finnish_national_id est trouvé.
-- La somme de contrôle est correcte.
+- la fonction Func_finnish_national_id trouve le contenu qui correspond au modèle
+- un mot clé depuis Keyword_finnish_national_id est trouvé.
+- le checksum passe
 
 ```xml
 <!-- Finnish National ID-->
@@ -5270,19 +5560,24 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - verotunniste
 - verotunnus
 
+
 ## <a name="finland-passport-number"></a>Numéro de passeport de Finlande
 Cette entité de type d’informations sensibles est disponible dans le type d’informations sensibles du numéro de passeport de l’UE et est disponible en tant qu’entité de type d’informations sensibles autonome.
 
 ### <a name="format"></a>Format
-Combinaison de neuf lettres et chiffres
+combinaison de neuf lettres et chiffres
 
 ### <a name="pattern"></a>Modèle
-Combinaison de neuf lettres et chiffres : deux lettres (ne respectant pas la casse) sept chiffres
+combinaison de neuf lettres et chiffres :
+- deux lettres (ne respectant pas la casse) 
+- sept chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
+
 Non
 
 ### <a name="definition"></a>Définition
+
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - L’expression régulière Regex_finland_passport_number trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_finland_passport_number est trouvé.
@@ -5297,9 +5592,11 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 ### <a name="keywords"></a>Mots-clés
+
 - Keyword_finland_passport_number
 - Tel
 - Transfert
+
 
 ## <a name="finland-social-security-number-or-equivalent-identification"></a>Numéro de sécurité sociale Finlande ou identification équivalente
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’information de numéro de sécurité sociale ou d’ID équivalent.
@@ -5310,15 +5607,15 @@ Combinaison de 11 caractères au format spécifié
   
 ### <a name="pattern"></a>Modèle
 
-Combinaison de 11 caractères au format spécifié :
+combinaison de 11 caractères au format spécifié :
   
--  Six chiffres 
-- Une instance de l’un des éléments suivants :
-  - Symbole plus
-  - Symbole moins
-  - La lettre « A » (ne respecte pas la casse)
-- Trois chiffres
-- Une lettre ou un chiffre
+- six chiffres 
+- une instance de l’un des éléments suivants :
+  - symbole plus
+  - symbole moins
+  - la lettre « A » (ne respecte pas la casse)
+- trois chiffres
+- une lettre ou un chiffre
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -5327,12 +5624,10 @@ Oui
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_finland_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_finland_eu_ssn_or_equivalent` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_finland_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
     
 ```xml
@@ -5374,21 +5669,21 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Kansallinen tunnus numérique
 - hetu
 
+
 ## <a name="finland-tax-identification-number"></a>Numéro d’identification de taxe Finlande
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro d’identification fiscale de l’UE.
 
 ### <a name="format"></a>Format
 
-Combinaison de 11 caractères chiffres, lettres, et signe plus et moins
+combinaison de 11 caractères chiffres, lettres, et signe plus et moins
   
 ### <a name="pattern"></a>Modèle
 
-Combinaison de 11 caractères chiffres, lettres, et signe plus et moins :
-  
-- Six chiffres
-- L’une des options suivantes : un signe plus, un signe moins ou la lettre « A » (ne respectant pas la casse), où le signe plus est né entre 1800-1899, le signe moins est né entre 1900-1999, et « A » désigne né 2000 et after
-- Trois chiffres
-- Une lettre ou un chiffre
+combinaison de 11 caractères chiffres, lettres, et signe plus et moins :
+- six chiffres
+- l’une des options suivantes : un signe plus, un signe moins ou la lettre « A » (ne respectant pas la casse), où le signe plus est né entre 1800-1899, le signe moins est né entre 1900-1999, et « A » désigne né 2000 et after
+- trois chiffres
+- une lettre ou un chiffre
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -5397,12 +5692,10 @@ Oui
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_finland_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_finland_eu_tax_file_number` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_finland_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```xml
@@ -5493,10 +5786,10 @@ Non
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-- La fonction Func_french_drivers_license trouve un contenu qui correspond au modèle.
-- Au moins une des affirmations suivantes est vraie :
-- Un mot clé figurant dans la liste Keyword_french_drivers_license est trouvé.
-- La fonction Func_eu_date trouve une date au format correct.
+- la fonction Func_french_drivers_license trouve le contenu qui correspond au modèle.
+- au moins l’une des conditions suivantes est vraie :
+- un mot clé depuis Keyword_french_drivers_license est trouvé.
+- la fonction Func_eu_date trouve une date au format de date correct.
 
 ```xml
 <!-- France Driver's License Number -->
@@ -5524,6 +5817,52 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - numéro de permis
 - numéros de permis
 - numéros de permis
+
+
+## <a name="france-health-insurance-number"></a>Numéro d’assurance maladie France
+
+### <a name="format"></a>Format
+
+nombre à 21 chiffres
+
+### <a name="pattern"></a>Modèle
+
+nombre à 21 chiffres :
+
+- dix chiffres
+- un espace facultatif
+- dix chiffres
+- un espace facultatif
+- un chiffre
+
+
+### <a name="checksum"></a>Somme de contrôle
+
+Non
+
+### <a name="definition"></a>Définition
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
+- l’expression Regex Regex_France_Health_Insurance_Number trouve le contenu qui correspond au modèle.
+- un mot clé depuis Keyword_France_Health_Insurance_Number est trouvé.
+
+```xml
+      <!-- France Health Insurance Number -->
+      <Entity id="9bc2069e-76df-4ff9-ac02-2f519469e236" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_France_Health_Insurance_Number"/>
+          <Match idRef="Keyword_France_Health_Insurance_Number"/>
+        </Pattern>
+      </Entity>
+```
+### <a name="keywords"></a>Mots-clés
+
+#### <a name="keyword_france_health_insurance_number"></a>Keyword_France_health_insurance_number
+
+- carte d’assurance
+- carte vitale
+- carte d’assuré social
+
 
 ## <a name="france-national-identification-card-cni"></a>Carte d’identification nationale (CNI) France
 Cette entité de type d’informations sensibles est incluse dans le type d’informations sensibles du numéro d’identification national de l’UE et est disponible en tant qu’entité de type d’informations sensibles autonome.
@@ -5575,14 +5914,14 @@ Cette entité de type d’informations sensibles est disponible dans le type d�
 
 ### <a name="format"></a>Format
 
-Neuf chiffres et lettres
+neuf chiffres et lettres
 
 ### <a name="pattern"></a>Modèle
 
-Neuf chiffres et lettres :
-- Deux chiffres 
-- Deux lettres (ne respectent pas la casse) 
-- Cinq chiffres
+neuf chiffres et lettres :
+- deux chiffres 
+- deux lettres (ne respectant pas la casse) 
+- cinq chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -5715,10 +6054,10 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 13 chiffres pour les personnes :
   
-- Un chiffre qui doit être 0, 1, 2 ou 3
+- un chiffre qui doit être 0, 1, 2 ou 3
 - 12 chiffres
     
-Neuf chiffres pour les entités
+neuf chiffres pour les entités
   
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -5727,12 +6066,10 @@ Non applicable
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_france_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_france_eu_tax_file_number` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_france_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```xml
@@ -5771,21 +6108,83 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - n ° d’étain
 - Etain #
 
+
+## <a name="france-value-added-tax-number"></a>Numéro de TVA de la valeur ajoutée France
+
+### <a name="format"></a>Format
+
+modèle alphanumérique de 13 caractères
+
+### <a name="pattern"></a>Modèle
+
+modèle alphanumérique de 13 caractères :
+
+- deux lettres-FR (ne respectant pas la casse)
+- un espace ou un tiret facultatif
+- deux lettres ou chiffres
+- espace, point, tiret ou virgule facultatif
+- trois chiffres
+- espace, point, tiret ou virgule facultatif
+- trois chiffres
+- espace, point, tiret ou virgule facultatif
+- trois chiffres
+
+### <a name="checksum"></a>Somme de contrôle
+
+Oui
+
+### <a name="definition"></a>Définition
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
+- La fonction Func_france_value_added_tax_number trouve le contenu qui correspond au modèle.
+- Un mot clé depuis Keywords_france_value_added_tax_number est trouvé.
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
+- La fonction Func_france_value_added_tax_number trouve le contenu qui correspond au modèle.
+
+```xml
+      <!-- France Value Added Tax Number -->
+      <Entity id="949121e6-ad9f-4379-8731-710342baea78" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_france_value_added_tax_number" />
+          <Match idRef="Keywords_france_value_added_tax_number" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_france_value_added_tax_number" />
+        </Pattern>
+      </Entity>
+```
+### <a name="keywords"></a>Mots-clés
+
+#### <a name="keyword_france_value_added_tax_number"></a>Keyword_France_value_added_tax_number
+
+- Numéro de TVA
+- n ° TVA
+- compt #
+- taxe sur la valeur ajoutée
+- ID Siren n ° numéro d’identification taxe sur valeur ajoutée
+- taxe valeur ajoutée
+- taxe sur la valeur ajoutée
+- n ° TVA
+- Numéro de TVA
+- Numéro d’identification Siren
+
+
 ## <a name="germany-drivers-license-number"></a>Numéro de permis de conduire Allemagne
 Cette entité de type d’informations sensibles est incluse dans le type d’informations sensibles du pilote de l’UE et est disponible en tant qu’entité de type d’informations sensibles autonome.
 
 ### <a name="format"></a>Format
 
-Combinaison de 11 chiffres et lettres
+combinaison de 11 chiffres et lettres
 
 ### <a name="pattern"></a>Modèle
 
 11 chiffres et lettres (ne respectent pas la casse) :
-- Un chiffre ou une lettre 
-- Deux chiffres 
-- Six chiffres ou lettres 
-- Un chiffre 
-- Un chiffre ou une lettre
+- un chiffre ou une lettre 
+- deux chiffres 
+- six chiffres ou lettres 
+- un chiffre 
+- un chiffre ou une lettre
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -5914,24 +6313,25 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - ausstellende behorde
 - ausstellende behoerde
 
+
 ## <a name="germany-identity-card-number"></a>Numéro de carte d’identité Allemagne
 - Cette entité de type d’informations sensibles est incluse dans le type d’informations sensibles du numéro d’identification national de l’UE et est disponible en tant qu’entité de type d’informations sensibles autonome.
 - Cette entité de type d’informations sensibles est incluse dans le type d’informations sensibles du numéro de sécurité sociale de l’UE ou ID équivalent.
 
 ### <a name="format"></a>Format
 
-Depuis le 1er novembre 2010 : neuf lettres et chiffres
+depuis le 1er novembre 2010 : neuf lettres et chiffres
 
-Du 1er avril 1987 au 31 octobre 2010:10 chiffres
+du 1er avril 1987 au 31 octobre 2010:10 chiffres
 
 ### <a name="pattern"></a>Modèle
 
-Depuis le 1er novembre 2010 :
-- Une lettre (ne respectant pas la casse)  
-- Huit chiffres
+depuis le 1er novembre 2010 :
+- une lettre (ne respecte pas la casse) 
+- huit chiffres
 
-Du 1er avril 1987 au 31 octobre 2010 :
-- 10 chiffres
+du 1er avril 1987 au 31 octobre 2010 :
+- dix chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -5982,10 +6382,10 @@ Cette entité de type d’informations sensibles est incluse dans le type d’in
 ### <a name="pattern"></a>Modèle
 
 Le modèle doit inclure tous les éléments suivants :
-- Le premier caractère est un chiffre ou une lettre de cet ensemble (C, F, G, H, J, K) 
-- Trois chiffres 
-- Cinq chiffres ou lettres à partir de cet ensemble (C, -H, J-N, P, R, T, V-Z) 
-- Un chiffre
+- le premier caractère est un chiffre ou une lettre de cet ensemble (C, F, G, H, J, K) 
+- trois chiffres 
+- cinq chiffres ou lettres de cet ensemble (C,-H, J-N, P, R, T, V-Z) 
+- un chiffre
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -6057,6 +6457,7 @@ Reisepass-Nr
 
 bnationalit. t
 
+
 ## <a name="germany-tax-identification-number"></a>Numéro d’identification fiscale de l’Allemagne
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro d’identification fiscale de l’UE.
 
@@ -6068,8 +6469,8 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 11 chiffres :
   
--  Dix chiffres 
-- Un chiffre de contrôle
+- dix chiffres 
+- un chiffre de contrôle
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -6078,12 +6479,10 @@ Oui
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_germany_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_germany_eu_tax_file_number` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_germany_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```xml
@@ -6128,16 +6527,74 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - zinn
 - zinnnummer
 
+
+## <a name="germany-value-added-tax-number"></a>Numéro de TVA de la valeur ajoutée Germany
+
+### <a name="format"></a>Format
+
+modèle alphanumérique de 11 caractères
+
+### <a name="pattern"></a>Modèle
+
+modèle alphanumérique de 11 caractères :
+
+- lettre D ou d
+- lettre E ou e
+- un espace facultatif
+- trois chiffres
+- espace ou virgule facultatif
+- trois chiffres
+- espace ou virgule facultatif
+- trois chiffres
+
+### <a name="checksum"></a>Somme de contrôle
+
+Oui
+
+### <a name="definition"></a>Définition
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
+- La fonction Func_germany_value_added_tax_number trouve le contenu qui correspond au modèle.
+- Un mot clé depuis Keywords_germany_value_added_tax_number est trouvé.
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
+- La fonction Func_germany_value_added_tax_number trouve le contenu qui correspond au modèle.
+
+```xml
+      <!-- Germany Value Added Tax Number -->
+      <Entity id="db177eb2-8811-4842-bffc-128c14aa219f" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_germany_value_added_tax_number" />
+          <Match idRef="Keywords_germany_value_added_tax_number" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_germany_value_added_tax_number" />
+        </Pattern>
+      </Entity>
+```
+### <a name="keywords"></a>Mots-clés
+
+#### <a name="keyword_germany_value_added_tax_number"></a>Keyword_germany_value_added_tax_number
+
+- Numéro de TVA
+- n ° TVA
+- compt #
+- n ° de TVA Mehrwertsteuer
+- mwst
+- mehrwertsteuer identifikationsnummer
+- mehrwertsteuer nummer
+
+
 ## <a name="greece-drivers-license-number"></a>Numéro de permis de conduire Grèce
 Cette entité de type d’informations sensibles est incluse dans le type d’informations sensibles du pilote de l’UE et est disponible en tant qu’entité de type d’informations sensibles autonome.
 
 ### <a name="format"></a>Format
 
-Neuf chiffres sans espaces ni délimiteurs
+neuf chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
- Neuf chiffres 
+neuf chiffres 
   
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -6146,7 +6603,6 @@ Non
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - L’expression régulière  `Regex_greece_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_greece_eu_driver's_license_number` est trouvé. 
     
@@ -6162,7 +6618,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-**Keywords_greece_eu_driver’s_license_number**
+#### <a name="keywords_greece_eu_drivers_license_number"></a>Keywords_greece_eu_driver’s_license_number
 
 - Fichier #
 - Permis de conduire
@@ -6180,7 +6636,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Adeia odigisis
 
 
-## <a name="greece-national-id-card"></a>Carte d’identité nationale grecque
+## <a name="greece-national-id-card"></a>Carte d’identité nationale Grèce
 Cette entité de type d’informations sensibles est incluse dans le type d’informations sensibles du numéro d’identification national de l’UE et est disponible en tant qu’entité de type d’informations sensibles autonome.
 
 ### <a name="format"></a>Format
@@ -6232,7 +6688,9 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - ταυτότητα
 - ταυτότητας
 
+
 ## <a name="greece-passport-number"></a>Numéro de passeport Grèce
+
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro de passeport de l’UE.
 
 ### <a name="format"></a>Format
@@ -6266,7 +6724,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-**Keywords_greece_eu_passport_number**
+#### <a name="keywords_greece_eu_passport_number"></a>Keywords_greece_eu_passport_number
 
 - numéro de passeport
 - Numéro de passeport grec
@@ -6274,6 +6732,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - διαβατηριο
 
 ## <a name="greece-tax-identification-number"></a>Numéro d’identification de taxe Grèce
+
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro d’identification fiscale de l’UE.
 
 ### <a name="format"></a>Format
@@ -6293,10 +6752,9 @@ Non applicable
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
 - L’expression régulière  `Regex_greece_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
-    
 - Un mot clé from  `Keywords_greece_eu_tax_file_number` est trouvé. 
     
-```
+```xml
  <!-- EU Tax File Number -->
 <Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
@@ -6421,8 +6879,10 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - 香港特別行政區非永久性居民身份証
 - 香港特別行政區非永久性居民身分證
 - 香港特別行政區非永久性居民身分証
+
    
 ## <a name="hungary-drivers-license-number"></a>Numéro de permis de conduire hongrois
+
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du pilote de l’UE.
 
 ### <a name="format"></a>Format
@@ -6459,7 +6919,8 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-**Keywords_hungary_eu_driver’s_license_number**
+#### <a name="keywords_hungary_eu_drivers_license_number"></a>Keywords_hungary_eu_driver’s_license_number
+
 - LD #
 - Permis de conduire
 - Numéro de permis de conduire
@@ -6474,7 +6935,9 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - dlno #
 - vezetoi engedely
 
+
 ## <a name="hungary-national-identification-number"></a>Numéro d’identification national Hongrie
+
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro d’identification national de l’UE.
 
 ### <a name="format"></a>Format
@@ -6530,7 +6993,9 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - személyazonosító igazolvány
 - személyi igazolvány
 
+
 ## <a name="hungary-passport-number"></a>Numéro de passeport Hongrie
+
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro de passeport de l’UE.
 
 ### <a name="format"></a>Format
@@ -6563,14 +7028,16 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 ```
 ### <a name="keywords"></a>Mots-clés
 
-**Keywords_hungary_eu_passport_number**
+#### <a name="keywords_hungary_eu_passport_number"></a>Keywords_hungary_eu_passport_number
 
 - numéro de passeport
 - Numéro de passeport hongrois
 - Numéro de passeport
 - útlevél száma
 
+
 ## <a name="hungary-social-security-number-or-equivalent-identification"></a>Numéro de sécurité sociale ou identification équivalente Hongrie
+
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’information de numéro de sécurité sociale ou d’ID équivalent.
 
 ### <a name="format"></a>Format
@@ -6633,6 +7100,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 
 ## <a name="hungary-tax-identification-number"></a>Numéro d’identification de taxe Hongrie
+
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro d’identification fiscale de l’UE.
 
 ### <a name="format"></a>Format
@@ -6643,7 +7111,7 @@ Dix chiffres sans espaces ni délimiteurs
 
 Dix chiffres :
   
--  Un chiffre qui doit être « 8 » 
+- Un chiffre qui doit être « 8 » 
 - Cinq chiffres correspondant au nombre de jours entre la date 01/01/1867 et la date de naissance de la personne
 - Trois chiffres correspondant au nombre généré par l’opportunité pour différencier les individus nés le même jour
 - Un chiffre de contrôle
@@ -6704,6 +7172,66 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - n ° d’étain
 - Etain #
 - Numéro de TVA
+
+
+## <a name="hungary-value-added-tax-number"></a>Numéro de taxe de la valeur ajoutée à la Hongrie
+
+### <a name="format"></a>Format
+
+modèle alphanumérique de 10 caractères
+
+### <a name="pattern"></a>Modèle
+
+modèle alphanumérique à 10 caractères :
+
+- 2 lettres-HU ou HU
+- espace facultatif
+- 8 chiffres
+
+### <a name="checksum"></a>Somme de contrôle
+
+Oui
+
+### <a name="definition"></a>Définition
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
+
+- La fonction Func_hungarian_value_added_tax_number trouve le contenu qui correspond au modèle.
+- Un mot clé depuis Keywords_hungarian_value_added_tax_number est trouvé.
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
+
+- La fonction Func_hungarian_value_added_tax_number trouve le contenu qui correspond au modèle.
+
+```xml
+      <!-- Hungarian Value Added Tax Number -->
+      <Entity id="976349a0-683b-477a-90f8-ff0a220d5592" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_hungarian_value_added_tax_number" />
+          <Match idRef="Keywords_hungarian_value_added_tax_number" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_hungarian_value_added_tax_number" />
+        </Pattern>
+      </Entity>
+```
+
+### <a name="keywords"></a>Mots-clés
+
+#### <a name="keyword_hungary_value_added_tax_number"></a>Keyword_Hungary_value_added_tax_number
+
+- compt
+- Numéro de taxe sur la valeur ajoutée
+- compt #
+- vatno #
+- hungarianvatno #
+- n ° taxe
+- ÁFA de taxe sur la valeur ajoutée
+- közösségi adószám
+- általános forgalmi adó szám
+- hozzáadottérték adó
+- áfa szám
+
 
 ## <a name="india-permanent-account-number-pan"></a>Numéro de compte permanent Inde (PAN)
 
@@ -6767,11 +7295,16 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP est sûre à 85% d’avoir détecté ce type d’informations sensibles si, dans une proximité de 300 caractères : la fonction Func_india_aadhaar trouve le contenu qui correspond au modèle.
-Un mot clé figurant dans la liste Keyword_india_aadhar est trouvé.
-La somme de contrôle est correcte.
-Une stratégie DLP est sûre à 75% d’avoir détecté ce type d’informations sensibles si, dans une proximité de 300 caractères : la fonction Func_india_aadhaar trouve le contenu qui correspond au modèle.
-La somme de contrôle est correcte.
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
+- La fonction Func_india_aadhaar trouve un contenu qui correspond au modèle.
+- Un mot clé figurant dans la liste Keyword_india_aadhar est trouvé.
+- La somme de contrôle est correcte.
+- 
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
+
+- La fonction Func_india_aadhaar trouve un contenu qui correspond au modèle.
+- La somme de contrôle est correcte.
+
 ```xml
 <!-- India Unique Identification (Aadhaar) number -->
 <Entity id="1ca46b29-76f5-4f46-9383-cfa15e91048f" recommendedConfidence="85" patternsProximity="300">
@@ -6817,6 +7350,7 @@ Non
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
+
 - L’expression régulière Regex_indonesia_id_card trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_indonesia_id_card est trouvé.
 
@@ -6863,6 +7397,7 @@ Oui
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
+
 - La fonction Func_iban trouve un contenu qui correspond au modèle.
 - La somme de contrôle est correcte.
 
@@ -6876,9 +7411,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-Néant
-
-   
+Aucune
 
    
 ## <a name="international-classification-of-diseases-icd-10-cm"></a>Classification internationale des maladies (ICD-10-CM)
@@ -6917,7 +7450,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ```
 
-Mots-clés
+### <a name="keywords"></a>Mots-clés
 
 Tout terme du dictionnaire de mots clés Dictionary_icd_10_updated, qui est basé sur la [Classification internationale des maladies, dixième révision, modification clinique (ICD-10-cm)](https://go.microsoft.com/fwlink/?linkid=852604). Ce type recherche uniquement le terme, pas les codes d’assurance.
 
@@ -7029,6 +7562,7 @@ Pour IPv6, le pourcentage de confiance d’une stratégie DLP ayant détecté c
 - IP-כתובת ה 
 
 ## <a name="ireland-drivers-license-number"></a>Numéro de permis de conduire Ireland
+
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du pilote de l’UE.
 
 ### <a name="format"></a>Format
@@ -7065,7 +7599,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-**Keywords_ireland_eu_driver’s_license_number**
+#### <a name="keywords_ireland_eu_drivers_license_number"></a>Keywords_ireland_eu_driver’s_license_number
 
 - LD #
 - Permis de conduire
@@ -7081,7 +7615,9 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - dlno #
 - ceadúnas tiomána
 
+
 ## <a name="ireland-national-identification-number"></a>Numéro d’identification nationale de l’Irlande
+
 Cette entité de type d’informations sensibles est incluse uniquement dans le type d’informations sensibles du numéro d’identification national de l’UE.
 
 ### <a name="format"></a>Format
@@ -7094,7 +7630,7 @@ Combinaison de neuf caractères de lettres, de chiffres et d’un espace dans le
   
 Du 01 janvier 2013 au maintenant :
   
--  Sept chiffres  
+- Sept chiffres  
 - Un chiffre de contrôle
 - Un espace ou la lettre majuscule « W » (respecte la casse)
     
@@ -7164,6 +7700,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - uimhir phearsanta seirbhíse poiblí
 
 ## <a name="ireland-passport-number"></a>Numéro de passeport Irlande
+
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro de passeport de l’UE.
 
 ### <a name="format"></a>Format
@@ -7200,7 +7737,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-**Keywords_ireland_eu_passport_number**
+#### <a name="keywords_ireland_eu_passport_number"></a>Keywords_ireland_eu_passport_number
 
 - numéro de passeport
 - Numéro de passeport irlandais
@@ -7215,21 +7752,21 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 ### <a name="format"></a>Format
 
 Ancien format (jusqu’au 31 décembre 2012) :
-- Sept chiffres suivis de 1 ou 2 lettres  
+- sept chiffres suivis de 1-2 lettres 
 
 Nouveau format (1er janvier 2013 et après) :
-- Sept chiffres suivis de deux lettres
+- sept chiffres suivis de deux lettres
 
 ### <a name="pattern"></a>Modèle
 
 Ancien format (jusqu’au 31 décembre 2012) :
-- Sept chiffres  
-- 1 ou 2 lettres (ne respectant pas la casse)  
+- sept chiffres 
+- une à deux lettres (ne respectant pas la casse) 
 
 Nouveau format (1er janvier 2013 et après) :
-- Sept chiffres  
-- Une lettre (ne respectant pas la casse), qui est un chiffre de contrôle alphabétique  
-- La lettre « A » ou « H » (ne respectant pas la casse)
+- sept chiffres 
+- une lettre (ne respectant pas la casse), qui est un chiffre de contrôle alphabétique 
+- la lettre « A » ou « H » (ne respecte pas la casse)
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -7286,14 +7823,14 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 ### <a name="format"></a>Format
 
-Sept chiffres suivis d’une lettre sans espaces ni délimiteurs
+sept chiffres suivis d’une lettre sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
-Sept chiffres suivis d’une lettre :
+sept chiffres suivis d’une lettre :
   
-- Sept chiffres  
-- Une lettre (ne respecte pas la casse)
+- sept chiffres 
+- une lettre (ne respecte pas la casse)
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -7302,12 +7839,10 @@ Non applicable
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_ireland_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_ireland_eu_tax_file_number` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_ireland_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```xml
@@ -7364,11 +7899,11 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 ### <a name="pattern"></a>Modèle
 
 Avec
-- Deux chiffres 
-- Un tiret 
-- Trois chiffres 
-- Un tiret 
-- Huit chiffres
+- deux chiffres 
+- un tiret 
+- trois chiffres 
+- un tiret 
+- huit chiffres
 
 Non
 - 	13 chiffres consécutifs
@@ -7408,11 +7943,11 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="format"></a>Format
 
-Neuf chiffres
+neuf chiffres
 
 ### <a name="pattern"></a>Modèle
 
-Neuf chiffres consécutifs
+neuf chiffres consécutifs
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -7449,15 +7984,15 @@ Cette entité de type d’informations sensibles est incluse dans le type d’in
 
 ### <a name="format"></a>Format
 
-Une combinaison de 10 lettres et chiffres
+une combinaison de 10 lettres et chiffres
 
 ### <a name="pattern"></a>Modèle
 
-- Une combinaison de 10 lettres et chiffres :
-- Une lettre (ne respecte pas la casse) 
-- La lettre « A » ou « V » (ne respecte pas la casse) 
-- Sept lettres (ne respectent pas la casse), des chiffres ou le trait de soulignement 
-- Une lettre (ne respecte pas la casse)
+- une combinaison de 10 lettres et chiffres :
+- une lettre (ne respecte pas la casse) 
+- la lettre « A » ou « V » (ne respecte pas la casse) 
+- sept lettres (ne respectent pas la casse), des chiffres ou le trait de soulignement 
+- une lettre (ne respecte pas la casse)
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -7493,19 +8028,18 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 ### <a name="format"></a>Format
 
-Combinaison de 16 caractères de lettres et de chiffres dans le modèle spécifié.
+combinaison de 16 caractères de lettres et de chiffres dans le modèle spécifié.
   
 ### <a name="pattern"></a>Modèle
 
 Combinaison de lettres et de chiffres de 16 caractères :
-  
-- Trois lettres qui correspondent aux trois premières consonnes du nom de la famille
-- Trois lettres qui correspondent à la première, troisième et quatrième consonnes du prénom
-- Deux chiffres correspondant aux derniers chiffres de l’année de naissance
-- Une lettre correspondant à la lettre du mois de naissance : les lettres sont utilisées dans l’ordre alphabétique, mais seules les lettres de A à E, H, L, M, P, R à T sont utilisées (par conséquent, le mois de janvier est A et le mois d’octobre est R).
-- Deux chiffres correspondant au jour du mois de naissance — afin de différencier les hommes, 40 est ajouté au jour de naissance pour les femmes
-- Quatre chiffres correspondant à l’indicatif régional propre à la municipalité où la personne est né (des codes pays sont utilisés pour les pays étrangers)
-- Un chiffre de parité
+- trois lettres qui correspondent aux trois premières consonnes du nom de la famille
+- trois lettres qui correspondent à la première, troisième et quatrième consonnes du prénom
+- deux chiffres correspondant aux derniers chiffres de l’année de naissance
+- une lettre correspondant à la lettre du mois de naissance : les lettres sont utilisées dans l’ordre alphabétique, mais seules les lettres de A à E, H, L, M, P, R à T sont utilisées (par conséquent, le mois de janvier est A et le mois d’octobre est R).
+- deux chiffres correspondant au jour du mois de naissance — afin de différencier les hommes, 40 est ajouté au jour de naissance pour les femmes
+- quatre chiffres correspondant à l’indicatif régional propre à la municipalité où la personne est né (des codes pays sont utilisés pour les pays étrangers)
+- un chiffre de parité
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -7514,12 +8048,10 @@ Oui
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_italy_eu_national_id_card` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_italy_eu_national_id_card` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_italy_eu_national_id_card` trouve le contenu qui correspond au modèle. 
     
 ```xml
@@ -7573,19 +8105,20 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - n ° d’étain
 - Etain #
 
+
 ## <a name="italy-passport-number"></a>Numéro de passeport Italie
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro de passeport de l’UE.
 
 ### <a name="format"></a>Format
 
-Deux lettres ou chiffres suivis de sept chiffres sans espaces ni délimiteurs
+deux lettres ou chiffres suivis de sept chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
-Deux lettres ou chiffres suivis de sept chiffres :
+deux lettres ou chiffres suivis de sept chiffres :
   
-- Deux chiffres ou lettres (ne respectent pas la casse)
-- Sept chiffres
+- deux chiffres ou lettres (ne respectant pas la casse)
+- sept chiffres
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -7594,7 +8127,6 @@ Non applicable
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - L’expression régulière  `Regex_italy_eu_passport_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_italy_eu_passport_number` est trouvé. 
     
@@ -7610,7 +8142,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-**Keywords_italy_eu_passport_number**
+#### <a name="keywords_italy_eu_passport_number"></a>Keywords_italy_eu_passport_number
 
 - Numéro de passeport italien
 - repubblica italiana passaporto
@@ -7621,6 +8153,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - passaporto numérique
 - numéro passeport italien
 - numéro passeport
+
 
 ## <a name="italy-tax-identification-number"></a>Numéro d’identification fiscale Italie
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro d’identification fiscale de l’UE.
@@ -7633,13 +8166,13 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 16 lettres et chiffres :
   
--  Trois lettres qui correspondent aux trois premières consonnes du nom de la famille 
-- Trois lettres qui correspondent à la première, troisième et quatrième consonnes du prénom
-- Deux chiffres correspondant aux derniers chiffres de l’année de naissance
-- Un chiffre correspondant au mois de naissance : les lettres sont utilisées par ordre alphabétique, mais seules les lettres de A à E, H, L, M, P, R à T sont utilisées (en janvier, A et octobre est R).
-- Deux chiffres correspondant au jour du mois de naissance où 40 est ajouté au jour de naissance pour que les femmes différencient les hommes
-- Quatre chiffres correspondant à un indicatif régional spécifique à la municipalité où la personne est né — des codes nationaux sont utilisés pour les pays étrangers
-- Un chiffre de contrôle
+- trois lettres qui correspondent aux trois premières consonnes du nom de la famille 
+- trois lettres qui correspondent à la première, troisième et quatrième consonnes du prénom
+- deux chiffres correspondant aux derniers chiffres de l’année de naissance
+- un chiffre correspondant au mois de naissance : les lettres sont utilisées par ordre alphabétique, mais seules les lettres de A à E, H, L, M, P, R à T sont utilisées (en janvier, A et octobre est R).
+- deux chiffres correspondant au jour du mois de naissance où 40 est ajouté au jour de naissance pour que les femmes différencient les hommes
+- quatre chiffres correspondant à un indicatif régional spécifique à la municipalité où la personne est né — des codes nationaux sont utilisés pour les pays étrangers
+- un chiffre de contrôle
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -7648,12 +8181,10 @@ Oui
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_italy_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_italy_eu_tax_file_number` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_italy_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```xml
@@ -7708,20 +8239,72 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Etain #
 
 
+## <a name="italy-value-added-tax-number"></a>Numéro de TVA Italie valeur ajoutée
+
+### <a name="format"></a>Format
+
+modèle alphanumérique de 13 caractères avec délimiteurs facultatifs
+
+### <a name="pattern"></a>Modèle
+
+modèle alphanumérique de 13 caractères avec délimiteurs facultatifs :
+
+- I ou i
+- T ou t
+- espace, point, tiret ou virgule facultatif
+- 11 chiffres
+
+### <a name="checksum"></a>Somme de contrôle
+
+Oui
+
+### <a name="definition"></a>Définition
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
+- La fonction Func_italy_value_added_tax_number trouve le contenu qui correspond au modèle.
+- Un mot clé depuis Keywords_italy_value_added_tax_number est trouvé.
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
+- La fonction Func_italy_value_added_tax_number trouve le contenu qui correspond au modèle.
+
+```xml
+      <!-- Italy Value Added Tax -->
+      <Entity id="26a8cc07-2283-4a2a-ab1d-4ab643c4c67f" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_italy_value_added_tax_number" />
+          <Match idRef="Keywords_italy_value_added_tax_number" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_italy_value_added_tax_number" />
+        </Pattern>
+      </Entity>
+```
+
+### <a name="keywords"></a>Mots-clés
+
+#### <a name="keyword_italy_value_added_tax_number"></a>Keyword_italy_value_added_tax_number
+
+- Numéro de TVA
+- n ° TVA
+- compt #
+- bis
+- bis #
+
+
 ## <a name="japan-bank-account-number"></a>Numéro de compte bancaire japonais
 
 ### <a name="format"></a>Format
 
-Sept ou huit chiffres
+sept ou huit chiffres
 
 ### <a name="pattern"></a>Modèle
 
 Numéro de compte bancaire :
-- Sept ou huit chiffres
-- Code guichet du compte bancaire :
-- Quatre chiffres 
-- Un espace ou un tiret (facultatif) 
-- Trois chiffres
+- sept ou huit chiffres
+- Code de succursale du compte bancaire :
+- quatre chiffres 
+- un espace ou un tiret (facultatif) 
+- trois chiffres
 
 Somme de contrôle
 
@@ -7882,16 +8465,130 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - 運転免許 
 - 運転免許証 
 - 運転免許証番号 
+
+
+## <a name="japan-my-number---corporate"></a>Mon numéro japonais-entreprise
+
+### <a name="format"></a>Format
+
+numéro à 13 chiffres
+
+### <a name="pattern"></a>Modèle
+
+numéro à 13 chiffres :
+
+- un chiffre entre un et neuf
+- 12 chiffres
+
+### <a name="checksum"></a>Somme de contrôle
+
+Oui
+
+### <a name="definition"></a>Définition
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
+- La fonction Func_japanese_my_number_corporate trouve le contenu qui correspond au modèle.
+- Un mot clé depuis Keywords_japanese_my_number_corporate est trouvé.
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
+- La fonction Func_japanese_my_number_corporate trouve le contenu qui correspond au modèle.
+
+```xml
+      <!-- Japanese My Number – Corporate -->
+      <Entity id="9e0eaf79-ff20-4ffb-b3e4-e7368d5db6ff" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_japanese_my_number_corporate" />
+          <Match idRef="Keywords_japanese_my_number_corporate" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_japanese_my_number_corporate" />
+        </Pattern>
+      </Entity>
+```
+
+### <a name="keywords"></a>Mots-clés
+
+#### <a name="keyword_japan_my_number_corporate"></a>Keyword_japan_my_number_corporate
+
+- Numéro d’entreprise
+- マイナンバー
+- 共通番号
+- マイナンバーカード
+- マイナンバーカード番号
+- 個人番号カード
+- 個人識別番号
+- 個人識別ナンバー
+- 法人番号
+- 指定通知書
+
+
+## <a name="japan-my-number---personal"></a>Mon numéro-personnel
+
+### <a name="format"></a>Format
+
+numéro à 12 chiffres
+
+### <a name="pattern"></a>Modèle
+
+numéro à 12 chiffres :
+
+- quatre chiffres
+- espace, point ou tiret facultatif
+- quatre chiffres
+- espace, point ou tiret facultatif
+- quatre chiffres
+
+### <a name="checksum"></a>Somme de contrôle
+
+Oui
+
+### <a name="definition"></a>Définition
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
+- La fonction Func_japanese_my_number_personal trouve le contenu qui correspond au modèle.
+- Un mot clé depuis Keywords_japanese_my_number_personal est trouvé.
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 65 % si, dans une proximité de 300 caractères :
+- La fonction Func_japanese_my_number_personal trouve le contenu qui correspond au modèle.
+
+```xml
+      <!-- Japanese My Number – Personal -->
+      <Entity id="98da8e66-7299-4ebd-9f82-c871ab37d3ef" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_japanese_my_number_personal" />
+          <Match idRef="Keywords_japanese_my_number_personal" />
+        </Pattern>
+        <Pattern confidenceLevel="65">
+          <IdMatch idRef="Func_japanese_my_number_personal" />
+        </Pattern>
+      </Entity>
+```
+
+### <a name="keywords"></a>Mots-clés
+
+#### <a name="keyword_japan_my_number_personal"></a>Keyword_japan_my_number_personal
+
+- mon numéro
+- マイナンバー
+- 個人番号
+- 共通番号
+- マイナンバーカード
+- マイナンバーカード番号
+- 個人番号カード
+- 個人識別番号
+- 個人識別ナンバー
+- 通知カード
+
    
 ## <a name="japan-passport-number"></a>Numéro de passeport japonais
 
 ### <a name="format"></a>Format
 
-Deux lettres suivies de sept chiffres
+deux lettres suivies de sept chiffres
 
 ### <a name="pattern"></a>Modèle
 
-Deux lettres (ne respectant pas la casse) suivies de sept chiffres
+deux lettres (ne respectant pas la casse) suivies de sept chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -7931,9 +8628,9 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 ### <a name="pattern"></a>Modèle
 
 12 lettres et chiffres :
-- Deux lettres (ne respectant pas la casse) 
-- Huit chiffres 
-- Deux lettres (ne respectant pas la casse) 
+- deux lettres (ne respectant pas la casse)
+- huit chiffres 
+- deux lettres (ne respectant pas la casse)
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -8020,9 +8717,9 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 ### <a name="pattern"></a>Modèle
 
 7 à 12 chiffres :
-- Quatre chiffres 
-- Un trait d’union (facultatif) 
-- Six chiffres ou
+- quatre chiffres 
+- un trait d’Union (facultatif) 
+- six chiffres ou
 - 7 à 12 chiffres consécutifs
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -8068,14 +8765,14 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 ### <a name="format"></a>Format
 
-Trois lettres suivies de six chiffres
+trois lettres suivies de six chiffres
   
 ### <a name="pattern"></a>Modèle
 
-Trois lettres et six chiffres :
+trois lettres et six chiffres :
   
--  Trois lettres (ne respectent pas la casse) 
-- Six chiffres
+- trois lettres (ne respectent pas la casse) 
+- six chiffres
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -8084,7 +8781,6 @@ Non
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - L’expression régulière  `Regex_latvia_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_latvia_eu_driver's_license_number` est trouvé. 
     
@@ -8100,7 +8796,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-**Keywords_latvia_eu_driver’s_license_number**
+#### <a name="keywords_latvia_eu_drivers_license_number"></a>Keywords_latvia_eu_driver’s_license_number
 
 - LD #
 - Permis de conduire
@@ -8127,10 +8823,10 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 11 chiffres et un trait d’Union :
   
--  Six chiffres correspondant à la date de naissance (JJMMAA) 
-- Un trait d’union 
-- Un chiffre correspondant au siècle de naissance (« 0 » pour le 19 siècle, « 1 » pour le vingtième siècle et « 2 » pour le 21ème siècle).
-- Quatre chiffres, généré de manière aléatoire
+- six chiffres correspondant à la date de naissance (JJMMAA) 
+- un trait d’Union
+- un chiffre correspondant au siècle de naissance (« 0 » pour le 19 siècle, « 1 » pour le vingtième siècle et « 2 » pour le 21ème siècle).
+- quatre chiffres, généré de manière aléatoire
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -8139,12 +8835,10 @@ Oui
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_latvia_eu_national_id_card` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_latvia_eu_national_id_card` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_latvia_eu_national_id_card` trouve le contenu qui correspond au modèle. 
     
 ```xml
@@ -8236,14 +8930,14 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 ### <a name="format"></a>Format
 
-Deux lettres ou chiffres suivis de sept chiffres sans espaces ni délimiteurs
+deux lettres ou chiffres suivis de sept chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
-Deux lettres ou chiffres suivis de sept chiffres :
+deux lettres ou chiffres suivis de sept chiffres :
   
-- Deux chiffres ou lettres (ne respectent pas la casse)
-- Sept chiffres
+- deux chiffres ou lettres (ne respectant pas la casse)
+- sept chiffres
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -8252,7 +8946,6 @@ Non
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - L’expression régulière  `Regex_latvia_eu_passport_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_latvia_eu_passport_number` est trouvé. 
     
@@ -8268,7 +8961,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-**Keywords_latvia_eu_passport_number**
+#### <a name="keywords_latvia_eu_passport_number"></a>Keywords_latvia_eu_passport_number
 
 - numéro de passeport
 - Numéro de passeport letton
@@ -8286,9 +8979,9 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 11 chiffres dans le modèle spécifié
   
-- Six chiffres correspondant à la date de naissance (JJMMAA) 
-- Un chiffre correspondant au siècle de naissance où « 0 » correspond à 19 siècle, « 1 » correspond au vingtième siècle et « 2 » au 21ème siècle.
-- Quatre chiffres
+- six chiffres correspondant à la date de naissance (JJMMAA) 
+- un chiffre correspondant au siècle de naissance où « 0 » correspond à 19 siècle, « 1 » correspond au vingtième siècle et « 2 » au 21ème siècle.
+- quatre chiffres
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -8297,12 +8990,10 @@ Oui
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_latvia_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_latvia_eu_tax_file_number` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_latvia_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```xml
@@ -8394,11 +9085,11 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 ### <a name="format"></a>Format
 
-Huit chiffres sans espaces ni délimiteurs
+huit chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
- Huit chiffres 
+huit chiffres 
   
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -8407,7 +9098,6 @@ Non
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - L’expression régulière  `Regex_lithuania_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_lithuania_eu_driver's_license_number` est trouvé. 
     
@@ -8423,7 +9113,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-**Keywords_lithuania_eu_driver’s_license_number**
+#### <a name="keywords_lithuania_eu_drivers_license_number"></a>Keywords_lithuania_eu_driver’s_license_number
 
 - LD #
 - Permis de conduire
@@ -8450,10 +9140,10 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 11 chiffres sans espaces ni délimiteurs :
   
-- Un chiffre correspondant au sexe et au siècle de la personne
-- Six chiffres correspondant à la date de naissance (AAMMJJ) 
-- Trois chiffres correspondant au numéro de série de la date de naissance
-- Un chiffre de contrôle
+- un chiffre correspondant au sexe et au siècle de la personne
+- six chiffres correspondant à la date de naissance (AAMMJJ) 
+- trois chiffres correspondant au numéro de série de la date de naissance
+- un chiffre de contrôle
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -8462,12 +9152,10 @@ Oui
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_lithuania_eu_national_id_card` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_lithuania_eu_national_id_card` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_lithuania_eu_national_id_card` trouve le contenu qui correspond au modèle. 
     
 ```xml
@@ -8526,11 +9214,11 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 ### <a name="format"></a>Format
 
-Huit chiffres ou lettres sans espaces ni délimiteurs
+huit chiffres ou lettres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
-Huit chiffres ou lettres (ne respectant pas la casse)
+huit chiffres ou lettres (ne respectant pas la casse)
   
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -8539,7 +9227,6 @@ Non applicable
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - L’expression régulière  `Regex_lithuania_eu_passport_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_lithuania_eu_passport_number` est trouvé. 
     
@@ -8555,9 +9242,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-**Keywords_lithuania_eu_passport_number**
+#### <a name="keywords_lithuania_eu_passport_number"></a>Keywords_lithuania_eu_passport_number
 
-Numéro de passeport lithunian passeport numéro de passeport non Paso
+- numéro de passeport
+- Numéro de passeport lithunian
+- Numéro de passeport
+- Paso chiffres
 
 ## <a name="lithuania-tax-identification-number"></a>Numéro d’identification de taxe de Lituanie
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro d’identification fiscale de l’UE.
@@ -8577,12 +9267,10 @@ Non applicable
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_lithuania_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_lithuania_eu_tax_file_number` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_lithuania_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```xml
@@ -8636,15 +9324,15 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - uniqueidentityno #
 
 ## <a name="luxemburg-drivers-license-number"></a>Numéro de permis de conduire du Luxembourg
-son entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du pilote de l’UE.
+Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du pilote de l’UE.
 
 ### <a name="format"></a>Format
 
-Six chiffres sans espaces ni délimiteurs
+six chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
- Six chiffres 
+six chiffres 
   
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -8653,7 +9341,6 @@ Non
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - L’expression régulière  `Regex_luxemburg_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_luxemburg_eu_driver's_license_number` est trouvé. 
     
@@ -8669,7 +9356,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-**Keywords_luxemburg_eu_driver’s_license_number**
+#### <a name="keywords_luxemburg_eu_drivers_license_number"></a>Keywords_luxemburg_eu_driver’s_license_number
 
 - LD #
 - Permis de conduire
@@ -8696,10 +9383,10 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 11 chiffres
   
-- Un chiffre correspondant au sexe et au siècle de la personne
-- Six chiffres correspondant à la date de naissance (AAMMJJ) 
-- Trois chiffres correspondant au numéro de série de la date de naissance
-- Un chiffre de contrôle
+- un chiffre correspondant au sexe et au siècle de la personne
+- six chiffres correspondant à la date de naissance (AAMMJJ) 
+- trois chiffres correspondant au numéro de série de la date de naissance
+- un chiffre de contrôle
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -8708,7 +9395,6 @@ Non applicable
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - L’expression régulière  `Regex_luxemburg_eu_national_id_card` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_luxemburg_eu_national_id_card` est trouvé. 
     
@@ -8751,11 +9437,11 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 ### <a name="format"></a>Format
 
-Huit chiffres ou lettres sans espaces ni délimiteurs
+huit chiffres ou lettres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
-Huit chiffres ou lettres (ne respectant pas la casse)
+huit chiffres ou lettres (ne respectant pas la casse)
   
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -8764,7 +9450,6 @@ Non
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - L’expression régulière  `Regex_nation_eu_passport_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_nation_eu_passport_number` est trouvé. 
     
@@ -8780,9 +9465,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-**Keywords_nation_eu_passport_number**
+#### <a name="keywords_nation_eu_passport_number"></a>Keywords_nation_eu_passport_number
 
-passeport numéro de passeport letton numéro de passeport non passnummer
+- numéro de passeport
+- Numéro de passeport letton
+- Numéro de passeport
+- passnummer
 
 ## <a name="luxemburg-tax-identification-number"></a>Numéro d’identification fiscale Luxembourg
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro d’identification fiscale de l’UE.
@@ -8796,7 +9484,7 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 13 chiffres :
   
 - 11 chiffres 
-- Deux chiffres de contrôle
+- deux chiffres de contrôle
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -8805,12 +9493,10 @@ Oui
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_luxemburg_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_luxemburg_eu_tax_file_number` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_luxemburg_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```xml
@@ -8879,11 +9565,11 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 ### <a name="pattern"></a>Modèle
 
 12 chiffres :
-- Six chiffres au format AAMMJJ correspondant à la date de naissance  
-- Un tiret (facultatif)  
-- Le code à deux lettres du lieu de naissance  
-- Un tiret (facultatif)  
-- Trois chiffres aléatoires  
+- six chiffres au format AAMMJJ correspondant à la date de naissance 
+- un tiret (facultatif) 
+- Code de lieu de naissance à deux lettres 
+- un tiret (facultatif) 
+- trois chiffres aléatoires 
 - Code de sexe à un chiffre
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -8945,13 +9631,13 @@ Combinaison de deux caractères et six chiffres dans le modèle spécifié
   
 ### <a name="pattern"></a>Modèle
 
-Combinaison de deux caractères et six chiffres :
+combinaison de deux caractères et six chiffres :
   
-- Deux caractères (chiffres ou lettres, ne respectant pas la casse)
-- Un espace (facultatif) 
-- Trois chiffres
-- Un espace (facultatif) 
-- Trois chiffres
+- deux caractères (chiffres ou lettres, ne respectant pas la casse)
+- un espace (facultatif)
+- trois chiffres
+- un espace (facultatif)
+- trois chiffres
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -8960,7 +9646,6 @@ Non
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - L’expression régulière  `Regex_malta_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_malta_eu_driver's_license_number` est trouvé. 
     
@@ -8976,7 +9661,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-**Keywords_malta_eu_driver’s_license_number**
+#### <a name="keywords_malta_eu_drivers_license_number"></a>Keywords_malta_eu_driver’s_license_number
 
 - LD #
 - Permis de conduire
@@ -8997,14 +9682,14 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 ### <a name="format"></a>Format
 
-Sept chiffres suivis d’une lettre
+sept chiffres suivis d’une lettre
   
 ### <a name="pattern"></a>Modèle
 
-Sept chiffres suivis d’une lettre :
+sept chiffres suivis d’une lettre :
   
--  Sept chiffres  
-- Une lettre majuscule (respecte la casse)
+- sept chiffres 
+- une lettre majuscule (respecte la casse)
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -9013,12 +9698,10 @@ Non applicable
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - L’expression régulière  `Regex_malta_eu_national_id_card` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_malta_eu_national_id_card` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 65 % si, dans une proximité de 300 caractères :
-  
 - L’expression régulière  `Regex_malta_eu_national_id_card` trouve le contenu qui correspond au modèle. 
     
 ```xml
@@ -9059,11 +9742,11 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 ### <a name="format"></a>Format
 
-Sept chiffres sans espaces ni délimiteurs
+sept chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
- Sept chiffres 
+sept chiffres 
   
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -9072,7 +9755,6 @@ Non
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - L’expression régulière  `Regex_malta_eu_passport_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_malta_eu_passport_number` est trouvé. 
     
@@ -9088,7 +9770,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-**Keywords_malta_eu_passport_number**
+#### <a name="keywords_malta_eu_passport_number"></a>Keywords_malta_eu_passport_number
 
 - numéro de passeport
 - Numéro de passeport maltais
@@ -9100,20 +9782,22 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 ### <a name="format"></a>Format
 
-Pour les ressortissants maltais : 7 chiffres et une lettre dans le modèle spécifié
+Pour les ressortissants maltais :
+- sept chiffres et une lettre dans le modèle spécifié
   
-Ressortissants non maltaises et entités maltaises : 9 chiffres
+Ressortissants non maltaises et entités maltaises :
+- neuf chiffres
   
 ### <a name="pattern"></a>Modèle
 
-Ressortissants maltaises : 7 chiffres et une lettre
+Ressortissants maltaises : sept chiffres et une lettre
   
--  Sept chiffres  
-- Une lettre (ne respecte pas la casse)
+- sept chiffres 
+- une lettre (ne respecte pas la casse)
     
-Ressortissants non maltaises et entités maltaises : 9 chiffres
+Ressortissants non maltaises et entités maltaises : neuf chiffres
   
--  Neuf chiffres 
+- neuf chiffres 
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -9122,12 +9806,10 @@ Non applicable
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_malta_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_malta_eu_tax_file_number` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 65 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_malta_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```xml
@@ -9183,16 +9865,16 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="format"></a>Format
 
-8 à 9 chiffres contenant éventuellement des espaces
+huit à neuf chiffres contenant des espaces facultatifs
 
 ### <a name="pattern"></a>Modèle
 
-8 à 9 chiffres :
-- Trois chiffres 
-- Un espace (facultatif)  
-- Trois chiffres 
-- Un espace (facultatif)  
-- 2 à 3 chiffres
+huit chiffres :
+- trois chiffres 
+- un espace (facultatif) 
+- trois chiffres 
+- un espace (facultatif) 
+- deux à trois chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -9248,11 +9930,11 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 ### <a name="format"></a>Format
 
-10 chiffres sans espaces ni délimiteurs
+dix chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
-10 chiffres
+dix chiffres
   
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -9261,7 +9943,6 @@ Non
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - L’expression régulière  `Regex_netherlands_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_netherlands_eu_driver's_license_number` est trouvé. 
     
@@ -9277,7 +9958,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-**Keywords_netherlands_eu_driver’s_license_number**
+#### <a name="keywords_netherlands_eu_drivers_license_number"></a>Keywords_netherlands_eu_driver’s_license_number
 
 - LD #
 - Permis de conduire
@@ -9300,11 +9981,11 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 ### <a name="format"></a>Format
 
-Neuf chiffres sans espaces ni délimiteurs
+neuf chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
-Neuf chiffres
+neuf chiffres
   
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -9313,12 +9994,10 @@ Oui
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_netherlands_eu_national_id_card` trouve le contenu qui correspond au modèle. 
 - Un mot clé from est trouvé.
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_netherlands_eu_national_id_card` trouve le contenu qui correspond au modèle. 
     
 ```xml
@@ -9365,11 +10044,11 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 ### <a name="format"></a>Format
 
-Neuf lettres ou chiffres sans espaces ni délimiteurs
+neuf lettres ou chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
-Neuf lettres ou chiffres
+neuf lettres ou chiffres
   
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -9378,7 +10057,6 @@ Non applicable
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - L’expression régulière  `Regex_netherlands_eu_passport_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_netherlands_eu_passport_number` est trouvé. 
     
@@ -9394,7 +10072,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-**Keywords_netherlands_eu_passport_number**
+#### <a name="keywords_netherlands_eu_passport_number"></a>Keywords_netherlands_eu_passport_number
 
 - Numéro de passeport néerlandais
 - numéro de passeport
@@ -9409,11 +10087,11 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 ### <a name="format"></a>Format
 
-Neuf chiffres sans espaces ni délimiteurs
+neuf chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
-Neuf chiffres 
+neuf chiffres 
   
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -9422,12 +10100,10 @@ Oui
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_netherlands_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_netherlands_eu_tax_file_number` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_netherlands_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```xml
@@ -9484,15 +10160,292 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - n ° d’étain
 - Etain #
 
+
+## <a name="netherlands-value-added-tax-number"></a>Numéro de taxe ajoutée pour les pays-bas
+
+### <a name="format"></a>Format
+
+modèle alphanumérique de 14 caractères
+
+### <a name="pattern"></a>Modèle
+
+modèle alphanumérique de 14 caractères :
+
+- N ou n
+- L ou l
+- espace, point ou tiret facultatif
+- neuf chiffres
+- espace, point ou tiret facultatif
+- B ou b
+- deux chiffres
+
+### <a name="checksum"></a>Somme de contrôle
+
+Oui
+
+### <a name="definition"></a>Définition
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
+- La fonction Func_netherlands_value_added_tax_number trouve le contenu qui correspond au modèle.
+- Un mot clé depuis Keywords_netherlands_value_added_tax_number est trouvé.
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
+- La fonction Func_netherlands_value_added_tax_number trouve le contenu qui correspond au modèle.
+
+```xml
+      <!-- Netherlands Value Added Tax Number -->
+      <Entity id="4f320d9b-4972-41ae-b337-88d499bb1ade" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_netherlands_value_added_tax_number" />
+          <Match idRef="Keywords_netherlands_value_added_tax_number" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_netherlands_value_added_tax_number" />
+        </Pattern>
+      </Entity>
+```
+
+### <a name="keywords"></a>Mots-clés
+
+#### <a name="keyword_netherlands_value_added_tax_number"></a>Keyword_netherlands_value_added_tax_number
+
+- Numéro de TVA
+- n ° TVA
+- compt #
+- wearde tafoege Tax getal
+- btw nûmer
+- btw-nummer
+
+
+## <a name="new-zealand-bank-account-number"></a>Numéro de compte bancaire Nouvelle-Zélande
+
+### <a name="format"></a>Format
+
+modèle de 14 à 16 chiffres avec un délimiteur facultatif
+
+### <a name="pattern"></a>Modèle
+
+modèle de 14 à 16 chiffres avec un délimiteur facultatif :
+
+- deux chiffres
+- un trait d’Union ou un espace conditionnel
+- 3 à 4 chiffres
+- un trait d’Union ou un espace conditionnel
+- sept chiffres
+- un trait d’Union ou un espace conditionnel
+- deux à trois chiffres
+- un tiret ou un espace d’options
+
+### <a name="checksum"></a>Somme de contrôle
+
+Oui
+
+### <a name="definition"></a>Définition
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
+- La fonction Func_new_zealand_bank_account_number trouve le contenu qui correspond au modèle.
+- Un mot clé depuis Keywords_new_zealand_bank_account_number est trouvé.
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
+- La fonction Func_new_zealand_bank_account_number trouve le contenu qui correspond au modèle.
+
+```xml
+      <!-- New Zealand Bank Account Number -->
+      <Entity id="1a97fc2b-dd2f-48f1-bc4e-2ddf25813956" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_new_zealand_bank_account_number" />
+          <Match idRef="Keywords_new_zealand_bank_account_number" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_new_zealand_bank_account_number" />
+        </Pattern>
+      </Entity>
+```
+
+### <a name="keywords"></a>Mots-clés
+
+#### <a name="keyword_new_zealand_bank_account_number"></a>Keyword_new_zealand_bank_account_number
+
+- Numéro de compte
+- compte bancaire
+- bank_acct_id
+- bank_acct_branch
+- bank_acct_nbr
+
+
+## <a name="new-zealand-drivers-license-number"></a>Numéro de permis de conduire de la Nouvelle-Zélande
+
+### <a name="format"></a>Format
+
+modèle alphanumérique à huit caractères
+
+### <a name="pattern"></a>Modèle
+
+modèle alphanumérique à huit caractères
+
+- deux lettres 
+- six chiffres
+
+### <a name="checksum"></a>Somme de contrôle
+
+Oui
+
+### <a name="definition"></a>Définition
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
+- La fonction Func_newzealand_driver_license_number trouve le contenu qui correspond au modèle.
+- Un mot clé depuis Keywords_newzealand_driver_license_number est trouvé.
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 65 % si, dans une proximité de 300 caractères :
+- La fonction Func_newzealand_driver_license_number trouve le contenu qui correspond au modèle.
+
+```xml
+      <!-- New Zealand Driver License Number -->
+      <Entity id="1924b377-d287-49c9-a737-cfe7a8a2615a" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_newzealand_driver_license_number" />
+          <Match idRef="Keywords_newzealand_driver_license_number" />
+        </Pattern>
+        <Pattern confidenceLevel="65">
+          <IdMatch idRef="Func_newzealand_driver_license_number" />
+        </Pattern>
+      </Entity>
+```
+
+### <a name="keywords"></a>Mots-clés
+
+#### <a name="keyword_new_zealand_drivers_license_number"></a>Keyword_new_zealand_drivers_license_number
+
+- driverlicence
+- driverlicences
+- Gestionnaire de la LIC
+- permis de conduire
+- permis de conduire
+- driverslic
+- driverslicence
+- driverslicences
+- pilotes Lic
+- pilotes conduire
+- permis de conduire
+- permis de conduire
+- driver'lic
+- driver'lics
+- driver'licence
+- driver'licences
+- Driver’Lic
+- pilote’conduire
+- permis de conduire
+- permis de conduire
+- driver'slic
+- driver'slics
+- driver'slicence
+- driver'slicences
+- Gestionnaire de la LIC
+- conduire du pilote
+- permis de conduire
+- permis de conduire
+- driverlic #
+- driverlics #
+- driverlicence #
+- driverlicences #
+- Gestionnaire de la LIC #
+- pilote conduire #
+- permis de conduire #
+- permis de conduire #
+- driverslic #
+- driverslics #
+- driverslicence #
+- driverslicences #
+- pilotes Lic #
+- pilotes conduire #
+- permis de conduire #
+- permis de conduire #
+- driver'lic #
+- driver'lics #
+- driver'licence #
+- driver'licences #
+- Driver’Lic #
+- pilote’conduire #
+- permis de conduire #
+- permis de conduire #
+- driver'slic #
+- driver'slics #
+- driver'slicence #
+- driver'slicences #
+- Gestionnaire de la LIC #
+- conduire du pilote #
+- permis de conduire #
+- permis de conduire #
+- 
+permis de conduite international
+- permis de conduite internationaux
+- Association automobile NZ
+- Association automobile Nouvelle-Zélande
+
+
+## <a name="new-zealand-inland-revenue-number"></a>Numéro de revenu intérieur Nouvelle-Zélande
+
+### <a name="format"></a>Format
+
+huit ou neuf chiffres avec des délimiteurs facultatifs
+
+### <a name="pattern"></a>Modèle
+
+huit ou neuf chiffres avec des délimiteurs facultatifs
+
+- deux ou trois chiffres
+- un espace ou un tiret facultatif
+- trois chiffres
+- un espace ou un tiret facultatif
+- trois chiffres
+
+### <a name="checksum"></a>Somme de contrôle
+
+Oui
+
+### <a name="definition"></a>Définition
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
+- La fonction Func_new_zealand_inland_revenue_number trouve le contenu qui correspond au modèle.
+- Un mot clé depuis Keywords_new_zealand_inland_revenue_number est trouvé.
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
+- La fonction Func_new_zealand_inland_revenue_number trouve le contenu qui correspond au modèle.
+
+```xml
+      <!-- New Zealand Inland Revenue Number -->
+      <Entity id="dd0fe2bc-7bcf-455f-bac1-83b1e3eb25fd" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_new_zealand_inland_revenue_number" />
+          <Match idRef="Keywords_new_zealand_inland_revenue_number" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_new_zealand_inland_revenue_number" />
+        </Pattern>
+      </Entity>
+```
+
+### <a name="keywords"></a>Mots-clés
+
+#### <a name="keyword_new_zealand_inland_revenue_number"></a>Keyword_new_zealand_inland_revenue_number
+
+- n ° IRD
+- IRD non #
+- NZ IRD
+- Nouvelle-Zélande IRD
+- numéro IRD
+- Numéro de revenu intérieur
+
+
 ## <a name="new-zealand-ministry-of-health-number"></a>Ministère de l’assurance Nouvelle-Zélande
 
 ### <a name="format"></a>Format
 
-Trois lettres, un espace (facultatif) et quatre chiffres
+trois lettres, un espace (facultatif) et quatre chiffres
 
 ### <a name="pattern"></a>Modèle
 
-Trois lettres (ne respectant pas la casse) un espace (facultatif) quatre chiffres
+trois lettres (ne respectant pas la casse) un espace (facultatif) quatre chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -9517,14 +10470,69 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-Mots-clés
+### <a name="keywords"></a>Mots-clés
 
-Keyword_nz_terms
+#### <a name="keyword_nz_terms"></a>Keyword_nz_terms
 
 - NHI 
 - Nouvelle-Zélande 
 - Intégrité 
 - destinations 
+
+
+## <a name="new-zealand-social-wlefare-number"></a>Numéro de wlefare sociale Nouvelle-Zélande
+
+### <a name="format"></a>Format
+
+neuf chiffres
+
+### <a name="pattern"></a>Modèle
+
+neuf chiffres
+
+- trois chiffres
+- un trait d’union conditionnel
+- trois chiffres
+- un trait d’union conditionnel
+- trois chiffres
+
+### <a name="checksum"></a>Somme de contrôle
+
+Oui
+
+### <a name="definition"></a>Définition
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
+- La fonction Func_newzealand_social_welfare_number trouve le contenu qui correspond au modèle.
+- Un mot clé depuis Keywords_newzealand_social_welfare_number est trouvé.
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 65 % si, dans une proximité de 300 caractères :
+- La fonction Func_newzealand_social_welfare_number trouve le contenu qui correspond au modèle.
+
+```xml
+      <!-- Newzealand Social Welfare Number -->
+      <Entity id="20f3c48d-4ac1-4cd2-86bd-34ecc1826e9d" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_newzealand_social_welfare_number" />
+          <Match idRef="Keywords_newzealand_social_welfare_number" />
+        </Pattern>
+        <Pattern confidenceLevel="65">
+          <IdMatch idRef="Func_newzealand_social_welfare_number" />
+        </Pattern>
+      </Entity>
+    </Version>
+```
+
+### <a name="keywords"></a>Mots-clés
+
+#### <a name="keyword_new_zealand_social_welfare_number"></a>Keyword_new_zealand_social_welfare_number
+
+- Social Welfare #
+- Social Welfare #
+- n ° de bien-être social
+- numéro Social Welfare
+- swn #
+
    
 ## <a name="norway-identification-number"></a>Numéro d’identification de la Norvège
 
@@ -9535,9 +10543,9 @@ Keyword_nz_terms
 ### <a name="pattern"></a>Modèle
 
 11 chiffres :
-- Six chiffres au format JJMMAA qui correspondent à la date de naissance  
-- Numéro individuel à trois chiffres  
-- Deux chiffres de contrôle
+- six chiffres au format JJMMAA qui correspondent à la date de naissance 
+- Numéro individuel à trois chiffres 
+- deux chiffres de contrôle
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -9549,7 +10557,8 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - La fonction Func_norway_id_number trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_norway_id_number est trouvé.
 - La somme de contrôle est correcte.
-- Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - La fonction Func_norway_id_numbe trouve un contenu qui correspond au modèle.
 - La somme de contrôle est correcte.
 
@@ -9587,11 +10596,11 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 ### <a name="pattern"></a>Modèle
 
 12 chiffres :
-- Quatre chiffres 
-- Un trait d’union  
-- Sept chiffres  
-- Un trait d’union  
-- Un chiffre
+- quatre chiffres 
+- un trait d’Union 
+- sept chiffres 
+- un trait d’Union 
+- un chiffre
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -9633,11 +10642,11 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 14 chiffres et 2 barres obliques :
   
--  Cinq chiffres 
-- Une barre oblique 
-- Deux chiffres
-- Une barre oblique 
-- Sept chiffres
+- cinq chiffres 
+- une barre oblique
+- deux chiffres
+- une barre oblique
+- sept chiffres
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -9646,7 +10655,6 @@ Non
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - L’expression régulière  `Regex_poland_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_poland_eu_driver's_license_number` est trouvé. 
     
@@ -9662,7 +10670,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-**Keywords_poland_eu_driver’s_license_number**
+#### <a name="keywords_poland_eu_drivers_license_number"></a>Keywords_poland_eu_driver’s_license_number
 
 - LD #
 - Permis de conduire
@@ -9682,11 +10690,11 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="format"></a>Format
 
-Trois lettres et six chiffres
+trois lettres et six chiffres
 
 ### <a name="pattern"></a>Modèle
 
-Trois lettres (ne respectant pas la casse) suivis de six chiffres
+trois lettres (ne respectant pas la casse) suivies de six chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -9694,9 +10702,10 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP est sûre à 75% d’avoir détecté ce type d’informations sensibles si, dans une proximité de 300 caractères : la fonction Func_polish_national_id trouve le contenu qui correspond au modèle.
-Un mot clé figurant dans la liste Keyword_polish_national_id_passport_number est trouvé.
-La somme de contrôle est correcte.
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
+- La fonction Func_polish_national_id trouve un contenu qui correspond au modèle.
+- Un mot clé figurant dans la liste Keyword_polish_national_id_passport_number est trouvé.
+- La somme de contrôle est correcte.
 
 ```xml
 <!-- Poland Identity Card-->
@@ -9710,7 +10719,7 @@ La somme de contrôle est correcte.
 
 ### <a name="keywords"></a>Mots-clés
 
-#### <a name="keyword_polish_national_id_passport_number"></a>Keyword_polish_national_id_passport_number
+#### <a name="keyword_poland_national_id_passport_number"></a>Keyword_poland_national_id_passport_number
 
 - Dowód osobisty
 - Chiffre dowodu osobistego
@@ -9721,7 +10730,7 @@ La somme de contrôle est correcte.
 - Dow. OS.
 
    
-## <a name="poland-national-id-pesel"></a>ID national polonais (PESEL)
+## <a name="poland-national-id-pesel"></a>ID national Pologne (PESEL)
 Cette entité de type d’informations sensibles est incluse dans le type d’informations sensibles du numéro d’identification national de l’UE et est disponible en tant qu’entité de type d’informations sensibles autonome.
 
 ### <a name="format"></a>Format
@@ -9773,7 +10782,7 @@ Cette entité de type d’informations sensibles est incluse dans le type d’in
 
 ### <a name="format"></a>Format
 
-Deux lettres et sept chiffres
+deux lettres et sept chiffres
 
 ### <a name="pattern"></a>Modèle
 
@@ -9803,22 +10812,82 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-#### <a name="keyword_polish_national_id_passport_number"></a>Keyword_polish_national_id_passport_number
+#### <a name="keyword_poland_national_id_passport_number"></a>Keyword_poland_national_id_passport_number
 
 - Numéro paszportu
 - Nr. Paszportu
 - Paszport
+
+## <a name="poland-regon-number"></a>Numéro REGON Pologne
+
+### <a name="format"></a>Format
+
+nombre à neuf chiffres ou à 14 chiffres
+
+### <a name="pattern"></a>Modèle
+
+nombre à neuf chiffres ou 14 chiffres :
+
+- neuf chiffres ou 
+- neuf chiffres
+- signe
+- cinq chiffres
+
+### <a name="checksum"></a>Somme de contrôle
+
+Oui
+
+### <a name="definition"></a>Définition
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
+- La fonction Func_polish_regon_number trouve le contenu qui correspond au modèle.
+- Un mot clé depuis Keywords_polish_regon_number est trouvé.
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 65 % si, dans une proximité de 300 caractères :
+- La fonction Func_polish_regon_number trouve le contenu qui correspond au modèle.
+
+```xml
+      <!-- Polish REGON Number  -->
+      <Entity id="fc87b421-f437-4f8b-b739-29a735ead0d9" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_polish_regon_number" />
+          <Match idRef="Keywords_polish_regon_number" />
+        </Pattern>
+        <Pattern confidenceLevel="65">
+          <IdMatch idRef="Func_polish_regon_number" />
+        </Pattern>
+      </Entity>
+```
+### <a name="keywords"></a>Mots-clés
+
+#### <a name="keywords_poland_regon_number"></a>Keywords_poland_regon_number
+
+- ID REGON
+- numéro statistique
+- code statistique
+- non statistique
+- numéro REGON
+- regonid #
+- regonno #
+- ID de la société
+- CompanyID #
+- companyidno #
+- numéro Statystyczny
+- numération REGON
+- numerstatystyczny #
+- numeruregon #
+
 
 ## <a name="poland-tax-identification-number"></a>Numéro d’identification de taxe polonais
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro d’identification fiscale de l’UE.
 
 ### <a name="format"></a>Format
 
-Onze chiffres sans espaces ni délimiteurs
+11 chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
-Onze chiffres
+11 chiffres
   
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -9827,12 +10896,10 @@ Oui
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_poland_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_poland_eu_tax_file_number` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_poland_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```xml
@@ -9852,7 +10919,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="keywords_poland_eu_tax_file_number"></a>Keywords_poland_eu_tax_file_number
 
-pince #
+- pince #
 - pince
 - chiffre identyfikacji podatkowej
 - numeridentyfikacjipodatkowej #
@@ -9889,11 +10956,11 @@ pince #
 
 ### <a name="format"></a>Format
 
-Huit chiffres
+huit chiffres
 
 ### <a name="pattern"></a>Modèle
 
-Huit chiffres
+huit chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -9944,17 +11011,17 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 ### <a name="format"></a>Format
 
-Deux lettres suivies d’un nombre de sept chiffres dans le modèle spécifié
+deux lettres suivies d’un nombre de sept chiffres dans le modèle spécifié
   
 ### <a name="pattern"></a>Modèle
 
-Deux lettres suivies de sept chiffres avec des caractères spéciaux :
+deux lettres suivies de sept chiffres avec des caractères spéciaux :
   
-- Deux lettres (ne respectent pas la casse) 
-- Un trait d’union 
-- Six chiffres
-- Un espace
-- Un chiffre
+- deux lettres (ne respectent pas la casse) 
+- un trait d’Union
+- six chiffres
+- un espace
+- un chiffre
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -9963,7 +11030,6 @@ Non
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - L’expression régulière  `Regex_portugal_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_portugal_eu_driver's_license_number` est trouvé. 
     
@@ -9979,7 +11045,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-**Keywords_portugal_eu_driver’s_license_number**
+#### <a name="keywords_portugal_eu_drivers_license_number"></a>Keywords_portugal_eu_driver’s_license_number
 
 - LD #
 - Permis de conduire
@@ -10000,14 +11066,14 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 ### <a name="format"></a>Format
 
-Une lettre suivie de six chiffres sans espaces ni délimiteurs
+une lettre suivie de six chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
-Une lettre suivie de six chiffres :
+une lettre suivie de six chiffres :
   
-- Une lettre (ne respecte pas la casse)
-- Six chiffres
+- une lettre (ne respecte pas la casse)
+- six chiffres
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -10016,7 +11082,6 @@ Non
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - L’expression régulière  `Regex_portugal_eu_passport_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_portugal_eu_passport_number` est trouvé. 
     
@@ -10032,20 +11097,23 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-**Keywords_portugal_eu_passport_number**
+#### <a name="keywords_portugal_eu_passport_number"></a>Keywords_portugal_eu_passport_number
 
-Numéro de passeport portugais (passeport) Numéro de passeport non número do Passaporte
+- numéro de passeport
+- Numéro de passeport Portugais
+- Numéro de passeport
+- número do Passaporte
 
 ## <a name="portugal-tax-identification-number"></a>Numéro d’identification fiscale du Portugal
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro d’identification fiscale de l’UE.
 
 ### <a name="format"></a>Format
 
-Neuf chiffres sans espaces ni délimiteurs
+neuf chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
-Neuf chiffres
+neuf chiffres
   
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -10054,12 +11122,10 @@ Oui
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_portugal_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_portugal_eu_tax_file_number` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_portugal_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```xml
@@ -10109,14 +11175,14 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 ### <a name="format"></a>Format
 
-Un caractère suivi de huit chiffres
+un caractère suivi de huit chiffres
   
 ### <a name="pattern"></a>Modèle
 
-Un caractère suivi de huit chiffres :
+un caractère suivi de huit chiffres :
   
-- Une lettre (ne respecte pas la casse) ou un chiffre 
-- Huit chiffres
+- une lettre (ne respecte pas la casse) ou un chiffre 
+- huit chiffres
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -10125,7 +11191,6 @@ Non
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - L’expression régulière  `Regex_romania_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_romania_eu_driver's_license_number` est trouvé. 
     
@@ -10141,7 +11206,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-**Keywords_romania_eu_driver’s_license_number**
+#### <a name="keywords_romania_eu_drivers_license_number"></a>Keywords_romania_eu_driver’s_license_number
 
 - LD #
 - Permis de conduire
@@ -10175,12 +11240,10 @@ Oui
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_romania_eu_national_id_card` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_romania_eu_national_id_card` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_romania_eu_national_id_card` trouve le contenu qui correspond au modèle. 
     
 ```xml
@@ -10256,11 +11319,11 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 ### <a name="format"></a>Format
 
-Huit ou neuf chiffres sans espaces ni délimiteurs
+huit ou neuf chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
-Huit ou neuf chiffres
+huit ou neuf chiffres
   
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -10269,7 +11332,6 @@ Non
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - L’expression régulière  `Regex_romania_eu_passport_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_romania_eu_passport_number` est trouvé. 
     
@@ -10285,7 +11347,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-**Keywords_romania_eu_passport_number**
+#### <a name="keywords_romania_eu_passport_number"></a>Keywords_romania_eu_passport_number
 
 - numéro de passeport
 - Numéro de passeport roumain
@@ -10310,7 +11372,6 @@ Non applicable
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - L’expression régulière  `Regex_romania_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_romania_eu_tax_file_number` est trouvé. 
     
@@ -10380,16 +11441,125 @@ id national
 - uniqueidentityno
 
 
+## <a name="russia-passport-number-domestic"></a>Numéro de passeport russe-Suisse
+
+### <a name="format"></a>Format
+
+nombre à dix chiffres
+
+### <a name="pattern"></a>Modèle
+
+nombre à dix chiffres :
+
+- deux chiffres
+- un espace ou un tiret facultatif
+- deux chiffres
+- un espace facultatif
+- six chiffres
+
+### <a name="checksum"></a>Somme de contrôle
+
+Non
+
+### <a name="definition"></a>Définition
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
+- L’expression Regex Regex_Russian_Passport_Number_Domestic trouve le contenu qui correspond au modèle.
+- Un mot clé depuis Keyword_Russian_Passport_Number est trouvé.
+
+```xml
+      <!-- Russian Passport Number Domestic -->
+      <Entity id="76ec2f5d-cedb-48e1-8070-1998794af445" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_Russian_Passport_Number_Domestic" />
+          <Match idRef="Keyword_Russian_Passport_Number" />
+        </Pattern>
+      </Entity>
+```
+
+### <a name="keywords"></a>Mots-clés
+
+#### <a name="keyword_russia_passport_number_domestic"></a>Keyword_russia_passport_number_domestic
+
+- Numéro de passeport
+- Numéro de passeport
+- tel #
+- ID de passeport
+- n ° passeport #
+- passportnumber #
+- паспорт нет
+- ID паспорт
+- pоссийской паспорт
+- pусский номер паспорта
+- паспорт #
+- паспортid #
+- номер паспорта
+- номерпаспорта #
+
+
+## <a name="russia-passport-number-international"></a>Numéro de passeport russe international
+
+### <a name="format"></a>Format
+
+numéro à neuf chiffres
+
+### <a name="pattern"></a>Modèle
+
+numéro à neuf chiffres :
+
+- deux chiffres
+- un espace ou un tiret facultatif
+- sept chiffres
+
+### <a name="checksum"></a>Somme de contrôle
+
+Non
+
+### <a name="definition"></a>Définition
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
+- L’expression Regex Regex_Russian_Passport_Number_International trouve le contenu qui correspond au modèle.
+- Un mot clé depuis Keyword_Russian_Passport_Number est trouvé.
+
+```xml
+      <!-- Russian Passport Number International -->
+      <Entity id="ac5f4878-75e4-4b82-af2d-02e13ea9f411" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_Russian_Passport_Number_International" />
+          <Match idRef="Keyword_Russian_Passport_Number" />
+        </Pattern>
+      </Entity>
+```
+
+### <a name="keywords"></a>Mots-clés
+
+#### <a name="keywords_russia_passport_number_international"></a>Keywords_russia_passport_number_international
+
+- Numéro de passeport
+- Numéro de passeport
+- tel #
+- ID de passeport
+- n ° passeport #
+- passportnumber #
+- паспорт нет
+- ID паспорт
+- pоссийской паспорт
+- pусский номер паспорта
+- паспорт #
+- паспортid #
+- номер паспорта
+- номерпаспорта #
+
 
 ## <a name="saudi-arabia-national-id"></a>ID national Arabie saoudite
 
 ### <a name="format"></a>Format
 
-10 chiffres
+dix chiffres
 
 ### <a name="pattern"></a>Modèle
 
-10 chiffres consécutifs
+dix chiffres consécutifs
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -10427,14 +11597,14 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="format"></a>Format
 
-Neuf lettres et chiffres
+neuf lettres et chiffres
 
 ### <a name="pattern"></a>Modèle
 
-- Neuf lettres et chiffres :
-- La lettre « F », « G », « S » ou « T » (ne respectant pas la casse)  
-- Sept chiffres  
-- Un chiffre de contrôle alphabétique
+- neuf lettres et chiffres :
+- la lettre « F », « G », « S » ou « T » (ne respecte pas la casse) 
+- sept chiffres 
+- un chiffre de contrôle alphabétique
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -10482,14 +11652,14 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 ### <a name="format"></a>Format
 
-Un caractère suivi de sept chiffres
+un caractère suivi de sept chiffres
   
 ### <a name="pattern"></a>Modèle
 
-Un caractère suivi de sept chiffres
+un caractère suivi de sept chiffres
   
-- Une lettre (ne respecte pas la casse) ou un chiffre
--  Sept chiffres 
+- une lettre (ne respecte pas la casse) ou un chiffre
+- sept chiffres 
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -10498,7 +11668,6 @@ Non
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - L’expression régulière  `Regex_slovakia_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_slovakia_eu_driver's_license_number` est trouvé. 
     
@@ -10514,21 +11683,32 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-**Keywords_slovakia_eu_driver’s_license_number**
+#### <a name="keywords_slovakia_eu_drivers_license_number"></a>Keywords_slovakia_eu_driver’s_license_number
 
-DL # numéro de licence du pilote de licence du pilote de licence lic.
-pilotes de licences de pilotes de licence du pilote de licence du pilote de licence du pilote de licence du pilote de licence de numéro de permis de conduire dlno # vodičský PREUKAZ
+- LD #
+- Permis de conduire
+- Numéro de permis de conduire
+- permis de conduire
+- pilotes.
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- Numéro de permis de conduire
+- Numéro de permis de conduire
+- Numéro de permis de conduire
+- dlno #
+- vodičský preukaz
 
 ## <a name="slovakia-national-identification-number"></a>Numéro d’identification nationale de la Slovaquie
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro d’identification national de l’UE.
 
 ### <a name="format"></a>Format
 
-Dix chiffres contenant une barre oblique inverse
+dix chiffres contenant une barre oblique inverse
   
 ### <a name="pattern"></a>Modèle
 
-Dix chiffres contenant une barre oblique inverse :
+dix chiffres contenant une barre oblique inverse :
   
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -10537,12 +11717,10 @@ Oui
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_slovakia_eu_national_id_card` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_slovakia_eu_national_id_card` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_slovakia_eu_national_id_card` trouve le contenu qui correspond au modèle. 
     
 ```xml
@@ -10615,11 +11793,11 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 ### <a name="format"></a>Format
 
-Un chiffre ou une lettre suivi de sept chiffres sans espaces ni délimiteurs
+un chiffre ou une lettre suivi de sept chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
-Un chiffre ou une lettre (ne respectant pas la casse) suivi de sept chiffres
+un chiffre ou une lettre (ne respectant pas la casse) suivi de sept chiffres
   
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -10628,7 +11806,6 @@ Non
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - L’expression régulière  `Regex_slovakia_eu_passport_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_slovakia_eu_passport_number` est trouvé. 
     
@@ -10644,7 +11821,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-**Keywords_slovakia_eu_passport_number**
+#### <a name="keywords_slovakia_eu_passport_number"></a>Keywords_slovakia_eu_passport_number
 
 - numéro de passeport
 - Numéro de passeport slovaque
@@ -10656,11 +11833,11 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 ### <a name="format"></a>Format
 
-10 chiffres sans espaces ni délimiteurs
+dix chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
-10 chiffres
+dix chiffres
   
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -10669,7 +11846,6 @@ Non applicable
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - L’expression régulière  `Regex_slovakia_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_slovakia_eu_tax_file_number` est trouvé. 
     
@@ -10741,11 +11917,11 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 ### <a name="format"></a>Format
 
-Neuf chiffres sans espaces ni délimiteurs
+neuf chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
-Neuf chiffres
+neuf chiffres
   
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -10754,7 +11930,6 @@ Non
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - L’expression régulière  `Regex_slovenia_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_slovenia_eu_driver's_license_number` est trouvé. 
     
@@ -10770,7 +11945,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-**Keywords_slovenia_eu_driver’s_license_number**
+#### <a name="keywords_slovenia_eu_drivers_license_number"></a>Keywords_slovenia_eu_driver’s_license_number
 
 - LD #
 - Permis de conduire
@@ -10797,10 +11972,10 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 13 chiffres dans le modèle spécifié :
   
--  Sept chiffres correspondant à la date de naissance (DDMMLLL) où « LLL » correspond aux trois derniers chiffres de l’année de naissance 
-- Deux chiffres correspondant à la zone de naissance
-- Trois chiffres correspondant à une combinaison de sexe et de numéro de série pour les personnes nées le même jour (000-499 pour les mâles et les 500-999 pour les femelles)
-- Un chiffre de contrôle
+- sept chiffres correspondant à la date de naissance (DDMMLLL) où « LLL » correspond aux trois derniers chiffres de l’année de naissance 
+- deux chiffres correspondant à la zone de naissance
+- trois chiffres correspondant à une combinaison de sexe et de numéro de série pour les personnes nées le même jour (000-499 pour les mâles et les 500-999 pour les femelles)
+- un chiffre de contrôle
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -10809,12 +11984,10 @@ Oui
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_slovenia_eu_national_id_card` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_slovenia_eu_national_id_card` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_slovenia_eu_national_id_card` trouve le contenu qui correspond au modèle. 
     
 ```xml
@@ -10867,15 +12040,15 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 ### <a name="format"></a>Format
 
-Deux lettres suivies de sept chiffres, sans espaces ni délimiteurs
+deux lettres suivies de sept chiffres, sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
-Deux lettres suivies de sept chiffres :
+deux lettres suivies de sept chiffres :
   
-- La lettre « P »
-- Une lettre majuscule
-- Sept chiffres
+- la lettre « P »
+- une lettre majuscule
+- sept chiffres
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -10884,7 +12057,6 @@ Non
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - L’expression régulière  `Regex_slovenia_eu_passport_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_slovenia_eu_passport_number` est trouvé. 
     
@@ -10900,20 +12072,23 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-**Keywords_slovenia_eu_passport_number**
+#### <a name="keywords_slovenia_eu_passport_number"></a>Keywords_slovenia_eu_passport_number
 
-Numéro de passeport slovène numéro de passeport de l’številka potnega Lista
+- numéro de passeport
+- Numéro de passeport slovène
+- Numéro de passeport
+- številka potnega lista
 
 ## <a name="slovenia-tax-identification-number"></a>Numéro d’identification fiscale de la Slovénie
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro d’identification fiscale de l’UE.
 
 ### <a name="format"></a>Format
 
-Huit chiffres sans espaces ni délimiteurs
+huit chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
-Huit chiffres
+huit chiffres
   
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -10922,12 +12097,10 @@ Oui
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_slovenia_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_slovenia_eu_tax_file_number` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_slovenia_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```xml
@@ -10971,7 +12144,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Etain #
 
 
-
 ## <a name="south-africa-identification-number"></a>Numéro d’identification Afrique du Sud
 
 ### <a name="format"></a>Format
@@ -10981,11 +12153,11 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 ### <a name="pattern"></a>Modèle
 
 13 chiffres :
-- Six chiffres au format AAMMJJ correspondant à la date de naissance  
-- Quatre chiffres 
-- Un indicateur de citoyenneté à un chiffre  
-- Le chiffre « 8 » ou « 9 »  
-- Un chiffre pour la somme de contrôle
+- six chiffres au format AAMMJJ correspondant à la date de naissance 
+- quatre chiffres 
+- indicateur de citoyenneté à un seul chiffre 
+- le chiffre « 8 » ou « 9 » 
+- un chiffre qui est un chiffre de la somme de contrôle
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -11025,12 +12197,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 ### <a name="pattern"></a>Modèle
 
 13 chiffres :
-- Six chiffres au format AAMMJJ correspondant à la date de naissance  
-- Un trait d’union  
-- Un chiffre déterminé par le siècle et le sexe  
-- Code à quatre chiffres désignant la région de naissance  
-- Un chiffre utilisé pour différencier les personnes dont les chiffres précédents sont identiques.  
-- Un chiffre de contrôle.
+- six chiffres au format AAMMJJ correspondant à la date de naissance 
+- un trait d’Union 
+- un chiffre déterminé par le siècle et le sexe 
+- Code de région de naissance à quatre chiffres 
+- un chiffre utilisé pour différencier les personnes dont les numéros précédents sont identiques 
+- un chiffre de contrôle.
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -11075,14 +12247,14 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 ### <a name="format"></a>Format
 
-Huit chiffres suivis d’un caractère
+huit chiffres suivis d’un caractère
   
 ### <a name="pattern"></a>Modèle
 
-Huit chiffres suivis d’un caractère :
+huit chiffres suivis d’un caractère :
   
-- Huit chiffres 
-- Un chiffre ou une lettre (ne respectant pas la casse)
+- huit chiffres 
+- un chiffre ou une lettre (ne respectant pas la casse)
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -11091,7 +12263,6 @@ Oui
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_spain_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_spain_eu_driver's_license_number` est trouvé. 
     
@@ -11107,7 +12278,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-**Keywords_spain_eu_driver’s_license_number**
+#### <a name="keywords_spain_eu_drivers_license_number"></a>Keywords_spain_eu_driver’s_license_number
 
 - dlno #
 - LD #
@@ -11149,14 +12320,14 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 ### <a name="format"></a>Format
 
-Sept chiffres suivis d’un caractère
+sept chiffres suivis d’un caractère
   
 ### <a name="pattern"></a>Modèle
 
-Sept chiffres suivis d’un caractère
+sept chiffres suivis d’un caractère
   
-- Sept chiffres 
-- Un chiffre ou une lettre (ne respectant pas la casse)
+- sept chiffres
+- un chiffre ou une lettre (ne respectant pas la casse)
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -11165,7 +12336,6 @@ Non applicable
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - L’expression régulière  `Regex_spain_eu_national_id_card` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_spain_eu_national_id_card"` est trouvé. 
     
@@ -11211,15 +12381,15 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 ### <a name="format"></a>Format
 
-Combinaison de huit ou neuf caractères de lettres et de chiffres sans espaces ni délimiteurs
+combinaison de huit ou neuf caractères de lettres et de chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
-Combinaison de huit ou neuf caractères de lettres et de chiffres :
+combinaison de huit ou neuf caractères de lettres et de chiffres :
   
--  Deux chiffres ou lettres 
-- Un chiffre ou une lettre (facultatif)
-- Six chiffres
+- deux chiffres ou lettres 
+- un chiffre ou une lettre (facultatif)
+- six chiffres
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -11228,7 +12398,6 @@ Non applicable
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - L’expression régulière  `Regex_spain_eu_passport_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_spain_eu_passport_number` est trouvé. 
     
@@ -11244,7 +12413,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-**Keywords_spain_eu_passport_number**
+#### <a name="keywords_spain_eu_passport_number"></a>Keywords_spain_eu_passport_number
 
 - tel
 - Passport Espagne
@@ -11267,11 +12436,11 @@ Cette entité de type d’informations sensibles est incluse dans le type d’in
 ### <a name="pattern"></a>Modèle
 
 11-12 chiffres :
-- Deux chiffres 
-- Une barre oblique (facultative) 
-- 7 à 8 chiffres 
-- Une barre oblique (facultative) 
-- Deux chiffres
+- deux chiffres 
+- une barre oblique (facultatif) 
+- sept à huit chiffres 
+- une barre oblique (facultatif) 
+- deux chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -11294,45 +12463,45 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-Néant
+Aucune
 
 ## <a name="spain-tax-identification-number"></a>Numéro d’identification fiscale Espagne
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro d’identification fiscale de l’UE.
 
 ### <a name="format"></a>Format
 
-Sept ou huit chiffres et une ou deux lettres dans le modèle spécifié
+sept ou huit chiffres et une ou deux lettres dans le modèle spécifié
   
 ### <a name="pattern"></a>Modèle
 
 Personnes physiques espagnoles avec une carte d’identité nationale d’Espagne :
   
--  Huit chiffres 
-- Une lettre majuscule (respecte la casse) 
+- huit chiffres 
+- une lettre majuscule (respecte la casse) 
     
 Spaniards non résident sans carte d’identité nationale d’Espagne
   
-- Une lettre majuscule « L » (respecte la casse)
-- Sept chiffres 
-- Une lettre majuscule (respecte la casse) 
+- une lettre majuscule « L » (respecte la casse)
+- sept chiffres
+- une lettre majuscule (respecte la casse) 
     
 Spaniards résident de moins de 14 ans sans carte d’identité nationale (Espagne) :
   
-- Une lettre majuscule « K » (respecte la casse)
--  Sept chiffres  
-- Une lettre majuscule (respecte la casse)
+- une lettre majuscule « K » (respecte la casse)
+- sept chiffres 
+- une lettre majuscule (respecte la casse)
     
 Foreigners avec le numéro d’identification d’un étranger
   
-- Une lettre majuscule qui est « X », « Y » ou « Z » (respecte la casse) 
-- Sept chiffres 
-- Une lettre majuscule (respecte la casse) 
+- une lettre majuscule qui est « X », « Y » ou « Z » (respecte la casse) 
+- sept chiffres
+- une lettre majuscule (respecte la casse) 
     
 Foreigners sans numéro d’identification étranger
   
-- Une lettre majuscule qui est « M » (respecte la casse) 
-- Sept chiffres 
-- Une lettre majuscule (respecte la casse) 
+- une lettre majuscule qui est « M » (respecte la casse) 
+- sept chiffres
+- une lettre majuscule (respecte la casse) 
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -11341,12 +12510,10 @@ Oui
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_spain_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_spain_eu_tax_file_number` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_spain_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```xml
@@ -11405,13 +12572,13 @@ La chaîne « User ID », « User ID », « UID » ou « UserId » suivi
 
 ### <a name="pattern"></a>Modèle
 
-- La chaîne « User ID », « User ID », « UID » ou « UserId »
-- N’importe quelle combinaison entre 1-200 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
-- La chaîne "password" ou "PWD" où "PWD" n’est pas précédé d’une lettre minuscule
-- Signe égal (=)
-- Tout caractère qui n’est pas un signe dollar ($), un symbole de pourcentage (%), un symbole supérieur à (>), un symbole (@), un guillemet ("), un point-virgule (;), une accolade ouvrante ([) ou un crochet gauche ({)
-- N’importe quelle combinaison de 7-128 caractères qui ne sont pas des points-virgules (;), barre oblique (/) ou guillemets (")
-- Un point-virgule (;) ou guillemets (")
+- la chaîne « User ID », « User ID », « UID » ou « UserId »
+- n’importe quelle combinaison entre 1-200 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
+- la chaîne "password" ou "PWD" où "PWD" n’est pas précédé d’une lettre minuscule
+- signe égal (=)
+- tout caractère qui n’est pas un signe dollar ($), un symbole de pourcentage (%), un symbole supérieur à (>), un symbole (@), un guillemet ("), un point-virgule (;), une accolade ouvrante ([) ou un crochet gauche ({)
+- n’importe quelle combinaison de 7-128 caractères qui ne sont pas des points-virgules (;), barre oblique (/) ou guillemets (")
+- un point-virgule (;) ou guillemets (")
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -11478,15 +12645,15 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 ### <a name="format"></a>Format
 
-Dix chiffres contenant un trait d’Union
+dix chiffres contenant un trait d’Union
   
 ### <a name="pattern"></a>Modèle
 
-Dix chiffres contenant un trait d’Union :
+dix chiffres contenant un trait d’Union :
   
--  Six chiffres 
-- Un trait d’union
-- Quatre chiffres
+- six chiffres 
+- un trait d’Union
+- quatre chiffres
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -11495,7 +12662,6 @@ Non
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - L’expression régulière  `Regex_sweden_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_sweden_eu_driver's_license_number` est trouvé. 
     
@@ -11527,20 +12693,20 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - dlno #
 - körkort
 
-## <a name="sweden-national-id"></a>ID national suédois
+## <a name="sweden-national-id"></a>ID national de Suède
 Cette entité de type d’informations sensibles est incluse dans le type d’informations sensibles du numéro d’identification national de l’UE et est disponible en tant qu’entité de type d’informations sensibles autonome.
 
 ### <a name="format"></a>Format
 
-10 ou 12 chiffres et éventuellement un délimiteur
+10 ou 12 chiffres et un délimiteur facultatif
 
 ### <a name="pattern"></a>Modèle
 
-10 ou 12 chiffres et un délimiteur facultatif :
-- 2 à 4 chiffres (facultatifs) 
+10 ou 12 chiffres et un délimiteur facultatif :
+- deux à quatre chiffres (facultatif) 
 - Six chiffres au format de date AAMMJJ 
-- Séparateur de « - » ou « + » (facultatif), plus
-- Quatre chiffres
+- délimiteur « - » ou « + » (facultatif), plus
+- quatre chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -11570,11 +12736,11 @@ Cette entité de type d’informations sensibles est incluse dans le type d’in
 
 ### <a name="format"></a>Format
 
-Huit chiffres
+huit chiffres
 
 ### <a name="pattern"></a>Modèle
 
-Huit chiffres consécutifs
+huit chiffres consécutifs
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -11583,10 +12749,10 @@ Non
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-- L’expression régulière Regex_sweden_passport_number trouve un contenu qui correspond au modèle.
-- L’une des affirmations suivantes est vraie :
-    - Un mot clé figurant dans la liste Keyword_passport est trouvé.
-    - Un mot clé figurant dans la liste Keyword_sweden_passport est trouvé.
+- l’expression régulière Regex_sweden_passport_number trouve le contenu qui correspond au modèle.
+- l’une des conditions suivantes est vraie :
+    - un mot clé depuis Keyword_passport est trouvé.
+    - un mot clé depuis Keyword_sweden_passport est trouvé.
 
 ```xml
 <!-- Sweden Passport Number -->
@@ -11647,11 +12813,11 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 12 chiffres :
   
--  Huit chiffres correspondant à la date de naissance (AAAAMMJJ) 
-- Trois chiffres correspondant à un numéro de série où : 
-  - Le dernier chiffre du numéro de série indique sexe par l’affectation d’un nombre impair pour le mâle et d’un nombre pair pour femelle.
-  - Jusqu’à 1990, l’affectation du numéro de série correspond au comté où le porteur du numéro est né ou (en naissance avant 1947) où il a été vivant, en fonction des enregistrements fiscaux, le 1er janvier 1947, avec un code spécial (généralement 9 comme le 7 chiffres) pour immigrants 
-- Un chiffre de contrôle
+- huit chiffres correspondant à la date de naissance (AAAAMMJJ) 
+- trois chiffres correspondant à un numéro de série où : 
+  - le dernier chiffre du numéro de série indique sexe par l’affectation d’un nombre impair pour le mâle et d’un nombre pair pour femelle.
+  - jusqu’à 1990, l’affectation du numéro de série correspond au comté où le porteur du numéro est né ou (en naissance avant 1947) où il a été vivant, en fonction des enregistrements fiscaux, le 1er janvier 1947, avec un code spécial (généralement 9 comme le 7 chiffres) pour immigrants 
+- un chiffre de contrôle
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -11660,12 +12826,10 @@ Oui
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_sweden_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_sweden_eu_ssn_or_equivalent` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_sweden_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
     
 ```xml
@@ -11704,18 +12868,18 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 ### <a name="format"></a>Format
 
-Dix chiffres et un symbole dans le modèle spécifié
+dix chiffres et un symbole dans le modèle spécifié
   
 ### <a name="pattern"></a>Modèle
 
-Dix chiffres et un symbole :
+dix chiffres et un symbole :
   
-- Six chiffres correspondant à la date de naissance (AAMMJJ) 
-- Un signe plus, un signe moins ou une barre oblique inverse
-- Trois chiffres qui permettent de définir le numéro d’identification unique : 
-  - Pour les numéros émis avant le 1990, le septième et le huitième chiffre identifient le comté de naissance ou les personnes nées à l’étranger.
-  - Le chiffre de la neuvième position indique le sexe soit impair, soit pair pour femme.
-- Un chiffre de contrôle
+- six chiffres correspondant à la date de naissance (AAMMJJ) 
+- un signe plus, un signe moins ou une barre oblique inverse
+- trois chiffres qui permettent de définir le numéro d’identification unique : 
+  - pour les numéros émis avant le 1990, le septième et le huitième chiffre identifient le comté de naissance ou les personnes nées à l’étranger.
+  - le chiffre de la neuvième position indique le sexe soit impair, soit pair pour femme.
+- un chiffre de contrôle
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -11724,12 +12888,10 @@ Oui
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_sweden_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
 - Un mot clé from  `Keywords_sweden_eu_tax_file_number` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_sweden_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```xml
@@ -11775,21 +12937,20 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Etain #
 
 
-
 ## <a name="swift-code"></a>Code SWIFT
 
 ### <a name="format"></a>Format
 
-Quatre lettres suivies de 5 à 31 lettres ou chiffres
+quatre lettres suivies de 5-31 lettres ou chiffres
 
 ### <a name="pattern"></a>Modèle
 
-Quatre lettres suivies de 5 à 31 lettres ou chiffres :
-- Code bancaire à quatre lettres (ne respectent pas la casse) 
-- Un espace facultatif 
+quatre lettres suivies de 5-31 lettres ou chiffres :
+- Code de la Banque à quatre lettres (ne respectant pas la casse) 
+- un espace facultatif 
 - 4 à 28 lettres ou chiffres (numéro de compte bancaire de base (BBAN)) 
-- Un espace facultatif 
-- 1 à 3 lettres ou chiffres (reste du BBAN)
+- un espace facultatif 
+- une à trois lettres ou chiffres (reste de la BBAN)
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -11845,19 +13006,90 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - le numéro BIC 
 - \# BIC 
 - code identificateur de banque 
+
+
+## <a name="swiss-ssn-ahv-number"></a>Numéro AVS n ° S.S. Suisse
+
+### <a name="format"></a>Format
+
+numéro à 13 chiffres
+
+### <a name="pattern"></a>Modèle
+
+numéro à 13 chiffres :
+
+- trois chiffres-756
+- point facultatif
+- quatre chiffres
+- point facultatif
+- quatre chiffres
+- point facultatif
+- deux chiffres
+
+### <a name="checksum"></a>Somme de contrôle
+
+Oui
+
+### <a name="definition"></a>Définition
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
+- La fonction Func_swiss_social_security_number_ahv trouve le contenu qui correspond au modèle.
+- Un mot clé depuis Keywords_swiss_social_security_number_ahv est trouvé.
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
+- La fonction Func_swiss_social_security_number_ahv trouve le contenu qui correspond au modèle.
+
+```xml
+      <!-- Swiss SSN AHV Number -->
+      <Entity id="277cfa4b-6eaa-4a1b-9492-099dec849971" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_swiss_social_security_number_ahv" />
+          <Match idRef="Keywords_swiss_social_security_number_ahv" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_swiss_social_security_number_ahv" />
+        </Pattern>
+      </Entity>
+```
+
+### <a name="keywords"></a>Mots-clés
+
+#### <a name="keyword_swiss_ssn_ahv_number"></a>Keyword_swiss_ssn_AHV_number
+
+- obligation
+- SSN
+- pid
+- Numéro d’assurance
+- personalidno #
+- numéro de sécurité sociale
+
+- Numéro d’identification personnel
+- n ° d’identification personnelle
+- insuranceno #
+- uniqueidno #
+- n ° d’identification unique
+- numéro AVS
+- identité personnelle aucune versicherungsnummer
+- identifikationsnummer
+- einzigartige identität nicht
+- sozialversicherungsnummer
+- ID personnelle d’identification
+- 
+numéro de sécurité sociale
+
    
 ## <a name="taiwan-national-identification-number"></a>Numéro d’identification national taïwanais
 
 ### <a name="format"></a>Format
 
-Une lettre (en anglais) suivie de neuf chiffres
+une lettre suivie de neuf chiffres
 
 ### <a name="pattern"></a>Modèle
 
-Une lettre suivie de neuf chiffres :
-- Une lettre (en anglais, ne respectant pas la casse) 
-- Le chiffre « 1 » ou « 2 » 
-- Huit chiffres
+une lettre suivie de neuf chiffres :
+- une lettre (en anglais, ne respectant pas la casse) 
+- le chiffre « 1 » ou « 2 » 
+- huit chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -11889,7 +13121,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-#### <a name="keyword_taiwanese_national_id"></a>Keyword_taiwanese_national_id
+#### <a name="keyword_taiwan_national_id"></a>Keyword_taiwan_national_id
 
 - 身份證字號 
 - 身份證 
@@ -11915,11 +13147,11 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="pattern"></a>Modèle
 Numéro de passeport biométrique :
-- Le chiffre « 3 »  
-- Huit chiffres
+- le caractère « 3 » 
+- huit chiffres
 
 Numéro de passeport non biométrique :
-- Neuf chiffres
+- neuf chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -11963,8 +13195,8 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 ### <a name="pattern"></a>Modèle
 
 10 lettres et chiffres :
-- Deux lettres (ne respectant pas la casse)  
-- Huit chiffres
+- deux lettres (ne respectant pas la casse) 
+- huit chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -12011,7 +13243,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 ### <a name="pattern"></a>Modèle
 
 13 chiffres :
-- Le premier chiffre est différent de 0 ou de 9 
+- le premier chiffre est différent de zéro ou neuf 
 - 12 chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -12042,7 +13274,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-#### <a name="keyword_thai_citizen_id"></a>Keyword_Thai_Citizen_Id
+#### <a name="keyword_thai_citizen_id"></a>Keyword_thai_citizen_Id
 
 - ID Number
 - Numéro d’identification
@@ -12089,7 +13321,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-#### <a name="keyword_turkish_national_id"></a>Keyword_Turkish_National_Id
+#### <a name="keyword_turkish_national_id"></a>Keyword_turkish_national_id
 
 - TC Kimlik non
 - TC Kimlik numarası
@@ -12106,11 +13338,11 @@ Combinaison de 18 lettres et chiffres au format spécifié
 ### <a name="pattern"></a>Modèle
 
 18 lettres et chiffres
-- Cinq lettres (ne respectent pas la casse) ou le chiffre « 9 » à la place d’une lettre 
-- Un chiffre 
-- Cinq chiffres au format de date MMDDY pour la date de naissance (7 caractères sont incrémentés de 50 si le pilote est femelle, c’est-à-dire 51 vers 62 au lieu de 01 à 12)
-- Deux lettres (ne respectent pas la casse) ou le chiffre « 9 » à la place d’une lettre 
-- Cinq chiffres
+- cinq lettres (ne respectant pas la casse) ou le chiffre « 9 » à la place d’une lettre 
+- un chiffre 
+- cinq chiffres au format de date MMDDY pour la date de naissance (7 caractères sont incrémentés de 50 si le pilote est femelle, c’est-à-dire 51 vers 62 au lieu de 01 à 12)
+- deux lettres (ne respectant pas la casse) ou le chiffre « 9 » à la place d’une lettre 
+- cinq chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -12157,11 +13389,11 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="format"></a>Format
 
-Deux lettres suivies de 1 à 4 chiffres
+deux lettres suivies de 1-4 chiffres
 
 ### <a name="pattern"></a>Modèle
 
-Deux lettres (ne respectant pas la casse) suivies de 1 à 4 chiffres
+deux lettres (ne respectant pas la casse) suivies de numéros 1-4
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -12204,11 +13436,11 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 ### <a name="pattern"></a>Modèle
 
 10 à 17 chiffres :
-- 3 ou 10 chiffres 
-- Un espace 
-- Trois chiffres 
-- Un espace 
-- Quatre chiffres
+- trois ou dix chiffres 
+- un espace 
+- trois chiffres 
+- un espace 
+- quatre chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -12267,26 +13499,26 @@ Cette entité de type d’informations sensibles est incluse dans le type d’in
 
 ### <a name="format"></a>Format
 
-7 caractères ou 9 caractères séparés par des espaces ou des tirets
+sept caractères ou neuf caractères séparés par des espaces ou des tirets
 
 ### <a name="pattern"></a>Modèle
 
-Deux modèles possibles :
+deux modèles possibles :
 
-- Deux lettres (valides NINOs Utilisez uniquement certains caractères dans ce préfixe, que ce modèle valide ; ne respecte pas la casse)
-- Six chiffres
+- deux lettres (valides NINOs Utilisez uniquement certains caractères dans ce préfixe, que ce modèle valide ; ne respecte pas la casse)
+- six chiffres
 - « A », « B », « C » ou « d » (comme le préfixe, seuls certains caractères sont autorisés dans le suffixe ; ne respectent pas la casse)
 
 OR
 
-- Deux lettres
-- Un espace ou un tiret
-- Deux chiffres
-- Un espace ou un tiret
-- Deux chiffres
-- Un espace ou un tiret
-- Deux chiffres
-- Un espace ou un tiret
+- deux lettres
+- un espace ou un tiret
+- deux chiffres
+- un espace ou un tiret
+- deux chiffres
+- un espace ou un tiret
+- deux chiffres
+- un espace ou un tiret
 - « A », « B », « C » ou « d »
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -12375,12 +13607,10 @@ Oui
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
 - La fonction  `Func_uk_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
-    
 - Un mot clé from  `Keywords_uk_eu_tax_file_number` est trouvé. 
     
-```
+```xml
  <!-- EU Tax File Number -->
 <Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
@@ -12483,9 +13713,9 @@ Dépend de l’État
 
 ### <a name="pattern"></a>Modèle
 
-Dépend de l’État, par exemple, New York :
-- Neuf chiffres au format DDD DDD DDD correspondront.
-- Neuf chiffres au format ddddddddd ne correspondront pas.
+dépend de l’État (par exemple, New York) :
+- neuf chiffres au format DDD DDD DDD correspondront.
+- neuf chiffres comme ddddddddd ne correspondent pas.
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -12624,31 +13854,31 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="keyword_state_name_drivers_license_name"></a>Keyword_ [state_name] _drivers_license_name
 
-- Abréviation de l’État (par exemple, « NY ») 
-- Nom de l’État (par exemple, « New York »)
+- abréviation de l’État (par exemple, « NY ») 
+- nom de l’État (par exemple, « New York »)
 
 ## <a name="us-individual-taxpayer-identification-number-itin"></a>Numéro d’identification du contribuable américain (ITIN)
 
 ### <a name="format"></a>Format
 
-Neuf chiffres, le premier étant le « 9 », le quatrième le « 7 » ou le « 8 », éventuellement mis en forme avec des espaces ou des tirets
+neuf chiffres commençant par le « 9 » et contenant un « 7 » ou un « 8 » en tant que quatrième chiffre, éventuellement mis en forme avec des espaces ou des tirets
 
 ### <a name="pattern"></a>Modèle
 
-Avec
-- Le chiffre « 9 » 
-- Deux chiffres 
-- Un espace ou un tiret 
-- Un « 7 » ou un « 8 » 
-- Un chiffre 
-- Un espace ou tiret 
-- Quatre chiffres
+avec
+- le chiffre « 9 » 
+- deux chiffres 
+- un espace ou un tiret 
+- « 7 » ou « 8 » 
+- un chiffre 
+- un espace ou un tiret 
+- quatre chiffres
 
-Non
-- Le chiffre « 9 » 
-- Deux chiffres 
-- Un « 7 » ou un « 8 » 
-- Cinq chiffres
+non
+- le chiffre « 9 » 
+- deux chiffres 
+- « 7 » ou « 8 » 
+- cinq chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -12724,14 +13954,14 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="format"></a>Format
 
-9 chiffres, qui peuvent être mis en forme ou non mis en forme
+neuf chiffres, qui peuvent être mis en forme ou non mis en forme
 
 > [!NOTE]
 > La mise en forme d’un numéro de sécurité sociale émis avant le milieu de l’année 2011 est fixe et certaines parties du numéro doivent se situer dans certaines plages pour qu’il soit valide (mais il n’y a pas de somme de contrôle).
 
 ### <a name="pattern"></a>Modèle
 
-Quatre fonctions permettent de rechercher des numéros de sécurité sociale avec quatre différents modèles :
+quatre fonctions recherchent numéros dans quatre modèles différents :
 - Func_ssn recherche des numéros de sécurité sociale avec une mise en forme fixe d’avant l’année 2011, mis en forme avec des tirets ou des espaces (ddd-dd-dddd OU ddd dd dddd)
 - Func_unformatted_ssn recherche des numéros de sécurité sociale avec une mise en forme fixe d’avant l’année 2011, avec neuf chiffres consécutifs non mis en forme (ddddddddd)
 - Func_randomized_formatted_ssn recherche des numéros de sécurité sociale d’après l’année 2011, mis en forme avec des tirets ou des espaces  (ddd-dd-dddd OU ddd dd dddd)
@@ -12805,11 +14035,11 @@ Le Royaume-Uni Numéro de passeport le type d’informations sensibles l’entit
 
 ### <a name="format"></a>Format
 
-Neuf chiffres
+neuf chiffres
 
 ### <a name="pattern"></a>Modèle
 
-Neuf chiffres consécutifs
+neuf chiffres consécutifs
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -12852,3 +14082,87 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Passeport # 
 - PasseportNon 
 - Passeportn ° 
+
+## <a name="ukraine-passport-domestic"></a>Pays de l’Ukraine passeport national
+
+### <a name="format"></a>Format
+
+neuf chiffres
+
+### <a name="pattern"></a>Modèle
+
+neuf chiffres
+
+### <a name="checksum"></a>Somme de contrôle
+
+Non
+
+### <a name="definition"></a>Définition
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
+- L’expression Regex Regex_Ukraine_Passport_Domestic trouve le contenu qui correspond au modèle.
+- Un mot clé depuis Keyword_Ukraine_Passport_Domestic est trouvé.
+
+```xml
+      <!-- Ukraine Passport Domestic -->
+      <Entity id="1817a540-221f-4459-9202-3bd78b81d803" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
+        <IdMatch idRef="Regex_Ukraine_Passport_Domestic"/>
+          <Match idRef="Keyword_Ukraine_Passport_Domestic"/>
+        </Pattern>
+      </Entity>
+```
+
+### <a name="keywords"></a>Mots-clés
+
+#### <a name="keyword_ukraine_passport_domestic"></a>Keyword_ukraine_passport_domestic
+
+- passeport de l’Ukraine
+- Numéro de passeport
+- Numéro de passeport
+- паспорт України
+- номер паспорта
+- персональний
+
+
+## <a name="ukraine-passport-international"></a>International de l’Ukraine Passport
+
+### <a name="format"></a>Format
+
+modèle alphanumérique à huit caractères
+
+### <a name="pattern"></a>Modèle
+
+modèle alphanumérique à huit caractères :
+- deux lettres ou chiffres
+- six chiffres
+
+### <a name="checksum"></a>Somme de contrôle
+
+Non
+
+### <a name="definition"></a>Définition
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
+- L’expression Regex Regex_Ukraine_Passport_International trouve le contenu qui correspond au modèle.
+- Un mot clé depuis Keyword_Ukraine_Passport_International est trouvé.
+
+```xml
+      <!-- Ukraine Passport International -->
+      <Entity id="cfbe032d-22e0-4f28-ab68-d66e9641f1e2" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_Ukraine_Passport_International"/>
+          <Match idRef="Keyword_Ukraine_Passport_International"/>
+        </Pattern>
+      </Entity>
+```
+
+### <a name="keywords"></a>Mots-clés
+
+#### <a name="keyword_ukraine_passport_international"></a>Keyword_ukraine_passport_international
+
+- passeport de l’Ukraine
+- Numéro de passeport
+- Numéro de passeport
+- паспорт України
+- номер паспорта

@@ -13,12 +13,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 Business Premium, Microsoft 365, SMB, FAQ, forum aux questions, réponses, entreprise
 ms.date: 07/21/2020
-ms.openlocfilehash: 614da177df9250045ca3cc18c0b071e0aa43b7ec
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: e056f0c33aec180080a0d4e27e182d2d98877e6e
+ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560796"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47775082"
 ---
 # <a name="microsoft-365-business-premium-frequently-asked-questions"></a>Forum Aux Questions Microsoft 365 Business Premium
 
@@ -157,7 +157,7 @@ Toutes les extensions qui peuvent être ajoutées à Microsoft 365 Business S
 Oui, vous pouvez acheter un abonnement vocal professionnel. [Business Voice](https://docs.microsoft.com/microsoftteams/business-voice/whats-business-voice) est une solution de téléphonie conçue pour les petites et moyennes entreprises d’un maximum de 300 utilisateurs qui regroupent le système téléphonique, l’audioconférence, un forfait d’appels nationaux et bien plus encore. Les fonctionnalités de système téléphonique que vous obtenez incluent la messagerie vocale, l’ID de l’appelant, le parcage d’appel, le transfert d’appel, les standards automatiques et les files d’attente d’appels. <br> Pour savoir si la fonctionnalité voix entreprise est disponible dans votre pays ou région, consultez la rubrique [relative à la disponibilité des pays et des régions pour voix entreprise](https://docs.microsoft.com/microsoftteams/business-voice/country-region-availability). Pour plus d’informations sur les tarifs, consultez la rubrique [tarification pour les communications vocales](https://go.microsoft.com/fwlink/?linkid=2127221).
  
 ### <a name="can-microsoft-365-business-premium-customers-use--microsoft-defender-advanced-threat-protection"></a>Les clients Microsoft 365 Business Premium peuvent-ils utiliser la protection avancée contre les menaces de Microsoft Defender ? 
-Oui, la protection avancée contre les menaces Microsoft Defender est disponible sous forme de module complémentaire pour les clients Microsoft 365 Business Premium.
+Oui, la protection avancée contre les menaces Microsoft Defender est disponible sous la forme d’un complément de Microsoft 365 Business Premium acheté auprès d’un [fournisseur de solutions de Cloud Microsoft](https://partner.microsoft.com/membership/cloud-solution-provider/find-a-provider).
 
 ## <a name="partner-opportunity"></a>Possibilité de devenir partenaire
 

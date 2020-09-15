@@ -13,18 +13,18 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: La feuille de route pour configurer vos services Cloud pour Microsoft 365.
-ms.openlocfilehash: 4e9630ad84b5e442f0c8fd6ab95ca9d0c48c780a
-ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
+ms.openlocfilehash: 9d28b03f17aa0b9de955af824939d0db28faa057
+ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "47315764"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47775134"
 ---
 # <a name="cloud-services-roadmap-for-microsoft-365"></a>Feuille de route des services Cloud pour Microsoft 365
 
 Pour obtenir les avantages de la créativité, du travail d’équipe et de la productivité de Microsoft 365 pour les entreprises, déployez les services Cloud qui répondent le mieux aux besoins de votre organisation.
 
-Si vous disposez de déploiements basés sur un serveur pour Exchange, SharePoint ou Skype entreprise, reportez-vous à la feuille de [route du logiciel client et serveur](client-server-software-roadmap-microsoft-365.md) pour migrer votre organisation entière vers Microsoft 365 pour entreprises. Cette feuille de route inclut les produits clients Microsoft Office, les produits serveur Office locaux et les appareils basés sur Microsoft Windows.
+Si vous disposez de déploiements basés sur un serveur pour Exchange, SharePoint ou Skype entreprise et que vous souhaitez migrer votre organisation entière vers Microsoft 365 pour entreprise, consultez la feuille de [route du logiciel client et serveur](client-server-software-roadmap-microsoft-365.md). Cette feuille de route inclut les produits clients Microsoft Office, les produits serveur Office locaux et les &ndash; appareils basés sur Microsoft Windows.
 
 ## <a name="deploy"></a>Déployer
 
@@ -56,12 +56,12 @@ Pour gérer vos services Cloud :
 
 ## <a name="how-microsoft-does-cloud-services-for-microsoft-365"></a>Comment Microsoft prend en charge les services Cloud pour Microsoft 365
 
-Pour voir comment la division informatique de Microsoft a déployé ou gère les services Cloud de Microsoft 365 :
+Pour plus d’informations sur la façon dont Microsoft IT a déployé ou gère les services Cloud de Microsoft 365 :
 
-1. Accédez au [Microsoft IT Showcase](https://www.microsoft.com/itshowcase).
+1. Accédez à [Microsoft IT Showcase](https://www.microsoft.com/itshowcase).
 2. Sélectionnez **Rechercher du contenu**.
-3. Dans **affiner les résultats**, sélectionnez **IT Pro** sous **audience**et le service Cloud qui vous intéresse sous **produit**.
+3. Sous **redéfinir les résultats**, sélectionnez **IT Pro** sous **audience**, puis sous **produit**, sélectionnez un service Cloud.
 
 ## <a name="next-step"></a>Étape suivante
 
-Commencez votre implémentation des services Cloud avec [Préparez](configure-services-and-applications.md)-vous.
+Démarrez votre implémentation des services Cloud. Pour plus d’informations, consultez la rubrique [configurer les applications et services d’entreprise Microsoft 365](configure-services-and-applications.md).

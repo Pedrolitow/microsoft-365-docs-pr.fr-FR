@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à utiliser des règles de flux de messagerie (règles de transport) pour identifier et filtrer les messages en masse (courrier gris) dans Exchange Online Protection (EOP).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dfe841d3e80efc50d6ffbc702faefa1c9a971b13
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 62db73ea917139d81a29569d5b452637fd053c92
+ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826752"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47775194"
 ---
 # <a name="use-mail-flow-rules-to-filter-bulk-email-in-eop"></a>Utiliser des règles de flux de courrier pour filtrer les messages électroniques en bloc dans EOP
 
@@ -76,7 +76,7 @@ Cette rubrique explique comment créer ces règles de flux de messagerie dans le
        - `If you are unable to view the content of this email\, please`
        - `\>(safe )?unsubscribe( here)?\</a\>`
        - `If you do not wish to receive further communications like this\, please`
-       - `\<img height\="?1"? width\="?1"? sr\c=.?http\://`
+       - `<img height="?1"? width="?1"? sr\c=.?http\://`
        - `To stop receiving these+emails\:http\://`
        - `To unsubscribe from \w+ (e\-?letter|e?-?mail|newsletter)`
        - `no longer (wish )?(to )?(be sent|receive) w+ email`
