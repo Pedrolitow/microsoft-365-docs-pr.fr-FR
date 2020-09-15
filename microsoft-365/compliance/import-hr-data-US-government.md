@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Les administrateurs dans le nuage des États-Unis peuvent configurer un connecteur de données pour importer les données des employés à partir du système de ressources humaines (RH) de leur organisation vers Microsoft 365. Cela vous permet d’utiliser des données RH dans des stratégies de gestion des risques initiées pour vous aider à détecter les activités d’utilisateurs spécifiques susceptibles de constituer une menace interne pour votre organisation.
-ms.openlocfilehash: 2f41426003fcf3b6afe14d24cf7176fa4668ad44
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 30a3730bcb2d4f41df28c47fdb9ab35e9d012540
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289815"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47817164"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-in-us-government-preview"></a>Configurer un connecteur pour importer des données RH dans le secteur public américain (aperçu)
 
@@ -65,11 +65,11 @@ Le tableau suivant décrit chaque colonne du fichier CSV :
 |**Nom de colonne**|**Description**|
 |:-----|:-----|
 | **EmailAddress** <br/> |Spécifie l’adresse e-mail de l’employé qui a terminé.|
-| **TerminationDate** <br/> |Indique la date à laquelle l’emploi de la personne a été officiellement terminé au sein de votre organisation. Par exemple, il peut s’agir de la date à laquelle l’employé a donné son avis sur la cessation de son organisation. Cette date peut être différente de la date du dernier jour de travail de la personne. Vous devez utiliser le format de date suivant : `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , qui est le [format de date et d’heure ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
-|**LastWorkingDate**|Spécifie le dernier jour de travail de l’employé terminé. Vous devez utiliser le format de date suivant : `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , qui est le [format de date et d’heure ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
+| **TerminationDate** <br/> |Indique la date à laquelle l’emploi de la personne a été officiellement terminé au sein de votre organisation. Par exemple, il peut s’agir de la date à laquelle l’employé a donné son avis sur la cessation de son organisation. Cette date peut être différente de la date du dernier jour de travail de la personne. Utilisez le format de date suivant : `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , qui est le [format de date et d’heure ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
+|**LastWorkingDate**|Spécifie le dernier jour de travail de l’employé terminé. Utilisez le format de date suivant : `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , qui est le [format de date et d’heure ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
 |||
 
-Après avoir créé le fichier CSV avec les données RH requises, stockez-le sur le même système que le script exécuté à l’étape 4. Vous devez également mettre en œuvre une stratégie de mise à jour pour vous assurer que le fichier CSV contient toujours les informations les plus récentes, de sorte que les données de terminaison de l’employé les plus récentes soient téléchargées vers le Cloud Microsoft.
+Après avoir créé le fichier CSV avec les données RH requises, stockez-le sur le même système que le script exécuté à l’étape 4. N’oubliez pas d’implémenter une stratégie de mise à jour afin que le fichier CSV contienne toujours les informations les plus récentes. Cela garantit que tout ce que vous exécutez le script, les données de terminaison de l’employé les plus récentes sont téléchargées vers le Cloud Microsoft.
 
 ## <a name="step-3-create-the-hr-connector"></a>Étape 3 : créer le connecteur RH
 
@@ -139,11 +139,11 @@ La dernière étape de la configuration d’un connecteur RH consiste à exécut
 
    |**Paramètre**|**Description**
    |:-----|:-----|:-----|
-   |`tenantId`|Il s’agit de l’ID de votre organisation Microsoft 365 que vous avez obtenu à l’étape 1. Vous pouvez également obtenir l’ID de client de votre organisation sur le panneau de présentation dans le centre **d'** administration Azure ad. Il est utilisé pour identifier votre organisation.|
-   |`appId` |Il s’agit de l’ID de l’application Azure AD pour l’application que vous avez créée dans Azure AD à l’étape 1. Il est utilisé par Azure AD pour l’authentification lorsque le script tente d’accéder à votre organisation Microsoft 365. |
-   |`appSecret`|Il s’agit de la clé secrète de l’application Azure AD pour l’application que vous avez créée dans Azure AD à l’étape 1. Cela est également utilisé pour l’authentification.|
-   |`jobId`|Il s’agit de l’ID de travail pour le connecteur HR que vous avez créé à l’étape 3. Il est utilisé pour associer les données RH téléchargées vers le Cloud Microsoft avec le connecteur RH.|
-   |`csvFilePath`|Il s’agit du chemin d’accès au fichier CSV (stocké sur le même système que le script) que vous avez créé à l’étape 2. Essayez d’éviter les espaces dans le chemin d’accès du fichier ; Sinon, utilisez des guillemets simples.|
+   |`tenantId`|ID de votre organisation Microsoft 365 que vous avez obtenu à l’étape 1. Vous pouvez également obtenir l’ID de client de votre organisation sur le panneau de présentation dans le centre **d'** administration Azure ad. Il est utilisé pour identifier votre organisation.|
+   |`appId` |L’ID de l’application Azure AD pour l’application que vous avez créée dans Azure AD à l’étape 1. Il est utilisé par Azure AD pour l’authentification lorsque le script tente d’accéder à votre organisation Microsoft 365. |
+   |`appSecret`|La clé secrète de l’application Azure AD pour l’application que vous avez créée dans Azure AD à l’étape 1. Cela est également utilisé pour l’authentification.|
+   |`jobId`|ID de travail pour le connecteur HR que vous avez créé à l’étape 3. Il est utilisé pour associer les données RH téléchargées vers le Cloud Microsoft avec le connecteur RH.|
+   |`csvFilePath`|Chemin d’accès au fichier CSV (stocké sur le même système que le script) que vous avez créé à l’étape 2. Essayez d’éviter les espaces dans le chemin d’accès du fichier ; Sinon, utilisez des guillemets simples.|
    |||
    
    Voici un exemple de syntaxe pour le script du connecteur RH en utilisant les valeurs réelles de chaque paramètre :

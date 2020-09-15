@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment créer et exécuter une requête dans un jeu de réexamen afin d’organiser les données pour une révision plus efficace dans un cas avancé de découverte électronique.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 871630af4b8b19e5fad1a062129782e36b9706f5
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 508e8e9fdb4a558a998a33aa561dc3755edcc40d
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527434"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47816717"
 ---
 # <a name="query-the-data-in-a-review-set"></a>Interroger les données d’un jeu à réviser
 
@@ -30,7 +30,7 @@ Dans la plupart des cas, il est utile de pouvoir approfondir les données dans u
 
 ## <a name="creating-and-running-a-query-in-a-review-set"></a>Création et exécution d’une requête dans un jeu de révision
 
-Pour créer et exécuter une requête sur les documents d’un jeu à réviser, cliquez sur **Nouvelle requête** dans le jeu à réviser. Une fois que vous avez nommé votre requête et défini les conditions, cliquez sur **Enregistrer** pour enregistrer et exécuter la requête. Pour exécuter une requête qui a été précédemment enregistrée, cliquez sur une requête enregistrée.
+Pour créer et exécuter une requête sur les documents d’un jeu de révision, sélectionnez **nouvelle requête** dans l’ensemble de révision. Une fois que vous avez nommé votre requête et défini les conditions, sélectionnez **Enregistrer** pour enregistrer et exécuter la requête. Pour exécuter une requête qui a été précédemment enregistrée, sélectionnez une requête enregistrée.
 
 ![Examiner les requêtes Set](../media/AeDReviewSetQueries.png)
 
@@ -56,9 +56,9 @@ Il existe plusieurs types de cartes de condition :
 
 En plus des cartes de condition, vous pouvez utiliser un langage de requête de type KQL dans la carte de mots-clés pour créer votre requête. Le langage de requête pour les requêtes de jeu de révision prend en charge les opérateurs booléens standard, tels que **and**, **or**, **not**et **near**. Il prend également en charge un caractère générique ( ?) à un seul caractère et un caractère générique à caractères multiples (*).
 
-## <a name="using-filters"></a>Utilisation de filtres
+## <a name="filters"></a>Filtres
 
-Outre les requêtes que vous pouvez enregistrer, vous pouvez utiliser les filtres Set Set pour appliquer rapidement des conditions supplémentaires à une requête Set Review. Cela vous permet d’affiner davantage les résultats affichés par une requête de jeu à réviser.
+Outre les requêtes que vous pouvez enregistrer, vous pouvez utiliser les filtres Set Set pour appliquer rapidement des conditions supplémentaires à une requête Set Review. L’utilisation de filtres vous permet d’affiner les résultats affichés par une requête d’ensemble de révision.
 
 ![Vérifier les filtres Set](../media/AeDReviewSetFilters.png)
 

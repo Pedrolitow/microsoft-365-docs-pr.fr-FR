@@ -17,13 +17,13 @@ ms.custom:
 search.appverid:
 - MET150
 description: Trouvez des réponses aux questions fréquemment posées sur les achats en libre-service.
-ms.date: 08/12/2020
-ms.openlocfilehash: 78a7082a966a866f18ac2aa378198dbb33d8c158
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.date: 09/15/2020
+ms.openlocfilehash: 81143dfe3794bc4f42bea879905bf08750f498b4
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653700"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47816924"
 ---
 # <a name="self-service-purchase-faq"></a>FAQ sur les achats en libre-service
 
@@ -32,7 +32,7 @@ L’achat en libre-service permet aux utilisateurs de tester de nouvelles techno
 L’achat en libre-service est disponible pour Power Platform (Power BI, Power Apps et Power automate), Project et Visio.
 
 > [!NOTE]
-> L’achat en libre-service n’est pas disponible en Inde et n’est pas disponible pour les clients du secteur public ou de l’éducation.
+> L’achat en libre-service n’est pas disponible en Inde ou pour les clients du secteur public ou de l’éducation. Project et Visio ne sont pas disponibles pour les achats en libre-service au Brésil et en République démocratique du Congo.
 
 ## <a name="making-a-self-service-purchase"></a>Réalisation d’un achat en libre-service
 

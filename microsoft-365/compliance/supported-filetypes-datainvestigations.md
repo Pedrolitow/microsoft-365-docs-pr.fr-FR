@@ -14,61 +14,60 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
 description: Tableau répertoriant les types de fichiers pris en charge et les visiteurs dans lesquels ils peuvent être consultés pour les enquêtes de données (préversion).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 95af625ece261061d6f797b50a382b1905254326
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: dc4b8efb7c4212261e16f1e307c6ca05fea064ec
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357736"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47817137"
 ---
 # <a name="supported-file-types-in-data-investigations-preview"></a>Types de fichiers pris en charge dans les enquêtes de données (aperçu)
 
-Les enquêtes de données (aperçu) prennent en charge de nombreux types de fichiers de différentes manières, qui sont décrites dans le tableau suivant. Cette liste n’est pas finalisée, et nous allons ajouter de nouveaux types de fichiers lors de notre test de validation. Le tableau indique également si un type de fichier peut être affiché dans les visionneuses disponibles lorsque vous examinez les preuves.
+L’outil des enquêtes de données (aperçu) prend en charge de nombreux types de fichiers de différentes manières, décrits dans le tableau suivant. Cette liste n’est pas finalisée, et nous allons ajouter de nouveaux types de fichiers lors de notre test de validation. Le tableau indique également si un type de fichier peut être affiché dans les visionneuses disponibles lorsque vous examinez les preuves.
 
 | Type MIME | Classe file | Visionneuse Native | Visionneuse de texte | Visionneuse d’annotations | Extraction de conteneur | Extensions |
-| :- | :- | :- | :- | :- | :- | :- |
-| application/msword | Document | Oui | Oui | Oui | Non | . doc ;. dat |
-| application/pdf | Document | Oui | Oui | Oui | Non | .pdf |
-| application/format RTF | Document | Oui | Oui | Oui | Non | . rtf ;. équ |
-| application/vnd. MS-Excel | Document | Oui | Oui | Oui | Non | . xls ;. dat |
-| application/vnd. MS-Excel. Sheet. Binary. macroenabled. 12 | Productivité/format de document ouvert | Oui | Oui | Non | Non | . xlsb |
-| application/vnd. MS-Excel. Sheet. macroenabled. 12 | Document | Oui | Oui | Oui | Non | . xlsm |
-| application/vnd. MS-Excel. template. macroenabled. 12 | Productivité/format de document ouvert | Non | Oui | Non | Non | . xltm |
-| application/vnd. MS-Outlook | Productivité | Non | Non | Non | Non | . MSG |
-| application/vnd. MS-Outlook-PST | Productivité/collaboration | Non | Non | Non | Oui | . pst |
-| application/vnd. MS-PowerPoint | Document | Oui | Oui | Oui | Non | . ppt ;. pps ;. cafetière |
-| application/vnd.ms-word.document. macroenabled. 12 | Document | Oui | Oui | Oui | Non | .docm |
-| application/vnd. MS-Word. template. macroenabled. 12 | Document | Oui | Oui | Oui | Non | . dotm |
-| application/vnd. oasis. OpenDocument. Text | Document | Oui | Oui | Oui | Non | ODT  |
-| application/vnd.openxmlformats-officedocument.presentationml.presentation | Document | Oui | Oui | Oui | Non | .pptx |
-| application/vnd. openxmlformats-officedocument. PresentationML. slideshow | Productivité/format de document ouvert | Oui | Oui | Oui | Non | . ppsx |
-| application/vnd. openxmlformats-officedocument. PresentationML. Template | Document | Oui | Oui | Oui | Non | . potx |
-| application/vnd.openxmlformats-officedocument.spreadsheetml.sheet | Document | Oui | Oui | Oui | Non | . xlsx |
-| application/vnd. openxmlformats-officedocument. SpreadsheetML. Template | Document | Oui | Oui | Oui | Non | . xltx |
-| application/vnd.openxmlformats-officedocument.wordprocessingml.document | Document | Oui | Oui | Oui | Non | . docx |
-| application/vnd. openxmlformats-officedocument. WordprocessingML. Template | Document | Oui | Oui | Oui | Non | . dotx |
-| application/vnd. Visio | Document | Oui | Oui | Oui | Non | . VSD |
-| application/x-7z-compressé | Archive/conteneur | Non | Non | Non | Oui | .7z |
-| application/XHTML + XML | Document | Oui | Oui | Oui | Non | . XHTML |
-| application/XML | Document | Oui | Oui | Oui | Non | . Xml |
-| application/x-Msaccess | Document | Oui | Oui | Oui | Non | . mdb |
-| application/x-mspublisher | Document | Oui | Oui | Oui | Non | . pub |
-| application/x-rar-Compressed | Archive/conteneur | Non | Non | Non | Oui | . rar |
+|:------|:------|:------|:------|:------|:------|:------|
+|application/msword | Document | Oui | Oui | Oui | Non | . doc ;. dat |
+|application/pdf | Document | Oui | Oui | Oui | Non | .pdf |
+|application/format RTF | Document | Oui | Oui | Oui | Non | . rtf ;. doc |
+|application/vnd. MS-Excel | Document | Oui | Oui | Oui | Non | . xls ;. dat |
+|application/vnd. MS-Excel. Sheet. Binary. macroenabled. 12 | Productivité/format de document ouvert | Oui | Oui | Non | Non | . xlsb |
+|application/vnd. MS-Excel. Sheet. macroenabled. 12 | Document | Oui | Oui | Oui | Non | . xlsm |
+|application/vnd. MS-Excel. template. macroenabled. 12 | Productivité/format de document ouvert | Non | Oui | Non | Non | . xltm |
+|application/vnd. MS-Outlook | Productivité | Non | Non | Non | Non | . MSG |
+|application/vnd. MS-Outlook-PST | Productivité/collaboration | Non | Non | Non | Oui | . pst |
+|application/vnd. MS-PowerPoint | Document | Oui | Oui | Oui | Non | . ppt ;. pps ;. pot |
+|application/vnd.ms-word.document. macroenabled. 12 | Document | Oui | Oui | Oui | Non | .docm |
+|application/vnd. MS-Word. template. macroenabled. 12 | Document | Oui | Oui | Oui | Non | . dotm |
+|application/vnd. oasis. OpenDocument. Text | Document | Oui | Oui | Oui | Non | ODT  |
+|application/vnd.openxmlformats-officedocument.presentationml.presentation | Document | Oui | Oui | Oui | Non | .pptx |
+|application/vnd. openxmlformats-officedocument. PresentationML. slideshow | Productivité/format de document ouvert | Oui | Oui | Oui | Non | . ppsx |
+|application/vnd. openxmlformats-officedocument. PresentationML. Template | Document | Oui | Oui | Oui | Non | . potx |
+| apadsheetml. Sheet | Document | Oui | Oui | Oui | Non | . xlsx |
+|application/vnd. openxmlformats-officedocument. SpreadsheetML. Template | Document | Oui | Oui | Oui | Non | . xltx |
+|application/vnd.openxmlformats-officedocument.wordproessingml.document | Document | Oui | Oui | Oui | Non | . docx |
+|application/vnd. openxmlformats-officedocument. WordprocessingML. Template | Document | Oui | Oui | Oui | Non | . dotx |
+|application/vnd. Visio | Document | Oui | Oui | Oui | Non | . VSD |
+|application/x-7z-compressé | Archive/conteneur | Non | Non | Non | Oui | .7z |
+|application/XHTML + XML | Document | Oui | Oui | Oui | Non | . XHTML |
+|application/XML | Document | Oui | Oui | Oui | Non | . Xml |
+|application/x-Msaccess | Document | Oui | Oui | Oui | Non | . mdb |
+|application/x-mspublisher | Document | Oui | Oui | Oui | Non | . pub |
+|application/x-rar-Compressed | Archive/conteneur | Non | Non | Non | Oui | . rar |
 | application/code postal | Archive/conteneur | Non | Non | Non | Oui | .zip |
-| image/BMP | Image | Oui | Oui | Oui | Non | .bmp |
-| image/EMF | Image | Oui | Oui | Oui | Non | . EMF |
-| image/gif | Document | Oui | Oui | Oui | Non | .gif |
-| image/jpeg | Image | Oui | Oui | Oui | Non | . jpg ;. jpeg ;. dat ;. jpgt |
-| image/png | Image | Oui | Oui | Oui | Non | .png |
-| image/TIFF | Image | Oui | Oui | Oui | Non | . TIF |
-| image/vnd. dwg | Document | Oui | Oui | Oui | Non | . dwg ;. format |
-| image/WMF | Document | Oui | Oui | Oui | Non | . wmf |
+|image/BMP | Image | Oui | Oui | Oui | Non | .bmp |
+|image/EMF | Image | Oui | Oui | Oui | Non | . EMF |
+|image/gif | Document | Oui | Oui | Oui | Non | .gif |
+|image/jpeg | Image | Oui | Oui | Oui | Non | . jpg ;. jpeg ;. dat ;. jpgt |
+|image/png | Image | Oui | Oui | Oui | Non | .png |
+|image/TIFF | Image | Oui | Oui | Oui | Non | . TIF |
+|image/vnd. dwg | Document | Oui | Oui | Oui | Non | . dwg ;. DXF ; |
+|image/WMF | Document | Oui | Oui | Oui | Non | . wmf |
 | Message/RFC822 | Productivité/collaboration | Non | Non | Non | Non | .eml |
-| texte/CSV | Document | Oui | Oui | Oui | Non | . csv |
-| texte/html | Document | Oui | Oui | Oui | Non | . html ;. shtml ;. htm |
-| text/plain | Document | Oui | Oui | Oui | Non | . txt ;. css ;. con ;. pl ;. csv ;. dat |
-| Text/vCard-contact | Document | Oui | Oui | Oui | Non | . vcf |
+|texte/CSV | Document | Oui | Oui | Oui | Non | . csv |
+|texte/html | Document | Oui | Oui | Oui | Non | . html ;. shtml ;. htm |
+|text/plain | Document | Oui | Oui | Oui | Non | . txt ;. css ;. con ;. pl ;. csv ;. dat |
+|Text/vCard-contact | Document | Oui | Oui | Oui | Non | . vcf |
 ||||||||

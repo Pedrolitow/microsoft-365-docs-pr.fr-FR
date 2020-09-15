@@ -17,12 +17,12 @@ ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment identifier les différents types de conservation pouvant être placés sur une boîte aux lettres Exchange Online dans Microsoft 365.
-ms.openlocfilehash: 1cd947f70c57d453b038ac419abccde006f393ae
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: a76b02f6345421871c759e1b31bf19207b474e2a
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547452"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47816823"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Comment identifier le type de conservation placé sur une boîte aux lettres Exchange Online
 
@@ -40,11 +40,9 @@ Microsoft 365 offre plusieurs méthodes permettant à votre organisation d’emp
 
   Il existe deux types de stratégies de rétention Microsoft 365 pouvant être attribuées à des boîtes aux lettres.
 
-    - **Stratégies de rétention d’emplacement spécifiques :** Il s’agit de stratégies affectées aux emplacements de contenu d’utilisateurs spécifiques. Vous utilisez la cmdlet **Get-Mailbox** dans Exchange Online PowerShell pour obtenir des informations sur les stratégies de rétention affectées à des boîtes aux lettres spécifiques.
+    - **Stratégies de rétention d’emplacement spécifiques :** Il s’agit de stratégies affectées aux emplacements de contenu d’utilisateurs spécifiques. Vous utilisez la cmdlet **Get-Mailbox** dans Exchange Online PowerShell pour obtenir des informations sur les stratégies de rétention affectées à des boîtes aux lettres spécifiques. Pour plus d’informations sur ce type de stratégie de rétention, reportez-vous à la section [A Policy with specific inclusions or exclusions](create-retention-policies.md#a-policy-with-specific-inclusions-or-exclusions) dans la documentation de stratégie de rétention.
 
-    - **Stratégies de rétention à l’échelle de l’Organisation :** Il s’agit de stratégies affectées à tous les emplacements de contenu de votre organisation. Vous utilisez la cmdlet **Get-OrganizationConfig** dans Exchange Online PowerShell pour obtenir des informations sur les stratégies de rétention à l’échelle de l’organisation.
-    
-  Pour plus d’informations, reportez-vous [à la section application d’une stratégie de rétention à une organisation entière ou à des emplacements spécifiques](create-retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations) .
+    - **Stratégies de rétention à l’échelle de l’Organisation :** Il s’agit de stratégies affectées à tous les emplacements de contenu de votre organisation. Vous utilisez la cmdlet **Get-OrganizationConfig** dans Exchange Online PowerShell pour obtenir des informations sur les stratégies de rétention à l’échelle de l’organisation. Pour plus d’informations sur ce type de stratégie de rétention, reportez-vous à la section [une stratégie qui s’applique à tous les emplacements](create-retention-policies.md#a-policy-that-applies-to-entire-locations) de la documentation de stratégie de rétention.
 
 - **[Étiquettes de rétention microsoft 365](retention.md):** si un utilisateur applique une étiquette de rétention Microsoft 365 (une étiquette configurée pour conserver le contenu ou conserver et supprimer du contenu) pour *un* dossier ou un élément de sa boîte aux lettres, une conservation est placée sur la boîte aux lettres comme si elle était placée en conservation pour litige ou affectée à une stratégie de rétention Microsoft 365. Pour plus d’informations, consultez la section [identification des boîtes aux lettres en attente, car une étiquette de rétention a été appliquée à un dossier ou à une](#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item) section d’élément de cet article.
 

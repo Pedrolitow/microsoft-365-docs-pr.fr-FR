@@ -1,7 +1,7 @@
 ---
 title: Préparer votre environnement de laboratoire d’évaluation de la protection contre les menaces Microsoft
-description: Préparer la signature des parties prenantes, les délais, les considérations environnementales et l’ordre d’adoption lors de la configuration de votre environnement de laboratoire d’évaluation de la protection contre les menaces Microsoft
-keywords: Préparation de la version d’évaluation MTP, déploiement, préparation, partie prenante, chronologie, environnement, point de terminaison, serveur, gestion, adoption
+description: Préparation de la signature des parties prenantes, des délais, des considérations environnementales et de l’ordre d’adoption lors de la configuration de votre laboratoire d’évaluation ou de votre environnement pilote Microsoft Threat Protection
+keywords: Préparation de la version d’évaluation MTP, préparation du pilote MTP, préparation de l’exécution d’un projet pilote MTP, exécution d’un projet pilote MTP, déploiement, préparation, partie prenante, chronologie, environnement, point de terminaison, serveur, gestion, adoption
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -15,31 +15,31 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: ad2f34fbb94cafd22976c6ff7c75cdd254e913e3
-ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
+ms.openlocfilehash: a684f49ab8c70a19a17ff43195197677bccbf95b
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47650092"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47816768"
 ---
-# <a name="prepare-your-microsoft-threat-protection-trial-lab-environment"></a>Préparer votre environnement de laboratoire d’évaluation de la protection contre les menaces Microsoft
+# <a name="prepare-your-microsoft-threat-protection-trial-lab-or-pilot-environment"></a>Préparation de votre laboratoire d’évaluation ou de votre environnement pilote Microsoft Threat Protection
 
 **S’applique à :**
 - Protection Microsoft contre les menaces
 
-La création d’un environnement de laboratoire de test Microsoft Threat Protection et son déploiement est un processus en trois phases :
+La création d’un laboratoire de test Microsoft Threat Protection ou d’un environnement pilote et son déploiement est un processus en trois phases :
 
 <br>
 <table border="0" width="100%" align="center">
   <tr style="text-align:center;">
     <td align="center" style="width:25%; border:0;" bgcolor="#d5f5e3">
       <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval"> 
-        <img src="../../media/prepare.png" alt="Prepare your Microsoft Threat Protection trial lab environment" title="Préparer votre environnement de laboratoire d’évaluation de la protection contre les menaces Microsoft" />
+        <img src="../../media/prepare.png" alt="Prepare your Microsoft Threat Protection trial lab environment" title="Préparation de votre laboratoire d’évaluation ou de votre environnement pilote Microsoft Threat Protection" />
       <br/>Phase 1 : préparer </a><br>
     </td>
      <td align="center"  >
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/setup-mtpeval">
-        <img src="../../media/setup.png" alt="Set up your Microsoft Threat Protection trial lab environment" title="Configuration de votre environnement de laboratoire d’évaluation de la protection contre les menaces Microsoft" />
+        <img src="../../media/setup.png" alt="Set up your Microsoft Threat Protection trial lab environment" title="Configuration de votre laboratoire d’évaluation ou de votre environnement pilote Microsoft Threat Protection" />
       <br/>Phase 2 : configuration </a><br>
         </td>
     <td align="center">
@@ -64,13 +64,13 @@ La création d’un environnement de laboratoire de test Microsoft Threat Protec
 Vous êtes actuellement en phase de préparation.
 
 
-La préparation est essentielle à tout déploiement réussi. Cette section vous guide tout au long de ce que vous devez prendre en compte lors de la préparation de la création d’un environnement de laboratoire d’évaluation pour votre déploiement de la protection contre les menaces Microsoft.
+La préparation est essentielle à tout déploiement réussi. Cette section vous guidera tout au long de ce que vous devez prendre en compte lors de la préparation de la création d’un laboratoire d’évaluation ou d’un environnement pilote pour votre déploiement de la protection contre les menaces Microsoft.
 
 ## <a name="prerequisites"></a>Configuration requise
 Découvrez la gestion des licences, la configuration matérielle et logicielle requise, ainsi que d’autres paramètres de configuration pour mettre en service et utiliser la protection contre les menaces Microsoft. Voir la configuration minimale requise pour la [protection contre les menaces Microsoft](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites?view=o365-worldwide), [Microsoft Defender atp](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements), [Office 365 ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description), [Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites), [sécurité des applications Cloud Microsoft](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites).
 
 ## <a name="stakeholders-and-sign-off"></a>Parties prenantes et déconnexion
-La section suivante sert à identifier toutes les parties prenantes impliquées dans le projet et celles qui peuvent avoir besoin de se déconnecter, de vérifier ou de rester informées, même pour une évaluation ou une preuve de concept.
+La section suivante permet d’identifier toutes les parties prenantes impliquées dans le projet et qui peuvent avoir besoin de se déconnecter, de consulter ou de rester informées, qu’elles soient destinées à l’évaluation ou à l’exécution d’un projet pilote.
 
 >[!NOTE]
 >Toutes les organisations n’ont pas la maturité de l’organisation de sécurité pour avoir ces rôles. Dans ce cas, consultez votre équipe de direction sur la révision et l’approbation de responsabilités.
@@ -92,7 +92,7 @@ Ajoutez des parties prenantes dans le tableau ci-dessous selon les besoins de vo
 | Entrer le nom et l’adresse de messagerie | **Analyste** *de la sécurité un représentant de l’équipe Cdoc qui peut fournir des informations sur les fonctionnalités de détection, l’expérience utilisateur et l’utilité globale de cette modification du point de vue des opérations de sécurité.* | I      |
 
 ## <a name="prepare-your-azure-active-directory"></a>Préparation de votre Azure Active Directory
-Ignorez cette étape si vous avez déjà activé la synchronisation entre Active Directory et Azure Active Directory sur site. Consultez la documentation sur les meilleures pratiques existantes à partir d’Azure Active Directory. Les étapes suivantes sont optimisées pour évaluer la protection contre les menaces Microsoft.
+Ignorez cette étape si vous avez déjà activé la synchronisation entre Active Directory et Azure Active Directory sur site. Consultez la documentation sur les meilleures pratiques existantes à partir d’Azure Active Directory. Les étapes suivantes sont optimisées pour évaluer ou exécuter un projet pilote de protection Microsoft contre les menaces.
 
 1. Accédez au portail [Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade) > **Azure ad Connect**. 
 ![Image de la page du portail Azure Active Directory](../../media/mtp-eval-1.png) <br> 
@@ -122,7 +122,7 @@ Vous pouvez désormais [Ajouter des utilisateurs et des groupes à Active Direct
 
 
 ## <a name="configuration-order"></a>Ordre de configuration
-Le tableau ci-dessous indique l’ordre dans lequel Microsoft recommande de configurer les composants de protection contre les menaces Microsoft pour votre déploiement d’environnement de laboratoire d’évaluation.
+Le tableau ci-dessous indique l’ordre dans lequel Microsoft recommande de configurer les composants de protection contre les menaces Microsoft pour votre déploiement d’essai ou d’environnement pilote.
 
 | Composant                               | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Classement de la commande de configuration |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
@@ -132,5 +132,5 @@ Le tableau ci-dessous indique l’ordre dans lequel Microsoft recommande de conf
 |Microsoft Defender – Protection avancée contre les menaces | Les fonctionnalités de détection et de réponse des points de terminaison de Microsoft Defender – Protection avancée contre les menaces assurent des détections avancées des attaques en quasi temps réel et exploitables. Les analystes de la sécurité peuvent hiérarchiser efficacement les alertes, avoir une meilleure visibilité de l’ampleur d’une faille et prendre des mesures correctives pour remédier aux menaces. <br> [Pour en savoir plus.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)                                     |4                    |                                                                                                                                                                                                                                    
 
 ## <a name="next-step"></a>Étape suivante
-![Phase 2 : configuration](../../media/setup.png) <br>[Phase 2 : configuration](setup-mtpeval.md)<br> Configurer votre environnement de laboratoire d’évaluation de la protection contre les menaces Microsoft
+![Phase 2 : configuration](../../media/setup.png) <br>[Phase 2 : configuration](setup-mtpeval.md)<br> Configuration de votre laboratoire d’évaluation ou de votre environnement pilote Microsoft Threat Protection
 

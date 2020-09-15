@@ -7,22 +7,21 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
 description: Découvrez les méthodes permettant de passer en revue les données de vos preuves, telles que l’affichage dans un format natif, texte ou presque natif.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: f094718bd14ee86ff8fdae482e86c22ecfbdc483
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 9df5c1f0fd15cb320e8359d09ab39202700dbc4b
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034608"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47816727"
 ---
 # <a name="review-the-data-in-evidence"></a>Consulter les données dans des preuves
 
@@ -34,12 +33,12 @@ Pour regrouper des documents et obtenir de l’aide supplémentaire pour votre r
 
 ## <a name="view-documents-in-evidence"></a>Afficher les documents dans les preuves
 
-Les enquêtes de données (préversion) vous permettent d’afficher le contenu dans plusieurs visionneuses, chaque afficheur ayant un objectif différent. Ces utilisateurs sont les suivants :
+L’outil enquêtes sur les données (aperçu) vous permet d’afficher du contenu dans plusieurs visionneuses, chaque afficheur ayant un objectif différent. Ces utilisateurs sont les suivants :
 
 - Métadonnées de fichier
 - Affichage natif
 - Affichage de texte
-- Annoter l’affichage
+- Mode annotation
 
 Pour accéder à l’un de ces utilisateurs, il vous suffit de sélectionner un document dans un jeu de preuves.
 
@@ -60,7 +59,7 @@ La visionneuse Native affiche l’affichage le plus précis d’un document dans
 
 ## <a name="text-view"></a>Affichage de texte
 
-La visionneuse de texte fournit une vue du texte extrait d’un fichier. Elle ignore toutes les images incorporées et la mise en forme, mais cet affichage est très utile si vous essayez d’examiner et de comprendre rapidement le contenu d’un document. L’affichage de texte comprend également les fonctionnalités suivantes :
+La visionneuse de texte donne un aperçu du texte extrait d’un fichier. Elle ignore toutes les images incorporées et la mise en forme, mais cet affichage est utile si vous essayez d’examiner et de comprendre rapidement le contenu d’un document. L’affichage de texte inclut également les fonctionnalités suivantes :
 
   - Un compteur de ligne, qui facilite la référence à des parties spécifiques d’un document.
 
@@ -78,7 +77,7 @@ La visionneuse de texte fournit une vue du texte extrait d’un fichier. Elle ig
 ![Vue diff
 ](../media/Reviewimage5.png)
 
-## <a name="annotate-view"></a>Annoter l’affichage
+## <a name="annotate-view"></a>Mode annotation
 
 L’affichage Annoted propose des fonctionnalités qui vous permettent d’appliquer un balisage à un document pendant le processus de révision ; ces outils sont les suivants :
 
@@ -102,7 +101,7 @@ La vue Annoted fournit également les fonctionnalités de navigation suivantes 
 
 **Exemple d’affichage annoter**
 
-![Annoter l’affichage](../media/Reviewimage1.png)
+![Mode annotation](../media/Reviewimage1.png)
 
 > [!NOTE]
 > Les annotations sont appliquées à une copie du document qui a été ajouté à l’ensemble de preuves. Les documents d’origine dans le service actif ne sont pas annotés.
