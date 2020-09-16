@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 92d5d2840963ae00ae0f03e3359f287371f770ee
-ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
+ms.openlocfilehash: 9e92a0328d2e7fb9cfe7461241dd866081926876
+ms.sourcegitcommit: 62a8c226422eac9c085cc886b4836b037f95ef6d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47650300"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47825373"
 ---
 # <a name="advanced-hunting-apis"></a>API de chasse avancée
 
@@ -37,8 +37,10 @@ ms.locfileid: "47650300"
 ## <a name="limitations"></a>Limites
 1. Vous pouvez uniquement exécuter une requête sur les données des 30 derniers jours.
 2. Les résultats incluent un maximum de 100 000 lignes.
-3. Le nombre d’exécutions est limité par client : jusqu’à 15 appels par minute, 15 minutes d’exécution toutes les heures et 4 heures de temps d’exécution par jour.
+3. Le nombre d’exécutions est limité par client : jusqu’à 10 appels par minute, 10 minutes d’exécution toutes les heures et 4 heures de l’exécution quotidienne.
 4. Le temps d’exécution maximal d’une demande unique est de 10 minutes.
+5. 429 réponse représente la limite de quota atteinte en nombre de demandes ou par UC. Le corps de la réponse 429 indique également le moment où le quota est renouvelé. 
+
 
 ## <a name="permissions"></a>Autorisations
 L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur la façon de choisir des autorisations, consultez [la rubrique Access the Microsoft Threat Protection APIs](api-access.md)
