@@ -4,14 +4,15 @@ description: ''
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: de113fd61fbb8fabaea64d58525a2f8aca052e90
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 39209e81c380887d8a65e28f12ea00c6050e28fa
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289780"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950329"
 ---
 # <a name="support-for-microsoft-managed-desktop"></a>Prise en charge du bureau géré Microsoft
 

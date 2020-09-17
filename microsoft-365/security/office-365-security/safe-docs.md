@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Découvrez les documents sûrs dans Microsoft 365 E5 ou Microsoft 365 E5 sécurité.
-ms.openlocfilehash: cd689099fc6a6caa1e0e649c3f152f1de123bf12
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 8918c7da26a60c7cfd64b7148d0added82cc6642
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827468"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949453"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Documents approuvés dans Microsoft 365 E5
 
@@ -34,14 +34,16 @@ Documents approuvés est une fonctionnalité de Microsoft 365 E5 ou Microsoft 36
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
+- Pour plus d’informations sur 
+
 - Des autorisations doivent vous être attribuées avant de pouvoir effectuer les procédures de cette rubrique. Pour activer et configurer des documents approuvés, vous devez être membre des groupes de rôles gestion de l' **organisation** ou **administrateur de sécurité** . Pour des informations supplémentaires sur les groupes de rôles dans le Centre de sécurité et conformité, voir [Autorisations dans le Centre de sécurité et conformité](permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="how-does-microsoft-handle-your-data"></a>Comment Microsoft gère-t-il vos données ?
 
 Pour rester protégé, les documents fiables envoient des fichiers au Cloud de [protection avancée contre les menaces Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) pour analyse.
 
-- Vous [trouverez des](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy) informations détaillées sur la façon dont Microsoft Defender Advanced Threat Protection gère vos données.
-- Outre les instructions ci-dessus, les fichiers envoyés par des documents approuvés ne sont pas conservés dans Defender au-delà du temps nécessaire à l’analyse, ce qui correspond généralement à moins de 24 heures.
+- Vous trouverez [ici](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)des informations détaillées sur la façon dont Microsoft Defender Advanced Threat Protection gère vos données.
+- Outre les instructions ci-dessus, les fichiers envoyés par des documents approuvés ne sont pas conservés dans Defender au-delà du temps nécessaire à l’analyse, qui est généralement inférieur à 24 heures.
 
 ## <a name="use-the-security--compliance-center-to-configure-safe-documents"></a>Utiliser le centre de sécurité & conformité pour configurer des documents approuvés
 

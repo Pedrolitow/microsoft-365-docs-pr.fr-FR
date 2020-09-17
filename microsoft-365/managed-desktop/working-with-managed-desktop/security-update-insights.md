@@ -1,24 +1,25 @@
 ---
 title: Perspectives sur la mise à jour de sécurité Windows
 description: ''
-keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: ef2d5c897709e7f7d2484d032b7471031be77d74
-ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
+ms.openlocfilehash: 772d1d52e977a067ff9bc3517de9cb2ae6c8c9a3
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "42341258"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950366"
 ---
 # <a name="windows-security-update-insights"></a>Perspectives sur la mise à jour de sécurité Windows
 Cet affichage fournit une vue d’ensemble de l’état des mises à jour de sécurité pour vos appareils de bureau gérés par Microsoft. 
 
 Pour afficher les données d’utilisation, sélectionnez l’onglet <strong>mises à jour de sécurité Windows</strong> .
 
-![Volet mises à jour de sécurité Windows : graphiques à barres de l’état du périphérique et de la version de mise à jour dans la colonne de gauche, mise à jour de l’avancement du déploiement dans le temps dans le centre et pourcentage d’appareils actifs par groupe de déploiement, ainsi que le nombre de jours pris pour atteindre le déploiement de 95%. cible dans la colonne de droite.](../../media/update-insights.jpg)
+![Volet mises à jour de sécurité Windows : graphiques à barres de l’état du périphérique et de la version de mise à jour dans la colonne de gauche, mise à jour de l’avancement du déploiement dans le temps dans le centre et pourcentage d’appareils actifs par groupe de déploiement, ainsi que le nombre de jours pris pour atteindre la cible de déploiement de 95% dans la colonne de droite.](../../media/update-insights.jpg)
 
 ## <a name="device-status"></a>État de l’appareil
 

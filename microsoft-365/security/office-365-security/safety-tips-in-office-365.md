@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez comment EOP et Office 365 vous protègent contre le courrier indésirable, le hameçonnage et les programmes malveillants en ajoutant un Conseil de sécurité en haut des e-mails.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e13e9cce325dfd3f8312c1d68459ab3c423c1fbb
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: b4bcfd2bf05f2f5ae7a51fbc2488cb1aa6e7d2c9
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827480"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949631"
 ---
 # <a name="safety-tips-in-email-messages"></a>Conseils de sécurité dans les messages électroniques
 
@@ -38,12 +38,6 @@ Le Conseil de sécurité, un message codé en couleur, vous avertit des messages
     ![Capture d’écran illustrant un Conseil de sécurité rouge.](../../media/5078a0be-e556-44a1-b169-09d780d26898.png)
 
     Un Conseil de sécurité rouge dans un message électronique signifie que le message que vous avez reçu contient un message suspect, tel qu’une escroquerie de type hameçonnage. Nous vous recommandons de supprimer ce type de message électronique de votre boîte de réception sans l’ouvrir.
-
-- Courrier indésirable (Conseil de sécurité jaune).
-
-    ![Capture d’écran illustrant un Conseil de sécurité jaune.](../../media/793c9265-ea44-48fd-a98f-804fadd4163b.png)
-
-    Un Conseil de sécurité jaune dans un message électronique signifie que le message a été marqué comme courrier indésirable. Si vous ne reconnaissez pas et ne faites pas confiance à l’expéditeur du message, ne téléchargez pas de pièces jointes ou d’images et ne cliquez sur aucun lien dans le message. Dans Outlook sur le Web, vous pouvez cliquer sur **ce message n’est pas un courrier indésirable** dans la barre jaune d’un élément de courrier indésirable pour déplacer le message vers votre boîte de réception. Si le Conseil de sécurité jaune apparaît sur un message qui a été remis dans votre boîte de réception, c’est probablement parce que vous avez désactivé le mouvement du courrier indésirable dans votre dossier courrier indésirable.
 
 - Courrier fiable (Conseil de sécurité vert).
 

@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à utiliser le portail d’envoi du centre de sécurité & conformité pour envoyer des e-mails suspects, des courriers électroniques de hameçonnage suspects, du courrier indésirable et d’autres messages potentiellement nuisibles, des URL et des fichiers à Microsoft à des fins d’analyse.
-ms.openlocfilehash: 08d1633142bba7348cbc899f9cf9b2a1288c3743
-ms.sourcegitcommit: 916fa2dacbc13287b49823176375259d7af03f86
+ms.openlocfilehash: ef401f34bb0bc7a9a9718443101924ad09bca8a0
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47394734"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47947971"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Utilisez la soumission de l’administrateur pour soumettre des courriers indésirables, l’hameçonnage, des URL et des fichiers à Microsoft
 
@@ -78,7 +78,7 @@ Pour d’autres façons d’envoyer des messages électroniques, des URL et des 
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>Envoyer une URL suspecte à Microsoft
 
-1. Dans la section **type d’objet** , sélectionnez **URL**. Dans la zone qui s’affiche, entrez l’URL complète (par exemple, <https://www.fabrikam.com/marketing.html> ).
+1. Dans la section **type d’objet** , sélectionnez **URL**. Dans la zone qui s’affiche, entrez l’URL complète (par exemple, `https://www.fabrikam.com/marketing.html` ).
 
 2. Dans la section **raison de l’envoi** , sélectionnez l’une des options suivantes :
 
@@ -118,7 +118,7 @@ Pour modifier les critères de filtre, cliquez sur le bouton **ID de soumission*
 - **Subject/URL/nom de fichier**
 - **Soumis par**
 - **Type d’envoi**
-- **Status**
+- **État**
 
 ![Options de filtrage pour les soumissions d’administration](../../media/admin-submission-email-filter-options.png)
 

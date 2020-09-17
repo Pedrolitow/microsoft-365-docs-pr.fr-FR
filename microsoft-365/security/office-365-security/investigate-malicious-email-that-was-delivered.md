@@ -19,19 +19,19 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez comment utiliser les fonctionnalités d’analyse et de réponse aux menaces pour rechercher et examiner des courriers électroniques malveillants.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5026b69f356fad11a664900a3e316d9c1c976905
-ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
+ms.openlocfilehash: 91f16c3aa7ba98467c52fb25e0597f346a810003
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46845953"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949263"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-office-365"></a>Enquête sur le courrier électronique malveillant remis dans Office 365
 
 [Office 365 Advanced Threat Protection](office-365-atp.md) vous permet d’examiner les activités qui permettent de mettre en péril les personnes de votre organisation et de protéger votre organisation. Par exemple, si vous participez à l’équipe de sécurité de votre organisation, vous pouvez rechercher et enquêter sur les messages électroniques suspects qui ont été remis. Vous pouvez le faire à l’aide de l' [Explorateur de menaces (ou des détections en temps réel)](threat-explorer.md).
 
 > [!NOTE]
-> Accédez à l’article de correction [ici](https://docs.microsoft.com/microsoft-365/security/mtp/article-submission/remediate-malicious-email-delivered-office-365?view=o365-21vianet&branch=pr-en-us-4258).
+> Accédez à l’article de correction [ici](remediate-malicious-email-delivered-office-365.md).
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -61,7 +61,7 @@ Pour effectuer certaines actions, telles que l’affichage des en-têtes de mess
 > [!NOTE]
 > L' *Aperçu* est un rôle et non un groupe de rôles ; le rôle aperçu doit être ajouté à un groupe de rôles existant pour Office 365. Le rôle administrateur général est affecté au centre d’administration Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) ), et les rôles Administrateur de sécurité et lecteur de sécurité sont affectés dans le centre de sécurité & conformité ( [https://protection.office.com](https://protection.office.com) ). Pour en savoir plus sur les rôles et les autorisations, consultez [la rubrique autorisations dans le centre de sécurité & conformité](permissions-in-the-security-and-compliance-center.md).
 
-## <a name="find-and-delete-suspicious-email-that-was-delivered"></a>Rechercher et supprimer les e-mails suspects qui ont été remis
+## <a name="find-suspicious-email-that-was-delivered"></a>Détecter les e-mails suspects qui ont été remis
 
 L’Explorateur de menaces est un rapport puissant qui peut servir plusieurs objectifs, tels que la recherche et la suppression de messages, l’identification de l’adresse IP d’un expéditeur de courrier malveillant ou le démarrage d’un incident en vue d’une nouvelle enquête. La procédure suivante décrit l’utilisation de l’Explorateur pour rechercher et supprimer les messages malveillants des boîtes aux lettres du destinataire.
 
@@ -191,11 +191,11 @@ Emplacement de remise : affiche les résultats des stratégies et des détectio
 La **chronologie par courrier électronique** est un champ dans l’Explorateur de menaces qui facilite la chasse à votre équipe des opérations de sécurité. Lorsque plusieurs événements se produisent ou se ferment à la même heure dans un e-mail, ces événements apparaissent dans un affichage chronologie. Certains événements qui ont lieu après la livraison à la messagerie sont capturés dans la colonne **actions spéciales** . La combinaison des informations de la chronologie d’un message électronique avec toutes les actions spéciales effectuées après la livraison permet aux administrateurs de mieux comprendre les stratégies et la gestion des menaces (par exemple, l’endroit où le courrier a été acheminé et, dans certains cas, l’évaluation finale).
 
 > [!IMPORTANT]
-> Accédez à une rubrique de correction [ici](https://docs.microsoft.com/microsoft-365/security/mtp/article-submission/remediate-malicious-email-delivered-office-365?view=o365-worldwide).
+> Accédez à une rubrique de correction [ici](remediate-malicious-email-delivered-office-365.md).
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
-[Correction des courriers électroniques malveillants remis dans Office 365](https://docs.microsoft.com/microsoft-365/security/mtp/article-submission/remediate-malicious-email-delivered-office-365?view=o365-worldwide)
+[Correction des courriers électroniques malveillants remis dans Office 365](remediate-malicious-email-delivered-office-365.md)
 
 [Protection avancée contre les menaces dans Office 365](office-365-ti.md)
 

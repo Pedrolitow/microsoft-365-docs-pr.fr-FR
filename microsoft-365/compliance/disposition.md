@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Surveiller et gérer la suppression du contenu, que vous utilisiez une révision de disposition ou que le contenu soit automatiquement supprimé en fonction des paramètres que vous avez configurés.
-ms.openlocfilehash: 5751857f8b3bf0a7f63df73e9bfaa244897bf429
-ms.sourcegitcommit: 4ac96855d7c269a0055ca8943000b762a70ca4ba
+ms.openlocfilehash: 6789ab1abe54b76f22462a47326b07a213f19b0c
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47321993"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950388"
 ---
 # <a name="disposition-of-content"></a>Disposition de contenu
 
@@ -122,7 +122,7 @@ Le contenu en attente d’une révision de disposition est supprimé uniquement 
 > [!NOTE]
 > Le déploiement de la preuve de la suppression des enregistrements dans SharePoint et OneDrive est terminé.
 >
-> La preuve de la sortie des enregistrements dans Exchange vient de commencer à déployer. Une fois cette mise en œuvre terminée, nous mettrons à jour cette note.
+> Le déploiement de la preuve de la suppression des enregistrements dans Exchange est presque terminé lorsque nous supprimons cette note.
 
 Utilisez l’onglet **disposition** de la page **gestion des enregistrements** pour identifier les enregistrements qui sont désormais supprimés, automatiquement ou après une révision de destruction. Ces éléments affichent les **enregistrements supprimés** dans la colonne **type** . Par exemple :
 

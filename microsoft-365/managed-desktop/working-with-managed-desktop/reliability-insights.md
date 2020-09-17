@@ -1,17 +1,18 @@
 ---
 title: Informations de fiabilité
 description: ''
-keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: b7f56a64f1846676f458f7b3ddb210e84b9ca8f7
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 06e1446ca290439c9e6689f4461c825438cf6aaf
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085667"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950341"
 ---
 # <a name="reliability-insights"></a>Informations de fiabilité
 
@@ -33,7 +34,7 @@ La section des **problèmes principaux** explique en détail des problèmes dét
     - Erreurs critiques, qui se produisent lorsque Windows a rencontré un problème qu’il ne peut pas récupérer à partir de
 - Nombre d’appareils affectés par le même problème
 - Pourcentage d’appareils gérés que le nombre représente
-- Nombre total d’occurrences d’un problème spécifique
+- Nombre total d’occurrences du problème spécifique
 - Composant logiciel qui semble être à l’origine du problème
 - Catégorie du problème détecté :
     - Navigateur (Edge, chrome, IE)

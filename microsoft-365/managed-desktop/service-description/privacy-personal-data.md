@@ -10,12 +10,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: e7eb3eaa6961993f8c77645c8d6760e6701817e2
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 33a2bf0b85b9b8561a5dcf32eae6e4cd0cb53765
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547937"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950483"
 ---
 # <a name="privacy-and-personal-data"></a>Confidentialité et données personnelles
 
@@ -128,7 +128,7 @@ La section suivante explique comment Microsoft Managed Desktop aide les contrôl
 
 ### <a name="it-admin-contact-information"></a>Informations de contact de l’administrateur informatique
 
-Un administrateur client peut afficher, corriger et supprimer ses données personnelles directement dans la section contact d’administration du portail de bureau géré Microsoft.
+Un administrateur client peut afficher, corriger et supprimer ses propres données personnelles (telles que leurs propres coordonnées) directement dans la section contact d’administration du portail de bureau géré Microsoft.
 
 ### <a name="user-related-personal-data"></a>Données personnelles liées à l’utilisateur
 

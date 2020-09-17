@@ -21,12 +21,12 @@ ms.collection:
 - SPO_Content
 description: Vous pouvez utiliser la gestion des droits relatifs à l’information (IRM) pour contrôler et protéger les fichiers téléchargés à partir de listes ou de bibliothèques.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 11d12eda6f2cb8de5c94b6952a8a194b06471473
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: de0105bf61b4abbddd938a4ec7286c1919bf3985
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818473"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948482"
 ---
 # <a name="apply-information-rights-management-irm-to-a-list-or-library"></a>Appliquer la gestion des droits relatifs à l’information (IRM) à une liste ou une bibliothèque
 
@@ -70,10 +70,10 @@ Vous pouvez utiliser la gestion des droits relatifs à l’information (IRM) pou
 |:-----|:-----|
 |Autoriser les utilisateurs à imprimer des documents à partir de cette liste ou bibliothèque  <br/> |Activez la case à cocher **autoriser les utilisateurs à imprimer** .  <br/> |
 |Autorisez les utilisateurs disposant au moins de l’autorisation Afficher les éléments à exécuter du code incorporé ou des macros dans un document.  <br/> |Activez la case à cocher **autoriser les visualiseurs à exécuter le script et le lecteur d’écran pour fonctionner sur les documents téléchargés** .  <br/> Si vous sélectionnez cette option, les utilisateurs peuvent exécuter du code pour extraire le contenu d’un document.           |
-|Exiger que les personnes vérifient leurs informations d’identification à intervalles spécifiques.  <br/> Sélectionnez cette option si vous souhaitez restreindre l’accès au contenu à une période de temps spécifiée. Si vous sélectionnez cette option, les licences d’émission de personnes pour accéder au contenu expireront après le nombre de jours spécifié, et les personnes seront obligées de retourner au serveur pour vérifier leurs informations d’identification et télécharger une nouvelle copie.  <br/> |Activez la case à cocher les **utilisateurs doivent vérifier leurs informations d’identification à l’aide de cet intervalle (jours)** , puis spécifiez le nombre de jours pendant lesquels vous souhaitez que le document soit affichable.  <br/> |
+|Sélectionnez cette option si vous souhaitez restreindre l’accès au contenu à une période de temps spécifiée. Si vous sélectionnez cette option, les licences d’émission de personnes pour accéder au contenu expireront après le nombre de jours spécifié, et les personnes seront obligées de retourner au serveur pour vérifier leurs informations d’identification et télécharger une nouvelle copie.  <br/> |Activez la case à cocher **après le téléchargement, les droits d’accès au document expirent après ce nombre de jours (1-365)** , puis spécifiez le nombre de jours pendant lesquels vous souhaitez que le document soit visible.  <br/> |
 | Empêcher les utilisateurs de télécharger des documents qui ne prennent pas en charge IRM sur cette liste ou bibliothèque.  <br/>  Si vous sélectionnez cette option, les utilisateurs ne pourront pas télécharger les types de fichiers suivants :  <br/>  Types de fichiers qui n’ont pas de logiciels de protection IRM correspondant installés sur tous les serveurs Web frontaux.  <br/>  Types de fichiers que SharePoint Server 2010 ne peut pas déchiffrer.  <br/>  Types de fichiers protégés par IRM dans un autre programme  <br/> |Activez la case à cocher **ne pas autoriser les utilisateurs à télécharger des documents qui ne prennent pas en charge IRM** .  <br/> |
 |Supprimez les autorisations restreintes de cette liste ou bibliothèque à une date spécifique.  <br/> |Activez la case à cocher **arrêter de restreindre l’accès à la bibliothèque à** , puis sélectionnez la date de votre choix.  <br/> |
-|Contrôlez l’intervalle de mise en cache des informations d’identification pour le programme sous licence pour ouvrir le document.  <br/> |Dans l' **intervalle définir la protection de groupe et les informations d’identification**, entrez l’intervalle de mise en cache des informations d’identification en nombre de jours.  <br/> |
+|Contrôlez l’intervalle de mise en cache des informations d’identification pour le programme sous licence pour ouvrir le document.  <br/> |Activez la case à cocher les **utilisateurs doivent vérifier leurs informations d’identification à l’aide de cet intervalle (jours)** , puis entrez l’intervalle de mise en cache des informations d’identification en nombre de jours.  <br/> |
 |Autoriser la protection de groupe afin que les utilisateurs puissent partager avec les membres du même groupe.  <br/> |Sélectionnez **autoriser la protection du groupe**, puis entrez le nom du groupe pour le partage.  <br/> |
    
 8. Une fois que vous avez terminé de sélectionner les options souhaitées, cliquez sur **OK**.
@@ -138,7 +138,7 @@ Les types de restrictions appliquées à un fichier lorsqu’il est télécharg�
 |Gérer les autorisations, gérer le site Web  <br/> |**Contrôle total** (tel que défini par le programme client) : cette autorisation permet généralement à un utilisateur de lire, modifier, copier, enregistrer et modifier des autorisations de contenu géré par des droits.  <br/> |
 |Modifier des éléments, gérer des listes, ajouter et personnaliser des pages  <br/> |**Modifier**, **copier**et **Enregistrer**: un utilisateur peut imprimer un fichier uniquement si la case **à cocher Autoriser les utilisateurs à imprimer des documents** est activée sur la page Paramètres de gestion des droits relatifs à l’information pour la liste ou la bibliothèque.  <br/> |
 |Afficher les éléments  <br/> |**Lecture**: un utilisateur peut lire le document, mais ne peut pas copier ou modifier son contenu. Un utilisateur ne peut imprimer que si la case à cocher **autoriser les utilisateurs à imprimer des documents** est activée sur la page Paramètres de gestion des droits relatifs à l’information pour la liste ou la bibliothèque.  <br/> |
-|Autres  <br/> |Aucune autre autorisation ne correspond directement aux autorisations IRM.  <br/> |
+|Autre  <br/> |Aucune autre autorisation ne correspond directement aux autorisations IRM.  <br/> |
    
 Lorsque vous activez IRM pour une liste ou une bibliothèque dans SharePoint Server 2013, vous pouvez uniquement protéger les types de fichiers de cette liste ou bibliothèque pour lesquels un logiciel de protection est installé sur tous les serveurs Web frontaux. Un protecteur est un programme qui contrôle le chiffrement et le déchiffrement des fichiers gérés par des droits d’un format de fichier spécifique. SharePoint inclut des logiciels de protection pour les types de fichiers suivants :
   

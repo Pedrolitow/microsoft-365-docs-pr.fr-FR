@@ -24,24 +24,24 @@ f1.keywords:
 - NOCSH
 description: Commencez la planification de la mise à niveau à partir des serveurs et des applications clientes Office 2010, car la prise en charge se termine bientôt et les accords de support personnalisés ne sont pas disponibles.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0805434c9b3d43c4e3d6aa5fd77cdf60bc2339d0
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: da45f18c0cf39c06ea19dd348cbd77286152a885
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695912"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949525"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Ressources facilitant la mise à jour de vos clients et serveurs Office 2010
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-La fin du support est prise en charge par les **Office 2010 et Exchange 2010 le 13 octobre 2020**. 
+La fin du support est prise en charge par les **Office 2010 et Exchange 2010 le 13 octobre 2020**.
 
 La prise en charge de SharePoint 2010 et de Project Server 2010 se termine le **avril 13, 2021**.
 
-La planification de votre mise à jour est le moment idéal pour envisager la migration vers Microsoft 365. 
+La planification de votre mise à jour est le moment idéal pour envisager la migration vers Microsoft 365.
 
-- Microsoft 365 offre des services cloud pour les produits serveur Office 2010, tels qu’Exchange Server et SharePoint Server et des services tels que Teams et OneDrive Entreprise. 
+- Microsoft 365 offre des services cloud pour les produits serveur Office 2010, tels qu’Exchange Server et SharePoint Server et des services tels que Teams et OneDrive Entreprise.
 
 - Les applications Microsoft 365 pour les entreprises (précédemment nommé Office 365 ProPlus), incluses dans Microsoft 365 E3 et E5, sont les applications clientes Office que vous installez sur votre appareil local. Ils sont mis à jour de façon régulière avec de nouvelles fonctionnalités de productivité et de sécurité issues du cloud Microsoft.
 
@@ -51,18 +51,18 @@ Pour consulter une synthèse visuelle des options de mise à jour, de migration 
 
 Cette affiche d’une page est un moyen rapide pour connaître les différents chemins que vous pouvez prendre pour empêcher les produits client et serveur Office 2010 et Windows 7 d’arriver à la fin de la prise en charge, avec les chemins d’accès et la prise en charge des options préférés dans Microsoft 365 Entreprise mis en surbrillance.
 
-Vous pouvez également [télécharger](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) cette affiche et l’imprimer au format lettre, légal ou tabloïd (11 x 17).
-      
+Vous pouvez également [télécharger](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Office2010Windows7EndOfSupport.pdf) cette affiche et l’imprimer au format lettre, légal ou tabloïd (11 x 17).
+
 ## <a name="office-2010-client-and-server-upgrade-planning"></a>Planning de mise à jour d'Office 2010 client et serveur
-  
-|**Pour ce produit**|**À la date de fin de la prise en charge**|**Voir cette ressource**|
-|:-----|:-----|:-----|
-|Office 2010 (y compris Word 2010, Excel 2010, PowerPoint 2010 et Outlook 2010)  <br/> | 13 octobre 2020 |[Feuille de route pour la fin de la prise en charge d’Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap) <br/> |
-|Exchange Server 2010  <br/> | 13 octobre 2020  |[Feuille de route pour la fin de la prise en charge d'Exchange 2010](exchange-2010-end-of-support.md) <br/> |
-|SharePoint Server 2010 ou SharePoint Serverˆ2010  <br/> | 13 avril 2021 |[Mise à jour à jour de SharePoint 2010](upgrade-from-sharepoint-2010.md) <br/> |
-|Project Server 2010 <br/> | 13 avril 2021 | [Feuille de route pour la fin de la prise en charge de Project Server 2010](project-server-2010-end-of-support.md) <br/> |
-|Lync Server 2010 <br/> | 13 avril 2021 | [Planifiez la mise à jour vers Skype Entreprise Server](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade) <br/> |
-    
+
+|Pour ce produit|À la date de fin de la prise en charge|Voir cette ressource|
+|---|---|---|
+|Office 2010 (y compris Word 2010, Excel 2010, PowerPoint 2010 et Outlook 2010)|13 octobre 2020 |[Feuille de route pour la fin de la prise en charge d’Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)|
+|Exchange Server 2010|13 octobre 2020|[Feuille de route pour la fin de la prise en charge d'Exchange 2010](exchange-2010-end-of-support.md)|
+|SharePoint Server 2010 ou SharePoint Serverˆ2010|13 avril 2021|[Mise à jour à jour de SharePoint 2010](upgrade-from-sharepoint-2010.md)|
+|Project Server 2010|13 avril 2021|[Feuille de route pour la fin de la prise en charge de Project Server 2010](project-server-2010-end-of-support.md)|
+|Lync Server 2010|13 avril 2021|[Planifiez la mise à jour vers Skype Entreprise Server](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade)|
+
 ## <a name="im-a-home-user-what-do-i-do"></a>Je suis un particulier. Que dois-je faire ?
 
 Si vous utilisez les produits et applications Office 2010 à domicile, voir [ces informations](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do).
@@ -70,8 +70,7 @@ Si vous utilisez les produits et applications Office 2010 à domicile, voir [ce
 ## <a name="related-topics"></a>Voir aussi
 
 [Vidéo : qu’est-ce que Microsoft 365 ?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
-  
+
 [Politique de cycle de vie Microsoft](https://go.microsoft.com/fwlink/?linkid=865200)
 
 [Planifiez votre mise à jour des serveurs et clients Office 2007 et Office 2010](plan-upgrade-previous-versions-office.md)
-

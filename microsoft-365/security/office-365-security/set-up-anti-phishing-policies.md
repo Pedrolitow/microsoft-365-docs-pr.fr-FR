@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur les stratégies anti-hameçonnage disponibles dans Exchange Online Protection (EOP) et Office 365 Advanced Threat Protection (Office 365 ATP).
-ms.openlocfilehash: a68baf8f2598b8ca0cd13e45d18919ecfdccdacc
-ms.sourcegitcommit: 294a51ef0ff48dddb659c602e047d7fd98f91172
+ms.openlocfilehash: 06307efdc1df03d918e7f0b48c42f6e8ecb1dd79
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47407927"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950603"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Stratégies anti-hameçonnage dans Microsoft 365
 
@@ -188,6 +188,9 @@ Les paramètres d’emprunt d’identité suivants sont disponibles uniquement d
   - **Utilisateurs empruntés**: l’adresse de l’utilisateur contient un utilisateur protégé.
   - **Domaines empruntés**: l’adresse de provenance contient un domaine protégé.
   - **Caractères inhabituels**: l’adresse de l’expéditeur contient des jeux de caractères inhabituels (par exemple, des symboles mathématiques, du texte ou une combinaison de majuscules et minuscules) dans un expéditeur ou un domaine protégé.
+
+  > [!NOTE]
+  > Même lorsque les conseils de sécurité pour l’emprunt d’identité sont désactivés, vous pouvez utiliser une règle de flux de messagerie (également appelée règle de transport) pour ajouter un en-tête de message nommé **X-MS-Exchange-EnableFirstContactSafetyTip** aux messages. Des conseils de sécurité spécifiques seront affichés pour avertir les destinataires qu’ils ne reçoivent pas de courrier électronique de l’expéditeur ou dans les cas où le destinataire reçoit un message électronique pour la première fois de l’expéditeur.
 
 - **Intelligence des boîtes aux lettres**: active ou désactive l’intelligence artificielle (ai) qui détermine les modèles de courrier des utilisateurs avec leurs contacts fréquents. Ce paramètre permet à l’AI de faire la distinction entre les messages légitimes et falsifiés de ces contacts. La boîte aux lettres n’est disponible que pour les boîtes aux lettres Exchange Online.
 

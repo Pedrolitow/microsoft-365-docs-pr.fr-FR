@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment configurer une liste d’URL bloquées pour votre organisation à l’aide d’Office 365 Advanced Threat Protection.
-ms.openlocfilehash: 5f863a3ba61278d0bec5304034ed75d343f93c77
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: f66d447b980cae4a4afbb706f26659c5976bdf37
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656646"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948089"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-atp-safe-links"></a>Configurer une liste d’URL bloquées personnalisée à l’aide de liens fiables ATP
 
@@ -47,7 +47,7 @@ Pour modifier (ou définir) des stratégies ATP, vous devez disposer de l’un d
 
 ****
 
-|Role|WHERE/How Assigned|
+|Rôle|WHERE/How Assigned|
 |---|---|
 |administrateur général|La personne qui s’inscrit pour acheter Microsoft 365 est un administrateur global par défaut. (Pour en savoir plus, consultez la rubrique [à propos des rôles d’administrateur Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .)|
 |Administrateur de sécurité|Centre d’administration Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
@@ -85,14 +85,14 @@ Lorsque vous ajoutez des URL à votre liste, gardez les points suivants à l’e
 
 |Exemple d’entrée|Ce qu’il fait|
 |---|---|
-|`contoso.com` ou `*contoso.com*`|Bloque le domaine, les sous-domaines et les chemins d’accès, par exemple, `https://www.contoso.com` `https://sub.contoso.com` et`https://contoso.com/abc`|
-|`https://contoso.com/a`|Bloque un site, mais pas les sous- `https://contoso.com/a` chemins supplémentaires comme`https://contoso.com/a/b`|
-|`https://contoso.com/a*`|Bloque un site `https://contoso.com/a` et des sous-chemins supplémentaires comme`https://contoso.com/a/b`|
+|`contoso.com` ou `*contoso.com*`|Bloque le domaine, les sous-domaines et les chemins d’accès, par exemple, `https://www.contoso.com` `https://sub.contoso.com` et `https://contoso.com/abc`|
+|`https://contoso.com/a`|Bloque un site, mais pas les sous- `https://contoso.com/a` chemins supplémentaires comme `https://contoso.com/a/b`|
+|`https://contoso.com/a*`|Bloque un site `https://contoso.com/a` et des sous-chemins supplémentaires comme `https://contoso.com/a/b`|
 |`https://toys.contoso.com*`|Bloque un sous-domaine (« jouets » dans ce cas) tout en permettant de cliquer sur d’autres URL de domaine (par exemple `https://contoso.com` `https://home.contoso.com` , ou).|
 |
 
 > [!NOTE]
-> Par défaut, vous pouvez uniquement ajouter 500 URL à la liste d’URL bloquées dans la stratégie par défaut des liens approuvés Office 365 ATP.
+> Par défaut, vous pouvez uniquement ajouter 500 URL à la liste d’URL bloquées dans la stratégie par défaut des liens approuvés Office 365 ATP. Une URL individuelle ne peut pas dépasser 128 caractères. La liste des URL bloquées entière ne peut pas dépasser 10 000 caractères.
 
 ## <a name="how-to-define-exceptions-for-certain-users-in-an-organization"></a>Procédure de définition des exceptions pour certains utilisateurs d’une organisation
 

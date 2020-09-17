@@ -15,15 +15,15 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 08/27/2020
+ms.date: 09/10/2020
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
-ms.openlocfilehash: 2e6638480ec3a687b1bed9f2a176b6bf21278ef2
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 1aa5d2b59bf1f07c0a74ee7381cbefdb2b5c7506
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308378"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949419"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Nouveautés d’Office 365 - Protection avancée contre les menaces
 
@@ -40,29 +40,29 @@ Cet article répertorie les nouvelles fonctionnalités de la dernière version d
 
 - [Vérifier vos stratégies à l’aide de Configuration Analyzer](configuration-analyzer-for-security-policies.md)
 - [Remplacer manuellement les verdicts de filtre à l’aide de la liste d’autorisation/de blocage de client](tenant-allow-block-list.md)
-- [Fonctionnalités étendues dans l’Explorateur de menaces, y compris les utilisateurs ciblés principaux, les règles de transport et les connecteurs](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections)
+- [Fonctionnalités étendues dans l’Explorateur de menaces, y compris les utilisateurs ciblés principaux, les règles de transport et les connecteurs](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (Plan Office 365 ATP 2)
 - Le surfaçage remplace les informations dans l' [Explorateur de menaces](threat-explorer.md) (le courrier électronique a été autorisé/bloqué par le client/stratégie utilisateur)
-- Exposition des menaces d’URL dans l' [Explorateur de menaces](threat-explorer.md) (programmes malveillants, hameçons, courrier indésirable ou aucun)
+- Exposition des menaces d’URL dans l' [Explorateur de menaces](threat-explorer.md) (programmes malveillants, hameçons, courrier indésirable ou aucun) 
 
 ## <a name="julyaugust-2020"></a>Juillet/août 2020 
 
-- [Améliorations de l’expérience de la chasse](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)
-- [Appliquer facilement les paramètres recommandés à l’aide de stratégies de sécurité prédéfinies](preset-security-policies.md)
+- [Améliorations de l’expérience de la chasse](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections) (plan 1 Office 365 DAV ou plan 2)
+- [Appliquer facilement les paramètres recommandés à l’aide de stratégies de sécurité prédéfinies](preset-security-policies.md) 
 
 ## <a name="marchapril-2020"></a>Mars/avril 2020
 
-- La possibilité d' [adresser des comptes d’utilisateurs compromis avec une enquête et une réponse automatisée](https://docs.microsoft.com/microsoft-365/security/office-365-security/address-compromised-users-quickly?view=o365-worldwide) est désormais généralement disponible.
+- La possibilité d' [adresser des comptes d’utilisateurs compromis avec une enquête et une réponse automatisée](https://docs.microsoft.com/microsoft-365/security/office-365-security/address-compromised-users-quickly?view=o365-worldwide) est désormais généralement disponible. (Plan 2 de la protection avancée contre les menaces Office 365)
 
 ## <a name="januaryfebruary-2020"></a>Janvier/février 2020
 
-- [Disponibilité générale des vues de campagne dans Office 365 DAV](campaigns.md)
-- Améliorations apportées à l' [Explorateur de menaces](threat-explorer.md) pour permettre aux équipes des opérations de sécurité d’effectuer des recherches et des filtres sur plusieurs champs lors de l’enquête sur le [courrier électronique](investigate-malicious-email-that-was-delivered.md):
+- [Disponibilité générale des affichages de campagne dans office 365 ATP](campaigns.md) (Plan Office 365 ATP 2)
+- Améliorations apportées à l' [Explorateur de menaces](threat-explorer.md) pour permettre aux équipes des opérations de sécurité d’effectuer des recherches et des filtres sur plusieurs champs lors d’une enquête sur le [courrier électronique](investigate-malicious-email-that-was-delivered.md): (plan 2 Office 365 ATP)
     - Emplacement de remise et actions spéciales
     - Direction (entrant, sortant ou intra-org)
     - Options non Filter avancé (il s’agit d’options de filtrage avancées qui incluent ne pas inclure, pas, etc.)
     - Filtres de temps granulaire (jour, heure, demi-heure) 
 
-- Le widget **incidents** est maintenant le widget **Centre de notifications** . (Pour afficher vos widgets de sécurité, dans le centre de sécurité & conformité, accédez à **gestion**  >  des menaces **Révision**.)
+- Le widget **incidents** est maintenant le widget **Centre de notifications** . (Pour afficher vos widgets de sécurité, dans le centre de sécurité & conformité, accédez à **gestion**  >  des menaces **Révision**.) (Plan 2 de la protection avancée contre les menaces Office 365)
 
 - [Documents approuvés dans Microsoft 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) **(version d’évaluation)**
 
@@ -70,7 +70,7 @@ Cet article répertorie les nouvelles fonctionnalités de la dernière version d
 
 - [Exporter l’URL cliquez sur données pour une analyse hors ligne](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (plan 1 Office 365 DAV ou plan 2)
 
-- [Utiliser les vues de campagne dans Office 365 ATP (**Aperçu**)](campaigns.md)
+- [Utiliser les vues de campagne dans office 365 DAV (version d'**évaluation**)](campaigns.md) (plan de l’ATP 2 Office 365)
 
 ## <a name="november-2019"></a>Novembre 2019
 
@@ -84,7 +84,7 @@ Cet article répertorie les nouvelles fonctionnalités de la dernière version d
 
 - [Afficher les en-têtes des messages électroniques et télécharger le corps du courrier](investigate-malicious-email-that-was-delivered.md) (plan 1 de l’ATP Office 365 ou plan 2)
 
-## <a name="august-2019"></a>Août 2019
+## <a name="august-2019"></a>Août 2019
 
 - [Affichage de la chronologie de l’e-mail](investigate-malicious-email-that-was-delivered.md#view-the-timeline-of-your-email) (plan 1 Office 365 DAV ou plan 2)
 

@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: .
-ms.openlocfilehash: 7cb2ab9c6987900f2b53a17c3eda49001bca4d84
-ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
+ms.openlocfilehash: 727f14e8158f7e024b6029231fed18adb2d56a62
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46898051"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949684"
 ---
 # <a name="configuring-external-email-forwarding-in-office-365"></a>Configuration du transfert de messages électroniques externes dans Office 365
 
@@ -31,7 +31,10 @@ Le transfert externe est contrôlé par la *stratégie anti-courrier indésirabl
 
 - **Off** : le transfert externe automatique est désactivé et entraîne une notification d’échec de remise à l’utilisateur final.
 
-Pour plus d’informations sur la configuration de ces paramètres, voir [configurer le filtrage du courrier indésirable sortant dans EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-the-outbound-spam-policy?view=o365-worldwide) .
+Pour plus d’informations sur la configuration de ces paramètres, voir [configurer le filtrage du courrier indésirable sortant dans EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-the-outbound-spam-policy?view=o365-worldwide&preserve-view=true) .
+
+> [!NOTE]
+> La désactivation du transfert automatique entraînera également la dsable des règles de boîte de réception qui redirigent les messages vers des adresses externes.
 
 ## <a name="controlling-external-email-forwarding"></a>Contrôle du transfert du courrier électronique externe
 
@@ -42,7 +45,7 @@ Office 365 n’autorise pas le transfert externe automatique par les règles de 
 > [!NOTE]
 > La désactivation du transfert automatique vers des adresses externes dans Office 365 est effectuée en phases avec des détails communiqués via des publications du [Centre de messages](https://admin.microsoft.com/Adminportal/Home?source=applauncher&ref=/MessageCenter) . Pour aider les administrateurs à se préparer à ces modifications, demandez-leur de modifier les stratégies à l’avance afin de s’assurer que les utilisateurs ne sont pas perturbés.
 
-Vous trouverez plus d’informations sur les utilisateurs qui utilisent le transfert automatique (règles de boîte de réception ou le transfert SMTP) dans votre organisation dans le [rapport de messages transférés automatiquement](https://docs.microsoft.com/microsoft-365/security/office-365-security/mfi-auto-forwarded-messages-report?view=o365-worldwide).
+Vous trouverez plus d’informations sur les utilisateurs qui utilisent le transfert automatique (règles de boîte de réception ou le transfert SMTP) dans votre organisation dans le [rapport de messages transférés automatiquement](https://docs.microsoft.com/microsoft-365/security/office-365-security/mfi-auto-forwarded-messages-report?view=o365-worldwide&preserve-view=true).
 
 ## <a name="how-does-this-policy-work-with-other-automatic-forwarding-controls"></a>Comment cette stratégie fonctionne-t-elle avec d’autres contrôles de transfert automatique ?
 

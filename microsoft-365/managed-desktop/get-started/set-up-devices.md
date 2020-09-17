@@ -1,19 +1,20 @@
 ---
 title: Configurer des appareils pour le bureau géré Microsoft
 description: ''
-keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 64a2936b5a2f9e670a3d89c50424ca0322e99c13
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 5efda6fe73dd5454c8b527b6ba63c9ae81951dd2
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085793"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950507"
 ---
-# <a name="set-up-microsoft-managed-desktop-devices"></a>Configurer des appareils de bureau géré Microsoft
+# <a name="set-up-microsoft-managed-desktop-devices"></a>Configurer les appareils Bureau géré Microsoft
 
 Vous pouvez utiliser les appareils nouveaux et existants dans le bureau géré Microsoft.
 
@@ -44,5 +45,5 @@ Nous vous recommandons de travailler avec l’un de nos partenaires d’appareil
 4. [Déployer le portail d’entreprise Intune](company-portal.md)
 5. [Activer Enterprise State Roaming](enterprise-state-roaming.md)
 6. Configurer des appareils (cette rubrique)
-7. [Préparer vos utilisateurs à l’utilisation des appareils](get-started-devices.md)
+7. [Préparer vos utilisateurs à l’utilisation les appareils](get-started-devices.md)
 8. [Déployer des applications](deploy-apps.md)

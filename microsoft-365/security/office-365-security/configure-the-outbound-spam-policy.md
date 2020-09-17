@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à afficher, créer, modifier et supprimer des stratégies de courrier indésirable sortant dans Exchange Online Protection (EOP).
-ms.openlocfilehash: 530c1af9b7802be6073f19331ce7f6a20bdb2668
-ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
+ms.openlocfilehash: ebeebe3486ad4dad926ad72509154904700e320a
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46845977"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949347"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Configurer le filtrage du courrier indésirable sortant dans EOP
 
@@ -168,7 +168,7 @@ La création d’une stratégie de courrier indésirable sortant personnalisé d
 
    Les valeurs disponibles sont :
 
-   - **Automatique-contrôlé par le système**: autorise le filtrage du courrier indésirable sortant à contrôler le transfert automatique du courrier électronique externe. Il s’agit de la valeur par défaut.
+   - **Automatique-contrôlé par le système**: autorise le filtrage du courrier indésirable sortant à contrôler le transfert automatique du courrier électronique externe. Ceci est la valeur par défaut.
 
    - **Activé**: le transfert automatique du courrier électronique externe n’est pas désactivé par la stratégie.
 
@@ -361,7 +361,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 Pour afficher les règles de filtrage de courrier indésirable sortant existantes, utilisez la syntaxe suivante :
 
 ```PowerShell
-Get-HostedOutboundSpamFilterRule [-Identity "<RuleIdentity>] [-State <Enabled | Disabled]
+Get-HostedOutboundSpamFilterRule [-Identity "<RuleIdentity>"] [-State <Enabled | Disabled>]
 ```
 
 Pour renvoyer une liste récapitulative de toutes les règles de filtrage du courrier indésirable sortant, exécutez la commande suivante :

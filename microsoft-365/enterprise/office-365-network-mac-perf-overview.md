@@ -1,5 +1,5 @@
 ---
-title: Recommandations relatives aux performances réseau dans le centre d’administration Microsoft 365 (version préliminaire)
+title: Connectivité réseau dans le centre d’administration Microsoft 365 (version d’évaluation)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -14,16 +14,16 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Vue d’ensemble de la connectivité réseau dans le centre d’administration Microsoft 365 (version d’évaluation)
-ms.openlocfilehash: 2f7e922f1e9abd68ebe51d26ef270760a7c446e2
-ms.sourcegitcommit: 22fd8517707ed3ab6ef996247ad2aa372535ee56
+ms.openlocfilehash: f8eff2248fb7abce75c27f227a2c5e7ec7219046
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46815242"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948414"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Connectivité réseau dans le centre d’administration Microsoft 365 (version d’évaluation)
 
-Le centre d’administration 365 de Microsoft includesaggregated les mesures de connectivité réseau collectées à partir de votre client Microsoft 365 et disponibles uniquement par les utilisateurs administratifs de votre client. Les **évaluations réseau** et les informations sur le **réseau** s’affichent dans le centre d’administration Microsoft 365 sous **intégrité | Connectivité**.
+Le centre d’administration Microsoft 365 inclut désormais des métriques de connectivité réseau regroupées collectées à partir de votre client Microsoft 365 et disponibles uniquement par les utilisateurs administratifs de votre client. Les **évaluations réseau** et les informations sur le **réseau** s’affichent dans le centre d’administration Microsoft 365 sous **intégrité | Connectivité**.
 
 ![Page des performances du réseau](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
 
@@ -35,9 +35,9 @@ Il existe trois options pour l’évaluation du réseau à partir de vos emplace
 
 ### <a name="1-enable-windows-location-services"></a>1. activer les services d’emplacement Windows
 
-Pour cette option, vous devez disposer d’au moins deux ordinateurs en cours d’exécution à chaque emplacement de bureau qui prennent en charge les conditions préalables. OneDrive pour Windows version 19,232 ou ultérieure doit être installé sur chaque ordinateur. Pour plus d’informations sur les versions de OneDrive, consultez les [notes de publication de onedrive](https://support.office.com/article/onedrive-release-notes-845dcf18-f921-435e-bf28-4e24b95e5fc0). Les mesures du réseau sont planifiées pour être ajoutées dans d’autres applications clientes Office 365 dans un futur proche.
+Pour cette option, vous devez disposer d’au moins deux ordinateurs en cours d’exécution à chaque emplacement de bureau qui prennent en charge les conditions préalables. OneDrive pour Windows version **19,232** ou ultérieure doit être installé sur chaque ordinateur. Pour plus d’informations sur les versions de OneDrive, consultez les [notes de publication de onedrive](https://support.office.com/article/onedrive-release-notes-845dcf18-f921-435e-bf28-4e24b95e5fc0). Les mesures du réseau sont planifiées pour être ajoutées dans d’autres applications clientes Office 365 dans un futur proche.
 
-Le service d’emplacement Windows doit être accepté sur les ordinateurs. Vous pouvez le tester en exécutant l’application **Maps** et en vous localisant. Il peut être activé sur un seul ordinateur avec l’emplacement de confidentialité des **paramètres**  ->  **Privacy**  ->  **Location** où le paramètre « autoriser les applications à accéder à votre emplacement » doit être activé. Le consentement des services d’emplacement Windows peut être déployé sur des PC à l’aide de MDM ou de la stratégie de groupe avec le paramètre _LetAppsAccessLocation_.
+Le service d’emplacement Windows doit être accepté sur les ordinateurs. Vous pouvez le tester en exécutant l’application **Maps** et en vous localisant. Il peut être activé sur un seul ordinateur avec les **paramètres | Confidentialité | Emplacement** où le paramètre _autoriser les applications à accéder à votre emplacement_ doit être activé. Le consentement des services d’emplacement Windows peut être déployé sur des PC à l’aide de MDM ou de la stratégie de groupe avec le paramètre _LetAppsAccessLocation_.
 
 Vous n’avez pas besoin d’ajouter des emplacements dans le centre d’administration avec cette méthode, car ils sont automatiquement identifiés à la résolution de la ville. Vous ne pouvez pas afficher plusieurs emplacements de bureau dans une ville à l’aide des services d’emplacement Windows.
 
@@ -47,7 +47,7 @@ Les exemples de mesures et les emplacements de bureau doivent commencer à appar
 
 ### <a name="2-add-locations-and-provide-lan-subnet-information"></a>2. ajouter des emplacements et fournir des informations de sous-réseau LAN
 
-Pour cette option, ni les services de localisation Windows ni le Wi-Fi ne sont requis. Vous avez besoin de OneDrive pour Windows version 20.161.0811.0001 ou une version ultérieure installée sur chaque commputer à l’emplacement.
+Pour cette option, ni les services de localisation Windows ni le Wi-Fi ne sont requis. Vous avez besoin de OneDrive pour Windows version 20,161 ou supérieure installé sur chaque ordinateur à l’emplacement.
 
 Vous devez également ajouter des emplacements dans la page connectivité réseau du centre d’administration ou pour les importer à partir d’un fichier CSV. Les emplacements ajoutés doivent inclure les informations de sous-réseau de votre réseau local Office.
 
@@ -118,14 +118,14 @@ L’onglet Détails de la page emplacement du Bureau affiche les résultats de m
 
 ## <a name="csv-import-for-lan-subnet-office-locations"></a>Importation CSV pour les emplacements de sous-réseau LAN
 
-Pour l’identification de sous-réseau local, vous devez ajouter chaque locaiton à l’avance. Au lieu d’ajouter des emplacements de bureau individuels dans l’onglet **emplacements** , vous pouvez les importer à partir d’un fichier CSV. Il se peut que vous puissiez obtenir ces données à partir d’autres emplacements que vous stockez, tels que le tableau de bord de qualité des appels ou les sites et services Active Directory.
+Pour l’identification de sous-réseau local, vous devez ajouter chaque emplacement à l’avance. Au lieu d’ajouter des emplacements de bureau individuels dans l’onglet **emplacements** , vous pouvez les importer à partir d’un fichier CSV. Il se peut que vous puissiez obtenir ces données à partir d’autres emplacements que vous stockez, tels que le tableau de bord de qualité des appels ou les sites et services Active Directory.
 
 Dans le fichier CSV, un emplacement de ville découvert est étiqueté **ville**, et un emplacement de bureau ajouté manuellement est **emplacement**.
 
 1. Dans la fenêtre principale _connectivité à Microsoft 365_ , cliquez sur l’onglet **emplacements** .
 1. Cliquez sur le bouton **Importer** situé au-dessus de la liste emplacements. Le menu volant **importer des emplacements de bureau** s’affiche.
 
-   ![Message d’erreur d’importation CSV](../media/m365-mac-perf/m365-mac-perf-import.png)
+   ![Message d’importation CSV](../media/m365-mac-perf/m365-mac-perf-import.png)
 
 1. Cliquez sur le lien **Télécharger les emplacements Office actifs (. csv)** pour exporter la liste des emplacements actuels vers un fichier CSV, puis enregistrez-le sur votre disque dur local. Vous obtiendrez un fichier CSV au format correct avec des en-têtes de colonne vers lesquels vous pouvez ajouter des emplacements. Vous pouvez laisser les emplacements exportés existants comme ils le sont ; elles ne sont pas dupliquées lorsque vous importez le fichier CSV mis à jour. Si vous souhaitez modifier l’adresse d’un emplacement existant, celle-ci est mise à jour lorsque vous importez le fichier CSV. Vous ne pouvez pas modifier l’adresse d’une ville découverte.
 1. Ouvrez le fichier CSV et ajoutez vos emplacements en remplissant les champs suivants sur une nouvelle ligne pour chaque emplacement que vous souhaitez ajouter. Laissez tous les autres champs vides ; les valeurs que vous entrez dans d’autres champs seront ignorées.
@@ -143,7 +143,7 @@ Dans le fichier CSV, un emplacement de ville découvert est étiqueté **ville**
 
    ![Message d’importation CSV prêt](../media/m365-mac-perf/m365-mac-perf-import-ready.png)
 
-## <a name="faq"></a>FAQ
+## <a name="faq"></a>Forum Aux Questions
 
 ### <a name="what-is-a-microsoft-365-service-front-door"></a>Qu’est-ce qu’une porte d’accès avant du service Microsoft 365 ?
 
@@ -160,7 +160,7 @@ Une porte de service frontale Microsoft 365 optimale est celle qui est la plus p
 
 L’emplacement de sortie Internet est l’emplacement où votre trafic réseau quitte votre réseau d’entreprise et se connecte à Internet. Elle est également identifiée comme l’emplacement où vous avez un périphérique de traduction d’adresses réseau (NAT) et généralement l’endroit où vous vous connectez avec un fournisseur de services Internet (ISP). Si vous voyez une longue distance entre votre emplacement et votre emplacement Internet sortant, cela peut indiquer une sorte de trajet WAN important.
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Informations sur le réseau Microsoft 365 (aperçu)](office-365-network-mac-perf-insights.md)
 
@@ -169,3 +169,5 @@ L’emplacement de sortie Internet est l’emplacement où votre trafic réseau 
 [Test de connectivité Microsoft 365 dans le centre d’administration M365 (aperçu)](office-365-network-mac-perf-onboarding-tool.md)
 
 [Services d’emplacement de connectivité réseau Microsoft 365 (aperçu)](office-365-network-mac-location-services.md)
+
+[Outil de test de connectivité réseau Microsoft 365 (aperçu)](office-365-network-mac-perf-onboarding-tool.md)

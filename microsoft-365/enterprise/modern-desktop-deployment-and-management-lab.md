@@ -1,5 +1,5 @@
 ---
-title: Kit laboratoire de déploiement Windows et Office
+title: Kit de laboratoire de déploiement de Windows et d’Office
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -15,14 +15,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: En savoir plus sur le point et où pour accéder au Kit laboratoire de déploiement Windows et Office.
-ms.openlocfilehash: 751d2a04daa707049c59b9b7cabb18ca06a598d1
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 09441f879fa41d1b920aae7d37625d0a52160d84
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685497"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949879"
 ---
-# <a name="windows-and-office-deployment-lab-kit"></a>Kit laboratoire de déploiement Windows et Office
+# <a name="windows-and-office-deployment-lab-kit"></a>Kit de laboratoire de déploiement de Windows et d’Office
 
 Ces ateliers sont conçus pour vous aider à planifier, tester et valider votre déploiement et la gestion des ordinateurs exécutant Windows 10 Enterprise et Microsoft 365 apps pour les entreprises. Le centre d’aide à la recherche de Microsoft Endpoint Configuration Manager, de l’analyse de bureau, de l’outil de personnalisation Office, de OneDrive, de Windows AutoPilot et bien plus encore.
 
@@ -32,7 +32,7 @@ Ce kit est fortement recommandé pour les organisations qui préparent les mises
 
 ## <a name="a-complete-lab-environment"></a>Un environnement de laboratoire complet
 
-Le laboratoire offre un environnement de laboratoire virtuel automatiquement configuré, constitué de clients de bureau associés au domaine, d’un contrôleur de domaine, d’une passerelle Internet et d’une instance Configuration Manager entièrement configurée. Le laboratoire comporte les versions d’évaluation les plus récentes des produits suivants :
+Le laboratoire offre un environnement de laboratoire virtuel automatiquement configuré, constitué de clients de bureau associés au domaine, d’un contrôleur de domaine, d’une passerelle Internet et d’une instance Configuration Manager entièrement configurée. L’atelier contient les versions d’évaluation les plus récentes des produits suivants :
 
   - NOUVEAUTÉ ! Windows 10 Entreprise, version 2004
   - Windows 7 Entreprise
@@ -53,70 +53,36 @@ ET le laboratoire est conçu pour être connecté aux versions d’évaluation p
 
 Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de déploiement et de gestion. Les laboratoires ont été mis à jour pour les dernières versions d’Intune et de Configuration Manager. 
 
-### <a name="device-and-app-readiness"></a>Préparation des applications et des appareils
+### <a name="plan-and-prepare-infrastructure"></a>Planifier et préparer l’infrastructure 
+Analyses du bureau   
+Passerelle de gestion du Cloud & point de distribution dans le Cloud rattachement, co-gestion et basculement des charges de travail    
+Accès à distance
 
-  - Analyses du bureau
-  - Déployer et mettre à jour le nouveau Microsoft Edge 
-  - Installer et configurer la passerelle de gestion Cloud (CMG) 
-  - Mode Internet Explorer 
-  - Application Guard 
+### <a name="prepare-configuration"></a>Préparation de la configuration   
+Optimiser Windows 10 Update Delivery Servicing Windows 10 using Group Policy Servicing Windows 10 using Microsoft Intune Servicing Windows 10 avec Configuration Manager Servicing Microsoft 365 Apps for Enterprise using Configuration Manager Servicing Microsoft 365 applications for Enterprise using Intune    
+Sécurité et conformité 
 
-### <a name="directory-and-network-readiness"></a>Préparation des répertoires et du réseau
+### <a name="prepare-applications"></a>Préparer les applications    
+Boîte à outils de préparation pour Office    
+Empaquetage et conversion MSIX d’applications Win32 
 
-  - Optimiser la remise des mises à jour Windows 10 
-  - Cogestion de Configuration Manager et de Microsoft Intune
-  - Accès distant (VPN)
+### <a name="deploy-windows-10"></a>Déployer Windows 10   
+Séquences de tâches de déploiement du système d’exploitation dans le gestionnaire de configuration des séquences de tâches de déploiement du système d’exploitation dans MDT Windows AutoPilot deploy and Manage the New Edge Microsoft    
 
-### <a name="office-and-lob-app-delivery"></a>Distribution d’Office et des applications métier
+### <a name="deploy-microsoft-365-apps-for-enterprise"></a>Déployer les Applications Microsoft 365 pour les grandes entreprises    
+Déploiement géré dans le Cloud    
+Déploiement géré localement  
+Applications Microsoft 365 pour le déploiement d’entreprise sur des appareils non liés à AD   
+Déploiement géré d’entreprise à l’aide de Configuration Manager Enterprise Managed Deployment Using Microsoft Intune    
+Gestion et déploiement métier avec Microsoft Intune déployer Microsoft teams
 
-  - Microsoft 365 Apps for enterprise
-  - Déploiement géré en entreprise à l’aide de Configuration Manager et de Microsoft Intune
-  - Gestion et déploiement de l’application à l’aide de Microsoft Intune
-  - Déploiement de l’application et installation en libre-service à l’aide de Microsoft Store pour Entreprises
-  - NOUVEAUTÉ ! Installer Microsoft Teams 
-
-### <a name="user-file-and-settings-migration"></a>Migration des paramètres et du fichier utilisateur
-
-  - Migration du fichier de dossier connu 
-  - Outil de migration de l’état utilisateur 
-  - Itinérance du statut Entreprise
-  - Personnalisation du menu Démarrer et suppression de l’application UWP 
-  - Virtualisation de l’expérience utilisateur (UE-V) 
-
-### <a name="security-and-compliance"></a>Sécurité et conformité
-
-  - Chiffrement de l’appareil BitLocker
-  - Antivirus Windows Defender
-  - Windows Hello Entreprise
-  - Conversion du BIOS vers l’UEFI
-  - Windows Defender Application Guard
-  - Windows Defender Exploit Guard
-  - Windows Defender Application Control
-  - Windows Defender Protection avancée contre les menaces
-  - NOUVEAUTÉ ! Sécurité de point de terminaison 
-
-### <a name="os-deployment-and-feature-updates"></a>Déploiement du système d’exploitation et mises à jour des fonctionnalités
-
-  - Création d’image du système d’exploitation
-  - Séquences de tâches de déploiement du système d’exploitation dans Configuration Manager 
-  - Séquences de tâches de déploiement du système d’exploitation dans MDT
-  - Windows Autopilot
-  - Approvisionnement de packages 
-
-### <a name="windows-and-office-as-a-service"></a>Windows et Office en tant que service
-  - Gérer les mises à jour Windows à l’aide d’une stratégie de groupe
-  - Maintenance de Windows 10 à l’aide de Configuration Manager et Intune
-  - Maintenance des Applications Microsoft 365 pour les grandes entreprises avec Configuration Manager
-  - NOUVEAUTÉ ! Mises à jour Office avec le Gestionnaire de configuration et Intune
-  
-### <a name="windows-virtual-desktop"></a>Windows Virtual Desktop
-  - Windows Virtual Desktop : préparer, déployer et optimiser 
-
+### <a name="deploy-windows-virtual-desktop"></a>Déployer Windows Virtual Desktop  
+ 
 ### <a name="download-the-windows-and-office-deployment-lab-kit"></a>Télécharger le Kit laboratoire de déploiement Windows et Office
 
 [Télécharger le Kit laboratoire de déploiement Windows et Office](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
-*Utilisez une large bande passante pour télécharger ce contenu afin d’améliorer votre expérience de téléchargement et de bénéficier d’un approvisionnement automatique de 30 à 45 minutes. L’environnement de laboratoire nécessite un minimum de 16 Go de mémoire disponible et de 150 Go d’espace disque libre. Pour des performances optimales, 32 Go de mémoire disponible sont recommandés. Le laboratoire arrivera à expiration le 12 septembre 2020. Une nouvelle version sera publiée avant l’expiration.*
+*Utilisez une large bande passante pour télécharger ce contenu afin d’améliorer votre expérience de téléchargement et d’autoriser 30-45 minutes pour la mise en service automatique. L’environnement de laboratoire nécessite au minimum 16 Go de mémoire disponible et 150 Go d’espace disque disponible. Pour des performances optimales, il est recommandé de disposer de 32 Go de mémoire disponible. L’atelier expire le 4 décembre 2020. Une nouvelle version sera publiée avant l’expiration.*
 
 ## <a name="additional-guidance"></a>Conseils supplémentaires
 
