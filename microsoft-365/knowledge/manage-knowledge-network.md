@@ -1,22 +1,22 @@
 ---
 title: 'Gérer votre réseau de gestion des connaissances (aperçu) '
 description: La configuration de la gestion des connaissances ;
-author: efrene
-ms.author: efrene
-manager: pamgreen
+ms.author: mikeplum
+author: MikePlumleyMSFT
+manager: serdars
 ms.date: 08/01/2020
 audience: admin
 ms.topic: article
-ms.service: ''
+ms.service: o365-administration
 search.appverid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: af53f4d563d286ad29138f935fbb69aa10b902ca
-ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
+ms.openlocfilehash: 3ca180dba82e677dbc0d9f112b713df14820ce61
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46612619"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950771"
 ---
 # <a name="manage-your-knowledge-management-network-preview"></a>Gérer votre réseau de gestion des connaissances (aperçu)
 
@@ -33,7 +33,7 @@ Par exemple, vous devrez peut-être ajuster vos paramètres pour l’un des él�
 - Modifier le nom de votre centre de rubrique
 
 
-## <a name="requirements"></a>Conditions préalables 
+## <a name="requirements"></a>Configuration requise 
 Vous devez disposer d’autorisations d’administrateur général ou d’administrateur SharePoint pour pouvoir accéder au centre d’administration Microsoft 365 et gérer les tâches des connaissances de l’organisation.
 
 

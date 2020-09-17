@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ae0105fd5eba134c7896daef34136748802e9010
-ms.sourcegitcommit: 916fa2dacbc13287b49823176375259d7af03f86
+ms.openlocfilehash: 47035b5c988dba551948334c0c93d08b779c0d38
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47394680"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950735"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>Repérage proactive de menaces avec repérage avancé dans la Protection Microsoft contre les menaces
 
@@ -32,14 +32,14 @@ ms.locfileid: "47394680"
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-Le repérage avancé est un outil de repérage de menaces basé sur des requêtes qui vous permet d’explorer jusqu’à 30 jours de données brutes. Vous pouvez inspecter de manière proactive les événements de votre réseau pour localiser les indicateurs et entités intéressants. L’accès flexible aux données facilite le repérage sans contrainte pour les menaces connues et potentielles.
+Le repérage avancé est un outil de repérage de menaces basé sur des requêtes qui vous permet d’explorer jusqu’à 30 jours de données brutes. Vous pouvez inspecter de manière proactive les événements de votre réseau afin de localiser les indicateurs de menace et les entités. L’accès flexible aux données permet une chasse libre aux menaces connues et potentielles.
 <p></p>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bp7O]
 
-Vous pouvez utiliser les mêmes requêtes de repérage de menaces pour créer des règles de détection personnalisées. Ces règles s’exécutent automatiquement pour rechercher et répondre aux différents événements et états système, y compris les activités suspectes de violation et les machines configurées incorrectement.
+Vous pouvez utiliser les mêmes requêtes de repérage de menaces pour créer des règles de détection personnalisées. Ces règles s’exécutent automatiquement pour vérifier, puis répondre à une activité de violation présumée, des ordinateurs mal configurés et d’autres résultats.
 
-Cette fonctionnalité est similaire à la [chasse avancée dans Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview), à la différence que la recherche avancée dans Microsoft Threat Protection (disponible dans le centre de sécurité Microsoft 365) prend en charge les requêtes qui examinent des données provenant de différents espaces de travail, notamment des données sur les appareils, les e-mails, les applications et les identités de Microsoft Defender ATP, Office 365 ATP, sécurité des applications Cloud Pour utiliser le repérage avancé, [activez Protection Microsoft contre les menaces](mtp-enable.md).
+Cette fonctionnalité est similaire à la [chasse avancée dans Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview). Disponible dans le centre de sécurité Microsoft 365, cette fonctionnalité prend en charge les requêtes qui vérifient un ensemble de données plus large à partir de Microsoft Defender ATP, Office 365 ATP, Microsoft Cloud App Security et Azure ATP. Pour utiliser le repérage avancé, [activez Protection Microsoft contre les menaces](mtp-enable.md).
 
 ## <a name="get-started-with-advanced-hunting"></a>Prise en main du repérage avancé
 
@@ -47,31 +47,30 @@ Nous vous recommandons de suivre plusieurs étapes pour devenir rapidement opér
 
 | Objectif d’apprentissage | Description | Ressource |
 |--|--|--|
-| **Prise en main du langage** | La chasse avancée est basée sur le [langage de requête Kusto](https://docs.microsoft.com/azure/kusto/query/), qui prend en charge les mêmes syntaxe et opérateurs. Commencez à découvrir le langage de requête en exécutant votre première requête. | [Vue d'ensemble du language de requête](advanced-hunting-query-language.md) |
+| **En savoir plus sur la langue** | La chasse avancée est basée sur le [langage de requête Kusto](https://docs.microsoft.com/azure/kusto/query/), qui prend en charge les mêmes syntaxe et opérateurs. Commencez à découvrir le langage de requête en exécutant votre première requête. | [Vue d'ensemble du language de requête](advanced-hunting-query-language.md) |
 | **En savoir plus sur l’utilisation des résultats de la requête** | Découvrez les graphiques et les différentes façons d’afficher ou d’exporter les résultats. Découvrez comment affiner rapidement les requêtes, extraire des informations plus riches et prendre des mesures de réponse. | - [Utiliser les résultats de la requête](advanced-hunting-query-results.md)<br>- [Effectuer une action sur les résultats de la requête](advanced-hunting-take-action.md) |
-| **Comprendre le schéma** | Obtenez une compréhension optimale des tableaux du schéma et de leurs colonnes. Cela vous permet de déterminer où rechercher des données et comment construire vos requêtes. | [Référence de schéma](advanced-hunting-schema-tables.md) |
-| **Utiliser les requêtes prédéfinies** | Explorez les collections de requêtes prédéfinies couvrant différents scénarios de repérage de menaces. | - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)<br>- [Aller-retour](advanced-hunting-go-hunt.md) |
-| **Optimiser les requêtes** | Découvrez comment créer des requêtes et des requêtes efficaces qui combinent des données provenant des e-mails et d’appareils. | - [Meilleures pratiques en matière de requêtes](advanced-hunting-best-practices.md) <br>- [Recherche sur les appareils et les e-mails](advanced-hunting-query-emails-devices.md) |
-| **Créer des règles de détection personnalisées** | Découvrez comment utiliser les requêtes de chasse avancées pour déclencher des alertes et appliquer les actions de réponse automatiquement. | - [Vue d’ensemble des détections personnalisées](custom-detections-overview.md)<br>- [Règles de détection personnalisées](custom-detection-rules.md) |
+| **Comprendre le schéma** | Obtenez une compréhension optimale des tableaux du schéma et de leurs colonnes. Découvrez où rechercher des données lors de la construction de vos requêtes. | [Référence de schéma](advanced-hunting-schema-tables.md) |
+| **Obtenir des conseils et des exemples d’experts** | Formation gratuite aux guides des experts Microsoft. Explorez les collections de requêtes prédéfinies couvrant différents scénarios de repérage de menaces. | - [Obtenir une formation expert](advanced-hunting-expert-training.md)<br>- [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)<br>- [Aller-retour](advanced-hunting-go-hunt.md)<br>- [Recherche de menaces sur les appareils, les e-mails, les applications et les identités](advanced-hunting-query-emails-devices.md) |
+| **Optimiser les requêtes et gérer les erreurs** | Découvrez comment créer des requêtes efficaces et sans erreur. | - [Meilleures pratiques en matière de requêtes](advanced-hunting-best-practices.md)<br>- [Gérer les erreurs](advanced-hunting-errors.md) |
+| **Créer des règles de détection personnalisées** | Découvrez comment utiliser les requêtes de chasse avancées pour déclencher des alertes et effectuer des actions de réponse automatiquement. | - [Vue d’ensemble des détections personnalisées](custom-detections-overview.md)<br>- [Règles de détection personnalisées](custom-detection-rules.md) |
 
 ## <a name="get-access"></a>Obtenir l’accès
-Pour utiliser la chasse avancée ou d’autres fonctionnalités de [protection contre les menaces Microsoft](microsoft-threat-protection.md) , vous devez disposer d’un rôle approprié dans Azure ad. Notez que votre accès aux données de point de terminaison est influencé par les paramètres de contrôle d’accès basé sur un rôle dans Microsoft Defender ATP. [En savoir plus sur la gestion de l’accès à Microsoft Threat Protection](mtp-permissions.md)
+Pour utiliser la chasse avancée ou d’autres fonctionnalités de [protection contre les menaces Microsoft](microsoft-threat-protection.md) , vous avez besoin d’un rôle approprié dans Azure Active Directory. De plus, votre accès aux données de point de terminaison est déterminé par les paramètres de contrôle d’accès basé sur un rôle (RBAC) dans Microsoft Defender ATP. [En savoir plus sur la gestion de l’accès à Microsoft Threat Protection](mtp-permissions.md)
 
 ## <a name="data-freshness-and-update-frequency"></a>Actualisation et fréquence de mise à jour des données
 Les données de chasse avancées peuvent être classées en deux types distincts, chacune étant consolidée différemment.
 
-- **Données d’événement ou d’activité** : renseigne des tableaux sur les alertes, les événements de sécurité, les événements système et les évaluations de routine. La chasse avancée reçoit ces données presque immédiatement après que les capteurs qui les recueillent les transmettent aux services Cloud correspondants. Par exemple, vous pouvez commencer à interroger des données d’événement à partir de capteurs sains sur des stations de travail ou des contrôleurs de domaine presque immédiatement après qu’ils sont disponibles sur Microsoft Defender ATP et Azure ATP.
-- **Données d’entité** : remplit des tables avec des informations consolidées sur les utilisateurs et les appareils. Ces données proviennent de sources de données relativement statiques, telles que des entrées Active Directory, et de sources dynamiques, telles que des journaux des événements. Pour fournir des données actualisées, les tableaux sont mis à jour toutes les 15 minutes avec les nouvelles informations, ajoutant des lignes qui ne sont peut-être pas entièrement renseignées. Toutes les 24 heures, les données sont consolidées pour insérer un enregistrement qui contient le jeu de données le plus complet et le plus complet sur chaque entité.
+- **Données d’événement ou d’activité**: renseigne des tableaux sur les alertes, les événements de sécurité, les événements système et les évaluations de routine. La chasse avancée reçoit ces données presque immédiatement après que les capteurs qui les recueillent les transmettent aux services Cloud correspondants. Par exemple, vous pouvez interroger des données d’événement à partir de capteurs sains sur des stations de travail ou des contrôleurs de domaine presque immédiatement après qu’ils sont disponibles sur Microsoft Defender ATP et Azure ATP.
+- **Données d’entité**: remplit des tables avec des informations consolidées sur les utilisateurs et les appareils. Ces données proviennent de sources de données relativement statiques et de sources dynamiques, telles que les entrées et les journaux des événements Active Directory. Pour fournir des données actualisées, les tableaux sont mis à jour avec les nouvelles informations toutes les 15 minutes, ajoutant des lignes qui ne sont peut-être pas entièrement renseignées. Toutes les 24 heures, les données sont consolidées pour insérer un enregistrement qui contient le jeu de données le plus complet et le plus complet sur chaque entité.
 
 ## <a name="time-zone"></a>Fuseau horaire
-Toutes les informations d’heure dans la chasse avancée se trouvent dans le fuseau horaire UTC.
+Les informations de temps dans la chasse avancée se trouvent dans le fuseau horaire UTC.
 
 ## <a name="related-topics"></a>Sujets associés
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
-- [Travailler avec les résultats de la requête](advanced-hunting-query-results.md)
-- [Prendre des mesures sur les résultats d’une requête](advanced-hunting-take-action.md)
+- [Obtenir une formation expert](advanced-hunting-expert-training.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)
-- [Rechercher sur les appareils, les emails, les applications et les identités](advanced-hunting-query-emails-devices.md)
 - [Comprendre le schéma](advanced-hunting-schema-tables.md)
 - [Appliquer les meilleures pratiques de requête](advanced-hunting-best-practices.md)
 - [Vue d’ensemble des détections personnalisées](custom-detections-overview.md)
+

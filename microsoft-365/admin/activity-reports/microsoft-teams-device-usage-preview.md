@@ -1,5 +1,5 @@
 ---
-title: Rapports Microsoft 365 dans le centre d’administration-utilisation de l’appareil Microsoft teams-aperçu
+title: Utilisation de l’appareil Microsoft Teams
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -21,30 +21,34 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenez des informations sur les applications Microsoft teams utilisées dans votre organisation en obtenant le rapport d’utilisation des applications Microsoft teams à partir des rapports Microsoft 365.
-ms.openlocfilehash: 4945e74d91e12c1e846de3e4bd8393220349d608
-ms.sourcegitcommit: a50260b7c5be7374e8e2bea19cc08406ef51ac47
+ms.openlocfilehash: 98b8d6241b94445c9cb47d2c464d47c5609efdfe
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "45167352"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949077"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage---preview"></a>Rapports Microsoft 365 dans le centre d’administration-utilisation de l’appareil Microsoft teams-aperçu
+# <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>Rapports Microsoft 365 dans le centre d’administration-utilisation de l’appareil Microsoft teams
 
 Le tableau de bord **rapports** Microsoft 365 affiche une vue d’ensemble de l’activité sur les produits de votre organisation. Il vous permet d'explorer les rapports au niveau de chaque produit afin d'offrir des informations plus précises sur les activités pour chaque produit. Consultez la rubrique [Présentation des rapports](activity-reports.md). Dans le rapport Utilisation des applications Microsoft Teams, vous pouvez obtenir des informations sur les applications Microsoft Teams utilisées dans votre organisation.
   
 > [!NOTE]
 > Vous devez être un administrateur général, un lecteur global ou un lecteur de rapports dans Microsoft 365 ou un administrateur Exchange, SharePoint, teams, Team communications ou Skype entreprise pour afficher des rapports.  
  
-## <a name="how-to-get-to-the-preview-microsoft-teams-app-usage-report"></a>Comment accéder au rapport d’utilisation de l’application Microsoft teams de Microsoft teams
+## <a name="how-to-get-to-the-microsoft-teams-app-usage-report"></a>Accéder au rapport Utilisation des applications Microsoft Teams
 
 1. Dans le centre d’administration, accédez à la page **Rapports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Utilisation</a>. 
-2. Dans la liste déroulante **Sélectionner un rapport** , sélectionnez **Microsoft teams**.
+2. À partir de la page d’accueil du tableau de bord, cliquez sur le bouton **afficher plus** sur la fiche d’activité Microsoft Teams.
   
-## <a name="interpret-the-preview-microsoft-teams-app-usage-report"></a>Interpréter le rapport d’utilisation de l’application Microsoft teams
+## <a name="interpret-the-microsoft-teams-app-usage-report"></a>Interpréter le rapport Utilisation des applications Microsoft Teams
 
-Vous pouvez afficher l’utilisation de l’appareil dans le rapport aperçu des équipes en sélectionnant l’onglet **utilisation du périphérique** .
+Vous pouvez afficher l’utilisation de l’appareil dans le rapport teams en sélectionnant l’onglet utilisation de l' **appareil** .<br/>![Rapports Microsoft 365-utilisation de l’appareil Microsoft Teams.](../../media/e46c7f7c-8371-4a20-ae82-b20df64b0205.png)
+
+Sélectionnez **choisir les colonnes** pour ajouter ou supprimer des colonnes dans le rapport.  <br/> ![Rapport de l’appareil utilisateur teams-choisir les colonnes](../../media/3358d5d9-931b-4d30-931f-450b2f5717da.png)
+
+Vous pouvez également exporter les données du rapport dans un fichier. csv Excel en sélectionnant le lien **Exporter** . Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
   
-|||
+|Item|Description|
 |:-----|:-----|
 |**Métrique**|**Définition**|
 |Nom d'utilisateur  <br/> |Nom d’affichage de l’utilisateur. Vous pouvez cliquer sur le nom d’affichage pour accéder à la page des paramètres de l’utilisateur dans le centre d’administration Microsoft Teams.  <br/> |

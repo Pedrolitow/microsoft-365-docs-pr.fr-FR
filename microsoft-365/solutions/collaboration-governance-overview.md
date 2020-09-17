@@ -14,12 +14,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Découvrez comment régir les fonctionnalités associées dans les groupes Microsoft 365, teams, SharePoint et Yammer.
-ms.openlocfilehash: cdef9a4f939c20b34bf32efb5a258deddd885d0e
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: b217dc089eb150d01eed9cd720b2caa290d54bf1
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662593"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950711"
 ---
 # <a name="overview-of-collaboration-governance-in-microsoft-365"></a>Vue d’ensemble de la gouvernance de collaboration dans Microsoft 365
 
@@ -108,16 +108,16 @@ Regardez ces sessions de conférence pour en savoir plus sur la gouvernance pour
 
 Découvrez les notions de base et les nouvelles innovations dans les groupes Microsoft 365, y compris la gestion et la gouvernance à l’envergure, les meilleures pratiques en matière d’utilisation et d’adoption, ainsi que en libre-service.
 
-- [Adopter les groupes Microsoft 365](https://myignite.techcommunity.microsoft.com/sessions/81553)
+- [Adopter les groupes Microsoft 365](https://www.youtube.com/watch?v=dAamBF1gb7M)
 
 **Governance**
 
 Découvrez comment configurer le cycle de vie de vos groupes, les stratégies d’attribution de noms, les étiquettes de classification, la collaboration avec des invités externes et la gestion des autorisations de création de groupe.
 
-- [Transformation de la collaboration et lutter contre l’ombre avec les groupes Office 365](https://myignite.techcommunity.microsoft.com/sessions/81554)
+- [Transformation de la collaboration et lutter contre l’ombre avec les groupes Office 365](https://www.youtube.com/watch?v=Bhf_bKx3lAg)
 
 **Exemple de client**
 
 Retrouvez un exemple en arrière-plan illustrant la façon dont les groupes Microsoft 365, SharePoint, teams et Yammer travaillent ensemble pour fournir une plateforme de collaboration globale.
 
-- [Recherche de votre collaboration sur les groupes Office 365, SharePoint, teams et Yammer](https://myignite.techcommunity.microsoft.com/sessions/84289)
+- [Recherche de votre collaboration sur les groupes Office 365, SharePoint, teams et Yammer](https://www.youtube.com/watch?v=Rx9eVwqXeQk)

@@ -19,17 +19,16 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: Découvrez comment votre organisation adopte les services Microsoft 365 pour communiquer et collaborer.
-ms.openlocfilehash: 6619205fb62cce3ba7c62c3df773f650dc125dac
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: fecaed3aa9fc2d0990cb3e7b416cee1bfab21d7e
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402021"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948627"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Analyse de l'utilisation de Microsoft 365
 ---
-L’analyse de l’utilisation de Microsoft 365 n’est pas encore disponible pour la communauté du gouvernement américain Microsoft 365.
- 
+
 ## <a name="overview-of-microsoft-365-usage-analytics"></a>Vue d'ensemble de l'analyse de l'utilisation de Microsoft 365
 
 Utilisez l’analyse de l’utilisation de Microsoft 365 dans Power BI pour obtenir des informations sur la façon dont votre organisation adopte les différents services au sein de Microsoft 365 pour communiquer et collaborer. Vous pouvez visualiser et analyser les données d’utilisation de Microsoft 365, créer des rapports personnalisés et partager les informations au sein de votre organisation et obtenir des informations sur la façon dont des régions ou des services spécifiques utilisent Microsoft 365.
@@ -84,7 +83,7 @@ Ce rapport contient un rapport distinct pour chaque service Microsoft 365, y com
 
 Les rapports d’activité de l’utilisateur sont disponibles pour certains services individuels. Ces rapports fournissent des données d’utilisation détaillées au niveau utilisateur jointes aux attributs Active Directory. En outre, le rapport d’adoption des services vous permet de découper les attributs Active Directory afin que vous puissiez voir les utilisateurs actifs sur tous les services individuels. Toutes les mesures sont regroupées pour le mois complet le plus récent.
 
-## <a name="faq"></a>FAQ
+## <a name="faq"></a>Forum Aux Questions
 
 ### <a name="is-this-template-app-going-to-be-available-through-purchase-or-will-it-be-free"></a>Cette application de modèle va-t-elle être disponible par le biais de l’achat ou sera-t-elle gratuite ?
 
@@ -136,7 +135,7 @@ De plus, les détails au niveau de l’utilisateur dans l’application de modè
 
 ### <a name="when-should-i-use-the-template-app-and-when-the-usage-reports"></a>Quand dois-je utiliser l’application de modèle et les rapports d’utilisation ?
 
-Les [rapports d’activité](../activity-reports/activity-reports.md) constituent un point de départ idéal pour comprendre l’utilisation et l’adoption de Microsoft 365. L’application de modèle combine les données d’utilisation de Microsoft 365 et les informations Active Directory de votre organisation et permet aux administrateurs d’analyser le jeu de données à l’aide des fonctionnalités d’analyse visuelle de Power BI. Les administrateurs ne peuvent pas seulement visualiser et analyser les données d’utilisation de Microsoft 365, mais également les découper par les propriétés Active Directory telles que les services, l’emplacement, etc. Ils peuvent également créer des rapports personnalisés et partager les informations au sein de leur organisation. 
+Les [rapports d’activité](../activity-reports/activity-reports.md)  constituent un point de départ idéal pour comprendre l’utilisation et l’adoption de Microsoft 365. L’application de modèle combine les données d’utilisation de Microsoft 365 et les informations Active Directory de votre organisation et permet aux administrateurs d’analyser le jeu de données à l’aide des fonctionnalités d’analyse visuelle de Power BI. Les administrateurs ne peuvent pas seulement visualiser et analyser les données d’utilisation de Microsoft 365, mais également les découper par les propriétés Active Directory telles que les services, l’emplacement, etc. Ils peuvent également créer des rapports personnalisés et partager les informations au sein de leur organisation. 
 
 ### <a name="how-often-is-the-data-refreshed"></a>À quelle fréquence les données sont-elles actualisées ? 
 

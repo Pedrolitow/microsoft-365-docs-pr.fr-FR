@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: Les déplacements de données sont des opérations principales qui se produisent lorsque Microsoft déplace des services et des données associées pour votre client vers une nouvelle région de centre de données.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9f87628d6bbc65fe4122999f6d0fde809fed51b8
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: acd2601d32617c56019ca8b4bf8688ce40f5d76a
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46689825"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950271"
 ---
 # <a name="during-and-after-your-data-move"></a>Pendant et après le déplacement de vos données
 
@@ -45,8 +45,8 @@ Regardez le centre de messages Microsoft 365 pour confirmer le déplacement de c
 |Émirats arabes unis  <br/> |1er juillet 2022  <br/> |
 |Afrique du Sud  <br/> |1er juillet 2022  <br/> |
 |Suisse, Liechtenstein  <br/> |1er juillet 2022  <br/> |
-|Allemagne  <br/> |Vision  <br/> |
 |Norvège  <br/> |1er novembre 2022  <br/> |
+|Allemagne  <br/> |Vision  <br/> |
 
 ## <a name="exchange-online"></a>Exchange Online
 
@@ -75,7 +75,7 @@ Lors du déplacement de SharePoint Online, les données des services suivants so
     
 - Office dans le navigateur
     
-- Applications Microsoft 365 pour les grandes entreprises
+- Applications Microsoft 365 for entreprise
     
 - Visio Pro pour Microsoft 365
     

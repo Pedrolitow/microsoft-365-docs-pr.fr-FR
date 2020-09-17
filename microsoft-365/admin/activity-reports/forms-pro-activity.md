@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: Découvrez comment obtenir un rapport d’activité Microsoft Forms Pro à l’aide du tableau de bord des rapports Microsoft 365 dans le centre d’administration Microsoft 365.
-ms.openlocfilehash: df03f3f0300dcd923f43987ee786981b1653b1ce
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 58c7a76c49b7c925a4e7851f7e81c7f47d465d3a
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387704"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949191"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---forms-pro-activity"></a>Rapports Microsoft 365 dans le centre d’administration-activité Pro Forms
 
@@ -47,7 +47,7 @@ Vous pouvez obtenir un aperçu de l’activité Forms Pro de votre utilisateur e
 
 ![Rapport d’activité de formulaires](../../media/formsproactivity.png)
 
-|||
+|Item|Description|
 |:-----|:-----|
 |1.  <br/> |Le rapport d’activité **Forms Pro** peut être consulté pour connaître les tendances des 7, 30, 90 ou 180. Toutefois, si vous sélectionnez un jour particulier dans le rapport, le tableau (7) affiche les données jusqu’à 28 jours après la date actuelle (pas la date de génération du rapport).   <br/> |
 |2.  <br/> |Les données de chaque rapport sont généralement aussi récentes que les 48 dernières heures.  <br/> |

@@ -1,5 +1,5 @@
 ---
-title: Rapports Microsoft 365 dans le centre d’administration-activité de l’utilisateur Microsoft teams-aperçu
+title: Rapports Microsoft 365 dans le centre d’administration-activité de l’utilisateur Microsoft teams
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -19,30 +19,34 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment obtenir le rapport d’activité de l’utilisateur de Microsoft teams et obtenir des informations sur l’activité de teams dans votre organisation.
-ms.openlocfilehash: 734a4dfd62160c2f4d29b8faffb3268a1962fe4f
-ms.sourcegitcommit: a50260b7c5be7374e8e2bea19cc08406ef51ac47
+ms.openlocfilehash: 5b6c67903e7af600cac6ad1fda10962aecc2cc83
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "45167340"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949029"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity--preview"></a>Rapports Microsoft 365 dans le centre d’administration-activité de l’utilisateur Microsoft teams-aperçu
+# <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>Rapports Microsoft 365 dans le centre d’administration-activité de l’utilisateur Microsoft teams
 
 Le tableau de bord **rapports** Microsoft 365 affiche une vue d’ensemble de l’activité sur les produits de votre organisation. Il vous permet d'explorer les rapports au niveau de chaque produit afin d'offrir des informations plus précises sur les activités pour chaque produit. Consultez la rubrique [Présentation des rapports](activity-reports.md). Dans le rapport Activité de l'utilisateur sur Microsoft Teams, vous pouvez obtenir des informations sur l'activité dans Microsoft Teams au sein de votre organisation.
   
 > [!NOTE]
 > Vous devez être un administrateur général, un lecteur global ou un lecteur de rapports dans Microsoft 365 ou un administrateur Exchange, SharePoint, teams, Team communications ou Skype entreprise pour afficher des rapports.  
  
-## <a name="how-to-get-to-the-preview-microsoft-teams-user-activity-report"></a>Comment accéder au rapport d’activité de l’utilisateur de la version d’évaluation de Microsoft teams
+## <a name="how-to-get-to-the-microsoft-teams-user-activity-report"></a>Accéder au rapport Activité de l'utilisateur sur Microsoft Teams
 
 1. Dans le centre d’administration, accédez à la page **Rapports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Utilisation</a>.
-2. Dans la liste déroulante **Sélectionner un rapport** , sélectionnez **Microsoft teams**.
+2. À partir de la page d’accueil du tableau de bord, cliquez sur le bouton **afficher plus** sur la fiche d’activité Microsoft Teams.
   
-## <a name="interpret-the-preview-microsoft-teams-user-activity-report"></a>Interpréter le rapport d’activité de l’utilisateur aperçu de Microsoft teams
+## <a name="interpret-the-microsoft-teams-user-activity-report"></a>Interpréter le rapport Activité de l'utilisateur sur Microsoft Teams
 
-Vous pouvez afficher l’activité de l’utilisateur dans le rapport aperçu des équipes en sélectionnant l’onglet activité de l' **utilisateur** .
-  
-|||
+Vous pouvez afficher l’activité de l’utilisateur dans le rapport teams en sélectionnant l’onglet activité de l' **utilisateur** . <br/>![Rapports Microsoft 365-activité de l’utilisateur Microsoft Teams.](../../media/1011877f-3cf0-4417-9447-91d0b2312aab.png)
+
+Sélectionnez **choisir les colonnes** pour ajouter ou supprimer des colonnes dans le rapport.  <br/> ![Teams user activity report - choose columns](../../media/a1513028-cf09-4186-93a6-8a203cd22475.png)
+
+Vous pouvez également exporter les données du rapport dans un fichier. csv Excel en sélectionnant le lien **Exporter** . Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
+
+|Item|Description|
 |:-----|:-----|
 |**Métrique**|**Définition**|
 |Nom d'utilisateur  <br/> |Adresse e-mail de l’utilisateur. Vous pouvez afficher l'adresse de courrier réelle ou rendre ce champ anonyme.   <br/> |

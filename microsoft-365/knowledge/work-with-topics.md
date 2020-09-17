@@ -7,16 +7,16 @@ manager: pamgreen
 ms.date: 08/01/2020
 audience: admin
 ms.topic: article
-ms.service: ''
+ms.service: o365-administration
 search.appverid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: e4a9917464e22c6220d26619e7b5ca60f090abb7
-ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
+ms.openlocfilehash: 82a1b1990f464a892b8216caa26e0422b093bf37
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46612489"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948053"
 ---
 # <a name="work-with-topics-in-the-topic-center-preview"></a>Utilisation des rubriques dans le Centre des rubriques (aperçu)
 
@@ -26,7 +26,7 @@ ms.locfileid: "46612489"
 
 Dans le centre de la rubrique, un gestionnaire de connaissances peut consulter des rubriques qui ont été extraites et découvertes dans les emplacements sources SharePoint que vous avez spécifiés et qui peuvent les confirmer ou les refuser. Un responsable de la connaissance peut également créer et publier de nouvelles pages de rubrique, le cas échéant, si elles ne sont pas disponibles dans la découverte de rubrique, ou en modifier les existantes si elles doivent être mises à jour.
 
-## <a name="requirements"></a>Conditions préalables
+## <a name="requirements"></a>Configuration requise
 
 Pour travailler dans le Centre des rubriques, vous devez disposer des autorisations requises. Votre administrateur peut vous ajouter lors de la configuration de la [gestion des connaissances](set-up-knowledge-network.md), ou les nouveaux utilisateurs peuvent être ajoutés par la [suite](give-user-permissions-to-the-topic-center.md).
 
@@ -70,7 +70,7 @@ Pour créer une rubrique, procédez comme suit :
     c. Dans la section **description courte** , tapez une ou deux descriptions de phrase de la rubrique. Ce texte sera utilisé pour la carte de sujet associée.</br>
     d. Dans la section **personnes** , tapez les noms des experts techniques de la rubrique.</br>
     e. Dans la section **fichiers et pages** , sélectionnez **Ajouter** , puis sur la page suivante, vous pouvez sélectionner des fichiers OneDrive associés ou des pages SharePoint Online.</br>
-    f. Dans la section **sites** , sélectionnez **Ajouter**. Dans le volet de **sites** qui s’affiche, sélectionnez les sites associés à la rubrique.</br>
+    f. Dans la section **sites** , sélectionnez **Ajouter**. Dans le volet de  **sites** qui s’affiche, sélectionnez les sites associés à la rubrique.</br>
 
     ![Nouvelle page de rubrique](../media/content-understanding/k-new-topic-page.png) </br>
 3. Si vous avez besoin d’ajouter d’autres composants à la page, tels que du texte, des images, des composants WebPart, des liens, etc., sélectionnez l’icône de zone de dessin au milieu de la page pour les Rechercher et les ajouter.

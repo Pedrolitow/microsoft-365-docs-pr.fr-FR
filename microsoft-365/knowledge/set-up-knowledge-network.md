@@ -1,22 +1,22 @@
 ---
 title: 'Configurer la gestion des connaissances (aperçu) '
 description: La configuration de la gestion des connaissances ;
-author: efrene
-ms.author: efrene
-manager: pamgreen
+ms.author: mikeplum
+author: MikePlumleyMSFT
+manager: serdars
 ms.date: 8/1/2020
 audience: admin
 ms.topic: article
-ms.service: ''
+ms.service: o365-administration
 search.appverid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: d6495f297f09ddc167d7c36835ac82a15abc91ac
-ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
+ms.openlocfilehash: 6f5d014a8f401d9c3489eabb849b9d666444e6aa
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47405648"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948149"
 ---
 # <a name="set-up-knowledge-management-preview"></a>Configurer la gestion des connaissances (aperçu)
 

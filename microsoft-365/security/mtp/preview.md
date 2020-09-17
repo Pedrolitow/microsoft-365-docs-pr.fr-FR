@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 502dc87b45c42f0ae95ea9da898c4d4589b19671
-ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
+ms.openlocfilehash: 1e779e0da89ea49fb4ed390b20a6fb67ffd3b162
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47649948"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47947995"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Fonctionnalités d’aperçu de la protection contre les menaces Microsoft
 
@@ -50,7 +50,7 @@ Activez le paramètre aperçu de l’expérience pour commencer à utiliser les 
 
 3. Sélectionnez **Aperçu**  >  **des fonctionnalités activer les fonctionnalités d’aperçu**. 
 
-3. Cliquez sur **Enregistrer**.
+3. Sélectionnez **Enregistrer**.
 
 Vous saurez que les fonctionnalités d’aperçu sont activées lorsque vous voyez que la case à cocher **activer l’aperçu des fonctionnalités** est activée. 
 
@@ -59,7 +59,6 @@ Les fonctionnalités et améliorations suivantes sont actuellement disponibles l
 
 - **[API de protection contre les menaces Microsoft](api-overview.md)** : les API de protection contre les menaces Microsoft Lop vous permettent d’automatiser les flux de travail en fonction de l’incident partagé et des tableaux de la chasse avancée. 
 - **[Table IdentityDirectoryEvents dans la chasse avancée](advanced-hunting-identitydirectoryevents-table.md)** : recherchez des événements impliquant un contrôleur de domaine sur site exécutant Active Directory (AD). Ce tableau couvre un éventail d’événements liés à l’identité, ainsi que des événements système sur le contrôleur de domaine.
-- **[Fonction AssignedIPAddresses ()](advanced-hunting-assignedipaddresses-function.md)** : utilisez cette fonction dans la chasse avancée pour obtenir rapidement les dernières adresses IP qui ont été affectées à un appareil ou les adresses IP les plus récentes à partir d’un moment donné.
 - **[Effectuer des actions dans la chasse avancée](advanced-hunting-take-action.md)** — il doit rapidement contenir des menaces ou des ressources compromises que vous trouvez dans la [chasse avancée](advanced-hunting-overview.md).
 - **[Guide de référence de schéma dans le portail](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** : Obtenez des informations sur les tables de schéma de chasse avancées directement dans le centre de sécurité. En plus des descriptions de table et de colonne, cette référence pratique fournit des informations sur les types d’événement pris en charge ( `ActionType` valeurs) et les exemples de requêtes.
 

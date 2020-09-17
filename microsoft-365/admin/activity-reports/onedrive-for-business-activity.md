@@ -22,12 +22,12 @@ search.appverid:
 - ODB160
 ms.assetid: 8bbe4bf8-221b-46d6-99a5-2fb3c8ef9353
 description: Obtenir le rapport d’utilisation de OneDrive pour votre organisation et connaître l’activité de chaque utilisateur OneDrive, le nombre de fichiers partagés et l’utilisation du stockage.
-ms.openlocfilehash: 9de2260049d901b401bd62a9e4d05191222b97a3
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: dd5ac1c52d2226b12c75dc92c3407012251a90da
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387536"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948924"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-activity"></a>Rapports Microsoft 365 dans le centre d’administration-activité OneDrive entreprise
 
@@ -56,7 +56,7 @@ Vous pouvez suivre l'activité sur OneDrive Entreprise en examinant les vues **F
   
 ![OneDrive Activity Report](../../media/316b2a03-8e42-447c-aae8-080813eebe84.png)
   
-|||
+|Item|Description|
 |:-----|:-----|
 |1.  <br/> |Le rapport **Activité OneDrive Entreprise** peut être consulté pour connaître les tendances des derniers 7, 30 , 90 ou 180 jours. Toutefois, si vous sélectionnez un jour particulier dans le rapport, le tableau (7) affiche les données jusqu’à 28 jours après la date actuelle (pas la date de génération du rapport).  <br/> |
 |2.  <br/> |Les données de chaque rapport couvrent généralement les 24 à 48 heures. <br/>|

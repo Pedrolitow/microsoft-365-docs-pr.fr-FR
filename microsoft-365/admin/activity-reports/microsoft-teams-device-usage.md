@@ -1,5 +1,5 @@
 ---
-title: Rapports Microsoft 365 dans le centre d’administration-utilisation de l’appareil Microsoft teams
+title: Utilisation de l’appareil Microsoft Teams
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 917b3e1d-203e-4439-8539-634e80196687
 description: Obtenez des informations sur les applications Microsoft teams utilisées dans votre organisation en obtenant le rapport d’utilisation des applications Microsoft teams à partir des rapports Microsoft 365.
-ms.openlocfilehash: c2070f13c790f2a66c5849e68fc2fe3579ffa3e3
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 9c96f4fce962b49081cc93ff802b1e2bc250ec98
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387717"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949107"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>Rapports Microsoft 365 dans le centre d’administration-utilisation de l’appareil Microsoft teams
 
@@ -48,7 +48,7 @@ Les graphiques **Utilisateurs** et **Distribution** donnent un aperçu de l'util
   
 ![Rapports Microsoft 365-utilisation des applications Microsoft teams](../../media/de35c4de-76b4-4109-a806-66774665499b.png)
   
-|||
+|Item|Description|
 |:-----|:-----|
 |1.  <br/> |Le rapport **Utilisation de Microsoft Teams sur des appareils** permet d'observer les tendances des 7, 30, 90 ou 180 derniers jours. Toutefois, si vous sélectionnez un jour particulier dans le rapport, le tableau (7) affiche les données jusqu’à 28 jours après la date actuelle (pas la date de génération du rapport).  <br/> |
 |2.  <br/> |Les données de chaque rapport couvrent généralement les 24 à 48 heures.  <br/> |

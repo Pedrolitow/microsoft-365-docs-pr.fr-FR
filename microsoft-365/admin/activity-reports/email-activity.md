@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44
 description: Découvrez comment obtenir un rapport d’activité de courrier électronique à l’aide du tableau de bord des rapports Microsoft 365 dans le centre d’administration Microsoft 365.
-ms.openlocfilehash: a864b997d607b06391c1a2a5d4725bc8d074de87
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b2b322fe7e35c3fa7e4a5966919321b329004d92
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387776"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948231"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---email-activity"></a>Rapports Microsoft 365 dans le centre d’administration-activité de courrier électronique
 
@@ -48,7 +48,7 @@ Vous pouvez visualiser l'activité de courrier d'un utilisateur à l'aide des gr
   
 ![Rapport d’activité de courrier électronique](../../media/2317f03d-2d71-46bf-a5c7-d94dbc8cfbe1.png)
   
-|||
+|Item|Description|
 |:-----|:-----|
 |1.  <br/> |Le rapport **Activité de courrier** permet d'observer des tendances sur les 7, 30, 90 ou 180 derniers jours. Toutefois, si vous sélectionnez un jour particulier dans le rapport, le tableau (7) affiche les données jusqu’à 28 jours après la date actuelle (pas la date de génération du rapport).  <br/> |
 |2.  <br/> |Les données de chaque rapport couvrent généralement les 24 à 48 heures.  <br/> |

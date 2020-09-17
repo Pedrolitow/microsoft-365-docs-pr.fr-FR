@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Passez en revue les réponses aux questions fréquemment posées sur le déploiement centralisé à partir du centre d’administration Microsoft 365.
-ms.openlocfilehash: b1b5ccbb5373bf5d536208efdfe487bc0c872f25
-ms.sourcegitcommit: 222fc3f8841de82b1b558f47db8a79aa5054d0ed
+ms.openlocfilehash: 555496f15663b6607ebc785498bdc94b5e51b9c9
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "45102883"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948687"
 ---
 # <a name="centralized-deployment-faq"></a>Forum aux questions sur le déploiement centralisé
 
@@ -94,8 +94,10 @@ Nous vous suggérons de contacter le développeur ISV pour le complément payant
     
 ## <a name="which-admin-role-do-i-need-to-manage-add-ins-for-my-organization"></a>Quel rôle d’administrateur dois-je utiliser pour gérer les compléments pour mon organisation ?  
 
-Vous devez disposer du rôle d’administrateur global pour gérer les compléments. Si vous êtes la personne qui a acheté votre abonnement Microsoft 365 pour les entreprises, vous êtes l’administrateur général. 
+L’administrateur général est le rôle recommandé avec un accès complet au cycle de vie de gestion des compléments. Les autres rôles d’administrateur ont un accès limité au cycle de vie du déploiement de compléments. Si vous êtes la personne qui a acheté votre abonnement Microsoft 365 pour les entreprises, vous êtes l’administrateur général. 
  
 Votre abonnement est fourni avec un ensemble de rôles d’administrateur que vous pouvez attribuer à d’autres utilisateurs au sein de votre organisation. Chaque rôle d’administrateur est mappé à des fonctions professionnelles courantes et donne aux membres de votre organisation des autorisations pour effectuer des tâches spécifiques dans le centre d’administration 365 de Microsoft.  
  
 Pour plus d’informations, consultez la rubrique [assigner des rôles d’administrateur](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles?view=o365-worldwide).  
+
+

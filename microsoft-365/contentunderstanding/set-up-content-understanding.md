@@ -1,22 +1,22 @@
 ---
 title: 'Configurer la présentation du contenu (aperçu) '
 description: Comment configurer le projet cortex.
-author: efrene
-ms.author: efrene
-manager: pamgreen
+ms.author: mikeplum
+author: MikePlumleyMSFT
+manager: serdars
 ms.date: 08/1/2020
 audience: admin
 ms.topic: article
-ms.service: ''
+ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5fcc7f78bfc12faae19ce2a3fbc77c4348da01de
-ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
+ms.openlocfilehash: 05696f99e59cbd51ba004f6007311b4b6af4a839
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46612701"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950035"
 ---
 # <a name="set-up-content-understanding-preview"></a>Configurer la présentation du contenu (aperçu)
 
@@ -32,7 +32,7 @@ Avant de procéder à l’installation, veillez à planifier la meilleure façon
 Un administrateur peut également modifier les paramètres sélectionnés à tout moment après l’installation par le biais des paramètres de présentation du contenu du centre d’administration 365 de Microsoft.
 
 
-## <a name="requirements"></a>Conditions préalables 
+## <a name="requirements"></a>Configuration requise 
 Vous devez disposer d’autorisations d’administrateur général ou d’administrateur SharePoint pour pouvoir accéder au centre d’administration Microsoft 365 et configurer le mémorandum d’accord sur le contenu.
 
 

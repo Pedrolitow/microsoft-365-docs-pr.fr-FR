@@ -17,12 +17,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: be35663fc32a2d214e1ca0ae91161079a5f672a3
-ms.sourcegitcommit: a13f43a3e981c90f1e0b9805c9c16a56f67fc650
+ms.openlocfilehash: 686d31c64394094530099edb97bbd10912a58cb8
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47651143"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949891"
 ---
 # <a name="identity-and-device-access-configurations"></a>Configurations des identités et de l’accès aux appareils
 
@@ -114,8 +114,8 @@ Azure AD fournit une suite complète de fonctionnalités de gestion des identit�
 | [Groupes Azure AD](/azure/active-directory/fundamentals/active-directory-manage-groups) | Les stratégies d’accès conditionnel, la gestion des appareils avec Intune, et même les autorisations sur les fichiers et les sites de votre organisation, dépendent de l’affectation à des comptes d’utilisateurs ou à des groupes Azure AD. Nous vous recommandons de créer des groupes Azure AD qui correspondent aux niveaux de protection que vous implémentez. Par exemple, votre personnel exécutif est probablement plus à même de cibler des pirates. Par conséquent, il est logique d’ajouter les comptes d’utilisateur de ces employés à un groupe Azure AD et d’affecter ce groupe aux stratégies d’accès conditionnelles et à d’autres stratégies qui appliquent un niveau de protection plus élevé pour l’accès. | Microsoft 365 E3 ou E5 |
 | [Enregistrement de l’appareil](/azure/active-directory/devices/overview) | Vous inscrivez un appareil dans Azure AD pour créer une identité pour l’appareil. Cette identité est utilisée pour authentifier l’appareil lorsqu’un utilisateur se connecte et pour appliquer des stratégies d’accès conditionnel qui nécessitent des PC joints à un domaine ou des PC conformes. Pour ce guide, nous utilisons l’inscription d’appareil pour inscrire automatiquement des ordinateurs Windows associés à un domaine. L’enregistrement d’appareil est une condition préalable à la gestion des appareils avec Intune. | Microsoft 365 E3 ou E5 |
 | [Azure AD Identity Protection](/azure/active-directory/identity-protection/overview) | Vous permet de détecter les vulnérabilités potentielles affectant les identités de votre organisation et de configurer la stratégie de correction automatisée sur un risque de connexion faible, moyen et élevé, ainsi que sur un risque utilisateur. Ces instructions s’appuient sur cette évaluation des risques pour appliquer des stratégies d’accès conditionnel pour l’authentification multifacteur. Ce guide inclut également une stratégie d’accès conditionnel qui exige que les utilisateurs modifient leur mot de passe si l’activité à haut risque est détectée pour leur compte. | Microsoft 365 E5, Microsoft 365 E3 avec l’identité & les licences de module complémentaire Threat Protection, EMS E5 ou Azure Premium P2 |
-| [Réinitialisation du mot de passe en libre-service (SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks) | Autorisez vos utilisateurs à réinitialiser leur mot de passe en toute sécurité et sans intervention de l’assistance, en fournissant la vérification de plusieurs méthodes d’authentification que l’administrateur peut contrôler. | Microsoft 365 E3 ou E5 |
-| [Protection par mot de passe Azure ad](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad). Détectez et bloquez les mots de passe faibles connus et leurs variantes, ainsi que les termes faibles supplémentaires propres à votre organisation. Les listes de mots de passe interdites globaux par défaut sont automatiquement appliquées à tous les utilisateurs d’un client Azure AD. Vous pouvez définir des entrées supplémentaires dans une liste de mots de passe interdits personnalisés. Lorsque les utilisateurs modifient ou réinitialisent leur mot de passe, ces listes de mots de passe bannis sont vérifiées pour appliquer l’utilisation de mots de passe forts. |  Microsoft 365 E3 ou E5 |
+| [Réinitialisation du mot de passe libre-service (SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks) | Autorisez vos utilisateurs à réinitialiser leur mot de passe en toute sécurité et sans intervention de l’assistance, en fournissant la vérification de plusieurs méthodes d’authentification que l’administrateur peut contrôler. | Microsoft 365 E3 ou E5 |
+| [Protection par mot de passe Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) | Détectez et bloquez les mots de passe faibles connus et leurs variantes, ainsi que les termes faibles supplémentaires propres à votre organisation. Les listes de mots de passe interdites globaux par défaut sont automatiquement appliquées à tous les utilisateurs d’un client Azure AD. Vous pouvez définir des entrées supplémentaires dans une liste de mots de passe interdits personnalisés. Lorsque les utilisateurs modifient ou réinitialisent leur mot de passe, ces listes de mots de passe bannis sont vérifiées pour appliquer l’utilisation de mots de passe forts. |  Microsoft 365 E3 ou E5 |
 ||||
 
 ![Composants de l’accès aux identités et aux appareils.](../media/microsoft-365-policies-configurations/identity-device-access-components.png)

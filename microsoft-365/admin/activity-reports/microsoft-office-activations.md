@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: 87c24ae2-82e0-4d1e-be01-c3bcc3f18c60
 description: Découvrez comment obtenir un rapport d’activation Office pour savoir quels utilisateurs ont activé leur abonnement Office et identifier les utilisateurs qui pourraient avoir besoin d’aide supplémentaire.
-ms.openlocfilehash: 3b7d3e599d31377fb11a07623a53a3c75dced129
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 228d8a6437cecfad8e7600a354ca31ddd6b0e6c4
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387740"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949143"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-office-activations"></a>Rapports Microsoft 365 dans le centre d’administration-activations de Microsoft Office
 
@@ -48,11 +48,11 @@ Les graphiques **Activations** et **Utilisateurs** vous offrent un aperçu des a
   
 ![Nombre d’activations d’Office](../../media/8c0ae08d-2d71-4437-9147-12c345bb5e9d.png)
   
-|||
+|Item|Description|
 |:-----|:-----|
-|1   <br/> |Le rapport Activations d'Office présente l'état actuel des données d'activation de licences Office [à la date du rapport présentée en haut à droite du graphique].  <br/> |
-|n°2  <br/> |Les données de chaque rapport couvrent généralement les 24 à 48 heures.  <br/> |
-|3  <br/> |Le graphique **Activations** indique le nombre d'activations d'Office sur des ordinateurs et appareils.  <br/> |
+|1  <br/> |Le rapport Activations d'Office présente l'état actuel des données d'activation de licences Office [à la date du rapport présentée en haut à droite du graphique].  <br/> |
+|2   <br/> |Les données de chaque rapport couvrent généralement les 24 à 48 heures.  <br/> |
+|3   <br/> |Le graphique **Activations** indique le nombre d'activations d'Office sur des ordinateurs et appareils.  <br/> |
 |4   <br/> |Le graphique **Utilisateurs** indique le nombre d'utilisateurs activés et le nombre d'utilisateurs ayant activé l'abonnement Office sur un ordinateur ou un appareil.  <br/> |
 |5   <br/> | Sur le graphique **Activations**, l'axe Y représente le nombre d'activations d'Office.  <br/>  Sur le graphique **Utilisateurs**, l'axe Y représente l'activité d'activation d'Office des utilisateurs.  <br/>  L'axe X sur les deux graphiques représente la plage de dates sélectionnée pour ce rapport particulier.  <br/> |
 |6   <br/> |Vous pouvez filtrer les graphiques que vous voyez en sélectionnant un élément dans la légende. Par exemple, dans le graphique **activations** , sélectionnez **Windows OS**, **Mac OS**, **Windows 10 Mobile**, **iOS** ou **Android** pour afficher uniquement les informations relatives à chacun d’eux. Cette sélection ne modifie nullement les informations figurant dans le tableau grille. <br/> ![Données d’activation pour les appareils](../../media/59d3ec6e-2a6e-4b21-8aac-c73038c47b9f.png)  <br/> |

@@ -6,17 +6,17 @@ manager: pamgreen
 ms.date: 08/1/2020
 audience: admin
 ms.topic: article
-ms.service: ''
+ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Obtenez une vue d’ensemble de la compréhension des documents dans le projet cortex.
-ms.openlocfilehash: bdebc8a8726a7b9a77eb9a1095f83e937cf36cb1
-ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
+ms.openlocfilehash: c1e4092164ee96d4f244f10be9ebab62a2c8da5b
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46612713"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950047"
 ---
 # <a name="document-understanding-overview-preview"></a>Vue d’ensemble du document de présentation (aperçu)
 > [!Note] 
@@ -36,7 +36,7 @@ Vous pouvez ajouter des *classifieurs* et des *extracteurs* à vos modèles de p
 
 - Les classifieurs sont utilisés pour identifier et classer les documents qui sont chargés dans la bibliothèque de documents. Par exemple, un classifieur peut être « formé » pour identifier tous les documents de *renouvellement de contrat* téléchargés dans la bibliothèque. Le type de contenu renouvellement de contrat est défini par vous lors de la création de votre classifieur.
 
-- Les extracteurs extraient des informations de ces documents. Par exemple, pour tous les documents de renouvellement de contrat identifiés dans votre bibliothèque de documents, les colonnes s’affichent dans votre affichage qui indique également la *Date de début du service* et le *client* pour chaque document de renouvellement de contrat. 
+- Les extracteurs extraient des informations de ces documents. Par exemple, pour tous les documents de renouvellement de contrat identifiés dans votre bibliothèque de documents, les colonnes s’affichent dans votre affichage qui indique également la *Date de début du service* et le  *client* pour chaque document de renouvellement de contrat. 
 
 Vous utilisez des exemples de fichiers pour former et tester vos classifieurs et extracteurs dans votre modèle. Les exemples de fichiers fournissent des exemples de modèles de ce que vous pouvez rechercher lorsque vous essayez d’identifier et d’extraire des données à partir de fichiers. Par exemple, vous allez former vos classifieurs et extracteurs de renouvellement de contrat avec des exemples de documents de renouvellement de contrat avec lesquels votre société travaille. Vous pouvez également utiliser des exemples de fichiers pour tester l’efficacité de votre modèle.
 

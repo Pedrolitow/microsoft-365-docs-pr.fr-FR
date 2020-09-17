@@ -3,7 +3,7 @@ title: Test de connectivité réseau Microsoft 365 (aperçu)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 09/14/2020
+ms.date: 09/15/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Test de connectivité réseau Microsoft 365 (aperçu)
-ms.openlocfilehash: 92bd850c98261df1808219ee1f28c75da370d443
-ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
+ms.openlocfilehash: 0a5e7831b28488e793488f572fd830d47a0f3f9a
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47650000"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948543"
 ---
 # <a name="microsoft-365-network-connectivity-test-preview"></a>Test de connectivité réseau Microsoft 365 (aperçu)
 
@@ -29,6 +29,8 @@ L’outil de test de connectivité réseau Microsoft 365 se trouve à l’adress
 >L’outil de test de connectivité réseau prend en charge les clients dans le commerce WW et l’Allemagne, mais pas dans les GCC modérés, GCC High, DoD ou Chine.
 
 Le réseau Insights dans le centre d’administration 365 de Microsoft est basé sur des mesures de produit standard pour votre client Microsoft 365 qui sont agrégées chaque jour. En comparaison, les informations réseau du test de connectivité réseau Microsoft 365 sont exécutées localement et une fois dans l’outil. Les tests pouvant être effectués dans-le produit sont limités et l’exécution de tests locaux sur l’utilisateur permet de collecter davantage de données, ce qui donne lieu à des analyses plus approfondies. Envisagez ensuite que le réseau Insights dans le centre d’administration 365 de Microsoft indique qu’il existe un problème de réseau pour l’utilisation de Microsoft 365 à un emplacement de bureau spécifique. Le test de connectivité de Microsoft 365 peut vous aider à identifier la cause première de ce problème à l’aide d’une action d’amélioration des performances réseau recommandée.
+
+![Outil de test de connectivité réseau](../media/m365-mac-perf/m365-mac-perf-admin-center.png)
 
 Nous vous recommandons de les utiliser ensemble pour évaluer l’état de la qualité du réseau pour chaque emplacement de bureau dans le centre d’administration 365 de Microsoft et d’autres informations spécifiques après le déploiement des tests en fonction du test de connectivité de Microsoft 365.
 
@@ -205,6 +207,28 @@ Lorsqu’un certificat SSL n’est pas fourni par Microsoft, nous affichons le n
 
 Cette section présente les résultats d’un itinéraire ICMP vers le volet frontal du service Exchange Online, le volet frontal du service SharePoint Online et le porte de service frontal de Microsoft Teams. Il est fourni à des fins d’information uniquement et aucune analyse réseau n’est associée. Trois traceroutes sont fournies. Un traceroute vers _Outlook.office365.com_, un traceroute vers le serveur frontal SharePoint du client ou vers _Microsoft.SharePoint.com_ s’il n’en a pas été fourni, et un traceroute vers _World.TR.Teams.Microsoft.com_.
 
+## <a name="what-happens-at-each-test-step"></a>Que se passe-t-il à chaque étape de test ?
+
+### <a name="office-location-identification"></a>Identification de l’emplacement Office
+
+Lorsque vous cliquez sur le bouton exécuter le test, vous affichez la page de test en cours d’exécution et identifiez l’emplacement du bureau. Vous pouvez taper votre emplacement par ville, État et pays ou vous pouvez le détecter à partir du navigateur Web. Si vous la détectez ensuite, nous recherchons la latitude et la longitude à partir du navigateur Web et limitons la précision à 300 m par 300M avant l’utilisation. Nous faisons cela car il n’est pas nécessaire d’identifier l’emplacement de manière plus précise que les performances du réseau. 
+
+### <a name="javascript-tests"></a>Tests JavaScript
+
+Après l’identification de l’emplacement Office, nous exécutons un test de latence TCP dans JavaScript et nous demandeons des données au service concernant les serveurs frontaux de service Office 365 en cours d’utilisation et recommandés. Une fois terminées, nous les affichons sur la carte et dans l’onglet Détails, où elles peuvent être affichées avant la prochaine étape.
+
+### <a name="download-the-advanced-tests-client-application"></a>Télécharger l’application cliente de tests avancés
+
+Nous allons ensuite démarrer le téléchargement de l’application cliente de tests avancés. Nous comptons sur l’utilisateur pour lancer l’application cliente et l’installation de .NET Core doit également être installée.
+
+### <a name="start-the-advanced-tests-client-application"></a>Démarrer l’application cliente de tests avancés
+
+Une fois que l’application cliente démarre la page Web est mise à jour pour afficher et que les données de test commencent à être reçues sur la page Web. Elle est mise à jour chaque fois que de nouvelles données sont reçues et vous pouvez passer en revue les données à mesure qu’elles arrivent.
+
+### <a name="advanced-tests-completed-and-test-report-upload"></a>Tests avancés terminés et chargement des rapports de test
+
+Une fois les tests terminés, la page Web et le client de tests avancés l’indiquent et, si l’utilisateur est signé, le rapport de test est téléchargé vers le client client.
+
 ## <a name="connectivity-reports"></a>Rapports de connectivité
 
 Lorsque vous êtes connecté, vous pouvez consulter les rapports précédents que vous avez exécutés. Vous pouvez également les partager ou les supprimer de la liste.
@@ -224,6 +248,10 @@ Voici des réponses à certaines de nos questions fréquemment posées.
 ### <a name="is-this-tool-released-and-supported-by-microsoft"></a>Cet outil est-il publié et pris en charge par Microsoft ?
 
 Il s’agit actuellement d’un aperçu et nous prévoyons de fournir des mises à jour régulièrement jusqu’à ce que nous arrivions à l’état de publication de disponibilité générale avec prise en charge de Microsoft. Veuillez nous faire part de vos commentaires afin de nous aider à améliorer. Nous prévoyons de publier un guide d’intégration réseau Office 365 plus détaillé dans le cadre de cet outil, qui est personnalisé pour l’organisation par les résultats des tests.
+
+### <a name="what-is-required-to-run-the-advanced-test-client"></a>Qu’est-ce qui est requis pour exécuter le client de test avancé ?
+
+Le client de test avancé requiert .NET Core 3,1 Desktop Runtime. Si vous exécutez le client de test avancé sans l’installer, vous serez redirigé vers [la page .net Core 3,1 installer](https://dotnet.microsoft.com/download/dotnet-core/3.1). Veillez à installer le runtime de bureau et non le kit de développement logiciel, ou le runtime ASP.NET principal qui est plus haut sur la page. Les autorisations d’administrateur sur l’ordinateur sont reuqired pour installer .NET Core. 
 
 ### <a name="what-is-microsoft-365-service-front-door"></a>Qu’est-ce que le service frontal de Microsoft 365 ?
 

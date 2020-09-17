@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 8c4b136f30da0499b31102683f1a903e71813142
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 1512ba01f78d901177254fce86d0154e97e36496
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547220"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950796"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Stratégies communes pour les identités et l’accès aux appareils
 
@@ -35,6 +35,10 @@ Le diagramme suivant illustre l’ensemble de stratégies recommandé. Elle indi
 
 [ ![ Stratégies courantes de configuration de l’identité et de l’accès aux appareils](../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png) 
  [voir une version plus grande de cette image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
+
+Voici un résumé PDF d’une page avec des liens vers les stratégies individuelles :
+
+[![Image miniature pour la protection des identités et des périphériques pour le document Microsoft 365](../media/microsoft-365-policies-configurations/MSFT-cloud-architecture-identity-device-protection-handout.png)](../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) <br/>  [Afficher en tant que PDF](../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) \| [Télécharger en tant que fichier PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf)  
 
 Le reste de cet article explique comment configurer ces stratégies. 
 
@@ -374,7 +378,6 @@ Pour exiger la conformité de tous les périphériques, procédez comme suit :
 
 ## <a name="next-step"></a>Étape suivante
 
-![Étape 3 : stratégies pour les utilisateurs invités et externes](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-3.png)
-
+[![Étape 3 : stratégies pour les utilisateurs invités et externes](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-3.png)](identity-access-policies-guest-access.md)
 
 [En savoir plus sur les recommandations de stratégie pour les utilisateurs invités et externes](identity-access-policies-guest-access.md)

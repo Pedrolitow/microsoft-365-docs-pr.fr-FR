@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-infoprotection
 ms.custom: ''
 description: Utilisez les étiquettes et les stratégies de rétention de Microsoft 365 pour gérer les données personnelles dans votre environnement Microsoft 365.
-ms.openlocfilehash: a7a0d6e00d29d80dfd0cb72ba217177aa6029a2c
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 766995b9c758d4ae8cbf7140fb259d208cfb7771
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46522300"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949251"
 ---
 # <a name="govern-information-subject-to-data-privacy-regulation"></a>Régir les informations soumises au règlement de confidentialité des données
 
@@ -81,27 +81,13 @@ Gardez les éléments suivants à l’esprit :
 
 - Une fois que les types d’informations personnelles de votre environnement sont mieux connus, établissez des calendriers de rétention et de suppression pour ce type de contenu et ajustez votre architecture d’informations pour faciliter la gestion de ce type d’informations. Par exemple, isolez les informations personnelles dans des sites, bibliothèques ou dossiers distincts avec un accès contrôlé.
 
-### <a name="retention-policies"></a>Stratégies de rétention
+### <a name="retention-policies-and-retention-labels"></a>Stratégies de rétention et étiquettes de rétention.
 
-Créez et déployez des [stratégies de rétention](../compliance/retention-policies.md) pour le contenu des sites qui sont automatiquement appliqués.
-
-Pour la confidentialité des données des sites qui contiennent ou sont supposés contenir des données personnelles, spécifiez les règles de rétention ou de suppression pour résoudre les normes organisationnelles.
-
-### <a name="retention-labels"></a>Étiquettes de rétention
-
-Créez et déployez des [étiquettes de rétention](../compliance/labels.md) pour le contenu et le courrier électronique.
-
-Pour la confidentialité des données pour les sites, les bibliothèques, les dossiers et le courrier électronique qui contiennent ou sont censés contenir des données personnelles, spécifiez les règles de suppression ou de rétention automatique pour résoudre les normes organisationnelles.
+Utilisez [des stratégies de rétention et des étiquettes de rétention](../compliance/retention.md) pour conserver ou supprimer du contenu dans Microsoft 365 qui contient ou est supposé contenir des données personnelles.
 
 ### <a name="records-management"></a>Gestion des enregistrements
 
-Créer et déployer des étiquettes de rétention pour la gestion des enregistrements sur la base d’un plan de gestion et d’un plan de gestion des enregistrements.
+Utilisez des étiquettes de rétention qui déclarent le contenu a record pour mettre en œuvre une [solution de gestion des enregistrements](../compliance/records-management.md) pour les données dans Microsoft 365.
 
-Pour la confidentialité des données, les demandes des personnes concernées (DSR) reçues par le service juridique sont déclarées comme enregistrements et stockées indéfiniment pour adhérer aux spécifications de rétention des activités réglementaires.
+Pour la confidentialité des données, les demandes des personnes concernées (DSR) reçues par le service juridique sont déclarées en tant qu’enregistrements et peuvent être conservées indéfiniment ou cédées avec preuve, afin de respecter les spécifications de rétention des activités réglementaires.
 
-Pour plus d’informations, consultez les ressources suivantes : 
-
-- [Gestion des enregistrements](../compliance/records-management.md)
-- [Gestionnaire de plan de fichiers](../compliance/file-plan-manager.md)
-- [Rétention basée sur les événements pour la gestion des enregistrements](../compliance/automate-event-driven-retention.md)
-- [Disposition de contenu](../compliance/disposition-reviews.md)

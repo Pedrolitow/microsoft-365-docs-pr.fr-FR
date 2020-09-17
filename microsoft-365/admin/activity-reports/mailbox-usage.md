@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: beffbe01-ce2d-4614-9ae5-7898868e2729
 description: Découvrez comment obtenir un rapport d’utilisation des boîtes aux lettres pour connaître les activités des utilisateurs à l’aide d’une boîte aux lettres utilisateur.
-ms.openlocfilehash: 15da09574b2273e119ba9cf2c132d2e9596e9a64
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 0b0c57bda813e1600866513df86b7c973dcdffdc
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387680"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949131"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---mailbox-usage"></a>Rapports Microsoft 365 dans le centre d’administration-utilisation des boîtes aux lettres
 
@@ -44,7 +44,7 @@ Le **rapport d’utilisation des boîtes aux lettres** fournit des informations 
 
 Pour obtenir un aperçu de l' **utilisation des boîtes aux lettres** de votre organisation, consultez les graphiques **Boîte aux lettres**, **Stockage** et **Quota**. 
   
-|||
+|Item|Description|
 |:-----|:-----|
 |1.  <br/> |Le rapport **Utilisation des boîtes aux lettres** permet d'observer les tendances des 7, 30, 90 ou 180 derniers jours. Toutefois, si vous sélectionnez un jour particulier dans le rapport, le tableau affiche les données de 28 jours maximum à compter de la date actuelle (pas la date à laquelle le rapport a été généré).  <br/> |
 |2.  <br/> |Les données de chaque rapport couvrent généralement les 24 à 48 heures.  <br/> |

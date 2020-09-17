@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: Découvrez comment obtenir un rapport d’activité Microsoft Forms à l’aide du tableau de bord des rapports Microsoft 365 dans le centre d’administration Microsoft 365.
-ms.openlocfilehash: f835533fb626c8d6e7bd408b90abaa558304e20b
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 78b09edfbfeb83c056af16787085b7c4cfe93fc6
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387752"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949203"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>Rapports Microsoft 365 dans le centre d’administration-activité des formulaires
 
@@ -47,7 +47,7 @@ Vous pouvez obtenir une vue de l’activité des formulaires de votre utilisateu
 
 ![Rapport d’activité de formulaires](../../media/adminformsactivity.png)
 
-|||
+|Item|Description|
 |:-----|:-----|
 |1.  <br/> |Le rapport d' **activité de formulaires** peut être consulté pour connaître les tendances des 7, 30, 90 ou 180. Toutefois, si vous sélectionnez un jour particulier dans le rapport, le tableau (7) affiche les données jusqu’à 28 jours après la date actuelle (pas la date de génération du rapport).  <br/> |
 |2.  <br/> |Les données de chaque rapport couvrent généralement les 24 à 48 heures.  <br/> |

@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 2c654cb0ec2afd138c7c9fb4b339b53a8522e5e4
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 034dd31309c783e8b231a113d2bda5ccb1888d5b
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547203"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950759"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Tâches préalables à l’implémentation de stratégies d’accès aux identités et aux appareils
 
@@ -116,6 +116,6 @@ Voici quelques recommandations supplémentaires :
 
 ## <a name="next-step"></a>Étape suivante
 
-![Étape 2 : configurer les stratégies d’accès conditionnel d’identité et d’accès courantes](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png)
+[![Étape 2 : configurer les stratégies d’accès conditionnel d’identité et d’accès courantes](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png)](identity-access-policies.md)
 
 [Configurer les stratégies courantes d’identité et d’accès aux appareils](identity-access-policies.md)

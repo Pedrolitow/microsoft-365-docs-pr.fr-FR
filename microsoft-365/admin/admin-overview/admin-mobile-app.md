@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: e16f6421-2a1a-4142-bf9d-9846600a060a
 description: Obtenez l’application d’administration de Microsoft 365 et apprenez à gérer votre organisation en ligne à partir de votre téléphone ou tablette.
-ms.openlocfilehash: 287aafb0be3161c5f100211d6d8169fd133d427b
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 1ad44ccc379b5115ad36e657708eed38f58dca34
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780540"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948807"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>À propos de l’application mobile d’administration Microsoft 365
 
@@ -43,7 +43,7 @@ L’application d’administration est une application riche en fonctionnalités
 - Réinitialiser le mot de passe d'un utilisateur
 - Attribuer des licences
 - Ajouter ou supprimer des appartenances aux groupes
-- Ajouter des utilisateurs 
+- Ajout d’utilisateurs 
 
 Et si vous êtes quelqu’un responsable de plusieurs organisations en ligne, vous vous connectez à plusieurs développées et passez rapidement de l’une à l’autre. 
   
@@ -61,7 +61,7 @@ Visionnez une courte vidéo sur l’installation de l’application mobile admin
 Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
  
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 Vous trouverez ci-dessous des réponses à des questions fréquemment posées sur l'application.
   
@@ -88,6 +88,10 @@ Les chiffres indiquent le nombre total de messages de la semaine dernière, pas 
 ### <a name="how-can-i-share-the-service-incidents-and-messages-with-the-rest-of-my-organization"></a>Comment puis-je partager des incidents et des messages de service avec le reste de mon organisation ?
 
 Si vous sélectionnez un incident de service ou un message spécifique, l’option de partage se trouve dans le coin supérieur droit. Nous prenons actuellement en charge le partage de courrier.
+  
+### <a name="can-i-use-this-app-with-multiple-accounts-or-tenants"></a>Puis-je utiliser cette application avec plusieurs comptes ou clients ?
+
+Oui, vous pouvez configurer plusieurs comptes ou clients.
   
 ### <a name="my-app-is-acting-funny-what-can-i-do-to-troubleshoot-weird-app-behavior"></a>Mon application se comporte bizarrement. Que puis-je faire pour corriger ce comportement étrange de l'application ?
 

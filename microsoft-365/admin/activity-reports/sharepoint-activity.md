@@ -21,12 +21,12 @@ search.appverid:
 - BSA160
 ms.assetid: a91c958f-1279-499d-9959-12f0de08dc8f
 description: Obtenir le rapport d’utilisation des activités SharePoint pour savoir quelle est l’activité de chaque utilisateur SharePoint, le nombre de fichiers partagés et l’utilisation du stockage.
-ms.openlocfilehash: de4d4951f98e722a3608e9bccf2c4a1dbfc388d0
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b0c628300647e83889e273268bef7abd9e337ed4
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387488"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948867"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-activity"></a>Rapports Microsoft 365 dans le centre d’administration-activité SharePoint
 
@@ -53,7 +53,7 @@ Si vous voulez connaître le volume d'activité sur chaque site SharePoint et l'
 
 Vous pouvez voir l'activité de SharePoint en examinant les vues **Fichiers** et **Utilisateurs**.<br/> ![SharePoint Activity Report](../../media/96ee85af-f213-499b-9e2b-22912bd0b8c2.png)
   
-|||
+|Item|Description|
 |:-----|:-----|
 |1.  <br/> |Le **rapport d'activité de SharePoint** permet d'observer les tendances des 7, 30, 90 ou 180 derniers jours. Toutefois, si vous sélectionnez un jour particulier dans le rapport, le tableau (7) affiche les données jusqu’à 28 jours après la date actuelle (pas la date de génération du rapport).  <br/> |
 |2.  <br/> |Les données de chaque rapport couvrent généralement les 24 à 48 heures.  <br/> |

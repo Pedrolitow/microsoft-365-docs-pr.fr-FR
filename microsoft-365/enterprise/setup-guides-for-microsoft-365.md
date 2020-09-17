@@ -3,7 +3,7 @@ title: Guides de configuration pour les services Microsoft 365 et Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/15/2020
+ms.date: 09/15/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Accélérez la planification et la configuration de Microsoft 365 ou Office 365 avec les guides de configuration.
-ms.openlocfilehash: 2f2c398a3e807b3859cf8f53f63a0ac908ba2683
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 879942d75f37a7984dad8f4ac5dc99933b3988f4
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46689792"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949737"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Guides de configuration pour les services Microsoft 365 et Office 365
 
@@ -51,7 +51,7 @@ Les guides de configuration sont accessibles à partir de la page aide sur l' [i
 
 ## <a name="how-do-setup-guides-work-in-the-microsoft-365-admin-center"></a>Comment fonctionnent les guides de configuration dans le centre d’administration Microsoft 365 ?
 
-Chaque guide vous fournit des instructions détaillées, des ressources, des articles et, le cas échéant, des scripts que vous pouvez utiliser pour modifier la configuration. Ces guides vous fournissent des choix qui reflètent les besoins spécifiques des petites et grandes développées. En outre, les conseils fournis incluent une assistance pour les administrateurs nouveaux et plus expérimentés.
+Chaque guide vous fournit des instructions détaillées, des ressources, des articles et, le cas échéant, des scripts que vous pouvez utiliser pour modifier la configuration. Ces guides vous fournissent des choix qui reflètent les besoins spécifiques des petites et des grandes organisations. En outre, les conseils fournis incluent une assistance pour les administrateurs nouveaux et plus expérimentés.
 
 ![Exemple de guide de configuration](../media/setup-guides-for-microsoft-365/m365-setupguide-example.png)
 
@@ -90,7 +90,7 @@ Le bureau virtuel Windows est un service de virtualisation d’applications et d
 
 Le [Guide de configuration de bureau virtuel Windows](https://aka.ms/wvdsetupguide) fournit aux administrateurs des ressources de planification et les conditions préalables au déploiement, au Guide de configuration et aux ressources supplémentaires. 
 
-## <a name="guides-for-security"></a>Guides de sécurité
+## <a name="guides-for-authentication-and-access"></a>Guides d’authentification et d’accès
 
 ### <a name="azure-ad-setup-guide"></a>Guide de configuration d’Azure AD
 
@@ -103,6 +103,18 @@ Il contient également des informations essentielles sur l’activation de la r�
 Effectuez une mise à niveau vers une autre approche de connexion qui permet aux utilisateurs d’accéder à leurs appareils en toute sécurité avec l’une des méthodes d’authentification sans mot de passe suivantes : Windows Hello entreprise, Microsoft Authenticator App ou des clés de sécurité. 
 
 Utilisez l' [Assistant planifier un déploiement en mode mot de passe](https://aka.ms/passwordlesssetup) pour découvrir les meilleures méthodes d’authentification par mot de passe et recevoir des instructions sur leur déploiement. 
+
+### <a name="plan-your-self-service-password-reset-deployment"></a>Planifier le déploiement de la réinitialisation du mot de passe en libre-service
+
+Donner aux utilisateurs la possibilité de modifier ou de réinitialiser leur mot de passe indépendamment, si leur compte est verrouillé, ou s’ils oublient leur mot de passe sans avoir besoin de contacter un ingénieur du support technique. 
+
+Utilisez l' [Assistant Planification de votre déploiement de réinitialisation de mot de passe libre-service](https://aka.ms/SSPRSetupGuide) pour recevoir les articles et instructions appropriés pour la configuration des options de portail Azure appropriées afin de vous aider à déployer le SSPR dans votre environnement.
+
+### <a name="active-directory-federation-services-ad-fs-deployment-advisor"></a>Gestionnaire de déploiement des services ADFS (Active Directory Federation Services)
+
+Le [conseiller de déploiement AD FS](https://aka.ms/adfsguidance) vous fournit des instructions détaillées sur le déploiement d’une infrastructure AD FS locale qui authentifie les utilisateurs pour les services Microsoft 365 et Office 365. Dans ce guide, votre organisation peut consulter les composants et les exigences AD FS, acquérir et installer des certificats SSL nécessaires au déploiement, et installer un serveur proxy d’application Web requis. 
+
+## <a name="guides-for-security-and-compliance"></a>Guides de sécurité et de conformité
 
 ### <a name="microsoft-defender-advanced-threat-protection-atp-advisor"></a>Conseiller de protection avancée contre les menaces Microsoft Defender (ATP)
 
@@ -121,31 +133,39 @@ Utilisez le [Guide de configuration d’Exchange Online Protection](https://aka.
 
 [Office 365 Advanced Threat Protection Advisor](https://aka.ms/oatpsetup) protège votre organisation contre les menaces malveillantes que votre environnement peut rencontrer par le biais de messages électroniques, de liens et d’outils de collaboration tiers. Ce guide vous fournit des ressources et des informations pour vous aider à préparer et à identifier le plan de protection avancée contre les menaces pour répondre aux besoins de votre organisation. 
 
-### <a name="active-directory-federation-services-ad-fs-deployment-advisor"></a>Gestionnaire de déploiement des services ADFS (Active Directory Federation Services)
+### <a name="microsoft-information-protection-setup-guide"></a>Guide de configuration de la protection des informations Microsoft
 
-Le [conseiller de déploiement AD FS](https://aka.ms/adfsguidance) vous fournit des instructions détaillées sur le déploiement d’une infrastructure AD FS locale qui authentifie les utilisateurs pour les services Microsoft 365 et Office 365. Avec ce guide, votre organisation peut passer en revue les composants et les exigences AD FS, acquérir et installer des certificats SSL nécessaires au déploiement, et installer un serveur proxy d’application Web requis. 
+Obtenez une vue d’ensemble des fonctionnalités que vous pouvez appliquer à votre stratégie de protection des informations afin de garantir la protection de vos informations sensibles. Utilisez une approche de cycle de vie à quatre étapes dans laquelle vous découvrez, classez, protégez et surveillez les informations sensibles. Le [Guide de configuration de la protection des informations Microsoft](https://aka.ms/mipsetupguide) fournit des conseils pour effectuer chacune de ces étapes.
+
+### <a name="microsoft-information-governance-setup-guide"></a>Guide de configuration de la gouvernance des informations Microsoft
+
+Le [Guide de configuration de la gouvernance des informations Microsoft](https://aka.ms/migsetupguide) vous fournit les informations dont vous aurez besoin pour configurer et gérer la stratégie de gouvernance de votre organisation, afin de vous assurer que vos données sont classées et gérées conformément aux directives de cycle de vie spécifiques que vous définissez. Ce guide explique comment créer, appliquer automatiquement ou publier des étiquettes, des stratégies d’étiquette et des stratégies de rétention appliquées aux enregistrements de contenu et de conformité réutilisables de votre organisation. Vous obtiendrez également des informations sur l’importation de fichiers CSV avec un plan de fichiers pour les scénarios en bloc ou pour leur application manuelle aux documents individuels. 
 
 ## <a name="guides-for-collaboration"></a>Guides de collaboration
 
-### <a name="microsoft-365-apps-for-enterprise-deployment-advisor"></a>Applications Microsoft 365 pour le conseiller de déploiement d’entreprise
+### <a name="microsoft-365-apps-deployment-advisor"></a>Conseiller en déploiement d’applications Microsoft 365
 
 Le [conseiller de déploiement d’applications Microsoft 365](https://aka.ms/OPPquickstartguide) vous permet d’obtenir les appareils de vos utilisateurs qui exécutent la dernière version des produits Office tels que Word, Excel, PowerPoint et OneNote. Vous obtiendrez des conseils sur les différentes méthodes de déploiement qui incluent des options faciles à installer sur les déploiements d’entreprise avec des outils de gestion. Les instructions vous aideront à évaluer votre environnement, à déterminer vos besoins spécifiques en matière de déploiement et à implémenter les outils de support nécessaires pour garantir la réussite de l’installation. 
 
-### <a name="mobile-apps-setup-assistant"></a>Assistant Installation des applications mobiles
+### <a name="office-mobile-apps-setup-assistant"></a>Assistant Installation des applications Office Mobile
 
-L' [Assistant d’installation des applications mobiles](https://aka.ms/officeappguidance) fournit des instructions pour le téléchargement et l’installation des applications Office sur vos appareils mobiles Windows, iOS et Android. Ce guide fournit des informations détaillées sur le téléchargement et l’installation des applications Microsoft 365 et Office 365 sur votre téléphone et les tablettes.
+L' [Assistant Installation des applications Office Mobile](https://aka.ms/officeappguidance) fournit des instructions pour le téléchargement et l’installation des applications Office sur vos appareils mobiles Windows, iOS et Android. Ce guide fournit des informations détaillées sur le téléchargement et l’installation des applications Microsoft 365 et Office 365 sur votre téléphone et les tablettes.
 
 ### <a name="microsoft-teams-setup-guide"></a>Guide de configuration de Microsoft teams
 
 Le [Guide de configuration de Microsoft](https://aka.ms/teamsguidance) teams fournit à votre organisation des conseils pour configurer des espaces de travail d’équipe qui hébergent des conversations en temps réel via la messagerie, les appels et les réunions audio ou vidéo pour les communications d’équipe et privées. Vous recevrez les instructions permettant de déterminer la configuration réseau requise de votre organisation à l’aide de l’outil Network Planner et du conseiller teams dans le centre d’administration Teams. Une fois que votre déploiement est terminé, le guide inclut des ressources utiles pour commencer à utiliser Teams.
 
-### <a name="sharepoint-deployment-advisor"></a>Conseiller de déploiement SharePoint
+### <a name="sharepoint-setup-guide"></a>Guide de configuration SharePoint
 
-Le [conseiller de déploiement SharePoint](https://aka.ms/spoguidance) vous aide à configurer le stockage de documents et la gestion de contenu SharePoint, à créer des sites, à configurer le partage externe, à migrer les données et à configurer les paramètres avancés, tout cela pour diriger les utilisateurs et la communication au sein de votre organisation. Vous allez suivre les étapes de configuration de vos stratégies d’autorisation de partage de contenu, de choisir vos outils de synchronisation de migration, ainsi que d’activer les paramètres de sécurité pour votre environnement SharePoint. 
+Le [Guide de configuration SharePoint](https://aka.ms/spoguidance) vous aide à configurer le stockage de documents et la gestion de contenu SharePoint, à créer des sites, à configurer le partage externe, à migrer les données et à configurer les paramètres avancés, ainsi qu’à diriger les utilisateurs et les communications au sein de votre organisation. Vous allez suivre les étapes de configuration de vos stratégies d’autorisation de partage de contenu, de choisir vos outils de synchronisation de migration, ainsi que d’activer les paramètres de sécurité pour votre environnement SharePoint. 
 
-### <a name="onedrive-quick-start-guide"></a>Guide de démarrage rapide OneDrive
+### <a name="onedrive-setup-guide"></a>Guide de configuration OneDrive
 
 Utilisez le [Guide de configuration onedrive](https://aka.ms/ODfBquickstartguide) pour commencer à utiliser les fonctionnalités de stockage, de partage, de collaboration et de synchronisation des fichiers onedrive. OneDrive offre un emplacement central où les utilisateurs peuvent synchroniser leurs fichiers d’applications Microsoft 365, configurer le partage externe, migrer des données utilisateur et configurer des paramètres de sécurité et d’accès aux appareils avancés. Le Guide de configuration de OneDrive peut être déployé à l’aide d’un abonnement OneDrive ou d’un plan OneDrive autonome. 
+
+### <a name="yammer-deployment-advisor"></a>Conseiller en matière de déploiement de Yammer
+
+Connectez-vous et faites appel à Yammer dans votre organisation. Le [conseiller de déploiement de Yammer](https://aka.ms/yammerdeploymentguide) prépare votre réseau yammer en ajoutant des domaines, en définissant des administrateurs et en associant des réseaux Yammer. Vous obtiendrez des conseils pour déployer Yammer, puis personnaliser l’apparence, configurer la sécurité et la conformité, et affiner les paramètres.
 
 ## <a name="advanced-wizards"></a>Assistants avancés
 
@@ -156,6 +176,12 @@ Utilisez le [Guide de mise à niveau sur place avec le gestionnaire de configura
 ### <a name="deploy-office-to-your-users"></a>Déploiement d’Office pour vos utilisateurs
 
 Déployez les applications Office à partir du Cloud avec la possibilité de personnaliser votre installation à l’aide de l’outil déploiement d’Office. Le [Guide deploy Office to your Users ](https://aka.ms/proplusodt) vous aide à créer une configuration Office personnalisée avec des paramètres avancés, ou vous pouvez utiliser une configuration prédéfinie recommandée. Que les utilisateurs effectuent une auto-installation ou que vous déployez sur vos utilisateurs individuellement ou en bloc, cet Assistant avancé vous fournit des instructions détaillées pour permettre aux utilisateurs une installation Office adaptée à votre organisation.
+
+### <a name="deploy-office-to-remote-users"></a>Déploiement d’Office auprès d’utilisateurs distants
+
+À présent que le travail à distance est normal, les utilisateurs doivent recevoir les paramètres Office de votre organisation lorsqu’ils ne sont pas connectés à votre réseau interne ou lorsque vous utilisez leurs propres périphériques. 
+
+Utilisez le [Guide deploy Office to Remote Users](https://aka.ms/officeremoteinstall) pour créer une installation personnalisée d’Office, puis envoyez aux utilisateurs un script PowerShell généré qui installera Office avec votre configuration.
 
 ### <a name="deploy-and-update-microsoft-365-apps-with-configuration-manager"></a>Déployer et mettre à jour les applications Microsoft 365 avec le gestionnaire de configuration
 

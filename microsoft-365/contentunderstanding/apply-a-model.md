@@ -6,17 +6,17 @@ manager: pamgreen
 ms.date: 8/1/2020
 audience: admin
 ms.topic: article
-ms.service: ''
+ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Découvrez comment appliquer un modèle publié à une bibliothèque de documents SharePoint.
-ms.openlocfilehash: 0658710704273ed04e9f2067413d1141773ef4aa
-ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
+ms.openlocfilehash: 8a4931f4b7a936caeb99d7f8c07deefdac62919b
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46612679"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950247"
 ---
 # <a name="apply-a-document-understanding-model-preview"></a>Appliquer un modèle de présentation de document (aperçu)
 
@@ -39,7 +39,7 @@ Après avoir publié votre modèle de présentation de document, vous pouvez l�
 
 Pour appliquer votre modèle à une bibliothèque de documents SharePoint :
 
-1. Sur la page d’accueil du modèle, dans la vignette **appliquer le modèle aux bibliothèques** , sélectionnez **publier le modèle**. Ou vous pouvez sélectionner l’option **+ Ajouter une bibliothèque** dans la section **bibliothèques avec ce modèle** . </br>
+1. Sur la page d’accueil du modèle, dans la vignette **appliquer le modèle aux bibliothèques** , sélectionnez **publier le modèle**. Ou vous pouvez sélectionner l’option  **+ Ajouter une bibliothèque** dans la section **bibliothèques avec ce modèle** . </br>
 
     ![Ajouter un modèle à la bibliothèque](../media/content-understanding/apply-to-library.png)</br>
 

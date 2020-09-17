@@ -17,30 +17,29 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 72d02bafa168e48c2d588771f5289da09e6d6000
-ms.sourcegitcommit: 234726a1795d984c4659da68f852d30a4dda5711
+ms.openlocfilehash: 4ee07abe7ce1432921a843d713d0f9b914631174
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46794230"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949311"
 ---
 # <a name="assignedipaddresses"></a>AssignedIPAddresses()
 
 **S’applique à :**
 - Protection Microsoft contre les menaces
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+Utilisez la `AssignedIPAddresses()` fonction pour obtenir rapidement les dernières adresses IP qui ont été affectées à un appareil. Si vous spécifiez un argument timestamp, cette fonction obtient les adresses IP les plus récentes à l’heure spécifiée. 
 
-Utilisez la `AssignedIPAddresses()` fonction pour obtenir rapidement les dernières adresses IP qui ont été affectées à un appareil ou les adresses IP les plus récentes à partir d’un moment donné. Cette fonction renvoie une table avec les colonnes suivantes :
+Cette fonction renvoie une table avec les colonnes suivantes :
 
 | Colonne | Type de données | Description |
 |------------|-------------|-------------|
-| Timestamp | DateHeure | Dernière heure à laquelle l’appareil a été observé à l’aide de l’adresse IP |
-| IPAddress | string | Adresse IP utilisée par l’appareil |
-| IPType | string | Indique si l’adresse IP est une adresse publique ou privée |
-| NetworkAdapterType | int | Type de carte réseau utilisé par l’appareil auquel l’adresse IP a été attribuée. Pour les valeurs possibles, reportez-vous à [cette énumération](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype?view=netframework-4.7.2)  |
-| ConnectedNetworks | int | Réseaux auxquels est connectée la carte à laquelle l’adresse IP est attribuée. Chaque tableau JSON contient le nom de réseau, la catégorie (public, Private ou Domain), une description et un indicateur qui indique s’il est connecté publiquement à Internet. |
-
+| `Timestamp` | DateHeure | Dernière heure à laquelle l’appareil a été observé à l’aide de l’adresse IP |
+| `IPAddress` | string | Adresse IP utilisée par l’appareil |
+| `IPType` | string | Indique si l’adresse IP est une adresse publique ou privée |
+| `NetworkAdapterType` | int | Type de carte réseau utilisé par l’appareil auquel l’adresse IP a été attribuée. Pour les valeurs possibles, reportez-vous à [cette énumération](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype) |
+| `ConnectedNetworks` | int | Réseaux auxquels est connectée la carte à laquelle l’adresse IP est attribuée. Chaque tableau JSON contient le nom de réseau, la catégorie (public, privé ou domaine), une description et un indicateur qui indique s’il est connecté publiquement à Internet. |
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -50,12 +49,12 @@ AssignedIPAddresses(x, y)
 
 ## <a name="arguments"></a>Arguments
 
-- **x** — `DeviceId` ou `DeviceName` valeur identifiant l’appareil
-- **y** — `Timestamp` valeur (DateTime) indiquant le moment spécifique où obtenir les adresses IP les plus récentes. Si ce n’est pas spécifié, la fonction renvoie les dernières adresses IP.
+- **x**— `DeviceId` ou `DeviceName` valeur identifiant l’appareil
+- **y**— `Timestamp` valeur (DateTime) indiquant à la fonction d’obtenir les adresses IP affectées les plus récentes à partir d’un certain temps. Si ce n’est pas spécifié, la fonction renvoie les dernières adresses IP.
 
 ## <a name="examples"></a>Exemples
 
-### <a name="get-the-list-of-ip-addresses-used-by-a-device-as-of-24-hours-ago"></a>Obtenir la liste des adresses IP utilisées par un périphérique au plus tôt 24 heures
+### <a name="get-the-list-of-ip-addresses-used-by-a-device-24-hours-ago"></a>Obtenir la liste des adresses IP utilisées par un périphérique il y a 24 heures
 
 ```kusto
 AssignedIPAddresses('example-device-name', ago(1d))
@@ -76,7 +75,7 @@ AssignedIPAddresses(DeviceName, Date)
 | where Timestamp between ((AssignedTime - 1h) .. (AssignedTime + 1h))
 ```
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Comprendre le schéma](advanced-hunting-schema-tables.md)

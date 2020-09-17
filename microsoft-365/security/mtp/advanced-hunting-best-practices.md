@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 3ca475ef6dbdbd66af47216c4130d748788730c2
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 2259158c566223c39a6b533483551f95c2fa0824
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419131"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949299"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>Pratiques recommandées pour la requête de repérage avancé
 
@@ -31,7 +31,12 @@ ms.locfileid: "47419131"
 
 Appliquez ces recommandations pour obtenir des résultats plus rapidement et éviter les délais d’attente lors de l’exécution de requêtes complexes. Si vous souhaitez en savoir plus sur l’amélioration des performances de requête, veuillez consulter [Meilleures pratiques de requête Kusto](https://docs.microsoft.com/azure/kusto/query/best-practices).
 
-## <a name="general-guidance"></a>Directives générales
+## <a name="understand-cpu-resource-limits"></a>Comprendre les limites de ressources d’UC
+En fonction de sa taille, chaque client a accès à un nombre défini de ressources CPU allouées à l’exécution de requêtes de chasse avancées. Pour plus d’informations sur les différentes limites de service, consultez la rubrique [relative aux limites de chasse avancée](advanced-hunting-limits.md).
+
+Les clients qui exécutent régulièrement plusieurs requêtes doivent suivre la consommation et appliquer les conseils d’optimisation de cet article pour minimiser les interruptions résultant du dépassement des limites.
+
+## <a name="general-optimization-tips"></a>Conseils généraux pour l’optimisation
 
 - **Taille des nouvelles requêtes**: Si vous pensez qu’une requête renverra un jeu de résultats volumineux, évaluez-la d’abord à l’aide de l' [opérateur Count](https://docs.microsoft.com/azure/data-explorer/kusto/query/countoperator). Utilisez la [limite](https://docs.microsoft.com/azure/data-explorer/kusto/query/limitoperator) ou son synonyme `take` pour éviter les jeux de résultats volumineux.
 - **Appliquer des filtres plus tôt**: appliquer des filtres de temps et d’autres filtres pour réduire le jeu de données, en particulier avant d’utiliser les fonctions de transformation et d’analyse, telles que [Substring ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/substringfunction), [Replace (](https://docs.microsoft.com/azure/data-explorer/kusto/query/replacefunction)), [Trim ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/trimfunction), [ToUpper ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/toupperfunction)ou [parse_json ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsejsonfunction). Dans l’exemple ci-dessous, la fonction d’analyse [extractjson ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/extractjsonfunction) est utilisée après que les opérateurs de filtrage ont réduit le nombre d’enregistrements.
@@ -255,9 +260,7 @@ Pour en savoir plus sur toutes les fonctions d’analyse prises en charge, consu
 
 ## <a name="related-topics"></a>Voir aussi
 - [Documentation du langage de requête Kusto](https://docs.microsoft.com/azure/data-explorer/kusto/query/)
+- [Limites de service](advanced-hunting-limits.md)
+- [Gérer les erreurs de chasse avancées](advanced-hunting-errors.md)
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
-- [Travailler avec les résultats de la requête](advanced-hunting-query-results.md)
-- [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)
-- [Rechercher sur les appareils, les emails, les applications et les identités](advanced-hunting-query-emails-devices.md)
-- [Comprendre le schéma](advanced-hunting-schema-tables.md)

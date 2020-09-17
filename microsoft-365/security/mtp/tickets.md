@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-ms.openlocfilehash: 12ac7d0a3d07749e16443e645f50de8fda185658
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: b9e900baf02e9fc866fe6fe520ad1e40ccd565de
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46866778"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950699"
 ---
 # <a name="integrate-servicenow-tickets-into-the-microsoft-365-security-center-and-compliance-center"></a>Intégration des tickets ServiceNow dans le centre de sécurité et le centre de sécurité Microsoft 365
 
@@ -32,7 +32,7 @@ ms.locfileid: "46866778"
 
 ServiceNow est une plateforme de Cloud Computing populaire qui permet aux entreprises de gérer les flux de travail numériques pour les opérations d’entreprise. La plate-forme actuelle possède des flux de travail informatiques, des flux de travail d’employés et des flux de travail client. [En savoir plus sur ServiceNow](https://www.servicenow.com/)
 
-Microsoft s’est associé à ServiceNow pour permettre aux administrateurs informatiques de gérer plus facilement leurs tickets et leurs tâches sur les deux plateformes. Le centre de [sécurité microsoft 365](overview-security-center.md) et le [Centre de conformité Microsoft 365](https://docs.microsoft.commicrosoft-365/compliance/microsoft-365-compliance-center) sont en cours d’amélioration avec la possibilité de créer et suivre en mode natif des tickets dans ServiceNow.
+Microsoft s’est associé à ServiceNow pour permettre aux administrateurs informatiques de gérer plus facilement leurs tickets et leurs tâches sur les deux plateformes. Le centre de [sécurité microsoft 365](overview-security-center.md) et le [Centre de conformité Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center) sont en cours d’amélioration avec la possibilité de créer et suivre en mode natif des tickets dans ServiceNow.
 
 - [**Gérer les tickets ServiceNow dans le centre de sécurité**](tickets-security-center.md)
 - **Gérer les tickets ServiceNow dans le centre de conformité** (bientôt disponible)

@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: a88fc5f46a6dafda72a24ba5e80587b24a216955
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: c61526139111885ec345bc4a4dd3cd6b147370e6
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546473"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950807"
 ---
 # <a name="policies-for-allowing-guest-and-external-b2b-access"></a>Stratégies d’autorisation d’accès B2B invité et externe
 
@@ -55,7 +55,9 @@ Pour inclure ou exclure des invités et des utilisateurs externes dans des strat
 ### <a name="guests-vs-external-users"></a>Invités et utilisateurs externes
 Dans Azure AD, les utilisateurs invités et les utilisateurs externes sont les mêmes. Le type d’utilisateur pour les deux est Guest. Les utilisateurs invités sont des utilisateurs B2B.
 
-Microsoft teams différencie les utilisateurs invités et les utilisateurs externes au sein de l’application, mais ils sont tous deux des utilisateurs B2B lors de l’authentification. Pour plus d’informations sur les utilisateurs de teams Guest et External, consultez la rubrique [Enabling Guest and External Access for teams](teams-access-policies.md#enabling-guest-and-external-access-for-teams).
+Microsoft teams différencie les utilisateurs invités et les utilisateurs externes au sein de l’application. Les utilisateurs invités disposent d’un compte Azure AD B2B et peuvent être ajoutés à Teams. Les utilisateurs externes peuvent uniquement participer à des appels, des conversations et des réunions. Pour plus d’informations, reportez-vous à [la comparaison entre les utilisateurs invités et les utilisateurs externes de teams](https://docs.microsoft.com/microsoftteams/communicate-with-users-from-other-organizations#compare-external-and-guest-access).
+
+Pour plus d’informations sur la sécurisation de l’accès aux identités et aux appareils pour Teams, consultez la rubrique [Policy Recommendations for Securing teams chats, Groups et Files](teams-access-policies.md) .
 
 ### <a name="require-mfa-always-for-guest-and-external-users"></a>Exiger MFA pour les utilisateurs invités et externes
 Cette stratégie invite les invités à s’inscrire à l’authentification multifacteur dans votre client, qu’ils soient inscrits pour l’authentification multifacteur dans leur client d’accueil. Lors de l’accès à des ressources dans votre client, les invités et les utilisateurs externes doivent utiliser l’authentification multifacteur pour chaque demande. 

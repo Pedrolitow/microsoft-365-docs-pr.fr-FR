@@ -15,12 +15,12 @@ ms.custom: ''
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Découvrez comment créer un site extranet B2B ou une équipe avec des utilisateurs d’invités gérés à partir d’une organisation partenaire.
-ms.openlocfilehash: 4f8eb33ad9b41f552975d4158a61ec4cedcfa9cc
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 83252241833f3dfe663cc70eae28a5df1214cce0
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46526981"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949383"
 ---
 # <a name="create-a-b2b-extranet-with-managed-guests"></a>Créer un extranet B2B avec des invités gérés
 
@@ -31,6 +31,12 @@ Avec cette méthode de partage des ressources pour la collaboration, l’organis
 Cet article décrit les étapes à suivre pour créer un package de ressources (dans ce cas, un site ou une équipe) que vous pouvez partager avec une organisation partenaire par le biais d’un modèle d’enregistrement d’accès libre-service. 
 
 Avant de commencer, créez le site ou l’équipe que vous souhaitez partager avec l’organisation partenaire et activez-le pour le partage d’invité. Pour plus d’informations, consultez la rubrique [collaborer avec des invités dans un site](collaborate-in-site.md) ou [collaborer avec des invités dans une équipe](collaborate-as-team.md) . Nous vous recommandons également de consulter la rubrique [Create a Secure Guest Sharing Environment](create-secure-guest-sharing-environment.md) pour obtenir des informations sur les fonctionnalités de sécurité et de conformité que vous pouvez utiliser pour gérer vos stratégies de gouvernance lors de la collaboration avec des invités.
+
+## <a name="license-requirements"></a>Critères de licence
+
+L’utilisation de cette fonctionnalité nécessite une licence Azure AD Premium P2. 
+
+Les nuages spécialisés, comme Azure Germany et Azure China 21Vianet, ne sont pas disponibles actuellement.
 
 ## <a name="video-demonstration"></a>Démonstration vidéo
 
@@ -124,4 +130,3 @@ Une fois que vous avez copié le lien, vous pouvez le partager avec votre contac
 ## <a name="see-also"></a>Voir aussi
 
 [Créer un environnement de partage sécurisé avec des invités](create-secure-guest-sharing-environment.md)
-

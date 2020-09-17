@@ -21,16 +21,16 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: Cet article contient des liens vers des informations sur la planification, le test et la migration réseau vers Office 365.
-ms.openlocfilehash: 1e6973f93c65012f4ca007332a47cc6b9e67b3b0
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 2b08b05b8863fd9351510878f9438264bb2999f5
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690173"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948447"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Planification du réseau et de la migration pour Office 365
 
-*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
 Cet article contient des liens vers des informations sur la planification et le test du réseau, ainsi que sur la migration vers Office 365.
   
@@ -51,7 +51,7 @@ Pour estimer la bande passante, procédez comme suit :
     
 2. Déterminez les services et fonctionnalités Office 365 qui seront disponibles pour les clients. Vous aurez probablement des groupes de personnes avec différents services ou profils d’utilisation.
     
-3. Mesurez l’utilisation du réseau pour un groupe pilote de clients. Assurez-vous que les clients pilotes sont représentatifs des différents profils des personnes de l’organisation, ainsi que des différents emplacements géographiques. Vous pouvez vérifier vos résultats par rapport à nos anciennes calculatrices pour [Exchange](https://techcommunity.microsoft.com/t5/exchange-team-blog/announcing-the-exchange-client-network-bandwidth-calculator-beta/ba-p/601744) et [Skype entreprise](https://go.microsoft.com/fwlink/p/?LinkId=321551) ou à l' [étude de cas](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365) que nous avons effectuée sur notre propre réseau. 
+3. Mesurez l’utilisation du réseau pour un groupe pilote de clients. Assurez-vous que les clients pilotes sont représentatifs des différents profils des personnes de l’organisation, ainsi que des différents emplacements géographiques. Vous pouvez vérifier vos résultats sur nos anciennes calculatrices pour [Exchange](https://techcommunity.microsoft.com/t5/exchange-team-blog/announcing-the-exchange-client-network-bandwidth-calculator-beta/ba-p/601744) et [Microsoft teams](https://docs.microsoft.com/microsoftteams/prepare-network) ou sur l' [étude de cas](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365) que nous avons effectuée sur notre propre réseau. 
     
 4. Utilisez les mesures du groupe pilote pour extrapoler l’ensemble des besoins de l’organisation et effectuer un nouveau test pour valider les estimations avant d’apporter des modifications à votre réseau.
     

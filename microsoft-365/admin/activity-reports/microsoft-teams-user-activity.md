@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 07f67fc4-c0a4-4d3f-ad20-f40c7f6db524
 description: Découvrez comment obtenir le rapport d’activité de l’utilisateur de Microsoft teams et obtenir des informations sur l’activité de teams dans votre organisation.
-ms.openlocfilehash: 59fdeec9979b939524279d938e97baf6993d3cb0
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: f4becffe44a8ad5998c0b199b3079dfaa7b04738
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387668"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948975"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>Rapports Microsoft 365 dans le centre d’administration-activité de l’utilisateur Microsoft teams
 
@@ -44,7 +44,7 @@ Le tableau de bord **rapports** Microsoft 365 affiche une vue d’ensemble de l�
 
 Vous pouvez visualiser l'activité d'un utilisateur sur Microsoft Teams en examinant les graphiques **Activité** et **Utilisateurs**.<br/>![Rapports Microsoft 365-activité de l’utilisateur Microsoft Teams.](../../media/40359f81-25f7-416d-bb1e-37289133ef6b.png)
   
-|||
+|Item|Description|
 |:-----|:-----|
 |1.  <br/> |Le rapport **Activité de l'utilisateur sur Microsoft Teams** permet d'observer les tendances des 7, 30, 90 ou 180 derniers jours. Toutefois, si vous sélectionnez un jour particulier dans le rapport, le tableau (7) affiche les données jusqu’à 28 jours après la date actuelle (pas la date de génération du rapport).  <br/> |
 |2.  <br/> |Les données de chaque rapport couvrent généralement les 24 à 48 heures.  <br/> |

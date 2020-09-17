@@ -14,26 +14,32 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Informations sur le réseau Microsoft 365 (aperçu)
-ms.openlocfilehash: b30af89d480383fdc9011d24409e3b418339c70b
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: a9d4dbde112c9b6c74e340824c63ce2b9749e80e
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46689901"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948515"
 ---
 # <a name="microsoft-365-network-insights-preview"></a>Informations sur le réseau Microsoft 365 (aperçu)
 
-Les informations sur le **réseau** sont des mesures de performances en direct collectées à partir de votre client Microsoft 365 et disponibles uniquement par les utilisateurs administratifs de votre client. Les informations s’affichent dans le centre d’administration Microsoft 365 à l’adresse <https://portal.microsoft.com/adminportal/home#/networkperformance> .
+**Network Insights** est une mesure des performances collectées auprès de votre client Microsoft 365 et disponible uniquement par les utilisateurs administratifs de votre client. Les informations s’affichent dans le centre d’administration Microsoft 365 à l’adresse <https://portal.microsoft.com/adminportal/home#/networkperformance> .
 
 Les informations sont destinées à vous aider à concevoir des périmètres réseau pour vos emplacements de bureau. Chaque vue fournit des informations détaillées sur les caractéristiques de performances d’un problème commun spécifique pour chaque emplacement géographique où les utilisateurs accèdent à votre client.
 
-Cinq aspects spécifiques du réseau peuvent être affichés pour chaque emplacement de bureau :
+Six informations spécifiques sur le réseau peuvent être affichées pour chaque emplacement de bureau :
 
 - [Sortie réseau retractée](#backhauled-network-egress)
 - [Meilleures performances détectées pour les clients proches de vous](#better-performance-detected-for-customers-near-you)
 - [Utilisation d’un service frontal Exchange Online non optimal](#use-of-a-non-optimal-exchange-online-service-front-door)
 - [Utilisation d’un service SharePoint Online non optimal](#use-of-a-non-optimal-sharepoint-online-service-front-door)
 - [Vitesse de téléchargement faible à partir de la porte d’entrée SharePoint](#low-download-speed-from-sharepoint-front-door)
+- [Sortie du réseau chinois utilisateur optimal](#china-user-optimal-network-egress)
+
+Il existe deux idées de réseau au niveau du client qui peuvent être affichées pour le client. Elles apparaissent également dans les pages de score producvitivy :
+
+- [Connexions Exchange échantillonnées affectées par les problèmes de connectivité](#exchange-sampled-connections-impacted-by-connectivity-issues)
+- [Connexions SharePoint échantillonnées affectées par les problèmes de connectivité](#sharepoint-sampled-connections-impacted-by-connectivity-issues)
 
 >[!IMPORTANT]
 >Les informations sur le réseau, les recommandations en matière de performances et les évaluations dans le centre d’administration 365 de Microsoft sont actuellement en état d’aperçu et sont uniquement disponibles pour les locataires Microsoft 365 qui ont été apportées dans le programme d’aperçu des fonctionnalités.
@@ -140,6 +146,30 @@ Une sortie Internet plus éloignée des utilisateurs que ces emplacements rédui
 ### <a name="what-should-i-do"></a>Que dois-je faire ?
 
 Pour plus d’informations sur la façon d’atténuer les problèmes de performances liés à cette vue, consultez la rubrique [Office 365 global client Optimization for China Users](microsoft-365-networking-china.md).
+
+## <a name="exchange-sampled-connections-impacted-by-connectivity-issues"></a>Connexions Exchange échantillonnées affectées par les problèmes de connectivité
+
+Cette vue indique quand 50% ou plus des connexions échantillonnées sont concernés. L’impact est défini par l’évaluation Exchange en dessous de 60% pour chaque échantillon.
+
+### <a name="what-does-this-mean"></a>Scénario
+
+Cela indique que la majorité de vos utilisateurs sont susceptibles de rencontrer des problèmes d’expérience utilisateur avec Outlook en se connectant à Exchange Online. Le pourcentage d’échantillons représente probablement le pourcentage d’utilisateurs qui affichent au-dessous de 60 points.  
+
+### <a name="what-should-i-do"></a>Que dois-je faire ?
+
+Activer la visibilité de la connectivité réseau de l’emplacement Office si vous ne l’avez pas déjà fait. Vous voulez identifier les bureaux impactred par une connectivité réseau médiocre qui a un impact sur Exchange et trouver des moyens d’améliorer le périmètre réseau pour chacun d’eux qui connecte les utilisateurs au réseau de Microsoft.
+
+## <a name="sharepoint-sampled-connections-impacted-by-connectivity-issues"></a>Connexions SharePoint échantillonnées affectées par les problèmes de connectivité
+
+Cette vue indique quand 50% ou plus des connexions échantillonnées sont concernés. L’évaluation de SharePoint est définie par l’évaluation de SharePoint en dessous de 40% pour chaque échantillon.
+
+### <a name="what-does-this-mean"></a>Scénario
+
+Cela indique que la majorité de vos utilisateurs sont susceptibles de rencontrer des problèmes d’expérience utilisateur avec SharePoint et OneDrive. Le pourcentage d’échantillons représente probablement le pourcentage d’utilisateurs qui affichent au-dessous de 40 points.  
+
+### <a name="what-should-i-do"></a>Que dois-je faire ?
+
+Activer la visibilité de la connectivité réseau de l’emplacement Office si vous ne l’avez pas déjà fait. Vous voulez identifier les bureaux impactred par une connectivité réseau médiocre qui a un impact sur SharePoint et trouver des moyens d’améliorer le périmètre réseau pour chacun d’eux qui connecte les utilisateurs au réseau de Microsoft.
 
 ## <a name="related-topics"></a>Voir aussi
 

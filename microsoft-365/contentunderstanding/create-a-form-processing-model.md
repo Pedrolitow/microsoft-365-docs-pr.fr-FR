@@ -6,17 +6,17 @@ manager: pamgreen
 ms.date: 8/1/2020
 audience: admin
 ms.topic: article
-ms.service: ''
+ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Créez un modèle de traitement de formulaire dans le projet cortex.
-ms.openlocfilehash: 733baf24d8a484571ba9882fdda2633dc2ce0504
-ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
+ms.openlocfilehash: cec3b9a8b1b58237c4beb745377709d4938a2dba
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46612773"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950143"
 ---
 # <a name="create-a-form-processing-model-preview"></a>Créer un modèle de traitement de formulaire (aperçu)
 
@@ -34,7 +34,7 @@ La création d’un modèle de traitement de formulaire implique les opérations
  - Étape 6 : utiliser votre modèle
 
 
-## <a name="requirements"></a>Conditions préalables
+## <a name="requirements"></a>Configuration requise
 
 Vous pouvez uniquement créer un modèle de traitement de formulaire dans les bibliothèques de documents SharePoint dans lesquelles il est activé. Si le traitement des formulaires est activé, vous pouvez voir le **Générateur d’ai** **« créer un modèle de traitement de formulaire »** dans le menu **automatiser** de votre bibliothèque de documents.  Si vous avez besoin d’un traitement activé dans votre bibliothèque de documents, contactez votre administrateur.
 
@@ -48,7 +48,7 @@ La première étape de la création d’un modèle de traitement de formulaire c
 1. Dans votre bibliothèque de documents, sélectionnez le menu **automatiser** , sélectionnez **générateur ai**, puis sélectionnez **créer un modèle de traitement de formulaire**.
 
     ![Créer un modèle de générateur AI](../media/content-understanding/create-ai-builder-model.png)</br>
-2. Dans le volet **nouveau modèle de traitement de formulaire** , dans le champ **nom** , tapez un nom pour votre modèle (par exemple, *bons de commande*).
+2. Dans le volet **nouveau modèle de traitement de formulaire** , dans le champ  **nom** , tapez un nom pour votre modèle (par exemple, *bons de commande*).
 
     ![Nouveau modèle de traitement de formulaire](../media/content-understanding/new-form-model.png)</br> 
 
