@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: Les administrateurs peuvent découvrir les fonctionnalités d’usurpation d’identité disponibles dans Exchange Online Protection (EOP), qui peuvent vous aider à atténuer les attaques par hameçonnage d’expéditeurs et de domaines usurpés.
-ms.openlocfilehash: 46adb8b666bd9f73cbd76860f58efedc8d3c1c59
-ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
+ms.openlocfilehash: b4d1feda06aa0bd21b72b9642dea845693e20756
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46868878"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949749"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Protection contre l’usurpation d’identité dans EOP
 
@@ -143,7 +143,7 @@ Pour aider les messages de la liste de diffusion à passer les vérifications d�
 
   - Lisez les instructions de ce billet de blog : [Une astuce pour les opérateurs de listes de diffusion afin d'interagir avec DMARC pour éviter les défaillances](https://blogs.msdn.microsoft.com/tzink/2017/03/22/a-tip-for-mailing-list-operators-to-interoperate-with-dmarc-to-avoid-failures/).
 
-  - Songez à installer des mises à jour sur votre serveur de liste de diffusion pour prendre en charge ARC. Pour ce faire, voir [https://arc-spec.org](https://arc-spec.org/).
+  - Envisagez d'installer des mises à jour sur le serveur de votre liste de diffusion pour soutenir l'ARC, voir <http://arc-spec.org>.
 
 - La liste de diffusion n’appartient pas à votre organisation :
 

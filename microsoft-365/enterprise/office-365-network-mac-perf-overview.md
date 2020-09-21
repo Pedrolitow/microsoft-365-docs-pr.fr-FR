@@ -3,7 +3,7 @@ title: Connectivité réseau dans le centre d’administration Microsoft 365 (ve
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 04/21/2020
+ms.date: 09/17/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,16 +14,20 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Vue d’ensemble de la connectivité réseau dans le centre d’administration Microsoft 365 (version d’évaluation)
-ms.openlocfilehash: f8eff2248fb7abce75c27f227a2c5e7ec7219046
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 35ea28ec45a7e581901c0f4f22360a1dcd0def8b
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948414"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962286"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Connectivité réseau dans le centre d’administration Microsoft 365 (version d’évaluation)
 
-Le centre d’administration Microsoft 365 inclut désormais des métriques de connectivité réseau regroupées collectées à partir de votre client Microsoft 365 et disponibles uniquement par les utilisateurs administratifs de votre client. Les **évaluations réseau** et les informations sur le **réseau** s’affichent dans le centre d’administration Microsoft 365 sous **intégrité | Connectivité**.
+Le centre d’administration Microsoft 365 inclut désormais des métriques de connectivité réseau regroupées collectées à partir de votre client Microsoft 365 et disponibles uniquement par les utilisateurs administratifs de votre client.
+
+![Outil de test de connectivité réseau](../media/m365-mac-perf/m365-mac-perf-admin-center.png)
+
+Les **évaluations réseau** et les informations sur le **réseau** s’affichent dans le centre d’administration Microsoft 365 sous **intégrité | Connectivité**.
 
 ![Page des performances du réseau](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
 

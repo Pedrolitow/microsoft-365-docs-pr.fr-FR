@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Comment vous pouvez utiliser les étiquettes de rétention pour gérer le cycle de vie des documents dans SharePoint en utilisant des métadonnées pour classifier le contenu, appliquer automatiquement les étiquettes et utiliser la rétention basée sur les événements pour démarrer la période de rétention.
-ms.openlocfilehash: d02c8102dc53f455c5e0620acf1f8a9a7529bf08
-ms.sourcegitcommit: 2179abfe0b7a8bea917eb1c1057ed3795bdf91e6
+ms.openlocfilehash: 321043a8a33d274ed9e7caecfb167b9587ceae1d
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47336689"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47817221"
 ---
 # <a name="use-retention-labels-to-manage-the-lifecycle-of-documents-stored-in-sharepoint"></a>Utiliser les étiquettes de rétention pour gérer le cycle de vie des documents stockés dans SharePoint
 
@@ -99,17 +99,17 @@ Voici le [plan de gestion de fichiers](file-plan-manager.md) l’étiquette de r
 
 - **Nom :** Spécifications du produit
 
-- **Description pour les admins :** Conservation pendant 5 ans après l'arrêt de la production, suppression automatique, conservation en fonction des événements, le type d'événement est *Arrêt du produit*.        
+- **Description pour les utilisateurs :** Conserver pendant 5 ans après l'arrêt de la production.
 
-- **Description pour les utilisateurs :** A conserver pendant 5 ans après l'arrêt de la production.
+- **Description pour les admins :** Conserver pendant 5 ans après l'arrêt de la production, suppression automatique, conservation en fonction des événements, le type d'événement est *Arrêt du produit*.
 
 - ** Action de rétention :** Conserver et supprimer.
 
 - ** Retention duration:** 5 ans (1 825 jours).
 
-- **Étiquette d'enregistrement **: Configurez l'étiquette de rétention pour classer le contenu comme un [enregistrement](records-management.md#records). (Les documents qui sont classés comme un *enregistrement* ne peuvent pas être modifiés ou supprimés par les utilisateurs.)   
+- **Étiquette d’enregistrement** : Configurer l’étiquette de rétention pour marquer les éléments comme [enregistrement](records-management.md#records), ce qui signifie que les documents étiquetés ne peuvent pas être modifiés ou supprimés par les utilisateurs.
 
-- ** Descripteurs de plans de fichiers :** (pour simplifier le scénario, aucun descripteur de fichier n'est fourni)
+- **Descripteurs de plans de gestion de fichiers :** Pour simplifier le scénario, aucun descripteur de fichier facultatif n'est fourni.
 
 La capture d'écran suivante montre les paramètres lorsque vous créez l'étiquette de conservation de la spécification du produit dans le centre de conformité Microsoft 365. Vous pouvez créer *le type d'événement* « Arrêt des produits » lorsque vous créez l'étiquette de conservation. Voir la procédure dans la section suivante.
 
@@ -120,34 +120,30 @@ La capture d'écran suivante montre les paramètres lorsque vous créez l'étiqu
 
 ### <a name="create-an-event-type-when-you-create-a-retention-label"></a>Créer un type d'événement lorsque vous créez un label de conservation
 
-1. Dans la **Conserver ou supprimer un contenu sur la base** Conserver ou supprimer un contenu sur la base **d'un événement**.
-
-2. Sélectionnez **Choisissez un type d'événement **.
+1. Dans la page **Définir les paramètres de rétention** de l’assistant de création d’étiquette de rétention, derrière **Démarrer la période de rétention sur la base de**, sélectionnez **Créer un nouveau type d’événement** :
     
-    ![Créer un nouveau type d'événement pour la boîte de dialogue du label de spécification des produits](../media/SPRetention6.png)
+    ![Créer un nouveau type d'événement pour la boîte de dialogue de l’étiquette Spécification du produit.](../media/SPRetention6.png)
 
-3. Sélectionnez **Choisir un type d'événement**, puis sélectionnez **Créer de nouveaux types d'événements** sur la  **page Choisir un type** d'événement.
+3. Dans la page **Nommer votre type d’événement**, entrez **Arrêt du produit** et une description facultative. Sélectionnez ensuite **Suivant**, **Envoyer**, puis **Terminé**.
 
-4. Créez un type d'événement nommé ***Cessation de produits***, entrez une description et sélectionnez **Terminer**.
+4. Une fois de retour dans la page **Définir les paramètres de rétention**, pour **Démarrer la période de rétention sur la base de**, utilisez la zone déroulante pour sélectionner le type d’événement **Arrêt du produit** que vous avez créé.
+    
+    Voici à quoi ressemblent les paramètres de l’étiquette de rétention de Spécification du produit : 
+    
+   ![Paramètres de la nouvelle étiquette Spécification du produit](../media/SPRetention7.png)
 
-5. Dans la page **choisir un type d’événement**, sélectionnez le type d’événement **Cessation de produit** que vous avez créé, puis sélectionnez **Ajouter**.
+6. Sélectionnez **Créer une étiquette** : les options permettant de la publier s’affichent dans la page suivante. Appliquez automatiquement l’étiquette, ou enregistrez-la simplement : sélectionnez **Enregistrez simplement l’étiquette pour l'instant**, puis sélectionnez **Terminé**. 
+    
+    > [!TIP]
+    > Pour des étapes plus détaillées, consultez la rubrique [Créer une étiquette dont la période de rétention est basée sur un événement](event-driven-retention.md#step-1-create-a-label-whose-retention-period-is-based-on-an-event).
 
-   Voici à quoi ressemblent les paramètres de l’étiquette de rétention de spécification de produit. 
+Voyons maintenant comment appliquer automatiquement l'étiquette de rétention au contenu des spécifications du produit.
 
-   ![Paramètres du nouveau label de spécification des produits](../media/SPRetention7.png)
-
-6. Sélectionnez**Créer ce label**. 
-
-   > [!TIP]
-   > Pour des étapes plus détaillées, voir [Créer un label dont la durée de conservation est basée sur un événement](event-driven-retention.md#step-1-create-a-label-whose-retention-period-is-based-on-an-event).
-
-Voyons maintenant comment appliquer automatiquement l'étiquette de conservation au contenu des spécifications du produit.
-
-## <a name="auto-apply-retention-labels-to-classify-content"></a>Appliquer automatiquement des étiquettes de conservation pour classer le contenu
+## <a name="auto-apply-retention-labels-to-documents"></a>Appliquer automatiquement des étiquettes de rétention à des documents
 
 Nous allons utiliser le Keyword Query Language (KQL) pour [appliquer automatiquement](apply-retention-labels-automatically.md)les étiquettes de rétention que nous avons créées. KQL est le langage qui est utilisé pour construire les requêtes de recherche. Dans KQL, vous pouvez effectuer des recherches en utilisant des mots clés ou des propriétés gérées. Pour plus d'informations, voir [Référence syntaxique du mot-clé KQL (Keyword Query Language)](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
 
-Fondamentalement, nous voulons dire à Microsoft 365 d'appliquer *l'étiquette de conservation de la spécification de produit*à tous les documents qui ont un **statut**de ***final*** et un **type de document** de ***spécification de produit***. Rappelons que **Statut ** et **Type de document** sont les colonnes du site que nous avons définies pour le type de contenu Documentation produit dans [la section Architecture](#information-architecture) de l'information. Pour ce faire, nous devons configurer le schéma de recherche.
+Fondamentalement, nous voulons dire à Microsoft 365 d'appliquer **l'étiquette de conservation de la spécification de produit**à tous les documents qui ont un **statut**de **final** et un **type de document** de **spécification de produit**. Rappelons que **Statut ** et **Type de document** sont les colonnes du site que nous avons définies pour le type de contenu Documentation produit dans [la section Architecture](#information-architecture) de l'information. Pour ce faire, nous devons configurer le schéma de recherche.
 
 Lorsque SharePoint indexe le contenu, il génère automatiquement des propriétés analysées pour chaque colonne de site. Pour ce scénario, nous sommes intéressés par les propriétés **Type de document** et **État**. Nous avons besoin de documents dans la bibliothèque qui sont du bon type de contenu et dont les colonnes du site sont remplies pour la recherche afin de créer les propriétés analysées.
 
@@ -217,47 +213,47 @@ Dans la boîte de recherche, tapez  **RefinableString00: « Spécification du pr
 
 ### <a name="create-auto-apply-label-policies"></a>Créer des politiques d'application automatique des étiquettes
 
-Maintenant que nous avons vérifié que la requête KQL fonctionne, créons une politique d'étiquetage qui utilise une requête KQL pour appliquer automatiquement l'étiquette de conservation de la spécification du produit sur les documents appropriés.
+Maintenant que vérification a été faite que la requête KQL fonctionne, créons une stratégie d’application automatique d'étiquettes utilisant une requête KQL pour appliquer automatiquement l'étiquette de rétention Spécification du produit sur les documents appropriés.
 
 1. Dans le [centre de conformité](https://compliance.microsoft.com/homepage), allez à **Gestion des enregistrements** > **Politiques d'étiquetage** > **Appliquer automatiquement un label**.                
 
    [ ![Sélectionnez « Auto-appliquer un label » sur la page Label](../media/SPRetention16.png) ](../media/SPRetention16.png#lightbox)
 
-2. Sur la page de **Choisir une étiquette à appliquer automatiquement** sélectionnez**Choisir une étiquette à appliquer automatiquement**.                        
+2. Dans l’assistant de création de stratégie d’étiquetage automatique, sur la page **Nommer votre stratégie d’étiquetage automatique**, entrez un nom tel que **Application automatique d’étiquette Spécification du produit** et une description facultative. Ensuite, sélectionnez **Suivant**.
 
-3. Dans la liste des étiquettes, sélectionnez **Spécification du produit**.      Sélectionnez ensuite**Ajouter** et **Suivant**.            
+3. Dans la page **Choisir le type de contenu auquel vous voulez appliquer cette étiquette**, sélectionnez **Appliquer une étiquette au contenu incluant des mots ou des phrases spécifiques**, ou des propriétés, puis sélectionnez **Suivant**.
+    
+   [ ![Sélectionnez Appliquer l’étiquette au contenu incluant des mots ou des phrases spécifiques, ou des propriétés](../media/SPRetention17.png) ](../media/SPRetention17.png#lightbox)
+    
+   Cette option permet de fournir la même requête de recherche KQL que celle que nous avons testée dans la section précédente. Cette requête renvoie tous les documents de spécification de produit qui ont un statut de *Final*. Lorsque cette requête est utilisée dans la stratégie d'applicage automatique d’étiquette, l'étiquette de rétention Spécification du produit sera automatiquement appliquée à tous les documents qui y correspondent.
 
-4. Sélectionnez **Appliquer l’étiquette au contenu comportant des mots ou phrases ou propriétés spécifiques**, puis sélectionnez **Suivant**.
+4. Dans la page **Appliquer l’étiquette au contenu correspondant à cette requête**, tapez **RefinableString00:"Spécification du produit" ET RefinableString01:Final**, puis sélectionnez **Suivant**.
 
-   [ ![Sélectionnez Appliquer l’étiquette au contenu contenant des mots, expressions ou propriétés spécifiques](../media/SPRetention17.png) ](../media/SPRetention17.png#lightbox)
+   ![Spécifiez la requête dans la zone Éditeur de requête de mot clé](../media/SPRetention19.png)
 
-   Dans l'étape suivante, vous fournirez la même requête de recherche KQL que celle que nous avons testée dans la section précédente. Cette requête renvoie tous les documents de spécification de produit qui ont un statut de *Final*.               Lorsque nous utilisons cette même requête dans la politique d'étiquetage, l'étiquette de conservation de la spécification du produit sera automatiquement appliquée à tous les documents qui y correspondent.
-
-5. Dans la zone **Éditeur de requête de mot clé**, tapez***RefinableString00 : « spécification de produit » ET RefinableString01 : Final***, puis sélectionnez **Suivant**.
-
-   ![Spécifiez la requête dans la zone éditeur de requête de mot clé](../media/SPRetention19.png)
-
-6. Tapez un nom (par exemple, ***Appliquer automatiquement une étiquette de spécification de produit***), ainsi qu’une description facultative pour la stratégie d’étiquette, puis sélectionnez **Suivant**.
-
-7. Dans la page de l'assistant **Choisir des emplacements**, sélectionnez les emplacements de contenu auxquels vous voulez appliquer la stratégie. Pour ce scénario, nous appliquons la politique uniquement aux sites SharePoint, car tous les documents de production sont stockés dans des bibliothèques de documents SharePoint. Sélectionnez **Laissez-moi choisir des lieux spécifiques** puis désactivez le statut **des e-mails Exchange**, **de comptes OneDrive**, et **de groupes** Microsoft 365.                            Assurez-vous que le statut des sites SharePoint est activé. 
-
-    ![Choisissez des sites spécifiques pour étiquettes à appliquer automatiquement sur](../media/SPRetentionSPlocations.png)
-
+5. Dans la page **Choisir des emplacements auxquels appliquer la stratégie**, sélectionnez les emplacements de contenu auxquels vous voulez appliquer la stratégie. Pour ce scénario, nous appliquons la politique uniquement aux sites SharePoint, car tous les documents de production sont stockés dans des bibliothèques de documents SharePoint. Basculez l’état de **Courrier Exchange**, **Comptes OneDrive** et **Groupes Office 365** sur **Désactivé**. Assurez-vous que le statut des sites SharePoint est défini sur **Activé** avant de sélectionner**Suivant** : 
+    
+    ![Choisissez des sites spécifiques auxquels appliquer automatiquement des étiquettes](../media/SPRetentionSPlocations.png)
+    
    > [!TIP]
-   > Au lieu d’appliquer la stratégie à tous les sites SharePoint, vous pouvez sélectionner **Choisir des sites** et ajouter les URL de sites SharePoint spécifiques.
+   > Plutôt que d’appliquer la stratégie à tous les sites SharePoint, vous pouvez sélectionner **Choisir un site** et ajouter les URL de sites SharePoint spécifiques.
 
-8. Sélectionnez **Suivant** pour afficher la page **Vérifier vos paramètres**.
+6. Dans la page **Choisir une étiquette à appliquer automatiquement**, sélectionnez **Ajouter une étiquette**.
 
-    ![Paramètres pour l'application automatique du label](../media/SPRetention18.png)
+7. Dans la liste d’étiquettes de rétention, sélectionnez **Spécification du produit**. Sélectionnez ensuite **Ajouter** puis **Suivant**.
 
-9. Sélectionnez **Auto-appliquer** pour créer la politique de label.      
+8. Vérifiez vos paramètres :
 
+    ![Paramètres pour l'application automatique de l’étiquette](../media/SPRetention18.png)
+
+9. Sélectionnez **Envoyer** pour créer la stratégie d’application automatique d’étiquettes.
+    
    >[!NOTE]
    >Il faut jusqu'à 7 jours pour appliquer automatiquement l'étiquette de la spécification du produit à tous les documents qui correspondent à la requête de recherche KQL.
 
 ### <a name="verify-that-the-retention-label-was-automatically-applied"></a>Vérifier que l'étiquette de conservation a été appliquée automatiquement
 
-Après 7 jours, utilisez [l'explorateur d'activités](data-classification-activity-explorer.md) dans le centre de conformité pour vérifier que la politique d'étiquetage que nous avons créée applique automatiquement les étiquettes de conservation aux documents du produit.                           
+Après 7 jours, utilisez l’[explorateur d'activités](data-classification-activity-explorer.md) dans le centre de conformité pour vérifier que la politique d'application automatique d’étiquettes que nous avons créée a bien appliqué automatiquement les étiquettes de rétention aux documents de produits.
 
 Consultez également les propriétés des documents de la bibliothèque de documents. Dans le panneau d’informations, vous pouvez voir que l’étiquette de rétention est appliquée à un document sélectionné.
 

@@ -9,21 +9,18 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 271f43e4-b8f7-4d63-8059-b5747679bb7e
 description: Définir le temps de mémoire tampon avant ou après un rendez-vous dans Microsoft bookings pour autoriser le nettoyage ou la réinitialisation de l’équipement.
-ms.openlocfilehash: dceb777f9ddba9f1ddabfee00608813afae57a86
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 882ab0340fe56976429ed8294f2fa386b801941f
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419554"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962346"
 ---
 # <a name="set-buffer-time-in-microsoft-bookings"></a>Définir le temps de mémoire tampon dans les ouvrages Microsoft
 
 Certains de vos rendez-vous peuvent nécessiter du temps avant ou après la réunion avec votre client pour configurer, nettoyer ou réinitialiser votre salle et votre équipement. Ou si vous êtes en déplacement entre les rendez-vous du client, vous aurez peut-être besoin de temps pour vous assurer que votre équipe et vous pouvez passer entre les rendez-vous sans faire attendre le client.
 
 Vous pouvez définir le temps de mise en mémoire tampon avant le début des rendez-vous, après la fin des rendez-vous, ou les deux pour donner au personnel le temps supplémentaire nécessaire pour préparer leur prochain rendez-vous.
-
-> [!NOTE]
-> Bookings est activé par défaut pour les clients qui disposent des abonnements Microsoft 365 Business standard, Microsoft 365 a3 ou Microsoft 365 a5. Bookings est également disponible pour les clients disposant d’Office 365 entreprise E3 et d’Office 365 entreprise E5, mais il est désactivé par défaut. Pour commencer, consultez la rubrique [obtenir l’accès à Microsoft bookings](get-access.md). Pour activer ou désactiver les réservations, reportez-vous à [la rubrique activer ou désactiver des réservations pour votre organisation](turn-bookings-on-or-off.md).
 
 ## <a name="set-buffer-time-defaults"></a>Définir les valeurs par défaut des temps de mise en mémoire tampon
 

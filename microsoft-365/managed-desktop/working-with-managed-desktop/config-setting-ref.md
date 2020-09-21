@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: c3f8aec244b1b0685b8293fda0b048d662c7cef2
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 2c7c7d75fad58cab0cd6d19a16a97667ea3641a1
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529360"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104487"
 ---
 # <a name="configurable-settings-reference---microsoft-managed-desktop"></a>Référence des paramètres configurables-bureau géré Microsoft
 
@@ -23,7 +23,7 @@ Cette rubrique répertorie les catégories de paramètres que les clients peuven
 ## <a name="desktop-background-picture"></a>Image d’arrière-plan du Bureau
 Vous pouvez personnaliser l’image d’arrière-plan du Bureau pour les appareils de bureau gérés Microsoft dans votre organisation. Vous pouvez l’utiliser pour appliquer une marque de société ou une documentation marketing. 
 
-### <a name="requirements"></a>Conditions préalables
+### <a name="requirements"></a>Configuration requise
 
 Ces conditions doivent être remplies pour une image d’arrière-plan de bureau :
 - Format de fichier image-. jpg, JPEG ou. png
@@ -33,25 +33,25 @@ Ces conditions doivent être remplies pour une image d’arrière-plan de bureau
 ### <a name="customize-and-deploy-desktop-background-picture"></a>Personnaliser et déployer une image d’arrière-plan du Bureau
 
 **Pour ajouter une image d’arrière-plan personnalisée du Bureau**
-1. Se connecter au [portail d’administration de bureau géré Microsoft](https://aka.ms/mwaasportal)
-2. Sous **paramètres**, sélectionnez **configurable**.
-3. Dans espace de travail **configurable** , sélectionnez **image d’arrière-plan du Bureau**. 
+1. Connectez-vous au [Gestionnaire de point de terminaison Microsoft](https://endpoint.microsoft.com/) et accédez au menu **appareils** .
+2. Recherchez la section bureau géré Microsoft, puis sélectionnez **paramètres**.
+3. Dans l’espace de travail **paramètres** , sélectionnez **image d’arrière-plan du Bureau**. 
 4. Entrez l’emplacement de l’image que vous souhaitez utiliser. 
 5. Sélectionnez **stage Deployment** pour enregistrer vos modifications et les déployer dans le groupe de test. 
 
 ## <a name="browser-start-pages"></a>Pages de démarrage du navigateur
 Les pages de démarrage de navigateur s’ouvrent dans des onglets individuels lorsque les utilisateurs démarrent Microsoft Edge. Si vous souhaitez que vos utilisateurs puissent facilement ouvrir un ensemble de sites qu’ils utilisent fréquemment, ajoutez une page de démarrage de navigateur pour chaque site. 
 
-### <a name="requirements"></a>Conditions préalables
+### <a name="requirements"></a>Configuration requise
 
 Vous devez indiquer le nom de domaine complet (FQDN) pour les sites intranet ou Internet pour les pages de démarrage de votre navigateur. Si des sites internes sont configurés, indiquez aux utilisateurs que l’accès à ces sites est uniquement autorisé lorsqu’ils sont connectés au réseau interne au bureau ou lorsqu’ils sont connectés à l’aide d’une connexion VPN. 
 
 ### <a name="customize-and-deploy-browser-start-pages"></a>Personnaliser et déployer des pages de démarrage de navigateur
 
 **Pour ajouter une page de démarrage de navigateur**
-1. Se connecter au [portail d’administration de bureau géré Microsoft](https://aka.ms/mwaasportal)
-2. Sous **paramètres**, sélectionnez **configurable**.
-3. Dans espace de travail **configurable** , sélectionnez **pages de démarrage du navigateur**. 
+1. Connectez-vous au [Gestionnaire de point de terminaison Microsoft](https://endpoint.microsoft.com/) et accédez au menu **appareils** .
+2. Recherchez la section bureau géré Microsoft, puis sélectionnez **paramètres**.
+3. Dans l’espace de travail **paramètres** , sélectionnez **pages de démarrage du navigateur**. 
 4. Sélectionnez **Ajouter une page de démarrage**.
 5. Dans **Ajouter la page de démarrage du navigateur**, entrez l’URL du site que vous souhaitez utiliser, puis sélectionnez **Ajouter une page de démarrage**. 
 6. Répétez les étapes 1-5 pour les pages de démarrage de navigateur supplémentaires. 
@@ -63,7 +63,7 @@ Si vous avez des sites Web et des applications spécifiques dont vous connaissez
 
 Vous pouvez spécifier un emplacement https://ou l’emplacement d’un partage interne où vous avez hébergé votre liste de sites en mode entreprise. 
 
-### <a name="requirements"></a>Conditions préalables
+### <a name="requirements"></a>Configuration requise
 
 Ces exigences doivent être satisfaites pour le fichier de liste de sites en mode entreprise :
 - Format de fichier : fichier XML qui répond aux [exigences de fichier](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode#site-list-xml-file)
@@ -80,11 +80,11 @@ Ces meilleures pratiques sont proposées pour aider les clients à prendre des d
 
 **Pour ajouter un emplacement de liste en mode site d’entreprise**
 
-1.  Se connecter au [portail d’administration de bureau géré Microsoft](https://aka.ms/mwaasportal)
-2.  Sous **paramètres**, sélectionnez **configurable**.
-3.  Dans espace de travail **configurable** , sélectionnez l’emplacement de la **liste de sites en mode entreprise**. 
-4.  Entrez l’emplacement https de votre liste de sites. 
-5.  Sélectionnez **stage Deployment** pour enregistrer vos modifications et les déployer dans le groupe de test.
+1. Connectez-vous au [Gestionnaire de point de terminaison Microsoft](https://endpoint.microsoft.com/) et accédez au menu **appareils** .
+2. Recherchez la section bureau géré Microsoft, puis sélectionnez **paramètres**.
+3. Dans l’espace de travail **paramètres** , sélectionnez emplacement de la **liste de sites en mode entreprise**. 
+4. Entrez l’emplacement https de votre liste de sites. 
+5. Sélectionnez **stage Deployment** pour enregistrer vos modifications et les déployer dans le groupe de test.
 
 ## <a name="trusted-sites"></a>Sites approuvés
 
@@ -94,7 +94,7 @@ Les sites de confiance vous permettent de personnaliser les zones de sécurité 
 - Zone 3 – zone Internet
 - Zone 4 – zone sites sensibles
 
-### <a name="requirements"></a>Conditions préalables
+### <a name="requirements"></a>Configuration requise
 
 Fournissez le nom de domaine complet (FQDN) pour les sites intranet ou Internet de chaque site approuvé. 
 
@@ -102,18 +102,18 @@ Fournissez le nom de domaine complet (FQDN) pour les sites intranet ou Internet 
 
 **Pour ajouter un site de confiance**
 
-1. Se connecter au [portail d’administration de bureau géré Microsoft](https://aka.ms/mwaasportal)
-2. Sous **paramètres**, sélectionnez **configurable**.
-3. Dans espace de travail **configurable** , sélectionnez **sites de confiance**, puis **Ajouter un site approuvé**. 
+1. Connectez-vous au [Gestionnaire de point de terminaison Microsoft](https://endpoint.microsoft.com/) et accédez au menu **appareils** .
+2. Recherchez la section bureau géré Microsoft, puis sélectionnez **paramètres**.
+3. Dans l’espace de travail **paramètres** , sélectionnez **sites de confiance**, puis **Ajouter un site approuvé**. 
 4. Sur **Ajouter un site approuvé**, entrez l’URL, choisissez une zone de sécurité, puis sélectionnez **Ajouter un site approuvé**. 
 5. Répétez les étapes 1-4 pour chaque site approuvé que vous souhaitez ajouter. 
 6. Sélectionnez **stage Deployment** pour enregistrer vos modifications et les déployer dans le groupe de test.
 
 **Pour supprimer un site approuvé**
 
-1. Se connecter au [portail d’administration de bureau géré Microsoft](https://aka.ms/mwaasportal)
-2. Sous **paramètres**, sélectionnez **configurable**.
-3. Dans espace de travail **configurable** , sélectionnez **sites de confiance**. 
+1. Connectez-vous au [Gestionnaire de point de terminaison Microsoft](https://endpoint.microsoft.com/) et accédez au menu **appareils** .
+2. Recherchez la section bureau géré Microsoft, puis sélectionnez **paramètres**.
+3. Dans l’espace de travail **paramètres** , sélectionnez **sites de confiance**. 
 4. Sélectionnez le site que vous souhaitez supprimer, puis sélectionnez **supprimer**. 
 5. Répétez les étapes 1-4 pour chaque site approuvé à supprimer. 
 6. Sélectionnez **stage Deployment** pour enregistrer vos modifications et les déployer dans le groupe de test.
@@ -126,7 +126,7 @@ Les exceptions de site proxy que vous ajoutez dans le portail de bureau géré M
 > [!NOTE]
 > La mise à jour de la liste des exceptions de proxy par défaut est toujours prioritaire sur les déploiements des clients. Cela signifie que votre déploiement intermédiaire sera suspendu s’il existe un déploiement pour la liste des exceptions de proxy par défaut.  
 
-### <a name="requirements"></a>Conditions préalables
+### <a name="requirements"></a>Configuration requise
 
 Ces exigences doivent être satisfaites pour les exceptions de serveur proxy et de site proxy :
 - Doit être une adresse de serveur et un numéro de port valides
@@ -136,9 +136,9 @@ Ces exigences doivent être satisfaites pour les exceptions de serveur proxy et 
 
 **Pour ajouter une exception de site proxy individuelle**
 
-1. Se connecter au [portail d’administration de bureau géré Microsoft](https://aka.ms/mwaasportal)
-2. Sous **paramètres**, sélectionnez **configurable**.
-3. Dans espace de travail **configurable** , sélectionnez **proxy**. 
+1. Connectez-vous au [Gestionnaire de point de terminaison Microsoft](https://endpoint.microsoft.com/) et accédez au menu **appareils** .
+2. Recherchez la section bureau géré Microsoft, puis sélectionnez **paramètres**.
+3. Dans l’espace de travail **paramètres** , sélectionnez **proxy**. 
 4. Entrez l' **adresse** et le **numéro de port** de votre serveur proxy, puis sélectionnez Ajouter une exception de **proxy**. 
 5. Entrez l’URL d’un site http valide, puis sélectionnez **Ajouter une exception de proxy**. 
 6. Répétez les étapes 1-5 pour chaque site approuvé que vous souhaitez ajouter. 

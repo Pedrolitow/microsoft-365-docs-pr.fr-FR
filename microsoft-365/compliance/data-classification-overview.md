@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le tableau de bord de classification des données vous permet de consulter les données sensibles qui ont été trouvées et classifiées au sein de votre organisation.
-ms.openlocfilehash: 3198a1981ed7d4d5428452b55aeb22b234712354
-ms.sourcegitcommit: b812771805c8b9e92b64deb1928e265e60d80405
+ms.openlocfilehash: aff6d2c30fe8036448a8816426896f080b86b9e6
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46588216"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948504"
 ---
 # <a name="know-your-data---data-classification-overview"></a>Connaissez vos données : vue d’ensemble de la classification des données
 
@@ -49,7 +49,7 @@ La classification de données analyse votre contenu sensible et le contenu étiq
 
 Chaque compte qui accède et utilise la classification de données doit posséder une licence pour l’un des abonnements suivants :
 
-- Microsoft 365 (E5)
+- Microsoft 365 (E5/A5)
 - Office 365 (E5)
 - Complément Conformité avancée (E5)
 - Complément Threat Intelligence avancé (E5)

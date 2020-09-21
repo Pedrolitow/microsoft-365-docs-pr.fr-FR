@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: fb786383e448ad3f5c78b22f3cdbf282c2c9f906
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 972430f5637f1160c330bed1558b79c8273171c5
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289720"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104581"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Aide administrateur pour le Bureau géré Microsoft
 
@@ -24,10 +24,11 @@ Vous pouvez envoyer des tickets de support ou des demandes de commentaires à Mi
 >Assurez-vous que vous [configurez un contact administrateur pour l'](../get-started/add-admin-contacts.md) empaquetage, les appareils, la sécurité et les autres. Vous ne pouvez pas soumettre une demande de support dans l’un de ces domaines si aucun contact administrateur n’est configuré.
 
 **Pour envoyer une demande de support**
-1. Connectez-vous au [portail d’administration de bureau géré Microsoft](https://aka.ms/mwaasportal). 
-2. Sur **demandes de support**, sélectionnez **+ nouveau ticket de support**.
-3. Sélectionnez le **type de demande de support** correspondant à l’aide dont vous avez besoin. Le tableau ci-dessous présente les options. 
-4. Sélectionnez le **niveau de gravité**. Pour plus d’informations, voir [prise en charge des définitions de gravité des demandes](#sev). 
+1. Connectez-vous au [Gestionnaire de point de terminaison Microsoft](https://endpoint.microsoft.com/) et accédez au menu **Dépannage + support** .
+2. Recherchez la section bureau géré Microsoft, sélectionnez **inverser la demande**.
+3. Sur **demandes de support**, sélectionnez **+ nouveau ticket de support**.
+4. Sélectionnez le **type de demande de support** correspondant à l’aide dont vous avez besoin. Le tableau ci-dessous présente les options. 
+5. Sélectionnez le **niveau de gravité**. Pour plus d’informations, voir [prise en charge des définitions de gravité des demandes](#sev). 
 
 Type de demande d’assistance | Champs d’utilisation
 --- | ---
@@ -58,7 +59,7 @@ Détails supplémentaires :
 
 Nous apprécions vos commentaires et nous l’utilisons pour améliorer l’expérience du support d’administration.
 
-Une fois qu’un ticket est dans l’état **atténué** ou **résolu** , vous pouvez partager vos commentaires sur votre expérience avec ce problème particulier. Pour ce faire, accédez à la page **demandes de support** dans le portail d’administration. Sélectionnez le ticket spécifique. À la volée qui s’affiche sur le côté droit, sélectionnez l’onglet **Commentaires** et fournissez les informations demandées. Veillez à ne pas inclure d’informations personnelles dans le formulaire de commentaires. Pour plus d’informations sur la confidentialité, consultez la [déclaration de confidentialité de Microsoft](https://privacy.microsoft.com/privacystatement).
+Une fois qu’un ticket est dans l’état **atténué** ou **résolu** , vous pouvez partager vos commentaires sur votre expérience avec ce problème particulier. Pour ce faire, accédez à la page **demandes de service** dans le menu **Dépannage + prise en charge** du portail MEM. Sélectionnez le ticket spécifique. Les détails du ticket s’affichent dans le volet de droite, sélectionnez l’onglet **Commentaires** et fournissez les informations demandées. Veillez à ne pas inclure d’informations personnelles dans le formulaire de commentaires. Pour plus d’informations sur la confidentialité, consultez la [déclaration de confidentialité de Microsoft](https://privacy.microsoft.com/privacystatement).
 
 ![Formulaire de commentaires](../../media/feedback_form.png)
 
@@ -67,4 +68,4 @@ Une fois qu’un ticket est dans l’état **atténué** ou **résolu** , vous p
 ## <a name="additional-resources"></a>Ressources supplémentaires
 - [Prise en charge des utilisateurs pour le bureau géré Microsoft](end-user-support.md). 
 - [Prise en charge du bureau géré Microsoft](../service-description/support.md). 
-- Si vous vous abonnez déjà à Microsoft Managed Desktop, vous trouverez des procédures détaillées, des flux de processus, des instructions de travail et des FAQ dans le Guide de l’administrateur de bureau géré Microsoft dans la section **ressources en ligne** du [portail d’administration de bureau géré Microsoft](https://aka.ms/mwaasportal).
+- Si vous vous êtes déjà inscrit au bureau géré Microsoft, vous trouverez des procédures détaillées, des flux de processus, des instructions de travail et des FAQ dans le Guide de l’administrateur de bureau géré Microsoft dans la page **ressources en ligne** sous la section **bureau géré Microsoft** du menu d' **administration du client** dans le [Gestionnaire de points de terminaison Microsoft](https://endpoint.microsoft.com/).

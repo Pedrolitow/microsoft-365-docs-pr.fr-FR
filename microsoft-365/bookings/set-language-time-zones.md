@@ -9,21 +9,18 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 94af3e22-aca6-4e91-8b91-1cd5a02a9ea8
 description: Modifiez vos paramètres de langue et de fuseau horaire dans Microsoft bookings. Si les réservations sont créées à un moment incorrect, les réservations peuvent être définies pour un fuseau horaire incorrect.
-ms.openlocfilehash: 07e5dde2a896610ee079063943aff24ec69ba721
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 3e7709666d6426b11c275e46a18d43e7b7ab3526
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419552"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962430"
 ---
 # <a name="set-language-and-time-zones-in-microsoft-bookings"></a>Définir les fuseaux horaires et les langues dans Microsoft bookings
 
 Si vous utilisez Microsoft bookings et que les livres sont créés à un moment incorrect, il se peut que vous deviez modifier vos paramètres de fuseau horaire. De même, si certains livres se trouvent dans une langue incorrecte, vous devrez peut-être modifier vos paramètres de langue.
 
 Il existe deux paramètres de fuseau horaire et de langue distincts pour les réservations. Le premier paramètre contrôle la langue et le fuseau horaire du calendrier de réservation et est défini à l’aide des paramètres Outlook sur le Web pour le calendrier personnel de l’utilisateur connecté. Le deuxième paramètre affecte la page de réservation libre-service que vos clients utilisent et qui est définie à l’aide d’une page « Paramètres régionaux » qui contrôle la langue et le fuseau horaire uniquement pour cette page.
-
-> [!NOTE]
-> Bookings est activé par défaut pour les clients qui disposent des abonnements Microsoft 365 Business standard, Microsoft 365 a3 ou Microsoft 365 a5. Bookings est également disponible pour les clients disposant d’Office 365 entreprise E3 et d’Office 365 entreprise E5, mais il est désactivé par défaut. Pour commencer, consultez la rubrique [obtenir l’accès à Microsoft bookings](get-access.md). Pour activer ou désactiver les réservations, reportez-vous à [la rubrique activer ou désactiver des réservations pour votre organisation](turn-bookings-on-or-off.md).
 
 ## <a name="setting-language-and-time-zone-for-a-booking-calendar"></a>Définition de la langue et du fuseau horaire pour un calendrier de réservation
 

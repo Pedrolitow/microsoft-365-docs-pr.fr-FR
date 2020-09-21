@@ -9,19 +9,16 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 03a9acc9-f29c-456b-9fb2-0f49474b2708
 description: Suivez ces instructions pour créer un rendez-vous et affecter un employé via l’application Microsoft bookings.
-ms.openlocfilehash: d0538b1c3e19a6bc78c997ff3e681ac30aa074ff
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: dffc63b1f638c551e40d22852b1ba6a73c5be869
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419604"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962560"
 ---
 # <a name="create-a-manual-booking"></a>Créer une réservation manuelle
 
 Les réservations peuvent être planifiées et affectées de deux manières différentes. La première consiste à utiliser une page de réservation autonome ou une page de réservation incorporée que vous ajoutez à votre site Web. Autrement dit, vous ou un de vos employés devez entrer les réservations manuellement, par exemple lorsqu’un client appelle pour un rendez-vous. Cet article décrit le scénario manuel.
-
-> [!NOTE]
-> Bookings est activé par défaut pour les clients qui disposent des abonnements Microsoft 365 Business standard, Microsoft 365 a3 ou Microsoft 365 a5. Bookings est également disponible pour les clients disposant d’Office 365 entreprise E3 et d’Office 365 entreprise E5, mais il est désactivé par défaut. Pour commencer, consultez la rubrique [obtenir l’accès à Microsoft bookings](get-access.md). Pour activer ou désactiver les réservations, reportez-vous à [la rubrique activer ou désactiver des réservations pour votre organisation](turn-bookings-on-or-off.md).
 
 1. Dans Microsoft 365, sélectionnez le lanceur d’applications, puis **livres**.
 

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 5fde3c6d5fd14bd0e4d108030ffaa8e5aeb5ed5c
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: d64edc9d80722080db18c45127bfc82110d1ea9e
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289319"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131536"
 ---
 # <a name="plan-for-communication-compliance"></a>Planifier la conformité des communications
 
@@ -66,7 +66,7 @@ Lors de la planification des stratégies de conformité des communications, pren
 - Pour simplifier votre configuration, pensez à créer des groupes pour les personnes qui ont besoin de leurs communications. Si vous utilisez des groupes ; vous aurez peut-être besoin de plusieurs. Par exemple, si vous voulez analyser des communications entre deux groupes distincts de personnes, ou si vous voulez spécifier un groupe qui n’est pas supervisé.
 - Configurez le pourcentage de communications à réviser à 100% pour vous assurer que les stratégies interceptent tous les problèmes de communication pour votre organisation.
 - Vous pouvez analyser les communications provenant de [sources tierces](communication-compliance-feature-reference.md#supported-communication-types) pour les données importées dans des boîtes aux lettres de votre organisation Microsoft 365. Pour inclure la révision des communications dans ces plateformes, vous devez configurer un connecteur pour ces services avant que les messages de stratégie de réunion soient surveillés par la stratégie de communication.
-- Les stratégies peuvent prendre en charge des langues d’analyse autres que l’anglais dans les stratégies de conformité de communication personnalisées. Créez un [dictionnaire de mots clés personnalisés](communication-compliance-feature-reference.md#custom-keyword-dictionaries) de mots injurieux dans la langue de votre choix ou créez votre propre modèle de formation d’ordinateur à l’aide de [classifieurs](classifier-getting-started-with.md) pilotables dans Microsoft 365.
+- Les stratégies peuvent prendre en charge des langues d’analyse autres que l’anglais dans les stratégies de conformité de communication personnalisées. Créez un [dictionnaire de mots clés personnalisés](communication-compliance-feature-reference.md#custom-keyword-dictionaries) de mots injurieux dans la langue de votre choix ou créez votre propre modèle de formation d’ordinateur à l’aide de [classifieurs](classifier-get-started-with.md) pilotables dans Microsoft 365.
 - Toutes les organisations ont des normes de communication et des exigences de stratégie différentes. Surveiller des mots clés spécifiques en utilisant des [conditions de stratégie](communication-compliance-feature-reference.md#conditional-settings) de conformité de communication ou surveiller des types d’informations spécifiques avec des types d' [informations sensibles personnalisés](create-a-custom-sensitive-information-type.md).
 
 ## <a name="ready-to-get-started"></a>Vous êtes prêt ?

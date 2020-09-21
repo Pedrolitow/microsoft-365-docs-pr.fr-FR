@@ -7,16 +7,16 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: e433b10b66b5e4f061227eae7e944c7fd19e2260
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 550f7dd35b3990a08da4c2bb9dd3042ff084b185
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289756"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104399"
 ---
 # <a name="register-new-devices-yourself"></a>Inscrivez vous-même les nouveaux appareils
 
-Microsoft Managed Desktop peut fonctionner avec les nouveaux appareils ou vous pouvez réutiliser des appareils que vous avez peut-être déjà (ce qui vous obligera à les réimager). Vous pouvez enregistrer des appareils à l’aide du portail d’administration de bureau géré Microsoft.
+Microsoft Managed Desktop peut fonctionner avec les nouveaux appareils ou vous pouvez réutiliser des appareils que vous avez peut-être déjà (ce qui vous obligera à les réimager). Vous pouvez enregistrer des appareils avec le bureau géré Microsoft dans le portail du gestionnaire de points de terminaison Microsoft.
 
 > [!NOTE]
 > Vous travaillez avec un partenaire pour obtenir des appareils ? Si c’est le cas, vous n’avez pas à vous soucier de l’obtention des hachages matériels ; ils s’occupent de cela pour vous. Assurez-vous que votre partenaire établit une relation avec vous dans le [Centre de partenaires](https://partner.microsoft.com/dashboard). Votre partenaire peut en savoir plus sur [l’aide du centre de partenaires](https://docs.microsoft.com/partner-center/request-a-relationship-with-a-customer). Une fois que cette relation est établie, votre partenaire enregistrera simplement les appareils de votre part, aucune autre action n’est requise de votre part. Si vous souhaitez consulter les détails ou si votre partenaire a des questions, consultez les [étapes pour les partenaires d’inscription des appareils](register-devices-partner.md). Une fois les appareils enregistrés, vous pouvez procéder à la [vérification de l’image](#check-the-image) et à [la remise des périphériques](#deliver-the-device) à vos utilisateurs.
@@ -73,9 +73,9 @@ Les données des fichiers CSV doivent être regroupées en un seul fichier pour 
 
 #### <a name="register-devices-by-using-the-admin-portal"></a>Inscrire des appareils à l’aide du portail d’administration
 
-À partir du portail d' [administration](https://aka.ms/mmdportal)de bureau géré Microsoft, sélectionnez **périphériques** dans le volet de navigation de gauche. Sélectionnez **+ inscrire les appareils**; le survol s’ouvre :
+Dans le [Gestionnaire de points de terminaison Microsoft](https://endpoint.microsoft.com/), sélectionnez **périphériques** dans le volet de navigation de gauche. Recherchez la section bureau géré Microsoft du menu et sélectionnez **appareils**. Dans l’espace de travail périphériques de bureau gérés Microsoft, sélectionnez **+ inscrire les appareils** qui ouvrent un survol pour enregistrer de nouveaux appareils.
 
-[![Entrée brusque après la sélection d’appareils de caisse, liste des appareils avec des colonnes pour les utilisateurs affectés, numéro de série, État, date de dernière vue et âge](../../media/new-registration-ui.png)](../../media/new-registration-ui.png)
+<!-- [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
 
 
 <!--Registering any existing devices with Managed Desktop will completely re-image them; make sure you've backed up any important data prior to starting the registration process.-->
@@ -87,7 +87,7 @@ Procédez comme suit :
 3. Sélectionnez **inscrire les appareils**. Le système ajoute les périphériques à votre liste d’appareils sur le panneau des **appareils**, marqué comme **AutopilotRegistrationRequested**. L’inscription prend généralement moins de 10 minutes et, lorsque le périphérique s’affiche comme **prêt pour l’utilisateur** , ce qui signifie qu’il est prêt et qu’il attend qu’un utilisateur commence à utiliser.
 
 
-Vous pouvez surveiller la progression de l’inscription de l’appareil sur la page principale **des périphériques de bureau gérés par Microsoft** . Les États possibles sont les suivants :
+Vous pouvez surveiller la progression de l’enregistrement de l’appareil sur la page principale. Les États possibles sont les suivants :
 
 | État | Description |
 |---------------|-------------|

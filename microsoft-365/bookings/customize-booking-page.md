@@ -9,19 +9,16 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 116d7a84-a7a0-4911-a1e9-debb2cca7c43
 description: Modifiez le thème de couleur de votre page de réservation dans l’application Microsoft bookings.
-ms.openlocfilehash: f76fee71194cb210f879617b8898e6fd8c9d7b92
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: b33be0cb71998d45e50a66f89f98daa4af175865
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419601"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962512"
 ---
 # <a name="customize-and-publish-your-booking-page"></a>Personnaliser et publier votre page de réservation
 
 La page réservation est l’emplacement où vous configurez l’apparence de votre page de réservation client externe. Une fois que vous avez personnalisé et publié votre page de réservation, vos clients l’utilisent pour réserver des rendez-vous avec vous.
-
-> [!NOTE]
-> Bookings est activé par défaut pour les clients qui disposent des abonnements Microsoft 365 Business standard, Microsoft 365 a3 ou Microsoft 365 a5. Bookings est également disponible pour les clients disposant d’Office 365 entreprise E3 et d’Office 365 entreprise E5, mais il est désactivé par défaut. Pour commencer, consultez la rubrique [obtenir l’accès à Microsoft bookings](get-access.md). Pour activer ou désactiver les réservations, reportez-vous à [la rubrique activer ou désactiver des réservations pour votre organisation](turn-bookings-on-or-off.md).
 
 Pour personnaliser votre page de réservation, connectez-vous à [Office.com](https://office.com), puis accédez **Bookings** à la \> **page réservation**de livres. Vous pouvez personnaliser la page de réservation avec les options suivantes. Une fois que vous avez configuré votre page de réservation, vous pouvez la publier afin que les clients puissent commencer à réserver des rendez-vous avec vous.
 

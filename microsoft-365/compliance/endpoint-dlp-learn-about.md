@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Les points de terminaison contre la protection contre la perte de données Microsoft 365 étend la surveillance des activités des fichiers et des actions de protection pour les points de terminaison. Les fichiers sont rendus visibles dans les solutions de conformité Microsoft 365 '
-ms.openlocfilehash: 2423f45fefe994fbaf5704074c49ce862a59340e
-ms.sourcegitcommit: df59c83174d845b8ddec48b9be2659fbfb58bb7f
+ms.openlocfilehash: 7403f20fa7c97c63be0e5001e8d3f5b37b409eee
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46517495"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131546"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention-preview"></a>En savoir plus sur les points de terminaison de protection contre la perte de données Microsoft 365 (Preview)
 
@@ -120,7 +120,7 @@ Par exemple, si un fichier est copié sur un support USB amovible, les attributs
 - nom du périphérique
 - type d’emplacement de destination
 - application ayant effectué la copie
-- ID d’appareil MDATP (le cas échéant)
+- ID de l’appareil Microsoft Defender pour point de terminaison (le cas échéant)
 - fabricant de l’appareil multimédia amovible
 - modèle d’appareil multimédia amovible
 - numéro de série de l’appareil multimédia amovible

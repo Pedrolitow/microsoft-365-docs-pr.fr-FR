@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: cd796a6bd5faebc87b2f7c9cab36fe17be41fe2e
-ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
+ms.openlocfilehash: 43edaec282cc1efb9f4ab7d9e92ed0a779d255ab
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46597465"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131556"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Conformité de la communication dans Microsoft 365
 
@@ -70,7 +70,7 @@ La conformité de la communication dans Microsoft 365 offre plusieurs fonctionna
 Les modèles personnalisables intelligents dans la conformité de la communication vous permettent d’appliquer une formation machine pour détecter intelligemment les violations de communication au sein de votre organisation.
 
 - **Modèles préconfigurés personnalisables**: les nouveaux modèles de stratégie permettent de résoudre les risques de communication les plus courants. La création et la mise à jour de la stratégie initiale sont désormais plus rapides grâce à un langage choquant et choquant, à des informations sensibles et à des modèles de conformité réglementaire prédéfinis.
-- **Nouvelle prise en charge de l’apprentissage automatique**: les [classifieurs](classifier-getting-started-with.md) de menaces intégrées, de harcèlement et d’image contribuent à réduire les faux positifs dans les messages analysés, en enregistrant les temps de relecteurs pendant le processus d’enquête et de correction.
+- **Nouvelle prise en charge de l’apprentissage automatique**: les [classifieurs](classifier-get-started-with.md) de menaces intégrées, de harcèlement et d’image contribuent à réduire les faux positifs dans les messages analysés, en enregistrant les temps de relecteurs pendant le processus d’enquête et de correction.
 - **Générateur**de conditions amélioré : la configuration des conditions de stratégie est désormais rationalisée en une expérience unique et intégrée dans l’Assistant stratégie, ce qui réduit la confusion dans la façon dont les conditions sont appliquées aux stratégies.
 
 ### <a name="flexible-remediation-workflows"></a>Flux de travail de correction flexibles

@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 2d6dab7ae722b6e64b782596e51e0898ddc2cccc
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 8af782095ada41f0472e1df338ced7ebe76c97fe
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289686"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104411"
 ---
 # <a name="getting-help-for-users"></a>Obtenir de l’aide pour les utilisateurs
 
@@ -34,7 +34,7 @@ Il s’agit d’une application installée sur tous les appareils de bureau gér
 - les utilisateurs peuvent demander un appel vers un numéro de téléphone fourni ou converser en ligne avec un représentant du service.
 - Les demandes qui tombent en dehors de l’étendue prise en charge de bureau géré Microsoft sont redirigées vers le support informatique local via un appel téléphonique.
 
-### <a name="prerequisites"></a>Configuration requise
+### <a name="prerequisites"></a>Conditions préalables
 Pour permettre à vos utilisateurs d’obtenir de l’aide par le biais de l’application, assurez-vous que les conditions préalables suivantes sont remplies :
 
 - L’appareil doit être enregistré avec Microsoft Managed Desktop à l’aide de l’une des méthodes de la [configuration de Microsoft Managed Desktop Devices](../get-started/set-up-devices.md), par exemple, [enregistrer les nouveaux appareils](../get-started/register-devices-self.md).
@@ -71,4 +71,4 @@ les utilisateurs disposant d’appareils de bureau gérés par Microsoft ont ég
 ## <a name="additional-resources"></a>Ressources supplémentaires
 - [Prise en charge des administrateurs pour le bureau géré Microsoft](admin-support.md). 
 - [Prise en charge du bureau géré Microsoft](../service-description/support.md).
-- Si vous vous abonnez déjà à Microsoft Managed Desktop, vous trouverez des procédures détaillées, des flux de processus, des instructions de travail et des FAQ dans le Guide de l’administrateur de bureau géré Microsoft dans la section **ressources en ligne** du [portail d’administration de bureau géré Microsoft](https://aka.ms/mwaasportal).
+- Si vous vous abonnez déjà au bureau géré Microsoft, vous trouverez des procédures détaillées, des flux de processus, des instructions de travail et des FAQ dans le Guide de l’administrateur de bureau géré Microsoft dans les **ressources en ligne** sous la section bureau géré Microsoft du menu d' **administration du client** dans le [Gestionnaire de points de terminaison Microsoft](https://endpoint.microsoft.com/).

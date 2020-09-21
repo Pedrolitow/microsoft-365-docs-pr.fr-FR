@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Déterminez si votre client et vos utilisateurs satisfont à la configuration requise, afin que vous puissiez utiliser un déploiement centralisé pour déployer des compléments Office.
-ms.openlocfilehash: fbf6ce702cfe0fa3c85b634996a38cc4857190b6
-ms.sourcegitcommit: 222fc3f8841de82b1b558f47db8a79aa5054d0ed
+ms.openlocfilehash: 4bd81dcf1d1ee6221a3519baac0a3b1bc63b791f
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "45102871"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131733"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Déterminer si le déploiement centralisé des compléments fonctionne pour votre organisation
 
@@ -46,7 +46,7 @@ Un complément peut prendre jusqu’à 24 heures pour s’afficher pour le clien
 ## <a name="requirements"></a>Configuration requise
 
 Le déploiement centralisé des compléments nécessite que les utilisateurs utilisent les applications Microsoft 365 pour Enterprise (et sont connectés à Office à l’aide de leur ID d’organisation) et disposent de boîtes aux lettres Exchange Online et Exchange Online actives. Le répertoire de votre abonnement doit être dans ou fédéré à Azure Active Directory.
-Vous pouvez afficher les conditions requises spécifiques pour Office et Exchange ci-dessous, ou utiliser le [Vérificateur de compatibilité de déploiement centralisé](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker).
+Vous pouvez afficher les conditions requises spécifiques pour Office et Exchange ci-dessous, ou utiliser le[Vérificateur de compatibilité de déploiement centralisé](#centralized-deployment-compatibility-checker).
 
 La fonctionnalité Déploiement centralisé ne prend pas en charge ce qui suit :
   
@@ -82,7 +82,7 @@ Pour utiliser les applications Microsoft 365 pour Enterprise, un utilisateur doi
 
 Le moyen le plus simple de détecter si les applications Microsoft 365 pour Enterprise sont installées sur un utilisateur et de l’utiliser récemment est d’utiliser le rapport des activations de Microsoft Office, qui est disponible dans le centre d’administration Microsoft 365. Le rapport fournit la liste de tous les utilisateurs qui ont activé les applications Microsoft 365 pour les entreprises au cours des 7, 30, 90 ou 180 derniers jours. À des fins de déploiement centralisé, les activations de bureau pour Windows ou Mac sont les colonnes importantes dans le rapport. Vous pouvez exporter le rapport vers Excel. Pour plus d’informations sur le rapport, reportez-vous à [la rubrique rapports microsoft 365 dans le centre d’administration-activations de Microsoft Office](../activity-reports/microsoft-office-activations.md).
   
-Si vous ne souhaitez pas utiliser le rapport d’activation, vous pouvez demander à un utilisateur d’ouvrir une application Office telle que Word sur son ordinateur, puis choisir le compte de **fichier** \> **Account**. Sous **informations sur le produit**, vous devez voir le **produit abonnement** et **Microsoft 365 pour entreprise**, comme illustré dans l’image suivante.
+Si vous ne souhaitez pas utiliser le rapport d’activation, vous pouvez demander à un utilisateur d’ouvrir une application Office telle que Word sur son ordinateur, puis choisir le compte de **fichier** \> **Account**. Sous **informations sur le produit**, vous devriez voir le **produit abonnement** et **Microsoft 365 pour entreprise**, ou Microsoft 365 Business Premium, comme illustré dans l’image suivante.
 
 ![Informations sur le produit dans une application Office](../../media/product-information-microsoft-365-enterprise.png)
   
@@ -115,7 +115,7 @@ Pour connaître la configuration utilisée, consultez l'administrateur Exchange 
    ```powershell
    Invoke-CompatibilityCheck
    ```
-   Cette commande vous invite à indiquer *_TenantDomain_* (par exemple, *TailspinToysIncorporated. onmicrosoft. </span> com*) et *_TENANTADMIN_* (utilisez vos informations d’identification d’administrateur général), puis demande le consentement.
+   Cette commande vous invite à indiquer  *_TenantDomain_* (par exemple, *TailspinToysIncorporated. onmicrosoft. </span> com*) et  *_TENANTADMIN_* (utilisez vos informations d’identification d’administrateur général), puis demande le consentement.
     
    > [!NOTE]
    > Selon le nombre d'utilisateurs dans votre client, l'exécution du vérificateur peut prendre quelques minutes ou plusieurs heures. 

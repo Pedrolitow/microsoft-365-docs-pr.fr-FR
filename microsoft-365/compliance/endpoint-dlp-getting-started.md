@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Configurez les points de terminaison contre la protection contre la perte de données Microsoft 365 pour surveiller les activités des fichiers et implémenter des actions de protection pour ces fichiers aux points de terminaison.
-ms.openlocfilehash: f24dff993a125de9ecd126b232abfcfa503deb83
-ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
+ms.openlocfilehash: 43ab2a30570f153f16819ede2eeed1f0e091da74
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47399221"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949844"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention-preview"></a>Prise en main des points de terminaison de protection contre la perte de données (aperçu)
 
@@ -102,7 +102,7 @@ Dans ce scénario de déploiement, vous allez intégrer des appareils qui n’on
    ![activer la gestion des appareils](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
 
    > [!NOTE]
-   > Bien que l’activation de l’intégration des appareils dure généralement environ 60 secondes, patientez jusqu’à 30 minutes avant de contacter le support Microsoft.
+   > Bien que l’activation de l’intégration des appareils dure généralement environ 60 secondes, patientez jusqu’à 30 minutes avant de contacter le support Microsoft.
 
 3. Sélectionnez **Gestion des appareils** pour ouvrir la liste des **Appareils**. La liste est vide tant que vous n’avez pas intégré de périphériques.
 4. Sélectionnez **Intégration** pour lancer le processus d’intégration.

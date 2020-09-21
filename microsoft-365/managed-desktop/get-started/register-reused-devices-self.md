@@ -7,12 +7,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 51c241c46a4c8745bcae169a1c1d89e5c4393f2f
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 6c241894ab50b6b1341b06f47c107c8945fb6e8c
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289138"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104569"
 ---
 # <a name="register-existing-devices-yourself"></a>Inscrivez vous-même les appareils existant
 
@@ -21,7 +21,7 @@ ms.locfileid: "47289138"
 
 Le processus pour les partenaires est documenté dans la [procédure permettant aux partenaires d’inscrire des appareils](register-devices-partner.md).
 
-Microsoft Managed Desktop peut fonctionner avec les nouveaux appareils ou vous pouvez réutiliser des appareils que vous avez peut-être déjà (ce qui vous obligera à les réimager). Vous pouvez enregistrer des appareils à l’aide du portail d’administration de bureau géré Microsoft.
+Microsoft Managed Desktop peut fonctionner avec les nouveaux appareils ou vous pouvez réutiliser des appareils que vous avez peut-être déjà (ce qui vous obligera à les réimager). Vous pouvez enregistrer des appareils avec le bureau géré Microsoft dans le portail du gestionnaire de points de terminaison Microsoft.
 
 ## <a name="prepare-to-register-existing-devices"></a>Préparation à l’enregistrement des appareils existants
 
@@ -56,7 +56,7 @@ Si vous avez rempli toutes ces conditions préalables, vous êtes prêt à colle
 2. Dans l’espace de travail analyse, développez le nœud **rapports** , développez **rapports**, puis sélectionnez le nœud **général matériel** . 
 3. Exécutez le rapport, les **informations du périphérique Windows AutoPilot**et affichez les résultats.
 4. Dans la visionneuse de rapports, sélectionnez l’icône **Exporter** , puis choisissez l’option **CSV (valeurs séparées par des virgules)** .
-5. Après avoir enregistré le fichier, vous devez filtrer les résultats sur les appareils que vous prévoyez de vous inscrire auprès du bureau géré Microsoft et charger les données dans le [portail d’administration](https://aka.ms/mmdportal)de bureau géré Microsoft, sélectionnez **appareils** dans le volet de navigation de gauche. Sélectionnez **+ inscrire les appareils**; le survol s’ouvre :
+5. Après avoir enregistré le fichier, vous devez filtrer les résultats sur les appareils que vous prévoyez de vous inscrire auprès du bureau géré Microsoft et charger les données sur le bureau géré Microsoft. Ouvrez le gestionnaire de points de terminaison Microsoft et accédez au menu **périphériques** , puis recherchez la section bureau géré Microsoft et sélectionnez **appareils**. Sélectionnez **+ inscrire les appareils** qui ouvrent un survol pour enregistrer de nouveaux appareils.
 
 
 Pour plus d’informations, reportez-vous à [la rubrique inscrire des appareils à l’aide du portail d’administration](#register-devices-by-using-the-admin-portal) .
@@ -134,9 +134,9 @@ Une fois les données hachées fusionnées dans un fichier CSV, vous pouvez main
 
 #### <a name="register-devices-by-using-the-admin-portal"></a>Inscrire des appareils à l’aide du portail d’administration
 
-À partir du portail d' [administration](https://aka.ms/mmdportal)de bureau géré Microsoft, sélectionnez **périphériques** dans le volet de navigation de gauche. Sélectionnez **+ inscrire les appareils**; le survol s’ouvre :
+Dans le [Gestionnaire de points de terminaison Microsoft](https://endpoint.microsoft.com/), sélectionnez **périphériques** dans le volet de navigation de gauche. Recherchez la section bureau géré Microsoft du menu et sélectionnez **appareils**. Dans l’espace de travail périphériques de bureau gérés Microsoft, sélectionnez **+ inscrire les appareils** qui ouvrent un survol pour enregistrer de nouveaux appareils.
 
-[![Entrée brusque après la sélection d’appareils de caisse, liste des appareils avec des colonnes pour les utilisateurs affectés, numéro de série, État, date de dernière vue et âge](../../media/new-registration-ui.png)](../../media/new-registration-ui.png)
+<!-- Update with new picture [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
 
 
 <!--Registering any existing devices with Managed Desktop will completely re-image them; make sure you've backed up any important data prior to starting the registration process.-->
@@ -149,7 +149,7 @@ Procédez comme suit :
 1. Sélectionnez **inscrire les appareils**. Le système ajoute les périphériques à votre liste d’appareils sur le panneau des **appareils**, marqué comme **AutopilotRegistrationRequested**. L’inscription prend généralement moins de 10 minutes et, lorsque le périphérique s’affiche comme **prêt pour l’utilisateur** , ce qui signifie qu’il est prêt et qu’il attend qu’un utilisateur commence à utiliser.
 
 
-Vous pouvez surveiller la progression de l’inscription de l’appareil sur la page principale **des périphériques de bureau gérés par Microsoft** . Les États possibles sont les suivants :
+Vous pouvez surveiller la progression de l’enregistrement de l’appareil sur la page principale. Les États possibles sont les suivants :
 
 | État | Description |
 |---------------|-------------|

@@ -19,14 +19,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Office 365 – Protection avancée contre les menaces inclut des pièces jointes sécurisées, des liens sûrs, des outils anti-hameçonnage avancés, des outils de création de rapports et des fonctionnalités d’intelligence contre les menaces.
-ms.openlocfilehash: 2241f48877019cb20484aea0dd1fcf7b9e7b8bb5
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 184ab53059a73de534d9a67a45fc41b20a73f13f
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653604"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949683"
 ---
-# <a name="office-365-advanced-threat-protection"></a>Office 365 – Protection avancée contre les menaces
+# <a name="office-365-advanced-threat-protection-atp"></a>Office 365 – Protection avancée contre les menaces (ATP)
 
 > [!IMPORTANT]
 > Cet article est destiné aux entreprises qui ont [Office 365 – Protection avancée contre les menaces](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Si vous utilisez Outlook.com, Microsoft 365 Famille ou Microsoft 365 Personnel et que vous recherchez des informations sur les liens ou pièces jointes fiables dans Outlook, reportez-vous à [Sécurité d’Outlook.com renforcée pour abonnés Microsoft 365](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
@@ -41,6 +41,25 @@ Office 365 – Protection avancée contre les menaces (ATP) protège votre orga
 
 - **[Fonctionnalités automatisées d’enquête et de réponse](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)**  : économisez du temps et des efforts pour investiguer et atténuer les menaces.
 
+## <a name="getting-started"></a>Prise en main
+
+Si vous débutez sur Office 365 – Protection avancée contre les menaces ou si vous en êtes le meilleur en *effectuant*, vous pouvez être amené à interrompre la configuration de l’ATP initiale en bloc, en examinant et en affichant des rapports à l’aide de cet article comme référence. Voici quelques blocs logiques de configuration précoce :
+
+- Configurez tous les éléments à l’aide de la fonctionnalité «*anti*» dans le nom.
+    - anti-programme malveillant
+    - anti-hameçonnage
+    - anti-spam
+- Configurez tous les éléments avec «*Fiable*» dans le nom.
+    - Liens fiables
+    - pièces jointes fiables
+- Protégez les charges de travail (par exemple, SharePoint Online, OneDrive et Teams) 
+- Protéger avec la purge automatique Zero-Hour
+
+Pour savoir comment procéder, [cliquez sur ce lien](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide&preserve-view=true). 
+
+> [!NOTE]
+> ATP existe en deux types de plans différents. Vous pouvez déterminer si vous avez le**Plan 1** si vous avez des détections en temps réel, et le**Plan 2**, si vous avez l’Explorateur de menaces. Le plan que vous avez influence les outils que vous verrez, alors soyez certain que vous êtes conscient de votre plan au fur et à mesure que vous apprenez.
+
 ## <a name="office-365-atp-plan-1-and-plan-2"></a>Office 365 – Protection avancée contre les menaces Plan 1 et Plan 2
 
 Le tableau suivant récapitule les actions incluent dans chaque plan.
@@ -52,7 +71,7 @@ Le tableau suivant récapitule les actions incluent dans chaque plan.
 |<br/>Fonctionnalités de configuration, de protection et de détection : <ul><li>[Pièces jointes fiables](atp-safe-attachments.md)</li><li>[Liens fiables](atp-safe-links.md)</li><li>[ATP pour SharePoint, OneDrive et Microsoft Teams](atp-for-spo-odb-and-teams.md)</li><li>[ATP Protection anti-hameçonnage](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)</li><li>[Détections en temps réel](threat-explorer.md)</li></ul>|Fonctionnalités de l’offre Office 365 - Protection avancée contre les menaces (plan 1)<br/>--- plus ---<br/>Fonctionnalités d’automatisation, d’examen, de correction et de formation :</li><li>[Suivi des menaces](threat-trackers.md)</li><li>[Threat Explorer](threat-explorer.md)</li><li>[Examen et réponse automatisés](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)</li><li>[Simulateur d’attaques](attack-simulator.md)</li></ul>|
 |
 
-- Office 365 – Protection avancée contre les menaces (Plan 2) est inclus dans Office 365 E5, Office 365 a5 et Microsoft 365 E5.
+- Office 365 – Protection avancée contre les menaces (Plan 2) est inclus dans Office 365 E5, Office 365 A5, Microsoft 365 E5 Security et Microsoft 365 E5.
 
 - Le plan 1 Office 365 ATP est incluse dans Microsoft 365 Business Premium.
 
@@ -68,6 +87,8 @@ Avec Office 365 ATP – Protection avancée contre les menaces, l’équipe d
 
 > [!TIP]
 > Consulter [Se protéger contre les menaces](protect-against-threats.md) pour définir une brève liste de stratégies.
+
+## <a name="advanced-threat-protection-policies"></a>Stratégies de protection avancée contre les menaces (ATP)
 
 Les stratégies définies pour votre organisation déterminent le comportement et le niveau de protection des menaces prédéfinies. Les options de stratégie sont extrêmement flexibles. Par exemple, l’équipe de sécurité de votre organisation peut affecter une protection affinée contre les menaces au niveau de l’utilisateur, de l’organisation, du destinataire et du domaine. Il est important de revoir vos stratégies régulièrement, car de nouvelles menaces et défis apparaissent quotidiennement.
 

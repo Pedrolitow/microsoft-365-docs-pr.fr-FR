@@ -17,18 +17,18 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: 686d31c64394094530099edb97bbd10912a58cb8
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: cef17142d90a15f10e82fd51c4c22202bf7ecf00
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949891"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131577"
 ---
 # <a name="identity-and-device-access-configurations"></a>Configurations des identités et de l’accès aux appareils
 
 Le périmètre de sécurité moderne de votre organisation s’étend désormais au-delà de votre réseau pour inclure les utilisateurs qui accèdent aux applications Cloud à partir de n’importe quel emplacement avec un grand nombre d’appareils. Votre infrastructure de sécurité doit déterminer si une demande d’accès donnée doit être accordée et dans quelles conditions. 
 
-Cette détermination doit être basée sur la connexion au compte d’utilisateur, l’appareil utilisé, les applications auxquelles l’utilisateur tente d’accéder, l’emplacement à partir duquel la demande d’accès est effectuée et une évaluation du risque de la demande. Cette fonctionnalité permet de s’assurer que seuls les utilisateurs et les appareils approuvés peuvent accéder à vos ressources critiques.
+Cette détermination doit être basée sur le compte d’utilisateur de la connexion, sur l’appareil utilisé, sur l’application que l’utilisateur utilise pour accéder, sur l’emplacement à partir duquel la demande d’accès est effectuée et sur une évaluation du risque de la demande. Cette fonctionnalité permet de s’assurer que seuls les utilisateurs et les appareils approuvés peuvent accéder à vos ressources critiques.
 
 Cette série d’articles décrit un ensemble de configurations prérequises d’accès aux identités et aux appareils et un ensemble d’accès conditionnel Azure Active Directory (Azure AD), Microsoft Intune et d’autres stratégies pour sécuriser l’accès à Microsoft 365 pour les applications et les services Cloud d’entreprise, d’autres services SaaS et les applications locales publiées avec le proxy d’application Azure AD.
 
@@ -130,7 +130,7 @@ Les stratégies [Intune App protection](https://docs.microsoft.com/intune/app-pr
 
 Ce guide vous montre comment créer des stratégies recommandées pour appliquer l’utilisation des applications approuvées et déterminer comment ces applications peuvent être utilisées avec vos données métiers.
 
-### <a name="microsoft-365"></a>Microsoft 365
+### <a name="microsoft-365"></a>Microsoft 365
 
 Ce guide vous montre comment implémenter un ensemble de stratégies pour protéger l’accès aux services Cloud de Microsoft 365, notamment Microsoft Teams, Exchange Online, SharePoint Online et OneDrive entreprise. En plus de mettre en œuvre ces stratégies, nous vous recommandons d’augmenter également le niveau de protection de votre client à l’aide de ces ressources :
 

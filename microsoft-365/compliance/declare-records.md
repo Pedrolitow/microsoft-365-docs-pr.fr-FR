@@ -17,22 +17,22 @@ search.appverid:
 - MOE150
 - MET150
 description: Déclarer des enregistrements à l’aide d’étiquettes de rétention.
-ms.openlocfilehash: d637817e8d1bcc8c72bfe011dfd288ac4e2d0298
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: 841c5197addff704016e344ba7ae44355c872f72
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778514"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47817100"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>Déclarer des enregistrements à l’aide d’étiquettes de rétention
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](https://aka.ms/ComplianceSD).*
 
-Pour déclarer des articles comme étant un enregistrement, vous utilisez [des étiquettes de conservation](retention.md#retention-labels)qui marquent le contenu comme étant un enregistrement. Vous pouvez soit publier ces étiquettes pour permettre aux utilisateurs et aux administrateurs de les appliquer manuellement au contenu, soit appliquer automatiquement ces étiquettes au contenu que vous voulez marquer comme enregistrement.
+Pour déclarer des documents et courriers électroniques comme enregistrement, utilisez des [étiquettes de rétention](retention.md#retention-labels) qui servent à marquer des éléments comme enregistrement. Vous pouvez soit publier ces étiquettes pour permettre aux utilisateurs et aux administrateurs de les appliquer manuellement au contenu, soit appliquer automatiquement ces étiquettes au contenu que vous voulez marquer comme enregistrement.
 
 ## <a name="configuring-retention-labels-to-declare-records"></a>Configuration d’étiquettes de rétention pour déclarer des enregistrements
 
-Lorsque vous créez ou configurez une étiquette de conservation, sélectionnez l'option permettant de marquer le contenu comme un enregistrement.
+Lors de la création ou la configuration d’une étiquette de rétention, sélectionnez l'option permettant de marquer le contenu comme enregistrement.
 
 >[!NOTE] 
 > L’option de marquage du contenu en tant qu’enregistrement n’est pas disponible lorsque vous créez ou configurez des étiquettes de rétention depuis **Gouvernance des informations** dans le centre de conformité Microsoft 365. Au lieu de cela, vous devez utiliser**Gestion des enregistrements**.
@@ -41,9 +41,9 @@ Créer un nouveau label de conservation qui marque le contenu comme un enregistr
 
 1. Dans le [centre de conformité Microsoft 365](https://compliance.microsoft.com), accédez à **Gestion des enregistrements** \> **Plan de gestion de fichiers**. Dans la page **plan de fichiers**, cliquez **créer une étiquette**.
 
-2. Sur la page **Paramètres d’étiquette** de l’Assistant, choisissez l’option permettant de classifier du contenu sous la forme d’un enregistrement.
+2. Dans la page **Définir les paramètres de rétention** de l’assistant, choisissez l’option permettant de marquer des éléments comme enregistrements :
     
-   ![Cliquez sur Utiliser l’étiquette pour classifier du contenu en tant que case à cocher d’Enregistrement](../media/recordversioning6.png)
+   ![Sélectionnez paramètre de rétention pour marquer des éléments comme enregistrement](../media/recordversioning6.png)
 
 3. Appliquez l’étiquette de rétention aux documents SharePoint ou OneDrive et aux messages électroniques Exchange, le cas échéant. Pour obtenir des instructions :
     

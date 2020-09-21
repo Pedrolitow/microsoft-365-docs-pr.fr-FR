@@ -9,12 +9,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 04c3901155ecd80fad472e07e7e46620c3ddee1f
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: fc216adadea8dd774901d42a754fb288412318a1
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289272"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104593"
 ---
 #  <a name="prepare-mapped-drives-for-microsoft-managed-desktop"></a>Préparer les lecteurs mappés pour le Bureau géré Microsoft
 
@@ -48,8 +48,8 @@ Il est de votre responsabilité de s’assurer que les utilisateurs et les group
  
 Assurez-vous que les lecteurs mappés ne peuvent pas être évités et que vous avez soigneusement examiné les exigences avant d’envoyer une demande de service. Ensuite, procédez comme suit :
 
-1. Accédez au [portail de bureau géré Microsoft](https://aka.ms/mmdportal).  
-2. Soumettez une demande de support intitulée « déploiement de lecteurs mappés » via la section prise en charge des **demandes de support >** et fournissez tous les détails de partage de fichiers requis.  
+1. Accédez au [Gestionnaire de points de terminaison Microsoft](https://endpoint.microsoft.com/) et sélectionnez « Dépannage + support », puis recherchez « demandes de service » sous la section Microsoft Managed Deskop.  
+2. Soumettez une demande de support intitulée « déploiement de lecteurs mappés » et fournissez tous les détails de partage de fichiers requis.  
 3. Les opérations informatiques de bureau gérées par Microsoft conseilleront, à l’aide de mises à jour de demande de support, une fois la demande terminée. Cette configuration sera initialement déployée sur les appareils dans le groupe de déploiement de test.  
-4. Vous devez tester et confirmer que la configuration déployée par le service informatique de bureau géré Microsoft fonctionne comme prévu. Répondez à l’aide de l’onglet discussion de la demande de support pour informer les opérations informatiques gérées par Microsoft une fois que vous avez terminé vos tests.  
+4. Vous devez tester et confirmer que la configuration déployée par le service informatique de bureau géré Microsoft fonctionne comme prévu. Répondez à l’aide de l’onglet discussion dans les détails de la même demande de support pour informer les opérations informatiques de bureau géré Microsoft une fois que vous avez terminé vos tests.  
 5. L’équipe des opérations de bureau géré par Microsoft déploiera la configuration sur les autres groupes de déploiement. 

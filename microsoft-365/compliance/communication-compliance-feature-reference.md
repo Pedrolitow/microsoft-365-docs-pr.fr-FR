@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 1aaa73fdc56662335904cbaa152429ea90d6bb08
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 757b1fcdae69e98ec45bb29e669ceda8f8cb8f98
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289353"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131634"
 ---
 # <a name="communication-compliance-feature-reference"></a>Référence de la fonctionnalité de conformité des communications
 
@@ -189,7 +189,7 @@ Les classifieurs d’image *adulte*, *Racy*et *Gory* analysent les fichiers dans
 
 Les classifieurs intégrés et globaux ne fournissent pas une liste exhaustive des termes ou des images de ces zones. De plus, les normes linguistiques et culturelles changent en permanence, et à la lumière de ces réalités, Microsoft se réserve le droit de mettre à jour les classifieurs à sa discrétion. Alors que les classifieurs peuvent aider votre organisation à surveiller ces domaines, les classifieurs ne sont pas destinés à fournir les moyens exclusifs de surveillance ou d’adressage de cette langue ou de cette image. Votre organisation, et non Microsoft, reste responsable de toutes les décisions liées à l’analyse et au blocage de la langue et des images dans ces domaines.
 
-Pour plus d’informations sur les classifieurs de formation dans Microsoft 365, voir [Getting Started with trainable Classifiers](classifier-getting-started-with.md).
+Pour plus d’informations sur les classifieurs de formation dans Microsoft 365, voir [Getting Started with trainable Classifiers](classifier-get-started-with.md).
 
 ### <a name="conditional-settings"></a>Paramètres conditionnels
 <a name="ConditionalSettings"> </a>
@@ -200,7 +200,7 @@ Le tableau suivant décrit plus en plus de chaque condition.
   
 |**Condition**|**Comment utiliser cette condition ?**|
 |:-----|:-----|
-| **Le contenu correspond à l’un de ces classifieurs** | S’appliquer à la stratégie lorsqu’un classifieur est inclus ou exclu d’un message. Certains classifieurs sont prédéfinis dans votre client et les classifieurs personnalisés doivent être configurés séparément avant d’être disponibles pour cette condition. Un seul classifieur peut être défini en tant que condition dans une stratégie. Pour plus d’informations sur la configuration des classifieurs, consultez la rubrique [Classifiers](classifier-getting-started-with.md). |
+| **Le contenu correspond à l’un de ces classifieurs** | S’appliquer à la stratégie lorsqu’un classifieur est inclus ou exclu d’un message. Certains classifieurs sont prédéfinis dans votre client et les classifieurs personnalisés doivent être configurés séparément avant d’être disponibles pour cette condition. Un seul classifieur peut être défini en tant que condition dans une stratégie. Pour plus d’informations sur la configuration des classifieurs, voir [en savoir plus sur les classifieurs de formation (aperçu)](classifier-learn-about.md). |
 | **Le contenu contient l’un de ces types d’informations sensibles** | S’appliquent à la stratégie lorsque des types d’informations sensibles sont inclus ou exclus dans un message. Certains classifieurs sont prédéfinis dans votre client, et les classifieurs personnalisés peuvent être configurés séparément ou dans le cadre du processus d’attribution de la condition. Chaque type d’informations sensibles que vous choisissez est appliqué séparément et un seul de ces types d’informations sensibles doit s’appliquer pour la stratégie à appliquer au message. Pour plus d’informations sur les types d’informations sensibles personnalisés, consultez la rubrique [Custom sensitive types information](custom-sensitive-info-types.md). |
 | **Un message est reçu à partir de l’un de ces domaines**  <br><br> **Le message n’est reçu à partir d’aucun de ces domaines** | Appliquez la stratégie pour inclure ou exclure des domaines ou des adresses de messagerie spécifiques dans les messages reçus. Entrez chaque domaine ou adresse de messagerie et séparez les domaines ou adresses de messagerie par une virgule. Chaque domaine ou adresse de messagerie entré est appliqué séparément, un seul domaine ou une seule adresse de messagerie doit s’appliquer pour la stratégie à appliquer au message. <br><br> Si vous souhaitez analyser tous les messages électroniques à partir d’un domaine spécifique, tout en excluant les messages qui n’ont pas besoin d’être réexaminés (bulletins d’information, annonces, etc.), vous devez configurer un **message n’est reçu à partir d’aucun de ces domaines** , qui exclut l’adresse de messagerie (par exemple « Newsletter@contoso.com »). |
 | **Un message est envoyé à l’un de ces domaines**  <br><br> **Le message n’est pas envoyé à l’un de ces domaines** | Appliquez la stratégie pour inclure ou exclure des domaines ou des adresses de messagerie spécifiques dans les messages envoyés. Entrez chaque domaine ou adresse de messagerie et séparez les domaines ou adresses de messagerie par une virgule. Chaque domaine ou adresse de messagerie est appliqué séparément, un seul domaine ou une seule adresse de messagerie doit s’appliquer pour la stratégie à appliquer au message. <br><br> Si vous souhaitez analyser tous les messages électroniques envoyés à un domaine spécifique, tout en excluant les messages envoyés qui n’ont pas besoin d’être examinés, vous devez configurer deux conditions : <br> -Un **message est envoyé à l’un de ces domaines** qui définit le domaine (« contoso.com »), et <br> -Un **message n’est pas envoyé à l’un de ces domaines** , qui exclut l’adresse de messagerie (« Subscriptions@contoso.com »). |
@@ -243,7 +243,7 @@ La protection de la confidentialité des utilisateurs qui ont des correspondance
 Pour les utilisateurs disposant d’une correspondance de conformité de communication, vous pouvez choisir l’un des paramètres suivants dans les **paramètres de conformité de communication**:
 
 - **Afficher les versions anonymes des**noms d’utilisateur : les noms d’utilisateur sont rendus anonymes pour empêcher les administrateurs, les analystes, les enquêteurs de données et les relecteurs de voir qui est associé à des alertes de stratégie. Par exemple, un utilisateur « gracieuses Taylor » apparaît avec un pseudonyme aléatoire tel que « AnonIS8-988 » dans tous les domaines de l’expérience de conformité des communications. Le choix de ce paramètre permet d'anonymiser tous les utilisateurs ayant des correspondances de stratégie actuelle et passée et s’applique à toutes les stratégies. Les informations de profil utilisateur dans les détails de l’alerte de conformité des communications ne seront pas disponibles lorsque cette option est sélectionnée. Toutefois, les noms d’utilisateur sont affichés lors de l’ajout de nouveaux utilisateurs à des stratégies existantes ou lors de l’affectation d’utilisateurs à de nouvelles stratégies. Si vous choisissez de désactiver ce paramètre, les noms d’utilisateur sont affichés pour tous les utilisateurs qui ont des correspondances de stratégie actuelle ou passée.
-- **Ne pas afficher les versions anonymes des**noms d’utilisateur : les noms d’utilisateur sont affichés pour toutes les correspondances de stratégie actuelle et passée pour les alertes de conformité de communication. Les informations de profil utilisateur (nom, titre, alias, organisation ou service) s’affichent pour l’utilisateur pour toutes les alertes et les incidents liés à la gestion des risques Insiders.
+- **Ne pas afficher les versions anonymes des**noms d’utilisateur : les noms d’utilisateur sont affichés pour toutes les correspondances de stratégie actuelle et passée pour les alertes de conformité de communication. Les informations de profil utilisateur (nom, titre, alias, organisation ou service) sont affichées pour l’utilisateur pour toutes les alertes de conformité de communication.
 
 ## <a name="notice-templates"></a>Modèles de notifications
 
@@ -283,7 +283,7 @@ Si vous souhaitez créer un message électronique en texte simple pour les notif
 
 Les filtres de conformité de la communication vous permettent de filtrer et de trier les messages d’alerte pour des actions plus rapides d’enquête et de correction. Le filtrage est disponible sur les onglets **en attente** et **résolus** pour chaque stratégie. Pour enregistrer un filtre ou un jeu de filtres en tant que requête de filtre enregistrée, une ou plusieurs valeurs doivent être configurées en tant que sélections de filtre. Le tableau suivant présente les détails des filtres :
 
-|**Filtre**|**Détails**|
+|**Filter**|**Détails**|
 |:-----|:-----|
 | **Date** | Date à laquelle le message a été envoyé ou reçu par un utilisateur au sein de votre organisation. |
 | **Classe file** | Classe du message en fonction du type de message, qu’il *s’agisse d’un message ou* d’une *pièce jointe*. |
@@ -334,16 +334,91 @@ Si vous souhaitez modifier le niveau de gravité affecté dans une stratégie d�
 
 7. Sélectionnez **Fermer** pour quitter la page Détails de la stratégie d’alerte.
 
+## <a name="power-automate-flows-preview"></a>Flux d’automates d’alimentation (aperçu)
+
+[Microsoft Power automate](https://docs.microsoft.com/power-automate/getting-started) est un service de flux de travail qui automatise les actions entre les applications et les services. En utilisant des flux provenant de modèles ou créés manuellement, vous pouvez automatiser les tâches courantes associées à ces applications et services. Lorsque vous activez la mise à l’arrêt automatique des flux pour la conformité de la communication, vous pouvez automatiser des tâches importantes pour les alertes et les utilisateurs. Vous pouvez configurer la gestion de l’alimentation automatique des flux pour avertir les responsables lorsque les utilisateurs ont des alertes de conformité et d’autres applications.
+
+Les clients disposant d’abonnements Microsoft 365 qui incluent la conformité aux communications n’ont pas besoin de puissance automatique supplémentaire pour utiliser le modèle automate de conformité de la conformité recommandé par défaut. Le modèle par défaut peut être personnalisé pour prendre en charge votre organisation et les scénarios principaux de conformité de communication. Si vous choisissez d’utiliser les fonctionnalités de Power automate Premium dans ces modèles, créez un modèle personnalisé à l’aide du connecteur Microsoft 365 Compliance Connector ou utilisez Power automates pour d’autres zones de conformité dans Microsoft 365, vous aurez peut-être besoin d’une alimentation automatique supplémentaire.
+
+![Mise en conformité de la communication automate](../media/communication-compliance-power-automate.png)
+
+Le modèle automate d’alimentation suivant est fourni aux clients pour prendre en charge l’automatisation des processus pour les alertes de conformité de communication :
+
+- **Avertir le gestionnaire lorsqu’un utilisateur a une alerte de conformité de communication**: il se peut que certaines organisations doivent avoir une notification de gestion immédiate lorsqu’un utilisateur a une alerte de conformité de communication. Lorsque ce flux est configuré et sélectionné, le responsable de l’utilisateur du cas reçoit un message électronique contenant les informations suivantes sur toutes les alertes :
+    - Stratégie applicable pour l’alerte
+    - Date/heure de l’alerte
+    - Niveau de gravité de l’alerte
+
+### <a name="create-a-power-automate-flow"></a>Création d’un flux automatique de puissance
+
+Pour créer un flux Automated Power Up à partir d’un modèle recommandé par défaut, vous devez utiliser l’option **gérer les flux d’alimentation** automatique à partir du contrôle **automatiser** lorsque vous travaillez directement dans une alerte. Pour créer un flux automatique de puissance avec **gestion**de l’alimentation automatique, vous devez être membre d’au moins un groupe de rôles de conformité de communication.
+
+Procédez comme suit pour créer un flux automatique d’alimentation à partir d’un modèle par défaut :
+
+1. Dans le centre de conformité Microsoft 365, accédez à stratégies de **conformité des communications**  >  **Policies** et sélectionnez la stratégie avec l’alerte que vous souhaitez consulter.
+2. Dans la stratégie, sélectionnez l’onglet **en attente** et sélectionnez une alerte en attente.
+3. Sélectionnez **automate d’alimentation** dans le menu action d’alerte.
+4. Sur la page **automatiser** , sélectionnez un modèle par défaut dans la section **modèles de conformité des communications** de la page.
+5. Le flux répertorie les connexions incorporées nécessaires pour le flux et s’affiche si les États de connexion sont disponibles. Si nécessaire, mettez à jour toutes les connexions qui ne sont pas affichées comme disponibles. Sélectionnez **Continuer**.
+6. Par défaut, les flux recommandés sont préconfigurés avec les champs de données de conformité de communication recommandés et de service Microsoft 365 requis pour effectuer la tâche attribuée au flux. Si nécessaire, personnalisez les composants de flux à l’aide du contrôle **afficher les options avancées** et en configurant les propriétés disponibles pour le composant de flux.
+7. Si nécessaire, ajoutez des étapes supplémentaires au flux en sélectionnant le bouton **nouvelle étape** . Dans la plupart des cas, cette modification n’est pas nécessaire pour les modèles par défaut recommandés.
+8. Sélectionnez **Enregistrer brouillon** pour enregistrer le flux pour une configuration ultérieure, ou sélectionnez **Enregistrer** pour terminer la configuration du flux.
+9. Sélectionnez **Fermer** pour revenir à la page flux automatique de l’alimentation. Le nouveau modèle est affiché sous la forme d’un flux sous l’onglet **mes flux** et est automatiquement disponible à partir du contrôle Power automate de l’utilisateur qui a créé le flux lorsque vous travaillez avec des alertes de conformité de communication.
+
+### <a name="share-a-power-automate-flow"></a>Partager un flux de puissance automatique
+
+Par défaut, les flux d’alimentation automatique automatiques créés par un utilisateur sont uniquement disponibles pour cet utilisateur. Pour que d’autres utilisateurs de conformité de communication aient accès et utilisent un flux, le flux doit être partagé par le créateur du flux. Pour partager un flux, vous devez utiliser le contrôle **automate Power** lorsque vous travaillez directement dans une alerte.
+
+Pour partager un flux d’alimentation automatique, vous devez être membre d’au moins un groupe de rôles de conformité de communication.
+Procédez comme suit pour partager un flux automatique de puissance :
+
+1. Dans le centre de conformité Microsoft 365, accédez à stratégies de **conformité des communications**  >  **Policies** et sélectionnez la stratégie avec l’alerte que vous souhaitez consulter.
+2. Dans la stratégie, sélectionnez l’onglet **en attente** et sélectionnez une alerte en attente.
+3. Sélectionnez **automate d’alimentation** dans le menu action d’alerte.
+4. Sur la page flux automatique de l' **alimentation** , sélectionnez l’onglet **mes flux** ou flux d' **équipe** .
+5. Sélectionnez le flux à partager, puis sélectionnez **partager** dans le menu options de flux.
+6. Dans la page partage de flux, entrez le nom de l’utilisateur ou du groupe que vous souhaitez ajouter en tant que propriétaire pour le flux.
+7. Dans la boîte de dialogue **connexion utilisée** , sélectionnez **OK** pour confirmer que l’utilisateur ou le groupe ajouté aura un accès total au flux.
+
+### <a name="edit-a-power-automate-flow"></a>Modifier un flux d’alimentation automatique
+
+Si vous avez besoin de modifier un flux, vous utiliserez le contrôle **automate Power** lorsque vous travaillerez directement dans une alerte. Pour modifier un flux d’automate de gestion de l’alimentation, vous devez être membre d’au moins un groupe de rôles de conformité de communication.
+
+Pour modifier un flux automatique, procédez comme suit :
+
+1. Dans le centre de conformité Microsoft 365, accédez à stratégies de **conformité des communications**  >  **Policies** et sélectionnez la stratégie avec l’alerte que vous souhaitez consulter.
+2. Dans la stratégie, sélectionnez l’onglet **en attente** et sélectionnez une alerte en attente.
+3. Sélectionnez **automate d’alimentation** dans le menu action d’alerte.
+4. Sur la page flux automatique de l' **alimentation** , sélectionnez flux à modifier. Sélectionnez **modifier** dans le menu contrôle de flux.
+5. Sélectionnez les **ellipsis**  >  **paramètres** de sélection pour modifier un paramètre de composant de flux ou supprimer des **points de suspension**  >  **Delete** pour supprimer un composant de flux.
+6. Sélectionnez **Enregistrer** , puis **Fermer** pour terminer la modification du flux.
+
+### <a name="delete-a-power-automate-flow"></a>Supprimer un flux d’alimentation automatique
+
+Si vous devez supprimer un flux, vous devez utiliser le contrôle **automate Power** lorsque vous travaillez directement dans une alerte. Pour supprimer un flux d’alimentation automatique, vous devez être membre d’au moins un groupe de rôles de conformité de communication.
+
+Procédez comme suit pour supprimer un flux automatique de puissance :
+
+1. Dans le centre de conformité Microsoft 365, accédez à stratégies de **conformité des communications**  >  **Policies** et sélectionnez la stratégie avec l’alerte que vous souhaitez consulter.
+2. Dans la stratégie, sélectionnez l’onglet **en attente** et sélectionnez une alerte en attente.
+3. Sélectionnez **automate d’alimentation** dans le menu action d’alerte.
+4. Sur la page flux automatique de l' **alimentation** , sélectionnez flux à supprimer. Sélectionnez **supprimer** dans le menu contrôle de flux.
+5. Dans la boîte de dialogue de confirmation de suppression, sélectionnez **supprimer** pour supprimer le flux ou cliquez sur **Annuler** pour quitter l’action de suppression.
+
 ## <a name="reports-preview"></a>Rapports (aperçu)
 
-Le nouveau tableau de bord **rapports** est l’emplacement central pour l’affichage de tous les rapports de conformité de communication. Les widgets de rapport fournissent un aperçu rapide des informations les plus nécessaires pour une évaluation globale de l’état des activités de conformité des communications. Les informations contenues dans les widgets de rapport ne sont pas exportables.
+Le nouveau tableau de bord **rapports** est l’emplacement central pour l’affichage de tous les rapports de conformité de communication. Les widgets de rapport fournissent un aperçu rapide des informations les plus souvent nécessaires pour une évaluation globale de l’état des activités de conformité des communications. Les informations contenues dans les widgets de rapport ne sont pas exportables. Les rapports détaillés fournissent des informations détaillées sur les zones de conformité de communication spécifiques et permettent de filtrer, regrouper, trier et exporter des informations lors de la révision.
 
-Le tableau de bord **rapports** contient les widgets de rapport suivants :
+Le **tableau de bord rapports** contient les liens des widgets de rapport et des rapports détaillés suivants :
 
-- **Correspondances de stratégies récentes**: affiche le nombre de correspondances par stratégie active dans le temps.
-- **Éléments résolus par stratégie**: affiche le nombre d’alertes de correspondance de stratégie résolues par stratégie dans le temps.
-- **Utilisateurs avec la plupart des correspondances de stratégie**: affiche les utilisateurs (ou les noms d’utilisateur anonymes) et le nombre de correspondances de stratégie pour une période donnée.
-- **Stratégie avec le plus de correspondances**: affiche les stratégies et le nombre de correspondances pour une période donnée, classées par ordre décroissant de correspondances.
+- La **stratégie récente correspond à** widget : affiche le nombre de correspondances par stratégie active dans le temps.
+- Widgets **résolus par la stratégie** : affiche le nombre d’alertes de correspondance de stratégie résolues par stratégie dans le temps.
+- **Utilisateurs avec la plupart des stratégies** -widget match : affiche les utilisateurs (ou les noms d’utilisateur anonymes) et le nombre de correspondances de stratégie pour une période donnée.
+- **Stratégie avec le plus de correspondances** , widget : affiche les stratégies et le nombre de correspondances pour une période donnée, classés le plus élevé pour les correspondances.
+- **Escalades par le widget de stratégie** : affiche le nombre de remontées par stratégie sur un moment donné.
+- **Paramètres de stratégie et** rapport détaillé d’État : fournit un aperçu détaillé de la configuration et des paramètres de stratégie, ainsi que de l’état général de chacune de la stratégie (correspondances et actions) sur les messages. Utilisez l’option *Exporter* pour créer un. Fichier CSV contenant les détails du rapport.
+- **Éléments et actions par stratégie** rapport détaillé : Examinez et exportez les éléments correspondants et les actions de correction par stratégie. Utilisez l’option *Exporter* pour créer un. Fichier CSV contenant les détails du rapport.
+- Rapport détaillé sur les éléments **et les actions par emplacement** : Examinez et exportez les éléments correspondants et les actions de correction par emplacement Microsoft 365. Utilisez l’option *Exporter* pour créer un. Fichier CSV contenant les détails du rapport.
 
 ## <a name="audit"></a>Audit
 
@@ -357,7 +432,7 @@ Pour afficher les activités de mise à jour des stratégies de conformité des 
 |**Field**|**Détails**|
 |:-----|:-----|
 | **CreationDate** | Date à laquelle l’activité de mise à jour a été effectuée dans une stratégie. |
-| **ID utilisateur** | Utilisateur qui a effectué l’activité de mise à jour dans une stratégie. |
+| **UserIds** | Utilisateur qui a effectué l’activité de mise à jour dans une stratégie. |
 | **Opérations** | Les opérations de mise à jour effectuées sur la stratégie. |
 | **AuditData** | Ce champ est la source de données principale pour toutes les activités de mise à jour de stratégie. Toutes les activités de mise à jour sont enregistrées et séparées par des virgules. |
 
@@ -366,7 +441,7 @@ Pour afficher les activités de vérification de conformité de la communication
 |**Field**|**Détails**|
 |:-----|:-----|
 | **CreationDate** | Date à laquelle l’activité de révision a été effectuée dans une stratégie. |
-| **ID utilisateur** | Utilisateur qui a effectué l’activité de révision dans une stratégie. |
+| **UserIds** | Utilisateur qui a effectué l’activité de révision dans une stratégie. |
 | **Opérations** | Les opérations de révision effectuées sur la stratégie. |
 | **AuditData** | Ce champ est la source de données principale pour toutes les activités de révision de stratégie. Toutes les activités de révision sont enregistrées et séparées par des virgules. |
 

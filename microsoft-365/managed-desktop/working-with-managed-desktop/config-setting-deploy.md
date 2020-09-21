@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: b731422e6d981b12ea576ed26b841e7c679266ae
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: a24d0dc64e2262a8b208119c45a4a6bade701c10
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46530258"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104533"
 ---
 # <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>Déployer et suivre les paramètres configurables-bureau géré Microsoft
 
@@ -38,20 +38,21 @@ Nous allons afficher l’image d’arrière-plan du bureau dans ces instructions
 
 **Pour déployer les modifications**
 
-1. Se connecter au [portail d’administration de bureau géré Microsoft](https://aka.ms/mwaasportal)
-2. Sous **paramètres**, sélectionnez **configurable**.
+1. Connectez-vous au [Gestionnaire de point de terminaison Microsoft](https://endpoint.microsoft.com/) et accédez au menu **appareils** .
+2. Recherchez la section bureau géré Microsoft, puis sélectionnez **paramètres**.
 3. Dans l’espace de travail **État de déploiement** , sélectionnez le paramètre que vous souhaitez déployer, puis sélectionnez le déploiement intermédiaire à déployer.
 4. Sélectionnez **déployer** pour déployer la modification dans l’un des groupes de déploiement.
 
 > [!NOTE] 
 > L’icône orange attention indique qu’un groupe précédent est disponible pour le déploiement, car il est recommandé de le déployer dans l’ordre. 
 
-![Espace de travail État de déploiement. Volet sites de confiance à droite. La section groupes de déploiement comporte trois colonnes : les groupes de déploiement, les appareils et l’État. Dans la colonne État, « déployer » est mis en surbrillance.](../../media/1deployedit.png)
+<!-- Needs picture updated to show MEM ![Deployment status workspace. Trusted sites pane on the right. In the Deployment groups section are three columns: deployment groups, devices, and status. In the status column, "deploy" is highlighted.](../../media/1deployedit.png) -->
+
 Nous vous recommandons de déployer les groupes de déploiement dans cet ordre : test, First, Fast, puis large. 
 
 Lorsque les modifications sont terminées dans chaque groupe, l’État devient **terminé**.
 
-![Espace de travail État de déploiement avec les colonnes Date de mise à jour, version, test, tout d’abord, rapide et large. La ligne proxy est développée, avec un paramètre daté indiquant « terminé » dans chacun des quatre groupes de déploiement.](../../media/2completeedit.png)
+<!-- Needs picture updated to show MEM ![Deployment status workspace with columns for date updated, version, test, first, fast, and broad. The Proxy row is expanded, showing a dated setting flagged as "complete" in each of the four deployment groups.](../../media/2completeedit.png) -->
 
 ## <a name="revert-deployment"></a>Rétablir le déploiement
 
@@ -60,12 +61,12 @@ Une fois que vous avez déployé une modification, vous pouvez revenir à l' **�
 Nous allons vous montrer les étapes permettant de rétablir une modification à l’aide de l’image d’arrière-plan du Bureau à titre d’exemple. 
 
 **Pour annuler une modification**
-1. Se connecter au [portail d’administration de bureau géré Microsoft](https://aka.ms/mwaasportal)
-2. Sous **paramètres**, sélectionnez **configurable**.
+1. Connectez-vous au [Gestionnaire de point de terminaison Microsoft](https://endpoint.microsoft.com/) et accédez au menu **appareils** .
+2. Recherchez la section bureau géré Microsoft, puis sélectionnez **paramètres**.
 3. Dans l’espace de travail **État de déploiement** , sélectionnez le paramètre que vous souhaitez rétablir, puis sélectionnez le déploiement intermédiaire à rétablir.
 4. Sous **besoin de rétablir cette modification ?**, sélectionnez **rétablir le déploiement**.
 
-![Espace de travail État de déploiement. Pages de démarrage du navigateur est sélectionné, en ouvrant un volet du côté droit avec des données sur la modification envoyée et son état. Dans la partie inférieure se trouve la zone « je dois rétablir ce changement » où vous pouvez sélectionner « rétablir le déploiement ».](../../media/3revert.png) 
+<!-- Needs picture updated to show MEM ![Deployment status workspace. Browser start pages is selected, opening a pane on the right side with data about the submitted change and its status. At the bottom is the "need to revert this change" area where you can select "Revert deployment."](../../media/3revert.png) -->
 
 ## <a name="additional-resources"></a>Ressources supplémentaires
 - [Vue d’ensemble des paramètres configurables](config-setting-overview.md)

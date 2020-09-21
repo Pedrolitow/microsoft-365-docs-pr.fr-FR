@@ -3,7 +3,7 @@ title: Test de connectivité réseau Microsoft 365 (aperçu)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 09/15/2020
+ms.date: 09/17/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,23 +14,23 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Test de connectivité réseau Microsoft 365 (aperçu)
-ms.openlocfilehash: 0a5e7831b28488e793488f572fd830d47a0f3f9a
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 2197f3361efee51dfa2bd170b0c8d8e94709d3e8
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948543"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962397"
 ---
 # <a name="microsoft-365-network-connectivity-test-preview"></a>Test de connectivité réseau Microsoft 365 (aperçu)
 
 L’outil de test de connectivité réseau Microsoft 365 se trouve à l’adresse <https://connectivity.office.com> . Il s’agit d’un outil complémentaire pour les informations sur l’évaluation du réseau et les informations sur le réseau disponibles dans le centre d’administration Microsoft 365 sous **Health | Menu connectivité** .
 
+![Outil de test de connectivité](../media/m365-mac-perf/m365-mac-perf-test-tool-page.png)
+
 >[!NOTE]
 >L’outil de test de connectivité réseau prend en charge les clients dans le commerce WW et l’Allemagne, mais pas dans les GCC modérés, GCC High, DoD ou Chine.
 
 Le réseau Insights dans le centre d’administration 365 de Microsoft est basé sur des mesures de produit standard pour votre client Microsoft 365 qui sont agrégées chaque jour. En comparaison, les informations réseau du test de connectivité réseau Microsoft 365 sont exécutées localement et une fois dans l’outil. Les tests pouvant être effectués dans-le produit sont limités et l’exécution de tests locaux sur l’utilisateur permet de collecter davantage de données, ce qui donne lieu à des analyses plus approfondies. Envisagez ensuite que le réseau Insights dans le centre d’administration 365 de Microsoft indique qu’il existe un problème de réseau pour l’utilisation de Microsoft 365 à un emplacement de bureau spécifique. Le test de connectivité de Microsoft 365 peut vous aider à identifier la cause première de ce problème à l’aide d’une action d’amélioration des performances réseau recommandée.
-
-![Outil de test de connectivité réseau](../media/m365-mac-perf/m365-mac-perf-admin-center.png)
 
 Nous vous recommandons de les utiliser ensemble pour évaluer l’état de la qualité du réseau pour chaque emplacement de bureau dans le centre d’administration 365 de Microsoft et d’autres informations spécifiques après le déploiement des tests en fonction du test de connectivité de Microsoft 365.
 

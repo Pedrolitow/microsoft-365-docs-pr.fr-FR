@@ -20,18 +20,18 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenez un rapport régulier sur la façon dont les membres de votre organisation utilisent les services Microsoft 365. Le tableau de bord Vue d’ensemble de l’utilisation vous permet d’explorer chaque graphique pour obtenir d'autres informations.
-ms.openlocfilehash: f1902c71b167d6293530eae61fa6c57d63c5f06c
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: f0dcb1fac17a39d1125f9188028d714962c9797d
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387800"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948207"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Rapports Microsoft 365 dans le centre d'administration
 
-You can easily see how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need an Microsoft 365 license at all.
+Vous pouvez facilement identifier la manière dont les membres de votre entreprise utilisent les services Microsoft 365. Par exemple, vous pouvez identifier les personnes qui utilisent souvent un service et pour lesquelles les quotas sont atteints, ou celles qui n’ont pas véritablement besoin d’une licence Microsoft 365.
   
-Reports are available for the last 7 days, 30 days, 90 days, and 180 days. Data won't exist for all reporting periods right away. The reports become available within 48 hours.
+Des rapports sont disponibles pour les 7, 30, 90 et 180 derniers jours. Les données ne sont pas tout de suite disponibles pour toutes les périodes couvertes par les rapports. Les rapports sont disponibles au bout de 48 heures.
   
 Visionnez cette vidéo pour une vue d’ensemble : sur la façon d'utiliser les rapports :
   
@@ -141,13 +141,25 @@ En fonction de votre abonnement, les rapports suivants sont disponibles.
 
 ::: moniker range="o365-worldwide"
 
-- [Activité des utilisateurs de Microsoft Teams](microsoft-teams-user-activity.md)
+- [Activité des utilisateurs de Microsoft Teams](microsoft-teams-user-activity-preview.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-- [Utilisation de Microsoft Teams](microsoft-teams-device-usage.md)
+- [ Activité des utilisateurs de Microsoft Teams pour le Cloud communautaire du ministère de la défense et du gouvernement ](microsoft-teams-user-activity.md)
+
+::: moniker-end
+
+::: moniker range="o365-worldwide"
+
+- [Utilisation des appareils Microsoft Teams](microsoft-teams-device-usage-preview.md)
+
+::: moniker-end
+
+::: moniker range="o365-worldwide"
+
+- [Utilisation des périphériques Microsoft Teams pour le Cloud communautaire du ministère de la défense et du gouvernement](microsoft-teams-device-usage.md)
 
 ::: moniker-end
 
@@ -159,7 +171,7 @@ En fonction de votre abonnement, les rapports suivants sont disponibles.
   
 ## <a name="how-to-view-usage-information-for-a-specific-user"></a>Afficher les informations d’utilisation pour un utilisateur spécifique
 
-Use the service reports to research how much a specific user is using the service. For example, to find out how much mailbox storage a specific user has consumed, open the Mailbox usage report, and sort the users by name. If you have thousands of users, export the report to Excel so you filter through the list quickly.
+Utilisez les rapports de service pour déterminer le niveau d’utilisation du service par un utilisateur spécifique. Par exemple, pour déterminer la quantité de stockage de boîte aux lettres consommée par un utilisateur spécifique, ouvrez le rapport Utilisation des boîtes aux lettres et triez les utilisateurs par nom. Si vous avez des milliers d’utilisateurs, exportez le rapport vers Excel pour filtrer la liste rapidement.
   
 Vous ne pouvez pas générer de rapport pour un compte d’utilisateur afin d’obtenir la liste des services associés et le niveau d’utilisation.
   
@@ -177,7 +189,7 @@ Votre liste d’utilisateurs se présente comme suit :
   
 ![Rapports : liste d’utilisateurs rendus anonymes](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
   
-It'll take a few minutes for these changes to take effect on the reports in the reports dashboard. This setting also applies to the reports API.
+Quelques minutes sont nécessaires pour répercuter ces modifications dans les rapports du tableau de bord Rapports. Ce paramètre s’applique également à l’API Rapports.
   
 ## <a name="what-happens-to-usage-data-when-a-user-account-is-closed"></a>Qu’advient-il des données d’utilisation lors de la fermeture d’un compte utilisateur ?
 
