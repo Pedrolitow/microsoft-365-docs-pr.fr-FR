@@ -18,12 +18,14 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 725d22629d2c81a0edf8f329602214afddde6511
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.reviewer: evaldm, isco
+ms.date: 09/16/2020
+ms.openlocfilehash: d7739ac6184509abe4df3aaf140db66f6039717c
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633922"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962652"
 ---
 # <a name="approve-or-reject-pending-actions-following-an-automated-investigation"></a>Approuver ou rejeter les actions en attente à la suite d’une enquête automatisée
 
@@ -62,8 +64,5 @@ Les actions en attente peuvent être révisées et approuvées à l’aide du [C
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-- [En savoir plus sur le centre de notifications](mtp-action-center.md).
-
-- [En savoir plus sur les incidents](incidents-overview.md)
-
-- [En savoir plus sur le repérage](advanced-hunting-overview.md)
+- [Consulter les détails et les résultats d'un examen automatisé](mtp-autoir-results.md)
+- [Gérer les faux positifs/négatifs dans les fonctionnalités d’analyse et de réponse automatisées](mtp-autoir-report-false-positives-negatives.md)

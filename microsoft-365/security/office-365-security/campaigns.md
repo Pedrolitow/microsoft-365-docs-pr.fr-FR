@@ -17,16 +17,16 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Découvrez Campaign Views dans Office 365 - Protection avancée contre les menaces.
-ms.openlocfilehash: 72662519177f4ac43e3de04e9755fd99f5ffb03f
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 60ec8ea1d2c164905e7b57f4b518ea3f80e7986c
+ms.sourcegitcommit: dcbcd5ef278949c777059b0aa6db072e821f72dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46867198"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48173307"
 ---
 # <a name="campaign-views-in-office-365-atp"></a>Campaign Views dans Office 365 - Protection avancée contre les menaces
 
-Les vues de campagne sont une fonctionnalité de la protection avancée contre les menaces (ATP) plan 2 (par exemple, Microsoft 365 E5 ou des organisations avec un complément ATP plan 2). Les affichages campaing dans le centre de sécurité & conformité identifient et catégorisent les attaques par hameçonnage dans le service. Campaign Views permet d’effectuer les opérations suivantes :
+Les vues de campagne sont une fonctionnalité de la protection avancée contre les menaces (ATP) plan 2 (par exemple, Microsoft 365 E5 ou des organisations avec un complément ATP plan 2). Les vues de campagne dans le centre de sécurité & conformité identifient et catégorisent les attaques par hameçonnage dans le service. Campaign Views permet d’effectuer les opérations suivantes :
 
 - Examiner et répondre efficacement aux attaques par hameçonnage.
 - Mieux comprendre l’étendue de l’attaque.
@@ -47,7 +47,7 @@ Microsoft exploite les grandes quantités de données anti-hameçonnage, de bloc
 
 Une campagne peut être à courte durée de vie ou peut s’étendre sur plusieurs jours, semaines ou mois avec des périodes actives et inactives. Une campagne peut être lancée par rapport à votre organisation, ou votre organisation peut faire partie d’une campagne plus importante sur plusieurs sociétés.
 
-## <a name="campaign-views-the-security--compliance-center"></a>Vue de campagne du centre de sécurité & conformité
+## <a name="campaign-views-in-the-security--compliance-center"></a>Vues de campagne dans le centre de sécurité & conformité
 
 Les vues de campagne sont disponibles dans le [Centre de sécurité & conformité](https://protection.office.com) aux **Threat management** \> **campagnes**gestion des menaces ou directement sur le <https://protection.office.com/campaigns> .
 

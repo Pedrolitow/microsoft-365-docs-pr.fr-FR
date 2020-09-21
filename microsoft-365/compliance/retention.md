@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En savoir plus sur les stratégies de rétention et les étiquettes de rétention, qui permettent de conserver les éléments dont vous avez besoin et de supprimer ceux qui ne vous servent pas.
-ms.openlocfilehash: 7787d3e2e3dead737d7a0e5ed083a851a349d561
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: 3d5bf971f65be5fd6ef4fdbed46cc41827657a54
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47816758"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48132134"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>En savoir plus sur les stratégies et les étiquettes de rétention
 
@@ -83,7 +83,7 @@ Contrairement aux stratégies de rétention, les paramètres de rétention des �
  
 - Options de démarrage de la période de rétention à partir de la date d’étiquetage du contenu ou en fonction d’un événement, en plus de l’âge du contenu ou du moment de la dernière modification de celui-ci.
 
-- Utilisez [classifieurs entraînables](classifier-getting-started-with.md) pour identifier le contenu à étiqueter.
+- Utilisez [classifieurs entraînables](classifier-learn-about.md) pour identifier le contenu à étiqueter.
 
 - Appliquez une étiquette par défaut pour les documents SharePoint.
 

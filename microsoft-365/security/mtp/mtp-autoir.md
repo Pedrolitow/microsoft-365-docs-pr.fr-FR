@@ -1,7 +1,7 @@
 ---
-title: Fonctionnalités d’analyse et de réponse automatisées dans Microsoft Threat Protection
-description: Obtenez une vue d’ensemble des fonctionnalités d’examen et réponses automatisés dans Protection Microsoft contre les menaces
-keywords: automatisation, examen, alerte, déclencheur, action, correction
+title: Examen et réponses automatisés dans Protection Microsoft contre les menaces
+description: Obtenir une vue d’ensemble des fonctionnalités d’analyse et de réponse automatisées, également appelées auto-réparation, dans Microsoft Threat Protection
+keywords: automatisation, examen, alerte, déclenchement, action, correction, auto-réparation
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -18,25 +18,33 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 9fc4c99254f4f27b476930a555b237be093bff24
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.date: 09/16/2020
+ms.reviewer: evaldm, isco
+ms.openlocfilehash: f2a0a439996f13cea3823815aceb9dd1c235e2f2
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950723"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962664"
 ---
-# <a name="automated-investigation-and-response-capabilities-in-microsoft-threat-protection"></a>Fonctionnalités d’analyse et de réponse automatisées dans Microsoft Threat Protection
+# <a name="automated-investigation-and-response-in-microsoft-threat-protection"></a>Examen et réponses automatisés dans Protection Microsoft contre les menaces
 
 **S’applique à :**
 - Protection Microsoft contre les menaces
 
-À mesure que des alertes de sécurité sont déclenchées, c’est à votre équipe chargée des opérations de sécurité d’examiner ces alertes et de prendre des mesures pour protéger votre organisation. La hiérarchisation et l’examen des alertes peuvent prendre beaucoup de temps, en particulier lorsque de nouvelles alertes continuent d’arriver pendant qu’un examen est en cours. Les équipes en charge des opérations de sécurité peuvent être submergées par le volume des menaces qu’elles doivent gérer. Les fonctionnalités d’analyse et de réponse automatisées (également appelées fonctionnalités d' *auto-réparation* ) dans Microsoft Threat Protection peuvent vous aider. 
+À mesure que des alertes de sécurité sont déclenchées, c’est à votre équipe chargée des opérations de sécurité d’examiner ces alertes et de prendre des mesures pour protéger votre organisation. La hiérarchisation et l’examen des alertes peuvent prendre beaucoup de temps, en particulier lorsque de nouvelles alertes continuent d’arriver pendant qu’un examen est en cours. Les équipes en charge des opérations de sécurité peuvent être submergées par le volume des menaces qu’elles doivent gérer. Les fonctionnalités d’analyse et de réponse automatisées, avec auto-réparation, dans Microsoft Threat Protection peuvent vous aider.
 
-Regardez la vidéo suivante pour voir comment fonctionnent les fonctionnalités d’autoréparation automatique :
+Regardez la vidéo suivante pour voir le fonctionnement de la réparation automatique :
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4BzwB]
 
-Une enquête et une réponse automatisées sont comme un analyste virtuel dans votre centre d’opérations de sécurité.
+Dans Microsoft Threat Protection, l’analyse et la réponse automatisées avec des fonctionnalités d’autoréparation fonctionnent sur vos appareils, le contenu & le courrier électronique et les identités. La protection de Microsoft contre les menaces rassemble les fonctionnalités suivantes : 
+- [Recherche et correction automatisées dans la protection avancée contre les menaces Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
+- [Recherche et réponse automatisées dans Office 365 protection avancée contre les menaces](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)
+- [Détection de menaces avancées Azure](https://docs.microsoft.com/azure/security/fundamentals/threat-detection)
+- [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)
+ 
+Cet article décrit le fonctionnement de l’instruction et de la réponse automatisées. Pour configurer ces fonctionnalités, consultez la rubrique [configure Automated Investigation and Response Capabilities in Microsoft Threat Protection](mtp-configure-auto-investigation-response.md).
 
 ## <a name="your-virtual-analyst"></a>Votre analyste virtuel
 
@@ -62,25 +70,14 @@ Une alerte déclenchée crée un incident, qui peut lancer une enquête automati
 
 Chaque enquête génère des verdicts (*malveillants*, *suspects*ou *aucune menace détectée*) pour chaque preuve examinée. Selon le type de menace et le verdict résultant, les actions de correction se produisent automatiquement ou après approbation de l’équipe des opérations de sécurité de votre organisation. Les actions en attente et achevées sont répertoriées dans le [Centre de notifications](mtp-action-center.md).
 
-> [!TIP]
-> Si vous pensez qu’un message a été manqué ou incorrectement détecté par les fonctionnalités d’analyse et de réponse automatiques dans Microsoft Threat Protection, faites-le nous savoir. Découvrez [Comment signaler des faux positifs/négatifs dans les fonctionnalités d’enquête et de réponse automatisées dans Microsoft Threat Protection](mtp-autoir-report-false-positives-negatives.md).
-
 Pendant l’exécution d’un examen, les autres alertes associées qui apparaissent sont ajoutées à l’examen jusqu’à la fin de l’opération. Si une entité suspecte est détectée ailleurs, l’examen automatisée s’étend pour inclure cette entité, et un manuel de sécurité général s’exécute. 
 
 > [!NOTE]
-> Toutes les alertes ne déclenchent pas une enquête automatisée, et toutes les recherches ne génèrent pas de mesures correctives automatisées ; tout cela dépend de la configuration de l’analyse et de la réponse automatisées pour votre organisation. 
+> Toutes les alertes ne déclenchent pas une enquête automatisée, et toutes les recherches ne génèrent pas de mesures correctives automatisées ; tout cela dépend de la configuration de l’analyse et de la réponse automatisées pour votre organisation. Voir [configurer les fonctionnalités d’analyse et de réponse automatisées dans Microsoft Threat Protection](mtp-configure-auto-investigation-response.md).
 
-## <a name="requirements-for-automated-investigation-and-response-in-microsoft-threat-protection"></a>Configuration requise pour l’analyse et la réponse automatisées dans Microsoft Threat Protection
-
-|Conditions requises |Détails |
-|--|--|
-|Conditions d’abonnement |Un des éléments suivants : <br/>-Microsoft 365 E5 <br/>-Microsoft 365 a5 <br/>-Microsoft 365 E5 sécurité<br/>-Microsoft 365 a5 Security<br/>-Office 365 E5 plus Enterprise Mobility + Security E5 plus Windows E5<br/><br/>Consultez la rubrique [licences de protection contre les menaces Microsoft](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites?#licensing-requirements).|
-|Configuration réseau requise |- [Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) activé<br/>- [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) (MCAS) configuré<br/>- [MCAS intégré à Azure ATP](https://docs.microsoft.com/cloud-app-security/aatp-integration) |
-|Configuration requise pour ordinateur Windows |-Windows 10, version 1709 ou ultérieure installé (voir [informations sur la version Windows 10](https://docs.microsoft.com/windows/release-information/)) avec les services de protection contre les menaces suivants configurés :<br/>- [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) <br/>- [Antivirus Windows Defender](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) |
-|Protection du contenu de messagerie et des fichiers Office |[Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) configurée |
-|Autorisations |Pour configurer l’analyse et la réponse automatisées, vous devez disposer du rôle administrateur général ou administrateur de sécurité dans Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) ou dans le centre d’administration Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) ).<br/><br/>-Pour utiliser les fonctionnalités d’analyse et de réponse automatisées, consultez la rubrique [Required Permissions for Action Center Tasks](mtp-action-center.md#required-permissions-for-action-center-tasks). |
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-- [Approuver ou refuser les actions liées à un examen et réponse automatisées](mtp-autoir-actions.md)
+- [Consultez les conditions préalables pour une enquête et une réponse automatisées dans Microsoft Threat Protection](mtp-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-threat-protection)
+- [Configurer une enquête et une réponse automatisées pour votre organisation](mtp-configure-auto-investigation-response.md)
 - [En savoir plus sur le centre de notifications](mtp-action-center.md).

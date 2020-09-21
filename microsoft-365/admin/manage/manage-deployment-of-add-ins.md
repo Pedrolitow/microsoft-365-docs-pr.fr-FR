@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Découvrez comment déployer des compléments pour les utilisateurs et les groupes de votre organisation à l’aide du déploiement centralisé dans le centre d’administration.
-ms.openlocfilehash: aec2adab7735a2be5670210abf05f88f081fe4ed
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 5806b2a33446a8e273c2aaf78e082c6fd753bbe4
+ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47306525"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48171279"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>Déployer des compléments dans le centre d’administration
 
@@ -64,6 +64,9 @@ Avant de commencer, consultez [la rubrique déterminer si un déploiement centra
 1. Dans le centre d’administration, accédez à **Settings** la \> page **compléments** de paramètres.
     
 2. Sélectionnez **déployer un complément** en haut de la page, puis cliquez sur **suivant**.
+ 
+    > [!NOTE]
+    > Le centre d’administration est mis à jour vers l’expérience de déploiement avec des applications intégrées. Si vous ne voyez pas les étapes ci-dessus, accédez à la section déploiement centralisé en accédant à **paramètres**  >  **intégrés**dans les applications. En haut de la page **applications intégrées** , choisissez **compléments**.
     
 3. Sélectionnez une option et suivez les instructions.
   
@@ -131,7 +134,7 @@ Les mises à jour des compléments se produisent comme suit :
     
 - **Complément de l'Office Store :** lorsqu'un administrateur a sélectionné un complément à partir de l'Office Store, si un complément est mis à jour dans l'Office Store, le complément sera mis à jour plus tard dans le déploiement centralisé. Le complément est mis à jour au démarrage suivant des applications Office concernées. L'application web peut changer à tout moment. 
   
-## <a name="learn-more"></a>En savoir plus
+## <a name="learn-more"></a>Si vous souhaitez en savoir plus
 
 [Gérer des compléments dans le centre d’administration](manage-addins-in-the-admin-center.md)
 

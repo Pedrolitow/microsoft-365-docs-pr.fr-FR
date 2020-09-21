@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: En savoir plus sur le point et où pour accéder au Kit laboratoire de déploiement Windows et Office.
-ms.openlocfilehash: 09441f879fa41d1b920aae7d37625d0a52160d84
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: bf49a815c0d3d952187f863120865ab3aa4674fc
+ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949879"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48171409"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Kit de laboratoire de déploiement de Windows et d’Office
 
@@ -54,35 +54,47 @@ ET le laboratoire est conçu pour être connecté aux versions d’évaluation p
 Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de déploiement et de gestion. Les laboratoires ont été mis à jour pour les dernières versions d’Intune et de Configuration Manager. 
 
 ### <a name="plan-and-prepare-infrastructure"></a>Planifier et préparer l’infrastructure 
-Analyses du bureau   
-Passerelle de gestion du Cloud & point de distribution dans le Cloud rattachement, co-gestion et basculement des charges de travail    
-Accès à distance
+- Analyses du bureau 
+- Passerelle de gestion du Cloud & point de distribution dans le Cloud 
+- Liaison de client, co-gestion et basculement de charges de travail  
+- Accès à distance (VPN) 
 
 ### <a name="prepare-configuration"></a>Préparation de la configuration   
-Optimiser Windows 10 Update Delivery Servicing Windows 10 using Group Policy Servicing Windows 10 using Microsoft Intune Servicing Windows 10 avec Configuration Manager Servicing Microsoft 365 Apps for Enterprise using Configuration Manager Servicing Microsoft 365 applications for Enterprise using Intune    
-Sécurité et conformité 
+- Optimiser la remise de mise à jour de Windows 10   
+- Maintenance de Windows 10 à l’aide de la stratégie de groupe
+- Maintenance de Windows 10 à l’aide de Microsoft Intune   
+- Maintenance de Windows 10 avec le gestionnaire de configuration   
+- Maintenance des applications Microsoft 365 pour Enterprise à l’aide du gestionnaire de configuration   
+- Maintenance des applications Microsoft 365 pour Enterprise à l’aide d’Intune  
+- Sécurité et conformité   
 
 ### <a name="prepare-applications"></a>Préparer les applications    
-Boîte à outils de préparation pour Office    
-Empaquetage et conversion MSIX d’applications Win32 
+- Boîte à outils de préparation pour Office  
+- Empaquetage et conversion MSIX d’applications Win32   
 
 ### <a name="deploy-windows-10"></a>Déployer Windows 10   
-Séquences de tâches de déploiement du système d’exploitation dans le gestionnaire de configuration des séquences de tâches de déploiement du système d’exploitation dans MDT Windows AutoPilot deploy and Manage the New Edge Microsoft    
+- Séquences de tâches de déploiement du système d’exploitation dans le gestionnaire de configuration
+- Séquences de tâches de déploiement du système d’exploitation dans MDT   
+- Windows Autopilot
+- Déployer et gérer le nouveau Microsoft Edge  
 
 ### <a name="deploy-microsoft-365-apps-for-enterprise"></a>Déployer les Applications Microsoft 365 pour les grandes entreprises    
-Déploiement géré dans le Cloud    
-Déploiement géré localement  
-Applications Microsoft 365 pour le déploiement d’entreprise sur des appareils non liés à AD   
-Déploiement géré d’entreprise à l’aide de Configuration Manager Enterprise Managed Deployment Using Microsoft Intune    
-Gestion et déploiement métier avec Microsoft Intune déployer Microsoft teams
+- Déploiement géré dans le Cloud  
+- Déploiement géré localement    
+- Applications Microsoft 365 pour le déploiement d’entreprise sur des appareils non liés à AD 
+- Déploiement géré d’entreprise à l’aide du gestionnaire de configuration
+- Déploiement géré d’entreprise à l’aide de Microsoft Intune  
+- Gestion et déploiement métier avec Microsoft Intune
+- Déployer Microsoft teams
 
 ### <a name="deploy-windows-virtual-desktop"></a>Déployer Windows Virtual Desktop  
+- Préparer, déployer, optimiser
  
 ### <a name="download-the-windows-and-office-deployment-lab-kit"></a>Télécharger le Kit laboratoire de déploiement Windows et Office
 
 [Télécharger le Kit laboratoire de déploiement Windows et Office](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
-*Utilisez une large bande passante pour télécharger ce contenu afin d’améliorer votre expérience de téléchargement et d’autoriser 30-45 minutes pour la mise en service automatique. L’environnement de laboratoire nécessite au minimum 16 Go de mémoire disponible et 150 Go d’espace disque disponible. Pour des performances optimales, il est recommandé de disposer de 32 Go de mémoire disponible. L’atelier expire le 4 décembre 2020. Une nouvelle version sera publiée avant l’expiration.*
+*Utilisez une large bande passante pour télécharger ce contenu afin d’améliorer votre expérience de téléchargement et d’autoriser 30-45 minutes pour la mise en service automatique. L’environnement de laboratoire nécessite au minimum 16 Go de mémoire disponible et 150 Go d’espace disque disponible. Pour des performances optimales, il est recommandé de disposer de 32 Go de mémoire disponible. L’atelier expire le 5 décembre 2020. Une nouvelle version sera publiée avant l’expiration.*
 
 ## <a name="additional-guidance"></a>Conseils supplémentaires
 

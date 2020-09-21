@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Test de connectivité réseau Microsoft 365 (aperçu)
-ms.openlocfilehash: 2197f3361efee51dfa2bd170b0c8d8e94709d3e8
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: 40a46ecb39366c64c99077e90bb35c5056f36b9d
+ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47962397"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48171349"
 ---
 # <a name="microsoft-365-network-connectivity-test-preview"></a>Test de connectivité réseau Microsoft 365 (aperçu)
 
@@ -37,13 +37,33 @@ Nous vous recommandons de les utiliser ensemble pour évaluer l’état de la qu
 >[!IMPORTANT]
 >Les informations sur le réseau, les recommandations en matière de performances et les évaluations dans le centre d’administration 365 de Microsoft sont actuellement en état d’aperçu et sont uniquement disponibles pour les locataires Microsoft 365 qui ont été apportées dans le programme d’aperçu des fonctionnalités.
 
-## <a name="the-advanced-tests-client-application"></a>Application cliente de tests avancés
+## <a name="what-happens-at-each-test-step"></a>Que se passe-t-il à chaque étape de test ?
+
+### <a name="office-location-identification"></a>Identification de l’emplacement Office
+
+Lorsque vous cliquez sur le bouton exécuter le test, vous affichez la page de test en cours d’exécution et identifiez l’emplacement du bureau. Vous pouvez taper votre emplacement par ville, État et pays ou vous pouvez le détecter à partir du navigateur Web. Si vous la détectez ensuite, nous recherchons la latitude et la longitude à partir du navigateur Web et limitons la précision à 300 m par 300M avant l’utilisation. Nous faisons cela car il n’est pas nécessaire d’identifier l’emplacement de manière plus précise que les performances du réseau. 
+
+### <a name="javascript-tests"></a>Tests JavaScript
+
+Après l’identification de l’emplacement Office, nous exécutons un test de latence TCP dans JavaScript et nous demandeons des données au service concernant les serveurs frontaux de service Office 365 en cours d’utilisation et recommandés. Une fois terminées, nous les affichons sur la carte et dans l’onglet Détails, où elles peuvent être affichées avant la prochaine étape.
+
+### <a name="download-the-advanced-tests-client-application"></a>Télécharger l’application cliente de tests avancés
+
+Nous allons ensuite démarrer le téléchargement de l’application cliente de tests avancés. Nous comptons sur l’utilisateur pour lancer l’application cliente et l’installation de .NET Core doit également être installée.
 
 Il existe deux parties au test de connectivité réseau Microsoft 365 ; le site Web <https://connectivity.office.com> et une application cliente téléchargeable Windows qui exécute des tests de connectivité réseau avancés. La plupart des tests requièrent l’exécution de l’application. Il remplira de nouveau les résultats dans la page Web lors de son exécution.
 
 Vous serez invité à télécharger l’application de test de client avancée à partir du site Web une fois les tests de navigateur Web terminés. Ouvrez et exécutez le fichier lorsque vous y êtes invité.
 
 ![Application cliente de tests avancés](../media/m365-mac-perf/m365-mac-perf-open-run-file.png)
+
+### <a name="start-the-advanced-tests-client-application"></a>Démarrer l’application cliente de tests avancés
+
+Une fois que l’application cliente démarre la page Web est mise à jour pour afficher et que les données de test commencent à être reçues sur la page Web. Elle est mise à jour chaque fois que de nouvelles données sont reçues et vous pouvez passer en revue les données à mesure qu’elles arrivent.
+
+### <a name="advanced-tests-completed-and-test-report-upload"></a>Tests avancés terminés et chargement des rapports de test
+
+Une fois les tests terminés, la page Web et le client de tests avancés l’indiquent et, si l’utilisateur est signé, le rapport de test est téléchargé vers le client client.
 
 ## <a name="sharing-your-test-report"></a>Partage de votre rapport de test
 
@@ -111,7 +131,7 @@ Cela détecte si vous utilisez un VPN pour vous connecter à Office 365. Un rés
 
 #### <a name="vpn-split-tunnel"></a>Tunnel VPN Split
 
-Chaque itinéraire de catégorie Optimize for Exchange Online, SharePoint Online et Microsoft teams est testé pour vérifier s’il s’agit d’tunnelled sur le réseau privé virtuel (VPN) ou non. Une charge de travail fractionnée évite totalement le VPN. Une charge de travail tunnelled est entièrement envoyée via le VPN. Une charge de travail tunnelled sélective comporte des itinéraires envoyés sur le réseau privé virtuel et d’autres à l’extérieur. Un résultat de transmission s’affiche si toutes les charges de travail sont fractionnées ou sélectivement tunnelled.
+Chaque itinéraire de catégorie Optimize for Exchange Online, SharePoint Online et Microsoft teams est testé pour vérifier s’il est en tunnel sur le réseau privé virtuel (VPN) ou non. Une charge de travail fractionnée évite totalement le VPN. Une charge de travail en tunnel est entièrement envoyée via le VPN. Une charge de travail sélective par tunnel comporte des itinéraires envoyés via le VPN et d’autres. Un résultat de transmission s’affiche si toutes les charges de travail sont divisées ou par tunneling sélective.
 
 #### <a name="customers-in-your-metropolitan-area-with-better-performance"></a>Les clients de votre région métropolitaine avec de meilleures performances
 
@@ -173,7 +193,7 @@ Pendant le téléchargement de 15 Mo, nous Mesurez la latence TCP sur la porte d
 
 Indique le nom DNS et l’adresse IP du serveur de portes frontales du service SharePoint auquel vous étiez dirigé. Il est fourni à des fins d’information uniquement et aucune analyse réseau n’est associée.
 
-### <a name="microsoft-teams"></a>Microsoft Teams
+### <a name="microsoft-teams"></a>Microsoft Teams
 
 Cette section présente les résultats des tests liés à Microsoft Teams.
 
@@ -207,28 +227,6 @@ Lorsqu’un certificat SSL n’est pas fourni par Microsoft, nous affichons le n
 
 Cette section présente les résultats d’un itinéraire ICMP vers le volet frontal du service Exchange Online, le volet frontal du service SharePoint Online et le porte de service frontal de Microsoft Teams. Il est fourni à des fins d’information uniquement et aucune analyse réseau n’est associée. Trois traceroutes sont fournies. Un traceroute vers _Outlook.office365.com_, un traceroute vers le serveur frontal SharePoint du client ou vers _Microsoft.SharePoint.com_ s’il n’en a pas été fourni, et un traceroute vers _World.TR.Teams.Microsoft.com_.
 
-## <a name="what-happens-at-each-test-step"></a>Que se passe-t-il à chaque étape de test ?
-
-### <a name="office-location-identification"></a>Identification de l’emplacement Office
-
-Lorsque vous cliquez sur le bouton exécuter le test, vous affichez la page de test en cours d’exécution et identifiez l’emplacement du bureau. Vous pouvez taper votre emplacement par ville, État et pays ou vous pouvez le détecter à partir du navigateur Web. Si vous la détectez ensuite, nous recherchons la latitude et la longitude à partir du navigateur Web et limitons la précision à 300 m par 300M avant l’utilisation. Nous faisons cela car il n’est pas nécessaire d’identifier l’emplacement de manière plus précise que les performances du réseau. 
-
-### <a name="javascript-tests"></a>Tests JavaScript
-
-Après l’identification de l’emplacement Office, nous exécutons un test de latence TCP dans JavaScript et nous demandeons des données au service concernant les serveurs frontaux de service Office 365 en cours d’utilisation et recommandés. Une fois terminées, nous les affichons sur la carte et dans l’onglet Détails, où elles peuvent être affichées avant la prochaine étape.
-
-### <a name="download-the-advanced-tests-client-application"></a>Télécharger l’application cliente de tests avancés
-
-Nous allons ensuite démarrer le téléchargement de l’application cliente de tests avancés. Nous comptons sur l’utilisateur pour lancer l’application cliente et l’installation de .NET Core doit également être installée.
-
-### <a name="start-the-advanced-tests-client-application"></a>Démarrer l’application cliente de tests avancés
-
-Une fois que l’application cliente démarre la page Web est mise à jour pour afficher et que les données de test commencent à être reçues sur la page Web. Elle est mise à jour chaque fois que de nouvelles données sont reçues et vous pouvez passer en revue les données à mesure qu’elles arrivent.
-
-### <a name="advanced-tests-completed-and-test-report-upload"></a>Tests avancés terminés et chargement des rapports de test
-
-Une fois les tests terminés, la page Web et le client de tests avancés l’indiquent et, si l’utilisateur est signé, le rapport de test est téléchargé vers le client client.
-
 ## <a name="connectivity-reports"></a>Rapports de connectivité
 
 Lorsque vous êtes connecté, vous pouvez consulter les rapports précédents que vous avez exécutés. Vous pouvez également les partager ou les supprimer de la liste.
@@ -251,7 +249,7 @@ Il s’agit actuellement d’un aperçu et nous prévoyons de fournir des mises 
 
 ### <a name="what-is-required-to-run-the-advanced-test-client"></a>Qu’est-ce qui est requis pour exécuter le client de test avancé ?
 
-Le client de test avancé requiert .NET Core 3,1 Desktop Runtime. Si vous exécutez le client de test avancé sans l’installer, vous serez redirigé vers [la page .net Core 3,1 installer](https://dotnet.microsoft.com/download/dotnet-core/3.1). Veillez à installer le runtime de bureau et non le kit de développement logiciel, ou le runtime ASP.NET principal qui est plus haut sur la page. Les autorisations d’administrateur sur l’ordinateur sont reuqired pour installer .NET Core. 
+Le client de test avancé requiert .NET Core 3,1 Desktop Runtime. Si vous exécutez le client de test avancé sans l’installer, vous serez redirigé vers [la page .net Core 3,1 installer](https://dotnet.microsoft.com/download/dotnet-core/3.1). Veillez à installer le runtime de bureau et non le kit de développement logiciel, ou le runtime ASP.NET principal qui est plus haut sur la page. Les autorisations d’administrateur sur l’ordinateur sont requises pour installer .NET Core. 
 
 ### <a name="what-is-microsoft-365-service-front-door"></a>Qu’est-ce que le service frontal de Microsoft 365 ?
 

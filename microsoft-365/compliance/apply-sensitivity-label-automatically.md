@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de critère de diffusion, vous pouvez affecter automatiquement une étiquette à un document ou message électronique ou vous pouvez inviter les utilisateurs pour sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: 88ad35b2bc07f85a86a1900d9f551b92d4646ba1
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: e28c3866ad674b4bf933bd83e0ebccc19657ca7b
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546726"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131802"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette sensibilité au contenu
 
@@ -136,7 +136,7 @@ Lorsque vous sélectionnez l’option **Classifieurs pouvant être formés**, s�
 > [!CAUTION]
 > Nous déprécions le **langage inconvenant** classifieur intégré, car il génère un grand nombre de faux positifs. N’utilisez pas ce classifieur intégré et si vous l’utilisez actuellement, vous devez déplacer vos processus métier. Nous vous recommandons d’utiliser les classifieurs intégrés de **Harcèlement ciblée** , de **blasphème** et de **Menace** à la place.
 
-Pour plus d’informations sur ces classifieurs, voir [Prise en main des classifieurs de formation (préversion)](classifier-getting-started-with.md).
+Pour plus d’informations sur ces classifieurs, consultez [Découvrez les classifieurs de formation (préversion)](classifier-learn-about.md).
 
 Pendant la période de préversion pour cette option, les applications suivantes prennent en charge les classifieurs pouvant être formés pour les étiquettes de confidentialité :
 

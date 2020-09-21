@@ -9,18 +9,26 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: 2ac0bb01c1a941d460e92c7e75e765ceb85b2bc0
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: f57911276d74c6945027077404e1f83c2f5072fd
+ms.sourcegitcommit: eb905c5b4d7e71fc930a207357295b0160c4f065
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546573"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "48137034"
 ---
 # <a name="access-the-admin-portal"></a>Accéder au portail d’administration
 
 Votre passerelle vers le service bureau géré Microsoft est le [portail Microsoft Azure](https://portal.azure.com). Pour en savoir plus sur l’utilisation et la personnalisation de votre expérience de portail Azure, consultez la documentation sur le [portail Azure](https://docs.microsoft.com/azure/azure-portal/). Disponible dans l’aperçu maintenant, vous pouvez également trouver Microsoft Managed Desktop dans le [Gestionnaire de points de terminaison Microsoft](https://endpoint.microsoft.com/). Si vous n’êtes pas familiarisé avec les fonctionnalités de ce portail pour la gestion des périphériques, consultez la [documentation du gestionnaire de points de terminaison Microsoft](https://docs.microsoft.com/mem/).
 
-Votre compte d’administrateur a besoin d’autorisations spécifiques pour accéder aux fonctionnalités d’administration de bureau géré Microsoft dans le portail Azure ou le gestionnaire de points de terminaison Microsoft. Vous pouvez gérer l’accès administrateur à ces fonctionnalités au sein de votre organisation à l’aide du contrôle d’accès basé sur un rôle (RBAC). Plusieurs rôles d’administrateur Azure AD et de rôles personnalisés intégrés permettent de contrôler plus précisément les différentes fonctionnalités du portail d’administration de bureau géré Microsoft. Pour plus d’informations sur les rôles Azure Active Directory, reportez-vous à la rubrique [Administrator Role Permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). Contrairement aux rôles d’administrateur AAD qui s’appliquent à un grand nombre de produits et de services Microsoft, les rôles personnalisés sont propres à Microsoft Managed Desktop et ne garantissent l’accès qu’aux fonctionnalités d’administration de ce service. Les administrateurs peuvent attribuer des rôles personnalisés aux utilisateurs individuellement ou en combinaison avec les rôles d’administrateur AAD pour ajouter des autorisations de bureau géré Microsoft à des comptes d’administrateur existants.
+> [!NOTE]
+> Toutefois, vous choisissez d’accéder au bureau géré Microsoft, dans le [Gestionnaire de points de terminaison Microsoft](https://endpoint.microsoft.com/) ou le [portail Azure](https://portal.azure.com), les navigateurs suivants sont pris en charge :
+> - Microsoft Edge (dernière version)
+> - Microsoft Internet Explorer 11
+> - Safari (dernière version, Mac uniquement)
+> - Chrome (dernière version)
+> - Firefox (dernière version)
+
+Votre compte d’administrateur a besoin d’autorisations spécifiques pour accéder aux fonctionnalités d’administration de bureau géré Microsoft dans le portail Azure ou le gestionnaire de points de terminaison Microsoft. Vous pouvez gérer l’accès administrateur à ces fonctionnalités au sein de votre organisation à l’aide du contrôle d’accès basé sur un rôle (RBAC). Plusieurs rôles d’administrateur Azure Active Directory (Azure AD) et de rôles personnalisés intégrés permettent de contrôler plus précisément les différentes fonctionnalités du portail d’administration de bureau géré Microsoft. Pour plus d’informations sur les rôles Azure Active Directory, reportez-vous à la rubrique [Administrator Role Permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). Contrairement aux rôles d’administrateur Azure AD qui s’appliquent à un grand nombre de produits et de services Microsoft, les rôles personnalisés sont propres à Microsoft Managed Desktop et ne garantissent l’accès qu’aux fonctionnalités d’administration de ce service. Les administrateurs peuvent attribuer des rôles personnalisés aux utilisateurs individuellement ou en combinaison avec les rôles d’administrateur Azure AD pour ajouter des autorisations de bureau géré Microsoft à des comptes d’administrateur existants.
 
 Chacun des rôles ci-dessous peut être affecté pour fournir différents niveaux d’accès :
 

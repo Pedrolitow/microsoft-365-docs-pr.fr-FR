@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: 'Les administrateurs Exchange Online gèrent les courriers électroniques et les boîtes aux lettres de votre organisation. Par exemple, ils récupèrent les éléments supprimés dans la boîte aux lettres d’un utilisateur. '
-ms.openlocfilehash: 0b63679883e8329782700085fa0c11a0ac6585ca
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: be4c8a4f1c75402d690cc705dd408c9070e40c9b
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307432"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131769"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>À propos du rôle d’administrateur Exchange Online
 
@@ -34,15 +34,17 @@ Pour vous aider à administrer Microsoft 365, vous pouvez [attribuer](assign-adm
   
  **Conseil**: lorsque vous affectez une personne au rôle d’administrateur Exchange, affectez-lui également le rôle d’administrateur de service. De cette façon, ils peuvent voir des informations importantes dans le centre d’administration 365 de Microsoft, telles que l’intégrité du service Exchange Online, et modifier et publier des notifications.
   
+## <a name="before-you-begin"></a>Avant de commencer
+
 Voici quelques-unes des tâches clés que les utilisateurs peuvent effectuer lorsqu’ils sont affectés au rôle d’administrateur Exchange :
   
 - [Récupérer des éléments supprimés dans une boîte aux lettres utilisateur - Aide aux administrateurs](https://docs.microsoft.com/microsoft-365/enterprise/recover-deleted-items-in-a-mailbox)
-    
+
 - [Configurez une stratégie d’archivage et de suppression pour les boîtes aux lettres de votre organisation](https://docs.microsoft.com/microsoft-365/compliance/set-up-an-archive-and-deletion-policy-for-mailboxes).
-    
+
 - Configurez des fonctionnalités de boîte aux lettres, telles que la stratégie de partage de boîtes aux lettres : comment les utilisateurs peuvent partager des informations de calendrier et de contacts avec d’autres personnes en dehors de votre organisation.
-    
-- Configurer les délégués «[Envoyer en tant que](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)» et «[Envoyer sur abehalf](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)» pour la boîte aux lettres d’un utilisateur. Par exemple, un dirigeant souhaitera que son assistant(e) ait la possibilité d’envoyer des messages en son nom. 
+
+- Configurer les délégués «[Envoyer en tant que](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)» et «[Envoyer sur abehalf](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)» pour la boîte aux lettres d’un utilisateur. Par exemple, un dirigeant souhaitera que son assistant(e) ait la possibilité d’envoyer des messages en son nom.
 
 - [Créez une boîte aux lettres partagée](../email/create-a-shared-mailbox.md) pour permettre à un groupe de personnes de surveiller et d’envoyer des courriers électroniques à partir d’une adresse de messagerie commune.
 

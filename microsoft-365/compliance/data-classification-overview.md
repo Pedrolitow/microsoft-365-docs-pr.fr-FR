@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le tableau de bord de classification des données vous permet de consulter les données sensibles qui ont été trouvées et classifiées au sein de votre organisation.
-ms.openlocfilehash: aff6d2c30fe8036448a8816426896f080b86b9e6
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 725dc5d2e9e5cf0638a54c5ee46d77b321ae4796
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948504"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131722"
 ---
 # <a name="know-your-data---data-classification-overview"></a>Connaissez vos données : vue d’ensemble de la classification des données
 
@@ -34,7 +34,7 @@ En tant qu'administrateur Microsoft 365 ou administrateur de conformité, vous p
 - les emplacements de vos données sensibles et conservées
 
 Vous pouvez également gérer ces fonctionnalités sur la page classification de données :
-- [classifieurs avec capacité d’apprentissage](classifier-getting-started-with.md)
+- [classifieurs avec capacité d’apprentissage](classifier-learn-about.md)
 - [types d’informations sensibles](what-the-sensitive-information-types-look-for.md)
 
 Vous trouverez la classification des données dans le **Centre de conformité Microsoft 365** ou le **Centre de sécurité Microsoft 365** > **Classification** > **Classification de données**.
@@ -137,4 +137,4 @@ L’objectif de la création de rapports sur la classification des données est 
 - [En savoir plus sur les étiquettes de niveau de confidentialité](sensitivity-labels.md)
 - [En savoir plus sur les stratégies et les balises de rétention](retention.md)
 - [Définitions d’entités des types d’informations sensibles](sensitive-information-type-entity-definitions.md)
-- [Prise en main des classificateurs pouvant être formés (préversion)](classifier-getting-started-with.md)
+- [Découvrez les classificateurs de formation (préversion)](classifier-learn-about.md)

@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: Implémentez les fonctionnalités Microsoft information protection (MIP) à l’aide de la conformité Microsoft 365 pour vous aider à découvrir, classer et protéger les informations sensibles partout où elles se trouvent.
-ms.openlocfilehash: ac4499fceae1e4f754753cf91beaf106d855c517
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: f867391243302d0ce912ae5d740ed761ea7317b7
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308345"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131964"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft information protection dans Microsoft 365
 
@@ -41,7 +41,7 @@ Pour comprendre votre environnement de données et identifier les données impor
 |Fonctionnalité|Quels problèmes est-il résolu ?|Prise en main|
 |:------|:------------|:--------------------|:-----------------------------|
 |[Types d’informations sensibles](sensitive-information-type-entity-definitions.md)| Identifie les données sensibles à l’aide d’expressions régulières intégrées ou personnalisées ou d’une fonction, avec une preuve corroborante incluant des mots clés, des niveaux de confiance et une proximité.| [Personnaliser un type d’informations sensibles intégré](customize-a-built-in-sensitive-information-type.md)|
-|[Classifieurs de formation (préversion)](classifier-getting-started-with.md)| Classifie les données pour vous, à l’aide de l’un des classifieurs intégrés ou de la formation d’un classifieur avec votre propre contenu | [Créer un classifieur de formation (aperçu)](classifier-creating-a-trainable-classifier.md) |
+|[Classifieurs de formation (préversion)](classifier-learn-about.md)| Classifie les données pour vous, à l’aide de l’un des classifieurs intégrés ou de la formation d’un classifieur avec votre propre contenu | [Prise en main des classificateurs de formation (préversion)](classifier-get-started-with.md) |
 |[Classification des données](data-classification-overview.md) | Identifie les éléments qui ont une étiquette de sensibilité, une étiquette de rétention ou qui ont été classés comme type d’informations sensibles dans votre organisation et les actions que vos utilisateurs ententent de ceux-ci.  | [Prise en main de l’explorateur de contenu](data-classification-content-explorer.md)<br /><br /> [Prise en main de l’explorateur d’activités](data-classification-activity-explorer.md) |
 
 ## <a name="protect-your-data"></a>Protégez vos données

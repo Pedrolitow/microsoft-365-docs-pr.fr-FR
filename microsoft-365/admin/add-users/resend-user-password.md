@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9b838071-94aa-4b8e-8d84-d17ece1ee951
-description: Découvrez comment réinitialiser le mot de passe et envoyer un courrier électronique de notification à un nouvel utilisateur de Microsoft 365.
-ms.openlocfilehash: d39a448cdea9e986c46fbebc1d4cfcdf63882daf
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+description: Découvrez comment réinitialiser le mot de passe et envoyer un courrier électronique à un nouvel utilisateur de Microsoft 365.
+ms.openlocfilehash: 206e38929183fc280134a42e3febead2483d0f76
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47361818"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131745"
 ---
 # <a name="resend-a-users-password---admin-help"></a>Renvoyer le mot de passe d’un utilisateur – Aide de l’administrateur
 
@@ -33,7 +33,7 @@ Cet article explique comment renvoyer le courrier électronique de notification 
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Cet article s’adresse aux personnes responsables de la stratégie d’expiration des mots de passe au sein d’une entreprise, d’une école ou d’une association. Pour effectuer ces étapes, vous devez vous connecter à l’aide de votre compte d’administrateur Microsoft 365. [Qu’est-ce qu’un compte administrateur ?](../admin-overview/admin-overview.md).
+Cet article s’adresse aux personnes responsables de la stratégie d’expiration des mots de passe au sein d’une entreprise, d’une école ou d’une association. Pour effectuer ces étapes, vous devez vous connecter avec votre compte d’administrateur Microsoft 365. [Qu’est-ce qu’un compte d’administrateur ?](../admin-overview/admin-overview.md)
 
 Pour effectuer ces étapes, vous devez être [administrateur général ou administrateur de mots de passe](about-admin-roles.md) .
 

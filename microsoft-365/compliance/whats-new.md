@@ -1,5 +1,5 @@
 ---
-title: Nouveautés de la conformité Microsoft 365
+title: Nouveautés dans la conformité Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: brendonb
@@ -18,14 +18,14 @@ ms.collection:
 - M365-security-compliance
 description: Qu’il s’agisse d’ajouter de nouvelles solutions au centre de conformité, de mettre à jour des fonctionnalités existantes en fonction de vos commentaires ou de déployer une documentation actualisée et actualisée, Microsoft 365 vous aide à rester informé de la mise en conformité en perpétuelle évolution. Découvrez ce que nous avons fait dans ce mois-ci.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 750d8274faa5e68f8d36006f8ccf6d7fa55f8250
-ms.sourcegitcommit: 2179abfe0b7a8bea917eb1c1057ed3795bdf91e6
+ms.openlocfilehash: 7d5e1bb67d6adc1b3c25aea8f468a23ed5c1019a
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47336667"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48132034"
 ---
-# <a name="whats-new-in-microsoft-365-compliance"></a>Nouveautés de la conformité Microsoft 365
+# <a name="whats-new-in-microsoft-365-compliance"></a>Nouveautés dans la conformité Microsoft 365
 
 Qu’il s’agisse d’ajouter de nouvelles solutions au [Centre de conformité Microsoft 365](microsoft-365-compliance-center.md), de mettre à jour des fonctionnalités existantes en fonction de vos commentaires ou de déployer une documentation actualisée et actualisée, Microsoft 365 vous aide à rester au fait de la mise en conformité en perpétuelle évolution. Jetez un œil aux nouveautés de la conformité de Microsoft 365 dès aujourd’hui. 
 
@@ -269,7 +269,7 @@ Voici un résumé des nouvelles solutions que vous trouverez. Restez un oeil pou
 |Catalogue de solutions (aperçu) <br/>|Le catalogue de solutions vous permet de découvrir et de vous familiariser rapidement avec nos solutions de conformité et de gestion des risques. Le catalogue est organisé en trois catégories de conformité, chacune contenant des détails sur les solutions qui composent cette catégorie. Les catégories incluent la protection des informations & la gouvernance, la gestion des risques initiés et la détection & réponse <br/>|[Vue d’ensemble du catalogue de solutions (aperçu)](microsoft-365-solution-catalog.md)|
 |Conformité de la communication (aperçu) <br/>|La conformité des communications fait partie de la nouvelle catégorie de gestion des risques Insider qui permet de réduire les risques de communication en vous aidant à détecter, capturer et prendre des mesures correctives pour les messages inappropriés dans votre organisation. La solution étend les fonctionnalités des stratégies de surveillance dans Office 365 en introduisant plusieurs nouvelles améliorations, telles que des modèles intelligents, des flux de travail de correction flexibles et des informations exploitables. <br/>|[Conformité de la communication dans Microsoft 365 (version d’évaluation)](communication-compliance.md)|
 |Classification des données (aperçu) <br/>|Notre nouvelle page classification des données contient des informations puissantes et des outils qui vous permettent de découvrir et d’évaluer la façon dont les informations et les étiquettes sensibles (rétention et sensibilité) sont utilisées dans le contenu au sein de votre organisation. Passer en revue le contenu qui contient des informations sensibles ou des étiquettes appliquées, explorer l’activité des étiquettes dans les emplacements Microsoft 365, créer des types d’informations sensibles personnalisés et bien plus encore.<br/>|[Vue d’ensemble de la classification des données (aperçu)](data-classification-overview.md)|
-|Classifieurs de formation (préversion) <br/>|Ce nouvel outil puissant utilise notre moteur d’apprentissage automatique pour identifier des catégories de contenu dans votre organisation, telles que des documents réglementaires ou des contrats d’employés. Une fois créés, les classifieurs peuvent être utilisés dans plusieurs solutions de conformité pour détecter le contenu associé et le classer, le protéger, le conserver et bien plus encore.<br/>|[Prise en main des classificateurs pouvant être formés (préversion)](classifier-getting-started-with.md)|
+|Classifieurs de formation (préversion) <br/>|Ce nouvel outil puissant utilise notre moteur d’apprentissage automatique pour identifier des catégories de contenu dans votre organisation, telles que des documents réglementaires ou des contrats d’employés. Une fois créés, les classifieurs peuvent être utilisés dans plusieurs solutions de conformité pour détecter le contenu associé et le classer, le protéger, le conserver et bien plus encore.<br/>|[En savoir plus sur les classifieurs de formation (aperçu)](classifier-learn-about.md)|
 
 #### <a name="updated-compliance-solutions"></a>Mise à jour des solutions de conformité
 
@@ -314,7 +314,7 @@ Lors de la configuration du chiffrement pour une étiquette de sensibilité, vou
 
 Accédez à [restreindre l’accès au contenu à l’aide des étiquettes de confidentialité pour appliquer le chiffrement](encryption-sensitivity-labels.md#let-users-assign-permissions) pour en savoir plus.
 
-## <a name="august-2019"></a>Août 2019
+## <a name="august-2019"></a>Août 2019
 
 ### <a name="update-to-data-investigations"></a>Mise à jour des enquêtes de données
 

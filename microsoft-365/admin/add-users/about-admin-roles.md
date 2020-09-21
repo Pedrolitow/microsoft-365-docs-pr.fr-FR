@@ -21,19 +21,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
-description: Les rôles d’administrateur correspondent à des fonctions professionnelles et accordent l'autorisation d'effectuer des tâches spécifiques dans le centre d’administration. Par exemple, l’administrateur du service ouvre les tickets de support avec Microsoft.
-ms.openlocfilehash: d80207ac264cb1b649f631d358c86809c2992a8e
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+description: Les rôles d’administrateur correspondent à des fonctions professionnelles et accordent l'autorisation d'effectuer des tâches spécifiques dans le centre d’administration. Par exemple, l’administrateur du service peut ouvrir les tickets de support via le centre d’administration.
+ms.openlocfilehash: 35fee24a2e9de6c00f37e93c59851b7e760baa19
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47361772"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131781"
 ---
 # <a name="about-admin-roles"></a>À propos des rôles d’administrateur
 
 Votre abonnement Microsoft 365 ou Office 365 inclut un ensemble de rôles d’administrateur que vous pouvez attribuer aux utilisateurs de votre organisation à l’aide du Centre d’administration Microsoft 365. Chaque rôle d’administrateur correspond à des fonctions d’entreprise courantes et donne aux personnes concernées dans votre organisation des autorisations pour effectuer des tâches spécifiques dans les centres d’administration.
 
 Le Centre d’administration Microsoft 365 vous permet de gérer les rôles Azure AD et Microsoft Intune. Toutefois, ces rôles sont un sous-ensemble des rôles disponibles sur le Portail Azure AD et le Centre d’administration Intune.
+
+## <a name="before-you-begin"></a>Avant de commencer
 
 Vous recherchez la liste complète des descriptions de rôle Azure AD détaillées que vous pouvez gérer dans le centre d’administration Microsoft 365 ? Consultez la page Autorisations des rôles d’administrateur dans Azure Active Directory. [Autorisations des rôles d’administrateur dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 

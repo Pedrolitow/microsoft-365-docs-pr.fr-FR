@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Informations sur le réseau Microsoft 365 (aperçu)
-ms.openlocfilehash: e3730704b6672c931b7538659a38f218e769dd0a
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: 682c888fefb9bec9725e470d62019c857fc2de07
+ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47962370"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48171337"
 ---
 # <a name="microsoft-365-network-insights-preview"></a>Informations sur le réseau Microsoft 365 (aperçu)
 
@@ -157,7 +157,7 @@ Cela indique que la majorité de vos utilisateurs sont susceptibles de rencontre
 
 ### <a name="what-should-i-do"></a>Que dois-je faire ?
 
-Activer la visibilité de la connectivité réseau de l’emplacement Office si vous ne l’avez pas déjà fait. Vous voulez identifier les bureaux impactred par une connectivité réseau médiocre qui a un impact sur Exchange et trouver des moyens d’améliorer le périmètre réseau pour chacun d’eux qui connecte les utilisateurs au réseau de Microsoft.
+Activer la visibilité de la connectivité réseau de l’emplacement Office si vous ne l’avez pas déjà fait. Vous voulez identifier les bureaux concernés par une faible connectivité réseau qui a un impact sur Exchange et trouver des moyens d’améliorer le périmètre réseau pour chacun d’eux qui connecte les utilisateurs au réseau de Microsoft.
 
 ## <a name="sharepoint-sampled-connections-impacted-by-connectivity-issues"></a>Connexions SharePoint échantillonnées affectées par les problèmes de connectivité
 
@@ -169,7 +169,7 @@ Cela indique que la majorité de vos utilisateurs sont susceptibles de rencontre
 
 ### <a name="what-should-i-do"></a>Que dois-je faire ?
 
-Activer la visibilité de la connectivité réseau de l’emplacement Office si vous ne l’avez pas déjà fait. Vous voulez identifier les bureaux impactred par une connectivité réseau médiocre qui a un impact sur SharePoint et trouver des moyens d’améliorer le périmètre réseau pour chacun d’eux qui connecte les utilisateurs au réseau de Microsoft.
+Activer la visibilité de la connectivité réseau de l’emplacement Office si vous ne l’avez pas déjà fait. Vous voulez identifier les bureaux concernés par une faible connectivité réseau qui a un impact sur SharePoint et trouver des moyens d’améliorer le périmètre réseau pour chacun d’eux qui connecte les utilisateurs au réseau de Microsoft.
 
 ## <a name="related-topics"></a>Voir aussi
 
@@ -177,6 +177,6 @@ Activer la visibilité de la connectivité réseau de l’emplacement Office si 
 
 [Microsoft 365 Network Assessment (aperçu)](office-365-network-mac-perf-score.md)
 
-[Test de connectivité Microsoft 365 dans le centre d’administration M365 (aperçu)](office-365-network-mac-perf-onboarding-tool.md)
+[Outil de test de connectivité réseau Microsoft 365 (aperçu)](office-365-network-mac-perf-onboarding-tool.md)
 
 [Services d’emplacement de connectivité réseau Microsoft 365 (aperçu)](office-365-network-mac-location-services.md)

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent en savoir plus sur les rapports de flux de messagerie disponibles dans le tableau de bord des rapports dans le centre de sécurité & conformité.
 ms.custom: ''
-ms.openlocfilehash: 772aec3c18e3e6343bdfd4831252d03a46961735
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 3db9130083565d77bb84b4b31ec63eee5cc7a7c9
+ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949619"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48171397"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Afficher les rapports de flux de messagerie dans le tableau de bord rapports du centre de sécurité & conformité
 
@@ -238,7 +238,7 @@ Vous pouvez modifier ces filtres en cliquant sur **Filtrer** ou en cliquant sur 
 Le tableau de données contient les informations suivantes :
 
 - **Direction**
-- **Type (Type)**
+- **Type**
 - **24 heures**
 - **3 jours**
 - **7 jours**
@@ -399,7 +399,7 @@ Chaque fichier. csv exporté est limité à 150 000 lignes. Si les données cont
 
 ## <a name="sent-and-received-email-report"></a>Rapport de courrier électronique envoyé et reçu
 
-Le rapport de **courrier électronique envoyé et reçu** est un rapport intelligent qui affiche des informations sur les messages entrants et sortants, notamment les détections de courrier indésirable, les programmes malveillants et la messagerie électronique identifiés comme étant « en qualité ». La différence entre ce rapport et le [rapport d’état de flux](#mailflow-status-report) de courrier est la suivante : ce rapport n’inclut pas de données sur les messages bloqués par la protection du serveur Edge.
+Le rapport de **courrier électronique envoyé et reçu** est un rapport intelligent qui affiche des informations sur les messages entrants et sortants, notamment les détections de courrier indésirable, les programmes malveillants et la messagerie électronique identifiés comme étant « en qualité ». La différence entre ce rapport et le [rapport d’état de flux](#mailflow-status-report) de courrier est la suivante : ce rapport n’inclut pas de données sur les messages bloqués par la protection du serveur Edge. Il est important de comprendre que si un message est envoyé à cinq destinataires, il est considéré comme un seul message.
 
 L’affichage Aggregate et l’affichage détaillé du rapport autorisent 90 jours de filtrage.
 
@@ -445,7 +445,7 @@ Pour revenir à l’affichage de rapport, cliquez sur **afficher le rapport**.
 Si vous cliquez sur **afficher les détails** de la table dans la fenêtre dépanner **par : direction** ou dépanner **par :** le mode de direction, les informations suivantes sont affichées :
 
 - **Date (UTC)**
-- **Type (Type)**
+- **Type**
 - **Direction**
 - **Nombre de messages**
 

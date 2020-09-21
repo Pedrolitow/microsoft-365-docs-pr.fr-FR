@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Découvrez comment les utilisateurs utilisent les étiquettes de confidentialité dans les applications Office pour ordinateur de bureau, mobile et le Web, et quelles applications prennent en charge les étiquettes de sensibilité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 513a544239890f2299a7208d2ba2c20c4507a7ef
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 7ad340d84297c716edcfbb39ea7f3aa75c093523
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357776"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962631"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Utiliser les étiquettes de confidentialité dans les applications Office
 
@@ -63,7 +63,7 @@ Pour iOS et Android : lorsqu’une version minimale est indiquée, la fonctionn
 |[Permettre aux utilisateurs d’attribuer des autorisations](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | [Canal actuel](https://docs.microsoft.com/deployoffice/overview-update-channels#current-channel-overview) (2003 +) | 16.35 +   | En cours de révision   | En cours de révision         | En cours de révision                                                        |
 |[Afficher l’utilisation des étiquettes avec l’analyse d’étiquette et l'](label-analytics.md) envoi de données pour les administrateurs                      | En cours de révision            | En cours de révision        | En cours de révision   | En cours de révision         | En cours de révision                                                        |
 |[Demander aux utilisateurs d’appliquer une étiquette à leurs courriers électroniques et documents](sensitivity-labels.md#what-label-policies-can-do)   | En cours de révision            | En cours de révision        | En cours de révision   | En cours de révision         | En cours de révision                                                        |
-|[Appliquer automatiquement une étiquette de confidentialité à du contenu](apply-sensitivity-label-automatically.md)                    | Déploiement vers le [canal actuel](https://docs.microsoft.com/deployoffice/overview-update-channels#current-channel-overview) (2006 +)                                  | En cours de révision | En cours de révision | En cours de révision | [Oui-opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Appliquer automatiquement une étiquette de confidentialité au contenu](apply-sensitivity-label-automatically.md)                    | Déploiement vers le [canal actuel](https://docs.microsoft.com/deployoffice/overview-update-channels#current-channel-overview) (2006 +)                                  | Aperçu pour Word et PowerPoint : déploiement vers le [canal actuel (aperçu)](https://office.com/insider) | En cours de révision | En cours de révision | [Oui-opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |Prise en charge de l' [enregistrement automatique](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) et de la [co-création](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) sur des documents étiquetés et protégés | En cours de révision | En cours de révision | En cours de révision | En cours de révision | [Oui-opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
 
@@ -80,7 +80,7 @@ Pour iOS et Android : lorsqu’une version minimale est indiquée, la fonctionn
 |[Permettre aux utilisateurs d’attribuer des autorisations](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | Oui               |
 |[Afficher l’utilisation des étiquettes avec l’analyse d’étiquette et l'](label-analytics.md) envoi de données pour les administrateurs                      | En cours de révision                       | En cours de révision                    | En cours de révision           | En cours de révision               | En cours de révision               |
 |[Demander aux utilisateurs d’appliquer une étiquette à leurs courriers électroniques et documents](sensitivity-labels.md#what-label-policies-can-do)   | En cours de révision                       | En cours de révision                    | En cours de révision           | En cours de révision               | En cours de révision               |
-|[Appliquer automatiquement une étiquette de confidentialité à du contenu](apply-sensitivity-label-automatically.md)                    | Aperçu : [canal bêta](https://office.com/insider) et déploiement vers le [canal actuel (aperçu)](https://office.com/insider)                      | En cours de révision                    | En cours de révision           | En cours de révision               | Oui |
+|[Appliquer automatiquement une étiquette de confidentialité au contenu](apply-sensitivity-label-automatically.md)                    | Déploiement vers le [canal actuel](https://docs.microsoft.com/deployoffice/overview-update-channels#current-channel-overview) (2006 +)                      | En cours de révision                    | En cours de révision           | En cours de révision               | Oui |
 |
 
 ## <a name="office-built-in-labeling-client-and-other-labeling-solutions"></a>Client d’étiquetage Office intégré et autres solutions d’étiquetage
@@ -134,7 +134,7 @@ Les étiquettes de sensibilité que vous configurez pour appliquer le chiffremen
 - Pour un document : informations de **fichier**  >  **Info**  >  **protéger le document protéger**  >  **l’accès restreint**
 - pour un e-mail : sous l’onglet **Options** > **chiffrer** 
   
-Lorsque les utilisateurs étiquetent initialement un document ou un message électronique, ils peuvent toujours remplacer vos paramètres de configuration d’étiquette par leurs propres paramètres de chiffrement. Par exemple :
+Lorsque les utilisateurs étiquetent initialement un document ou un message électronique, ils peuvent toujours remplacer vos paramètres de configuration d’étiquette par leurs propres paramètres de chiffrement. Par exemple:
 
 - Un utilisateur applique l’étiquette **confidentialité \ tous les employés** à un document et cette étiquette est configurée pour appliquer les paramètres de chiffrement pour tous les utilisateurs de l’organisation. Cet utilisateur configure manuellement les paramètres IRM pour restreindre l’accès à un utilisateur en dehors de votre organisation. Le résultat final est un document étiqueté **confidentiel \ tous les employés** et chiffré, mais les utilisateurs de votre organisation ne peuvent pas l’ouvrir comme prévu.
 
@@ -144,7 +144,7 @@ Lorsque les utilisateurs étiquetent initialement un document ou un message éle
 
 Si le document ou l’adresse de messagerie est déjà étiqueté, un utilisateur peut effectuer l’une des actions suivantes si le contenu n’est pas déjà chiffré ou s’il dispose de l’exportation [droite](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) ou contrôle total. 
 
-Pour une étiquette plus cohérente avec un rapport significatif, fournissez des étiquettes et des conseils appropriés pour que les utilisateurs ne puissent appliquer que des étiquettes pour protéger des documents. Par exemple :
+Pour une étiquette plus cohérente avec un rapport significatif, fournissez des étiquettes et des conseils appropriés pour que les utilisateurs ne puissent appliquer que des étiquettes pour protéger des documents. Par exemple:
 
 - Pour les cas d’exception où les utilisateurs doivent affecter leurs propres autorisations, fournissez des étiquettes qui [permettent aux utilisateurs d’affecter leurs propres autorisations](encryption-sensitivity-labels.md#let-users-assign-permissions). 
 

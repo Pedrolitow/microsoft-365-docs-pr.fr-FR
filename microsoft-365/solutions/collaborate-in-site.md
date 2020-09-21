@@ -16,12 +16,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Découvrez les étapes de configuration de Microsoft 365 nécessaires pour configurer un site SharePoint en vue de la collaboration avec des invités.
-ms.openlocfilehash: c04114218342a2d65b318c71d061c2a0ed815fab
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: d5a868e57753a6eb05f74b4873ed64ef0a70878e
+ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46797815"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48171267"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Collaborer avec des invités sur un site
 
@@ -39,18 +39,18 @@ Cette vidéo présente les étapes de configuration décrites dans ce document.<
 
 Le partage dans Microsoft 365 est régi par les [paramètres de relations organisationnelles dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations). Si le partage d’invités est désactivé ou restreint dans Azure AD, cela remplace tous les paramètres de partage que vous configurez dans Microsoft 365.
 
-Vérifiez les paramètres de relations organisationnelles pour vous assurer que le partage avec des invités n’est pas bloqué.
+Vérifiez les paramètres de collaboration externe pour vous assurer que le partage avec des invités n’est pas bloqué.
 
-![Capture d’écran de la page des paramètres de relations organisationnelles d’Azure Active Directory](../media/azure-ad-organizational-relationships-settings.png)
+![Capture d’écran de la page des paramètres de collaboration externe Azure Active Directory](../media/azure-ad-organizational-relationships-settings.png)
 
-Pour définir les paramètres de relation organisationnelle
+Pour définir les paramètres de collaboration externe :
+
 
 1. Connectez-vous à Microsoft Azure à l’adresse [https://portal.azure.com](https://portal.azure.com) .
 2. Dans le volet de navigation de gauche, cliquez sur **Azure Active Directory**.
-3. Dans le volet de **vue d’ensemble** , cliquez sur **relations organisationnelles**.
-4. Dans le volet **relations organisationnelles** , cliquez sur **paramètres**.
-5. Assurez-vous que les **administrateurs et les utilisateurs du rôle d’invité invité peuvent inviter** et que les **membres peuvent inviter** sont tous deux la valeur **Oui**.
-6. Si vous avez effectué des modifications, cliquez sur **Enregistrer**.
+3. Sélectionnez **identités externes** et cliquez sur **paramètres de collaboration externe**.
+4. Dans le volet des **paramètres invité invité** , assurez-vous que les **administrateurs et les utilisateurs du rôle d’invité invité peuvent inviter** et que les **membres peuvent inviter** sont tous deux la valeur **Oui**.
+5. Si vous avez effectué des modifications, cliquez sur **Enregistrer**.
 
 Notez les paramètres dans la section **restrictions de collaboration** . Assurez-vous que les domaines des invités avec lesquels vous souhaitez collaborer ne sont pas bloqués.
 
@@ -146,4 +146,3 @@ Pour inviter des invités à un groupe
 [Créer un environnement de partage sécurisé avec des invités](create-secure-guest-sharing-environment.md)
 
 [Créer un extranet B2B avec des invités gérés](b2b-extranet.md)
-
