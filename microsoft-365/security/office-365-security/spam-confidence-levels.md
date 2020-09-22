@@ -18,14 +18,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur le seuil de probabilité de courrier indésirable (SCL) appliqué aux messages dans Exchange Online Protection (EOP).
-ms.openlocfilehash: 44687b8234e38e7f818aee908d1b65f382c908fe
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: fbd892b0171cee71f516d7ca3b26b91da664af79
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827396"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202232"
 ---
 # <a name="spam-confidence-level-scl-in-eop"></a>Seuil de probabilité de courrier indésirable dans EOP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection (EOP) autonomes sans boîte aux lettres Exchange Online, les messages entrants passent par le filtrage du courrier indésirable dans EOP et reçoivent un score de courrier indésirable. Ce score est mappé à un seuil de probabilité de courrier indésirable (SCL) individuel ajouté au message dans un en-tête X. Un SCL supérieur indique qu’un message est plus susceptible d’être du courrier indésirable. EOP entreprend une action sur le message en fonction de la valeur SCL.
 
@@ -38,14 +41,14 @@ Ce que signifie le SCL et les actions par défaut effectuées sur les messages s
 |-1|Le message a ignoré le filtrage du courrier indésirable. Par exemple, le message provient d’un expéditeur approuvé, a été envoyé à un destinataire approuvé ou provient d’un serveur de source de messagerie de la liste verte IP. Pour plus d’informations, consultez la rubrique [créer des listes d’expéditeurs approuvés dans EOP](create-safe-sender-lists-in-office-365.md).|Le message est remis dans la boîte aux lettres des destinataires.|
 |0, 1|Filtrage du courrier indésirable déterminé le message n’était pas du courrier indésirable.|Le message est remis dans la boîte aux lettres des destinataires.|
 |5, 6|Filtrage du courrier indésirable marqué comme **courrier indésirable**|Le message est envoyé vers le dossier Courrier indésirable des destinataires.|
-|9 |Filtrage du courrier indésirable marqué comme message en tant que **courrier de confiance élevée**|Le message est envoyé vers le dossier Courrier indésirable des destinataires.|
+|9 |Filtrage du courrier indésirable marqué comme message en tant que **courrier de confiance élevée**|Le message est envoyé vers le dossier Courrier indésirable des destinataires.|
 |
 
 Vous remarquerez que les seuils SCL 2, 3, 4, 7 et 8 ne sont pas utilisés par le filtrage du courrier indésirable.
 
 Vous pouvez utiliser des règles de flux de messagerie (également appelées règles de transport) pour marquer la valeur SCL des messages. Si vous utilisez une règle de flux de messagerie pour définir le SCL, les valeurs 5 ou 6 déclenchent l’action de filtrage du courrier indésirable pour le courrier **indésirable**, et les valeurs 7, 8 ou 9 déclenchent l’action de filtrage du courrier indésirable pour le courrier indésirable à **confiance élevée**. Pour plus d’informations, consultez [la rubrique utiliser des règles de flux de messagerie pour définir le seuil de probabilité de courrier indésirable (SCL) dans les messages](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md).
 
-À l’instar du SCL, le niveau de réclamation en masse (BCL) identifie un message électronique en masse incorrect (également appelé _courrier gris_). Une BCL plus élevée indique qu’un message électronique en nombre est susceptible de générer des plaintes (et, par conséquent, plus vraisemblablement un courrier indésirable). Vous configurez le seuil BCL dans les stratégies anti-courrier indésirable. Pour plus d’informations, reportez-vous à la rubrique [configure anti-spam Policies in EOP](configure-your-spam-filter-policies.md), [Bulk Complaint Level (BCL) in EOP)](bulk-complaint-level-values.md)et [quelle est la différence entre courrier indésirable et courrier électronique en masse ?](what-s-the-difference-between-junk-email-and-bulk-email.md).
+À l’instar du SCL, le niveau de réclamation en masse (BCL) identifie un message électronique en masse incorrect (également appelé _courrier gris_). Un niveau BCL supérieur indique qu’un courrier en nombre est susceptible de générer des plaintes (et par conséquent plus susceptible d’être du courrier indésirable). Vous configurez le seuil BCL dans les stratégies anti-courrier indésirable. Pour plus d’informations, reportez-vous à la rubrique [configure anti-spam Policies in EOP](configure-your-spam-filter-policies.md), [Bulk Complaint Level (BCL) in EOP)](bulk-complaint-level-values.md)et [quelle est la différence entre courrier indésirable et courrier électronique en masse ?](what-s-the-difference-between-junk-email-and-bulk-email.md).
 
 |<!-- -->|
 |---|

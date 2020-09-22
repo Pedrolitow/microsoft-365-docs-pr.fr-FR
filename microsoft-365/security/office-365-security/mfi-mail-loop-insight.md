@@ -13,14 +13,17 @@ ms.assetid: cb801985-3c89-4979-9c18-17829a4cb563
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à utiliser la fonction de résolution des problèmes possibles dans le tableau de bord de flux de messagerie dans le centre de sécurité & Compliance pour identifier et corriger les boucles de messagerie au sein de leur organisation.
-ms.openlocfilehash: 063906195488aa7d65093c538d9045002448e181
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: e868c020ae307ba490e85e5803f94a67a1a94057
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358269"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198444"
 ---
 # <a name="fix-possible-mail-loop-insight-in-the-security--compliance-center"></a>Corriger les éventuelles boucles de courrier dans le centre de sécurité & conformité
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Une boucle de courrier est incorrecte car elle gaspille des ressources système, consomme le quota de volume de courrier de votre organisation et envoie des notifications d’échec de remise confuses (également appelées notifications de non-remise) aux expéditeurs d’origine.
 

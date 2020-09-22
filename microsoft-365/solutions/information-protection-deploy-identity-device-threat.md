@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-infoprotection
 ms.custom: ''
 description: Empêchez les violations de données personnelles grâce aux services d’identité, de périphérique et de protection contre les menaces de Microsoft 365.
-ms.openlocfilehash: a309b5d0ba5f939cf89a31d7ac91ca3aac25ce0d
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: a0efdcfe8e9d27e19b6cf1355a6d0943b7cdaa59
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46520980"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195662"
 ---
 # <a name="use-identity-device-and-threat-protection-for-data-privacy-regulation"></a>Utiliser l’identité, l’appareil et la protection contre les menaces pour le règlement de confidentialité des données
 
@@ -33,17 +33,17 @@ Bien que les réglementations relatives à la confidentialité des données vari
 
 - Les données personnelles doivent être traitées de manière à garantir une sécurité appropriée des données personnelles, y compris la protection contre le traitement non autorisé ou illégal et contre la perte accidentelle, la destruction ou les dégâts, à l’aide de mesures techniques ou organisationnelles appropriées (« intégrité et confidentialité »).
 
-Étant donné que les violations de données personnelles sont souvent dues à une compromission administrative ou à un compte d’utilisateur final et à un accès système malveillant. Par exemple, un compte administrateur hack peut entraîner l’exfiltration des numéros de carte de crédit des clients ou d’autres informations personnelles. Toutes les stratégies généralement recommandées pour l’identité, l’appareil et la protection contre les menaces disponibles avec Microsoft 365 peuvent être mises en œuvre, qui seront reflétées dans votre score de conformité.
+Étant donné que les violations de données personnelles sont souvent dues à une compromission administrative ou à un compte d’utilisateur final et à un accès système malveillant. Par exemple, un compte administrateur hack peut entraîner l’exfiltration des numéros de carte de crédit des clients ou d’autres informations personnelles. Toutes les protections d’identité, de périphérique et de menace généralement recommandées avec Microsoft 365 peuvent être implémentées, qui seront reflétées dans votre score de conformité, dans le gestionnaire de conformité.
 
-## <a name="using-the-results-of-your-assessment-work-and-compliance-score"></a>Utilisation des résultats de votre évaluation et du score de conformité
+## <a name="using-the-results-of-your-assessment-work-and-compliance-manager"></a>Utilisation des résultats de votre analyse et du gestionnaire de conformité
 
-Le score de conformité inclut l’identité, l’appareil et la protection contre les menaces à l’aide des catégories suivantes :
+Le gestionnaire de conformité inclut la protection des identités, des périphériques et des menaces à l’aide des catégories suivantes :
 
 - Identity correspond à la catégorie d' **accès au contrôle**
 - Le périphérique correspond à la catégorie **gérer les appareils** .
 - Protection contre les menaces correspond à la catégorie **protéger contre les menaces**
  
-Si ces éléments sont sélectionnés dans notre ensemble d’exemples de quatre principales réglementations de confidentialité des données, le score de conformité indique 90 actions d’amélioration, dont la plupart sont notées « 27 ». Étant donné qu’un tel grand nombre est appelé par score de conformité pour ces catégories, certaines d’entre elles sont répertoriées ici, à des fins de référence.
+Si ces éléments sont sélectionnés dans notre ensemble d’exemples de quatre principales réglementations de confidentialité des données, le gestionnaire de conformité indique 90 actions d’amélioration, dont la plupart sont notées « 27 ». Étant donné qu’un tel grand nombre est appelé par le gestionnaire de conformité pour ces catégories, certaines des plus courantes sont répertoriées ici, à des fins de référence.
 
 Utilisez [Azure Active Directory (Azure AD)](https://azure.microsoft.com/services/active-directory/) pour l’identité et la catégorie d' **accès au contrôle** , avec lequel vous pouvez :
 

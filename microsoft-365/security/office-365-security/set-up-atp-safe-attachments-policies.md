@@ -18,14 +18,17 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez comment définir des stratégies de pièces jointes fiables afin de protéger votre organisation contre les fichiers malveillants par courrier électronique.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a8b69d114b1387a1ef76d962424149c1db93ce04
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: 5f9f1a6cc250fdd336e48c19c6cb5d73e9a05800
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656626"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197222"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Configuration des stratégies de pièces jointes approuvées ATP Office 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 > [!IMPORTANT]
 > Cet article est destiné aux entreprises qui ont [Office 365 – Protection avancée contre les menaces](office-365-atp.md). Si vous êtes un utilisateur à domicile et que vous recherchez des informations sur les pièces jointes fiables dans Outlook, consultez la rubrique [Advanced Outlook.com Security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
@@ -48,7 +51,7 @@ Les personnes envoient, reçoivent et partagent régulièrement des pièces join
 
   ****
 
-  |Role|WHERE/How Assigned|
+  |Rôle|WHERE/How Assigned|
   |---|---|
   |administrateur général |La personne qui s’inscrit pour acheter Microsoft 365 est un administrateur global par défaut. (Pour en savoir plus, consultez la rubrique [à propos des rôles d’administrateur Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .)|
   |Administrateur de sécurité |Centre d’administration Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
@@ -97,7 +100,7 @@ Lorsque vous configurez vos stratégies de pièces jointes approuvées ATP, vous
 |---|---|---|
 |**Désactivé**|N’analyse pas les pièces jointes pour les programmes malveillants  <br/> Ne retarde pas la remise des messages|Désactivez l’analyse pour les destinataires sélectionnés.  <br/> Éviter les retards inutiles dans le routage du courrier interne.  <br/> **Cette option n’est pas recommandée pour la plupart des utilisateurs. Cette option ne doit être utilisée que pour désactiver l’analyse des pièces jointes approuvées ATP pour les destinataires qui reçoivent uniquement des courriers électroniques provenant d’expéditeurs approuvés.**|
 |**Moniteur**|Remet les messages avec des pièces jointes, puis suit ce qui se produit avec des programmes malveillants détectés|Afficher l’emplacement où les programmes malveillants sont détectés dans votre organisation|
-|**Bloc**|Empêche la poursuite des messages contenant des pièces jointes malveillantes détectées  <br/> Envoie des messages avec une mise en quarantaine aux programmes malveillants détectés [dans Office 365](manage-quarantined-messages-and-files.md) où un administrateur ou un analyste de la sécurité peut consulter et publier (ou supprimer) ces messages.  <br/> Bloque automatiquement les messages et pièces jointes futurs|Protection de votre organisation contre les attaques répétées à l’aide des mêmes pièces jointes|
+|**Bloquer**|Empêche la poursuite des messages contenant des pièces jointes malveillantes détectées  <br/> Envoie des messages avec une mise en quarantaine aux programmes malveillants détectés [dans Office 365](manage-quarantined-messages-and-files.md) où un administrateur ou un analyste de la sécurité peut consulter et publier (ou supprimer) ces messages.  <br/> Bloque automatiquement les messages et pièces jointes futurs|Protection de votre organisation contre les attaques répétées à l’aide des mêmes pièces jointes|
 |**Replace**|Supprime les pièces jointes de programmes malveillants détectées  <br/> Avertir les destinataires que des pièces jointes ont été supprimées  <br/> Envoie des messages avec une mise en quarantaine aux programmes malveillants détectés [dans Office 365](manage-quarantined-messages-and-files.md) où un administrateur ou un analyste de la sécurité peut consulter et publier (ou supprimer) ces messages.|Augmenter la visibilité aux destinataires pour lesquels les pièces jointes ont été supprimées en raison d’un programme malveillant détecté|
 |**Remise dynamique**|Remet immédiatement les messages  <br/> Remplace les pièces jointes par un fichier d’espace réservé jusqu’à ce que l’analyse soit terminée, puis rattache les pièces jointes si aucun programme malveillant n’est détecté  <br/> Inclut les fonctionnalités d’aperçu des pièces jointes pour la plupart des fichiers PDF et Office lors de l’analyse  <br/> Envoie des messages avec des programmes malveillants détectés en quarantaine lorsqu’un administrateur ou un analyste de la sécurité peut consulter et libérer (ou supprimer) ces messages.  <br/> [En savoir plus sur la remise et l’aperçu dynamiques avec des pièces jointes fiables ATP](dynamic-delivery-and-previewing.md) <br/> |Éviter les retards de message tout en protégeant les destinataires des fichiers malveillants  <br/> Autoriser les destinataires à prévisualiser les pièces jointes en mode sans échec lors de l’analyse|
 |**Activer la redirection**|S’applique lorsque l’option surveiller, bloquer ou remplacer est sélectionnée  <br/> Envoie des pièces jointes à une adresse de messagerie spécifique que les administrateurs de sécurité ou les analystes peuvent examiner|Activer les administrateurs de la sécurité et les analystes pour rechercher des pièces jointes suspectes|

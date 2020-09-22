@@ -18,14 +18,17 @@ ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent en savoir plus sur les types d’adresses de messagerie qui sont acceptés ou refusés par Exchange Online Protection (EOP) et Outlook.com afin d’empêcher le hameçonnage.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c67cf5855f2b0a99cf8d03bb6d7ba8557329b300
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: e0afd05c80bb4de665d23b17c7089631dad93c78
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827420"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196058"
 ---
 # <a name="how-eop-validates-the-from-address-to-prevent-phishing"></a>Comment EOP valide l’adresse de pour empêcher le hameçonnage
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Les attaques par hameçonnage représentent une menace constante pour toute organisation de messagerie. En plus des [adresses de messagerie d’expéditeur usurpées (falsifiées)](anti-spoofing-protection.md), les agresseurs utilisent souvent des valeurs de l’adresse de provenance qui enfreignent les normes Internet. Pour éviter ce type de hameçonnage, Exchange Online Protection (EOP) et Outlook.com requièrent désormais que les messages entrants incluent une adresse d’adresse conforme à la RFC, comme décrit dans cette rubrique. Cette mise en œuvre a été activée en novembre 2017.
 

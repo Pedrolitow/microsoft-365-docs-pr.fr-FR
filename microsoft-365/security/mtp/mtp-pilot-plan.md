@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 601e81fc5265fe2ec5f41009b6c4fa43c0c8233d
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: d18b3d8ede271cb0d9611d6210a3d1d32849581a
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47962608"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195650"
 ---
 # <a name="planning-your-pilot-microsoft-threat-protection-project"></a>Planification de votre projet pilote de protection des menaces Microsoft 
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **S’applique à :**
 - Protection Microsoft contre les menaces
@@ -50,7 +53,7 @@ Les types de systèmes d’exploitation à évaluer doivent également être dé
 
 ## <a name="use-cases"></a>Cas d'utilisation
 
-Les cas d’utilisation représentent des instructions expliquant comment l’outil testé est destiné à être consommé par les utilisateurs prévus. Celles-ci peuvent être formulées sous la forme de récits utilisateur du point de vue d’un personnage particulier, tel qu’un analyste SOC. Par exemple:
+Les cas d’utilisation représentent des instructions expliquant comment l’outil testé est destiné à être consommé par les utilisateurs prévus. Celles-ci peuvent être formulées sous la forme de récits utilisateur du point de vue d’un personnage particulier, tel qu’un analyste SOC. Par exemple :
 - En tant qu’analyste SOC, je dois afficher, corréler, évaluer et gérer les alertes et les événements sur les appareils, les utilisateurs et les boîtes aux lettres de mon réseau. [Gestion des incidents]
 - En tant qu’analyste SOC, j’ai besoin de l’outil et du processus pour examiner et répondre automatiquement aux événements malveillants de mon réseau. [Auto IR]
 - En tant qu’analyste SOC, je dois Rechercher des données dans mon environnement pour trouver des menaces connues et potentielles, ainsi que des activités suspectes. [Chasse avancée]

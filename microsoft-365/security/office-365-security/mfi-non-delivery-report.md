@@ -13,14 +13,17 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à utiliser le rapport sur les détails de non-remise dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité pour surveiller les codes d’erreur les plus fréquemment rencontrés dans les notifications d’échec de remise (également appelés notifications de non-remise) des expéditeurs de votre organisation.
-ms.openlocfilehash: f9017a7f041037c5db2dc9b9f4f5155b038bf2c7
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: bc530cce54b3d4fd9f414920a8fb58f4322f6b5c
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357409"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195963"
 ---
 # <a name="non-delivery-report-in-the-security--compliance-center"></a>Notification d’échec de remise dans le centre de sécurité & conformité
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Le **rapport de non-remise** dans le [tableau de bord de flux de messagerie](mail-flow-insights-v2.md) dans le centre de [sécurité & conformité](https://protection.office.com) affiche les codes d’erreur les plus détectés dans les notifications d’échec de remise (également appelées notifications de non-remise) pour les utilisateurs de votre organisation. Ce rapport affiche les détails des notifications d’échec de remise afin que vous puissiez résoudre les problèmes de remise des messages.
 

@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 07c010a78d297a4a3c932c0d9a0e32cce0c43bfa
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 66e978b28f03e30cc2157aae2508874b73b01a40
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560906"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197976"
 ---
 # <a name="extend-advanced-hunting-coverage-with-the-right-settings"></a>Étendre la couverture de la chasse avancée avec les paramètres corrects
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **S’applique à :**
 - Protection Microsoft contre les menaces
@@ -47,6 +50,6 @@ Si vous exécutez Active Directory sur site, vous devez installer le capteur DAV
 | --- | --- | --- | --- |
 | Contrôleur de domaine | Données provenant d’Active Directory en local envoyées à Azure ATP, enrichiant les informations d’identité, telles que les détails du compte, l’activité d’ouverture de session et les requêtes Active Directory | Plusieurs tables, y compris [IdentityInfo](advanced-hunting-identityinfo-table.md), [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)et [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)  | - [Installer le capteur ATP Azure](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step4)<br>- [Activer les événements Windows pertinents](https://docs.microsoft.com/azure-advanced-threat-protection/configure-event-collection) |
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Comprendre le schéma](advanced-hunting-schema-tables.md)

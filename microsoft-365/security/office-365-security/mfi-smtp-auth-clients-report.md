@@ -13,14 +13,17 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à utiliser le rapport et l’analyseur d’authentification SMTP dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité afin de surveiller les expéditeurs de messages électroniques de leur organisation qui utilisent SMTP authentifié (authentification SMTP) pour envoyer des messages électroniques.
-ms.openlocfilehash: 4123edcfa08e31217dcd6a29186492bc036fa7a0
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 7ca673e5ecc92c28996a976c26a38ae570f16203
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357433"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199240"
 ---
 # <a name="smtp-auth-clients-insight-and-report-in-the-security--compliance-center"></a>Clients d’authentification SMTP Insight and report dans le centre de conformité & Security
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Les **clients d’authentification SMTP** du [tableau de bord de flux de messagerie](mail-flow-insights-v2.md) et le [rapport clients SMTP AUTH](#smtp-auth-clients-report) associés dans le [Centre de conformité &](https://protection.office.com) mettent en surbrillance l’utilisation du protocole d’envoi de client SMTP AUTH par les utilisateurs ou les comptes système de votre organisation. Ce protocole hérité (qui utilise le point de terminaison smtp.office365.com) offre uniquement l’authentification de base et est susceptible d’être utilisé par des comptes compromis pour envoyer des courriers électroniques. L’aperçu et le rapport vous permettent de vérifier l’activité inhabituelle pour les envois de courrier électronique SMTP. Il indique également les données d’utilisation TLS pour les clients ou les appareils utilisant l’authentification SMTP.
 

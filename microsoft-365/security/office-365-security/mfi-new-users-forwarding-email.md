@@ -11,14 +11,17 @@ ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: ''
 description: Les administrateurs peuvent apprendre à utiliser les nouveaux utilisateurs pour transférer des courriers électroniques dans le centre de sécurité & conformité afin de déterminer quand les utilisateurs de leur organisation acheminent les messages vers de nouveaux domaines.
-ms.openlocfilehash: 4d8c88cef182ab1c521d23970797e4746e188916
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 42f8c536f8a8a1421d97726c7af432c01d053b05
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357365"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200654"
 ---
 # <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a>Les nouveaux utilisateurs transférant des courriers électroniques dans le centre de sécurité & conformité
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Il est suspect lorsque les nouveaux comptes d’utilisateur dans votre organisation commencent soudainement à transférer les messages électroniques vers des domaines externes.
 
@@ -75,7 +78,7 @@ Si vous cliquez sur **afficher les détails table**, les informations affichées
   - **Name**: adresse de messagerie de l’expéditeur.
   - **Type de transfert**
   - **Adresse du destinataire**
-  - **Détails**
+  - **Details**
   - **Count**
   - **Première date de transfert**
 
@@ -84,7 +87,7 @@ Si vous cliquez sur **afficher les détails table**, les informations affichées
   - **Name**: domaine de messagerie de l’expéditeur.
   - **Type de transfert**
   - **Adresse du destinataire**
-  - **Détails**
+  - **Details**
   - **Count**
   - **Première date de transfert**
 
@@ -95,7 +98,7 @@ Si vous sélectionnez une ligne dans le tableau, une fenêtre volante de **Déta
 - **Name**: il s’agit de l’adresse de messagerie de l’expéditeur (de l’affichage des **données pour : nouvelle** vue des utilisateurs de transfert) ou du domaine de messagerie de l’expéditeur (de l’affichage des **données pour : nouvelle** vue des domaines de transfert).
 - **Type de transfert**
 - **Destinataire**
-- **Détails**
+- **Details**
 - **Count**
 - **Date de début**
 - **Recommandation**: à partir de là, vous pouvez cliquer sur le lien pour gérer l’utilisateur dans le centre d’administration 365 de Microsoft.

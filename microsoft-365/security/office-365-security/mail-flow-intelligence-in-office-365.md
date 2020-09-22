@@ -13,14 +13,17 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Les administrateurs peuvent en savoir plus sur les codes d’erreur associés à la remise des messages à l’aide de connecteurs (également appelés intelligence de flux de messagerie).
-ms.openlocfilehash: e8427f3e0341ccb381121b6cdc83d20727713d4c
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 0d73ea1fe64cda3c3f29f7bd437bba4e93f37529
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307916"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198502"
 ---
 # <a name="mail-flow-intelligence-in-eop"></a>Renseignements sur le flux de messagerie dans EOP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection (EOP) autonomes sans boîtes aux lettres Exchange Online, vous utilisez généralement un connecteur pour acheminer les messages électroniques d’EOP vers votre environnement de messagerie local. Vous pouvez également utiliser un connecteur pour router les messages de Microsoft 365 vers une organisation partenaire. Lorsque Microsoft 365 ne peut pas fournir ces messages via le connecteur, ils sont mis en file d’attente dans Microsoft 365. Microsoft 365 continue de relancer la remise de chaque message pendant 24 heures. Au bout de 24 heures, le message en file d’attente expire et le message est renvoyé à l’expéditeur d’origine dans une notification d’échec de remise (également appelée notification de non-remise).
 

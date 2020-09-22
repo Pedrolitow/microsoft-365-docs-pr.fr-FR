@@ -16,14 +16,17 @@ ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent découvrir les différentes façons de signaler des messages et des fichiers valides et incorrects à Microsoft pour analyse.
-ms.openlocfilehash: cff9d1b3524200fba9d7ba1775e0b9851027158d
-ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
+ms.openlocfilehash: 040f998b09f280fc2b6bdfdac327313f9cc65c3c
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "47315862"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203652"
 ---
 # <a name="report-messages-and-files-to-microsoft"></a>Signalez les messages et fichiers à Microsoft
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection (EOP) autonomes sans boîte aux lettres Exchange Online, les utilisateurs et les administrateurs disposent de différentes méthodes pour signaler des messages électroniques et des fichiers à Microsoft.
 

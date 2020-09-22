@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: b9afecb3d0efce93ae5d5725bba71d8d9719d17f
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: 496deff5d2fda47b7ffac4bc87e98bf28e90ea50
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430410"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196964"
 ---
 # <a name="quickly-hunt-for-entity-or-event-information-with-go-hunt"></a>Recherche rapide d’informations sur les entités ou les événements avec la recherche de Go
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **S’applique à :**
 - Protection Microsoft contre les menaces
@@ -37,7 +40,7 @@ L’action aller à la *recherche* est disponible dans les différentes sections
 
     ![Image illustrant les détails de la boîte aux lettres avec l’option aller à la recherche](../../media/mtp-ah/go-hunt-email.png)
 
-- Dans la page incident, vous pouvez également accéder à une liste d’entités sous l’onglet preuve. la sélection de l’une de ces entités offre une option permettant de rechercher rapidement des informations sur cette entité.
+- Dans la page incident, vous pouvez également accéder à une liste d’entités sous l’onglet preuve. La sélection de l’une de ces entités offre une option permettant de rechercher rapidement des informations sur cette entité.
 
     ![Image illustrant le fichier sélectionné avec l’option aller à la recherche dans l’onglet preuve](../../media/mtp-ah/go-hunt-evidence-file.png)
 
@@ -71,7 +74,7 @@ Vous pouvez utiliser la *recherche aller-retour* après avoir sélectionné l’
 - Messages électroniques
 - Clusters de messagerie
 - Boîtes aux lettres
-- Utilisateurs
+- Users
 - Appareils
 - Adresses IP
 - URL

@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 4ebf220472db69d48127b805256e15246bd400cb
-ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
+ms.openlocfilehash: 14785e032d6e4a7a0868308f4029df623456af2a
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46552731"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197892"
 ---
 # <a name="take-action-on-advanced-hunting-query-results"></a>Effectuer des actions sur les résultats de la recherche avancée de la chasse
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **S’applique à :**
 - Protection Microsoft contre les menaces
@@ -55,10 +58,10 @@ Pour plus d’informations sur l’exécution de ces actions de réponse via Mic
 ## <a name="quarantine-files"></a>Mettre en quarantaine les fichiers
 Vous pouvez déployer l’action de *mise en quarantaine* sur les fichiers afin qu’ils soient automatiquement mis en quarantaine lorsqu’ils sont détectés. Lors de la sélection de cette action, vous pouvez choisir entre les colonnes suivantes pour identifier les fichiers de la requête à mettre en quarantaine :
 
-- `SHA1`— Dans la plupart des tableaux de la chasse avancée, il s’agit du SHA-1 du fichier qui a été affecté par l’action enregistrée. Par exemple, si un fichier a été copié, il s’agit du fichier copié.
-- `InitiatingProcessSHA1`— Dans la plupart des tableaux de la chasse avancée, il s’agit du fichier responsable de l’initialisation de l’action enregistrée. Par exemple, si un processus enfant a été lancé, il s’agit du processus parent. 
-- `SHA256`— Il s’agit de l’équivalent SHA-256 du fichier identifié par la `SHA1` colonne.
-- `InitiatingProcessSHA256`— Il s’agit de l’équivalent SHA-256 du fichier identifié par la `InitiatingProcessSHA1` colonne.
+- `SHA1` — Dans la plupart des tableaux de la chasse avancée, il s’agit du SHA-1 du fichier qui a été affecté par l’action enregistrée. Par exemple, si un fichier a été copié, il s’agit du fichier copié.
+- `InitiatingProcessSHA1` — Dans la plupart des tableaux de la chasse avancée, il s’agit du fichier responsable de l’initialisation de l’action enregistrée. Par exemple, si un processus enfant a été lancé, il s’agit du processus parent. 
+- `SHA256` — Il s’agit de l’équivalent SHA-256 du fichier identifié par la `SHA1` colonne.
+- `InitiatingProcessSHA256` — Il s’agit de l’équivalent SHA-256 du fichier identifié par la `InitiatingProcessSHA1` colonne.
 
 Pour en savoir plus sur la façon dont les actions de mise en quarantaine sont effectuées et sur la manière dont les fichiers peuvent être restaurés, consultez la rubrique [actions Response sur les fichiers](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-file-alerts).
 
@@ -73,7 +76,7 @@ Pour effectuer l’une des actions décrites, sélectionnez un ou plusieurs enre
 ## <a name="review-actions-taken"></a>Examiner les actions effectuées
 Chaque action est enregistrée individuellement dans le [Centre de notifications](mtp-action-center.md) sous historique du **Centre de notifications**  >  **History** ([Security.Microsoft.com/Action-Center/History](https://security.microsoft.com/action-center/history)). Accédez au centre de notifications pour vérifier l’état de chaque action.
  
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Travailler avec les résultats de la requête](advanced-hunting-query-results.md)

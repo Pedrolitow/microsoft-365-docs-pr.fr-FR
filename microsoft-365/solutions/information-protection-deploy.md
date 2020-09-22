@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-overview
 ms.custom: ''
 description: Configurez l’infrastructure de sécurité et de service afin de protéger vos informations et de respecter les réglementations en matière de confidentialité des données.
-ms.openlocfilehash: 640ce075515c687c037cb0e4ab3e03e3beda81dc
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 2b249b3b43f1b520e42be4b6e5f9d684c718dc79
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46522288"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195638"
 ---
 # <a name="deploy-information-protection-for-data-privacy-regulations-with-microsoft-365"></a>Déployer la protection des informations pour les réglementations sur la confidentialité des données avec Microsoft 365
 
@@ -38,8 +38,7 @@ Pour répondre aux critères de protection des informations en matière de confo
 
 | Fonctionnalité | Description | Licence |
 |:-------|:-----|:-------|
-| Gestionnaire de conformité | Gérez les activités de conformité réglementaire liées aux services cloud Microsoft avec cet outil d’évaluation des risques basé sur les flux de travail dans le portail d’approbation de services Microsoft. | Microsoft 365 E3 et E5 |
-| Score de conformité (préversion) | Obtenez un score global concernant votre configuration de conformité actuelle avec des recommandations pour l’améliorer dans le centre de conformité Microsoft 365. | Microsoft 365 E3 et E5 |
+| Gestionnaire de conformité | Gérer les activités de conformité réglementaire, obtenir un score global de votre configuration de conformité actuelle et trouver des recommandations d’amélioration dans cet outil d’évaluation des risques basé sur un flux de travail dans le centre de conformité Microsoft 365. | Microsoft 365 E3 et E5 |
 | Office – Protection avancée contre les menaces | Protégez vos applications et données Microsoft 365 (par exemple, messages électroniques, documents Office et outils de collaboration) contre les attaques. | Microsoft 365 E3 et E5 | 
 | Étiquettes de confidentialité | Classifiez et protégez les données de votre organisation sans entraver la productivité des utilisateurs ni leur capacité à collaborer en plaçant des étiquettes avec différents niveaux de protection sur les messages électroniques, les fichiers et les sites. | Microsoft 365 E3 et E5 |
 | Protection contre la perte de données (DLP) | Détectez, signalez et bloquez le partage risqué, accidentel ou inapproprié, tel que le partage de données contenant des informations personnelles, à la fois en interne et en externe. | Microsoft 365 E3 et E5 | 
@@ -68,13 +67,13 @@ L’évaluation des réglementations et des risques de confidentialité des donn
 
 Pour plus d’informations, consultez la rubrique [évaluation des risques de confidentialité des données et identification des éléments sensibles](information-protection-deploy-assess.md).
 
-## <a name="track-use-compliance-score-and-compliance-manager"></a>Track : utiliser le score de conformité et le gestionnaire de conformité 
+## <a name="track-use-compliance-manager"></a>Track : utiliser le gestionnaire de conformité
 
-Le score de conformité et le gestionnaire de conformité fournissent un ensemble intégré d’outils disponibles dans le centre d’administration de la conformité Microsoft 365 et le portail d’approbation des services. Ensemble, ces outils vous permettent de suivre et de gérer les actions d’amélioration en général, ainsi que celles liées à plusieurs réglementations de confidentialité auxquelles vous êtes soumis.
+Le gestionnaire de conformité, disponible dans le centre de conformité Microsoft 365, vous offre une fonctionnalité intégrée permettant de suivre et de gérer les actions d’amélioration en général, ainsi que celles liées à plusieurs réglementations de confidentialité des données qui s’appliquent à vous.
 
-Les outils vous permettent également d’utiliser des modèles d’évaluation intégrés spécifiques à chaque règle, qui vous permettent de suivre les éléments d’action pour chaque modèle d’évaluation sélectionné, ainsi que d’afficher des contrôles de réglementation spécifiques et de les associer à des actions spécifiques.
+Tirez parti des modèles d’évaluation intégrés spécifiques à chaque règle, qui vous permettent de suivre les éléments d’action pour chaque modèle d’évaluation sélectionné, ainsi que d’afficher des contrôles de réglementation spécifiques et de les associer à des actions spécifiques.
 
-Pour plus d’informations, consultez [la rubrique utiliser le score de conformité et le gestionnaire de conformité pour gérer les actions d’amélioration](information-protection-deploy-compliance.md).
+Pour plus d’informations, consultez [la rubrique utiliser le gestionnaire de conformité pour gérer les actions d’amélioration](information-protection-deploy-compliance.md).
 
 ## <a name="prevent-use-identity-device-and-threat-protection-for-data-privacy-regulation"></a>Empêcher : utiliser l’identité, l’appareil et la protection contre les menaces pour le règlement de confidentialité des données
 

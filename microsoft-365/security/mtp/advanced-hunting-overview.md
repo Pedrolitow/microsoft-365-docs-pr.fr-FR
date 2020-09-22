@@ -18,19 +18,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 47035b5c988dba551948334c0c93d08b779c0d38
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 9b7e20daa3a5d642a864f9b24e836d3c75bbd7b1
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950735"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199852"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>Repérage proactive de menaces avec repérage avancé dans la Protection Microsoft contre les menaces
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
 **S’applique à :**
 - Protection Microsoft contre les menaces
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 Le repérage avancé est un outil de repérage de menaces basé sur des requêtes qui vous permet d’explorer jusqu’à 30 jours de données brutes. Vous pouvez inspecter de manière proactive les événements de votre réseau afin de localiser les indicateurs de menace et les entités. L’accès flexible aux données permet une chasse libre aux menaces connues et potentielles.
 <p></p>
@@ -68,7 +69,7 @@ Les informations de temps dans la chasse avancée se trouvent dans le fuseau hor
 
 ## <a name="related-topics"></a>Sujets associés
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
-- [Obtenir une formation expert](advanced-hunting-expert-training.md)
+- [Obtenir une formation spécialisée](advanced-hunting-expert-training.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)
 - [Comprendre le schéma](advanced-hunting-schema-tables.md)
 - [Appliquer les meilleures pratiques de requête](advanced-hunting-best-practices.md)

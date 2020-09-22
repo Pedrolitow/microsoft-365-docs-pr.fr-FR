@@ -18,14 +18,17 @@ ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent découvrir le fonctionnement de l’aide à la décision, notamment comment déterminer rapidement les expéditeurs qui envoient légitimement des messages électroniques non authentifiés.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1f04baca3761e44acfd26c09cdc0d5283db13697
-ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
+ms.openlocfilehash: 6fc934491606a53ebfb4bae4f46ab9e1ee93467b
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/13/2020
-ms.locfileid: "44726503"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198570"
 ---
 # <a name="walkthrough---atp-spoof-intelligence-insight-in-microsoft-365"></a>Procédure pas à pas-aide à la décision d’usurpation d’identité dans Microsoft 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Dans les organisations Microsoft 365 avec la protection avancée contre les menaces (ATP), vous pouvez utiliser le service d’aide à la décision pour déterminer rapidement les expéditeurs qui envoient des messages électroniques non authentifiés. En leur permettant d’envoyer des messages falsifiés, vous pouvez réduire le risque de faux positifs pour vos utilisateurs. Vous pouvez également utiliser le gestionnaire d’aide à la décision pour surveiller et gérer les paires de domaines autorisées afin de fournir une couche de sécurité supplémentaire et empêcher les messages non sécurisés d’arriver dans votre organisation.
 
@@ -41,10 +44,10 @@ Cette procédure pas à pas est l’une des suivantes pour le centre de conformi
 
 - Des autorisations doivent vous être attribuées avant de pouvoir effectuer les procédures décrites dans cette rubrique. Pour utiliser la fonction d’aide à la décision, vous devez être membre de l’un des groupes de rôles suivants :
 
-  - **Gestion** de l’organisation ou **administrateur de sécurité** dans le [Centre de sécurité & conformité](permissions-in-the-security-and-compliance-center.md).
-  - Gestion de l' **organisation** ou gestion de l' **hygiène** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
-  - **Lecteur de sécurité** dans le [centre de sécurité & conformité](permissions-in-the-security-and-compliance-center.md).
-  - **Gestion de l’organisation en affichage seul** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  - **Gestion de l’organisation** ou **Administrateur de sécurité** dans le [Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
+  - **Gestion de l’organisation** ou **Gestion de l’hygiène** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  - **Lecteur de sécurité** dans le [Centre de conformité et sécurité](permissions-in-the-security-and-compliance-center.md).
+  - **Gestion de l’organisation en affichage seul** dans[Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
 - Vous activez et désactivez l’intelligence usurpée dans les stratégies anti-hameçonnage ATP. Pour plus d’informations, reportez-vous à la rubrique [configure ATP anti-phishing Policies in Microsoft 365](configure-atp-anti-phishing-policies.md).
 
@@ -68,7 +71,7 @@ Cette procédure pas à pas est l’une des suivantes pour le centre de conformi
 
    - **Mode aperçu**. Si aucune stratégie de falsification n’est activée, le service d’aide à la décision indique le nombre de messages ayant été affectés par nos capacités d’aide à la falsification au cours des 30 derniers jours.
 
-   - **Mode d’action**. Si aucune stratégie de falsification n’est activée, le service d’aide à la décision indique le nombre de messages qui *auraient* été affectés par nos capacités d’aide à la falsification au cours des 30 derniers jours.
+   - **Mode d’action**. Si aucune stratégie de falsification n’est activée, le service d’aide à la décision indique le nombre de messages qui  *auraient*  été affectés par nos capacités d’aide à la falsification au cours des 30 derniers jours.
 
    Dans les deux cas, les domaines usurpés affichés dans la vue sont divisés en deux catégories : les paires de domaines **suspects** et les **paires de domaines non suspectes**. Ces catégories sont encore subdivisées en trois compartiments différents que vous pouvez examiner.
 
@@ -102,7 +105,7 @@ Vous ajoutez ou supprimez un domaine de la liste des expéditeurs approuvés All
 
 Cela modifie la combinaison de paires de domaines unique du domaine usurpé et de l’infrastructure d’envoi et ne fournit pas de couverture pour l’ensemble du domaine usurpé ou l’infrastructure d’envoi isolée.
 
-Par exemple, si vous ajoutez la paire de domaines suivante à la liste verte de l’expéditeur « AllowedToSpoof » : *domaine usurpé* « gmail.com » et l' *infrastructure d’envoi* « TMS *. mx.com »,* seul le courrier de cette paire de domaines sera autorisé à usurper. Les autres expéditeurs qui tentent d’usurper « gmail.com » et d’autres domaines que « tms.mx.com » tentent d’usurper continueront à être protégés par l’intelligence des usurpations d’identité.
+Par exemple, si vous ajoutez la paire de domaines suivante à la liste verte de l’expéditeur « AllowedToSpoof » :  *domaine usurpé*  « gmail.com » et l' *infrastructure d’envoi* « TMS *. mx.com »,* seul le courrier de cette paire de domaines sera autorisé à usurper. Les autres expéditeurs qui tentent d’usurper « gmail.com » et d’autres domaines que « tms.mx.com » tentent d’usurper continueront à être protégés par l’intelligence des usurpations d’identité.
 
 ## <a name="related-topics"></a>Voir aussi
 

@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: d0fd359bb6f56f7c20b0a39b7fd45ec551e7e49e
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: 3fc563c762e7cd00888665b63e66159e4d3d9612
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46797781"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196976"
 ---
 # <a name="fileprofile"></a>FileProfile()
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **S’applique à :**
 - Protection Microsoft contre les menaces
@@ -43,9 +46,9 @@ La `FileProfile()` fonction est une fonction d’enrichissement dans la [chasse 
 | Signataire | string | Informations sur le signataire du fichier |
 | Issuer | string | Informations sur l’autorité de certification émettrice |
 | SignerHash | string | Valeur de hachage unique identifiant le signataire |
-| IsCertificateValid | valeur booléenne | Si le certificat utilisé pour signer le fichier est valide |
-| IsRootSignerMicrosoft | valeur booléenne | Indique si le signataire du certificat racine est Microsoft |
-| IsExecutable | valeur booléenne | Indique si le fichier est un fichier exécutable portable (PE) |
+| IsCertificateValid | booléen | Si le certificat utilisé pour signer le fichier est valide |
+| IsRootSignerMicrosoft | booléen | Indique si le signataire du certificat racine est Microsoft |
+| IsExecutable | booléen | Indique si le fichier est un fichier exécutable portable (PE) |
 | ThreatName | string | Nom de détection pour tout programme malveillant ou autre menace détectée |
 | Publisher | string | Nom de l’organisation qui a publié le fichier |
 | SoftwareName | string | Nom du produit logiciel |
@@ -83,7 +86,7 @@ DeviceFileEvents
 | where GlobalPrevalence < 15
 ```
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Comprendre le schéma](advanced-hunting-schema-tables.md)

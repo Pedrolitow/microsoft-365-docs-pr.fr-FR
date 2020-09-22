@@ -17,14 +17,17 @@ ms.custom:
 - SIEM
 - seo-marvel-apr2020
 description: Obtenir une vue d’ensemble de l’intégration du serveur des informations de sécurité et de la gestion des événements (SIEM) à vos applications et services Cloud Microsoft 365
-ms.openlocfilehash: d2be5e0127adf25b3884e3717caccf60d4db1d28
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 6d657990417cab2a8cbb1b03b8b79a65c095d1a5
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653570"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202204"
 ---
 # <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>Intégration du serveur de gestion des événements et des informations de sécurité (SIEM) aux services et applications Microsoft 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 ## <a name="summary"></a>Résumé
 
