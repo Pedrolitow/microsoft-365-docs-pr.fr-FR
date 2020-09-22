@@ -16,14 +16,17 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à configurer les paramètres de courrier indésirable dans les boîtes aux lettres Exchange Online. Un grand nombre de ces paramètres sont disponibles pour les utilisateurs dans Outlook ou Outlook sur le Web.
-ms.openlocfilehash: 171eca8535958f01a7f749ad678e6ea9dd83d80c
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 632c6f37b80cdc38b513f66ad42e4a5c25b41f25
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825712"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203346"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Configurer les paramètres de courrier indésirable dans les boîtes aux lettres Exchange Online
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online, les paramètres anti-courrier indésirable de l’organisation sont contrôlés par Exchange Online Protection (EOP). Pour plus d’informations, consultez la rubrique [protection contre le courrier indésirable dans EOP](anti-spam-protection.md).
 

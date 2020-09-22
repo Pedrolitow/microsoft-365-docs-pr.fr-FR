@@ -17,14 +17,17 @@ search.appverid:
 - MET150
 description: Découvrez comment reconnaître et résoudre les attaques de consentement illicite dans Microsoft Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 125ebdf8b3d17e3a14abec8154129b0144928905
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: b534d53166c09cf77993948cf1c448e21c8cd330
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46652956"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203094"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>Détecter et résoudre les accords de consentement illicite
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 **Résumé**  Découvrez comment reconnaître et corriger le consentement illicite accorde une attaque dans Office 365.
 

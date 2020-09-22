@@ -21,14 +21,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent découvrir comment la suppression automatique des heures zéro peut déplacer rétroactivement les messages remis dans une boîte aux lettres Exchange Online vers le dossier de courrier indésirable ou la mise en quarantaine qui se trouve rétroactivement comme courrier indésirable ou hameçonnage.
-ms.openlocfilehash: 9096486ed98657fede7927089592c92fffdad70e
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 66df614700dc5f9b9938200d384cc293a51e2f3c
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826696"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202638"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>Purge automatique avec zéro heure (ZAP) dans Exchange Online
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 ## <a name="basic-features-of-zap"></a>Fonctionnalités de base de ZAP
 

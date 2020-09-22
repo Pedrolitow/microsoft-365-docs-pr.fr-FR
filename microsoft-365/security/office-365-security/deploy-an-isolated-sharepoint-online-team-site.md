@@ -16,14 +16,17 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: Utilisez ce guide de déploiement étape par étape pour créer et configurer un site d’équipe SharePoint Online isolé dans Microsoft Office 365.
-ms.openlocfilehash: 3465ec28db8c2045bad6e6c48112861818629524
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: f2800e74149e79e5c3f0444799f454ab8b3caf69
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308414"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203130"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>Déploiement d’un site d’équipe SharePoint Online isolé
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
  **Résumé :** Découvrez comment déployer un nouveau site d’équipe SharePoint Online isolé en suivant ces instructions détaillées.
   

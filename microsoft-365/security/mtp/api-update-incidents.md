@@ -19,14 +19,17 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: e790f4f415575323cfdd5fc15db41baa8b59c7f6
-ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
+ms.openlocfilehash: 8ad47453c7163bfac99c17f42986b818cdca603f
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47650268"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203627"
 ---
 # <a name="update-incidents-api"></a>API de mise à jour des incidents
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **S’applique à :**
 - Protection Microsoft contre les menaces
@@ -68,7 +71,7 @@ PATCH /api/incidents/{id}
 
 Nom | Type | Description
 :---|:---|:---
-Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
+Autorisation | String | Porteur {token}. **Obligatoire**.
 Content-Type | String | application/json. **Obligatoire**.
 
 
@@ -81,7 +84,7 @@ Propriété | Type | Description
 :---|:---|:---
 statut | Énum | Spécifie l’état actuel de l’alerte. Les valeurs possibles sont les suivantes : ```Active``` ```Resolved``` et ```Redirected``` .
 assignedTo | string | Propriétaire de l’incident.
-classification | Énum | Spécification de l’alerte. Les valeurs possibles sont les suivantes : ```Unknown```, ```FalsePositive``` et ```TruePositive```.
+classification | Énum | Spécification de l’alerte. Les valeurs possibles sont ```Unknown```, ```FalsePositive``` et ```TruePositive```.
 indications | Énum | Spécifie la détermination de l’alerte. Les valeurs possibles sont les suivantes : ```NotAvailable```, ```Apt```, ```Malware```, ```SecurityPersonnel```, ```SecurityTesting```, ```UnwantedSoftware``` et ```Other```.
 étiquettes | Liste de chaînes | Liste des balises incident.
 

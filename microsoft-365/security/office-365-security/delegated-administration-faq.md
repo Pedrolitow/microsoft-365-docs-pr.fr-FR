@@ -14,14 +14,17 @@ ms.assetid: d6a87ce8-2c22-433a-b430-5eab14f6afdc
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent consulter les questions fréquemment posées et les réponses sur les tâches d’administration déléguée dans Microsoft 365 pour les partenaires et les revendeurs Microsoft.
-ms.openlocfilehash: 3efadc8793778bfabe10922e8e29044747d60ad0
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 6729f276e6afea83568ca59d3bf48c08fcd837d2
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46866694"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203142"
 ---
 # <a name="delegated-administration-faq"></a>FAQ sur l’administration déléguée
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Cet article fournit des questions fréquemment posées et des réponses sur les tâches d’administration déléguée dans Microsoft 365 pour les partenaires et les revendeurs Microsoft. L’administration déléguée offre la possibilité de gérer les paramètres d’Exchange Online Protection (EOP) pour d’autres clients (sociétés).
 

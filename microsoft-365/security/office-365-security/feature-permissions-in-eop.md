@@ -12,14 +12,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 34674847-a6b7-4a7e-9eaa-b64f22bc150d
 description: En savoir plus sur les autorisations requises pour les tâches dans Exchange Online protection autonome
-ms.openlocfilehash: f9c0f0549ba5a0a65fa3bbe3af1afbfddc6e735c
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: ae43dc2223b17d3b73f9b76fa6bde8fb9cb95e77
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826624"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202866"
 ---
 # <a name="permissions-in-standalone-eop"></a>Autorisations dans EOP autonome
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Autonome Exchange Online Protection (EOP) sans boîte aux lettres Exchange Online utilise le modèle d’autorisations de contrôle d’accès basé sur un rôle (RBAC) pour accorder facilement des autorisations à vos administrateurs. Vous pouvez utiliser les fonctionnalités d’autorisation de EOP autonome pour faire en sorte que votre nouvelle organisation s’exécute rapidement.
 

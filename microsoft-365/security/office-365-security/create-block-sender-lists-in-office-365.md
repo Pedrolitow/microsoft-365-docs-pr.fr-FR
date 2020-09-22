@@ -13,14 +13,17 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 description: Les administrateurs peuvent en savoir plus sur les options disponibles et préférées pour bloquer les messages entrants dans Exchange Online Protection (EOP).
-ms.openlocfilehash: 9b676f96ccdff8be1fa49841a9e0ce44bb59964c
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 7894a6cfe665539fa8c00f5911c4a588b9cf7ebc
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827312"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203190"
 ---
 # <a name="create-blocked-sender-lists-in-eop"></a>Créer des listes d’expéditeurs bloqués dans EOP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection (EOP) autonomes sans boîte aux lettres Exchange Online, EOP offre plusieurs méthodes de blocage des messages provenant d’expéditeurs indésirables. Ces options incluent les expéditeurs bloqués Outlook, les listes d’expéditeurs bloqués ou les listes de domaines bloqués dans les stratégies de blocage du courrier indésirable, les règles de flux de messagerie Exchange (également appelées règles de transport) et la liste d’adresses IP bloquées (filtrage des connexions). Collectivement, ces options peuvent être considérées comme des _listes d’expéditeurs bloqués_.
 

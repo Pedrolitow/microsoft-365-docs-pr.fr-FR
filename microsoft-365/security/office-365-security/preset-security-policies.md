@@ -14,14 +14,17 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à appliquer des paramètres de stratégie standard et stricts pour les fonctionnalités de protection d’Exchange Online Protection (EOP) et Office 365 Advanced Threat Protection (ATP).
-ms.openlocfilehash: a2f0472d8dd44c90fd5db14e71d2db0d5d323b50
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 35be2b1ebfcf7ef8b7aad5cc2d4b3dd7032806b2
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825256"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202602"
 ---
 # <a name="preset-security-policies-in-eop-and-office-365-atp"></a>Stratégies de sécurité prédéfinies dans EOP et Office 365 ATP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Les stratégies de sécurité prédéfinies fournissent un emplacement centralisé pour l’application de toutes les stratégies de courrier indésirable, de programmes malveillants et de hameçonnage recommandées aux utilisateurs en même temps. Les paramètres de stratégie ne sont pas configurables. Au lieu de cela, ils sont définis par nous et basés sur nos observations et expériences dans les centres de données pour un équilibre entre la conservation d’un contenu nuisible aux utilisateurs sans interrompre leur travail.
 

@@ -1,6 +1,6 @@
 ---
-title: API de protection Microsoft contre les menaces prises en charge
-description: API de protection Microsoft contre les menaces prises en charge
+title: API de protection contre les menaces Microsoft prises en charge
+description: API de protection contre les menaces Microsoft prises en charge
 keywords: MTP, API, API
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -19,14 +19,17 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 49fa182a6142748ca7769411fe74389f365ba75f
-ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
+ms.openlocfilehash: fda90945f09abfadfe56ea11469687130d88b2a7
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47650270"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203694"
 ---
-# <a name="supported-microsoft-threat-protection-apis"></a>API de protection Microsoft contre les menaces prises en charge 
+# <a name="supported-microsoft-threat-protection-apis"></a>API de protection contre les menaces Microsoft prises en charge 
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 **S’applique à :**
 - Protection Microsoft contre les menaces
 
@@ -52,5 +55,5 @@ ms.locfileid: "47650270"
 
 Rubrique | Description
 :---|:---
-[API de chasse avancée](api-advanced-hunting.md) | Exécuter des requêtes de chasse avancées à partir de l’API.
+[API de recherche avancée de menaces](api-advanced-hunting.md) | Exécuter des requêtes de chasse avancées à partir de l’API.
 [API d’incident](api-incident.md) | Exécutez des appels d’API liés aux incidents, tels que : répertorier les incidents, mettre à jour l’incident et plus encore.

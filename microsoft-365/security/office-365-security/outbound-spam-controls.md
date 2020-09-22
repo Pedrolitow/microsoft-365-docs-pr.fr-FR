@@ -19,14 +19,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur les contrôles de courrier indésirable sortants dans Exchange Online Protection (EOP) et la marche à suivre si vous devez envoyer des publipostages en masse.
-ms.openlocfilehash: 99502e7fb55419dedb4d0f7d4a7e6c4591eff859
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 1097b768b955f2fa99c552ceda7564bef33a1aa7
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208922"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202386"
 ---
 # <a name="outbound-spam-protection-in-eop"></a>Protection contre le courrier indésirable sortant dans EOP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection (EOP) autonomes sans boîte aux lettres Exchange Online, nous prévoyons la gestion du courrier indésirable sortant. Un client qui envoie intentionnellement ou involontairement du courrier indésirable à partir de son organisation peut dégrader la réputation de l’ensemble du service et peut avoir une incidence sur la remise des messages pour d’autres clients.
 
@@ -40,7 +43,7 @@ Cette rubrique décrit les contrôles et les notifications conçus pour éviter 
 
 ## <a name="how-eop-controls-outbound-spam"></a>Comment EOP contrôle le courrier indésirable sortant
 
-- **Répartition du trafic de messagerie sortant**: tous les messages sortants envoyés via le service sont analysés pour rechercher le courrier indésirable. Si le message est identifié comme courrier indésirable, il est envoyé à partir d’un pool d’adresses IP secondaire, moins fiable, nommé _pool de remise à haut risque_. Pour plus d’informations, consultez la rubrique [pool de remise à haut risque pour les messages sortants](high-risk-delivery-pool-for-outbound-messages.md).
+- **Répartition du trafic de messagerie sortant**: tous les messages sortants envoyés via le service sont analysés pour rechercher le courrier indésirable. Si le message est identifié comme courrier indésirable, il est envoyé à partir d’un pool d’adresses IP secondaire, moins fiable, nommé _pool de remise à haut risque_. Pour plus d’informations, voir [Pool de remise à risque élevé pour les messages sortants](high-risk-delivery-pool-for-outbound-messages.md).
 
 - **Surveillance de notre réputation d’adresse IP source**: Microsoft 365 interroge différentes listes d’adresses IP bloquées. Une alerte est générée si l’une des adresses IP que nous utilisons pour le courrier électronique sortant apparaît sur ces listes. Cela nous permet de réagir rapidement quand le courrier indésirable a provoqué une dégradation de notre réputation. Lorsqu’une alerte est générée, nous disposons d’une documentation interne qui explique comment obtenir nos adresses IP supprimer (désinscrite) des listes rouges.
 
@@ -48,7 +51,7 @@ Cette rubrique décrit les contrôles et les notifications conçus pour éviter 
 
 - **Désactivation des comptes qui envoient trop de courriers électroniques trop rapidement** <sup>\*</sup> : en plus des limites qui recherchent les messages marqués comme courriers indésirables, il existe également des limites qui bloquent les comptes lorsqu’ils atteignent une limite globale de messages sortants, quel que soit le filtrage du courrier indésirable sur les messages sortants. Un compte compromis peut envoyer du courrier indésirable de zéro jour (non reconnu) par le filtre anti-courrier indésirable. Étant donné qu’il peut être difficile d’identifier une campagne de publipostage légitime contre une campagne de courrier indésirable, ces limites contribuent à minimiser les dommages potentiels.
 
-<sup>\*</sup>Nous n’avons pas annoncé les limites exactes pour lesquelles les spammeurs ne peuvent pas jouer le système, et donc nous pouvons augmenter ou diminuer les limites en conséquence. Les limites sont suffisamment élevées pour empêcher un utilisateur d’entreprise moyen de les dépasser, et suffisamment bas pour aider à contenir les dommages causés par un expéditeur de courrier indésirable.
+<sup>\*</sup> Nous n’avons pas annoncé les limites exactes pour lesquelles les spammeurs ne peuvent pas jouer le système, et donc nous pouvons augmenter ou diminuer les limites en conséquence. Les limites sont suffisamment élevées pour empêcher un utilisateur d’entreprise moyen de les dépasser, et suffisamment bas pour aider à contenir les dommages causés par un expéditeur de courrier indésirable.
 
 ## <a name="recommendations-for-customers-who-want-to-send-mass-mailings-through-eop"></a>Recommandations pour les clients qui souhaitent envoyer des publipostages de masse via EOP
 

@@ -14,14 +14,17 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à créer, modifier et supprimer les stratégies anti-hameçonnage avancées disponibles dans les organisations avec Office 365 Advanced Threat Protection (Office 365 ATP).
-ms.openlocfilehash: 83f100cab12c91af1405ffc5f386ff51028710a9
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: a4b5dc5beac23e267f6b0e5070d91301b589ad4c
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547651"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203382"
 ---
 # <a name="configure-atp-anti-phishing-policies"></a>Configurer des stratégies anti-hameçonnage ATP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Les stratégies anti-hameçonnage ATP font partie de la [protection avancée contre les menaces d’Office 365](office-365-atp.md). Les stratégies anti-hameçonnage ATP peuvent vous aider à protéger votre organisation contre les attaques de hameçonnage malveillant basées sur l’emprunt d’identité et d’autres types d’attaques par hameçonnage. Pour plus d’informations sur les différences entre les stratégies de détection d’hameçonnage dans les stratégies anti-hameçonnage Exchange Online Protection (EOP) et ATP, reportez-vous à la rubrique [protection anti-hameçonnage](anti-phishing-protection.md).
 
@@ -147,7 +150,7 @@ Utilisez les procédures suivantes pour modifier les stratégies anti-hameçonna
    - **Name**
    - **Description**
    - **Appliqué à**
-   - **Vérifiez vos paramètres**
+   - **Vérifier vos paramètres**
 
    Lorsque vous avez terminé, cliquez sur **Enregistrer** sur une page.
 

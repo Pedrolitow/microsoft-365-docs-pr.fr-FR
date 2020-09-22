@@ -18,14 +18,17 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
 description: Concevoir des sites d’équipe SharePoint Online isolés, notamment déterminer les niveaux d’autorisation, attribuer des autorisations à des utilisateurs avec des groupes d’accès et des groupes Azure AD imbriqués.
-ms.openlocfilehash: d26f55d9e037d86eac28e5cf21c56406eae5cc19
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 035952c1921443d86602eb94e3965acee86ae3e8
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653004"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203118"
 ---
 # <a name="design-an-isolated-sharepoint-online-team-site"></a>Conception d’un site d’équipe SharePoint Online isolé
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
  **Résumé :** Découvrez comment concevoir des sites d’équipe SharePoint Online.
 
@@ -35,11 +38,11 @@ Cet article vous aide à faire les bons choix de conception avant de créer un s
 
 Chaque site d’équipe SharePoint Online par défaut est créé avec les groupes SharePoint suivants :
 
-- \<site name>Produits
+- \<site name> Produits
 
-- \<site name>Voient
+- \<site name> Voient
 
-- \<site name>Commerçants
+- \<site name> Commerçants
 
 Ces groupes sont différents des groupes Microsoft 365 et Azure Active Directory (AD) et constituent la base de l’attribution d’autorisations pour les ressources du site.
 
@@ -49,9 +52,9 @@ L’ensemble des autorisations qui déterminent ce que le membre d’un groupe 
 
 |Groupe SharePoint|Niveau d’autorisation|
 |---|---|
-|\<site name>Produits|Modifier|
-|\<site name>Voient|Lecture|
-|\<site name>Commerçants|Contrôle total|
+|\<site name> Produits|Modifier|
+|\<site name> Voient|Lecture|
+|\<site name> Commerçants|Contrôle total|
 |
 
  **Conseil :** vous pouvez créer des groupes SharePoint et des niveaux d’autorisation supplémentaires. Cependant, nous vous recommandons d’utiliser les groupes SharePoint par défaut et les niveaux d’autorisation pour votre site SharePoint Online isolé.
@@ -92,9 +95,9 @@ Pour les sites d’équipe SharePoint Online isolés, voici à quoi ressemble l
 
 |Groupe SharePoint|Groupe d’accès basé sur Azure AD|Niveau d’autorisation|
 |---|---|---|
-|\<site name>Produits|\<site name>Produits|Modifier|
-|\<site name>Voient|\<site name>Personnes|Lecture|
-|\<site name>Commerçants|\<site name>Auxquels|Contrôle total|
+|\<site name> Produits|\<site name> Produits|Modifier|
+|\<site name> Voient|\<site name> Personnes|Lecture|
+|\<site name> Commerçants|\<site name> Auxquels|Contrôle total|
 |
 
  **Meilleure pratique :** Bien que vous puissiez utiliser les groupes Microsoft 365 ou Azure AD comme membres des groupes SharePoint, nous vous recommandons d’utiliser les groupes Azure AD. Les groupes Azure AD, gérés via AD DS ou Microsoft 365, offrent davantage de flexibilité pour l’utilisation de groupes imbriqués pour attribuer des autorisations.

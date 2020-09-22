@@ -16,14 +16,17 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur les options disponibles et préférées pour autoriser les messages entrants dans Exchange Online Protection (EOP).
-ms.openlocfilehash: f182027b153ee73e33131b39066e512c9303fcbd
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: b1eda98e081338a981be1d1f5991578b49c574fd
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827110"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203166"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Créer des listes d’expéditeurs approuvés dans EOP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Si vous êtes un client Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou un client Exchange Online Protection (EOP) autonome sans boîte aux lettres Exchange Online, EOP offre plusieurs moyens de s’assurer que les utilisateurs recevront des messages provenant d’expéditeurs approuvés. Ces options incluent les règles de flux de messagerie Exchange (également appelées règles de transport), les expéditeurs approuvés Outlook, la liste d’adresses IP autorisées (filtrage des connexions) et les listes d’expéditeurs autorisés ou les listes de domaines autorisés dans les stratégies anti-courrier indésirable. Collectivement, ces options peuvent être considérées comme des _listes d’expéditeurs approuvés_.
 

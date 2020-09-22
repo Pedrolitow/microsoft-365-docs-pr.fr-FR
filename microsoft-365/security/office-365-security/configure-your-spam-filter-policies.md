@@ -16,14 +16,17 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent découvrir comment afficher, créer, modifier et supprimer des stratégies anti-courrier indésirable dans Exchange Online Protection (EOP) autonome.
-ms.openlocfilehash: e27e32778f908e85fd4bf0b205e7b80fef798859
-ms.sourcegitcommit: 195172dd836e8a793e8e0c2db3323b7391bc51ac
+ms.openlocfilehash: a2d0f5dcdf02eb3562f15e733f1d8ae25ae82a94
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47255778"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203262"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configuration de stratégies de blocage du courrier indésirable dans Exchange Online Protection
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Dans les organisations Microsoft 365 ayant des boîtes aux lettres dans Exchange Online ou dans les organisations ayant Exchange Online Protection autonome (EOP) dépourvu de boîtes aux lettres Exchange Online, les courriers électroniques entrants sont automatiquement protégés contre le courrier indésirable par EOP. EOP utilise les stratégies anti-courrier indésirable (également appelées stratégies de filtrage de courrier indésirable ou stratégies de filtrage de contenu) dans le cadre de la défense globale de votre organisation contre le courrier indésirable. Pour plus d’informations, voir [Protection contre le courrier indésirable](anti-spam-protection.md).
 

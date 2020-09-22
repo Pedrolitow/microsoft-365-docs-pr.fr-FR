@@ -17,14 +17,17 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à utiliser l’analyseur de configuration pour rechercher et corriger des stratégies de sécurité qui sont inférieures aux stratégies de sécurité standard protection et protection stricte.
-ms.openlocfilehash: 022f11013ef49c65b1f94fea7a3872233ff1ab14
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: d2d37d937f42587ad99e4145d3a9f9fbc6a5a0f4
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949477"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203430"
 ---
 # <a name="configuration-analyzer-for-protection-policies-in-eop-and-office-365-atp"></a>Configuration Analyzer pour les stratégies de protection dans EOP et Office 365 ATP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 > [!NOTE]
 > Les fonctionnalités décrites dans cette rubrique sont en aperçu, ne sont pas disponibles dans toutes les organisations et peuvent faire l’objet de modifications. Pour plus d’informations sur le calendrier des publications, consultez la feuille de [route Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=config%2Canalyzer).
@@ -91,7 +94,7 @@ Par défaut, l’onglet s’ouvre sur la comparaison avec le profil de protectio
 
 Par défaut, la colonne **groupe de stratégies/nom du paramètre** contient une vue réduite des différents types de stratégies de sécurité et le nombre de paramètres qui doivent être améliorés (le cas échéant). Les types de stratégies sont les suivants :
 
-- **Anti-spam**
+- **Blocage du courrier indésirable**
 - **Anti-hameçonnage**
 - **Anti-programme malveillant**
 - **Pièces jointes sûres ATP** (si votre abonnement inclut ATP)
@@ -129,7 +132,7 @@ Cet onglet vous permet de suivre les modifications que vous avez apportées à v
 - **Modifié par**
 - **Nom du paramètre**
 - **Stratégie**
-- **Type (Type)**
+- **Type**
 
 Pour filtrer les résultats, cliquez sur **Filtrer**. Dans le menu volant **filtres** qui s’affiche, vous pouvez sélectionner l’un des filtres suivants :
 

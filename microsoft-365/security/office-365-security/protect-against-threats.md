@@ -18,14 +18,17 @@ ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent en savoir plus sur la protection contre les menaces dans Microsoft 365 et configurer la façon de l’utiliser pour votre organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a78bbea2d11360bbfa48fa3da01391471b2e0a4d
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 1ad74e9bdcd7b937873108d2ba049c16db8c235b
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547361"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202578"
 ---
 # <a name="protect-against-threats"></a>Protéger contre les menaces
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Voici un guide de démarrage rapide qui divise la configuration de la protection avancée contre les menaces en segments. Si vous ne connaissez pas les fonctionnalités de protection contre les menaces dans Office 365, si vous ne savez pas où commencer ou si vous êtes le plus *approprié, utilisez ces instructions en tant*que liste de vérification et point de départ.
 
@@ -295,5 +298,5 @@ Après avoir configuré les fonctionnalités de protection contre les menaces, v
 |---|---|
 |Découvrez comment les fonctionnalités de protection contre les menaces fonctionnent pour votre organisation en affichant des rapports|[Tableau de bord de sécurité](security-dashboard.md)<br/>[Rapports de sécurité de messagerie](view-email-security-reports.md)<br/>[Rapports pour la protection avancée contre les menaces Office 365](view-reports-for-atp.md)<br/>[Threat Explorer](threat-explorer.md)|
 |Vérifier et réviser régulièrement vos stratégies de protection contre les menaces selon vos besoins|[Degré de sécurisation](../mtp/microsoft-secure-score.md)<br/>[Rapports intelligents et Insights](reports-and-insights-in-security-and-compliance.md)<br/>[Fonctionnalités d’enquête et de réponse aux menaces Microsoft 365](keep-users-safe-with-office-365-ti.md)|
-|Surveillez les nouvelles fonctionnalités et les mises à jour de service|[Options de publication standard et ciblées](https://docs.microsoft.com/microsoft-365/admin/manage/release-options-in-office-365)<br/>[Centre de messages](https://docs.microsoft.com/microsoft-365/admin/manage/message-center)<br/>[Feuille de route Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection)<br/>[Descriptions des services](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)|
+|Surveillez les nouvelles fonctionnalités et les mises à jour de service|[Options de publication standard et ciblées](https://docs.microsoft.com/microsoft-365/admin/manage/release-options-in-office-365)<br/>[Centre de messages](https://docs.microsoft.com/microsoft-365/admin/manage/message-center)<br/>[Feuille de route de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection)<br/>[Descriptions des services](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)|
 |Découvrez les détails des configurations de sécurité standard et rigoureuses recommandées pour EOP et la protection avancée contre les menaces | [Paramètres recommandés pour la sécurité ATP d’Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp?view=o365-worldwide) |

@@ -16,14 +16,17 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Prise en main des fonctionnalités d’analyse et de réponse automatisées dans Office 365 Advanced Threat Protection Plan 2.
 ms.custom: air - seo-marvel-mar2020
-ms.openlocfilehash: 0587c2d58410d7a0bc4a581f156a2cbfc06701a9
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: adee64461d06b46f467682835a493a7eebe89aef
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949697"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202650"
 ---
 # <a name="get-started-using-automated-investigation-and-response-air-in-office-365"></a>Prise en main de l’analyse et de la réponse automatisées (AIR) dans Office 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 [Office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP) plan 2 inclut de puissantes fonctionnalités d’analyse et de réponse automatisées (air) qui permettent d’économiser le temps et les efforts de l’équipe des opérations de sécurité. Comme les alertes sont déclenchées, c’est à votre équipe chargée des opérations de sécurité de passer en revue les alertes, de les classer par ordre de priorité et de les répondre. Le volume des alertes entrantes peut être insurmontable. L’automatisation de certains d’entre eux peut vous aider. Avec AIR, votre équipe des opérations de sécurité peut se concentrer sur les tâches de plus haute priorité sans perdre en visibilité les alertes déclenchées.
 
@@ -100,7 +103,7 @@ Les autorisations sont accordées par le biais de certains rôles, tels que ceux
 [Office 365 DAV plan 2](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#office-365-atp-plan-1-and-plan-2) les licences doivent être affectées à :
 - Administrateurs de la sécurité (y compris les administrateurs généraux)
 - Équipe des opérations de sécurité de votre organisation (y compris les lecteurs de sécurité et les rôles de recherche et de purge)
-- Utilisateurs finals
+- Utilisateurs finaux
 
 En outre, les [stratégies Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) doivent être définies et appliquées afin que la protection soit mise en place.
 

@@ -17,14 +17,17 @@ search.appverid:
 - MET150
 description: Découvrez comment reconnaître et corriger les attaques d’injections de formulaires personnalisés et de règles Outlook dans Office 365
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f9b5551b8cbda85ac3940bc8f43ec2d7b7eccdb1
-ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
+ms.openlocfilehash: 7d879d34a925354084e08d82f5e1724725c18825
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44811049"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203070"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Détecter et résoudre les attaques d’injections de formulaires personnalisés et de règles Outlook
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 **Résumé** Découvrez comment reconnaître et corriger les attaques d’injections de formulaires personnalisés et de règles Outlook dans Office 365.
 
@@ -227,9 +230,9 @@ Notez que même avec les correctifs et mises à jour installés, il est possible
 
 Vous pouvez voir si « démarrer l’application » a été réactivé via une substitution dans le registre à l’aide des informations de la rubrique [How to View the System Registry by using 64-bit versions of Windows](https://support.microsoft.com/help/305097). Vérifiez les sous-clés suivantes :
 
-- **Outlook 2016**:`HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Security\`
+- **Outlook 2016**: `HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Security\`
 
-- **Outlook 2013**:`HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Outlook\Security\`
+- **Outlook 2013**: `HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Outlook\Security\`
 
 Recherchez la clé EnableUnsafeClientMailRules. S’il est présent et qu’il est défini sur 1, le correctif de sécurité Outlook a été remplacé et l’ordinateur est vulnérable à l’attaque de formulaire/de règles. Si la valeur est égale à 0, l’action « démarrer l’application » est désactivée. Si la version mise à jour et corrigée d’Outlook est installée et que cette clé de Registre n’est pas présente, un système n’est pas vulnérable à ces attaques.
 

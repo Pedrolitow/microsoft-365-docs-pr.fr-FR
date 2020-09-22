@@ -15,14 +15,17 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à configurer les entrées d’URL dans la liste des clients autorisés/bloqués du centre de sécurité & Compliance Center.
-ms.openlocfilehash: 888a96f23daf2cf47847466ad4080f310be7f9b4
-ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
+ms.openlocfilehash: eb9dcc5b239aae1366a0a2e0eebd68b3f0082e6b
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46845941"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202338"
 ---
 # <a name="manage-urls-in-the-tenant-allowblock-list"></a>Gérer les URL dans la liste verte/rouge du client
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 > [!NOTE]
 > Les fonctionnalités décrites dans cette rubrique sont en mode aperçu, sont sujettes à modification et ne sont pas disponibles dans toutes les organisations.
@@ -432,7 +435,7 @@ Les entrées suivantes ne sont pas valides :
   - contoso
   - \*contoso.\*
   - \*. com
-  - \*.pdf
+  - \*. pdf
 
 - **Caractères génériques sur le texte ou sans espacement**:
 

@@ -19,14 +19,17 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: d78996c0cd37a6b82edde52367b04647560d5cf7
-ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
+ms.openlocfilehash: ae9e5ae158c95ae52112f7bc16559559230a20e8
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47650273"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203706"
 ---
 # <a name="partner-access-through-microsoft-threat-protection-apis"></a>Accès partenaire via les API de protection contre les menaces Microsoft
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **S’applique à :**
 - Protection Microsoft contre les menaces

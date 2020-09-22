@@ -18,14 +18,17 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: Les administrateurs peuvent découvrir comment EOP utilise l’authentification de messagerie électronique (SPF, DKIM et DMARC) pour empêcher l’usurpation d’identité, le hameçonnage et les courriers indésirables.
-ms.openlocfilehash: 1e4ad82dd1c57e089b36e39afde346c47043c546
-ms.sourcegitcommit: eb905c5b4d7e71fc930a207357295b0160c4f065
+ms.openlocfilehash: d490caf600fef9d9caab79a1a97ec29637e10d66
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "48137046"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202974"
 ---
 # <a name="email-authentication-in-eop"></a>Authentification de messagerie électronique dans EOP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 L’authentification de messagerie électronique (également appelée validation du courrier électronique) est un ensemble de normes qui tente de bloquer l’usurpation d’identité (messages électroniques provenant de faux expéditeurs). Dans toutes les organisations Microsoft 365, EOP utilise ces normes pour vérifier les e-mails entrants :
 

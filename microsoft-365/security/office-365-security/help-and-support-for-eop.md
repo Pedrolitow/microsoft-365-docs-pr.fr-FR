@@ -12,14 +12,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft offre une assistance pour EOP à divers emplacements et via plusieurs méthodes, y compris via des options de support autonome et de support assisté.
-ms.openlocfilehash: 7b6fc805a91ee1f0a6dd6f1954f4b470028c8e52
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: c305f2e63d668a163bb82f5a4712cbdddc6f9259
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826588"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202722"
 ---
 # <a name="help-and-support-for-eop"></a>Aide et support pour EOP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection (EOP) autonomes sans boîte aux lettres Exchange Online, les ressources de support technique répertoriées dans cette rubrique vous aideront à trouver des réponses si vous rencontrez des difficultés avec EOP. Microsoft offre une assistance pour EOP à divers emplacements et via plusieurs méthodes, y compris via des options de support autonome et de support assisté.
 

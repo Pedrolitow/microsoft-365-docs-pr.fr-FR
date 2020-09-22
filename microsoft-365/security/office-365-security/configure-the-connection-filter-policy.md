@@ -18,14 +18,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à configurer le filtrage des connexions dans Exchange Online Protection (EOP) pour autoriser ou bloquer les messages électroniques provenant de serveurs de messagerie.
-ms.openlocfilehash: 45213ff36c7efc76a83a2c520e0369211ffecf53
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: d69ec30c9d6d812bf3bbcc6dc5b6df332d9dd0b5
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827844"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203370"
 ---
 # <a name="configure-connection-filtering"></a>Configuration du filtrage des connexions
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Si vous êtes un client Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou un client Exchange Online Protection (EOP) autonome sans boîtes aux lettres Exchange Online, vous utilisez le filtrage des connexions dans EOP (en particulier la stratégie de filtrage des connexions par défaut) pour identifier les serveurs de messagerie source valides par leurs adresses IP. Les principaux composants de la stratégie de filtrage des connexions par défaut sont les suivants :
 

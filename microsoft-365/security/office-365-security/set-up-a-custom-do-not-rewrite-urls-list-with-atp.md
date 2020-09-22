@@ -19,14 +19,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment configurer des URL bloquées personnalisées pour des utilisateurs et une liste d’URL de non-réécriture pour un groupe d’utilisateurs dans les stratégies de liens fiables ATP d’Office 365.
-ms.openlocfilehash: 9ec9c92e038aee33c716405916df009e3f4c60c5
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: ff2ce18897d7bd1d3890335a237e32bffd1a77e6
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825232"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202350"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-atp-safe-links"></a>Configurer une liste d’URL do-not-Rewrite personnalisée à l’aide de liens fiables ATP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 > [!IMPORTANT]
 > Cet article est destiné aux entreprises qui ont [Office 365 – Protection avancée contre les menaces](office-365-atp.md). Si vous êtes un utilisateur à domicile et que vous recherchez des informations sur les liens fiables dans Outlook, consultez la rubrique [Advanced Outlook.com Security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
@@ -44,7 +47,7 @@ ATP Safe Links protection utilise plusieurs listes, y compris la liste des URL b
 
 Pour modifier (ou définir) des stratégies ATP, vous devez disposer d’un rôle approprié. Le tableau suivant contient quelques exemples. Pour en savoir plus, consultez [la rubrique autorisations dans le centre de sécurité & conformité](permissions-in-the-security-and-compliance-center.md).
 
-|Role|WHERE/How Assigned|
+|Rôle|WHERE/How Assigned|
 |---|---|
 |administrateur général|La personne qui s’inscrit pour acheter Microsoft 365 est un administrateur global par défaut. (Pour en savoir plus, consultez la rubrique [à propos des rôles d’administrateur Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .)|
 |Administrateur de sécurité|Centre d’administration Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|

@@ -18,14 +18,17 @@ search.appverid:
 ms.custom: seo-marvel-apr2020
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: 'Résumé : Créez des sites d’équipe SharePoint Online publics, privés, sensibles et hautement confidentiels dans votre environnement de développement/test dans le cadre d’une campagne électorale.'
-ms.openlocfilehash: 220056c8bb234d762b44431739c683164d7a9905
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 1ae147cef3f7c946946d10fe50a7c23bd9e61a2e
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308426"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203154"
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>Création de sites d’équipe dans un environnement de développement/test dans le cadre d’une campagne électorale
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
  **Résumé :** Créez des sites d’équipe SharePoint Online publics, privés, sensibles et hautement confidentiels dans votre environnement de développement/test dans le cadre d’une campagne électorale. 
   

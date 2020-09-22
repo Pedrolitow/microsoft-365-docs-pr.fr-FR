@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Découvrez comment utiliser des compléments centralisés pour déployer des compléments pour les utilisateurs et les groupes de votre organisation.
-ms.openlocfilehash: c7f8b7bf71dbdaaf1c850c801a5145d3ab47a65c
-ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
+ms.openlocfilehash: 6339858871834637c0b8fdd1b16c17b534026de9
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171291"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48207885"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>Gérer des compléments dans le centre d’administration
 
@@ -60,6 +60,9 @@ Vous pouvez également supprimer un complément qui a été déployé.
 
 1. Dans le centre d’administration, accédez à la page **paramètres**de  >  **& des compléments** .
 
+     > [!NOTE]
+    > Le centre d’administration est mis à jour vers l’expérience de déploiement avec des applications intégrées. Si vous ne voyez pas les étapes ci-dessus, accédez à la section déploiement centralisé en accédant à **paramètres**  >  **intégrés**dans les applications. En haut de la page **applications intégrées** , choisissez **compléments**.
+
 2. Sélectionnez le complément déployé.
 
 3. Cliquez sur **supprimer le complément**. Supprimez le bouton du complément dans le coin inférieur droit.
@@ -71,6 +74,9 @@ Vous pouvez également supprimer un complément qui a été déployé.
 Post-déploiement, les administrateurs peuvent également gérer l’accès des utilisateurs aux compléments.
 
 1. Dans le centre d’administration, accédez à la page **paramètres**de  >  **& des compléments** .
+
+     > [!NOTE]
+    > Le centre d’administration est mis à jour vers l’expérience de déploiement avec des applications intégrées. Si vous ne voyez pas les étapes ci-dessus, accédez à la section déploiement centralisé en accédant à **paramètres**  >  **intégrés**dans les applications. En haut de la page **applications intégrées** , choisissez **compléments**.
 
 2. Sélectionnez le complément déployé.
 
@@ -88,6 +94,9 @@ En tant qu’organisation, vous souhaiterez peut-être empêcher le télécharge
 **Pour désactiver l’acquisition du complément**
   
 1. Dans le centre d’administration, cliquez sur la page **Paramètres** \> [Services &amp; Compléments](https://go.microsoft.com/fwlink/p/?linkid=2053743).
+
+     > [!NOTE]
+    > Le centre d’administration est mis à jour vers l’expérience de déploiement avec des applications intégrées. Si vous ne voyez pas les étapes ci-dessus, accédez à la section déploiement centralisé en accédant à **paramètres**  >  **intégrés**dans les applications. En haut de la page **applications intégrées** , choisissez **compléments**.
     
 3. Sélectionnez **Applications et services appartenant aux utilisateurs**.
     

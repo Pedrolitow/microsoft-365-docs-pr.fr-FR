@@ -15,14 +15,17 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Découvrez les actions de correction dans les fonctionnalités d’analyse et de réponse automatisées dans Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: c44b0a535e6838258d3efa63010d7ccc63009af9
-ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
+ms.openlocfilehash: 2f1d6a1dccfaece6a52ec33fd86ea244fbb6c4fe
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43804823"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202446"
 ---
 # <a name="view-pending-or-completed-remediation-actions-following-an-automated-investigation-in-office-365"></a>Afficher les actions de correction en attente ou terminées à la suite d’une enquête automatisée dans Office 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 
 ![Page action de l’enquête par avion](../../media/air-investigationactionspage.png)
@@ -36,7 +39,7 @@ Lors de l’affichage [des détails d’une enquête](air-view-investigation-res
 
 1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous. Cette opération vous permet d’accéder au centre de sécurité & conformité.
 
-2. Accédez aux **Threat management** > **enquêtes**de gestion des menaces.
+2. Accédez aux enquêtes de **gestion des menaces**  >  **Investigations**.
 
 3. Dans la liste des enquêtes, sélectionnez un élément dans la colonne **ID** . 
 

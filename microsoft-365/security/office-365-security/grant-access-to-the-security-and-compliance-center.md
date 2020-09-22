@@ -19,14 +19,17 @@ search.appverid:
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: Les utilisateurs doivent disposer d’autorisations dans le centre de conformité Microsoft 365 Security & pour pouvoir gérer les fonctionnalités de sécurité ou de conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b51007221257b9adac46c31295e13b20b12342ab
-ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
+ms.openlocfilehash: 5d586684d44545f7aea94c30f5474b1fe5fa4651
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46868920"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202806"
 ---
 # <a name="give-users-access-to-the-security--compliance-center"></a>Octroi de l’accès au Centre de conformité et sécurité aux utilisateurs
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Les utilisateurs doivent disposer d’autorisations dans le centre de conformité & de sécurité avant de pouvoir gérer les fonctionnalités de sécurité ou de conformité. En tant qu’administrateur général ou membre du groupe de rôles OrganizationManagement dans le centre de sécurité & conformité, vous pouvez accorder ces autorisations aux utilisateurs. Ceux-ci pourront uniquement gérer les fonctionnalités de sécurité ou de conformité auxquelles vous leur donnez accès.
 
@@ -56,7 +59,7 @@ Pour plus d’informations sur les différentes autorisations que vous pouvez ac
 
 ## <a name="use-security--compliance-center-powershell-to-give-another-user-access-to-the-security--compliance-center"></a>Utiliser la sécurité & Centre de conformité PowerShell pour accorder à un autre utilisateur l’accès au centre de sécurité & conformité
 
-1. [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
+1. [Connectez-vous au Centre de conformité et sécurité PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
 2. Utilisez la syntaxe suivante :
 
