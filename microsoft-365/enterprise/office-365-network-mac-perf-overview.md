@@ -3,7 +3,7 @@ title: Connectivité réseau dans le centre d’administration Microsoft 365 (ve
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 09/17/2020
+ms.date: 09/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Vue d’ensemble de la connectivité réseau dans le centre d’administration Microsoft 365 (version d’évaluation)
-ms.openlocfilehash: 644efe53e862f6bbe98be7dca889bc3637084521
-ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
+ms.openlocfilehash: a51cfba962ff884afa634473c0523e49a92a56f5
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171361"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200796"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Connectivité réseau dans le centre d’administration Microsoft 365 (version d’évaluation)
 
@@ -63,7 +63,7 @@ Les exemples de mesures et les emplacements de bureau doivent commencer à appar
 
 ### <a name="3-manually-gather-test-reports-with-the-microsoft-365-network-connectivity-test-tool"></a>3. recueillez manuellement des rapports de test avec l’outil de test de connectivité réseau Microsoft 365
 
-Pour cette option, vous devez identifier une personne à chaque emplacement. Demandez-lui de parcourir le [test de connectivité réseau Microsoft 365](https://connectivity.office.com) sur un ordinateur Windows sur lequel il dispose d’autorisations d’administration. Sur le site Web, ils doivent se connecter à leur compte Office 365 pour la même organisation dont vous souhaitez voir les résultats. Ensuite, cliquez sur exécuter le test. Pendant le test, un EXE de test de connectivité est téléchargé. Elles doivent également être ouvertes et exécutées. Une fois les tests terminés, le résultat du test est téléchargé vers Office 365.
+Pour cette option, vous devez identifier une personne à chaque emplacement. Demandez-lui de parcourir le [test de connectivité réseau Microsoft 365](https://connectivity.office.com) sur un ordinateur Windows sur lequel ils disposent d’autorisations d’administration. Sur le site Web, ils doivent se connecter à leur compte Office 365 pour la même organisation dont vous souhaitez voir les résultats. Ensuite, ils doivent cliquer sur **exécuter le test**. Pendant le test, un EXE de test de connectivité est téléchargé. Elles doivent également être ouvertes et exécutées. Une fois les tests terminés, le résultat du test est téléchargé vers Office 365.
 
 Les rapports de test sont liés à un emplacement s’il a été ajouté avec des informations de sous-réseau de réseau local, sinon ils apparaissent uniquement à l’emplacement de la ville.
 
@@ -174,7 +174,7 @@ Le service frontal Microsoft 365 est un point d’entrée sur le réseau mondial
 
 ### <a name="what-is-an-optimal-microsoft-365-service-front-door"></a>Qu’est-ce qu’une porte d’avance sur le service Microsoft 365 ?
 
-Une porte de service frontale Microsoft 365 optimale est celle qui est la plus proche de la sortie de votre réseau, généralement dans votre ville ou votre région de métro. Utilisez le [test de connectivité de microsoft 365](office-365-network-mac-perf-onboarding-tool.md) pour déterminer l’emplacement de votre service Microsoft 365 et de votre porte de service frontal optimale. Si l’outil détermine que votre porte avant de l’utilisation est optimale, vous vous connectez de manière optimale au réseau global de Microsoft.
+Une porte de service frontale Microsoft 365 optimale est celle qui est la plus proche de la sortie de votre réseau, généralement dans votre ville ou votre région de métro. Utilisez l' [outil de test de connectivité microsoft 365 (](office-365-network-mac-perf-onboarding-tool.md) préversion) pour déterminer l’emplacement de votre service Microsoft 365 d’utilisation et de votre porte de service frontal optimale. Si l’outil détermine que votre porte avant de l’utilisation est optimale, vous vous connectez de manière optimale au réseau global de Microsoft.
 
 ### <a name="what-is-an-internet-egress-location"></a>Qu’est-ce qu’un emplacement de sortie Internet ?
 
@@ -186,8 +186,6 @@ L’emplacement de sortie Internet est l’emplacement où votre trafic réseau 
 
 [Microsoft 365 Network Assessment (aperçu)](office-365-network-mac-perf-score.md)
 
-[Test de connectivité Microsoft 365 dans le centre d’administration M365 (aperçu)](office-365-network-mac-perf-onboarding-tool.md)
+[Outil de test de connectivité Microsoft 365 (aperçu)](office-365-network-mac-perf-onboarding-tool.md)
 
 [Services d’emplacement de connectivité réseau Microsoft 365 (aperçu)](office-365-network-mac-location-services.md)
-
-[Outil de test de connectivité réseau Microsoft 365 (aperçu)](office-365-network-mac-perf-onboarding-tool.md)

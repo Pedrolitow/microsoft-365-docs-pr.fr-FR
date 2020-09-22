@@ -19,14 +19,17 @@ ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent découvrir comment supprimer des utilisateurs du portail des utilisateurs restreints dans Office 365. Les utilisateurs sont ajoutés au portail Utilisateurs restreints pour avoir envoyé du courrier indésirable sortant, généralement en raison de la compromission d’un compte.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0d411cec48ff6704d737850974e832dbe07a3ad3
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: c63d50fcf24e19c6a3265d57ea34fb8ab852c61c
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826528"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201554"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-office-365"></a>Retirer les utilisateurs bloqués du portail Utilisateurs restreints dans Office 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Si un utilisateur dépasse l’une des limites d’envoi sortant, comme spécifié dans [les limites de service](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) ou dans [les stratégies anti-courrier indésirable sortantes](configure-the-outbound-spam-policy.md), l’utilisateur ne peut pas envoyer d’e-mails, mais il peut continuer à en recevoir.
 

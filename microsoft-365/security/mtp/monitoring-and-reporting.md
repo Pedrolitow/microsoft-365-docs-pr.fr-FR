@@ -15,14 +15,17 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 90d9fcc45e768abd5fddef948fcafdaf9e77f5fb
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: eb765cf353569e9907352fb3146a12ffe7b34df4
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46866718"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199958"
 ---
 # <a name="monitor-and-view-reports-in-the-microsoft-365-security-center"></a>Surveillance et affichage des rapports dans le centre de sécurité Microsoft 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 Le centre de sécurité Microsoft 365 fournit un résumé des États de protection et de sécurité dans votre environnement Microsoft 365.
 

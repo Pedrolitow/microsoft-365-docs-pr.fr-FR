@@ -12,14 +12,17 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Les administrateurs peuvent apprendre à identifier les raisons et le mode de réception d’un message de hameçonnage dans Microsoft 365, ainsi que la marche à suivre pour éviter d’autres messages de hameçonnage.
-ms.openlocfilehash: b0fbb29489cece6d708811c5c8d8d60450938f0c
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: c62d09a1cf8b586b5c1d4393d7316d6d6d0cc96d
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825208"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201674"
 ---
 # <a name="tune-anti-phishing-protection"></a>Protection anti-hameçonnage
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Bien que Microsoft 365 propose plusieurs fonctionnalités anti-hameçonnage qui sont activées par défaut, il est possible que certains messages de phishing continuent à accéder à vos boîtes aux lettres. Cette rubrique décrit ce que vous pouvez faire pour découvrir pourquoi un message de hameçonnage s’affiche, et ce que vous pouvez faire pour ajuster les paramètres anti-hameçonnage dans votre organisation Microsoft 365 _sans accidentellement_compliquer les choses.
 

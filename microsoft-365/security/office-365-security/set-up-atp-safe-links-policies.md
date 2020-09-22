@@ -17,14 +17,17 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Configurez des stratégies de liens fiables pour protéger votre organisation contre les liens malveillants dans les fichiers Word, Excel, PowerPoint et Visio, ainsi que dans les messages électroniques.
-ms.openlocfilehash: 121de6137e392ae0c66d9961fd2138f003a9d9fa
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 8c72473a9b1337e1d932ec7235ed12e79f0c48f6
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307760"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201758"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configuration des stratégies de liens approuvés Office 365 ATP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 > [!IMPORTANT]
 > Cet article est destiné aux entreprises qui ont [Office 365 – Protection avancée contre les menaces](office-365-atp.md). Si vous êtes un utilisateur à domicile et que vous recherchez des informations sur les liens fiables dans Outlook, consultez la rubrique [Advanced Outlook.com Security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
@@ -51,7 +54,7 @@ De [nouvelles fonctionnalités sont continuellement ajoutées à](office-365-atp
 
 - Assurez-vous que vous disposez des autorisations nécessaires. Pour définir (ou modifier) des stratégies ATP, vous devez disposer d’un rôle approprié. Certains exemples sont décrits dans le tableau suivant :
 
-    |Role|WHERE/How Assigned|
+    |Rôle|WHERE/How Assigned|
     |---|---|
     |administrateur général|La personne qui s’inscrit pour acheter Microsoft 365 est un administrateur global par défaut. (Pour en savoir plus, consultez la rubrique [à propos des rôles d’administrateur Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .)|
     |Administrateur de sécurité|Centre d’administration Azure Active Directory ( <https://aad.portal.azure.com> )|

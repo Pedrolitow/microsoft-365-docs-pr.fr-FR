@@ -1,9 +1,9 @@
 ---
-title: Test de connectivité réseau Microsoft 365 (aperçu)
+title: Outil de test de connectivité réseau Microsoft 365 (aperçu)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 09/17/2020
+ms.date: 09/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -13,15 +13,15 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: Test de connectivité réseau Microsoft 365 (aperçu)
-ms.openlocfilehash: 40a46ecb39366c64c99077e90bb35c5056f36b9d
-ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
+description: Outil de test de connectivité réseau Microsoft 365 (aperçu)
+ms.openlocfilehash: 72f42a71ec44d165a24187edaf03aa62d330479b
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171349"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200816"
 ---
-# <a name="microsoft-365-network-connectivity-test-preview"></a>Test de connectivité réseau Microsoft 365 (aperçu)
+# <a name="microsoft-365-network-connectivity-test-tool-preview"></a>Outil de test de connectivité réseau Microsoft 365 (aperçu)
 
 L’outil de test de connectivité réseau Microsoft 365 se trouve à l’adresse <https://connectivity.office.com> . Il s’agit d’un outil complémentaire pour les informations sur l’évaluation du réseau et les informations sur le réseau disponibles dans le centre d’administration Microsoft 365 sous **Health | Menu connectivité** .
 
@@ -193,7 +193,7 @@ Pendant le téléchargement de 15 Mo, nous Mesurez la latence TCP sur la porte d
 
 Indique le nom DNS et l’adresse IP du serveur de portes frontales du service SharePoint auquel vous étiez dirigé. Il est fourni à des fins d’information uniquement et aucune analyse réseau n’est associée.
 
-### <a name="microsoft-teams"></a>Microsoft Teams
+### <a name="microsoft-teams"></a>Microsoft Teams
 
 Cette section présente les résultats des tests liés à Microsoft Teams.
 
@@ -249,7 +249,7 @@ Il s’agit actuellement d’un aperçu et nous prévoyons de fournir des mises 
 
 ### <a name="what-is-required-to-run-the-advanced-test-client"></a>Qu’est-ce qui est requis pour exécuter le client de test avancé ?
 
-Le client de test avancé requiert .NET Core 3,1 Desktop Runtime. Si vous exécutez le client de test avancé sans l’installer, vous serez redirigé vers [la page .net Core 3,1 installer](https://dotnet.microsoft.com/download/dotnet-core/3.1). Veillez à installer le runtime de bureau et non le kit de développement logiciel, ou le runtime ASP.NET principal qui est plus haut sur la page. Les autorisations d’administrateur sur l’ordinateur sont requises pour installer .NET Core. 
+Le client de test avancé requiert .NET Core 3,1 Desktop Runtime. Si vous exécutez le client de test avancé sans l’installer, vous serez redirigé vers [la page .net Core 3,1 installer](https://dotnet.microsoft.com/download/dotnet-core/3.1). Veillez à installer le runtime de bureau et non le kit de développement logiciel, ou le runtime ASP.NET principal qui est plus haut sur la page. Les autorisations d’administrateur sur l’ordinateur sont requises pour installer .NET Core.
 
 ### <a name="what-is-microsoft-365-service-front-door"></a>Qu’est-ce que le service frontal de Microsoft 365 ?
 
@@ -267,7 +267,7 @@ L’emplacement de sortie Internet est l’emplacement où votre trafic réseau 
 
 ## <a name="related-topics"></a>Voir aussi
 
-[Recommandations relatives aux performances réseau dans le centre d’administration Microsoft 365 (version préliminaire)](office-365-network-mac-perf-overview.md)
+[Connectivité réseau dans le centre d’administration Microsoft 365 (version d’évaluation)](office-365-network-mac-perf-overview.md)
 
 [Informations sur les performances du réseau Microsoft 365 (aperçu)](office-365-network-mac-perf-insights.md)
 

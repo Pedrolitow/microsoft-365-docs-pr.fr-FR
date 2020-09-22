@@ -17,14 +17,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment protéger votre organisation contre les fichiers malveillants à l’aide de pièces jointes fiables ATP pour Office 365.
-ms.openlocfilehash: f4f355d4def1f108a72854c3796e0e9373cb5ef1
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: d13674a5d3e769fc10a1f5fd2fd80a4f07c063de
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819399"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201472"
 ---
 # <a name="how-atp-safe-attachments-works"></a>Fonctionnement des pièces jointes fiables de PACM
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 La fonctionnalité pièces jointes approuvées ATP vérifie les pièces jointes de courrier électronique pour les personnes de votre organisation. Lorsqu’une stratégie de pièces jointes approuvées ATP est en place et qu’une personne concernée par cette stratégie affiche son courrier électronique dans Office 365, ses pièces jointes sont vérifiées et les actions appropriées sont prises, en fonction des stratégies de pièces jointes approuvées ATP. En fonction de la définition de vos stratégies, les utilisateurs peuvent continuer à travailler sans jamais savoir qu’ils ont reçu des fichiers malveillants.
   

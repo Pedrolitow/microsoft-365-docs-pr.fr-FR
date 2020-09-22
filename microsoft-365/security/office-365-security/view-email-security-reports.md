@@ -18,14 +18,17 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez comment rechercher et utiliser des rapports de sécurité de messagerie pour votre organisation. Les rapports de sécurité de messagerie sont disponibles dans le centre de sécurité & conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a87cee31b4e0251aea8eb39640d37184ccd0ee96
-ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
+ms.openlocfilehash: 588c30ca07684636661c7946b2418b75574c8cbd
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48104521"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199216"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Afficher les rapports de sécurité de courrier dans le centre de sécurité et conformité
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Un grand nombre de rapports sont disponibles dans le [Centre de conformité security &](https://protection.office.com) pour vous aider à découvrir comment les fonctionnalités de sécurité de messagerie, telles que le blocage du courrier indésirable, les programmes malveillants et les fonctionnalités de chiffrement de Microsoft 365 protègent votre organisation. Si vous disposez des [autorisations nécessaires](#what-permissions-are-needed-to-view-these-reports), vous pouvez afficher ces rapports dans le centre de sécurité & conformité en accédant au **Reports** \> **tableau de bord**rapports. Pour accéder directement au tableau de bord rapports, ouvrez <https://protection.office.com/insightdashboard> .
 
@@ -371,7 +374,7 @@ Si vous cliquez sur **afficher les détails table**, les informations affichées
 - **Afficher les données par : contenu \> Programmes malveillants**:
 
   - **Date**
-  - **Location**
+  - **Emplacement**
   - **Demandé par**
   - **Nom du programme malveillant**
 

@@ -14,14 +14,17 @@ ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 ms.custom:
 - seo-marvel-apr2020
 description: Dans cet article, vous découvrirez comment déplacer des domaines et des paramètres d’une organisation Microsoft Exchange Online Protection (EOP) vers une autre.
-ms.openlocfilehash: a33042631a5a5371e2d120f76f49cb2a46a638a3
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 141fb85bb7120f4e547c27f399d254847b19e3c2
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827688"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200502"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another"></a>Déplacer des domaines et des paramètres d’une organisation EOP vers une autre
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 L'évolution des besoins professionnels peut parfois imposer de séparer une organisation Microsoft Exchange Online Protection (EOP) (locataire) en deux organisations distinctes, de fusionner deux organisations en une seule ou de déplacer vos domaines et vos paramètres EOP d'une organisation vers une autre. Le déplacement d'une organisation EOP vers une deuxième organisation EOP peut être difficile, mais avec quelques scripts Windows PowerShell à distance basiques et un peu de préparation, cette opération peut être réalisée dans une fenêtre de maintenance relativement courte.
 

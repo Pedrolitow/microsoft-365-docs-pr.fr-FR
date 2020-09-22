@@ -16,14 +16,17 @@ ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
 ms.collection:
 - M365-security-compliance
 description: Pour préserver la confiance des utilisateurs dans l'utilisation de la messagerie électronique, Microsoft a mis en place diverses stratégies et technologies pour aider à protéger ses utilisateurs.
-ms.openlocfilehash: 74389d3b975a0ffaebdc1619be40fd3ac74d72f4
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: e9389d52ee1d6c1c0bbab8630778749a6ed6005f
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46652656"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199576"
 ---
 # <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>Services pour les non-clients envoyant des courriers électroniques à Microsoft 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 L'utilisation abusive de la messagerie électronique, les courriers indésirables et les e-mails frauduleux (hameçonnage) continuent à peser sur l'ensemble de l'écosystème de la messagerie. Pour faciliter la gestion de l’approbation des utilisateurs dans l’utilisation de la messagerie, Microsoft a mis en place différentes stratégies et technologies afin de protéger les utilisateurs. Cependant, Microsoft comprend que les e-mails légitimes ne doivent pas être affectés négativement. Par conséquent, nous avons établi une suite de services pour aider les expéditeurs à améliorer leur capacité à livrer des courriers électroniques aux utilisateurs de Microsoft 365 en gérant leur réputation d’envoi de manière proactive.
 

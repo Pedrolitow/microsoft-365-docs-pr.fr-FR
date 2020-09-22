@@ -16,14 +16,17 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent découvrir les options de notification de courrier indésirable, non de courrier indésirable et de hameçonnage dans Outlook pour iOS et Android.
-ms.openlocfilehash: 216f60eb168190603c7c9aba58cef27c2bf15b01
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: fef519f3fdd5cf46d383c41ad227ab0cd3ed4390
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46867404"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201532"
 ---
 # <a name="report-junk-and-phishing-email-in-outlook-for-ios-and-android-in-exchange-online"></a>Signaler le courrier indésirable et le hameçonnage dans Outlook pour iOS et Android dans Exchange Online
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou des boîtes aux lettres locales qui utilisent l' [authentification moderne hybride](https://docs.microsoft.com/microsoft-365/enterprise/hybrid-modern-auth-overview?view=o365-worldwide), vous pouvez utiliser les options de création de rapports intégrées dans Outlook pour iOS et Android pour soumettre des faux positifs (courrier marqué comme courrier indésirable), des faux négatifs (courrier indésirable autorisé) et des messages de hameçonnage à Exchange Online Protection (EoP)
 

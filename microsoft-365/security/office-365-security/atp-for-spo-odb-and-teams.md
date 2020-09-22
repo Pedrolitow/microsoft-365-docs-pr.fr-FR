@@ -21,14 +21,17 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Découvrez la protection avancée contre les menaces Office 365 pour les fichiers dans SharePoint Online, OneDrive entreprise et Microsoft Teams.
-ms.openlocfilehash: e4a711d6554ffcb8e291d5b2154120d078995e94
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 9831b61fafc7cb4696fbad3d569f061612f85fe1
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44815408"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199038"
 ---
 # <a name="atp-for-sharepoint-onedrive-and-microsoft-teams"></a>PACM pour SharePoint, OneDrive et Microsoft Teams
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 ## <a name="overview-of-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Vue d’ensemble de la protection avancée contre les menaces Office 365 pour SharePoint, OneDrive et Microsoft teams
 
@@ -52,7 +55,7 @@ Pour obtenir plus d’informations, consultez l’article [Activer Office 365 
 
 ## <a name="keep-these-points-in-mind"></a>Gardez les points suivants à l’esprit
 
-- La protection avancée contre les menaces n’analysera pas chaque fichier unique dans SharePoint Online, OneDrive entreprise ou Microsoft Teams. Il s’agit du comportement par défaut. Les fichiers sont analysés de manière asynchrone, par le biais d’un processus qui utilise des événements d’activité de partage et d’invité, ainsi que des signaux de menace et heuristiques pour identifier les fichiers malveillants.
+- La protection avancée contre les menaces n’analysera pas chaque fichier unique dans SharePoint Online, OneDrive entreprise ou Microsoft Teams. Ce comportement est voulu par la conception même du produit. Les fichiers sont analysés de manière asynchrone, par le biais d’un processus qui utilise des événements d’activité de partage et d’invité, ainsi que des signaux de menace et heuristiques pour identifier les fichiers malveillants.
 
 - Assurez-vous que vos sites SharePoint sont configurés pour utiliser l' [expérience moderne](https://docs.microsoft.com/sharepoint/guide-to-sharepoint-modern-experience). Lorsqu’un fichier est identifié comme malveillant et bloqué, les utilisateurs peuvent voir qu’il s’est produit dans l’expérience moderne, mais pas dans l’affichage classique. La protection contre l’ATP s’applique si l’expérience moderne ou la vue standard est utilisée ; Toutefois, les indicateurs visuels signalant qu’un fichier est bloqué sont présents uniquement dans l’expérience moderne.
 

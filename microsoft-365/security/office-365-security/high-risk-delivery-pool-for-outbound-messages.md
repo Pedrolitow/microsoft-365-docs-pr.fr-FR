@@ -16,14 +16,17 @@ ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment les pools de remise sont utilisés pour protéger la réputation des serveurs de messagerie dans les centres de connaissances Microsoft 365.
-ms.openlocfilehash: 83ea21a9230240f1339513efc75587f3d84733cb
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: b3016be7c1887536fe3e742b5ab4ec598b6a5f89
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827736"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201488"
 ---
 # <a name="outbound-delivery-pools"></a>Pools de remise sortants
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Les serveurs de messagerie dans les centres de connaissances Microsoft 365 peuvent être temporairement coupable d’envoyer du courrier indésirable. Par exemple, un programme malveillant ou une attaque de courrier indésirable malveillant dans une organisation de messagerie locale qui envoie des messages sortants via Microsoft 365 ou des comptes Microsoft 365 compromis. Les agresseurs essaient également d’éviter la détection en relayant les messages via le transfert de Microsoft 365.
 

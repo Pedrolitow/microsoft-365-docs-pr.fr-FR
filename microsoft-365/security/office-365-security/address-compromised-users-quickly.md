@@ -14,14 +14,17 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.date: 02/25/2020
 description: Découvrez comment accélérer le processus de détection et d’adressage des comptes d’utilisateurs compromis avec des fonctionnalités d’analyse et de réponse automatisées dans Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: 5a1dd64a0b30bb230af0d96432ae9542ce0370d8
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: fa648b33180cab7d70348dc4d1d6e64930ecff99
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656908"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201230"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Adresser des comptes d’utilisateurs compromis avec une enquête et une réponse automatisées
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 [Office 365 Advanced Threat Protection Plan 2](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide#office-365-atp-plan-1-and-plan-2) inclut de puissantes fonctionnalités d’analyse [et de réponse automatisées](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) (air). De telles fonctionnalités peuvent permettre à l’équipe de vos opérations de sécurité de gagner beaucoup de temps et d’efforts sur les menaces. Microsoft continue d’améliorer les fonctionnalités de sécurité. Récemment, les fonctionnalités AIR ont été améliorées pour inclure un manuel de sécurité de l’utilisateur compromis (actuellement en version d’évaluation). Lisez cet article pour en savoir plus sur le manifeste de sécurité de l’utilisateur compromis. Pour plus d’informations, reportez-vous au billet de blog [accélérer le temps nécessaire pour détecter et répondre à la compromission d’un utilisateur et limiter la portée de violation avec Office 365 ATP](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) .
 

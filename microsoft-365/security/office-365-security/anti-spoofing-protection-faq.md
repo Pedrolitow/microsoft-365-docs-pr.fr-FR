@@ -16,14 +16,17 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent consulter les questions fréquemment posées et les réponses sur la protection contre l’usurpation d’identité dans Exchange Online Protection (EOP).
-ms.openlocfilehash: 3547b0a0af6d2e541d4ec3546d9bbd4aa34c3a6b
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 207fa9b12c2b39571c72397abfb6a64fe992b43e
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46867138"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199110"
 ---
 # <a name="anti-spoofing-protection-faq"></a>Forum aux questions sur la protection contre l’usurpation d’identité
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Cet article fournit des questions fréquemment posées et des réponses sur la protection contre l’usurpation d’identité pour les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection (EOP) autonomes sans boîtes aux lettres Exchange Online.
 

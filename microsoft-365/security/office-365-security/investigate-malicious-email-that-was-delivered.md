@@ -19,14 +19,17 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez comment utiliser les fonctionnalités d’analyse et de réponse aux menaces pour rechercher et examiner des courriers électroniques malveillants.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 91f16c3aa7ba98467c52fb25e0597f346a810003
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 120cc32a2736858a0f0d99ab37f1d51c70a6071c
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949263"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201912"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-office-365"></a>Enquête sur le courrier électronique malveillant remis dans Office 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 [Office 365 Advanced Threat Protection](office-365-atp.md) vous permet d’examiner les activités qui permettent de mettre en péril les personnes de votre organisation et de protéger votre organisation. Par exemple, si vous participez à l’équipe de sécurité de votre organisation, vous pouvez rechercher et enquêter sur les messages électroniques suspects qui ont été remis. Vous pouvez le faire à l’aide de l' [Explorateur de menaces (ou des détections en temps réel)](threat-explorer.md).
 

@@ -19,14 +19,17 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: e19e5758f4d42799c96ecec51fd6295e3da19f9b
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.openlocfilehash: bcf5b79fcd2fdf0a5af5648e6f6b7ea65d69594c
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44844917"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201286"
 ---
 # <a name="troubleshoot-microsoft-threat-protection-service-issues"></a>Détecter les problèmes liés au service de Protection Microsoft contre les menaces
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **S’applique à :**
 - Protection Microsoft contre les menaces

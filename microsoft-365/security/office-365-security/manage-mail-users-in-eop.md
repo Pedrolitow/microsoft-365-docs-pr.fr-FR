@@ -13,14 +13,17 @@ localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: Découvrez comment gérer les utilisateurs de messagerie dans Exchange Online Protection (EOP), notamment à l’aide de la synchronisation d’annuaires, du centre d’administration Exchange et de PowerShell pour gérer les utilisateurs.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 64b7effadd96b6dc025677139c4303acd538dadb
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 56e6f8955b5993fb4b5064aa92cdde80a4c67ffe
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827074"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201782"
 ---
 # <a name="manage-mail-users-in-standalone-eop"></a>Gérer les utilisateurs de courrier dans une version autonome de EOP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Dans les organisations Exchange Online Protection (EOP) autonomes sans boîtes aux lettres Exchange Online, les utilisateurs de messagerie constituent le type de compte d’utilisateur fondamental. Un utilisateur de messagerie dispose d’informations d’identification de compte dans votre organisation EOP autonome et peut accéder aux ressources (auxquelles des autorisations sont attribuées). L’adresse de messagerie d’un utilisateur de messagerie est externe (par exemple, dans votre environnement de messagerie local).
 
@@ -273,7 +276,7 @@ Obtenir les autorisations nécessaires et préparer la synchronisation d’annua
 
 3. [Sélectionnez le type d’installation à utiliser pour Azure ad Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-select-installation):
 
-   - [Sous](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-express)
+   - [Express](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-express)
 
    - [Personnalisé](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-custom)
 

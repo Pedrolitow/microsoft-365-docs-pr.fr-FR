@@ -15,14 +15,17 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez comment utiliser l’Explorateur de menaces et le rapport de détection en temps réel pour examiner les menaces et y répondre dans le &amp; Centre de sécurité conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5064c3a250ba9e7dcf48d6bc360102b3ab4b8504
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: 5500a7bff0766159384604e9973b5ad81b3dbc6f
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656944"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200106"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Affichages dans l’Explorateur de menaces et détections en temps réel
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 ![Threat Explorer](../../media/ThreatExplorerFirstOpened.png)
 
@@ -37,10 +40,10 @@ Lorsque vous ouvrez l’Explorateur (ou le rapport de détection en temps réel)
 
 |Abonnement|Utilitaire|Jours de données|
 |---|---|---|
-|Version d’évaluation de l’ATP P1|Détections en temps réel|7 |
+|Version d’évaluation de l’ATP P1|Détections en temps réel|7 |
 |ATP P1 payé|Détections en temps réel|0,30|
-|Version d’évaluation de l’ATP P2, tests sponsorisés P1|Threat Explorer|7 |
-|Version d’évaluation de l’ATP P2|Threat Explorer|7 |
+|Version d’évaluation de l’ATP P2, tests sponsorisés P1|Threat Explorer|7 |
+|Version d’évaluation de l’ATP P2|Threat Explorer|7 |
 |ATP P2 payé|Threat Explorer|0,30|
 |
 

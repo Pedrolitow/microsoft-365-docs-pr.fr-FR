@@ -19,14 +19,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur les paramètres et les filtres anti-courrier indésirable qui permettent d’éviter le courrier indésirable dans Exchange Online Protection (EOP).
-ms.openlocfilehash: 74ffe22ffea07350245f6fed18d09b52f96c8351
-ms.sourcegitcommit: e6bf1af2d5cf54c3fcc3fa916abe268fc96bdd4e
+ms.openlocfilehash: 4e5c41ebf92de320651a90813220abfcfa50c30e
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45189560"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199134"
 ---
 # <a name="anti-spam-protection-in-eop"></a>Protection contre le courrier indésirable dans EOP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 > [!NOTE]
 > Cette rubrique est destinée aux administrateurs. Pour les rubriques destinées aux utilisateurs finaux, consultez [la rubrique vue d’ensemble du filtre courrier indésirable](https://support.microsoft.com/office/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) et [en savoir plus sur le courrier indésirable et le hameçonnage](https://support.microsoft.com/office/86c1d76f-4d5a-4967-9647-35665dc17c31).

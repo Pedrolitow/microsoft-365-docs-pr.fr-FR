@@ -16,14 +16,17 @@ ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection:
 - M365-security-compliance
 description: En savoir plus sur les suivis de menace, y compris les nouveaux suivis, pour aider votre organisation à répondre aux préoccupations de sécurité.
-ms.openlocfilehash: 13e8463d88250fe76474311e9df394577949989e
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: e4e157e64da92cf3c9178af1223fbc6c85e3fd95
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44755063"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201794"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Suivi des menaces-nouveautés et remarquables
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Les fonctionnalités d' [enquête et de réponse aux menaces Office 365](office-365-ti.md) permettent à l’équipe de sécurité de votre organisation de découvrir et de prendre des mesures contre les menaces Cybersecurity. Les fonctionnalités d’enquête et de réponse aux menaces Office 365 incluent des fonctionnalités de suivi des menaces, notamment des suivis nocelles. Lisez cet article pour obtenir une vue d’ensemble de ces nouvelles fonctionnalités et des étapes suivantes. 
 

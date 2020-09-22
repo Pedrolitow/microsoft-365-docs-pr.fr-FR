@@ -14,14 +14,17 @@ ms.assetid: e109077e-cc85-4c19-ae40-d218ac7d0548
 ms.custom:
 - seo-marvel-apr2020
 description: L’administrateur peut en savoir plus sur les options de configuration du flux de messagerie et du routage dans Exchange Online Protection (EOP).
-ms.openlocfilehash: c58981afaadf2c4083b6a6db99c74cf9544715c3
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: e1c821e3de8dd7dd18c192522bd18fd32a395dca
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827724"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200702"
 ---
 # <a name="mail-flow-in-eop"></a>Flux de messagerie dans EOP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Dans les organisations Microsoft 365 avec des boîtes aux lettres Exchange Online ou des organisations Exchange Online (EOP) autonomes sans boîtes aux lettres Exchange Online, tous les messages envoyés à votre organisation passent par EOP avant que les utilisateurs ne les voient. Vous disposez d’options sur la façon de router les messages qui transitent par EOP pour les traiter avant de les acheminer vers vos boîtes de réception.
 

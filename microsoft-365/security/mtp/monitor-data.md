@@ -15,14 +15,17 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 79113aa4097da26a3a12a9ed99b1c5a8b3ad3d81
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 861ee8a01f9fba7daeec7375ebb6f33ffcae1fcd
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46866742"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199816"
 ---
 # <a name="data-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Surveillance et création de rapports sur les données dans le centre de sécurité Microsoft 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 La catégorie **Données** permet de suivre l’activité des utilisateurs susceptible d’entraîner la divulgation non autorisée de données. Il s’agit de la réutilisation des rapports de stratégie DLP existants, ainsi qu’un rapport de correspondance de stratégie DLP tiers.
 

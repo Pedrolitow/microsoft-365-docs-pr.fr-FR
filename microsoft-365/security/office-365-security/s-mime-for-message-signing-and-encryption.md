@@ -15,14 +15,17 @@ search.appverid:
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 description: Les administrateurs peuvent en savoir plus sur l’utilisation de S/MIME (Secure/Multipurpose Internet Mail Extensions) dans Exchange Online pour chiffrer les messages électroniques et les signer numériquement.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ca865fa8ef658b4715d18e09fe9cbc1cffb201e6
-ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
+ms.openlocfilehash: 8dce3e3fa3d24e1773f51f96e19a58d8a3b2efce
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46845919"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200606"
 ---
 # <a name="smime-for-message-signing-and-encryption-in-exchange-online"></a>S/MIME pour la signature et le chiffrement des messages dans Exchange Online
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 S/MIME (Secure/Multipurpose Internet Mail Extensions) est une méthode largement acceptée (ou plus précisément, un protocole) pour l’envoi de messages chiffrés et signés numériquement. S/MIME vous permet de chiffrer les courriers électroniques et les signer numériquement. Lorsque vous utilisez S/MIME avec un message électronique, il permet aux personnes qui reçoivent ce message de s’assurer que ce qu’elles voient dans leur boîte de réception est le message exact démarré avec l’expéditeur. Elle permet également aux utilisateurs qui reçoivent des messages de s’assurer que le message provenait d’un expéditeur spécifique et non d’une personne prétendant être l’expéditeur. Pour ce faire, S/MIME fournit des services de sécurité de chiffrement tels que l'authentification, l'intégrité des messages et la non-répudiation de l'origine (à l'aide de signatures numériques). Elle contribue également à améliorer la confidentialité et la sécurité des données (à l’aide du chiffrement) pour la messagerie électronique. Pour en savoir plus sur l'histoire et l'architecture du protocole S/MIME dans le cadre de la messagerie, consultez la rubrique [Présentation du protocole S/MIME](https://docs.microsoft.com/previous-versions/tn-archive/aa995740(v=exchg.65)).
 

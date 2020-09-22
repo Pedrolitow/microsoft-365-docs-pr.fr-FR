@@ -18,14 +18,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Utilisez le nouveau tableau de bord de sécurité pour consulter l’état de protection contre les menaces d’Office 365, et afficher et agir sur les alertes de sécurité.
-ms.openlocfilehash: 7edfcfefc379aa30b7028097b21522d63cd26268
-ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
+ms.openlocfilehash: 1bef6d0496c39d5157bbc40893d2710e89d1c734
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434266"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200072"
 ---
 # <a name="security-dashboard"></a>Tableau de bord de sécurité
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 ## <a name="basic-functions-and-how-to-open-security-dashboard"></a>Fonctions de base et comment ouvrir le tableau de bord de sécurité
 
@@ -102,7 +105,7 @@ Par exemple, vous pouvez constater que les messages électroniques de hameçonna
 
 ## <a name="threat-investigation-and-response"></a>Examen et réponse contre les menaces
 
-Si l’abonnement de votre organisation comprend [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md), votre tableau de bord de sécurité comporte une section qui inclut des outils d’enquête et de réponse de menace avancés. Ces outils incluent [des fonctionnalités d’analyse et de réponse automatisées](automated-investigation-response-office.md). L’analyse et la réponse automatisées peuvent être utiles dans des scénarios tels que l' [adressage rapide des comptes d’utilisateurs compromis](address-compromised-users-quickly.md).
+Si l’abonnement de votre organisation comprend  [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md), votre tableau de bord de sécurité comporte une section qui inclut des outils d’enquête et de réponse de menace avancés. Ces outils incluent [des fonctionnalités d’analyse et de réponse automatisées](automated-investigation-response-office.md). L’analyse et la réponse automatisées peuvent être utiles dans des scénarios tels que l' [adressage rapide des comptes d’utilisateurs compromis](address-compromised-users-quickly.md).
 
 Pour en savoir plus, consultez la rubrique [prise en main de l’enquête et de la réponse automatisées (air) dans Office 365](office-365-air.md).
 

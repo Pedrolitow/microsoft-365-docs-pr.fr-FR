@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: aa4767deac30641e39880c2eeb001c2dc884540a
-ms.sourcegitcommit: dcbcd5ef278949c777059b0aa6db072e821f72dd
+ms.openlocfilehash: f7d00575a0a5757f0662c07e727d7166d571e2ca
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48173319"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201194"
 ---
 # <a name="run-your-microsoft-threat-protection-attack-simulations"></a>Exécuter vos simulations d’attaque de la protection contre les menaces Microsoft  
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **S’applique à :**
 - Protection Microsoft contre les menaces

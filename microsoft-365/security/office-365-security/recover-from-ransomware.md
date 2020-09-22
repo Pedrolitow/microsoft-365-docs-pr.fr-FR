@@ -13,14 +13,17 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs de Microsoft 365 peuvent découvrir comment effectuer une récupération suite à une attaque par ransomware.
-ms.openlocfilehash: 2f8e5f5deb18cadfaea7acc1cffe73abbc43010b
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: c362ffcbb83e8b0fb7ae89bbbf835165e23b8e83
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827832"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201958"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Récupération d’une attaque par ransomware dans Microsoft 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Même si vous avez toutes les précautions à prendre pour protéger votre organisation, vous pouvez toujours devenir victime d’une attaque par [ransomware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware) . Les ransomware sont de grandes entreprises et les attaques sont vérifiées de façon sophistiquée.
 
@@ -78,7 +81,7 @@ La restauration des fichiers dans OneDrive entreprise vous permet de restaurer l
 
 ## <a name="step-6-recover-deleted-email"></a>Étape 6 : récupérer les messages électroniques supprimés
 
-Dans le cas rare où le ransomware a supprimé tous vos courriers électroniques, vous pouvez probablement récupérer les éléments supprimés. Pour plus d’informations, consultez :
+Dans le cas rare où le ransomware a supprimé tous vos courriers électroniques, vous pouvez probablement récupérer les éléments supprimés. Si vous souhaitez en savoir plus, voir : 
 
 - [Récupérer des messages supprimés dans la boîte aux lettres d’un utilisateur](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
 

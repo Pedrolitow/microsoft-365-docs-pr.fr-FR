@@ -14,14 +14,17 @@ ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à exécuter un rapport de groupe de rôles d’administrateur dans Exchange Online Protection (EOP). Ce rapport enregistre les journaux lorsqu’un administrateur ajoute ou supprime des membres de groupes de rôles d’administrateur, EOP journalise chaque occurrence.
-ms.openlocfilehash: db1934c7865209d358d164ff5165bb23026589cc
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: f2f3e32a818825d14c02b2bbffdc136e82f83013
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827504"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200480"
 ---
 # <a name="run-an-administrator-role-group-report-in-standalone-eop"></a>Exécuter un rapport de groupe de rôles d’administrateur dans EOP autonome
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Dans les organisations Exchange Online Protection (EOP) autonomes sans boîtes aux lettres Exchange Online, lorsqu’un administrateur ajoute ou supprime des membres de groupes de rôles d’administration, le service journalise chaque occurrence. Pour plus d’informations sur les groupes de rôles dans la version autonome d’EOP, consultez la rubrique [Permissions in standalone EOP](feature-permissions-in-eop.md).
 

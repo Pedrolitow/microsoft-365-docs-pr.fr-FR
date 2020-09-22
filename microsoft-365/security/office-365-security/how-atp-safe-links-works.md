@@ -16,18 +16,24 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: La fonctionnalité liens fiables permet de vérifier le temps de cliquer sur les liens hypertexte dans les documents Office et dans les messages électroniques. Lisez cet article pour découvrir le fonctionnement des liens fiables ATP.
-ms.openlocfilehash: e79c44b91eb5de7564058b4dc50c94d2a4223f08
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 09357b20173e2609587137764737c8aba044190e
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046363"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201464"
 ---
 # <a name="how-atp-safe-links-works"></a>Fonctionnement des liens fiables PACM
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 > [!IMPORTANT] 
 > Pour que les liens sécurisés ATP Office 365 fonctionnent correctement, tous les services doivent être au même niveau de version.
          
-## <a name="how-atp-safe-links-works-with-urls-in-email"></a>Fonctionnement des liaisons approuvées ATP avec les URL dans les messages électroniques
+## <a name="how-atp-safe-links-works"></a>Fonctionnement des liens fiables PACM
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+ avec des URL dans le courrier électronique
 
 À un niveau élevé, voici le fonctionnement de la protection [des liens fiables ATP](atp-safe-links.md) pour les URL dans les messages électroniques (hébergé dans Office 365, pas en local) :
   
@@ -51,7 +57,10 @@ ms.locfileid: "44046363"
     
    - Si l’URL est jugée fiable, le site Web s’ouvre.
     
-## <a name="how-atp-safe-links-works-with-urls-in-office-documents"></a>Fonctionnement des liaisons approuvées ATP avec les URL des documents Office 
+## <a name="how-atp-safe-links-works"></a>Fonctionnement des liens fiables PACM
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+ avec des URL dans des documents Office 
 
 À un niveau élevé, voici le mode de protection [des liens fiables ATP](atp-safe-links.md) pour les URL dans les applications Microsoft 365 pour les applications Enterprise Premium (versions actuelles de Word, Excel et PowerPoint sur Windows, Mac ou dans un navigateur, les applications Office sur les appareils iOS ou Android, Visio sur Windows, OneNote dans un navigateur) :
   

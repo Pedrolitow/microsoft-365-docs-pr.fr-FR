@@ -14,14 +14,17 @@ ms.collection: M365-security-compliance.
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
-ms.openlocfilehash: 81ad3ab0d3bc20a49128fa6ed45ff62195b32bc7
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: f7bcfa4f08bee51408de33964f1dfd1e1db3bd33
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47963854"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199744"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-threat-protection"></a>Configurer les fonctionnalités d’analyse et de réponse automatisées dans Microsoft Threat Protection
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 La protection de Microsoft contre les menaces comprend de puissantes fonctionnalités d’analyse [et de réponse automatisées](mtp-autoir.md) qui peuvent enregistrer les opérations de sécurité de votre équipe. Grâce à la réparation spontanée, ces fonctionnalités imitent les étapes qu’un analyste de la sécurité doit entreprendre pour examiner et répondre aux menaces, uniquement plus rapidement et avec plus de possibilités d’effectuer une montée en taille. Cet article explique comment configurer une enquête et une réponse automatisées dans Microsoft Threat Protection.
 

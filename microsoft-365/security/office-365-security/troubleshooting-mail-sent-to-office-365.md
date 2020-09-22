@@ -18,14 +18,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Cet article fournit des informations sur la résolution des problèmes liés à l’envoi de messages électroniques à des boîtes de réception dans Microsoft 365 & meilleures pratiques pour le publipostage vers les clients Microsoft 365.
-ms.openlocfilehash: 4243f46746cb21425fc2dc7493c69818f095e71f
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 52b4bb333a92dcaa21f45977b3d59a96053a69c2
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307578"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201730"
 ---
 # <a name="troubleshooting-mail-sent-to-microsoft-365"></a>Résolution des problèmes de courrier envoyé à Microsoft 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Cet article fournit des informations de dépannage pour les expéditeurs qui rencontrent des problèmes lors de la tentative d’envoi de messages électroniques à des boîtes de réception dans Microsoft 365 et les meilleures pratiques pour le publipostage à des clients.
 

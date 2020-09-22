@@ -20,14 +20,17 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.date: 09/16/2020
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 205809bac14cc82e850ea1cbc0349256432bfe68
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: 232d19cb0bcb6a2f91c1bdad15d842ec7396499c
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47962584"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201050"
 ---
 # <a name="remediation-actions-following-automated-investigations-in-microsoft-threat-protection"></a>Actions de correction suite à des enquêtes automatisées dans Microsoft Threat Protection
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **S’applique à :**
 - Protection Microsoft contre les menaces
@@ -65,6 +68,6 @@ Le tableau suivant répertorie les verdicts et résultats possibles :
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-- [Visiter le centre de notifications](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center)
+- [Visiter le Centre de notifications](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center)
 - [Approuver ou refuser des actions en attente](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir-actions)
 - [Gérer les faux positifs/négatifs dans les fonctionnalités d’analyse et de réponse automatisées](mtp-autoir-report-false-positives-negatives.md)

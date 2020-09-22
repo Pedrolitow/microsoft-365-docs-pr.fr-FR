@@ -16,14 +16,17 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent découvrir les options de notification de courrier indésirable, non légitime et de hameçonnage dans Outlook sur le Web (Outlook Web App) dans Exchange Online et comment désactiver ces options de création de rapports pour les utilisateurs.
-ms.openlocfilehash: 947f9bb9c1c686b549d83b27c262e86eda0d5008
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 75be22d6ec38ca3c8d11836ea28c7af74b93f14c
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826540"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201242"
 ---
 # <a name="report-junk-and-phishing-email-in-outlook-on-the-web-in-exchange-online"></a>Signaler le courrier indésirable et de hameçonnage dans Outlook sur le Web dans Exchange Online
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online, vous pouvez utiliser les options de création de rapports intégrées dans Outlook sur le Web (anciennement Outlook Web App) pour soumettre des faux positifs (courrier électronique marqué comme courrier indésirable), des faux négatifs (courrier incorrect autorisé) et des messages de hameçonnage vers Exchange Online Protection (EOP).
 

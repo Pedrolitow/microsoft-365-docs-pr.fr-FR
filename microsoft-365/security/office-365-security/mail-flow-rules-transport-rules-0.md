@@ -12,14 +12,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: Vous pouvez utiliser des règles de flux de messagerie (règles de transport) pour identifier et effectuer des actions sur les messages qui transitent par votre organisation.
-ms.openlocfilehash: ed17ac62009f5e766772095985441fad2367edf4
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: dba4771d575f0155e4ca1fc994d8467e496e5777
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827700"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201734"
 ---
 # <a name="mail-flow-rules-transport-rules-in-standalone-eop"></a>Règles de flux de courrier (règles de transport) dans EOP autonome
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Dans les organisations Exchange Online (EOP) autonomes sans boîtes aux lettres Exchange Online, vous pouvez utiliser des règles de flux de messagerie (également appelées règles de transport) pour identifier et effectuer des actions sur les messages qui transitent par votre organisation.
 

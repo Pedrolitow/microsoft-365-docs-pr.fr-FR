@@ -19,14 +19,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur l’usurpation d’identité dans Exchange Online Protection (EOP), où vous pouvez autoriser ou bloquer des expéditeurs usurpés spécifiques.
-ms.openlocfilehash: 66cfc419c3e2f3a5dd8ad45cdb9fe651b613679b
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 86771397f0175d389a69c1008e0ac5471697afc5
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826576"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199600"
 ---
 # <a name="configure-spoof-intelligence-in-eop"></a>Configurer l’intelligence des usurpations d’identité dans EOP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection (EOP) autonomes sans boîte aux lettres Exchange Online, les messages électroniques entrants sont automatiquement protégés contre l’usurpation par EOP au 1er octobre 2018. EOP utilise l’intelligence d’usurpation d’identité dans le cadre de la protection globale de votre organisation contre le hameçonnage. Pour plus d’informations, consultez la rubrique [protection contre l’usurpation d’adresses dans EOP](anti-spoofing-protection.md).
 

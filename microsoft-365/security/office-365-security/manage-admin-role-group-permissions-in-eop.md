@@ -12,14 +12,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: Les administrateurs peuvent apprendre à attribuer ou supprimer des autorisations dans le centre d’administration Exchange dans Exchange Online Protection.
-ms.openlocfilehash: 8d452eb85d59bbe82cc6685d652617bc857c1ddf
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: fb1e0979b77c38d852f35817e01135af888eac68
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825688"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201900"
 ---
 # <a name="manage-role-groups-in-standalone-eop"></a>Gérer les groupes de rôles dans une application EOP autonome
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Dans les organisations Exchange Online Protection (EOP) autonomes sans boîtes aux lettres Exchange Online, vous pouvez utiliser le centre d’administration Exchange pour ajouter des utilisateurs à des groupes de rôles. L’ajout d’un utilisateur à un groupe de rôles donne à l’utilisateur des autorisations pour effectuer des tâches d’administration spécifiques. Vous pouvez également supprimer des utilisateurs des groupes de rôles.
 
