@@ -15,14 +15,17 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Pendant et après une enquête automatisée dans Microsoft 365, vous pouvez afficher les résultats et les résultats clés.
-ms.openlocfilehash: 057dcf5e6f33c789ecfb47c7e3dfb49f0e2548fc
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: 6137edf741dc2ef21ec4e046b1985dd3f85b5720
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656836"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197690"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Détails et résultats d’une enquête automatisée dans Microsoft 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Lorsqu’une [enquête automatisée](office-365-air.md) se produit dans [Office 365 protection avancée contre les menaces](office-365-atp.md), des informations détaillées sur cette enquête sont disponibles pendant et après le processus d’enquête automatisé. Si vous disposez des autorisations nécessaires, vous pouvez afficher ces détails dans une vue Détails de l'examen. La vue Détails de l’examen vous fournit l’État à jour et la possibilité d’approuver les actions en attente.
 
@@ -32,7 +35,7 @@ L’état d’enquête indique la progression de l’analyse et des actions. Lor
 
 ****
 
-|État|Signification|
+|Statut|Signification|
 |---|---|
 |Démarrage| L’enquête a été déclenchée et attend de démarrer.|
 |En cours d’exécution| Le processus d’enquête a commencé et est en cours d’exécution. Cet État se produit également lorsque les [actions en attente](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions) sont approuvées.|
@@ -51,7 +54,7 @@ L’état d’enquête indique la progression de l’analyse et des actions. Lor
 
 1. Accédez au centre de sécurité & conformité ( [https://protection.office.com](https://protection.office.com) ) et connectez-vous.
 
-2. Effectuez l’une des opérations suivantes :
+2. Effectuez l'une des opérations suivantes :
 
     - Accédez au tableau de bord **gestion des menaces**  >  **Dashboard**. Cela vous amène au [tableau de bord de sécurité](security-dashboard.md). Vos widgets d’AIR s’affichent dans la partie supérieure du [tableau de bord de sécurité](security-dashboard.md). Sélectionnez un widget, par exemple, **Résumé des enquêtes**.
 
@@ -174,7 +177,7 @@ Vous pouvez :
 
 Sous l’onglet **utilisateurs** , vous pouvez voir tous les utilisateurs identifiés dans le cadre de l’enquête. Les comptes d’utilisateur apparaissent dans l’enquête lorsqu’il existe un événement ou une indication que ces comptes d’utilisateur peuvent être affectés ou compromis.
 
-Par exemple, dans l’image suivante, AIR a identifié des indicateurs de compromission et des anomalies en fonction d’une nouvelle règle de boîte de réception créée. Des détails supplémentaires (preuve) de l’enquête sont disponibles via des vues détaillées dans cet onglet. les indicateurs de compromis et d’anomalies peuvent également inclure des détections d’anomalies dans la [sécurité des applications Cloud de Microsoft](https://docs.microsoft.com/cloud-app-security).
+Par exemple, dans l’image suivante, AIR a identifié des indicateurs de compromission et des anomalies en fonction d’une nouvelle règle de boîte de réception créée. Des détails supplémentaires (preuve) de l’enquête sont disponibles par le biais d’affichages détaillés au sein de cet onglet. Des indicateurs de compromis et des anomalies peuvent également inclure des détections d’anomalies à partir de la [sécurité des applications Cloud de Microsoft](https://docs.microsoft.com/cloud-app-security).
 
 ![Page des utilisateurs de l’enquête aérienne](../../media/air-investigationuserspage.png)
 

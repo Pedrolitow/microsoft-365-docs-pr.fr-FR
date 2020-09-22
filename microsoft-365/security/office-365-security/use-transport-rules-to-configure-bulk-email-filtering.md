@@ -16,14 +16,17 @@ ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à utiliser des règles de flux de messagerie (règles de transport) pour identifier et filtrer les messages en masse (courrier gris) dans Exchange Online Protection (EOP).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 62db73ea917139d81a29569d5b452637fd053c92
-ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
+ms.openlocfilehash: c6a8ad5dd2752f86c0ff9ec96dafe621804b4856
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47775194"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197302"
 ---
 # <a name="use-mail-flow-rules-to-filter-bulk-email-in-eop"></a>Utiliser des règles de flux de courrier pour filtrer les messages électroniques en bloc dans EOP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection (EOP) autonomes sans boîte aux lettres Exchange Online, EOP utilise des stratégies de blocage du courrier indésirable (également appelées stratégies de filtrage du courrier indésirable) pour analyser les messages entrants pour le courrier indésirable et le courrier en nombre (également appelé courrier gris). Si vous souhaitez en savoir plus, consultez l’article [Configurer les stratégies anti-courrier indésirable dans EOP](configure-your-spam-filter-policies.md).
 

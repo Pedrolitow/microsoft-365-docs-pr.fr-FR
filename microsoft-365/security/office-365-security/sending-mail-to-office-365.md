@@ -18,14 +18,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Apprenez en tant qu’expéditeur externe, comment pouvez-vous augmenter la capacité de remise du courrier électronique aux utilisateurs dans Microsoft 365. Découvrez également comment signaler les tentatives de courrier indésirable & les tentatives de hameçonnage en tant qu’utilisateur externe.
-ms.openlocfilehash: f20d5d64bccb69db47c159a8166fa3532b51e3db
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 0c0a981d12fa5b8159789a69597f83eb15d9b194
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825184"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196796"
 ---
 # <a name="sending-mail-to-microsoft-365"></a>Envoi de messages électroniques à Microsoft 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Ces articles aident les expéditeurs externes à améliorer leur réputation et à proposer des courriers électroniques aux utilisateurs dans Microsoft 365. Ils fournissent également des informations sur la façon dont vous pouvez signaler des tentatives de courrier indésirable et de hameçonnage même si vous n’êtes pas un utilisateur de Microsoft 365.
 

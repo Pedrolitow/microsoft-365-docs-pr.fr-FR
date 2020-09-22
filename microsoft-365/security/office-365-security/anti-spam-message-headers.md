@@ -16,14 +16,17 @@ ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent en savoir plus sur les champs d’en-tête ajoutés aux messages par Exchange Online Protection (EOP). Ces champs d’en-tête fournissent des informations sur le message et la manière dont il a été traité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a5423ccf658843ab22f30dcef99fe0a0c34d512f
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 71cefb4a26751b92dd8b5e5a308bbc18b1a5c221
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46867186"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197500"
 ---
 # <a name="anti-spam-message-headers-in-microsoft-365"></a>En-têtes de message anti-courrier indésirable dans Microsoft 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Dans toutes les organisations Microsoft 365, Exchange Online Protection (EOP) analyse tous les messages entrants à la recherche de courrier indésirable, de programmes malveillants et d’autres menaces. Les résultats de ces analyses sont ajoutés aux champs d’en-tête suivants dans les messages :
 

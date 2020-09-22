@@ -14,14 +14,17 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 40d0ffa779b0ab13a0bdd887b12d69c20892662d
-ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
+ms.openlocfilehash: e518f91b264680e3d356b1e6158f4b9740ed52a2
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47399348"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196094"
 ---
 # <a name="top-scoring-in-industry-tests"></a>Score le plus élevé dans les tests d’industrie
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 Les technologies de [protection de Microsoft contre les menaces](https://www.microsoft.com/security/business/threat-protection/integrated-threat-protection) réalisent régulièrement des scores élevés dans des tests indépendants, ce qui illustre la puissance de ses fonctionnalités de protection contre les menaces d’entreprise. Microsoft a pour objectif d’être transparent à propos de ces notes d’examens. Cette page résume les résultats et fournit une analyse.
 

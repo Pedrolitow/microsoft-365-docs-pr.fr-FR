@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-infoprotection
 ms.custom: ''
 description: Déterminez la réglementation relative à la confidentialité des données, les scénarios pertinents, votre disponibilité et les types d’informations sensibles qui se trouvent dans votre environnement Microsoft 365.
-ms.openlocfilehash: ba47a43c7af8d97af852e0a3ef417cdc1dbab46a
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 237039bfd853c0f58276926f29bda26981df6b8c
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46521372"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195746"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>Évaluer les risques de confidentialité des données et identifier les éléments sensibles avec Microsoft 365
 
@@ -59,7 +59,7 @@ Pour référence ultérieure dans les Articles de cette solution globale, ce tab
 
 | Réglementations | Article/section | Quiz | Catégories de contrôle technique applicables |
 |:-------|:-----|:-------|:-------|
-| RGPD | Article 5 (1) (f) | Les données personnelles doivent être traitées de manière à garantir une sécurité appropriée des données personnelles, y compris la protection contre le traitement non autorisé ou illégal et contre la perte accidentelle, la destruction ou les dégâts, à l’aide de mesures techniques ou organisationnelles appropriées (« intégrité et confidentialité ».  |  Tous les <br> Identité <br> Device <br> Protection contre les menaces <br> Protéger les informations <br> Gestion des informations <br> Découvrir et répondre |
+| RGPD | Article 5 (1) (f) | Les données personnelles doivent être traitées de manière à garantir une sécurité appropriée des données personnelles, y compris la protection contre le traitement non autorisé ou illégal et contre la perte accidentelle, la destruction ou les dégâts, à l’aide de mesures techniques ou organisationnelles appropriées (« intégrité et confidentialité ».  |  Tous les <br> Identité <br> Appareil <br> Protection contre les menaces <br> Protéger les informations <br> Gestion des informations <br> Découvrir et répondre |
 |  | Article (32) (1) (a) | Tenant compte de l’état de la technique, des coûts de mise en œuvre et de la nature, de l’étendue, du contexte et des objectifs du traitement, ainsi que des risques de probabilité et de gravité variables pour les droits et les libertés des personnes physiques, le responsable du traitement et le transformateur mettent en œuvre les mesures techniques et organisationnelles appropriées pour garantir un niveau de sécurité approprié pour le risque. , y compris, entre autres, selon les besoins : (a) l’pseudonymage et le chiffrement des données personnelles. | Protéger les informations |
 |  | Article (13) (2) (a) | "... le contrôleur doit, au moment de l’obtention des données personnelles, fournir aux personnes concernées les informations supplémentaires suivantes nécessaires pour assurer un traitement équitable et transparent : (a) la période pendant laquelle les données personnelles seront stockées ou, si cela n’est pas possible, les critères utilisés pour déterminer cette période. | Gestion des informations |
 |  | Article (15) (1) (e) | La personne concernée a le droit d’obtenir de la part du responsable de la confirmation du contrôleur si les données personnelles le concernant sont traitées, et, si c’est le cas, l’accès aux données personnelles et les informations suivantes : (e) l’existence du droit de demander la rectification ou l’effacement des données personnelles ou la limitation du traitement des données personnelles concernant la personne concernée ou l’objet de ce traitement. | Découvrir et répondre |
@@ -78,7 +78,7 @@ Pour référence ultérieure dans les Articles de cette solution globale, ce tab
 |||||
 
 >[!Important]
->Il ne s’agit pas d’une liste exhaustive. Consultez le [Gestionnaire de conformité](../compliance/compliance-manager-overview.md) ou votre conseiller juridique ou conformité pour plus d’informations sur l’applicabilité des sections citées aux catégories de contrôles techniques répertoriées.
+>Il ne s’agit pas d’une liste exhaustive. Consultez le [Gestionnaire de conformité](../compliance/compliance-manager.md) ou votre conseiller juridique ou conformité pour plus d’informations sur l’applicabilité des sections citées aux catégories de contrôles techniques répertoriées.
 >
 
 ## <a name="knowing-your-data"></a>Connaître vos données
@@ -168,7 +168,7 @@ Comprendre votre exposition aux risques et le règlement sur la confidentialité
 
 Si vous n’avez pas de données personnelles de la part des utilisateurs dans votre environnement Microsoft 365 ou si elles sont confinées à certaines parties de l’environnement et que la nécessité d’un contrôle technique est déterminée par le fait qu’il existe des données de type consommateur, il se peut que le contrôle technique ne doive être utilisé que dans des parties à haut risque de l’environnement, pas partout.
 
-Bien qu’une organisation externe ou une recommandation de jeu de contrôles standard, comme le score de conformité dans Microsoft 365, peut vous aider à informer votre stratégie de contrôle, votre choix d’implémentation doit être piloté par la sensibilisation aux stocks de données pour quantifier votre exposition aux risques réels.
+Tant qu’une organisation externe ou une recommandation de jeu de contrôles standard, par exemple du gestionnaire de conformité dans Microsoft 365, peut vous aider à informer votre stratégie de contrôle, votre choix d’implémentation doit être piloté par la sensibilisation aux stocks de données pour quantifier votre exposition aux risques réels.
 
 La plupart des organisations auront une certaine exposition à l’un des scénarios ci-dessus. Une approche holistique de l’évaluation est importante.
 
@@ -214,7 +214,7 @@ Pour plus d’informations, consultez les articles suivants :
 - [Types d’informations sensibles personnalisés](../compliance/custom-sensitive-info-types.md)
 - [Créer un type d’informations sensibles personnalisé dans le Centre de Conformité et Sécurité](../compliance/create-a-custom-sensitive-information-type.md)
 - [Créer un type d’informations sensibles personnalisé dans l’interface PowerShell du Centre de sécurité et conformité](../compliance/create-a-custom-sensitive-information-type-in-scc-powershell.md)
-- [Créer des types d’informations sensibles personnalisés avec une classification des données exacte](../compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+- [Créez des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.](../compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
 
 ### <a name="content-explorer"></a>Explorateur de contenu
 

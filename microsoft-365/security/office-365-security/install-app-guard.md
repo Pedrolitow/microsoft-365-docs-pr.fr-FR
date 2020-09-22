@@ -15,14 +15,17 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Obtenez la dernière version de l’isolation matérielle. Empêcher les attaques actuelles et émergentes, telles que les attaques ou les liens malveillants, de perturber la productivité des employés et la sécurité de l’entreprise.
-ms.openlocfilehash: 32a8705255bf4ae4f0e3678de9cd812b64107cfd
-ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
+ms.openlocfilehash: 3a20649338bbcd58ad86f70142c2bd9f1c2fd948
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47405540"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197572"
 ---
 # <a name="application-guard-for-office-public-preview-for-admins"></a>Application Guard pour Office (préversion publique) pour les administrateurs
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 
 **S’applique à :** Word, Excel et PowerPoint pour Microsoft 365, Windows 10 entreprise

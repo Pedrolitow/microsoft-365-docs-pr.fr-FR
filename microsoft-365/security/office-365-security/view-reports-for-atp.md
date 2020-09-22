@@ -18,14 +18,17 @@ ms.collection:
 - M365-security-compliance
 description: Recherchez et utilisez des rapports pour Office 365 protection avancée contre les menaces dans le centre de sécurité &amp; conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dc68df40e6b7b576644be607697d7b1ed0a33660
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 90da02c8aa3d50f62bdf4be8c466962da828b23d
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653532"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196584"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Afficher les rapports pour Office 365 protection avancée contre les menaces
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Les organisations Office 365 Advanced Threat Protection (ATP) (par exemple, les abonnements Microsoft 365 E5 ou les modules complémentaires ATP plan 1 ou ATP plan 2) contiennent un grand nombre de rapports liés à la sécurité. Si vous disposez des [autorisations nécessaires](#what-permissions-are-needed-to-view-the-atp-reports), vous pouvez afficher ces rapports dans le centre de sécurité & conformité en accédant au **Reports** \> **tableau de bord**rapports. Pour accéder directement au tableau de bord rapports, ouvrez <https://protection.office.com/insightdashboard> .
 
@@ -252,7 +255,7 @@ Le rapport **URL protection contre les menaces** comporte deux vues agrégées q
 Si vous cliquez sur **afficher les détails**de la table, le rapport fournit une vue quasi en temps réel de tous les clics effectués au sein de l’organisation pendant les 7 derniers jours avec les détails suivants :
 
 - **Cliquez sur heure**
-- **Utilisateur**
+- **User**
 - **URL**
 - **Action**
 - **App**

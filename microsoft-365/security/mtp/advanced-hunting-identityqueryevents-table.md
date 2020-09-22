@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: b5238ca32cdf9050391ef69bae3be0914b93f452
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: 3b2459d0d90f6160bcbac7efbb5c0cc0683ae8c2
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46797803"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196808"
 ---
 # <a name="identityqueryevents"></a>IdentityQueryEvents
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **S’applique à :**
 - Protection Microsoft contre les menaces
@@ -62,7 +65,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `ReportId` | long | Identificateur unique de l’événement |
 | `AdditionalFields` | string | Informations supplémentaires sur l’entité ou l’événement |
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)
