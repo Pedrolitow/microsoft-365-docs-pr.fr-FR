@@ -17,19 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: f2ba1b63b3c1a986b3e811b3495bb4de85f93223
-ms.sourcegitcommit: a3c2c737995088c1bad3b12ab401a7ef242b0272
+ms.openlocfilehash: d6e9dbc214cdbb7aaf6bf8922ca4eaf986f8a91c
+ms.sourcegitcommit: dcbcd5ef278949c777059b0aa6db072e821f72dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47956401"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48173283"
 ---
 # <a name="closing-and-summarizing-your-microsoft-threat-protection-pilot"></a>Fermeture et synthèse de votre programme pilote de protection contre les menaces Microsoft  
 
 **S’applique à :**
 - Protection Microsoft contre les menaces
 
-Vous venez de simuler une attaque avancée en mémoire uniquement qui a exécuté du code à distance sur un contrôleur de domaine. Vous avez vu comment Microsoft Defender ATP et Azure ATP détectent et signalent les activités malveillantes de Stealthy. Vous avez également vu comment les alertes provenant de sources différentes sont livrées avec d’autres informations contextuelles en un seul incident dans le portail de protection de Microsoft Threat, ce qui permet aux analystes SOC d’examiner et de prendre les mesures nécessaires. Vous avez également créé une requête de chasse avancée qui identifie les messages électroniques entrants à l’endroit où l’utilisateur a ouvert ou enregistré la pièce jointe et a créé une détection basée sur cette requête.
+Vous venez de simuler une attaque avancée en mémoire uniquement qui a exécuté du code à distance sur un contrôleur de domaine. Vous avez vu comment Microsoft Defender ATP et Azure ATP détectent et signalent les activités malveillantes de Stealthy. Vous avez également vu comment les alertes provenant de sources différentes sont livrées avec d’autres informations contextuelles en un seul incident dans le portail du centre de sécurité Microsoft 365, ce qui permet aux analystes SOC d’examiner et de prendre les mesures nécessaires. Vous avez également créé une requête de chasse avancée qui identifie les messages électroniques entrants à l’endroit où l’utilisateur a ouvert ou enregistré la pièce jointe et a créé une détection basée sur cette requête.
 
 Vous avez atteint la fin du processus une fois tous les tests terminés.
 
