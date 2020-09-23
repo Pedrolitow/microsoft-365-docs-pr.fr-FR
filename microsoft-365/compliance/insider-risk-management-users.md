@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 9a5eb61d6009dd5a7ab2f66eb3ef712196368010
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 224221950104b5dee6a6e8f179db34ee6fad014e
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416728"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208770"
 ---
 # <a name="insider-risk-management-users-dashboard"></a>Tableau de bord des utilisateurs de gestion des risques Insiders
 
@@ -45,7 +45,7 @@ Le **tableau de bord utilisateurs** affiche automatiquement tous les utilisateur
 
 Le **tableau de bord utilisateurs** vous permet d’ajouter temporairement des utilisateurs à une stratégie de gestion des risques initiés existante après un événement inhabituel en dehors du flux de travail de gestion des risques Insiders. L’ajout temporaire d’utilisateurs est également un moyen d’ajouter des utilisateurs à une stratégie de gestion des risques inSided pour tester la stratégie, même si un connecteur requis n’est pas configuré.
 
-Lorsqu’un utilisateur est ajouté manuellement à une stratégie, les activités de l’utilisateur pour les 90 jours précédents sont évaluées et ajoutées à la chronologie des activités de l' **utilisateur** . Par exemple, un utilisateur qui n’est pas actuellement dans le cadre d’une stratégie de risque initié par l’utilisateur a communiqué des activités de fuite de données au service juridique de votre organisation. Le service juridique recommande de configurer de nouvelles exigences de surveillance à court terme pour l’utilisateur. Vous pouvez affecter temporairement l’utilisateur à votre stratégie de *fuite de données* pour une durée définie (fenêtre d’activation). Tous les utilisateurs ajoutés temporairement sont affichés dans le **tableau de bord utilisateurs** car les exigences d’indicateur de déclenchement sont annulées.
+Lorsqu’un utilisateur est ajouté manuellement à une stratégie, les activités de l’utilisateur pour les 90 jours précédents sont évaluées et ajoutées à la chronologie des activités de l' **utilisateur** . Par exemple, vous avez un utilisateur qui n’est pas actuellement inclus dans une stratégie de risque d’initié et que l’utilisateur a communiqué des activités de fuites de données au service juridique de votre organisation. Le service juridique recommande de configurer de nouvelles exigences de surveillance à court terme pour l’utilisateur. Vous pouvez affecter temporairement l’utilisateur à votre stratégie de *fuite de données* pour une durée définie (fenêtre d’activation). Tous les utilisateurs ajoutés temporairement sont affichés dans le **tableau de bord utilisateurs** car les exigences d’indicateur de déclenchement sont annulées.
 
 >[!NOTE]
 >L’affichage des nouveaux utilisateurs ajoutés manuellement dans le **tableau de bord utilisateurs**peut prendre plusieurs heures. L’affichage des activités pour les 90 jours précédents pour ces utilisateurs peut prendre jusqu’à 24 heures. Pour afficher les activités des utilisateurs ajoutés manuellement, sélectionnez l’utilisateur dans le **tableau de bord utilisateurs** et ouvrez l’onglet **activité utilisateur** dans le volet d’informations.
@@ -104,3 +104,17 @@ Procédez comme suit pour ajouter un utilisateur à une stratégie d’Insider e
 
 >[!NOTE]
 >L’affichage des nouveaux utilisateurs ajoutés manuellement dans le **tableau de bord utilisateurs**peut prendre plusieurs heures. L’affichage des activités pour les 90 jours précédents pour ces utilisateurs peut prendre jusqu’à 24 heures. Pour afficher les activités des utilisateurs ajoutés manuellement, sélectionnez l’utilisateur dans le **tableau de bord utilisateurs** et ouvrez l’onglet **activité utilisateur** dans le volet d’informations.
+
+## <a name="run-automated-tasks-with-power-automate-flows-for-a-user"></a>Exécuter des tâches automatisées avec Power automate des flux pour un utilisateur
+
+À l’aide des flux recommandés d’automate d’énergie, les investigateurs de risque et les analystes peuvent rapidement prendre les mesures suivantes :
+
+- Avertir les utilisateurs lorsqu’ils sont ajoutés à une stratégie de risque Insider
+
+Pour exécuter, gérer ou créer des flux automatiques d’alimentation pour un utilisateur de gestion des risques inSided :
+
+1. Sélectionnez **automatiser** dans la barre d’outils action de l’utilisateur.
+2. Choisissez le flux d’alimentation automatique à exécuter, puis sélectionnez **exécuter le flux**.
+3. Une fois le flux terminé, sélectionnez **terminé**.
+
+Pour en savoir plus sur la gestion de l’alimentation automatisée des flux pour la gestion des risques initiés, voir [Getting Started with Insider Risk Management Settings](insider-risk-management-settings.md#power-automate-flows-preview).

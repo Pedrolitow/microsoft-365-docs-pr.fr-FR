@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 8667c625de4c83c98efd8f1cf20f3db57ed0d4c5
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 2ba67f833a7a4ee14b53adf38db786bb344a40bb
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416558"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208850"
 ---
 # <a name="insider-risk-management-cases"></a>Dossiers de gestion des risques initiés
 
@@ -127,6 +127,15 @@ L’onglet **Activité des utilisateurs** est l’un des outils les plus perform
 4. **Chronologie**de l’activité des risques : la chronologie complète de toutes les alertes de risque associées à l’incident est répertoriée, y compris tous les détails disponibles dans la bulle d’alerte correspondante.
 5. **Actions de cas**: les options de résolution de l’incident figurent dans la barre d’outils action de l’incident. Vous pouvez résoudre un cas, envoyer une notification par courrier électronique à l’utilisateur ou escalader le cas à une enquête sur les données ou les utilisateurs.
 
+### <a name="activity-explorer-preview"></a>Explorateur d’activités (aperçu)
+
+>[!IMPORTANT]
+>L’onglet Activity Explorer est disponible dans la zone de gestion des cas pour les utilisateurs qui déclenchent des événements une fois que cette fonctionnalité est disponible dans votre organisation.
+
+L’onglet **Explorateur d’activités** permet aux analystes et aux enquêteurs de vérifier les détails de l’activité associée à des alertes de risque. Par exemple, dans le cadre des actions de gestion des dossiers, les investigateurs et les analystes peuvent avoir besoin d’examiner toutes les activités de risque associées à l’incident pour obtenir plus de détails. Avec l' **Explorateur d’activités**, les relecteurs peuvent rapidement consulter une chronologie de l’activité dangereuse détectée et identifier et filtrer toutes les activités liées aux risques associées aux alertes.
+
+Pour plus d’informations sur l’Explorateur d’activités, consultez l’article alertes sur la [gestion des risques Insiders](insider-risk-management-alerts.md#activity-explorer-preview) .
+
 ### <a name="content-explorer"></a>Explorateur de contenu
 
 L’onglet **Explorateur de contenu** permet aux analystes et aux enquêteurs de vérifier les copies de tous les fichiers et messages électroniques associés à des alertes de risque. Par exemple, si une alerte est créée lorsqu’un utilisateur télécharge des centaines de fichiers à partir de SharePoint Online et que l’activité déclenche une alerte de stratégie, tous les fichiers téléchargés pour l’alerte sont capturés et copiés dans le cas de la gestion des risques initiaux à partir des sources de stockage d’origine.
@@ -196,15 +205,42 @@ Pour transmettre un incident à une enquête utilisateur :
 1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com), accédez à **gestion des risques internes** et sélectionnez l’onglet **incidents** .
 2. Sélectionnez un cas, puis sélectionnez le bouton **escalader pour l’enquête** sur la barre d’outils action de cas.
 3. Dans la boîte de dialogue **escalade de l’enquête** , entrez un nom pour la nouvelle enquête utilisateur. Si nécessaire, entrez des remarques sur le cas et sélectionnez **escalade**.
+4. Examinez les champs notice et mettez à jour le cas échéant. Les valeurs entrées ici remplaceront les valeurs du modèle.
 5. Sélectionnez **confirmer** pour créer le cas d’enquête utilisateur ou cliquez sur **Annuler** pour fermer la boîte de dialogue sans créer de cas d’enquête utilisateur.
 
 Une fois que le cas de gestion des risques inSided a été remonté vers un nouveau cas d’enquête utilisateur, vous pouvez passer en revue le nouveau cas dans la zone avancé de **découverte électronique**  >  **Advanced** dans le centre de conformité Microsoft 365.
 
-### <a name="share-a-case"></a>Partager un cas
+### <a name="run-automated-tasks-with-power-automate-flows-for-the-case"></a>Exécuter des tâches automatisées avec Power automate des flux pour le cas
 
-Le partage d’un dossier de gestion des risques inSided permet aux investigateurs et examens de collaborer facilement avec les autres parties prenantes en matière de conformité de votre organisation. Vous pouvez rapidement partager un lien vers un cas d’Insider de gestion des risques avec des parties prenantes externes à partir du domaine de gestion des cas. Pour accéder au cas de gestion des risques inSided à partir du lien, les parties prenantes doivent être incluses dans n’importe quel groupe de rôles de gestion des risques Insiders.
+À l’aide des flux recommandés d’automate d’énergie, les investigateurs de risque et les analystes peuvent rapidement prendre les mesures suivantes :
 
-Les options de partage suivantes sont disponibles : 
+- Demander des informations à des ressources RH ou professionnelles concernant un utilisateur en cas de risque d’Insider
+- Avertir le gestionnaire lorsqu’un utilisateur a une alerte de risque d’Insider
+- Ajouter un rappel de calendrier pour le suivi d’un cas d’Insider
+
+Pour exécuter, gérer ou créer des flux automatiques d’alimentation pour un cas de gestion des risques inSided :
+
+1. Sélectionnez **automatiser** dans la barre d’outils action de cas. 
+2. Choisissez le flux d’alimentation automatique à exécuter, puis sélectionnez **exécuter le flux**. 
+3. Une fois le flux terminé, sélectionnez **terminé**.
+
+Pour en savoir plus sur la gestion de l’alimentation automatisée des flux pour la gestion des risques initiés, voir [Getting Started with Insider Risk Management Settings](insider-risk-management-settings.md#power-automate-flows-preview).
+
+### <a name="view-or-create-a-microsoft-teams-team-for-the-case"></a>Afficher ou créer une équipe Microsoft teams pour le cas
+
+Lorsque l’intégration de Microsoft teams pour la gestion des risques initiaux est activée dans les paramètres, une équipe Microsoft teams est créée automatiquement chaque fois qu’une alerte est confirmée et une demande de devis est créée. Les enquêteurs et analystes peuvent ouvrir rapidement Microsoft teams et accéder directement à l’équipe pour un cas en sélectionnant l’option **afficher l’équipe Microsoft teams** dans la barre d’outils action de cas.
+
+Pour les cas ouverts avant l’activation de l’intégration de Microsoft Team, les investigateurs de risque et les analystes peuvent créer une nouvelle équipe Microsoft teams pour un cas en sélectionnant **créer une équipe Microsoft teams** dans la barre d’outils action de cas.
+
+Lorsqu’un cas est résolu, l’équipe Microsoft associée est automatiquement archivée (masquée et mise en lecture seule).
+
+Pour en savoir plus sur Microsoft teams pour la gestion des risques initiaux, voir [Getting Started with Insider Risk Management Settings](insider-risk-management-settings.md#microsoft-teams-preview).
+
+### <a name="share-the-case"></a>Partager le cas
+
+Le partage d’un cas de gestion des risques inSided permet aux investigateurs et analystes de risque de collaborer facilement avec les autres parties prenantes en matière de conformité de votre organisation. Vous pouvez rapidement partager un lien vers un cas d’Insider de gestion des risques avec des parties prenantes externes à partir du domaine de gestion des cas. Pour accéder au cas de gestion des risques inSided à partir du lien, les parties prenantes doivent être incluses dans n’importe quel groupe de rôles de gestion des risques Insiders.
+
+Les options de partage suivantes sont disponibles :
 
 - **ServiceNow**: après avoir configuré le connecteur ServiceNow Microsoft 365 pour votre organisation Microsoft 365, vous pouvez facilement partager un lien vers le cas, ouvrir un incident ou demander une modification avec votre organisation ServiceNow. Pour partager le cas avec ServiceNow, sélectionnez **partager**  >  **ServiceNow** à partir de l’action case. L’intégration de ServiceNow avec les supports de gestion des risques initiaux inclut les informations et les actions suivantes :
     - **Nom**de la tâche : nom de la nouvelle tâche ServiceNow.

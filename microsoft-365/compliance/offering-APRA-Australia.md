@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: fb964bd6dcf229f362476b68ad87d05053e87f74
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 079fb69eb4d8fd41b9493d8bf992084640f2835a
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417748"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208656"
 ---
 # <a name="australian-prudential-regulation-authority-apra"></a>Autorité de régulation prudentielle australienne (APRA)
 
@@ -76,7 +76,7 @@ Bénéficiez d’un support pratique pour le transfert de données et de charges
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Dynamics 365
 
-## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 **Les institutions financières ont-elles besoin d’une approbation APRA avant d’externaliser les activités de gestion des matières ?**
 
@@ -87,6 +87,10 @@ En outre, si les services Cloud sont considérés comme des « risques inhéren
 **Les transferts de données en dehors de l’Australie sont-ils autorisés ?**
 
 Oui. La législation générale sur la confidentialité (qui s’applique à tous les secteurs, pas uniquement aux institutions financières) autorise les transferts en dehors de l’Australie dans certaines conditions. Microsoft accepte les termes contractuels conformément aux principes de confidentialité australien afin que les transferts de données en dehors de l’Australie soient autorisés lorsque vous utilisez les services Cloud de Microsoft. Toutefois, un grand nombre de nos clients australiens de services financiers tirent parti des services Cloud disponibles pour nos centres de données australiens, pour lesquels nous faisons des engagements contractuels spécifiques afin de stocker des catégories de données au repos dans la géographie australienne. Ces engagements sont décrits plus en détail dans la [liste de vérification de conformité](https://www.microsoft.com/cms/api/am/binary/RE3ez0C).
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Utiliser le gestionnaire de conformité Microsoft pour évaluer votre risque
+
+Le [Gestionnaire de conformité Microsoft](compliance-manager.md) est une fonctionnalité du [Centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Le gestionnaire de conformité offre un modèle Premium pour la création d’une évaluation pour cette réglementation. Recherchez le modèle dans la page **modèles d’évaluation** du gestionnaire de conformité. Découvrez comment [créer des évaluations dans le gestionnaire de conformité](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressources
 
@@ -99,6 +103,6 @@ Oui. La législation générale sur la confidentialité (qui s’applique à tou
 - [Services de Cloud Computing Microsoft : conformité avec la norme prudentielle APRA CPS 234](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2OsZg)
 - [Microsoft Australie : Cloud dans les services financiers](https://www.microsoft.com/en-sg/apac/trustedcloud/australia-financial-service.aspx)
 - [Programme de mise en conformité destiné au secteur des services financiers Microsoft](https://www.microsoft.com/download/details.aspx?id=55332)
-- [Conformité des services financiers dans Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
+- [Conformité destinée au secteur des services financiers dans Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Services Enterprise Cloud et financiers Microsoft](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
 - [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

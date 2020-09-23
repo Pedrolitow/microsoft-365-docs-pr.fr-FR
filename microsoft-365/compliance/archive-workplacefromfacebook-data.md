@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données à partir de l’espace de travail à partir de Facebook, qui est archivé sur le site Merge1 de Globanet, dans Microsoft 365. La configuration d’un connecteur nécessite que vous utilisiez Globanet ce connecteur vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 de sorte que vous puissiez utiliser les fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: 4bef408f7da93f2ade18fe126d3a1dedaa413a65
-ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
+ms.openlocfilehash: cea8f7549bbf1ed19bc3de6fe4d1e1c63f1be4cd
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47405485"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195581"
 ---
-# <a name="set-up-a-connector-to-archive-workplace-from-facebook-data-preview"></a>Configurer un connecteur pour archiver un espace de travail à partir de données Facebook (aperçu)
+# <a name="set-up-a-connector-to-archive-workplace-from-facebook-data"></a>Configurer un connecteur pour archiver un espace de travail à partir de données Facebook
 
 Utilisez un connecteur Globanet dans le centre de conformité Microsoft 365 pour importer et archiver des données à partir de l’espace de travail de Facebook vers des boîtes aux lettres utilisateur dans votre organisation 365 Microsoft. Globanet fournit un [espace de travail à partir d'](https://globanet.com/workplace/) un connecteur Facebook configuré pour capturer des éléments à partir de la source de données tierce (de manière régulière) et les importer dans Microsoft 365. Le connecteur convertit le contenu tel que les conversations, les pièces jointes, les publications et les vidéos de l’espace de travail en format de message électronique, puis importe ces éléments dans les boîtes aux lettres utilisateur dans Microsoft 365.
 
@@ -94,4 +93,4 @@ Une fois que vous avez créé l’espace de travail à partir du connecteur Face
 
 ## <a name="known-issues"></a>Problèmes connus
 
-- Pour le moment, nous ne prenons pas en charge l’importation de pièces jointes d’une taille supérieure à 10 Mo, mais la prise en charge des éléments plus importants sera disponible ultérieurement.
+- Pour le moment, nous ne prenons pas en charge l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo. La prise en charge des éléments plus importants sera disponible ultérieurement.

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 83c66bfce39698cfea7833433d337fe7411e0ebe
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: bf1297fb955a2f66de0d6e5677668952c8808c5c
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416344"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208376"
 ---
 # <a name="us-internal-revenue-service-publication-1075"></a>Publication 1075 de U.S. Internal Revenue Service
 
@@ -60,7 +60,7 @@ Le respect des exigences de fond de l’IRS 1075 est couvert par l’audit FedRA
 - [Autorisations FedRAMP](https://marketplace.fedramp.gov/#/product/azure-government?sort=productName&productNameSearch=azure)
 - [Rapport de sécurité de la sécurité de l’IRS 1075](https://aka.ms/AzureIRS1075SafeguardSecurityReport)
 
-## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 **Comment Microsoft répond-t-il aux exigences de l’IRS 1075 ?**
 
@@ -75,6 +75,10 @@ Oui, si votre organisation remplit les conditions d’éligibilité pour le gouv
 **Puis-je utiliser les environnements de cloud public Azure ou Office 365 et être toujours compatible avec l’IRS 1075 ?**
 
 Non. Les seuls environnements dans lesquels FTI peut être stocké et traité sont les administrations publiques Azure ou Office 365. Les clients gouvernementaux doivent respecter les conditions d’éligibilité pour utiliser ces environnements.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Utiliser le gestionnaire de conformité Microsoft pour évaluer votre risque
+
+Le [Gestionnaire de conformité Microsoft](compliance-manager.md) est une fonctionnalité du [Centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Le gestionnaire de conformité offre un modèle Premium pour la création d’une évaluation pour cette réglementation. Recherchez le modèle dans la page **modèles d’évaluation** du gestionnaire de conformité. Découvrez comment [créer des évaluations dans le gestionnaire de conformité](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressources
 

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 5680cc1bf8f3a0290f82baaccea1de7b982317a7
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 4ca7654482251d86c44a3956c71f704a0cc3f2d4
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416416"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208616"
 ---
 # <a name="criminal-justice-information-services-cjis-security-policy"></a>Stratégie de sécurité CJIS (pénal Justice Information Services)
 
@@ -64,7 +64,7 @@ Alabama, Alaska, Arkansas, Arizona, Californie, Colorado, Floride, Géorgie, Haw
 
 L’engagement de Microsoft à respecter les contrôles de réglementation CJIS applicables permet aux organisations de justice pénale de mettre en œuvre des solutions basées sur le nuage et de respecter la stratégie de sécurité CJIS V 5.8.
 
-## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 **Où puis-je demander des informations de conformité ?**
 
@@ -77,6 +77,10 @@ Microsoft signe un accord d’information avec un département CJIS Systems Agen
 **Où puis-je commencer l’effort de conformité de mon agence ?**
 
 La [stratégie de sécurité CJIS](https://aka.ms/cjis-security-policy) couvre les précautions que votre Agence doit prendre pour protéger CJI. En outre, votre responsable de compte Microsoft peut vous mettre en contact avec les personnes connaissant les exigences de votre juridiction.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Utiliser le gestionnaire de conformité Microsoft pour évaluer votre risque
+
+Le [Gestionnaire de conformité Microsoft](compliance-manager.md) est une fonctionnalité du [Centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Le gestionnaire de conformité offre un modèle Premium pour la création d’une évaluation pour cette réglementation. Recherchez le modèle dans la page **modèles d’évaluation** du gestionnaire de conformité. Découvrez comment [créer des évaluations dans le gestionnaire de conformité](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressources
 

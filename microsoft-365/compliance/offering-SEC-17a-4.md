@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: bd91e2439b501a20396763358f35a94aa31b4672
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: c0abd8db3084630a6f848f740f5b1387dc58b704
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417232"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208186"
 ---
 # <a name="securities-and-exchange-commission-sec-rule-17a-4f-united-states"></a>Règles de Securities and Exchange Commission (SEC) 17A -4 (f)
 
@@ -70,6 +70,10 @@ Créez un modèle de gouvernance pour l’évaluation des risques des services d
 ### <a name="financial-use-cases"></a>Cas d’utilisation financière
 
 Utilisez des présentations de cas, des didacticiels et d’autres ressources pour créer des solutions Azure pour les services financiers. [En savoir plus](https://docs.microsoft.com/azure/industry/financial/)
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Utiliser le gestionnaire de conformité Microsoft pour évaluer votre risque
+
+Le [Gestionnaire de conformité Microsoft](compliance-manager.md) est une fonctionnalité du [Centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Le gestionnaire de conformité offre un modèle Premium pour la création d’une évaluation pour cette réglementation. Recherchez le modèle dans la page **modèles d’évaluation** du gestionnaire de conformité. Découvrez comment [créer des évaluations dans le gestionnaire de conformité](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressources
 

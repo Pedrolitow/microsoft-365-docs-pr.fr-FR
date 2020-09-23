@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données délimitées par du texte à partir de Globanet dans Microsoft 365. Cela vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 de sorte que vous puissiez utiliser les fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: 6a7c8a23fdf78ccac21e1cae68dbc6b971bd6486
-ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
+ms.openlocfilehash: 854e678067a26fd5fa1f89eb4b2f4f0327eac7a0
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47405605"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196573"
 ---
-# <a name="set-up-a-connector-to-archive-text-delimited-data-preview"></a>Configurer un connecteur pour archiver des données délimitées par du texte (aperçu)
+# <a name="set-up-a-connector-to-archive-text-delimited-data"></a>Configurer un connecteur pour archiver des données délimitées par du texte
 
 Utilisez un connecteur Globanet dans le centre de conformité Microsoft 365 pour importer et archiver des données délimitées par du texte dans des boîtes aux lettres utilisateur dans votre organisation 365 Microsoft. [Globanet](https://globanet.com/merge1/) fournit un connecteur texte délimité qui est configuré pour capturer des éléments à partir d’une source de données tierce (de manière régulière) et les importer dans Microsoft 365. Le connecteur convertit le contenu de la source de données délimitée par du texte en format de message électronique, puis importe ces éléments dans la boîte aux lettres de l’utilisateur dans Microsoft 365.
 
@@ -92,4 +91,4 @@ Après avoir créé le connecteur délimité par du texte, vous pouvez afficher 
 
 ## <a name="known-issues"></a>Problèmes connus
 
-- Pour le moment, nous ne prenons pas en charge l’importation de pièces jointes d’une taille supérieure à 10 Mo, mais la prise en charge des éléments plus importants sera disponible ultérieurement.
+- Pour le moment, nous ne prenons pas en charge l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo. La prise en charge des éléments plus importants sera disponible ultérieurement.

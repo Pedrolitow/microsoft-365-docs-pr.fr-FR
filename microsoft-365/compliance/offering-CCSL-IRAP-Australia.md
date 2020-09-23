@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 0ff270c27c4b3d1a376b8b9ddefd1177cdd7823f
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 03a48dc757b8028fe0391bdc8f0469b8632f0f61
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417328"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208646"
 ---
 # <a name="australian-government-information-security-registered-assessor-program-irap"></a>Programme d’évaluation de la sécurité des informations pour le gouvernement australien (IRAP)
 
@@ -50,7 +50,7 @@ L’évaluation des services de Microsoft en Australie couvre les quatre région
 
 Pour chaque évaluation, Microsoft a recruté un évaluateur IRAP agréé par ACSC qui a examiné les contrôles de sécurité et les processus utilisés par l’équipe des opérations informatiques de Microsoft, les centres de données physiques, la détection d’intrusion, la cryptographie, l’interdomaine et la sécurité réseau, le contrôle d’accès et la gestion des risques de sécurité des informations des services dans l’étendue. Les évaluations IRAP ont révélé que l’architecture système Microsoft est basée sur des principes de sécurité saine et que les contrôles de la sécurité des informations pour le gouvernement australien applicables sont en place et pleinement efficaces au sein de nos services évalués.
 
-L’infrastructure de gestion des risques utilisée par ISM est basée sur la [publication spéciale de l’Institut NIST (National Institute of Standards and Technology) 800-37 Rev. 2](https://csrc.nist.gov/publications/detail/sp/800-37/rev-2/final), « infrastructure de gestion des risques pour les systèmes d’informations et les organisations : approche de cycle de vie du système pour la sécurité et la confidentialité ». Dans cette infrastructure de gestion des risques, l’identification des risques et la sélection des contrôles de sécurité peuvent être menées à l’aide de différentes normes de gestion des risques, telles que l' [Organisation internationale de normalisation (ISO) 31000:2018, gestion des risques – conseils](https://www.iso.org/standard/65694.html). Globalement, l’infrastructure de gestion des risques utilisée par ISM comporte six étapes :
+L’infrastructure de gestion des risques utilisée par le gestionnaire d’infrastructure de sécurité (ISM) est basée sur la [publication spéciale de l’Institut NIST (National Institute of Standards and Technology) 800-37 Rev. 2](https://csrc.nist.gov/publications/detail/sp/800-37/rev-2/final), « infrastructure de gestion des risques pour les systèmes d’informations et les organisations : approche de cycle de vie du système pour la sécurité et la confidentialité ». Dans cette infrastructure de gestion des risques, l’identification des risques et la sélection des contrôles de sécurité peuvent être menées à l’aide de différentes normes de gestion des risques, telles que l' [Organisation internationale de normalisation (ISO) 31000:2018, gestion des risques-directives](https://www.iso.org/standard/65694.html). Globalement, l’infrastructure de gestion des risques utilisée par ISM comporte six étapes :
 
 - Définir le système
 - Sélectionner des contrôles de sécurité
@@ -86,9 +86,9 @@ Commencez par [qu’est-ce que IRAP ?](https://www.cyber.gov.au/irap/what-irap)
 - [Qui fournit une formation IRAP ?](https://acsc.gov.au/infosec/irap/training.htm)
 - [Informations sur les exigences de conformité et de non-conformité](https://acsc.gov.au/infosec/irap/compliance.htm)
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Utilisez le score de conformité Microsoft pour évaluer vos risques
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Utiliser le gestionnaire de conformité Microsoft pour évaluer votre risque
 
-[Le score de conformité Microsoft](compliance-score.md) est une fonctionnalité d’aperçu dans [le Centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Après avoir configuré le [score de conformité](compliance-score-setup.md), sélectionnez le [modèle IRAP](https://go.microsoft.com/fwlink/?linkid=2117913) préconfiguré dans le menu déroulant **modèle** pour aider votre organisation à répondre aux exigences de cette réglementation.
+Le [Gestionnaire de conformité Microsoft](compliance-manager.md) est une fonctionnalité du [Centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Le gestionnaire de conformité offre un modèle Premium pour la création d’une évaluation pour cette réglementation. Recherchez le modèle dans la page **modèles d’évaluation** du gestionnaire de conformité. Découvrez comment [créer des évaluations dans le gestionnaire de conformité](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressources
 

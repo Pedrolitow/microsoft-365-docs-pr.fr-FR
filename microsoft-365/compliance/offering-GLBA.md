@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 1b3cf1017a3ed64cecafe269e313ab5a6980af25
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 7969d18bea1e8873651a1ea94e46c6b7a6b48c83
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417728"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208396"
 ---
 # <a name="gramm-leach-bliley-act-glba"></a>La loi Gramm-Leach-Bliley Act (GLBA)
 
@@ -46,11 +46,15 @@ Microsoft a développé des outils d’évaluation des risques pour [Azure](http
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Service Cloud Power BI soit en service autonome, soit inclus dans un plan ou une suite Office 365
 
-## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 **Comment savoir si mon institution financière doit respecter la loi GLB ?**
 
 Le FTC répond ainsi en détail à sa page Act Act, [qui est couverte par la règle de confidentialité](https://www.ftc.gov/tips-advice/business-center/guidance/how-comply-privacy-consumer-financial-information-rule-gramm#whois)?
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Utiliser le gestionnaire de conformité Microsoft pour évaluer votre risque
+
+Le [Gestionnaire de conformité Microsoft](compliance-manager.md) est une fonctionnalité du [Centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Le gestionnaire de conformité offre un modèle Premium pour la création d’une évaluation pour cette réglementation. Recherchez le modèle dans la page **modèles d’évaluation** du gestionnaire de conformité. Découvrez comment [créer des évaluations dans le gestionnaire de conformité](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressources
 
@@ -62,6 +66,6 @@ Le FTC répond ainsi en détail à sa page Act Act, [qui est couverte par la rè
 ## <a name="other-microsoft-resources-for-financial-services"></a>Autres ressources Microsoft pour les services financiers
 
 - [Programme de mise en conformité destiné au secteur des services financiers Microsoft](https://www.microsoft.com/download/details.aspx?id=55332)
-- [Conformité des services financiers dans Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
+- [Conformité destinée au secteur des services financiers dans Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Services Enterprise Cloud et financiers Microsoft](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
 - [Responsabilités partagées pour le cloud computing](https://aka.ms/sharedresponsibility)

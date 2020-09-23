@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données EML depuis Globanet vers Microsoft 365. Cela vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 de sorte que vous puissiez utiliser les fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: 99b32960b46853ed4766c255e36df05c8fe9086a
-ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
+ms.openlocfilehash: c11d66774a61fa20a533b5c906b3c8601659c1fe
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47405595"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200217"
 ---
-# <a name="set-up-a-connector-to-archive-eml-data-preview"></a>Configuration d’un connecteur pour l’archivage des données EML (aperçu)
+# <a name="set-up-a-connector-to-archive-eml-data"></a>Configuration d’un connecteur pour l’archivage des données EML
 
 Utilisez un connecteur Globanet dans le centre de conformité Microsoft 365 pour importer et archiver des données EML dans les boîtes aux lettres utilisateur de votre organisation Microsoft 365. EML est l’extension de fichier d’un message électronique enregistré dans un fichier. Le connecteur convertit le contenu d’un élément du format source en format de message électronique, puis importe l’élément dans une boîte aux lettres utilisateur.
 
@@ -90,4 +89,4 @@ Après avoir créé le connecteur EML, vous pouvez afficher l’état du connect
 
 ## <a name="known-issues"></a>Problèmes connus
 
-- Pour le moment, nous ne prenons pas en charge l’importation de pièces jointes d’une taille supérieure à 10 Mo, mais la prise en charge des éléments plus importants sera disponible ultérieurement.
+- Pour le moment, nous ne prenons pas en charge l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo. La prise en charge des éléments plus importants sera disponible ultérieurement.

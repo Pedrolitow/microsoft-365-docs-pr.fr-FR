@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données à partir de réunions zoom Globanet dans Microsoft 365. Cela vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 de sorte que vous puissiez utiliser les fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: c7052e7f51108cac93ad8d87402a07acd12df28a
-ms.sourcegitcommit: a3c2c737995088c1bad3b12ab401a7ef242b0272
+ms.openlocfilehash: a94d0a776af05b609816d3fdbfede869018fa30a
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47956231"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196357"
 ---
-# <a name="set-up-a-connector-to-archive-zoom-meetings-data-preview"></a>Configuration d’un connecteur pour l’archivage des données de réunions zoom (aperçu)
+# <a name="set-up-a-connector-to-archive-zoom-meetings-data"></a>Configuration d’un connecteur pour l’archivage des données de réunions zoom
 
 Utilisez un connecteur Globanet dans le centre de conformité Microsoft 365 pour importer et archiver des données à partir de réunions de zoom vers des boîtes aux lettres utilisateur dans votre organisation Microsoft 365. Globanet fournit un connecteur de [réunions avec zoom](https://globanet.com/zoom/) qui est configuré pour capturer des éléments à partir de la source de données tierce (de manière régulière) et les importer dans Microsoft 365. Le connecteur convertit le contenu des réunions (y compris les conversations, les fichiers enregistrés et les métadonnées) du compte de réunions zoom en un format de message électronique, puis importe ces éléments dans les boîtes aux lettres utilisateur dans Microsoft 365.
 
@@ -102,6 +101,6 @@ Une fois que vous avez créé le connecteur de réunions zoom, vous pouvez affic
 
 ## <a name="known-issues"></a>Problèmes connus
 
-- Pour le moment, nous ne prenons pas en charge l’importation de pièces jointes d’une taille supérieure à 10 Mo, mais la prise en charge des éléments plus importants sera disponible ultérieurement.
+- Pour le moment, nous ne prenons pas en charge l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo. La prise en charge des éléments plus importants sera disponible ultérieurement.
 
 - Pour que le connecteur de réunions avec zoom fonctionne, vous devez activer les enregistrements lors de la configuration des réunions zoom.

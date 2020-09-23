@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c91c71f199ef36c1c9a0da023c7b26d6cb64282e
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 94e83110ef9761f551fd1401884dbba58a8df107
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47415778"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208436"
 ---
 # <a name="federal-risk-and-authorization-management-program-fedramp"></a>Programme FedRAMP (Federal Risk and Authorization Management Program)
 
@@ -71,7 +71,7 @@ Dynamics 365 le gouvernement des États-Unis a reçu un « ATO » de l’Agenc
 - [Office 365 et Office 365 régies américaines](https://go.microsoft.com/fwlink/p/?linkid=2077751)
 - Office 365 U.S. Government Defense
 - Service Cloud Power BI soit en service autonome, soit inclus dans un plan ou une suite Office 365
-- Microsoft Defender - PACM
+- Microsoft Defender ATP
 
 > [!NOTE]
 > L’utilisation d’Azure Active Directory au sein d’Azure Government nécessite l’utilisation de composants déployés en dehors du gouvernement Azure sur le cloud public Azure.
@@ -91,7 +91,7 @@ Microsoft vous guide tout au long du processus de l’ATO et déploie rapidement
 
 [Commencer à utiliser le modèle FedRAMP](https://aka.ms/fedrampblueprint)
 
-## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 **Est-ce que les services de Cloud Computing Microsoft sont conformes à la loi FISMA (Federal Information Security Management Act) ?**
 
@@ -109,9 +109,9 @@ Pour obtenir une vue d’ensemble des étapes que les agences fédérales doiven
 
 Oui. Vous pouvez utiliser les certifications des services de Cloud Computing Microsoft comme base de tout programme ou initiative nécessitant un ATO auprès d’une agence gouvernementale fédérale. Toutefois, vous devez obtenir vos propres autorisations pour les composants en dehors de ces services.
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Utilisez le score de conformité Microsoft pour évaluer vos risques
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Utiliser le gestionnaire de conformité Microsoft pour évaluer votre risque
 
-[Le score de conformité Microsoft](compliance-score.md) est une fonctionnalité d’aperçu dans [le Centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Après avoir configuré le [score de conformité](compliance-score-setup.md), sélectionnez le [modèle FedRAMP](https://go.microsoft.com/fwlink/?linkid=2118102) préconfiguré dans le menu déroulant **modèle** pour aider votre organisation à répondre aux exigences de cette réglementation.
+Le [Gestionnaire de conformité Microsoft](compliance-manager.md) est une fonctionnalité du [Centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Le gestionnaire de conformité offre un modèle Premium pour la création d’une évaluation pour cette réglementation. Recherchez le modèle dans la page **modèles d’évaluation** du gestionnaire de conformité. Découvrez comment [créer des évaluations dans le gestionnaire de conformité](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressources
 

@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données à partir de Globanet Symphony dans Microsoft 365. Ce connecteur vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 de sorte que vous puissiez utiliser les fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: ade08b0f6f82bb2c76cdaf033e276909b5ec2122
-ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
+ms.openlocfilehash: fd44575aa34ea6f6180c5eabdbb286a3b8380d33
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47405529"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196731"
 ---
-# <a name="set-up-a-connector-to-archive-symphony-data-preview"></a>Configurer un connecteur pour archiver les données Symphony (aperçu)
+# <a name="set-up-a-connector-to-archive-symphony-data"></a>Configuration d’un connecteur pour l’archivage des données Symphony
 
 Utilisez un connecteur Globanet dans le centre de conformité Microsoft 365 pour importer et archiver des données Symphony vers des boîtes aux lettres utilisateur dans votre organisation Microsoft 365. Symphony est une plateforme de messagerie et de collaboration utilisée dans le secteur des services financiers. Globanet fournit un [connecteur de données Symphony](https://globanet.com/symphony) dans le centre de conformité Microsoft 365 que vous pouvez configurer pour capturer des éléments à partir de la source de données tierce (de manière régulière), puis les importer dans les boîtes aux lettres utilisateur. Le connecteur convertit le contenu d’un élément du compte Symphony en format de message électronique, puis importe l’élément dans une boîte aux lettres dans Microsoft 365.
 
@@ -90,4 +89,4 @@ Après avoir créé le connecteur Symphony, vous pouvez afficher l’état du co
 
 ## <a name="known-issues"></a>Problèmes connus
 
-- Pour le moment, nous ne prenons pas en charge l’importation de pièces jointes d’une taille supérieure à 10 Mo, mais la prise en charge des éléments plus importants sera disponible ultérieurement.
+- Pour le moment, nous ne prenons pas en charge l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo. La prise en charge des éléments plus importants sera disponible ultérieurement.

@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur de données pour importer et archiver des données à partir de l’outil de messagerie de message Bloomberg dans Microsoft 365. Cela vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 de sorte que vous puissiez utiliser les fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: b8b144905ad3ff47f54c06985fca9cfef6b70590
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: cc14bd9d76e04fe3e285f63b5dce9dbb1f680794
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358290"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200227"
 ---
-# <a name="set-up-a-connector-to-archive-bloomberg-message-data-preview"></a>Configuration d’un connecteur pour l’archivage des données de message Bloomberg (aperçu)
+# <a name="set-up-a-connector-to-archive-bloomberg-message-data"></a>Configuration d’un connecteur pour l’archivage des données de message Bloomberg
 
 Utilisez un connecteur de données dans le centre de conformité Microsoft 365 pour importer et archiver des données de messagerie électronique des services financiers à partir de l’outil de collaboration [message Bloomberg](https://www.bloomberg.com/professional/product/collaboration/) . Une fois que vous avez configuré et configuré un connecteur, celui-ci se connecte au site Bloomberg Secure FTP (SFTP) de votre organisation une fois par jour et importe des éléments de courrier électronique vers des boîtes aux lettres dans Microsoft 365.
 

@@ -15,14 +15,14 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Les administrateurs dans le nuage des États-Unis peuvent configurer un connecteur de données pour importer les données des employés à partir du système de ressources humaines (RH) de leur organisation vers Microsoft 365. Cela vous permet d’utiliser des données RH dans des stratégies de gestion des risques initiées pour vous aider à détecter les activités d’utilisateurs spécifiques susceptibles de constituer une menace interne pour votre organisation.
-ms.openlocfilehash: 30a3730bcb2d4f41df28c47fdb9ab35e9d012540
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: c1382cd94fcbba1d2ba561657c756e509af21dae
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47817164"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196387"
 ---
-# <a name="set-up-a-connector-to-import-hr-data-in-us-government-preview"></a>Configurer un connecteur pour importer des données RH dans le secteur public américain (aperçu)
+# <a name="set-up-a-connector-to-import-hr-data-in-us-government"></a>Configurer un connecteur pour importer des données RH dans le secteur public américain
 
 Vous pouvez configurer un connecteur de données dans le centre de conformité Microsoft 365 pour importer les données des ressources humaines (RH) vers votre organisation gouvernementale américaine. Les données relatives aux ressources humaines incluent la date à laquelle un employé a envoyé sa démission et sa date de la dernière journée de son employé. Ces données RH peuvent ensuite être utilisées par les solutions de protection des informations de Microsoft, telles que la [solution de gestion des risques d’Insiders](insider-risk-management.md), pour protéger votre organisation contre les activités malveillantes ou le vol de données au sein de votre organisation. La configuration d’un connecteur RH consiste à créer une application dans Azure Active Directory qui est utilisée pour l’authentification par un connecteur, à créer un fichier de mappage CSV contenant vos données RH, à créer un connecteur de données dans le centre de conformité, puis à exécuter un script (de manière planifiée) qui informera les données RH dans le fichier CSV vers le Cloud Microsoft. Le connecteur de données est ensuite utilisé par l’outil de gestion des risques inSided pour accéder aux données RH importées dans votre organisation Microsoft 365.
 
@@ -77,7 +77,7 @@ L’étape suivante consiste à créer un connecteur RH dans le centre de confor
 
 1. Accédez à [https://compliance.microsoft.com](https://compliance.microsoft.com) , puis cliquez sur **connecteurs de données** dans le volet de navigation de gauche.
 
-2. Dans la page **connecteurs de données (aperçu)** , sous **RH**, cliquez sur **affichage**.
+2. Sur la page **connecteurs de données** , sous **RH**, cliquez sur **affichage**.
 
 3. Sur la page **RH** , cliquez sur **Ajouter un connecteur**.
 
@@ -137,7 +137,7 @@ La dernière étape de la configuration d’un connecteur RH consiste à exécut
 
    Le tableau suivant décrit les paramètres à utiliser avec ce script et leurs valeurs requises. Les informations que vous avez obtenues dans les étapes précédentes sont utilisées dans les valeurs de ces paramètres.
 
-   |**Paramètre**|**Description**
+   |**Parameter**|**Description**
    |:-----|:-----|:-----|
    |`tenantId`|ID de votre organisation Microsoft 365 que vous avez obtenu à l’étape 1. Vous pouvez également obtenir l’ID de client de votre organisation sur le panneau de présentation dans le centre **d'** administration Azure ad. Il est utilisé pour identifier votre organisation.|
    |`appId` |L’ID de l’application Azure AD pour l’application que vous avez créée dans Azure AD à l’étape 1. Il est utilisé par Azure AD pour l’authentification lorsque le script tente d’accéder à votre organisation Microsoft 365. |

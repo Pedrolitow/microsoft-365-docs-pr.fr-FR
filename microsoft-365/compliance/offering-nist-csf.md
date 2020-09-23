@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 90670c8102afe0dcf0814726bde36bd422e802a9
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: be40c207f5f09c97d1a0a4da5cf56e2caf2c51b7
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417086"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208166"
 ---
 # <a name="national-institute-of-standards-and-technology-nist-cybersecurity-framework-csf"></a>Institut Cybersecurity (CSF) National Institute of Standards and Technology (CSF)
 
@@ -64,7 +64,7 @@ Cybersecurity reste un problème de gestion critique dans l’ère de la transfo
 
 - [Commencer à utiliser le score de conformité](compliance-score.md)
 
-## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 **Un évaluateur indépendant a-t-il validé qu’Azure Government, Dynamics 365 et Office 365 prennent en charge la configuration CSF CSF ?**
 
@@ -97,9 +97,9 @@ Les services inclus dans l’étendue de la certification CSF sont l’archivage
 
 Microsoft fournit les offres les plus complètes par rapport aux autres fournisseurs de services Cloud. Pour suivre nos offres de conformité étendue dans les régions et les industries, nous incluons des services dans le cadre de nos efforts de garantie en fonction de la demande de marché, des commentaires des clients et du cycle de vie des produits. Si un service n’est pas inclus dans l’étendue actuelle d’une offre de conformité spécifique, votre organisation a la responsabilité d’évaluer les risques en fonction de vos obligations de conformité et de déterminer la façon dont vous traitez les données dans ce service. Nous recueillons continuellement des commentaires de clients et travaillons avec des autorités de réglementation et des auditeurs afin de développer notre couverture de conformité afin de répondre à vos besoins en matière de conformité et de sécurité.
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Utilisez le score de conformité Microsoft pour évaluer vos risques
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Utiliser le gestionnaire de conformité Microsoft pour évaluer votre risque
 
-[Le score de conformité Microsoft](compliance-score.md) est une fonctionnalité d’aperçu dans [le Centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Après avoir configuré le [score de conformité](compliance-score-setup.md), sélectionnez le [modèle NIST CSF](https://go.microsoft.com/fwlink/?linkid=2117917) préconfiguré dans le menu déroulant **modèle** pour aider votre organisation à répondre aux exigences de la présente réglementation.
+Le [Gestionnaire de conformité Microsoft](compliance-manager.md) est une fonctionnalité du [Centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Le gestionnaire de conformité offre un modèle Premium pour la création d’une évaluation pour cette réglementation. Recherchez le modèle dans la page **modèles d’évaluation** du gestionnaire de conformité. Découvrez comment [créer des évaluations dans le gestionnaire de conformité](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressources
 
@@ -108,5 +108,5 @@ Microsoft fournit les offres les plus complètes par rapport aux autres fourniss
 - [Infrastructure pour l’amélioration des infrastructures d’infrastructure Cybersecurity](https://www.nist.gov/publications/framework-improving-critical-infrastructure-cybersecurity-version-11)
 - [Commande du cadre de la présidence concernant le renforcement de la Cybersecurity des réseaux fédéraux et de l’infrastructure critique](https://www.whitehouse.gov/the-press-office/2017/05/11/presidential-executive-order-strengthening-cybersecurity-federal)
 - [Cloud Microsoft Service publique](https://go.microsoft.com/fwlink/p/?linkid=2087246)
-- [Conditions d’utilisation d’Online Services](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
+- [Conditions d’utilisation des services en ligne](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
 - [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

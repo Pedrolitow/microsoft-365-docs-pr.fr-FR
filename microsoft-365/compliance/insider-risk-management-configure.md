@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: e4a13d25506481ddcdfaf6ca2f9ad21c871bb603
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 6645ce4d4f6b2fa8f2725e4b0679bc00fdec3505
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416468"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208800"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Prise en main de la gestion des risques internes
 
@@ -89,6 +89,7 @@ Si vous configurez une stratégie à l’aide du *langage offensant dans le mod�
 ### <a name="configure-microsoft-365-hr-connector"></a>Configurer le connecteur RH de Microsoft 365
 
 La gestion des risques internes prend en charge l’importation des données d’utilisateur et de journal importées des plateformes de gestion des risques et de ressources humaines tierces. Le connecteur de données RH de Microsoft 365 vous permet d’extraire des données de ressources humaines à partir de fichiers CSV, notamment les dates de fin d’utilisateur, les dates de dernière emploi, les notifications de plan d’amélioration des performances, les actions d’analyse des performances et l’état de modification du niveau des tâches. Celles-ci permettent d’attirer l’attention sur les indicateurs d’alertes dans les stratégies de gestion des risques internes et il s’agit d’un élément essentiel de la configuration de la couverture de la gestion des risques. Si vous configurez plusieurs connecteurs RH pour votre organisation, la gestion des risques internes extrait automatiquement les indicateurs de tous les connecteurs RH.
+
 Le connecteur RH de Microsoft 365 est requis lors de l’utilisation des modèles de stratégie suivants :
 
 - Défaition des vols de données utilisateur
@@ -123,10 +124,19 @@ La gestion des risques initiés comprend la prise en charge de l’affectation d
 
 Un groupe d’utilisateurs prioritaire est requis lors de l’utilisation des modèles de stratégie suivants :
 
-- Violations de stratégie de sécurité par utilisateurs prioritaires 
+- Violations de stratégie de sécurité par utilisateurs prioritaires
 - Fuites de données par les utilisateurs prioritaires
 
 Pour obtenir des instructions détaillées sur la création d’un groupe d’utilisateurs prioritaire, voir l’article [Getting Started with insidest Management Settings](insider-risk-management-settings.md#priority-user-groups-preview) . Une fois que vous avez configuré un groupe d’utilisateurs de priorité, revenez à ces étapes de configuration.
+
+### <a name="configure-physical-badging-connector-optional"></a>Configurer le connecteur badges physique (facultatif)
+
+La gestion des risques internes prend en charge l’importation des données utilisateur et de journal importées des plateformes de contrôle et d’accès physique. Le connecteur badges physique vous permet d’extraire des données Access à partir de fichiers JSON, notamment les ID d’utilisateur, les ID de point d’accès, les heures et les dates d’accès et l’état d’accès. Celles-ci permettent d’attirer l’attention sur les indicateurs d’alertes dans les stratégies de gestion des risques internes et il s’agit d’un élément essentiel de la configuration de la couverture de la gestion des risques. Si vous configurez plusieurs connecteurs badges physiques pour votre organisation, la gestion des risques internes extrait automatiquement des indicateurs de tous les connecteurs badges physiques. Les informations du connecteur badges physique complètent les autres signaux des risques initiés lors de l’utilisation de tous les modèles de stratégie de risque d’initié.
+
+>[!IMPORTANT]
+>Pour les stratégies de gestion des risques Insiders permettant d’utiliser et de corréler les données de signal relatives au fait de se déconnecter et aux utilisateurs qui se terminent avec des données d’événement provenant de vos plateformes de contrôle physique et d’accès, vous devez également configurer le connecteur RH de Microsoft 365. Si vous activez le connecteur badges physique sans activer le connecteur RH de Microsoft 365, les stratégies de gestion des risques internes ne traiteront que les événements liés à un accès physique non autorisé pour les utilisateurs de votre organisation.
+
+Consultez l’article [configurer un connecteur pour importer des données badges physiques](import-physical-badging-data.md) pour obtenir des instructions détaillées sur la configuration du connecteur badges physique pour votre organisation. Une fois que vous avez configuré le connecteur, revenez à ces étapes de configuration.
 
 ## <a name="step-4-configure-insider-risk-settings"></a>Étape 4 : configurez les paramètres des risques internes
 
@@ -150,7 +160,10 @@ Avant de configurer une stratégie, définissez les paramètres de risque Inside
     - [Paramètres de domaine](insider-risk-management-settings.md#domains-preview)
 6. Sur la page **Exporter les alertes** , activez l’exportation des informations d’alerte sur les risques internes à l’aide des API de gestion d’Office 365 si nécessaire.
 7. Dans la page **Priority User Groups** , créez un groupe d’utilisateurs de priorité et ajoutez des utilisateurs s’ils ne sont pas créés à l' **étape 3**.
-8. Sélectionnez **Enregistrer** pour activer ces paramètres pour vos stratégies de risque Insider.
+8. Sur la page **flux d’automate de puissance** , configurez un flux à partir de modèles de flux de risque d’initiés ou créez un flux. Reportez-vous à l’article [prise en main de paramètres de gestion des risques initiés](insider-risk-management-settings.md#power-automate-flows-preview) pour les instructions détaillées.
+9. Sur la **page Priority Assets**, configurez les ressources de priorité pour utiliser les données de votre contrôle physique et la plateforme d’accès importées par le connecteur badges physique. Reportez-vous à l’article [prise en main de paramètres de gestion des risques initiés](insider-risk-management-settings.md#priority-physical-assets-preview) pour les instructions détaillées.
+10. Sur la page **Microsoft teams** , activez l’intégration de Microsoft teams à la gestion des risques initiés pour créer automatiquement une équipe pour la collaboration d’un utilisateur ou d’un cas. Reportez-vous à l’article [prise en main de paramètres de gestion des risques initiés](insider-risk-management-settings.md#microsoft-teams-preview) pour les instructions détaillées.
+11. Sélectionnez **Enregistrer** pour activer ces paramètres pour vos stratégies de risque Insider.
 
 ## <a name="step-5-create-an-insider-risk-management-policy"></a>Étape 5 : créer une stratégie de gestion des risques Insider
 
@@ -165,6 +178,9 @@ Les stratégies de gestion des risques internes incluent les utilisateurs attrib
 
     >[!IMPORTANT]
     >La plupart des modèles de stratégie comportent des éléments prérequis qui doivent être configurés pour que la stratégie génère des alertes appropriées. Si vous n’avez pas configuré les prérequis de stratégie applicables, reportez-vous à l' **étape 3** ci-dessus.
+
+    >[!CAUTION]
+    >À partir du 16 octobre 2020, vous ne pourrez plus créer de stratégies à l’aide du langage offensant dans le modèle de courrier électronique. Toutes les stratégies actives qui utilisent ce modèle fonctionneront jusqu’à ce qu’elles soient définitivement supprimées en janvier 2021.
 
 4. Sélectionnez **suivant** pour continuer.
 5. Dans la page **utilisateurs** , sélectionnez **Ajouter un utilisateur ou un groupe** ou **Choisissez Priority Group Groups** pour définir les utilisateurs ou groupes d’utilisateurs de priorité inclus dans la stratégie, en fonction du modèle de stratégie que vous avez sélectionné. Activez la case à cocher **tous les utilisateurs et les groupes à extension messagerie** , le cas échéant (si vous n’avez pas sélectionné de modèle de priorité basé sur l’utilisateur). Sélectionnez **suivant** pour continuer.

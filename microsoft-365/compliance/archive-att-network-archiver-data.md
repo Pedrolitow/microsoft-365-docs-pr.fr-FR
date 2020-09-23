@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: Les administrateurs peuvent configurer un connecteur de télémessage pour importer et archiver des données SMS et MMS à partir du réseau mobile AT&T. Cela vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 de sorte que vous puissiez utiliser les fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: dfcc59c6ed7beb088ca738c50112cf40a0ebe511
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: 87974fd18f0e0a7c824e81231418ccf1c838b636
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47362075"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200249"
 ---
-# <a name="set-up-a-connector-to-archive-att-smsmms-data-preview"></a>Configurer un connecteur pour l’archivage sur&T SMS/MMS Data (préversion)
+# <a name="set-up-a-connector-to-archive-att-smsmms-data"></a>Configurer un connecteur pour l’archivage sur des données&T SMS/MMS
 
 Utilisez un connecteur de Télémessage dans le centre de conformité Microsoft 365 pour importer et archiver des données SMS et MMS à partir de&réseau mobile. Une fois que vous avez configuré et configuré un connecteur, celui-ci se connecte à votre organisation à&réseau T une fois par jour, et importe les données SMS et MMS vers des boîtes aux lettres dans Microsoft 365.
 
@@ -88,4 +87,4 @@ Une fois que vous avez terminé les conditions préalables décrites dans la sec
 
 ## <a name="known-issues"></a>Problèmes connus
 
-- Pour le moment, nous ne prenons pas en charge l’importation de pièces jointes d’une taille supérieure à 10 Mo, mais la prise en charge des éléments plus importants sera disponible ultérieurement.
+- Pour le moment, nous ne prenons pas en charge l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo. La prise en charge des éléments plus importants sera disponible ultérieurement.

@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 description: Découvrez le catalogue de solutions Microsoft 365, y compris son contenu, comment l’obtenir et les étapes suivantes.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: ff445711dfd57ec69305c3f8cc7d01e05a66a1cc
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: a560193bf7ee2911b90332f84eef2d60027cbbf9
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48132168"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198357"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Catalogue de solutions Microsoft 365
 
@@ -93,7 +93,7 @@ Si vous recherchez une solution de conformité existante et qu’elle n’est pa
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-- **Examinez votre score de conformité Microsoft**, un score personnalisé basé sur les risques pour vous aider à comprendre l’état de conformité de votre organisation à l’aide des normes et réglementations clés. Il fournit les actions recommandées que vous pouvez prendre pour renforcer votre position globale de conformité et fournit des fonctionnalités de flux de travail pour vous aider à exécuter efficacement ces actions. Pour en savoir plus, consultez [la rubrique score de conformité (aperçu)](compliance-score.md).
+- **Visitez le gestionnaire de conformité Microsoft**, qui vous aide à comprendre l’état de conformité de votre organisation avec les normes et réglementations clés. Il fournit les actions recommandées que vous pouvez prendre pour renforcer votre position globale de conformité et fournit des fonctionnalités de flux de travail pour vous aider à exécuter efficacement ces actions. Pour en savoir plus, consultez [la rubrique Gestionnaire de conformité](compliance-manager.md).
 
 - **Configurez des stratégies de gestion des risques initiés** pour minimiser les risques internes et vous permettre de détecter, d’examiner et de prendre des mesures pour les activités à risque dans votre organisation. Consultez la rubrique [gestion des risques internes](insider-risk-management.md).
 

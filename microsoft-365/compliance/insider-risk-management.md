@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: d7e06eb025513caa2d4ad61f7b9d8b2a9e0d2cba
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 92b8802325ea6d80241d59bd506051ad048b8422
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45199568"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208676"
 ---
 # <a name="insider-risk-management-in-microsoft-365"></a>Gestion des risques internes dans Microsoft 365
 
@@ -115,7 +115,7 @@ Après enquête, les réviseurs peuvent rapidement agir pour résoudre le cas ou
 Dans les situations les plus graves, vous devrez peut-être partager les informations de cas de gestion des risques Insider avec d’autres réviseurs ou services dans votre organisation. La gestion des risques initiés est étroitement intégrée aux autres solutions de conformité Microsoft 365 pour vous aider à résoudre les risques de bout en bout.
 
 - **Advanced eDiscovery**: le remontage d’un cas pour l’enquête vous permet de transférer des données et de gérer le cas vers Advanced EDiscovery dans Microsoft 365. Advanced eDiscovery fournit un flux de travail intégral pour préserver, collecter, examiner, analyser et exporter du contenu adapté aux examens internes et externes de votre organisation. Il permet aux équipes juridiques de gérer l’ensemble du flux de travail de notification de conservation légale. Pour en savoir plus sur les cas Advanced eDiscovery, consultez [Présentation de Advanced eDiscovery dans Microsoft 365](overview-ediscovery-20.md).
-- **ServiceNow (aperçu)**: ServiceNow est une plateforme de Cloud Computing populaire qui aide les organisations à gérer les flux de travail numériques pour les opérations d’entreprise. La gestion des risques initiés prend en charge le partage des alertes de cas avec votre service ServiceNow et vous permet de créer des demandes d’incident et de modification liées à des cas particuliers de risque d’initié. Pour en savoir plus sur le partage des informations d’alerte avec ServiceNow, voir [partager un cas avec ServiceNow](insider-risk-management-cases.md#share-a-case).
+- **ServiceNow (aperçu)**: ServiceNow est une plateforme de Cloud Computing populaire qui aide les organisations à gérer les flux de travail numériques pour les opérations d’entreprise. La gestion des risques initiés prend en charge le partage des alertes de cas avec votre service ServiceNow et vous permet de créer des demandes d’incident et de modification liées à des cas particuliers de risque d’initié. Pour en savoir plus sur le partage des informations d’alerte avec ServiceNow, voir [partager un cas avec ServiceNow](insider-risk-management-cases.md#share-the-case).
 - **Office 365 Management API Integration (Preview)**: la gestion des risques internes prend en charge l’exportation des informations d’alerte vers les services d’informations de sécurité et de gestion des événements via les API de gestion d’Office 365. L’accès aux informations d’alerte dans la plateforme le mieux adapté aux processus de risque de votre organisation vous offre plus de flexibilité dans la procédure à suivre pour agir sur les activités à risque. Pour en savoir plus sur l’exportation des informations d’alerte avec les API de gestion d’Office 365, consultez la rubrique [Export Alerts](insider-risk-management-settings.md#export-alerts-preview).
 
 ## <a name="scenarios"></a>Scénarios

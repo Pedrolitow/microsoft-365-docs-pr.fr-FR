@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c037a36154f14cc0db2092bc2eeea6344b5544ff
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: aac61dc6686e318d21a6aa6cb1ee86704879f51b
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416070"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208196"
 ---
 # <a name="reserve-bank-of-india-rbi-and-insurance-regulatory-and-development-authority-of-india-irdai"></a>Banque de réserve de l’Inde (RBI) et autorité réglementaire et de développement de l’assurance de l’Inde (IRDAi)
 
@@ -31,7 +31,7 @@ Les conseils sur la gestion des sous-traitants et des risques incluent :
 
 - Des [directives sur la gestion des risques et du code de conduite dans l’externalisation des services financiers par les banques](https://rbidocs.rbi.org.in/rdocs/notification/PDFs/73713.pdf) (RBI) permettent de résoudre les risques auxquels les banques réglementées seraient exposées lors de l’externalisation des services financiers et de garantir que l’externalisation n’entrave pas le rôle de surveillance de l’RBI. Le RBI ne nécessite pas d’approbation préalable pour les banques cherchant à externaliser les services financiers ; Toutefois, les fonctions bancaires de base, telles que les fonctions d’audit interne et de conformité, ne doivent pas être externalisées.
 - [Directives sur la sécurité des informations, la Banque électronique, la gestion des risques technologiques et les fraudes Cyber](https://rbidocs.rbi.org.in/rdocs/content/PDFs/GBS300411F.pdf) (RBI). Les établissements financiers doivent déclarer les arrangements d’externalisation lorsque l’ampleur et la nature des activités sont importantes ou nécessitent un partage de données extensif avec des fournisseurs de services en dehors de l’Inde. Ces conseils s’appliquent en particulier si les données opérationnelles sont stockées ou traitées en dehors de l’Inde.
-- [Externalisation des activités par le règlement des invérifiateurs Indiens](https://www.irdai.gov.in/ADMINCMS/cms/frmGeneral_Layout.aspx?page=PageNo3149&flag=1) (irdai). Chaque année, les organismes d’assurance sont tenus de signaler l’externalisation à IRDAi de certaines fonctions d’assistance des activités principales dans les 45 jours suivant la clôture de l’exercice financier. (La page 7 de la [liste de vérification](https://servicetrust.microsoft.com/Documents/TrustDocuments?command=Download&downloadType=Document&downloadId=26f4af15-2771-4cd4-a7c7-9328149f9453&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides) Microsoft décrit ce qui constitue la « fonction de support des activités principales ».
+- [Externalisation des activités par le règlement des invérifiateurs Indiens](https://www.irdai.gov.in/ADMINCMS/cms/frmGeneral_Layout.aspx?page=PageNo3149&flag=1) (irdai). Chaque année, les organismes d’assurance sont tenus de signaler l’externalisation à IRDAi de certaines fonctions d’assistance des activités principales dans les 45 jours suivant la clôture de l’exercice financier. (La page 7 de la [liste de vérification](https://servicetrust.microsoft.com/Documents/TrustDocuments?command=Download&downloadType=Document&downloadId=26f4af15-2771-4cd4-a7c7-9328149f9453&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides) Microsoft décrit ce qui constitue la « fonction de support des activités de base ».
 
 Les établissements financiers utilisant les services Cloud doivent également respecter les règles de confidentialité, y compris les technologies de l' [information (pratiques et procédures de sécurité raisonnables et données ou informations personnelles sensibles), 2011](https://meity.gov.in/sites/upload_files/dit/files/GSR313E_10511\(1\).pdf) (MeitY). Ces règles régissent la protection et la gestion des données personnelles sensibles de l’Inde.
 
@@ -43,7 +43,7 @@ Lorsque les établissements financiers Indiens ont externalisé des activités p
 
 La liste de vérification Microsoft aide les sociétés financières en Inde à évaluer la diligence des services Cloud d’entreprise Microsoft et comprend les éléments suivants :
 
-- Vue d’ensemble du paysage de la réglementation pour le contexte.
+- Vue d’ensemble du paysage réglementaire dans le contexte.
 - Liste de vérification qui décrit les problèmes à résoudre et les cartes Microsoft Azure, Microsoft Dynamics 365 et Microsoft Office 365 services par rapport à ces obligations réglementaires. La liste de contrôle peut être utilisée comme outil pour mesurer la conformité par rapport à un cadre réglementaire et fournir une structure interne pour documenter la conformité, et aider les clients à effectuer leurs propres évaluations des risques des services Cloud entreprise Microsoft.
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
@@ -55,14 +55,18 @@ La liste de vérification Microsoft aide les sociétés financières en Inde à 
 ## <a name="how-to-implement"></a>Modalités de mise en œuvre
 
 - [Liste de vérification de conformité pour l’Inde](https://servicetrust.microsoft.com/Documents/TrustDocuments?command=Download&downloadType=Document&downloadId=26f4af15-2771-4cd4-a7c7-9328149f9453&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides): les cabinets financiers peuvent obtenir de l’aide pour effectuer des évaluations de risques de Microsoft Business cloud services.
-- [Guide d'évaluation des risques et de conformité](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers): créez un modèle de gouvernance pour l'évaluation des risques des services de cloud computing Microsoft et la notification aux autorités de réglementation.
+- [Guide d'évaluation des risques et de la conformité](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers): créez un modèle de gouvernance pour l'évaluation des risques des services de cloud computing Microsoft et la notification aux autorités de régulation.
 - [Exemples d’utilisation financière pour Azure](https://docs.microsoft.com/azure/industry/financial/): présentations de cas d’utilisation, didacticiels et autres ressources pour créer des solutions Azure pour les services financiers.
 
-## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
-**Existe-t-il des conditions impératives devant être incluses dans le contrat avec le fournisseur de services Cloud ?**
+**Existe-t-il des conditions impératives devant être incluses dans le contrat avec le fournisseur de services cloud computing ?**
 
 Oui. Les recommandations mentionnées ci-dessus précisent certains points spécifiques que les établissements financiers doivent incorporer dans leurs contrats de services Cloud. La partie 2 de la [liste de contrôle](https://servicetrust.microsoft.com/Documents/TrustDocuments?command=Download&downloadType=Document&downloadId=26f4af15-2771-4cd4-a7c7-9328149f9453&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides) (page 70) les mappe par rapport aux sections des documents contractuels de Microsoft où elles sont adressées.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Utiliser le gestionnaire de conformité Microsoft pour évaluer votre risque
+
+Le [Gestionnaire de conformité Microsoft](compliance-manager.md) est une fonctionnalité du [Centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Le gestionnaire de conformité offre un modèle Premium pour la création d’une évaluation pour cette réglementation. Recherchez le modèle dans la page **modèles d’évaluation** du gestionnaire de conformité. Découvrez comment [créer des évaluations dans le gestionnaire de conformité](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressources
 

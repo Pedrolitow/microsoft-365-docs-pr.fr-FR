@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: cbf8b04fe4e3d301d3ee79c09895093f97c2e785
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 89f7e0ca95144e783b70e23c21008dcc46328522
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417348"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208456"
 ---
 # <a name="family-educational-rights-and-privacy-act-ferpa"></a>Loi sur la confidentialité et les droits d’enseignement familial (FERPA)
 
@@ -57,7 +57,7 @@ Les services pour lesquels Microsoft s’engagent à être désignés comme un �
 
 FERPA n’exige ni ne reconnaît les audits ou les certifications.
 
-## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 **Pourquoi FERPA est-il important ?**
 
@@ -67,6 +67,10 @@ Cette loi fédérale américaine impose la protection de la vie privée des enre
 
 - [Registre fédéral : règle finale FERPA](https://aka.ms/ferpa-reg) (2011 décembre)
 - [Guide général FERPA pour les parents](https://www2.ed.gov/policy/gen/guid/fpco/ferpa/parents.html)
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Utiliser le gestionnaire de conformité Microsoft pour évaluer votre risque
+
+Le [Gestionnaire de conformité Microsoft](compliance-manager.md) est une fonctionnalité du [Centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Le gestionnaire de conformité offre un modèle Premium pour la création d’une évaluation pour cette réglementation. Recherchez le modèle dans la page **modèles d’évaluation** du gestionnaire de conformité. Découvrez comment [créer des évaluations dans le gestionnaire de conformité](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressources
 

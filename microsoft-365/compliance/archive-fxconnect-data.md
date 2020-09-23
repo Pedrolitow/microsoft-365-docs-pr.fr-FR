@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données à partir de Globanet FX Connect dans Microsoft 365. Ce connecteur vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 de sorte que vous puissiez utiliser les fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: d22313ab1de1700c14ee4b35f6a0e3dbcae73ae3
-ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
+ms.openlocfilehash: e56c0bc1ab16d9790e56bf0baf054057121ff94c
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47405585"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197245"
 ---
-# <a name="set-up-a-connector-to-archive-fx-connect-data-preview"></a>Configurer un connecteur pour archiver les données FX Connect (aperçu)
+# <a name="set-up-a-connector-to-archive-fx-connect-data"></a>Configurer un connecteur pour archiver les données FX Connect
 
 Utilisez un connecteur Globanet dans le centre de conformité Microsoft 365 pour importer et archiver des données à partir de la plateforme FX Connect collaboration vers des boîtes aux lettres utilisateur dans votre organisation Microsoft 365. Globanet fournit un connecteur [FX Connect](https://globanet.com/fx-connect/) qui est configuré pour capturer des éléments de connexion FX et les importer dans Microsoft 365. Le connecteur convertit le contenu de FX Connect, tel que les échanges, les messages et les autres détails du compte FX Connect de votre organisation, vers un format de message électronique, puis importe ces éléments dans la boîte aux lettres de l’utilisateur dans Microsoft 365.
 
@@ -90,4 +89,4 @@ Après avoir créé le connecteur FX Connect, vous pouvez afficher l’état du 
 
 ## <a name="known-issues"></a>Problèmes connus
 
-- Pour le moment, nous ne prenons pas en charge l’importation de pièces jointes d’une taille supérieure à 10 Mo, mais la prise en charge des éléments plus importants sera disponible ultérieurement.
+- Pour le moment, nous ne prenons pas en charge l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo. La prise en charge des éléments plus importants sera disponible ultérieurement.

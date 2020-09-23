@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: fa38b81ff02729f1bd874c1ac286712b0a6bbb7a
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 9ff029904a34291f4131f2013ffe30b73aa3233c
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416808"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208780"
 ---
 # <a name="insider-risk-management-policies"></a>Stratégies de gestion des risques internes
 
@@ -71,7 +71,7 @@ Lors de la création ou de la modification de stratégies DLP à utiliser avec d
 
 Chaque stratégie de gestion des risques inSided créée à partir du modèle **fuites de données** ne peut avoir qu’une seule stratégie DLP affectée. Envisagez de créer une stratégie DLP dédiée qui combine les différentes activités que vous souhaitez détecter et agir en tant qu’événements déclencheurs pour les stratégies de risque d’initié qui utilisent le modèle **fuites de données** .
 
-Consultez la rubrique [créer, tester et régler une stratégie DLP](create-test-tune-dlp-policy.md) pour obtenir des instructions détaillées sur la configuration des stratégies DLP pour votre organisation.
+Consultez l’article [créer, tester et ajuster une stratégie DLP](create-test-tune-dlp-policy.md) pour obtenir des instructions détaillées sur la configuration des stratégies DLP pour votre organisation.
 
 ### <a name="data-leaks-by-priority-users-preview"></a>Fuites de données par les utilisateurs prioritaires (aperçu)
 
@@ -115,6 +115,9 @@ Vous devrez également disposer de Microsoft Defender ATP configuré dans votre 
 
 ### <a name="offensive-language-in-email"></a>Langage offensant dans les messages électroniques
 
+>[!IMPORTANT]
+>À partir du 16 octobre 2020, vous ne pourrez plus créer de stratégies à l’aide de ce modèle. Toutes les stratégies actives qui utilisent ce modèle fonctionneront jusqu’à ce qu’elles soient définitivement supprimées en janvier 2021. Nous déconfigurons le classifieur intégré en langage offensant qui prend en charge ce modèle car il génère un nombre élevé de faux positifs. Pour résoudre les problèmes de risque pour le langage offensant, nous vous recommandons d’utiliser les stratégies de [conformité de communication](communication-compliance.md) Microsoft 365. Pour plus d’informations sur les classifieurs intégrés, voir [Getting Started with trainable Classifiers](classifier-get-started-with.md).
+
 Détecter et prendre des mesures pour empêcher les comportements offensants et violent est un élément essentiel de la prévention des risques. Les classifieurs intégrés de Microsoft 365 analysent les messages électroniques envoyés à partir de boîtes aux lettres Exchange Online de votre organisation pour différents types de problèmes de conformité. Ces classifieurs utilisent une combinaison d’intelligence artificielle et de mots clés pour identifier la langue du courrier électronique susceptible de violer les stratégies anti-harcèlement. Utilisez ce modèle pour créer rapidement une stratégie qui utilise ces classifieurs pour détecter automatiquement le contenu des messages électroniques qui peut être considéré comme injurieux ou choquant. La gestion des risques internes utilise des classifieurs qui analysent les messages électroniques envoyés pour les termes et les sentiments de langue anglaise pour le langage offensant.
 
 ### <a name="policy-template-prerequisites-and-triggering-events"></a>Conditions préalables et événements de déclenchement des modèles de stratégie
@@ -139,7 +142,7 @@ Le tableau suivant répertorie les événements de déclenchement et les éléme
 
 Les stratégies de gestion des risques internes prennent en charge la spécification d’une priorité plus élevée pour le contenu en fonction de son emplacement de stockage et de son classement. La spécification du contenu en tant que priorité augmente le score de risque pour toute activité associée, ce qui augmente à son tour le risque de générer une alerte de gravité élevée. Toutefois, certaines activités ne génèrent pas d’alerte en tout lieu, sauf si le contenu associé contient des types d’informations sensibles intégrés ou personnalisés ou s’il a été spécifié en tant que priorité dans la stratégie.
 
-Par exemple, votre organisation dispose d’un site SharePoint dédié pour un projet hautement confidentiel. Les fuites de données pour les informations de ce site SharePoint peuvent compromettre le projet et avoir un impact significatif sur sa réussite. En hiérarchisant ce site SharePoint dans une stratégie de fuites de données, les scores de risque pour les activités éligibles augmentent automatiquement. Cela augmente la probabilité que ces activités génèrent une alerte de risque d’initié et élève le niveau de gravité de l’alerte.
+Par exemple, votre organisation dispose d’un site SharePoint dédié pour un projet hautement confidentiel. Les fuites de données pour les informations de ce site SharePoint peuvent compromettre le projet et avoir un impact significatif sur sa réussite. En hiérarchisant ce site SharePoint dans une stratégie de fuites de données, les scores de risque pour les activités éligibles augmentent automatiquement. Cette définition des priorités augmente la probabilité que ces activités génèrent une alerte de risque d’initié et élève le niveau de gravité de l’alerte.
 
 Lorsque vous créez une stratégie de gestion des risques inSided dans l’Assistant stratégie, vous pouvez choisir parmi les priorités suivantes :
 

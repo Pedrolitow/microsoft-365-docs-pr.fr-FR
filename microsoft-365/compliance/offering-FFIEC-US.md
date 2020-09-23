@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 34feea4f90ddbb4036bb08c5548696f4fcd649a9
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: ccefeeb9b09ce35ed38587077d19be13d00b31b2
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417318"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208466"
 ---
 # <a name="federal-financial-institutions-examination-council-ffiec"></a>Conseil d’examen des institutions financières fédérales (FFIEC)
 
@@ -53,15 +53,15 @@ Pour vous aider à vous conformer aux exigences de FFIEC, les services de Cloud 
 
 Rapports d’attestations SOC Azure et Office 365.
 
-## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 **Puis-je utiliser Microsoft Compliance avec des normes SOC pour respecter les obligations de conformité de FFIEC pour mon institution ?**
 
-Pour vous aider à répondre à ces obligations, Microsoft fournit les spécificités de notre conformité aux normes SOC, comme décrit ci-dessus. Toutefois, il incombe à vous de déterminer si nos services sont conformes aux lois et réglementations applicables à votre institution. Le FFIEC indique également que les utilisateurs des rapports d’audit ou des révisions ne doivent pas reposer uniquement sur les informations contenues dans le rapport pour vérifier l’environnement de contrôle interne du TSP. Elles doivent utiliser des procédures de vérification et de surveillance supplémentaires, décrites plus en détail dans le [livret des technologies d’externalisation](https://ithandbook.ffiec.gov/it-booklets/outsourcing-technology-services.aspx) du Guide de l’examen informatique FFIEC.
+Pour vous aider à répondre à ces obligations, Microsoft fournit les spécificités de notre conformité aux normes SOC, comme décrit ci-dessus. Toutefois, il incombe à vous de déterminer si nos services sont conformes aux lois et réglementations applicables à votre institution. Le FFIEC indique également que les utilisateurs des rapports d’audit ou des révisions ne doivent pas reposer uniquement sur les informations contenues dans le rapport pour vérifier l’environnement de contrôle interne du TSP. Elles doivent utiliser des procédures de vérification et de surveillance supplémentaires, décrites plus en détail dans le [livret de technologies d’externalisation](https://ithandbook.ffiec.gov/it-booklets/outsourcing-technology-services.aspx) du Guide de l’examen informatique FFIEC.
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Utilisez le score de conformité Microsoft pour évaluer vos risques
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Utiliser le gestionnaire de conformité Microsoft pour évaluer votre risque
 
-[Le score de conformité Microsoft](compliance-score.md) est une fonctionnalité d’aperçu dans [le Centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Après avoir configuré le [score de conformité](compliance-score-setup.md), sélectionnez le [modèle FFIEC Office 365](https://go.microsoft.com/fwlink/?linkid=2117912) préconfiguré et le [modèle FFIEC Intune](https://go.microsoft.com/fwlink/?linkid=2118101) dans le menu déroulant **modèle** pour aider votre organisation à répondre aux exigences de la présente réglementation.
+Le [Gestionnaire de conformité Microsoft](compliance-manager.md) est une fonctionnalité du [Centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Le gestionnaire de conformité offre un modèle Premium pour la création d’une évaluation pour cette réglementation. Recherchez le modèle dans la page **modèles d’évaluation** du gestionnaire de conformité. Découvrez comment [créer des évaluations dans le gestionnaire de conformité](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressources
 
@@ -75,7 +75,7 @@ Pour vous aider à répondre à ces obligations, Microsoft fournit les spécific
 ## <a name="other-microsoft-resources-for-financial-services"></a>Autres ressources Microsoft pour les services financiers
 
 - [Programme de mise en conformité destiné au secteur des services financiers Microsoft](https://www.microsoft.com/download/details.aspx?id=55332)
-- [Conformité des services financiers dans Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
+- [Conformité destinée au secteur des services financiers dans Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Services Enterprise Cloud et financiers Microsoft](https://servicetrust.microsoft.com/viewpage/financialservicesoverview)
 - [Responsabilités partagées pour le cloud computing](https://aka.ms/sharedresponsibility)
 - [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

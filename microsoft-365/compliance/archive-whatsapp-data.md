@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: Les administrateurs peuvent configurer un connecteur de télémessage pour importer et archiver des données WhatsApp dans Microsoft 365. Cela vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 de sorte que vous puissiez utiliser les fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: fbd0e30cf8016da9479d5f1e24715d2e2aaa628c
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: a8a3465ca3f728290b69cf9b6c5d0820daf00221
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47361869"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199157"
 ---
-# <a name="set-up-a-connector-to-archive-whatsapp-data-preview"></a>Configuration d’un connecteur pour l’archivage des données WhatsApp (aperçu)
+# <a name="set-up-a-connector-to-archive-whatsapp-data"></a>Configuration d’un connecteur pour l’archivage des données WhatsApp
 
 Utilisez le connecteur de Télémessage dans le centre de conformité Microsoft 365 pour importer et archiver des appels WhatsApp, des conversations, des pièces jointes, des fichiers et des messages supprimés. Une fois que vous avez configuré et configuré un connecteur, celui-ci se connecte au compte de messagerie de votre organisation une fois par jour et importe la communication mobile des employés à l’aide de l’archiveur téléphonique des télémessages WhatsApp ou de l’archivage de Cloud WhatsApp sur les boîtes aux lettres de Microsoft 365.
 
@@ -86,4 +85,4 @@ Une fois que vous avez terminé les conditions préalables décrites dans la sec
 
 ## <a name="known-issues"></a>Problèmes connus
 
-- Pour le moment, nous ne prenons pas en charge l’importation de pièces jointes d’une taille supérieure à 10 Mo, mais la prise en charge des éléments plus importants sera disponible ultérieurement.
+- Pour le moment, nous ne prenons pas en charge l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo. La prise en charge des éléments plus importants sera disponible ultérieurement.

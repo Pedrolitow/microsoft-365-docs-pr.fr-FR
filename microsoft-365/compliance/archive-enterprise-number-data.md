@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données SMS et MMS à partir d’un programme d’archivage des numéros de Télémessage. Cela vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 de sorte que vous puissiez utiliser les fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: d2e871f6d2515ac49018c6710689517a7bde0985
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: 1152c5e1d658e33e3056873d2230f6f94e58adc1
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47362033"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200161"
 ---
-# <a name="set-up-a-connector-to-archive-enterprise-number-data-preview"></a>Configuration d’un connecteur pour l’archivage des données de numéro d’entreprise (aperçu)
+# <a name="set-up-a-connector-to-archive-enterprise-number-data"></a>Configuration d’un connecteur pour l’archivage des données de numéro d’entreprise
 
 Utilisez un connecteur de Télémessage dans le centre de conformité Microsoft 365 pour importer et archiver des messages SMS (Short Messaging Service) et MMS (Multimedia Messaging Service), des messages de conversation, des enregistrements d’appels vocaux et des journaux d’appels vocaux à partir de l’archiveur de numéros d’entreprise. Une fois que vous avez configuré et configuré un connecteur, celui-ci se connecte au compte de messagerie de votre organisation une fois par jour et importe les données de communication mobile des employés à l’aide du programme d’archivage de numéros de téléphone pour les boîtes aux lettres de Microsoft 365.
 
@@ -82,4 +81,4 @@ Une fois que vous avez terminé les conditions préalables décrites dans la sec
 
 ## <a name="known-issues"></a>Problèmes connus
 
-- Pour le moment, nous ne prenons pas en charge l’importation de pièces jointes d’une taille supérieure à 10 Mo, mais la prise en charge des éléments plus importants sera disponible ultérieurement.
+- Pour le moment, nous ne prenons pas en charge l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo. La prise en charge des éléments plus importants sera disponible ultérieurement.

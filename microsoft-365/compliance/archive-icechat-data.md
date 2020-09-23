@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données de l’outil de conversation ICE dans Microsoft 365. Cela vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 de sorte que vous puissiez utiliser les fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: b6b31c0ef9b083aa6432e35029fc14be1a817733
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 94a2d35b9bb8d3a0edae0eebeae53d7dd7b04af2
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358226"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196367"
 ---
-# <a name="set-up-a-connector-to-archive-ice-chat-data-preview"></a>Configuration d’un connecteur pour l’archivage des données de conversation ICE (aperçu)
+# <a name="set-up-a-connector-to-archive-ice-chat-data"></a>Configuration d’un connecteur pour l’archivage des données de conversation ICE
 
 Utilisez un connecteur natif dans le centre de conformité Microsoft 365 pour importer et archiver des données de conversation des services financiers à partir de l’outil de collaboration de conversation ICE. Une fois que vous avez configuré et configuré un connecteur, il se connecte au site ICE chat Secure (SFTP) de votre organisation une fois par jour, convertit le contenu des messages de conversation en format de message électronique, puis importe ces éléments dans des boîtes aux lettres dans Microsoft 365.
 
@@ -59,7 +59,7 @@ La première étape consiste à obtenir une copie des clés publiques pour le pr
 
 1. Accédez à [https://compliance.microsoft.com](https://compliance.microsoft.com) , puis cliquez sur **connecteurs de données** dans le volet de navigation de gauche.
 
-2. Sur la page **connecteurs de données (aperçu)** sous **chat Ice**, cliquez sur **Afficher**.
+2. Sur la page **connecteurs de données** , sous **conversation Ice**, cliquez sur **Afficher**.
 
 3. Sur la page **conversation Ice** , cliquez sur **Ajouter un connecteur**.
 

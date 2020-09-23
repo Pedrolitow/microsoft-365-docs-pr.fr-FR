@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Découvrez comment accéder au portail d’approbation de services Microsoft et l’utiliser pour vous aider à respecter les pratiques de sécurité, de confidentialité et de conformité.
-ms.openlocfilehash: 40c80c0256f730784373a0ff96474d02dbf175c5
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: a3a46884a41be31779b82a74bc2b6750dea697c5
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547472"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197761"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Prise en main du portail d’approbation de service Microsoft
 
@@ -68,11 +68,8 @@ Le lien **portail d’approbation de services** affiche la page d’accueil. Il 
 
 ### <a name="compliance-manager"></a>Gestionnaire de conformité
 
-Le gestionnaire de conformité est un outil d’évaluation de risque basé sur un flux de travail qui vous permet de suivre, d’affecter et de vérifier les activités de conformité réglementaire de votre organisation relatives aux services de Cloud Computing Microsoft, tels que Microsoft 365, Dynamics 365 et Azure. Utilisez le gestionnaire de conformité pour gérer la conformité réglementaire dans le modèle de responsabilité partagé du Cloud. En fonction de la version du gestionnaire de conformité que vous souhaitez utiliser, consultez les articles suivants pour plus d’informations :
-
-- [Gestionnaire de conformité Microsoft (classique)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
-
-- [Gestionnaire de conformité Microsoft (aperçu)](compliance-manager-overview.md)
+> [!IMPORTANT]
+> Le gestionnaire de conformité a été déplacé du portail d’approbation de service vers son nouvel emplacement dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com/). Toutes les données client ont été transférées vers le nouvel emplacement, de sorte que vous puissiez continuer à utiliser le gestionnaire de conformité sans interruption. Reportez-vous à la [documentation du gestionnaire de conformité](compliance-manager.md) pour obtenir des informations sur la configuration et pour en savoir plus sur les nouvelles fonctionnalités. Bien que la version classique du gestionnaire de conformité reste dans le portail d’approbation de services, tous les utilisateurs sont encouragés à utiliser le gestionnaire de conformité dans le centre de conformité Microsoft 365.
 
 ### <a name="trust-documents"></a>Documents approuvés
 
@@ -110,15 +107,9 @@ Cette nouvelle fonctionnalité vous permet d’enregistrer (ou d' *épingler*) d
 
 Accédez à **plus de > administrateur** pour accéder aux fonctions d’administration qui sont uniquement disponibles pour le compte d’administrateur général. Cette option est visible uniquement lorsque vous êtes connecté en tant qu’administrateur général. Il existe deux options dans le menu déroulant **administrateur** :
 
-- **Paramètres :** Cette page vous permet d’attribuer un accès basé sur les rôles (appelé *rôles d’utilisateur*) au gestionnaire de conformité.  Pour plus d’informations, voir :
+- **Paramètres :** Cette page vous permet d’affecter des rôles d’utilisateur pour le gestionnaire de conformité (classique).
 
-  - [Autorisations dans le gestionnaire de conformité (classique)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#permissions-and-role-based-access-control)
-
-  - [Autorisations dans le gestionnaire de conformité (aperçu)](compliance-manager-overview.md#permissions)
-
-  Vous pouvez également configurer la mise à jour des actions dans le gestionnaire de conformité en fonction de l’état de la même action dans le score de sécurité. Cette fonctionnalité n’est prise en charge que si vous utilisez la dernière version du gestionnaire de conformité. Pour plus d’informations, consultez la rubrique relative à la gestion des [mises à jour automatiques du score de sécurité](working-with-compliance-manager.md#controlling-automatic-secure-score-updates).
-
-- **Paramètres de confidentialité de l’utilisateur :** Cette page vous permet d’exporter un rapport qui contient des affectations d’éléments d’action dans le gestionnaire de conformité pour un utilisateur spécifique. Vous pouvez également réaffecter tous les éléments d’action à un autre utilisateur et supprimer les éléments d’action attribués de l’utilisateur spécifié. Pour plus d’informations, consultez la rubrique [paramètres de confidentialité](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#user-privacy-settings)de l’utilisateur.
+- **Paramètres de confidentialité de l’utilisateur :** Cette page vous permet d’exporter un rapport qui contient des affectations d’éléments d’action dans le gestionnaire de conformité (classique) pour un utilisateur spécifique. Vous pouvez également réaffecter tous les éléments d’action à un autre utilisateur et supprimer les éléments d’action attribués de l’utilisateur spécifié.
 
 ### <a name="search"></a>Recherche
 
@@ -126,9 +117,9 @@ Cliquez sur la loupe dans le coin supérieur droit de la page du portail d’app
 
 ![Portail d’approbation de services – Recherche de documents filtrée](../media/86b754e1-c63c-4514-89ac-d014bf334140.png)
 
-Par défaut, la recherche th renvoie les résultats du document. Vous pouvez filtrer les résultats à l’aide des listes déroulantes pour affiner la liste des documents affichés. Vous pouvez utiliser plusieurs filtres pour affiner la liste des documents. Les filtres incluent les services Cloud spécifiques, les catégories de conformité, les pratiques de sécurité, les régions et les industries. Cliquez sur le lien nom du document pour télécharger le document.
+Par défaut, la recherche renvoie les résultats du document. Vous pouvez filtrer les résultats à l’aide des listes déroulantes pour affiner la liste des documents affichés. Vous pouvez utiliser plusieurs filtres pour affiner la liste des documents. Les filtres incluent les services Cloud spécifiques, les catégories de conformité, les pratiques de sécurité, les régions et les industries. Cliquez sur le lien nom du document pour télécharger le document.
 
-Pour répertorier les contrôles des évaluations dans le gestionnaire de conformité liées à vos termes de recherche, cliquez sur **Gestionnaire de conformité**. Les résultats de la recherche indiquent la date à laquelle l’évaluation a été créée, le nom du regroupement d’évaluation, le service Cloud Microsoft applicable et si le contrôle est géré par Microsoft ou par le client. Cliquez sur le nom du contrôle pour afficher le contrôle dans le gestionnaire de conformité.
+Pour répertorier les contrôles des évaluations dans le gestionnaire de conformité (classique) associés à vos termes de recherche, cliquez sur **Gestionnaire de conformité**. Les résultats de la recherche indiquent la date à laquelle l’évaluation a été créée, le nom du regroupement d’évaluation, le service Cloud Microsoft applicable et si le contrôle est géré par Microsoft ou par le client. Cliquez sur le nom du contrôle pour afficher le contrôle dans le gestionnaire de conformité (Classic).
 
 ![Portail d’approbation de services – Recherche sur les contrôles du Gestionnaire de conformité](../media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
 

@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 0c0c529569ae1c4ca0ed54863b8b2ddcfcfcba2d
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 602571e5cbd3132209382ca2e2a3d8941ea8ab2e
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416858"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208825"
 ---
 # <a name="insider-risk-management-alerts"></a>Alertes de gestion des risques internes
 
@@ -56,7 +56,7 @@ Les niveaux de gravité des risques d’alerte sont les suivants :
 - **Gravité moyenne**: les activités et indicateurs de l’alerte posent un risque modéré. Les activités de risque associées sont modérées, fréquentes et présentent une corrélation avec d’autres facteurs de risque.
 - **Faible gravité**: les activités et indicateurs de l’alerte posent un risque mineur. Les activités de risque associées sont mineures, plus rares et ne sont pas liées à d’autres facteurs de risque significatifs.
 
-## <a name="filter-alerts"></a>Alertes de filtre
+## <a name="filter-alerts-on-the-alert-dashboard"></a>Filtrer les alertes dans le tableau de bord d’alerte
 
 Selon le nombre et le type de stratégies de gestion des risques internes actif au sein de votre organisation, il peut être difficile de réviser une grande file d’alertes. L’utilisation de filtres d’alerte permet aux analystes et aux enquêteurs de trier les alertes en fonction de plusieurs attributs. Pour filtrer les alertes dans le **tableau de bord alertes**, sélectionnez le contrôle de **filtre** . Vous pouvez filtrer les alertes par un ou plusieurs attributs :
 
@@ -65,7 +65,7 @@ Selon le nombre et le type de stratégies de gestion des risques internes actif 
 - **Heure détectée**: sélectionnez les dates de début et de fin de la date de création de l’alerte.
 - **Stratégie**: sélectionnez une ou plusieurs stratégies pour filtrer les alertes générées par les stratégies sélectionnées.
 
-## <a name="search-alerts"></a>Alertes de recherche
+## <a name="search-alerts-on-the-alert-dashboard"></a>Alertes de recherche dans le tableau de bord d’alerte
 
 Pour rechercher le nom d’une alerte pour un mot spécifique, sélectionnez la commande**Recherche** et tapez le mot à rechercher. Les résultats de la recherche affichent une alerte de stratégie contenant le mot défini dans la recherche.
 
@@ -76,16 +76,36 @@ Pour trier une alerte de risque d’initié, procédez comme suit :
 1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com), accédez à **gestion des risques internes** et sélectionnez l’onglet **alertes** .
 2. Dans le **tableau de bord alertes**, sélectionnez l’alerte à trier.
 3. Dans le **volet Détails des alertes**, vous pouvez passer en revue les onglets suivants et trier l’alerte :
-    - **Vue d’ensemble**: cet onglet contient des informations générales sur l’alerte et vous permet de confirmer l’alerte et de créer un nouvel incident ou de faire disparaître l’alerte.
-        - **État**: état de l’alerte.
-        - **Heure de détection**: durée écoulée depuis la génération de l’alerte.
-        - **Correspondances de stratégie**: les stratégies qui ont généré l’alerte sont répertoriées. Chaque stratégie est indiquée sous la forme d’un lien vers les détails de la stratégie.
-        - **Gravité**: niveau de gravité des risques d’alerte actuel, *élevé*, *moyen*ou *faible*. Le niveau de gravité peut augmenter ou diminuer au fil du temps si l’alerte n’est pas en cours de triage.
-        - **Cas**: si confirmé, la casse générée à partir de l’alerte est indiquée. Pour les nouvelles alertes, le champ **case** affiche *aucun*.
+    - **Résumé**: cet onglet contient des informations générales sur l’alerte et vous permet de confirmer l’alerte et de créer un nouvel incident ou de faire disparaître l’alerte. Elle inclut l’état actuel de l’alerte et le niveau de gravité des risques d’alerte, dont la taille est *élevée*, *moyenne*ou *faible*. Le niveau de gravité peut augmenter ou diminuer au fil du temps si l’alerte n’est pas en cours de triage.
+        - **Qu’est-il advenu**: affiche les trois principales activités et stratégies de risques lors de la période d’évaluation de l’activité, y compris le type de violation associé à l’activité.
+        - **Détails**de l’utilisateur : affiche des informations générales sur l’utilisateur affecté à l’alerte. Si l’anonymisation est activée, les champs nom d’utilisateur, adresse de messagerie, alias et organisation sont anonymes.
+        - **Détails**de l’alerte : inclut le laps de temps écoulé depuis que l’alerte a été générée, les stratégies qui ont généré l’alerte sont répertoriées et l’incident généré à partir de l’alerte est répertorié. Pour les nouvelles alertes, le champ **case** affiche aucun.
+        - **Contenu détecté**: inclut le contenu associé aux activités de risque pour l’alerte et résume les événements d’activité par domaines clés. La sélection d’un lien activité ouvre l’Explorateur d’activités et affiche des détails supplémentaires sur l’activité.
     - **Activité**de l’utilisateur : cet onglet affiche l’historique des activités de l’utilisateur associé à l’alerte. Cet historique inclut d’autres alertes et activités liées aux indicateurs de risque définis dans le modèle affecté à la stratégie pour cette alerte. Cet historique permet aux analystes et aux investigateurs de risque de factoriser tout comportement à risque passé pour l’employé dans le cadre du processus de triage.
-    - **Profil utilisateur**: cet onglet affiche les informations générales sur l’employé affecté à l’alerte. Si l’anonymisation est activée, les champs nom d’utilisateur, adresse de messagerie, alias et organisation sont anonymes.
-    - **Confirmer et créer un cas**: visible sur tous les onglets, utilisez ce bouton pour confirmer et créer un nouveau cas. Cette action modifie automatiquement le statut de l’alerte sur *confirmé*.
-    - **Faire disparaître l’alerte**: visible sur tous les onglets, utilisez ce bouton pour faire disparaître l’alerte. Cette action modifie l’état de l’alerte en *résolu*.
+    - **Actions**: les actions suivantes sont disponibles pour chaque alerte :
+        - **Ouvrir le mode développé**: ouvre le tableau de bord de l' **Explorateur d’activités** .
+        - **Confirm and Create case**: utilisez cette action pour confirmer et créer une nouvelle demande de devis pour toutes les alertes associées à un utilisateur. Cette action modifie automatiquement le statut de l’alerte sur *confirmé*.
+        - **Ignorer l’alerte**: utilisez cette action pour faire disparaître l’alerte. Cette action modifie l’état de l’alerte en *résolu*.
+
+## <a name="activity-explorer-preview"></a>Explorateur d’activités (aperçu)
+
+>[!NOTE]
+>L’Explorateur d’activités est disponible dans la zone de gestion des alertes pour les utilisateurs qui déclenchent des événements une fois que cette fonctionnalité est disponible dans votre organisation.
+
+L’Explorateur d’activités fournit aux enquêteurs et analystes de risques un outil d’analyse complet qui fournit des informations détaillées sur les alertes. Avec l’Explorateur d’activités, les relecteurs peuvent rapidement consulter une chronologie de l’activité dangereuse détectée et identifier et filtrer toutes les activités liées aux risques associées aux alertes. Pour filtrer les alertes dans l’Explorateur d’activités, sélectionnez le contrôle de filtre. Vous pouvez filtrer les alertes par un ou plusieurs attributs figurant dans le volet d’informations de l’alerte. Activity Explorer prend également en charge les colonnes personnalisables pour aider les enquêteurs et les analystes à orienter le tableau de bord sur les informations les plus importantes pour eux.
+
+![Vue d’ensemble de l’activité de gestion des risques Insiders](../media/insider-risk-management-activity-explorer.png)
+
+Pour utiliser l' **Explorateur d’activités**, procédez comme suit :
+
+1. Dans le centre de conformité Microsoft 365, accédez à **gestion des risques internes** et sélectionnez l’onglet **alertes** .
+2. Dans le **tableau de bord alertes**, sélectionnez l’alerte à trier.
+3. Dans le **volet Détails des alertes**, sélectionnez **ouvrir le mode étendu**.
+4. Sur la page de l’alerte sélectionnée, sélectionnez l’onglet **Explorateur d’activités** .
+
+Lors de l’examen des activités dans l’Explorateur d’activités, les investigateurs et les analystes peuvent sélectionner une activité spécifique et ouvrir le volet des détails de l’activité. Le volet affiche des informations détaillées sur l’activité que les enquêteurs et les analystes peuvent utiliser lors du processus de triage des alertes. Les informations détaillées peuvent fournir un contexte pour l’alerte et aider à identifier l’étendue complète de l’activité de risque qui a déclenché l’alerte.
+
+![Détails de l’Explorateur d’activités de gestion des risques Insiders](../media/insider-risk-management-activity-explorer-details.png)
 
 ## <a name="create-a-case-for-an-alert"></a>Créer un cas pour une alerte
 
@@ -93,6 +113,8 @@ Lorsque l’alerte est vérifiée et triée, vous pouvez créer un nouveau cas a
 
 1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com), accédez à **gestion des risques internes** et sélectionnez l’onglet **alertes** .
 2. Dans le **tableau de bord alertes**, sélectionnez l’alerte à vérifier et créez une nouvelle demande de devis.
-3. Dans le **volet d’informations alertes**, sélectionnez **confirmer et créer un cas**.
+3. Dans le **volet d’informations alertes**, sélectionnez **actions**:  >  **confirmer les alertes & créer un cas**.
 4. Dans la boîte de dialogue **confirmer l’alerte et créer un cas de risque Insider** , entrez un nom pour le cas, sélectionnez les utilisateurs à ajouter en tant que collaborateurs et ajoutez des commentaires, le cas échéant. Les commentaires sont automatiquement ajoutés à l’incident sous la forme d’une note de cas.
 5. Sélectionnez **créer un cas** pour créer une nouvelle demande de devis ou cliquez sur **Annuler** pour fermer la boîte de dialogue sans créer de cas.
+
+Une fois le cas créé, les enquêteurs et les analystes peuvent gérer et agir sur le cas. Pour plus d’informations, consultez l’article relatif à un [cas de gestion des risques inSided](insider-risk-management-cases.md) .

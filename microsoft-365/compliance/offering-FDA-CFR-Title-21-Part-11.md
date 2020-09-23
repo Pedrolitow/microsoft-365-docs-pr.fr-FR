@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: fa93c78d240c243911e21e687ef5d02c29b714b2
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 59e11a5e0142647003ea4b0e9f1876ebedb37d00
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417338"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208446"
 ---
 # <a name="food-and-drug-administration-cfr-title-21-part-11"></a>Food and Drug Administration CFR titre 21, partie 11
 
@@ -59,7 +59,7 @@ Bien qu’il n’existe pas de certification pour se conformer au titre CFR 21 p
 
 Les rapports d’audit pour les normes SOC 1 et SOC 2 type 2, ISO/IEC 27001 et ISO/IEC 27018 attestent de l’efficacité des contrôles que Microsoft a mis en œuvre et peuvent aider les clients à se conformer à la norme FDA CFR titre 21 partie 11.
 
-## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 **À qui la norme s'applique-t-elle ?**
 
@@ -79,9 +79,13 @@ Le [portail d’approbation de services](https://aka.ms/stphelp) fournit des rap
 
 Oui. Les rapports de conformité indépendants tiers des normes CEI/ISO 27001, ISO/IEC 27018, SOC 1 et SOC 2 attestent de l’efficacité des contrôles Microsoft. Les clients du Cloud d’entreprise Microsoft peuvent utiliser les contrôles audités décrits dans ces rapports connexes dans le cadre de leur propre rubrique CFR titre 21 de la partie 11 sur l’analyse des risques et les efforts de qualification. Les clients qui créent et déploient des applications soumises au règlement de la FDA sont chargés de s’assurer que leurs applications répondent aux exigences de la FDA.
 
-**Quelles sont les responsabilités de Microsoft en matière de conformité à cette norme ?**
+**Quelles sont les responsabilités de Microsoft en termes de respect de la conformité à cette norme ?**
 
 Microsoft veille à ce que ses services Cloud d’entreprise respectent les termes définis dans les [conditions des services en ligne](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31) et les contrats de niveau de service (SLA) applicables. Ces éléments définissent la responsabilité de l’implémentation et de la maintenance des contrôles appropriés pour sécuriser et surveiller le système.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Utiliser le gestionnaire de conformité Microsoft pour évaluer votre risque
+
+Le [Gestionnaire de conformité Microsoft](compliance-manager.md) est une fonctionnalité du [Centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Le gestionnaire de conformité offre un modèle Premium pour la création d’une évaluation pour cette réglementation. Recherchez le modèle dans la page **modèles d’évaluation** du gestionnaire de conformité. Découvrez comment [créer des évaluations dans le gestionnaire de conformité](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressources
 

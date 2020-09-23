@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données à partir du connecteur WebEx teams d’Globanet dans Microsoft 365. Ce connecteur vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 de sorte que vous puissiez utiliser les fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: c345edd3a560fff3818cdc7a52ad04e03279f339
-ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
+ms.openlocfilehash: 3d9693fd1baf990ba3ca956c8a24d8d796e80995
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47405443"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196563"
 ---
-# <a name="set-up-a-connector-to-archive-webex-teams-data-preview"></a>Configuration d’un connecteur pour l’archivage des données de teams WebEx (aperçu)
+# <a name="set-up-a-connector-to-archive-webex-teams-data"></a>Configuration d’un connecteur pour l’archivage des données de teams WebEx
 
 Utilisez un connecteur Globanet dans le centre de conformité Microsoft 365 pour importer et archiver des données d’une équipe WebEx vers des boîtes aux lettres utilisateur dans votre organisation Microsoft 365. Globanet fournit un connecteur [WebEx teams](https://globanet.com/webex-teams/) qui est configuré pour capturer des éléments de communication avec WebEx teams et les importer dans Microsoft 365. Le connecteur convertit le contenu de WebEx Teams, par exemple 1:1 conversations, les conversations de groupe, les conversations de canal et les pièces jointes du compte WebEx teams de votre organisation, vers un format de message électronique, puis importe ces éléments dans la boîte aux lettres de l’utilisateur dans Microsoft 365.
 
@@ -94,4 +93,4 @@ Une fois que vous avez créé le connecteur WebEx Teams, vous pouvez afficher l�
 
 ## <a name="known-issues"></a>Problèmes connus
 
-- Pour le moment, nous ne prenons pas en charge l’importation de pièces jointes d’une taille supérieure à 10 Mo, mais la prise en charge des éléments plus importants sera disponible ultérieurement.
+- Pour le moment, nous ne prenons pas en charge l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo. La prise en charge des éléments plus importants sera disponible ultérieurement.

@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: Les administrateurs peuvent configurer un connecteur de télémessage pour importer et archiver des données SMS et MMS à partir du réseau mobile O2 dans Microsoft 365. Cela vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 de sorte que vous puissiez utiliser les fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: afcb7708cacd2ec04f79cdb03ce3d799232014a7
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: 39a56e58bd9259b31138a4acf58a5ea5f432bc15
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47362023"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196299"
 ---
-# <a name="set-up-a-connector-to-archive-o2-network-data-preview"></a>Configuration d’un connecteur pour l’archivage des données réseau O2 (aperçu)
+# <a name="set-up-a-connector-to-archive-o2-network-data"></a>Configuration d’un connecteur pour l’archivage des données réseau O2
 
 Utilisez un connecteur de Télémessage dans le centre de conformité Microsoft 365 pour importer et archiver des messages SMS (Short Messaging Service) et des appels vocaux à partir du réseau mobile O2. Une fois que vous avez configuré et configuré un connecteur, celui-ci se connecte au réseau O2 de votre organisation une fois par jour et importe des appels SMS et vocaux vers des boîtes aux lettres dans Microsoft 365.
 
@@ -88,4 +87,4 @@ Une fois que vous avez terminé les conditions préalables décrites dans la sec
 
 ## <a name="known-issues"></a>Problèmes connus
 
-- Pour le moment, nous ne prenons pas en charge l’importation de pièces jointes d’une taille supérieure à 10 Mo, mais la prise en charge des éléments plus importants sera disponible ultérieurement.
+- Pour le moment, nous ne prenons pas en charge l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo. La prise en charge des éléments plus importants sera disponible ultérieurement.

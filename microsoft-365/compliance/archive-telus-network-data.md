@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: Les administrateurs peuvent configurer un connecteur de télémessage pour importer et archiver des données SMS à partir du réseau TELUS dans Microsoft 365. Cela vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 de sorte que vous puissiez utiliser les fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: cfb15d7f7c6783d2a155587342e9224f4648d2cc
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: 49178d50550df64df77f92dfa5725ec02432aab7
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47361839"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196721"
 ---
-# <a name="set-up-a-connector-to-archive-telus-network-data-preview"></a>Configuration d’un connecteur pour l’archivage des données de réseau TELUS (aperçu)
+# <a name="set-up-a-connector-to-archive-telus-network-data"></a>Configuration d’un connecteur pour l’archivage des données de réseau TELUS
 
 Utilisez le connecteur de Télémessage dans le centre de conformité Microsoft 365 pour importer et archiver des données SMS (Short Messaging Service) à partir du réseau TELUS de votre organisation. Une fois que vous avez configuré et configuré un connecteur, celui-ci se connecte au réseau TELUS de votre organisation une fois par jour et importe les données SMS vers des boîtes aux lettres dans Microsoft 365.
 
@@ -88,4 +87,4 @@ Une fois que vous avez terminé les conditions préalables décrites dans la sec
 
 ## <a name="known-issues"></a>Problèmes connus
 
-- Pour le moment, nous ne prenons pas en charge l’importation de pièces jointes d’une taille supérieure à 10 Mo, mais la prise en charge des éléments plus importants sera disponible ultérieurement.
+- Pour le moment, nous ne prenons pas en charge l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo. La prise en charge des éléments plus importants sera disponible ultérieurement.

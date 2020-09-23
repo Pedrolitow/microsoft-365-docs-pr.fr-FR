@@ -11,18 +11,17 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données à partir d’une marge Globanet dans Microsoft 365. Ce connecteur vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 de sorte que vous puissiez utiliser les fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: 6466beb6115037ff726b1e5fd3350032bceb2230
-ms.sourcegitcommit: a3c2c737995088c1bad3b12ab401a7ef242b0272
+ms.openlocfilehash: 532b8a8eb4331d66e1c7522d79bde2b5b6b0a02f
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47957033"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196757"
 ---
-# <a name="set-up-a-connector-to-archive-slack-data-preview"></a>Configurer un connecteur pour archiver les données de marge (aperçu)
+# <a name="set-up-a-connector-to-archive-slack-data"></a>Configurer un connecteur pour archiver les données de marge
 
-Utilisez un connecteur Globanet dans le centre de conformité Microsoft 365 pour importer et archiver des données tierces à partir de plateformes de réseau social, de messagerie instantanée et de collaboration sur des documents, vers des boîtes aux lettres de votre organisation Microsoft 365. Globanet fournit un connecteur de [connecteur de données de marge](https://globanet.com/slack/) dans le centre de conformité Microsoft 365 que vous pouvez configurer pour capturer des éléments à partir de la source de données tierce (de manière régulière), puis les importer dans Microsoft 365. La marge extrait les messages et les fichiers de l’API de marge et les convertit en format de message électronique, puis les importe dans les boîtes aux lettres utilisateur dans Microsoft 365.
+Utilisez un connecteur Globanet dans le centre de conformité Microsoft 365 pour importer et archiver des données tierces à partir de plateformes de réseau social, de messagerie instantanée et de collaboration sur des documents, vers des boîtes aux lettres de votre organisation Microsoft 365. Globanet fournit un connecteur de marge qui est configuré pour capturer des éléments à partir de la source de données tierce (de manière régulière), puis les importer dans Microsoft 365. La marge extrait les messages et les fichiers de l’API de marge et les convertit en format de message électronique, puis importe l’élément dans les boîtes aux lettres utilisateur.
 
 Une fois que les données de marge sont stockées dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer les fonctionnalités de conformité de Microsoft 365 telles que la conservation pour litige, eDiscovery, les stratégies de rétention et les étiquettes de rétention, et la conformité L’utilisation d’un connecteur de marge pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à respecter les stratégies gouvernementales et réglementaires.
 
@@ -92,4 +91,4 @@ Après avoir créé le connecteur de marge, vous pouvez afficher l’état du co
 
 ## <a name="known-issues"></a>Problèmes connus
 
-- Pour le moment, nous ne prenons pas en charge l’importation des pièces jointes et des éléments dont la taille est supérieure à 10 Mo. La prise en charge des éléments plus importants sera disponible ultérieurement.
+- Pour le moment, nous ne prenons pas en charge l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo. La prise en charge des éléments plus importants sera disponible ultérieurement.
