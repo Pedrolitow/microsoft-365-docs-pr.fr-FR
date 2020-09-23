@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: c6643b30327b7f362c4649c2be1b1eea81ff3523
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 2d9d166c8e9fd16b09964c75a3b6bace05265120
+ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203626"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48235465"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Fonctionnalités du score de sécurité Microsoft
 
@@ -33,8 +33,10 @@ Nous apportons des modifications à l’avenir proche pour faire en sorte que [M
 
 ## <a name="proposed-changes"></a>Proposed changes
 
-### <a name="september-2020"></a>Septembre 2020
-- Aucune modification prévue
+### <a name="october-2020"></a>Octobre 2020
+
+#### <a name="remove-improvement-action-for-microsoft-defender-advanced-threat-protection"></a>Supprimer l’action d’amélioration pour la protection avancée contre les menaces Microsoft Defender
+- Activer la vérification du contenu Web de l’application Windows Store SmartScreen de Microsoft Defender pour avertir
 
 ## <a name="related-resources"></a>Ressources connexes
 

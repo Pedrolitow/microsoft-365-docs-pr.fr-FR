@@ -3,7 +3,7 @@ title: Suppression des licences Microsoft 365 des comptes d’utilisateur avec P
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/17/2020
+ms.date: 09/23/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,16 +20,20 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
 description: Explique comment utiliser PowerShell pour supprimer des licences Microsoft 365 qui ont été précédemment attribuées à des utilisateurs.
-ms.openlocfilehash: 815b2290ca3b5ac4ee3cfec87383161ea70f3dca
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 7651f300dbf7a57ce163096d500401365e624663
+ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46689702"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48235453"
 ---
 # <a name="remove-microsoft-365-licenses-from-user-accounts-with-powershell"></a>Suppression des licences Microsoft 365 des comptes d’utilisateur avec PowerShell
 
-*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
+
+>[!Note]
+>[Découvrez comment supprimer des licences de comptes d’utilisateur](https://docs.microsoft.com/microsoft-365/admin/manage/remove-licenses-from-users) avec le centre d’administration Microsoft 365. Pour obtenir la liste des ressources supplémentaires, consultez la rubrique [gérer les utilisateurs et les groupes](https://docs.microsoft.com/microsoft-365/admin/add-users/).
+>
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Utilisation du module Azure Active Directory PowerShell pour Graph
 
