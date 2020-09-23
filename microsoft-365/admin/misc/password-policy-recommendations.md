@@ -19,15 +19,15 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Découvrez comment renforcer la sécurité de votre organisation contre les attaques par mot de passe et la raison pour laquelle vous devez interdire les mots de passe courants et activer l’authentification multifacteur basée sur le risque.
-ms.openlocfilehash: 1d6e399acb83751ec6a45eb0c811dedec394127e
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.openlocfilehash: 0ae26dc27cc698c24d999acde03f63f9cfead081
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45015922"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131941"
 ---
 # <a name="password-policy-recommendations"></a>Recommandations en matière de stratégie de mot de passe
- 
+
 En tant qu’administrateur d’une organisation, vous êtes chargé de la configuration d'une stratégie de mot de passe pour les utilisateurs au sein de votre organisation. La configuration d'une stratégie de mot de passe peut être complexe et déconcertante. Cet article vous fournit des recommandations pour renforcer la sécurité de votre organisation contre les attaques par mot de passe.
   
 Pour déterminer la fréquence d’expiration des mots de passe Microsoft 365 dans votre organisation, consultez la page [Définir une stratégie d’expiration de mot de passe pour Microsoft 365](../manage/set-password-expiration-policy.md).
@@ -78,11 +78,11 @@ Voici quelques-unes des pratiques les plus couramment utilisées en matière de 
   
 ### <a name="password-expiration-requirements-for-users"></a>Exigences d’expiration du mot de passe pour les utilisateurs
 
-Les conditions d’expiration du mot de passe sont plus néfastes que bénéfiques, car elles permettent aux utilisateurs de sélectionner des mots de passe sans surprise, composés de mots et de chiffres à caractère séquentiel très liés entre eux. Dans ce cas, le mot de passe suivant peut être déterminé en se basant sur le mot de passe précédent. Les exigences en matière d’expiration de mot de passe ne présentent aucun avantage de confinement, car les cybercriminels utilisent pratiquement toujours les informations d’identification dès qu’ils les compromettent.
+Les conditions d’expiration du mot de passe sont plus néfastes que bénéfiques, car elles permettent aux utilisateurs de sélectionner des mots de passe sans surprise, composés de mots et de chiffres à caractère séquentiel très liés entre eux. Dans ce cas, le mot de passe suivant peut être déterminé en se basant sur le mot de passe précédent. Les exigences en matière d’expiration de mot de passe ne présentent aucun avantage de confinement, car les cybercriminels utilisent pratiquement toujours les informations d’identification dès qu’ils les compromettent. Pour plus d’informations, consultez [Il est temps de reconsidérer les changements de mots de passe obligatoires](https://go.microsoft.com/fwlink/p/?linkid=861018).
   
 ### <a name="requiring-long-passwords"></a>Exigence de mots de passe longs
 
-Les exigences de longueur de mot de passe (plus de 10 caractères environ) peuvent entraîner un comportement utilisateur prévisible et non souhaitable. Par exemple, il est possible que les utilisateurs devant utiliser un mot de passe de 16 caractères choisissent de répéter des modèles tels que **quatrequatrequatre** ou **motdepassemotdepasse** qui respectent les exigences de longueur de caractères, mais qui sont faciles à deviner. De plus, les exigences de longueur augmentent les risques d’adoption par les utilisateurs d’autres méthodes non sécurisées, telles que l’écriture sur papier de leurs mots de passe, leur réutilisation ou leur stockage non chiffré dans leurs documents. Pour inciter les utilisateurs à considérer un mot de passe unique, nous vous recommandons de conserver une exigence raisonnable d'une longueur minimale de 8 caractères. 
+Les exigences de longueur de mot de passe (plus de 10 caractères environ) peuvent entraîner un comportement utilisateur prévisible et non souhaitable. Par exemple, il est possible que les utilisateurs devant utiliser un mot de passe de 16 caractères choisissent de répéter des modèles tels que **quatrequatrequatre** ou **motdepassemotdepasse** qui respectent les exigences de longueur de caractères, mais qui sont faciles à deviner. De plus, les exigences de longueur augmentent les risques d’adoption par les utilisateurs d’autres méthodes non sécurisées, telles que l’écriture sur papier de leurs mots de passe, leur réutilisation ou leur stockage non chiffré dans leurs documents. Pour inciter les utilisateurs à considérer un mot de passe unique, nous vous recommandons de conserver une exigence raisonnable d'une longueur minimale de 8 caractères.
   
 ### <a name="requiring-the-use-of-multiple-character-sets"></a>Nécessité d’utiliser plusieurs jeux de caractères
 
@@ -131,8 +131,6 @@ L’authentification multifacteur basée sur le risque s'assure que, lorsque not
 - [L'heure est venue de reconsidérer les changement de mots de passe obligatoires](https://go.microsoft.com/fwlink/p/?linkid=861018)
 
 - [Plus mauvais mots de passe en 2015](https://go.microsoft.com/fwlink/p/?linkid=861020)
-
-- [Télécharger des fichiers sur le web](https://go.microsoft.com/fwlink/p/?linkid=861029)
 
 ## <a name="related-articles"></a>Articles connexes
 
