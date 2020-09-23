@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: cec98f979a19c91946564aa402d1880c3ee08d5a
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 8c56b7b597ea76c74412f49afa896a0d2f1b69a1
+ms.sourcegitcommit: 4ee683c18442386f6fc5c76ffabfad2c28b81d42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416778"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48214903"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Prise en main des paramètres de gestion des risques initiés
 
@@ -27,8 +27,11 @@ Les paramètres de gestion des risques initiaux s’appliquent à toutes les str
 - Indicateurs
 - Chronologies des stratégies
 - Détections intelligentes
-- Exporter des alertes
-- Groupes d’utilisateurs prioritaires
+- Exporter des alertes (aperçu)
+- Groupes d’utilisateurs prioritaires (aperçu)
+- Priorité des ressources physiques (aperçu)
+- Flux d’automates d’alimentation (aperçu)
+- Microsoft Teams (aperçu)
 
 Avant de commencer et de créer des stratégies de gestion des risques Insiders, il est important de comprendre ces paramètres et de définir les niveaux les plus adaptés aux besoins de conformité de votre organisation.
 
@@ -36,7 +39,7 @@ Avant de commencer et de créer des stratégies de gestion des risques Insiders,
 
 La protection de la confidentialité des utilisateurs disposant de correspondances de stratégie est importante et peut favoriser l'objectivité dans les examens et analyses de données pour les alertes de risque internes. Pour les utilisateurs avec une stratégie de risque Insider, vous pouvez choisir l’un des paramètres suivants :
 
-- **Afficher les versions anonymes des**noms d’utilisateur : les noms d’utilisateur sont rendus anonymes pour empêcher les administrateurs, les investigateurs de données et les relecteurs de voir qui est associé à des alertes de stratégie. Par exemple, un utilisateur « Grace à Taylor » apparaît avec un pseudonyme aléatoire tel que « AnonIS8-988 » dans toutes les zones de l’expérience de gestion des risques internes. Le choix de ce paramètre permet d'anonymiser tous les utilisateurs ayant des correspondances de stratégie actuelle et passée et s’applique à toutes les stratégies. Les informations de profil utilisateur dans les détails des alertes de risque et des cas d’Insider ne seront pas disponibles lorsque cette option est sélectionnée. Toutefois, les noms d’utilisateur sont affichés lors de l’ajout de nouveaux utilisateurs à des stratégies existantes ou lors de l’affectation d’utilisateurs à de nouvelles stratégies. Si vous choisissez de désactiver ce paramètre, les noms d’utilisateur s’affichent pour tous les utilisateurs qui ont des correspondances de stratégie actuelle ou passée.
+- **Afficher les versions anonymes des**noms d’utilisateur : les noms des utilisateurs sont rendus anonymes pour empêcher les administrateurs, les enquêteurs de données et les relecteurs de voir qui est associé à des alertes de stratégie. Par exemple, un utilisateur « Grace à Taylor » apparaît avec un pseudonyme aléatoire tel que « AnonIS8-988 » dans toutes les zones de l’expérience de gestion des risques internes. Le choix de ce paramètre permet d'anonymiser tous les utilisateurs ayant des correspondances de stratégie actuelle et passée et s’applique à toutes les stratégies. Les informations de profil utilisateur dans les détails des alertes de risque et des cas d’Insider ne seront pas disponibles lorsque cette option est sélectionnée. Toutefois, les noms d’utilisateur sont affichés lors de l’ajout de nouveaux utilisateurs à des stratégies existantes ou lors de l’affectation d’utilisateurs à de nouvelles stratégies. Si vous choisissez de désactiver ce paramètre, les noms d’utilisateur s’affichent pour tous les utilisateurs qui ont des correspondances de stratégie actuelle ou passée.
 - **Ne pas afficher les versions anonymes des noms d’utilisateur**: les noms d’utilisateur sont affichés pour toutes les correspondances de stratégie actuelle et passée pour les alertes et les incidents. Les informations de profil utilisateur (nom, titre, alias, organisation ou service) s’affichent pour l’utilisateur pour toutes les alertes et les incidents liés à la gestion des risques Insiders.
 
 ![Paramètres de confidentialité de la gestion des risques Insiders](../media/insider-risk-settings-privacy.png)
@@ -105,6 +108,9 @@ Les détections anormales incluent des paramètres pour les exclusions de type d
 
 ### <a name="offensive-language-detections"></a>Détections de langage choquant
 
+>[!IMPORTANT]
+>À partir du 16 octobre 2020, vous ne pourrez plus créer de stratégies à l’aide de ce modèle. Toutes les stratégies actives qui utilisent ce modèle fonctionneront jusqu’à ce qu’elles soient définitivement supprimées en janvier 2021. Nous déconfigurons le classifieur intégré en langage offensant qui prend en charge ce modèle car il génère un nombre élevé de faux positifs. Pour résoudre les problèmes de risque pour le langage offensant, nous vous recommandons d’utiliser les stratégies de [conformité de communication](communication-compliance.md) Microsoft 365. Pour plus d’informations sur les classifieurs intégrés, voir [Getting Started with trainable Classifiers](classifier-get-started-with.md).
+
 Pour ajuster la sensibilité du classifieur de langue choquant pour les stratégies à l’aide du modèle *Langage choquant dans les messages électroniques*, choisissez l’un des paramètres suivants :
 
 - **Faible**: niveau de sensibilité le plus élevé avec la plage la plus large pour la détection du langage offensant et des sentiments. La probabilité de faux positifs pour une correspondance choquante est élevée.
@@ -153,11 +159,40 @@ Gestion des risques internes les informations d’alerte sont exportables vers d
 
 Pour utiliser les API afin de consulter les informations d’alerte de risque Insider :
 
-1. Activer la prise en charge de l’API activité de gestion d’Office 365 dans les paramètres de gestion des risques initiaux. Par défaut, ce paramètre est désactivé pour votre organisation Microsoft 365.
+1. Activer la prise en charge de l’API activité de gestion Office 365 dans l’exportation des paramètres de **gestion des risques Insider**  >  **Settings**  >  **Export**. Par défaut, ce paramètre est désactivé pour votre organisation Microsoft 365.
 2. Filtrez les activités d’audit courantes d’Office 365 par *SecurityComplianceAlerts*.
 3. Filtrez *SecurityComplianceAlerts* par la catégorie *InsiderRiskManagement* .
 
 ![Paramètres d’alerte d’exportation de gestion des risques initiés](../media/insider-risk-settings-export.png)
+
+Les informations d’alerte contiennent des informations provenant du schéma d’alerte de sécurité et de conformité et du schéma commun de l’API d’activité de gestion Office 365.
+
+Les champs et valeurs suivants sont exportés pour les alertes de gestion des risques internes pour le schéma d’alerte de conformité de la sécurité & :
+
+| **Paramètre Alert** | **Description** |
+|:------------------|:----------------|
+| AlertType | Le type de l’alerte est *Custom*.  |
+| AlertId | GUID de l’alerte. Les alertes de gestion des risques internes sont mutables. Lorsque l’état des alertes est modifié, un nouveau journal portant le même alerties est généré. Cette fonction peut être utilisée pour corréler les mises à jour d’une alerte. |
+| Catégorie | La catégorie de l’alerte est *InsiderRiskManagement*. Cette catégorie peut être utilisée pour faire la distinction entre ces alertes et d’autres alertes de sécurité & de conformité. |
+| Commentaires | Commentaires par défaut pour l’alerte. Values *New Alert* (consignée lors de la création d’une alerte) et *Alert* Updated (consignée lors de la mise à jour d’une alerte). Utilisez la fonction alertiesd pour corréler les mises à jour d’une alerte. |
+| Données | Les données de l’alerte incluent l’ID d’utilisateur unique, le nom d’utilisateur principal, ainsi que la date et l’heure (UTC) lorsque l’utilisateur a été déclenché dans une stratégie. |
+| Nom | Nom de la stratégie pour la stratégie de gestion des risques initiés qui a généré l’alerte. |
+| PolicyId | GUID de la stratégie de gestion des risques Insiders qui a déclenché l’alerte. |
+| Severity | Gravité de l’alerte. Les valeurs sont *élevé*, *moyen*ou *faible*. |
+| Source | Source de l’alerte. La valeur est *Office 365 Security & Compliance*. |
+| Statut | État de l’alerte. Les valeurs sont *actives* (*examen* des risques Insider), *étude* (*confirmée* en ce qui se traduit par des risques Insiders), *résolues* (*résolues* en risque d’initiés), *ignorées* (*rejetée* en risque d’initiés). |
+| Version | La version du schéma d’alerte de sécurité et de conformité. |
+
+Les champs et valeurs suivants sont exportés pour les alertes de gestion des risques internes pour le [schéma commun de l’API d’activité de gestion Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#common-schema).
+
+- UserId
+- ID
+- RecordType
+- CreationTime
+- Opération
+- OrganizationId
+- UserType
+- UserKey
 
 ## <a name="priority-user-groups-preview"></a>Groupes d’utilisateurs prioritaires (aperçu)
 
@@ -212,3 +247,174 @@ Pour supprimer un groupe d’utilisateurs de priorité, procédez comme suit :
 2. Sélectionnez l’onglet **groupes d’utilisateurs prioritaires**
 3. Sélectionnez le groupe d’utilisateurs dont vous souhaitez modifier la priorité, puis cliquez sur **supprimer** dans le menu Tableau de bord.
 4. Dans la boîte de dialogue **supprimer** , cliquez sur **Oui** pour supprimer le groupe d’utilisateurs priorité ou sur **Annuler** pour revenir au tableau de bord.
+
+## <a name="priority-physical-assets-preview"></a>Priorité des ressources physiques (aperçu)
+
+L’identification de l’accès aux ressources physiques prioritaires et à la corrélation de l’activité d’accès aux événements utilisateur est un composant important de votre infrastructure de conformité. Ces ressources physiques représentent des emplacements prioritaires au sein de votre organisation, tels que des bâtiments d’entreprise, des centres de données ou des salles de serveurs. Les activités liées aux risques internes peuvent être associées aux utilisateurs qui travaillent des heures inhabituelles, tentent d’accéder à ces zones sensibles ou sécurisées non autorisées et demandent l’accès à des zones de haut niveau sans besoin légitime.
+
+Avec les ressources matérielles prioritaires activées et le [connecteur de données badges physique](import-physical-badging-data.md) configuré, la gestion des risques internes intègre des signaux provenant de votre contrôle physique et des systèmes d’accès aux autres activités liées aux risques de l’utilisateur. En examinant les modèles de comportement entre les systèmes d’accès physique et en mettant en corrélation ces activités avec d’autres événements de risque Insider, la gestion des risques internes peut aider les responsables de la conformité et les analystes à prendre des décisions plus éclairées pour les alertes. L’accès aux ressources physiques prioritaires est évalué et identifié dans Insights différemment d’un accès à des ressources non prioritaires.
+
+Par exemple, votre organisation dispose d’un système badges pour les utilisateurs qui contrôlent et approuvent l’accès physique aux zones de travail normales et sensibles. Plusieurs utilisateurs travaillent sur un projet sensible et ces utilisateurs seront retournés à d’autres zones de votre organisation une fois le projet terminé. Lorsque le projet sensible approche de l’achèvement, vous souhaitez vous assurer que le travail du projet reste confidentiel et que l’accès aux zones du projet est étroitement contrôlé.
+
+Vous choisissez d’activer le connecteur de données badges dans Microsoft 365 pour importer des informations d’accès à partir de votre système badges physique et de spécifier des ressources physiques de priorité dans la gestion des risques initiés. En important les informations de votre système badges et en mettant en corrélation les informations d’accès physique avec d’autres activités liées aux risques identifiées dans la gestion des risques initiés, vous remarquez que l’un des utilisateurs du projet accède aux bureaux de projet après les heures de travail normales et exporte également de grandes quantités de données vers un service de stockage cloud personnel depuis leur zone de travail normale Cette activité d’accès physique associée à l’activité en ligne peut pointer vers des investigateurs de conformité et des enquêteurs de données possibles, et les analystes peuvent prendre les mesures appropriées en fonction des circonstances de cet utilisateur.
+
+### <a name="configure-priority-physical-assets"></a>Configurer la priorité des ressources physiques
+
+Pour configurer des ressources physiques de priorité, vous allez configurer le connecteur badges physique et utiliser des contrôles de paramètres dans la solution de **gestion des risques inSided** dans le centre de conformité Microsoft 365. Pour configurer des ressources physiques de priorité, vous devez être membre du groupe de rôles *gestion des risques internes* ou *Insider gestion des risques internes*.
+
+Procédez comme suit pour configurer la priorité des ressources physiques :
+
+1. Suivez les étapes de configuration pour la gestion des risques internes à l’article [Getting Started with Insider Management Risk](insider-risk-management-configure.md) . À l’étape 3, vérifiez que vous configurez le connecteur badges physique.
+
+    >[!IMPORTANT]
+    >Pour les stratégies de gestion des risques Insiders permettant d’utiliser et de corréler les données de signal relatives au fait de se déconnecter et aux utilisateurs qui se terminent avec des données d’événement provenant de vos plateformes de contrôle physique et d’accès, vous devez également configurer le connecteur RH de Microsoft 365. Si vous activez le connecteur badges physique sans activer le connecteur RH de Microsoft 365, les stratégies de gestion des risques internes ne traiteront que les événements pour les activités d’accès physique pour les utilisateurs de votre organisation.
+
+2. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com), accédez à **gestion des risques internes** et sélectionnez **paramètres des risques Insider**  >  **Priority physical assets**.
+3. Sur la page **priorité des ressources physiques** , vous pouvez ajouter manuellement les numéros d’inventaire physique que vous souhaitez surveiller pour les événements d’immobilisation importés par le connecteur badges physique ou importer un. Fichier CSV de tous les codes de ressource physique importés par le connecteur badges physique : a) pour ajouter manuellement des codes de ressources physiques, sélectionnez **Ajouter une priorité des biens physiques**, entrez un code d’actif physique, puis sélectionnez **Ajouter**. Entrez des codes d’actifs physiques supplémentaires, puis sélectionnez **Ajouter une priorité des biens physiques** pour enregistrer toutes les ressources entrées.
+    b) pour ajouter une liste de codes d’inventaire physique à partir d’un. Fichier CSV, choisissez **importer des ressources physiques de priorité**. Dans la boîte de dialogue Explorateur de fichiers, sélectionnez le. Fichier CSV que vous souhaitez importer, puis sélectionnez **ouvrir**. Les ID des biens physiques du. Les fichiers CSV sont ajoutés à la liste.
+4. Accédez à l’onglet **indicateurs de stratégie** dans paramètres.
+5. Dans la page **indicateurs de stratégie** , accédez à la section indicateurs d' **accès physique** et activez la case à cocher **accès physique après résiliation ou échec de l’accès à la ressource sensible**.
+6. Sélectionnez **Enregistrer** pour configurer et quitter.
+
+### <a name="delete-a-priority-physical-asset"></a>Supprimer un élément physique de priorité
+
+Pour supprimer un élément physique de priorité existant, vous utiliserez des contrôles de paramètres dans la solution de gestion des risques inSided dans le centre de conformité Microsoft 365. Pour supprimer une ressource physique de priorité, vous devez être membre du groupe de rôles Gestion des risques internes ou administrateurs de gestion des risques inSided.
+
+>[!IMPORTANT]
+>La suppression d’un actif physique de priorité le supprime de l’examen par une stratégie active à laquelle il était précédemment inclus. Les alertes générées par des activités associées à la ressource physique Priority ne sont pas supprimées.
+
+Pour supprimer une ressource physique de priorité, procédez comme suit :
+
+1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com), accédez à **gestion des risques internes** et sélectionnez **paramètres des risques Insider**  >  **Priority physical assets**.
+2. Sur la page **priorité des ressources physiques** , sélectionnez l’élément que vous souhaitez supprimer.
+3. Sélectionnez **supprimer** dans le menu action pour supprimer l’élément.
+
+## <a name="power-automate-flows-preview"></a>Flux d’automates d’alimentation (aperçu)
+
+[Microsoft Power automate](https://docs.microsoft.com/power-automate/getting-started) est un service de flux de travail qui automatise les actions entre les applications et les services. En utilisant des flux provenant de modèles ou créés manuellement, vous pouvez automatiser les tâches courantes associées à ces applications et services. Lorsque vous activez la gestion de l’énergie automatique pour la gestion des risques initiaux, vous pouvez automatiser des tâches importantes pour les cas et les utilisateurs. Vous pouvez configurer les flux Automated Power afin de récupérer les informations relatives aux utilisateurs, aux alertes et aux incidents, de partager ces informations avec les parties prenantes et d’autres applications, ainsi que d’automatiser les actions de gestion des risques initiés, telles que la publication dans les notes de cas. Les flux d’automate de puissance s’appliquent aux cas et à tout utilisateur dans l’étendue d’une stratégie.
+
+Les clients ayant des abonnements Microsoft 365 qui incluent une gestion des risques Insider n’ont pas besoin de puissance automatique supplémentaire pour utiliser la gestion des risques initiés de gestion des risques automatisée. Ces modèles peuvent être personnalisés pour prendre en charge votre organisation et couvrent les scénarios de gestion des risques initiaux fondamentaux. Si vous choisissez d’utiliser les fonctionnalités de Power automate Premium dans ces modèles, créez un modèle personnalisé à l’aide du connecteur Microsoft 365 Compliance Connector ou utilisez Power automates pour d’autres zones de conformité dans Microsoft 365, vous aurez peut-être besoin d’une alimentation automatique supplémentaire.
+
+Les modèles automateurs d’alimentation suivants sont fournis aux clients pour prendre en charge l’automatisation des processus pour les utilisateurs et les cas de gestion des risques initiaux :
+
+- **Avertir les utilisateurs lorsqu’ils sont ajoutés à une stratégie d’Insider Risk**: ce modèle est destiné aux organisations qui ont des stratégies internes, de confidentialité ou des exigences réglementaires que les utilisateurs doivent être avertis lorsqu’ils sont soumis à des stratégies de gestion des risques initiés. Lorsque ce flux est configuré et sélectionné pour un utilisateur dans la page utilisateurs, les utilisateurs et leurs responsables reçoivent un message électronique lorsque l’utilisateur est ajouté à une stratégie de gestion des risques Insiders. Ce modèle prend également en charge la mise à jour d’une liste SharePoint hébergée sur un site SharePoint pour faciliter le suivi des détails du message de notification comme la date/l’heure et le destinataire du message. Power automatiser les flux à l’aide de ce modèle sont disponibles dans le **tableau de bord utilisateurs**.
+- **Demander des informations de RH ou de l’entreprise à propos d’un utilisateur dans un cas d’Insider**: lorsqu’il s’agit d’un cas, des analystes et des enquêteurs de risques initiés peuvent avoir besoin de consulter les RH ou les autres parties prenantes pour comprendre le contexte des activités de cas. Lorsque ce flux est configuré et sélectionné pour un cas, les analystes et les enquêteurs envoient un message électronique aux parties prenantes RH et entreprise configurées pour ce flux. Chaque destinataire reçoit un message avec des options de réponse préconfigurées ou personnalisables. Lorsque les destinataires sélectionnent une option de réponse, la réponse est enregistrée comme note de cas et inclut le destinataire et les informations de date/heure. Power automatiser les flux à l’aide de ce modèle sont disponibles dans le **tableau de bord cas**.
+- **Avertir le gestionnaire lorsqu’un utilisateur a une alerte de risque d’Insider**: certaines organisations peuvent avoir besoin de recevoir une notification de gestion immédiate lorsqu’un utilisateur a une alerte de gestion des risques Insider. Lorsque ce flux est configuré et sélectionné, le responsable de l’utilisateur du cas reçoit un message électronique contenant les informations suivantes sur toutes les alertes de cas : 
+    - Stratégie applicable pour l’alerte
+    - Date/heure de l’alerte
+    - Niveau de gravité de l’alerte
+
+    Le flux met automatiquement à jour les notes de cas auxquelles le message a été envoyé et que le flux a été activé. Power automatiser les flux à l’aide de ce modèle sont disponibles dans le **tableau de bord cas**.
+
+- **Ajouter un rappel de calendrier pour le suivi d’un cas d’Insider risque**: ce modèle permet aux enquêteurs et analystes d’ajouter des rappels de calendrier pour les incidents à leur calendrier Office 365 Outlook. Ce flux élimine la nécessité pour les utilisateurs de quitter ou de quitter le flux de travail de gestion des risques inSided lors du traitement des alertes de triage de cas et de tri. Lorsque ce flux est configuré et sélectionné, un rappel est ajouté au calendrier Office 365 Outlook pour l’utilisateur qui exécute le flux. Power automatiser les flux à l’aide de ce modèle sont disponibles dans le **tableau de bord cas**.
+
+### <a name="create-a-power-automate-flow-from-insider-risk-management-template"></a>Créer une alimentation automatique flux à partir d’un modèle de gestion des risques inSided
+
+Pour créer un flux automatique de puissance à partir d’un modèle de gestion des risques Insider recommandé, vous utiliserez les contrôles des paramètres de la solution de **gestion des risques Insider** dans le centre de conformité Microsoft 365 ou l’option **gérer les flux d’automates d’alimentation** du contrôle **automatiser** lorsque vous travaillez directement dans les **tableaux de bord** **incidents** ou utilisateurs.
+
+Pour créer un flux automatique d’alimentation dans la zone Paramètres, vous devez être membre du groupe de rôles *gestion des risques internes* ou *administrateurs de gestion des risques Insiders* . Pour créer un flux automatique d’alimentation à l’aide de l’option **gérer les flux d’automate** de gestion, vous devez être membre d’au moins un groupe de rôles de gestion des risques Insiders.
+
+Procédez comme suit pour créer un flux automatique de puissance à partir d’un modèle de gestion des risques Insider recommandé :
+
+1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com/), accédez à **gestion des risques internes** et sélectionnez **paramètres des risques initiés**  >  :**Power Automated flows**. Vous pouvez également accéder à partir des pages de **tableaux de bord** **incidents** ou utilisateurs en sélectionnant **automatiser**  >  **gérer Power Automated flows**.
+2. Sur la page flux automatique de l' **alimentation** , sélectionnez un modèle recommandé dans la section modèles de **gestion des risques Insider que vous pouvez aimeriez** .
+3. Le flux répertorie les connexions incorporées nécessaires pour le flux et indique si les États de connexion sont disponibles. Si nécessaire, mettez à jour toutes les connexions qui ne sont pas affichées comme disponibles. Sélectionnez **Continuer**.
+4. Par défaut, les flux recommandés sont préconfigurés avec les champs de données de gestion des risques initiés et de service Microsoft 365 requis pour effectuer la tâche attribuée au flux. Si nécessaire, personnalisez les composants de flux à l’aide du contrôle **afficher les options avancées** et en configurant les propriétés disponibles pour le composant de flux.
+5. Si nécessaire, ajoutez des étapes supplémentaires au flux en sélectionnant le bouton **nouvelle étape** . Dans la plupart des cas, cette option n’est pas nécessaire pour les modèles par défaut recommandés.
+6. Sélectionnez **Enregistrer brouillon** pour enregistrer le flux pour une configuration supplémentaire ou sélectionnez **Enregistrer** pour terminer la configuration du flux.
+7. Sélectionnez **Fermer** pour revenir à la page **flux automatique** de l’alimentation. Le nouveau modèle est affiché sous forme de flux dans les onglets **mes flux** et est automatiquement disponible à partir du contrôle de liste déroulante **automatiser** lorsque vous travaillez avec des cas de gestion des risques initiés pour l’utilisateur qui crée le flux.
+
+>[!IMPORTANT]
+>Si d’autres utilisateurs de votre organisation ont besoin d’accéder au flux, le flux doit être partagé.
+
+### <a name="create-a-custom-power-automate-flow-for-insider-risk-management"></a>Création d’un flux de puissance personnalisé Automated pour la gestion des risques initiés
+
+Certains processus et flux de travail de votre organisation peuvent se trouver en dehors des modèles de flux de gestion des risques initiés recommandés et il se peut que vous ayez besoin de créer des flux automatiques personnalisés pour les zones de gestion des risques internes. Les flux d’automate d’énergie sont flexibles et prennent en charge une personnalisation étendue, mais il existe des étapes à suivre pour intégrer les fonctionnalités de gestion des risques internes.
+
+Procédez comme suit pour créer un modèle Automated Power pour la gestion des risques initiés :
+
+1. **Vérifiez votre licence de flux Automated Flow**: pour créer des flux automatisés d’alimentation personnalisés qui utilisent des déclencheurs de gestion des risques inSided, vous aurez besoin d’une licence Automated. Les modèles de flux de gestion des risques initiés recommandés ne nécessitent pas de licences supplémentaires et sont inclus dans le cadre de votre licence de gestion des risques Insiders.
+2. **Créer un flux automatisé**: créez un flux qui effectue une ou plusieurs tâches après qu’il a été déclenché par un événement de gestion des risques inSided. Pour plus d’informations sur la création d’un flux automatisé, voir [Create a flow in Power automate](https://docs.microsoft.com/power-automate/get-started-logic-flow).
+3. **Sélectionnez le connecteur de conformité microsoft 365**: recherchez et sélectionnez le connecteur de conformité Microsoft 365. Ce connecteur permet des déclencheurs et des actions de gestion des risques internes. Pour plus d’informations sur les connecteurs, voir l’article de [vue d’ensemble](https://docs.microsoft.com/connectors/connector-reference/) de la référence du connecteur.
+4. **Choisissez déclencheurs de gestion des risques Insider pour votre flux : la**gestion des risques initiés est composée de deux déclencheurs disponibles pour les flux d’automates de puissance personnalisés :
+    - **Pour un cas de gestion des risques inSided sélectionné**: les flux avec ce déclencheur peuvent être sélectionnés dans la page de tableau de bord cas de gestion des risques inSided.
+    - **Pour un utilisateur de gestion des risques Insiders sélectionné**: les flux avec ce déclencheur peuvent être sélectionnés à partir de la page de tableau de bord utilisateurs de gestion des risques Insiders.
+5. Choisissez les actions de gestion des risques Insider pour votre flux : vous pouvez choisir parmi plusieurs actions pour la gestion des risques initiés à inclure dans votre flux personnalisé :
+    - Obtenir une alerte de gestion des risques Insider
+    - Obtenir un cas de gestion des risques Insider
+    - Obtenir un utilisateur de gestion des risques Insider
+    - Obtenir des alertes de gestion des risques Insiders pour un cas
+    - Ajouter une note de cas de gestion des risques Insider
+
+### <a name="share-a-power-automate-flow"></a>Partager un flux de puissance automatique
+
+Par défaut, les flux d’alimentation automatique automatiques créés par un utilisateur sont uniquement disponibles pour cet utilisateur. Pour que d’autres utilisateurs de la gestion des risques Insiders aient accès et utilisent un flux, le flux doit être partagé par le créateur du flux. Pour partager un flux, vous utiliserez les contrôles des paramètres de la **solution de gestion des risques inSided** dans le centre de conformité Microsoft 365 ou l’option **gérer les flux d’automates d’alimentation** du contrôle automatiser lorsque vous travaillez directement dans les pages du **tableau de bord** **incidents** ou utilisateurs. Une fois que vous avez partagé un flux, toutes les personnes avec lesquelles il a été partagé peuvent accéder au flux dans la liste déroulante **de contrôle automatique** dans le **cas** et les **tableaux de bord utilisateur**.
+
+Pour partager un flux de puissance automatique dans la zone Paramètres, vous devez être membre du groupe de rôles *gestion des risques internes* ou administration des *risques inSided* . Pour partager un flux de puissance automatique avec l’option **gérer les flux d’automate** de gestion de l’alimentation, vous devez être membre d’au moins un groupe de rôles de gestion des risques Insiders.
+
+Procédez comme suit pour partager un flux automatique de puissance :
+
+1. Dans le [Centre de conformité Microsoft 365](htttps://compliance.microsoft.com), accédez à **gestion des risques internes** et sélectionnez **paramètres des risques initiés**  >  :**Power Automated flows**. Vous pouvez également accéder à partir des pages de **tableaux de bord** **incidents** ou utilisateurs en sélectionnant **automatiser**  >  **gérer Power Automated flows**.
+2. Sur la page flux automatique de l' **alimentation** , sélectionnez l’onglet **mes flux** ou flux d' **équipe** .
+3. Sélectionnez le flux à partager, puis sélectionnez **partager** dans le menu options de flux.
+4. Dans la page partage de flux, entrez le nom de l’utilisateur ou du groupe que vous souhaitez ajouter en tant que propriétaire pour le flux.
+5. Dans la boîte de dialogue **connexion utilisée** , sélectionnez **OK** pour confirmer que l’utilisateur ou le groupe ajouté aura un accès total au flux.
+
+### <a name="edit-a-power-automate-flow"></a>Modifier un flux d’alimentation automatique
+
+Pour modifier un flux, vous utiliserez les contrôles des paramètres de la solution de **gestion des risques inSided** dans le centre de conformité Microsoft 365 ou l’option **gérer les flux d’automates d’alimentation** du contrôle **automatiser** lorsque vous travaillez directement dans le **tableau de bord**des **cas** ou des utilisateurs.
+
+Pour modifier un flux automatique d’alimentation dans la zone Paramètres, vous devez être membre du groupe de rôles *gestion des risques Insider* ou gestion des *risques inSided* . Pour modifier un flux de puissance automatique à l’aide de l’option **gérer les flux d’automate** de gestion, vous devez être membre d’au moins un groupe de rôles de gestion des risques Insiders.
+
+Pour modifier un flux automatique, procédez comme suit :
+
+1. Dans le [Centre de conformité Microsoft 365](htttps://compliance.microsoft.com), accédez à **gestion des risques internes** et sélectionnez **paramètres des risques initiés**  >  :**Power Automated flows**. Vous pouvez également accéder à partir des pages de **tableaux de bord** **incidents** ou utilisateurs en sélectionnant **automatiser**  >  **gérer Power Automated flows**.
+2. Sur la page **flux d’automate de puissance** , sélectionnez un flux à modifier et sélectionnez **modifier** dans le menu contrôle de flux.
+3. Sélectionnez les **ellipsis**  >  **paramètres** de sélection pour modifier un paramètre de composant de flux ou supprimer des **points de suspension**  >  **Delete** pour supprimer un composant de flux.
+4. Sélectionnez **Enregistrer** , puis **Fermer** pour terminer la modification du flux.
+
+### <a name="delete-a-power-automate-flow"></a>Supprimer un flux d’alimentation automatique
+
+Pour supprimer un flux, utilisez les contrôles de paramètres de la solution **de gestion des risques inSided** dans le centre de conformité Microsoft 365 ou l’option **gérer les flux d’automate de puissance** du contrôle **automate** lorsque vous travaillez directement dans le **tableau de bord**des **cas** ou des utilisateurs. Lorsqu’un flux est supprimé, il est supprimé en tant qu’option pour tous les utilisateurs.
+
+Pour supprimer un flux de puissance automatique dans la zone Paramètres, vous devez être membre du groupe de rôles *gestion des risques internes* ou administrateurs de la *gestion des risques Insiders* . Pour supprimer un flux de puissance automatique à l’aide de l’option **gérer les flux d’automate** de gestion, vous devez être membre d’au moins un groupe de rôles de gestion des risques Insiders.
+
+Procédez comme suit pour supprimer un flux automatique de puissance :
+
+1. Dans le [Centre de conformité Microsoft 365](htttps://compliance.microsoft.com), accédez à **gestion des risques internes** et sélectionnez **paramètres des risques initiés**  >  :**Power Automated flows**. Vous pouvez également accéder à partir des pages de **tableaux de bord** **incidents** ou utilisateurs en sélectionnant **automatiser**  >  **gérer Power Automated flows**.
+2. Sur la page **flux d’automate de puissance** , sélectionnez un flux à supprimer, puis sélectionnez **supprimer** dans le menu contrôle de flux.
+3. Dans la boîte de dialogue de confirmation de suppression, sélectionnez **supprimer** pour supprimer le flux ou cliquez sur **Annuler** pour quitter l’action de suppression.
+
+## <a name="microsoft-teams-preview"></a>Microsoft Teams (aperçu)
+
+Les analystes et les enquêteurs de conformité peuvent facilement utiliser Microsoft teams pour la collaboration sur des cas de gestion des risques Insiders. Ils peuvent coordonner et communiquer avec d’autres parties prenantes dans Microsoft teams pour :
+
+- Coordination et examen des activités Response pour les cas de canaux teams privés
+- Partager et stocker en toute sécurité des fichiers et des preuves liés à des cas individuels
+- Suivre et passer en revue les activités de réponse des analystes et des investigateurs
+
+Une fois que Microsoft teams est activé pour la gestion des risques initiés, une équipe Microsoft teams dédiée est créée chaque fois qu’une alerte est confirmée et une demande de devis est créée. Par défaut, l’équipe inclut automatiquement tous les membres des groupes de rôles *gestion des risques initiaux*, *analystes de gestion des risques internes*et *Insider la gestion des risques internes* (jusqu’à 100 utilisateurs initiaux). Des contributeurs d’organisation supplémentaires peuvent être ajoutés à l’équipe après sa création et selon les besoins. Pour les cas existants créés avant l’activation de Microsoft Teams, les analystes et les enquêteurs peuvent choisir de créer une nouvelle équipe Microsoft teams lorsque vous travaillez dans un cas si nécessaire.  Une fois que vous avez résolu le cas associé dans la gestion des risques initiés, l’équipe est automatiquement archivée (déplacée vers masquée et en lecture seule).
+
+Pour plus d’informations sur l’utilisation des équipes et des canaux dans Microsoft Teams, consultez la rubrique [vue d’ensemble des équipes et des canaux dans Microsoft teams](https://docs.microsoft.com/MicrosoftTeams/teams-channels-overview).
+
+L’activation de la prise en charge de Microsoft teams pour les incidents est rapide et facile à configurer. Pour activer Microsoft teams pour la gestion des risques initiaux, procédez comme suit :
+
+1. Dans le [Centre de conformité Microsoft 365](htttps://compliance.microsoft.com), accédez à l' **Insider Risk Management**  >  **Risk Settings**.
+2. Sélectionnez l’onglet **Microsoft teams** .
+3. Activer l’intégration de Microsoft teams pour la gestion des risques initiaux.
+4. Sélectionnez **Enregistrer** pour configurer et quitter.
+
+### <a name="create-a-microsoft-teams-team-for-existing-cases"></a>Créer une équipe Microsoft teams pour les cas existants
+
+Si vous activez la prise en charge de Microsoft teams pour la gestion des risques initiaux une fois que vous avez des cas existants, vous devez créer manuellement une équipe pour chaque cas, selon vos besoins. Après avoir activé la prise en charge de Microsoft teams dans les paramètres de gestion des risques initiés, les nouveaux cas créent automatiquement une nouvelle équipe Microsoft Teams.
+
+Les utilisateurs ont besoin de l’autorisation de créer des groupes Microsoft 365 dans votre organisation pour créer une équipe Microsoft teams à partir d’un cas. Pour plus d’informations sur la gestion des autorisations pour les groupes Microsoft 365, consultez la rubrique [gérer les personnes autorisées à créer des groupes microsoft 365](https://docs.microsoft.com/microsoft-365/solutions/manage-creation-of-groups).
+
+Pour créer une équipe pour un cas, utilisez le contrôle créer Microsoft Team lorsque vous travaillez directement dans un cas existant. Pour créer une équipe, procédez comme suit :
+
+1. Dans le [Centre de conformité Microsoft 365](htttps://compliance.microsoft.com), accédez à dossiers de **gestion des risques internes**  >  **Cases** et sélectionnez un cas existant.
+2. Dans le menu action de cas, sélectionnez **créer une équipe Microsoft**.
+3. Dans le champ nom de l' **équipe** , entrez un nom pour la nouvelle équipe Microsoft Teams.
+4. Sélectionnez **créer une équipe Microsoft** , puis **Fermer**.
+
+Selon le nombre d’utilisateurs affectés à des groupes de rôles de gestion des risques initiés, l’ajout de tous les enquêteurs et analystes à l’équipe Microsoft teams peut prendre 15 minutes pour un cas.

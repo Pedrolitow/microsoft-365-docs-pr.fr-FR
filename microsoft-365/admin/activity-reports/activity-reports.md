@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenez un rapport régulier sur la façon dont les membres de votre organisation utilisent les services Microsoft 365. Le tableau de bord Vue d’ensemble de l’utilisation vous permet d’explorer chaque graphique pour obtenir d'autres informations.
-ms.openlocfilehash: f0dcb1fac17a39d1125f9188028d714962c9797d
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: e1748cf25fd36787727b0f00f6ddf6553bd454ab
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948207"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104447"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Rapports Microsoft 365 dans le centre d'administration
 
@@ -58,9 +58,8 @@ Visionnez cette vidéo pour une vue d’ensemble : sur la façon d'utiliser les
 
 ::: moniker-end
 
-   
-2. Choisissez **Sélectionner un rapport** en haut du tableau de bord et sélectionnez l'un des rapports disponibles proposés. Vous pouvez également sélectionner un widget activité d’un coup d’œil pour un service (par exemple, courrier électronique ou OneDrive) pour afficher plus d’informations. <br/>![Le tableau de bord d'utilisation](../../media/usage-report-dashboard.png)
-  
+2. Cliquez sur le bouton **Afficher plus** de la carte d’activité d’aperçu pour un service (par exemple, e-mail ou OneDrive) pour afficher la page de détails du rapport. Différents rapports pour le service sont fournis dans les onglets. <br/>![Le tableau de bord d'utilisation](../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png) 
+
 ## <a name="who-can-see-reports"></a>Qui peut voir ces rapports ?
 
 Les personnes disposant des autorisations suivantes : 
@@ -147,7 +146,7 @@ En fonction de votre abonnement, les rapports suivants sont disponibles.
 
 ::: moniker range="o365-worldwide"
 
-- [ Activité des utilisateurs de Microsoft Teams pour le Cloud communautaire du ministère de la défense et du gouvernement ](microsoft-teams-user-activity.md)
+- [Activité des utilisateurs de Microsoft Teams pour la communauté du secteur public des États-Unis](microsoft-teams-user-activity.md)
 
 ::: moniker-end
 
@@ -159,7 +158,7 @@ En fonction de votre abonnement, les rapports suivants sont disponibles.
 
 ::: moniker range="o365-worldwide"
 
-- [Utilisation des périphériques Microsoft Teams pour le Cloud communautaire du ministère de la défense et du gouvernement](microsoft-teams-device-usage.md)
+- [Utilisation des appareils Microsoft Teams pour la communauté du secteur public des États-Unis](microsoft-teams-device-usage.md)
 
 ::: moniker-end
 

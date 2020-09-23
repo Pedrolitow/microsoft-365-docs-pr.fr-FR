@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Configurez les points de terminaison contre la protection contre la perte de données Microsoft 365 pour surveiller les activités des fichiers et implémenter des actions de protection pour ces fichiers aux points de terminaison.
-ms.openlocfilehash: 43ab2a30570f153f16819ede2eeed1f0e091da74
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 08e2bd43b4337087b401244b7dc4cf80a26aaf06
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949844"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131668"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention-preview"></a>Prise en main des points de terminaison de protection contre la perte de données (aperçu)
 
@@ -90,7 +90,7 @@ Assurez-vous que les appareils Windows 10 pour lesquels vous envisagez de déplo
 
 Lorsque vous voulez intégrer des appareils qui n’ont pas encore été intégrés, vous devez télécharger et déployer les scripts appropriés sur ces appareils. Suivez la procédure [d’intégration d’appareils](endpoint-dlp-getting-started.md#onboarding-devices).
 
-Si vous disposez déjà d’appareils incorporés dans [Microsoft Defender Advanced Threat Protection (MDATP](https://docs.microsoft.com/windows/security/threat-protection/)), ceux-ci apparaissent déjà dans la liste des périphériques gérés. Suivez [Avec les appareils intégrés à la procédure MDATP](endpoint-dlp-getting-started.md#with-devices-onboarded-into-mdatp).
+Si vous disposez déjà d’appareils incorporés dans [Microsoft Defender pour point de terminaison](https://docs.microsoft.com/windows/security/threat-protection/), ceux-ci apparaissent déjà dans la liste des périphériques gérés. Suivez la procédure [Appareils intégrés à Microsoft Defender pour point de terminaison](endpoint-dlp-getting-started.md#with-devices-onboarded-into-microsoft-defender-for- endpoint).
 
 ### <a name="onboarding-devices"></a>Intégration des appareils
 
@@ -109,7 +109,7 @@ Dans ce scénario de déploiement, vous allez intégrer des appareils qui n’on
 5. Choisissez la manière dont vous voulez déployer ces autres appareils à partir de la liste**Méthode de déploiement**, puis **Télécharger le package**.
 
    ![Méthode de déploiement](../media/endpoint-dlp-getting-started-3-deployment-method.png)
-6. Suivez les procédures appropriées dans [Outils et méthodes d’intégration pour les ordinateurs Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Ce lien vous permet d’accéder à une page d’accueil dans laquelle vous pouvez accéder aux procédures MDATP qui correspondent au package de déploiement que vous avez sélectionné à l’étape 5 :
+6. Suivez les procédures appropriées dans [Outils et méthodes d’intégration pour les ordinateurs Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Ce lien vous dirige vers une page d’accueil dans laquelle vous pouvez accéder aux procédures Microsoft Defender pour point de terminaison qui correspondent au package de déploiement que vous avez sélectionné à l’étape 5 :
     - Intégrer les ordinateurs Windows 10 utilisant une stratégie de groupe
     - Intégrer les ordinateurs Windows à l’aide du gestionnaire de configuration de point de terminaison Microsoft
     - Intégrer les ordinateurs Windows 10 à l’aide des outils de gestion des appareils mobiles
@@ -121,16 +121,16 @@ Une fois l’opération effectuée et le point de terminaison intégré, celui-c
 > [!NOTE]
 > Cette expérience est sous l’application de la licence. Sans la licence requise, les données ne sont pas visibles ni accessibles.
 
-### <a name="with-devices-onboarded-into-mdatp"></a>Avec les appareils intégrés à MDATP
+### <a name="with-devices-onboarded-into-microsoft-defender-for-endpoint"></a>Appareils intégrés à Microsoft Defender pour point de terminaison
 
-Dans ce scénario, MDATP est déjà déployé et des points de terminaison y sont reportés. Tous ces points de terminaison s’affichent dans la liste des appareils gérés. Vous pouvez continuer à intégrer de nouveaux appareils dans le point de terminaison DLP pour étendre la couverture à l’aide de la [procédure d’intégration d’appareils](endpoint-dlp-getting-started.md#onboarding-devices).
+Dans ce scénario, Microsoft Defender pour point de terminaison est déjà déployé et des points de terminaison y sont signalés. Tous ces points de terminaison s’affichent dans la liste des appareils gérés. Vous pouvez continuer à intégrer de nouveaux appareils dans le point de terminaison DLP pour étendre la couverture à l’aide de la [procédure d’intégration d’appareils](endpoint-dlp-getting-started.md#onboarding-devices).
 
 1. Ouvrez le [Centre de conformité Microsoft](https://compliance.microsoft.com).
 2. Ouvrez la page Paramètres du centre de conformité et sélectionnez **Activer la surveillance d’appareils**.
-3. Sélectionnez **Gestion des appareils** pour ouvrir la liste des **Appareils**. Vous devriez voir la liste des appareils qui signalent déjà les MDATP. ![Gestion des appareils](../media/endpoint-dlp-getting-started-2-device-management.png)
+3. Sélectionnez **Gestion des appareils** pour ouvrir la liste des **Appareils**. Vous devriez voir apparaître la liste des appareils qui signalent déjà à Microsoft Defender pour point de terminaison. ![Gestion des appareils](../media/endpoint-dlp-getting-started-2-device-management.png)
 4. Sélectionnez **Intégration** si vous avez besoin d’intégrer d’autres appareils.
 5. Choisissez la manière dont vous voulez déployer ces autres appareils à partir de la liste**Méthode de déploiement**, puis **Télécharger le package**.
-6. Suivez les procédures appropriées dans [Outils et méthodes d’intégration pour les ordinateurs Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Ce lien vous permet d’accéder à une page d’accueil dans laquelle vous pouvez accéder aux procédures MDATP qui correspondent au package de déploiement que vous avez sélectionné à l’étape 5 :
+6. Suivez les procédures appropriées dans [Outils et méthodes d’intégration pour les ordinateurs Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Ce lien vous dirige vers une page d’accueil dans laquelle vous pouvez accéder aux procédures Microsoft Defender pour point de terminaison qui correspondent au package de déploiement que vous avez sélectionné à l’étape 5 :
     - Intégrer les ordinateurs Windows 10 utilisant une stratégie de groupe
     - Intégrer les ordinateurs Windows à l’aide du gestionnaire de configuration de point de terminaison Microsoft
     - Intégrer les ordinateurs Windows 10 à l’aide des outils de gestion des appareils mobiles

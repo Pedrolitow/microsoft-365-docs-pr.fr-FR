@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: La protection contre la perte de données (DLP) dans le centre de sécurité &amp; conformité inclut 80 types d’informations sensibles que vous pouvez utiliser dans vos stratégies DLP. Cette rubrique répertorie tous ces types d'informations sensibles et indique ce qu'une stratégie DLP recherche pour chaque type.
-ms.openlocfilehash: 7985d52bcf0cbd4e3e86bc240abb8f692e733743
-ms.sourcegitcommit: 327163f70eac0de568ebe3c9a97a744c3ed408cb
+ms.openlocfilehash: 5d776fcf816359fd30c750b9bebe536269a2b6c5
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/22/2020
-ms.locfileid: "48177122"
+ms.locfileid: "48208096"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Définitions d’entités des types d’informations sensibles
 
@@ -33,14 +33,6 @@ Les types d’informations sensibles nécessitent l’un de ces abonnements :
 - Microsoft 365 E3
 - Microsoft 365 E5
 
-Les types d’informations sensibles peuvent être utilisés dans :
-- stratégies de protection contre la perte de données
-- polcies de conformité des communications
-- gouvernance des informations
-- gestion des enregistrements
-- Sécurité des applications Cloud Microsoft
-
-  
 ## <a name="aba-routing-number"></a>Numéro d’acheminement ABA
 
 ### <a name="format"></a>Format

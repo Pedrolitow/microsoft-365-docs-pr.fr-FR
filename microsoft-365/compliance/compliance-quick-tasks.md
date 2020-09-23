@@ -12,12 +12,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: Découvrez les tâches qui vous aideront à commencer rapidement à prendre en main la conformité dans Microsoft 365.
-ms.openlocfilehash: 1702c05b271c0e8b5456c1a93f8bf1dc28f7fbd9
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: d2399b65e6f8d2765d3fc8691b0e395f113092f1
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47816813"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200837"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Tâches rapides pour démarrer avec la conformité Microsoft 365
 
@@ -31,7 +31,7 @@ Une fois ces tâches de conformité de base terminées, envisagez de développer
 
 Il est important de gérer les personnes de votre organisation qui ont accès au centre de conformité Microsoft 365 pour afficher le contenu et effectuer des tâches de gestion. Microsoft 365 fournit des rôles d’administrateur spécifiques à la conformité et à l’utilisation des outils inclus dans le centre de conformité Microsoft 365.
 
-Commencez par attribuer des autorisations de conformité aux personnes de votre organisation pour qu’elles puissent effectuer ces tâches et empêcher des personnes non autorisées d’accéder à des zones en dehors de leurs responsabilités. Vous devez vous assurer que vous avez affecté les personnes appropriées aux rôles d’administrateur des **données de conformité** et d’administrateur de **conformité** avant de commencer à configurer et à implémenter des solutions de conformité incluses dans Microsoft 365. Vous devrez également affecter des utilisateurs au rôle de lecteur global Azure Active Directory pour afficher les données dans le score de conformité.
+Commencez par attribuer des autorisations de conformité aux personnes de votre organisation pour qu’elles puissent effectuer ces tâches et empêcher des personnes non autorisées d’accéder à des zones en dehors de leurs responsabilités. Vous devez vous assurer que vous avez affecté les personnes appropriées aux rôles d’administrateur des **données de conformité** et d’administrateur de **conformité** avant de commencer à configurer et à implémenter des solutions de conformité incluses dans Microsoft 365. Vous devrez également affecter des utilisateurs au rôle de lecteur global Azure Active Directory pour afficher les données dans le gestionnaire de conformité.
 
 Pour obtenir des conseils détaillés sur la configuration des autorisations et l’affectation de personnes aux rôles d’administrateur, consultez [la rubrique autorisations dans le centre de sécurité & conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
 
@@ -39,9 +39,9 @@ Pour obtenir des conseils détaillés sur la configuration des autorisations et 
 
 Il est difficile de déterminer où aller si vous ne le Sachez pas. Répondre à vos besoins en matière de conformité inclut la compréhension de votre niveau de risque actuel et des mises à jour nécessaires à ces changements. Que votre organisation soit une nouveauté aux exigences de conformité ou qu’elle ait une expérience approfondie en matière de standards et de réglementations qui régissent votre secteur d’activité, la meilleure solution pour améliorer la conformité consiste à comprendre l’emplacement de votre organisation.
 
-Le [score de conformité Microsoft](compliance-score.md) peut vous aider à comprendre la position de la conformité de votre organisation et à mettre en évidence les zones susceptibles de nécessiter une amélioration. Le score de conformité utilise un tableau de bord centralisé pour calculer un score basé sur les risques, ce qui mesure votre progression dans la réalisation d’actions qui permettent de réduire les risques liés à la protection des données et aux normes réglementaires. Vous pouvez également utiliser le score de conformité en tant qu’outil pour suivre toutes vos évaluations de risques. Il fournit des fonctionnalités de flux de travail pour vous aider à effectuer efficacement les évaluations des risques par le biais d’un outil courant.
+Le [Gestionnaire de conformité Microsoft](compliance-manager.md) peut vous aider à comprendre la position de la conformité de votre organisation et à mettre en évidence les zones susceptibles de nécessiter une amélioration. Le gestionnaire de conformité utilise un tableau de bord centralisé pour calculer un score basé sur les risques, ce qui mesure votre progression dans la réalisation d’actions qui permettent de réduire les risques liés à la protection des données et aux normes réglementaires. Vous pouvez également utiliser le gestionnaire de conformité comme outil pour suivre toutes vos évaluations de risques. Il fournit des fonctionnalités de flux de travail pour vous aider à effectuer efficacement les évaluations des risques par le biais d’un outil courant.
 
-Pour obtenir des conseils détaillés sur la prise en main du score de conformité, consultez [la rubrique Set up Compliance score](compliance-score-setup.md).
+Pour obtenir des conseils détaillés sur la prise en main du gestionnaire de conformité, consultez [la rubrique prise en main du gestionnaire de conformité](compliance-manager-setup.md).
 
 >[!IMPORTANT]
 >La sécurité et la conformité sont étroitement intégrées pour la plupart des organisations. Il est important que votre organisation gère la sécurité de base, la protection contre les menaces et les zones de gestion des identités et des accès afin de fournir une approche de défense approfondie à la sécurité et à la conformité.

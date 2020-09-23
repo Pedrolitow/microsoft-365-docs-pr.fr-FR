@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur de données pour importer les données des employés depuis le système des ressources humaines (RH) de leur organisation vers Microsoft 365. Cela vous permet d’utiliser des données RH dans des stratégies de gestion des risques initiées pour vous aider à détecter les activités d’utilisateurs spécifiques susceptibles de constituer une menace interne pour votre organisation.
-ms.openlocfilehash: a8eaeda3bc883de55a2c588e39557b4517ae3cc5
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: 31afa01a518028e7ec25116e947b4e0d6dc94dac
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47817159"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201543"
 ---
-# <a name="set-up-a-connector-to-import-hr-data-preview"></a>Configurer un connecteur pour importer des données RH (aperçu)
+# <a name="set-up-a-connector-to-import-hr-data"></a>Configurer un connecteur pour importer des données RH
 
 Vous pouvez configurer un connecteur de données dans le centre de conformité Microsoft 365 afin d’importer des données de ressources humaines (RH) liées à des événements tels que la démission d’un utilisateur ou un changement de niveau de travail d’un utilisateur. Les données RH peuvent ensuite être utilisées par la [solution de gestion des risques inSided](insider-risk-management.md) pour générer des indicateurs de risque qui peuvent vous aider à identifier les activités malveillantes potentielles ou les vols de données par les utilisateurs au sein de votre organisation.
 
@@ -219,7 +219,7 @@ Une fois cette étape terminée, veillez à copier l’ID de travail qui est gé
 
 1. Accédez à [https://compliance.microsoft.com](https://compliance.microsoft.com/) , puis cliquez sur **connecteurs de données** dans le volet de navigation de gauche.
 
-2. Dans la page **connecteurs de données (aperçu)** , sous **RH**, cliquez sur **affichage**.
+2. Sur la page **connecteurs de données** , sous **RH**, cliquez sur **affichage**.
 
 3. Sur la page **personnalisée RH** , cliquez sur **Ajouter un connecteur**.
 
@@ -291,7 +291,7 @@ La dernière étape de la configuration d’un connecteur RH consiste à exécut
 
    Le tableau suivant décrit les paramètres à utiliser avec ce script et leurs valeurs requises. Les informations que vous avez obtenues dans les étapes précédentes sont utilisées dans les valeurs de ces paramètres.
 
-   |**Paramètre**|**Description**
+   |**Parameter**|**Description**
    |:-----|:-----|:-----|
    |`tenantId`|Il s’agit de l’ID de votre organisation Microsoft 365 que vous avez obtenu à l’étape 2. Vous pouvez également obtenir l’ID de client de votre organisation sur le panneau de présentation dans le centre **d'** administration Azure ad. Il est utilisé pour identifier votre organisation.|
    |`appId` |Il s’agit de l’ID de l’application Azure AD pour l’application que vous avez créée dans Azure AD à l’étape 2. Il est utilisé par Azure AD pour l’authentification lorsque le script tente d’accéder à votre organisation Microsoft 365. | 
