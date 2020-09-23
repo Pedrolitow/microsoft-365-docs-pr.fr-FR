@@ -3,7 +3,7 @@ title: Implémentation d'un tunnel VPN partagé pour Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 9/21/2020
+ms.date: 9/22/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Comment implémenter un tunnel VPN partagé pour Office 365
-ms.openlocfilehash: bfdc11ffe4244ec0ac83bb1c0470476aafeec939
-ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
+ms.openlocfilehash: af5c2ea35df921abe8eaa9a85ab2ab244931c098
+ms.sourcegitcommit: 4ee683c18442386f6fc5c76ffabfad2c28b81d42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171421"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48214879"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>Implémentation d'un tunnel VPN partagé pour Office 365
 
@@ -37,7 +37,7 @@ Pendant un certain temps, les modèles VPN où toutes les connexions à partir d
 
 L’utilisation de réseaux privés virtuels avec tunnel imposé pour la connexion à des applications cloud distribuées et des performances est extrêmement optimale, mais l’impact négatif de cette opération peut avoir été accepté par certaines entreprises afin de maintenir l’état actuel d’une sécurité perspectives. Un exemple de diagramme de ce scénario est illustré ci-dessous :
 
-![Configuration de la segmentation de tunnel par VPN](../media/vpn-split-tunneling/vpn-ent-challenge.png)
+![Configuration de la segmentation de tunnel par VPN](../media/vpn-split-tunneling/enterprise-network-traditional.png)
 
 Ce problème s'est aggravé depuis plusieurs années, avec de nombreux clients qui ont signalé un décalage important de modèles de trafic réseau. Le trafic utilisé pour rester sur site se connecte désormais aux points de terminaison du Cloud externe. De nombreux clients Microsoft signalaient qu’auparavant, environ 80% du trafic réseau était une source interne (représentée par une ligne pointillée dans le diagramme ci-dessus). En 2020, ce nombre est à présent environ 20% ou plus, car les charges de travail majeures ont été déplacées vers le cloud, mais ces tendances ne sont pas rares pour les autres entreprises. Au fil du temps, au fur et à mesure de l’avancement du projet, le modèle ci-dessus devient de plus en plus encombrant et peu viable, empêchant une organisation d'être flexible au fur et à mesure de son déplacement dans un premier monde de cloud.
 
@@ -95,7 +95,7 @@ Dans cette section, vous trouverez les étapes simples nécessaires pour migrer 
 
 Le diagramme ci-dessous montre comment fonctionne la solution tunnel partagé VPN recommandée :
 
-![Détail de la solution VPN du tunnel partagé](../media/vpn-split-tunneling/vpn-split-detail.png)
+![Détail de la solution VPN du tunnel partagé](../media/vpn-split-tunneling/vpn-split-tunnel-example.png)
 
 ### <a name="1-identify-the-endpoints-to-optimize"></a>1. Identifier les points de terminaison à optimiser
 
@@ -109,9 +109,6 @@ Les URL dans cette catégorie présentent les caractéristiques suivantes :
 - Sont-ils sensibles au bande passante et/ou à la latence
 - Sont-ils en mesure d'avoir les éléments de sécurité requis fournis dans le service plutôt qu'en ligne sur le réseau
 - Représente environ 70 à 80% du volume de trafic vers le service Office 365
-
->[!NOTE]
->Microsoft s’est engagé à interrompre les modifications apportées à **optimiser** les points de terminaison pour Office 365 jusqu’au **30 juin 2020** minimum, ce qui permet aux clients de se concentrer sur d’autres défis plutôt que de maintenir la liste blanche des points de terminaison une fois initialement implémentée. Cet article est mis à jour pour refléter les modifications à venir.
 
 Pour plus d’informations sur les points de terminaison Office 365 et la manière dont ils sont classés et gérés, voir l’article [Gestion des points de terminaison Office 365](managing-office-365-endpoints.md).
 

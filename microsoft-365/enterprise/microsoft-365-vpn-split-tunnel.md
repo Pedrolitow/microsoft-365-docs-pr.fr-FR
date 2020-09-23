@@ -3,7 +3,7 @@ title: 'Présentation : la segmentation de tunnel VPN avec Office 365'
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/3/2020
+ms.date: 9/22/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Instructions d’utilisation de la segmentation de tunnel VPN avec Office 365 afin d’optimiser la connectivité d’Office 365 pour les utilisateurs distants.
-ms.openlocfilehash: aad7932abb6b96a518b069ec24e836d2b5d234a1
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: cda9333c7edbcc323544290c2ba946a8464f9c57
+ms.sourcegitcommit: 4ee683c18442386f6fc5c76ffabfad2c28b81d42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695889"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48214756"
 ---
 # <a name="optimize-office-365-connectivity-for-remote-users-using-vpn-split-tunneling"></a>Optimiser la connectivité d’Office 365 pour les utilisateurs à distance à l’aide de la segmentation de tunnel VPN
 <!---
@@ -89,16 +89,13 @@ Cet ensemble de points de terminaison étroitement limité peut être séparé d
 
 Les éléments de sécurité tels que la DLP, la protection antivirus, l’authentification et le contrôle d’accès peuvent être fournis beaucoup plus efficacement contre ces points d'extrémité dans les différentes couches du service. Cela permet également de dérouter l’essentiel du volume de trafic à partir de la solution VPN, ce qui libère la capacité VPN pour le trafic important de l’entreprise qui en dépend encore. Cela devrait également supprimer la nécessité, dans de nombreux cas, de passer par un programme de mise à niveau long et coûteux pour faire face à ce nouveau mode de fonctionnement.
 
-![Configuration de la segmentation de tunnel VPN](../media/vpn-split-tunneling/vpn-model-2.png)
+![Détails de la configuration VPN de tunnel scindé](../media/vpn-split-tunneling/vpn-split-tunnel-example.png)
 
 _Image 3 : Une solution de segmentation de tunnel VPN avec des exceptions Office 365 définies, envoyées directement au service. Tout autre trafic est renvoyé dans le réseau d'entreprise, quelle que soit la destination._
 
 Du point de vue de la sécurité, Microsoft dispose d'une gamme de fonctionnalités de sécurité qui peuvent être utilisées pour fournir une sécurité similaire, voire améliorée, à celle fournie par l'inspection en ligne par des piles de sécurité locales. L’article de blog de l’équipe de sécurité Microsoft, [Des moyens alternatifs pour les professionnels de la sécurité et l'informatique de réaliser des contrôles de sécurité modernes dans les scénarios de travail à distance uniques d'aujourd'hui](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/) propose un résumé clair des fonctionnalités disponibles. Vous trouverez aussi des instructions plus détaillées dans cet article. Vous pouvez également en apprendre plus sur l’implémentation Microsoft de la segmentation de tunnel VPN en consultant l’article [Fonctionnement sur VPN : comment Microsoft maintient les employés travaillant à distance connectés](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv).
 
 Dans de nombreux cas, cette implémentation peut être réalisée en quelques heures, ce qui permet de résoudre rapidement l'un des problèmes les plus urgents auxquels sont confrontées les organisations, qui passent rapidement au travail à distance de façon exclusive. Si vous souhaitez obtenir des instructions sur l’implémentation de la segmentation du tunnel VPN, consultez l’article [Implémentation de la segmentation de tunnel VPN pour Office 365](microsoft-365-vpn-implement-split-tunnel.md).
-
->[!NOTE]
->Microsoft s’est engagé à interrompre les modifications apportées à **optimiser** les points de terminaison pour Office 365 jusqu’au **30 juin 2020** minimum, ce qui permet aux clients de se concentrer sur d’autres défis plutôt que de maintenir la liste blanche des points de terminaison une fois initialement implémentée.
 
 ## <a name="related-topics"></a>Voir aussi
 

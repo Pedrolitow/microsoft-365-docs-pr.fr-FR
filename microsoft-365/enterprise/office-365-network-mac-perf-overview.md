@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Vue d’ensemble de la connectivité réseau dans le centre d’administration Microsoft 365 (version d’évaluation)
-ms.openlocfilehash: a51cfba962ff884afa634473c0523e49a92a56f5
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: fc800d6f7a63e34f83b089fdea41b68cbf9134da
+ms.sourcegitcommit: 4ee683c18442386f6fc5c76ffabfad2c28b81d42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200796"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48214914"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Connectivité réseau dans le centre d’administration Microsoft 365 (version d’évaluation)
 
@@ -33,7 +33,7 @@ Les **évaluations réseau** et les informations sur le **réseau** s’affichen
 
 Vous serez peut-être invité à participer à la préversion publique de cette fonctionnalité au nom de votre organisation. L’acceptation est généralement effectuée immédiatement, puis la page connectivité réseau s’affiche. 
 
-Lors de la navigation vers la page connectivité réseau, vous verrez un volet de vue d’ensemble contenant une carte des performances réseau globales, une évaluation du réseau pour l’étendue de l’ensemble du client, ainsi qu’une liste des problèmes actuels. Pour accéder à cette page, vous devez être administrateur de l’organisation dans Microsoft 365. Le rôle d’administrateur du lecteur de rapport aura accès en lecture à ces informations. Pour configurer des emplacements et d’autres éléments de connectivité réseau, un administrateur doit faire partie d’un rôle d’administrateur de serveur, tel que le rôle d’administrateur de prise en charge de service. À partir de la vue d’ensemble, vous pouvez accéder à des mesures et des problèmes de performances réseau spécifiques par emplacement. Pour plus d’informations, reportez-vous à [Network performance Overview dans le centre d’administration 365 de Microsoft](#network-connectivity-overview-in-the-microsoft-365-admin-center).
+Lors de la navigation vers la page connectivité réseau, vous verrez un volet de vue d’ensemble contenant une carte des performances réseau globales, une évaluation du réseau pour l’étendue de l’ensemble du client, ainsi qu’une liste des problèmes actuels. Pour accéder à cette page, vous devez être administrateur de l’organisation dans Microsoft 365. Le rôle d’administrateur du lecteur de rapport aura accès en lecture à ces informations. Pour configurer des emplacements et d’autres éléments de connectivité réseau, un administrateur doit faire partie d’un rôle d’administrateur de serveur, tel que le rôle d’administrateur de prise en charge de service. À partir de la vue d’ensemble, vous pouvez accéder à des mesures et des problèmes de performances réseau spécifiques par emplacement. Pour plus d’informations, reportez-vous à [Network Connectivity Overview dans le centre d’administration 365 de Microsoft](#network-connectivity-overview-in-the-microsoft-365-admin-center).
 
 ## <a name="pre-requisites-for-network-connectivity-assessments-to-appear"></a>Conditions préalables à l’affichage des évaluations de connectivité réseau
 
