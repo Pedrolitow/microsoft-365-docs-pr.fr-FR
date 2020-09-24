@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 319b26261f623a7e19e5bb8fbcd0b5d8a50d10a8
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: a76bae70adeb07d9ea0574a25bac14f89a0a790d
+ms.sourcegitcommit: 61d7284b412d0f7bbd8bbb2225c2e6324f86b717
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289708"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48262216"
 ---
 # <a name="device-configuration"></a>Configuration des appareils
 
@@ -42,7 +42,7 @@ Mettre à jour le déploiement | Utilisez Windows Update pour effectuer un dépl
 Connexions limitées | Par défaut, les mises à jour sur les connexions limitées (telles que les réseaux LTE) sont désactivées, bien que chaque utilisateur puisse activer cette fonctionnalité de manière indépendante dans **paramètres > mises à jour > options avancées**. Si vous souhaitez autoriser tous les utilisateurs à activer les mises à jour sur les connexions limitées, [envoyez une demande de modification](../working-with-managed-desktop/admin-support.md), qui activera ce paramètre pour tous les appareils.
 | Conformité des appareils | Ces stratégies sont configurées pour tous les appareils de bureau gérés par Microsoft. Un appareil est signalé comme non conforme lorsqu’il dérive de notre configuration de sécurité requise.
 
-## <a name="diagnostic-data"></a>Données de diagnostic
+## <a name="windows-diagnostic-data"></a>Données de diagnostic Windows
 
  Les appareils seront configurés pour fournir des données de diagnostic améliorées à Microsoft sous un identificateur commercial connu. Dans le cadre du bureau géré Microsoft, les administrateurs informatiques ne peuvent pas modifier ces paramètres. Pour les clients qui utilisent des régions générales de protection des données (RGPD), les utilisateurs peuvent réduire le niveau de données de diagnostic fourni, mais une réduction du service est possible. Par exemple, le bureau géré Microsoft ne pourra pas collecter les données nécessaires pour effectuer une itération sur les paramètres et les stratégies afin de mieux répondre aux exigences de performances et de sécurité. Pour plus d’informations, reportez-vous à [la rubrique Configurer les données de diagnostic Windows dans votre organisation.](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enhanced-level)
 
