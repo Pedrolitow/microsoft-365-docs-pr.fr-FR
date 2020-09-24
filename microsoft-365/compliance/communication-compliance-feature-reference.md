@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 757b1fcdae69e98ec45bb29e669ceda8f8cb8f98
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: e1e1677c929ef0de5d47dbb98ef8987a8fba548d
+ms.sourcegitcommit: 1522a6471e0c5254a6d0f592e1f4dfacd1dd473a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131634"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48245901"
 ---
 # <a name="communication-compliance-feature-reference"></a>Référence de la fonctionnalité de conformité des communications
 
@@ -41,7 +41,7 @@ Vous créez des stratégies de conformité des communications pour les organisat
 
 Les modèles de stratégie sont des paramètres de stratégie prédéfinis que vous pouvez utiliser pour créer rapidement des stratégies pour répondre aux scénarios de conformité courants. Chacun de ces modèles présente des différences dans les conditions et l’étendue, et tous les modèles utilisent les mêmes types de signaux d’analyse. Vous pouvez choisir parmi les modèles de stratégie suivants :
 
-|**Catégorie**|**Modèle de stratégie**|**Détails**|
+|**Catégorie**|**Modèle de stratégie**|**Details**|
 |:-----|:-----|:-----|
 | **Langage offensant et blocage du harcèlement** | Surveiller les communications pour un langage offensant | -Emplacements : Exchange Online, Microsoft Teams, Yammer, Skype entreprise <br> -Direction : entrant, sortant, interne <br> -Pourcentage de révision : 100% <br> -Conditions : classifieur de langue offensant |
 | **Informations sensibles** | Surveiller les communications pour les informations sensibles | -Emplacements : Exchange Online, Microsoft Teams, Yammer, Skype entreprise <br> -Direction : entrant, sortant, interne <br> -Pourcentage de révision : 10% <br> -Conditions : informations sensibles, modèles de contenu prédéfinis et types, option de dictionnaire personnalisé, pièces jointes dont la taille est supérieure à 1 Mo |
@@ -58,7 +58,7 @@ En fonction de la façon dont vous souhaitez gérer les stratégies de communica
 
 Sélectionnez l’une des options de groupe de rôles suivantes lors de la configuration de la conformité des communications :
 
-|**Rôle**|**Autorisations de rôle**|
+|**Role**|**Autorisations de rôle**|
 |:-----|:-----|
 | **Conformité de la communication** | Utilisez ce groupe de rôles pour gérer la conformité des communications de votre organisation dans un seul groupe. En ajoutant tous les comptes d’utilisateur pour les administrateurs, analystes, investigateurs et visionneuses désignés, vous pouvez configurer des autorisations de conformité de la communication dans un seul groupe. Ce groupe de rôles contient tous les rôles d’autorisation de conformité de communication. Cette configuration est la méthode la plus simple pour démarrer rapidement la conformité de la communication et convient aux organisations qui n’ont pas besoin d’autorisations distinctes définies pour des groupes d’utilisateurs distincts. |
 | **Administrateur de conformité de communication** | Utilisez ce groupe de rôles pour configurer initialement la conformité de la communication et par la suite pour séparer les administrateurs de conformité des communications en un groupe défini. Les utilisateurs affectés à ce groupe de rôles peuvent créer, lire, mettre à jour et supprimer des stratégies de conformité de communication, des paramètres globaux et des affectations de groupes de rôles. Les utilisateurs affectés à ce groupe de rôles ne peuvent pas afficher les alertes de message. |
@@ -251,7 +251,7 @@ Vous pouvez créer des modèles d’avis si vous souhaitez envoyer aux utilisate
 
 Les modèles de notifications sont des modèles de courrier électronique personnalisés dans lesquels vous pouvez définir les champs de message suivants dans la zone **paramètres de conformité** de la communication :
 
-|**Field**|**Obligatoire**| **Détails** |
+|**Field**|**Obligatoire**| **Details** |
 |:-----|:-----|:-----|
 |**Nom du modèle** | Oui | Nom convivial du modèle d’avis que vous sélectionnerez dans le flux de travail de notification lors de la correction, prend en charge les caractères de texte. |
 | **Adresse de l’expéditeur** | Oui | Adresse d’un ou de plusieurs utilisateurs ou groupes qui envoient le message à l’utilisateur avec une correspondance de stratégie, sélectionnée dans Active Directory pour votre abonnement. |
@@ -283,9 +283,9 @@ Si vous souhaitez créer un message électronique en texte simple pour les notif
 
 Les filtres de conformité de la communication vous permettent de filtrer et de trier les messages d’alerte pour des actions plus rapides d’enquête et de correction. Le filtrage est disponible sur les onglets **en attente** et **résolus** pour chaque stratégie. Pour enregistrer un filtre ou un jeu de filtres en tant que requête de filtre enregistrée, une ou plusieurs valeurs doivent être configurées en tant que sélections de filtre. Le tableau suivant présente les détails des filtres :
 
-|**Filter**|**Détails**|
+|**Filtre**|**Details**|
 |:-----|:-----|
-| **Date** | Date à laquelle le message a été envoyé ou reçu par un utilisateur au sein de votre organisation. |
+| **Date** | Date à laquelle le message a été envoyé ou reçu par un utilisateur au sein de votre organisation. Pour filtrer un seul jour, sélectionnez une plage de dates qui commence le jour pour lequel vous souhaitez obtenir des résultats et se terminer par le jour suivant. Par exemple, si vous souhaitez filtrer les résultats pour 9/20/2020, choisissez une plage de dates de filtre de 9/20/2020-9/21/2020.|
 | **Classe file** | Classe du message en fonction du type de message, qu’il *s’agisse d’un message ou* d’une *pièce jointe*. |
 | **Avec pièce jointe** | Présence d’une pièce jointe dans le message. |
 | **Classe d’élément** | Source du message en fonction du type de message, de la messagerie électronique, de la conversation Microsoft Team, Bloomberg, etc. Pour plus d’informations sur les types d’éléments communs et les classes de message, voir [Item Types and message classes](https://docs.microsoft.com/office/vba/outlook/concepts/forms/item-types-and-message-classes). |
@@ -293,7 +293,7 @@ Les filtres de conformité de la communication vous permettent de filtrer et de 
 | **Destinataire** | Utilisateur auquel le message a été envoyé. |
 | **Sender** | La personne qui a envoyé le message. |
 | **Domaine de l’expéditeur** | Le domaine qui a envoyé le message. |
-| **Taille** | Taille du message en Ko. |
+| **Size** | Taille du message en Ko. |
 | **Subject/title** | Objet du message ou titre de conversation. |
 | **Tags** | Les balises affectées à un message, qu’elles soient *douteuses*, *conformes*ou *non conformes*. |
 | **Transmis à** | Nom d’utilisateur de la personne incluse dans le cadre d’une action de réaffectation de message. |
@@ -429,20 +429,20 @@ Dans certains cas, vous devez fournir des informations aux auditeurs de régleme
 
 Pour afficher les activités de mise à jour des stratégies de conformité des communications, sélectionnez le contrôle d' **exportation des mises à jour des stratégies** sur la page principale de n’importe quelle stratégie. Vous devez disposer des rôles administrateur *général* ou *administrateur de conformité des communications* pour exporter des activités de mise à jour. Cette action génère un fichier d’audit au format. csv qui contient les informations suivantes :
 
-|**Field**|**Détails**|
+|**Field**|**Details**|
 |:-----|:-----|
 | **CreationDate** | Date à laquelle l’activité de mise à jour a été effectuée dans une stratégie. |
 | **UserIds** | Utilisateur qui a effectué l’activité de mise à jour dans une stratégie. |
-| **Opérations** | Les opérations de mise à jour effectuées sur la stratégie. |
+| **Operations** | Les opérations de mise à jour effectuées sur la stratégie. |
 | **AuditData** | Ce champ est la source de données principale pour toutes les activités de mise à jour de stratégie. Toutes les activités de mise à jour sont enregistrées et séparées par des virgules. |
 
 Pour afficher les activités de vérification de conformité de la communication pour une stratégie, sélectionnez le contrôle **Exporter les activités de révision** dans la page de vue d' **ensemble** pour une stratégie spécifique. Vous devez disposer des rôles administrateur *général* ou *administrateur de conformité des communications* pour exporter des activités de révision. Cette action génère un fichier d’audit au format. csv qui contient les informations suivantes :
 
-|**Field**|**Détails**|
+|**Field**|**Details**|
 |:-----|:-----|
 | **CreationDate** | Date à laquelle l’activité de révision a été effectuée dans une stratégie. |
 | **UserIds** | Utilisateur qui a effectué l’activité de révision dans une stratégie. |
-| **Opérations** | Les opérations de révision effectuées sur la stratégie. |
+| **Operations** | Les opérations de révision effectuées sur la stratégie. |
 | **AuditData** | Ce champ est la source de données principale pour toutes les activités de révision de stratégie. Toutes les activités de révision sont enregistrées et séparées par des virgules. |
 
 Vous pouvez également afficher les activités d’audit dans le journal d’audit unifié ou avec l’applet de commande PowerShell [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) .

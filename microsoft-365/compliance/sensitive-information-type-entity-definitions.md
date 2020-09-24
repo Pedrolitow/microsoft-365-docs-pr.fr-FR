@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: La protection contre la perte de données (DLP) dans le centre de sécurité &amp; conformité inclut 80 types d’informations sensibles que vous pouvez utiliser dans vos stratégies DLP. Cette rubrique répertorie tous ces types d'informations sensibles et indique ce qu'une stratégie DLP recherche pour chaque type.
-ms.openlocfilehash: 5d776fcf816359fd30c750b9bebe536269a2b6c5
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 8ee871ccde30d3ab71dbcb2d5183aafdf11482bd
+ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208096"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48235570"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Définitions d’entités des types d’informations sensibles
 
@@ -206,6 +206,13 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - auront
 
 ## <a name="australia-business-number"></a>Numéro d’entreprise Australie
+Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
+- stratégies de protection contre la perte de données
+- stratégies de conformité des communications
+- gouvernance des informations
+- gestion des enregistrements
+- Sécurité des applications Cloud Microsoft
+
 
 ### <a name="format"></a>Format
 
@@ -261,6 +268,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - businessno #
 
 ## <a name="australia-company-number"></a>Numéro de société Australie
+Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
+- stratégies de protection contre la perte de données
+- stratégies de conformité des communications
+- gouvernance des informations
+- gestion des enregistrements
+- Sécurité des applications Cloud Microsoft
 
 ### <a name="format"></a>Format
 
@@ -689,6 +702,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Fuhrerschein Republik Osterreich
 
 ## <a name="austria-identity-card"></a>Carte d’identité Autriche
+Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
+- stratégies de protection contre la perte de données
+- stratégies de conformité des communications
+- gouvernance des informations
+- gestion des enregistrements
+- Sécurité des applications Cloud Microsoft
 
 ### <a name="format"></a>Format
 
@@ -762,20 +781,38 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_austria_eu_passport_number" />
-          <Match idRef="Keywords_austria_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_austria_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- tel #
+- tel #
+- passportid
+- passeports
+- n ° passeport
+- Numéro de passeport
+- passportnumber
+- Numéro de passeport
+- passportnumbers
+- numéros de passeport
+
 #### <a name="keywords_austria_eu_passport_number"></a>Keywords_austria_eu_passport_number
 
-- numéro de passeport
-- Numéro de passeport autrichien
-- Numéro de passeport
-- reisepass
-- österreichisch reisepass
+- reisepassnummer
+- reisepasse
+- Non-Reisepass 
+- Nr-Reisepass
+- Reisepass-Nr
+- Passnummer
+- reisepässe
 
 ## <a name="austria-social-security-number-or-equivalent-identification"></a>Numéro de sécurité sociale autrichien ou identification équivalente
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’information de numéro de sécurité sociale ou d’ID équivalent.
@@ -906,6 +943,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Numéro de taxe
  
 ## <a name="austria-value-added-tax"></a>Taxe sur la valeur ajoutée autrichienne
+Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
+- stratégies de protection contre la perte de données
+- stratégies de conformité des communications
+- gouvernance des informations
+- gestion des enregistrements
+- Sécurité des applications Cloud Microsoft
 
 ### <a name="format"></a>Format
 
@@ -1626,23 +1669,42 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
-          <IdMatch idRef="Regex_belgium__eu_passport_number" />
-          <Match idRef="Keywords_belgium_eu_passport_number" />
+          <IdMatch idRef="Regex_belgium_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_belgium_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- tel #
+- tel #
+- passportid
+- passeports
+- n ° passeport
+- Numéro de passeport
+- passportnumber
+- Numéro de passeport
+- passportnumbers
+- numéros de passeport
+
 #### <a name="keywords_belgium_eu_passport_number"></a>Keywords_belgium_eu_passport_number
 
-- numéro de passeport
-- Numéro de passeport belge
-- Numéro de passeport
-- paspoort
+- numéro passeport
+- paspoort Nr
+- paspoort-Nr
 - paspoortnummer
+- paspoortnummers
+- Carte passeport
+- Livre de passeport
+- Transmission-Nr
+- Passnummer
 - reisepass kein
-- reisepass
 
 ## <a name="belgium-social-security-number-or-equivalent-identification"></a>Numéro de sécurité sociale belge ou identification équivalente
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’information de numéro de sécurité sociale ou d’ID équivalent.
@@ -1706,6 +1768,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 
 ## <a name="belgium-value-added-tax-number"></a>Valeur belge-valeur ajoutée de la taxe
+Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
+- stratégies de protection contre la perte de données
+- stratégies de conformité des communications
+- gouvernance des informations
+- gestion des enregistrements
+- Sécurité des applications Cloud Microsoft
 
 ### <a name="format"></a>Format
 
@@ -2022,6 +2090,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 
 ## <a name="bulgaria-uniform-civil-number"></a>Numéro civil uniforme de la Bulgarie
+Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
+- stratégies de protection contre la perte de données
+- stratégies de conformité des communications
+- gouvernance des informations
+- gestion des enregistrements
+- Sécurité des applications Cloud Microsoft
 
 ### <a name="format"></a>Format
 
@@ -2136,26 +2210,40 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - L’expression régulière  `Regex_bulgaria_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from  `Keywords_bulgaria_eu_passport_number` est trouvé. 
+- Un mot clé depuis  `Keywords_bulgaria_eu_passport_number` ou `Keywords_eu_passport_number_common` est trouvé. 
 
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_bulgaria_eu_passport_number" />
-          <Match idRef="Keywords_bulgaria_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_bulgaria_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 ### <a name="keywords"></a>Mots clés
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- tel #
+- tel #
+- passportid
+- passeports
+- n ° passeport
+- Numéro de passeport
+- passportnumber
+- Numéro de passeport
+- passportnumbers
+- numéros de passeport
+
 #### <a name="keywords_bulgaria_eu_passport_number"></a>Keywords_bulgaria_eu_passport_number
 
-- numéro de passeport
-- Numéro de Passeport bulgare
-- Numéro de passeport
 - номер на паспорта
-
+- номер на паспорт
+- паспорт non
 
 ## <a name="canada-bank-account-number"></a>Numéro de compte bancaire canadien
 
@@ -3346,26 +3434,40 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - L’expression régulière  `Regex_croatia_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from  `Keywords_croatia_eu_passport_number` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_passport_number_common` ou `Keywords_croatia_eu_passport_number` est trouvé. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_croatia_eu_passport_number" />
-          <Match idRef="Keywords_croatia_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_croatia_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 ### <a name="keywords"></a>Mots clés
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- tel #
+- tel #
+- passportid
+- passeports
+- n ° passeport
+- Numéro de passeport
+- passportnumber
+- Numéro de passeport
+- passportnumbers
+- numéros de passeport
+
 #### <a name="keywords_croatia_eu_passport_number"></a>Keywords_croatia_eu_passport_number
 
-- numéro de passeport
-- Numéro de passeport croate
-- Numéro de passeport
 - broj putovnice
-
+- BR. Putovnice
+- BR putovnice
    
 ## <a name="croatia-personal-identification-oib-number"></a>Numéro d’identification personnelle de la Croatie (OIB)
 
@@ -3553,6 +3655,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 
 ## <a name="cyprus-identity-card"></a>Carte d’identité Chypre
+Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
+- stratégies de protection contre la perte de données
+- stratégies de conformité des communications
+- gouvernance des informations
+- gestion des enregistrements
+- Sécurité des applications Cloud Microsoft
 
 ### <a name="format"></a>Format
 
@@ -3613,29 +3721,57 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - L’expression régulière  `Regex_cyprus_eu_passport_number` trouve le contenu qui correspond au modèle.
-- Un mot clé from  `Keywords_cyprus_eu_passport_number` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_passport_number_common` ou `Keywords_cyprus_eu_passport_number` est trouvé. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_cyprus_eu_passport_number" />
-          <Match idRef="Keywords_cyprus_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_cyprus_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- tel #
+- tel #
+- passportid
+- passeports
+- n ° passeport
+- Numéro de passeport
+- passportnumber
+- Numéro de passeport
+- passportnumbers
+- numéros de passeport
+
 #### <a name="keywords_cyprus_eu_passport_number"></a>Keywords_cyprus_eu_passport_number
 
-- numéro de passeport
-- Numéro de passeport de Chypre
-- Numéro de passeport
 - αριθμό διαβατηρίου
-
+- pasaportu
+- Αριθμός Διαβατηρίου
+- κυπριακό διαβατήριο
+- διαβατήριο #
+- διαβατήριο
+- αριθμός διαβατηρίου
+- Pasaport Kimliği
+- pasaport numarası
+- N ° Pasaport
+- Αρ. Διαβατηρίου
 
 ## <a name="cyprus-tax-identification-number"></a>Numéro d’identification fiscale de Chypre
+Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
+- stratégies de protection contre la perte de données
+- stratégies de conformité des communications
+- gouvernance des informations
+- gestion des enregistrements
+- Sécurité des applications Cloud Microsoft
 
 ### <a name="format"></a>Format
 
@@ -3782,27 +3918,43 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - L’expression régulière  `Regex_czech_republic_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from  `Keywords_czech_republic_eu_passport_number` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_passport_number_common` ou `Keywords_czech_republic_eu_passport_number` est trouvé. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_czech_republic_eu_passport_number" />
-          <Match idRef="Keywords_czech_republic_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_czech_republic_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- tel #
+- tel #
+- passportid
+- passeports
+- n ° passeport
+- Numéro de passeport
+- passportnumber
+- Numéro de passeport
+- passportnumbers
+- numéros de passeport
+
 #### <a name="keywords_czech_republic_eu_passport_number"></a>Keywords_czech_republic_eu_passport_number
 
-- numéro de passeport
-- Numéro de passeport tchèque
-- Numéro de passeport
 - CESTOVNÍ pas
-- boîte
+- číslo pasu
+- cestovní pasu
+- passeport non
+- čísla pasu
 
 
 ## <a name="czech-personal-identity-number"></a>Numéro d’identité personnelle tchèque
@@ -4039,31 +4191,44 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - L’expression régulière  `Regex_denmark_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from  `Keywords_denmark_eu_passport_number` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_passport_number_common` ou `Keywords_denmark_eu_passport_number` est trouvé. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_denmark_eu_passport_number" />
-          <Match idRef="Keywords_denmark_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_denmark_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- tel #
+- tel #
+- passportid
+- passeports
+- n ° passeport
+- Numéro de passeport
+- passportnumber
+- Numéro de passeport
+- passportnumbers
+- numéros de passeport
+
 #### <a name="keywords_denmark_eu_passport_number"></a>Keywords_denmark_eu_passport_number
 
-- numéro de passeport
-- Numéro de passeport danois
-- Numéro de passeport
-- boîte
 - pasnummer
+- Passeport n °
+- pasnumre
 
 
 ## <a name="denmark-personal-identification-number"></a>Numéro d’identification personnel Danemark
-Cette entité de type d’informations sensibles est incluse dans le type d’informations sensibles du numéro d’identification national de l’UE et est disponible en tant qu’entité de type d’informations sensibles autonome.
 
 ### <a name="format"></a>Format
 
@@ -4332,6 +4497,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 
 ## <a name="estonia-personal-identification-code"></a>Code d’identification personnel (Estonie)
+Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
+- stratégies de protection contre la perte de données
+- stratégies de conformité des communications
+- gouvernance des informations
+- gestion des enregistrements
+- Sécurité des applications Cloud Microsoft
 
 ### <a name="format"></a>Format
 
@@ -4432,26 +4603,39 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - L’expression régulière  `Regex_estonia_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from  `Keywords_estonia_eu_passport_number` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_passport_number_common` ou `Keywords_estonia_eu_passport_number` est trouvé. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_estonia_eu_passport_number" />
-          <Match idRef="Keywords_estonia_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_estonia_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- tel #
+- tel #
+- passportid
+- passeports
+- n ° passeport
+- Numéro de passeport
+- passportnumber
+- Numéro de passeport
+- passportnumbers
+- numéros de passeport
+
 #### <a name="keywords_estonia_eu_passport_number"></a>Keywords_estonia_eu_passport_number
 
-- numéro de passeport
-- Numéro de passeport estonien
-- Numéro de passeport
-- Eesti kodaniku
+Eesti kodaniku numéro de passe Passei passinumbrid document numéro de document n ° dokumendi Nr
 
 ## <a name="eu-debit-card-number"></a>Numéro de carte de crédit de l'UE
 
@@ -5012,6 +5196,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 
 ## <a name="finland-european-health-insurance-number"></a>Numéro d’assurance maladie européenne pour la Finlande
+Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
+- stratégies de protection contre la perte de données
+- stratégies de conformité des communications
+- gouvernance des informations
+- gestion des enregistrements
+- Sécurité des applications Cloud Microsoft
 
 ### <a name="format"></a>Format
 
@@ -5180,22 +5370,44 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - L’expression régulière Regex_finland_passport_number trouve un contenu qui correspond au modèle.
-- Un mot clé figurant dans la liste Keyword_finland_passport_number est trouvé.
+- Un mot clé depuis Keywords_eu_passport_number_common ou Keyword_finland_passport_number est trouvé.
 
 ```xml
 <!-- Finland Passport Number -->
 <Entity id="d1685ac3-1d3a-40f8-8198-32ef5669c7a5" recommendedConfidence="75" patternsProximity="300">
-  <Pattern confidenceLevel="75">
-     <IdMatch idRef="Regex_finland_passport_number"/>
-     <Match idRef="Keyword_finland_passport_number"/>
-  </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_finland_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keyword_finland_passport_number" />
+          </Any>
+        </Pattern>
 </Entity>
 ```
 ### <a name="keywords"></a>Mots clés
 
-- Keyword_finland_passport_number
-- Tel
-- Transfert
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- tel #
+- tel #
+- passportid
+- passeports
+- n ° passeport
+- Numéro de passeport
+- passportnumber
+- Numéro de passeport
+- passportnumbers
+- numéros de passeport
+
+#### <a name="keyword_finland_passport_number"></a>Keyword_finland_passport_number
+
+- Suomalainen passes
+- nombre de passerelles
+- Numéro de transfert. #
+- nombre de passerelles #
+- Numéro de transfert.
+- transfert #
+- Numéro de transfert
 
 
 ## <a name="finland-social-security-number-or-equivalent-identification"></a>Numéro de sécurité sociale Finlande ou identification équivalente
@@ -5322,6 +5534,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 
 ## <a name="france-health-insurance-number"></a>Numéro d’assurance maladie France
+Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
+- stratégies de protection contre la perte de données
+- stratégies de conformité des communications
+- gouvernance des informations
+- gestion des enregistrements
+- Sécurité des applications Cloud Microsoft
 
 ### <a name="format"></a>Format
 
@@ -5626,6 +5844,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 
 ## <a name="france-value-added-tax-number"></a>Numéro de TVA de la valeur ajoutée France
+Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
+- stratégies de protection contre la perte de données
+- stratégies de conformité des communications
+- gouvernance des informations
+- gestion des enregistrements
+- Sécurité des applications Cloud Microsoft
 
 ### <a name="format"></a>Format
 
@@ -5909,68 +6133,41 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
 - La fonction Func_german_passport trouve un contenu qui correspond au modèle.
-- Un mot clé présent dans l’une des cinq listes de mots clés est trouvé.
+- Un mot clé from `Keyword_german_passport` est trouvé.
 - La somme de contrôle est correcte.
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - La fonction Func_german_passport_data trouve un contenu qui correspond au modèle.
-- Un mot clé présent dans l’une des cinq listes de mots clés est trouvé.
+- Un mot clé from `Keyword_german_passport` est trouvé.
 - La somme de contrôle est correcte.
 
 ```xml
-<!-- Germany Passport Number -->
-<Entity id="2e3da144-d42b-47ed-b123-fbf78604e52c" patternsProximity="300" recommendedConfidence="75">
-  <Pattern confidenceLevel="85">
+    <!-- German Passport Number -->
+    <Entity id="2e3da144-d42b-47ed-b123-fbf78604e52c" patternsProximity="300" recommendedConfidence="75">
+      <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_german_passport" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_german_passport" />
-          <Match idRef="Keyword_german_passport_collaborative" />
-          <Match idRef="Keyword_german_passport_number" />
-          <Match idRef="Keyword_german_passport1" />
-          <Match idRef="Keyword_german_passport2" />
-        </Any>
-  </Pattern>
-  <Pattern confidenceLevel="75">
+        <Match idRef="Keyword_german_passport" />
+      </Pattern>
+      <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_german_passport_data" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_german_passport" />
-          <Match idRef="Keyword_german_passport_collaborative" />
-          <Match idRef="Keyword_german_passport_number" />
-          <Match idRef="Keyword_german_passport1" />
-          <Match idRef="Keyword_german_passport2" />
-        </Any>
-  </Pattern>
-</Entity>
+        <Match idRef="Keyword_german_passport" />
+      </Pattern>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_german_passport"></a>Keyword_german_passport
 
-- reisepass
 - reisepasse
 - reisepassnummer
-- tel
-- passeports
-
-#### <a name="keyword_german_passport_collaborative"></a>Keyword_german_passport_collaborative
-
-- geburtsdatum
-- ausstellungsdatum
-- ausstellungsort
-
-#### <a name="keyword_german_passport_number"></a>Keyword_german_passport_number
-
-No-Reisepass Nr-Reisepass
-
-#### <a name="keyword_german_passport1"></a>Keyword_german_passport1
-
-Reisepass-Nr
-
-#### <a name="keyword_german_passport2"></a>Keyword_german_passport2
-
-bnationalit. t
-
+- Non-Reisepass 
+- Nr-Reisepass
+- Reisepass-Nr
+- Passnummer
+- reisepässe
+- n ° passeport
+- passeport non
 
 ## <a name="germany-tax-identification-number"></a>Numéro d’identification fiscale de l’Allemagne
 
@@ -6048,6 +6245,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 
 ## <a name="germany-value-added-tax-number"></a>Numéro de TVA de la valeur ajoutée Germany
+Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
+- stratégies de protection contre la perte de données
+- stratégies de conformité des communications
+- gouvernance des informations
+- gestion des enregistrements
+- Sécurité des applications Cloud Microsoft
 
 ### <a name="format"></a>Format
 
@@ -6234,28 +6437,49 @@ Non
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
 - L’expression régulière  `Regex_greece_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from  `Keywords_greece_eu_passport_number` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_passport_number_common` ou `Keywords_greece_eu_passport_number` est trouvé. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_greece_eu_passport_number" />
-          <Match idRef="Keywords_greece_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_greece_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- tel #
+- tel #
+- passportid
+- passeports
+- n ° passeport
+- Numéro de passeport
+- passportnumber
+- Numéro de passeport
+- passportnumbers
+- numéros de passeport
+
 #### <a name="keywords_greece_eu_passport_number"></a>Keywords_greece_eu_passport_number
 
-- numéro de passeport
-- Numéro de passeport grec
-- Numéro de passeport
-- διαβατηριο
+- αριθμός διαβατηρίου
+- αριθμούς διαβατηρίου
+- αριθμός διαβατηριο
 
 ## <a name="greece-tax-identification-number"></a>Numéro d’identification de taxe Grèce
+Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
+- stratégies de protection contre la perte de données
+- stratégies de conformité des communications
+- gouvernance des informations
+- gestion des enregistrements
+- Sécurité des applications Cloud Microsoft
 
 ### <a name="format"></a>Format
 
@@ -6459,6 +6683,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 
 ## <a name="hungary-personal-identification-number"></a>Numéro d’identification personnel Hongrie
+Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
+- stratégies de protection contre la perte de données
+- stratégies de conformité des communications
+- gouvernance des informations
+- gestion des enregistrements
+- Sécurité des applications Cloud Microsoft
 
 ### <a name="format"></a>Format
 
@@ -6540,26 +6770,40 @@ Non
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
 - L’expression régulière  `Regex_hungary_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from  `Keywords_hungary_eu_passport_number` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_passport_number_common` ou `Keywords_hungary_eu_passport_number` est trouvé. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_hungary_eu_passport_number" />
-          <Match idRef="Keywords_hungary_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_hungary_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 ### <a name="keywords"></a>Mots clés
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- tel #
+- tel #
+- passportid
+- passeports
+- n ° passeport
+- Numéro de passeport
+- passportnumber
+- Numéro de passeport
+- passportnumbers
+- numéros de passeport
+
 #### <a name="keywords_hungary_eu_passport_number"></a>Keywords_hungary_eu_passport_number
 
-- numéro de passeport
-- Numéro de passeport hongrois
-- Numéro de passeport
 - útlevél száma
-
+- Útlevelek száma
+- útlevél szám
 
 ## <a name="hungary-social-security-number-or-equivalent-identification"></a>Numéro de sécurité sociale ou identification équivalente Hongrie
 
@@ -6625,6 +6869,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 
 ## <a name="hungary-tax-identification-number"></a>Numéro d’identification de taxe Hongrie
+Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
+- stratégies de protection contre la perte de données
+- stratégies de conformité des communications
+- gouvernance des informations
+- gestion des enregistrements
+- Sécurité des applications Cloud Microsoft
 
 ### <a name="format"></a>Format
 
@@ -6701,6 +6951,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 
 ## <a name="hungary-value-added-tax-number"></a>Numéro de taxe de la valeur ajoutée à la Hongrie
+Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
+- stratégies de protection contre la perte de données
+- stratégies de conformité des communications
+- gouvernance des informations
+- gestion des enregistrements
+- Sécurité des applications Cloud Microsoft
 
 ### <a name="format"></a>Format
 
@@ -7166,29 +7422,45 @@ Non
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
 - L’expression régulière  `Regex_ireland_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from  `Keywords_ireland_eu_passport_number` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_passport_number_common` ou `Keywords_ireland_eu_passport_number` est trouvé. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_ireland_eu_passport_number" />
-          <Match idRef="Keywords_ireland_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_ireland_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- tel #
+- tel #
+- passportid
+- passeports
+- n ° passeport
+- Numéro de passeport
+- passportnumber
+- Numéro de passeport
+- passportnumbers
+- numéros de passeport
+
 #### <a name="keywords_ireland_eu_passport_number"></a>Keywords_ireland_eu_passport_number
 
-- numéro de passeport
-- Numéro de passeport irlandais
-- Numéro de passeport
-- boîte
-- tel
-- passeport
 - passeport numérique
+- uimhreacha pasanna
+- uimhir pas
+- uimhir
+- uimhreacha pas
+- uimhir cárta
+- uimhir chárta
 
 ## <a name="ireland-personal-public-service-pps-number"></a>Numéro PPS (Personal public service) pour l’Irlande
 
@@ -7423,6 +7695,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - patente di guida 
 
 ## <a name="italy-fiscal-code"></a>Code fiscal Italie
+Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
+- stratégies de protection contre la perte de données
+- stratégies de conformité des communications
+- gouvernance des informations
+- gestion des enregistrements
+- Sécurité des applications Cloud Microsoft
 
 ### <a name="format"></a>Format
 
@@ -7526,34 +7804,53 @@ Non applicable
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - L’expression régulière  `Regex_italy_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from  `Keywords_italy_eu_passport_number` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_passport_number_common` ou `Keywords_italy_eu_passport_number` est trouvé. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_italy_eu_passport_number" />
-          <Match idRef="Keywords_italy_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_italy_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- tel #
+- tel #
+- passportid
+- passeports
+- n ° passeport
+- Numéro de passeport
+- passportnumber
+- Numéro de passeport
+- passportnumbers
+- numéros de passeport
+
 #### <a name="keywords_italy_eu_passport_number"></a>Keywords_italy_eu_passport_number
 
-- Numéro de passeport italien
-- repubblica italiana passaporto
-- passaporto
+- italiana passaporto
 - passaporto italiana
-- numéro de passeport
-- Italiana passaporto numérique
 - passaporto numérique
-- numéro passeport italien
 - numéro passeport
-
+- numération di passaporto
+- chiffresi del passaporto
+- passeport italien
 
 ## <a name="italy-value-added-tax-number"></a>Numéro de TVA Italie valeur ajoutée
+Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
+- stratégies de protection contre la perte de données
+- stratégies de conformité des communications
+- gouvernance des informations
+- gestion des enregistrements
+- Sécurité des applications Cloud Microsoft
 
 ### <a name="format"></a>Format
 
@@ -7782,6 +8079,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 
 ## <a name="japan-my-number---corporate"></a>Mon numéro japonais-entreprise
+Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
+- stratégies de protection contre la perte de données
+- stratégies de conformité des communications
+- gouvernance des informations
+- gestion des enregistrements
+- Sécurité des applications Cloud Microsoft
 
 ### <a name="format"></a>Format
 
@@ -7837,6 +8140,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 
 ## <a name="japan-my-number---personal"></a>Mon numéro-personnel
+Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
+- stratégies de protection contre la perte de données
+- stratégies de conformité des communications
+- gouvernance des informations
+- gestion des enregistrements
+- Sécurité des applications Cloud Microsoft
 
 ### <a name="format"></a>Format
 
@@ -8285,27 +8594,44 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - L’expression régulière  `Regex_latvia_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from  `Keywords_latvia_eu_passport_number` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_passport_number_common` ou `Keywords_latvia_eu_passport_number` est trouvé. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_latvia_eu_passport_number" />
-          <Match idRef="Keywords_latvia_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_latvia_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- tel #
+- tel #
+- passportid
+- passeports
+- n ° passeport
+- Numéro de passeport
+- passportnumber
+- Numéro de passeport
+- passportnumbers
+- numéros de passeport
+
 #### <a name="keywords_latvia_eu_passport_number"></a>Keywords_latvia_eu_passport_number
 
-- numéro de passeport
-- Numéro de passeport letton
-- Numéro de passeport
-- pase numurs    
-
+- pase numurs
+- pase numur
+- pases numuri
+- Pases Nr
+- passeport non
+- n ° du passeport
 
 ## <a name="lithuania-drivers-license-number"></a>Numéro de permis de conduire de la Lituanie
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du pilote de l’UE.
@@ -8357,6 +8683,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - vairuotojo pažymėjimas
 
 ## <a name="lithuania-personal-code"></a>Code personnel de Lituanie
+Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
+- stratégies de protection contre la perte de données
+- stratégies de conformité des communications
+- gouvernance des informations
+- gestion des enregistrements
+- Sécurité des applications Cloud Microsoft
 
 ### <a name="format"></a>Format
 
@@ -8458,27 +8790,41 @@ Non applicable
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - L’expression régulière  `Regex_lithuania_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from  `Keywords_lithuania_eu_passport_number` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_passport_number_common` ou `Keywords_lithuania_eu_passport_number` est trouvé. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_lithuania_eu_passport_number" />
-          <Match idRef="Keywords_lithuania_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_lithuania_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- tel #
+- tel #
+- passportid
+- passeports
+- n ° passeport
+- Numéro de passeport
+- passportnumber
+- Numéro de passeport
+- passportnumbers
+- numéros de passeport
+
 #### <a name="keywords_lithuania_eu_passport_number"></a>Keywords_lithuania_eu_passport_number
 
-- numéro de passeport
-- Numéro de passeport lithunian
-- Numéro de passeport
 - Paso chiffres
-
+- paso numeriai
+- Paso Nr
 
 ## <a name="luxemburg-drivers-license-number"></a>Numéro de permis de conduire du Luxembourg
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du pilote de l’UE.
@@ -8530,6 +8876,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - fahrerlaubnis
 
 ## <a name="luxemburg-national-identification-number-natural-persons"></a>Numéro d’identification nationale du Luxembourg (personnes physiques)
+Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
+- stratégies de protection contre la perte de données
+- stratégies de conformité des communications
+- gouvernance des informations
+- gestion des enregistrements
+- Sécurité des applications Cloud Microsoft
 
 ### <a name="format"></a>Format
 
@@ -8853,6 +9205,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Liċenzja-sewqan
 
 ## <a name="malta-identity-card-number"></a>Numéro de carte d’identité Malte
+Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
+- stratégies de protection contre la perte de données
+- stratégies de conformité des communications
+- gouvernance des informations
+- gestion des enregistrements
+- Sécurité des applications Cloud Microsoft
 
 ### <a name="format"></a>Format
 
@@ -8930,26 +9288,41 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - L’expression régulière  `Regex_malta_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from  `Keywords_malta_eu_passport_number` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_passport_number_common` ou `Keywords_malta_eu_passport_number` est trouvé. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_malta_eu_passport_number" />
-          <Match idRef="Keywords_malta_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_malta_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- tel #
+- tel #
+- passportid
+- passeports
+- n ° passeport
+- Numéro de passeport
+- passportnumber
+- Numéro de passeport
+- passportnumbers
+- numéros de passeport
+
 #### <a name="keywords_malta_eu_passport_number"></a>Keywords_malta_eu_passport_number
 
-- numéro de passeport
-- Numéro de passeport maltais
-- Numéro de passeport
 - numru tal-passaport
+- numri tal-passaport
+- NRU Tal-Passaport
 
 ## <a name="malta-tax-identification-number"></a>Numéro d’identification fiscale Malte
 
@@ -9199,6 +9572,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - paspoortnummer
 
 ## <a name="netherlands-tax-identification-number"></a>Numéro d’identification fiscale néerlandaise
+Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
+- stratégies de protection contre la perte de données
+- stratégies de conformité des communications
+- gouvernance des informations
+- gestion des enregistrements
+- Sécurité des applications Cloud Microsoft
 
 ### <a name="format"></a>Format
 
@@ -9277,6 +9656,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 
 ## <a name="netherlands-value-added-tax-number"></a>Numéro de taxe ajoutée pour les pays-bas
+Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
+- stratégies de protection contre la perte de données
+- stratégies de conformité des communications
+- gouvernance des informations
+- gestion des enregistrements
+- Sécurité des applications Cloud Microsoft
 
 ### <a name="format"></a>Format
 
@@ -9333,6 +9718,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 
 ## <a name="new-zealand-bank-account-number"></a>Numéro de compte bancaire Nouvelle-Zélande
+Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
+- stratégies de protection contre la perte de données
+- stratégies de conformité des communications
+- gouvernance des informations
+- gestion des enregistrements
+- Sécurité des applications Cloud Microsoft
 
 ### <a name="format"></a>Format
 
@@ -9389,6 +9780,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 
 ## <a name="new-zealand-drivers-license-number"></a>Numéro de permis de conduire de la Nouvelle-Zélande
+Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
+- stratégies de protection contre la perte de données
+- stratégies de conformité des communications
+- gouvernance des informations
+- gestion des enregistrements
+- Sécurité des applications Cloud Microsoft
 
 ### <a name="format"></a>Format
 
@@ -9499,6 +9896,12 @@ permis de conduite international
 
 
 ## <a name="new-zealand-inland-revenue-number"></a>Numéro de revenu intérieur Nouvelle-Zélande
+Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
+- stratégies de protection contre la perte de données
+- stratégies de conformité des communications
+- gouvernance des informations
+- gestion des enregistrements
+- Sécurité des applications Cloud Microsoft
 
 ### <a name="format"></a>Format
 
@@ -9596,6 +9999,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 
 ## <a name="new-zealand-social-wlefare-number"></a>Numéro de wlefare sociale Nouvelle-Zélande
+Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
+- stratégies de protection contre la perte de données
+- stratégies de conformité des communications
+- gouvernance des informations
+- gestion des enregistrements
+- Sécurité des applications Cloud Microsoft
 
 ### <a name="format"></a>Format
 
@@ -9942,6 +10351,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Paszport
 
 ## <a name="poland-regon-number"></a>Numéro REGON Pologne
+Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
+- stratégies de protection contre la perte de données
+- stratégies de conformité des communications
+- gouvernance des informations
+- gestion des enregistrements
+- Sécurité des applications Cloud Microsoft
 
 ### <a name="format"></a>Format
 
@@ -10002,6 +10417,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 
 ## <a name="poland-tax-identification-number"></a>Numéro d’identification de taxe polonais
+Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
+- stratégies de protection contre la perte de données
+- stratégies de conformité des communications
+- gouvernance des informations
+- gestion des enregistrements
+- Sécurité des applications Cloud Microsoft
 
 ### <a name="format"></a>Format
 
@@ -10197,26 +10618,48 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - L’expression régulière  `Regex_portugal_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from  `Keywords_portugal_eu_passport_number` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_passport_number_common` ou `Keywords_portugal_eu_passport_number` est trouvé. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_portugal_eu_passport_number" />
-          <Match idRef="Keywords_portugal_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_portugal_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- tel #
+- tel #
+- passportid
+- passeports
+- n ° passeport
+- Numéro de passeport
+- passportnumber
+- Numéro de passeport
+- passportnumbers
+- numéros de passeport
+
 #### <a name="keywords_portugal_eu_passport_number"></a>Keywords_portugal_eu_passport_number
 
-- numéro de passeport
-- Numéro de passeport Portugais
-- Numéro de passeport
 - número do Passaporte
+- passeport Portugais
+- passeport Portugais
+- Passaporte Portugais
+- Passaporte n º
+- passeport n º
+- números de Passaporte
+- passeports Portugais
+- número passaporte
+- números passaporte
 
 ## <a name="portugal-tax-identification-number"></a>Numéro d’identification fiscale du Portugal
 
@@ -10340,6 +10783,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - permis de conducere
 
 ## <a name="romania-personal-numeric-code-cnp"></a>Code numérique de la Roumanie (CNP)
+Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
+- stratégies de protection contre la perte de données
+- stratégies de conformité des communications
+- gouvernance des informations
+- gestion des enregistrements
+- Sécurité des applications Cloud Microsoft
 
 ### <a name="format"></a>Format
 
@@ -10452,29 +10901,47 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - L’expression régulière  `Regex_romania_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from  `Keywords_romania_eu_passport_number` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_passport_number_common` ou `Keywords_romania_eu_passport_number` est trouvé. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_romania_eu_passport_number" />
-          <Match idRef="Keywords_romania_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_romania_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- tel #
+- tel #
+- passportid
+- passeports
+- n ° passeport
+- Numéro de passeport
+- passportnumber
+- Numéro de passeport
+- passportnumbers
+- numéros de passeport
+
 #### <a name="keywords_romania_eu_passport_number"></a>Keywords_romania_eu_passport_number
 
-- numéro de passeport
-- Numéro de passeport roumain
-- Numéro de passeport
-- numărul pașaportului
-
+numărul pașaportului numarul pasaportului numerele pașaportului Pașaport Nr
 
 ## <a name="russia-passport-number-domestic"></a>Numéro de passeport russe-Suisse
+Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
+- stratégies de protection contre la perte de données
+- stratégies de conformité des communications
+- gouvernance des informations
+- gestion des enregistrements
+- Sécurité des applications Cloud Microsoft
 
 ### <a name="format"></a>Format
 
@@ -10531,6 +10998,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 
 ## <a name="russia-passport-number-international"></a>Numéro de passeport russe international
+Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
+- stratégies de protection contre la perte de données
+- stratégies de conformité des communications
+- gouvernance des informations
+- gestion des enregistrements
+- Sécurité des applications Cloud Microsoft
 
 ### <a name="format"></a>Format
 
@@ -10733,6 +11206,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - vodičský preukaz
 
 ## <a name="slovakia-personal-number"></a>Numéro personnel de Slovaquie
+Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
+- stratégies de protection contre la perte de données
+- stratégies de conformité des communications
+- gouvernance des informations
+- gestion des enregistrements
+- Sécurité des applications Cloud Microsoft
 
 ### <a name="format"></a>Format
 
@@ -10843,27 +11322,43 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - L’expression régulière  `Regex_slovakia_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from  `Keywords_slovakia_eu_passport_number` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_passport_number_common` ou `Keywords_slovakia_eu_passport_number` est trouvé. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_slovakia_eu_passport_number" />
-          <Match idRef="Keywords_slovakia_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_slovakia_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- tel #
+- tel #
+- passportid
+- passeports
+- n ° passeport
+- Numéro de passeport
+- passportnumber
+- Numéro de passeport
+- passportnumbers
+- numéros de passeport
+
 #### <a name="keywords_slovakia_eu_passport_number"></a>Keywords_slovakia_eu_passport_number
 
-- numéro de passeport
-- Numéro de passeport slovaque
-- Numéro de passeport
 - číslo pasu
-
+- čísla pasov
+- pas de č.
+- Passeport n °
+- n ° passeport
 
 ## <a name="slovenia-drivers-license-number"></a>Numéro de permis de conduire Slovénie
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du pilote de l’UE.
@@ -10915,6 +11410,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - vozniško dovoljenje
 
 ## <a name="slovenia-unique-master-citizen-number"></a>Numéro de citoyen principal unique Slovénie
+Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
+- stratégies de protection contre la perte de données
+- stratégies de conformité des communications
+- gouvernance des informations
+- gestion des enregistrements
+- Sécurité des applications Cloud Microsoft
 
 ### <a name="format"></a>Format
 
@@ -11010,28 +11511,52 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - L’expression régulière  `Regex_slovenia_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from  `Keywords_slovenia_eu_passport_number` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_passport_number_common` ou `Keywords_slovenia_eu_passport_number` est trouvé. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_slovenia_eu_passport_number" />
-          <Match idRef="Keywords_slovenia_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_slovenia_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- tel #
+- tel #
+- passportid
+- passeports
+- n ° passeport
+- Numéro de passeport
+- passportnumber
+- Numéro de passeport
+- passportnumbers
+- numéros de passeport
+
 #### <a name="keywords_slovenia_eu_passport_number"></a>Keywords_slovenia_eu_passport_number
 
-- numéro de passeport
-- Numéro de passeport slovène
-- Numéro de passeport
 - številka potnega lista
+- potek veljavnosti
+- liste potni #
+- Référence rojstva
+- liste potni
+- številke potnih listov
 
 ## <a name="slovenia-tax-identification-number"></a>Numéro d’identification fiscale de la Slovénie
+Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
+- stratégies de protection contre la perte de données
+- stratégies de conformité des communications
+- gouvernance des informations
+- gestion des enregistrements
+- Sécurité des applications Cloud Microsoft
 
 ### <a name="format"></a>Format
 
@@ -11269,6 +11794,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - carnet conducir
 
 ## <a name="spain-dni"></a>Espagne DNI
+Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
+- stratégies de protection contre la perte de données
+- stratégies de conformité des communications
+- gouvernance des informations
+- gestion des enregistrements
+- Sécurité des applications Cloud Microsoft
 
 ### <a name="format"></a>Format
 
@@ -11365,31 +11896,50 @@ Non applicable
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - L’expression régulière  `Regex_spain_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from  `Keywords_spain_eu_passport_number` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_passport_number_common` ou `Keywords_spain_eu_passport_number` est trouvé. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_spain_eu_passport_number" />
-          <Match idRef="Keywords_spain_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_spain_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- tel #
+- tel #
+- passportid
+- passeports
+- n ° passeport
+- Numéro de passeport
+- passportnumber
+- Numéro de passeport
+- passportnumbers
+- numéros de passeport
+
 #### <a name="keywords_spain_eu_passport_number"></a>Keywords_spain_eu_passport_number
 
-- tel
-- Passport Espagne
-- livre de passeport
-- numéro de passeport
-- Numéro de passeport
 - libreta pasaporte
 - número pasaporte
 - españa pasaporte
-- pasaporte
+- números de pasaporte
+- Número de pasaporte
+- números pasaporte
+- pasaporte non
+- Passeport n °
+- n ° passeport
+- n ° pasaporte
+- pasaporte n °
+- Passport Espagne
 
 
 ## <a name="spain-social-security-number-ssn"></a>Numéro de sécurité sociale (SSN) Espagne
@@ -11432,6 +11982,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 Aucun
 
 ## <a name="spain-tax-identification-number"></a>Numéro d’identification fiscale Espagne
+Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
+- stratégies de protection contre la perte de données
+- stratégies de conformité des communications
+- gouvernance des informations
+- gestion des enregistrements
+- Sécurité des applications Cloud Microsoft
 
 ### <a name="format"></a>Format
 
@@ -11863,6 +12419,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - identifikationsnumret #
 
 ## <a name="sweden-tax-identification-number"></a>Numéro d’identification de taxe Suède
+Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
+- stratégies de protection contre la perte de données
+- stratégies de conformité des communications
+- gouvernance des informations
+- gestion des enregistrements
+- Sécurité des applications Cloud Microsoft
 
 ### <a name="format"></a>Format
 
@@ -12010,7 +12572,13 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - code identificateur de banque 
 
 
-## <a name="swiss-ssn-ahv-number"></a>Numéro AVS n ° S.S. Suisse
+## <a name="switzerland-ssn-ahv-number"></a>Suisse numéro AVS AVS
+Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
+- stratégies de protection contre la perte de données
+- stratégies de conformité des communications
+- gouvernance des informations
+- gestion des enregistrements
+- Sécurité des applications Cloud Microsoft
 
 ### <a name="format"></a>Format
 
@@ -12589,6 +13157,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
     
 ## <a name="uk-unique-taxpayer-reference-number"></a>impérial Numéro de référence unique du contribuable
+Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
+- stratégies de protection contre la perte de données
+- stratégies de conformité des communications
+- gouvernance des informations
+- gestion des enregistrements
+- Sécurité des applications Cloud Microsoft
 
 ### <a name="format"></a>Format
 
@@ -13083,6 +13657,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Passeportn ° 
 
 ## <a name="ukraine-passport-domestic"></a>Pays de l’Ukraine passeport national
+Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
+- stratégies de protection contre la perte de données
+- stratégies de conformité des communications
+- gouvernance des informations
+- gestion des enregistrements
+- Sécurité des applications Cloud Microsoft
 
 ### <a name="format"></a>Format
 
@@ -13125,6 +13705,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 
 ## <a name="ukraine-passport-international"></a>International de l’Ukraine Passport
+Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
+- stratégies de protection contre la perte de données
+- stratégies de conformité des communications
+- gouvernance des informations
+- gestion des enregistrements
+- Sécurité des applications Cloud Microsoft
 
 ### <a name="format"></a>Format
 
