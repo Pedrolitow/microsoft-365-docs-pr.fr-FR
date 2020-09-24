@@ -25,17 +25,16 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Dans cet article, vous découvrirez comment utiliser les liens fiables pour protéger votre organisation contre le hameçonnage et les autres attaques.
-ms.openlocfilehash: 486c19fa0ba47baadf7b3418608a644407e6e1d0
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: be95691f34fec5661c652c3163b5cd4ef420db6c
+ms.sourcegitcommit: 1522a6471e0c5254a6d0f592e1f4dfacd1dd473a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200432"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48245912"
 ---
 # <a name="atp-safe-links"></a>Liens fiables ATP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
 
 ## <a name="overview-of-office-365-atp-safe-links"></a>Vue d’ensemble des liens fiables Office 365 ATP
 
@@ -70,7 +69,7 @@ Assurez- **vous également que vous disposez des autorisations nécessaires**. P
 
 ****
 
-|Rôle|WHERE/How Assigned|
+|Role|WHERE/How Assigned|
 |---|---|
 |administrateur général|La personne qui s’inscrit pour acheter Microsoft 365 est un administrateur global par défaut. (Pour en savoir plus, consultez la rubrique [à propos des rôles d’administrateur Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .)|
 |Administrateur de sécurité|Centre d’administration Azure Active Directory ( <https://aad.portal.azure.com> )|

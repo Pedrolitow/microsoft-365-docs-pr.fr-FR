@@ -2,8 +2,8 @@
 title: Créer et utiliser un modèle pour ajouter des utilisateurs
 f1.keywords:
 - NOCSH
-ms.author: v-sharos
-author: shars
+ms.author: sirkkuw
+author: Sirkkuw
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Vous pouvez créer et utiliser un modèle pour gagner du temps et normaliser les paramètres lors de l’ajout de plusieurs utilisateurs.
-ms.openlocfilehash: 29953eb97476799d74e883ed8b20bd5f3382cbf4
-ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
+ms.openlocfilehash: 92d3bd68a57291586da27eb2d578a26c53d20d78
+ms.sourcegitcommit: 1522a6471e0c5254a6d0f592e1f4dfacd1dd473a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45022144"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48245856"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>Créer et utiliser un modèle pour ajouter des utilisateurs
 
@@ -49,7 +49,7 @@ Lorsque vous créez un modèle après avoir ajouté un utilisateur, les valeurs 
 Les informations suivantes sont propres à l’utilisateur et ne sont pas enregistrées dans le modèle :
 
 - Prénom et nom
-- Nom unique (DN)
+- Nom d’affichage
 - Nom d'utilisateur
 - Choix d’envoi du mot de passe par courrier électronique et de l’adresse de messagerie du mot de passe
 - Numéro de téléphone mobile

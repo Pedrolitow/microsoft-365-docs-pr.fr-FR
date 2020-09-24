@@ -16,12 +16,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: La fonctionnalité liens fiables permet de vérifier le temps de cliquer sur les liens hypertexte dans les documents Office et dans les messages électroniques. Lisez cet article pour découvrir le fonctionnement des liens fiables ATP.
-ms.openlocfilehash: 09357b20173e2609587137764737c8aba044190e
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: e19d3a1f93d11cd9873e6b5fad9952b018e0a481
+ms.sourcegitcommit: 1522a6471e0c5254a6d0f592e1f4dfacd1dd473a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201464"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48245880"
 ---
 # <a name="how-atp-safe-links-works"></a>Fonctionnement des liens fiables PACM
 
@@ -30,7 +30,7 @@ ms.locfileid: "48201464"
 > [!IMPORTANT] 
 > Pour que les liens sécurisés ATP Office 365 fonctionnent correctement, tous les services doivent être au même niveau de version.
          
-## <a name="how-atp-safe-links-works"></a>Fonctionnement des liens fiables PACM
+## <a name="how-atp-safe-links-works-with-urls-in-email"></a>Fonctionnement des liaisons approuvées ATP avec les URL dans les messages électroniques
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
  avec des URL dans le courrier électronique
@@ -57,10 +57,7 @@ ms.locfileid: "48201464"
     
    - Si l’URL est jugée fiable, le site Web s’ouvre.
     
-## <a name="how-atp-safe-links-works"></a>Fonctionnement des liens fiables PACM
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
- avec des URL dans des documents Office 
+## <a name="how-atp-safe-links-works-with-urls-in-office-documents"></a>Fonctionnement des liaisons approuvées ATP avec les URL des documents Office
 
 À un niveau élevé, voici le mode de protection [des liens fiables ATP](atp-safe-links.md) pour les URL dans les applications Microsoft 365 pour les applications Enterprise Premium (versions actuelles de Word, Excel et PowerPoint sur Windows, Mac ou dans un navigateur, les applications Office sur les appareils iOS ou Android, Visio sur Windows, OneNote dans un navigateur) :
   
