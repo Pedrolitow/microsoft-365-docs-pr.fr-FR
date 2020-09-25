@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Découvrez comment utiliser les limites de conformité pour créer des limites logiques qui contrôlent les emplacements de contenu utilisateur qu’un gestionnaire eDiscovery peut rechercher dans Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a8aaa1128788ba8f2f4ece7fb54f886595770c01
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 1c0d0b4b8c5c43945efad737165acdd2612d33b7
+ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357766"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48269393"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>Configuration des limites de conformité pour les enquêtes eDiscovery
 
@@ -55,7 +55,7 @@ Voici le processus de configuration des limites de conformité :
 [Étape 4 : créer un filtre d’autorisations de recherche pour appliquer la limite de conformité](#step-4-create-a-search-permissions-filter-to-enforce-the-compliance-boundary)
 
 [Étape 5 : créer un cas de découverte électronique pour les enquêtes intra-organismes](#step-5-create-an-ediscovery-case-for-intra-agency-investigations)
-  
+
 ## <a name="step-1-identify-a-user-attribute-to-define-your-agencies"></a>Étape 1 : identifier un attribut d’utilisateur pour définir vos agences
 
 La première étape consiste à choisir un attribut Azure Active Directory à utiliser qui définira vos agences. Cet attribut est utilisé pour créer le filtre d’autorisations de recherche qui limite un gestionnaire de découverte électronique pour rechercher uniquement les emplacements de contenu des utilisateurs auxquels une valeur spécifique est attribuée pour cet attribut. Par exemple, supposons que Contoso décide d’utiliser l’attribut **Department** . La valeur de cet attribut pour les utilisateurs de la filiale Fourth Coffee serait  `FourthCoffee`  et la valeur pour les utilisateurs de la filiale Coho Winery serait `CohoWinery` . À l’étape 4, vous utilisez cette  `attribute:value`  paire (par exemple, *Department : fourthcoffee*) pour limiter les emplacements de contenu utilisateur que les gestionnaires eDiscovery peuvent rechercher. 
@@ -269,7 +269,7 @@ Gardez les limites suivantes à l’esprit lors de la gestion des cas eDiscovery
 
 - Les filtres d’autorisation de recherche ne sont pas appliqués aux dossiers publics Exchange.
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 **Qui peut créer et gérer des filtres d’autorisations de recherche (à l’aide des cmdlets New-ComplianceSecurityFilter et Set-ComplianceSecurityFilter) ?**
   

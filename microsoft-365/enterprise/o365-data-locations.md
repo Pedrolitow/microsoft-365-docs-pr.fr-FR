@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Résumé : emplacements des données Microsoft 365'
-ms.openlocfilehash: 17655e8cb35f3eaa78315fd2cdb3450f1552ad96
-ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
+ms.openlocfilehash: 125d58b0565bf0380a4b2578aea4db6b26596f14
+ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324266"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48269540"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -32,7 +32,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 Les tableaux ci-dessous indiquent le lieu de stockage de données client au repos pour les services Microsoft 365 de tous les emplacements cloud généraux de Microsoft. Développez l’emplacement de votre pays d’adresse de facturation pour connaître l’emplacement de stockage des données client de chaque service.
 
-Les clients peuvent consulter les informations relatives à l’emplacement des données propres aux locataires dans **Paramètres | Profil de l’organisation | Fiche d’emplacement des données** du Centre d'administration Office 365.
+Les clients peuvent consulter les informations relatives à l’emplacement des données propres aux locataires dans **Paramètres | Paramètres de l’organisation | Profil de l’organisation | Emplacement des données** du Centre d'administration Microsoft 365.
 
 Les nouveaux locataires Microsoft 365 sont configurés géographiquement par défaut en fonction du pays de la transaction associée à l'abonnement initial de ce client.
 

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Créez des évaluations dans le gestionnaire de conformité Microsoft pour vous aider à répondre aux exigences des réglementations et des certifications importantes pour votre organisation.
-ms.openlocfilehash: 5bbdba66d2288c173827062aade3bbd196d77040
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: d09103f58be3a5fa39b57ca35da411e8046aace5
+ms.sourcegitcommit: 61d7284b412d0f7bbd8bbb2225c2e6324f86b717
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48204356"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48262289"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>Créer et gérer des évaluations dans le gestionnaire de conformité
 
@@ -206,6 +206,9 @@ Pour supprimer une évaluation, suivez les étapes ci-dessous :
 3. Une fenêtre s’affiche pour vous demander de confirmer la suppression définitive de l’évaluation. Sélectionnez **Supprimer l’évaluation** pour fermer la fenêtre. Vous obtiendrez une fenêtre de confirmation indiquant que votre évaluation a été supprimée du gestionnaire de conformité.
 
 Si vous supprimez la seule évaluation d’un groupe, ce groupe est également supprimé du gestionnaire de conformité.
+
+> [!NOTE]
+> Vous ne pouvez pas supprimer toutes vos évaluations. Les organisations ont besoin d’au moins une évaluation pour le gestionnaire de conformité pour fonctionner correctement. Si l’évaluation que vous souhaitez supprimer est la seule, ajoutez une autre évaluation avant de supprimer l’autre évaluation.
 
 ## <a name="monitor-assessment-progress-and-controls"></a>Surveiller la progression et les contrôles de l’évaluation
 

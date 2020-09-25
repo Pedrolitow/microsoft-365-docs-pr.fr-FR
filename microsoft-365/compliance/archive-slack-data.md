@@ -11,13 +11,13 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données à partir d’une marge Globanet dans Microsoft 365. Ce connecteur vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 de sorte que vous puissiez utiliser les fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: 532b8a8eb4331d66e1c7522d79bde2b5b6b0a02f
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données à partir d’une marge Globanet dans Microsoft 365. Ce connecteur de données vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 de sorte que vous puissiez utiliser les fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
+ms.openlocfilehash: 7c796c16b5a4b305c5d4b5259337ca28d9bfde9a
+ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196757"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48269452"
 ---
 # <a name="set-up-a-connector-to-archive-slack-data"></a>Configurer un connecteur pour archiver les données de marge
 

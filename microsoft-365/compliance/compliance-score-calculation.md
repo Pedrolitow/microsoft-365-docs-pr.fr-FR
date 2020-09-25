@@ -15,14 +15,16 @@ search.appverid:
 - MET150
 description: Comprendre comment le gestionnaire de conformité Microsoft calcule un score personnalisé en fonction des actions entreprises pour traiter les risques et améliorer la position de votre conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9fd71b4953dc40a3c1e7601f42f595488fcef98b
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: f1707e0117d0a61f572716f21d13a02821955401
+ms.sourcegitcommit: 61d7284b412d0f7bbd8bbb2225c2e6324f86b717
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48204332"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48262267"
 ---
 # <a name="compliance-score-calculation"></a>Calcul du score de conformité
+
+**Dans cet article :** Découvrez comment le gestionnaire de conformité calcule un score de conformité pour votre organisation. Cet article explique comment **interpréter votre score**, ce qu’inclut l’évaluation de la **base de données de protection des données** , la **surveillance continue**et **la façon dont différents types d’actions sont gérés et évalués**.
 
 > [!IMPORTANT]
 > Les recommandations du gestionnaire de conformité ne doivent pas être interprétées comme garantie de conformité. Il vous revient d’évaluer et de valider l’efficacité des contrôles client selon votre environnement réglementaire. Ces services sont soumis aux conditions des [services en ligne](https://go.microsoft.com/fwlink/?linkid=2108910). Consultez également [les conseils Microsoft 365 sur les licences pour la sécurité et la conformité](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
