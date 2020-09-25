@@ -1,5 +1,5 @@
 ---
-title: Migration de boîtes aux lettres entre clients
+title: Migration de boîtes aux lettres inter-clients
 description: Comment déplacer des boîtes aux lettres entre des clients Microsoft 365 ou Office 365.
 ms.author: josephd
 author: JoeDavies-MSFT
@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: f649a72dc5569e8aec46347df295aa3ff9d93613
-ms.sourcegitcommit: 327163f70eac0de568ebe3c9a97a744c3ed408cb
+ms.openlocfilehash: 06a82fda31e602ed2feb53d00e8839daf801bf7e
+ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48177149"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48277483"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migration de boîtes aux lettres entre clients (aperçu)
 
@@ -57,12 +57,12 @@ Pour obtenir l’ID de client d’un abonnement, connectez-vous au centre d’ad
 
 Voici comment fonctionne le processus.
 
-:::image type="content" source="../media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.svg" alt-text="Préparation du client pour la migration de boîtes aux lettres.":::
+:::image type="content" source="../media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png" alt-text="Préparation du client pour la migration de boîtes aux lettres.":::
 
 <!--
-[![Tenant preparation for mailbox migration](../media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.svg)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.svg)
+[![Tenant preparation for mailbox migration](../media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png)
 
-[See a larger version of this image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.svg).
+[See a larger version of this image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png).
 --> 
 
 ### <a name="prepare-tenants"></a>Préparer les locataires
@@ -162,11 +162,11 @@ L’installation de l’administration cible est maintenant terminée.
 
 1.  Connectez-vous à votre boîte aux lettres en tant que-ResourceTenantAdminEmail spécifié par l’administrateur cible lors de son installation. Recherchez l’invitation par courrier électronique à partir du client cible, puis sélectionnez le bouton **prise en main** .
 
-    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/invited-by-target-tenant.png" alt-text="Vous avez accédé à la boîte de dialogue":::
+    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/invited-by-target-tenant.png" alt-text="La boîte de dialogue a été invitée":::
 
 2. Sélectionnez **accepter** pour accepter l’invitation.
 
-    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/permissions-requested-accept.png" alt-text="Boîte de dialogue pour accepter permissons":::
+    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/permissions-requested-accept.png" alt-text="Boîte de dialogue pour accepter les autorisations":::
 
    > [!NOTE]
    > Si vous ne recevez pas ce message ou si vous ne le trouvez pas, l’administrateur client cible a reçu une URL directe qui vous permet d’accepter l’invitation. L’URL doit être dans la transcription de la session PowerShell distante de l’administrateur du client cible.

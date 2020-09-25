@@ -16,12 +16,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Découvrez les étapes de configuration de Microsoft 365 nécessaires pour configurer un site SharePoint en vue de la collaboration avec des invités.
-ms.openlocfilehash: d5a868e57753a6eb05f74b4873ed64ef0a70878e
-ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
+ms.openlocfilehash: cb3cfc52191be4bacfb9d84672131149082ee80e
+ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171267"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48277570"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Collaborer avec des invités sur un site
 
@@ -35,7 +35,7 @@ Cette vidéo présente les étapes de configuration décrites dans ce document.<
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE44Llg?autoplay=false]
 
-## <a name="azure-organizational-relationships-settings"></a>Paramètres Azure de relations organisationnelles
+## <a name="azure-external-collaboration-settings"></a>Paramètres de collaboration externe Azure
 
 Le partage dans Microsoft 365 est régi par les [paramètres de relations organisationnelles dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations). Si le partage d’invités est désactivé ou restreint dans Azure AD, cela remplace tous les paramètres de partage que vous configurez dans Microsoft 365.
 

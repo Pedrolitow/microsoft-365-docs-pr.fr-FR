@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: f7d00575a0a5757f0662c07e727d7166d571e2ca
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 8d4eb6cedbfa9a74eccdbb94e71f9eb32189ccbb
+ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201194"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48277541"
 ---
 # <a name="run-your-microsoft-threat-protection-attack-simulations"></a>Exécuter vos simulations d’attaque de la protection contre les menaces Microsoft  
 
@@ -48,7 +48,7 @@ Pendant la simulation, l’attaque injecte shellcode dans un processus apparemme
 
 Étant donné que vous avez déjà configuré votre environnement pilote pendant la phase de préparation, vérifiez que vous disposez de deux appareils pour ce scénario : un périphérique de test et un contrôleur de domaine.
 
-1.  Vérifiez que votre client dispose de la [protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable#starting-the-service).
+1.  Vérifiez que votre client a [activé Microsoft Threat Protection contre les menaces](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable#starting-the-service)Microsoft.
 2.  Vérifiez la configuration de votre contrôleur de domaine :
     - Le périphérique s’exécute avec Windows Server 2008 R2 ou une version ultérieure.
     - Test du contrôleur de domaine dans [Azure Advanced Threat Protection](https://docs.microsoft.com/azure/security-center/security-center-wdatp) et activation de la [gestion à distance](https://docs.microsoft.com/windows-server/administration/server-manager/configure-remote-management-in-server-manager).    
