@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: a126627a4c4d96b2b6918cefb0630801b3674383
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: b877a35133be13cd6783659f1e5d981633338be8
+ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950495"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48269372"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Qu’est-ce que le bureau géré Microsoft ?
 
@@ -44,7 +44,7 @@ Nos stratégies et notre base de référence en matière de sécurité offrent a
 - Les temps de démarrage des appareils Bureau géré Microsoft sont environ un quart plus longs.
 - Au moins deux fois la durée de vie de la batterie
 - Environ un tiers de plus de crashs d'appareils par an
-- Mobilité des appareils grâce à l'[Itinérance du statut Entreprise](https://docs.microsoft.com/azure/active-directory/devices/enterprise-state-roaming-overview), permettant aux utilisateurs de bénéficier de la même expérience quel que soit l'appareil auquel ils se connectent
+- Mobilité des appareils à travers[l’Itinérance de l’Etat Entreprise](https://docs.microsoft.com/azure/active-directory/devices/enterprise-state-roaming-overview), permettant aux utilisateurs de bénéficier de la même expérience quel que soit l'appareil auquel ils se connectent
 
 Les administrateurs informatiques bénéficient des fonctionnalités suivantes :
 
