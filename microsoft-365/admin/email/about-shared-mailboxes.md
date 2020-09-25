@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Les boîtes aux lettres partagées sont utilisées lorsque plusieurs personnes ont besoin d’accéder à la même boîte aux lettres. Découvrez ce que vous devez savoir avant de créer une boîte aux lettres partagée.
-ms.openlocfilehash: 8ca942d35d54fc8cc635e401c250ce409b9af0dd
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: f6feae1662093ffea2537a62c5e8fdf28c622166
+ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780312"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48269348"
 ---
 # <a name="about-shared-mailboxes"></a>À propos des boîtes aux lettres partagées
 
@@ -50,7 +50,7 @@ Avant [de créer une boîte aux lettres partagée](create-a-shared-mailbox.md), 
 
 - **Rôles d’administrateur :** Les utilisateurs disposant de rôles d’administrateur général ou d’administrateur Exchange peuvent créer des boîtes aux lettres partagées.
 
-- **Conditions requises en matière d’abonnement :** Pour créer une boîte aux lettres partagée, vous devez vous abonner à un forfait Microsoft 365 pour les entreprises qui inclut le courrier électronique (le service Exchange Online). L’abonnement apps pour les applications Microsoft 365 n’inclut pas le courrier électronique ; Microsoft 365 Business standard.
+- **Conditions requises en matière d’abonnement :** Pour créer une boîte aux lettres partagée, vous devez vous abonner à un forfait Microsoft 365 pour les entreprises qui inclut le courrier électronique (le service Exchange Online). L’abonnement aux applications pour les entreprises Microsoft 365 n’inclut pas le courrier électronique. Microsoft 365 Business standard inclut le courrier électronique.
 
 - **Connexion :** Une boîte aux lettres partagée n’est pas destinée à se connecter directement par son compte d’utilisateur associé. Vous devez toujours bloquer la connexion pour le compte de boîte aux lettres partagé et le conserver bloqué.
 
