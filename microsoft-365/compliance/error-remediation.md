@@ -14,21 +14,20 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
 description: Découvrez comment utiliser la correction des erreurs pour corriger les problèmes de données dans les enquêtes de données (aperçu) susceptibles d’empêcher le traitement approprié du contenu.
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: fe77f918a7471bf36df7727f890ea043976e44db
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: c6c62bb1a3191e369d553df5eb451d4656e704d7
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817813"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48286030"
 ---
 # <a name="error-remediation-when-processing-data-for-an-investigation"></a>Erreur de correction lors du traitement des données pour une enquête
 
-La correction des erreurs permet aux investigateurs de corriger les problèmes de données qui empêchent les enquêtes de données (préversion) de traiter correctement le contenu. Par exemple, les fichiers protégés par mot de passe ne peuvent pas être traités car les fichiers sont verrouillés ou chiffrés. À l’aide de la correction des erreurs, les investigateurs peuvent télécharger des fichiers avec de telles erreurs, supprimer la protection par mot de passe et télécharger les fichiers corrigés.
+La correction des erreurs permet aux investigateurs de corriger les problèmes de données qui empêchent les enquêtes de données (préversion) de traiter correctement le contenu. Par exemple, les fichiers protégés par mot de passe ne peuvent pas être traités, car ils sont verrouillés ou chiffrés. À l’aide de la correction des erreurs, les investigateurs peuvent télécharger des fichiers avec de telles erreurs, supprimer la protection par mot de passe et télécharger les fichiers corrigés.
 
 Utilisez le flux de travail suivant pour corriger les fichiers avec des erreurs dans les cas d’examens de données (aperçu).
 
@@ -43,7 +42,7 @@ Utilisez le flux de travail suivant pour corriger les fichiers avec des erreurs 
 
 3. Cliquez sur **+ nouvelle erreur de correction**.
 
-    ![Correction des erreurs](../media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
+    ![Cliquez sur le bouton nouvelle correction d’erreur](../media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
 
     La session de correction d’erreur commence avec une phase de préparation dans laquelle les fichiers contenant des erreurs sont copiés vers un emplacement Azure sécurisé afin qu’ils puissent être téléchargés.
 
@@ -51,9 +50,9 @@ Utilisez le flux de travail suivant pour corriger les fichiers avec des erreurs 
 
 4. Une fois la préparation terminée, cliquez sur **suivant : Télécharger les fichiers** pour continuer le téléchargement.
 
-    ![Télécharger des fichiers](../media/6ac04b09-8e13-414a-9e24-7c75ba586363.png)
+    ![Télécharger les fichiers qui nécessitent une correction](../media/6ac04b09-8e13-414a-9e24-7c75ba586363.png)
 
-5. Pour télécharger des fichiers, spécifiez le **chemin de destination pour le téléchargement**. Il s’agit d’un chemin d’accès sur votre ordinateur local où le fichier doit être téléchargé.  Le chemin d’accès par défaut,%USERPROFILE%\Downloads\errors, pointe vers le dossier downloads de l’utilisateur connecté ; Cela peut être modifié selon vos besoins.
+5. Pour télécharger des fichiers, spécifiez le **Chemin d’accès destination pour le téléchargement**. Il s’agit d’un chemin d’accès sur votre ordinateur local où le fichier doit être téléchargé.  Le chemin d’accès par défaut,%USERPROFILE%\Downloads\errors, pointe vers le dossier downloads de l’utilisateur connecté ; Cela peut être modifié selon vos besoins.
 
     >[!NOTE]
     >Nous vous recommandons d’utiliser un chemin d’accès local au lieu d’un chemin d’accès réseau distant pour des performances optimales.
@@ -61,11 +60,11 @@ Utilisez le flux de travail suivant pour corriger les fichiers avec des erreurs 
     > [!NOTE]
     > Si vous n’avez pas installé AzCopy, accédez à la [prise en main de AzCopy](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy) pour l’installer.
 
-6. Copiez la commande prédéfinie en cliquant sur **copier dans le presse-papiers**. Démarrez une invite de commandes Windows, collez la commande, puis appuyez sur **entrée**.  
+6. Copiez la commande prédéfinie en cliquant sur **Copier dans le presse-papiers**. Démarrez une invite de commandes Windows, collez la commande, puis appuyez sur **entrée**.  
 
     Les fichiers sont téléchargés.
 
-    ![Préparation de la correction des erreurs](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
+    ![Informations sur les fichiers téléchargés dans l’invite de commandes](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
 
     > [!NOTE]
     > Si vous rencontrez des problèmes lors de l’exécution de cette commande, consultez la rubrique [Troubleshoot AzCopy in Advanced eDiscovery](troubleshooting-azcopy.md).
@@ -77,13 +76,13 @@ Utilisez le flux de travail suivant pour corriger les fichiers avec des erreurs 
 
 8. À présent, revenez aux enquêtes de données (aperçu) et cliquez sur **suivant : charger les fichiers**.  Cette opération passe à l’étape suivante, dans laquelle vous pouvez à présent télécharger les fichiers.
 
-    ![Charger des fichiers](../media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
+    ![Onglet charger les fichiers](../media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
 
 9. Spécifiez l’emplacement des fichiers corrigés dans la zone **de texte chemin d’accès à l’emplacement des fichiers** , puis cliquez sur **copier dans le presse-papiers**.
 
 10. Collez la commande dans une invite de commande Windows et appuyez sur **entrée** pour charger les fichiers.
 
-    ![ff2ff691-629f-4065-9b37-5333f937daf6.png](../media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
+    ![Informations sur les fichiers téléchargés dans l’invite de commandes](../media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
 
 11. Enfin, revenez aux enquêtes de données (aperçu) et cliquez sur **suivant : traiter les fichiers**.
 

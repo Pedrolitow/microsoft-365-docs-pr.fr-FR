@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Cet article décrit l’utilisation de l’outil nouvelles enquêtes de données (aperçu) dans le centre de sécurité & Compliance pour gérer un incident de déversement de données.
-ms.openlocfilehash: a544eb1e021faa82d00ac46a7d64a3eb368cc323
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8151cfa04d166ccc180f01d9bb88322ba6157d82
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635934"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285570"
 ---
 # <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>Gérer un incident de fuite de données dans Microsoft 365
 
@@ -108,7 +108,7 @@ Après avoir exécuté la recherche, vous pouvez prévisualiser des exemples de 
 
 Dans l’enquête, accédez à l’onglet **preuve** et cliquez sur l’ensemble de preuves que vous avez créé à l’étape précédente. Une fois le travail de traitement terminé et les résultats de la recherche ajoutés à la preuve, vous pouvez passer en revue des documents individuels au format natif, au format texte ou au format quasi natif. Vous pouvez créer des requêtes supplémentaires pour affiner la liste des documents et marquer des documents pour indiquer les conclusions de votre enquête. Pour plus d’informations, voir [examiner les données dans les preuves](review-data-in-evidence.md)
 
-Pour regrouper des documents et obtenir de l’aide supplémentaire pour votre révision, cliquez sur **gérer les preuves**. Dans la vignette **analyse** , cliquez sur **analyser**. Cela exécute des analyses avancées, telles que la détection des doublons, le Threading de messagerie électronique et l’analyse de thème. Si vous souhaitez en savoir plus, consultez les articles : 
+Pour regrouper des documents et obtenir de l’aide supplémentaire pour votre révision, cliquez sur **gérer les preuves**. Dans la vignette **analyse** , cliquez sur **analyser**. Cela exécute des analyses avancées, telles que la détection des doublons, le Threading de messagerie électronique et l’analyse de thème. Si vous souhaitez en savoir plus, voir : 
 
 - [Exécuter les données d’analyse pour investiguer plus rapidement](run-analytics-to-investigate-faster.md)
 - [Détecter des quasi-duplicatas](near-duplicates.md)
@@ -141,6 +141,6 @@ Pour supprimer une enquête :
 
 1. Dans l’onglet **paramètres** , cliquez sur informations sur l' **enquête**.
 
-2. Cliquez sur **Supprimer l’enquête**. 
+2. Cliquez sur  **Supprimer l’enquête**. 
 
 Si vous n’avez pas besoin de supprimer l’enquête ou si vous souhaitez enregistrer les informations que vous avez collectées pendant l’enquête, vous pouvez cliquer sur **Fermer le cas**. Ensuite, vous pouvez rouvrir des enquêtes fermées.

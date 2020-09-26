@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Cet article explique comment configurer les autorisations nécessaires pour utiliser l’outil des enquêtes de données dans Microsoft 365.
-ms.openlocfilehash: 47a7923d38cfa0ea3bad6c4c266f580f8104c429
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 85a800c3e21c270f46de78bdef77d7b7a98e0eca
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637756"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285440"
 ---
 # <a name="assign-permissions-for-data-investigations-preview"></a>Affecter des autorisations pour les enquêtes sur les données (aperçu)
 

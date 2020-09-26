@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Découvrez comment utiliser les limites de conformité pour créer des limites logiques qui contrôlent les emplacements de contenu utilisateur qu’un gestionnaire eDiscovery peut rechercher dans Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1c0d0b4b8c5c43945efad737165acdd2612d33b7
-ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
+ms.openlocfilehash: 19165af60d7813134952589831bf94a91bfe7f40
+ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/25/2020
-ms.locfileid: "48269393"
+ms.locfileid: "48277104"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>Configuration des limites de conformité pour les enquêtes eDiscovery
 
@@ -70,7 +70,10 @@ Voici une liste d’attributs d’utilisateur Azure Active Directory que vous po
 
 - Bureau
 
-- C (code du pays à deux lettres)
+- C (code pays à deux lettres) <sup>*</sup>
+
+  > [!NOTE]
+  > <sup>*</sup> Cet attribut est mappé à la propriété CountryOrRegion qui est renvoyée en exécutant la cmdlet **Get-User** dans Exchange Online PowerShell. L’applet de commande renvoie le nom de pays localisé, qui est traduit à partir du code de pays à deux lettres. Pour plus d’informations, consultez la description du paramètre CountryOrRegion dans l’article de référence de cmdlet [Set-User](https://docs.microsoft.com/powershell/module/exchange/set-user) .
 
 Bien que d’autres attributs utilisateur soient disponibles, en particulier pour les boîtes aux lettres Exchange, les attributs répertoriés ci-dessus sont les seuls ceux actuellement pris en charge par OneDrive.
   
@@ -243,7 +246,7 @@ Gardez les points suivants à l’esprit lors de la recherche et de l’exportat
 
 ## <a name="using-compliance-boundaries-for-sharepoint-hub-sites"></a>Utilisation des limites de conformité pour les sites hub SharePoint
 
-Les [sites hub SharePoint](https://docs.microsoft.com/sharepoint/dev/features/hub-site/hub-site-overview) s’alignent souvent sur les mêmes frontières géographiques ou organismes que les limites de conformité eDiscovery. Cela signifie que vous pouvez utiliser la propriété ID de site du site Hub pour créer une limite de conformité. Pour ce faire, utilisez la cmdlet [Get-SPOHubSite](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spohubsite?view=sharepoint-ps#examples) dans SharePoint Online PowerShell pour obtenir le siteid pour le site Hub, puis utilisez cette valeur pour la propriété ID de service afin de créer un filtre d’autorisations de recherche.
+Les [sites hub SharePoint](https://docs.microsoft.com/sharepoint/dev/features/hub-site/hub-site-overview) s’alignent souvent sur les mêmes frontières géographiques ou organismes que les limites de conformité eDiscovery. Cela signifie que vous pouvez utiliser la propriété ID de site du site Hub pour créer une limite de conformité. Pour ce faire, utilisez la cmdlet [Get-SPOHubSite](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spohubsite#examples) dans SharePoint Online PowerShell pour obtenir le siteid pour le site Hub, puis utilisez cette valeur pour la propriété ID de service afin de créer un filtre d’autorisations de recherche.
 
 Utilisez la syntaxe suivante pour créer un filtre d’autorisations de recherche pour un site hub SharePoint :
 

@@ -1,5 +1,5 @@
 ---
-title: Créer des requêtes de recherche-eDiscovery
+title: Créer des requêtes de recherche dans Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -7,32 +7,31 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
 ms.custom: seo-marvel-mar2020
 description: Utilisez des mots clés et des conditions pour limiter l’étendue de la recherche lors de la recherche de données à l’aide de Advanced eDiscovery dans Microsoft 365.
-ms.openlocfilehash: 86e763577c24473f8f55c5c8dc26d1853509d50a
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 3ddd9c38f16fc2dd0fcb96e5fffc79ebbacdbda4
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035512"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285800"
 ---
-# <a name="build-search-queries"></a>Créer des requêtes de recherche
+# <a name="build-search-collection-queries-in-advanced-ediscovery"></a>Créer des requêtes de collection de recherche dans Advanced eDiscovery
 
-Lors de la création de requêtes de recherche, vous pouvez utiliser des mots clés pour rechercher du contenu et des conditions spécifiques afin de limiter l’étendue de la recherche afin de renvoyer les éléments les plus pertinents pour votre enquête légale.
+Lors de la création de requêtes de recherche pour collecter des données dans un cas avancé de découverte électronique, vous pouvez utiliser des mots clés pour rechercher du contenu et des conditions spécifiques afin de limiter l’étendue de la recherche afin de renvoyer les éléments les plus pertinents pour votre enquête légale.
 
 ![Utiliser des mots clés et des conditions pour affiner les résultats d’une recherche](../media/SearchQueryBox.png)
 
-## <a name="keyword-searches"></a>Recherches par Mots clés
+## <a name="keyword-searches"></a>Recherches par mots clés
 
-Tapez une requête de mot clé dans la zone **Mots clés** de la requête de recherche. Vous pouvez spécifier des mots clés, des propriétés de message électronique, tels que des dates d’envoi et de réception, ou des propriétés de document, telles que des noms de fichiers ou la date de la dernière modification d’un document. Vous pouvez utiliser des requêtes plus complexes qui utilisent un opérateur booléen, tels que **ET**, **OU**, **PAS**, et **PRÈS**. Vous pouvez également rechercher des informations sensibles (telles que des numéros de sécurité sociale) dans des documents dans SharePoint et OneDrive (pas dans les messages électroniques) ou Rechercher des documents qui ont été partagés en externe. Si vous laissez la zone **Mots clés** vide, tout le contenu situé dans les emplacements de contenu spécifiés se trouve dans les résultats de la recherche.
+Tapez une requête de mot clé dans la zone **Mots clés** de la requête de recherche. Vous pouvez spécifier des mots clés, des propriétés de message électronique, tels que des dates d’envoi et de réception, ou des propriétés de document, telles que des noms de fichiers ou la date de la dernière modification d’un document. Vous pouvez utiliser des requêtes plus complexes qui utilisent un opérateur booléen, tels que **ET**, **OU**, **PAS**, et **PRÈS**. Vous pouvez également rechercher des informations sensibles (telles que des numéros de sécurité sociale) dans des documents dans SharePoint et OneDrive (pas dans les messages électroniques) ou Rechercher des documents qui ont été partagés en externe. Si vous laissez la zone **Mot clé** vide, tout le contenu se trouvant dans les emplacements de contenu spécifiés est dans les résultats de recherche.
     
 Vous pouvez également activer la case à cocher **afficher la liste des mots clés** et taper un mot clé ou une phrase de mots clés dans chaque ligne. Dans ce cas, les mots clés de chaque ligne sont connectés par un opérateur logique (représenté sous la forme *c :s* dans la syntaxe de requête de recherche) qui est similaire à la fonctionnalité de l’opérateur **or** de la requête de recherche qui est créée. Cela signifie que les éléments qui contiennent un mot clé dans n’importe quelle ligne se trouvent dans les résultats de la recherche.
 

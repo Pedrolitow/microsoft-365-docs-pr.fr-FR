@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Vous pouvez suivre l’état des processus de longue durée résultant de l’exécution des tâches dans l’outil d’analyse des données du centre de sécurité & conformité.
-ms.openlocfilehash: ef2fe364a20bd0edc48761162f519135b750d9ab
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: be964f79c6407b5a74f4edebe264008113d8d968
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635914"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285720"
 ---
 # <a name="manage-jobs-in-data-investigations-preview"></a>Gérer les travaux dans les enquêtes de données (aperçu)
 

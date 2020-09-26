@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: ''
 description: Cet article explique comment utiliser l’outil nouvelles enquêtes de données (aperçu) dans le centre de sécurité & conformité pour supprimer des éléments de leur emplacement d’origine.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0787944791fea65dfc940b1067abe1bad8097dcd
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 82f411dd380c039d2c8a9011144d5a49fcbfd597
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817883"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285770"
 ---
 # <a name="delete-items-from-their-original-location-preview"></a>Supprimer des éléments de leur emplacement d’origine (aperçu)
 
@@ -62,7 +62,7 @@ Pour supprimer des éléments de leur emplacement d’origine, procédez comme s
    > [!NOTE]
    > Dans la capture d’écran précédente, le nombre d’éléments indique le nombre d’éléments sélectionnés pour la suppression. Le nombre de documents indique le nombre total d’éléments, y compris les fichiers joints à un élément parent. Par exemple, si vous sélectionnez un message électronique et que celui-ci contient un document Word joint, le nombre d’éléments et de documents affichés sous **documents sélectionnés seulement** est **1 élément (2 documents)**.
 
-Vous pouvez suivre la progression de la tâche **Supprimer les éléments à partir des emplacements d’origine** dans l’onglet **travaux** . cliquez sur le travail pour afficher la page de menu volant.
+Vous pouvez suivre la progression de la tâche **supprimer des emplacements d’origine** dans l’onglet **travaux** . Cliquez sur le travail pour afficher la page de menu volant.
 
 ![Page de menu volant pour supprimer des éléments du travail d’origine](../media/DataInvestigationsDeleteItems3.png)
 

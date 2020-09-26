@@ -17,14 +17,14 @@ search.appverid:
 ms.assetid: ''
 description: Trouvez des informations sur les limites de description, d’indexation, de recherche, d’exportation et de téléchargement dans les enquêtes de données (aperçu).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 53c71e50dd83332ebd1bb1076b3dbf5dd304b927
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 30d8b26493fcd0d5059238876abe5b8209429670
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358502"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285910"
 ---
-# <a name="data-investigations-preview-limits"></a>Limites des enquêtes de données (aperçu)
+# <a name="limits-in-data-investigations-preview"></a>Limites dans les enquêtes de données (aperçu)
 
 Cet article décrit les limites dans les enquêtes de données (aperçu).
 

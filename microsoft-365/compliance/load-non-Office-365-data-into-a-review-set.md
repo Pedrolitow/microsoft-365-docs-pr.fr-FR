@@ -1,5 +1,5 @@
 ---
-title: Charger des données non-Microsoft 365 dans un jeu de révision
+title: Charger des données non-Microsoft 365 dans un groupe de révision
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -7,26 +7,25 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
 description: Découvrez comment importer des données non-Microsoft 365 vers un jeu de réexamen pour analyse dans un cas avancé de découverte électronique.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f9b506edc55da1916ae908eaa7ca619ba7300f87
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: ad70207bdc015107a5aba074e2df06a42c0618b3
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44815461"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285860"
 ---
-# <a name="load-non-microsoft-365-data-into-a-review-set"></a>Charger des données non-Microsoft 365 dans un jeu de révision
+# <a name="load-non-microsoft-365-data-into-a-review-set"></a>Charger des données non-Microsoft 365 dans un groupe de révision
 
-Tous les documents que vous devez analyser dans Advanced eDiscovery sont situés dans Microsoft 365. Avec la fonctionnalité d’importation de données non-Microsoft 365 dans Advanced eDiscovery, vous pouvez télécharger des documents qui ne se trouvent pas dans le groupe de Microsoft 365 vers un jeu de révision. Cet article vous explique comment mettre vos documents non-Microsoft 365 dans Advanced eDiscovery pour analyse.
+Tous les documents que vous devez analyser dans Advanced eDiscovery sont situés dans Microsoft 365. Avec la fonctionnalité d’importation de données non-Microsoft 365 dans Advanced eDiscovery, vous pouvez télécharger des documents qui ne se trouvent pas dans Microsoft 365 dans un groupe de révision. Cet article vous explique comment mettre vos documents non-Microsoft 365 dans Advanced eDiscovery pour analyse.
 
 ## <a name="requirements-to-upload-non-office-365-content"></a>Conditions requises pour télécharger du contenu non-Office 365
 
@@ -38,9 +37,9 @@ Pour utiliser la fonctionnalité Télécharger non-Microsoft 365 décrite dans c
 
 - Les dépositaires doivent être ajoutés à l’incident avant de pouvoir télécharger et d’associer les données non Microsoft 365.
 
-- Les données non-Microsoft 365 doivent être un type de fichier pris en charge par Advanced eDiscovery. Pour plus d’informations, consultez la rubrique [types de fichiers pris en charge dans Advanced eDiscovery](supported-filetypes-ediscovery20.md).
+- Les données ne relevant pas de Microsoft 365 doivent correspondre à un type de fichier pris en charge par Advanced eDiscovery. Pour plus d’informations, voir [Types de fichiers pris en charge dans eDiscovery avancée](supported-filetypes-ediscovery20.md).
 
-- Tous les fichiers téléchargés vers un jeu de révision doivent se trouver dans des dossiers, où chaque dossier est associé à un dépositaire spécifique. Les noms de ces dossiers doivent utiliser le format d’affectation de noms suivant : *alias@domainname*. Le alias@domainname doit être l’alias et le domaine Microsoft 365 de l’utilisateur. Vous pouvez collecter tous les dossiers alias@domainname dans un dossier racine. Le dossier racine peut contenir uniquement les dossiers alias@domainname. Les fichiers libres dans le dossier racine ne sont pas pris en charge.
+- Tous les fichiers chargés dans un jeu à réviser doivent se trouver dans des dossiers, chaque dossier étant associé à un dépositaire spécifique. Les noms de ces dossiers doivent être au format suivant : *alias@nom_domaine*. La valeur alias@nom_domaine doit correspondre à l’alias Microsoft 365 et au domaine de l’utilisateur. Vous pouvez collecter tous les dossiers alias@domainname dans un dossier racine. Le dossier racine peut contenir uniquement les dossiers alias@domainname. Les fichiers libres dans le dossier racine ne sont pas pris en charge.
 
    La structure de dossiers pour les données non-Microsoft 365 que vous souhaitez télécharger serait semblable à l’exemple suivant :
 
@@ -63,17 +62,17 @@ Pour utiliser la fonctionnalité Télécharger non-Microsoft 365 décrite dans c
 
 2. Cliquez sur **réviser les ensembles**, puis sélectionnez le jeu de révision à télécharger pour les données non-Microsoft 365.  Si vous n’avez pas d’ensemble de révision, vous pouvez en créer un. 
  
-3. Dans l’ensemble de révision, cliquez sur **gérer l’ensemble de révisions**, puis sur **afficher les téléchargements** dans la vignette **données non-Microsoft 365** .
+3. Dans l’ensemble de révision, cliquez sur **Gérer l’ensemble de révision**, puis cliquez sur **Afficher les téléchargements** sur la mosaïque **Données non-Microsoft 365**.
 
-4. Cliquez sur **Télécharger les fichiers** pour démarrer l’Assistant importation de données.
+4. Cliquez sur **Charger des fichiers** pour démarrer l’Assistant importation de données.
 
    ![Charger des fichiers](../media/574f4059-4146-4058-9df3-ec97cf28d7c7.png)
 
-   La première étape de l’Assistant prépare un emplacement de stockage Azure sécurisé fourni par Microsoft pour télécharger les fichiers.  Une fois la préparation terminée, le bouton **suivant : charger les fichiers** devient actif.
+   La première étape de l’Assistant prépare un emplacement de stockage Azure sécurisé fourni par Microsoft pour charger les fichiers.  Une fois la préparation terminée, le bouton **Suivant : charger des fichiers** devient actif.
 
    ![Non-Microsoft 365 Import : prepare](../media/0670a347-a578-454a-9b3d-e70ef47aec57.png)
  
-5. Cliquez sur **suivant : charger les fichiers**.
+5. Cliquez sur **Suivant : charger des fichiers**.
 
 6. Sur la page **Télécharger les fichiers** , procédez comme suit :
 
@@ -90,7 +89,7 @@ Pour utiliser la fonctionnalité Télécharger non-Microsoft 365 décrite dans c
    > [!NOTE]
    > Comme indiqué précédemment, vous devez utiliser AzCopy v 8.1 pour utiliser correctement la commande fournie dans la page **Télécharger les fichiers** . Si la commande AzCopy fournie échoue, reportez-vous à la rubrique [Troubleshoot AzCopy in Advanced eDiscovery](troubleshooting-azcopy.md).
 
-8. Revenez dans le centre de sécurité & conformité, puis cliquez sur **suivant : traiter les fichiers** dans l’Assistant.  Cela lance le traitement, l’extraction de texte et l’indexation des fichiers non-Microsoft 365 qui ont été téléchargés vers l’emplacement de stockage Azure.  
+8. Revenez dans le centre de sécurité & conformité, puis cliquez sur **suivant : traiter les fichiers** dans l’Assistant.  Cette opération initie le traitement, l’extraction de texte et l’indexation des fichiers non-Microsoft 365 qui ont été téléchargés vers l’emplacement de stockage Azure.  
 
 9. Effectuez le suivi de la progression du traitement des fichiers sur la page des **fichiers de processus** ou sur l’onglet **travaux** en affichant un travail nommé **ajout de données non Microsoft 365 à un jeu de révision**.  Une fois le travail terminé, les nouveaux fichiers seront disponibles dans l’ensemble de révision.
 

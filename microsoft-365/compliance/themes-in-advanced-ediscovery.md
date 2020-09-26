@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -17,14 +17,14 @@ search.appverid:
 ms.assetid: ''
 description: Utilisez des thèmes dans Advanced eDiscovery pour organiser les ensembles de révision en recherchant le thème dominant dans chaque document.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: eb008e091cd8c8330d1cdd5b388e252af70922da
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 3dfc0dca0c6ed62e3ce8384efa2fd3ea407c3ce8
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034518"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285530"
 ---
-# <a name="themes"></a>Thèmes
+# <a name="themes-in-advanced-ediscovery"></a>Thèmes dans Advanced eDiscovery
 
 Comment une personne écrit-t-elle un document ? Elles commencent généralement par une ou plusieurs idées qu’elles souhaitent transférer dans le document, et composent des mots qui s’alignent sur les idées. Plus l’idée est fréquente, plus le nombre de mots liés à cette idée est important. Cela indique le mode d’utilisation des documents par les utilisateurs. Il est important de comprendre la lecture d’un document, à savoir les idées que le document tente de transmettre, les idées qui apparaissent où et les relations entre les idées.
 
@@ -34,4 +34,4 @@ La fonctionnalité de thèmes dans Advanced eDiscovery tente de reproduire la ra
 
 ## <a name="how-does-themes-work"></a>Comment fonctionne le thème ?
 
-La fonctionnalité de thèmes analyse les documents avec du texte dans un ensemble de révision pour analyser les thèmes communs qui apparaissent dans tous les documents de l’ensemble de révision. Advanced eDiscovery affecte ces thèmes aux documents dans lesquels ils apparaissent. Il étiquette également chaque thème avec les mots utilisés dans les documents représentatifs du thème. Étant donné qu’un document peut contenir différents types d’objets, Advanced eDiscovery affecte souvent plusieurs thèmes à des documents. Le thème qui apparaît le plus en évidence dans un document est désigné comme son thème dominant.
+La fonctionnalité Thèmes analyse les documents d’un jeu à réviser qui incluent du texte afin d’identifier les thèmes communs qui apparaissent dans tous les documents du jeu à réviser. Advanced eDiscovery attribue les thèmes identifiés aux documents dans lesquels ils apparaissent. Il associe par ailleurs les thèmes aux mots utilisés dans les documents représentatifs du thème. Les documents pouvant contenir différents types de sujets, Advanced eDiscovery leur attribue souvent plusieurs thèmes. Le thème le plus évident dans un document est désigné comme thème dominant.

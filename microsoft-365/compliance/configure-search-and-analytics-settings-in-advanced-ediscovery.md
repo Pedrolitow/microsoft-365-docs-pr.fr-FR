@@ -1,5 +1,5 @@
 ---
-title: Configurer les paramètres de recherche et d’analyse-eDiscovery
+title: Configurer les paramètres de recherche et d’analyse-eDiscovery avancé
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,38 +17,38 @@ search.appverid:
 ms.assetid: ''
 ms.custom: seo-marvel-mar2020
 description: Configurez des paramètres eDiscovery avancés qui s’appliquent à tous les jeux de révision dans un cas. Cela inclut les paramètres d’analyse et de reconnaissance optique de caractères.
-ms.openlocfilehash: eb934146b065454b54d797e47f7a643b95be546d
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: dfacab79f635a817b127614f524d00b0297981fb
+ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033674"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48277088"
 ---
-# <a name="configure-search-and-analytics-settings"></a>Configurer les paramètres de recherche et d’analyse
+# <a name="configure-search-and-analytics-settings-in-advanced-ediscovery"></a>Configurer les paramètres de recherche et d’analyse dans Advanced eDiscovery
 
 Vous pouvez configurer les paramètres de chaque cas de découverte électronique avancée pour contrôler les fonctionnalités suivantes.
 
-- Quasi-doublons et Threading de courrier électronique
+- Quasi-doublons et thread de courrier
 
 - Thèmes
 
-- Requête de jeu de validation autogénéré
+- Requête de jeu à réviser générée automatiquement
 
 - Ignorer le texte
 
-- Reconnaissance optique de caractères
+- Reconnaissance optique des caractères
 
 Pour configurer les paramètres de recherche et d’analyse d’un cas :
 
-1. Sur la page **Advanced eDiscovery** , sélectionnez le cas.
+1. Dans la page **Advanced eDiscovery**, sélectionnez le cas.
 
-2. Dans l’onglet **paramètres** , sous **recherche & Analytics**, cliquez sur **Sélectionner**.
+2. Sous l’onglet **Paramètres**, sous **Recherche et analyse**, cliquez sur **Sélectionner**.
 
    La page Paramètres de l’incident s’affiche. Ces paramètres sont appliqués à tous les jeux de révision dans un cas.
 
    ![Configurer les paramètres d’analyse et de recherche pour un cas avancé eDiscovery](../media/AeDCaseSettings.png)
 
-## <a name="near-duplicates-and-email-threading"></a>Quasi-doublons et Threading de courrier électronique
+## <a name="near-duplicates-and-email-threading"></a>Quasi-doublons et thread de courrier
 
 Dans cette section, vous pouvez définir des paramètres pour la détection des doublons, la détection des doublons et le Threading de messagerie. Pour plus d’informations, consultez la rubrique [near Detection Detection](near-duplicates.md) and [email Threading](email-threading.md).
 
@@ -68,23 +68,31 @@ Dans cette section, vous pouvez définir des paramètres pour les thèmes. Pour 
 
 - **Inclure les numéros dans les thèmes :** Lorsque ce paramètre est activé, les numéros (qui identifient un thème) sont inclus lors de la génération de thèmes. 
 
-- **Ajuster le nombre maximal de thèmes de manière dynamique :** Dans certains cas, il se peut qu’il n’y ait pas assez de documents dans un ensemble de révision pour produire le nombre souhaité de thèmes. Lorsque ce paramètre est activé, Advanced eDiscovery ajuste le nombre maximal de thèmes de manière dynamique au lieu de tenter d’appliquer le nombre maximal de thèmes.
+- **Ajuster le nombre maximal de thèmes de manière dynamique :** Dans certains cas, il se peut qu’il n’y ait pas assez de documents dans un ensemble de révision pour produire le nombre souhaité de thèmes. Lorsque ce paramètre est activé, Advanced eDiscovery ajuste le nombre maximal de thèmes dynamiquement, plutôt que d’essayer d’appliquer le nombre maximal de thèmes.
 
-## <a name="review-set-query"></a>Examiner la requête Set
+## <a name="review-set-query"></a>Requête de jeu à réviser
 
 Si vous activez la case à cocher **créer automatiquement un pour vérifier les recherches enregistrées après analyse** , Advanced EDiscovery génère automatiquement la requête Set appelée **for Review.** 
 
 ![La requête de révision générée automatiquement](../media/AeDForReviewQuery.png)
 
-Cette requête filtre en fait des éléments dupliqués de l’ensemble de révision. Cela vous permet de passer en revue les éléments uniques dans l’ensemble de révision. Cette requête est créée uniquement lorsque vous exécutez Analytics pour un jeu de réexamen dans le cas. Pour plus d’informations sur la vérification des requêtes Set, voir [query the Data in a Review Set](review-set-search.md).
+Cette requête filtre en fait des éléments dupliqués de l’ensemble de révision. Cela vous permet de passer en revue les éléments uniques dans l’ensemble de révision. Elle n’est créée que lorsque vous effectuez une analyse pour un jeu à réviser dans le cas. Pour plus d’informations sur la vérification des requêtes Set, voir [query the Data in a Review Set](review-set-search.md).
 
 ## <a name="ignore-text"></a>Ignorer le texte
 
-Il existe des situations dans lesquelles certains textes réduisent la qualité de l’analyse, tels que les clauses d’exclusion de responsabilité longues qui sont ajoutées aux messages électroniques quel que soit le contenu du courrier électronique. Si vous êtes conscient du texte qui doit être ignoré, vous pouvez l’exclure de l’analyse en spécifiant la chaîne de texte et la fonctionnalité d’analyse (presque-Duplicates, le Threading de courrier électronique, les thèmes et la pertinence) pour lesquels le texte doit être exclu. L’utilisation d’expressions régulières (RegEx) comme texte ignoré est également prise en charge. 
+Il existe des situations dans lesquelles certains textes réduisent la qualité de l’analyse, tels que les clauses d’exclusion de responsabilité longues qui sont ajoutées aux messages électroniques quel que soit le contenu du courrier électronique. Si vous souhaitez ignorer un texte donné, vous pouvez l’exclure de l’analyse en spécifiant la chaîne de texte et la fonctionnalité d’analyse (Quasi-doublons, Thread de courrier, Thèmes et Pertinence) pour laquelle le texte doit être exclu. L’utilisation d’expressions régulières (RegEx) comme texte ignoré est également prise en charge. 
 
-## <a name="optical-character-recognition-ocr"></a>Reconnaissance optique de caractères (OCR)
+## <a name="optical-character-recognition-ocr"></a>Reconnaissance optique des caractères
 
-Lorsque ce paramètre est activé, la reconnaissance optique de caractères est exécutée sur les fichiers d’image ajoutés aux ensembles de révision afin que le texte de l’image puisse être révisé, recherché, balisé et analysé. Vous pouvez afficher le texte extrait dans la visionneuse de texte du fichier image sélectionné dans l’ensemble de révision. Pour plus d’informations, reportez-vous aux rubriques suivantes :
+Lorsque ce paramètre est activé, le traitement de la reconnaissance optique de caractères est exécuté sur les fichiers image. Le traitement de la reconnaissance optique de caractères est exécuté dans les situations suivantes :
+
+- Lorsque des dépositaires et des [sources de données non privatives de cœur](non-custodial-data-sources.md) sont ajoutés à un cas. Le traitement de la reconnaissance optique de caractères est effectué pendant le processus d’indexation avancé. Cela signifie que le texte dans les fichiers image correspondant aux critères de recherche sera renvoyé dans une recherche de collection.
+
+- Lorsque le contenu d’autres sources de données (qui ne sont pas associées à un dépositaire et ajouté à l’incident dans une source de données non-privatives de cœur) est ajouté à un jeu de révision.
+
+Une fois les données ajoutées à un ensemble de révision, le texte de l’image peut être révisé, recherché, balisé et analysé. Vous pouvez afficher le texte extrait dans la visionneuse de texte du fichier image sélectionné dans l’ensemble de révision. Si vous souhaitez en savoir plus, voir : 
+
+- [Indexation avancée des données des consignataires](indexing-custodian-data.md)
 
 - [Ajouter des résultats de recherche à un jeu à réviser](add-data-to-review-set.md#optical-character-recognition)
 

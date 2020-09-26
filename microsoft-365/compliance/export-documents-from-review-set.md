@@ -17,14 +17,14 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment sélectionner et exporter du contenu à partir d’un jeu de révision pour des présentations ou des révisions externes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 855f1b8fef7a1df6ed86f058b71e5027851b5f0d
-ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
+ms.openlocfilehash: b3be21d4c90c861c83acf612e9aadc373189f7ba
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47399174"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285360"
 ---
-# <a name="export-documents-from-a-review-set"></a>Exporter des documents d’un jeu à réviser
+# <a name="export-documents-from-a-review-set-in-advanced-ediscovery"></a>Exporter des documents à partir d’un jeu de révision dans Advanced eDiscovery
 
 Exporter permet aux utilisateurs de personnaliser le contenu qui est inclus dans le package de téléchargement. L’outil d’exportation fournit une page de configuration avec les paramètres suivants :
 

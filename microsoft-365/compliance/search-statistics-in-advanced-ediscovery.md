@@ -1,5 +1,5 @@
 ---
-title: Statistiques de recherche
+title: Statistiques de recherche dans la découverte électronique avancée
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -7,46 +7,55 @@ author: esclee
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
-description: ''
-ms.openlocfilehash: b7975f5d288348177cbb6edec8002b4ed49de327
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Valider les résultats de la recherche en affichant les statistiques générées après l’exécution d’une recherche de collection dans Advanced eDiscovery.
+ms.openlocfilehash: ef5653a76d94272ba5f608149648f1421198929a
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069871"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48286080"
 ---
-# <a name="search-statistics"></a>Statistiques de recherche
+# <a name="search-statistics-in-advanced-ediscovery"></a>Statistiques de recherche dans Advanced eDiscovery
 
 Vous pouvez valider vos résultats de recherche en examinant les statistiques de vos résultats afin de vous assurer qu’ils correspondent à vos attentes. Une fois la recherche terminée, les statistiques de haut niveau apparaissent dans la fenêtre d’affichage des détails de la recherche :
+
 - Nombre et volume d’éléments récupérés par la recherche
-- Nombre et volume d’éléments partiellement indexés/non indexés qui ont été trouvés dans les emplacements de recherche
+
+- Nombre et volume d’éléments partiellement indexés ou non indexés qui ont été trouvés dans les emplacements de recherche
+
 - Nombre de boîtes aux lettres et d’emplacements recherchés.
 Pour afficher des statistiques plus détaillées, cliquez sur « statistiques » dans la fenêtre mobile des détails de recherche.
 
-## <a name="summary"></a>Résumé
+## <a name="summary-view"></a>Affichage de synthèse
 
-En mode Résumé, vous pouvez voir les résultats de la recherche décomposés par type d’emplacement (par exemple, Exchange). Pour chaque type d’emplacement, vous pouvez voir :
+Dans l’affichage de synthèse, vous pouvez voir les résultats de la recherche décomposés par type d’emplacement (par exemple, Exchange). Pour chaque type d’emplacement, vous pouvez voir :
+
 - Nombre d’emplacements qui ont des éléments correspondant aux conditions de recherche
+
 - Nombre d’éléments à partir de ces emplacements qui correspondent aux conditions de recherche
+
 - Volume total des éléments qui correspondent aux conditions de recherche.
 
-## <a name="top-locations"></a>Emplacements les plus fréquents
+## <a name="top-locations-view"></a>Affichage des emplacements les plus fréquents
 
-Dans la vue des emplacements principaux, vous voyez les différents emplacements avec le plus de correspondances. Pour chaque emplacement, vous verrez :
+Dans la vue des emplacements supérieurs, vous voyez les différents emplacements avec le plus de correspondances. Pour chaque emplacement, vous verrez :
+
 - Nom de l’emplacement (par exemple, URL SharePoint)
+
 - Type d'emplacement
+
 - Nombre d’éléments correspondant aux conditions de recherche
+
 - Volume total des éléments qui correspondent aux conditions de recherche.
 
-## <a name="queries"></a>Requêtes
+## <a name="queries-view"></a>Affichage de requêtes
 
 Si vous avez utilisé (c :s) des lignes de mots clés ou de mots clés dans votre requête, vous pouvez voir la répartition de votre requête en mode requêtes par type d’emplacement. Pour chaque type d’emplacement, vous verrez :
 

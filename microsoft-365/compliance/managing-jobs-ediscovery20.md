@@ -7,21 +7,20 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
 description: Les travaux eDiscovery avancés vous aident à suivre l’état des processus de longue durée liés à l’exécution de différentes tâches eDiscovery avancées.
-ms.openlocfilehash: a3367a17444ab99cb7c32af455d4564380dfd591
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d41ac3572c462b85ff8f0bac0cc7205a5c012ce9
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632949"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285168"
 ---
 # <a name="manage-jobs-in-advanced-ediscovery"></a>Gérer les travaux dans Advanced eDiscovery
 
@@ -32,8 +31,8 @@ Voici une liste des travaux (qui sont généralement des processus de longue dur
 |Ajout de données à un ensemble de révision | Un utilisateur ajoute les résultats d’une recherche à un jeu de révision. Cette tâche se compose de deux sous-travaux : </br>• **GatheringItems** -une liste d’éléments qui correspondent à la requête de recherche (et la source de données Microsoft 365 dans laquelle ils sont situés) est générée. </br>• L’ingestion **& l’indexation** : les éléments qui correspondent à la requête de recherche sont copiés vers un emplacement de stockage Azure (dans un processus appelé ingestion *), puis*les éléments de l’emplacement de stockage Azure sont réindexés. Ce nouvel index est utilisé lors de l’interrogation et de l’analyse d’éléments dans le jeu de données. </br></br>Pour plus d’informations, consultez [la rubrique ajouter des résultats de recherche à un jeu de révision](add-data-to-review-set.md). |
 |Ajout de données à un autre ensemble de vérification | Un utilisateur ajoute des documents à partir d’un ensemble de réexamen dans le même cas. Pour plus d’informations, consultez [la rubrique ajouter des données à un jeu de réexamen à partir d’un autre ensemble de révision](add-data-to-review-set-from-another-review-set.md).|
 |Ajout de données non Microsoft 365 à un jeu de révision | Un utilisateur télécharge des données non-Microsoft 365 vers un jeu de révision. Les données sont également indexées pendant ce processus. Par exemple, les fichiers d’un serveur de fichiers local ou d’un ordinateur client sont chargés dans un jeu de révision. Pour plus d’informations, voir [charger des données non-Microsoft 365 dans un jeu de révision](load-non-office365-data.md).| 
-|Ajout de données corrigées à un jeu de révision | Les données avec des erreurs de traitement sont corrigées et rechargées dans un jeu de révision. Si vous souhaitez en savoir plus, consultez les articles : </br>• [Correction des erreurs lors du traitement des données](error-remediation-when-processing-data-in-advanced-ediscovery.md)</br>• [Correction d’erreur sur un seul élément](single-item-error-remediation.md)| 
-|Comparaison des jeux de charges | Un utilisateur examine les différences entre les différents jeux de charges dans un jeu de réexamen. Un jeu de charges est une instance de l’ajout de données à un jeu de réexamen. Par exemple, si vous ajoutez les résultats de deux recherches différentes au même jeu de réexamen, chacun d’entre eux représenterait un jeu de charges. Pour plus d’informations, consultez la rubrique [Manage Load Sets](manage-load-sets.md). |
+|Ajout de données corrigées à un jeu de révision | Les données avec des erreurs de traitement sont corrigées et rechargées dans un jeu de révision. Si vous souhaitez en savoir plus, voir : </br>• [Correction des erreurs lors du traitement des données](error-remediation-when-processing-data-in-advanced-ediscovery.md)</br>• [Correction d’erreur sur un seul élément](single-item-error-remediation.md)| 
+|Comparaison des jeux de charges | Un utilisateur examine les différences entre les différents jeux de charges dans un jeu de réexamen. Un jeux de charges est une instance qui permet d’ajouter des données à un groupe de révision. Par exemple, si vous ajoutez les résultats de deux recherches différentes au même jeu de réexamen, chacun d’entre eux représenterait un jeu de charges. Pour plus d’informations, consultez la rubrique [Manage Load Sets](manage-load-sets.md). |
 |Reconstruction de conversation|Lorsqu’un utilisateur ajoute les résultats d’une recherche à un ensemble de révision de conversation, les conversations de messagerie instantanée (également appelées conversations de type *thread*) dans des services tels que Microsoft teams sont reconstruites dans un fichier PDF. Cette tâche est également déclenchée lorsqu’un utilisateur clique sur **Action > créer un fichier PDF de conversation** dans un jeu de révision. Pour plus d’informations, consultez la rubrique [Review conversations in Advanced eDiscovery](conversation-review-sets.md).
 |Conversion de documents biffés au format PDF|Une fois qu’un utilisateur a annoté un document dans un jeu de révision et rédige une partie de celui-ci, il peut choisir de convertir le document rédigé en fichier PDF. Cela permet de s’assurer que la partie biffée n’est pas visible si le document est exporté pour présentation. Pour plus d’informations, consultez [la rubrique View documents in a Review Set](annotating-and-redacting-documents.md). |
 |Estimation des résultats de recherche | Après qu’un utilisateur a créé et exécuté une nouvelle recherche (ou réexécute une recherche existante), l’outil de recherche recherche dans l’index les éléments qui correspondent à la requête de recherche et prépare une estimation qui inclut le nombre et la taille totale de tous les éléments par la recherche, ainsi que le nombre de sources de données recherchées.  Pour plus d’informations, reportez-vous [à la rubrique Collect Data for a case](collecting-data-for-ediscovery.md). | 

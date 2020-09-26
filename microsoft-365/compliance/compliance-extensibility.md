@@ -20,12 +20,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment étendre les solutions de conformité Microsoft 365 en utilisant des connecteurs de données tiers et des API Microsoft Graph.
-ms.openlocfilehash: 284125db8243b10f5c8de7e0a37c1b7284709c28
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 8eeb83013ec412ed82973b37c4c10e2250f5eaf8
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48204328"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285740"
 ---
 # <a name="microsoft-365-compliance-extensibility"></a>Extensibilité de conformité Microsoft 365
 
@@ -77,7 +77,7 @@ Les fonctionnalités de [protection contre la perte de données (DLP)](dlp-micro
 
 Ces deux API forment l’API Microsoft Graph pour teams DLP. Vous pouvez commencer en essayant l’exemple d' [application](https://github.com/microsoftgraph/csharp-webhook-with-resource-data). Pour plus d’informations sur les webhooks de messagerie Microsoft Teams, consultez la [documentation](https://docs.microsoft.com/graph/api/subscription-post-subscriptions).
 
-Pour connaître les conditions requises en matière de licences pour teams DLP, consultez la rubrique [Microsoft 365 Licensing Guidance for security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#office-365-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business).
+Pour connaître les conditions requises en matière de licences pour teams DLP, consultez la rubrique [Microsoft 365 Licensing Guidance for security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-data-loss-prevention-for-teams).
 
 ### <a name="microsoft-graph-api-for-ediscovery-preview"></a>API Microsoft Graph pour eDiscovery (aperçu)
 

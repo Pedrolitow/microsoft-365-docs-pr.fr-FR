@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment ajouter ou supprimer les membres pouvant accéder à une enquête lors de la gestion d’une enquête sur les données.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: dd57b0bd30e032f16160953e2849d908ecdfc3c5
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 5348d457cfeeeb0f23b6004aefd727a662ac3dc9
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034914"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285158"
 ---
 # <a name="add-or-remove-members-from-a-data-investigation"></a>Ajouter ou supprimer des membres d’une enquête de données
 

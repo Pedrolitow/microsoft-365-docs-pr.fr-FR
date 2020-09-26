@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'Exportez les résultats de la recherche à partir d’une recherche de contenu dans le centre de sécurité & conformité sur un ordinateur local. Les résultats par courrier électronique sont exportés en tant que fichiers PST. Le contenu de sites SharePoint et OneDrive entreprise est exporté sous forme de documents Office natifs. '
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 59b0d723c93bddd607c12172ee0fed81650a09b0
-ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
+ms.openlocfilehash: a809a5880a247c66cd96daf7ae44efea13c04704
+ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/25/2020
-ms.locfileid: "48269591"
+ms.locfileid: "48277468"
 ---
 # <a name="export-content-search-results"></a>Exporter les résultats de la recherche de contenu
 
@@ -317,7 +317,7 @@ Voici plus d’informations sur l’exportation des résultats de la recherche.
 
   ![Outil d’exportation de découverte électronique](../media/eDiscoveryExportTool.png)
 
-  Cliquez dans la zone exporter la clé, puis appuyez sur la touche `CTRL + V` pour coller la clé d’exportation (le script copie la clé d’exportation dans le presse-papiers de sorte que vous puissiez la coller dans le champ). Cliquez sur **Parcourir** pour spécifier l’emplacement où vous souhaitez télécharger les fichiers de résultats de recherche, puis démarrez le téléchargement.
+  Cliquez dans la zone exporter la clé, puis appuyez sur la touche `CTRL + V` pour coller la clé d’exportation (le script copie la clé d’exportation dans le presse-papiers). Cliquez sur **Parcourir** pour spécifier l’emplacement où vous souhaitez télécharger les fichiers, puis démarrez le téléchargement.
 
   Comme indiqué précédemment, nous vous recommandons de télécharger les résultats de recherche sur un lecteur de disque local en raison de la quantité élevée d’activité disque (lectures et écritures). Ne téléchargez pas les résultats de recherche sur un lecteur réseau mappé ou un autre emplacement réseau.
 

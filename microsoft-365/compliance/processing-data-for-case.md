@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -17,17 +17,17 @@ search.appverid:
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: Consultez la rubrique Présentation du traitement des différentes formes de données dans l’outil avancé eDiscovery dans Office 365.
-ms.openlocfilehash: 0725b38af00ec787869090c5a57f5a865fb421e7
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+description: Vue d’ensemble du traitement de différentes formes de données dans Advanced eDiscovery.
+ms.openlocfilehash: c82363a846334ccf47fc28cf0aaa25e92f2bbea9
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527404"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285240"
 ---
 # <a name="work-with-processing-errors-in-advanced-ediscovery"></a>Utiliser des erreurs de traitement dans Advanced eDiscovery
 
-Le *traitement* est le processus d’identification des fichiers, d’expansion des documents et pièces jointes incorporés, d’extraction de texte et de reconnaissance optique des fichiers d’image, ainsi que l’indexation ultérieure de ce contenu.  
+Le *traitement* est le processus d’identification des fichiers, d’expansion des documents et pièces jointes incorporés, d’extraction de texte et de reconnaissance optique de caractères (OCR)) des fichiers image et de l’indexation ultérieure de ce contenu.  
 
 Lorsque vous ajoutez des dépositaires et des sources de données autres que des dépositaires à un cas sous l’onglet **sources** , tous les éléments partiellement indexés de Microsoft 365 sont traités afin de les rendre entièrement consultables. De même, lorsque le contenu est ajouté à un jeu de révision à partir des sources de données Microsoft 365 et non-Microsoft 365, ce contenu est également traité.
 

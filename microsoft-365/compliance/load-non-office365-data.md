@@ -14,17 +14,16 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
 description: Découvrez comment utiliser la fonctionnalité d’importation de contenu autre qu’Office 365 pour télécharger des documents non Office 365 dans des preuves dans une enquête de données.
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: 9bfebc6aad9bc37d7d78ec4a0d50e6de967ac7d1
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: b6d8c2f65a1fa3a43fa2ac4bf3821cc6c1fac514
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44815481"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285370"
 ---
 # <a name="load-non-microsoft-365-data-into-evidence"></a>Charger des données non-Microsoft 365 dans la preuve
 
@@ -61,7 +60,7 @@ L’utilisation de la fonctionnalité Télécharger non-Microsoft 365, comme dé
 4. Dans l’étape **Télécharger les fichiers** , spécifiez le chemin d' **accès à l’emplacement des fichiers**, c’est ici que se trouvent les données autres que Microsoft 365 que vous prévoyez d’importer.  La définition de l’emplacement correct garantit la mise à jour correcte de la commande AzCopy.
 
 > [!NOTE]
-> Si vous n’avez pas encore installé AzCopy, vous pouvez le faire à partir de là :https://docs.microsoft.com/azure/storage/common/storage-use-azcopy
+> Si vous n’avez pas encore installé AzCopy, vous pouvez le faire à partir de là : https://docs.microsoft.com/azure/storage/common/storage-use-azcopy
 
 5. Copiez la commande prédéfinie en cliquant sur le lien **copier dans le presse-papiers** . Démarrez une invite de commandes Windows, collez la commande et appuyez sur entrée.  Les fichiers sont téléchargés vers le stockage BLOB Azure sécurisé pour l’étape suivante.
 

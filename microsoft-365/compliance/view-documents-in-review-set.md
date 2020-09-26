@@ -1,12 +1,12 @@
 ---
-title: Afficher des documents dans un jeu de révision-eDiscovery
+title: Afficher des documents dans un ensemble de révision dans Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -15,42 +15,42 @@ search.appverid:
 - MET150
 description: Choisissez le mode d’affichage du contenu dans Advanced eDiscovery, comme texte, annoter, converti ou affichage natif.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: c7527caedb06ccc6a2600a35576600452bb9c09a
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: ba66b64460a4aa9cf76641c6d84f0282195b85e9
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034286"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48286050"
 ---
-# <a name="view-documents-in-a-review-set"></a>Afficher les documents d’un jeu à réviser
+# <a name="view-documents-in-a-review-set-in-advanced-ediscovery"></a>Afficher des documents dans un ensemble de révision dans Advanced eDiscovery
 
-Advanced eDiscovery affiche le contenu par le biais de plusieurs observateurs à des fins différentes. Les différentes visionneuses peuvent être utilisées en cliquant sur n’importe quel document d’un jeu de révision. Les visionneuses actuellement fournies sont les suivantes :
+Advanced eDiscovery affiche du contenu par plusieurs visionneuses à des fins différentes. Les différents visionneuses peuvent être utilisés en cliquant sur un document dans un jeu à réviser. Les visionneuses actuellement fournies sont les suivantes :
 
 - Métadonnées de fichier
 - Affichage natif
 - Affichage de texte
-- Annoter l’affichage
+- Mode annotation
 - Vue convertie
 
 ## <a name="file-metadata"></a>Métadonnées de fichier
 
-Ce panneau peut être activé/désactivé pour afficher diverses métadonnées associées au document. Bien que la grille des résultats de la recherche puisse être personnalisée pour afficher des métadonnées spécifiques, il peut s’avérer difficile de faire défiler horizontalement les données lors de la révision des données. Le panneau métadonnées de fichier permet à un utilisateur de basculer sur une vue dans la visionneuse.
+Ce panneau peut être activé/désactivé pour afficher diverses métadonnées associées au document. Bien que la grille résultats de la recherche puisse être personnalisée pour afficher des métadonnées spécifiques, il existe des situations dans lesquelles le défilement horizontal peut être difficile lors de la révision des données. Le volet métadonnées de fichier permet à l’utilisateur de basculer sur une vue dans la visionneuse.
 
 ![Panneau métadonnées de fichier
 ](../media/Reviewimage2.png)
 
 ## <a name="native-view"></a>Affichage natif
 
-La visionneuse Native affiche l’affichage le plus enrichi d’un document. Il prend en charge des centaines de types de fichiers et permet d’afficher l’expérience la plus réelle vers Native possible. Pour les fichiers Microsoft Office, la visionneuse utilise la version Web des applications Office pour afficher du contenu tel que des commentaires de document, des formules Excel, des lignes/colonnes masquées et des notes PowerPoint.
+La visionneuse Native affiche l’affichage le plus enrichi d’un document. Elle prend en charge des centaines de types de fichiers et permet d’afficher l’expérience la plus réelle et native possible. Pour les fichiers Microsoft Office, la visionneuse utilise la version web des applications Office pour afficher du contenu tel que des commentaires de documents, des formules Excel, des lignes/colonnes masquées et des notes PowerPoint.
 
 ![Affichage natif
 ](../media/Reviewimage3.png)
 
 ## <a name="text-view"></a>Affichage de texte
 
-La visionneuse de texte fournit une vue du texte extrait d’un fichier. Elle ignore toutes les images incorporées et la mise en forme, mais est très efficace si vous essayez de comprendre le contenu rapidement. L’affichage de texte comprend également les fonctionnalités suivantes :
+La visionneuse de texte donne un aperçu du texte extrait d’un fichier. Elle ignore toute image et mise en forme incorporées, mais elle est très efficace si vous essayez de comprendre le contenu rapidement. L’affichage de texte inclut également les fonctionnalités suivantes :
 
-  - Le compteur de ligne facilite la référence à des parties spécifiques d’un document.
+  - Le compteur de ligne permet de référencer plus facilement des parties spécifiques d’un document
 
   - Mise en surbrillance des résultats de recherche, qui met en surbrillance les termes dans le document, ainsi que la barre de défilement
 
@@ -62,7 +62,7 @@ La visionneuse de texte fournit une vue du texte extrait d’un fichier. Elle ig
 ![Vue diff
 ](../media/Reviewimage5.png)
 
-## <a name="annotate-view"></a>Annoter l’affichage
+## <a name="annotate-view"></a>Mode annotation
 
 L’affichage Annoted propose des fonctionnalités qui permettent aux utilisateurs d’appliquer un balisage à un document, notamment :
 
@@ -86,7 +86,7 @@ L’affichage Annoted propose des fonctionnalités qui permettent aux utilisateu
 
   - Search : l’utilisateur peut effectuer des recherches dans un document et accéder aux différents accès au sein du document.
     
-    ![Annoter l’affichage
+    ![Mode annotation
     ](../media/Reviewimage1.png)
 
 ## <a name="dashboard-view"></a>Affichage tableau de bord 

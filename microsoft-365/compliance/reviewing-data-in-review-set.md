@@ -16,15 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
-description: ''
-ms.openlocfilehash: 9c978144df9e254ac3072e3d0d2ed4a0403fad43
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Découvrez comment examiner les données d’un cas dans un jeu de révision dans Advanced eDiscovery.
+ms.openlocfilehash: 890edc0e813f620944cea1e73bc8f9dc45132eb3
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081551"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285350"
 ---
 # <a name="review-case-data-in-advanced-ediscovery"></a>Vérifier les données de cas dans Advanced eDiscovery
 
-
-Bientôt disponible
+À venir.

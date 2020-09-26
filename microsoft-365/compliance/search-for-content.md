@@ -13,14 +13,14 @@ localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
 description: Utilisez l’outil eDiscovery de la recherche de contenu dans le centre de sécurité & conformité pour trouver rapidement le courrier électronique dans les boîtes aux lettres Exchange, les documents dans les sites SharePoint et les emplacements OneDrive, et les conversations de messagerie instantanée dans Skype entreprise.
-ms.openlocfilehash: 2b874181fdfc5bce69227acc279e12bffe70c069
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c02bcf627cec46b52ba9ff449a0d39b185ce4a0a
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632919"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285980"
 ---
-# <a name="search-for-content"></a>Recherche de contenu
+# <a name="search-for-content-using-the-content-search-tool"></a>Rechercher du contenu à l’aide de l’outil de recherche de contenu
 
 Utilisez l’outil de recherche de contenu dans le centre de sécurité & conformité pour trouver rapidement des messages électroniques dans des boîtes aux lettres Exchange, des documents dans des sites SharePoint et des emplacements OneDrive, et des conversations de messagerie instantanée dans Skype entreprise. Vous pouvez utiliser l’outil de recherche de contenu pour rechercher des courriers électroniques, des documents et des conversations de messagerie instantanée dans des outils de collaboration tels que Microsoft teams et des groupes Microsoft 365.
   
@@ -36,7 +36,7 @@ La première étape consiste à utiliser l’outil de recherche de contenu pour 
     
 - [Exécuter une recherche de liste d’ID](csv-file-for-an-id-list-content-search.md) pour rechercher des messages électroniques spécifiques 
     
-- [Rechercher des boîtes aux lettres en nuage](search-cloud-based-mailboxes-for-on-premises-users.md) pour les utilisateurs locaux dans Microsoft 365
+- [Rechercher des boîtes aux lettres en nuage ](search-cloud-based-mailboxes-for-on-premises-users.md) pour les utilisateurs locaux dans Microsoft 365
 
 - [Afficher les statistiques des mots clés](view-keyword-statistics-for-content-search.md) pour les résultats d’une recherche et affiner la requête si nécessaire 
     
@@ -79,7 +79,7 @@ La recherche de contenu est facile à utiliser, mais elle est également un outi
 
 Parfois, vous devez effectuer des tâches de recherche de contenu plus complexes, complexes et répétitives. Dans ce cas, il est plus facile et plus rapide d’utiliser des commandes PowerShell dans le centre de sécurité & Compliance Center. Pour faciliter cette opération, nous avons créé un certain nombre de scripts PowerShell de sécurité & de conformité pour vous aider à effectuer des tâches complexes liées à la recherche de contenu.
   
-- [Recherchez des dossiers de site et de boîte aux lettres spécifiques](use-content-search-for-targeted-collections.md) (appelés *collection ciblée* ) lorsque vous êtes certain que les éléments réactifs à un cas se trouvent dans ce dossier. 
+- [Recherchez des dossiers de site et de boîte aux lettres spécifiques](use-content-search-for-targeted-collections.md) (appelés  *collection ciblée*  ) lorsque vous êtes certain que les éléments réactifs à un cas se trouvent dans ce dossier. 
     
 - [Rechercher dans la boîte aux lettres et l’emplacement OneDrive](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md) une liste d’utilisateurs 
     

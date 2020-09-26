@@ -15,19 +15,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Utilisez la détection presque en double pour regrouper des documents textuellement similaires lors de l’analyse des données de cas pour Advanced eDiscovery.
+description: Utilisez la détection presque en double pour regrouper des documents textuellement similaires lors de l’analyse des données de cas dans Advanced eDiscovery.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 4c24e1b67af68dc5fccd900fc390a63e8da3c389
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 255531897a1706904005034c56cab00d0032b7f3
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036439"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48286020"
 ---
-# <a name="near-duplicate-detection"></a>Détection des quasi-duplicatas
+# <a name="near-duplicate-detection-in-advanced-ediscovery"></a>Quasi-détection des doublons dans Advanced eDiscovery
 
-Considérez un ensemble de documents à examiner dans lequel un sous-ensemble est basé sur le même modèle et qui possède essentiellement le même langage, avec quelques différences ici et là. Si un réviseur peut identifier ce sous-ensemble, passer en revue l’une d’entre elles de façon approfondie et passer en revue les différences pour le reste, il n’aurait pas manqué d’informations uniques pendant une période de temps qui aurait été utilisée pour lire tous les documents. Les groupes de détection near-duplicate regroupent des documents textuellement similaires pour vous aider à améliorer l’efficacité de votre processus de révision.
+Considérez un ensemble de documents à examiner dans lequel un sous-ensemble est basé sur le même modèle et qui possède essentiellement le même langage, avec quelques différences ici et là. Si un réviseur peut identifier ce sous-ensemble, passer en revue l’une d’entre elles de façon approfondie et passer en revue les différences pour le reste, il n’aurait pas manqué d’informations uniques pendant une période de temps qui aurait été utilisée pour lire tous les documents. La détection des quasi-doublons regroupe les documents textuellement similaires afin de renforcer l’efficacité du processus d’examen.
 
-## <a name="how-does-it-work"></a>Comment cela fonctionne-t-il ?
+## <a name="how-does-it-work"></a>Comment cela fonctionne-t-il ?
 
-Lorsque l’exécution de la détection de doublons est exécutée, le système analyse tous les documents avec du texte. Ensuite, il compare chaque document aux autres pour déterminer si leur similarité est supérieure au seuil défini. Si c’est le cas, les documents sont regroupés. Une fois que tous les documents ont été comparés et regroupés, un document de chaque groupe est marqué comme « tableau croisé dynamique »; lors de l’examen de vos documents, vous pouvez commencer par examiner un tableau croisé dynamique et passer en revue les autres documents dans le même jeu presque en double, en vous concentrant sur la différence entre le tableau croisé dynamique et le document en cours de révision.
+Lorsqu’il procède à la détection des quasi-doublons, le système analyse tous les documents contenant du texte. Il les compare ensuite afin de déterminer si leur niveau de similarité est supérieur à un seuil défini. Si c’est le cas, les documents sont regroupés. Une fois tous les documents comparés et regroupés, un document de chaque groupe est désigné comme « pivot ». Lorsque vous procédez par la suite à l’examen des documents, vous pouvez commencer par le pivot avant de vous pencher sur les autres documents du groupe de quasi-doublons, en vous attachant à chaque fois à repérer la différence entre le pivot et l’autre document examiné.

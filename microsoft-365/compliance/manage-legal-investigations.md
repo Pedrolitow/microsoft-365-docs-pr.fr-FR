@@ -17,12 +17,12 @@ ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 ms.custom:
 - seo-marvel-apr2020
 description: Utilisez des cas eDiscovery dans le centre de sécurité & conformité dans Office 365 pour gérer l’enquête légale de votre organisation.
-ms.openlocfilehash: 0e39c2cfb865e6cf649bf1ff7702d97bd29352b9
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: edc9835cdbefa611af4c0906be5d3e1d0404c635
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44815501"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285650"
 ---
 # <a name="manage-legal-investigations-in-microsoft-365"></a>Gérer les enquêtes juridiques dans Microsoft 365
 
@@ -68,7 +68,7 @@ Voici une présentation rapide du flux de travail intégré dans Advanced eDisco
 
 - [Collecter des données](collecting-data-for-ediscovery.md) pour un cas et ajouter l' [Ajouter à un jeu de révision](collecting-data-for-ediscovery.md#add-search-results-to-a-review-set) pour une nouvelle enquête
 
-- [Afficher](view-documents-in-review-set.md) des documents, des données de [requête](review-set-search.md) et des éléments de [balise](tagging-documents.md) dans un jeu de révision
+- [Afficher ](view-documents-in-review-set.md) des documents, des données de [requête](review-set-search.md) et des éléments de [balise](tagging-documents.md) dans un jeu de révision
 
 - [Analyser les données de cas](analyzing-data-in-review-set.md) avec des outils d’analyse avancés
 

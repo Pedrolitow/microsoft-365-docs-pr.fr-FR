@@ -1,5 +1,5 @@
 ---
-title: Créer des requêtes de recherche-enquêtes sur les données
+title: Créer des requêtes de recherche dans des enquêtes de données
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,20 +17,20 @@ search.appverid:
 ms.assetid: ''
 ms.custom: seo-marvel-mar2020
 description: Utilisez des mots clés et des conditions pour limiter l’étendue de la recherche lors de la recherche de données à l’aide de l’enquête de données dans Microsoft 365.
-ms.openlocfilehash: 95466d0e7c7109001fef001cc0d5bca5b6d658ed
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: b2d77ef23e7427fd5f770a27166dc571f853191d
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034112"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285760"
 ---
-# <a name="build-search-queries"></a>Créer des requêtes de recherche
+# <a name="build-search-queries-in-data-investigations-preview"></a>Créer des requêtes de recherche dans des enquêtes de données (aperçu)
 
-Lors de la création de requêtes de recherche, vous pouvez utiliser des mots clés pour rechercher du contenu et des conditions spécifiques afin de limiter l’étendue de la recherche afin de renvoyer les éléments les plus pertinents pour votre enquête.
+Lors de la création de requêtes de recherche, vous pouvez utiliser des mots clés pour rechercher du contenu et des conditions spécifiques pour restreindre l’étendue de la recherche afin de renvoyer les éléments pertinents pour votre enquête.
 
 ![Utiliser des mots clés et des conditions pour affiner les résultats d’une recherche](../media/SearchQueryBox.png)
 
-## <a name="keyword-searches"></a>Recherches par Mots clés
+## <a name="keyword-searches"></a>Recherches par mots clés
 
 Tapez une requête de mot clé dans la zone **Mots clés** de la requête de recherche. Vous pouvez spécifier des mots clés, des propriétés de message électronique, tels que des dates d’envoi et de réception, ou des propriétés de document, telles que des noms de fichiers ou la date de la dernière modification d’un document. Vous pouvez utiliser des requêtes plus complexes qui utilisent un opérateur booléen, tels que **ET**, **OU**, **PAS**, et **PRÈS**. Vous pouvez également rechercher des informations sensibles, telles que des numéros de sécurité sociale, dans des documents dans SharePoint et OneDrive (pas dans les messages électroniques) ou Rechercher des documents qui ont été partagés en externe. Si vous laissez la zone **Mots clés** vide, tout le contenu situé dans les emplacements de contenu spécifiés est inclus dans les résultats de la recherche.
     

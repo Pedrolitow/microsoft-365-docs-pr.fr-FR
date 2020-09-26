@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment utiliser des outils d’analyse tels que la détection des doublons, le Threading de messagerie électronique et les thèmes pour accélérer vos analyses.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: e7c5103adabadf88028351f0314bcdfaa2cd4d0f
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 7a97f5ce7aefdd230a3c7a671155a7b73b2e8e19
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035846"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285340"
 ---
 # <a name="run-analytics-to-investigate-faster"></a>Exécuter les données d’analyse pour investiguer plus rapidement
 

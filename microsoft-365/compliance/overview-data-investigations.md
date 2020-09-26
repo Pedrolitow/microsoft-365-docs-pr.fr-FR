@@ -18,12 +18,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-mar2020
 description: Dans cet article, vous découvrirez l’outil des enquêtes de données (aperçu) dans Microsoft 365. L’outil d’analyse des données vous permet d’évaluer et de résoudre les fuites de données.
-ms.openlocfilehash: 6975d554e939481c6ee1c32ec4e76bb25c7bf36c
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 21241ad36278bc75a8363b9aeefeaf4caec783b5
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036047"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285990"
 ---
 # <a name="overview-of-data-investigations-preview-in-microsoft-365"></a>Vue d’ensemble des enquêtes de données (aperçu) dans Microsoft 365
 
@@ -49,7 +49,7 @@ Utilisez l’onglet **recherches** pour créer des recherches afin de trouver le
 
 Utilisez l’onglet **preuve** pour examiner les données que vous avez collectées à partir du service actif, qui dans ce cas est Office 365. Les données de l’ensemble de preuves sont un instantané des résultats de la recherche que vous avez collectés. Lorsque vous ajoutez des résultats de recherche en tant que preuve, un processus est déclenché pour extraire des fichiers, des métadonnées et du texte. Une fois le processus terminé, l’outil d’investigation de données génère un nouvel index de toutes les données et l’ajoute à un ensemble de preuves. Pour toutes les analyses sensibles au temps, cela vous permet de contenir rapidement l’environnement en supprimant les données situées dans les emplacements de contenu d’origine (dans le service réel) lors de l’enquête sur les preuves que vous avez collectées dans un environnement en quarantaine. Une fois les preuves collectées, vous pouvez exécuter davantage de requêtes pour affiner les données par plage de temps, types de fichiers, propriétaires de données et autres types de conditions. Par exemple, à l’aide de l’auteur, de l’expéditeur et des conditions de destinataire, vous pouvez identifier rapidement les personnes qui étaient impliquées dans le déversement des données et si l’une des données propagées a été partagée avec des personnes extérieures à votre organisation.
 
-Vous pouvez également exécuter l’analyse avancée sur les preuves que vous collectez. Cela peut vous fournir des thèmes généraux et organiser des preuves par des threads de messagerie, des doublons exacts et des doublons pour faciliter votre enquête. Vous pouvez passer en revue les documents dans l’affichage de texte extrait ou dans le format de fichier natif, et les baliser avec les résultats de l’enquête. Pour plus d’informations, reportez-vous aux rubriques suivantes :
+Vous pouvez également exécuter l’analyse avancée sur les preuves que vous collectez. Cela peut vous fournir des thèmes généraux et organiser des preuves par des threads de messagerie, des doublons exacts et des doublons pour faciliter votre enquête. Vous pouvez passer en revue les documents dans l’affichage de texte extrait ou dans le format de fichier natif, et les baliser avec les résultats de l’enquête. Si vous souhaitez en savoir plus, voir : 
 
   - [Consulter les données dans des preuves](review-data-in-evidence.md)
 

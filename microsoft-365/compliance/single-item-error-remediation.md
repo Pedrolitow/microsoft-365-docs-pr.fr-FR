@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Vous pouvez corriger une erreur de traitement dans un document dans un jeu de réexamen dans Advanced eDiscovery sans avoir à suivre le processus de correction des erreurs en bloc.
-ms.openlocfilehash: 3c50f9dcd1448ee36edd0e82e5b2c2879c11d6b5
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: c318148900d891304ebcb9b4a88abfe52f43c05e
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069657"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285840"
 ---
-# <a name="single-item-error-remediation"></a>Correction d’erreur sur élément unique
+# <a name="single-item-error-remediation-in-advanced-ediscovery"></a>Correction d’erreur sur un seul élément dans Advanced eDiscovery
 
 La correction des erreurs permet aux utilisateurs avancés de eDiscovery de corriger les problèmes de données qui empêchent Advanced eDiscovery de traiter correctement le contenu. Par exemple, les fichiers protégés par mot de passe ne peuvent pas être traités car ils sont verrouillés ou chiffrés. Auparavant, vous pouviez uniquement corriger les erreurs en bloc à l’aide de [ce flux de travail](error-remediation-when-processing-data-in-advanced-ediscovery.md). Toutefois, il n’est pas judicieux de corriger les erreurs dans plusieurs fichiers lorsque vous ne savez pas si un de ces fichiers répond au cas que vous êtes en train d’examiner. Il n’est pas non plus judicieux de corriger les erreurs avant que vous n’ayez eu le temps de passer en revue les métadonnées de fichier (telles que l’emplacement des fichiers ou les personnes ayant accès) pour vous aider à prendre des décisions optimales concernant la réactivité. Une nouvelle fonctionnalité appelée *Single Item Error* revisions donne aux gestionnaires de découverte électronique la possibilité d’afficher les métadonnées des fichiers avec une erreur de traitement et, si nécessaire, de corriger directement l’erreur dans l’ensemble de révision. Cet article explique comment identifier, ignorer et corriger les fichiers avec des erreurs de traitement dans un jeu de révision.
 
@@ -53,7 +53,7 @@ Parfois, vous pouvez être amené à corriger une erreur de traitement dans les 
 
 Pour corriger un document unique, procédez comme suit :
 
-1. Cliquez sur **Télécharger** > l'**original téléchargement** pour télécharger une copie du fichier sur un ordinateur local.
+1. Cliquez sur **Télécharger**  >  l'**original téléchargement** pour télécharger une copie du fichier sur un ordinateur local.
 
    ![Télécharger le document avec l’erreur de traitement](../media/SIERimage5.png)
 
