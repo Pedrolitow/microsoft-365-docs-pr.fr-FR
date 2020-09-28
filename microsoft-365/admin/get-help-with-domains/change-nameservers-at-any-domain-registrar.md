@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: Découvrez comment ajouter et configurer votre domaine dans Microsoft 365 afin que vos services de messagerie électronique et Skype entreprise Online utilisent votre propre nom de domaine.
-ms.openlocfilehash: 6a99ee90db3bb71038309175b32bd4d96097aa5a
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 34e4db5748f9d4c1f1864db09071374bcec73e1d
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662231"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295057"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>Modifier les serveurs de noms pour configurer Microsoft 365 avec n’importe quel bureau d’enregistrement de domaines
 
@@ -122,8 +122,8 @@ Pour changer vous-même les serveurs de noms de votre domaine sur le site web de
 |:-----|:-----|
 |Premier serveur de noms  <br/> |ns1.bdm.microsoftonline.com  <br/> |
 |Deuxième serveur de noms  <br/> |ns2.bdm.microsoftonline.com  <br/> |
-|Troisième serveur de noms  <br/> |ns2.bdm.microsoftonline.com  <br/> |
-|Quatrième serveur de noms  <br/> |ns2.bdm.microsoftonline.com  <br/> |
+|Troisième serveur de noms  <br/> |ns3.bdm.microsoftonline.com  <br/> |
+|Quatrième serveur de noms  <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
    > [!TIP]
    > Il est préférable d’ajouter les quatre enregistrements, mais si votre serveur d’inscriptions ne prend en charge que deux, ajoutez **NS1.BDM.microsoftonline.com** et **ns2.BDM.microsoftonline.com**. 

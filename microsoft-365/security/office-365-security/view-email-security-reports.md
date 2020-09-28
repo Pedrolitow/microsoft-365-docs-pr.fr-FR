@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez comment rechercher et utiliser des rapports de sécurité de messagerie pour votre organisation. Les rapports de sécurité de messagerie sont disponibles dans le centre de sécurité & conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 588c30ca07684636661c7946b2418b75574c8cbd
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: b26dd18754a96d1879a2f57ae9742ae1d1a36ce4
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199216"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295537"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Afficher les rapports de sécurité de courrier dans le centre de sécurité et conformité
 
@@ -364,8 +364,13 @@ Les vues disponibles sont les suivantes :
 Si vous cliquez sur **filtres**, vous pouvez modifier le rapport avec les filtres suivants :
 
 - **Date de début** et **Date de fin**
-- Valeur de détection
-- **Protégé par** (Office 365 ATP uniquement) : **ATP** ou **EOP**. Notez que cette propriété filtrable n’est pas disponible dans **afficher les données par : contenu \> malveillant**.
+- **Détection**
+- **Protégé par**: **ATP** ou **EOP**
+- **Tag**: Filter by tag pour renvoyer des utilisateurs ou des groupes auxquels une balise spécifique a été appliquée. Pour plus d’informations sur les balises utilisateur, voir [User Tags](https://docs.microsoft.com/microsoft-365/security/office-365-security/user-tags?view=o365-worldwide).
+- **Domaine**
+
+> [!NOTE]
+> **Protégé par**, la **balise** et le **domaine** sont Office 365 ATP uniquement. Ces propriétés filtrables ne sont pas disponibles dans **View Data by : Content \> Malware**.
 
 ### <a name="details-table-view-for-the-threat-protection-status-report"></a>Vue de la table Détails pour le rapport d’état de protection contre les menaces
 
@@ -378,7 +383,12 @@ Si vous cliquez sur **afficher les détails table**, les informations affichées
   - **Demandé par**
   - **Nom du programme malveillant**
 
-- **Afficher les données par : vue d’ensemble**: aucun bouton **afficher la table des détails** n’est disponible.
+Si vous cliquez sur **filtres** dans cet affichage, vous pouvez modifier le rapport avec les filtres suivants :
+
+- **Date de début** et **Date de fin**
+- **Détection**
+
+**Afficher les données par : vue d’ensemble**: aucun bouton **afficher la table des détails** n’est disponible.
 
 - Tous les autres graphiques :
 
@@ -389,12 +399,16 @@ Si vous cliquez sur **afficher les détails table**, les informations affichées
   - **Détectés par**
   - **État de remise**
   - **Source de compromission**
+  - **Tags**
 
 Si vous cliquez sur **filtres**, vous pouvez modifier le rapport avec les filtres suivants :
 
 - **Date de début** et **Date de fin**
-- Valeur de détection
-- **Protégé par** (Office 365 ATP uniquement) : **ATP** ou **EOP**. Notez que cette propriété filtrable n’est pas disponible dans **afficher les données par : contenu \> malveillant**.
+- **Détection**
+- **Protégé par** (Office 365 ATP uniquement) : **ATP** ou **EOP**
+- **Tag**: Filter by tag pour renvoyer des utilisateurs ou des groupes auxquels une balise spécifique a été appliquée. Pour plus d’informations sur les balises utilisateur, voir [User Tags](https://docs.microsoft.com/microsoft-365/security/office-365-security/user-tags?view=o365-worldwide).
+- **Domaine**
+- **Destinataires** (Notez que cette propriété filtrable est disponible uniquement dans l’affichage Table des détails)
 
 ## <a name="top-malware-report"></a>Premier rapport de programmes malveillants
 

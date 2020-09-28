@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Outil de test de connectivité réseau Microsoft 365 (aperçu)
-ms.openlocfilehash: 72f42a71ec44d165a24187edaf03aa62d330479b
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 2be48f42c8529334b55b311e6f202d9f3b25ff9e
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200816"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295525"
 ---
 # <a name="microsoft-365-network-connectivity-test-tool-preview"></a>Outil de test de connectivité réseau Microsoft 365 (aperçu)
 
@@ -193,7 +193,7 @@ Pendant le téléchargement de 15 Mo, nous Mesurez la latence TCP sur la porte d
 
 Indique le nom DNS et l’adresse IP du serveur de portes frontales du service SharePoint auquel vous étiez dirigé. Il est fourni à des fins d’information uniquement et aucune analyse réseau n’est associée.
 
-### <a name="microsoft-teams"></a>Microsoft Teams
+### <a name="microsoft-teams"></a>Microsoft Teams
 
 Cette section présente les résultats des tests liés à Microsoft Teams.
 
@@ -205,7 +205,7 @@ Cela permet de tester la connectivité UDP au porte-tout du service Microsoft Te
 
 Indique la perte de paquets UDP mesurée dans un appel audio de test de 10 secondes entre le client et le porte-tout du service Microsoft Teams. Cette limite doit être inférieure à **1,00%** pour un passe.
 
-### <a name="latency"></a>Latence
+#### <a name="latency"></a>Latence
 
 Indique la latence UDP mesurée, qui doit être inférieure à **100 ms**.
 

@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Découvrez comment déplacer votre entreprise vers Microsoft 365 Business Premium à partir d’Office 365 E3.
-ms.openlocfilehash: d72f0c52a745ff973868b6fdaa95efa1a37a3dbd
-ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
+ms.openlocfilehash: f3f3894a2a5cb69f9f91825d89db4f4b857fac5c
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44785927"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295287"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>Migration à partir d’Office 365 E3 vers Microsoft 365 Business Premium 
 
@@ -42,7 +42,7 @@ Ce tableau présente les différences entre Microsoft 365 Business Premium et Of
 | Fonctionnalité    | Prise en charge dans Microsoft 365 Business Premium    | Prise en charge dans Office 365 E3 | 
 |:-------|:-----|:-----|
 | **Sur site**        | | | 
-| Applications Office<sup>1</sup>    | Applications Microsoft 365 pour les entreprises    | Applications Microsoft 365 pour les grandes entreprises | 
+| Applications Office<sup>1</sup>    | Applications Microsoft 365 pour les entreprises    | Applications Microsoft 365 for entreprise | 
 | **Applications de productivité sur le Cloud**        | | | 
 | Exchange Online et Outlook    | limite de stockage de 50 Go par boîte aux lettres et archivage Exchange Online illimité    | limite de stockage de 100 Go par boîte aux lettres et archivage Exchange Online illimité | 
 | Teams    | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus dans Office 365 E3](../media/check-mark.png) | 
@@ -114,6 +114,11 @@ Vous pouvez également effectuer ces étapes dans la page périphériques :
   - Consultez la rubrique [configurer des appareils Windows pour les utilisateurs de Microsoft 365 Business Premium](set-up-windows-devices.md) pour connaître les étapes des appareils Windows. 
     
   - Consultez la rubrique [configurer des appareils mobiles pour les utilisateurs de Microsoft 365 Business Premium](set-up-mobile-devices.md) pour connaître les étapes des téléphones Android et des iPhone. 
+  
+### <a name="mailbox-size"></a>Taille de la boîte aux lettres
+
+Microsoft 365 Business Premium dispose d’une limite de stockage de 50 Go car elle utilise Exchange Online plan 1. Lors de la migration vers Microsoft 365 Business Premium, si l’un de vos utilisateurs dépasse 50 Go de stockage de boîte aux lettres, il est recommandé d’attribuer à cet utilisateur un plan Exchange Online 2 et de supprimer Exchange Online plan 1 car il n’est pas possible de l’attribuer.
+
 
 ### <a name="threat-protection"></a>Protection contre les menaces
 

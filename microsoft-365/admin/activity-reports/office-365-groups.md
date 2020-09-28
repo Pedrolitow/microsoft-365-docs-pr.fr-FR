@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
 description: Obtenez un rapport des groupes Microsoft 365 sur les groupes et leurs activités.
-ms.openlocfilehash: 1d329efa4fe7cdf12b6c7452b6480d237fb3d5c1
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: b45582388103e843e2893cfceb9aa1106cb9ce76
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948987"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295093"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>Rapports Microsoft 365 dans le centre d’administration-groupes Microsoft 365
 
@@ -37,8 +37,8 @@ Le tableau de bord **rapports** Microsoft 365 affiche une vue d’ensemble de l�
 
 1. Dans le centre d’administration, accédez à la page **Rapports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Utilisation</a>.
 
-    
-2. Dans la liste déroulante **Sélectionner un rapport** , sélectionnez activité des groupes **Office 365** \> **Groups activity**.
+2. Dans les options, sélectionnez **afficher plus** sous **utilisateurs actifs-services Microsoft 365**.
+3. Dans la liste déroulante **Sélectionner un rapport** , sélectionnez activité des groupes **Office 365** \> **Groups activity**.
   
 ## <a name="interpret-the-groups-report"></a>Interpréter le rapport de groupes
 
@@ -61,4 +61,3 @@ Vous pouvez obtenir un aperçu de l’activité de groupes en consultant les gra
 |a4  <br/> |Vous pouvez également exporter les données du rapport dans un fichier. csv Excel en sélectionnant le lien **Exporter** . Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter.  <br/> |
 |||
    
-
