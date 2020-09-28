@@ -17,16 +17,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Instructions pour créer et publier des étiquettes de rétention afin de pouvoir les appliquer dans les applications afin de conserver les éléments dont vous avez besoin et de supprimer ceux qui sont inutiles
-ms.openlocfilehash: 2394ee4534ef837488503aae2558964924b2de6b
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: 478a0d9952d8e8e33ef88926ba2415276338c193
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47816913"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198513"
 ---
 # <a name="create-retention-labels-and-apply-them-in-apps"></a>Créer des étiquettes de rétention et les appliquer dans les applications
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](https://aka.ms/ComplianceSD).*
+
+> [!NOTE]
+> Ce scénario est pris en charge pour toutes les configurations d’étiquette de rétention, y compris [les enregistrements réglementaires](records-management.md#records).
 
 Utilisez les informations suivantes pour vous aider à créer et publier des [étiquettes de rétention](retention.md), puis à les appliquer aux documents et messages électroniques.
 
@@ -68,7 +71,7 @@ L’emplacement dans lequel vous créez et configurez vos étiquettes de rétent
     
     - Pour plus d’informations sur les descripteurs de plan de fichier, consultez [Utiliser le plan de gestion des fichiers pour gérer les étiquettes de rétention](file-plan-manager.md)
     
-    - Pour utiliser l’étiquette de rétention afin de déclarer un [enregistrement](records-management.md#records), activez l’option **Marquer les éléments comme enregistrement**.
+    - Pour utiliser l’étiquette de rétention pour déclarer des enregistrements, sélectionnez **Marquer les éléments comme enregistrements**, ou **Marquer les éléments comme enregistrements réglementaires**. Pour plus d’information, voir [Configuration d’étiquettes de rétention pour déclarer des enregistrements](declare-records.md#configuring-retention-labels-to-declare-records).
 
 3. Une fois l’étiquette créée, les options permettant de la publier s’affichent. Appliquez automatiquement l’étiquette, ou enregistrez-la simplement : sélectionnez **Enregistrez simplement l’étiquette pour l'instant**, puis sélectionnez **Terminé**.
 
