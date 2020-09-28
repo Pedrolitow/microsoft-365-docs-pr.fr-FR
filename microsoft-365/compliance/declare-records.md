@@ -17,43 +17,64 @@ search.appverid:
 - MOE150
 - MET150
 description: Déclarer des enregistrements à l’aide d’étiquettes de rétention.
-ms.openlocfilehash: 841c5197addff704016e344ba7ae44355c872f72
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: 490f81ba9c1d2d291539107650ec3c3f5938eba8
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47817100"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198922"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>Déclarer des enregistrements à l’aide d’étiquettes de rétention
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](https://aka.ms/ComplianceSD).*
 
-Pour déclarer des documents et courriers électroniques comme enregistrement, utilisez des [étiquettes de rétention](retention.md#retention-labels) qui servent à marquer des éléments comme enregistrement. Vous pouvez soit publier ces étiquettes pour permettre aux utilisateurs et aux administrateurs de les appliquer manuellement au contenu, soit appliquer automatiquement ces étiquettes au contenu que vous voulez marquer comme enregistrement.
+Pour déclarer des documents et courriers électroniques comme [enregistrements](records-management.md#records), utilisez [des étiquettes de rétention](retention.md#retention-labels) qui servent à marquer du contenu comme **enregistrement** ou **enregistrement réglementaire**.
+
+> [!NOTE]
+> Les enregistrements réglementaires sont actuellement en préversion.
+
+Si vous n’êtes pas certain d’utiliser un enregistrement ou un enregistrement réglementaire, voir [comparer les restrictions relatives aux actions autorisées ou bloquées](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked). Si vous avez besoin d’utiliser des enregistrements réglementaires, vous devez commencer par exécuter une commande PowerShell, comme décrit dans la section suivante.
+
+Vous pouvez soit publier ces étiquettes dans une stratégie d’étiquette de rétention pour permettre aux utilisateurs et aux administrateurs de les appliquer au contenu, ou pour les étiquettes qui marquent les éléments comme enregistrements ( mais pas enregistrements réglementaire) appliquer automatiquement ces étiquettes au contenu que vous voulez marquer comme enregistrement.
+
+## <a name="how-to-display-the-option-to-mark-content-as-a-regulatory-record"></a>Comment afficher l’option de marquage du contenu en tant qu’enregistrement réglementaire
+
+>[!NOTE] 
+> La procédure suivante est une action pouvant être audité, à l’aide de la journalisation **option d’enregistrement réglementaire activée pour les étiquettes de rétention** dans la section du journal d’audit[Stratégie de rétention et activités des étiquettes de rétention](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities).
+
+Par défaut, l’option d’étiquette de rétention permettant de marquer du contenu en tant qu’enregistrement de réglementation n’apparaît pas dans l’assistant de l’étiquette de rétention. Pour afficher cette option, vous devez commencer par exécuter une commande PowerShell:
+
+1. [Connectez-vous au PowerShell du Centre de sécurité et de Conformité Office 365](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+
+2. Exécutez la l’applet commande suivant :
+    
+    ```powershell
+    Set-RegulatoryComplianceUI -Enabled $true
+    ````
+    Il n’y a pas d’invite à confirmer et le paramètre prend effet immédiatement.
+
+Si vous changez d’avis sur la façon de voir cette option dans l’assistant étiquette de rétention, vous pouvez la masquer à nouveau en exécutant le même applet de commande avec la **valeur** faux: `Set-RegulatoryComplianceUI -Enabled $false` 
 
 ## <a name="configuring-retention-labels-to-declare-records"></a>Configuration d’étiquettes de rétention pour déclarer des enregistrements
 
-Lors de la création ou la configuration d’une étiquette de rétention, sélectionnez l'option permettant de marquer le contenu comme enregistrement.
+Lorsque vous créez ou modifiez une étiquette de rétention à partir de la solution **Gestion des Enregistrements** dans le centre de conformité Microsoft 365, vous avez la possibilité de marquer des éléments comme enregistrement. Si vous avez exécuté la commande PowerShell à partir de la section précédente, vous pouvez marquer les éléments comme un enregistrement réglementaire de manière alternative.
 
->[!NOTE] 
-> L’option de marquage du contenu en tant qu’enregistrement n’est pas disponible lorsque vous créez ou configurez des étiquettes de rétention depuis **Gouvernance des informations** dans le centre de conformité Microsoft 365. Au lieu de cela, vous devez utiliser**Gestion des enregistrements**.
+Par exemple :
 
-Créer un nouveau label de conservation qui marque le contenu comme un enregistrement :
+![Configurer une étiquette de rétention pour marquer le contenu en tant qu’enregistrement ou réglementation](../media/recordversioning6.png)
 
-1. Dans le [centre de conformité Microsoft 365](https://compliance.microsoft.com), accédez à **Gestion des enregistrements** \> **Plan de gestion de fichiers**. Dans la page **plan de fichiers**, cliquez **créer une étiquette**.
+En utilisant cette étiquette de rétention, vous pouvez désormais l’appliquer aux documents SharePoint ou OneDrive et aux messages électroniques Exchange, comme souhaité. 
 
-2. Dans la page **Définir les paramètres de rétention** de l’assistant, choisissez l’option permettant de marquer des éléments comme enregistrements :
-    
-   ![Sélectionnez paramètre de rétention pour marquer des éléments comme enregistrement](../media/recordversioning6.png)
+Pour instructions complètes :
 
-3. Appliquez l’étiquette de rétention aux documents SharePoint ou OneDrive et aux messages électroniques Exchange, le cas échéant. Pour obtenir des instructions :
-    
-    - [Créer des étiquettes de rétention et les appliquer dans les applications](create-apply-retention-labels.md)
-    
-    - [Appliquer automatiquement une étiquette de rétention au contenu](apply-retention-labels-automatically.md)
+- [Créer des étiquettes de rétention et les appliquer dans les applications](create-apply-retention-labels.md)
+
+- [Appliquer une étiquette de rétention au contenu automatiquement](apply-retention-labels-automatically.md) (non pris en charge pour les enregistrements réglementaires)
+
 
 ## <a name="applying-the-configured-retention-label-to-content"></a>Application de l’étiquette de rétention configurée au contenu
 
-Lorsque des étiquettes de rétention qui marquent le contenu en tant qu’enregistrement sont mises à la disposition des utilisateurs pour qu’ils les appliquent dans les applications :
+Lorsque des étiquettes de rétention qui marquent le contenu en tant qu’enregistrement ou enregistrement réglementaire sont mises à la disposition des utilisateurs pour qu’ils les appliquent dans les applications:
 
 - Pour Exchange, tout utilisateur disposant d’un accès en écriture à la boîte aux lettres peut appliquer ces étiquettes. 
 - Pour SharePoint et OneDrive, tous les utilisateurs du groupe Membres par défaut (niveau d’autorisation Collaboration) peuvent appliquer ces étiquettes.

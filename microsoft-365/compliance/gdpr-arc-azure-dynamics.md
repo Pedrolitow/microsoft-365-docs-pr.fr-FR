@@ -17,12 +17,12 @@ ms.collection:
 hideEdit: true
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: eb2d4ca52acce338e3afb31852409d441e52cfe0
-ms.sourcegitcommit: eb3c30d53a5434d8bad7c8f48a5612f3e2675945
+ms.openlocfilehash: 2083b7b6ed208f5681f4e19c276c1d7425999854
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422462"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201521"
 ---
 # <a name="azure-and-dynamics-365-accountability-readiness-checklist-for-the-gdpr"></a>Azure et Dynamics 365 : liste de contrôle de l'état de préparation à la responsabilité pour le GDPR
 
@@ -33,7 +33,7 @@ Cette liste de contrôle de l'état de préparation à la responsabilité fourni
 - [ISO/IEC 27701](https://shop.bsigroup.com/ProductDetail/?pid=000000000030351736) pour les exigences techniques en matière de sécurité.
 - [ISO/IEC 27001](https://shop.bsigroup.com/ProductDetail?pid=000000000030347472) pour les exigences de gestion en matière de protection de la vie privée.
 
-Vous pouvez gérer les éléments de cette liste de contrôle avec le score de conformité [[16](gdpr-arc-Azure.md#16)]en vous référant à une identification de contrôle et à un titre de contrôle sous « Contrôles gérés par le client » dans la tuile GDPR. Cette structure de contrôle est également utilisée pour organiser la présentation des contrôles internes que Microsoft Azure et Dynamics 365 mettent en œuvre pour soutenir la GDPR, que vous pouvez télécharger sur [ le portail Service de confiance ](https://servicetrust.microsoft.com/ViewPage/TrustDocuments).
+Vous pouvez gérer les éléments de cette liste de vérification à l’aide du Gestionnaire de Conformité [[16](gdpr-arc-Azure.md#16)] en indiquant l’ID de contrôle et le Titre de Contrôle sous Contrôles Gérés par le Client dans la vignette RGPD. Cette structure de contrôle est également utilisée pour organiser la présentation des contrôles internes que Microsoft Azure et Dynamics 365 mettent en œuvre pour soutenir la GDPR, que vous pouvez télécharger sur [ le portail Service de confiance ](https://servicetrust.microsoft.com/ViewPage/TrustDocuments).
 
 Cette structure de contrôle est également utilisée pour organiser la présentation des [contrôles internes que Microsoft Office 365 implémente pour respecter le RGPD](https://aka.ms/gdprcontrols).
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez une stratégie de rétention pour garder un contrôle efficace sur le contenu que les utilisateurs génèrent par courriers électroniques, documents et conversations. Conservez ce que vous voulez et supprimez le reste.
-ms.openlocfilehash: 8663da0a93bb4781af747d810200d4a2a777acb4
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: f9c8ff4287f0970f8571d3ced7d612515b03c08e
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948172"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198491"
 ---
 # <a name="create-and-configure-retention-policies"></a>Créer et configurer des stratégies de rétention
 
@@ -50,11 +50,14 @@ Bien qu’une stratégie de rétention puisse prendre en charge plusieurs emplac
 - Dossiers publics Exchange
 - Messages du canal Teams
 - Conversations Teams
+- Messages communautaires Yammer
+- Messages privés Yammer
 
-Lorsque vous sélectionnez l’un des emplacements Teams lors de la création d’une stratégie de rétention, les autres emplacements sont automatiquement exclus. Par conséquent, les instructions à suivre varient selon que vous devez inclure ou non les emplacements Teams :
+Lorsque vous sélectionnez l’emplacement Teams ou Yammer lors de la création d’une stratégie de rétention, les autres emplacements sont automatiquement exclus. Par conséquent, les instructions à suivre varient selon que vous devez inclure ou non l’emplacement Teams ou Yammer:
 
 - [Instructions relatives à une stratégie de rétention pour les emplacements Teams](#retention-policy-for-teams-locations)
-- [Instructions relatives à une stratégie de rétention pour les emplacements autres que Teams](#retention-policy-for-locations-other-than-teams)
+- [Instructions relatives à une stratégie de rétention pour les emplacements Yammer](#retention-policy-for-yammer-locations)
+- [Instructions relatives à une stratégie de rétention pour les emplacements autres que Teams et Yammer](#retention-policy-for-locations-other-than-teams-and-yammer)
 
 Lorsque vous avez plusieurs stratégies de rétention et que vous utilisez également des étiquettes de rétention, voir [Principes de rétention et priorité](retention.md#the-principles-of-retention-or-what-takes-precedence) pour comprendre le résultat lorsque plusieurs paramètres de rétention s’appliquent au même contenu.
 
@@ -93,7 +96,56 @@ Si vous possédez des sites d’équipe qui ne sont pas connectés à un groupe 
 
 Il est possible qu’une stratégie de conservation appliquée aux groupes Microsoft 365, sites SharePoint ou comptes OneDrive supprime un fichier référencé dans une conversation ou un message de canal Teams avant la suppression de ces messages. Dans ce scénario, le fichier s’affiche encore dans le message Teams, mais lorsque les utilisateurs sélectionnent le fichier, un message d’erreur « fichier introuvable » s’affiche. Ce comportement n’est pas spécifique aux stratégies de rétention et peut également se produire si un utilisateur supprime manuellement un fichier à partir de SharePoint ou de OneDrive.
 
-### <a name="retention-policy-for-locations-other-than-teams"></a>Stratégie de rétention pour les emplacements autres que Teams
+### <a name="retention-policy-for-yammer-locations"></a>Stratégie de rétention pour les emplacements Yammer
+
+> [!NOTE]
+> Les stratégies de rétention pour Yammer sont déployées en version préliminaire. Si vous ne voyez pas encore les nouveaux emplacements pour Yammer, réessayez dans quelques jours.
+>
+> Pour utiliser cette fonctionnalité, votre réseau Yammer doit être [Mode Natif](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode), et non Mode Hybride.
+
+1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com/), sélectionnez **Stratégies** > **Retention**.
+
+2. Sélectionnez **Nouvelle stratégie de rétention** pour créer une stratégie de rétention.
+
+3. Sur la page **Indiquez si vous souhaitez conserver le contenu et/ou le supprimer** de l’assistant, spécifiez les options de configuration pour la conservation et la suppression du contenu. 
+    
+    Vous pouvez créer une stratégie de rétention qui conserve uniquement le contenu sans le supprimer, conserve puis supprime le contenu après une période donnée, ou supprime simplement le contenu après une période donnée. Si vous souhaitez en savoir plus, voir [Paramètres pour la conservation et la suppression du contenu](#settings-for-retaining-and-deleting-content) sur cette page.
+    
+    Ne sélectionnez pas **Utiliser les paramètres de rétention avancée**, car cette option n’est pas prise en charge pour les emplacements Yammer. 
+
+4. Sur la page **Choisir les emplacements**, cliquez sur **Me laisser choisir des emplacements spécifiques**. Basculez ensuite sur l’un ou les deux emplacements de Yammer: **message de communauté Yammer** et **messages privés Yammer**.
+    
+    Par défaut, tous les utilisateurs et communautés sont sélectionnés, mais vous pouvez les affiner en spécifiant les groupes et les utilisateurs à inclure ou à exclure.
+    
+    Pour les messages privés Yammer: 
+    - Si vous conservez la valeur par défaut à **Tous**, les utilisateurs invités B2B Azure ne sont pas inclus. 
+    - Vous pouvez appliquer une stratégie de rétention à des utilisateurs externes si vous sélectionnez **Choisir Utilisateur**.
+
+5. Terminez l’assistant pour enregistrer vos paramètres.
+
+Pour en savoir plus sur le fonctionnement des stratégies de rétention pour Yammer, consultez la page [Découvrir les stratégies de rétention pour Yammer](retention-policies-yammer.md).
+
+#### <a name="additional-retention-policies-needed-to-support-yammer"></a>Stratégies de rétention supplémentaires requises pour la prise en charge de Yammer
+
+Yammer est bien plus que des messages de la communauté et des messages privés. Pour conserver et supprimer des courriers électroniques pour votre réseau Yammer, configurez une stratégie de rétention supplémentaire qui inclut les groupes Microsoft 365 utilisés pour Yammer, à l’aide de l'emplacement **groupes Office 365**. 
+
+Pour retenir et supprimer les fichiers qui sont stockés dans Yammer, vous avez besoin d’une stratégie de rétention qui inclut les emplacements **Des sites SharePoint** ou **Des comptes OneDrive**:
+
+- Les fichiers partagés dans les messages privés sont stockés sur le compte OneDrive de l’utilisateur qui a partagé le fichier. 
+
+- Les fichiers chargés dans les communautés sont stockés sur le site SharePoint pour la communauté Yammer.
+
+Il est possible qu’une stratégie de rétention appliquée à des comptes SharePoint ou OneDrive supprime un fichier référencé dans un message Yammer avant la suppression de ces messages. Dans ce scénario, le fichier s’affiche encore dans le message Yammer, mais lorsque les utilisateurs sélectionnent le fichier, un message d’erreur « fichier introuvable » s’affiche. Ce comportement n’est pas spécifique aux stratégies de rétention et peut également se produire si un utilisateur supprime manuellement un fichier à partir de SharePoint ou de OneDrive.
+
+### <a name="retention-policy-for-locations-other-than-teams-and-yammer"></a>Stratégie de rétention pour les emplacements autres que Teams et Yammer
+
+Utilisez les instructions suivantes pour les stratégies de rétention qui s’appliquent ces services:
+
+- Exchange: Email et dossiers publics
+- Sites SharePoint
+- OneDrive: Comptes
+- Groupes Microsoft 365
+- Skype Entreprise
 
 1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com/), sélectionnez **Stratégies** > **Retention**.
 

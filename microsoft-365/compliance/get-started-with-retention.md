@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous êtes prêt à mettre en place des stratégies et des étiquettes de rétention pour la gouvernance des données de votre organisation, mais vous ne savez pas par où commencer ? Lisez quelques conseils pratiques pour commencer.
-ms.openlocfilehash: 33b2fbd40c19d1f4e2e2ef042eaa2fe21080eec1
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: cc504468611d4a2a2758ef7d52b965c177999217
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778290"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198939"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>Prise en main des stratégies et des étiquettes de rétention
 
@@ -60,7 +60,7 @@ Utilisez le tableau suivant pour vous aider à faire correspondre vos besoins m�
 
 |Je veux...|Documentation|
 |----------------|---------------|
-|Configurez efficacement les actions de rétention et de suppression pour l’organisation, ou par service Microsoft 365 : <br />- Exchange  <br />- SharePoint  <br />- OneDrive  <br />- Groupes Microsoft 365 <br />- Skype Entreprise  <br />- Microsoft Teams  |[Créer et configurer des stratégies de rétention](create-retention-policies.md)|
+|Configurez efficacement les actions de rétention et de suppression pour l’organisation, ou par service Microsoft 365 : <br />- Exchange  <br />- SharePoint  <br />- OneDrive  <br />- Groupes Microsoft 365 <br />- Skype Entreprise  <br />- Microsoft Teams <br />- Réseau Yammer |[Créer et configurer des stratégies de rétention](create-retention-policies.md)|
 |Permettez aux administrateurs et aux utilisateurs d’appliquer manuellement un groupe d’actions de rétention et de suppression pour les documents et e-mails : <br />- SharePoint <br />- OneDrive <br />- Outlook et Outlook sur le web|[Créer des étiquettes de rétention et les appliquer dans les applications](create-apply-retention-labels.md)|
 |Permettez aux administrateurs de site de définir une étiquette de rétention par défaut à tout le contenu dans une bibliothèque, un dossier ou un ensemble de documents SharePoint|[Créer des étiquettes de rétention et les appliquer dans les applications](create-apply-retention-labels.md)|
 |Permettez aux utilisateurs d’appliquer automatiquement une étiquette de rétention aux courriers électroniques à l’aide des règles Outlook|[Créer des étiquettes de rétention et les appliquer dans les applications](create-apply-retention-labels.md)|

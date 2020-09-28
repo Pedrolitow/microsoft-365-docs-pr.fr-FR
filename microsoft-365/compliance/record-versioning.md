@@ -17,16 +17,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir les enregistrements pour vous aider à implémenter une solution de gestion des enregistrements dans Microsoft 365.
-ms.openlocfilehash: 47a6aee128dbc8375d5860e1e8b1e4e0acc355cb
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: 4b8209108564f0a75f8d70efecd57d2526d9face
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778450"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200524"
 ---
 # <a name="use-record-versioning-to-update-records-stored-in-sharepoint-or-onedrive"></a>Utiliser le contrôle de version des enregistrements pour mettre à jour les enregistrements stockés dans SharePoint ou OneDrive
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](https://aka.ms/ComplianceSD).*
+
+>[!NOTE] 
+> Parce que les enregistrements réglementaires bloquent la modification, la version de l’enregistrement n’est pas disponible pour les enregistrements réglementaires.
 
 La possibilité de marquer un document en tant qu’[enregistrement](records-management.md#records) et de restreindre les actions pouvant être effectuées sur l’enregistrement constitue un objectif essentiel pour toute solution de gestion d’enregistrements. Cependant, une collaboration peut également être nécessaire pour permettre aux utilisateurs de créer des versions ultérieures.
 

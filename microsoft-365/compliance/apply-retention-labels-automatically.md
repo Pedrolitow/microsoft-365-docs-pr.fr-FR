@@ -17,16 +17,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Créez et publiez automatiquement des étiquettes de rétention afin de pouvoir les appliquer de manière automatique pour conserver les éléments dont vous avez besoin et de supprimer ceux qui sont inutiles
-ms.openlocfilehash: dc525a9f7a2ea97f61f03320495eea737465cfd9
-ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
+ms.openlocfilehash: 9ab456cd5b1f5f1bf47a1e24a3d7e58b7992ede0
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171302"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196377"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Application automatique d’une étiquette de rétention pour conserver ou supprimer du contenu
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](https://aka.ms/ComplianceSD).*
+
+> [!NOTE]
+> Ce scénario n’est pas pris en charge pour les [enregistrements réglementaires](records-management.md#records).
 
 L’une des fonctionnalités les plus puissantes des [étiquettes de rétention](retention.md) est la possibilité d’appliquer celles-ci automatiquement à tout contenu correspondant à certaines conditions spécifiques. Dans ce cas, les personnes au sein de votre organisation ne doivent pas appliquer les étiquettes de rétention. Microsoft 365 s’en charge à leur place.
   
@@ -39,6 +42,9 @@ Les étiquettes de rétention appliquées automatiquement sont puissantes pour l
 - Les utilisateurs n’ont plus besoin de connaître les stratégies de gouvernance des données : ils peuvent se concentrer sur leur travail.
     
 Vous pouvez appliquer automatiquement des étiquettes de rétention à du contenu lorsque celui-ci contient des informations sensibles, des mots clés, des propriétés pouvant faire l’objet d’une recherche ou une correspondance pour des [classifieurs pouvant être formés](classifier-get-started-with.md).
+
+> [!TIP]
+> A présent dans l’aperçu, utiliser les propriétés de recherche pour identifier [Les enregistrements de réunion Teams](#microsoft-teams-meeting-recordings).
 
 Les processus d’application automatique d’une étiquette de rétention sont fonction des conditions suivantes :
 
@@ -80,7 +86,7 @@ Les instructions de navigation varient selon que vous utilisez la [gestion des e
     
     - Pour plus d’informations sur les descripteurs de plan de fichier, consultez [Utiliser le plan de gestion des fichiers pour gérer les étiquettes de rétention](file-plan-manager.md)
     
-    - Pour utiliser l’étiquette de rétention afin de déclarer un [enregistrement](records-management.md#records), activez l’option **Marquer les éléments comme enregistrement**.
+    - Pour utiliser l’étiquette de rétention pour déclarer des enregistrements, sélectionnez **Marquer les éléments comme enregistrements**, ou **Marquer les éléments comme enregistrements réglementaires**. Pour plus d’information, voir [Configuration d’étiquettes de rétention pour déclarer des enregistrements](declare-records.md#configuring-retention-labels-to-declare-records).
 
 3. Une fois l’étiquette créée, les options permettant de la publier s’affichent. Appliquez automatiquement l’étiquette, ou enregistrez-la simplement : sélectionnez **Appliquer automatiquement cette étiquette à un type spécifique de contenu**, puis sélectionnez **Terminé** pour démarrer l’assistant à la création d’attribution automatique d’étiquettes qui vous conduit directement à l’étape 2 de la procédure suivante.
 
@@ -162,6 +168,29 @@ Exemples de requêtes :
 |Exchange   | `recipients:garthf@contoso.com` |
 |SharePoint | `contenttype:contract` |
 |SharePoint | `site:https://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract`|
+
+##### <a name="microsoft-teams-meeting-recordings"></a>Enregistrements de réunion Microsoft Teams
+
+> [!NOTE]
+> La possibilité de conserver et de supprimer les enregistrements de réunions Teams est déployé dans l’aperçu et ne fonctionnera pas avant la sauvegarde des enregistrements dans OneDrive ou SharePoint. Pour plus d’informations, consultez [Utiliser OneDrive Entreprise et SharePoint Online ou Stream pour les enregistrements de réunion](https://docs.microsoft.com/MicrosoftTeams/tmr-meeting-recording-change).
+
+Pour identifier les enregistrements de réunion Microsoft Teams stockés dans les comptes OneDrive des utilisateurs ou dans SharePoint, spécifiez les éléments suivants pour **l’éditeur de requête de mot clé**:
+
+``` 
+ProgID:Media AND ProgID:Meeting
+```
+
+Pour cette étiquette de rétention, vous devez également la publier sur les comptes OneDrive des utilisateurs appropriés ou sur les sites SharePoint en créant une stratégie d’étiquette. La plupart du temps, les enregistrements de réunion sont enregistrés dans OneDrive, mais pour les réunions de canal, ils sont enregistrés dans SharePoint.
+
+Lorsque vous avez enregistré la stratégie d’application automatique :
+
+1. Sélectionnez l’onglet**des stratégies d’étiquette** > **Publier des étiquettes**
+
+2. Lorsque vous êtes invité à sélectionner une étiquette, sélectionnez l’étiquette que vous avez créée à l’aide de la requête KQL pour identifier les enregistrements de réunions Teams.
+
+3. Lorsque vous êtes invité à entrer l’emplacement, choisissez **Les sites SharePoint** et **Les comptes OneDrive**. Vous pouvez ensuite conserver la valeur par défaut de **Tous**, ou spécifier des emplacements individuels, tels que l’inclusion ou l’exclusion de comptes OneDrive spécifiques.
+
+4. Terminez l’assistant et enregistrez cette stratégie d’étiquette.
 
 #### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>Appliquer automatiquement des étiquettes au contenu à l’aide de classifieurs entraînables
 

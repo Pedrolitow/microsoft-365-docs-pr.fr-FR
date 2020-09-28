@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En savoir plus sur les stratégies de rétention et les étiquettes de rétention, qui permettent de conserver les éléments dont vous avez besoin et de supprimer ceux qui ne vous servent pas.
-ms.openlocfilehash: 3d5bf971f65be5fd6ef4fdbed46cc41827657a54
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: d8b9ff7bea32f489a5cce5f64626908e8ec56fa1
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48132134"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197337"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>En savoir plus sur les stratégies et les étiquettes de rétention
 
@@ -31,6 +31,7 @@ ms.locfileid: "48132134"
 Le volume et la complexité des données e-mails, documents, messages instantanés et autres de la majorité des organisations augmentent quotidiennement. Il est important de gérer et de gouverner efficacement ces informations, car vous devez :
   
 - **respecter de façon proactive les réglementations du secteur et les stratégies internes** qui vous obligent à conserver du contenu pendant une période minimale. Par exemple, la loi Sarbanes-Oxley vous oblige à conserver certains types de contenu pendant sept ans. 
+
 - **réduire les risques en cas de litige ou de violation de la sécurité** en supprimant définitivement le contenu ancien qu’il n’est plus obligatoire de conserver ; 
     
 - **aider votre organisation à partager efficacement les connaissances et à être plus agile** en vérifiant que vos utilisateurs traitent uniquement le contenu actuel et pertinent pour eux. 
@@ -58,7 +59,7 @@ Si des paramètres de rétention sont affectés au contenu, celui-ci reste à so
 
 - Pour les boîtes aux lettres Exchange : la copie est conservée dans le dossier **Éléments récupérables**. 
 
-- Pour les messages de conversation et dans Teams : la copie est conservée dans un dossier masqué appelé **SubstrateHolds** sous la forme d’un sous-dossier dans le dossier **Éléments récupérables** d’Exchange.
+- Pour les messages Teams et Yammer : la copie est conservée dans un dossier masqué appelé **SubstrateHolds** sous la forme d’un sous-dossier dans le dossier **Éléments récupérables** de Exchange.
 
 > [!NOTE]
 > La bibliothèque de Conservation et préservation utilise un espace de stockage qui n’est pas exempté du quota de stockage d’un site. Il se peut que vous deviez augmenter votre espace de stockage lorsque vous utilisez des paramètres de rétention pour SharePoint et les groupes Microsoft 365.
@@ -69,6 +70,7 @@ Pour plus d’informations sur le fonctionnement des paramètres de rétention e
 
 - [En savoir plus sur la rétention dans SharePoint et OneDrive](retention-policies-sharepoint.md)
 - [En savoir plus sur la rétention dans Microsoft Teams](retention-policies-teams.md)
+- [Découvrir la rétention pour Yammer](retention-policies-yammer.md)
 - [Découvrir la rétention pour Exchange](retention-policies-exchange.md)
 
 ## <a name="retention-policies-and-retention-labels"></a>Stratégies de rétention et étiquettes de rétention.
@@ -102,6 +104,8 @@ Les stratégies de rétention peuvent être appliquées aux emplacements suivant
 - Dossiers publics Exchange
 - Messages du canal Teams
 - Conversations Teams
+- Messages communautaires Yammer
+- Messages privés Yammer
 
 L’application d’une stratégie unique à plusieurs emplacements, ou à des emplacements ou des utilisateurs spécifiques, est d’une grande efficacité.
     
@@ -214,7 +218,7 @@ Différents types d’étiquettes de rétention peuvent être publiés dans diff
    
 Dans Exchange, les étiquettes de rétention à application automatique sont appliquées uniquement aux nouveaux messages envoyés (données en transit) et pas à tous les éléments présents dans la boîte aux lettres (données au repos). Par ailleurs, les étiquettes de rétention à application automatique pour les types d’informations sensibles et les classifieurs entraînables s’appliquent à toutes les boîtes aux lettres. Vous ne pouvez pas sélectionner de boîtes aux lettres spécifiques.
   
-Les dossiers publics Exchange, Skype et les messages et conversations de canal Teams ne prennent pas en charge les étiquettes de rétention. Pour conserver et supprimer du contenu stocké sur ces emplacements, utilisez plutôt les stratégies de rétention.
+Les dossiers publics Exchange, les messages Skype, Teams et Yammer ne prennent pas en charge les étiquettes de rétention. Pour conserver et supprimer du contenu stocké sur ces emplacements, utilisez plutôt les stratégies de rétention.
 
 #### <a name="only-one-retention-label-at-a-time"></a>Une seule étiquette de rétention à la fois
 
@@ -265,7 +269,7 @@ Utilisez le tableau suivant pour savoir si vous devez utiliser une stratégie ou
 |Fonctionnalité|Stratégie de rétention |Étiquette de rétention|
 |:-----|:-----|:-----|:-----|
 |Paramètres de rétention permettant conservation puis suppression, conservation uniquement ou suppression uniquement |Oui |Oui |
-|Charges de travail prises en charge : <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Groupes Microsoft 365 <br />- Skype Entreprise <br />- Teams|<br /> Oui <br /> Oui <br /> Oui <br /> Oui <br /> Oui <br /> Oui | <br /> Oui, sauf dossiers publics <br /> Oui <br /> Oui <br /> Oui <br /> Non <br /> Non  |
+|Charges de travail prises en charge : <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Groupes Microsoft 365 <br />- Skype Entreprise <br />- Teams<br />- Yammer|<br /> Oui <br /> Oui <br /> Oui <br /> Oui <br /> Oui <br /> Oui | <br /> Oui, sauf dossiers publics <br /> Oui <br /> Oui <br /> Oui <br /> Non <br /> Non <br /> Non |
 |Rétention appliquée automatiquement | Oui | Oui |
 |Rétention appliquée en fonction de conditions <br /> – types d’informations sensibles, requêtes KQL, classificateurs pouvant être formés| Non | Oui |
 |Rétention appliquée manuellement | Non | Oui |
