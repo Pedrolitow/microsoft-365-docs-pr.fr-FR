@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: ad755398afc80f829561854217f1295ce8fff6f5
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 1151fd74e5f40a91107467b6004049081c4a9a69
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417858"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208236"
 ---
 # <a name="payment-card-industry-pci-data-security-standard-dss"></a>Norme de sécurité des données (DSS) d’industrie de carte de paiement (PCI)
 
@@ -58,9 +58,9 @@ Il est cependant important de comprendre que le statut de conformité PCI DSS d
 
 Créez et déployez votre solution DSS PCI dans le Cloud plus rapidement avec le modèle sécurité et conformité Azure PCI DSS. Obtenez des architectures de référence, des instructions de déploiement, des mappages d’implémentation de contrôle, des scripts automatisés et bien plus encore. [Commencez à utiliser le standard Azure PCI DSS](https://aka.ms/pciblueprint).
 
-## <a name="frequently-asked-questions"></a>Forum Aux Questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
-**Pourquoi la page de couverture de l’attestation de conformité Azure (AoC) indique « juin 2018 » ?**
+**Pourquoi la page de couverture de l’Attestation de Conformité (AoC) indique t-elle «juin 2018»?**
 
 La date de juin 2018 sur la page d’accueil correspond au moment où le modèle AoC a été publié. Reportez-vous à la Section 2 pour obtenir la date de l’évaluation.
 
@@ -70,7 +70,7 @@ Le package Azure AoC inclut des AoCs correspondant au Cloud Azure Public, Allema
 
 **Quelle est la relation entre PA DSS et PCI DSS ?**
 
-La PA DSS (Payment Application Data Security Standard) est un ensemble d’exigences qui sont conformes à la norme PCI DSS et remplacent les meilleures pratiques de l’application de paiement Visa, tout en consolidant également les exigences de conformité des autres principaux émetteurs de carte. PA DSS aide les fournisseurs de logiciel à développer des applications tierces qui stockent, traitent ou transmettent des données de paiement de détenteur de carte dans le cadre d’un processus de règlement ou d’autorisation de carte. Afin d’atteindre efficacement leur conformité PCI DSS, les détaillants doivent utiliser des applications certifiées PA DSS. PA DSS ne s’applique pas à Azure.
+La PA DSS (Payment Application Data Security Standard) est un ensemble d’exigences qui sont conformes à la PCI DSS et remplace les Meilleures Pratiques de la Demande de Paiement du Visa, tout en consolidant également les exigences de conformité des autres principaux émetteurs de carte. PA DSS aide les fournisseurs de logiciel à développer des applications tierces qui stockent, traitent ou transmettent des données de paiement de détenteur de carte dans le cadre d’un processus de règlement ou d’autorisation de carte. Afin d’atteindre efficacement leur conformité PCI DSS, les détaillants doivent utiliser des applications certifiées PA DSS. PA DSS ne s’applique pas à Azure.
 
 **Qu'est-ce qu'un acquéreur et Azure en utilise-t-il un ?**
 
@@ -80,7 +80,7 @@ Un acquéreur est une banque ou autre entité qui traite des transactions de car
 
 Cela s’applique à toute société, quelle que soit la taille ou le nombre des transactions, qui accepte, transmet ou stocke des données de détenteur de carte. Cela signifie que si un client vient à payer une société en utilisant une carte de débit ou de crédit, alors les exigences PCI DSS s’appliquent. Les sociétés sont validées à un des quatre niveaux basés sur le volume total de transactions sur une période de 12 mois. Le Niveau 1 s’adresse aux sociétés qui traitent plus de 6 millions de transactions par an, le Niveau 2 pour 1 à 6 millions de transactions et le Niveau 3 pour 20 000 à 1 million de transactions, enfin le Niveau 4 concerne un nombre de transactions inférieur à 20 000.
 
-**Où dois-je commencer concernant les efforts de conformité PCI DSS de mon organisation pour une solution déployée sur Azure ?**
+**Où dois-je commencer les efforts de conformité PCI DSS de mon organisation pour une solution déployée sur Azure?**
 
 Les informations que le PCI Security Standards Council met à disposition sont un bon moyen de découvrir les exigences de conformité spécifiques. Le Conseil publie le[Guide de référence rapide PCI DSS (PCI DSS Quick Reference Guide)](https://www.pcisecuritystandards.org/documents/PCISSC%20QRG%20August%202014%20-print.pdf)pour les commerçants et autres personnes impliquées dans le traitement de cartes de paiement. Le guide explique comment la norme PCI DSS peut aider à protéger un environnement de transaction de carte de paiement et comment l'appliquer.
 
@@ -93,6 +93,10 @@ Pour l’instant, OneDrive Entreprise et SharePoint Online sont compatibles avec
 **Quelle est l’étendue de OneDrive Entreprise et de SharePoint Online ?**
 
 Pour l’instant, seuls les fichiers et documents téléchargés sur OneDrive Entreprise et SharePoint Online seront conformes au standard PCI DSS.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Utilisez le Gestionnaire de Conformité Microsoft pour évaluer vos risques
+
+[Le Gestionnaire de Conformité Microsoft](compliance-manager.md) est une fonctionnalité dans le [centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Le Gestionnaire de Conformité offre un modèle Premium pour la création d’une évaluation de ce règlement. Recherchez le modèle sur la page **modèles d’évaluation** dans le Gestionnaire de Conformité. Découvrez comment [créer des évaluations dans le Gestionnaire de Conformité](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressources
 

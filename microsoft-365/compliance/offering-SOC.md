@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: cdc8835989ada5ebe4089c4d7fed5fd8cf064673
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: a648673d06300190695db52d14e85f114bfe0e87
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47415421"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208145"
 ---
 # <a name="service-organization-controls-soc"></a>Service Organization Controls (SOC)
 
@@ -90,7 +90,7 @@ Les services de cloud computing Microsoft sont audités au moins une fois par a
 - [Office 365 Core : rapport SSAE 18 SOC 1](https://aka.ms/o365SOC-1)
 - [Office 365 Core : rapport SSAE 18 SOC 2](https://aka.ms/o365SOC-2)
 - [Office 365 Core : rapport SSAE 18 SOC 3](https://aka.ms/o365SOC-3)
-- [Office 365 Microservices T1 : rapport SSAE 18 SOC2 type I](https://aka.ms/o365-MS-SOC-2-type1)
+- [Office 365 Microservices T1-SSAE 18 SOC2 Type I Rapport](https://aka.ms/o365-MS-SOC-2-type1)
 - [Rapport d'audit Customer Lockbox SOC 1 SSAE 16](https://aka.ms/Office365CustomerLockboxSOCAuditReport)
 - [Rapport d’audit Yammer SOC 2 AT 101 Type I](https://aka.ms/YammerSOC2Type1AuditReport)
 - [Rapport Yammer SOC 2 type II](https://aka.ms/yammerSOC-2)
@@ -121,9 +121,9 @@ Oui. Lorsque vous migrez vos applications et vos données vers des services de c
 
 Le [Kit de ressources SOC pour les organisations de services](https://aka.ms/soc-toolkit) est utile pour comprendre les processus de rapports SOC et faire la promotion de leur utilisation par votre organisation.
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Utilisez le score de conformité Microsoft pour évaluer vos risques
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Utilisez le Gestionnaire de Conformité Microsoft pour évaluer vos risques
 
-[Le score de conformité Microsoft](compliance-score.md) est une fonctionnalité d’aperçu dans [le Centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Après la [configuration du score de conformité](compliance-score-setup.md), sélectionnez le [modèle SOC 1](https://go.microsoft.com/fwlink/?linkid=2117918) pré-configuré et le [modèle SOC 2](https://go.microsoft.com/fwlink/?linkid=2117919) depuis le menu déroulant **Modèle** pour permettre à votre organisation de répondre aux exigences de cette règlementation.
+[Le Gestionnaire de Conformité Microsoft](compliance-manager.md) est une fonctionnalité dans le [centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Le Gestionnaire de Conformité offre un modèle Premium pour la création d’une évaluation de ce règlement. Recherchez le modèle sur la page **modèles d’évaluation** dans le Gestionnaire de Conformité. Découvrez comment [créer des évaluations dans le Gestionnaire de Conformité](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressources
 

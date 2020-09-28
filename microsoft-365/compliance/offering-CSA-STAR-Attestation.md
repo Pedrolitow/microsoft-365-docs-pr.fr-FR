@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 33fd2cef596144c48dcc76594d8d466e09481dd4
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 56f01880e3e2f381d85ed386ac413d4dbff38ff4
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47415614"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208596"
 ---
 # <a name="cloud-security-alliance-csa-star-attestation"></a>Attestation CSA (Cloud Security Alliance) STAR
 
@@ -31,13 +31,13 @@ La Cloud Security Alliance (CSA) tient à jour le registre STAR (Security, Trust
 - Niveau 2 : Attestation STAR, Certification STAR et Évaluation C-STAR (basées sur des audits tiers)
 - Niveau 3 : Surveillance continue STAR (les exigences du programme sont toujours en cours d’élaboration par la CSA)
 
-L'Attestation STAR implique un audit indépendant rigoureux de la situation de sécurité du fournisseur de cloud basé sur un audit SOC 2 de type 2 avec des critères de la matrice CCM. L'auditeur indépendant qui évalue les offres d'un fournisseur de cloud pour une Attestation STAR doit être un comptable public certifié (CPA) et disposer du certificat de la CSA en Cloud Security Knowledge (CCSK).  
+L'Attestation STAR implique un audit indépendant rigoureux de la situation de sécurité du fournisseur de cloud basé sur un audit SOC 2 de type 2 avec les critères de CCM. L'auditeur indépendant qui évalue les offres d'un fournisseur de cloud pour une Attestation STAR doit être un comptable public certifié (CPA) et doit disposer du certificat de la CSA en Cloud Security Knowledge (CCSK).  
   
-Un audit SOC 2 type 2 est basé sur les principes et critères d'approbation de services de l'AICPA (American Institute of Certified Public Accountants), notamment la sécurité, la disponibilité, la confidentialité et l'intégrité du traitement, ainsi que les critères de la matrice CCM. L’attestation STAR fournit les résultats d’un auditeur concernant les possibilités de conception et l’efficacité du fonctionnement des contrôles SOC 2 dans les services de cloud computing Microsoft. L’objectif consiste à satisfaire les critères de l’AICPA mentionnés ci-dessus et les exigences figurant dans la matrice CCM.
+Un audit SOC 2 type 2 est basé sur les principes et critères d'approbation de services de l'AICPA (American Institute of Certified Public Accountants), notamment la sécurité, la disponibilité, la confidentialité et l'intégrité du traitement, ainsi que les critères de la matrice CCM. L’attestation STAR fournit les résultats d’un auditeur concernant les possibilités de conception et l’efficacité du fonctionnement des contrôles SOC 2 dans les services cloud Microsoft. L’objectif consiste à satisfaire les critères de l’AICPA mentionnés ci-dessus et les exigences figurant dans la matrice CCM.
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
 
-Microsoft Azure et Microsoft Intune ont obtenu l’attestation CSA STAR. L’attestation STAR fournit les résultats d’un auditeur concernant les possibilités de conception et l’efficacité du fonctionnement des contrôles SOC 2 dans les services de cloud computing Microsoft.
+Microsoft Azure et Microsoft Intune ont obtenu l’attestation CSA STAR. L’attestation STAR fournit les résultats d’un auditeur concernant les possibilités de conception et l’efficacité du fonctionnement des contrôles SOC 2 dans les services cloud Microsoft.
 
 - [Azure et Azure Government](https://aka.ms/AzureCompliance)
 - [Azure Germany](https://aka.ms/AzureCompliance)
@@ -68,6 +68,10 @@ Vous pouvez télécharger l’[attestation CSA STAR](https://aka.ms/CSASTAR-Atte
 - **Niveau 1** : **Auto-évaluation CSA STAR** : Azure, Microsoft Dynamics 365 et Microsoft Office 365. L'[autoévaluation](offering-csa-star-self-assessment.md) est une offre gratuite des fournisseurs de service cloud pour documenter leurs contrôles de sécurité afin d'aider les clients à évaluer la sécurité du service.
 - **Niveau 2** : **Certification CSA STAR** : Azure, Microsoft Cloud App Security, Intune et Microsoft Power BI. La certification STAR est basée sur l'obtention de la certification ISO/IEC 27001 et la satisfaction des critères spécifiés dans la matrice CCM. Elle est attribuée après une évaluation tierce rigoureuse des contrôles et pratiques de sécurité d'un fournisseur de service cloud.
 - **Niveau 2** : **Attestation CSA STAR** : Azure et Intune. La CSA et l'AICPA ont collaboré pour fournir des directives à l'ACP à utiliser lors de missions SOC 2, à l'aide des critères de l'AICPA (principes d'approbation de services, AT 101) et de la CSA CCM. L’[attestation STAR](offering-CSA-STAR-Attestation.md) est basée sur ces directives et est attribuée après des évaluations indépendantes rigoureuses des fournisseurs de Cloud.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Utilisez le Gestionnaire de Conformité Microsoft pour évaluer vos risques
+
+[Le Gestionnaire de Conformité Microsoft](compliance-manager.md) est une fonctionnalité dans le [centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Le Gestionnaire de Conformité offre un modèle Premium pour la création d’une évaluation de ce règlement. Recherchez le modèle sur la page **modèles d’évaluation** dans le Gestionnaire de Conformité. Découvrez comment [créer des évaluations dans le Gestionnaire de Conformité](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressources
 

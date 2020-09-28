@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 43e7cc1231e88144e1f03f81de6e2355a582a785
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 8440d510e5f6f2e1e90e4f3e9a7368cd00f0f802
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417918"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208276"
 ---
 # <a name="motion-picture-association-of-america-mpaa"></a>Motion Picture Association of America (MPAA)
 
@@ -59,6 +59,10 @@ Les conseils de la MPAA fournissent aux principaux partenaires et fournisseurs d
 **Mon entreprise a-t-elle encore besoin de se soumettre à un audit de la MPAA ou pouvons-nous utiliser celui d’Azure ?**
 
 Les sites de production, les sociétés d'effets spéciaux et autres partenaires de service devraient collaborer avec leurs directeurs et producteurs exécutifs pour comprendre les nouvelles exigences en matière de sécurité et si un audit formel de la MPAA est nécessaire. La conformité avec les conseils de la MPAA est sur la base du volontariat, mais Microsoft a choisi de procéder à une évaluation indépendante afin que les clients du secteur des médias puissent avoir confiance dans les fonctionnalités de protection et de sécurité du contenu d'Azure. Cependant, Azure ne gère pas les environnements Cloud individuels des clients, qui peuvent être soumis à une autre réglementation de la MPAA qui sera mieux gérée par votre propre audit de votre environnement.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Utilisez le Gestionnaire de Conformité Microsoft pour évaluer vos risque
+
+[Le Gestionnaire de Conformité Microsoft](compliance-manager.md) est une fonctionnalité dans le [centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Le Gestionnaire de Conformité offre un modèle Premium pour la création d’une évaluation de ce règlement. Recherchez le modèle sur la page **modèles d’évaluation** dans le Gestionnaire de Conformité. Découvrez comment [créer des évaluations dans le Gestionnaire de Conformité](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressources
 

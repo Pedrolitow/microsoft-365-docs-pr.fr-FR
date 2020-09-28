@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 4250d2d79bb00c4179e39969ad992011d3fc2d4f
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: b22eebd00ee168f576a673f74ce0a39d250f9542
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417868"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208246"
 ---
 # <a name="office-of-the-superintendent-of-financial-institutions-osfi-canada"></a>Le Bureau du surintendant des institutions financières (BSIF) Canada
 
@@ -27,7 +27,7 @@ ms.locfileid: "47417868"
 
 Le [Bureau de la Surintendant des institutions financières](https://www.osfi-bsif.gc.ca/Eng/Pages/default.aspx) (BSIF) est une agence indépendante du gouvernement du Canada responsable de la réglementation et de la surveillance prudentielles des institutions financières et des régimes de retraite sous réglementation fédérale au Canada.
 
-Dans son rôle de supervision, le BSIF a publié les instructions B-10 pour [l’externalisation des activités, fonctions et processus de productivité](https://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/b10.aspx). Ils ont mis en place des « pratiques recommandées, procédures ou normes » pour les instructions financières réglementées pour évaluer et gérer les risques associés à l’externalisation de leurs productivité auprès d’un fournisseur de services. Une note de service subséquente du BSIF, [Nouvelles exigences en matière d’externalisation basée sur la technologie](https://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/cldcmp.aspx), rappelé à ces institutions que les directives B-10 restent à jour et qu'elles doivent répondre aux attentes du BSIF en matière d'ententes d'externalisation importantes.
+Dans son rôle de supervision, le BSIF a publié les instructions B-10 pour [l’externalisation des activités, fonctions et processus de productivité](https://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/b10.aspx). Ils ont mis en place des « pratiques, procédures ou normes prudentielles » pour les institutions financières réglementées à l’échelle fédérale pour évaluer et gérer les risques associés à l’externalisation de leurs affaires auprès d’un fournisseur de services. Une note de service subséquente du BSIF, [Nouvelles exigences en matière d’externalisation basée sur la technologie](https://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/cldcmp.aspx), rappelé à ces institutions que les directives B-10 restent à jour et qu'elles doivent répondre aux attentes du BSIF en matière d'ententes d'externalisation importantes.
 
 De plus, l'utilisation des services dans Cloud par les institutions financières doit se conformer à la [Loi sur la protection des renseignements personnels et les documents électroniques](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/) (LPRPDE) et, dans certains cas, aux lois provinciales en matière de confidentialité des données.
 
@@ -66,6 +66,10 @@ Les [instructions B-10 BSIF](https://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort
 **Existe-t-il des conditions impératives devant être incluses dans le contrat avec le fournisseur de services Cloud ?**
 
 Oui, mais seulement si l'entente d'externalisation est une externalisation matérielle ou si elle implique un transfert des informations personnelles au fournisseur de services Cloud.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Utilisez le Gestionnaire de Conformité Microsoft pour évaluer vos risques
+
+[Le Gestionnaire de Conformité Microsoft](compliance-manager.md) est une fonctionnalité dans le [centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Le Gestionnaire de Conformité offre un modèle Premium pour la création d’une évaluation de ce règlement. Recherchez le modèle sur la page **modèles d’évaluation** dans le Gestionnaire de Conformité. Découvrez comment [créer des évaluations dans le Gestionnaire de Conformité](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressources
 

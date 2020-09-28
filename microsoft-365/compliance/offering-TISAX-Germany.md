@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: fe9186b45268fee11d011d6a941e244071e31a42
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 775a3d21697103d6ed0b891aef605197741d3dbd
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417538"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208116"
 ---
 # <a name="trusted-information-security-assessment-exchange-tisax-germany"></a>Trusted Information Security Assessment Exchange (TISAX) Allemagne
 
@@ -67,11 +67,15 @@ Cette évaluation est valable pour trois ans.
 
 Utilisez des aperçus de cas, des guides de solutions, des didacticiels et d’autres ressources pour vous aider à créer [solutions Azure](https://docs.microsoft.com/azure/industry/manufacturing/).
 
-## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
-**Pourquoi ne puis-je pas voir une copie de la certification Microsoft TISAX ?**
+**Pourquoi ne puis-je pas voir une copie de la certification Microsoft TISAX?**
 
 ENX fournit une confirmation de certification uniquement aux représentants du secteur enregistrés via le portail ENX. Pour plus d’informations sur la procédure à suivre, voir la section « audits, rapports et certificats » ci-dessus.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Utilisez le Gestionnaire de Conformité Microsoft pour évaluer vos risques
+
+[Le Gestionnaire de Conformité Microsoft](compliance-manager.md) est une fonctionnalité dans le [centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Le Gestionnaire de Conformité offre un modèle Premium pour la création d’une évaluation de ce règlement. Recherchez le modèle sur la page **modèles d’évaluation** dans le Gestionnaire de Conformité. Découvrez comment [créer des évaluations dans le Gestionnaire de Conformité](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressources
 

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 8c87d00e76ac71be3527e9db741aea6ee7a741f4
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: d57c725f471e5197f269270eca19c863a7f79555
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417308"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208626"
 ---
 # <a name="content-delivery--security-association-cdsa-content-protection--security-cps-standard"></a>Norme CPS (Content Protection & Security) de la CDSA (Content Delivery & Security Association)
 
@@ -60,13 +60,17 @@ Microsoft a mené à bien le renouvellement de six mois de la certification CPS
 
 La norme s'applique à tous les fournisseurs qui souhaitent fournir des services Cloud au secteur de la production de médias.
 
-**Comment dois-je commencer concernant l’effort personnel de conformité de mon organisation ?**
+**Comment dois-je commencer l’effort de conformité de mon organisation?**
 
 Pour obtenir des conseils, consultez le [Guide de mise en œuvre de CDSA Azure](https://aka.ms/cdsaprotectsecure). Pour discuter des exigences spécifiques et du processus d'application du programme de certificat de la norme CPS, [contactez la CDSA](https://go.microsoft.com/fwlink/p/?linkid=2099484).
 
-**Puis-je utiliser la conformité Microsoft dans le processus de certification de mon organisation ?**
+**Puis-je utiliser la conformité Microsoft dans le processus de certification de mon organisation?**
 
 Oui. Vous pouvez vous appuyer sur la certification d’Azure dans votre propre certification CPS en exploitant les fonctionnalités de sécurité et de chiffrement dans Azure.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Utilisez le Gestionnaire de Conformité Microsoft pour évaluer vos risques
+
+[Le Gestionnaire de Conformité Microsoft](compliance-manager.md) est une fonctionnalité dans le [centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Le Gestionnaire de Conformité offre un modèle Premium pour la création d’une évaluation de ce règlement. Recherchez le modèle sur la page **modèles d’évaluation** dans le Gestionnaire de Conformité. Découvrez comment [créer des évaluations dans le Gestionnaire de Conformité](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressources
 

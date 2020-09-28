@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: La gestion des enregistrements dans Microsoft 365 vous permet d’appliquer des planifications de rétention dans un plan de gestion de fichiers afin de gérer la rétention, la déclaration d’enregistrements et la destruction de ceux-ci.
-ms.openlocfilehash: d8ea68d8fbbf67928bae4f6d09712658f364e3ef
-ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
+ms.openlocfilehash: 677196f23430ec19f23c50e05fcc193fde420ca0
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46868909"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200491"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>Découvrez la gestion des enregistrements dans Microsoft 365
 
@@ -53,7 +53,7 @@ En plus de la documentation en ligne, nous vous conseillons d’écouter l’[en
 
 ## <a name="records"></a>Enregistrements
 
-Lorsque le contenu est marqué comme un enregistrement :
+Lorsque le contenu est déclaré comme enregistrement:
 
 - Des restrictions sont appliquées aux éléments en ce qui concerne les [actions autorisées ou bloquées](#compare-restrictions-for-what-actions-are-allowed-or-blocked).
 
@@ -61,31 +61,31 @@ Lorsque le contenu est marqué comme un enregistrement :
 
 - Vous avez une preuve de destruction lorsque les éléments sont supprimés à la fin de la période de rétention.
 
-Vous utilisez les [étiquettes de rétention](retention.md#retention-labels) pour marquer du contenu sous la forme d’un enregistrement. Vous pouvez soit publier ces étiquettes pour permettre aux utilisateurs et aux administrateurs de les appliquer manuellement au contenu, soit appliquer automatiquement ces étiquettes au contenu que vous voulez marquer comme enregistrement.
+Vous utilisez [les étiquettes de rétention](retention.md#retention-labels) pour marquer le contenu comme **enregistrement**, ou **enregistrement réglementaire** (actuellement en version d’évaluation). La différence entre ces deux éléments est expliquée dans la section suivante. Vous pouvez soit publier ces étiquettes pour permettre aux utilisateurs et aux administrateurs de les appliquer manuellement au contenu, ou appliquer automatiquement ces étiquettes au contenu que vous voulez marquer comme enregistrement ou enregistrement réglementaire.
 
-En utilisant des étiquettes de rétention pour marquer du contenu en tant qu’enregistrement, vous pouvez implémenter une stratégie de gestion des enregistrements unique et cohérente dans votre environnement Microsoft 365.
+En utilisant des étiquettes de rétention pour marquer du contenu en tant qu’enregistrement, vous pouvez implémenter une stratégie unique et cohérente pour la gestion des enregistrements dans votre environnement Microsoft 365.
 
 ### <a name="compare-restrictions-for-what-actions-are-allowed-or-blocked"></a>Comparer des restrictions relatives aux actions autorisées ou bloquées
 
-Utilisez le tableau suivant pour identifier les restrictions placées sur du contenu suite à l’application d’une étiquette de rétention standard, ainsi que les étiquettes de rétention qui marquent du contenu en tant qu’enregistrement. 
+Utilisez le tableau suivant pour identifier les restrictions placées sur du contenu suite à l’application d’une étiquette de rétention standard, ainsi que les étiquettes de rétention qui marquent du contenu en tant qu’enregistrement ou enregistrement réglementaire.  
 
-Une étiquette de rétention standard comporte des paramètres et des actions de rétention mais n’indique pas que le contenu est un enregistrement.
+Une étiquette de rétention standard comporte des paramètres et des actions de rétention mais ne marque pas du contenu comme enregistrement ou enregistrement réglementation.
 
 >[!NOTE] 
 > Pour couvrir tous les cas de figure, le tableau inclut les colonnes d’un enregistrement verrouillé et déverrouillé, applicable à SharePoint et OneDrive, mais pas à Exchange. La possibilité de verrouiller et de déverrouiller un enregistrement utilise le [contrôle de version](record-versioning.md) qui n’est pas pris en charge pour les éléments Exchange. Par conséquent, pour tous les éléments Exchange marqués en tant qu’enregistrement, le comportement mappe vers l’**Enregistrement – colonne verrouillée**, et l’**Enregistrement – colonne déverrouillée** n’est pas pertinent.
 
 
-|Action| Étiquette de rétention |Enregistrement – colonne verrouillée| Enregistrement – colonne déverrouillée|
-|:-----|:-----|:-----|:-----|:-----|
-|Modifier les contenus|Autorisé | **Bloqué** | Autorisé|
-|Modifier les propriétés, y compris Renommer|Autorisé |Autorisé | Autorisé|
-|Supprimer|<sup>1</sup> autorisé |**Bloqué** | **Bloqué**|
-|Copier|Autorisé |Autorisé | Autorisé|
-|Se déplacer au sein du conteneur <sup>2</sup>|Autorisé |Autorisé | Autorisé|
-|Se déplacer dans les conteneurs <sup>2</sup>|Autorisé |Autorisé si jamais déverrouillé | Autorisé|
-|Ouvert/lu|Autorisé |Autorisé | Autorisé|
-|Modifier l’étiquette|Autorisé |Autorisé – administrateur de conteneur uniquement | Autorisé – administrateur de conteneur uniquement|
-|Supprimer l’étiquette|Autorisé |Autorisé – administrateur de conteneur uniquement | Autorisé – administrateur de conteneur uniquement|
+|Action| Étiquette de rétention |Enregistrement – colonne verrouillée| Enregistrement – colonne déverrouillée| Enregistrement réglementaire |
+|:-----|:-----|:-----|:-----|:-----|:-----|
+|Modifier les contenus|Autorisé | **Bloqué** | Autorisé | **Bloqué**|
+|Modifier les propriétés, y compris Renommer|Autorisé |Autorisé | Autorisé| **Bloqué**|
+|Supprimer|<sup>1</sup> autorisé |**Bloqué** |**Bloqué**| **Bloqué**|
+|Copier|Autorisé |Autorisé | Autorisé| Autorisé|
+|Se déplacer au sein du conteneur <sup>2</sup>|Autorisé |Autorisé | Autorisé| Autorisé|
+|Se déplacer dans les conteneurs <sup>2</sup>|Autorisé |Autorisé si jamais déverrouillé | Autorisé| **Bloqué**|
+|Ouvert/lu|Autorisé |Autorisé | Autorisé| Autorisé|
+|Modifier l’étiquette|Autorisé |Autorisé – administrateur de conteneur uniquement | Autorisé – administrateur de conteneur uniquement| **Bloqué**
+|Supprimer l’étiquette|Autorisé |Autorisé – administrateur de conteneur uniquement | Autorisé – administrateur de conteneur uniquement| **Bloqué**
 
 Notes de bas de page :
 
@@ -95,10 +95,19 @@ Message qu’un utilisateur voit s’il essaie de supprimer un document étiquet
 
 ![Message indiquant que l’élément n’a pas été supprimé dans SharePoint](../media/d0020726-1593-4a96-b07c-89b275e75c49.png)
 
-
 <sup>2</sup> Les conteneurs incluent les bibliothèques de documents SharePoint et les boîtes aux lettres Exchange.
 
-## <a name="next-steps"></a>Étapes suivantes
+>[!IMPORTANT] 
+> La principale différence pour un enregistrement réglementaire est qu’une fois qu’il est appliqué au contenu, personne, pas même un administrateur général, peut supprimer l’étiquette. 
+>
+> De plus, les étiquettes de rétention configurées pour les enregistrements réglementaires ont les restrictions d’administrateur suivantes:
+> - La période de rétention ne peut pas être plus courte une fois l’étiquette enregistrée, mais seulement prolongée.
+> - Ces étiquettes ne sont pas prises en charge par les stratégies d’attribution automatique d’étiquette, et doivent être appliquées à l’aide des [stratégies d’étiquette de rétention](create-apply-retention-labels.md). 
+> - Une fois que vous avez ajouté et enregistré ces étiquettes dans une stratégie d’étiquette de rétention, vous ne pouvez pas supprimer ces étiquettes des emplacements, mais uniquement ajouter des emplacements.
+> 
+> En raison de ces actions irréversibles, assurez-vous que vous devez vraiment utiliser les enregistrements réglementaires avant de sélectionner cette option pour les étiquettes de rétention. Pour empêcher la configuration accidentelle, cette option n’est pas disponible par défaut, mais doit d’abord être activée à l’aide de PowerShell. Des instructions sont incluses dans [Déclarer les enregistrements à l’aide d’étiquettes de rétention](declare-records.md).
+
+## <a name="next-steps"></a>Prochaines étapes
 
 Veuillez consulter la page [Prise en main de la gestion des enregistrements](get-started-with-records-management.md).
 

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: d8b24885b1d1a80380d0e9ad5c7942bb31ba054c
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 398fdb66623fb668bfc95e8a8a8f8fae44c8163e
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416718"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208606"
 ---
 # <a name="center-for-internet-security-cis-benchmarks"></a>Critères du Centre pour la sécurité internet (CIS)
 
@@ -85,6 +85,10 @@ La publication de critères CIS révisés change en fonction de la communauté d
 **Qui a participé au développement des critères CIS de Microsoft ?**
 
 CIS note que ses « critères sont développés par le biais de nombreux efforts volontaires d’experts en la matière, de fournisseurs de technologie, de membres privés et publics de la communauté des critères CIS ainsi que de l’équipe de développement du critère CIS ». Vous trouverez par exemple une liste de contributeurs Azure sur [CIS Microsoft Azure Foundations benchmarking v RE1.0.0 désormais disponible](https://www.cisecurity.org/blog/cis-microsoft-azure-foundations-benchmark-v1-0-0-now-available/).
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Utilisez le Gestionnaire de Conformité Microsoft pour évaluer vos risques
+
+[Le Gestionnaire de Conformité Microsoft](compliance-manager.md) est une fonctionnalité dans le [centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Le Gestionnaire de Conformité offre un modèle Premium pour la création d’une évaluation de ce règlement. Recherchez le modèle sur la page **modèles d’évaluation** dans le Gestionnaire de Conformité. Découvrez comment [créer des évaluations dans le Gestionnaire de Conformité](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressources
 

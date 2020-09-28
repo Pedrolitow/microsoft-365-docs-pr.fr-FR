@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: a1c30856cf0fb4b2a183b26639bd3f41ae7d9bc5
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 3dc182ce799078e50087699aa3ca88c3abbcf769
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417708"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208426"
 ---
 # <a name="isoiec-270012013-information-security-management-standards"></a>Normes de gestion de la sécurité des informations ISO/IEC 27001:2013
 
@@ -126,9 +126,9 @@ L’adoption d’ISO/IEC 27001 est un engagement stratégique. Commencez par co
 
 Oui. Si votre activité nécessite la certification ISO/IEC 27001 pour des implémentations déployées dans des services Microsoft, vous pouvez utiliser la certification applicable dans votre évaluation de la conformité. Il vous incombe néanmoins de mobiliser un évaluateur pour mesurer la mise en œuvre de la conformité à l’ISO/IEC 27001 ainsi que les contrôles et les processus au sein de votre propre organisation.
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Utilisez le score de conformité Microsoft pour évaluer vos risques
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Utilisez le Gestionnaire de Conformité Microsoft pour évaluer vos risques
 
-[Le score de conformité Microsoft](compliance-score.md) est une fonctionnalité d’aperçu dans [le Centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Après la [configuration du score de conformité](compliance-score-setup.md), sélectionnez le [modèle ISO 27001](https://go.microsoft.com/fwlink/?linkid=2117914) pré-configuré depuis le menu déroulant **Modèle** pour permettre à votre organisation de répondre aux exigences de cette règlementation.
+[Le Gestionnaire de Conformité Microsoft](compliance-manager.md) est une fonctionnalité dans le [centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Le Gestionnaire de conformité offre une évaluation prédéfinie de cette réglementation pour les clients d’Entreprise E5. Recherchez le modèle de création de l’évaluation sur la page ** des modèles d’évaluation** dans le Gestionnaire de Conformité. Découvrez comment [créer des évaluations dans le Gestionnaire de Conformité](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressources
 

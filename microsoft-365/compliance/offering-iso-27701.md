@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b46a1996d1a86601efe21ec71b19adfc9fa02c61
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: e156a8dc71dc9aca4a5d608b29307f4d36f0ec6b
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417212"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208136"
 ---
 # <a name="isoiec-27701-privacy-information-management-system-pims"></a>ISO/CEI 27701 Système de gestion de l'information sur la protection de la vie privée (SGIP)
 
 ## <a name="privacy-information-management-system-pims-overview"></a>Vue d’ensemble système de gestion de l'information sur la protection de la vie privée (SGIP)
 
-Le règlement général sur la protection des données (RGPD) de l’Union européenne a marqué le début d'une nouvelle ère de réglementation de la confidentialité et de conformité à l'échelle mondiale. D’autres réglementations en matière de confidentialité, dont bon nombre s'inspirent du RGPD, ont été adoptées dans différentes juridictions (marché, secteur ou emplacement physique). Par conséquent, les organisations doivent mettre en place des stratégies et des procédures pour assurer la conformité à la liste des réglementations de confidentialité les plus croissantes. De plus, nous sommes au cœur d’une transformation numérique rapide dans laquelle la collecte de données et le traitement des données sont considérablement accrus. La croissance simultanée du volume de données et les exigences réglementaires relatives à ces données rendent la conformité plus complexe pour les organisations de tous types.
+Le Règlement Général sur la Protection des Données (RGPD) de l’Union européenne a marqué le début d'une nouvelle ère de réglementation de la confidentialité et de conformité à l'échelle mondiale. D’autres réglementations en matière de confidentialité, dont bon nombre s'inspirent du RGPD, ont été adoptées dans différentes juridictions (marché, secteur ou emplacement physique). Par conséquent, les organisations doivent mettre en place des stratégies et des procédures pour assurer la conformité à la liste des réglementations de confidentialité les plus croissantes. De plus, nous sommes au cœur d’une transformation numérique rapide dans laquelle la collecte de données et le traitement des données sont considérablement accrus. La croissance simultanée du volume de données et les exigences réglementaires relatives à ces données rendent la conformité plus complexe pour les organisations de tous types.
 
 La nouvelle norme internationale [ISO/IEC 27701 Système de gestion des informations sur la protection de la vie privée (SGIP)](https://www.iso.org/standard/71670.html) (anciennement ISO/CEI 27552 pendant la période d’élaboration), permet aux organisations de concilier les exigences en matière de respect de la vie privée. Le plan standard présente un ensemble complet de contrôles opérationnels pouvant être mappé avec différentes réglementations, notamment les RGPD. Une fois mappés, les contrôles opérationnels du SGIP sont mis en œuvre par des professionnels de la protection de la vie privée et vérifiés par des auditeurs internes ou externes aboutissant à une certification et une preuve complète de la conformité.
 
@@ -77,7 +77,7 @@ Quelle que soit la taille de votre organisation, qu’il s’agisse d’un contr
 - Microsoft Healthcare Bot
 - Intune
 - Bureau géré Microsoft
-- Power Automate (anciennement Microsoft Flow) 
+- Power Automate (anciennement Microsoft Flow)
 - PowerApps
 - Power BI
 - Power BI intégré
@@ -86,15 +86,14 @@ Quelle que soit la taille de votre organisation, qu’il s’agisse d’un contr
 - Spécialistes des menaces Microsoft
 - Windows Defender Protection avancée contre les menaces
 
-
 ## <a name="audits-reports-and-certificates"></a>Audits, rapports et certificats
 
 - [Azure, Dynamics 365 et services en ligne : certification ISO27701](https://aka.ms/azureiso27701cert)
 - [Azure, Dynamics 365 et services en ligne : rapport d’évaluation ISO27701](https://aka.ms/azureiso27701report)
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Utilisez le score de conformité Microsoft pour évaluer vos risques
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Utilisez le Gestionnaire de Conformité Microsoft pour évaluer vos risques
 
-[Le score de conformité Microsoft](compliance-score.md) est une fonctionnalité d’aperçu dans [le Centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Après la [configuration du score de conformité](compliance-score-setup.md), sélectionnez le [modèle SOC 27701](https://go.microsoft.com/fwlink/?linkid=2117915) pré-configuré depuis le menu déroulant **Modèle** pour permettre à votre organisation de répondre aux exigences de cette règlementation.
+[Le Gestionnaire de Conformité Microsoft](compliance-manager.md) est une fonctionnalité dans le [centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Le Gestionnaire de Conformité offre un modèle Premium pour la création d’une évaluation de ce règlement. Recherchez le modèle sur la page **modèles d’évaluation** dans le Gestionnaire de Conformité. Découvrez comment [créer des évaluations dans le Gestionnaire de Conformité](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressources
 

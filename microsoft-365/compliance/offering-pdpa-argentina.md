@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 19a05cd9d9605904ad12e6f0d244d7cf0afce006
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 24820526b6ba58c82c2412ed3d0902eecb60b5b6
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417056"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208106"
 ---
 # <a name="personal-data-protection-act-pdpa-argentina"></a>Loi argentine sur la protection des données à caractère personnel (PDCP)
 
@@ -39,7 +39,7 @@ Les mesures de sécurité techniques et organisationnelles mises en œuvre dans 
 
 L’accord de transfert de données Microsoft est un avenant (ID d’avenant M314) aux conditions de traitement des données dans nos conditions d’utilisation des services en ligne. Il ajoute des engagements importants, notamment que Microsoft informe le client de toute demande juridique de divulguer ses données personnelles, doit soumettre ses installations de traitement des données à l’audit de la demande du client, soit par le client, soit par une tierce partie indépendante, et aura l’autorisation écrite préalable pour l’utilisation de sous-traitants.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft concernés
 
 - [Azure et Azure DevOps](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
 - [Dynamics 365](https://download.microsoft.com/download/E/1/9/E1977163-7A86-4812-AC18-C03ADC958AAF/Microsoft_Dynamics_365_Cloud_Service_Compliance_Datasheet.pdf)
@@ -55,6 +55,10 @@ L’accord de transfert de données Microsoft est un avenant (ID d’avenant M31
 **Comment le RGPD a-t-il modifié la Loi sur la protection des données personnelles ?**
 
 Fin 2018, l’Argentine n’a pas encore adopté les réglementations liées au RGPD, mais elle a élaboré une nouvelle loi de protection des données, déjà soumise au Congrès par le responsable exécutif et sous la révision du Cabinet des représentants, afin de mettre en place sa loi sur la protection des données en alignement avec le RGPD. Elle traite des différences comme la définition des sujets de données et les préoccupations relatives au transfert transfrontalier d’informations personnelles.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Utilisez le Gestionnaire de Conformité Microsoft pour évaluer vos risques
+
+[Le Gestionnaire de Conformité Microsoft](compliance-manager.md) est une fonctionnalité dans le [centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Le Gestionnaire de Conformité offre un modèle Premium pour la création d’une évaluation de ce règlement. Recherchez le modèle sur la page **modèles d’évaluation** dans le Gestionnaire de Conformité. Découvrez comment [créer des évaluations dans le Gestionnaire de Conformité](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressources
 

@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 47cc5cf10f048640ead85d239881fa9b2603e699
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 3757d400d16b324f512c60059c8d8b762916894c
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417498"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208256"
 ---
 # <a name="multi-tier-cloud-security-mtcs-standard-for-singapore"></a>Norme Multi-Tier Cloud Security (MTCS) pour Singapour
 
 ## <a name="mtcs-overview"></a>Présentation de la norme MTCS
 
-La norme Multi-Tier Cloud Security (MTCS) pour Singapour a été préparée sous la direction du Comité des normes TI (ITSC) de l’Infocomm Development Authority of Singapore (IDA). L'ITSC encourage et propose des programmes nationaux en vue de normaliser l'informatique et les communications, ainsi que la participation de Singapour dans les activités de normalisation internationales.
+La norme Multi-Tier Cloud Security (MTCS) pour Singapour a été préparée sous la direction du Comité des normes TI (ITSC) de l’Infocomm Development Authority of Singapore (IDA). L'ITSC encourage et propose les programmes nationaux en vue de normaliser la TI et les communications, ainsi que la participation de Singapour aux activités de normalisation internationale.
 
 L'objet de la MTCS est également de fournir les éléments suivants :
 
@@ -89,13 +89,17 @@ MTCS compte un total de 535 contrôles qui couvrent trois niveaux de sécurité
 - Le Niveau 2 traite les besoins de la plupart des organisations qui s'inquiètent de la sécurité des données, avec un jeu de contrôles plus stricts visant les risques de sécurité et les menaces envers les données. Le niveau 2 est applicable à la plupart des utilisations du cloud, dont des applications métier stratégiques.
 - Le Niveau 3 est conçu pour des organisations réglementées avec des exigences spécifiques et celles souhaitant payer pour des exigences de sécurité plus strictes. Le Niveau 3 ajoute un jeu de contrôles de sécurité venant compléter ceux des Niveaux 1 et 2. Ils traitent les menaces et les risques de sécurité dans des systèmes d’information à fort impact en utilisant des services cloud, tels que des applications d’hébergement avec des informations sensibles et dans des systèmes réglementés.
 
-**Où dois-je commencer concernant l'effort personnel de conformité de mon organisation ?**
+**Quelles sont les démarches à suivre en matière de conformité de mon organisation ?**
 
 Le [Schéma de certification MTCS](https://go.microsoft.com/fwlink/p/?linkid=2099490) fournit des conseils sur les exigences de sécurité et les contrôles d'audit.
 
-**Puis-je tirer profit de la conformité Microsoft dans le processus de certification de mon organisation ?**
+**Puis-je tirer parti de la conformité Microsoft dans le processus de certification de mon organisation ?**
 
 Oui. Si vous avez des exigences pour certifier vos services s’appuyant sur ces services de cloud computing Microsoft, vous pouvez utiliser la certification MTCS pour réduire l’impact de l’audit de votre infrastructure informatique, si elle s’appuie sur eux. Il vous incombe néanmoins d’engager un évaluateur pour mesurer votre mise en œuvre de la conformité, ainsi que des contrôles et des processus au sein de votre propre organisation.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Utilisez le Gestionnaire de Conformité Microsoft pour évaluer vos risques
+
+[Le Gestionnaire de Conformité Microsoft](compliance-manager.md) est une fonctionnalité dans le [centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Le Gestionnaire de Conformité offre un modèle Premium pour la création d’une évaluation de ce règlement. Recherchez le modèle sur la page **modèles d’évaluation** dans le Gestionnaire de Conformité. Découvrez comment [créer des évaluations dans le Gestionnaire de Conformité](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressources
 

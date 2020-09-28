@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 176c80309e3a99707191c2dfba37e5147c875b17
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: a83bfef591c0e4baa2a24f0218999189dba7dba7
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417698"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208286"
 ---
 # <a name="isoiec-27018-code-of-practice-for-protecting-personal-data-in-the-cloud"></a>Code de pratique ISO/IEC 27018 pour la protection des données personnelles dans le cloud
 
@@ -109,9 +109,9 @@ Oui. Si vous devez obtenir la conformité avec ISO/IEC 27018 pour votre entrepr
 
 Il vous incombe néanmoins d’engager un évaluateur pour mesurer votre mise en œuvre de la conformité, ainsi que des contrôles et des processus au sein de votre propre organisation.
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Utilisez le score de conformité Microsoft pour évaluer vos risques
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Utilisez le Gestionnaire de Conformité Microsoft pour évaluer vos risques
 
-[Le score de conformité Microsoft](compliance-score.md) est une fonctionnalité d’aperçu dans [le Centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Après la [configuration du score de conformité](compliance-score-setup.md), sélectionnez le [modèle SOC 27018](https://go.microsoft.com/fwlink/?linkid=2117523) pré-configuré depuis le menu déroulant **Modèle** pour permettre à votre organisation de répondre aux exigences de cette règlementation.
+[Le Gestionnaire de Conformité Microsoft](compliance-manager.md) est une fonctionnalité dans le [centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Le Gestionnaire de Conformité offre un modèle Premium pour la création d’une évaluation de ce règlement. Recherchez le modèle sur la page **modèles d’évaluation** dans le Gestionnaire de Conformité. Découvrez comment [créer des évaluations dans le Gestionnaire de Conformité](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressources
 

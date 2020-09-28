@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c289b8c3ad2e177a9c2ee575014d8682da553352
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: a01a0599776c33d46850bcd0a5fbc6c3377056fa
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417688"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208296"
 ---
 # <a name="isoiec-270172015-code-of-practice-for-information-security-controls"></a>ISO/IEC 27017:2015 Code de pratique international des contrôles de sécurité des informations
 
@@ -27,7 +27,7 @@ ms.locfileid: "47417688"
 
 Le code de pratique ISO/IEC 27017:2015 est conçu comme une référence permettant aux entreprises de sélectionner les contrôles de sécurité des informations des services Cloud lors de la mise en œuvre d’un système de gestion de la sécurité des informations de Cloud computing basé sur la norme ISO/IEC 27002:2013. Il peut être également utilisé par les fournisseurs de services cloud comme document de référence pour l'implémentation des contrôles de protection communément admis.
 
-Cette norme internationale fournit des conseils d'implémentation supplémentaires spécifiques au cloud basés sur la norme ISO/IEC 27002, et fournit des contrôles supplémentaires pour traiter les menaces et les risques de sécurité des informations spécifiques au cloud conformément aux clauses 5 à18 de la norme ISO/IEC 27002: 2013 pour les contrôles, des conseils d'implémentation, ainsi que d'autres informations. Plus précisément, cette norme fournit des conseils sur les 37 contrôles de la norme ISO/IEC 27002 et contient également 7 nouveaux contrôles non dupliqués dans la norme ISO/IEC 27002. Ces nouvelles commandes traitent des aspects importants suivants :
+Cette norme internationale fournit des conseils d'implémentation supplémentaires spécifiques au cloud basés sur la norme ISO/IEC 27002, et fournit des contrôles supplémentaires pour traiter les menaces et les risques de sécurité des informations spécifiques au cloud conformément aux clauses 5-18 de la norme ISO/IEC 27002: 2013 pour les contrôles, les conseils d'implémentation, ainsi que d'autres informations. Plus précisément, cette norme fournit des conseils sur les 37 contrôles de la norme ISO/IEC 27002 et contient également 7 nouveaux contrôles non dupliqués dans la norme ISO/IEC 27002. Ces nouvelles commandes traitent des aspects importants suivants :
 
 - Rôles et responsabilités partagés dans un environnement de cloud computing
 - Retrait et restitution des biens des clients des services cloud à la fin du contrat
@@ -73,17 +73,21 @@ Les services Cloud Microsoft font l’objet d’un audit une fois par an pour l
 
 Ce code de pratique fournit des contrôles et des conseils de mise en œuvre aux fournisseurs de services Cloud et à leurs clients. Il se présente sous la même forme que la norme ISO/IEC 27002:2013.
 
-**Où puis-je consulter les informations de conformité de Microsoft concernant la norme ISO/IEC 27017:2015 ?**
+**Où puis-je consulter les informations de conformité de Microsoft concernant la norme ISO/IEC 27017:2015?**
 
 Vous pouvez télécharger le certificat [ISO/IEC 27017:2015](https://aka.ms/azureiso27017) pour Azure, Intune et Power BI.
 
-**Puis-je tirer profit de la conformité ISO/IEC 27017 des services Microsoft dans le processus de certification de mon entreprise ?**
+**Puis-je utiliser la conformité ISO/IEC 27017 des services Microsoft dans le processus de certification de mon entreprise?**
 
-Oui. Si votre entreprise cherche une certification pour des implémentations déployées sur tous services Enterprise Cloud de Microsoft dans le périmètre, vous pouvez utiliser la certification pertinente de Microsoft dans votre évaluation de la conformité. Il vous incombe néanmoins d’engager un évaluateur pour mesurer votre mise en œuvre de la conformité, ainsi que des contrôles et des processus au sein de votre propre organisation.
+Oui. Si votre entreprise cherche une certification pour des implémentations déployées sur les services Enterprise Cloud de Microsoft, vous pouvez utiliser les certifications pertinentes de Microsoft dans votre évaluation de la conformité. Il vous incombe néanmoins d’engager un évaluateur pour mesurer votre mise en œuvre de la conformité, ainsi que des contrôles et des processus au sein de votre propre organisation.
 
 **Comment puis-je me procurer des copies des rapports d’audit applicables ?**
 
 Le [portail d'approbation de services](https://aka.ms/stphelp) fournit des rapports d'audit indépendants et tiers, ainsi que toute autre documentation. Vous pouvez utiliser le portail pour télécharger et examiner cette documentation afin d’obtenir de l’aide concernant vos propres exigences légales et réglementaires.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Utilisez le Gestionnaire de Conformité Microsoft pour évaluer vos risques
+
+[Le Gestionnaire de Conformité Microsoft](compliance-manager.md) est une fonctionnalité dans le [centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Le Gestionnaire de Conformité offre un modèle Premium pour la création d’une évaluation de ce règlement. Recherchez le modèle sur la page **modèles d’évaluation** dans le Gestionnaire de Conformité. Découvrez comment [créer des évaluations dans le Gestionnaire de Conformité](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressources
 

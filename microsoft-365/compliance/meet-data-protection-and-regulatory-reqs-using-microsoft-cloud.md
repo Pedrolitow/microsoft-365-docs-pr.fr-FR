@@ -16,17 +16,17 @@ search.appverid:
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Découvrez comment utiliser le Gestionnaire de conformité dans le portail d’approbation de services Microsoft pour satisfaire les exigences en matière de protection des données et de réglementation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: aedadc682bd45f363f1e97599383dd901c3eae7f
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.openlocfilehash: 1e530acb5ca22fd67d94fea47aa37973d62e767c
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45016255"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198535"
 ---
 # <a name="microsoft-compliance-manager-classic"></a>Gestionnaire de conformité Microsoft (classique)
 
-> [!NOTE]
-> Cette documentation décrit une version antérieure de ce produit. Il est fortement *déconseillé aux utilisateurs d’utiliser cette version du Gestionnaire de conformité*. **Si vous utilisez la version d’essai actuelle du Gestionnaire de conformité, consultez la documentation du [Gestionnaire de conformité (essai)](working-with-compliance-manager.md).**
+> [!IMPORTANT]
+> **Le Gestionnaire de Conformité est désormais disponible dans le [centre de conformité Microsoft 365](https://compliance.microsoft.com/). Nous recommandons vivement aux clients de cesser d’utiliser le Gestionnaire de conformité (Classique) et de passer au nouveau Gestionnaire de Conformité pour bénéficier de l’expérience utilisateur enrichie et de la mise à jour de la cartographie du contrôle. Veuillez consulter notre [ Documentation de Gestionnaire de Conformité](compliance-manager.md) pour configurer et commencer l’utilisation du nouveau Gestionnaire de conformité dans le centre de conformité Microsoft 365.**
 
  *Le Gestionnaire de conformité n’est pas disponible dans Office 365 géré par 21Vianet, Office 365 Germany, Office 365 U.S. GCC High ou Office 365 Department of Defense.*
   
@@ -43,9 +43,6 @@ Gestionnaire de conformité :
 - Vous offre un référentiel sécurisé pour charger et gérer les preuves et autres artefacts liés à vos activités de conformité.
     
 - Génère des rapports détaillés dans Microsoft Excel qui documentent les activités de conformité effectuées par Microsoft et votre organisation, qui peuvent être fournis aux auditeurs, aux autorités de régulation et aux autres acteurs de la conformité.
-
-Pour une brève démonstration du Gestionnaire de conformité, regardez cette vidéo [Gestionnaire de conformité](https://www.youtube.com/watch?v=r1vs8NdSXKQ).
-
     
 > [!IMPORTANT]
 > Le Gestionnaire de conformité est un tableau de bord qui vous donne un aperçu de votre situation en matière de protection des données et de conformité, ainsi que des recommandations pour l’améliorer. Les actions du client fournies dans le Gestionnaire de conformité sont des recommandations. Il appartient à chaque organisation d’évaluer l’efficacité de ces recommandations dans leur cadre réglementaire avant de les implémenter. Les recommandations figurant dans le Gestionnaire de conformité ne peuvent en aucun cas garantir le respect des réglementations en vigueur.
@@ -830,11 +827,3 @@ Le gestionnaire de conformité est conçu pour être mis à jour régulièrement
 |B.8.4.7  <br/> |8.5.7  <br/> |
 |B.8.4.8  <br/> |8.5.8  <br/> |
 |
-   
-## <a name="see-also"></a>Voir aussi
-
-- [Guide interactif sur le gestionnaire de conformité](https://content.cloudguides.com/guides/Compliance%20Manager)
-
-- [Annonce de la mise à disposition générale du gestionnaire de conformité](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Announcing-Compliance-Manager-general-availability/ba-p/161922)
-
-- [Microsoft 365 propose une stratégie de protection des données pour se conformer au RGPD](https://blogs.office.com/2018/02/22/microsoft-365-provides-an-information-protection-strategy-to-help-with-the-gdpr)

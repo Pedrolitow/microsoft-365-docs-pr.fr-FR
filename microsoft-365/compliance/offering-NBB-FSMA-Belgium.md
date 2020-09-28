@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: ad72be958e8d028ff40dcbd483accd0dbe5c0527
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: d35e9893c54367bc62de65300613853408070c33
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47415758"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208266"
 ---
 # <a name="national-bank-of-belgium-nbb-and-the-financial-services-and-markets-authority-fsma"></a>La banque nationale de Belgique (NBB) et l’Autorité des services financiers et les marchés (FSMA)
 
@@ -29,7 +29,7 @@ Les principaux organismes de régulation financière en Belgique sont les [Banqu
 
 La NBB est chargée de la surveillance prudentielle des établissements de crédit, des assureurs, des agents de change et d’autres organisations financières. En tant que banque centrale belge, NBB mène la politique monétaire de la Belgique et contribue à la stabilité de son système financier. À côté du NBB, le FSMA supervise les marchés financiers belges, les fournisseurs de services financiers, y compris les sociétés d’investissement et les fonds de pensions supplémentaires. Ses tâches incluent une supervision des informations financières reproduites par les entreprises ainsi que les produits qu’elles proposent aux consommateurs et leur conformité avec les règles de conduite de l’entreprise.
 
-NBB et FSMA agissent ensemble l'Autorité bancaire européenne (ABE), « une autorité indépendante de l'UE qui travaille pour assurer une réglementation et une supervision prudentes, efficaces et cohérentes dans le secteur bancaire européen ». À cette fin, l'ABE a défini une approche globale de l'utilisation du cloud computing par les institutions financières de l'UE, [Recommandations sur l'externalisation vers des fournisseurs de services Cloud](https://eba.europa.eu/documents/10180/2170121/Final+draft+Recommendations+on+Cloud+Outsourcing+%28EBA-Rec-2017-03%29.pdf/5fa5cdde-3219-4e95-946d-0c0d05494362).
+NBB et FSMA agissent de concert avec l'Autorité Bancaire Européenne (ABE), « une autorité indépendante de l'UE qui travaille pour assurer une réglementation et une supervision prudentielles, efficaces et cohérentes dans le secteur Bancaire Européen ». À cette fin, l'ABE a défini une approche globale de l'utilisation du cloud computing par les institutions financières de l'UE, [Recommandations sur l'externalisation auprès de fournisseurs de services Cloud](https://eba.europa.eu/documents/10180/2170121/Final+draft+Recommendations+on+Cloud+Outsourcing+%28EBA-Rec-2017-03%29.pdf/5fa5cdde-3219-4e95-946d-0c0d05494362).
 
 Les institutions financières en Belgique doivent être conscientes de plusieurs exigences et recommandations concernant le transfert des fonctions commerciales, à savoir :
 
@@ -66,9 +66,13 @@ La liste de contrôle Microsoft permet aux entreprises financières en Belgique 
 
 Non. Toutefois, les établissements financiers doivent notifier la NBB et la FSMA en cas d’interruption d’un mécanisme d’externalisation susceptible d’avoir un impact important sur les activités de l’institution, sa réputation ou sa rentabilité, ou sa capacité à gérer les risques. et à respecter les lois et réglementations applicables.
 
-**Existe-t-il des conditions impératives devant être incluses dans le contrat avec le fournisseur de services cloud computing ?**
+**Existe-t-il des conditions impératives devant être incluses dans le contrat avec le fournisseur de services Cloud ?**
 
 Oui. Certains établissements financiers doivent s’assurer d’incorporer certains points dans leurs contrats de services cloud computing. La partie 2 de la [liste de contrôle Microsoft](https://aka.ms/FinServ-Guide-Belgium) (page 49) fait correspondre celle-ci aux sections des documents contractuels Microsoft où elle est traitée.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Utilisez le Gestionnaire de Conformité Microsoft pour évaluer vos risques
+
+[Le Gestionnaire de Conformité Microsoft](compliance-manager.md) est une fonctionnalité dans le [centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Le Gestionnaire de Conformité offre un modèle Premium pour la création d’une évaluation de ce règlement. Recherchez le modèle sur la page **modèles d’évaluation** dans le Gestionnaire de Conformité. Découvrez comment [créer des évaluations dans le Gestionnaire de Conformité](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressources
 

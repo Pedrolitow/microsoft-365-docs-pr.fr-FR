@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Obtenez une vue d’ensemble de la protection des informations Office 365 pour le RGPD. Apprenez à découvrir, classer, protéger et surveiller les données personnelles.
-ms.openlocfilehash: 83a090b214821142a312ee81463fb3c395876867
-ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
+ms.openlocfilehash: 72ce55b5ceb2ec3ff95cada481ec4aee0bbe8eef
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43919603"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197405"
 ---
 # <a name="overview-of-office-365-information-protection-for-gdpr"></a>Protection des informations Office 365 pour le RGPD - Vue d’ensemble
 
@@ -43,13 +43,13 @@ L’outil d’[évaluation RGPD](https://www.microsoft.com/cyberassessment/en/gd
 
 La première étape vers la conformité au RGPD consiste à évaluer si le RGPD s’applique à votre organisation et, si c’est le cas, dans quelle mesure. Cette analyse permet de comprendre les données traitées par votre organisation et l’endroit où elles résident.
 
-### <a name="step-1--use-compliance-score-to-view-the-regulation-requirements-and-track-your-progress"></a>Étape 1 - Utilisez le Score de conformité pour afficher les exigences en matière de règlement et suivre votre progression
+### <a name="step-1--use-compliance-manager-to-view-the-regulation-requirements-and-track-your-progress"></a>Étape 1 - Utilisez le Gestionnaire de conformité pour afficher les exigences en matière de règlement et suivre votre progression
 
-Le Score de conformité fournit des outils pour suivre, implémenter et gérer les contrôles d’audit qui permettent à votre organisation d’être conforme à différentes normes, notamment au RGPD.
+Le Gestionnaire de Conformité vous aide à suivre, implémenter et gérer les contrôles d’audit pour aider votre organisation à être conforme à différentes normes, notamment au RGPD.
 
-![Utilisation du Score de conformité et le Gestionnaire de conformité pour afficher les exigences et suivre la progression](../media/Overview-image1.png)
+![Utilisation du Gestionnaire de conformité pour afficher les exigences et suivre la progression](../media/Overview-image1.png)
 
-Pour en savoir plus, consultez la section [Score de conformité](compliance-score.md).
+Pour en savoir plus, consultez le [Gestionnaire de conformité](compliance-manager.md).
 
 ### <a name="step-2--use-content-search-and-sensitive-information-types-to-find-personal-data"></a>Étape 2 - Utilisez la recherche de contenu et les types d’informations sensibles pour rechercher des données personnelles 
 
