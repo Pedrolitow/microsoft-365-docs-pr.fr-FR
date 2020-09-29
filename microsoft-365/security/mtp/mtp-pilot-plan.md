@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: d18b3d8ede271cb0d9611d6210a3d1d32849581a
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: a52ba30aa9b89dc78e9bd5a538cb530cd7bf6e00
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195650"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305365"
 ---
 # <a name="planning-your-pilot-microsoft-threat-protection-project"></a>Planification de votre projet pilote de protection des menaces Microsoft 
 
@@ -51,7 +51,7 @@ L’étendue du projet pilote détermine la portée du test, en fonction de votr
 
 Les types de systèmes d’exploitation à évaluer doivent également être définis en fonction de la composition de l’organisation. Cela peut être le suivant : [points de terminaison Mac](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac#system-requirements), [serveurs Linux](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-linux#system-requirements), [points de terminaison windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements#supported-windows-versions), [Windows Server 2016](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements#supported-windows-versions).
 
-## <a name="use-cases"></a>Cas d'utilisation
+## <a name="use-cases"></a>Cas d’utilisation
 
 Les cas d’utilisation représentent des instructions expliquant comment l’outil testé est destiné à être consommé par les utilisateurs prévus. Celles-ci peuvent être formulées sous la forme de récits utilisateur du point de vue d’un personnage particulier, tel qu’un analyste SOC. Par exemple :
 - En tant qu’analyste SOC, je dois afficher, corréler, évaluer et gérer les alertes et les événements sur les appareils, les utilisateurs et les boîtes aux lettres de mon réseau. [Gestion des incidents]
@@ -76,9 +76,9 @@ Les critères de réussite correspondent finalement à la barre de mesure par ra
 
 Une façon de rassembler tous les éléments de votre plan peut consister à créer une carte de performance. Voir un exemple de carte de performance ci-dessous :
 
-|**Cas d’utilisation**|**Configuration requise**|**Configuration requise**|**Plan de test**|**Résultat attendu**|**État du test**|**Niveau**|**Notes**|
+|**Cas d’utilisation**|**Configuration requise**|**Configuration requise**|**Plan de test**|**Résultat attendu**|**État du test**|**Minimal**|**Notes**|
 |:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
-|Gestion des incidents|-Protection contre les menaces Microsoft </br></br>-Azure ATP </br></br>-Microsoft Defender ATP </br></br>-Sécurité des applications Cloud Microsoft (facultatif)|Voir les [conditions préalables](https://aka.ms/mtp-trial-lab) pour la préparation, l’installation et la configuration pour plus de détails |[Simuler une attaque](mtp-pilot-simulate.md) <br></br>[Examen de l’incident](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#investigate-an-incident) |Les investigateurs peuvent comprendre l’étendue et l’impact de l’incident et gérer l’incident.||||
+|Gestion des incidents|-Protection contre les menaces Microsoft </br></br>-Azure ATP </br></br>-Microsoft Defender ATP </br></br>-Sécurité des applications Cloud Microsoft (facultatif)|Voir les [conditions préalables](https://aka.ms/mtp-trial-lab) pour la préparation, l’installation et la configuration pour plus de détails |[Simuler une attaque](mtp-pilot-simulate.md) <br></br>[Examen de l’incident](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#investigate-an-incident) |Les investigateurs peuvent comprendre l’étendue et l’impact de l’incident et gérer l’incident.||||
 |AutoIR|-Protection contre les menaces Microsoft </br></br>-Azure ATP </br></br>-Microsoft Defender ATP |Voir les [conditions préalables](https://aka.ms/mtp-trial-lab) pour la préparation, l’installation et la configuration pour plus de détails <br>Activer AutoIR  |[Simuler une attaque](mtp-pilot-simulate.md) <br></br>[Enquête automatisée](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#automated-investigation-and-remediation) |Les alertes et les incidents sont automatiquement résolus par la protection contre les menaces Microsoft.||||
 |Repérage avancé|-Protection contre les menaces Microsoft </br></br>-Microsoft Defender ATP </br></br>-Office 365 ATP   |Voir les [conditions préalables](https://aka.ms/mtp-trial-lab) pour la préparation, l’installation et la configuration pour plus de détails|[Scénario de chasse avancé](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#advanced-hunting-scenario) |Les investigateurs peuvent trouver des données par le biais d’une recherche avancée, d’un pivotement vers des entités affectées et en créant des détections personnalisées.||||
 

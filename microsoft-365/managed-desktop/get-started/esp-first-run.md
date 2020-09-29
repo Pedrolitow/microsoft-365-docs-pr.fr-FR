@@ -1,6 +1,6 @@
 ---
 title: Première expérience d’utilisation avec AutoPilot et la page d’état d’enregistrement
-description: Comment déployer l’expérience ESP, les paramètres utilisés et les exceptions
+description: Comment déployer l’expérience ESP, les paramètres utilisés et les modifications apportées à la configuration
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 84656e2f0ae9d148c61c27af2a53e157cd44c171
-ms.sourcegitcommit: e6283e7c32ba9628fc45e9abc5cd4d21fb3f7ca9
+ms.openlocfilehash: 7337dd28f7940256d1753cd4c0b6309406fab2d1
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/29/2020
-ms.locfileid: "48299238"
+ms.locfileid: "48305269"
 ---
 # <a name="first-run-experience-with-autopilot-and-the-enrollment-status-page"></a>Première expérience d’utilisation avec AutoPilot et la page d’état d’enregistrement
 
@@ -49,7 +49,7 @@ Microsoft Managed Desktop utilise ces paramètres dans le profil AutoPilot utili
 |Entrez un nom     | MMD-% RAND : 11%        |
 
 > [!NOTE]
-> Bien que la rovisioning « gant blanc » ne soit activée que pour les clients dont l’option ESP est activée, elle n’est actuellement pas prise en charge dans le bureau géré Microsoft.
+> Bien que la mise en service de « gant blanc » ne soit activée que pour les clients pour lesquels ESP est activé, elle n’est actuellement pas prise en charge dans le bureau géré Microsoft.
 
 ## <a name="enrollment-status-page-settings"></a>Paramètres de la page d’état d’enregistrement
 
@@ -89,15 +89,15 @@ L’expérience se déroule comme suit :
 
 Microsoft Managed Desktop ne prend actuellement pas en charge la fonctionnalité « gant blanc » de Windows AutoPilot.
 
-## <a name="exceptions"></a>Exceptions
+## <a name="change-to-autopilot-and-enrollment-status-page-settings"></a>Modification apportée aux paramètres de la page État de l’installation et Autopilot
 
-Si le programme d’installation utilisé par Microsoft Managed Desktop ne correspond pas exactement à vos besoins, vous pouvez classer une demande pour une exception. Pour ce faire, consultez la rubrique Details in [Request an exception](../service-description/customizing.md#request-an-exception). Voici quelques exemples des types d’exceptions dont vous pouvez avoir besoin :
+Si le programme d’installation utilisé par le bureau géré par Microsoft ne correspond pas exactement à vos besoins, vous pouvez classer un ticket de support via le [portail d’administration](https://portal.azure.com/). Voici quelques exemples de types de configuration dont vous pouvez avoir besoin :
 
-### <a name="autopilot-exception"></a>Exception AutoPilot
+### <a name="autopilot-settings-change"></a>Modification des paramètres de pilotage automatique
 
 Vous souhaiterez peut-être demander un autre modèle de nom d’appareil. Toutefois, vous ne pouvez pas modifier le mode de déploiement, rejoindre Azure en tant que, paramètres de confidentialité ou type de compte d’utilisateur.
 
-### <a name="enrollment-status-page-exception"></a>Exception de page d’état d’enregistrement
+### <a name="enrollment-status-page-settings-change"></a>Modification des paramètres de page d’état d’enregistrement
 
 - Un nombre de minutes plus long pour le paramètre « afficher une erreur lorsque l’installation prend plus de temps que le nombre de minutes spécifié ».
 - Message d’erreur affiché

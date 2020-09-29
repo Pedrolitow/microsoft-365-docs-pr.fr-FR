@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f01f76ac591b4c2be9873fa87ec416939158acd3
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
-ms.translationtype: HT
+ms.openlocfilehash: 51b764e660ae36ae3476809b5fe6dae1c4ca0891
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195502"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48304961"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Fonctionnalités d’aperçu de la Protection Microsoft contre les menaces
 
@@ -42,7 +42,7 @@ Découvrez les nouvelles fonctionnalités de la préversion de la Protection Mic
 Si vous souhaitez en savoir plus sur les nouvelles fonctionnalités généralement disponibles, veuillez consulter [Nouveautés de la Protection Microsoft contre les menaces](whats-new.md).
 
 ## <a name="turn-on-preview-features"></a>Activer les fonctionnalités d’aperçu
-Vous aurez accès aux fonctionnalités à venir et pourrez ainsi nous faire part de vos commentaires pour améliorer l’expérience globale avant que ces fonctionnalités soient généralement disponibles.
+Vous aurez accès aux fonctionnalités à venir auxquelles vous pouvez faire part de vos commentaires afin d’améliorer l’expérience globale avant que des fonctionnalités soient disponibles.
 
 Activez le paramètre d’expérience de préversion pour être parmi les premiers à essayer les fonctionnalités à venir.
 
@@ -61,7 +61,6 @@ Vous savez que vous avez activé les fonctionnalités d’aperçu lorsque la cas
 Les fonctionnalités et améliorations suivantes sont actuellement disponibles en mode aperçu :
 
 - **[API Protection Microsoft contre les menaces](api-overview.md)**  : les API Protection Microsoft contre les menaces vous permettent d’automatiser les flux de travail en fonction des tableaux partagés d’incidents de recherche avancée de menaces. 
-- **[Tableau IdentityDirectoryEvents dans la recherche avancée de menaces](advanced-hunting-identitydirectoryevents-table.md)**  : recherchez les événements impliquant un contrôleur de domaine local exécutant Active Directory (AD). Ce tableau couvre un ensemble d’événements liés à l’identité, ainsi que des événements système sur le contrôleur de domaine.
-- **[Agir lors de la recherche avancée de menaces](advanced-hunting-take-action.md)**  : éliminez rapidement les menaces ou les ressources d’adresses compromises détectées lors de la [recherche avancée de menaces](advanced-hunting-overview.md).
-- **[Référence de schéma dans le portail](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**  : informez-vous sur les tableaux de schémas de recherche avancée de menaces directement dans le centre de sécurité. Outre des descriptions des tableaux et des colonnes, cette référence pratique fournit des informations sur les types d’événements pris en charge (valeurs `ActionType`) et des exemples de requêtes.
+- **[Effectuer des actions dans la chasse avancée](advanced-hunting-take-action.md)**— il doit rapidement contenir des menaces ou des ressources compromises que vous trouvez dans la [chasse avancée](advanced-hunting-overview.md).
+- **[Guide de référence de schéma dans le portail](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**: Obtenez des informations sur les tables de schéma de chasse avancées directement dans le centre de sécurité. Outre les descriptions de table et de colonne, cette référence inclut des types d’événements pris en charge ( `ActionType` valeurs) et des exemples de requêtes.
 

@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 4a698bc0d6a7c1ebadec44357b932e9b56dc0a3c
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 118d96b797e9d46b4a9912f919cafbba680a9609
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196844"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305281"
 ---
 # <a name="identitydirectoryevents"></a>IdentityDirectoryEvents
 
@@ -31,8 +31,6 @@ ms.locfileid: "48196844"
 
 **S’applique à :**
 - Protection Microsoft contre les menaces
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 Le `IdentityDirectoryEvents` tableau du schéma de [chasse avancé](advanced-hunting-overview.md) contient des événements impliquant un contrôleur de domaine local exécutant Active Directory (AD). Ce tableau capture différents événements liés à l’identité, tels que les modifications de mot de passe, l’expiration du mot de passe et les modifications de nom d’utilisateur principal (UPN). Il capture également les événements système sur le contrôleur de domaine, comme la planification des tâches et l’activité PowerShell. Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
 
@@ -57,7 +55,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `AccountDomain` | string | Domaine du compte |
 | `AccountUpn` | string | Nom d’utilisateur principal (UPN) du compte |
 | `AccountSid` | string | Identificateur de sécurité (SID) du compte |
-| `AccountObjectId` | string | Identificateur unique du compte dans Azure AD |
+| `AccountObjectId` | string | Identificateur unique du compte dans Azure Active Directory |
 | `AccountDisplayName` | string | Nom de l’utilisateur du compte affiché dans le carnet d’adresses. Il s’agit généralement d’une combinaison d’un nom donné, d’une initiation au milieu et d’un nom de famille ou nom. |
 | `DeviceName` | string | Nom de domaine complet (FQDN) du périphérique |
 | `IPAddress` | string | Adresse IP attribuée au périphérique lors de la communication |

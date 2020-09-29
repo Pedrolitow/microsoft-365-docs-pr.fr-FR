@@ -10,12 +10,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Configurer la compréhension du contenu dans le projet cortex
-ms.openlocfilehash: f0a26f0044e578928730cf4930f1524e86dff9f3
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 31c6b6dd31b3f1bc47deb8424dd847cc0af6d429
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48294869"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48304779"
 ---
 # <a name="set-up-sharepoint-syntex"></a>Configurer SharePoint Syntex
 
@@ -107,27 +107,7 @@ Si vous disposez de 300 ou plus de licences Syntex SharePoint pour SharePoint Sy
 
 Vous pouvez estimer la capacité du générateur AI qui vous convient à l’aide de la [calculatrice du générateur ai](https://powerapps.microsoft.com/ai-builder-calculator).
 
-1. Accédez au [Centre d’administration Power Platform](https://admin.powerplatform.microsoft.com/resources/capacity) pour vérifier vos crédits et l’utilisation.
-
-    > [!NOTE]
-    > L’activation de ce paramètre sur une bibliothèque de documents SharePoint n’affecte pas les modèles existants appliqués à la bibliothèque ou la possibilité d’appliquer des modèles de présentation de document à une bibliothèque. 
-    
-2. À partir de la page **créer un centre de contenu** , vous pouvez créer un site Centre de contenu SharePoint pour lequel les utilisateurs peuvent créer et gérer des modèles de présentation de documents. </br>
-    a. Dans **nom du site**, tapez le nom que vous souhaitez pour le site du centre de contenu.</br>
-    b. L' **adresse du site** indique l’URL de votre site, en fonction du nom du site.</br>
-
-    > [!NOTE] 
-    > Vous pouvez sélectionner n’importe quelle langue prise en charge, mais vous ne pouvez créer des modèles de présentation de contenu qu’en anglais.</br>
-
-      ![Créer un centre de contenu](../media/content-understanding/admin-cu-create-cc.png)</br>
-
-3. Sélectionnez **Suivant**.
-
-4. Sur la page **Terminer et vérifier** , vérifiez le paramètre que vous avez sélectionné et choisissez d’effectuer des modifications. Si vos sélections vous conviennent, sélectionnez **activer**.
-
-5. La page **content Understanding Activated** s’affiche, confirmant que le système a ajouté vos préférences de traitement de formulaire et créé le site du centre de contenu. Sélectionnez **Terminé**.
-
-6. Vous serez redirigé vers la page **automatiser le contenu** . À partir de cette page, vous pouvez sélectionner **gérer** pour modifier vos paramètres de configuration. 
+Accédez au [Centre d’administration Power Platform](https://admin.powerplatform.microsoft.com/resources/capacity) pour vérifier vos crédits et l’utilisation.
 
 ## <a name="see-also"></a>Voir aussi
 
