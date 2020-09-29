@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: Implémentez les fonctionnalités Microsoft information protection (MIP) à l’aide de la conformité Microsoft 365 pour vous aider à découvrir, classer et protéger les informations sensibles partout où elles se trouvent.
-ms.openlocfilehash: d69395523cb656d23e44b577f01338eb78c7b386
-ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
+ms.openlocfilehash: 66938804a119022b6b44664ecd8f040e3c56123f
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48277523"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295466"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft information protection dans Microsoft 365
 
@@ -50,10 +50,10 @@ Pour appliquer des actions de protection flexible qui incluent le chiffrement, l
 
 |Fonctionnalité|Quels problèmes est-il résolu ?|Prise en main|
 |:------|:------------|---------------------|:----------------------------|
-|[Étiquettes de confidentialité](sensitivity-labels.md)| Une solution unique entre les applications, les services et les appareils pour étiqueter et protéger vos données quand elles transitent à l’intérieur et à l’extérieur de votre organisation <br /><br />Exemple de scénario : [application et affichage des étiquettes de confidentialité dans Power bi et protection des données lors de leur exportation](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview)|[ Prise en main des étiquettes de confidentialité](get-started-with-sensitivity-labels.md) |
+|[Étiquettes de confidentialité](sensitivity-labels.md)| Une solution unique entre les applications, les services et les appareils pour étiqueter et protéger vos données quand elles transitent à l’intérieur et à l’extérieur de votre organisation <br /><br />Exemple de scénario : [application et affichage des étiquettes de confidentialité dans Power bi et protection des données lors de leur exportation](https://docs.microsoft.com/power-bi/admin/service-security-apply-data-sensitivity-labels)|[ Prise en main des étiquettes de confidentialité](get-started-with-sensitivity-labels.md) |
 |[Client de l’étiquetage unifié d’Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)| Pour les ordinateurs Windows, il étend les étiquettes de confidentialité pour les fonctionnalités supplémentaires qui incluent l’étiquetage et la protection de tous les types de fichiers à partir de l’Explorateur de fichiers et de PowerShell.<br /><br /> Exemples de fonctionnalités supplémentaires : [configurations personnalisées pour le client d’étiquetage unifié Azure information protection](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations)| [Guide de l’administrateur du client d’étiquetage unifié Azure information protection](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide)|
-|[Chiffrement à double clé](double-key-encryption.md)| Dans toutes les circonstances, vous seul pouvez déchiffrer le contenu protégé, ou pour les exigences réglementaires, vous devez tenir des clés de chiffrement dans une limite géographique. | [Déployer le chiffrement à double clé](double-key-encryption.md)|
-|[Chiffrement de messages Office 365](ome.md) (OME)| Chiffre les messages électroniques et les documents joints qui sont envoyés à tous les utilisateurs sur n’importe quel appareil, afin que seuls les destinataires autorisés puissent lire les informations envoyées par courrier électronique  <br /><br />Exemple de scénario : [révoquer le courrier électronique chiffré par le chiffrement de messages avancé](revoke-ome-encrypted-mail.md) | [Prise en main du chiffrement de messages Office 365](set-up-new-message-encryption-capabilities.md)|
+|[Chiffrement à double clé](double-key-encryption.md)| Dans toutes les circonstances, vous seul pouvez déchiffrer le contenu protégé, ou pour les exigences réglementaires, vous devez tenir des clés de chiffrement dans une limite géographique. | [Déployer le chiffrement à double clé](double-key-encryption.md#deploy-dke)|
+|[Chiffrement de messages Office 365](ome.md) (OME)| Chiffre les messages électroniques et les documents joints qui sont envoyés à tous les utilisateurs sur n’importe quel appareil, afin que seuls les destinataires autorisés puissent lire les informations envoyées par courrier électronique  <br /><br />Exemple de scénario : [révoquer le courrier électronique chiffré par le chiffrement de messages avancé](revoke-ome-encrypted-mail.md) | [Configurer les nouvelles fonctionnalités de chiffrement de messages](set-up-new-message-encryption-capabilities.md)|
 |[Chiffrement de service avec clé client](customer-key-overview.md) | Protège contre l’affichage des données par des systèmes ou du personnel non autorisés et complète le chiffrement de disque BitLocker dans les centres de données Microsoft | [Configurer la clé client pour Office 365](customer-key-set-up.md)|
 |[Gestion des droits relatifs à l’information (IRM) dans SharePoint](set-up-irm-in-sp-admin-center.md#irm-enable-sharepoint-document-libraries-and-lists)|Protège les listes et les bibliothèques SharePoint de sorte que lorsqu’un utilisateur extrait un document, le fichier téléchargé est protégé afin que seules les personnes autorisées puissent afficher et utiliser le fichier en fonction des stratégies que vous spécifiez. | [Set up Information Rights Management (IRM) in SharePoint admin center](set-up-irm-in-sp-admin-center.md)|
 [Connecteur RMS](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector) |Protection-uniquement pour les déploiements locaux existants qui utilisent Exchange ou SharePoint Server, ou les serveurs de fichiers qui exécutent Windows Server et l’infrastructure de classification des fichiers (ICF) | [Étapes de déploiement du connecteur RMS](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector#steps-to-deploy-the-rms-connector)
