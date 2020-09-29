@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: d4083e48033787ca46ad2374ea461b4a77d21e0d
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 84656e2f0ae9d148c61c27af2a53e157cd44c171
+ms.sourcegitcommit: e6283e7c32ba9628fc45e9abc5cd4d21fb3f7ca9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295858"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48299238"
 ---
 # <a name="first-run-experience-with-autopilot-and-the-enrollment-status-page"></a>Première expérience d’utilisation avec AutoPilot et la page d’état d’enregistrement
 
@@ -46,9 +46,10 @@ Microsoft Managed Desktop utilise ces paramètres dans le profil AutoPilot utili
 |Type de compte d’utilisateur     |  Standard       |
 |Autoriser le gant blanc OOBE     |  Oui       |
 |Appliquer le modèle de nom d’appareil     | Oui        |
-|Entrez un nom     | MMD-% RAND : 7%        |
+|Entrez un nom     | MMD-% RAND : 11%        |
 
-
+> [!NOTE]
+> Bien que la rovisioning « gant blanc » ne soit activée que pour les clients dont l’option ESP est activée, elle n’est actuellement pas prise en charge dans le bureau géré Microsoft.
 
 ## <a name="enrollment-status-page-settings"></a>Paramètres de la page d’état d’enregistrement
 
