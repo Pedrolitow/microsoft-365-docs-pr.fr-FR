@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a1c04718c1ebb798319a83155a6c70f72b0847de
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 0310226bba62995a6e72178fcf1fd2e96f462944
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208810"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48304814"
 ---
 # <a name="general-data-protection-regulation-summary"></a>Sythèse du règlement général sur la protection des données
 
@@ -129,7 +129,7 @@ Le RGPD impose qu’une DPIA inclut les éléments suivants :
 Selon le RGPD, en tant que contrôleur, vous devez effectuer les analyses d’impact sur la protection des données avant tout traitement de données pouvant potentiellement entraîner un risque élevé concernant les droits et libertés des personnes, en particulier pour les traitements utilisant les nouvelles technologies. Le RGPD fournit la liste non exhaustive suivante des cas où les analyses d’impact sur la protection des données doivent être effectuées :
 
 - Traitement automatisé à des fins de profilage et d’activités similaires ayant des conséquences légales ou un impact significatif sur les personnes concernées ;  
-- Traitement à grande échelle de catégories spéciales de données personnelles (révélant l’origine raciale ou ethnique, les opinions politiques et autres) ou de données relatives aux condamnations pénales et aux délits commis ;  
+- Traitement à grande échelle de catégories spéciales de données personnelles (révélant l’origine raciale ou ethnique, les opinions politiques et autres) ou de données relatives aux condamnations pénales et aux délits commis ;  
 - Surveillance systématique d’une zone publiquement accessible à grande échelle.  
 
 Le RGPD exige également que vous consultiez votre autorité de protection des données (DPA) avant de commencer tout traitement si vous ne pouvez pas identifier les processus suffisants pour réduire au maximum les risques élevés pour les personnes concernées. 

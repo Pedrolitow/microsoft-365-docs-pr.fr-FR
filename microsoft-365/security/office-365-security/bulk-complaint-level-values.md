@@ -16,17 +16,16 @@ ms.assetid: a5b03b3c-37dd-429e-8e9b-2c1b25031794
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent en savoir plus sur les valeurs de niveau de conformité en bloc utilisées dans Exchange Online Protection (EOP).
-ms.openlocfilehash: d59bb152de075bb807e3cae72839fe459d7da40f
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 53d0ae5fb23fb68ef970a07b2b5d8c4220775de7
+ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203526"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48318215"
 ---
 # <a name="bulk-complaint-level-bcl-in-eop"></a>Niveau de réclamation en bloc (BCL) dans EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
 
 Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection (EOP) autonomes sans boîte aux lettres Exchange Online, EOP affecte un niveau de conformité en bloc (BCL) aux messages entrants provenant de publipostages en bloc. La bibliothèque de BCL est ajoutée au message dans un en-tête X et est similaire au [seuil de probabilité de courrier indésirable (SCL)](spam-confidence-levels.md) utilisé pour identifier les messages comme courrier indésirable. Une BCL plus élevée indique qu’un message en bloc est plus susceptible de générer des plaintes (et, par conséquent, plus vraisemblablement un courrier indésirable). Microsoft utilise des sources internes et tierces pour identifier le courrier en nombre et déterminer le BCL approprié.
 
@@ -42,6 +41,8 @@ Les seuils BCL sont décrits dans le tableau suivant.
 |:---:|---|
 |0|Le message ne provient pas d'un expéditeur en bloc.|
 |1, 2, 3|Le message provient d'un expéditeur en bloc qui génère peu de réclamations.|
-|4, 5, 6, 7|Le message provient d'un expéditeur en bloc qui génère un nombre moyen de réclamations.|
+|4, 5, 6, 7<sup>\*</sup>|Le message provient d'un expéditeur en bloc qui génère un nombre moyen de réclamations.|
 |8, 9|Le message provient d’un expéditeur en bloc qui génère un grand nombre de réclamations.|
 |
+
+<sup>\*</sup> Il s’agit de la valeur de seuil par défaut utilisée dans les stratégies anti-courrier indésirable.

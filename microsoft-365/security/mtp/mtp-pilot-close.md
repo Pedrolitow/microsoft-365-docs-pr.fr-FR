@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 0a0c0c1dae1d7f03aa9c8328b3fb1b4bae587b9e
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: dbd20263fce059bc57b6a19b58f15e3f5223b4e7
+ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199708"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48318203"
 ---
 # <a name="closing-and-summarizing-your-microsoft-threat-protection-pilot"></a>Fermeture et synthèse de votre programme pilote de protection contre les menaces Microsoft  
 
@@ -37,6 +37,7 @@ Vous venez de simuler une attaque avancée en mémoire uniquement qui a exécut�
 Vous avez atteint la fin du processus une fois tous les tests terminés.
 
 La sortie finale doit être :
+
 - Une carte de performance terminée
 - Un rapport détaillé sur les résultats du projet pilote
 - Une décision concernant le déplacement vers l’avant
@@ -45,9 +46,8 @@ Ces informations doivent être présentées aux parties prenantes internes (que 
 
 Nous espérons que vous avez apprécié cette simulation et que vous êtes invité à commencer à implémenter ce que vous avez appris.
 
-
 ## <a name="next-step"></a>Étape suivante
-||
-|:-------|
-|Parcourez la [solution Microsoft 365 et le centre d’architecture](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center) pour comprendre comment concevoir la solution et l’architecture appropriées pour votre organisation.
 
+****
+
+Parcourez la [solution Microsoft 365 et le centre d’architecture](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center) pour comprendre comment concevoir la solution et l’architecture appropriées pour votre organisation.

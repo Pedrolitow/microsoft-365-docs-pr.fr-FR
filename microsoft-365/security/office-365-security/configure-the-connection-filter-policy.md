@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à configurer le filtrage des connexions dans Exchange Online Protection (EOP) pour autoriser ou bloquer les messages électroniques provenant de serveurs de messagerie.
-ms.openlocfilehash: d69ec30c9d6d812bf3bbcc6dc5b6df332d9dd0b5
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 95e178e34c944c13cd99e4d4a0e9f30ed083842c
+ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203370"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48318251"
 ---
 # <a name="configure-connection-filtering"></a>Configuration du filtrage des connexions
 
@@ -203,7 +203,6 @@ Si vous rencontrez l’un de ces scénarios, vous pouvez créer une règle de fl
 
 ## <a name="new-to-microsoft-365"></a>Nouveauté de Microsoft 365 ?
 
-|<!-- a -->|
-|---|
-|![Icône rapide pour LinkedIn Learning ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **New de Microsoft 365 ?** Découvrez les cours vidéo gratuits pour les **administrateurs et les professionnels**de l’informatique, proposés par LinkedIn Learning.|
-|
+****
+
+![Icône rapide pour LinkedIn Learning ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **New de Microsoft 365 ?** Découvrez les cours vidéo gratuits pour les **administrateurs et les professionnels de Microsoft 365**, qui vous ont été proposés par LinkedIn Learning.

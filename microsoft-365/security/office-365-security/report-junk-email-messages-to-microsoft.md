@@ -16,17 +16,16 @@ ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent découvrir les différentes façons de signaler des messages et des fichiers valides et incorrects à Microsoft pour analyse.
-ms.openlocfilehash: 040f998b09f280fc2b6bdfdac327313f9cc65c3c
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: aeaf7a779ac9ba2d879a88dd72f4a457a26096ca
+ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203652"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48318184"
 ---
 # <a name="report-messages-and-files-to-microsoft"></a>Signalez les messages et fichiers à Microsoft
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
 
 Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection (EOP) autonomes sans boîte aux lettres Exchange Online, les utilisateurs et les administrateurs disposent de différentes méthodes pour signaler des messages électroniques et des fichiers à Microsoft.
 
@@ -43,6 +42,5 @@ Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange 
 |[Utiliser des règles de flux de messagerie pour voir ce que vos utilisateurs ont signalé à Microsoft](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)|Découvrez comment créer une règle de flux de messagerie (également appelée règle de transport) qui vous avertit lorsque les utilisateurs signalent des messages à Microsoft pour analyse.
 |||
 |[Soumission de programmes malveillants et non malveillants à Microsoft pour analyse](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)|Utiliser le site d’intelligence de sécurité Microsoft pour soumettre des pièces jointes et d’autres fichiers.|
-|
 
 Si les messages de courrier indésirable ou de hameçonnage ont été mis en quarantaine au lieu d’être remis, les utilisateurs peuvent signaler les messages à Microsoft à partir du portail de mise en quarantaine dans le centre de sécurité & Compliance Center. Pour plus d’informations, consultez [la rubrique Rechercher et débloquer les messages mis en quarantaine en tant qu’utilisateur dans Microsoft 365](find-and-release-quarantined-messages-as-a-user.md).

@@ -1,5 +1,5 @@
 ---
-title: Recherche de boîtes aux lettres sur le cloud des utilisateurs locaux
+title: Recherche de données de conversations Teams pour les utilisateurs locaux
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -18,33 +18,33 @@ search.appverid:
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Utilisez l’outil recherche de contenu dans le centre de conformité et de sécurité pour rechercher et exporter des données de conversation Teams pour les utilisateurs locaux dans un déploiement hybride Exchange.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e3bb1f187faf3196dae6aa663af89dcb2b9e7e53
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 60bb207463c360d98623caed4024bb87deb5fdfc
+ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547594"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48277099"
 ---
-# <a name="searching-cloud-based-mailboxes-for-on-premises-users"></a>Recherche de boîtes aux lettres sur le cloud des utilisateurs locaux
+# <a name="search-for-teams-chat-data-for-on-premises-users"></a>Recherche de données de conversations Teams pour les utilisateurs locaux
 
-Si votre organisation dispose d'un déploiement hybride d'Exchange (ou si votre organisation synchronise une organisation Exchange sur site avec Office 365) et a activé Microsoft Teams, les utilisateurs peuvent utiliser l'application de conversation Teams pour la messagerie instantanée. Pour un utilisateur dans le cloud, les données de conversation Teams (également appelées *conversations 1xN*) sont enregistrées dans leur boîte aux lettres principale basée sur le cloud. Lorsqu’un utilisateur local utilise l’application de conversation Teams, sa boîte aux lettres principale est localisée en local. Pour contourner cette limitation, Microsoft a publié une nouvelle fonctionnalité dans laquelle une zone de stockage basée sur le cloud (appelée boîte aux lettres basée sur le cloud pour les utilisateurs locaux) est créée pour stocker les données de conversation Teams pour les utilisateurs locaux. Cela vous permet d’utiliser l’outil recherche de contenu dans le centre de sécurité et de conformité pour rechercher et exporter des données de conversation pour les utilisateurs locaux. 
+Si votre organisation dispose d'un déploiement hybride d'Exchange (ou si votre organisation synchronise une organisation Exchange sur site avec Office 365) et a activé Microsoft Teams, les utilisateurs locaux peuvent utiliser l'application de conversation Teams pour la messagerie instantanée. Pour un utilisateur dans le cloud, les données de conversation Teams (également appelées *1x1 ou conversations 1x1*) sont enregistrées dans sa boîte aux lettres principale basée sur le cloud. Lorsqu’un utilisateur local utilise l’application de conversation Teams, ses messages de conversation ne peuvent pas être stockés dans sa boîte aux lettres principale qui se situe en local. Pour contourner cette limitation, Microsoft a publié une nouvelle fonctionnalité dans laquelle une zone de stockage basée sur le cloud est crée pour que vous utilisiez les outils eDiscovery pour rechercher et exporter des données de conversation Teams pour les utilisateurs locaux.
   
-Voici la configuration requise et les limitations applicables à la configuration de boîtes aux lettres cloud pour les utilisateurs locaux :
+Voici la configuration requise et les limitations applicables à l’activation du stockage cloud pour les utilisateurs locaux :
   
 - Les comptes d’utilisateurs dans votre service d’annuaire local (par exemple, Active Directory) doivent être synchronisés avec Azure Active Directory (service d’annuaire dans Microsoft 365). Cela signifie qu’un compte d’utilisateur de courrier est créé dans Microsoft 365 et est associé à un utilisateur dont la boîte aux lettres principale se trouve dans l’organisation locale.
 
 - Une licence Microsoft Teams doit être attribuée à l’utilisateur dont la boîte aux lettres principale se trouve dans l’organisation locale et au minimum d’une licence Exchange Online (plan 1).
 
-- La boîte aux lettres basée sur le cloud pour les utilisateurs locaux est utilisée uniquement les données de conversation Tems de stockage. Un utilisateur local ne peut pas se connecter à la boîte aux lettres basée sur le cloud ou à un accès de quelque manière que ce soit. Il ne peut pas être utilisé pour envoyer ou recevoir des e-mails. 
+- Seules les données de conversation Teams associées à un utilisateur local sont stockées dans la zone de stockage basée sur le cloud. Un utilisateur local ne peut en aucune façon accéder à cette zone de stockage.
 
-- Vous devez envoyer une demande de Support Microsoft pour permettre à votre organisation de rechercher des équipes dans les boîtes aux lettres dans le cloud pour les utilisateurs locaux. Consultez [Classement d’une demande auprès du Support Microsoft pour activer cette fonctionnalité](#filing-a-request-with-microsoft-support-to-enable-this-feature) dans cet article. 
+- Vous devez envoyer une demande de Support Microsoft pour autoriser votre organisation à rechercher des données de conversations Teams pour les utilisateurs locaux. Consultez [Classement d’une demande auprès du Support Microsoft pour activer cette fonctionnalité](#filing-a-request-with-microsoft-support-to-enable-this-feature) dans cet article.
 
 > [!NOTE]
 > Les conversations pa canaux Teams sont toujours stockées dans la boîte aux lettres basée sur le cloud qui est associée à Teams. Cela signifie que vous pouvez utiliser la recherche de contenu pour rechercher des conversations de canal sans avoir à classer une demande de support. Pour plus d’informations sur la recherche conversations par canaux Teams, consultez[Recherche Microsoft Teams et Groupes Microsoft 365](content-search.md#searching-microsoft-teams-and-microsoft-365-groups).
   
 ## <a name="how-it-works"></a>Mode de fonctionnement
 
-Si un utilisateur de Microsoft Teams a une boîte aux lettres locale et que son compte d’utilisateur/son identité est synchronisé avec le cloud, Microsoft crée une boîte aux lettres basée sur le cloud pour stocker les données de conversation de 1xN Teams. Une fois les données de conversation Teams stockées dans la boîte aux lettres basée sur le cloud, celles-ci sont indexées pour la recherche. Cela vous permet d’utiliser la recherche de contenu (et les recherches associées à des cas eDiscovery) pour rechercher, afficher un aperçu et exporter des données de conversation pour les utilisateurs locaux. Vous pouvez également utiliser les applets de commande**\*ComplianceSearch**dans le centre de conformité et de sécurité PowerShell pour rechercher des données de conversation Teams pour les utilisateurs locaux. 
+Si un utilisateur Microsoft Teams a une boîte aux lettres locale et que son compte d’utilisateur/son identité est synchronisé avec le cloud, Microsoft crée un stockage dans le cloud pour l’associer aux données de conversations Teams 1xN de l’utilisateur local. Les données de conversations Teams pour les utilisateurs locaux sont indexées pour la recherche. Cela vous permet d’utiliser la recherche de contenu (et les recherches associées à des cas Core et Advanced eDiscovery) pour rechercher, afficher un aperçu et exporter des données de conversation Teams pour les utilisateurs locaux. Vous pouvez également utiliser les applets de commande**\*ComplianceSearch**dans le centre de conformité et de sécurité PowerShell pour rechercher des données de conversation Teams pour les utilisateurs locaux.
   
 Le graphique suivant montre comment Teams peut consulter les données de conversation pour les utilisateurs locaux pour pouvoir effectuer des recherches, des aperçus et des exportations.
   
@@ -54,7 +54,7 @@ En plus de cette nouvelle fonctionnalité, vous pouvez encore utiliser la recher
 
 ## <a name="filing-a-request-with-microsoft-support-to-enable-this-feature"></a>Classement d’une demande auprès du Support Microsoft pour activer cette fonctionnalité
 
-Vous devez effectuer une demande auprès du Support Microsoft pour autoriser votre organisation à utiliser l’interface utilisateur graphique dans le centre de conformité et sécurité pour rechercher des équipes dans les boîtes aux lettres en ligne des utilisateurs locaux. Cette fonctionnalité est disponible dans le centre de conformité et sécurité PowerShell. Vous n’êtes pas obligé de soumettre une demande de support pour utiliser PowerShell pour rechercher des données de conversation Teams pour les utilisateurs locaux.
+Vous devez effectuer une demande auprès du Support Microsoft pour autoriser votre organisation à utiliser l’interface utilisateur graphique dans le centre de conformité et sécurité pour rechercher des données de conversations Teams pour des utilisateurs locaux. Cette fonctionnalité est disponible dans le centre de conformité et sécurité PowerShell. Vous n’êtes pas obligé de soumettre une demande de support pour utiliser PowerShell pour rechercher des données de conversation Teams pour les utilisateurs locaux.
   
 Fournissez les informations suivantes lorsque vous envoyez la demande au Support Microsoft :
   
@@ -76,9 +76,9 @@ Une fois cette fonctionnalité déployée dans votre organisation, les modificat
   
 - Les utilisateurs locaux sont affichés dans le sélecteur d’emplacements de contenu que vous utilisez pour sélectionner les boîtes aux lettres d’utilisateur à rechercher.
 
-## <a name="searching-for-teams-chat-content-in-cloud-based-mailboxes-for-on-premises-users"></a>Recherche du contenu de conversation Teams dans les boîtes aux lettres sur le cloud des utilisateurs locaux
+## <a name="searching-for-teams-chat-content-for-on-premises-users"></a>Recherche du contenu de conversations Teams pour des utilisateurs locaux
 
-Une fois la fonctionnalité activée, vous pouvez utiliser la recherche de contenu dans le centre de conformité et sécurité pour rechercher des données de conversation Teams dans les boîtes aux lettres basées sur le cloud pour les utilisateurs locaux.
+Une fois la fonctionnalité activée, vous pouvez utiliser la recherche de contenu dans le centre de conformité et sécurité pour rechercher des données de conversation Teams pour les utilisateurs locaux.
   
 1. Dans le Centre de sécurité et conformité, accédez à **Rechercher** \> **Recherche de contenu**
 
@@ -94,11 +94,11 @@ Une fois la fonctionnalité activée, vous pouvez utiliser la recherche de conte
 
 4. À ce stade, vous pouvez choisir l’une des options suivantes sous **Emplacements**:
 
-    - **Tous les emplacements :** sélectionnez cette option pour effectuer une recherche dans les boîtes aux lettres de tous les utilisateurs de votre organisation. Lorsque la case est cochée, toutes les boîtes aux lettres basées sur le cloud pour les utilisateurs locaux sont également recherchées.
+    - **Tous les emplacements :** sélectionnez cette option pour effectuer une recherche dans les boîtes aux lettres de tous les utilisateurs de votre organisation. Lorsque la case est cochée, l’ensemble du stockage cloud des conversations Teams pour les utilisateurs locaux sont également recherchées.
 
-    - **Emplacements spécifiques :** sélectionnez cette option, puis cliquez sur **Modifier** \> Choisir un utilisateur, groupes ou équipes pour rechercher des boîtes aux lettres spécifiques. Comme indiqué précédemment, le sélecteur d’emplacements vous permet de rechercher des utilisateurs locaux.
+    - **Emplacements spécifiques :** sélectionnez cette option, puis cliquez sur **Modifier** \> Choisir un utilisateur, groupes ou équipes pour rechercher des boîtes aux lettres spécifiques. Comme indiqué précédemment, le sélecteur d’emplacements vous permet de rechercher des données de conversations Teams pour des utilisateurs locaux.
 
-5. Enregistrez et exécutez la recherche. Les résultats de recherche des boîtes aux lettres dans le cloud des utilisateurs locaux peuvent être prévisualisés comme tout autre résultat de recherche. Vous pouvez également exporter les résultats de la recherche (y compris les données de conversation des équipes) vers un fichier PST. Pour plus d’informations, voir : 
+5. Enregistrez et exécutez la recherche. Les résultats de recherche pour des utilisateurs locaux peuvent être prévisualisés comme tout autre résultat de recherche. Vous pouvez également exporter les résultats de la recherche (y compris les données de conversation des équipes) vers un fichier PST. Pour plus d’informations, voir :
 
     - [Créer une recherche](content-search.md#create-a-search)
 
@@ -106,21 +106,21 @@ Une fois la fonctionnalité activée, vous pouvez utiliser la recherche de conte
 
     - [Exporter les résultats de la recherche de contenu](export-search-results.md)
 
-## <a name="using-powershell-to-search-for-teams-chat-data-in-cloud-based-mailboxes-for-on-premises-users"></a>Utiliser PowerShell pour rechercher des données de conversation Teams dans les boîtes aux lettres sur le cloud des utilisateurs locaux
+## <a name="using-powershell-to-search-for-teams-chat-data-for-on-premises-users"></a>Utilisation de PowerShell pour la recherche de données de conversations Teams pour les utilisateurs locaux
 
-Vous pouvez utiliser les applets de commande **New-ComplianceSearch** et **ComplianceSearch** dans le centre de sécurité et conformité PowerShell pour effectuer une recherche dans la boîte aux lettres basée sur le Cloud pour les utilisateurs locaux. Comme indiqué précédemment, vous n’êtes pas obligé de soumettre une demande de support pour utiliser PowerShell pour rechercher des données de conversation Teams pour les utilisateurs locaux. 
+Vous pouvez utiliser les applets de commande **New-ComplianceSearch** et **ComplianceSearch** dans le centre de sécurité et conformité PowerShell pour effectuer une recherche de données de conversations Teams pour les utilisateurs locaux. Comme indiqué précédemment, vous n’êtes pas obligé de soumettre une demande de support pour utiliser PowerShell pour rechercher des données de conversation Teams pour les utilisateurs locaux.
   
 1. [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
-2. Exécutez la commande PowerShell suivante pour créer une recherche de contenu qui recherche dans les boîtes aux lettres basées sur le cloud des utilisateurs locaux.
+2. Exécutez la commande PowerShell suivante pour créer une recherche de contenu qui recherche des données de conversations Teams pour des utilisateurs locaux.
 
     ```powershell
     New-ComplianceSearch <name of new search> -ContentMatchQuery <search query> -ExchangeLocation <on-premises user> -IncludeUserAppContent $true -AllowNotFoundExchangeLocationsEnabled $true  
     ```
 
-    Le paramètre *IncludeUserAppContent* est utilisé pour spécifier la boîte aux lettres basée sur le cloud pour l’utilisateur ou les utilisateurs spécifiés par le paramètre *ExchangeLocation*. La *AllowNotFoundExchangeLocationsEnabled* autorise les boîtes aux lettres basées sur le cloud pour les utilisateurs locaux. Lorsque vous utilisez la valeur `$true` pour ce paramètre, la recherche n’essaie pas de valider l’existence de la boîte aux lettres avant son exécution. Celle-ci est nécessaire pour effectuer des recherches dans les boîtes aux lettres basées sur le cloud pour les utilisateurs locaux, car ces types de boîtes aux lettres ne sont pas résolus comme des boîtes aux lettres normales.
+    Le paramètre *IncludeUserAppContent* est utilisé pour spécifier le stockage cloud pour l’utilisateur ou les utilisateurs spécifiés par le paramètre *ExchangeLocation*. *AllowNotFoundExchangeLocationsEnabled* vous permet d’effectuer une recherche dans le stockage cloud pour les utilisateurs locaux. Lorsque vous utilisez la valeur `$true` pour ce paramètre, la recherche n’essaie pas de valider l’existence de la boîte aux lettres avant son exécution. Celle-ci est nécessaire pour effectuer des recherches dans le stockage cloud des utilisateurs locaux, car ce stockage cloud n’est pas résolu comme une boîte aux lettres cloud normale.
 
-    L’exemple suivant recherche les conversations Teams (messages instantanés) qui contiennent le mot clé « redstone » dans la boîte aux lettres basée sur le cloud de Marie Davis, utilisateur local de l’organisation Contoso.
+    L’exemple suivant recherche les conversations Teams (messages instantanés) qui contiennent le mot clé « redstone » dans le stockage basé sur le cloud de Marie Davis, utilisateur local de l’organisation Contoso.
   
     ```powershell
     New-ComplianceSearch "Redstone_Search" -ContentMatchQuery "redstone AND kind:im" -ExchangeLocation sarad@contoso.com -IncludeUserAppContent $true -AllowNotFoundExchangeLocationsEnabled $true  
@@ -138,13 +138,13 @@ Pour plus d’informations sur l’utilisation de ces applets de commande, consu
 
 ## <a name="known-issues"></a>Problèmes connus
 
-- Pour l’instant, vous pouvez rechercher, afficher un aperçu et exporter du contenu dans les boîtes aux lettres dans le cloud pour les utilisateurs locaux. Vous pouvez également placer une boîte aux lettres basée sur le cloud pour un utilisateur local sur une conservation associée à un cas de découverte électronique, et appliquer une stratégie de rétention pour les conversations ou les messages de canal aux boîtes aux lettres dans le cloud pour les utilisateurs locaux. Pour l’instant, vous ne pouvez pas appliquer une stratégie de rétention pour d’autres emplacements de contenu (tels que les boîtes aux lettres Exchange et les sites SharePoint) aux boîtes aux lettres basées sur le cloud pour les utilisateurs locaux.
+- Pour l’instant, vous pouvez rechercher, afficher un aperçu et exporter des données de conversations Teams pour les utilisateurs locaux. Vous pouvez également placer en attente des données de conversations Teams pour un utilisateur local sur un cas Core ou Advanced eDiscovery, et appliquer une stratégie de rétention pour les conversations Teams ou les messages de canal pour les utilisateurs locaux. Pour l’instant, vous ne pouvez pas appliquer une stratégie de rétention pour d’autres emplacements de contenu (tels que les boîtes aux lettres Exchange et les sites SharePoint) pour les utilisateurs locaux.
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
- **Où se trouvent les boîtes aux lettres sur le cloud des utilisateurs locaux ?**
+ **Où se trouve le stockage cloud pour les utilisateurs locaux ?**
   
-Les boîtes aux lettres basées sur le cloud sont créées et stockées dans le même centre de données que votre organisation.
+Le stockage sur le cloud est configuré dans le même centre de données que votre organisation.
   
  **Y a-t-il d’autres programmes requis que l’envoi d’une demande de support ?**
   
@@ -156,12 +156,12 @@ Non. Lorsque vous migrez la boîte aux lettres principale d’un utilisateur loc
   
  **Puis-je appliquer une conservation eDiscovery ou des stratégies de rétention à des utilisateurs locaux ?**
   
-Oui. Vous pouvez appliquer des conservations eDiscovery ou des stratégies de rétention pour les conversations Teams et les messages de canaux vers les boîtes aux lettres dans le cloud pour les utilisateurs locaux.
+Oui. Vous pouvez appliquer des conservations eDiscovery ou des stratégies de rétention pour les conversations Teams et les messages de canaux pour les utilisateurs locaux.
   
- **Possibilité de rechercher du contenu Rechercher des conversations plus anciennes Teams pour les utilisateurs locaux avant que mon organisation ait soumis la demande d’activation de cette fonctionnalité ?**
+ **La recherche de contenu peut-elle trouver des données de conversations plus anciennes Teams pour les utilisateurs locaux avant que mon organisation ait soumis la demande d’activation de cette fonctionnalité ?**
   
-Microsoft a commencé à stocker les informations de conversation Teams pour les utilisateurs locaux le 31 janvier 2018. Par conséquent, si l’identité d’un utilisateur Teams locale a été synchronisée entre Active Directory et Azure Active Directory depuis cette date, ses données de conversation Teams sont stockées dans une boîte aux lettres basée sur le cloud et peut faire l’objet d’une recherche à l’aide de la recherche de contenu. Microsoft travaille également au stockage des données de conversation Teams antérieures au 31 janvier 2018 dans les boîtes aux lettres basées sur le cloud pour les utilisateurs locaux. Des informations supplémentaires sont disponibles prochainement.
+Microsoft a commencé à stocker des données de conversations Teams pour les utilisateurs locaux le 31 janvier 2018. Par conséquent, si l’identité d’un utilisateur Teams locale a été synchronisée entre Active Directory et Azure Active Directory depuis cette date, ses données de conversation Teams sont stockées sur le cloud et peut faire l’objet d’une recherche à l’aide de la recherche de contenu. Microsoft travaille également au stockage des données de conversation Teams antérieures au 31 janvier 2018 dans le stockage sur le cloud pour les utilisateurs locaux. Des informations supplémentaires seront disponibles prochainement.
 
- **Les utilisateurs locaux ont besoin d’une licence pour stocker les données de conversation Teams dans une boîte aux lettres dans le cloud ?**
+ **Les utilisateurs locaux ont-ils besoin d’une licence pour stocker leurs données de conversations Teams dans le cloud ?**
   
-Oui. Pour stocker les informations de conversation Teams pour un utilisateur local dans une boîte aux lettres dans le cloud, l’utilisateur doit avoir une licence Microsoft Teams et une licence Exchange Online plan dans Office 365 (ou Microsoft 365).
+Oui. Pour stocker les données de conversations Teams pour un utilisateur local dans un stockage basé sur le cloud, l’utilisateur doit avoir une licence Microsoft Teams et une licence Exchange Online plan dans Office 365 (ou Microsoft 365).
