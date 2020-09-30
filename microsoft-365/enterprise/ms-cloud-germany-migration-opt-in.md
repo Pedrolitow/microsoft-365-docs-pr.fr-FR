@@ -19,22 +19,22 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Résumé : '
-ms.openlocfilehash: a4252a357891fc978d8b40747c5ad5741786b290
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 2e5e5053ff1539b3fa92175115c8c9db3abc81ce
+ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46689589"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48309046"
 ---
 # <a name="how-to-opt-in-for-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Comment opter pour la migration de Microsoft Cloud Allemagne (Microsoft Cloud Deutschland) vers les services Office 365 dans les nouvelles régions de centres de données allemandes
 
 >[!Note]
->Cet article s’applique uniquement aux clients Microsoft Cloud Allemagne/Deutschland éligibles.
+>Cet article s’applique uniquement aux clients Microsoft Cloud Germany (Microsoft Cloud Deutschland).
 >
 
 ## <a name="how-to-request-migration"></a>Comment demander une migration
 
-Les clients éligibles disposant d’un service distribué dans Microsoft Cloud Allemagne verront une page dans le Centre d’administration Microsoft 365 qui permettra à un administrateur client d’opter pour la migration.
+Les clients éligibles avec service mis en service dans Microsoft Cloud Germany (Microsoft Cloud Deutschland) verront une page dans le centre d’administration 365 de Microsoft qui permettra à un administrateur client du client d’opter pour la migration.
 
 Pour accéder à la page dans le Centre d'administration Microsoft 365, dans le volet de navigation de gauche, développez **Paramètres**, puis cliquez sur **Profil de l'organisation**.
 
@@ -54,7 +54,13 @@ Une fois qu’un administrateur a choisi de participer pour votre client, tous l
 
 ## <a name="what-happens-after-opting-in-for-migration"></a>Que se passe-t-il après avoir opté pour la migration ?
 
-Pour les organisations qui choisissent d’adopter l’approche dirigée par Microsoft, les migrations doivent se produire en 2020.  Suite à la migration, les données client principales et les abonnements sont transférés vers les nouvelles régions allemandes.  Microsoft enverra les mises à jour tout au long du processus de migration dans le Centre de messages.
+Les migrations débuteront en début de 2021 pour les organisations qui s’abonnent à l’approche Microsoft et seront terminées avant la date de retraite de Microsoft Cloud Germany (Microsoft Cloud Deutschland) le 29 octobre 2021.  Suite à la migration, les données client principales et les abonnements sont transférés vers les nouvelles régions allemandes.  Microsoft enverra les mises à jour tout au long du processus de migration dans le Centre de messages.  Consultez les articles ci-dessous pour en savoir plus.
+
+## <a name="what-happens-if-the-customer-tenant-administrator-does-not-opt-in-for-migration-in-admin-center"></a>Que se passe-t-il si l’administrateur client de client n’opte pas pour la migration dans le centre d’administration ?
+
+Les conditions des services en ligne ont été modifiées de manière à inclure des termes permettant à Microsoft de migrer vos données et abonnements Microsoft 365, Dynamics 365 et Power BI à partir de Microsoft Cloud Deutschland vers un nouveau centre de données. Ces termes prennent effet sur un abonnement Microsoft Cloud Germany (Microsoft Cloud Deutschland) renouvelé depuis le 1er mai 2020.  L’administrateur client client reçoit une notification dans le centre de messages et de messagerie Conseil pour signaler que l’option de migration est automatiquement exécutée pour une migration assistée par Microsoft. Cette notification sera envoyée au moins 30 jours avant l’inscription automatique.  Après la migration, toutes les communications et les mises à jour d’État sont envoyées aux administrateurs clients client dans le centre de messages.
+
+Les administrateurs clients client et partenaire sont encouragés à opter pour la migration dans le centre d’administration afin que le processus de migration puisse commencer dès que possible.
 
 ## <a name="more-information"></a>Plus d’informations
 

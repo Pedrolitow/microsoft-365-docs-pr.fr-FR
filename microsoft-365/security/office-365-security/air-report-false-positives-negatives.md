@@ -1,6 +1,6 @@
 ---
-title: Comment faire pour signaler les faux positifs ou les faux négatifs dans Office 365 automatisation de l’analyse et de la réponse
-description: Un message a-t-il été manqué ou incorrectement détecté par Office 365 Advanced Threat Protection ? Découvrez comment soumettre des faux positifs ou faux négatifs à Microsoft pour analyse.
+title: Comment signaler les faux positifs ou les faux négatifs après une enquête automatisée dans Microsoft Defender pour Office 365
+description: Un message a-t-il été manqué ou incorrectement détecté par AIR dans Microsoft Defender pour Office 365 ? Découvrez comment soumettre des faux positifs ou faux négatifs à Microsoft pour analyse.
 keywords: automatisation, analyse, alerte, déclencheur, action, correction, faux positif, faux négatif
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -11,20 +11,21 @@ f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
-ms.date: 05/15/2020
+ms.date: 09/29/2020
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
-ms.custom: autoir
-ms.openlocfilehash: 66b81a474ff81df57c0b2a59672b17061f7235cb
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.custom:
+- autoir
+ms.openlocfilehash: fa6b4ae03a3cf62398a270d65a29e6b4c955173a
+ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196075"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48308931"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Comment signaler les faux positifs/négatifs dans les fonctionnalités d’analyse et de réponse automatisées
 
@@ -32,7 +33,7 @@ ms.locfileid: "48196075"
 
 
 **S’applique à :**
-- Office 365 – Protection avancée contre les menaces
+- Microsoft Defender pour Office 365
 
 [Les fonctionnalités d’analyse et de réponse automatisées (air) d’Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office) manquent ou détectent-elles mal ? Il existe des étapes que vous pouvez suivre pour résoudre ce problème. Vous pouvez :
 - [Signaler un faux positif/négatif à Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis);
@@ -43,7 +44,7 @@ Utilisez cet article comme guide.
 
 ## <a name="report-a-false-positivenegative-to-microsoft-for-analysis"></a>Signaler un faux positif/négatif à Microsoft pour analyse
 
-Si Office 365 AIR n’a pas manqué un message électronique, une pièce jointe de message électronique, une URL dans un message électronique ou une URL dans un fichier Office, vous pouvez [Envoyer des messages indésirables, hameçons, URL et fichiers suspects à Microsoft pour l’analyse d’office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission).
+Si Microsoft Defender pour Office 365 n’a pas manqué un message électronique, une pièce jointe à un message électronique, une URL dans un message électronique ou une URL dans un fichier Office, vous pouvez [soumettre des analyses de courrier indésirable, de hameçonnage, d’URL et de fichiers à Microsoft pour Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission).
 
 Vous pouvez également [Envoyer un fichier à Microsoft pour analyse contre les programmes malveillants](https://www.microsoft.com/wdsi/filesubmission).
 
@@ -51,7 +52,7 @@ Vous pouvez également [Envoyer un fichier à Microsoft pour analyse contre les 
 
 Si une alerte est déclenchée par une utilisation légitime ou si l’alerte est incorrecte, vous pouvez [gérer les alertes dans le portail de sécurité des applications Cloud](https://docs.microsoft.com/cloud-app-security/managing-alerts).
 
-Si votre organisation utilise la [protection avancée contre les menaces Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection) en plus d’Office 365 et qu’un fichier, une adresse IP, une URL ou un domaine est traité comme un programme malveillant sur un appareil, même s’il est sûr, vous pouvez [créer un indicateur personnalisé avec une action « autoriser » pour votre appareil](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).
+Si votre organisation utilise [Microsoft Defender pour le point de terminaison](https://docs.microsoft.com/windows/security/threat-protection) en plus d’Office 365 et qu’un fichier, une adresse IP, une URL ou un domaine est traité comme un programme malveillant sur un appareil, même s’il est sûr, vous pouvez [créer un indicateur personnalisé avec une action « autoriser » pour votre appareil](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).
 
 ## <a name="undo-a-remediation-action"></a>Annuler une action de correction
 
@@ -66,7 +67,7 @@ Avec l’Explorateur de menaces, votre équipe des opérations de sécurité peu
 
 ****
 
-|Scénario|Options d’annulation|Si vous souhaitez en savoir plus|
+|Scénario|Options d’annulation|En savoir plus|
 |---|---|---|
 |Un message électronique a été acheminé vers le dossier de courrier indésirable d’un utilisateur|-Déplacer le message vers le dossier éléments supprimés de l’utilisateur<br/>-Déplacer le message vers la boîte de réception de l’utilisateur <br/>-Supprimer le message|[Rechercher et identifier les courriers électroniques malveillants remis dans Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered)|
 |Un message électronique ou un fichier a été mis en quarantaine|-Libérer le courrier électronique ou le fichier <br/>-Supprimer le message électronique ou le fichier|[Gestion des messages et des fichiers mis en quarantaine en tant qu’administrateur dans Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/manage-quarantined-messages-and-files)|
@@ -90,6 +91,6 @@ Dans le centre de notifications, vous pouvez voir les actions de correction qui 
 
 ## <a name="related-articles"></a>Articles connexes
 
-[Protection avancée contre les menaces dans Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)
+[Microsoft Defender pour Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)
 
-[Prise en main de l’analyse et de la réponse automatisées (AIR) dans Office 365](office-365-air.md)
+[AIR dans Microsoft Defender pour Office 365](office-365-air.md)

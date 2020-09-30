@@ -15,12 +15,13 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Pendant et après une enquête automatisée dans Microsoft 365, vous pouvez afficher les résultats et les résultats clés.
-ms.openlocfilehash: 6137edf741dc2ef21ec4e046b1985dd3f85b5720
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.date: 09/29/2020
+ms.openlocfilehash: df0eaa54d8bc1c9cd6c91b6b36958e1eb0d2bfd6
+ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197690"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48309105"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Détails et résultats d’une enquête automatisée dans Microsoft 365
 
@@ -144,10 +145,14 @@ Dans l’onglet **e-mail** pour une enquête, vous pouvez voir les courriers él
 
 peut prendre beaucoup de temps. AIR automatise ce processus en enregistrant le temps et les efforts de l’équipe de sécurité de votre organisation.
 
-Il est possible d’identifier deux types différents de clusters de messagerie lors de l’analyse du courrier : les clusters de similitudes et les clusters d’indicateurs.
+Trois types de clusters de messagerie différents peuvent être identifiés lors de l’analyse du courrier : les clusters de similarité (toutes les enquêtes), les clusters d’indicateurs (toutes les enquêtes) et les clusters de boîtes aux lettres/utilisateurs.
 
 - Les clusters de similarité sont des messages électroniques identifiés par la chasse aux courriers électroniques avec des attributs d’expéditeur et de contenu similaires. Ces clusters sont évalués pour le contenu malveillant en fonction des résultats de la détection d’origine. Les clusters de messagerie qui contiennent suffisamment de détections de courriers électroniques malveillants sont considérés comme malveillants.
-- Les clusters d’indicateurs sont des messages électroniques identifiés par la chasse à la même entité d’indicateur (hachage de fichier ou URL) à partir du message d’origine. Lorsque l’entité fichier/URL d’origine est identifiée comme malveillante, AIR applique le verdict de l’indicateur à l’ensemble du cluster de messages contenant cette entité. Un fichier identifié comme un programme malveillant signifie que le cluster de messages électroniques contenant ce fichier est traité comme un message électronique de programme malveillant.
+- Les clusters d’indicateurs sont des messages électroniques identifiés par la chasse à la même entité d’indicateur (hachage de fichier ou URL) à partir du message d’origine. Lorsque l’entité fichier/URL ouserriginal est identifiée comme malveillante, AIR applique le verdict de l’indicateur à l’ensemble du cluster de messages contenant cette entité. Un fichier identifié comme un programme malveillant signifie que le cluster de messages électroniques contenant ce fichier est traité comme un message électronique de programme malveillant.
+- Les clusters de boîtes aux lettres/utilisateurs sont des messages électroniques liés à l’utilisateur impliqué dans une enquête de compromission d’un utilisateur.  Notez que ces clusters de messagerie sont destinés à une analyse plus poussée par l’équipe des opérations de sécurité et ne génèrent pas d’actions de correction de messagerie.  Les clusters d’utilisateurs/boîtes aux lettres de manifeste de compromission examinent les e-mails envoyés par l’utilisateur en cours d’analyse, afin de comprendre l’impact potentiel des messages envoyés à partir de la boîte aux lettres :
+    - Les courriers électroniques malveillants envoyés à partir de la boîte aux lettres ou de l’utilisateur, qui indiquent une éventuelle compromission de la boîte aux lettres/du compte et affichent d’autres utilisateurs/boîtes aux lettres susceptibles d’avoir un impact sur les messages envoyés comme faisant partie d’un compromis.
+    - E-mails suspects envoyés par la boîte aux lettres ou l’utilisateur, affichant les courriers indésirables/en masse envoyés à partir de la boîte aux lettres, qui peuvent être liés à une compromission potentielle ou au moins indiquer une activité potentielle indésirable à partir du compte de messagerie.
+    - Nettoyez les e-mails envoyés par la boîte aux lettres/l’utilisateur, qui fournira à l’équipe des opérations de sécurité une vue des messages électroniques légitimes envoyés, mais peut inclure l’exfiltration des données lorsque le compte de messagerie est compromis.
 
 L’objectif du clustering est de rechercher d’autres messages électroniques associés envoyés par le même expéditeur dans le cadre d’une attaque ou d’une campagne.  Dans certains cas, les messages légitimes peuvent déclencher une enquête (par exemple, un utilisateur signale un courrier électronique marketing).  Dans ces scénarios, le clustering de messagerie doit identifier les clusters de messagerie qui ne sont pas malveillants : lorsqu’il le fait de manière appropriée, il n’indique **pas** de menace ni ne recommande la suppression des messages.
 
@@ -155,7 +160,7 @@ L’onglet **courrier** électronique affiche également les éléments de courr
 
 Le nombre de messages identifiés dans l’onglet e-mail représente actuellement la somme totale de tous les messages électroniques affichés dans l’onglet **e-mail** . Étant donné que les messages électroniques sont présents dans plusieurs clusters, le nombre total réel de messages électroniques identifiés (et affectés par les actions de correction) est le nombre de messages électroniques uniques présents sur tous les clusters et les messages électroniques des destinataires d’origine.
 
-L’Explorateur et l’AIR envoient les messages électroniques par destinataire, étant donné que les verdicts de sécurité, les actions et les emplacements de remise varient selon les destinataires. Par conséquent, un message électronique d’origine envoyé à trois utilisateurs est compté comme un total de trois messages électroniques au lieu d’un seul. Remarque dans certains cas, un courrier électronique est compté deux ou plusieurs fois, car le courrier électronique peut avoir plusieurs actions et il peut y avoir plusieurs copies de l’e-mail une fois toutes les actions effectuées. Par exemple, un courrier indésirable détecté lors de la remise peut entraîner le blocage du courrier électronique (mis en quarantaine) et le remplacement du courrier électronique (fichier de menace remplacé par un fichier d’avertissement, puis remis à la boîte aux lettres de l’utilisateur). Étant donné qu’il existe littéralement deux copies du courrier électronique dans le système, les deux peuvent être comptés dans le compte du cluster.
+L’Explorateur et l’AIR comptent tous les deux par destinataire, car les verdicts de sécurité, les actions et les emplacements de remise varient selon les destinataires. Ainsi, un message électronique d’origine envoyé à trois utilisateurs compte au total trois messages électroniques au lieu d’un seul. Dans certains cas, un message électronique est compté deux ou plusieurs fois, par exemple lorsqu’un courrier électronique comporte plusieurs actions, ou lorsqu’il y a plusieurs copies de l’e-mail lorsque toutes les actions se produisent. Par exemple, un courrier indésirable détecté lors de la remise peut entraîner l’envoi d’un message électronique bloqué (mis en quarantaine) et d’un message électronique remplacé (fichier de menace remplacé par un fichier d’avertissement, puis remis à la boîte aux lettres de l’utilisateur). Étant donné qu’il y a littéralement deux copies du courrier électronique dans le système, les deux peuvent être comptés dans le compte du cluster.
 
 Le nombre de messages est calculé lors de l’enquête et certains comptes sont recalculés lorsque vous ouvrez des lanceurs d’investigation (sur la base d’une requête sous-jacente). Le nombre de messages affichés pour les clusters de courrier électronique sous l’onglet e-mail et la valeur de quantité de courrier électronique affichée dans le menu volant de cluster sont calculés lors de l’enquête et ne changent pas. Le nombre de courriers électroniques affiché en bas de l’onglet e-mail de la fenêtre mobile du cluster de messagerie et le nombre de messages électroniques affichés dans l’Explorateur reflètent les messages électroniques reçus après l’analyse initiale de l’enquête. Par conséquent, un cluster de messagerie qui affiche une quantité initiale de 10 messages électroniques affiche une liste de courriers au total 15 lorsque cinq autres messages électroniques arrivent entre la phase d’analyse de l’enquête et lorsque l’administrateur révise l’enquête.  De la même manière que les enquêtes anciennes peuvent commencer à avoir un nombre plus important que les requêtes de l’Explorateur s’affichent, puisque le service ATP P2 expire les données après 7 jours pour les tirages et 30 jours pour les licences payantes  L’affichage des compteurs historique et actuel dans différentes vues permet d’indiquer l’impact du courrier électronique au moment de l’examen et l’impact actuel jusqu’à l’exécution de la correction.
 
@@ -232,7 +237,7 @@ Vous pouvez :
 |Enquête sur les violations DLP|Examiner toutes les violations détectées par la [protection contre la perte de données](../../compliance/data-loss-prevention-policies.md) (DLP)|
 |Extraction des indicateurs de courrier électronique|Extraire les indicateurs de l’en-tête, du corps et du contenu d’un message électronique à des fins d’enquête|
 |Réputation de hachage de fichier|Détecter les anomalies en fonction des hachages de fichiers pour les utilisateurs et les ordinateurs de votre organisation|
-|Identification du cluster de messagerie|Analyse du cluster de messagerie basée sur l’en-tête, le corps, le contenu et les URL|
+|Identification du cluster de messagerie|Analyse du cluster de messagerie basée sur l’en-tête, le corps, le contenu, les fichiers et les URL|
 |Analyse du volume du cluster de messagerie|Analyse du cluster de messagerie en fonction des modèles de volume de flux de messagerie sortants|
 |Enquête de délégation de messagerie|Enquêter sur l’accès de délégation de messagerie pour les boîtes aux lettres utilisateur liées à cette enquête|
 |Enquête sur les règles de transfert de courrier|Examiner les règles de transfert de courrier pour les boîtes aux lettres utilisateur associées à cette enquête|
