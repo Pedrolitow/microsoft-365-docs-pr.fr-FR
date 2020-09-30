@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Vue d’ensemble de la connectivité réseau dans le centre d’administration Microsoft 365 (version d’évaluation)
-ms.openlocfilehash: 52d1995572a3ae0220ac8529862ba69d5bca8cdb
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+ms.openlocfilehash: 91c931eba5c9f5bdb9f45185581019cc9c754ed2
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235537"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48322198"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Connectivité réseau dans le centre d’administration Microsoft 365 (version d’évaluation)
 
@@ -157,8 +157,8 @@ Dans le fichier CSV, un emplacement de ville découvert apparaît dans la colonn
    1. **Address** (Required) : adresse physique de l’Office
    1. **Latitude** (facultatif) : renseigné à partir de la recherche de cartes Bing de l’adresse si vide
    1. **Longitude** (facultative) : renseigné à partir de la recherche de cartes Bing de l’adresse si vide
-   1. **Plages d’adresses IP sortantes 1-5** (facultatif) : pour chaque plage, entrez le nom du circuit suivi d’une liste d’adresses CIDR IPv4 ou IPv6 valides séparées par des espaces. Ces valeurs sont utilisées pour différencier plusieurs emplacements Office où vous utilisez les mêmes adresses IP de sous-réseau de réseau local.
-   1. **LanIps** (obligatoire) : répertoriez les plages de sous-réseau LAN utilisées à cet emplacement de bureau.
+   1. **Plages d’adresses IP sortantes 1-5** (facultatif) : pour chaque plage, entrez le nom du circuit suivi d’une liste d’adresses CIDR IPv4 ou IPv6 valides séparées par des espaces. Ces valeurs sont utilisées pour différencier plusieurs emplacements Office où vous utilisez les mêmes adresses IP de sous-réseau de réseau local. Les plages d’adresses IP sortantes doivent être/24 de la taille du réseau et le/24 n’est pas inclus dans l’entrée.
+   1. **LanIps** (obligatoire) : répertoriez les plages de sous-réseau LAN utilisées à cet emplacement de bureau. Les ID de sous-réseau LAN doivent avoir une taille de réseau CIDR où la taille du réseau peut être comprise entre/8 et/29. Plusieurs plages de sous-réseau LAN peuvent être séparées par une virgule ou un point-virgule.
 1. Une fois que vous avez ajouté vos emplacements de bureau et enregistré le fichier, cliquez sur le bouton **Parcourir** en regard du champ **charger le champ terminé** , puis sélectionnez le fichier csv enregistré.
 1. Le fichier sera automatiquement validé. S’il existe des erreurs de validation, le message d’erreur indique que _le fichier d’importation contient des erreurs. Examinez les erreurs, corrigez le fichier d’importation, puis réessayez._ Cliquez sur le lien Détails de l' **erreur Open** pour obtenir la liste des erreurs de validation de champ spécifiques.
 

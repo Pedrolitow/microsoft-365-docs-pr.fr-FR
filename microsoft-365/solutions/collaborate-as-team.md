@@ -16,12 +16,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Découvrez les étapes de configuration de Microsoft 365 nécessaires pour configurer une équipe de collaboration avec des invités dans Teams.
-ms.openlocfilehash: f22404ea412085ed697f76219509c1382318e7d4
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: e8d1c75c6172168fc2b0a4b351591289c893869a
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46797769"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48322176"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Collaborer avec des invités au sein d’une équipe
 
@@ -47,7 +47,7 @@ Pour définir les paramètres de relation organisationnelle
 
 1. Connectez-vous à Microsoft Azure à l’adresse [https://portal.azure.com](https://portal.azure.com) .
 2. Dans le volet de navigation de gauche, cliquez sur **Azure Active Directory**.
-3. Dans le volet de **vue d’ensemble** , cliquez sur **identités externes**.
+3. Dans le volet **Vue d’ensemble** , cliquez sur **Identités externes**.
 4. Dans le volet **identités organisationnelles** , cliquez sur **paramètres de collaboration externe**.
 5. Assurez-vous que les **administrateurs et les utilisateurs du rôle d’invité invité peuvent inviter** et que les **membres peuvent inviter** sont tous deux la valeur **Oui**.
 6. Si vous avez effectué des modifications, cliquez sur **Enregistrer**.
@@ -105,7 +105,7 @@ Si vous souhaitez autoriser le partage de fichiers et de dossiers avec des perso
 Pour définir les paramètres de partage au niveau de l’organisation SharePoint
 
 1. Dans le centre d’administration 365 de Microsoft, dans le volet de navigation de gauche, sous **centres d’administration**, cliquez sur **SharePoint**.
-2. Dans le centre d’administration SharePoint, dans le volet de gauche, cliquez sur **Partage**.
+2. Dans le centre d’administration SharePoint, dans le volet de navigation de gauche, développez **stratégies** , puis cliquez sur **partage**.
 3. Assurez-vous que le partage externe pour SharePoint est défini sur **tout le monde** ou sur **des invités nouveaux et existants**.
 4. Si vous avez effectué des modifications, cliquez sur **Enregistrer**.
 

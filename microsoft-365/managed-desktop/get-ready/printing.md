@@ -1,7 +1,7 @@
 ---
 title: Préparer des ressources d’impression pour le Bureau géré Microsoft
 description: Étapes importantes pour garantir le bon fonctionnement de l’impression
-keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
@@ -9,18 +9,18 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 1588a2c91bcbe0bd381acb6be4f9bd5562810860
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 5198691a38b179a5491a36de95531edb9f32d691
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46530246"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48322222"
 ---
 # <a name="prepare-printing-resources-for-microsoft-managed-desktop"></a>Préparer des ressources d’impression pour le Bureau géré Microsoft
 
 Lorsque vous êtes prêt à vous inscrire dans le bureau géré Microsoft, vous devez évaluer vos besoins en matière d’impression et déterminer l’approche appropriée pour votre environnement. Trois options s’offrent à vous :
  
-- Déployez la solution Microsoft hybride Cloud Print pour permettre aux appareils de bureau gérés Microsoft de découvrir facilement les imprimantes. Pour plus d’informations, consultez la rubrique [deploy Windows Server Hybrid Cloud Print](https://docs.microsoft.com/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-deploy).
+- Déployez la solution Microsoft Universal Print solution pour permettre aux appareils de bureau gérés Microsoft de découvrir facilement les imprimantes. Pour plus d’informations, voir [qu’est-ce que l’impression universelle](https://docs.microsoft.com/universal-print/fundamentals/universal-print-whatis).
 - Déployer des imprimantes directement à l’aide d’un script PowerShell personnalisé. Suivez les étapes de la section [Configuration des imprimantes locales](#set-up-local-printers) pour effectuer cette opération.
 - Utilisez une solution d’impression Cloud non Microsoft compatible avec les appareils Windows 10 qui sont joints à un domaine Azure Active Directory. La solution doit répondre à la configuration logicielle requise pour le bureau géré Microsoft. Pour plus d’informations, consultez la rubrique [conditions requises pour les applications de bureau géré Microsoft](../service-description/mmd-app-requirements.md).
  
