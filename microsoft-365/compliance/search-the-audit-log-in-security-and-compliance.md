@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: Utilisez le Centre de sécurité et conformité pour rechercher dans le journal d’audit unifié les activités des utilisateurs et des administrateurs de votre organisation.
+description: Vous pouvez utiliser le Centre de sécurité et conformité Office 365 ou le Centre de conformité Microsoft 365 pour rechercher dans le journal d’audit unifié les activités des utilisateurs et des administrateurs de votre organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7051e03ca4751d6e97d9af9228765be9e1af6ebe
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 48d40cff907480f05dff8ba1c5c1584fc8289b1b
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197347"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48286040"
 ---
-# <a name="search-the-audit-log-in-the-security--compliance-center"></a>Effectuer des recherches dans le journal d’audit depuis le Centre de sécurité et conformité 
+# <a name="search-the-audit-log-in-the-compliance-center"></a>Effectuer des recherches dans le journal d’audit depuis le Centre de conformité 
 
-Vous avez besoin de déterminer si un utilisateur a consulté un document spécifique ou supprimé définitivement un élément de sa boîte aux lettres ? Vous pouvez utiliser le Centre de sécurité et conformité pour rechercher dans le journal d’audit unifié les activités des utilisateurs et des administrateurs de votre organisation. Qu’est-ce qu’un journal d’audit unifié ? Un tel journal permet de rechercher les types suivants d’[activité des utilisateurs et administrateurs](#audited-activities) dans Office 365 :
+Vous avez besoin de déterminer si un utilisateur a consulté un document spécifique ou supprimé définitivement un élément de sa boîte aux lettres ? Vous pouvez utiliser le Centre de sécurité et conformité pour rechercher dans le journal d’audit unifié les activités des utilisateurs et des administrateurs de votre organisation. Qu’est-ce qu’un journal d’audit unifié ? Un tel journal permet de rechercher les types suivants d’[activité des utilisateurs et administrateurs](#audited-activities) dans Microsoft 365 :
 
 - Activité utilisateur dans SharePoint Online et OneDrive Entreprise
 
@@ -36,7 +36,7 @@ Vous avez besoin de déterminer si un utilisateur a consulté un document spéci
 
 - Activité des administrateurs dans SharePoint Online
 
-- Activité des administrateurs dans Azure Active Directory (service d’annuaire pour Office 365)
+- Activité des administrateurs dans Azure Active Directory (service d’annuaire pour Microsoft 365)
 
 - Activité des administrateurs dans Exchange Online (journalisation d’audit de l’administrateur Exchange)
 

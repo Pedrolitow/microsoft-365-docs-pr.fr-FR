@@ -14,4 +14,4 @@ ms.lasthandoff: 09/22/2020
 ms.locfileid: "48195345"
 ---
 > [!IMPORTANT]
-> Bienvenue à **Microsoft Defender for Office 365**, le nouveau nom ** Office 365 Advanced Threat Protection**. Pour en savoir plus sur ce sujet et d'autres mises à jour [ici](https://www.microsoft.com/security/blog/?p=91813). Nous mettrons à jour les noms dans les produits et dans les documents dans un avenir proche.
+> Bienvenue à **Microsoft Defender for Office 365**, le nouveau nom **Office 365 Advanced Threat Protection**. Pour en savoir plus sur ce sujet et d'autres mises à jour [ici](https://www.microsoft.com/security/blog/?p=91813). Nous mettrons à jour les noms dans les produits et dans les documents dans un avenir proche.

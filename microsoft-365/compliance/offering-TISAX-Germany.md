@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 775a3d21697103d6ed0b891aef605197741d3dbd
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 1c12618b92a84cb7861d1df243a689cd1cf8a17c
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208116"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48304834"
 ---
 # <a name="trusted-information-security-assessment-exchange-tisax-germany"></a>Trusted Information Security Assessment Exchange (TISAX) Allemagne
 
 ## <a name="about-tisax"></a>À propos de TISAX
 
-Afin d'assurer la connectivité croissante de l'industrie automobile, l'Association allemande de l'industrie automobile ([Verband der Automobilindustrie](https://www.dict.cc/deutsch-englisch/Verband.html), VDA) a élaboré un catalogue de critères pour évaluer la sécurité de l'information. L’évaluation de la sécurité des informations VDA ([allemand](https://www.vda.de/de/themen/sicherheit-und-standards/informationssicherheit/informationssicherheit-sicherheitsanforderungen.html) et [anglais](https://www.vda.de/en/topics/safety-and-standards/information-security/information-security-requirements)) est basée sur les principes de base des normes internationales ISO/CEI 27001 et 27002 adaptées à l’industrie automobile. En 2017, elle a été mise à jour pour couvrir les contrôles pour l'utilisation des services cloud.
+Afin d'assurer la connectivité croissante de l'industrie automobile, l'Association allemande de l'industrie automobile ([Verband der Automobilindustrie](https://www.vda.de), VDA) a élaboré un catalogue de critères pour évaluer la sécurité de l'information. L’évaluation de la sécurité des informations VDA ([allemand](https://www.vda.de/de/themen/sicherheit-und-standards/informationssicherheit/informationssicherheit-sicherheitsanforderungen.html) et [anglais](https://www.vda.de/en/topics/safety-and-standards/information-security/information-security-requirements)) est basée sur les principes de base des normes internationales ISO/CEI 27001 et 27002 adaptées à l’industrie automobile. En 2017, elle a été mise à jour pour couvrir les contrôles pour l'utilisation des services cloud.
 
 Les entreprises membres de la VDA ont utilisé cet instrument pour évaluer la sécurité interne et pour évaluer les fournisseurs, les fournisseurs de services et les autres partenaires qui traitent des informations sensibles en leur nom. Toutefois, étant donné que ces évaluations ont été traitées individuellement par chaque entreprise, cela a créé une charge pour les partenaires et des efforts en double de la part des membres de la VDA.
 

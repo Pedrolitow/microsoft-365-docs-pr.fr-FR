@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 22518473a8caf038a0f0f1ef89085c50f4483d5b
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: fcb5f3b96ab62dec8926e2638866775beeb8206b
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416678"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48304768"
 ---
 # <a name="shared-assessments-program"></a>Programme d’évaluations partagées
 
@@ -52,6 +52,6 @@ Sur la base d’une auto-évaluation, Microsoft a documenté la conformité entr
 
 ## <a name="resources"></a>Ressources
 
-- [Réponse standard Azure pour la demande d’informations](https://gallery.technet.microsoft.com/Azure-Standard-Response-to-5de19cb6)
+- [Réponse standard Azure pour la demande d’informations](https://azure.microsoft.com/resources/azure-standard-response-to-rfi-on-security-privacy-and-compliance/)
 - [Microsoft et l’auto-évaluation CSA STAR](offering-csa-star-self-assessment.md)
 - [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

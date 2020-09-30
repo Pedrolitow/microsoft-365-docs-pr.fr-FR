@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 9d1f259894fff720452de52c45424f086a31a6bb
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: f4394a66242a981ab179b07f45e82132f68968d7
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208176"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305354"
 ---
 # <a name="north-american-electric-reliability-corporation-nerc"></a>North American Electric Reliability Corporation (NERC)
 
@@ -88,6 +88,7 @@ L’entreprise NERC ERO [a publié](https://www.nerc.com/pa/comp/guidance/Pages/
 ## <a name="resources"></a>Ressources
 
 - [Conseils de la NERC en matière de conformité](https://www.nerc.com/pa/comp/guidance/)
+- [Cybersécurité NERC – Gestion des risques de la chaîne d’approvisionnement](https://www.nerc.com/pa/Stand/Pages/CIP0131RI.aspx)
 - [Conformité et application NERC](https://www.nerc.com/pa/comp/Pages/default.aspx)
 - [Organisation et certification de la NERC](https://www.nerc.com/pa/comp/Pages/Registration.aspx)
 - [Microsoft et FedRAMP](offering-fedramp.md)

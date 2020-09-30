@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 3352483f87c12996f00e8a75dfcba19581fdaf0c
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 29da829ddf20a24776ef40b7aefb02cdf1546669
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417908"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305054"
 ---
 # <a name="data-protection-impact-assessments-guidance-for-data-controllers-using-dynamics-365"></a>Analyses d’impact sur la protection des données : conseils pour les contrôleurs de données qui utilisent Dynamics 365
 
@@ -30,7 +30,7 @@ Dans le cadre du Règlement général sur la protection des données (RGPD), les
 
 Ce document vise à fournir les informations sur Dynamics 365 qui permettront aux contrôleurs de données de déterminer si une analyse d’impact sur la protection des données est nécessaire et, le cas échéant, les informations à inclure.
 
-## <a name="part-1--determining-whether-a-dpia-is-needed"></a>Partie 1 : déterminer si une analyse d’impact sur la protection des données est nécessaire
+## <a name="part-1-determining-whether-a-dpia-is-needed"></a>Partie 1 : déterminer si une analyse d’impact sur la protection des données est nécessaire
 
 Selon l’article 35 du RGPD, un responsable du traitement de données doit créer une analyse d’impact sur la protection des données dans le cas suivant : « [q]uand un type de traitement, en particulier par le recours à de nouvelles technologies, et compte tenu de la nature, de la portée, du contexte et des finalités du traitement, est susceptible d’engendrer un risque élevé pour les droits et libertés des personnes physiques, le responsable du traitement effectue, avant le traitement, une analyse de l’impact des opérations de traitement envisagées sur la protection des données à caractère personnel ». Le Règlement définit par la suite de manière plus détaillée les facteurs pouvant indiquer un risque d’une telle ampleur, qui sont décrits dans le tableau suivant. Lorsque le responsable du traitement de données cherche à déterminer si une analyse d’impact sur la protection des données est nécessaire, il doit prendre en compte ces facteurs, ainsi que tout autre facteur pertinent, en fonction des implémentations spécifiques du responsable du traitement et des utilisations prévues de Dynamics 365.
 
@@ -44,7 +44,7 @@ Selon l’article 35 du RGPD, un responsable du traitement de données doit cr�
 >[!Note]
 ><sup>1</sup> En ce qui concerne les critères selon lesquels le traitement doit être « à grande échelle », le point 91 du RGPD précise que : « Le traitement des données à caractère personnel ne doit pas être considéré comme un traitement à grande échelle s'il concerne des données à caractère personnel de patients ou de clients par un médecin, un autre professionnel de la santé ou un avocat. Dans ce cas, une évaluation de l’impact de la protection des données ne doit pas être obligatoire ».
 
-## <a name="part-2--contents-of-a-dpia"></a>Partie 2 : contenu d’une analyse d’impact sur la protection des données (DPIA)
+## <a name="part-2-contents-of-a-dpia"></a>Partie 2 : contenu d’une analyse d’impact sur la protection des données (DPIA)
 
 L’article 35 (7) établit qu’une analyse d’impact sur la protection des données spécifie la finalité du traitement et une description systématique du traitement envisagé. La description systématique d’une DPIA complète peut inclure des facteurs tels que les types de données traitées, la durée de conservation des données, l’emplacement où les données sont situées et transférées, et les services tiers pouvant accéder aux données. De plus, la DPIA doit inclure ce qui suit :
 

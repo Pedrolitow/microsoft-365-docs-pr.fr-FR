@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En savoir plus sur les stratégies de rétention et les étiquettes de rétention, qui permettent de conserver les éléments dont vous avez besoin et de supprimer ceux qui ne vous servent pas.
-ms.openlocfilehash: d8b9ff7bea32f489a5cce5f64626908e8ec56fa1
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 49d61a7bbc376121f5a91c1692f292b83abea779
+ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197337"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48308942"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>En savoir plus sur les stratégies et les étiquettes de rétention
 
@@ -230,7 +230,7 @@ Il n’est possible d’attribuer qu’une seule étiquette de rétention à un 
     
 - Si une étiquette de rétention publiée est attribuée à un contenu, elle ne peut pas être remplacée par une étiquette à application automatique.
     
-- S’il existe plusieurs règles qui affectent une étiquette à appliquer automatiquement et que le contenu remplit les critères de plusieurs règles, l’étiquette de rétention de la règle la plus ancienne est affectée.
+- S’il existe plusieurs règles qui affectent une étiquette à appliquer automatiquement et que le contenu remplit les critères de plusieurs règles, l’étiquette de rétention de la règle la plus ancienne (par date de création) est affectée.
     
 Pour comprendre comment et pourquoi une étiquette de rétention est appliquée plutôt qu’une autre, il est important de comprendre la différence entre l’attribution explicite et l’attribution implicite d’une étiquette :
 
