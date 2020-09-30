@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 6645ce4d4f6b2fa8f2725e4b0679bc00fdec3505
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: f944933be4ce4d3a755ba54dd68856362bba9a0b
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208800"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48304868"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Prise en main de la gestion des risques internes
 
@@ -55,6 +55,9 @@ Selon la structure de votre équipe de gestion de la conformité, vous avez la c
 | **Administrateur de gestion des risques des Insiders** | Utilisez ce groupe de rôles pour configurer initialement la gestion des risques initiés et, par la suite, pour séparer les administrateurs des risques des Insiders en un groupe défini.  Les utilisateurs de ce groupe de rôles peuvent créer, lire, mettre à jour et supprimer des stratégies de gestion des risques internes, des paramètres globaux et des affectations de groupe de rôles. |
 | **Analystes de gestion des risques Insiders** | Utilisez ce groupe pour affecter des autorisations aux utilisateurs qui agiront comme des analystes de cas de risque internes. Les utilisateurs de ce groupe de rôles peuvent accéder à tous les modèles d’alertes, de cas et de notifications de gestion des risques internes. Ils ne peuvent pas accéder à l’Explorateur de contenu de risques internes. |
 | **Investigateurs de gestion des risques Insiders** | Utilisez ce groupe pour affecter des autorisations aux utilisateurs qui agiront comme des enquêteurs de données de risque internes. Les utilisateurs de ce groupe de rôles peuvent accéder à toutes les alertes de gestion des risques Insider, les cas, les modèles de notifications et l’Explorateur de contenu. |
+
+> [!NOTE]
+> Ces groupes de rôles ne sont actuellement pas pris en charge sur la gestion des identités avec privilèges. Pour en savoir plus sur PIM, consultez la rubrique [attribution de rôles Azure ad dans gestion des identités privilégiées](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-add-role-to-user).
 
 ### <a name="add-users-to-an-insider-risk-management-role-group"></a>Ajouter des utilisateurs à un groupe de rôles de gestion des risques Insider
 

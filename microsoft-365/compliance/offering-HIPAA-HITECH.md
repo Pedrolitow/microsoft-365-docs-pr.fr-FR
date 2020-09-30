@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 37da9f692b3556bf887d742ece3b99cdc1da60a2
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: a6605f7d8561532121e54f02b579de26879baa1a
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208406"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305238"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>Loi HIPAA (Health Insurance Portability and Accountability Act) & Hi-Tech
 
@@ -70,7 +70,7 @@ Pour savoir comment le Cloud Microsoft aide les clients à prendre en charge les
 
 Commencez à tirer parti des avantages du Cloud pour les solutions de données d’intégrité avec le plan de sécurité et de conformité Azure (données d’intégrité HIPAA/HITRUST et IA). Ce plan fournit des outils et des conseils pour vous aider à créer des solutions HIPAA/HITRUST dès aujourd’hui.
 
-[Commencer à utiliser le modèle Azure HIPAA/HITRUST](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust/)
+[Commencer à utiliser le modèle Azure HIPAA/HITRUST](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust-9-2)
 
 ## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
@@ -102,9 +102,9 @@ Pour aider les clients avec cette tâche, Microsoft a publié ces guides :
 - Le [Guide pratique de la conception de solutions d’intégrité sécurisée à l’aide de Microsoft Azure](https://aka.ms/azureindustrysecurity) vous permet de mieux comprendre ce qu’il faut faire pour adopter correctement un service Cloud de manière sécurisée.
 - [La gestion des exigences de sécurité et de confidentialité HIPAA dans le Cloud Microsoft](https://smb.blob.core.windows.net/smbproduction/Content/Microsoft_Cloud_Healthcare_HIPAA_Security_Privacy.pdf) offre une brève présentation des exigences en matière de réglementation. Elle fournit également une analyse détaillée de la façon dont les services Cloud de Microsoft ont été créés avec des méthodologies qui correspondent à ces exigences, ainsi que des instructions sur la création de solutions prêtes à la conformité.
 
-## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Utiliser le gestionnaire de conformité Microsoft pour évaluer votre risque
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Utilisez le Gestionnaire de Conformité Microsoft pour évaluer vos risques
 
-Le [Gestionnaire de conformité Microsoft](compliance-manager.md) est une fonctionnalité du [Centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Le gestionnaire de conformité offre un modèle Premium pour la création d’une évaluation pour cette réglementation. Recherchez le modèle dans la page **modèles d’évaluation** du gestionnaire de conformité. Découvrez comment [créer des évaluations dans le gestionnaire de conformité](compliance-manager-assessments.md).
+[Le Gestionnaire de Conformité Microsoft](compliance-manager.md) est une fonctionnalité dans le [centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Le Gestionnaire de Conformité offre un modèle Premium pour la création d’une évaluation de ce règlement. Recherchez le modèle sur la page **modèles d’évaluation** dans le Gestionnaire de Conformité. Découvrez comment [créer des évaluations dans le Gestionnaire de Conformité](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressources
 
