@@ -15,22 +15,22 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 30e32a38d380806e56f08303eef4f5adbfc47d10
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 5faa6940e6ef7c46f2e4a8143015ed394d3e1921
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416818"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305208"
 ---
 # <a name="breach-notification-under-the-gdpr"></a>Notification de violation dans le cadre du RGPD
 
-Conformément à son rôle de responsable du traitement des données, Office 365 veille à ce que nos clients puissent remplir leur rôle d’entité de contrôle des données en répondant aux obligations du RGPD concernant la notification des violations de données. À cet effet, nous nous engageons à :
+Conformément à son rôle de responsable du traitement des données, Office 365 veille à ce que nos clients puissent remplir leur rôle d’entité de contrôle des données en répondant aux obligations du RGPD concernant la notification des violations de données. À cet effet, nous nous engageons à effectuer les actions suivantes :
 
-- permettre aux clients de spécifier un contact dédié à la protection des données personnelles qui sera informé en cas de violation de données. Les clients pourront spécifier ce contact dans Azure Active Directory (AAD) ;
+- permettre aux clients de spécifier un contact dédié à la protection des données personnelles qui sera informé en cas de violation de données. Les clients pourront spécifier ce contact dans Azure Active Directory.
 - notifier les clients d’une violation de données personnelles dans les 72 heures qui suivent la violation. Cette notification sera envoyée par e-mail au contact spécifié par le client ;
 - préciser, au minimum, dans la notification initiale la nature de la violation, une estimation de l’impact de cette violation sur les utilisateurs et les mesures d’atténuation des risques à prendre (le cas échéant). Si notre enquête n’est pas terminée au moment de la notification initiale, nous indiquerons dans cette notification quelles seront les prochaines étapes et quand nous vous recontacterons.
 
-Microsoft reconnaît que les entités de contrôle des données doivent réaliser des évaluations des risques et déterminer si l’autorité de régulation dont dépend le client doit être informée d’une violation de données. Par conséquent, les notifications que nous enverrons aux clients comporteront les informations nécessaires à la réalisation de ces évaluations. Microsoft notifiera donc les clients d’une violation de données personnelles, sauf dans les cas où il a été vérifié que les données personnelles sont illisibles (par exemple, dans le cas de données protégées par un chiffrement fort où l’intégrité des clés a été vérifiée).
+Microsoft reconnaît que les entités de contrôle des données doivent réaliser des évaluations des risques et déterminer si l’autorité de régulation dont dépend le client doit être informée d’une violation de données. Par conséquent, les notifications que nous enverrons aux clients comporteront les informations nécessaires à la réalisation de ces évaluations. Microsoft notifiera donc les clients d’une violation de données personnelles, sauf dans les cas où il a été vérifié que les données personnelles sont illisibles (par exemple, dans le cas de données protégées par un chiffrement où l’intégrité des clés a été vérifiée).
 
 ## <a name="office-365-investments-in-data-security"></a>Investissements d’Office 365 dans la sécurité des données
 
@@ -48,11 +48,11 @@ En résumé, Office 365 engage des investissements considérables pour réduire
 
 ## <a name="what-to-expect-in-the-event-of-breach"></a>À quoi vous devez vous attendre en cas de violation
 
-La section ci-dessus décrit les investissements engagés par Office 365 pour réduire le risque de violation des données. Dans le cas peu probable d’une violation de données, nos clients sont en droit de savoir à quoi ils doivent s’attendre :
+La section ci-dessus décrit les investissements qu’Office 365 prend pour réduire la probabilité de divulgation de données. Dans le cas peu probable où la violation se produit, les clients doivent s’attendre à obtenir une expérience prévisible en termes des réponses suivantes :
 
 - Un processus de réponse aux incidents cohérent au sein d’Office 365. Comme décrit ci-dessus, Office 365 applique des procédures de réponse aux incidents détaillées qui décrivent comment les équipes doivent se préparer à des violations de données et comment elles doivent opérer si une violation se produit. Ces procédures nous permettent de garantir l’application de nos protections et de nos processus dans l’ensemble du service.
 
-- Des critères cohérents pour notifier les clients. Nos critères de notification portent sur la confidentialité, l’intégrité et la disponibilité des données client. Office 365 notifiera directement les clients si la confidentialité ou l’intégrité des données client est compromise. Autrement dit, nous informerons les clients en cas d’accès non autorisé à leurs données, de destruction ou de perte inappropriée des données. Office 365 signalera également les problèmes affectant la disponibilité des données, même si cette information est généralement affichée sur le tableau de bord d’état du service.
+- Des critères cohérents pour notifier les clients. Nos critères de notification portent sur la confidentialité, l’intégrité et la disponibilité des données client. Office 365 notifiera directement les clients si la confidentialité ou l’intégrité des données client est compromise. Autrement dit, nous informerons les clients en cas d’accès non autorisé à leurs données, de destruction ou de perte inappropriée des données. Office 365 signalera également les problèmes affectant la disponibilité des données, même si cette action est généralement affichée sur le tableau de bord d’état du service.
 
 - Des notifications détaillées et cohérentes. Quand Office 365 notifie une violation de données, des informations précises seront communiquées aux clients, notamment :
 
@@ -61,7 +61,7 @@ La section ci-dessus décrit les investissements engagés par Office 365 pour r
     - le type de données utilisateur concernées ;
     - les mesures que l’entité de contrôle des données ou le responsable du traitement des données doit prendre pour atténuer les conséquences de cette violation.
 
-Les clients doivent également savoir qu’Office 365, conformément à son rôle de responsable du traitement des données, ne déterminera pas le niveau de risque de violation de données. Quand une violation de données personnelles est détectée, nous notifierons nos clients et leur communiquerons toutes les informations dont ils ont besoin pour déterminer avec précision le niveau de risque pour les utilisateurs concernés et pour déterminer s’ils doivent signaler l’incident aux autorités de régulation compétentes. À cet effet, les entités de contrôle des données doivent déterminer :
+Les clients doivent également savoir qu’Office 365, conformément à son rôle de responsable du traitement des données, ne déterminera pas le niveau de risque de violation de données. Quand une violation de données personnelles est détectée, nous notifierons nos clients et leur communiquerons toutes les informations dont ils ont besoin pour déterminer avec précision le niveau de risque pour les utilisateurs concernés et pour déterminer s’ils doivent signaler l’incident aux autorités de régulation compétentes. À cet effet, les entités de contrôle des données doivent déterminer ce qui suit sur l’incident :
 
 - la gravité de la violation (autrement dit, le niveau de risque) ;
 - si les utilisateurs finaux doivent en être informés ;
@@ -74,11 +74,11 @@ Quand un client détecte une violation de données, il peut souhaiter en informe
 
 ## <a name="call-to-action-for-customers"></a>Ce que les clients doivent faire
 
-Comme nous le mentionnions plus haut, Office 365 s’engage à notifier les clients d’une violation de données dans les 72 heures suivant l’incident. L’administrateur client du client en sera informé. Par ailleurs, Office 365 recommande aux clients de désigner un alias pour le Contact international chargé de la confidentialité dans le portail Azure Active Directory (AAD). En cas de violation de données personnelles, cet alias peut recevoir un e-mail en plus de la notification qui sera envoyée aux administrateurs.
+Comme indiqué précédemment, Office 365 s’engage à notifier les clients d’une violation de données dans les 72 heures suivant l’incident. L’administrateur client du client en sera informé. Par ailleurs, Office 365 recommande aux clients de désigner un alias pour le Contact international chargé de la confidentialité dans le portail Azure Active Directory. En cas de violation de données personnelles, cet alias peut recevoir un e-mail en plus de la notification qui sera envoyée aux administrateurs.
 
-Le contact chargé de la confidentialité du client peut être une personne de l’organisation, une liste de distribution ou une personne externe à l’organisation. Office 365 demande uniquement aux clients de fournir l’adresse e-mail de ce contact dans le portail AAD, dans le champ « Contact international chargé de la confidentialité ». Notez que ce champ est lié au champ « Contact technique » dans AAD (même s’il s’agit bien d’un champ distinct). Si les clients décident de spécifier une liste de distribution pour ce contact, ils doivent s’assurer que cette liste autorise la réception de messages provenant d’expéditeurs externes.
+Le contact chargé de la confidentialité du client peut être une personne de l’organisation, une liste de distribution ou une personne externe à l’organisation. Office 365 demande uniquement aux clients de fournir une adresse de courrier pour ce contact, et les clients peuvent spécifier cette adresse dans le portail Azure Active Directory, sous le champ « contact de confidentialité globale ». Ce champ est lié au champ « Contact technique » dans Azure Active Directory (même s’il s’agit bien d’un champ distinct). Si les clients décident de spécifier une liste de distribution pour ce contact, ils doivent s’assurer que cette liste autorise la réception de messages provenant d’expéditeurs externes.
 
 En résumé, Office 365 demande aux clients de prendre les mesures suivantes pour bénéficier de nos processus de notification de violation :
 
 - Choisissez un contact qui recevra les notifications par e-mail en cas de violation de données personnelles. Ce contact doit avoir connaissance des obligations de l’entité de contrôle des données fixées par le RGPD. Il doit également être prêt à contacter le délégué à la protection des données de l’organisation et, éventuellement, l’autorité de régulation dès qu’il reçoit une notification. Les administrateurs clients recevront également des notifications de violation et doivent eux aussi avoir connaissance des obligations de l’entité de contrôle des données fixées par le RGPD.
-- Entrez l’adresse e-mail du contact chargé de la confidentialité dans le portail AAD. Si aucune information sur le contact international chargé de la confidentialité n’est fournie, Microsoft en informera uniquement l’administrateur client.
+- Entrez l’adresse e-mail du contact chargé de la confidentialité dans le portail Azure Active Directory. Si aucune information sur le contact international chargé de la confidentialité n’est fournie, Microsoft en informera uniquement l’administrateur client.
