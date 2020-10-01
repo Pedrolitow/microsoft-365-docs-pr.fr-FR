@@ -13,12 +13,12 @@ localization_priority: Priority
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Fournit une présentation des composants, des plans et des chemins de déploiement pour Microsoft 365 pour entreprise.
-ms.openlocfilehash: b5064d78a1681a3331248f3d17d389c46b1da314
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: fa076517b071efbe3a5002d6a48418a796e38ca4
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949915"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327472"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Vue d’ensemble de Microsoft 365 pour entreprise
 
@@ -32,7 +32,7 @@ Microsoft 365 pour entreprise inclut :
 
 |Services|Description|
 |---|---|
-|Applications locales et en cloud, et services de productivité|Comprend à la fois Microsoft 365 Apps for enterprise, les dernières applications Office pour PC et Mac (comme Word, Excel, PowerPoint, Outlook et d’autres), et une suite complète de services en ligne pour la messagerie électronique, le stockage de fichiers, la collaboration, les réunions, etc.|
+|Applications locales et applications en cloud, et services de productivité|Comprend à la fois Microsoft 365 Apps for enterprise, les dernières applications Office pour PC et Mac (comme Word, Excel, PowerPoint, Outlook et d’autres), et une suite complète de services en ligne pour la messagerie électronique, le stockage de fichiers, la collaboration, les réunions, etc.|
 |Windows 10 Entreprise|Répond aux besoins des grandes et moyennes organisations. C'est la version la plus productive et la plus sûre de Windows pour les utilisateurs. Pour les professionnels de l'informatique, il propose également une gestion complète du déploiement, des appareils et des applications.|
 |Gestion des appareils et services de sécurité avancés|Inclut Microsoft Intune, qui est un service de gestion de la mobilité en entreprise basé sur le cloud qui permet à votre personnel d'être productif tout en protégeant les données de votre organisation.|
 |||
