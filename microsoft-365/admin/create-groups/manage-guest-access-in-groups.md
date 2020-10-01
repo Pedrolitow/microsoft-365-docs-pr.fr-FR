@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: Découvrez comment ajouter des invités à un groupe Microsoft 365, afficher des utilisateurs invités et utiliser PowerShell pour contrôler l’accès invité.
-ms.openlocfilehash: a56d9599824ac1436c6f875661bcd573c1f6b1ca
-ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
+ms.openlocfilehash: 640a35cbb1a3eb395453b224cadcf0d0db82fab8
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45204742"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48326518"
 ---
 # <a name="manage-guest-access-in-microsoft-365-groups"></a>Gérer l’accès invité dans les groupes Microsoft 365
 
@@ -66,69 +66,10 @@ Si l’invité existe déjà dans votre répertoire, vous pouvez l’ajouter à 
 Si vous souhaitez ajouter un invité directement à l’annuaire, vous pouvez [Ajouter des utilisateurs de collaboration B2B Azure Active Directory dans le portail Azure](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).
 
 Si vous souhaitez modifier les informations d’un invité, vous pouvez [Ajouter ou mettre à jour les informations de profil d’un utilisateur à l’aide d’Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
-  
-## <a name="block-guest-users-from-a-specific-group"></a>Bloquer les utilisateurs invités d’un groupe spécifique
 
-Si vous souhaitez autoriser l’accès invité à la plupart des groupes, mais que vous souhaitez empêcher l’accès invité à la plupart des groupes à l’aide de Microsoft PowerShell.
+## <a name="see-also"></a>Voir aussi
 
-Vous devez utiliser la version d’évaluation d' [Azure Active Directory PowerShell pour Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) (nom de module **AzureADPreview**) pour modifier le paramètre accès invité au niveau du groupe :
-
-- Si vous n’avez jamais installé une version du module Azure AD PowerShell, consultez [l’installation du module Azure AD](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview#installing-the-azure-ad-module) et suivez les instructions d’installation de la préversion publique.
-
-- Si la version générale 2.0 du module Azure AD PowerShell (AzureAD) est installée sur votre ordinateur, vous devez la désinstaller en exécutant `Uninstall-Module AzureAD` dans votre session PowerShell, puis installer la préversion en exécutant `Install-Module AzureADPreview`.
-
-- Si vous avez déjà installé lapréversion, exécutez `Install-Module AzureADPreview` pour vous assurer qu’il s’agit de la dernière version de ce module.
-
-> [!NOTE]
-> Vous devez disposer des droits d’administrateur globaux pour exécuter ces commandes. 
-
-Exécutez le script suivant, */<GroupName/>* en remplaçant par le nom du groupe dans lequel vous souhaitez bloquer l’accès invité.
-
-```PowerShell
-$GroupName = "<GroupName>"
-
-Connect-AzureAD
-
-$template = Get-AzureADDirectorySettingTemplate | ? {$_.displayname -eq "group.unified.guest"}
-$settingsCopy = $template.CreateDirectorySetting()
-$settingsCopy["AllowToAddGuests"]=$False
-$groupID= (Get-AzureADGroup -SearchString $GroupName).ObjectId
-New-AzureADObjectSetting -TargetType Groups -TargetObjectId $groupID -DirectorySetting $settingsCopy
-```
-
-Pour vérifier vos paramètres, exécutez la commande suivante :
-
-```PowerShell
-Get-AzureADObjectSetting -TargetObjectId $groupID -TargetType Groups | fl Values
-```
-
-La vérification se présente comme suit :
-    
-![Capture d’écran de la fenêtre PowerShell indiquant que l’accès au groupe invité a été défini sur false.](../../media/09ebfb4f-859f-44c3-a29e-63a59fd6ef87.png)
-  
-## <a name="allow-or-block-guest-access-based-on-their-domain"></a>Autoriser ou bloquer l’accès invité en fonction de leur domaine
-
-Vous pouvez autoriser ou bloquer les utilisateurs invités qui utilisent un domaine spécifique. Par exemple, si votre entreprise (contoso) a un partenariat avec une autre entreprise (Fabrikam), vous pouvez ajouter Fabrikam à votre liste verte afin que vos utilisateurs puissent ajouter ces invités à leurs groupes.
-
-Pour plus d’informations, reportez-vous à la rubrique [autoriser ou bloquer des invitations à des utilisateurs B2B d’organisations spécifiques](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list).
-
-## <a name="add-guests-to-the-global-address-list"></a>Ajouter des invités à la liste d’adresses globale
-
-Par défaut, les invités ne sont pas visibles dans la liste d’adresses globale d’Exchange. Utilisez les étapes répertoriées ci-dessous pour faire en sorte qu’un invité soit visible dans la liste d’adresses globale. Assurez-vous que l’invité est visible dans le centre d’administration Exchange Online. Les nouveaux invités peuvent prendre un peu de temps pour apparaître après leur ajout.
-
-Recherchez l’ObjectID de l’utilisateur invité en exécutant :
-
-```PowerShell
-Get-AzureADUser -Filter "userType eq 'Guest'"
-```
-
-Exécutez ensuite la commande suivante à l’aide des valeurs appropriées pour ObjectID, GivenName, Surname, DisplayName et TelephoneNumber.
-
-```PowerShell
-Set-AzureADUser -ObjectId cfcbd1a0-ed18-4210-9b9d-cf0ba93cf6b2 -ShowInAddressList $true -GivenName 'Megan' -Surname 'Bowen' -DisplayName 'Megan Bowen' -TelephoneNumber '555-555-5555'
-```
-
-## <a name="related-articles"></a>Articles connexes
+[Bloquer les utilisateurs invités d’un groupe spécifique](https://docs.microsoft.com/microsoft-365/solutions/per-group-guest-access)
 
 [Gérer l’appartenance au groupe dans le centre d’administration Microsoft 365](add-or-remove-members-from-groups.md)
   

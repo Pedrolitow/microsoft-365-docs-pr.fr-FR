@@ -16,12 +16,12 @@ ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection:
 - M365-security-compliance
 description: En savoir plus sur les suivis de menace, y compris les nouveaux suivis, pour aider votre organisation à répondre aux préoccupations de sécurité.
-ms.openlocfilehash: e4e157e64da92cf3c9178af1223fbc6c85e3fd95
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: c631a6d9ad56c2bd155a9aa24b3758eb30d10cf7
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201794"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327152"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Suivi des menaces-nouveautés et remarquables
 
@@ -88,22 +88,20 @@ N’oubliez pas que vous pouvez toujours nous faire part de vos commentaires sur
   
 ## <a name="trackers-and-office-365-advanced-threat-protection"></a>Suivis et protection avancée contre les menaces Office 365
 
-Avec notre menace inéditive, nous mettons en évidence les menaces de programmes malveillants avancées détectées par [les pièces jointes sécurisées d’Office 365 ATP](atp-safe-attachments.md). Si vous êtes un client Office 365 entreprise E5 et que vous n’utilisez pas [office 365 Advanced Threat Protection](office-365-atp.md) (ATP), vous devez l’inclure dans votre abonnement. ATP fournit une valeur même si d’autres outils de sécurité filtrent le flux de messagerie avec vos services Office 365. Toutefois, les fonctionnalités de blocage du courrier indésirable et d' [Office 365 ATP](atp-safe-links.md) fonctionnent mieux lorsque votre solution de sécurité de messagerie principale s’effectue par le biais d’Office 365. 
+Avec notre menace inéditive, nous mettons en évidence les menaces de programmes malveillants avancées détectées par [les pièces jointes fiables](atp-safe-attachments.md). Si vous êtes un client Office 365 entreprise E5 et que vous n’utilisez pas [office 365 Advanced Threat Protection](office-365-atp.md) (ATP), vous devez l’inclure dans votre abonnement. ATP fournit une valeur même si d’autres outils de sécurité filtrent le flux de messagerie avec vos services Office 365. Toutefois, les fonctionnalités de protection contre le courrier indésirable et les [liens fiables](atp-safe-links.md) fonctionnent mieux lorsque votre solution de sécurité de messagerie principale s’effectue par le biais d’Office 365.
   
 ![ATP dans le centre de sécurité &amp; conformité](../../media/cee70d07-f0c1-459b-843c-2d10c253349f.png)
   
-Dans le monde des menaces riddled, l’exécution d’analyses anti-programmes malveillants classiques signifie que vous n’êtes pas suffisamment protégé contre les attaques. Les agresseurs les plus sophistiqués d’aujourd’hui utilisent les outils couramment disponibles pour créer des attaques nouvelles, brouillées ou retardées qui ne seront pas reconnues par les moteurs anti-programme malveillant basés sur des signatures traditionnels. La fonctionnalité de pièces jointes approuvées ATP prend les pièces jointes et les détonateurs dans un environnement virtuel pour déterminer si elles sont sûres ou malveillantes. Ce processus de détonation ouvre chaque fichier dans un environnement d’ordinateur virtuel, puis observe ce qui se passe après l’ouverture du fichier. Qu’il s’agisse d’un fichier PDF, d’un fichier compressé ou d’un document Office, le code malveillant peut être masqué dans un fichier, en activant une seule fois que la victime l’ouvre sur son ordinateur. En détonant et analysant le fichier dans le flux de messagerie, les fonctionnalités ATP d’Office 365 détectent ces menaces en fonction des comportements, de la réputation de fichier et d’un certain nombre de règles heuristiques.
+Dans le monde des menaces riddled, l’exécution d’analyses anti-programmes malveillants classiques signifie que vous n’êtes pas suffisamment protégé contre les attaques. Les agresseurs les plus sophistiqués d’aujourd’hui utilisent les outils couramment disponibles pour créer des attaques nouvelles, brouillées ou retardées qui ne seront pas reconnues par les moteurs anti-programme malveillant basés sur des signatures traditionnels. La fonctionnalité de pièces jointes fiables prend les pièces jointes et les détonateurs dans un environnement virtuel pour déterminer si elles sont sûres ou malveillantes. Ce processus de détonation ouvre chaque fichier dans un environnement d’ordinateur virtuel, puis observe ce qui se passe après l’ouverture du fichier. Qu’il s’agisse d’un fichier PDF, d’un fichier compressé ou d’un document Office, le code malveillant peut être masqué dans un fichier, en activant une seule fois que la victime l’ouvre sur son ordinateur. En détonant et analysant le fichier dans le flux de messagerie, les fonctionnalités ATP d’Office 365 détectent ces menaces en fonction des comportements, de la réputation de fichier et d’un certain nombre de règles heuristiques.
   
-Le nouveau filtre de menace présentant en surbrillance les éléments récemment détectés via des pièces jointes sécurisées ATP. Ces détections représentent des éléments qui sont des nouveaux fichiers malveillants, qui n’ont pas été précédemment trouvés par Microsoft 365 dans votre courrier électronique ou dans d’autres clients. Faites attention aux éléments dans le suivi des menaces, reportez-vous à la personne qui a été ciblée et consultez les détails de la détonation affichés sous l’onglet analyse avancée (en cliquant sur l’objet du message dans l’Explorateur). Remarque Vous trouverez cet onglet uniquement sur les courriers électroniques détectés par la fonctionnalité pièces jointes recommandées pour la protection avancée contre les menaces, ce suivi notable inclut ce filtre, mais vous pouvez également utiliser ce filtre pour d’autres recherches dans l’Explorateur.
+Le nouveau filtre de menace présentant en surbrillance les éléments récemment détectés par le biais de pièces jointes fiables. Ces détections représentent des éléments qui sont des nouveaux fichiers malveillants, qui n’ont pas été précédemment trouvés par Microsoft 365 dans votre courrier électronique ou dans d’autres clients. Faites attention aux éléments dans le suivi des menaces, reportez-vous à la personne qui a été ciblée et consultez les détails de la détonation affichés sous l’onglet analyse avancée (en cliquant sur l’objet du message dans l’Explorateur). Remarque Vous trouverez cet onglet uniquement sur les messages électroniques détectés par la fonctionnalité de pièces jointes approuvées, ce suivi notable inclut ce filtre, mais vous pouvez également utiliser ce filtre pour d’autres recherches dans l’Explorateur.
   
 ## <a name="next-steps"></a>Étapes suivantes
 
 - Si votre organisation ne dispose pas déjà de ces fonctionnalités d’enquête et de réponse pour les menaces Office 365, consultez [Comment obtenir les fonctionnalités d’enquête et de réponse aux menaces pour office 365 ?](office-365-ti.md).
-    
-- Assurez-vous que les rôles et les autorisations appropriés sont attribués à votre équipe de sécurité. Vous devez être un administrateur général ou avoir l’administrateur de sécurité ou le rôle de recherche et de purge affecté dans le centre de sécurité et de &amp; conformité. Consultez [la rubrique autorisations dans le &amp; Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
-    
-- Surveillez les nouveaux suivis à afficher dans votre environnement Microsoft 365. Le cas échéant, vous trouverez vos suivis [ici](https://protection.office.com/). Accédez à **Threats Management** \> **Threat trackers**.
-    
-- Si vous ne l’avez pas déjà fait, Apprenez-en plus sur et configurez la [protection avancée contre les menaces d’office 365](office-365-atp.md) pour votre organisation, y compris les [liens de sécurité Office 365 ATP](atp-safe-links.md) et [les pièces jointes fiables Office 365](atp-safe-attachments.md).
-  
 
+- Assurez-vous que les rôles et les autorisations appropriés sont attribués à votre équipe de sécurité. Vous devez être un administrateur général ou avoir l’administrateur de sécurité ou le rôle de recherche et de purge affecté dans le centre de sécurité et de &amp; conformité. Consultez [la rubrique autorisations dans le &amp; Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
+
+- Surveillez les nouveaux suivis à afficher dans votre environnement Microsoft 365. Le cas échéant, vous trouverez vos suivis [ici](https://protection.office.com/). Accédez à **Threats Management** \> **Threat trackers**.
+
+- Si vous ne l’avez pas déjà fait, Découvrez et configurez la [protection avancée contre les menaces d’Office 365](office-365-atp.md) pour votre organisation, y compris les [liens fiables](atp-safe-links.md) et [les pièces jointes fiables](atp-safe-attachments.md).

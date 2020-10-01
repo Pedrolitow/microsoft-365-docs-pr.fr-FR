@@ -8,7 +8,7 @@ ms.topic: article
 f1.keywords:
 - NOCSH
 ms.author: heidip
-ms.date: 09/18/2020
+ms.date: 09/30/2020
 ms.reviewer: anmorgan
 ms.custom:
 - it-pro
@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 570ef098a3989bf42d641b78e325414350b8e5a5
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: b9a9044a063c01724710679682e1edbe458dec0f
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48132111"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327133"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>Recommandations de stratégie pour la sécurisation des conversations, des groupes et des fichiers teams
 
@@ -51,7 +51,7 @@ Pour protéger la conversation, les groupes et le contenu dans Teams, le diagram
 
 Il s’agit des services dépendants à inclure dans l’affectation d’applications Cloud pour teams :
 
-- Microsoft Teams
+- Microsoft Teams
 - SharePoint et OneDrive Entreprise
 - Exchange Online
 - Skype Entreprise Online
@@ -66,7 +66,6 @@ Ce tableau répertorie les stratégies qui doivent être revisitées, ainsi que 
 |        |[Bloquer les clients ne prenant pas en charge l’authentification moderne](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Incluez les équipes et les services dépendants dans l’affectation d’applications Cloud.|
 |        |[Les utilisateurs à risque élevé doivent modifier leur mot de passe](identity-access-policies.md#high-risk-users-must-change-password)|Force les utilisateurs de teams à modifier leur mot de passe lors de la connexion si une activité à haut risque est détectée pour leur compte. Assurez-vous que les équipes et les services dépendants sont inclus dans la liste des applications.|
 |        |[Appliquer des stratégies de protection des données d’application](identity-access-policies.md#apply-app-data-protection-policies)|Assurez-vous que les équipes et les services dépendants sont inclus dans la liste des applications. Mettez à jour la stratégie pour chaque plateforme (iOS, Android, Windows).|
-|        |[Exiger les applications approuvées et la protection des applications](identity-access-policies.md#require-approved-apps-and-app-protection)|Incluez les équipes et les services dépendants dans cette stratégie.|
 |        |[Définir les stratégies de conformité des appareils](identity-access-policies.md#define-device-compliance-policies)|Incluez les équipes et les services dépendants dans cette stratégie.|
 |        |[Exiger des PC conformes](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Incluez les équipes et les services dépendants dans cette stratégie.|
 |**Sensible**|[Exiger l’authentification multifacteur lorsque le risque de connexion est *faible*, *moyen* ou *élevé*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Les équipes disposent également d’un accès invité et de règles d’accès externe à prendre en compte pour en savoir plus à ce sujet plus loin dans cet article. Incluez les équipes et les services dépendants dans cette stratégie.|

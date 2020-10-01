@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Créer un environnement Microsoft 365 pour tester l’accès aux identités et appareils.
-ms.openlocfilehash: c5bc0fbbb3ae3839cb7aa71e8c840784ae4a4cad
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 84af7747fc1d0e80e933397f4f0f96018ed246c3
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685853"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327806"
 ---
 # <a name="identity-and-device-access-for-your-microsoft-365-test-environment"></a>Accès aux identités et appareils pour votre environnement de test Microsoft 365
 
@@ -28,15 +28,15 @@ ms.locfileid: "46685853"
 
 Les [configurations d’identité et d’accès aux appareils](microsoft-365-policies-configurations.md) sont un ensemble de fonctionnalités et de stratégies d’accès conditionnel permettant de protéger l’accès à tous les services intégrés à Azure Active Directory (Azure AD).
 
-Pour créer un environnement de test disposant des stratégies suivantes :
+Pour créer un environnement de test avec les configurations courantes d’identité et d’accès aux appareils en place :
 
 1. Configurez votre environnement de test avec les fonctionnalités d’identité et de sécurité requises en fonction du modèle d’identité et de la méthode d’authentification que vous avez choisis :
 
   - [Cloud uniquement](cloud-only-prereqs-m365-test-environment.md)
-  - [Synchronisation de hachage de mot de passe (PHS)](phs-prereqs-m365-test-environment.md)
+  - [Synchronisation de hachage de mot de passe (hachage)](phs-prereqs-m365-test-environment.md)
   - [Authentification directe (PTA)](pta-prereqs-m365-test-environment.md)
 
-2. Utilisez des [stratégies courantes d’accès aux identités et appareils](identity-access-policies.md) pour configurer des stratégies qui respectent des conditions préalables et testent la protection des identités et appareils.
+2. Utilisez des [stratégies d’identité et d’accès aux appareils communes](identity-access-policies.md) pour configurer les stratégies qui s’appuient sur les conditions préalables configurées pour votre environnement de test et explorer et vérifier la protection des identités et des périphériques.
 
 ## <a name="see-also"></a>Voir aussi
 

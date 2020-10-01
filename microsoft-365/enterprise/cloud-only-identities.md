@@ -3,7 +3,7 @@ title: Identité Cloud Microsoft 365 uniquement
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/09/2020
+ms.date: 09/30/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Indique comment créer des utilisateurs et des groupes lorsque votre abonnement Microsoft 365 utilise l’identité de Cloud uniquement.
-ms.openlocfilehash: 6ec727ea3648f1daa3af42763e5f497715b987a2
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 111c42e644913a8f7f6e41d4e8bf65685263f757
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547757"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327926"
 ---
 # <a name="microsoft-365-cloud-only-identity"></a>Identité Cloud Microsoft 365 uniquement
 
@@ -58,17 +58,9 @@ Vous pouvez utiliser des groupes dans Azure AD à plusieurs fins afin de simplif
 - Approvisionner automatiquement les utilisateurs pour les applications SaaS (Software as a service) et protéger l’accès à ces applications à l’aide de l’authentification multifacteur (MFA) et d’autres stratégies d’accès conditionnel.
 - Mettre en service des autorisations et des niveaux d’accès pour les sites d’équipe SharePoint Online.
 
-Vous créez des ***utilisateurs*** avec :
+## <a name="next-steps-for-cloud-only-identity"></a>Étapes suivantes pour l’identité Cloud uniquement
 
-- [Le Centre d’administration Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/add-users)
-- [PowerShell pour Microsoft 365](create-user-accounts-with-microsoft-365-powershell.md)
-
-Vous créez des ***groupes*** avec :
-
-- [Le Centre d’administration Microsoft 365](https://docs.microsoft.com/office365/admin/create-groups/create-groups)
-- [PowerShell pour Microsoft 365](manage-microsoft-365-groups-with-powershell.md)
-
-
-## <a name="next-step-for-cloud-only-identity"></a>Étape suivante pour l’identité Cloud uniquement
-
-[Attribution de licences aux comptes d’utilisateurs](assign-licenses-to-user-accounts.md)
+- [Gérer les comptes d’utilisateurs](manage-microsoft-365-accounts.md)
+- [Attribution de licences aux comptes d’utilisateurs](assign-licenses-to-user-accounts.md)
+- [Gérer les groupes et l’appartenance au groupe](manage-microsoft-365-groups.md)
+- [Gérer les mots de passe de compte d’utilisateur](manage-microsoft-365-passwords.md)

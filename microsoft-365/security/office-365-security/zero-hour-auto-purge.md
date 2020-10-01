@@ -21,12 +21,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent découvrir comment la suppression automatique des heures zéro peut déplacer rétroactivement les messages remis dans une boîte aux lettres Exchange Online vers le dossier de courrier indésirable ou la mise en quarantaine qui se trouve rétroactivement comme courrier indésirable ou hameçonnage.
-ms.openlocfilehash: 66df614700dc5f9b9938200d384cc293a51e2f3c
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 31e546ddf6e93ed0a265aef3737182cf30ae5a95
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202638"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327974"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>Purge automatique avec zéro heure (ZAP) dans Exchange Online
 
@@ -83,7 +83,7 @@ Pour plus d’informations sur la configuration des règles de filtrage du courr
 
 ### <a name="zap-considerations-for-office-365-advanced-threat-protection-office-365-atp"></a>Considérations relatives à l’ZAP pour Office 365 protection avancée contre les menaces (Office 365 ATP)
 
-ZAP ne met pas en quarantaine les messages qui se trouvent dans le processus d’analyse de [remise dynamique](dynamic-delivery-and-previewing.md) , ou où le filtrage des programmes malveillants a déjà remplacé la pièce jointe par le fichier d' **alerte de programme malveillant Text.txt** . Si un signal de courrier indésirable ou de courrier indésirable est reçu pour ces types de messages et que le verdict de filtrage dans la stratégie de blocage du courrier indésirable est défini de façon à effectuer une action sur le message (déplacer vers le courrier indésirable, rediriger, supprimer, mettre en quarantaine), ZAP utilise l’action « déplacer vers courrier indésirable »
+ZAP ne met pas en quarantaine les messages qui se trouvent dans le processus de [remise dynamique](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies) dans l’analyse des pièces jointes approuvées ou dans lesquels le filtrage des programmes malveillants EOP a déjà remplacé la pièce jointe par le fichier d' **alerte de programme malveillant Text.txt** . Si un signal de courrier indésirable ou de courrier indésirable est reçu pour ces types de messages et que le verdict de filtrage dans la stratégie anti-courrier indésirable est défini de façon à effectuer une action sur le message (passer à courrier indésirable, rediriger, supprimer ou mettre en quarantaine), l’action ZAP sera par défaut «déplacer vers le courrier indésirable
 
 ## <a name="how-to-see-if-zap-moved-your-message"></a>Comment savoir si la méthode ZAP a déplacé votre message
 

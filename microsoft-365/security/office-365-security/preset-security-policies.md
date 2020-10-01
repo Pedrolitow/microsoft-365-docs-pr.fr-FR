@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à appliquer des paramètres de stratégie standard et stricts pour les fonctionnalités de protection d’Exchange Online Protection (EOP) et Office 365 Advanced Threat Protection (ATP).
-ms.openlocfilehash: 35be2b1ebfcf7ef8b7aad5cc2d4b3dd7032806b2
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 8431d36779069b0b289a2533fbd6b85abee24536
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202602"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48326542"
 ---
 # <a name="preset-security-policies-in-eop-and-office-365-atp"></a>Stratégies de sécurité prédéfinies dans EOP et Office 365 ATP
 
@@ -75,9 +75,9 @@ Les stratégies de sécurité prédéfinies utilisent les stratégies correspond
     - [Paramètres d’emprunt d’identité](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies)
     - [Seuils de hameçonnage avancés](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-atp-anti-phishing-policies)
 
-  - [Stratégies de liens fiables](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings-in-custom-policies-for-specific-users) nommées **stratégie de sécurité prédéfinie standard** et **stratégie de sécurité avec présélection stricte**.
+  - [Stratégies de liens fiables](set-up-atp-safe-links-policies.md) nommées **stratégie de sécurité prédéfinie standard** et **stratégie de sécurité avec présélection stricte**.
 
-  - [Stratégies de pièces jointes approuvées](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-policy-settings-in-custom-policies-for-specific-users) nommées **stratégie de sécurité prédéfinie standard** et **stratégie de sécurité avec présélection stricte**.
+  - [Stratégies de pièces jointes approuvées](set-up-atp-safe-attachments-policies.md) nommées **stratégie de sécurité prédéfinie standard** et **stratégie de sécurité avec présélection stricte**.
 
 Notez que vous pouvez appliquer des protections EOP à différents utilisateurs que les protections ATP.
 

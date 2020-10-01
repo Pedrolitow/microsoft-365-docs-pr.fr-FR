@@ -16,12 +16,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Pendant et après une enquête automatisée dans Microsoft 365, vous pouvez afficher les résultats et les résultats clés.
 ms.date: 09/29/2020
-ms.openlocfilehash: df0eaa54d8bc1c9cd6c91b6b36958e1eb0d2bfd6
-ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
+ms.openlocfilehash: 4be5f3814ed798a0e7fd42285ed2884a5cc29461
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48309105"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327698"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Détails et résultats d’une enquête automatisée dans Microsoft 365
 
@@ -247,7 +247,7 @@ Vous pouvez :
 |Détection des programmes malveillants sortants et des anomalies du courrier indésirable|Détecter les programmes malveillants, les hameçons et les courriers indésirables internes et sortants provenant des utilisateurs de votre organisation|
 |Enquête sur les domaines des expéditeurs|Vérification à la demande de la réputation de domaine à partir du [graphique de sécurité intelligent Microsoft](https://www.microsoft.com/security/operations/intelligence) et des sources externes de renseignement contre les menaces|
 |Enquête sur l’adresse IP de l’expéditeur| Vérification de la réputation de l’IP à la demande à partir du [graphique de sécurité intelligent Microsoft](https://www.microsoft.com/security/operations/intelligence) et des sources d’aide à la décision externes|
-|L’URL clique sur l’enquête| Examiner les clics des utilisateurs protégés par les [liens approuvés ATP d’Office 365](atp-safe-links.md) dans votre organisation|
+|L’URL clique sur l’enquête| Examiner les clics des utilisateurs protégés par les [liens fiables dans Office 365 DAV](atp-safe-links.md) dans votre organisation|
 |Enquête de réputation d’URL|Vérification à la demande de la réputation de l’URL à partir de [Microsoft intelligent Security Graph](https://www.microsoft.com/security/operations/intelligence) et External Threat Intelligence sources|
 |Enquête sur l’activité des utilisateurs|Analyser les anomalies d’activité des utilisateurs dans [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|
 |Extraction d’indicateurs de messages électroniques signalés par l’utilisateur|Extraire les indicateurs de l’en-tête, du corps et du contenu de la [messagerie signalée](enable-the-report-message-add-in.md) par l’utilisateur pour l’enquête|
@@ -271,6 +271,6 @@ Vous pouvez :
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-- [Vérifier et approuver les actions en attente](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions?view=o365-worldwide#approve-or-reject-pending-actions)
+- [Vérifier et approuver les actions en attente](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions)
 
 - [En savoir plus sur l’analyse et la réponse automatisées dans Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)

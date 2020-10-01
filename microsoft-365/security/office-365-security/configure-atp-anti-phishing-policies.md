@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à créer, modifier et supprimer les stratégies anti-hameçonnage avancées disponibles dans les organisations avec Office 365 Advanced Threat Protection (Office 365 ATP).
-ms.openlocfilehash: a4b5dc5beac23e267f6b0e5070d91301b589ad4c
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 2986102b549b7302a7a4ac533f80846d832aeb41
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203382"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48328070"
 ---
 # <a name="configure-atp-anti-phishing-policies"></a>Configurer des stratégies anti-hameçonnage ATP
 
@@ -75,7 +75,7 @@ Pour accroître l’efficacité de la protection anti-hameçonnage, vous pouvez 
     - **Lecteur de sécurité** dans le [Centre de conformité et sécurité](permissions-in-the-security-and-compliance-center.md).
     - **Gestion de l’organisation en affichage seul** dans[Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
-- Pour connaître les paramètres recommandés pour les stratégies anti-hameçonnage ATP, consultez la rubrique paramètres de la [stratégie anti-hameçonnage Office ATP](recommended-settings-for-eop-and-office365-atp.md#office-atp-anti-phishing-policy-settings).
+- Pour connaître les paramètres recommandés pour les stratégies anti-hameçonnage ATP, voir paramètres de la [stratégie anti-hameçonnage ATP](recommended-settings-for-eop-and-office365-atp.md#atp-anti-phishing-policy-settings).
 
 - Autoriser jusqu’à 30 minutes pour l’application d’une stratégie nouvelle ou mise à jour.
 
@@ -147,7 +147,7 @@ Utilisez les procédures suivantes pour modifier les stratégies anti-hameçonna
 
 4. **Paramètre de stratégie**: cliquez sur **modifier** pour modifier les mêmes paramètres que ceux qui étaient disponibles lorsque vous avez [créé la stratégie](#use-the-security--compliance-center-to-create-atp-anti-phishing-policies) dans la section précédente :
 
-   - **Name**
+   - **Nom**
    - **Description**
    - **Appliqué à**
    - **Vérifier vos paramètres**

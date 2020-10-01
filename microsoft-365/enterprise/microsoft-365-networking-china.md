@@ -12,16 +12,17 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - remotework
+- M365initiative-CoreDeploy
 search.appverid: MET150
 f1.keywords:
 - NOCSH
 description: Cet article fournit des instructions pour optimiser les performances réseau pour les utilisateurs de Chine de clients Microsoft 365 généraux.
-ms.openlocfilehash: 94de83a94bf6cdf5470b66970efb62094bdc4343
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 1f5f51991c5950d46c9d835a98bea86bcb354366
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46689754"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327508"
 ---
 # <a name="microsoft-365-global-tenant-performance-optimization-for-china-users"></a>Optimisation des performances client globales Microsoft 365 pour les utilisateurs de la Chine
 
@@ -72,7 +73,7 @@ Microsoft travaille en permanence pour améliorer l’expérience utilisateur de
 
 [Planification réseau et optimisation des performances pour Microsoft 365](https://aka.ms/tune)
 
-[Principes de connectivité réseau de Microsoft 365](microsoft-365-network-connectivity-principles.md)
+[Principes de connectivité réseau Microsoft 365](microsoft-365-network-connectivity-principles.md)
 
 [Gestion des points de terminaison Office 365](managing-office-365-endpoints.md)
 

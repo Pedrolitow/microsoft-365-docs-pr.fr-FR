@@ -17,12 +17,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Découvrez Campaign Views dans Office 365 - Protection avancée contre les menaces.
-ms.openlocfilehash: 881dcde1157877eb015d9700bcbcd08fd3336192
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: df3b3c7a0e8d8f614e5f743b445af07916f1dfd5
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203478"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48326590"
 ---
 # <a name="campaign-views-in-office-365-atp"></a>Campaign Views dans Office 365 - Protection avancée contre les menaces
 
@@ -264,9 +264,9 @@ Si un utilisateur a cliqué sur l’URL de la charge utile dans le message d’h
 
 - **Autorisé**
 
-- **BlockPage**: le destinataire a cliqué sur l’URL de charge utile, mais son accès au site Web malveillant a été bloqué par les stratégies de [liens fiables ATP](atp-safe-links.md) de votre organisation.
+- **BlockPage**: le destinataire a cliqué sur l’URL de charge utile, mais son accès au site Web malveillant a été bloqué par une stratégie de [liens fiables](atp-safe-links.md) dans votre organisation.
 
-- **BlockPageOverride**: le destinataire a cliqué sur l’URL de charge utile dans le message, les liens fiables ATP ont essayé de les arrêter, mais ils ont été autorisés à remplacer le bloc. Inspectez vos [stratégies de liens fiables](set-up-atp-safe-links-policies.md) afin de déterminer pourquoi les utilisateurs sont autorisés à remplacer le verdict des liens fiables et à passer au site Web malveillant.
+- **BlockPageOverride**: le destinataire a cliqué sur l’URL de charge utile dans le message, les liens fiables ont essayé de les arrêter, mais ils ont été autorisés à remplacer le bloc. Inspectez vos [stratégies de liens fiables](set-up-atp-safe-links-policies.md) afin de déterminer pourquoi les utilisateurs sont autorisés à remplacer le verdict des liens fiables et à passer au site Web malveillant.
 
 - **PendingDetonationPage**: pièces jointes fiables dans Office 365 la protection avancée contre les menaces est en cours d’ouverture et d’étude de l’URL de charge utile dans un environnement d’ordinateur virtuel.
 

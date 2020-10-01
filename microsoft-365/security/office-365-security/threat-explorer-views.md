@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez comment utiliser l’Explorateur de menaces et le rapport de détection en temps réel pour examiner les menaces et y répondre dans le &amp; Centre de sécurité conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5500a7bff0766159384604e9973b5ad81b3dbc6f
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 1310baec402d9053e93b7166ca38cfcab11d73b2
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200106"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48326984"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Affichages dans l’Explorateur de menaces et détections en temps réel
 
@@ -40,10 +40,10 @@ Lorsque vous ouvrez l’Explorateur (ou le rapport de détection en temps réel)
 
 |Abonnement|Utilitaire|Jours de données|
 |---|---|---|
-|Version d’évaluation de l’ATP P1|Détections en temps réel|7 |
+|Version d’évaluation de l’ATP P1|Détections en temps réel|7 |
 |ATP P1 payé|Détections en temps réel|0,30|
-|Version d’évaluation de l’ATP P2, tests sponsorisés P1|Threat Explorer|7 |
-|Version d’évaluation de l’ATP P2|Threat Explorer|7 |
+|Version d’évaluation de l’ATP P2, tests sponsorisés P1|Threat Explorer|7 |
+|Version d’évaluation de l’ATP P2|Threat Explorer|7 |
 |ATP P2 payé|Threat Explorer|0,30|
 |
 
@@ -140,7 +140,7 @@ Si vous cliquez sur **détonation** de la protection avancée contre les menaces
 
 ![Explorateur filtré pour afficher uniquement les résultats de la détonation ATP](../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png)
 
-Dans cet affichage, nous examinons à présent les données des fichiers qui ont été détonants par [les pièces jointes approuvées par Office 365 ATP](atp-safe-attachments.md). Sous le graphique, nous pouvons voir des détails sur des messages électroniques spécifiques qui avaient des pièces jointes détectées par des pièces jointes sûres ATP.
+Dans cet affichage, nous examinons à présent les données des fichiers qui ont été détonants par des [pièces jointes fiables](atp-safe-attachments.md). Sous le graphique, nous pouvons voir des détails sur des messages électroniques spécifiques qui avaient des pièces jointes détectées par des pièces jointes fiables.
 
 ![Détails spécifiques sur les messages électroniques avec des pièces jointes détectées](../../media/c91fb05c-d1d4-4085-acc6-f7008a415c2a.png)
 

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Recherchez et utilisez des rapports pour Office 365 protection avancée contre les menaces dans le centre de sécurité &amp; conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 90da02c8aa3d50f62bdf4be8c466962da828b23d
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 16fef101f722a23b3a64d91c85c2f946c67036f0
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196584"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48328031"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Afficher les rapports pour Office 365 protection avancée contre les menaces
 
@@ -36,7 +36,7 @@ Les organisations Office 365 Advanced Threat Protection (ATP) (par exemple, les 
 
 ## <a name="advanced-threat-protection-file-types-report"></a>Rapport sur les types de fichiers de Protection avancée contre les menaces
 
-Le rapport des **types de fichiers de protection avancée contre les menaces** indique le type de fichiers détectés comme malveillants par des [pièces jointes sûres ATP](atp-safe-attachments.md).
+Le rapport de rapports sur les **types de fichiers de protection avancée contre les menaces** indique le type de fichiers détectés comme malveillants par des [pièces jointes fiables](atp-safe-attachments.md).
 
  La vue agrégée du rapport autorise 90 jours de filtrage, tandis que l’affichage détaillé autorise uniquement les 10 jours de filtrage.
 
@@ -62,7 +62,7 @@ Les vues disponibles sont les suivantes :
   - **Pièces jointes exécutables malveillants**
   - **Autres**
 
-  Lorsque vous placez le curseur de la souris sur un jour particulier (point de données), vous pouvez voir la répartition des types de fichiers malveillants détectés par les [pièces jointes fiables ATP](atp-safe-attachments.md) et la protection contre les [programmes malveillants dans EOP](anti-malware-protection.md).
+  Lorsque vous pointez sur un jour particulier (point de données), vous pouvez voir la répartition des types de fichiers malveillants détectés par [les pièces jointes fiables](atp-safe-attachments.md) et la protection contre les [programmes malveillants dans EOP](anti-malware-protection.md).
 
   ![Vue de fichier dans le rapport des types de fichiers ATP](../../media/atp-file-types-report-file-view.png)
 
@@ -76,7 +76,7 @@ Les vues disponibles sont les suivantes :
   - **Bloquer l’accès**
   - **Messages remplacés**
   - **Messages surveillés**
-  - **Remplacé par remise de courrier dynamique**: pour plus d’informations, consultez la rubrique [remise et aperçu dynamiques avec des pièces jointes fiables ATP](dynamic-delivery-and-previewing.md).
+  - **Remplacé par remise de courrier dynamique**: pour plus d’informations, consultez la rubrique [distribution dynamique dans les stratégies de pièces jointes approuvées](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies).
 
   ![Affichage des messages dans le rapport sur les types de fichiers ATP](../../media/atp-file-types-report-message-view.png)
 
@@ -138,7 +138,7 @@ Les vues disponibles sont les suivantes :
   - **Bloquer l’accès**
   - **Messages remplacés**
   - **Messages surveillés**
-  - **Remplacé par remise de courrier dynamique**: pour plus d’informations, consultez la rubrique [remise et aperçu dynamiques avec des pièces jointes fiables ATP](dynamic-delivery-and-previewing.md).
+  - **Remplacé par remise de courrier dynamique**: pour plus d’informations, consultez la rubrique [distribution dynamique dans les stratégies de pièces jointes approuvées](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies).
 
   ![Affichage des messages dans le rapport sur les types de fichiers ATP](../../media/atp-file-types-report-message-view.png)
 
@@ -158,7 +158,7 @@ Les vues disponibles sont les suivantes :
   - **Pièces jointes exécutables malveillants**
   - **Autres**
 
-  Lorsque vous placez le curseur de la souris sur un jour particulier (point de données), vous pouvez voir la répartition des types de fichiers malveillants détectés par les [pièces jointes fiables ATP](atp-safe-attachments.md) et la protection contre les [programmes malveillants dans EOP](anti-malware-protection.md).
+  Lorsque vous pointez sur un jour particulier (point de données), vous pouvez voir la répartition des types de fichiers malveillants détectés par [les pièces jointes fiables](atp-safe-attachments.md) et la protection contre les [programmes malveillants dans EOP](anti-malware-protection.md).
 
   ![Vue de fichier dans le rapport des types de fichiers ATP](../../media/atp-file-types-report-file-view.png)
 
@@ -206,7 +206,7 @@ Le rapport d' **État de protection contre les menaces** est une vue unique qui 
 
 ## <a name="url-threat-protection-report"></a>Rapport d’URL de protection contre les menaces
 
-Le **rapport URL protection contre les menaces** fournit des vues récapitulatives et des tendances pour les menaces détectées, ainsi que les actions effectuées sur les clics d’URL dans le cadre de [liens fiables ATP](atp-safe-links.md). Ce rapport n’aura pas de clic sur les données des utilisateurs pour lesquels la stratégie de liens fiables est sélectionnée, l’option **ne pas suivre les clics utilisateur** est activée.
+Le **rapport URL protection contre les menaces** fournit des vues récapitulatives et des tendances pour les menaces détectées, ainsi que les actions effectuées sur les clics d’URL dans le cadre de [liens fiables](atp-safe-links.md). Ce rapport n’aura pas de clic sur les données des utilisateurs pour lesquels la stratégie de liens fiables est sélectionnée, l’option **ne pas suivre les clics utilisateur** est activée.
 
 Pour afficher le rapport, ouvrez le [Centre de sécurité & conformité](https://protection.office.com), accédez **Reports** au \> **tableau de bord** rapports et sélectionnez **URL protection Report**. Pour accéder directement au rapport, ouvrez <https://protection.office.com/reportv2?id=URLProtectionActionReport> .
 
@@ -234,7 +234,7 @@ Le rapport **URL protection contre les menaces** comporte deux vues agrégées q
 
   ![URL cliquez sur affichage d’action de protection dans le rapport d’URL protection contre les menaces](../../media/url-threat-protection-report-url-click-protection-action-view.png)
 
-- **URL cliquez par application**: indique le nombre de clics d’URL par applications qui prennent en charge les liens fiables Office 365 ATP :
+- **URL cliquez par application**: indique le nombre de clics d’URL par les applications qui prennent en charge les liens fiables :
 
   - **Client de messagerie**
   - **PowerPoint**
@@ -255,7 +255,7 @@ Le rapport **URL protection contre les menaces** comporte deux vues agrégées q
 Si vous cliquez sur **afficher les détails**de la table, le rapport fournit une vue quasi en temps réel de tous les clics effectués au sein de l’organisation pendant les 7 derniers jours avec les détails suivants :
 
 - **Cliquez sur heure**
-- **User**
+- **Utilisateur**
 - **URL**
 - **Action**
 - **App**
@@ -275,7 +275,7 @@ Outre les rapports ATP décrits dans cette rubrique, plusieurs autres rapports s
 |**Explorateur** (plan ATP 2) ou **détections en temps réel** (plan ATP 1)|[Explorateur de menaces (et détections en temps réel)](threat-explorer.md)|
 |**Rapports de sécurité de messagerie**, tels que le rapport des expéditeurs et des destinataires principaux, le rapport de courrier indésirable et le rapport des détections de courrier indésirable.|[Afficher les rapports de sécurité de courrier dans le centre de sécurité et conformité](view-email-security-reports.md)|
 |Les **rapports de flux de messagerie**, tels que le rapport de transfert, le rapport d’état de flux de messagerie et le rapport des expéditeurs et des destinataires principaux.|[Afficher les rapports de flux de messagerie dans le centre de sécurité & conformité](view-mail-flow-reports.md)|
-|**Suivi des URL pour les liens fiables ATP** (PowerShell uniquement). La sortie de cette cmdlet vous indique les résultats des actions de liens approuvés ATP au cours des sept derniers jours.|[Get-UrlTrace](https://docs.microsoft.com/powershell/module/exchange/get-urltrace)|
+|**Suivi des URL pour les liens fiables** (PowerShell uniquement). La sortie de cette cmdlet vous indique les résultats des actions de liens fiables au cours des sept derniers jours.|[Get-UrlTrace](https://docs.microsoft.com/powershell/module/exchange/get-urltrace)|
 |**Résultats du trafic de messagerie pour EOP et ATP** (PowerShell uniquement). La sortie de cette applet de commande contient des informations sur le domaine, la date, le type d’événement, la direction, l’action et le nombre de messages.|[Get-MailTrafficATPReport](https://docs.microsoft.com/powershell/module/exchange/get-mailtrafficatpreport)|
 |**Rapports de détail du courrier pour les détections EOP et ATP** (PowerShell uniquement). La sortie de cette applet de commande contient des détails sur les URL ou les fichiers malveillants, les tentatives de hameçonnage, l’emprunt d’identité et d’autres menaces potentielles dans les messages ou les fichiers.|[Get-MailDetailATPReport](https://docs.microsoft.com/powershell/module/exchange/get-maildetailatpreport)|
 |
@@ -306,7 +306,7 @@ Pour en savoir plus, consultez les ressources suivantes :
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>Qu’en est-il si les rapports n’affichent pas de données ?
 
-Si vous ne voyez pas de données dans vos rapports ATP, vérifiez que vos stratégies sont correctement configurées. Votre organisation doit avoir des [stratégies de liens fiables ATP](set-up-atp-safe-links-policies.md) et des [stratégies de pièces jointes approuvées ATP](set-up-atp-safe-attachments-policies.md) définies afin que la protection ATP soit mise en place. Consultez également la rubrique protection contre le [courrier indésirable et les programmes malveillants dans Office 365](anti-spam-and-anti-malware-protection.md).
+Si vous ne voyez pas de données dans vos rapports ATP, vérifiez que vos stratégies sont correctement configurées. Votre organisation doit avoir [des stratégies de liens fiables](set-up-atp-safe-links-policies.md) et des [stratégies de pièces jointes approuvées](set-up-atp-safe-attachments-policies.md) définies afin que la protection ATP soit mise en place. Consultez également la rubrique protection contre le [courrier indésirable et les programmes malveillants](anti-spam-and-anti-malware-protection.md).
 
 ## <a name="related-topics"></a>Voir aussi
 

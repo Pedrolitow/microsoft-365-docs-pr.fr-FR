@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur les stratégies anti-hameçonnage disponibles dans Exchange Online Protection (EOP) et Office 365 Advanced Threat Protection (Office 365 ATP).
-ms.openlocfilehash: 945b346a5ebd4a85776d87c019ee1a06aec73635
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 498b6e27b3fca66e388eaa27ba7895056ef7f0fc
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195914"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48326936"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Stratégies anti-hameçonnage dans Microsoft 365
 
@@ -220,4 +220,4 @@ Les seuils de hameçonnage avancés suivants sont disponibles uniquement dans le
 
 - **4-le plus agressif**: les messages identifiés comme hameçonnage avec un niveau de confiance faible, moyen ou élevé sont traités comme s’ils étaient identifiés avec un très haut degré de confiance.
 
-Le risque de faux positifs (bons messages marqués comme incorrects) augmente à mesure que vous augmentez ce paramètre. Pour plus d’informations sur les paramètres recommandés, consultez la rubrique paramètres de la [stratégie anti-hameçonnage Office ATP](recommended-settings-for-eop-and-office365-atp.md#office-atp-anti-phishing-policy-settings).
+Le risque de faux positifs (bons messages marqués comme incorrects) augmente à mesure que vous augmentez ce paramètre. Pour plus d’informations sur les paramètres recommandés, voir paramètres de la [stratégie anti-hameçonnage ATP](recommended-settings-for-eop-and-office365-atp.md#atp-anti-phishing-policy-settings).

@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Récapitulatif : comprendre la migration de Microsoft Cloud Allemagne (Microsoft Cloud Deutschland) vers les services Office 365 dans les nouvelles régions de centre de données allemandes.'
-ms.openlocfilehash: 9d74ec8dd942d022bf1b9d0301f415ef1f0c28e2
-ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
+ms.openlocfilehash: a77dc43c4c30992d2e50aad94878f9269573db52
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48308974"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327116"
 ---
 # <a name="migration-from-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Migration de Microsoft Cloud Deutschland vers Office 365 services dans les nouvelles régions de centre de connaissances allemand
 
@@ -267,6 +267,8 @@ Si vous avez des questions, vous pouvez nous contacter ou votre partenaire :
 - Si vous êtes un client Dynamics 365 engagement client et Power BI et que vous avez également Office 365, vous pouvez soumettre des questions à l’aide du &quot; lien vous avez besoin d’aide ? &quot; du [Centre d’administration Microsoft 365](https://portal.office.de/). Les options de support de Dynamics 365 Customer Engagement se trouvent [ici](https://docs.microsoft.com/dynamics365/get-started/support/). Les options de support de Power BI se trouvent [ici](https://powerbi.microsoft.com/support/).
 
 ## <a name="more-information"></a>Plus d’informations
+
+Des informations supplémentaires sur la migration vers les nouvelles régions de centre de données allemand sont à venir. Ajoutez cette page aux favoris afin de pouvoir archiver et conserver à jour.
 
 - [Aide à la migration de Microsoft Cloud Deutschland : ](https://aka.ms/germanymigrateassist)
 - [Comment opter pour une migration](https://aka.ms/office365germanymoveoptin)

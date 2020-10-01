@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Intégrez le serveur SIEM de votre organisation avec Office 365 protection avancée contre les menaces et les événements de menace associés dans l’API de gestion des activités Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cfb76485fec8eca2f2b62da59fa2d18a56177bba
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 544093960570fe0e68ac47dc7bf9965fba2d30a1
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203649"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327164"
 ---
 # <a name="siem-integration-with-advanced-threat-protection"></a>Intégration SIEM avec protection avancée contre les menaces
 
@@ -46,7 +46,6 @@ Récemment, les événements des fonctionnalités d’analyse et de réponse aut
 
 Le serveur SIEM ou un autre système similaire interroge l' **audit.** charge de travail générale pour accéder aux événements de détection. Pour plus d’informations, reportez-vous à la rubrique [prise en main des API de gestion d’Office 365](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis). 
 
-
 ## <a name="enum-auditlogrecordtype---type-edmint32"></a>Énumération : AuditLogRecordType - Type : Edm.Int32
 
 ### <a name="auditlogrecordtype"></a>AuditLogRecordType
@@ -56,7 +55,7 @@ Le tableau suivant récapitule les valeurs de **AuditLogRecordType** qui sont pe
 |Valeur|Nom du membre|Description|
 |---|---|---|
 |vingt|ThreatIntelligence|Événements de hameçonnage et de programmes malveillants à partir d’Exchange Online Protection et Office 365 ATP.|
-|41|ThreatIntelligenceUrl|Les événements de blocage des liens approuvés par l’ATP et les événements de remplacement de bloc à partir d’Office 365 ATP.|
+|41|ThreatIntelligenceUrl|Événements de liens approuvés de bloc de temps de bloc et de remplacement de bloc à partir d’Office 365 ATP.|
 |47|ThreatIntelligenceAtpContent|Événements de hameçonnage et de programmes malveillants pour les fichiers dans SharePoint Online, OneDrive entreprise et Microsoft Teams, à partir d’Office 365 ATP.|
 |64|AirInvestigation|Des événements d’enquête et de réponse automatisés, tels que des détails d’enquête et des artefacts pertinents, à partir d’Office 365 DAV (plan 2).|
 |

@@ -3,7 +3,7 @@ title: Configurer la synchronisation d’annuaires pour Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/15/2020
+ms.date: 09/30/2020
 audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -22,20 +22,20 @@ search.appverid:
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
 description: Découvrez comment configurer la synchronisation d’annuaires entre Microsoft 365 et votre annuaire Active Directory local.
-ms.openlocfilehash: 3a846a6c558f221c1869dce6da27e3d34680f75d
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 308774dcdbaffc1096ab6ad144484e6920accdfa
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46689675"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327092"
 ---
 # <a name="set-up-directory-synchronization-for-microsoft-365"></a>Configurer la synchronisation d’annuaires pour Microsoft 365
 
-*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
 Microsoft 365 utilise un client Azure Active Directory (Azure AD) pour stocker et gérer les identités pour l’authentification et les autorisations d’accès aux ressources en nuage. 
 
-Si vous disposez d’un service de domaine Active Directory (AD DS) local, vous pouvez synchroniser vos comptes d’utilisateur, groupes et contacts AD DS avec le client Azure AD de votre abonnement Microsoft 365. Il s’agit de l’identité hybride pour Microsoft 365. Voici ses composants.
+Si vous disposez d’un domaine ou d’une forêt de services de domaine Active Directory (AD DS) sur site, vous pouvez synchroniser vos comptes d’utilisateur, groupes et contacts AD DS avec le client Azure AD de votre abonnement Microsoft 365. Il s’agit de l’identité hybride pour Microsoft 365. Voici ses composants.
 
 ![Composants de la synchronisation d’annuaires pour Microsoft 365](../media/about-microsoft-365-identity/hybrid-identity.png)
 
@@ -51,7 +51,7 @@ Azure AD Connect s’exécute sur un serveur local et synchronise vos services d
 
 - Authentification fédérée
 
-  Azure AD redirige l’ordinateur client demandant l’authentification pour contacter un autre fournisseur d’identité.
+  Azure AD fait référence à l’ordinateur client qui demande l’authentification à un autre fournisseur d’identité.
 
 Pour plus d’informations, consultez la rubrique [identités hybrides](plan-for-directory-synchronization.md) .
   

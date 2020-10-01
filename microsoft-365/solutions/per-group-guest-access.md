@@ -14,16 +14,16 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Bloquer les utilisateurs invités d’un groupe spécifique
-ms.openlocfilehash: 923a9e5cd09d232f377f55fd6a9f499f8f536a84
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 2e9c9cae13932a33b8c486148f93901904e80006
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662607"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48328016"
 ---
-# <a name="block-guest-users-from-a-specific-group"></a>Bloquer les utilisateurs invités d’un groupe spécifique
+# <a name="block-guest-users-from-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>Bloquer les utilisateurs invités d’un groupe Microsoft 365 spécifique ou d’une équipe Microsoft teams
 
-Si vous souhaitez autoriser l’accès invité à la plupart des groupes, mais que vous souhaitez empêcher l’accès invité à la plupart des groupes, vous pouvez bloquer l’accès invité pour des groupes individuels.
+Si vous souhaitez autoriser l’accès invité à la plupart des groupes et des équipes, mais que vous avez certains pour lesquels vous souhaitez empêcher l’accès invité, vous pouvez bloquer l’accès invité pour des groupes et des équipes individuels. (Le blocage de l’accès invité à une équipe est assuré par le blocage de l’accès invité au groupe associé.)
 
 Si vous utilisez des étiquettes de confidentialité dans votre organisation, nous vous recommandons de les utiliser pour contrôler l’accès invité par groupe. Pour plus d’informations sur la procédure à suivre, [Utilisez les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les groupes microsoft 365 et les sites SharePoint](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites). Il s’agit de l’approche recommandée.
 

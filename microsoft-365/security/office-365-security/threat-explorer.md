@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez comment utiliser l’Explorateur et les détections en temps réel dans le centre de sécurité &amp; conformité pour examiner et répondre efficacement aux menaces.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f6df9ce21f29cdeaf4943ba930668420a24344ca
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 32ff9f2c8d009b4c9b05c12ba4e785e59cb182e7
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201864"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48328082"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorateur de menaces et détections en temps réel
 
@@ -86,18 +86,18 @@ Vous devez également consulter des détails supplémentaires dans le produit. P
 ### <a name="top-targeted-users"></a>Principaux utilisateurs ciblés
 
 Nous exposez aujourd’hui la liste des utilisateurs ciblés dans la vue des programmes malveillants pour les E-mails (dans la section Top familles de programmes malveillants). Nous allons développer cette vue au sein de la section hameçonnage et de toutes les vues du courrier électronique, où vous pourrez voir les cinq premiers utilisateurs ciblés, ainsi que le nombre de tentatives pour chaque utilisateur pour la vue correspondante (par exemple, pour le mode hameçonnage, vous pourrez voir le nombre de tentatives de hameçonnage).
-Vous pourrez également exporter la liste des utilisateurs ciblés jusqu’à une limite de 3000, ainsi que le nombre de tentatives d’analyse hors ligne pour chaque affichage de courrier électronique. En outre, sélectionnez non. des tentatives (par exemple, 13 tentatives ci-dessous) ouvrent une vue filtrée dans l’Explorateur de menaces, afin que vous puissiez consulter plus de détails parmi les e-mails et les menaces de cet utilisateur. 
+Vous pourrez également exporter la liste des utilisateurs ciblés jusqu’à une limite de 3000, ainsi que le nombre de tentatives d’analyse hors ligne pour chaque affichage de courrier électronique. En outre, sélectionnez non. des tentatives (par exemple, 13 tentatives ci-dessous) ouvrent une vue filtrée dans l’Explorateur de menaces, afin que vous puissiez consulter plus de détails parmi les e-mails et les menaces de cet utilisateur.
 
 ![Principaux utilisateurs ciblés](../../media/Top_Targeted_Users.png)
 
 
 ### <a name="exchange-transport-rules"></a>Règles de transport Exchange
 Dans le cadre de l’enrichissement des données, vous devez également être en mesure d’afficher toutes les différentes règles de transport appliquées à un message. Ces informations sont présentes dans l’affichage de grille du courrier électronique (pour cela, sélectionnez les options de colonne dans la grille et ajouter une règle de transport Exchange à partir des options de colonne dans la grille), ainsi que la fenêtre mobile des détails dans le message.
-Vous pouvez voir le GUID ainsi que le nom des règles de transport qui ont été appliquées au message. En outre, vous pouvez rechercher les messages à l’aide du nom de la règle de transport. Il s’agit d’une recherche « Contains », ce qui signifie que vous pourrez effectuer des recherches à l’aide de recherches partielles. 
+Vous pouvez voir le GUID ainsi que le nom des règles de transport qui ont été appliquées au message. En outre, vous pouvez rechercher les messages à l’aide du nom de la règle de transport. Il s’agit d’une recherche « Contains », ce qui signifie que vous pourrez effectuer des recherches à l’aide de recherches partielles.
 
-#### <a name="important-note"></a>Remarque importante : 
-La disponibilité de la recherche et du nom ETR dépend du rôle spécifique qui vous a été attribué. Vous devez disposer de l’un des rôles/autorisations suivants pour afficher les noms de ETR et la recherche.  Si vous n’avez pas l’un des rôles suivants qui vous sont attribués, vous ne pourrez pas voir les noms des règles de transport et rechercher les messages à l’aide des noms ETR. Toutefois, vous pourrez voir les informations d’étiquette et de GUID ETR dans les détails du courrier électronique. Les autres expériences concernant l’affichage des enregistrements dans les grilles de courrier, les boutons volants de messagerie, les filtres et les exportations ne sont pas affectées. 
- 
+#### <a name="important-note"></a>Remarque importante :
+La disponibilité de la recherche et du nom ETR dépend du rôle spécifique qui vous a été attribué. Vous devez disposer de l’un des rôles/autorisations suivants pour afficher les noms de ETR et la recherche.  Si vous n’avez pas l’un des rôles suivants qui vous sont attribués, vous ne pourrez pas voir les noms des règles de transport et rechercher les messages à l’aide des noms ETR. Toutefois, vous pourrez voir les informations d’étiquette et de GUID ETR dans les détails du courrier électronique. Les autres expériences concernant l’affichage des enregistrements dans les grilles de courrier, les boutons volants de messagerie, les filtres et les exportations ne sont pas affectées.
+
 - EXO uniquement-protection contre la perte de données : All
 - EXO uniquement-O365SupportViewConfig : All
 - AAD ou EXO-administrateur de la sécurité : tous
@@ -105,13 +105,15 @@ La disponibilité de la recherche et du nom ETR dépend du rôle spécifique qui
 - EXO uniquement : toutes les règles de transport
 - EXO uniquement : configuration en affichage seul : tout
 
-Dans la grille du courrier, dans les détails et dans le fichier CSV exporté, le ETR est présenté avec un nom/GUID, comme indiqué ci-dessous. 
+Dans la grille du courrier, dans les détails et dans le fichier CSV exporté, le ETR est présenté avec un nom/GUID, comme indiqué ci-dessous.
 
 ![Règles de transport Exchange](../../media/ETR_Details.png)
 
-### <a name="inbound-connectors"></a>Connecteurs entrants 
+### <a name="inbound-connectors"></a>Connecteurs entrants
 
-Les connecteurs sont une collection d’instructions qui personnalisent le mode d’acheminement de votre courrier vers et depuis votre organisation Microsoft 365 ou Office 365, avec la possibilité d’appliquer des restrictions de sécurité ou des contrôles. Dans l’Explorateur de menaces, vous pouvez afficher les connecteurs associés à un courrier électronique et Rechercher des courriers électroniques à l’aide des noms des connecteurs. La recherche de connecteurs est « Contains » par nature, ce qui signifie que les recherches par Mots-clés partielles doivent également fonctionner. Dans l’affichage de grille principal, le menu volant détails et le fichier CSV exporté, les connecteurs sont affichés dans le format de nom/GUID, comme indiqué ci-dessous : 
+Les connecteurs sont une collection d’instructions qui personnalisent le mode d’acheminement de votre courrier vers et depuis votre organisation Microsoft 365 ou Office 365, avec la possibilité d’appliquer des restrictions de sécurité ou des contrôles. Dans l’Explorateur de menaces, vous pouvez afficher les connecteurs associés à un courrier électronique et Rechercher des courriers électroniques à l’aide des noms des connecteurs.
+La recherche de connecteurs est « Contains » par nature, ce qui signifie que les recherches par Mots-clés partielles doivent également fonctionner.
+Dans l’affichage de grille principal, le menu volant détails et le fichier CSV exporté, les connecteurs sont affichés dans le format de nom/GUID, comme indiqué ci-dessous :
 
 ![Détails du connecteur](../../media/Connector_Details.png)
 
@@ -185,7 +187,7 @@ Vous pouvez accéder au même emplacement dans le rapport des détections en tem
 > [!TIP]
 > L’ID de message réseau mappe le clic retour à des messages spécifiques lorsque vous recherchez dans l’Explorateur ou des outils tiers associés via l’ID de message réseau. La recherche par le biais de l’ID de message réseau donnera aux administrateurs le message électronique spécifique associé à un résultat de clic. Lors de l’exportation, l’identification de la corrélation de l’ID de message réseau permet une analyse plus rapide et plus puissante.
 
-![tp_ExportClickResultAndNetworkID.png](../../media/tp_ExportClickResultAndNetworkID.png)
+![Clique sur l’onglet dans l’Explorateur](../../media/tp_ExportClickResultAndNetworkID.png)
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>Voir programmes malveillants détectés dans le courrier électronique par technologie
 
@@ -211,7 +213,7 @@ Le rapport est actualisé pour afficher les résultats de programmes malveillant
 
 ## <a name="view-data-about-phishing-urls-and-click-verdict"></a>Afficher les données sur les URL d’hameçonnage et cliquez sur verdict
 
-Supposons que vous vouliez voir les tentatives de hameçonnage via des URL dans des e-mails, y compris une liste des URL qui ont été autorisées, bloquées et remplacées. L’identification des URL sur lesquelles l’utilisateur a cliqué requiert la configuration de [liens fiables ATP](atp-safe-links.md) . Assurez-vous que vous avez configuré les [stratégies de liens fiables ATP](set-up-atp-safe-links-policies.md) pour la protection du temps de clic et la journalisation des « verdict de clic » par les liens fiables ATP.
+Supposons que vous vouliez voir les tentatives de hameçonnage via des URL dans des e-mails, y compris une liste des URL qui ont été autorisées, bloquées et remplacées. L’identification des URL sur lesquelles l’utilisateur a cliqué requiert la configuration de [liens fiables](atp-safe-links.md) . Assurez-vous que vous avez configuré les [stratégies de liens fiables](set-up-atp-safe-links-policies.md) pour la protection du temps de clic et la journalisation des verdicts de clic par liens fiables.
 
 Pour consulter les URL de hameçonnage dans les messages et les clics sur les URL dans les messages hameçons, utilisez la vue [courrier > hameçonnage](threat-explorer-views.md#email--phish) de l’Explorateur (ou des détections en temps réel).
 
@@ -242,8 +244,7 @@ Pour consulter les URL de hameçonnage dans les messages et les clics sur les UR
    > [!NOTE]
    > Dans la boîte de dialogue de menu volant d’URL, le filtrage sur les messages électroniques est supprimé pour vous montrer l’affichage complet de l’exposition de l’URL dans votre environnement. Cela vous permet de filtrer les messages électroniques dans l’Explorateur sur ceux qui vous intéressent, de rechercher des URL spécifiques qui constituent des menaces potentielles, puis de mieux comprendre l’exposition de l’URL dans votre environnement (via la boîte de dialogue détails de l’URL) sans avoir à ajouter de filtres d’URL à l’affichage Explorateur lui-même.
 
-
-**Interprétation des verdicts de clic différents**
+### <a name="interpretation-of-different-click-verdicts"></a>Interprétation des verdicts de clic différents
 
 Dans les lances de messagerie ou d’URL, les principaux clics et les résultats de filtrage, vous verrez des valeurs de clic différentes dans le cadre de votre expérience de chasse. Vous trouverez ci-dessous les valeurs possibles des verdicts de clic et leur interprétation :
 
@@ -254,7 +255,7 @@ Dans les lances de messagerie ou d’URL, les principaux clics et les résultats
 - **Bloqué remplacé**: l’utilisateur n’a pas pu accéder à l’URL ; Toutefois, l’utilisateur overrode le bloc pour accéder à l’URL.
 - **Verdict en attente ignoré**: l’utilisateur a été présenté avec la page de détonation ; Toutefois, l’utilisateur overrode la page pour accéder à l’URL.
 - **Erreur**: l’utilisateur s’est affiché avec la page d’erreur. Cela peut également signifier qu’il y a eu une erreur lors de la capture du verdict.
-- **Échec**: une exception inconnue s’est produite lors de la capture du verdict. L’utilisateur peut avoir cliqué dans l’URL. 
+- **Échec**: une exception inconnue s’est produite lors de la capture du verdict. L’utilisateur peut avoir cliqué dans l’URL.
 
 ## <a name="review-email-messages-reported-by-users"></a>Examiner les messages électroniques signalés par les utilisateurs
 
@@ -288,7 +289,7 @@ Pour plus d’informations, reportez-vous à l' [exemple : un administrateur de
 Outre les scénarios décrits dans cet article, vous disposez de nombreuses autres options de création de rapports dans l’Explorateur (ou des détections en temps réel).
 
 - [Rechercher et d’examiner l’e-mail malveillant qui a été distribué](investigate-malicious-email-that-was-delivered.md)
-- [Affichage de fichiers malveillants détectés dans SharePoint Online, OneDrive et Microsoft teams](malicious-files-detected-in-spo-odb-or-teams.md)
+- [Rapport sur l’état de la protection contre les menaces](view-email-security-reports.md#threat-protection-status-report)
 - [Obtenir une vue d’ensemble des affichages dans l’Explorateur de menaces (et des détections en temps réel)](threat-explorer-views.md)
 - [Examen et réponses automatisés dans Protection Microsoft contre les menaces](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
 

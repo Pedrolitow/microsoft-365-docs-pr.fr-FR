@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Les administrateurs peuvent apprendre à identifier les raisons et le mode de réception d’un message de hameçonnage dans Microsoft 365, ainsi que la marche à suivre pour éviter d’autres messages de hameçonnage.
-ms.openlocfilehash: c62d09a1cf8b586b5c1d4393d7316d6d6d0cc96d
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 813a9c263d9cc620606c7a5e272e47bdaf1ff7a7
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201674"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48328058"
 ---
 # <a name="tune-anti-phishing-protection"></a>Protection anti-hameçonnage
 
@@ -32,11 +32,11 @@ Si le compte d’un destinataire a été compromis suite à un message de hameç
 
 Si votre abonnement inclut la protection avancée contre les menaces (ATP), vous pouvez utiliser [Office 365 Threat Intelligence](office-365-ti.md) pour identifier les autres utilisateurs qui ont également reçu le message de hameçonnage. Vous disposez d’options supplémentaires pour bloquer les messages de hameçonnage :
 
-- [Liens fiables ATP](set-up-atp-safe-links-policies.md)
+- [Liens fiables dans Office 365 ATP](set-up-atp-safe-links-policies.md)
 
-- [Pièces jointes fiables ATP](set-up-atp-safe-attachments-policies.md)
+- [Pièces jointes fiables dans Office 365 ATP](set-up-atp-safe-attachments-policies.md)
 
-- [Stratégies anti-hameçonnage ATP dans Microsoft 365](configure-atp-anti-phishing-policies.md). Notez que vous pouvez augmenter temporairement les **seuils de phishing avancés** dans la stratégie, de **standard** à **agressif**, **plus agressif**ou **plus agressif**.
+- [Stratégies anti-hameçonnage dans Office 365 ATP](configure-atp-anti-phishing-policies.md). Notez que vous pouvez augmenter temporairement les **seuils de phishing avancés** dans la stratégie, de **standard** à **agressif**, **plus agressif**ou **plus agressif**.
 
 Vérifiez que ces fonctionnalités ATP sont activées.
 

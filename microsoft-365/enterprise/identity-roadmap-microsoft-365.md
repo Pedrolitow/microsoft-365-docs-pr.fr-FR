@@ -1,11 +1,11 @@
 ---
-title: Feuille de route des identités pour Microsoft 365
+title: Feuille de route relative à l’identité pour Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/10/2020
+ms.date: 09/30/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Feuille de route pour l’identité de Microsoft 365.
-ms.openlocfilehash: e268422fcd6cfba36b1a971629036d29827806f6
-ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
+ms.openlocfilehash: 997df19ca71b67d3fa579b9feaf3e1a61bc7a358
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47775122"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327770"
 ---
-# <a name="identity-roadmap-for-microsoft-365"></a>Feuille de route des identités pour Microsoft 365
+# <a name="identity-roadmap-for-microsoft-365"></a>Feuille de route relative à l’identité pour Microsoft 365
 
 Dans Microsoft 365 pour Enterprise, une infrastructure d’identités bien planifiée et exécutée ouvre la voie à une sécurité accrue, y compris la restriction de l’accès à vos charges de travail de productivité et de leurs données aux utilisateurs et appareils authentifiés uniquement.
 
-Pour obtenir une vue d’ensemble des modèles d’identité et de l’authentification pour Microsoft 365 pour les entreprises, regardez cette vidéo :
+Pour obtenir une vue d’ensemble des modèles d’identité et de l’authentification pour Microsoft 365 pour les entreprises, regardez cette vidéo.
 
 <p> </p>
 
@@ -38,7 +38,7 @@ Pour plus d’informations sur les fonctionnalités d’identité de chaque Micr
 
 Consultez cette affiche sur deux pages pour obtenir rapidement des notions sur les concepts et les configurations des identités pour Microsoft 365 pour les entreprises.
 
-Vous pouvez également [Télécharger cette affiche](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf). Vous pouvez l’imprimer au format Letter, Legal ou tabloïd (11 x 17).
+Vous pouvez également [Télécharger cette affiche](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf) et l’imprimer au format Letter, Legal ou tabloïd (11 x 17).
 
 ## <a name="plan"></a>Prévision
 
@@ -66,10 +66,14 @@ Pour garantir un personnel sécurisé et productif, Microsoft fournit un ensembl
 
 ## <a name="manage"></a>Gestion
 
-Pour gérer l’implémentation de votre identité :
+Pour gérer votre déploiement d’identité Microsoft 365, voir :
 
-- [Attribuer des licences et gérer les comptes d’utilisateurs](assign-licenses-to-user-accounts.md)
-- [Surveiller la synchronisation d’annuaires](view-directory-synchronization-status.md)
+- [Comptes d’utilisateur](manage-microsoft-365-accounts.md)
+- [Licences](assign-licenses-to-user-accounts.md)
+- [Mots de passe](manage-microsoft-365-passwords.md)
+- [Groupes](manage-microsoft-365-groups.md)
+- [Governance](manage-microsoft-365-identity-governance.md)
+- [Synchronisation d’annuaires](view-directory-synchronization-status.md)
 
 ## <a name="how-microsoft-does-identity-for-microsoft-365"></a>Comment Microsoft procède à l’identité de Microsoft 365
 

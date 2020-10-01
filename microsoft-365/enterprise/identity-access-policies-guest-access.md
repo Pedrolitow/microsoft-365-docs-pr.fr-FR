@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 6d6562f528b36acdfbc28da9647d3356a0f585af
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: 3afc818f9461ad0cc5ca65ea86d5e90f61f64d9b
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48132157"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327866"
 ---
 # <a name="policies-for-allowing-guest-and-external-b2b-access"></a>Stratégies d’autorisation d’accès B2B invité et externe
 
@@ -60,21 +60,11 @@ Microsoft teams définit les éléments suivants :
 
 - **L’accès externe** est destiné à un utilisateur externe qui n’a pas de compte B2B. L’accès externe peut inclure des invitations et la participation à des appels, des conversations et des réunions, mais n’inclut pas l’appartenance aux ressources de l’équipe et l’accès aux ressources de l’équipe.
 
-Pour plus d’informations, reportez-vous à [la comparaison entre invité et accès externe pour teams](https://docs.microsoft.com/microsoftteams/communicate-with-users-from-other-organizations#compare-external-and-guest-access).
+Pour plus d’informations, reportez-vous à la [comparaison entre invité et accès externe pour teams](https://docs.microsoft.com/microsoftteams/communicate-with-users-from-other-organizations#compare-external-and-guest-access).
 
 Les stratégies d’accès conditionnel ne s’appliquent qu’à l’accès invité dans Teams, car il existe un compte Azure AD B2B correspondant.
 
 Pour plus d’informations sur la sécurisation des stratégies d’accès aux identités et aux appareils pour teams [, voir recommandations de stratégie pour la sécurisation des conversations, des groupes et des fichiers teams](teams-access-policies.md) .
-
-<!--
-ount treats guest and external users that have an Azure AD B2B account differently than external access  .
-
-
-to a meeting, call, or chat with
-
-
-differentiates between guest users and external users within the app. Guest users have Azure AD B2B accounts and can be added to teams. External users can only participate in calls, chats, and meetings. 
---> 
 
 ### <a name="require-mfa-always-for-guest-and-external-users"></a>Exiger MFA pour les utilisateurs invités et externes
 Cette stratégie invite les invités à s’inscrire à l’authentification multifacteur dans votre client, qu’ils soient inscrits pour l’authentification multifacteur dans leur client d’accueil. Lors de l’accès à des ressources dans votre client, les utilisateurs invités et externes doivent utiliser l’authentification multifacteur pour chaque demande. 

@@ -3,7 +3,7 @@ title: Préparer la synchronisation d'annuaires pour Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/25/2019
+ms.date: 09/30/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Décrit comment préparer la mise en service des utilisateurs à Microsoft 365 à l’aide de la synchronisation d’annuaires et des avantages à long terme de cette méthode.
-ms.openlocfilehash: c9d4368d1939b9c6feedf5146f9d168f18d5d5b1
-ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
+ms.openlocfilehash: a70f49dd5656da996912173690dc2b21b4288023
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48269416"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327284"
 ---
 # <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>Préparer la synchronisation d'annuaires pour Microsoft 365
 
@@ -43,9 +43,9 @@ Les avantages de la synchronisation hybride des identités et des annuaires de v
 - Activer le scénario d’authentification unique (facultatif)
 - Automatisation des modifications de compte dans Microsoft 365
 
-Pour plus d’informations sur les avantages liés à l’utilisation de la synchronisation d’annuaires, consultez la rubrique feuille de [route de synchronisation d’annuaires]( https://go.microsoft.com/fwlink/p/?LinkId=525398) et [identité hybride pour Microsoft 365](plan-for-directory-synchronization.md).
+Pour plus d’informations sur les avantages liés à l’utilisation de la synchronisation d’annuaires, voir [Hybrid Identity with Azure Active Directory (Azure AD)](https://go.microsoft.com/fwlink/p/?LinkId=525398) et [Hybrid Identity for Microsoft 365](plan-for-directory-synchronization.md).
 
-Toutefois, la synchronisation d’annuaires nécessite une planification et une préparation pour garantir que vos services de domaine Active Directory (AD DS) sont synchronisés avec le client Azure Active Directory (Azure AD) de votre abonnement Microsoft 365 avec un minimum d’erreurs.
+Toutefois, la synchronisation d’annuaires nécessite une planification et une préparation pour garantir la synchronisation des services de domaine Active Directory (AD DS) avec le client Azure AD de votre abonnement Microsoft 365 avec un minimum d’erreurs.
 
 Suivez les étapes ci-dessous pour obtenir les meilleurs résultats.
 
@@ -54,7 +54,7 @@ Suivez les étapes ci-dessous pour obtenir les meilleurs résultats.
 Avant de synchroniser vos services AD DS avec votre client Azure AD, vous devez nettoyer votre service AD DS.
 
 > [!IMPORTANT]
-> Si vous n’effectuez pas le nettoyage AD DS avant la synchronisation, le processus de déploiement peut avoir un impact significatif. Cela peut prendre des jours, voire des semaines, pour parcourir le cycle de synchronisation d’annuaires, l’identification des erreurs et la resynchronisation.
+> Si vous n’effectuez pas de nettoyage AD DS avant de procéder à la synchronisation, cela peut entraîner un impact négatif important sur le processus de déploiement. Cela peut prendre des jours, voire des semaines, pour parcourir le cycle de synchronisation d’annuaires, l’identification des erreurs et la resynchronisation.
 
 Dans votre AD DS, effectuez les tâches de nettoyage suivantes pour chaque compte d’utilisateur auquel est attribuée une licence Microsoft 365 :
 

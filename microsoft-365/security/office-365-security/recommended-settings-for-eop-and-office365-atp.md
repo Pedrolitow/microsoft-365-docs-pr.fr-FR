@@ -16,17 +16,16 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Quelles sont les meilleures pratiques pour les paramètres de sécurité Exchange Online Protection (EOP) et Advanced Threat Protection (ATP) ? Quelles sont les recommandations actuelles pour la protection standard ? Qu’est-ce qui doit être utilisé si vous voulez être plus strict ? Quels sont les autres éléments que vous obtenez si vous utilisez également la protection avancée contre les menaces ?
-ms.openlocfilehash: 78dc1673d20affdfab9228883dbce3b08e8efbb5
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 012bccb265f6b587176eec8f8bed94ce4bf4f211
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202710"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48328011"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Paramètres recommandés pour la sécurité ATP d’Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
 
 **Exchange Online Protection (EoP)** est le cœur de la sécurité des abonnements Microsoft 365 et empêche les courriers électroniques malveillants d’atteindre les boîtes de réception de vos employés. Toutefois, avec de nouvelles attaques plus sophistiquées émergentes tous les jours, des protections améliorées sont souvent requises. **Office 365 Advanced Threat Protection (ATP)** Le plan ATP 1 ou le plan ATP 2 contiennent des fonctionnalités supplémentaires qui donnent aux administrateurs plus de couches de sécurité, de contrôle et d’enquête.
 
@@ -59,7 +58,7 @@ Pour créer et configurer des stratégies de blocage du courrier indésirable, c
 |Action de détection de **courrier d’hameçonnage** <br/><br/> _PhishSpamAction_|**Mettre en quarantaine le message** <br/><br/> `Quarantine`|**Mettre en quarantaine le message** <br/><br/> `Quarantine`||
 |Action de détection de **courrier d’hameçonnage à haut niveau de fiabilité** <br/><br/> _HighConfidencePhishAction_|**Mettre en quarantaine le message** <br/><br/> `Quarantine`|**Mettre en quarantaine le message** <br/><br/> `Quarantine`||
 |Action de détection de **courrier en nombre** <br/><br/> _BulkSpamAction_|**Déplacer le message dans le dossier Courrier indésirable** <br/><br/> `MoveToJmf`|**Mettre en quarantaine le message** <br/><br/> `Quarantine`||
-|Seuil de courrier électronique en masse <br/><br/> _BulkThreshold_|6 |4 |La valeur par défaut est actuellement 7, mais nous vous recommandons de la remplacer par 6. Pour plus d’informations, reportez-vous à [Bulk Complaint Level (BCL) in Office 365](bulk-complaint-level-values.md).|
+|Seuil de courrier électronique en masse <br/><br/> _BulkThreshold_|6 |4 |La valeur par défaut est actuellement 7, mais nous vous recommandons de la remplacer par 6. Pour plus d’informations, reportez-vous à [Bulk Complaint Level (BCL) in Office 365](bulk-complaint-level-values.md).|
 |Période de rétention de quarantaine <br/><br/> _QuarantineRetentionPeriod_|30 jours|30 jours||
 |**Conseils de sécurité** <br/><br/> _InlineSafetyTipsEnabled_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`||
 |Expéditeurs autorisés <br/><br/> _AllowedSenders_|Aucun|Aucun||
@@ -153,7 +152,7 @@ La protection avancée contre les menaces Office 365 inclut les stratégies de p
 
 Si vous avez ajouté un abonnement Office 365 ATP à votre EOP, définissez les configurations suivantes.
 
-### <a name="office-atp-anti-phishing-policy-settings"></a>Paramètres de la stratégie anti-hameçonnage Office ATP
+### <a name="atp-anti-phishing-policy-settings"></a>Paramètres de stratégie anti-hameçonnage ATP
 
 Les clients EOP bénéficient d’une protection antiphishing de base comme décrit précédemment, mais Office 365 ATP inclut davantage de fonctionnalités et de contrôles pour vous aider à prévenir, détecter et corriger les attaques. Pour créer et configurer ces stratégies, consultez la rubrique [configure ATP anti-phishing Policies in Office 365](configure-atp-anti-phishing-policies.md).
 
@@ -203,27 +202,31 @@ Pour plus d’informations sur ce paramètre, consultez la rubrique [seuils d’
 |---|---|---|---|
 |**Seuils de hameçonnage avancés** <br/><br/> _PhishThresholdLevel_|**2-agressif** <br/><br/> `2`|**3-plus agressif** <br/><br/> `3`||
 
-### <a name="atp-safe-links-policy-settings"></a>Paramètres de stratégie de liens fiables ATP
+### <a name="safe-links-settings"></a>Paramètres de liens fiables
 
-Pour configurer ces paramètres, reportez-vous à la rubrique [set up Office 365 ATP Safe Links Policies](set-up-atp-safe-links-policies.md).
+Les liens fiables dans Office 365 ATP incluent des paramètres globaux qui s’appliquent à tous les utilisateurs inclus dans les stratégies de liens fiables actifs, ainsi que les paramètres spécifiques à chaque stratégie de liens fiables. Pour plus d’informations, consultez la rubrique [liens approuvés dans Office 365 ATP](atp-safe-links.md).
 
-#### <a name="safe-links-policy-settings-in-the-default-policy-for-all-users"></a>Paramètres de stratégie de liens fiables dans la stratégie par défaut pour tous les utilisateurs
+#### <a name="global-settings-for-safe-links"></a>Paramètres globaux pour les liens fiables
 
-**Remarque**: dans PowerShell, vous utilisez la cmdlet [Set-AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365) pour ces paramètres.
+Pour configurer ces paramètres, voir [configure Global Settings for Safe Links in Office 365 ATP](configure-global-settings-for-safe-links.md).
+
+Dans PowerShell, vous utilisez l’applet de commande [Set-AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365) pour ces paramètres.
 
 ****
 
 |Nom de la fonctionnalité de sécurité|Standard|Empêcher|Commentaire|
 |---|---|---|---|
-|**Utiliser les liens fiables dans : applications Office 365** <br/><br/> _EnableSafeLinksForO365Clients_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`|Utilisez des liens fiables ATP dans les clients Office 365 Desktop et mobile (iOS et Android).|
-|**Utiliser les liens fiables dans : compagnons Office Web Access** <br/><br/> _EnableSafeLinksForWebAccessCompanion_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`|Utiliser les liens fiables ATP dans Office Web Apps. Notez que ce paramètre n’est pas configurable.|
-|**Ne pas suivre lorsque les utilisateurs cliquent sur les liens fiables** <br/><br/> _TrackClicks_|Désactivé <br/><br/> `$true`|Désactivé <br/><br/> `$true`||
-|**Ne pas autoriser les utilisateurs à cliquer sur les liens fiables vers l’URL d’origine** <br/><br/> _AllowClickThrough_|Activé <br/><br/> `$false`|Activé <br/><br/> `$false`||
+|**Utiliser les liens fiables dans : applications Office 365** <br/><br/> _EnableSafeLinksForO365Clients_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`|Utiliser des liens fiables ATP dans les applications Office 365 Desktop et mobile (iOS et Android) prises en charge. Pour plus d’informations, consultez la rubrique [paramètres de liens approuvés pour les applications Office 365](atp-safe-links.md#safe-links-settings-for-office-365-apps).|
+|**Ne pas suivre lorsque les utilisateurs cliquent sur les liens fiables** <br/><br/> _TrackClicks_|Désactivé <br/><br/> `$true`|Désactivé <br/><br/> `$true`|Ce paramètre est lié au suivi des clics des utilisateurs dans les applications Office 365 prises en charge.|
+|**Ne pas autoriser les utilisateurs à cliquer sur les liens fiables vers l’URL d’origine** <br/><br/> _AllowClickThrough_|Activé <br/><br/> `$false`|Activé <br/><br/> `$false`|Ce paramètre est lié à cliquer via dans les applications Office 365 prises en charge.|
+|Utiliser les liens fiables dans : compagnons Office Web Access <br/><br/> _EnableSafeLinksForWebAccessCompanion_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`|Utiliser les liens fiables dans Office Web Apps. Notez que ce paramètre n’est pas configurable.|
 |
 
-#### <a name="safe-links-policy-settings-in-custom-policies-for-specific-users"></a>Paramètres de stratégie de liens fiables dans les stratégies personnalisées pour des utilisateurs spécifiques
+#### <a name="safe-links-policy-settings"></a>Paramètres de stratégie de liens fiables
 
-**Remarque**: dans PowerShell, vous utilisez les applets de commande [New-safelinkspolicy permet](https://docs.microsoft.com/powershell/module/exchange/new-safelinkspolicy) et [Set-safelinkspolicy permet](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) pour ces paramètres.
+Pour configurer ces paramètres, reportez-vous à la rubrique [configurer des stratégies de liens fiables dans Office 365 ATP](set-up-atp-safe-links-policies.md).
+
+Dans PowerShell, vous utilisez les applets de commande [New-safelinkspolicy permet](https://docs.microsoft.com/powershell/module/exchange/new-safelinkspolicy) et [Set-safelinkspolicy permet](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) pour ces paramètres.
 
 ****
 
@@ -238,13 +241,15 @@ Pour configurer ces paramètres, reportez-vous à la rubrique [set up Office 365
 |**Ne pas autoriser les utilisateurs à cliquer sur les liens fiables vers l’URL d’origine** <br/><br/> _DoNotAllowClickThrough_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`||
 |
 
-### <a name="atp-safe-attachments-policy-settings"></a>Paramètres de stratégie de pièces jointes approuvées ATP
+### <a name="safe-attachments-settings"></a>Paramètres de pièces jointes fiables
 
-Pour configurer ces paramètres, reportez-vous à la rubrique [set up Office 365 ATP Safe Attachments Policies](set-up-atp-safe-attachments-policies.md).
+Les pièces jointes fiables dans Office 365 ATP incluent des paramètres globaux qui s’appliquent à tous les utilisateurs inclus dans les stratégies de pièces jointes fiables actives, ainsi que les paramètres spécifiques à chaque stratégie de liens fiables. Pour plus d’informations, consultez la rubrique [pièces jointes fiables dans Office 365 DAV](atp-safe-attachments.md).
 
-#### <a name="safe-attachments-policy-settings-in-the-default-policy-for-all-users"></a>Paramètres de stratégie de pièces jointes fiables dans la stratégie par défaut pour tous les utilisateurs
+#### <a name="global-settings-for-safe-attachments"></a>Paramètres globaux pour les pièces jointes fiables
 
-**Remarque**: dans PowerShell, vous utilisez la cmdlet [Set-AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365) pour ces paramètres.
+Pour configurer ces paramètres, reportez-vous à la rubrique activer la protection avancée contre [les menaces pour SharePoint, OneDrive et Microsoft teams](turn-on-atp-for-spo-odb-and-teams.md) et [documents approuvés dans Microsoft 365 E5](safe-docs.md).
+
+Dans PowerShell, vous utilisez l’applet de commande [Set-AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365) pour ces paramètres.
 
 ****
 
@@ -252,12 +257,14 @@ Pour configurer ces paramètres, reportez-vous à la rubrique [set up Office 365
 |---|---|---|---|
 |**Activer la protection avancée contre les menaces pour SharePoint, OneDrive et Microsoft Teams** <br/><br/> _EnableATPForSPOTeamsODB_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`||
 |**Activer des documents approuvés pour les clients Office**<bt/><br/> _EnableSafeDocs_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`||Ce paramètre est disponible uniquement avec les licences de sécurité Microsoft 365 E5 ou Microsoft 365 E5. Pour plus d’informations, consultez la rubrique [documents approuvés dans Office 365 protection avancée contre les menaces](safe-docs.md).|
-|**Autoriser les utilisateurs à cliquer en mode protégé même si les documents fiables identifient le fichier comme étant malveillant**<bt/><br/> _AllowSafeDocsOpen_|Désactivé <br/><br/> `$false`|Désactivé <br/><br/> `$false`||
+|**Autoriser les utilisateurs à cliquer en mode protégé même si les documents fiables identifient le fichier comme étant malveillant**<bt/><br/> _AllowSafeDocsOpen_|Désactivé <br/><br/> `$false`|Désactivé <br/><br/> `$false`|Ce paramètre est lié aux documents approuvés.|
 |
 
-#### <a name="safe-attachments-policy-settings-in-custom-policies-for-specific-users"></a>Paramètres de stratégie de pièces jointes fiables dans les stratégies personnalisées pour des utilisateurs spécifiques
+#### <a name="safe-attachments-policy-settings"></a>Paramètres de stratégie de pièces jointes fiables
 
-**Remarque**: dans PowerShell, vous utilisez les applets de commande [New-safeattachmentpolicy permet](https://docs.microsoft.com/powershell/module/exchange/new-safeattachmentpolicy) et [Set-safeattachmentpolicy permet](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) pour ces paramètres.
+Pour configurer ces paramètres, voir [configurer des stratégies de pièces jointes fiables dans Office 365 ATP](set-up-atp-safe-attachments-policies.md).
+
+Dans PowerShell, vous utilisez les applets de commande [New-safeattachmentpolicy permet](https://docs.microsoft.com/powershell/module/exchange/new-safeattachmentpolicy) et [Set-safeattachmentpolicy permet](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) pour ces paramètres.
 
 ****
 

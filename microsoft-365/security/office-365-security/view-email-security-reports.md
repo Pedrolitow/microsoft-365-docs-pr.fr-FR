@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez comment rechercher et utiliser des rapports de sécurité de messagerie pour votre organisation. Les rapports de sécurité de messagerie sont disponibles dans le centre de sécurité & conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b26dd18754a96d1879a2f57ae9742ae1d1a36ce4
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 7e594f758e0fb08b0b8718248466ecbc46903b82
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295537"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327008"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Afficher les rapports de sécurité de courrier dans le centre de sécurité et conformité
 
@@ -270,9 +270,9 @@ Pour revenir à l’affichage de rapport, cliquez sur **afficher le rapport**.
 
 ## <a name="threat-protection-status-report"></a>Rapport sur l’état de la protection contre les menaces
 
-Le rapport d' **État de protection contre les menaces** est disponible à la fois dans EOP et dans Office 365 ATP ; Toutefois, les rapports contiennent des données différentes. Par exemple, les clients EOP peuvent afficher des informations sur les programmes malveillants détectés dans les courriers électroniques, mais pas sur les [fichiers malveillants détectés dans SharePoint Online, OneDrive ou Microsoft teams](atp-for-spo-odb-and-teams.md).
+Le rapport d' **État de protection contre les menaces** est disponible à la fois dans EOP et dans Office 365 ATP ; Toutefois, les rapports contiennent des données différentes. Par exemple, les clients EOP peuvent afficher des informations sur les programmes malveillants détectés dans les courriers électroniques, mais pas sur les [fichiers malveillants détectés par la protection avancée contre les menaces pour SharePoint, OneDrive ou Microsoft teams](atp-for-spo-odb-and-teams.md).
 
-Le rapport indique le nombre de messages électroniques avec du contenu malveillant, tels que des fichiers ou des adresses de sites Web (URL) bloqués par le moteur anti-programme malveillant, la [purge automatique avec zéro heure (supprimable)](zero-hour-auto-purge.md)et les fonctionnalités ATP telles que les [liens approuvés ATP](atp-safe-links.md), [les pièces jointes approuvées](atp-safe-attachments.md)pour la protection avancée contre les menaces et l' [anti-hameçonnage ATP](set-up-anti-phishing-policies.md). Vous pouvez utiliser ces informations pour identifier les tendances ou déterminer si les stratégies de l’organisation doivent être ajustées. Il est important de comprendre que si un message est envoyé à cinq destinataires, nous le dénombrez cinq messages différents et pas un message.
+Le rapport indique le nombre de messages électroniques avec du contenu malveillant, tels que des fichiers ou des adresses de sites Web (URL) bloqués par le moteur anti-programme malveillant, la [purge automatique avec zéro heure (supprimable)](zero-hour-auto-purge.md)et les fonctionnalités ATP telles que les [liens approuvés](atp-safe-links.md), [les pièces jointes fiables](atp-safe-attachments.md)et l' [anti-hameçonnage ATP](set-up-anti-phishing-policies.md). Vous pouvez utiliser ces informations pour identifier les tendances ou déterminer si les stratégies de l’organisation doivent être ajustées. Il est important de comprendre que si un message est envoyé à cinq destinataires, nous le dénombrez cinq messages différents et pas un message.
 
 Pour afficher le rapport, ouvrez le [Centre de sécurité & conformité](https://protection.office.com), accédez à **rapports** \> **Dashboard** et sélectionnez **Threat Protection Status**. Pour accéder directement au rapport, ouvrez l’une des URL suivantes :
 
@@ -366,7 +366,7 @@ Si vous cliquez sur **filtres**, vous pouvez modifier le rapport avec les filtre
 - **Date de début** et **Date de fin**
 - **Détection**
 - **Protégé par**: **ATP** ou **EOP**
-- **Tag**: Filter by tag pour renvoyer des utilisateurs ou des groupes auxquels une balise spécifique a été appliquée. Pour plus d’informations sur les balises utilisateur, voir [User Tags](https://docs.microsoft.com/microsoft-365/security/office-365-security/user-tags?view=o365-worldwide).
+- **Tag**: Filter by tag pour renvoyer des utilisateurs ou des groupes auxquels une balise spécifique a été appliquée. Pour plus d’informations sur les balises utilisateur, voir [User Tags](user-tags.md).
 - **Domaine**
 
 > [!NOTE]
@@ -406,7 +406,7 @@ Si vous cliquez sur **filtres**, vous pouvez modifier le rapport avec les filtre
 - **Date de début** et **Date de fin**
 - **Détection**
 - **Protégé par** (Office 365 ATP uniquement) : **ATP** ou **EOP**
-- **Tag**: Filter by tag pour renvoyer des utilisateurs ou des groupes auxquels une balise spécifique a été appliquée. Pour plus d’informations sur les balises utilisateur, voir [User Tags](https://docs.microsoft.com/microsoft-365/security/office-365-security/user-tags?view=o365-worldwide).
+- **Tag**: Filter by tag pour renvoyer des utilisateurs ou des groupes auxquels une balise spécifique a été appliquée. Pour plus d’informations sur les balises utilisateur, voir [User Tags](user-tags.md).
 - **Domaine**
 - **Destinataires** (Notez que cette propriété filtrable est disponible uniquement dans l’affichage Table des détails)
 
