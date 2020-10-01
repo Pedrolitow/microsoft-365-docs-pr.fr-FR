@@ -1,75 +1,70 @@
 ---
-title: Application d’une étiquette de rétention à un modèle de présentation des documents
+title: Appliquer une étiquette de rétention à un modèle de compréhension de document
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 10/1/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
-description: Cet article explique comment appliquer une étiquette de rétention à un modèle de présentation des documents
-ms.openlocfilehash: 26ad64906c0e2a311d8b244e8e1596a8b975cc15
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
-ms.translationtype: MT
+localization_priority: Priority
+description: Cet article vous explique comment appliquer une étiquette de rétention à un modèle de compréhension de document
+ms.openlocfilehash: 6b42f7df5e14f57f3754e7d65c5f4cf2e8fab6a0
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48294917"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48321844"
 ---
-# <a name="apply-a-retention-label-to-a-document-understanding-model"></a>Application d’une étiquette de rétention à un modèle de présentation des documents
+# <a name="apply-a-retention-label-to-a-document-understanding-model"></a>Appliquer une étiquette de rétention à un modèle de compréhension de document
 
-</br>
+Vous pouvez facilement appliquer une [étiquette de rétention](https://docs.microsoft.com/microsoft-365/compliance/retention) à un modèle de compréhension de document dans Microsoft SharePoint Syntex.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CSoL]
+Les étiquettes de rétention vous permettent d’appliquer des paramètres de rétention aux documents identifiés par vos modèles de compréhension de document.  Par exemple, vous souhaitez que votre modèle identifie tous les documents d’*avis d’assurance* qui sont téléchargés dans votre bibliothèque de documents, mais également qu’il leur applique une étiquette de rétention *Entreprise*, afin que ces documents ne puissent pas être supprimés de la bibliothèque de documents pendant la période spécifiée ( les cinq prochains mois, par exemple).
 
-</br>
-
-Vous pouvez facilement appliquer une [étiquette de rétention](https://docs.microsoft.com/microsoft-365/compliance/retention) à un modèle de présentation des documents dans Microsoft SharePoint Syntex.
-
-Les étiquettes de rétention permettent d’appliquer des paramètres de rétention aux documents identifiés par vos modèles de document.  Par exemple, vous souhaitez que votre modèle identifie non seulement les documents d' *avis d’assurance* téléchargés vers votre bibliothèque de documents, mais aussi lui appliquer une balise de rétention de l' *entreprise* afin que ces documents ne puissent pas être supprimés de la bibliothèque de documents pendant la période spécifiée (les cinq prochains mois, par exemple).
-
-Vous pouvez appliquer une étiquette de rétention préexistante à votre modèle de compréhension de document par le biais de vos paramètres de modèle sur la page d’accueil de votre modèle. 
+Vous pouvez appliquer une étiquette de rétention préexistante à votre modèle de compréhension de document via les paramètres du modèle sur la page d’accueil de celui-ci. 
 
 > [!Important]
-> Pour que les étiquettes de rétention puissent être appliquées à votre modèle de compréhension de contenu, elles doivent être [créées et publiées dans le centre de conformité Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/create-apply-retention-labels#how-to-create-and-publish-retention-labels).
+> Pour que les étiquettes de rétention soient disponibles et s’appliquent à votre modèle de compréhension de contenu, elles doivent être [créées et publiées dans le Centre de conformité Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/create-apply-retention-labels#how-to-create-and-publish-retention-labels).
 
-## <a name="to-add-a-retention-label-to-a-document-understanding-model"></a>Pour ajouter une étiquette de rétention à un modèle de présentation de document
+## <a name="to-add-a-retention-label-to-a-document-understanding-model"></a>Pour ajouter une étiquette de rétention à un modèle de compréhension de document
 
-1. À partir de la page d’accueil du modèle, sélectionnez **paramètres du modèle**.</br>
-2. Dans **paramètres du modèle**, dans la section **sécurité et conformité** , sélectionnez le menu **étiquette** de rétention pour afficher la liste des étiquettes de rétention disponibles pour que votre s’applique au modèle.</br>
- ![Menu étiquette de rétention](../media/content-understanding/retention-labels-menu.png)</br> 
-3. Sélectionnez l’étiquette de rétention que vous souhaitez appliquer au modèle, puis sélectionnez **Enregistrer**.</br>
+1. Sur la page d’accueil du modèle, sélectionnez **Paramètres du modèle**.</br>
+2. Dans **Paramètres du modèle**, dans la section **Sécurité et conformité**, sélectionnez le menu **Étiquette de rétention** pour afficher une liste des étiquettes de rétention que vous pouvez appliquer au modèle.</br>
+ ![Menu Étiquette de rétention](../media/content-understanding/retention-labels-menu.png)</br> 
+3. Sélectionnez l’étiquette de rétention que vous souhaitez appliquer au modèle, puis **Enregistrer**.</br>
 
-Après avoir appliqué l’étiquette de rétention à votre modèle, vous pouvez l’appliquer à un :
-- Nouvelle bibliothèque de documents
-- Bibliothèque de documents à laquelle le modèle est déjà appliqué
+Après avoir appliqué l’étiquette de rétention à votre modèle, vous pouvez l’appliquer à une :
+- nouvelle bibliothèque de documents
+- bibliothèque de documents à laquelle le modèle est déjà appliqué
  
 ## <a name="apply-the-retention-label-to-a-document-library-to-which-the-model-is-already-applied"></a>Appliquer l’étiquette de rétention à une bibliothèque de documents à laquelle le modèle est déjà appliqué
 
-Si votre modèle de présentation de document a déjà été appliqué à une bibliothèque de documents, vous pouvez effectuer les opérations suivantes pour synchroniser la mise à jour de l’étiquette de rétention afin de l’appliquer à la bibliothèque de documents :</br>
+Si votre modèle de compréhension de document a déjà été appliqué à une bibliothèque de documents, vous pouvez effectuer les opérations suivantes pour synchroniser la mise à jour de votre étiquette de rétention afin de l’appliquer à la bibliothèque de documents :</br>
 
-1. Sur la page d’accueil de votre modèle, dans la section **bibliothèques avec ce modèle** , sélectionnez la bibliothèque de documents à laquelle vous souhaitez appliquer la mise à jour des étiquettes de rétention. </br> 
-2. Sélectionnez **synchroniser**. </br>
+1. Sur la page d’accueil de votre modèle, dans la section **Bibliothèques avec ce modèle**, sélectionnez la bibliothèque de documents à laquelle vous souhaitez appliquer la mise à jour de l’étiquette de rétention. </br> 
+2. Sélectionnez **Synchroniser**. </br>
  ![Modèle de synchronisation](../media/content-understanding/sync-model.png)</br> 
 
 
-Après avoir appliqué la mise à jour et la synchronisation avec votre modèle, vous pouvez vérifier qu’elle a été appliquée en procédant comme suit :
+Après avoir appliqué la mise à jour et l’avoir synchronisée avec votre modèle, vous pouvez vérifier si elle a été appliquée en procédant comme suit :
 
-1. Dans le centre de contenu, dans la section **bibliothèques avec ce modèle** , cliquez sur la bibliothèque à laquelle le modèle mis à jour a été appliqué. </br>
-2. Dans la vue de votre bibliothèque de documents, sélectionnez l’icône des informations pour vérifier les propriétés du modèle.</br>  
-3. Dans la liste **modèles actifs** , sélectionnez votre modèle mis à jour.</br>
-4. Dans la section **étiquette de rétention** , vous verrez le nom de l’étiquette de rétention appliquée.</br>
-
-
-Sur la page d’affichage de votre modèle dans votre bibliothèque de documents, une nouvelle colonne **étiquette de rétention** s’affiche.  Comme votre modèle classifie les fichiers qu’il identifie comme appartenant à son type de contenu et les répertorie dans la vue de la bibliothèque, la colonne de l’étiquette de rétention affichera également le nom de l’étiquette de rétention qui lui a été appliquée par le biais du modèle.
+1. Dans le centre de contenu, dans la section **Bibliothèques avec ce modèle**, cliquez sur la bibliothèque à laquelle votre modèle mis à jour a été appliqué. </br>
+2. Dans l’affichage de votre bibliothèque de documents, sélectionnez l’icône Information pour vérifier les propriétés du modèle.</br>  
+3. Dans la liste **Modèles actifs**, sélectionnez votre modèle mis à jour.</br>
+4. Dans la section **Étiquette de rétention**, vous verrez le nom de l’étiquette de rétention appliquée.</br>
 
 
-Par exemple, tous les documents d' *avis d’assurance* que votre modèle identifie ont également l’étiquette de rétention de l' *entreprise* appliquée, ce qui les empêche de se supprimer de la bibliothèque de documents pendant cinq mois. Si vous tentez de supprimer le fichier de la bibliothèque de documents, une erreur s’affiche indiquant qu’il n’est pas autorisé en raison de l’étiquette de rétention appliquée.
+Sur la page d’affichage de votre modèle, dans votre bibliothèque de documents, une nouvelle colonne **Étiquette de rétention** s’affiche.  Lorsque votre modèle classe les fichiers qu’il identifie comme appartenant à son type de contenu et les répertorie dans l’affichage de la bibliothèque, la colonne Étiquette de rétention affiche également le nom de l’étiquette de rétention qui lui a été appliquée via le modèle.
+
+
+Par exemple, tous les documents d’*avis d’assurance* que votre modèle identifie auront également l’étiquette de rétention *Entreprise* qui leur sera appliquée, ce qui fait qu’ils ne pourront pas être supprimés de la bibliothèque de documents pendant cinq mois. Si vous tentez de supprimer le fichier de la bibliothèque de documents, une erreur s’affiche indiquant que l’opération n’est pas autorisée en raison de l’étiquette de rétention appliquée.
 
 ## <a name="see-also"></a>Voir aussi
-[Créer un classifieur](create-a-classifier.md)</br>
-[Créer un extracteur](create-an-extractor.md)</br>
-[Présentation de l’explication des documents](document-understanding-overview.md)</br>
+[Créer un classifieur](create-a-classifier.md)
+
+[Créer un extracteur](create-an-extractor.md)
+
+[Présentation de la compréhension de document](document-understanding-overview.md)
+
 [Créer un modèle de traitement de formulaire](create-a-form-processing-model.md)  

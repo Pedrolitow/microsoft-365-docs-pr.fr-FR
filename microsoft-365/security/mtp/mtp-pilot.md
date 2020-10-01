@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 88d92558d86e0aa2e90ef04d88a3cd4676386f15
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 250c125648f734a13899a58dd22ee3bffb0921a9
+ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195626"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48333723"
 ---
 # <a name="run-your-pilot-microsoft-threat-protection-project"></a>Exécuter votre projet pilote de protection contre les menaces Microsoft 
 
@@ -56,7 +56,7 @@ L’exécution d’un programme pilote Microsoft Threat Protection a quatre phas
 |Phase | Description | 
 |:-------|:-----|
 | ![Planification](../../media/mtp/plan.png)<br>[Planification](mtp-pilot-plan.md)| Découvrez ce que vous devez prendre en compte avant d’exécuter votre projet pilote Microsoft Threat Protection : <br><br>-Étendue <br> Cas d’utilisation <br>- Conditions requises : <br>-Plan de test <br> -Critères de réussite <br> -Scorecard 
-| ![Préparation](../../media/prepare.png) <br>[Préparation](mtp-evaluation.md)|  Accédez au centre de sécurité Microsoft 365 pour configurer votre environnement pilote de protection contre les menaces Microsoft. Vous serez guidé pour :<br><br>-Identifier les parties prenantes et se déconnecter pour votre projet pilote <br> -Considérations sur l’environnement <br>-Accès <br>-Installation d’Azure Active Directory <br> -Ordre de configuration <br> -Inscrivez-vous à la version d’évaluation de Microsoft 365 E5 <br> -Configurer le domaine <br>-Affecter les licences Microsoft 365 E5 <br> -Exécutez l’Assistant Installation dans le portail.|
+| ![Préparation](../../media/mtp/prep.png) <br>[Préparation](mtp-evaluation.md)|  Accédez au centre de sécurité Microsoft 365 pour configurer votre environnement pilote de protection contre les menaces Microsoft. Vous serez guidé pour :<br><br>-Identifier les parties prenantes et se déconnecter pour votre projet pilote <br> -Considérations sur l’environnement <br>-Accès <br>-Installation d’Azure Active Directory <br> -Ordre de configuration <br> -Inscrivez-vous à la version d’évaluation de Microsoft 365 E5 <br> -Configurer le domaine <br>-Affecter les licences Microsoft 365 E5 <br> -Exécutez l’Assistant Installation dans le portail.|
 | ![Simulation d’attaque](../../media/mtp/run-sim.png) <br>[Simulation d’attaque](mtp-pilot-simulate.md) | Pour simuler une attaque, vous serez guidé pour :<br><br>-Vérifier les conditions requises pour l’environnement de test <br>-Exécuter la simulation <br>-Enquêter sur un incident <br>-résoudre l’incident 
 | ![Fermeture et résumé](../../media/mtp/close.png) <br>[Fermeture et résumé](mtp-pilot-close.md) | Une fois que vous avez atteint la fin de ce processus, vous serez guidé pour :<br><br>-Passer par le résultat final<br>-Présenter votre sortie à vos parties prenantes <br>-Fournir des commentaires <br>-Suivre les étapes suivantes 
 

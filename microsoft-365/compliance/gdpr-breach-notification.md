@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-mar2020
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 9e7853fb44cc9ccd8c233cc2fee71eaef91a5c1c
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: e4750e063c0f049c5f3faa1667aafb7f1afa6586
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47415878"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305178"
 ---
 # <a name="gdpr-breach-notification"></a>Notification de violation RGPD
 
@@ -30,7 +30,7 @@ Le règlement général sur la protection des données (RGPD) présente de nouve
 
 ## <a name="what-constitute-a-breach-of-personal-data-under-the-gdpr"></a>Selon le RGPD, qu’est-ce qu’une violation de données personnelles ?
 
-Les données personnelles correspondent aux informations relatives à un individu permettant de l’identifier directement ou indirectement. Une violation de données personnelles correspond à une violation de la sécurité entraînant la destruction involontaire ou contraire à la loi de données personnelles transmises, stockées ou autrement traitées, ou bien leur perte, modification ou divulgation ou consultation non autorisée.
+Les données personnelles correspondent aux informations relatives à un individu permettant de l’identifier directement ou indirectement. Une violation de données personnelles correspond à « une violation de la sécurité entraînant la destruction involontaire ou contraire à la loi de données personnelles transmises, stockées ou autrement traitées, ou bien leur perte, modification ou divulgation ou consultation non autorisée ».
 
 ## <a name="terminology"></a>Terminologie
 

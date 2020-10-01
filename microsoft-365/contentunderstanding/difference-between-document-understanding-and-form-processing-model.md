@@ -1,66 +1,75 @@
 ---
-title: Différences entre la présentation des documents et les modèles de traitement des formulaires
+title: Différence entre la compréhension de document et les modèles de traitement de formulaire
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 8/1/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
-description: Décrit la différence essentielle entre le document de présentation et le modèle de traitement des formulaires
-ms.openlocfilehash: 268a2fa4a0381e5822c17e5df22566c931d37f3c
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
-ms.translationtype: MT
+localization_priority: Priority
+description: Décrit la principale différence entre la compréhension de document et les modèles de traitement de formulaire
+ms.openlocfilehash: 5fa9bd6b5873a11c00b19663226c4e3dd2b65825
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48294747"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48321784"
 ---
-# <a name="difference-between-document-understanding-and-form-processing-models"></a>Différences entre la présentation des documents et les modèles de traitement des formulaires 
+# <a name="difference-between-document-understanding-and-form-processing-models"></a>Différence entre la compréhension de document et les modèles de traitement de formulaire 
 
-Le contenu de cet article est destiné à la préversion privée du projet cortex. Pour [plus d’informations sur le projet cortex](https://aka.ms/projectcortex).
 
-Content Understanding in Project cortex vous permet d’identifier et de classer les documents qui sont chargés dans les bibliothèques de documents SharePoint, ainsi que d’extraire les informations pertinentes de chaque fichier.  Par exemple, lorsque les fichiers sont téléchargés vers une bibliothèque de documents SharePoint, tous les fichiers identifiés comme *bons de commande* sont classés comme tels, puis affichés dans une vue de bibliothèque de documents personnalisée. En outre, vous pouvez extraire des informations spécifiques de chaque fichier (par exemple, le *numéro de bon de commande* et le *total*) et l’afficher sous forme de colonne dans la vue de votre bibliothèque de documents. 
+La compréhension de contenu dans Microsoft SharePoint Syntex vous permet d’identifier et de classer les documents téléchargés dans les bibliothèques de documents SharePoint, ainsi que d’extraire les informations pertinentes de chaque fichier.  Par exemple, lorsque les fichiers sont téléchargés vers une bibliothèque de documents SharePoint, tous les fichiers identifiés comme *Bons de commande* sont classés comme tels, puis affichés dans une vue personnalisée de la bibliothèque de documents. De plus, vous pouvez extraire des informations spécifiques de chaque fichier (par exemple, le *Numéro de bon de commande* et le *Total*) et les afficher sous forme de colonne dans la vue de votre bibliothèque de documents. 
 
-Content Understanding vous permet de créer des *modèles* pour identifier et extraire les informations dont vous avez besoin. Voici deux types de modèle que vous pouvez utiliser :
+La compréhension de contenu vous permet de créer des *modèles* pour identifier et extraire les informations dont vous avez besoin. Les modèles peuvent vous aider à résoudre des problèmes commerciaux liés à la recherche, aux processus commerciaux, à la conformité et bien d’autres.
 
-- [Modèles de présentation des documents](document-understanding-overview.md)
-- [Modèles de traitement des formulaires](form-processing-overview.md)
+Il existe deux types de modèles que vous pouvez utiliser :
 
-Bien que les deux modèles soient généralement utilisés dans le même but, les principales différences répertoriées ci-dessous affectent celles que vous pouvez utiliser.
+- les [modèles de compréhension de document](document-understanding-overview.md)
+- les [modèles de traitement de formulaire](form-processing-overview.md)
 
-## <a name="structured-versus-unstructured-and-semi-structured-content"></a>Contenu structuré et non structuré et semi-structuré
+Bien que les deux modèles soient généralement utilisés dans le même but, les principales différences répertoriées ci-dessous affectent ceux que vous pouvez utiliser.
 
-Utilisez les modèles de présentation de document pour identifier et extraire des données de documents non structurés, tels que des lettres ou des contrats, où les entités de texte que vous souhaitez extraire résident dans des phrases ou dans des régions spécifiques du document. Par exemple, un document non structuré peut être une lettre de renouvellement de contrat qui peut être écrite de différentes manières. Toutefois, les informations existent dans le corps de chaque document de renouvellement de contrat, comme la chaîne de texte « date de début du service » suivie d’une date réelle.   
 
-Utiliser des modèles de traitement de formulaire pour identifier des fichiers et extraire des données de documents structurés ou semi-structurés, tels que des formulaires ou des factures. Ces documents doivent avoir des paires de valeurs clés claires (par exemple, *Date : 10/1/2020*) * ou données de tableau. Par exemple, un bon candidat pour le traitement des formulaires est le formulaire de demande de commande d’une société dont les clients ont besoin pour fournir des informations sur des champs spécifiques situés dans la même zone de la mise en page du document, tels que le *nom*, le *numéro de téléphone*, le *coût total*, etc.  Un formulaire fiscal constitue un bon exemple de document structuré. 
 
-## <a name="where-they-are-created"></a>Emplacement de création
+## <a name="structured-versus-unstructured-and-semi-structured-content"></a>Contenu structuré, contenu non structuré ou contenu semi-structuré
 
-Les modèles de présentation des documents sont créés et gérés dans un site Centre de contenu SharePoint. 
+Utilisez des modèles de compréhension de document pour identifier et extraire des données de documents non structurés, comme des lettres ou des contrats, dans lesquels les entités de texte que vous souhaitez extraire se trouvent dans des phrases ou des zones spécifiques du document. Par exemple, un document non structuré peut être une lettre de renouvellement de contrat, qui peut être rédigée de différentes manières. Cependant, des informations existent systématiquement dans le corps de chaque document de renouvellement de contrat, telles que la chaîne de caractères *Date de début du service de* suivi d’une date réelle.   
+
+Utilisez des modèles de traitement de formulaire pour identifier les fichiers et extraire des données de documents structurés ou semi-structurés, tels que des formulaires ou des factures. Les modèles de traitement de formulaire sont formés pour comprendre la mise en page de votre formulaire à partir d’exemples de documents et apprendre à rechercher les données que vous devez extraire à partir d’emplacements similaires. En effet, les formulaires ont une mise en page plus structurée et les entités se trouvent à la même place (par exemple, un numéro de sécurité sociale sur un formulaire fiscal). 
 
 > [!NOTE]
-> Vous devez avoir accès à un site du centre de contenu pour créer un modèle de présentation des documents ou pour l’appliquer à une bibliothèque de documents SharePoint. 
+> Vous devez avoir accès à un site de type centre de contenu pour créer un modèle de compréhension de document ou pour en appliquer un à une bibliothèque de documents SharePoint. 
 
-Les modèles de traitement de formulaire sont créés dans le [générateur ai](https://docs.microsoft.com/ai-builder/overview)powerapps, mais la création est initiée directement à partir d’une bibliothèque de documents SharePoint. La création du modèle de traitement des formulaires doit être activée sur votre bibliothèque de documents afin qu’un utilisateur puisse créer un modèle de traitement de formulaire pour celui-ci, et un administrateur peut le faire dans les paramètres d’administration content Understanding. Les modèles de traitement de formulaire utilisent des flux PowerAutomate pour traiter les fichiers lorsqu’ils sont téléchargés vers la bibliothèque de documents.
 
-Lorsque vous créez un modèle de présentation de document, vous créez un nouveau [type de contenu SharePoint](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978) qui est enregistré dans la Galerie de types de contenu SharePoint. Ou vous pouvez utiliser des types de contenu existants pour définir votre modèle si nécessaire.
+## <a name="where-they-are-created"></a>Où sont-ils créés ?
 
-Les modèles de traitement de formulaire sont créés dans le [générateur ai](https://docs.microsoft.com/ai-builder/overview)powerapps, mais la création est initiée directement à partir d’une bibliothèque de documents SharePoint. La création du modèle de traitement des formulaires doit être activée sur votre bibliothèque de documents pour qu’un utilisateur crée un modèle de traitement de formulaire. Ou un administrateur peut effectuer cette opération dans le contenu Understanding admin settings. Les modèles de traitement de formulaire utilisent des flux PowerAutomate pour traiter les fichiers lorsqu’ils sont téléchargés vers la bibliothèque de documents.
+Les modèles de compréhension de document sont créés et gérés dans un site de type centre de contenu SharePoint. 
 
-Les modèles de traitement de formulaire créent également de nouveaux [types de contenu SharePoint](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978)et sont également stockés dans la Galerie des types de contenu SharePoint.
+> [!NOTE]
+> Si vous souhaitez en savoir plus sur les documents input, consultez l’article [Configuration requise et limitations du modèle de traitement de formulaire](https://docs.microsoft.com/ai-builder/form-processing-model-requirements). 
 
-## <a name="where-they-can-be-applied"></a>Emplacement auquel ils peuvent être appliqués
+Les modèles de traitement de formulaire sont créés dans [AI Builder](https://docs.microsoft.com/ai-builder/overview) de PowerApps, mais la création est lancée directement à partir d’une bibliothèque de documents SharePoint. La création de modèle de traitement de formulaire doit être activée sur votre bibliothèque de documents pour qu’un utilisateur puisse créer un modèle de traitement de formulaire pour celle-ci. Un administrateur peut activer cette option dans les paramètres d’administration du contenu. Les modèles de traitement de formulaire utilisent des flux PowerAutomate pour traiter les fichiers lorsqu’ils sont téléchargés dans la bibliothèque de documents.
 
-Vous pouvez appliquer des modèles de présentation de documents à des bibliothèques de documents SharePoint auxquelles vous avez accès. Utilisez le centre de contenu pour créer un modèle de présentation des documents et l’appliquer à différentes bibliothèques de documents. Le centre de contenu vous offre un contrôle plus central sur l’utilisation et l’emplacement des modèles de présentation des documents. Remarque ces informations doivent également être répercutées sur un centre de contenu.
+Lorsque vous créez un modèle de compréhension de document, vous créez un nouveau [type de contenu SharePoint](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978), qui est enregistré dans la galerie Types de contenu SharePoint. Vous pouvez également utiliser des types de contenu existants pour définir votre modèle si nécessaire.
 
-Les modèles de traitement de formulaire ne peuvent actuellement être appliqués qu’à la bibliothèque de documents SharePoint à partir de laquelle vous les avez créés. Cela permet aux utilisateurs titulaires d’une licence ayant accès au site d’être en mesure de créer un modèle de traitement de formulaire.
+Les modèles de traitement de formulaire sont créés dans [AI Builder](https://docs.microsoft.com/ai-builder/overview) de PowerApps, mais la création est lancée directement à partir d’une bibliothèque de documents SharePoint. La création de modèle de traitement de formulaire doit être activée sur votre bibliothèque de documents pour qu’un utilisateur puisse créer un modèle de traitement de formulaire pour celle-ci. Un administrateur peut activer cette option dans les paramètres d’administration du contenu. Les modèles de traitement de formulaire utilisent des flux PowerAutomate pour traiter les fichiers lorsqu’ils sont téléchargés dans la bibliothèque de documents.
+
+Les modèles de traitement de formulaire créent également de nouveaux [types de contenu SharePoint](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978) et sont, eux aussi, stockés dans la galerie Types de contenu SharePoint.
+
+## <a name="where-they-can-be-applied"></a>Où peuvent-ils être appliqués ?
+
+Vous pouvez appliquer des modèles de compréhension de document aux bibliothèques de documents SharePoint auxquelles vous avez accès. Utilisez le centre de contenu pour créer un modèle de compréhension de document et appliquer celui-ci à différentes bibliothèques de documents. Le centre de contenu offre un contrôle plus central concernant l’utilisation des modèles de compréhension de document ainsi que leur application. Notez que ces informations doivent également être transmises à un centre de contenu.
+
+Actuellement, les modèles de traitement de formulaire ne peuvent être appliqués qu’à la bibliothèque de documents SharePoint à partir de laquelle ils sont créés. Cela permet aux utilisateurs sous licence, ayant accès au site, de pouvoir créer un modèle de traitement de formulaire. Notez que votre administrateur doit activer le traitement de formulaire sur une bibliothèque de documents SharePoint pour que les utilisateurs sous licence puissent l’utiliser.
 
  ## <a name="see-also"></a>Voir aussi
-[Formation : améliorer les performances d’entreprise avec le générateur AI](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)</br>
-[Créer un classifieur](create-a-classifier.md)</br>
-[Créer un extracteur](create-an-extractor.md)</br>
-[Appliquer un modèle de présentation des documents](apply-a-model.md)</br>
-[Créer un modèle de traitement de formulaire](create-a-form-processing-model.md)</br>
+[Formation : Améliorer les performances de votre entreprise avec AI Builder](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)
+
+[Créer un classifieur](create-a-classifier.md)
+
+[Créer un extracteur](create-an-extractor.md)
+
+[Appliquer un modèle de compréhension de document](apply-a-model.md)
+
+[Créer un modèle de traitement de formulaire](create-a-form-processing-model.md)

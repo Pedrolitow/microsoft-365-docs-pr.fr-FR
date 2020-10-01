@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de confidentialité pour protéger le contenu des sites SharePoint et Microsoft Teams, ainsi que des Groupes Microsoft 365.
-ms.openlocfilehash: b81d598c3a80a915d9d20622a1b6d2e6f4517883
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 4ae0491699f2ffa60245d502bb691b2c79b34133
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547686"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305376"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint
 
@@ -35,7 +35,7 @@ Outre l’utilisation d' [étiquettes de confidentialité](sensitivity-labels.md
 - Accès à partir d’appareils enregistrés
 
 > [!IMPORTANT]
-> Le paramètre **Accès à partir d’appareils non gérés** fonctionne conjointement avec la fonctionnalité SharePoint pour [contrôler l’accès à partir d’appareils non gérés](/sharepoint/control-access-from-unmanaged-devices). Vous devez configurer cette fonctionnalité SharePoint dépendante pour votre client afin d’utiliser une étiquette de confidentialité pour laquelle ce paramètre est configuré. Des informations supplémentaires sont incluses dans les instructions qui suivent.
+> Le paramètre **Accès à partir d’appareils non gérés** fonctionne conjointement avec la fonctionnalité SharePoint pour [contrôler l’accès à partir d’appareils non gérés](/sharepoint/control-access-from-unmanaged-devices). Vous devez configurer cette fonctionnalité SharePoint dépendante afin d’utiliser une étiquette de confidentialité pour laquelle ce paramètre est configuré. Des informations supplémentaires sont incluses dans les instructions qui suivent.
 
 Lorsque vous appliquez cette étiquette de confidentialité à un conteneur pris en charge, l’étiquette applique automatiquement les paramètres de classification et de protection au site ou au groupe connecté.
 
@@ -86,13 +86,13 @@ Dans cette nouvelle page de **Paramètres de site et de groupe**, configurez les
 
 - **Accès des utilisateurs externes** : déterminez si le propriétaire du groupe peut [ajouter des invités au groupe](/office365/admin/create-groups/manage-guest-access-in-groups).
 
-- **Appareils non gérés** : pour cette option, vous devez également configurer la fonctionnalité SharePoint qui utilise l’accès conditionnel Azure AD pour bloquer ou limiter l’accès aux contenus SharePoint et OneDrive provenant d’appareils non gérés. Pour obtenir des instructions, voir [Contrôler l’accès depuis des appareils non gérés](/sharepoint/control-access-from-unmanaged-devices). L’option que vous spécifiez pour ce paramètre d’étiquette est l’équivalent du [blocage ou de la limitation de l’accès à un site SharePoint ou OneDrive spécifique](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive).
+- **Appareils non gérés** : cette option utilise la fonctionnalité SharePoint qui utilise l’accès conditionnel Azure AD pour bloquer ou limiter l’accès aux contenus SharePoint et OneDrive provenant d’appareils non gérés. Pour plus d’informations, voir [Contrôler l’accès à partir des appareils non gérés](/sharepoint/control-access-from-unmanaged-devices). L’option que vous spécifiez pour ce paramètre d’étiquette correspond à l’exécution d’une commande PowerShell pour un site, comme décrit dans les étapes 7-9 à partir de [Bloquer ou limiter l’accès à un site SharePoint ou à OneDrive spécifique](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive).
     
-    Si vous ne configurez pas la fonctionnalité SharePoint dépendante, l’option spécifiée ici n’a aucun effet. De plus, elle n’aura aucun effet si elle est moins restrictive que le paramètre configuré au niveau du client. Sélectionnez un paramètre d’étiquette identique au paramètre au niveau du client ou plus restrictif.
+    Si vous ne configurez pas la stratégie d’accès conditionnel dépendante comme décrit dans les étapes 1-6 dans les instructions SharePoint, l’option que vous spécifiez ici n’aura aucun effet. De plus, elle n’aura aucun effet si elle est moins restrictive qu’un paramètre configuré au niveau du client. Si vous avez configuré un paramètre à l’échelle de l’Organisation pour les appareils non gérés, sélectionnez un paramètre d’étiquette qui soit de la même ou de la plus restrictive.
     
     Par exemple, si votre client est configuré pour **Autoriser un accès limité au web uniquement**, le paramètre d’étiquette qui autorise l’accès complet n’aura aucun effet, car il est moins restrictif. Pour ce paramètre de niveau client, sélectionnez le paramètre d’étiquette pour bloquer l’accès (plus restrictif) ou le paramètre d’étiquette pour un accès limité (identique au paramètre client).
     
-    Étant donné que vous pouvez configurer la fonctionnalité SharePoint indépendamment de la configuration d’étiquette, l’Assistant d’étiquettes de confidentialité ne vérifie pas si les dépendances sont en place.
+    Étant donné que vous pouvez configurer les paramètres de SharePoint séparément de la configuration d’étiquette, l’Assistant d’étiquettes de confidentialité ne vérifie pas si les dépendances sont en place.
 
 ![L’onglet Paramètres de site et de groupe](../media/edit-sensitivity-label-site-group2.png)
 

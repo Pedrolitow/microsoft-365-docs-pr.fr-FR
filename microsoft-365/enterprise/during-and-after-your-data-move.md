@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: Les déplacements de données sont des opérations principales qui se produisent lorsque Microsoft déplace des services et des données associées pour votre client vers une nouvelle région de centre de données.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: acd2601d32617c56019ca8b4bf8688ce40f5d76a
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: d2e63dd046f62f07e367b3632f96bf7261b99c9c
+ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950271"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48333699"
 ---
 # <a name="during-and-after-your-data-move"></a>Pendant et après le déplacement de vos données
 
@@ -30,8 +30,7 @@ Les déplacements de données sont des opérations principales n'ayant que peu d
 > [!NOTE]
 > Le déplacement se produit à différents moments pour chaque service. Par conséquent, vous ne verrez pas la description des fonctionnalités réduites pour chaque service au même moment. 
   
-Regardez le centre de messages Microsoft 365 pour confirmer le déplacement de chaque Exchange Online, SharePoint Online, teams et Skype entreprise. Comme indiqué dans le tableau ci-dessous, le déplacement de toutes les données pour tous les clients dans une zone géographique spécifique peut prendre jusqu’à 24 mois à compter de la fin de la période d’inscription. Si vous rencontrez des problèmes avec votre client après le déplacement, contactez le [support technique](https://go.microsoft.com/fwlink/p/?LinkID=522459) pour obtenir de l’aide. 
-  
+Regardez le centre de messages Microsoft 365 pour confirmer le déplacement de chaque service de conversation Exchange Online, SharePoint Online et Teams. Comme indiqué dans le tableau ci-dessous, il peut être nécessaire de prendre jusqu’à 24 mois après la fin de la période d’inscription pour terminer les données client principales lors du déplacement vers le nouveau centre de données géographique.   
 
 |**Clients avec pays d’abonnement dans**|**Tous les déplacements terminés d'ici le**|
 |:-----|:-----|
@@ -46,7 +45,7 @@ Regardez le centre de messages Microsoft 365 pour confirmer le déplacement de c
 |Afrique du Sud  <br/> |1er juillet 2022  <br/> |
 |Suisse, Liechtenstein  <br/> |1er juillet 2022  <br/> |
 |Norvège  <br/> |1er novembre 2022  <br/> |
-|Allemagne  <br/> |Vision  <br/> |
+|Allemagne  <br/> |1er avril 2023  <br/> |
 
 ## <a name="exchange-online"></a>Exchange Online
 
@@ -67,13 +66,9 @@ Lors du déplacement de SharePoint Online, les données des services suivants so
   
 - OneDrive Entreprise
     
-- Project Online
-    
-- Project pour Microsoft 365
-    
 - Services vidéo Microsoft 365
     
-- Office dans le navigateur
+- Office dans un navigateur
     
 - Applications Microsoft 365 for entreprise
     
@@ -107,9 +102,9 @@ Les fonctionnalités de recherche suivantes sont concernées :
     
 - Protection contre la perte de données (DLP) : Les politiques ne sont pas appliquées sur les éléments qui changent avant que l’analyse n’ait récupéré les modifications.
 
-## <a name="microsoft-teams"></a>Microsoft Teams
+## <a name="microsoft-teams"></a>Microsoft Teams
 
-Outre Exchange Online, SharePoint Online et OneDrive entreprise, Microsoft migre les données de teams vers le centre de données local.
+Outre Exchange Online, SharePoint Online et OneDrive entreprise, Microsoft migre les données du service de conversation teams vers le centre de données local.
 
 - Les messages de conversation Teams, y compris les messages privés et les messages de canal.
 - Images de teams utilisées dans les conversations.
@@ -118,20 +113,7 @@ Les fichiers teams sont stockés dans SharePoint Online et les fichiers de conve
 
 ## <a name="skype-for-business"></a>Skype Entreprise
 
-Les déplacements Skype entreprise sont disponibles pour l’Australie, le Japon, l’Inde, le Canada, le Royaume-Uni et la Corée du Sud.
-
-Tous les utilisateurs seront déconnectés du logiciel client Skype Entreprise pendant le basculement. La connexion automatique permettra aux utilisateurs de se reconnecter dans les deux minutes qui suivent.
-  
-|**Fonctionnalités disponibles pendant l'intégralité du déplacement**|**Fonctionnalités pouvant être limitées pendant une partie du déplacement**|
-|:-----|:-----|
-| Messagerie instantanée et appels vocaux  <br/>  Les utilisateurs peuvent ajouter des contacts, des groupes de contacts et des réunions, ainsi qu’indiquer leur emplacement et modifier le texte dans « Activités du jour ».  <br/>  Les paramètres du fournisseur de services d’audioconférence sont copiés vers la zone géographique de centres de données cible. Si le fournisseur de services d’audioconférence est présent dans le centre de données cible, la fonctionnalité sera disponible. Sinon, vous ne pourrez pas l’utiliser.  <br/> | Les administrateurs ne pourront pas se servir de la fonctionnalité TRPS (PowerShell client à distance) d’administration des clients pour créer des sessions.  <br/>  Les administrateurs ne pourront pas utiliser la fonctionnalité LAC de l'administrateur client pour se connecter et modifier les paramètres utilisateur.  <br/> |
-   
-|**Après le déplacement**|
-|:-----|
-| Les données de la réunion (présentations téléchargées, etc.) ne seront pas déplacées et devront être téléchargées à nouveau.  <br/>  Les clients Lync plus anciens, tels que les clients Lync 2010 et Lync pour Mac 2011, mettent en cache des informations DNS dans le service, ce qui entraîne des problèmes de connexion. Le cache DNS devra peut-être être effacé si l’utilisateur ne se trouve pas sur le dernier client Windows de Skype Entreprise. Consultez la rubrique [Troubleshooting Skype for Business Online DNS configuration Problems in Office 365](https://docs.microsoft.com/skypeforbusiness/troubleshoot/online-configuration/dns-configuration-issue). Les utilisateurs de Lync pour Mac doivent suivre [ces instructions](https://support.microsoft.com/kb/2629861).  <br/> |
-   
-### <a name="skype-for-business-moves-that-involve-a-third-party-audio-conferencing-provider"></a>Déplacements Skype entreprise impliquant un fournisseur de services d’audioconférence tiers
-Les services de module complémentaire de fournisseurs de services d’audioconférence tiers pour Skype Entreprise ne sont pas disponibles pour les utilisateurs hébergés dans des centres de données propres à une nouvelle zone géographique.   Les clients existants qui utilisent un service de fournisseur de services d’audioconférence tiers ne doivent pas demander de déplacement vers un centre de données propre à une nouvelle zone géographique.   Les nouveaux clients déployés dans les centres de données propres à une nouvelle zone géographique doivent demander un déplacement vers un centre de données régional afin d’utiliser un fournisseur de services d’audioconférence tiers. 
+Les déplacements Skype entreprise ne sont plus disponibles.  [Skype entreprise Online sera supprimé](https://docs.microsoft.com/lifecycle/announcements/skype-for-business-online-retirement) le 31 juillet 2021. Après cela, le service n’est plus accessible. 
   
 ## <a name="related-topics"></a>Voir aussi 
  

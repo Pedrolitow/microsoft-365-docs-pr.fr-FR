@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 87f956e0c9ae80610a61a7ed9496e2aa8b52ebb4
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 51abfe03db57a838cbf5e132027cce7927db439c
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416837"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305218"
 ---
 # <a name="microsoft-support-and-professional-services-and-breach-notification-under-the-gdpr"></a>Support Microsoft, services professionnels et notification des violations dans le cadre du RGPD
 
@@ -38,9 +38,9 @@ La division Services professionnels Microsoft s’implique dans la protection de
 
 Le processus de notification de violation de données personnelles démarre lorsque nous déclarons qu’une [violation de données personnelles] s’est produite.
 
-Pour que celle-ci soit déclarée, l’équipe de réponse aux incidents de protection des données Microsoft doit déterminer qu’un incident de protection des données répondant à la définition ci-dessus s’est effectivement produit. La déclaration s’effectue dès que toutes les informations pertinentes sont disponibles pour déterminer qu’un incident de protection des données s’est produit.
+Pour que celle-ci soit déclarée, l’équipe de réponse aux incidents de protection des données Microsoft doit déterminer qu’un incident de protection des données répondant à la définition précédemment s’est effectivement produit. La déclaration s’effectue dès que toutes les informations pertinentes sont disponibles pour déterminer qu’un incident de protection des données s’est produit.
 
-En raison de la nature des services professionnels, certains événements ressemblant à des incidents de protection des données Microsoft n’en sont pas, car ils sont le résultat d’actions du client ou se sont produits sur les systèmes du client. Microsoft n’est pas responsable de la surveillance ou de la réaction aux incidents de protection des données survenus dans le cadre du domaine de responsabilité du client. Toutefois, lorsque Microsoft est informé d’un incident de protection des données occasionné par le client, nous classons celui-ci dans la catégorie des incidents de protection des données causés par le client (ce que l’équipe de réponse aux incidents de protection des données appelle un « événement »), informons le client de notre observation et, s’il le demande, lui fournissons notre assistance, en fonction de son interaction avec Microsoft. Les incidents de protection des données causés par les clients incluent par exemple l’envoi de mots de passe ou d’autres informations sensibles des clients  à Microsoft, les demandes de suppression de données ou encore les fraudes.
+En raison de la nature des services professionnels, certains événements ressemblant à des incidents de protection des données Microsoft n’en sont pas, car ils sont le résultat d’actions du client ou se sont produits sur les systèmes du client. Microsoft n’est pas responsable de la surveillance ou de la réaction aux incidents de protection des données survenus dans le cadre du domaine de responsabilité du client. Toutefois, lorsque Microsoft est informé d’un incident de protection des données occasionné par le client, nous classons celui-ci dans la catégorie des incidents de protection des données causés par le client (ce que l’équipe de réponse aux incidents de protection des données appelle un « événement »), informons le client de notre observation et, s’il le demande, lui fournissons notre assistance, en fonction de son interaction avec Microsoft. Les incidents de protection des données causés par les clients incluent par exemple l’envoi de mots de passe ou d’autres informations sensibles des clients à Microsoft, les demandes de suppression de données ou encore les fraudes.
 
 Certaines actions sont totalement en dehors du champ d’application de ce processus, notamment les questions d’ordre général sur nos stratégies ou nos normes de protection des données, les demandes sur les droits de la personne concernée par le traitement des données, les demandes de retrait, les listes de vœux de produits ou les rapports de bogues non associés à la protection des données, les incidents de protection des données n’impliquant pas les données du client et les fraudes à l’encontre de Microsoft.
 
@@ -65,7 +65,7 @@ Les processus de détection utilisés par les services professionnels Microsoft 
 
 ### <a name="data-protection-incident-response-drills-testing-of-data-protection-incident-response-plan"></a>Exercices de réponse aux incidents de protection des données, tests du plan de réponse aux incidents de protection des données
 
-En plus de la formation en continu, les services professionnels exécutent chaque année des exercices en partenariat avec les départements internes appropriés en vue de communiquer les procédures de transmission des incidents de protection des données, les rôles et les responsabilités de chacun à tous les membres de l’équipe de stabilisation. Ceci prépare les principales parties prenantes aux incidents de protection des données réels, que ceux-ci soient de nature sécuritaire, physique ou de confidentialité. Ces exercices s’effectuent notamment avec des représentants de l’équipe de réponse aux incidents de protection des données, de l’équipe de sécurité, des équipes juridiques et de l’équipe de communications.
+En plus de la formation en continu, les services professionnels exécutent chaque année des exercices en partenariat avec les départements internes appropriés en vue de communiquer les procédures de transmission des incidents de protection des données, les rôles et les responsabilités de chacun à tous les membres de l’équipe de stabilisation. Cette formation prépare les principales parties prenantes aux incidents de protection des données réels, que ceux-ci soient de nature sécuritaire, physique ou de confidentialité. Ces exercices s’effectuent notamment avec des représentants de l’équipe de réponse aux incidents de protection des données, de l’équipe de sécurité, des équipes juridiques et de l’équipe de communications.
 
 Suite aux exercices, nous documentons les résultats et les méthodes de résolution que nous avons décidé d’utiliser.
 

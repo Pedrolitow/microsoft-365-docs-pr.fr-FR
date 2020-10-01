@@ -1,7 +1,7 @@
 ---
 title: Préparer les certificats et les profils réseau pour le Bureau géré Microsoft
 description: certs/WiFi/LAN
-keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 7a0af5db4e18bc46436ace6f9fefefc18f0ccd68
-ms.sourcegitcommit: 51f040a4edb8dd52521a5d7b0f7a975986a1af10
+ms.openlocfilehash: bccfe9a6a6a0550f96ab33d5fd5142e4eaae7b51
+ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46608274"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48333523"
 ---
 # <a name="prepare-certificates-and-network-profiles-for-microsoft-managed-desktop"></a>Préparer les certificats et les profils réseau pour le Bureau géré Microsoft  
  
@@ -32,9 +32,6 @@ Avant de déployer les certificats SCEP ou PKCS sur le bureau géré Microsoft, 
  
 - [Modèle de certificat PKCS](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/PKCS-certificate-template.xlsx) 
 - [Modèle de certificat SCEP](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/SCEP-certificate-template.xlsx)
-
->[!NOTE]
->Actuellement, seuls les profils de certificat SCEP sont pris en charge pour le déploiement de profil Wi-Fi sur le bureau géré Microsoft lors de l’utilisation d’un type EAP. Les profils de certificat PKCS ne sont pas pris en charge. Voir [Ajouter des paramètres Wi-Fi pour les appareils Windows 10 dans Intune](https://docs.microsoft.com/intune/wi-fi-settings-windows) pour référence.
 
   
 ## <a name="wi-fi-connectivity-requirements"></a>Configuration requise pour la connectivité Wi-Fi

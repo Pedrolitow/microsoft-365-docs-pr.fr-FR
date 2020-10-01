@@ -14,17 +14,16 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à créer, modifier et supprimer les stratégies anti-hameçonnage avancées disponibles dans les organisations avec Office 365 Advanced Threat Protection (Office 365 ATP).
-ms.openlocfilehash: 2986102b549b7302a7a4ac533f80846d832aeb41
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: c08046bdc9e72bc824dc28acdf2443c9071236a0
+ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/01/2020
-ms.locfileid: "48328070"
+ms.locfileid: "48333545"
 ---
 # <a name="configure-atp-anti-phishing-policies"></a>Configurer des stratégies anti-hameçonnage ATP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
 
 Les stratégies anti-hameçonnage ATP font partie de la [protection avancée contre les menaces d’Office 365](office-365-atp.md). Les stratégies anti-hameçonnage ATP peuvent vous aider à protéger votre organisation contre les attaques de hameçonnage malveillant basées sur l’emprunt d’identité et d’autres types d’attaques par hameçonnage. Pour plus d’informations sur les différences entre les stratégies de détection d’hameçonnage dans les stratégies anti-hameçonnage Exchange Online Protection (EOP) et ATP, reportez-vous à la rubrique [protection anti-hameçonnage](anti-phishing-protection.md).
 
@@ -63,7 +62,7 @@ Pour accroître l’efficacité de la protection anti-hameçonnage, vous pouvez 
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Des autorisations doivent vous être attribuées avant de pouvoir exécuter ces procédures. décrites dans cette rubrique :
+- Avant de pouvoir effectuer les procédures décrites dans cet article, vous devez disposer des autorisations suivantes :
 
   - Pour ajouter, modifier et supprimer des stratégies anti-hameçonnage ATP, vous devez être membre de l’un des groupes de rôles suivants :
 
@@ -176,6 +175,8 @@ Utilisez les procédures suivantes pour modifier les stratégies anti-hameçonna
 
      - **Inclure automatiquement les domaines dont je suis propriétaire**: la valeur par défaut est **off**. Pour l’activer, faites glisser le bouton bascule sur **activé**.
      - **Inclure les domaines personnalisés**: la valeur par défaut est **off**. Pour l’activer, faites glisser le bouton bascule sur **activé**, puis dans la zone **Ajouter des domaines** , entrez le nom de domaine (par exemple, contoso.com), appuyez sur entrée et répétez l’opération si nécessaire.
+
+       **Remarque**: dans le centre de sécurité & conformité, vous pouvez entrer un maximum de 20 domaines. Dans Exchange Online PowerShell, vous pouvez entrer un maximum de 50 domaines.
 
    - **Actions**: cliquez sur **modifier**
 

@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 496a84b153d017eb69ba5b18443e4331c00c4dd7
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 6052d4fd4c4f85696d18d7ccdd679fd98e9fc7c8
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416578"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48304824"
 ---
 # <a name="microsoft-support-and-professional-services-data-subject-requests-for-the-gdpr-and-ccpa"></a>Demandes des personnes concernées du Support Microsoft et des services professionnels concernant le RGPD et le CCPA
 
@@ -35,13 +35,13 @@ Suivez ce lien pour en savoir plus sur les services professionnels Microsoft, ou
 
 Le RGPD de l’UE permet aux utilisateurs (désignés dans le règlement comme étant les *personnes concernées par le traitement des données*) de gérer les données personnelles collectées par un employeur ou tout autre type d’agence ou organisation (l’*entité de contrôle des données* ou l’*entité de contrôle* uniquement). Les données personnelles sont définies de manière générale dans le cadre du RGPD comme correspondant aux données associées à une personne physique identifiée ou identifiable. Le RGPD octroie aux personnes concernées des droits spécifiques sur leurs données personnelles. Ces droits incluent l’obtention de copies de ces dernières, les demandes de changements, la restriction de leur traitement et leur suppression. Toute demande formelle effectuée par une personne concernée par le traitement des données à une entité de contrôle au sujet de la prise de mesure sur ses données personnelles est appelée *demande de personne concernée* ou DPC. En outre, elle oblige les entreprises travaillant pour le compte d’une entité de contrôle (appelé *responsable du traitement des données* ou tout simplement *responsable du traitement*) d’assister l’entité de contrôle qui répond aux DPC de façon raisonnable.
 
-De même, le CCPA (California Consumer Privacy Act), prévoit des droits de confidentialité et des obligations pour les consommateurs de la Californie, y compris des droits similaires aux droits des personnes concernées du RGPD, tels que le droit de supprimer, d’accéder et de recevoir (portabilité) leurs informations personnelles.  Le CCPA prévoit également des publications d’informations, des protections contre la discrimination des personnes faisant usage de leurs droits et la possibilité d’opter pour ou contre certains transferts de données classés en tant que « ventes ». Les ventes sont largement définies pour inclure le partage de données à des fins importantes. Pour plus d’informations sur le CCPA, voir le [California Consumer Privacy Act](offering-ccpa.md) et le [Forum aux questions California Consumer Privacy Act](ccpa-faq.md).
+De même, le CCPA (California Consumer Privacy Act) prévoit des droits de confidentialité et des obligations pour les consommateurs de la Californie, y compris des droits similaires aux droits des personnes concernées en vertu du RGPD, tels que le droit de supprimer, d’accéder et de recevoir (portabilité) leurs informations personnelles.  Le CCPA prévoit également des publications d’informations, des protections contre la discrimination des personnes faisant usage de leurs droits et la possibilité d’opter pour ou contre certains transferts de données classés en tant que « ventes ». Les ventes sont largement définies pour inclure le partage de données à des fins importantes. Pour plus d’informations sur le CCPA, voir le [California Consumer Privacy Act](offering-ccpa.md) et le [Forum aux questions California Consumer Privacy Act](ccpa-faq.md).
 
 Ce guide décrit comment rechercher des données personnelles résidant dans des systèmes informatiques Microsoft et ayant pu être collectées pour fournir des offres du support et d’autres services professionnels. Il décrit également comment accéder à ces données et les exploiter.
 
 Lors du développement d’une réponse pour des DPC, il est important que les clients de Microsoft comprennent que les données de support et les données de conseil sont distinctes des données client dans les services en ligne ou d’autres données qu’ils ont pu, eux ou leurs personnes concernées par le traitement des données, fournir à Microsoft. Les outils et processus fournis pour les services en ligne, le tableau de bord Microsoft ou d’autres systèmes Microsoft permettant de répondre aux DPC ne peuvent pas être utilisés pour répondre aux DPC concernant des données personnelles détenues par le support Microsoft ou d’autres services professionnels.
 
-Toutes les demandes doivent être effectués via un représentant du support, comme décrit ci-dessous. Il n’existe actuellement aucun outil en libre-service permettant aux clients d’accéder aux données personnelles au sein des organisations de services professionnels.
+Toutes les demandes doivent être effectués via un représentant du support, comme décrit plus tard dans cette article. Il n’existe actuellement aucun outil en libre-service permettant aux clients d’accéder aux données personnelles au sein des organisations de services professionnels.
 
 #### <a name="overview-of-the-processes-outlined-in-this-guide"></a>Vue d’ensemble des processus décrits dans ce guide
 
@@ -58,13 +58,13 @@ Vous trouverez ci-dessous les définitions des termes du RGPD utiles pour ce gui
 
 - **Responsable du traitement des données :** la personne physique ou morale, l’autorité publique, le service ou tout autre organisme qui, seul ou conjointement avec d’autres, détermine les finalités et les moyens du traitement des données à caractère personnel ; lorsque les finalités et les moyens du traitement sont déterminés par la législation de l’Union ou des États membres, le responsable du traitement peut être désigné, ou les critères spécifiques relatifs à sa nomination être définis, par la législation de l’Union ou des États membres.
 - **Données personnelles et personne concernée par le traitement des données :** informations relatives à une personne physique identifiée ou identifiable (« la personne concernée par le traitement des données ») ; une personne physique identifiable est une personne qui peut être identifiée, directement ou indirectement, notamment par référence à un identificateur par exemple, un nom, un numéro d’identification, des données de localisation, un identificateur en ligne, ou un ou plusieurs facteurs spécifiques de l’identité physique, physiologique, génétique, mentale, économique, culturelle ou sociale de cette personne physique.
-- **Responsable du traitement :** la personne physique ou morale, l’autorité publique, le service ou tout autre organisme qui traite des données personnelles pour le compte de l’entité de contrôle.
+- **Sous-traitant :** une personne physique ou morale, une autorité publique, une agence ou un autre organisme qui traite les données à caractère personnel pour le compte du responsable du traitement.
 
 #### <a name="additional-terms-and-definitions-that-may-be-helpful-in-understanding-this-guide"></a>Définitions et termes supplémentaires pouvant être utiles pour comprendre ce guide
 
 - **Données de support et de conseil** : toutes les données (y compris le texte, le son, la vidéo, les fichiers image ou le logiciel) qui sont fournies à Microsoft par le (ou pour le compte du) client (ou que ce client autorise Microsoft à obtenir d’un service en ligne) via un engagement avec Microsoft pour obtenir un support ou des services professionnels.  Pour être plus précis, ceci n’inclut pas les données collectées où Microsoft est le contrôleur des données, y compris les données de contact du client.
 - **Contact client:** données personnelles susceptibles de faire partie de votre relation professionnelle avec Microsoft, telles que les données personnelles contenues dans les informations de contact de votre client. Il peut s’agir de votre nom, de votre adresse de courrier ou du numéro de téléphone de votre CSM, de l’administrateur général ou de l’administrateur informatique d’un service en ligne ou de rôles similaires.
-- **Données pseudonymes:** lorsque vous utilisez le support Microsoft pour les produits et services professionnels de Microsoft, Microsoft génère des informations liées à un identificateur numérique Microsoft pour fournir le support. Ce phénomène est souvent appelé «données pseudonymes», bien que ces données ne puissent pas être affectées à un sujet de données spécifique sans utiliser d’informations supplémentaires, certaines d’entre elles peuvent être considérées comme personnelles dans le cadre de la définition de RGPD pour les données personnelles. Dans les services professionnels, les demandes de remplir ou d’aider à satisfaire les DPCs incluent toujours automatiquement les données pseudonymes.
+- **Données pseudonymes:** lorsque vous utilisez le support Microsoft pour les produits et services professionnels de Microsoft, Microsoft génère des informations liées à un identificateur numérique Microsoft pour fournir le support. Cette information est souvent appelé «données pseudonymes», bien que ces données ne puissent pas être affectées à un sujet de données spécifique sans utiliser d’informations supplémentaires, certaines d’entre elles peuvent être considérées comme personnelles dans le cadre de la définition de RGPD pour les données personnelles. Dans les services professionnels, les demandes de remplir ou d’aider à satisfaire les DPCs incluent toujours automatiquement les données pseudonymes.
 
 ### <a name="how-to-use-this-guide"></a>Comment utiliser ce guide
 
@@ -89,7 +89,7 @@ Lors de la réception d’une requête provenant d’un contact client concernan
 
 Pour conserver la continuité des opérations du client, Microsoft ne traitera pas non plus de DPC associée à un engagement tant qu’un contact de remplacement n’aura pas été confirmé. Lors de la confirmation d’un nouveau contact, Microsoft remplacera l’ancien contact par le nouveau dans les engagements ouverts.
 
-Les clients peuvent choisir d’apporter des modifications aux données qu’ils ont collectées pendant les engagements de services professionnels via le support normal ou les canaux de conseil, séparément de cette DPC. Par exemple, Microsoft peut aider à supprimer des engagements de support, sur demande (reportez-vous ci-dessous à la section intitulée *Guide DPC pour des données fournies par le client*).
+Les clients peuvent choisir d’apporter des modifications aux données qu’ils ont collectées pendant les engagements de services professionnels via le support normal ou les canaux de conseil, séparément de cette DPC. Par exemple, Microsoft peut aider à supprimer des engagements de support, sur demande (reportez-vous à la section *Guide DPC pour des données fournies par le client*).
 
 ***Exemple à des fins d’illustration uniquement***
 
@@ -172,7 +172,7 @@ Chez Microsoft, toutes les données disposent d’une politique de rétention et
 
 Les clients qui demandent la suppression des données personnelles d’une personne concernée par le traitement des données de façon universelle sur les systèmes du support peuvent le faire via votre TAM ou en remplissant une demande de support (SR : Support Request) dans SMC ou un système équivalent. Vous *devez* indiquer qu’il s’agit d’une demande d’assistance concernant une DPC en vertu du RGPD.
 
-*Option A — DPC support technique chez Microsoft*. Pour un système transversal DPC, le client doit fournir les données personnelles dont Microsoft a besoin pour identifier les données requises (par exemple, adresse de messagerie, numéro de téléphone). Microsoft ne mettra pas en corrélation ou ne recherchera pas les enregistrements et effectuera uniquement des recherches directement sur les identificateurs fournis par le client. Lorsque des données sont trouvées, Microsoft supprime tous les engagements et toutes les données associées.
+*Option A : DPC support technique chez Microsoft*. Pour un système transversal DPC, le client doit fournir les données personnelles dont Microsoft a besoin pour identifier les données requises (par exemple, adresse de messagerie, numéro de téléphone). Microsoft ne mettra pas en corrélation ou ne recherchera pas les enregistrements et effectuera uniquement des recherches directement sur les identificateurs fournis par le client. Lorsque des données sont trouvées, Microsoft supprime tous les engagements et toutes les données associées.
 
 > Remarque importante : cela peut entraîner la perte d’enregistrements historiques importants pour l’organisation du client.
 

@@ -15,19 +15,19 @@ f1.keywords:
 - NOCSH
 description: Les clients Office 365 existants doivent soumettre une demande avant la date d’échéance de leur pays pour que leurs données Microsoft 365 services soient déplacées vers leur nouvelle région géographique.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f7ca333ca12faab84df54582ecd3212842d26e1a
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 10c77fdde8583c9d791c9fed936f94aad8fc7264
+ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949797"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48333883"
 ---
 # <a name="how-to-request-your-data-move"></a>Procédure de demande d’un déplacement de données
 
 > [!NOTE]
-> Les informations contenues dans cette page s’appliquent uniquement aux clients qui disposaient de clients Microsoft 365 existants avant le lancement des nouveaux centres de données dans leur région. L’éligibilité à la migration dépend également de la date de mise en service de la charge de travail propre, de sorte que la date de création du client ne doit pas nécessairement être la seule date.
+> Les informations contenues dans cette page s’appliquent uniquement aux clients qui disposaient de clients Microsoft 365 existants avant l’ouverture de nouveaux centres de données dans leur zone de centre de données. L’éligibilité de la migration dépend également de la date de mise en service spécifique.  La date de création du client n’est peut-être pas toujours la seule date.
   
-Les clients Microsoft 365 existants peuvent demander la migration de leurs données client principales au repos.  
+Les clients Microsoft 365 éligibles peuvent demander la migration de leurs données client principales au repos.  Le programme prend en charge les demandes pour chaque pays pendant la période décrite dans le tableau et par les clients avec un pays d’inscription éligible associé à leur client Microsoft 365.
   
 ## <a name="when-can-i-request-a-move"></a>Quand puis-je demander un déplacement ?
 
@@ -40,11 +40,11 @@ Les clients Microsoft 365 existants peuvent demander la migration de leurs donn�
 |Royaume-Uni  <br/> |1er janvier 2020  <br/> |30 juin 2020  <br/> |
 |Corée du Sud  <br/> |1er janvier 2020  <br/> |30 juin 2020  <br/> |
 |France  <br/> |1er janvier 2020  <br/> |30 juin 2020  <br/> |
-|Émirats arabes unis  <br/> |15 juillet 2019  <br/> |30 juin 2020  <br/> |
+|Émirats arabes unis  <br/> |15 juillet 2019  <br/> |30 juin 2020  <br/> |
 |Afrique du Sud  <br/> |25 juillet 2019  <br/> |30 juin 2020  <br/> |
 |Suisse, Liechtenstein  <br/> |10 décembre 2019  <br/> |30 juin 2020  <br/> |
 |Norvège  <br/> |15 avril 2020  <br/> |31 octobre 2020  <br/> |
-|Allemagne  <br/> |Vision  <br/> |Vision  <br/> |
+|Allemagne  <br/> |1er octobre 2020  <br/> |31 mars 2021  <br/> |
 
 ## <a name="how-to-request-a-move"></a>Procédure de demande d’un déplacement
 
@@ -57,19 +57,17 @@ Vous ne verrez pas cette section si votre client n’est pas éligible au progra
   
 ![Écran de l'action d'abonnement dans le centre de données](../media/dataresidencyflyoutae.jpg)
   
-Le texte de la section données de **résidence** doit apparaître pour indiquer que **votre organisation a demandé de déplacer ses données** vers le pays et la date appropriés. Vous recevez également un message de confirmation dans votre centre de messages. Cela permet de confirmer que votre demande de déplacement a abouti. 
-
-
+Le texte contenu dans la section **données de résidence** est modifié pour indiquer que **votre organisation a demandé de déplacer ses données** à la date et au pays appropriés. Vous recevez également un message de confirmation dans votre centre de messages. Cela permet de confirmer que votre demande de déplacement a abouti. 
   
 ## <a name="what-happens-after-requesting-a-move"></a>Que se passe-t-il une fois la demande de déplacement effectuée ?
 
-Après avoir demandé un déplacement, nous allons vous déplacer aussi rapidement que les contraintes opérationnelles le permettent. En raison de la nature imprévisible de la plupart des contraintes, nous ne pouvons pas vous communiquer une date spécifique ou une période pour les déplacements. Les administrateurs clients client verront une notification dans le centre de messages une fois le déplacement effectué pour chaque service terminé.
+Après avoir demandé un déplacement, nous allons planifier le déplacement de vos données client principales au repos pour les services Microsoft 365 éligibles aussi rapidement que nos contraintes opérationnelles le permettent. En raison de la nature imprévisible de la plupart des contraintes, nous ne pouvons pas vous communiquer une date spécifique ou une période pour les déplacements. Les administrateurs clients client verront une notification dans le centre de messages une fois le déplacement effectué pour chaque service terminé.
   
 Les déplacements peuvent prendre jusqu'à 24 mois à compter de la date d'échéance de la demande pour votre pays.
   
-## <a name="microsoft-teams"></a>Microsoft Teams
+## <a name="microsoft-teams"></a>Microsoft Teams
 
-Depuis le 2020 janvier, les clients des pays Office 365 éligibles peuvent opter pour la migration des données du service de conversation Microsoft Teams.  Les chronologies d’abonnement ont été rouvertes ou étendues pour tous les pays éligibles afin de permettre aux clients de prendre en compte le programme de migration avec Microsoft teams dans l’étendue. Les clients qui ont déjà opté pour un déplacement de résidence de données auront également des équipes à leur emplacement géographique local, aucune action supplémentaire n’est requise de la part de ces clients.
+Depuis le 2020 janvier, les clients des pays Office 365 éligibles peuvent opter pour la migration des données du service de conversation Microsoft Teams.  Les clients ayant précédemment opté pour un déplacement de résidence de données auront également des équipes déplacer vers leur propre région de centre de données local.  Aucune action supplémentaire n’est requise par ces clients.
 
 ## <a name="related-topics"></a>Voir aussi
 

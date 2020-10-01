@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Découvrez les nouvelles régions centres de centre de données Office 365 et comment utiliser l’option de résidence des données pour demander un déplacement de vos données de base vers une nouvelle région.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9c1c838f52627e0ff2eee5b7fdbeef7aee55b137
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 17b8d5c828a8c528aba180c260510345e77226d5
+ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46689590"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48333711"
 ---
 # <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>Transfert de données principales vers le nouveau centre de données Microsoft 365 régions centres
 
@@ -39,28 +39,23 @@ Les clients existants dont les données client essentielles sont stockées dans 
 |**Japon**| Asie/Pacifique | Japon | Décembre 2014 |
 |**Australie, Nouvelle-Zélande, Fidji**| Asie/Pacifique | Australie | Mars 2015 |
 |**Inde**| Asie/Pacifique | Inde | Octobre 2015 |
-|**Canada**| Amérique du Nord | Canada | Mai 2016 |
-|**Royaume-Uni**| Europe | Royaume-Uni | Septembre 2016 |
+|**Canada**| États-Unis | Canada | Mai 2016 |
+|**Royaume-Uni**| Union européenne | Royaume-Uni | Septembre 2016 |
 |**Corée du Sud**| Asie/Pacifique | Corée du Sud | Avril 2017 |
-|**France**| Europe | France | Mars 2018 |
-|**Émirats arabes unis**| Europe | Émirats arabes unis | Juin 2019 |
-|**Afrique du Sud**| Europe | Afrique du Sud | Juillet 2019 |
-|**Suisse, Liechtenstein**| Europe | Suisse | Décembre 2019 |
-|**Allemagne**| Europe | Allemagne | Décembre 2019 |
-|**Norvège**| Europe | Norvège | Avril 2020 |
-  
-Les données client essentielles des nouveaux clients ou des clients Office 365 créés après la mise à disposition de la nouvelle région de centre de données seront automatiquement stockées au repos dans cette nouvelle région.
+|**France**| Union européenne | France | Mars 2018 |
+|**Émirats arabes unis**| Union européenne | Émirats arabes unis | Juin 2019 |
+|**Afrique du Sud**| Union européenne | Afrique du Sud | Juillet 2019 |
+|**Suisse, Liechtenstein**| Union européenne | Suisse | Décembre 2019 |
+|**Allemagne**| Union européenne | Allemagne | Décembre 2019 |
+|**Norvège**| Union européenne | Norvège | Avril 2020 |
 
+À partir du 1er octobre 2020, les clients disposant d’un abonnement Office 365 éducation inclus dans le client ne sont pas éligibles pour la migration.
 
->[!Note]
->Nous avons lancé la région de centre de l’Allemagne en décembre 2019. Les nouveaux clients Microsoft 365 disposant d’une adresse d’abonnement allemande associée à leur client auront leurs données client principales stockées sur REST en Allemagne. Nous prévoyons de proposer une migration de l’Europe vers l’Allemagne pour les clients allemands à l’avenir. Aujourd’hui, les clients Microsoft Cloud Germany/Deutschland peuvent demander une migration vers les services Office 365 dans les nouvelles régions de centre de connaissances allemand. Pour plus d’informations, reportez-vous à la rubrique [Comment choisir de migrer de Microsoft Cloud Germany (Microsoft Cloud Deutschland) vers Office 365 services dans les nouvelles régions de centre](https://aka.ms/office365germanymoveoptin) de données allemand.
->
-  
 La liste complète de l'ensemble des régions de centre de données, des centres de données et l'emplacement des données client au repos est disponible via les [cartes interactives de centre de données](https://office.com/datamaps). 
   
 ## <a name="data-residency-option"></a>Option de résidence des données
 
-Nous fournissons une option de résidence des données aux clients existants de Microsoft 365 qui sont couverts par le centre de données régions centres répertorié dans le tableau ci-dessus. Avec cette option, les clients ayant des exigences en matière de résidence des données peuvent demander la migration précoce des données client principales de leur organisation au repos sur leur nouvelle région de centre de données.  Microsoft fournira une date d’échéance pour tous les clients éligibles qui demandent une migration précoce lors de la fenêtre d’enregistrement.  Consultez l'article [Procédure de demande d'un déplacement de données](request-your-data-move.md) pour obtenir plus de détails concernant la fenêtre d'inscription pour votre région et les étapes à suivre pour s'inscrire au programme.  Les déplacements de données peuvent prendre jusqu'à 24 mois à compter de la fin de la période de demande.
+Nous fournissons une option de résidence des données aux clients Microsoft 365 éligibles qui sont couverts par le centre de données régions centres répertorié dans le tableau ci-dessus. Avec cette option, les clients éligibles ayant des exigences en matière de résidence des données peuvent demander la migration des données client principales de leur organisation au repos sur leur nouvelle région de centre de données.  Microsoft fournira une date d’échéance pour tous les clients éligibles qui demandent une migration au cours de la fenêtre d’enregistrement.  Consultez la page relative [à la demande d’un déplacement de données](request-your-data-move.md) pour obtenir plus de détails sur la fenêtre d’inscription ouverte pour votre zone géographique de centre de données et les étapes à suivre pour vous inscrire au programme.  Les déplacements de données peuvent prendre jusqu’à 24 mois après la fin de la période de demande.
 
 Aucune fonction, fonctionnalité ou certification de conformité unique n'est fournie avec la nouvelle région de centre de données.
     
