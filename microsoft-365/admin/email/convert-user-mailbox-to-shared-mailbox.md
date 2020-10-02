@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: 'Découvrez comment convertir une boîte aux lettres privée en boîte aux lettres partagée accessible par plusieurs utilisateurs. '
-ms.openlocfilehash: a4b2e9ce53051feb07ea035adc0c959bbb1a0948
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 027236afb5a77e950083f254a154c491d6abc6ac
+ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46521028"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48341191"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>Convertir une boîte aux lettres utilisateur en boîte aux lettres partagée
 
@@ -51,48 +51,9 @@ Lorsque vous convertissez la boîte aux lettres d’un utilisateur en boîte aux
 
 4. Si la taille de la boîte aux lettres est inférieure à 50 Go, vous pouvez supprimer la [licence de l’utilisateur](../manage/remove-licenses-from-users.md)et cesser de le payer. Ne supprimez pas le compte de l’utilisateur. La boîte aux lettres partagée en a besoin en tant qu’ancre. Si vous convertissez la boîte aux lettres d’un employé qui quitte votre organisation, vous devez prendre des mesures supplémentaires pour vous assurer qu’il ne peut plus se connecter. Consultez [la rubrique supprimer un ancien employé de Microsoft 365](../add-users/remove-former-employee.md).
     
-5. Pour tout ce que vous devez savoir sur les boîtes aux lettres partagées, consultez la rubrique [à propos des boîtes aux lettres partagées](about-shared-mailboxes.md) et [créez une boîte aux lettres partagée](create-a-shared-mailbox.md).
+> [!NOTE]
+> Il n’est pas nécessaire de réinitialiser le mot de passe de l’utilisateur pendant la conversion de boîte aux lettres. Toutefois, si le mot de passe n’est pas réinitialisé, **le nom d’utilisateur et le mot de passe d’origine continuent de fonctionner** une fois la conversion de boîte aux lettres terminée.
 
-## <a name="use-the-microsoft-365-admin-center-to-convert-a-mailbox"></a>Utiliser le centre d’administration Microsoft 365 pour convertir une boîte aux lettres
-
-::: moniker range="o365-worldwide"
-
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
-
-2. Sélectionnez le nom de l’utilisateur dont vous souhaitez convertir la boîte aux lettres.
-
-3. Réinitialisez le mot de passe de l’utilisateur.
-
-   > [!NOTE]
-   > Il n’est pas nécessaire de réinitialiser le mot de passe de l’utilisateur pendant la conversion de boîte aux lettres. Toutefois, si le mot de passe n’est pas réinitialisé, **le nom d’utilisateur et le mot de passe d’origine continuent de fonctionner** une fois la conversion de boîte aux lettres terminée.
-
-4. Dans l’onglet **messagerie** , sous **autres actions**, sélectionnez **convertir en boîte aux lettres partagée**. 
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
-
-2. Sélectionnez l’utilisateur dont vous souhaitez convertir la boîte aux lettres.
-
-3. Dans le volet droit, développez **paramètres de messagerie**. En regard de **paramètres supplémentaires**, sélectionnez **convertir en boîte aux lettres partagée**.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
-
-2. Sélectionnez l’utilisateur dont vous souhaitez convertir la boîte aux lettres.
-
-3. Dans le volet droit, développez **paramètres de messagerie**. En regard de **paramètres supplémentaires**, sélectionnez **convertir en boîte aux lettres partagée**.
-
-::: moniker-end
-
-
-Si la taille de la boîte aux lettres est inférieure à 50 Go, vous pouvez [Supprimer la licence de l’utilisateur](../manage/remove-licenses-from-users.md)et cesser de le payer. Ne supprimez pas l’ancienne boîte aux lettres de l’utilisateur. La boîte aux lettres partagée en a besoin en tant qu’ancre. Si vous convertissez la boîte aux lettres d’un employé qui quitte votre organisation, vous devez prendre des mesures supplémentaires pour vous assurer qu’il ne peut plus se connecter. Consultez [la rubrique supprimer un ancien employé de Microsoft 365](../add-users/remove-former-employee.md).
-    
 Pour tout ce que vous devez savoir sur les boîtes aux lettres partagées, consultez la rubrique [à propos des boîtes aux lettres partagées](about-shared-mailboxes.md) et [créez une boîte aux lettres partagée](create-a-shared-mailbox.md).
 
 > [!NOTE]

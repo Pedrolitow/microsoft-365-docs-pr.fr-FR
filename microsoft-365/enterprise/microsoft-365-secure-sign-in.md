@@ -5,7 +5,7 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/16/2020
+ms.date: 09/30/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -15,20 +15,29 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Renforcez la sécurité des connexions de vos utilisateurs à l’aide de l’authentification multifacteur (MFA) et d’autres fonctionnalités.
-ms.openlocfilehash: 6c8f58e54ae21b4a5e1566dc72673e1d69152863
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: 2e6c564e3179d0847710e2bef071dcc9e1cdbdaf
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48132240"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327425"
 ---
 # <a name="secure-user-sign-ins-to-your-microsoft-365-tenant"></a>Connexion sécurisée des utilisateurs à votre client Microsoft 365
 
 Pour renforcer la sécurité des connexions des utilisateurs :
 
+- Utiliser Windows Hello Entreprise
 - Utilisez la protection par mot de passe Azure Active Directory (Azure AD).
 - Utilisez l’authentification multifacteur (MFA)
-- Déployez des stratégies communes pour d’identité et d’accès aux appareils
+- Déployer les configurations des identités et de l’accès aux appareils
+- Protégez-vous contre la compromission d’informations d’identification avec Azure AD protection des identités
+
+## <a name="windows-hello-for-business"></a>Windows Hello Entreprise
+
+Windows Hello Entreprise dans Windows 10 Entreprise remplace les mots de passe par une authentification à deux facteurs forte lors de la connexion à un appareil Windows. Les deux facteurs sont un nouveau type d’informations d’identification d’utilisateur qui est lié à un appareil et à un code biométrique ou PIN.
+
+Pour plus d’informations, consultez [Vue d’ensemble de Windows Hello Entreprise](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-overview).
+
 
 ## <a name="azure-ad-password-protection"></a>Protection par mot de passe Azure AD.
 
@@ -44,7 +53,7 @@ L’authentification multifacteur exige que les connexions des utilisateurs fass
 
 La première étape de l’utilisation de l’authentification multifacteur est de ***l’imposer à tous les comptes d’administrateurs***, également appelés comptes privilégiés.
 
-Une fois cette première étape effectuée, Microsoft recommande vivement l’authentification multifacteur pour tous les utilisateurs.
+Une fois cette première étape effectuée, Microsoft recommande l’authentification multifacteur pour tous les utilisateurs.
 
 En fonction de votre plan Microsoft 365, trois méthodes sont possibles pour imposer l’utilisation de l’authentification multifacteur.
 
@@ -63,7 +72,7 @@ Les utilisateurs disposent de 14 jours pour s’inscrire à l’authentificatio
 
 Les paramètres de sécurité par défaut garantissent que toutes les organisations ont un niveau de sécurité de base qui est activé par défaut pour la connexion des utilisateurs. Vous pouvez désactiver les paramètres de sécurité par défaut en faveur de l’authentification multifacteur avec des stratégies d’accès conditionnel ou pour des comptes individuels.
 
-Pour plus d’informations, voir[Vue d’ensemble des paramètres de sécurité par défaut](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults).
+Pour plus d’informations, consultez [Vue d’ensemble des paramètres de sécurité par défaut](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults).
 
 ### <a name="conditional-access-policies"></a>Stratégies d’accès conditionnel
 
@@ -77,7 +86,7 @@ Vous pouvez également utiliser les stratégies d’accès conditionnel pour des
 
 Les licences d’accès conditionnel exige Azure AD Premium P1, lesquelles sont incluses dans Microsoft 365 E3 et E5.
 
-Si vous souhaitez en savoir plus, consultez [Présentation de l’accès conditionnel](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
+Si vous souhaitez en savoir plus, consultez la [Présentation de l’accès conditionnel](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
 
 ### <a name="using-these-methods-together"></a>Utilisation combinée des méthodes
 
@@ -96,7 +105,7 @@ Ce tableau présente les résultats de l’activation de l’authentification mu
 | **Stratégies d’accès conditionnel** | Si l’une d’elles est activée, vous ne pouvez pas activer les paramètres de sécurité par défaut | Si tous ces éléments sont désactivés, vous pouvez activer les paramètres de sécurité par défaut  | Utilisateur spécifié lors de l’inscription à l’authentification multifacteur  |
 ||||
 
-## <a name="identity-and-device-access-policies"></a>Stratégies d’identité et d’accès aux appareils
+## <a name="identity-and-device-access-configurations"></a>Configurations des identités et de l’accès aux appareils
 
 Les paramètres et stratégies d’identité et d’accès aux appareils sont des fonctionnalités préalables recommandées et leurs paramètres, associés à un accès conditionnel, à Intune et à des stratégies de protection d’identité Azure AD, qui déterminent si une demande d’accès doit être accordée et dans quelles conditions. La décision se fonde sur le compte d’utilisateur utilisé pour la connexion, l’appareil utilisé, l’application utilisée par l’utilisateur pour l’accès, l’emplacement depuis lequel la demande d’accès est émise et l’évaluation du risque lié à la demande. Cela permet de s’assurer que seuls les utilisateurs et les appareils approuvés ont accès aux ressources critiques de l’entreprise.
 
@@ -114,27 +123,22 @@ Ces niveaux de protection et les configurations correspondantes apportent des ni
 
 Microsoft recommande vivement de configurer et de déployer les stratégies d’identité et d’accès aux appareils dans votre organisation, notamment des paramètres spécifiques pour Microsoft Teams, Exchange Online et SharePoint. Pour plus d’informations, voir [Configurations des identités et de l’accès aux appareils](microsoft-365-policies-configurations.md).
 
-<!--
+## <a name="azure-ad-identity-protection"></a>Azure AD Identity Protection
 
-## Let your users reset their own passwords
+Cette section explique comment configurer des stratégies de protection contre la compromission d’informations d’identification consistant pour un attaquant à déterminer le nom de compte et le mot de passe d’un utilisateur afin d’accéder aux services et données cloud d’une organisation. Azure Active Directory Identity Protection offre plusieurs méthodes pour empêcher un pirate de compromettre les informations d’identification d’un compte d’utilisateur.
 
-Self-Service Password Reset (SSPR) enables users to reset their own passwords without impacting IT staff. Users can quickly reset their passwords at any time and from any place. Watch [this video](https://go.microsoft.com/fwlink/?linkid=2128524) to set up SSPR.
+Azure AD Identity Protection vous permet de :
 
-## Sign in to SaaS apps with Azure AD
+|Fonctionnalité|Description|
+|:---------|:---------|
+| déterminer et résoudre les vulnérabilités potentielles dans les identités de votre organisation ; | Azure AD utilise le Machine Learning pour détecter les anomalies et les activités suspectes, telles que les connexions et les activités post-connexion. Grâce à ces données, Azure AD Identity Protection génère des rapports et des alertes qui vous permettent d’évaluer les problèmes et de prendre des mesures.|
+|Détecter des actions douteuses qui sont liées aux identités de votre organisation et y répondre automatiquement|Vous pouvez configurer des stratégies qui répondent automatiquement aux problèmes détectés lorsqu’un niveau de risque spécifié est atteint. Outre les autres contrôles d’accès conditionnel fournis par Azure AD et Microsoft Intune, ces stratégies peuvent automatiquement bloquer l’accès ou prendre des mesures correctives, qui incluent des réinitialisations de mot de passe et impliquent une authentification multifacteur Azure pour les connexions suivantes. |
+| Examiner les incidents suspects et les résoudre avec des actions d’administration | Vous pouvez examiner des événements à risque en utilisant les informations sur l’incident de sécurité. Des flux de travail de base sont disponibles pour effectuer le suivi des enquêtes et lancer des actions de correction, telles que des réinitialisations du mot de passe. |
+|||
 
-In addition to providing cloud authentication for users, Azure AD can also be your central way to secure all your apps, whether they’re on-premises, in Microsoft’s cloud, or in another cloud. By [integrating your apps into Azure AD](https://docs.microsoft.com/azure/active-directory/manage-apps/plan-an-application-integration), you can make it easy for your users to discover the applications they need and sign into them securely.
+[Plus d’informations sur Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection).
 
-## Results of deployment of secure sign-ins
-
-After deployment of MFA, your users:
-
-- Are required to use MFA for sign-ins.
-- Have completed the MFA registration process and are using MFA for all sign-ins.
-- Can use SSPR to reset their own passwords.
-
-- [Plan an Azure AD self-service password reset deployment](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-deployment)
-
---> 
+Reportez-vous à la rubrique des [étapes pour activer Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-enable).
 
 ## <a name="admin-technical-resources-for-mfa-and-secure-sign-ins"></a>Ressources techniques pour l’administrateur pour l’authentification multifacteur et la connexion sécurisée
 
@@ -144,3 +148,6 @@ After deployment of MFA, your users:
 - [Configurer la stratégie d’inscription pour l'authentification multifacteur Azure](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
 - [Configurations des identités et de l’accès aux appareils](microsoft-365-policies-configurations.md)
 
+## <a name="next-step"></a>Étape suivante
+
+[Gérez les comptes d’utilisateurs](manage-microsoft-365-accounts.md)
