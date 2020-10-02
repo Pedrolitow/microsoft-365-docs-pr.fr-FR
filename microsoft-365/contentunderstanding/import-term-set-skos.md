@@ -1,6 +1,6 @@
 ---
-title: Importer un ensemble de termes à l’aide d’un format basé sur SKOS
-description: Découvrez comment importer un ensemble de termes à l’aide d’un format basé sur SKOS
+title: Importer un ensemble de termes avec un format SKOS
+description: Découvrez comment importer un ensemble de termes avec un format SKOS
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -9,43 +9,42 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.service: ''
 search.appverid: ''
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: aaed88463f690853672780b48a8ee3857a956847
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
-ms.translationtype: MT
+localization_priority: Priority
+ms.openlocfilehash: 318497b8b1815b281eff7d781820616c9be9d5ed
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295892"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48321240"
 ---
-# <a name="import-a-term-set-using-a-skos-based-format"></a>Importer un ensemble de termes à l’aide d’un format basé sur SKOS
+# <a name="import-a-term-set-using-a-skos-based-format"></a>Importer un ensemble de termes avec un format SKOS
 
-Vous pouvez importer un ensemble de termes à l’aide d’un format SKOS. Pour plus d’informations sur le format, reportez-vous à la rubrique [référence de format SKOS taxonomie SharePoint](skos-format-reference.md).
+Importer un ensemble de termes avec un format basé sur SKOS. Si vous souhaitez en savoir plus sur le format, veuillez consulter la rubrique [Référence de format SKOS pour la taxonomie SharePoint](skos-format-reference.md).
 
-Nous vous recommandons de conserver vos fichiers d’importation à moins de 20 000 termes. Les fichiers plus volumineux peuvent augmenter le temps de validation et d’importation.
+Nous vous recommandons d’inclure moins de 20 000 termes dans vos fichiers d’importation. Les fichiers plus volumineux peuvent augmenter le temps de validation et d’importation.
 
-1. Dans le centre d’administration SharePoint, développez **services de contenu**, puis cliquez sur **magasin de termes**.
+1. Dans le Centre d’administration SharePoint, développez **Services de contenu**, puis cliquez sur **Magasin de termes**.
 
-2. Sélectionnez le groupe de termes dans lequel vous souhaitez importer l’ensemble de termes.
+2. Sélectionnez le groupe de termes où vous souhaitez importer l’ensemble de termes.
 
-3. Dans la barre de commandes, cliquez sur **importer l’ensemble de termes**.
+3. Dans la barre de commandes, cliquez sur **Importer l’ensemble de termes**.
  
-4.  Si vous souhaitez télécharger un exemple de fichier à utiliser en tant que modèle, cliquez sur **Sample-Metadata. TTL** pour obtenir un exemple de fichier qui utilise le format SKOS.
+4.  Si vous voulez télécharger un fichier échantillon à utiliser en tant que modèle, cliquez sur **sample-metadata.ttl** pour obtenir un exemple de fichier qui utilise le format SKOS.
  
-5.  Créez le fichier d’importation contenant les ensembles de termes & termes que vous souhaitez importer.
+5.  Créez le fichier d’importation contenant les ensembles de termes et les termes à importer.
 
-6.  Sous **format de fichier**, sélectionnez **SKOS (*. TTL)**.
+6.  Sous **Format de fichier**, sélectionnez **SKOS (*.ttl)**.
 
-7.  Cliquez sur **Parcourir** , puis accédez à votre fichier d’importation et ajoutez-le.
+7.  Cliquez sur **Parcourir**, puis ajoutez votre fichier d’importation.
 
-8.  Cliquez sur **Importer**. Ne fermez pas le panneau tant que l’importation n’est pas terminée.
+8.  Cliquez sur **Importer**. Ne fermez le panneau qu’une fois l’importation terminée.
 
-Lors de l’importation réussie du fichier, un message de réussite s’affiche et le magasin de termes est actualisé et vous pouvez accéder aux nouveaux ensembles de termes.
+Une fois le fichier correctement importé, un message de réussite s’affiche, puis le magasin de termes est actualisé. Vous pouvez alors accéder aux nouveaux ensembles de termes récemment créés.
 
 ## <a name="see-also"></a>Voir aussi
 
 [Présentation des métadonnées gérées](https://docs.microsoft.com/sharepoint/managed-metadata)
 
-[Présentation de l’explication des documents](document-understanding-overview.md)
+[Présentation de la compréhension de document](document-understanding-overview.md)
 
-[Importer des ensembles de termes (niveau site)](https://support.microsoft.com/office/168fbc86-7fce-4288-9a1f-b83fc3921c18)
+[Importer des ensembles de termes (niveau du site)](https://support.microsoft.com/office/168fbc86-7fce-4288-9a1f-b83fc3921c18)

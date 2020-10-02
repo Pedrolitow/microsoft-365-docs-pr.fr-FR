@@ -1,53 +1,49 @@
 ---
-title: En savoir plus sur les modèles de présentation des documents via le modèle d’exemple
+title: En savoir plus sur les modèles de présentation des documents via le modèle d’échantillon
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 10/1/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
-description: En savoir plus sur les modèles de présentation des documents via le modèle d’exemple
-ms.openlocfilehash: c27d50df69c2555b1720e3e919f786076ab1e3fb
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
-ms.translationtype: MT
+localization_priority: Priority
+description: En savoir plus sur les modèles de présentation des documents via le modèle d’échantillon
+ms.openlocfilehash: 75e17c8075fa381c68b6f85e0dfbe96e5d2ad557
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295907"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48321264"
 ---
-# <a name="learn-about-document-understanding-models-through-a-sample-model"></a>En savoir plus sur les modèles de présentation des documents via un exemple de modèle
+# <a name="learn-about-document-understanding-models-through-a-sample-model"></a>En savoir plus sur les modèles de présentation des documents via un modèle d’échantillon
 
-Microsoft SharePoint Syntex fournit un exemple de modèle que vous pouvez utiliser pour examiner, ce qui vous permet de mieux comprendre comment créer vos propres modèles. Le modèle d’exemple vous permet également d’examiner des composants de modèle, tels que son classifieur, ses extracteurs et ses explications. Vous pouvez également utiliser les fichiers d’exemple pour former le modèle.
+Microsoft SharePoint Syntex offre un exemple de modèle permettant de mieux comprendre comment créer vos propres modèles. Ce modèle d’échantillon vous permet également d’examiner les composants du modèle, tels que son classifieur, ses extracteurs et ses explications. Vous pouvez également utiliser les fichiers échantillons pour former le modèle.
 
-## <a name="import-the-sample-model"></a>Importer le modèle d’exemple
+## <a name="import-the-sample-model"></a>Importer le modèle d’échantillon
 
-Pour accéder au modèle d’exemple, vous devez d’abord importer le modèle dans votre centre de contenu.
+Avant d’accéder au modèle d’échantillon, vous devez l’importer dans votre centre de contenu.
 
-1. Dans le centre de contenu, sélectionnez **modèles** pour afficher votre liste de modèles.</br>
-2. Sur la page **modèles** , sélectionnez **Importer un exemple de modèle**.</br>
+1. Dans le centre de contenu, sélectionnez **Modèles** pour afficher votre liste de modèles.</br>
+2. Dans la page **Modèles**, sélectionnez **Importer un modèle d’échantillon**.</br>
 
-    ![Importer un exemple de modèle](../media/content-understanding/import-sample-model.png) </br>
+    ![Importer un modèle d’échantillon](../media/content-understanding/import-sample-model.png) </br>
 
-3. Recherchez l’exemple de modèle intitulé *BenefitsChangeNotice. classifieur* qui apparaît dans la liste des modèles.</br>
+3. Une fois l’importation terminée, la page d’accueil du modèle **BenefitsChangeNotice** s’ouvre. Si vous devez ouvrir le modèle d’échantillon ultérieurement, vous pouvez, pour cela, utiliser la liste des modèles dans le centre de contenu. </br>
 
-    ![Exemple de modèle](../media/content-understanding/sample-model.png) </br>
+     ![Page d'accueil Échantillon](../media/content-understanding/sample-home-page.png)</br>
 
-4. Sélectionnez le *BenefitsChangeNotice. classifieur*pour ouvrir la page d’accueil du modèle.</br>
-  
-     ![Exemple de page d’accueil](../media/content-understanding/sample-home-page.png)
+Vous ne pouvez pas seulement examiner et analyser le modèle d’échantillon pour mieux comprendre sa structure. Il sert également, en tant que modèle de travail, à effectuer des actions comme :
 
-5. À partir de la page d’accueil du modèle, examinez le modèle plus en détail pour voir comment il a été créé.
- 
-- Affichez les fichiers d’exemple utilisés pour former le modèle.
-- Examinez plus en détail les extracteurs d’entités du modèle pour voir comment l’exemple de modèle a configuré les explications.
+- Ajouter un autre extracteur. Par exemple, ajoutez-en un qui extrait les *taux d’escompte*.
+- Appliquez le modèle à une bibliothèque de documents, puis chargez certains fichiers de formation vers celle-ci. Vous saurez ainsi comment le modèle classe les fichiers et en extrait les données.
 
-   ![Exemples d’extracteurs de modèles](../media/content-understanding/entity-extractors.png)  
 
 ## <a name="see-also"></a>Voir aussi
-[Créer un classifieur](create-a-classifier.md)</br>
-[Créer un extracteur](create-an-extractor.md)</br>
-[Présentation de l’explication des documents](document-understanding-overview.md)</br>
+[Créer un classifieur](create-a-classifier.md)
+
+[Créer un extracteur](create-an-extractor.md)
+
+[Présentation de la compréhension de document](document-understanding-overview.md)
+
 [Créer un modèle de traitement de formulaire](create-a-form-processing-model.md)  
