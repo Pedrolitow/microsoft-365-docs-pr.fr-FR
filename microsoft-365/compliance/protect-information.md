@@ -13,14 +13,16 @@ localization_priority: High
 search.appverid:
 - MOE150
 - MET150
+- m365solution-mip
+- m365initiative-compliance
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: Implémentez les fonctionnalités Microsoft information protection (MIP) à l’aide de la conformité Microsoft 365 pour vous aider à découvrir, classer et protéger les informations sensibles partout où elles se trouvent.
-ms.openlocfilehash: 66938804a119022b6b44664ecd8f040e3c56123f
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: b421cf0b81c5ad52282302626b93064f9cd83ce8
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295466"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338349"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft information protection dans Microsoft 365
 

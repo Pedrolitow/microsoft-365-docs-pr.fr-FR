@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 3fc563c762e7cd00888665b63e66159e4d3d9612
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 6d627dcf3d6ec8ca1d2aa76eab484361c25b529e
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196976"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338416"
 ---
 # <a name="fileprofile"></a>FileProfile()
 
@@ -46,11 +46,11 @@ La `FileProfile()` fonction est une fonction d’enrichissement dans la [chasse 
 | Signataire | string | Informations sur le signataire du fichier |
 | Issuer | string | Informations sur l’autorité de certification émettrice |
 | SignerHash | string | Valeur de hachage unique identifiant le signataire |
-| IsCertificateValid | booléen | Si le certificat utilisé pour signer le fichier est valide |
-| IsRootSignerMicrosoft | booléen | Indique si le signataire du certificat racine est Microsoft |
-| IsExecutable | booléen | Indique si le fichier est un fichier exécutable portable (PE) |
+| IsCertificateValid | valeur booléenne | Si le certificat utilisé pour signer le fichier est valide |
+| IsRootSignerMicrosoft | valeur booléenne | Indique si le signataire du certificat racine est Microsoft |
+| IsExecutable | valeur booléenne | Indique si le fichier est un fichier exécutable portable (PE) |
 | ThreatName | string | Nom de détection pour tout programme malveillant ou autre menace détectée |
-| Publisher | string | Nom de l’organisation qui a publié le fichier |
+| Éditeur | string | Nom de l’organisation qui a publié le fichier |
 | SoftwareName | string | Nom du produit logiciel |
 
 ## <a name="syntax"></a>Syntaxe
@@ -61,8 +61,8 @@ invoke FileProfile(x,y)
 
 ## <a name="arguments"></a>Arguments
 
-- **x** — colonne ID de fichier à utiliser : `SHA1` , `SHA256` , `InitiatingProcessSHA1` ou ; la `InitiatingProcessSHA256` fonction utilise `SHA1` si elle n’est pas spécifiée
-- **y** : limiter le nombre d’enregistrements à enrichir, 1-1000 ; la fonction utilise 100 si elle n’est pas spécifiée
+- **x**— colonne d’ID de fichier à utiliser : `SHA1` , `SHA256` , `InitiatingProcessSHA1` , ou `InitiatingProcessSHA256` ; la fonction est utilisée `SHA1` si elle n’est pas spécifiée
+- **y**: limiter le nombre d’enregistrements à enrichir, 1-1000 ; la fonction utilise 100 si elle n’est pas spécifiée
 
 ## <a name="examples"></a>Exemples
 

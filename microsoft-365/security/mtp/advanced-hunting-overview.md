@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9b7e20daa3a5d642a864f9b24e836d3c75bbd7b1
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 8e586050465464def02c7787a5fb218b0b6071c7
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199852"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338460"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>Repérage proactive de menaces avec repérage avancé dans la Protection Microsoft contre les menaces
 
@@ -40,17 +40,24 @@ Le repérage avancé est un outil de repérage de menaces basé sur des requête
 
 Vous pouvez utiliser les mêmes requêtes de repérage de menaces pour créer des règles de détection personnalisées. Ces règles s’exécutent automatiquement pour vérifier, puis répondre à une activité de violation présumée, des ordinateurs mal configurés et d’autres résultats.
 
-Cette fonctionnalité est similaire à la [chasse avancée dans Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview). Disponible dans le centre de sécurité Microsoft 365, cette fonctionnalité prend en charge les requêtes qui vérifient un ensemble de données plus large à partir de Microsoft Defender ATP, Office 365 ATP, Microsoft Cloud App Security et Azure ATP. Pour utiliser le repérage avancé, [activez Protection Microsoft contre les menaces](mtp-enable.md).
+Cette fonctionnalité est similaire à la [chasse avancée dans Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview). Disponible dans le centre de sécurité Microsoft 365, cette fonctionnalité prend en charge les requêtes qui vérifient un ensemble de données plus large à partir des éléments suivants :
+
+- Microsoft Defender – Protection avancée contre les menaces
+- Office 365 – Protection avancée contre les menaces
+- Microsoft Cloud App Security
+- Azure Advanced Threat Protection
+
+Pour utiliser le repérage avancé, [activez Protection Microsoft contre les menaces](mtp-enable.md).
 
 ## <a name="get-started-with-advanced-hunting"></a>Prise en main du repérage avancé
 
-Nous vous recommandons de suivre plusieurs étapes pour devenir rapidement opérationnel avec le repérage avancé.
+Nous vous recommandons de suivre plusieurs étapes pour commencer rapidement à utiliser la chasse avancée.
 
 | Objectif d’apprentissage | Description | Ressource |
 |--|--|--|
 | **En savoir plus sur la langue** | La chasse avancée est basée sur le [langage de requête Kusto](https://docs.microsoft.com/azure/kusto/query/), qui prend en charge les mêmes syntaxe et opérateurs. Commencez à découvrir le langage de requête en exécutant votre première requête. | [Vue d'ensemble du language de requête](advanced-hunting-query-language.md) |
 | **En savoir plus sur l’utilisation des résultats de la requête** | Découvrez les graphiques et les différentes façons d’afficher ou d’exporter les résultats. Découvrez comment affiner rapidement les requêtes, extraire des informations plus riches et prendre des mesures de réponse. | - [Utiliser les résultats de la requête](advanced-hunting-query-results.md)<br>- [Effectuer une action sur les résultats de la requête](advanced-hunting-take-action.md) |
-| **Comprendre le schéma** | Obtenez une compréhension optimale des tableaux du schéma et de leurs colonnes. Découvrez où rechercher des données lors de la construction de vos requêtes. | [Référence de schéma](advanced-hunting-schema-tables.md) |
+| **Comprendre le schéma** | Obtenez une compréhension optimale des tableaux du schéma et de leurs colonnes. Découvrez où rechercher des données lors de la construction de vos requêtes. | - [Référence du schéma](advanced-hunting-schema-tables.md)<br>- [Transition de Microsoft Defender ATP](advanced-hunting-migrate-from-mdatp.md) |
 | **Obtenir des conseils et des exemples d’experts** | Formation gratuite aux guides des experts Microsoft. Explorez les collections de requêtes prédéfinies couvrant différents scénarios de repérage de menaces. | - [Obtenir une formation expert](advanced-hunting-expert-training.md)<br>- [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)<br>- [Aller-retour](advanced-hunting-go-hunt.md)<br>- [Recherche de menaces sur les appareils, les e-mails, les applications et les identités](advanced-hunting-query-emails-devices.md) |
 | **Optimiser les requêtes et gérer les erreurs** | Découvrez comment créer des requêtes efficaces et sans erreur. | - [Meilleures pratiques en matière de requêtes](advanced-hunting-best-practices.md)<br>- [Gérer les erreurs](advanced-hunting-errors.md) |
 | **Créer des règles de détection personnalisées** | Découvrez comment utiliser les requêtes de chasse avancées pour déclencher des alertes et effectuer des actions de réponse automatiquement. | - [Vue d’ensemble des détections personnalisées](custom-detections-overview.md)<br>- [Règles de détection personnalisées](custom-detection-rules.md) |
@@ -62,7 +69,7 @@ Pour utiliser la chasse avancée ou d’autres fonctionnalités de [protection c
 Les données de chasse avancées peuvent être classées en deux types distincts, chacune étant consolidée différemment.
 
 - **Données d’événement ou d’activité**: renseigne des tableaux sur les alertes, les événements de sécurité, les événements système et les évaluations de routine. La chasse avancée reçoit ces données presque immédiatement après que les capteurs qui les recueillent les transmettent aux services Cloud correspondants. Par exemple, vous pouvez interroger des données d’événement à partir de capteurs sains sur des stations de travail ou des contrôleurs de domaine presque immédiatement après qu’ils sont disponibles sur Microsoft Defender ATP et Azure ATP.
-- **Données d’entité**: remplit des tables avec des informations consolidées sur les utilisateurs et les appareils. Ces données proviennent de sources de données relativement statiques et de sources dynamiques, telles que les entrées et les journaux des événements Active Directory. Pour fournir des données actualisées, les tableaux sont mis à jour avec les nouvelles informations toutes les 15 minutes, ajoutant des lignes qui ne sont peut-être pas entièrement renseignées. Toutes les 24 heures, les données sont consolidées pour insérer un enregistrement qui contient le jeu de données le plus complet et le plus complet sur chaque entité.
+- **Données d’entité**: renseigne des tables avec des informations sur les utilisateurs et les appareils. Ces données proviennent de sources de données relativement statiques et de sources dynamiques, telles que les entrées et les journaux des événements Active Directory. Pour fournir des données actualisées, les tableaux sont mis à jour avec les nouvelles informations toutes les 15 minutes, ajoutant des lignes qui ne sont peut-être pas entièrement renseignées. Toutes les 24 heures, les données sont consolidées pour insérer un enregistrement qui contient le jeu de données le plus complet et le plus complet sur chaque entité.
 
 ## <a name="time-zone"></a>Fuseau horaire
 Les informations de temps dans la chasse avancée se trouvent dans le fuseau horaire UTC.

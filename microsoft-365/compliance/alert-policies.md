@@ -19,12 +19,12 @@ ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 ms.custom:
 - seo-marvel-apr2020
 description: Créez des stratégies d’alerte dans le centre de sécurité et conformité dans Office 365 et Microsoft 365 pour surveiller les menaces potentielles, les pertes de données et les problèmes d’autorisations.
-ms.openlocfilehash: 4b12457b051b19aa1eaca0d92b342ab8a7b34134
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 9f05fe464b4945d739c5920282e45e07f9fcb344
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200583"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338427"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>Stratégies d’alerte dans le Centre de sécurité et de conformité
 
@@ -109,10 +109,11 @@ Le tableau suivant répertorie et décrit les stratégies d’alerte par défaut
 
 Le tableau indique également la planification Office 365 entreprise et Office 365 pour le gouvernement américain requis pour chacune d’entre elles. Certaines stratégies d’alerte par défaut sont disponibles si votre organisation dispose de l’abonnement de module complémentaire approprié en plus d’un abonnement E1/F1/G1 ou E3/G3.
 
-|**Stratégie d’alerte par défaut**|**Description**|**Category**|**Abonnement entreprise Office 365**|
+| Stratégie d’alerte par défaut | Description | Catégorie | Abonnement entreprise Office 365 |
 |:-----|:-----|:-----|:-----|
 |**Un clic d’URL potentiellement malveillant a été détecté**|Génère une alerte lorsqu’un utilisateur protégé par [Office 365 les liens approuvés ATP](../security/office-365-security/atp-safe-links.md) dans votre organisation clique sur un lien malveillant. Cet événement est déclenché lorsque les modifications de verdict d’URL sont identifiées par Office 365 ATP ou lorsque les utilisateurs remplacent les pages de liens approuvés Office 365 ATP (en fonction de la stratégie de liens fiables DAV de Microsoft 365 pour entreprise). Cette stratégie d’alerte a un paramètre de gravité **élevée** . Pour les clients Office 365 ATP P2, E5, G5, cette alerte déclenche automatiquement une [enquête et une réponse automatiques dans office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air). Pour plus d’informations sur les événements qui déclenchent cette alerte, consultez la rubrique [set up Office 365 ATP Safe Links Policies](../security/office-365-security/set-up-atp-safe-links-policies.md).|Gestion des menaces|Ajout d’un abonnement de complément P2 à l’ATP P2/G5 ou à Office 365|
 |**Résultat de l’envoi de l’administrateur terminé**|Génère une alerte lorsqu’un [dépôt administrateur](../security/office-365-security/admin-submission.md) termine la nouvelle analyse de l’entité soumise. Une alerte est déclenchée chaque fois qu’un résultat de nouvelle analyse est affiché à partir d’une soumission de l’administrateur. Ces alertes sont destinées à vous rappeler d' [examiner les résultats des envois précédents](https://protection.office.com/reportsubmission), de soumettre les messages signalés par l’utilisateur pour obtenir les dernières vérifications de stratégie et de réanalyser les verdicts, et vous aider à déterminer si les stratégies de filtrage de votre organisation ont l’impact escompté. Cette stratégie a un paramètre de gravité **faible** .|Gestion des menaces|E1/F1, E3 ou E5|
+|**Enquête manuelle déclenchée par l’administrateur du courrier électronique**|Génère une alerte lorsqu’un administrateur déclenche l’enquête manuelle d’un e-mail à partir de l’Explorateur de menaces. Pour plus d’informations, reportez-vous à [exemple : un administrateur de sécurité déclenche une enquête à partir de l’Explorateur de menaces] ( https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-security-administrator-triggers-an-investigation-from-threat-explorer) . Cette alerte informe votre organisation que l’enquête a été lancée. L’alerte fournit des informations sur ce qui a été déclenché et inclut un lien vers l’enquête. Cette stratégie a un paramètre de gravité d' **information** .|Gestion des menaces| Ajout d’un abonnement de complément P2 à l’ATP P2/G5 ou à Office 365| 
 |**Création d’une règle de transfert/redirection**|Génère une alerte lorsqu’une personne de votre organisation crée une règle de boîte de réception pour sa boîte aux lettres qui transfère ou redirige les messages vers un autre compte de messagerie. Cette stratégie effectue uniquement le suivi des règles de boîte de réception créées à l’aide d’Outlook sur le Web (anciennement Outlook Web App) ou Exchange Online PowerShell. Cette stratégie a un paramètre de gravité **faible** . Pour plus d’informations sur l’utilisation des règles de boîte de réception pour transférer et rediriger le courrier électronique dans Outlook sur le Web, consultez [la rubrique utiliser des règles dans Outlook sur le Web pour transférer automatiquement des messages vers un autre compte](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed).|Gestion des menaces|E1/F1/G1, E3/G3 ou E5/G5|
 |**recherche de découverte électronique démarrée ou exportée**|Génère une alerte lorsqu’un utilisateur utilise l’outil de recherche de contenu dans le centre de sécurité et de conformité. Une alerte est déclenchée lorsque les activités de recherche de contenu suivantes sont effectuées : <br/><br/>* Une recherche de contenu est démarrée<br/>* Les résultats d’une recherche de contenu sont exportés<br/>* Un rapport de recherche de contenu est exporté<br/><br/>Des alertes sont également déclenchées lorsque les activités de recherche de contenu précédentes sont effectuées en association avec un cas de découverte électronique. Cette stratégie a un paramètre de gravité **moyenne** . Pour plus d’informations sur les activités de recherche de contenu, voir [Search for eDiscovery Activities dans le journal d’audit](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-activities).|Gestion des menaces|E1/F1/G1, E3/G3 ou E5/G5|
 |**Élévation des privilèges d’administrateur Exchange**|Génère une alerte lorsqu’un utilisateur se voit attribuer des autorisations d’administration dans votre organisation Exchange Online. Par exemple, lorsqu’un utilisateur est ajouté au groupe de rôles gestion de l’organisation dans Exchange Online. Cette stratégie a un paramètre de gravité **faible** .|Autorisations|E1/F1/G1, E3/G3 ou E5/G5|
@@ -205,7 +206,7 @@ Le tableau suivant répertorie les rôles requis pour afficher les alertes des s
 
 Pour voir la catégorie affectée à une stratégie d’alerte par défaut, consultez le tableau de la section [stratégies d’alerte par défaut](#default-alert-policies) .
 
-|Rôle|Gouvernance des informations|Protection contre la perte de données|Flux de messagerie|Autorisations|Gestion des menaces|Autres|
+|Role|Gouvernance des informations|Protection contre la perte de données|Flux de messagerie|Autorisations|Gestion des menaces|Autres|
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |Journaux d’audit|||||||
 |Gestion des cas|||||||
@@ -238,17 +239,18 @@ Pour voir la catégorie affectée à une stratégie d’alerte par défaut, cons
 |Gestion de la rétention en affichage seul|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
 |||||||
 
-**Conseil :** Pour afficher les rôles affectés à chacun des groupes de rôles par défaut, exécutez les commandes suivantes dans sécurité & Centre de conformité PowerShell :
-
-```PowerShell
-$RoleGroups = Get-RoleGroup
-```
-
-```PowerShell
-$RoleGroups | foreach {Write-Output -InputObject `r`n,$_.Name,"-----------------------"; Get-RoleGroup $_.Identity | Select-Object -ExpandProperty Roles}
-```
-
-Vous pouvez également afficher les rôles attribués à un groupe de rôles dans le centre de sécurité & conformité. Accédez à la page **autorisations** et sélectionnez un groupe de rôles. Les rôles attribués sont répertoriés sur la page de menu volant.
+> [!TIP]
+> Pour afficher les rôles affectés à chacun des groupes de rôles par défaut, exécutez les commandes suivantes dans sécurité & Centre de conformité PowerShell :
+> 
+> ```powershell
+> $RoleGroups = Get-RoleGroup
+> ```
+> 
+> ```powershell
+> $RoleGroups | foreach {Write-Output -InputObject `r`n,$_.Name,"-----------------------"; Get-RoleGroup $_.Identity | Select-Object -ExpandProperty Roles}
+> ```
+> 
+> Vous pouvez également afficher les rôles attribués à un groupe de rôles dans le centre de sécurité & conformité. Accédez à la page **autorisations** et sélectionnez un groupe de rôles. Les rôles attribués sont répertoriés sur la page de menu volant.
 
 ## <a name="managing-alerts"></a>Gestion des alertes
 
