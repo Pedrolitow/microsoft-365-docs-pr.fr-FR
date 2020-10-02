@@ -1,7 +1,7 @@
 ---
 title: Utiliser les informations
 description: ''
-keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 6b19c5cd1766c07e106897cefeb495f1b98bb548
-ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
+ms.openlocfilehash: b3ed56dd3e669dbd5a2c3f09d87dfd87fe680aff
+ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48104387"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48337180"
 ---
 # <a name="work-with-insights"></a>Utiliser les informations
 
@@ -31,9 +31,9 @@ Ces tableaux de bord vous permettent de trouver les réponses aux questions suiv
 - Quel est l’état actuel des mises à jour de sécurité sur les appareils ?
 - Combien de temps faut-il pour 95% des appareils pour obtenir la dernière mise à jour de sécurité ?
 
-Pour accéder à ces affichages à partir du [Microsoft Endopint Manager](https://endpoint.microsoft.com/), nvaigate à l’onglet bureau géré Microsoft de la page d’accueil et sélectionnez **afficher les détails** dans la zone **rapports** :
+Pour accéder à ces vues à partir du [Gestionnaire de points de terminaison Microsoft](https://endpoint.microsoft.com/), accédez à l’onglet bureau géré Microsoft de la page d’accueil et sélectionnez **afficher les détails** dans la zone **rapports** :
 
-<!--Update picture to show in MEM [Admin center with Reports area in the upper right including the device reports card and the "view details" link.](../../media/insights_overview.png)-->!
+<!--Update picture to show in MEM [Admin center with Reports area in the upper right including the device reports card and the "view details" link.](../../media/insights_overview.png)-->
 
 
 ## <a name="usage-insights"></a>Informations d’utilisation
@@ -54,7 +54,6 @@ Cette vue présente des informations sur la consommation d’énergie des applic
 En savoir plus sur les informations sur les [batteries](battery-insights.md).
 
 ## <a name="windows-security-update-insights"></a>Perspectives sur la mise à jour de sécurité Windows
-
-Cet affichage vous montre des informations sur l’état des mises à jour de sécurité pour vos appareils de bureau gérés par Microsoft. Pour afficher ces informations, sélectionnez l’onglet **Windows Security udates** .
+Cet affichage vous montre des informations sur l’état des mises à jour de sécurité pour vos appareils de bureau gérés par Microsoft. Pour afficher ces informations, sélectionnez l’onglet **mises à jour de sécurité Windows** .
 
 En savoir plus sur les informations sur les [mises à jour de sécurité](security-update-insights.md).

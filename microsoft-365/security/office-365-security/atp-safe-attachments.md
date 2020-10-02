@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur la fonctionnalité de pièces jointes fiables dans Office 365 Advanced Threat Protection (ATP).
-ms.openlocfilehash: 6ff356f34f3e44752b5ad7f5fa433a8c72cd5083
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: c3dd64ce6f1d50cf30dfcc33f17021904791912c
+ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48326530"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48337204"
 ---
 # <a name="safe-attachments-in-office-365-atp"></a>Pièces jointes fiables dans Office 365 ATP
 
@@ -108,9 +108,7 @@ Voici quelques éléments à prendre en compte pour la remise et les messages tr
 
 - Si le destinataire transféré n’est pas protégé par une stratégie de pièces jointes fiables, le message et les pièces jointes seront remis sans les espaces réservés de pièces jointes ou d’analyse de pièces jointes fiables.
 
-## <a name="scenarios-where-safe-attachments-doesnt-scan-messages"></a>Scénarios dans lesquels les pièces jointes fiables n’analysent pas les messages
-
-Il existe des scénarios dans lesquels les pièces jointes fiables ne peuvent pas analyser les messages :
+Il existe des scénarios dans lesquels la remise dynamique ne peut pas remplacer les pièces jointes dans les messages. Ces différents cas de figure sont présentés ci-dessous :
 
 - Messages dans les dossiers publics.
 
@@ -126,7 +124,7 @@ Il existe des scénarios dans lesquels les pièces jointes fiables ne peuvent pa
 
 - [S/MIME)](s-mime-for-message-signing-and-encryption.md) messages chiffrés.
 
-- Vous avez configuré l’action de remise dynamique dans une stratégie de pièces jointes fiables, mais le destinataire ne prend pas en charge la remise dynamique (par exemple, le destinataire est une boîte aux lettres dans une organisation Exchange locale). Toutefois, les [liens fiables dans office 365 ATP](set-up-atp-safe-links-policies.md) peuvent analyser les pièces jointes des fichiers Office qui contiennent des URL (en fonction de la configuration des liens fiables).
+- Vous avez configuré l’action de remise dynamique dans une stratégie de pièces jointes fiables, mais le destinataire ne prend pas en charge la remise dynamique (par exemple, le destinataire est une boîte aux lettres dans une organisation Exchange locale). Toutefois, les [liens fiables dans office 365 ATP](set-up-atp-safe-links-policies.md) peuvent analyser les pièces jointes des fichiers Office qui contiennent des URL (en fonction de la configuration [des paramètres globaux des liens fiables](configure-global-settings-for-safe-links.md) ).
 
 ## <a name="submitting-files-for-malware-analysis"></a>Envoi de fichiers pour l’analyse contre les programmes malveillants
 

@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: Créer un modèle de traitement de formulaire dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: df8a8bc5828c0235ecb18387fe753d77f0856eec
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: 27e80a7b3626170e45ceaa55f1269e50d8fdab9e
+ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48321820"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48337264"
 ---
 # <a name="create-a-form-processing-model-in-microsoft-sharepoint-syntex"></a>Créer un modèle de traitement de formulaire dans Microsoft SharePoint Syntex
 
@@ -30,6 +30,13 @@ Pour créer un modèle de traitement de formulaire, vous devez suivre les étape
  - Étape 6 : utiliser votre modèle
 
 ## <a name="requirements"></a>Conditions préalables
+
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GnhN]  
+
+</br>
+
 
 Vous pouvez créer un modèle de traitement de formulaire uniquement dans les bibliothèques de documents SharePoint pour lesquelles il est activé. Si le traitement de formulaire est activé, vous pouvez voir le **AI Builder** **« Créer un modèle de traitement de formulaire »** dans le menu **Automatiser** de votre bibliothèque de documents.  Si vous souhaitez que le traitement soit activé sur votre bibliothèque de documents, vous devez contacter votre administrateur SharePoint.
 

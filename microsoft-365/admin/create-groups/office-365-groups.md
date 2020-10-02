@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez les groupes Microsoft 365.
-ms.openlocfilehash: 711ab7e7818b266d7cbdbe076e30355d29bc3eeb
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 5d85204687641e74f9a705162df01cebd7eeee26
+ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307264"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48337168"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>Présentation des Groupes Microsoft 365 pour les administrateurs
 
@@ -76,7 +76,7 @@ Les limites suivantes s’appliquent aux groupes Microsoft 365 :
 |Groups a user can create|250|
 |Groupes qu’un administrateur peut créer|Nombre maximal de 500 000 par défaut pour le client|
 |Nombre de membres|Plus de 1 000, même si seulement 1 000 peut accéder aux conversations de groupe simultanément. <br>Les utilisateurs peuvent remarquer des retards lors de l’accès au calendrier et aux conversations dans des groupes très volumineux dans Outlook.|
-|Nombre de groupes dont un utilisateur peut être membre|1,000|
+|Nombre de groupes dont un utilisateur peut être membre|7 000|
 |Stockage de fichiers|1 téraoctet + 10 Go par utilisateur abonné + tout stockage supplémentaire acheté. Vous pouvez acheter une quantité illimitée de stockage supplémentaire.|
 |Taille de la boîte aux lettres de groupe|50 Go|
 
