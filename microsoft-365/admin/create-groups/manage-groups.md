@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Apprenez à gérer les groupes Microsoft 365, notamment l’ajout de supprimer des membres du groupe, la modification de l’adresse de messagerie, du nom de groupe ou de la description et la personnalisation du fonctionnement du groupe.
-ms.openlocfilehash: 26c6c064e454351366c326e665bacdcc9bb855fb
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 29eaa762116498799d4156b58c8f9bf466f04073
+ms.sourcegitcommit: e87015bf29ad15688137c785d93f2c79ca3208f4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307300"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48343270"
 ---
 # <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>Gérer un groupe dans le centre d’administration Microsoft 365
 
@@ -196,10 +196,10 @@ Cette option est intéressante si vous souhaitez avoir une adresse de messagerie
 
 [Gérer l’accès invité aux groupes Microsoft 365](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 
-[Choisir le domaine à utiliser lors de la création de groupes Microsoft 365](choose-domain-to-create-groups.md)
+[Choisir le domaine à utiliser lors de la création de groupes Microsoft 365](../../solutions/choose-domain-to-create-groups.md)
 
-[Autoriser les membres à envoyer en tant que ou envoyer de la part d’un groupe Microsoft 365](allow-members-to-send-as-or-send-on-behalf-of-group.md)
+[Autoriser les membres à envoyer en tant que ou envoyer de la part d’un groupe Microsoft 365](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md)
 
 [Mettre à niveau les listes de distribution vers des groupes Microsoft 365](../manage/upgrade-distribution-lists.md)
 
-[Gérer les groupes Microsoft 365 avec PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/powershell/manage-office-365-groups-with-powershell)
+[Gérer les groupes Microsoft 365 avec PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)
