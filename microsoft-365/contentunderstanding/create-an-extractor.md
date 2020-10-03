@@ -3,24 +3,21 @@ title: Créer un extracteur
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 8/1/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
+localization_priority: Priority
 description: Découvrez comment créer un extracteur dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: 740df6769b3a1675e4e1691f84d164312b15567c
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
-ms.translationtype: MT
+ms.openlocfilehash: d68cc8b8c337c1ae6740eb5775576a54279b8389
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295455"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48321808"
 ---
 # <a name="create-an-extractor-preview"></a>Créer un extracteur (aperçu)
 
-Le contenu de cet article est destiné à la préversion privée du projet cortex. Pour [plus d’informations sur le projet cortex](https://aka.ms/projectcortex).
 
 </br>
 
@@ -28,109 +25,106 @@ Le contenu de cet article est destiné à la préversion privée du projet corte
 
 </br> 
 
-Avant ou après avoir créé un modèle de classifieur pour automatiser l’identification et la classification de types de documents spécifiques, vous pouvez choisir d’ajouter des extracteurs à votre modèle pour extraire des informations spécifiques de ces documents. Par exemple, vous souhaiterez peut-être que votre modèle identifie tous les documents de *renouvellement de contrats* ajoutés à votre bibliothèque de documents, mais également d’afficher la date de *début du service* pour chaque document sous forme de colonne dans la bibliothèque de documents.
+La création d’un modèle de classifieur sert à automatiser l’identification et la classification de types de documents spécifiques. Avant ou après cette opération, vous pouvez, si vous le souhaitez, ajouter des extracteurs à votre modèle pour extraire des informations spécifiques de ces documents. Par exemple, vous souhaiterez sans doute que votre modèle identifie tous les documents *Renouvellement de contrat* ajoutés à votre bibliothèque de documents. Vous souhaiterez sans doute, également, qu’il affiche la *date de démarrage du service* de chaque document sous la forme d’une valeur de colonne dans la bibliothèque de documents.
 
-Vous devez créer un extracteur pour chaque entité dans le document que vous souhaitez extraire. Dans l’exemple, vous souhaitez extraire la *Date de début du service* pour chaque document de renouvellement de *contrat* identifié par le modèle. Cela doit se produire lorsque vous souhaitez afficher une vue dans la bibliothèque de documents de tous les documents de *renouvellement de contrat* avec une colonne indiquant la valeur de date de début du service pour chaque document.
+Vous devez créer un extracteur pour chaque entité dans le document à extraire. Dans notre exemple, nous devons extraire la  **date de démarrage du service**  de chaque ** document Renouvellement de contrat**  identifié par le modèle. Nous devons pouvoir consulter dans la bibliothèque de documents une vue de tous les documents  **Renouvellement de contrat** , avec une colonne qui affiche la date de **démarrage du service** de chaque document. 
 
 > [!NOTE]
-> Avant de créer un extracteur, vous devez [ajouter vos exemples de fichiers](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-classifier#add-your-example-files) pour former le modèle afin d’identifier les informations que vous souhaitez extraire. Utilisez les mêmes exemples de fichiers que ceux utilisés pour créer votre classifieur.
+> Pour créer un extracteur, utilisez les fichiers déjà chargés pour entraîner le classifieur. 
 
 ## <a name="name-your-extractor"></a>Nommer votre extracteur
 
-1. À partir de la page d’accueil du modèle, dans la vignette **créer et former** des **extracteurs**, cliquez sur extracteur de train.
-2. Sur l’écran **nouvel extracteur d’entités** , tapez le nom de votre extracteur dans le nouveau champ nom de l' **extracteur** . Par exemple, nommez la **Date de début du service** si vous souhaitez extraire la date de début du service de chaque document de renouvellement de contrat.
+1. Depuis la page d’accueil du modèle, dans la mosaïque **Créer et entraîner des extracteurs**, cliquez sur **Entraîner un extracteur**.
+2. À l’écran **Nouvel extracteur d’entités**, tapez le nom de votre extracteur dans le champ **Nom du nouvel extracteur**. Par exemple, nommez-le **Date de démarrage du service** si vous souhaitez extraire la date de démarrage du service à partir de chaque document Renouvellement de contrat. Vous pouvez également choisir de réutiliser une colonne précédemment créée (par exemple, une colonne de métadonnées gérées).
 3. Cliquez sur **Créer**.
 
 ## <a name="add-a-label"></a>Ajouter une étiquette
 
-L’étape suivante consiste à étiqueter les informations que vous souhaitez extraire dans vos exemples de fichiers de formation.
+L’étape suivante consiste à étiqueter l’entité à extraire dans vos exemples de fichiers d’entraînement.
 
-La création de l’extracteur ouvre la page extracteur. Cette section affiche la liste de vos fichiers d’exemple, avec le premier fichier de la liste affichée dans la visionneuse.
+La création de l’extracteur entraîne l’ouverture de la page correspondante. Cette page affiche la liste des fichiers échantillons, le premier fichier de la liste étant affiché dans la visionneuse.
 
-1. À partir de la visionneuse, sélectionnez les données que vous souhaitez extraire des fichiers. Par exemple, si vous souhaitez extraire la *date du service de démarrage*, sélectionnez la valeur date dans le premier fichier (*lundi 14 octobre 2019*). puis cliquez sur **Enregistrer**.  La valeur s’affiche à partir du fichier dans la liste des exemples étiquetés, sous la colonne **étiquette** .
-2. Sélectionnez **fichier suivant** pour l’enregistrement automatique et ouvrez le fichier suivant dans la liste de la visionneuse. Ou sélectionnez **Enregistrer** , puis un autre fichier dans la liste d' **exemples étiquetés** .
-3. Dans la visionneuse, répétez les étapes 1 et 2, puis répétez l’opération jusqu’à ce que vous enregistriez l’étiquette dans les cinq fichiers.
+1. Dans la visionneuse, sélectionnez les données à extraire des fichiers. Par exemple, si vous souhaitez extraire la *date de démarrage du service*, mettez en évidence la valeur de date du premier fichier (*lundi 14 octobre 2019*). Ensuite, cliquez sur **Enregistrer**.  Normalement, la valeur sera affichée dans la liste d’exemples étiquetés du fichier, sous la colonne **Étiquette**.
+2. Sélectionnez **Fichier suivant** pour enregistrer automatiquement et ouvrir le fichier suivant dans la liste de la visionneuse. Vous pouvez également sélectionner **Enregistrer**, puis sélectionner un autre fichier dans la liste **Exemples étiquetés**.
+3. Dans la visionneuse, répétez les étapes 1 et 2, puis répétez l’opération jusqu’à enregistrer l’étiquette dans les cinq fichiers.
 
     ![Paramètres avancés](../media/content-understanding/select-service-start-date.png) 
 
-### <a name="add-a-negative-example"></a>Ajouter un exemple négatif
-
-De la même manière que vous ajoutez un fichier d’exemple négatif lors de la création d’un classifieur, vous devez ajouter un échantillon négatif pour l’extracteur. Il doit s’agir d’un fichier qui ne contient pas la valeur de date « start of service ».
-
-1. Dans la liste des **exemples étiquetés** , sélectionnez un exemple négatif.
-2. Dans la visionneuse en haut de l’article, sélectionnez **aucune étiquette présente**.
-3. Cliquez sur **Enregistrer**.
  
-Une fois que vous avez étiqueté cinq fichiers, une bannière de notification s’affiche pour vous informer de la formation. Vous pouvez choisir un plus grand nombre de documents ou passer à la formation. 
+Après l’étiquetage de cinq fichiers, une bannière de notification vous dit de passer à la formation. Vous pouvez choisir d’étiqueter d’autres documents ou de passer à la formation. 
 
 ## <a name="add-an-explanation"></a>Ajouter une explication
 
-Pour l’exemple, vous créez une explication qui fournit une indication sur le format d’entité lui-même et les variantes qu’il peut avoir dans les exemples de documents. Par exemple, une valeur de date peut être dans différents formats, par exemple :
-- 10/14/2019
+Dans notre exemple, nous allons créer une explication du format de l’entité proprement dit et des variations susceptibles d’apparaître dans les exemples de documents. Par exemple, une date peut être affichée dans plusieurs formats différents :
+- 14/10/2019
 - 14 octobre 2019
-- Lundi 14 octobre 2019
+- Lundi 14 octobre 2019
  
 
-Pour vous aider à identifier la *Date de début du service* , vous devez créer une explication de modèle.
+Pour identifier plus facilement la *date de démarrage du service*, vous pouvez créer une explication de modèle.
 
-1. Dans la section explication, sélectionnez **nouveau** , puis tapez un nom (par exemple, *Date*).
-2. Pour type, sélectionnez **liste de motifs**.
-3. Pour valeur, indiquez la variation de date telle qu’elle apparaît dans les fichiers d’exemple. Par exemple, si des formats de date s’affichent sous la forme 0/00/0000, vous entrez les variations qui apparaissent dans vos documents, telles que :
+1. Dans la section Explication, sélectionnez **Nouveau**, puis tapez un nom (par exemple, *Date*).
+2. Type : sélectionnez **Liste de modèles**.
+3. Valeur : indiquez la variation de la date telle qu’elle apparaît dans les fichiers échantillons. Par exemple, si certaines dates apparaissent au format 0/00/0000, vous devez entrer les variations qui apparaissent dans vos documents, par exemple :
     - 0/0/0000
     - 0/00/0000
     - 00/0/0000
     - 00/00/0000
 4. Sélectionnez **Enregistrer**.
 
-### <a name="use-the-explanation-library"></a>Utiliser la bibliothèque d’explication
+> [!NOTE]
+> Si vous souhaitez en savoir plus sur les types d’explications, veuillez consulter la rubrique [Types d’explications](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview).  
 
-Pour créer des explications pour des éléments tels que des dates, il est plus facile d’utiliser la bibliothèque d’explications que d’entrer manuellement toutes les variantes. La bibliothèque d’explications est un ensemble d’explications prégénérées d’expressions et de modèles. La bibliothèque fournit tous les formats pour les listes d’expressions ou de modèles courantes, telles que les dates, les numéros de téléphone, le code postal, etc. 
 
-Pour l’exemple de *Date de démarrage du service* , il est plus efficace d’utiliser l’explication prédéfinie pour la *Date* dans la bibliothèque d’explication :
+### <a name="use-the-explanation-library"></a>Utiliser la bibliothèque d’explications
 
-1. Dans la **section Explication**, sélectionnez **nouveau**, puis sélectionnez **à partir de la bibliothèque d’explication**.
-2. Dans la bibliothèque d’explication, sélectionnez **Date**. Vous pouvez afficher toutes les variantes de date reconnues.
+Pour créer des explications d’éléments tels que des dates, il est plus facile d’[utiliser la bibliothèque d’explications](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview#use-the-explanation-library) que d’entrer manuellement toutes les variations. La bibliothèque d’explications est un ensemble d’explications de modèles et d’expressions prédéfinies. La bibliothèque tente d’offrir tous les formats de listes de modèles ou d’expressions courantes, comme des dates, des numéros de téléphone, des codes postaux, etc. 
+
+Pour l’échantillon *Date de début du service*, nous vous recommandons d’utiliser l’explication prédéfinie de la *date* dans la bibliothèque d’explications :
+
+1. Dans la section **Explication**, sélectionnez **Nouveau**, puis **Depuis la bibliothèque d’explications**.
+2. Depuis la bibliothèque d’explications, sélectionnez **Date**. Vous pouvez afficher toutes les variations de date reconnues.
 3. Sélectionnez **Ajouter**.</br>
 
     ![Bibliothèque d’explications](../media/content-understanding/explanation-library.png) 
 
-4. Sur la page **créer une explication** , les informations de *Date* de la bibliothèque d’explication remplissent automatiquement les champs. Sélectionnez **Enregistrer**.</br>
+4. À la page **Créer une explication**, les champs sont automatiquement remplis avec la *date*. Sélectionnez **Enregistrer**.</br>
 
     ![Date](../media/content-understanding/date-explanation-library.png) 
 
-## <a name="train-the-model"></a>Former le modèle 
+## <a name="train-the-model"></a>Entraîner le modèle 
 
-Enregistrement de votre explication démarrez la formation. Si votre modèle dispose de suffisamment d’informations pour extraire les données de vos fichiers d’exemple étiquetés, vous verrez chaque fichier étiqueté avec **match**.  
+L’enregistrement de vos explications démarre l’entraînement. Si votre modèle dispose d’informations suffisantes pour extraire les données de vos exemples de fichiers étiquetés, chacun d’entre eux comportera l’étiquette **Correspondance**.  
 
-![Match](../media/content-understanding/match2.png) 
+![Correspondance](../media/content-understanding/match2.png) 
 
-Si l’explication ne contient pas suffisamment d’informations pour rechercher les données que vous souhaitez extraire, chaque fichier sera étiqueté sans **correspondance**. Vous pouvez cliquer sur les fichiers qui ne **correspondent** pas pour obtenir plus d’informations sur les raisons d’une incompatibilité.
+Si l’explication ne dispose pas d’informations suffisante pour rechercher les données à extraire, chaque fichier est labellisé comportera l’étiquette **Incompatibilité**. Si vous souhaitez en savoir plus sur l’incompatibilité en question, veuillez cliquer sur les fichiers **incompatibles**.
 
 
 ## <a name="add-another-explanation"></a>Ajouter une autre explication
 
-En règle générale, l’incompatibilité est une indication que l’explication que nous avons fournie n’a pas fourni suffisamment d’informations pour extraire la valeur de la date de début du service pour qu’elle corresponde à nos fichiers étiquetés. Vous devrez peut-être le modifier ou ajouter une autre explication.
+L’incompatibilité indique souvent que l’explication fournie ne comportait pas d’informations suffisantes pour extraire la valeur de la date de démarrage du service afin de faire correspondre les fichiers étiquetés. Vous devrez sans doute la modifier ou ajouter une autre explication.
 
-Pour l’exemple, Notez que la *Date de début de* la chaîne de texte de Always précède la valeur réelle. Pour vous aider à identifier la date de début du service, vous devez créer une explication de l’expression.
+Dans notre exemple, vous remarquerez que la chaîne de texte *Date de démarrage du service du* précède toujours la valeur réelle. Pour identifier plus facilement la date de démarrage du service, vous devez créer une explication d’expression.
 
-1. Dans la section explication, sélectionnez **nouveau**, puis tapez un nom (par exemple, *chaîne de préfixe*).
-2. Pour le type, sélectionnez **liste des expressions**.
-3. Utiliser la *Date de début du service* comme valeur.
+1. Dans la section Explication, sélectionnez **Nouveau**, puis tapez un nom (par exemple, *Chaîne de préfixe*).
+2. Type : sélectionnez **Liste d’expressions**.
+3. Utilisez la valeur *Date de démarrage du service du*.
 4. Sélectionnez **Enregistrer**.
 
     ![Chaîne de préfixe](../media/content-understanding/prefix-string.png) 
 
-## <a name="train-the-model-again"></a>Former de nouveau le modèle
+## <a name="train-the-model-again"></a>Entraîner de nouveau le modèle
 
-En enregistrant l’explication, vous redémarrez la formation, cette fois en utilisant les explications de l’exemple. Si votre modèle dispose de suffisamment d’informations pour extraire les données des exemples de fichiers étiquetés, vous voyez chaque fichier étiqueté avec **match**. 
+L’enregistrement de l’explication génère le redémarrage de l’entraînement, cette fois à l’aide des explications de l’exemple. Si votre modèle dispose d’informations suffisantes pour extraire les données des exemples de fichiers étiquetés, chacun d’entre eux comportera l’étiquette **Correspondance**. 
 
-Si vous recevez une nouvelle fois une **incompatibilité** avec vos fichiers étiquetés, vous devez probablement créer une autre explication pour fournir au modèle plus d’informations afin d’identifier le type de document ou envisager d’apporter des modifications à votre modèle.
+Si vous recevez de nouveau une **incompatibilité** sur vos fichiers étiquetés, vous devrez probablement créer une autre explication. Le modèle aura sans doute besoin d’informations supplémentaires sur le type de document. Sinon, vous devrez probablement envisager de modifier vos fichiers existants.
 
 ## <a name="test-your-model"></a>Tester votre modèle
 
-Si vous recevez une correspondance sur vos fichiers d’exemple étiquetés, vous pouvez maintenant tester votre modèle sur les fichiers d’exemple non labellisés restants.
+Si vous recevez une correspondance sur vos fichiers échantillons étiquetés, vous pouvez à présent tester votre modèle sur les autres exemples de fichiers non étiquetés. Cette étape permet d’évaluer la « pertinence » ou le degré de préparation du modèle avant utilisation, en le testant sur des fichiers pour l’instant inconnus de lui.
 
-1. À partir de la page d’accueil du modèle, cliquez sur l’onglet **test** .  Cela exécute le modèle sur vos fichiers d’exemple non labellisés.
-2. Dans la liste des **fichiers test** , vos exemples de fichiers affichent pour indiquer si le modèle peut extraire les informations dont vous avez besoin. Utilisez ces informations pour vous aider à déterminer l’efficacité de votre classifieur lors de l’identification de vos documents.
+1. Dans la page d’accueil du modèle, cliquez sur l’onglet **Test**. Le modèle est alors exécuté sur vos fichiers échantillons non étiquetés.
+2. Dans la liste **Fichiers de test**, vos exemples de fichiers affichés indiquent si le modèle peut extraire les informations nécessaires. Utilisez ces informations pour déterminer plus facilement l’efficacité de votre classifieur lors de l’identification de vos documents.
 
-    ![Tester vos fichiers](../media/content-understanding/test-filies-extractor.png) 
+    ![Test de vos fichiers](../media/content-understanding/test-filies-extractor.png) 

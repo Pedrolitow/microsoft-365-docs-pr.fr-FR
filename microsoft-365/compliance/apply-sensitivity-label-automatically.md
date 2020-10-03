@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de critère de diffusion, vous pouvez affecter automatiquement une étiquette à un document ou message électronique ou vous pouvez inviter les utilisateurs pour sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: e28c3866ad674b4bf933bd83e0ebccc19657ca7b
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: c4f00c0a11b172671da456b27e0e33c081728614
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131802"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48326745"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette sensibilité au contenu
 
@@ -75,7 +75,7 @@ Utilisez le tableau suivant pour vous aider à déterminer les différences de c
 
 |Fonctionnalité ou comportement|Paramètre d’étiquette : étiquetage automatique pour les applications Office |Stratégie : étiquetage automatique|
 |:-----|:-----|:-----|
-|Dépendance de l’application|[Oui](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) |Non |
+|Dépendance de l’application|[Oui](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) |Non \* |
 |Limiter par emplacement|Non |Oui |
 |Conditions : classifieurs formés|Oui |Non |
 |Conditions : options de partage et options supplémentaires pour le courrier électronique|Non |Oui |
@@ -85,6 +85,8 @@ Utilisez le tableau suivant pour vous aider à déterminer les différences de c
 |Appliquer des marquages visuels |Oui |Oui (e-mail uniquement) |
 |Remplacer le chiffrement IRM appliqué sans étiquette|Oui, si l’utilisateur dispose du droit d’utilisation minimal d’exportation |Oui (e-mail uniquement) |
 |Étiquette du courrier électronique entrant|Non |Oui (chiffrement non appliqué) |
+
+\* L’étiquetage automatique n’est actuellement pas disponible dans toutes les régions. Si votre client ne prend pas en charge cette fonctionnalité, l’onglet étiquetage automatique n’apparaît pas dans le centre d’étiquettes d’administrateurs.
 
 > [!NOTE]
 > Lorsque le contenu est étiqueté manuellement, l’étiquette n’est jamais remplacée par l’étiquetage automatique. Toutefois, les stratégies d’étiquetage automatique peuvent remplacer une [étiquette de priorité plus faible](sensitivity-labels.md#label-priority-order-matters) appliquée à l’aide de l’étiquetage automatique pour les applications Office.
@@ -242,6 +244,8 @@ Enfin, vous pouvez utiliser le mode simulation pour fournir une approximation du
     
     ![Onglet étiquetage automatique](../media/auto-labeling-tab.png)
     
+    > [!NOTE]
+    > Si vous ne voyez pas l’onglet **Étiquetage automatique**, cette fonctionnalité n’est pas disponible dans votre pays ou région.
 
 3. Sélectionnez **+ créer une stratégie d’étiquetage automatique**. Cette opération démarre l’Assistant Nouvelle stratégie :
     

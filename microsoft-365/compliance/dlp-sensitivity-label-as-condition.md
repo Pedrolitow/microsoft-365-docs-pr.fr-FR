@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: en savoir plus sur les types de services et d’éléments dont vous pouvez utiliser les étiquettes de confidentialité comme conditions dans les stratégies DLP
-ms.openlocfilehash: bb06ed6919a396bef1e5d1f1cb04731fa11267ae
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+ms.openlocfilehash: 561a6cbd7b8aeb9082862319c5cc6419fd79c896
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235716"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48321109"
 ---
 # <a name="use-sensitivity-labels-as-conditions-in-dlp-policies-preview"></a>Utiliser les étiquettes de confidentialité comme conditions dans les stratégies DLP (préversion)
 
@@ -53,13 +53,13 @@ Vous pouvez utiliser des étiquettes de confidentialité comme conditions sur ce
 |SharePoint Online     |éléments dans SharePoint Online         |oui         |oui         |
 |OneDrive Entreprise     |éléments         |oui         |oui         |
 |Teams     |Teams et messages de canal         |non applicable         |non applicable         |
-|Teams     |Pièces jointes          |Oui **         |Oui **         |
+|Teams     |pièces jointes         |Oui **         |Oui **         |
 |Appareils Windows 10 (préversion)     |éléments         |oui         |oui         |
 |MCAS (préversion) |éléments         |oui         |oui         |
 
 \* La détection DLP des étiquettes de confidentialité sur les messages électroniques est prise en charge. La détection DLP des pièces jointes à étiquettes de confidentialité n’est pas prise en charge.
 
-\** Les pièces jointes envoyées dans Teams au cours des conversations ou canaux de 1:1 sont chargées automatiquement sur One Drive pour Entreprise et SharePoint. Par conséquent, si SharePoint Online ou One Drive pour Entreprise sont inclus dans votre stratégie DLP, les pièces jointes à étiquettes envoyées dans Teams sont automatiquement incluses dans l’étendue de cette condition. Il n’est pas nécessaire de sélectionner Teams comme emplacement dans la stratégie DLP.
+\** Les pièces jointes envoyées dans Teams au cours des conversations ou canaux de 1:1 sont chargées automatiquement sur OneDrive pour Entreprise et SharePoint. Par conséquent, si SharePoint Online ou OneDrive pour Entreprise sont inclus dans votre stratégie DLP, les pièces jointes à étiquettes envoyées dans Teams sont automatiquement incluses dans l’étendue de cette condition. Il n’est pas nécessaire de sélectionner Teams comme emplacement dans la stratégie DLP.
 
 ### <a name="supported-scenarios"></a>Scénarios pris en charge
 
