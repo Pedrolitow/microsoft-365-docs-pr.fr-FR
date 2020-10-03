@@ -13,32 +13,34 @@ search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
-- M365-security-compliance
+- m365-security-compliance
+- m365solution-insiderrisk
+- m365initiative-compliance
 ms.custom:
 - Ent_Solutions
 - seo-marvel-apr2020
 ms.assetid: ''
 description: Cet article fournit une vue d’ensemble sur la gestion des accès privilégiés dans Microsoft 365, y compris les réponses aux questions fréquemment posées (FAQ).
-ms.openlocfilehash: eb5fe5320c061d40f0882f93b66afa3cad4fa0fa
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: a1bcf1fbe767b4657be8a8ebcc8bf7b101c498d8
+ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036037"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48341232"
 ---
 # <a name="privileged-access-management"></a>Gestion des accès privilégiés
 
-La gestion des accès privilégiés permet le contrôle d’accès granulaire sur les tâches d’administration privilégiée dans Office 365. Elle peut aider à protéger votre organisation contre les violations de l’utilisation de comptes d’administrateur privilégié existants avec un accès permanent aux données sensibles ou l’accès aux paramètres de configuration critiques. La gestion des accès privilégiés demande aux utilisateurs de demander un accès juste-à-temps pour effectuer des tâches élevées et privilégiées par le biais d’un flux de travail d’approbation à forte échelle de temps. Cette configuration offre aux utilisateurs juste-à-temps l’accès à l’exécution de la tâche, sans risquer d’exposer les données sensibles ou les paramètres de configuration critiques. L’activation de la gestion des accès privilégiés dans Microsoft 365 permet à votre organisation de fonctionner avec des privilèges permanents et de fournir une couche de défense contre les vulnérabilités d’accès administratif permanentes.
+La gestion des accès privilégiés permet de contrôler l’accès de manière granulaire sur les tâches d’administration privilégiée dans Office 365. Elle peut faciliter la protection de votre organisation contre des violations utilisant les comptes d’administration privilégiés existants avec un accès permanent aux données sensibles ou un accès aux paramètres de configuration critiques. La gestion des accès privilégiés demande aux utilisateurs de demander un accès juste-à-temps pour effectuer des tâches élevées et privilégiées par le biais d’un flux de travail d’approbation à forte échelle de temps. Cette configuration permet aux utilisateurs d’effectuer la tâche particulière, sans risque d’exposition aux données sensibles ou aux paramètres de configuration critiques. L’activation de la gestion des accès privilégiés dans Microsoft 365 permet à votre organisation de fonctionner avec des privilèges permanents et de fournir une couche de défense contre les vulnérabilités d’accès administratif permanentes.
 
 Pour obtenir une vue d’ensemble rapide du flux de travail intégré du client et de la zone de gestion des accès privilégiés, consultez la [vidéo de gestion du référentiel et de gestion des accès privilégiés](https://go.microsoft.com/fwlink/?linkid=2066800).
 
-## <a name="layers-of-protection"></a>Couches de protection
+## <a name="layers-of-protection"></a>Niveaux de protection
 
 La gestion des accès privilégiés complète les autres protections des données et des fonctionnalités d’accès au sein de l’architecture de sécurité Microsoft 365. La gestion des accès privilégiés dans le cadre d’une approche intégrée et multicouche de la sécurité fournit un modèle de sécurité qui maximise la protection des informations sensibles et des paramètres de configuration de Microsoft 365. Comme illustré dans le diagramme, la gestion des accès privilégiés repose sur la protection fournie avec le chiffrement natif des données Microsoft 365 et le modèle de sécurité de contrôle d’accès basé sur un rôle des services Microsoft 365. Lorsqu’elles sont utilisées avec [Azure ad Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure), ces deux fonctionnalités fournissent un contrôle d’accès avec un accès juste-à-temps aux différentes étendues.
 
 ![Protection multiniveau dans Microsoft 365](../media/pam-layered-protection.png)
 
-La gestion des accès privilégiés est définie et étendue au niveau de la **tâche** , tandis que Azure ad Privileged Identity Management applique la protection au niveau du **rôle** avec la possibilité d’exécuter plusieurs tâches. Azure AD Privileged Identity Management, principalement, permet de gérer les accès aux rôles AD et aux groupes de rôles, tandis que la gestion des accès privilégiés dans Microsoft 365 s’applique uniquement au niveau de la tâche.
+La gestion des accès privilégiés est définie et étendue au niveau de la **tâche** , tandis que Azure ad Privileged Identity Management applique la protection au niveau du **rôle** avec la possibilité d’exécuter plusieurs tâches. Azure AD Privileged Identity Management permet principalement de gérer les accès aux rôles et aux groupes de rôles Azure AD, tandis que la gestion de l’accès privilégié dans Microsoft 365 s’applique uniquement au niveau de la tâche.
 
 - **Activation de la gestion des accès privilégiés tout en utilisant Azure ad Privileged Identity Management :** L’ajout de la gestion des accès privilégiés offre une autre couche granulaire de fonctionnalités de protection et d’audit pour un accès privilégié aux données Microsoft 365.
 
@@ -48,31 +50,31 @@ La gestion des accès privilégiés est définie et étendue au niveau de la **t
 
 Chacun des flux de processus suivants décrit l’architecture de l’accès privilégié et son interaction avec le substrat Microsoft 365, l’audit et l’instance d’exécution de la gestion d’Exchange.
 
-### <a name="step-1-configure-a-privileged-access-policy"></a>Étape 1 : configurer une stratégie d’accès privilégié
+### <a name="step-1-configure-a-privileged-access-policy"></a>Étape 1 : Configurer une stratégie d’accès privilégié
 
-Lorsque vous configurez une stratégie d’accès privilégié avec le [Centre d’administration Microsoft 365](https://admin.microsoft.com) ou Exchange Management PowerShell, vous définissez la stratégie et les processus de fonctionnalité d’accès privilégié et les attributs de stratégie dans le substrat Microsoft 365. Les activités sont consignées dans &amp; le centre de sécurité conformité. La stratégie est désormais activée et prête à gérer les demandes d’approbations entrantes.
+Lorsque vous configurez une stratégie d’accès privilégié avec le [Centre d’administration Microsoft 365](https://admin.microsoft.com) ou Exchange Management PowerShell, vous définissez la stratégie et les processus de fonctionnalité d’accès privilégié et les attributs de stratégie dans le substrat Microsoft 365. Les activités sont consignées dans le centre de sécurité &amp; conformité. La stratégie est désormais activée et prête à gérer les demandes entrantes pour approbation.
 
 ![Étape 1 : création de stratégie](../media/pam-step1-policy-creation.jpg)
 
-### <a name="step-2-access-request"></a>Étape 2 : demande d’accès
+### <a name="step-2-access-request"></a>Étape 2 : Demande d’accès
 
-Dans le [Centre d’administration 365 de Microsoft](https://admin.microsoft.com) ou avec Exchange Management PowerShell, les utilisateurs peuvent demander l’accès à des tâches à privilèges élevés ou privilégiées. La fonctionnalité accès privilégié envoie la demande au substrat Microsoft 365 pour traitement sur la stratégie d’accès aux privilèges configurée et enregistre l’activité dans &amp; les journaux du centre de sécurité conformité.
+Dans le [Centre d’administration 365 de Microsoft](https://admin.microsoft.com) ou avec Exchange Management PowerShell, les utilisateurs peuvent demander l’accès à des tâches à privilèges élevés ou privilégiées. La fonctionnalité accès privilégié envoie la demande au substrat Microsoft 365 pour traitement sur la stratégie d’accès aux privilèges configurée et enregistre l’activité dans les journaux du centre de sécurité &amp; conformité.
 
-![Étape 2 : demande d’accès](../media/pam-step2-access-request.jpg)
+![Étape 2 : Demande d’accès](../media/pam-step2-access-request.jpg)
 
-### <a name="step-3-access-approval"></a>Étape 3 : approbation d’accès
+### <a name="step-3-access-approval"></a>Étape 3 : Approbation d’accès
 
-Une demande d’approbation est générée et la notification de demande en attente est envoyée par courrier électronique aux approbateurs. Si approuvé, la demande d’accès privilégié est traitée comme une approbation et la tâche est prête à être terminée. Si elle est refusée, la tâche est bloquée et aucun accès n’est accordé au demandeur. Le demandeur est informé de la demande d’approbation ou de refus via un message électronique.
+Une demande d’approbation est établie et la notification de demande en attente est envoyée par e-mail aux approbateurs. En cas d’acceptation, la demande d’accès privilégié est traitée comme une approbation et la tâche est prête pour son exécution. En cas de refus, la tâche est bloquée et aucun accès n’est accordé au demandeur. Le demandeur est informé de l’approbation ou du refus par message électronique.
 
-![Étape 3 : approbation d’accès](../media/pam-step3-access-approval.jpg)
+![Étape 3 : Approbation d’accès](../media/pam-step3-access-approval.jpg)
 
-### <a name="step-4-access-processing"></a>Étape 4 : traitement de l’accès
+### <a name="step-4-access-processing"></a>Étape 4 : Traitement de l’accès
 
-Pour une demande approuvée, la tâche est traitée par l’instance d’exécution de la gestion d’Exchange. L’approbation est vérifiée par rapport à la stratégie d’accès privilégié et traitée par le substrat Microsoft 365. Toutes les activités de la tâche sont consignées &amp; dans le centre de sécurité conformité.
+Pour une demande approuvée, la tâche est traitée par l’instance d’exécution d’Exchange Management. L’approbation est vérifiée par rapport à la stratégie d’accès privilégié et traitée par le substrat Microsoft 365. Toutes les activités de la tâche sont consignées dans le centre de sécurité &amp; conformité.
 
-![Étape 4 : traitement de l’accès](../media/pam-step4-access-processing.jpg)
+![Étape 4 : Traitement de l’accès](../media/pam-step4-access-processing.jpg)
 
-## <a name="frequently-asked-questions"></a>Forum Aux Questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 ### <a name="what-skus-can-use-privileged-access-in-office-365"></a>Quels sont les SKU pouvant utiliser l’accès privilégié dans Office 365 ?
 
