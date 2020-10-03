@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Résumé : emplacements des données Microsoft 365'
-ms.openlocfilehash: 125d58b0565bf0380a4b2578aea4db6b26596f14
-ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
+ms.openlocfilehash: 7a2fb85d0d7320770a1ab32efcd024a9e348795e
+ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48269540"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48337156"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -41,7 +41,7 @@ Recherchez des informations sur les engagements contractuels relatifs à l’emp
 Pour les emplacements de données Azure Active Directory, visitez [Mappage de données Azure Active Directory](https://go.microsoft.com/fwlink/p/?linkid=2092972).
 
 
-En raison de circonstances sans précédent liées à COVID-19 et de la nécessité de gérer la demande de services en ligne, si votre organisation est un établissement d’enseignement en Europe, nous pouvons déployer votre client Office 365, transférer vos données et stocker vos données au repos au sein de l’Union européenne.  Si votre organisation est un établissement d’enseignement en Inde, nous pouvons provisionner votre client Office 365, transférer vos données et stocker vos données au repos en Inde, en Europe ou aux États-Unis.  Si votre organisation est un établissement d’enseignement en Afrique du Sud, nous pouvons provisionner votre client Office 365, transférer vos données et stocker vos données au repos en Afrique du Sud ou en Europe. Notre engagement en matière de conformité, confidentialité et de sécurité restent inchangés alors que nous mettons en œuvre des mesures prudentes et nécessaires pour maintenir la disponibilité du service. Nous respectons toute loi applicable en relation avec les transferts de données.
+Si l'adresse de facturation du client est en dehors de l'Europe et que le client a un abonnement à Office 365 Éducation, alors nonobstant la section « Localisation des données client au repos pour les services en ligne de base » du fichier OST, Microsoft peut fournir le locataire d'Office 365 du client, transférer les données client et stocker les données client au repos partout en Europe ou en Amérique du Nord.  Si l'adresse de facturation du client est en Europe et que le client a un abonnement à Office 365 Éducation, alors nonobstant la section « Localisation des données client au repos pour les services en ligne de base » du fichier OST, Microsoft peut fournir le locataire d'Office 365 du client, transférer les données client et stocker les données client  en tout lieu au sein de l’Union européenne.
 
 
 
@@ -1963,7 +1963,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Yammer | Union européenne  |
 | Services OneNote | Union européenne |
 | Stream | Union européenne |
-| Tableau blanc | Union européenne |
+| Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -2283,7 +2283,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="guadeloupe"></a>Guadeloupe
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
@@ -2913,7 +2913,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
-| Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
+| Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
@@ -3858,7 +3858,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Sway | États-Unis |
 | Yammer | Union européenne  |
 | Services OneNote | Union européenne |
-| Flux | Union européenne |
+| Stream | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
 | Analyse du temps de travail | États-Unis |
