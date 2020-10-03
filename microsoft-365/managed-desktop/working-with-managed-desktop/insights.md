@@ -1,6 +1,6 @@
 ---
 title: Utiliser les informations
-description: ''
+description: Vue d’ensemble des informations disponibles dans le bureau géré Microsoft
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: b3ed56dd3e669dbd5a2c3f09d87dfd87fe680aff
-ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
+ms.openlocfilehash: ba91a33da9f4d2187938c27398d5ef7c1cacebcd
+ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48337180"
+ms.lasthandoff: 10/03/2020
+ms.locfileid: "48350823"
 ---
 # <a name="work-with-insights"></a>Utiliser les informations
 
@@ -31,9 +31,11 @@ Ces tableaux de bord vous permettent de trouver les réponses aux questions suiv
 - Quel est l’état actuel des mises à jour de sécurité sur les appareils ?
 - Combien de temps faut-il pour 95% des appareils pour obtenir la dernière mise à jour de sécurité ?
 
-Pour accéder à ces vues à partir du [Gestionnaire de points de terminaison Microsoft](https://endpoint.microsoft.com/), accédez à l’onglet bureau géré Microsoft de la page d’accueil et sélectionnez **afficher les détails** dans la zone **rapports** :
 
-<!--Update picture to show in MEM [Admin center with Reports area in the upper right including the device reports card and the "view details" link.](../../media/insights_overview.png)-->
+Pour accéder à ces vues à partir du [Gestionnaire de points de terminaison Microsoft](https://endpoint.microsoft.com/), accédez à l’onglet bureau géré Microsoft de la page d’accueil et sélectionnez **afficher les détails** dans la zone création de **rapports** :
+
+
+![Page principale du centre d’administration avec zone de création de rapports dans la partie inférieure gauche et afficher le lien Détails](../../media/insights-main.png)
 
 
 ## <a name="usage-insights"></a>Informations d’utilisation

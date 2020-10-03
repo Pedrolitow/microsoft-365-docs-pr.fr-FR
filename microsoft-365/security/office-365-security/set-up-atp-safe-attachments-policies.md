@@ -1,12 +1,12 @@
 ---
-title: Configuration des stratégies de pièces jointes fiables dans Office 365 ATP
+title: Définir des stratégies de pièces jointes fiables dans Office 365 PACM
 f1.keywords:
 - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -17,14 +17,14 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez comment définir des stratégies de pièces jointes fiables afin de protéger votre organisation contre les fichiers malveillants par courrier électronique.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e50e5e961e1a45b0b6535995727029222539ff03
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 6794cf72afdb94e587e06319f87a406521ad2710
+ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48326960"
+ms.lasthandoff: 10/03/2020
+ms.locfileid: "48350372"
 ---
-# <a name="set-up-safe-attachments-policies-in-office-365-atp"></a>Configuration des stratégies de pièces jointes fiables dans Office 365 ATP
+# <a name="set-up-safe-attachments-policies-in-office-365-atp"></a>Définir des stratégies de pièces jointes fiables dans Office 365 PACM
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
