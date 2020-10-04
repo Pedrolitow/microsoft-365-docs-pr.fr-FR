@@ -16,13 +16,15 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
+- m365solution-mig
+- m365initiative-compliance
 description: Vous êtes prêt à mettre en place des stratégies et des étiquettes de rétention pour la gouvernance des données de votre organisation, mais vous ne savez pas par où commencer ? Lisez quelques conseils pratiques pour commencer.
-ms.openlocfilehash: cc504468611d4a2a2758ef7d52b965c177999217
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 8ff6b05a675053009c3d42587e296ab240b2740d
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198939"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338383"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>Prise en main des stratégies et des étiquettes de rétention
 
@@ -60,16 +62,17 @@ Utilisez le tableau suivant pour vous aider à faire correspondre vos besoins m�
 
 |Je veux...|Documentation|
 |----------------|---------------|
-|Configurez efficacement les actions de rétention et de suppression pour l’organisation, ou par service Microsoft 365 : <br />- Exchange  <br />- SharePoint  <br />- OneDrive  <br />- Groupes Microsoft 365 <br />- Skype Entreprise  <br />- Microsoft Teams <br />- Réseau Yammer |[Créer et configurer des stratégies de rétention](create-retention-policies.md)|
-|Permettez aux administrateurs et aux utilisateurs d’appliquer manuellement un groupe d’actions de rétention et de suppression pour les documents et e-mails : <br />- SharePoint <br />- OneDrive <br />- Outlook et Outlook sur le web|[Créer des étiquettes de rétention et les appliquer dans les applications](create-apply-retention-labels.md)|
-|Permettez aux administrateurs de site de définir une étiquette de rétention par défaut à tout le contenu dans une bibliothèque, un dossier ou un ensemble de documents SharePoint|[Créer des étiquettes de rétention et les appliquer dans les applications](create-apply-retention-labels.md)|
-|Permettez aux utilisateurs d’appliquer automatiquement une étiquette de rétention aux courriers électroniques à l’aide des règles Outlook|[Créer des étiquettes de rétention et les appliquer dans les applications](create-apply-retention-labels.md)|
-|Appliquez automatiquement un groupe d’actions de rétention et de suppression pour les documents et e-mails |[Appliquer automatiquement une étiquette de rétention au contenu](apply-retention-labels-automatically.md)|
+|Configurez efficacement les actions de rétention et de suppression par service Microsoft 365 : <br />- Exchange  <br />- SharePoint  <br />- OneDrive  <br />- Groupes Microsoft 365 <br />- Skype Entreprise  <br />- Microsoft Teams <br />- Réseau Yammer |[Créer et configurer des stratégies de rétention](create-retention-policies.md)|
+|Permettez aux administrateurs et aux utilisateurs d’appliquer manuellement les actions de rétention et de suppression pour les documents et e-mails : <br />- SharePoint <br />- OneDrive <br />- Outlook et Outlook sur le web|[Créer des étiquettes de rétention et les appliquer dans les applications](create-apply-retention-labels.md)|
+|Permettez aux administrateurs de site de définir les actions de rétention et de suppression par défaut à tout le contenu dans une bibliothèque, un dossier ou un ensemble de documents SharePoint|[Créer des étiquettes de rétention et les appliquer dans les applications](create-apply-retention-labels.md)|
+|Permettez aux utilisateurs d’appliquer automatiquement les actions de rétention et de suppression aux courriers électroniques à l’aide des règles Outlook|[Créer des étiquettes de rétention et les appliquer dans les applications](create-apply-retention-labels.md)|
+|Permettez aux administrateurs d’appliquer des actions de rétention et de suppression à un modèle de compréhension de document afin que celles-ci soient automatiquement appliquées aux documents identifiés dans une bibliothèque SharePoint|[Créer des étiquettes de rétention et les appliquer dans les applications](create-apply-retention-labels.md)|
+|Appliquez automatiquement les actions de rétention et de suppression pour les documents et e-mails |[Appliquer automatiquement une étiquette de rétention au contenu](apply-retention-labels-automatically.md)|
 |Démarrez la période de rétention lorsqu’un événement se produit, par exemple :  <br />- Des employés quittent l’organisation <br />- Des contrats expirent <br />- Fin de vie d’un produit| [Débuter la rétention lorsqu’un événement se produit](event-driven-retention.md)|
 |Gérer le cycle de vie de différents types de documents dans SharePoint| [Utiliser les étiquettes de rétention pour gérer le cycle de vie des documents stockés dans SharePoint](auto-apply-retention-labels-scenario.md)|
 |Conformez-vous à la réglementation SEC Rule 17 a-4|[Utiliser Exchange Online et le centre de sécurité et conformité pour se conformer à la réglementation SEC Rule 17 a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md) |
-|Vérifiez que le contenu est révisé et approuvé avant sa suppression à la fin de sa période de rétention|[Révisions avant destruction](disposition.md#disposition-reviews) |
-| Surveiller comment et où les étiquettes de rétention sont appliquées | [Surveillance des étiquettes de rétention](retention.md#monitoring-retention-labels) |
+|Vérifiez que le contenu est révisé et approuvé avant sa suppression permanente à la fin de sa période de rétention|[Révisions avant destruction](disposition.md#disposition-reviews) |
+| Contrôler la manière dont les paramètres conserver et supprimer sont appliqués aux éléments | [Surveillance des étiquettes de rétention](retention.md#monitoring-retention-labels) |
 |Utiliser une solution unique de gestion des documents et des e-mails |[En savoir plus sur la gestion des enregistrements](records-management.md) |
 
 Si vous utilisez des étiquettes de rétention pour la gestion des enregistrements, il existe d'autres scénarios qui sont propres aux étiquettes de rétention qui marquent le contenu comme un enregistrement. Voir [ Scénarios communs pour la gestion des enregistrements](get-started-with-records-management.md#common-scenarios-for-records-management).
