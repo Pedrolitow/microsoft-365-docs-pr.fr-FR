@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f462e6018f03080b41e46f45629dc4bfe44b3ef9
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: c9b495b70c8b61188b4db3175b54e406feb87fc8
+ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200016"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "48357841"
 ---
 # <a name="incidents-overview-in-microsoft-threat-protection"></a>Vue d’ensemble des incidents dans la protection Microsoft contre les menaces
 
@@ -36,23 +36,26 @@ ms.locfileid: "48200016"
 
 
 
-Les alertes constituent la base de tous les incidents. Elles sont créées lorsqu’un événement ou une activité malveillante est détecté sur votre réseau. Les alertes individuelles fournissent de précieux indices sur les événements ou entités individuelles. Cependant, les attaques ont généralement recours à des vecteurs d’attaque variés pour établir une brèche. Relier chacun des indices entre eux peut être une tâche difficile et fastidieuse. 
+Les incidents sont basés sur les alertes associées. Elles sont créées lorsqu’un événement ou une activité malveillante est détecté sur votre réseau. Les alertes individuelles fournissent des indices précieux sur une attaque en cours. Toutefois, les attaques utilisent généralement plusieurs vecteurs et techniques pour effectuer une violation. Piecing les indices individuels peuvent être difficiles et longs.
 
-La protection Microsoft contre les menaces relie les points entre les alertes individuelles. Les événements malveillants sur les entités suivantes sont exposés dans le centre de sécurité Microsoft 365 :
-- Appareils
-- Utilisateurs
-- Boîtes aux lettres
+Cette courte vidéo donne une vue d’ensemble des incidents dans la protection contre les menaces Microsoft.
+<br>
 
-Les événements suspects présentant les caractéristiques d’éléments d’une attaque plus importante sont regroupés sous la forme d’un incident. 
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bzwz?]
 
-Vous saurez exactement où une attaque a commencé et profiterez d’autres informations pour vous aider à voir l’étendue de l’attaque.
+Un incident est une collection d’alertes corrélées qui composent l’article d’une attaque. Les événements malveillants et suspects détectés dans différentes entités d’appareil, d’utilisateur et de boîte aux lettres dans le réseau sont automatiquement regroupés par Microsoft Threat Protection. En regroupant les alertes associées en un incident, les défenseurs de sécurité ont une vue complète d’une attaque. 
 
-La plateforme offre aux défenseurs de la sécurité les représentations visuelles et de données appropriées pour comprendre et gérer les menaces complexes entre plusieurs entités. 
+Par exemple, les défenseurs de sécurité peuvent identifier l’endroit où l’attaque a commencé, les tactiques utilisées et la durée de l’attaque sur le réseau. Ils peuvent également voir l’étendue de l’attaque, comme le nombre d’appareils, d’utilisateurs et de boîtes aux lettres ayant été affectés, la gravité de l’impact et d’autres détails sur les entités affectées.
 
-Non seulement vous disposerez d’une vue sur l’étendue d’une attaque, mais vous aurez également accès aux services qui vous permettront de prendre des mesures tactiques pour contenir un incident.
+Si ce n’est pas le cas, la protection Microsoft contre les menaces peut rechercher et résoudre automatiquement les alertes individuelles via l’automatisation et l’intelligence artificielle. Les défenseurs de sécurité peuvent également exécuter des étapes de correction supplémentaires pour résoudre l’attaque, directement à partir de la vue incidents. 
+
+Les incidents des 30 derniers jours sont affichés dans la file d’attente des incidents. À partir de là, les défenseurs de sécurité peuvent voir quels incidents doivent être classés par ordre de priorité en fonction du niveau de risque et d’autres facteurs. 
+
+Les défenseurs de sécurité peuvent également renommer les incidents, les affecter à des analystes individuels, classer et ajouter des balises aux incidents pour une expérience de gestion des incidents plus personnalisée et plus personnalisée.
 
 
-## <a name="related-topics"></a>Sujets associés
+
+## <a name="see-also"></a>Voir aussi
 - [Hiérarchiser les incidents](incident-queue.md)
 - [Enquêter sur des incidents](investigate-incidents.md)
 - [Gérer les incidents](manage-incidents.md)

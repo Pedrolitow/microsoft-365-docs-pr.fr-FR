@@ -16,12 +16,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Découvrez les étapes de configuration de Microsoft 365 nécessaires pour configurer une équipe de collaboration avec des invités dans Teams.
-ms.openlocfilehash: e8d1c75c6172168fc2b0a4b351591289c893869a
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: e92397c7b8d4a4192fb36a52a76679269be53b3b
+ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48322176"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "48357793"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Collaborer avec des invités au sein d’une équipe
 
@@ -184,3 +184,5 @@ Pour inviter des invités à une équipe
 [Créer un environnement de partage sécurisé avec des invités](create-secure-guest-sharing-environment.md)
 
 [Créer un extranet B2B avec des invités gérés](b2b-extranet.md)
+
+[Intégration de SharePoint et de OneDrive avec Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)

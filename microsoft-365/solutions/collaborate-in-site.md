@@ -16,12 +16,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Découvrez les étapes de configuration de Microsoft 365 nécessaires pour configurer un site SharePoint en vue de la collaboration avec des invités.
-ms.openlocfilehash: cb3cfc52191be4bacfb9d84672131149082ee80e
-ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
+ms.openlocfilehash: 4f4b87a02c3ff3a1a7997aee69e3e1e95e4b2ed5
+ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48277570"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "48357993"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Collaborer avec des invités sur un site
 
@@ -146,3 +146,5 @@ Pour inviter des invités à un groupe
 [Créer un environnement de partage sécurisé avec des invités](create-secure-guest-sharing-environment.md)
 
 [Créer un extranet B2B avec des invités gérés](b2b-extranet.md)
+
+[Intégration de SharePoint et de OneDrive avec Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)

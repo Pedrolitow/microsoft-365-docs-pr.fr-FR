@@ -10,15 +10,17 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: M365-subscription-management
+ms.collection:
+- M365-subscription-management
+- M365initiative-coredeploy
 ms.custom: it-pro
 description: La feuille de route pour configurer vos clients pour Microsoft 365.
-ms.openlocfilehash: 7834e8b7f9ff8a1b33f2f2a7ccc4a499e4da7c69
-ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
+ms.openlocfilehash: e4b2af9143070caa1ebd8fd66ef9f367f85d3bb9
+ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47775146"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "48357909"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>Feuille de route de client pour Microsoft 365
 
@@ -34,7 +36,6 @@ Pour planifier l’implémentation de votre client, procédez comme suit :
 
 - [Comprendre les abonnements, les licences et les clients Azure Active Directory (Azure AD)](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
 - [Comprendre comment utiliser des certificats SSL tiers](plan-for-third-party-ssl-certificates.md)
-- [Accéder aux guides de configuration dans le centre d’administration Microsoft 365](setup-guides-for-microsoft-365.md)
 - [Comprendre comment un client Microsoft 365 est intégré à Azure AD services](integrated-apps-and-azure-ads.md)
 - [Planifier la prise en charge des applications clientes](microsoft-365-client-support-certificate-based-authentication.md)
 - [Déterminer comment utiliser l’authentification moderne hybride](hybrid-modern-auth-overview.md)
@@ -44,7 +45,7 @@ Pour planifier l’implémentation de votre client, procédez comme suit :
 
 ## <a name="deploy"></a>Déployer
 
-Pour déployer votre client, [Ajoutez les domaines DNS](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) de votre organisation.
+Pour déployer votre client, [Ajoutez les domaines DNS](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) de votre organisation et utilisez les [guides de configuration dans le centre d’administration 365 de Microsoft](setup-guides-for-microsoft-365.md).
 
 ## <a name="tenants-with-multiple-geographic-locations"></a>Clients disposant de plusieurs emplacements géographiques
 
