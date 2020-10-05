@@ -9,14 +9,14 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: Découvrez comment créer un extracteur dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: d68cc8b8c337c1ae6740eb5775576a54279b8389
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: 260486c128ce76c31fe5f4a0994b4e103687b829
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48321808"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338648"
 ---
-# <a name="create-an-extractor-preview"></a>Créer un extracteur (aperçu)
+# <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>Créer un extracteur dans Microsoft SharePoint Syntex
 
 
 </br>
@@ -122,9 +122,20 @@ Si vous recevez de nouveau une **incompatibilité** sur vos fichiers étiquetés
 
 ## <a name="test-your-model"></a>Tester votre modèle
 
-Si vous recevez une correspondance sur vos fichiers échantillons étiquetés, vous pouvez à présent tester votre modèle sur les autres exemples de fichiers non étiquetés. Cette étape permet d’évaluer la « pertinence » ou le degré de préparation du modèle avant utilisation, en le testant sur des fichiers pour l’instant inconnus de lui.
+Si vous recevez une correspondance sur vos fichiers échantillons étiquetés, vous pouvez à présent tester votre modèle sur les autres exemples de fichiers non étiquetés. Cette étape est facultative mais utile, car elle permet d’évaluer la « pertinence » ou le degré de préparation du modèle avant utilisation, en le testant sur des fichiers pour l’instant inconnus de ce dernier.
 
-1. Dans la page d’accueil du modèle, cliquez sur l’onglet **Test**. Le modèle est alors exécuté sur vos fichiers échantillons non étiquetés.
+1. Dans la page d’accueil du modèle, cliquez sur l’onglet **Test**. Le modèle s’exécute alors sur vos fichiers échantillons non étiquetés.
 2. Dans la liste **Fichiers de test**, vos exemples de fichiers affichés indiquent si le modèle peut extraire les informations nécessaires. Utilisez ces informations pour déterminer plus facilement l’efficacité de votre classifieur lors de l’identification de vos documents.
 
     ![Test de vos fichiers](../media/content-understanding/test-filies-extractor.png) 
+
+## <a name="see-also"></a>Voir aussi
+[Créer un classifieur](create-a-classifier.md)
+
+[Types d’explications](explanation-types-overview.md)
+
+[Utiliser la taxonomie du magasin de termes lors de la création d’un extracteur](leverage-term-store-taxonomy.md)
+
+[Présentation de la compréhension de document](document-understanding-overview.md)
+
+[Appliquer un modèle](apply-a-model.md) 

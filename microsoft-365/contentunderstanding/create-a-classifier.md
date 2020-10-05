@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: Découvrez comment créer un classifieur
-ms.openlocfilehash: 1225a4e57969b507ddd2ca7260050605c0db955e
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: 948ece1a19b7e6049167c373b3200efd316a60cd
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48321856"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338636"
 ---
 # <a name="create-a-classifier-in-microsoft-sharepoint-syntex"></a>Créer un classifieur dans Microsoft SharePoint Syntex
 
@@ -131,7 +131,7 @@ Si une **incompatibilité** apparaît sur les fichiers étiquetés, vous devrez 
 
 ## <a name="test-your-model"></a>Tester votre modèle
 
-Si vous avez reçu une correspondance sur vos fichiers échantillons étiquetés, vous pouvez à présent tester votre modèle sur les autres exemples de fichiers non étiquetés pour vérifier que ce modèle est inconnu.  Cette étape est facultative.
+Si vous avez reçu une correspondance sur vos fichiers échantillons étiquetés, vous pouvez à présent tester votre modèle sur les autres exemples de fichiers non étiquetés pour vérifier que ce modèle est inconnu.  Cette étape est facultative mais utile, car elle permet d’évaluer la « pertinence » ou le degré de préparation du modèle avant utilisation, en le testant sur des fichiers pour l’instant inconnus de ce dernier.
 
 1. Dans la page d’accueil du modèle, sélectionnez l’onglet **Test**. Le modèle est alors exécuté sur vos fichiers échantillons non étiquetés.
 2. Dans la liste **Fichiers de test**, vos exemples de fichiers indiquent s’ils sont positifs ou négatifs d’après les prévisions du modèle. Utilisez ces informations pour déterminer plus facilement l’efficacité de votre classifieur lors de l’identification de vos documents.
@@ -143,6 +143,6 @@ Si vous avez reçu une correspondance sur vos fichiers échantillons étiquetés
 
 [Présentation de la compréhension de document](document-understanding-overview.md)
 
-[Créer un modèle de traitement de formulaire](create-a-form-processing-model.md)
+[Types d’explications](explanation-types-overview.md)
 
 [Appliquer un modèle](apply-a-model.md) 
