@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: Décrit la principale différence entre la compréhension de document et les modèles de traitement de formulaire
-ms.openlocfilehash: 5fa9bd6b5873a11c00b19663226c4e3dd2b65825
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: 71887aeeb66699b3d756317b33d52607f480aa7d
+ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48321784"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48333871"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models"></a>Différence entre la compréhension de document et les modèles de traitement de formulaire 
 
@@ -30,6 +30,8 @@ Il existe deux types de modèles que vous pouvez utiliser :
 
 Bien que les deux modèles soient généralement utilisés dans le même but, les principales différences répertoriées ci-dessous affectent ceux que vous pouvez utiliser.
 
+> [!NOTE]
+> Pour plus d’informations sur les exemples de scénarios de traitement de formulaires et de présentation de documents, consultez l'article [SharePoint Syntex adoption : guide de mise en route](https://docs.microsoft.com/microsoft-365/contentunderstanding/adoption-getstarted#form-processing-scenario-example).
 
 
 ## <a name="structured-versus-unstructured-and-semi-structured-content"></a>Contenu structuré, contenu non structuré ou contenu semi-structuré
