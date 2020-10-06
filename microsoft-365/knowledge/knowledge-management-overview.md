@@ -11,17 +11,17 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Vue d’ensemble de la gestion des connaissances dans le projet cortex.
-ms.openlocfilehash: 80750ee94248b21b8ac7bd3869830a7986de34b9
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: c4f7ff7d65ec08740dc14f717712731d839bd903
+ms.sourcegitcommit: d648356b27842e779921859480b1b405a1804c7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949371"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48361950"
 ---
-# <a name="knowledge-management-0verview-preview"></a>0verview de gestion des informations (aperçu)
+# <a name="knowledge-management-overview-preview"></a>Vue d’ensemble de la gestion des connaissances (aperçu)
 
 > [!Note] 
-> Le contenu de cet article est destiné à Project cortex privé preview. [En savoir plus sur le projet cortex](https://aka.ms/projectcortex) 
+> Le contenu de cet article est destiné à Project cortex privé preview. [En savoir plus sur le Projet cortex](https://aka.ms/projectcortex).
 
 Knowledge Management utilise la technologie Microsoft AI, Microsoft 365, Delve, Search, ainsi que d’autres composants et services pour créer un réseau de connaissances dans votre environnement Microsoft 365. 
 

@@ -4,7 +4,7 @@ ms.author: kvice
 ms.reviewer: smithre4
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 04/15/2020
+ms.date: 08/25/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 description: Dans cet article, vous allez découvrir l’authentification moderne hybride et les conditions préalables à l’utilisation de Skype entreprise et des serveurs Exchange locaux.
-ms.openlocfilehash: 1e0330bd62d9098f11a12b44b46e9ace30b59420
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 82cd4203e2e9dc53c6add542c5f0ba90530b6548
+ms.sourcegitcommit: d648356b27842e779921859480b1b405a1804c7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546443"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48361926"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>Vue d’ensemble de l’authentification moderne hybride et configuration requise pour l’utiliser avec les serveurs Skype Entreprise et Exchange locaux
 
@@ -143,18 +143,22 @@ Vérifiez et cochez les éléments de votre liste avant de continuer :
   - Si vous utilisez Exchange Server 2013, au moins un serveur doit avoir les rôles serveur de boîtes aux lettres et serveur d’accès au client installés. Alors qu’il est possible d’installer les rôles de boîte aux lettres et d’accès au client sur des serveurs séparés, nous vous recommandons vivement d’installer ces deux rôles sur le même serveur pour accroître la fiabilité et améliorer les performances.
   - Si vous utilisez Exchange Server 2016 ou une version ultérieure, le rôle serveur de boîtes aux lettres doit être installé sur un serveur au minimum.
   - Il n’existe aucun serveur Exchange Server 2007 ou 2010 dans l’environnement hybride.
-  - Les mises à jour cumulatives les plus récentes doivent être installées sur tous les serveurs Exchange, pour rechercher et gérer les mises à jour disponibles, consultez [Mettre à niveau Exchange vers les dernières mises à jour cumulatives](https://docs.microsoft.com/exchange/plan-and-deploy/install-cumulative-updates?view=exchserver-2019).
+  - Les mises à jour cumulatives les plus récentes doivent être installées sur tous les serveurs Exchange, pour rechercher et gérer les mises à jour disponibles, consultez [Mettre à niveau Exchange vers les dernières mises à jour cumulatives](https://docs.microsoft.com/exchange/plan-and-deploy/install-cumulative-updates).
 
 - **Configuration requise pour le client et le protocole Exchange**
 
-  - Les clients suivants prennent en charge l’authentification moderne :
+    La disponibilité de l’authentification moderne est déterminée par la combinaison du client, du protocole et de la configuration. Si l’authentification moderne n’est pas prise en charge par le client, le protocole et/ou la configuration, le client continuera à utiliser l’authentification héritée.
+  
+    Les clients et protocoles suivants prennent en charge l’authentification moderne avec Exchange local lorsque l’authentification moderne est activée dans l’environnement :
 
   |**Clients**|**Protocole principal**|**Notes**|
   |:-----|:-----|:-----|
-  |Outlook 2013 et Outlook 2016  <br/> |MAPI sur HTTP  <br/> |MAPI sur HTTP doit être activé dans Exchange afin de tirer parti de l’authentification moderne avec ces clients (généralement activé pour les nouvelles installations d’Exchange 2013 Service Pack 1 et versions ultérieures). Pour plus d’informations, consultez [Fonctionnement de l’authentification moderne pour les applications clientes Office 2013 et Office 2016](modern-auth-for-office-2013-and-2016.md).  <br/> Vérifiez que vous exécutez la build minimale requise d’Outlook, consultez [Dernières mises à jour pour les versions d’Outlook qui utilisent Windows Installer (MSI)](https://docs.microsoft.com/officeupdates/outlook-updates-msi).  <br/> |
-  |Outlook 2016 pour Mac  <br/> |Services Web Exchange  <br/> |  <br/> |
-  |Outlook pour iOS et Android  <br/> |  <br/> |Pour plus d’informations, consultez [Utilisation de l’authentification moderne hybride avec Outlook pour iOS et Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth).  <br/> |
+  |Outlook 2013 et versions ultérieures  <br/> |MAPI sur HTTP  <br/> |MAPI sur HTTP doit être activé dans Exchange afin de tirer parti de l’authentification moderne avec ces clients (généralement activé pour les nouvelles installations d’Exchange 2013 Service Pack 1 et versions ultérieures). Pour plus d’informations, consultez [Fonctionnement de l’authentification moderne pour les applications clientes Office 2013 et Office 2016](modern-auth-for-office-2013-and-2016.md).  <br/> Vérifiez que vous exécutez la build minimale requise d’Outlook, consultez [Dernières mises à jour pour les versions d’Outlook qui utilisent Windows Installer (MSI)](https://docs.microsoft.com/officeupdates/outlook-updates-msi).  <br/> |
+  |Outlook 2016 pour Mac et versions ultérieures  <br/> |Services Web Exchange  <br/> |  <br/> |
+  |Outlook pour iOS et Android  <br/> | Technologie de synchronisation Microsoft <br/> |Pour plus d’informations, consultez [Utilisation de l’authentification moderne hybride avec Outlook pour iOS et Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth).  <br/> |
   |Clients Exchange ActiveSync (par exemple, iOS11 mail)  <br/> |Exchange ActiveSync  <br/> |Pour les clients Exchange ActiveSync qui prennent en charge l’authentification moderne, vous devez recréer le profil pour passer de l’authentification de base à l’authentification moderne.  <br/> |
+
+    Les clients et/ou les protocoles qui ne sont pas répertoriés (par exemple, POP3) ne prennent pas en charge l’authentification moderne avec Exchange sur site et continuent d’utiliser les mécanismes d’authentification hérités même après l’activation de l’authentification moderne dans l’environnement.
 
 - **Conditions préalables générales**
   - Si vous utilisez AD FS, vous devez disposer de Windows 2012 R2 AD FS 3.0 et versions ultérieures pour la fédération.

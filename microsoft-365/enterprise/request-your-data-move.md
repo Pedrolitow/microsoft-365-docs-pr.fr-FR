@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Les clients Office 365 existants doivent soumettre une demande avant la date d’échéance de leur pays pour que leurs données Microsoft 365 services soient déplacées vers leur nouvelle région géographique.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 10c77fdde8583c9d791c9fed936f94aad8fc7264
-ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
+ms.openlocfilehash: 7f8f25fcaf3e8beb59ca43ad260e2636cf0c4949
+ms.sourcegitcommit: d648356b27842e779921859480b1b405a1804c7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48333883"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48361938"
 ---
 # <a name="how-to-request-your-data-move"></a>Procédure de demande d’un déplacement de données
 
@@ -31,7 +31,7 @@ Les clients Microsoft 365 éligibles peuvent demander la migration de leurs donn
   
 ## <a name="when-can-i-request-a-move"></a>Quand puis-je demander un déplacement ?
 
-|**Clients avec pays d’abonnement dans**|**Début de période de la demande**|**Date d'échéance de la demande**|
+| Clients avec pays d’abonnement dans | Début de période de la demande | Date d’échéance de la demande |
 |:-----|:-----|:-----|
 |Japon  <br/> |1er janvier 2020  <br/> |30 juin 2020  <br/> |
 |Australie, Nouvelle-Zélande, Fidji  <br/> |1er janvier 2020  <br/> |30 juin 2020  <br/> |
@@ -44,7 +44,7 @@ Les clients Microsoft 365 éligibles peuvent demander la migration de leurs donn
 |Afrique du Sud  <br/> |25 juillet 2019  <br/> |30 juin 2020  <br/> |
 |Suisse, Liechtenstein  <br/> |10 décembre 2019  <br/> |30 juin 2020  <br/> |
 |Norvège  <br/> |15 avril 2020  <br/> |31 octobre 2020  <br/> |
-|Allemagne  <br/> |1er octobre 2020  <br/> |31 mars 2021  <br/> |
+|Allemagne  <br/> |Vision  <br/> |Vision  <br/> |
 
 ## <a name="how-to-request-a-move"></a>Procédure de demande d’un déplacement
 
@@ -65,7 +65,7 @@ Après avoir demandé un déplacement, nous allons planifier le déplacement de 
   
 Les déplacements peuvent prendre jusqu'à 24 mois à compter de la date d'échéance de la demande pour votre pays.
   
-## <a name="microsoft-teams"></a>Microsoft Teams
+## <a name="microsoft-teams"></a>Microsoft Teams
 
 Depuis le 2020 janvier, les clients des pays Office 365 éligibles peuvent opter pour la migration des données du service de conversation Microsoft Teams.  Les clients ayant précédemment opté pour un déplacement de résidence de données auront également des équipes déplacer vers leur propre région de centre de données local.  Aucune action supplémentaire n’est requise par ces clients.
 
