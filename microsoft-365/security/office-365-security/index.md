@@ -13,13 +13,13 @@ search.appverid:
 - MOE150
 ms.collection:
 - M365-security-compliance
-description: Sécurité dans Office 365, des plans d’EOP à ATP 1 et 2, des configurations de sécurité standard ou rigoureuses, et bien plus, afin que vous puissiez comprendre ce dont vous disposez et comment sécuriser vos propriétés.
-ms.openlocfilehash: bfce840aa05eaebecc1ec227c6c29bd11cb0a823
-ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
+description: Sécurité dans Office 365, des plans EOP à ATP 1 et 2, des configurations de sécurité standard ou rigoureuses, et bien plus encore. Comprendre ce dont vous disposez et comment sécuriser vos propriétés.
+ms.openlocfilehash: c5b357dc7a08eeef099b25172169d04cdb81e8c4
+ms.sourcegitcommit: 5abd5ef8c2903b4c3bd875da68049fde26768dcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338710"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "48359152"
 ---
 # <a name="office-365-security-overview"></a>Vue d’ensemble de la sécurité d’Office 365
 
@@ -53,9 +53,9 @@ Toutefois, en ce qui concerne l’architecture, nous allons commencer par réfl�
 
 :::image type="content" source="../../media/tp_GraphicEOPATPP1P2_2.png" alt-text="Placeholder graphic":::
 
-Bien que chacun de ces services mette en évidence un objectif spécifique parmi les objectifs de la protection, de la détection, de l’examen et de la réponse, ***tous*** les services peuvent ***effectuer les objectifs*** de protection, de détection, d’analyse et de réponse.
+Bien que chacun de ces services insiste sur un objectif de la protection, de la détection, de ***l'*** examen et de la réponse, ***tous*** les services peuvent effectuer les objectifs de protection, de détection, d’analyse et de réponse.
 
-Le cœur de la sécurité Office 365 est la protection EOP. ATP P1 contient EOP. ATP P2 contient P1 et EOP. La structure est cumulative. C’est pourquoi, lors de la configuration de la protection avancée contre les menaces, commencez par EOP et utilisez les couches.
+Le cœur de la sécurité Office 365 est la protection EOP. ATP P1 contient EOP. ATP P2 contient P1 et EOP. La structure est cumulative. C’est pourquoi, lors de la configuration de ce produit, vous devez commencer avec EOP et travailler sur ATP.
 
 Bien que la configuration de l’authentification de messagerie ait lieu dans le DNS public, il est important de configurer cette fonctionnalité pour la protéger contre l’usurpation d’identité. *Si vous disposez d’EOP,* ***vous devez [configurer l’authentification de messagerie](https://docs.microsoft.com/microsoft-365/security/office-365-security/email-validation-and-authentication)***.
 
@@ -138,11 +138,11 @@ Ce guide de référence rapide vous aidera à comprendre les fonctionnalités fo
 - Si votre abonnement actuel n’inclut pas Office 365 ATP et que vous le souhaitez, [contactez sales pour commencer une version d’évaluation](https://go.microsoft.com/fwlink/p/?LinkId=518644)et découvrez le fonctionnement de l’ATP pour votre organisation.
 
 > [!TIP]
-> ***Conseil Insider***. Vous pouvez utiliser la table des matières docs.microsoft.com pour en savoir plus sur EOP et la protection avancée contre les menaces. Accédez aux articles sur la [sécurité d’Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap) et vous remarquerez que l’organisation de la table des matières commence par l’évaluation et le déploiement (y compris la migration), puis continue à la prévention, la détection, l’enquête et la réponse. <p> Cette structure est divisée de manière à ce que les rubriques relatives à l’administration de la **sécurité** soient suivies par les rubriques **opérations de sécurité** . Si vous êtes un nouveau membre de l’un des rôles de travail, utilisez le lien de ce Conseil et vos connaissances de la table des matières pour en savoir plus sur l’espace. N’oubliez pas d’utiliser les *liens de commentaires* et les *Articles de taux* au fur et à mesure. Les commentaires nous permettent d’améliorer votre offre.
+> ***Conseil Insider***. Vous pouvez utiliser la table des matières docs.microsoft.com pour en savoir plus sur EOP et la protection avancée contre les menaces. Accédez à cette page, [vue d’ensemble de la sécurité Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/?view=o365-worldwide), et vous remarquerez que l’organisation de la table des matières est située dans la barre latérale. Il commence par le déploiement (y compris la migration), puis continue à la prévention, la détection, l’enquête et la réponse. <p> Cette structure est divisée de manière à ce que les rubriques relatives à l’administration de la **sécurité** soient suivies par les rubriques **opérations de sécurité** . Si vous êtes un nouveau membre de l’un des rôles de travail, utilisez le lien de ce Conseil et vos connaissances de la table des matières pour en savoir plus sur l’espace. N’oubliez pas d’utiliser les *liens de commentaires* et les *Articles de taux* au fur et à mesure. Les commentaires nous permettent d’améliorer votre offre.
 
 ## <a name="where-to-go-next"></a>Emplacement suivant
 
-Si vous êtes un administrateur de la sécurité, vous devrez peut-être configurer DKIM ou DMARC pour votre courrier, déployer des préréglages de sécurité stricts pour vos utilisateurs prioritaires, ou vous pouvez rechercher les nouveautés du produit. Si vous utilisez des opérations de sécurité, vous souhaiterez peut-être utiliser des détections en temps réel ou l’Explorateur de menaces pour examiner et répondre, ou pour former une détection d’utilisateur final avec un simulateur d’attaque. Voici quelques recommandations supplémentaires pour ce qu’il faut examiner.
+Si vous êtes un administrateur de la sécurité, vous devrez peut-être configurer DKIM ou DMARC pour votre courrier. Vous souhaiterez peut-être déployer des préréglages de sécurité « stricts » pour vos utilisateurs prioritaires ou rechercher les nouveautés du produit. Si vous êtes avec des opérations de sécurité, vous souhaiterez peut-être utiliser des détections en temps réel ou l’Explorateur de menaces pour examiner et répondre, ou pour former une détection d’utilisateur final avec un simulateur d’attaque. Dans les deux cas, voici quelques recommandations supplémentaires sur ce qu’il faut examiner.
 
 [Authentification de messagerie, y compris SPF, DKIM et DMARC (avec des liens vers le programme d’installation de tous les trois)](https://docs.microsoft.com/microsoft-365/security/office-365-security/email-validation-and-authentication)
 
