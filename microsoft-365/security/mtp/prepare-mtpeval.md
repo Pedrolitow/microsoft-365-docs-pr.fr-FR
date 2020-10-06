@@ -13,14 +13,16 @@ author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365solution-evalutatemtp
 ms.topic: article
-ms.openlocfilehash: 97e75b07721c180fe6b4df56c2d9cc819b610802
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: ac60415f38644c4630a181b1c8d696acced57ded
+ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195546"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48368000"
 ---
 # <a name="prepare-your-microsoft-threat-protection-trial-lab-or-pilot-environment"></a>Préparation de votre laboratoire d’évaluation ou de votre environnement pilote Microsoft Threat Protection
 
@@ -86,7 +88,7 @@ Ajoutez des parties prenantes dans le tableau ci-dessous selon les besoins de vo
 
 -   I = informé de ce projet
 
-| Nom                 | Rôle                                                                                                                                                                                                          | Action |
+| Nom                 | Role                                                                                                                                                                                                          | Action |
 |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|
 | Entrer le nom et l’adresse de messagerie | **Directeur de la sécurité des informations (CISO)** *un représentant exécutif qui sert de sponsor au sein de l’Organisation pour le déploiement de la nouvelle technologie.*                                                  | C'     |
 | Entrer le nom et l’adresse de messagerie | **Directeur du centre d’opérations Cyber Defense (Cdoc)** *représentant de l’équipe Cdoc chargée de définir la manière dont cette modification est alignée sur les processus de l’équipe des opérations de sécurité des clients.*       | C'     |
@@ -129,9 +131,9 @@ Le tableau ci-dessous indique l’ordre dans lequel Microsoft recommande de conf
 
 | Composant                               | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Classement de la commande de configuration |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
-| Office 365 – Protection avancée contre les menaces| Office 365 ATP protège votre organisation contre les menaces malveillantes posées par les messages électroniques, les liens (URL) et les outils de collaboration. <br> [Pour en savoir plus.](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)                                                                                                                                                                                                                                             | 0,1                   |
+| Office 365 – Protection avancée contre les menaces| Office 365 ATP protège votre organisation contre les menaces malveillantes posées par les messages électroniques, les liens (URL) et les outils de collaboration. <br> [Pour en savoir plus.](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)                                                                                                                                                                                                                                             | 1                    |
 |Azure Advanced Threat Protection|Azure ATP utilise des signaux Active Directory pour identifier, détecter et examiner les menaces avancées, les identités compromises et les actions malveillantes dirigées vers votre organisation. <br> [En savoir plus](https://docs.microsoft.com/azure-advanced-threat-protection/).| 2  |
-|Microsoft Cloud App Security| La sécurité des applications Cloud Microsoft est un courtier en matière de sécurité d’accès au Cloud (CASB) qui fonctionne sur plusieurs nuages. Il offre une visibilité riche, un contrôle sur le déplacement des données et des analyses sophistiquées pour identifier et combattre Cyber dans tous vos services Cloud. <br> [En savoir plus](https://docs.microsoft.com/cloud-app-security/).                                                                                                                                                                                                                                                                                                                                                                       |3                   |
+|Microsoft Cloud App Security| La sécurité des applications Cloud Microsoft est un courtier en matière de sécurité d’accès au Cloud (CASB) qui fonctionne sur plusieurs nuages. Il offre une visibilité riche, un contrôle sur le déplacement des données et des analyses sophistiquées pour identifier et combattre Cyber dans tous vos services Cloud. <br> [En savoir plus](https://docs.microsoft.com/cloud-app-security/).                                                                                                                                                                                                                                                                                                                                                                       |3                    |
 |Microsoft Defender – Protection avancée contre les menaces | Les fonctionnalités de détection et de réponse des points de terminaison de Microsoft Defender – Protection avancée contre les menaces assurent des détections avancées des attaques en quasi temps réel et exploitables. Les analystes de la sécurité peuvent hiérarchiser efficacement les alertes, avoir une meilleure visibilité de l’ampleur d’une faille et prendre des mesures correctives pour remédier aux menaces. <br> [Pour en savoir plus.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)                                     |4                    |                                                                                                                                                                                                                                    
 
 ## <a name="next-step"></a>Étape suivante
