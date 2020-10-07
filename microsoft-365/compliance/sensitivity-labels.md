@@ -22,12 +22,12 @@ description: Utilisez les étiquettes de confidentialité de Microsoft informati
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 349adfd181a86d04b8188d8bf76df8ae9dc5c3a6
-ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
+ms.openlocfilehash: 9a02b5b6f0e78a71ab598b860248422d751c8400
+ms.sourcegitcommit: d648356b27842e779921859480b1b405a1804c7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338555"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48361961"
 ---
 # <a name="learn-about-sensitivity-labels"></a>En savoir plus sur les étiquettes de niveau de confidentialité
 
@@ -44,9 +44,9 @@ Exemple montrant les étiquettes de confidentialité disponibles dans Excel à p
 Pour appliquer des étiquettes de confidentialité, les utilisateurs doivent être connectés avec leur compte Microsoft 365 professionnel ou scolaire.
 
 > [!NOTE]
-> Pour les clients de la communauté du secteur public des États-Unis (GCC et GCC-HC), les étiquettes de confidentialité ne sont actuellement prises en charge que pour le client et l’analyseur d’étiquetage unifié d’Azure Information Protection. 
+> Pour les clients du secteur public des États-Unis (GCC, GCC-HC et DoD), les étiquettes de confidentialité ne sont actuellement prises en charge que pour le client et l’analyseur d’étiquetage unifié d’Azure Information Protection. 
 > 
-> Si vous souhaitez obtenir plus d’informations, voir le billet de blog, [Annonce de la mise à disposition générale de l’étiquetage unifié dans les environnements GCC et GCC-H](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-general-availability-of-unified-labeling-in-gcc-and/ba-p/1563215).
+> Si vous souhaitez en savoir plus, veuillez consulter la rubrique [Description du service public Azure Information Protection Premium](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description).
 
 Vous pouvez utiliser les étiquettes de niveau de confidentialité aux fins suivantes :
   
