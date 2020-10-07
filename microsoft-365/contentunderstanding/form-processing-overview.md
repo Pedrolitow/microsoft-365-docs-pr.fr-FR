@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: En savoir plus sur le traitement de formulaires dans Microsoft SharePoint Syntex
-ms.openlocfilehash: bbdf318b7d0c4a9f58cc79453dfaaf0daf5b9a5c
-ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
+ms.openlocfilehash: 9b5b9b1c54220037e1c10f2722a641b526592f84
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48333900"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338612"
 ---
 # <a name="form-processing-overview"></a>Vue d’ensemble du traitement des formulaires
 
@@ -43,7 +43,7 @@ Vous pouvez également utiliser des exemples de fichiers pour former votre modè
 
 Une fois que vous avez créé votre modèle et que vous l’avez publié, celui-ci crée un [Power Automate Flow](https://docs.microsoft.com/power-automate/getting-started). Le flux s’exécute lorsqu’un fichier est téléchargé dans la bibliothèque de documents SharePoint et extrait les données qui ont été identifiées dans le modèle. Les données extraites s’affichent dans les colonnes de la vue bibliothèque de documents de votre modèle.
 
-Un administrateur Office 365 doit [activer le traitement de formulaires](https://docs.microsoft.com/microsoft-365/contentunderstanding/set-up-content-understanding#to-set-up-content-understanding)pour la bibliothèque de documents SharePoint pour permettre aux utilisateurs de [créer un modèle de traitement de formulaire](create-a-form-processing-model.md) dans celui-ci.
+Un administrateur Office 365 doit [activer le traitement de formulaires](https://docs.microsoft.com/microsoft-365/contentunderstanding/set-up-content-understanding#to-set-up-content-understanding)pour la bibliothèque de documents SharePoint pour permettre aux utilisateurs de [créer un modèle de traitement de formulaire](create-a-form-processing-model.md) dans celui-ci. Vous pouvez sélectionner les sites pendant ou après la configuration dans vos paramètres de gestion.
 
 
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de confidentialité pour protéger le contenu des sites SharePoint et Microsoft Teams, ainsi que des Groupes Microsoft 365.
-ms.openlocfilehash: 4ae0491699f2ffa60245d502bb691b2c79b34133
-ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.openlocfilehash: 6c8ca07cc0da826be23bcee79dbc4e3824b00695
+ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48305376"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "48357880"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint
 
@@ -76,7 +76,7 @@ Si vous avez besoin d’aide pour créer ou modifier une étiquette de confident
 
 Dans cette nouvelle page de **Paramètres de site et de groupe**, configurez les paramètres :
 
-- **Confidentialité des sites d’équipe connectés aux groupes Office 365**: conserver la valeur par défaut de **Publique-tous les membres de l’organisation peuvent accéder au site** si vous souhaitez que tous les membres de votre organisation accèdent au site d’équipe ou au groupe auquel cette étiquette est appliquée.
+- **Confidentialité des sites d’équipe connectés aux groupes Microsoft 365**: conserver la valeur par défaut de **Publique : tous les membres de l’organisation peuvent accéder au site** si vous souhaitez que tous les membres de votre organisation accèdent au site d’équipe ou au groupe auquel cette étiquette est appliquée.
 
   Sélectionnez **Privé** si vous voulez limiter l’accès aux seuls membres approuvés au sein de votre organisation.
 

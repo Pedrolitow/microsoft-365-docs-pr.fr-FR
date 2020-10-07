@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: Décrit la principale différence entre la compréhension de document et les modèles de traitement de formulaire
-ms.openlocfilehash: 71887aeeb66699b3d756317b33d52607f480aa7d
-ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
+ms.openlocfilehash: c5d60753e84cb55dc088b79f90fe841b50da1836
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48333871"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338593"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models"></a>Différence entre la compréhension de document et les modèles de traitement de formulaire 
 
@@ -68,10 +68,10 @@ Actuellement, les modèles de traitement de formulaire ne peuvent être appliqu�
  ## <a name="see-also"></a>Voir aussi
 [Formation : Améliorer les performances de votre entreprise avec AI Builder](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)
 
-[Créer un classifieur](create-a-classifier.md)
 
-[Créer un extracteur](create-an-extractor.md)
 
-[Appliquer un modèle de compréhension de document](apply-a-model.md)
+[Vue d’ensemble de la compréhension de document](document-understanding-overview.md)
 
-[Créer un modèle de traitement de formulaire](create-a-form-processing-model.md)
+[Vue d’ensemble du traitement des formulaires](form-processing-overview.md)
+
+[Introduction à SharePoint Syntex](index.md)
