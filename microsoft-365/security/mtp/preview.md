@@ -19,21 +19,22 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 51b764e660ae36ae3476809b5fe6dae1c4ca0891
-ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.openlocfilehash: 8b3f8d6868d14b8791a676367d4fb9ad5c2e3307
+ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48304961"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48370379"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Fonctionnalités d’aperçu de la Protection Microsoft contre les menaces
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
+>[!IMPORTANT]
+>Les versions préliminaires sont fournies sans contrat de niveau de service et ne sont pas recommandées pour les charges de travail de production. Certaines fonctionnalités peuvent ne pas être prises en charge ou avoir des capacités limitées.
 
 **S’applique à :**
 - Protection Microsoft contre les menaces
-
 
 Nous mettons constamment à jour le service Protection Microsoft contre les menaces de manière à inclure de nouvelles capacités et améliorations de fonctionnalités.
 

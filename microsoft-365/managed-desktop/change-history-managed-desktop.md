@@ -13,16 +13,35 @@ f1.keywords:
 ms.author: jaimeo
 ms.article: article
 ms.localizationpriority: normal
-ms.openlocfilehash: a483a03fc913a019f58e80fb2713bb0367a6db44
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 9dec293a26cbc3d239a597e46815d60d79b9ac20
+ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546269"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48370411"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Historique des modifications de la documentation relative au Bureau géré Microsoft
 
 Cet article répertorie les articles nouveaux et mis à jour dans la [documentation du bureau géré Microsoft](index.yml). Les articles « mis à jour » sont ceux qui ont eu des ajouts ou corrections de matériel (correctifs mineurs, tels que la correction des fautes de frappe, de style ou de mise en forme). Vous pouvez toujours afficher l’historique des validations spécifiques (y compris les détails de toutes les modifications) en visitant le [référentiel sur GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
+
+
+## <a name="september-2020"></a>Septembre 2020
+Article nouveau ou modifié | Description
+--- | ---
+[Confidentialité et données personnelles](service-description/privacy-personal-data.md) | Nouvel article
+[Préparer les lecteurs mappés pour le Bureau géré Microsoft](get-ready/mapped-drives.md) | Article mis à jour
+[Obtenir de l’aide pour les utilisateurs](working-with-managed-desktop/end-user-support.md) | Article mis à jour
+[Référence des paramètres configurables-bureau géré Microsoft](working-with-managed-desktop/config-setting-ref.md) | Article mis à jour
+[Déployer et suivre les paramètres configurables-bureau géré Microsoft](working-with-managed-desktop/config-setting-deploy.md) | Article mis à jour
+[Aide administrateur pour le Bureau géré Microsoft](working-with-managed-desktop/admin-support.md) | Article mis à jour
+[Microsoft Teams](get-started/teams.md) | Nouvel article
+[Accéder au portail d’administration](get-started/access-admin-portal.md) | Nouvel article
+[Préparer des ressources d’impression pour le Bureau géré Microsoft](get-ready/printing.md) | Article mis à jour
+[Expérience de première exécution avec le pilote automatique et la page état d’inscription](get-started/esp-first-run.md) | Article mis à jour
+[Inscrivez vous-même les nouveaux appareils](get-started/register-devices-self.md) | Article mis à jour
+[Préparer les certificats et les profils réseau pour le Bureau géré Microsoft](get-ready/certs-wifi-lan.md) | Article mis à jour
+[Configuration requise pour le Bureau géré Microsoft](get-ready/prerequisites.md) | Article mis à jour
+[Utiliser les informations](working-with-managed-desktop/insights.md) | Article mis à jour
 
 ## <a name="august-2020"></a>Août 2020
 Article nouveau ou modifié | Description

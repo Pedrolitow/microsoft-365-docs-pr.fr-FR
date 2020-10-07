@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: Découvrez comment utiliser les fonctionnalités de gouvernance d’identités Microsoft 365.
-ms.openlocfilehash: d5bcafb5b452e693bf3ff706c436a9986eeeae76
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: e4c537e7fa3ac099caf8b7dbc44327308751c8f5
+ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48328515"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48370345"
 ---
 # <a name="manage-microsoft-365-identity-governance"></a>Gérer Microsoft 365 Identity Governance
 
@@ -46,8 +46,6 @@ Les révisions Azure AD Access vous permettent de vérifier l’accès d’un ut
 Ceci est particulièrement important si votre organisation fait l’objet d’audits de sécurité pour déterminer si les comptes d’utilisateurs ont un niveau d’accès trop important, ce qui peut entraîner des amendes en cas de violation des réglementations régionales ou industrielles.
 
 Pour plus d’informations, consultez la rubrique [vue d’ensemble des révisions Access](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview).
-
-Azure AD Privileged Identity Management (PIM) offre des contrôles supplémentaires conçus pour sécuriser les droits d’accès aux ressources dans Azure AD, Azure et d’autres services de cloud computing Microsoft. Azure AD PIM fournit un ensemble complet de contrôles de gouvernance pour vous aider à sécuriser les ressources de votre entreprise telles que le répertoire, Office 365 et les rôles de ressources Azure. Comme avec d’autres formes d’accès, les organisations peuvent utiliser les révisions d’accès pour configurer une recertification récurrente des accès pour tous les utilisateurs bénéficiant de rôles d’administrateur. Azure AD PIM est disponible uniquement avec la version E5 de Microsoft 365 Entreprise.
 
 Pour configurer différents types de révisions d’accès, consultez les articles suivants :
 
