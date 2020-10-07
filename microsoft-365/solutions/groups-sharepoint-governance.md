@@ -10,16 +10,17 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
+- m365solution-collabgovernance
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: En savoir plus sur les interactions de paramètres entre les groupes Microsoft 365 et SharePoint
-ms.openlocfilehash: 0c9fdd69db82985039bae03768aa0c19f514c99f
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: e8d4189c2d945d5a6d2aa78bd7ea980a77360ce0
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662620"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377556"
 ---
 # <a name="settings-interactions-between-microsoft-365-groups-and-sharepoint"></a>Interactions de paramètres entre les groupes Microsoft 365 et SharePoint
 
@@ -41,7 +42,7 @@ Certains paramètres pour les groupes Microsoft 365 et SharePoint dans Microsoft
 
 |Paramètre de groupes Microsoft 365|Description|Effet sur SharePoint|Recommandation|
 |:---------------------------|:----------|:-------------------|:-------------|
-|Stratégies d’attribution de noms|Spécifie les préfixes de nom de groupe et les suffixes, et les mots bloqués pour la création de groupe|Les stratégies sont appliquées pour les utilisateurs qui créent des sites d’équipe connectés à un groupe, mais pas des sites de communication ou des sites avec d’autres modèles.|Créez des instructions de dénomination distinctes pour les sites de communication, le cas échéant.|
+|Conventions d’attribution de nom|Spécifie les préfixes de nom de groupe et les suffixes, et les mots bloqués pour la création de groupe|Les stratégies sont appliquées pour les utilisateurs qui créent des sites d’équipe connectés à un groupe, mais pas des sites de communication ou des sites avec d’autres modèles.|Créez des instructions de dénomination distinctes pour les sites de communication, le cas échéant.|
 |Accès invité de groupe|Indique si les utilisateurs externes à l’organisation peuvent être ajoutés à des groupes.|Si les paramètres SharePoint et les groupes ne correspondent pas, les invités du groupe peuvent être bloqués ou l’accès externe peut être disponible sur le site, mais pas dans le groupe.|Lors de la modification des paramètres de partage, vérifiez les paramètres de groupe et les paramètres de site SharePoint pour les sites d’équipe connectés à un groupe.<br><br>Voir [collaborer avec des invités dans un site](https://docs.microsoft.com/microsoft-365/solutions/collaborate-in-site)|
 |Création de groupe par groupe de sécurité|Les groupes ne peuvent être créés que par les membres d’un groupe de sécurité spécifique.|Les utilisateurs qui ne sont pas membres du groupe de sécurité ne seront pas en mesure de créer un site d’équipe connecté à un groupe.|Assurez-vous que votre processus de demande d’un groupe inclut des instructions pour la demande d’un site.|
 |Stratégie d’expiration de groupe|Spécifie une période de temps au terme de laquelle les groupes qui ne sont pas utilisés activement sont automatiquement supprimés.|Lorsque le groupe est supprimé, le site SharePoint associé est également supprimé. Le contenu protégé par les stratégies de rétention est conservé.|Utilisez des stratégies d’expiration pour éviter la prolifération des groupes et des sites inutilisés.|

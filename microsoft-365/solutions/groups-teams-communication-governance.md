@@ -10,16 +10,17 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
+- m365solution-collabgovernance
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Découvrez les scénarios de collaboration de gouvernance des communications.
-ms.openlocfilehash: 3d64733e14bb46230abda80ccd559fde492da12a
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 05644b5d86fc3ca83e7d140a73666a172937bd54
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662614"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377520"
 ---
 # <a name="communications-governance-for-collaboration-scenarios"></a>Gouvernance des communications pour les scénarios de collaboration
 
@@ -32,7 +33,7 @@ Le tableau suivant fournit une référence rapide pour les contrôles de communi
 |Messagerie |||
 ||Gérer ce que les utilisateurs peuvent faire pendant la messagerie dans Teams.|[Gérer les stratégies de messagerie dans Teams](https://docs.microsoft.com/microsoftteams/messaging-policies-in-teams)|
 ||Contrôler les personnes qui peuvent démarrer et répondre à des billets dans un canal.|[Configurer et gérer la modération des canaux dans Microsoft teams](https://docs.microsoft.com/microsoftteams/manage-channel-moderation-in-teams)|
-|Meetings|||
+|Réunions|||
 ||Gérer les actions des participants à la réunion.|[Gérer les stratégies de réunion dans Teams](https://docs.microsoft.com/microsoftteams/meeting-policies-in-teams)|
 ||Autoriser ou empêcher les utilisateurs anonymes qui rejoignent des réunions.|[Autoriser les utilisateurs anonymes à participer à des réunions](https://docs.microsoft.com/microsoftteams/meeting-settings-in-teams#allow-anonymous-users-to-join-meetings)|
 |Conformité des communications|||
@@ -48,7 +49,7 @@ Vous pouvez déterminer qui peut démarrer de nouveaux billets et répondre à d
 
 [Configurer et gérer la modération des canaux dans Microsoft teams](https://docs.microsoft.com/microsoftteams/manage-channel-moderation-in-teams)
 
-## <a name="meetings"></a>Meetings
+## <a name="meetings"></a>Réunions
 
 Vous pouvez contrôler les fonctionnalités disponibles pour les participants à la réunion Teams, y compris la planification, le partage de contenu, les participants et les stratégies audio et vidéo.
 

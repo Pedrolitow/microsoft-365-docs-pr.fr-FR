@@ -10,16 +10,17 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
+- m365solution-collabgovernance
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Fin des options de cycle de vie pour les groupes, les équipes et Yammer.
-ms.openlocfilehash: ab06f06cc65614ee313892a026c2f482d641791f
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 3720f63f99711a09d02675f10a7d639fe1bedc65
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662595"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377174"
 ---
 # <a name="end-of-lifecycle-options-for-groups-teams-and-yammer"></a>Fin des options de cycle de vie pour les groupes, les équipes et Yammer
 
@@ -31,7 +32,7 @@ Le tableau suivant décrit les services associés aux groupes et aux équipes et
 
 |Service|Types de contenu|
 |:------|:---------------|
-|Teams|Conversations de canal, fichiers dans les canaux|
+|Équipes|Conversations de canal, fichiers dans les canaux|
 |Formulaires|Structure et résultats de l’enquête|
 |OneNote|Bloc-notes|
 |Outlook|Courrier et calendrier|
@@ -41,7 +42,7 @@ Le tableau suivant décrit les services associés aux groupes et aux équipes et
 |Projet sur le Web|Plans de projet|
 |Feuille de route|Feuilles de route|
 |SharePoint|Fichiers, listes, teams wiki Channel Data|
-|Stream|Vidéos|
+|Flux|Vidéos|
 |Yammer|Conversations|
 
 Lors de la suppression d’un groupe ou d’une équipe, la plupart des ressources associées sont également supprimées. Parmi les exceptions, citons les vidéos en flux, dont elles sont conservées et qui sont toujours détenues par la personne qui les a chargées/enregistrées, à l’instar des flux de puissance automatique. Les données de projet et de feuille de route dans Project sur le Web sont conservées dans les CD et peuvent être restaurées séparément.
@@ -72,7 +73,7 @@ Un propriétaire d’équipe ou de groupe peut inviter un utilisateur externe à
 
 Par conséquent, il est important d’effectuer des révisions invitées, mais aussi de savoir si les invités doivent être supprimés d’Azure Active Directory lors de la suppression de l’équipe. Il peut y avoir un cas valide que les invités restent dans l’annuaire, comme s’ils sont membres d’une ou plusieurs autres équipes ou si vous utilisez d’autres services Microsoft 365 ou Azure.
 
-## <a name="teams"></a>Teams
+## <a name="teams"></a>Équipes
 
 Le contenu spécifique à teams est principalement sous la forme de conversations.
 

@@ -11,14 +11,15 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365solution-threatprotection
+- m365solution-scenario
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: a5f3f93ad70210143cbe774c2a4e96542b1cfd34
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: c6e973e05f9a73736410c9bfedfa2ef73bb583ce
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332675"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377400"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>Configurer les fonctionnalités de protection contre les menaces dans Microsoft 365
 
@@ -97,7 +98,7 @@ Microsoft Threat Protection unifie les alertes, les incidents, l’analyse et la
 
 |Fonctionnalités de configuration, de protection et de détection|Fonctionnalités d’automatisation, d’enquête, de correction et d’éducation|
 |---|---|
-|[Pièces jointes fiables](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-attachments)<br/>[Liens fiables](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)<br/>[Documents approuvés](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs)<br/>[ATP pour SharePoint, OneDrive et Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams)<br/>[ATP Protection anti-hameçonnage](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies#exclusive-settings-in-atp-anti-phishing-policies)|[Suivi des menaces](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-trackers)<br/>[Threat Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)<br/>[Examen et réponse automatisés](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)<br/>[Simulateur d’attaques](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulator)|
+|[Pièces jointes fiables](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-attachments)<br/>[Liens fiables](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)<br/>[Documents sécurisés](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs)<br/>[ATP pour SharePoint, OneDrive et Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams)<br/>[ATP Protection anti-hameçonnage](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies#exclusive-settings-in-atp-anti-phishing-policies)|[Suivi des menaces](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-trackers)<br/>[Threat Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)<br/>[Examen et réponse automatisés](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)<br/>[Simulateur d’attaques](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulator)|
 |
 
 Avec la protection avancée contre les menaces Office 365, les personnes de votre organisation peuvent communiquer et collaborer de manière plus sécurisée, avec protection contre les menaces pour leur contenu de messagerie et leurs documents Office.

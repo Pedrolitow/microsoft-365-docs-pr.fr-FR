@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Vue d’ensemble du score de productivité Microsoft.
-ms.openlocfilehash: 7c323d51bcd8a1bead28677e399891ccd0a22950
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+ms.openlocfilehash: 82dc26aea5c573b63bb66d087b332e3301e71409
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48285188"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48376972"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Score de productivité Microsoft (aperçu)
 
-Le score de productivité aide les organisations à transformer le travail réalisé grâce à des informations sur la façon dont les utilisateurs utilisent Microsoft 365 et les expériences technologiques qui les prennent en charge. Le score reflète les performances de votre organisation par rapport aux mesures relatives aux employés et aux technologies et compare votre score avec les organisations comme les vôtres.
+Le score de productivité aide les organisations à transformer le travail réalisé grâce à des informations sur la façon dont les utilisateurs utilisent Microsoft 365 et les expériences technologiques qui les prennent en charge. Le score reflète les performances de votre organisation par rapport aux actions des personnes et de la technologie et compare votre score avec les organisations comme les vôtres.
 
 Le score inclut les éléments suivants :
 
@@ -39,18 +39,18 @@ Le score inclut les éléments suivants :
 
 Nous fournissons des données, des informations et des recommandations dans deux domaines : 
 
-- **Expérience de l’employé :** Nous mesurons comment les utilisateurs collaborent sur le contenu, comment ils utilisent les produits Microsoft 365 pour communiquer et s’ils utilisent Microsoft 365 sur toutes les plateformes. 
+- **Expériences des personnes :** Nous mesurons comment les utilisateurs collaborent sur le contenu, comment ils utilisent les produits Microsoft 365 pour communiquer et s’ils utilisent Microsoft 365 sur toutes les plateformes. 
 
     Ces informations sont fournies car, lorsque les personnes collaborent en ligne, elles font gagner du temps. En toute liberté de travail sur n’importe quel appareil, ils sont plus productifs et satisfaits. La communication de manière flexible rend les personnes plus efficaces, forment de meilleurs relations et votre organisation est plus unifiée. Pour obtenir des preuves, consultez la rubrique [Forrester Report](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
 
-- **Expérience technologique :** La productivité dépend de la technologie fiable et performante, ainsi que de l’utilisation efficace de Microsoft 365. Nous fournissons des [analyses de point de terminaison](https://aka.ms/endpointanalytics), ce qui vous permet de comprendre comment la productivité de vos utilisateurs peut être affectée par les problèmes de performances et d’intégrité liés à votre matériel et logiciels de point de terminaison. Nous fournissons également les actions recommandées pour les résoudre, ainsi que les analyses de connectivité réseau Microsoft 365 pour votre organisation.
+- **Expériences technologiques :** La productivité dépend de la technologie fiable et performante, ainsi que de l’utilisation efficace de Microsoft 365. Nous fournissons des [analyses de point de terminaison](https://aka.ms/endpointanalytics), ce qui vous permet de comprendre comment la productivité de vos utilisateurs peut être affectée par les problèmes de performances et d’intégrité liés à votre matériel et logiciels de point de terminaison. Nous fournissons également les actions recommandées pour les résoudre, ainsi que les analyses de connectivité réseau Microsoft 365 pour votre organisation.
 
 Voir [qu’est-ce que le point de terminaison Analytics](https://docs.microsoft.com/mem/analytics/overview) pour une vue d’ensemble et les détails prérequis. Pour en savoir plus sur les informations sur la connectivité réseau Microsoft 365, consultez [la rubrique Network Connectivity Overview](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-networking-overview).
   
 
 ## <a name="how-the-score-is-calculated"></a>Mode de calcul du score
 
-Votre score de productivité est basé sur les scores combinés de vos catégories d’expérience utilisateur et de technologie. Chaque catégorie est pondérée équitablement, avec un total de 100 points par catégorie. Le nombre total de points possibles pour le score de productivité est de 500.
+Votre score de productivité est basé sur les scores combinés de vos catégories de personnes et d’expériences technologiques. Chaque catégorie est pondérée équitablement, avec un total de 100 points par catégorie. Le nombre total de points possibles pour le score de productivité est de 500.
 
 ### <a name="score-categories"></a>Catégories de score 
 
@@ -72,7 +72,7 @@ Votre score est mis à jour quotidiennement et reflète les actions de l’utili
 
 ## <a name="pre-requisites"></a>Conditions préalables 
 
-Vous avez besoin d’un abonnement Microsoft 365 for Business ou Office 365 pour Enterprise pour obtenir les données de l’expérience de l’employé, et vous devez utiliser les services Cloud mutualisés. Pour obtenir des données analytiques de point de terminaison pour votre client, vous devez ajouter Microsoft Intune à votre abonnement. Intune vous permet de protéger les données de votre organisation en gérant les appareils et les applications.       Une fois que vous avez Intune, vous pouvez activer l’analyse du point de terminaison au sein de l’expérience Intune. En savoir plus sur Microsoft Intune. 
+Vous avez besoin d’un abonnement Microsoft 365 for Business ou Office 365 pour Enterprise pour obtenir des données sur les utilisateurs, et vous devez utiliser les services Cloud mutualisés. Pour obtenir des données analytiques de point de terminaison pour votre client, vous devez ajouter Microsoft Intune à votre abonnement. Intune vous permet de protéger les données de votre organisation en gérant les appareils et les applications.       Une fois que vous avez Intune, vous pouvez activer l’analyse du point de terminaison au sein de l’expérience Intune. En savoir plus sur Microsoft Intune. 
 
 Pour afficher le score de productivité de votre organisation, vous devez disposer de l’un des rôles suivants : 
 
@@ -94,17 +94,17 @@ La page d’accueil des scores de productivité indique votre score total et l�
 
 **Votre score** est affiché sous la forme d’une valeur de pourcentage ainsi qu’en points, ce qui vous permet de voir vos points (numérateur) et le nombre maximal de points possibles (dénominateur).
 
-Les **tests d’évaluation d’homologue** vous permettent de comparer votre score avec des organisations comme les vôtres. Pour les catégories d’expérience de l’employé, la mesure de test de l’homologue est calculée comme la moyenne des mesures au sein d’un ensemble d’organisations similaires. L’ensemble est composé d’organisations de votre région avec un nombre similaire d’utilisateurs sous licence, de types de licences, de secteurs d’activité et de leur utilisation avec Microsoft 365. 
+Les **tests d’évaluation d’homologue** vous permettent de comparer votre score avec des organisations comme les vôtres. Pour les catégories de personnes qui rencontrent des personnes, la mesure de test d’homologue est calculée comme la moyenne des mesures au sein d’un ensemble d’organisations similaires. L’ensemble est composé d’organisations de votre région avec un nombre similaire d’utilisateurs sous licence, de types de licences, de secteurs d’activité et de leur utilisation avec Microsoft 365. 
 
 Le benchmark d’homologue Analytics de point de terminaison inclut des cibles pour les performances de démarrage des périphériques et une configuration logicielle recommandée basée sur des valeurs multilatérales agrégées sur tous les clients.
 
 Pour la connectivité réseau, le banc d’essai recommandé est de 80 points.
 
-La section **répartition du score** fournit une répartition de votre score de productivité avec des benchmarks par domaine d’expérience utilisateur et technologie.
+La section **répartition du score** fournit une répartition de votre score de productivité avec des tests d’évaluation par les domaines des personnes et de l’expérience technique.
 
 L’historique des scores indique comment le score dans chaque catégorie a été modifié au cours des 6 derniers mois.
 
-Les domaines de l’expérience de l' **employé** et de l' **expérience informatique** contiennent les informations principales pour les catégories de ces domaines. Vous pouvez cliquer sur chaque catégorie pour voir des informations plus approfondies.
+Les domaines de l' **expérience utilisateur** et des expériences **technologiques** contiennent les informations principales pour les catégories de ces domaines. Vous pouvez cliquer sur chaque catégorie pour voir des informations plus approfondies.
 
 ## <a name="category-details-pages"></a>Pages de détails de catégorie
 

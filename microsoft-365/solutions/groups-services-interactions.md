@@ -10,16 +10,17 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
+- m365solution-collabgovernance
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Interactions des services de groupe
-ms.openlocfilehash: 9632debf1bc6fdd2fce061a4c535906410700175
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 235a897314a784ba3bb1ac50fe8bdfe9986a70d3
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662623"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377628"
 ---
 # <a name="groups-services-interactions"></a>Interactions des services de groupe
 
@@ -94,8 +95,8 @@ L’expérience de la restriction de création de groupe varie selon les applica
 |Planificateur|**Nouveau plan** explique que la création de groupe a été désactivée et propose d’ajouter le plan à un groupe existant.|
 |Projet pour le Web et feuille de route|Le menu **créer un groupe** explique que la création de groupe est restreinte et suggère l’utilisation d’un groupe existant.|
 |SharePoint|Toujours en mesure de créer un site d’équipe qui n’est pas connecté à un groupe.|
-|Stream|L’option de **groupe** ne s’affiche pas dans le **menu créer**.|
-|Teams|L’utilisateur ne peut pas créer une équipe avec un nouveau groupe, mais il peut toujours créer une équipe qui utilise un groupe existant.<br><br>**Le bouton créer une équipe** est remplacé par **créer une équipe à partir d’un groupe**.|
+|Flux|L’option de **groupe** ne s’affiche pas dans le **menu créer**.|
+|Équipes|L’utilisateur ne peut pas créer une équipe avec un nouveau groupe, mais il peut toujours créer une équipe qui utilise un groupe existant.<br><br>**Le bouton créer une équipe** est remplacé par **créer une équipe à partir d’un groupe**.|
 |Yammer|**Créer une** option de groupe est supprimé de la navigation groupes/communautés principaux.|
 
 ## <a name="services-interactions-with-groups"></a>Interactions entre les services et les groupes
@@ -110,7 +111,7 @@ Le tableau suivant fournit une vue d’ensemble des interactions entre les group
 
 |Produit|Fonctionnalités|Le service est-il<br>existe-t-il sans groupe ?|Le service peut-il<br>créer un groupe ?|Supprime le<br>instance supprimer le groupe ?|
 |:---|:---|:---|:---|:---|
-|Azure Active Directory|Appartenance, groupes de contrôles, invités|Oui|Oui|Oui|
+|Azure AD|Appartenance, groupes de contrôles, invités|Oui|Oui|Oui|
 |Exchange|Calendrier, boîte aux lettres|Oui|Oui|Oui|
 |Formulaires|Formulaire|Oui|Non|Non|
 |OneNote|Bloc-notes|Oui|Non|Non|
@@ -122,13 +123,13 @@ Le tableau suivant fournit une vue d’ensemble des interactions entre les group
 |Project pour le web|Plan de projet|Oui|Oui|Non|
 |Feuille de route|Feuille de route|Oui|Oui|Non|
 |SharePoint|Site|Oui|Oui|Oui|
-|Stream|Canal, vidéo|Oui|Oui|Oui|
-|Teams|Équipe|Non|Oui|Oui|
+|Flux|Canal, vidéo|Oui|Oui|Oui|
+|Équipes|Équipe|Non|Oui|Oui|
 |Yammer|Group|Oui|Oui|Oui|
 
 Bien que le tableau ci-dessus offre une vue d’ensemble de haut niveau des interactions de groupe avec les services Microsoft 365, il existe un certain nombre de nuances et de subtilités que vous devez comprendre. Les sections suivantes présentent de façon plus approfondie les charges de travail spécifiques et leurs interactions avec les groupes.
 
-## <a name="azure-ad"></a>Azure Active Directory
+## <a name="azure-ad"></a>Azure AD
 
 Azure AD fournit les fonctionnalités de gestion des identités sous-jacentes dans Microsoft 365.
 
@@ -164,7 +165,7 @@ Non, Azure AD est la plateforme sous-jacente où existent des groupes.
 
 La suppression du groupe dans Azure AD entraîne la suppression des services et du contenu associés au groupe appropriés.
 
-## <a name="teams"></a>Teams
+## <a name="teams"></a>Équipes
 
 Teams est un espace de travail centré sur la conversation visant à améliorer la collaboration en fournissant une interface singulière permettant d’interagir avec un grand nombre de services Microsoft et tiers.
 
@@ -174,7 +175,7 @@ Par défaut, lors de la création d’une équipe, la boîte aux lettres et le c
 
 - Conversations
 - Canaux & onglets
-- Meetings
+- Réunions
 
 **Les équipes peuvent-elles créer un groupe ?**
 
@@ -565,7 +566,7 @@ Non, le site lui-même est associé au groupe, mais le contenu peut être dépla
 
 Oui, la suppression du site dans SharePoint entraîne la suppression des services et du contenu associés aux groupes et aux groupes.
 
-## <a name="stream"></a>Stream
+## <a name="stream"></a>Flux
 
 Microsoft Stream est une plateforme d’hébergement et de partage vidéo.
 

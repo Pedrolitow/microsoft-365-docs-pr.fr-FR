@@ -14,14 +14,15 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - m365solution-infoprotection
+- m365solution-scenario
 ms.custom: ''
 description: Utilisez les stratégies d’audit et d’alerte et les demandes des personnes concernées pour surveiller et répondre aux incidents de données personnelles.
-ms.openlocfilehash: 8fdba5799ca9ee97a013c1322e5e79f6bf38764a
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 296220ac8b34d9ce10c783194b78ca344e746b84
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46522072"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377198"
 ---
 # <a name="monitor-and-respond-to-data-privacy-incidents-in-your-organization"></a>Surveillance et réponse aux incidents de confidentialité des données au sein de votre organisation
 

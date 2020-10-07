@@ -10,16 +10,17 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
+- m365solution-collabgovernance
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: En savoir plus sur les interactions de paramètres entre les groupes Microsoft 365, teams et SharePoint
-ms.openlocfilehash: 3ad5011c2d7b4579e054b014237d5771049b3c91
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 3a6d4e057f88410a8808ea133bf7e579d0041228
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662619"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377544"
 ---
 # <a name="settings-interactions-between-microsoft-365-groups-teams-and-sharepoint"></a>Interactions des paramètres entre les groupes Microsoft 365, teams et SharePoint
 
@@ -41,7 +42,7 @@ Certains paramètres pour les groupes Microsoft 365, Microsoft teams et SharePoi
 
 |Paramètre de groupes Microsoft 365|Description|Effet sur teams|Recommandation|
 |:---------------------------|:----------|:--------------|:-------------|
-|Stratégies d’attribution de noms|Spécifie les préfixes de nom de groupe et les suffixes, et les mots bloqués pour la création de groupe|Les stratégies sont appliquées pour les utilisateurs qui créent des équipes.||
+|Conventions d’attribution de nom|Spécifie les préfixes de nom de groupe et les suffixes, et les mots bloqués pour la création de groupe|Les stratégies sont appliquées pour les utilisateurs qui créent des équipes.||
 |Accès invité de groupe|Indique si les utilisateurs externes à l’organisation peuvent être ajoutés à des groupes.|Si les paramètres de partage des invités des groupes ou des équipes sont désactivés, l’équipe ne peut pas être partagée avec des invités.|Lorsque vous modifiez les paramètres de partage des invités, vérifiez les paramètres des équipes, des groupes et du site SharePoint associé à l’équipe.<br><br> Voir [collaborer avec des invités dans une équipe](https://docs.microsoft.com/microsoft-365/solutions/collaborate-as-team)|
 |Création de groupe par groupe de sécurité|Les groupes ne peuvent être créés que par les membres d’un groupe de sécurité spécifique.|Les utilisateurs qui ne sont pas membres du groupe de sécurité ne seront pas en mesure de créer une équipe.|Assurez-vous que votre processus de demande d’un groupe inclut des instructions pour la demande d’une équipe ou d’un site SharePoint.|
 |Stratégie d’expiration de groupe|Spécifie une période de temps au terme de laquelle les groupes qui ne sont pas utilisés activement sont automatiquement supprimés.|Lorsque le groupe est supprimé, l’équipe et le site SharePoint associé sont également supprimés. Le contenu protégé par les stratégies de rétention est conservé.|Utilisez des stratégies d’expiration pour éviter la prolifération des équipes, des groupes et des sites inutilisés.|

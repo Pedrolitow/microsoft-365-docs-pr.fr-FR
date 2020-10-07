@@ -12,16 +12,16 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
+- m365solution-collabgovernance
 search.appverid:
 - MET150
 description: Découvrez les stratégies d’expiration des groupes Microsoft 365.
-ms.openlocfilehash: 092fb22145741376eda895d48c512fd91544bb3b
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 8fc9c48d5a86c68eabd4139ad0a2d0dc1e83da0f
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662608"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377222"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Stratégie d’expiration de groupe Microsoft 365
 
@@ -48,7 +48,7 @@ Il est important de comprendre que l’expiration est désactivée par défaut. 
 
 ## <a name="who-can-configure-and-use-the-microsoft-365-groups-expiration-policy"></a>Qui peut configurer et utiliser la stratégie d’expiration des groupes Microsoft 365 ?
 
-|Rôle|Ce qu’ils peuvent faire|
+|Role|Ce qu’ils peuvent faire|
 |---------|---------|
 |Administrateur général Office 365 (dans Azure, administrateur d’entreprise), administrateur d’utilisateurs|Créez, lisez, mettez à jour ou supprimez les paramètres de stratégie d’expiration des groupes Microsoft 365.|
 |Utilisateur|Renouveler ou [restaurer](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted) un groupe Microsoft 365 dont il est propriétaire|

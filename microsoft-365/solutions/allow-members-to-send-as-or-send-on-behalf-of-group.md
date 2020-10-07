@@ -12,17 +12,17 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
+- m365solution-collabgovernance
 search.appverid:
 - MET150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 description: Découvrez comment autoriser les membres à envoyer des messages électroniques en tant que groupe Microsoft 365 ou envoyer des courriers électroniques de la part d’un groupe Microsoft 365.
-ms.openlocfilehash: b660131798e60182435a69f479411cdec948bc99
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 9ccaeff49914dd5b510beb80f40a3a3b790ce831
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662599"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377592"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>Autoriser les membres à envoyer en tant que ou envoyer de la part d’un groupe
 
@@ -50,7 +50,7 @@ Cette section explique comment autoriser les utilisateurs à envoyer des courrie
     
 4. Dans la section **Envoyer en tant que** , sélectionnez le **+** signe pour ajouter les utilisateurs que vous souhaitez envoyer en tant que groupe. 
     
-    ![Sélectionnez le signe plus pour ajouter les utilisateurs que vous souhaitez envoyer en tant que groupe Microsoft 365](../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
+    ![Capture d’écran de la boîte de dialogue Envoyer en tant que](../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
   
 5. Tapez pour rechercher ou choisir un utilisateur dans la liste. Sélectionnez **OK** et **Enregistrer**.
     
@@ -68,7 +68,7 @@ Cette section explique comment autoriser les utilisateurs à envoyer des courrie
     
 4. Dans la section envoyer de la part de, sélectionnez le **+** signe pour ajouter les utilisateurs que vous souhaitez envoyer en tant que groupe. 
     
-    ![Sélectionnez le signe plus pour ajouter les utilisateurs que vous souhaitez envoyer en tant que groupe Microsoft 365](../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
+    ![Capture d’écran de la boîte de dialogue Envoyer de la part de](../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
   
 5. Tapez pour rechercher ou choisir un utilisateur dans la liste. Sélectionnez **OK** et **Enregistrer**.
     

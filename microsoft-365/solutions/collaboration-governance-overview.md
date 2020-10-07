@@ -10,16 +10,18 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
+- m365solution-overview
+- m365solution-collabgovernance
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Découvrez comment régir les fonctionnalités associées dans les groupes Microsoft 365, teams, SharePoint et Yammer.
-ms.openlocfilehash: b217dc089eb150d01eed9cd720b2caa290d54bf1
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 8784f14530ec94a3151ef58589944947b5de9514
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950711"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377580"
 ---
 # <a name="overview-of-collaboration-governance-in-microsoft-365"></a>Vue d’ensemble de la gouvernance de collaboration dans Microsoft 365
 
