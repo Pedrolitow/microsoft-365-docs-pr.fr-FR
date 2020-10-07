@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e279d8e075538582ea282e1c6d1493685a817b2a
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 5294b63744ec64f9be566a4a447c56ccd7456136
+ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208124"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48370300"
 ---
 # <a name="california-consumer-privacy-act-ccpa"></a>California Consumer Privacy Act (CCPA)
 
@@ -53,7 +53,7 @@ Comme défini dans le fichier OST, Microsoft est conforme à l’ensemble des lo
 
 Voici quelques étapes que vous pouvez suivre pour vous préparer au CCPA :
 
-- Commencez à exploiter le [score de conformité](compliance-score.md) RGPD dans le cadre de votre programme de confidentialité CCPA.
+- Commencez à tirer parti de l’évaluation de RGPD dans le [Gestionnaire de conformité](compliance-manager.md) dans le cadre de votre programme de confidentialité CCPA.
 - Établissez un processus pour répondre efficacement aux demandes d’accès des personnes concernées (DSARs) à l’aide de l’outil demandes des personnes concernées par les données.
 - Configurez les étiquettes et les stratégies de façon à découvrir, classifier et étiqueter, ainsi que protéger les données sensibles à l’aide de Microsoft Information Protection.
 - Utilisez les fonctionnalités de chiffrement du courrier électronique pour contrôler davantage les informations sensibles.
@@ -93,9 +93,9 @@ Le CCPA exige des entreprises réglementées qui recueillent, transfèrent et ve
 - Le CCPA présente des obligations en matière de consentement parental en accord avec la réglementation COPPA (Children’s Online Privacy Protection Act) pour les enfants âgés de moins de 13 ans.
 - Pour les enfants de 13 à 16 ans, CCPA impose une nouvelle obligation d’obtenir l’autorisation d’adhésion de l’enfant.
 
-## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Utiliser le gestionnaire de conformité Microsoft pour évaluer votre risque
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Utilisez le Gestionnaire de Conformité Microsoft pour évaluer vos risques
 
-Le [Gestionnaire de conformité Microsoft](compliance-manager.md) est une fonctionnalité du [Centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Le gestionnaire de conformité offre un modèle Premium pour la création d’une évaluation pour cette réglementation. Recherchez le modèle dans la page **modèles d’évaluation** du gestionnaire de conformité. Découvrez comment [créer des évaluations dans le gestionnaire de conformité](compliance-manager-assessments.md).
+[Le Gestionnaire de Conformité Microsoft](compliance-manager.md) est une fonctionnalité dans le [centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Le Gestionnaire de Conformité offre un modèle Premium pour la création d’une évaluation de ce règlement. Recherchez le modèle sur la page **modèles d’évaluation** dans le Gestionnaire de Conformité. Découvrez comment [créer des évaluations dans le Gestionnaire de Conformité](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressources
 

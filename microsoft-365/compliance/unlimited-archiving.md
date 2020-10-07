@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: En savoir plus sur l’archivage à extension automatique, qui offre un stockage d’archive illimité pour les boîtes aux lettres Exchange Online.
-ms.openlocfilehash: f2d9e645badd98ea9a1d14dec22e291c8ad7de63
-ms.sourcegitcommit: 416a4b87bfd7e5aff80194b59b2776f054aa8eb5
+ms.openlocfilehash: 5481fd14f281c132475613228c835c72592d2f59
+ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44534916"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48370422"
 ---
 # <a name="overview-of-unlimited-archiving"></a>Vue d’ensemble de l’archivage illimité
 
@@ -112,4 +112,4 @@ Cette section décrit la fonctionnalité entre l’archivage et d’autres fonct
 
 ## <a name="more-information"></a>Plus d’informations
 
-Pour plus d’informations techniques sur l’archivage à extension automatique, consultez la rubrique [Microsoft 365 : Forum aux questions](https://blogs.technet.microsoft.com/exchange/2018/04/09/office-365-auto-expanding-archives-faq/)sur les archives.
+Pour plus d’informations techniques sur l’archivage à extension automatique, consultez la rubrique [Microsoft 365 : Forum aux questions](https://techcommunity.microsoft.com/t5/exchange-team-blog/office-365-auto-expanding-archives-faq/ba-p/607784)sur les archives.

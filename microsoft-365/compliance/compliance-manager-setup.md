@@ -9,19 +9,22 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365solution-compliancemanager
+- m365initiative-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Définissez les autorisations et les rôles utilisateur du gestionnaire de conformité Microsoft, et configurez le test automatisé des actions. Gérer l’historique des utilisateurs et filtrer votre vue de tableau de bord.
-ms.openlocfilehash: ead4fe60a11bcf78a318601c1de6d72f2490c567
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 043a52e2817e770671c2ef8876049f6bbe0285ee
+ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48204347"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48368137"
 ---
-# <a name="get-started-with-compliance-manager"></a>Prise en main du gestionnaire de conformité
+# <a name="get-started-with-compliance-manager"></a>Prise en main du Gestionnaire de conformité
 
 **Dans cet article :** Cet article vous aide à configurer le gestionnaire de conformité. Découvrez comment **accéder** au gestionnaire de conformité, **définir des rôles et des autorisations**, et configurer le **test automatique des actions d’amélioration**. Parcourez **votre tableau de bord du gestionnaire de conformité** et comprenez les pages principales : la page actions d’amélioration, la page solutions, la page évaluations et la page modèles d’évaluation.
 
@@ -33,7 +36,7 @@ Le gestionnaire de conformité est disponible pour les organisations disposant d
 
 L’administrateur général de Microsoft 365 de votre organisation sera probablement le premier utilisateur à accéder au gestionnaire de conformité. Nous vous recommandons de vous connecter à l’administrateur général et de définir les autorisations utilisateur comme indiqué ci-dessous lorsque vous visitez le gestionnaire de conformité pour la première fois.
 
-## <a name="sign-in"></a>Connexion
+## <a name="sign-in"></a>Se connecter
 
 1. Accédez au [Centre de conformité microsoft 365](https://compliance.microsoft.com/) et **Connectez-vous** à l’aide de votre compte d’administrateur général Microsoft 365.
 2. Sélectionnez **Gestionnaire de conformité** dans le volet de navigation de gauche. Vous arrivez à votre [tableau de bord gestionnaire de conformité](#understand-the-compliance-manger-dashboard).
@@ -70,7 +73,7 @@ Pour définir des autorisations et attribuer des rôles à partir du centre de c
 
 Pour plus d’informations sur [les autorisations, consultez la rubrique Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
 
-Si vous n’avez pas accès au centre de sécurité et de conformité Office 365, ou si vous avez besoin d’accéder à la version classique du gestionnaire de conformité dans le portail d’approbation de service Microsoft, les paramètres d’administration dans le portail d’approbation de service offrent une autre façon d’attribuer des rôles ([afficher les instructions](/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud?view=o365-worldwide.md#assigning-compliance-manager-roles-to-users)). N’oubliez pas que ces rôles sont plus limités dans leur fonctionnalité.
+Si vous n’avez pas accès au centre de sécurité et de conformité Office 365, ou si vous avez besoin d’accéder à la version classique du gestionnaire de conformité dans le portail d’approbation de service Microsoft, les paramètres d’administration dans le portail d’approbation de service offrent une autre façon d’attribuer des rôles ([afficher les instructions](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#assigning-compliance-manager-roles-to-users)). N’oubliez pas que ces rôles sont plus limités dans leur fonctionnalité.
 
 ##### <a name="more-about-azure-ad"></a>En savoir plus sur Azure AD
 

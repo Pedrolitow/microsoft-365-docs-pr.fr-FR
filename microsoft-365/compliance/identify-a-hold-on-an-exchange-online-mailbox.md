@@ -17,12 +17,12 @@ ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment identifier les différents types de conservation pouvant être placés sur une boîte aux lettres Exchange Online dans Microsoft 365.
-ms.openlocfilehash: a76b02f6345421871c759e1b31bf19207b474e2a
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: c0f5d11066169181b524632c7a1340c54f0061f0
+ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47816823"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48370334"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Comment identifier le type de conservation placé sur une boîte aux lettres Exchange Online
 
@@ -78,7 +78,7 @@ Le tableau suivant décrit comment identifier différents types de suspensions e
 |conservation eDiscovery     |  `UniH7d895d48-7e23-4a8d-8346-533c3beac15d`       |   La *propriété InPlaceHolds* contient le GUID de n’importe quelle conservation associée à un cas eDiscovery dans le centre de sécurité et de conformité. Vous pouvez indiquer qu’il s’agit d’une conservation eDiscovery, car le GUID commence par le `UniH` préfixe (qui désigne une conservation unifiée).      |
 |Blocage local     |     `c0ba3ce811b6432a8751430937152491` <br/> ou <br/> `cld9c0a984ca74b457fbe4504bf7d3e00de`  |     La propriété *InPlaceHolds* contient le GUID de la conservation inaltérable qui est placée sur la boîte aux lettres. Vous pouvez indiquer qu’il s’agit d’une conservation inaltérable, car le GUID ne commence pas par un préfixe ou il commence par le `cld` préfixe.     |
 |Stratégie de rétention Microsoft 365 spécifiquement appliquée à la boîte aux lettres     |    `mbxcdbbb86ce60342489bff371876e7f224:1` <br/> ou <br/> `skp127d7cf1076947929bf136b7a2a8c36f:3`     |     La propriété InPlaceHolds contient les GUID de n’importe quelle stratégie de rétention d’emplacement spécifique qui est appliquée à la boîte aux lettres. Vous pouvez identifier les stratégies de rétention, car le GUID commence par le `mbx` ou le `skp` préfixe. Le `skp` préfixe indique que la stratégie de rétention est appliquée aux conversations Skype entreprise dans la boîte aux lettres de l’utilisateur.    |
-|Exclu d’une stratégie de rétention Microsoft 365 à l’échelle de l’Organisation     |   `-mbxe9b52bf7ab3b46a286308ecb29624696`      |     Si une boîte aux lettres est exclue d’une stratégie de rétention Microsoft 365 à l’échelle de l’organisation, le GUID de la stratégie de rétention à laquelle la boîte aux lettres est exclue s’affiche dans la propriété InPlaceHolds et est identifié par le `-mbx` préfixe.    |
+|Exclu d’une stratégie de rétention Microsoft 365 à l’échelle de l’Organisation     |   `-mbxe9b52bf7ab3b46a286308ecb29624696`      |     Si une boîte aux lettres est exclue d’une stratégie de rétention Microsoft 365 à l’échelle de l’organisation, le GUID de la stratégie de rétention dont provient la boîte aux lettres est affiché dans la propriété InPlaceHolds et est identifié par le `-mbx` préfixe.    |
 
 ### <a name="get-organizationconfig"></a>Get-OrganizationConfig
 Si la propriété *InPlaceHolds* est vide lorsque vous exécutez la cmdlet **Get-Mailbox** , il peut y avoir une ou plusieurs stratégies de rétention Microsoft 365 à l’échelle de l’organisation appliquées à la boîte aux lettres. Exécutez la commande suivante dans Exchange Online PowerShell pour obtenir la liste des GUID pour les stratégies de rétention Microsoft 365 à l’échelle de l’organisation.
@@ -234,9 +234,9 @@ Gardez les points suivants à l’esprit lors de la gestion d’une boîte aux l
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Une fois que vous avez identifié les conservations appliquées à une boîte aux lettres, vous pouvez effectuer des tâches telles que modifier la durée de la suspension, supprimer temporairement ou définitivement la conservation ou exclure une boîte aux lettres inactive d’une stratégie de rétention Microsoft 365. Pour plus d’informations sur l’exécution de tâches relatives aux suspensions, consultez l’une des rubriques suivantes :
+Une fois que vous avez identifié les conservations appliquées à une boîte aux lettres, vous pouvez effectuer des tâches telles que modifier la durée de la suspension, supprimer temporairement ou définitivement la conservation ou exclure une boîte aux lettres inactive d’une stratégie de rétention Microsoft 365. Pour plus d’informations sur l’exécution des tâches relatives aux suspensions, consultez l’une des rubriques suivantes :
 
-- Exécutez la commande [Set-retentioncompliancepolicy permet- \<user mailbox> AddExchangeLocationException](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) dans Security & Compliance Center PowerShell pour exclure une boîte aux lettres d’une stratégie de rétention Microsoft 365 à l’échelle de l’organisation. Cette commande ne peut être utilisée que pour les stratégies de rétention pour lesquelles la valeur de la propriété *exchangelocation permet* est égale à `All` .
+- Exécutez la commande [Set-retentioncompliancepolicy permet-Identity \<Policy Name> -AddExchangeLocationException \<user mailbox> ](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) dans Security & Compliance Center PowerShell pour exclure une boîte aux lettres d’une stratégie de rétention Microsoft 365 à l’échelle de l’organisation. Cette commande ne peut être utilisée que pour les stratégies de rétention pour lesquelles la valeur de la propriété *exchangelocation permet* est égale à `All` .
 
 - Exécutez la commande [Set-Mailbox- \<hold GUID without prefix or suffix> ExcludeFromOrgHolds](https://docs.microsoft.com/powershell/module/exchange/set-mailbox) dans Exchange Online PowerShell pour exclure une boîte aux lettres inactive d’une stratégie de rétention Microsoft 365 à l’échelle de l’organisation.
 
