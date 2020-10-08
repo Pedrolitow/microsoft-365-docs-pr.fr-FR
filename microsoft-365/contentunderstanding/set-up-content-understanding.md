@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: MET150
 localization_priority: Priority
 description: Configurer la compréhension de contenu dans Projet Cortex
-ms.openlocfilehash: 7fb5998729c9f11902f8fdfaffa62b160928077c
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: 0d66076c93eb46ca11977cea12417c0816e0d11b
+ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48321348"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48367930"
 ---
 # <a name="set-up-sharepoint-syntex"></a>Configurer SharePoint Online
 
@@ -43,11 +43,9 @@ En tant qu’administrateur, vous pouvez également modifier vos paramètres sé
 
 ## <a name="to-set-up-sharepoint-syntex"></a>Pour configurer SharePoint Syntex
 
-1. Dans le Centre d’administration Microsoft 365, sélectionnez **Configuration**, puis affichez la section **Connaissances organisationnelles**.
+1. Dans le Centre d’administration Microsoft 365, sélectionnez **Configuration**, puis affichez la section **Fichiers et contenu**.
 
-2. Dans la section **Connaissances organisationnelles**, sélectionnez **Automatiser la compréhension de contenu**.<br/>
-
-    ![Page de configuration des connaissances organisationnelles](../media/content-understanding/admin-org-knowledge-options.png)</br>
+2. Dans la section **Fichiers et contenu**, sélectionnez **Automatiser la compréhension de contenu**.<br/>
 
 3. À la page **Automatiser la compréhension de contenu** , cliquez sur **Commencer** pour parcourir le processus de configuration.<br/>
 

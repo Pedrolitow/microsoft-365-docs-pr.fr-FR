@@ -9,18 +9,18 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: Découvrez comment appliquer une étiquette de rétention à un modèle de compréhension de document
-ms.openlocfilehash: 6f616dc3d2ebd87bcc70ee01c9f3a88db60b6f17
-ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
+ms.openlocfilehash: 052c137a419c0185010fbd152e73615a4bb093af
+ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48337240"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48367952"
 ---
 # <a name="document-understanding-model-usage-analytics"></a>Analyse de l’utilisation du modèle de compréhension de document
 
 </br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GpJY]  
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GnhX]  
 
 </br>
 

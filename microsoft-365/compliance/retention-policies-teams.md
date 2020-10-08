@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir les stratégies de rétention qui s’appliquent à Microsoft Teams.
-ms.openlocfilehash: 04ca027b9ce8ad1b36e0d4e60c4e10308a822a63
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: 40e68116c24622fd21bd35531ef7821d8c4b7c62
+ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47816737"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48370368"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>En savoir plus sur la rétention dans Microsoft Teams
 
@@ -49,28 +49,28 @@ Lorsque la politique de rétention consiste à conserver puis à supprimer :
 
 ![Diagramme du flux de rétention pour les messages de conversation et de canal des Teams](../media/teamsretentionlifecycle.png)
 
-Pour les deux voies du diagramme :
+Pour les deux voies du diagramme :
 
-1. ** Si un message de conversation ou de chaîne est édité ou supprimé ** par l'utilisateur pendant la période de conservation, le message original est immédiatement copié (s'il est édité) ou déplacé (s'il est supprimé) dans le dossier SubstrateHolds. Le message y est stocké jusqu'à l'expiration de la période de conservation, puis le message est supprimé définitivement dans les 24 heures.
+1. **Si un message de conversation ou de canal est modifié ou supprimé** par l'utilisateur pendant la période de rétention, le message original est copié (s'il est modifié) ou déplacé (s'il est supprimé) dans le dossier SubstrateHolds sous 21 jours. Le message y est stocké jusqu'à l'expiration de la période de conservation, puis le message est supprimé définitivement dans les 24 heures.
 
-2. **Si un message de conversation ou de canal n'est pas supprimé**  et pour les messages courants après édition, le message est déplacé dans le dossier SubstrateHolds après l'expiration de la période de conservation. Cette action prend jusqu'à sept jours à compter de la date d'expiration. Lorsque le message se trouve dans le dossier SubstrateHolds, il est alors définitivement supprimé dans les 24 heures. 
+2. **Si un message de conversation ou de canal n'est pas supprimé**, et pour les messages actuels après modification, le message est déplacé dans le dossier SubstrateHolds après l'expiration de la période de conservation. Cette action prend jusqu'à sept jours à compter de la date d'expiration. Lorsque le message se trouve dans le dossier SubstrateHolds, il est alors définitivement supprimé dans les 24 heures. 
 
 > [!NOTE]
-> Les messages dans le dossier SubstrateHolds sont recherchés par les outils d'eDiscovery. Tant que les messages ne sont pas définitivement supprimés (dans le dossier SubstrateHolds), ils restent recherchés par les outils d'eDiscovery.
+> Les messages dans le dossier SubstrateHolds peuvent faire l’objet de recherches par les outils eDiscovery. Tant que les messages ne sont pas définitivement supprimés (du dossier SubstrateHolds), ils peuvent toujours faire l’objet de recherches par les outils eDiscovery.
 
 Lorsque la stratégie de rétention consiste à conserver uniquement ou à supprimer uniquement, les chemins d'accès au contenu sont des variantes de rétention et de suppression.
 
 ### <a name="content-paths-for-retain-only-retention-policy"></a>Chemins d’accès au contenu pour la stratégie de rétention de conservation uniquement
 
-1. ** Si un message de conversation ou de canal est édité ou supprimé**:Une copie du message original est immédiatement créée dans le dossier SubstrateHolds et y est conservée jusqu'à l'expiration de la période de conservation. Ensuite, le message est définitivement supprimé du dossier SubstrateHolds dans les 24 heures.
+1. **Si un message de conversation ou de canal est modifié ou supprimé** : une copie du message original est immédiatement créée dans le dossier SubstrateHolds pendant 21 jours et y est conservée jusqu'à l'expiration de la période de conservation. Ensuite, le message est définitivement supprimé du dossier SubstrateHolds dans les 24 heures.
 
 2. ** Si l'élément n'est pas modifié ou supprimé **et pour les messages courants après édition pendant la période de rétention : Rien ne se passe avant et après la période de rétention ; le message reste dans son emplacement d'origine.
 
 ### <a name="content-paths-for-delete-only-retention-policy"></a>Chemins d’accès du contenu pour la stratégie de rétention de suppression uniquement
 
-1. **Si le message n’est pas supprimé** pendant la période de rétention : à la fin de la période de rétention, il est déplacé vers le dossier SubstrateHolds. Cette action prend jusqu'à sept jours à compter de la date d'expiration. Ensuite, le message est définitivement supprimé du dossier SubstrateHolds dans les 24 heures.
+1. **Si le message n’est pas supprimé** pendant la période de rétention : à la fin de la période de rétention, il est déplacé vers le dossier SubstrateHolds. Cette action prend jusqu'à sept jours à compter de la date d'expiration. Ensuite, le message est définitivement supprimé du dossier SubstrateHolds dans les 24 heures.
 
-2. **Si l'élément est supprimé par l'utilisateur** pendant cette période, il est immédiatement déplacé vers le dossier SubstrateHolds où il est définitivement supprimé dans les 24 heures.
+2. **Si l'élément est supprimé par l'utilisateur** pendant cette période, il est déplacé sous 21 jours vers le dossier SubstrateHolds où il est définitivement supprimé dans les 24 heures.
 
 
 ## <a name="skype-for-business-and-teams-interop-chats"></a>Interopérabilité des conversations Skype Entreprise et Teams
