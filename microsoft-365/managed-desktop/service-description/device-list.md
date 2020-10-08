@@ -8,12 +8,12 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 751cafe1993db151ff27ac4a66780a0ce10d69ee
-ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
+ms.openlocfilehash: 99bda752edf46c5e446e393b5f185b3f18eff974
+ms.sourcegitcommit: 7e8151ff74cb1cfc0dd59fadcac423c338415d77
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48341389"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48390150"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Appareils de bureau gérés Microsoft 
 
@@ -71,6 +71,7 @@ Les liens vers les appareils sont fournis à des fins de référence uniquement.
 |----------|----------------|---------------------------|----------------|--------------------|
 | **\*[Surface Book 3](https://www.microsoft.com/p/surface-book-3-for-business/93h0mb2gqd5b?activetab=pivot%3aoverviewtab)** | 256 Go/Intel i5/8 Go de RAM | Aucun | 21 mai 2022 | 21 mai 2027 |
 | **\*[Surface Go 2](https://www.microsoft.com/p/surface-go-2-for-business/8wzd6dhzj7kv?activetab=pivot%3aoverviewtab)** | 128 Go/Intel Core m3/8 Go de RAM | Aucun | 21 mai 2022 | 21 mai 2027 |
+| [Surface de l’ordinateur portable](https://www.microsoft.com/surface/business/surface-laptop-go) | 128 Go/Intel i5/8 Go de RAM | Aucun | 12 octobre 2022 | 12 octobre 2025 |
 | [Ordinateur portable de surface 2](https://www.microsoft.com/p/surface-laptop-2-for-business/8xlk0g60tlb6/hkq9?cid=msft_web_collection&CustomerIntent=Consumer) | 128 Go/Intel i5/8 Go de RAM | Aucun | 16 octobre 2020 | 16 octobre 2023 |
 | [Portable surface 3](https://www.microsoft.com/surface/business/surface-laptop-3) | 128 Go/Intel i5/8 Go de RAM | Aucun | 22 octobre 2021 | 22 octobre 2024 |
 | [Surface Pro 6](https://www.microsoft.com/p/surface-pro-6-for-business/8xjq3d3lrp0r/grf9?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 Go/Intel i5/8 Go de RAM | Aucun | 16 octobre 2020 | 16 octobre 2023 |
