@@ -11,15 +11,17 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
+- m365solution-mip
+- m365initiative-compliance
 localization_priority: None
 description: Utilisez les barrières relatives aux informations pour garantir la conformité de la communication à l’aide de Microsoft teams au sein de votre organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f723885a366e6f92f29faccfb632677c6e0028c8
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: 7b223de8eba68d49a8cc0c90239305eb05bb1090
+ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430222"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48379196"
 ---
 # <a name="information-barriers"></a>Obstacles aux informations
 
@@ -66,7 +68,7 @@ Les barrières de l’information se dérouleront maintenant et sont incluses da
 
 - Microsoft 365 E5/a5
 - Office 365 E5/a5
-- Conformité avancée Office 365
+- Conformité avancée Office 365
 - Conformité Microsoft 365 E5/a5
 - Gestion des risques Microsoft 365 Insider
 

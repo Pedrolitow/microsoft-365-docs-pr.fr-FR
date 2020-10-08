@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 5a1bd06e76564750c7b080182ac8ab93fc8d60de
-ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
+ms.openlocfilehash: c98c0081d95da19e79db03dc4b4fdb823a14e42c
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48341222"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377269"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Prise en main des paramètres de gestion des risques initiés
 
@@ -300,14 +300,14 @@ Les clients ayant des abonnements Microsoft 365 qui incluent une gestion des ris
 
 Les modèles automateurs d’alimentation suivants sont fournis aux clients pour prendre en charge l’automatisation des processus pour les utilisateurs et les cas de gestion des risques initiaux :
 
-- **Avertir les utilisateurs lorsqu’ils sont ajoutés à une stratégie d’Insider Risk**: ce modèle est destiné aux organisations qui ont des stratégies internes, de confidentialité ou des exigences réglementaires que les utilisateurs doivent être avertis lorsqu’ils sont soumis à des stratégies de gestion des risques initiés. Lorsque ce flux est configuré et sélectionné pour un utilisateur dans la page utilisateurs, les utilisateurs et leurs responsables reçoivent un message électronique lorsque l’utilisateur est ajouté à une stratégie de gestion des risques Insiders. Ce modèle prend également en charge la mise à jour d’une liste SharePoint hébergée sur un site SharePoint pour faciliter le suivi des détails du message de notification comme la date/l’heure et le destinataire du message. Power automatiser les flux à l’aide de ce modèle sont disponibles dans le **tableau de bord utilisateurs**.
-- **Demander des informations de RH ou de l’entreprise à propos d’un utilisateur dans un cas d’Insider**: lorsqu’il s’agit d’un cas, des analystes et des enquêteurs de risques initiés peuvent avoir besoin de consulter les RH ou les autres parties prenantes pour comprendre le contexte des activités de cas. Lorsque ce flux est configuré et sélectionné pour un cas, les analystes et les enquêteurs envoient un message électronique aux parties prenantes RH et entreprise configurées pour ce flux. Chaque destinataire reçoit un message avec des options de réponse préconfigurées ou personnalisables. Lorsque les destinataires sélectionnent une option de réponse, la réponse est enregistrée comme note de cas et inclut le destinataire et les informations de date/heure. Power automatiser les flux à l’aide de ce modèle sont disponibles dans le **tableau de bord cas**.
+- **Avertir les utilisateurs lorsqu’ils sont ajoutés à une stratégie d’Insider Risk**: ce modèle est destiné aux organisations qui ont des stratégies internes, de confidentialité ou des exigences réglementaires que les utilisateurs doivent être avertis lorsqu’ils sont soumis à des stratégies de gestion des risques initiés. Lorsque ce flux est configuré et sélectionné pour un utilisateur dans la page utilisateurs, les utilisateurs et leurs responsables reçoivent un message électronique lorsque l’utilisateur est ajouté à une stratégie de gestion des risques Insiders. Ce modèle prend également en charge la mise à jour d’une liste SharePoint hébergée sur un site SharePoint pour faciliter le suivi des détails du message de notification comme la date/l’heure et le destinataire du message. Si vous avez choisi d’anonymiser les utilisateurs dans les **paramètres de confidentialité**, les flux créés à partir de ce modèle ne fonctionneront pas comme prévu afin que la confidentialité de l’utilisateur soit maintenue. Power automatiser les flux à l’aide de ce modèle sont disponibles dans le **tableau de bord utilisateurs**.
+- **Demander des informations de RH ou de l’entreprise à propos d’un utilisateur dans un cas d’Insider**: lorsqu’il s’agit d’un cas, des analystes et des enquêteurs de risques initiés peuvent avoir besoin de consulter les RH ou les autres parties prenantes pour comprendre le contexte des activités de cas. Lorsque ce flux est configuré et sélectionné pour un cas, les analystes et les enquêteurs envoient un message électronique aux parties prenantes RH et entreprise configurées pour ce flux. Chaque destinataire reçoit un message avec des options de réponse préconfigurées ou personnalisables. Lorsque les destinataires sélectionnent une option de réponse, la réponse est enregistrée comme note de cas et inclut le destinataire et les informations de date/heure. Si vous avez choisi d’anonymiser les utilisateurs dans les **paramètres de confidentialité**, les flux créés à partir de ce modèle ne fonctionneront pas comme prévu afin que la confidentialité de l’utilisateur soit maintenue. Power automatiser les flux à l’aide de ce modèle sont disponibles dans le **tableau de bord cas**.
 - **Avertir le gestionnaire lorsqu’un utilisateur a une alerte de risque d’Insider**: certaines organisations peuvent avoir besoin de recevoir une notification de gestion immédiate lorsqu’un utilisateur a une alerte de gestion des risques Insider. Lorsque ce flux est configuré et sélectionné, le responsable de l’utilisateur du cas reçoit un message électronique contenant les informations suivantes sur toutes les alertes de cas : 
     - Stratégie applicable pour l’alerte
     - Date/heure de l’alerte
     - Niveau de gravité de l’alerte
 
-    Le flux met automatiquement à jour les notes de cas auxquelles le message a été envoyé et que le flux a été activé. Power automatiser les flux à l’aide de ce modèle sont disponibles dans le **tableau de bord cas**.
+    Le flux met automatiquement à jour les notes de cas auxquelles le message a été envoyé et que le flux a été activé. Si vous avez choisi d’anonymiser les utilisateurs dans les **paramètres de confidentialité**, les flux créés à partir de ce modèle ne fonctionneront pas comme prévu afin que la confidentialité de l’utilisateur soit maintenue. Power automatiser les flux à l’aide de ce modèle sont disponibles dans le **tableau de bord cas**.
 
 - **Ajouter un rappel de calendrier pour le suivi d’un cas d’Insider risque**: ce modèle permet aux enquêteurs et analystes d’ajouter des rappels de calendrier pour les incidents à leur calendrier Office 365 Outlook. Ce flux élimine la nécessité pour les utilisateurs de quitter ou de quitter le flux de travail de gestion des risques inSided lors du traitement des alertes de triage de cas et de tri. Lorsque ce flux est configuré et sélectionné, un rappel est ajouté au calendrier Office 365 Outlook pour l’utilisateur qui exécute le flux. Power automatiser les flux à l’aide de ce modèle sont disponibles dans le **tableau de bord cas**.
 
