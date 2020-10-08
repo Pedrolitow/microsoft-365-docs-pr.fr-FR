@@ -1,6 +1,6 @@
 ---
 title: Accès au portail d’administration
-keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 ms.author: jaimeo
 author: jaimeo
@@ -9,12 +9,12 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: f57911276d74c6945027077404e1f83c2f5072fd
-ms.sourcegitcommit: eb905c5b4d7e71fc930a207357295b0160c4f065
+ms.openlocfilehash: 5adf57c2397c4de3c5ea8622a2a9be7207ebf152
+ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "48137034"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48379294"
 ---
 # <a name="access-the-admin-portal"></a>Accéder au portail d’administration
 
@@ -34,12 +34,12 @@ Chacun des rôles ci-dessous peut être affecté pour fournir différents niveau
 
 |Rôle Azure AD  |Autorisations du bureau géré Microsoft  |
 |---------|---------|
-|Administrateur général     | Les administrateurs disposant de ce rôle disposent d' **autorisations de lecture et d’écriture** sur toutes les fonctionnalités du portail d’administration de bureau géré Microsoft.         |
-|Lecteur général     | Les administrateurs disposant de ce rôle disposent d' **autorisations en lecture seule** sur toutes les fonctionnalités du portail d’administration de bureau géré Microsoft.         |
-|Administrateur du service Intune     |  Les administrateurs disposant de ce rôle disposent d' **autorisations de lecture et d’écriture** sur toutes les fonctionnalités du portail d’administration de bureau géré Microsoft. **Modifier :** Démarrage de septembre 2020 les administrateurs ayant ce rôle n’auront pas accès aux fonctionnalités de sécurité de bureau géré Microsoft.       |
-|Administrateur de support de service     | Les administrateurs disposant de ce rôle disposent d' **autorisations de lecture et d’écriture** sur toutes les fonctionnalités du portail d’administration de bureau géré Microsoft. **Modifier :** Démarrage de septembre 2020 les administrateurs ayant ce rôle n’auront pas accès aux fonctionnalités de sécurité de bureau géré Microsoft.         |
-|Administrateur de la sécurité | **(En aperçu de septembre 2020)** Les administrateurs disposant de ce rôle disposent d’autorisations en lecture seule sur toutes les fonctionnalités et des autorisations d’écriture pour les fonctionnalités liées à la sécurité dans le bureau géré Microsoft dans le portail d’administration. |
-|Lecteur de sécurité | **(En aperçu de septembre 2020)**  Les administrateurs disposant de ce rôle disposent d’autorisations en lecture seule sur toutes les fonctionnalités du portail d’administration de bureau géré Microsoft.|
+|Administrateur général     | Les administrateurs disposant de ce rôle disposent **d’autorisations de lecture et d’écriture sur toutes les fonctionnalités** du portail d’administration de bureau géré Microsoft.         |
+|Lecteur général     | Les administrateurs disposant de ce rôle disposent d' **autorisations en lecture seule sur toutes les fonctionnalités** du portail d’administration de bureau géré Microsoft.         |
+|Administrateur du service Intune     |  Les administrateurs disposant de ce rôle disposent **d’autorisations de lecture et d’écriture sur les fonctionnalités qui ne sont pas liées à la sécurité** dans le portail d’administration de bureau géré Microsoft.       |
+|Administrateur de support de service     | Les administrateurs disposant de ce rôle disposent **d’autorisations de lecture et d’écriture sur les fonctionnalités qui ne sont pas liées à la sécurité** dans le portail d’administration de bureau géré Microsoft.         |
+|Administrateur de la sécurité | Les administrateurs disposant de ce rôle disposent d' **autorisations en lecture seule sur toutes les fonctionnalités** et **des autorisations d’écriture pour les fonctionnalités liées** à la sécurité dans le bureau géré Microsoft dans le portail d’administration. |
+|Lecteur de sécurité |Les administrateurs disposant de ce rôle disposent d' **autorisations en lecture seule sur toutes les fonctionnalités** du portail d’administration de bureau géré Microsoft.|
 
 > [!IMPORTANT]
 > Seul le rôle administrateur général dispose des autorisations nécessaires pour *inscrire* votre organisation dans le bureau géré Microsoft. N’oubliez pas que les rôles Azure Active Directory accorderont des privilèges de compte d’utilisateur à travers différents services Microsoft. Après avoir effectué l’enregistrement avec le bureau géré Microsoft, vous devez toujours utiliser le rôle avec les privilèges *minimum* nécessaires pour accomplir vos autres tâches.
@@ -47,9 +47,9 @@ Chacun des rôles ci-dessous peut être affecté pour fournir différents niveau
  
 |Rôle personnalisé  |Autorisations du bureau géré Microsoft  |
 |---------|---------|
-|Administrateur du service bureau géré Microsoft  | **(En aperçu de septembre 2020)** Lorsqu’il est affecté à un utilisateur, ce rôle accorde à l’administrateur des **autorisations en lecture & en écriture sur des fonctionnalités qui ne sont pas liées à la sécurité** dans le portail d’administration de bureau géré Microsoft.  |
-|Lecteur de bureau géré Microsoft | **(En aperçu de septembre 2020)** Lorsqu’il est affecté à un utilisateur, ce rôle accorde aux administrateurs des **autorisations de lecture seule pour les fonctionnalités qui ne sont pas liées à la sécurité** dans le portail d’administration de bureau géré Microsoft. |
-|Gestionnaire de sécurité du bureau géré Microsoft | **(En aperçu de septembre 2020)** Lorsqu’il est affecté à un utilisateur, ce rôle accorde à cet administrateur **des autorisations en lecture & en écriture uniquement pour les fonctionnalités liées** à la sécurité dans le portail d’administration de bureau géré Microsoft.   |
+|Administrateur du service bureau géré Microsoft  | Lorsqu’il est affecté à un utilisateur, ce rôle accorde aux administrateurs des **autorisations de lecture et d’écriture sur les fonctionnalités qui ne sont pas liées à la sécurité** dans le portail d’administration de bureau géré Microsoft.  |
+|Lecteur de bureau géré Microsoft | Lorsqu’il est affecté à un utilisateur, ce rôle donne aux administrateurs des **autorisations en lecture seule pour les fonctionnalités qui ne sont pas liées à la sécurité** dans le portail d’administration de bureau géré Microsoft. |
+|Gestionnaire de sécurité du bureau géré Microsoft |Lorsqu’il est affecté à un utilisateur, ce rôle accorde aux administrateurs **des autorisations de lecture et d’écriture uniquement pour les fonctionnalités liées** à la sécurité dans le portail d’administration de bureau géré Microsoft.   |
 
 > [!NOTE]
 > Les fonctionnalités de sécurité incluent les communications liées à la sécurité, la gestion des contacts de sécurité, la gestion des demandes de support liées à la sécurité et l’accès aux rapports liés à la sécurité. 
