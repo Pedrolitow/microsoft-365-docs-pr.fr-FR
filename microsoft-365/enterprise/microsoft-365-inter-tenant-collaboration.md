@@ -3,7 +3,6 @@ title: Collaboration intersites Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/21/2020
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -20,12 +19,12 @@ f1.keywords:
 - NOCSH
 description: Découvrez comment fonctionne la collaboration Microsoft 365 entre les clients et les organisations, ce qui permet à différentes organisations de collaborer en toute sécurité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8064543f771927f539d09e3136663bb0df56d5be
-ms.sourcegitcommit: 4ee683c18442386f6fc5c76ffabfad2c28b81d42
+ms.openlocfilehash: 00eacfc21d3223b5b9a1ad420cd5d1d85bf4ea8e
+ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48214798"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48384824"
 ---
 # <a name="microsoft-365-inter-tenant-collaboration"></a>Collaboration intersites Microsoft 365
 
@@ -78,7 +77,7 @@ Les options de collaboration inter-locataire de Microsoft 365 incluent l’utili
 |Objectif de partage|Action administrative|Informations sur les procédures|
 |:-----|:-----|:-----|
 |Collaborer dans teams avec des utilisateurs externes à l’Organisation | Un administrateur général pour le client invité de Microsoft 365 doit activer la collaboration externe dans Teams. Les administrateurs globaux et les propriétaires d’équipe pourront désormais inviter quiconque disposant d’une adresse de messagerie à collaborer dans Teams.  <br/> Les administrateurs peuvent également gérer et modifier des invités déjà présents dans leur client. |  <ul><li> [Autoriser l’accès invité](https://docs.microsoft.com/microsoftteams/teams-dependencies) </li><li> [Activer ou désactiver l’accès invité dans teams](https://docs.microsoft.com/microsoftteams/set-up-guests) </li><li> [Utiliser PowerShell pour contrôler l’accès invité](https://docs.microsoft.com/microsoftteams/guest-access-powershell) </li><li> [Liste de vérification d’accès invité](https://docs.microsoft.com/microsoftteams/guest-access-checklist) </li><li> [Afficher les utilisateurs invités](https://docs.microsoft.com/microsoftteams/view-guests) </li><li> [Modifier les informations d’un utilisateur invité](https://docs.microsoft.com/microsoftteams/edit-guests-information) </li></ul> |
-|Les propriétaires d’équipe peuvent inviter et gérer la collaboration des invités au sein de leurs équipes.  </li><li> |Les propriétaires d’équipe disposent de contrôles supplémentaires sur ce que les invités peuvent faire au sein de leurs équipes. |  <ul><li> [Ajouter des invités](https://support.office.com/article/teams-and-channels-df38ae23-8f85-46d3-b071-cb11b9de5499?ui=en-US&amp;rs=en-US&amp;ad=US#bkmk_addingguests&amp;ID0EAABAAA=Add_guests) </li><li> [Ajouter un invité à une équipe](https://docs.microsoft.com/microsoftteams/add-guests) </li><li> [Gérer l’accès invité dans teams](https://docs.microsoft.com/microsoftteams/manage-guests) </li><li> [Afficher les utilisateurs d’une équipe ou d’un canal](https://support.office.com/article/see-who-s-on-a-team-or-in-a-channel-5c6be9be-9c45-4a0f-a1a0-f332b23cb6b7?ui=en-US&amp;rs=en-US&amp;ad=US) </li></ul> |
+|Les propriétaires d’équipe peuvent inviter et gérer la collaboration des invités au sein de leurs équipes.  |Les propriétaires d’équipe disposent de contrôles supplémentaires sur ce que les invités peuvent faire au sein de leurs équipes. |  <ul><li> [Ajouter des invités](https://support.office.com/article/teams-and-channels-df38ae23-8f85-46d3-b071-cb11b9de5499?ui=en-US&amp;rs=en-US&amp;ad=US#bkmk_addingguests&amp;ID0EAABAAA=Add_guests) </li><li> [Ajouter un invité à une équipe](https://docs.microsoft.com/microsoftteams/add-guests) </li><li> [Gérer l’accès invité dans teams](https://docs.microsoft.com/microsoftteams/manage-guests) </li><li> [Afficher les utilisateurs d’une équipe ou d’un canal](https://support.office.com/article/see-who-s-on-a-team-or-in-a-channel-5c6be9be-9c45-4a0f-a1a0-f332b23cb6b7?ui=en-US&amp;rs=en-US&amp;ad=US) </li></ul> |
 |Les invités d’autres clients peuvent afficher le contenu dans teams et collaborer avec d’autres membres | Aucun. | [Expérience d’accès invité](https://docs.microsoft.com/microsoftteams/guest-experience)| 
 
 ## <a name="power-bi-collaboration-options"></a>Options de collaboration Power BI
@@ -93,18 +92,18 @@ Les options de collaboration inter-locataire de Microsoft 365 incluent l’utili
 
 Chaque organisation gère ses propres comptes d’utilisateur, identités, groupes de sécurité, abonnements, licences et stockage. Les utilisateurs utilisent les fonctionnalités de collaboration de Microsoft 365 avec les stratégies de partage et les paramètres de sécurité pour fournir un accès aux informations nécessaires tout en maintenant le contrôle des biens de l’entreprise.
   
-- **Comptes d’utilisateur :** Les comptes ne peuvent pas être partagés et les comptes ne peuvent pas être dupliqués entre les clients ou les partitions dans les services d’annuaire Active Directory locaux. 
+- **Comptes d’utilisateur :** Les comptes ne peuvent pas être partagés ou dupliqués entre les clients ou les partitions dans les services de domaine Active Directory locaux. 
     
 - ** &amp; Abonnements de licences :** dans Microsoft 365, les licences des plans de gestion des licences (également appelés sku ou Microsoft 365 plans) permettent aux utilisateurs d’accéder aux services Microsoft 365 définis pour ces plans. 
     
-- **Stockage :** Dans les plans Microsoft 365, les limites et limites logicielles pour SharePoint Online sont gérées séparément des limites de stockage des boîtes aux lettres. Les limites de stockage des boîtes aux lettres sont configurées et gérées à l’aide d’Exchange Online. Dans les deux cas, le stockage ne peut pas être partagé entre les locataires. 
+- **Stockage :** Dans les plans de gestion des licences Microsoft 365, les limites et limites logicielles pour SharePoint Online sont gérées séparément des limites de stockage des boîtes aux lettres. Les limites de stockage des boîtes aux lettres sont configurées et gérées à l’aide d’Exchange Online. Dans les deux cas, le stockage ne peut pas être partagé entre les clients. 
     
 ### <a name="can-we-share-domain-namespaces-across-microsoft-365-tenants"></a>Puis-je partager des espaces de noms de domaine entre les clients Microsoft 365 ?
 
-Non. Les domaines personnel, tels que fabrikam.com ou tailspintoys.com, ne peuvent être associés qu’à un seul client à la fois. Chaque client doit disposer de son propre espace de noms ; Les espaces de noms UPN, SMTP et SIP ne peuvent pas être partagés entre les clients.
+Non. Les noms de domaine de l’organisation, tels que fabrikam.com ou tailspintoys.com, peuvent être associés et utilisés uniquement avec un seul client Microsoft 365. Chaque client doit disposer de son propre espace de noms. Les espaces de noms UPN, SMTP et SIP ne peuvent pas être partagés entre les clients.
   
 ### <a name="what-about-hybrid-components-and-microsoft-365-inter-tenant-collaboration"></a>Qu’en est-il des composants hybrides et de la collaboration inter-clients Microsoft 365 ?
 
 Les composants hybrides locaux, tels qu’une organisation Exchange et Azure AD Connect, ne peuvent pas être répartis entre plusieurs clients.
-  
+ 
 

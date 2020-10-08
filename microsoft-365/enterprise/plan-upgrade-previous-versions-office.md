@@ -3,7 +3,6 @@ title: Planifier votre mise à niveau à partir de serveurs et clients Office 20
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/15/2020
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -17,25 +16,25 @@ f1.keywords:
 ms.custom:
 - seo-marvel-apr2020
 description: Cet article contient des ressources destinées aux utilisateurs d’Office 2007 ou Office 2010 afin de les aider à planifier leur mise à niveau.
-ms.openlocfilehash: 0ad90235bf7ad862a1f0162f87dca7ee2df3d799
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 0b137b39d671b9746445f9e41a5859732574dbe4
+ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46689865"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48384570"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Planifiez votre mise à jour des serveurs et clients Office 2007 et Office 2010
 
-*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Si votre organisation utilise des versions antérieures des produits et serveurs Office, il est très utile de commencer à planifier votre mise à niveau. Les produits et services Office 2007 ont atteint leur [fin de prise en charge](upgrade-from-office-2007-servers-and-products.md). 
+Si votre organisation utilise des versions antérieures des produits et serveurs Office, il est très utile de commencer à planifier votre mise à niveau. Les produits et services Office 2007 ont atteint leur [fin de prise en charge](upgrade-from-office-2007-servers-and-products.md). Pour les produits et services Office 2010 :
 
 - La fin du support est prise en charge par les **Office 2010 et Exchange 2010 le 13 octobre 2020**. 
 - La prise en charge de SharePoint 2010 et de Project Server 2010 se termine le **avril 13, 2021**. 
 
-Utilisez les ressources de cet article pour commencer.
+Pour plus d’informations, consultez la rubrique [mise à niveau à partir de serveurs et clients Office 2010](upgrade-from-office-2010-servers-and-products.md).
 
-Pour plus d’informations, consultez la rubrique [mise à niveau des serveurs et des clients Office 2010](upgrade-from-office-2010-servers-and-products.md) .
+Utilisez les ressources de cet article pour commencer votre mise à niveau.
 
 ## <a name="what-is-microsoft-365"></a>Qu’est-ce que Microsoft 365 ?
 
@@ -44,13 +43,14 @@ Pour plus d’informations, consultez la rubrique [mise à niveau des serveurs e
 Microsoft 365 inclut les licences et les fonctionnalités permettant de s’assurer que votre organisation fonctionne sur le dernier système d’exploitation Windows et que vos appareils, y compris Windows, iOS et Android, sont enregistrés et protégés par des stratégies nécessitant une authentification et une protection des données. En outre, le logiciel client Windows 10 et vos applications Microsoft 365 pour entreprises (précédemment nommé Office 365 ProPlus) sont mis à jour de façon continue pour inclure les fonctionnalités et mises à jour de sécurité les plus récentes.
   
 Microsoft 365 est le moyen de transformer numériquement votre entreprise avec des appareils et des expériences de productivité constamment améliorés, activés et sécurisés par le Cloud Microsoft.
-  
-|**Ressource**|**Description**|
+ 
+| Ressource | Description |
 |:-----|:-----|
-|[Microsoft 365](https://www.microsoft.com/microsoft-365) <br/> |Obtenir des informations sur les différentes versions de Microsoft 365.  <br/> |
-|[Documentation Microsoft 365 entreprise](https://docs.microsoft.com/microsoft-365/business/) <br/> |Obtenez des informations détaillées sur la version de Microsoft 365 pour les petites et moyennes entreprises.  <br/> |
-|[Documentation Microsoft 365 éducation](https://docs.microsoft.com/microsoft-365/education/) <br/> |Obtenez des informations détaillées sur la version de Microsoft 365 pour les organisations éducatives.  <br/> |
-|[Documentation Microsoft 365 Entreprise](https://docs.microsoft.com/microsoft-365/enterprise/) <br/> |Obtenez des informations détaillées sur la version de Microsoft 365 pour les organisations d’entreprise.  <br/> |
+|[Microsoft 365](https://www.microsoft.com/microsoft-365) <br/> | Obtenir des informations sur les différentes versions de Microsoft 365.  <br/> |
+|[Documentation Microsoft 365 entreprise](https://docs.microsoft.com/microsoft-365/business/) <br/> | Obtenez des informations détaillées sur la version de Microsoft 365 pour les petites et moyennes entreprises.  <br/> |
+|[Documentation Microsoft 365 éducation](https://docs.microsoft.com/microsoft-365/education/) <br/> | Obtenez des informations détaillées sur la version de Microsoft 365 pour les organisations éducatives.  <br/> |
+|[Documentation Microsoft 365 Entreprise](https://docs.microsoft.com/microsoft-365/enterprise/) <br/> | Obtenez des informations détaillées sur la version de Microsoft 365 pour les organisations d’entreprise.  <br/> |
+|||
 
 ## <a name="what-happens-if-i-dont-upgrade"></a>Que se passe-t-il si je ne suis pas mis à niveau ?
 
@@ -94,7 +94,7 @@ Si vous utilisez Office 2007 ou Office 2010 à la maison, envisagez les options 
 
 - **Essayez Microsoft 365 pour les particuliers.** Utilisez la [famille Microsoft 365](https://www.microsoft.com/microsoft-365/p/microsoft-365-family/cfq7ttc0k5dm?rtc=2&activetab=pivot:overviewtab) pour les maisons. Démarrez une version d’évaluation et découvrez le fonctionnement de la famille Microsoft 365. Avec la famille Microsoft 365, vous apprécierez de stocker le stockage dans le Cloud avec OneDrive.
 
-   Avec la [fin de la prise en charge de Windows 7 le 14 janvier 2020](https://www.microsoft.com/windowsforbusiness/end-of-windows-7-support), les versions de Word, Excel, PowerPoint, Outlook, Publisher et Access fournies avec Office 365 Home ou Office 365 Personal qui s’exécutent sur des appareils Windows 7 recevront des mises à jour de sécurité, mais pas de mises à jour de fonctionnalités. Pour continuer à recevoir des mises à jour de fonctionnalité pour ces applications, [Mettez à niveau vos appareils Windows 7 vers Windows 10](https://support.microsoft.com/help/12435/windows-10-upgrade-faq).
+   Avec la [fin de la prise en charge de Windows 7 le 14 janvier 2020](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support), les versions de Word, Excel, PowerPoint, Outlook, Publisher et Access fournies avec Office 365 Home ou Office 365 Personal qui s’exécutent sur des appareils Windows 7 recevront des mises à jour de sécurité, mais pas de mises à jour de fonctionnalités. Pour continuer à recevoir des mises à jour de fonctionnalité pour ces applications, [Mettez à niveau vos appareils Windows 7 vers Windows 10](https://support.microsoft.com/help/12435/windows-10-upgrade-faq).
     
 - **Acheter Office famille &amp; Student.** Si vous choisissez cette option, vous allez acheter un achat unique, puis installer Office sur votre PC ou Mac Windows. Il ne s’agit pas d’un abonnement ; Il s’agit d’une licence d’utilisation perpétuelle ponctuelle pour un ordinateur. Affichez les [conditions requises](https://office.com/systemrequirements), puis choisissez la version que vous souhaitez utiliser.
 
@@ -102,9 +102,9 @@ Si vous utilisez Office 2007 ou Office 2010 à la maison, envisagez les options 
 
     - Si votre PC Windows exécute Windows 7, 8 ou 8,1 et que vous ne procédez pas à la mise à niveau vers Windows 10 pour le moment, vous pouvez envisager d’obtenir Office famille & étudiant 2016 (ou une autre édition de Microsoft Office) auprès d’un revendeur agréé.
      
-     - La prise en charge de Windows 7 se [termine le 14 janvier 2020](https://www.microsoft.com/windowsforbusiness/end-of-windows-7-support), après quoi Microsoft ne pourra pas fournir de mises à jour de sécurité ou de support technique. Mettez à niveau vos appareils Windows 7 vers Windows 10 pour continuer les mises à jour de sécurité et de fonctionnalités et la prise en charge continue.
+     - La prise en charge de Windows 7 se [termine le 14 janvier 2020](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support), après quoi Microsoft ne pourra pas fournir de mises à jour de sécurité ou de support technique. Mettez à niveau vos appareils Windows 7 vers Windows 10 pour continuer les mises à jour de sécurité et de fonctionnalités et la prise en charge continue.
 
-Vous pouvez également choisir de ne pas effectuer la mise à niveau pour le moment. Vos applications Office continueront à s’exécuter. Des calendriers pour les dates de support Office sont disponibles [ici](https://go.microsoft.com/fwlink/p/?linkid=2085724). Toutefois, la mise à niveau vous donnera des mises à jour de sécurité ou des fonctionnalités nouvelles et améliorées.
+Vous pouvez également choisir de ne pas effectuer la mise à niveau pour le moment. Vos applications Office continueront à s’exécuter. Des calendriers pour les dates de support Office sont disponibles [ici](https://support.microsoft.com/lifecycle/search/13615). Toutefois, la mise à niveau vous donnera des mises à jour de sécurité ou des fonctionnalités nouvelles et améliorées.
    
 ## <a name="next-step"></a>Étape suivante
 

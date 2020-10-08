@@ -15,12 +15,12 @@ ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
 description: La feuille de route pour configurer la gestion des appareils pour Microsoft 365.
-ms.openlocfilehash: bb19c38d5cf92cfc04ac83bc29573ea24c93ef30
-ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
+ms.openlocfilehash: 0efe7098f90064184f222acb671ae6f96c1b38d5
+ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47775170"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48384754"
 ---
 # <a name="device-management-roadmap-for-microsoft-365"></a>Feuille de route de gestion des appareils pour Microsoft 365
 
@@ -35,17 +35,22 @@ Il existe deux options pour la gestion des appareils :
 
 Vous pouvez utiliser Microsoft Intune pour gérer l’accès à votre organisation à l’aide de la gestion des appareils mobiles ou de la gestion des applications mobiles. La gestion des appareils mobiles s’avère lorsque les utilisateurs « inscrivent » leurs appareils dans Intune. Après l’enregistrement d’un appareil, il s’agit d’un appareil géré ; par conséquent, il peut recevoir les stratégies, les règles et les paramètres de votre organisation. Par exemple, vous pouvez installer des applications spécifiques, créer une stratégie de mot de passe, installer une connexion VPN, et bien plus encore.
 
-Les utilisateurs disposant de leurs propres appareils personnels peuvent ne pas vouloir inscrire leurs appareils ou être gérés par Intune et les stratégies de votre organisation. Toutefois, vous devez toujours protéger les ressources et les données de votre organisation. Dans ce scénario, vous pouvez protéger vos applications à l’aide de la gestion des applications mobiles. Par exemple, vous pouvez utiliser une stratégie de gestion des applications mobiles qui exige qu’un utilisateur entre un code confidentiel lors de l’accès à Microsoft SharePoint sur l’appareil.
+Les utilisateurs disposant de leurs propres appareils personnels peuvent ne pas vouloir inscrire leurs appareils ou être gérés par Intune et les stratégies de votre organisation. Toutefois, vous devez toujours protéger les ressources et les données de votre organisation. Dans ce scénario, vous pouvez protéger vos applications à l’aide de la gestion des applications mobiles. Par exemple, vous pouvez utiliser une stratégie de gestion des applications mobiles qui exige qu’un utilisateur entre un code confidentiel lors de l’accès à SharePoint Online sur l’appareil.
 
 Vous allez également déterminer la manière dont vous allez gérer les appareils personnels et les appareils appartenant à l’organisation. Vous souhaiterez peut-être traiter les appareils différemment en fonction de leur utilisation.
-
-Pour gérer les appareils à l’aide d’Intune, démarrez [ici](https://docs.microsoft.com/mem/intune/fundamentals/planning-guide).
 
 ## <a name="basic-mobility-and-security"></a>Mobilité et sécurité de base
 
 Il est intégré à Microsoft 365 et vous aide à sécuriser et gérer les appareils mobiles de vos utilisateurs, tels que les iPhone, les iPad, les Android et les téléphones Windows. Vous pouvez créer et gérer des stratégies de sécurité des appareils, réinitialiser un appareil à distance et afficher des rapports détaillés sur les appareils.
 
-Pour gérer les appareils à l’aide de la mobilité et de la sécurité de base, commencez [ici](https://support.microsoft.com/office/set-up-basic-mobility-and-security-dd892318-bc44-4eb1-af00-9db5430be3cd).
+## <a name="choose-between-the-two-options"></a>Choisir entre les deux options
+
+Pour vous aider à mieux évaluer l’option de gestion des appareils qui vous convient le mieux, voir [Choose between Basic Mobility Security and Intune](https://docs.microsoft.com/office365/securitycompliance/choose-between-mdm-and-intune).
+
+En fonction de votre évaluation, commencez à gérer vos appareils avec :
+
+- [Intune](https://docs.microsoft.com/mem/intune/fundamentals/planning-guide).
+- [Sécurité et mobilité de base](https://support.microsoft.com/office/set-up-basic-mobility-and-security-dd892318-bc44-4eb1-af00-9db5430be3cd).
  
 ## <a name="identity-and-device-access-recommendations"></a>Recommandations en matière d’identité et d’accès aux appareils
 

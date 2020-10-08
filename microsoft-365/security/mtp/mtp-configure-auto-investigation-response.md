@@ -7,19 +7,19 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.date: 09/17/2020
+ms.date: 10/07/2020
 ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection: M365-security-compliance.
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
-ms.openlocfilehash: f7bcfa4f08bee51408de33964f1dfd1e1db3bd33
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: f904512f9fd07e2065f3d27a5bd5adc56a3565d5
+ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199744"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48384795"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-threat-protection"></a>Configurer les fonctionnalités d’analyse et de réponse automatisées dans Microsoft Threat Protection
 
@@ -52,8 +52,6 @@ Ensuite, une fois toutes les opérations configurées, [Vérifiez les actions en
 
 Si les analyses automatisées sont exécutées et si les actions de correction sont prises automatiquement ou uniquement à l’approbation de vos appareils, dépendent de certains paramètres, tels que les stratégies de groupe d’appareils de votre organisation. Examinez le niveau d’automatisation défini pour vos stratégies de groupes d’appareils.
 
-### <a name="to-review-or-change-your-device-group-policies"></a>Pour consulter ou modifier vos stratégies de groupes d’appareils
-
 1. Accédez au centre de sécurité Microsoft Defender ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ) et connectez-vous.
 
 2. Accédez à **paramètres**  >  **autorisations**  >  **groupes de périphériques**. 
@@ -69,8 +67,6 @@ Si les analyses automatisées sont exécutées et si les actions de correction s
 Microsoft fournit des stratégies d' [alerte](https://docs.microsoft.com/microsoft-365/compliance/alert-policies) intégrées qui permettent d’identifier certains risques. Ces risques incluent les autorisations d’administrateur Exchange en abus, l’activité de programmes malveillants, les menaces externes et internes potentielles, ainsi que les risques de gouvernance des informations. Certaines alertes peuvent déclencher une [enquête et une réponse automatisées dans Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air). Assurez-vous que vos fonctionnalités [Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) sont correctement configurées.
 
 Bien que certaines alertes et stratégies de sécurité puissent déclencher des enquêtes automatiques, aucune action de correction n’est effectuée automatiquement pour le courrier électronique et le contenu. Au lieu de cela, toutes les actions de correction pour le contenu du courrier électronique et de la messagerie attendent l’approbation de votre équipe des opérations de sécurité dans le [Centre de notifications](mtp-action-center.md).
-
-### <a name="to-view-or-change-your-security-and-alert-policies-in-office-365"></a>Pour afficher ou modifier vos stratégies de sécurité et d’alerte dans Office 365
 
 Les paramètres de sécurité d’Office 365 aident à protéger la messagerie et le contenu. Pour afficher ou modifier ces paramètres, suivez les instructions de la section se [protéger contre les menaces](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats).
 
@@ -88,13 +84,15 @@ Les paramètres de sécurité d’Office 365 aident à protéger la messagerie e
 
 5. Assurez-vous que la [purge automatique pour](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#zero-hour-auto-purge-for-email-in-eop) la protection de la messagerie est activée. 
 
-8. (Cette option est facultative) Consultez vos [stratégies d’alerte Office 365](https://docs.microsoft.com/microsoft-365/compliance/alert-policies) dans le centre de conformité Microsoft 365 ( [https://compliance.microsoft.com/compliancepolicies](https://compliance.microsoft.com/compliancepolicies) ). Plusieurs stratégies d’alerte par défaut figurent dans la catégorie gestion des menaces. Certaines de ces alertes peuvent déclencher une enquête et une réponse automatisées. Pour en savoir plus, consultez la rubrique [stratégies d’alerte par défaut](https://docs.microsoft.com/microsoft-365/compliance/alert-policies?#default-alert-policies).
+8. (Cette option est facultative.) Consultez vos [stratégies d’alerte Office 365](https://docs.microsoft.com/microsoft-365/compliance/alert-policies) dans le centre de conformité Microsoft 365 ( [https://compliance.microsoft.com/compliancepolicies](https://compliance.microsoft.com/compliancepolicies) ). Plusieurs stratégies d’alerte par défaut figurent dans la catégorie gestion des menaces. Certaines de ces alertes peuvent déclencher une enquête et une réponse automatisées. Pour en savoir plus, consultez la rubrique [stratégies d’alerte par défaut](https://docs.microsoft.com/microsoft-365/compliance/alert-policies?#default-alert-policies).
  
 ## <a name="make-sure-microsoft-threat-protection-is-turned-on"></a>Vérifier que la protection contre les menaces Microsoft est activée
 
 1. Accédez au centre de sécurité Microsoft 365 ( [https://security.microsoft.com](https://security.microsoft.com) ) et connectez-vous.
 
-2. Dans le volet de navigation, recherchez les **incidents**, le **Centre de notifications**et la **chasse**, comme illustré dans l’image suivante :<br/> :::image type="content" source="../../media/mtp-enable/mtp-on.png" alt-text="MTP sur":::
+2. Dans le volet de navigation, recherchez les **incidents**, le **Centre de notifications**et la **chasse**, comme illustré dans l’image suivante :
+
+   :::image type="content" source="../../media/mtp-enable/mtp-on.png" alt-text="MTP sur":::
 
    - Si vous constatez des **incidents**, le **Centre de notifications**et la **chasse**, la protection contre les menaces Microsoft est activée. Passez à la procédure suivante, [Vérifiez ou modifiez le niveau d’automatisation pour les groupes d’appareils](#review-or-change-the-automation-level-for-device-groups).
 
@@ -102,7 +100,7 @@ Les paramètres de sécurité d’Office 365 aident à protéger la messagerie e
 
 3. Dans le volet de navigation, choisissez **paramètres**  >  **Microsoft Threat Protection**. Vérifiez que la protection contre les menaces Microsoft est activée. 
 
-   Vous avez besoin d’aide ? Voir [activer la protection contre les menaces Microsoft](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable).
+   Besoin d’aide ? Voir [activer la protection contre les menaces Microsoft](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable).
 
 ## <a name="review-pending-and-completed-actions-in-the-action-center"></a>Vérifier les actions en attente et terminées dans le centre de notifications
 
