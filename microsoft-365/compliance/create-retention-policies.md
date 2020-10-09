@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez une stratégie de rétention pour garder un contrôle efficace sur le contenu que les utilisateurs génèrent par courriers électroniques, documents et conversations. Conservez ce que vous voulez et supprimez le reste.
-ms.openlocfilehash: f9c8ff4287f0970f8571d3ced7d612515b03c08e
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 40e405a8ab3ac2159b9a3c5ab8f633bb690d5c24
+ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198491"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48384555"
 ---
 # <a name="create-and-configure-retention-policies"></a>Créer et configurer des stratégies de rétention
 
@@ -259,19 +259,19 @@ Par exemple, si la stratégie inclut tous les courriers électroniques sur Excha
 
 ### <a name="a-policy-with-specific-inclusions-or-exclusions"></a>Une stratégie avec des inclusions ou des exclusions spécifiques
 
-Vous pouvez également appliquer une stratégie de rétention à des utilisateurs, des groupes Microsoft 365, ou des sites spécifiques. Pour ce faire, assurez-vous que l’**état** de cet emplacement soit **Activé**, puis utilisez les liens pour inclure ou exclure des utilisateurs, des groupes Microsoft 365 ou des sites.
+Ce n'est que si vous utilisez la configuration optionnelle pour étendre vos paramètres de conservation à des utilisateurs spécifiques, à des groupes spécifiques de Microsoft 365 ou à des sites spécifiques, qu'il y a certaines limites à respecter : 
 
-Toutefois, des limites existent pour cette configuration lorsque la stratégie de rétention inclut ou exclut plus de 1 000 objets particuliers :
-
-- Nombre maximal pour la stratégie de rétention :
+- Nombre maximum pour une politique de rétention :
   - 1 000 boîtes aux lettres
   - 1 000 groupes Microsoft 365
   - 1 000 utilisateurs pour conversations privées Teams
   - 100 sites (OneDrive et SharePoint)
 
-Le nombre maximal de stratégies prises en charge pour un client est de 10 000. Ces éléments incluent les stratégies de rétention, les stratégies d’étiquette de rétention et les stratégies de rétention appliquées automatiquement.
+Il existe également un nombre maximum de politiques qui sont soutenues pour un locataire : 10,000. Ces éléments comprennent les politiques de conservation, les politiques d'étiquetage de conservation et les politiques de conservation à application automatique.
 
-Si vos stratégies de rétention sont susceptibles d’être sujettes à ces limitations, choisissez les options de configuration s’appliquant aux emplacements entiers.
+Si vos politiques de conservation sont susceptibles d'être soumises à ces limitations, utilisez la configuration par défaut qui s'applique à l'ensemble du site car ces politiques n'ont aucune limitation.
+
+Pour utiliser la configuration optionnelle afin de définir vos paramètres de conservation, assurez-vous que **le statut** de ce lieu est **activé**, puis utilisez les liens pour inclure ou exclure des utilisateurs, des groupes Microsoft 365 ou des sites spécifiques.
 
 > [!WARNING]
 > Si vous configurez inclut et supprimez ensuite le dernier, la configuration revient à **Tout** pour l’emplacement.  Assurez-vous qu'il s'agit bien de la configuration que vous souhaitez avant d'enregistrer la stratégie.
