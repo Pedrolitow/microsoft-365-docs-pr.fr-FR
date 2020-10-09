@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: cdb6b557bf2f46a2338d929547167cf89a048695
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 563972c458e77d96cf075f048dcee027bf29bc95
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46522276"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399396"
 ---
 # <a name="security-hurdles-you-can-sail-over--one-architects-viewpoint"></a>Obstacles de sécurité que vous pouvez parcourir — point de vue d’un architecte
 
@@ -49,7 +49,7 @@ Les clients qui battent ces obstacles ont de bonnes partenariats entre les opér
 
 Ensuite, adoptez une approche de l’architecture sans approbation. Cela commence par la création d’un périmètre de sécurité moderne basé sur l’identité. Concevez l’architecture de sécurité où chaque tentative d’accès, qu’elle soit local ou Cloud, est considérée comme non approuvée jusqu’à ce qu’elle soit vérifiée, « ne jamais approuver, toujours vérifier ». Cette approche de conception non seulement augmente la sécurité et la productivité, mais elle permet également aux utilisateurs de travailler n’importe où avec n’importe quel type d’appareil. Les contrôles de Cloud élaborés fournis avec Microsoft 365 vous aident à protéger les identités des utilisateurs tout en contrôlant l’accès aux ressources utiles en fonction du niveau de risque de l’utilisateur.
 
-Pour obtenir une configuration recommandée, consultez la rubrique [configuration de l’accès aux identités et aux appareils](../enterprise/microsoft-365-policies-configurations.md). 
+Pour obtenir une configuration recommandée, consultez la rubrique [configuration de l’accès aux identités et aux appareils](../security/office-365-security/microsoft-365-policies-configurations.md). 
 
 ## <a name="transition-security-controls-to-the-cloud"></a>Basculer les contrôles de sécurité vers le Cloud
 
@@ -77,9 +77,9 @@ La plupart des défis que j’ai rencontrés lors de l’implémentation de la s
 Pour vous aider à résoudre ces obstacles, Microsoft a créé plusieurs ressources conçues pour vous aider à adopter une approche méthodique de votre stratégie de sécurité et de votre implémentation. 
 
 
-|Resource   |Plus d’informations  |
+|Ressource   |Plus d’informations  |
 |---------|---------|
-|[Principales tâches pour les équipes de sécurité qui prennent en charge le travail à domicile](../security/top-security-tasks-for-remote-work.md)      | Si vous vous retrouvez soudainement à la mise en place d’un personnel de travail à la maison, cet article vous permet d’effectuer un renforcement de la sécurité rapidement. Elle inclut les principales tâches recommandées en fonction de votre plan de gestion des licences.    |
+|[Principales tâches pour les équipes de sécurité qui prennent en charge le télétravail](../security/top-security-tasks-for-remote-work.md)      | Si vous vous retrouvez soudainement à la mise en place d’un personnel de travail à la maison, cet article vous permet d’effectuer un renforcement de la sécurité rapidement. Elle inclut les principales tâches recommandées en fonction de votre plan de gestion des licences.    |
 |[Sécurité Microsoft 365 pour les décideurs d’entreprise](../security/Microsoft-365-security-for-bdm.md)    | Lorsque vous avez le temps d’utiliser un plan plus complet, cet article inclut des recommandations qui s’étendent sur Microsoft 365, classées par surface d’attaque. Il s’agit même d’une feuille de calcul que vous pouvez utiliser pour trier les licences et les domaines (par exemple, l’identité, la protection contre les menaces et la surveillance).  |
 |[Recommandations sur l’architecture de sécurité Microsoft](https://docs.microsoft.com/security/compass/compass)    | Si vous êtes un architecte de sécurité, veillez à consulter les recommandations de sécurité organisées par discipline, notamment l’identité, la mise en réseau et les opérations de sécurité.   |
 |[Recommandations concernant les opérations de sécurité Microsoft](https://docs.microsoft.com/security/compass/security-operations-videos-and-decks)|Découvrez les recommandations de Microsoft concernant la configuration et l’exécution d’un centre d’opérations sécurité (SOC) |

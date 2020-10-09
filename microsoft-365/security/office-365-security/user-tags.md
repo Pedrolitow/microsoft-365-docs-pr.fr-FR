@@ -15,23 +15,28 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à identifier des groupes d’utilisateurs spécifiques à l’aide de balises utilisateur dans Office 365 DAV (plan 2). Le filtrage des balises est disponible dans les alertes, les rapports et les enquêtes dans la protection avancée contre les menaces d’Office 365 pour identifier rapidement les utilisateurs balisés.
-ms.openlocfilehash: 9522499b3861f0f0e44fcbf09896a5c93feed95d
-ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
+ms.openlocfilehash: 16e756b95e16e40f4df738e825e842681c67e22c
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48337252"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399384"
 ---
 # <a name="user-tags-in-office-365-atp"></a>Balises utilisateur dans Office 365 – Protection avancée contre les menaces
 
-Les balises utilisateur sont des identificateurs pour des groupes d’utilisateurs spécifiques dans [Office 365 Advanced Threat Protection (ATP)](office-365-atp.md). Les [comptes de priorité](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) sont un type de balise utilisateur. Si votre organisation dispose d’Office 365 DAV plan 2 (inclus dans votre abonnement ou en tant que module complémentaire), vous pouvez créer des balises utilisateur personnalisées en plus de l’utilisation de la balise Accounts Priority.
+Les balises utilisateur sont des identificateurs pour des groupes d’utilisateurs spécifiques dans [Office 365 Advanced Threat Protection (ATP)](office-365-atp.md). Il existe deux types de balises utilisateur :
 
-Une fois que vous avez appliqué des balises à des utilisateurs spécifiques, vous pouvez utiliser ces balises en tant que filtres dans les alertes, les rapports et les analyses :
+- **Balises système**: actuellement, le [compte de priorité](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) est le seul type de balise système.
+- **Balises personnalisées**: créez ces balises utilisateur vous-même.
+
+Si votre organisation dispose d’Office 365 DAV plan 2 (inclus dans votre abonnement ou en tant que module complémentaire), vous pouvez créer des balises utilisateur personnalisées en plus de l’utilisation de la balise Accounts Priority.
+
+Une fois que vous avez appliqué des balises système ou des balises personnalisées aux utilisateurs, vous pouvez utiliser ces balises comme filtres dans les alertes, les rapports et les analyses :
 
 - [Alertes dans le centre de sécurité & conformité](alerts.md)
 - [Explorateur de menaces et détections en temps réel](threat-explorer.md)
 - [Rapport sur l’état de la protection contre les menaces](view-email-security-reports.md#threat-protection-status-report)
-- [Affichages de campagne](campaigns.md)
+- [Vues de campagne](campaigns.md)
 
 Cet article explique comment configurer les balises utilisateur dans le centre de sécurité & conformité. Il n’existe pas de cmdlets dans Security & Compliance Center pour gérer les balises utilisateur.
 
@@ -39,9 +44,11 @@ Cet article explique comment configurer les balises utilisateur dans le centre d
 
 - Vous ouvrez le Centre de conformité et sécurité sur <https://protection.office.com/>. Pour accéder directement à la page **balises utilisateur** , ouvrez <https://protection.office.com/userTags> .
 
-- Pour créer, modifier ou supprimer des balises utilisateur, vous devez être membre des groupes de rôles gestion de l' **organisation** ou **administrateur de sécurité** dans le centre de sécurité & conformité. Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
+- Pour créer, modifier ou supprimer des **balises utilisateur personnalisées**, vous devez être membre des groupes de rôles gestion de l' **organisation** ou **administrateur de sécurité** dans le centre de sécurité & conformité. Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
 
-- Vous pouvez également gérer et surveiller les comptes de priorité dans le centre d’administration 365 de Microsoft. Pour obtenir des instructions, consultez la rubrique [Manage and Monitor Priority Accounts](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts).
+- Pour configurer des comptes de priorité (balises système), vous devez être un [administrateur général](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) ou un [administrateur Exchange](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator).
+
+  Vous pouvez également gérer et surveiller les comptes de priorité dans le centre d’administration 365 de Microsoft. Pour obtenir des instructions, consultez la rubrique [Manage and Monitor Priority Accounts](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts).
 
 ## <a name="use-the-security-center-to-create-user-tags"></a>Utiliser le centre de sécurité pour créer des balises utilisateur
 

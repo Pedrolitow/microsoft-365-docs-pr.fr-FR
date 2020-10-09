@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 28c86a1c-e4dd-4aad-a2a6-c768a21cb352
 description: 'Principales recommandations de l’équipe Cybersecurity de Microsoft pour la mise en œuvre de fonctionnalités de sécurité pour protéger votre environnement Microsoft 365. '
-ms.openlocfilehash: 9bdddbbfbb20900a4645d2e17cf298ed018f4c6d
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: aae103b93409b2f7fee635b832fce8f10c3d9437
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197428"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399408"
 ---
 # <a name="security-roadmap---top-priorities-for-the-first-30-days-90-days-and-beyond"></a>Feuille de route de sécurité-priorités principales des 30 premiers jours, 90 jours, et au-delà
 
@@ -82,7 +82,7 @@ Ces tâches prennent un peu plus de temps à planifier et à implémenter, mais 
 |---|---|
 |Gestion de la sécurité|* Vérifiez le score de sécurité pour les actions recommandées pour votre environnement ( [https://securescore.office.com](https://securescore.office.com) ).  <br/>  * Poursuivez régulièrement l’examen des tableaux de bord et des rapports dans le centre de sécurité Microsoft 365, dans la sécurité des applications Cloud et dans les outils SIEM. <br/> * Recherchez et implémentez les mises à jour logicielles. <br/> * Effectuez des simulations d’attaque pour le Spear Phishing, la vaporisation des mots de passe et les attaques en force de mot de passe à l’aide d’un [simulateur d’attaque](attack-simulator.md) (inclus avec [Office 365 Threat Intelligence](office-365-ti.md)).  <br/> * Recherchez le risque de partage en examinant la sécurité des rapports intégrés dans Cloud App Security (sous l’onglet examiner). <br/> * Consultez le [Gestionnaire de conformité](https://docs.microsoft.com/microsoft-365/compliance/compliance-manager) pour vérifier l’état des réglementations qui s’appliquent à votre organisation (par exemple, RGPD, NIST 800-171).|
 |Protection contre les menaces| Implémenter des protections améliorées pour les comptes d’administrateur : <br/> * Configurer les [stations de travail d’accès privilégié](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/privileged-access-workstations) (pattes) pour l’activité d’administration. <br/> * Configurez [Azure ad Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure). <br/> * Configurez un outil de gestion des événements et des informations sur la sécurité (SIEM) pour collecter les données de journalisation à partir d’Office 365, de la sécurité des applications Cloud et d’autres services, y compris AD FS. Le journal d’audit stocke les données de 90 jours seulement. La capture de ces données dans l’outil SIEM vous permet de stocker des données pendant une période plus longue.|
-|Gestion des identités et des accès|* Activer et appliquer l’authentification multifacteur pour tous les utilisateurs. <br/> * Implémentez un ensemble d' [accès conditionnel et de stratégies associées](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-policies-configurations). |
+|Gestion des identités et des accès|* Activer et appliquer l’authentification multifacteur pour tous les utilisateurs. <br/> * Implémentez un ensemble d' [accès conditionnel et de stratégies associées](microsoft-365-policies-configurations.md). |
 |Protection des informations| Adaptez et implémentez les stratégies de protection des informations. Ces ressources incluent des exemples : <br/> * [Office 365 protection des informations pour RGPD](https://aka.ms/o365gdpr) <br/> * [Configurer teams avec trois niveaux de protection](../../solutions/configure-teams-three-tiers-protection.md) <br/> <br> Utilisez les stratégies de protection contre la perte de données et les outils de surveillance de Microsoft 365 pour les données stockées dans Microsoft 365 (au lieu de la sécurité des applications Cloud). <br><br>Utilisez la sécurité des applications Cloud avec Microsoft 365 pour les fonctionnalités d’alerte avancées (autres que la protection contre la perte de données).|
 |
 

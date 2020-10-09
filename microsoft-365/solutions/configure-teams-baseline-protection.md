@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Découvrez comment déployer des équipes à l’aide d’un niveau de protection de référence.
-ms.openlocfilehash: 4a1843b687155cefd48bf3800be68c3e01abd7f5
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: ac6974b5625a4eff0fcd11a17c4607a7c2caf97f
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527859"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398864"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>Configurer les équipes avec la protection de référence
 
@@ -31,7 +31,7 @@ Dans cet article, nous allons voir comment déployer des équipes à l’aide d�
 
 ## <a name="initial-protections"></a>Protections initiales
 
-Pour commencer, nous vous recommandons de configurer les stratégies de base sur l’identité et l’accès aux appareils. Pour plus d’informations, consultez [recommandations en matière de stratégie pour la sécurisation des conversations, des groupes et des fichiers](https://docs.microsoft.com/microsoft-365/enterprise/teams-access-policies).
+Pour commencer, nous vous recommandons de configurer les stratégies de base sur l’identité et l’accès aux appareils. Pour plus d’informations, consultez [recommandations en matière de stratégie pour la sécurisation des conversations, des groupes et des fichiers](../security/office-365-security/teams-access-policies.md).
 
 Nous vous recommandons également d’activer les fonctionnalités de base de protection avancée contre les menaces pour vous prémunir contre les programmes malveillants dans les documents, pièces jointes et liens. Nous vous recommandons d’activer chacune des options du tableau suivant.
 

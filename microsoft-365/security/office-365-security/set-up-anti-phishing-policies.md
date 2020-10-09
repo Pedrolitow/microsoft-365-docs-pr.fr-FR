@@ -1,5 +1,5 @@
 ---
-title: Stratégies anti-hameçonnage.
+title: Politiques anti-hameçonnage
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur les stratégies anti-hameçonnage disponibles dans Exchange Online Protection (EOP) et Office 365 Advanced Threat Protection (Office 365 ATP).
-ms.openlocfilehash: 498b6e27b3fca66e388eaa27ba7895056ef7f0fc
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 1aeff889f5ced6429e7721518527e6f6725bb18b
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48326936"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399204"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Stratégies anti-hameçonnage dans Microsoft 365
 
@@ -43,7 +43,7 @@ Les principales différences entre les stratégies de détection d’hameçonnag
 
 ****
 
-|Fonctionnalité|Stratégies anti-hameçonnage.|Stratégies anti-hameçonnage ATP|
+|Fonctionnalité|Politiques anti-hameçonnage|Stratégies anti-hameçonnage ATP|
 |---|:---:|:---:|
 |Stratégie par défaut créée automatiquement|![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Créer des stratégies personnalisées|![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
@@ -152,21 +152,22 @@ Un domaine usurpé pourrait autrement être considéré comme légitime (domaine
 
 Les paramètres d’emprunt d’identité suivants sont disponibles uniquement dans les stratégies anti-hameçonnage ATP :
 
-- **Utilisateurs à protéger**: empêche l’usurpation d’identité des adresses de messagerie internes ou externes spécifiées **en tant qu’expéditeurs de messages**. Par exemple, les cadres (expéditeurs internes) et les membres du Conseil d’administration (expéditeurs externes). Vous pouvez ajouter jusqu’à 60 adresses de messagerie d’expéditeurs internes et externes à protéger contre l’emprunt d’identité. Cette liste d' **expéditeurs** protégés de l’emprunt d’identité est différente de la liste des **destinataires** auxquels la stratégie s’applique.
+- **Utilisateurs à protéger**: empêche l’usurpation d’identité des adresses de messagerie internes ou externes spécifiées **en tant qu’expéditeurs de messages**. Par exemple, vous recevez un message électronique du vice-président de votre société qui vous demande d’envoyer des informations internes sur l’entreprise. Voulez-vous le faire ? De nombreuses personnes envoient la réponse sans l’avoir pensée.
 
-  La stratégie par défaut s’applique aux messages envoyés à tous les destinataires, tandis que les stratégies personnalisées s’appliquent uniquement aux messages envoyés aux destinataires que vous définissez dans le paramètre **appliqué à** , comme décrit dans la section [paramètres de stratégie](#policy-settings) .
+  Vous pouvez utiliser des utilisateurs protégés pour ajouter des adresses de messagerie d’expéditeurs internes et externes afin de protéger l’emprunt d’identité. Cette liste d' **expéditeurs** protégés de l’emprunt d’identité de l’utilisateur est différente de la liste des **destinataires** auxquels la stratégie s’applique (tous les destinataires de la stratégie par défaut ; des destinataires spécifiques, comme configuré dans le paramètre **appliqué à** dans la section [paramètres de stratégie](#policy-settings) ).
+
+  > [!NOTE]
+  > Le nombre maximal d’utilisateurs protégés (adresses de messagerie des expéditeurs) que vous pouvez définir dans toutes les stratégies de détection d’hameçonnage est de 60. En d’autres termes, vous pouvez avoir 60 utilisateurs protégés dans une stratégie, 12 utilisateurs protégés par 5 stratégies, etc.
 
   Par défaut, aucune adresse de messagerie d’expéditeur n’est configurée pour la protection contre l’emprunt d’identité des **utilisateurs pour protéger**. Par conséquent, par défaut, aucune adresse de messagerie d’expéditeur n’est couverte par la protection contre l’emprunt d’identité, soit dans la stratégie par défaut, soit dans des stratégies personnalisées.
 
-  Lorsque vous ajoutez des adresses de messagerie électronique internes ou externes aux **utilisateurs pour protéger** la liste, les messages provenant de ces **expéditeurs** sont soumis aux contrôles de protection contre l’emprunt d’identité. Le message est vérifié pour l’emprunt d’identité **si** le message est envoyé à un **destinataire** auquel la stratégie s’applique (tous les destinataires de la stratégie par défaut ; **S’applique aux** destinataires dans les stratégies personnalisées). Si l’emprunt d’identité est détecté dans l’adresse de messagerie de l’expéditeur, les actions de protection contre l’emprunt d’identité pour les utilisateurs sont appliquées au message (l’action sur le message, le Conseil sur la sécurité des utilisateurs empruntés, etc.).
+  Lorsque vous ajoutez des adresses de messagerie électronique internes ou externes aux **utilisateurs pour protéger** la liste, les messages provenant de ces **expéditeurs** sont soumis aux contrôles de protection contre l’emprunt d’identité. Le message est vérifié pour l’emprunt d’identité **si** le message est envoyé à un **destinataire** auquel la stratégie s’applique (tous les destinataires de la stratégie par défaut ; **S’applique aux** destinataires dans les stratégies personnalisées). Si l’emprunt d’identité est détecté dans l’adresse de messagerie de l’expéditeur, les actions de protection contre l’emprunt d’identité pour les utilisateurs sont appliquées au message (ce qu’il faut faire avec le message, s’il faut afficher les conseils de sécurité des utilisateurs empruntés, etc.).
 
-- **Domaines à protéger**: empêche l’emprunt d’identité des domaines spécifiés **dans le domaine de l’expéditeur du message**. Par exemple, tous les domaines que vous possédez ([domaines acceptés](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) ou des domaines spécifiques (domaines que vous possédez ou domaines partenaires). Cette liste de **domaines d’expéditeur** protégés de l’emprunt d’identité est différente de la liste des **destinataires** auxquels la stratégie s’applique.
-
-  La stratégie par défaut s’applique aux messages envoyés à tous les destinataires, tandis que les stratégies personnalisées s’appliquent uniquement aux messages envoyés aux destinataires que vous définissez dans le paramètre **appliqué à** , comme décrit dans la section [paramètres de stratégie](#policy-settings) .
+- **Domaines à protéger**: empêche l’emprunt d’identité des domaines spécifiés **dans le domaine de l’expéditeur du message**. Par exemple, tous les domaines que vous possédez ([domaines acceptés](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) ou des domaines spécifiques (domaines que vous possédez ou domaines partenaires). Cette liste de **domaines d’expéditeur** protégés de l’emprunt d’identité est différente de la liste des **destinataires** auxquels la stratégie s’applique (tous les destinataires de la stratégie par défaut ; des destinataires spécifiques tels que configurés dans le paramètre **appliqué à** dans la section [paramètres de stratégie](#policy-settings) ).
 
   Par défaut, aucun domaine d’expéditeur n’est configuré pour la protection contre l’emprunt d’identité dans les **domaines à protéger**. Par conséquent, par défaut, aucun domaine d’expéditeur n’est couvert par la protection contre l’emprunt d’identité, soit dans la stratégie par défaut, soit dans des stratégies personnalisées.
 
-  Lorsque vous ajoutez des domaines à la liste **domaines à protéger** , les messages provenant d' **expéditeurs de ces domaines** sont soumis aux contrôles de protection contre l’emprunt d’identité. Le message est vérifié pour l’emprunt d’identité **si** le message est envoyé à un **destinataire** auquel la stratégie s’applique (tous les destinataires de la stratégie par défaut ; **S’applique aux** destinataires dans les stratégies personnalisées). Si l’emprunt d’identité est détecté dans le domaine de l’expéditeur, les actions de protection contre l’emprunt d’identité pour les domaines sont appliquées au message (l’action sur le message, le Conseil de sécurité des domaines empruntés, etc.).
+  Lorsque vous ajoutez des domaines à la liste **domaines à protéger** , les messages provenant d' **expéditeurs de ces domaines** sont soumis aux contrôles de protection contre l’emprunt d’identité. Le message est vérifié pour l’emprunt d’identité **si** le message est envoyé à un **destinataire** auquel la stratégie s’applique (tous les destinataires de la stratégie par défaut ; **S’applique aux** destinataires dans les stratégies personnalisées). Si l’emprunt d’identité est détecté dans le domaine de l’expéditeur, les actions de protection contre l’emprunt d’identité pour les domaines sont appliquées au message (ce qu’il faut faire avec le message, s’il faut afficher les conseils de sécurité des utilisateurs empruntés, etc.).
 
 - **Actions pour les utilisateurs ou domaines protégés**: choisissez l’action à effectuer sur les messages entrants qui contiennent des tentatives d’emprunt d’identité pour les utilisateurs protégés et les domaines protégés de la stratégie. Vous pouvez spécifier différentes actions pour l’emprunt d’identité des utilisateurs protégés et l’emprunt d’identité des domaines protégés :
 

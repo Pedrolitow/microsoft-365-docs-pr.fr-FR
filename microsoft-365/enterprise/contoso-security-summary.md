@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comment Contoso utilise les fonctionnalités de sécurité dans Microsoft 365 pour les entreprises.
-ms.openlocfilehash: 2244f13f8e8f56edbadd40d1e85cb309d70f7744
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: fbbf8dfc1de831c2ef949b71f1cbdf4e97a02baa
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686439"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399476"
 ---
 # <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Résumé de Microsoft 365 pour la sécurité d’entreprise pour Contoso Corporation
 
@@ -73,7 +73,7 @@ Conformément aux meilleures pratiques en matière de sécurité et aux exigence
 
 - Accès plus sûr aux périphériques et aux applications grâce à des stratégies d’accès conditionnel
 
-  Contoso utilise les [stratégies d’accès conditionnel](microsoft-365-policies-configurations.md) pour l’identité, les périphériques, Exchange Online et SharePoint. Les stratégies d’accès conditionnel pour l’identité obligent les utilisateurs à haut risque à modifier leurs mots de passe et empêchent les clients d’utiliser des applications qui ne prennent pas en charge l’authentification moderne. Les stratégies pour les périphériques incluent la définition des applications approuvées et nécessitent des PC et des appareils mobiles compatibles. Les stratégies d’accès conditionnel pour Exchange Online permettent de bloquer les clients ActiveSync et de configurer le chiffrement de messages Office 365. Les stratégies d’accès conditionnel pour SharePoint incluent une protection supplémentaire pour les sites sensibles et hautement réglementés.
+  Contoso utilise les [stratégies d’accès conditionnel](../security/office-365-security/microsoft-365-policies-configurations.md) pour l’identité, les périphériques, Exchange Online et SharePoint. Les stratégies d’accès conditionnel pour l’identité obligent les utilisateurs à haut risque à modifier leurs mots de passe et empêchent les clients d’utiliser des applications qui ne prennent pas en charge l’authentification moderne. Les stratégies pour les périphériques incluent la définition des applications approuvées et nécessitent des PC et des appareils mobiles compatibles. Les stratégies d’accès conditionnel pour Exchange Online permettent de bloquer les clients ActiveSync et de configurer le chiffrement de messages Office 365. Les stratégies d’accès conditionnel pour SharePoint incluent une protection supplémentaire pour les sites sensibles et hautement réglementés.
 
 - Windows Hello Entreprise
 

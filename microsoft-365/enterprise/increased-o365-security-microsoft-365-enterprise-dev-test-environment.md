@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Utilisez ce guide de laboratoire de test pour activer des paramètres de sécurité Microsoft 365 supplémentaires pour votre environnement de test Microsoft 365.
-ms.openlocfilehash: 06273bda00635a65ed9821b2bac23c3a3ee1366a
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 09a613261bc173cd71e9cc2dd58a32a9547ece21
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686801"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398948"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-for-enterprise-test-environment"></a>Amélioration de la sécurité Microsoft 365 pour votre environnement de test Microsoft 365 pour les entreprises
 
@@ -47,7 +47,7 @@ Dans cette phase, vous allez activer la sécurité Microsoft 365 pour votre envi
 
 ### <a name="configure-sharepoint-online-to-block-apps-that-dont-support-modern-authentication"></a>Configurer SharePoint Online pour bloquer les applications qui ne prennent pas en charge l’authentification moderne
 
-Les applications qui ne prennent pas en charge l’authentification moderne ne peuvent pas avoir de [configurations d’identité et d’accès aux appareils](microsoft-365-policies-configurations.md) appliquées, ce qui est un élément important de la sécurisation de votre abonnement Microsoft 365 et de ses biens numériques. 
+Les applications qui ne prennent pas en charge l’authentification moderne ne peuvent pas avoir de [configurations d’identité et d’accès aux appareils](../security/office-365-security/microsoft-365-policies-configurations.md) appliquées, ce qui est un élément important de la sécurisation de votre abonnement Microsoft 365 et de ses biens numériques. 
 
 1. Accédez au centre d’administration Microsoft 365 ( [https://portal.microsoft.com](https://portal.microsoft.com) ) et connectez-vous à votre abonnement de laboratoire de test microsoft 365 avec votre compte d’administrateur général.
     

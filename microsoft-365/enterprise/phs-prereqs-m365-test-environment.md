@@ -15,20 +15,20 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Créez un environnement Microsoft 365 pour tester l’accès aux identités et appareils avec les conditions préalables applicables à l’authentification de la synchronisation du hachage du mot de passe.
-ms.openlocfilehash: 6aa6b1cd1b8f9459b27e46fa67c62b35014b2d7e
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 63f433d5297139fcc7f6eb8bd5383a6593c29388
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686249"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399442"
 ---
 # <a name="identity-and-device-access-prerequisites-for-password-hash-synchronization-in-your-microsoft-365-test-environment"></a>Conditions préalables d’accès aux identités et appareils pour la synchronisation du hachage du mot de passe dans votre environnement de test Microsoft 365
 
 *Ce guide de laboratoire de test ne peut être utilisé que pour Microsoft 365 pour les environnements de test d’entreprise.*
 
-Les [configurations d’identité et d’accès aux appareils](microsoft-365-policies-configurations.md) sont un ensemble de configurations et de stratégies d’accès conditionnel permettant de protéger l’accès à tous les services de Microsoft 365 pour les entreprises qui sont intégrés à Azure Active Directory (Azure AD).
+Les [configurations d’identité et d’accès aux appareils](../security/office-365-security/microsoft-365-policies-configurations.md) sont un ensemble de configurations et de stratégies d’accès conditionnel permettant de protéger l’accès à tous les services de Microsoft 365 pour les entreprises qui sont intégrés à Azure Active Directory (Azure AD).
 
-Cet article décrit comment configurer un environnement de test Microsoft 365 qui respecte les exigences de [configuration préalable de synchronisation du hachage du mot de passe Active Directory](identity-access-prerequisites.md#prerequisites) pour l’accès aux identités et appareils.
+Cet article décrit comment configurer un environnement de test Microsoft 365 qui respecte les exigences de [configuration préalable de synchronisation du hachage du mot de passe Active Directory](../security/office-365-security/identity-access-prerequisites.md#prerequisites) pour l’accès aux identités et appareils.
 
 La configuration de cet environnement de test comprend huit étapes :
 
@@ -110,7 +110,7 @@ Pour Skype Entreprise Online :
   Get-CsOAuthConfiguration
   ```
 
-Le résultat est un environnement de test conforme aux exigences de [configuration préalable de synchronisation du hachage du mot de passe Active Directory](identity-access-prerequisites.md#prerequisites) pour l’accès aux identités et appareils. 
+Le résultat est un environnement de test conforme aux exigences de [configuration préalable de synchronisation du hachage du mot de passe Active Directory](../security/office-365-security/identity-access-prerequisites.md#prerequisites) pour l’accès aux identités et appareils. 
 
 ## <a name="next-step"></a>Étape suivante
 

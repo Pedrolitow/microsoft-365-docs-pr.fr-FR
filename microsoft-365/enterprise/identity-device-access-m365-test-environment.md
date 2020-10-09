@@ -15,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Créer un environnement Microsoft 365 pour tester l’accès aux identités et appareils.
-ms.openlocfilehash: 84af7747fc1d0e80e933397f4f0f96018ed246c3
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: b8e91a58bb6e1c00013b963c77151080a419b836
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327806"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398806"
 ---
 # <a name="identity-and-device-access-for-your-microsoft-365-test-environment"></a>Accès aux identités et appareils pour votre environnement de test Microsoft 365
 
 *Ce guide de laboratoire de test ne peut être utilisé que pour Microsoft 365 pour les environnements de test d’entreprise.*
 
-Les [configurations d’identité et d’accès aux appareils](microsoft-365-policies-configurations.md) sont un ensemble de fonctionnalités et de stratégies d’accès conditionnel permettant de protéger l’accès à tous les services intégrés à Azure Active Directory (Azure AD).
+Les [configurations d’identité et d’accès aux appareils](../security/office-365-security/microsoft-365-policies-configurations.md) sont un ensemble de fonctionnalités et de stratégies d’accès conditionnel permettant de protéger l’accès à tous les services intégrés à Azure Active Directory (Azure AD).
 
 Pour créer un environnement de test avec les configurations courantes d’identité et d’accès aux appareils en place :
 

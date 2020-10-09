@@ -14,12 +14,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: c6e973e05f9a73736410c9bfedfa2ef73bb583ce
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 5183e6f60d825ff523db4da165d16752b3aa3cc8
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377400"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399348"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>Configurer les fonctionnalités de protection contre les menaces dans Microsoft 365
 
@@ -40,13 +40,13 @@ Microsoft a testé et recommande un ensemble spécifique d’accès conditionnel
 
 ![Processus de déploiement de la protection de base](../media/solutions-architecture-center/deploy-threat-protection-identity-access-steps.png) 
 
-1. [Configurez les composants requis, y compris Azure Identity Protection](../enterprise/identity-access-prerequisites.md).
-2. [Configurez les stratégies courantes d’identité et d’accès aux appareils](../enterprise/identity-access-policies.md) pour la protection de base.
-3. Configurez [les stratégies pour les utilisateurs invités](../enterprise/identity-access-policies-guest-access.md), [Microsoft teams](../enterprise/teams-access-policies.md), [Exchange Online](../enterprise/secure-email-recommended-policies.md)et [OneDrive](../enterprise/sharepoint-file-access-policies.md).
+1. [Configurez les composants requis, y compris Azure Identity Protection](../security/office-365-security/identity-access-prerequisites.md).
+2. [Configurez les stratégies courantes d’identité et d’accès aux appareils](../security/office-365-security/identity-access-policies.md) pour la protection de base.
+3. Configurez [les stratégies pour les utilisateurs invités](../security/office-365-security/identity-access-policies-guest-access.md), [Microsoft teams](../security/office-365-security/teams-access-policies.md), [Exchange Online](../security/office-365-security/secure-email-recommended-policies.md)et [OneDrive](../security/office-365-security/sharepoint-file-access-policies.md).
 
 ### <a name="more-information-about-protecting-identities"></a>Plus d’informations sur la protection des identités
 
-- [Configurations des identités et de l’accès aux appareils](../enterprise/microsoft-365-policies-configurations.md)
+- [Configurations des identités et de l’accès aux appareils](../security/office-365-security/microsoft-365-policies-configurations.md)
 - [Conseils de sécurité pour Azure MFA](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication-security-best-practices)
 
 ## <a name="step-2-configure-azure-advanced-threat-protection"></a>Étape 2 : configurer Azure protection avancée contre les menaces

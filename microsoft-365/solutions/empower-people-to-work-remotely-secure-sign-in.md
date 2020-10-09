@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Demander à vos employés à distance de se connecter à l’aide de l’authentification multifacteur (MFA).
-ms.openlocfilehash: 192c26a42c15c0c8f7da15c992d7d564a312e6a9
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: a5977c1f4b5189f39623399f0b45a31e6edd4de7
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377460"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399312"
 ---
 # <a name="step-1-increase-sign-in-security-for-remote-workers-with-mfa"></a>Étape 1. Augmenter la sécurité de connexion pour les travailleurs à distance à l’aide d’une authentification multifacteur (MFA)
 
@@ -39,7 +39,7 @@ Trois méthodes s’offrent à vous pour obliger vos utilisateurs à utiliser l�
 |---------|---------|
 |Toutes les offres Microsoft 365 (sans licence Azure AD Premium P1 ou P2)     |[Activer les paramètres de sécurité par défaut dans Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). La sécurité par défaut d’Azure AD inclut l’authentification multifacteur pour les utilisateurs et les administrateurs.   |
 |Microsoft 365 E3 (inclut les licences Azure AD Premium P1)     | Utilisez les [Stratégies d’accès conditionnel courantes](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common) pour configurer les stratégies suivantes : <br>- [Exiger l’authentification multifacteur pour les administrateurs](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [Exiger l’authentification multifacteur pour tous les utilisateurs](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [Bloquer l’authentification héritée](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
-|Microsoft 365 E5 (inclut les licences Azure AD Premium P2)     | Pour tirer parti de la protection d’identité Azure AD Identity Protection, commencez à implémenter la [série recommandée concernant l’accès conditionnel et les stratégies associées](../enterprise/identity-access-policies.md) en créant les deux stratégies suivantes :<br> - [Exiger l’authentification multifacteur lorsque le risque de connexion est moyen ou élevé](../enterprise/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [Bloquer les clients ne prenant pas en charge l’authentification moderne](../enterprise/identity-access-policies.md#block-clients-that-dont-support-modern-authentication)<br>- [Les utilisateurs à risque élevé doivent modifier leur mot de passe](../enterprise/identity-access-policies.md#high-risk-users-must-change-password)       |
+|Microsoft 365 E5 (inclut les licences Azure AD Premium P2)     | Pour tirer parti de la protection d’identité Azure AD Identity Protection, commencez à implémenter la [série recommandée concernant l’accès conditionnel et les stratégies associées](../security/office-365-security/identity-access-policies.md) en créant les deux stratégies suivantes :<br> - [Exiger l’authentification multifacteur lorsque le risque de connexion est moyen ou élevé](../security/office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [Bloquer les clients ne prenant pas en charge l’authentification moderne](../security/office-365-security/identity-access-policies.md#block-clients-that-dont-support-modern-authentication)<br>- [Les utilisateurs à risque élevé doivent modifier leur mot de passe](../security/office-365-security/identity-access-policies.md#high-risk-users-must-change-password)       |
 | | |
 
 ## <a name="security-defaults"></a>Paramètres de sécurité par défaut

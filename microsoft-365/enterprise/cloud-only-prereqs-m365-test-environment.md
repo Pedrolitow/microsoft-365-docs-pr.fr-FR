@@ -15,20 +15,20 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Créez un environnement Microsoft 365 pour tester l’accès aux identités et appareils avec les conditions préalables pour l’authentification uniquement dans le cloud.
-ms.openlocfilehash: a8025a2543a53a229be13d19c246165fe88ad433
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: aa18e1a9943ec12465737f6c3f2e12c1fa49e2a3
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685783"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398876"
 ---
 # <a name="identity-and-device-access-prerequisites-for-cloud-only-in-your-microsoft-365-test-environment"></a>Conditions préalables à l’accès aux identités et aux appareils uniquement pour le cloud dans votre environnement de test Microsoft 365
 
 *Ce guide de laboratoire de test ne peut être utilisé que pour Microsoft 365 pour les environnements de test d’entreprise.*
 
-Les [configurations d’identité et d’accès aux appareils](microsoft-365-policies-configurations.md) sont un ensemble de configurations et de stratégies d’accès conditionnel permettant de protéger l’accès à tous les services intégrés à Azure Active Directory (Azure AD).
+Les [configurations d’identité et d’accès aux appareils](../security/office-365-security/microsoft-365-policies-configurations.md) sont un ensemble de configurations et de stratégies d’accès conditionnel permettant de protéger l’accès à tous les services intégrés à Azure Active Directory (Azure AD).
 
-Cet article décrit comment configurer un environnement de test Microsoft 365 qui respecte les exigences de [configuration préalable uniquement pour le cloud](identity-access-prerequisites.md#prerequisites) pour l’accès aux identités et aux appareils.
+Cet article décrit comment configurer un environnement de test Microsoft 365 qui respecte les exigences de [configuration préalable uniquement pour le cloud](../security/office-365-security/identity-access-prerequisites.md#prerequisites) pour l’accès aux identités et aux appareils.
 
 La configuration de cet environnement de test comprend sept étapes :
 
@@ -106,7 +106,7 @@ Pour Skype Entreprise Online :
   Get-CsOAuthConfiguration
   ```
 
-Le résultat est un environnement de test qui respecte les exigences de [configuration préalable uniquement pour le cloud](identity-access-prerequisites.md#prerequisites) pour l’accès aux identités et appareils. 
+Le résultat est un environnement de test qui respecte les exigences de [configuration préalable uniquement pour le cloud](../security/office-365-security/identity-access-prerequisites.md#prerequisites) pour l’accès aux identités et appareils. 
 
 ## <a name="next-step"></a>Étape suivante
 

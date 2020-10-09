@@ -15,20 +15,20 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Créer un environnement Microsoft 365 pour tester l’accès identité et appareil avec les conditions préalables pour l’authentification directe.
-ms.openlocfilehash: eeb6c1d1313c95e920b20cce419118fe1e61ad6e
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 7741b38a947e58d81192326c412760487d803e36
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685641"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399180"
 ---
 # <a name="identity-and-device-access-prerequisites-for-pass-through-authentication-in-your-microsoft-365-test-environment"></a>Conditions préalables à l’accès identité et appareil pour l’authentification directe dans votre environnement de test Microsoft 365
 
 *Ce guide de laboratoire de test ne peut être utilisé que pour Microsoft 365 pour les environnements de test d’entreprise.*
 
-Les [configurations d’identité et d’accès aux appareils](microsoft-365-policies-configurations.md) sont un ensemble de configurations et de stratégies d’accès conditionnel permettant de protéger l’accès à tous les services de Microsoft 365 pour les entreprises qui sont intégrés à Azure Active Directory (Azure AD).
+Les [configurations d’identité et d’accès aux appareils](../security/office-365-security/microsoft-365-policies-configurations.md) sont un ensemble de configurations et de stratégies d’accès conditionnel permettant de protéger l’accès à tous les services de Microsoft 365 pour les entreprises qui sont intégrés à Azure Active Directory (Azure AD).
 
-Cet article décrit comment configurer un environnement de test Microsoft 365 qui respecte la configuration requise de la [configuration préalable de l’authentification directe](identity-access-prerequisites.md#prerequisites) pour l’accès identité et appareil.
+Cet article décrit comment configurer un environnement de test Microsoft 365 qui respecte la configuration requise de la [configuration préalable de l’authentification directe](../security/office-365-security/identity-access-prerequisites.md#prerequisites) pour l’accès identité et appareil.
 
 Il y a huit phases de configuration de cet environnement de test :
 
@@ -111,7 +111,7 @@ Pour Skype Entreprise Online :
   Get-CsOAuthConfiguration
   ```
 
-Le résultat est un environnement de test qui respecte la configuration requise de la [configuration préalable de l’authentification directe](identity-access-prerequisites.md#prerequisites) pour l’accès identité et appareil. 
+Le résultat est un environnement de test qui respecte la configuration requise de la [configuration préalable de l’authentification directe](../security/office-365-security/identity-access-prerequisites.md#prerequisites) pour l’accès identité et appareil. 
 
 ## <a name="next-step"></a>Étape suivante
 

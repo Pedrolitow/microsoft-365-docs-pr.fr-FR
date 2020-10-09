@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez comment Contoso utilise les fonctionnalités de protection des informations de Microsoft 365 pour entreprise pour sécuriser ses biens numériques dans le Cloud.
-ms.openlocfilehash: 67404df9bb2056c226eeb9370190519fc0cc8f3b
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 1966fdec3de246ca54fd99ab018485b9ee817281
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686021"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399240"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Protection des informations de Contoso Corporation
 
@@ -41,7 +41,7 @@ Contoso a effectué une analyse de ses données et déterminé les niveaux suiva
 Le tableau suivant répertorie les stratégies de traitement des informations de Contoso.
 
 
-| Valeur | Accès | Rétention de données | Protection des informations |
+| Valeur | Access | Rétention des données | Protection des informations |
 |:-------|:-----|:-----|:-----|
 | Valeur commerciale faible (Niveau 1: Ligne de base) | Autoriser l’accès pour tous  | 6 mois | Utiliser le chiffrement. |
 | Valeur commerciale moyenne (Niveau 2: Sensible) | Autoriser l’accès aux collaborateurs, aux sous-traitants et aux partenaires de Contoso <BR> <BR> Utiliser l’authentification multi-facteur (MFA), le chiffrement TLS (Transport Layer Security) et la gestion des applications mobiles (MAM). | 2 ans  | Utiliser les valeurs de hachage pour l’intégrité des données.  |
@@ -76,9 +76,9 @@ Contoso a utilisé les étapes suivantes pour préparer Microsoft 365 pour les e
 
 Conjointement avec son identité et son infrastructure de gestion des appareils mobiles, et dans le cadre de son déploiement d’Exchange Online et de SharePoint, Contoso a configuré l’ensemble suivant de stratégies d’accès conditionnel qu’il a appliquées aux groupes appropriés :
 
-- [Stratégies d’accès aux applications gérées et non gérées sur les périphériques](identity-access-policies.md)
-- [Stratégies d’accès à Exchange Online](secure-email-recommended-policies.md)
-- [Stratégies d’accès SharePoint](sharepoint-file-access-policies.md)
+- [Stratégies d’accès aux applications gérées et non gérées sur les périphériques](../security/office-365-security/identity-access-policies.md)
+- [Stratégies d’accès à Exchange Online](../security/office-365-security/secure-email-recommended-policies.md)
+- [Stratégies d’accès SharePoint](../security/office-365-security/sharepoint-file-access-policies.md)
 
 Voici le résultat des stratégies de protection des informations de Contoso.
 
