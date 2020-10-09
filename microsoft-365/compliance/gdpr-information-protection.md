@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8716af366e2ec75775f3e34cbd121fe14fbb11f1
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 2c9f0a97869f27cbcf5829a15f50bf2905472c28
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416798"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398483"
 ---
 # <a name="information-protection-for-gdpr-with-microsoft-365-capabilities"></a>Protection des informations concernant le RGPD avec les fonctionnalités Microsoft 365
 
@@ -49,7 +49,7 @@ Azure Active Directory et d’autres fonctionnalités Microsoft 365 fournisse
 
 Microsoft propose une configuration recommandée que vous pouvez utiliser comme point de départ :
 
-- [Configurations des identités et de l’accès aux appareils :](../enterprise/microsoft-365-policies-configurations.md): configurations de stratégie recommandées pour obtenir trois niveaux de protection (référence, sensible, hautement réglementée). Ces conseils incluent des stratégies recommandées pour Exchange Online et SharePoint Online (y compris OneDrive Entreprise).
+- [Configurations des identités et de l’accès aux appareils :](../security/office-365-security/microsoft-365-policies-configurations.md): configurations de stratégie recommandées pour obtenir trois niveaux de protection (référence, sensible, hautement réglementée). Ces conseils incluent des stratégies recommandées pour Exchange Online et SharePoint Online (y compris OneDrive Entreprise).
 - [Conseils de sécurité pour les campagnes électorales, les organisations à but non lucratif et d’autres organisations flexibles](https://docs.microsoft.com/microsoft-365/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o) : incluent le même ensemble de stratégies, mais fournissent des recommandations supplémentaires pour les environnements BYOD et les comptes B2B.
 
 ## <a name="threat-protection"></a>Protection contre les menaces

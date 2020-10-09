@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 262cb34bbe7f2923ecf8dce88208c70ba0b5b7f7
-ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
+ms.openlocfilehash: 20f1a0cc38338bb054618726b5a399d237a979d2
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48341410"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399499"
 ---
 # <a name="get-started-with-communication-compliance"></a>Prise en main de la conformité des communications
 
@@ -57,7 +57,7 @@ Si vous ne disposez pas d’un plan Office 365 entreprise E5 existant et que vou
 ## <a name="step-1-required-enable-permissions-for-communication-compliance"></a>Étape 1 (obligatoire) : activer les autorisations pour la conformité de la communication
 
 >[!Important]
->Par défaut, les administrateurs globaux n’ont pas accès aux fonctionnalités de conformité des communications. Les rôles attribués au cours de cette étape sont obligatoires avant toute accessibilité des fonctionnalités de conformité de la communication.
+>Par défaut, les administrateurs globaux n’ont pas accès aux fonctionnalités de conformité des communications. Les rôles attribués au cours de cette étape sont obligatoires avant toute accessibilité des fonctionnalités de conformité de la communication. Après avoir configuré vos groupes de rôles, le groupe de rôles peut prendre jusqu’à 30 minutes pour s’appliquer aux utilisateurs affectés au sein de votre organisation.
 
 Cinq groupes de rôles sont utilisés pour configurer les autorisations de gestion des fonctionnalités de conformité des communications. Pour que la conformité de la **communication** soit disponible sous la forme d’une option de menu dans le centre de conformité Microsoft 365 et pour poursuivre ces étapes de configuration, vous devez être affecté aux groupes de rôles de *conformité* de communication ou d' *administrateur de conformité* de communication. Pour accéder aux fonctionnalités de conformité de communication et les gérer une fois la configuration initiale, les utilisateurs doivent être membres d’au moins un groupe de rôles de conformité de communication.
 

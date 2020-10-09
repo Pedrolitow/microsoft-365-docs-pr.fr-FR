@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 4fcfec889b4b5005a172037a0df674b45a9e7281
-ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
+ms.openlocfilehash: 707f2b260ff9d4a452cdb65d75a1a8fe6a13af3f
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48341432"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399169"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Prise en main de la gestion des risques internes
 
@@ -47,6 +47,9 @@ Les utilisateurs inclus dans les stratégies de gestion des risques internes doi
 Si vous ne disposez pas d’un plan Microsoft 365 entreprise E5 existant et que vous souhaitez essayer de gérer les risques internes, vous pouvez [Ajouter microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) à votre abonnement existant ou [vous inscrire pour obtenir une version d’évaluation](https://www.microsoft.com/microsoft-365/enterprise) de Microsoft 365 entreprise E5.
 
 ## <a name="step-1-enable-permissions-for-insider-risk-management"></a>Étape 1 : activer les autorisations pour la gestion des risques initiés
+
+>[!Important]
+>Après avoir configuré vos groupes de rôles, le groupe de rôles peut prendre jusqu’à 30 minutes pour s’appliquer aux utilisateurs affectés au sein de votre organisation.
 
 Il existe quatre groupes de rôles utilisés pour configurer les autorisations permettant de gérer les fonctionnalités de gestion des risques inSided. Pour poursuivre ces étapes de configuration, vos administrateurs client doivent d’abord vous attribuer le groupe de rôles d’administrateur de gestion des **risques Insiders** ou d' **Insider Management** . Pour accéder et gérer les fonctionnalités de gestion des risques internes après la configuration initiale, les utilisateurs doivent être membres d’au moins un groupe de rôles de gestion des risques Insiders.
 

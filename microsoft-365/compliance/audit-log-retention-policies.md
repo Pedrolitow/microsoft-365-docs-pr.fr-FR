@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Les stratégies de rétention du journal d’audit font partie des nouvelles fonctionnalités d’audit avancées de Microsoft 365. Une stratégie de rétention de journal d’audit vous permet de spécifier la durée de conservation des journaux d’audit dans votre organisation.
-ms.openlocfilehash: 62d6fa47d19eaa9ae12e84879b5bf19a81afe8ae
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: dba14d5a4132bc9c883c531ceeb83a2a8ff3c6cd
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199538"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398725"
 ---
 # <a name="manage-audit-log-retention-policies"></a>Gérer les stratégies de rétention du journal d'audit
 
@@ -82,8 +82,6 @@ L'audit avancé de Microsoft 365 offre une stratégie de rétention du journal 
    6. **Priorité :** cette valeur détermine l’ordre dans lequel les stratégies de rétention du journal d’audit sont traitées au sein de votre organisation. Une valeur plus haute implique une priorité élevée. Par exemple, une stratégie avec une valeur de priorité de **5** sera prioritaire sur une stratégie ayant une valeur de priorité de **0**. Comme indiqué précédemment, toute stratégie de rétention de journal d’audit personnalisée est prioritaire sur la stratégie par défaut de votre organisation.
 
 4. Cliquez sur **Enregistrer** pour créer le nouveau journal d'audit de la stratégie de rétention.
-
-La nouvelle stratégie de rétention d’audit est répertoriée dans l’onglet **stratégies de rétention d’audit** .
 
 ## <a name="create-an-audit-log-retention-policy-in-powershell"></a>Créer une stratégie de rétention de journal d’audit dans PowerShell
 
