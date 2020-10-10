@@ -17,14 +17,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365solution-evalutatemtp
+- m365solution-overview
+- m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: 3d7156dfe65e9479f2505d196790800c6afd1f2a
-ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
+ms.openlocfilehash: af47f45ca4f3d14e835a39a334a9400002ac8560
+ms.sourcegitcommit: a83acd5b9eeefd2e20e5bac916fe29d09fb53de9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48367964"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48418072"
 ---
 # <a name="run-your-pilot-microsoft-threat-protection-project"></a>Exécuter votre projet pilote de protection contre les menaces Microsoft 
 
@@ -39,7 +40,7 @@ Pour déterminer efficacement l’avantage et l’adoption de Microsoft Threat P
 
 ## <a name="how-to-use-this-pilot-playbook"></a>Utilisation de ce manuel pilote
 
-Ce guide fournit une vue d’ensemble de la protection contre les menaces Microsoft, ainsi que des conseils détaillés sur la façon de configurer votre projet pilote. 
+Ce guide fournit une vue d’ensemble de la protection contre les menaces Microsoft et des instructions détaillées sur la configuration de votre projet pilote. 
 
 ![Phases de l’exécution d’un programme pilote Microsoft Threat Protection](../../media/pilotphases.png)
 

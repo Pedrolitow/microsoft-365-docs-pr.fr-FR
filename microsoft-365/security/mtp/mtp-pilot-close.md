@@ -17,14 +17,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365solution-evalutatemtp
+- m365solution-scenario
+- m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: ec8e630c3669b3eb7af8cb012a0ca361f8c77f1e
-ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
+ms.openlocfilehash: 1a7b87432ce1eb16c29f462fb4865bfa5c5e2201
+ms.sourcegitcommit: a83acd5b9eeefd2e20e5bac916fe29d09fb53de9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48368012"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48418096"
 ---
 # <a name="closing-and-summarizing-your-microsoft-threat-protection-pilot"></a>Fermeture et synthèse de votre programme pilote de protection contre les menaces Microsoft  
 
@@ -76,7 +77,7 @@ ms.locfileid: "48368012"
 
 Vous êtes actuellement à la fin de la phase de clôture et de synthèse.
 
-Vous venez de simuler une attaque avancée en mémoire uniquement qui a exécuté du code à distance sur un contrôleur de domaine. Vous avez vu comment Microsoft Defender ATP et Azure ATP détectent et signalent les activités malveillantes de Stealthy. Vous avez également vu comment les alertes provenant de sources différentes sont livrées avec d’autres informations contextuelles en un seul incident dans le portail du centre de sécurité Microsoft 365, ce qui permet aux analystes SOC d’examiner et de prendre les mesures nécessaires. Vous avez également créé une requête de chasse avancée qui identifie les messages électroniques entrants à l’endroit où l’utilisateur a ouvert ou enregistré la pièce jointe et a créé une détection basée sur cette requête.
+Vous venez d’exécuter une simulation d’attaque de mémoire avancée uniquement qui a exécuté le code à distance sur un contrôleur de domaine. Vous avez vu comment Microsoft Defender ATP et Azure ATP détectent et créent des alertes sur les activités malveillantes de Stealthy. Vous avez également vu comment les alertes provenant de sources différentes sont fournies, ainsi que d’autres informations contextuelles en un seul incident dans le portail du centre de sécurité Microsoft 365. Cette intégration permet à des analystes SOC d’examiner et de prendre les mesures nécessaires. Vous avez également créé une requête de chasse avancée qui identifie les messages électroniques entrants à l’endroit où l’utilisateur a ouvert ou enregistré la pièce jointe et a créé une détection basée sur cette requête.
 
 Vous avez atteint la fin du processus une fois tous les tests terminés.
 
@@ -86,9 +87,9 @@ La sortie finale doit être :
 - Un rapport détaillé sur les résultats du projet pilote
 - Une décision concernant le déplacement vers l’avant
 
-Ces informations doivent être présentées aux parties prenantes internes (que vous avez identifiées pendant la phase de [préparation](https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval) ) et aux contacts Microsoft. Cela permet de s’assurer que les commentaires peuvent être utilisés pour améliorer les produits et la documentation.
+Présenter les rapports de la sortie finale des parties prenantes internes (que vous avez identifiées pendant la phase de [préparation](https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval) ) et des contacts Microsoft. Un tel effort garantit que les commentaires peuvent être utilisés pour améliorer les produits et la documentation.
 
-Nous espérons que vous avez apprécié cette simulation et que vous êtes invité à commencer à implémenter ce que vous avez appris.
+Nous espérons que vous avez apprécié cette simulation. Commencez à implémenter ce que vous avez appris à une plus grande échelle dans votre organisation pour tirer le meilleur parti de la solution de sécurité intégrée.
 
 ## <a name="next-step"></a>Étape suivante
 Pour plus d’informations sur les piliers de la protection contre les menaces Microsoft, consultez les guides interactifs suivants :

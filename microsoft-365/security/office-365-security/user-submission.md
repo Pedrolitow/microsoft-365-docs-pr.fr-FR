@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-office365
 description: Les administrateurs peuvent apprendre à configurer une boîte aux lettres pour collecter le courrier indésirable et le courrier indésirable transmis par les utilisateurs.
-ms.openlocfilehash: 8347463a4c3f41b6b6333d35c5b4207d1b94aabe
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: ab7f25c456a9321977721113c1e98d67d1529feb
+ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48412561"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417239"
 ---
 # <a name="user-submissions-policies"></a>Stratégies de soumission des utilisateurs
 
@@ -47,17 +47,17 @@ La remise des messages signalés par l’utilisateur à une boîte aux lettres p
 
 Utilisez les articles suivants pour configurer les conditions préalables requises pour que les messages signalés par l’utilisateur soient envoyés à votre boîte aux lettres personnalisée :
 
-- Ignorez le filtrage du courrier indésirable en créant une règle de flux de messagerie Exchange pour définir le seuil de probabilité de courrier indésirable. Consultez la rubrique [utiliser le centre d’administration Exchange pour créer une règle de flux de messagerie qui définit la valeur SCL d’un message](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages?view=o365-worldwide#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) afin de définir la valeur SCL sur **-1**.
+- Ignorer le filtrage du courrier indésirable sur la boîte aux lettres personnalisée en créant une règle de flux de messagerie Exchange pour définir le seuil de probabilité de courrier indésirable. Consultez la rubrique [utiliser le centre d’administration Exchange pour créer une règle de flux de messagerie qui définit la valeur SCL d’un message](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) afin de définir la valeur SCL sur **-1**.
 
-- Désactivez l’analyse des pièces jointes pour les programmes malveillants. Utilisez l’option [configurer (ou modifier) une stratégie de pièces jointes approuvées ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-atp-safe-attachments-policies?view=o365-worldwide#step-2-set-up-or-edit-an-atp-safe-attachments-policy) pour créer une stratégie de pièces jointes fiables avec le paramètre **off-Attachment n’est pas analysé pour les programmes malveillants** activés.
+- Désactivez l’analyse des pièces jointes pour les programmes malveillants dans la boîte aux lettres personnalisée. Utilisation de l’option [configurer les stratégies de pièces jointes approuvées dans Office 365 ATP](set-up-atp-safe-attachments-policies.md) pour créer une stratégie de pièces jointes fiables avec le paramètre **désactivé** pour les **pièces jointes approuvées réponse inconnues**.
 
-- Désactivez l’analyse des URL sur les messages. Utiliser des [stratégies de liens fiables de l’ATP (ou modifier) qui s’appliquent à tous les destinataires de messagerie ou à des destinataires spécifiques](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-atp-safe-links-policies?view=o365-worldwide#step-3-add-or-edit-atp-safe-links-policies-that-apply-to-all-or-specific-email-recipients) pour créer une stratégie de liens fiables avec **Sélectionner l’action pour les URL potentiellement malveillantes dans les messages** définis sur **désactivé**.
+- Désactivez l’analyse des URL sur les messages dans la boîte aux lettres personnalisée. Utilisez l’option [configurer les stratégies de liens fiables dans Office 365 ATP](set-up-atp-safe-links-policies.md) pour créer une stratégie de liens fiables avec le paramètre **désactivé** pour **Sélectionner l’action pour les URL potentiellement inconnues dans les messages**.
 
-- Créez une stratégie anti-programme malveillant pour désactiver la purge automatique contre les programmes malveillants. Voir [utiliser le centre de sécurité & conformité pour créer des stratégies de protection contre les programmes malveillants](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies?view=o365-worldwide#use-the-security--compliance-center-to-create-anti-spam-policies) afin de définir la **purge automatique des programmes malveillants** avec la valeur **off**.
+- Créez une stratégie anti-programme malveillant pour désactiver la purge automatique contre les programmes malveillants. Voir [utiliser le centre de sécurité & conformité pour créer des stratégies de protection contre les programmes malveillants](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies) afin de définir la **purge automatique des programmes malveillants** avec la valeur **off**.
 
-- Créer une stratégie de filtrage du courrier indésirable pour désactiver la purge automatique (ZAP) zéro heure pour le courrier indésirable ZAP et le hameçonnage ZAP. Consultez la rubrique [utiliser le centre de sécurité & conformité pour créer des stratégies de blocage du courrier indésirable](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies?view=o365-worldwide#use-the-security--compliance-center-to-create-anti-spam-policies) et désactivez la case à cocher **activé** pour le courrier indésirable ZAP et le hameçonnage zap.
+- Créez une stratégie de filtrage du courrier indésirable pour désactiver la purge automatique (ZAP) zéro heure pour le courrier indésirable et le hameçonnage dans la boîte aux lettres personnalisée. Consultez la rubrique [utiliser le centre de sécurité & conformité pour créer des stratégies de blocage du courrier indésirable](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies) et désactivez la case à cocher **activé** pour le **courrier indésirable zap** et le **hameçonnage zap**.
 
-- Désactiver la règle de courrier indésirable. Utilisez [configurer les paramètres du courrier indésirable sur les boîtes aux lettres Exchange Online](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes?view=o365-worldwide) pour désactiver la règle de courrier indésirable. Une fois désactivé, EOP ne peut pas déplacer les messages vers le dossier courrier indésirable en fonction de l’action de filtrage du courrier indésirable **déplacer le message vers le dossier courrier indésirable** ou la collection de listes fiables sur la boîte aux lettres.
+- Désactivez la règle de courrier indésirable dans la boîte aux lettres personnalisée. Utilisez [configurer les paramètres du courrier indésirable sur les boîtes aux lettres Exchange Online](configure-junk-email-settings-on-exo-mailboxes.md) pour désactiver la règle de courrier indésirable. Une fois désactivé, EOP ne peut pas déplacer les messages vers le dossier courrier indésirable en fonction de l’action de filtrage du courrier indésirable **déplacer le message vers le dossier courrier indésirable** ou la collection de listes fiables sur la boîte aux lettres.
 
 Une fois que vous avez vérifié que votre boîte aux lettres correspond à toutes les conditions préalables applicables, [Utilisez le centre de sécurité & conformité pour configurer la boîte aux lettres](#use-the-security--compliance-center-to-configure-the-user-submissions-mailbox) d’envoi des utilisateurs (dans cet article).
 
@@ -118,7 +118,7 @@ Les messages envoyés à des boîtes aux lettres personnalisées doivent suivre 
 
 `SafetyAPIAction|NetworkMessageId|SenderIp|FromAddress|(Message Subject)`
 
-SafetyAPIAction est l’une des valeurs entières suivantes :
+où SafetyAPIAction est l’une des valeurs entières suivantes :
 
 - 1 : courrier indésirable
 - 2 : NotJunk

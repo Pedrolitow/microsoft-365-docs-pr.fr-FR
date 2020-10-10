@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: .
-ms.openlocfilehash: f729aa816caf8fb07499037ee27fbfc37b7205b3
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: c0a3849d330b508630eb60c7ee24cd8b498a32b8
+ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202878"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417234"
 ---
 # <a name="configuring-external-email-forwarding-in-office-365"></a>Configuration du transfert de messages électroniques externes dans Office 365
 
@@ -28,7 +28,7 @@ ms.locfileid: "48202878"
 
 Le transfert externe est contrôlé par la *stratégie anti-courrier indésirable sortant* et l’étendue aux utilisateurs en fonction du paramètre configuré. Actuellement, 3 les paramètres sont pris en charge :
 
-- **Automatique** : dans ce mode, le système est chargé de décider si un message transféré est autorisé ou non.  Il s’agit du mode par défaut et, dans ce mode, le système bloque le transfert externe automatique.
+- **Automatique** – cela est contrôlé par le système : il permet le filtrage du courrier indésirable sortant pour contrôler le transfert automatique du courrier électronique externe. Il s’agit du paramètre par défaut.
 
 - **Activé – le** transfert externe automatique est autorisé et non restreint.
 
@@ -37,7 +37,7 @@ Le transfert externe est contrôlé par la *stratégie anti-courrier indésirabl
 Pour plus d’informations sur la configuration de ces paramètres, voir [configurer le filtrage du courrier indésirable sortant dans EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-the-outbound-spam-policy?view=o365-worldwide&preserve-view=true) .
 
 > [!NOTE]
-> La désactivation du transfert automatique entraînera également la dsable des règles de boîte de réception qui redirigent les messages vers des adresses externes.
+> La désactivation du transfert automatique désactive également les règles de boîte de réception qui redirigent les messages vers des adresses externes.
 
 ## <a name="controlling-external-email-forwarding"></a>Contrôle du transfert du courrier électronique externe
 

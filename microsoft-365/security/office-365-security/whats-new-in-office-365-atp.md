@@ -17,15 +17,15 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-office365
 ms.topic: conceptual
-ms.date: 09/10/2020
+ms.date: 10/09/2020
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
-ms.openlocfilehash: 5bbbda8b2fb13351d0b86d1670910cbaa52ad8cb
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: ab987652082c93a82fa5bcbd4667f26291c6e9d7
+ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48413257"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417288"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Nouveautés d’Office 365 – Protection avancée contre les menaces
 
@@ -47,7 +47,8 @@ Cet article répertorie les nouvelles fonctionnalités de la dernière version d
 - [Remplacer manuellement les verdicts de filtre à l’aide de la liste d’autorisation/de blocage de client](tenant-allow-block-list.md)
 - [Fonctionnalités étendues dans l’Explorateur de menaces, y compris les utilisateurs ciblés principaux, les règles de transport et les connecteurs](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (Plan Office 365 ATP 2)
 - Le surfaçage remplace les informations dans l' [Explorateur de menaces](threat-explorer.md) (le courrier électronique a été autorisé/bloqué par le client/stratégie utilisateur)
-- Exposition des menaces d’URL dans l' [Explorateur de menaces](threat-explorer.md) (programmes malveillants, hameçons, courrier indésirable ou aucun) 
+- Exposition des menaces d’URL dans l' [Explorateur de menaces](threat-explorer.md#threats-in-urls) (programmes malveillants, hameçons, courrier indésirable ou aucun) 
+- [Améliorations apportées à l’expérience de la chasse Explorer](threat-explorer.md#improvements-to-threat-hunting-experience-upcoming) avec des mises à jour concernant les menaces, les actions supplémentaires, les emplacements de remise et l’affichage de chronologie mis à jour
 
 ## <a name="julyaugust-2020"></a>Juillet/août 2020 
 

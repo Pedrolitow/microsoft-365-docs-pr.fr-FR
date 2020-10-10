@@ -17,14 +17,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365solution-evalutatemtp
+- m365solution-scenario
+- m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: 7d1870d1b8972009bed657f476810ca011dc2621
-ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
+ms.openlocfilehash: e62b4ec0ee6c9d05321accf269406e8127019f5b
+ms.sourcegitcommit: a83acd5b9eeefd2e20e5bac916fe29d09fb53de9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48367976"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48418108"
 ---
 # <a name="planning-your-pilot-microsoft-threat-protection-project"></a>Planification de votre projet pilote de protection des menaces Microsoft 
 
@@ -39,7 +40,7 @@ ms.locfileid: "48367976"
     <td align="center" style="width:25%; border:0;" bgcolor="#d5f5e3">
       <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-plan"> 
         <img src="../../media/mtp/plan.png" alt="Plan your pilot Microsoft Threat Protection project" title="Planification de votre projet pilote de protection contre les menaces Microsoft" />
-      <br/>Planification</a><br>
+      <br/>Prévision</a><br>
     </td>
     <td align="center">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval">
@@ -119,7 +120,7 @@ Les critères de réussite correspondent finalement à la barre de mesure par ra
 
 Une façon de rassembler tous les éléments de votre plan peut consister à créer une carte de performance. Voir un exemple de carte de performance ci-dessous :
 
-|**Cas d’utilisation**|**Configuration requise**|**Configuration requise**|**Plan de test**|**Résultat attendu**|**État du test**|**Minimal**|**Notes**|
+| Cas d’utilisation | Configuration requise | Configuration requise | Plan de test | Résultat attendu | État du test | Niveau | Notes |
 |:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
 |Gestion des incidents|-Protection contre les menaces Microsoft </br></br>-Azure ATP </br></br>-Microsoft Defender ATP </br></br>-Sécurité des applications Cloud Microsoft (facultatif)|Voir les [conditions préalables](https://aka.ms/mtp-trial-lab) pour la préparation, l’installation et la configuration pour plus de détails |[Simuler une attaque](mtp-pilot-simulate.md) <br></br>[Examen de l’incident](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#investigate-an-incident) |Les investigateurs peuvent comprendre l’étendue et l’impact de l’incident et gérer l’incident.||||
 |AutoIR|-Protection contre les menaces Microsoft </br></br>-Azure ATP </br></br>-Microsoft Defender ATP |Voir les [conditions préalables](https://aka.ms/mtp-trial-lab) pour la préparation, l’installation et la configuration pour plus de détails <br>Activer AutoIR  |[Simuler une attaque](mtp-pilot-simulate.md) <br></br>[Enquête automatisée](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#automated-investigation-and-remediation) |Les alertes et les incidents sont automatiquement résolus par la protection contre les menaces Microsoft.||||

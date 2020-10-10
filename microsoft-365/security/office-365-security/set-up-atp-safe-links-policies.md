@@ -1,5 +1,5 @@
 ---
-title: Définir des stratégies de liens fiables dans Office 365 PACM
+title: Configurer des stratégies de liens fiables dans Office 365 – Protection avancée contre les menaces
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,14 +17,14 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à afficher, créer, modifier et supprimer des stratégies de liens fiables et des paramètres globaux de liens approuvés dans Office 365 Advanced Threat Protection (ATP).
-ms.openlocfilehash: b6b013364fc763450ac8bef0d06bd2fad8d55daa
-ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+ms.openlocfilehash: cf60820297401de92781a48f22f70d1f503e3097
+ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48350718"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417248"
 ---
-# <a name="set-up-safe-links-policies-in-office-365-atp"></a>Définir des stratégies de liens fiables dans Office 365 PACM
+# <a name="set-up-safe-links-policies-in-office-365-atp"></a>Configurer des stratégies de liens fiables dans Office 365 – Protection avancée contre les menaces
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -88,9 +88,9 @@ La création d’une stratégie de liens fiables personnalisée dans le centre d
 
 4. Sur la page **paramètres** qui s’affiche, configurez les paramètres suivants :
 
-   - **Sélectionnez l’action pour les URL potentiellement malveillantes dans les messages**: sélectionnez **activé**.
+   - **Sélectionnez l’action pour les URL potentiellement malveillantes dans les messages**: sélectionnez **activé** pour activer la protection des liens fiables dans les messages électroniques.
 
-   - **Sélectionnez l’action pour les URL potentiellement malveillantes dans les messages**: sélectionnez **activé** ou laissez la valeur par défaut **désactivé** .
+   - **Sélectionnez l’action pour les URL inconnues ou potentiellement malveillantes dans Microsoft teams**: sélectionnez **activé** pour activer la protection des liens fiables dans Teams.
 
    - **Application de l’analyse des URL en temps réel pour les liens suspects et les liens pointant vers des fichiers**: sélectionnez ce paramètre pour activer l’analyse en temps réel des liens dans les messages électroniques.
 
@@ -227,7 +227,7 @@ La création d’une stratégie de liens fiables dans PowerShell est un processu
 1. Créez la stratégie de liens fiables.
 2. Créer la règle de liens fiables qui spécifie la stratégie de liens approuvés à laquelle la règle s’applique.
 
- **Remarques** :
+ **Remarques**:
 
 - Vous pouvez créer une règle de liens fiables et lui affecter une stratégie de liens approuvés existante non associée. Une règle de liens fiables ne peut pas être associée à plusieurs stratégies de liens fiables.
 
@@ -246,7 +246,7 @@ Pour créer une stratégie de liens fiables, utilisez la syntaxe suivante :
 New-SafeLinksPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-IsEnabled <$true | $false>] [-EnableSafeLinksForTeams <$true | $false>] [-ScanUrls <$true | $false>] [-DeliverMessageAfterScan <$true | $false>] [-EnableForInternalSenders <$true | $false>] [-DoNotAllowClickThrough <$true | $false>] [-DoNotTrackUserClicks <$true | $false>] [-DoNotRewriteUrls "Entry1","Entry2",..."EntryN"]
 ```
 
-**Remarques** :
+**Remarques**:
 
 - Pour plus d’informations sur la syntaxe d’entrée à utiliser pour le paramètre _DoNotRewriteUrls_ , voir [entrée Syntax pour la liste « ne pas réécrire les URL suivantes »](atp-safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list).
 

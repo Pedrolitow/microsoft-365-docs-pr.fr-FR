@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: ffa5e6abf7fb1cb0f93fe1c233ef7e3f0b023faf
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: 35de1504d4d7ddd3512b6cc3e478b138c1f43c29
+ms.sourcegitcommit: a83acd5b9eeefd2e20e5bac916fe29d09fb53de9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48412621"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48418120"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Découvrir le langage de requête de repérage avancé
 
@@ -34,7 +34,7 @@ ms.locfileid: "48412621"
 **S’applique à :**
 - Protection Microsoft contre les menaces
 
-Le repérage avancé est basé sur le [langage de requête Kusto](https://docs.microsoft.com/azure/kusto/query/). Vous pouvez utiliser la syntaxe et les opérateurs Kusto pour créer des requêtes qui recherchent des informations dans un [schéma](advanced-hunting-schema-tables.md)spécialisé. Pour mieux comprendre ces concepts, exécutez votre première requête.
+Le repérage avancé est basé sur le [langage de requête Kusto](https://docs.microsoft.com/azure/kusto/query/). Vous pouvez utiliser des instructions et des opérateurs Kusto pour créer des requêtes qui recherchent des informations dans un [schéma](advanced-hunting-schema-tables.md)spécialisé. Pour mieux comprendre ces concepts, exécutez votre première requête.
 
 ## <a name="try-your-first-query"></a>Essayez votre première requête
 

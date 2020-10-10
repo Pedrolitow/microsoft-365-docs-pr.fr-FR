@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à afficher et à gérer les messages mis en quarantaine pour tous les utilisateurs dans Exchange Online Protection (EOP). Les administrateurs dans les organisations avec Office 365 Advanced Threat Protection (Office 365 ATP) peuvent également gérer les fichiers mis en quarantaine dans SharePoint Online, OneDrive entreprise et Microsoft Teams.
-ms.openlocfilehash: 1969a282d5d083886b9ad5a8aae54896ea9b1fc1
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 7e9b49e7e7a90f5271a65bb26cecdd1a7ce2ab84
+ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202422"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417220"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Gérer les messages et fichiers mis en quarantaine en tant qu’administrateur dans Exchange Online PowerShell
 
@@ -65,25 +65,15 @@ Vous pouvez afficher et gérer les messages mis en quarantaine dans le centre de
 3. Vous pouvez trier les résultats en cliquant sur un en-tête de colonne disponible. Cliquez sur **Modifier les colonnes** pour afficher jusqu’à sept colonnes. Les valeurs par défaut sont marquées d'un astérisque (<sup>\*</sup>) :
 
    - **Reçu**<sup>\*</sup>
-
    - **Expéditeur**<sup>\*</sup>
-
    - **Sujet**<sup>\*</sup>
-
    - **Raison de la quarantaine**<sup>\*</sup>
-
    - **Déplacer ?**<sup>\*</sup>
-
    - **Type de stratégie**<sup>\*</sup>
-
    - **Destinataire**
-
    - **ID de message**
-
    - **Nom de la stratégie**
-
    - **Taille**
-
    - **Direction**
 
    Lorsque vous avez terminé, cliquez sur **Enregistrer** ou sur **Définir par défaut**.
@@ -91,29 +81,19 @@ Vous pouvez afficher et gérer les messages mis en quarantaine dans le centre de
 4. Pour filtrer les résultats, cliquez sur **Filtrer**. Les filtres disponibles sont :
 
    - **Date d’expiration** : filtrer les messages par date d'expiration de la quarantaine :
-
      - **Aujourd’hui**
-
      - **Dans les 2 prochains jours**
-
      - **Dans les 7 prochains jours**
-
      - **Personnaliser**: Entrer une **Date de début** et une **Date de fin**.
 
    - **Heure de réception**: Entrer une **Date de début** et une **Date de fin**.
 
    - **Raison de la mise en quarantaine :**
-
      - **Stratégie**: le message correspond aux conditions d’une règle de flux de messagerie (également appelée règle de transport).
-
      - **E-mail de masse**
-
-     - **Hameçonnage**
-
+     - **Hameçonnage**: le verdict de filtrage du courrier indésirable était le message de **hameçonnage** ou la protection anti-hameçonnage a mis en quarantaine le message ([paramètres d’usurpation](set-up-anti-phishing-policies.md#spoof-settings) ou [protection contre](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies)l’usurpation d’identité).
      - **Programme malveillant**
-
      - **Courrier indésirable**
-
      - **Hameçonnage à niveau de confiance élevé**
 
    - **Destinataire du message**: tous les utilisateurs ou seulement les messages qui vous sont envoyés. Les utilisateurs finaux peuvent gérer uniquement les messages mis en quarantaine qui leur sont envoyés.
@@ -175,11 +155,8 @@ Une fois que vous avez sélectionné un message, vous disposez de plusieurs opti
   - **Signaler les messages à Microsoft pour analyse**: cette option est sélectionnée par défaut et signale le message en quarantaine à Microsoft comme un faux positif. Si le message a été mis en quarantaine en tant que courrier indésirable, en masse, hameçonnage ou contenant un programme malveillant, le message est également signalé à l’équipe d’analyse du courrier indésirable de Microsoft. En fonction de leur analyse, les règles de filtrage du courrier indésirable à l’échelle du service peuvent être ajustées pour autoriser le message.
 
   - Choisissez l’une des options suivantes :
-
     - **Diffuser les messages à tous les destinataires**
-
     - **Publier des messages à des destinataires spécifiques**
-
     - **Publier des messages vers d’autres personnes**
 
   Lorsque vous avez terminé, cliquez sur **Déplacer les messages**.
@@ -195,7 +172,6 @@ Une fois que vous avez sélectionné un message, vous disposez de plusieurs opti
 - **Prévisualiser le message** : dans le volet déroulant qui apparaît, choisissez l’une des options suivantes :
 
   - **Mode Source** : affiche la version HTML du corps du message, dans laquelle tous les liens sont désactivés.
-  
   - **Mode texte** : affiche le corps du message au format texte brut.
 
 - **Supprimer de la quarantaine**: après avoir cliqué sur **Oui** dans le message d’avertissement qui s’affiche, le message est immédiatement supprimé sans être envoyé aux destinataires d’origine.
@@ -245,37 +221,23 @@ Dans les organisations avec ATP, les administrateurs peuvent gérer les fichiers
 3. Vous pouvez trier les résultats en cliquant sur un en-tête de colonne disponible. Cliquez sur **Modifier les colonnes** pour afficher jusqu’à sept colonnes. Les colonnes par défaut sont marquées d’un astérisque ( <sup>\*</sup> ) :
 
    - **Utilisateur**<sup>\*</sup>
-
    - **Emplacements**<sup>\*</sup>
-
    - **Nom de fichier**<sup>\*</sup>
-
    - **URL du fichier**<sup>\*</sup>
-
    - **Taille de fichier**<sup>\*</sup>
-
    - **Expire**<sup>\*</sup>
-
    - **Déplacer ?**<sup>\*</sup>
-
    - **Détectés par**
-
    - **Modifié par heure**
 
 4. Pour filtrer les résultats, cliquez sur **Filtrer**. Les filtres disponibles sont :
 
    - **Date d’expiration** : filtrer les messages par date d'expiration de la quarantaine :
-
      - **Aujourd’hui**
-
      - **Dans les 2 prochains jours**
-
      - **Dans les 7 prochains jours**
-
      - Une plage date/heure personnalisée.
-
    - **Heure de réception**
-
    - **Raison**de la mise en quarantaine : la seule valeur disponible est **programme malveillant**.
 
 Une fois que vous avez trouvé un fichier en quarantaine spécifique, sélectionnez le fichier pour en afficher les détails et effectuer une action (par exemple, afficher, publier, télécharger ou supprimer le message).
@@ -293,29 +255,17 @@ Une fois que vous avez trouvé un fichier en quarantaine spécifique, sélection
 Lorsque vous sélectionnez un fichier dans la liste, les détails de fichier suivants s’affichent dans le volet flyout de **Détails** :
 
 - **Nom de fichier**
-
 - **URL du fichier**: URL qui définit l’emplacement du fichier (par exemple, dans SharePoint Online).
-
 - **Contenu malveillant détecté sur** Date/heure de mise en quarantaine du fichier.
-
 - **Expire**: date à laquelle le fichier sera supprimé de la quarantaine.
-
 - **Détecté par**: ATP (protection avancée contre les menaces) ou le moteur anti-programme malveillant de Microsoft.
-
 - **Déplacer ?**
-
 - **Nom du programme malveillant**
-
 - **ID de document**: identificateur unique pour le document.
-
 - **Taille du fichier**: en kilo-octets (Ko).
-
 - **Organisation** ID unique de votre organisation.
-
 - **Dernière modification**
-
 - **Modifié par**: utilisateur qui a modifié le fichier pour la dernière fois.
-
 - **Valeur 256-bit (SHA-256) de l’algorithme de hachage sécurisé**: vous pouvez utiliser cette valeur de hachage pour identifier le fichier dans d’autres magasins de réputation ou dans d’autres emplacements de votre environnement.
 
 ### <a name="take-action-on-quarantined-files"></a>Effectuer des actions sur les fichiers mis en quarantaine
@@ -323,9 +273,7 @@ Lorsque vous sélectionnez un fichier dans la liste, les détails de fichier sui
 Lorsque vous sélectionnez un fichier dans la liste, vous pouvez effectuer les actions suivantes sur le fichier dans le volet flyout de **Détails** :
 
 - **Fichiers de version**: sélectionnez (par défaut) ou désélectionnez **les fichiers de rapports à Microsoft pour analyse**, puis cliquez sur **libérer les fichiers**.
-
 - **Télécharger un fichier**
-
 - **Supprimer le fichier de la quarantaine**
 
 Si vous ne libérez pas ou ne supprimez pas les fichiers, ils seront supprimés une fois la période de rétention de quarantaine par défaut expirée.
@@ -335,7 +283,6 @@ Si vous ne libérez pas ou ne supprimez pas les fichiers, ils seront supprimés 
 Lorsque vous sélectionnez plusieurs fichiers mis en quarantaine dans la liste (jusqu’à 100), le volet flyout **actions en bloc** s’affiche et vous pouvez effectuer les actions suivantes :
 
 - **Fichiers de version**
-
 - **Supprimer des fichiers**: après avoir cliqué sur **Oui** dans le message d’avertissement qui s’affiche, les fichiers sont immédiatement supprimés.
 
 1. À l’aide d’un compte professionnel ou scolaire disposant de privilèges d’administrateur général (ou des rôles de centre de sécurité & conformité appropriés) dans votre organisation, connectez-vous et [accédez au centre de sécurité & conformité](../../compliance/go-to-the-securitycompliance-center.md).

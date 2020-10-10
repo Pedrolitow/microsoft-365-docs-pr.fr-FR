@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-office365
 description: Découvrez comment utiliser l’Explorateur et les détections en temps réel dans le centre de sécurité &amp; conformité pour examiner et répondre efficacement aux menaces.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 20b13e177a69d981a4c6793d4810256e33158a35
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: ab691e88c8450e4f1ab898fe6a9d75d6682370a5
+ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48414261"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417356"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorateur de menaces et détections en temps réel
 
@@ -48,6 +48,101 @@ Ce rapport vous permet d’utiliser les actions suivantes :
 - [Démarrer un processus d’enquête et de réponse automatisés à partir d’une vue dans l’Explorateur](#start-automated-investigation-and-response) (plan ATP 2 uniquement)
 - ... [Examinez le courrier électronique malveillant, et bien plus encore](#more-ways-to-use-explorer-or-real-time-detections)!
 
+## <a name="improvements-to-threat-hunting-experience-upcoming"></a>Améliorations apportées à l’expérience de la chasse aux menaces (à venir)
+
+### <a name="updated-threat-information-for-emails"></a>Informations de menace mises à jour pour les E-mails
+
+Nous avons centré les améliorations apportées à la qualité des données et de la plateforme pour augmenter la précision et la cohérence des enregistrements de messagerie. Ces mises à jour incluent la consolidation des informations de pré-remise et de post-livraison (exemple d’action exécutée sur un message électronique dans le cadre du processus ZAP) en un seul enregistrement, ainsi que le filtrage du courrier indésirable, les menaces de niveau entité (par exemple, l’URL était malveillante) et les emplacements de remise les plus récents. 
+
+Après ces mises à jour, vous verrez une seule entrée pour chaque message, quels que soient les différents événements post-livraison qui ont eu lieu sur le message. Les actions peuvent inclure ZAP, la correction manuelle (ce qui signifie l’intervention de l’administrateur), la remise dynamique, etc. 
+
+En plus de montrer les menaces de programmes malveillants et de hameçonnage, vous pouvez voir le verdict de courrier indésirable associé à un e-mail. Dans le courrier électronique, vous serez en mesure de voir toutes les menaces associées au courrier électronique, ainsi que les technologies de détection correspondantes. Chaque e-mail peut avoir 0, 1 ou plusieurs menaces. Vous verrez les menaces actuelles dans la section des détails de la fenêtre mobile de courrier électronique. De plus, pour plusieurs menaces (par exemple, un message électronique comportant à la fois des programmes malveillants et des hameçons), le champ TechEd Tech donnera le Threat-Detection Mapping, ce qui signifie que le Tech Detection a conduit à l’identification de la menace.
+
+L’ensemble des technologies de détection a été mis à jour pour inclure de nouvelles méthodes de détection, ainsi que des technologies de détection du courrier indésirable, et aross les différentes vues de messagerie (programmes malveillants, hameçons, tout le courrier électronique), vous disposez d’un ensemble de technologies de détection cohérentes pour filtrer les résultats. 
+
+**Remarque**: l’analyse de verdict ne doit pas nécessairement être liée à des entités. Par exemple, un e-mail peut être classé comme hameçonnage ou courrier indésirable, mais il n’y a pas d’URL avec un marquage du courrier indésirable/courrier indésirable. Cela est dû au fait que nos filtres évaluent également le contenu et d’autres détails pour un e-mail, avant d’affecter un verdict. 
+ 
+#### <a name="threats-in-urls"></a>Menaces dans les URL
+
+Dans l’onglet Détails du menu déroulant courrier >, vous pouvez voir la menace spécifique pour une URL (la menace pour une URL peut être un programme malveillant, le hameçonnage, le courrier indésirable ou aucun).
+
+![Menaces d’URL](../../media/URL_Threats.png)
+
+### <a name="updated-timeline-view-upcoming"></a>Affichage chronologique mis à jour (à venir)
+
+![Affichage chronologique mis à jour](../../media/Email_Timeline.png)
+
+En plus de l’identification de tous les événements de remise et post-remise, l’affichage de la chronologie fournit également des informations sur la menace identifiée à ce moment pour un sous-ensemble de ces événements. Il fournit également des informations supplémentaires sur les actions supplémentaires (par exemple ZAP, la correction manuelle) ainsi que le résultat de cette action. L’affichage chronologie contient des informations sur la remise d’origine, ainsi que tous les événements post-remise effectués sur un message électronique.
+
+-   Source : il peut s’agir de l’administrateur/système/utilisateur en fonction de la source de l’événement.
+-   Événement : cela inclut les événements de niveau supérieur tels que la remise d’origine, la correction manuelle, la préversion, les envois et la remise dynamique.
+-   Action : Cela couvre l’action spécifique qui a été effectuée dans le cadre de l’action ZAP ou d’administration (par exemple, suppression récupérable).
+-   Menaces : couvre les menaces (programmes malveillants, hameçons, courrier indésirable) identifiées à ce moment-là.
+-   Résultat/Détails : fournit plus d’informations sur le résultat de l’action, qu’elle ait été effectuée dans le cadre de l’action ZAP/admin.
+
+### <a name="original-and-latest-delivery-location"></a>Emplacement de remise d’origine et dernier
+
+Aujourd’hui, nous adressons l’emplacement de remise en surface au sein du grille e-mail et de la fenêtre mobile e-mail. À l’avenir, le champ d’emplacement de remise sera renommé vers l’emplacement de remise d’origine. En outre, nous introduisons également un autre champ appelé dernier emplacement de remise. 
+
+L’emplacement de remise d’origine fournit des informations supplémentaires sur l’endroit où un courrier électronique a été remis initialement. L’emplacement de remise le plus récent inclut un emplacement où un e-mail a pu être débarqué après des actions système telles que ZAP ou les actions d’administration, telles que le **déplacement vers des éléments supprimés**. L’emplacement de remise le plus récent est destiné à informer les administrateurs de la dernière publication de l’emplacement connu du message ou de toute action système/administrateur. De par sa conception, elle n’inclut pas les actions liées à l’utilisateur final sur le courrier électronique. Par exemple : si un utilisateur supprime un message ou déplace le message vers Archive/PST, le message « remise » n’est pas mis à jour. Toutefois, si une action système a mis à jour l’emplacement (par exemple, ZAP en cas de déplacement d’un e-mail vers la quarantaine), vous verrez l’emplacement de remise le plus récent en quarantaine. 
+
+![Emplacements de remise mis à jour](../../media/Updated_Delivery_Location.png)
+
+**Remarque**: il existe peu de cas où l’emplacement de remise et l’action de remise peuvent afficher « inconnu » comme valeur :
+
+- Vous pouvez voir l’emplacement de remise comme étant livré, et l’emplacement de remise comme inconnu. Cela se produit lorsque le message a été remis, mais qu’une règle de boîte de réception a déplacé le message vers un dossier par défaut (brouillon, Archive, etc.) au lieu des dossiers boîte de réception ou courrier indésirable. 
+
+- L’emplacement de remise le plus récent peut être inconnu si une action administrateur/système (par exemple, ZAP, action d’administration) est tentée, mais que le message est introuvable. En règle générale, l’action se produit après que l’utilisateur a déplacé ou supprimé le message. Dans ce cas, vérifiez la colonne résultat dans l’affichage chronologie. Recherchez le message : message déplacé ou supprimé par l’utilisateur.
+
+![Emplacements de remise pour la chronologie](../../media/Updated_Timeline_Delivery_Location.png)
+
+### <a name="additional-actions"></a>Actions supplémentaires 
+
+Les actions supplémentaires consistent en des actions appliquées après la remise du courrier électronique, et peuvent inclure ZAP, la correction manuelle (action effectuée par un admi ; n, par exemple, suppression douce), la remise dynamique et le retraitement (un message a été rétroactivement détecté de manière rétroactive). 
+
+> [!NOTE]
+>
+> - Dans le cadre de cette modification, la valeur supprimée par ZAP actuellement représentée dans le filtre d’action de remise est rejetée. Vous pouvez rechercher tous les messages électroniques à l’aide de la méthode ZAP via les actions supplémentaires.
+>
+> -Il y aura de nouveaux champs et valeurs pour les technologies de détection et des actions supplémentaires (en particulier pour les scénarios ZAP). Évaluez vos requêtes sauvegardées existantes et les requêtes suivies afin de vous assurer qu’elles fonctionnent avec les nouvelles valeurs. 
+
+![Additional_Actions](../../media/Additional_Actions.png)
+
+### <a name="system-overrides"></a>Substitutions système 
+
+Les substitutions système sont une méthode permettant de faire des exceptions à l’emplacement de remise prévu d’un message en remplaçant l’emplacement de remise fourni par le système (en fonction des menaces et autres détections identifiées par notre pile de filtrage). Les substitutions système peuvent être définies par le biais de la stratégie client ou utilisateur pour envoyer le message comme indiqué par la stratégie. Les substitutions sont utiles pour identifier toute remise non intentionnelle de messages malveillants en raison d’un manque de configurations (par exemple, une stratégie d’expéditeur très large sécurisée définie par un utilisateur). Ces valeurs de remplacement peuvent être les suivantes :
+
+- Autorisé par la stratégie de l’utilisateur : c’est lorsqu’un utilisateur autorise des domaines ou des expéditeurs en créant des stratégies au niveau de la boîte aux lettres.
+- Bloqué par la stratégie de l’utilisateur : c’est lorsqu’un utilisateur bloque les domaines ou les expéditeurs en créant des stratégies au niveau de la boîte aux lettres.
+- Autorisé par la stratégie d’organisation : c’est lorsque les équipes de sécurité de l’organisation définissent des stratégies ou des règles de flux de messagerie Exchange (également appelées règles de transport) pour autoriser les expéditeurs et les domaines pour les utilisateurs de leur organisation. Il peut s’agir d’un ensemble d’utilisateurs ou de l’ensemble de l’organisation.
+- Bloqué par la stratégie d’organisation : c’est lorsque les équipes de sécurité de l’organisation définissent des stratégies ou des règles de flux de messagerie pour bloquer les expéditeurs, les domaines, les langues de message ou les adresses IP source pour les utilisateurs au sein de leur organisation. Il peut également s’agir d’un ensemble d’utilisateurs ou de l’ensemble de l’organisation.
+- Extension de fichier bloquée par la stratégie d’organisation : c’est lorsqu’une extension de type de fichier est bloquée par les équipes de sécurité d’une organisation par le biais des paramètres de stratégie anti-programme malveillant. Ces valeurs apparaissent maintenant dans les détails du courrier électronique pour vous aider à effectuer des recherches. Les équipes de secopss peuvent également filtrer sur les extensions de fichiers bloquées à l’aide de la fonctionnalité de filtrage enrichie.
+
+![System_Overrides](../../media/System_Overrides.png)
+
+![System_Overrides_Grid](../../media/System_Overrides_Grid.png)
+
+### <a name="improvements-around-url-and-clicks-experience"></a>Améliorations concernant l’expérience de l’URL et des clics
+
+Les améliorations apportées aux données sur les URL et les URL sont les suivantes :
+
+-   Affichage de l’URL sur laquelle l’utilisateur a cliqué complet (y compris les paramètres de requête faisant partie de l’URL) dans la section clics de la fenêtre mobile d’URL. Nous affichons actuellement le domaine et le chemin d’accès de l’URL dans la barre de titre. Nous étendons ces informations pour afficher l’URL complète.
+-   Correctifs parmi les filtres d’URL (URL et domaine d’URL/domaine d’URL et chemin d’accès) : nous avons effectué des mises à jour pour la recherche de messages contenant une URL/cliquez sur verdict. Dans ce cas, nous avons activé la prise en charge des recherches de protocoles agnostiques (ce qui signifie que vous pouvez rechercher directement une URL sans http). Par défaut, la recherche d’URL est mappée sur http, sauf indication explicite. Par exemple :
+
+  a.    Recherchez avec et sans le `http://` préfixe dans les champs de filtre « URL », « domaine d’URL » et « domaine d’URL et chemin d’accès ». Ce comportement est cohérent et doit afficher le même résultat.
+  b.    Recherchez le `https://` préfixe dans « URL ». Lorsqu’il n’est pas présent, le `http://` préfixe est utilisé.
+  c.     `/` au début et à la fin des champs « chemin de l’URL », « domaine de l’URL », « domaine de l’URL et chemin d’accès » est ignoré. `/` à la fin du champ « URL » est ignoré. 
+
+### <a name="phish-confidence-level"></a>Niveau de confiance d’hameçonnage
+
+Le niveau de confiance d’hameçonnage aide à identifier le degré de confiance, avec lequel un courrier électronique a été catégorisé comme hameçonnage. Les deux valeurs possibles sont High et normal. Au cours des étapes initiales, ce filtre n’est disponible que dans la vue de hameçonnage de l’Explorateur de menaces.
+
+![Phish_Confidence_Level](../../media/Phish_Confidence_Level.png)
+
+### <a name="zap-url-signal"></a>Le signal d’URL ZAP 
+
+Généralement utilisé pour les scénarios d’alerte de hameçonnage dans la mesure où un message électronique a été identifié comme hameçonnage et supprimé après la remise. Cette fonction permet de connecter l’alerte avec les résultats correspondants dans l’Explorateur. Il s’agit de l’une des IOCs de l’alerte. 
+
 ## <a name="experience-improvements-to-threat-explorer-and-real-time-detections"></a>Amélioration de l’Explorateur de menaces et des détections de Real-Time
 
 Dans le cadre de l’amélioration du processus de recherche, nous avons mis à disposition quelques mises à jour de l’Explorateur de menaces et des détections de Real-Time. Il s’agit des améliorations apportées à l’expérience, qui ont pour objectif de rendre l’expérience de la chasse plus cohérente. Ces modifications sont décrites ci-dessous :
@@ -59,13 +154,14 @@ Dans le cadre de l’amélioration du processus de recherche, nous avons mis à 
 
 ### <a name="timezone-improvements"></a>Améliorations des fuseaux horaires
 
-Nous affichons le fuseau horaire pour les enregistrements de courrier électronique dans le portail, ainsi que pour les données exportées. Le fuseau horaire est visible sur plusieurs expériences, comme la grille de courrier électronique, la fenêtre de détail des détails, la chronologie par courrier électronique et des E-mails similaires, de sorte que le fuseau horaire du jeu de résultats soit clair pour l’utilisateur.
+Vous verrez le fuseau horaire pour les enregistrements de courrier électronique dans le portail, ainsi que pour les données exportées. Le fuseau horaire est visible sur plusieurs expériences, comme la grille de courrier électronique, la fenêtre de détail des détails, la chronologie par courrier électronique et des E-mails similaires, de sorte que le fuseau horaire du jeu de résultats soit clair pour l’utilisateur.
 
 ![Afficher le fuseau horaire dans l’Explorateur](../../media/TimezoneImprovements.png)
 
 ### <a name="update-in-the-refresh-process"></a>Mise à jour dans le processus d’actualisation
 
 Nous avons entendu des commentaires sur la confusion grâce à l’actualisation automatique (par exemple, en ce qui concerne les dates, dès que vous modifiez la date, la page est actualisée) et l’actualisation manuelle (pour les autres filtres). De même, la suppression des filtres entraîne une actualisation automatique, ce qui entraîne des situations dans lesquelles la modification des différents filtres lors de la modification de la requête peut entraîner des expériences de recherche incohérentes. Pour résoudre ce mouvement, nous passons à un mécanisme de filtrage manuel.
+
 Du point de vue de l’expérience, l’utilisateur peut appliquer et supprimer la plage de filtres différente (à partir du jeu de filtres et de la date), puis appuyer sur le bouton Actualiser pour filtrer les résultats une fois qu’ils ont fini de définir la requête. Le bouton d’actualisation a également été mis à jour pour l’appeler clairement à l’écran. Nous avons également mis à jour les info-bulles et la documentation du produit concernant cette modification.
 
 ![Cliquez sur Actualiser pour filtrer les résultats](../../media/ManualRefresh.png)

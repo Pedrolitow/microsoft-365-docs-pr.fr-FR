@@ -26,12 +26,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Dans cet article, les administrateurs peuvent en savoir plus sur la protection des liens fiables dans Office 365 Advanced Threat Protection (ATP) pour protéger leur organisation contre le hameçonnage et les autres attaques qui utilisent des URL malveillantes.
-ms.openlocfilehash: c933ce48483f0263650d0af2994023dfcb24fadf
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: 7b10a941d63fd654a61c6d6ec78869f4bafb3edd
+ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48414117"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417260"
 ---
 # <a name="safe-links-in-office-365-atp"></a>Liens approuvés dans Office 365 Protection avancée contre les menaces
 
@@ -150,7 +150,7 @@ Pour plus d’informations sur les valeurs recommandées pour les paramètres de
 ## <a name="safe-links-settings-for-microsoft-teams"></a>Paramètres de liens fiables pour Microsoft teams
 
 > [!IMPORTANT]
-> Depuis le 2020 mars, cette fonctionnalité est en aperçu et n’est accessible qu’aux membres du programme Microsoft teams adoption de la technologie (TAP).
+> Depuis le 2020 mars, cette fonctionnalité est en aperçu et n’est accessible qu’aux membres du programme Microsoft teams adoption de la technologie (TAP). Pour plus d’informations sur le calendrier des publications, consultez la feuille de [route Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?rtc=1&filters=&searchterms=Safe%2CLinks%2CProtection%2Cfor%2CMicrosoft%2CTeams).
 
 Vous activez ou désactivez la protection des liens fiables pour Microsoft teams dans stratégies de liens fiables. Plus précisément, vous utilisez le paramètre **Sélectionner l’action pour les URL inconnues ou potentiellement malveillantes dans Microsoft teams** . La valeur recommandée est **activé**.
 
