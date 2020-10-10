@@ -1,5 +1,5 @@
 ---
-title: Liens fiables
+title: Liens sûrs
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -14,6 +14,7 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+- m365-initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
 search.appverid:
@@ -25,14 +26,14 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Dans cet article, les administrateurs peuvent en savoir plus sur la protection des liens fiables dans Office 365 Advanced Threat Protection (ATP) pour protéger leur organisation contre le hameçonnage et les autres attaques qui utilisent des URL malveillantes.
-ms.openlocfilehash: 742ccc82fe5c6fafa4e6c3463cb471b674b77fa9
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: c933ce48483f0263650d0af2994023dfcb24fadf
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48326675"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48414117"
 ---
-# <a name="safe-links-in-office-365-atp"></a>Liens fiables dans Office 365 ATP
+# <a name="safe-links-in-office-365-atp"></a>Liens approuvés dans Office 365 Protection avancée contre les menaces
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -248,7 +249,7 @@ Lorsqu’un utilisateur d’une stratégie de liens approuvés active clique sur
 
 Vous configurez la liste des URL dans les paramètres globaux pour les liens fiables. Pour obtenir des instructions, consultez la rubrique [configurer la liste « bloquer les URL suivantes »](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-security--compliance-center).
 
-**Remarques** :
+**Remarques**:
 
 - Pour obtenir une liste véritablement universelle des URL bloquées partout, voir [gérer les URL dans la liste des clients autorisés/bloqués](tenant-allow-block-list.md).
 
@@ -288,7 +289,7 @@ Chaque stratégie de liens fiables contient une liste **ne pas réécrire les UR
 
 Pour ajouter des entrées à la liste dans des stratégies de liens fiables nouvelles ou existantes, consultez la rubrique [créer](set-up-atp-safe-links-policies.md#use-the-security--compliance-center-to-create-safe-links-policies) des stratégies de liens fiables ou [modifier des stratégies de liens fiables](set-up-atp-safe-links-policies.md#use-the-security--compliance-center-to-modify-safe-links-policies).
 
-**Remarques** :
+**Remarques**:
 
 - Les clients suivants ne reconnaissent pas les listes **ne pas réécrire les URL suivantes dans les** stratégies de liens fiables. Les utilisateurs inclus dans les stratégies ne peuvent pas accéder aux URL en fonction des résultats de l’analyse des liens fiables dans ces clients :
 

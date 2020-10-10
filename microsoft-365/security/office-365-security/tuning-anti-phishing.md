@@ -1,5 +1,5 @@
 ---
-title: Protection anti-hameçonnage
+title: Régler la protection anti-hameçonnage
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -9,17 +9,20 @@ audience: ITPro
 ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
-search.appverid:
+search.appverid: ''
+ms.collection:
+- M365-security-compliance
+- m365-initiative-defender-office365
 - MET150
 description: Les administrateurs peuvent apprendre à identifier les raisons et le mode de réception d’un message de hameçonnage dans Microsoft 365, ainsi que la marche à suivre pour éviter d’autres messages de hameçonnage.
-ms.openlocfilehash: 813a9c263d9cc620606c7a5e272e47bdaf1ff7a7
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: ca1030141dd18797c7672b95ccae60b86fe9b7f2
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48328058"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48414153"
 ---
-# <a name="tune-anti-phishing-protection"></a>Protection anti-hameçonnage
+# <a name="tune-anti-phishing-protection"></a>Régler la protection anti-hameçonnage
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -32,9 +35,9 @@ Si le compte d’un destinataire a été compromis suite à un message de hameç
 
 Si votre abonnement inclut la protection avancée contre les menaces (ATP), vous pouvez utiliser [Office 365 Threat Intelligence](office-365-ti.md) pour identifier les autres utilisateurs qui ont également reçu le message de hameçonnage. Vous disposez d’options supplémentaires pour bloquer les messages de hameçonnage :
 
-- [Liens fiables dans Office 365 ATP](set-up-atp-safe-links-policies.md)
+- [Liens approuvés dans Office 365 Protection avancée contre les menaces](set-up-atp-safe-links-policies.md)
 
-- [Pièces jointes fiables dans Office 365 ATP](set-up-atp-safe-attachments-policies.md)
+- [Pièces jointes fiables dans Office 365 Protection avancée contre les menaces](set-up-atp-safe-attachments-policies.md)
 
 - [Stratégies anti-hameçonnage dans Office 365 ATP](configure-atp-anti-phishing-policies.md). Notez que vous pouvez augmenter temporairement les **seuils de phishing avancés** dans la stratégie, de **standard** à **agressif**, **plus agressif**ou **plus agressif**.
 

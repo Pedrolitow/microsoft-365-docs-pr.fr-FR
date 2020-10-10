@@ -16,14 +16,15 @@ search.appverid:
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
+- m365-initiative-m365-defender
 description: Les administrateurs peuvent en savoir plus sur la protection contre les menaces dans Microsoft 365 et configurer la façon de l’utiliser pour votre organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 624646461efe7131b2479e003b23a9e659e0a779
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: bb28decf459035c238c61b12f65abf45128e527c
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48326554"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48413589"
 ---
 # <a name="protect-against-threats"></a>Protéger contre les menaces
 
@@ -206,7 +207,7 @@ Pour configurer des [liens fiables](atp-safe-links.md), vérifiez et modifiez vo
 
 5. Vérifiez vos paramètres, puis cliquez sur **Terminer**.
 
-Pour plus d’informations, consultez la rubrique [configurer des stratégies de liens fiables](set-up-atp-safe-links-policies.md).
+Pour plus d’informations, reportez-vous à [Configurer les stratégies de liens fiables](set-up-atp-safe-links-policies.md).
 
 ## <a name="part-5---verify-atp-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on"></a>Partie 5-Vérifiez que la protection avancée contre les menaces pour SharePoint, OneDrive et Microsoft teams est activée
 
