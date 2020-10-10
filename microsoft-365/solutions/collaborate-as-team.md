@@ -16,12 +16,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Découvrez les étapes de configuration de Microsoft 365 nécessaires pour configurer une équipe de collaboration avec des invités dans Teams.
-ms.openlocfilehash: e92397c7b8d4a4192fb36a52a76679269be53b3b
-ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
+ms.openlocfilehash: 7a2259358d6976184d393980b2b7c0320c3bb171
+ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "48357793"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48409047"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Collaborer avec des invités au sein d’une équipe
 
@@ -37,7 +37,7 @@ Cette vidéo présente les étapes de configuration décrites dans ce document.<
 
 ## <a name="azure-organizational-relationships-settings"></a>Paramètres Azure de relations organisationnelles
 
-Le partage dans Microsoft 365 est régi par les [paramètres de relations organisationnelles dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations). Si le partage d’invités est désactivé ou restreint dans Azure AD, cela remplace tous les paramètres de partage que vous configurez dans Microsoft 365.
+Le partage dans Microsoft 365 est régi par les [paramètres de relations organisationnelles dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations). Si le partage d’invités est désactivé ou restreint dans Azure AD, ce paramètre remplace tous les paramètres de partage que vous configurez dans Microsoft 365.
 
 Vérifiez les paramètres de relations organisationnelles pour vous assurer que le partage avec des invités n’est pas bloqué.
 
@@ -45,10 +45,10 @@ Vérifiez les paramètres de relations organisationnelles pour vous assurer que 
 
 Pour définir les paramètres de relation organisationnelle
 
-1. Connectez-vous à Microsoft Azure à l’adresse [https://portal.azure.com](https://portal.azure.com) .
+1. Connectez-vous à Azure Active Directory à l’adresse [https://aad.portal.azure.com](https://aad.portal.azure.com) .
 2. Dans le volet de navigation de gauche, cliquez sur **Azure Active Directory**.
-3. Dans le volet **Vue d’ensemble** , cliquez sur **Identités externes**.
-4. Dans le volet **identités organisationnelles** , cliquez sur **paramètres de collaboration externe**.
+3. Cliquez sur **identités externes**.
+4. Sur l’écran de **prise en main** , dans le volet de navigation de gauche, cliquez sur **paramètres de collaboration externe**.
 5. Assurez-vous que les **administrateurs et les utilisateurs du rôle d’invité invité peuvent inviter** et que les **membres peuvent inviter** sont tous deux la valeur **Oui**.
 6. Si vous avez effectué des modifications, cliquez sur **Enregistrer**.
 
@@ -67,14 +67,14 @@ Vérifiez que l’accès invité est activé dans teams et effectuez les ajustem
 Pour déterminer les paramètres d’accès invité Teams, procédez comme suit :
 
 1. Connectez-vous au Centre d’administration Microsoft 365 sur[https://admin.microsoft.com](https://admin.microsoft.com).
-2. Dans la barre de navigation de gauche, cliquez sur **Afficher tout**.
+2. Dans le volet de navigation de gauche, cliquez sur **Afficher tout**.
 3. Sous **Centres d’administration**, cliquez sur **Teams**.
-4. Dans le Centre d’administration Teams, dans le volet de navigation gauche, développez **Paramètres à l’échelle de l’organisation**, puis cliquez sur **Accès invité**.
+4. Dans le centre d’administration Teams, dans le volet de navigation de gauche, développez Paramètres à l’échelle de l' **organisation** , puis cliquez sur **accès invité**.
 5. Assurez-vous que **Autoriser l’accès invité dans Teams** est défini sur **Activé**.
 6. Apportez les modifications souhaitées aux autres paramètres invités, puis cliquez sur **Enregistrer**.
 
 > [!NOTE]
-> La mise en service du paramètre invité Teams peut prendre jusqu'à vingt-quatre heures.
+> La mise à niveau des paramètres invités de teams peut prendre jusqu’à vingt-quatre heures après son activation.
 
 ## <a name="microsoft-365-groups-guest-settings"></a>Paramètres invités des groupes Microsoft 365
 
@@ -87,7 +87,7 @@ Pour définir les paramètres invités des groupes Microsoft 365
 1. Dans le centre d’administration Microsoft 365, dans le volet de navigation de gauche, développez **paramètres**.
 2. Cliquez sur paramètres de l' **organisation**.
 3. Dans la liste, cliquez sur **groupes Microsoft 365**.
-4. Assurez-vous que les **membres de groupe Let en dehors de votre organisation accèdent au contenu de groupe** et que les **propriétaires de groupes ajoutent des personnes en dehors de votre organisation aux** cases à cocher sont activées.
+4. Assurez-vous que les **propriétaires de groupe Let ajoutent des personnes extérieures à votre organisation aux groupes Microsoft 365 en tant qu’invités** et laissez les cases à cocher le **contenu des membres du groupe invité** sont tous deux activés.
 5. Si vous avez apporté des modifications, cliquez sur **enregistrer les modifications**.
 
 
@@ -112,11 +112,11 @@ Pour définir les paramètres de partage au niveau de l’organisation SharePoin
 
 ## <a name="sharepoint-organization-level-default-link-settings"></a>Paramètres de lien par défaut au niveau de l’organisation SharePoint
 
-Les paramètres de lien de fichier et de dossier par défaut déterminent l’option de lien qui est présentée par défaut à l’utilisateur lorsqu’il partage un fichier ou un dossier. Les utilisateurs peuvent remplacer le type de lien par l’une des autres options avant de procéder au partage si vous le souhaitez.
+Les paramètres de lien de fichier et de dossier par défaut déterminent l’option de lien qui apparaîtra par défaut aux utilisateurs lorsqu’ils partageront un fichier ou un dossier. Les utilisateurs peuvent remplacer le type de lien par l’une des autres options avant le partage, si vous le souhaitez.
 
 N’oubliez pas que ce paramètre affecte toutes les équipes et tous les sites SharePoint de votre organisation.
 
-Choisissez le type de lien sélectionné par défaut lorsque les utilisateurs partagent des fichiers et des dossiers :
+Choisissez l’un des types de liaison suivants, qui sera sélectionné par défaut lorsque les utilisateurs partageront des fichiers et des dossiers :
 
 - **Toute personne disposant du lien** : choisissez cette option si vous envisagez d’effectuer beaucoup de partage non authentifié de fichiers et de dossiers. Si vous souhaitez autoriser *tout le monde* à se lier, mais que vous êtes préoccupé par le partage non authentifié accidentel, envisagez l’une des autres options par défaut. Ce type de lien n’est disponible que si vous avez activé le partage d’un **utilisateur** .
 - **Uniquement les personnes de votre organisation** : choisissez cette option si vous pensez que le partage de fichiers et de dossiers doit être associé à des personnes au sein de votre organisation.
@@ -125,7 +125,7 @@ Choisissez le type de lien sélectionné par défaut lorsque les utilisateurs pa
 ![Capture d’écran des paramètres de partage de fichiers et dossiers au niveau de l’organisation dans SharePoint](../media/sharepoint-organization-files-folders-sharing-settings.png)
 
 
-Pour définir les paramètres de liaison par défaut au niveau de l’organisation SharePoint
+Pour définir les paramètres de lien par défaut au niveau de l’organisation SharePoint
 
 1. Accédez à la page de partage dans le centre d’administration SharePoint.
 2. Sous **liens de fichiers et de dossiers**, sélectionnez le lien de partage par défaut à utiliser.
@@ -153,9 +153,9 @@ Vérifiez les paramètres de partage au niveau du site pour vous assurer qu’il
 
 
 Pour définir les paramètres de partage au niveau du site
-1. Dans le centre d’administration SharePoint, dans le volet de navigation de gauche, développez **Sites** et cliquez sur **Sites actifs**.
+1. Dans le centre d’administration SharePoint, dans le volet de navigation de gauche, développez **sites** , puis cliquez sur **sites actifs**.
 2. Sélectionnez le site de l’équipe que vous venez de créer.
-3. Dans le ruban, cliquez sur **Partage**. 
+3. Cliquez sur... et choisissez **partage**.
 4. Assurez-vous que le partage est défini sur **tout le monde** ou sur **des invités nouveaux et existants**.
 5. Si vous avez effectué des modifications, cliquez sur **Enregistrer**.
 

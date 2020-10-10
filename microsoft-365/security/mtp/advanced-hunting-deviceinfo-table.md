@@ -15,14 +15,16 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 94302f1b8a4316dec2abec2fc361d82e734549b4
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 1fa093798b4e7704d5c6c5368dce7cb4081df48b
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197256"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48413233"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 
@@ -48,7 +50,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `OSArchitecture` | string | Architecture du système d’exploitation s’exécutant sur la machine |
 | `OSPlatform` | string | Plateforme du système d’exploitation client s’exécutant sur la machine. Cela indique les systèmes d’exploitation spécifiques, y compris les variantes au sein de la même famille, telles que Windows 10 et Windows 7 |
 | `OSBuild` | string | Version du système d’exploitation en cours d’exécution sur l’ordinateur |
-| `IsAzureADJoined` | booléen | Indicateur booléen indiquant si l’ordinateur est joint à Azure Active Directory |
+| `IsAzureADJoined` | valeur booléenne | Indicateur booléen indiquant si l’ordinateur est joint à Azure Active Directory |
 | `LoggedOnUsers` | string | Liste de tous les utilisateurs qui ont ouvert une session sur l’ordinateur au moment de l’événement au format de tableau JSON |
 | `RegistryDeviceTag` | string | Balise d’ordinateur ajoutée via le registre |
 | `ReportId` | long | Identificateur d’événement basé sur un compteur extensible. Pour identifier les événements uniques, cette colonne doit être utilisée conjointement avec les colonnes DeviceName et timestamp |

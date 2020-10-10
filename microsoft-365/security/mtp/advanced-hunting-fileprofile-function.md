@@ -15,14 +15,16 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 6d627dcf3d6ec8ca1d2aa76eab484361c25b529e
-ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
+ms.openlocfilehash: a89622206917c6b343ce47638c443b789513367b
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338416"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48412177"
 ---
 # <a name="fileprofile"></a>FileProfile()
 
@@ -64,7 +66,7 @@ invoke FileProfile(x,y)
 - **x**— colonne d’ID de fichier à utiliser : `SHA1` , `SHA256` , `InitiatingProcessSHA1` , ou `InitiatingProcessSHA256` ; la fonction est utilisée `SHA1` si elle n’est pas spécifiée
 - **y**: limiter le nombre d’enregistrements à enrichir, 1-1000 ; la fonction utilise 100 si elle n’est pas spécifiée
 
-## <a name="examples"></a>Exemples
+## <a name="examples"></a>範例
 
 ### <a name="project-only-the-sha1-column-and-enrich-it"></a>Projet uniquement la colonne SHA1 et enrichir celle-ci
 

@@ -13,17 +13,19 @@ localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-defender-office365
 description: Découvrez comment intégrer une enquête et une réponse automatisées à une solution de création de rapports personnalisée ou tierce.
 ms.date: 09/29/2020
 ms.custom:
 - air
-ms.openlocfilehash: 08502516ae03dc7c6e7b58aa77939723e7532ef0
-ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
+ms.openlocfilehash: 429ceae87e3beeb9ec0a254b120289be4ab51d16
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48308919"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48411972"
 ---
 # <a name="use-the-management-activity-api-for-custom-or-third-party-reporting-solutions"></a>Utiliser l’API activité de gestion pour les solutions de création de rapports personnalisées ou tierces
 
@@ -36,7 +38,7 @@ Pour ce faire, utilisez les ressources suivantes :
 
 ****
 
-|Resource|Description|
+|Ressource|Description|
 |---|---|
 |[Vue d’ensemble des API de gestion d’Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview)|L’API d’activité de gestion d’Office 365 fournit des informations sur les différentes actions et événements d’utilisateur, d’administrateur, de système et de stratégie à partir des journaux d’activité de Microsoft 365 et Azure Active Directory.|
 |[Prise en main des API de gestion d’Office 365](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis)|L’API de gestion d’Office 365 utilise Azure AD pour fournir des services d’authentification pour votre application afin d’accéder aux données Microsoft 365. Suivez les étapes décrites dans cet article pour le configurer.|

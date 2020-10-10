@@ -15,14 +15,16 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 6922f50906013cfbfa3bd63c69fff3e89ed46cd5
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 94afa9e36ca75491511338297f02e8031333e53f
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196820"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48412741"
 ---
 # <a name="identityinfo"></a>IdentityInfo
 
@@ -56,7 +58,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `SipProxyAddress` | string | Adresse SIP (Session Initiation Protocol) VOIP (Voice over IP) du compte |
 | `City` | string | Ville où se trouve l’utilisateur du compte |
 | `Country` | string | Pays/région où se trouve l’utilisateur du compte |
-| `IsAccountEnabled` | booléen | Indique si le compte est activé ou non. |
+| `IsAccountEnabled` | valeur booléenne | Indique si le compte est activé ou non. |
 
 ## <a name="related-topics"></a>Voir aussi
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)

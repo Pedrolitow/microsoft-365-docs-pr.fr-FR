@@ -1,7 +1,7 @@
 ---
 title: Appareils archivés Microsoft Managed Desktop
 description: Appareils proches de la préversion que vous pouvez toujours inscrire, mais dont la durée de vie de support est raccourcie
-keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: acdca0a70fb28b10f053da8f79b4e37c9c7632f5
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 4bfda869972c5650a99395a5fd16c6ad7ddb4f11
+ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529922"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48409023"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Appareils archivés Microsoft Managed Desktop
 
@@ -42,13 +42,17 @@ Pour être inscrit dans Microsoft Managed Desktop, un appareil doit être l’un
 | Dell Latitude 5490| 256 Go/Intel i5/8 Go de RAM | Appareil infrarouge requis | **9 janvier 2023** |
 | Dell Latitude 7390 7390 2-en-1/7490 | 256 Go/Intel i5/8 Go de RAM   | Appareil infrarouge requis | **9 janvier 2023** |
 |HP EliteBook 830/840/850 G5| 128 Go/Intel i5/8 Go de RAM | SKU avec 5VS01AV, appareil photo infrarouge ou capteur d’empreintes digitales requis  | **15 février 2023** |
+|HP EliteBook 830/840/850 G6| 128 Go/Intel i5/8 Go de RAM | SKU avec 5VS01AV, appareil photo infrarouge ou capteur d’empreintes digitales requis  | **30 novembre 2023** |
 |HP Elite x2 1013 G3| 256 Go/Intel i5/8 Go de RAM | SKU avec 5VS03AV, appareil infrarouge obligatoire |**14 mai 2023** |
-|HP EliteBook x360 1030 G3| 256 Go/Intel i5/8 Go de RAM | SKU avec 5VS01AV, appareil infrarouge obligatoire |**14 mai 2023** |
+|HP EliteBook x360 1030 G5| 256 Go/Intel i5/8 Go de RAM | SKU avec 5VS01AV, appareil infrarouge obligatoire |**14 mai 2023** |
+|HP EliteBook x360 1030 G6| 256 Go/Intel i5/8 Go de RAM | SKU avec 5VS01AV, appareil infrarouge obligatoire |**30 novembre 2023** |
 |HP EliteBook x360 1040 G5| 256 Go/Intel i5/8 Go de RAM | SKU avec 5VS01AV, appareil infrarouge obligatoire | **23 octobre 2023** |
+|HP EliteBook x360 1040 G6| 256 Go/Intel i5/8 Go de RAM | SKU avec 5VS01AV, appareil infrarouge obligatoire | **30 novembre 2023** |
 |HP ProBook x360 440 G1| 128 Go/Intel i3/8 Go de RAM | SKU avec 5VS04AV, appareil photo infrarouge ou lecteur d’empreintes digitales requis | **6 juin 2023** |
 |HP EliteDesk 800 G4 DM | 128 Go/Intel i3/8 Go de RAM | SKU avec 5VS04AV | **18 juillet 2023** |
 |HP EliteDesk 800 G4 SFF | 128 Go/Intel i3/8 Go de RAM | SKU avec 5VS04AV | **18 juillet 2023** |
 |HP EliteOne 800 G4 23.8 dans AIO |128 Go/Intel i3/8 Go de RAM |SKU avec 5VS04AV| **18 juillet 2023** |
+|Station de travail mobile HP ZBook 14U/15U G6 |256 Go/Intel i5/8 Go de RAM |SKU avec 5VS04AV, appareil infrarouge obligatoire| **30 novembre 2023** |
 |Surface Book 2| 256 Go/Intel i5/8 Go de RAM | Aucun | **16 novembre 2022** |
 |Surface Go| 128 Go/Intel 4415Y/8 Go de RAM | Aucun | **2 août 2023** |
 |Ordinateur portable de surface| 256 Go/Intel i5/8 Go de RAM | Aucun | **20 mai 2022** |

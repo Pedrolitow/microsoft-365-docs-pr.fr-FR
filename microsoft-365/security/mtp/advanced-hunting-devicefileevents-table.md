@@ -15,14 +15,16 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: e4534967ca6e9563f802cdf49385b46790d56932
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 2d1b8e871a4139a4e025313fe1bda724e87c9b6d
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198188"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48412213"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 
@@ -80,7 +82,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `AppGuardContainerId` | string | Identificateur du conteneur virtualisé utilisé par application Guard pour isoler l’activité du navigateur |
 | `SensitivityLabel` | string | Étiquette appliquée à un message électronique, à un fichier ou à un autre contenu afin de le classer pour la protection des informations |
 | `SensitivitySubLabel` | string | Sous-étiquette appliquée à un message électronique, à un fichier ou à un autre contenu pour le classer pour la protection des informations ; les sous-étiquettes de sensibilité sont regroupées sous les étiquettes de confidentialité mais traitées indépendamment |
-| `IsAzureInfoProtectionApplied` | booléen | Indique si le fichier est chiffré par Azure information protection |
+| `IsAzureInfoProtectionApplied` | valeur booléenne | Indique si le fichier est chiffré par Azure information protection |
 
 ## <a name="related-topics"></a>Voir aussi
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)

@@ -15,14 +15,16 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 69669366f4f4d79f7c9ec7f28c8ccf1336e96adc
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 3c9ee14fc316f767ad57fe32920dd3034a1cd795
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198222"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48412237"
 ---
 # <a name="devicefilecertificateinfo"></a>DeviceFileCertificateInfo
 
@@ -42,7 +44,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `DeviceId` | string | Identificateur unique de la machine dans le service |
 | `DeviceName` | string | Nom de domaine complet (FQDN) de la machine |
 | `SHA1` | string | SHA-1 du fichier auquel l’action enregistrée a été appliquée |
-| `IsSigned` | booléen | Indique si le fichier est signé |
+| `IsSigned` | valeur booléenne | Indique si le fichier est signé |
 | `SignatureType` | string | Indique si les informations de signature ont été lues dans le fichier ou lues à partir d’un fichier de catalogue externe. |
 | `Signer` | string | Informations sur le signataire du fichier |
 | `SignerHash` | string | Valeur de hachage unique identifiant le signataire |
@@ -53,8 +55,8 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `CertificateCreationTime` | DateHeure | Date et heure de création du certificat |
 | `CertificateExpirationTime` | DateHeure | Date et heure auxquelles le certificat est configuré pour expirer |
 | `CertificateCountersignatureTime` | DateHeure | Date et heure auxquelles le certificat a été contresigné |
-| `IsTrusted` | booléen | Indique si le fichier est approuvé en fonction des résultats de la fonction WinVerifyTrust, qui vérifie les informations de certificat racine inconnues, les signatures non valides, les certificats révoqués et d’autres attributs douteux. |
-| `IsRootSignerMicrosoft` | booléen | Indique si le signataire du certificat racine est Microsoft |
+| `IsTrusted` | valeur booléenne | Indique si le fichier est approuvé en fonction des résultats de la fonction WinVerifyTrust, qui vérifie les informations de certificat racine inconnues, les signatures non valides, les certificats révoqués et d’autres attributs douteux. |
+| `IsRootSignerMicrosoft` | valeur booléenne | Indique si le signataire du certificat racine est Microsoft |
 | `ReportId` | long | Identificateur d’événement basé sur un compteur extensible. Pour identifier les événements uniques, cette colonne doit être utilisée conjointement avec les colonnes DeviceName et timestamp. | 
 
 ## <a name="related-topics"></a>Voir aussi

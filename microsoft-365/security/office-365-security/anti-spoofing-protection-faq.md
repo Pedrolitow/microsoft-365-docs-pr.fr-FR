@@ -1,5 +1,5 @@
 ---
-title: Forum aux questions sur la protection contre l’usurpation d’identité
+title: FAQ sur la protection contre l’usurpation d’identité
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,15 +15,16 @@ search.appverid:
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
+- m365-initiative-defender-office365
 description: Les administrateurs peuvent consulter les questions fréquemment posées et les réponses sur la protection contre l’usurpation d’identité dans Exchange Online Protection (EOP).
-ms.openlocfilehash: 207fa9b12c2b39571c72397abfb6a64fe992b43e
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 57ca258e2990719e50a84a402e0b4ff7db1c229e
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199110"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48411721"
 ---
-# <a name="anti-spoofing-protection-faq"></a>Forum aux questions sur la protection contre l’usurpation d’identité
+# <a name="anti-spoofing-protection-faq"></a>FAQ sur la protection contre l’usurpation d’identité
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 

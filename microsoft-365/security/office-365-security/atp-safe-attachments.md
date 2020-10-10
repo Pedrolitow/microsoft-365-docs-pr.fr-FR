@@ -16,16 +16,17 @@ search.appverid:
 ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 ms.collection:
 - M365-security-compliance
+- m365-initiative-defender-office365
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur la fonctionnalité de pièces jointes fiables dans Office 365 Advanced Threat Protection (ATP).
-ms.openlocfilehash: c3dd64ce6f1d50cf30dfcc33f17021904791912c
-ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
+ms.openlocfilehash: 634302c6e648dbad6e41026e374b382c25f3d34b
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48337204"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48411685"
 ---
-# <a name="safe-attachments-in-office-365-atp"></a>Pièces jointes fiables dans Office 365 ATP
+# <a name="safe-attachments-in-office-365-atp"></a>Pièces jointes fiables dans Office 365 Protection avancée contre les menaces
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -52,7 +53,7 @@ L’analyse des pièces jointes fiables a lieu dans la région où se trouvent v
 >
 > - La protection avancée contre [les menaces pour SharePoint, OneDrive et Microsoft teams](atp-for-spo-odb-and-teams.md).
 >
-> - [Documents approuvés dans Microsoft 365 E5](safe-docs.md)
+> - [Documents sécurisés dans Microsoft 365 E5](safe-docs.md)
 
 ## <a name="safe-attachments-policy-settings"></a>Paramètres de stratégie de pièces jointes fiables
 
