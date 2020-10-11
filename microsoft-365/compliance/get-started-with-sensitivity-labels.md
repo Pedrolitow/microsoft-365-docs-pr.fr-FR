@@ -13,18 +13,18 @@ localization_priority: Priority
 ms.collection:
 - M365-security-compliance
 - SPO_Content
+- m365solution-mip
+- m365initiative-compliance
 search.appverid:
 - MOE150
 - MET150
-- m365solution-mip
-- m365initiative-compliance
 description: Vous êtes prêt à instaurer la mise en place d'étiquettes de confidentialité pour protéger les données de votre organisation, mais vous ne savez pas par où commencer ? Consultez quelques conseils pratiques permettant de vous familiariser lors de votre parcours dans l'univers de l'étiquetage.
-ms.openlocfilehash: 80149170fad47366178e9b899bbd5355c1d9e7db
-ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
+ms.openlocfilehash: 12da7f3dd5e6d0d4650d19a8cd5f6f41b51f2558
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338405"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398841"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Prise en main des étiquettes de confidentialité
 
@@ -96,7 +96,9 @@ Dans tous les scénarios, vous devez [Créer et configurer des étiquettes de co
 
 ## <a name="end-user-documentation-for-sensitivity-labels"></a>Documentation sur les étiquettes de confidentialité pour l’utilisateur final
 
-La documentation la plus efficace pour l’utilisateur final est une aide personnalisée en fonction des instructions que vous fournissez pour les noms d’étiquette et des configurations que vous choisissez. Toutefois, vous pouvez utiliser les ressources suivantes pour afficher des instructions de base :
+La documentation la plus efficace pour l’utilisateur final est une aide personnalisée en fonction des instructions que vous fournissez pour les noms d’étiquette et des configurations que vous choisissez. Consultez le billet de blog suivant pour obtenir un package de téléchargement que vous pouvez utiliser pour former les utilisateurs et développer l’adoption : [Formation de l’utilisateur final pour les étiquettes de sensibilité dans M365, comment accélérer l’adoption](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-sensitivity-labels-in-m365-how-to/ba-p/1750880). 
+
+Vous pouvez également utiliser les ressources suivantes pour afficher des instructions de base :
 
 - [Appliquer des étiquettes de confidentialité à vos fichiers et vos e-mails dans Office](https://support.microsoft.com/fr-FR/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
     - [Problèmes connus liés aux étiquettes de confidentialité dans Office](https://support.microsoft.com/fr-FR/office/known-issues-with-sensitivity-labels-in-office-b169d687-2bbd-4e21-a440-7da1b2743edc)

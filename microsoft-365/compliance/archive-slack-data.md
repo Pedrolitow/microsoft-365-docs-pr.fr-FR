@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données à partir de la découverte 365 électronique Globanet. Ce connecteur de données vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 de sorte que vous puissiez utiliser les fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: 4e0e57ff46656b45aea373a9c0ea6e530310272f
-ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
+ms.openlocfilehash: 93b3a84aea2144f7f3f83470303d0270681d9323
+ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48370390"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48408634"
 ---
 # <a name="set-up-a-connector-to-archive-slack-ediscovery-data"></a>Configurer un connecteur pour archiver les données eDiscovery de la marge
 
@@ -37,7 +37,7 @@ La vue d’ensemble suivante décrit le processus d’utilisation d’un connect
 
 3. Le connecteur eDiscovery de la marge que vous créez dans le centre de conformité 365 de Microsoft, se connecte au site Merge1 Globanet tous les jours et transfère les messages de conversation vers un emplacement de stockage Azure sécurisé dans le Cloud Microsoft.
 
-4. Le connecteur importe les éléments de message de conversation converti dans les boîtes aux lettres d’utilisateurs spécifiques en utilisant la valeur de la propriété *email* et le mappage utilisateur automatique, comme décrit à l’étape 3. Un nouveau sous-dossier dans le dossier boîte de réception appelé **marge eDiscovery** est créé dans les boîtes aux lettres utilisateur, et les éléments de message de conversation seront importés dans ce dossier. Le connecteur effectue cette opération à l’aide de la valeur de la propriété *email* . Chaque message de conversation contient cette propriété, qui est renseignée avec l’adresse de messagerie de chaque participant du message de conversation.
+4. Le connecteur importe les éléments de message de conversation converti dans les boîtes aux lettres d’utilisateurs spécifiques en utilisant la valeur de la propriété *email* et le mappage utilisateur automatique, comme décrit à l’étape 3. Un nouveau sous-dossier dans le dossier boîte de réception appelé **marge eDiscovery** est créé dans les boîtes aux lettres utilisateur, et les éléments de message de conversation sont importés dans ce dossier. Le connecteur effectue cette opération à l’aide de la valeur de la propriété *email* . Chaque message de conversation contient cette propriété, qui est renseignée avec l’adresse de messagerie de chaque participant du message de conversation.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -73,7 +73,7 @@ Une fois que vous avez cliqué sur **enregistrer & terminer**, vous êtes rediri
 
    Marge les éléments eDiscovery incluent une propriété appelée *courrier électronique*, qui contient des adresses de messagerie pour les utilisateurs de votre organisation. Si le connecteur peut associer cette adresse à un utilisateur de Microsoft 365, les éléments sont importés dans la boîte aux lettres de cet utilisateur.
 
-2. Sur la page consentement de l' **administrateur** , cliquez sur le bouton **fournir le consentement** . Vous serez redirigé vers le site Microsoft. Cliquez sur **accepter** pour fournir le consentement.
+2. Sur la page consentement de l' **administrateur** , cliquez sur **fournir le consentement**. Vous serez redirigé vers le site Microsoft. Cliquez sur **accepter** pour fournir le consentement.
 
    Votre organisation doit consentir à autoriser le service d’importation Office 365 à accéder aux données de boîte aux lettres dans votre organisation. Pour fournir le consentement de l’administrateur, vous devez être connecté avec les informations d’identification d’un administrateur général Microsoft 365, puis accepter la demande de consentement. Si vous n’êtes pas connecté en tant qu’administrateur général, vous pouvez accéder à [cette page](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) et vous connecter à l’aide des informations d’identification d’administrateur général pour accepter la demande.
 

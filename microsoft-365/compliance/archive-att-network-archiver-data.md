@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur de télémessage pour importer et archiver des données SMS et MMS à partir du réseau mobile AT&T. Cela vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 de sorte que vous puissiez utiliser les fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: 87974fd18f0e0a7c824e81231418ccf1c838b636
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 253acb23e9ac2cd5d97dfd2aaaedecec3d91a91f
+ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200249"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48408972"
 ---
 # <a name="set-up-a-connector-to-archive-att-smsmms-data"></a>Configurer un connecteur pour l’archivage sur des données&T SMS/MMS
 

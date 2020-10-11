@@ -12,24 +12,24 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données délimitées par du texte à partir de Globanet dans Microsoft 365. Cela vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 de sorte que vous puissiez utiliser les fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: 854e678067a26fd5fa1f89eb4b2f4f0327eac7a0
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 71614949e13e08d522ae8a7feb501dd439594e13
+ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196573"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48408664"
 ---
 # <a name="set-up-a-connector-to-archive-text-delimited-data"></a>Configurer un connecteur pour archiver des données délimitées par du texte
 
-Utilisez un connecteur Globanet dans le centre de conformité Microsoft 365 pour importer et archiver des données délimitées par du texte dans des boîtes aux lettres utilisateur dans votre organisation 365 Microsoft. [Globanet](https://globanet.com/merge1/) fournit un connecteur texte délimité qui est configuré pour capturer des éléments à partir d’une source de données tierce (de manière régulière) et les importer dans Microsoft 365. Le connecteur convertit le contenu de la source de données délimitée par du texte en format de message électronique, puis importe ces éléments dans la boîte aux lettres de l’utilisateur dans Microsoft 365.
+Utilisez un connecteur Globanet dans le centre de conformité Microsoft 365 pour importer et archiver des données délimitées par du texte dans des boîtes aux lettres utilisateur dans votre organisation 365 Microsoft. Globanet fournit un [connecteur texte délimité](https://globanet.com/text-delimited) qui est configuré pour capturer des éléments à partir d’une source de données tierce (de manière régulière) et les importer dans Microsoft 365. Le connecteur convertit le contenu de la source de données délimitée par du texte en format de message électronique, puis importe ces éléments dans la boîte aux lettres de l’utilisateur dans Microsoft 365.
 
-Lorsque les données délimitées au format texte sont stockées dans des boîtes aux lettres utilisateur, vous pouvez appliquer des fonctionnalités de conformité de Microsoft 365 telles que la conservation pour litige, la découverte électronique, les stratégies de rétention et les étiquettes de rétention et la conformité des communications L’utilisation d’un connecteur de réunions zoom pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à respecter les stratégies gouvernementales et réglementaires.
+Lorsque les données de texte délimité sont stockées dans des boîtes aux lettres utilisateur, vous pouvez appliquer des fonctionnalités de conformité de Microsoft 365 telles que la conservation pour litige, la découverte électronique, les stratégies de rétention et les étiquettes de rétention. L’utilisation d’un connecteur de données délimité par du texte pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à respecter les stratégies gouvernementales et réglementaires.
 
 Une fois archivés, les communications source séparées par du texte peuvent être conservées, surveillées pour la conformité et récupérées pour la découverte électronique et la gouvernance des informations interne.
 
-## <a name="overview-of-archiving-the-text-delimited-source"></a>Vue d’ensemble de l’archivage de la source délimitée par du texte
+## <a name="overview-of-archiving-the-text-delimited-data"></a>Vue d’ensemble de l’archivage des données délimitées par le texte
 
-La vue d’ensemble suivante décrit le processus d’utilisation d’un connecteur pour archiver les informations de source délimitées par du texte dans Microsoft 365.
+La vue d’ensemble suivante décrit le processus d’utilisation d’un connecteur pour archiver des informations de source délimitées par du texte dans Microsoft 365.
 
 ![Flux de travail d’archivage pour les données délimitées par du texte](../media/TextDelimitedConnectorWorkflow.png)
 
@@ -39,7 +39,7 @@ La vue d’ensemble suivante décrit le processus d’utilisation d’un connect
 
 3. Le connecteur délimité par du texte que vous créez dans le centre de conformité Microsoft 365, se connecte au site Merge1 Globanet tous les jours et transfère les messages vers un emplacement de stockage Azure sécurisé dans le Cloud Microsoft.
 
-4. Le connecteur importe les éléments de message convertis dans les boîtes aux lettres d’utilisateurs spécifiques à l’aide de la valeur de la propriété *email* du mappage utilisateur automatique, comme décrit à l’étape 3. Un nouveau sous-dossier dans le dossier boîte de réception nommé **texte-délimité** sera créé dans les boîtes aux lettres utilisateur, et les éléments de message seront importés dans ce dossier. Le connecteur effectue cette opération à l’aide de la valeur de la propriété *email* . Chaque message contient cette propriété, qui est renseignée avec l’adresse de messagerie de chaque participant du message.
+4. Le connecteur importe les éléments de message convertis dans les boîtes aux lettres d’utilisateurs spécifiques à l’aide de la valeur de la propriété *email* du mappage utilisateur automatique, comme décrit à l’étape 3. Un nouveau sous-dossier dans le dossier boîte de réception nommé **texte-délimité** est créé dans les boîtes aux lettres utilisateur, et les éléments de message sont importés dans ce dossier. Le connecteur effectue cette opération à l’aide de la valeur de la propriété *email* . Chaque message contient cette propriété, qui est renseignée avec l’adresse de messagerie de chaque participant du message.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -63,7 +63,7 @@ La première étape consiste à accéder à la page **connecteurs de données** 
 
 ## <a name="step-2-configure-the-text-delimited-connector-on-the-globanet-merge1-site"></a>Étape 2 : configurer le connecteur délimité par du texte sur le site Merge1 Globanet
 
-La deuxième étape consiste à configurer le connecteur délimité par du texte dans le site Merge1. Pour plus d’informations sur la configuration du connecteur délimité par des textes sur le site Merge1 Globanet, voir [Merge1 le Guide de l’utilisateur des connecteurs tiers](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Text-Delimited%20User%20Guide%20.pdf).
+La deuxième étape consiste à configurer le connecteur délimité par du texte sur le site Merge1. Pour plus d’informations sur la configuration du connecteur délimité par des textes sur le site Merge1 Globanet, voir [Merge1 le Guide de l’utilisateur des connecteurs tiers](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20text-delimited%20User%20Guide%20.pdf).
 
 Une fois que vous avez cliqué sur **enregistrer & terminer**, vous êtes renvoyé au centre de conformité Microsoft 365 sur la page **mappage des utilisateurs** de l’Assistant connecteur.
 
@@ -73,7 +73,7 @@ Pour mapper les utilisateurs et terminer l’installation du connecteur dans le 
 
 1. Sur la page **connecter des utilisateurs externes à des utilisateurs de Microsoft 365** , activez le mappage utilisateur automatique. Les éléments de source délimités de texte incluent une propriété appelée *courrier électronique*, qui contient des adresses de messagerie pour les utilisateurs de votre organisation. Si le connecteur peut associer cette adresse à un utilisateur de Microsoft 365, les éléments sont importés dans la boîte aux lettres de cet utilisateur.
 
-2. Sur la page consentement de l' **administrateur** , cliquez sur le bouton **fournir le consentement** . Vous serez redirigé vers le site Microsoft. Cliquez sur **accepter** pour fournir le consentement.
+2. Sur la page consentement de l' **administrateur** , cliquez sur **fournir le consentement**. Vous serez redirigé vers le site Microsoft. Cliquez sur **accepter** pour fournir le consentement.
 
    Votre organisation doit consentir à autoriser le service d’importation Office 365 à accéder aux données de boîte aux lettres dans votre organisation. Pour fournir le consentement de l’administrateur, vous devez être connecté avec les informations d’identification d’un administrateur général Microsoft 365, puis accepter la demande de consentement. Si vous n’êtes pas connecté en tant qu’administrateur général, vous pouvez accéder à [cette page](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) et vous connecter à l’aide des informations d’identification d’administrateur général pour accepter la demande.
 

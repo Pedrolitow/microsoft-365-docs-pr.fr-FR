@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données de l’outil de conversation ICE dans Microsoft 365. Cela vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 de sorte que vous puissiez utiliser les fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: 94a2d35b9bb8d3a0edae0eebeae53d7dd7b04af2
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: cd56e98aadc2b7328b733939ecc8951413309ba5
+ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196367"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48408764"
 ---
 # <a name="set-up-a-connector-to-archive-ice-chat-data"></a>Configuration d’un connecteur pour l’archivage des données de conversation ICE
 
@@ -37,7 +37,7 @@ La vue d’ensemble suivante décrit le processus d’utilisation d’un connect
 
 3. Le connecteur de conversation ICE que vous créez dans le centre de conformité Microsoft 365 se connecte au site SFTP chat chaque jour et transfère les messages de conversation des dernières 24 heures vers un emplacement de stockage Azure sécurisé dans le Cloud Microsoft. Le connecteur convertit également le contenu d’un massage de conversation au format d’un message électronique.
 
-4. Le connecteur importe les éléments de message de conversation vers les boîtes aux lettres d’utilisateurs spécifiques. Un nouveau dossier nommé **Ice chat** est créé dans les boîtes aux lettres des utilisateurs et les éléments de message de conversation seront importés dans ce dossier. Le connecteur utilise la valeur des propriétés *SenderEmail* et *RecipientEmail* . Chaque message de conversation contient ces propriétés, qui sont remplies avec l’adresse de messagerie de l’expéditeur et tous les destinataires/participants du message de conversation.
+4. Le connecteur importe les éléments de message de conversation vers les boîtes aux lettres d’utilisateurs spécifiques. Un nouveau dossier nommé **Ice chat** est créé dans les boîtes aux lettres des utilisateurs et les éléments de message de conversation sont importés dans ce dossier. Le connecteur utilise la valeur des propriétés *SenderEmail* et *RecipientEmail* . Chaque message de conversation contient ces propriétés, qui sont remplies avec l’adresse de messagerie de l’expéditeur et tous les destinataires/participants du message de conversation.
 
    Outre le mappage utilisateur automatique qui utilise les valeurs de la propriété *SenderEmail* et *RecipientEmail* (ce qui signifie que le connecteur importe un message de conversation dans la boîte aux lettres de l’expéditeur et les boîtes aux lettres de chaque destinataire), vous pouvez également définir un mappage utilisateur personnalisé en chargeant un fichier de mappage CSV. Ce fichier de mappage contient le *ImId* de conversation Ice et l’adresse de boîte aux lettres Microsoft 365 correspondante pour chaque utilisateur de votre organisation. Si vous activez le mappage utilisateur automatique et fournissez un fichier de mappage personnalisé, pour chaque élément de conversation, le connecteur regarde d’abord le fichier de mappage personnalisé. S’il ne trouve pas de compte d’utilisateur Microsoft 365 valide correspondant au ImId de conversation ICE d’un utilisateur, le connecteur utilise les propriétés *SenderEmail* et *RecipientEmail* de l’élément conversation pour importer l’élément dans les boîtes aux lettres des participants à la conversation. Si le connecteur ne trouve pas d’utilisateur Microsoft 365 valide dans le fichier de mappage personnalisé ou dans les propriétés *SenderEmail* et *RecipientEmail* , l’élément n’est pas importé.
 

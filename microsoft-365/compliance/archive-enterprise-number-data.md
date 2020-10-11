@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données SMS et MMS à partir d’un programme d’archivage des numéros de Télémessage. Cela vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 de sorte que vous puissiez utiliser les fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: 1152c5e1d658e33e3056873d2230f6f94e58adc1
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 7609d61f70a49da4015cfc68b185fb10be0266c8
+ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200161"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48408794"
 ---
 # <a name="set-up-a-connector-to-archive-enterprise-number-data"></a>Configuration d’un connecteur pour l’archivage des données de numéro d’entreprise
 
 Utilisez un connecteur de Télémessage dans le centre de conformité Microsoft 365 pour importer et archiver des messages SMS (Short Messaging Service) et MMS (Multimedia Messaging Service), des messages de conversation, des enregistrements d’appels vocaux et des journaux d’appels vocaux à partir de l’archiveur de numéros d’entreprise. Une fois que vous avez configuré et configuré un connecteur, celui-ci se connecte au compte de messagerie de votre organisation une fois par jour et importe les données de communication mobile des employés à l’aide du programme d’archivage de numéros de téléphone pour les boîtes aux lettres de Microsoft 365.
 
-Une fois que les données du connecteur d’archivage de numéro de Télémessage sont stockées dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer les fonctionnalités de conformité de Microsoft 365 telles que la conservation pour litige, la recherche de contenu, l’archivage inaltérable, l’audit, la conformité de la communication et les stratégies de rétention de Microsoft 365 aux données d’archivage de l’entreprise. Par exemple, vous pouvez effectuer une recherche dans le contenu de la recherche de contenu d’entreprise de télémessages SMS, MMS et appel vocal à l’aide de la recherche de contenu ou associer la boîte aux lettres qui contient les données du connecteur d’archive de numéro d’entreprise à un dépositaire dans un cas avancé de découverte électronique. L’utilisation d’un connecteur d’archiveur de numéro d’entreprise pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à respecter les stratégies gouvernementales et réglementaires.
+Une fois que les données du connecteur du programme d’archivage de numéro de Télémessage sont stockées dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer les fonctionnalités de conformité de Microsoft 365 telles que les stratégies de conservation pour litige, de recherche de contenu In-Place, d’archivage, d’audit, de conformité des communications et de rétention Microsoft 365 aux données de l’archiveur d’entreprise. Par exemple, vous pouvez effectuer une recherche dans le contenu de la recherche de contenu d’entreprise de télémessages SMS, MMS et appel vocal à l’aide de la recherche de contenu ou associer la boîte aux lettres qui contient les données du connecteur d’archive de numéro d’entreprise à un dépositaire dans un cas avancé de découverte électronique. L’utilisation d’un connecteur d’archiveur de numéro d’entreprise pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à respecter les stratégies gouvernementales et réglementaires.
 
 ## <a name="overview-of-archiving-enterprise-number-data"></a>Vue d’ensemble des données de numéro d’entreprise d’archivage
 

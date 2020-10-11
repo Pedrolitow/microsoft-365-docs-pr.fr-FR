@@ -13,18 +13,18 @@ localization_priority: Priority
 ms.collection:
 - M365-security-compliance
 - SPO_Content
+- m365solution-mig
+- m365initiative-compliance
 search.appverid:
 - MOE150
 - MET150
-- m365solution-mig
-- m365initiative-compliance
 description: Vous êtes prêt à mettre en place des stratégies et des étiquettes de rétention pour la gouvernance des données de votre organisation, mais vous ne savez pas par où commencer ? Lisez quelques conseils pratiques pour commencer.
-ms.openlocfilehash: 8ff6b05a675053009c3d42587e296ab240b2740d
-ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
+ms.openlocfilehash: ea5ccdbe0267c2b894e6b69cf8b048925af1b409
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338383"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399509"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>Prise en main des stratégies et des étiquettes de rétention
 
@@ -81,6 +81,6 @@ Si vous utilisez des étiquettes de rétention pour la gestion des enregistremen
 
 Les étiquettes de rétention, contrairement aux stratégies de rétention, sont présentes dans l’interface utilisateur des applications Microsoft 365. Veillez à fournir des instructions pour les utilisateurs finaux et votre support technique avant de déployer les étiquettes de rétention sur votre réseau de production.
 
-La documentation la plus efficace pour l’utilisateur final est une aide personnalisée en fonction des instructions que vous fournissez pour les noms d’étiquette de rétention et des configurations que vous choisissez. Toutefois, vous pouvez utiliser les informations suivantes pour afficher des instructions de base :
+La documentation la plus efficace pour l’utilisateur final est une aide personnalisée en fonction des instructions que vous fournissez pour les noms d’étiquette de rétention et des configurations que vous choisissez. Consultez le billet de blog suivant pour obtenir un package de téléchargement que vous pouvez utiliser pour former les utilisateurs et développer l’adoption : [Formation de l’utilisateur final pour les étiquettes de rétention dans M365, comment accélérer l’adoption](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-retention-labels-in-m365-how-to-accelerate/ba-p/1750861).
 
-- [Appliquer manuellement des étiquettes de rétention](create-apply-retention-labels.md#manually-apply-retention-labels)
+Vous trouverez également des instructions utilisateur de base dans la section suivante : [Appliquer manuellement des étiquettes de rétention](create-apply-retention-labels.md#manually-apply-retention-labels).
