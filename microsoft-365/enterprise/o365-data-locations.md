@@ -16,22 +16,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Déterminer l’emplacement de stockage des données client Microsoft 365 dans le monde
-ms.openlocfilehash: 9f651cf2bf042a59efcfc9b76fd4349c839e7423
-ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
+ms.openlocfilehash: da58b5e322190e61d72dc30ac6e1ea075e8f48b4
+ms.sourcegitcommit: 39af527404cb06e05c5aa4550dbec39aec133016
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "48384771"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "48422628"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
 -->
 
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>Emplacement de stockage des données client de Microsoft 365
-
->[!Note]
->Les mises à jour de cet article sont strictement contrôlées par Microsoft. Les modifications directes ne sont pas publiées. Si vous avez des modifications à suggérer, envoyez-la en tant que commentaire à la fin de l’article.
->
 
 Les tableaux ci-dessous indiquent le lieu de stockage de données client au repos pour les services Microsoft 365 de tous les emplacements cloud généraux de Microsoft. Développez l’emplacement de votre pays d’adresse de facturation pour connaître l’emplacement de stockage des données client de chaque service.
 
@@ -109,10 +105,6 @@ Microsoft ne stocke pas les données clientes Intune au repos en dehors de la zo
   - Version d’évaluation, bêta ou autres services de mise à jour, qui stockent généralement les données client aux États-Unis, mais peuvent les stocker dans le monde entier.
 
 Quoi qu’il en soit, Microsoft ne contrôle pas ou ne limite pas la géolocalisation à partir de laquelle les clients ou les utilisateurs finaux peuvent accéder aux données des clients. 
-
-### <a name="can-i-edit-the-information-in-this-article"></a>Puis-je modifier les informations de cet article ?
-
-Non. Les mises à jour de cet article sont strictement contrôlées par Microsoft. Les modifications directes ne sont pas publiées. Si vous avez des modifications à suggérer, envoyez-la en tant que commentaire à la fin de l’article.
 
 ## <a name="data-center-locations"></a>Emplacements des centres de données
 
@@ -706,7 +698,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="benin"></a>Bénin
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Lieu |
+| Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -928,7 +920,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
-| Microsoft Teams | Zone géographique 1 : EMEA |
+| Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -4192,7 +4184,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
-| Microsoft Teams | Zone géographique 1 : EMEA |
+| Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -5089,7 +5081,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Afrique du Sud |
-| Flux | Zone géographique 1 : EMEA |
+| Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
