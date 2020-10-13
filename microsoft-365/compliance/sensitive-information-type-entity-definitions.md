@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: La protection contre la perte de données (DLP) dans le centre de sécurité &amp; conformité inclut 80 types d’informations sensibles que vous pouvez utiliser dans vos stratégies DLP. Cette rubrique répertorie tous ces types d'informations sensibles et indique ce qu'une stratégie DLP recherche pour chaque type.
-ms.openlocfilehash: 8ee871ccde30d3ab71dbcb2d5183aafdf11482bd
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+ms.openlocfilehash: adc1006628b8b4f13d30f2001fee0871b51b18ca
+ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235570"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48430431"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Définitions d’entités des types d’informations sensibles
 
@@ -39,7 +39,7 @@ Les types d’informations sensibles nécessitent l’un de ces abonnements :
 
 neuf chiffres pouvant être mis en forme ou non mis en forme
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 Avec
 - quatre chiffres commençant par 0, 1, 2, 3, 6, 7 ou 8
@@ -99,7 +99,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 Huit chiffres séparés par des points
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 Huit chiffres :
 - deux chiffres
@@ -146,9 +146,9 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="format"></a>Format
 
-six à TWN chiffres avec ou sans numéro de succursale d’état bancaire
+six à dix chiffres avec ou sans numéro de succursale d’état bancaire
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 Le numéro de compte est compris entre six et dix chiffres.
 
@@ -218,7 +218,7 @@ Ce type d’informations sensibles est disponible uniquement dans les cas suivan
 
 11 chiffres avec des délimiteurs facultatifs
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 11 chiffres avec des délimiteurs facultatifs :
 
@@ -279,7 +279,7 @@ Ce type d’informations sensibles est disponible uniquement dans les cas suivan
 
 neuf chiffres avec des délimiteurs
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 neuf chiffres avec des délimiteurs :
 
@@ -333,7 +333,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 neuf lettres et chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 neuf lettres et chiffres : 
 
@@ -484,7 +484,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 10 à 11 chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 10 à 11 chiffres :
 - le premier chiffre se trouve dans la plage 2-6
@@ -535,7 +535,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 Une lettre suivie de sept chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 Une lettre (ne respectant pas la casse) suivie de sept chiffres
 
@@ -606,7 +606,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 huit à neuf chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 huit à neuf chiffres généralement présentés par des espaces, comme suit :
 - trois chiffres 
@@ -657,7 +657,7 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 huit chiffres sans espaces ni délimiteurs
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 huit chiffres
   
@@ -713,7 +713,7 @@ Ce type d’informations sensibles est disponible uniquement dans les cas suivan
 
 Combinaison de 24 caractères de lettres, de chiffres et de caractères spéciaux
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 24 caractères :
   
@@ -758,7 +758,7 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 Une lettre suivie d’un espace facultatif et de sept chiffres
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 Une combinaison d’une lettre, de sept chiffres et d’un espace :
   
@@ -768,7 +768,7 @@ Une combinaison d’une lettre, de sept chiffres et d’un espace :
     
 ### <a name="checksum"></a>Somme de contrôle
 
-Non applicable
+non applicable
   
 ### <a name="definition"></a>Définition
 
@@ -808,7 +808,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 - reisepassnummer
 - reisepasse
-- Non-Reisepass 
+- No-Reisepass 
 - Nr-Reisepass
 - Reisepass-Nr
 - Passnummer
@@ -821,7 +821,7 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 10 chiffres au format spécifié
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 10 chiffres :
   
@@ -880,7 +880,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 neuf chiffres avec un trait d’union conditionnel et une barre oblique
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 neuf chiffres avec un trait d’Union et une barre oblique facultatifs :
   
@@ -954,7 +954,7 @@ Ce type d’informations sensibles est disponible uniquement dans les cas suivan
 
 modèle alphanumérique de 11 caractères
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 modèle alphanumérique de 11 caractères :
 
@@ -1021,7 +1021,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 La chaîne « DocumentDb » suivie des caractères et des chaînes présentés dans le modèle ci-dessous.
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 - La chaîne « DocumentDb »
 - N’importe quelle combinaison entre 3-200 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
@@ -1073,7 +1073,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 La chaîne « Server », « Server » ou « Data source » suivie des caractères et des chaînes décrits dans le modèle ci-dessous, y compris la chaîne «cloudapp. Azure.<!--no-hyperlink-->com» ou «cloudapp. Azure.<!--no-hyperlink-->NET "ou" Database. Windows.<!--no-hyperlink-->NET ", et la chaîne" password "ou" password "ou" PWD ".
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 - chaîne « serveur », « serveur » ou « source de données »
 - zéro à deux espaces
@@ -1133,7 +1133,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 La chaîne « nomhôte » suivie des caractères et des chaînes décrits dans le modèle ci-dessous, y compris les chaînes «Azure-appareils.<!--no-hyperlink-->NET "et" SharedAccessKey ".
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 - la chaîne « nomhôte »
 - zéro à deux espaces
@@ -1193,7 +1193,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 La chaîne « userpwd = » suivie d’une chaîne alphanumérique.
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 - la chaîne « userpwd = »
 - n’importe quelle combinaison de 60 lettres minuscules ou chiffres
@@ -1244,7 +1244,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 La chaîne «ReDim. cache. Windows.<!--no-hyperlink-->NET "suivi des caractères et des chaînes décrits dans le modèle ci-dessous, y compris la chaîne" password "ou" PWD ".
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 - la chaîne «ReDim. cache. Windows.<!--no-hyperlink-->NET
 - n’importe quelle combinaison entre 1-200 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
@@ -1299,7 +1299,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 La chaîne « SIG » suivie des caractères et des chaînes présentés dans le modèle ci-dessous.
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 - la chaîne « SIG »
 - zéro à deux espaces
@@ -1333,7 +1333,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 La chaîne « point de terminaison » suivie des caractères et des chaînes décrits dans le modèle ci-dessous, y compris les chaînes «ServiceBus. Windows.<!--no-hyperlink-->NET "et" SharedAccesKey ".
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 - chaîne « point de terminaison »
 - zéro à deux espaces
@@ -1393,7 +1393,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 La chaîne « DefaultEndpointsProtocol » suivie des caractères et des chaînes décrits dans le modèle ci-dessous, y compris la chaîne « AccountKey ».
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 - la chaîne « DefaultEndpointsProtocol »
 - zéro à deux espaces
@@ -1459,7 +1459,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 Toute combinaison de 86 lettres majuscules ou minuscules, des chiffres, la barre oblique (/) ou le signe plus (+), précédée ou suivie des caractères décrits dans le modèle ci-dessous.
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 - zéro à l’un des symboles supérieur à (>), apostrophe ('), signe égal (=), guillemet (") ou numérique (#)
 - toute combinaison de 86 caractères majuscules ou minuscules, des chiffres, la barre oblique (/) ou le signe plus (+)
@@ -1489,7 +1489,7 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 dix chiffres sans espaces ni délimiteurs
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 dix chiffres
   
@@ -1543,7 +1543,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 11 chiffres plus des délimiteurs facultatifs
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 11 chiffres plus des délimiteurs :
 - six chiffres et deux points facultatifs au format YY. M. DD pour la date de naissance 
@@ -1621,8 +1621,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - son
 - registrationsnumme
 - registrierung
-- numéro de sécurité sociale
-
+- Numéro de sécurité sociale
 - SSN #
 - SSN
 - steuernummer
@@ -1651,13 +1650,13 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 deux lettres suivies de six chiffres sans espaces ni délimiteurs
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 deux lettres et suivies de six chiffres
   
 ### <a name="checksum"></a>Somme de contrôle
 
-Non applicable
+non applicable
   
 ### <a name="definition"></a>Définition
 
@@ -1702,7 +1701,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - paspoortnummers
 - Carte passeport
 - Livre de passeport
-- Transmission-Nr
+- Pass-Nr
 - Passnummer
 - reisepass kein
 
@@ -1713,7 +1712,7 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 11 chiffres sans espaces ni délimiteurs
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 11 chiffres
   
@@ -1779,7 +1778,7 @@ Ce type d’informations sensibles est disponible uniquement dans les cas suivan
 
 modèle alphanumérique de 12 caractères
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 modèle alphanumérique de 12 caractères :
 
@@ -1841,7 +1840,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 11 chiffres qui incluent un chiffre de contrôle et peuvent ou non être mis en forme 
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 Avec
 - trois chiffres
@@ -1904,7 +1903,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 14 chiffres qui incluent un numéro d’enregistrement, un numéro de succursale et des chiffres de contrôle, avec des délimiteurs en plus
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 14 chiffres plus des délimiteurs :
 
@@ -1979,7 +1978,7 @@ Registro Geral (ancien format) : neuf chiffres
 
 Registro de identidade (RIC) (nouveau format) : 11 chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 Registro Geral (ancien format) :
 - deux chiffres 
@@ -2044,7 +2043,7 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 neuf chiffres sans espaces ni délimiteurs
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 neuf chiffres
   
@@ -2101,7 +2100,7 @@ Ce type d’informations sensibles est disponible uniquement dans les cas suivan
 
 dix chiffres sans espaces ni délimiteurs
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 dix chiffres sans espaces ni délimiteurs
   
@@ -2162,8 +2161,7 @@ id national
 - n ° personnel
 - numéro personnel
 - personalidnumber #
-- numéro de sécurité sociale
-
+- Numéro de sécurité sociale
 - SSN #
 - SSN
 - ID civil uniforme
@@ -2198,7 +2196,7 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 neuf chiffres sans espaces ni délimiteurs
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 neuf chiffres 
   
@@ -2251,7 +2249,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 sept ou douze chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 Un numéro de compte bancaire au Canada est composé de sept ou douze chiffres.
 
@@ -2325,7 +2323,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 Varie selon la province
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 Plusieurs modèles pour les différentes provinces : Alberta, Colombie-Britannique, Manitoba, Nouveau-Brunswick, Terre-Neuve-et-Labrador, Nouvelle-Écosse, Ontario, Île-du-Prince-Édouard, Québec et Saskatchewan
 
@@ -2543,7 +2541,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 dix chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 dix chiffres
 
@@ -2590,7 +2588,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 deux lettres majuscules suivies de six chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 deux lettres majuscules suivies de six chiffres
 
@@ -2658,7 +2656,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 neuf chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 neuf chiffres
 
@@ -2729,7 +2727,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 neuf chiffres avec des traits d’Union ou des espaces facultatifs
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 Avec
 - trois chiffres 
@@ -2813,7 +2811,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 sept à huit chiffres plus des délimiteurs un chiffre ou une lettre
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 sept à huit chiffres plus des délimiteurs :
 - un à deux chiffres 
@@ -2876,7 +2874,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 18 chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 18 chiffres :
 - six chiffres qui sont un code d’adresse 
@@ -2934,7 +2932,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 14 à 16 chiffres qui peuvent être mis en forme ou non (dddddddddddddddd) et qui doivent réussir le test Luhn.
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 Modèle très complexe et puissant qui détecte les cartes de visite de toutes les principales marques du monde, notamment Visa, MasterCard, Discover Card, JCB, American Express, etc.
 
@@ -3305,7 +3303,7 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 huit chiffres sans espaces ni délimiteurs
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 huit chiffres
   
@@ -3356,7 +3354,7 @@ Cette entité de type d’informations sensibles est incluse dans le type d’in
 
 neuf chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 neuf chiffres consécutifs
 
@@ -3422,7 +3420,7 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 neuf chiffres sans espaces ni délimiteurs
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 neuf chiffres 
   
@@ -3475,7 +3473,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 11 chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 11 chiffres :
 - dix chiffres 
@@ -3550,7 +3548,7 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 11 chiffres sans espaces ni délimiteurs
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 11 chiffres :
   
@@ -3612,7 +3610,7 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 12 chiffres sans espaces ni délimiteurs
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 12 chiffres
   
@@ -3666,13 +3664,13 @@ Ce type d’informations sensibles est disponible uniquement dans les cas suivan
 
 dix chiffres sans espaces ni délimiteurs
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 dix chiffres 
   
 ### <a name="checksum"></a>Somme de contrôle
 
-Non applicable
+non applicable
   
 ### <a name="definition"></a>Définition
 
@@ -3709,7 +3707,7 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 une lettre suivie de 6-8 chiffres sans espaces ni délimiteurs
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 une lettre suivie de six à huit chiffres
   
@@ -3777,7 +3775,7 @@ Ce type d’informations sensibles est disponible uniquement dans les cas suivan
 
 huit chiffres et une lettre dans le modèle spécifié
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 huit chiffres et une lettre :
   
@@ -3787,7 +3785,7 @@ huit chiffres et une lettre :
     
 ### <a name="checksum"></a>Somme de contrôle
 
-Non applicable
+non applicable
   
 ### <a name="definition"></a>Définition
 
@@ -3850,7 +3848,7 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 deux lettres suivies de six chiffres
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 huit lettres et chiffres :
   
@@ -3906,7 +3904,7 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 huit chiffres sans espaces ni délimiteurs
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 huit chiffres sans espaces ni délimiteurs
   
@@ -3963,7 +3961,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 neuf chiffres avec une barre oblique inverse facultative (ancien format) dix chiffres avec une barre oblique facultative (nouveau format)
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 neuf chiffres (ancien format) :
 - six chiffres qui représentent la date de naissance
@@ -4037,8 +4035,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - rodné číslo
 - SSN
 - SSN #
-- numéro de sécurité sociale
-
+- Numéro de sécurité sociale
 - id fiscal
 
 - n ° d’identification fiscale
@@ -4067,7 +4064,7 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 10 chiffres et une barre oblique inverse dans le modèle spécifié
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 dix chiffres et une barre oblique inverse :
   
@@ -4128,7 +4125,7 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 huit chiffres sans espaces ni délimiteurs
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 huit chiffres
   
@@ -4179,7 +4176,7 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 neuf chiffres sans espaces ni délimiteurs
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 neuf chiffres 
   
@@ -4234,7 +4231,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 dix chiffres contenant un trait d’Union
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 dix chiffres :
 - six chiffres au format JJMMAA qui correspondent à la date de naissance 
@@ -4305,8 +4302,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - skat kode
 - skat nummer
 - skattenummer
-- numéro de sécurité sociale
-
+- Numéro de sécurité sociale
 - sundhedsforsikringskort
 - sundhedsforsikringsnummer
 - sundhedskort
@@ -4355,7 +4351,7 @@ Cette entité de type d’informations sensibles n’est disponible que pour le 
 
 10 chiffres et un trait d’Union dans le modèle spécifié
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 dix chiffres et un trait d’Union :
   
@@ -4412,7 +4408,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 deux lettres suivies de sept chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 Le modèle doit inclure tous les éléments suivants :
 - une lettre (ne respecte pas la casse) à partir de cet ensemble de lettres possibles : abcdefghjklmnprstux, qui est un code de l’abonné 
@@ -4450,7 +4446,7 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 deux lettres suivies de six chiffres
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 deux lettres et six chiffres :
   
@@ -4508,7 +4504,7 @@ Ce type d’informations sensibles est disponible uniquement dans les cas suivan
 
 11 chiffres sans espaces ni délimiteurs
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 11 chiffres :
   
@@ -4591,7 +4587,7 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 une lettre suivie de sept chiffres sans espaces ni délimiteurs
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 une lettre suivie de sept chiffres
   
@@ -4643,7 +4639,7 @@ Eesti kodaniku numéro de passe Passei passinumbrid document numéro de document
 
 16 chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 Modèle très complexe et puissant
 
@@ -5148,7 +5144,7 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 dix chiffres contenant un trait d’Union
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 dix chiffres contenant un trait d’Union :
   
@@ -5207,7 +5203,7 @@ Ce type d’informations sensibles est disponible uniquement dans les cas suivan
 
 numéro à 20 chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 nombre à 20 chiffres :
 
@@ -5261,7 +5257,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 six chiffres plus un caractère indiquant un siècle plus trois chiffres plus un chiffre de contrôle
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 Le modèle doit inclure tous les éléments suivants :
 - six chiffres au format de format JJMMAA qui correspondent à une date de naissance 
@@ -5321,8 +5317,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - personalidnumber #
 - personbeteckning
 - personnummer
-- numéro de sécurité sociale
-
+- Numéro de sécurité sociale
 - sosiaaliturvatunnus
 - id fiscal
 
@@ -5357,7 +5352,7 @@ Cette entité de type d’informations sensibles est disponible dans le type d�
 ### <a name="format"></a>Format
 combinaison de neuf lettres et chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 combinaison de neuf lettres et chiffres :
 - deux lettres (ne respectant pas la casse) 
 - sept chiffres
@@ -5417,7 +5412,7 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 Combinaison de 11 caractères au format spécifié
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 combinaison de 11 caractères au format spécifié :
   
@@ -5489,7 +5484,7 @@ Cette entité de type d’informations sensibles est disponible dans le type d�
 
 12 chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 12 chiffres avec validation pour écarter les modèles similaires, comme les numéros de téléphone français
 
@@ -5545,7 +5540,7 @@ Ce type d’informations sensibles est disponible uniquement dans les cas suivan
 
 nombre à 21 chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 nombre à 21 chiffres :
 
@@ -5590,7 +5585,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 12 chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 12 chiffres
 
@@ -5639,7 +5634,7 @@ Cette entité de type d’informations sensibles est disponible dans le type d�
 
 neuf chiffres et lettres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 neuf chiffres et lettres :
 - deux chiffres 
@@ -5697,7 +5692,7 @@ Cette entité de type d’informations sensibles est incluse dans le numéro de 
 
 15 chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 Doit correspondre à l’un des deux modèles suivants :
 - 13 chiffres suivis d’un espace suivi de deux chiffres<br/>
@@ -5772,7 +5767,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 13 chiffres
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 13 chiffres
   
@@ -5855,7 +5850,7 @@ Ce type d’informations sensibles est disponible uniquement dans les cas suivan
 
 modèle alphanumérique de 13 caractères
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 modèle alphanumérique de 13 caractères :
 
@@ -5917,7 +5912,7 @@ Cette entité de type d’informations sensibles est incluse dans le type d’in
 
 combinaison de 11 chiffres et lettres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 11 chiffres et lettres (ne respectent pas la casse) :
 - un chiffre ou une lettre 
@@ -6029,18 +6024,18 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Nr-Führerschein 
 - Nr-Fuhrerschein 
 - Nr-Fuehrerschein 
-- Non-Führerschein 
-- Non-Fuhrerschein 
-- Non-Fuehrerschein 
+- No-Führerschein 
+- No-Fuhrerschein 
+- No-Fuehrerschein 
 - N-Führerschein 
 - N-Fuhrerschein 
 - N-Fuehrerschein
 - Nr-Führerschein 
 - Nr-Fuhrerschein 
 - Nr-Fuehrerschein 
-- Non-Führerschein 
-- Non-Fuhrerschein 
-- Non-Fuehrerschein 
+- No-Führerschein 
+- No-Fuhrerschein 
+- No-Fuehrerschein 
 - N-Führerschein 
 - N-Fuhrerschein 
 - N-Fuehrerschein 
@@ -6062,7 +6057,7 @@ depuis le 1er novembre 2010 : neuf lettres et chiffres
 
 du 1er avril 1987 au 31 octobre 2010:10 chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 depuis le 1er novembre 2010 :
 - une lettre (ne respecte pas la casse) 
@@ -6117,7 +6112,7 @@ Cette entité de type d’informations sensibles est incluse dans le type d’in
 
 10 chiffres ou lettres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 Le modèle doit inclure tous les éléments suivants :
 - le premier caractère est un chiffre ou une lettre de cet ensemble (C, F, G, H, J, K) 
@@ -6161,7 +6156,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 - reisepasse
 - reisepassnummer
-- Non-Reisepass 
+- No-Reisepass 
 - Nr-Reisepass
 - Reisepass-Nr
 - Passnummer
@@ -6175,7 +6170,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 11 chiffres sans espaces ni délimiteurs
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 11 chiffres :
   
@@ -6256,7 +6251,7 @@ Ce type d’informations sensibles est disponible uniquement dans les cas suivan
 
 modèle alphanumérique de 11 caractères
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 modèle alphanumérique de 11 caractères :
 
@@ -6314,7 +6309,7 @@ Cette entité de type d’informations sensibles est incluse dans le type d’in
 
 neuf chiffres sans espaces ni délimiteurs
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 neuf chiffres 
   
@@ -6364,7 +6359,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 Combinaison de 7 ou 8 lettres et chiffres, plus un tiret
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 Sept lettres et chiffres (ancien format) :
 - Une lettre (de l’alphabet grec)  
@@ -6424,7 +6419,7 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 Deux lettres suivies de sept chiffres, sans espaces ni délimiteurs
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 Deux lettres suivies de sept chiffres
   
@@ -6485,7 +6480,7 @@ Ce type d’informations sensibles est disponible uniquement dans les cas suivan
 
 Neuf chiffres sans espaces ni délimiteurs
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 Neuf chiffres
   
@@ -6549,7 +6544,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 Combinaison de 8 ou 9 lettres et chiffres plus éventuellement des parenthèses autour du dernier caractère
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 Combinaison de 8 ou 9 lettres :
 - 1 ou 2 lettres (ne respectant pas la casse)  
@@ -6635,7 +6630,7 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 Deux lettres suivies de six chiffres
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 Deux lettres et six chiffres :
   
@@ -6694,7 +6689,7 @@ Ce type d’informations sensibles est disponible uniquement dans les cas suivan
 
 11 chiffres
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 11 chiffres :
   
@@ -6757,7 +6752,7 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 Deux lettres suivies de six ou sept chiffres sans espaces ni délimiteurs
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 Deux lettres suivies de six ou sept chiffres
   
@@ -6813,7 +6808,7 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 Neuf chiffres sans espaces ni délimiteurs
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 Neuf chiffres
   
@@ -6880,7 +6875,7 @@ Ce type d’informations sensibles est disponible uniquement dans les cas suivan
 
 Dix chiffres sans espaces ni délimiteurs
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 Dix chiffres :
   
@@ -6962,7 +6957,7 @@ Ce type d’informations sensibles est disponible uniquement dans les cas suivan
 
 modèle alphanumérique de 10 caractères
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 modèle alphanumérique à 10 caractères :
 
@@ -7021,7 +7016,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 10 lettres ou chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 10 lettres ou chiffres :
 - Cinq lettres (ne respectant pas la casse)  
@@ -7062,7 +7057,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 12 chiffres contenant éventuellement des espaces ou des tirets
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 12 chiffres :
 - Quatre chiffres 
@@ -7113,7 +7108,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 16 chiffres contenant éventuellement des points
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 16 chiffres :
 - Code à deux chiffres désignant la province  
@@ -7159,7 +7154,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 Code pays (à deux lettres) plus chiffres de contrôle (à deux chiffres) plus numéro BBAN (jusqu’à 30 chiffres)
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 Le modèle doit inclure tous les éléments suivants :
 
@@ -7202,7 +7197,7 @@ Aucun
 
 Dictionary
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 Mot clé
 
@@ -7244,7 +7239,7 @@ Tout terme du dictionnaire de mots clés Dictionary_icd_10_codes, qui est basé 
 
 Dictionary
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 Mot clé
 
@@ -7289,7 +7284,7 @@ Modèle complexe qui tient compte des versions mises en forme (points) et non mi
 #### <a name="ipv6"></a>IPv4/IPv6
  Modèle complexe qui tient compte des numéros IPv6 mis en forme (qui incluent les signes deux-points)
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -7351,7 +7346,7 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 Six chiffres suivis de quatre lettres
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 Six chiffres et quatre lettres :
   
@@ -7406,7 +7401,7 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 Deux lettres ou chiffres suivis de sept chiffres sans espaces ni délimiteurs
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 Deux lettres ou chiffres suivis de sept chiffres :
   
@@ -7472,7 +7467,7 @@ Ancien format (jusqu’au 31 décembre 2012) :
 Nouveau format (1er janvier 2013 et après) :
 - sept chiffres suivis de deux lettres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 Ancien format (jusqu’au 31 décembre 2012) :
 - sept chiffres 
@@ -7567,7 +7562,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 13 chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 Avec
 - deux chiffres 
@@ -7616,7 +7611,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 neuf chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 neuf chiffres consécutifs
 
@@ -7657,7 +7652,7 @@ Cette entité de type d’informations sensibles est incluse dans le type d’in
 
 une combinaison de 10 lettres et chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 - une combinaison de 10 lettres et chiffres :
 - une lettre (ne respecte pas la casse) 
@@ -7706,7 +7701,7 @@ Ce type d’informations sensibles est disponible uniquement dans les cas suivan
 
 combinaison de 16 caractères de lettres et de chiffres dans le modèle spécifié.
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 Combinaison de lettres et de chiffres de 16 caractères :
 - trois lettres qui correspondent aux trois premières consonnes du nom de la famille
@@ -7789,7 +7784,7 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 deux lettres ou chiffres suivis de sept chiffres sans espaces ni délimiteurs
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 deux lettres ou chiffres suivis de sept chiffres :
   
@@ -7798,7 +7793,7 @@ deux lettres ou chiffres suivis de sept chiffres :
     
 ### <a name="checksum"></a>Somme de contrôle
 
-Non applicable
+non applicable
   
 ### <a name="definition"></a>Définition
 
@@ -7856,7 +7851,7 @@ Ce type d’informations sensibles est disponible uniquement dans les cas suivan
 
 modèle alphanumérique de 13 caractères avec délimiteurs facultatifs
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 modèle alphanumérique de 13 caractères avec délimiteurs facultatifs :
 
@@ -7908,7 +7903,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 sept ou huit chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 Numéro de compte bancaire :
 - sept ou huit chiffres
@@ -8023,7 +8018,7 @@ Otemachi
 
 12 chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 12 chiffres consécutifs
 
@@ -8090,7 +8085,7 @@ Ce type d’informations sensibles est disponible uniquement dans les cas suivan
 
 numéro à 13 chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 numéro à 13 chiffres :
 
@@ -8151,7 +8146,7 @@ Ce type d’informations sensibles est disponible uniquement dans les cas suivan
 
 numéro à 12 chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 numéro à 12 chiffres :
 
@@ -8209,7 +8204,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 deux lettres suivies de sept chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 deux lettres (ne respectant pas la casse) suivies de sept chiffres
 
@@ -8248,7 +8243,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 12 lettres et chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 12 lettres et chiffres :
 - deux lettres (ne respectant pas la casse)
@@ -8290,7 +8285,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 11 chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 11 chiffres consécutifs
 
@@ -8337,7 +8332,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 7 à 12 chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 7 à 12 chiffres :
 - quatre chiffres 
@@ -8390,7 +8385,7 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 trois lettres suivies de six chiffres
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 trois lettres et six chiffres :
   
@@ -8441,7 +8436,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 11 chiffres et trait d’union conditionnel
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 Ancien format
 
@@ -8550,8 +8545,7 @@ id national
 numéro d’enregistrement
 - Numéro de produit
 - Numéro d’assurance sociale
-- numéro de sécurité sociale
-
+- Numéro de sécurité sociale
 - Code de taxe provinciale
 - Numéro de fichier de taxe
 - id fiscal
@@ -8579,7 +8573,7 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 deux lettres ou chiffres suivis de sept chiffres sans espaces ni délimiteurs
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 deux lettres ou chiffres suivis de sept chiffres :
   
@@ -8640,7 +8634,7 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 huit chiffres sans espaces ni délimiteurs
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 huit chiffres 
   
@@ -8694,7 +8688,7 @@ Ce type d’informations sensibles est disponible uniquement dans les cas suivan
 
 11 chiffres sans espaces ni délimiteurs
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 11 chiffres sans espaces ni délimiteurs :
   
@@ -8778,13 +8772,13 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 huit chiffres ou lettres sans espaces ni délimiteurs
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 huit chiffres ou lettres (ne respectant pas la casse)
   
 ### <a name="checksum"></a>Somme de contrôle
 
-Non applicable
+non applicable
   
 ### <a name="definition"></a>Définition
 
@@ -8833,7 +8827,7 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 six chiffres sans espaces ni délimiteurs
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 six chiffres 
   
@@ -8887,7 +8881,7 @@ Ce type d’informations sensibles est disponible uniquement dans les cas suivan
 
 13 chiffres sans espaces ni délimiteurs
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 13 chiffres :
   
@@ -8957,7 +8951,7 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 huit chiffres ou lettres sans espaces ni délimiteurs
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 huit chiffres ou lettres (ne respectant pas la casse)
   
@@ -8996,7 +8990,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 11 chiffres
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 11 chiffres
   
@@ -9089,7 +9083,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 12 chiffres contenant éventuellement des traits d’union
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 12 chiffres :
 - six chiffres au format AAMMJJ correspondant à la date de naissance 
@@ -9156,7 +9150,7 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 Combinaison de deux caractères et six chiffres dans le modèle spécifié
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 combinaison de deux caractères et six chiffres :
   
@@ -9216,7 +9210,7 @@ Ce type d’informations sensibles est disponible uniquement dans les cas suivan
 
 sept chiffres suivis d’une lettre
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 sept chiffres suivis d’une lettre :
   
@@ -9276,7 +9270,7 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 sept chiffres sans espaces ni délimiteurs
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 sept chiffres 
   
@@ -9334,7 +9328,7 @@ Pour les ressortissants maltais :
 Ressortissants non maltaises et entités maltaises :
 - neuf chiffres
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 Ressortissants maltaises : sept chiffres et une lettre
   
@@ -9420,7 +9414,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 huit à neuf chiffres contenant des espaces facultatifs
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 huit chiffres :
 - trois chiffres 
@@ -9483,7 +9477,7 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 dix chiffres sans espaces ni délimiteurs
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 dix chiffres
   
@@ -9535,13 +9529,13 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 neuf lettres ou chiffres sans espaces ni délimiteurs
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 neuf lettres ou chiffres
   
 ### <a name="checksum"></a>Somme de contrôle
 
-Non applicable
+non applicable
   
 ### <a name="definition"></a>Définition
 
@@ -9583,7 +9577,7 @@ Ce type d’informations sensibles est disponible uniquement dans les cas suivan
 
 neuf chiffres sans espaces ni délimiteurs
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 neuf chiffres 
   
@@ -9667,7 +9661,7 @@ Ce type d’informations sensibles est disponible uniquement dans les cas suivan
 
 modèle alphanumérique de 14 caractères
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 modèle alphanumérique de 14 caractères :
 
@@ -9729,7 +9723,7 @@ Ce type d’informations sensibles est disponible uniquement dans les cas suivan
 
 modèle de 14 à 16 chiffres avec un délimiteur facultatif
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 modèle de 14 à 16 chiffres avec un délimiteur facultatif :
 
@@ -9791,7 +9785,7 @@ Ce type d’informations sensibles est disponible uniquement dans les cas suivan
 
 modèle alphanumérique à huit caractères
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 modèle alphanumérique à huit caractères
 
@@ -9907,7 +9901,7 @@ Ce type d’informations sensibles est disponible uniquement dans les cas suivan
 
 huit ou neuf chiffres avec des délimiteurs facultatifs
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 huit ou neuf chiffres avec des délimiteurs facultatifs
 
@@ -9961,7 +9955,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 trois lettres, un espace (facultatif) et quatre chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 trois lettres (ne respectant pas la casse) un espace (facultatif) quatre chiffres
 
@@ -10010,7 +10004,7 @@ Ce type d’informations sensibles est disponible uniquement dans les cas suivan
 
 neuf chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 neuf chiffres
 
@@ -10064,7 +10058,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 11 chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 11 chiffres :
 - six chiffres au format JJMMAA qui correspondent à la date de naissance 
@@ -10117,7 +10111,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 12 chiffres séparés par des traits d’union
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 12 chiffres :
 - quatre chiffres 
@@ -10162,7 +10156,7 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 14 chiffres contenant 2 barres obliques
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 14 chiffres et 2 barres obliques :
   
@@ -10216,7 +10210,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 trois lettres et six chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 trois lettres (ne respectant pas la casse) suivies de six chiffres
 
@@ -10260,7 +10254,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 11 chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 - 6 chiffres représentant la date de naissance au format AAMMJJ
 - 4 chiffres
@@ -10316,7 +10310,7 @@ Cette entité de type d’informations sensibles est incluse dans le type d’in
 
 deux lettres et sept chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 Deux lettres (ne respectant pas la casse) suivies de sept chiffres
 
@@ -10362,7 +10356,7 @@ Ce type d’informations sensibles est disponible uniquement dans les cas suivan
 
 nombre à neuf chiffres ou à 14 chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 nombre à neuf chiffres ou 14 chiffres :
 
@@ -10428,7 +10422,7 @@ Ce type d’informations sensibles est disponible uniquement dans les cas suivan
 
 11 chiffres sans espaces ni délimiteurs
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 11 chiffres
   
@@ -10493,7 +10487,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 huit chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 huit chiffres
 
@@ -10548,7 +10542,7 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 deux lettres suivies d’un nombre de sept chiffres dans le modèle spécifié
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 deux lettres suivies de sept chiffres avec des caractères spéciaux :
   
@@ -10603,7 +10597,7 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 une lettre suivie de six chiffres sans espaces ni délimiteurs
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 une lettre suivie de six chiffres :
   
@@ -10667,7 +10661,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 neuf chiffres avec des espaces facultatifs
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 - 3 chiffres
 - un espace facultatif
@@ -10737,7 +10731,7 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 un caractère suivi de huit chiffres
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 un caractère suivi de huit chiffres :
   
@@ -10794,7 +10788,7 @@ Ce type d’informations sensibles est disponible uniquement dans les cas suivan
 
 13 chiffres sans espaces ni délimiteurs
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 - 1 chiffre de 1-9
 - 6 chiffres représentant la date de naissance (AAMMJJ)
@@ -10889,7 +10883,7 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 huit ou neuf chiffres sans espaces ni délimiteurs
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 huit ou neuf chiffres
   
@@ -10947,7 +10941,7 @@ Ce type d’informations sensibles est disponible uniquement dans les cas suivan
 
 nombre à dix chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 nombre à dix chiffres :
 
@@ -11009,7 +11003,7 @@ Ce type d’informations sensibles est disponible uniquement dans les cas suivan
 
 numéro à neuf chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 numéro à neuf chiffres :
 
@@ -11063,7 +11057,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 dix chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 dix chiffres consécutifs
 
@@ -11105,7 +11099,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 neuf lettres et chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 - neuf lettres et chiffres :
 - la lettre « F », « G », « S » ou « T » (ne respecte pas la casse) 
@@ -11160,7 +11154,7 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 un caractère suivi de sept chiffres
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 un caractère suivi de sept chiffres
   
@@ -11217,7 +11211,7 @@ Ce type d’informations sensibles est disponible uniquement dans les cas suivan
 
 neuf ou dix chiffres contenant une barre oblique inverse facultative
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 - 6 chiffres représentant la date de naissance
 - barre oblique (/) facultative
@@ -11276,8 +11270,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - rč
 - rodne cislo
 - rodné číslo
-- numéro de sécurité sociale
-
+- Numéro de sécurité sociale
 - SSN #
 - SSN
 - személyi igazolvány szám
@@ -11310,7 +11303,7 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 un chiffre ou une lettre suivi de sept chiffres sans espaces ni délimiteurs
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 un chiffre ou une lettre (ne respectant pas la casse) suivi de sept chiffres
   
@@ -11367,7 +11360,7 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 neuf chiffres sans espaces ni délimiteurs
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 neuf chiffres
   
@@ -11421,7 +11414,7 @@ Ce type d’informations sensibles est disponible uniquement dans les cas suivan
 
 13 chiffres sans espaces ni délimiteurs
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 13 chiffres dans le modèle spécifié :
   
@@ -11495,7 +11488,7 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 deux lettres suivies de sept chiffres, sans espaces ni délimiteurs
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 deux lettres suivies de sept chiffres :
   
@@ -11562,7 +11555,7 @@ Ce type d’informations sensibles est disponible uniquement dans les cas suivan
 
 huit chiffres sans espaces ni délimiteurs
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 - un chiffre de 1-9
 - six chiffres
@@ -11628,7 +11621,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 13 chiffres pouvant contenir des espaces
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 13 chiffres :
 - six chiffres au format AAMMJJ correspondant à la date de naissance 
@@ -11672,7 +11665,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 13 chiffres contenant un trait d’union
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 13 chiffres :
 - six chiffres au format AAMMJJ correspondant à la date de naissance 
@@ -11727,7 +11720,7 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 huit chiffres suivis d’un caractère
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 huit chiffres suivis d’un caractère :
   
@@ -11805,7 +11798,7 @@ Ce type d’informations sensibles est disponible uniquement dans les cas suivan
 
 huit chiffres suivis d’un caractère
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 sept chiffres suivis d’un caractère
   
@@ -11880,7 +11873,7 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 combinaison de huit ou neuf caractères de lettres et de chiffres sans espaces ni délimiteurs
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 combinaison de huit ou neuf caractères de lettres et de chiffres :
   
@@ -11949,7 +11942,7 @@ Cette entité de type d’informations sensibles est incluse dans le type d’in
 
 11 à 12 chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 11-12 chiffres :
 - deux chiffres 
@@ -11993,7 +11986,7 @@ Ce type d’informations sensibles est disponible uniquement dans les cas suivan
 
 sept ou huit chiffres et une ou deux lettres dans le modèle spécifié
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 Personnes physiques espagnoles avec une carte d’identité nationale d’Espagne :
   
@@ -12098,7 +12091,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 La chaîne « User ID », « User ID », « UID » ou « UserId » suivi des caractères et des chaînes décrits dans le modèle ci-dessous.
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 - la chaîne « User ID », « User ID », « UID » ou « UserId »
 - n’importe quelle combinaison entre 1-200 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
@@ -12175,7 +12168,7 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 dix chiffres contenant un trait d’Union
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 dix chiffres contenant un trait d’Union :
   
@@ -12227,7 +12220,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 10 ou 12 chiffres et un délimiteur facultatif
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 10 ou 12 chiffres et un délimiteur facultatif :
 - deux chiffres (facultatif) 
@@ -12293,7 +12286,7 @@ Cette entité de type d’informations sensibles est incluse dans le type d’in
 
 huit chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 huit chiffres consécutifs
 
@@ -12364,7 +12357,7 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 12 chiffres sans espaces ni délimiteurs
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 12 chiffres :
   
@@ -12430,7 +12423,7 @@ Ce type d’informations sensibles est disponible uniquement dans les cas suivan
 
 dix chiffres et un symbole dans le modèle spécifié
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 dix chiffres et un symbole :
   
@@ -12507,7 +12500,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 quatre lettres suivies de 5-31 lettres ou chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 quatre lettres suivies de 5-31 lettres ou chiffres :
 - Code de la Banque à quatre lettres (ne respectant pas la casse) 
@@ -12584,7 +12577,7 @@ Ce type d’informations sensibles est disponible uniquement dans les cas suivan
 
 numéro à 13 chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 numéro à 13 chiffres :
 
@@ -12631,8 +12624,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - pid
 - Numéro d’assurance
 - personalidno #
-- numéro de sécurité sociale
-
+- Numéro de sécurité sociale
 - Numéro d’identification personnel
 - n ° d’identification personnelle
 - insuranceno #
@@ -12654,7 +12646,7 @@ numéro de sécurité sociale
 
 une lettre suivie de neuf chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 une lettre suivie de neuf chiffres :
 - une lettre (en anglais, ne respectant pas la casse) 
@@ -12715,7 +12707,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Numéro de passeport biométrique : neuf chiffres
 - Numéro de passeport non biométrique : neuf chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 Numéro de passeport biométrique :
 - le caractère « 3 » 
 - huit chiffres
@@ -12762,7 +12754,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 10 lettres et chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 10 lettres et chiffres :
 - deux lettres (ne respectant pas la casse) 
@@ -12810,7 +12802,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 13 chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 13 chiffres :
 - le premier chiffre est différent de zéro ou neuf 
@@ -12859,7 +12851,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 11 chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 11 chiffres
 
@@ -12905,7 +12897,7 @@ Cette entité de type d’informations sensibles est incluse dans le type d’in
 
 Combinaison de 18 lettres et chiffres au format spécifié
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 18 lettres et chiffres
 - cinq lettres (ne respectant pas la casse) ou le chiffre « 9 » à la place d’une lettre 
@@ -12961,7 +12953,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 deux lettres suivies de 1-4 chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 deux lettres (ne respectant pas la casse) suivies de numéros 1-4
 
@@ -13003,7 +12995,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 10 à 17 chiffres séparés par des espaces
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 10 à 17 chiffres :
 - trois ou dix chiffres 
@@ -13071,7 +13063,7 @@ Cette entité de type d’informations sensibles est incluse dans le type d’in
 
 sept caractères ou neuf caractères séparés par des espaces ou des tirets
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 deux modèles possibles :
 
@@ -13133,8 +13125,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 - loi sur la protection
 - cotisations
-- numéro de sécurité sociale
-
+- Numéro de sécurité sociale
 - demande d’assurance
 
 - demande de soins médicaux
@@ -13169,7 +13160,7 @@ Ce type d’informations sensibles est disponible uniquement dans les cas suivan
 10 chiffres sans espaces ni délimiteurs
  
   
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 10 chiffres
   
@@ -13222,7 +13213,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 8-17 chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 8 à 17 chiffres consécutifs
 
@@ -13284,7 +13275,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 Dépend de l’État
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 dépend de l’État (par exemple, New York) :
 - neuf chiffres au format DDD DDD DDD correspondront.
@@ -13436,7 +13427,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 neuf chiffres commençant par le « 9 » et contenant un « 7 » ou un « 8 » en tant que quatrième chiffre, éventuellement mis en forme avec des espaces ou des tirets
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 avec
 - le chiffre « 9 » 
@@ -13532,7 +13523,7 @@ neuf chiffres, qui peuvent être mis en forme ou non mis en forme
 > [!NOTE]
 > La mise en forme d’un numéro de sécurité sociale émis avant le milieu de l’année 2011 est fixe et certaines parties du numéro doivent se situer dans certaines plages pour qu’il soit valide (mais il n’y a pas de somme de contrôle).
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 quatre fonctions recherchent numéros dans quatre modèles différents :
 - Func_ssn recherche des numéros de sécurité sociale avec une mise en forme fixe d’avant l’année 2011, mis en forme avec des tirets ou des espaces (ddd-dd-dddd OU ddd dd dddd)
@@ -13610,7 +13601,7 @@ Le Royaume-Uni Numéro de passeport le type d’informations sensibles l’entit
 
 neuf chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 neuf chiffres consécutifs
 
@@ -13668,7 +13659,7 @@ Ce type d’informations sensibles est disponible uniquement dans les cas suivan
 
 neuf chiffres
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 neuf chiffres
 
@@ -13716,7 +13707,7 @@ Ce type d’informations sensibles est disponible uniquement dans les cas suivan
 
 modèle alphanumérique à huit caractères
 
-### <a name="pattern"></a>Motif
+### <a name="pattern"></a>Modèle
 
 modèle alphanumérique à huit caractères :
 - deux lettres ou chiffres
