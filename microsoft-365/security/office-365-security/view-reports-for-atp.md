@@ -16,15 +16,15 @@ search.appverid:
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
-- m365-initiative-defender-office365
+- m365initiative-defender-office365
 description: Recherchez et utilisez des rapports pour Office 365 protection avancée contre les menaces dans le centre de sécurité &amp; conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c1e1df0d4c1da228da1e09a626dd388d8d7cf7aa
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: e2bb4b0248294589b3e6e7a1a095e4f63d47d8e2
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48413447"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446298"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Afficher les rapports pour Office 365 protection avancée contre les menaces
 
@@ -243,7 +243,7 @@ Le rapport **URL protection contre les menaces** comporte deux vues agrégées q
   - **Excel**
   - **OneNote**
   - **Visio**
-  - **Équipes**
+  - **Teams**
   - **Other**
 
   Si vous cliquez sur **filtres**, vous pouvez modifier le rapport avec les filtres suivants :

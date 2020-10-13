@@ -9,16 +9,16 @@ ms.prod: microsoft-365-enterprise
 search.appverid: MET150
 localization_priority: Priority
 description: Configurer la compréhension de contenu dans Projet Cortex
-ms.openlocfilehash: 8217630d66a097fcc714be80bd4d3dcceb623370
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: 410dd9550974ec7b5c1c5b4ae151bc92bf376544
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48413709"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446322"
 ---
 # <a name="set-up-sharepoint-syntex"></a>Configurer SharePoint Online
 
-Les administrateurs peuvent utiliser le Centre d’administration Microsoft 365 pour configurer [Microsoft SharePoint Syntex](document-understanding-overview.md). 
+Les administrateurs peuvent utiliser le Centre d’administration Microsoft 365 pour configurer [Microsoft SharePoint Syntex](index.md). 
 
 Tenez compte des informations suivantes avant de démarrer :
 
@@ -26,8 +26,6 @@ Tenez compte des informations suivantes avant de démarrer :
 - Comment allez-vous nommer votre centre de contenu par défaut ?
 
 Vous pouvez modifier vos paramètres après la configuration initiale dans le Centre d’administration Microsoft 365.
-
-Le contenu de cet article est destiné à la préversion privée du Projet Cortex. [En savoir plus sur le Projet cortex](https://aka.ms/projectcortex).
 
 Avant la configuration, veillez à planifier la meilleure manière d’installer et de configurer la compréhension de contenu dans votre environnement. Par exemple, vous devez prendre en compte les noms suivants :
 

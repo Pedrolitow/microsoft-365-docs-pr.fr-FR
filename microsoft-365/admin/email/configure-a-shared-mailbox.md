@@ -2,9 +2,9 @@
 title: Configurer les paramètres de boîte aux lettres partagée
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
-manager: mnirkhe
+ms.author: sharik
+author: SKjerland
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Une fois que vous avez créé une boîte aux lettres partagée, vous pouvez configurer certains paramètres pour ses utilisateurs, tels que le transfert de courrier électronique et les réponses automatiques. Par la suite, vous pouvez modifier d’autres paramètres, tels que le nom de la boîte aux lettres ou les membres.
-ms.openlocfilehash: 3bde856f4db80192f5ed058a18c7942aa6a724b2
-ms.sourcegitcommit: 9ea67fd2e02af760d4fb62e3d09c93b446173f9d
+ms.openlocfilehash: a007b3ca810bdfc00176e71a737a510230f18113
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44739205"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445674"
 ---
 # <a name="configure-shared-mailbox-settings"></a>Configurer les paramètres de boîte aux lettres partagée
 
@@ -82,7 +82,7 @@ Il n’est pas nécessaire d’attribuer une licence à la boîte aux lettres pa
 
 2. Sélectionnez la boîte aux lettres partagée que vous souhaitez modifier, puis cliquez sur modifier le **transfert du courrier** \> **Edit**.
     
-3. Définissez le bouton bascule **sur activé**, puis entrez une adresse de messagerie à laquelle transférer les messages. Il peut s’agir de n’importe quelle adresse de messagerie valide. Pour transférer vers plusieurs adresses, vous devez [créer un groupe de distribution](https://docs.microsoft.com/office365/admin/setup/create-distribution-lists?view=o365-worldwide) pour les adresses, puis entrer le nom du groupe dans cette zone.
+3. Définissez le bouton bascule **sur activé**, puis entrez une adresse de messagerie à laquelle transférer les messages. Il peut s’agir de n’importe quelle adresse de messagerie valide. Pour transférer vers plusieurs adresses, vous devez [créer un groupe de distribution](https://docs.microsoft.com/office365/admin/setup/create-distribution-lists) pour les adresses, puis entrer le nom du groupe dans cette zone.
     
 4. Sélectionnez **Enregistrer**.
 
@@ -203,7 +203,7 @@ Pour en savoir plus sur la conservation pour litige, consultez [la rubrique Cré
 
 2. Sélectionnez la boîte aux lettres partagée que vous souhaitez modifier, puis sélectionnez **membres** \> **modifier**.
 
-3. Effectuez l’une des opérations suivantes :
+3. Effectuez l'une des opérations suivantes :
    - Pour ajouter des membres, sélectionnez **Ajouter des membres**, recherchez ou sélectionnez un membre à ajouter, puis sélectionnez **Enregistrer**.
    - Pour supprimer des membres, utilisez la zone de recherche pour rechercher le membre si nécessaire, sélectionnez le **X** en regard du nom du membre, puis sélectionnez **Enregistrer**. 
 
@@ -233,7 +233,7 @@ Pour en savoir plus sur la conservation pour litige, consultez [la rubrique Cré
 
 3. Sélectionnez **modifier** en regard de l’autorisation que vous souhaitez modifier pour un membre. 
 
-4. Effectuez l’une des opérations suivantes :
+4. Effectuez l'une des opérations suivantes :
    - Pour accorder cette autorisation à un membre supplémentaire, sélectionnez **Ajouter des autorisations**, Rechercher ou sélectionner un membre à ajouter, puis sélectionnez **Enregistrer**.
    - Pour supprimer l’autorisation d’un membre, utilisez la zone de recherche pour rechercher le membre si nécessaire, sélectionnez le **X** en regard du nom du membre, puis sélectionnez **Enregistrer**. 
 

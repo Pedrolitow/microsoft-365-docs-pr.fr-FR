@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: Questions fréquemment posées sur Microsoft bookings.
-ms.openlocfilehash: ee0de2d1412aa5ec38759a3a2512de05b9e02621
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 40605cfc7e5d30e12cd34a463a76e8d9c324efc7
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47545715"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445450"
 ---
 # <a name="microsoft-bookings-frequently-asked-questions"></a>Questions fréquemment posées sur Microsoft bookings
 
@@ -21,7 +21,7 @@ ms.locfileid: "47545715"
 
 ### <a name="what-is-microsoft-bookings"></a>Qu’est-ce que Microsoft bookings ?
 
-Microsoft bookings est une application Microsoft 365 qui facilite la planification et la gestion des rendez-vous. Bookings incudes calendrier de réservation basé sur le Web et s’intègre à Outlook pour optimiser le calendrier de votre personnel, ce qui permet à vos clients de réserver un temps qui leur convient le mieux. Les messages électroniques de notification automatisés réduisent les absences et les organisations économisent le temps avec une réduction des tâches de planification répétitives. Les réservations vous aident à effectuer des rendez-vous virtuels via Skype ou Microsoft Teams, et vous aident à gérer la planification quotidienne via l’application bookings dans Teams. Avec la possibilité de personnaliser, les réservations sont conçues pour répondre aux besoins de plusieurs parties d’une organisation.
+Microsoft bookings est une application Microsoft 365 qui facilite la planification et la gestion des rendez-vous. Bookings inclut un calendrier de réservation basé sur le Web et s’intègre à Outlook pour optimiser le calendrier de votre personnel, ce qui permet à vos clients de réserver un temps qui leur convient le mieux. Les messages électroniques de notification automatisés réduisent les absences et les organisations économisent le temps avec une réduction des tâches de planification répétitives. Les réservations vous aident à effectuer des rendez-vous virtuels via Skype ou Microsoft Teams, et vous aident à gérer la planification quotidienne via l’application bookings dans Teams. Avec la possibilité de personnaliser, les réservations sont conçues pour répondre aux besoins de plusieurs parties d’une organisation.
 
 ### <a name="how-do-i-use-microsoft-bookings"></a>Comment utiliser Microsoft bookings ?
 
@@ -174,7 +174,7 @@ Un paramètre appelé **délai maximal** détermine le plus à l’avance (mesur
 
 Toutes les heures se situent dans le fuseau horaire de l’entreprise (votre fuseau horaire local) par défaut. Cela signifie que tout paramètre que vous configurez pour un calendrier bookings, tel que les heures de travail, apparaît dans ce fuseau horaire. La page libre-service permet d’afficher toutes les heures de rendez-vous dans le fuseau horaire de l’utilisateur final, qui peut être désactivé si vous le souhaitez.Si l’option **toujours afficher les créneaux horaires dans le fuseau horaire de l’entreprise** reste désactivée sous l’onglet réservations, les personnes visitant cette page verront les créneaux horaires dans leurs fuseaux horaires locaux.
 
-:::image type="content" source="media/bookings-faq-region.png" alt-text="Paramètres de région et de fuseau horaire des réservations":::
+:::image type="content" source="media/bookings-faq-region.png" alt-text="Planification dans les réservations":::
 
 Il n’existe aucune provision pour définir le fuseau horaire du personnel dans bookings. Le fuseau horaire du personnel et, par conséquent, les heures d’ouverture, sera dans le fuseau horaire de l’entreprise.
 
@@ -202,7 +202,7 @@ Oui, nous disposons d’une fonctionnalité de livres de groupes qui permet à p
 
 Oui. Il existe une case à cocher sous l’onglet page de réservation dans l’application Web : **nécessite un compte Microsoft 365 ou Office 365 de la part de mon organisation pour livrer**. L’activation de cette case à cocher restreint l’accès à la page libre-service uniquement à ceux qui se trouvent dans votre client. Le calendrier bookings qui se trouve dans l’application Web pour la création et la gestion est accessible uniquement par les personnes ajoutées en tant que personnel à la page avec des rôles administrateur ou visionneuse.
 
-:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Réservation du contrôle d’accès aux pages dans bookings":::
+:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Planification dans les réservations":::
 
 ### <a name="how-frequently-does-the-home-page-update"></a>Quelle est la fréquence de mise à jour de la page d’accueil ?
 
@@ -214,7 +214,7 @@ La durée de l’enregistrement dans l’application Web bookings déclenchera t
 
 ### <a name="can-bookings-calendars-be-cloned-or-duplicated-and-can-they-be-templatized-for-easy-scaling"></a>Les calendriers de réservation peuvent-ils être clonés ou dupliqués, et peuvent-ils être mis en classe pour une mise à l’échelle facile ?
 
-La possibilité de dupliquer des pages est actuellement disponible via PowerShell. Le processus consisterait à utiliser l’API Graph pour obtenir les détails de la boîte aux lettres, puis utiliser ces informations pour créer une nouvelle boîte aux lettres. La documentation de l’API est [ici](https://docs.microsoft.com/graph/api/resources/booking-api-overview?view=graph-rest-beta).
+Le processus consisterait à utiliser l’API Graph pour obtenir les détails de la boîte aux lettres, puis utiliser ces informations pour créer une nouvelle boîte aux lettres. La documentation de l’API est [ici](https://docs.microsoft.com/graph/api/resources/booking-api-overview?view=graph-rest-beta).
 
 ### <a name="what-reporting-is-available-in-bookings"></a>Quels sont les rapports disponibles dans bookings ?
 
@@ -250,7 +250,7 @@ Chaque calendrier bookings est géré indépendamment. Il n’existe pas d’aff
 
 L’accès à l’application Web bookings implique l’authentification via l’authentification AAD (Azure Active Directory) normale. La page réservation libre-service peut être mise à la disposition de tous les utilisateurs disposant du lien page Web. Toutefois, lorsque le paramètre **exiger un compte Microsoft 365 ou Office 365 du site mon organisation** à livre est sélectionné, l’utilisation de la page est restreinte uniquement dans le client Microsoft 365 (à l’aide de l’authentification AAD).
 
-:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Réservation du contrôle d’accès aux pages dans bookings":::
+:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Planification dans les réservations":::
 
 ### <a name="does-customer-data-leave-the-production-system-for-any-reason"></a>Les données client quittent-elles le système de production pour une raison quelconque ?
 

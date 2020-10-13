@@ -1,5 +1,5 @@
 ---
-title: Office 365 géré 21Vianet
+title: Parité entre Azure information protection pour Office 365 géré par 21Vianet et offres commerciales
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -20,18 +20,18 @@ search.appverid:
 - GEA150
 description: En savoir plus sur Azure information protection pour Office 365 géré par 21Vianet et sur la façon de le configurer pour les clients en Chine.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 1f5d73f5c421a545ea0085f018a2c2a703b0b374
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: ca30811e77f686b92b8cdd13d624182eb0d3039e
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399037"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445578"
 ---
 # <a name="parity-between-azure-information-protection-for-office-365-operated-by-21vianet-and-commercial-offerings"></a>Parité entre Azure information protection pour Office 365 géré par 21Vianet et offres commerciales
 
 Alors que notre objectif est de fournir toutes les fonctionnalités et fonctionnalités commerciales pour les clients en Chine avec notre offre Azure information protection pour Office 365 gérée par 21Vianet, il existe des fonctionnalités manquantes que nous souhaitons mettre en évidence.
 
-Voici les lacunes existant entre les services Azure information protection pour Office 365 géré par 21Vianet et nos offres commerciales à partir du 2019 juillet :
+La liste suivante inclut les lacunes existantes entre Azure information protection pour Office 365 géré par 21Vianet et nos offres commerciales depuis le 1er juillet 2019 :
 
 - La gestion des droits relatifs à l’information (IRM) est prise en charge uniquement pour les applications Microsoft 365 pour entreprise (Build 11731,10000 ou version ultérieure). Office 2010, Office 2013 et les autres versions d’Office 2016 ne sont pas prises en charge.
 

@@ -1,6 +1,6 @@
 ---
 title: Évaluer la Protection Microsoft contre les menaces
-description: Configurez votre laboratoire de test Microsoft Threat Protection ou votre environnement pilote pour tester la solution de protection coordonnée contre les menaces conçue pour protéger les périphériques, l’identité, les données et les applications qui peuvent aider votre organisation
+description: Configurez votre laboratoire d’évaluation de la protection contre les menaces Microsoft ou votre environnement pilote afin de tester la solution de sécurité conçue pour protéger les périphériques, l’identité, les données et les applications de votre organisation.
 keywords: Version d’évaluation de la protection de Microsoft contre les menaces, essayez Microsoft Threat Protection, évaluez Microsoft Threat Protection, l’atelier d’évaluation de Microsoft Threat Protection, Microsoft Threat Protection Pilot, Cyber Security, Advanced persistent, Enterprise Security, appareils, Device, Identity, Users, Data, applications, incidents, analyse automatisée et correction, recherche avancée
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-overview
 - m365solution-evalutatemtp
 ms.topic: conceptual
-ms.openlocfilehash: 489ce48be4d995d7e91e2559311d7e619530ba4c
-ms.sourcegitcommit: a83acd5b9eeefd2e20e5bac916fe29d09fb53de9
+ms.openlocfilehash: d3f63c8ac4ba82a80c365dce564bbd8d3dd4da4b
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48418084"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48447118"
 ---
 # <a name="create-a-microsoft-threat-protection-trial-lab-or-pilot-environment"></a>Créer un laboratoire d’évaluation de la protection contre les menaces Microsoft ou un environnement pilote 
 
@@ -35,9 +35,9 @@ ms.locfileid: "48418084"
 **S’applique à :**
 - Protection Microsoft contre les menaces
 
-L’objectif de la création de ce laboratoire d’évaluation ou de cet environnement pilote est d’illustrer les fonctionnalités complètes, intégrées et intelligentes de Microsoft Threat Protection dans le cadre de la détection, de la prévention, de l’enquête et de la réponse que vous pouvez utiliser dans votre organisation. 
+L’objectif de la création de ce laboratoire d’évaluation ou de cet environnement pilote est d’illustrer les fonctionnalités complètes et intégrées de protection contre les menaces Microsoft. Découvrez comment cette solution de sécurité intelligente détecte, empêche, recherche automatiquement les menaces avancées de votre organisation et y répond. 
 
-Ce guide décrit les étapes à suivre pour commencer votre évaluation de la protection contre les menaces Microsoft en fonction des chemins de déploiement recommandés. L’objectif est de vous aider à configurer les services intégrés de protection contre les menaces Microsoft dans un environnement de laboratoire lors de l’utilisation d’un compte d’évaluation ou dans un environnement pilote en production lors de l’utilisation d’une licence complète. Les résultats qui seront utiles pour la présentation des cas d’utilisation des opérations de sécurité pour les décideurs de la solution de sécurité dans votre organisation. Lorsque vous avez terminé d’exécuter vos simulations d’attaque et que vous êtes satisfait du résultat, vous pouvez le déployer entièrement et l’utiliser dans votre organisation avec l’aide des professionnels techniques de Microsoft ou des experts de votre organisation. 
+Ce guide décrit les étapes à suivre pour commencer votre évaluation de la protection contre les menaces Microsoft en fonction des chemins de déploiement recommandés. L’objectif est de vous aider à configurer la solution de sécurité dans un environnement de laboratoire avec un compte d’évaluation ou dans un environnement pilote en production avec une licence complète. La préparation de votre laboratoire d’évaluation ou de votre environnement pilote peut vous aider à présenter des cas d’utilisation des opérations de sécurité pour les décideurs de votre organisation. Lorsque vous avez terminé d’exécuter vos simulations d’attaque et que vous êtes satisfait du résultat, vous pouvez le déployer et l’utiliser entièrement dans votre organisation à l’aide des professionnels techniques ou des experts de votre organisation. 
 
 Ce guide vous aidera à :
 - Configurer le serveur et les ordinateurs de l’atelier

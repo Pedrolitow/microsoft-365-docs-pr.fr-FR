@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: 'Suivez cette liste de vérification pour supprimer un employé de Microsoft 365 et sécuriser les données. '
-ms.openlocfilehash: 252442c36fd29b816626adb71b3ae38ae66f1f64
-ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
+ms.openlocfilehash: e8f0b61fae3656b7d700857e3cc7167cc121a77f
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324523"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445518"
 ---
 # <a name="remove-or-delete-a-former-employee"></a>Supprimer ou supprimer un ancien employé
 
@@ -127,7 +127,7 @@ Il existe deux façons d'enregistrer le contenu de la boîte aux lettres de l'an
 
 2. Placez une conservation pour litige ou une conservation inaltérable sur la boîte aux lettres avant de supprimer le compte d'utilisateur. La mise en place de cette option est beaucoup plus compliquée que la mise en place de la première option, mais elle peut s'avérer très utile si : votre offre Entreprise inclut les fonctionnalités d'archivage et de conservation légale, la mise en place de la conservation pour litige est envisageable et si vous disposez d'un service informatique compétent au niveau technique.
 
-    Une fois que vous avez converti la boîte aux lettres en boîte aux lettres inactive, les administrateurs, les responsables de la mise en conformité ou les gestionnaires d’enregistrements peuvent utiliser les outils de découverte électronique inaltérable dans Exchange Online pour accéder au contenu et y effectuer des recherches.
+    Une fois que vous avez converti la boîte aux lettres en boîte aux lettres inactive, les administrateurs, les responsables de la mise en conformité ou les gestionnaires des enregistrements peuvent utiliser des outils eDiscovery In-Place dans Exchange Online pour accéder au contenu et le Rechercher.
 
     Les boîtes aux lettres inactives ne peuvent pas recevoir de courriers, et n'apparaissent pas dans le carnet d'adresses partagé de votre organisation ou d'autres listes.
 
@@ -140,7 +140,6 @@ Au cours de cette étape, vous allez affecter l'adresse de courrier de l'ancien 
 - La création d'une boîte aux lettres partagée est la solution la plus économique car aucune licence payante n'est requise **tant que la boîte aux lettres ne dépasse pas les 50 Go**. Au-delà de 50 Go, vous devrez acheter une licence.
 - Si vous convertissez la boîte aux lettres en boîte aux lettres partagée, les anciens courriers seront également disponibles. Ceux-ci peuvent occuper beaucoup d'espace.
 - Si vous transférez le courrier, seuls les  *nouveaux*  messages adressés à l'ancien employé seront envoyés à l'employé actuel.
-- Pour transférer le courrier, le compte de l'ancien employé doit disposer d'une licence.
 
  > [!IMPORTANT]
  > Si vous configurez le transfert de courrier ou une boîte aux lettres partagée, ne supprimez pas le compte de l’ancien employé. Le compte doit être présent pour ancrer le transfert du courrier ou la boîte aux lettres partagée.
@@ -150,7 +149,7 @@ Au cours de cette étape, vous allez affecter l'adresse de courrier de l'ancien 
 1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 2. Sélectionnez le nom de l’employé que vous voulez bloquer, puis sélectionnez l’onglet **courrier** .
 3. Sous **transfert du courrier**, sélectionnez **gérer le transfert du courrier**.
-4. Activez l'option **Transférer tous les messages envoyés à cette boîte aux lettres**. Dans le champ **dresse de transfert**, tapez l'adresse de courrier de l'employé actuel (ou de la boîte aux lettres partagée) qui va recevoir le courrier.
+4. Activez l'option **Transférer tous les messages envoyés à cette boîte aux lettres**. Dans la zone **adresse de transfert** , tapez l’adresse de messagerie de l’employé actuel qui va recevoir le courrier électronique.
 5. Sélectionnez **Enregistrer**.
 6. Souvenez-vous que vous ne devez pas supprimer le compte de l'ancien employé.
 
