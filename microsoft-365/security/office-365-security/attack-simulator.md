@@ -15,16 +15,16 @@ search.appverid:
 ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
-- m365-initiative-m365-defender
+- m365initiative-m365-defender
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à utiliser un simulateur d’attaque pour exécuter des attaques de hameçonnage et de mot de passe simulées dans les organisations plan 2 de Microsoft 365 E5 ou ATP.
-ms.openlocfilehash: 76ba6fb68bbf8dd22f96d2be56136e74b0057619
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: 2c837df1abc344186168c88ce0db94dd9d1d2b4a
+ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48414009"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48430786"
 ---
 # <a name="attack-simulator-in-atp"></a>Simulateur d’attaques dans ATP
 

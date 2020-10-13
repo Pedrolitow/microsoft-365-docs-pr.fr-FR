@@ -9,14 +9,14 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 371656168f32db86ff32f187736d59dbd5dbe749
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: d457c4b96e47485eee041b72a1cf24e96a13bf18
+ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529694"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48430186"
 ---
-# <a name="install-intune-company-portal-on-on-devices"></a>Installer l’application Portail d’entreprise Intune sur les appareils
+# <a name="install-intune-company-portal-on-devices"></a>Installer le portail d’entreprise Intune sur les appareils
 
 Microsoft Managed Desktop exige que les administrateurs informatiques installent le portail d’entreprise Intune pour leurs utilisateurs avec des appareils de bureau gérés Microsoft. Voici quelques avantages pour votre organisation :
 - Les utilisateurs disposent d’un emplacement unique pour parcourir et installer les applications disponibles. 

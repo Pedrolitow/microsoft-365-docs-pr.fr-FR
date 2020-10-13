@@ -8,12 +8,12 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 99bda752edf46c5e446e393b5f185b3f18eff974
-ms.sourcegitcommit: 7e8151ff74cb1cfc0dd59fadcac423c338415d77
+ms.openlocfilehash: 37a43717ebb003c10a65e14da46012dab164916d
+ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "48390150"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48429382"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Appareils de bureau gérés Microsoft 
 
@@ -37,20 +37,16 @@ Les liens vers les appareils sont fournis à des fins de référence uniquement.
 
 | Modèle    | Spécifications minimales  | Autres conditions requises    | Date d’archivage   | Date de déclassement   |
 |----------|----------------|---------------------------|----------------|--------------------|
-| [Dell Precision 3530](https://www.dell.com/en-us/work/shop/cty/pdp/spd/precision-15-3530-laptop?cid=265720&st=dell%2Bprecision%2B3530&VEN1=ihEzXzFB,73667408703289,901q5c14135,c,,%7BProductid%7D&VEN2=be,dell%2Bprecision%2B3530&lid=42076560130&dgc=st&dgseg=so&acd=12309152537461020&VEN3=112504543746142297) | 256 Go/Intel i5/8 Go de RAM | Appareil infrarouge requis | 22 mai 2020  | 22 mai 2023 |
-| [Dell Latitude 5300](https://www.dell.com/en-us/work/shop/laptops/13-5300/spd/latitude-13-5300-laptop) | 256 Go/Intel i5/8 Go de RAM | Appareil infrarouge requis | 1er juin 2021  | 1er juin 2024  |
-| **\*[Dell Latitude 5300 2-en-1](https://www.dell.com/en-us/work/shop/laptops/13-5300-2-in-1/spd/latitude-13-5300-2-in-1-laptop)** | 256 Go/Intel i5/8 Go de RAM | Appareil infrarouge requis | 1er mai 2021  | 1er mai 2024  |
-| [Dell Latitude 5400](https://www.dell.com/en-us/work/shop/laptops/14-5400/spd/latitude-14-5400-laptop) | 256 Go/Intel i5/8 Go de RAM | Appareil infrarouge requis | 1er juin 2021  | 1er juin 2024  |
-| [Dell Latitude 5500](https://www.dell.com/en-us/work/shop/laptops/15-5500/spd/latitude-15-5500-laptop) | 256 Go/Intel i5/8 Go de RAM | Appareil infrarouge requis | 1er juin 2021  | 1er juin 2024  |
-| [Dell Latitude 7200 2-en-1](https://www.dell.com/en-us/work/shop/laptops/12-7200-2-in-1/spd/latitude-12-7200-2-in-1-laptop) | 256 Go/Intel i5/8 Go de RAM | Appareil infrarouge requis | 1er mai 2021  | 1er mai 2024  |
-| **\*[Dell Latitude 7210 2-en-1](https://www.dell.com/en-us/work/shop/laptops/new-12-7210/spd/latitude-12-7210-2-in-1-laptop)** | 256 Go/Intel i5/8 Go de RAM | Appareil infrarouge requis | 19 mai 2022  | 19 mai 2025  |
-| [Dell Latitude 7300](https://www.dell.com/en-us/work/shop/laptops/13-7300/spd/latitude-13-7300-laptop) | 256 Go/Intel i5/8 Go de RAM | Appareil infrarouge requis | 1er mai 2021  | 1er mai 2024  |
-| [Dell Latitude 7400](https://www.dell.com/en-us/work/shop/laptops/new-14/spd/latitude-14-7400-laptop) | 256 Go/Intel i5/8 Go de RAM | Appareil infrarouge requis | 1er mai 2021  | 1er mai 2024  |
-| [Dell Latitude 7400 2-en-1](https://www.dell.com/en-us/work/shop/laptops/14-2-in-1/spd/latitude-14-7400-2-in-1-laptop) | 256 Go/Intel i5/8 Go de RAM | Appareil infrarouge requis | 1er mai 2021  | 1er mai 2024  |
-| **\*[Dell Latitude 7410](https://www.dell.com/en-us/work/shop/laptops/new-14-7410/spd/latitude-14-7410-2-in-1-laptop)** | 256 Go/Intel i5/8 Go de RAM | Appareil infrarouge requis | 19 mai 2022  | 19 mai 2025  |
-| **\*[Dell Latitude 7410 2-en-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-7410-business-laptop-or-2-in-1/spd/latitude-14-7410-2-in-1-laptop)** | 256 Go/Intel i5/8 Go de RAM | Appareil infrarouge requis | 19 mai 2022 | 19 mai 2025
-| **\*[Dell Latitude 9410 2-en-1](https://www.dell.com/en-us/work/shop/laptops/new-14-9410-2-in-1/spd/latitude-14-9410-2-in-1-laptop)** | 256 Go/Intel i5/8 Go de RAM | Appareil infrarouge requis | 19 mai 2022  | 19 mai 2025  |
-| [Dell OptiPlex 3070](https://www.dell.com/en-us/work/shop/desktops-n-workstations/3070/spd/optiplex-3070-desktop) | 128 Go/Intel i3/8 Go de RAM | Aucun | 1er mai 2022  | 1er mai 2025  |
+| **\*[Dell Precision 5310 2-en-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-5310-2-in-1-business-laptop/spd/latitude-13-5310-2-in-1-laptop)** | 256 Go/Intel i5/8 Go de RAM | Appareil infrarouge requis | 28 avril 2022  | 28 avril 2025 |
+| **\*[Dell Latitude 5410](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/new-latitude-5410-business-laptop/spd/latitude-14-5410-laptop)** | 256 Go/Intel i5/8 Go de RAM | Appareil infrarouge requis | 28 avril 2022 | 28 avril 2025  |
+| **\*[Dell Latitude 5510](https://www.dell.com/en-us/work/shop/laptops/15-5510/spd/latitude-15-5510-laptop)** | 256 Go/Intel i5/8 Go de RAM | Appareil infrarouge requis | 28 avril 2022 | 28 avril 2025 |
+| **\*[Dell Latitude 7310/7310 2-in-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/latitude-7310-business-laptop-or-2-in-1/spd/latitude-13-7310-2-in-1-laptop)** | 256 Go/Intel i5/8 Go de RAM | Appareil infrarouge requis | 4 mai 2022  | 4 mai 2025  |
+| [Dell Latitude 7410/7410 2-in-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-7410-business-laptop-or-2-in-1/spd/latitude-14-7410-2-in-1-laptop) | 256 Go/Intel i5/8 Go de RAM | Appareil infrarouge requis | 19 mai 2022  | 19 mai 2025  |
+| [Dell Latitude 9410 2-en-1](https://www.dell.com/en-us/work/shop/laptops/new-14-9410-2-in-1/spd/latitude-14-9410-2-in-1-laptop) | 256 Go/Intel i5/8 Go de RAM | Appareil infrarouge requis | 5 mai 2022  | 5 mai 2025  |
+| **\*[Dell Latitude 9510](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-9510-laptop-or-2-in-1/spd/latitude-15-9510-2-in-1-laptop)** | 256 Go/Intel i5/8 Go de RAM | Appareil infrarouge requis | 5 mai 2022  | 5 mai 2025  |
+| **\*[Dell OptiPlex 3080](https://www.dell.com/en-us/work/shop/desktops-all-in-one-pcs/optiplex-3080-tower-and-small-form-factor/spd/optiplex-3080-desktop)** | 128 Go/Intel i3/8 Go de RAM | Aucun | 27 mai 2022  | 27 mai 2025  |
+| **\*[Dell OptiPlex 7480](https://www.dell.com/en-us/work/shop/desktops-all-in-one-pcs/optiplex-7480-all-in-one-desktop/spd/optiplex-7480-aio)** | 128 Go/Intel i3/8 Go de RAM | Aucun | 15 mai 2022  | 15 mai 2025  |
+| **\*[Station de travail Dell 5550](https://www.dell.com/en-us/work/shop/laptops/new-15-5550-workstation/spd/precision-15-5550-laptop)** | 256 Go/Intel i5/8 Go de RAM | Aucun | 27 mai 2022  | 27 mai 2025  |
 
 ### <a name="hp"></a>HP
 
@@ -79,7 +75,7 @@ Les liens vers les appareils sont fournis à des fins de référence uniquement.
 
 En outre, l’appareil doit également répondre aux critères suivants :     
 
-- Disposer d’une image approuvée par le bureau géré Microsoft. Lorsque vous commandez des appareils, vérifiez que vous spécifiez qu’ils sont utilisés avec Microsoft Managed Desktop.
+- Si une référence spécifique est indiquée dans la configuration requise pour l’appareil, vérifiez que vous l’utilisez lorsque vous commandez. Cela permet de s’assurer que les appareils sont conformes à la configuration logicielle requise pour le bureau géré Microsoft. 
 - N’ont pas terminé l’expérience de première exécution de Windows.
 - Être inscrit auprès du bureau géré Microsoft à l’aide de la fonctionnalité [d’inscription](https://aka.ms/mmddrhelp) de l’appareil.
 
