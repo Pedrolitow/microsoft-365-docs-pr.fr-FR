@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Sécurité dans Office 365, des plans EOP à ATP 1 et 2, des configurations de sécurité standard ou rigoureuses, et bien plus encore. Comprendre ce dont vous disposez et comment sécuriser vos propriétés.
-ms.openlocfilehash: 94fce99d029d21524bc60af4622fda7ee38980e7
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 256a24a7816a40e1bd60c687a875f84e605f5208
+ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430691"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48456470"
 ---
 # <a name="office-365-security-overview"></a>Vue d’ensemble de la sécurité d’Office 365
 
@@ -88,7 +88,7 @@ Les avantages de l’ajout de plans ATP à la gestion des menaces EOP pures peuv
 |---------|---------|---------|
 | Les technologies sont les suivantes :<ul><li>courrier indésirable</li><li>jouer</li><li>programmes malveillants</li><li>courrier en nombre</li><li>aide à l’usurpation d’identité</li><li>détection de l’emprunt d’identité</li><li>Mise en quarantaine de l’administrateur</li><li>Soumissions d’administrateurs et d’utilisateurs de faux positifs et faux négatifs</li><li>Autoriser/bloquer pour les URL et les fichiers</li><li>Rapports</li></u1>|<li>Recherche de journal d’audit</li><li>Suivi des messages</li>|<li>Purge automatique avec zéro heure (ZAP)</li><li>Perfectionnement et test des listes verte et rouge</li>|
 
-Si vous souhaitez aller plus loin dans EOP, **[accédez à cet article](https://review.docs.microsoft.com/microsoft-365/security/office-365-security/exchange-online-protection-overview?view=o365-21vianet&branch=tp_EOPOverview)**.
+Si vous souhaitez aller plus loin dans EOP, **[accédez à cet article](https://docs.microsoft.com/microsoft-365/security/office-365-security/exchange-online-protection-overview?view=o365-worldwide#:~:text=Exchange%20Online%20Protection%20%28EOP%29%20is%20the%20cloud-based%20filtering,is%20also%20available%20in%20the%20following%20on-premises%20scenarios%3A)**.
 
 Étant donné que ces produits sont cumulatifs, si vous évaluez la protection avancée contre les menaces et décidez de s’y abonner, vous ajouterez ces capacités.
 

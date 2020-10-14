@@ -23,18 +23,18 @@ f1.keywords:
 - NOCSH
 description: Commencez la planification de la mise à niveau à partir des serveurs et des applications clientes Office 2010, car la prise en charge se termine bientôt et les accords de support personnalisés ne sont pas disponibles.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7d45075431e23bf3aae0b6052b1db708e704134f
-ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
+ms.openlocfilehash: 879aae71f703d8a26b3d6e640eff6d30a81febac
+ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "48384847"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48456350"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Ressources facilitant la mise à jour de vos clients et serveurs Office 2010
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-La fin du support est prise en charge par les **Office 2010 et Exchange 2010 le 13 octobre 2020**.
+Office 2010 et Exchange 2010 ont atteint leur fin d’assistance le **13 octobre 2020**.
 
 La prise en charge de SharePoint 2010 et de Project Server 2010 se termine le **avril 13, 2021**.
 

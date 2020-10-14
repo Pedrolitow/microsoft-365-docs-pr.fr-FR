@@ -13,14 +13,14 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-- M365initiative-CoreDeploy
+- m365initiative-coredeploy
 description: Vue d’ensemble de la connectivité réseau dans le centre d’administration Microsoft 365 (version d’évaluation)
-ms.openlocfilehash: d3ca55a4d8357d10b79bd8e87ddc3350efa2845e
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: fcc70f7c76b92ecf113158cdac8eecdfb9852351
+ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48326876"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48456422"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Connectivité réseau dans le centre d’administration Microsoft 365 (version d’évaluation)
 
@@ -53,13 +53,13 @@ Le service d’emplacement Windows doit être accepté sur les ordinateurs. Vous
 
 Vous n’avez pas besoin d’ajouter des emplacements dans le centre d’administration avec cette méthode, car ils sont automatiquement identifiés à la résolution de la ville. Vous ne pouvez pas afficher plusieurs emplacements de bureau dans une ville à l’aide des services d’emplacement Windows. Les informations d’emplacement sont également arrondies à la 300 les mètres les plus proches par 300 mètres avant d’être téléchargés afin de ne pas pouvoir accéder à des informations d’emplacement plus précises.
 
-Les machines doivent disposer de la mise en réseau Wi-Fi plutôt que d’un câble Ethernet. Les machines disposant d’un câble Ethernet ne disposent pas d’informations d’emplacement précises.
+Les machines doivent disposer d' Wi-Fi réseau plutôt que d’un câble Ethernet. Les machines disposant d’un câble Ethernet ne disposent pas d’informations d’emplacement précises.
 
 Les exemples de mesures et les emplacements de bureau doivent commencer à apparaître 24 heures après que ces conditions préalables ont été satisfaites.
 
 ### <a name="2-add-locations-and-provide-lan-subnet-information"></a>2. ajouter des emplacements et fournir des informations de sous-réseau LAN
 
-Pour cette option, ni les services de localisation Windows ni le Wi-Fi ne sont requis. Vous avez besoin de OneDrive pour Windows version **20,161** ou supérieure installé sur chaque ordinateur à l’emplacement.
+Pour cette option, ni les services de localisation Windows ni les Wi-Fi ne sont requis. Vous avez besoin de OneDrive pour Windows version **20,161** ou supérieure installé sur chaque ordinateur à l’emplacement.
 
 Vous devez également ajouter des emplacements dans la page connectivité réseau du centre d’administration ou pour les importer à partir d’un fichier CSV. Les emplacements ajoutés doivent inclure les informations de sous-réseau de votre réseau local Office.
 
@@ -169,7 +169,7 @@ Dans le fichier CSV, un emplacement de ville découvert apparaît dans la colonn
 
    ![Message d’importation CSV prêt](../media/m365-mac-perf/m365-mac-perf-import-ready.png)
 
-## <a name="faq"></a>Forum Aux Questions
+## <a name="faq"></a>FAQ
 
 ### <a name="what-is-a-microsoft-365-service-front-door"></a>Qu’est-ce qu’une porte d’accès avant du service Microsoft 365 ?
 

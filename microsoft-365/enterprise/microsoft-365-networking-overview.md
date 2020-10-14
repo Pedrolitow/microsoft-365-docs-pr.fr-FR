@@ -13,16 +13,16 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-- M365initiative-CoreDeploy
+- m365initiative-coredeploy
 f1.keywords:
 - NOCSH
 description: Explique pourquoi l’optimisation du réseau est importante pour les services SaaS, l’objectif de la mise en réseau Microsoft 365 et la façon dont SaaS requiert une mise en réseau différente des autres charges de travail.
-ms.openlocfilehash: acc55868e47ea89cd2357487838a88032dc8538d
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 50137e507021a6b6d26468a8a299c35a613a065a
+ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327484"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48456398"
 ---
 # <a name="microsoft-365-network-connectivity-overview"></a>Vue d’ensemble de la connectivité réseau Microsoft 365
 

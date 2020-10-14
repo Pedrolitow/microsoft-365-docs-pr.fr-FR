@@ -20,18 +20,18 @@ ms.custom:
 - AdminSurgePortfolio
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: Découvrez comment mettre à niveau vos utilisateurs vers le client Office le plus récent.
-ms.openlocfilehash: 7cddf1554a5892ddac510fc77238529194c1a2a0
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 40160dc5590144a1132971368da70c6f36ed460c
+ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47545727"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48456323"
 ---
 # <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>Mettre à niveau vos utilisateurs Microsoft 365 vers le dernier client Office
 
 ## <a name="office-2010-reaches-end-of-support"></a>Office 2010 atteint la fin de l’assistance
 
-Office 2010 atteindra sa fin de support le 13 octobre 2020. Lorsque Office 2010 atteint sa fin de prise en charge, Microsoft ne fournit plus les éléments suivants :
+Office 2010 a atteint sa fin d’assistance le 13 octobre 2020. Microsoft ne fournit plus les éléments suivants :
 
 - Support technique pour les problèmes
 
@@ -39,7 +39,7 @@ Office 2010 atteindra sa fin de support le 13 octobre 2020. Lorsque Office 2010 
 
 - Correctifs de sécurité pour les vulnérabilités découvertes
 
-Pour plus d’informations, voir la feuille [de route de fin d’assistance pour Office 2010](https://docs.microsoft.com/deployoffice/office-2010-end-support-roadmap) .
+Pour plus d’informations, voir la feuille [de route de fin d’assistance pour Office 2010](https://docs.microsoft.com/deployoffice/endofsupport/office-2010-end-support-roadmap) .
 
  **Est-ce la bonne rubrique pour vous ?**
   
@@ -57,7 +57,7 @@ Les étapes ci-dessous vous guideront tout au long du processus de mise à nivea
   
 ## <a name="step-1---check-system-requirements"></a>Étape 1 : vérifier la configuration système requise
 
-[Vérifiez la configuration système requise](https://products.office.com/office-system-requirements) pour Office afin de vous assurer que vos appareils sont compatibles avec la dernière version d’Office. Par exemple, les versions plus récentes d’Office ne peuvent pas être installées sur des ordinateurs exécutant Windows XP ou Windows Vista.
+[Vérifiez la configuration système requise](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources) pour Office afin de vous assurer que vos appareils sont compatibles avec la dernière version d’Office. Par exemple, les versions plus récentes d’Office ne peuvent pas être installées sur des ordinateurs exécutant Windows XP ou Windows Vista.
   
 > [!TIP]
 > Si des utilisateurs de votre organisation exécutent des versions antérieures de Windows sur leurs PC ou ordinateurs portables, nous vous recommandons d’effectuer une mise à niveau vers Windows 10. Windows 7 a atteint la fin de la prise en charge. La [prise en charge de Windows 7 se termine au 1er janvier 2020](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support?rtc=1) pour plus d’informations.

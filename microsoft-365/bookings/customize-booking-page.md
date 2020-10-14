@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 116d7a84-a7a0-4911-a1e9-debb2cca7c43
 description: Modifiez le thème de couleur de votre page de réservation dans l’application Microsoft bookings.
-ms.openlocfilehash: b33be0cb71998d45e50a66f89f98daa4af175865
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: c930c06300a83ee17f1efdaaf42761ddfdebdd7b
+ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47962512"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48456374"
 ---
 # <a name="customize-and-publish-your-booking-page"></a>Personnaliser et publier votre page de réservation
 
@@ -36,21 +36,21 @@ La section ci-dessous vous fournit des informations sur la configuration de votr
 
 - **Contrôle d’accès à la page de réservation : demander un compte Microsoft 365 de mon organisation au livre**  En sélectionnant cette option, seuls les utilisateurs de votre organisation peuvent consulter votre page ou livrer des services. L’accès à la page est autorisé via des vérifications des informations d’identification pour s’assurer que le visiteur appartient à un compte au sein du client.
 
-- **Contrôle d’accès à la page de réservation : désactiver la page indexation de la réservation du moteur de recherche directe** Ce paramètre empêche l’affichage de votre page dans les résultats de recherche pour Google, Bing ou d’autres moteurs de recherche. Désactivez cette case à cocher pour garantir que l’accès à la page est limité au lien de page généré.
+- **Contrôle d’accès à la page de réservation : désactiver la page indexation de la réservation du moteur de recherche directe** Ce paramètre empêche l’affichage de votre page dans les résultats de recherche pour Google, Bing ou d’autres moteurs de recherche. Activez cette case à cocher pour garantir que l’accès à la page est limité au lien de page généré.
 
-- **Consentement de l’utilisation des données client** Lorsque cette option est sélectionnée, le texte demandant au consentement de l’utilisateur ou du client pour votre organisation d’utiliser ses données apparaît sur la page libre-service. La case doit être vérifiée par l’utilisateur afin de terminer la réservation.
+- **Consentement de l’utilisation des données client** Lorsque cette option est sélectionnée, le texte demandant au consentement de l’utilisateur ou du client pour votre organisation d’utiliser ses données apparaît sur la page Self-Service. La case doit être vérifiée par l’utilisateur afin de terminer la réservation.
 
 - **Planification**de la stratégie, **des notifications par courrier électronique**et du **personnel** tous ces paramètres sont semblables à ceux disponibles pour chaque service dans l’onglet Services.
 
 - **Disponibilité** Il s’agit d’une option permettant de définir des plages horaires et des dates de disponibilité spécifiques pour un service. Dans le cas contraire, les heures d’ouverture seront les mêmes que celles des livres. Vous pouvez utiliser l’option de **disponibilité** ici pour des scénarios tels que les congés ou les heures étendues.
 
-- **Personnaliser votre page** Choisissez les couleurs et les logos qui apparaissent sur la page libre-service, par exemple pour la cohérence de la marque.
+- **Personnaliser votre page** Choisissez les couleurs et les logos qui apparaissent sur la page Self-Service, comme pour la cohérence de la marque.
 
-- **Paramètres de région et de fuseau horaire** Ici, vous pouvez définir votre fuseau horaire et vos préférences de langue pour la page libre-service. Nous vous recommandons de définir votre fuseau horaire local. Pour les visiteurs de votre page libre-service, les réservations détectent automatiquement leurs fuseaux horaires locaux et affichent leur disponibilité dans leurs propres fuseaux horaires. Par exemple, si un rendez-vous est disponible à 1:00pm PST, une personne au CST verra le temps disponible affiché sur 3:00pm CST.
+- **Paramètres de région et de fuseau horaire** Ici, vous pouvez définir votre fuseau horaire et vos préférences de langue pour la page Self-Service. Nous vous recommandons de définir votre fuseau horaire local. Pour les visiteurs de votre page Self-Service, les réservations détectent automatiquement leurs fuseaux horaires locaux et affichent leur disponibilité dans leurs propres fuseaux horaires. Par exemple, si un rendez-vous est disponible à 1:00pm PST, une personne au CST verra le temps disponible affiché sur 3:00pm CST.
 
-Une fois que vous avez publié votre page de réservation, les clients voient votre page de réservation dans laquelle ils peuvent réserver des rendez-vous. La pag de réservation de client se présente comme suit :
+Une fois que vous avez publié votre page de réservation, les clients voient votre page de réservation dans laquelle ils peuvent réserver des rendez-vous. La page réservation client se présente comme suit :
 
-:::image type="content" source="media/bookings-self-service.jpg" alt-text="Page de réservation côté client":::
+:::image type="content" source="media/bookings-self-service.jpg" alt-text="Page Réservations":::
 
 ## <a name="publish-the-booking-page"></a>Publier la page de réservation
 
@@ -70,4 +70,4 @@ Regardez cette vidéo ou suivez les étapes ci-dessous pour publier ou annuler l
 
 ## <a name="unpublish-the-booking-page"></a>Annuler la publication de la page de réservation
 
-1. Pour annuler la publication de la page de réservation, accédez à la page réservation et sélectionnez **annuler la publication**.
+ - Pour annuler la publication de la page de réservation, accédez à la page réservation et sélectionnez **annuler la publication**.
