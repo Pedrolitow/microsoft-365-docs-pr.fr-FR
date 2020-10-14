@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de critère de diffusion, vous pouvez affecter automatiquement une étiquette à un document ou message électronique ou vous pouvez inviter les utilisateurs pour sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: c4f00c0a11b172671da456b27e0e33c081728614
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 87b1078462d6315e6cf4ddeb95832f20eae67375
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48326745"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445480"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette sensibilité au contenu
 
@@ -107,7 +107,11 @@ Pour en savoir plus sur les étiquettes parents et les sous-étiquettes, consult
 
 L’étiquetage automatique dans les applications Office pour Windows est pris en charge par le client d’étiquetage unifié Azure Information Protection. Pour l’étiquetage intégré dans les applications Office, cette fonctionnalité est disponible dans [Différentes étapes de disponibilité pour différentes applications](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
 
-Les paramètres d’étiquetage automatique des applications Office sont disponibles lorsque vous [créer ou modifier une étiquette de confidentialité](create-sensitivity-labels.md). Vous pouvez choisir d’appliquer automatiquement des étiquettes de confidentialité au contenu lorsque des informations sensibles sont détectées. Choisissez parmi une liste de types d’information sensibles ou de classificateurs pouvant être formés :
+Les paramètres d’étiquetage automatique des applications Office sont disponibles lorsque vous [créer ou modifier une étiquette de confidentialité](create-sensitivity-labels.md). Assurez-vous que **Fichiers et e-mails** est sélectionné comme étendue de l’étiquette : 
+
+![Options d’étendue d’étiquette de confidentialité pour les fichiers et les e-mails](../media/filesandemails-scope-options-sensitivity-label.png)
+
+À mesure que vous avancez dans l’Assistant, vous voyez la page **Étiquetage automatique pour les applications Office** dans laquelle vous pouvez choisir parmi une liste de types d’informations sensibles ou de classifieurs pouvant être formés :
 
 ![Conditions de l’étiquetage automatique dans les applications Office](../media/sensitivity-labels-conditions.png)
 
@@ -202,7 +206,7 @@ N’oubliez pas de connaître les conditions préalables avant de configurer les
     - Lors de l’exécution de la stratégie d’étiquetage automatique, le fichier ne doit pas être ouvert par un autre processus ni un autre utilisateur. Un fichier examiné pour la modification est inclus dans cette catégorie.
 
 - Si vous envisagez d’utiliser des [types d’informations sensibles personnalisés](custom-sensitive-info-types.md) plutôt que les types de sensibilité prédéfinis : 
-    - Les types d’informations de confidentialité personnalisés sont évalués pour le contenu créé après l’enregistrement des types d’informations de confidentialité personnalisés. 
+    - Les types d’informations de confidentialité personnalisés sont évalués pour le contenu ajouté à SharePoint ou OneDrive après l’enregistrement des types d’informations de confidentialité personnalisés. 
     - Pour tester de nouveaux types d’informations sensibles personnalisés, créez-les avant de créer votre stratégie d’étiquetage automatique, puis créez de nouveaux documents avec des exemples de données pour pouvoir les tester.
 
 - Une ou plusieurs étiquettes de confidentialité [créées et publiées](create-sensitivity-labels.md) (à au moins un utilisateur) que vous pouvez sélectionner pour vos stratégies d’étiquetage automatique. Pour ces étiquettes :

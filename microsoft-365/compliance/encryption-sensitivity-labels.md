@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configurez des étiquettes de confidentialité pour le chiffrement qui protège vos données en limitant l’accès et l’utilisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a734d6f71a943964775477199025180d1a41426e
-ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
+ms.openlocfilehash: 3856b92126d660ed0cdbfd1280d778ac9f072424
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48408624"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446129"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restreindre l'accès au contenu grâce à la mise en place d'un chiffrement par les étiquettes de confidentialité
 
@@ -43,34 +43,39 @@ Lorsqu’un document ou un e-mail est chiffré, l’accès à son contenu est re
 Enfin, en tant qu’administrateur, lorsque vous configurez une étiquette de confidentialité pour appliquer le chiffrement, vous pouvez choisir d’effectuer l’une des opérations suivantes :
 
 - **Attribuer des autorisations maintenant**, afin de déterminer précisément les utilisateurs autorisés à accéder au contenu associé à cette étiquette.
-- **Permettre aux utilisateurs d'attribuer des autorisations** lorsqu’ils appliquent l’étiquette au contenu. De cette façon, vous pouvez proposer aux membres de votre organisation la souplesse nécessaire pour mieux collaborer et accomplir leur travail.
+- **Let users assign permissions** when they apply the label to content. This way, you can allow people in your organization some flexibility that they might need to collaborate and get their work done.
 
 Les paramètres de chiffrement sont disponibles lorsque vous [créez une étiquette de sensibilité](create-sensitivity-labels.md) dans le Centre de conformité Microsoft 365, le Centre de sécurité Microsoft 365 ou le Centre de sécurité et conformité.
 
 ## <a name="understand-how-the-encryption-works"></a>Comprendre comment fonctionne le chiffrement
 
-Le chiffrement utilise le service Azure Rights Management (Azure RMS) à partir d’Azure Information Protection. Cette solution de protection utilise les stratégies de chiffrement, d’identité et d’autorisation. Pour plus d’informations, consultez [Qu’est-ce que Azure Rights Management ?](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms) dans la documentation Azure Information Protection. 
+Encryption uses the Azure Rights Management service (Azure RMS) from Azure Information Protection. This protection solution uses encryption, identity, and authorization policies. To learn more, see [What is Azure Rights Management?](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms) from the Azure Information Protection documentation. 
 
-Lorsque vous utilisez cette solution de chiffrement, la fonctionnalité **super utilisateur** s'assurer que les personnes et services autorisés peuvent toujours consulter et examiner les données qui ont été cryptées pour votre organisation. Le chiffrement peut ensuite être supprimé ou modifié si nécessaire. Pour plus d’informations, consultez la [Configuration de super utilisateurs pour les services Azure Information Protection et les services de découverte ou de la récupération de données](https://docs.microsoft.com/azure/information-protection/configure-super-users).
+When you use this encryption solution, the **super user** feature ensures that authorized people and services can always read and inspect the data that has been encrypted for your organization. If necessary, the encryption can then be removed or changed. For more information, see [Configuring super users for Azure Information Protection and discovery services or data recovery](https://docs.microsoft.com/azure/information-protection/configure-super-users).
 
 ## <a name="how-to-configure-a-label-for-encryption"></a>La configuration d’une étiquette pour le chiffrement
 
-[Créez ou modifiez une étiquette de confidentialité](create-sensitivity-labels.md#create-and-configure-sensitivity-labels), puis dans la page **Chiffrement** de l’Assistant, sélectionnez l’une des options suivantes :
+1. Suivez les instructions générales pour [créer ou modifier une étiquette de confidentialité](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) et assurez-vous de sélectionner **Fichiers et e-mails** pour l’étendue de l’étiquette : 
+    
+    ![Options d’étendue d’étiquette de confidentialité pour les fichiers et les e-mails](../media/filesandemails-scope-options-sensitivity-label.png)
 
-- **Aucun** : il s'agit du paramètre par défaut d'une nouvelle étiquette. Aucun nouveau chiffrement n’est appliqué.
-- **Appliquer** : active le chiffrement, puis vous spécifiez les paramètres de chiffrement.
-- **Supprimer** : supprime le chiffrement si le document ou le courrier est chiffré.
+2. Sur la page **Choisir les paramètres de protection pour les fichiers et les e-mails**, assurez-vous de sélectionner **Chiffrer les fichiers et les e-mails**.
+    
+    ![Options de protection d’étiquette de confidentialité pour les fichiers et les e-mails](../media/protection-options-sensitivity-label.png)
 
-> [!NOTE]
-> L’option **Supprimer** est uniquement prise en charge par le client de l’étiquetage unifié d’Azure Information Protection. Lorsque vous utilisez l’étiquetage intégré, une étiquette incluant cette option est visible dans les applications et les services Office et, si l'option est sélectionnée, le comportement de chiffrement est identique à **Aucun**.
-
-Configuration des options de chiffrement :
-
-![Options de chiffrement d’une étiquette de confidentialité](../media/encrytion-options-sensitivity-label.png)
+4.  Sur la page **Chiffrement** de l’Assistant, sélectionnez l’une des options suivantes :
+    
+    - **Supprimer le chiffrement si le fichier est chiffré** : pour plus d’informations sur ce scénario, voir la section [Qu’advient-il du chiffrement lorsqu’une nouvelle étiquette est appliquée ?](#what-happens-to-existing-encryption-when-a-labels-applied). Il est important de comprendre que ce paramètre peut engendrer une étiquette de confidentialité que les utilisateurs ne pourront peut-être pas appliquer s’ils ne disposent pas des autorisations suffisantes.
+    
+    - **Configurer les paramètres de chiffrement** : active le chiffrement et rend les paramètres de chiffrement visibles :
+        
+        ![Options de chiffrement d’une étiquette de confidentialité](../media/encrytion-options-sensitivity-label.png)
+        
+        Vous trouverez des instructions pour ces paramètres dans la section [Configurer les paramètres de chiffrement](#configure-encryption-settings).
 
 ### <a name="what-happens-to-existing-encryption-when-a-labels-applied"></a>Qu’advient-il du chiffrement existant lorsqu’une nouvelle étiquette est appliquée ?
 
-Si une étiquette de confidentialité est appliquée à du contenu non chiffré, le résultat des options de chiffrement que vous pouvez sélectionner est explicite. Par exemple, si le chiffrement est paramétré sur **Aucun**, le contenu reste non chiffré.
+Si une étiquette de confidentialité est appliquée à du contenu non chiffré, le résultat des options de chiffrement que vous pouvez sélectionner est explicite. Par exemple, si vous n’avez pas sélectionné **Chiffrer les fichiers et les e-mails**, le contenu reste non chiffré.
 
 Toutefois, il est possible que le contenu soit déjà chiffré. Par exemple, un autre utilisateur peut avoir appliqué :
 
@@ -80,7 +85,7 @@ Toutefois, il est possible que le contenu soit déjà chiffré. Par exemple, un 
 
 Le tableau ci-après précise ce qu’il advient du chiffrement existant lorsqu’une étiquette de niveau de confidentialité est appliquée à ce contenu :
 
-| |**Chiffrement : Aucun**|**Chiffrement : Appliquer**|**Chiffrement : Supprimer**|
+| |**Chiffrement : non sélectionné**|**Chiffrement : configuré**|**Chiffrement : Supprimer**|
 |:-----|:-----|:-----|:-----|
 |**Autorisations spécifiées par l'utilisateur**|Le chiffrement d’origine est conservé|Le nouveau chiffrement d'étiquettes est appliqué|Le chiffrement d’origine est supprimé|
 |**Modèle de protection**|Le chiffrement d’origine est conservé|Le nouveau chiffrement d'étiquettes est appliqué|Le chiffrement d’origine est supprimé|
@@ -103,7 +108,7 @@ Les documents déjà chiffrés, puis ajoutés sous forme de pièces jointes, con
 
 ## <a name="configure-encryption-settings"></a>Configurer les paramètres du chiffrement
 
-Lorsque vous sélectionnez **Appliquer** dans la page de **Chiffrement** de l’Assistant pour créer ou modifier une étiquette de confidentialité, choisissez si vous souhaitez :
+Lorsque vous sélectionnez **Configurer les paramètres de confidentialité** sur la page **Chiffrement** de l’Assistant pour créer ou modifier une étiquette de confidentialité, choisissez l’une des options suivantes :
 
 - **Attribuer des autorisations maintenant**, afin de déterminer précisément les utilisateurs autorisés à accéder au contenu auquel l'étiquette est appliquée. Pour plus d’informations, voir la section suivante [Attribuer des autorisations maintenant](#assign-permissions-now).
 - **Permettre aux utilisateurs d'attribuer des autorisations** lorsque vos utilisateurs appliquent l’étiquette au contenu. Grâce à cette option, vous permettez aux membres de votre organisation de bénéficier d'une certaine souplesse pour mieux collaborer et accomplir leur travail. Pour plus d’informations, voir la section ci-dessous [Permettre aux utilisateurs d’attribuer des autorisations](#let-users-assign-permissions).
@@ -275,7 +280,7 @@ Pour l’étiquetage intégré, les utilisateurs consultent la même boîte de d
 
 ## <a name="example-configurations-for-the-encryption-settings"></a>Exemples de configurations pour les paramètres de chiffrement
 
-Pour chaque exemple décrit ci-dessous, effectuez la configuration à partir de la page sur le **Chiffrement** de l’Assistant lorsque vous [créez ou modifiez une étiquette de sensibilité](create-sensitivity-labels.md#create-and-configure-sensitivity-labels). Vérifiez tout d’abord que le **Chiffrement** est paramétré sur **Appliquer** :
+Pour chaque exemple décrit ci-dessous, effectuez la configuration à partir de la page **Chiffrement** de l’Assistant lorsque **Configurer les paramètres de chiffrement** est sélectionné :
 
 ![Appliquez l'option de chiffrement dans l’Assistant d'étiquette de confidentialité](../media/apply-encryption-option.png)
 
@@ -391,17 +396,18 @@ Pour bénéficier d’une expérience de collaboration optimale en ce qui concer
 
 Pour utiliser le chiffrement, vous devrez peut-être effectuer des tâches de configuration.
 
-### <a name="activate-protection-from-azure-information-protection"></a>Activer la protection à partir d’Azure Information Protection
+- Activer la protection à partir d’Azure Information Protection
+    
+    Pour que le chiffrement soit appliqué par les étiquettes de confidentialité, le service de protection (Azure Rights Management) à partir d’Azure Information Protection doit être activé pour votre client. Chez les nouveaux clients, il s’agit du paramètre par défaut, mais vous devrez peut-être activer manuellement le service. Pour plus d’informations, consultez [Activation du service de protection à partir d’Azure Information Protection](https://docs.microsoft.com/azure/information-protection/activate-service).
 
-Pour que le chiffrement soit appliqué par les étiquettes de confidentialité, le service de protection (Azure Rights Management) à partir d’Azure Information Protection doit être activé pour votre client. Chez les nouveaux clients, il s’agit du paramètre par défaut, mais vous devrez peut-être activer manuellement le service. Pour plus d’informations, consultez [Activation du service de protection à partir d’Azure Information Protection](https://docs.microsoft.com/azure/information-protection/activate-service).
+- Configurer Exchange pour Azure Information Protection
+    
+    Il n’est pas indispensable de configurer Exchange pour Azure Information Protection pour que les utilisateurs puissent appliquer des étiquettes dans Outlook afin de chiffrer leurs courriers électroniques. Cependant, aussi longtemps que Exchange n’est pas configuré pour Azure Information Protection, vous ne bénéficiez pas de toutes les fonctionnalités d’utilisation de la protection d’Azure Rights Management avec Exchange.
+    
+    Par exemple, les utilisateurs ne peuvent pas afficher les e-mails chiffrés sur des téléphones mobiles ou avec Outlook sur le web, les messages e-mails chiffrés ne peuvent pas être indexés pour la recherche et vous ne pouvez pas configurer la protection contre la perte de données (DLP) Exchange Online pour la protection Rights Management. 
+    
+    Pour vous assurer qu’Exchange est en mesure de prendre en charge ces scénarios supplémentaires, reportez-vous aux rubriques suivantes :
+    
+    - Pour Exchange Online, consultez les instructions de la section [Exchange Online : configuration de la gestion des droits relatifs à l’information](https://docs.microsoft.com/azure/information-protection/configure-office365#exchangeonline-irm-configuration).
+    - Pour Exchange en local, vous devez déployer le [connecteur RMS et configurer vos serveurs Exchange](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector). 
 
-### <a name="configure-exchange-for-azure-information-protection"></a>Configurer Exchange pour Azure Information Protection
-
-Il n’est pas indispensable de configurer Exchange pour Azure Information Protection pour que les utilisateurs puissent appliquer des étiquettes dans Outlook afin de chiffrer leurs courriers électroniques. Cependant, aussi longtemps que Exchange n’est pas configuré pour Azure Information Protection, vous ne bénéficiez pas de toutes les fonctionnalités d’utilisation de la protection d’Azure Rights Management avec Exchange.
-
-Par exemple, les utilisateurs ne peuvent pas afficher les e-mails chiffrés sur des téléphones mobiles ou avec Outlook sur le web, les messages e-mails chiffrés ne peuvent pas être indexés pour la recherche et vous ne pouvez pas configurer la protection contre la perte de données (DLP) Exchange Online pour la protection Rights Management.
-
-Pour vous assurer qu’Exchange est en mesure de prendre en charge ces scénarios supplémentaires, reportez-vous aux rubriques suivantes :
-
-- Pour Exchange Online, consultez les instructions de la section [Exchange Online : configuration de la gestion des droits relatifs à l’information](https://docs.microsoft.com/azure/information-protection/configure-office365#exchangeonline-irm-configuration).
-- Pour Exchange en local, vous devez déployer le [connecteur RMS et configurer vos serveurs Exchange](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector).

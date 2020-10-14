@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de confidentialité pour protéger le contenu des sites SharePoint et Microsoft Teams, ainsi que des Groupes Microsoft 365.
-ms.openlocfilehash: e8d9b3c4928172ace2bc63d5aa31d65c4145ad6a
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: ac6af4d82b3da507f1fe0081041b347b9f5e4a94
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430313"
+ms.locfileid: "48446847"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint
 
@@ -30,16 +30,16 @@ ms.locfileid: "48430313"
 
 Outre l’utilisation d' [étiquettes de confidentialité](sensitivity-labels.md) pour classifier et protéger les documents et les messages électroniques, vous pouvez également utiliser des étiquettes de confidentialité pour protéger du contenu dans les conteneurs suivants : sites Microsoft Teams, Microsoft 365 Groups ([anciennement les groupes Office 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) et les sites SharePoint. Pour la classification et la protection au niveau du conteneur, utilisez les paramètres d’étiquette suivants :
 
-- Confidentialité (privée ou publique) de sites d’équipes Microsoft 365 connectés au groupe
+- Confidentialité (privée ou publique) de sites Teams et groupes Microsoft 365
 - Accès des utilisateurs externes
 - Accès à partir d’appareils enregistrés
 
 > [!IMPORTANT]
 > Le paramètre **Accès à partir d’appareils non gérés** fonctionne conjointement avec la fonctionnalité SharePoint pour [contrôler l’accès à partir d’appareils non gérés](/sharepoint/control-access-from-unmanaged-devices). Vous devez configurer cette fonctionnalité SharePoint dépendante afin d’utiliser une étiquette de confidentialité pour laquelle ce paramètre est configuré. Des informations supplémentaires sont incluses dans les instructions qui suivent.
 
-Lorsque vous appliquez cette étiquette de confidentialité à un conteneur pris en charge, l’étiquette applique automatiquement les paramètres de classification et de protection au site ou au groupe connecté.
+Lorsque vous appliquez cette étiquette de confidentialité à un conteneur pris en charge, l’étiquette applique automatiquement les paramètres de classification et de protection configurés au site ou au groupe.
 
-Toutefois, le contenu de ces conteneurs n’hérite pas des étiquettes de la classification et des paramètres, tels que les marques visuelles, ou le chiffrement. Pour que les utilisateurs puissent étiqueter leurs documents sur des sites SharePoint ou des sites d’équipe, assurez-vous que vous avez [activé les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+Toutefois, le contenu de ces conteneurs n’hérite pas des étiquettes de la classification ni des paramètres pour les fichiers et e-mails, tels que les marques visuelles et le chiffrement. Pour que les utilisateurs puissent étiqueter leurs documents sur des sites SharePoint ou des sites d’équipe, assurez-vous que vous avez [activé les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
 > [!NOTE]
 > Les étiquettes de confidentialité pour les conteneurs ne sont pas prises en charge avec les réseaux de distribution de contenu Office 365 (CDN).
@@ -68,42 +68,53 @@ Une fois que vous avez activé et configuré les étiquettes de confidentialité
     Execute-AzureAdLabelSync
     ```
 
-## <a name="how-to-configure-site-and-group-settings"></a>Configurer les paramètres de site et de groupe
+## <a name="how-to-configure-groups-and-site-settings"></a>Comment configurer les paramètres de groupes et de sites
 
-Vous êtes maintenant prêt à créer ou modifier les étiquettes de confidentialité que vous souhaitez rendre disponibles pour des sites et des groupes. Le fait d’activer les étiquettes de confidentialité pour les conteneurs rend une nouvelle page visible dans les assistants d’étiquettes de sensibilité : **paramètres du site et du groupe**
+En activant les étiquettes de confidentialité pour les conteneurs, vous pouvez configurer les paramètres de protection pour les groupes et sites dans l’Assistant d’attribution des étiquettes de confidentialité. Tant que vous n’activez pas cette prise en charge, les paramètres sont visibles dans l’Assistant, mais vous ne pouvez pas les configurer.
 
-Si vous avez besoin d’aide pour créer ou modifier une étiquette de confidentialité, consultez les instructions sur la [Création et configuration d’étiquettes de confidentialité](create-sensitivity-labels.md#create-and-configure-sensitivity-labels).
-
-Dans cette nouvelle page de **Paramètres de site et de groupe**, configurez les paramètres :
-
-- **Confidentialité des sites d’équipe connectés aux groupes Microsoft 365**: conserver la valeur par défaut de **Publique : tous les membres de l’organisation peuvent accéder au site** si vous souhaitez que tous les membres de votre organisation accèdent au site d’équipe ou au groupe auquel cette étiquette est appliquée.
-
-  Sélectionnez **Privé** si vous voulez limiter l’accès aux seuls membres approuvés au sein de votre organisation.
-
-  Sélectionnez **Aucune-laisser l’utilisateur choisir qui peut accéder au site** lorsque vous voulez protéger le contenu dans le conteneur à l’aide de l’étiquette de confidentialité, tout en laissant les utilisateurs configurer eux-mêmes le paramètre de confidentialité proprement dit.
-
-  Les paramètres **Publique** ou **Privé** pour définir et verrouiller le paramètre de confidentialité lorsque vous appliquez cette étiquette au conteneur. Votre paramètre remplace le paramètre précédemment configuré pour l’équipe ou le groupe et verrouille la valeur de confidentialité afin qu’elle puisse être modifiée uniquement en supprimant d’abord l’étiquette de confidentialité du conteneur. Une fois l’étiquette de confidentialité supprimée, le paramètre de confidentialité de l’étiquette peut à nouveau être modifié par les utilisateurs.
-
-- **Accès des utilisateurs externes** : déterminez si le propriétaire du groupe peut [ajouter des invités au groupe](/office365/admin/create-groups/manage-guest-access-in-groups).
-
-- **Appareils non gérés** : cette option utilise la fonctionnalité SharePoint qui utilise l’accès conditionnel Azure AD pour bloquer ou limiter l’accès aux contenus SharePoint et OneDrive provenant d’appareils non gérés. Pour plus d’informations, voir [Contrôler l’accès à partir des appareils non gérés](/sharepoint/control-access-from-unmanaged-devices). L’option spécifiée pour ce paramètre d’étiquette correspond à l’exécution d’une commande PowerShell pour un site, comme décrit dans les étapes 2-4 depuis [Bloquer ou limiter l’accès à un site SharePoint ou à OneDrive spécifique](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive).
+1. Suivez les instructions générales pour [créer ou modifier une étiquette de confidentialité](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) et assurez-vous de sélectionner **Groupes et sites** pour l’étendue de l’étiquette : 
     
-    Si vous ne configurez pas la stratégie d’accès conditionnel dépendante pour SharePoint comme décrit dans [Utiliser les restrictions appliquées par l’application](https://docs.microsoft.com/sharepoint/app-enforced-restrictions), l’option spécifiée ici n’aura aucun effet. De plus, elle n’aura aucun effet si elle est moins restrictive qu’un paramètre configuré au niveau du client. Si vous avez configuré un paramètre à l’échelle de l’Organisation pour les appareils non gérés, sélectionnez un paramètre d’étiquette qui soit de la même ou de la plus restrictive.
+    ![Options d’étendue d’étiquette de confidentialité pour les fichiers et les e-mails](../media/groupsandsites-scope-options-sensitivity-label.png)
     
-    Par exemple, si votre client est configuré pour **Autoriser un accès limité au web uniquement**, le paramètre d’étiquette qui autorise l’accès complet n’aura aucun effet, car il est moins restrictif. Pour ce paramètre de niveau client, sélectionnez le paramètre d’étiquette pour bloquer l’accès (plus restrictif) ou le paramètre d’étiquette pour un accès limité (identique au paramètre client).
+    Lorsque seule l’étendue est sélectionnée pour l’étiquette, celle-ci ne s’affiche pas dans les applications Office qui prennent en charge les étiquettes de confidentialité et ne peuvent pas être appliquées aux fichiers et e-mails. La séparation des étiquettes peut être utile pour les utilisateurs et les administrateurs, mais peut également s’ajouter à la complexité de votre déploiement d’étiquettes.
     
-    Étant donné que vous pouvez configurer les paramètres de SharePoint séparément de la configuration d’étiquette, l’Assistant d’étiquettes de confidentialité ne vérifie pas si les dépendances sont en place.
+    Par exemple, vous devez examiner soigneusement votre [classement d’étiquettes](sensitivity-labels.md#label-priority-order-matters), car SharePoint détecte quand un document étiqueté est chargé vers un site étiqueté. Dans ce scénario, un événement d’audit et un e-mail sont générés automatiquement lorsque l’étiquette de confidentialité présente une priorité supérieure à celle du site. Pour plus d’informations, voir la section [Audit des activités d’étiquettes de confidentialité](#auditing-sensitivity-label-activities) sur cette page. 
 
-![L’onglet Paramètres de site et de groupe](../media/edit-sensitivity-label-site-group2.png)
+2. Ensuite, sur la page **Définir les paramètres de protection pour les groupes et sites**, sélectionnez l’une des options suivantes ou les deux :
+    
+    - **Paramètres de confidentialité et d’accès des utilisateurs externes** pour configurer les paramètres **Confidentialité** et **Accès des utilisateurs externes**. 
+    - **Paramètres d’accès aux appareils et de partage externe** pour configurer le paramètre **Accès à partir d’appareils non gérés**.
+
+3. Si vous avez sélectionné **Paramètres de confidentialité et d’accès des utilisateurs externes**, configurez désormais les paramètres suivants :
+    
+    - **Confidentialité** : conservez la valeur par défaut **Public** si vous souhaitez que tous les membres de votre organisation accèdent au site d’équipe ou au groupe auquel cette étiquette est appliquée.
+        
+        Sélectionnez **Privé** si vous voulez limiter l’accès aux seuls membres approuvés au sein de votre organisation.
+        
+        Sélectionnez **Aucun** si vous souhaitez protéger le contenu dans le conteneur à l’aide de l’étiquette de confidentialité, tout en laissant les utilisateurs configurer eux-même les paramètres de confidentialité.
+        
+        Les paramètres **Publique** ou **Privé** pour définir et verrouiller le paramètre de confidentialité lorsque vous appliquez cette étiquette au conteneur. Votre paramètre remplace le paramètre précédemment configuré pour l’équipe ou le groupe et verrouille la valeur de confidentialité afin qu’elle puisse être modifiée uniquement en supprimant d’abord l’étiquette de confidentialité du conteneur. Une fois l’étiquette de confidentialité supprimée, le paramètre de confidentialité de l’étiquette peut à nouveau être modifié par les utilisateurs.
+    
+    - **Accès des utilisateurs externes** : déterminez si le propriétaire du groupe peut [ajouter des invités au groupe](/office365/admin/create-groups/manage-guest-access-in-groups).
+
+4. Si vous avez sélectionné **Paramètre d’accès aux appareils et de partage externe**, configurez à présent le paramètre suivant :
+    
+    - **Accès à partir d’appareils non gérés** : cette option utilise la fonctionnalité SharePoint qui utilise l’accès conditionnel Azure AD pour bloquer ou limiter l’accès aux contenus SharePoint et OneDrive provenant d’appareils non gérés. Pour plus d’informations, voir [Contrôler l’accès à partir des appareils non gérés](/sharepoint/control-access-from-unmanaged-devices) dans la documentation SharePoint. L’option spécifiée pour ce paramètre d’étiquette correspond à l’exécution d’une commande PowerShell pour un site, comme décrit dans les étapes 2 à 4 de la section [Bloquer ou limiter l’accès à un site SharePoint ou OneDrive spécifique](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive) des instructions de SharePoint.
+        
+        Pour plus d’informations, voir [Plus d’informations sur les dépendances de l’option d’appareils non gérés](#more-information-about-the-dependencies-for-the-unmanaged-devices-option) à la fin de cette section.
 
 > [!IMPORTANT]
-> Seuls ces paramètres de sites et de groupes prennent effet lorsque vous appliquez l’étiquette à une équipe, un groupe ou un site. D’autres paramètres d’étiquette, tels que le chiffrement et le marquage de contenu, ne sont pas appliqués au contenu au sein de l’équipe, du groupe ou du site.
->
-> Déploiement progressif sur les clients : seules les étiquettes concernant les paramètres de site et de groupe peuvent être sélectionnées lorsque les utilisateurs créent des équipes, des groupes et des sites. Si vous pouvez appliquer une étiquette à un conteneur alors que les paramètres de site et de groupe ne sont pas activés, seul le nom d’étiquette est appliqué au conteneur.
+> Seuls ces paramètres de sites et de groupes prennent effet lorsque vous appliquez l’étiquette à une équipe, un groupe ou un site. Si l’[étendue de l’étiquette](sensitivity-labels.md#label-scopes) inclut des fichiers et e-mails, d’autres paramètres d’étiquette, tels que le chiffrement et le marquage de contenu, ne sont pas appliqués au contenu au sein de l’équipe, du groupe ou du site.
 
 Si votre étiquette de confidentialité n’est pas encore publiée, publiez-la dès maintenant en [l’ajoutant à une stratégie d’étiquette de confidentialité](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy). Les utilisateurs auxquels sont assignés une stratégie d’étiquette de confidentialité incluant cette étiquette pourront la sélectionner pour des sites et des groupes.
 
-À partir de la stratégie d’étiquette, seul le paramètre de stratégie **Appliquer cette étiquette par défaut aux documents et aux e-mails** s’applique lorsque vous appliquez cette étiquette à des conteneurs. Les autres paramètres de stratégie ne sont pas appliqués, notamment l’étiquetage obligatoire, la justification de l’utilisateur et le lien vers la page d’aide personnalisée.
+##### <a name="more-information-about-the-dependencies-for-the-unmanaged-devices-option"></a>Informations supplémentaires sur les dépendances de l’option des appareils non gérés
+
+Si vous ne configurez pas la stratégie d’accès conditionnel dépendante pour SharePoint comme décrit dans [Utiliser les restrictions appliquées par l’application](https://docs.microsoft.com/sharepoint/app-enforced-restrictions), l’option spécifiée ici n’aura aucun effet. De plus, elle n’aura aucun effet si elle est moins restrictive qu’un paramètre configuré au niveau du client. Si vous avez configuré un paramètre à l’échelle de l’organisation pour les appareils non gérés, sélectionnez un paramètre d’étiquette identique ou plus restrictif.
+
+Par exemple, si votre client est configuré pour **Autoriser un accès limité au web uniquement**, le paramètre d’étiquette qui autorise l’accès complet n’aura aucun effet, car il est moins restrictif. Pour ce paramètre de niveau client, sélectionnez le paramètre d’étiquette pour bloquer l’accès (plus restrictif) ou le paramètre d’étiquette pour un accès limité (identique au paramètre client).
+
+Étant donné que vous pouvez configurer les paramètres de SharePoint séparément de la configuration d’étiquette, l’Assistant d’étiquettes de confidentialité ne vérifie pas si les dépendances sont en place. Ces dépendances peuvent être configurées une fois l’étiquette créée et publiée, et même une fois l’étiquette appliquée. Toutefois, si l’étiquette est déjà appliquée, le paramètre d’étiquette n’est appliqué qu’à la prochaine authentification de l’utilisateur.
 
 ## <a name="sensitivity-label-management"></a>Gestion des étiquettes de confidentialité
 
@@ -344,6 +355,9 @@ Pour vous aider à gérer la coexistence des étiquettes de confidentialité et 
 
 ## <a name="auditing-sensitivity-label-activities"></a>Audit sur les activités des étiquettes de confidentialité
 
+> [!IMPORTANT]
+> Si vous utilisez la séparation des étiquettes en sélectionnant uniquement l’étendue **Groupes et sites** pour les étiquettes qui protègent les conteneurs : en raison de la **non-concordance de la sensibilité au document détectée** des événements d’audit et des e-mails décrite dans cette section, vous pouvez [classer ces étiquettes](sensitivity-labels.md#label-priority-order-matters) avant celles qui ont une étendue pour **Fichiers et e-mails**. 
+
 Si un utilisateur télécharge un document sur un site protégé par une étiquette de confidentialité et son document comporte une étiquette de confidentialité [plus élevée](sensitivity-labels.md#label-priority-order-matters) que celle du site, cette action n’est pas bloquée. Par exemple, vous avez appliqué l’étiquette **Général** à un site SharePoint, et une personne télécharge un document étiqueté comme **Confidentiel**. Une étiquette de confidentialité ayant une priorité plus élevée identifie un contenu plus sensible qu’un contenu présentant un ordre de priorité plus faible, cette situation peut devenir un problème de sécurité.
 
 Bien que l’action ne soit pas bloquée, elle est auditée et génère automatiquement un courrier électronique à la personne qui a chargé le document et à l’administrateur du site. Par conséquent, l’utilisateur et les administrateurs peuvent identifier les documents comportant un mauvais alignement de la priorité d’étiquette et prendre des mesures, le cas échéant. Par exemple, supprimer ou déplacer le document téléchargé à partir du site.
@@ -362,7 +376,7 @@ Ces événements d’audit peuvent être consultés dans la catégorie [Activit�
 
 Vous pouvez désactiver les étiquettes de confidentialité pour Microsoft Teams, les groupes Microsoft 365 et les sites SharePoint en suivant les instructions de [Activer la prise en charge d'une étiquette de confidentialité dans PowerShell](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#enable-sensitivity-label-support-in-powershell). Toutefois, pour désactiver cette fonctionnalité, à l’étape 5, spécifiez `$setting["EnableMIPLabels"] = "False"`.
 
-En plus de masquer les **Sites et paramètres de groupe** page lorsque vous créez ou modifiez des étiquettes de confidentialité, cette action rétablit la propriété utilisée par les conteneurs pour leur configuration. Activer les étiquettes de confidentialité pour Microsoft Teams, les groupes Microsoft 365 et les sites SharePoint change la propriété utilisée à partir de **Classification** (utilisé pour [Classification de groupe Azure AD](#classic-azure-ad-group-classification)) pour **Sensibilité**. Lorsque vous désactivez les étiquettes de confidentialité pour les conteneurs, les conteneurs ignorent la propriété de Sensibilité et réutilisent la propriété de classification.
+En plus de rendre indisponible l’ensemble des paramètres pour les groupes et les sites lorsque vous créez ou modifiez des étiquettes de confidentialité, cette action rétablit la propriété utilisée par les conteneurs pour leur configuration. Activer les étiquettes de confidentialité pour Microsoft Teams, les groupes Microsoft 365 et les sites SharePoint change la propriété utilisée à partir de **Classification** (utilisé pour [Classification de groupe Azure AD](#classic-azure-ad-group-classification)) pour **Sensibilité**. Lorsque vous désactivez les étiquettes de confidentialité pour les conteneurs, les conteneurs ignorent la propriété de Sensibilité et réutilisent la propriété de classification.
 
 Cela signifie que les paramètres d’étiquette de sites et de groupes précédemment appliqués aux conteneurs ne sont pas appliqués et les conteneurs n’affichent plus les étiquettes.
 

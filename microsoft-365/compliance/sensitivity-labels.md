@@ -22,12 +22,12 @@ description: Utilisez les étiquettes de confidentialité de Microsoft informati
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 80aad465442ce43d2fef993133c4e49da709a531
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 7b2eaf8bcfa7014e8c70f4c7efb7d859b32e5e7e
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398991"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446748"
 ---
 # <a name="learn-about-sensitivity-labels"></a>En savoir plus sur les étiquettes de niveau de confidentialité
 
@@ -56,6 +56,8 @@ Vous pouvez utiliser les étiquettes de niveau de confidentialité aux fins suiv
 
 - **Protéger le contenu dans les services et les applications tiers** à l’aide de Microsoft Cloud App Security. Avec Cloud App Security (CAS), vous pouvez détecter, classer, étiqueter et protéger le contenu dans les services tiers et applications tierces, comme SalesForce, Box ou Dropbox, même si l’application tierce ou le service tiers ne lit pas ou ne prend pas en charge les étiquettes de niveau de confidentialité.
 
+- **Protégez les conteneurs** qui incluent Teams, les groupes Microsoft 365 et les sites SharePoint. Par exemple, définissez les paramètres de confidentialité, l’accès des utilisateurs externes ainsi que l’accès à partir d’appareils non gérés.
+
 - **Étendre les étiquettes de confidentialité à des applications et services tiers.** Grâce à l'utilisation du SDK Microsoft informations Protection, des applications tierces peuvent lire des étiquettes de confidentialité et appliquer des paramètres de protection.
 
 - **Classifier du contenu sans utiliser les paramètres de protection.** Vous pouvez également simplement affecter une classification au contenu (comme un autocollant physique) qui continue de s’afficher et se déplace avec le contenu quand il utilisé et partagé. Vous pouvez utiliser cette classification pour générer des rapports d’utilisation et consultez les données d’activité pour votre contenu sensible. En se basant sur ces informations, vous pouvez toujours choisir d’appliquer les paramètres de protection plus tard.
@@ -74,7 +76,7 @@ Lorsque vous attribuez une étiquette de confidentialité à un document ou à u
 
 Dans les applications Office, une étiquette de confidentialité s'affiche pour les utilisateurs comme une balise sur un message électronique ou un document.
 
-Une seule étiquette de niveau de confidentialité peut être affectée à chaque élément de contenu. Un élément peut disposer à la fois d’une étiquette de niveau de confidentialité et d’une [étiquette de rétention](retention.md#retention-labels).
+Chaque élément qui prend en charge les étiquettes de confidentialité peut se voir appliquer une étiquette de confidentialité unique. Les documents et les e-mails peuvent se voir appliquer à la fois une étiquette de confidentialité et une [étiquette de rétention](retention.md#retention-labels).
 
 > [!div class="mx-imgBorder"]
 > ![Étiquette de confidentialité appliquée à un e-mail](../media/Sensitivity-label-on-email.png)
@@ -95,10 +97,9 @@ Une fois qu’une étiquette de confidentialité est appliquée à un e-mail ou 
     
     Longueurs de chaînes : les filigranes sont limités à 255 caractères. Les en-têtes et les pieds de page sont limités à 1 024 caractères, sauf dans Excel. Excel présente une limite totale de 255 caractères pour les en-têtes et les pieds de page, mais cette limite inclut des caractères qui ne sont pas visibles, tels que des codes de mise en forme. Si cette limite est atteinte, la chaîne entrée n’apparaît pas dans Excel.
 
-
 - **Protégez du contenu dans des conteneurs tels que des sites et des groupes** lorsque vous activez la fonctionnalité à[utiliser des étiquettes de confidentialité avec Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint](sensitivity-labels-teams-groups-sites.md).
     
-    Les options de configuration pour les **paramètres de sites et de groupes** n’apparaissent pas si vous n'activez pas cette fonctionnalité. N’oubliez pas que cette configuration d’étiquettes ne permet pas aux documents d’être automatiquement étiquetés. En lieu et place, les paramètres d’étiquette protègent le contenu en contrôlant l’accès au conteneur dans lequel les documents sont stockés. Ces paramètres incluent le niveau de confidentialité qui indique si un propriétaire de groupe Microsoft 365 peut ajouter des invités au groupe et le niveau d’accès accordé à un appareil non géré.
+    Vous ne pouvez pas configurer les paramètres de protection pour les groupes et les sites tant que vous n’activez pas cette fonctionnalité. Cette configuration d’étiquettes ne permet pas aux documents ni aux e-mails d’être automatiquement étiquetés. En lieu et place, les paramètres d’étiquette protègent le contenu en contrôlant l’accès au conteneur dans lequel le contenu est stocké. Ces paramètres incluent les paramètres de confidentialité, l’accès des utilisateurs externes ainsi que l’accès à partir d’appareils non gérés.
 
 - **Appliquez automatiquement l’étiquette dans des applications Office ou recommandez une étiquette.** Vous pouvez choisir le type d’informations sensibles que vous voulez étiqueter. L'étiquette peut être appliquée automatiquement, ou vous pouvez inviter les utilisateurs à appliquer l’étiquette que vous recommandez. Si vous recommandez une étiquette, l’invite affiche le texte de votre choix. Par exemple :
     
@@ -106,11 +107,27 @@ Une fois qu’une étiquette de confidentialité est appliquée à un e-mail ou 
     
     Pour plus d’informations sur les paramètres d' **Étiquetage automatique pour les applications Office** lorsque vous créez ou modifiez une étiquette de confidentialité, voir [Appliquer automatiquement une étiquette de confidentialité à du contenu](apply-sensitivity-label-automatically.md).
 
+### <a name="label-scopes"></a>Étendues des étiquettes
+
+Lorsque vous créez une étiquette de confidentialité, vous êtes invité à configurer son étendue qui détermine deux aspects :
+- Les paramètres d’étiquette que vous pouvez configurer pour cette étiquette
+- L’emplacement où l’étiquette sera visible par les utilisateurs
+
+Cette configuration d’étendue vous permet d’utiliser des étiquettes de confidentialité qui s’appliquent uniquement aux documents et e-mails et qui ne peuvent pas être sélectionnées pour les conteneurs. Il en va de même pour les étiquettes de confidentialité qui sont uniquement destinées aux conteneurs et qui ne peuvent pas être sélectionnées pour les documents et les courriers électroniques. Par défaut, les deux étendues sont sélectionnées :
+
+![Options d’étendue des étiquettes de confidentialité](../media/sensitivity-labels-scopes.png)
+
+Lorsque vous modifiez ce paramètre par défaut et que vous sélectionnez une seule étendue, vous voyez encore la première page des paramètres de configuration de l’autre étendue, mais vous ne pouvez pas les sélectionner. Par exemple, si l’étendue des fichiers et e-mails n’est pas sélectionnée, vous ne pouvez pas sélectionner les options de la page suivante :
+
+![Options non disponibles pour les étiquettes de confidentialité](../media/sensitivity-labels-unavailable-settings.png)
+
+Pour ces pages dont les options ne sont pas disponibles, sélectionnez **Suivant** pour continuer. Vous pouvez également sélectionner **Retour** pour modifier l’étendue de l’étiquette.
+
 ### <a name="label-priority-order-matters"></a>Priorité des étiquettes (l’ordre est important)
 
 Lorsque vous créez vos étiquettes de confidentialité dans votre centre d’administration, elles apparaissent dans une liste située sous l’onglet **Sensibilité** de la page **Étiquettes**. Dans cette liste, l’ordre des étiquettes est important car il reflète leur priorité. Vous souhaitez que votre étiquette de sensibilité la plus restrictive, comme l’étiquette Hautement confidentiel, apparaisse en **bas** de la liste, et que la moins restrictive, telle que l’étiquette Public, apparaisse en **haut**.
 
-Vous pouvez appliquer une seule étiquette de confidentialité dans un document ou un message électronique. Si vous définissez une option obligeant vos utilisateurs à fournir une justification pour la modification d'une étiquette vers une classification plus faible, l’ordre de cette liste identifie les classifications les moins élevées. Cette option ne s’applique toutefois pas aux sous-étiquettes.
+Vous pouvez appliquer une seule étiquette de confidentialité à un élément tel qu’un document, un e-mail ou un conteneur. Si vous définissez une option obligeant vos utilisateurs à fournir une justification pour la modification d'une étiquette vers une classification plus faible, l’ordre de cette liste identifie les classifications les moins élevées. Cette option ne s’applique toutefois pas aux sous-étiquettes.
 
 Cependant, l’ordre des sous-étiquettes est utilisé avec l'[étiquetage automatique](apply-sensitivity-label-automatically.md). Lorsque vous configurez les étiquettes pour les appliquer automatiquement ou en tant que recommandation, plusieurs correspondances peuvent se produire pour plus d'une étiquette. Pour déterminer l’étiquette à appliquer ou à recommander, l’ordre d’étiquettes est utilisé : la dernière étiquette de confidentialité est sélectionnée, puis, le cas échéant, la dernière sous-étiquette.
 
@@ -142,22 +159,26 @@ Avec une stratégie d’étiquette, vous pouvez effectuer les actions suivantes�
 
 - **Sélectionnez les utilisateurs et les groupes pouvant voir les étiquettes.** Les étiquettes peuvent être publiées vers un utilisateur ou un groupe de sécurité à extension de courrier, à un groupe de distribution ou à un groupe Microsoft 365 (pouvant avoir [l’appartenance dynamique](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule)) dans Azure AD.
 
-- **Appliquer une étiquette par défaut** à tous les nouveaux documents et e-mails créés par les utilisateurs et groupes inclus dans la stratégie d’étiquette. Cette option s’applique également aux conteneurs si vous avez [activé les étiquettes de confidentialité pour Microsoft Teams, les groupes Microsoft 365 et les sites SharePoint](sensitivity-labels-teams-groups-sites.md). Les utilisateurs peuvent toujours modifier l’étiquette par défaut s’il ne s’agit pas de l’étiquette appropriée pour leur document ou leur courrier électronique. 
+- **Appliquez une étiquette par défaut** à tous les nouveaux documents et e-mails créés par les utilisateurs et groupes inclus dans la stratégie d’étiquettes, ainsi que des étiquettes par défaut identiques ou différentes aux conteneurs (si vous avez [activé les étiquettes de confidentialité pour Microsoft Teams, les groupes Microsoft 365 et les sites SharePoint](sensitivity-labels-teams-groups-sites.md)). Les utilisateurs peuvent toujours modifier l’étiquette par défaut s’il ne s’agit pas de l’étiquette appropriée pour leur document ou leur courrier électronique. 
     
     Utilisez une étiquette par défaut pour définir des paramètres de protection de base à appliquer à votre contenu. Il faut noter que, sans formation des utilisateurs ou autres contrôles, ce paramètre peut également entraîner un étiquetage incorrect. Il est déconseillé de sélectionner une étiquette qui applique un chiffrement comme étiquette par défaut pour les documents. Par exemple, de nombreuses organisations doivent envoyer et partager des documents avec des utilisateurs externes qui ne possèdent peut-être pas des applications qui prennent en charge le chiffrement ou qui n’utilisent pas un compte pouvant être autorisé. Pour plus d’informations sur ce scénario, consultez [Partage de documents chiffrés avec des utilisateurs externes](sensitivity-labels-office-apps.md#sharing-encrypted-documents-with-external-users).
 
-- **Demander une justification pour une modification d'étiquette.** Si un utilisateur tente de supprimer une étiquette ou de la remplacer par une étiquette ayant un rang inférieur, vous pouvez exiger que l'utilisateur justifie cette action. Par exemple, un utilisateur ouvre un document étiqueté Confidentiel (rang 3) et remplace cette étiquette par avec une autre nommée Public (rang 1). Le motif de justification n’est pour le moment pas adressé à l’[analyse des étiquettes](label-analytics.md)pour examen par l’administrateur. Le [client d’étiquetage unifié Azure information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2) envoie toutefois ces informations à l’[analyse d’Azure information Protection](https://docs.microsoft.com/azure/information-protection/reports-aip).
+- **Demander une justification pour une modification d'étiquette.** Si un utilisateur tente de supprimer une étiquette ou de la remplacer par une étiquette ayant un rang inférieur, vous pouvez exiger que l'utilisateur justifie cette action. Par exemple, un utilisateur ouvre un document étiqueté Confidentiel (rang 3) et remplace cette étiquette par avec une autre nommée Public (rang 1). Pour l’instant, le motif de justification est utilisé uniquement par le [client d’étiquetage unifié Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2) qui envoie ces informations à [Azure Information Protection Analytics](https://docs.microsoft.com/azure/information-protection/reports-aip).
 
     ![Invite de saisie d’une justification par les utilisateurs](../media/Sensitivity-label-justification-required.png)
 
-- **Demander aux utilisateurs d'appliquer une étiquette à leurs e-mails et documents.** Également connu sous le nom d'étiquetage obligatoire, vous pouvez exiger qu’une étiquette soit appliquée avant que les utilisateurs puissent enregistrer des documents et envoyer des courriers électroniques. L’étiquette peut être attribuée manuellement par l’utilisateur, automatiquement suite à une condition que vous configurez, ou être attribuée par défaut (l'option d’étiquette par défaut décrite ci-dessus). Un exemple d’invite présenté dans Outlook lorsqu’un utilisateur doit attribuer une étiquette :
+- **Exigez que les utilisateurs appliquent une étiquette** avec une option pour les e-mails et les documents, et une autre pour les conteneurs. Également connu sous le nom d'étiquetage obligatoire, ces options permettent d’assurer qu’une étiquette soit appliquée avant que les utilisateurs puissent enregistrer des documents, envoyer des e-mails, ainsi que créer des groupes ou des sites.
+    
+    Pour les documents et les e-mails, une étiquette peut être attribuée manuellement par l’utilisateur, automatiquement suite à une condition que vous configurez, ou être attribuée par défaut (l'option d’étiquette par défaut décrite ci-dessus). Un exemple d’invite présenté dans Outlook lorsqu’un utilisateur doit attribuer une étiquette :
 
     ![Invite demandant à l’utilisateur Outlook d’appliquer l’étiquette requise](../media/sensitivity-labels-mandatory-prompt-aipv2-outlook.PNG)
     
     > [!NOTE]
-    > L’étiquetage obligatoire exige actuellement le [client d’étiquetage unifié Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app). This client ne s’exécute que sur Windows. Cette fonctionnalité n’est pas encore prise en charge sur Mac, iOS et Android.
+    > L’étiquetage obligatoire des documents et e-mails exige actuellement le [client d’étiquetage unifié Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app). Ce client ne s’exécute que sur Windows. Cette fonctionnalité n’est donc pas encore prise en charge sur Mac, iOS et Android.
     
-    Envisagez d’utiliser cette option pour vous permettre d'augmenter la couverture d’étiquetage. Il faut noter que, sans formation des utilisateurs, ce paramètre peut entraîner un étiquetage incorrect. De plus, sauf si vous avez également défini une étiquette par défaut, l’étiquetage obligatoire risque de contrarier vos utilisateurs qui reçoivent de fréquentes invites. 
+    Pour les conteneurs, une étiquette doit être attribuée au moment de la création du groupe ou du site.
+    
+    Envisagez d’utiliser cette option pour vous permettre d'augmenter la couverture d’étiquetage. Il faut noter que, sans formation des utilisateurs, ces paramètres peuvent entraîner un étiquetage incorrect. De plus, sauf si vous avez également défini une étiquette correspondante par défaut, l’étiquetage obligatoire risque de contrarier vos utilisateurs qui reçoivent de fréquentes invites. 
 
 - **Fournir un lien d’aide vers une page d’aide personnalisée.** Si vos utilisateurs ne sont pas sûrs de comprendre la signification ou l'utilisation de vos étiquettes de confidentialité, vous pouvez fournir une URL de type En savoir plus, qui apparaît en bas du menu **Etiquettes de confidentialité** dans les applications Office :
 
@@ -236,5 +257,5 @@ Vous pouvez également en savoir plus sur les [solutions de partenaires intégr�
 
 ## <a name="deployment-guidance"></a>Instructions de déploiement
 
-Consultez [Prise en main des étiquettes de confidentialité](get-started-with-sensitivity-labels.md).
+Pour la planification et des instructions relatives au déploiement qui incluent les informations relatives aux licences, les autorisations, la stratégie de déploiement ainsi qu’une liste de ressources pour les scénarios pris en charge et la documentation de l’utilisateur final, voir [Prise en main des étiquettes de confidentialité](get-started-with-sensitivity-labels.md).
 
