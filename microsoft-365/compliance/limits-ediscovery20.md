@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez les limites de cas, les limites d’indexation et les limites de recherche en vigueur pour la solution eDiscovery avancée dans Microsoft 365.
-ms.openlocfilehash: c139480f18e0e6d94aae5a38d5fd636fbc62b2dc
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 7d676b568c7e4cddedeff02c62b4645619d53357
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358472"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446251"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>Limites définies dans Advanced eDiscovery
 
@@ -38,6 +38,8 @@ Le tableau suivant répertorie les limites pour les cas et les ensembles de rév
 |Quantité totale de données chargées dans tous les jeux de révision de l’organisation par jour.<br/> |2 TO <br/> |
 |Nombre maximal de charges par cas.  <br/> |200 <br/> |
 |Nombre maximal de jeux de révision par cas.  <br/> |vingtaine <br/> |
+|Nombre maximal de groupes de balises par cas.  <br/> |1000 <br/> |
+|Nombre maximal de balises par cas.  <br/> |1000 <br/> |
 |||
 
 ## <a name="indexing-limits"></a>Limites d’indexation

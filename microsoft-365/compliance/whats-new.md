@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Qu’il s’agisse d’ajouter de nouvelles solutions au centre de conformité, de mettre à jour des fonctionnalités existantes en fonction de vos commentaires ou de déployer une documentation actualisée et actualisée, Microsoft 365 vous aide à rester informé de la mise en conformité en perpétuelle évolution. Découvrez ce que nous avons fait dans ce mois-ci.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: c33e136be55ea60f1e5954d4713b219045b1f0eb
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: b124e4c4d120d981766493034aba9bc6eefa7d9c
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398525"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446557"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Nouveautés dans la conformité Microsoft 365
 
@@ -43,7 +43,7 @@ Consultez la feuille de [route de microsoft 365](https://www.microsoft.com/en-us
 
 Plusieurs fonctionnalités nouvelles et améliorées ont atteint la préversion publique ce mois-ci :
 
-**Gestion des risques initiés**
+**Gestion des risques internes**
 
 - Consultez nos six nouveaux [modèles de stratégie](insider-risk-management-policies.md#policy-templates):
     - Fuites de données par les utilisateurs prioritaires
@@ -170,7 +170,7 @@ Le chargement réseau est désormais disponible dans les Émirats Arabes Unis.
 
 ### <a name="sensitivity-labels-new-privacy-option"></a>Étiquettes de sensibilité : nouvelle option de confidentialité
 
-Lors de la configuration des [paramètres de site et de groupe](sensitivity-labels-teams-groups-sites.md#how-to-configure-site-and-group-settings) pour une étiquette, vous pouvez maintenant définir l’option de confidentialité sur **aucune-laisser l’utilisateur choisir qui peut accéder au site**. Cela est utile lorsque vous souhaitez protéger le contenu du conteneur à l’aide d’une étiquette de sensibilité, tout en laissant les utilisateurs configurer eux-mêmes le paramètre de confidentialité.
+Lors de la configuration des [paramètres de site et de groupe](sensitivity-labels-teams-groups-sites.md#how-to-configure-groups-and-site-settings) pour une étiquette, vous pouvez maintenant définir l’option de confidentialité sur **aucune-laisser l’utilisateur choisir qui peut accéder au site**. Cela est utile lorsque vous souhaitez protéger le contenu du conteneur à l’aide d’une étiquette de sensibilité, tout en laissant les utilisateurs configurer eux-mêmes le paramètre de confidentialité.
 
 ## <a name="april-2020"></a>Avril 2020
 

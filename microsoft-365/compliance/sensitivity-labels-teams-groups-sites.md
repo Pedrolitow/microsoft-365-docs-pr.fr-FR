@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de confidentialité pour protéger le contenu des sites SharePoint et Microsoft Teams, ainsi que des Groupes Microsoft 365.
-ms.openlocfilehash: 6c8ca07cc0da826be23bcee79dbc4e3824b00695
-ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
+ms.openlocfilehash: e8d9b3c4928172ace2bc63d5aa31d65c4145ad6a
+ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "48357880"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48430313"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint
 
@@ -86,9 +86,9 @@ Dans cette nouvelle page de **Paramètres de site et de groupe**, configurez les
 
 - **Accès des utilisateurs externes** : déterminez si le propriétaire du groupe peut [ajouter des invités au groupe](/office365/admin/create-groups/manage-guest-access-in-groups).
 
-- **Appareils non gérés** : cette option utilise la fonctionnalité SharePoint qui utilise l’accès conditionnel Azure AD pour bloquer ou limiter l’accès aux contenus SharePoint et OneDrive provenant d’appareils non gérés. Pour plus d’informations, voir [Contrôler l’accès à partir des appareils non gérés](/sharepoint/control-access-from-unmanaged-devices). L’option que vous spécifiez pour ce paramètre d’étiquette correspond à l’exécution d’une commande PowerShell pour un site, comme décrit dans les étapes 7-9 à partir de [Bloquer ou limiter l’accès à un site SharePoint ou à OneDrive spécifique](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive).
+- **Appareils non gérés** : cette option utilise la fonctionnalité SharePoint qui utilise l’accès conditionnel Azure AD pour bloquer ou limiter l’accès aux contenus SharePoint et OneDrive provenant d’appareils non gérés. Pour plus d’informations, voir [Contrôler l’accès à partir des appareils non gérés](/sharepoint/control-access-from-unmanaged-devices). L’option spécifiée pour ce paramètre d’étiquette correspond à l’exécution d’une commande PowerShell pour un site, comme décrit dans les étapes 2-4 depuis [Bloquer ou limiter l’accès à un site SharePoint ou à OneDrive spécifique](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive).
     
-    Si vous ne configurez pas la stratégie d’accès conditionnel dépendante comme décrit dans les étapes 1-6 dans les instructions SharePoint, l’option que vous spécifiez ici n’aura aucun effet. De plus, elle n’aura aucun effet si elle est moins restrictive qu’un paramètre configuré au niveau du client. Si vous avez configuré un paramètre à l’échelle de l’Organisation pour les appareils non gérés, sélectionnez un paramètre d’étiquette qui soit de la même ou de la plus restrictive.
+    Si vous ne configurez pas la stratégie d’accès conditionnel dépendante pour SharePoint comme décrit dans [Utiliser les restrictions appliquées par l’application](https://docs.microsoft.com/sharepoint/app-enforced-restrictions), l’option spécifiée ici n’aura aucun effet. De plus, elle n’aura aucun effet si elle est moins restrictive qu’un paramètre configuré au niveau du client. Si vous avez configuré un paramètre à l’échelle de l’Organisation pour les appareils non gérés, sélectionnez un paramètre d’étiquette qui soit de la même ou de la plus restrictive.
     
     Par exemple, si votre client est configuré pour **Autoriser un accès limité au web uniquement**, le paramètre d’étiquette qui autorise l’accès complet n’aura aucun effet, car il est moins restrictif. Pour ce paramètre de niveau client, sélectionnez le paramètre d’étiquette pour bloquer l’accès (plus restrictif) ou le paramètre d’étiquette pour un accès limité (identique au paramètre client).
     

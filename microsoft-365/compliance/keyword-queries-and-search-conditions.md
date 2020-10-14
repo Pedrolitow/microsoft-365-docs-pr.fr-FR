@@ -22,12 +22,12 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez les propriétés de messagerie et de fichier que vous pouvez rechercher dans le centre de conformité Office 365 Security &.
-ms.openlocfilehash: fb3d0b9d941658f2613344d00984dbe7846565a6
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 5445c9485d7076b3819c796028a311a523a92dde
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662298"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446193"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Requêtes par mots clés et conditions de recherche pour la recherche de contenu
 
@@ -54,7 +54,7 @@ Le tableau suivant répertorie les propriétés de message électronique pouvant
   
 |**Propriété**|**Description de la propriété**|**Exemples**|**Résultats de recherche renvoyés par les exemples**|
 |:-----|:-----|:-----|:-----|
-|AttachmentNames|Nom des fichiers joints à un message électronique.|`attachmentnames:annualreport.ppt`  <br/> `attachmentnames:annual*` <br/> attachmentnames:.pptx|Messages comportant un fichier joint nommé annualreport.ppt. Dans le deuxième exemple, l'utilisation du caractère générique permet de renvoyer les messages dont le nom d'une pièce jointe contient le mot « annual ». Le troisième exemple renvoie toutes les pièces jointes avec l’extension de fichier pptx.|
+|AttachmentNames|Nom des fichiers joints à un message électronique.|`attachmentnames:annualreport.ppt`  <br/> `attachmentnames:annual*` <br/> `attachmentnames:.pptx` |Messages comportant un fichier joint nommé annualreport.ppt. Dans le deuxième exemple, l'utilisation du caractère générique permet de renvoyer les messages dont le nom d'une pièce jointe contient le mot « annual ». Le troisième exemple renvoie toutes les pièces jointes avec l’extension de fichier pptx.|
 |Cci|Champ CCI d’un message électronique. <sup>1</sup>|`bcc:pilarp@contoso.com`  <br/> `bcc:pilarp`  <br/> `bcc:"Pilar Pinilla"`|Tous les exemples renvoient des messages dont « Pilar Pinilla » est en copie carbone invisible.|
 |Category| Catégories à rechercher. Les catégories peuvent être définies par les utilisateurs à l’aide d’Outlook ou d’Outlook sur le Web (anciennement Outlook Web App). Les valeurs possibles sont les suivantes :  <br/><br/>  blue  <br/>  green  <br/>  orange  <br/>  purple  <br/>  red  <br/>  yellow|`category:"Red Category"`|Messages auxquels a été attribuée la catégorie « red » dans les boîtes aux lettres source.|
 |Cc|Champ CC d’un message électronique. <sup>1</sup>|`cc:pilarp@contoso.com`  <br/> `cc:"Pilar Pinilla"`|Dans les deux exemples, les messages avec Pilar Pinilla spécifiés dans le champ CC.|
@@ -75,7 +75,18 @@ Le tableau suivant répertorie les propriétés de message électronique pouvant
 |||||
    
 > [!NOTE]
-> <sup>1</sup> pour la valeur d’une propriété de destinataire, vous pouvez utiliser l’adresse de messagerie (également appelée *nom d’utilisateur principal* ou UPN), le nom d’affichage ou l’alias pour spécifier un utilisateur. Par exemple, vous pouvez utiliser annb@contoso.com, annb ou « Ann Beebe » pour spécifier l'utilisateur Ann Beebe.<br/><br/>Lors de la recherche dans n’importe quelle propriété du destinataire (de, à, CC, CCI, participants et destinataires), Microsoft 365 tente de développer l’identité de chaque utilisateur en le recherchant dans Azure Active Directory.  Si l’utilisateur est trouvé dans Azure Active Directory, la requête est étendue de manière à inclure l’adresse de messagerie (ou UPN), l’alias, le nom d’affichage et le LegacyExchangeDN de l’utilisateur.<br/><br/>Par exemple, une requête telle que `participants:ronnie@contoso.com` Expands to `participants:ronnie@contoso.com OR participants:ronnie OR participants:"Ronald Nelson" OR participants:"<LegacyExchangeDN>"` .<br/><br/>Pour empêcher l’expansion des destinataires, vous pouvez ajouter un caractère générique (astérisque) à la fin de l’adresse de messagerie dans la requête de recherche ; par exemple, `participants:ronnie@contoso.com*` .
+> <sup>1</sup> pour la valeur d’une propriété de destinataire, vous pouvez utiliser l’adresse de messagerie (également appelée *nom d’utilisateur principal* ou UPN), le nom d’affichage ou l’alias pour spécifier un utilisateur. Par exemple, vous pouvez utiliser annb@contoso.com, annb ou « Ann Beebe » pour spécifier l'utilisateur Ann Beebe.
+
+### <a name="recipient-expansion"></a>Expansion des destinataires
+
+Lors de la recherche dans n’importe quelle propriété du destinataire (de, à, CC, CCI, participants et destinataires), Microsoft 365 tente de développer l’identité de chaque utilisateur en le recherchant dans Azure Active Directory (Azure AD).  Si l’utilisateur est trouvé dans Azure AD, la requête est étendue de façon à inclure l’adresse de messagerie (ou UPN), l’alias, le nom d’affichage et le LegacyExchangeDN de l’utilisateur. Par exemple, une requête telle que `participants:ronnie@contoso.com` Expands to `participants:ronnie@contoso.com OR participants:ronnie OR participants:"Ronald Nelson" OR participants:"<LegacyExchangeDN>"` .
+
+Pour empêcher l’expansion des destinataires, ajoutez un caractère générique (astérisque) à la fin de l’adresse de messagerie et utilisez un nom de domaine réduit ; par exemple, `participants:"ronnie@contoso*"` Veillez à entourer l’adresse de messagerie de guillemets doubles.
+
+Toutefois, sachez que le fait d’empêcher l’expansion des destinataires dans la requête de recherche peut entraîner l’impossibilité de renvoyer des éléments pertinents dans les résultats de la recherche. Les messages électroniques dans Exchange peuvent être enregistrés avec différents formats de texte dans les champs de destinataire. Le développement des destinataires est destiné à atténuer ce fait en renvoyant des messages pouvant contenir des formats de texte différents. Ainsi, le fait d’empêcher l’expansion des destinataires peut entraîner la non-retour de tous les éléments pertinents pour votre enquête.
+
+> [!NOTE]
+> Si vous devez examiner ou réduire les éléments renvoyés par une requête de recherche en raison de l’expansion des destinataires, envisagez d’utiliser Advanced eDiscovery. Vous pouvez rechercher des messages (en tirant parti de l’expansion des destinataires), les ajouter à un jeu de révision, puis utiliser les requêtes ou les filtres Set Set pour examiner ou affiner les résultats. Pour plus d’informations, reportez-vous à la rubrique [Collect Data for a case](collecting-data-for-ediscovery.md) et [query the Data in a Review Set](review-set-search.md).
 
 ## <a name="searchable-site-properties"></a>Propriétés de site utilisables dans une requête
 
@@ -87,7 +98,7 @@ Pour obtenir la liste complète des propriétés SharePoint pouvant faire l’ob
 |:-----|:-----|:-----|:-----|
 |Auteur|Champ Auteur des documents Office (subsiste si un document est copié). Par exemple, si un utilisateur crée un document et l’envoie par courrier électronique à une personne qui le charge ensuite sur SharePoint, le document conserve toujours l’auteur d’origine. Veillez à utiliser le nom complet de l’utilisateur pour cette propriété.|`author:"Garth Fort"`|Tous les documents créés par Garth Fort.|
 |ContentType|Type de contenu SharePoint d’un élément, tel qu’un élément, un document ou une vidéo.|`contenttype:document`|Tous les documents sont renvoyés.|
-|Créé|Date de création d’un élément.|`created>=06/01/2016`|Tous les éléments créés le 1er juin 2016 ou après cette fin.|
+|Created|Date de création d’un élément.|`created>=06/01/2016`|Tous les éléments créés le 1er juin 2016 ou après cette fin.|
 |CreatedBy|Personne qui a créé ou chargé un élément. Veillez à utiliser le nom complet de l’utilisateur pour cette propriété.|`createdby:"Garth Fort"`|Tous les éléments créés ou chargés par Garth Fort.|
 |DetectedLanguage|Langue d’un élément.|`detectedlanguage:english`|Tous les éléments en anglais.|
 |DocumentLink|Chemin d’accès (URL) d’un dossier spécifique sur un site SharePoint ou OneDrive entreprise. Si vous utilisez cette propriété, assurez-vous de rechercher le site dans lequel se trouve le dossier spécifié.  <br/> Pour renvoyer les éléments situés dans les sous-dossiers du dossier que vous spécifiez pour la propriété documentlink, vous devez ajouter/ \* à l’URL du dossier spécifié, par exemple,  `documentlink: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/>Pour plus d’informations sur la recherche de la propriété documentlink et l’utilisation d’un script pour obtenir les URL documentlink pour les dossiers d’un site spécifique, voir [use content Search for Targeted collections](use-content-search-for-targeted-collections.md).|`documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Private"`  <br/> `documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Shared with Everyone/*" AND filename:confidential`|Le premier exemple renvoie tous les éléments dans le dossier OneDrive entreprise spécifié. Le deuxième exemple renvoie des documents dans le dossier de site spécifié (et tous les sous-dossiers) qui contiennent le mot « Confidential » dans le nom de fichier.|
@@ -195,7 +206,7 @@ Créez une condition avec des propriétés communes lorsque vous recherchez des 
 |Expéditeur/auteur|Pour la messagerie électronique, personne ayant envoyé le message. Pour les documents, personne mentionnée dans le champ Auteur des documents Office. Vous pouvez saisir plusieurs noms, séparés par des virgules. Deux ou plusieurs valeurs sont connectées logiquement par l’opérateur **OR**.|
 |Taille (en octets)|Pour la messagerie électronique et les documents, taille de l’élément (en octets).|
 |Subject/title|Pour la messagerie électronique, texte de la ligne d’objet d’un message. Pour les documents, titre du document. Comme expliqué précédemment, la propriété Title est des métadonnées spécifiées dans les documents Microsoft Office. Vous pouvez taper le nom de plus d’un objet/titre, séparé par des virgules. Deux ou plusieurs valeurs sont connectées logiquement par l’opérateur **OR**.|
-|Étiquette de conformité|Pour les courriers électroniques et les documents, des étiquettes de rétention qui ont été attribuées automatiquement à des messages et des documents par des stratégies d’étiquetage automatique ou des étiquettes de rétention qui ont été affectées manuellement par les utilisateurs. Les étiquettes de rétention sont utilisées pour classer les e-mails et les documents pour la gouvernance des informations et appliquer les règles de rétention en fonction des paramètres définis par l’étiquette. Vous pouvez taper une partie du nom de l’étiquette de rétention et utiliser un caractère générique ou taper le nom complet de l’étiquette. Pour plus d’informations sur les étiquettes de rétention, voir [en savoir plus sur les stratégies de rétention et les étiquettes de conservation](retention.md).|
+|Étiquette de conformité|Pour les courriers électroniques et les documents, des étiquettes de rétention qui ont été affectées à des messages et des documents automatiquement par des stratégies d’étiquette automatique ou des étiquettes de rétention qui ont été affectées manuellement par les utilisateurs. Les étiquettes de rétention sont utilisées pour classer les e-mails et les documents pour la gouvernance des informations et appliquer les règles de rétention en fonction des paramètres définis par l’étiquette. Vous pouvez taper une partie du nom de l’étiquette de rétention et utiliser un caractère générique ou taper le nom complet de l’étiquette. Pour plus d’informations sur les étiquettes de rétention, voir [en savoir plus sur les stratégies de rétention et les étiquettes de conservation](retention.md).|
 |||
   
 ### <a name="conditions-for-mail-properties"></a>Conditions pour les propriétés de messagerie
@@ -223,7 +234,7 @@ Créer une condition à l’aide des propriétés de document lors de la recherc
 |:-----|:-----|
 |Auteur|Champ Auteur des documents Office (subsiste si un document est copié). Par exemple, si un utilisateur crée un document et l’envoie par courrier électronique à une personne qui le charge ensuite sur SharePoint, le document conserve toujours l’auteur d’origine.|
 |Titre|Titre du document. Cette propriété correspond aux métadonnées spécifiées dans les documents Office. Il est différent du nom de fichier du document.|
-|Créé|Date de création d’un document.|
+|Created|Date de création d’un document.|
 |Dernière modification|Date de la dernière modification apportée à un document.|
 |Type de fichier|Extension d’un fichier ; par exemple, docx, One, pptx ou xlsx. Il s’agit de la même propriété que la propriété de site FileExtension.|
 |||
