@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Décrit comment préparer la mise en service des utilisateurs à Microsoft 365 à l’aide de la synchronisation d’annuaires et des avantages à long terme de cette méthode.
-ms.openlocfilehash: 79d2a7932867531849ce75f8452b91e8c7ddd7b1
-ms.sourcegitcommit: 7e8151ff74cb1cfc0dd59fadcac423c338415d77
+ms.openlocfilehash: 41c2ff08c8e2ae11079e82d378110d10bd7cab3e
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "48390172"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464239"
 ---
 # <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>Préparer la synchronisation d'annuaires pour Microsoft 365
 
@@ -100,7 +100,7 @@ Les attributs que vous devez préparer sont répertoriés ici :
   - Si l’attribut existe dans l’objet utilisateur, il sera synchronisé avec Microsoft 365, mais Microsoft 365 ne l’exige pas ou ne l’utilise pas.
   - Nombre maximal de caractères : 64
 
-- **messagerie**
+- **mail**
 
   - La valeur de l’attribut doit être unique dans l’annuaire.
 
@@ -159,7 +159,7 @@ Les attributs que vous devez préparer sont répertoriés ici :
   - Nombre maximal de caractères pour le nom de domaine qui suit le signe arobase (@) : 48
   - Caractères non valides : \% &amp; \* +/= ? { } | \< \> ( ) ; : , [ ] " '
   - Caractères autorisés : A – Z, a-z, 0 – 9, '. - _ ! # ^ ~
-  - Un tréma est également un caractère non valide.
+  - Les lettres avec des signes diacritiques, tels que les trémas, les accents et les tildes, sont des caractères non valides.
   - Le caractère @ est requis dans chaque valeur **userPrincipalName** .
   - Le caractère @ ne peut pas être le premier caractère dans chaque valeur **userPrincipalName**.
   - Le nom d’utilisateur ne peut pas se terminer par un point (.), une esperluette ( &amp; ), un espace ou un signe arobase (@).

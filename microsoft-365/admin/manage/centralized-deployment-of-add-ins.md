@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Déterminez si votre client et vos utilisateurs satisfont à la configuration requise, afin que vous puissiez utiliser un déploiement centralisé pour déployer des compléments Office.
-ms.openlocfilehash: c3e306789f5b1c09e835d8d2c5ebea668bf14874
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+ms.openlocfilehash: c89cb801a5b2fcad87227feaf4228b0dcabcf609
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235417"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464049"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Déterminer si le déploiement centralisé des compléments fonctionne pour votre organisation
 
@@ -46,7 +46,7 @@ Un complément peut prendre jusqu’à 24 heures pour s’afficher pour le clien
 ## <a name="requirements"></a>Configuration requise
 
 Le déploiement centralisé des compléments nécessite que les utilisateurs utilisent les applications Microsoft 365 pour Enterprise ou Microsoft 365 Business Premium (et sont connectés à Office à l’aide de leur ID d’organisation) et disposent de boîtes aux lettres Exchange Online et Exchange Online actives. Le répertoire de votre abonnement doit être dans ou fédéré à Azure Active Directory.
-Vous pouvez afficher les conditions requises spécifiques pour Office et Exchange ci-dessous, ou utiliser le[Vérificateur de compatibilité de déploiement centralisé](#centralized-deployment-compatibility-checker).
+Vous pouvez afficher les conditions requises spécifiques pour Office et Exchange ci-dessous, ou utiliser le [Vérificateur de compatibilité de déploiement centralisé](#centralized-deployment-compatibility-checker).
 
 La fonctionnalité Déploiement centralisé ne prend pas en charge ce qui suit :
   
@@ -134,7 +134,8 @@ Une fois l'exécution de l'outil terminée, celui-ci génère un fichier de sort
     
 - Boîte aux lettres prise en charge - Si l'utilisateur a une boîte aux lettres OAuth
 
-
+> [!NOTE]
+> L’authentification multifacteur n’est pas prise en charge lors de l’utilisation du module PowerShell de déploiement central.
   
 ## <a name="user-and-group-assignments"></a>Affectations à des utilisateurs et groupes
 
@@ -171,4 +172,3 @@ Si vous ou vos utilisateurs rencontrez des problèmes lors du chargement du comp
 |Office  <br/> | Journaux Charles/Fiddler  <br/>  ID de client ( [Découvrez comment](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id.aspx))  <br/>  Corrélation. Affichez la source d’une des pages Office et recherchez la valeur de l’ID de corrélation et envoyez-la au support technique :  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
 |Clients riches (Windows, Mac)  <br/> | Journaux Charles/Fiddler  <br/>  Numéros de build de l’application cliente (de préférence sous la forme d’une capture d’écran du **fichier/compte**)  <br/> |
    
-

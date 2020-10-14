@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: Décrit la principale différence entre la compréhension de document et les modèles de traitement de formulaire
-ms.openlocfilehash: c5d60753e84cb55dc088b79f90fe841b50da1836
-ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
+ms.openlocfilehash: 98d5e9463dedda96c02ed7c3ed80576638941816
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338593"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464227"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models"></a>Différence entre la compréhension de document et les modèles de traitement de formulaire 
 
@@ -54,8 +54,6 @@ Les modèles de compréhension de document sont créés et gérés dans un site 
 Les modèles de traitement de formulaire sont créés dans [AI Builder](https://docs.microsoft.com/ai-builder/overview) de PowerApps, mais la création est lancée directement à partir d’une bibliothèque de documents SharePoint. La création de modèle de traitement de formulaire doit être activée sur votre bibliothèque de documents pour qu’un utilisateur puisse créer un modèle de traitement de formulaire pour celle-ci. Un administrateur peut activer cette option dans les paramètres d’administration du contenu. Les modèles de traitement de formulaire utilisent des flux PowerAutomate pour traiter les fichiers lorsqu’ils sont téléchargés dans la bibliothèque de documents.
 
 Lorsque vous créez un modèle de compréhension de document, vous créez un nouveau [type de contenu SharePoint](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978), qui est enregistré dans la galerie Types de contenu SharePoint. Vous pouvez également utiliser des types de contenu existants pour définir votre modèle si nécessaire.
-
-Les modèles de traitement de formulaire sont créés dans [AI Builder](https://docs.microsoft.com/ai-builder/overview) de PowerApps, mais la création est lancée directement à partir d’une bibliothèque de documents SharePoint. La création de modèle de traitement de formulaire doit être activée sur votre bibliothèque de documents pour qu’un utilisateur puisse créer un modèle de traitement de formulaire pour celle-ci. Un administrateur peut activer cette option dans les paramètres d’administration du contenu. Les modèles de traitement de formulaire utilisent des flux PowerAutomate pour traiter les fichiers lorsqu’ils sont téléchargés dans la bibliothèque de documents.
 
 Les modèles de traitement de formulaire créent également de nouveaux [types de contenu SharePoint](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978) et sont, eux aussi, stockés dans la galerie Types de contenu SharePoint.
 

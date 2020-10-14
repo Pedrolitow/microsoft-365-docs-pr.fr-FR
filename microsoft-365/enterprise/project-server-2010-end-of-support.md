@@ -18,18 +18,18 @@ search.appverid:
 - PJU120
 - PJW120
 description: Les fins de prise en charge de Project Server 2010 se terminent le 13 avril 2021. Utilisez cet article pour effectuer une mise à niveau vers Project Online ou une version plus récente de Project Server en local.
-ms.openlocfilehash: 0b2e6b930f52ab0497dc93905b66dd9162b65b65
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 2cf18c5e91c095c92230a33f1b8a19fa26840777
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948219"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464323"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Feuille de route pour la fin de la prise en charge de Project Server 2010
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Project Server 2010 atteindra la fin de la prise en charge le **13 avril 2021**. Cette date a été étendue à partir de la date de fin de prise en charge précédente du 13 octobre 2020. Si vous utilisez actuellement Project Server 2010, Notez que les autres produits associés ont les dates de fin de prise en charge suivantes :
+Project Server 2010 atteindra la fin de la prise en charge le **13 avril 2021**. Cette date a été étendue à partir de la fin du support précédent du 13 octobre 2020. Si vous utilisez actuellement Project Server 2010, Notez que les autres produits associés ont les dates de fin de prise en charge suivantes :
 
 |Produit |Fin de la date de prise en charge|
 |---|---|
@@ -114,7 +114,7 @@ Vous pouvez créer manuellement votre configuration PWA dans Project Online (par
 
 Ressources clés :
 
-|Resource|Description|
+|Ressource|Description|
 |---|---|
 |[Prenez en main Project Online](https://support.office.com/article/e3e5f64f-ada5-4f9d-a578-130b2d4e5f11)|Comment configurer et utiliser Project online.|
 |[Description du service Project Online](https://go.microsoft.com/fwlink/p/?linkid=829088)|Informations sur les différents plans Project Online disponibles.|

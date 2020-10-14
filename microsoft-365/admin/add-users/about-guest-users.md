@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment la liste des utilisateurs invités est renseignée dans le centre d’administration 365 de Microsoft.
-ms.openlocfilehash: b22b23e27c1a0cbb241b75a9a9953537f9fcb819
-ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
+ms.openlocfilehash: c698332351d525c12659849826d9e822351a347d
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44786248"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48463977"
 ---
 # <a name="guest-users-in-microsoft-365-admin-center"></a>Utilisateurs invités dans le centre d’administration Microsoft 365
 
@@ -51,7 +51,7 @@ Pour rejoindre une équipe en tant qu’invité, consultez la vidéo suivante :
 
 Pour ajouter des utilisateurs invités dans Azure Active Directory, consultez la rubrique [Ajouter des utilisateurs invités](https://docs.microsoft.com/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal).
 
-Lorsque vous ajoutez un utilisateur, vous pouvez également l’affecter à un groupe ou lui accorder l’accès à une application dans votre organisation. Une fois que vous avez ajouté un nouvelle dans le portail Azure AD, cet utilisateur est également affiché sur la page utilisateurs invités dans le centre d’administration 365 de Microsoft.
+Lorsque vous ajoutez un utilisateur, vous pouvez également l’affecter à un groupe ou lui accorder l’accès à une application dans votre organisation. Une fois que vous avez ajouté un utilisateur dans le portail Azure AD, cet utilisateur est également affiché sur la page utilisateurs invités dans le centre d’administration 365 de Microsoft.
 Une fois qu’un utilisateur est ajouté à la liste des utilisateurs invités, il peut être [ajouté à des groupes](../create-groups/manage-guest-access-in-groups.md#add-guests-to-a-microsoft-365-group-from-the-admin-center) dans le centre d’administration 365 de Microsoft.
 
 Consultez la rubrique [Ajouter des utilisateurs invités en bloc](https://docs.microsoft.com/azure/active-directory/b2b/tutorial-bulk-invite) pour inviter plusieurs invités à collaborer avec votre organisation.

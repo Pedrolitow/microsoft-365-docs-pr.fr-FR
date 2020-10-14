@@ -16,12 +16,14 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 6949e72b9f70464221b9aff7137b8ec034a3b04f
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+- m365solution-identitydevice
+- m365solution-scenario
+ms.openlocfilehash: 56b712c73d63bfcb06d5d35d627facb229668c59
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399723"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464143"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>Recommandations de stratégie pour la sécurisation des conversations, des groupes et des fichiers teams
 
@@ -51,7 +53,7 @@ Pour protéger la conversation, les groupes et le contenu dans Teams, le diagram
 
 Il s’agit des services dépendants à inclure dans l’affectation d’applications Cloud pour teams :
 
-- Microsoft Teams
+- Microsoft Teams
 - SharePoint et OneDrive Entreprise
 - Exchange Online
 - Skype Entreprise Online

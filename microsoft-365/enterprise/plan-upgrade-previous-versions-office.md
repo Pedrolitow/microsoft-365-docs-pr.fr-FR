@@ -16,12 +16,12 @@ f1.keywords:
 ms.custom:
 - seo-marvel-apr2020
 description: Cet article contient des ressources destinées aux utilisateurs d’Office 2007 ou Office 2010 afin de les aider à planifier leur mise à niveau.
-ms.openlocfilehash: 0b137b39d671b9746445f9e41a5859732574dbe4
-ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
+ms.openlocfilehash: 257f66ab2f542f18c0a1eb2d503e0bf87e13d184
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "48384570"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464419"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Planifiez votre mise à jour des serveurs et clients Office 2007 et Office 2010
 
@@ -29,7 +29,7 @@ ms.locfileid: "48384570"
 
 Si votre organisation utilise des versions antérieures des produits et serveurs Office, il est très utile de commencer à planifier votre mise à niveau. Les produits et services Office 2007 ont atteint leur [fin de prise en charge](upgrade-from-office-2007-servers-and-products.md). Pour les produits et services Office 2010 :
 
-- La fin du support est prise en charge par les **Office 2010 et Exchange 2010 le 13 octobre 2020**. 
+- Office 2010 et Exchange 2010 ont atteint leur fin d’assistance le **13 octobre 2020**. 
 - La prise en charge de SharePoint 2010 et de Project Server 2010 se termine le **avril 13, 2021**. 
 
 Pour plus d’informations, consultez la rubrique [mise à niveau à partir de serveurs et clients Office 2010](upgrade-from-office-2010-servers-and-products.md).

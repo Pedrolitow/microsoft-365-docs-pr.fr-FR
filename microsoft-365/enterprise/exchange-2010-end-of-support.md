@@ -3,7 +3,6 @@ title: Feuille de route pour la fin de la prise en charge d'Exchange 2010
 ms.author: dstrome
 author: dstrome
 manager: laurawi
-ms.date: 09/16/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -13,22 +12,22 @@ ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 f1.keywords:
 - NOCSH
 description: Exchange 2010 est à la fin de la prise en charge. Utilisez cette feuille de route de planification comme guide pour préparer la mise à niveau vers Exchange Online ou une version plus récente d’Exchange Server en local.
-ms.openlocfilehash: 128abd1e98c3e9d1ec4dd8a58683ee0ab019af18
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: dbae3fba3ddbff016e0e9434db4af6ca0a046b0d
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950819"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464251"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Feuille de route pour la fin de la prise en charge d'Exchange 2010
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Le **13 octobre 2020**, Exchange Server 2010 atteindra la fin de la prise en charge. Si vous n’avez pas encore commencé la migration d’Exchange 2010 vers Microsoft 365, Office 365 ou Exchange 2016, vous pouvez maintenant commencer votre planification.
+Exchange Server 2010 a atteint sa fin de prise en charge le **13 octobre 2020**. Si vous n’avez pas encore commencé la migration d’Exchange 2010 vers Microsoft 365, Office 365 ou Exchange 2016, vous pouvez maintenant commencer votre planification.
 
 ## <a name="what-does-end-of-support-mean"></a>Qu’est-ce que la fin de la prise en charge ?
 
-Exchange Server, comme presque tous les produits Microsoft, a un cycle de vie de la prise en charge au cours duquel nous fournissons de nouvelles fonctionnalités, des correctifs de bogues, des correctifs de sécurité, etc. Ce cycle de vie dure généralement 10 ans après la date de publication initiale du produit, et la fin de ce cycle de vie est connue sous le nom de la fin du support du produit. Lorsque Exchange 2010 atteint la fin du support le 13 octobre 2020, Microsoft ne fournit plus les éléments suivants :
+Exchange Server, comme presque tous les produits Microsoft, a un cycle de vie de la prise en charge au cours duquel nous fournissons de nouvelles fonctionnalités, des correctifs de bogues, des correctifs de sécurité, etc. Ce cycle de vie dure généralement 10 ans après la date de publication initiale du produit, et la fin de ce cycle de vie est connue sous le nom de la fin du support du produit. Étant donné qu’Exchange 2010 a atteint sa fin de prise en charge le 13 octobre 2020, Microsoft ne fournira plus les éléments suivants :
 
 - Support technique pour les problèmes susceptibles de se produire.
 - Correctifs de bogues pour les problèmes découverts et susceptibles d’avoir un impact sur la stabilité et l’utilisation du serveur.
@@ -49,8 +48,8 @@ Avec Exchange 2010 de la fin de la prise en charge, il s’agit d’un excellent
 > [!IMPORTANT]
 > Si votre organisation choisit de migrer des boîtes aux lettres vers Microsoft 365, mais qu’elle envisage de maintenir DirSync ou Azure AD Connect en place pour continuer à gérer les comptes d’utilisateurs à partir d’Active Directory local, vous devez conserver au moins un serveur Exchange local. Si le dernier serveur Exchange est supprimé, vous ne pourrez pas modifier les destinataires Exchange dans Exchange Online. En effet, la source d’autorité reste dans votre annuaire Active Directory local et des modifications doivent y être apportées. Dans ce scénario, vous disposez des options suivantes :
 
-- (**Recommandé**) Si vous pouvez migrer vos boîtes aux lettres vers Microsoft 365 et mettre à niveau vos serveurs le 13 octobre 2020, utilisez Exchange 2010 pour vous connecter à Microsoft 365 et migrer les boîtes aux lettres. Ensuite, migrez Exchange 2010 vers Exchange 2016 et désactivez tous les autres serveurs Exchange 2010.
-- Si vous ne pouvez pas effectuer la mise à niveau de la migration de boîtes aux lettres et du serveur local avant le 13 octobre 2020, mettez d’abord à niveau vos serveurs Exchange 2010 sur site vers Exchange 2016, puis utilisez Exchange 2016 pour vous connecter à Microsoft 365 et migrer les boîtes aux lettres.
+- (**Recommandé**) Si vous avez réussi à migrer vos boîtes aux lettres vers Microsoft 365 et à mettre à niveau vos serveurs le 13 octobre 2020, utilisez Exchange 2010 pour vous connecter à Microsoft 365 et migrer les boîtes aux lettres. Ensuite, migrez Exchange 2010 vers Exchange 2016 et désactivez tous les autres serveurs Exchange 2010.
+- Si vous n’avez pas pu effectuer la migration de la boîte aux lettres et la mise à niveau du serveur local du 13 octobre 2020, mettez d’abord à niveau vos serveurs Exchange 2010 locaux vers Exchange 2016, puis utilisez Exchange 2016 pour vous connecter à Microsoft 365 et migrer les boîtes aux lettres.
 
 > [!NOTE]
 > Bien qu’un peu plus complexe, vous pouvez également migrer des boîtes aux lettres vers Microsoft 365 lors de la migration de vos serveurs Exchange 2010 locaux vers Exchange 2016.
@@ -65,7 +64,7 @@ Les sections suivantes explorent chaque option plus en détail.
 
 La migration de votre courrier électronique vers Microsoft 365 est l’option la plus simple et la plus simple pour vous aider à supprimer votre déploiement Exchange 2010. Avec une migration vers Microsoft 365, vous pouvez effectuer un seul tronçon entre les anciennes technologies et les fonctionnalités de pointe, telles que :
 
-- Les fonctionnalités de conformité telles que les stratégies de rétention, le blocage sur place et la mise en attente pour litige, la découverte électronique inaltérable et bien plus encore.
+- Les fonctionnalités de conformité telles que les stratégies de rétention, les In-Place et la mise en attente pour litige, la découverte électronique inaltérable et bien plus encore.
 - Microsoft Teams
 - Power BI
 - Boîte de réception triée
