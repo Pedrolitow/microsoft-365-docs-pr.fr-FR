@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Découvrez comment renforcer la sécurité de votre organisation contre les attaques par mot de passe et la raison pour laquelle vous devez interdire les mots de passe courants et activer l’authentification multifacteur basée sur le risque.
-ms.openlocfilehash: 0ae26dc27cc698c24d999acde03f63f9cfead081
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: 0bfbeac6fb8069e846ddad3c5b618687ba3c2260
+ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131941"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48456322"
 ---
 # <a name="password-policy-recommendations"></a>Recommandations en matière de stratégie de mot de passe
 
@@ -102,7 +102,7 @@ En revanche, voici quelques recommandations favorisant une variété des mots de
   
 ### <a name="ban-common-passwords"></a>Interdire les mots de passe courants
 
-L’exigence de mot de passe la plus importante à imposer à vos utilisateurs lors de la création de mots de passe consiste à interdire l’utilisation de mots de passe communs afin de limiter la vulnérabilité de votre organisation aux attaques de mot de passe par force brute. Les mots de passe utilisateur courants incluent **abdcefg**, **motdepasse** et **singe**.
+L’exigence de mot de passe la plus importante à imposer à vos utilisateurs lors de la création de mots de passe consiste à interdire l’utilisation de mots de passe communs afin de limiter la vulnérabilité de votre organisation aux attaques de mot de passe par force brute. Les mots de passe utilisateur courants incluent **abcdefg**, **motdepasse** et **singe**.
   
 ### <a name="educate-users-to-not-re-use-organization-passwords-anywhere-else"></a>Apprenez à vos utilisateurs à ne pas réutiliser ailleurs les mots de passe d’organisation
 
