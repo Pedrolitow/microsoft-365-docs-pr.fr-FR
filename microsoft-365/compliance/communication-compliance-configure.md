@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 20f1a0cc38338bb054618726b5a399d237a979d2
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: f4cd713abdda0eba20e0b783ff89653ae02efb72
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399499"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464084"
 ---
 # <a name="get-started-with-communication-compliance"></a>Prise en main de la conformité des communications
 
@@ -130,7 +130,7 @@ Utilisez le tableau suivant pour vous aider à configurer les groupes au sein de
 |Utilisateurs supervisés <br> Utilisateurs non supervisés | Groupes de distribution <br> Groupes Microsoft 365 | Groupes de distribution dynamique |
 | Relecteurs | Aucun | Groupes de distribution <br> groupes de distribution dynamiques <br> Groupes de sécurité à extension messagerie |
   
-Lorsque vous affectez un groupe de distribution dans la stratégie, la stratégie surveille tous les messages électroniques provenant de chaque utilisateur dans le groupe de distribution. Lorsque vous affectez un groupe Microsoft 365 dans la stratégie, la stratégie surveille tous les messages électroniques envoyés à ce groupe, et non les messages électroniques individuels reçus par chaque membre du groupe.
+Lorsque vous affectez un groupe de distribution dans la stratégie, la stratégie surveille toutes les conversations par courrier électronique et teams à partir de chaque utilisateur dans le groupe de distribution. Lorsque vous affectez un groupe Microsoft 365 dans la stratégie, la stratégie analyse tous les messages électroniques et les conversations de teams envoyés à ce groupe, et non les messages électroniques et les conversations reçus par chaque membre du groupe.
 
 Si vous êtes une organisation disposant d’un déploiement Exchange sur site ou d’un fournisseur de messagerie externe et que vous souhaitez surveiller les conversations de Microsoft teams pour vos utilisateurs, vous devez créer un groupe de distribution pour les utilisateurs disposant de boîtes aux lettres locales ou externes à surveiller. Plus loin dans cette procédure, vous affecterez ce groupe de distribution en tant qu' **utilisateurs et groupes contrôlés** dans l’Assistant stratégie.
 
