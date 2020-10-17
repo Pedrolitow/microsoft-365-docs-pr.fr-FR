@@ -4,7 +4,7 @@ ms.author: kvice
 ms.reviewer: smithre4
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 08/25/2020
+ms.date: 10/15/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 description: Dans cet article, vous allez découvrir l’authentification moderne hybride et les conditions préalables à l’utilisation de Skype entreprise et des serveurs Exchange locaux.
-ms.openlocfilehash: 82cd4203e2e9dc53c6add542c5f0ba90530b6548
-ms.sourcegitcommit: d648356b27842e779921859480b1b405a1804c7c
+ms.openlocfilehash: dbd108d9b04445838ce8e88a921af717ebd763be
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48361926"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487719"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>Vue d’ensemble de l’authentification moderne hybride et configuration requise pour l’utiliser avec les serveurs Skype Entreprise et Exchange locaux
 
@@ -161,6 +161,7 @@ Vérifiez et cochez les éléments de votre liste avant de continuer :
     Les clients et/ou les protocoles qui ne sont pas répertoriés (par exemple, POP3) ne prennent pas en charge l’authentification moderne avec Exchange sur site et continuent d’utiliser les mécanismes d’authentification hérités même après l’activation de l’authentification moderne dans l’environnement.
 
 - **Conditions préalables générales**
+  - Les scénarios de forêt de ressources nécessitent une approbation bidirectionnelle avec la forêt de comptes pour s’assurer que des recherches de SID correctes sont effectuées pendant les demandes d’authentification moderne hybride. 
   - Si vous utilisez AD FS, vous devez disposer de Windows 2012 R2 AD FS 3.0 et versions ultérieures pour la fédération.
   - Vos configurations d’identité sont les types pris en charge par Azure AD Connect, tels que la synchronisation de hachage de mot de passe, l’authentification relais et le STS local pris en charge par Office 365.
   - Azure AD Connect est configuré et fonctionne pour la réplication et la synchronisation des utilisateurs.

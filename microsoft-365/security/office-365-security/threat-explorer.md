@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Découvrez comment utiliser l’Explorateur et les détections en temps réel dans le centre de sécurité &amp; conformité pour examiner et répondre efficacement aux menaces.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bd437141f80b80370abeec7585596892f2434655
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 89708efa6a34b5ca7a302ba0ad331a2dac99f5d9
+ms.sourcegitcommit: 22755cebfbfa2c4dc3f8b4f54ccb23636a211ee5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446568"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48477153"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorateur de menaces et détections en temps réel
 
@@ -48,31 +48,66 @@ Ce rapport vous permet d’utiliser les actions suivantes :
 - [Démarrer un processus d’enquête et de réponse automatisés à partir d’une vue dans l’Explorateur](#start-automated-investigation-and-response) (plan ATP 2 uniquement)
 - ... [Examinez le courrier électronique malveillant, et bien plus encore](#more-ways-to-use-explorer-or-real-time-detections)!
 
+## <a name="tags-in-threat-explorer"></a>Balises dans l’Explorateur de menaces
+
+> [!NOTE] 
+> La fonctionnalité de balises utilisateur est en mode aperçu, n’est pas accessible à tous et peut faire l’objet de modifications. Pour plus d’informations sur le calendrier des publications, consultez la feuille de route Microsoft 365.
+
+Les balises utilisateur sont des identificateurs pour des groupes d’utilisateurs spécifiques dans Microsoft Defender pour Office 365. Pour plus d’informations sur les balises, les licences et la configuration des balises, lisez la rubrique More : [User Tags in Office 365 ATP](user-tags.md).
+
+Dans l’Explorateur de menaces, vous pourrez voir des informations sur les balises utilisateur dans les expériences suivantes :
+
+#### <a name="email-grid-view"></a>Affichage grille du courrier électronique
+
+La colonne de balises affichée dans la grille du courrier électronique contient toutes les balises qui ont été appliquées aux boîtes aux lettres de l’expéditeur ou du destinataire. Par défaut, les balises système telles que les comptes de priorité apparaissent en premier.
+
+![Balises de filtre](../../media/tags-grid.png)
+
+#### <a name="filtering"></a>Filtrage
+Nous avons maintenant des balises en tant que filtre afin de pouvoir Rechercher simplement des comptes de priorité ou des scénarios de balises utilisateur spécifiques (et même exclure les résultats avec certaines balises dans le cadre de cette expérience). La combinaison de ces éléments avec les autres filtres que nous fournissons vous aidera à limiter votre étendue d’enquête.
+
+![Balises de filtre](../../media/tags-filter-normal.png)
+
+![Balises not filter](../../media/tags-filter-not.png)
+
+#### <a name="email-detail-flyout"></a>Menu volant détail du courrier électronique
+Pour afficher les balises individuelles de l’expéditeur et du destinataire, cliquez sur l’objet. Il ouvre la fenêtre mobile Détails du message. Dans l’onglet Résumé, les balises expéditeur et destinataire sont affichées séparément, si elles sont présentes pour un e-mail.
+Les informations relatives aux balises individuelles pour l’expéditeur et le destinataire, s’étendent également au format CSV exporté, dans laquelle vous pouvez voir les détails dans 2 colonnes distinctes. 
+
+![Balises de détails de messagerie](../../media/tags-flyout.png)
+
+Les informations sur les balises sont également affichées dans l’URL clique sur le menu volant. Pour accéder à l’URL qui clique sur le menu volant, vous devez accéder à la vue hameçonnage ou tout le courrier, puis à URL ou à onglet URL. un clic sur un menu volant d’URL individuel affiche des détails supplémentaires sur les clics pour cette URL et les balises associées à ce clic. 
+
+![Balises d’URL](../../media/tags-urls.png)
+
 ## <a name="improvements-to-threat-hunting-experience-upcoming"></a>Améliorations apportées à l’expérience de la chasse aux menaces (à venir)
 
 ### <a name="updated-threat-information-for-emails"></a>Informations de menace mises à jour pour les E-mails
 
-Nous avons centré les améliorations apportées à la qualité des données et de la plateforme pour augmenter la précision et la cohérence des enregistrements de messagerie. Ces mises à jour incluent la consolidation des informations de pré-remise et de post-livraison (exemple d’action exécutée sur un message électronique dans le cadre du processus ZAP) en un seul enregistrement, ainsi que le filtrage du courrier indésirable, les menaces de niveau entité (par exemple, l’URL était malveillante) et les emplacements de remise les plus récents. 
+Nous avons centré les améliorations apportées à la qualité des données et de la plateforme pour augmenter la précision et la cohérence des enregistrements de messagerie. Ces ensembles de mises à jour incluent la consolidation des informations de pré-remise et de post-livraison (exemple d’action exécutée sur un message électronique dans le cadre du processus ZAP) en un seul enregistrement, ainsi que le filtrage du courrier indésirable, les menaces de niveau entité (par exemple, l’URL qui était malveillante) et les emplacements de remise les plus récents. 
 
 Après ces mises à jour, vous verrez une seule entrée pour chaque message, quels que soient les différents événements post-livraison qui ont eu lieu sur le message. Les actions peuvent inclure ZAP, la correction manuelle (ce qui signifie l’intervention de l’administrateur), la remise dynamique, etc. 
 
 En plus de montrer les menaces de programmes malveillants et de hameçonnage, vous pouvez voir le verdict de courrier indésirable associé à un e-mail. Dans le courrier électronique, vous serez en mesure de voir toutes les menaces associées au courrier électronique, ainsi que les technologies de détection correspondantes. Chaque e-mail peut avoir 0, 1 ou plusieurs menaces. Vous verrez les menaces actuelles dans la section des détails de la fenêtre mobile de courrier électronique. De plus, pour plusieurs menaces (par exemple, un message électronique comportant à la fois des programmes malveillants et des hameçons), le champ TechEd Tech donnera le Threat-Detection Mapping, ce qui signifie que le Tech Detection a conduit à l’identification de la menace.
 
-L’ensemble des technologies de détection a été mis à jour pour inclure de nouvelles méthodes de détection, ainsi que des technologies de détection du courrier indésirable, et aross les différentes vues de messagerie (programmes malveillants, hameçons, tout le courrier électronique), vous disposez d’un ensemble de technologies de détection cohérentes pour filtrer les résultats. 
+L’ensemble des technologies de détection a été mis à jour pour inclure de nouvelles méthodes de détection, ainsi que des technologies de détection du courrier indésirable, et dans toutes les différentes vues de messagerie (programmes malveillants, hameçons, tout le courrier électronique), vous disposez d’un ensemble de technologies de détection cohérentes pour filtrer les résultats. 
 
-**Remarque**: l’analyse de verdict ne doit pas nécessairement être liée à des entités. Par exemple, un e-mail peut être classé comme hameçonnage ou courrier indésirable, mais il n’y a pas d’URL avec un marquage du courrier indésirable/courrier indésirable. Cela est dû au fait que nos filtres évaluent également le contenu et d’autres détails pour un e-mail, avant d’affecter un verdict. 
+> [!NOTE]
+> L’analyse de verdict ne doit pas nécessairement être liée à des entités. Par exemple, un e-mail peut être classé comme hameçonnage ou courrier indésirable, mais il n’y a pas d’URL avec un marquage du courrier indésirable/courrier indésirable. Cela est dû au fait que nos filtres évaluent également le contenu et d’autres détails pour un e-mail, avant d’affecter un verdict. 
  
 #### <a name="threats-in-urls"></a>Menaces dans les URL
 
 Dans l’onglet Détails du menu déroulant courrier >, vous pouvez voir la menace spécifique pour une URL (la menace pour une URL peut être un programme malveillant, le hameçonnage, le courrier indésirable ou aucun).
 
-![Menaces d’URL](../../media/URL_Threats.png)
+> [!div class="mx-imgBorder"]
+> ![Menaces d’URL](../../media/URL_Threats.png)
 
 ### <a name="updated-timeline-view-upcoming"></a>Affichage chronologique mis à jour (à venir)
 
-![Affichage chronologique mis à jour](../../media/Email_Timeline.png)
+> [!div class="mx-imgBorder"]
+> ![Affichage chronologique mis à jour](../../media/Email_Timeline.png)
 
-En plus de l’identification de tous les événements de remise et post-remise, l’affichage de la chronologie fournit également des informations sur la menace identifiée à ce moment pour un sous-ensemble de ces événements. Il fournit également des informations supplémentaires sur les actions supplémentaires (par exemple ZAP, la correction manuelle) ainsi que le résultat de cette action. L’affichage chronologie contient des informations sur la remise d’origine, ainsi que tous les événements post-remise effectués sur un message électronique.
+En plus de l’identification de tous les événements de remise et post-remise, l’affichage de la chronologie fournit également des informations sur la menace identifiée à ce moment pour un sous-ensemble de ces événements. Il fournit également des informations supplémentaires sur les actions supplémentaires (par exemple, ZAP, correction manuelle) ainsi que le résultat de cette action. L’affichage chronologie contient des informations sur la remise d’origine, ainsi que tous les événements post-remise effectués sur un message électronique.
 
 -   Source : il peut s’agir de l’administrateur/système/utilisateur en fonction de la source de l’événement.
 -   Événement : cela inclut les événements de niveau supérieur tels que la remise d’origine, la correction manuelle, la préversion, les envois et la remise dynamique.
@@ -84,29 +119,33 @@ En plus de l’identification de tous les événements de remise et post-remise,
 
 Aujourd’hui, nous adressons l’emplacement de remise en surface au sein du grille e-mail et de la fenêtre mobile e-mail. À l’avenir, le champ d’emplacement de remise sera renommé vers l’emplacement de remise d’origine. En outre, nous introduisons également un autre champ appelé dernier emplacement de remise. 
 
-L’emplacement de remise d’origine fournit des informations supplémentaires sur l’endroit où un courrier électronique a été remis initialement. L’emplacement de remise le plus récent inclut un emplacement où un e-mail a pu être débarqué après des actions système telles que ZAP ou les actions d’administration, telles que le **déplacement vers des éléments supprimés**. L’emplacement de remise le plus récent est destiné à informer les administrateurs de la dernière publication de l’emplacement connu du message ou de toute action système/administrateur. De par sa conception, elle n’inclut pas les actions liées à l’utilisateur final sur le courrier électronique. Par exemple : si un utilisateur supprime un message ou déplace le message vers Archive/PST, le message « remise » n’est pas mis à jour. Toutefois, si une action système a mis à jour l’emplacement (par exemple, ZAP en cas de déplacement d’un e-mail vers la quarantaine), vous verrez l’emplacement de remise le plus récent en quarantaine. 
+L’emplacement de remise d’origine fournit des informations supplémentaires sur l’endroit où un courrier électronique a été remis initialement. L’emplacement de remise le plus récent inclut un emplacement où un e-mail a pu être débarqué après des actions système telles que ZAP ou les actions d’administration, telles que le **déplacement vers des éléments supprimés**. L’emplacement de remise le plus récent est destiné à informer les administrateurs de la dernière publication de l’emplacement connu du message ou de toute action système/administrateur. De par sa conception, il n’inclut aucune action de l’utilisateur final sur le courrier électronique. Par exemple : si un utilisateur supprime un message ou déplace le message vers Archive/PST, le message « remise » n’est pas mis à jour. Toutefois, si une action système a mis à jour l’emplacement (par exemple, ZAP en cas de déplacement d’un e-mail vers la quarantaine), vous verrez l’emplacement de remise le plus récent en quarantaine. 
 
-![Emplacements de remise mis à jour](../../media/Updated_Delivery_Location.png)
+> [!div class="mx-imgBorder"]
+> ![Emplacements de remise mis à jour](../../media/Updated_Delivery_Location.png)
 
-**Remarque**: il existe peu de cas où l’emplacement de remise et l’action de remise peuvent afficher « inconnu » comme valeur :
+> [!NOTE]
+> Il existe peu de cas où l’emplacement de remise et l’action de remise peuvent afficher « inconnu » comme valeur :
+> 
+> - Vous pouvez voir l’emplacement de remise comme étant livré, et l’emplacement de remise comme inconnu. Cela se produit lorsque le message a été remis, mais qu’une règle de boîte de réception a déplacé le message vers un dossier par défaut (brouillon, Archive, etc.) au lieu des dossiers boîte de réception ou courrier indésirable. 
+> 
+> - L’emplacement de remise le plus récent peut être inconnu si une action administrateur/système (par exemple, ZAP, action d’administration) est tentée, mais que le message est introuvable. En règle générale, l’action se produit après que l’utilisateur a déplacé ou supprimé le message. Dans ce cas, vérifiez la colonne résultat dans l’affichage chronologie. Recherchez le message : message déplacé ou supprimé par l’utilisateur.
 
-- Vous pouvez voir l’emplacement de remise comme étant livré, et l’emplacement de remise comme inconnu. Cela se produit lorsque le message a été remis, mais qu’une règle de boîte de réception a déplacé le message vers un dossier par défaut (brouillon, Archive, etc.) au lieu des dossiers boîte de réception ou courrier indésirable. 
-
-- L’emplacement de remise le plus récent peut être inconnu si une action administrateur/système (par exemple, ZAP, action d’administration) est tentée, mais que le message est introuvable. En règle générale, l’action se produit après que l’utilisateur a déplacé ou supprimé le message. Dans ce cas, vérifiez la colonne résultat dans l’affichage chronologie. Recherchez le message : message déplacé ou supprimé par l’utilisateur.
-
-![Emplacements de remise pour la chronologie](../../media/Updated_Timeline_Delivery_Location.png)
+> [!div class="mx-imgBorder"]
+> ![Emplacements de remise pour la chronologie](../../media/Updated_Timeline_Delivery_Location.png)
 
 ### <a name="additional-actions"></a>Actions supplémentaires 
 
-Les actions supplémentaires consistent en des actions appliquées après la remise du courrier électronique, et peuvent inclure ZAP, la correction manuelle (action effectuée par un admi ; n, par exemple, suppression douce), la remise dynamique et le retraitement (un message a été rétroactivement détecté de manière rétroactive). 
+Les actions supplémentaires consistent en des actions appliquées après la remise du courrier électronique, et peuvent inclure ZAP, la correction manuelle (action effectuée par un administrateur par exemple, suppression douce), la remise dynamique et le retraitement (un message a été rétroactivement détecté de manière rétroactive). 
 
 > [!NOTE]
 >
 > - Dans le cadre de cette modification, la valeur supprimée par ZAP actuellement représentée dans le filtre d’action de remise est rejetée. Vous pouvez rechercher tous les messages électroniques à l’aide de la méthode ZAP via les actions supplémentaires.
 >
-> -Il y aura de nouveaux champs et valeurs pour les technologies de détection et des actions supplémentaires (en particulier pour les scénarios ZAP). Évaluez vos requêtes sauvegardées existantes et les requêtes suivies afin de vous assurer qu’elles fonctionnent avec les nouvelles valeurs. 
+> - Il y aura de nouveaux champs et valeurs pour les technologies de détection et des actions supplémentaires (en particulier pour les scénarios ZAP). Évaluez vos requêtes sauvegardées existantes et les requêtes suivies afin de vous assurer qu’elles fonctionnent avec les nouvelles valeurs. 
 
-![Additional_Actions](../../media/Additional_Actions.png)
+> [!div class="mx-imgBorder"]
+> ![Additional_Actions](../../media/Additional_Actions.png)
 
 ### <a name="system-overrides"></a>Substitutions système 
 
@@ -120,18 +159,23 @@ Les substitutions système sont une méthode permettant de faire des exceptions 
 
 ![System_Overrides](../../media/System_Overrides.png)
 
-![System_Overrides_Grid](../../media/System_Overrides_Grid.png)
+> [!div class="mx-imgBorder"]
+> ![System_Overrides_Grid](../../media/System_Overrides_Grid.png)
+
 
 ### <a name="improvements-around-url-and-clicks-experience"></a>Améliorations concernant l’expérience de l’URL et des clics
 
 Les améliorations apportées aux données sur les URL et les URL sont les suivantes :
 
--   Affichage de l’URL sur laquelle l’utilisateur a cliqué complet (y compris les paramètres de requête faisant partie de l’URL) dans la section clics de la fenêtre mobile d’URL. Nous affichons actuellement le domaine et le chemin d’accès de l’URL dans la barre de titre. Nous étendons ces informations pour afficher l’URL complète.
--   Correctifs parmi les filtres d’URL (URL et domaine d’URL/domaine d’URL et chemin d’accès) : nous avons effectué des mises à jour pour la recherche de messages contenant une URL/cliquez sur verdict. Dans ce cas, nous avons activé la prise en charge des recherches de protocoles agnostiques (ce qui signifie que vous pouvez rechercher directement une URL sans http). Par défaut, la recherche d’URL est mappée sur http, sauf indication explicite. Par exemple :
+ - Affichage de l’URL sur laquelle l’utilisateur a cliqué complet (y compris les paramètres de requête faisant partie de l’URL) dans la section clics de la fenêtre mobile d’URL. Nous affichons actuellement le domaine et le chemin d’accès de l’URL dans la barre de titre. Nous étendons ces informations pour afficher l’URL complète.
+ 
+ - Correctifs parmi les filtres d’URL (URL et domaine d’URL/domaine d’URL et chemin d’accès) : nous avons effectué des mises à jour pour la recherche de messages contenant une URL/cliquez sur verdict. Dans ce cas, nous avons activé la prise en charge des recherches de protocoles agnostiques (ce qui signifie que vous pouvez rechercher directement une URL sans http). Par défaut, la recherche d’URL est mappée sur http, sauf indication explicite. Par exemple :
 
-  a.    Recherchez avec et sans le `http://` préfixe dans les champs de filtre « URL », « domaine d’URL » et « domaine d’URL et chemin d’accès ». Ce comportement est cohérent et doit afficher le même résultat.
-  b.    Recherchez le `https://` préfixe dans « URL ». Lorsqu’il n’est pas présent, le `http://` préfixe est utilisé.
-  c.     `/` au début et à la fin des champs « chemin de l’URL », « domaine de l’URL », « domaine de l’URL et chemin d’accès » est ignoré. `/` à la fin du champ « URL » est ignoré. 
+   1. Recherchez avec et sans le `http://` préfixe dans les champs de filtre « URL », « domaine d’URL » et « domaine d’URL et chemin d’accès ». Ce comportement est cohérent et doit afficher le même résultat.
+   
+   1. Recherchez le `https://` préfixe dans « URL ». Lorsqu’il n’est pas présent, le `http://` préfixe est utilisé.
+   
+   1. `/` au début et à la fin des champs « chemin de l’URL », « domaine de l’URL », « domaine de l’URL et chemin d’accès » est ignoré. `/` à la fin du champ « URL » est ignoré. 
 
 ### <a name="phish-confidence-level"></a>Niveau de confiance d’hameçonnage
 
@@ -141,7 +185,7 @@ Le niveau de confiance d’hameçonnage aide à identifier le degré de confianc
 
 ### <a name="zap-url-signal"></a>Le signal d’URL ZAP 
 
-Généralement utilisé pour les scénarios d’alerte de hameçonnage dans la mesure où un message électronique a été identifié comme hameçonnage et supprimé après la remise. Cette fonction permet de connecter l’alerte avec les résultats correspondants dans l’Explorateur. Il s’agit de l’une des IOCs de l’alerte. 
+Généralement utilisé pour les scénarios d’alertes de hameçonnage ZAP dans lesquels un courrier électronique a été identifié comme hameçonnage et supprimé après la remise. Cette fonction permet de connecter l’alerte avec les résultats correspondants dans l’Explorateur. Il s’agit de l’une des IOCs de l’alerte. 
 
 ## <a name="experience-improvements-to-threat-explorer-and-real-time-detections"></a>Amélioration de l’Explorateur de menaces et des détections de Real-Time
 
@@ -156,7 +200,8 @@ Dans le cadre de l’amélioration du processus de recherche, nous avons mis à 
 
 Vous verrez le fuseau horaire pour les enregistrements de courrier électronique dans le portail, ainsi que pour les données exportées. Le fuseau horaire est visible sur plusieurs expériences, comme la grille de courrier électronique, la fenêtre de détail des détails, la chronologie par courrier électronique et des E-mails similaires, de sorte que le fuseau horaire du jeu de résultats soit clair pour l’utilisateur.
 
-![Afficher le fuseau horaire dans l’Explorateur](../../media/TimezoneImprovements.png)
+> [!div class="mx-imgBorder"]
+> ![Afficher le fuseau horaire dans l’Explorateur](../../media/TimezoneImprovements.png)
 
 ### <a name="update-in-the-refresh-process"></a>Mise à jour dans le processus d’actualisation
 
@@ -164,19 +209,22 @@ Nous avons entendu des commentaires sur la confusion grâce à l’actualisation
 
 Du point de vue de l’expérience, l’utilisateur peut appliquer et supprimer la plage de filtres différente (à partir du jeu de filtres et de la date), puis appuyer sur le bouton Actualiser pour filtrer les résultats une fois qu’ils ont fini de définir la requête. Le bouton d’actualisation a également été mis à jour pour l’appeler clairement à l’écran. Nous avons également mis à jour les info-bulles et la documentation du produit concernant cette modification.
 
-![Cliquez sur Actualiser pour filtrer les résultats](../../media/ManualRefresh.png)
+> [!div class="mx-imgBorder"]
+> ![Cliquez sur Actualiser pour filtrer les résultats](../../media/ManualRefresh.png)
 
 ### <a name="chart-drilldown-to-add-to-filters"></a>Descente de graphique à ajouter aux filtres
 
 Vous pouvez désormais cliquer sur les valeurs de légende du graphique pour ajouter cette valeur en tant que filtre. Notez que vous devrez toujours cliquer sur le bouton Actualiser pour filtrer les résultats dans le cadre de la modification décrite ci-dessus.
 
-![Faire défiler les graphiques vers le filtre](../../media/ChartDrilldown.png)
+> [!div class="mx-imgBorder"]
+> ![Faire défiler les graphiques vers le filtre](../../media/ChartDrilldown.png)
 
 ### <a name="in-product-information-updates"></a>Mises à jour des informations sur les produits
 
 Vous devez également consulter des détails supplémentaires dans le produit. Par exemple, le nombre total de résultats de recherche dans la grille (voir ci-dessous), ainsi que des améliorations concernant les étiquettes, les messages d’erreur et les info-bulles, pour fournir davantage d’informations sur les filtres, l’expérience de recherche et le jeu de résultats.
 
-![Afficher les informations dans le produit](../../media/ProductInfo.png)
+> [!div class="mx-imgBorder"]
+> ![Afficher les informations dans le produit](../../media/ProductInfo.png)
 
 ## <a name="extended-capabilities-in-threat-explorer"></a>Fonctionnalités étendues dans l’Explorateur de menaces
 
@@ -185,7 +233,8 @@ Vous devez également consulter des détails supplémentaires dans le produit. P
 Nous exposez aujourd’hui la liste des utilisateurs ciblés dans la vue des programmes malveillants pour les E-mails (dans la section Top familles de programmes malveillants). Nous allons développer cette vue au sein de la section hameçonnage et de toutes les vues du courrier électronique, où vous pourrez voir les cinq premiers utilisateurs ciblés, ainsi que le nombre de tentatives pour chaque utilisateur pour la vue correspondante (par exemple, pour le mode hameçonnage, vous pourrez voir le nombre de tentatives de hameçonnage).
 Vous pourrez également exporter la liste des utilisateurs ciblés jusqu’à une limite de 3000, ainsi que le nombre de tentatives d’analyse hors ligne pour chaque affichage de courrier électronique. En outre, sélectionnez non. des tentatives (par exemple, 13 tentatives ci-dessous) ouvrent une vue filtrée dans l’Explorateur de menaces, afin que vous puissiez consulter plus de détails parmi les e-mails et les menaces de cet utilisateur.
 
-![Principaux utilisateurs ciblés](../../media/Top_Targeted_Users.png)
+> [!div class="mx-imgBorder"]
+> ![Principaux utilisateurs ciblés](../../media/Top_Targeted_Users.png)
 
 
 ### <a name="exchange-transport-rules"></a>Règles de transport Exchange
@@ -204,7 +253,8 @@ La disponibilité de la recherche et du nom ETR dépend du rôle spécifique qui
 
 Dans la grille du courrier, dans les détails et dans le fichier CSV exporté, le ETR est présenté avec un nom/GUID, comme indiqué ci-dessous.
 
-![Règles de transport Exchange](../../media/ETR_Details.png)
+> [!div class="mx-imgBorder"]
+> ![Règles de transport Exchange](../../media/ETR_Details.png)
 
 ### <a name="inbound-connectors"></a>Connecteurs entrants
 
@@ -212,7 +262,8 @@ Les connecteurs sont une collection d’instructions qui personnalisent le mode 
 La recherche de connecteurs est « Contains » par nature, ce qui signifie que les recherches par Mots-clés partielles doivent également fonctionner.
 Dans l’affichage de grille principal, le menu volant détails et le fichier CSV exporté, les connecteurs sont affichés dans le format de nom/GUID, comme indiqué ci-dessous :
 
-![Détails du connecteur](../../media/Connector_Details.png)
+> [!div class="mx-imgBorder"]
+> ![Détails du connecteur](../../media/Connector_Details.png)
 
 ## <a name="new-features-in-threat-explorer-and-real-time-detections"></a>Nouvelles fonctionnalités de l’Explorateur de menaces et des détections en temps réel
 
@@ -284,7 +335,8 @@ Vous pouvez accéder au même emplacement dans le rapport des détections en tem
 > [!TIP]
 > L’ID de message réseau mappe le clic retour à des messages spécifiques lorsque vous recherchez dans l’Explorateur ou des outils tiers associés via l’ID de message réseau. La recherche par le biais de l’ID de message réseau donnera aux administrateurs le message électronique spécifique associé à un résultat de clic. Lors de l’exportation, l’identification de la corrélation de l’ID de message réseau permet une analyse plus rapide et plus puissante.
 
-![Clique sur l’onglet dans l’Explorateur](../../media/tp_ExportClickResultAndNetworkID.png)
+> [!div class="mx-imgBorder"]
+> ![Clique sur l’onglet dans l’Explorateur](../../media/tp_ExportClickResultAndNetworkID.png)
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>Voir programmes malveillants détectés dans le courrier électronique par technologie
 
@@ -294,17 +346,20 @@ Supposons que vous souhaitez voir les programmes malveillants détectés par les
 
 2. Dans le menu **affichage** , choisissez **Email**  >  **programmes malveillants**de messagerie.
 
-   ![Menu Affichage de l’Explorateur](../../media/ExplorerViewEmailMalwareMenu.png)
+   > [!div class="mx-imgBorder"]
+   > ![Menu Affichage de l’Explorateur](../../media/ExplorerViewEmailMalwareMenu.png)
 
 3. Cliquez sur **expéditeur**, puis choisissez technologie de détection de **base**  >  **Detection technology**.
 
    Vos technologies de détection sont désormais disponibles en tant que filtres pour le rapport.
 
-   ![Technologies de détection des programmes malveillants](../../media/ExplorerEmailMalwareDetectionTech.png)
+   > [!div class="mx-imgBorder"]
+   > ![Technologies de détection des programmes malveillants](../../media/ExplorerEmailMalwareDetectionTech.png)
 
 4. Sélectionnez une option, puis cliquez sur le bouton **Actualiser** pour appliquer ce filtre.
 
-   ![Technologie de détection sélectionnée](../../media/ExplorerEmailMalwareDetectionTechATP.png)
+   > [!div class="mx-imgBorder"]
+   > ![Technologie de détection sélectionnée](../../media/ExplorerEmailMalwareDetectionTechATP.png)
 
 Le rapport est actualisé pour afficher les résultats de programmes malveillants détectés par courrier électronique, à l’aide de l’option de technologie que vous avez sélectionnée. À partir de là, vous pouvez effectuer une analyse plus poussée.
 
@@ -318,15 +373,17 @@ Pour consulter les URL de hameçonnage dans les messages et les clics sur les UR
 
 2. Dans le menu **affichage** , choisissez **courrier**  >  **hameçon**.
 
-   ![Menu Affichage de l’Explorateur](../../media/ExplorerViewEmailPhishMenu.png)
+   > [!div class="mx-imgBorder"]
+   > ![Menu Affichage de l’Explorateur](../../media/ExplorerViewEmailPhishMenu.png)
 
 3. Cliquez sur **expéditeur**, puis sur **URL**, puis  >  **cliquez sur verdict**.
 
 4. Sélectionnez une ou plusieurs options, telles que **bloquées** et **bloquer le remplacement**, puis cliquez sur le bouton **Actualiser** qui se trouve sur la même ligne que les options pour appliquer le filtre. (Ne pas actualiser la fenêtre de votre navigateur.)
 
-   ![URL et cliquez sur verdicts](../../media/ThreatExplorerEmailPhishClickVerdictOptions.png)
+   > [!div class="mx-imgBorder"]
+   > ![URL et cliquez sur verdicts](../../media/ThreatExplorerEmailPhishClickVerdictOptions.png)
 
-    Le rapport est actualisé pour afficher deux tables d’URL différentes sous l’onglet URL sous le rapport :
+   Le rapport est actualisé pour afficher deux tables d’URL différentes sous l’onglet URL sous le rapport :
 
    - Les **URL principales** sont les URL contenues dans les messages que vous avez filtrés vers et l’action de remise de courrier électronique compte pour chaque URL. Dans l’affichage e-mail de hameçonnage, cette liste contient généralement des URL légitimes. Les agresseurs incluent un mélange d’URL correctes et incorrectes dans leurs messages pour essayer de les remettre, mais ils rendent les liens malveillants plus intéressants pour l’utilisateur. Le tableau des URL est trié par nombre total d’e-mails (mais notez que cette colonne est masquée pour simplifier l’affichage).
 
@@ -334,7 +391,8 @@ Pour consulter les URL de hameçonnage dans les messages et les clics sur les UR
 
    Les deux tableaux d’URL affichent les URL les plus fréquentes dans les messages électroniques de hameçonnage par action de remise et par emplacement, et ils affichent des clics d’URL bloqués (ou visités malgré un avertissement) afin que vous puissiez comprendre quels liens incorrects potentiels ont été reçus par les utilisateurs et interagis avec les utilisateurs. À partir de là, vous pouvez effectuer une analyse plus poussée. Par exemple, sous le graphique, vous pouvez voir les URL principales dans les messages électroniques qui ont été bloqués dans l’environnement de votre organisation.
 
-   ![URL de l’Explorateur bloquées](../../media/ExplorerPhishClickVerdictURLs.png)
+   > [!div class="mx-imgBorder"]
+   > ![URL de l’Explorateur bloquées](../../media/ExplorerPhishClickVerdictURLs.png)
 
    Sélectionnez une URL pour afficher des informations plus détaillées.
 
@@ -362,13 +420,15 @@ Supposons que vous voulez afficher les messages électroniques que les utilisate
 
 2. Dans le menu **affichage** , choisissez **Email**  >  **envois**de courrier électronique.
 
-   ![Menu Affichage de l’Explorateur](../../media/explorer-view-menu-email-user-reported.png)
+   > [!div class="mx-imgBorder"]
+   > ![Menu Affichage de l’Explorateur](../../media/explorer-view-menu-email-user-reported.png)
 
 3. Cliquez sur **expéditeur**, puis sur type de rapport de **base**  >  **Report type**.
 
 4. Sélectionnez une option, par exemple **hameçonnage**, puis cliquez sur le bouton **Actualiser** .
 
-   ![Hameçonnage signalé par l’utilisateur](../../media/EmailUserReportedReportType.png)
+   > [!div class="mx-imgBorder"]
+   > ![Hameçonnage signalé par l’utilisateur](../../media/EmailUserReportedReportType.png)
 
 Le rapport est actualisé pour afficher les données relatives aux messages électroniques que les personnes de votre organisation ont signalées comme tentatives de hameçonnage. Vous pouvez utiliser ces informations pour effectuer une analyse plus poussée et, si nécessaire, ajuster vos [stratégies anti-hameçonnage ATP](configure-atp-anti-phishing-policies.md).
 

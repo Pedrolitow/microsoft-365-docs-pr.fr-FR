@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: f18a98b19b6a1920d1e4d2094ba0bab74f10035e
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: e3b29a8182e38fa05e5f791478157c978632fb13
+ms.sourcegitcommit: 22755cebfbfa2c4dc3f8b4f54ccb23636a211ee5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430138"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48477004"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>Pratiques recommandées pour la requête de repérage avancé
 
@@ -56,7 +56,7 @@ Les clients qui exécutent régulièrement plusieurs requêtes doivent suivre la
 
 - **Contenant les temps contient**— pour éviter de Rechercher inutilement des sous-chaînes dans des mots, utilisez l' `has` opérateur au lieu de `contains` . [En savoir plus sur les opérateurs de chaîne](https://docs.microsoft.com/azure/data-explorer/kusto/query/datatypes-string-operators)
 - **Rechercher dans des colonnes spécifiques**: recherchez une colonne spécifique au lieu d’exécuter des recherches de texte intégral dans toutes les colonnes. N’utilisez pas `*` pour vérifier toutes les colonnes.
-- Respect **de la casse pour la vitesse**— les recherches sensibles à la casse sont plus spécifiques et généralement plus performantes. Les noms des opérateurs de [chaîne](https://docs.microsoft.com/azure/data-explorer/kusto/query/datatypes-string-operators)respectant la casse, tels que `has_cs` et `contains_cs` , se terminent généralement par `_cs` . Vous pouvez également utiliser l’opérateur Equals avec respect de la casse `==` et non `~=` .
+- Respect **de la casse pour la vitesse**— les recherches sensibles à la casse sont plus spécifiques et généralement plus performantes. Les noms des opérateurs de [chaîne](https://docs.microsoft.com/azure/data-explorer/kusto/query/datatypes-string-operators)respectant la casse, tels que `has_cs` et `contains_cs` , se terminent généralement par `_cs` . Vous pouvez également utiliser l’opérateur Equals avec respect de la casse `==` et non `=~` .
 - **Parse, ne pas extraire**: dans la mesure du possible, utilisez l' [opérateur d’analyse](https://docs.microsoft.com/azure/data-explorer/kusto/query/parseoperator) ou une fonction d’analyse telle que [parse_json ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsejsonfunction). Évitez l' `matches regex` opérateur String ou la [fonction Extract ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/extractfunction), qui utilisent les deux l’expression régulière. Réservez l’utilisation de l’expression régulière pour des scénarios plus complexes. [En savoir plus sur les fonctions d’analyse](#parse-strings)
 - **Filtrer les tables et non les expressions**: ne filtrez pas une colonne calculée si vous pouvez filtrer une colonne de table.
 - **Aucun caractère de trois caractères**— Évitez de comparer ou de filtrer à l’aide de termes de trois caractères maximum. Ces termes ne sont pas indexés et leur correspondance nécessitera davantage de ressources.

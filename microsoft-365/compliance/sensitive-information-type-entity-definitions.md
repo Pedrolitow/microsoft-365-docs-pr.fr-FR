@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: La protection contre la perte de données (DLP) dans le centre de sécurité &amp; conformité inclut 80 types d’informations sensibles que vous pouvez utiliser dans vos stratégies DLP. Cette rubrique répertorie tous ces types d'informations sensibles et indique ce qu'une stratégie DLP recherche pour chaque type.
-ms.openlocfilehash: adc1006628b8b4f13d30f2001fee0871b51b18ca
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 8482501dc978433587c431d18ec93b9e78fb8e03
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430431"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487492"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Définitions d’entités des types d’informations sensibles
 
@@ -670,36 +670,155 @@ Non
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
 - L’expression régulière  `Regex_austria_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from  `Keywords_austria_eu_driver's_license_number` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_driver's_license_number` ou `Keywords_austria_eu_driver's_license_number` est trouvé. 
     
 ```xml
-<!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Austria Driver's License Number -->
+      <Entity id="682f18ce-44eb-482b-8198-2bcb96a0761e" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_austria_eu_driver's_license_number" />
-          <Match idRef="Keywords_austria_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_austria_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-    </Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Gestionnaire de la LIC
+- pilote conduire
+- permis de conduire
+- licences de pilotes
+- permis de conduire
+- permis de conduire
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- pilotes Lic
+- pilotes conduire
+- permis de conduire
+- licences de pilotes
+- permis de conduire
+- permis de conduire
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- Driver’Lic
+- pilote’conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- Gestionnaire de la LIC
+- conduire du pilote
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- LD #
+- distribution #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Gestionnaire de la LIC #
+- pilote conduire #
+- permis de conduire #
+- licences de pilotes #
+- permis de conduire #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- pilotes Lic #
+- pilotes conduire #
+- permis de conduire #
+- licences de pilotes #
+- permis de conduire #
+- permis de conduire #
+- driver'lic #
+- driver'lics #
+- driver'license #
+- driver'licenses #
+- driver'licence #
+- driver'licences #
+- Driver’Lic #
+- pilote’conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- Gestionnaire de la LIC #
+- conduire du pilote #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire
+ 
+- permis de conduire
+- dlno #
+- permis Lic
+- permis conduire
+- licence permis
+- licences permis
+- licence permis
+- licences permis
+- pilote conduire
+- pilotes conduire
+- conduire du pilote
+- Lic de la commande
+- conduite conduire
+- licences de conduite
+- permis de conduire
+
+- permis de conduire
+
+- permis de conduire
+- n ° de DL
+- dlno
+- Numéro de la LD
+
+
 #### <a name="keywords_austria_eu_drivers_license_number"></a>Keywords_austria_eu_driver’s_license_number
 
-- LD #
-- Permis de conduire
-- Numéro de permis de conduire
-- permis de conduire
-- pilotes.
-- permis de conduire
-- permis de conduire
-- permis de conduire
-- Numéro de permis de conduire
-- Numéro de permis de conduire
-- Numéro de permis de conduire
-- dlno #
 - Fuhrerschein
-- Fuhrerschein Republik Osterreich
+- Führerschein
+- Führerscheine
+- Führerscheinnummer
+- Führerscheinnummern
 
 ## <a name="austria-identity-card"></a>Carte d’identité Autriche
 Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
@@ -1501,41 +1620,163 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - L’expression régulière  `Regex_belgium_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from  `Keywords_belgium_eu_driver's_license_number` est trouvé.
+- Un mot clé depuis `Keywords_eu_driver's_license_number` ou `Keywords_belgium_eu_driver's_license_number` est trouvé.
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Belgium Driver's License Number -->
+      <Entity id="d89fd329-9324-433c-b687-2c37bd5166f3" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_belgium_eu_driver's_license_number" />
-          <Match idRef="Keywords_belgium_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_belgium_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
-**Keywords__belgium_eu_driver’s_license_number**
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Gestionnaire de la LIC
+- pilote conduire
+- permis de conduire
+- licences de pilotes
+- permis de conduire
+- permis de conduire
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- pilotes Lic
+- pilotes conduire
+- permis de conduire
+- licences de pilotes
+- permis de conduire
+- permis de conduire
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- Driver’Lic
+- pilote’conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- Gestionnaire de la LIC
+- conduire du pilote
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
 - LD #
-- Permis de conduire
-- Numéro de permis de conduire
+- distribution #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Gestionnaire de la LIC #
+- pilote conduire #
+- permis de conduire #
+- licences de pilotes #
+- permis de conduire #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- pilotes Lic #
+- pilotes conduire #
+- permis de conduire #
+- licences de pilotes #
+- permis de conduire #
+- permis de conduire #
+- driver'lic #
+- driver'lics #
+- driver'license #
+- driver'licenses #
+- driver'licence #
+- driver'licences #
+- Driver’Lic #
+- pilote’conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- Gestionnaire de la LIC #
+- conduire du pilote #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
 - permis de conduire
-- pilotes.
+ 
 - permis de conduire
-- permis de conduire
-- permis de conduire
-- Numéro de permis de conduire
-- Numéro de permis de conduire
 - dlno #
+- permis Lic
+- permis conduire
+- licence permis
+- licences permis
+- licence permis
+- licences permis
+- pilote conduire
+- pilotes conduire
+- conduire du pilote
+- Lic de la commande
+- conduite conduire
+- licences de conduite
+- permis de conduire
+
+- permis de conduire
+
+- permis de conduire
+- n ° de DL
+- dlno
+- Numéro de la LD
+
+#### <a name="keywords_belgium_eu_drivers_license_number"></a>Keywords_belgium_eu_driver’s_license_number
+
 - rijbewijs
 - rijbewijsnummer
+- Führerschein
 - führerscheinnummer
+- füehrerscheinnummer
+- Fuhrerschein
+- fuehrerschein
 - fuhrerscheinnummer
 - fuehrerscheinnummer
-- Führerschein-Nr
-- fuehrerschein-Nr
-- fuehrerschein-Nr
+- 
+permis de conduire
+- numéro permis conduire
+
 
 ## <a name="belgium-national-number"></a>Numéro national belge
 
@@ -2055,38 +2296,155 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - L’expression régulière  `Regex_bulgaria_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from  `Keywords_bulgaria_eu_driver's_license_number` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_driver's_license_number` ou `Keywords_bulgaria_eu_driver's_license_number` est trouvé. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
-             <Pattern confidenceLevel="75">
+      <!-- Bulgaria Driver's License Number -->
+      <Entity id="66d39258-94c2-43b2-804b-aa312258e54b" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_bulgaria_eu_driver's_license_number" />
-          <Match idRef="Keywords_bulgaria_eu_driver's_license_number" />
-        </Pattern> 
-</Entity>    
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_bulgaria_eu_driver's_license_number" />
+          </Any>
+        </Pattern>
+      </Entity>    
 ```
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywords_bulgaria_eu_drivers_license_number"></a>Keywords_bulgaria_eu_driver’s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Gestionnaire de la LIC
+- pilote conduire
+- permis de conduire
+- licences de pilotes
+- permis de conduire
+- permis de conduire
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- pilotes Lic
+- pilotes conduire
+- permis de conduire
+- licences de pilotes
+- permis de conduire
+- permis de conduire
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- Driver’Lic
+- pilote’conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- Gestionnaire de la LIC
+- conduire du pilote
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
 - LD #
-- Permis de conduire
-- Numéro de permis de conduire
+- distribution #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Gestionnaire de la LIC #
+- pilote conduire #
+- permis de conduire #
+- licences de pilotes #
+- permis de conduire #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- pilotes Lic #
+- pilotes conduire #
+- permis de conduire #
+- licences de pilotes #
+- permis de conduire #
+- permis de conduire #
+- driver'lic #
+- driver'lics #
+- driver'license #
+- driver'licenses #
+- driver'licence #
+- driver'licences #
+- Driver’Lic #
+- pilote’conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- Gestionnaire de la LIC #
+- conduire du pilote #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
 - permis de conduire
-- pilotes.
+ 
 - permis de conduire
-- permis de conduire
-- permis de conduire
-- Numéro de permis de conduire
-- Numéro de permis de conduire
-- Numéro de permis de conduire
 - dlno #
+- permis Lic
+- permis conduire
+- licence permis
+- licences permis
+- licence permis
+- licences permis
+- pilote conduire
+- pilotes conduire
+- conduire du pilote
+- Lic de la commande
+- conduite conduire
+- licences de conduite
+- permis de conduire
+
+- permis de conduire
+
+- permis de conduire
+- n ° de DL
+- dlno
+- Numéro de la LD
+
+
+#### <a name="keywords_bulgaria_eu_drivers_license_number"></a>Keywords_bulgaria_eu_driver’s_license_number
+
 - свидетелство за управление на мпс
 - свидетелство за управление на моторно превозно средство
 - сумпс
 - шофьорска книжка
-
+- шофьорски книжки
 
 ## <a name="bulgaria-uniform-civil-number"></a>Numéro civil uniforme de la Bulgarie
 Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
@@ -3316,35 +3674,152 @@ Non
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
 - L’expression régulière  `Regex_croatia_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from  `Keywords_croatia_eu_driver's_license_number` est trouvé. 
+- Un mot clé depuis `Keywords_eu_driver's_license_number` ou `Keywords_croatia_eu_driver's_license_number` est trouvé. 
 
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Croatia Driver's License Number -->
+      <Entity id="005b3ef1-47dd-4e68-bb02-c6db484d00f2" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_croatia_eu_driver's_license_number" />
-          <Match idRef="Keywords_croatia_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_croatia_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Gestionnaire de la LIC
+- pilote conduire
+- permis de conduire
+- licences de pilotes
+- permis de conduire
+- permis de conduire
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- pilotes Lic
+- pilotes conduire
+- permis de conduire
+- licences de pilotes
+- permis de conduire
+- permis de conduire
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- Driver’Lic
+- pilote’conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- Gestionnaire de la LIC
+- conduire du pilote
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- LD #
+- distribution #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Gestionnaire de la LIC #
+- pilote conduire #
+- permis de conduire #
+- licences de pilotes #
+- permis de conduire #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- pilotes Lic #
+- pilotes conduire #
+- permis de conduire #
+- licences de pilotes #
+- permis de conduire #
+- permis de conduire #
+- driver'lic #
+- driver'lics #
+- driver'license #
+- driver'licenses #
+- driver'licence #
+- driver'licences #
+- Driver’Lic #
+- pilote’conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- Gestionnaire de la LIC #
+- conduire du pilote #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire
+ 
+- permis de conduire
+- dlno #
+- permis Lic
+- permis conduire
+- licence permis
+- licences permis
+- licence permis
+- licences permis
+- pilote conduire
+- pilotes conduire
+- conduire du pilote
+- Lic de la commande
+- conduite conduire
+- licences de conduite
+- permis de conduire
+
+- permis de conduire
+
+- permis de conduire
+- n ° de DL
+- dlno
+- Numéro de la LD
+
+
 #### <a name="keywords_croatia_eu_drivers_license_number"></a>Keywords_croatia_eu_driver’s_license_number
 
-- LD #
-- Permis de conduire
-- Numéro de permis de conduire
-- permis de conduire
-- pilotes.
-- permis de conduire
-- permis de conduire
-- permis de conduire
-- Numéro de permis de conduire
-- Numéro de permis de conduire
-- Numéro de permis de conduire
-- dlno #
 - vozačka dozvola
+- vozačke dozvole
 
 
 ## <a name="croatia-identity-card-number"></a>Numéro de carte d’identité Croatie
@@ -3622,34 +4097,152 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - L’expression régulière  `Regex_cyprus_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from  `Keywords_cyprus_eu_driver's_license_number` est trouvé.
+- Un mot clé depuis  `Keywords_eu_driver's_license_number` ou `Keywords_cyprus_eu_driver's_license_number` est trouvé.
 
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Cyprus Driver's License Number -->
+      <Entity id="356fa104-f9ac-4aff-a0e4-2e6e65ea06c4" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_cyprus_eu_driver's_license_number" />
-          <Match idRef="Keywords_cyprus_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_cyprus_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Gestionnaire de la LIC
+- pilote conduire
+- permis de conduire
+- licences de pilotes
+- permis de conduire
+- permis de conduire
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- pilotes Lic
+- pilotes conduire
+- permis de conduire
+- licences de pilotes
+- permis de conduire
+- permis de conduire
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- Driver’Lic
+- pilote’conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- Gestionnaire de la LIC
+- conduire du pilote
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- LD #
+- distribution #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Gestionnaire de la LIC #
+- pilote conduire #
+- permis de conduire #
+- licences de pilotes #
+- permis de conduire #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- pilotes Lic #
+- pilotes conduire #
+- permis de conduire #
+- licences de pilotes #
+- permis de conduire #
+- permis de conduire #
+- driver'lic #
+- driver'lics #
+- driver'license #
+- driver'licenses #
+- driver'licence #
+- driver'licences #
+- Driver’Lic #
+- pilote’conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- Gestionnaire de la LIC #
+- conduire du pilote #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire
+ 
+- permis de conduire
+- dlno #
+- permis Lic
+- permis conduire
+- licence permis
+- licences permis
+- licence permis
+- licences permis
+- pilote conduire
+- pilotes conduire
+- conduire du pilote
+- Lic de la commande
+- conduite conduire
+- licences de conduite
+- permis de conduire
+
+- permis de conduire
+
+- permis de conduire
+- n ° de DL
+- dlno
+- Numéro de la LD
+
 #### <a name="keywords_cyprus_eu_drivers_license_number"></a>Keywords_cyprus_eu_driver’s_license_number
 
-- LD #
-- Permis de conduire
-- Numéro de permis de conduire
-- permis de conduire
-- pilotes.
-- permis de conduire
-- permis de conduire
-- Numéro de permis de conduire
-- Numéro de permis de conduire
-- Numéro de permis de conduire
-- dlno #
 - άδεια οδήγησης
+- αριθμό άδειας οδήγησης
+- άδειες οδήγησης
 
 
 ## <a name="cyprus-identity-card"></a>Carte d’identité Chypre
@@ -3852,7 +4445,8 @@ deux lettres suivies de six chiffres
 
 huit lettres et chiffres :
   
-- deux lettres (ne respectent pas la casse)
+- lettre « E » (ne respecte pas la casse)
+- une lettre
 - un espace (facultatif)
 - six chiffres
 
@@ -3864,37 +4458,153 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - L’expression régulière  `Regex_czech_republic_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from  `Keywords_czech_republic_eu_driver's_license_number` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_driver's_license_number` ou `Keywords_czech_republic_eu_driver's_license_number` est trouvé. 
 
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <Entity id="86b40d3b-d8ea-4c36-aab0-ef9416a6769c" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_czech_republic_eu_driver's_license_number" />
-          <Match idRef="Keywords_czech_republic_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_czech_republic_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 
 ```
 
 ### <a name="keywords"></a>Mots clés
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Gestionnaire de la LIC
+- pilote conduire
+- permis de conduire
+- licences de pilotes
+- permis de conduire
+- permis de conduire
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- pilotes Lic
+- pilotes conduire
+- permis de conduire
+- licences de pilotes
+- permis de conduire
+- permis de conduire
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- Driver’Lic
+- pilote’conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- Gestionnaire de la LIC
+- conduire du pilote
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- LD #
+- distribution #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Gestionnaire de la LIC #
+- pilote conduire #
+- permis de conduire #
+- licences de pilotes #
+- permis de conduire #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- pilotes Lic #
+- pilotes conduire #
+- permis de conduire #
+- licences de pilotes #
+- permis de conduire #
+- permis de conduire #
+- driver'lic #
+- driver'lics #
+- driver'license #
+- driver'licenses #
+- driver'licence #
+- driver'licences #
+- Driver’Lic #
+- pilote’conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- Gestionnaire de la LIC #
+- conduire du pilote #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire
+ 
+- permis de conduire
+- dlno #
+- permis Lic
+- permis conduire
+- licence permis
+- licences permis
+- licence permis
+- licences permis
+- pilote conduire
+- pilotes conduire
+- conduire du pilote
+- Lic de la commande
+- conduite conduire
+- licences de conduite
+- permis de conduire
+
+- permis de conduire
+
+- permis de conduire
+- n ° de DL
+- dlno
+- Numéro de la LD
+
 #### <a name="keywords_czech_republic_eu_drivers_license_number"></a>Keywords_czech_republic_eu_driver’s_license_number
 
-- LD #
-- Permis de conduire
-- Numéro de permis de conduire
-- permis de conduire
-- pilotes.
-- permis de conduire
-- permis de conduire
-- permis de conduire
-- Numéro de permis de conduire
-- Numéro de permis de conduire
-- Numéro de permis de conduire
-- Numéro de permis de conduire
-- dlno #
 - řidičský prúkaz
+- řidičské průkazy
+- číslo řidičského průkazu
+- čísla řidičských průkazů
 
 
 ## <a name="czech-passport-number"></a>Numéro de passeport tchèque
@@ -4131,40 +4841,155 @@ huit chiffres
   
 ### <a name="checksum"></a>Somme de contrôle
 
-Oui
+Non
   
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - L’expression régulière  `Regex_denmark_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from  `Keywords_denmark_eu_driver's_license_number` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_driver's_license_number` ou `Keywords_denmark_eu_driver's_license_number` est trouvé. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Denmark Driver's License Number -->
+      <Entity id="98a95812-6203-451a-a220-d39870ebef0e" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_denmark_eu_driver's_license_number" />
-          <Match idRef="Keywords_denmark_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_denmark_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Gestionnaire de la LIC
+- pilote conduire
+- permis de conduire
+- licences de pilotes
+- permis de conduire
+- permis de conduire
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- pilotes Lic
+- pilotes conduire
+- permis de conduire
+- licences de pilotes
+- permis de conduire
+- permis de conduire
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- Driver’Lic
+- pilote’conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- Gestionnaire de la LIC
+- conduire du pilote
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- LD #
+- distribution #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Gestionnaire de la LIC #
+- pilote conduire #
+- permis de conduire #
+- licences de pilotes #
+- permis de conduire #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- pilotes Lic #
+- pilotes conduire #
+- permis de conduire #
+- licences de pilotes #
+- permis de conduire #
+- permis de conduire #
+- driver'lic #
+- driver'lics #
+- driver'license #
+- driver'licenses #
+- driver'licence #
+- driver'licences #
+- Driver’Lic #
+- pilote’conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- Gestionnaire de la LIC #
+- conduire du pilote #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire
+ 
+- permis de conduire
+- dlno #
+- permis Lic
+- permis conduire
+- licence permis
+- licences permis
+- licence permis
+- licences permis
+- pilote conduire
+- pilotes conduire
+- conduire du pilote
+- Lic de la commande
+- conduite conduire
+- licences de conduite
+- permis de conduire
+
+- permis de conduire
+
+- permis de conduire
+- n ° de DL
+- dlno
+- Numéro de la LD
+
 #### <a name="keywords_denmark_eu_drivers_license_number"></a>Keywords_denmark_eu_driver’s_license_number
 
-- | DL #
-- Permis de conduire
-- Numéro de permis de conduire
-- permis de conduire
-- pilotes.
-- permis de conduire
-- permis de conduire
-- permis de conduire
-- Numéro de permis de conduire
-- Numéro de permis de conduire
-- Numéro de permis de conduire
-- dlno #
 - kørekort
 - kørekortnummer
 
@@ -4461,35 +5286,153 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - L’expression régulière  `Regex_estonia_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from  `Keywords_estonia_eu_driver's_license_number` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_driver's_license_number` ou `Keywords_estonia_eu_driver's_license_number` est trouvé. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Estonia Driver's License Number -->
+      <Entity id="51da8171-da70-4cc1-9d65-055a59ca4f83" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_estonia_eu_driver's_license_number" />
-          <Match idRef="Keywords_estonia_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_estonia_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Gestionnaire de la LIC
+- pilote conduire
+- permis de conduire
+- licences de pilotes
+- permis de conduire
+- permis de conduire
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- pilotes Lic
+- pilotes conduire
+- permis de conduire
+- licences de pilotes
+- permis de conduire
+- permis de conduire
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- Driver’Lic
+- pilote’conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- Gestionnaire de la LIC
+- conduire du pilote
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- LD #
+- distribution #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Gestionnaire de la LIC #
+- pilote conduire #
+- permis de conduire #
+- licences de pilotes #
+- permis de conduire #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- pilotes Lic #
+- pilotes conduire #
+- permis de conduire #
+- licences de pilotes #
+- permis de conduire #
+- permis de conduire #
+- driver'lic #
+- driver'lics #
+- driver'license #
+- driver'licenses #
+- driver'licence #
+- driver'licences #
+- Driver’Lic #
+- pilote’conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- Gestionnaire de la LIC #
+- conduire du pilote #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire
+ 
+- permis de conduire
+- dlno #
+- permis Lic
+- permis conduire
+- licence permis
+- licences permis
+- licence permis
+- licences permis
+- pilote conduire
+- pilotes conduire
+- conduire du pilote
+- Lic de la commande
+- conduite conduire
+- licences de conduite
+- permis de conduire
+
+- permis de conduire
+
+- permis de conduire
+- n ° de DL
+- dlno
+- Numéro de la LD
+
 #### <a name="keywords_estonia_eu_drivers_license_number"></a>Keywords_estonia_eu_driver’s_license_number
 
-- LD #
-- Permis de conduire
-- Numéro de permis de conduire
-- Numéro de permis de conduire
-- permis de conduire
-- pilotes.
-- permis de conduire
-- permis de conduire
-- permis de conduire
-- Numéro de permis de conduire
-- Numéro de permis de conduire
-- dlno #
-- permis de conduire
+--autorisation de conduire
+- juhilubade numbrid
+- numéro juhiloa
+- juhiluba
 
 
 ## <a name="estonia-personal-identification-code"></a>Code d’identification personnel (Estonie)
@@ -5142,15 +6085,16 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 ### <a name="format"></a>Format
 
-dix chiffres contenant un trait d’Union
+dix chiffres et lettres contenant un trait d’Union
   
 ### <a name="pattern"></a>Modèle
 
-dix chiffres contenant un trait d’Union :
+dix chiffres et lettres contenant un trait d’Union :
   
 - six chiffres 
 - un trait d’Union
-- quatre chiffres 
+- trois chiffres 
+- un chiffre ou une lettre
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -5160,35 +6104,159 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - L’expression régulière  `Regex_finland_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from  `Keywords_finland_eu_driver's_license_number` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_driver's_license_number` ou `Keywords_finland_eu_driver's_license_number` est trouvé. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Finland Driver's License Number -->
+      <Entity id="bb3b27a3-79bd-4ac4-81a7-f9fca3c7d1a7" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_finland_eu_driver's_license_number" />
-          <Match idRef="Keywords_finland_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_finland_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Gestionnaire de la LIC
+- pilote conduire
+- permis de conduire
+- licences de pilotes
+- permis de conduire
+- permis de conduire
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- pilotes Lic
+- pilotes conduire
+- permis de conduire
+- licences de pilotes
+- permis de conduire
+- permis de conduire
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- Driver’Lic
+- pilote’conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- Gestionnaire de la LIC
+- conduire du pilote
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- LD #
+- distribution #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Gestionnaire de la LIC #
+- pilote conduire #
+- permis de conduire #
+- licences de pilotes #
+- permis de conduire #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- pilotes Lic #
+- pilotes conduire #
+- permis de conduire #
+- licences de pilotes #
+- permis de conduire #
+- permis de conduire #
+- driver'lic #
+- driver'lics #
+- driver'license #
+- driver'licenses #
+- driver'licence #
+- driver'licences #
+- Driver’Lic #
+- pilote’conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- Gestionnaire de la LIC #
+- conduire du pilote #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire
+ 
+- permis de conduire
+- dlno #
+- permis Lic
+- permis conduire
+- licence permis
+- licences permis
+- licence permis
+- licences permis
+- pilote conduire
+- pilotes conduire
+- conduire du pilote
+- Lic de la commande
+- conduite conduire
+- licences de conduite
+- permis de conduire
+
+- permis de conduire
+
+- permis de conduire
+- n ° de DL
+- dlno
+- Numéro de la LD
+
+
 #### <a name="keywords_finland_eu_drivers_license_number"></a>Keywords_finland_eu_driver’s_license_number
 
-- LD #
-- Permis de conduire
-- Numéro de permis de conduire
-- permis de conduire
-- pilotes.
-- permis de conduire
-- permis de conduire
-- permis de conduire
-- Numéro de permis de conduire
-- Numéro de permis de conduire
-- Numéro de permis de conduire
-- dlno #
 - ajokortti
+- permis de conduire
+- ajokortin numérique
+- kuljettaja lic.
+- körkort
+- körkortnummer
+- förare lic.
+- ajokortit
+- ajokortin numerot
 
 
 ## <a name="finland-european-health-insurance-number"></a>Numéro d’assurance maladie européenne pour la Finlande
@@ -5496,36 +6564,154 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - la fonction Func_french_drivers_license trouve le contenu qui correspond au modèle.
-- au moins l’une des conditions suivantes est vraie :
 - un mot clé depuis Keyword_french_drivers_license est trouvé.
-- la fonction Func_eu_date trouve une date au format de date correct.
 
 ```xml
-<!-- France Driver's License Number -->
-<Entity id="18e55a36-a01b-4b0f-943d-dc10282a1824" patternsProximity="300" recommendedConfidence="75">
-  <Pattern confidenceLevel="75">
+    <!-- France Driver's License Number -->
+    <Entity id="18e55a36-a01b-4b0f-943d-dc10282a1824" patternsProximity="300" recommendedConfidence="75">
+      <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_french_drivers_license" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_french_drivers_license" />
-          <Match idRef="Func_eu_date" />
-        </Any>
-  </Pattern>
-</Entity>
+        <Match idRef="Keyword_french_drivers_license" />
+      </Pattern>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_french_drivers_license"></a>Keyword_french_drivers_license
 
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Gestionnaire de la LIC
+- pilote conduire
+- permis de conduire
+- licences de pilotes
+- permis de conduire
+- permis de conduire
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- pilotes Lic
+- pilotes conduire
+- permis de conduire
+- licences de pilotes
+- permis de conduire
+- permis de conduire
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- Driver’Lic
+- pilote’conduire
 - permis de conduire
 - permis de conduire
 - permis de conduire
 - permis de conduire
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- Gestionnaire de la LIC
+- conduire du pilote
 - permis de conduire
-- numéro de permis
-- numéro de permis
-- numéros de permis
-- numéros de permis
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- LD #
+- distribution #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Gestionnaire de la LIC #
+- pilote conduire #
+- permis de conduire #
+- licences de pilotes #
+- permis de conduire #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- pilotes Lic #
+- pilotes conduire #
+- permis de conduire #
+- licences de pilotes #
+- permis de conduire #
+- permis de conduire #
+- driver'lic #
+- driver'lics #
+- driver'license #
+- driver'licenses #
+- driver'licence #
+- driver'licences #
+- Driver’Lic #
+- pilote’conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- Gestionnaire de la LIC #
+- conduire du pilote #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire
+ 
+- permis de conduire
+- dlno #
+- permis Lic
+- permis conduire
+- licence permis
+- licences permis
+- licence permis
+- licences permis
+- pilote conduire
+- pilotes conduire
+- conduire du pilote
+- Lic de la commande
+- conduite conduire
+- licences de conduite
+- permis de conduire
+
+- permis de conduire
+
+- permis de conduire
+- n ° de DL
+- dlno
+- Numéro de la LD
+- 
+permis de conduire
+- 
+numéro de permis
+- Numéro de licence
+- 
+numéros de permis
+- 
+
+numéros de permis
+- numéros de licence
 
 
 ## <a name="france-health-insurance-number"></a>Numéro d’assurance maladie France
@@ -5929,124 +7115,177 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - La fonction Func_german_drivers_license trouve un contenu qui correspond au modèle.
-- Au moins une des affirmations suivantes est vraie :
-    - Un mot clé figurant dans la liste Keyword_german_drivers_license_number est trouvé.
-    - Un mot clé figurant dans la liste Keyword_german_drivers_license_collaborative est trouvé.
-    - Un mot clé figurant dans la liste Keyword_german_drivers_license est trouvé.
+- Un mot clé figurant dans la liste Keyword_german_drivers_license_number est trouvé.
 - La somme de contrôle est correcte.
 
 ```xml
-<!-- Germany Driver's License Number -->
-<Entity id="91da9335-1edb-45b7-a95f-5fe41a16c63c" patternsProximity="300" recommendedConfidence="75">
-  <Pattern confidenceLevel="75">
+    <!-- German Driver's License Number -->
+    <Entity id="91da9335-1edb-45b7-a95f-5fe41a16c63c" patternsProximity="300" recommendedConfidence="75">
+      <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_german_drivers_license" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_german_drivers_license_number" />
-          <Match idRef="Keyword_german_drivers_license_collaborative" />
-          <Match idRef="Keyword_german_drivers_license" />
-        </Any>
-  </Pattern>
-</Entity>
+        <Match idRef="Keyword_german_drivers_license" />
+      </Pattern>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_german_drivers_license_number"></a>Keyword_german_drivers_license_number
 
-- Führerschein
-- Fuhrerschein
-- Fuehrerschein
-- Führerscheinnummer
-- Fuhrerscheinnummer
-- Fuehrerscheinnummer
-- Führerschein 
-- Fuhrerschein 
-- Fuehrerschein 
-- FührerscheinnummerNr
-- FuhrerscheinnummerNr
-- FuehrerscheinnummerNr
-- FührerscheinnummerKlasse
-- FuhrerscheinnummerKlasse
-- FuehrerscheinnummerKlasse
-- Führerschein - Nr
-- Fuhrerschein - Nr
-- Fuehrerschein - Nr 
-- Führerschein - Klasse 
-- Fuhrerschein - Klasse 
-- Fuehrerschein - Klasse
-- FührerscheinnummerNr 
-- FuhrerscheinnummerNr 
-- FuehrerscheinnummerNr 
-- FührerscheinnummerKlasse 
-- FuhrerscheinnummerKlasse 
-- FuehrerscheinnummerKlasse 
-- Führerschein - Nr 
-- Fuhrerschein - Nr 
-- Fuehrerschein - Nr 
-- Führerschein - Klasse 
-- Fuhrerschein - Klasse 
-- Fuehrerschein - Klasse 
-- LD 
-- DISTRIBUTION
-- Permis conduire 
-- Permis conduire 
-- Permis de conduire
-- Permis de conduire 
-- Permis de conduire 
-- Permis de conduire 
-- Permis conduire 
-- Permis conduire 
-- Permis de conduire 
-- Permis de conduire 
-- Permis de conduire 
-- Permis de conduire 
-- Permis conduire 
-- Permis conduire 
-- Permis de conduire 
-- Permis de conduire 
-- Permis de conduire 
-- Permis de conduire 
-- Permis de conduire 
-- Permis de conduire 
-- Permis de conduire 
-- Permis de conduire 
-- Permis de conduire 
-- Permis de conduire 
-- Permis conduire 
-- Permis conduire 
-- Permis de conduire 
-- Permis de conduire 
-- Permis de conduire 
-- Permis de conduire
-
-#### <a name="keyword_german_drivers_license_collaborative"></a>Keyword_german_drivers_license_collaborative
-
-- Nr-Führerschein 
-- Nr-Fuhrerschein 
-- Nr-Fuehrerschein 
-- No-Führerschein 
-- No-Fuhrerschein 
-- No-Fuehrerschein 
-- N-Führerschein 
-- N-Fuhrerschein 
-- N-Fuehrerschein
-- Nr-Führerschein 
-- Nr-Fuhrerschein 
-- Nr-Fuehrerschein 
-- No-Führerschein 
-- No-Fuhrerschein 
-- No-Fuehrerschein 
-- N-Führerschein 
-- N-Fuhrerschein 
-- N-Fuehrerschein 
-
-#### <a name="keyword_german_drivers_license"></a>Keyword_german_drivers_license
-
 - ausstellungsdatum
 - ausstellungsort
-- ausstellende behöde
-- ausstellende behorde
-- ausstellende behoerde
+- 
+ausstellende behöde
+- 
+ausstellende behorde
+- 
+
+ausstellende behoerde
+- Führerschein
+- Fuhrerschein
+- fuehrerschein
+- führerscheinnummer
+- fuhrerscheinnummer
+- fuehrerscheinnummer
+- Führerschein 
+- Fuhrerschein 
+- fuehrerschein 
+- führerscheinnummernr
+- fuhrerscheinnummernr
+- fuehrerscheinnummernr
+- führerscheinnummerklasse
+- fuhrerscheinnummerklasse
+- fuehrerscheinnummerklasse
+- Nr-Führerschein
+- Nr-Fuhrerschein
+- Nr-fuehrerschein
+- non-Führerschein
+- non-Fuhrerschein
+- non-fuehrerschein
+- n-Führerschein
+- n-Fuhrerschein
+- n-fuehrerschein
+- 
+permis de conduire
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Gestionnaire de la LIC
+- pilote conduire
+- permis de conduire
+- licences de pilotes
+- permis de conduire
+- permis de conduire
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- pilotes Lic
+- pilotes conduire
+- permis de conduire
+- licences de pilotes
+- permis de conduire
+- permis de conduire
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- Driver’Lic
+- pilote’conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- Gestionnaire de la LIC
+- conduire du pilote
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- LD #
+- distribution #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Gestionnaire de la LIC #
+- pilote conduire #
+- permis de conduire #
+- licences de pilotes #
+- permis de conduire #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- pilotes Lic #
+- pilotes conduire #
+- permis de conduire #
+- licences de pilotes #
+- permis de conduire #
+- permis de conduire #
+- driver'lic #
+- driver'lics #
+- driver'license #
+- driver'licenses #
+- driver'licence #
+- driver'licences #
+- Driver’Lic #
+- pilote’conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- Gestionnaire de la LIC #
+- conduire du pilote #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire
+ 
+- permis de conduire
+- dlno #
+- permis Lic
+- permis conduire
+- licence permis
+- licences permis
+- licence permis
+- licences permis
+- pilote conduire
+- pilotes conduire
+- conduire du pilote
+- Lic de la commande
+- conduite conduire
+- licences de conduite
+- permis de conduire
+
+- permis de conduire
+
+- permis de conduire
+- dlno
 
 
 ## <a name="germany-identity-card-number"></a>Numéro de carte d’identité Allemagne
@@ -6321,36 +7560,154 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - L’expression régulière  `Regex_greece_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from  `Keywords_greece_eu_driver's_license_number` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_driver's_license_number` ou `Keywords_greece_eu_driver's_license_number` est trouvé. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Greece Driver's License Number -->
+      <Entity id="7a2200b5-aacf-4e3c-ab36-136d3e68b7da" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_greece_eu_driver's_license_number" />
-          <Match idRef="Keywords_greece_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_greece_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Gestionnaire de la LIC
+- pilote conduire
+- permis de conduire
+- licences de pilotes
+- permis de conduire
+- permis de conduire
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- pilotes Lic
+- pilotes conduire
+- permis de conduire
+- licences de pilotes
+- permis de conduire
+- permis de conduire
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- Driver’Lic
+- pilote’conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- Gestionnaire de la LIC
+- conduire du pilote
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- LD #
+- distribution #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Gestionnaire de la LIC #
+- pilote conduire #
+- permis de conduire #
+- licences de pilotes #
+- permis de conduire #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- pilotes Lic #
+- pilotes conduire #
+- permis de conduire #
+- licences de pilotes #
+- permis de conduire #
+- permis de conduire #
+- driver'lic #
+- driver'lics #
+- driver'license #
+- driver'licenses #
+- driver'licence #
+- driver'licences #
+- Driver’Lic #
+- pilote’conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- Gestionnaire de la LIC #
+- conduire du pilote #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire
+ 
+- permis de conduire
+- dlno #
+- permis Lic
+- permis conduire
+- licence permis
+- licences permis
+- licence permis
+- licences permis
+- pilote conduire
+- pilotes conduire
+- conduire du pilote
+- Lic de la commande
+- conduite conduire
+- licences de conduite
+- permis de conduire
+
+- permis de conduire
+
+- permis de conduire
+- n ° de DL
+- dlno
+- Numéro de la LD
+
+
 #### <a name="keywords_greece_eu_drivers_license_number"></a>Keywords_greece_eu_driver’s_license_number
 
-- Fichier #
-- Permis de conduire
-- Numéro de permis de conduire
-- permis de conduire
-- pilotes.
-- permis de conduire
-- permis de conduire
-- permis de conduire
-- Numéro de permis de conduire
-- Numéro de permis de conduire
-- Numéro de permis de conduire
-- dlno #
 - δεια οδήγησης
 - Adeia odigisis
+- Άδεια οδήγησης
+- Δίπλωμα οδήγησης
 
 
 ## <a name="greece-national-id-card"></a>Carte d’identité nationale Grèce
@@ -6646,35 +8003,152 @@ Non
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
 - L’expression régulière  `Regex_hungary_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from  `Keywords_hungary_eu_driver's_license_number` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_driver's_license_number` ou `Keywords_hungary_eu_driver's_license_number` est trouvé. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <Entity id="9d31c46b-6e6b-444c-aeb1-6dd7e604bb24" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_hungary_eu_driver's_license_number" />
-          <Match idRef="Keywords_hungary_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_hungary_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Gestionnaire de la LIC
+- pilote conduire
+- permis de conduire
+- licences de pilotes
+- permis de conduire
+- permis de conduire
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- pilotes Lic
+- pilotes conduire
+- permis de conduire
+- licences de pilotes
+- permis de conduire
+- permis de conduire
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- Driver’Lic
+- pilote’conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- Gestionnaire de la LIC
+- conduire du pilote
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- LD #
+- distribution #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Gestionnaire de la LIC #
+- pilote conduire #
+- permis de conduire #
+- licences de pilotes #
+- permis de conduire #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- pilotes Lic #
+- pilotes conduire #
+- permis de conduire #
+- licences de pilotes #
+- permis de conduire #
+- permis de conduire #
+- driver'lic #
+- driver'lics #
+- driver'license #
+- driver'licenses #
+- driver'licence #
+- driver'licences #
+- Driver’Lic #
+- pilote’conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- Gestionnaire de la LIC #
+- conduire du pilote #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire
+ 
+- permis de conduire
+- dlno #
+- permis Lic
+- permis conduire
+- licence permis
+- licences permis
+- licence permis
+- licences permis
+- pilote conduire
+- pilotes conduire
+- conduire du pilote
+- Lic de la commande
+- conduite conduire
+- licences de conduite
+- permis de conduire
+
+- permis de conduire
+
+- permis de conduire
+- n ° de DL
+- dlno
+- Numéro de la LD
+
+
 #### <a name="keywords_hungary_eu_drivers_license_number"></a>Keywords_hungary_eu_driver’s_license_number
 
-- LD #
-- Permis de conduire
-- Numéro de permis de conduire
-- permis de conduire
-- pilotes.
-- permis de conduire
-- permis de conduire
-- permis de conduire
-- Numéro de permis de conduire
-- Numéro de permis de conduire
-- Numéro de permis de conduire
-- dlno #
 - vezetoi engedely
+- vezetői engedély
+- vezetői engedélyek
 
 
 ## <a name="hungary-personal-identification-number"></a>Numéro d’identification personnel Hongrie
@@ -7362,36 +8836,152 @@ Non
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
 - L’expression régulière  `Regex_ireland_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from  `Keywords_ireland_eu_driver's_license_number` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_driver's_license_number` ou `Keywords_ireland_eu_driver's_license_number` est trouvé. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Ireland Driver's License Number -->
+      <Entity id="e01bccd9-eb4d-414f-ace1-e9b6a4c4a2ca" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_ireland_eu_driver's_license_number" />
-          <Match idRef="Keywords_ireland_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_ireland_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Gestionnaire de la LIC
+- pilote conduire
+- permis de conduire
+- licences de pilotes
+- permis de conduire
+- permis de conduire
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- pilotes Lic
+- pilotes conduire
+- permis de conduire
+- licences de pilotes
+- permis de conduire
+- permis de conduire
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- Driver’Lic
+- pilote’conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- Gestionnaire de la LIC
+- conduire du pilote
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- LD #
+- distribution #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Gestionnaire de la LIC #
+- pilote conduire #
+- permis de conduire #
+- licences de pilotes #
+- permis de conduire #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- pilotes Lic #
+- pilotes conduire #
+- permis de conduire #
+- licences de pilotes #
+- permis de conduire #
+- permis de conduire #
+- driver'lic #
+- driver'lics #
+- driver'license #
+- driver'licenses #
+- driver'licence #
+- driver'licences #
+- Driver’Lic #
+- pilote’conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- Gestionnaire de la LIC #
+- conduire du pilote #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire
+ 
+- permis de conduire
+- dlno #
+- permis Lic
+- permis conduire
+- licence permis
+- licences permis
+- licence permis
+- licences permis
+- pilote conduire
+- pilotes conduire
+- conduire du pilote
+- Lic de la commande
+- conduite conduire
+- licences de conduite
+- permis de conduire
+
+- permis de conduire
+
+- permis de conduire
+- n ° de DL
+- dlno
+- Numéro de la LD
+
+
 #### <a name="keywords_ireland_eu_drivers_license_number"></a>Keywords_ireland_eu_driver’s_license_number
 
-- LD #
-- Permis de conduire
-- Numéro de permis de conduire
-- permis de conduire
-- pilotes.
-- permis de conduire
-- permis de conduire
-- permis de conduire
-- Numéro de permis de conduire
-- Numéro de permis de conduire
-- Numéro de permis de conduire
-- dlno #
 - ceadúnas tiomána
-
+- ceadúnais tiomána
 
 ## <a name="ireland-passport-number"></a>Numéro de passeport Irlande
 
@@ -7654,10 +9244,10 @@ une combinaison de 10 lettres et chiffres
 
 ### <a name="pattern"></a>Modèle
 
-- une combinaison de 10 lettres et chiffres :
+une combinaison de 10 lettres et chiffres :
 - une lettre (ne respecte pas la casse) 
 - la lettre « A » ou « V » (ne respecte pas la casse) 
-- sept lettres (ne respectent pas la casse), des chiffres ou le trait de soulignement 
+- sept chiffres
 - une lettre (ne respecte pas la casse)
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -7686,8 +9276,11 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="keyword_italy_drivers_license_number"></a>Keyword_italy_drivers_license_number
 
-- numero di patente di guida 
+- nombre di brevet di
 - patente di guida 
+- Guida brevet
+- breveti di Guida
+- breveti Guida
 
 ## <a name="italy-fiscal-code"></a>Code fiscal Italie
 Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
@@ -7981,36 +9574,24 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - # Compte de débit 
 - N° de compte de débit 
 - N° de compte de débit 
-- 口座番号を当座預金口座の確認 
-- #アカウントの確認 、 勘定番号の確認 
-- #勘定の確認 
-- 勘定番号の確認 
-- 口座番号の確認 
-- 銀行口座番号 
-- 銀行口座 
-- 銀行口座＃ 
-- 銀行の勘定番号 
-- 銀行のacct＃ 
-- 銀行の勘定いいえ 
+- 口座番号
+- 銀行口座
 - 銀行口座番号
-- 普通預金口座番号 
-- 預金口座 
-- 貯蓄口座＃ 
-- 貯蓄勘定の数 
-- 貯蓄勘定＃ 
-- 貯蓄勘定番号 
-- 普通預金口座番号 
-- 引き落とし口座番号 
-- 口座番号 
-- 口座番号＃ 
-- デビットのacct番号 
-- デビット勘定＃ 
-- デビットACCTの番号 
-- デビット口座番号 
+- 総合口座
+- 普通預金口座
+- 普通口座
+- 当座預金口座
+- 当座口座
+- 預金口座
+- 振替口座
+- 銀行
+- バンク
 
 #### <a name="keyword_jp_bank_branch_code"></a>Keyword_jp_bank_branch_code
 
-Otemachi
+- 支店番号
+- 支店コード
+- 店番号
 
 ## <a name="japan-drivers-license-number"></a>Numéro de permis de conduire Japon
 
@@ -8046,31 +9627,41 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="keyword_jp_drivers_license_number"></a>Keyword_jp_drivers_license_number
 
-- LD # 
-- LD 
-- distribution # 
-- DISTRIBUTION 
-- Permis de conduire 
-- Permis de conduire 
-- permis de conduire 
-- permis de conduire 
-- Permis de conduire 
-- Permis de conduire 
-- permis de conduire 
-- Profil # 
-- Profil 
-- conduire # 
-- id d’état 
-- identification d’état 
-- numéro d’identification d’état 
-- 低所得国＃ 
-- 免許証 
-- 状態ID
-- 状態の識別 
-- 状態の識別番号 
-- 運転免許 
-- 運転免許証 
-- 運転免許証番号 
+- driverlicense
+- driverslicense
+- driver'slicense
+- driverslicenses
+- driver'slicenses
+- driverlicenses
+- LD #
+- distribution #
+- Profil #
+- conduire #
+- 運転免許証
+- 運転免許
+- 免許証
+- 免許
+- 運転免許証番号
+- 運転免許番号
+- 免許証番号
+- 免許番号
+- 運転免許証ナンバー
+- 運転免許ナンバー
+- 免許証ナンバー
+- 運転免許証no
+- 運転免許no
+- 免許証no
+- 免許no
+- 運転経歴証明書番号
+- 運転経歴証明書
+- 運転免許証No.
+- 運転免許No.
+- 免許証No.
+- 免許No.
+- 運転免許証 #
+- 運転免許 #
+- 免許証 #
+- 免許 #
 
 
 ## <a name="japan-my-number---corporate"></a>Mon numéro japonais-entreprise
@@ -8232,10 +9823,22 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="keyword_jp_passport"></a>Keyword_jp_passport
 
-- パスポート 
-- パスポート番号 
-- パスポートのNum 
-- パスポート＃ 
+- Tel
+- Numéro de passeport
+- Numéro de passeport
+- # Passeport
+
+- パスポート
+- パスポート番号
+- パスポートナンバー
+- パスポート＃
+- パスポート #
+- パスポートNo.
+- 旅券番号
+- 旅券番号＃
+- ♯ 旅券番号
+- 旅券ナンバー
+
 
 ## <a name="japan-residence-card-number"></a>Numéro de carte de séjour Japon
 
@@ -8278,6 +9881,8 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - N ° carte de séjour
 - Carte de séjour #
 - 在留カード番号
+- 在留カード
+- 在留番号
 
 ## <a name="japan-resident-registration-number"></a>Numéro d’enregistrement de résident Japon
 
@@ -8314,16 +9919,15 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 #### <a name="keyword_jp_resident_registration_number"></a>Keyword_jp_resident_registration_number
 
 - Numéro d’enregistrement du résident
-- Numéro d’enregistrement du résident 
 - Numéro de base d’enregistrement des résidents 
 - N° d’enregistrement du résident 
 - N° d’enregistrement du résident 
 - N° de base d’enregistrement des résidents 
 - N° d’enregistrement du résident de base 
-- 住民登録番号、登録番号をレジデント 
-- 住民基本登録番号、登録番号 
-- 住民基本レジストリ番号を常駐 
-- 登録番号を常駐住民基本台帳登録番号 
+- 外国人登録証明書番号
+- 証明書番号
+- 登録番号
+- 外国人登録証
 
    
 ## <a name="japan-social-insurance-number-sin"></a>Numéro d’assurance sociale japonaise (SIN)
@@ -8375,8 +9979,22 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - N° d’assurance sociale 
 - Numéro d’assurance sociale 
 - Numéro d’assurance sociale 
-- 社会保険のテンキー 
-- 社会保険番号 
+- 健康保険被保険者番号
+- 健保番号
+- 基礎年金番号
+- 雇用保険被保険者番号
+- 雇用保険番号
+- 保険証番号
+- 社会保険番号
+- 社会保険No.
+- 社会保険
+- 介護保険
+- 介護保険被保険者番号
+- 健康保険被保険者整理番号
+- 雇用保険被保険者整理番号
+- 厚生年金
+- 厚生年金被保険者整理番号
+
 
 ## <a name="latvia-drivers-license-number"></a>Numéro de permis de conduire de la Lettonie
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du pilote de l’UE.
@@ -8400,35 +10018,153 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - L’expression régulière  `Regex_latvia_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from  `Keywords_latvia_eu_driver's_license_number` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_driver's_license_number` ou `Keywords_latvia_eu_driver's_license_number` est trouvé. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Latvia Driver's License Number -->
+      <Entity id="ec996de0-30f2-46b1-b192-4d2ff8805fa7" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_latvia_eu_driver's_license_number" />
-          <Match idRef="Keywords_latvia_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_latvia_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Gestionnaire de la LIC
+- pilote conduire
+- permis de conduire
+- licences de pilotes
+- permis de conduire
+- permis de conduire
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- pilotes Lic
+- pilotes conduire
+- permis de conduire
+- licences de pilotes
+- permis de conduire
+- permis de conduire
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- Driver’Lic
+- pilote’conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- Gestionnaire de la LIC
+- conduire du pilote
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- LD #
+- distribution #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Gestionnaire de la LIC #
+- pilote conduire #
+- permis de conduire #
+- licences de pilotes #
+- permis de conduire #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- pilotes Lic #
+- pilotes conduire #
+- permis de conduire #
+- licences de pilotes #
+- permis de conduire #
+- permis de conduire #
+- driver'lic #
+- driver'lics #
+- driver'license #
+- driver'licenses #
+- driver'licence #
+- driver'licences #
+- Driver’Lic #
+- pilote’conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- Gestionnaire de la LIC #
+- conduire du pilote #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire
+ 
+- permis de conduire
+- dlno #
+- permis Lic
+- permis conduire
+- licence permis
+- licences permis
+- licence permis
+- licences permis
+- pilote conduire
+- pilotes conduire
+- conduire du pilote
+- Lic de la commande
+- conduite conduire
+- licences de conduite
+- permis de conduire
+
+- permis de conduire
+
+- permis de conduire
+- n ° de DL
+- dlno
+- Numéro de la LD
+
+
 #### <a name="keywords_latvia_eu_drivers_license_number"></a>Keywords_latvia_eu_driver’s_license_number
 
-- LD #
-- Permis de conduire
-- Numéro de permis de conduire
-- permis de conduire
-- pilotes.
-- permis de conduire
-- permis de conduire
-- permis de conduire
-- Numéro de permis de conduire
-- Numéro de permis de conduire
-- Numéro de permis de conduire
-- dlno #
 - autovadītāja apliecība
+- autovadītāja apliecības
+- vadītāja apliecība
 
 ## <a name="latvia-personal-code"></a>Code personnel en Lettonie
 
@@ -8646,35 +10382,153 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - L’expression régulière  `Regex_lithuania_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from  `Keywords_lithuania_eu_driver's_license_number` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_driver's_license_number` ou `Keywords_lithuania_eu_driver's_license_number` est trouvé. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Lithuania Driver's License Number -->
+      <Entity id="86f7628b-e0f4-4dc3-9fbc-e4300e4c7d78" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_lithuania_eu_driver's_license_number" />
-          <Match idRef="Keywords_lithuania_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_lithuania_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Gestionnaire de la LIC
+- pilote conduire
+- permis de conduire
+- licences de pilotes
+- permis de conduire
+- permis de conduire
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- pilotes Lic
+- pilotes conduire
+- permis de conduire
+- licences de pilotes
+- permis de conduire
+- permis de conduire
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- Driver’Lic
+- pilote’conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- Gestionnaire de la LIC
+- conduire du pilote
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- LD #
+- distribution #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Gestionnaire de la LIC #
+- pilote conduire #
+- permis de conduire #
+- licences de pilotes #
+- permis de conduire #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- pilotes Lic #
+- pilotes conduire #
+- permis de conduire #
+- licences de pilotes #
+- permis de conduire #
+- permis de conduire #
+- driver'lic #
+- driver'lics #
+- driver'license #
+- driver'licenses #
+- driver'licence #
+- driver'licences #
+- Driver’Lic #
+- pilote’conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- Gestionnaire de la LIC #
+- conduire du pilote #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire
+ 
+- permis de conduire
+- dlno #
+- permis Lic
+- permis conduire
+- licence permis
+- licences permis
+- licence permis
+- licences permis
+- pilote conduire
+- pilotes conduire
+- conduire du pilote
+- Lic de la commande
+- conduite conduire
+- licences de conduite
+- permis de conduire
+
+- permis de conduire
+
+- permis de conduire
+- n ° de DL
+- dlno
+- Numéro de la LD
+
+
 #### <a name="keywords_lithuania_eu_drivers_license_number"></a>Keywords_lithuania_eu_driver’s_license_number
 
-- LD #
-- Permis de conduire
-- Numéro de permis de conduire
-- permis de conduire
-- pilotes.
-- permis de conduire
-- permis de conduire
-- permis de conduire
-- Numéro de permis de conduire
-- Numéro de permis de conduire
-- Numéro de permis de conduire
-- dlno #
 - vairuotojo pažymėjimas
+- vairuotojo pažymėjimo
+- vairuotojo pažymėjimo numeriai
 
 ## <a name="lithuania-personal-code"></a>Code personnel de Lituanie
 Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
@@ -8839,35 +10693,152 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - L’expression régulière  `Regex_luxemburg_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from  `Keywords_luxemburg_eu_driver's_license_number` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_driver's_license_number` ou `Keywords_luxemburg_eu_driver's_license_number` est trouvé. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Luxemburg Driver's License Number -->
+      <Entity id="89daf717-1544-4860-9a2e-fc9166dd8852" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_luxemburg_eu_driver's_license_number" />
-          <Match idRef="Keywords_luxemburg_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_luxemburg_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Gestionnaire de la LIC
+- pilote conduire
+- permis de conduire
+- licences de pilotes
+- permis de conduire
+- permis de conduire
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- pilotes Lic
+- pilotes conduire
+- permis de conduire
+- licences de pilotes
+- permis de conduire
+- permis de conduire
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- Driver’Lic
+- pilote’conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- Gestionnaire de la LIC
+- conduire du pilote
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- LD #
+- distribution #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Gestionnaire de la LIC #
+- pilote conduire #
+- permis de conduire #
+- licences de pilotes #
+- permis de conduire #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- pilotes Lic #
+- pilotes conduire #
+- permis de conduire #
+- licences de pilotes #
+- permis de conduire #
+- permis de conduire #
+- driver'lic #
+- driver'lics #
+- driver'license #
+- driver'licenses #
+- driver'licence #
+- driver'licences #
+- Driver’Lic #
+- pilote’conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- Gestionnaire de la LIC #
+- conduire du pilote #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire
+ 
+- permis de conduire
+- dlno #
+- permis Lic
+- permis conduire
+- licence permis
+- licences permis
+- licence permis
+- licences permis
+- pilote conduire
+- pilotes conduire
+- conduire du pilote
+- Lic de la commande
+- conduite conduire
+- licences de conduite
+- permis de conduire
+
+- permis de conduire
+
+- permis de conduire
+- n ° de DL
+- dlno
+- Numéro de la LD
+
+
 #### <a name="keywords_luxemburg_eu_drivers_license_number"></a>Keywords_luxemburg_eu_driver’s_license_number
 
-- LD #
-- Permis de conduire
-- Numéro de permis de conduire
-- permis de conduire
-- pilotes.
-- permis de conduire
-- permis de conduire
-- permis de conduire
-- Numéro de permis de conduire
-- Numéro de permis de conduire
-- Numéro de permis de conduire
-- dlno #
 - fahrerlaubnis
+- Führerschäin
 
 ## <a name="luxemburg-national-identification-number-natural-persons"></a>Numéro d’identification nationale du Luxembourg (personnes physiques)
 Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
@@ -9168,35 +11139,153 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - L’expression régulière  `Regex_malta_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from  `Keywords_malta_eu_driver's_license_number` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_driver's_license_number` ou `Keywords_malta_eu_driver's_license_number` est trouvé. 
     
 ```xml
-<!-- EU Driver's License Number -->
- <Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Malta Driver's License Number -->
+      <Entity id="a3bdaa4a-8371-4735-8fa5-56ee0fb4afc4" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_malta_eu_driver's_license_number" />
-          <Match idRef="Keywords_malta_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_malta_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Gestionnaire de la LIC
+- pilote conduire
+- permis de conduire
+- licences de pilotes
+- permis de conduire
+- permis de conduire
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- pilotes Lic
+- pilotes conduire
+- permis de conduire
+- licences de pilotes
+- permis de conduire
+- permis de conduire
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- Driver’Lic
+- pilote’conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- Gestionnaire de la LIC
+- conduire du pilote
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- LD #
+- distribution #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Gestionnaire de la LIC #
+- pilote conduire #
+- permis de conduire #
+- licences de pilotes #
+- permis de conduire #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- pilotes Lic #
+- pilotes conduire #
+- permis de conduire #
+- licences de pilotes #
+- permis de conduire #
+- permis de conduire #
+- driver'lic #
+- driver'lics #
+- driver'license #
+- driver'licenses #
+- driver'licence #
+- driver'licences #
+- Driver’Lic #
+- pilote’conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- Gestionnaire de la LIC #
+- conduire du pilote #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire
+ 
+- permis de conduire
+- dlno #
+- permis Lic
+- permis conduire
+- licence permis
+- licences permis
+- licence permis
+- licences permis
+- pilote conduire
+- pilotes conduire
+- conduire du pilote
+- Lic de la commande
+- conduite conduire
+- licences de conduite
+- permis de conduire
+
+- permis de conduire
+
+- permis de conduire
+- n ° de DL
+- dlno
+- Numéro de la LD
+
+
 #### <a name="keywords_malta_eu_drivers_license_number"></a>Keywords_malta_eu_driver’s_license_number
 
-- LD #
-- Permis de conduire
-- Numéro de permis de conduire
-- permis de conduire
-- pilotes.
-- permis de conduire
-- permis de conduire
-- permis de conduire
-- Numéro de permis de conduire
-- Numéro de permis de conduire
-- Numéro de permis de conduire
-- dlno #
 - Liċenzja-sewqan
+- liċenzji-sewwieq
+
 
 ## <a name="malta-identity-card-number"></a>Numéro de carte d’identité Malte
 Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
@@ -9489,37 +11578,156 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - L’expression régulière  `Regex_netherlands_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from  `Keywords_netherlands_eu_driver's_license_number` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_driver's_license_number` ou `Keywords_netherlands_eu_driver's_license_number` est trouvé. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Netherlands Driver's License Number -->
+      <Entity id="6247fbea-ab80-4be5-8233-308b7c031401" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_netherlands_eu_driver's_license_number" />
-          <Match idRef="Keywords_netherlands_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_netherlands_eu_driver's_license_number" />
+            </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Gestionnaire de la LIC
+- pilote conduire
+- permis de conduire
+- licences de pilotes
+- permis de conduire
+- permis de conduire
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- pilotes Lic
+- pilotes conduire
+- permis de conduire
+- licences de pilotes
+- permis de conduire
+- permis de conduire
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- Driver’Lic
+- pilote’conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- Gestionnaire de la LIC
+- conduire du pilote
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- LD #
+- distribution #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Gestionnaire de la LIC #
+- pilote conduire #
+- permis de conduire #
+- licences de pilotes #
+- permis de conduire #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- pilotes Lic #
+- pilotes conduire #
+- permis de conduire #
+- licences de pilotes #
+- permis de conduire #
+- permis de conduire #
+- driver'lic #
+- driver'lics #
+- driver'license #
+- driver'licenses #
+- driver'licence #
+- driver'licences #
+- Driver’Lic #
+- pilote’conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- Gestionnaire de la LIC #
+- conduire du pilote #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire
+ 
+- permis de conduire
+- dlno #
+- permis Lic
+- permis conduire
+- licence permis
+- licences permis
+- licence permis
+- licences permis
+- pilote conduire
+- pilotes conduire
+- conduire du pilote
+- Lic de la commande
+- conduite conduire
+- licences de conduite
+- permis de conduire
+
+- permis de conduire
+
+- permis de conduire
+- n ° de DL
+- dlno
+- Numéro de la LD
+
+
 #### <a name="keywords_netherlands_eu_drivers_license_number"></a>Keywords_netherlands_eu_driver’s_license_number
 
-- LD #
-- Permis de conduire
-- Numéro de permis de conduire
-- permis de conduire
-- pilotes.
-- permis de conduire
-- permis de conduire
-- permis de conduire
-- Numéro de permis de conduire
-- Numéro de permis de conduire
-- Numéro de permis de conduire
-- dlno #
 - permis de conduire
 - rijbewijs
 - rijbewijsnummer
+- rijbewijzen
+- rijbewijs nummer
+- rijbewijsnummers
 
 
 ## <a name="netherlands-passport-number"></a>Numéro de passeport néerlandais
@@ -9754,7 +11962,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
       <Entity id="1a97fc2b-dd2f-48f1-bc4e-2ddf25813956" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_new_zealand_bank_account_number" />
-          <Match idRef="Keywords_new_zealand_bank_account_number" />
+          <Match idRef="Keywords_new_zFealand_bank_account_number" />
         </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Func_new_zealand_bank_account_number" />
@@ -10174,35 +12382,152 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - L’expression régulière  `Regex_poland_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from  `Keywords_poland_eu_driver's_license_number` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_driver's_license_number` ou `Keywords_poland_eu_driver's_license_number` est trouvé. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Poland Driver's License Number -->
+      <Entity id="24d51f99-ee9e-4060-a077-cae58cab1ee4" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_poland_eu_driver's_license_number" />
-          <Match idRef="Keywords_poland_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_poland_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Gestionnaire de la LIC
+- pilote conduire
+- permis de conduire
+- licences de pilotes
+- permis de conduire
+- permis de conduire
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- pilotes Lic
+- pilotes conduire
+- permis de conduire
+- licences de pilotes
+- permis de conduire
+- permis de conduire
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- Driver’Lic
+- pilote’conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- Gestionnaire de la LIC
+- conduire du pilote
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- LD #
+- distribution #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Gestionnaire de la LIC #
+- pilote conduire #
+- permis de conduire #
+- licences de pilotes #
+- permis de conduire #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- pilotes Lic #
+- pilotes conduire #
+- permis de conduire #
+- licences de pilotes #
+- permis de conduire #
+- permis de conduire #
+- driver'lic #
+- driver'lics #
+- driver'license #
+- driver'licenses #
+- driver'licence #
+- driver'licences #
+- Driver’Lic #
+- pilote’conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- Gestionnaire de la LIC #
+- conduire du pilote #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire
+ 
+- permis de conduire
+- dlno #
+- permis Lic
+- permis conduire
+- licence permis
+- licences permis
+- licence permis
+- licences permis
+- pilote conduire
+- pilotes conduire
+- conduire du pilote
+- Lic de la commande
+- conduite conduire
+- licences de conduite
+- permis de conduire
+
+- permis de conduire
+
+- permis de conduire
+- n ° de DL
+- dlno
+- Numéro de la LD
+
+
 #### <a name="keywords_poland_eu_drivers_license_number"></a>Keywords_poland_eu_driver’s_license_number
 
-- LD #
-- Permis de conduire
-- Numéro de permis de conduire
-- permis de conduire
-- pilotes.
-- permis de conduire
-- permis de conduire
-- permis de conduire
-- Numéro de permis de conduire
-- Numéro de permis de conduire
-- Numéro de permis de conduire
-- dlno #
 - prawo jazdy
+- prawa jazdy
 
 ## <a name="poland-identity-card"></a>Carte d’identité Pologne
 
@@ -10540,17 +12865,24 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 
 ### <a name="format"></a>Format
 
-deux lettres suivies d’un nombre de sept chiffres dans le modèle spécifié
+deux motifs : deux lettres suivies de 5-8 chiffres avec des caractères spéciaux
   
 ### <a name="pattern"></a>Modèle
 
-deux lettres suivies de sept chiffres avec des caractères spéciaux :
-  
-- deux lettres (ne respectent pas la casse) 
-- un trait d’Union
-- six chiffres
-- un espace
-- un chiffre
+Modèle 1 : deux lettres suivies de 5/6 avec des caractères spéciaux :
+- Deux lettres (ne respectent pas la casse)
+- Un trait d’union 
+- Cinq ou six chiffres
+- Un espace
+- Un chiffre
+
+Modèle 2 : une lettre suivie de 6/8 chiffres avec des caractères spéciaux :
+- Une lettre (ne respecte pas la casse)
+- Un trait d’union 
+- Six ou huit chiffres
+- Un espace
+- Un chiffre
+
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -10560,35 +12892,160 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - L’expression régulière  `Regex_portugal_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from  `Keywords_portugal_eu_driver's_license_number` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_driver's_license_number` ou `Keywords_portugal_eu_driver's_license_number` est trouvé. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Portugal Driver's License Number -->
+      <Entity id="977f1e5a-2c33-4bcc-b516-95bb275cff23" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_portugal_eu_driver's_license_number" />
-          <Match idRef="Keywords_portugal_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_portugal_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Gestionnaire de la LIC
+- pilote conduire
+- permis de conduire
+- licences de pilotes
+- permis de conduire
+- permis de conduire
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- pilotes Lic
+- pilotes conduire
+- permis de conduire
+- licences de pilotes
+- permis de conduire
+- permis de conduire
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- Driver’Lic
+- pilote’conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- Gestionnaire de la LIC
+- conduire du pilote
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- LD #
+- distribution #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Gestionnaire de la LIC #
+- pilote conduire #
+- permis de conduire #
+- licences de pilotes #
+- permis de conduire #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- pilotes Lic #
+- pilotes conduire #
+- permis de conduire #
+- licences de pilotes #
+- permis de conduire #
+- permis de conduire #
+- driver'lic #
+- driver'lics #
+- driver'license #
+- driver'licenses #
+- driver'licence #
+- driver'licences #
+- Driver’Lic #
+- pilote’conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- Gestionnaire de la LIC #
+- conduire du pilote #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire
+ 
+- permis de conduire
+- dlno #
+- permis Lic
+- permis conduire
+- licence permis
+- licences permis
+- licence permis
+- licences permis
+- pilote conduire
+- pilotes conduire
+- conduire du pilote
+- Lic de la commande
+- conduite conduire
+- licences de conduite
+- permis de conduire
+
+- permis de conduire
+
+- permis de conduire
+- n ° de DL
+- dlno
+- Numéro de la LD
+
+
 #### <a name="keywords_portugal_eu_drivers_license_number"></a>Keywords_portugal_eu_driver’s_license_number
 
-- LD #
-- Permis de conduire
-- Numéro de permis de conduire
-- permis de conduire
-- pilotes.
-- permis de conduire
-- permis de conduire
-- permis de conduire
-- Numéro de permis de conduire
-- Numéro de permis de conduire
-- Numéro de permis de conduire
-- dlno #
 - Carteira de motorista
+- carteira motorista
+- Carteira de habilitação
+- carteira habilitação
+- Número de Licença
+- número licença
+- permissão de condução
+- permissão condução
+- Licença CONDUÇÃO Portugal
+- Carta de condução
 
 ## <a name="portugal-passport-number"></a>Numéro de passeport Portugal
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro de passeport de l’UE.
@@ -10734,7 +13191,6 @@ un caractère suivi de huit chiffres
 ### <a name="pattern"></a>Modèle
 
 un caractère suivi de huit chiffres :
-  
 - une lettre (ne respecte pas la casse) ou un chiffre 
 - huit chiffres
     
@@ -10746,35 +13202,156 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - L’expression régulière  `Regex_romania_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from  `Keywords_romania_eu_driver's_license_number` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_driver's_license_number` ou `Keywords_romania_eu_driver's_license_number` est trouvé. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Romania Driver's License Number -->
+      <Entity id="b5511ace-2fd8-4ae4-b6fc-c7c6e4689e3c" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_romania_eu_driver's_license_number" />
-          <Match idRef="Keywords_romania_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_romania_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Gestionnaire de la LIC
+- pilote conduire
+- permis de conduire
+- licences de pilotes
+- permis de conduire
+- permis de conduire
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- pilotes Lic
+- pilotes conduire
+- permis de conduire
+- licences de pilotes
+- permis de conduire
+- permis de conduire
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- Driver’Lic
+- pilote’conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- Gestionnaire de la LIC
+- conduire du pilote
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- LD #
+- distribution #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Gestionnaire de la LIC #
+- pilote conduire #
+- permis de conduire #
+- licences de pilotes #
+- permis de conduire #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- pilotes Lic #
+- pilotes conduire #
+- permis de conduire #
+- licences de pilotes #
+- permis de conduire #
+- permis de conduire #
+- driver'lic #
+- driver'lics #
+- driver'license #
+- driver'licenses #
+- driver'licence #
+- driver'licences #
+- Driver’Lic #
+- pilote’conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- Gestionnaire de la LIC #
+- conduire du pilote #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire
+ 
+- permis de conduire
+- dlno #
+- permis Lic
+- permis conduire
+- licence permis
+- licences permis
+- licence permis
+- licences permis
+- pilote conduire
+- pilotes conduire
+- conduire du pilote
+- Lic de la commande
+- conduite conduire
+- licences de conduite
+- permis de conduire
+
+- permis de conduire
+
+- permis de conduire
+- n ° de DL
+- dlno
+- Numéro de la LD
+
+
 #### <a name="keywords_romania_eu_drivers_license_number"></a>Keywords_romania_eu_driver’s_license_number
 
-- LD #
-- Permis de conduire
-- Numéro de permis de conduire
-- permis de conduire
-- pilotes.
-- permis de conduire
-- permis de conduire
-- permis de conduire
-- Numéro de permis de conduire
-- Numéro de permis de conduire
-- Numéro de permis de conduire
-- dlno #
 - permis de conducere
+- permisului de conducere
+- permisului conducere
+- permisele de conducere
+- permisele conducere
+- permis conducere
 
 ## <a name="romania-personal-numeric-code-cnp"></a>Code numérique de la Roumanie (CNP)
 Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
@@ -11169,35 +13746,154 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - L’expression régulière  `Regex_slovakia_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from  `Keywords_slovakia_eu_driver's_license_number` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_driver's_license_number` ou `Keywords_slovakia_eu_driver's_license_number` est trouvé. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Slovakia Driver's License Number -->
+      <Entity id="14240c22-b6de-4ce5-a90b-137f74252513" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
-          <IdMatch idRef="Regex_slovaknia_eu_driver's_license_number" />
-          <Match idRef="Keywords_slovakia_eu_driver's_license_number" />
+          <IdMatch idRef="Regex_slovakia_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_slovakia_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Gestionnaire de la LIC
+- pilote conduire
+- permis de conduire
+- licences de pilotes
+- permis de conduire
+- permis de conduire
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- pilotes Lic
+- pilotes conduire
+- permis de conduire
+- licences de pilotes
+- permis de conduire
+- permis de conduire
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- Driver’Lic
+- pilote’conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- Gestionnaire de la LIC
+- conduire du pilote
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- LD #
+- distribution #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Gestionnaire de la LIC #
+- pilote conduire #
+- permis de conduire #
+- licences de pilotes #
+- permis de conduire #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- pilotes Lic #
+- pilotes conduire #
+- permis de conduire #
+- licences de pilotes #
+- permis de conduire #
+- permis de conduire #
+- driver'lic #
+- driver'lics #
+- driver'license #
+- driver'licenses #
+- driver'licence #
+- driver'licences #
+- Driver’Lic #
+- pilote’conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- Gestionnaire de la LIC #
+- conduire du pilote #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire
+ 
+- permis de conduire
+- dlno #
+- permis Lic
+- permis conduire
+- licence permis
+- licences permis
+- licence permis
+- licences permis
+- pilote conduire
+- pilotes conduire
+- conduire du pilote
+- Lic de la commande
+- conduite conduire
+- licences de conduite
+- permis de conduire
+
+- permis de conduire
+
+- permis de conduire
+- n ° de DL
+- dlno
+- Numéro de la LD
+
+
 #### <a name="keywords_slovakia_eu_drivers_license_number"></a>Keywords_slovakia_eu_driver’s_license_number
 
-- LD #
-- Permis de conduire
-- Numéro de permis de conduire
-- permis de conduire
-- pilotes.
-- permis de conduire
-- permis de conduire
-- permis de conduire
-- Numéro de permis de conduire
-- Numéro de permis de conduire
-- Numéro de permis de conduire
-- dlno #
 - vodičský preukaz
+- vodičské preukazy
+- vodičského preukazu
+- vodičských preukazov
 
 ## <a name="slovakia-personal-number"></a>Numéro personnel de Slovaquie
 Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
@@ -11372,35 +14068,155 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - L’expression régulière  `Regex_slovenia_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from  `Keywords_slovenia_eu_driver's_license_number` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_driver's_license_number` ou `Keywords_slovenia_eu_driver's_license_number` est trouvé. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Slovenia Driver's License Number -->
+      <Entity id="d5bc089a-f2ee-433d-a6b1-5c253051d6f2" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_slovenia_eu_driver's_license_number" />
-          <Match idRef="Keywords_slovenia_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_slovenia_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Gestionnaire de la LIC
+- pilote conduire
+- permis de conduire
+- licences de pilotes
+- permis de conduire
+- permis de conduire
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- pilotes Lic
+- pilotes conduire
+- permis de conduire
+- licences de pilotes
+- permis de conduire
+- permis de conduire
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- Driver’Lic
+- pilote’conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- Gestionnaire de la LIC
+- conduire du pilote
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- LD #
+- distribution #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Gestionnaire de la LIC #
+- pilote conduire #
+- permis de conduire #
+- licences de pilotes #
+- permis de conduire #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- pilotes Lic #
+- pilotes conduire #
+- permis de conduire #
+- licences de pilotes #
+- permis de conduire #
+- permis de conduire #
+- driver'lic #
+- driver'lics #
+- driver'license #
+- driver'licenses #
+- driver'licence #
+- driver'licences #
+- Driver’Lic #
+- pilote’conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- Gestionnaire de la LIC #
+- conduire du pilote #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire
+ 
+- permis de conduire
+- dlno #
+- permis Lic
+- permis conduire
+- licence permis
+- licences permis
+- licence permis
+- licences permis
+- pilote conduire
+- pilotes conduire
+- conduire du pilote
+- Lic de la commande
+- conduite conduire
+- licences de conduite
+- permis de conduire
+
+- permis de conduire
+
+- permis de conduire
+- n ° de DL
+- dlno
+- Numéro de la LD
+
+
 #### <a name="keywords_slovenia_eu_drivers_license_number"></a>Keywords_slovenia_eu_driver’s_license_number
 
-- LD #
-- Permis de conduire
-- Numéro de permis de conduire
-- permis de conduire
-- pilotes.
-- permis de conduire
-- permis de conduire
-- permis de conduire 
-- Numéro de permis de conduire
-- Numéro de permis de conduire
-- Numéro de permis de conduire
-- dlno #
 - vozniško dovoljenje
+- licence vozniška številka
+- vozniških dovoljenj
+- številka vozniškega dovoljenja
+- številke vozniških dovoljenj
 
 ## <a name="slovenia-unique-master-citizen-number"></a>Numéro de citoyen principal unique Slovénie
 Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
@@ -11733,58 +14549,180 @@ Oui
   
 ### <a name="definition"></a>Définition
 
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
+- La fonction  `Func_spain_eu_DL_and_NI_number_citizen` ou `Func_spain_eu_DL_and_NI_number_foreigner` trouve le contenu qui correspond au modèle. 
+- Un mot clé depuis  `Keywords_eu_driver's_license_number` ou `Keywords_spain_eu_driver's_license_number` est trouvé. 
+
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-- La fonction  `Func_spain_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from  `Keywords_spain_eu_driver's_license_number` est trouvé. 
+- La fonction  `Func_spain_eu_DL_and_NI_number_citizen` ou `Func_spain_eu_DL_and_NI_number_foreigner` trouve le contenu qui correspond au modèle. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_spain_eu_driver's_license_number" />
-          <Match idRef="Keywords_spain_eu_driver's_license_number" />
+      <!-- Spain Driver's License Number -->
+      <Entity id="d5a82922-b501-4f40-8868-341321146aa2" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_spain_eu_DL_and_NI_number_citizen" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_spain_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_spain_eu_DL_and_NI_number_citizen" />
+        </Pattern>
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_spain_eu_DL_and_NI_number_foreigner" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_spain_eu_driver's_license_number" />
+          </Any>
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_spain_eu_DL_and_NI_number_foreigner" />
+        </Pattern>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Gestionnaire de la LIC
+- pilote conduire
+- permis de conduire
+- licences de pilotes
+- permis de conduire
+- permis de conduire
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- pilotes Lic
+- pilotes conduire
+- permis de conduire
+- licences de pilotes
+- permis de conduire
+- permis de conduire
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- Driver’Lic
+- pilote’conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- Gestionnaire de la LIC
+- conduire du pilote
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- LD #
+- distribution #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Gestionnaire de la LIC #
+- pilote conduire #
+- permis de conduire #
+- licences de pilotes #
+- permis de conduire #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- pilotes Lic #
+- pilotes conduire #
+- permis de conduire #
+- licences de pilotes #
+- permis de conduire #
+- permis de conduire #
+- driver'lic #
+- driver'lics #
+- driver'license #
+- driver'licenses #
+- driver'licence #
+- driver'licences #
+- Driver’Lic #
+- pilote’conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- Gestionnaire de la LIC #
+- conduire du pilote #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire
+ 
+- permis de conduire
+- dlno #
+- permis Lic
+- permis conduire
+- licence permis
+- licences permis
+- licence permis
+- licences permis
+- pilote conduire
+- pilotes conduire
+- conduire du pilote
+- Lic de la commande
+- conduite conduire
+- licences de conduite
+- permis de conduire
+
+- permis de conduire
+
+- permis de conduire
+- n ° de DL
+- dlno
+- Numéro de la LD
+
+
 #### <a name="keywords_spain_eu_drivers_license_number"></a>Keywords_spain_eu_driver’s_license_number
 
-- dlno #
-- LD #
-- pilotes.
-- permis de conduire
-- Permis de conduire
-- permis de conduire
-- permis de conduire
-- permis de conduire
-- permis de conduire
-- permis de conduire
-- permis de conduire
-- Numéro de permis de conduire
-- Numéro de permis de conduire
-- Numéro de permis de conduire
-- Numéro de permis de conduire
-- Numéro de permis de conduire
-- Numéro de permis de conduire
-- Numéro de permis de conduire
-- Numéro de permis de conduire
-- permis de conduire
-- Numéro de permis de conduire
 - permiso de Conducción
 - permiso conducción
-- número licencia conducir
-- Número de carnet de conducir
-- conducir de carnet número
+- licencia de conducir
 - licencia conducir
-- Número de permiso de conducir
-- Número de permiso conducir
-- número permiso conducir
 - permiso conducir
-- licencia de manejo
-- carnet El de conducir
+- permiso de conducir
+- permisos de conducir
+- permisos conducir
 - carnet conducir
+- carnet de conducir
+- licencia de manejo
+- licencia manejo
 
 ## <a name="spain-dni"></a>Espagne DNI
 Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
@@ -12184,35 +15122,161 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - L’expression régulière  `Regex_sweden_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from  `Keywords_sweden_eu_driver's_license_number` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_driver's_license_number` ou `Keywords_sweden_eu_driver's_license_number` est trouvé. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Sweden Driver's License Number -->
+      <Entity id="70088720-90dd-47f5-805e-5525f3567391" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_sweden_eu_driver's_license_number" />
-          <Match idRef="Keywords_sweden_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_sweden_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity> 
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
-**Keywords_sweden_eu_driver’s_license_number**
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver’s_license_number
 
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Gestionnaire de la LIC
+- pilote conduire
+- permis de conduire
+- licences de pilotes
+- permis de conduire
+- permis de conduire
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- pilotes Lic
+- pilotes conduire
+- permis de conduire
+- licences de pilotes
+- permis de conduire
+- permis de conduire
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- Driver’Lic
+- pilote’conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- Gestionnaire de la LIC
+- conduire du pilote
+- permis de conduire
+- permis de conduire
+- permis de conduire
+- permis de conduire
 - LD #
-- Permis de conduire
-- Numéro de permis de conduire
+- distribution #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Gestionnaire de la LIC #
+- pilote conduire #
+- permis de conduire #
+- licences de pilotes #
+- permis de conduire #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- pilotes Lic #
+- pilotes conduire #
+- permis de conduire #
+- licences de pilotes #
+- permis de conduire #
+- permis de conduire #
+- driver'lic #
+- driver'lics #
+- driver'license #
+- driver'licenses #
+- driver'licence #
+- driver'licences #
+- Driver’Lic #
+- pilote’conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- Gestionnaire de la LIC #
+- conduire du pilote #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
+- permis de conduire #
 - permis de conduire
-- pilotes.
+ 
 - permis de conduire
-- permis de conduire
-- permis de conduire
-- Numéro de permis de conduire
-- Numéro de permis de conduire
-- Numéro de permis de conduire
 - dlno #
+- permis Lic
+- permis conduire
+- licence permis
+- licences permis
+- licence permis
+- licences permis
+- pilote conduire
+- pilotes conduire
+- conduire du pilote
+- Lic de la commande
+- conduite conduire
+- licences de conduite
+- permis de conduire
+
+- permis de conduire
+
+- permis de conduire
+- n ° de DL
+- dlno
+- Numéro de la LD
+
+
+#### <a name="keywords_sweden_eu_drivers_license_number"></a>Keywords_sweden_eu_driver’s_license_number
+
+- ajokortti
+- permis de conducere
+- ajokortin numérique
+- kuljettajat lic.
+- Driver. lic.
 - körkort
+- numărul permisului de conducere
+-  שאָפער דערלויבעניש נומער
+- förare lic.
+-  דריווערס דערלויבעניש
+- körkortsnummer
 
 ## <a name="sweden-national-id"></a>ID national de Suède
 
@@ -12532,38 +15596,53 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
    
 #### <a name="keyword_swift"></a>Keyword_swift
 
-- organisation internationale de normalisation 9362 
-- ISO 9362 
-- iso9362 
-- rapide\# 
-- swiftcode 
-- swiftnumber 
-- swiftroutingnumber 
-- code swift 
-- # numéro swift 
-- numéro d’acheminement swift 
-- numéro BIC 
-- code BIC 
-- BIC \# 
-- BIC\# 
-- code d’identification bancaire 
-- 標準化 9362 
-- 迅速＃ 
-- SWIFTコード 
-- SWIFT番号 
-- 迅速なルーティング番号 
-- BIC番号 
-- BICコード 
-- 銀行識別コードのための国際組織 
-- Organisation internationale de normalisation 9362 
-- rapide \# 
-- code SWIFT 
-- le numéro de swift 
-- swift numéro d’acheminement 
-- le numéro BIC 
-- \# BIC 
-- code identificateur de banque 
+- organisation internationale de normalisation 9362
 
+- ISO 9362
+- iso9362
+- rapide #
+- swiftcode
+- swiftnumber
+- swiftroutingnumber
+- code SWIFT
+- # numéro swift
+
+- numéro d’acheminement swift
+
+- numéro BIC
+
+- code BIC
+
+- # bic
+- BIC #
+- code d’identification bancaire
+
+- Organisation internationale de normalisation 9362
+
+- rapide #
+
+- code SWIFT
+
+- le numéro de swift
+
+- swift numéro d’acheminement
+
+- le numéro BIC
+
+- # <a name="bic"></a>BIC
+- code identificateur de banque
+
+- SWIFTコード
+- SWIFT番号
+- BIC番号
+- BICコード
+- コード SWIFT
+- 番号 SWIFT
+- BIC 番号
+- BIC コード
+- 金融機関識別コード
+- 金融機関コード
+- 銀行コード
 
 ## <a name="switzerland-ssn-ahv-number"></a>Suisse numéro AVS AVS
 Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
@@ -13095,24 +16174,18 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - La fonction Func_uk_nino trouve un contenu qui correspond au modèle.
-- Aucun mot clé figurant dans la liste Keyword_uk_nino n’est trouvé.
 
 ```xml
-<!-- U.K. NINO -->
-<Entity id="16c07343-c26f-49d2-a987-3daf717e94cc" patternsProximity="300" recommendedConfidence="75">
-    <Pattern confidenceLevel="85">
+    <!-- U.K. NINO -->
+    <Entity id="16c07343-c26f-49d2-a987-3daf717e94cc" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
+      <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_uk_nino" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_uk_nino" />
-        </Any>
-    </Pattern>    
-     <Pattern confidenceLevel="75">
+        <Match idRef="Keyword_uk_nino" />
+      </Pattern>
+      <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_uk_nino" />
-        <Any minMatches="0" maxMatches="0">
-          <Match idRef="Keyword_uk_nino" />
-        </Any>
-    </Pattern>
-</Entity>
+      </Pattern>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés

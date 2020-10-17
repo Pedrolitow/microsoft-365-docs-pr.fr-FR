@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Accélérez la planification et la configuration de Microsoft 365 ou Office 365 avec les guides de configuration.
-ms.openlocfilehash: fd9d9a3b65f3a4e47604299c47a85d8c5e551149
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 215f51af1fc553ef0710565af0a7c25111de8328
+ms.sourcegitcommit: 705915f8bf9b7c082d12a009523d8aa0670a74a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446938"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48493696"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Guides de configuration pour les services Microsoft 365 et Office 365
 
@@ -90,6 +90,17 @@ Le bureau virtuel Windows est un service de virtualisation d’applications et d
 
 Le [Guide de configuration de bureau virtuel Windows](https://aka.ms/wvdsetupguide) fournit aux administrateurs des ressources de planification et les conditions préalables au déploiement, au Guide de configuration et aux ressources supplémentaires. 
 
+### <a name="microsoft-edge-deployment-advisor"></a>Conseiller de déploiement Microsoft Edge
+
+Microsoft Edge a été entièrement repensé afin de vous offrir une compatibilité et des performances de premier ordre, la sécurité et la confidentialité que vous méritez, ainsi que de nouvelles fonctionnalités conçues pour vous offrir le meilleur du Web.
+
+Le [conseiller de déploiement Microsoft Edge](https://aka.ms/edgeadvisor) vous aidera à configurer la découverte de sites d’entreprise pour voir quels sites accédés dans votre organisation peuvent avoir besoin d’utiliser le mode IE, passer en revue et configurer des fonctionnalités de sécurité importantes, configurer des stratégies de confidentialité et des stratégies supplémentaires pour répondre aux besoins de votre organisation et gérer l’accès Web sur vos appareils. Vous pouvez télécharger Microsoft Edge sur des appareils individuels ou nous vous montrerons comment le déployer sur plusieurs utilisateurs de votre organisation à l’aide du gestionnaire de configuration ou de Microsoft Intune.
+Le bureau virtuel Windows est un service de virtualisation d’applications et de bureau complet s’exécutant dans le Cloud. Il s’agit de la seule infrastructure VDI (Virtual Desktop Infrastructure) qui offre une gestion simplifiée, de plusieurs sessions Windows 10, des optimisations pour les applications Microsoft 365 et de la prise en charge des environnements des services Bureau à distance (RDS). Déployez et faites évoluer vos bureaux et applications Windows vers Azure en quelques minutes et bénéficiez de fonctionnalités de sécurité et de conformité intégrées. 
+
+### <a name="intune-configuration-manager-co-management-setup-guide"></a>Guide de configuration de la co-gestion du gestionnaire de configuration Intune
+
+Utilisez le Guide de configuration de la [co-gestion du gestionnaire de configuration Intune](https://aka.ms/comanagementsetup) pour les appareils existants du gestionnaire de configuration et les nouveaux appareils Internet que votre organisation souhaite co-administrer avec Microsoft Intune et le gestionnaire de configuration. Ce guide de déploiement de la co-gestion vous permet de gérer les appareils Windows 10 et d’ajouter de nouvelles fonctionnalités aux appareils de votre organisation, tout en bénéficiant des avantages des deux solutions.
+
 ## <a name="guides-for-authentication-and-access"></a>Guides d’authentification et d’accès
 
 ### <a name="azure-ad-setup-guide"></a>Guide de configuration d’Azure AD
@@ -97,6 +108,10 @@ Le [Guide de configuration de bureau virtuel Windows](https://aka.ms/wvdsetupgui
 Le [Guide de configuration d’Azure ad](https://aka.ms/aadpguidance) fournit des informations pour vous assurer que votre organisation dispose d’une solide sécurité. Dans ce guide, vous allez configurer les fonctionnalités initiales, telles que le contrôle d’accès basé sur les rôles Azure (Azure RBAC) pour les administrateurs, Azure AD Connect pour votre annuaire local et Azure AD Connect Health, afin de surveiller l’état de votre identité hybride pendant les synchronisations automatisées. 
 
 Il contient également des informations essentielles sur l’activation de la réinitialisation des mots de passe en libre-service, l’accès conditionnel et l’authentification tierce intégrée, notamment la protection avancée de l’identité et l’automatisation de l’approvisionnement utilisateur.
+
+### <a name="sync-users-from-your-orgs-directory"></a>Synchroniser les utilisateurs du répertoire de votre organisation
+
+L' [Assistant synchroniser les utilisateurs à partir de l’annuaire de votre organisation](https://aka.ms/directorysyncsetup) vous guide à travers l’activation de la synchronisation d’annuaires. Les identités locales et de Cloud sont ainsi regroupées pour faciliter l’accès et la gestion simplifiée. Déverrouillez les nouvelles fonctionnalités, telles que l’authentification unique, les options en libre-service, la mise en service automatique des comptes, les contrôles d’accès conditionnel et les stratégies de conformité. Cela garantit que vos utilisateurs ont accès aux ressources dont ils ont besoin.
 
 ### <a name="plan-your-passwordless-deployment"></a>Planification de votre déploiement avec des mots de passe
 

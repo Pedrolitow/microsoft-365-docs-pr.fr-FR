@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-overview
-ms.openlocfilehash: 6037d997f43abfaf1f2d6b7fd55143fb0332dbe3
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: 6d0f090f9931e88566e37b038cc30375657019c3
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464431"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487671"
 ---
 # <a name="identity-and-device-access-configurations"></a>Configurations des identités et de l’accès aux appareils
 
@@ -193,6 +193,10 @@ Microsoft vous recommande de ne pas créer de jeux de stratégie qui s’appliqu
 2. Configurez les stratégies d’identité et d’accès conditionnel d’accès courantes.
 3. Configurez les stratégies d’accès conditionnel pour les utilisateurs invités et externes.
 4. Configurez des stratégies d’accès conditionnel pour les applications Cloud Microsoft 365, telles que Microsoft Teams, Exchange Online et SharePoint.
+
+<!--
+After you have configured identity and device access, see the [Azure AD feature deployment guide](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2) for a phased checklist of additional features to consider and [Azure AD Identity Governance](https://docs.microsoft.com/azure/active-directory/governance/) to protect, monitor, and audit access.  
+--> 
 
 ## <a name="next-step"></a>Étape suivante
 

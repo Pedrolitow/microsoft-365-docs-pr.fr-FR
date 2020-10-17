@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-scenario
 - m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: 1a7b87432ce1eb16c29f462fb4865bfa5c5e2201
-ms.sourcegitcommit: a83acd5b9eeefd2e20e5bac916fe29d09fb53de9
+ms.openlocfilehash: e56ba8933947c37db3e558ef36dd6d305915040f
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48418096"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487623"
 ---
 # <a name="closing-and-summarizing-your-microsoft-threat-protection-pilot"></a>Fermeture et synthèse de votre programme pilote de protection contre les menaces Microsoft  
 
@@ -87,7 +87,7 @@ La sortie finale doit être :
 - Un rapport détaillé sur les résultats du projet pilote
 - Une décision concernant le déplacement vers l’avant
 
-Présenter les rapports de la sortie finale des parties prenantes internes (que vous avez identifiées pendant la phase de [préparation](https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval) ) et des contacts Microsoft. Un tel effort garantit que les commentaires peuvent être utilisés pour améliorer les produits et la documentation.
+Présenter les rapports de votre production finale aux parties prenantes internes (que vous avez identifiées pendant la phase de [préparation](https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval) ) et les contacts Microsoft. Un tel effort garantit que les commentaires peuvent être utilisés pour améliorer les produits et la documentation.
 
 Nous espérons que vous avez apprécié cette simulation. Commencez à implémenter ce que vous avez appris à une plus grande échelle dans votre organisation pour tirer le meilleur parti de la solution de sécurité intégrée.
 
