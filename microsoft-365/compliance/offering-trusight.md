@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 1001b5b209204785221aef40631e91f904136b0b
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 2cb1c8071e72a8a60a8bac1dd13bb2ce038a8ac0
+ms.sourcegitcommit: 22755cebfbfa2c4dc3f8b4f54ccb23636a211ee5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417478"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48476981"
 ---
 # <a name="trusight"></a>TruSight
 
@@ -31,11 +31,11 @@ ms.locfileid: "47417478"
 
 TruSight est un utilitaire tiers d'évaluation des risques créé par des banques américaines leaders pour l'avantage collectif des institutions financières, de leurs fournisseurs, partenaires et autres tierces parties. TruSight simplifie les évaluations en effectuant des évaluations recommandées, normalisées une seule fois et en les mettant à la disposition de plusieurs, ce qui permet aux institutions financières d’améliorer la visibilité des risques potentiels et de gérer les relations tierces avec efficacité et efficacité.
 
-La méthodologie de TruSight repose sur un questionnaire solide et normalisé de meilleures pratiques (BPQ) créé par les banques fondatrices de TruSight et mis à jour en partenariat avec leurs clients et les experts du secteur. Les 27 domaines de contrôle diversifiés ont été conçus pour répondre aux besoins du secteur en matière d'évaluation dans les catégories de l'information et de la cybersécurité, de la confidentialité, de la résilience des entreprises et d'autres risques opérationnels.
+La méthodologie de TruSight repose sur un Questionnaire des Meilleures Pratiques (BPQ) solide et standardisé créé par les banques fondatrices de TruSight et mis à jour en partenariat avec leurs clients et les experts du secteur d’activité. Ces 27 domaines de contrôle diversifiés sont conçus pour répondre aux besoins du secteur d’activité en matière d'évaluation dans les catégories de l'information et de la cybersécurité, de la confidentialité, de la résilience des entreprises et d'autres domaines de risques opérationnels.
 
-Pour Microsoft, TruSight mène une évaluation rigoureuse et complète sur site de Microsoft Azure, Microsoft Dynamics 365 et Microsoft Office 365 pour valider la conception et la mise en œuvre des contrôles conformément aux exigences BPQ. Les procédures de validation complètes comprenaient des enquêtes structurées, des inspections de stratégies et de procédures, des révisions avec preuves à l'appui et des observations sur le contrôle dynamique sur site.
+Pour Microsoft, TruSight a mené une évaluation sur site rigoureuse et complète de Microsoft Azure, Microsoft Dynamics 365, Microsoft Power Platform et Microsoft Office 365 pour valider la conception et la mise en œuvre des contrôles conformément aux conditions BPQ. Les procédures de validation complètes comprenaient des enquêtes structurées, des inspections de stratégies et de procédures, des révisions avec preuves à l'appui et des observations sur le contrôle dynamique sur site.
 
-En septembre 2018, TruSight a publié sa première évaluation des risques des services de cloud computing Microsoft, *évaluation complète de Microsoft Cloud*. Microsoft fait désormais l'objet de révisions TruSight annuelles pour s'assurer que l'évaluation reste à jour et reflète les nouvelles exigences réglementaires et les mises à jour technologiques des services Microsoft. TruSight est censé publier sa première mise à jour développée du rapport à l'automne 2019.
+En septembre 2018, TruSight a publié sa première évaluation des risques des services de cloud computing Microsoft, *évaluation complète de Microsoft Cloud*. Microsoft est désormais soumis aux révisions TruSight annuelles pour s'assurer que l'évaluation reste à jour et reflète les nouvelles exigences réglementaires et les mises à jour technologiques des services Microsoft. TruSight a publié son dernier rapport en octobre 2020.
 
 Suite à cette évaluation rigoureuse de la TruSight, les clients des services financiers ont désormais accès à une évaluation de haute qualité des services de cloud computing Microsoft sur la base d’une méthodologie normalisée et soutenue par le secteur, sans avoir à se soucier des ressources considérables dont ils ont besoin pour le mener eux-mêmes.
 

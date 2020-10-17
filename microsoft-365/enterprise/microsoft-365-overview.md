@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/19/2019
+ms.date: 10/15/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ localization_priority: Priority
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Fournit une présentation des composants, des plans et des chemins de déploiement pour Microsoft 365 pour entreprise.
-ms.openlocfilehash: 53cc91a2b5e756fcf4ec8fcc5371795bcfb8342c
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: d34ddd9b577f4baff4ebb77f84f48bf2b779c93c
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464347"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487151"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Vue d’ensemble de Microsoft 365 pour entreprise
 
@@ -104,21 +104,21 @@ Vous pouvez également [télécharger cette affiche](https://github.com/Microsof
 
 ## <a name="plan-for-and-deploy"></a>Planifier et déployer
 
-Trois méthodes s’offrent à vous pour déployer les produits, les fonctionnalités et les composants de Microsoft 365 pour entreprise :
+Trois méthodes s’offrent à vous pour déployer les produits, les fonctionnalités et les composants de Microsoft 365 Entreprise :
 
-- En partenariat avec FastTrack :
+- En partenariat avec FastTrack
 
    Avec FastTrack, les ingénieurs Microsoft vous aident à migrer vers le cloud à votre rythme. Voir [FastTrack pour Microsoft 365](https://fasttrack.microsoft.com/microsoft365).
 
-- Avec l'aide de Microsoft Consulting Services ou [d'un partenaire de Microsoft](https://partner.microsoft.com/) :
+- Avec l'aide de Microsoft Consulting Services ou [d'un partenaire de Microsoft](https://partner.microsoft.com/)
 
    Les consultants peuvent analyser votre infrastructure actuelle et vous aider à élaborer un plan pour intégrer tous les logiciels et services de Microsoft 365 pour entreprise.
 
-- Faites-le vous-même :
+- À vous de jouer
 
-   Commencez avec [la feuille de route](networking-roadmap-microsoft-365.md)de la mise en réseau afin d'établir ou de vérifier vos infrastructures existantes et vos charges de travail en matière de productivité.
+   Commencez avec la [feuille de route de mise en réseau](networking-roadmap-microsoft-365.md) afin d'établir ou de vérifier vos infrastructures et vos charges de travail existantes en matière de productivité.
 
-Pour un exemple de la manière dont une organisation multinationale fictive mais représentative a déployé Microsoft 365 pour l'entreprise, voir [la société Contoso ](contoso-overview.md).
+Pour un exemple sur la façon dont une organisation multinationale fictive mais représentative a déployé Microsoft 365 Entreprise, voir l’étude de cas de la [société Contoso](contoso-overview.md).
 
 ## <a name="additional-microsoft-365-products"></a>Autres produits Microsoft 365
 
