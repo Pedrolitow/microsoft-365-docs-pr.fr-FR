@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez comment rechercher et utiliser des rapports de sécurité de messagerie pour votre organisation. Les rapports de sécurité de messagerie sont disponibles dans le centre de sécurité & conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7e594f758e0fb08b0b8718248466ecbc46903b82
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 7d83e86c77eb148c4c55be3f363966ac3c756e87
+ms.sourcegitcommit: 24ccb910ffac4d065c512a57c5decd9dd19ef4c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327008"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "48594819"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Afficher les rapports de sécurité de courrier dans le centre de sécurité et conformité
 
@@ -276,8 +276,8 @@ Le rapport indique le nombre de messages électroniques avec du contenu malveill
 
 Pour afficher le rapport, ouvrez le [Centre de sécurité & conformité](https://protection.office.com), accédez à **rapports** \> **Dashboard** et sélectionnez **Threat Protection Status**. Pour accéder directement au rapport, ouvrez l’une des URL suivantes :
 
-- Office 365 ATP : <https://protection.office.com/reportv2?id=ATPV2AggregateReport> .
-- EOP <https://protection.office.com/reportv2?id=ATPAggregateLightReport>
+- Office 365 ATP : <https://protection.office.com/reportv2?id=TPSAggregateReportATP>
+- EOP <https://protection.office.com/reportv2?id=TPSAggregateReport>
 
 ![Widget état de la protection contre les menaces dans le tableau de bord rapports](../../media/threat-protection-status-report-widget.png)
 
@@ -301,6 +301,20 @@ Les vues disponibles sont les suivantes :
   - **Détonation du fichier**
 
   ![Vue de programmes malveillants de contenu dans le rapport d’état de protection contre les menaces](../../media/threat-protection-status-report-content-malware-view.png)
+
+- **Afficher les données par : substitution de message**: les informations de raison de remplacement suivantes sont affichées :
+
+  - **Omission sur site**
+  - **Autoriser IP**
+  - **Règle de flux de messagerie**
+  - **Expéditeur autorisé**
+  - **Autorisation de domaine**
+  - **ZAP non activée**
+  - **Dossier courrier indésirable non activé**
+  - **Expéditeur approuvé par l’utilisateur**
+  - **Domaine approuvé par l’utilisateur**
+
+  ![Vue de remplacement de message dans le rapport d’état de protection contre les menaces](../../media/threat-protection-status-report-message-override-view.png)
 
 - Dépanner **par : la technologie de détection** et l' **affichage des données par : E-mail \> hameçon**: les informations suivantes sont affichées :
 
@@ -361,16 +375,24 @@ Les vues disponibles sont les suivantes :
 
 <sup>2</sup> la purge automatique à zéro heure (ZAP) n’est pas disponible dans la version autonome d’EOP (elle fonctionne uniquement dans les boîtes aux lettres Exchange Online).
 
-Si vous cliquez sur **filtres**, vous pouvez modifier le rapport avec les filtres suivants :
+Si vous cliquez sur **filtres**, les filtres disponibles dépendent du graphique que vous examinez :
+
+Pour **les \> programmes malveillants de contenu**, vous pouvez modifier le rapport par **Date de début** et **Date de fin**, ainsi que la valeur de **détection** .
+
+Pour le **remplacement de message**, vous pouvez modifier le rapport avec les filtres suivants :
+
+- **Date de début** et **Date de fin**
+- **Motif de remplacement**
+- **Tag**: Filter by tag pour renvoyer des utilisateurs ou des groupes auxquels une balise spécifique a été appliquée. Pour plus d’informations sur les balises utilisateur, voir [User Tags](user-tags.md).
+- **Domaine**
+
+Pour tous les autres affichages, vous pouvez modifier le rapport avec les filtres suivants :
 
 - **Date de début** et **Date de fin**
 - **Détection**
 - **Protégé par**: **ATP** ou **EOP**
 - **Tag**: Filter by tag pour renvoyer des utilisateurs ou des groupes auxquels une balise spécifique a été appliquée. Pour plus d’informations sur les balises utilisateur, voir [User Tags](user-tags.md).
 - **Domaine**
-
-> [!NOTE]
-> **Protégé par**, la **balise** et le **domaine** sont Office 365 ATP uniquement. Ces propriétés filtrables ne sont pas disponibles dans **View Data by : Content \> Malware**.
 
 ### <a name="details-table-view-for-the-threat-protection-status-report"></a>Vue de la table Détails pour le rapport d’état de protection contre les menaces
 
@@ -379,14 +401,30 @@ Si vous cliquez sur **afficher les détails table**, les informations affichées
 - **Afficher les données par : contenu \> Programmes malveillants**:
 
   - **Date**
-  - **Emplacement**
+  - **Location**
   - **Demandé par**
   - **Nom du programme malveillant**
+
+Si vous cliquez sur **filtres** dans cet affichage, vous pouvez modifier le rapport par **Date de début** et date de **fin**, ainsi que par la valeur de **détection** .
+
+- **Afficher les données par : remplacement de message**:
+
+  - **Date**
+  - **Subject**
+  - **Expéditeur**
+  - **Destinataires**
+  - **Détectés par**
+  - **Motif de remplacement**
+  - **Source de compromission**
+  - **Tags**
 
 Si vous cliquez sur **filtres** dans cet affichage, vous pouvez modifier le rapport avec les filtres suivants :
 
 - **Date de début** et **Date de fin**
-- **Détection**
+- **Motif de remplacement**
+- **Tag**: Filter by tag pour renvoyer des utilisateurs ou des groupes auxquels une balise spécifique a été appliquée. Pour plus d’informations sur les balises utilisateur, voir [User Tags](user-tags.md).
+- **Domaine**
+- **Destinataires** (Notez que cette propriété filtrable est disponible uniquement dans l’affichage Table des détails)
 
 **Afficher les données par : vue d’ensemble**: aucun bouton **afficher la table des détails** n’est disponible.
 
@@ -439,7 +477,7 @@ Le rapport **messages signalés** par l’utilisateur affiche des informations s
 
 Des détails sont disponibles pour chaque message, notamment la raison de remise, une exception de stratégie de courrier indésirable ou une règle de flux de messagerie configurée pour votre organisation. Pour afficher les détails, sélectionnez un élément dans la liste rapports utilisateur, puis affichez les informations sous les onglets **Résumé** et **Détails** .
 
-![Le rapport messages signalés par l’utilisateur affiche les messages marqués comme courriers indésirables, non légitimes ou par tentatives de hameçonnage.](../../media/ad5e9a3d-b833-419c-bcc9-3425d9604ead.png)
+![Le rapport User-Reported les messages affiche les messages marqués comme courriers indésirables, non légitimes ou par tentatives de hameçonnage.](../../media/ad5e9a3d-b833-419c-bcc9-3425d9604ead.png)
 
 Pour afficher ce rapport, dans le [Centre de sécurité & conformité](https://protection.office.com), effectuez l’une des opérations suivantes :
 

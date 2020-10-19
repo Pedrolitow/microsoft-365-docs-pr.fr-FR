@@ -19,16 +19,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Résumé : utilisez PowerShell pour créer de nouveaux sites SharePoint Online, puis ajoutez des utilisateurs et des groupes à ces sites.'
-ms.openlocfilehash: 4c4edbd68343f0eaf3a25a8c60a2af1e83b058b6
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 28a51cc39fe838f6c7f9c50e9d750d28e5d830c4
+ms.sourcegitcommit: 24ccb910ffac4d065c512a57c5decd9dd19ef4c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46689771"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "48594917"
 ---
 # <a name="create-sharepoint-online-sites-and-add-users-with-powershell"></a>Création de sites SharePoint Online et ajout d’utilisateurs avec PowerShell
 
-*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
 Lorsque vous utilisez PowerShell pour Microsoft 365 pour créer des sites SharePoint Online et ajouter des utilisateurs, vous pouvez rapidement et régulièrement exécuter des tâches beaucoup plus rapidement que vous ne pouvez le faire dans le centre d’administration de Microsoft 365. Vous pouvez également effectuer des tâches qui ne peuvent pas être effectuées dans le centre d’administration 365 de Microsoft. 
 
@@ -43,6 +43,9 @@ Créez plusieurs sites à l’aide de PowerShell et d’un fichier. csv que vous
 L’applet de commande PowerShell importe le fichier. csv et le canalise en boucle à l’intérieur des accolades qui lit la première ligne du fichier comme en-têtes de colonne. L’applet de commande PowerShell parcourt ensuite les enregistrements restants, crée une nouvelle collection de sites pour chaque enregistrement et affecte des propriétés de la collection de sites en fonction des en-têtes de colonne.
 
 ### <a name="create-a-csv-file"></a>Créer un fichier CSV
+
+> [!NOTE]
+> Le paramètre de quota de ressources fonctionne uniquement sur les sites classiques. Si vous utilisez ce paramètre sur un site moderne, vous pouvez recevoir un message d’avertissement indiquant qu’il a été abandonné. 
 
 1. Ouvrez le Bloc-notes et collez-y le bloc de texte suivant :<br/>
 
@@ -164,4 +167,3 @@ c:\users\MyAlias\desktop\UsersAndGroups.ps1
 [Gestion de Microsoft 365 à l’aide de PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
 [Prise en main de PowerShell pour Microsoft 365](getting-started-with-microsoft-365-powershell.md)
-
