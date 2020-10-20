@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: c98c0081d95da19e79db03dc4b4fdb823a14e42c
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: ffa2d54385249a22d672be0c2591c3b4171bd10d
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377269"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600379"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Prise en main des paramètres de gestion des risques initiés
 
@@ -59,7 +59,7 @@ Les alertes sont déclenchées par des stratégies lorsque les utilisateurs effe
 Les indicateurs de stratégie sont segmentés dans les domaines suivants. Vous pouvez choisir les indicateurs d’activation et de personnalisation des limites d’événement d’indicateur pour chaque niveau d’indicateur lors de la création d’une stratégie de risque initié :
 
 - **Indicateurs Office**: ils incluent des indicateurs de stratégie pour les sites SharePoint, les équipes et la messagerie électronique.
-- **Indicateurs de périphérique**: ils incluent des indicateurs de stratégie pour les activités telles que le partage de fichiers sur le réseau ou avec des appareils. Les indicateurs incluent l’activité impliquant des fichiers Microsoft Office,. Fichiers CSV et. Fichiers PDF. Si vous sélectionnez **indicateurs de périphérique**, l’activité est traitée uniquement pour les appareils avec Windows 10 Build 1809 ou version ultérieure. Pour plus d’informations sur la configuration des appareils en vue de l’intégration à un risque d’initié, voir [Getting Started with Endpoint DLP](endpoint-dlp-getting-started.md).
+- **Indicateurs de périphérique**: ils incluent des indicateurs de stratégie pour les activités telles que le partage de fichiers sur le réseau ou avec des appareils. Les indicateurs incluent l’activité impliquant des fichiers Microsoft Office,. Fichiers CSV et. Fichiers PDF. Si vous sélectionnez **indicateurs de périphérique**, l’activité est traitée uniquement pour les appareils avec Windows 10 Build 1809 ou version ultérieure. Pour plus d’informations sur la configuration des appareils en vue de l’intégration avec des risques initiés, voir la section relative à l' [activation des indicateurs de périphérique et des périphériques intégrés](insider-risk-management-settings.md#OnboardDevices) .
 - **Indicateur de violation de stratégie de sécurité**: ils incluent des indicateurs de Microsoft Defender ATP liés à l’installation de logiciels non approuvés ou malveillants ou à contourner les contrôles de sécurité. Pour recevoir des alertes dans la gestion des risques initiés, vous devez disposer d’une licence active Microsoft Defender ATP et d’une intégration des risques Insider. Pour plus d’informations sur la configuration de Microsoft Defender ATP pour l’intégration de la gestion des risques initiaux, voir [configure Advanced Features in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center).
 - **Amplificateurs de score de risque**: augmentation du score de risque pour les activités inhabituelles ou les violations de stratégie passée. L’activation des amplificateurs de score de risque augmente le score des risques et la probabilité d’alertes pour ces types d’activités. Les suramplificateurs de score de risque ne peuvent être sélectionnés que si un ou plusieurs indicateurs ci-dessus sont sélectionnés.
 
@@ -71,6 +71,73 @@ Pour définir les indicateurs de stratégie de risque initié qui sont activés 
 
 >[!NOTE]
 >L’affichage des nouveaux utilisateurs ajoutés manuellement dans le **tableau de bord utilisateurs**peut prendre plusieurs heures. L’affichage des activités pour les 90 jours précédents pour ces utilisateurs peut prendre jusqu’à 24 heures. Pour afficher les activités des utilisateurs ajoutés manuellement, sélectionnez l’utilisateur dans le **tableau de bord utilisateurs** et ouvrez l’onglet **activité utilisateur** dans le volet d’informations.
+
+### <a name="enable-device-indicators-and-onboard-devices"></a>Activation des indicateurs de périphérique et des périphériques intégrés
+<a name="OnboardDevices"> </a>
+
+Pour activer la surveillance des activités de risque sur les appareils et inclure des indicateurs de stratégie pour ces activités, vos appareils doivent répondre aux exigences suivantes et vous devez effectuer les étapes d’intégration suivantes.
+
+#### <a name="step-1-prepare-your-endpoints"></a>Étape 1 : préparer vos points de terminaison
+
+Assurez-vous que les appareils Windows 10 que vous planifiez sur la création de rapports dans la gestion des risques initiés répondent à ces exigences.
+
+1. Vous devez exécuter Windows 10 x64 Build 1809 ou version ultérieure.
+2. Tous les appareils doivent être [joints à Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join) ou joints à Azure AD Hybride.
+3. Installez le navigateur Edge de Microsoft chrome sur l’appareil de point de terminaison pour surveiller les actions de l’activité de chargement Cloud. [Télécharger le nouveau Microsoft Edge sur la base de chrome](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
+
+#### <a name="step-2-onboarding-devices"></a>Étape 2 : périphériques d’intégration
+<a name="OnboardStep2"> </a>
+
+Vous devez activer la surveillance des appareils et intégrer vos points de terminaison avant de pouvoir surveiller les activités de gestion des risques initiés sur un appareil. Ces deux actions sont effectuées dans le portail de conformité Microsoft 365.
+
+Lorsque vous souhaitez intégrer des appareils qui n’ont pas encore été intégrés, vous devez télécharger le script et le déploiement appropriés, comme indiqué dans les étapes suivantes.
+
+Si vous disposez déjà d’appareils incorporés dans [Microsoft Defender pour point de terminaison](https://docs.microsoft.com/windows/security/threat-protection/), ceux-ci apparaissent déjà dans la liste des périphériques gérés. Suivez l' [étape 3 : Si vous avez des appareils intégrés dans Microsoft Defender pour le point de terminaison](insider-risk-management-settings.md#OnboardStep3) dans la section suivante.
+
+Dans ce scénario de déploiement, vous allez intégrer des appareils qui n’ont pas encore été intégrés, et vous souhaitez simplement surveiller les activités des risques des initiés sur les appareils Windows 10.
+
+1. Ouvrez le [Centre de conformité Microsoft](https://compliance.microsoft.com).
+2. Ouvrez la page Paramètres du centre de conformité et sélectionnez **Appareils intégrés**.
+
+   > [!NOTE]
+   > Bien que l’activation de l’intégration des appareils dure généralement environ 60 secondes, patientez jusqu’à 30 minutes avant de contacter le support Microsoft.
+
+3. Sélectionnez **Gestion des appareils** pour ouvrir la liste des **Appareils**. La liste est vide tant que vous n’avez pas intégré de périphériques.
+4. Sélectionnez **Intégration** pour lancer le processus d’intégration.
+5. Choisissez la manière dont vous voulez déployer ces autres appareils à partir de la liste**Méthode de déploiement**, puis **Télécharger le package**.
+6. Suivez les procédures appropriées dans [Outils et méthodes d’intégration pour les ordinateurs Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Ce lien vous dirige vers une page d’accueil dans laquelle vous pouvez accéder aux procédures Microsoft Defender pour point de terminaison qui correspondent au package de déploiement que vous avez sélectionné à l’étape 5 :
+    - Intégrer les ordinateurs Windows 10 utilisant une stratégie de groupe
+    - Intégrer les ordinateurs Windows à l’aide du gestionnaire de configuration de point de terminaison Microsoft
+    - Intégrer les ordinateurs Windows 10 à l’aide des outils de gestion des appareils mobiles
+    - Intégrer les ordinateurs Windows 10 utilisant un script local
+    - Intégrer les ordinateurs virtuels d’infrastructure de bureau virtuel (VDI) non persistants.
+
+Une fois que vous avez fini et que le point de terminaison est intégré, il doit être visible dans la liste des périphériques et le point de terminaison démarrera la création de rapports d’activité d’audit pour la gestion des risques internes.
+
+> [!NOTE]
+> Cette expérience est sous l’application de la licence. Sans la licence requise, les données ne sont pas visibles ni accessibles.
+
+#### <a name="step-3-if-you-have-devices-onboarded-into-microsoft-defender-for-endpoint"></a>Étape 3 : Si vous avez des appareils intégrés dans Microsoft Defender pour le point de terminaison
+<a name="OnboardStep3"> </a>
+
+Si Microsoft Defender pour le point de terminaison est déjà déployé et qu’il existe des points de terminaison Reporting dans, tous ces points de terminaison apparaîtront dans la liste des appareils gérés. Vous pouvez continuer à intégrer de nouveaux appareils dans la gestion des risques initiés pour étendre la couverture à l’aide de la section [étape 2 : périphériques d’intégration](insider-risk-management-settings.md#OnboardStep2) .
+
+1. Ouvrez le [Centre de conformité Microsoft](https://compliance.microsoft.com).
+2. Ouvrez la page Paramètres du centre de conformité et sélectionnez **Activer la surveillance d’appareils**.
+3. Sélectionnez **Gestion des appareils** pour ouvrir la liste des **Appareils**. Vous devriez voir apparaître la liste des appareils qui signalent déjà à Microsoft Defender pour point de terminaison.
+4. Sélectionnez **Intégration** si vous avez besoin d’intégrer d’autres appareils.
+5. Choisissez la manière dont vous voulez déployer ces autres appareils à partir de la liste**Méthode de déploiement**, puis **Télécharger le package**.
+6. Suivez les procédures appropriées dans [Outils et méthodes d’intégration pour les ordinateurs Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Ce lien vous dirige vers une page d’accueil dans laquelle vous pouvez accéder aux procédures Microsoft Defender pour point de terminaison qui correspondent au package de déploiement que vous avez sélectionné à l’étape 5 :
+    - Intégrer les ordinateurs Windows 10 utilisant une stratégie de groupe
+    - Intégrer les ordinateurs Windows à l’aide du gestionnaire de configuration de point de terminaison Microsoft
+    - Intégrer les ordinateurs Windows 10 à l’aide des outils de gestion des appareils mobiles
+    - Intégrer les ordinateurs Windows 10 utilisant un script local
+    - Intégrer les ordinateurs virtuels d’infrastructure de bureau virtuel (VDI) non persistants.
+
+Une fois que vous avez fini et que le point de terminaison est intégré, il doit être visible dans la table des **appareils** et le point de terminaison commence à créer des journaux d’activité d’audit pour la gestion des risques d’initié.
+
+> [!NOTE]
+>Cette expérience est sous l’application de la licence. Sans la licence requise, les données ne sont pas visibles ni accessibles.
 
 ### <a name="indicator-level-settings-preview"></a>Paramètres de niveau de l’indicateur (aperçu)
 
@@ -177,7 +244,7 @@ Les champs et valeurs suivants sont exportés pour les alertes de gestion des ri
 | AlertType | Le type de l’alerte est *Custom*.  |
 | AlertId | GUID de l’alerte. Les alertes de gestion des risques internes sont mutables. Lorsque l’état des alertes est modifié, un nouveau journal portant le même alerties est généré. Cette fonction peut être utilisée pour corréler les mises à jour d’une alerte. |
 | Catégorie | La catégorie de l’alerte est *InsiderRiskManagement*. Cette catégorie peut être utilisée pour faire la distinction entre ces alertes et d’autres alertes de sécurité & de conformité. |
-| Commentaires | Commentaires par défaut pour l’alerte. Values *New Alert* (consignée lors de la création d’une alerte) et *Alert* Updated (consignée lors de la mise à jour d’une alerte). Utilisez la fonction alertiesd pour corréler les mises à jour d’une alerte. |
+| Comments | Commentaires par défaut pour l’alerte. Values *New Alert* (consignée lors de la création d’une alerte) et *Alert* Updated (consignée lors de la mise à jour d’une alerte). Utilisez la fonction alertiesd pour corréler les mises à jour d’une alerte. |
 | Données | Les données de l’alerte incluent l’ID d’utilisateur unique, le nom d’utilisateur principal, ainsi que la date et l’heure (UTC) lorsque l’utilisateur a été déclenché dans une stratégie. |
 | Nom | Nom de la stratégie pour la stratégie de gestion des risques initiés qui a généré l’alerte. |
 | PolicyId | GUID de la stratégie de gestion des risques Insiders qui a déclenché l’alerte. |

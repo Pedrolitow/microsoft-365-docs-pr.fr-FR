@@ -21,33 +21,32 @@ search.appverid:
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
-description: Découvrez les propriétés de messagerie et de fichier que vous pouvez rechercher dans le centre de conformité Office 365 Security &.
-ms.openlocfilehash: 5445c9485d7076b3819c796028a311a523a92dde
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+description: Découvrez les propriétés de messagerie et de fichier que vous pouvez rechercher à l’aide des outils de recherche et eDiscovery dans Microsoft 365.
+ms.openlocfilehash: 4ca444c7e1d7b90f76e8c3f1b23afc7edad8e44b
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446193"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600447"
 ---
-# <a name="keyword-queries-and-search-conditions-for-content-search"></a>Requêtes par mots clés et conditions de recherche pour la recherche de contenu
+# <a name="keyword-queries-and-search-conditions-for-content-search-and-ediscovery"></a>Requêtes de mots clés et conditions de recherche pour la recherche de contenu et eDiscovery
 
-Cette rubrique décrit les propriétés de messagerie et de document que vous pouvez rechercher dans les éléments de courrier électronique dans Exchange Online et les documents stockés sur SharePoint et OneDrive entreprise à l’aide de la fonctionnalité de recherche de contenu dans le centre de conformité & Compliance Center. Vous pouvez également utiliser les applets de commande ** \* -ComplianceSearch** dans Security & Compliance Center PowerShell pour rechercher ces propriétés. La rubrique décrit également les éléments suivants :   
+Cette rubrique décrit les propriétés de messagerie et de document que vous pouvez rechercher dans les éléments de courrier électronique dans Exchange Online et les documents stockés sur SharePoint et OneDrive entreprise à l’aide de la fonctionnalité de recherche de contenu dans le centre de conformité Microsoft 365. Vous pouvez également utiliser les applets de commande ** \* -ComplianceSearch** dans Security & Compliance Center PowerShell pour rechercher ces propriétés. La rubrique décrit également les éléments suivants :
   
 - Utilisation d’opérateurs de recherche booléens, de conditions de recherche et d’autres techniques de requête de recherche pour affiner les résultats de la recherche.
-    
-- Recherche de types de données sensibles et de types de données sensibles personnalisés dans SharePoint et OneDrive entreprise.
-    
-- Recherche de contenu de site partagé avec des utilisateurs extérieurs à votre organisation
-    
-Pour obtenir des instructions détaillées sur la façon de créer une recherche de contenu, consultez la rubrique [recherche de contenu dans Office 365](content-search.md).
 
-  
+- Recherche de types de données sensibles et de types de données sensibles personnalisés dans SharePoint et OneDrive entreprise.
+
+- Recherche de contenu de site partagé avec des utilisateurs extérieurs à votre organisation
+
+Pour obtenir des instructions pas à pas sur la création d’une recherche de contenu, voir [content Search](content-search.md).
+
 > [!NOTE]
-> Recherche de contenu dans le centre de sécurité & conformité et les applets de commande ** \* -ComplianceSearch** correspondantes dans la sécurité & Centre de conformité PowerShell utilisent le langage de requête de mot clé (KQL). Pour plus d’informations, voir [référence de syntaxe du langage de requête de mot clé](https://go.microsoft.com/fwlink/?LinkId=269603). 
+> Recherche de contenu dans le centre de conformité Microsoft 365 et les applets de commande ** \* ComplianceSearch** correspondantes dans Security & Compliance Center PowerShell utilisent le langage de requête de mot clé (KQL). Pour plus d’informations, voir [référence de syntaxe du langage de requête de mot clé](https://go.microsoft.com/fwlink/?LinkId=269603). 
   
 ## <a name="searchable-email-properties"></a>Propriétés de messagerie utilisables dans une requête
 
-Le tableau suivant répertorie les propriétés de message électronique pouvant faire l’objet d’une recherche à l’aide de la fonctionnalité de recherche de contenu dans le centre de sécurité & conformité ou en utilisant la cmdlet **New-ComplianceSearch** ou **Set-ComplianceSearch** . Il inclut un exemple de syntaxe  _property:value_ pour chaque propriété et une description des résultats de recherche renvoyés par ces exemples. Vous pouvez taper ces  `property:value` paires dans la zone Mots clés d’une recherche de contenu. 
+Le tableau suivant répertorie les propriétés des messages électroniques qui peuvent être recherchées à l’aide de la fonctionnalité de recherche de contenu dans le centre de conformité Microsoft 365 ou en utilisant la cmdlet **New-ComplianceSearch** ou **Set-ComplianceSearch** . Il inclut un exemple de syntaxe  _property:value_ pour chaque propriété et une description des résultats de recherche renvoyés par ces exemples. Vous pouvez taper ces  `property:value` paires dans la zone Mots clés d’une recherche de contenu. 
 
 > [!NOTE]
 > Lors de la recherche des propriétés de messagerie, il n’est pas possible de rechercher des éléments dans lesquels la propriété spécifiée est vide ou vide. Par exemple, l’utilisation de la paire *propriété : valeur* de l' **objet : «»** pour rechercher des messages électroniques avec une ligne d’objet vide renverra zéro résultat. Cela s’applique également lors de la recherche de propriétés de site et de contact.
@@ -112,13 +111,13 @@ Pour obtenir la liste complète des propriétés SharePoint pouvant faire l’ob
 |Size|Taille d'un élément, en octets.|`size>=1`  <br/> `size:1..10000`|Le premier exemple renvoie les éléments dont la taille est supérieure à 1 octet. Le deuxième exemple renvoie les éléments dont la taille est comprise entre 1 et 10 000 octets.|
 |Titre|Titre du document. La propriété Title est une métadonnée qui est spécifiée dans des documents Microsoft Office. Il est différent du nom de fichier du document.|`title:"communication plan"`|Tout document qui contient l’expression « communication plan » (plan de communication) dans la propriété de métadonnées du titre d’un document Office.|
 |||||
-   
+
 ## <a name="searchable-contact-properties"></a>Propriétés de contact pouvant faire l’objet d’une recherche
 
 Le tableau suivant répertorie les propriétés de contact qui sont indexées et que vous pouvez rechercher à l’aide de la recherche de contenu. Il s’agit des propriétés que les utilisateurs peuvent configurer pour les contacts (également appelés contacts personnels) qui se trouvent dans le carnet d’adresses personnel de la boîte aux lettres d’un utilisateur. Pour rechercher des contacts, vous pouvez sélectionner les boîtes aux lettres à rechercher, puis utiliser une ou plusieurs propriétés de contact dans la requête par mot clé.
   
 > [!TIP]
-> Pour rechercher des valeurs qui contiennent des espaces ou des caractères spéciaux, utilisez des guillemets doubles ("") pour contenir l’expression ; par exemple,  `businessaddress:"123 Main Street"` . 
+> Pour rechercher des valeurs qui contiennent des espaces ou des caractères spéciaux, utilisez des guillemets doubles ("") pour contenir l’expression ; par exemple, `businessaddress:"123 Main Street"` .
   
 |**Propriété**|**Description de la propriété**|
 |:-----|:-----|
@@ -144,18 +143,19 @@ Le tableau suivant répertorie les propriétés de contact qui sont indexées et
 
 ## <a name="searchable-sensitive-data-types"></a>Types de données sensibles utilisables dans une requête
 
-Vous pouvez utiliser la fonctionnalité de recherche de contenu dans le centre de sécurité et de conformité pour rechercher des données sensibles, telles que des numéros de carte de crédit ou des numéros de sécurité sociale, qui sont stockées dans des documents sur des sites SharePoint et OneDrive entreprise. Pour ce faire, vous pouvez utiliser la  `SensitiveType` propriété et le nom d’un type d’informations sensibles dans une requête de mot clé. Par exemple, la requête  `SensitiveType:"Credit Card Number"` renvoie des documents qui contiennent un numéro de carte de crédit. La requête  `SensitiveType:"U.S. Social Security Number (SSN)"` renvoie les documents qui contiennent un numéro de sécurité sociale américain. Pour afficher la liste des types de données sensibles que vous pouvez rechercher, accédez à **classifications** \> **types d’informations sensibles** dans le centre de sécurité & conformité. Vous pouvez utiliser l’applet de commande **Get-DlpSensitiveInformationType** dans le centre de sécurité & de conformité PowerShell pour afficher la liste des types d’informations sensibles. 
-  
-Vous pouvez également utiliser la  `SensitiveType` propriété pour rechercher le nom d’un type d’informations sensibles personnalisé créé par vous (ou un autre administrateur) pour votre organisation. Vous pouvez utiliser la colonne **éditeur** de la page **types d’informations sensibles** dans le centre de sécurité & conformité (ou la propriété **Publisher** dans PowerShell) pour différencier les types d’informations sensibles prédéfinis et personnalisés. Pour plus d’informations, consultez [la rubrique créer un type d’informations sensibles personnalisé](create-a-custom-sensitive-information-type.md).
+Vous pouvez utiliser la fonctionnalité de recherche de contenu dans le centre de conformité pour rechercher des données sensibles, telles que des numéros de carte de crédit ou des numéros de sécurité sociale, qui sont stockées dans des documents sur des sites SharePoint et OneDrive entreprise. Pour ce faire, vous pouvez utiliser la `SensitiveType` propriété et le nom d’un type d’informations sensibles dans une requête de mot clé. Par exemple, la requête `SensitiveType:"Credit Card Number"` renvoie des documents qui contiennent un numéro de carte de crédit. La requête  `SensitiveType:"U.S. Social Security Number (SSN)"` renvoie les documents qui contiennent un numéro de sécurité sociale américain. Pour afficher la liste des types de données sensibles que vous pouvez rechercher, accédez à **Data classifications** \> **types d’informations sensibles** sur les classifications de données dans le centre de conformité Microsoft 365. Vous pouvez utiliser la cmdlet **Get-DlpSensitiveInformationType** dans Security & Compliance Center PowerShell pour afficher la liste des types d’informations sensibles.
   
 Pour plus d’informations sur la création de requêtes à l’aide de la  `SensitiveType` propriété, voir créer [une requête pour trouver des données sensibles stockées sur des sites](form-a-query-to-find-sensitive-data-stored-on-sites.md).
 
-> [!NOTE]
-> Vous ne pouvez pas utiliser les types de données sensibles et la `SensitiveType` propriété Search pour rechercher des données sensibles dans les boîtes aux lettres Exchange Online. Toutefois, vous pouvez utiliser des stratégies de protection contre la perte de données (DLP) pour protéger les données e-mail sensibles en transit. Pour plus d’informations, consultez la rubrique [vue d’ensemble des stratégies de protection contre la perte de données](data-loss-prevention-policies.md) et [recherche et recherche de données personnelles](search-for-and-find-personal-data.md).
+### <a name="limitations-for-searching-sensitive-data-types"></a>Limitations pour la recherche de types de données sensibles
+
+- Vous pouvez uniquement utiliser la `SensitiveType` propriété pour rechercher des types de données d’informations sensibles intégrés. Vous ne pouvez pas rechercher les types de données sensibles personnalisés créés par vous (ou un autre administrateur) pour votre organisation. Utilisez la colonne **éditeur** sous l’onglet **types d’informations sensibles** dans le centre de conformité (ou la propriété **Publisher** dans PowerShell) pour différencier les types d’informations sensibles prédéfinis et personnalisés. Les types de données sensibles intégrés sont identifiés par la valeur **Microsoft Corporation** dans la colonne **éditeur** .
+  
+- Vous ne pouvez pas utiliser les types de données informations sensibles et la `SensitiveType` propriété Search pour rechercher des données sensibles dans les boîtes aux lettres Exchange Online. Toutefois, vous pouvez utiliser des stratégies de protection contre la perte de données (DLP) pour protéger les données e-mail sensibles en transit. Pour plus d’informations, consultez la rubrique [vue d’ensemble des stratégies de protection contre la perte de données](data-loss-prevention-policies.md) et [recherche et recherche de données personnelles](search-for-and-find-personal-data.md).
   
 ## <a name="search-operators"></a>Opérateurs de recherche
 
-Les opérateurs de recherche booléens, tels que **and**, **or**et **not**, permettent de définir des recherches plus précises en incluant ou en excluant des mots spécifiques dans la requête de recherche. D’autres techniques, telles que l’utilisation d’opérateurs de propriété (par exemple \> , = ou..), des guillemets, des parenthèses et des caractères génériques, vous aident à affiner une requête de recherche. Le tableau suivant répertorie les opérateurs disponibles pour restreindre ou élargir les résultats de recherche. 
+Les opérateurs de recherche booléens, tels que **and**, **or**et **not**, permettent de définir des recherches plus précises en incluant ou en excluant des mots spécifiques dans la requête de recherche. D’autres techniques, telles que l’utilisation d’opérateurs de propriété (par exemple `>=` ou `..` ), des guillemets, des parenthèses et des caractères génériques, vous aident à affiner une requête de recherche. Le tableau suivant répertorie les opérateurs disponibles pour restreindre ou élargir les résultats de recherche. 
   
 |**Opérateur**|**Utilisation**|**Description**|
 |:-----|:-----|:-----|

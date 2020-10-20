@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Tableau répertoriant les types de fichiers pris en charge et les visiteurs dans lesquels ils peuvent être consultés pour les enquêtes de données (préversion).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: ca4dab40f5c3098d05323edec0ddbab54ac29273
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+ms.openlocfilehash: 826ad69b1fb0074cd0c8bc1b3b0208bb8e77d528
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48285270"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600413"
 ---
 # <a name="supported-file-types-in-data-investigations-preview"></a>Types de fichiers pris en charge dans les enquêtes de données (aperçu)
 
@@ -47,7 +47,7 @@ L’outil des enquêtes de données (aperçu) prend en charge de nombreux types 
 |application/vnd. openxmlformats-officedocument. PresentationML. Template | Document | Oui | Oui | Oui | Non | . potx |
 | apadsheetml. Sheet | Document | Oui | Oui | Oui | Non | . xlsx |
 |application/vnd. openxmlformats-officedocument. SpreadsheetML. Template | Document | Oui | Oui | Oui | Non | . xltx |
-|application/vnd.openxmlformats-officedocument.wordproessingml.document | Document | Oui | Oui | Oui | Non | . docx |
+|application/vnd.openxmlformats-officedocument.wordprocessingml.document | Document | Oui | Oui | Oui | Non | . docx |
 |application/vnd. openxmlformats-officedocument. WordprocessingML. Template | Document | Oui | Oui | Oui | Non | . dotx |
 |application/vnd. Visio | Document | Oui | Oui | Oui | Non | . VSD |
 |application/x-7z-compressé | Archive/conteneur | Non | Non | Non | Oui | .7z |
