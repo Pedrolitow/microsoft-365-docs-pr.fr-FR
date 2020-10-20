@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Déterminer l’emplacement de stockage des données client Microsoft 365 dans le monde
-ms.openlocfilehash: da58b5e322190e61d72dc30ac6e1ea075e8f48b4
-ms.sourcegitcommit: 39af527404cb06e05c5aa4550dbec39aec133016
+ms.openlocfilehash: e450468b54bdbce0e6c01dd3b935922836ab9f90
+ms.sourcegitcommit: 705915f8bf9b7c082d12a009523d8aa0670a74a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "48422628"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48493684"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -146,7 +146,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="afghanistan"></a>Afghanistan
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -170,7 +170,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="aland-islands"></a>Îles Åland
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -194,7 +194,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="albania"></a>Albanie
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -218,7 +218,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="algeria"></a>Algérie
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -242,7 +242,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="american-samoa"></a>Samoa américaines
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -266,7 +266,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="andorra"></a>Andorre
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -290,7 +290,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="angola"></a>Angola
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -314,7 +314,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="anguilla"></a>Anguilla
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
@@ -338,7 +338,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="antarctica"></a>Antarctique
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
@@ -362,7 +362,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="antigua-and-barbuda"></a>Antigua-et-Barbuda
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
@@ -386,7 +386,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="argentina"></a>Argentine
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 3 : Amériques |
 | OneDrive Entreprise | Zone géographique mondiale 3 : Amériques |
@@ -410,7 +410,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="armenia"></a>Arménie
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -434,7 +434,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="aruba"></a>Aruba
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
@@ -458,7 +458,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="australia"></a>Australie
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Australie |
 | OneDrive Entreprise | Australie |
@@ -474,15 +474,15 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Yammer | États-Unis |
 | Services OneNote | Australie |
 | Stream | Australie |
-| Tableau blanc collaboratif | États-Unis |
-| Formulaires | États-Unis |
+| Tableau blanc | Australie |
+| Forms | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
 
 ## <a name="austria"></a>Autriche
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
@@ -506,7 +506,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="azerbaijan"></a>Azerbaïdjan
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -530,7 +530,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="bahamas"></a>Bahamas
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
@@ -554,7 +554,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="bahrain"></a>Bahreïn
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -578,7 +578,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="bangladesh"></a>Bangladesh
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -602,7 +602,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="barbados"></a>Barbade
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
@@ -626,7 +626,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="belarus"></a>Bélarus
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -650,7 +650,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="belgium"></a>Belgique
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
@@ -674,7 +674,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="belize"></a>Bélize
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
@@ -698,7 +698,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="benin"></a>Bénin
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -722,7 +722,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="bermuda"></a>Bermudes
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
@@ -746,7 +746,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="bhutan"></a>Bhoutan
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -770,7 +770,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="bolivia"></a>Bolivie
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 3 : Amériques |
 | OneDrive Entreprise | Zone géographique mondiale 3 : Amériques |
@@ -794,7 +794,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="bonaire"></a>Bonaire
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 3 : Amériques |
 | OneDrive Entreprise | Zone géographique mondiale 3 : Amériques |
@@ -818,7 +818,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="bosnia"></a>Bosnie
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -842,7 +842,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="botswana"></a>Botswana
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -866,7 +866,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="bouvet-island"></a>Île Bouvet
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
@@ -890,7 +890,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="brazil"></a>Brésil
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 3 : Amériques |
 | OneDrive Entreprise | Zone géographique mondiale 3 : Amériques |
@@ -914,13 +914,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="british-indian-ocean-territory"></a>Territoire britannique de l’Océan Indien
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
-| Microsoft Teams | Zone géographique 1 : EMEA |
+| Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -938,7 +938,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="british-virgin-islands"></a>Îles Vierges britanniques
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
@@ -962,7 +962,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="brunei"></a>Brunei
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -986,7 +986,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="bulgaria"></a>Bulgarie
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
@@ -1010,7 +1010,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="burkina-faso"></a>Burkina Faso
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -1034,7 +1034,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="burundi"></a>Burundi
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -1058,7 +1058,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="cambodia"></a>Cambodge
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -1082,7 +1082,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="cameroon"></a>Cameroun
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -1106,7 +1106,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="canada"></a>Canada
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Canada |
 | OneDrive Entreprise | Canada |
@@ -1130,7 +1130,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="cape-verde"></a>Cap-Vert
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -1154,7 +1154,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="cayman-islands"></a>Îles Cayman
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
@@ -1178,7 +1178,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="central-african-republic"></a>République centrafricaine
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -1202,7 +1202,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="chad"></a>Tchad
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -1226,7 +1226,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="chile"></a>Chili
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 3 : Amériques |
 | OneDrive Entreprise | Zone géographique mondiale 3 : Amériques |
@@ -1250,7 +1250,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="china"></a>Chine
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -1274,7 +1274,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="christmas-island"></a>Île Christmas
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -1298,7 +1298,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="cocos-keeling-islands"></a>Île Cocos (Keeling)
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -1322,7 +1322,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="colombia"></a>Colombie
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
@@ -1346,7 +1346,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="comoros"></a>Comores
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -1370,7 +1370,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="congo-brazzaville"></a>République du Congo (Brazzaville)
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -1394,7 +1394,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="congo-kinshasa"></a>République démocratique du Congo (Kinshasa)
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -1418,7 +1418,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="cook-islands"></a>Îles Cook
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -1442,7 +1442,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="costa-rica"></a>Costa Rica
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
@@ -1466,7 +1466,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="cote-divoire"></a>Côte d’Ivoire
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -1490,7 +1490,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="croatia"></a>Croatie
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
@@ -1514,7 +1514,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="curacao"></a>Curaçao
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 3 : Amériques |
 | OneDrive Entreprise | Zone géographique mondiale 3 : Amériques |
@@ -1538,7 +1538,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="cyprus"></a>Chypre
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
@@ -1562,7 +1562,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="czech-republic"></a>République tchèque
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
@@ -1586,7 +1586,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="denmark"></a>Danemark
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
@@ -1610,7 +1610,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="djibouti"></a>Djibouti
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -1634,7 +1634,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="dominica"></a>Dominique
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
@@ -1658,7 +1658,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="dominican-republic"></a>République dominicaine
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
@@ -1682,7 +1682,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="ecuador"></a>Équateur
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 3 : Amériques |
 | OneDrive Entreprise | Zone géographique mondiale 3 : Amériques |
@@ -1706,7 +1706,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="egypt"></a>Égypte
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -1730,7 +1730,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="el-salvador"></a>Salvador
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
@@ -1754,7 +1754,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="equatorial-guinea"></a>Guinée Équatoriale
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -1778,7 +1778,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="eritrea"></a>Érythrée
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -1802,7 +1802,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="estonia"></a>Estonie
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
@@ -1826,7 +1826,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="ethiopia"></a>Éthiopie
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -1850,7 +1850,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="falkland-islands-malvinas"></a>Îles Malouines (Malvinas)
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 3 : Amériques |
 | OneDrive Entreprise | Zone géographique mondiale 3 : Amériques |
@@ -1874,7 +1874,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="faroe-islands"></a>Îles Féroé
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -1898,7 +1898,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="federated-states-of-micronesia"></a>États fédérés de Micronésie
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -1922,7 +1922,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="fiji"></a>Fidji
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Australie |
 | OneDrive Entreprise | Australie |
@@ -1946,7 +1946,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="finland"></a>Finlande
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
@@ -1970,7 +1970,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="france"></a>France
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | France |
 | OneDrive Entreprise | France |
@@ -1994,7 +1994,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="french-guiana"></a>Guyane française
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 3 : Amériques |
 | OneDrive Entreprise | Zone géographique mondiale 3 : Amériques |
@@ -2018,7 +2018,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="french-polynesia"></a>Polynésie française
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -2042,7 +2042,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="french-southern-territories"></a>Territoires français du Sud
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
@@ -2066,7 +2066,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="gabon"></a>Gabon
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -2090,7 +2090,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="gambia"></a>Gambie
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -2114,7 +2114,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="georgia"></a>Géorgie
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -2138,7 +2138,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="germany"></a>Allemagne
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Allemagne |
 | OneDrive Entreprise | Allemagne |
@@ -2162,7 +2162,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="ghana"></a>Ghana
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -2186,7 +2186,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="gibraltar"></a>Gibraltar
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -2210,7 +2210,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="greece"></a>Grèce
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
@@ -2234,7 +2234,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="greenland"></a>Groenland
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
@@ -2258,7 +2258,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="grenada"></a>Grenade
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
@@ -2282,7 +2282,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="guadeloupe"></a>Guadeloupe
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
@@ -2306,7 +2306,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="guam"></a>Guam
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -2330,7 +2330,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="guatemala"></a>Guatemala
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
@@ -2354,7 +2354,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="guernsey"></a>Guernesey
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -2378,7 +2378,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="guinea"></a>Guinée
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -2402,7 +2402,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="guinea-bissau"></a>Guinée-Bissau
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -2426,7 +2426,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="guyana"></a>Guyane
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 3 : Amériques |
 | OneDrive Entreprise | Zone géographique mondiale 3 : Amériques |
@@ -2450,7 +2450,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="haiti"></a>Haïti
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
@@ -2474,7 +2474,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="heard-and-mcdonald-islands"></a>Îles Heard-et-MacDonald
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
@@ -2498,7 +2498,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="herzegovina"></a>Bosnie-Herzégovine
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -2522,7 +2522,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="holy-see-vatican-city-state"></a>Saint-Siège (Cité du Vatican)
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -2546,7 +2546,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="honduras"></a>Honduras
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
@@ -2570,7 +2570,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="hong-kong-sar"></a>Hong Kong (SAR)
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -2594,7 +2594,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="hungary"></a>Hongrie
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
@@ -2618,7 +2618,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="iceland"></a>Islande
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -2642,7 +2642,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="india"></a>Inde
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Inde |
 | OneDrive Entreprise | Inde |
@@ -2666,7 +2666,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="indonesia"></a>Indonésie
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -2690,7 +2690,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="iraq"></a>Irak
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -2714,7 +2714,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="ireland"></a>Irlande
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
@@ -2738,7 +2738,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="isle-of-man"></a>Île de Man
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -2762,7 +2762,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="israel"></a>Israël
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -2786,7 +2786,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="italy"></a>Italie
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
@@ -2810,7 +2810,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="jamaica"></a>Jamaïque
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
@@ -2834,7 +2834,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="japan"></a>Japon
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Japon |
 | OneDrive Entreprise | Japon |
@@ -2858,7 +2858,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="jersey"></a>Jersey
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -2882,7 +2882,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="jordan"></a>Jordanie
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -2906,7 +2906,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="kazakhstan"></a>Kazakhstan
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -2930,7 +2930,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="kenya"></a>Kenya
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -2954,7 +2954,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="kiribati"></a>Kiribati
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -2978,7 +2978,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="south-korea"></a>Corée du Sud
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Corée du Sud |
 | OneDrive Entreprise | Corée du Sud |
@@ -3002,7 +3002,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="kosovo"></a>Kosovo
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -3026,7 +3026,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="kuwait"></a>Koweït
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -3050,7 +3050,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="kyrgyzstan"></a>Kirghizstan
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -3074,7 +3074,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="laos"></a>Laos
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -3098,7 +3098,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="latvia"></a>Lettonie
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
@@ -3122,7 +3122,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="lebanon"></a>Liban
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -3146,7 +3146,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="lesotho"></a>Lesotho
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -3170,7 +3170,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="liberia"></a>Libéria
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -3194,7 +3194,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="libya"></a>Libye
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -3218,7 +3218,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="liechtenstein"></a>Liechtenstein
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Suisse |
 | OneDrive Entreprise | Suisse |
@@ -3242,7 +3242,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="lithuania"></a>Lituanie
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
@@ -3266,7 +3266,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="luxembourg"></a>Luxembourg
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
@@ -3290,7 +3290,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="madagascar"></a>Madagascar
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -3314,7 +3314,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="malawi"></a>Malawi
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -3338,7 +3338,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="malaysia"></a>Malaisie
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -3362,7 +3362,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="maldives"></a>Maldives
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -3386,7 +3386,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="mali"></a>Mali
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -3410,7 +3410,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="malta"></a>Malte
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
@@ -3434,7 +3434,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="marshall-islands"></a>Îles Marshall
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -3458,7 +3458,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="martinique"></a>Martinique
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
@@ -3482,7 +3482,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="mauritania"></a>Mauritanie
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -3506,7 +3506,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="mauritius"></a>Île Maurice
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -3530,7 +3530,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="mayotte"></a>Mayotte
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -3554,7 +3554,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="mexico"></a>Mexique
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
@@ -3578,7 +3578,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="moldova"></a>Moldavie
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -3602,7 +3602,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="monaco"></a>Monaco
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -3626,7 +3626,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="mongolia"></a>Mongolie
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -3650,7 +3650,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="montenegro"></a>Monténégro
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -3674,7 +3674,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="montserrat"></a>Montserrat
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
@@ -3698,7 +3698,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="morocco"></a>Maroc
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -3722,7 +3722,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="mozambique"></a>Mozambique
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -3746,7 +3746,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="myanmar"></a>Birmanie
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -3770,7 +3770,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="namibia"></a>Namibie
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -3794,7 +3794,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="nauru"></a>Nauru
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -3818,7 +3818,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="nepal"></a>Népal
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -3842,7 +3842,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="netherlands"></a>Pays-Bas
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
@@ -3866,7 +3866,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="netherlands-antilles"></a>Antilles Néerlandaises
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
@@ -3890,7 +3890,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="new-caledonia"></a>Nouvelle-Calédonie
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -3914,7 +3914,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="new-zealand"></a>Nouvelle-Zélande
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Australie |
 | OneDrive Entreprise | Australie |
@@ -3938,7 +3938,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="nicaragua"></a>Nicaragua
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
@@ -3962,7 +3962,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="niger"></a>Niger
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -3986,7 +3986,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="nigeria"></a>Nigéria
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -4010,7 +4010,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="niue"></a>Niue
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -4034,7 +4034,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="norfolk-island"></a>Île Norfolk
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -4058,7 +4058,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="northern-mariana-islands"></a>Îles Mariannes du Nord
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -4082,7 +4082,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="norway"></a>Norvège
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Norvège |
 | OneDrive Entreprise | Norvège |
@@ -4106,7 +4106,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="oman"></a>Oman
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -4130,7 +4130,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="pakistan"></a>Pakistan
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -4154,7 +4154,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="palau"></a>Palaos
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -4178,13 +4178,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="palestinian-authority"></a>Autorité palestinienne
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
-| Microsoft Teams | Zone géographique 1 : EMEA |
+| Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -4202,7 +4202,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="panama"></a>Panama
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
@@ -4226,7 +4226,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="papua-new-guinea"></a>Papouasie-Nouvelle-Guinée
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -4250,7 +4250,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="paraguay"></a>Paraguay
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 3 : Amériques |
 | OneDrive Entreprise | Zone géographique mondiale 3 : Amériques |
@@ -4274,7 +4274,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="peru"></a>Pérou
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 3 : Amériques |
 | OneDrive Entreprise | Zone géographique mondiale 3 : Amériques |
@@ -4298,7 +4298,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="philippines"></a>Philippines
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -4322,7 +4322,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="pitcairn"></a>Île Pitcairn
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -4346,7 +4346,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="poland"></a>Pologne
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
@@ -4370,7 +4370,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="portugal"></a>Portugal
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
@@ -4394,7 +4394,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="puerto-rico"></a>Porto Rico
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
@@ -4418,7 +4418,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="qatar"></a>Qatar
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -4442,7 +4442,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="republic-of-macedonia"></a>Macédoine du Nord
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -4466,7 +4466,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="runion"></a>Réunion
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -4490,7 +4490,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="romania"></a>Roumanie
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
@@ -4514,7 +4514,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="russian-federation"></a>Russie
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -4538,7 +4538,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="rwanda"></a>Rwanda
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -4562,7 +4562,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="saint-helena"></a>Sainte-Hélène, Ascension et Tristan da Cunha
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -4586,7 +4586,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="saint-kitts-and-nevis"></a>Saint-Christophe-et-Niévès
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
@@ -4610,7 +4610,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="saint-lucia"></a>Sainte-Lucie
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
@@ -4634,7 +4634,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="saint-martin"></a>Saint-Martin
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
@@ -4658,7 +4658,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="saint-pierre-and-miquelon"></a>Saint-Pierre-et-Miquelon
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
@@ -4682,7 +4682,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="saint-vincent-and-the-grenadines"></a>Saint-Vincent-et-les-Grenadines
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
@@ -4706,7 +4706,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="saint-barthlemy"></a>Saint-Barthélemy
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
@@ -4730,7 +4730,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="samoa"></a>État indépendant des Samoa
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -4754,7 +4754,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="san-marino"></a>Saint-Marin
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -4778,7 +4778,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="sao-tome-and-principe"></a>Sao Tomé-et-Principe
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -4802,7 +4802,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="saudi-arabia"></a>Arabie Saoudite
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -4826,7 +4826,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="senegal"></a>Sénégal
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -4850,7 +4850,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="serbia"></a>Serbie
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -4874,7 +4874,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="seychelles"></a>Seychelles
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -4898,7 +4898,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="sierra-leone"></a>Sierra Leone
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -4922,7 +4922,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="singapore"></a>Singapour
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -4946,7 +4946,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="sint-maarten"></a>Saint-Martin (néerlandais)
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
@@ -4970,7 +4970,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="slovakia"></a>Slovaquie
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
@@ -4994,7 +4994,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="slovenia"></a>Slovénie
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
@@ -5018,7 +5018,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="solomon-islands"></a>Îles Salomon
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -5042,7 +5042,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="somalia"></a>Somalie
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -5066,7 +5066,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="south-africa"></a>Afrique du Sud
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Afrique du Sud |
 | OneDrive Entreprise | Afrique du Sud |
@@ -5081,7 +5081,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Afrique du Sud |
-| Stream | Zone géographique 1 : EMEA |
+| Flux | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
@@ -5090,7 +5090,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="south-georgia-and-the-south-sandwich-islands"></a>Géorgie du Sud-et-les Îles Sandwich du Sud
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
@@ -5114,7 +5114,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="spain"></a>Espagne
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
@@ -5138,7 +5138,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="sri-lanka"></a>Sri Lanka
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -5162,7 +5162,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="suriname"></a>Suriname
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
@@ -5186,7 +5186,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="svalbard-and-jan-mayen-islands"></a>Svalbard et les Îles Jan Mayen
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -5210,7 +5210,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="swaziland"></a>Eswatini
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -5234,7 +5234,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="sweden"></a>Suède
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
@@ -5258,7 +5258,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="switzerland"></a>Suisse
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Suisse |
 | OneDrive Entreprise | Suisse |
@@ -5282,7 +5282,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="taiwan"></a>Taïwan
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -5306,7 +5306,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="tajikistan"></a>Tadjikistan
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -5330,7 +5330,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="united-republic-of-tanzania"></a>Tanzanie
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -5354,7 +5354,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="thailand"></a>Thaïlande
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -5378,7 +5378,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="timor-leste"></a>Timor-Leste
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -5402,7 +5402,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="togo"></a>Togo
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -5426,7 +5426,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="tokelau"></a>Tokelau
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -5450,7 +5450,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="tonga"></a>Tonga
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -5474,7 +5474,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="trinidad-and-tobago"></a>Trinité-et-Tobago
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
@@ -5498,7 +5498,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="tunisia"></a>Tunisie
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -5522,7 +5522,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="turkey"></a>Turquie
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -5546,7 +5546,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="turkmenistan"></a>Turkménistan
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -5570,7 +5570,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="turks-and-caicos-islands"></a>Îles Turks et Caicos
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
@@ -5594,7 +5594,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="tuvalu"></a>Tuvalu
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -5618,7 +5618,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="us-virgin-islands"></a>Îles Vierges des États-Unis
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
@@ -5642,7 +5642,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="uganda"></a>Ouganda
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -5666,7 +5666,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="ukraine"></a>Ukraine
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -5690,7 +5690,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="united-arab-emirates"></a>Émirats arabes unis
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Émirats arabes unis |
 | OneDrive Entreprise | Émirats arabes unis |
@@ -5714,7 +5714,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="united-kingdom"></a>Royaume-Uni
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Royaume-Uni |
 | OneDrive Entreprise | Royaume-Uni |
@@ -5738,7 +5738,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="united-states"></a>États-Unis
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
@@ -5762,7 +5762,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="uruguay"></a>Uruguay
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 3 : Amériques |
 | OneDrive Entreprise | Zone géographique mondiale 3 : Amériques |
@@ -5786,7 +5786,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="us-minor-outlying-islands"></a>Îles mineures éloignées des États-Unis
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -5810,7 +5810,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="uzbekistan"></a>Ouzbékistan
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -5834,7 +5834,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="vanuatu"></a>Vanuatu
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -5858,7 +5858,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="venezuela"></a>Venezuela
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
@@ -5882,7 +5882,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="vietnam"></a>Vietnam
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -5906,7 +5906,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="wallis-and-futuna-islands"></a>Wallis et Futuna
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -5930,7 +5930,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="western-sahara"></a>Sahara occidental
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -5954,7 +5954,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="yemen"></a>Yémen
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -5978,7 +5978,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="zambia"></a>Zambie
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
@@ -6002,7 +6002,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 ## <a name="zimbabwe"></a>Zimbabwe
 <details><summary>Cliquez pour développer</summary><p>
 
-| Service | Emplacement |
+| Service | Lieu |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
