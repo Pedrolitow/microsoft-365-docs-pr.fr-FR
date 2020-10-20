@@ -16,12 +16,12 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur les options disponibles et préférées pour autoriser les messages entrants dans Exchange Online Protection (EOP).
-ms.openlocfilehash: b1eda98e081338a981be1d1f5991578b49c574fd
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 4009dcd506921b473e938828e5bdc10411c06ce2
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203166"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600320"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Créer des listes d’expéditeurs approuvés dans EOP
 
@@ -71,7 +71,7 @@ L’exemple suivant suppose que vous avez besoin d’un courrier électronique d
 
    > [!IMPORTANT]
    >
-   > - Ne configurez jamais les règles *de flux de messagerie avec le* domaine de l’expéditeur comme condition pour ignorer le filtrage du courrier indésirable. Cela augmentera *considérablement* la probabilité que les attaquants puissent usurper le domaine d’envoi (ou emprunter l’adresse de messagerie complète), ignorer le filtrage du courrier indésirable et ignorer les vérifications d’authentification de l’expéditeur afin que le message arrive dans la boîte de réception du destinataire.
+   > - Ne configurez jamais les règles de flux de messagerie avec *uniquement* le domaine de l’expéditeur comme condition d’ignorer le filtrage du courrier indésirable. Cela augmentera *considérablement* la probabilité que les attaquants puissent usurper le domaine d’envoi (ou emprunter l’adresse de messagerie complète), ignorer le filtrage du courrier indésirable et ignorer les vérifications d’authentification de l’expéditeur afin que le message arrive dans la boîte de réception du destinataire.
    >
    > - N’utilisez pas les domaines que vous possédez (également appelés domaines acceptés) ou les domaines populaires (par exemple, microsoft.com) comme conditions dans les règles de flux de messagerie. Cette opération est considérée comme un risque élevé, car elle permet aux attaquants d’envoyer des courriers électroniques qui seraient normalement filtrés.
    >
@@ -97,7 +97,7 @@ L’exemple suivant suppose que vous avez besoin d’un courrier électronique d
 
 ## <a name="use-outlook-safe-senders"></a>Utiliser des expéditeurs approuvés Outlook
 
-Au lieu d’un paramètre organisationnel, les utilisateurs ou les administrateurs peuvent ajouter les adresses de messagerie de l’expéditeur à la liste des expéditeurs approuvés dans la boîte aux lettres. Pour obtenir des instructions, consultez la rubrique [configurer les paramètres de courrier indésirable sur les boîtes aux lettres Exchange Online dans Office 365](configure-junk-email-settings-on-exo-mailboxes.md). Cette opération n’est pas recommandée dans la plupart des situations puisque les expéditeurs contournent des parties de la pile de filtrage. Bien que vous approuviez l’expéditeur, les boîtes de l’expéditeur sont toujours compromises et peuvent envoyer du contenu malveillant. Il est préférable de laisser nos filtres faire ce qui est nécessaire pour vérifier chaque message, puis [signaler le faux positif/négatif à Microsoft](report-junk-email-messages-to-microsoft.md) si nos filtres ne sont pas corrects. Le contournement de la pile de filtrage interfère également avec [zap](zero-hour-auto-purge.md).
+Au lieu d’un paramètre organisationnel, les utilisateurs ou les administrateurs peuvent ajouter les adresses de messagerie de l’expéditeur à la liste des expéditeurs approuvés dans la boîte aux lettres. Pour obtenir des instructions, consultez la rubrique [configurer les paramètres de courrier indésirable sur les boîtes aux lettres Exchange Online dans Office 365](configure-junk-email-settings-on-exo-mailboxes.md). Cette opération n’est pas recommandée dans la plupart des situations puisque les expéditeurs contournent des parties de la pile de filtrage. Bien que vous approuviez l’expéditeur, l’expéditeur peut toujours être compromis et envoyer du contenu malveillant. Il est préférable de laisser nos filtres faire ce qui est nécessaire pour vérifier chaque message, puis [signaler le faux positif/négatif à Microsoft](report-junk-email-messages-to-microsoft.md) si nos filtres ne sont pas corrects. Le contournement de la pile de filtrage interfère également avec [zap](zero-hour-auto-purge.md).
 
 Lorsque les messages ignorent le filtrage du courrier indésirable en raison de la liste des expéditeurs approuvés d’un utilisateur, le champ d’en-tête **X-Forefront-antispam-Report** contient la valeur `SFV:SFE` qui indique que le courrier indésirable, l’usurpation et le filtrage du hameçonnage ont été ignorés.
 
@@ -105,7 +105,7 @@ Lorsque les messages ignorent le filtrage du courrier indésirable en raison de 
 
 Si vous ne pouvez pas utiliser les règles de flux de messagerie comme décrit précédemment, la meilleure solution consiste à ajouter le ou les serveurs de messagerie source à la liste d’adresses IP autorisées dans la stratégie de filtrage des connexions. Pour plus d’informations, consultez la rubrique [Configure connection Filtering in EOP](configure-the-connection-filter-policy.md).
 
-**Remarques** :
+**Remarques**:
 
 - Il est important de conserver le nombre d’adresses IP autorisées à un minimum, donc d’éviter d’utiliser des plages d’adresses IP entières dès que possible.
 

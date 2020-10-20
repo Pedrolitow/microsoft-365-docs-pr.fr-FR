@@ -20,12 +20,12 @@ ms.topic: conceptual
 ms.date: 10/09/2020
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
-ms.openlocfilehash: 85813659d952fe936c8e8b41f2dc103a60116641
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 55a5ec4a2bfd562b581be9565022483d227f68be
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48447070"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600504"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Nouveautés d’Office 365 – Protection avancée contre les menaces
 
@@ -46,9 +46,9 @@ Cet article répertorie les nouvelles fonctionnalités de la dernière version d
 - [Vérifier vos stratégies à l’aide de Configuration Analyzer](configuration-analyzer-for-security-policies.md)
 - [Remplacer manuellement les verdicts de filtre à l’aide de la liste d’autorisation/de blocage de client](tenant-allow-block-list.md)
 - [Fonctionnalités étendues dans l’Explorateur de menaces, y compris les utilisateurs ciblés principaux, les règles de transport et les connecteurs](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (Plan Office 365 ATP 2)
-- Le surfaçage remplace les informations dans l' [Explorateur de menaces](threat-explorer.md) (le courrier électronique a été autorisé/bloqué par le client/stratégie utilisateur)
-- Exposition des menaces d’URL dans l' [Explorateur de menaces](threat-explorer.md#threats-in-urls) (programmes malveillants, hameçons, courrier indésirable ou aucun) 
-- [Améliorations apportées à l’expérience de la chasse Explorer](threat-explorer.md#improvements-to-threat-hunting-experience-upcoming) avec des mises à jour concernant les menaces, les actions supplémentaires, les emplacements de remise et l’affichage de chronologie mis à jour
+- Le surfaçage remplace les informations dans l' [Explorateur de menaces](threat-explorer.md) (le courrier électronique a été autorisé/bloqué par le client/stratégie utilisateur) (plan de l’ATP 2 Office 365)
+- Exposition des menaces d’URL dans l' [Explorateur de menaces](threat-explorer.md#threats-in-urls) (programmes malveillants, hameçons, courrier indésirable ou aucun) (plan DAV 2 Office 365)
+- [Améliorations apportées à l’expérience de la chasse Explorer](threat-explorer.md#improvements-to-threat-hunting-experience-upcoming) avec des mises à jour concernant les menaces, les actions supplémentaires, les emplacements de réception et l’affichage de chronologie mis à jour (plan de l’ATP 2 Office 365)
 
 ## <a name="julyaugust-2020"></a>Juillet/août 2020 
 
@@ -111,4 +111,3 @@ Saviez-vous qu’Office 365 ATP est disponible dans deux plans ? [En savoir plu
 [Feuille de route Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap)
 
 [Description du service ATP Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
-

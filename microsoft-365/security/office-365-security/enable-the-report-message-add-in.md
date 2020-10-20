@@ -16,12 +16,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment activer le complément de message de rapport pour Outlook et Outlook sur le Web, pour des utilisateurs individuels ou l’ensemble de votre organisation.
-ms.openlocfilehash: 601e3850bf046f3a0c807976fd173a6e0ec7ce2a
-ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+ms.openlocfilehash: b061d9db44b08a65b59481035c055a1b75eb6e3c
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48350622"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600368"
 ---
 # <a name="enable-the-report-message-add-in"></a>Activez le complément Signaler un message
 
@@ -41,7 +41,7 @@ Les administrateurs peuvent activer le complément de message de rapport pour l�
 
 Si vous êtes un utilisateur individuel, vous pouvez [activer le complément de rapport de message pour vous-même](#get-the-report-message-add-in-for-yourself).
 
-Si vous êtes un administrateur général ou un administrateur Exchange Online et qu’Exchange est configuré pour utiliser l’authentification OAuth, vous pouvez [activer le complément de message de rapport pour votre organisation](#get-and-enable-the-report-message-add-in-for-your-organization). Le complément de message de rapport est désormais disponible via un [déploiement centralisé](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins).
+Si vous êtes un administrateur général ou un administrateur Exchange Online et qu’Exchange est configuré pour utiliser l’authentification OAuth, vous pouvez [activer le complément de message de rapport pour votre organisation](#get-and-enable-the-report-message-add-in-for-your-organization). Le message de rapport Add-In est désormais disponible via un [déploiement centralisé](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
@@ -91,7 +91,7 @@ Pour savoir comment utiliser le complément, voir [use the Report message Add-in
 > [!NOTE]
 > Le complément peut prendre jusqu’à 12 heures pour apparaître dans votre organisation.
 
-1. Dans le centre d’administration Microsoft 365, accédez à la page des **compléments de Services &** , puis <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns> cliquez sur **déployer le complément**.
+1. Dans le centre d’administration Microsoft 365, accédez à la page **paramètres, applications intégrées & des compléments** à l’adresse <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> , puis cliquez sur **déployer un complément**.
 
    ![Page services et compléments dans le centre d’administration Microsoft 365](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
@@ -151,7 +151,7 @@ Lorsque vous informez les utilisateurs du complément Report message, incluez un
 
 1. Dans le centre d’administration Microsoft 365, accédez à la page des **compléments de Services &** à l’adresse <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns> .
 
-   ![Page services et compléments dans le nouveau centre d’administration Microsoft 365](../../media/ServicesAddInsPageNewM365AdminCenter.png)
+   ![Page services et Add-Ins dans le nouveau centre d’administration Microsoft 365](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
 2. Recherchez et sélectionnez le complément **Report message** .
 

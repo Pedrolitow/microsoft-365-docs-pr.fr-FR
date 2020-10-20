@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à afficher et à gérer les messages mis en quarantaine pour tous les utilisateurs dans Exchange Online Protection (EOP). Les administrateurs dans les organisations avec Office 365 Advanced Threat Protection (Office 365 ATP) peuvent également gérer les fichiers mis en quarantaine dans SharePoint Online, OneDrive entreprise et Microsoft Teams.
-ms.openlocfilehash: 7e9b49e7e7a90f5271a65bb26cecdd1a7ce2ab84
-ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
+ms.openlocfilehash: 5e1115157ef7d67bc7a3f626eb61d01ecc0986cb
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48417220"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600540"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Gérer les messages et fichiers mis en quarantaine en tant qu’administrateur dans Exchange Online PowerShell
 
@@ -95,6 +95,13 @@ Vous pouvez afficher et gérer les messages mis en quarantaine dans le centre de
      - **Programme malveillant**
      - **Courrier indésirable**
      - **Hameçonnage à niveau de confiance élevé**
+     
+   - **Type de stratégie**: filtrer les messages par type de stratégie :
+     - **Stratégie anti-programme malveillant**
+     - **Stratégie de pièces jointes fiables**
+     - **Stratégie anti-hameçonnage**
+     - **Stratégie de filtrage de contenu hébergé**
+     - **Règle de transport**
 
    - **Destinataire du message**: tous les utilisateurs ou seulement les messages qui vous sont envoyés. Les utilisateurs finaux peuvent gérer uniquement les messages mis en quarantaine qui leur sont envoyés.
 
@@ -107,6 +114,8 @@ Vous pouvez afficher et gérer les messages mis en quarantaine dans le centre de
      Par exemple, vous avez utilisé le [suivi des messages](message-trace-scc.md) pour rechercher un message qui a été envoyé à un utilisateur de votre organisation, et vous déterminez que le message a été mis en quarantaine au lieu d’être remis. Veillez à inclure la valeur d’ID de message complète, qui peut inclure des chevrons ( \<\> ). Par exemple : `<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`.
 
    - **Adresse e-mail de l'expéditeur** : adresse e-mail d'un seul expéditeur.
+
+   - **Nom**de la stratégie : utilisez le nom de la stratégie complète du message. La recherche n’est pas sensible à la casse.
 
    - **Adresse e-mail du destinataire** : adresse e-mail d'un seul destinataire.
 

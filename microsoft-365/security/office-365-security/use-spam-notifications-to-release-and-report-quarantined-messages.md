@@ -20,12 +20,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur les notifications de courrier indésirable de l’utilisateur final pour les messages mis en quarantaine dans Exchange Online Protection (EOP).
-ms.openlocfilehash: 9d1da6c4db245ecb065a5a076f2bc6a9c275c494
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 0440056e8e31d24e659f9d0ff6662f86f31a6189
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195818"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600296"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages"></a>Utiliser les notifications de courrier indésirable de l’utilisateur pour publier et signaler les messages mis en quarantaine
 
@@ -58,3 +58,6 @@ Une notification de courrier indésirable de l’utilisateur final contient les 
 - **Révision**: cliquez sur ce lien pour accéder à quarantaine dans le centre de sécurité & conformité, où vous pouvez (en fonction de la raison pour laquelle le message a été mis en quarantaine) afficher, publier, supprimer ou signaler vos messages mis en quarantaine. Pour plus d’informations, consultez [la rubrique Rechercher et débloquer les messages mis en quarantaine en tant qu’utilisateur dans EOP](find-and-release-quarantined-messages-as-a-user.md).
 
 ![Exemple de notification de courrier indésirable pour l’utilisateur final](../../media/end-user-spam-notification.png)
+
+> [!NOTE]
+> Un expéditeur bloqué peut toujours vous envoyer du courrier. Tous les messages provenant de cet expéditeur qui le rendent dans votre boîte aux lettres seront immédiatement déplacés vers le dossier courrier indésirable. Les prochains messages provenant de cet expéditeur seront dirigés vers votre dossier courrier indésirable ou vers le contrôle de quarantaine de l’utilisateur final. Si vous souhaitez supprimer ces messages à l’arrivée au lieu de les mettre en quarantaine, utilisez des [règles de flux de messagerie](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (également appelées règles de transport) pour supprimer les messages à l’arrivée.

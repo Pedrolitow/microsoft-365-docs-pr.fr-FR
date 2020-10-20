@@ -18,19 +18,19 @@ ms.collection:
 - M365-security-compliance
 description: Intégrez le serveur SIEM de votre organisation avec Office 365 protection avancée contre les menaces et les événements de menace associés dans l’API de gestion des activités Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 544093960570fe0e68ac47dc7bf9965fba2d30a1
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: c4c92fc45546d3d8022a3925baa9c10f9bd0090b
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327164"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600552"
 ---
 # <a name="siem-integration-with-advanced-threat-protection"></a>Intégration SIEM avec protection avancée contre les menaces
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Si votre organisation utilise un serveur de gestion des événements et des incidents de sécurité (SIEM), vous pouvez intégrer Office 365 Advanced Threat Protection (Office 365 ATP) à votre serveur SIEM. Vous pouvez configurer cette intégration à l’aide de l' [API de gestion des activités Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). 
+Si votre organisation utilise un serveur de gestion des événements et des informations de sécurité (SIEM), vous pouvez intégrer Office 365 Advanced Threat Protection (Office 365 ATP) à votre serveur SIEM. Vous pouvez configurer cette intégration à l’aide de l' [API de gestion des activités Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). 
 
 L’intégration SIEM vous permet d’afficher des informations, telles que des programmes malveillants ou des hameçons détectés par la protection avancée contre les menaces d’Office 365, dans vos rapports de serveur SIEM. 
 
@@ -68,5 +68,4 @@ Le tableau suivant récapitule les valeurs de **AuditLogRecordType** qui sont pe
 [Examen et réponse contre les menaces Office 365](office-365-ti.md)
 
 [Recherche et réponse automatiques dans Office 365](automated-investigation-response-office.md)
-
 

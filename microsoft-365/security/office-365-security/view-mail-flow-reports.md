@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent en savoir plus sur les rapports de flux de messagerie disponibles dans le tableau de bord des rapports dans le centre de sécurité & conformité.
 ms.custom: ''
-ms.openlocfilehash: d33bd62e9a06385bf3448b7744031ae030dbe3ca
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 801463877db2e022ab84c3187367587c61f71090
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195842"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600591"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Afficher les rapports de flux de messagerie dans le tableau de bord rapports du centre de sécurité & conformité
 
@@ -241,7 +241,7 @@ Vous pouvez modifier ces filtres en cliquant sur **Filtrer** ou en cliquant sur 
 Le tableau de données contient les informations suivantes :
 
 - **Direction**
-- **Type**
+- **Type (Type)**
 - **24 heures**
 - **3 jours**
 - **7 jours**
@@ -320,13 +320,23 @@ La table de données contient les informations suivantes, indiquées dans l’or
 
 - **Date**
 - **Nombre total de messages électroniques**
-- **Protection des serveurs Edge**
-- **Anti-programme malveillant, réputation de fichier, bloc de type de fichier**
-- **Hameçonnage, réputation de l’URL, emprunt d’identité de marque, anti-usurpation**
-- **Blocage du courrier indésirable et du filtrage du courrier en nombre**
-- **Emprunt d’identité d’utilisateur et de domaine (ATP)**
-- **Détonation des fichiers et des URL (ATP)**
-- **Protection après livraison après réception, ou ZAP (EOP)**
+- **Protection des serveurs Edge** 
+- **Anti-programme malveillant, réputation de fichier, bloc de type de fichier**:
+  - **Réputation de fichier**: messages filtrés en raison de l’identification d’un fichier joint par d’autres clients Microsoft.
+  - **Bloc de type de fichier**: messages filtrés en raison du type de fichier malveillant identifié dans le message.      
+- **Hameçonnage, réputation de l’URL, emprunt d’identité de marque, anti-usurpation**:
+  - **Réputation**de l’URL : messages filtrés en raison de l’identification de l’URL par d’autres clients Microsoft.
+  - Emprunt d’identité de la **marque**: messages filtrés en raison du message provenant de marques connues empruntant des expéditeurs.
+  - **Anti-usurpation**: messages filtrés en raison du message tentant d’usurper un domaine auquel appartient le destinataire, ou domaine dont l’expéditeur du message n’est pas propriétaire.  
+- **Blocage du courrier indésirable et filtrage du courrier en nombre**:
+  - **Filtrage du courrier en nombre**: messages filtrés en raison d’une tentative de remise en nombre de messages à ses destinataires. 
+- **Emprunt d’identité d’utilisateur et de domaine (ATP)**:
+  - **Emprunt d’identité**de l’utilisateur : messages filtrés en raison d’une tentative d’emprunt d’identité d’un utilisateur (expéditeur du message) défini dans les paramètres de protection contre l’emprunt d’identité d’une stratégie anti-hameçonnage.
+  - **Emprunt**d’identité de domaine : messages filtrés en raison d’une tentative d’emprunt d’identité d’un domaine défini dans les paramètres de protection contre l’emprunt d’identité d’une stratégie anti-hameçonnage. 
+- **Détonation des fichiers et des URL (ATP)**:
+  - **Détonation du fichier**: messages filtrés par une stratégie de pièces jointes fiables.
+  - **Détonation d’URL**: message filtré par une stratégie de liens fiables.  
+- **Post-livraison protection et zap (ATP), ou zap (EoP)**: zap indique zéro vidage automatique.
 
 Si vous sélectionnez une ligne dans le tableau de données, une autre répartition du nombre de messages est affichée dans le menu volant.
 
@@ -378,8 +388,10 @@ La table de données contient les informations suivantes, indiquées dans l’or
 - **Date**
 - **Nombre total de messages électroniques**
 - **Serveur Edge filtré**
-- **Moteur anti-programme malveillant, pièces jointes fiables, règle filtrée**
-- **DMARC, emprunt d’identité, usurpation, hameçonnage filtré**
+- **Moteur anti-programme malveillant, pièces jointes fiables, règle filtrée**:
+  - **Règle filtrée**: messages filtrés en raison de règles de flux de messagerie (également appelées règles de transport).
+- **DMARC, emprunt d’identité, usurpation, hameçonnage filtré**:
+  - **DMARC**: messages filtrés en raison d’un échec de la vérification de l’authentification DMARC du message. 
 - **Détection de la détonation d’URL**
 - **Filtrage du courrier indésirable**
 - **ZAP supprimé**
@@ -448,7 +460,7 @@ Pour revenir à l’affichage de rapport, cliquez sur **afficher le rapport**.
 Si vous cliquez sur **afficher les détails** de la table dans la fenêtre dépanner **par : direction** ou dépanner **par :** le mode de direction, les informations suivantes sont affichées :
 
 - **Date (UTC)**
-- **Type**
+- **Type (Type)**
 - **Direction**
 - **Nombre de messages**
 

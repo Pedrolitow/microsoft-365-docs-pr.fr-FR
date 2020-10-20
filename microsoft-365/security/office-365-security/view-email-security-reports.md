@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez comment rechercher et utiliser des rapports de sécurité de messagerie pour votre organisation. Les rapports de sécurité de messagerie sont disponibles dans le centre de sécurité & conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7d83e86c77eb148c4c55be3f363966ac3c756e87
-ms.sourcegitcommit: 24ccb910ffac4d065c512a57c5decd9dd19ef4c1
+ms.openlocfilehash: 58c29d37d4f7deab17b2c24bfd7fb74e5ba9cb45
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "48594819"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600564"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Afficher les rapports de sécurité de courrier dans le centre de sécurité et conformité
 
@@ -297,8 +297,8 @@ Les vues disponibles sont les suivantes :
 
 - **Afficher les données par : contenu \> Programme malveillant**<sup>1</sup>: les informations suivantes sont affichées pour les organisations Office 365 ATP :
 
-  - **Moteur anti-programme malveillant**
-  - **Détonation du fichier**
+  - **Moteur anti-programme malveillant**: captures de fichiers malveillants dans SharePoint Online, OneDrive et teams par anti-programme malveillant.
+  - **Détonation**des fichiers malveillants dans SharePoint Online, OneDrive et teams par des pièces jointes fiables.
 
   ![Vue de programmes malveillants de contenu dans le rapport d’état de protection contre les menaces](../../media/threat-protection-status-report-content-malware-view.png)
 
@@ -318,28 +318,28 @@ Les vues disponibles sont les suivantes :
 
 - Dépanner **par : la technologie de détection** et l' **affichage des données par : E-mail \> hameçon**: les informations suivantes sont affichées :
 
-  - **Réputation d’URL générée par l’ATP**<sup>1</sup>
-  - **Filtre de hameçonnage avancé**
-  - **Anti-usurpation : échec DMARC**
-  - **Anti-usurpation : intra-org**
-  - **Anti-spoofing : domaine externe**
-  - **Emprunt d’identité de marque**
-  - **Emprunt d’identité de domaine**<sup>1</sup>
-  - **Réputation d’URL EOP**
-  - **Filtre de hameçonnage général**
+  - Fonctionnalité de **réputation d’URL générée par l’ATP**<sup>1</sup>: réputation d’URL malveillante générée à partir de détonateurs ATP dans d’autres clients ATP.
+  - **Filtre anti-hameçonnage avancé**: signaux d’hameçonnage basés sur l’apprentissage de l’ordinateur.
+  - **Échec de l’anti-falsification-DMARC**: échec de l’authentification DMARC sur les messages.
+  - **Anti-spoof-intra-org**: l’expéditeur tente d’usurper le domaine du destinataire.
+  - **Anti-falsification-domaine externe**: l’expéditeur tente d’usurper un autre domaine.
+  - **Emprunt d’identité de marque**: emprunt d’identité de marques connues basées sur des expéditeurs.
+  - **Emprunt d’identité de domaine**<sup>1</sup>: emprunt d’identité de domaines que le client possède ou définit.
+  - **Réputation d’URL EOP**: réputation d’URL malveillante.
+  - **Filtre de hameçonnage général**: signal d’hameçonnage basé sur les règles d’analyste. 
   - **Autres**
-  - **Hameçonnage zap**<sup>2</sup>
+  - **Hameçonnage zap**<sup>2</sup>: suppression automatique des messages d’hameçonnage par zéro heure.
   - **Détonation d’URL**<sup>1</sup>
-  - **Emprunt d’identité d’utilisateur**<sup>1</sup>
+  - **Emprunt d’identité de l’utilisateur**<sup>1</sup>: emprunt d’identité des utilisateurs défini par l’administrateur ou appris via l’intelligence des boîtes aux lettres.
 
   ![Affichage de la technologie de détection pour les messages d’hameçonnage dans le rapport d’état de protection contre les menaces](../../media/threat-protection-status-report-phishing-detection-tech-view.png)
 
 - Dépanner **par : les technologies de détection** et les **données d’affichage par : \> programmes malveillants de messagerie**: les informations suivantes sont affichées :
 
-  - **Réputation de fichier générée par l’ATP**<sup>1</sup>
-  - **Moteur anti-programme malveillant**<sup>1</sup>
-  - **Bloc de type fichier de stratégie anti-programme malveillant**
-  - **Détonation de fichier**<sup>1</sup>
+  - **Réputation de fichier générée par l’ATP**<sup>1</sup>: toutes les réputations de fichiers malveillants générées par les détonateurs ATP.
+  - **Moteur anti-programme malveillant**<sup>1</sup>: détection à partir de moteurs anti-programme malveillant.
+  - **Bloc de type fichier de stratégie anti-programme malveillant**: il s’agit de messages électroniques filtrés en raison du type de fichier malveillant identifié dans le message.
+  - **Détonation de fichier**<sup>1</sup>: captures de détonation de fichier par des pièces jointes fiables.  
   - **Réputation de fichier malveillant**
   - **Programme malveillant zap**<sup>2</sup>
   - **Autres**

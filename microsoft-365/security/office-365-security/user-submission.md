@@ -1,5 +1,5 @@
 ---
-title: Stratégies de soumission des utilisateurs
+title: Stratégie de soumission des utilisateurs
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,14 +16,14 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Les administrateurs peuvent apprendre à configurer une boîte aux lettres pour collecter le courrier indésirable et le courrier indésirable transmis par les utilisateurs.
-ms.openlocfilehash: c8dec927442cc83752f7c3497f295008fae85377
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: c4792958d1e59cefd8b56c05b5e159f50be80c8b
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446926"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600480"
 ---
-# <a name="user-submissions-policies"></a>Stratégies de soumission des utilisateurs
+# <a name="user-submissions-policy"></a>Stratégie de soumission des utilisateurs
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -76,7 +76,7 @@ Une fois que vous avez vérifié que votre boîte aux lettres correspond à tout
 
 2. Dans la page **soumissions** de l’utilisateur qui s’affiche, sélectionnez l’une des options suivantes :
 
-   a. **Activer la fonctionnalité de rapport de message pour Outlook (recommandé)**: sélectionnez cette option si vous utilisez le complément de rapport de message ou le complément de création de rapports dans Outlook sur le Web, puis configurez les paramètres suivants :
+   1. **Activer la fonctionnalité de rapport de message pour Outlook (recommandé)**: sélectionnez cette option si vous utilisez le complément de rapport de message ou le complément de création de rapports dans Outlook sur le Web, puis configurez les paramètres suivants :
 
       - **Personnaliser le message de confirmation de l’utilisateur final**: cliquez sur ce lien. Dans la fenêtre mobile **personnaliser le message de confirmation** qui s’affiche, configurez les paramètres suivants :
 
