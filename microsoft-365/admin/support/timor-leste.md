@@ -1,10 +1,10 @@
 ---
-title: Informations de support pour le Timor-Leste
+title: Informations de support pour Timor-Leste
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,14 +13,14 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Découvrez comment contacter le support pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 1a0db9a54188fefe107c526e1b2ba821b8207527
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3154c0a84e4f9efe947a57a4ac646d916dc6c13a
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401617"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48639202"
 ---
-# <a name="contact-support-for-timor-leste"></a>Contacter le support pour le Timor-Leste
+# <a name="contact-support-for-timor-leste"></a>Contacter le support technique pour Timor-Leste
 
 [Rechercher un autre pays ou une autre région](../contact-support-for-business-products.md).
 
@@ -30,14 +30,14 @@ ms.locfileid: "44401617"
 ## <a name="hours"></a>Heures
 ### <a name="billing-support"></a>Support de facturation :
 
-Portugais : Lun-ven 9 PM-5 AM
+Portugais : Mon-Fri 9 h-5 AM
 
-Anglais : Lun-ven 9 PM-5 AM
+Anglais : Mon-Fri 9 h-5 AM
 
 ### <a name="technical-support"></a>Support technique :
 
 Portugais : 24 heures sur 24, entre le mois et l’heure de midi
 
-Anglais : 24 heures sur 24, 7 jours sur 7
+Anglais : 24h/24, 7j/7
 
 Frais d’appels internationaux appliqués

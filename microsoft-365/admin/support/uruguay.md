@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Découvrez comment contacter le support pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4264520e2470f25810ca903b43148680b7ae929a
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6e2014d1abc188c08fd64721dc9b93d30f940856
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402353"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48638854"
 ---
 # <a name="contact-support-for-uruguay"></a>Contacter le support pour l’Uruguay
 
@@ -30,7 +30,7 @@ ms.locfileid: "44402353"
 ## <a name="hours"></a>Heures
 ### <a name="billing-support"></a>Support de facturation :
 
-Espagnol : Lun-ven 9 AM-5 PM
+Espagnol : Mon-Fri 9 AM-5 PM
 
 ### <a name="technical-support"></a>Support technique :
 

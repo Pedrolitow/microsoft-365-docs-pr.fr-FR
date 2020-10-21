@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Découvrez comment contacter le support pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 1ae09f9d057b6a161f8d0a2dbb1f32b3eda4a7ec
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: c5a6651f1e8c3347fd443d15780fce9359396c64
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386708"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48639646"
 ---
 # <a name="contact-support-for-slovakia"></a>Contacter le support pour la Slovaquie
 
@@ -30,11 +30,11 @@ ms.locfileid: "44386708"
 ## <a name="hours"></a>Heures
 ### <a name="billing-support"></a>Support de facturation :
 
-Anglais : Lun-ven 9 AM-5 PM
+Anglais : Mon-Fri 9 AM-5 PM
 
 ### <a name="technical-support"></a>Support technique :
 
-Anglais : 24 heures sur 24, 7 jours sur 7
+Anglais : 24h/24, 7j/7
 
 Autre numéro de téléphone : 026 862 2111
 
