@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: e16f6421-2a1a-4142-bf9d-9846600a060a
 description: Obtenez l’application d’administration de Microsoft 365 et apprenez à gérer votre organisation en ligne à partir de votre téléphone ou tablette.
-ms.openlocfilehash: 1ad44ccc379b5115ad36e657708eed38f58dca34
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 55aaf26d0da922c8d9bfb7c64f16278eb4a705a5
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948807"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646642"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>À propos de l’application mobile d’administration Microsoft 365
 
@@ -43,7 +43,7 @@ L’application d’administration est une application riche en fonctionnalités
 - Réinitialiser le mot de passe d'un utilisateur
 - Attribuer des licences
 - Ajouter ou supprimer des appartenances aux groupes
-- Ajout d’utilisateurs 
+- Ajouter des utilisateurs 
 
 Et si vous êtes quelqu’un responsable de plusieurs organisations en ligne, vous vous connectez à plusieurs développées et passez rapidement de l’une à l’autre. 
   
@@ -61,7 +61,7 @@ Visionnez une courte vidéo sur l’installation de l’application mobile admin
 Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
  
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 Vous trouverez ci-dessous des réponses à des questions fréquemment posées sur l'application.
   

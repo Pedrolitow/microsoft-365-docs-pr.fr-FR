@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Découvrez comment contacter le support pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9c29a08980552874fd161b420d298f1e8075e6ce
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 8dd058697f7a7c696a4020fb25e74ef51fb94415
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44397129"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48641086"
 ---
 # <a name="contact-support-for-mauritius"></a>Contacter le support pour l’île Maurice
 
@@ -30,12 +30,12 @@ ms.locfileid: "44397129"
 ## <a name="hours"></a>Heures
 ### <a name="billing-support"></a>Support de facturation :
 
-Français : Lun-ven 11 AM-7 PM
+Français : Mon-Fri de 11 h à 7 h
 
-Anglais : Lun-ven 11 AM-7 PM
+Anglais : Mon-Fri de 11 h à 7 h
 
 ### <a name="technical-support"></a>Support technique :
 
-Français : Lun-ven 11 AM-minuit
+Français : Mon-Fri 11 h-minuit
 
-Anglais : 24 heures sur 24, 7 jours sur 7
+Anglais : 24h/24, 7j/7

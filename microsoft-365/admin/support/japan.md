@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Découvrez comment contacter le support pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6846f92131b553f40975f43654976328ba1882c5
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 5b120ae4799ab13288abe71dd71dc570db412caa
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44397489"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48641902"
 ---
 # <a name="contact-support-for-japan"></a>Contacter le support pour le Japon
 
@@ -32,11 +32,11 @@ ms.locfileid: "44397489"
 ## <a name="hours"></a>Heures
 ### <a name="billing-support"></a>Support de facturation :
 
-Japonais : Lun-ven 9:00-17:00
+Japonais : Mon-Fri 9:00-17:00
 
 (Fermé les week-ends et les congés publics)
 
-Anglais : Lun-ven 9:00-17:00
+Anglais : Mon-Fri 9:00-17:00
 
 (Fermé les week-ends et les congés publics)
 
@@ -46,7 +46,7 @@ Anglais : Lun-ven 9:00-17:00
 
 Japonais : 24 heures sur 24, 7 jours sur 7
 
-Anglais : 24 heures sur 24, 7 jours sur 7
+Anglais : 24h/24, 7j/7
 
 **Autres plans :**
 

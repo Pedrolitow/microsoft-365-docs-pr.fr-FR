@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Découvrez comment contacter le support pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d4d3daa16fb50933b4f233494bb76dd683cc850f
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 0e2ea463229c6078831b4975959c72ad6bb369ad
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44397465"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48641758"
 ---
 # <a name="contact-support-for-jordan"></a>Contacter le support pour la Jordanie
 
@@ -32,12 +32,12 @@ Après la numérotation, entrez 877 663 5075
 ## <a name="hours"></a>Heures
 ### <a name="billing-support"></a>Support de facturation :
 
-Arabe : Dim-Thou 10 AM-6 PM
+Arabe : Sun-Thu 10 AM-6 PM
 
-Anglais : Lun-ven 10 AM-6 PM
+Anglais : Mon-Fri 10 AM-6 PM
 
 ### <a name="technical-support"></a>Support technique :
 
-Arabe : Dim-Thou 10 AM-6 PM
+Arabe : Sun-Thu 10 AM-6 PM
 
-Anglais : 24 heures sur 24, 7 jours sur 7
+Anglais : 24h/24, 7j/7

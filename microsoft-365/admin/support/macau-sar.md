@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Découvrez comment contacter le support pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b00f395d2edddd717e0805f2ef739b24766b6248
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 0c39ba1d08bd40a950b4a323874e2a64c4017633
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44397261"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48641410"
 ---
 # <a name="contact-support-for-macau-sar"></a>Contacter le support pour la RAS de Macao
 
@@ -34,16 +34,16 @@ Après la numérotation, entrez
 ## <a name="hours"></a>Heures
 ### <a name="billing-support"></a>Support de facturation :
 
-Cantonese : Lun-ven 9 AM-5 PM
+Cantonese : Mon-Fri 9 AM-5 PM
 
-Mandarin : Lun-ven 9 AM-5 PM
+Mandarin : Mon-Fri 9 AM-5 PM
 
-Anglais : Lun-ven 9 AM-5 PM
+Anglais : Mon-Fri 9 AM-5 PM
 
 ### <a name="technical-support"></a>Support technique :
 
-Cantonese : Lun-ven 9 AM-5 PM
+Cantonese : Mon-Fri 9 AM-5 PM
 
-Mandarin : Lun-ven 9 AM-5 PM
+Mandarin : Mon-Fri 9 AM-5 PM
 
-Anglais : 24 heures sur 24, 7 jours sur 7
+Anglais : 24h/24, 7j/7
