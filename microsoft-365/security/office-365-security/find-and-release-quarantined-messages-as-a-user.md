@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les utilisateurs peuvent découvrir comment afficher et gérer les messages mis en quarantaine dans Exchange Online Protection (EOP) qui auraient dû leur être remis.
-ms.openlocfilehash: 03bcb0518b75d9a35aae1b6664b410b521adf940
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 2a8e37dc430af5b3d3c47179c721d83832f01184
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202842"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600344"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Rechercher et publier des messages mis en quarantaine en tant qu’utilisateur dans EOP
 
@@ -100,6 +100,11 @@ En tant qu'utilisateur, vous pouvez afficher, déplacer et supprimer les message
      - **Courrier indésirable**
 
      - **Hameçonnage**
+     
+   - **Type de stratégie** : filtrer les messages par type de stratégie :
+     - **Stratégie anti-hameçonnage**
+     - **Stratégie de filtrage de contenu hébergé**
+     
 
    Pour effacer le filtre, cliquez sur **Effacer**. Pour masquer le menu déroulant de filtrage, cliquez de nouveau sur **Filtrer**.
 
@@ -108,6 +113,8 @@ En tant qu'utilisateur, vous pouvez afficher, déplacer et supprimer les message
    - **ID du message** : l’identificateur global unique du message. Si vous sélectionnez un message dans la liste, la valeur **ID du message** apparaît dans le volet déroulant **Détails** qui s’affiche. Les administrateurs peuvent utiliser le [suivi des messages](message-trace-scc.md) pour rechercher les messages et les valeurs d’ID de message correspondantes.
 
    - **Adresse e-mail de l'expéditeur** : adresse e-mail d'un seul expéditeur.
+   
+   - **Nom de la stratégie** : utilisez le nom de stratégie complet indiqué dans le message. La recherche n’est pas sensible à la casse.
 
    - **Adresse e-mail du destinataire** : adresse e-mail d'un seul destinataire.
 
