@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 20816b8b-8b21-458f-81c1-320b8116597e
 ROBOTS: NOINDEX
 description: 'Découvrez comment s’inscrire à Office 365 avec votre adresse de messagerie personnelle, si vous ne souhaitez pas ajouter de domaine personnalisé. '
-ms.openlocfilehash: 0b188754b169f6f0f0fb807a8ba236497a7439ff
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b8e11d7c99ce385d8d5147245ac078b7d46c7caf
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399253"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48644878"
 ---
 # <a name="signing-up-for-office-365-with-a-personal-email-address"></a>Inscription à Office 365 avec une adresse de messagerie personnelle
 
@@ -37,7 +37,7 @@ Si vous décidez d’ajouter un domaine personnalisé maintenant, vous pouvez ac
   
 |**Fonctionnalité**|**Office 365 avec courrier personnel**|**Office 365 avec un domaine personnalisé**|
 |:-----|:-----|:-----|
-|**OneDrive <sup>1, 2</sup>**| [OneDrive personnel](https://onedrive.live.com/about/en-us/plans/)| [OneDrive Entreprise](https://onedrive.live.com/about/en-us/business/) |
+|**OneDrive <sup>1, 2</sup>**| [OneDrive personnel ](https://onedrive.live.com/about/en-us/plans/)| [OneDrive Entreprise](https://onedrive.live.com/about/en-us/business/) |
 |**Applications Office : Word, Excel, PowerPoint, OneNote, Outlook, Access (PC uniquement),**| Oui | Oui 
 |**Applications métiers <sup>3</sup> : Microsoft Connections, facturation, listings, Bookings, MileIQ et gestionnaire de clients Outlook**| Non | Oui 
 |**Accès au centre d’administration Microsoft 365**| Accès limité (configuration de facturation, de support et de domaine) | Oui

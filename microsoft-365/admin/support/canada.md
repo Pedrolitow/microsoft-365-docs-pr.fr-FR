@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Découvrez comment contacter le support pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3591f55efa56ca5f20a9c741527edb7d53003fa2
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 4eaf5a90e622d0aebe2321384bdddb25e7cc2c90
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398329"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48643426"
 ---
 # <a name="contact-support-for-canada"></a>Contacter le support pour le Canada
 
@@ -30,12 +30,12 @@ ms.locfileid: "44398329"
 ## <a name="hours"></a>Heures
 ### <a name="billing-support"></a>Support de facturation :
 
-Anglais : Lun-ven 9 AM-5 PM en local
+Anglais : Mon-Fri 9 AM-5, local
 
-Français : Lun-ven 9 AM-5 PM ET
+Français : Mon-Fri 9 AM-5 PM ET
 
 ### <a name="technical-support"></a>Support technique :
 
-Anglais : 24 heures sur 24, 7 jours sur 7
+Anglais : 24h/24, 7j/7
 
-Français : Lun-ven 9 AM-5 PM ET
+Français : Mon-Fri 9 AM-5 PM ET

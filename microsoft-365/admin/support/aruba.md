@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Découvrez comment contacter le support pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 53b450f082675d9e50f3fe6e9102f999a414a23a
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 0a331059a9b565b2c5de8b4104d6d578714adc92
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398665"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48644170"
 ---
 # <a name="contact-support-for-aruba"></a>Contacter le support pour Aruba
 
@@ -30,12 +30,12 @@ ms.locfileid: "44398665"
 ## <a name="hours"></a>Heures
 ### <a name="billing-support"></a>Support de facturation :
 
-Néerlandais : Lun-ven 4 AM-Midi
+Néerlandais : Mon-Fri 4 AM-Midi
 
-Anglais : Lun-ven 4 AM-Midi
+Anglais : Mon-Fri 4 AM-Midi
 
 ### <a name="technical-support"></a>Support technique :
 
-Anglais : 24 heures sur 24, 7 jours sur 7
+Anglais : 24h/24, 7j/7
 
 Frais d’appels internationaux appliqués

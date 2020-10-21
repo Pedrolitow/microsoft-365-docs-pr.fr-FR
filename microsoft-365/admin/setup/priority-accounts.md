@@ -13,12 +13,12 @@ ms.collection:
 - Adm_O365
 ms.custom: AdminSurgePortfolio
 description: Le moniteur a échoué et retardé les messages envoyés vers ou à partir de comptes ayant un impact élevé sur l’activité.
-ms.openlocfilehash: 053246da7f57c46045bfc777bc4de981ce51c6e5
-ms.sourcegitcommit: 234726a1795d984c4659da68f852d30a4dda5711
+ms.openlocfilehash: ce78316290f18f06337adc0e78a1b8992be7b425
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46794192"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48644583"
 ---
 # <a name="manage-and-monitor-priority-accounts"></a>Gérer et surveiller les comptes prioritaires
 
@@ -69,7 +69,7 @@ Vous pouvez surveiller l’état du courrier de vos comptes de priorité dans le
 
 ## <a name="email-issues-for-priority-accounts"></a>Problèmes de messagerie pour les comptes prioritaires
 
-Vous pouvez suivre les problèmes de messagerie pour les comptes prioritaires en accédant au rapport **problèmes de messagerie pour les comptes prioritaires** dans le centre d’administration Exchange. Pour plus d’informations, consultez la [question relative aux problèmes de messagerie pour les comptes prioritaires](https://review.docs.microsoft.com/en-us/Exchange/mail-flow-best-practices/mail-flow-insights/mfi-email-issues-for-priority-accounts?branch=Priority-chrisda).
+Vous pouvez suivre les problèmes de messagerie pour les comptes prioritaires en accédant au rapport **problèmes de messagerie pour les comptes prioritaires** dans le centre d’administration Exchange. Pour plus d’informations, consultez la [question relative aux problèmes de messagerie pour les comptes prioritaires](https://docs.microsoft.com/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report).
 
 ## <a name="remove-a-user-from-the-priority-accounts-list"></a>Supprimer un utilisateur de la liste des comptes prioritaires
 

@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Découvrez comment contacter le support pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e3a3a8b5ab7333d904099c5f81cd8ec19be96ee4
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 9b587f33e2e804811b86795eb11d0d6f49b110d6
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398737"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48644350"
 ---
 # <a name="contact-support-for-andorra"></a>Contacter le support pour Andorre
 
@@ -30,14 +30,14 @@ ms.locfileid: "44398737"
 ## <a name="hours"></a>Heures
 ### <a name="billing-support"></a>Support de facturation :
 
-Espagnol : lundi-ven 10 AM-6 PM
+Espagnol : Mon-Fri 10 AM-6 PM
 
-Anglais : Lun-ven 10 AM-6 PM
+Anglais : Mon-Fri 10 AM-6 PM
 
 ### <a name="technical-support"></a>Support technique :
 
-Espagnol : Lun 9 AM-10 PM
+Espagnol : Mon-Fri 9 h-10 PM
 
-Anglais : 24 heures sur 24, 7 jours sur 7
+Anglais : 24h/24, 7j/7
 
 Frais d’appels internationaux appliqués

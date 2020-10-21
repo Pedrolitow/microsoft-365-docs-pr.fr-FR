@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: sharik
 author: skjerland
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: En savoir plus sur Office 365 géré par 21Vianet qui est conçu pour répondre aux besoins des services Cloud sécurisés, fiables et évolutifs en Chine.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 133df44635927d185e72c7981953e07162d458a9
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.openlocfilehash: 5906bf961e246f1d707b030ffb4c788da353200c
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45079736"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48644650"
 ---
 # <a name="office-365-operated-by-21vianet"></a>Office 365 géré par 21Vianet
 
@@ -75,7 +75,7 @@ Pour en savoir plus sur la prise en main des services généraux Office 365, con
 |||
 |:-----|:-----|
 |Partage d’un document, d’une bibliothèque ou d’un site par courrier électronique avec une personne extérieure à votre organisation  <br/> |Cette fonctionnalité est disponible, mais si elle est désactivée par défaut, elle peut permettre aux fichiers partagés d’être accessibles en dehors de votre pays. Administrators do have the ability to turn it on, but will get a warning message indicating that it could make files shared accessible outside of your country. Les utilisateurs qui tentent de partager avec une personne extérieure à l’organisation recevront également un avertissement. Pour plus d’informations, consultez la rubrique [partager des fichiers ou des dossiers SharePoint dans Office 365](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c).  <br/> |
-|Services d'accès  <br/> |Access 2013 est pris en charge, mais il est possible que l’ajout de nouvelles applications Access ne soit pas disponible, car cette fonctionnalité sera supprimée d’Office 365 et de SharePoint Online. La création de nouvelles applications Web Access et des bases de données Web Access dans Office 365 et SharePoint Online cessera de commencer le 2017 juin et toutes les autres applications Web et bases de données Web en avril 2018. De plus, la fonctionnalité Access 2010 n’est pas prise en charge et la tentative d’utilisation d’une base de données Access 2010 entraînera des erreurs et une éventuelle perte de données.  <br/> |
+|Access Services  <br/> |Access 2013 est pris en charge, mais il est possible que l’ajout de nouvelles applications Access ne soit pas disponible, car cette fonctionnalité sera supprimée d’Office 365 et de SharePoint Online. La création de nouvelles applications Web Access et des bases de données Web Access dans Office 365 et SharePoint Online cessera de commencer le 2017 juin et toutes les autres applications Web et bases de données Web en avril 2018. De plus, la fonctionnalité Access 2010 n’est pas prise en charge et la tentative d’utilisation d’une base de données Access 2010 entraînera des erreurs et une éventuelle perte de données.  <br/> |
 |Microsoft PowerApps  <br/> |À venir.  <br/> |
 |Gestion des droits relatifs à l'information (IRM)  <br/> |La possibilité de définir des fonctionnalités de gestion des droits relatifs à l’information pour SharePoint pour votre organisation sera bientôt disponible.  <br/> |
 |Possibilité de traduire du texte ou des pages  <br/> |Disponible, mais désactivée par défaut. Les administrateurs de clients peuvent activer cette fonctionnalité, mais le service de traduction en nuage peut être situé en dehors de votre pays. Si vous ne souhaitez pas que les utilisateurs envoient du contenu à un service de traduction en nuage, vous pouvez conserver ces fonctionnalités désactivées.  <br/> |
@@ -129,11 +129,11 @@ Pour les organisations qui exécutent des versions anciennes ou mixtes d’Excha
 | 2013 SP1  <br/> | 2013 SP1  <br/> | Oui  <br/> | Tous  <br/> |
 | Mixte 2013 SP1/2010 SP3  <br/> | 2013 CU5  <br/> | Oui  <br/> | Tout, à l’exception de la fonctionnalité eDiscovery/archivage inaltérable, accès OWA (voir le tableau ci-dessous)  <br/> |
 | Mixte 2013 SP1/2010 SP3  <br/> | 2013 SP1  <br/> | Oui  <br/> | Configuration manuelle uniquement des informations de disponibilité  <br/> |
-| 2010 SP3  <br/> | 2010 SP3  <br/> | Non  <br/> | Aucune  <br/> |
+| 2010 SP3  <br/> | 2010 SP3  <br/> | Non  <br/> | Aucun  <br/> |
 | 2007  <br/> | 2013 CU5  <br/> | Oui  <br/> | Disponibilité uniquement  <br/> |
 | 2007  <br/> | 2013 SP1 ou 2010 SP3No  <br/> | N/A  <br/> | Non prise en charge  <br/> |
 | 2003  <br/> | 2013 SP1/CU5  <br/> | N/A  <br/> | Non prise en charge  <br/> |
-| 2003  <br/> | 2010 SP3  <br/> | Non  <br/> | Aucune  <br/> |
+| 2003  <br/> | 2010 SP3  <br/> | Non  <br/> | Aucun  <br/> |
 
    
 > [!IMPORTANT]

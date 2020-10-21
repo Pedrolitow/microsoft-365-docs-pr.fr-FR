@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Découvrez comment contacter le support pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a60d588d638d1389366a6883f4b8f3fd20e189e8
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: f7708c64c4be2578ef35b85bcbc1cc6ea1bd183b
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398053"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48642934"
 ---
 # <a name="contact-support-for-dominican-republic"></a>Contacter le support pour la République dominicaine
 
@@ -34,7 +34,7 @@ Entrez le code 7007
 ## <a name="hours"></a>Heures
 ### <a name="billing-support"></a>Support de facturation :
 
-Espagnol : Lun-ven 9 AM-5 PM
+Espagnol : Mon-Fri 9 AM-5 PM
 
 ### <a name="technical-support"></a>Support technique :
 
