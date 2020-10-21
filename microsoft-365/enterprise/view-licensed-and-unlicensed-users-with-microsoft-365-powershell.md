@@ -20,16 +20,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
 description: Cet article explique comment utiliser PowerShell pour afficher des comptes d’utilisateurs Microsoft 365 sans licence ou sous licence.
-ms.openlocfilehash: 8a99ba2a80f1d814ec5268c4f8f479837eb54dc0
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: b38ee7674abaea6b63d0661ba79a9814f8c54229
+ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46689794"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48651383"
 ---
 # <a name="view-licensed-and-unlicensed-microsoft-365-users-with-powershell"></a>Afficher les utilisateurs titulaires d’une licence et de Microsoft 365 sans licence avec PowerShell
 
-*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
 Les comptes d’utilisateur de votre organisation Microsoft 365 peuvent avoir certaines, toutes ou aucune des licences disponibles qui leur sont attribuées à partir des plans de gestion des licences disponibles dans votre organisation. Vous pouvez utiliser PowerShell pour Microsoft 365 pour trouver rapidement les utilisateurs sous licence et sans licence de votre organisation.
 
@@ -46,7 +46,7 @@ Get-AzureAdUser | ForEach{ $licensed=$False ; For ($i=0; $i -le ($_.AssignedLice
 Pour afficher la liste de tous les comptes d’utilisateurs de votre organisation auxquels ont été affectés des plans de gestion des licences (utilisateurs sous licence), exécutez la commande suivante :
   
 ```powershell
-Get-AzureAdUser | ForEach { $licensed=$False ; For ($i=0; $i -le ($_.AssignedLicenses | Measure).Count ; $i++) { If( [string]::IsNullOrEmpty(  $_.AssignedLicenses[$i].SkuId ) -ne $True) { $licensed=$true } } ; If( $licensed -eq $true) { Write-Host $_.UserPrincipalName} }
+Get-AzureAdUser | ForEach { $licensed=$True ; For ($i=0; $i -le ($_.AssignedLicenses | Measure).Count ; $i++) { If( [string]::IsNullOrEmpty(  $_.AssignedLicenses[$i].SkuId ) -ne $True) { $licensed=$true } } ; If( $licensed -eq $true) { Write-Host $_.UserPrincipalName} }
 ```
 
 >[!Note]

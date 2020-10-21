@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,12 +18,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Découvrez comment gérer des abonnements gratuits en libre-service pour votre organisation.
-ms.openlocfilehash: 81c67292a394c62d6057022babb88aa8796b9b3d
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: fb70d0c40d4358abc227c8f6ff4a0e0dce1a7265
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403245"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48647830"
 ---
 # <a name="manage-self-service-sign-up-subscriptions"></a>Gérer les abonnements d’abonnement en libre-service
 
@@ -44,7 +44,7 @@ Vous utilisez la cmdlet [**Set-MsolCompanySettings**](https://docs.microsoft.com
 > [!IMPORTANT]
 > Lorsque vous supprimez un abonnement d’abonnement libre-service, vous empêchez tous les utilisateurs d’accéder à leurs données et à leurs messages électroniques et de supprimer toutes les données et tous les messages électroniques.
 
-1. Dans le centre d’administration, accédez à la page **facturation**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits</a> .
+1. Dans le centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
 2. Recherchez l’abonnement d’abonnement libre-service que vous souhaitez supprimer. Dans la section **paramètres & Actions** , sélectionnez **Supprimer l’abonnement**.
 3. Dans le volet **supprimer un abonnement** , activez la case à cocher, puis sélectionnez Supprimer l' **abonnement**.
 

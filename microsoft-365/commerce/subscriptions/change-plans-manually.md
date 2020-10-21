@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -22,12 +22,12 @@ search.appverid:
 - BEA160
 ROBOTS: NOINDEX
 description: Modifiez les abonnements manuellement en achetant un nouvel abonnement et en vous assurant que les abonnements sont répertoriés et actifs.
-ms.openlocfilehash: 20f5492a816c6c819456ac2ca4aa0f20da24eccd
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 09557b3556db1e6f17d7a4cd54a88ba34d0f0bd7
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403281"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48647818"
 ---
 # <a name="change-plans-manually"></a>Modifier les offres manuellement
 
@@ -84,7 +84,7 @@ Les licences pour l’abonnement actuel seront supprimées ultérieurement ; vo
 
 ### <a name="reassign-a-license-for-one-user"></a>Réattribuer une licence pour un utilisateur
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 
 2. Sur la page **utilisateurs actifs** , sélectionnez l’utilisateur auquel vous souhaitez attribuer une licence.
 
@@ -92,7 +92,7 @@ Les licences pour l’abonnement actuel seront supprimées ultérieurement ; vo
 
 ### <a name="reassign-licenses-for-multiple-users-at-once"></a>Réattribuer des licences pour plusieurs utilisateurs à la fois
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 
 2. Sélectionnez les cercles en regard des noms des utilisateurs pour lesquels vous souhaitez remplacer les licences existantes.
 

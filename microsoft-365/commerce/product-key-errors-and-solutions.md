@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
@@ -25,12 +25,12 @@ description: 'Découvrez comment résoudre les problèmes que vous rencontrez lo
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: dd3ac00061d1e509dddbc83c8ba3c4631100b63e
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 533a2390d602f42602a7846b4f1e23302a957e74
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818646"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48647890"
 ---
 # <a name="problems-with-your-microsoft-365-for-business-product-key"></a>Vous rencontrez des problèmes avec votre clé de produit Microsoft 365 pour les entreprises ?
 
@@ -47,12 +47,12 @@ Si un message d’erreur s’affiche lorsque vous essayez d’utiliser une clé 
 | «Désolé, il s’agit d’une clé de produit non valide. Essayez de le saisir à nouveau. Si votre clé de produit est pour la famille Microsoft 365 Personal ou Microsoft 365, remboursez-la sur office.com/setup. <br/><br/>Si vous utilisez Office 365 solo au Japon : «Désolé, il s’agit d’une clé de produit non valide. Essayez de le saisir à nouveau. Si votre clé de produit est pour Office 365 solo, remboursez-la à office.com/setup. " | Si vous configurez la [famille Microsoft 365 ou Personal](https://support.microsoft.com/office/28cbc8cf-1332-4f04-9123-9b660abb629e.aspx), vous devez utiliser votre clé de produit à l’adresse [https://www.office.com/setup](https://www.office.com/setup) . Dans le cas contraire, pour les clients professionnels, vérifiez attentivement les chiffres et les caractères que vous entrez. |
 | «La clé de produit que vous avez entrée n’est pas valide. Essayez de le saisir de nouveau. " Ou «cette clé de produit n’est pas valide. Entrez une autre clé de produit. " | Vérifiez soigneusement les nombres et caractères entrés. Les erreurs peuvent provenir de 0 et o, de 5 et S, de l et 1, etc. Si le problème persiste, contactez le revendeur auprès duquel vous avez acheté votre clé de produit. |
 | «Vous avez déjà entré cette clé de produit. Entrez une autre clé. " | Vérifiez les clés de produit déjà entrées pour voir si la clé n'a pas déjà été ajoutée. Si vous renouvelez un abonnement à l'aide d'une clé de produit, vous devez utiliser une clé de produit nouvelle et inutilisée.  <br/><br/>Vous avez besoin d'acheter une nouvelle clé de produit ? Visitez [Microsoft Store](https://go.microsoft.com/fwlink/p/?LinkId=529160) ou un revendeur tiers, ou si vous traitez avec un partenaire, contactez cette personne.  <br/><br/>Si le problème persiste, [Contactez le support technique](../admin/contact-support-for-business-products.md). Si vous travaillez avec un partenaire, contactez votre partenaire pour obtenir une assistance sur la clé de produit. |
-| «La clé de produit que vous avez entrée a expiré. Entrez une autre clé. " | Vous devez utiliser une clé de produit nouvelle et inutilisée pour renouveler un abonnement actif ou activer un nouvel abonnement.<br/><br/>Vous avez besoin d'acheter une nouvelle clé de produit ? Visitez [Microsoft Store](https://go.microsoft.com/fwlink/p/?LinkId=529160) ou un revendeur tiers, ou si vous traitez avec un partenaire, contactez cette personne. |
+| «La clé de produit que vous avez entrée a expiré. Entrez une autre clé. " | Vous devez utiliser une clé de produit nouvelle et inutilisée pour renouveler un abonnement actif ou activer un nouvel abonnement.<br/><br/>Vous avez besoin d'acheter une nouvelle clé de produit ? Visitez [Microsoft Store](https://go.microsoft.com/fwlink/p/?LinkId=529160) ou un revendeur tiers, ou si vous traitez avec un partenaire, contactez cette personne.   |
 | «Cette clé de produit a déjà été utilisée. Entrez une autre clé de produit. " | Vérifiez que vous ou un membre de votre organisation n'êtes pas à l'origine de son utilisation. Si la clé n'a pas encore été utilisée, contactez votre partenaire ou le revendeur auprès duquel vous l'avez achetée. |
 | «Désolé, nous ne pouvons pas traiter votre demande pour le moment. Veuillez patienter quelques minutes, puis réessayez. " | Si de nouvelles tentatives entraînent le même message d’erreur pendant plus de 15 minutes, veuillez [contacter le support technique](../admin/contact-support-for-business-products.md). |
 | «L’abonnement demandé n’est pas disponible. L’une des raisons suivantes peut être à l’origine de ce problème : l’offre n’est pas disponible : le service n’est pas disponible dans votre pays ; il est impossible d’utiliser/de sélectionner la même version d’évaluation deux fois. Si le problème persiste, contactez le support Microsoft. " | Veuillez [contacter le support technique](../admin/contact-support-for-business-products.md). Si vous travaillez avec un partenaire, contactez votre partenaire pour obtenir de l’aide. |
 | «Vous avez ajouté plusieurs licences utilisateur que ce que propose cette offre. Le nombre maximal de \<x\> licences utilisateur est de. Supprimez cette clé de produit et entrez-en une qui ajoute moins de licences utilisateur. " | Contactez votre revendeur ou partenaire. Vous avez acheté plus de licences que ce qui peut être utilisé avec cet abonnement Microsoft 365. |
-| « Vous devez être un administrateur général ou de facturation pour échanger une clé de produit. » | Assurez-vous que vos autorisations sont définies en tant qu’administrateur général ou de facturation. Pour vérifier cela, [Connectez-vous à Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4) avec votre compte professionnel ou scolaire et accédez au centre d’administration. <br/><br/>Dans le Centre d'administration, sélectionnez **Utilisateurs** \> **Utilisateurs actifs**. Dans **Filtres**, choisissez **Administrateurs généraux** ou **Administrateurs de facturation**.  <br/><br/>Vérifiez que vous êtes répertorié dans les résultats. |
+| « Vous devez être un administrateur général ou de facturation pour échanger une clé de produit. » | Assurez-vous que vos autorisations sont définies en tant qu’administrateur général ou de facturation. Pour vérifier cela,  [Connectez-vous à Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4) avec votre compte professionnel ou scolaire et accédez au centre d’administration. <br/><br/>Dans le Centre d'administration, sélectionnez **Utilisateurs** \> **Utilisateurs actifs**. Dans **Filtres**, choisissez **Administrateurs généraux** ou **Administrateurs de facturation**.  <br/><br/>Vérifiez que vous êtes répertorié dans les résultats. |
    
 > [!NOTE]
 > Lorsque vous achetez Microsoft 365 auprès d’un partenaire, Microsoft vous envoie un courrier électronique contenant des instructions pour obtenir votre clé de produit et activer votre abonnement dans le centre de gestion des [licences en volume](https://go.microsoft.com/fwlink/p/?LinkID=282016). Pour en savoir plus sur les licences en volume, consultez l'[aide pour les clients du programme de licence en volume](https://go.microsoft.com/fwlink/p/?LinkId=534992). 
