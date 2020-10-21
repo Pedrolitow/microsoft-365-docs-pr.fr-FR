@@ -1,5 +1,5 @@
 ---
-title: Configurer les paramètres de courrier indésirable dans les boîtes aux lettres Exchange Online
+title: Configurer les paramètres d’e-mail indésirable dans les boîtes aux lettres Exchange Online
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -16,14 +16,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à configurer les paramètres de courrier indésirable dans les boîtes aux lettres Exchange Online. Un grand nombre de ces paramètres sont disponibles pour les utilisateurs dans Outlook ou Outlook sur le Web.
-ms.openlocfilehash: 632c6f37b80cdc38b513f66ad42e4a5c25b41f25
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: ed1513dc16caa25edfe0acd62db59304d90e76c5
+ms.sourcegitcommit: e17fd18b01d70e6428263c20cbce4b92e2a97765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203346"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48626154"
 ---
-# <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Configurer les paramètres de courrier indésirable dans les boîtes aux lettres Exchange Online
+# <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Configurer les paramètres d’e-mail indésirable dans les boîtes aux lettres Exchange Online
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -42,7 +42,7 @@ Lorsque la règle de courrier indésirable est activée dans la boîte aux lettr
 
  Lorsque la règle de courrier indésirable est désactivée sur la boîte aux lettres, EOP ne peut pas déplacer les messages vers le dossier courrier indésirable en fonction de l’action de filtrage du courrier indésirable **déplacer le message vers le dossier courrier indésirable** ou la collection de listes fiables sur la boîte aux lettres.
 
-Les administrateurs peuvent utiliser Exchange Online PowerShell pour désactiver, activer et afficher l’état de la règle de courrier indésirable sur les boîtes aux lettres. Les administrateurs peuvent également utiliser Exchange Online PowerShell pour configurer les entrées de la collection de listes fiables sur les boîtes aux lettres (la liste des expéditeurs approuvés, la liste des destinataires approuvés et la liste des expéditeurs bloqués).
+Les administrateurs peuvent utiliser Exchange Online PowerShell pour désactiver, activer et afficher l’état de la règle de courrier indésirable sur les boîtes aux lettres. Les administrateurs peuvent également utiliser Exchange Online PowerShell pour configurer les entrées de la collection de listes fiables sur les boîtes aux lettres (la liste des expéditeurs approuvés, la liste des destinataires fiables et la liste des expéditeurs bloqués).
 
 > [!NOTE]
 > Les messages provenant d’expéditeurs que les utilisateurs ont ajoutés à leurs propres listes d’expéditeurs approuvés ignorent le filtrage des connexions dans le cadre d’EOP (le SCL est-1). Pour empêcher les utilisateurs d’ajouter des entrées à leur liste des expéditeurs approuvés dans Outlook, utilisez la stratégie de groupe comme mentionné dans la section  [à propos des paramètres du courrier indésirable dans Outlook](#about-junk-email-settings-in-outlook) plus loin dans cette rubrique. Le filtrage des stratégies, le filtrage du contenu et les vérifications de protection avancée contre les menaces seront toujours appliqués aux messages.

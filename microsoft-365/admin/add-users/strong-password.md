@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment définir des exigences de mots de passe forts pour vos utilisateurs, à l’aide de Windows PowerShell.
-ms.openlocfilehash: 1230ff4b4235ac5acbc28aa823506dfa5af26c2d
-ms.sourcegitcommit: 3165329d1fb5a7fd866ff287bea3b6354ea2be18
+ms.openlocfilehash: 1634e2f0de2cdd2cac5e1928adbef54457e50716
+ms.sourcegitcommit: e17fd18b01d70e6428263c20cbce4b92e2a97765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48581019"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48626142"
 ---
 # <a name="set-strong-password-requirement-for-users"></a>Définir une condition de mot de passe fort pour les utilisateurs
 
@@ -42,10 +42,15 @@ Vous devez également vous connecter à Microsoft 365 avec PowerShell.
 
 1. [Connectez-vous à Microsoft 365 avec PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
-2. À l’aide de PowerShell, vous pouvez désactiver les mots de passe forts pour des utilisateurs spécifiques à l’aide de cette commande :
+2. À l’aide de PowerShell, vous pouvez activer les exigences de mot de passe fort pour tous les utilisateurs à l’aide de la commande suivante :
 
     ```powershell
-    Set-MsolUser –UserPrincipalName –StrongPasswordRequired  $false
+    Get-MsolUser | Set-MsolUser -StrongPasswordRequired $true
+
+3. You can turn on strong password requirements for specific users with this command:
+
+    ```powershell
+    Set-MsolUser –UserPrincipalName –StrongPasswordRequired  $true
     ```
 
 > [!NOTE]

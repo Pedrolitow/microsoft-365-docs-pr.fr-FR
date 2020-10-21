@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à afficher et à gérer les messages mis en quarantaine pour tous les utilisateurs dans Exchange Online Protection (EOP). Les administrateurs dans les organisations avec Office 365 Advanced Threat Protection (Office 365 ATP) peuvent également gérer les fichiers mis en quarantaine dans SharePoint Online, OneDrive entreprise et Microsoft Teams.
-ms.openlocfilehash: 5e1115157ef7d67bc7a3f626eb61d01ecc0986cb
-ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
+ms.openlocfilehash: 65cf0a116dbed3dce93db8e34fa96d6ab68a9c9e
+ms.sourcegitcommit: e17fd18b01d70e6428263c20cbce4b92e2a97765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/20/2020
-ms.locfileid: "48600540"
+ms.locfileid: "48626166"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Gérer les messages et fichiers mis en quarantaine en tant qu’administrateur dans Exchange Online PowerShell
 
@@ -70,6 +70,7 @@ Vous pouvez afficher et gérer les messages mis en quarantaine dans le centre de
    - **Raison de la quarantaine**<sup>\*</sup>
    - **Déplacer ?**<sup>\*</sup>
    - **Type de stratégie**<sup>\*</sup>
+   - **Date d’expiration**
    - **Destinataire**
    - **ID de message**
    - **Nom de la stratégie**
@@ -95,12 +96,12 @@ Vous pouvez afficher et gérer les messages mis en quarantaine dans le centre de
      - **Programme malveillant**
      - **Courrier indésirable**
      - **Hameçonnage à niveau de confiance élevé**
-     
+
    - **Type de stratégie**: filtrer les messages par type de stratégie :
      - **Stratégie anti-programme malveillant**
      - **Stratégie de pièces jointes fiables**
      - **Stratégie anti-hameçonnage**
-     - **Stratégie de filtrage de contenu hébergé**
+     - **Stratégie de filtrage de contenu hébergé** (stratégie de blocage du courrier indésirable)
      - **Règle de transport**
 
    - **Destinataire du message**: tous les utilisateurs ou seulement les messages qui vous sont envoyés. Les utilisateurs finaux peuvent gérer uniquement les messages mis en quarantaine qui leur sont envoyés.
@@ -120,6 +121,8 @@ Vous pouvez afficher et gérer les messages mis en quarantaine dans le centre de
    - **Adresse e-mail du destinataire** : adresse e-mail d'un seul destinataire.
 
    - **Sujet** : utiliser l'intégralité du sujet du message. La recherche n’est pas sensible à la casse.
+  
+   - **Nom**de la stratégie : nom de la stratégie responsable de la mise en quarantaine du message.
 
    Après avoir entrer les critères de recherche, cliquez sur le ![Bouton actualiser](../../media/scc-quarantine-refresh.png) **Actualiser** pour filtrer les résultats.
 
@@ -147,6 +150,8 @@ Lorsque vous sélectionnez un message électronique dans la liste, les détails 
 
 - **Raison**de la mise en quarantaine : indique si un message a été identifié **Bulk**comme **courrier indésirable**, **hameçon, hameçon**, correspond à une règle de flux de messagerie (**règle de transport**) ou a été identifié comme contenant un **programme malveillant**.
 
+- **Nombre de destinataires**
+
 - **Destinataires** : si le message contient plusieurs destinataires, vous devez cliquer sur **Prévisualiser le message** ou **Afficher l’en-tête du message** pour afficher la liste complète des destinataires.
 
 - **Expires** : Date et heure auxquelles le message sera automatiquement et définitivement supprimé de la quarantaine.
@@ -173,7 +178,6 @@ Une fois que vous avez sélectionné un message, vous disposez de plusieurs opti
   Remarques sur la libération des messages :
 
   - Vous ne pouvez pas diffuser un message au même destinataire plus d’une fois.
-
   - Seuls les destinataires qui n’ont pas reçu le message s’affichent dans la liste des destinataires potentiels.
 
 - **Afficher l’en-tête du message** : Sélectionnez ce lien pour afficher le texte d’en-tête du message. Pour analyser en profondeur les champs d'en-tête et les valeurs, copiez le texte d’en-tête du message dans le presse-papiers, puis sélectionnez **Analyseur d’en-tête de message Microsoft** pour accéder à l’analyseur de connectivité à distance (Faites un clic droit et sélectionnez **Ouvrir dans un nouvel onglet** si vous ne souhaitez pas laisser Microsoft 365 accomplir cette tâche). Collez l’en-tête du message dans la section analyseur d’en-tête de message de la page, puis sélectionnez **Analyser les en-têtes** :
@@ -219,13 +223,13 @@ Lorsque vous avez terminé, cliquez sur **Fermer**.
 > [!NOTE]
 > Les procédures des fichiers mis en quarantaine dans cette section sont uniquement disponibles pour les abonnés plan 1 et plan 2.
 
-Dans les organisations avec ATP, les administrateurs peuvent gérer les fichiers mis en quarantaine dans SharePoint Online, OneDrive entreprise et Microsoft Teams.
+Dans les organisations avec ATP, les administrateurs peuvent gérer les fichiers mis en quarantaine dans SharePoint Online, OneDrive entreprise et Microsoft Teams. Pour activer la protection de ces fichiers, voir Activer la protection avancée contre les menaces [pour SharePoint, OneDrive et Microsoft teams](turn-on-atp-for-spo-odb-and-teams.md).
 
 ### <a name="view-quarantined-files"></a>Afficher les fichiers en quarantaine
 
 1. Dans le Centre de sécurité et conformité, accédez à **Gestion des menaces** \> **Examiner** \> **Quarantaine**.
 
-2. Modifier la **vue mise en quarantaine** sur les **fichiers**de valeurs par défaut. Vous pouvez effectuer un tri sur un champ en cliquant sur un en-tête de colonne disponible.
+2. Modifier la **vue mise en quarantaine** sur les **fichiers**de valeurs. Vous pouvez effectuer un tri sur un champ en cliquant sur un en-tête de colonne disponible.
 
 3. Vous pouvez trier les résultats en cliquant sur un en-tête de colonne disponible. Cliquez sur **Modifier les colonnes** pour afficher jusqu’à sept colonnes. Les colonnes par défaut sont marquées d’un astérisque ( <sup>\*</sup> ) :
 
@@ -248,6 +252,7 @@ Dans les organisations avec ATP, les administrateurs peuvent gérer les fichiers
      - Une plage date/heure personnalisée.
    - **Heure de réception**
    - **Raison**de la mise en quarantaine : la seule valeur disponible est **programme malveillant**.
+   - **Type de stratégie**
 
 Une fois que vous avez trouvé un fichier en quarantaine spécifique, sélectionnez le fichier pour en afficher les détails et effectuer une action (par exemple, afficher, publier, télécharger ou supprimer le message).
 
@@ -293,8 +298,6 @@ Lorsque vous sélectionnez plusieurs fichiers mis en quarantaine dans la liste (
 
 - **Fichiers de version**
 - **Supprimer des fichiers**: après avoir cliqué sur **Oui** dans le message d’avertissement qui s’affiche, les fichiers sont immédiatement supprimés.
-
-1. À l’aide d’un compte professionnel ou scolaire disposant de privilèges d’administrateur général (ou des rôles de centre de sécurité & conformité appropriés) dans votre organisation, connectez-vous et [accédez au centre de sécurité & conformité](../../compliance/go-to-the-securitycompliance-center.md).
 
 ## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-view-and-manage-quarantined-messages-and-files"></a>Utiliser Exchange Online PowerShell ou l’environnement de ligne de commande Exchange EOP PowerShell autonome pour afficher et gérer les messages et les fichiers mis en quarantaine
 
