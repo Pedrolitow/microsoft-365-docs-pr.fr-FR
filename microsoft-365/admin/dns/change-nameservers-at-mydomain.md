@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: c5f6140a-4a12-401b-9bbd-7dfb0d6b0ba3
 description: Découvrez comment configurer Microsoft pour gérer les enregistrements DNS de votre domaine personnalisé sur Mon_domaine.
-ms.openlocfilehash: d8fc61c3adbe8b5b865bd82b8c4e0944198921e7
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 44d36f872ddbeeba1948ee8a7a4db029895fcb8c
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400628"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646414"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-with-mydomain"></a>Modifier les serveurs de noms pour configurer Microsoft avec Mon_domaine
 
@@ -113,7 +113,7 @@ Pour terminer la configuration de votre domaine avec Microsoft, vous devez modif
 ### <a name="if-the-correct-nameservers-are-not-already-listed"></a>Si les serveurs de noms corrects ne sont PAS répertoriés
 
 > [!CAUTION]
-> Follow these steps only if you have existing nameservers other than the four correct nameservers. (Autrement dit, supprimez uniquement les serveurs de noms en cours qui *ne sont pas* nommés **NS1.BDM.microsoftonline.com**, **ns2.BDM.microsoftonline.com**, **NS3.BDM.microsoftonline.com**ou **NS4.BDM.microsoftonline.com**.) 
+> Follow these steps only if you have existing nameservers other than the four correct nameservers. (Autrement dit, supprimez uniquement les serveurs de noms en cours qui  *ne sont pas*  nommés **NS1.BDM.microsoftonline.com**, **ns2.BDM.microsoftonline.com**, **NS3.BDM.microsoftonline.com**ou **NS4.BDM.microsoftonline.com**.) 
   
 1. Supprimez les serveurs de noms existants en sélectionnant chaque entrée du champ **Nameserver : (Serveur de noms :)**, puis en appuyant sur la touche **Suppr** de votre clavier. 
     

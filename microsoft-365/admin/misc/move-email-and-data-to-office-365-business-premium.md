@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -22,16 +22,16 @@ search.appverid:
 ms.assetid: 1062115d-e312-482a-bb5a-765235990f41
 ROBOTS: NOINDEX
 description: Découvrez comment déplacer des données vers votre nouvelle identité d’entreprise.
-ms.openlocfilehash: ebbb680baf36386d7f2dafae61fb262bf0220e69
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 4f105e00ab6496a5d1d3edfc0e0f1abd4eced412
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780000"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645034"
 ---
 # <a name="move-email-and-data-to-microsoft-365-business-standard"></a>Déplacer le courrier électronique et les données vers Microsoft 365 Business standard
 
-Lorsque vous effectuez une mise à niveau vers Microsoft 365 Business standard, nous vous offrons une nouvelle *identité d’entreprise*. Vous recevez un nouveau compte de courrier ainsi qu'un compte OneDrive distinct pour vos données professionnelles. 
+Lorsque vous effectuez une mise à niveau vers Microsoft 365 Business standard, nous vous offrons une nouvelle  *identité d’entreprise*. Vous recevez un nouveau compte de courrier ainsi qu'un compte OneDrive distinct pour vos données professionnelles. 
   
 Si vous voulez déplacer certaines de vos données personnelles vers votre nouvelle identité de l'entreprise, suivez les instructions ci-dessous.
   

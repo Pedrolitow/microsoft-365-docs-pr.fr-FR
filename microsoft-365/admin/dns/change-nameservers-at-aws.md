@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0ddbe33c-81ea-4c02-8db9-e71d3810c0ec
 description: 'Découvrez comment configurer Microsoft pour gérer vos enregistrements DNS sur Amazon Web Services (AWS). '
-ms.openlocfilehash: 6efe06400652783ffbc6732b5c6327067c5c484c
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 9f5bfd54020dfb793bbaad9aa8e081e87abc5ce8
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400676"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646486"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-with-amazon-web-services-aws"></a>Modifier les serveurs de noms pour configurer Microsoft avec les services Web Amazon (AWS)
 
@@ -59,7 +59,7 @@ Avant que vous puissiez utiliser votre domaine avec Microsoft, nous devons véri
   
 |||||||
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|**Name** <br/> |**Type** <br/> |**Alias** <br/> |**TTL (Seconds) (Durée de vie (secondes))** <br/> |**Value (Valeur)** <br/> |**Routing Policy (Stratégie de routage)** <br/> |
+|**Name** <br/> |**Type (Type)** <br/> |**Alias** <br/> |**TTL (Seconds) (Durée de vie (secondes))** <br/> |**Value (Valeur)** <br/> |**Routing Policy (Stratégie de routage)** <br/> |
 |(Laissez ce champ vide)  <br/> |TXT - Text  <br/> |Non  <br/> |300  <br/> |MS=ms *XXXXXXXX* <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur spécifique d’**Adresse de destination ou de pointage** ici, à partir du tableau. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)  <br/>  |Simple <br/> |
    
 6. Sélectionnez **Créer**.
@@ -87,7 +87,7 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
 Pour terminer la configuration de votre domaine avec Microsoft, vous devez modifier les enregistrements de serveur de noms de votre domaine au niveau de votre bureau d’enregistrement de domaines afin de pointer vers les serveurs de noms principaux et secondaires Microsoft. Cela permet à Microsoft de mettre à jour les enregistrements DNS du domaine pour vous. Pour finaliser la configuration, nous ajouterons tous les enregistrements de façon à ce que vous puissiez utiliser la messagerie, Skype Entreprise Online et votre site web public avec votre domaine.
   
 > [!CAUTION]
-> Lorsque vous modifiez les enregistrements de serveur de noms de votre domaine pour qu’ils pointent vers les serveurs de noms Microsoft, tous les services actuellement associés à votre domaine sont affectés. Par exemple, tous les messages électroniques envoyés à votre domaine (par exemple, rob@ *your_domain* . com) débuteront à Microsoft après avoir effectué cette modification. 
+> Lorsque vous modifiez les enregistrements de serveur de noms de votre domaine pour qu’ils pointent vers les serveurs de noms Microsoft, tous les services actuellement associés à votre domaine sont affectés. Par exemple, tous les messages électroniques envoyés à votre domaine (par exemple, rob@ *your_domain*  . com) débuteront à Microsoft après avoir effectué cette modification. 
   
 > [!IMPORTANT]
 >  La procédure suivante montre comment supprimer tous les autres serveurs de noms indésirables de la liste, et également comment ajouter les serveurs de noms corrects s’ils ne sont pas déjà répertoriés. > lorsque vous avez effectué les étapes de cette section, les seuls serveurs de noms qui doivent être répertoriés sont les quatre suivants : > ns1.bdm.microsoftonline.com > ns2.bdm.microsoftonline.com > ns3.bdm.microsoftonline.com > ns4.bdm.microsoftonline.com 
@@ -105,7 +105,7 @@ Pour terminer la configuration de votre domaine avec Microsoft, vous devez modif
 5. Dans le jeu d'enregistrements **NS - Serveur de noms**, dans la zone **Valeur**, supprimez tous les serveurs de noms en les sélectionnant, puis en appuyant sur la touche **Suppr** du clavier. 
     
     > [!CAUTION]
-    > Follow these steps only if you have existing nameservers other than the four correct nameservers. (Autrement dit, supprimez uniquement les serveurs de noms en cours qui *ne sont pas* nommés **NS1.BDM.microsoftonline.com**, **ns2.BDM.microsoftonline.com**, **NS3.BDM.microsoftonline.com**ou **NS4.BDM.microsoftonline.com**.) 
+    > Follow these steps only if you have existing nameservers other than the four correct nameservers. (Autrement dit, supprimez uniquement les serveurs de noms en cours qui  *ne sont pas*  nommés **NS1.BDM.microsoftonline.com**, **ns2.BDM.microsoftonline.com**, **NS3.BDM.microsoftonline.com**ou **NS4.BDM.microsoftonline.com**.) 
   
     ![Select and delete all of the nameservers in the Value box](../../media/ecf1e897-fa7d-4abc-b00b-bf55b8ed2139.png)
   
@@ -120,8 +120,8 @@ Pour terminer la configuration de votre domaine avec Microsoft, vous devez modif
   
 |||
 |:-----|:-----|
-|**Première ligne** <br/> |ns1.bdm.microsoftonline.com.  <br/> **This value MUST end with a period (.)** <br/> |
-|**Deuxième ligne** <br/> |ns2.bdm.microsoftonline.com.  <br/> **This value MUST end with a period (.)** <br/> |
+|**Première ligne** <br/> |ns1.bdm.microsoftonline.com.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |
+|**Deuxième ligne** <br/> |ns2.bdm.microsoftonline.com.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |
 |**Troisième ligne** <br/> |ns3.bdm.microsoftonline.com.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |
 |**Quatrième ligne** <br/> |ns4.bdm.microsoftonline.com.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |
    

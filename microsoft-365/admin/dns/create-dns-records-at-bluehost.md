@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 657934ff-d9d2-4563-9ccf-ef4832a03a99
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur Bluehost pour Microsoft.
-ms.openlocfilehash: c0db0a00b48e6a460b8e21c95b8d8852914ab87b
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: c0ba1b876c939632bc6c43a6e0004fbbe23a7723
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307042"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646234"
 ---
 # <a name="create-dns-records-at-bluehost-for-microsoft"></a>Créer des enregistrements DNS sur Bluehost pour Microsoft
 
@@ -53,7 +53,7 @@ Avant que vous puissiez utiliser votre domaine avec Microsoft, nous devons véri
     
     (Vous devrez peut-être faire défiler la page vers le bas.)
     
-3. Dans la zone ***domain_name*** , sur la ligne **éditeur de zone DNS** , sélectionnez **gérer les enregistrements DNS**.
+3. Dans la **zone _domain_name_*_, sur la*ligne éditeur de zone DNS** , sélectionnez **gérer les enregistrements DNS**.
     
 4. On the **DNS Zone Editor** page, in the **Add DNS Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -93,7 +93,7 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     
     (Vous devrez peut-être faire défiler la page vers le bas.)
     
-3. Dans la zone ***domain_name*** , sur la ligne **éditeur de zone DNS** , sélectionnez **gérer les enregistrements DNS**.
+3. Dans la **zone _domain_name_*_, sur la*ligne éditeur de zone DNS** , sélectionnez **gérer les enregistrements DNS**.
     
 4. On the **DNS Zone Editor** page, in the **Add DNS Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -101,7 +101,7 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     
     |**Host Record**|**TTL (Durée de vie)**|**Type (Type)**|**Points to (Destination)**|**Priority (Priorité)**|
     |:-----|:-----|:-----|:-----|:-----|
-    |@  <br/> |14400  <br/> |MX  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/>**Remarque :** Obtenez votre \<*domain-key*\> depuis votre compte Microsoft. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |0  <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |
+    |@  <br/> |14400  <br/> |MX  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/>**Remarque :** Obtenez votre \<*domain-key*\> à partir de votre compte Microsoft. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |0  <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |
    
    ![Choisissez type dans la liste déroulante.](../../media/70791420-d83c-4a5d-a46c-5cc3bc67f565.png)
   
@@ -130,7 +130,7 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     
     (Vous devrez peut-être faire défiler la page vers le bas.)
     
-3. Dans la zone ***domain_name*** , sur la ligne **éditeur de zone DNS** , sélectionnez **gérer les enregistrements DNS**.
+3. Dans la **zone _domain_name_*_, sur la*ligne éditeur de zone DNS** , sélectionnez **gérer les enregistrements DNS**.
     
 4. Dans la section **A (hôte)** , recherchez la ligne de l’enregistrement de **découverte automatique** , puis sélectionnez **supprimer** pour cette ligne. 
     
@@ -181,7 +181,7 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     
     (Vous devrez peut-être faire défiler la page vers le bas.)
     
-3. Dans la zone ***domain_name*** , sur la ligne **éditeur de zone DNS** , sélectionnez **gérer les enregistrements DNS**.
+3. Dans la **zone _domain_name_*_, sur la*ligne éditeur de zone DNS** , sélectionnez **gérer les enregistrements DNS**.
     
 4. On the **DNS Zone Editor** page, in the **Add DNS Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -206,7 +206,7 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     
     (Vous devrez peut-être faire défiler la page vers le bas.)
     
-3. Dans la zone ***domain_name*** , sur la ligne **éditeur de zone DNS** , sélectionnez **gérer les enregistrements DNS**.
+3. Dans la **zone _domain_name_*_, sur la*ligne éditeur de zone DNS** , sélectionnez **gérer les enregistrements DNS**.
     
 4. Créez le premier des deux enregistrements SRV.
     
@@ -216,8 +216,8 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     
     |**Service**|**Protocol (Protocole)**|**Host (Hôte)**|**TTL (Durée de vie)**|**Type (Type)**|**Priority (Priorité)**|**Weight (Poids)**|**Port (Port)**|**Points to (Destination)**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |_tls  <br/> |@  <br/> |14400  <br/> |SRV  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |_sipfederationtls  <br/> |_tcp  <br/> |@  <br/> |14400  <br/> |SRV  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |_sip  <br/> |_tls  <br/> |@  <br/> |14400  <br/> |SRV  <br/> |100  <br/> |0,1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |_sipfederationtls  <br/> |_tcp  <br/> |@  <br/> |14400  <br/> |SRV  <br/> |100  <br/> |0,1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
    
     ![Copier la valeur du nouvel enregistrement](../../media/e2911bca-c00b-4b8a-837f-f1d438c474c4.png)
   

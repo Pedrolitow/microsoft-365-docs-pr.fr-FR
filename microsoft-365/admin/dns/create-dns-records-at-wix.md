@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7173c635-58b3-400f-95e0-97abe915565e
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services chez WiX pour Microsoft.
-ms.openlocfilehash: fcc0f8e8187e22dde68149e0f2a80073312bff7f
-ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
+ms.openlocfilehash: ee236a9178092bb8fd14a9615c2ac5911b1ecc87
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46814443"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645658"
 ---
 # <a name="create-dns-records-at-wix-for-microsoft"></a>Créer des enregistrements DNS auprès de WiX pour Microsoft
 

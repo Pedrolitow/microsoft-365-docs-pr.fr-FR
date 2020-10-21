@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1dc55f9f-5309-450f-acc3-b2b4119c8be3
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur les solutions réseau pour Microsoft.
-ms.openlocfilehash: 25e85bf30527b49ada711af9ba5c418409acd24c
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: f488ad3511c9901eae70691f616dcff52036c71d
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780336"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645946"
 ---
 # <a name="create-dns-records-at-network-solutions-for-microsoft"></a>Créer des enregistrements DNS sur les solutions réseau pour Microsoft
 
@@ -80,7 +80,7 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
   
 4. Sélectionnez **gérer les enregistrements DNS avancés**.
     
-    (You may have to scroll down.)
+    (Vous devrez peut-être faire défiler la page vers le bas.)
     
     ![Sélectionnez gérer les enregistrements DNS avancés](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
@@ -149,7 +149,7 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
   
 4. Sélectionnez **gérer les enregistrements DNS avancés**.
     
-    (You may have to scroll down.)
+    (Vous devrez peut-être faire défiler la page vers le bas.)
     
     ![Sélectionnez gérer les enregistrements DNS avancés](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
@@ -161,7 +161,7 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
     
     |**Priorité**|**TTL**|**Mail Server (Serveur de courrier)**|
     |:-----|:-----|:-----|
-    |10   <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |3600  <br/> | *\<domain-key\>*. mail.protection.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> **Remarque :** Obtenir votre *\<domain-key\>* à partir de votre compte Microsoft. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |
+    |10   <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |3600  <br/> | *\<domain-key\>*  . mail.protection.outlook.com.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> **Remarque :** Obtenir votre  *\<domain-key\>*  à partir de votre compte Microsoft. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |
        
     ![Tapez ou collez des valeurs dans les zones du nouvel enregistrement.](../../media/0bb96872-cc6e-4dfa-a649-fb7efbbf0012.png)
   
@@ -207,7 +207,7 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
   
 4. Sélectionnez **gérer les enregistrements DNS avancés**.
     
-    (You may have to scroll down.)
+    (Vous devrez peut-être faire défiler la page vers le bas.)
     
     ![Sélectionnez gérer les enregistrements DNS avancés](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
@@ -219,11 +219,11 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
     
     |**Alias (Alias)**|**TTL (Durée de vie)**|**Refers to Host Name (Fait référence au nom d'hôte)**|**Other Host (Autre hôte)          (sélectionnez la case d'option **Other Host (Autre hôte)**)**|
     |:-----|:-----|:-----|:-----|
-    |autodiscover  <br/> |3600  <br/> |(Aucun paramètre)  <br/> |autodiscover.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> |
+    |autodiscover  <br/> |3600  <br/> |(Aucun paramètre)  <br/> |autodiscover.outlook.com.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |
     |sip  <br/> |3600  <br/> |(Aucun paramètre)  <br/> |sipdir.online.lync.com.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |
-    |lyncdiscover  <br/> |3600  <br/> |(Aucun paramètre)  <br/> |webdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |
+    |lyncdiscover  <br/> |3600  <br/> |(Aucun paramètre)  <br/> |webdir.online.lync.com.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |
     |enterpriseregistration  <br/> |3600  <br/> |(Aucun paramètre)  <br/> |enterpriseregistration.windows.net  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |
-    |enterpriseenrollment  <br/> |3600  <br/> |(Aucun paramètre)  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> **This value MUST end with a period (.)** <br/> |
+    |enterpriseenrollment  <br/> |3600  <br/> |(Aucun paramètre)  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |
     
     ![Taper ou coller des valeurs pour les nouveaux enregistrements](../../media/5ce0b30c-b46c-4778-aa5a-fb5e2f0961c1.png)
   
@@ -235,11 +235,11 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
     
     ![Sélectionnez Enregistrer les modifications.](../../media/f005c38a-0d8d-4c61-bec6-15e60c89aa5a.png)
   
-## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajouter un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
+## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajoutez un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. Si vous avez déjà un enregistrement SPF pour votre domaine, il n’est pas nécessaire d’en créer un nouveau pour Microsoft. Ajoutez plutôt les valeurs Microsoft requises à l’enregistrement actuel afin de disposer d’un *seul* enregistrement SPF qui inclut les deux ensembles de valeurs. 
+> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. Si vous avez déjà un enregistrement SPF pour votre domaine, il n’est pas nécessaire d’en créer un nouveau pour Microsoft. Ajoutez plutôt les valeurs Microsoft requises à l’enregistrement actuel afin de disposer d’un  *seul*  enregistrement SPF qui inclut les deux ensembles de valeurs. 
   
 Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lecture à 5:35)](https://support.microsoft.com/office/c49698c2-6991-47fb-b5ac-18e49a505099).
   
@@ -260,7 +260,7 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
   
 4. Sélectionnez **gérer les enregistrements DNS avancés**.
     
-    (You may have to scroll down.)
+    (Vous devrez peut-être faire défiler la page vers le bas.)
     
     ![Sélectionnez gérer les enregistrements DNS avancés](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
@@ -306,7 +306,7 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
   
 4. Sélectionnez **gérer les enregistrements DNS avancés**.
     
-    (You may have to scroll down.)
+    (Vous devrez peut-être faire défiler la page vers le bas.)
     
     ![Sélectionnez gérer les enregistrements DNS avancés](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
@@ -320,8 +320,8 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
     
     |**Service (Service)**|**Protocol (Protocole)**|**TTL (Durée de vie)**|**Priority (Priorité)**|**Weight (Poids)**|**Port (Port)**|**Target (Cible)**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |_tls  <br/> |3600  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |
-    |_sipfederationtls  <br/> |_tcp  <br/> |3600  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |
+    |_sip  <br/> |_tls  <br/> |3600  <br/> |100  <br/> |0,1  <br/> |443  <br/> |sipdir.online.lync.com.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |
+    |_sipfederationtls  <br/> |_tcp  <br/> |3600  <br/> |100  <br/> |0,1  <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |
        
     ![Taper ou coller des valeurs pour les nouveaux enregistrements](../../media/86968d1c-8e43-4e61-aeaa-37fc7d7ef7a7.png)
   

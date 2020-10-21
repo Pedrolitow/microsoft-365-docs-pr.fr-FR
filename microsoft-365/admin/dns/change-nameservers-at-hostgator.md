@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: f3bd3c62-0477-48e4-b2b5-21e329d67985
 description: Découvrez comment configurer Microsoft pour gérer les enregistrements DNS de votre domaine personnalisé sur Hostgator.
-ms.openlocfilehash: 787fe5f5e768d9d93cfca9d1644037142822216e
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 02052e98ba92c970a1e8bcc89c73df6946a6c472
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400640"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646438"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-hostgator"></a>Modifier les serveurs de noms pour configurer Microsoft 365 avec Hostgator
 
@@ -85,7 +85,7 @@ Avant que vous puissiez utiliser votre domaine avec Microsoft, nous devons véri
   
 2. Sur la page **panneau de configuration** , dans la zone **domaines** , sélectionnez **éditeur de zone DNS avancée**.
     
-    (You may have to scroll down.) 
+    (Vous devrez peut-être faire défiler la page vers le bas.) 
     
 3. On the **Advanced DNS Zone Editor** page, in the **Add a Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -93,8 +93,8 @@ Avant que vous puissiez utiliser votre domaine avec Microsoft, nous devons véri
     
 |||||
 |:-----|:-----|:-----|:-----|
-|**Name (Nom)** <br/> |**TTL (Durée de vie)** <br/> |**Type (Type)** <br/> |**TXT Data (Données TXT)** <br/> |
-|Utilisez votre  *nom_de_domaine*  (par exemple, fourthcoffee.com).<br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |1   <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur spécifique d’**Adresse de destination ou de pointage** ici, à partir du tableau. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)     <br/>  |
+|**Name** <br/> |**TTL (Durée de vie)** <br/> |**Type (Type)** <br/> |**TXT Data (Données TXT)** <br/> |
+|Utilisez votre  *nom_de_domaine*  (par exemple, fourthcoffee.com).<br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |0,1  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur spécifique d’**Adresse de destination ou de pointage** ici, à partir du tableau. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)     <br/>  |
    
 4. Sélectionnez **Ajouter un enregistrement**.
     
@@ -121,10 +121,10 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
 Pour terminer la configuration de votre domaine avec Microsoft, vous devez modifier les enregistrements de serveur de noms de votre domaine au niveau de votre bureau d’enregistrement de domaines afin de pointer vers les serveurs de noms principaux et secondaires Microsoft. Cela permet à Microsoft de mettre à jour les enregistrements DNS du domaine pour vous. Pour finaliser la configuration, nous ajouterons tous les enregistrements de façon à ce que vous puissiez utiliser la messagerie, Skype Entreprise Online et votre site web public avec votre domaine.
   
 > [!CAUTION]
-> Lorsque vous modifiez les enregistrements de serveur de noms de votre domaine pour qu’ils pointent vers les serveurs de noms Microsoft, tous les services actuellement associés à votre domaine sont affectés. Par exemple, tous les messages électroniques envoyés à votre domaine (par exemple, rob@ *your_domain* . com) débuteront à Microsoft après avoir effectué cette modification.
+> Lorsque vous modifiez les enregistrements de serveur de noms de votre domaine pour qu’ils pointent vers les serveurs de noms Microsoft, tous les services actuellement associés à votre domaine sont affectés. Par exemple, tous les messages électroniques envoyés à votre domaine (par exemple, rob@ *your_domain*  . com) débuteront à Microsoft après avoir effectué cette modification.
   
 > [!IMPORTANT]
-> La procédure suivante montre comment supprimer tous les autres serveurs de noms indésirables de la liste, et également comment ajouter les serveurs de noms corrects s’ils ne sont pas déjà répertoriés. Une fois que vous avez effectué les étapes de cette section, les seuls serveurs de noms qui doivent être répertoriés sont les quatre suivants : **NS1.BDM.microsoftonline.com**, **ns2.BDM.microsoftonline.com**, **NS3.BDM.microsoftonline.com**et **NS4.BDM.microsoftonline.com**.
+> La procédure suivante montre comment supprimer tous les autres serveurs de noms indésirables de la liste, et également comment ajouter les serveurs de noms corrects s’ils ne sont pas déjà répertoriés. Une fois que vous avez effectué les étapes de cette section, les seuls serveurs de noms qui doivent être répertoriés sont les quatre suivants :  **NS1.BDM.microsoftonline.com**, **ns2.BDM.microsoftonline.com**, **NS3.BDM.microsoftonline.com**et **NS4.BDM.microsoftonline.com**.
   
 1. Pour commencer, accédez à votre page du portail clients sur le site Hostgator en utilisant [ce lien](https://portal.hostgator.com/domain/manage). Vous serez invité à vous connecter.
     
@@ -150,7 +150,7 @@ Pour terminer la configuration de votre domaine avec Microsoft, vous devez modif
     
     ![Hostgator-BP-Redelegate-1-5](../../media/5b73ae32-f26e-48aa-b5ad-6da20f1c491a.png)
   
-7.   **Attention**: suivez ces étapes uniquement si vous avez des serveurs de noms existants autres que les quatre serveurs de noms corrects. (Autrement dit, supprimez uniquement les serveurs de noms en cours qui *ne sont pas* nommés **NS1.BDM.microsoftonline.com**, **ns2.BDM.microsoftonline.com**, **NS3.BDM.microsoftonline.com**ou **NS4.BDM.microsoftonline.com**.)
+7.   **Attention**: suivez ces étapes uniquement si vous avez des serveurs de noms existants autres que les quatre serveurs de noms corrects. (Autrement dit, supprimez uniquement les serveurs de noms en cours qui  *ne sont pas*  nommés **NS1.BDM.microsoftonline.com**, **ns2.BDM.microsoftonline.com**, **NS3.BDM.microsoftonline.com**ou **NS4.BDM.microsoftonline.com**.)
   
         Toujours sur la page **Name Servers (Serveurs de noms)** pour votre domaine, dans la liste des serveurs de noms, supprimez les serveurs de noms individuellement dans la liste en les sélectionnant un par un et en appuyant sur la touche **Suppr** du clavier. 
     

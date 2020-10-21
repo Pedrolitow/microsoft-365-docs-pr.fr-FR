@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: 446babfe-2e08-4cc2-bbfb-c05b854933ac
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur easyDNS pour Microsoft.
-ms.openlocfilehash: 24f477d240af936975141c53d382e114a24c0ac5
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 4909a02ec56fc9720a2636e822da0339e89bccf8
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400231"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645550"
 ---
 # <a name="create-dns-records-at-easydns-for-microsoft"></a>Créer des enregistrements DNS sur easyDNS pour Microsoft
 
-[Consultez le Forum aux questions sur les domaines](../setup/domains-faq.md) si vous ne trouvez pas ce que vous recherchez. 
+[Consultez le Forum aux questions sur les domaines ](../setup/domains-faq.md) si vous ne trouvez pas ce que vous recherchez. 
   
 Vous devrez ajouter tous les enregistrements DNS suivants sur le site Web de votre registraire pour acheminer le courrier vers Microsoft, utiliser votre domaine pour teams et Skype entreprise, et ainsi de suite.
   
@@ -45,7 +45,7 @@ Remarque : les enregistrements SRV ne sont actuellement pas disponibles dans to
     
 4. Entrez les enregistrements suivants dans les champs de texte :
     
-    |**Hôte**|**Text**|
+    |**Host**|**Text**|
     |:-----|:-----|
     |@  <br/> |MS = msXXXXXXXX (utilisez la valeur fournie dans la page domaines du centre d’administration)  <br/> |
    
@@ -108,7 +108,7 @@ Remarque : les enregistrements SRV ne sont actuellement pas disponibles dans to
     
 6. Vérifiez que l’enregistrement est correct, puis sélectionnez **confirmer**. 
     
-## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajouter un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
+## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajoutez un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
 
 1. Accédez à [https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/) et connectez-vous avec vos informations d’identification. 
     
@@ -118,7 +118,7 @@ Remarque : les enregistrements SRV ne sont actuellement pas disponibles dans to
     
 4. Entrez les enregistrements suivants dans les champs de texte :
     
-    |**Hôte**|**Text**|
+    |**Host**|**Text**|
     |:-----|:-----|
     |@  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> |
    
@@ -140,8 +140,8 @@ Remarque : les enregistrements SRV ne sont actuellement pas disponibles dans ea
     
     |**SERVICE**|**DEST**|**HOST (HÔTE)**|**PRI**|**WGT**|**PORT**|**CIBLE (doit se terminer par un « . »)**|**TTL (Durée de vie)**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |TLS  <br/> |@  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com.  <br/> |1800  <br/> |
-    |_sipfederationtls  <br/> |TCP  <br/> |@  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> |1800  <br/> |
+    |_sip  <br/> |TLS  <br/> |@  <br/> |100  <br/> |0,1  <br/> |443  <br/> |sipdir.online.lync.com.  <br/> |1800  <br/> |
+    |_sipfederationtls  <br/> |TCP  <br/> |@  <br/> |100  <br/> |0,1  <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> |1800  <br/> |
    
 5. Sélectionnez **suivant**. 
     

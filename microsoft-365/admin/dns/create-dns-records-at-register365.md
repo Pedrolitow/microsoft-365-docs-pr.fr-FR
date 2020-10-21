@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 004030b4-10ad-4026-96e7-011b6afc7e73
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur Register365 pour Microsoft.
-ms.openlocfilehash: e580779ce674375564c1b3ab6123ef1b19f50be0
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: a4c66a4c16960332150a51779207defb00df3044
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400315"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645766"
 ---
 # <a name="create-dns-records-at-register365-for-microsoft"></a>Créer des enregistrements DNS sur Register365 pour Microsoft
 
@@ -65,19 +65,19 @@ Avant que vous puissiez utiliser votre domaine avec Microsoft, nous devons véri
   
 2. Sur la page **Dashboard (Tableau de bord)**, recherchez le nom du domaine à mettre à jour, puis sélectionnez **DNS Settings (Paramètres DNS)** dans la liste déroulante. 
     
-    (You may have to scroll down.)
+    (Vous devrez peut-être faire défiler la page vers le bas.)
     
     ![Sélection des paramètres DNS dans la liste](../../media/57944802-3f6b-49bb-971a-b1d20936cba3.png)
   
 3. On the **Add/Modify DNS Zone** page, in the **A, CNAME, AAAA, TXT and NS records** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
-    (Choose the **Type** value from the drop-down list.) 
+    (Choisissez la valeur **Type (Type)** dans la liste déroulante.) 
     
     (Si vous avez besoin d’ajouter une ligne, sélectionnez **Ajouter des enregistrements a/CNAME (+)**.)
     
-    (You may have to scroll down.)
+    (Vous devrez peut-être faire défiler la page vers le bas.)
     
-    |**Host name (Nom d'hôte)**|**Type (Type)**|**Résultat**|
+    |**Host name (Nom d'hôte)**|**Type (Type)**|**Result (Résultat)**|
     |:-----|:-----|:-----|
     |(Leave this field empty.)  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur spécifique d’**Adresse de destination ou de pointage** ici, à partir du tableau.           [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |
    
@@ -85,9 +85,9 @@ Avant que vous puissiez utiliser votre domaine avec Microsoft, nous devons véri
   
 4. Sélectionnez **Enregistrer**.
     
-    (You may have to scroll down.)
+    (Vous devrez peut-être faire défiler la page vers le bas.)
     
-    ![Sélectionnez Enregistrer.](../../media/157cfb98-d5d0-48a3-8dd1-c4e759c2f8a8.png)
+    ![Sélectionnez Enregistrer](../../media/157cfb98-d5d0-48a3-8dd1-c4e759c2f8a8.png)
   
 5. Patientez quelques minutes, le temps que l'enregistrement que vous venez de créer soit mis à jour sur Internet.
     
@@ -121,25 +121,25 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
   
 2. Sur la page **Dashboard (Tableau de bord)**, recherchez le nom du domaine à mettre à jour, puis sélectionnez **DNS Settings (Paramètres DNS)** dans la liste déroulante. 
     
-    (You may have to scroll down.)
+    (Vous devrez peut-être faire défiler la page vers le bas.)
     
     ![Sélection des paramètres DNS dans la liste](../../media/57944802-3f6b-49bb-971a-b1d20936cba3.png)
   
 3. Dans la page **Add/Modify DNS Zone (Ajouter/modifier la zone DNS)**, dans la section **Mail exchange records (Enregistrements MX)**, dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs du tableau suivant. 
     
-    (You may have to scroll down.)
+    (Vous devrez peut-être faire défiler la page vers le bas.)
     
-    |**Host name (Nom d'hôte)**|**Priority (Priorité)**|**Résultat**|
+    |**Host name (Nom d'hôte)**|**Priority (Priorité)**|**Result (Résultat)**|
     |:-----|:-----|:-----|
-    |(Laissez ce champ vide.)  <br/> |1   <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> | *\<domain-key\>*. mail.protection.outlook.com  <br/> **Remarque :** Obtenir votre *\<domain-key\>* à partir de votre compte Microsoft.  [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)     |
+    |(Laissez ce champ vide.)  <br/> |0,1  <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Remarque :** Obtenir votre  *\<domain-key\>*  à partir de votre compte Microsoft.  [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)     |
    
     ![Entrée de valeurs dans la page Add/Modify DNS zone (ajouter/modifier la zone DNS)](../../media/2d3645a8-9cb8-435e-b895-5535b6b1fffd.png)
   
 4. Sélectionnez **Enregistrer**.
     
-    (You may have to scroll down.)
+    (Vous devrez peut-être faire défiler la page vers le bas.)
     
-    ![Sélectionnez Enregistrer.](../../media/0e565fb0-a126-4a48-8ff7-2c2d79d4af32.png)
+    ![Sélectionnez Enregistrer](../../media/0e565fb0-a126-4a48-8ff7-2c2d79d4af32.png)
   
 5. Si d'autres enregistrements MX sont répertoriés dans la section **Mail exchange records (Enregistrements MX)**, supprimez-les en les sélectionnant et en appuyant sur la touche **Suppr** de votre clavier. 
     
@@ -147,9 +147,9 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
   
 6. Sélectionnez **Enregistrer**.
     
-    (You may have to scroll down.)
+    (Vous devrez peut-être faire défiler la page vers le bas.)
     
-    ![Sélectionnez Enregistrer.](../../media/1fb69bb5-b5df-4060-adf1-eb26cfaa6c4f.png)
+    ![Sélectionnez Enregistrer](../../media/1fb69bb5-b5df-4060-adf1-eb26cfaa6c4f.png)
   
 ## <a name="add-the-six-cname-records-that-are-required-for-microsoft"></a>Ajouter les six enregistrements CNAMe requis pour Microsoft
 <a name="BKMK_add_CNAME"> </a>
@@ -160,13 +160,13 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
   
 2. Sur la page **Dashboard (Tableau de bord)**, recherchez le nom du domaine à mettre à jour, puis sélectionnez **DNS Settings (Paramètres DNS)** dans la liste déroulante. 
     
-    (You may have to scroll down.)
+    (Vous devrez peut-être faire défiler la page vers le bas.)
     
     ![Sélection des paramètres DNS dans la liste](../../media/57944802-3f6b-49bb-971a-b1d20936cba3.png)
   
 3. Dans la page **Add/Modify DNS Zone (Ajouter/modifier la zone DNS)**, dans la section **A, CNAME, AAAA, TXT and NS records (Enregistrements A, CNAME, AAAA, TXT et NS)**, dans les zones des nouveaux enregistrements, tapez ou copiez-collez les valeurs du tableau suivant. 
     
-    (Choose the **Type** value from the drop-down list.) 
+    (Choisissez la valeur **Type (Type)** dans la liste déroulante.) 
     
     (Si vous avez besoin d’ajouter une ligne, sélectionnez **Ajouter des enregistrements a/CNAME (+)**.)
     
@@ -184,13 +184,13 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
   
 4. Sélectionnez **Enregistrer**.
     
-    ![Sélectionnez Enregistrer.](../../media/8ded6428-af97-4fd8-9104-477fa22a5586.png)
+    ![Sélectionnez Enregistrer](../../media/8ded6428-af97-4fd8-9104-477fa22a5586.png)
   
-## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajouter un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
+## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajoutez un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. Si vous avez déjà un enregistrement SPF pour votre domaine, il n’est pas nécessaire d’en créer un nouveau pour Microsoft. Ajoutez plutôt les valeurs Microsoft requises à l’enregistrement actuel afin de disposer d’un *seul* enregistrement SPF qui inclut les deux ensembles de valeurs. 
+> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. Si vous avez déjà un enregistrement SPF pour votre domaine, il n’est pas nécessaire d’en créer un nouveau pour Microsoft. Ajoutez plutôt les valeurs Microsoft requises à l’enregistrement actuel afin de disposer d’un  *seul*  enregistrement SPF qui inclut les deux ensembles de valeurs. 
   
 1. Pour commencer, accédez à la page de vos domaines sur le site Register365 en utilisant [ce lien](https://admin.register365.com/dns/). Avant toute chose, vous serez invité à vous connecter.
     
@@ -198,19 +198,19 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
   
 2. Sur la page **Dashboard (Tableau de bord)**, recherchez le nom du domaine à mettre à jour, puis sélectionnez **DNS Settings (Paramètres DNS)** dans la liste déroulante. 
     
-    (You may have to scroll down.)
+    (Vous devrez peut-être faire défiler la page vers le bas.)
     
     ![Sélection des paramètres DNS dans la liste](../../media/57944802-3f6b-49bb-971a-b1d20936cba3.png)
   
 3. On the **Add/Modify DNS Zone** page, in the **A, CNAME, AAAA, TXT and NS records** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
-    (Choose the **Type** value from the drop-down list.) 
+    (Choisissez la valeur **Type (Type)** dans la liste déroulante.) 
     
     (Si vous avez besoin d’ajouter une ligne, sélectionnez **Ajouter des enregistrements a/CNAME (+)**.)
     
-    (You may have to scroll down.)
+    (Vous devrez peut-être faire défiler la page vers le bas.)
     
-    |**Host name (Nom d'hôte)**|**Type (Type)**|**Résultat**|
+    |**Host name (Nom d'hôte)**|**Type (Type)**|**Result (Résultat)**|
     |:-----|:-----|:-----|
     |(Leave this field empty.)  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/>**Remarque :** nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte.           |
    
@@ -218,9 +218,9 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
   
 4. Sélectionnez **Enregistrer**.
     
-    (You may have to scroll down.)
+    (Vous devrez peut-être faire défiler la page vers le bas.)
     
-    ![Sélectionnez Enregistrer.](../../media/1d8da122-4861-4ca3-bc9b-d01f18557d4c.png)
+    ![Sélectionnez Enregistrer](../../media/1d8da122-4861-4ca3-bc9b-d01f18557d4c.png)
   
 ## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Ajoutez les deux enregistrements SRV requis pour Microsoft
 <a name="BKMK_add_SRV"> </a>
@@ -231,7 +231,7 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
   
 2. Sur la page **Dashboard (Tableau de bord)**, recherchez le nom du domaine à mettre à jour, puis sélectionnez **DNS Settings (Paramètres DNS)** dans la liste déroulante. 
     
-    (You may have to scroll down.)
+    (Vous devrez peut-être faire défiler la page vers le bas.)
     
     ![Sélection des paramètres DNS dans la liste](../../media/57944802-3f6b-49bb-971a-b1d20936cba3.png)
   
@@ -241,16 +241,16 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     
     |**Name (Nom)**|**Priority (Priorité)**|**Weight (Poids)**|**Port (Port)**|**Result (Résultat)**|
     |:-----|:-----|:-----|:-----|:-----|
-    |_sip. _tls  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |_sipfederationtls. _tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |_sip._tls  <br/> |100  <br/> |0,1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |_sipfederationtls._tcp  <br/> |100  <br/> |0,1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
    
     ![Entrée de valeurs dans la section des enregistrements de service](../../media/56bb1813-90e2-40c8-98bf-750e2dc3f8b6.png)
   
 4. Sélectionnez **Enregistrer**.
     
-    (You may have to scroll down.)
+    (Vous devrez peut-être faire défiler la page vers le bas.)
     
-    ![Sélectionnez Enregistrer.](../../media/3b80757c-01e1-492d-b2ce-f721d71f7235.png)
+    ![Sélectionnez Enregistrer](../../media/3b80757c-01e1-492d-b2ce-f721d71f7235.png)
   
 > [!NOTE]
 >  L'application des enregistrements DNS modifiés prend généralement 15 minutes. Il peut toutefois arriver que la répercussion d'une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des problèmes avec le flux de messages ou d'autres problèmes suite à l'ajout des enregistrements DNS, voir [Résolution des problèmes suite à la modification de votre nom de domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md). 

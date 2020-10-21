@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 31efc571-c8b9-46fb-b42d-203c2fb25289
 description: Découvrez comment configurer Office 365 géré par 21Vianet pour gérer vos enregistrements DNS, quand 1&1 Internet est le fournisseur d’hébergement DNS.
-ms.openlocfilehash: 79870d534e7d825fd59dbbbec54c796227f5faf1
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 8a783be20d2f8dbdb26e9826018f911289b35235
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780372"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646558"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-11-ionos"></a>Modifier les serveurs de noms pour configurer Microsoft 365 avec 1&1 IONOS
 
@@ -56,7 +56,7 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
     
 5. Dans la section **txt and SRV Records (enregistrements TXT** ), sélectionnez **Add record (ajouter un enregistrement**).
     
-    (You may have to scroll down.) 
+    (Vous devrez peut-être faire défiler la page vers le bas.) 
     
 6. In the **Add Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -92,7 +92,7 @@ Lorsque Microsoft 365 trouve l’enregistrement TXT approprié, votre domaine e
 Pour terminer la configuration de votre domaine avec Microsoft 365, vous devez modifier les enregistrements de serveur de noms de votre domaine au niveau de votre bureau d’enregistrement de domaines afin de pointer vers les serveurs de noms principaux et secondaires Microsoft 365. Cela permet de configurer Microsoft 365 afin de mettre à jour les enregistrements DNS du domaine pour vous. Pour finaliser la configuration, nous ajouterons tous les enregistrements de façon à ce que vous puissiez utiliser la messagerie, Skype Entreprise Online et votre site web public avec votre domaine.
   
 > [!CAUTION]
-> Lorsque vous modifiez les enregistrements de serveur de noms de votre domaine pour qu’ils pointent vers les serveurs de noms Microsoft 365, tous les services actuellement associés à votre domaine sont affectés. Par exemple, tous les messages électroniques envoyés à votre domaine (par exemple, rob@ *your_domain* . com) débuteront à Microsoft 365 une fois cette modification apportée. 
+> Lorsque vous modifiez les enregistrements de serveur de noms de votre domaine pour qu’ils pointent vers les serveurs de noms Microsoft 365, tous les services actuellement associés à votre domaine sont affectés. Par exemple, tous les messages électroniques envoyés à votre domaine (par exemple, rob@ *your_domain*  . com) débuteront à Microsoft 365 une fois cette modification apportée. 
   
 Vous êtes prêt à modifier vos enregistrements NS de sorte que Microsoft 365 puisse configurer votre domaine ? Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lecture à 2:47)](https://support.microsoft.com/office/0ef1b3b5-d27a-4004-8ca1-fbe0453a0ea3).
   

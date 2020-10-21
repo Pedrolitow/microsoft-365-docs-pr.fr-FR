@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9ddcc2fc-9433-4335-8192-6ffb1f541087
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur name.com pour Microsoft.
-ms.openlocfilehash: 646f486e73705f4b1e1bab63866fc7601d34cf92
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: ce465e06b3bc18c824d741ee4cba4b9f4f410d90
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400399"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645886"
 ---
 # <a name="create-dns-records-at-namecom-for-microsoft"></a>Créer des enregistrements DNS sur name.com pour Microsoft
 
@@ -62,12 +62,12 @@ Avant que vous puissiez utiliser votre domaine avec Microsoft, nous devons véri
   
 4. Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs du tableau suivant.
     
-    (Choose the **Type** value from the drop-down list.) 
+    (Choisissez la valeur **Type (Type)** dans la liste déroulante.) 
     
     |||||
     |:-----|:-----|:-----|:-----|
-    |**Type (Type)** <br/> |**Host (Hôte)** <br/> |**Answer (Réponse)** <br/> |**TTL** <br/> |
-    |TXT  <br/> |(Leave this field empty.)  <br/> |MS=ms *XXXXXXXX*  <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur spécifique d’**Adresse de destination ou de pointage** ici, à partir du tableau.           [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |Use the default value (300).  <br/> |
+    |**Type** <br/> |**Host (Hôte)** <br/> |**Answer (Réponse)** <br/> |**TTL** <br/> |
+    |TXT  <br/> |(Leave this field empty.)  <br/> |MS=ms *XXXXXXXX*  <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur spécifique d’**Adresse de destination ou de pointage** ici, à partir du tableau.           [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |Utilisez la valeur par défaut (300).  <br/> |
    
     ![Nom-BP-Verify-1-1](../../media/0c352fd3-cf84-439f-a481-0705e225cc54.png)
   
@@ -115,11 +115,11 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
   
 4. Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs du tableau suivant.
     
-    (Choose the **Type** value from the drop-down list.) 
+    (Choisissez la valeur **Type (Type)** dans la liste déroulante.) 
     
-    |**Type (Type)**|**Host (Hôte)**|**Answer (Réponse)**|**TTL (Durée de vie)**|**Prio (Priorité)**|
+    |**Type**|**Host (Hôte)**|**Answer (Réponse)**|**TTL (Durée de vie)**|**Prio (Priorité)**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |(Laissez ce champ vide.)  <br/> | *\<domain-key\>*. mail.protection.outlook.com  <br/> **Remarque :** Obtenir votre *\<domain-key\>* à partir de votre compte Microsoft.           [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |Use the default value (300).  <br/> |0  <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |
+    |MX  <br/> |(Laissez ce champ vide.)  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Remarque :** Obtenir votre  *\<domain-key\>*  à partir de votre compte Microsoft.           [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |Utilisez la valeur par défaut (300).  <br/> |0  <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |
    
    ![Nom-BP-configure-2-1](../../media/11ba2160-fc8e-4196-bb15-2b7c6d49c8fc.png)
   
@@ -160,7 +160,7 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     
     (Choisissez la valeur **Type (Type)** dans la liste déroulante.) 
     
-    |**Type (Type)**|**Host (Hôte)**|**Answer (Réponse)**|**TTL (Durée de vie)**|
+    |**Type**|**Host (Hôte)**|**Answer (Réponse)**|**TTL (Durée de vie)**|
     |:-----|:-----|:-----|:-----|
     |CNAME  <br/> |autodiscover  <br/> |autodiscover.outlook.com  <br/> |Utilisez la valeur par défaut (300).  <br/> |
     |CNAME  <br/> |sip  <br/> |sipdir.online.lync.com  <br/> |Utilisez la valeur par défaut (300).  <br/> |
@@ -184,7 +184,7 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. Si vous avez déjà un enregistrement SPF pour votre domaine, il n’est pas nécessaire d’en créer un nouveau pour Microsoft. Ajoutez plutôt les valeurs Microsoft requises à l’enregistrement actuel afin de disposer d’un *seul* enregistrement SPF qui inclut les deux ensembles de valeurs. 
+> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. Si vous avez déjà un enregistrement SPF pour votre domaine, il n’est pas nécessaire d’en créer un nouveau pour Microsoft. Ajoutez plutôt les valeurs Microsoft requises à l’enregistrement actuel afin de disposer d’un  *seul*  enregistrement SPF qui inclut les deux ensembles de valeurs. 
   
 1. Pour commencer, accédez à la page de vos domaines sur le site name.com en utilisant [ce lien](https://www.name.com/account/domain). Avant toute chose, vous serez invité à vous connecter.
     
@@ -200,9 +200,9 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
   
 4. Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs du tableau suivant.
     
-    (Choose the **Type** value from the drop-down list.) 
+    (Choisissez la valeur **Type (Type)** dans la liste déroulante.) 
     
-    |**Type (Type)**|**Host (Hôte)**|**Answer (Réponse)**|**TTL**|
+    |**Type**|**Host (Hôte)**|**Answer (Réponse)**|**TTL**|
     |:-----|:-----|:-----|:-----|
     |TXT  <br/> |(Leave this field empty.)  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Remarque :** nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte.           |Use the default value (300).  <br/> |
    
@@ -235,8 +235,8 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     
     |**Type**|**Service**|**Weight (Poids)**|**TTL (Durée de vie)**|**Prio (Priorité)**|**Protocol (Protocole)**|**Port**|**Target (Cible)**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV|sip|1 |Utilisez la valeur par défaut (300).|100|tls|443|sipdir.online.lync.com <br> **Remarque :** nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte.           |
-    |SRV|sipfederationtls|1 |Utilisez la valeur par défaut (300).|100|tcp|5061|sipfed.online.lync.com <br>**Remarque :** nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte.           |
+    |SRV|sip|0,1|Utilisez la valeur par défaut (300).|100|tls|443|sipdir.online.lync.com <br> **Remarque :** nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte.           |
+    |SRV|sipfederationtls|0,1|Utilisez la valeur par défaut (300).|100|tcp|5061|sipfed.online.lync.com <br>**Remarque :** nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte.           |
    
    ![Nom-BP-configure-5-1](../../media/d9a885fd-7300-45b6-ad4c-0b4bf1067560.png)
   

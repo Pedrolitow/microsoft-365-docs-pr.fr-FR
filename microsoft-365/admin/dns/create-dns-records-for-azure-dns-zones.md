@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: fbcef2d7-ebaf-40d0-ba1f-cdaeff9f50ef
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur les zones DNS Azure pour Microsoft.
-ms.openlocfilehash: fcc3ea42b7414cdd5fc0c34bfae91104287d2379
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 40fadb81ebd0ae5385bbbdad727b1c579142b227
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400267"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645670"
 ---
 # <a name="create-dns-records-for-azure-dns-zones"></a>Créer des enregistrements DNS pour les zones DNS Azure
 
@@ -108,9 +108,9 @@ Avant que vous puissiez utiliser votre domaine avec Microsoft, nous devons véri
     
     (Choisissez les valeurs **type** et **unité de durée de vie** dans les listes déroulantes.) 
     
-    |**Name**|**Type**|**TTL (Durée de vie)**|**Unité de durée de vie**|**Value (Valeur)**|
+    |**Name**|**Type (Type)**|**TTL (Durée de vie)**|**Unité de durée de vie**|**Value (Valeur)**|
     |:-----|:-----|:-----|:-----|:-----|
-    |@  <br/> |TXT  <br/> |1   <br/> |Heures  <br/> |MS=ms *XXXXXXXX*  <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur spécifique d’**Adresse de destination ou de pointage** ici, à partir du tableau.           [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |TXT  <br/> |0,1  <br/> |Heures  <br/> |MS=ms *XXXXXXXX*  <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur spécifique d’**Adresse de destination ou de pointage** ici, à partir du tableau.           [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![Azure-BP-Verify-1-1](../../media/7d5a253c-e88f-4565-a00a-79bba52f9970.png)
   
@@ -158,9 +158,9 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     
     (Choisissez les valeurs **type** et **unité de durée de vie** dans les listes déroulantes.) 
     
-    |**Name**|**Type**|**TTL (Durée de vie)**|**Unité de durée de vie**|**Preference (Préférence)**|**Exchange mail**|
+    |**Name**|**Type (Type)**|**TTL (Durée de vie)**|**Unité de durée de vie**|**Preference (Préférence)**|**Exchange mail**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |@  <br/> |MX  <br/> |1   <br/> |Heures  <br/> |10   <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> | *\<domain-key\>*. mail.protection.outlook.com  <br/> **Remarque :** Obtenir votre *\<domain-key\>* à partir de votre compte Microsoft.   [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)  
+    |@  <br/> |MX  <br/> |0,1  <br/> |Heures  <br/> |10   <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Remarque :** Obtenir votre  *\<domain-key\>*  à partir de votre compte Microsoft.   [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)  
    
     ![Azure-BP-configure-2-1](../../media/712c23ae-9d38-4af2-94e0-0704e70744fe.png)
   
@@ -207,11 +207,11 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     
     (Choisissez les valeurs **type** et **unité de durée de vie** dans les listes déroulantes.) 
     
-    |**Name**|**Type**|**TTL (Durée de vie)**|**Unité de durée de vie**|**Alias**|
+    |**Name**|**Type (Type)**|**TTL (Durée de vie)**|**Unité de durée de vie**|**Alias**|
     |:-----|:-----|:-----|:-----|:-----|
-    |autodiscover  <br/> |CNAME  <br/> |1   <br/> |Heures  <br/> |autodiscover.outlook.com  <br/> |
-    |sip  <br/> |CNAME  <br/> |1   <br/> |Heures  <br/> |sipdir.online.lync.com  <br/> |
-    |lyncdiscover  <br/> |CNAME  <br/> |1   <br/> |Heures  <br/> |webdir.online.lync.com  <br/> |
+    |autodiscover  <br/> |CNAME  <br/> |0,1  <br/> |Heures  <br/> |autodiscover.outlook.com  <br/> |
+    |sip  <br/> |CNAME  <br/> |0,1  <br/> |Heures  <br/> |sipdir.online.lync.com  <br/> |
+    |lyncdiscover  <br/> |CNAME  <br/> |0,1  <br/> |Heures  <br/> |webdir.online.lync.com  <br/> |
     
    
     ![Azure-BP-configure-3-1](../../media/a1c4d869-da97-43b3-952c-d513a20231dc.png)
@@ -231,16 +231,16 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
 > [!IMPORTANT]
 > Si vous disposez de la gestion des appareils mobiles pour Microsoft, vous devez créer deux enregistrements CNAMe supplémentaires. Suivez la procédure que vous avez utilisée pour les quatre autres enregistrements CNAME, mais fournissez les valeurs du tableau suivant. (Si vous ne disposez pas de MDM, vous pouvez ignorer cette étape.) 
   
-|**Name**|**Type**|**TTL (Durée de vie)**|**Unité de durée de vie**|**Alias**|
+|**Name**|**Type (Type)**|**TTL (Durée de vie)**|**Unité de durée de vie**|**Alias**|
 |:-----|:-----|:-----|:-----|:-----|
-|enterpriseregistration  <br/> |CNAME  <br/> |1   <br/> |Heures  <br/> |enterpriseregistration.windows.net  <br/> |
-|enterpriseenrollment  <br/> |CNAME  <br/> |1   <br/> |Heures  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
+|enterpriseregistration  <br/> |CNAME  <br/> |0,1  <br/> |Heures  <br/> |enterpriseregistration.windows.net  <br/> |
+|enterpriseenrollment  <br/> |CNAME  <br/> |0,1  <br/> |Heures  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
    
-## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajouter un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
+## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajoutez un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. Si vous avez déjà un enregistrement SPF pour votre domaine, il n’est pas nécessaire d’en créer un nouveau pour Microsoft. Ajoutez plutôt les valeurs Microsoft requises à l’enregistrement actuel afin de disposer d’un *seul* enregistrement SPF qui inclut les deux ensembles de valeurs. 
+> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. Si vous avez déjà un enregistrement SPF pour votre domaine, il n’est pas nécessaire d’en créer un nouveau pour Microsoft. Ajoutez plutôt les valeurs Microsoft requises à l’enregistrement actuel afin de disposer d’un  *seul*  enregistrement SPF qui inclut les deux ensembles de valeurs. 
   
 1. Pour commencer, accédez à la page de vos domaines sur Azure à l’aide de [ce lien](https://portal.azure.com ). Avant toute chose, vous serez invité à vous connecter.
     
@@ -258,9 +258,9 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     
     (Choisissez les valeurs **type** et **unité de durée de vie** dans les listes déroulantes.) 
     
-    |**Name**|**Type**|**TTL (Durée de vie)**|**Unité de durée de vie**|**Value (Valeur)**|
+    |**Name**|**Type (Type)**|**TTL (Durée de vie)**|**Unité de durée de vie**|**Value (Valeur)**|
     |:-----|:-----|:-----|:-----|:-----|
-    |@  <br/> |TXT  <br/> |1   <br/> |Heures  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Remarque :** nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte.           
+    |@  <br/> |TXT  <br/> |0,1  <br/> |Heures  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Remarque :** nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte.           
 
     ![Azure-BP-configure-4-2](../../media/78e84c43-e0ce-433f-8e74-9157fb093cca.png)
   
@@ -289,10 +289,10 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     
     (Choisissez les valeurs **type** et **unité de durée de vie** dans les listes déroulantes.) 
     
-    |**Name**|**Type**|**TTL (Durée de vie)**|**Unité de durée de vie**|**Priority (Priorité)**|**Weight (Poids)**|**Port (Port)**|**Target (Cible)**|
+    |**Name**|**Type (Type)**|**TTL (Durée de vie)**|**Unité de durée de vie**|**Priority (Priorité)**|**Weight (Poids)**|**Port (Port)**|**Target (Cible)**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip. _tls  <br/> |SRV  <br/> |1   <br/> |Heures  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |_sipfederationtls. _tcp  <br/> |SRV  <br/> |1   <br/> |Heures  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> 
+    |_sip._tls  <br/> |SRV  <br/> |0,1  <br/> |Heures  <br/> |100  <br/> |0,1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |_sipfederationtls._tcp  <br/> |SRV  <br/> |0,1  <br/> |Heures  <br/> |100  <br/> |0,1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> 
 
     ![Azure-BP-configure-5-1](../../media/a436e0b4-8bb8-4a66-9c22-4e3b2dcf54ff.png)
   
@@ -300,7 +300,7 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     
     ![Azure-BP-configure-5-2](../../media/a35b6c8a-d001-4b3c-8a67-96b4890e564c.png)
   
-6. Ajoutez l'autre enregistrement SRV.
+6. Ajoutez l’autre enregistrement SRV.
     
     Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs de la deuxième ligne du tableau.
     

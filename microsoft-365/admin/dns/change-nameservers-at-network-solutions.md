@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: d4ba60f3-4e1c-4180-99bd-250b8955be2a
 description: 'Apprenez à configurer votre domaine personnalisé Microsoft avec des solutions réseau si vous souhaitez que Microsoft gère vos enregistrements DNS. '
-ms.openlocfilehash: 502699cf3760460a13ee067b07737037f31fa4ee
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.openlocfilehash: 1cb5cd3cc8628a629fb6d7044063914e37adfac2
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45079876"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646402"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-with-network-solutions"></a>Modifier les serveurs de noms pour configurer Microsoft avec les solutions réseau
 
@@ -61,7 +61,7 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
   
 4. Sélectionnez **gérer les enregistrements DNS avancés**.
     
-    (You may have to scroll down.)
+    (Vous devrez peut-être faire défiler la page vers le bas.)
     
     ![Sélectionnez gérer les enregistrements DNS avancés](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
@@ -115,12 +115,12 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
 Pour terminer la configuration de votre domaine avec Microsoft, vous devez modifier les enregistrements de serveur de noms de votre domaine au niveau de votre bureau d’enregistrement de domaines afin de pointer vers les serveurs de noms principaux et secondaires Microsoft. Cela permet à Microsoft de mettre à jour les enregistrements DNS du domaine pour vous. Pour finaliser la configuration, nous ajouterons tous les enregistrements de façon à ce que vous puissiez utiliser la messagerie, Skype Entreprise Online et votre site web public avec votre domaine.
   
 > [!CAUTION]
-> Lorsque vous modifiez les enregistrements de serveur de noms de votre domaine pour qu’ils pointent vers les serveurs de noms Microsoft, tous les services actuellement associés à votre domaine sont affectés. Par exemple, tous les messages électroniques envoyés à votre domaine (par exemple, rob@ *your_domain* . com) débuteront à Microsoft après avoir effectué cette modification.
+> Lorsque vous modifiez les enregistrements de serveur de noms de votre domaine pour qu’ils pointent vers les serveurs de noms Microsoft, tous les services actuellement associés à votre domaine sont affectés. Par exemple, tous les messages électroniques envoyés à votre domaine (par exemple, rob@ *your_domain*  . com) débuteront à Microsoft après avoir effectué cette modification.
   
 Vous êtes prêt à modifier vos enregistrements NS de sorte que Microsoft puisse configurer votre domaine ? Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lecture à 2:23)](https://support.microsoft.com/office/69b092e3-c026-4d19-a7d0-16cdb2d8b261).
   
 > [!IMPORTANT]
->  Une fois que vous avez effectué les étapes de cette section, les *seuls* serveurs de noms qui doivent être répertoriés sont les quatre suivants : **NS1.BDM.microsoftonline.com**, **ns2.BDM.microsoftonline.com**, **NS3.BDM.microsoftonline.com**et **NS4.BDM.microsoftonline.com**. La procédure suivante décrit comment supprimer tout autre serveur de noms indésirable de la liste, et y ajouter les serveurs de noms  *corrects*  qui n'y figurent pas encore. 
+>  Une fois que vous avez effectué les étapes de cette section, les  *seuls*  serveurs de noms qui doivent être répertoriés sont les quatre suivants : **NS1.BDM.microsoftonline.com**, **ns2.BDM.microsoftonline.com**, **NS3.BDM.microsoftonline.com**et **NS4.BDM.microsoftonline.com**. La procédure suivante décrit comment supprimer tout autre serveur de noms indésirable de la liste, et y ajouter les serveurs de noms  *corrects*  qui n'y figurent pas encore. 
   
 1. Pour commencer, accédez à la page de vos domaines sur Network Solutions à l'aide de [ce lien](https://www.networksolutions.com/manage-it). Vous serez invité à vous connecter.
     
@@ -159,7 +159,7 @@ Vous êtes prêt à modifier vos enregistrements NS de sorte que Microsoft puiss
 |:-----|:-----|
 |**Name server 1 (Serveur de noms 1)** <br/> |ns1.bdm.microsoftonline.com  <br/> |
 |**Name Server 2 (Serveur de noms 2)** <br/> |ns2.bdm.microsoftonline.com  <br/> |
-|**Name Server 2 (Serveur de noms 2)** <br/> |ns3.bdm.microsoftonline.com  <br/> |
+|**Name server 2 (Serveur de noms 2)** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**Name server 2 (Serveur de noms 2)** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
     

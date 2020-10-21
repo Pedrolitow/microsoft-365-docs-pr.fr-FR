@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: Configurez le transfert du courrier vers un ou plusieurs comptes de messagerie à l’aide d’Office 365.
-ms.openlocfilehash: f6c177ba37cf2b8ce3966732adbe8428d9b6179e
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: d19e2c533be6fac927bdf2aa65d72acab9fad6f6
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780252"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645526"
 ---
 # <a name="configure-email-forwarding"></a>Configurer le transfert des e-mails
 
@@ -45,9 +45,9 @@ En tant qu’administrateur d’une organisation, vous pouvez avoir besoin d’u
 
  Avant de configurer le transfert du courrier, notez les points suivants : 
 
-- Une fois que vous avez configuré le transfert du courrier, seuls les **nouveaux** messages électroniques envoyés à la boîte aux lettres *de à partir de* seront fowarded. 
+- Une fois que vous avez configuré le transfert du courrier, seuls les **nouveaux** messages électroniques envoyés à la boîte aux lettres  *de à partir de*  seront fowarded. 
     
-- Le transfert du courrier exige que le compte *de à partir* de dispose d’une licence. Si vous configurez le transfert du courrier, car l’utilisateur a quitté votre organisation, une autre solution consiste à [convertir sa boîte aux lettres en boîte aux lettres partagée](convert-user-mailbox-to-shared-mailbox.md). De cette manière, plusieurs personnes peuvent y accéder. Toutefois, une boîte aux lettres partagée ne peut pas dépasser 50 Go. 
+- Le transfert du courrier exige que le compte  *de à partir*  de dispose d’une licence. Si vous configurez le transfert du courrier, car l’utilisateur a quitté votre organisation, une autre solution consiste à [convertir sa boîte aux lettres en boîte aux lettres partagée](convert-user-mailbox-to-shared-mailbox.md). De cette manière, plusieurs personnes peuvent y accéder. Toutefois, une boîte aux lettres partagée ne peut pas dépasser 50 Go. 
     
 Pour effectuer ces étapes, vous devez être administrateur Exchange ou administrateur général dans Microsoft 365. Pour plus d’informations, reportez-vous à la rubrique [à propos des rôles d’administrateur](../add-users/about-admin-roles.md).
 

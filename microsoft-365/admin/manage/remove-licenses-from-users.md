@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: Découvrez comment désaffecter des licences à partir de comptes d’utilisateurs.
 ms.date: 07/01/2020
-ms.openlocfilehash: 4441fd253c4cf5304562900bf31869eb4e0f21ff
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 455348e7dba20913e54e5a4059755f9391644e03
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47306538"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645094"
 ---
 # <a name="unassign-licenses-from-users"></a>Annuler l'assignation des licences aux utilisateurs
 
@@ -70,7 +70,7 @@ Lorsque vous utilisez la page **utilisateurs actifs** pour annuler l’affectati
 
 ### <a name="unassign-licenses-from-one-user"></a>Désaffecter des licences d’un utilisateur
   
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 2. Sélectionnez la ligne de l’utilisateur pour lequel vous souhaitez annuler l’affectation d’une licence.
 3. Dans le volet de droite, sélectionnez **Licences et applications**.
 4. Développez la section **licences** , désactivez les cases à cocher correspondant aux licences que vous souhaitez annuler, puis sélectionnez **enregistrer les modifications**.
@@ -81,7 +81,7 @@ Lorsque vous utilisez la page **utilisateurs actifs** pour annuler l’affectati
 
 ## <a name="unassign-licenses-from-one-user"></a>Désaffecter des licences d’un utilisateur
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
 2. Sélectionnez l’utilisateur pour lequel vous souhaitez annuler l’affectation de la licence.
 3. À droite, dans la ligne **licences de produit** , sélectionnez **modifier**.
 4. Dans le volet **licences de produits** , **désactivez** le bouton bascule correspondant à la licence que vous souhaitez annuler. Par exemple, si vous désactivez la licence Office 365 entreprise E3, il annule l’affectation de cette licence et de tous les services sous cette licence pour cet utilisateur.
@@ -93,7 +93,7 @@ Lorsque vous utilisez la page **utilisateurs actifs** pour annuler l’affectati
 
 ## <a name="unassign-licenses-from-one-user"></a>Désaffecter des licences d’un utilisateur
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
 2. Sélectionnez l’utilisateur pour lequel vous souhaitez annuler l’affectation de la licence.
 3. À droite, dans la ligne **licences de produit** , sélectionnez **modifier**.
 4. Dans le volet **licences de produits** , **désactivez** le bouton bascule correspondant à la licence que vous souhaitez annuler. Par exemple, si vous désactivez la licence Office 365 entreprise E3, il annule l’affectation de cette licence et de tous les services sous cette licence pour cet utilisateur.
@@ -104,7 +104,7 @@ Lorsque vous utilisez la page **utilisateurs actifs** pour annuler l’affectati
 ::: moniker range="o365-worldwide"
 ###  <a name="unassign-licenses-from-multiple-users"></a>Désaffecter les licences de plusieurs utilisateurs
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 2. Sélectionnez les cercles en regard des noms des utilisateurs pour lesquels vous souhaitez annuler l’affectation de licences.
 3. Dans la partie supérieure, sélectionnez **Plus d'options (...)**, puis choisissez **Gérer les licences de produits**.
 4. Dans le volet **Gérer des licences de produits**, sélectionnez **Remplacer les attributions de licence de produit existantes** \> **Suivant**.
@@ -116,7 +116,7 @@ Lorsque vous utilisez la page **utilisateurs actifs** pour annuler l’affectati
 
 ##  <a name="unassign-licenses-from-multiple-users"></a>Désaffecter les licences de plusieurs utilisateurs
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
 2. Activez les cases à cocher en regard des noms des utilisateurs pour lesquels vous souhaitez annuler l’affectation de toutes les licences.
 3. Dans le volet **Actions en bloc**, sélectionnez **Modifier les licences de produits**.
 4. Dans le volet **Remplacer les produits existants**, sélectionnez **Remplacer les attributions de licence de produit existantes** \> **Suivant**.
@@ -128,7 +128,7 @@ Lorsque vous utilisez la page **utilisateurs actifs** pour annuler l’affectati
 
 ##  <a name="unassign-licenses-from-multiple-users"></a>Désaffecter les licences de plusieurs utilisateurs
   
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
 2. Activez les cases à cocher en regard des noms des utilisateurs pour lesquels vous souhaitez annuler l’affectation de toutes les licences.
 3. Dans le volet **Actions en bloc**, sélectionnez **Modifier les licences de produits**.
 4. Dans le volet **Remplacer les produits existants**, sélectionnez **Remplacer les attributions de licence de produit existantes** \> **Suivant**.

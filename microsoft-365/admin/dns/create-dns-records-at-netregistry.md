@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -22,12 +22,12 @@ search.appverid:
 - BEA160
 ms.assetid: 48e09394-2287-4b3c-9853-21eadf61277e
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur NetRegistry pour Microsoft.
-ms.openlocfilehash: c4e81e92b9f86d0a2974e6f95e397f3584c9a01e
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 016df6c61fd6934c1bc46b55c7e110d8442cf1d5
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400363"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645970"
 ---
 # <a name="create-dns-records-at-netregistry-for-microsoft"></a>Créer des enregistrements DNS sur NetRegistry pour Microsoft
 
@@ -138,7 +138,7 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     
     |**Name**|**DURÉE DE VIE (S)**|**Exchange (pointe vers l’adresse ou la valeur)**|**L’hôte est-il entièrement qualifié ?**|**Préférence (priorité)**|
     |:-----|:-----|:-----|:-----|:-----|
-    |(Laisser vide)  <br/> |3600 (secondes)  <br/> | *\<domain-key\>*. mail.protection.outlook.com  <br/> **Remarque :** Obtenir votre *\<domain-key\>* à partir de votre compte Microsoft.  [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)      |(cochez la case)  <br/> |10   <br/> For more information about priority, see What is MX priority?  <br/> |
+    |(Laisser vide)  <br/> |3600 (secondes)  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Remarque :** Obtenir votre  *\<domain-key\>*  à partir de votre compte Microsoft.  [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)      |(cochez la case)  <br/> |10   <br/> For more information about priority, see What is MX priority?  <br/> |
        
     ![Netregistry_MX_values](../../media/518b3da6-4055-4e2d-b5ce-44a0fee25419.png)
   
@@ -161,13 +161,13 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     
     ![Netregistry_selectZoneManager](../../media/58384add-0a9d-472b-a5d0-51ec8155fd41.png)
   
-4. Sous **Ajouter un enregistrement de zone**, choisissez **enregistrement CNAME** dans la liste, puis sélectionnez **créer un enregistrement**.
+4. Sous  **Ajouter un enregistrement de zone**, choisissez **enregistrement CNAME** dans la liste, puis sélectionnez **créer un enregistrement**.
     
     ![Netregistry_CNAME_CreateNewRecord](../../media/7b4f133f-45da-48da-93c0-62f57c786165.png)
   
 5. Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs du tableau suivant.
     
-    |**Name**|**Type**|**TTL (Durée de vie)**|**HÔTE (pointe vers ou adresse)**|
+    |**Name**|**Type (Type)**|**TTL (Durée de vie)**|**HÔTE (pointe vers ou adresse)**|
     |:-----|:-----|:-----|:-----|
     |autodiscover  <br/> |CNAME  <br/> |3600 (secondes)  <br/> |autodiscover.outlook.com  <br/> |
     |sip  <br/> |CNAME  <br/> |3600 (secondes)  <br/> |sipdir.online.lync.com  <br/> |
@@ -185,11 +185,11 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     
     Pour chaque enregistrement, tapez ou copiez-collez les valeurs de la ligne suivante du tableau ci-dessus dans les zones de cet enregistrement.
     
-## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajouter un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
+## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajoutez un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
 <a name="bkmk_spf"> </a>
 
 > [!IMPORTANT]
-> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. Si vous avez déjà un enregistrement SPF pour votre domaine, il n’est pas nécessaire d’en créer un nouveau pour Microsoft. Ajoutez plutôt les valeurs Microsoft requises à l’enregistrement actuel afin de disposer d’un *seul* enregistrement SPF qui inclut les deux ensembles de valeurs.
+> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. Si vous avez déjà un enregistrement SPF pour votre domaine, il n’est pas nécessaire d’en créer un nouveau pour Microsoft. Ajoutez plutôt les valeurs Microsoft requises à l’enregistrement actuel afin de disposer d’un  *seul*  enregistrement SPF qui inclut les deux ensembles de valeurs.
   
 1. Pour commencer, accédez à la page de vos domaines dans NetRegistry en utilisant [ce lien](https://theconsole.netregistry.com.au/). You'll be prompted to log in.
     
@@ -212,7 +212,7 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     > [!NOTE]
     > Vous devez utiliser des guillemets avant et après l’entrée dans la zone TXT. 
   
-    |**Name**|**Type**|**TTL (Durée de vie)**|**Données TXT (cible)**|
+    |**Name**|**Type (Type)**|**TTL (Durée de vie)**|**Données TXT (cible)**|
     |:-----|:-----|:-----|:-----|
     |(Laisser vide)  <br/> |TXT  <br/> |3600 (secondes)  <br/> |"v = spf1 include include. protection. Outlook. com-All"  <br/> **Remarque :** nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte.           |
    
@@ -229,7 +229,7 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     
     ![Netregistry_login](../../media/accf6584-e5f4-4d68-a641-0f8847f8370f.png)
   
-2. En regard du domaine que vous souhaitez gérer, sélectionnez **gérer**.
+2. En regard du domaine que vous souhaitez gérer, sélectionnez  **gérer**.
     
     ![Netregistry_Manage](../../media/e0ddc79e-0123-4e24-8380-9645bdb41aac.png)
   
@@ -237,7 +237,7 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     
     ![Netregistry_selectZoneManager](../../media/f122888b-3cc5-40ec-adac-0ede04799d9a.png)
   
-4. Sous **Ajouter un enregistrement de zone**, choisissez **enregistrement SRV** dans la liste, puis sélectionnez **créer un enregistrement**.
+4. Sous  **Ajouter un enregistrement de zone**, choisissez **enregistrement SRV** dans la liste, puis sélectionnez **créer un enregistrement**.
     
     ![Netregistry_SRV_select](../../media/e5dab850-acd1-48b8-8b4a-e3b9777cf508.png)
   
@@ -248,8 +248,8 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
   
     |**Type**|**Nom**|**DURÉE DE VIE (S)**|**Priority (Priorité)**|**Weight (Poids)**|**Port (Port)**|**Target (Cible)**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV (service)  <br/> |_sip. _tls  <br/> |3600 (secondes)  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |SRV (service)  <br/> |_sipfederationtls. _tcp  <br/> |3600 (secondes)  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |SRV (service)  <br/> |_sip._tls  <br/> |3600 (secondes)  <br/> |100  <br/> |0,1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |SRV (service)  <br/> |_sipfederationtls._tcp  <br/> |3600 (secondes)  <br/> |100  <br/> |0,1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
        
     ![Netregistry_SRV_values](../../media/49292846-1598-4b8c-9940-db6e10675753.png)
   

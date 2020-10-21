@@ -4,7 +4,7 @@ f1.keywords:
 - CSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -22,12 +22,12 @@ description: Découvrez ce qu’est un domaine et comment vous pouvez acheter un
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-ms.openlocfilehash: 9104c77218c483b61c57a38e37e8e2661db1aa15
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 0c59fb6bc5f9a7796c84a0370c771bf90102dec0
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399859"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645118"
 ---
 # <a name="what-is-a-domain"></a>Qu’est-ce qu’un domaine ?
 
@@ -45,14 +45,14 @@ Utiliser Microsoft 365 pour acheter un nouveau domaine-nous allons tout définir
   
  **Utiliser un domaine qui vous appartient déjà :**
   
-Si vous possédez déjà un domaine comme *You@yourcompany. <span> com* vous pouvez l’ajouter et commencer à utiliser OneDrive et les applications Microsoft immédiatement. Vous devrez toutefois prendre quelques minutes pour configurer la messagerie et Skype Entreprise. 
+Si vous possédez déjà un domaine comme  *You@yourcompany. <span> com*  vous pouvez l’ajouter et commencer à utiliser OneDrive et les applications Microsoft immédiatement. Vous devrez toutefois prendre quelques minutes pour configurer la messagerie et Skype Entreprise. 
   
 > [!TIP]
 > vous ne savez pas si votre domaine est enregistré ? [Obtenir de l'aide pour rechercher votre bureau d'enregistrement de domaines](find-your-domain-registrar.md).
   
  **Utiliser temporairement un domaine par défaut :**
   
-Vous pouvez utiliser un domaine par défaut comme *yourcompany. onmicrosoft. <span> com* pour vous connecter pour le moment et ajouter un domaine personnalisé ultérieurement. Étant donné que vous ne pouvez pas modifier ou renommer votre domaine par défaut, assurez-vous de choisir le bon ! 
+Vous pouvez utiliser un domaine par défaut comme  *yourcompany. onmicrosoft. <span> com*  pour vous connecter pour le moment et ajouter un domaine personnalisé ultérieurement. Étant donné que vous ne pouvez pas modifier ou renommer votre domaine par défaut, assurez-vous de choisir le bon ! 
   
 ## <a name="feeling-stuck"></a>Vous êtes bloqué ?
 
