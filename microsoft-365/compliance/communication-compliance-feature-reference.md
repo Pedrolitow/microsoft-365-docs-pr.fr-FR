@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: e2fba7a5cf83838c440cdea8436b5bbdd360885b
-ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
+ms.openlocfilehash: 7f1d3e13aebe7c7924732922bbbfc7417622d8c5
+ms.sourcegitcommit: e17fd18b01d70e6428263c20cbce4b92e2a97765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48318173"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48626187"
 ---
 # <a name="communication-compliance-feature-reference"></a>Référence de la fonctionnalité de conformité des communications
 
@@ -125,13 +125,9 @@ Vous devez effectuer une demande auprès du Support Microsoft pour autoriser vot
 
     - **Pour les communications de conversation de Skype entreprise Online**: affectez des utilisateurs individuels ou affectez un [groupe de distribution](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) à la stratégie de conformité des communications. Ce paramètre s'applique aux relations d'utilisateur/chat en tête à tête ou à plusieurs.
 
-- **Sources tierces** : vous pouvez analyser les communications provenant de sources tierces pour les données importées dans les boîtes aux lettres de votre organisation Microsoft 365. Les connecteurs prennent en charge les ressources tierces suivantes :
+- **Sources**tierces : vous pouvez analyser les communications pour les données importées dans des boîtes aux lettres de votre organisation Microsoft 365 à partir de sources tierces, telles que la dérogation [instantanée](archive-instant-bloomberg-data.md), la [marge](archive-slack-data.md), le [Zoom](archive-zoommeetings-data.md), le SMS et bien d’autres. Pour obtenir la liste complète des connecteurs pris en charge dans la conformité des communications, consultez la rubrique [archivage des données](archiving-third-party-data.md)tierces.
 
-    - [Instant Bloomberg](archive-instant-bloomberg-data.md)
-    - [Message Bloomberg](archive-bloomberg-message-data.md)
-    - [Conversation ICE](archive-icechat-data.md)
-
-Vous devez configurer un connecteur tiers pour votre organisation Microsoft 365 avant de pouvoir attribuer le connecteur à une stratégie de conformité de communication. La section **sources tierces** de l’Assistant stratégie de conformité des communications affiche uniquement les connecteurs tiers actuellement configurés.
+    Vous devez configurer un connecteur tiers pour votre organisation Microsoft 365 avant de pouvoir attribuer le connecteur à une stratégie de conformité de communication. La section **sources tierces** de l’Assistant stratégie de conformité des communications affiche uniquement les connecteurs tiers actuellement configurés.
 
 ## <a name="transitioning-from-supervision-in-office-365"></a>Transition de la surveillance dans Office 365
 
@@ -283,7 +279,7 @@ Si vous souhaitez créer un message électronique en texte simple pour les notif
 
 Les filtres de conformité de la communication vous permettent de filtrer et de trier les messages d’alerte pour des actions plus rapides d’enquête et de correction. Le filtrage est disponible sur les onglets **en attente** et **résolus** pour chaque stratégie. Pour enregistrer un filtre ou un jeu de filtres en tant que requête de filtre enregistrée, une ou plusieurs valeurs doivent être configurées en tant que sélections de filtre. Le tableau suivant présente les détails des filtres :
 
-|**Filtre**|**Details**|
+|**Filter**|**Details**|
 |:-----|:-----|
 | **Date** | Date à laquelle le message a été envoyé ou reçu par un utilisateur au sein de votre organisation. Pour filtrer un seul jour, sélectionnez une plage de dates qui commence le jour pour lequel vous souhaitez obtenir des résultats et se terminer par le jour suivant. Par exemple, si vous souhaitez filtrer les résultats pour 9/20/2020, choisissez une plage de dates de filtre de 9/20/2020-9/21/2020.|
 | **Classe file** | Classe du message en fonction du type de message, qu’il *s’agisse d’un message ou* d’une *pièce jointe*. |

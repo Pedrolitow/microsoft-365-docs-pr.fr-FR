@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Utilisez l’outil de communication dans un cas avancé de découverte électronique pour envoyer, collecter et suivre les notifications de conservation légale.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 0bcbdef1c1393ff3e7f3baf30279909ed3a663f5
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 730b60c4d57f8fecb0e66f460942e9e890732c2c
+ms.sourcegitcommit: e17fd18b01d70e6428263c20cbce4b92e2a97765
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035786"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48626177"
 ---
 # <a name="create-a-legal-hold-notice"></a>Créer une notice de suspension légale
 
@@ -46,7 +46,11 @@ La première étape consiste à spécifier les détails appropriés pour les not
 
     - **Name**: il s’agit du nom de la communication.
 
-    - **Officier émetteur**: la liste déroulante affiche une liste de membres de cas. Chaque notification envoyée aux dépositaires est envoyée au nom de l’officier émetteur spécifié.
+    - **Officier émetteur**: la liste déroulante affiche une liste de membres de cas. Pour plus d’informations sur l’ajout de nouveaux membres à un cas, voir [Create an Advanced eDiscovery case](get-started-with-advanced-ediscovery.md#step-4-create-an-advanced-ediscovery-case). Chaque notification envoyée aux dépositaires est envoyée au nom de l’officier émetteur spécifié.
+
+> [!NOTE]
+> L’officier émetteur doit disposer d’une **boîte aux lettres active** pour apparaître dans la liste déroulante de l’officier émetteur
+
 
 4. Cliquez sur **Suivant**.
 
@@ -89,7 +93,7 @@ Pour créer une notification d’émission :
 
 5. Cliquez sur **Enregistrer**.
 
-### <a name="re-issuance-notification"></a>Notification de nouvelle émission
+### <a name="re-issuance-notification"></a>Notification Re-Issuance
 
 En cas de progression, les dépositaires peuvent être tenus de conserver des données supplémentaires ou moins que celles précédemment demandées. Une fois que vous avez mis à jour le contenu du portail, la notification de ré-émission est envoyée et avertit les dépositaires des modifications apportées à leurs obligations de conservation.
 
