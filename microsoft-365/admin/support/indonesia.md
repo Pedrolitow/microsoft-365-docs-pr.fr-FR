@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Découvrez comment contacter le support pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c39a6aad2272a4c55007859c96c2cfb1f2b4a20f
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b651ad2a719a08ff5d6a7427cd3ccb268f043f13
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44397585"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48641986"
 ---
 # <a name="contact-support-for-indonesia"></a>Contacter le support pour l’Indonésie
 
@@ -32,12 +32,12 @@ ms.locfileid: "44397585"
 ## <a name="hours"></a>Heures
 ### <a name="billing-support"></a>Support de facturation :
 
-Bahasa Indonésie : Lun-Ven 8 AM-5 PM
+Bahasa Indonésie : Mon-Fri 8 AM-5 PM
 
-Anglais : Lun-ven 9 AM-6 PM
+Anglais : Mon-Fri 9 AM-6 PM
 
 ### <a name="technical-support"></a>Support technique :
 
-Bahasa Indonésie : Lun-Ven 8 AM-5 PM
+Bahasa Indonésie : Mon-Fri 8 AM-5 PM
 
-Anglais : 24 heures sur 24, 7 jours sur 7
+Anglais : 24h/24, 7j/7

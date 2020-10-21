@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Découvrez comment contacter le support pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 246941ffe9d6558442597dd09a014eff26903bae
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: a6488eca054011707c1cf843cdf6f76fc6ae954e
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44397837"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48642490"
 ---
 # <a name="contact-support-for-georgia"></a>Contacter le support pour la Géorgie
 
@@ -36,14 +36,14 @@ Entrez le code 7700
 ## <a name="hours"></a>Heures
 ### <a name="billing-support"></a>Support de facturation :
 
-Russe : Lun 10 AM-7 PM Moscou
+Russe : Mon-Fri 10 AM-7 PM Moscou
 
-Anglais : Lun-ven 9 AM-5 PM Londres
+Anglais : Mon-Fri 9 AM-5 PM Londres
 
 ### <a name="technical-support"></a>Support technique :
 
-Russe : Lun-Ven 7 AM-8 PM Moscou
+Russe : Mon-Fri 7 AM-8 PM Moscou
 
-Anglais : 24 heures sur 24, 7 jours sur 7
+Anglais : 24h/24, 7j/7
 
 Frais d’appels locaux appliqués

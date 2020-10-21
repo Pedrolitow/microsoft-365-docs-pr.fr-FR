@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: e3b29a8182e38fa05e5f791478157c978632fb13
-ms.sourcegitcommit: 22755cebfbfa2c4dc3f8b4f54ccb23636a211ee5
+ms.openlocfilehash: 29e5eb64445c6c5c45b8e1fd1633c030b5f32b86
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "48477004"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48649666"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>Pratiques recommandées pour la requête de repérage avancé
 
@@ -36,10 +36,10 @@ ms.locfileid: "48477004"
 
 Appliquez ces recommandations pour obtenir des résultats plus rapidement et éviter les délais d’attente lors de l’exécution de requêtes complexes. Si vous souhaitez en savoir plus sur l’amélioration des performances de requête, veuillez consulter [Meilleures pratiques de requête Kusto](https://docs.microsoft.com/azure/kusto/query/best-practices).
 
-## <a name="understand-cpu-resource-limits"></a>Comprendre les limites de ressources d’UC
-En fonction de sa taille, chaque client a accès à un nombre défini de ressources CPU allouées à l’exécution de requêtes de chasse avancées. Pour plus d’informations sur les différentes limites de service, consultez la rubrique [relative aux limites de chasse avancée](advanced-hunting-limits.md).
+## <a name="understand-cpu-resource-quotas"></a>Comprendre les quotas de ressources du processeur
+En fonction de sa taille, chaque client a accès à un nombre défini de ressources CPU allouées à l’exécution de requêtes de chasse avancées. Pour obtenir des informations détaillées sur les différentes limites de service, consultez la rubrique [relative aux quotas avancés de la chasse et aux paramètres d’utilisation](advanced-hunting-limits.md).
 
-Les clients qui exécutent régulièrement plusieurs requêtes doivent suivre la consommation et appliquer les conseils d’optimisation de cet article pour minimiser les interruptions résultant du dépassement des limites.
+Les clients qui exécutent régulièrement plusieurs requêtes doivent suivre la consommation et appliquer les conseils d’optimisation dans cet article pour minimiser les interruptions résultant du dépassement des quotas ou des paramètres d’utilisation.
 
 ## <a name="general-optimization-tips"></a>Conseils généraux pour l’optimisation
 
@@ -265,7 +265,7 @@ Pour en savoir plus sur toutes les fonctions d’analyse prises en charge, consu
 
 ## <a name="related-topics"></a>Voir aussi
 - [Documentation du langage de requête Kusto](https://docs.microsoft.com/azure/data-explorer/kusto/query/)
-- [Limites de service](advanced-hunting-limits.md)
+- [Quotas et paramètres d’utilisation](advanced-hunting-limits.md)
 - [Gérer les erreurs de chasse avancées](advanced-hunting-errors.md)
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)

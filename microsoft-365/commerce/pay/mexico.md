@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 26a2aa8790e3952874680b1e5ebf6970113676cb
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: ee59c03eedcbe214be96457d18b96a53819818d6
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44404069"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48649263"
 ---
 # <a name="payment-information-for-mexico"></a>Informations de paiement pour le Mexique
 
@@ -29,7 +29,7 @@ Veuillez payer en pesos mexicaines uniquement. Pour que votre paiement soit trai
 ## <a name="electronic-funds-transfer"></a>Transfert de fonds électronique
 
 **Banque :** Citibank/Banamex  
-**Branche :** Prononce. Roberto Medellin 800, P.B. Sur, col. Santa Fe, Mexique City C.P. 01210, Mexique  
+**Branche :** Act. Roberto Medellin 800, P.B. Sur, col. Santa Fe, Mexique City C.P. 01210, Mexique  
 **Code SWIFT :** BNMXMM  
 **CLABE** 002180002337160225  
 **Numéro de compte :** 0233716022  
