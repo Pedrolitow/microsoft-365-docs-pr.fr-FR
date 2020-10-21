@@ -1,5 +1,5 @@
 ---
-title: Utilisation de l’appareil Microsoft Teams
+title: Rapports Microsoft 365 dans le centre d’administration-utilisation de l’appareil Microsoft teams
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenez des informations sur les applications Microsoft teams utilisées dans votre organisation en obtenant le rapport d’utilisation des applications Microsoft teams à partir des rapports Microsoft 365.
-ms.openlocfilehash: 98b8d6241b94445c9cb47d2c464d47c5609efdfe
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: deda550b3ffc4209f718d36a3010605edbc1102b
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949077"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48636972"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>Rapports Microsoft 365 dans le centre d’administration-utilisation de l’appareil Microsoft teams
 
@@ -51,7 +51,7 @@ Vous pouvez également exporter les données du rapport dans un fichier. csv Exc
 |Item|Description|
 |:-----|:-----|
 |**Métrique**|**Définition**|
-|Nom d'utilisateur  <br/> |Nom d’affichage de l’utilisateur. Vous pouvez cliquer sur le nom d’affichage pour accéder à la page des paramètres de l’utilisateur dans le centre d’administration Microsoft Teams.  <br/> |
+|Nom d'utilisateur  <br/> |Nom d’affichage de l’utilisateur.  <br/> |
 |Windows  <br/> |Sélectionné si l’utilisateur était actif dans le client teams de bureau sur un ordinateur Windows.  <br/> |
 |Mac  <br/> |Sélectionné si l’utilisateur était actif dans le client teams de bureau sur un ordinateur macOS.  <br/> |
 |iOS  <br/> |Sélectionnez cette option si l’utilisateur était actif sur le client teams mobile pour iOS.  <br/> |
@@ -61,4 +61,5 @@ Vous pouvez également exporter les données du rapport dans un fichier. csv Exc
 |Web  <br/> |Sélectionné si l’utilisateur était actif dans le client Web teams sur les appareils.|
 |Date de la dernière activité (UTC)  <br/> |Date (UTC) de la dernière date à laquelle l’utilisateur a participé à une activité de teams.  <br/> |
 |Est sous licence|Sélectionné si l’utilisateur est titulaire d’une licence pour utiliser Teams.|
+|Activité totale de teams|Nombre total d’activités teams sur la période sélectionnée. |
 |||

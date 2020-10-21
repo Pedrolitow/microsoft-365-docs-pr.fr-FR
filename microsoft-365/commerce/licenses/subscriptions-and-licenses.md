@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -21,16 +21,16 @@ search.appverid:
 - MET150
 description: Découvrez les abonnements et les licences dans Microsoft 365 pour les entreprises.
 ms.date: 07/01/2020
-ms.openlocfilehash: 9f8576b00b942c4b38d6192770bd2128afb4b104
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.openlocfilehash: 51d07e777fd5a9e44c864ea11bb00ddc8c1c70d1
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45015958"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48638194"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>Comprendre les abonnements et les licences dans Microsoft 365 pour les entreprises
 
-Lorsque vous achetez un abonnement à Microsoft 365 pour les entreprises, vous vous inscrivez à un ensemble d’applications et de services que vous payez mensuellement ou annuellement. Les applications et les services que vous recevez dans le cadre de votre abonnement dépendent du produit que vous avez acheté, tel que Microsoft 365 Apps for Business ou Microsoft 365 Business standard. Vous pouvez voir ce qui est fourni avec chaque produit sur la page [Microsoft 365 pour les petites et moyennes entreprises](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1) .
+Lorsque vous achetez un abonnement à Microsoft 365 pour les entreprises, vous vous inscrivez à un ensemble d’applications et de services que vous payez mensuellement ou annuellement. Les applications et les services que vous recevez dans le cadre de votre abonnement dépendent du produit que vous avez acheté, tel que Microsoft 365 Apps for Business ou Microsoft 365 Business standard. Vous pouvez voir ce qui est fourni avec chaque produit sur la page [Microsoft 365 pour les petites et moyennes entreprises](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1) .
 
 Lorsque vous achetez un abonnement, vous spécifiez le nombre de licences dont vous avez besoin, en fonction du nombre de personnes de votre organisation. Après avoir acheté un abonnement, vous créez des comptes pour les personnes de votre organisation, puis attribuez une licence à chaque personne. À mesure que les besoins de votre organisation évoluent, vous pouvez acheter des licences supplémentaires pour accueillir de nouvelles personnes ou réattribuer des licences à d’autres utilisateurs lorsqu’un utilisateur quitte votre organisation.
 
@@ -58,7 +58,7 @@ Le tableau suivant indique ce qui se produit automatiquement lorsque vous attrib
 |Exchange Online  <br/> |Une boîte aux lettres est créée pour cette personne. <br/> Pour plus d’informations sur le contrat SLA pour cette tâche, voir [«Configuration... messages dans le centre d’administration Microsoft 365](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center). |
 |SharePoint Online  <br/> |Les autorisations de modification du site d'équipe SharePoint Online par défaut sont attribuées à cette personne.  <br/> |
 |Skype Entreprise Online  <br/> |La personne a accès aux fonctionnalités associées à la licence.  <br/> |
-|Microsoft 365 Apps for enterprise  <br/> |La personne peut télécharger des applications Office sur un maximum de cinq Mac ou PC, de cinq tablettes et de cinq smartphones.  <br/> |
+|Applications Microsoft 365 pour les entreprises  <br/> |La personne peut télécharger des applications Office sur un maximum de cinq Mac ou PC, de cinq tablettes et de cinq smartphones.  <br/> |
 
 ## <a name="understand-licenses-for-non-user-mailboxes"></a>Comprendre les licences pour les boîtes aux lettres non-utilisateur
 
@@ -82,9 +82,9 @@ Plusieurs types d'administrateurs peuvent utiliser des licences de différentes 
 |Administrateur de support de service  <br/> |Non  <br/> |Non  <br/> |Non  <br/> |Non  <br/> |
 |Administrateur d’utilisateurs  <br/> |Oui  <br/> |Oui  <br/> |Non  <br/> |Oui  <br/> |
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Acheter ou supprimer des licences pour votre abonnement professionnel](buy-licenses.md) (article) \
 [Attribuer des licences aux utilisateurs](../../admin/manage/assign-licenses-to-users.md) (article) \
-[Désaffecter les licences des utilisateurs](../../admin/manage/remove-licenses-from-users.md) (article) \
+[Déattribuer des licences aux utilisateurs](../../admin/manage/remove-licenses-from-users.md) (article)\
 [Supprimer une licence d’une boîte aux lettres partagée](../../admin/email/remove-license-from-shared-mailbox.md) (article)

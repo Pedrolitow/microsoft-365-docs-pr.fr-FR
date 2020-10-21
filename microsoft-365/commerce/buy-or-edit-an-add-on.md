@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -24,12 +24,12 @@ description: Découvrez comment acheter un module complémentaire pour ajouter d
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: e22c4193fffa1d97334f61e789265e75d55d53a3
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: e73a3430dbcded25a15fad19815106a72798d8e8
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402189"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48638386"
 ---
 # <a name="buy-or-edit-an-add-on"></a>Acheter ou modifier un module complémentaire
 
@@ -233,17 +233,17 @@ Pour plus d'informations sur les modules complémentaires d'Skype Entreprise, vo
 
 |**Module complémentaire**|**Disponible dans les abonnements suivants**|
 |:-----|:-----|
-|Référentiel sécurisé du client  <br/> | Office 365 Entreprise E1  <br/>  Office 365 Entreprise E3  <br/>  Office 365 Entreprise E4  <br/> |
-|[Office 365 Online-Protection avancée contre les menaces](https://go.microsoft.com/fwlink/p/?LinkId=691156) <br/> | Office 365 Entreprise E1  <br/>  Office 365 Entreprise E3  <br/>  Office 365 Entreprise E4  <br/> |
+|Référentiel sécurisé du client  <br/> | Office 365 Entreprise E1  <br/>  Office 365 Entreprise E3  <br/>  Office 365 Entreprise E4  <br/> |
+|[Office 365 Online-Protection avancée contre les menaces](https://go.microsoft.com/fwlink/p/?LinkId=691156) <br/> | Office 365 Entreprise E1  <br/>  Office 365 Entreprise E3  <br/>  Office 365 Entreprise E4  <br/> |
 |[Archivage Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=691157) <br/> | Microsoft 365 Business Basic  <br/>  Microsoft 365 Business Standard  <br/>  Office 365 Entreprise E1  <br/>  Office 365 Entreprise F1  <br/> |
-|Microsoft MyAnalytics  <br/> | Office 365 Entreprise E1  <br/>  Office 365 Entreprise E3  <br/>  Office 365 Entreprise E4  <br/> |
-|Conformité avancée Office 365  <br/> | Office 365 Entreprise E1  <br/>  Office 365 Entreprise E3  <br/>  Office 365 Entreprise E4  <br/> |
-|Espace de stockage supplémentaire Office 365  <br/> | Applications Microsoft 365 pour les entreprises  <br/>  Microsoft 365 Business Basic  <br/>  Microsoft 365 Business Standard  <br/>  Office 365 Entreprise E1  <br/>  Office 365 Entreprise E2  <br/>  Office 365 Entreprise E3  <br/>  Office 365 Entreprise E4  <br/>  Office 365 Entreprise E5  <br/>  Office pour le Web avec SharePoint plan 1  <br/>  Office pour le Web avec SharePoint plan 2  <br/>  SharePoint Online (plan 1)  <br/>  SharePoint Online (plan 2)  <br/> |
-|Système téléphonique  <br/> | Office 365 Entreprise E1  <br/>  Office 365 Entreprise E3  <br/>  Office 365 Entreprise E4  <br/>  Office 365 Entreprise E5  <br/> |
-|Audioconférence  <br/> |  Microsoft 365 Business Basic <br/> Microsoft 365 Business Standard <br/> Office 365 Entreprise E1 <br/> Office 365 Entreprise E3 <br/> Office 365 Entreprise E4 <br/> Office 365 Entreprise E5 sans audioconférence <br/> Microsoft 365 Business Premium <br/> Microsoft 365 E3 <br/> Microsoft 365 E5  <br/> |
-|Crédits de communication  <br/> | Office 365 Entreprise E5  <br/> |
-|Plan d’appels nationaux <br/> | Office 365 Entreprise E5  <br/> |
-|Plan d’appels internationaux  <br/> | Office 365 Entreprise E5  <br/> |
+|Microsoft MyAnalytics  <br/> | Office 365 Entreprise E1  <br/>  Office 365 Entreprise E3  <br/>  Office 365 Entreprise E4  <br/> |
+|Conformité avancée Office 365  <br/> | Office 365 Entreprise E1  <br/>  Office 365 Entreprise E3  <br/>  Office 365 Entreprise E4  <br/> |
+|Espace de stockage supplémentaire Office 365  <br/> | Applications Microsoft 365 pour les entreprises  <br/>  Microsoft 365 Business Basic  <br/>  Microsoft 365 Business Standard  <br/>  Office 365 Entreprise E1  <br/>  Office 365 Entreprise E2  <br/>  Office 365 Entreprise E3  <br/>  Office 365 Entreprise E4  <br/>  Office 365 Entreprise E5  <br/>  Office pour le Web avec SharePoint plan 1  <br/>  Office pour le Web avec SharePoint plan 2  <br/>  SharePoint Online (plan 1)  <br/>  SharePoint Online (plan 2)  <br/> |
+|Système téléphonique  <br/> | Office 365 Entreprise E1  <br/>  Office 365 Entreprise E3  <br/>  Office 365 Entreprise E4  <br/>  Office 365 Entreprise E5  <br/> |
+|Audioconférence  <br/> |  Microsoft 365 Business Basic <br/> Microsoft 365 Business Standard <br/> Office 365 Entreprise E1 <br/> Office 365 Entreprise E3 <br/> Office 365 Entreprise E4 <br/> Office 365 Entreprise E5 sans audioconférence <br/> Microsoft 365 Business Premium <br/> Microsoft 365 E3 <br/> Microsoft 365 E5  <br/> |
+|Crédits de communication  <br/> | Office 365 Entreprise E5  <br/> |
+|Plan d’appels nationaux <br/> | Office 365 Entreprise E5  <br/> |
+|Plan d’appels internationaux  <br/> | Office 365 Entreprise E5  <br/> |
   
 ## <a name="related-articles"></a>Articles connexes
 

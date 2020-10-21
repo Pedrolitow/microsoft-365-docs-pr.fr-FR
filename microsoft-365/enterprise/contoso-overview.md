@@ -1,5 +1,5 @@
 ---
-title: Présentation de la société Contoso Corporation
+title: Vue d’ensemble de Contoso Corporation
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
@@ -15,73 +15,69 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre le fonctionnement de la société Contoso Corporation et la hiérarchie de ses bureaux internationaux.
-ms.openlocfilehash: 206017744a004ba4e51b6e0d157b172cbe145c66
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 402c8c1cbb1484d8a0ad2ce4159b90107856167d
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686451"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48637078"
 ---
-# <a name="overview-of-the-contoso-corporation"></a>Présentation de la société Contoso Corporation
+# <a name="overview-of-contoso-corporation"></a>Vue d’ensemble de Contoso Corporation
 
 ![Société Contoso](../media/contoso-overview/contoso-icon.png)
 
-La société Contoso est une entreprise internationale dont le siège est à Paris. Il s’agit d’un conglomérat de production, de ventes et de service après-vente comptant plus de 100 000 produits.
+Contoso Corporation est une entreprise multinationale avec son siège social à Paris. La société est une organisation de fabrication, de ventes et de support technique avec plus de 100 000 produits.
 
 ## <a name="contoso-around-the-world"></a>Contoso dans le monde
 
-Dans la Figure 1, le siège social de l’entreprise se situe à Paris, tandis que ses centres régionaux et ses succursales sont répartis sur plusieurs continents.
+La figure 1 présente le siège social dans la région de Paris, le Hub régional et les bureaux satellites sur plusieurs continents.
 
-![Bureaux internationaux de Contoso](../media/contoso-overview/contoso-overview-fig1.png)
+![Bureaux de Contoso dans le monde entier](../media/contoso-overview/contoso-overview-fig1.png)
 
-**Figure 1 : bureaux internationaux de Contoso**
+**Figure 1 : bureaux de Contoso dans le monde entier**
  
-Les bureaux internationaux de Contoso sont organisés en trois niveaux.
+Contoso dispose de trois niveaux de bureaux :
 
 - Siège social
 
-  Le siège social de Contoso Corporation s’intègre à une vaste zone d’activité, dans la banlieue parisienne, comportant des dizaines de bâtiments pour l’administration, l’ingénierie et la fabrication. Tous les centres de données de Contoso et la présence Internet résident dans le siège social.
+  Le siège social de contoso est un campus d’entreprise sur les hampes de Paris avec des dizaines de bâtiments pour les installations d’administration, d’ingénierie et de fabrication. Tous les centres de recherche contoso et sa présence sur Internet sont hébergés dans le siège de Paris.
 
   Le siège social compte 25 000 collaborateurs.
 
 - Centres régionaux
 
-  Les centres régionaux sont implantés dans différentes régions du monde et possèdent 60 % des équipes des ventes et du support technique. Chaque centre régional est relié au siège social grâce à une connexion WAN haut débit. 
+  Les bureaux de Hub servent une région spécifique du monde à des ventes et des équipes de support technique de 60%. Chaque concentrateur régional est connecté au siège de Paris via une liaison WAN à bande passante élevée.
 
-  Chaque centre régional compte en moyenne 2 000 collaborateurs.
+  Les hubs régionaux ont une moyenne de 2 000 travailleurs.
 
 - Succursales
 
-  Les succursales représentent 80 % des ventes et du personnel d’assistance et offrent une présence physique et sur site aux clients de Contoso dans les villes importantes ou des régions plus petites. Chaque succursale est connectée à un centre régional par le biais d’un lien WAN haut débit.
+  Les bureaux satellites contiennent des équipes de support et de vente de 80%. Elles fournissent une présence sur site pour les clients Contoso dans les principales villes ou sous-régions. Chaque bureau satellite est connecté à un concentrateur régional via une liaison WAN à bande passante élevée.
 
-  Chaque succursale compte en moyenne 250 collaborateurs.
+  Les bureaux satellites ont une moyenne de 250 travailleurs.
 
-25 % des collaborateurs de Contoso travaillent en permanence sur le terrain. Ce pourcentage est supérieur dans les centres régionaux et les succursales.
-Pour Contoso, il est essentiel de fournir un meilleur support technique aux collaborateurs qui passent tout leur temps sur le terrain.
+Environ 25% de la main-d’œuvre contoso est mobile uniquement. Les hubs régionaux et les bureaux satellites ont un pourcentage supérieur de ces travailleurs. Fournir une meilleure prise en charge pour les travailleurs mobiles uniquement est un objectif professionnel important pour contoso.
 
 ## <a name="design-considerations-for-microsoft-365-for-enterprise"></a>Considérations relatives à la conception de Microsoft 365 pour les entreprises
 
-Les architectes informatiques de contoso ont identifié les conditions requises et les considérations suivantes lors du déploiement de Microsoft 365 pour Enterprise : 
+Les architectes informatiques de contoso ont identifié les facteurs de conditions de conception suivants pour le déploiement de Microsoft 365 pour les entreprises :
 
 - Plusieurs implantations géographiques avec des réglementations et des exigences de conformité locales
-- Un centre de données intranet central dans les locaux du siège social et des serveurs d’application régionaux qui hébergent en interne la gamme d’applications professionnelles
+- Un centre de contenu intranet central dans le siège social et les serveurs d’applications régionales qui hébergent des applications métiers internes
 - Une infrastructure existante du Microsoft Endpoint Configuration Manager
-- Un mélange d’appareils informatiques clients, comprenant Windows, Mac et Linux
+- Un mélange d’appareils informatiques clients qui exécutent Windows, Mac et Linux
 - Un mélange d’appareils mobiles personnels et entreprise, notamment smartphones et tablettes iOS (iPhone et iPad) et Android
 - Nombreux collaborateurs en télétravail et mobiles
 - Nombreux partenaires commerciaux
-- Une grande quantité de d’informations client et informations d’identification personnelle
+- Un grand nombre de clients et d’autres informations personnelles confidentielles à gérer et à sécuriser
 - Une grande quantité de propriété intellectuelle de qualité sous forme de directives de conception pour les produits et de secrets commerciaux fabrication
 
 ## <a name="next-step"></a>Étape suivante
 
-[Découvrez](contoso-infra-needs.md) l’infrastructure informatique locale de Contoso Corporation et les besoins de son entreprise avec Microsoft 365 pour les entreprises.
+[Découvrez](contoso-infra-needs.md) l’infrastructure informatique locale de Contoso Corporation et la façon dont les besoins de l’entreprise sont abordés avec Microsoft 365 pour les entreprises.
 
 ## <a name="see-also"></a>Voir aussi
 
 [Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
 
 [Guides de laboratoire de test](m365-enterprise-test-lab-guides.md)
-
-
-

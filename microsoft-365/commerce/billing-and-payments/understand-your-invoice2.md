@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -25,12 +25,12 @@ search.appverid:
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
 description: Découvrez comment interpréter les frais, la facturation et les informations de paiement de votre facture ou facture Microsoft 365 pour les entreprises, et comment modifier le numéro de bon de commande.
-ms.openlocfilehash: a46f108766ccfec4f7f6abaa2d48d38137311707
-ms.sourcegitcommit: 7f765670cb6970fdf7ddbad464ed3f8fe704bfaf
+ms.openlocfilehash: 3d71bab82be3fd9e4c633885dccaf357ccabb551
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "44909263"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48638398"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Comprendre votre facture pour Microsoft 365 pour les entreprises
 
@@ -67,7 +67,7 @@ Le tableau suivant décrit les termes pouvant figurer sur votre facture. Il est 
 > [!NOTE]
 > Le règlement par compte bancaire n’est pas disponible dans certains pays ou régions.
   
-|**Nom**|**Description**|
+|**Name**|**Description**|
 |:-----|:-----|
 |Prix annuel|Les abonnements sont facturées mensuellement ou annuellement. Si vous avez choisi la facturation annuelle pendant l’achat de l’abonnement, le prix de la licence annuelle est reflété sur la facture. Si vous voulez modifier la périodicité de facturation, vous devrez annuler votre abonnement et le racheter en sélectionnant une autre périodicité de facturation.|
 |Période de facturation|La période de facturation correspond à la période écoulée depuis la date de la dernière facturation. La période de service représente la période pendant laquelle l'utilisation du service vous est facturée.|
@@ -139,6 +139,6 @@ Si vous payez par facture, vous pouvez ajouter ou modifier le numéro de bon de 
 
 ## <a name="related-articles"></a>Articles connexes
 
-[Payez votre abonnement Microsoft 365 pour les entreprises](pay-for-your-subscription.md)
+[Régler votre abonnement Microsoft 365 pour entreprises](pay-for-your-subscription.md)
 
 [ Options de paiement de Minecraft: Education Edition ](https://go.microsoft.com/fwlink/p/?linkid=838761)

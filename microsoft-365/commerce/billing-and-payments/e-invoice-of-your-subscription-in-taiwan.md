@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,16 +21,16 @@ search.appverid:
 ms.assetid: 66315e5b-883a-432b-8650-d896f95af228
 ROBOTS: NOINDEX
 description: En savoir plus sur la facture électronique de Microsoft 365 pour Taïwan.
-ms.openlocfilehash: 1ea9ff21e25229924cd6815999b9c0868173026f
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 2cdc3f6fe4b87f92b16355f10416fa99712c6fcb
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401785"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48638470"
 ---
 # <a name="understand-your-e-invoice-for-microsoft-365-for-business-taiwan"></a>Comprendre votre facture électronique pour Microsoft 365 pour les entreprises (Taïwan)
 
-une facture électronique est une facture électronique émise par le vendeur après l’achat d’un acheteur conformément aux exigences en matière de facturation électronique de l’administration fiscale de Taïwan. Les informations sont transmises au Cloud de la facture électronique de l’administration fiscale de Taïwan pour la conservation des enregistrements. Pour obtenir des informations sur la facture électronique de Taïwan, veuillez vous reporter ici :<a href="https://www.einvoice.nat.gov.tw/" target="_blank">財政部電子發票整合服務平台</a>
+une facture électronique est une facture électronique émise par le vendeur après l’achat d’un acheteur conformément aux exigences en matière de facturation électronique de l’administration fiscale de Taïwan. Les informations sont transmises au Cloud de la facture électronique de l’administration fiscale de Taïwan pour la conservation des enregistrements. Pour obtenir des informations sur la facture électronique de Taïwan, veuillez vous reporter ici : <a href="https://www.einvoice.nat.gov.tw/" target="_blank">財政部電子發票整合服務平台</a>
   
 Un exemple de copie de la facture électronique est inclus ici :
   

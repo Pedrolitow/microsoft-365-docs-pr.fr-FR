@@ -15,73 +15,73 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez comment Contoso tire parti de la solution de gestion des identités IDaaS et propose à ses employés une authentification basée sur le cloud, et une authentification fédérée à ses partenaires et ses clients.
-ms.openlocfilehash: 795fb7dcb886c792c80d3bb251c9cb5774f1bf97
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 10db0a35024595c4dba9a33ad83ae75bcad3870c
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686033"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48637246"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Identité de Contoso Corporation
 
-Microsoft fournit une IDaaS dans toutes ses offres cloud avec Azure Active Directory (Azure AD). Pour adopter Microsoft 365 pour Enterprise, la solution IDaaS de Contoso a dû tirer parti de son fournisseur d’identité locale tout en incluant l’authentification fédérée avec ses fournisseurs d’identité tiers approuvés existants.
+Microsoft fournit une identité sous forme de service (IDaaS) dans ses offres Cloud via Azure Active Directory (Azure AD). Pour adopter Microsoft 365 pour Enterprise, la solution Contoso IDaaS devait utiliser son fournisseur d’identité local et inclure l’authentification fédérée avec ses fournisseurs d’identité tiers approuvés existants.
 
-## <a name="contosos-active-directory-domain-services-forest"></a>Ensemble des services de domaine Active Directory Domain Services de Contoso
+## <a name="the-contoso-active-directory-domain-services-forest"></a>Forêt des services de domaine Active Directory contoso
 
-Contoso utilise une seule forêt Windows Server Active Directory Domain Services (AD DS) pour contoso.com et sept sous-domaines (un par région). Le siège social, les centres régionaux et les succursales disposent de contrôleurs de domaine pour l’authentification locale et l’autorisation.
+Contoso utilise une seule forêt des services de domaine Active Directory (AD DS) pour Contoso \. com avec sept sous-domaines, un pour chaque région du monde. Le siège social, les centres régionaux et les succursales disposent de contrôleurs de domaine pour l’authentification locale et l’autorisation.
 
-Voici la forêt et les domaines régionaux de Contoso dans les régions du monde où se trouvent des centres régionaux.
+Voici la forêt contoso avec des domaines régionaux pour les différentes parties du monde qui contiennent des concentrateurs régionaux.
 
 ![Forêt et domaines de Contoso dans le monde](../media/contoso-identity/contoso-identity-fig1.png)
  
-Contoso souhaitait utiliser les comptes et les groupes de la forêt contoso.com pour faciliter l’authentification et l’autorisation de ses services et de ses charges de travail Microsoft 365.
+Contoso a décidé d’utiliser les comptes et les groupes de la \. forêt Contoso com pour l’authentification et l’autorisation pour ses services et charges de travail Microsoft 365.
 
-## <a name="contosos-federated-authentication-infrastructure"></a>Infrastructure d’authentification fédérée de Contoso
+## <a name="the-contoso-federated-authentication-infrastructure"></a>Infrastructure d’authentification contoso fédérée
 
 Contoso autorise les éléments suivants :
 
-- Les clients ont le droit d’utiliser leurs comptes Microsoft, Facebook ou Google Mail pour se connecter à leur site web public.
-- Les fournisseurs et les partenaires peuvent utiliser leurs comptes LinkedIn, Salesforce ou Google Mail pour se connecter à l’extranet des partenaires.
+- Aux clients d’utiliser leurs comptes Microsoft, Facebook ou Google Mail pour se connecter au site Web public de la société.
+- Les fournisseurs et les partenaires peuvent utiliser leurs comptes LinkedIn, Salesforce ou Google Mail pour se connecter à l’extranet partenaires de l’entreprise.
 
-Voici le réseau de périmètre de Contoso comprenant un site web public, un extranet des partenaires et des serveurs pour les services AD FS (services de fédération Active Directory). Le réseau de périmètre est connecté à Internet, qui contient des clients, des partenaires et des services Internet.
+Voici la zone DMZ contoso contenant un site Web public, un extranet partenaire et un ensemble de serveurs AD FS. La zone DMZ est connectée à Internet et contient des clients, des partenaires et des services Internet.
 
-![Prise en charge de l’authentification fédérée par Contoso pour ses clients et ses partenaires](../media/contoso-identity/contoso-identity-fig2.png)
+![Prise en charge de contoso pour l’authentification fédérée pour les clients et les partenaires](../media/contoso-identity/contoso-identity-fig2.png)
  
-Les serveurs AD FS du DMZ facilitent l’authentification des informations d’identification client par leurs fournisseurs d’identité pour accéder au site web public et des informations d’identification partenaires pour accéder à l’extranet des partenaires.
+Les serveurs AD FS de la DMZ facilitent l’authentification des informations d’identification des clients par leurs fournisseurs d’identité pour accéder au site Web public et aux informations d’identification des partenaires pour accéder à l’extranet des partenaires.
 
-Contoso a décidé de conserver cette infrastructure pour la dédier à l’authentification des clients et des partenaires. Les architectes en identité de Contoso examinent actuellement la possibilité de convertir cette infrastructure en solutions [B2B](https://docs.microsoft.com/azure/active-directory/b2b/hybrid-organizations) et [B2C](https://docs.microsoft.com/azure/active-directory-b2c/solution-articles) Azure AD.
+Contoso a décidé de conserver cette infrastructure et de la dédier à l’authentification des partenaires et des clients. Les architectes d’identité contoso étudient la conversion de cette infrastructure en solutions [B2B](https://docs.microsoft.com/azure/active-directory/b2b/hybrid-organizations) et [B2C](https://docs.microsoft.com/azure/active-directory-b2c/solution-articles) Azure ad.
 
 ## <a name="hybrid-identity-with-password-hash-synchronization-for-cloud-based-authentication"></a>Identité hybride avec authentification directe pour l’authentification basée sur le cloud
 
-Contoso souhaite tirer parti de son ensemble local AD DS pour l’authentification aux ressources cloud de Microsoft 365. Il a décidé du hachage de synchronisation du mot de passe (PHS).
+Contoso souhaitait utiliser sa forêt AD DS locale pour l’authentification auprès des ressources cloud de Microsoft 365. Il a décidé d’utiliser la synchronisation de hachage de mot de passe (hachage).
 
-HACHAGE synchronise la forêt AD DS locale avec le client Azure AD de ses Microsoft 365 pour l’abonnement Enterprise, en copiant les comptes d’utilisateur et de groupe, ainsi qu’une version hachée des mots de passe de compte d’utilisateur. 
+HACHAGE synchronise la forêt AD DS locale avec le client Azure AD de ses Microsoft 365 pour l’abonnement Enterprise, en copiant les comptes d’utilisateur et de groupe, ainsi qu’une version hachée des mots de passe de compte d’utilisateur.
 
-Pour effectuer la synchronisation d’annuaire en cours, Contoso a déployé l’outil Azure AD Connect sur un serveur dans son centre de données de Paris. 
+Pour effectuer une synchronisation d’annuaires, Contoso a déployé l’outil Azure AD Connect sur un serveur dans son centre de centre de Paris.
 
-Voici le serveur exécutant la connexion Azure Active Directory Connect interrogeant l’ensemble Contoso AD DS pour les modifications de l’interrogation et la synchronisation de ces modifications avec le client Azure AD.
+Voici le serveur exécutant Azure AD Connect interrogeant la forêt Contoso AD DS pour les modifications, puis en synchronisant ces modifications avec le locataire Azure AD.
 
-![Infrastructure de la synchronisation d’annuaires de synchronisation de hachage de mot de passe de Contoso](../media/contoso-identity/contoso-identity-fig4.png)
+![Infrastructure de synchronisation d’annuaires contoso hachage](../media/contoso-identity/contoso-identity-fig4.png)
  
 ## <a name="conditional-access-policies-for-identity-and-device-access"></a>Stratégies d’accès conditionnel basé sur l’identité et l’appareil
 
 Contoso a créé un jeu d’Azure AD et Intune [stratégies d’accès conditionnel](identity-access-policies.md) pour trois niveaux de protection :
 
-- **Référence** les protections s’appliquent à tous les comptes d’utilisateurs
-- **Sensibles**les protections s’appliquent aux cadres dirigeants et membres du personnel exécutif
-- **Hautement réglementée**les protections s’appliquent à des utilisateurs spécifiques financiers, légaux et leur emplacement géographique de recherche ayant accès aux données hautement réglementées
+- Les protections de *base* s’appliquent à tous les comptes d’utilisateur.
+- Les protections *sensibles* s’appliquent au leadership et au personnel de direction.
+- Les protections *hautement réglementées* s’appliquent à des utilisateurs spécifiques des services financiers, juridiques et de recherche qui ont accès à des données hautement réglementées.
 
-Voici l’ensemble de stratégies d’accès conditionnel basées sur l’identité et l’appareil de Contoso.
+Voici l’ensemble des stratégies d’accès conditionnel d’appareil et d’identité contoso.
 
 ![Stratégies d’accès conditionnel basées sur l’identité et l’appareil de Contoso](../media/contoso-identity/contoso-identity-fig5.png)
  
 ## <a name="next-step"></a>Étape suivante
 
-[Découvrez](contoso-win10.md) comment Contoso tire parti de son infrastructure Microsoft Endpoint Configuration Manager pour déployer et maintenir à jour Windows 10 Entreprise au sein de son organisation.
+[Découvrez](contoso-win10.md) comment Contoso utilise son infrastructure de gestionnaire de configuration de point de terminaison Microsoft pour déployer et conserver Windows 10 entreprise actuelle au sein de son organisation.
 
 ## <a name="see-also"></a>Voir également
 
-[Feuille de route des identités pour Microsoft 365](identity-roadmap-microsoft-365.md)
+[Feuille de route relative à l’identité pour Microsoft 365](identity-roadmap-microsoft-365.md)
 
 [Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
 

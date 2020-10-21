@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: À partir du 14 septembre 2019, les banques des 31 pays de l’espace économique européen sont tenues de vérifier l’identité de la personne qui effectue un achat en ligne avant que le paiement ne puisse être traité.
 keywords: services de paiement directive 2, authentification client renforcée, authentification multifacteur
-ms.openlocfilehash: 571664736ac4c6e825398a076597bf4b69ec31a8
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: fc8784949cdacea10957660c99795b4ade0f9f7a
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402213"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48638422"
 ---
 # <a name="payment-services-directive-2-and-strong-customer-authentication-for-commercial-customers"></a>Services de paiement directive 2 et authentification client forte pour les clients commerciaux
 

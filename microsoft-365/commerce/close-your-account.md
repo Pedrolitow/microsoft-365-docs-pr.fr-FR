@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -17,12 +17,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Découvrez comment fermer votre compte auprès de Microsoft.
-ms.openlocfilehash: a92b9f2053d9acf4e8233bee7a42047f51288943
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: 9545c43ee27fb000149776527030b04b5e807a5c
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44898920"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48638374"
 ---
 # <a name="close-your-account"></a>Fermer votre compte
 
@@ -49,7 +49,7 @@ Si votre organisation utilise Active Directory qui se synchronise avec Azure AD,
 
 ## <a name="step-2-cancel-all-active-subscriptions"></a>Étape 2 : annuler tous les abonnements actifs
 
-1. Dans le centre d’administration, accédez à la page **facturation**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits</a> .
+1. Dans le centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
 
 2. Si la liste abonnements est affichée en mode **table** , cliquez sur la droite sur **cartes**.
 
@@ -61,7 +61,7 @@ Si votre organisation utilise Active Directory qui se synchronise avec Azure AD,
 
 ## <a name="step-3-delete-all-disabled-subscriptions"></a>Étape 3 : supprimer tous les abonnements désactivés
 
-1. Dans le centre d’administration, accédez à la page **facturation**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits</a> .
+1. Dans le centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
 
 2. Si la liste abonnements est affichée en mode **table** , cliquez sur la droite sur **cartes**.
 

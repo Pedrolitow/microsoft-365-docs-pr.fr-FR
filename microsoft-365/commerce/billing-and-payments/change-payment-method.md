@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8652f539-3123-4a8f-b9bd-6aa2f0e0372d
 description: Découvrez comment modifier le mode de paiement pour votre abonnement professionnel.
-ms.openlocfilehash: 41cf16397c4b3d2341721e741c6b293005971909
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 0c739597253db8b54b12cacfbaf55fce9cb36dd2
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432414"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48638602"
 ---
 # <a name="change-your-payment-method"></a>Changer votre mode de paiement
 
@@ -147,7 +147,7 @@ Si la quantité commandée est trop élevée, une vérification de solvabilité 
 1. Accédez à <a href="https://Microsoft365.com" target="_blank">Microsoft365.com</a> et achetez le même abonnement que celui dont vous disposez actuellement. Lors de l’extraction, choisissez l’option de paiement par facture.
 
     > [!IMPORTANT]
-    > Vous ne pouvez pas utiliser la page **vos produits** dans le centre d’administration pour acheter l’abonnement. Vous devez utiliser <a href="https://Microsoft365.com" target="_blank">Microsoft365.com</a>.
+    > Vous ne pouvez pas utiliser la page **vos produits** dans le centre d’administration pour acheter l’abonnement. Vous devez utiliser  <a href="https://Microsoft365.com" target="_blank">Microsoft365.com</a>.
 
 2. Une fois l’achat terminé, annulez l’abonnement d’origine. Vos utilisateurs sont automatiquement déplacés vers le nouvel abonnement.
 
