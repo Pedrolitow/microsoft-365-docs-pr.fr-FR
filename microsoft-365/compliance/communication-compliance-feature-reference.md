@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 7f1d3e13aebe7c7924732922bbbfc7417622d8c5
-ms.sourcegitcommit: e17fd18b01d70e6428263c20cbce4b92e2a97765
+ms.openlocfilehash: 4ede013a1c9a9bd054fc6965cbb12b5bbabb0b5e
+ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48626187"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48651406"
 ---
 # <a name="communication-compliance-feature-reference"></a>Référence de la fonctionnalité de conformité des communications
 
@@ -141,7 +141,7 @@ Pour plus d’informations sur la retraite de la surveillance dans Office 365, c
 
 ## <a name="policy-settings"></a>Paramètres de stratégie
 
-### <a name="users"></a>Utilisateurs
+### <a name="users"></a>Users
 
 Vous avez la possibilité de sélectionner **tous les utilisateurs** ou de définir des utilisateurs spécifiques dans une stratégie de conformité de communication. La sélection de **Tous les utilisateurs** applique la stratégie à tous les utilisateurs et les groupes auxquels n’importe quel utilisateur est inclus en tant que membre. La définition d’utilisateurs spécifiques applique la stratégie aux utilisateurs définis et aux groupes auxquels les utilisateurs définis sont inclus.
 
@@ -289,7 +289,7 @@ Les filtres de conformité de la communication vous permettent de filtrer et de 
 | **Destinataire** | Utilisateur auquel le message a été envoyé. |
 | **Sender** | La personne qui a envoyé le message. |
 | **Domaine de l’expéditeur** | Le domaine qui a envoyé le message. |
-| **Size** | Taille du message en Ko. |
+| **Taille** | Taille du message en Ko. |
 | **Subject/title** | Objet du message ou titre de conversation. |
 | **Tags** | Les balises affectées à un message, qu’elles soient *douteuses*, *conformes*ou *non conformes*. |
 | **Transmis à** | Nom d’utilisateur de la personne incluse dans le cadre d’une action de réaffectation de message. |
@@ -335,6 +335,9 @@ Si vous souhaitez modifier le niveau de gravité affecté dans une stratégie d�
 [Microsoft Power automate](https://docs.microsoft.com/power-automate/getting-started) est un service de flux de travail qui automatise les actions entre les applications et les services. En utilisant des flux provenant de modèles ou créés manuellement, vous pouvez automatiser les tâches courantes associées à ces applications et services. Lorsque vous activez la mise à l’arrêt automatique des flux pour la conformité de la communication, vous pouvez automatiser des tâches importantes pour les alertes et les utilisateurs. Vous pouvez configurer la gestion de l’alimentation automatique des flux pour avertir les responsables lorsque les utilisateurs ont des alertes de conformité et d’autres applications.
 
 Les clients disposant d’abonnements Microsoft 365 qui incluent la conformité aux communications n’ont pas besoin de puissance automatique supplémentaire pour utiliser le modèle automate de conformité de la conformité recommandé par défaut. Le modèle par défaut peut être personnalisé pour prendre en charge votre organisation et les scénarios principaux de conformité de communication. Si vous choisissez d’utiliser les fonctionnalités de Power automate Premium dans ces modèles, créez un modèle personnalisé à l’aide du connecteur Microsoft 365 Compliance Connector ou utilisez Power automates pour d’autres zones de conformité dans Microsoft 365, vous aurez peut-être besoin d’une alimentation automatique supplémentaire.
+
+>[!IMPORTANT]
+>Recevez-vous des messages d’invite pour la validation d’une licence supplémentaire lors du test de l’alimentation automatique des flux ? Il se peut que votre organisation n’ait pas encore reçu de mises à jour de service pour cette fonctionnalité d’aperçu. Les mises à jour sont déployées et toutes les organisations ayant des abonnements Microsoft 365 qui incluent la conformité de la communication doivent disposer de la prise en charge de licences pour les flux créés à partir des modèles automateurs d’alimentation recommandés le 30 octobre 2020.
 
 ![Mise en conformité de la communication automate](../media/communication-compliance-power-automate.png)
 

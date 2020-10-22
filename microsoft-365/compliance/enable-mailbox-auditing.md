@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 ms.custom: seo-marvel-apr2020
 description: La journalisation d’audit de boîte aux lettres est activée par défaut dans Microsoft 365 (également appelée audit de boîte aux lettres par défaut ou audit de boîte aux lettres par défaut). En d’autres termes, certaines actions effectuées par les propriétaires de boîtes aux lettres, les délégués et les administrateurs sont automatiquement enregistrées dans un journal d’audit de boîte aux lettres, dans lequel vous pouvez rechercher des activités effectuées sur la boîte aux lettres.
-ms.openlocfilehash: 7c0a4417496bcf18362dbcfe53b751c549ef98b9
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 8d91936f82070848dc65d1b160d4df0165875213
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47545840"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48649623"
 ---
 # <a name="manage-mailbox-auditing"></a>Gérer l’audit de boîte aux lettres
 
@@ -35,7 +35,7 @@ Voici quelques avantages de l’audit des boîtes aux lettres par défaut :
 
 - Vous n’avez pas besoin de gérer les actions de boîte aux lettres qui sont auditées. Un ensemble prédéfini d’actions de boîte aux lettres est audité par défaut pour chaque type d’ouverture de session (administrateur, délégué et propriétaire).
 
-- Lorsque Microsoft publie une nouvelle action de boîte aux lettres (en particulier les actions qui contribuent à protéger votre organisation et vous aide à effectuer des enquêtes de façon judiciaire), l’action est automatiquement ajoutée à la liste des actions de boîte aux lettres qui sont auditées par défaut. Cela signifie que vous n’avez pas besoin de surveiller ajouter de nouvelles actions sur les boîtes aux lettres.
+- Lorsque Microsoft publie une nouvelle action de boîte aux lettres, l’action peut être automatiquement ajoutée à la liste des actions de boîte aux lettres qui sont auditées par défaut (sous réserve que l’utilisateur dispose de la licence appropriée). Cela signifie que vous n’avez pas besoin de surveiller ajouter de nouvelles actions sur les boîtes aux lettres.
 
 - Vous disposez d’une stratégie d’audit de boîte aux lettres cohérente au sein de votre organisation (car vous auditez les mêmes actions pour toutes les boîtes aux lettres).
 
@@ -90,7 +90,7 @@ Les types d’ouverture de session classent l’utilisateur qui a effectué les 
 
     - eDiscovery ou Advanced eDiscovery dans le centre de conformité.
 
-    - Découverte électronique inaltérable dans Exchange Online.
+    - In-Place eDiscovery dans Exchange Online.
 
   - La boîte aux lettres est accessible à l’aide de l’Éditeur MAPI Microsoft Exchange Server.
 
@@ -339,7 +339,7 @@ Get-MailboxAuditBypassAssociation -Identity <MailboxIdentity> | Format-List Audi
 
 La valeur **true** indique que l’enregistrement d’audit de boîte aux lettres est contourné pour l’utilisateur.
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
 - Bien que l’enregistrement d’audit de boîte aux lettres soit activé par défaut pour toutes les organisations, seuls les utilisateurs disposant de la licence E5 retournent les événements du journal d’audit de la boîte aux lettres dans [le centre de sécurité & conformité](search-the-audit-log-in-security-and-compliance.md) ou via l' [API d’activité de gestion Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference) **par défaut**.
 

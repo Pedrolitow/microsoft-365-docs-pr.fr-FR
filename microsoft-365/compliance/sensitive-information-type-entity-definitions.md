@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: La protection contre la perte de données (DLP) dans le centre de sécurité &amp; conformité inclut 80 types d’informations sensibles que vous pouvez utiliser dans vos stratégies DLP. Cette rubrique répertorie tous ces types d'informations sensibles et indique ce qu'une stratégie DLP recherche pour chaque type.
-ms.openlocfilehash: 8482501dc978433587c431d18ec93b9e78fb8e03
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: 288c53d5e9264942e12d5634cec172a65ee79ca6
+ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487492"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48656051"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Définitions d’entités des types d’informations sensibles
 
@@ -60,14 +60,20 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - La fonction Func_aba_routing trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_ABA_Routing est trouvé.
 
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 65 % si, dans une proximité de 300 caractères :
+- La fonction Func_aba_routing trouve un contenu qui correspond au modèle.
+
 ```xml
-<!-- ABA Routing Number -->
-<Entity id="cb353f78-2b72-4c3c-8827-92ebe4f69fdf" patternsProximity="300" recommendedConfidence="75">
+    <!-- ABA Routing Number -->
+    <Entity id="cb353f78-2b72-4c3c-8827-92ebe4f69fdf" patternsProximity="300" recommendedConfidence="75">
       <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_aba_routing" />
         <Match idRef="Keyword_ABA_Routing" />
       </Pattern>
- </Entity>
+      <Pattern confidenceLevel="65">
+        <IdMatch idRef="Func_aba_routing" />
+      </Pattern>
+    </Entity>
 ```
 
 
@@ -75,37 +81,36 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="keyword_aba_routing"></a>Keyword_aba_routing
 
-- ABA
-- # aba
-- # routage aba
-- numéro de routage aba
-- ABA #
-- abarouting #
 - numéro aba
+- ABA #
+- ABA
+- abarouting #
 - abaroutingnumber
-- # routage american bank association
-- numéro de routage american bank association
 - americanbankassociationrouting #
 - americanbankassociationroutingnumber
-- numéro de routage bancaire
 - bankrouting #
 - bankroutingnumber
+- positionnement #
+- n ° de routage
+- Numéro d’acheminement
 - numéro de routage
-- RTN 
-   
+- positionnement #
+- RTN
+
+
 ## <a name="argentina-national-identity-dni-number"></a>Numéro d’identité nationale (DNI) Argentine
 
 ### <a name="format"></a>Format
 
-Huit chiffres séparés par des points
+Huit chiffres avec ou sans points
 
 ### <a name="pattern"></a>Modèle
 
 Huit chiffres :
 - deux chiffres
-- un point
+- un point facultatif
 - trois chiffres
-- un point
+- un point facultatif
 - trois chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -133,14 +138,14 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 #### <a name="keyword_argentina_national_id"></a>Keyword_argentina_national_id
 
 - Argentina National Identity number 
-- Identité 
-- Identification de la carte d’identité nationale 
+- cedula 
+- cédula 
 - DNI 
-- Carte d’interface réseau nationale du registre des personnes 
-- Documento Nacional de Identidad 
-- Registro Nacional de las Personas 
-- Identidad 
-- Identificación 
+- Documento Nacional de identidad 
+- Documento número 
+- Numéro de Documento 
+- Registro Nacional de las personnes 
+- rnp 
    
 ## <a name="australia-bank-account-number"></a>Numéro de compte bancaire australien
 
@@ -697,8 +702,8 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - driverlicences
 - Gestionnaire de la LIC
 - pilote conduire
-- permis de conduire
-- licences de pilotes
+- Permis de conduire
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - driverslic
@@ -710,7 +715,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - pilotes Lic
 - pilotes conduire
 - permis de conduire
-- licences de pilotes
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - driver'lic
@@ -734,7 +739,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Gestionnaire de la LIC
 - conduire du pilote
 - permis de conduire
-- permis de conduire
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - LD #
@@ -786,8 +791,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire
- 
+- permis de conduire 
 - permis de conduire
 - dlno #
 - permis Lic
@@ -803,9 +807,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - conduite conduire
 - licences de conduite
 - permis de conduire
-
 - permis de conduire
-
 - permis de conduire
 - n ° de DL
 - dlno
@@ -866,9 +868,8 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 #### <a name="keywords_austria_eu_national_id_card"></a>Keywords_austria_eu_national_id_card
 
 - Numéro d’identité
-- 
-id national
-- personalausweis republik österreich
+- id national
+- personalausweis republik österreich
 
 ## <a name="austria-passport-number"></a>Numéro de passeport autrichien
 Cette entité de type d’informations sensibles est uniquement disponible dans le type sensitiveinformation de numéro de passeport UE.
@@ -913,13 +914,13 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - tel #
-- tel #
+- tel #
 - passportid
 - passeports
 - n ° passeport
 - Numéro de passeport
 - passportnumber
-- Numéro de passeport
+- numéro de passeport
 - passportnumbers
 - numéros de passeport
 
@@ -1043,7 +1044,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - st.nr.
 - steuernummer
 - id fiscal
-
 - n ° d’identification fiscale
 - Numéro d’identification de taxe
 - n ° taxe #
@@ -1648,8 +1648,8 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - driverlicences
 - Gestionnaire de la LIC
 - pilote conduire
-- permis de conduire
-- licences de pilotes
+- Permis de conduire
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - driverslic
@@ -1661,7 +1661,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - pilotes Lic
 - pilotes conduire
 - permis de conduire
-- licences de pilotes
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - driver'lic
@@ -1685,7 +1685,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Gestionnaire de la LIC
 - conduire du pilote
 - permis de conduire
-- permis de conduire
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - LD #
@@ -1737,8 +1737,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire
- 
+- permis de conduire 
 - permis de conduire
 - dlno #
 - permis Lic
@@ -1754,9 +1753,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - conduite conduire
 - licences de conduite
 - permis de conduire
-
 - permis de conduire
-
 - permis de conduire
 - n ° de DL
 - dlno
@@ -1773,8 +1770,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - fuehrerschein
 - fuhrerscheinnummer
 - fuehrerscheinnummer
-- 
-permis de conduire
+- permis de conduire
 - numéro permis conduire
 
 
@@ -1850,7 +1846,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - numéro d’assuré
 - Numéro de registre national
 - numéro de sécurité
-
 - numéro d’identification
 - numéro d’immatriculation
 - numéro national
@@ -1862,12 +1857,11 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - son
 - registrationsnumme
 - registrierung
-- Numéro de sécurité sociale
+- numéro de sécurité sociale
 - SSN #
 - SSN
 - steuernummer
 - id fiscal
-
 - n ° d’identification fiscale
 - Numéro d’identification de taxe
 - n ° taxe #
@@ -1923,13 +1917,13 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - tel #
-- tel #
+- tel #
 - passportid
 - passeports
 - n ° passeport
 - Numéro de passeport
 - passportnumber
-- Numéro de passeport
+- numéro de passeport
 - passportnumbers
 - numéros de passeport
 
@@ -2323,8 +2317,8 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - driverlicences
 - Gestionnaire de la LIC
 - pilote conduire
-- permis de conduire
-- licences de pilotes
+- Permis de conduire
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - driverslic
@@ -2336,7 +2330,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - pilotes Lic
 - pilotes conduire
 - permis de conduire
-- licences de pilotes
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - driver'lic
@@ -2360,7 +2354,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Gestionnaire de la LIC
 - conduire du pilote
 - permis de conduire
-- permis de conduire
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - LD #
@@ -2412,8 +2406,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire
- 
+- permis de conduire 
 - permis de conduire
 - dlno #
 - permis Lic
@@ -2429,9 +2422,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - conduite conduire
 - licences de conduite
 - permis de conduire
-
 - permis de conduire
-
 - permis de conduire
 - n ° de DL
 - dlno
@@ -2505,13 +2496,11 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - bnn
 - bucn #
 - bucn
-- edinen grazhdanski nomer
+- edinen grazhdanski nomer
 - egn #
 - egn
 - numéro d’identification
-
-- 
-id national
+- id national
 - numéro national
 - nationalnumber #
 - nationalnumber
@@ -2519,7 +2508,7 @@ id national
 - n ° personnel
 - numéro personnel
 - personalidnumber #
-- Numéro de sécurité sociale
+- numéro de sécurité sociale
 - SSN #
 - SSN
 - ID civil uniforme
@@ -2532,17 +2521,17 @@ id national
 - Numéro de citoyenneté unique
 - егн #
 - егн
-- единен граждански номер
-- идентификационен номер
-- личен номер
-- лична идентификация
-- лично не
-- национален номер
-- номер на гражданството
+- единен граждански номер
+- идентификационен номер
+- личен номер
+- лична идентификация
+- лично не
+- национален номер
+- номер на гражданството
 - ID униформ
 - униформ граждански ID
-- униформ граждански не
-- униформ граждански номер
+- униформ граждански не
+- униформ граждански номер
 - униформгражданскиid #
 - униформгражданскине. #
 
@@ -2585,13 +2574,13 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - tel #
-- tel #
+- tel #
 - passportid
 - passeports
 - n ° passeport
 - Numéro de passeport
 - passportnumber
-- Numéro de passeport
+- numéro de passeport
 - passportnumbers
 - numéros de passeport
 
@@ -3333,28 +3322,20 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="keyword_cc_verification"></a>Keyword_cc_verification
 
-- 
-vérification de la carte
-
+- vérification de la carte
 - numéro d’identification de la carte
 - cryptogramme
 - nic
 - cvc2
 - cvv2
-- 
-pin block
+- pin block
 - code de sécurité
-
 - numéro de sécurité
-
 - n° de sécurité
-
 - numéro d’émission
-
 - n° d’émission
 - cryptogramme
-- 
-numéro de sécurité
+- numéro de sécurité
 - numéro de sécurité
 - kreditkartenprüfnummer
 - kreditkartenprufnummer
@@ -3365,32 +3346,26 @@ numéro de sécurité
 - sicherheitsnummer
 - verfalldatum
 - codice di verifica
-- contre.sicurezza
-- 
-cod sicurezza
+- contre. sicurezza
+- cod sicurezza
 - n autorizzazione
 - código
 - codigo
-- contre.SEG
-- 
-cod seg
+- contre. SEG
+- cod seg
 - código de segurança
-
 - codigo de seguranca
-
 - codigo de segurança
-
 - código de seguranca
-- cód.segurança
-- contre.seguranca
-- contre.segurança
-- cód.seguranca
-- cód segurança
-- COD Seguranca
-- COD Segurança
-- cód seguranca
+- cód. segurança
+- contre. seguranca
+- contre. segurança
+- cód. seguranca
+- cód segurança
+- cod seguranca
+- cod segurança
+- cód seguranca
 - número de verificação
-
 - numero de verificacao
 - ablauf
 - gültig bis
@@ -3398,20 +3373,15 @@ cod seg
 - gultig bis
 - gultigkeitsdatum
 - scadenza
-- 
-data scad
+- data scad
 - fecha de expiracion
-
 - fecha de venc
 - vencimiento
-- 
-válido hasta
+- válido hasta
 - valido hasta
 - vto
-- 
-data de expiração
+- data de expiração
 - data de expiracao
-
 - data em que expira
 - validade
 - valorisation
@@ -3420,9 +3390,9 @@ data de expiração
 - Numéro de transaction
 - Numéro de référence
 - セキュリティコード
-- セキュリティ コード
+- セキュリティ コード
 - セキュリティナンバー
-- セキュリティ ナンバー
+- セキュリティ ナンバー
 - セキュリティ番号
 
 #### <a name="keyword_cc_name"></a>Keyword_cc_name
@@ -3431,15 +3401,13 @@ data de expiração
 - american express
 - americanexpress
 - americano espresso
-
 - Délivrance
 - MasterCard
 - master card
 - McDonald
 - MasterCard
-- 
-master cards
-- Club de dîner
+- master cards
+- diner’s Club
 - diners club
 - dinersclub
 - connaissance
@@ -3449,27 +3417,20 @@ master cards
 - JCB
 - BrandSmart
 - japanese card bureau
-
 - carte blanche
 - carteblanche
 - carte de crédit
 - CC #
 - n ° de CC :
-- Date d’expiration
+- date d’expiration
 - date d’exp
-
-- 
-date d’expiration
-- 
-date d’expiration
-- 
-date d’exp
-- 
-date expiration
+- date d’expiration
+- date d’expiration
+- date d’exp
+- date expiration
 - carte bancaire
 - bankcard
-- 
-numéro de carte
+- numéro de carte
 - num de carte
 - carte
 - carte
@@ -3495,10 +3456,8 @@ numéro de carte
 - cartes de retrait
 - retrait
 - envoier
-- 
-en route
+- en route
 - type de carte
-
 - Cardmember ACCT
 - compte cardmember
 - Cardno
@@ -3509,22 +3468,14 @@ en route
 - compte de membre de carte
 - Cardmember ACCT.
 - n° carte
-
 - n ° carte
 - numéro de carte
-
 - carte bancaire
-
 - carte de crédit
-
 - carte de credit
-
 - numéro de carte
-
 - numero de carte
-
 - nº de la carte
-
 - nº de carte
 - kreditkarte
 - karte
@@ -3538,91 +3489,57 @@ en route
 - kartennummer
 - kreditkartennummer
 - kreditkarten-nummer
-- 
-Carta di credito
+- Carta di credito
 - Carta credito
-- No.Carta
+- No. Carta
 - n carta
-- Nr.Carta
-- 
-nr carta
+- Nr. Carta
+- nr carta
 - numero carta
-
 - numero della carta
-
 - numero di carta
-
 - tarjeta credito
-
 - tarjeta de credito
-
-- 
-tarjeta crédito
-- 
-tarjeta de crédito
+- tarjeta crédito
+- tarjeta de crédito
 - tarjeta de atm
-
 - tarjeta atm
-
 - tarjeta debito
-
 - tarjeta de debito
-
-- 
-tarjeta débito
-- 
-tarjeta de débito
+- tarjeta débito
+- tarjeta de débito
 - nº de tarjeta
-- Nbre.de tarjeta
-- non de Tarjeta
+- Nbre. de tarjeta
+- no de tarjeta
 - numero de tarjeta
-
 - número de tarjeta
-
 - tarjeta no
 - tarjetahabiente
-- 
-cartão de crédito
+- cartão de crédito
 - cartão de credito
-
 - cartao de crédito
-
 - cartao de credito
-
 - cartão de débito
-
 - cartao de débito
-
 - cartão de debito
-
 - cartao de debito
-
 - débito automático
 - debito automatico
-
-- 
-número do cartão
+- número do cartão
 - numero do cartão
-
 - número do cartao
-
 - numero do cartao
-
 - número de cartão
-
 - numero de cartão
-
 - número de cartao
-
 - numero de cartao
-
-- n º do cartão
+- nº do cartão
 - nº do cartao
-- n º.do cartão
-- non cartão
-- non cartao
-- Nbre.do cartão
-- Nbre.do cartao
+- n º. do cartão
+- no do cartão
+- no do cartao
+- Nbre. do cartão
+- Nbre. do cartao
 - クレジットカード番号
 - クレジットカードナンバー
 - クレジットカード＃
@@ -3634,23 +3551,23 @@ número do cartão
 - カード＃
 - アメックス
 - アメリカンエクスプレス
-- アメリカン エクスプレス
+- アメリカン エクスプレス
 - Visaカード
 - Visa カード
 - マスターカード
-- マスター カード
+- マスター カード
 - マスター
 - ダイナースクラブ
-- ダイナース クラブ
+- ダイナース クラブ
 - ダイナース
 - 有効期限
 - 期限
 - キャッシュカード
-- キャッシュ カード
+- キャッシュ カード
 - カード名義人
 - カードの名義人
 - カードの名義
-- デビット カード
+- デビット カード
 - デビットカード
 
 
@@ -3701,8 +3618,8 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - driverlicences
 - Gestionnaire de la LIC
 - pilote conduire
-- permis de conduire
-- licences de pilotes
+- Permis de conduire
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - driverslic
@@ -3714,7 +3631,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - pilotes Lic
 - pilotes conduire
 - permis de conduire
-- licences de pilotes
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - driver'lic
@@ -3738,7 +3655,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Gestionnaire de la LIC
 - conduire du pilote
 - permis de conduire
-- permis de conduire
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - LD #
@@ -3790,8 +3707,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire
- 
+- permis de conduire 
 - permis de conduire
 - dlno #
 - permis Lic
@@ -3807,9 +3723,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - conduite conduire
 - licences de conduite
 - permis de conduire
-
 - permis de conduire
-
 - permis de conduire
 - n ° de DL
 - dlno
@@ -3857,20 +3771,19 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="keyword_croatia_id_card"></a>Keyword_croatia_id_card
 
-- majstorski broj građana
+- majstorski broj građana
 - Numéro de citoyen principal
-- nacionalni identifikacijski broj
-- Numéro d’identification nationale
+- nacionalni identifikacijski broj
+- numéro d’identification nationale
 - OIB #
 - OIB
-- osobna iskaznica
+- osobna iskaznica
 - ID osobni
-- osobni identifikacijski broj
+- osobni identifikacijski broj
 - Numéro d’identification personnel
-- porezni broj
-- porezni identifikacijski broj
+- porezni broj
+- porezni identifikacijski broj
 - id fiscal
-
 - n ° d’identification fiscale
 - Numéro d’identification de taxe
 - n ° taxe #
@@ -3926,13 +3839,13 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - tel #
-- tel #
+- tel #
 - passportid
 - passeports
 - n ° passeport
 - Numéro de passeport
 - passportnumber
-- Numéro de passeport
+- numéro de passeport
 - passportnumbers
 - numéros de passeport
 
@@ -3986,20 +3899,19 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="keyword_croatia_oib_number"></a>Keyword_croatia_oib_number
 
-- majstorski broj građana
+- majstorski broj građana
 - Numéro de citoyen principal
-- nacionalni identifikacijski broj
-- Numéro d’identification nationale
+- nacionalni identifikacijski broj
+- numéro d’identification nationale
 - OIB #
 - OIB
-- osobna iskaznica
+- osobna iskaznica
 - ID osobni
-- osobni identifikacijski broj
+- osobni identifikacijski broj
 - Numéro d’identification personnel
-- porezni broj
-- porezni identifikacijski broj
+- porezni broj
+- porezni identifikacijski broj
 - id fiscal
-
 - n ° d’identification fiscale
 - Numéro d’identification de taxe
 - n ° taxe #
@@ -4124,8 +4036,8 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - driverlicences
 - Gestionnaire de la LIC
 - pilote conduire
-- permis de conduire
-- licences de pilotes
+- Permis de conduire
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - driverslic
@@ -4137,7 +4049,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - pilotes Lic
 - pilotes conduire
 - permis de conduire
-- licences de pilotes
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - driver'lic
@@ -4161,7 +4073,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Gestionnaire de la LIC
 - conduire du pilote
 - permis de conduire
-- permis de conduire
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - LD #
@@ -4213,8 +4125,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire
- 
+- permis de conduire 
 - permis de conduire
 - dlno #
 - permis Lic
@@ -4230,9 +4141,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - conduite conduire
 - licences de conduite
 - permis de conduire
-
 - permis de conduire
-
 - permis de conduire
 - n ° de DL
 - dlno
@@ -4287,8 +4196,8 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 - Numéro de carte d’identité
 - Numéro de carte d’identité
-- kimlik karti
-- Numéro d’identification nationale
+- kimlik karti
+- numéro d’identification nationale
 - Numéro d’identification personnel
 - ταυτοτητασ
 
@@ -4332,13 +4241,13 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - tel #
-- tel #
+- tel #
 - passportid
 - passeports
 - n ° passeport
 - Numéro de passeport
 - passportnumber
-- Numéro de passeport
+- numéro de passeport
 - passportnumbers
 - numéros de passeport
 
@@ -4407,7 +4316,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 #### <a name="keywords_cyprus_eu_tax_file_number"></a>Keywords_cyprus_eu_tax_file_number
 
 - id fiscal
-
 - code d’identification fiscale
 - n ° d’identification fiscale
 - Numéro d’identification de taxe
@@ -4428,10 +4336,10 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Etain #
 - kimlik Kodu
 - kimlik numarası
-- αριθμός φορολογικού μητρώου
-- κωδικός φορολογικού μητρώου
-- φορολογική ταυτότητα
-- φορολογικού κωδικού
+- αριθμός φορολογικού μητρώου
+- κωδικός φορολογικού μητρώου
+- φορολογική ταυτότητα
+- φορολογικού κωδικού
 
 
 ## <a name="czech-drivers-license-number"></a>Numéro de permis de conduire tchèque
@@ -4485,8 +4393,8 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - driverlicences
 - Gestionnaire de la LIC
 - pilote conduire
-- permis de conduire
-- licences de pilotes
+- Permis de conduire
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - driverslic
@@ -4498,7 +4406,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - pilotes Lic
 - pilotes conduire
 - permis de conduire
-- licences de pilotes
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - driver'lic
@@ -4522,7 +4430,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Gestionnaire de la LIC
 - conduire du pilote
 - permis de conduire
-- permis de conduire
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - LD #
@@ -4574,8 +4482,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire
- 
+- permis de conduire 
 - permis de conduire
 - dlno #
 - permis Lic
@@ -4591,9 +4498,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - conduite conduire
 - licences de conduite
 - permis de conduire
-
 - permis de conduire
-
 - permis de conduire
 - n ° de DL
 - dlno
@@ -4646,13 +4551,13 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - tel #
-- tel #
+- tel #
 - passportid
 - passeports
 - n ° passeport
 - Numéro de passeport
 - passportnumber
-- Numéro de passeport
+- numéro de passeport
 - passportnumbers
 - numéros de passeport
 
@@ -4722,32 +4627,31 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Numéro de naissance
 - ID de République tchèque
 - czechidno #
-- daňové číslo
-- identifikační číslo
+- daňové číslo
+- identifikační číslo
 - n ° d’identité
 - Numéro d’identité
 - identityno #
 - identityno
 - Numéro d’assurance
-- Numéro d’identification nationale
+- numéro d’identification nationale
 - nationalnumber #
 - numéro national
-- osobní číslo
+- osobní číslo
 - personalidnumber #
 - Numéro d’identification personnel
 - Numéro d’identification personnel
 - numéro personnel
 - électro #
 - pid
-- pojištění číslo
+- pojištění číslo
 - rč
-- rodne cislo
-- rodné číslo
+- rodne cislo
+- rodné číslo
 - SSN
 - SSN #
-- Numéro de sécurité sociale
+- numéro de sécurité sociale
 - id fiscal
-
 - n ° d’identification fiscale
 - Numéro d’identification de taxe
 - n ° taxe #
@@ -4874,8 +4778,8 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - driverlicences
 - Gestionnaire de la LIC
 - pilote conduire
-- permis de conduire
-- licences de pilotes
+- Permis de conduire
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - driverslic
@@ -4887,7 +4791,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - pilotes Lic
 - pilotes conduire
 - permis de conduire
-- licences de pilotes
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - driver'lic
@@ -4911,7 +4815,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Gestionnaire de la LIC
 - conduire du pilote
 - permis de conduire
-- permis de conduire
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - LD #
@@ -4963,8 +4867,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire
- 
+- permis de conduire 
 - permis de conduire
 - dlno #
 - permis Lic
@@ -4980,9 +4883,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - conduite conduire
 - licences de conduite
 - permis de conduire
-
 - permis de conduire
-
 - permis de conduire
 - n ° de DL
 - dlno
@@ -5033,13 +4934,13 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - tel #
-- tel #
+- tel #
 - passportid
 - passeports
 - n ° passeport
 - Numéro de passeport
 - passportnumber
-- Numéro de passeport
+- numéro de passeport
 - passportnumbers
 - numéros de passeport
 
@@ -5096,17 +4997,16 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="keyword_denmark_id"></a>Keyword_denmark_id
 
-- centrale personregister
+- centrale personregister
 - registreringssystem civil
 - cardio
 - cardio #
-- gesundheitskarte nummer
-- gesundheitsversicherungkarte nummer
+- gesundheitskarte nummer
+- gesundheitsversicherungkarte nummer
 - carte d’intégrité
 - Numéro de carte d’assurance maladie
 - Numéro d’assurance-maladie
 - numéro d’identification
-
 - identifikationsnummer
 - identifikationsnummer #
 - Numéro d’identité
@@ -5124,10 +5024,10 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - SSN
 - SSN #
 - ID Skat
-- skat kode
-- skat nummer
+- skat kode
+- skat nummer
 - skattenummer
-- Numéro de sécurité sociale
+- numéro de sécurité sociale
 - sundhedsforsikringskort
 - sundhedsforsikringsnummer
 - sundhedskort
@@ -5140,7 +5040,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Numéro de taxe
 - Numéro d’enregistrement taxe
 - id fiscal
-
 - Numéro d’identification de taxe
 - taxi #
 - taxnumber #
@@ -5237,7 +5136,7 @@ deux lettres suivies de sept chiffres
 
 Le modèle doit inclure tous les éléments suivants :
 - une lettre (ne respecte pas la casse) à partir de cet ensemble de lettres possibles : abcdefghjklmnprstux, qui est un code de l’abonné 
-- une lettre (ne respecte pas la casse), qui est la première lettre du nom de famille de l’inscrit 
+- une lettre (ne respecte pas la casse), qui est la première lettre du nom de famille ou du chiffre « 9 » de l’inscrit
 - sept chiffres, dont le dernier est le chiffre de contrôle
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -5248,20 +5147,41 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
 - La fonction Func_dea_number trouve un contenu qui correspond au modèle.
+- Un mot clé from `Keyword_dea_number` est trouvé
+- La somme de contrôle est correcte.
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
+- La fonction Func_dea_number trouve un contenu qui correspond au modèle.
 - La somme de contrôle est correcte.
 
 ```xml
-<!-- DEA Number -->
-<Entity id="9a5445ad-406e-43eb-8bd7-cac17ab6d0e4" recommendedConfidence="85" patternsProximity="300">
-  <Pattern confidenceLevel="85">
-     <IdMatch idRef="Func_dea_number"/>
-  </Pattern>
-</Entity>
+    <!-- DEA Number -->
+    <Entity id="9a5445ad-406e-43eb-8bd7-cac17ab6d0e4" patternsProximity="300" recommendedConfidence="85">
+      <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_dea_number" />
+      </Pattern>
+      <Version minEngineVersion="15.20.1207.000" maxEngineVersion="15.20.3134.000">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_dea_number" />
+        </Pattern>
+      </Version>
+      <Version minEngineVersion="15.20.3135.000">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_dea_number" />
+          <Match idRef="Keyword_dea_number" />
+        </Pattern>
+      </Version>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
-aucune
+#### <a name="keyword_dea_number"></a>Keyword_dea_number
+
+- DEA
+- DEA #
+- administration de l’application de médicament
+- organisme d’application pharmaceutique
 
 
 ## <a name="estonia-drivers-license-number"></a>Numéro de permis de conduire Estonie
@@ -5313,8 +5233,8 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - driverlicences
 - Gestionnaire de la LIC
 - pilote conduire
-- permis de conduire
-- licences de pilotes
+- Permis de conduire
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - driverslic
@@ -5326,7 +5246,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - pilotes Lic
 - pilotes conduire
 - permis de conduire
-- licences de pilotes
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - driver'lic
@@ -5350,7 +5270,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Gestionnaire de la LIC
 - conduire du pilote
 - permis de conduire
-- permis de conduire
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - LD #
@@ -5402,8 +5322,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire
- 
+- permis de conduire 
 - permis de conduire
 - dlno #
 - permis Lic
@@ -5419,9 +5338,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - conduite conduire
 - licences de conduite
 - permis de conduire
-
 - permis de conduire
-
 - permis de conduire
 - n ° de DL
 - dlno
@@ -5495,9 +5412,9 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - isikukood #
 - isikukood
 - ID maksu
-- maksukohustuslase identifitseerimisnumber
+- maksukohustuslase identifitseerimisnumber
 - maksunumber
-- Numéro d’identification nationale
+- numéro d’identification nationale
 - numéro national
 - code personnel
 - Numéro d’identification personnel
@@ -5505,7 +5422,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Numéro d’identification personnel
 - personalidnumber #
 - id fiscal
-
 - n ° d’identification fiscale
 - Numéro d’identification de taxe
 - n ° taxe #
@@ -5562,13 +5478,13 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - tel #
-- tel #
+- tel #
 - passportid
 - passeports
 - n ° passeport
 - Numéro de passeport
 - passportnumber
-- Numéro de passeport
+- numéro de passeport
 - passportnumbers
 - numéros de passeport
 
@@ -6131,8 +6047,8 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - driverlicences
 - Gestionnaire de la LIC
 - pilote conduire
-- permis de conduire
-- licences de pilotes
+- Permis de conduire
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - driverslic
@@ -6144,7 +6060,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - pilotes Lic
 - pilotes conduire
 - permis de conduire
-- licences de pilotes
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - driver'lic
@@ -6168,7 +6084,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Gestionnaire de la LIC
 - conduire du pilote
 - permis de conduire
-- permis de conduire
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - LD #
@@ -6220,8 +6136,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire
- 
+- permis de conduire 
 - permis de conduire
 - dlno #
 - permis Lic
@@ -6237,9 +6152,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - conduite conduire
 - licences de conduite
 - permis de conduire
-
 - permis de conduire
-
 - permis de conduire
 - n ° de DL
 - dlno
@@ -6305,7 +6218,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - ehic #
 - ehic
 - finlandehicnumber #
-- finska sjukförsäkringskort
+- finska sjukförsäkringskort
 - carte d’intégrité
 - carte d’assurance-maladie
 - Numéro d’assurance-maladie
@@ -6313,9 +6226,9 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - sairaanhoitokortin
 - sairausvakuutuskortti
 - sairausvakuutusnumero
-- sjukförsäkring nummer
+- sjukförsäkring nummer
 - sjukförsäkringskort
-- suomen sairausvakuutuskortti
+- suomen sairausvakuutuskortti
 - terveyskortti
 
 
@@ -6363,8 +6276,8 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-- ainutlaatuinen henkilökohtainen tunnus
-- henkilökohtainen tunnus
+- ainutlaatuinen henkilökohtainen tunnus
+- henkilökohtainen tunnus
 - henkilötunnus
 - henkilötunnusnumero #
 - henkilötunnusnumero
@@ -6372,12 +6285,11 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - n ° ID
 - Numéro d’identification
 - numéro d’identification
-
 - identiteetti numérique
 - Numéro d’identité
 - idnumber
-- kansallinen henkilötunnus
-- kansallisen henkilökortin
+- kansallinen henkilötunnus
+- kansallisen henkilökortin
 - carte d’identité nationale
 - Numéro d’identification nationale
 - ID personnel
@@ -6385,10 +6297,9 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - personalidnumber #
 - personbeteckning
 - personnummer
-- Numéro de sécurité sociale
+- numéro de sécurité sociale
 - sosiaaliturvatunnus
 - id fiscal
-
 - n ° d’identification fiscale
 - Numéro d’identification de taxe
 - n ° taxe #
@@ -6452,13 +6363,13 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - tel #
-- tel #
+- tel #
 - passportid
 - passeports
 - n ° passeport
 - Numéro de passeport
 - passportnumber
-- Numéro de passeport
+- numéro de passeport
 - passportnumbers
 - numéros de passeport
 
@@ -6588,8 +6499,8 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - driverlicences
 - Gestionnaire de la LIC
 - pilote conduire
-- permis de conduire
-- licences de pilotes
+- Permis de conduire
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - driverslic
@@ -6601,7 +6512,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - pilotes Lic
 - pilotes conduire
 - permis de conduire
-- licences de pilotes
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - driver'lic
@@ -6625,7 +6536,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Gestionnaire de la LIC
 - conduire du pilote
 - permis de conduire
-- permis de conduire
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - LD #
@@ -6677,8 +6588,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire
- 
+- permis de conduire 
 - permis de conduire
 - dlno #
 - permis Lic
@@ -6694,23 +6604,16 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - conduite conduire
 - licences de conduite
 - permis de conduire
-
 - permis de conduire
-
 - permis de conduire
 - n ° de DL
 - dlno
 - Numéro de la LD
-- 
-permis de conduire
-- 
-numéro de permis
-- Numéro de licence
-- 
-numéros de permis
-- 
-
-numéros de permis
+- permis de conduire
+- numéro de permis
+- numéro de permis
+- numéros de permis
+- numéros de permis
 - numéros de licence
 
 
@@ -6800,13 +6703,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 #### <a name="keywords_france_eu_national_id_card"></a>Keywords_france_eu_national_id_card
 
 - numéro de carte
-
 - carte d’identité nationale
 - carte nationale d’idenite non
 - CNI #
 - CNI
 - compte bancaire
-- Numéro d’identification nationale
+- numéro d’identification nationale
 - identité nationale
 - nationalidno #
 - Numéro d’assurance maladie
@@ -7006,7 +6908,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 - Numéro d’identification fiscale
 - id fiscal
-
 - n ° d’identification fiscale
 - Numéro d’identification de taxe
 - n ° taxe #
@@ -7134,22 +7035,18 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 - ausstellungsdatum
 - ausstellungsort
-- 
-ausstellende behöde
-- 
-ausstellende behorde
-- 
-
-ausstellende behoerde
+- ausstellende behöde
+- ausstellende behorde
+- ausstellende behoerde
 - Führerschein
 - Fuhrerschein
 - fuehrerschein
 - führerscheinnummer
 - fuhrerscheinnummer
 - fuehrerscheinnummer
-- Führerschein 
-- Fuhrerschein 
-- fuehrerschein 
+- Führerschein 
+- Fuhrerschein 
+- fuehrerschein 
 - führerscheinnummernr
 - fuhrerscheinnummernr
 - fuehrerscheinnummernr
@@ -7165,8 +7062,7 @@ ausstellende behoerde
 - n-Führerschein
 - n-Fuhrerschein
 - n-fuehrerschein
-- 
-permis de conduire
+- permis de conduire
 - driverlic
 - driverlics
 - driverlicense
@@ -7175,8 +7071,8 @@ permis de conduire
 - driverlicences
 - Gestionnaire de la LIC
 - pilote conduire
-- permis de conduire
-- licences de pilotes
+- Permis de conduire
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - driverslic
@@ -7188,7 +7084,7 @@ permis de conduire
 - pilotes Lic
 - pilotes conduire
 - permis de conduire
-- licences de pilotes
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - driver'lic
@@ -7212,7 +7108,7 @@ permis de conduire
 - Gestionnaire de la LIC
 - conduire du pilote
 - permis de conduire
-- permis de conduire
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - LD #
@@ -7264,8 +7160,7 @@ permis de conduire
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire
- 
+- permis de conduire 
 - permis de conduire
 - dlno #
 - permis Lic
@@ -7281,9 +7176,7 @@ permis de conduire
 - conduite conduire
 - licences de conduite
 - permis de conduire
-
 - permis de conduire
-
 - permis de conduire
 - dlno
 
@@ -7334,13 +7227,13 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - identificateur
 - identifikation
 - identifizierungsnummer
-- carte d’identité
+- Carte d’identité
 - Numéro d’identité
 - ID-Nummer
 - ID personnel
 - personalausweis
 - persönliche ID Nummer
-- persönliche identifikationsnummer
+- persönliche identifikationsnummer
 - persönliche-ID-Nummer
 
 
@@ -7457,7 +7350,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - steueridentifikationsnummer
 - steuernummer
 - id fiscal
-
 - n ° d’identification fiscale
 - Numéro d’identification de taxe
 - n ° taxe #
@@ -7537,8 +7429,8 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - compt #
 - n ° de TVA Mehrwertsteuer
 - mwst
-- mehrwertsteuer identifikationsnummer
-- mehrwertsteuer nummer
+- mehrwertsteuer identifikationsnummer
+- mehrwertsteuer nummer
 
 
 ## <a name="greece-drivers-license-number"></a>Numéro de permis de conduire Grèce
@@ -7587,8 +7479,8 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - driverlicences
 - Gestionnaire de la LIC
 - pilote conduire
-- permis de conduire
-- licences de pilotes
+- Permis de conduire
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - driverslic
@@ -7600,7 +7492,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - pilotes Lic
 - pilotes conduire
 - permis de conduire
-- licences de pilotes
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - driver'lic
@@ -7624,7 +7516,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Gestionnaire de la LIC
 - conduire du pilote
 - permis de conduire
-- permis de conduire
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - LD #
@@ -7676,8 +7568,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire
- 
+- permis de conduire 
 - permis de conduire
 - dlno #
 - permis Lic
@@ -7693,9 +7584,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - conduite conduire
 - licences de conduite
 - permis de conduire
-
 - permis de conduire
-
 - permis de conduire
 - n ° de DL
 - dlno
@@ -7762,7 +7651,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - ID national grec
 - carte d’identité personnelle grecque
 - ID de police grec
-- carte d’identité
+- Carte d’identité
 - tautotita
 - ταυτότητα
 - ταυτότητας
@@ -7809,13 +7698,13 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - tel #
-- tel #
+- tel #
 - passportid
 - passeports
 - n ° passeport
 - Numéro de passeport
 - passportnumber
-- Numéro de passeport
+- numéro de passeport
 - passportnumbers
 - numéros de passeport
 
@@ -7871,7 +7760,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - aφμ | aφμ Αριθμός
 - aφμ
 - id fiscal
-
 - n ° d’identification fiscale
 - Numéro d’identification de taxe
 - n ° taxe #
@@ -7890,9 +7778,9 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - ID d’étain
 - n ° d’étain
 - Etain #
-- αριθμός φορολογικού μητρώου
-- τον αριθμό φορολογικού μητρώου
-- φορολογικού μητρώου νο
+- αριθμός φορολογικού μητρώου
+- τον αριθμό φορολογικού μητρώου
+- φορολογικού μητρώου νο
 
 
 ## <a name="hong-kong-identity-card-hkid-number"></a>Numéro de carte d’identité (HKID) Hong Kong
@@ -8029,8 +7917,8 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - driverlicences
 - Gestionnaire de la LIC
 - pilote conduire
-- permis de conduire
-- licences de pilotes
+- Permis de conduire
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - driverslic
@@ -8042,7 +7930,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - pilotes Lic
 - pilotes conduire
 - permis de conduire
-- licences de pilotes
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - driver'lic
@@ -8066,7 +7954,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Gestionnaire de la LIC
 - conduire du pilote
 - permis de conduire
-- permis de conduire
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - LD #
@@ -8118,8 +8006,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire
- 
+- permis de conduire 
 - permis de conduire
 - dlno #
 - permis Lic
@@ -8135,9 +8022,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - conduite conduire
 - licences de conduite
 - permis de conduire
-
 - permis de conduire
-
 - permis de conduire
 - n ° de DL
 - dlno
@@ -8210,12 +8095,11 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 - Numéro d’identification
 - numéro d’identification
-
 - SZ GI
-- t.vitrage.
+- t. vitrage.
 - sz. GI.
-- személyazonosító igazolvány
-- személyi igazolvány
+- személyazonosító igazolvány
+- személyi igazolvány
 
 
 ## <a name="hungary-passport-number"></a>Numéro de passeport Hongrie
@@ -8258,13 +8142,13 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - tel #
-- tel #
+- tel #
 - passportid
 - passeports
 - n ° passeport
 - Numéro de passeport
 - passportnumber
-- Numéro de passeport
+- numéro de passeport
 - passportnumbers
 - numéros de passeport
 
@@ -8393,14 +8277,13 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="keywords_hungary_eu_tax_file_number"></a>Keywords_hungary_eu_tax_file_number
 
-- adóazonosító szám
-- adóhatóság szám
+- adóazonosító szám
+- adóhatóság szám
 - adószám
 - étain hongrois
 - hungatiantin #
 - Numéro de l’autorité fiscale
 - id fiscal
-
 - n ° d’identification fiscale
 - Numéro d’identification de taxe
 - n ° taxe #
@@ -8478,10 +8361,10 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - hungarianvatno #
 - n ° taxe
 - ÁFA de taxe sur la valeur ajoutée
-- közösségi adószám
-- általános forgalmi adó szám
-- hozzáadottérték adó
-- áfa szám
+- közösségi adószám
+- általános forgalmi adó szám
+- hozzáadottérték adó
+- áfa szám
 
 
 ## <a name="india-permanent-account-number-pan"></a>Numéro de compte permanent Inde (PAN)
@@ -8493,29 +8376,39 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 ### <a name="pattern"></a>Modèle
 
 10 lettres ou chiffres :
-- Cinq lettres (ne respectant pas la casse)  
+- Trois lettres (ne respectant pas la casse) 
+- Lettre en C, P, H, F, A, T, B, L, J, G (ne respectant pas la casse)
+- Une lettre
 - Quatre chiffres 
-- Une lettre qui est un chiffre de contrôle alphabétique
+- Une lettre (ne respecte pas la casse)
 
 ### <a name="checksum"></a>Somme de contrôle
 
-Oui
+Non
 
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
 - L’expression régulière Regex_india_permanent_account_number trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_india_permanent_account_number est trouvé.
-- La somme de contrôle est correcte.
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 65 % si, dans une proximité de 300 caractères :
+- L’expression régulière Regex_india_permanent_account_number trouve un contenu qui correspond au modèle.
+
 
 ```xml
-<!-- India Permanent Account Number -->
-<Entity id="2602bfee-9bb0-47a5-a7a6-2bf3053e2804" recommendedConfidence="85" patternsProximity="300">
-  <Pattern confidenceLevel="85">
-     <IdMatch idRef="Regex_india_permanent_account_number"/>
-     <Match idRef="Keyword_india_permanent_account_number"/>
-  </Pattern>
-</Entity>
+      <!-- India Permanent Account Number -->
+      <Entity id="2602bfee-9bb0-47a5-a7a6-2bf3053e2804" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_india_permanent_account_number" />
+          <Match idRef="Keyword_india_permanent_account_number" />
+        </Pattern>
+        <Version minEngineVersion="15.20.3520.000">
+          <Pattern confidenceLevel="65">
+            <IdMatch idRef="Regex_india_permanent_account_number" />
+          </Pattern>
+        </Version>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
@@ -8534,7 +8427,8 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 ### <a name="pattern"></a>Modèle
 
 12 chiffres :
-- Quatre chiffres 
+- Un chiffre qui est différent de 0 ou 1
+- Trois chiffres 
 - Éventuellement un tiret ou un espace  
 - Quatre chiffres 
 - Éventuellement un tiret ou un espace  
@@ -8571,10 +8465,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 ### <a name="keywords"></a>Mots clés
    
 #### <a name="keyword_india_aadhar"></a>Keyword_india_aadhar
-- Aadhar
-- Aadhaar
-- UID
+- aadhaar
+- aadhar
+- aadhar #
+- uid
 - आधार
+- uidai
    
 ## <a name="indonesia-identity-card-ktp-number"></a>Numéro de carte d’identité (KTP) Indonésie
 
@@ -8863,8 +8759,8 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - driverlicences
 - Gestionnaire de la LIC
 - pilote conduire
-- permis de conduire
-- licences de pilotes
+- Permis de conduire
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - driverslic
@@ -8876,7 +8772,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - pilotes Lic
 - pilotes conduire
 - permis de conduire
-- licences de pilotes
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - driver'lic
@@ -8900,7 +8796,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Gestionnaire de la LIC
 - conduire du pilote
 - permis de conduire
-- permis de conduire
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - LD #
@@ -8952,8 +8848,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire
- 
+- permis de conduire 
 - permis de conduire
 - dlno #
 - permis Lic
@@ -8969,9 +8864,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - conduite conduire
 - licences de conduite
 - permis de conduire
-
 - permis de conduire
-
 - permis de conduire
 - n ° de DL
 - dlno
@@ -9027,13 +8920,13 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - tel #
-- tel #
+- tel #
 - passportid
 - passeports
 - n ° passeport
 - Numéro de passeport
 - passportnumber
-- Numéro de passeport
+- numéro de passeport
 - passportnumbers
 - numéros de passeport
 
@@ -9102,11 +8995,10 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 - service d’identité client
 - numéro d’identification
-
 - Numéro d’identification personnel
 - Numéro de service public
 - Numéro de service personnel
-- phearsanta seirbhíse poiblí
+- phearsanta seirbhíse poiblí
 - n ° PPS
 - numéro PPS
 - numéro PPS
@@ -9124,11 +9016,10 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - rsin
 - client aitheantais seirbhís
 - uimh
-- uimhir aitheantais chánach
-- uimhir aitheantais phearsanta
-- uimhir phearsanta seirbhíse poiblí
+- uimhir aitheantais chánach
+- uimhir aitheantais phearsanta
+- uimhir phearsanta seirbhíse poiblí
 - id fiscal
-
 - n ° d’identification fiscale
 - Numéro d’identification de taxe
 - n ° taxe #
@@ -9232,8 +9123,23 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="keyword_israel_national_id"></a>Keyword_Israel_National_ID
 
-- מספר זהות 
-- Numéro d’identification nationale
+-   מספר זהות
+-   מספר זיה וי
+-   מספר זיהוי ישר אלי      
+-   זהותישר אלית
+-   هو ية اسرائيل ية عدد
+-   هوية إسرائ يلية
+-   رقم الهوية
+-   عدد هوية فريدة من نوعها
+-   idnumber #
+-   Numéro d’identification
+-   n ° d’identité        
+-   identitynumber #
+-   Numéro d’identité
+-   israeliidentitynumber       
+-   ID personnel
+-   ID unique  
+
    
 ## <a name="italy-drivers-license-number"></a>Numéro de permis de conduire Italie
 Cette entité de type d’informations sensibles est incluse dans le type d’informations sensibles du pilote de l’UE et est disponible en tant qu’entité de type d’informations sensibles autonome.
@@ -9351,7 +9257,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - personalcodeno #
 - Code de taxe
 - id fiscal
-
 - n ° d’identification fiscale
 - Numéro d’identification de taxe
 - Numéro d’identité fiscale
@@ -9412,13 +9317,13 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - tel #
-- tel #
+- tel #
 - passportid
 - passeports
 - n ° passeport
 - Numéro de passeport
 - passportnumber
-- Numéro de passeport
+- numéro de passeport
 - passportnumbers
 - numéros de passeport
 
@@ -9827,7 +9732,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Numéro de passeport
 - Numéro de passeport
 - # Passeport
-
 - パスポート
 - パスポート番号
 - パスポートナンバー
@@ -10045,8 +9949,8 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - driverlicences
 - Gestionnaire de la LIC
 - pilote conduire
-- permis de conduire
-- licences de pilotes
+- Permis de conduire
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - driverslic
@@ -10058,7 +9962,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - pilotes Lic
 - pilotes conduire
 - permis de conduire
-- licences de pilotes
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - driver'lic
@@ -10082,7 +9986,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Gestionnaire de la LIC
 - conduire du pilote
 - permis de conduire
-- permis de conduire
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - LD #
@@ -10134,8 +10038,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire
- 
+- permis de conduire 
 - permis de conduire
 - dlno #
 - permis Lic
@@ -10151,9 +10054,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - conduite conduire
 - licences de conduite
 - permis de conduire
-
 - permis de conduire
-
 - permis de conduire
 - n ° de DL
 - dlno
@@ -10237,7 +10138,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 #### <a name="keywords_latvia_eu_national_id_card"></a>Keywords_latvia_eu_national_id_card
 
 - Numéro d’administration
-- alvas nē
+- alvas nē
 - Numéro de naissance
 - Numéro de citoyen
 - numéro civil
@@ -10248,22 +10149,19 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Réf #
 - ID-code
 - numéro d’identification
-
-- identifikācijas numurs
+- identifikācijas numurs
 - ID-Number
 - Numéro individuel
-- latvija alva
+- latvija alva
 - ID nacionālais
-- 
-id national
+- id national
 - Numéro d’identification nationale
 - Numéro d’identité nationale
 - numéro d’assurance nationale
-
 - Numéro de registre national
-- nodokļa numurs
+- nodokļa numurs
 - ID nodokļu
-- nodokļu identifikācija numurs
+- nodokļu identifikācija numurs
 - Numéro de certificat personnel
 - code personnel
 - code d’identification personnel
@@ -10277,15 +10175,13 @@ id national
 - Personas kods
 - code d’identification de la population
 - Numéro de service public
-- 
-numéro d’enregistrement
+- numéro d’enregistrement
 - Numéro de produit
-- Numéro d’assurance sociale
-- Numéro de sécurité sociale
+- numéro d’assurance sociale
+- numéro de sécurité sociale
 - Code de taxe provinciale
-- Numéro de fichier de taxe
+- numéro de dossier fiscal
 - id fiscal
-
 - n ° d’identification fiscale
 - Numéro d’identification de taxe
 - n ° taxe #
@@ -10344,13 +10240,13 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - tel #
-- tel #
+- tel #
 - passportid
 - passeports
 - n ° passeport
 - Numéro de passeport
 - passportnumber
-- Numéro de passeport
+- numéro de passeport
 - passportnumbers
 - numéros de passeport
 
@@ -10409,8 +10305,8 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - driverlicences
 - Gestionnaire de la LIC
 - pilote conduire
-- permis de conduire
-- licences de pilotes
+- Permis de conduire
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - driverslic
@@ -10422,7 +10318,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - pilotes Lic
 - pilotes conduire
 - permis de conduire
-- licences de pilotes
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - driver'lic
@@ -10446,7 +10342,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Gestionnaire de la LIC
 - conduire du pilote
 - permis de conduire
-- permis de conduire
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - LD #
@@ -10498,8 +10394,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire
- 
+- permis de conduire 
 - permis de conduire
 - dlno #
 - permis Lic
@@ -10515,9 +10410,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - conduite conduire
 - licences de conduite
 - permis de conduire
-
 - permis de conduire
-
 - permis de conduire
 - n ° de DL
 - dlno
@@ -10585,19 +10478,18 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="keywords_lithuania_eu_national_id_card"></a>Keywords_lithuania_eu_national_id_card
 
-- asmeninis skaitmeninis kodas
-- asmens kodas
+- asmeninis skaitmeninis kodas
+- asmens kodas
 - Numéro de service du citoyen
 - ID mokesčių
 - mokesčių identifikavimas
 - mokesčių identifikavimo
 - mokesčių chiffres
-- Numéro d’identification nationale
+- numéro d’identification nationale
 - code personnel
 - code numérique personnel
 - piliečio paslaugos
 - id fiscal
-
 - n ° d’identification fiscale
 - Numéro d’identification de taxe
 - n ° taxe #
@@ -10613,7 +10505,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - ID d’étain
 - n ° d’étain
 - Etain #
-- unikalus identifikavimo kodas
+- unikalus identifikavimo kodas
 - unikalus identifikavimo
 - Numéro d’identification unique
 - Numéro d’identité unique
@@ -10658,13 +10550,13 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - tel #
-- tel #
+- tel #
 - passportid
 - passeports
 - n ° passeport
 - Numéro de passeport
 - passportnumber
-- Numéro de passeport
+- numéro de passeport
 - passportnumbers
 - numéros de passeport
 
@@ -10720,8 +10612,8 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - driverlicences
 - Gestionnaire de la LIC
 - pilote conduire
-- permis de conduire
-- licences de pilotes
+- Permis de conduire
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - driverslic
@@ -10733,7 +10625,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - pilotes Lic
 - pilotes conduire
 - permis de conduire
-- licences de pilotes
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - driver'lic
@@ -10757,7 +10649,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Gestionnaire de la LIC
 - conduire du pilote
 - permis de conduire
-- permis de conduire
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - LD #
@@ -10809,8 +10701,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire
- 
+- permis de conduire 
 - permis de conduire
 - dlno #
 - permis Lic
@@ -10826,9 +10717,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - conduite conduire
 - licences de conduite
 - permis de conduire
-
 - permis de conduire
-
 - permis de conduire
 - n ° de DL
 - dlno
@@ -10910,7 +10799,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - identité personnelle
 - personalidno #
 - personalidnumber #
-- persönliche identifikationsnummer
+- persönliche identifikationsnummer
 - ID unique
 - identité unique
 - uniqueidkey #
@@ -11021,13 +10910,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - sozialversécherung
 - sozialversicherungsausweis
 - ID Steier
-- steier identifikatiounsnummer
-- steier nummer
+- steier identifikatiounsnummer
+- steier nummer
 - ID Steuer
 - steueridentifikationsnummer
 - steuernummer
 - id fiscal
-
 - n ° d’identification fiscale
 - Numéro d’identification de taxe
 - n ° taxe #
@@ -11166,8 +11054,8 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - driverlicences
 - Gestionnaire de la LIC
 - pilote conduire
-- permis de conduire
-- licences de pilotes
+- Permis de conduire
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - driverslic
@@ -11179,7 +11067,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - pilotes Lic
 - pilotes conduire
 - permis de conduire
-- licences de pilotes
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - driver'lic
@@ -11203,7 +11091,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Gestionnaire de la LIC
 - conduire du pilote
 - permis de conduire
-- permis de conduire
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - LD #
@@ -11255,8 +11143,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire
- 
+- permis de conduire 
 - permis de conduire
 - dlno #
 - permis Lic
@@ -11272,9 +11159,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - conduite conduire
 - licences de conduite
 - permis de conduire
-
 - permis de conduire
-
 - permis de conduire
 - n ° de DL
 - dlno
@@ -11338,7 +11223,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 - Numéro de service du citoyen
 - ID tat-Taxxa
-- identifika numru tal-biljett
+- identifika numru tal-biljett
 - Kodiċi numerali
 - numru ta’IDENTIFIKAZZJONI personnaliser
 - numru ta’IDENTIFIKAZZJONI tat-Taxxa
@@ -11391,13 +11276,13 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - tel #
-- tel #
+- tel #
 - passportid
 - passeports
 - n ° passeport
 - Numéro de passeport
 - passportnumber
-- Numéro de passeport
+- numéro de passeport
 - passportnumbers
 - numéros de passeport
 
@@ -11467,7 +11352,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 - Numéro de service du citoyen
 - ID tat-Taxxa
-- identifika numru tal-biljett
+- identifika numru tal-biljett
 - Kodiċi numerali
 - numru ta’IDENTIFIKAZZJONI personnaliser
 - numru ta’IDENTIFIKAZZJONI tat-Taxxa
@@ -11477,7 +11362,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - numru tat-Taxxa
 - code numérique personnel
 - id fiscal
-
 - n ° d’identification fiscale
 - Numéro d’identification de taxe
 - n ° taxe #
@@ -11545,16 +11429,16 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - numéro personnel
 - code numérique personnel
 - numéro lié à la personne
-- persoonlijk nummer
+- persoonlijk nummer
 - persoonlijke Numerieke de code
 - persoonsgebonden
 - persoonsnummer
-- sociaal-fiscaal nummer
+- sociaal-fiscaal nummer
 - social-Numéro fiscal
 - sofi
 - sofinummer
-- uniek identificatienummer
-- uniek identiteitsnummer
+- uniek identificatienummer
+- uniek identiteitsnummer
 - Numéro d’identification unique
 - Numéro d’identité unique
 - uniqueidentityno #
@@ -11605,8 +11489,8 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - driverlicences
 - Gestionnaire de la LIC
 - pilote conduire
-- permis de conduire
-- licences de pilotes
+- Permis de conduire
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - driverslic
@@ -11618,7 +11502,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - pilotes Lic
 - pilotes conduire
 - permis de conduire
-- licences de pilotes
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - driver'lic
@@ -11642,7 +11526,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Gestionnaire de la LIC
 - conduire du pilote
 - permis de conduire
-- permis de conduire
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - LD #
@@ -11694,8 +11578,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire
- 
+- permis de conduire 
 - permis de conduire
 - dlno #
 - permis Lic
@@ -11711,9 +11594,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - conduite conduire
 - licences de conduite
 - permis de conduire
-
 - permis de conduire
-
 - permis de conduire
 - n ° de DL
 - dlno
@@ -11819,7 +11700,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="keywords_netherlands_eu_tax_file_number"></a>Keywords_netherlands_eu_tax_file_number
 
-- btw nummer
+- btw nummer
 - identification fiscale hollânske
 - Numéro d’identification Hulandes Impuesto
 - Hulandes Impuesto identification
@@ -11837,7 +11718,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - étain (Pays-Bas)
 - Netherland d’étain
 - id fiscal
-
 - n ° d’identification fiscale
 - Numéro d’identification de taxe
 - Tal d’identification fiscale
@@ -11915,7 +11795,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - n ° TVA
 - compt #
 - wearde tafoege Tax getal
-- btw nûmer
+- btw nûmer
 - btw-nummer
 
 
@@ -11974,7 +11854,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="keyword_new_zealand_bank_account_number"></a>Keyword_new_zealand_bank_account_number
 
-- Numéro de compte
+- numéro de compte
 - compte bancaire
 - bank_acct_id
 - bank_acct_branch
@@ -12090,8 +11970,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - conduire du pilote #
 - permis de conduire #
 - permis de conduire #
-- 
-permis de conduite international
+- permis de conduite international
 - permis de conduite internationaux
 - Association automobile NZ
 - Association automobile Nouvelle-Zélande
@@ -12253,7 +12132,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="keyword_new_zealand_social_welfare_number"></a>Keyword_new_zealand_social_welfare_number
 
-- Social Welfare #
+- Social Welfare #
 - Social Welfare #
 - n ° de bien-être social
 - numéro Social Welfare
@@ -12409,8 +12288,8 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - driverlicences
 - Gestionnaire de la LIC
 - pilote conduire
-- permis de conduire
-- licences de pilotes
+- Permis de conduire
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - driverslic
@@ -12422,7 +12301,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - pilotes Lic
 - pilotes conduire
 - permis de conduire
-- licences de pilotes
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - driver'lic
@@ -12446,7 +12325,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Gestionnaire de la LIC
 - conduire du pilote
 - permis de conduire
-- permis de conduire
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - LD #
@@ -12498,8 +12377,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire
- 
+- permis de conduire 
 - permis de conduire
 - dlno #
 - permis Lic
@@ -12515,9 +12393,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - conduite conduire
 - licences de conduite
 - permis de conduire
-
 - permis de conduire
-
 - permis de conduire
 - n ° de DL
 - dlno
@@ -12781,7 +12657,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - chiffre identyfikacji podatkowej
 - numeridentyfikacjipodatkowej #
 - id fiscal
-
 - n ° d’identification fiscale
 - Numéro d’identification de taxe
 - n ° taxe #
@@ -12848,7 +12723,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Numéro d’identification
 - Numéro d’identification
 - numéro d’identification
-
 - n ° carte d’identité
 - Numéro de carte d’identité
 - carte d’identité nationale
@@ -12919,8 +12793,8 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - driverlicences
 - Gestionnaire de la LIC
 - pilote conduire
-- permis de conduire
-- licences de pilotes
+- Permis de conduire
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - driverslic
@@ -12932,7 +12806,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - pilotes Lic
 - pilotes conduire
 - permis de conduire
-- licences de pilotes
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - driver'lic
@@ -12956,7 +12830,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Gestionnaire de la LIC
 - conduire du pilote
 - permis de conduire
-- permis de conduire
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - LD #
@@ -13008,8 +12882,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire
- 
+- permis de conduire 
 - permis de conduire
 - dlno #
 - permis Lic
@@ -13025,9 +12898,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - conduite conduire
 - licences de conduite
 - permis de conduire
-
 - permis de conduire
-
 - permis de conduire
 - n ° de DL
 - dlno
@@ -13089,13 +12960,13 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - tel #
-- tel #
+- tel #
 - passportid
 - passeports
 - n ° passeport
 - Numéro de passeport
 - passportnumber
-- Numéro de passeport
+- numéro de passeport
 - passportnumbers
 - numéros de passeport
 
@@ -13163,7 +13034,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Número de identificação fisca
 - chiffres fiscaux
 - id fiscal
-
 - n ° d’identification fiscale
 - Numéro d’identification de taxe
 - n ° taxe #
@@ -13229,8 +13099,8 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - driverlicences
 - Gestionnaire de la LIC
 - pilote conduire
-- permis de conduire
-- licences de pilotes
+- Permis de conduire
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - driverslic
@@ -13242,7 +13112,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - pilotes Lic
 - pilotes conduire
 - permis de conduire
-- licences de pilotes
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - driver'lic
@@ -13266,7 +13136,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Gestionnaire de la LIC
 - conduire du pilote
 - permis de conduire
-- permis de conduire
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - LD #
@@ -13318,8 +13188,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire
- 
+- permis de conduire 
 - permis de conduire
 - dlno #
 - permis Lic
@@ -13335,9 +13204,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - conduite conduire
 - licences de conduite
 - permis de conduire
-
 - permis de conduire
-
 - permis de conduire
 - n ° de DL
 - dlno
@@ -13414,11 +13281,10 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Numéro d’assurance
 - insurancenumber #
 - ID national #
-- 
-id national
-- Numéro d’identification nationale
+- id national
+- numéro d’identification nationale
 - număr IDENTIFICARE personnel
-- număr identitate
+- număr identitate
 - UNIC personnel număr
 - număridentitate #
 - număridentitate
@@ -13430,9 +13296,8 @@ id national
 - ancre #
 - ancre
 - n ° fichier taxe
-- Numéro de fichier de taxe
+- numéro de dossier fiscal
 - id fiscal
-
 - n ° d’identification fiscale
 - Numéro d’identification de taxe
 - n ° taxe #
@@ -13492,13 +13357,13 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - tel #
-- tel #
+- tel #
 - passportid
 - passeports
 - n ° passeport
 - Numéro de passeport
 - passportnumber
-- Numéro de passeport
+- numéro de passeport
 - passportnumbers
 - numéros de passeport
 
@@ -13552,19 +13417,19 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="keyword_russia_passport_number_domestic"></a>Keyword_russia_passport_number_domestic
 
+- numéro de passeport
 - Numéro de passeport
-- Numéro de passeport
-- tel #
+- tel #
 - ID de passeport
 - n ° passeport #
 - passportnumber #
-- паспорт нет
+- паспорт нет
 - ID паспорт
-- pоссийской паспорт
-- pусский номер паспорта
+- pоссийской паспорт
+- pусский номер паспорта
 - паспорт #
 - паспортid #
-- номер паспорта
+- номер паспорта
 - номерпаспорта #
 
 
@@ -13612,19 +13477,19 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="keywords_russia_passport_number_international"></a>Keywords_russia_passport_number_international
 
+- numéro de passeport
 - Numéro de passeport
-- Numéro de passeport
-- tel #
+- tel #
 - ID de passeport
 - n ° passeport #
 - passportnumber #
-- паспорт нет
+- паспорт нет
 - ID паспорт
-- pоссийской паспорт
-- pусский номер паспорта
+- pоссийской паспорт
+- pусский номер паспорта
 - паспорт #
 - паспортid #
-- номер паспорта
+- номер паспорта
 - номерпаспорта #
 
 
@@ -13773,8 +13638,8 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - driverlicences
 - Gestionnaire de la LIC
 - pilote conduire
-- permis de conduire
-- licences de pilotes
+- Permis de conduire
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - driverslic
@@ -13786,7 +13651,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - pilotes Lic
 - pilotes conduire
 - permis de conduire
-- licences de pilotes
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - driver'lic
@@ -13810,7 +13675,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Gestionnaire de la LIC
 - conduire du pilote
 - permis de conduire
-- permis de conduire
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - LD #
@@ -13862,8 +13727,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire
- 
+- permis de conduire 
 - permis de conduire
 - dlno #
 - permis Lic
@@ -13879,9 +13743,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - conduite conduire
 - licences de conduite
 - permis de conduire
-
 - permis de conduire
-
 - permis de conduire
 - n ° de DL
 - dlno
@@ -13945,37 +13807,35 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="keywords_slovakia_eu_national_id_card"></a>Keywords_slovakia_eu_national_id_card
 
-- azonosító szám
+- azonosító szám
 - Numéro de naissance
-- číslo národnej identifikačnej karty
-- číslo občianského preukazu
-- daňové číslo
+- číslo národnej identifikačnej karty
+- číslo občianského preukazu
+- daňové číslo
 - Numéro d’identification
 - Numéro d’identification
 - numéro d’identification
-
-- identifikačná karta č
-- identifikačné číslo
+- identifikačná karta č
+- identifikačné číslo
 - n ° carte d’identité
 - Numéro de carte d’identité
-- národná identifikačná značka č
+- národná identifikačná značka č
 - numéro national
 - nationalnumber #
-- nemzeti személyazonosító igazolvány
+- nemzeti személyazonosító igazolvány
 - personalidnumber #
 - rč
-- rodne cislo
-- rodné číslo
-- Numéro de sécurité sociale
+- rodne cislo
+- rodné číslo
+- numéro de sécurité sociale
 - SSN #
 - SSN
-- személyi igazolvány szám
-- személyi igazolvány száma
-- személyigazolvány szám
+- személyi igazolvány szám
+- személyi igazolvány száma
+- személyigazolvány szám
 - n ° fichier taxe
-- Numéro de fichier de taxe
+- numéro de dossier fiscal
 - id fiscal
-
 - n ° d’identification fiscale
 - Numéro d’identification de taxe
 - n ° taxe #
@@ -14031,13 +13891,13 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - tel #
-- tel #
+- tel #
 - passportid
 - passeports
 - n ° passeport
 - Numéro de passeport
 - passportnumber
-- Numéro de passeport
+- numéro de passeport
 - passportnumbers
 - numéros de passeport
 
@@ -14095,8 +13955,8 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - driverlicences
 - Gestionnaire de la LIC
 - pilote conduire
-- permis de conduire
-- licences de pilotes
+- Permis de conduire
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - driverslic
@@ -14108,7 +13968,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - pilotes Lic
 - pilotes conduire
 - permis de conduire
-- licences de pilotes
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - driver'lic
@@ -14132,7 +13992,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Gestionnaire de la LIC
 - conduire du pilote
 - permis de conduire
-- permis de conduire
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - LD #
@@ -14184,8 +14044,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire
- 
+- permis de conduire 
 - permis de conduire
 - dlno #
 - permis Lic
@@ -14201,9 +14060,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - conduite conduire
 - licences de conduite
 - permis de conduire
-
 - permis de conduire
-
 - permis de conduire
 - n ° de DL
 - dlno
@@ -14269,32 +14126,30 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="keywords_slovenia_eu_national_id_card"></a>Keywords_slovenia_eu_national_id_card
 
-- edinstvena številka glavnega državljana
+- edinstvena številka glavnega državljana
 - emšo
-- enotna maticna številka obcana
+- enotna maticna številka obcana
 - carte d’identité
 - numéro d’identification
-
-- identifikacijska številka
-- carte d’identité
+- identifikacijska številka
+- Carte d’identité
 - ID Nacionalna
 - Nacionalni potni liste
-- 
-id national
-- osebna izkaznica
-- osebni koda
+- id national
+- osebna izkaznica
+- osebni koda
 - osebni ne
-- osebni številka
+- osebni številka
 - code personnel
 - numéro personnel
 - code numérique personnel
-- številka državljana
+- številka državljana
 - Numéro de citoyen unique
 - Numéro d’identification unique
 - Numéro d’identité unique
 - Numéro de citoyen principal unique
 - Numéro d’enregistrement unique
-- uniqueidentityno #
+- uniqueidentityno #
 - uniqueidentityno #
 
 ## <a name="slovenia-passport-number"></a>Numéro de passeport Slovénie
@@ -14340,13 +14195,13 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - tel #
-- tel #
+- tel #
 - passportid
 - passeports
 - n ° passeport
 - Numéro de passeport
 - passportnumber
-- Numéro de passeport
+- numéro de passeport
 - passportnumbers
 - numéros de passeport
 
@@ -14407,13 +14262,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="keywords_slovenia_eu_tax_file_number"></a>Keywords_slovenia_eu_tax_file_number
 
-- davčna številka
-- identifikacijska številka davka
-- številka davčne datoteke
+- davčna številka
+- identifikacijska številka davka
+- številka davčne datoteke
 - n ° fichier taxe
-- Numéro de fichier de taxe
+- numéro de dossier fiscal
 - id fiscal
-
 - n ° d’identification fiscale
 - Numéro d’identification de taxe
 - n ° taxe #
@@ -14594,8 +14448,8 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - driverlicences
 - Gestionnaire de la LIC
 - pilote conduire
-- permis de conduire
-- licences de pilotes
+- Permis de conduire
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - driverslic
@@ -14607,7 +14461,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - pilotes Lic
 - pilotes conduire
 - permis de conduire
-- licences de pilotes
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - driver'lic
@@ -14631,7 +14485,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Gestionnaire de la LIC
 - conduire du pilote
 - permis de conduire
-- permis de conduire
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - LD #
@@ -14683,8 +14537,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire
- 
+- permis de conduire 
 - permis de conduire
 - dlno #
 - permis Lic
@@ -14700,9 +14553,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - conduite conduire
 - licences de conduite
 - permis de conduire
-
 - permis de conduire
-
 - permis de conduire
 - n ° de DL
 - dlno
@@ -14787,10 +14638,10 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - DNI
 - dninúmero #
 - Documento Nacional de identidad
-- identidad único
+- identidad único
 - identidadúnico #
 - Numéro d’assurance
-- Numéro d’identification nationale
+- numéro d’identification nationale
 - identité nationale
 - nationalid #
 - nationalidno #
@@ -14847,13 +14698,13 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - tel #
-- tel #
+- tel #
 - passportid
 - passeports
 - n ° passeport
 - Numéro de passeport
 - passportnumber
-- Numéro de passeport
+- numéro de passeport
 - passportnumbers
 - numéros de passeport
 
@@ -15003,9 +14854,8 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - spanishcifno #
 - spanishcifno
 - n ° fichier taxe
-- Numéro de fichier de taxe
+- numéro de dossier fiscal
 - id fiscal
-
 - n ° d’identification fiscale
 - Numéro d’identification de taxe
 - n ° taxe #
@@ -15149,8 +14999,8 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - driverlicences
 - Gestionnaire de la LIC
 - pilote conduire
-- permis de conduire
-- licences de pilotes
+- Permis de conduire
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - driverslic
@@ -15162,7 +15012,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - pilotes Lic
 - pilotes conduire
 - permis de conduire
-- licences de pilotes
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - driver'lic
@@ -15186,7 +15036,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Gestionnaire de la LIC
 - conduire du pilote
 - permis de conduire
-- permis de conduire
+- Permis de conduire
 - permis de conduire
 - permis de conduire
 - LD #
@@ -15238,8 +15088,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - permis de conduire #
 - permis de conduire #
 - permis de conduire #
-- permis de conduire
- 
+- permis de conduire 
 - permis de conduire
 - dlno #
 - permis Lic
@@ -15255,9 +15104,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - conduite conduire
 - licences de conduite
 - permis de conduire
-
 - permis de conduire
-
 - permis de conduire
 - n ° de DL
 - dlno
@@ -15330,7 +15177,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Réf #
 - Numéro d’identification
 - numéro d’identification
-
 - identifikationsnumret #
 - identifikationsnumret
 - identitetshandling
@@ -15535,12 +15381,11 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Numéro d’identification personnel
 - personnummer
 - skatt ID Nummer
-- skatt identifikation
-- skattebetalarens identifikationsnummer
+- skatt identifikation
+- skattebetalarens identifikationsnummer
 - Sverige étain
 - fichier taxe
 - id fiscal
-
 - n ° d’identification fiscale
 - Numéro d’identification de taxe
 - n ° taxe #
@@ -15597,41 +15442,28 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 #### <a name="keyword_swift"></a>Keyword_swift
 
 - organisation internationale de normalisation 9362
-
 - ISO 9362
 - iso9362
 - rapide #
 - swiftcode
 - swiftnumber
 - swiftroutingnumber
-- code SWIFT
+- code swift
 - # numéro swift
-
 - numéro d’acheminement swift
-
 - numéro BIC
-
 - code BIC
-
 - # bic
 - BIC #
 - code d’identification bancaire
-
 - Organisation internationale de normalisation 9362
-
 - rapide #
-
 - code SWIFT
-
 - le numéro de swift
-
 - swift numéro d’acheminement
-
 - le numéro BIC
-
-- # <a name="bic"></a>BIC
+- # <a name="bic"></a>BIC
 - code identificateur de banque
-
 - SWIFTコード
 - SWIFT番号
 - BIC番号
@@ -15703,7 +15535,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - pid
 - Numéro d’assurance
 - personalidno #
-- Numéro de sécurité sociale
+- numéro de sécurité sociale
 - Numéro d’identification personnel
 - n ° d’identification personnelle
 - insuranceno #
@@ -15712,11 +15544,10 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - numéro AVS
 - identité personnelle aucune versicherungsnummer
 - identifikationsnummer
-- einzigartige identität nicht
+- einzigartige identität nicht
 - sozialversicherungsnummer
 - ID personnelle d’identification
-- 
-numéro de sécurité sociale
+- numéro de sécurité sociale
 
    
 ## <a name="taiwan-national-identification-number"></a>Numéro d’identification national taïwanais
@@ -16193,26 +16024,19 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 #### <a name="keyword_uk_nino"></a>Keyword_uk_nino
 
 - numéro d’assurance nationale
-
 - cotisations sociales
-
 - loi sur la protection
 - cotisations
-- Numéro de sécurité sociale
+- numéro de sécurité sociale
 - demande d’assurance
-
 - demande de soins médicaux
-
 - assurance sociale
-
 - soins médicaux
-
 - sécurité sociale
 - grande-bretagne
-
 - Nombre NI
 - NI n °.
-- ALLIAGE #
+- ALLIAGE #
 - ALLIAGE #
 - cotisations #
 - insurancenumber
@@ -16264,7 +16088,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Numéro de taxe
 - fichier taxe
 - id fiscal
-
 - n ° d’identification fiscale
 - Numéro d’identification de taxe
 - n ° taxe #
@@ -16284,11 +16107,11 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="format"></a>Format
 
-8-17 chiffres
+6-17 chiffres
 
 ### <a name="pattern"></a>Modèle
 
-8 à 17 chiffres consécutifs
+6-17 chiffres consécutifs
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -16525,41 +16348,33 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
 - La fonction Func_formatted_itin trouve un contenu qui correspond au modèle.
-- Au moins une des affirmations suivantes est vraie :
-    - Un mot clé figurant dans la liste Keyword_itin est trouvé.
-    - La fonction Func_us_address trouve une adresse au format correct.
-    - La fonction Func_us_date trouve une date au format correct.
-    - Un mot clé figurant dans la liste Keyword_itin_collaborative est trouvé.
+- Un mot clé figurant dans la liste Keyword_itin est trouvé.
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - La fonction Func_unformatted_itin trouve un contenu qui correspond au modèle.
-- Au moins une des affirmations suivantes est vraie :
-    - Un mot clé figurant dans la liste Keyword_itin_collaborative est trouvé.
-    - La fonction Func_us_address trouve une adresse au format correct.
-    - La fonction Func_us_date trouve une date au format correct.
+- Un mot clé figurant dans la liste Keyword_itin est trouvé.
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 65 % si, dans une proximité de 300 caractères :
+- La fonction Func_formatted_itin ou Func_unformatted_itin trouve le contenu qui correspond au modèle.
 
 ```xml
-<!-- U.S. Individual Taxpayer Identification Number (ITIN) -->
-<Entity id="e55e2a32-f92d-4985-a35d-a0b269eb687b" patternsProximity="300" recommendedConfidence="75">
-    <Pattern confidenceLevel="85">
+    <!-- U.S. Individual Taxpayer Identification Number (ITIN) -->
+    <Entity id="e55e2a32-f92d-4985-a35d-a0b269eb687b" patternsProximity="300" recommendedConfidence="75">
+      <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_formatted_itin" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_itin" />
-          <Match idRef="Func_us_address" />
-          <Match idRef="Func_us_date" />
-          <Match idRef="Keyword_itin_collaborative" />
-        </Any>
-    </Pattern>
-    <Pattern confidenceLevel="75">
+        <Match idRef="Keyword_itin" />
+      </Pattern>
+      <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_unformatted_itin" />
         <Match idRef="Keyword_itin" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_itin_collaborative" />
-          <Match idRef="Func_us_address" />
-          <Match idRef="Func_us_date" />
-        </Any>
-    </Pattern>
-</Entity>
+      </Pattern>
+      <Pattern confidenceLevel="65">
+        <IdMatch idRef="Func_formatted_itin" />
+      </Pattern>
+      <Pattern confidenceLevel="65">
+        <IdMatch idRef="Func_unformatted_itin" />
+      </Pattern>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
@@ -16570,6 +16385,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - id fiscal 
 - identification fiscale 
 - itin 
+- i.t.i.n.
 - SSN 
 - Etain 
 - sécurité sociale 
@@ -16578,14 +16394,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - taxi 
 - contribuable individuel 
 
-#### <a name="keyword_itin_collaborative"></a>Keyword_itin_collaborative
-
-- Licence 
-- LD 
-- DOB 
-- Birthdate 
-- Birthday 
-- Date of Birth 
 
 ## <a name="us-social-security-number-ssn"></a>Numéro de sécurité sociale américain (SSN)
 
@@ -16761,10 +16569,10 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 #### <a name="keyword_ukraine_passport_domestic"></a>Keyword_ukraine_passport_domestic
 
 - passeport de l’Ukraine
+- numéro de passeport
 - Numéro de passeport
-- Numéro de passeport
-- паспорт України
-- номер паспорта
+- паспорт України
+- номер паспорта
 - персональний
 
 
@@ -16811,7 +16619,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 #### <a name="keyword_ukraine_passport_international"></a>Keyword_ukraine_passport_international
 
 - passeport de l’Ukraine
+- numéro de passeport
 - Numéro de passeport
-- Numéro de passeport
-- паспорт України
-- номер паспорта
+- паспорт України
+- номер паспорта

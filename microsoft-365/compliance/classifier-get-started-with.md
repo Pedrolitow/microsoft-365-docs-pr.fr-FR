@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un classificateur Microsoft 365 est un outil que vous pouvez former afin de reconnaître différents types de contenu en leur donnant des exemples à consulter. Cet article vous explique comment créer et former un classifieur personnalisé et comment le former pour améliorer la précision.
-ms.openlocfilehash: 30f3c45945b4879be17eadfe04e8ccb8526df16a
-ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
+ms.openlocfilehash: 4c9f5dae702c71fe7f2da1ccbc0364e7bdd15b0e
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48379249"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48636983"
 ---
 # <a name="get-started-with-trainable-classifiers-preview"></a>Prise en main des classificateurs de formation (préversion)
 
@@ -43,8 +43,8 @@ Les classifieurs sont une fonctionnalité de conformité de Microsoft 365 E5 ou 
 
 Pour accéder aux classifieurs dans l’interface utilisateur : 
 
-- l’administrateur global doit s’abonner au client pour créer des classifieurs personnalisés
-- le rôle d’administrateur de conformité ou l’administrateur des données de conformité est requis pour former un classifieur
+- l’administrateur global doit s’abonner au client pour créer des classifieurs personnalisés.
+- le rôle d’administrateur de conformité ou l’administrateur des données de conformité est requis pour former un classifieur.
 
 Vous aurez besoin de comptes dotés des autorisations suivantes pour utiliser les classifieurs dans les scénarios suivants :
 
@@ -70,7 +70,7 @@ Cette chronologie reflète un exemple de déploiement de classifieur de formatio
 
 ### <a name="overall-workflow"></a>Flux de travail global
 
-Pour en savoir plus sur le flux de travail général de création de classifieurs de formation personnalisée, voir [Flow Process for Creating Customer trainable Classifiers](classifier-learn-about.md#process-flow-for-creating-custom-classifiers)
+Pour en savoir plus sur le flux de travail général de création de classifieurs de formation personnalisée, consultez la rubrique [processus Flow for Creating Customer trainable Classifiers](classifier-learn-about.md#process-flow-for-creating-custom-classifiers).
 
 ### <a name="seed-content"></a>Contenu de départ
 
@@ -81,7 +81,7 @@ Si vous souhaitez qu’un classifieur puisse identifier de manière indépendant
 
 ### <a name="testing-content"></a>Test du contenu
 
-Une fois que le classifieur peut traiter suffisamment d’échantillons positifs pour créer un modèle de prévision, vous devez tester les prévisions qu’il permet de déterminer si le classifieur peut faire la distinction entre les éléments qui correspondent à la catégorie et ceux qui ne l’ont pas. Pour ce faire, vous devez l’alimenter un autre ensemble de contenu choisi par l’homme qui se compose d’exemples qui doivent être inclus dans la catégorie et les échantillons qui ne le seront pas. Une fois qu’il les traite, vous parcourez manuellement les résultats et vérifiez si chaque prévision est correcte, incorrecte ou si vous n’êtes pas sûr. Le classificateur de formation utilise ces commentaires pour améliorer son modèle de prévision.
+Une fois que le classifieur peut traiter suffisamment d’échantillons positifs pour créer un modèle de prévision, vous devez tester les prévisions qu’il permet de déterminer si le classifieur peut faire la distinction entre les éléments qui correspondent à la catégorie et ceux qui ne l’ont pas. Pour ce faire, sélectionnez un autre jeu de contenu humain prélevé qui se compose d’exemples qui doivent être inclus dans la catégorie et les échantillons qui ne le seront pas. Vous devez tester avec des données différentes des données initiales initialement fournies. Une fois qu’il les traite, vous parcourez manuellement les résultats et vérifiez si chaque prévision est correcte, incorrecte ou si vous n’êtes pas sûr. Le classificateur de formation utilise ces commentaires pour améliorer son modèle de prévision.
 
 > [!TIP]
 > Pour obtenir de meilleurs résultats, vous devez avoir au moins 200 éléments dans votre jeu d’échantillons de test avec une répartition égale des correspondances positives et négatives.
@@ -90,24 +90,24 @@ Une fois que le classifieur peut traiter suffisamment d’échantillons positifs
 
 1. Collect entre les éléments de contenu Seed 50-500. Il doit s’agir uniquement d’exemples qui représentent fortement le type de contenu que vous souhaitez que le classifieur peut identifier de manière positive comme appartenant à la catégorie de classification. Pour connaître les types de fichiers pris en charge, reportez-vous aux [extensions de nom de fichier et aux types de fichiers analysés par défaut dans SharePoint Server](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) .
 
-> [!IMPORTANT]
-> Les éléments de l’exemple Seed et test ne doivent pas être chiffrés et doivent être en anglais.
+   > [!IMPORTANT]
+   > Les éléments de l’exemple Seed et test ne doivent pas être chiffrés et doivent être en anglais.
 
-> [!IMPORTANT]
-> Assurez-vous que les éléments de votre ensemble Seed sont des exemples **forts** de la catégorie. Le classificateur de formation génère initialement son modèle en fonction de ce que vous amorcez avec. Le classifieur part du principe que tous les échantillons de départ sont des positifs forts et n’ont aucun moyen de savoir si un échantillon est une correspondance faible ou négative avec la catégorie.
+   > [!IMPORTANT]
+   > Assurez-vous que les éléments de votre ensemble Seed sont des exemples **forts** de la catégorie. Le classificateur de formation génère initialement son modèle en fonction de ce que vous amorcez avec. Le classifieur part du principe que tous les échantillons de départ sont des positifs forts et n’ont aucun moyen de savoir si un échantillon est une correspondance faible ou négative avec la catégorie.
 
 2. Placez le contenu Seed dans un dossier SharePoint Online dédié au maintien *du contenu de l’amorçage uniquement*. Notez l’URL du site, de la bibliothèque et du dossier.
 
-> [!TIP]
-> Si vous créez un nouveau site et dossier pour vos données de départ, autorisez au moins une heure pour cet emplacement à indexer avant de créer le classifieur qui utilisera ces données de départ.
+   > [!TIP]
+   > Si vous créez un nouveau site et dossier pour vos données de départ, autorisez au moins une heure pour cet emplacement à indexer avant de créer le classifieur qui utilisera ces données de départ.
 
-3. Connectez-vous au centre de conformité Microsoft 365 avec l’administrateur de conformité ou l’accès au rôle d’administrateur de sécurité et ouvrez le **Centre de conformité Microsoft 365 ou la** classification des données du centre de **sécurité Microsoft 365**  >  **Data classification**
+3. Connectez-vous au centre de conformité Microsoft 365 avec l’accès administrateur de conformité ou au rôle d’administrateur de sécurité, puis ouvrez le **Centre de conformité Microsoft 365 ou la** classification des données du centre de **sécurité Microsoft 365**  >  **Data classification**.
 
 4. Sélectionnez l’onglet **classeurs de formation** .
 
 5. Sélectionnez **Create Training classificateur**.
 
-6. Renseignez les valeurs appropriées pour les `Name` `Description` champs de la catégorie d’éléments que vous souhaitez que le classifieur pouvant identifier.
+6. Remplissez les valeurs appropriées pour les `Name` `Description` champs et de la catégorie d’éléments que vous souhaitez que le classifieur pouvant identifier.
 
 7. Sélectionnez l’URL du site, de la bibliothèque et du dossier SharePoint Online pour le site de contenu Seed à partir de l’étape 2. Choisissez `Add` .
 
@@ -117,18 +117,18 @@ Une fois que le classifieur peut traiter suffisamment d’échantillons positifs
 
 10. Vous pouvez désormais afficher la page de détails en choisissant le classifieur.
 
-
-![classificateur prêt à être testé](../media/classifier-trainable-ready-to-test-detail.png)
+    > [!div class="mx-imgBorder"]
+    > ![classificateur prêt à être testé](../media/classifier-trainable-ready-to-test-detail.png)
 
 11. Collectez au moins 200 éléments de contenu de test (10 000 max) pour obtenir de meilleurs résultats. Il doit s’agir d’un mélange d’éléments qui sont des positifs forts, de fortes négatifs et d’autres moins évidents dans leur nature. Pour connaître les types de fichiers pris en charge, reportez-vous aux [extensions de nom de fichier et aux types de fichiers analysés par défaut dans SharePoint Server](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) .
 
-> [!IMPORTANT]
-> Les éléments de l’exemple ne doivent pas être chiffrés et doivent être en anglais.
+    > [!IMPORTANT]
+    > Les éléments de l’exemple ne doivent pas être chiffrés et doivent être en anglais.
 
 12. Placez le contenu de test dans un dossier SharePoint Online dédié à la conservation *du contenu de test uniquement*. Notez le site SharePoint Online, la bibliothèque et l’URL du dossier.
 
-> [!TIP]
-> Si vous créez un nouveau site et dossier pour vos données de test, autorisez au moins une heure pour cet emplacement à indexer avant de créer le classifieur qui utilisera ces données de départ.
+    > [!TIP]
+    > Si vous créez un nouveau site et dossier pour vos données de test, autorisez au moins une heure pour cet emplacement à indexer avant de créer le classifieur qui utilisera ces données de départ.
 
 13. Choisissez `Add items to test` .
 
@@ -138,17 +138,20 @@ Une fois que le classifieur peut traiter suffisamment d’échantillons positifs
 
 16. Lorsque le classificateur de formation est fini de traiter vos fichiers de test, l’État sur la page des détails prend la forme `Ready to review` . Si vous devez augmenter la taille de l’échantillon de test, choisissez `Add items to test` et autorisez le classificateur en train de traiter les éléments supplémentaires.
 
-![capture d’écran prêt à examiner](../media/classifier-trainable-ready-to-review-detail.png)
+    > [!div class="mx-imgBorder"]
+    > ![capture d’écran prêt à examiner](../media/classifier-trainable-ready-to-review-detail.png)
 
 17. Choisissez `Tested items to review` Tab pour passer en revue les éléments.
 
 18. Microsoft 365 présente 30 éléments à la fois. Vérifiez-les et, dans la `We predict this item is "Relevant". Do you agree?` zone, choisissez `Yes` ou `No` ou `Not sure, skip to next item` . La précision du modèle est automatiquement mise à jour après 30 éléments.
 
-![zone passer en revue les éléments](../media/classifier-trainable-review-detail.png)
+    > [!div class="mx-imgBorder"]
+    > ![zone passer en revue les éléments](../media/classifier-trainable-review-detail.png)
 
 19. Passez *en revue au moins* 200 éléments. Une fois le score de précision stabilisé, l’option **publier** devient disponible et l’état du classifieur indique `Ready to use` .
 
-![score de précision et prêt à publier](../media/classifier-trainable-review-ready-to-publish.png)
+    > [!div class="mx-imgBorder"]
+    > ![score de précision et prêt à publier](../media/classifier-trainable-review-ready-to-publish.png)
 
 20. Publiez le classifieur.
 
@@ -159,10 +162,15 @@ Une fois que le classifieur peut traiter suffisamment d’échantillons positifs
 Utilisez cette procédure pour donner aux autres autorisations pour former, examiner et ajuster votre classificateur personnalisé.  
  
 1. En tant que créateur du classifieur, un administrateur général ou un administrateur eDiscovery se connecte au centre de conformité à l’aide de PowerShell à l’aide des procédures décrites dans [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps&preserve-view=true).
-2. Ensuite, exécutez la commande suivante :
-```powershell
-Add-ComplianceCaseMember -Case "<classifier name>" -Member "<user or role group>"
-```
-Par exemple : `Add-ComplianceCaseMember -Case "Financial Contract Classifier" -Member johnevans@contoso.com`
 
-Vous pouvez exécuter cette commande plusieurs fois pour ajouter plusieurs utilisateurs. Notez que vous pouvez uniquement ajouter des groupes de rôles Exchange Online Protection (EOP) et non des groupes de rôles Azure.
+2. Ensuite, exécutez la commande suivante :
+
+   ```powershell
+   Add-ComplianceCaseMember -Case "<classifier name>" -Member "<user or role group>"
+   ```
+   
+   Par exemple :
+   
+   `Add-ComplianceCaseMember -Case "Financial Contract Classifier" -Member johnevans@contoso.com`
+
+   Vous pouvez exécuter cette commande plusieurs fois pour ajouter plusieurs utilisateurs. Notez que vous pouvez uniquement ajouter des groupes de rôles Exchange Online Protection (EOP) et non des groupes de rôles Azure.

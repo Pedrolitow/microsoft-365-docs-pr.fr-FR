@@ -15,18 +15,21 @@ search.appverid:
 - MET150
 ms.assetid: fd53438a-a760-45f6-9df4-861b50161ae4
 description: Découvrez comment Advanced eDiscovery peut vous aider à analyser les données, rationaliser les révisions de documents et prendre des décisions pour une découverte électronique efficace.
-ms.openlocfilehash: 554b8cfc5209ce0764e712c3aff4338347bc2881
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 231064266a2498ec2eb8845da325fba6e5cfeb76
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631835"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48649711"
 ---
 # <a name="advanced-ediscovery-classic"></a>Advanced eDiscovery (classique)
 
 > [!IMPORTANT]
-> À mesure que nous continuons à investir dans les versions plus récentes de Advanced eDiscovery, nous annonçaons le retrait de la fonctionnalité eDiscovery avancée, également appelée *Advanced eDiscovery (Classic)* ou *Advanced eDiscovery v 1.0*. Si vous utilisez Advanced eDiscovery v 1.0, veuillez faire la transition vers [Advanced eDiscovery v2.0](overview-ediscovery-20.md) (également connu sous le nom de *solution eDiscovery avancée dans Microsoft 365*) dès que possible. Advanced eDiscovery 2.0 contient des fonctionnalités similaires à celles de Advanced eDiscovery v1.0, et elle offre également de nombreuses fonctions inédites telles que la gestion des consignataires, la gestion des communications et les jeux à réviser. Pour en savoir plus sur le retrait d’Advanced eDiscovery v1.0, voir la [Suppression des outils hérités eDiscovery](legacy-ediscovery-retirement.md#advanced-ediscovery-v10). 
-  
+> **Advanced eDiscovery (classique) sera définitivement supprimée le 31 décembre 2020.**<br/>
+> À mesure que nous continuons à investir dans les versions plus récentes de la découverte électronique avancée, nous annonçaons le retrait et la suppression permanents des cas et des données de cas de la découverte électronique avancée (classique).
+> Si vous utilisez toujours Advanced eDiscovery (Classic), également appelé *Advanced eDiscovery v 1.0*, effectuez une transition vers [Advanced eDiscovery v 2.0](overview-ediscovery-20.md) (également appelée *solution eDiscovery avancée dans Microsoft 365*) dès que possible.  En vue de la suppression de tous les cas et données de cas, vous pouvez archiver les données de cas en [exportant les données à partir d’un cas](https://docs.microsoft.com/microsoft-365/compliance/export-results-in-advanced-ediscovery?view=o365-worldwide).
+> Advanced eDiscovery v 2.0 contient des fonctionnalités similaires dans Advanced eDiscovery v 1.0, mais offre également de nombreuses nouvelles fonctionnalités telles que la gestion des dépositaires, la gestion des communications et les ensembles de révision. Pour en savoir plus sur les phases Retirment précédentes de Advanced eDiscovery v 1.0, consultez la rubrique [déclassement des outils eDiscovery hérités](legacy-ediscovery-retirement.md#advanced-ediscovery-v10).
+
 Grâce à Advanced eDiscovery, vous pouvez mieux comprendre vos données et réduire les coûts de découverte électronique. Advanced eDiscovery vous permet d’analyser les données non structurées, d’effectuer une révision des documents plus efficace et de prendre des décisions pour réduire les données de découverte électronique. Vous pouvez utiliser des données stockées dans Exchange Online, SharePoint Online, OneDrive entreprise, Skype entreprise, groupes Microsoft 365 et Microsoft Teams. Vous pouvez effectuer une recherche de découverte électronique dans le centre de sécurité et de conformité pour rechercher du contenu dans des groupes, des boîtes aux lettres et des sites individuels, puis analyser les résultats de la recherche avec Advanced eDiscovery. Lorsque vous préparez des résultats de recherche pour analyse dans Advanced eDiscovery, la reconnaissance optique de caractères permet l’extraction de texte à partir d’images. Cette fonctionnalité permet d’appliquer les puissantes fonctionnalités d’analyse du texte d’Advanced eDiscovery à des fichiers image.
   
 Advanced eDiscovery rationalise et accélère le processus de révision des documents en identifiant les informations redondantes avec des fonctionnalités telles que la détection des doublons et l’analyse des threads de messagerie. La fonctionnalité de pertinence applique une technologie de codage prédictive pour identifier les documents pertinents. Advanced eDiscovery apprend vos décisions de marquage sur des exemples de documents et applique des techniques statistiques et d’auto-apprentissage pour calculer la pertinence de chaque document dans l’ensemble de données. Cela vous permet de vous concentrer sur des documents clés, de prendre des décisions rapides mais éclairées sur la stratégie de cas, de sélection de données et de hiérarchiser la révision.

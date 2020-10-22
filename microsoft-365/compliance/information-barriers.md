@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 07/08/2019
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ ms.collection:
 localization_priority: None
 description: Utilisez les barrières relatives aux informations pour garantir la conformité de la communication à l’aide de Microsoft teams au sein de votre organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7b223de8eba68d49a8cc0c90239305eb05bb1090
-ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
+ms.openlocfilehash: 0630dc607d6993598f356a7090a6be5890028499
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48379196"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48636961"
 ---
 # <a name="information-barriers"></a>Obstacles aux informations
 
@@ -35,7 +35,7 @@ Les barrières d’informations sont désormais prises en charge dans Microsoft 
 - Une équipe de recherche doit uniquement appeler ou converser en ligne avec une équipe de développement de produit
 
 > [!IMPORTANT]
-> Les barrières d’informations ***ne prennent en charge que*** les restrictions bidirectionnelles. Les restrictions d’une seule manière, telles que marketing, peuvent communiquer avec les négociants, mais les heures de non communication avec le service marketing ne ***sont pas prises en charge***.
+> Barrières relatives aux informations ***ne prend en charge que**les restrictions de deux façons. Les restrictions d’une seule manière, telles que marketing, peuvent communiquer avec les commerçants, mais les jours où le service marketing ne peut pas communiquer ne_sont pas pris en charge_* *.
 
 Pour tous ces exemples de scénarios (et plus), des stratégies de barrière des informations peuvent être définies pour empêcher ou autoriser les communications dans Microsoft Teams. De telles stratégies peuvent empêcher les personnes d’appeler ou de converser avec celles qu’ils ne doivent pas utiliser, ou d’autoriser les utilisateurs à communiquer uniquement avec des groupes spécifiques dans Microsoft Teams. Avec des stratégies de barrière des informations en vigueur, chaque fois que des utilisateurs couverts par ces stratégies tentent de communiquer avec d’autres personnes dans Microsoft Teams, des vérifications sont effectuées pour empêcher (ou autoriser) la communication (comme défini par les stratégies de barrière des informations). Pour en savoir plus sur l’expérience utilisateur avec des barrières d’informations, consultez la rubrique [barrières relatives aux informations dans Microsoft teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams).
 

@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment utiliser les stratégies DLP pour les applications Cloud non Microsoft.
-ms.openlocfilehash: dd5a7a4bc0725d0785daec6b7635047cd91f20a2
-ms.sourcegitcommit: 39af527404cb06e05c5aa4550dbec39aec133016
+ms.openlocfilehash: 0b588bf27738a0f9a8078999311294f74e5193c0
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "48422732"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48649655"
 ---
 # <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps-preview"></a>Utiliser des stratégies de protection contre la perte de données pour les applications Cloud non Microsoft (aperçu)
 
@@ -45,7 +45,7 @@ Avant de commencer à utiliser les stratégies DLP pour les applications Cloud n
 
 ### <a name="prepare-your-cloud-app-security-environment"></a>Préparer votre environnement de sécurité d’application Cloud
 
-Les stratégies DLP pour les applications Cloud non-Microsoft utilisent les fonctionnalités DLP de la sécurité des applications Cloud. Pour l’utiliser, vous devez préparer votre environnement de sécurité d’application Cloud. Pour obtenir des instructions, consultez [la rubrique Set isntant Visibility, protection, and Governance actions for Your Apps](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security#step-1-set-instant-visibility-protection-and-governance-actions-for-your-apps).
+Les stratégies DLP pour les applications Cloud non-Microsoft utilisent les fonctionnalités DLP de la sécurité des applications Cloud. Pour l’utiliser, vous devez préparer votre environnement de sécurité d’application Cloud. Pour obtenir des instructions, voir [définir la visibilité instantanée, la protection et les actions de gouvernance pour vos applications](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security#step-1-set-instant-visibility-protection-and-governance-actions-for-your-apps).
 
 ### <a name="connect-a-non-microsoft-cloud-app"></a>Connecter une application Cloud non-Microsoft
 

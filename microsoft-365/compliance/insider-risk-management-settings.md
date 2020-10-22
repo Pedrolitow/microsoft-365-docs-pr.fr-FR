@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: ffa2d54385249a22d672be0c2591c3b4171bd10d
-ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
+ms.openlocfilehash: 5b0353546a9bb923559ebd125393890180257baf
+ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48600379"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48651438"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Prise en main des paramètres de gestion des risques initiés
 
@@ -81,7 +81,7 @@ Pour activer la surveillance des activités de risque sur les appareils et inclu
 
 Assurez-vous que les appareils Windows 10 que vous planifiez sur la création de rapports dans la gestion des risques initiés répondent à ces exigences.
 
-1. Vous devez exécuter Windows 10 x64 Build 1809 ou version ultérieure.
+1. Doit exécuter Windows 10 x64 Build 1809 ou une version ultérieure et vous devez avoir installé la [mise à jour de Windows 10 (OS build 17763,1075)](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818) à partir du 20 février 2020.
 2. Tous les appareils doivent être [joints à Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join) ou joints à Azure AD Hybride.
 3. Installez le navigateur Edge de Microsoft chrome sur l’appareil de point de terminaison pour surveiller les actions de l’activité de chargement Cloud. [Télécharger le nouveau Microsoft Edge sur la base de chrome](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
 
@@ -244,7 +244,7 @@ Les champs et valeurs suivants sont exportés pour les alertes de gestion des ri
 | AlertType | Le type de l’alerte est *Custom*.  |
 | AlertId | GUID de l’alerte. Les alertes de gestion des risques internes sont mutables. Lorsque l’état des alertes est modifié, un nouveau journal portant le même alerties est généré. Cette fonction peut être utilisée pour corréler les mises à jour d’une alerte. |
 | Catégorie | La catégorie de l’alerte est *InsiderRiskManagement*. Cette catégorie peut être utilisée pour faire la distinction entre ces alertes et d’autres alertes de sécurité & de conformité. |
-| Comments | Commentaires par défaut pour l’alerte. Values *New Alert* (consignée lors de la création d’une alerte) et *Alert* Updated (consignée lors de la mise à jour d’une alerte). Utilisez la fonction alertiesd pour corréler les mises à jour d’une alerte. |
+| Commentaires | Commentaires par défaut pour l’alerte. Values *New Alert* (consignée lors de la création d’une alerte) et *Alert* Updated (consignée lors de la mise à jour d’une alerte). Utilisez la fonction alertiesd pour corréler les mises à jour d’une alerte. |
 | Données | Les données de l’alerte incluent l’ID d’utilisateur unique, le nom d’utilisateur principal, ainsi que la date et l’heure (UTC) lorsque l’utilisateur a été déclenché dans une stratégie. |
 | Nom | Nom de la stratégie pour la stratégie de gestion des risques initiés qui a généré l’alerte. |
 | PolicyId | GUID de la stratégie de gestion des risques Insiders qui a déclenché l’alerte. |
@@ -364,6 +364,9 @@ Pour supprimer une ressource physique de priorité, procédez comme suit :
 [Microsoft Power automate](https://docs.microsoft.com/power-automate/getting-started) est un service de flux de travail qui automatise les actions entre les applications et les services. En utilisant des flux provenant de modèles ou créés manuellement, vous pouvez automatiser les tâches courantes associées à ces applications et services. Lorsque vous activez la gestion de l’énergie automatique pour la gestion des risques initiaux, vous pouvez automatiser des tâches importantes pour les cas et les utilisateurs. Vous pouvez configurer les flux Automated Power afin de récupérer les informations relatives aux utilisateurs, aux alertes et aux incidents, de partager ces informations avec les parties prenantes et d’autres applications, ainsi que d’automatiser les actions de gestion des risques initiés, telles que la publication dans les notes de cas. Les flux d’automate de puissance s’appliquent aux cas et à tout utilisateur dans l’étendue d’une stratégie.
 
 Les clients ayant des abonnements Microsoft 365 qui incluent une gestion des risques Insider n’ont pas besoin de puissance automatique supplémentaire pour utiliser la gestion des risques initiés de gestion des risques automatisée. Ces modèles peuvent être personnalisés pour prendre en charge votre organisation et couvrent les scénarios de gestion des risques initiaux fondamentaux. Si vous choisissez d’utiliser les fonctionnalités de Power automate Premium dans ces modèles, créez un modèle personnalisé à l’aide du connecteur Microsoft 365 Compliance Connector ou utilisez Power automates pour d’autres zones de conformité dans Microsoft 365, vous aurez peut-être besoin d’une alimentation automatique supplémentaire.
+
+>[!IMPORTANT]
+>Recevez-vous des messages d’invite pour la validation d’une licence supplémentaire lors du test de l’alimentation automatique des flux ? Il se peut que votre organisation n’ait pas encore reçu de mises à jour de service pour cette fonctionnalité d’aperçu. Les mises à jour sont déployées et toutes les organisations ayant des abonnements Microsoft 365 qui incluent une gestion des risques internes doivent disposer de la prise en charge de licences pour les flux créés à partir des modèles automateurs d’alimentation recommandés le 30 octobre 2020.
 
 Les modèles automateurs d’alimentation suivants sont fournis aux clients pour prendre en charge l’automatisation des processus pour les utilisateurs et les cas de gestion des risques initiaux :
 

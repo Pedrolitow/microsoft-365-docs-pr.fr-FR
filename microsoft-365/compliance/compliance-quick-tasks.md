@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-compliance
 localization_priority: Normal
 description: Découvrez les tâches qui vous aideront à commencer rapidement à prendre en main la conformité dans Microsoft 365.
-ms.openlocfilehash: 98526104d2ced7b86315b24bd2843701047a097c
-ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
+ms.openlocfilehash: a8fd5d72fd87fdbf9c8c3c6da094a58544efd6e8
+ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48341180"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48651360"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Tâches rapides pour démarrer avec la conformité Microsoft 365
 
@@ -68,13 +68,7 @@ Utilisez les outils de tableau de bord de stratégie et d’alerte pour créer d
 
 Pour obtenir des conseils détaillés sur la création de stratégies d’alerte personnalisées, consultez [la rubrique Alert Policies in the Security and Compliance Center](alert-policies.md).
 
-## <a name="task-5-configure-just-in-time-access-for-your-administrators"></a>Tâche 5 : configurer l’accès juste-à-temps pour vos administrateurs
-
-L’accès permanent de certains utilisateurs à des informations sensibles ou à des paramètres de configuration réseau critiques constitue une voie potentielle pour les comptes compromis ou les activités de menace interne. La [gestion des accès privilégiés](privileged-access-management-overview.md) permet de protéger votre organisation contre les violations et de respecter les meilleures pratiques en matière de conformité en limitant l’accès permanent aux données sensibles ou l’accès aux paramètres de configuration critiques. Au lieu que les administrateurs disposent d’un accès constant, les règles d’accès juste-à-temps sont implémentées pour les tâches qui nécessitent des autorisations élevées. L’activation de la gestion des accès privilégiés dans Microsoft 365 permet à votre organisation de fonctionner avec des privilèges permanents et de fournir une couche de défense contre les vulnérabilités d’accès administratif permanentes.
-
-Pour obtenir des conseils détaillés sur la configuration de la gestion des accès privilégiés, consultez la rubrique [prise en main de la gestion des accès privilégiés](privileged-access-management-configuration.md). Pour obtenir des informations sur les licences de gestion des accès privilégiés, consultez [la rubrique Microsoft 365 Licensing Guidance for security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#privileged-access-management-in-office-365).
-
-## <a name="task-6-classify-and-protect-sensitive-data"></a>Tâche 6 : classer et protéger les données sensibles
+## <a name="task-5-classify-and-protect-sensitive-data"></a>Tâche 5 : classer et protéger les données sensibles
 
 Pour mener à bien leur travail, les membres de votre organisation collaborent avec d’autres personnes au sein de l’organisation et en dehors de celle-ci. Cela signifie que le contenu n’est plus protégé par un pare-feu : il peut se déplacer partout, sur les appareils, applications et services. Dans ce cas, vous devez sécuriser et protéger l’itinérance, tout en respectant les stratégies métier et de conformité de votre organisation.
 
@@ -82,7 +76,7 @@ Les [étiquettes de sensibilité](sensitivity-labels.md) vous permettent de clas
 
 Pour obtenir des conseils détaillés sur la configuration et l’utilisation des étiquettes de confidentialité, consultez la rubrique [prise en main des étiquettes de confidentialité](get-started-with-sensitivity-labels.md). Pour obtenir des informations sur les licences d’étiquette de sensibilité, consultez [la rubrique Microsoft 365 Licensing Guidance for security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
 
-## <a name="task-7-configure-a-retention-policy"></a>Tâche 7 : configurer une stratégie de rétention
+## <a name="task-6-configure-a-retention-policy"></a>Tâche 6 : configurer une stratégie de rétention
 
 Une [stratégie de rétention](retention.md) vous permet de décider de manière proactive de conserver le contenu, de supprimer du contenu, ou les deux, de conserver, puis de supprimer le contenu à la fin d’une période de rétention spécifiée. Ces actions peuvent être nécessaires pour se conformer aux réglementations sectorielles et aux politiques internes, ainsi que réduire le risque en cas de litige ou de violation de la sécurité.
 
@@ -92,7 +86,7 @@ Vous pouvez rapidement mettre une stratégie de rétention en place pour plusieu
 
 Pour obtenir des conseils détaillés sur la configuration d’une stratégie de rétention, voir [Create and configure Retention Policies](create-retention-policies.md). Si vous n’avez jamais configurer la rétention dans Microsoft 365, voir [Prise en main des stratégies et des étiquettes de rétention](get-started-with-retention.md).
 
-## <a name="task-8-configure-sensitive-information-and-offensive-language-policies"></a>Tâche 8 : configurer des informations sensibles et des stratégies de langue offensante
+## <a name="task-7-configure-sensitive-information-and-offensive-language-policies"></a>Tâche 7 : configurer des informations sensibles et des stratégies de langue offensante
 
 La protection des informations sensibles et la détection et l’action des incidents de harcèlement sur le lieu de travail constituent un élément important de la conformité aux stratégies et normes internes. [La conformité de la communication](communication-compliance-feature-reference.md) dans Microsoft 365 contribue à réduire ces risques en vous aidant à détecter, capturer et prendre rapidement des mesures correctives pour les communications par E-mail et Microsoft Teams. Il s’agit notamment de communications inappropriées contenant des blasphèmes, des menaces et des communications qui partagent des informations sensibles à l’intérieur et à l’extérieur de votre organisation.
 
@@ -102,7 +96,7 @@ Le modèle de stratégie d' *informations sensibles* prédéfini vous permet de 
 
 Pour obtenir des conseils détaillés sur la planification et la configuration de la conformité des communications, voir [plan for communication Compliance](communication-compliance-plan.md) et [Get Started with communication Compliance](communication-compliance-configure.md). Pour plus d’informations sur les licences de conformité des communications, consultez [la rubrique Microsoft 365 Licensing Guidance for security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-compliance).
 
-## <a name="task-9-see-whats-happening-with-your-sensitive-items"></a>Tâche 9 : voir ce qu’il se passe avec vos éléments sensibles
+## <a name="task-8-see-whats-happening-with-your-sensitive-items"></a>Tâche 8 : voir ce qu’il se passe avec vos éléments sensibles
 
 Les étiquettes de sensibilité, les types d’informations sensibles, les étiquettes et les stratégies de rétention et les classifieurs pouvant être formés peuvent être utilisés pour classer et étiqueter les éléments sensibles dans Exchange, SharePoint et OneDrive, comme indiqué dans les tâches précédentes. La dernière étape de votre tâche rapide consiste à déterminer les éléments qui ont été étiquetés et les actions que vos utilisateurs encourent à ces éléments sensibles. l' [Explorateur de contenu](data-classification-content-explorer.md) et l’Explorateur d' [activités](data-classification-activity-explorer.md) fournissent cette visibilité.
 
