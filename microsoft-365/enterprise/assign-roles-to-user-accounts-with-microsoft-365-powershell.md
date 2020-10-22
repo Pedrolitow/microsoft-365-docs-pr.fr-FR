@@ -19,22 +19,22 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
-description: Dans cet article, Découvrez comment utiliser rapidement et facilement PowerShell pour Microsoft 365 pour attribuer des rôles à des comptes d’utilisateur.
-ms.openlocfilehash: 9df1b018cf3e89e0afbd5265fdd1ec9f92b34aec
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+description: Dans cet article, Découvrez comment utiliser rapidement et facilement PowerShell pour Microsoft 365 pour attribuer des rôles d’administrateur à des comptes d’utilisateur.
+ms.openlocfilehash: 1486c86172cd34e6e88f8cd02d003967518bcdb7
+ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235429"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48655946"
 ---
-# <a name="assign-roles-to-microsoft-365-user-accounts-with-powershell"></a>Attribuer des rôles à des comptes d’utilisateur Microsoft 365 avec PowerShell
+# <a name="assign-admin-roles-to-microsoft-365-user-accounts-with-powershell"></a>Attribuer des rôles d’administrateur à des comptes d’utilisateur Microsoft 365 avec PowerShell
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Vous pouvez rapidement et facilement attribuer des rôles à des comptes d’utilisateur à l’aide de PowerShell pour Microsoft 365.
+Vous pouvez rapidement et facilement attribuer des rôles d’administrateur à des comptes d’utilisateur à l’aide de PowerShell pour Microsoft 365.
 
 >[!Note]
->[Découvrez comment attribuer des rôles à des comptes d’utilisateur](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles) avec le centre d’administration Microsoft 365. Pour obtenir la liste des ressources supplémentaires, consultez la rubrique [gérer les utilisateurs et les groupes](https://docs.microsoft.com/microsoft-365/admin/add-users/).
+>[Découvrez comment attribuer des rôles d’administrateur à des comptes d’utilisateur](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles) avec le centre d’administration Microsoft 365. Pour obtenir la liste des ressources supplémentaires, consultez la rubrique [gérer les utilisateurs et les groupes](https://docs.microsoft.com/microsoft-365/admin/add-users/).
 >
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Utilisation du module Azure Active Directory PowerShell pour Graph
@@ -43,7 +43,7 @@ Tout d’abord, [Connectez-vous à votre client Microsoft 365](connect-to-micros
   
 Ensuite, déterminez le nom de connexion du compte d’utilisateur que vous souhaitez ajouter à un rôle (exemple : fredsm@contoso.com). On l’appelle aussi nom d’utilisateur principal (UPN).
 
-Ensuite, déterminez le nom du rôle. Utilisez cette[liste d’autorisations des rôles d’administrateur dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
+Ensuite, déterminez le nom du rôle d’administrateur. Utilisez cette[liste d’autorisations des rôles d’administrateur dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
 
 >[!Note]
 >Soyez attentif aux notes dans cet article. Certains noms de rôle sont différents pour Azure AD PowerShell. Par exemple, le rôle « Administrateur de SharePoint » dans le Centre d’administration Microsoft 365 est nommé « Administrateur du Service SharePoint » pour Azure AD PowerShell.
@@ -53,7 +53,7 @@ Ensuite, renseignez les noms de connexion et de rôle, et exécutez ces commande
   
 ```powershell
 $userName="<sign-in name of the account>"
-$roleName="<role name>"
+$roleName="<admin role name>"
 $role = Get-AzureADDirectoryRole | Where {$_.displayName -eq $roleName}
 if ($role -eq $null) {
 $roleTemplate = Get-AzureADDirectoryRoleTemplate | Where {$_.displayName -eq $roleName}
@@ -63,7 +63,7 @@ $role = Get-AzureADDirectoryRole | Where {$_.displayName -eq $roleName}
 Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId (Get-AzureADUser | Where {$_.UserPrincipalName -eq $userName}).ObjectID
 ```
 
-Voici un exemple d’un jeu de commandes terminé qui affecte le rôle d’administrateur de service SharePoint au compte belindan@contoso.com :
+Voici un exemple d’un jeu de commandes terminé qui affecte le rôle administrateur des administrateurs des services SharePoint au compte belindan@contoso.com :
   
 ```powershell
 $userName="belindan@contoso.com"
@@ -77,7 +77,7 @@ $role = Get-AzureADDirectoryRole | Where {$_.displayName -eq $roleName}
 Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId (Get-AzureADUser | Where {$_.UserPrincipalName -eq $userName}).ObjectID
 ```
 
-Pour afficher la liste des noms d’utilisateur pour un rôle spécifique, utilisez ces commandes.
+Pour afficher la liste des noms d’utilisateur pour un rôle d’administrateur spécifique, utilisez ces commandes.
 
 ```powershell
 $roleName="<role name>"
@@ -118,17 +118,17 @@ Si vous utilisez les noms d’affichage des comptes d’utilisateur, déterminez
     
 - Le rôle que vous souhaitez attribuer.
     
-    Pour afficher la liste des rôles disponibles que vous pouvez attribuer aux comptes d’utilisateur, utilisez cette commande :
+    Pour afficher la liste des rôles d’administrateur disponibles que vous pouvez attribuer aux comptes d’utilisateur, utilisez la commande suivante :
     
   ```powershell
   Get-MsolRole | Sort Name | Select Name,Description
   ```
 
-Une fois que vous avez déterminé le nom d’affichage du compte et le nom du rôle, utilisez ces commandes pour attribuer le rôle au compte :
+Une fois que vous avez déterminé le nom d’affichage du compte et le nom du rôle d’administrateur, utilisez ces commandes pour attribuer le rôle au compte :
   
 ```powershell
 $dispName="<The Display Name of the account>"
-$roleName="<The role name you want to assign to the account>"
+$roleName="<The admin role name you want to assign to the account>"
 Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser -All | Where DisplayName -eq $dispName).UserPrincipalName -RoleName $roleName
 ```
 

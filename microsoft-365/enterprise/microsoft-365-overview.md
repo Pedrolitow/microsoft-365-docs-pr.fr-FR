@@ -13,12 +13,12 @@ localization_priority: Priority
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Fournit une présentation des composants, des plans et des chemins de déploiement pour Microsoft 365 pour entreprise.
-ms.openlocfilehash: d34ddd9b577f4baff4ebb77f84f48bf2b779c93c
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: 0cee9752ae21e08831b6a3df856452a7ca6aec71
+ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487151"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48655970"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Vue d’ensemble de Microsoft 365 pour entreprise
 
@@ -75,13 +75,11 @@ Vous pouvez également [télécharger une copie de l'affiche ](https://github.co
 
 ## <a name="transition-your-entire-organization"></a>Transition de l'ensemble de votre organisation
 
-Pour avoir une meilleure idée de la manière de faire passer l'ensemble de votre organisation aux produits et services de Microsoft 365 pour entreprise, voir [l'affiche de transition ](../downloads/transition-org-to-m365.pdf).
+Pour avoir une meilleure idée de la manière de faire passer l'ensemble de votre organisation aux produits et services de Microsoft 365 pour entreprise, voir [l'affiche de transition ](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf).
 
-[![Image pour l'affiche Transition vers Microsoft 365](../media/microsoft-365-overview/transition-org-to-m365.png)](../downloads/transition-org-to-m365.pdf)
+[![Image pour l'affiche Transition vers Microsoft 365](../media/microsoft-365-overview/transition-org-to-m365.png)](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf)
 
 Cette affiche de deux pages est un moyen rapide d'inventorier vos infrastructures existantes. Il vous aide à trouver des conseils et à passer au produit ou service correspondant dans Microsoft 365 for enterprise. Il comprend les produits Windows et Office et d'autres éléments d'infrastructure et de sécurité, tels que la gestion des périphériques, l'identité et la protection des informations et des menaces.
-
-Vous pouvez également [télécharger cette affiche](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/transition-org-to-m365.pdf) et l’imprimer au format lettre, légal ou tabloïd (11 x 17).
 
 ## <a name="end-of-support-for-windows-7-and-office-2010-clients-and-servers"></a>Fin du support pour les clients et serveurs Windows 7 et Office 2010
 

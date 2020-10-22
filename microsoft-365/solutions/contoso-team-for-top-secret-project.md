@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_Architecture
 description: 'Résumé : Comment Contoso a utilisé une équipe avec l’isolation de sécurité pour un projet à secret principal afin de développer une nouvelle suite de produits et de services.'
-ms.openlocfilehash: 16d10f5d6e5b5939172c02746c9324eb20b6987e
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: b8794502afcb77a8e597a1b05dfc92acd093f23a
+ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399488"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48656068"
 ---
 # <a name="isolated-team-for-a-top-secret-project-of-the-contoso-corporation"></a>Équipe isolée pour un projet à secret supérieur de Contoso Corporation
 
@@ -77,7 +77,7 @@ Comme les canaux privés pour le projet 2X ont été créés, le propriétaire d
 
 Voici la configuration obtenue de l’équipe Project 2X avec l’isolation de sécurité.
 
-![La configuration obtenue de l’équipe Project 2X](../media/contoso-team-for-top-secret-project/contoso-team-for-top-secret-project.png)
+![La configuration obtenue de l’équipe Project 2X](../media/contoso-team-for-top-secret-project.png)
 
  ## <a name="step-4-trained-project-2x-team-members"></a>Étape 4 : projet formé 2X membres de l’équipe
 
@@ -92,7 +92,7 @@ Le résultat final était un environnement sécurisé dans lequel Project 2 memb
 
 Voici un exemple de fichier stocké dans le site du projet 2 sous-jacent avec l’étiquette de sensibilité de projet 2 affectée.
 
-![Exemple de fichier stocké dans le site du projet 2 sous-jacent](../media/contoso-team-for-top-secret-project/contoso-team-for-top-secret-project-example.png)
+![Exemple de fichier stocké dans le site du projet 2 sous-jacent](../media/contoso-team-for-top-secret-project-example.png)
 
 Dans quelques exemples, Project 2X les membres de l’équipe ont téléchargé des fichiers protégés par l’étiquette Project 2X sur un lecteur local pour le travail hors connexion. 
 

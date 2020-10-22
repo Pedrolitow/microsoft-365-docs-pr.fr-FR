@@ -1,5 +1,5 @@
 ---
-title: Définir une condition de mot de passe fort pour les utilisateurs
+title: Désactiver les exigences de mot de passe renforcé pour les utilisateurs
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -21,14 +21,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment définir des exigences de mots de passe forts pour vos utilisateurs, à l’aide de Windows PowerShell.
-ms.openlocfilehash: 9f6fd61396d99245ffeabf757d3cb65c5d5cb85e
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: f9a0b76d024cc18552657144e4ccf8de8a72f0d9
+ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646618"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48655734"
 ---
-# <a name="set-strong-password-requirement-for-users"></a>Définir une condition de mot de passe fort pour les utilisateurs
+# <a name="turn-off-strong-password-requirements-for-users"></a>Désactiver les exigences de mot de passe renforcé pour les utilisateurs
 
 Cet article explique comment désactiver les exigences de mot de passe renforcé pour vos utilisateurs. Les exigences de mot de passe fort sont activées par défaut dans votre organisation Microsoft 365 pour les entreprises. Votre organisation peut avoir besoin de désactiver des mots de passe forts. Suivez les étapes ci-dessous pour désactiver les exigences de mot de passe renforcé. Vous devez effectuer ces étapes à l’aide de PowerShell.
 

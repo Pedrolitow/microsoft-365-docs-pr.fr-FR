@@ -1,7 +1,7 @@
 ---
 title: Surveillance et opérations du bureau géré Microsoft
 description: ''
-keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 0ed10b7088e38cbf5a2d9196508eae5cdc522a74
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 01a43b35d272aaebce4c6866e3edfb04664b1801
+ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529444"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48655722"
 ---
 # <a name="microsoft-managed-desktop-operations-and-monitoring"></a>Surveillance et opérations du bureau géré Microsoft
 
@@ -72,7 +72,7 @@ Toutes les modifications n’ont pas le même impact sur vos utilisateurs et ne 
 **Nécessite une action d’administrateur global** | Parfois |  Rarement |    Rarement 
 **Type d’action** | Modifier les paramètres | Communiquer les modifications aux utilisateurs | Modifier les paramètres d’administration     
 **Nécessite un test** | Vérifier les applications métiers, y compris les services d’accès à distance |  Parfois : tests du correctif par rapport aux processus ou aux personnalisations |   Rarement 
-**Exemples de modifications** | -Mises à jour de fonctionnalité : portail d’administration informatique simplifie l’envoi et la révision du ticket de support<br>-Nouvelles fonctionnalités ou applications : version semi-annuelle d’une mise à jour de la fonctionnalité Windows 10 | Correctifs basés sur les bogues signalés par le client |  
+**Exemples de modifications** | -Mises à jour de fonctionnalité : portail d’administration informatique simplifie l’envoi et la révision du ticket de support<br>-Nouvelles fonctionnalités ou applications : Semi-Annual publication d’une mise à jour de la fonctionnalité Windows 10 | Correctifs basés sur les bogues signalés par le client |  
 
 
 ## <a name="standard-operating-procedures"></a>Procédures d’exploitation standard
@@ -85,11 +85,11 @@ Catégories |    Microsoft va | Le client va
 --- | --- | ---
 Réseau (proxy, inspection de paquets, VPN)  | Conseillez et planifiez avec les clients pour limiter les risques pour les utilisateurs de l’entreprise. | -Créez une demande de support demandant des informations pour une modification de configuration planifiée, y compris des détails de configuration, une étendue, une chronologie et d’autres informations pertinentes à consulter pour Microsoft.<br>-Appliquer une modification une fois que Microsoft Managed Desktop Operations a été évalué et conseillé.
 Comptes de service |-Implémenter, stocker en toute sécurité et gérer les informations d’identification.<br> -Communiquer un accès non autorisé ou utiliser ces informations d’identification à votre équipe des opérations de sécurité. | -Créez une demande de support demandant des informations pour une modification de configuration planifiée, y compris des détails de configuration, une étendue, une chronologie et d’autres informations pertinentes à consulter pour Microsoft.<br>-Appliquer une modification une fois que Microsoft Managed Desktop Operations a été évalué et conseillé.<br>-N’attribuez pas de stratégie, d’authentification multifacteur, d’accès conditionnel ou de déploiement d’application aux comptes de service de bureau géré Microsoft.<br>-Ne pas réinitialiser le mot de passe ou utiliser les informations d’identification.<br>-Ouvrez une demande de support gravité C pour Microsoft Managed Desktop Operations si l’activité suspecte est observée dans les journaux d’audit Intune ou Azure, associés à ces comptes de service.
-Groupes d’appareils | : Implémentez et gérez l’appartenance des appareils dans les groupes de bureau gérés Microsoft.<br>-Utilisez les groupes de bureau gérés Microsoft pour gérer l’attribution et la publication de la configuration et des mises à jour sur les appareils. | -Créez une demande de support demandant des informations pour une modification de configuration planifiée, y compris des détails de configuration, une étendue, une chronologie et d’autres informations pertinentes à consulter pour Microsoft.<br>-Appliquer une modification une fois que Microsoft Managed Desktop Operations a été évalué et conseillé.<br>-Ne modifiez pas l’appartenance à un groupe de bureau géré Microsoft.<br>-Utilisez uniquement les groupes pour attribuer des certificats d’entreprise pour des services tels que le VPN, Windows Hello pour l’entreprise ou le chiffrement du courrier électronique ou la configuration du profil Wi-Fi d’entreprise.<br>-Où la co-gestion existe, excluez explicitement tous les groupes de bureau gérés par Microsoft lors du déploiement du client gestionnaire de configuration.
+Groupes d’appareils | : Implémentez et gérez l’appartenance des appareils dans les groupes de bureau gérés Microsoft.<br>-Utilisez les groupes de bureau gérés Microsoft pour gérer l’attribution et la publication de la configuration et des mises à jour sur les appareils. | -Créez une demande de support demandant des informations pour une modification de configuration planifiée, y compris des détails de configuration, une étendue, une chronologie et d’autres informations pertinentes à consulter pour Microsoft.<br>-Appliquer une modification une fois que Microsoft Managed Desktop Operations a été évalué et conseillé.<br>-Ne modifiez pas l’appartenance à un groupe de bureau géré Microsoft.<br>-Utilisez uniquement les groupes pour attribuer des certificats d’entreprise pour des services tels que le VPN, Windows Hello entreprise ou le chiffrement de messagerie, ou pour la configuration de profil Wi-Fi d’entreprise.<br>-Où la co-gestion existe, excluez explicitement tous les groupes de bureau gérés par Microsoft lors du déploiement du client gestionnaire de configuration.
 Stratégies |  -Implémenter et gérer les stratégies de bureau géré Microsoft qui régissent l’état de configuration des appareils au sein du service.<br>-Déployez les mises à jour, les stratégies ou les fenêtres, de manière incrémentielle, à l’aide de groupes d’appareils.<br> -Exclure explicitement le ciblage des groupes de bureau gérés non-Microsoft. | -Créez une demande de support demandant des informations pour une modification de configuration planifiée, y compris des détails de configuration, une étendue, une chronologie et d’autres informations pertinentes à consulter pour Microsoft.<br>-Appliquer une modification une fois que Microsoft Managed Desktop Operations a été évalué et conseillé.<br>-Ne modifiez pas ou n’affectez pas de stratégies de bureau géré Microsoft aux appareils ou aux utilisateurs qui ne sont pas gérés par le service bureau géré Microsoft.
 Microsoft Defender – Protection avancée contre les menaces   | Surveillez et examinez les appareils dans l’étendue du service bureau géré Microsoft. | -Créez une demande de support demandant des informations pour une modification de configuration planifiée, y compris des détails de configuration, une étendue, une chronologie et d’autres informations pertinentes à consulter pour Microsoft.<br>-Appliquer une modification une fois que Microsoft Managed Desktop Operations a été évalué et conseillé
 Microsoft Store pour Entreprises |  Configurez et gérez le profil Windows AutoPilot pour le service de bureau géré Microsoft. | -Créez une demande de support demandant des informations pour une modification de configuration planifiée, y compris des détails de configuration, une étendue, une chronologie et d’autres informations pertinentes à consulter pour Microsoft.<br>-Appliquer une modification une fois que Microsoft Managed Desktop Operations a été évalué et conseillé.<br>-Ne modifiez pas la configuration du profil Windows AutoPilot du bureau géré Microsoft ou ajoutez/supprimez des appareils attribués.
-Certificats | | -Créez une demande de prise en charge de 60 jours avant l’expiration d’un certificat, en demandant des informations pour une modification de configuration planifiée, y compris des détails de la configuration, une étendue, une chronologie et d’autres détails pertinents à consulter pour Microsoft.<br>-Appliquer une modification une fois que Microsoft Managed Desktop Operations a été évalué et conseillé.<br>-Mettez à jour tous les certificats requis pour configurer des profils de certificats, des profils VPN et des profils Wi-Fi.
+Certificats | | -Créez une demande de prise en charge de 60 jours avant l’expiration d’un certificat, en demandant des informations pour une modification de configuration planifiée, y compris des détails de la configuration, une étendue, une chronologie et d’autres détails pertinents à consulter pour Microsoft.<br>-Appliquer une modification une fois que Microsoft Managed Desktop Operations a été évalué et conseillé.<br>-Mettez à jour tous les certificats requis pour configurer des profils de certificats, des profils VPN et des profils de Wi-Fi.
 
 
 

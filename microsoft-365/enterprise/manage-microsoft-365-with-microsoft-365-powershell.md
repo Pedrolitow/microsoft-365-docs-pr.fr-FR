@@ -3,7 +3,6 @@ title: Gestion de Microsoft 365 à l’aide de PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/17/2020
 audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
@@ -20,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
 description: Découvrez comment gérer les utilisateurs, les licences et les applications 365 Microsoft 365 avec PowerShell.
-ms.openlocfilehash: ef6146744909755efb974ee57f34ae3b924a7f2c
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: b1e8353eac1fb2917330ef5b5c2c7752fe5b1824
+ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547913"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48655850"
 ---
 # <a name="manage-microsoft-365-with-powershell"></a>Gestion de Microsoft 365 à l’aide de PowerShell
 
@@ -33,7 +32,7 @@ ms.locfileid: "47547913"
 
 PowerShell pour Microsoft 365 est un outil de gestion puissant qui complète le centre d’administration Microsoft 365. Par exemple, vous pouvez utiliser l’automatisation PowerShell pour gérer facilement plusieurs comptes d’utilisateurs et licences, ainsi que pour créer des rapports.
 
-Pour savoir comment utiliser PowerShell pour les utilisateurs et licences Microsoft 365, consultez les rubriques suivantes : Skype entreprise Online, SharePoint Online, Exchange Online et le centre de conformité & Security.
+Pour savoir comment utiliser PowerShell pour gérer Microsoft 365, sélectionnez l’une des rubriques suivantes :
   
 - [**Prise en main**](getting-started-with-microsoft-365-powershell.md)
 
@@ -41,23 +40,23 @@ Pour savoir comment utiliser PowerShell pour les utilisateurs et licences Micros
 
 - [**Comptes d’utilisateur, licences et groupes**](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
 
-    Commencez ici si vous avez installé les modules Microsoft 365 et que vous souhaitez en savoir plus sur l’utilisation des commandes d’automatisation pour gérer les comptes d’utilisateur, les licences et les groupes.
+    Commencez par là si vous souhaitez en savoir plus sur l’utilisation des commandes d’automatisation pour gérer les comptes d’utilisateur, les licences et les groupes.
 
 - [**SharePoint**](manage-sharepoint-online-with-microsoft-365-powershell.md)
 
-    Commencez ici si vous avez installé les modules Microsoft 365 et que vous souhaitez utiliser des commandes d’automatisation pour gérer SharePoint.
+    Commencez par là si vous souhaitez utiliser des commandes d’automatisation pour gérer SharePoint.
 
-- [**Exchange Online PowerShell**](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)
+- [**Exchange Online**](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)
 
-    Commencez par là si vous souhaitez utiliser les commandes d’automatisation pour gérer Exchange Online.
+    Commencez par là si vous souhaitez gérer Exchange Online.
 
 - [**Migration de messagerie**](use-powershell-for-email-migration-to-microsoft-365.md)
 
-    Commencez ici si vous avez installé les modules PowerShell 365 et que vous souhaitez migrer votre courrier électronique à partir de systèmes préexistants.
+    Commencez par là si vous souhaitez migrer votre courrier électronique à partir de systèmes préexistants.
 
 - [**Centre de sécurité et de conformité**](https://docs.microsoft.com/powershell/exchange/scc-powershell)
 
-    Commencez par là si vous souhaitez utiliser des commandes d’automatisation pour gérer la sécurité & PowerShell du centre de conformité.
+    Commencez par là si vous souhaitez gérer les fonctionnalités du centre de sécurité & conformité.
 
 - [**Partenaires avec autorisations d’accès délégué**](manage-microsoft-365-with-windows-powershell-for-delegated-access-permissions-dap-p.md)
 
@@ -65,4 +64,4 @@ Pour savoir comment utiliser PowerShell pour les utilisateurs et licences Micros
 
 - [**Skype Entreprise Online**](manage-skype-for-business-online-with-microsoft-365-powershell.md)
 
-    Commencez ici si vous avez installé les modules PowerShell et que vous souhaitez gérer Skype entreprise online.
+    Commencez par là pour gérer Skype entreprise online.

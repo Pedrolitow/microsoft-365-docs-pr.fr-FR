@@ -17,20 +17,20 @@ ms.collection:
 - m365solution-overview
 ms.custom: ''
 description: Configurez l’infrastructure de sécurité et de service afin de protéger vos informations et de respecter les réglementations en matière de confidentialité des données.
-ms.openlocfilehash: 2b249b3b43f1b520e42be4b6e5f9d684c718dc79
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 4296e2f08d9dada62cc45226885d9519a33e6532
+ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195638"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48655812"
 ---
 # <a name="deploy-information-protection-for-data-privacy-regulations-with-microsoft-365"></a>Déployer la protection des informations pour les réglementations sur la confidentialité des données avec Microsoft 365
 
 Votre organisation peut faire l’objet de réglementations régionales en matière de confidentialité des données qui nécessitent que vous protégez, gérez et fournissez des droits et un contrôle sur les informations personnelles stockées dans votre infrastructure informatique, y compris sur site et dans le Cloud. Le meilleur exemple de règlement de confidentialité des données est le règlement général sur la protection des données de l’Union européenne (RGPD). Le non-respect de la réglementation en matière de confidentialité des données peut entraîner des amendes importantes.
 
-Des exemples de types de données dans Microsoft 365 incluent des sessions de conversation dans Microsoft Teams, des courriers électroniques dans Exchange et des fichiers dans SharePoint et OneDrive. Cette solution fournit des instructions sur la manière d’identifier, de localiser, de protéger, de régir et de répondre aux incidents de confidentialité des données pour les données personnelles stockées dans les services Microsoft 365, soumis à la réglementation en matière de confidentialité des données.
+Des exemples de types de données dans Microsoft 365 incluent des sessions de conversation dans Microsoft Teams, des courriers électroniques dans Exchange et des fichiers dans SharePoint et OneDrive. Cette solution fournit des instructions sur l’évaluation des risques et l’identification des informations, la protection, la gestion et la réponse aux incidents de confidentialité des données pour les données personnelles stockées dans les services Microsoft 365, soumises à des réglementations en matière de confidentialité des données.
 
-![Déployer la protection des informations pour la confidentialité des données](../media/information-protection-deploy/information-protection-deploy-big-picture.png)
+![En quoi consiste la protection des informations en matière de confidentialité des données](../media/information-protection-deploy/information-protection-data-privacy-regulations-overview.png)
 
 Des informations supplémentaires sont également fournies sur l’utilisation des contrôles Microsoft 365 Identity, Device et protection contre les menaces pour vos besoins en matière de confidentialité des données. 
 
@@ -50,7 +50,7 @@ Pour répondre aux critères de protection des informations en matière de confo
 
 Pour vous aider à comprendre les outils Microsoft 365 disponibles pour identifier, gérer, contrôler et surveiller les données personnelles soumises à une ou plusieurs réglementations liées à la confidentialité, ces instructions sont organisées en sections.
  
-![Déployer la protection des informations pour la confidentialité des données](../media/information-protection-deploy/information-protection-deploy-grid.png)
+![Étapes de mise en œuvre de la protection des informations en matière de confidentialité des données](../media/information-protection-deploy/information-protection-data-privacy-regulations-steps.png)
 
 Chacune de ces sections correspond à un article distinct de cette solution.
 
@@ -61,13 +61,13 @@ Chacune de ces sections correspond à un article distinct de cette solution.
 >Ce guide ne vous permettra pas de vous conformer à la réglementation relative à la confidentialité des données, notamment en tenant compte du nombre d’étapes requises en dehors du contexte des fonctionnalités. Vous êtes chargé de vous assurer de votre conformité et de consulter vos équipes juridiques et de conformité, ou de rechercher des conseils et des conseils de tiers spécialisés en matière de conformité.
 >
 
-## <a name="plan-assess-data-privacy-risks-and-identify-sensitive-items"></a>Plan : évaluer les risques de confidentialité des données et identifier les éléments sensibles 
+## <a name="plan-assess-data-privacy-risks-and-identify-sensitive-items"></a>Plan : évaluer les risques de confidentialité des données et identifier les éléments sensibles
 
 L’évaluation des réglementations et des risques de confidentialité des données dont votre organisation est soumise est une première étape essentielle avant de commencer à implémenter les améliorations, notamment celles réalisables via la configuration Microsoft 365. Cela peut inclure une évaluation de la disponibilité globale ou l’identification d’un type d’informations sensibles particulier soumis aux contrôles réglementaires dont votre organisation a besoin pour se conformer, ainsi qu’à l’occurrence de celles-ci dans votre environnement Microsoft 365.
 
 Pour plus d’informations, consultez la rubrique [évaluation des risques de confidentialité des données et identification des éléments sensibles](information-protection-deploy-assess.md).
 
-## <a name="track-use-compliance-manager"></a>Track : utiliser le gestionnaire de conformité
+## <a name="track-run-risk-assessments-and-check-your-compliance-score"></a>Track : exécuter les évaluations des risques et vérifier votre score de conformité
 
 Le gestionnaire de conformité, disponible dans le centre de conformité Microsoft 365, vous offre une fonctionnalité intégrée permettant de suivre et de gérer les actions d’amélioration en général, ainsi que celles liées à plusieurs réglementations de confidentialité des données qui s’appliquent à vous.
 
@@ -75,7 +75,7 @@ Tirez parti des modèles d’évaluation intégrés spécifiques à chaque règl
 
 Pour plus d’informations, consultez [la rubrique utiliser le gestionnaire de conformité pour gérer les actions d’amélioration](information-protection-deploy-compliance.md).
 
-## <a name="prevent-use-identity-device-and-threat-protection-for-data-privacy-regulation"></a>Empêcher : utiliser l’identité, l’appareil et la protection contre les menaces pour le règlement de confidentialité des données
+## <a name="prevent-protect-personal-data"></a>Empêcher : protéger les données personnelles
 
 Microsoft 365 fournit un certain nombre de fonctionnalités d’identité, de protection des appareils et de protection contre les menaces que vous pouvez utiliser pour vous conformer à la conformité réglementaire des données en matière de confidentialité des données. 
 
@@ -99,7 +99,7 @@ Pour plus d’informations, consultez la rubrique gestion des [informations rela
 
 Bien que les réglementations relatives à la confidentialité des données puissent être vagues en matière de gouvernance des informations &mdash; , telles que la rétention volontaire, la suppression et l’archivage &mdash; cet article présente les principaux modèles de contrôle que vous pouvez utiliser pour la confidentialité des données dans votre organisation.
 
-## <a name="investigate-monitor-and-respond-subject-to-data-privacy-regulation"></a>Enquête : surveiller et répondre à l’objet du règlement sur la confidentialité des données
+## <a name="investigate-monitor-investigate-and-respond-to-data-privacy-incidents"></a>Enquête : surveiller, examiner et répondre aux incidents de confidentialité des données
 
 Les fonctionnalités de Microsoft 365 sont disponibles pour vous aider à surveiller, examiner et répondre aux incidents de confidentialité des données au sein de votre organisation lorsque vous avez opérationnel les fonctionnalités connexes. 
 

@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: La feuille de route pour configurer le logiciel client et serveur pour Microsoft 365.
-ms.openlocfilehash: d3401baa09d27ff9753f9a45ecb537c67701c0e9
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: 94412ca4a7665807368ae33a0e50dc928445c8b7
+ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464407"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48655958"
 ---
 # <a name="client-and-server-software-roadmap-for-microsoft-365"></a>Feuille de route du logiciel client et serveur pour Microsoft 365
 
@@ -159,15 +159,13 @@ Cette affiche de page unique est un moyen rapide de comprendre les différents c
 
 Vous pouvez [télécharger cette affiche](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Office2010Windows7EndOfSupport.pdf) et l’imprimer au format lettre, légal ou tabloïd (11 x 17).
 
-## <a name="transition-your-entire-organization"></a>Migration de l’organisation entière
+## <a name="transition-your-entire-organization"></a>Transition de l'ensemble de votre organisation
 
-Pour tirer le meilleur parti de la migration de l’ensemble de votre organisation vers les produits et services de Microsoft 365 pour entreprise, consultez l’[affiche de transition](../downloads/transition-org-to-m365.pdf).
+Pour mieux comprendre comment déplacer l’intégralité de votre organisation vers les produits et services de Microsoft 365 pour Enterprise, téléchargez et affichez l' [affiche de transition](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf).
 
-[![Image de l’affiche pour la transition vers Microsoft 365](../media/microsoft-365-overview/transition-org-to-m365.png)](../downloads/transition-org-to-m365.pdf)
+[![Image pour l'affiche Transition vers Microsoft 365](../media/microsoft-365-overview/transition-org-to-m365.png)](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf)
 
 Cette affiche en double page vous permet d’inventorier rapidement votre infrastructure et de trouver des instructions pour effectuer la migration vers les produits ou services correspondants dans Microsoft 365 pour entreprise. Elle reprend les produits Windows et Office et d’autres éléments d’infrastructure et de sécurité comme la gestion des appareils, l’identité, les informations et la protection contre les menaces.
-
-Vous pouvez [télécharger cette affiche](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/transition-org-to-m365.pdf) et l’imprimer au format lettre, légal ou tabloïd (11 x 17).
 
 ## <a name="how-microsoft-does-microsoft-365-for-enterprise"></a>Comment Microsoft fait Microsoft 365 pour les entreprises
 
