@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Déterminez si votre client et vos utilisateurs satisfont à la configuration requise, afin que vous puissiez utiliser un déploiement centralisé pour déployer des compléments Office.
-ms.openlocfilehash: c89cb801a5b2fcad87227feaf4228b0dcabcf609
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: af7a127d438e81d6ecd025b6a71b9d7e5df2ecc8
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464049"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681623"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Déterminer si le déploiement centralisé des compléments fonctionne pour votre organisation
 
@@ -45,7 +45,7 @@ Un complément peut prendre jusqu’à 24 heures pour s’afficher pour le clien
   
 ## <a name="requirements"></a>Configuration requise
 
-Le déploiement centralisé des compléments nécessite que les utilisateurs utilisent les applications Microsoft 365 pour Enterprise ou Microsoft 365 Business Premium (et sont connectés à Office à l’aide de leur ID d’organisation) et disposent de boîtes aux lettres Exchange Online et Exchange Online actives. Le répertoire de votre abonnement doit être dans ou fédéré à Azure Active Directory.
+Le déploiement centralisé des compléments nécessite que les utilisateurs utilisent les applications Microsoft 365 pour Microsoft 365 pour Enterprise ou Microsoft 365 pour les entreprises (et qu’ils soient connectés à Office à l’aide de leur ID d’organisation) et disposent de boîtes aux lettres Exchange Online et Exchange Online actives. Le répertoire de votre abonnement doit être dans ou fédéré à Azure Active Directory.
 Vous pouvez afficher les conditions requises spécifiques pour Office et Exchange ci-dessous, ou utiliser le [Vérificateur de compatibilité de déploiement centralisé](#centralized-deployment-compatibility-checker).
 
 La fonctionnalité Déploiement centralisé ne prend pas en charge ce qui suit :
@@ -61,11 +61,11 @@ La fonctionnalité Déploiement centralisé ne prend pas en charge ce qui suit :
 ### <a name="office-requirements"></a>Configuration requise pour Office
 
 - Pour les compléments Word, Excel et PowerPoint, vos utilisateurs doivent utiliser l’un des éléments suivants :
-  - Sur un appareil Windows, version 1704 ou ultérieure d’applications Microsoft 365 pour Enterprise ou Microsoft 365 Business Premium.
+  - Sur un appareil Windows, version 1704 ou ultérieure d’applications Microsoft 365 pour Microsoft 365 pour Enterprise ou Microsoft 365 pour entreprises.
   - Sur un Mac, version 15,34 ou ultérieure.
 
 - Pour Outlook, vos utilisateurs doivent utiliser l’un des éléments suivants : 
-  - Version 1701 ou ultérieure des applications Microsoft 365 pour Enterprise ou Microsoft 365 Business Premium.
+  - Version 1701 ou ultérieure des applications Microsoft 365 pour Microsoft 365 pour entreprises ou Microsoft 365 pour les entreprises.
   - Version 1808 ou ultérieure d’Office professionnel plus 2019 ou Office standard 2019.
   - Version 16.0.4494.1000 ou ultérieure d’Office professionnel plus 2016 (MSI) ou Office standard 2016 (MSI)\*
   - Version 15.0.4937.1000 ou ultérieure d’Office professionnel plus 2013 (MSI) ou Office standard 2013 (MSI)\*

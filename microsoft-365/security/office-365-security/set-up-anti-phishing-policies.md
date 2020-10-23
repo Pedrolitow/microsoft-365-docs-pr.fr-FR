@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur les stratégies anti-hameçonnage disponibles dans Exchange Online Protection (EOP) et Office 365 Advanced Threat Protection (Office 365 ATP).
-ms.openlocfilehash: 1aeff889f5ced6429e7721518527e6f6725bb18b
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: f8e00c6162a40d6d81a0ef72f0ec655a4234a588
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399204"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681667"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Stratégies anti-hameçonnage dans Microsoft 365
 
@@ -164,6 +164,9 @@ Les paramètres d’emprunt d’identité suivants sont disponibles uniquement d
   Lorsque vous ajoutez des adresses de messagerie électronique internes ou externes aux **utilisateurs pour protéger** la liste, les messages provenant de ces **expéditeurs** sont soumis aux contrôles de protection contre l’emprunt d’identité. Le message est vérifié pour l’emprunt d’identité **si** le message est envoyé à un **destinataire** auquel la stratégie s’applique (tous les destinataires de la stratégie par défaut ; **S’applique aux** destinataires dans les stratégies personnalisées). Si l’emprunt d’identité est détecté dans l’adresse de messagerie de l’expéditeur, les actions de protection contre l’emprunt d’identité pour les utilisateurs sont appliquées au message (ce qu’il faut faire avec le message, s’il faut afficher les conseils de sécurité des utilisateurs empruntés, etc.).
 
 - **Domaines à protéger**: empêche l’emprunt d’identité des domaines spécifiés **dans le domaine de l’expéditeur du message**. Par exemple, tous les domaines que vous possédez ([domaines acceptés](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) ou des domaines spécifiques (domaines que vous possédez ou domaines partenaires). Cette liste de **domaines d’expéditeur** protégés de l’emprunt d’identité est différente de la liste des **destinataires** auxquels la stratégie s’applique (tous les destinataires de la stratégie par défaut ; des destinataires spécifiques tels que configurés dans le paramètre **appliqué à** dans la section [paramètres de stratégie](#policy-settings) ).
+
+  > [!NOTE]
+  > Le nombre maximal de domaines protégés que vous pouvez définir dans toutes les stratégies de protection contre le hameçonnage est de 50. En d’autres termes, vous pouvez avoir 50 domaines protégés dans une stratégie, 10 domaines protégés dans 5 stratégies, etc.
 
   Par défaut, aucun domaine d’expéditeur n’est configuré pour la protection contre l’emprunt d’identité dans les **domaines à protéger**. Par conséquent, par défaut, aucun domaine d’expéditeur n’est couvert par la protection contre l’emprunt d’identité, soit dans la stratégie par défaut, soit dans des stratégies personnalisées.
 
