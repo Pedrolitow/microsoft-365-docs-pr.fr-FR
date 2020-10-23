@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En savoir plus sur les stratégies de rétention et les étiquettes de rétention, qui permettent de conserver les éléments dont vous avez besoin et de supprimer ceux qui ne vous servent pas.
-ms.openlocfilehash: 6dedb3209d16d5d9f18c1277821270f973cc16a6
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: fe28e51aa7d93872e5683c3682c110275ece3d54
+ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398981"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48651428"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>En savoir plus sur les stratégies et les étiquettes de rétention
 
@@ -276,7 +276,7 @@ Utilisez le tableau suivant pour savoir si vous devez utiliser une stratégie ou
 |Rétention appliquée en fonction de conditions <br /> – types d’informations sensibles, requêtes KQL, classificateurs pouvant être formés| Non | Oui |
 |Rétention appliquée manuellement | Non | Oui |
 |Présence d’interface utilisateur pour les utilisateurs finals | Non | Oui |
-|Persiste si le contenu est déplacé | Non | Oui, dans Microsoft 365 |
+|Persiste si le contenu est déplacé | Non | Oui, au sein de votre client Microsoft 365 |
 |Déclaration d’un élément comme enregistrement| Non | Oui |
 |Démarrage de la période de rétention à la date d’étiquetage ou en fonction d’un événement | Non | Oui |
 |Révisions avant élimination | Non| Oui |
@@ -353,27 +353,50 @@ Pour utiliser les applets de commande, vous devez tout d’abord [vous connecter
 
 - [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancerule)
 
+## <a name="when-to-use-retention-policies-and-retention-labels-or-ediscovery-holds"></a>Moment d’utilisation des stratégies et étiquettes de rétention ou des conservations eDiscovery 
+
+Bien que les paramètres de rétention et [les conservations que vous créez avec un cas eDiscovery](create-ediscovery-holds.md) peuvent empêcher la suppression définitive de données, ils sont conçus pour des scénarios différents. Pour comprendre les différences et faire votre choix, suivez ces instructions:
+
+- Les paramètres de rétention que vous spécifiez dans les stratégies et les étiquettes de rétention sont conçus pour une stratégie de gestion des informations à long terme pour la conservation ou la suppression des données pour les exigences de conformité. L’étendue est généralement large, avec l’emplacement et le contenu comme focus principal plutôt que les utilisateurs individuels. Le début et la fin de la période de rétention sont configurables, avec l’option de suppression automatique de contenu sans intervention supplémentaire de l’administrateur.
+
+- Les conservations eDiscovery (Core eDiscovery ou Advanced eDiscovery) sont conçues pour une durée limitée afin de conserver les données pour une investigation juridique. L’étendue est spécifique avec le contenu des utilisateurs identifiés comme focus. Le début et la fin de la période de conservation ne sont pas configurables, mais dépendent d’actions d’administrateur individuelles, sans option de suppression automatique de contenu lorsque la conservation est libérée.
+
+Synthèse de la comparaison de la rétention et des conservations:
+
+|Considération|Rétention |Conservations eDiscovery|
+|:-----|:-----|:-----|:-----|
+|Besoin commercial : |Conformité |Informations juridiques |
+|Étendue du temps: |À long terme |Court terme |
+|Focus: |Vaste, basé sur le contenu |Spécifique, basé sur l’utilisateur |
+|Dates de début et de fin configurables: |Oui |Non |
+|Suppression de contenu: |Oui (facultatif) |Non |
+|Frais généraux d’administration: |Faible |Élevé |
+
+Si le contenu est soumis à la fois aux paramètres de rétention et à une conservation eDiscovery, la conservation eDiscovery est prioritaire pour la préservation du contenu. De cette façon, les [principes de rétention](#the-principles-of-retention-or-what-takes-precedence) s’élargissent aux conservations eDiscovery parce qu’ils préservent les données jusqu’à ce qu’un administrateur libère manuellement la conservation. Cependant, malgré cette priorité, n’utilisez pas les conservations eDiscovery pour la gestion des informations à long terme. Si vous vous préoccupez de la suppression automatique des données, vous pouvez configurer les paramètres de rétention pour conserver les éléments indéfiniment, ou utiliser [révision des suppressions](disposition.md#disposition-reviews) avec les étiquettes de rétention.
+
+Si vous utilisez des outils eDiscovery plus anciens pour conserver les données, consultez ces ressources:
+
+- Exchange : 
+    - [Conservation inaltérable et conservation pour litige](https://go.microsoft.com/fwlink/?linkid=846124)
+    - [Comment identifier le type de conservation placé sur une boîte aux lettres Exchange Online](https://docs.microsoft.com/microsoft-365/compliance/identify-a-hold-on-an-exchange-online-mailbox)
+
+- SharePoint et OneDrive: 
+    - [Ajouter du contenu à un incident et placer des sources en conservation dans le centre eDiscovery](https://docs.microsoft.com/SharePoint/governance/add-content-to-a-case-and-place-sources-on-hold-in-the-ediscovery-center)
+
+- [Retrait des outils eDiscovery hérités](legacy-ediscovery-retirement.md)
+
 ## <a name="use-retention-policies-and-retention-labels-instead-of-older-features"></a>Utilisez des stratégies et étiquettes de rétention plutôt que les anciennes fonctionnalités
 
-Si, dans le cadre de la gouvernance des informations, vous avez besoin de conserver ou de supprimer proactivement du contenu dans Microsoft 365, nous vous recommandons d’utiliser les stratégies de rétention et les étiquettes de rétention plutôt que les anciennes fonctionnalités suivantes. 
-  
+Si, dans le cadre de la gouvernance des informations, vous avez besoin de conserver ou de supprimer proactivement du contenu dans Microsoft 365, nous vous recommandons d’utiliser les stratégies de rétention et les étiquettes de rétention plutôt que les anciennes fonctionnalités suivantes.
+
 Si vous utilisez ces fonctionnalités, elles continueront de fonctionner parallèlement aux stratégies et étiquettes de rétention. Toutefois, nous vous recommandons d’utiliser à l’avenir les stratégies de rétention et les étiquettes de rétention à la place. Elles vous fournissent un mécanisme unique pour gérer de manière centralisée la rétention et la suppression de contenu dans Microsoft 365.
 
 **Anciennes fonctionnalités dans Exchange Online :**
 
-- [Conservation inaltérable et conservation pour litige](https://go.microsoft.com/fwlink/?linkid=846124) (conservation eDiscovery) 
-
-- [Comment identifier le type de conservation placé sur une boîte aux lettres Exchange Online](identify-a-hold-on-an-exchange-online-mailbox.md)
-    
 - [Balises de rétention et stratégies de rétention](https://go.microsoft.com/fwlink/?linkid=846125), aussi appelées [gestion des enregistrements de messagerie (MRM)](https://go.microsoft.com/fwlink/?linkid=846126) (suppression uniquement)
-    
-Consultez également [Retrait des outils eDiscovery hérités](legacy-ediscovery-retirement.md).
-
 
 **Anciennes fonctionnalités dans SharePoint et OneDrive :**
 
-- [Ajout du contenu à un incident et placement des sources en conservation dans le centre eDiscovery](https://docs.microsoft.com/SharePoint/governance/add-content-to-a-case-and-place-sources-on-hold-in-the-ediscovery-center) (conservation eDiscovery) 
-    
 - [Stratégies de suppression des documents](https://support.office.com/article/Create-a-document-deletion-policy-in-SharePoint-Server-2016-4fe26e19-4849-4eb9-a044-840ab47458ff) (suppression uniquement)
     
 - [Configuration en place de gestion des enregistrements](https://support.office.com/article/7707a878-780c-4be6-9cb0-9718ecde050a) (rétention uniquement) 
@@ -382,10 +405,6 @@ Consultez également [Retrait des outils eDiscovery hérités](legacy-ediscovery
     
 - [Stratégies de gestion des informations](intro-to-info-mgmt-policies.md) (suppression uniquement)
      
-Si vous avez déjà utilisé des conservations eDiscovery à des fins de gouvernance des informations, pour une conformité proactive, utilisez une stratégie de rétention à la place. Utilisez eDiscovery pour les conservations uniquement.
-  
-### <a name="retention-policies-and-sharepoint-content-type-policies-or-information-management-policies"></a>Stratégies de rétention, stratégies de type de contenu SharePoint ou stratégies de gestion des informations
-
 Si vous avez configuré des sites SharePoint pour des stratégies de type de contenu ou des stratégies de gestion des informations afin de conserver du contenu pour une liste ou une bibliothèque, ces stratégies sont ignorées tant qu’une stratégie de rétention est en vigueur. 
 
 ## <a name="related-information"></a>Informations connexes
