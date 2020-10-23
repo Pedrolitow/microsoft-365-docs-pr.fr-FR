@@ -14,12 +14,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 5183e6f60d825ff523db4da165d16752b3aa3cc8
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 7699b31052ecc1bda33630fcf97e9d43875f4ae3
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399348"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681589"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>Configurer les fonctionnalités de protection contre les menaces dans Microsoft 365
 
@@ -182,7 +182,7 @@ Le manuel de la [campagne](https://go.microsoft.com/fwlink/?linkid=2015598&amp;c
 
 Microsoft 365 fournit les ressources suivantes pour aider les utilisateurs au sein de votre organisation :
 
-|Concept  |Ressources  |
+|Notion  |Ressources  |
 |---------|---------|
 |Microsoft 365     |[Voies de formation personnalisables](https://docs.microsoft.com/office365/customlearning/) <p>Ces ressources peuvent vous aider à réunir des formations pour les utilisateurs finaux de votre organisation.        |
 |Sécurité Microsoft 365 |[Module d’apprentissage : sécurisez votre organisation à l’aide de la sécurité intégrée et intelligente de Microsoft 365](https://docs.microsoft.com/learn/modules/security-with-microsoft-365) <p>Ce module vous permet de décrire les fonctionnalités de sécurité de Microsoft 365 et d’expliquer les avantages de ces fonctionnalités de sécurité. |
@@ -194,5 +194,5 @@ En plus de ces conseils, Microsoft recommande à vos utilisateurs d’effectuer 
 - Activation des fonctionnalités de sécurité sur les PC Windows 10 et Mac (pour les appareils non gérés)
     
 Microsoft recommande également aux utilisateurs de protéger leurs comptes de messagerie personnels en effectuant les actions recommandées dans les articles suivants :
-- [Protéger votre compte de messagerie Outlook.com](https://support.microsoft.com/en-us/office/help-protect-your-outlook-com-email-account-a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
+- [Protéger votre compte de messagerie Outlook.com](https://support.microsoft.com/office/help-protect-your-outlook-com-email-account-a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
 - [Protégez votre compte Gmail à l’aide de la vérification en deux étapes](https://go.microsoft.com/fwlink/?linkid=2015688&amp;clcid=0x409)
