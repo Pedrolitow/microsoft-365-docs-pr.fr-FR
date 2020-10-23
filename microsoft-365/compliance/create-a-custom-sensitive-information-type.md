@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Apprenez à créer, modifier, supprimer et tester des types d’informations sensibles personnalisés pour la protection contre la perte de données dans l’interface utilisateur graphique du Centre de sécurité et conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0c54cd9d4969c87bbd83b3048883d8a84dd9bc59
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 59d16ed662ff1b577bbb6c8388c5d27836832c1f
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686658"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681720"
 ---
 <!-- rename md file to match the display name -->
 # <a name="create-a-custom-sensitive-information-type-in-the-security--compliance-center"></a>Créer un type d’informations sensibles personnalisé dans le Centre de Conformité et Sécurité
@@ -39,14 +39,6 @@ Vous pouvez également créer des types d’informations sensibles personnalisé
 > - Chinois (traditionnel)
 > - Korean
 > - Japanese
-> 
->Cette préversion est uniquement disponible dans le cloud commercial et le déploiement est limité aux pays suivants :
-> - Japon
-> - Corée
-> - Chine
-> - Hong Kong (R.A.S.)
-> - Macao (R.A.S.)
-> - Taïwan
 >
 >Cette prise en charge est disponible pour les types d’informations sensibles. Si vous souhaitez en savoir plus, consultez l’article [Prise en charge de la protection des informations pour les jeux de caractères à double octets (préversion)](mip-dbcs-relnotes.md).
 

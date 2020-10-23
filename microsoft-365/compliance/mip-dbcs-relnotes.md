@@ -14,30 +14,21 @@ search.appverid:
 - MOE150
 - MET150
 description: Notes de publication pour la prise en charge des jeux de caractères à double octets.
-ms.openlocfilehash: 13bac873f2ba18bc166451ea73ec0d569fb30f68
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 1c2244c49a92aa2c00fad06caa8194cf7e32220e
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695245"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681500"
 ---
 # <a name="support-for-double-byte-character-set-release-notes-preview"></a>Prise en charge des notes de publication des jeux de caractères à double octets (préversion)
 
  Microsoft 365 Information Protection prend désormais en charge, en préversion, les langues de jeu de caractères à double octets pour :
 
 - le chinois simplifié
-- le chinois traditionnel
-- le coréen
-- le japonais
-
-Cette préversion est uniquement disponible dans le cloud commercial et le déploiement est limité aux pays suivants :
-
-- Japon
-- Corée
-- Chine
-- Hong Kong (R.A.S.)
-- Macao R.A.S
-- Taïwan
+- Chinois (traditionnel)
+- Korean
+- Japanese
 
 Cette prise en charge est disponible pour les types d’informations sensibles et les dictionnaires de mots-clés et sera affichée dans les solutions de protection contre la perte de données, de conformité des communications, Exchange Online, SharePoint Online, OneDrive Entreprise et Teams.
 

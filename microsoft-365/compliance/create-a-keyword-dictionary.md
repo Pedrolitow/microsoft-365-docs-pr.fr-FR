@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez les étapes principales de la création d’un dictionnaire de mots clés dans le Centre de sécurité et conformité Office 365.
-ms.openlocfilehash: 7fe425a1f8ac954c6c24752927b218fc7e6f37c7
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: e6f6043efd4c5f38b7e9fa2a92c4fcb7ceb91e45
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547008"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681634"
 ---
 # <a name="create-a-keyword-dictionary"></a>Créer un dictionnaire de mots clés
 
@@ -35,14 +35,6 @@ La protection contre la perte de données (DLP) peut identifier, surveiller et p
 > - Chinois (traditionnel)
 > - Korean
 > - Japanese
-> 
->Cette préversion est uniquement disponible dans le cloud commercial et le déploiement est limité aux pays suivants :
-> - Japon
-> - Corée
-> - Chine
-> - Hong Kong (R.A.S.)
-> - Macao (R.A.S.)
-> - Taïwan
 >
 >Cette prise en charge est disponible pour les types d’informations sensibles. Si vous souhaitez en savoir plus, consultez l’article [Prise en charge de la protection des informations pour les jeux de caractères à double octets (préversion)](mip-dbcs-relnotes.md).
 

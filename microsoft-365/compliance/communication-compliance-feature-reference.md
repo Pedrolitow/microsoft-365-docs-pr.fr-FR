@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 4ede013a1c9a9bd054fc6965cbb12b5bbabb0b5e
-ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
+ms.openlocfilehash: c1ef7a765f61ee2231fd99c47f076855225de3fb
+ms.sourcegitcommit: 31f25790b37dfb740530017ef1701db0c5134829
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48651406"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "48740258"
 ---
 # <a name="communication-compliance-feature-reference"></a>Référence de la fonctionnalité de conformité des communications
 
@@ -141,7 +141,7 @@ Pour plus d’informations sur la retraite de la surveillance dans Office 365, c
 
 ## <a name="policy-settings"></a>Paramètres de stratégie
 
-### <a name="users"></a>Users
+### <a name="users"></a>Utilisateurs
 
 Vous avez la possibilité de sélectionner **tous les utilisateurs** ou de définir des utilisateurs spécifiques dans une stratégie de conformité de communication. La sélection de **Tous les utilisateurs** applique la stratégie à tous les utilisateurs et les groupes auxquels n’importe quel utilisateur est inclus en tant que membre. La définition d’utilisateurs spécifiques applique la stratégie aux utilisateurs définis et aux groupes auxquels les utilisateurs définis sont inclus.
 
@@ -183,7 +183,7 @@ Conformité des communications les classifieurs intégrés et les classifieurs g
 
 Les classifieurs d’image *adulte*, *Racy*et *Gory* analysent les fichiers dans. JPEG,. PNG,. GIF et. Formats BMP. La taille des fichiers image doit être inférieure à 4 méga-octets (Mo) et les dimensions des images doivent être supérieures à 50x50 pixels et supérieures à 50 kilo-octets (Ko) pour que l’image soit considérée comme étant à évaluer. L’identification de l’image est prise en charge pour les messages électroniques Exchange Online, ainsi que pour les canaux et conversations Microsoft Teams.
 
-Les classifieurs intégrés et globaux ne fournissent pas une liste exhaustive des termes ou des images de ces zones. De plus, les normes linguistiques et culturelles changent en permanence, et à la lumière de ces réalités, Microsoft se réserve le droit de mettre à jour les classifieurs à sa discrétion. Alors que les classifieurs peuvent aider votre organisation à surveiller ces domaines, les classifieurs ne sont pas destinés à fournir les moyens exclusifs de surveillance ou d’adressage de cette langue ou de cette image. Votre organisation, et non Microsoft, reste responsable de toutes les décisions liées à l’analyse et au blocage de la langue et des images dans ces domaines.
+Les classifieurs intégrés et globaux ne fournissent pas une liste exhaustive des termes ou des images de ces zones. De plus, les normes linguistiques et culturelles changent en permanence, et à la lumière de ces réalités, Microsoft se réserve le droit de mettre à jour les classifieurs à sa discrétion. Alors que les classifieurs peuvent aider votre organisation à surveiller ces domaines, les classifieurs ne sont pas destinés à fournir les moyens exclusifs de surveillance ou d’adressage de cette langue ou de cette image. Votre organisation, et non Microsoft, reste responsable de toutes les décisions relatives à la surveillance, à l’analyse et au blocage de la langue et des images dans ces domaines, notamment en matière de conformité à la confidentialité locale et aux autres lois applicables. Microsoft encourage le Conseil juridique avant de procéder au déploiement et à l’utilisation.
 
 Pour plus d’informations sur les classifieurs de formation dans Microsoft 365, voir [Getting Started with trainable Classifiers](classifier-get-started-with.md).
 

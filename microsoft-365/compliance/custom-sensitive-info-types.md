@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Obtenez une vue d’ensemble des types d’informations sensibles personnalisés pour la protection contre la perte de données (DLP), tels que le modèle primaire, la proximité des caractères et le niveau de confiance.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d21d0be23847a8fbd27b6082ca28cdca2d4eed05
-ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
+ms.openlocfilehash: e414d9a31869e9b1382f0713d6d70df745c41471
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48379169"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681762"
 ---
 # <a name="custom-sensitive-information-types"></a>Types d’informations sensibles personnalisés
 
@@ -64,14 +64,6 @@ Pour créer des types d’informations sensibles personnalisés dans le Centre d
 > - Chinois (traditionnel)
 > - Korean
 > - Japanese
-> 
->Cette préversion est uniquement disponible dans le cloud commercial et le déploiement est limité aux pays suivants :
-> - Japon
-> - Corée
-> - Chine
-> - Hong Kong (R.A.S.)
-> - Macao (R.A.S.)
-> - Taïwan
->
+
 >Cette prise en charge est disponible pour les types d’informations sensibles. Si vous souhaitez en savoir plus, consultez l’article [Prise en charge de la protection des informations pour les jeux de caractères à double octets (préversion)](mip-dbcs-relnotes.md).
 

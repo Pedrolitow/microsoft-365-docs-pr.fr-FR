@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Dans les rapports de gouvernance des données du Centre de sécurité et de conformité, vous pouvez rapidement vérifier si vos étiquettes sont appliquées au contenu comme vous le souhaitiez.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a4d0fb70774dfb03dc0bc674edf09c092d8b498f
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: acd042f73500004014a9c229c2a5f34552888c97
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819004"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681752"
 ---
 # <a name="view-the-data-governance-reports"></a>Afficher les rapports de gouvernance des données
 
@@ -37,7 +37,7 @@ Après avoir créé vos étiquettes, vous pouvez vérifier si elles sont appliqu
     
 Tous ces rapports affichent le contenu étiqueté dans Exchange, SharePoint et OneDrive Entreprise.
   
-Vous trouverez ces rapports dans le Centre de sécurité &amp; conformité \> **Gouvernance des informations** \> **Tableau de bord**.
+Vous trouverez ces rapports dans le Centre de sécurité &amp; conformité \> **Gouvernance des informations** \> [**Tableau de bord**](https://protection.office.com/datamanagement/dashboard).
   
 ![Graphique illustrant les tendances des étiquettes au cours des 90 derniers jours](../media/0cc06c18-d3b1-4984-8374-47655fb38dd2.png)
   
