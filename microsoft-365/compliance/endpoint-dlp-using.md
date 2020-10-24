@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment configurer les stratégies de protection contre la perte de données (DLP) en utilisant les points de terminaison de protection contre la perte de données (EPDLP) de Microsoft 365.
-ms.openlocfilehash: 38300769a4d6d3a4093fe403e79f5b13e71f2c1c
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: 0f1fc3159de6545007ddd62da2fca17ce87ad1dc
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430242"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48636815"
 ---
 # <a name="using-endpoint-data-loss-prevention-preview"></a>Utilisation des points de terminaison de protection contre la perte de données (Preview)
 
@@ -40,7 +40,8 @@ Ou
 
 - Si vous souhaitez exclure l’analyse des chemins d’accès aux fichiers bruyants
 
-![Paramètres DLP](../media/endpoint-dlp-1-using-dlp-settings.png)
+  > [!div class="mx-imgBorder"]
+  > ![Paramètres DLP](../media/endpoint-dlp-1-using-dlp-settings.png)
 
 ### <a name="file-path-exclusions"></a>Exclusions de chemin d’accès de fichier
 
@@ -48,13 +49,19 @@ Vous pouvez exclure certains chemins de la surveillance DLP, des alertes DLP et 
 
 Vous pouvez utiliser cette logique pour construire vos chemins d’exclusion :
 
-- Chemin d’accès de fichier valide se terminant par « \ », ce qui signifie uniquement les fichiers directement sous dossier. Par exemple: C:\Temp\
-- Chemin d’accès de fichier valide se terminant par « \* », ce qui signifie uniquement les sous-dossiers directement sous dossier. Par exemple: C:\Temp\*
-- Chemin d’accès de fichier valide se terminant par « \ » ou «\*», ce qui signifie uniquement les fichiers directement sous dossier et tous les sous-dossiers. Par exemple: C:\Temp
-- Un chemin d’accès avec un caractère générique entre' \ 'de chaque côté. Par exemple : C:\Users\*\Desktop\
-- Un chemin d’accès comportant le caractère générique entre « \» de chaque côté et «(nombre)» pour indiquer le nombre exact de sous-dossiers. Par exemple : C:\Users\*(1) \Downloads\
-- Un chemin d’accès avec des variables d’environnement système. Par exemple :%SystemDrive%\Test\*
-- Un mélange de tous les éléments ci-dessus. Par exemple :%SystemDrive%\Users\*\Documents\*(2) \Sub\
+- Chemin d’accès de fichier valide se terminant par « \ », ce qui signifie uniquement les fichiers directement sous dossier. <br/>Par exemple: C:\Temp\
+
+- Chemin d’accès de fichier valide se terminant par « \* », ce qui signifie uniquement les sous-dossiers directement sous dossier. <br/>Par exemple: C:\Temp\*
+
+- Chemin d’accès de fichier valide se terminant par « \ » ou «\*», ce qui signifie uniquement les fichiers directement sous dossier et tous les sous-dossiers. <br/>Par exemple: C:\Temp
+
+- Un chemin d’accès avec un caractère générique entre' \ 'de chaque côté. <br/>Par exemple : C:\Users\*\Desktop\
+
+- Un chemin d’accès comportant le caractère générique entre « \» de chaque côté et «(nombre)» pour indiquer le nombre exact de sous-dossiers. <br/>Par exemple : C:\Users\*(1) \Downloads\
+
+- Un chemin d’accès avec des variables d’environnement système. <br/>Par exemple :%SystemDrive%\Test\*
+
+- Un mélange de tous les éléments ci-dessus. <br/>Par exemple :%SystemDrive%\Users\*\Documents\*(2) \Sub\
 
 ### <a name="service-domains"></a>Domaines de service
 
@@ -62,15 +69,18 @@ Vous pouvez ajouter des domaines à cette liste à laquelle le Chromium Edge fer
 
 Si le mode de liste est paramétré sur **Bloquer**, l’utilisateur ne peut pas télécharger des éléments sensibles dans ces domaines. Lorsqu’une action de téléchargement est bloquée parce qu’un élément correspond à une stratégie DLP, DLP génère un avertissement ou bloque le téléchargement de l’élément sensible.
 
-Si le mode de liste est paramétré sur **Autoriser**, les utilisateurs pourront charger des éléments sensibles ***uniquement*** à ces domaines, et l’accès au téléchargement à tous les autres domaines n’est pas autorisé.
+Si le mode de liste est paramétré sur **Autoriser**, les utilisateurs pourront charger des éléments sensibles **_uniquement_* à ces domaines, et l’accès de chargement à tous les autres domaines n’est pas autorisé.
 
 ### <a name="unallowed-apps"></a>Applications non autorisées
 
-Lorsque le paramètre **Accès par des applications et des navigateurs non autorisés** d’une stratégie est activé, et que les utilisateurs tentent d’utiliser ces applications pour accéder à un fichier protégé, l’activité est autorisée, bloquée, ou bloquée mais les utilisateurs peuvent annuler la restriction. Toutes les activités sont auditées et disponibles pour révision dans l’Explorateur d’activités.
+Lorsque le paramètre *Accès des applications et des navigateurs non autorisés** d’une stratégie est activé, et que les utilisateurs tentent d’utiliser ces applications pour accéder à un fichier protégé, l’activité est autorisée, ou bloquée mais les utilisateurs peuvent remplacer la restriction. Toutes les activités sont auditées et disponibles pour révision dans l’Explorateur d’activités.
 
 ### <a name="unallowed-browsers"></a>Navigateurs non autorisés
 
-Vous ajoutez des navigateurs, identifiés par leur nom de processus, qui ne peuvent pas accéder à des fichiers qui remplissent les conditions d’une stratégie DLP appliquée dans laquelle la restriction télécharger vers les services Cloud est définie sur bloquer ou bloquer et annuler. Lorsque ces navigateurs ne peuvent pas accéder à un fichier, les utilisateurs finaux voient s’afficher une notification leur demandant d’ouvrir le fichier via le Chromium Edge.
+Vous ajoutez des navigateurs, identifiés par leurs noms de exécutables, qui ne peuvent pas accéder à des fichiers qui remplissent les conditions d’une stratégie DLP appliquée dans laquelle la restriction de chargement vers les services Cloud est définie sur bloquer ou annuler le blocage. Lorsque ces navigateurs ne peuvent pas accéder à un fichier, les utilisateurs finaux voient s’afficher une notification leur demandant d’ouvrir le fichier via le Chromium Edge.
+
+[!IMPORTANT]
+N’incluez pas le chemin d’accès du fichier exécutable, mais uniquement le nom du fichier exécutable (c’est à dire, browser. exe).
 
 ## <a name="tying-dlp-settings-together"></a>Lier les paramètres DLP ensemble
 
@@ -80,8 +90,10 @@ Lorsque vous utilisez la fonctionnalité point de terminaison DLP comme emplacem
 
 Pour utiliser cette restriction, vous devez configurer trois éléments importants :
 
-1. Spécifier les emplacements (services, domaines, adresses IP) pour lesquels vous voulez empêcher le partage des éléments sensibles
-2. Ajouter les navigateurs qui ne sont pas autorisés à accéder à certains éléments sensibles lorsqu’une correspondance de stratégie DLP a lieu
+1. Spécifier les emplacements ,services, domaines, adresses IP, avec lesquels vous ne souhaitez pas partager les éléments sensibles.
+
+2. Ajouter les navigateurs qui ne sont pas autorisés à accéder à certains éléments sensibles lorsqu’une correspondance de la stratégie DLP se produit.
+
 3. Configurez les stratégies DLP pour définir les types d’éléments sensibles pour lesquels le téléchargement doit être limité à ces emplacements en activant **Télécharger vers les services Cloud** et **Accès à partir d’un navigateur non autorisé**.
 
 Vous pouvez continuer à ajouter de nouveaux services, applications et stratégies pour développer et augmenter vos restrictions afin de répondre aux besoins de votre entreprise et de protéger les données sensibles. 
@@ -104,49 +116,83 @@ Pour vous familiariser avec les fonctionnalités de point de terminaison DLP et 
 Ces scénarios nécessitent que les appareils soient déjà intégrés et reportés dans l’Explorateur d’activités. Si vous n’avez pas encore intégré d’appareils, voir [Prise en main de la protection contre la perte de données (Preview) de point de terminaison](endpoint-dlp-getting-started.md).
 
 1. Ouvrir[Page de protection contre la perte de données](https://compliance.microsoft.com/datalossprevention?viewid=policies).
+
 2. Sélectionnez **Créer une stratégie (Preview)**.
+
 3. Dans le cadre de ce scénario, sélectionnez **Confidentialité**, **Données d’informations d’identification personnelles (PII) pour les États-Unis** puis sélectionnez **Suivant**.
+
 4. Désactivez la case à cocher**État** pour tous les emplacements, sauf pour les **Appareils**. Cliquez sur **Suivant**.
+
 5. Acceptez la sélection par défaut **Vérifier et personnaliser les paramètres du modèle**, puis sélectionnez **Suivant**.
+
 6. Acceptez les valeurs par défaut**Actions de protection** et choisissez **Suivant**.
+
 7. Sélectionnez **Audit ou restreindre les activités sur les appareils Windows** et laissez **Audit uniquement**. Cliquez sur **Suivant**.
+
 8. Accepter la valeur par défaut **Je veux tester le contenu tout d’abord** et choisir **Afficher les conseils de stratégie en mode test**. Cliquez sur **Suivant**.
+
 9. Passez en revue vos paramètres, puis sélectionnez **Envoyer**.
+
 10. La nouvelle stratégie DLP s’affiche dans la liste de stratégies.
+
 11. Consultez l’Explorateur d’activités pour les données des points de terminaison monitorés. Configurez le filtre d’emplacement pour les appareils et ajoutez la stratégie, puis filtrez par nom de stratégie pour afficher l’impact de cette stratégie. Pour plus d’informations, voir [Prise en main de l’Explorateur d’activités](data-classification-activity-explorer.md) si nécessaire.
+
 12. Essayez de partager un test qui contient du contenu qui déclenchera la condition de données d’informations d’identification personnelle (PII) américaine avec une personne extérieure à votre organisation. Cette opération doit déclencher la stratégie.
+
 13. Consultez l’Explorateur d’activités pour l’événement.
 
 ### <a name="scenario-2-modify-the-existing-policy-set-an-alert"></a>Scénario 2 : modifier la stratégie existante, créer une alerte
 
 1. Ouvrir[Page de protection contre la perte de données](https://compliance.microsoft.com/datalossprevention?viewid=policies).
+
 2. Sélectionnez la stratégie **Données d’informations d’identification personnelle (PII) pour les États-Unis** que vous avez créées dans le scénario 1.
+
 3. Sélectionnez **Modifier une stratégie (preview)**.
-4. Accédez à la page **Règles DLP avancées** et modifiez la **Faible quantité de contenu détectée fichier INF US à identification personnelle**
+
+4. Accédez à la page **Règles DLP avancées** et modifiez la **Faible quantité de contenu détectée fichier INF US à Identification Personnelle**.
+
 5. Faites défiler vers le bas jusqu’à la section **Rapports d’incident** et configurez **Envoyer une alerte aux administrateurs lorsqu’une correspondance de règle se produit** sur **Activé**. Les alertes par courrier électronique sont envoyées automatiquement à l’administrateur et à toute autre personne que vous ajoutez à la liste des destinataires. 
-![turn-on-incident-reports](../media/endpoint-dlp-2-using-dlp-incident-reports.png)
+
+   > [!div class="mx-imgBorder"]
+   > ![turn-on-incident-reports](../media/endpoint-dlp-2-using-dlp-incident-reports.png)
+   
 6. Dans le cadre de ce scénario, sélectionnez **Envoyer une alerte chaque fois qu’une activité correspond à la règle**.
+
 7. Cliquez sur **Enregistrer**.
+
 8. Conservez tous vos paramètres précédents en choisissant **suivant** puis **Envoyer** les modifications apportées à la stratégie.
+
 9. Essayez de partager un test qui contient du contenu qui déclenchera la condition de données d’informations d’identification personnelle (PII) américaine avec une personne extérieure à votre organisation. Cette opération doit déclencher la stratégie.
+
 10. Consultez l’Explorateur d’activités pour l’événement.
 
 ### <a name="scenario-3-modify-the-existing-policy-block-the-action-with-allow-override"></a>Scénario 3 : modifier la stratégie existante, bloquer l’action avec l’option autoriser le remplacement
 
 1. Ouvrir[Page de protection contre la perte de données](https://compliance.microsoft.com/datalossprevention?viewid=policies).
+
 2. Sélectionnez la stratégie **Données d’informations d’identification personnelle (PII) pour les États-Unis** que vous avez créées dans le scénario 1.
+
 3. Sélectionnez **Modifier une stratégie (preview)**.
-4. Accédez à la page **Règles DLP avancées** et modifiez la **Faible quantité de contenu détectée fichier INF US à identification personnelle**
+
+4. Accédez à la page **Règles DLP avancées** et modifiez la **Faible quantité de contenu détectée fichier INF US à Identification Personnelle**.
+
 5. Faites défiler vers le bas jusqu’à la section **Audit ou restreindre les activités sur les appareils Windows** et pour chaque activité définissez l’action correspondante sur **Bloquer avec remplacement**.
-![définir un blocage avec une action de remplacement](../media/endpoint-dlp-6-using-dlp-set-blocked-with-override.png)
+
+   > [!div class="mx-imgBorder"]
+   > ![définir un blocage avec une action de remplacement](../media/endpoint-dlp-6-using-dlp-set-blocked-with-override.png)
+   
 6. Cliquez sur **Enregistrer**.
+
 7. Répétez les étapes 4-7 pour **Quantité de contenu élevé détectée le fichier INF (INF) US**.
+
 8. Conservez tous vos paramètres précédents en choisissant **suivant** puis **Envoyer** les modifications apportées à la stratégie.
+
 9. Essayez de partager un test qui contient du contenu qui déclenchera la condition de données d’informations d’identification personnelle (PII) américaine avec une personne extérieure à votre organisation. Cette opération doit déclencher la stratégie.
 
-Une fenêtre contextuelle semblable à celle-ci s’affiche sur l’appareil client :
+   Une fenêtre contextuelle semblable à celle-ci s’affiche sur l’appareil client :
 
-![notification de remplacement du client DLP de point de terminaison](../media/endpoint-dlp-3-using-dlp-client-blocked-override-notification.png)
+   > [!div class="mx-imgBorder"]
+   > ![blocage de la notification de remplacement par le client dlp de point de terminaison](../media/endpoint-dlp-3-using-dlp-client-blocked-override-notification.png)
 
 10. Consultez l’Explorateur d’activités pour l’événement.
 

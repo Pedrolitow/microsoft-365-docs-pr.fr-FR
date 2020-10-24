@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: en savoir plus sur les types de services et d’éléments dont vous pouvez utiliser les étiquettes de confidentialité comme conditions dans les stratégies DLP
-ms.openlocfilehash: 561a6cbd7b8aeb9082862319c5cc6419fd79c896
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: 2f8eb30e23d722a5e8faf7d0ddaca6b9a94e279b
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48321109"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48649633"
 ---
 # <a name="use-sensitivity-labels-as-conditions-in-dlp-policies-preview"></a>Utiliser les étiquettes de confidentialité comme conditions dans les stratégies DLP (préversion)
 
@@ -38,7 +38,12 @@ Vous pouvez utiliser [ les étiquettes de confidentialité](sensitivity-labels.m
 
 Les étiquettes de confidentialité apparaissent comme une option dans la liste du **Contenu**.
 
-![Étiquette de confidentialité comme condition](../media/dlp-sensitivity-label-as-a-condition.png)
+> [!div class="mx-imgBorder"]
+> ![étiquette de confidentialité comme condition](../media/dlp-sensitivity-label-as-a-condition.png)
+
+> [!IMPORTANT]
+> **Les Etiquettes de Confidentialité** comme condition ne seront pas disponibles si vous avez sélectionné **Conversation d’équipe et messages de canaux** comme emplacement d’application de la stratégie DLP.
+
 
 ## <a name="supported-items-scenarios-and-policy-tips"></a>Éléments, scénarios et conseils de stratégie pris en charge
 
@@ -46,7 +51,7 @@ Vous pouvez utiliser des étiquettes de confidentialité comme conditions sur ce
 
 ### <a name="supported-items"></a>Éléments non pris en charge 
 
-|service  |type d’élément  |disponible pour l’astuce de stratégie  |applicable  |
+|Service  |Type d’élément  |Disponible pour l’astuce de stratégie  |Applicable  |
 |---------|---------|---------|---------|
 |Exchange    |Message électronique         |oui         |oui         |
 |Exchange    |Pièce jointe         |non *         |non *         |
@@ -64,16 +69,20 @@ Vous pouvez utiliser des étiquettes de confidentialité comme conditions sur ce
 ### <a name="supported-scenarios"></a>Scénarios pris en charge
 
 - L’administrateur DLP peut afficher la liste de toutes les étiquettes de confidentialité du client lorsqu’il choisit d’inclure une ou plusieurs étiquettes de confidentialité comme condition.
+
 - L’utilisation d’étiquettes de confidentialité comme condition est prise en charge dans toutes les charges de travail, comme indiqué dans la matrice de support ci-dessus.
+
 - Les conseils de stratégie DLP continueront à être présentés dans les charges de travail (sauf Outlook Win32) pour les stratégies DLP qui contiennent une étiquette de confidentialité comme condition.
+
 - Les étiquettes de confidentialité s’affichent également dans le message de rapport d’incident si une stratégie DLP avec une étiquette de confidentialité comme condition est associée.
+
 - Les détails de l’étiquette de confidentialité s’affichent également dans le journal d’audit de correspondance des règles DLP pour une correspondance de stratégie DLP qui contient l’étiquette de confidentialité comme condition.
 
 
 ### <a name="support-policy-tips"></a>Conseils de stratégie de support
 
 
-|charge de travail  |conseils de stratégie pris en charge/non pris en charge  |
+|Charge de travail  |Prise en charge/non prise en charge des conseils de stratégie  |
 |---------|---------|
 |OWA |    Pris en charge     |
 |Outlook Win 32    |  non pris en charge       |

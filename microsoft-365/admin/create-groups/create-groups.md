@@ -4,7 +4,7 @@ ms.reviewer: arvaradh
 f1.keywords: CSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Découvrez comment créer et supprimer des groupes Microsoft 365, ajouter et supprimer des membres d’un groupe, et personnaliser le fonctionnement du groupe.
-ms.openlocfilehash: f6023188df1ae796badbf05b85ebaa1afdd914e5
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 9d836e8bb3af297e972c4f252808c551b349fb67
+ms.sourcegitcommit: 3cdb670f10519f7af4015731e7910954ba9f70dc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780444"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48753288"
 ---
 # <a name="create-a-group-in-the-microsoft-365-admin-center"></a>Créer un groupe dans le centre d’administration Microsoft 365
   

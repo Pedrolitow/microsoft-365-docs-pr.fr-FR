@@ -1,10 +1,10 @@
 ---
-title: Restaurer un groupe supprimé
+title: Restaurer un groupe Microsoft 365 supprimé
 ms.reviewer: arvaradh
 f1.keywords: CSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,24 +20,14 @@ search.appverid:
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: Découvrez comment restaurer un groupe Microsoft 365 supprimé.
-ms.openlocfilehash: 30e267a149bc18c2425d4ea38423b887116794c6
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: 091697be54b1127a5cb336179733d51519947e14
+ms.sourcegitcommit: 3cdb670f10519f7af4015731e7910954ba9f70dc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681645"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48753242"
 ---
-# <a name="restore-a-deleted-group"></a>Restaurer un groupe supprimé
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
-
-::: moniker-end
-
-> [!NOTE]
-> Cet article décrit la restauration des groupes Microsoft 365 uniquement. Tous les autres groupes ne peuvent pas être restaurés une fois supprimés.
+# <a name="restore-a-deleted-microsoft-365-group"></a>Restaurer un groupe Microsoft 365 supprimé
 
 Si vous avez supprimé un groupe, il est conservé pendant 30 jours par défaut. Cette période de 30 jours est considérée comme une « suppression récupérable » car vous pouvez toujours restaurer le groupe. Après 30 jours, le groupe et le contenu associé sont supprimés définitivement et ne peuvent pas être restaurés.
 
@@ -55,11 +45,16 @@ En cas de restauration d'un groupe, le contenu suivant est restauré :
     
 - Planificateur.
     
-- Équipes
+- Teams
 
 - Groupe Yammer et contenu de groupe (si le groupe Microsoft 365 a été créé à partir de Yammer)
 
-## <a name="restore-a-group-that-you-own-by-using-outlook-on-the-web"></a>Restaurer un groupe dont vous êtes propriétaire à l’aide d’Outlook sur le Web
+> [!NOTE]
+> Cet article décrit la restauration des groupes Microsoft 365 uniquement. Tous les autres groupes ne peuvent pas être restaurés une fois supprimés.
+
+## <a name="restore-a-group"></a>Restaurer un groupe
+
+# <a name="outlook"></a>[Outlook](#tab/outlook)
 
 Si vous êtes le propriétaire d’un groupe Microsoft 365, vous pouvez restaurer le groupe vous-même dans Outlook sur le Web en procédant comme suit :
 
@@ -69,7 +64,7 @@ Si vous êtes le propriétaire d’un groupe Microsoft 365, vous pouvez restaure
 
 Si le groupe supprimé n’apparaît pas ici, contactez un administrateur.
 
-## <a name="restore-a-group-in-the-microsoft-365-admin-center"></a>Restaurer un groupe dans le centre d’administration Microsoft 365
+# <a name="admin-center"></a>[Centre d’administration](#tab/admin-center)
 
 Si vous êtes un administrateur général ou un administrateur de groupes, vous pouvez restaurer un groupe supprimé dans le centre d’administration 365 de Microsoft :
 
@@ -79,28 +74,9 @@ Si vous êtes un administrateur général ou un administrateur de groupes, vous 
 
 > [!NOTE]
 > Dans certains cas, la restauration du groupe et de toutes ses données peut prendre jusqu’à 24 heures. 
-  
-## <a name="permanently-delete-a-microsoft-365-group"></a>Supprimer définitivement un groupe Microsoft 365
 
-Il peut arriver que vous souhaitiez purger définitivement un groupe sans attendre que la période de suppression du logiciel de 30 jours expire. Pour ce faire, démarrez PowerShell et exécutez la commande suivante pour obtenir l'ID d'objet du groupe.
-  
-```
-Get-AzureADMSDeletedGroup
-```
+---
 
-Prenez note de l’ID d’objet du ou des groupes que vous souhaitez supprimer définitivement.
-  
-> [!CAUTION]
-> La suppression définitive du groupe supprime le groupe et ses données pour toujours. 
-  
-Pour supprimer définitivement le groupe, exécutez la commande suivante dans PowerShell :
-  
-```
-Remove-AzureADMSDeletedDirectoryObject -Id <objectId>
-```
-
-Pour vérifier que le groupe a été supprimé définitivement, réexécutez l'applet de commande  *Get-AzureADMSDeletedGroup*  pour confirmer que le groupe n'apparaît plus dans la liste des groupes supprimés (suppression réversible). Dans certains cas, la suppression définitive du groupe et de toutes ses données peut prendre jusqu'à 24 heures. 
-  
 ## <a name="got-questions-about-microsoft-365-groups"></a>Vous avez des questions sur les groupes Microsoft 365 ?
 
 Visitez la [communauté Microsoft Tech](https://techcommunity.microsoft.com/t5/Office-365-Groups/ct-p/Office365Groups) pour publier des questions et participer à des conversations sur les groupes Microsoft 365. 

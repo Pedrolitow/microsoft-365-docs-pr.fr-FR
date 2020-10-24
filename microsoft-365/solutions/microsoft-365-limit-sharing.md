@@ -18,12 +18,12 @@ f1.keywords: NOCSH
 ms.custom: ''
 localization_priority: Priority
 description: Découvrez les options pour limiter ou désactiver le partage dans Microsoft 365.
-ms.openlocfilehash: 7397078b6f347858e4ca91a0deeb9a1cf2fb6911
-ms.sourcegitcommit: d648356b27842e779921859480b1b405a1804c7c
+ms.openlocfilehash: 7ed9cc499e16de835c6ba96eb19bcc28a144b68b
+ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48361904"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48651417"
 ---
 # <a name="limit-sharing-in-microsoft-365"></a>Limiter le partage dans Microsoft 365
 
@@ -64,7 +64,7 @@ Pour désactiver le partage d’invités pour les Teams
 Si vous souhaitez empêcher l’accès invité dans les groupes Microsoft 365, vous pouvez désactiver les paramètres d’accès invité des groupes dans le Centre d’administration Microsoft 365.
 
 Pour désactiver le partage avec les invités pour les groupes Microsoft 365
-1. Dans le Centre d’administration Microsoft 365, cliquez sur **Paramètres**, puis sur **Paramètres**.
+1. Dans le Centre d’administration Microsoft 365, cliquez sur **Paramètres**, puis sur **Paramètres de l'organisation**.
 2. Sous l’onglet **Services**, cliquez sur **Groupes Microsoft 365**.
 3. Désactivez les cases à cocher **Permettre aux membres du groupe à l’extérieur de votre organisation à accéder au contenu de groupe** et **Permettre aux propriétaires de groupe d’ajouter des personnes extérieures à votre organisation à des groupes**.
 4. Cliquez sur **Enregistrer les modifications**.
