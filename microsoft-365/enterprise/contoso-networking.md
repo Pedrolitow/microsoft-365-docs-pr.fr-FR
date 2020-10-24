@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre l’infrastructure réseau contoso et la façon dont elle utilise la technologie SD-WAN pour optimiser les performances de mise en réseau à Microsoft 365 pour les services Cloud d’entreprise.
-ms.openlocfilehash: ca673e6dcbf0f3db4bde33d388598e5f4ffac914
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: d5f3581b81d33bdc200321692b82d57a96d09298
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637186"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754013"
 ---
 # <a name="networking-for-the-contoso-corporation"></a>Mise en réseau de Contoso Corporation
 
@@ -117,7 +116,7 @@ L’adoption réussie de Microsoft 365 pour Enterprise Services par les utilisat
 
 ## <a name="next-step"></a>Étape suivante
 
-[En savoir plus](contoso-identity.md) sur la façon dont Contoso exploite ses services de domaine Active Directory (AD DS) locaux dans le cloud pour les employés, et fédère l’authentification pour les clients et les partenaires professionnels.
+Découvrez comment Contoso [exploite ses services de domaine Active Directory locaux dans le Cloud](contoso-identity.md) pour les employés et la Fédération de l’authentification pour les clients et les partenaires commerciaux.
 
 ## <a name="see-also"></a>Voir aussi
 

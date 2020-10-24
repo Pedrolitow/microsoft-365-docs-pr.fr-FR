@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez comment Contoso tire parti de la solution de gestion des identités IDaaS et propose à ses employés une authentification basée sur le cloud, et une authentification fédérée à ses partenaires et ses clients.
-ms.openlocfilehash: 10db0a35024595c4dba9a33ad83ae75bcad3870c
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: dea0f53ef1c3fdc2ea32256303c6120c614c904d
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637246"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754635"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Identité de Contoso Corporation
 
@@ -43,7 +42,7 @@ Contoso autorise les éléments suivants :
 - Aux clients d’utiliser leurs comptes Microsoft, Facebook ou Google Mail pour se connecter au site Web public de la société.
 - Les fournisseurs et les partenaires peuvent utiliser leurs comptes LinkedIn, Salesforce ou Google Mail pour se connecter à l’extranet partenaires de l’entreprise.
 
-Voici la zone DMZ contoso contenant un site Web public, un extranet partenaire et un ensemble de serveurs AD FS. La zone DMZ est connectée à Internet et contient des clients, des partenaires et des services Internet.
+Voici la zone DMZ contoso contenant un site Web public, un extranet de partenaire et un ensemble de serveurs AD FS (Active Directory Federation Services). La zone DMZ est connectée à Internet et contient des clients, des partenaires et des services Internet.
 
 ![Prise en charge de contoso pour l’authentification fédérée pour les clients et les partenaires](../media/contoso-identity/contoso-identity-fig2.png)
  
@@ -77,7 +76,7 @@ Voici l’ensemble des stratégies d’accès conditionnel d’appareil et d’i
  
 ## <a name="next-step"></a>Étape suivante
 
-[Découvrez](contoso-win10.md) comment Contoso utilise son infrastructure de gestionnaire de configuration de point de terminaison Microsoft pour déployer et conserver Windows 10 entreprise actuelle au sein de son organisation.
+Découvrez comment Contoso utilise son infrastructure de gestionnaire de configuration de point de terminaison Microsoft pour [déployer et conserver Windows 10 entreprise actuelle](contoso-win10.md) au sein de son organisation.
 
 ## <a name="see-also"></a>Voir également
 

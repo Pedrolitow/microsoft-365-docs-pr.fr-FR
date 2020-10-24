@@ -16,16 +16,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ebe0f5ff-fd17-487f-bbb6-271b5ea270bb
 description: Cet article fournit des ressources communautaires pour se connecter à vos pairs et obtenir de l’aide pour PowerShell pour Microsoft 365.
-ms.openlocfilehash: 71900628a3870dc5d384fb5caa374b11d1e724d7
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 36130d3e0f32f73836698cfb276e2aca5d20de83
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694965"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754691"
 ---
 # <a name="microsoft-365-community-resources-for-powershell"></a>Ressources de la communauté Microsoft 365 pour PowerShell
 
-Utilisez ces communautés pour vous connecter à vos pairs et obtenir une réponse rapide et correcte à votre PowerShell pour les questions de Microsoft 365. 
+Connectez-vous à ces communautés pour contacter vos pairs et obtenez des réponses à vos questions concernant PowerShell pour Microsoft 365. 
   
 - [Communauté Microsoft Tech 365 Microsoft](https://techcommunity.microsoft.com/t5/microsoft-365/ct-p/microsoft365)
     
@@ -36,4 +36,3 @@ Utilisez ces communautés pour vous connecter à vos pairs et obtenir une répon
 [Gestion de Microsoft 365 à l’aide de PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
 [Prise en main de PowerShell pour Microsoft 365](getting-started-with-microsoft-365-powershell.md)
-

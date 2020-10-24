@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez comment Contoso utilise les fonctionnalités de protection des informations de Microsoft 365 pour entreprise pour sécuriser ses biens numériques dans le Cloud.
-ms.openlocfilehash: 51740db9a0bb2e770e959fe8d9dcde15c042f5b8
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: a1aa08a20d284d3a003f4a406c37f2107ce19bd1
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637234"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754600"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Protection des informations de Contoso Corporation
 
@@ -54,7 +54,7 @@ Contoso a suivi les étapes suivantes pour préparer Microsoft 365 pour les entr
 
 1. Identifier les informations à protéger
 
-   Contoso a fait un examen approfondi de ses biens numériques existants situés sur des sites SharePoint locaux et des partages de fichiers, et a classé chaque ressource.
+   Contoso a fait un examen approfondi de ses biens numériques existants situés sur des sites SharePoint locaux et des partages de fichiers et a classé chaque ressource.
 
 2. Déterminer les stratégies d’accès, de rétention et de protection des informations pour les niveaux de données
 
@@ -113,7 +113,7 @@ Voici la configuration de protection des informations contoso résultante.
 
 ## <a name="next-step"></a>Étape suivante
 
-[Découvrez](contoso-security-summary.md) comment Contoso utilise les fonctionnalités de sécurité dans Microsoft 365 pour Enterprise pour la gestion des identités et des accès, la protection contre les menaces, la protection des informations et la gestion de la sécurité.
+Découvrez comment Contoso utilise les [fonctionnalités de sécurité dans Microsoft 365 pour Enterprise](contoso-security-summary.md) pour la gestion des identités et des accès, la protection contre les menaces, la protection des informations et la gestion de la sécurité.
 
 ## <a name="see-also"></a>Voir aussi
 

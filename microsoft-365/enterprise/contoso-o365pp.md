@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre la façon dont Contoso utilise Microsoft Endpoint Configuration Manager pour déployer de Microsoft 365 Apps for enterprise.
-ms.openlocfilehash: 63993a27f23843fd2d75ef9bf08ae064ec46dc77
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 2c02c28ddba7c24592ce09d87bf6f5c9df700a2a
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637162"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754347"
 ---
 # <a name="microsoft-365-apps-for-enterprise-deployment-for-contoso"></a>Déploiement de Microsoft 365 Apps for enterprise pour Consoto.
 
@@ -40,7 +39,7 @@ En fonction de leurs besoins, Contoso a choisi de déployer les applications Win
 - Le déploiement de module linguistique intelligent, y compris le déploiement automatique de la même langue que le système d’exploitation.
 - Méthode entièrement prise en charge et facile à utiliser pour supprimer des versions existantes d’Office d’un client lors du déploiement.
 
-En plus du gestionnaire de configuration, Contoso a utilisé la [boîte à outils de préparation pour le complément Office et VBA](https://docs.microsoft.com/deployoffice/readiness-toolkit-application-compatibility-microsoft-365-apps), un outil gratuit de Microsoft pour évaluer les problèmes de compatibilité avec les macros et compléments Office.
+En plus du gestionnaire de configuration, Contoso a utilisé la [boîte à outils de préparation pour les compléments Office et VBA](https://docs.microsoft.com/deployoffice/readiness-toolkit-application-compatibility-microsoft-365-apps), un outil gratuit de Microsoft pour évaluer les problèmes de compatibilité avec leurs macros et compléments Office.
 
 ## <a name="managing-deployment-and-updates"></a>Gestion du déploiement et des mises à jour
 
@@ -79,7 +78,7 @@ Voici les applications contoso Microsoft 365 pour l’installation et l’archit
  
 ## <a name="next-step"></a>Étape suivante
 
-[Découvrez](contoso-mdm.md) comment Contoso utilise Microsoft Intune dans Microsoft 365 pour entreprise pour gérer ses appareils et les applications qu’ils exécutent dans l’organisation.
+Découvrez comment Contoso [utilise Microsoft Intune](contoso-mdm.md) dans Microsoft 365 pour entreprise pour gérer ses appareils et les applications qu’ils exécutent dans l’organisation.
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez la structure de base de l’infrastructure informatique de contoso sur site et la façon dont les besoins de l’entreprise sont satisfaits par Microsoft 365 pour les entreprises.
-ms.openlocfilehash: bc2b34254da01a3d49085082ab8ee8632df2d434
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 767374097efa116f116cff6f6ddf96d075eb71ed
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637174"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754585"
 ---
 # <a name="contoso-it-infrastructure-and-business-needs"></a>Infrastructure informatique contoso et besoins de l’entreprise
 
@@ -30,12 +29,10 @@ Contoso passe d’une infrastructure informatique centralisée locale à une con
 
 Contoso utilise une infrastructure informatique locale centralisée avec des centres de données situés au siège social parisien.
 
-La figure 1 présente le siège social avec des centres de donnees d’applications, un DMZ et Internet.
+Voici le siège social avec les centres de services d’applications, un DMZ et Internet.
 
 ![Infrastructure informatique contoso existante](../media/contoso-infra-needs/contoso-infra-needs-fig1.png)
 
-**Figure 1 : infrastructure informatique de contoso existante**
- 
 Les centres de données d’applications hébergent les éléments suivants : 
 
 - Applications métier personnalisées qui utilisent SQL Server et d’autres bases de données Linux.
@@ -135,12 +132,12 @@ Le service informatique de Contoso a déterminé le mappage suivant des besoins 
 | Conformité |  |  |
 |  | Respecter les exigences réglementaires locales | Fonctionnalités RGPD dans Microsoft 365 |
 | Gestion |  |  |
-|  | Réduire les frais généraux pour l’installation des mises à jour du client | Anneaux de déploiement <BR> Mises à jour pour Windows 10 Entreprise <BR> Mises à jour pour les Applications Microsoft 365 pour les entreprises |
+|  | Réduire les frais généraux pour l’installation des mises à jour du client | Mises à jour pour Windows 10 Entreprise <BR> Mises à jour pour les Applications Microsoft 365 pour les entreprises |
 ||||
 
 ## <a name="next-step"></a>Étape suivante
 
-[Découvrez](contoso-networking.md) le réseau Contoso Corporation sur site et la façon dont il a été optimisé pour l’accès et la latence aux ressources basées sur le Cloud de Microsoft 365.
+Découvrez le réseau Contoso Corporation [sur site](contoso-networking.md) et la façon dont il a été optimisé pour l’accès et la latence aux ressources basées sur le Cloud de Microsoft 365.
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 06/17/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,14 +14,14 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: Comment une organisation internationale fictive mais représentative a adopté Microsoft 365 pour Enterprise.
-ms.openlocfilehash: 87dd725612ad3dfe422293b28d9643a50f9b1e05
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 980146a2a9c2a909d0b65c20e460841dce9fecee
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637222"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754667"
 ---
-# <a name="microsoft-365-for-enterprise-for-contoso-corporation"></a>Microsoft 365 pour Enterprise pour Contoso Corporation
+# <a name="microsoft-365-for-enterprise-for-the-contoso-corporation"></a>Microsoft 365 pour Enterprise pour Contoso Corporation
 
 Microsoft 365 pour Enterprise est l’offre Cloud Microsoft premier qui combine des applications et des services de productivité locale et en nuage avec les fonctionnalités de sécurité Windows 10 entreprise et Advanced. Il s’agit d’une solution complète et intelligente qui permet à tout le monde de collaborer de façon créative et sécurisée.
 
@@ -36,7 +35,9 @@ Reportez-vous aux articles suivants pour plus d’informations :
 
   Contoso est une organisation mondiale de production, de ventes et de support technique avec plus de 100 000 produits.
 
-- [Infrastructure et besoins informatiques de contoso](contoso-infra-needs.md) Contoso passe d’une infrastructure informatique centralisée locale à une configuration Cloud inclusive qui intègre des charges de travail de productivité personnelle en nuage, des applications et des scénarios hybrides
+- [Infrastructure et besoins informatiques Contoso](contoso-infra-needs.md)
+
+  Contoso passe d’une infrastructure informatique centralisée locale à une configuration Cloud inclusive qui intègre des charges de travail de productivité personnelle en nuage, des applications et des scénarios hybrides.
 
 - [Réseau](contoso-networking.md)
 
@@ -48,11 +49,11 @@ Reportez-vous aux articles suivants pour plus d’informations :
 
 - [Windows 10 Entreprise](contoso-win10.md)
 
-  L’infrastructure contoso Windows 10 entreprise déploie et installe automatiquement les mises à jour pour les appareils qui exécutent le système d’exploitation PC et périphérique principal de l’entreprise.
+  L’infrastructure contoso pour Windows 10 entreprise déploie et installe automatiquement les mises à jour pour les appareils qui exécutent le système d’exploitation PC et périphérique principal de l’entreprise.
 
 - [Applications Microsoft 365 pour les entreprises](contoso-o365pp.md)
 
-  L’infrastructure des applications contoso Microsoft 365 pour entreprise déploie et installe automatiquement les mises à jour pour la suite de logiciels de productivité Microsoft Office.
+  L’infrastructure contoso pour les applications Microsoft 365 pour Enterprise déploie et installe automatiquement les mises à jour pour la suite de logiciels de productivité Microsoft Office.
 
 - [Gestion des appareils mobiles](contoso-mdm.md)
 
@@ -76,7 +77,7 @@ Reportez-vous aux articles suivants pour plus d’informations :
 
 ## <a name="next-step"></a>Étape suivante
 
-[Découvrez](contoso-overview.md) Contoso Corporation et les considérations relatives à la conception qui ont été traitées lors du déploiement de Microsoft 365 pour Enterprise.
+Découvrez [Contoso Corporation](contoso-overview.md) et les considérations relatives à la conception qui ont été traitées lors du déploiement de Microsoft 365 pour Enterprise.
 
 
 ## <a name="see-also"></a>Voir aussi

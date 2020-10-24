@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Cet article explique les différences entre les différentes versions d’Office 365 le chiffrement de messages.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 32895f8aae8c6c23ab7f0e3d70d4caa73285fa9e
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: a52d0c0164dfddb9f678bffa088760a271bc28e3
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034874"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754128"
 ---
 # <a name="compare-versions-of-ome"></a>Comparez les versions de OME
 
@@ -39,25 +39,25 @@ Cet article compare le chiffrement de messages Office 365 hérité (OME) aux nou
 |-----------------------------------|-------------------|-------------------|--------------------------|
 |**Fonctionnalité**                     | **Legacy OME**    | **IRM**           | **Nouvelles fonctionnalités OME** |
 |*Envoi d’un message chiffré*        |À l’aide des règles de flux de messagerie Exchange|L’utilisateur final a initié à partir d’Outlook Desktop ou Outlook sur le Web ; ou via les règles de flux de messagerie Exchange|L’utilisateur final a initié à partir d’Outlook Desktop, Outlook pour Mac ou Outlook sur le Web ; via les règles de flux de messagerie Exchange (également appelées règles de transport) et la protection contre la perte de données (DLP)|
-|*Modèle de gestion des droits*       |   N/A      |Option ne pas transférer et modèles personnalisés|Option ne pas transférer, option de chiffrement uniquement et modèles personnalisés|
+|*Modèle de gestion des droits*       |   S/O      |Option ne pas transférer et modèles personnalisés|Option ne pas transférer, option Encrypt-Only et modèles personnalisés|
 |*Type de destinataire*                   |Destinataires internes et externes|Destinataires internes uniquement         |Destinataires internes et externes|
 |*Expérience pour les destinataires internes*|Les destinataires reçoivent un message HTML, qu’ils téléchargent et ouvrent dans un navigateur Web ou une application mobile|Expérience incorporée native dans les clients Outlook|Une expérience incorporée native pour les destinataires au sein de la même organisation à l’aide des clients Outlook.  Les destinataires peuvent lire les messages à partir du portail OME à l’aide de clients autres qu’Outlook (aucun téléchargement ni application requis).|
-|*Expérience pour les destinataires externes*|Les destinataires reçoivent un message HTML, qu’ils téléchargent et ouvrent dans un navigateur Web ou une application mobile|N/A|Expérience incorporée native pour les destinataires Microsoft 365. Tous les autres destinataires peuvent lire le message à partir du portail OME (pas de téléchargement ou d’application requis).|
-|*Autorisations des pièces jointes*           |Aucune restriction sur les pièces jointes|Les pièces jointes sont protégées|Les pièces jointes sont protégées pour l’option ne pas transférer et les modèles personnalisés. Les administrateurs peuvent choisir de protéger ou non les pièces jointes pour l’option de chiffrement uniquement.|
-|*Apporter votre propre prise en charge de la clé (BYOK)*|Aucune                |Aucune               |BYOK pris en charge          |
+|*Expérience pour les destinataires externes*|Les destinataires reçoivent un message HTML, qu’ils téléchargent et ouvrent dans un navigateur Web ou une application mobile|S/O|Expérience incorporée native pour les destinataires Microsoft 365. Tous les autres destinataires peuvent lire le message à partir du portail OME (pas de téléchargement ou d’application requis).|
+|*Autorisations des pièces jointes*           |Aucune restriction sur les pièces jointes|Les pièces jointes sont protégées|Les pièces jointes sont protégées pour l’option ne pas transférer et les modèles personnalisés. Les administrateurs peuvent choisir si les pièces jointes de l’option Encrypt-Only sont protégées ou non.|
+|*Apporter votre propre prise en charge de la clé (BYOK)*|Aucun                |Aucun               |BYOK pris en charge          |
 ||
 
 ## <a name="advantages-of-the-new-ome-capabilities-over-legacy-ome"></a>Avantages des nouvelles fonctionnalités OME par rapport aux OME héritées
 
 Les nouvelles fonctionnalités offrent les avantages suivants :
 
-- Possibilité d’utiliser le chiffrement uniquement (ce qui permet une collaboration sécurisée), ne pas transférer et des restrictions personnalisées.
+- Possibilité d’utiliser des Encrypt-Only (ce qui permet une collaboration sécurisée), ne pas transférer et des restrictions personnalisées.
 - Les expéditeurs peuvent envoyer des messages chiffrés avec les nouvelles fonctionnalités manuellement à partir d’Outlook Desktop, Outlook pour Mac et Outlook sur les clients Web.
 - Les destinataires Microsoft 365 peuvent utiliser une expérience en ligne dans les clients Outlook pris en charge. Par ailleurs, les administrateurs peuvent choisir d’afficher les destinataires de Microsoft 365 une expérience personnalisée.
 - Les comptes en dehors de Microsoft 365, tels que Gmail, Yahoo et les comptes Microsoft, sont fédérés avec le portail OME, ce qui offre une meilleure expérience utilisateur pour ces destinataires. Toutes les autres identités utilisent un code d’accès unique pour accéder aux messages chiffrés.
 - Les administrateurs peuvent personnaliser la personnalisation et créer plusieurs modèles de personnalisation.
 - Les administrateurs peuvent révoquer les courriers chiffrés avec les nouvelles fonctionnalités.
-- Les nouvelles fonctionnalités fournissent des rapports d’utilisation détaillés &amp; via le centre de sécurité conformité.
+- Les nouvelles fonctionnalités fournissent des rapports d’utilisation détaillés via le centre de sécurité &amp; conformité.
 
 ## <a name="office-365-advanced-message-encryption-capabilities"></a>Fonctionnalités de chiffrement de messages avancé Office 365
 
@@ -75,21 +75,19 @@ Pour plus d’informations sur l’utilisation du chiffrement de messages avanc�
 
 ## <a name="unique-characteristics-of-office-365-message-encryption-in-a-gcc-high-deployment"></a>Caractéristiques uniques d’Office 365 le chiffrement de messages dans un déploiement de GCC High
 
-Le chiffrement de messages avancé Office 365 n’est pas disponible dans un environnement de GCC High. Vous pouvez toujours utiliser et personnaliser un modèle de marque unique dans un environnement de GCC High.
+Si vous envisagez d’utiliser le chiffrement de messages Office 365 dans un environnement de GCC High, il existe des caractéristiques uniques concernant l’expérience utilisateur des destinataires.
 
-En outre, si vous envisagez d’utiliser le chiffrement de messages Office 365 dans un environnement de GCC High, il existe certaines caractéristiques uniques concernant l’expérience de destinataire.
-
-### <a name="encrypted-email-from-gcc-high-to-gcc-high-recipients"></a>Messages chiffrés de GCC haut aux destinataires de GCC
+### <a name="encrypted-email-between-gcc-high-and-gcc-high-recipients"></a>Courrier électronique chiffré entre les destinataires de GCC High et GCC High
 
 Les expéditeurs peuvent chiffrer manuellement les courriers électroniques dans Outlook pour PC et Mac et Outlook sur le Web, ou les organisations peuvent configurer une stratégie pour chiffrer les messages électroniques à l’aide des règles de flux de messagerie Exchange.
 
 Les destinataires à l’intérieur de GCC bénéficient de la même expérience de lecture incorporée dans Outlook pour PC et Mac et d’Outlook sur le Web que tous les autres utilisateurs.
 
-### <a name="encrypted-email-from-gcc-high-to-non-gcc-high-recipients"></a>Courrier chiffré de GCC haut aux destinataires non GCC élevés
+### <a name="encrypted-email-between-gcc-high-and-non-gcc-high-recipients"></a>Courrier électronique chiffré entre les destinataires de GCC High et non-GCC High
 
-Les expéditeurs au sein de GCC High peuvent envoyer des messages chiffrés en dehors de la limite supérieure GCC.
+Les expéditeurs au sein de GCC High peuvent envoyer des messages chiffrés en dehors de la limite supérieure de GCC et inversement.
 
-Tous les destinataires en dehors de GCC High, y compris les utilisateurs commerciaux de Microsoft 365, les utilisateurs de Outlook.com et d’autres utilisateurs d’autres fournisseurs de courrier, tels que Gmail et Yahoo, reçoivent un message de wrapper. Ce message de wrapper redirige le destinataire vers le portail OME où le destinataire peut lire le message et y répondre.
+Tous les destinataires en dehors de GCC High, y compris les utilisateurs commerciaux de Microsoft 365, les utilisateurs de Outlook.com et d’autres utilisateurs d’autres fournisseurs de courrier, tels que Gmail et Yahoo, reçoivent un message de wrapper. Ce message de wrapper redirige le destinataire vers le portail OME où le destinataire peut lire le message et y répondre. Cela est également vrai pour les expéditeurs en dehors de GCC High sending OME Encrypted mail to GCC High.
 
 ## <a name="coexistence-of-legacy-ome-and-the-new-capabilities-in-the-same-tenant"></a>Coexistence de OME hérités et des nouvelles fonctionnalités dans le même client
 

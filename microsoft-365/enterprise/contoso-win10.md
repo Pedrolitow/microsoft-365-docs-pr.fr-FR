@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre la façon dont Contoso a utilisé Microsoft Endpoint Configuration Manager pour déployer les mises à niveau sur place pour Windows 10 Entreprise.
-ms.openlocfilehash: a100eb07408053fd270c26f388265696549fff9f
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 0543f24665048d0679bc1b099fdd0a2d431c1e54
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686417"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754246"
 ---
 # <a name="windows-10-enterprise-deployment-for-contoso"></a>Déploiement de Windows 10 Entreprise pour Contoso
 
@@ -55,15 +54,7 @@ Contoso dispose d’une infrastructure Configuration Manager (branche actuelle) 
 
 ## <a name="planning-process"></a>Processus de planification
 
-Avant le déploiement, Contoso a défini les anneaux suivants :
-
-- Trois anneaux pour la gestion intermédiaire de la validation et du déploiement 
-  - Un anneau pour les versions précédentes 
-  - Un anneau pour les nouvelles versions publiées
-  - Un anneau pour une version précédente 
-- Un anneau pour le déploiement large de Windows 10 Entreprise en fonction des données provenant des anneaux de validation
-
-Contoso a également utilisé la solution de préparation des mises à niveau de Windows Analytics pour déterminer l’ensemble des applications installées et leur compatibilité avec Windows 10 Entreprise.
+Contoso a utilisé la préparation à la mise à niveau dans Windows Analytics pour déterminer l’ensemble des applications installées et leur compatibilité avec Windows 10 entreprise.
 
 ## <a name="deployment-process"></a>Processus de déploiement
 
@@ -71,11 +62,11 @@ Pour effectuer le déploiement de mises à niveau sur place de Windows 10 Entre
 
 1. Activation d’un cache d’homologue pour le gestionnaire de configuration
 2. Création de packages Windows personnalisés basés sur des images du centre de service de gestion des licences en volume
-3. Utilisation du gestionnaire de configuration pour déployer les packages Windows aux points de distribution au sein de son réseau et des versions déployées pour les trois anneaux de gestion intermédiaire de la validation et du déploiement.
+3. Utilisez le gestionnaire de configuration pour déployer les packages Windows sur les points de distribution sur le réseau et les versions déployées vers les trois groupes de test de validation et de déploiement.
 4. Exécution de l’évaluation de réussite pour les PC et les périphériques dans les trois anneaux de gestion intermédiaire de la validation et du déploiement utilisant des solutions de conformité de mise à jour et d’intégrité des périphériques de Windows Analytics.
-5. En fonction des informations de Windows Analytics, Contoso a déterminé la version de Windows 10 Entreprise à déployer vers l’anneau de déploiement large.
-6. Exécution des séquences de tâches du déploiement du gestionnaire de configuration pour déployer le package Windows sélectionné vers l’anneau de déploiement large.
-7. Surveillance des PC et des périphériques dans l’anneau de déploiement large en utilisant des solutions de conformité de mise à jour et d’intégrité des périphériques pour résoudre les problèmes.
+5. En fonction des informations Windows Analytics, Contoso a déterminé la version de Windows 10 entreprise à déployer dans le groupe de déploiement large.
+6. Exécutez les séquences de tâches de déploiement du gestionnaire de configuration pour déployer le package Windows sélectionné dans le groupe de déploiement large.
+7. Surveillance des PC et des appareils dans le groupe de déploiement large à l’aide des solutions d’intégrité des appareils et de conformité des mises à jour pour résoudre les problèmes.
 
 Voici la mise à niveau sur place et l’architecture de déploiement de mises à jour en cours de Contoso.
 
@@ -87,11 +78,11 @@ Cette infrastructure se compose des éléments suivants :
   - obtient des images pour les packages Windows 10 Entreprise à partir du centre de gestion des licences en volume Microsoft dans The Microsoft Network ;
   - est le point d’administration central pour les packages de déploiement.
 - Les points de distribution régionaux généralement situés dans les centres régionaux de Contoso.
-- Les périphériques et les PC Windows dans divers emplacements qui reçoivent et installent les packages de déploiement pour la mise à niveau sur place ou les mises à jour en continu basées sur l’appartenance à un anneau.
+- PC et appareils Windows dans divers emplacements qui reçoivent et installent les packages de déploiement pour la mise à niveau sur place ou les mises à jour en continu en fonction de l’appartenance au groupe.
 
 ## <a name="next-step"></a>Étape suivante
 
-[Découvrez](contoso-o365pp.md) comment Contoso utilise son infrastructure Configuration Manager pour déployer et conserver les Applications Microsoft 365 actuelles pour les entreprises au sein de son organisation. 
+Découvrez comment contoso exploite son infrastructure de gestionnaire de configuration pour [déployer et conserver les applications Microsoft 365 actuelles pour les entreprises](contoso-o365pp.md) au sein de son organisation. 
 
 ## <a name="see-also"></a>Voir aussi
 
