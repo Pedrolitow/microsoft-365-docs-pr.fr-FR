@@ -17,20 +17,20 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Utilisez Microsoft Endpoint Manager pour gérer vos appareils de gestion, PC et autres points de terminaison.
-ms.openlocfilehash: b50279166b313742dbfbe8e75dd9788aac6b1daa
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 72aa26c50f5d3c20409382f19d8beabb5d290023
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445960"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681479"
 ---
 # <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>Étape 4. Déployer la gestion des points de terminaison pour vos appareils, PC et autres points de terminaison
 
 Avec les travailleurs à distance, vous devez prendre en charge un nombre croissant d’appareils personnels. La gestion des points de terminaison est une approche de sécurité, basée sur des stratégies, qui exige que les appareils respectent des critères spécifiques avant de pouvoir accéder aux ressources. Microsoft Endpoint Manager offre des capacités de gestion modernes pour sécuriser vos données dans le cloud et en local. 
 
-Endpoint Manager fournit des services et des outils pour gérer les appareils mobiles, les ordinateurs de bureau, les machines virtuelles, les appareils intégrés et les serveurs, en combinant les services suivants, que vous connaissez peut-être déjà et que vous utilisez.
+[Microsoft Endpoint Manager](https://docs.microsoft.com/mem/endpoint-manager-overview) fournit des services et des outils pour gérer les appareils mobiles, les ordinateurs de bureau, les machines virtuelles, les appareils intégrés et les serveurs, en combinant les services suivants, que vous connaissez et utilisez peut-être déjà.
 
-![Composants de gestion des points de terminaison](../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png)
+![Composants de la gestion des points de terminaison pour Microsoft 365](../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png)
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 
@@ -58,13 +58,13 @@ Si vous souhaitez en savoir plus, consultez la page [Présentation de la cogesti
 
 ## <a name="desktop-analytics"></a>Analyses du bureau
 
-L’Analyse du bureau est un service basé sur le cloud, qui s’intègre à Configuration Manager et vous fournit des informations et des renseignements, afin que vous puissiez prendre des décisions éclairées concernant vos clients Windows. Elle combine des données de votre organisation à des données cumulées à partir de millions d’appareils connectés à des services cloud de Microsoft. 
+L’Analyse du bureau est un service basé sur le cloud, qui s’intègre à Configuration Manager et vous fournit des informations et des renseignements, afin que vous puissiez prendre des décisions éclairées concernant vos clients Windows. Elle combine des données de votre organisation à des données cumulées de millions d’autres appareils connectés aux services de cloud computing Microsoft. 
 
 Avec les Analyses de bureau, vous pouvez :
 
 - Créez un inventaire des applications exécutées au sein de votre organisation.
 - Évaluer la compatibilité des applications avec les dernières mises à jour de fonctionnalités Windows 10.
-- Identifier les problèmes de compatibilité et recevoir des suggestions d’atténuation en fonction des analyses de données basées sur le cloud.
+- Identifier les problèmes de compatibilité, puis recevoir des suggestions d’atténuation en fonction des analyses de données basées sur le cloud.
 - Créer des groupes pilotes représentant l’ensemble de l’application et du pilote dans un groupe minimal d’appareils.
 - Déployer Windows 10 sur des appareils pilotes et gérés en production.
 
@@ -72,7 +72,7 @@ Si vous souhaitez en savoir plus, consultez la page [Présentation de l’Analys
 
 ## <a name="windows-autopilot"></a>Windows Autopilot
 
-Windows Autopilot offre une plateforme de déploiement Windows sans intervention et en libre-service. C’est un ensemble de technologies, utilisées pour configurer et préconfigurer de nouveaux appareils, de manière à les préparer à une utilisation productive. Vous pouvez également utiliser Windows Autopilot pour réinitialiser, réaffecter et récupérer des appareils. 
+Windows Autopilot offre une plateforme de déploiement Windows sans intervention et en libre-service. Elle inclut un ensemble de technologies servant à configurer et à préconfigurer de nouveaux appareils pour les préparer à une utilisation productive. Vous pouvez également utiliser Windows Autopilot pour réinitialiser, réaffecter et récupérer des appareils. 
 
 Windows Autopilot permet à un service informatique de pré-configurer des appareils avec peu ou pas d’infrastructure à gérer et avec un processus simple et facile. 
 
@@ -83,9 +83,7 @@ Si vous souhaitez en savoir plus, consultez la page [Présentation de Windows A
 
 ## <a name="admin-technical-resources-for-endpoint-management"></a>Ressources techniques dédiées aux administrateurs pour la gestion des points de terminaison
 
-- [La Partie 3 de la vidéo sur la gestion des appareils Windows 10 pour les employés à distance](https://resources.techcommunity.microsoft.com/enabling-remote-work/#security)
-- [La Partie 5 de la vidéo sur la gestion des navigateurs et des ordinateurs de bureau des utilisateurs pour les employés à distance](https://resources.techcommunity.microsoft.com/enabling-remote-work/#security)
-- [Déployer une infrastructure de mobilité pour Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/mobility-infrastructure)
+- [Gestion des appareils mobiles pour Microsoft 365](../enterprise/device-management-roadmap-microsoft-365.md)
 - [Comment inscrire différents types d’appareils pour la gestion des périphériques mobiles](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment)
 - [Comment former vos utilisateurs finaux à Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/end-user-educate)
  

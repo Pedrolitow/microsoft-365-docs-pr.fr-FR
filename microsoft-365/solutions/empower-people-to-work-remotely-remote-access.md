@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Assurez-vous que vos employés à distance peuvent accéder aux ressources locales tout en optimisant l’accès aux services cloud de Microsoft 365.
-ms.openlocfilehash: 0e44dad5172672cbe06c0690bcfee27ea153c6c3
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 1fbb1cb6ad9817f0e167ae95f9fc113ecdee4221
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445984"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681419"
 ---
 # <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>Étape 2. Fournir l’accès à distance aux applications et services locaux
 
@@ -30,17 +30,18 @@ Si votre organisation utilise une solution VPN d’accès à distance, général
 
 Si vos utilisateurs n’utilisent pas de solution VPN, vous pouvez utiliser le proxy d’application Azure Active Directory (Azure AD) et le VPN Azure Point-to-Site (P2S) pour fournir un accès, si toutes vos applications sont basées sur le web.
 
-Il existe trois configurations principales :
+Voici les principales configurations pour l’accès à distance :
 
-1. Vous utilisez déjà une solution VPN d’accès à distance.
-2. Vous n’utilisez pas une solution VPN d’accès à distance, vous avez une identité hybride, et vous avez besoin d’un accès à distance uniquement pour les applications web locales.
-3. Vous n’utilisez pas de solution VPN d’accès à distance et vous avez besoin d’accéder à des applications locales, dont certaines ne sont pas basées sur le web.
+- Vous utilisez déjà une solution VPN d’accès à distance.
+- Vous n’utilisez pas de solution VPN d’accès à distance et vous souhaitez que vos employés distants utilisent leur ordinateur personnel.
+- Vous n’utilisez pas une solution VPN d’accès à distance, vous avez une identité hybride, et vous avez besoin d’un accès à distance uniquement pour les applications web locales.
+- Vous n’utilisez pas de solution VPN d’accès à distance et vous avez besoin d’accéder à des applications locales, dont certaines ne sont pas basées sur le web.
 
 Consultez cet organigramme pour accéder aux options de configuration de l’accès à distance décrites dans cet article.
 
 ![Organigramme de configuration de l’accès à distance](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-flowchart.png)
 
-Avec les connexions d’accès à distance, vous pouvez également utiliser le [Bureau à distance](https://support.microsoft.com/help/4028379/windows-10-how-to-use-remote-desktop) pour connecter vos utilisateurs à un PC local. Par exemple, un employé distant peut utiliser le Bureau à distance pour se connecter au PC de son bureau à partir de son appareil Windows, iOS ou Android. Lorsqu’il est connecté à distance, il peut l’utiliser comme s’il était assis face à son PC.
+Avec les connexions d’accès à distance, vous pouvez également utiliser le [Bureau à distance](https://support.microsoft.com/help/4028379/windows-10-how-to-use-remote-desktop) pour connecter vos utilisateurs à un PC local. Par exemple, un employé distant peut utiliser le Bureau à distance pour se connecter au PC de son bureau depuis son appareil Windows, iOS ou Android. Lorsqu’il est connecté à distance, il peut l’utiliser comme s’il était assis face à son PC.
 
 ## <a name="optimize-performance-for-remote-access-vpn-clients-to-microsoft-365-cloud-services"></a>Optimiser les performances des clients VPN d’accès à distance aux services cloud de Microsoft 365
 
@@ -54,7 +55,9 @@ Le trafic Microsoft 365 doit emprunter une route indirecte au sein de votre org
 
 La segmentation de tunnel vous permet de configurer votre client VPN pour empêcher l’envoi de certains types de trafic sur la connexion VPN vers le réseau de l’organisation.
 
-Pour optimiser l’accès aux ressources cloud de Microsoft 365, configurez vos clients VPN avec la segmentation de tunnel afin d’exclure le trafic vers la catégorie **Optimiser** des points de terminaison Microsoft 365 sur la connexion VPN. Pour plus d’informations, consultez [Catégories de points de terminaison Office 365](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-network-connectivity-principles#new-office-365-endpoint-categories). Consultez la liste des points de terminaison de catégorie Optimiser [ici](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges).
+Pour optimiser l’accès aux ressources cloud de Microsoft 365, configurez vos clients VPN avec la segmentation de tunnel afin d’exclure le trafic vers la catégorie **Optimiser** des points de terminaison Microsoft 365 sur la connexion VPN. Pour plus d’informations, consultez [Catégories de points de terminaison Office 365](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-network-connectivity-principles#new-office-365-endpoint-categories). Consultez [cette liste](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges) des points de terminaison de catégorie Optimiser.
+
+Voici le flux de trafic qui en résulte, dans lequel la plupart du trafic vers les applications cloud Microsoft 365 contournent la connexion VPN.
 
 ![Trafic réseau provenant de clients VPN avec segmentation de tunnel](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-after-tunneling.png)
 
@@ -64,13 +67,13 @@ Pour plus d’informations et de conseils, voir [Optimiser la connectivité d’
 
 ## <a name="deploy-remote-access-when-all-your-apps-are-web-apps-and-you-have-hybrid-identity"></a>Déployer l’accès à distance lorsque toutes vos applications sont des applications web et que vous avez une identité hybride
 
-Si vos employés distants n’utilisent pas de client VPN classique et que vos comptes d’utilisateurs et groupes locaux sont synchronisés avec Azure AD, vous pouvez utiliser le proxy d’application Azure AD pour fournir un accès à distance sécurisé pour les applications web hébergées sur les serveurs intranet. Les applications web incluent les sites SharePoint, les serveurs Outlook Web Access ou toute autre application métier basée sur le web. 
+Si vos employés distants n’utilisent pas de client VPN classique et que vos comptes d’utilisateurs et groupes locaux sont synchronisés avec Azure AD, vous pouvez utiliser le proxy d’application Azure AD pour fournir un accès à distance sécurisé pour les applications web hébergées sur des serveurs intranet locaux. Les applications web incluent les sites SharePoint Server, les serveurs Outlook Web Access ou toute autre application métier basée sur le web. 
 
 Voici les composants du proxy d’application Azure AD.
 
 ![Composants du proxy d’application Azure AD](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-application-proxy.png)
 
-Si vous souhaitez obtenir plus d’informations, consultez cette [vue d’ensemble des proxy d’application Azure AD](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy) et la [Partie 3 de la vidéo sur l’utilisation des proxy d’Azure AD](https://resources.techcommunity.microsoft.com/enabling-remote-work/#security).
+Si vous souhaitez en savoir plus, consultez la page [Présentation du proxy d’application Azure AD](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
 
 >[!Note]
 >Le proxy d’application Azure AD ne fait pas partie de l’abonnement Microsoft 365. Vous devez payer pour son utilisation avec un abonnement Azure distinct.
@@ -78,7 +81,7 @@ Si vous souhaitez obtenir plus d’informations, consultez cette [vue d’ensemb
 
 ## <a name="deploy-remote-access-when-not-all-your-apps-are-web-apps"></a>Déployer l’accès à distance lorsque l’ensemble de vos applications ne sont pas des applications web
 
-Si vos employés distants n’utilisent pas de client VPN classique et que l’une de vos applications n’est pas basée sur le web, vous pouvez utiliser un réseau privé virtuel (P2S) Azure.
+Si vos employés distants n’utilisent pas de client VPN classique et que vous avez des applications qui ne sont pas basée sur le web, vous pouvez utiliser un réseau privé virtuel (P2S) Azure.
 
 Une connexion VPN P2S crée une connexion sécurisée entre un appareil de travail distant et le réseau de votre organisation via un réseau virtuel Azure. 
 
@@ -96,10 +99,7 @@ Pour prendre en charge les travailleurs distants qui peuvent uniquement utiliser
 
 ![Composants d’Azure Windows Virtual Desktop](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-windows-virtual-desktop.png)
 
-Si vous souhaitez plus d’informations, reportez-vous aux rubriques suivantes : 
-
-- [Cette vue d’ensemble de Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/overview).
-- [La partie 2 de la vidéo sur l’utilisation de l’application de Windows Virtual Desktop pour les travailleurs à distance](https://resources.techcommunity.microsoft.com/enabling-remote-work/#productivity).
+Si vous souhaitez en savoir plus, consultez la page [Présentation de Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/overview). 
 
 >[!Note]
 >Windows Virtual Desktop n’est pas inclus dans l’abonnement Microsoft 365. Vous devez payer pour son utilisation avec un abonnement Azure distinct.
@@ -107,7 +107,7 @@ Si vous souhaitez plus d’informations, reportez-vous aux rubriques suivantes 
 
 ## <a name="protect-your-remote-desktop-services-connections-with-the-remote-desktop-services-gateway"></a>Protéger vos connexions aux Services Bureau à distance avec la Passerelle des services Bureau à distance
 
-Si vous utilisez les Services Bureau à distance (RDS) pour permettre aux employés de se connecter à des ordinateurs Windows sur votre réseau local, vous devez utiliser une Passerelle des services Bureau à distance Microsoft dans votre réseau de périmètre. La passerelle utilise le protocole SSL (Secure Sockets Layer) pour chiffrer les communications et empêche le système hébergeant les services Bureau à distance d’être directement exposé à Internet.
+Si vous utilisez les Services Bureau à distance (RDS) pour permettre aux employés de se connecter à des ordinateurs Windows sur votre réseau local, vous devez utiliser une Passerelle des services Bureau à distance Microsoft dans votre réseau de périmètre. La passerelle utilise le protocole SSL (Secure Sockets Layer) pour chiffrer les communications et empêche l’ordinateur local hébergeant les services Bureau à distance d’être directement exposé à Internet.
 
 ![Les Services Bureau à distance avec la Passerelle des services Bureau à distance](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-remote-desktop.png)
 

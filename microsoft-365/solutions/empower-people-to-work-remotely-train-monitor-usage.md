@@ -5,7 +5,6 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 05/01/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -18,19 +17,19 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Formez vos utilisateurs et veillez à ce que les problèmes soient traités rapidement.
-ms.openlocfilehash: b1dd55febcd23f6bb8413b0aa5c625f4b785babb
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: a987a08b2ebd27f7a9cc299e5c8fbae0376437a3
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377068"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681383"
 ---
 # <a name="step-6-train-remote-workers-and-address-usage-feedback"></a>Étape 6 : former des télétravailleurs et répondre aux commentaires sur l’utilisation
 
 Formez vos télétravailleurs aux aspects suivants :
 
 - Procédures de connexion appropriées utilisant l’authentification multifacteur, incluant l’inscription d’une méthode de vérification supplémentaire.
-- Utilisation des appareils et stratégies de gestion des points de terminaison pour bloquer l’accès d’appareils non conformes.
+- Utilisation des appareils et stratégies de gestion des points de terminaison pour bloquer l’accès d’appareils non conformes ou non gérés.
 - Utilisation des applications autorisées et stratégies d’applications de gestion des points de terminaison pour bloquer l’utilisation de certaines applications.
 - Fonctionnalités de sécurité de Windows 10 Entreprise.
 - Utilisation de [Teams](https://docs.microsoft.com/microsoftteams/training-microsoft-teams-landing-page) pour les conversations, les visioconférences, le partage de documents et les conversations thématiques.
@@ -39,14 +38,16 @@ Formez vos télétravailleurs aux aspects suivants :
 
 Cette formation doit inclure des exercices pratiques permettant à vos employés de se familiariser avec ces fonctionnalités et leurs résultats.
 
-Dans les semaines suivant la formation :
+Créez un forum pour vos employés distants afin de poser des questions ou de résoudre des problèmes, tels qu’une équipe ou un groupe Yammer.
 
-- Traitez rapidement les commentaires des travailleurs distants et affinez les stratégies et les configurations.
-- Analysez l’utilisation des équipes, du courrier, des sites SharePoint et des dossiers OneDrive, et comparez-les à l’utilisation attendue.
+Au cours des semaines suivant la formation :
+
+- Répondez rapidement aux commentaires des travailleurs distants dans votre forum et ajustez vos stratégies et vos configurations de travailleurs distants selon vos besoins.
+- Analysez l’utilisation des équipes, du courrier, des sites SharePoint et des dossiers OneDrive, et comparez-les à vos attentes en matière d’adoption par l’utilisateur.
 
 Puis, formez à nouveau vos utilisateurs si nécessaire.
 
 ## <a name="results-of-step-6"></a>Résultats de l’étape 6
 
-Vos télétravailleurs sont formés et un forum ouvert et réactif est à leur disposition pour formuler des commentaires et publier des problèmes liés aux applications et services d’accès à distance et de productivité.
+Vos télétravailleurs sont formés et un forum ouvert et réactif est à leur disposition pour formuler des commentaires et publier des problèmes liés aux applications d’accès à distance et de productivité.
 
