@@ -17,19 +17,19 @@ search.appverid:
 - MET150
 description: Découvrez comment créer des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1c47d682d7b3c52fa5ca5b71386a764f3b3da693
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 229eb733af85ea5f450969c6d70709cfadcb8f06
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546956"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681772"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Créez des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
 
-[Les types d’informations sensibles personnalisés](custom-sensitive-info-types.md) sont utilisés pour vous aider à identifier les éléments sensibles afin de pouvoir empêcher leur partage par inadvertance. Vous pouvez définir un type d’informations sensibles personnalisé sur la base des éléments suivants :
+[Les types d’informations sensibles personnalisés](custom-sensitive-info-types.md) sont utilisés pour vous aider à identifier les éléments sensibles afin de pouvoir empêcher leur partage par inadvertance. Vous pouvez définir un type d’informations sensibles personnalisé sur la base des éléments suivants :
 
 - modèles
-- mots clés de preuve, tels que *employé*, *badge* ou *ID*
+- mots clés de preuve, tels que*employé*,*badge* ou *ID*
 - caractère à proximité de la preuve dans un modèle particulier
 - niveaux de confiance
 
@@ -46,7 +46,7 @@ Mais que se passe-t-il si vous voulez utiliser un type d’informations sensible
 
 ![Classification EDM](../media/EDMClassification.png)
 
-La classification EDM vous permet de créer des types d’informations sensibles personnalisés qui font référence à des valeurs exactes dans une base de données d’informations sensibles. La base de données peut être actualisée quotidiennement et peut contenir jusqu’à 100 millions de lignes de données. À mesure que des employés, patients ou clients vont et viennent, et que les enregistrements changent, vos types d’informations sensibles personnalisés restent à jour et valides. Vous pouvez également utiliser une classification EDM avec des stratégies, par exemple, de  [protection contre la perte de données](data-loss-prevention-policies.md)  (DLP) ou les stratégies de fichier de  [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/data-protection-policies).
+La classification EDM vous permet de créer des types d’informations sensibles personnalisés qui font référence à des valeurs exactes dans une base de données d’informations sensibles. La base de données peut être actualisée quotidiennement et peut contenir jusqu’à 100 millions de lignes de données. À mesure que des employés, patients ou clients vont et viennent, et que les enregistrements changent, vos types d’informations sensibles personnalisés restent à jour et valides. Vous pouvez également utiliser la classification basée sur EDM avec des stratégies, telles [que les stratégies de protection contre la perte de données](data-loss-prevention-policies.md) (DLP) ou [les stratégies de fichier de Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/data-protection-policies).
 
 > [!NOTE]
 > Microsoft 365 Information Protection prend désormais en charge, en préversion, les langues de jeu de caractères à double octets pour :
@@ -54,20 +54,12 @@ La classification EDM vous permet de créer des types d’informations sensibles
 > - Chinois (traditionnel)
 > - Korean
 > - Japanese
-> 
->Cette préversion est uniquement disponible dans le cloud commercial et le déploiement est limité aux pays suivants :
-> - Japon
-> - Corée
-> - Chine
-> - Hong Kong (R.A.S.)
-> - Macao (R.A.S.)
-> - Taïwan
->
+
 >Cette prise en charge est disponible pour les types d’informations sensibles. Si vous souhaitez en savoir plus, consultez l’article [Prise en charge de la protection des informations pour les jeux de caractères à double octets (préversion)](mip-dbcs-relnotes.md).
 
 ## <a name="required-licenses-and-permissions"></a>Licences et autorisations requises
 
-Pour effectuer les tâches décrites dans cet article, vous devez être un administrateur général, un administrateur de conformité ou un administrateur Exchange Online. Pour en avoir plus sur les autorisations DLP, voir  [Autorisations](data-loss-prevention-policies.md#permissions).
+Vous devez être un administrateur général, un administrateur de conformité ou un administrateur Exchange Online pour effectuer les tâches décrites dans cet article. Pour en avoir plus sur les autorisations DLP, consultez la section[Autorisations](data-loss-prevention-policies.md#permissions).
 
 La classification EDM est incluse dans ces abonnements
 
@@ -110,18 +102,18 @@ La configuration de la classification basée sur EDM inclut les étapes suivante
       - 32 colonnes (champs) par source de données
       - 5 colonnes (champs) marquées comme pouvant faire l’objet d’une recherche
 
-2. Structurez les données sensibles dans le fichier .csv de telle sorte que la première ligne contienne les noms des champs utilisés pour la classification EDM. Votre fichier .csv contient peut-être des noms de champs, tels que « ssn », « birthdate », « firstname » et « lastname ». Les noms d’en-tête de colonne ne peuvent pas contenir des espaces ni des traits de soulignement. Par exemple, le fichier .csv utilisé dans cet exemple est appelé  *PatientRecords.csv*. Ses colonnes incluent  *PatientID*,  *MRN*,  *LastName*,  *FirstName*,  *SSN*, etc.
+2. Structurez les données sensibles dans le fichier .csv de telle sorte que la première ligne contienne les noms des champs utilisés pour la classification EDM. Votre fichier .csv contient peut-être des noms de champs, tels que « ssn », « birthdate », « firstname » et « lastname ». Les noms d’en-tête de colonne ne peuvent pas contenir des espaces ni des traits de soulignement. Par exemple, le fichier .csv utilisé dans cet exemple est appelé *PatientRecords.csv*. Ses colonnes incluent *PatientID*, *MRN*, *LastName*, *FirstName*, *SSN*, etc.
 
 #### <a name="define-the-schema-for-your-database-of-sensitive-information"></a>Définir le schéma de votre base de données d’informations sensibles
 
-3. Définissez le schéma pour la base de données d’informations sensibles dans un fichier XML (comme dans l’exemple ci-dessous). Nommez ce fichier de schéma **edm.xml** et configurez-le de telle sorte que pour chaque colonne de la base de données, une ligne utilise la syntaxe : 
+3. Définissez le schéma pour la base de données d’informations sensibles dans un fichier XML (comme dans l’exemple ci-dessous). Nommez ce fichier de schéma**edm.xml** et configurez-le de telle sorte que pour chaque colonne de la base de données, une ligne utilise la syntaxe : 
 
       `\<Field name="" searchable=""/\>`.
 
-      - Utilisez des noms de colonne pour les valeurs  *Nom de champ* .
-      - Utilisez  *searchable="true"*  pour jusqu’à 5 champs dont vous voulez qu’il puissent faire l’objet d’une recherche. Au moins un champ doit pouvoir faire l’objet d’une recherche.
+      - Utilisez les noms de colonne pour les valeurs de *nom de champ*.
+      - Utilisez *searchable="true"* pour jusqu’à 5 champs dont vous voulez qu’il puissent faire l’objet d’une recherche. Au moins un champ doit pouvoir faire l’objet d’une recherche.
 
-      Par exemple, le fichier XML suivant définit le schéma d’une base de données de dossiers de patients, avec cinq champs pouvant faire l’objet d’une recherche :  *PatientID*,  *MRN*,  *SSN*,  *Phone* et  *DOB*.
+      Par exemple, le fichier XML suivant définit le schéma d’une base de données de dossiers de patients, avec cinq champs pouvant faire l’objet d’une recherche : *PatientID*, *MRN*, *SSN*, *Phone*, and *DOB*.
 
       (vous pouvez copier, modifier et utiliser notre exemple).
 
@@ -172,7 +164,7 @@ La configuration de la classification basée sur EDM inclut les étapes suivante
 
       Lorsque vous configurez votre package de règles, veillez à référencer correctement vos fichier .csv et **edm.xml**. Vous pouvez copier, modifier et utiliser notre exemple. Dans cet exemple de fichier xml, les champs suivants doivent être personnalisés pour créer votre type sensible d’EDM :
 
-      - **RulePack id & ExactMatch id** : utilisez  [New-GUID](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6)  pour générer un GUID.
+      - **RulePack id & ExactMatch id** : utilisez [New-GUID](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) pour générer un GUID.
 
       - **Datastore** : ce champ spécifie le magasin de données de recherche EDM à utiliser. Vous indiquez un nom de source de données ou un schéma EDM configuré.
 
@@ -235,7 +227,7 @@ La configuration de la classification basée sur EDM inclut les étapes suivante
 
 À ce stade, vous avez configuré la classification EDM. L’étape suivante consiste à hacher les données sensibles, puis à charger les hachages pour l’indexation.
 
-Rappelez-vous que la procédure précédente de notre schéma PatientRecords définit cinq champs pouvant faire l’objet d’une recherche :  *PatientID*, *MRN*,  *SSN*,  *Phone* et  *DOB*. Notre exemple de package de règles inclut ces champs et référence le fichier de schéma de base de données (**edm.xml**), avec un seul élément  *ExactMatch*  par champ pouvant faire l’objet d’une recherche. Prenons l’élément ExactMatch suivant :
+Rappelez-vous que la procédure précédente de notre schéma PatientRecords définit cinq champs pouvant faire l’objet d’une recherche : *PatientID*,*MRN*, *SSN*, *Phone* et *DOB*. Notre exemple de package de règles inclut ces champs et référence le fichier de schéma de base de données (**edm.xml**), avec un seul élément *ExactMatch* par champ pouvant faire l’objet d’une recherche. Prenons l’élément ExactMatch suivant :
 
 ```xml
 <ExactMatch id = "E1CC861E-3FE9-4A58-82DF-4BD259EAB371" patternsProximity = "300" dataStore ="PatientRecords" recommendedConfidence = "65" >
@@ -258,11 +250,11 @@ Rappelez-vous que la procédure précédente de notre schéma PatientRecords dé
 
 À partir de cet exemple, notez les points suivants :
 
-- Le nom du magasin de données fait référence au fichier .csv que nous avons créé précédemment :  **dataStore = "PatientRecords"**.
+- Le nom du magasin de données fait référence au fichier .csv que nous avons créé précédemment : **dataStore = "PatientRecords"**.
 
-- La valeur idMatch fait référence à un champ pouvant faire l’objet d’une recherche figurant dans le fichier de schéma de base de données:  **idMatch matches = "SSN"**.
+- La valeur idMatch fait référence à un champ pouvant faire l’objet d’une recherche figurant dans le fichier de schéma de base de données : **idMatch matches = "SSN"**.
 
-- La valeur de classification fait référence à un type d’informations sensibles existant ou personnalisé :  **classification = "U.S. Social Security Number (SSN)"** (en l’occurrence, nous utilisons le type d’informations sensibles existant pour le numéro de sécurité sociale aux États-Unis).
+- La valeur de classification fait référence à un type d’informations sensibles existant ou personnalisé : **classification = "U.S. Social Security Number (SSN)"** (en l’occurrence, nous utilisons le type d’informations sensibles existant pour le numéro de sécurité sociale aux États-Unis).
 
 > [!NOTE]
 > La mise à jour du schéma EDMS avec les ajouts peut prendre de 10 à 60 minutes. Vous devez l’effectuer avant d’exécuter les étapes qui utilisent les ajouts.
@@ -271,7 +263,7 @@ Rappelez-vous que la procédure précédente de notre schéma PatientRecords dé
 
 Si vous souhaitez modifier votre fichier **edm.xml**, par exemple pour changer les champs utilisés pour la classification EDM, procédez comme suit :
 
-1. Modifiez votre fichier **edm.xml** (présenté dans la section  [Définir le schéma](#define-the-schema-for-your-database-of-sensitive-information)  de cet article).
+1. Modifiez votre fichier **edm.xml** (présenté dans la section [Définir le schéma](#define-the-schema-for-your-database-of-sensitive-information) de cet article).
 
 2. Connectez-vous au Centre de sécurité et conformité en utilisant la procédure [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
@@ -405,16 +397,16 @@ Si vous ne souhaitez pas exposer votre fichier de données sensibles en texte cl
 
 #### <a name="set-up-the-security-group-and-user-account"></a>Configurer les groupe de sécurité personnalisé et compte d’utilisateur
 
-1. En tant qu’administrateur général, accédez au centre d’administration à l’aide du [lien approprié pour votre abonnement](#portal-links-for-your-subscription) et  [créez un groupe de sécurité](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide) nommé **EDM\_DataUploaders**.
+1. En tant qu’administrateur général, accédez au centre d’administration à l’aide du [lien approprié pour votre abonnement](#portal-links-for-your-subscription) et [créez un groupe de sécurité](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide) nommé **EDM\_DataUploaders**.
 
-2. Ajoutez un ou plusieurs utilisateurs au groupe de sécurité  **EDM\_DataUploaders**  (ces utilisateurs peuvent gérer la base de données d’informations sensibles).
+2. Ajoutez un ou plusieurs utilisateurs au groupe de sécurité**EDM\_DataUploaders**. (ces utilisateurs peuvent gérer la base de données d’informations sensibles).
 
 #### <a name="hash-and-upload-from-one-computer"></a>Hacher et charger à partir d’un même ordinateur
 
 Cet ordinateur doit avoir accès directement à votre client Microsoft 365.
 
 >[!NOTE]
-> Avant de commencer cette procédure, assurez-vous que vous êtes membre du groupe de sécurité  **EDM\_DataUploaders** .
+> Avant de commencer cette procédure, assurez-vous que vous êtes membre du groupe de sécurité **EDM\_DataUploaders**.
 
 #### <a name="links-to-edm-upload-agent-by-subscription-type"></a>Liens vers l’agent de chargement EDM par type d’abonnement
 
@@ -494,9 +486,9 @@ Si vous voulez afficher toutes les données téléchargées vers un magasin part
 
 `EdmUploadAgent.exe /GetSession /DataStoreName <DataStoreName>`
 
-Poursuivez la configuration de votre processus et planifiez l’ [actualisation de votre base de données d’informations sensibles](#refreshing-your-sensitive-information-database).
+Poursuivez la configuration de votre processus et planifiez l’[actualisation de votre base de données d'informations sensibles](#refreshing-your-sensitive-information-database).
 
-À ce stade, vous êtes prêt à utiliser la classification EDM avec vos services de Cloud Computing Microsoft. Par exemple, vous pouvez  [configurer une stratégie DLP à l’aide d’une classification EDM](#to-create-a-dlp-policy-with-edm).
+À ce stade, vous êtes prêt à utiliser la classification basée sur EDM avec vos services de Cloud Computing Microsoft. Par exemple, vous pouvez [configurer une stratégie DLP à l’aide d’une classification basée sur EDM](#to-create-a-dlp-policy-with-edm).
 
 #### <a name="refreshing-your-sensitive-information-database"></a>Actualisation de votre base de données d’informations sensibles
 
@@ -504,18 +496,18 @@ Vous pouvez actualiser quotidiennement votre base de données d’informations s
 
 1. Déterminez vos processus et leur fréquence (quotidien ou hebdomadaire) pour actualiser la base de données d’informations sensibles.
 
-2. Exportez de nouveau les données vers une application, telle que Microsoft Excel, et enregistrez le fichier au format. csv. Conservez le même nom de fichier et l’emplacement que vous avez utilisé lorsque vous avez suivi les étapes décrites dans [Hachage et téléchargement des données sensibles](#part-2-hash-and-upload-the-sensitive-data).
+2. Exportez de nouveau les données vers une application, telle que Microsoft Excel, et enregistrez le fichier au format. csv. Conservez le même nom de fichier et l’emplacement que vous avez utilisé lorsque vous avez suivi les étapes décrites dans[Hachage et téléchargement des données sensibles](#part-2-hash-and-upload-the-sensitive-data).
 
       > [!NOTE]
       > S’il n’y a pas de modifications apportées à la structure (noms de champs) du fichier .csv, vous n’avez pas besoin d’apporter des modifications à votre fichier de schéma de base de données lorsque vous actualisez les données. Si vous devez apporter des modifications, assurez-vous de modifier le schéma de base de données et votre package de règles en conséquence.
 
-3. Utilisez le  [Planificateur de tâches](https://docs.microsoft.com/windows/desktop/TaskSchd/task-scheduler-start-page)  pour automatiser les étapes 2 et 3 dans la procédure  [Hachage et téléchargement des données sensibles](#part-2-hash-and-upload-the-sensitive-data) . Vous pouvez planifier des tâches à l’aide de plusieurs méthodes :
+3. Utilisez [le planificateur de tâches](https://docs.microsoft.com/windows/desktop/TaskSchd/task-scheduler-start-page) pour automatiser les étapes 2 et 3 dans la procédure[hacher et télécharger les données sensibles](#part-2-hash-and-upload-the-sensitive-data). Vous pouvez planifier des tâches à l’aide de plusieurs méthodes :
 
       | Méthode             | Procédure |
       | ---------------------- | ---------------- |
-      | Windows PowerShell     | Voir la documentation  [ScheduledTasks](https://docs.microsoft.com/powershell/module/scheduledtasks/?view=win10-ps)  et l’ [exemple de script PowerShell](#example-powershell-script-for-task-scheduler)  dans cet article |
-      | API Planificateur de tâches     | Consultez la documentation relative au  [Planificateur de tâches](https://docs.microsoft.com/windows/desktop/TaskSchd/using-the-task-scheduler)                                                                                                                                                                                                                                                                                 |
-      | Interface utilisateur Windows | Dans Windows, cliquez sur  **Démarrer**, puis tapez Planificateur de tâches. Dans la liste des résultats, cliquez avec le bouton droit sur  **Planificateur de tâches**, puis sélectionnez  **Exécuter en tant qu’administrateur**.                                                                                                                                                                                                                                                                           |
+      | Windows PowerShell     | Consultez la documentation[ScheduledTasks](https://docs.microsoft.com/powershell/module/scheduledtasks/?view=win10-ps) et l’[exemple de script PowerShell](#example-powershell-script-for-task-scheduler) dans cet article |
+      | API planificateur de tâches     | Consultez la documentation relative au [planificateur de tâches](https://docs.microsoft.com/windows/desktop/TaskSchd/using-the-task-scheduler)                                                                                                                                                                                                                                                                                |
+      | Interface utilisateur Windows | Dans Windows, cliquez sur **Démarrer**, puis tapez Planificateur de tâches. Dans la liste des résultats, cliquez avec le bouton droit sur**planificateur de tâches**, puis sélectionnez**exécuter en tant qu’administrateur**.                                                                                                                                                                                                                                                                           |
 
 #### <a name="example-powershell-script-for-task-scheduler"></a>Exemple de script PowerShell pour le planificateur de tâches
 
@@ -607,39 +599,39 @@ Les types d’informations sensibles EDM pour les scénarios suivants sont en co
 
 1. Accédez au Centre de conformité et de sécurité à l’aide du [lien approprié pour votre abonnement](#portal-links-for-your-subscription).
 
-2. Cliquez sur  **Protection contre la perte de données** \> **Stratégie**.
+2. Sélectionnez stratégie de **Protection contre la perte de données** \> ** **.
 
-3. Sélectionnez  **Créer une stratégie** \> **Personnaliser** \> **Suivant**.
+3. Sélectionnez **Créer une stratégie** \> **Personnaliser** \> **Suivant**.
 
-4. Sous l’onglet  **Nommez votre stratégie** , spécifiez un nom et une description, puis sélectionnez  **Suivant**.
+4. Sous l'onglet**Nommez votre stratégie**, spécifiez un nom et une description, puis sélectionnez**suivant**.
 
-5. Dans le volet  **Choisir des emplacements** , sélectionnez  **Me laisser choisir des emplacements spécifiques**, puis cliquez sur  **Suivant**.
+5. Dans le volet **Choisir des emplacements**, cliquez sur **Me laisser choisir des emplacements spécifiques**, puis cliquez sur **Suivant**.
 
-6. Dans la colonne  **État** , sélectionnez  **courrier Exchange, Comptes OneDrive, Messages de conversation et de canal de Teams** , puis  **Suivant**
+6. Dans la colonne **État**, sélectionnez **Courrier Exchange, Comptes OneDrive, Messages de conversation et de canal de Teams**, puis **Suivant**.
 
-7. Sous l’onglet  **Paramètres de stratégie** , sélectionnez  **Utiliser les paramètres avancés**, puis  **Suivant**.
+7. Sous l'onglet**paramètres de stratégie**, sélectionnez**utiliser les paramètres avancés**, puis **suivant**.
 
-8. Sélectionnez  **+ Nouvelle règle**.
+8. Sélectionnez **+ Nouvelle règle**.
 
-9. Dans la section **Nom** , spécifiez un nom et une description pour la règle.
+9. Dans la section**Nom**, spécifiez un nom et une description pour la règle.
 
-10. Dans la section  **Conditions** , dans la liste  **+ Ajouter une condition** , sélectionnez  **Le contenu contient un type sensible**.
+10. Dans la section**conditions**, dans la liste **+ ajouter une condition**, sélectionnez **le contenu contient un type de contenu sensible**.
 
       ![Le contenu contient des types d’informations sensibles](../media/edm-dlp-newrule-conditions.png)
 
-11. Recherchez le type d’informations sensibles que vous avez créé lorsque vous avez configuré votre package de règles, puis sélectionnez  **+ Ajouter**.  
-    Ensuite, sélectionnez  **Terminé**.
+11. Recherchez le type d’informations sensibles que vous avez créé lorsque vous avez configuré votre package de règles, puis sélectionnez **+ ajouter**.  
+    Sélectionnez **Terminer**.
 
-12. Achevez de sélectionner les options applicables à votre règle, telles que  **Notifications à l’utilisateur**, **Remplacements par l’utilisateur**,  **Rapports d’incident** et autres, puis sélectionnez **Enregistrer**.
+12. Terminez de sélectionner les options de votre règle, telles que**notifications d’utilisateur**,**remplacements d’utilisateur**, **rapports d’incident**, puis sélectionnez** Enregistrer**.
 
-13. Sous l’onglet  **Paramètres de stratégie** , examinez vos règles, puis sélectionnez  **Suivant**.
+13. Sous l'onglet **paramètres de stratégie**, passez en revue vos règles, puis sélectionnez**suivant**.
 
-14. Indiquez si vous voulez activer la stratégie immédiatement, la tester ou la maintenir désactivée. Ensuite, choisissez  **Suivant**.
+14. Indiquez si vous voulez activer la stratégie immédiatement, tester celle-ci ou la maintenir désactivée. Sélectionnez **Suivant**.
 
-15. Sous l’onglet  **Examiner vos paramètres** , révisez votre stratégie. Apportez les modifications nécessaires. Lorsque vous avez terminé, sélectionnez  **Créer**.
+15. Sous l'onglet **Vérifier vos paramètres**, passez en revue votre stratégie. Apportez les modifications nécessaires. Lorsque vous avez terminé, sélectionnez **Créer**.
 
 > [!NOTE]
-> Comptez environ une heure avant que votre nouvelle stratégie DLP soit appliquée à l’ensemble de votre centre de données.
+> Laissez environ une heure pour que votre nouvelle stratégie DLP fonctionne de la même manière dans votre centre de données.
 
 ## <a name="related-articles"></a>Articles connexes
 

@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: La gestion des enregistrements dans Microsoft 365 vous permet d’appliquer des planifications de rétention dans un plan de gestion de fichiers afin de gérer la rétention, la déclaration d’enregistrements et la destruction de ceux-ci.
-ms.openlocfilehash: 497e8b9fce06ae64d9f4396f2db05e65274f61dd
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: e6e72a14d0d3e22823c8341145f64721831586f9
+ms.sourcegitcommit: 095b1f52f2e73e8d44195916984efeb0908c2ad8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399001"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48755563"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>Découvrez la gestion des enregistrements dans Microsoft 365
 
@@ -106,7 +106,6 @@ Message qu’un utilisateur voit s’il essaie de supprimer un document étiquet
 > De plus, les étiquettes de rétention configurées pour les enregistrements réglementaires ont les restrictions d’administrateur suivantes:
 > - La période de rétention ne peut pas être plus courte une fois l’étiquette enregistrée, mais seulement prolongée.
 > - Ces étiquettes ne sont pas prises en charge par les stratégies d’attribution automatique d’étiquette, et doivent être appliquées à l’aide des [stratégies d’étiquette de rétention](create-apply-retention-labels.md). 
-> - Une fois que vous avez ajouté et enregistré ces étiquettes dans une stratégie d’étiquette de rétention, vous ne pouvez pas supprimer ces étiquettes des emplacements, mais uniquement ajouter des emplacements.
 > 
 > En raison de ces actions irréversibles, assurez-vous que vous devez vraiment utiliser les enregistrements réglementaires avant de sélectionner cette option pour les étiquettes de rétention. Pour empêcher la configuration accidentelle, cette option n’est pas disponible par défaut, mais doit d’abord être activée à l’aide de PowerShell. Des instructions sont incluses dans [Déclarer les enregistrements à l’aide d’étiquettes de rétention](declare-records.md).
 
