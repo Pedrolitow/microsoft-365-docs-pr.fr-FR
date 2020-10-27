@@ -17,25 +17,31 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: e4a9e5f1606b91e4cd41f29b37db2707f4c7df17
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 5465d1a6dc806cb4f76a34801dee2feb87146ad3
+ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295081"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48769267"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Fonctionnalités du score de sécurité Microsoft
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 Nous apportons des modifications à l’avenir proche pour faire en sorte que [Microsoft Secure](microsoft-secure-score.md) évalue un meilleur représentant de votre position de sécurité et améliore l’utilisation. Votre score et le score maximal possible peuvent varier.
 
 ## <a name="proposed-changes"></a>Proposed changes
 
-### <a name="october-2020"></a>Octobre 2020
+### <a name="november-2020"></a>Novembre 2020
 
-#### <a name="remove-improvement-action-for-microsoft-defender-advanced-threat-protection"></a>Supprimer l’action d’amélioration pour la protection avancée contre les menaces Microsoft Defender
+Suppression de la possibilité de créer des tickets ServiceNow via le score de sécurité en accédant à share > ServiceNow.
+
+- La période d’aperçu du connecteur ServiceNow se termine. Cette fonctionnalité n’est plus disponible à la fin du 2020. Nous vous remercions pour vos commentaires et le support technique pendant que nous déterminons les étapes suivantes.
+
+### <a name="october-2020"></a>Octobre 2020
+
+Suppression de l’action d’amélioration liée à la protection avancée contre les menaces Microsoft Defender :
+
 - Activer la vérification du contenu Web de l’application Windows Store SmartScreen de Microsoft Defender pour avertir
 
 ## <a name="related-resources"></a>Ressources connexes

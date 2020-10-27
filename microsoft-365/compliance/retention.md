@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En savoir plus sur les stratégies de rétention et les étiquettes de rétention, qui permettent de conserver les éléments dont vous avez besoin et de supprimer ceux qui ne vous servent pas.
-ms.openlocfilehash: fe28e51aa7d93872e5683c3682c110275ece3d54
-ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
+ms.openlocfilehash: 089a34d1e9a002bd61e688cd3f721c6e8249c5b7
+ms.sourcegitcommit: 095b1f52f2e73e8d44195916984efeb0908c2ad8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48651428"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48755583"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>En savoir plus sur les stratégies et les étiquettes de rétention
 
@@ -57,9 +57,9 @@ Ces paramètres de rétention fonctionnent avec du contenu en place, ce qui vous
 
 Si des paramètres de rétention sont affectés au contenu, celui-ci reste à son emplacement d’origine. Les utilisateurs peuvent continuer à travailler avec leurs documents ou la messagerie comme si rien n’avait changé. Toutefois, s’ils modifient ou suppriment le contenu qui est inclus dans la stratégie de rétention, une copie du contenu est automatiquement conservée, tel qu’il était lorsque vous avez appliqué les paramètres de rétention.
   
-- Pour les sites SharePoint et OneDrive : la copie est conservée dans la bibliothèque de **Conservation et préservation**.
+- Pour les sites SharePoint et OneDrive : la copie est conservée dans la bibliothèque de **Conservation et préservation** .
 
-- Pour les boîtes aux lettres Exchange : la copie est conservée dans le dossier **Éléments récupérables**. 
+- Pour les boîtes aux lettres Exchange : la copie est conservée dans le dossier **Éléments récupérables** . 
 
 - Pour les messages Teams et Yammer : la copie est conservée dans un dossier masqué appelé **SubstrateHolds** sous la forme d’un sous-dossier dans le dossier **Éléments récupérables** de Exchange.
 
@@ -168,7 +168,7 @@ Avec les étiquettes de rétention, vous pouvez effectuer les actions suivantes�
 
 - **Démarrer la période de rétention à compter de la date d’étiquetage du contenu** pour les documents des sites SharePoint et les comptes OneDrive, ainsi que pour les éléments de courrier à l’exception des éléments de calendrier. Si vous appliquez une étiquette de rétention avec cette configuration à un élément de calendrier, la période de rétention commence à partir de la date d’envoi.
 
-- **Démarrer la période de rétention à la date d’un événement**par exemple, employés quittant l’organisation ou expiration du contrat.
+- **Démarrer la période de rétention à la date d’un événement** par exemple, employés quittant l’organisation ou expiration du contrat.
 
 - **Appliquer une étiquette de rétention par défaut à une bibliothèque de documents, un dossier ou un ensemble de documents** dans SharePoint, afin que tous les documents stockés dans cette bibliothèque obtiennent l’étiquette de rétention par défaut.
 
@@ -250,7 +250,7 @@ Vous pouvez ensuite approfondir vos informations à l’aide de [Explorateur de 
 > [!TIP]
 >Envisagez d’utiliser d’autres informations sur la classification des données, telles que les classifieurs et les types d’informations sensibles, pour vous aider à identifier le contenu que vous devrez peut-être conserver ou supprimer, ou à gérer comme enregistrements.
 
-Le Centre de sécurité et conformité Office 365 contient des informations de présentation équivalentes pour les étiquettes de rétention de **tableau de bord** > **gouvernance d’informations**, ainsi que des informations plus détaillées de **la gouvernance des informations** > **d’activité des étiquettes**. Pour plus d’informations sur la surveillance des étiquettes de rétention dans cet ancien centre d’administration, voir la documentation suivante :
+Le Centre de sécurité et conformité Office 365 contient des informations de présentation équivalentes pour les étiquettes de rétention de **tableau de bord** > **gouvernance d’informations** , ainsi que des informations plus détaillées de **la gouvernance des informations** > **d’activité des étiquettes** . Pour plus d’informations sur la surveillance des étiquettes de rétention dans cet ancien centre d’administration, voir la documentation suivante :
 - [Afficher les rapports de gouvernance des données](view-the-data-governance-reports.md)
 - [Afficher l’utilisation d’étiquettes à l'aide des analyses d’étiquettes](label-analytics.md)
 - [Afficher l’activité des étiquettes pour les documents](view-label-activity-for-documents.md)
@@ -259,7 +259,7 @@ Le Centre de sécurité et conformité Office 365 contient des informations de p
 
 Lorsque les étiquettes de rétention sont affectées au contenu par les utilisateurs ou automatiquement, vous pouvez utiliser la recherche de contenu pour rechercher les contenus classés et dotés d’étiquettes de rétention spécifiques.
 
-Lorsque vous créez une recherche de contenu, sélectionnez la condition **Étiquette de rétention**, puis entrez le nom complet ou une partie du nom de l’étiquette de rétention et utilisez un caractère générique. Si vous souhaitez en savoir plus, consultez la page [Requêtes par mots-clés et conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md).
+Lorsque vous créez une recherche de contenu, sélectionnez la condition **Étiquette de rétention** , puis entrez le nom complet ou une partie du nom de l’étiquette de rétention et utilisez un caractère générique. Si vous souhaitez en savoir plus, consultez la page [Requêtes par mots-clés et conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md).
   
 ![État des étiquettes de rétention](../media/retention-label-condition.png)
 
@@ -278,7 +278,7 @@ Utilisez le tableau suivant pour savoir si vous devez utiliser une stratégie ou
 |Présence d’interface utilisateur pour les utilisateurs finals | Non | Oui |
 |Persiste si le contenu est déplacé | Non | Oui, au sein de votre client Microsoft 365 |
 |Déclaration d’un élément comme enregistrement| Non | Oui |
-|Démarrage de la période de rétention à la date d’étiquetage ou en fonction d’un événement | Non | Oui |
+|Démarrer la période de rétention: <br /> - Lors de la création ou de la dernière modification des éléments <br /> - Lorsque vous avez étiqueté ou basé sur un événement | <br />Oui <br />Non | <br />Oui <br /> Oui |
 |Révisions avant élimination | Non| Oui |
 |Preuve de la destruction pendant 7 ans | Non |Oui, lorsque l’élément est déclaré comme enregistrement|
 |Audit des activités administratives| Oui | Oui|

@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 4f5d0a59372fb32b2802a094c247e45740ba3946
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 4dfe1c9595db869a59474a030a5dd8673cf7db24
+ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295249"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48769243"
 ---
 # <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>Suivi de votre historique de score sécurisé Microsoft et atteindre les objectifs
 
@@ -60,17 +60,36 @@ Dans l’onglet **mesures & tendances** , il existe plusieurs graphiques et grap
 
 ### <a name="compare-your-score-to-organizations-like-yours"></a>Comparez votre score aux organisations comme la vôtre
 
-Il existe deux endroits pour voir comment votre score est comparé aux organisations similaires à vous.
+Il existe deux endroits pour voir comment votre score est comparé aux organisations similaires à vous. Dans les deux graphiques, vous pouvez sélectionner **gérer les comparaisons** pour afficher et modifier les informations de votre organisation. Vous pouvez également créer une comparaison personnalisée basée sur l’industrie, la taille de l’organisation, les licences et les régions.
 
-Le premier emplacement se trouve dans l’onglet **vue d’ensemble** , dans lequel vous pouvez voir un graphique à barres de comparaison. Pointez sur le graphique pour afficher l’opportunité de score et de score.
+#### <a name="comparison-bar-chart"></a>Graphique à barres de comparaison
+
+Le graphique à barres de comparaison est l’onglet **vue d’ensemble** . Pointez sur le graphique pour afficher l’opportunité de score et de score. Les données de comparaison sont anonymes afin que nous ne sachions pas exactement quels autres clients sont dans le mix.
 
 ![Graphique à barres des notes d’une organisation similaire](../../media/secure-score/secure-score-comparison-bar.png)
 
-Le deuxième emplacement se trouve dans l’onglet **mesures & tendances** , dans lequel vous pouvez voir comment le score de sécurité de votre organisation est comparé à d’autres utilisateurs.
+- **Organisations comme la vôtre** : nous vous offrons un score moyen d’autres clients (à condition que nous ayons au moins 5 locataires à comparer) qui répondent aux critères suivants :
+    1. Même industrie
+    2. Taille de l’Organisation
+    3. Toutes les régions
+    4. Les produits Microsoft utilisés sont des 80% similaires
+    5. Opportunité (score maximal pouvant être atteint par la licence actuelle) dans une plage de 20% de votre client
+
+- **Comparaison personnalisée** : doit d’abord être configuré en sélectionnant **Manage Comparison** (seulement si nous trouvons au moins 5 locataires) en fonction des critères suivants :
+    1. Secteur (s) sélectionné (s)
+    2. Taille (s) de l’organisation sélectionnée
+    3. Région (s) sélectionnée (s)
+    4. Licence (s) sélectionnée (s)
+    5. Les produits Microsoft utilisés sont des 80% similaires
+    6. Opportunité (score maximal pouvant être atteint par la licence actuelle) dans une plage de 20% de votre client
+
+Si vous n’avez pas effectué de sélection pour la sélection personnalisée du résultat de la sélection lors de l’obtention de moins de 5 autres clients avec lesquels nous pouvons comparer, vous verrez « non disponible en raison de données limitées ».
+
+#### <a name="comparison-trend"></a>Tendance de comparaison
+
+Dans l’onglet **mesures & les tendances** , Découvrez comment le score de sécurité de votre organisation est comparé à d’autres utilisateurs.
 
 ![Graphique linéaire des scores d’une organisation similaire au fil du temps](../../media/secure-score/secure-score-comparison-trend.png)
-
-Dans les deux graphiques, vous pouvez sélectionner **gérer les comparaisons** pour afficher et modifier les informations de votre organisation. Vous pouvez également créer une comparaison personnalisée basée sur l’industrie, la taille de l’organisation, les licences et les régions.
 
 ## <a name="we-want-to-hear-from-you"></a>Nous souhaitons être informés
 

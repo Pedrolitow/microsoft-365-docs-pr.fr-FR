@@ -12,14 +12,14 @@ localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Les administrateurs peuvent en savoir plus sur les informations et les rapports disponibles dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 089c6351485712d841691d5b856b1ba28dfe4fc4
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: f9ac8b8b0d346d78af252a9e427d0ef2b1a4c4ea
+ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198480"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48769017"
 ---
-# <a name="mail-flow-insights-in-the-security--compliance-center"></a>Informations sur le flux de messagerie dans le centre de sécurité et conformité
+# <a name="mail-flow-insights-in-the-security--compliance-center"></a>Informations sur le flux de courriers dans le Centre de sécurité et de conformité
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -36,7 +36,7 @@ Les informations disponibles sont les suivantes :
 
 - [Corriger le ralentissement des règles de flux de messagerie Insight](mfi-slow-mail-flow-rules-insight.md)<sup>1</sup>
 
-- [Carte du flux de messagerie](mfi-mail-flow-map-report.md)
+- [Carte du flux de courriers](mfi-mail-flow-map-report.md)
 
 - [Nouveaux domaines transmis par email Insight](mfi-new-domains-being-forwarded-email.md)<sup>2</sup>
 
@@ -48,9 +48,9 @@ Les informations disponibles sont les suivantes :
 
 - [Informations sur le flux de courrier entrant et sortant](mfi-outbound-and-inbound-mail-flow.md)
 
-- [Informations sur les files d’attente](mfi-queue-alerts-and-queues.md)
+- [Aperçu des files d’attente](mfi-queue-alerts-and-queues.md)
 
-- [Informations et rapports sur les clients SMTP AUTH](mfi-smtp-auth-clients-report.md)
+- [Aperçu et rapport sur les clients utilisant l’authentification SMTP](mfi-smtp-auth-clients-report.md)
 
 - [Informations sur l’état du flux de courrier des principaux domaines](mfi-domain-mail-flow-status-insight.md)
 
@@ -60,11 +60,11 @@ Les informations disponibles sont les suivantes :
 
 ## <a name="permissions-required-to-view-the-mail-flow-dashboard"></a>Autorisations requises pour afficher le tableau de bord de flux de messagerie
 
-Le tableau de bord de flux de messagerie est accessible aux membres des groupes d’itinéraires suivants :
+Le tableau de bord de flux de messagerie est disponible pour les membres des groupes de rôles suivants :
 
 - **Gestion** de l’organisation dans le centre de sécurité & conformité (administrateurs globaux).
 
-- **[Administrateur Exchange](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** dans Azure ad.
+- **[Administrateur Exchange](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** dans Azure Active Directory.
 
 - **Administrateur de flux** de service dans le centre de sécurité & conformité : si un membre de ce groupe de rôles n’est pas également membre des groupes de rôles administrateur général ou administrateur Exchange, notez les problèmes et exigences suivants :
 
@@ -76,6 +76,6 @@ Pour plus d’informations sur les autorisations dans le centre de sécurité & 
 
 ## <a name="where-to-find-the-mail-flow-dashboard"></a>Où trouver le tableau de bord de flux de messagerie ?
 
-Ouvrez le centre de sécurité & conformité à l’adresse <https://protection.office.com> , développez **flux de messagerie**, puis sélectionnez **tableau de bord**.
+Ouvrez le centre de sécurité & conformité à l’adresse <https://protection.office.com> , développez **flux de messagerie** , puis sélectionnez **tableau de bord** .
 
 Pour accéder directement au tableau de bord du flux de messagerie, ouvrez <https://protection.office.com/mailflow/dashboard> .

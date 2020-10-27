@@ -17,18 +17,37 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment la rétention fonctionne pour SharePoint et OneDrive.
-ms.openlocfilehash: da700c72a03bad85310be8807bf94e54ec6a4048
-ms.sourcegitcommit: 916fa2dacbc13287b49823176375259d7af03f86
+ms.openlocfilehash: 31ffce3f02e273e771ca1753474bec48b66148bb
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47394701"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754138"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Découvrir la rétention pour SharePoint et OneDrive
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](https://aka.ms/ComplianceSD).*
 
 Les informations contenues dans cet article complètent l’article [Découvrir la rétention](retention.md), car elles contiennent des informations spécifiques à SharePoint et OneDrive.
+
+Pour les autres charges de travail, consultez:
+
+- [En savoir plus sur la rétention dans Microsoft Teams](retention-policies-teams.md)
+- [Découvrir la rétention pour Yammer](retention-policies-yammer.md)
+- [Découvrir la rétention pour Exchange](retention-policies-exchange.md)
+
+## <a name="whats-included-for-retention-and-deletion"></a>Éléments composant la rétention et la suppression
+
+Tous les fichiers stockés dans SharePoint ou OneDrive peuvent être conservés en appliquant une stratégie de rétention ou une étiquette de rétention.
+
+Les fichiers suivants peuvent être supprimés:
+
+- Lorsque vous utilisez une stratégie de rétention : tous les fichiers dans les bibliothèques de documents, y compris les bibliothèques de documents SharePoint créées automatiquement, telles que **Eléments de site** .
+    
+- Lorsque vous utilisez des étiquettes de rétention : tous les fichiers dans toutes les bibliothèques de documents et tous les fichiers au niveau racine qui ne se trouvent pas dans un dossier.
+    
+    Lorsque vous utilisez une [requête KQL avec une stratégie d’application automatique pour une étiquette de rétention](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties), vous pouvez exclure des bibliothèques de documents à l’aide de cette entrée: `NOT(DocumentLink:"<URL to document library>")`
+
 
 ## <a name="how-retention-works-for-sharepoint-and-onedrive"></a>Fonctionnement de la rétention pour SharePoint et OneDrive
 
@@ -69,6 +88,10 @@ Lorsque les paramètres de la stratégie de rétention sont définis sur conserv
 
 2. **Si le contenu n’est pas supprimé** pendant la période configurée : à la fin de la période configurée dans la stratégie de rétention, le document est déplacé vers la corbeille de premier niveau. Si un utilisateur supprime le contenu à partir de là ou vide cette corbeille (action également nommée « purge »), le document est déplacé vers la corbeille second niveau. La période de rétention de 93 jours concerne tant la corbeille premier niveau que la corbeille second niveau. À la fin des 93 jours, le document est définitivement supprimé de l’emplacement en question (corbeille premier niveau ou second niveau). La Corbeille n’est pas indexée et n’est donc pas disponible pour les recherches. Par conséquent, une recherche eDiscovery ne peut pas trouver de contenu de la Corbeille auquel appliquer une conservation.
 
+## <a name="how-retention-works-for-onenote-content"></a>Fonctionnement de la rétention pour le contenu OneNote
+
+Lorsque vous appliquez une stratégie de rétention à un emplacement qui inclut du contenu OneNote, les différentes sections OneNote constituent en fait des fichiers différents. Cela signifie que chaque section est conservée et supprimée séparément, conformément aux paramètres de rétention que vous spécifiez.
+
 ## <a name="how-retention-works-with-document-versions-in-a-site-collection"></a>Fonctionnement de la rétention avec les versions de document d’une collection de sites
 
 Le contrôle de version est une fonctionnalité présente dans toutes les bibliothèques de documents dans SharePoint et OneDrive. Par défaut, le contrôle de version conserve au moins les 500 versions principales, même si vous pouvez augmenter cette limite. Pour plus d’informations, consultez [Activer et configurer le contrôle de version pour une liste ou une bibliothèque](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37) et [Fonctionnement du contrôle de version dans les listes et les bibliothèques](https://support.microsoft.com/office/how-versioning-works-in-lists-and-libraries-0f6cd105-974f-44a4-aadb-43ac5bdfd247).
@@ -88,11 +111,11 @@ Ce n’est pas le cas des étiquettes de rétention lorsqu’une stratégie de r
 
 ## <a name="when-a-user-leaves-the-organization"></a>Lorsqu’un utilisateur quitte l’organisation
 
-**SharePoint** :
+**SharePoint**  :
 
 Lorsqu’un utilisateur quitte votre organisation, le contenu qu’il a créé n’est pas affecté car SharePoint est considéré comme un environnement collaboratif, contrairement à la boîte aux lettres ou au compte OneDrive de l’utilisateur.
 
-**OneDrive** :
+**OneDrive**  :
 
 Si un utilisateur quitte votre organisation, tous les fichiers soumis à une stratégie de rétention ou contenant des étiquettes de rétention sont conservés pendant toute la durée de la stratégie ou de l’étiquette. Pendant cette période, tous les accès partagés continuent de fonctionner. À expiration de la période de rétention, le contenu est placé dans la Corbeille de collections de sites et n’est accessible à personne, à l’exception de l’administrateur. Si un document est marqué en tant qu’enregistrement par une étiquette de rétention, il est conservé jusqu’à la fin de la période de rétention, après quoi le contenu est définitivement supprimé.
 
