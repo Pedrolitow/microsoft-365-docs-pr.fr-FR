@@ -1,5 +1,5 @@
 ---
-title: Documents sécurisés dans Office 365 PACM
+title: Documents sécurisés dans Office 365 – Protection avancée contre les menaces
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -15,14 +15,14 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Découvrez les documents sûrs dans Microsoft 365 E5 ou Microsoft 365 E5 sécurité.
-ms.openlocfilehash: cc63143d61065bc9528677ff4aec7d3433236ce0
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: baa04f74388b702b42a0bdb83a7f0797ace09883
+ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195330"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48773948"
 ---
-# <a name="safe-documents-in-microsoft-365-e5"></a>Documents approuvés dans Microsoft 365 E5
+# <a name="safe-documents-in-microsoft-365-e5"></a>Documents sécurisés dans Microsoft 365 E5
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -32,6 +32,8 @@ Documents approuvés est une fonctionnalité de Microsoft 365 E5 ou Microsoft 36
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
 - Les documents approuvés sont disponibles uniquement pour les utilisateurs disposant de licences de sécurité Microsoft *365 E5* ou *Microsoft 365 E5* . Ces licences ne sont pas incluses dans les plans Office 365 Advanced Threat Protection (ATP).
+
+- Les documents approuvés sont pris en charge dans les applications Microsoft 365 pour entreprise (anciennement appelé Office 365 ProPlus) version 2004 ou ultérieure.
 
 - Vous ouvrez le Centre de conformité et sécurité sur <https://protection.office.com>. Pour accéder directement à la page **pièces jointes approuvées ATP** , ouvrez <https://protection.office.com/safeattachmentv2> .
 
@@ -47,15 +49,15 @@ Les fichiers envoyés par des documents approuvés ne sont pas conservés dans D
 
 ## <a name="use-the-security--compliance-center-to-configure-safe-documents"></a>Utiliser le centre de sécurité & conformité pour configurer des documents approuvés
 
-1. Dans le centre de sécurité & conformité, accédez à la stratégie de **gestion des menaces** - \> **Policy** \> **pièces jointes ATP**, puis cliquez sur **paramètres globaux**.
+1. Dans le centre de sécurité & conformité, accédez à la stratégie de **gestion des menaces** - \> **Policy** \> **pièces jointes ATP** , puis cliquez sur **paramètres globaux** .
 
 2. Dans les **paramètres globaux** , effectuer un survol qui s’affiche, configurez les paramètres suivants :
 
-   - **Activer les documents approuvés pour les clients Office**: déplacez le bouton bascule vers la droite pour activer la fonctionnalité : ![ activer/désactiver ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
+   - **Activer les documents approuvés pour les clients Office** : déplacez le bouton bascule vers la droite pour activer la fonctionnalité : ![ activer/désactiver ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
 
-   - **Autoriser les utilisateurs à cliquer en mode protégé même si les documents approuvés identifient le fichier comme malveillant**: nous vous recommandons de laisser cette option désactivée (laissez le bouton bascule vers la gauche : ![ désactiver ](../../media/scc-toggle-off.png) ).
+   - **Autoriser les utilisateurs à cliquer en mode protégé même si les documents approuvés identifient le fichier comme malveillant** : nous vous recommandons de laisser cette option désactivée (laissez le bouton bascule vers la gauche : ![ désactiver ](../../media/scc-toggle-off.png) ).
 
-   Lorsque vous avez terminé, cliquez sur **Enregistrer**.
+   Lorsque vous avez terminé, cliquez sur **Enregistrer** .
 
    ![Paramètres des documents approuvés après la sélection des paramètres globaux dans la page pièces jointes approuvées ATP.](../../media/safe-docs.png)
 
@@ -82,7 +84,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 Pour vérifier que vous avez bien activé et configuré les documents approuvés, effectuez l’une des opérations suivantes :
 
-- Dans le centre de sécurité & conformité, accédez à la stratégie de **gestion des menaces** \> **Policy** \> **pièces jointes**de niveau de sécurité ATP, cliquez sur **paramètres globaux**, puis vérifiez que l’autorisation documents **sûrs pour les clients Office** et **autoriser les utilisateurs à cliquer via le mode protégé même si les documents approuvés identifie le fichier comme des paramètres malveillants** .
+- Dans le centre de sécurité & conformité, accédez à la stratégie de **gestion des menaces** \> **Policy** \> **pièces jointes** de niveau de sécurité ATP, cliquez sur **paramètres globaux** , puis vérifiez que l’autorisation documents **sûrs pour les clients Office** et **autoriser les utilisateurs à cliquer via le mode protégé même si les documents approuvés identifie le fichier comme des paramètres malveillants** .
 
 - Exécutez la commande suivante dans Exchange Online PowerShell et vérifiez les valeurs des propriétés :
 
