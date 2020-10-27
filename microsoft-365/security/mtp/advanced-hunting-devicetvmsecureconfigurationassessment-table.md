@@ -1,6 +1,6 @@
 ---
 title: Table DeviceTvmSecureConfigurationAssessment dans le schéma de repérage avancé
-description: Découvrez les événements d’évaluation de la sécurité de Gestion des menaces et des vulnérabilités dans la table DeviceTvmSecureConfigurationAssessment du schéma de repérage avancé. Ces événements fournissent des informations sur la machine, ainsi que sur la configuration de la sécurité, l’impact et la conformité.
+description: Découvrez les événements d’évaluation de la sécurité dans le tableau DeviceTvmSecureConfigurationAssessment du schéma de chasse avancé. Ces & des événements de gestion des vulnérabilités fournissent des informations sur les périphériques ainsi que des informations sur la configuration de la sécurité, l’impact et la conformité.
 keywords: chasse de menace, recherche de menace, recherche de menace informatique, protection contre les menaces Microsoft, Microsoft 365, MTP, M365, recherche, requête, télémétrie, référence de schéma, Kusto, table, colonne, type de données, description, menace & gestion des vulnérabilités, TVM, gestion des appareils, configuration de la sécurité, DeviceTvmSecureConfigurationAssessment
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 8c9e886f205a3d1b402b8c39718b6ee49b86a11d
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 356548c3115aacce8c76d7fbc552811c168750ed
+ms.sourcegitcommit: e8b3855302fc34d09b6df6c737033a2f326d6eee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429886"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48770072"
 ---
 # <a name="devicetvmsecureconfigurationassessment"></a>DeviceTvmSecureConfigurationAssessment
 
@@ -42,15 +42,18 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 
 | Nom de colonne | Type de données | Description |
 |-------------|-----------|-------------|
-| `DeviceId` | string | Identificateur unique de la machine dans le service |
-| `DeviceName` | string | Nom de domaine complet (FQDN) de la machine |
-| `OSPlatform` | string | Plateforme du système d’exploitation client s’exécutant sur la machine. Cela indique des systèmes d’exploitation spécifiques, y compris des variantes au sein d’une même famille, telles que Windows 10 et Windows 7.|
+| `DeviceId` | string | Identificateur unique de l’appareil dans le service |
+| `DeviceName` | string | Nom de domaine complet (FQDN) du périphérique |
+| `OSPlatform` | string | Plateforme du système d’exploitation s’exécutant sur l’appareil. Cela indique des systèmes d’exploitation spécifiques, y compris des variantes au sein d’une même famille, telles que Windows 10 et Windows 7.|
 | `Timestamp` | DateHeure | Date et heure de génération de l’enregistrement |
 | `ConfigurationId` | string | Identificateur unique pour une configuration spécifique |
 | `ConfigurationCategory` | string | Catégorie ou regroupement auquel appartient la configuration : application, système d’exploitation, réseau, comptes, contrôles de sécurité |
 | `ConfigurationSubcategory` | string | Sous-catégorie ou sous-groupement auquel appartient la configuration. Dans de nombreux cas, cela décrit des capacités ou des fonctionnalités spécifiques. |
 | `ConfigurationImpact` | string | Impact nominal de la configuration sur la note de configuration globale (1-10) |
 | `IsCompliant` | booléen | Indique si la configuration ou la stratégie est correctement configurée. |
+| `IsApplicable` | booléen | Indique si la configuration ou la stratégie s’applique à l’appareil. |
+| `Context` | string | Informations contextuelles supplémentaires sur la configuration ou la stratégie |
+| `IsExpectedUserImpactCompliant` | booléen | Indique s’il y aura un impact sur l’utilisateur si la configuration ou la stratégie est appliquée. |
 
 ## <a name="related-topics"></a>Sujets associés
 

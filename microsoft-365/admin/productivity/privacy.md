@@ -20,28 +20,30 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: La protection de la confidentialité avec le score de productivité.
-ms.openlocfilehash: 799d532ca1f0abd5fa6234052d4875a79d629601
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+ms.openlocfilehash: 1af2553e67b4f14e9783c23d679a7ac96443512a
+ms.sourcegitcommit: e8b3855302fc34d09b6df6c737033a2f326d6eee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48287245"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48770034"
 ---
 # <a name="privacy-controls-for-productivity-score"></a>Contrôles de confidentialité du score de productivité
 
-Le score de productivité aide les organisations à transformer le travail réalisé grâce à des informations sur la façon dont les utilisateurs utilisent Microsoft 365 et les expériences technologiques qui les prennent en charge. Le score reflète les performances de votre organisation&#39;s par rapport aux mesures relatives aux employés et aux technologies et compare votre score avec des organisations comme les vôtres. Pour plus d’informations, consultez la rubrique [vue d’ensemble](productivity-score.md) de la note de productivité.
+Le score de productivité aide les organisations à transformer le travail obtenu avec des mesures qui vous aident à mesurer et à améliorer les expériences des personnes et des technologies. Il vous permet d’obtenir une visibilité sur le fonctionnement de votre organisation, fournit des mesures qui vous aident à vous concentrer sur l’amélioration des expériences.  Vous pouvez également connecter les mesures aux actions pour vous aider à mettre à jour les compétences et les systèmes afin que tout le monde puisse le faire. Le score reflète les performances de votre organisation et vous permet de comparer en toute sécurité votre score avec d’autres organisations comme les vôtres.  Pour plus d’informations, consultez [la rubrique vue d’ensemble des scores de productivité](productivity-score.md).
 
-Votre confidentialité est importante pour nous et vous pouvez consulter la déclaration de confidentialité de Microsoft [ici](https://privacy.microsoft.com/privacystatement). Dans la note de productivité, il existe des informations importantes sur la façon dont les employés de votre organisation travaillent. Par conséquent, nous souhaitons également vous fournir des contrôles pour vous assurer que les informations sont exploitables d’une manière significative tout en ne compromettant pas l’approbation que vous placez dans nous.
+Votre confidentialité est importante pour nous. Pour savoir comment nous protégeons votre confidentialité, consultez la [déclaration de confidentialité de Microsoft](https://privacy.microsoft.com/privacystatement). Le score de productivité fournit des informations essentielles sur la façon dont les employés de votre organisation travaillent avec des contrôles pour s’assurer que les informations sont exploitables tout en ne compromettant pas l’approbation que vous avez effectuée dans Microsoft.
 
-Nous fournissons les contrôles suivants pour permettre une gestion plus sûre des données :
+Dans la zone personnes expériences, les mesures sont disponibles au niveau de l’organisation et incluent tous les utilisateurs de votre client Microsoft 365. Cette zone examine la façon dont les utilisateurs utilisent Microsoft 365 en examinant les catégories de la collaboration de contenu, la mobilité, les réunions, le travail d’équipe et la communication. Pour vous aider à favoriser la formation et la sensibilisation à l’ensemble des personnes qui peuvent avoir besoin d’un support technique avec nos produits, nous vous avons également fourni des informations sur le niveau individuel. Bien que nous fournissons ce niveau de transparence, nous vous proposons également plusieurs niveaux de contrôles pour vous aider à répondre aux besoins de votre politique de confidentialité interne.
+Les contrôles suivants vous permettent de :
 
 - Des rôles d’administrateur flexibles permettant de contrôler qui peut voir les informations dans le score de productivité.
-- Anonymisation des mesures de niveau utilisateur.
-- Possibilité de refuser l’expérience de l’employé.
+- La possibilité d’identifier les mesures au niveau de l’utilisateur.
+- Possibilité de désactiver les expériences de personnes.
+- Possibilité de désactiver la zone personnes
 
 ## <a name="flexible-admin-roles-to-control-who-can-see-the-information-in-productivity-score"></a>Rôles d’administrateur flexibles permettant de contrôler qui peut voir les informations dans le score de productivité
 
-Pour afficher l’intégralité de la fonction de score de productivité avec un rôle d’administrateur, y compris les informations de niveau client et les détails au niveau de chaque utilisateur, votre rôle doit être l’un des suivants :
+Pour afficher l’intégralité du score de productivité, y compris les mesures au niveau du client et les détails par utilisateur, votre rôle doit être l’un des rôles d’administrateur suivants :
 
 - Administrateur global
 - Administrateurs Exchange
@@ -51,28 +53,28 @@ Pour afficher l’intégralité de la fonction de score de productivité avec un
 - Lecteur général
 - Lecteur de rapports
 
-Pour inviter des personnes responsables de la gestion et de l’adoption des modifications, mais qui ne sont pas des administrateurs informatiques dans l’expérience, tout en leur donnant accès à l’expérience complète, y compris les informations de niveau client et les détails au niveau de chaque utilisateur, vous pouvez leur donner le rôle de lecteur de rapport.
+Attribuez le rôle de lecteur de rapports à toute personne responsable de la gestion et de l’adoption des modifications. Ce rôle leur donne accès à l’expérience complète, y compris les mesures au niveau du client et les détails au niveau de chaque utilisateur.
 
-Dans l’expérience de l’employé, nous fournissons les détails de l’activité par utilisateur au format grille pour chaque page de détails de catégorie. Dans la mesure où ce niveau de détail n’est pas adapté à tous les visiteurs potentiels du score de productivité, nous avons créé un rôle personnalisé dans Azure AD – rôle de lecteur de rapports de synthèse de l’utilisation – pour permettre l’accès à un ensemble plus large de visiteurs au sein de votre organisation, uniquement aux métriques agrégées et aux détails par niveau au sein de l’expérience.
+Le rapport des expériences de personnes contient les détails de l’activité par utilisateur pour chaque page de détails de catégorie. Attribuez un rôle personnalisé appelé lecteur de rapports de synthèse d’utilisation (disponible à partir du 29 octobre 2020) pour permettre l’accès uniquement aux métriques agrégées des expériences de personnes.
 
 :::image type="content" source="../../media/communicationspage.jpg" alt-text="Page communications dans les rapports de productivité.":::
 
-## <a name="anonymization-of-user-level-metrics"></a>Anonymisation des mesures de niveau utilisateur
+## <a name="de-identification-of-user-level-metrics"></a>Désidentification des mesures de niveau utilisateur
 
-Pour que les données collectées pour tous les rapports soient anonymes, vous devez être administrateur général. Cela masque les informations identifiables telles que les noms d’utilisateur, de groupe et de site dans tous les rapports, y compris la note de productivité et l’utilisation de Microsoft 365.
+Pour que les données collectées pour tous les rapports soient anonymes, vous devez être administrateur général. Cette action masque les informations identifiables telles que les noms d’utilisateur, de groupe et de site dans tous les rapports, y compris le score de productivité et l’utilisation de Microsoft 365.
 
-1. Dans le centre d’administration, accédez à **Settings**paramètres d'   >   **organisation** paramètres, puis, sous l’onglet **services** , choisissez **rapports**.
-2. Sélectionnez  **rapports** , puis choisissez d'  **afficher les identificateurs anonymes pour les noms d’utilisateur, de groupe et de site dans score de productivité et rapports d’utilisation**. Ce paramètre est appliqué à la fois aux rapports d’utilisation ainsi qu’à l’application de modèle.
-3. Sélectionnez  **enregistrer les modifications**.
+1. Dans le centre d’administration, accédez à **Settings** paramètres d'   >   **organisation** paramètres, puis, sous l’onglet **services** , choisissez **rapports** .
+2. Sélectionnez  **rapports** , puis choisissez d'  **afficher les identificateurs anonymes pour les noms d’utilisateur, de groupe et de site dans score de productivité et rapports d’utilisation** . Ce paramètre est appliqué à la fois aux rapports d’utilisation et à l’application de modèle.
+3. Sélectionnez  **enregistrer les modifications** .
 
-:::image type="content" source="../../media/orgsettings_anonymous.jpg" alt-text="Rendez les informations utilisateur anonymes pour les rapports.":::
+:::image type="content" source="../../media/orgsettings_anonymous.jpg" alt-text="Page communications dans les rapports de productivité.":::
 
-## <a name="capability-to-opt-out-of-employee-experience"></a>Possibilité de désactiver l’expérience de l’employé
+## <a name="capability-to-opt-out-of-people-experiences"></a>Possibilité de désactiver les expériences de personnes
 
-Nous allons également permettre de désactiver la zone de productivité de l’employé du score de productivité à la disponibilité générale. Activer ce paramètre permet d’empêcher quiconque de votre organisation de voir ces mesures et de supprimer votre organisation des calculs impliquant des catégories de communication, de réunions, de travail d’équipe, de collaboration de contenu et de mobilité.
+Lorsque le score de productivité est généralement disponible, vous pouvez également désactiver la zone des utilisateurs du score de productivité. Si vous désactivez, personne de l’organisation ne pourra afficher ces mesures et votre organisation est supprimée des calculs qui impliquent la communication, les réunions, le travail d’équipe, la collaboration de contenu et la mobilité.
 
-1. Dans le centre d’administration, accédez à **Settings**paramètres d'   >   **organisation** paramètres, puis, sous l’onglet **services** , choisissez **rapports**.
-2. Sélectionnez  **rapports** , puis désactivez la case à cocher  **partager vos données org&#39;s avec le score de productivité Insights**. Pour comprendre comment modifier les paramètres de partage de données pour l’analyse des points de terminaison dans le gestionnaire de configuration Intune, cliquez sur **en savoir plus**.
-3. Sélectionnez  **enregistrer les modifications**.
+1. Dans le centre d’administration, accédez à **Settings** paramètres d'   >   **organisation** paramètres, puis, sous l’onglet **services** , choisissez **rapports** .
+2. Sélectionnez  **rapports** , puis désactivez la case à cocher  **autoriser l’utilisation des données d’utilisation de Microsoft 365 pour les personnes ayant des idées.** .. Pour comprendre comment modifier les paramètres de partage de données pour l’analyse des points de terminaison dans le gestionnaire de configuration Intune, cliquez sur **en savoir plus** .
+3. Sélectionnez  **enregistrer les modifications** .
 
-:::image type="content" source="../../media/orgsettingspageoptout.jpg" alt-text="Page Paramètres de l’organisation dans laquelle vous pouvez désactiver l’expérience de l’employé.":::
+:::image type="content" source="../../media/orgsettingspageoptout.jpg" alt-text="Page communications dans les rapports de productivité.":::

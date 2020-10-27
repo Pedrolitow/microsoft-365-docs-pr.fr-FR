@@ -19,19 +19,20 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-ms.openlocfilehash: ca13234a93ffcc226be45d337880692a3a39c28b
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: a2650efbac0966b84e6fbfd6ce78cb732f4933b3
+ms.sourcegitcommit: bd36c88e731e3fee2a3a5cb3564fdc94f11bab94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196118"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48769652"
 ---
 # <a name="integrate-servicenow-tickets-into-the-microsoft-365-security-center-and-compliance-center"></a>Intégration des tickets ServiceNow dans le centre de sécurité et le centre de sécurité Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
-[!include[Prerelease information](../includes/prerelease.md)]
+>[!CAUTION]
+>**La période d’aperçu du connecteur ServiceNow se termine**<br>
+>Cette fonctionnalité n’est plus disponible à la fin du 2020 novembre. Nous vous remercions pour vos commentaires et le support technique pendant que nous déterminons les étapes suivantes.
 
 ServiceNow est une plateforme de Cloud Computing populaire qui permet aux entreprises de gérer les flux de travail numériques pour les opérations d’entreprise. La plate-forme actuelle possède des flux de travail informatiques, des flux de travail d’employés et des flux de travail client. [En savoir plus sur ServiceNow](https://www.servicenow.com/)
 
@@ -77,7 +78,7 @@ Pour savoir comment vous connecter à ServiceNow, accédez à [la création et a
 
 ### <a name="you-receive-an-error-in-the-first-step-of-the-installation-checklist-oauth-creation"></a>Vous recevez une erreur dans la première étape de la liste de vérification de l’installation (création OAuth)
 
-**Message d’erreur**: l’opération de lecture sur « oauth_entity » de l’étendue « x_mioms_m365ticket » a été refusée en raison de la stratégie d’accès entre les étendues de la table
+**Message d’erreur** : l’opération de lecture sur « oauth_entity » de l’étendue « x_mioms_m365ticket » a été refusée en raison de la stratégie d’accès entre les étendues de la table
 
 L’application part du principe que n’importe quel administrateur de l’instance de ServiceNow peut créer et lire des entités OAuth. Cette erreur peut être due à une personnalisation dans votre instance de ServiceNow qui limite la création ou la lecture d’entités OAuth.
 
@@ -92,7 +93,7 @@ Définissez les configurations des tables « registres des applications » sur
 
 ### <a name="how-to-validate-the-oauth-entity-created-for-microsoft-365-security--compliance-connector"></a>Procédure de validation de l’entité OAuth créée pour Microsoft 365 Security & Compliance Connector
 
-Accédez à la table des registres des applications (**Menu > système OAuth > application Registry**) dans ServiceNow. Recherchez l’entité OAuth que vous avez créée, avec le nom que vous lui avez attribué.
+Accédez à la table des registres des applications ( **Menu > système OAuth > application Registry** ) dans ServiceNow. Recherchez l’entité OAuth que vous avez créée, avec le nom que vous lui avez attribué.
 
 ### <a name="signing-in-as-the-integration-user"></a>Connexion en tant qu’utilisateur de l’intégration
 
@@ -106,7 +107,7 @@ Avant d’autoriser la connexion entre le centre de sécurité Microsoft 365 et 
 
 ### <a name="how-to-validate-the-integration-user-created-with-the-installation-checklist-for-microsoft-365-security--compliance-connector"></a>Procédure de validation de l’utilisateur d’intégration créé avec la liste de vérification d’installation pour le connecteur de sécurité & conformité Microsoft 365
 
-Accédez à la table utilisateurs **(Menu > l’administration des utilisateurs > les utilisateurs**) dans ServiceNow et recherchez l’utilisateur d’intégration que vous avez créé, avec le nom que vous lui avez attribué.
+Accédez à la table utilisateurs **(Menu > l’administration des utilisateurs > les utilisateurs** ) dans ServiceNow et recherchez l’utilisateur d’intégration que vous avez créé, avec le nom que vous lui avez attribué.
 
 ### <a name="your-company-has-single-sign-on-enabled-which-prevents-you-from-connecting-to-servicenow-through-the-microsoft-365-security-center"></a>Votre entreprise a activé l’authentification unique, ce qui vous empêche de vous connecter à ServiceNow via le centre de sécurité Microsoft 365
 

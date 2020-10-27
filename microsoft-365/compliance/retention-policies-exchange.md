@@ -17,16 +17,30 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir le fonctionnement de la rétention pour Exchange.
-ms.openlocfilehash: e12f46b68feb4b64ade14cfb046061d89e1a607c
-ms.sourcegitcommit: 916fa2dacbc13287b49823176375259d7af03f86
+ms.openlocfilehash: 4e8a536aaa81b0117f40b0ce330491fa8430f97c
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47394711"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754434"
 ---
 # <a name="learn-about-retention-for-exchange"></a>Découvrir la rétention pour Exchange
 
-Les informations contenues dans cet article complètent l’article [Découvrir la rétention](retention.md) car elles contiennent des informations spécifiques à Exchange.
+Les informations contenues dans cet article complètent l’article [Découvrir la rétention](retention.md) car elles contiennent des informations spécifiques à Exchange.  Pour les autres charges de travail, consultez:
+
+- [En savoir plus sur la rétention dans SharePoint et OneDrive](retention-policies-sharepoint.md)
+- [En savoir plus sur la rétention dans Microsoft Teams](retention-policies-teams.md)
+- [Découvrir la rétention pour Yammer](retention-policies-yammer.md)
+
+## <a name="whats-included-for-retention-and-deletion"></a>Éléments composant la rétention et la suppression
+
+Ces éléments Exchange peuvent être conservés et supprimés à l’aide de stratégies de rétention et d’étiquettes de rétention: les courriers électroniques (y compris les brouillons) avec toutes les pièces jointes, les tâches lorsqu’elles ont une date de fin et des notes. 
+
+Les éléments de calendrier qui ont une date de fin sont prises en charge pour les stratégies de rétention, mais ne sont pas pris en charge pour les étiquettes de rétention.
+
+Les contacts, ainsi que les tâches et les éléments de calendrier qui n’ont pas de date de fin ne sont pas pris en charge.
+
+Les autres éléments stockés dans une boîte aux lettres, tels que les messages Skype et Teams, ne sont pas inclus dans les stratégies ou étiquettes de rétention de Exchange. Ces éléments ont leurs propres stratégies de rétention.
 
 ## <a name="how-retention-works-for-exchange"></a>Fonctionnement de la rétention pour Exchange
 
