@@ -6,11 +6,13 @@
 |Canada                       |CAN     |Centres de données situés aux États-Unis                    |
 |Europe / Moyen-Orient / Afrique|EUR     |Centres de données situés en Europe                |
 |France                       |FRA     |Centres de données situés en Europe                |
+|Allemagne                      |DEU     |Centres de données situés en Europe                |
 |Inde                        |IND     |Centres de données situés en Asie de l’Est ou du Sud-Est|
 |Japon                        |JPN     |Centres de données situés en Asie de l’Est ou du Sud-Est|
 |Corée                        |KOR     |Centres de données situés en Asie de l’Est ou du Sud-Est|
 |Amérique du Nord                |NAM     |Centres de données situés aux États-Unis                    |
-|Afrique du Sud                 |ZAF     |(emplacement des données eDiscovery bientôt disponible)|
-|Suisse                  |CHE     |(emplacement des données eDiscovery bientôt disponible)|
-|Émirats arabes unis         |ARE     |(emplacement des données eDiscovery bientôt disponible)|
+|Norvège                       |AFTERUPDATE     |(emplacement des données eDiscovery bientôt disponible)|
+|Afrique du Sud                 |ZAF     |Centres de données situés en Asie de l’Est ou du Sud-Est|
+|Suisse                  |CHE     |Centres de données situés en Europe                |
+|Émirats arabes unis         |ARE     |Centres de données situés en Asie de l’Est ou du Sud-Est|
 |Royaume-Uni               |GBR     |Centres de données situés en Europe                |

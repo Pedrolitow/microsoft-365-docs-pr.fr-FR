@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: .
-ms.openlocfilehash: c1a7cd4d8f00c9e2433601903efd1fba7bb587f9
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: dff2ea4e144f8f8fcc0f42732141e110effe7e9e
+ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681731"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48774092"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>Contrôler le transfert automatique du courrier électronique externe dans Microsoft 365
 
@@ -35,30 +35,34 @@ Les types de transferts automatiques suivants sont disponibles dans Microsoft 36
 
 Vous pouvez utiliser des stratégies de filtrage du courrier indésirable sortant pour contrôler le transfert automatique vers des destinataires externes. Trois paramètres sont disponibles :
 
-- **Automatique**: le transfert externe automatique est bloqué. Le transfert automatique interne des messages continuera à fonctionner. Il s’agit du paramètre par défaut.
-- **Activé : le**transfert externe automatique est autorisé et non restreint.
-- **Off**: le transfert externe automatique est désactivé et entraîne une notification d’échec de remise (également appelée notification de non-remise) à l’expéditeur.
+- **Automatique** : le transfert externe automatique est bloqué. Le transfert automatique interne des messages continuera à fonctionner. Il s’agit du paramètre par défaut.
+
+- **Activé : le** transfert externe automatique est autorisé et non restreint.
+
+- **Off** : le transfert externe automatique est désactivé et entraîne une notification d’échec de remise (également appelée notification de non-remise) à l’expéditeur.
 
 Pour obtenir des instructions sur la configuration de ces paramètres, consultez la rubrique [configuration du filtrage du courrier indésirable sortant dans EOP](configure-the-outbound-spam-policy.md).
 
-**Remarques**:
-
-- La désactivation du transfert automatique désactive également les règles de boîte de réception qui redirigent les messages vers des adresses externes.
-
-- Le transfert automatique des messages entre les utilisateurs internes n’est pas affecté par les paramètres des stratégies de filtrage du courrier indésirable sortant.
-
-- Vous pouvez afficher des informations sur les utilisateurs qui transfèrent automatiquement des messages à des destinataires externes dans le [rapport de messages transférés](mfi-auto-forwarded-messages-report.md)automatiquement.
+> [!NOTE]
+> 
+> - La désactivation du transfert automatique désactive également les règles de boîte de réception qui redirigent les messages vers des adresses externes.
+> 
+>   Office 365 n’autorise pas le transfert externe automatique par les règles de boîte de réception ou la configuration des boîtes aux lettres, ce qui fournit une stratégie par défaut sécurisée. Toutefois, l’administrateur peut modifier ces paramètres pour tous les utilisateurs de l’organisation. Créez des [stratégies de courrier indésirable sortant](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-the-outbound-spam-policy?view=o365-worldwide&preserve-view=true#use-the-security--compliance-center-to-create-outbound-spam-policies) et modifiez la section transfert automatique pour contrôler le transfert automatique des messages par les utilisateurs vers des expéditeurs externes. Celle-ci peut être appliquée ultérieurement aux expéditeurs internes auxquels la stratégie s’applique. Le transfert de messages entre les utilisateurs internes n’est pas affecté par une telle modification.
+> 
+> - Vous pouvez afficher des informations sur les utilisateurs qui transfèrent automatiquement des messages à des destinataires externes dans le [rapport de messages transférés](mfi-auto-forwarded-messages-report.md)automatiquement.
 
 ## <a name="how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls"></a>Fonctionnement des paramètres de stratégie de filtrage du courrier indésirable sortant avec d’autres contrôles de transfert automatique du courrier
 
 En tant qu’administrateur, vous avez peut-être déjà configuré d’autres contrôles pour autoriser ou bloquer le transfert automatique du courrier électronique. Par exemple :
 
 - [Domaines distants](https://docs.microsoft.com/exchange/mail-flow-best-practices/remote-domains/remote-domains) pour autoriser ou bloquer le transfert du courrier automatique vers certains ou tous les domaines externes.
+
 - Conditions et actions dans les [règles de flux de messagerie](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) Exchange (également appelées règles de transport) pour détecter et bloquer les messages transférés automatiquement vers des destinataires externes.
 
 Les paramètres des domaines distants et les règles de flux de messagerie sont indépendants des paramètres des stratégies de filtrage du courrier indésirable sortant. Par exemple :
 
 - Vous autorisez le transfert automatique pour un domaine distant, mais vous bloquez le transfert automatique dans les stratégies de filtrage du courrier indésirable sortant. Dans cet exemple, les messages transférés automatiquement sont bloqués.
+
 - Vous autorisez le transfert automatique dans les stratégies de filtrage du courrier indésirable sortant, mais vous utilisez des règles de flux de messagerie ou des paramètres de domaine distant pour bloquer le transfert automatique du courrier électronique. Dans cet exemple, les règles de flux de messagerie ou les paramètres de domaine distant bloquent les messages transférés automatiquement.
 
 Cette indépendance de fonctionnalité vous permet (par exemple) d’autoriser le transfert automatique dans les stratégies de filtrage du courrier indésirable sortant, mais d’utiliser des domaines distants pour contrôler les domaines externes vers lesquels les utilisateurs peuvent transférer des messages.

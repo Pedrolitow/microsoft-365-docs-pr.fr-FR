@@ -15,22 +15,24 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Vue d’ensemble de la connectivité réseau dans le centre d’administration Microsoft 365 (version d’évaluation)
-ms.openlocfilehash: fcc70f7c76b92ecf113158cdac8eecdfb9852351
-ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
+ms.openlocfilehash: d7ccbad83bbe0b6c3b88001c285db370afcb8510
+ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48456422"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48774080"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Connectivité réseau dans le centre d’administration Microsoft 365 (version d’évaluation)
 
 Le centre d’administration Microsoft 365 inclut désormais des métriques de connectivité réseau regroupées collectées à partir de votre client Microsoft 365 et disponibles uniquement par les utilisateurs administratifs de votre client.
 
-![Outil de test de connectivité réseau](../media/m365-mac-perf/m365-mac-perf-admin-center.png)
+> [!div class="mx-imgBorder"]
+> ![Outil de test de connectivité réseau](../media/m365-mac-perf/m365-mac-perf-admin-center.png)
 
-Les **évaluations réseau** et les informations sur le **réseau** s’affichent dans le centre d’administration Microsoft 365 sous **intégrité | Connectivité**.
+Les **évaluations réseau** et les informations sur le **réseau** s’affichent dans le centre d’administration Microsoft 365 sous **intégrité | Connectivité** .
 
-![Page des performances du réseau](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
+> [!div class="mx-imgBorder"]
+> ![Page des performances du réseau](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
 
 >[!NOTE]
 >L’outil de test de connectivité réseau prend en charge les clients dans le commerce WW et l’Allemagne, mais pas dans les GCC modérés, GCC High, DoD ou Chine.
@@ -49,7 +51,7 @@ Même si la connectivité réseau peut être évaluée au sein de l’organisati
 
 Pour cette option, vous devez disposer d’au moins deux ordinateurs en cours d’exécution à chaque emplacement de bureau qui prennent en charge les conditions préalables. OneDrive pour Windows version **19,232** ou ultérieure doit être installé sur chaque ordinateur. Pour plus d’informations sur les versions de OneDrive, consultez les [notes de publication de onedrive](https://support.office.com/article/onedrive-release-notes-845dcf18-f921-435e-bf28-4e24b95e5fc0). Les mesures du réseau sont planifiées pour être ajoutées dans d’autres applications clientes Office 365 dans un futur proche.
 
-Le service d’emplacement Windows doit être accepté sur les ordinateurs. Vous pouvez le tester en exécutant l’application **Maps** et en vous localisant. Il peut être activé sur un seul ordinateur avec les **paramètres | Confidentialité | Emplacement** où le paramètre _autoriser les applications à accéder à votre emplacement_ doit être activé. Le consentement des services d’emplacement Windows peut être déployé sur des PC à l’aide de MDM ou de la stratégie de groupe avec le paramètre _LetAppsAccessLocation_.
+Le service d’emplacement Windows doit être accepté sur les ordinateurs. Vous pouvez le tester en exécutant l’application **Maps** et en vous localisant. Il peut être activé sur un seul ordinateur avec les **paramètres | Confidentialité | Emplacement** où le paramètre _autoriser les applications à accéder à votre emplacement_ doit être activé. Le consentement des services d’emplacement Windows peut être déployé sur des PC à l’aide de MDM ou de la stratégie de groupe avec le paramètre _LetAppsAccessLocation_ .
 
 Vous n’avez pas besoin d’ajouter des emplacements dans le centre d’administration avec cette méthode, car ils sont automatiquement identifiés à la résolution de la ville. Vous ne pouvez pas afficher plusieurs emplacements de bureau dans une ville à l’aide des services d’emplacement Windows. Les informations d’emplacement sont également arrondies à la 300 les mètres les plus proches par 300 mètres avant d’être téléchargés afin de ne pas pouvoir accéder à des informations d’emplacement plus précises.
 
@@ -65,11 +67,11 @@ Vous devez également ajouter des emplacements dans la page connectivité résea
 
 Étant donné que vous ajoutez les emplacements, vous pouvez avoir plusieurs bureaux définis dans une ville.
 
-Les exemples de mesures et les emplacements de bureau doivent commencer à apparaître 24 heures après que ces conditions préalables ont été satisfaites.
+Toutes les mesures de test à partir des ordinateurs clients incluent les informations de sous-réseau LAN, qui sont corrélées avec les détails de l’emplacement du Bureau que vous avez entrés. Les exemples de mesures et les emplacements de bureau doivent commencer à apparaître 24 heures après que ces conditions préalables ont été satisfaites.
 
 ### <a name="3-manually-gather-test-reports-with-the-microsoft-365-network-connectivity-test-tool"></a>3. recueillez manuellement des rapports de test avec l’outil de test de connectivité réseau Microsoft 365
 
-Pour cette option, vous devez identifier une personne à chaque emplacement. Demandez-lui de parcourir le [test de connectivité réseau Microsoft 365](https://connectivity.office.com) sur un ordinateur Windows sur lequel ils disposent d’autorisations d’administration. Sur le site Web, ils doivent se connecter à leur compte Office 365 pour la même organisation dont vous souhaitez voir les résultats. Ensuite, ils doivent cliquer sur **exécuter le test**. Pendant le test, un EXE de test de connectivité est téléchargé. Elles doivent également être ouvertes et exécutées. Une fois les tests terminés, le résultat du test est téléchargé vers Office 365.
+Pour cette option, vous devez identifier une personne à chaque emplacement. Demandez-lui de parcourir le [test de connectivité réseau Microsoft 365](https://connectivity.office.com) sur un ordinateur Windows sur lequel ils disposent d’autorisations d’administration. Sur le site Web, ils doivent se connecter à leur compte Office 365 pour la même organisation dont vous souhaitez voir les résultats. Ensuite, ils doivent cliquer sur **exécuter le test** . Pendant le test, un EXE de test de connectivité est téléchargé. Elles doivent également être ouvertes et exécutées. Une fois les tests terminés, le résultat du test est téléchargé vers Office 365.
 
 Les rapports de test sont liés à un emplacement s’il a été ajouté avec des informations de sous-réseau de réseau local, sinon ils apparaissent uniquement à l’emplacement de la ville.
 
@@ -77,7 +79,7 @@ Les exemples de mesures et les emplacements de bureau doivent commencer à appar
 
 ## <a name="how-do-i-use-this-information"></a>Comment utiliser ces informations ?
 
-**Network Insights**, leurs recommandations de performances et évaluations réseau associées sont destinées à faciliter la conception des périmètres réseau pour vos emplacements de bureau. Chaque vue fournit des détails sur les caractéristiques de performances d’un problème commun spécifique pour chaque emplacement géographique où les utilisateurs accèdent à votre client. **Recommandations** en matière de performances pour chaque modèle Network Insight apporter des modifications de conception de l’architecture réseau spécifique que vous pouvez apporter pour améliorer l’expérience utilisateur liée à la connectivité réseau Microsoft 365. L’évaluation du réseau montre l’impact de la connectivité réseau sur l’expérience utilisateur, ce qui permet de comparer différentes connexions réseau d’emplacement utilisateur.
+**Network Insights** , leurs recommandations de performances et évaluations réseau associées sont destinées à faciliter la conception des périmètres réseau pour vos emplacements de bureau. Chaque vue fournit des détails sur les caractéristiques de performances d’un problème commun spécifique pour chaque emplacement géographique où les utilisateurs accèdent à votre client. **Recommandations** en matière de performances pour chaque modèle Network Insight apporter des modifications de conception de l’architecture réseau spécifique que vous pouvez apporter pour améliorer l’expérience utilisateur liée à la connectivité réseau Microsoft 365. L’évaluation du réseau montre l’impact de la connectivité réseau sur l’expérience utilisateur, ce qui permet de comparer différentes connexions réseau d’emplacement utilisateur.
 
 Les **évaluations de réseau** convertissent un agrégat de nombreuses métriques de performances réseau en un instantané de l’état de votre réseau d’entreprise, représenté par une valeur de points comprise entre 0-100. Les évaluations réseau sont étendues à la fois à l’ensemble du client et à chaque emplacement géographique à partir duquel les utilisateurs se connectent à votre client, ce qui permet aux administrateurs de Microsoft 365 de mieux appréhender instantanément un Gestalt de l’état du réseau de l’entreprise et d’accéder rapidement à un rapport détaillé sur un emplacement Office global.
 
@@ -88,7 +90,8 @@ Les entreprises complexes disposant de plusieurs emplacements de bureau et d’a
 
 ## <a name="enterprise-network-connectivity-challenges"></a>Défis de connectivité du réseau d’entreprise
 
-![Réseau client vers Cloud](../media/m365-mac-perf/m365-mac-perf-first-last-mile.png)
+> [!div class="mx-imgBorder"]
+> ![Réseau client vers Cloud](../media/m365-mac-perf/m365-mac-perf-first-last-mile.png)
 
 De nombreuses entreprises ont des configurations de périmètre réseau qui se sont produites au fil du temps et qui sont principalement conçues pour prendre en charge l’accès aux sites Web des employés où la plupart des sites Web ne sont pas connus à l’avance et ne sont pas approuvés. L’objectif de ce site est d’éviter les attaques de programmes malveillants et de pêche à partir de ces sites Web inconnus. Cette stratégie de configuration réseau, tout en étant utile à des fins de sécurité, peut entraîner une dégradation des performances utilisateur et de l’expérience utilisateur de Microsoft 365.
 
@@ -98,7 +101,7 @@ Les entreprises peuvent améliorer l’expérience utilisateur générale et sé
 
 Microsoft est parfois invité à examiner les problèmes de performances réseau liés à Microsoft 365 pour les grandes entreprises, et ceux-ci ont souvent une cause première liée à l’infrastructure du périmètre du réseau des clients. Lors de la détection d’une cause racine commune d’un problème de périmètre réseau client, nous cherchons à identifier les mesures de test simples qui l’identifient. Un test avec un seuil de mesure qui identifie un problème spécifique est utile, car nous pouvons tester la même mesure dans n’importe quel emplacement, indiquer si cette cause première existe et la partager en tant que Network Insight avec l’administrateur.
 
-Certains aspects du réseau indiquent simplement un problème qui nécessite une nouvelle enquête. Un Network Insight où nous avons suffisamment de tests pour afficher une action corrective spécifique pour corriger la cause principale est mentionné comme une **action recommandée**. Ces recommandations, basées sur des métriques vivantes qui révèlent des valeurs situées en dehors d’un seuil prédéterminé, sont bien plus importantes que les conseils de bonne pratique générale, car ils sont spécifiques à votre environnement et affichent l’amélioration effective une fois que les modifications recommandées ont été apportées.
+Certains aspects du réseau indiquent simplement un problème qui nécessite une nouvelle enquête. Un Network Insight où nous avons suffisamment de tests pour afficher une action corrective spécifique pour corriger la cause principale est mentionné comme une **action recommandée** . Ces recommandations, basées sur des métriques vivantes qui révèlent des valeurs situées en dehors d’un seuil prédéterminé, sont bien plus importantes que les conseils de bonne pratique générale, car ils sont spécifiques à votre environnement et affichent l’amélioration effective une fois que les modifications recommandées ont été apportées.
 
 ## <a name="network-connectivity-overview-in-the-microsoft-365-admin-center"></a>Vue d’ensemble de la connectivité réseau dans le centre d’administration Microsoft 365
 
@@ -106,21 +109,25 @@ Microsoft a des mesures réseau existantes à partir de plusieurs clients de bur
 
 Par défaut, les informations d’emplacement approximatives associées aux mesures du réseau identifient la ville où se trouvent les appareils clients. L’évaluation du réseau à chaque emplacement est illustrée par la couleur et le nombre d’utilisateurs par rapport à chaque emplacement est représenté par la taille du cercle.
 
-![Plan de présentation du réseau](../media/m365-mac-perf/m365-mac-perf-overview-map.png)
+> [!div class="mx-imgBorder"]
+> ![Plan de présentation du réseau](../media/m365-mac-perf/m365-mac-perf-overview-map.png)
 
 La page vue d’ensemble indique également l’évaluation du réseau pour le client sous la forme d’une moyenne pondérée sur tous les bureaux.
 
-![Évaluation du réseau](../media/m365-mac-perf/m365-mac-perf-overview-score.png)
+> [!div class="mx-imgBorder"]
+> ![Évaluation du réseau](../media/m365-mac-perf/m365-mac-perf-overview-score.png)
 
 Vous pouvez afficher un affichage tableau des emplacements où ils peuvent être filtrés, triés et modifiés dans l’onglet emplacements. Les emplacements avec des recommandations spécifiques peuvent également inclure une amélioration potentielle de la latence. Cela est calculé en prenant la latence médiane des utilisateurs de votre organisation à l’emplacement et en soustrayant la latence médiane de toutes les organisations de la même ville.
 
-![Emplacements des informations sur le réseau](../media/m365-mac-perf/m365-mac-perf-locations.png)
+> [!div class="mx-imgBorder"]
+> ![Emplacements des informations sur le réseau](../media/m365-mac-perf/m365-mac-perf-locations.png)
 
 ## <a name="specific-office-location-network-performance-summary-and-insights"></a>Informations spécifiques sur les performances et les informations du réseau d’emplacement de bureau
 
 La sélection d’un emplacement de bureau ouvre une page de résumé spécifique à l’emplacement présentant les détails de la sortie réseau identifiée à partir de mesures pour cet emplacement de bureau.
 
-![Informations sur le réseau, détails par emplacement](../media/m365-mac-perf/m365-mac-perf-locations-plan-overview.png)
+> [!div class="mx-imgBorder"]
+> ![Informations sur le réseau, détails par emplacement](../media/m365-mac-perf/m365-mac-perf-locations-plan-overview.png)
 
 Une carte du réseau de périmètre pour les utilisateurs de votre organisation à l’emplacement apparaît avec une partie ou l’ensemble de ces éléments :
 
@@ -139,7 +146,8 @@ Les comparaisons entre les clients de la même ville sont basées sur l’attent
 
 L’onglet Détails de la page emplacement du Bureau affiche les résultats de mesure spécifiques qui ont été utilisés pour trouver des informations, des recommandations et l’évaluation du réseau. Cela permet aux ingénieurs réseau de valider les recommandations et facteurs dans les contraintes ou les spécificités de leur environnement.
 
-![Détails spécifiques à l’emplacement](../media/m365-mac-perf/m365-mac-perf-locations-plan-details-all.png)
+> [!div class="mx-imgBorder"]
+> ![Détails spécifiques à l’emplacement](../media/m365-mac-perf/m365-mac-perf-locations-plan-details-all.png)
 
 ## <a name="csv-import-for-lan-subnet-office-locations"></a>Importation CSV pour les emplacements de sous-réseau LAN
 
@@ -148,26 +156,34 @@ Pour l’identification de sous-réseau local, vous devez ajouter chaque emplace
 Dans le fichier CSV, un emplacement de ville découvert apparaît dans la colonne userEntered comme vierge et un emplacement de bureau ajouté manuellement apparaît sous la forme 1.
 
 1. Dans la fenêtre principale _connectivité à Microsoft 365_ , cliquez sur l’onglet **emplacements** .
+
 1. Cliquez sur le bouton **Importer** situé au-dessus de la liste emplacements. Le menu volant **importer des emplacements de bureau** s’affiche.
 
-   ![Message d’importation CSV](../media/m365-mac-perf/m365-mac-perf-import.png)
+   > [!div class="mx-imgBorder"]
+   > ![Message d’importation CSV](../media/m365-mac-perf/m365-mac-perf-import.png)
 
 1. Cliquez sur le lien **Télécharger les emplacements Office actifs (. csv)** pour exporter la liste des emplacements actuels vers un fichier CSV, puis enregistrez-le sur votre disque dur local. Vous obtiendrez un fichier CSV au format correct avec des en-têtes de colonne vers lesquels vous pouvez ajouter des emplacements. Vous pouvez laisser les emplacements exportés existants comme ils le sont ; elles ne sont pas dupliquées lorsque vous importez le fichier CSV mis à jour. Si vous souhaitez modifier l’adresse d’un emplacement existant, celle-ci est mise à jour lorsque vous importez le fichier CSV. Vous ne pouvez pas modifier l’adresse d’une ville découverte.
+
 1. Ouvrez le fichier CSV et ajoutez vos emplacements en remplissant les champs suivants sur une nouvelle ligne pour chaque emplacement que vous souhaitez ajouter. Laissez tous les autres champs vides ; les valeurs que vous entrez dans d’autres champs seront ignorées.
+
    1. **userEntered** (obligatoire) : doit être 1 pour un nouvel emplacement de bureau de sous-réseau de réseau local
    1. **Address** (Required) : adresse physique de l’Office
    1. **Latitude** (facultatif) : renseigné à partir de la recherche de cartes Bing de l’adresse si vide
    1. **Longitude** (facultative) : renseigné à partir de la recherche de cartes Bing de l’adresse si vide
    1. **Plages d’adresses IP sortantes 1-5** (facultatif) : pour chaque plage, entrez le nom du circuit suivi d’une liste d’adresses CIDR IPv4 ou IPv6 valides séparées par des espaces. Ces valeurs sont utilisées pour différencier plusieurs emplacements Office où vous utilisez les mêmes adresses IP de sous-réseau de réseau local. Les plages d’adresses IP sortantes doivent être/24 de la taille du réseau et le/24 n’est pas inclus dans l’entrée.
    1. **LanIps** (obligatoire) : répertoriez les plages de sous-réseau LAN utilisées à cet emplacement de bureau. Les ID de sous-réseau LAN doivent avoir une taille de réseau CIDR où la taille du réseau peut être comprise entre/8 et/29. Plusieurs plages de sous-réseau LAN peuvent être séparées par une virgule ou un point-virgule.
+   
 1. Une fois que vous avez ajouté vos emplacements de bureau et enregistré le fichier, cliquez sur le bouton **Parcourir** en regard du champ **charger le champ terminé** , puis sélectionnez le fichier csv enregistré.
+
 1. Le fichier sera automatiquement validé. S’il existe des erreurs de validation, le message d’erreur indique que _le fichier d’importation contient des erreurs. Examinez les erreurs, corrigez le fichier d’importation, puis réessayez._ Cliquez sur le lien Détails de l' **erreur Open** pour obtenir la liste des erreurs de validation de champ spécifiques.
 
-   ![Message d’erreur d’importation CSV](../media/m365-mac-perf/m365-mac-perf-import-error.png)
+   > [!div class="mx-imgBorder"]
+   > ![Message d’erreur d’importation CSV](../media/m365-mac-perf/m365-mac-perf-import-error.png)
 
 1. S’il n’y a pas d’erreurs dans le fichier, le message _le rapport est prêt. Emplacements trouvés x à ajouter et emplacements à mettre à jour._ Cliquez sur le bouton **Importer** pour charger le fichier CSV.
 
-   ![Message d’importation CSV prêt](../media/m365-mac-perf/m365-mac-perf-import-ready.png)
+   > [!div class="mx-imgBorder"]
+   > ![Message d’importation CSV prêt](../media/m365-mac-perf/m365-mac-perf-import-ready.png)
 
 ## <a name="faq"></a>FAQ
 
