@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: Lorsque vous êtes connecté avec des comptes professionnels ou scolaires valides, les utilisateurs peuvent obtenir des services d’assistance en nuage avec Cortana dans les expériences Microsoft 365 qui répondent aux engagements de confidentialité, de sécurité et de conformité au niveau de l’entreprise d’Office 365.
-ms.openlocfilehash: e7464525774e15d5b54f1b2321948aef5d998558
-ms.sourcegitcommit: c692bdc186fb29499816e8bb2addcddef34d23d3
+ms.openlocfilehash: aaef43f33bb06bf43d5e68fbc2509686fc8dd371
+ms.sourcegitcommit: 16cbac5eacadd7b30cbca1fd2435ba9098de5e1c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46818300"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48785537"
 ---
 # <a name="cortana-in-microsoft-365"></a>Cortana dans Microsoft 365
 
@@ -61,7 +61,7 @@ Le tableau ci-dessous décrit la gestion des données pour les services d’entr
 |**Reste dans la zone géographique**  <br/> |Les données client sont stockées sur des serveurs Microsoft dans le nuage Office 365 dans la zone géographique. Vos données font partie de votre client.  <br/> |
 |**Rétention**  <br/> |Les données client sont supprimées lorsque le compte est fermé par l’administrateur client ou lorsqu’une demande de suppression des droits des données RGPD est effectuée. <br/><br/>La fonctionnalité audio vocale n’est pas conservée.  <br/> |
 |**Traitement et confidentialité**  <br/> |Les membres du personnel impliqués dans le traitement des données personnelles et des données personnelles (i) ne traiteront ces données qu’avec des instructions de la part du client et (II) seront obligés de maintenir la confidentialité et la sécurité de ces données même après l’expiration de leur engagement.  <br/> |
-|**Utilisation**  <br/> |Microsoft utilise les données client uniquement pour fournir les services approuvés et à des fins compatibles avec ces services. L’apprentissage automatique pour développer et améliorer des modèles est l’un de ces rôles. L’apprentissage automatique est réalisé dans le nuage Office 365 et il n’y a pas d’affichage, de révision ou d’étiquetage de vos données client. <br/><br/>Vos données ne sont pas utilisées pour cibler la publicité.  <br/> |
+|**Usage**  <br/> |Microsoft utilise les données client uniquement pour fournir les services approuvés et à des fins compatibles avec ces services. L’apprentissage automatique pour développer et améliorer des modèles est l’un de ces rôles. L’apprentissage automatique est réalisé dans le nuage Office 365 et il n’y a pas d’affichage, de révision ou d’étiquetage de vos données client. <br/><br/>Vos données ne sont pas utilisées pour cibler la publicité.  <br/> |
 
 ## <a name="cortana-enterprise-services-in-microsoft-365-experiences"></a>Services d’entreprise de Cortana dans les expériences Microsoft 365
 
@@ -83,25 +83,25 @@ Les administrateurs peuvent configurer Cortana dans Windows 10 pour leur organis
 
 ### <a name="cortana-voice-assistance-in-teams"></a>Assistance vocale Cortana dans teams
 
-L’assistance vocale de Cortana dans l’application mobile teams permet aux utilisateurs de Microsoft 365 Enterprise de rationaliser les tâches de communication, de collaboration et de réunion à l’aide de la langue parlée. Les utilisateurs peuvent parler à Cortana en cliquant sur le bouton du microphone situé dans le coin supérieur droit de l’application mobile Teams. Ils peuvent se connecter avec quelqu’un lorsqu’ils sont en déplacement en faisant une requête vocale telle que « appeler Megan » ou « envoyer un message à ma réunion suivante ». Les utilisateurs peuvent également participer à des réunions en disant « participer à ma réunion suivante » et utiliser l’assistance vocale pour partager des fichiers, vérifier leur calendrier, et bien plus encore. Ces expériences d’assistance vocale sont fournies à l’aide de services de niveau entreprise de Cortana conformes aux engagements de confidentialité, de sécurité et de conformité d’Office 365, comme indiqué dans les [services en ligne (OST)](https://www.microsoft.com/licensing/product-licensing/products).
+L’assistance vocale Cortana dans l’application mobile teams et les appareils d’affichage de Microsoft teams permet aux utilisateurs de Microsoft 365 Enterprise de rationaliser les tâches de communication, de collaboration et de réunion à l’aide de la langue parlée. Les utilisateurs peuvent parler à Cortana en sélectionnant le bouton microphone situé dans le coin supérieur droit de l’application mobile teams ou en disant &#8220;Cortana&#8221; dans l’affichage de Microsoft Teams. Pour vous connecter rapidement avec son équipe et Pendant que vous êtes en déplacement, les utilisateurs peuvent dire des requêtes telles qu' &#8220;appeler Megan&#8221; ou &#8220;envoyer un message à mon prochain&#8221; de réunion. Les utilisateurs peuvent également participer à des réunions en disant &#8220;rejoindre mon prochain&#8221; de réunion et utiliser l’assistance vocale pour partager des fichiers, vérifier leur calendrier, et bien plus encore. Ces expériences d’assistance vocale sont fournies à l’aide de services de niveau entreprise de Cortana conformes aux engagements de confidentialité, de sécurité et de conformité d’Office 365, comme indiqué dans les [services en ligne (OST)](https://www.microsoft.com/licensing/product-licensing/products).
 
 **Contrôle d’administration**
 
-L’assistance vocale de Cortana est activée par défaut pour les clients. Les administrateurs peuvent contrôler les personnes qui peuvent utiliser l’assistance vocale Cortana dans teams via une stratégie (TeamsCortanaPolicy). Cette stratégie peut être définie au niveau d’un compte d’utilisateur ou d’un client. Les administrateurs peuvent également utiliser le champ CortanaVoiceInvocationMode dans ce contrôle de stratégie pour déterminer si Cortana est désactivée, activée uniquement avec l’appel de bouton de commande, ou si elle est activée avec l’appel de mise en éveil de Word également (applicable aux appareils qui la prennent en charge). Notez que lors de la publication de la version initiale pour les utilisateurs d’entreprise 365 de Microsoft aux États-Unis en anglais, l’application mobile Teams ne prend pas en charge l’activation de Word Wake, mais elle sera prise en charge à l’avenir.
+L’assistance vocale de Cortana est activée par défaut pour les clients. Les administrateurs peuvent contrôler les personnes qui peuvent utiliser l’assistance vocale Cortana dans teams via une stratégie (TeamsCortanaPolicy). Cette stratégie peut être définie au niveau d’un compte d’utilisateur ou d’un client. Les administrateurs peuvent également utiliser le champ CortanaVoiceInvocationMode à l’intérieur de ce contrôle de stratégie pour déterminer si Cortana est désactivée, activée uniquement avec l’appel de bouton de commande, ou si elle est activée avec l’appel de mise en éveil de Word également (applicable aux appareils qui la prennent en charge, tels que Microsoft Teams). Notez que lors de la publication de la version initiale pour les utilisateurs d’entreprise 365 de Microsoft aux États-Unis en anglais, l’application mobile Teams ne prend pas en charge l’activation de Word Wake, mais elle sera prise en charge à l’avenir.
 
 **Contrôle utilisateur**
 
-Les utilisateurs individuels peuvent tester l’assistance vocale Cortana dans l’application mobile teams en cliquant sur le bouton micro. Ils peuvent également contrôler si Cortana dans teams est activée pour son appareil via un paramètre de l’application mobile teams : 
+Les utilisateurs individuels peuvent tester l’assistance vocale Cortana dans l’application mobile teams en cliquant sur le bouton micro. Ils peuvent tester l’assistance vocale Cortana sur les appareils d’affichage de Microsoft teams en disant simplement à &#8220;Cortana. &#8221; ils peuvent également contrôler si Cortana dans teams est activée pour son appareil via un paramètre dans l’application mobile teams ou sur l’affichage de Microsoft teams : 
 
-1. Ouvrez l’application mobile Teams.
+1. Ouvrez l’application mobile teams ou accédez à l’écran ambiant (accueil) de Microsoft Teams.
 
-2. Accédez à **paramètres**.
+2. Dans l’application mobile Teams, accédez à **paramètres** . Dans l’affichage de Microsoft Teams, sélectionnez avatar de l’utilisateur, puis sélectionnez Paramètres. Si Cortana est activée, par exemple, &#8220;Cortana, accédez à paramètres. &#8221;
 
-3. Sélectionnez **Cortana**.
+3. Sélectionnez **Cortana** .
 
-4. Déplacez le bouton bascule sur activé ou désactivé, selon que vous souhaitez ou non l’assistance vocale de Cortana sur cet appareil.
+4. Déplacez le bouton bascule sur **activé** ou **désactivé** , selon que vous souhaitez ou non l’assistance vocale de Cortana sur l’appareil.
 
-[En savoir plus sur l’assistance vocale de Cortana dans teams](https://support.microsoft.com/en-us/office/using-cortana-voice-assistance-in-teams-274bb2f0-d962-4182-b45d-307435cea256?ui=en-us&rs=en-us&ad=us)
+[En savoir plus sur l’assistance vocale de Cortana dans teams](https://docs.microsoft.com/microsoftteams/cortana-in-teams)
 
 ### <a name="play-my-emails"></a>Lire mes courriers électroniques
 
@@ -115,9 +115,9 @@ Les utilisateurs peuvent choisir de lire mes courriers électroniques en suivant
 
 1. Ouvrez Outlook Mobile.
 
-2. Accédez à **paramètres**.
+2. Accédez à **paramètres** .
   
-3. Sélectionnez **lire mes courriers électroniques**.
+3. Sélectionnez **lire mes courriers électroniques** .
 
 4. Déplacez le bouton bascule sur désactivé sur les comptes que vous souhaitez désactiver.
 
@@ -141,7 +141,7 @@ Nous continuerons à introduire d’autres expériences comme celles ci-dessus p
 
 Voici les deux façons de penser au fonctionnement de Cortana dans votre entreprise :
 
-**Nouvelles expériences pour les organisations avec les services Cortana Enterprise**: les services d’entreprise de Cortana sont conçus pour répondre aux besoins de sécurité et de conformité des organisations : 
+**Nouvelles expériences pour les organisations avec les services Cortana Enterprise** : les services d’entreprise de Cortana sont conçus pour répondre aux besoins de sécurité et de conformité des organisations : 
 
 1. Il s’agit d’un nouveau service qui est abordé ici dans ce document.
 
@@ -151,7 +151,7 @@ Voici les deux façons de penser au fonctionnement de Cortana dans votre entrepr
 
 4. Les administrateurs informatiques disposent toujours de contrôles pour les expériences connectées facultatives pour Cortana, similaires aux expériences en connexion facultatives lors de l’utilisation d’applications Office ProPlus.  
 
-**Services existants pour les consommateurs**: les services connectés facultatifs de Cortana sont conçus principalement pour les expériences de consommation et sont actuellement fournis dans Windows 10 (version 1909 et antérieures) et l’application Cortana sur iOS et Android.
+**Services existants pour les consommateurs** : les services connectés facultatifs de Cortana sont conçus principalement pour les expériences de consommation et sont actuellement fournis dans Windows 10 (version 1909 et antérieures) et l’application Cortana sur iOS et Android.
 
 1. Ces expériences activent des fonctionnalités telles que la météo, les actualités et le trafic.
 
@@ -159,10 +159,10 @@ Voici les deux façons de penser au fonctionnement de Cortana dans votre entrepr
 
 Désactiver l’accès Cortana aux données hébergées par Microsoft de votre organisation
 
-1. Dans le centre d’administration 365 de Microsoft **Settings**, sélectionnez Paramètres d'  >  **organisation** des paramètres et sélectionnez **Cortana**.
+1. Dans le centre d’administration 365 de Microsoft **Settings** , sélectionnez Paramètres d'  >  **organisation** des paramètres et sélectionnez **Cortana** .
 
 2. Désélectionnez la case à cocher **autoriser Cortana dans Windows 10 (version 1909 et antérieures) et l’application Cortana sur iOS et Android pour accéder aux données hébergées par Microsoft pour les personnes de votre organisation** afin de désactiver les expériences connectées à Cortana.
 
-3. Sélectionnez **Enregistrer les modifications**.
+3. Sélectionnez **Enregistrer les modifications** .
 
 Pour les services régis par le [contrat de services Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=2109174) et la [déclaration de confidentialité Microsoft](https://privacy.microsoft.com/privacystatement), Microsoft est le contrôleur de données. En tant que contrôleur de données, Microsoft utilise des données pour améliorer les produits et les services conformément à la [déclaration de confidentialité de Microsoft](https://privacy.microsoft.com/privacystatement).
