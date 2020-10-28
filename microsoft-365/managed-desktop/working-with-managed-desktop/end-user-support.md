@@ -1,7 +1,7 @@
 ---
 title: Obtenir de l’aide pour le bureau géré Microsoft
 description: ''
-keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 8af782095ada41f0472e1df338ced7ebe76c97fe
-ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
+ms.openlocfilehash: 5b09b59efa6862782b04b7aa58d7c1fdc0383bb0
+ms.sourcegitcommit: 21c3e44862854c74e4008cfb661840f069c6b709
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48104411"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48787533"
 ---
 # <a name="getting-help-for-users"></a>Obtenir de l’aide pour les utilisateurs
 
@@ -25,14 +25,17 @@ Les utilisateurs de votre organisation peuvent obtenir de l’aide sur leurs app
 
 ## <a name="get-help-app"></a>Obtenir une application d’aide
 
-La méthode préférée pour fournir un support technique à vos utilisateurs est obtenir de l' **aide**, une interface facile à utiliser intégrée au périphérique utilisateur.  
+La méthode préférée pour fournir un support technique à vos utilisateurs est obtenir de l' **aide** , une interface facile à utiliser intégrée au périphérique utilisateur.  
 
 ![Icône obtenir une application d’aide](../../media/get-help.png)
 
 Il s’agit d’une application installée sur tous les appareils de bureau gérés par Microsoft et qui est épinglée à la barre des tâches. 
 
-- les utilisateurs peuvent demander un appel vers un numéro de téléphone fourni ou converser en ligne avec un représentant du service.
+- Les utilisateurs peuvent demander un appel vers un numéro de téléphone fourni ou converser en ligne avec un représentant du service.
 - Les demandes qui tombent en dehors de l’étendue prise en charge de bureau géré Microsoft sont redirigées vers le support informatique local via un appel téléphonique.
+
+> [!NOTE]
+> La langue d’affichage de l’application obtenir de l’aide est uniquement en anglais, même si un utilisateur a sélectionné une autre langue lors de la configuration de son appareil ou des paramètres de l’appareil. 
 
 ### <a name="prerequisites"></a>Conditions préalables
 Pour permettre à vos utilisateurs d’obtenir de l’aide par le biais de l’application, assurez-vous que les conditions préalables suivantes sont remplies :
@@ -49,7 +52,7 @@ Si vous avez vérifié ces conditions préalables et que l’application Get Hel
 
 ## <a name="phone-support"></a>Support téléphonique
 
-les utilisateurs disposant d’appareils de bureau gérés par Microsoft ont également accès aux numéros de téléphone gratuits qu’ils peuvent appeler. Cela est destiné à être utilisé lorsque l’aide n’est pas disponible. Par exemple, s’ils ne peuvent pas se connecter à l’appareil, ou si le périphérique est endommagé. Voici les numéros de téléphone pour l’assistance téléphonique :
+Les utilisateurs disposant d’appareils de bureau gérés par Microsoft ont également accès aux numéros de téléphone gratuits qu’ils peuvent appeler. Cela est destiné à être utilisé lorsque l’aide n’est pas disponible. Par exemple, s’ils ne peuvent pas se connecter à l’appareil, ou si le périphérique est endommagé. Voici les numéros de téléphone pour l’assistance téléphonique :
 
 - États-Unis : + 1 855 425 0216
 - Canada (à l’exclusion du Québec) : + 1 855 425 0216
