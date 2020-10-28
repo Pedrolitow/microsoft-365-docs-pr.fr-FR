@@ -20,18 +20,24 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 71316d6c53862b80178d06726f7c249a2491d659
-ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
+ms.openlocfilehash: a7d79684a085072e1af113bc0466ab26574ab904
+ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48769029"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48779231"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Nouveautés de Microsoft Secure score
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 Pour faire en sorte que Microsoft Secure score un meilleur représentant de votre position de sécurité, nous avons apporté des modifications. Pour en savoir plus sur les modifications planifiées, consultez [la rubrique what’s from Microsoft Secure score ?](microsoft-secure-score-whats-coming.md).
+
+## <a name="october-2020"></a>Octobre 2020
+
+### <a name="remove-improvement-action-related-to-microsoft-defender-advanced-threat-protection"></a>Supprimer l’action d’amélioration liée à la protection avancée contre les menaces Microsoft Defender
+
+- Activer la vérification du contenu Web de l’application Windows Store SmartScreen de Microsoft Defender pour avertir
 
 ## <a name="august-2020"></a>Août 2020
 

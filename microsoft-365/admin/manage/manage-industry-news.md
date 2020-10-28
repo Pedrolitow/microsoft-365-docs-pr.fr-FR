@@ -15,16 +15,16 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Fournir à vos utilisateurs des titres d’actualité à jour sur votre secteur d’activité et des informations de votre organisation, utilisez le service News pour activer un flux d’actualités personnalisé pour votre organisation.
-ms.openlocfilehash: 003855e366e8ad4c9e7abdcf1a0c2a53ec49ec2f
-ms.sourcegitcommit: e8b3855302fc34d09b6df6c737033a2f326d6eee
+ms.openlocfilehash: 718e48c9db90ff7e598dd56c0228bb894b7a3a4d
+ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48770084"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48779177"
 ---
 # <a name="manage-industry-news"></a>Gérer les actualités industrielles
 
-Pour fournir à vos utilisateurs des titres d’actualité à jour concernant votre secteur d’activité et des informations de votre organisation, utilisez le service [News](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews) pour activer un flux d’actualités personnalisé pour votre organisation.Vous pouvez également gérer les paramètres de la page d’accueil de Bing.
+Pour fournir à vos utilisateurs des titres d’actualité à jour concernant votre secteur d’activité et des informations de votre organisation, utilisez le service [News](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews) pour activer un flux d’actualités personnalisé pour votre organisation.Vous pouvez également gérer les paramètres de la page d’accueil Bing et de Microsoft Edge New Tab (en commençant par la version de Edge 87).
 
 ## <a name="what-your-users-will-see"></a>Ce que les utilisateurs verront
 
@@ -40,23 +40,25 @@ Ils peuvent également consulter les informations de travail de l’entreprise, 
 
 ## <a name="news-settings"></a>Paramètres des actualités
 
-En tant qu’administrateur, vous contrôlez les paramètres du flux d’actualités de votre organisation, y compris le secteur d’activité et la page d’accueil Bing, ainsi que la page Microsoft Edge de l’onglet nouveau.
-
-
+En tant qu’administrateur, vous contrôlez les paramètres de flux de discussion pour votre organisation, y compris le secteur d’accueil sélectionné et la page d’accueil Bing, ainsi que la page Microsoft Edge New Tab (en commençant par la version de Edge 87).
 
 1. Dans le centre d’administration Microsoft 365, accédez à **paramètres**  >  **org Settings**  >  **services**  >  [News](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews)
 2. Dans le panneau **News** , cliquez sur l’onglet **général** .
 3. Dans la liste **secteur d’activité** , sélectionnez les industries de votre organisation. Cela permet de déterminer les informations générales qui apparaissent dans le nouveau flux de votre organisation. Microsoft peut présélectionner un secteur d’activité à l’aide des informations de votre compte. Vous pouvez supprimer ou ajouter des secteurs d’activité en mettant à jour la liste des secteurs d’activité.
 4. Dans le champ **rubriques** , entrez les rubriques qui vous intéressent. Vos utilisateurs ne pourront pas modifier ces rubriques.
-5. Vous pouvez bloquer les articles et les mots clés dans le champ **exclure le contenu** . Par exemple, pour éviter que des articles contenant le mot clé « cuisson » ne s’affichent dans le flux d’informations, ajoutez le mot clé « cuisson » dans le champ exclure le contenu. Évitez d’inclure des termes généraux (le, le, etc.), ils peuvent bloquer le contenu pertinent dans vos flux de discussion d’entreprise.
+5. Vous pouvez bloquer les articles contenant des mots clés dans le champ **exclure le contenu** .  Par exemple, pour éviter que les articles contenant le mot clé « cuisson » s’affichent dans le flux d’actualités, ajoutez le mot clé « cuisson » dans le champ exclure le contenu. Évitez d’inclure des termes généraux (le, le, etc.), ils peuvent bloquer le contenu pertinent dans vos flux de discussion d’entreprise.
 6. Sélectionnez **Enregistrer** . L’affichage des modifications peut prendre jusqu’à 24 heures.
 
 ## <a name="bing-homepage"></a>Page d’accueil de Bing
 
-Vous pouvez personnaliser la page d’accueil de Bing pour y inclure des informations sur votre secteur d’activité. Dans le centre d’administration Microsoft 365, accédez à **paramètres**  >  **org Settings**  >  **services**  >  [information](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews). Dans le panneau **News** , cliquez sur l’onglet **page d’accueil Bing** , puis sélectionnez **inclure sur la page d’accueil Bing** . L’actualité du secteur apparaît sous les informations personnalisées de votre organisation sur Bing.com.
+Vous pouvez personnaliser la page d’accueil de Bing pour y inclure des informations sur votre secteur d’activité. 
+
+1. Dans le centre d’administration Microsoft 365, accédez à **paramètres**  >  **org Settings**  >  **services**  >  [information](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews). 
+2. Dans le panneau **News** , cliquez sur l’onglet **page d’accueil Bing** , puis sélectionnez **inclure sur la page d’accueil Bing** .
+3. L’actualité du secteur apparaît sous les informations personnalisées de votre organisation sur Bing.com.
 
 ## <a name="microsoft-edge-new-tab-page"></a>Page nouvelle onglet Microsoft Edge 
-Lorsque vos utilisateurs se connectent à Microsoft Edge avec un compte professionnel ou scolaire valide, ils peuvent voir les actualités adaptées à votre organisation.
+Lorsque vos utilisateurs se connectent à Microsoft Edge (version 87 ou supérieure) avec un compte professionnel ou scolaire valide, ils peuvent voir les actualités adaptées à votre organisation.
 
 1. Dans le centre d’administration Microsoft 365, accédez à **paramètres**  >  **org Settings**  >  **services**  >  [information](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews).
 2. Dans le panneau **News** , cliquez sur **page nouvelle onglet Microsoft Edge** .
