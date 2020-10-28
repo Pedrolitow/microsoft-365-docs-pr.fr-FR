@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 2ba67f833a7a4ee14b53adf38db786bb344a40bb
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: f0251f783aebd1264facfcbaa23a9b7afa286833
+ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208850"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48774017"
 ---
 # <a name="insider-risk-management-cases"></a>Dossiers de gestion des risques initiés
 
@@ -34,19 +34,19 @@ Après avoir examiné les détails d’un cas, vous pouvez prendre les mesures s
 
 Le **tableau de bord des cas** de gestion des risques Insiders vous permet d’afficher et d’agir sur les incidents. Chaque widget de rapport du tableau de bord affiche des informations pour les 30 derniers jours.
 
-- **Cas actifs**: nombre total de cas actifs en cours d’enquête.
-- **Cas au cours des 30 derniers jours**: nombre total de cas créés, triés par état *actif* et *fermé* .
-- **Statistics**: durée moyenne des cas actifs, indiquée en heures, jours ou mois.
+- **Cas actifs** : nombre total de cas actifs en cours d’enquête.
+- **Cas au cours des 30 derniers jours** : nombre total de cas créés, triés par état *actif* et *fermé* .
+- **Statistics** : durée moyenne des cas actifs, indiquée en heures, jours ou mois.
 
 La file d’attente de cas répertorie tous les dossiers actifs et fermés de votre organisation, ainsi que l’état actuel des attributs case suivants :
 
-- **Nom**de la casse : nom de l’incident, défini lorsqu’une alerte est confirmée et que le cas est créé.  
-- **Status**: état *actif* ou *fermé*.
-- **User**: l’utilisateur pour le cas. Si l’anonymisation pour les noms d’utilisateur est activée, les informations anonymes s’affichent.
-- **Date/heure d’ouverture**: temps écoulé depuis l’ouverture du cas.
-- **Total des alertes de stratégie**: nombre de correspondances de stratégie incluses dans le cas. Ce nombre peut augmenter si de nouvelles alertes sont ajoutées au cas.
-- **Dernière mise à jour**: le temps écoulé depuis qu’il y a eu une remarque de cas ajoutée ou modifié dans l’état du cas.
-- **Dernière mise à jour par**: le nom de l’analyste ou de l’investigateur de gestion des risques Insiders qui a mis à jour le cas.
+- **Nom** de la casse : nom de l’incident, défini lorsqu’une alerte est confirmée et que le cas est créé.  
+- **Status** : état *actif* ou *fermé* .
+- **User** : l’utilisateur pour le cas. Si l’anonymisation pour les noms d’utilisateur est activée, les informations anonymes s’affichent.
+- **Date/heure d’ouverture** : temps écoulé depuis l’ouverture du cas.
+- **Total des alertes de stratégie** : nombre de correspondances de stratégie incluses dans le cas. Ce nombre peut augmenter si de nouvelles alertes sont ajoutées au cas.
+- **Dernière mise à jour** : le temps écoulé depuis qu’il y a eu une remarque de cas ajoutée ou modifié dans l’état du cas.
+- **Dernière mise à jour par** : le nom de l’analyste ou de l’investigateur de gestion des risques Insiders qui a mis à jour le cas.
 
 ![Tableau de bord des cas de gestion des risques Insiders](../media/insider-risk-cases-dashboard.png)
 
@@ -58,11 +58,11 @@ Utilisez le contrôle de **recherche** pour rechercher des noms de cas spécifiq
 
 ## <a name="filter-cases"></a>Filtrer les cas
 
-Selon le nombre et le type de stratégies de gestion des risques Insider actives au sein de votre organisation, il peut s’avérer difficile de vérifier une grande file d’attente de cas. L’utilisation de filtres case peut aider les analystes et les enquêteurs à trier les cas en plusieurs attributs. Pour filtrer les alertes dans le **tableau de bord incidents**, sélectionnez le contrôle de **filtre** . Vous pouvez filtrer les incidents par un ou plusieurs attributs :
+Selon le nombre et le type de stratégies de gestion des risques Insider actives au sein de votre organisation, il peut s’avérer difficile de vérifier une grande file d’attente de cas. L’utilisation de filtres case peut aider les analystes et les enquêteurs à trier les cas en plusieurs attributs. Pour filtrer les alertes dans le **tableau de bord incidents** , sélectionnez le contrôle de **filtre** . Vous pouvez filtrer les incidents par un ou plusieurs attributs :
 
-- **État**: sélectionnez une ou plusieurs valeurs d’État pour filtrer la liste de cas. Les options sont *active* et *Closed*.
-- **Time case ouverte**: sélectionnez les dates de début et de fin de l’ouverture du cas.
-- **Dernière mise à jour**: sélectionnez les dates de début et de fin du moment où le cas a été mis à jour.
+- **État** : sélectionnez une ou plusieurs valeurs d’État pour filtrer la liste de cas. Les options sont *active* et *Closed* .
+- **Time case ouverte** : sélectionnez les dates de début et de fin de l’ouverture du cas.
+- **Dernière mise à jour** : sélectionnez les dates de début et de fin du moment où le cas a été mis à jour.
 
 ## <a name="investigate-a-case"></a>Examiner un cas
 
@@ -80,11 +80,11 @@ L’onglet **Vue d’ensemble de cas** résume l'activité d'alerte et l'histori
 
 Le volet de **Détails des cas** est disponible sur tous les onglets de gestion des dossiers et récapitule les détails de l’incident pour les analystes et les investigateurs de risque. Elle comprend les éléments suivants :
 
-- **Nom**de la casse : nom de l’incident, préfixé avec un numéro de séquence de casse généré automatiquement et le nom du risque associé au modèle de stratégie correspondant à la première alerte confirmée. 
-- **État**de la demande de devis : état *actif* ou *fermé*.
-- **Note de risque de l’utilisateur**: niveau de risque calculé actuel de l’utilisateur pour le cas. Ce score est calculé toutes les 24 heures et utilise les scores de risque d’alerte de toutes les alertes actives associées à l’utilisateur.
-- **Alertes confirmées**: liste des alertes pour l’utilisateur confirmée pour le cas.
-- **Contenu connexe**: liste de contenu, triée par sources et types de contenu. Par exemple, pour le contenu d’une alerte de cas dans SharePoint Online, il est possible de voir la liste des noms de dossiers ou de fichiers qui sont associés à l'activité à risque pour les alertes dans le cas.
+- **Nom** de la casse : nom de l’incident, préfixé avec un numéro de séquence de casse généré automatiquement et le nom du risque associé au modèle de stratégie correspondant à la première alerte confirmée. 
+- **État** de la demande de devis : état *actif* ou *fermé* .
+- **Note de risque de l’utilisateur** : niveau de risque calculé actuel de l’utilisateur pour le cas. Ce score est calculé toutes les 24 heures et utilise les scores de risque d’alerte de toutes les alertes actives associées à l’utilisateur.
+- **Alertes confirmées** : liste des alertes pour l’utilisateur confirmée pour le cas.
+- **Contenu connexe** : liste de contenu, triée par sources et types de contenu. Par exemple, pour le contenu d’une alerte de cas dans SharePoint Online, il est possible de voir la liste des noms de dossiers ou de fichiers qui sont associés à l'activité à risque pour les alertes dans le cas.
 
 ![Détails des cas d’Insider gestion des risques](../media/insider-risk-case-details.png)
 
@@ -106,10 +106,10 @@ Utilisez le contrôle de recherche pour rechercher des noms d’alerte pour un t
 
 Utilisez le contrôle de filtre pour filtrer les alertes par plusieurs attributs, notamment :
 
-- **État**: sélectionnez une ou plusieurs valeurs d’État pour filtrer la liste des alertes. Les options sont *Confirmé*, *Fermé*, *Révision requise*et *Résolu*.
-- **Gravité**: sélectionnez un ou plusieurs niveaux de gravité des risques d’alerte pour filtrer la liste des alertes. Les options disponibles sont *Élevée*, *Moyenne*et *Faible*.
-- **Heure détectée**: sélectionnez les dates de début et de fin de la date de création de l’alerte.
-- **Stratégie**: sélectionnez une ou plusieurs stratégies pour filtrer les alertes générées par les stratégies sélectionnées.
+- **État** : sélectionnez une ou plusieurs valeurs d’État pour filtrer la liste des alertes. Les options sont *Confirmé* , *Fermé* , *Révision requise* et *Résolu* .
+- **Gravité** : sélectionnez un ou plusieurs niveaux de gravité des risques d’alerte pour filtrer la liste des alertes. Les options disponibles sont *Élevée* , *Moyenne* et *Faible* .
+- **Heure détectée** : sélectionnez les dates de début et de fin de la date de création de l’alerte.
+- **Stratégie** : sélectionnez une ou plusieurs stratégies pour filtrer les alertes générées par les stratégies sélectionnées.
 
 ### <a name="user-activity"></a>Activité utilisateur
 
@@ -117,22 +117,22 @@ L’onglet **Activité des utilisateurs** est l’un des outils les plus perform
 
 ![Activité des utilisateurs de gestion des risques Insiders](../media/insider-risk-user-activities.png)
 
-1. **Filtres date et heure**de la fenêtre : par défaut, les six derniers mois d’alertes confirmées dans le cas s’affichent dans le graphique d’activité de l’utilisateur. Vous pouvez facilement filtrer l’affichage graphique avec les contrôles de curseur aux deux extrémités de la fenêtre de graphique ou en définissant des dates de début et de fin spécifiques dans le contrôle de filtre de graphique.
-2. **Activité et détails de l’alerte de risque**: les activités de risque s’affichent visuellement sous forme de bulles colorées dans le graphique d’activité de l’utilisateur. Les bulles sont créées pour différentes catégories de risques et la taille des bulles est proportionnelle au nombre d’activités à risque pour la catégorie. Sélectionnez une bulle pour afficher les détails de chaque activité de risque. Les détails sont les suivants :
+1. **Filtres date et heure** de la fenêtre : par défaut, les six derniers mois d’alertes confirmées dans le cas s’affichent dans le graphique d’activité de l’utilisateur. Vous pouvez facilement filtrer l’affichage graphique avec les contrôles de curseur aux deux extrémités de la fenêtre de graphique ou en définissant des dates de début et de fin spécifiques dans le contrôle de filtre de graphique.
+2. **Activité et détails de l’alerte de risque** : les activités de risque s’affichent visuellement sous forme de bulles colorées dans le graphique d’activité de l’utilisateur. Les bulles sont créées pour différentes catégories de risques et la taille des bulles est proportionnelle au nombre d’activités à risque pour la catégorie. Sélectionnez une bulle pour afficher les détails de chaque activité de risque. Les détails sont les suivants :
     - **Date** de l’activité de risque.
-    - Catégorie de l' **activité de risque**. Par exemple, des *courriers électroniques avec des pièces jointes envoyées à l’extérieur de l’organisation* ou des *fichiers téléchargés à partir de SharePoint Online*.
+    - Catégorie de l' **activité de risque** . Par exemple, des *courriers électroniques avec des pièces jointes envoyées à l’extérieur de l’organisation* ou des *fichiers téléchargés à partir de SharePoint Online* .
     - **Score de risque** pour l’alerte. Ce score correspond au score numérique du niveau de gravité des risques d’alerte.
     - Nombre d’événements associés à l’alerte. Des liens vers chaque fichier ou message électronique associé à l’activité de risque sont également disponibles.
-3. **Légende**de l’activité des risques : dans la partie inférieure du graphique d’activité de l’utilisateur, une légende de couleur vous permet de déterminer rapidement la catégorie de risque pour chaque alerte.
-4. **Chronologie**de l’activité des risques : la chronologie complète de toutes les alertes de risque associées à l’incident est répertoriée, y compris tous les détails disponibles dans la bulle d’alerte correspondante.
-5. **Actions de cas**: les options de résolution de l’incident figurent dans la barre d’outils action de l’incident. Vous pouvez résoudre un cas, envoyer une notification par courrier électronique à l’utilisateur ou escalader le cas à une enquête sur les données ou les utilisateurs.
+3. **Légende** de l’activité des risques : dans la partie inférieure du graphique d’activité de l’utilisateur, une légende de couleur vous permet de déterminer rapidement la catégorie de risque pour chaque alerte.
+4. **Chronologie** de l’activité des risques : la chronologie complète de toutes les alertes de risque associées à l’incident est répertoriée, y compris tous les détails disponibles dans la bulle d’alerte correspondante.
+5. **Actions de cas** : les options de résolution de l’incident figurent dans la barre d’outils action de l’incident. Vous pouvez résoudre un cas, envoyer une notification par courrier électronique à l’utilisateur ou escalader le cas à une enquête sur les données ou les utilisateurs.
 
 ### <a name="activity-explorer-preview"></a>Explorateur d’activités (aperçu)
 
 >[!IMPORTANT]
 >L’onglet Activity Explorer est disponible dans la zone de gestion des cas pour les utilisateurs qui déclenchent des événements une fois que cette fonctionnalité est disponible dans votre organisation.
 
-L’onglet **Explorateur d’activités** permet aux analystes et aux enquêteurs de vérifier les détails de l’activité associée à des alertes de risque. Par exemple, dans le cadre des actions de gestion des dossiers, les investigateurs et les analystes peuvent avoir besoin d’examiner toutes les activités de risque associées à l’incident pour obtenir plus de détails. Avec l' **Explorateur d’activités**, les relecteurs peuvent rapidement consulter une chronologie de l’activité dangereuse détectée et identifier et filtrer toutes les activités liées aux risques associées aux alertes.
+L’onglet **Explorateur d’activités** permet aux analystes et aux enquêteurs de vérifier les détails de l’activité associée à des alertes de risque. Par exemple, dans le cadre des actions de gestion des dossiers, les investigateurs et les analystes peuvent avoir besoin d’examiner toutes les activités de risque associées à l’incident pour obtenir plus de détails. Avec l' **Explorateur d’activités** , les relecteurs peuvent rapidement consulter une chronologie de l’activité dangereuse détectée et identifier et filtrer toutes les activités liées aux risques associées aux alertes.
 
 Pour plus d’informations sur l’Explorateur d’activités, consultez l’article alertes sur la [gestion des risques Insiders](insider-risk-management-alerts.md#activity-explorer-preview) .
 
@@ -154,7 +154,7 @@ Pour ajouter une note à un cas :
 
 1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com), accédez à **gestion des risques internes** et sélectionnez l’onglet **incidents** .
 2. Sélectionnez un cas, puis sélectionnez l’onglet **notes de cas** .
-3. Sélectionnez **Ajouter une note de cas**.
+3. Sélectionnez **Ajouter une note de cas** .
 4. Dans la boîte de dialogue **Ajouter une note de cas** , tapez votre remarque pour le cas. Sélectionnez **Enregistrer** pour ajouter la note au cas ou sélectionnez **Annuler** fermer sans enregistrer la note dans le cas.
 
 ### <a name="contributors"></a>Contributeurs
@@ -163,8 +163,8 @@ L’onglet **Contributeurs** dans le cas est l’endroit où les analystes et le
 
 Toutes les situations de gestion des risques internes doivent être gérées avec des contrôles d’accès appropriés en place pour assurer la confidentialité et l’intégrité de l’examen. Pour assurer le contrôle d’accès des cas, l’un des deux types d’accès est attribué aux utilisateurs :
 
-- **Accès permanent**: l’accès permanent est automatiquement accordé aux utilisateurs avec les rôles des **analystes de gestion des risques internes** et des **investigateurs de gestion des risques Insiders** lorsque le cas est créé à partir d’une alerte. L'accès permanent permet un contrôle total du cas pendant toute sa durée de vie et donne la possibilité d'ajouter d'autres contributeurs au cas.
-- **Accès temporaire**: l’accès temporaire est accordé uniquement aux utilisateurs par des collaborateurs qui disposent d’un accès permanent pour le cas. En règle générale, ce niveau d’accès est accordé à l’utilisateur qui doit ajouter des notes à un cas. Les collaborateurs disposant d’un accès temporaire ont accès à tous les contrôles de gestion des cas, sauf :
+- **Accès permanent** : l’accès permanent est automatiquement accordé aux utilisateurs avec les rôles des **analystes de gestion des risques internes** et des **investigateurs de gestion des risques Insiders** lorsque le cas est créé à partir d’une alerte. L'accès permanent permet un contrôle total du cas pendant toute sa durée de vie et donne la possibilité d'ajouter d'autres contributeurs au cas.
+- **Accès temporaire** : l’accès temporaire est accordé uniquement aux utilisateurs par des collaborateurs qui disposent d’un accès permanent pour le cas. En règle générale, ce niveau d’accès est accordé à l’utilisateur qui doit ajouter des notes à un cas. Les collaborateurs disposant d’un accès temporaire ont accès à tous les contrôles de gestion des cas, sauf :
     - Autorisation de confirmer ou d’ignorer les alertes
     - Autorisation de modifier les contributeurs pour les cas
     - Autorisation d’afficher les fichiers et messages dans l’Explorateur de contenu
@@ -173,9 +173,9 @@ Pour ajouter un collaborateur à un cas :
 
 1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com), accédez à **gestion des risques internes** et sélectionnez l’onglet **incidents** .
 2. Sélectionnez un cas, puis sélectionnez l’onglet **collaborateurs** .
-3. Sélectionnez **Ajouter un collaborateur**.
+3. Sélectionnez **Ajouter un collaborateur** .
 4. Dans la boîte de dialogue **Ajouter un collaborateur** , commencez à taper le nom de l’utilisateur que vous souhaitez ajouter, puis sélectionnez l’utilisateur dans la liste des utilisateurs suggérés. Cette liste est générée à partir de l’Azure Active Directory de votre abonnement client.
-5. Dans la boîte de dialogue **Ajouter un collaborateur** , sélectionnez le niveau d’accès du collaborateur. Vous pouvez sélectionner **permanent** ou **temporaire**.
+5. Dans la boîte de dialogue **Ajouter un collaborateur** , sélectionnez le niveau d’accès du collaborateur. Vous pouvez sélectionner **permanent** ou **temporaire** .
 6. Sélectionnez **Ajouter** pour ajouter l’utilisateur en tant que collaborateur ou sélectionnez **Annuler** pour fermer la boîte de dialogue sans ajouter l’utilisateur en tant que collaborateur.
 
 ## <a name="case-actions"></a>Actions de cas
@@ -186,7 +186,7 @@ Les analystes et les enquêteurs de risques peuvent agir sur un cas selon l’un
 
 Dans la plupart des cas, les actions de l’utilisateur qui créent des alertes de risque involontaires sont involontaires ou accidentelles. Envoyer une notification de rappel à l’utilisateur par courrier électronique est une méthode efficace pour documenter l’examen et l’action des cas, ainsi qu’une méthode pour rappeler aux utilisateurs les stratégies d’entreprise ou pour les diriger vers la formation de réactualisation. Les notifications sont générées à partir de [modèles de notification que vous créez](insider-risk-management-notices.md) pour votre infrastructure de gestion des risques Insiders.
 
-N’oubliez pas que l’envoi d’un message électronique à un utilisateur ***ne*** résout pas le cas comme étant *fermé*. Dans certains cas, vous souhaiterez peut-être laisser un cas ouvert après l’envoi d’une notification à un utilisateur pour rechercher des activités à risque supplémentaires sans ouvrir de nouveau cas. Si vous voulez résoudre un cas après l’envoi d’une notification, vous devez sélectionner le **Résoudre un cas** sous la forme d’une étape de suivi après l’envoi d’une notification.
+N’oubliez pas que l’envoi d’un message électronique à un utilisateur * *_ne permet pas_* de résoudre le cas en tant que _Closed *. Dans certains cas, vous souhaiterez peut-être laisser un cas ouvert après l’envoi d’une notification à un utilisateur pour rechercher des activités à risque supplémentaires sans ouvrir de nouveau cas. Si vous voulez résoudre un cas après l’envoi d’une notification, vous devez sélectionner le **Résoudre un cas** sous la forme d’une étape de suivi après l’envoi d’une notification.
 
 Pour envoyer une notification à l’utilisateur affecté à un cas :
 
@@ -204,7 +204,7 @@ Pour transmettre un incident à une enquête utilisateur :
 
 1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com), accédez à **gestion des risques internes** et sélectionnez l’onglet **incidents** .
 2. Sélectionnez un cas, puis sélectionnez le bouton **escalader pour l’enquête** sur la barre d’outils action de cas.
-3. Dans la boîte de dialogue **escalade de l’enquête** , entrez un nom pour la nouvelle enquête utilisateur. Si nécessaire, entrez des remarques sur le cas et sélectionnez **escalade**.
+3. Dans la boîte de dialogue **escalade de l’enquête** , entrez un nom pour la nouvelle enquête utilisateur. Si nécessaire, entrez des remarques sur le cas et sélectionnez **escalade** .
 4. Examinez les champs notice et mettez à jour le cas échéant. Les valeurs entrées ici remplaceront les valeurs du modèle.
 5. Sélectionnez **confirmer** pour créer le cas d’enquête utilisateur ou cliquez sur **Annuler** pour fermer la boîte de dialogue sans créer de cas d’enquête utilisateur.
 
@@ -221,8 +221,8 @@ Une fois que le cas de gestion des risques inSided a été remonté vers un nouv
 Pour exécuter, gérer ou créer des flux automatiques d’alimentation pour un cas de gestion des risques inSided :
 
 1. Sélectionnez **automatiser** dans la barre d’outils action de cas. 
-2. Choisissez le flux d’alimentation automatique à exécuter, puis sélectionnez **exécuter le flux**. 
-3. Une fois le flux terminé, sélectionnez **terminé**.
+2. Choisissez le flux d’alimentation automatique à exécuter, puis sélectionnez **exécuter le flux** . 
+3. Une fois le flux terminé, sélectionnez **terminé** .
 
 Pour en savoir plus sur la gestion de l’alimentation automatisée des flux pour la gestion des risques initiés, voir [Getting Started with Insider Risk Management Settings](insider-risk-management-settings.md#power-automate-flows-preview).
 
@@ -240,31 +240,34 @@ Pour en savoir plus sur Microsoft teams pour la gestion des risques initiaux, vo
 
 Le partage d’un cas de gestion des risques inSided permet aux investigateurs et analystes de risque de collaborer facilement avec les autres parties prenantes en matière de conformité de votre organisation. Vous pouvez rapidement partager un lien vers un cas d’Insider de gestion des risques avec des parties prenantes externes à partir du domaine de gestion des cas. Pour accéder au cas de gestion des risques inSided à partir du lien, les parties prenantes doivent être incluses dans n’importe quel groupe de rôles de gestion des risques Insiders.
 
+>[!NOTE]
+>La version d’évaluation de ServiceNow se terminera le 1er novembre 30 2020 et ne sera pas poursuivie. Nous vous remercions de vos commentaires et de votre soutien pendant que nous déterminons les étapes suivantes.
+
 Les options de partage suivantes sont disponibles :
 
-- **ServiceNow**: après avoir configuré le connecteur ServiceNow Microsoft 365 pour votre organisation Microsoft 365, vous pouvez facilement partager un lien vers le cas, ouvrir un incident ou demander une modification avec votre organisation ServiceNow. Pour partager le cas avec ServiceNow, sélectionnez **partager**  >  **ServiceNow** à partir de l’action case. L’intégration de ServiceNow avec les supports de gestion des risques initiaux inclut les informations et les actions suivantes :
-    - **Nom**de la tâche : nom de la nouvelle tâche ServiceNow.
-    - **Description**de la tâche : description de la nouvelle tâche ServiceNow. Ce champ de description modifiable inclut automatiquement un lien vers le cas d’Insider de gestion des risques.
-    - **Type de tâche**: type de tâche pour la nouvelle tâche ServiceNow, qu’il s’agisse d’un *incident* ou d’une *demande de modification*.
-    - **Priority**: priorité de la nouvelle tâche ServiceNow, à savoir *planification*, *faible*, *modérée*, *élevée*ou *critique*.
-    - **Date d’échéance**: date demandée pour l’exécution de la tâche ServiceNow.
+- **ServiceNow** : après avoir configuré le connecteur ServiceNow Microsoft 365 pour votre organisation Microsoft 365, vous pouvez facilement partager un lien vers le cas, ouvrir un incident ou demander une modification avec votre organisation ServiceNow. Pour partager le cas avec ServiceNow, sélectionnez **partager**  >  **ServiceNow** à partir de l’action case. L’intégration de ServiceNow avec les supports de gestion des risques initiaux inclut les informations et les actions suivantes :
+    - **Nom** de la tâche : nom de la nouvelle tâche ServiceNow.
+    - **Description** de la tâche : description de la nouvelle tâche ServiceNow. Ce champ de description modifiable inclut automatiquement un lien vers le cas d’Insider de gestion des risques.
+    - **Type de tâche** : type de tâche pour la nouvelle tâche ServiceNow, qu’il s’agisse d’un *incident* ou d’une *demande de modification* .
+    - **Priority** : priorité de la nouvelle tâche ServiceNow, à savoir *planification* , *faible* , *modérée* , *élevée* ou *critique* .
+    - **Date d’échéance** : date demandée pour l’exécution de la tâche ServiceNow.
 
 ![Partage de la gestion des risques initiés avec ServiceNow](../media/insider-risk-share-servicenow.png)
 
-- **Courrier électronique**: partage un lien vers le cas d’Insider de gestion des risques dans un message électronique. Vous pouvez choisir n’importe quel client de messagerie configuré localement avec cette option de partage. Pour partager le lien de cas avec le courrier, sélectionnez **partager**  >  le**courrier électronique** à partir de la barre d’outils action de cas.
-- **Copier le lien**: copie un lien vers le cas d’Insider de gestion des risques dans votre presse-papiers. Pour copier le lien de cas dans votre presse-papiers, sélectionnez **partager**le  >  **lien de copie** à partir de la barre d’outils action de cas.
+- **Courrier électronique** : partage un lien vers le cas d’Insider de gestion des risques dans un message électronique. Vous pouvez choisir n’importe quel client de messagerie configuré localement avec cette option de partage. Pour partager le lien de cas avec le courrier, sélectionnez **partager**  >  le **courrier électronique** à partir de la barre d’outils action de cas.
+- **Copier le lien** : copie un lien vers le cas d’Insider de gestion des risques dans votre presse-papiers. Pour copier le lien de cas dans votre presse-papiers, sélectionnez **partager** le  >  **lien de copie** à partir de la barre d’outils action de cas.
 
 ### <a name="resolve-the-case"></a>Résoudre le dossier
 
-Une fois que les analystes et les enquêteurs ont terminé leur examen et leur enquête, un cas peut être résolu pour agir sur toutes les alertes actuellement incluses dans le cas. La résolution d’un cas ajoute une classification de résolution, le statut de la case à *fermeture*et les motifs d’action de résolution sont automatiquement ajoutés à la file d’attente de notes dans le tableau de bord **Notes** de cas. Les cas sont résolus comme suit :
+Une fois que les analystes et les enquêteurs ont terminé leur examen et leur enquête, un cas peut être résolu pour agir sur toutes les alertes actuellement incluses dans le cas. La résolution d’un cas ajoute une classification de résolution, le statut de la case à *fermeture* et les motifs d’action de résolution sont automatiquement ajoutés à la file d’attente de notes dans le tableau de bord **Notes** de cas. Les cas sont résolus comme suit :
 
-- **Bénigne**: la classification pour les cas où les alertes de correspondance de stratégie sont évaluées comme faible risque, non sérieux ou faux positif.
-- **Violation de stratégie confirmée**: classification pour les cas où les alertes de correspondance de stratégie sont évaluées comme risquées, graves ou le résultat d’un but malveillant.
+- **Bénigne** : la classification pour les cas où les alertes de correspondance de stratégie sont évaluées comme faible risque, non sérieux ou faux positif.
+- **Violation de stratégie confirmée** : classification pour les cas où les alertes de correspondance de stratégie sont évaluées comme risquées, graves ou le résultat d’un but malveillant.
 
 Pour résoudre un cas :
 
 1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com), accédez à **gestion des risques internes** et sélectionnez l’onglet **incidents** .
 2. Sélectionnez un cas, puis sélectionnez le bouton **résoudre le cas** dans la barre d’outils action de cas.
-3. Dans la boîte de dialogue **résoudre l’incident** , sélectionnez le contrôle **résoudre en tant que** liste déroulante pour sélectionner la classification de résolution pour le cas. Les options sont **inoffensives** ou une **violation de stratégie confirmée**.
+3. Dans la boîte de dialogue **résoudre l’incident** , sélectionnez le contrôle **résoudre en tant que** liste déroulante pour sélectionner la classification de résolution pour le cas. Les options sont **inoffensives** ou une **violation de stratégie confirmée** .
 4. Dans la boîte de dialogue **résoudre l’incident** , entrez les motifs de la classification de résolution dans le champ texte de l' **action effectuée** .
 5. Sélectionnez **résoudre** pour fermer le cas ou sélectionnez **Annuler** pour fermer la boîte de dialogue sans résoudre le cas.

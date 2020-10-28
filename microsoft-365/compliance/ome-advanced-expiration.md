@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Utilisez le chiffrement de messages avancé Office 365 pour étendre votre sécurité de messagerie en définissant une date d’expiration pour les e-mails via un modèle personnalisé.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0dcf9c82f9204f1357b49411d0ca87e87007eb96
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: bbd018e55592e5b17149edf1a4dc0907c0184417
+ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546158"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48769164"
 ---
 # <a name="set-an-expiration-date-for-email-encrypted-by-office-365-advanced-message-encryption"></a>Définir une date d’expiration pour les e-mails chiffrés par le chiffrement avancé de messages Office 365
 
@@ -30,7 +30,7 @@ Le chiffrement de messages avancé Office 365 est inclus dans [microsoft 365 ent
 
 Vous pouvez utiliser l’expiration des messages envoyés par vos utilisateurs à des destinataires externes qui utilisent le portail OME pour accéder à des e-mails chiffrés. Vous obligez les destinataires à utiliser le portail OME pour afficher et répondre à des messages électroniques chiffrés envoyés par votre organisation à l’aide d’un modèle personnalisé qui spécifie une date d’expiration dans Windows PowerShell.
 
-En tant qu’administrateur général d’Office 365, lorsque vous appliquez la marque de votre entreprise pour personnaliser l’apparence des messages électroniques de votre organisation, vous pouvez également spécifier une expiration pour ces messages électroniques. Avec le chiffrement de messages avancé Office 365, vous pouvez créer plusieurs modèles pour les messages électroniques chiffrés provenant de votre organisation. À l’aide d’un modèle, vous pouvez contrôler la durée pendant laquelle les destinataires ont accès aux messages envoyés par vos utilisateurs.
+En tant qu’administrateur général Office 365, lorsque vous appliquez la marque de votre entreprise pour personnaliser l’apparence des messages électroniques de votre organisation, vous pouvez également spécifier une expiration pour ces messages électroniques. Avec le chiffrement de messages avancé Office 365, vous pouvez créer plusieurs modèles pour les messages électroniques chiffrés provenant de votre organisation. À l’aide d’un modèle, vous pouvez contrôler la durée pendant laquelle les destinataires ont accès aux messages envoyés par vos utilisateurs.
 
 Lorsqu’un utilisateur final reçoit un message dont la date d’expiration est définie, l’utilisateur voit la date d’expiration dans le message du wrapper. Si un utilisateur tente d’ouvrir un message expiré, une erreur s’affiche dans le portail OME.
 
@@ -42,11 +42,11 @@ Avec le chiffrement de messages avancé Office 365, chaque fois que vous appliqu
 
 1. [Connectez-vous à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) avec un compte disposant d’autorisations d’administrateur globales au sein de votre organisation.
 
-2. Exécutez la cmdlet New-OMEConfiguration.
+2. Exécutez l’applet de commande New-OMEConfiguration.
 
-     ```powershell
-     New-OMEConfiguration -Identity "Expire in 7 days" -ExternalMailExpiryInDays 7
-     ```
+    ```powershell
+    New-OMEConfiguration -Identity "Expire in 7 days" -ExternalMailExpiryInDays 7
+    ```
 
 Où :
 

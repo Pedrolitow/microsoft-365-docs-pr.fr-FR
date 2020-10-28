@@ -17,18 +17,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez les demandes de référentiel sécurisé du client qui vous permettent de contrôler la manière dont un technicien du support technique Microsoft peut accéder à vos données lorsque vous rencontrez un problème.
-ms.openlocfilehash: d71fbaa42fba49bd0f06b26d34d2257f8a4a60ba
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: b475c9af80d0e28961360825788d9e19a426dc69
+ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546500"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48768862"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Référentiel sécurisé du client dans Office 365
 
 Cet article fournit des instructions de déploiement et de configuration pour le référentiel sécurisé du client. Customer Lockbox prend en charge les demandes d’accès aux données dans Exchange Online, SharePoint Online et OneDrive entreprise. Pour recommander la prise en charge d’autres services, envoyez une demande auprès d' [Office 365 UserVoice](https://office365.uservoice.com/).
 
-Pour voir les options permettant aux utilisateurs de bénéficier des offres de conformité de Microsoft 365, dont celui-ci, depuis le 1er avril 2020, consultez les [conseils relatifs aux licences microsoft 365 pour la sécurité & la conformité](https://aka.ms/ComplianceSD).
+Pour voir les options permettant aux utilisateurs de bénéficier des offres de conformité de Microsoft 365, dont celui-ci, depuis le 1er avril 2020, consultez les [conseils relatifs aux licences microsoft 365 pour la sécurité & la conformité](https://aka.ms/ComplianceSD).
 
 Le référentiel sécurisé du client garantit que Microsoft ne peut pas accéder à votre contenu pour effectuer une opération de service sans votre approbation explicite. Le référentiel sécurisé du client vous fournit le flux de travail d’approbation pour les demandes d’accès à votre contenu.
 
@@ -74,9 +74,9 @@ Vous pouvez activer les contrôles Customer Lockbox dans le Centre d’administr
 
 1. À l’aide d’un compte professionnel ou scolaire auquel est attribué le rôle d' **approbateur** général ou d’approbation du client, accédez à [https://admin.microsoft.com](https://admin.microsoft.com) et connectez-vous.
 
-2. Sélectionnez **paramètres > paramètres**de l’organisation.
+2. Sélectionnez **paramètres > paramètres** de l’organisation.
 
-3. Sélectionnez **Services**l’option  >  **Customer Lockbox**  >  **modifier**le référentiel du client des services, puis déplacez le bouton bascule sur **activé** ou **désactivé** pour activer ou désactiver la fonctionnalité.
+3. Sélectionnez **sécurité & confidentialité**  >  **client-référentiel sécurisé**  >  **Edit** , puis déplacez le bouton bascule sur **activé** ou **désactivé** pour activer ou désactiver la fonctionnalité.
 
     ![Require approval for Customer Lockbox](../media/CustomerLockbox4.png)
 
@@ -84,7 +84,7 @@ Vous pouvez activer les contrôles Customer Lockbox dans le Centre d’administr
 
 1. À l’aide d’un compte professionnel ou scolaire auquel est attribué le rôle d' **approbateur** général ou d’approbation du client, accédez à [https://admin.microsoft.com](https://admin.microsoft.com) et connectez-vous.
 
-2. Choisir la **prise en charge > demandes de référentiel sécurisé du client**.
+2. Choisir la **prise en charge > demandes de référentiel sécurisé du client** .
 
     ![Cliquez sur support, puis sur demandes de référentiel sécurisé du client](../media/CustomerLockbox5.png)
 
@@ -92,7 +92,7 @@ Vous pouvez activer les contrôles Customer Lockbox dans le Centre d’administr
 
     ![Liste des demandes de référentiel sécurisé du client](../media/CustomerLockbox6.png)
 
-3. Sélectionnez une demande de référentiel sécurisé du client, puis choisissez **approuver** ou **refuser**.
+3. Sélectionnez une demande de référentiel sécurisé du client, puis choisissez **approuver** ou **refuser** .
 
     ![Approuver ou refuser les demandes de référentiel sécurisé du client](../media/CustomerLockbox7.png)
 
@@ -101,22 +101,22 @@ Vous pouvez activer les contrôles Customer Lockbox dans le Centre d’administr
     ![Approuver ou refuser les demandes de référentiel sécurisé du client](../media/CustomerLockbox8.png)
 
 > [!NOTE]
-> Utilisez l’applet de commande Set-AccessToCustomerDataRequest pour approuver, refuser ou annuler des demandes de référentiel sécurisé Microsoft 365 qui contrôlent l’accès à vos données par les ingénieurs du support technique Microsoft. Pour plus d’informations, consultez la rubrique [Set-AccessToCustomerDataRequest](https://docs.microsoft.com/powershell/module/exchange/set-accesstocustomerdatarequest).
+> Utilisez la cmdlet Set-AccessToCustomerDataRequest pour approuver, refuser ou annuler les demandes de référentiel sécurisé du client Microsoft 365 qui contrôlent l’accès des ingénieurs de support Microsoft à vos données. Pour plus d’informations, consultez la rubrique [Set-AccessToCustomerDataRequest](https://docs.microsoft.com/powershell/module/exchange/set-accesstocustomerdatarequest).
 
 
 ## <a name="auditing-customer-lockbox-requests"></a>Audit des demandes d’accès au Customer Lockbox
 
-Les enregistrements d’audit qui correspondent aux demandes de référentiel sécurisé du client sont consignés dans le journal d’audit. Vous pouvez accéder à ces journaux à l’aide de l' [outil de recherche de journal d’audit](search-the-audit-log-in-security-and-compliance.md) dans le centre de sécurité & conformité. Les actions liées à la demande de référentiel sécurisé d’un client et les actions effectuées par des ingénieurs Microsoft (lorsque les demandes d’accès sont approuvées) sont également consignées dans le journal d’audit. Vous pouvez rechercher et consulter ces enregistrements d’audit.
+Les enregistrements d’audit qui correspondent aux demandes de référentiel sécurisé du client sont consignés dans le journal d’audit. Vous pouvez accéder à ces journaux à l’aide de l' [outil de recherche de journal d’audit](search-the-audit-log-in-security-and-compliance.md) dans le centre de sécurité & conformité. Les actions liées à l’acceptation ou au refus d’une demande de référentiel sécurisé d’un client, ainsi que les actions effectuées par des ingénieurs Microsoft (lorsque les demandes d’accès sont approuvées) sont également consignées dans le journal d’audit. Vous pouvez rechercher et consulter ces enregistrements d’audit.
 
 ### <a name="search-the-audit-log-for-activity-related-to-customer-lockbox-requests"></a>Rechercher les activités liées aux demandes de référentiel sécurisé du client dans le journal d’audit
 
-Avant de pouvoir utiliser le journal d’audit pour effectuer le suivi des demandes pour le référentiel sécurisé du client, vous devez effectuer certaines étapes à la configuration de la journalisation d’audit. Pour plus d’informations, reportez-vous à la rubrique [Rechercher dans le journal d’audit dans le centre de sécurité & conformité](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance#before-you-begin). Une fois que vous avez terminé l’installation, procédez comme suit pour créer une requête de recherche de journal d’audit pour renvoyer des enregistrements d’audit liés à un référentiel sécurisé du client :
+Avant de pouvoir utiliser le journal d’audit pour suivre des demandes d’accès Customer Lockbox, vous devez effectuer les étapes suivantes afin de configurer la journalisation d’audit. Pour plus d’informations, reportez-vous à la rubrique [Rechercher dans le journal d’audit dans le centre de sécurité & conformité](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance#before-you-begin). Une fois que vous avez terminé l’installation, procédez comme suit pour créer une requête de recherche de journal d’audit pour renvoyer des enregistrements d’audit liés à un référentiel sécurisé du client :
 
 1. Accédez à [https://protection.office.com](https://protection.office.com).
   
 2. Connectez-vous à l’aide de votre compte scolaire ou professionnel.
 
-3. Dans le volet gauche du centre de sécurité & conformité, sélectionnez **recherche &**  >  **Journal d’audit**de l’enquête.
+3. Dans le volet gauche du centre de sécurité & conformité, sélectionnez **recherche &**  >  **Journal d’audit** de l’enquête.
 
     La page de **recherche du journal d’audit** s’affiche.
 
@@ -124,13 +124,13 @@ Avant de pouvoir utiliser le journal d’audit pour effectuer le suivi des deman
   
 4. Configurez les critères de recherche suivants : 
 
-    a. **Activités** : laissez ce champ vide afin que la recherche renvoie les enregistrements d’audit pour toutes les activités. Cette opération est nécessaire pour renvoyer les enregistrements d’audit relatifs aux demandes de référentiel sécurisé du client et l’activité correspondante effectuée par les ingénieurs Microsoft.
+    1. **Activités** : laissez ce champ vide afin que la recherche renvoie les enregistrements d’audit pour toutes les activités. Cette opération est nécessaire pour renvoyer les enregistrements d’audit relatifs aux demandes de référentiel sécurisé du client et l’activité correspondante effectuée par les ingénieurs Microsoft.
 
-    b. **Date de début** et **Date de fin** : sélectionnez une date et une plage horaire pour afficher les événements qui se sont produits au cours de cette période.
+    1. **Date de début** et **Date de fin** : sélectionnez une date et une plage horaire pour afficher les événements qui se sont produits au cours de cette période.
 
-    c. **Users** : laissez ce champ vide.
+    1. **Users** : laissez ce champ vide.
 
-    d. **Fichier, dossier ou site** : laissez ce champ vide.
+    1. **Fichier, dossier ou site** : laissez ce champ vide.
 
 5. Cliquez sur **Rechercher** pour effectuer la recherche à l’aide de vos critères de recherche. 
 
@@ -138,9 +138,9 @@ Avant de pouvoir utiliser le journal d’audit pour effectuer le suivi des deman
 
 6. Cliquez sur **Filtrer les résultats** sur la page des résultats de la recherche, puis effectuez l’une des opérations suivantes :
 
-   - Pour afficher les enregistrements d’audit liés à un approbateur de votre organisation approuvant ou refusant une demande de référentiel sécurisé client : dans la zone sous la colonne **activité** , tapez **Set-AccessToCustomerDataRequest**.
+   - Pour afficher les enregistrements d’audit liés à un approbateur de votre organisation approuvant ou refusant une demande de référentiel sécurisé client : dans la zone sous la colonne **activité** , tapez **Set-AccessToCustomerDataRequest** .
 
-   - Pour afficher les enregistrements d’audit liés à un ingénieur Microsoft qui exécutent des actions en réponse à une demande approuvée de client : dans la zone située sous la colonne **utilisateur** , tapez **opérateur Microsoft**. La colonne **activité** affiche l’action effectuée par l’ingénieur.
+   - Pour afficher les enregistrements d’audit liés à un ingénieur Microsoft qui exécutent des actions en réponse à une demande approuvée de client : dans la zone située sous la colonne **utilisateur** , tapez **opérateur Microsoft** . La colonne **activité** affiche l’action effectuée par l’ingénieur.
 
       ![Filtre sur « opérateur Microsoft » pour afficher les enregistrements d’audit](../media/CustomerLockbox10.png)
 
@@ -158,12 +158,12 @@ Lorsqu’une personne de votre organisation approuve ou refuse une demande de r�
 | Activité   | Set-AccessToCustomerDataRequest :il s’agit de l’activité d’audit enregistrée lorsque vous approuvez ou refusez une demande d’accès au Customer Lockbox.                                |
 | Item       | GUID de la demande de référentiel sécurisé du client                             |
 
-La capture d’écran suivante montre un exemple d’enregistrement de journal d’audit correspondant à une demande approuvée de client Lockbox. Si une demande de référentiel sécurisé du client a été refusée, la valeur du paramètre **ApprovalDecision** serait **Deny**.
+La capture d’écran suivante montre un exemple d’enregistrement de journal d’audit correspondant à une demande approuvée de client Lockbox. Si une demande de référentiel sécurisé du client a été refusée, la valeur du paramètre **ApprovalDecision** serait **Deny** .
 
 ![Enregistrement d’audit pour une demande approuvée de client Lockbox](../media/CustomerLockbox9.png)
 
 > [!TIP]
-> Pour afficher des informations plus détaillées dans un enregistrement d’audit, cliquez sur **informations supplémentaires**.
+> Pour afficher des informations plus détaillées dans un enregistrement d’audit, cliquez sur **informations supplémentaires** .
 
 ### <a name="audit-record-for-an-action-performed-by-a-microsoft-engineer"></a>L’enregistrement d’audit d’une action effectuée par un ingénieur Microsoft
 
@@ -177,7 +177,7 @@ Les actions exécutées par un ingénieur Microsoft après l’approbation d’u
 | Activité   | Le nom de l’activité effectuée par l’ingénieur Microsoft.|
 | Élément       | \<empty\>                                             |
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 #### <a name="which-microsoft-365-services-does-customer-lockbox-apply-to"></a>Quels sont les services Microsoft 365 auxquels s’applique le référentiel client ?
 
@@ -185,7 +185,7 @@ Le référentiel sécurisé du client est actuellement pris en charge dans Excha
 
 #### <a name="is-customer-lockbox-available-to-all-customers"></a>Le référentiel sécurisé du client est-il disponible pour tous les clients ?
 
-Customer Lockbox est inclus avec les abonnements Microsoft 365 ou Office 365 E5 et peut être ajouté à d’autres plans avec une protection des informations et une conformité ou un abonnement de complément de conformité avancé. Pour plus d’informations, reportez-vous à la rubrique [offres et tarifs](https://products.office.com/business/office-365-enterprise-e5-business-software)   .
+Customer Lockbox est inclus avec les abonnements Microsoft 365 ou Office 365 E5 et peut être ajouté à d’autres plans avec une protection des informations et une conformité ou un abonnement de complément de conformité avancé. Pour plus d’informations, reportez-vous à la rubrique [offres et tarifs](https://products.office.com/business/office-365-enterprise-e5-business-software) .
 
 #### <a name="what-is-customer-content"></a>Qu’est-ce que le contenu client ?
 
