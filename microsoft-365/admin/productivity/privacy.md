@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: La protection de la confidentialité avec le score de productivité.
-ms.openlocfilehash: 1af2553e67b4f14e9783c23d679a7ac96443512a
-ms.sourcegitcommit: e8b3855302fc34d09b6df6c737033a2f326d6eee
+ms.openlocfilehash: 62ff3a9f0434421cbe1115f13376e92bd9f3cac9
+ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48770034"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48794976"
 ---
 # <a name="privacy-controls-for-productivity-score"></a>Contrôles de confidentialité du score de productivité
 
@@ -55,7 +55,21 @@ Pour afficher l’intégralité du score de productivité, y compris les mesures
 
 Attribuez le rôle de lecteur de rapports à toute personne responsable de la gestion et de l’adoption des modifications. Ce rôle leur donne accès à l’expérience complète, y compris les mesures au niveau du client et les détails au niveau de chaque utilisateur.
 
-Le rapport des expériences de personnes contient les détails de l’activité par utilisateur pour chaque page de détails de catégorie. Attribuez un rôle personnalisé appelé lecteur de rapports de synthèse d’utilisation (disponible à partir du 29 octobre 2020) pour permettre l’accès uniquement aux métriques agrégées des expériences de personnes.
+Le rapport des expériences de personnes contient les détails de l’activité par utilisateur pour chaque page de détails de catégorie. Attribuez un rôle personnalisé appelé lecteur de rapports de synthèse d’utilisation (disponible à partir du 29 octobre 2020) pour permettre l’accès uniquement aux métriques agrégées des expériences de personnes. Ce rôle devra être attribué via les cmdlets PowerShell jusqu’à ce qu’il devienne accessible à partir du centre d’administration Microsoft sur 11/15/2020.
+
+Pour attribuer le rôle de lecteur rapports de synthèse d’utilisation avec PowerShell :
+
+- Exécutez l’PowerShell suivant :
+
+```powershell
+Connect-AzureAD
+$role=Get-AzureADDirectoryRole -Filter "roleTemplateId eq '75934031-6c7e-415a-99d7-48dbd49e875e'"
+Get-AzureADDirectoryRoleMember -ObjectId $role.ObjectId
+$u=Get-AzureADUser -ObjectId <user upn>
+Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId $u.ObjectId
+```
+
+</br>
 
 :::image type="content" source="../../media/communicationspage.jpg" alt-text="Page communications dans les rapports de productivité.":::
 

@@ -17,12 +17,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Découvrez comment fermer votre compte auprès de Microsoft.
-ms.openlocfilehash: 9545c43ee27fb000149776527030b04b5e807a5c
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 0fed7df54a21b3696e81915af78e377e855bfd12
+ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638374"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48794896"
 ---
 # <a name="close-your-account"></a>Fermer votre compte
 
@@ -51,9 +51,9 @@ Si votre organisation utilise Active Directory qui se synchronise avec Azure AD,
 
 1. Dans le centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
 
-2. Si la liste abonnements est affichée en mode **table** , cliquez sur la droite sur **cartes**.
+2. Si la liste abonnements est affichée en mode **table** , cliquez sur la droite sur **cartes** .
 
-3. Recherchez un abonnement actif et, dans la section **paramètres & Actions** , sélectionnez **Annuler l’abonnement**.
+3. Recherchez un abonnement actif et, dans la section **paramètres & Actions** , sélectionnez **Annuler l’abonnement** .
 
 4. Suivez les invites pour terminer le processus.
 
@@ -63,13 +63,13 @@ Si votre organisation utilise Active Directory qui se synchronise avec Azure AD,
 
 1. Dans le centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
 
-2. Si la liste abonnements est affichée en mode **table** , cliquez sur la droite sur **cartes**.
+2. Si la liste abonnements est affichée en mode **table** , cliquez sur la droite sur **cartes** .
 
-3. En regard de l’option État de l' **abonnement**, sélectionnez **désactivé**.
+3. En regard de l’option État de l' **abonnement** , sélectionnez **désactivé** .
 
-4. Recherchez un abonnement désactivé et, dans la section **paramètres & Actions** , sélectionnez **supprimer**.
+4. Recherchez un abonnement désactivé et, dans la section **paramètres & Actions** , sélectionnez **supprimer** .
 
-5. Dans la boîte de dialogue **supprimer un abonnement** , activez la case à cocher **j’ai assimilé le choc** , puis sélectionnez **supprimer un abonnement**.
+5. Dans la boîte de dialogue **supprimer un abonnement** , activez la case à cocher **j’ai assimilé le choc** , puis sélectionnez **supprimer un abonnement** .
 
 6. Pour chaque abonnement désactivé, répétez les étapes 4 et 5 jusqu’à ce que tous les abonnements aient été supprimés.
 
@@ -77,7 +77,7 @@ Si votre organisation utilise Active Directory qui se synchronise avec Azure AD,
 
 1. Dans le centre d’administration, accédez à **la page utilisateurs**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">actifs</a> .
 
-2. Choisissez **l’authentification multifacteur**.
+2. Choisissez **l’authentification multifacteur** .
 
 3. Sur la page authentification multifacteur, désactivez tous les comptes à l’exception du compte d’administrateur global que vous utilisez actuellement.
 
@@ -87,12 +87,12 @@ Vous pouvez également <a href="https://docs.microsoft.com/azure/active-director
 
 1. Connectez-vous au <a href="https://aad.portal.azure.com/" target="_blank">Centre d’administration Azure ad</a> à l’aide d’un compte d’administrateur général.
 
-2. Sélectionner **Azure Active Directory**.
+2. Sélectionner **Azure Active Directory** .
 
-3. Basculez vers le répertoire que vous souhaitez supprimer.
+3. Basculez vers l’organisation que vous souhaitez supprimer.
 
-4. Sélectionnez **supprimer un répertoire**.
+4. Sélectionnez **supprimer le client** .
 
-5. Si votre annuaire ne parvient pas à effectuer une ou plusieurs vérifications, un lien vers plus d’informations sur la façon de réussir les vérifications s’affiche. Après avoir passé tous les contrôles, sélectionnez **supprimer** pour terminer le processus.
+5. Si votre organisation ne parvient pas à effectuer une ou plusieurs vérifications, un lien vers plus d’informations sur la façon de réussir les vérifications s’affiche. Après avoir passé tous les contrôles, sélectionnez **supprimer** pour terminer le processus.
 
 Une fois cette étape terminée, votre compte auprès de Microsoft est fermé et supprimé.

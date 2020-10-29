@@ -9,18 +9,20 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: c574be6d171a230479d8b6c96e2e0a1dec8a87ac
-ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
+ms.openlocfilehash: 56d849a7abcbe480d82200cc7841d42e9c189762
+ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48656145"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48795104"
 ---
 # <a name="readiness-assessment-tool"></a>Outil d’évaluation de la préparation
 
 Pour une plus bonne expérience possible lors de l’inscription au bureau géré Microsoft, il existe un certain nombre de paramètres et d’autres paramètres que vous devez définir à l’avance. Vous pouvez utiliser cet outil pour vérifier ces paramètres et recevoir des instructions détaillées pour les corriger.
 
-L’outil vérifie les paramètres dans le gestionnaire de points de terminaison Microsoft (en particulier Microsoft Intune), Azure Active Directory (Azure AD) et Microsoft 365 pour s’assurer qu’ils fonctionneront avec Microsoft Managed Desktop. Le bureau géré Microsoft conserve les données associées à ces vérifications pendant 12 mois après la dernière exécution d’une vérification dans votre organisation Azure AD.  Au bout de 12 mois, nous les conservent dans un formulaire déidentifié.  Vous pouvez choisir de supprimer les données collectées.
+L’outil vérifie les paramètres dans le gestionnaire de points de terminaison Microsoft (en particulier Microsoft Intune), Azure Active Directory (Azure AD) et Microsoft 365 pour s’assurer qu’ils fonctionneront avec Microsoft Managed Desktop. Le bureau géré Microsoft conserve les données associées à ces vérifications pendant 12 mois après la dernière exécution d’une vérification dans votre organisation Azure AD. Au bout de 12 mois, nous les conservent dans un formulaire déidentifié.  Vous pouvez choisir de supprimer les données collectées.
+
+Tout utilisateur disposant au moins du rôle d’administrateur Intune pourra exécuter cet outil, mais trois des vérifications ([connecteurs de certificat](readiness-assessment-fix.md#certificate-connectors), [authentification multifacteur](readiness-assessment-fix.md#multi-factor-authentication)et [réinitialisation de mot de passe en libre-service](readiness-assessment-fix.md#self-service-password-reset)) nécessitent des autorisations supplémentaires.
  
 L’outil d’évaluation vérifie ces éléments :
 
@@ -68,7 +70,7 @@ L’outil d’évaluation vérifie ces éléments :
 |OneDrive Entreprise     | Vérifie si OneDrive entreprise utilise des paramètres non pris en charge.        |
 
 
-Pour chaque vérification, l’outil signale l’un des trois résultats possibles :
+Pour chaque vérification, l’outil signale l’un des quatre résultats possibles :
 
 
 |Résultat  |Signification  |
@@ -76,3 +78,4 @@ Pour chaque vérification, l’outil signale l’un des trois résultats possibl
 |Prêt     | Aucune action n’est requise avant la fin de l’enregistrement.        |
 |OpenSSL    | Suivez les étapes de l’outil pour une expérience optimale avec l’enregistrement et pour les utilisateurs. Vous *pouvez* effectuer l’opération d’enregistrement, mais vous devez résoudre ces problèmes avant de déployer votre premier périphérique.        |
 |Non prêt | L' *enregistrement échoue* si vous ne résolvez pas ces problèmes. Suivez les étapes de l’outil pour les résoudre.        |
+|Erreur | Le rôle Azure active Director (AD) que vous utilisez ne dispose pas des autorisations suffisantes pour effectuer cette vérification. |

@@ -9,16 +9,16 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 2c9638dc7b8c6d095b87cf81114f3812c8362597
-ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
+ms.openlocfilehash: a6dec9473ee632b74bb79e50156cedff53a3cba3
+ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48656138"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48795116"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Corriger les problèmes détectés par l’outil d’évaluation de la disponibilité
 
-Pour chaque vérification, l’outil signale l’un des trois résultats possibles :
+Pour chaque vérification, l’outil signale l’un des quatre résultats possibles :
 
 
 |Résultat  |Signification  |
@@ -26,6 +26,7 @@ Pour chaque vérification, l’outil signale l’un des trois résultats possibl
 |Prêt     | Aucune action n’est requise avant la fin de l’enregistrement.        |
 |OpenSSL    | Suivez les étapes décrites dans l’outil ou dans cet article pour obtenir une expérience optimale avec l’enregistrement et pour les utilisateurs. Vous *pouvez* effectuer l’opération d’enregistrement, mais vous devez résoudre ces problèmes avant de déployer votre premier périphérique.        |
 |Non prêt | *L’enregistrement échoue si vous ne résolvez pas ces problèmes.* Suivez les étapes décrites dans l’outil ou dans cet article pour les résoudre.        |
+|Erreur | Le rôle Azure active Director (AD) que vous utilisez ne dispose pas des autorisations suffisantes pour effectuer cette vérification. |
 
 ## <a name="microsoft-intune-settings"></a>Paramètres Microsoft Intune
 
@@ -72,6 +73,16 @@ Vous disposez d’au moins une stratégie d’accès conditionnel qui cible tous
 
 Assurez-vous que toutes les stratégies d’accès conditionnel vous avez exclu le groupe Azure AD comptes de service de l' **espace de travail moderne** . Pour connaître les étapes à suivre, consultez la rubrique [Adjust ConditionalAttribute Access](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/conditional-access). Le groupe Azure AD de comptes de service de l' **espace de travail moderne** est un groupe dynamique que nous créons pour le service lors de l’inscription. Vous devrez revenir à l’exclusion de ce groupe après l’enregistrement. Pour plus d’informations sur ces comptes de service, consultez la rubrique [Standard Operating Procedures](../service-description/operations-and-monitoring.md#standard-operating-procedures).
 
+**Error**
+
+Le rôle d’administrateur Intune ne dispose pas des autorisations suffisantes pour cette vérification. Vous aurez également besoin de ces rôles Azure AD pour exécuter cette vérification :
+
+- Lecteur de sécurité
+- Administrateur de sécurité
+- Administrateur d’accès conditionnel
+- Lecteur général
+- Administrateur de périphériques
+
 
 ### <a name="device-compliance-policies"></a>Stratégies de conformité des appareils
 
@@ -107,7 +118,7 @@ Les appareils de bureau gérés Microsoft doivent être autorisés à s’inscri
 
 **Non prêt**
 
-Suivez les étapes de la procédure [définir les restrictions d’inscriptions](https://docs.microsoft.com/mem/intune/enrollment/enrollment-restrictions-set) pour modifier le paramètre sur **autoriser**.
+Suivez les étapes de la procédure [définir les restrictions d’inscriptions](https://docs.microsoft.com/mem/intune/enrollment/enrollment-restrictions-set) pour modifier le paramètre sur **autoriser** .
 
 
 ### <a name="enrollment-status-page"></a>Page d’état d’enregistrement
@@ -116,7 +127,7 @@ La page d’état d’enregistrement (ESP) est actuellement activée. Si vous pa
 
 **Non prêt**
 
-Le profil ESP par défaut est défini pour afficher la progression de la configuration de l' **application et du profil**. Désactivez ce paramètre en suivant les étapes de [la page Configurer l’état de l’inscription](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status).
+Le profil ESP par défaut est défini pour afficher la progression de la configuration de l' **application et du profil** . Désactivez ce paramètre en suivant les étapes de [la page Configurer l’état de l’inscription](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status).
 
 **OpenSSL**
 
@@ -128,7 +139,7 @@ Les appareils Windows 10 dans votre organisation Azure AD doivent être automati
 
 **Non prêt**
 
-Les utilisateurs de votre organisation Azure AD ne sont pas automatiquement intégrés dans Microsoft Intune. Modifiez l’étendue utilisateur MDM sur **une partie** ou la **totalité**. Si vous le souhaitez. Some * *, revenez après l’enregistrement et sélectionnez le groupe **Modern Workplace-All** Azure AD pour les **groupes**.
+Les utilisateurs de votre organisation Azure AD ne sont pas automatiquement intégrés dans Microsoft Intune. Modifiez l’étendue utilisateur MDM sur **une partie** ou la **totalité** . Si vous choisissez **certaines** , revenez après l’enregistrement et sélectionnez le groupe **moderne espace de travail-tout** Azure AD pour les **groupes** .
 
 
 ### <a name="microsoft-store-for-business"></a>Microsoft Store pour Entreprises
@@ -152,6 +163,15 @@ Certaines stratégies d’authentification multifacteur (MFA) sont définies com
 
 Assurez-vous que toutes les stratégies d’accès conditionnel qui requièrent l’authentification MFA excluent le groupe **de travail moderne-tous les** groupes Azure ad. Pour plus d’informations, reportez-vous à [stratégies d’accès conditionnel](#conditional-access-policies) et [accès conditionnel : exiger l’authentification multifacteur pour tous les utilisateurs](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa). Le groupe de **travail moderne-tous les** groupes Azure AD est un groupe dynamique que nous créons lors de l’inscription au bureau géré Microsoft, de sorte que vous devez revenir à l’exclusion de ce groupe après l’inscription.
 
+**Error**
+
+Le rôle d’administrateur Intune ne dispose pas des autorisations suffisantes pour cette vérification. Vous aurez également besoin de ces rôles Azure AD pour exécuter cette vérification :
+
+- Lecteur de sécurité
+- Administrateur de sécurité
+- Administrateur d’accès conditionnel
+- Lecteur général
+- Administrateur de périphériques
 
 
 ### <a name="powershell-scripts"></a>Scripts PowerShell
@@ -234,7 +254,7 @@ Indique comment vérifier un paramètre qui (si sa valeur est définie sur "fals
 
 **OpenSSL**
 
-Assurez-vous que **AllowAdHocSubscriptions** est défini sur **true**. Dans le cas contraire, l’itinérance de l’état de l’entreprise peut ne pas fonctionner. Pour plus d’informations, consultez la rubrique [Set-MsolCompanySettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0).
+Assurez-vous que **AllowAdHocSubscriptions** est défini sur **true** . Dans le cas contraire, l’itinérance de l’état de l’entreprise peut ne pas fonctionner. Pour plus d’informations, consultez la rubrique [Set-MsolCompanySettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0).
 
 
 ### <a name="enterprise-state-roaming"></a>Itinérance du statut Entreprise
@@ -298,6 +318,11 @@ SSPR doit être activé pour tous les utilisateurs. Si ce n’est pas le cas, le
 
 Assurez-vous que le paramètre **sélectionné** SSPR inclut Microsoft Managed Desktop Devices.
 
+**Error**
+
+Le rôle d’administrateur Intune ne dispose pas des autorisations suffisantes pour cette vérification. Vous aurez également besoin du rôle Azure AD du lecteur de rapports pour exécuter cette vérification.
+
+
 ### <a name="standard-user-role"></a>Rôle d’utilisateur standard
 
 Les utilisateurs de bureau géré Microsoft doivent être des utilisateurs standard sans privilèges d’administrateur local. Ils se verront attribuer un rôle d’utilisateur standard lorsqu’ils démarreront leur périphérique de bureau géré Microsoft.
@@ -306,7 +331,7 @@ Les utilisateurs de bureau géré Microsoft doivent être des utilisateurs stand
 
 Les utilisateurs de bureau géré Microsoft ne doivent pas avoir de privilèges d’administrateur local avant l’enregistrement.
 
-## <a name="microsoft-365-apps-for-enterprise"></a>Applications Microsoft 365 pour les entreprises
+## <a name="microsoft-365-apps-for-enterprise"></a>Applications Microsoft 365 for entreprise
 
 ### <a name="onedrive-for-business"></a>OneDrive Entreprise
 
