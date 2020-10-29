@@ -15,28 +15,26 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Fournir à vos utilisateurs des titres d’actualité à jour sur votre secteur d’activité et des informations de votre organisation, utilisez le service News pour activer un flux d’actualités personnalisé pour votre organisation.
-ms.openlocfilehash: 718e48c9db90ff7e598dd56c0228bb894b7a3a4d
-ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
+ms.openlocfilehash: c0758c3a762c39534629095345d935456cb938e9
+ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/28/2020
-ms.locfileid: "48779177"
+ms.locfileid: "48791821"
 ---
 # <a name="manage-industry-news"></a>Gérer les actualités industrielles
 
 Pour fournir à vos utilisateurs des titres d’actualité à jour concernant votre secteur d’activité et des informations de votre organisation, utilisez le service [News](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews) pour activer un flux d’actualités personnalisé pour votre organisation.Vous pouvez également gérer les paramètres de la page d’accueil Bing et de Microsoft Edge New Tab (en commençant par la version de Edge 87).
 
 ## <a name="what-your-users-will-see"></a>Ce que les utilisateurs verront
-
-:::image type="content" source="../../media/manage-industry-news-1.png" alt-text="Correctifs de mise à jour de Microsoft Search Industry":::
  
 Les utilisateurs connectés qui accèdent à la page d’accueil de Bing verront votre flux d’actualités sous les informations personnalisées de votre organisation.
 
-:::image type="content" source="../../media/manage-industry-news-2.jpg" alt-text="Correctifs de mise à jour de Microsoft Search Industry":::
+:::image type="content" source="../../media/manage-industry-news-2.jpg" alt-text="Capture d’écran du carrousel d’images avec l’actualité de l’industrie à partir du Web":::
 
 Ils peuvent également consulter les informations de travail de l’entreprise, de l’industrie et de l’industrie ou des informations personnalisées sur leur page d’onglet nouveau Microsoft Edge. 
 
-:::image type="content" source="../../media/manage-industry-news-3.png" alt-text="Correctifs de mise à jour de Microsoft Search Industry":::
+:::image type="content" source="../../media/manage-industry-news-3.png" alt-text="Capture d’écran du carrousel d’images avec l’actualité de l’industrie à partir du Web":::
 
 ## <a name="news-settings"></a>Paramètres des actualités
 

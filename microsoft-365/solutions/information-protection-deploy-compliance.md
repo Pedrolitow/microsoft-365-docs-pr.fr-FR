@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Découvrez comment utiliser le score de conformité et le gestionnaire de conformité pour améliorer votre niveau de protection des données personnelles.
-ms.openlocfilehash: 5b41fa9fc52253d415a22aaa3422a87c4f1bda7c
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: f90826795197b392f629eb8eec71b7f27081b697
+ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377098"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48791881"
 ---
 # <a name="use-compliance-manager-to-manage-improvement-actions"></a>Utiliser le gestionnaire de conformité pour gérer les actions d’amélioration
 
@@ -44,7 +44,7 @@ Le [Gestionnaire de conformité](../compliance/compliance-manager.md) est un out
 
 Le gestionnaire de conformité fournit des modèles prédéfinis pour la [création d’évaluations](../compliance/compliance-manager-assessments.md) alignées sur les réglementations liées à la confidentialité des données, telles que RGPD et HIPAA/Hi. Les modèles disposent d’un mappage de contrôle intégré pour vous aider à prendre des mesures d’amélioration pour répondre aux exigences de la réglementation. Chaque évaluation fournit des informations sur les contrôles que chaque réglementation appelle pour le service cible, ainsi que les contrôles gérés et les contrôles gérés par Microsoft. 
 
-L’utilisation d’un modèle prédéfini vous permet de commencer rapidement à utiliser les évaluations des risques. À mesure que vous vous familiarisez avec le gestionnaire de conformité, vous pouvez personnaliser un modèle prédéfini en ajoutant vos propres contrôles et actions d’amélioration, ou vous pouvez créer vos propres évaluations personnalisées pour répondre aux besoins de votre organisation.
+L’utilisation d’un modèle prédéfini vous permet de commencer rapidement à utiliser les évaluations des risques. À mesure que vous vous familiariserez avec le gestionnaire de conformité, vous pouvez personnaliser un modèle prédéfini en ajoutant vos propres contrôles et actions d’amélioration, ou vous pouvez créer vos propres évaluations personnalisées pour répondre aux besoins de votre organisation.
 
 Affichez la [liste complète des modèles d’évaluation](../compliance/compliance-manager-templates-list.md) fournis par le gestionnaire de conformité.
 
