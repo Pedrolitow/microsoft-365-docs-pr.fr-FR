@@ -14,14 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez le Guide de démarrage rapide du gestionnaire de conformité pour vous aider tout au long de votre compréhension, de la mise en place et de l’utilisation du gestionnaire de conformité.
-ms.openlocfilehash: 9fd86550652860b1c89be414f4c0b55c28a817e5
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 895f03482c0af9603aa96d907d7339a853ef5e9d
+ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48204348"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48791790"
 ---
-# <a name="compliance-manager-quickstart"></a>QuickStart du gestionnaire de conformité
+# <a name="compliance-manager-quickstart"></a>Gestionnaire de conformité Quickstart
 
 **Dans cet article :** Utilisez ce guide de démarrage rapide pour vous aider dans votre transition avec le gestionnaire de conformité Microsoft afin de gérer la conformité de votre organisation avec les réglementations, les stratégies et les normes.
 
@@ -39,7 +39,7 @@ Notre [page de présentation du gestionnaire de conformité](compliance-manager.
 
 - [Comprendre votre score de conformité](compliance-manager.md#understanding-your-compliance-score)
 - [Vue d’ensemble des éléments clés : contrôles, évaluations, modèles et actions d’amélioration](compliance-manager.md#key-elements-controls-assessments-templates-improvement-actions)
-- [Comprendre le tableau de bord du gestionnaire de conformité](compliance-manager-setup.md#understand-the-compliance-manger-dashboard)
+- [Comprendre le tableau de bord du gestionnaire de conformité](compliance-manager-setup.md#understand-the-compliance-manager-dashboard)
 - [Filtrer votre vue de tableau de bord](compliance-manager-setup.md#filtering-your-dashboard-view)
 - [En savoir plus sur les actions d’amélioration](compliance-manager-setup.md#improvement-actions-page)
 - [Comprendre les évaluations](compliance-manager.md#assessments)

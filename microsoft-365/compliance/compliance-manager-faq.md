@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Trouvez des réponses aux questions fréquemment posées sur le gestionnaire de conformité Microsoft, ce qui permet aux organisations de simplifier et d’automatiser les évaluations des risques.
-ms.openlocfilehash: 3e1b6cdbcafd0cb4af4545cb258dab2ce082a2d8
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 49886cba59cc486c4345e069a4b782951fed4c68
+ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48204352"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48791780"
 ---
 # <a name="compliance-manager-frequently-asked-questions"></a>Forum aux questions sur le gestionnaire de conformité
 
@@ -27,7 +27,7 @@ ms.locfileid: "48204352"
 
 Il n’existe maintenant qu’une solution : le gestionnaire de conformité. Cette section vous guide tout au long de la transition, en commençant par une présentation de base ci-dessous. Vous pouvez également accéder directement à l’une des sections suivantes :
 
-- [Votre organisation a principalement utilisé le gestionnaire de conformité (versions standard ou d’aperçu public), situé dans le portail d’approbation de service Microsoft](#your-organization-regularly-used-compliance-manger-in-the-service-trust-portal)
+- [Votre organisation a principalement utilisé le gestionnaire de conformité (versions standard ou d’aperçu public), situé dans le portail d’approbation de service Microsoft](#your-organization-regularly-used-compliance-manager-in-the-service-trust-portal)
 
 - [Votre organisation a principalement utilisé le score de conformité (préversion publique), situé dans le centre de conformité Microsoft 365](#your-organization-used-compliance-score-public-preview-in-the-microsoft-365-compliance-center)
 
@@ -41,7 +41,7 @@ La disponibilité générale du gestionnaire de conformité dans le centre de co
 
 Lisez ce billet de [blog](https://aka.ms/compliancemanager/GAblog) pour en savoir plus sur les nouveautés de la version GA du gestionnaire de conformité.
 
-#### <a name="your-organization-regularly-used-compliance-manger-in-the-service-trust-portal"></a>Votre organisation a utilisé régulièrement le gestionnaire de conformité dans le portail d’approbation de service
+#### <a name="your-organization-regularly-used-compliance-manager-in-the-service-trust-portal"></a>Votre organisation a utilisé régulièrement le gestionnaire de conformité dans le portail d’approbation de service
 
 Si vous avez utilisé le gestionnaire de conformité dans le portail d’approbation de service, toutes les données de votre organisation existent désormais dans le gestionnaire de conformité dans le centre de conformité Microsoft 365 à l’adresse https://compliance.microsoft.com/compliancemanager . Vous n’avez rien à faire pour reprendre votre gestionnaire de conformité dans son nouvel emplacement, autrement que pour mettre à jour les signets que vous avez à son emplacement précédent. Toutes vos évaluations et autres données ont été transférées pour vous.
 
@@ -51,7 +51,7 @@ Tout ce que vous avez utilisé dans les versions précédentes du gestionnaire d
 
 Voici quelques ressources utiles :
 
-- [Familiarisation avec votre nouvelle expérience du gestionnaire de conformité](compliance-manager-setup.md#understand-the-compliance-manger-dashboard)
+- [Se familiariser avec votre nouvelle expérience du gestionnaire de conformité](compliance-manager-setup.md#understand-the-compliance-manager-dashboard)
 - [Trouver des autorisations et d’autres informations de configuration pour le gestionnaire de conformité dans son nouvel accueil](compliance-manager-setup.md#who-can-access-compliance-manager)
 - [En savoir plus sur le centre de conformité Microsoft 365](microsoft-365-compliance-center.md)
 
