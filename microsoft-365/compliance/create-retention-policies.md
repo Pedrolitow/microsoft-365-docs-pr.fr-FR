@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez une stratégie de rétention pour garder un contrôle efficace sur le contenu que les utilisateurs génèrent par courriers électroniques, documents et conversations. Conservez ce que vous voulez et supprimez le reste.
-ms.openlocfilehash: 43bfe1b51b730dd41342f95a069645ff15a03437
-ms.sourcegitcommit: 095b1f52f2e73e8d44195916984efeb0908c2ad8
+ms.openlocfilehash: 6b30c5689981adaf3eb7f4893a8acf0398ca2339
+ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48755573"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48774037"
 ---
 # <a name="create-and-configure-retention-policies"></a>Créer et configurer des stratégies de rétention
 
@@ -83,7 +83,7 @@ Pour plus d’informations sur les stratégies de rétention pour Teams, voir [S
 
 #### <a name="additional-retention-policy-needed-to-support-teams"></a>Stratégie de rétention supplémentaire requise pour la prise en charge de Teams
 
-Teams n’est pas seulement des conversations et des messages de canaux. Si vous avez des équipes créées à partir d’un groupe Microsoft 365 (anciennement groupe Office 365), vous devez également configurer une stratégie de rétention qui inclut ce groupe Microsoft 365 à l’aide des **Groupes Office 365** emplacement. Cette stratégie de rétention s’applique au contenu de la boîte aux lettres, du site et des fichiers du groupe.
+Teams n’est pas seulement des conversations et des messages de canaux. Si vous avez des équipes créées à partir d’un groupe Microsoft 365 (anciennement groupe Office 365), vous devez également configurer une stratégie de rétention qui inclut ce groupe Microsoft 365 à l’aide de l’emplacement **Groupes Microsoft 365** . Cette stratégie de rétention s’applique au contenu de la boîte aux lettres, du site et des fichiers du groupe.
 
 Si vous possédez des sites d’équipe qui ne sont pas connectés à un groupe Microsoft 365, vous avez besoin d’une stratégie de rétention qui inclut les emplacements de **sites SharePoint** ou **comptes OneDrive** pour conserver et supprimer des fichiers dans Teams :
 
@@ -127,7 +127,7 @@ Pour en savoir plus sur le fonctionnement des stratégies de rétention pour Yam
 
 #### <a name="additional-retention-policies-needed-to-support-yammer"></a>Stratégies de rétention supplémentaires requises pour la prise en charge de Yammer
 
-Yammer est bien plus que des messages de la communauté et des messages privés. Pour conserver et supprimer des courriers électroniques pour votre réseau Yammer, configurez une stratégie de rétention supplémentaire qui inclut les groupes Microsoft 365 utilisés pour Yammer, à l’aide de l'emplacement **groupes Office 365** . 
+Yammer est bien plus que des messages de la communauté et des messages privés. Pour conserver et supprimer des courriers électroniques pour votre réseau Yammer, configurez une stratégie de rétention supplémentaire qui inclut les groupes Microsoft 365 utilisés pour Yammer, à l’aide de l'emplacement **Groupes Microsoft 365** . 
 
 Pour retenir et supprimer les fichiers qui sont stockés dans Yammer, vous avez besoin d’une stratégie de rétention qui inclut les emplacements  **Des sites SharePoint** ou **Des comptes OneDrive** :
 
@@ -156,7 +156,7 @@ Utilisez les instructions suivantes pour les stratégies de rétention qui s’a
     Informations spécifiques aux emplacements :
     - [Messagerie Exchange et dossiers publics Exchange](#configuration-information-for-exchange-email-and-exchange-public-folders)
     - [Sites SharePoint et comptes OneDrive](#configuration-information-for-sharepoint-sites-and-onedrive-accounts)
-    - [Groupes Office 365](#configuration-information-for-microsoft-365-groups)
+    - [Groupes Microsoft 365](#configuration-information-for-microsoft-365-groups)
     - [Skype Entreprise](#configuration-information-for-skype-for-business)
 
 4. Sur la page **Indiquez si vous souhaitez conserver le contenu et/ou le supprimer** de l’assistant, spécifiez les options de configuration pour la conservation et la suppression du contenu.
@@ -171,13 +171,13 @@ L’emplacement **Courrier Exchange** prend en charge la rétention du courrier 
 
 Les éléments de courrier suivants sont inclus : les messages (y compris les brouillons) avec leurs pièces jointes, les tâches et les éléments de calendrier lorsqu’ils ont une date de fin, ainsi que les notes. Les contacts, ainsi que les tâches et les éléments de calendrier qui n’ont pas de date de fin ne sont pas inclus. Les autres éléments stockés dans une boîte aux lettres, tels que les messages enregistrés de Skype et Teams, ne sont pas inclus à cet emplacement. Ces éléments ont leurs propres emplacements de rétention.
 
-Même si un groupe Microsoft 365 possède une boîte aux lettres Exchange, une stratégie de rétention qui inclut l’ensemble de l’emplacement de la **messagerie Exchange** n’inclut pas le contenu des boîtes aux lettres du groupe Microsoft 365. Pour conserver le contenu de ces boîtes aux lettres, sélectionnez l’emplacement **groupes Office 365** .
+Même si un groupe Microsoft 365 possède une boîte aux lettres Exchange, une stratégie de rétention qui inclut l’ensemble de l’emplacement de la **messagerie Exchange** n’inclut pas le contenu des boîtes aux lettres du groupe Microsoft 365. Pour conserver le contenu de ces boîtes aux lettres, sélectionnez l’emplacement **groupes Microsoft 365** .
 
 L’emplacement **Dossiers publics Exchange** applique les paramètres de rétention à tous les dossiers publics et ne peut pas être appliqué au niveau d’un dossier ou d’une boîte aux lettres.
 
 #### <a name="configuration-information-for-sharepoint-sites-and-onedrive-accounts"></a>Informations de configuration pour les sites SharePoint et les comptes OneDrive
 
-Lorsque vous choisissez l’emplacement **Sites SharePoint** , la stratégie de rétention peut conserver et supprimer les documents des sites de communication SharePoint, des sites d’équipe qui ne sont pas connectés par des groupes Office 365 ainsi que des sites classiques. Cette option ne prend pas en charge les sites d’équipe connectés par des groupes Office 365. Utilisez plutôt des emplacements de **groupes Office 365** qui s’appliquent au contenu de la boîte aux lettres, du site et des fichiers du groupe.
+Lorsque vous choisissez l’emplacement **Sites SharePoint** , la stratégie de rétention peut conserver et supprimer les documents des sites de communication SharePoint, des sites d’équipe qui ne sont pas connectés par des groupes Microsoft 365 ainsi que des sites classiques. Cette option ne prend pas en charge les sites d’équipe connectés par des groupes Microsoft 365. Utilisez plutôt des emplacements de **groupes Microsoft 365** qui s’appliquent au contenu de la boîte aux lettres, du site et des fichiers du groupe.
 
 Bien que la stratégie de rétention soit appliquée au niveau du site, seuls les documents ont des paramètres de rétention qui leur sont appliqués. Les paramètres de rétention ne s’appliquent pas aux structures d’organisation qui incluent des bibliothèques, des listes et des dossiers au sein du site.
 
@@ -192,9 +192,9 @@ Par exemple, pour un utilisateur du client contoso dont le nom d’utilisateur e
 
 Pour vérifier la syntaxe de votre client et identifier les URL des utilisateurs, voir [Obtenir la liste de toutes les URL OneDrive utilisateur de votre organisation](https://docs.microsoft.com/onedrive/list-onedrive-urls).
 
-### <a name="configuration-information-for-microsoft-365-groups"></a>Informations de configuration pour les groupes Microsoft 365
+### <a name="configuration-information-for-microsoft-365-groups"></a>Informations de configuration pour les Groupes Microsoft 365
 
-Pour conserver ou supprimer le contenu d’un groupe Microsoft 365 (anciennement groupe Office 365), utilisez l’emplacement **Groupes Office 365** . Même si un groupe Microsoft 365 possède une boîte aux lettres Exchange, une stratégie de rétention qui inclut l’ensemble de l’emplacement de la **messagerie Exchange** n’inclut pas le contenu des boîtes aux lettres du groupe Microsoft 365. De plus, bien que l’emplacement de la **messagerie Exchange** vous permette initialement de spécifier une boîte aux lettres de groupe à inclure ou à exclure, vous recevez une erreur indiquant que « RemoteGroupMailbox » n’est pas une sélection valide pour l’emplacement Exchange, lorsque vous essayez d’enregistrer la stratégie de rétention.
+Pour conserver ou supprimer le contenu d’un groupe Microsoft 365 (anciennement groupe Office 365), utilisez l’emplacement **Groupes Microsoft 365** . Même si un groupe Microsoft 365 possède une boîte aux lettres Exchange, une stratégie de rétention qui inclut l’ensemble de l’emplacement de la **messagerie Exchange** n’inclut pas le contenu des boîtes aux lettres du groupe Microsoft 365. De plus, bien que l’emplacement de la **messagerie Exchange** vous permette initialement de spécifier une boîte aux lettres de groupe à inclure ou à exclure, vous recevez une erreur indiquant que « RemoteGroupMailbox » n’est pas une sélection valide pour l’emplacement Exchange, lorsque vous essayez d’enregistrer la stratégie de rétention.
 
 Une stratégie de rétention appliquée à un groupe Microsoft 365 inclut la boîte aux lettres du groupe et le site des équipes, si un site d’équipes a été sélectionné au moment de la création du groupe ou de son ajout ultérieur au groupe. Les fichiers stockés sur le site d’équipes sont couverts par cet emplacement, mais pas les conversations Teams ou les messages de canal Teams ayant leur propre emplacement de stratégie de rétention.
 
