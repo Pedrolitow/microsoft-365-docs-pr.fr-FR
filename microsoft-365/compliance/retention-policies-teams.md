@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir les stratégies de rétention qui s’appliquent à Microsoft Teams.
-ms.openlocfilehash: 32656dc91350e5082171eb4fadd91d3a6287b9b7
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 85f272c5c663a95c749f7971b6e23c178dab2b94
+ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754060"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48795093"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>En savoir plus sur la rétention dans Microsoft Teams
 
@@ -38,7 +38,7 @@ Pour les autres charges de travail, consultez:
 
 ## <a name="whats-included-for-retention-and-deletion"></a>Éléments composant la rétention et la suppression
 
-Ces éléments Teams peuvent être conservés et supprimés à l’aide des stratégies de rétention Teams: Conversations et messages cde canal.
+Ces éléments Teams peuvent être conservés et supprimés à l’aide des stratégies de rétention Teams: Conversations et messages cde canal, y compris les images incorporées.
 
 Les messages Teams dans les canaux privés ne sont pas inclus et les réactions des autres personnes sous la forme d’émoticônes ne sont pas incluses.
 
@@ -55,11 +55,11 @@ Les conversations et les messages de canal Teams ne sont pas affectés par les s
 > [!NOTE]
 > Si un utilisateur est inclus dans une stratégie de rétention active qui conserve les données Teams et que vous supprimez une boîte aux lettres d’un utilisateur inclus dans cette stratégie, la boîte aux lettres est convertie en [boîte aux lettres inactive](inactive-mailboxes-in-office-365.md) pour conserver les données Teams. Si vous n’avez pas besoin de conserver ces données Teams pour l’utilisateur, excluez son compte de la stratégie de rétention avant de supprimer sa boîte aux lettres.
 
-Une fois qu'une politique de rétention est configurée pour les messages de conversation et de canal, une tâche de temporisation du service Exchange évalue périodiquement les éléments du dossier caché où sont stockés ces messages des Teams. Le travail de chronométrage prend jusqu'à sept jours. Lorsque ces éléments ont expiré leur période de rétention, ils sont déplacés vers le dossier SubstrateHolds - un autre dossier caché qui se trouve dans la boîte aux lettres de chaque utilisateur ou groupe pour stocker les éléments « à suppression douce » avant qu'ils ne soient définitivement supprimés.
+Lorsqu’une stratégie de rétention est configurée pour les messages de conversation et de canal, un travail du minuteur du service Exchange évalue périodiquement les éléments du dossier caché où sont stockés ces messages Teams. Le travail du minuteur prend jusqu’à 7 jours. Après l’expiration de la période de rétention de ces éléments, ils sont déplacés vers le dossier SubstrateHolds : il s’agit d’un autre dossier caché, qui se trouve dans la boîte aux lettres de chaque utilisateur ou groupe. Il permet de stocker les éléments « récupérables » avant leur suppression définitive.
 
-Une fois qu'une politique de rétention est configurée pour les messages de conversation et de canal, les chemins que prend le contenu dépendent du fait que la politique de rétention doit conserver puis supprimer, conserver seulement ou supprimer seulement.
+Lorsqu’une stratégie de rétention est configurée pour les messages de conversation et de canal, le traitement de leurs contenus dépend du paramétrage de la stratégie de rétention : ils peuvent être conservés puis supprimés, conservés sans être supprimés par la suite, ou simplement supprimés.
 
-Lorsque la politique de rétention consiste à conserver puis à supprimer :
+Lorsque la stratégie de rétention consiste à conserver puis à supprimer :
 
 ![Diagramme du flux de rétention pour les messages de conversation et de canal des Teams](../media/teamsretentionlifecycle.png)
 
@@ -78,11 +78,11 @@ Lorsque la stratégie de rétention consiste à conserver uniquement ou à suppr
 
 1. **Si un message de conversation ou de canal est modifié ou supprimé**  : une copie du message original est immédiatement créée dans le dossier SubstrateHolds pendant 21 jours et y est conservée jusqu'à l'expiration de la période de conservation. Ensuite, le message est définitivement supprimé du dossier SubstrateHolds dans les 24 heures.
 
-2. **Si l'élément n'est pas modifié ou supprimé** et pour les messages courants après édition pendant la période de rétention : Rien ne se passe avant et après la période de rétention ; le message reste dans son emplacement d'origine.
+2. **Si l’élément n’est pas modifié ou supprimé** et pour les messages actuels après édition après la modification durant la période de rétention : rien ne se passe avant et après la période de rétention. Le message reste le même.
 
 ### <a name="content-paths-for-delete-only-retention-policy"></a>Chemins d’accès du contenu pour la stratégie de rétention de suppression uniquement
 
-1. **Si le message n’est pas supprimé** pendant la période de rétention : à la fin de la période de rétention, il est déplacé vers le dossier SubstrateHolds. Cette action prend jusqu'à sept jours à compter de la date d'expiration. Ensuite, le message est définitivement supprimé du dossier SubstrateHolds dans les 24 heures.
+1. **Si le message n’est pas supprimé** pendant la période de rétention : à la fin de la période de rétention, il est déplacé vers le dossier SubstrateHolds. Cette action prend jusqu’à sept jours à compter de la date d’expiration. Ensuite, le message est définitivement supprimé du dossier SubstrateHolds dans les 24 heures.
 
 2. **Si l'élément est supprimé par l'utilisateur** pendant cette période, il est déplacé sous 21 jours vers le dossier SubstrateHolds où il est définitivement supprimé dans les 24 heures.
 
