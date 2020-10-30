@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: .
-ms.openlocfilehash: dff2ea4e144f8f8fcc0f42732141e110effe7e9e
-ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
+ms.openlocfilehash: 59e2c938c70dd8e3060fd85d084acbe8f79856ad
+ms.sourcegitcommit: 04a43a146cb62a10b1a4555ec3bed49eb08fbb99
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48774092"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48806635"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>Contrôler le transfert automatique du courrier électronique externe dans Microsoft 365
 
@@ -31,7 +31,7 @@ Les types de transferts automatiques suivants sont disponibles dans Microsoft 36
 
 - Les utilisateurs peuvent configurer des [règles de boîte de réception](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59) pour transférer automatiquement des messages vers des expéditeurs externes (délibérément ou en raison d’un compte compromis).
 
-- Les administrateurs peuvent configurer le transfert des [boîtes aux lettres](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) (également appelé transfert SMTP) pour transférer automatiquement les messages vers des destinataires externes.
+- Les administrateurs peuvent configurer le transfert des [boîtes aux lettres](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) (également appelé _transfert SMTP_ ) pour transférer automatiquement les messages vers des destinataires externes.
 
 Vous pouvez utiliser des stratégies de filtrage du courrier indésirable sortant pour contrôler le transfert automatique vers des destinataires externes. Trois paramètres sont disponibles :
 
@@ -45,9 +45,9 @@ Pour obtenir des instructions sur la configuration de ces paramètres, consultez
 
 > [!NOTE]
 > 
-> - La désactivation du transfert automatique désactive également les règles de boîte de réception qui redirigent les messages vers des adresses externes.
+> - La désactivation du transfert automatique désactive les règles de boîte de réception (utilisateurs) ou le transfert des boîtes aux lettres (administrateurs) qui redirigent les messages vers des adresses externes.
 > 
->   Office 365 n’autorise pas le transfert externe automatique par les règles de boîte de réception ou la configuration des boîtes aux lettres, ce qui fournit une stratégie par défaut sécurisée. Toutefois, l’administrateur peut modifier ces paramètres pour tous les utilisateurs de l’organisation. Créez des [stratégies de courrier indésirable sortant](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-the-outbound-spam-policy?view=o365-worldwide&preserve-view=true#use-the-security--compliance-center-to-create-outbound-spam-policies) et modifiez la section transfert automatique pour contrôler le transfert automatique des messages par les utilisateurs vers des expéditeurs externes. Celle-ci peut être appliquée ultérieurement aux expéditeurs internes auxquels la stratégie s’applique. Le transfert de messages entre les utilisateurs internes n’est pas affecté par une telle modification.
+> - Le transfert automatique des messages entre les utilisateurs internes n’est pas affecté par les paramètres des stratégies de filtrage du courrier indésirable sortant.
 > 
 > - Vous pouvez afficher des informations sur les utilisateurs qui transfèrent automatiquement des messages à des destinataires externes dans le [rapport de messages transférés](mfi-auto-forwarded-messages-report.md)automatiquement.
 

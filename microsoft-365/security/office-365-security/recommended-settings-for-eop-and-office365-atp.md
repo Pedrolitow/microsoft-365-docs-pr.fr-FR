@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Quelles sont les meilleures pratiques pour les paramètres de sécurité Exchange Online Protection (EOP) et Advanced Threat Protection (ATP) ? Quelles sont les recommandations actuelles pour la protection standard ? Qu’est-ce qui doit être utilisé si vous voulez être plus strict ? Quels sont les autres éléments que vous obtenez si vous utilisez également la protection avancée contre les menaces ?
-ms.openlocfilehash: fd2d680e093289aa5fc2dbcac127e35caf50098b
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 4afd662be28c047d5f738dc0f70f0254e7a7a83f
+ms.sourcegitcommit: 04a43a146cb62a10b1a4555ec3bed49eb08fbb99
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430656"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48806771"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Paramètres recommandés pour la sécurité ATP d’Office 365
 
@@ -30,11 +30,12 @@ ms.locfileid: "48430656"
 
 **Exchange Online Protection (EoP)** est le cœur de la sécurité des abonnements Microsoft 365 et empêche les courriers électroniques malveillants d’atteindre les boîtes de réception de vos employés. Toutefois, avec de nouvelles attaques plus sophistiquées émergentes tous les jours, des protections améliorées sont souvent requises. **Office 365 Advanced Threat Protection (ATP)** Le plan ATP 1 ou le plan ATP 2 contiennent des fonctionnalités supplémentaires qui donnent aux administrateurs plus de couches de sécurité, de contrôle et d’enquête.
 
-Bien que nous permettons aux administrateurs de sécurité de personnaliser leurs paramètres de sécurité, il existe deux niveaux de sécurité dans EOP et Office 365 ATP qui nous sont recommandés : **standard** et **strict**. L’environnement et les besoins de chaque client sont différents, mais nous pensons que ces niveaux de filtrage contribueront à empêcher le courrier indésirable d’atteindre la boîte de réception de vos employés dans la plupart des situations.
+Bien que nous permettons aux administrateurs de sécurité de personnaliser leurs paramètres de sécurité, il existe deux niveaux de sécurité dans EOP et Office 365 ATP qui nous sont recommandés : **standard** et **strict** . L’environnement et les besoins de chaque client sont différents, mais nous pensons que ces niveaux de filtrage contribueront à empêcher le courrier indésirable d’atteindre la boîte de réception de vos employés dans la plupart des situations.
 
 Pour appliquer automatiquement les paramètres standard ou stricts aux utilisateurs, reportez-vous à la rubrique [stratégies de sécurité prédéfinies dans EOP et Office 365 ATP](preset-security-policies.md).
 
-**Remarque**: la règle de courrier indésirable doit être activée sur les boîtes aux lettres afin que le filtrage fonctionne correctement. Il est activé par défaut, mais vous devez le vérifier si le filtrage ne semble pas fonctionner. Pour plus d’informations, voir [Configurer les paramètres du courrier indésirable sur les boîtes aux lettres Exchange Online dans Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
+> [!NOTE]
+> La règle de courrier indésirable doit être activée sur les boîtes aux lettres afin que le filtrage fonctionne correctement. Il est activé par défaut, mais vous devez le vérifier si le filtrage ne semble pas fonctionner. Pour plus d’informations, voir [Configurer les paramètres du courrier indésirable sur les boîtes aux lettres Exchange Online dans Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
 Cet article décrit les paramètres par défaut, ainsi que les paramètres recommandés standard et stricts pour vous aider à protéger vos utilisateurs.
 
@@ -62,7 +63,7 @@ Pour créer et configurer des stratégies de blocage du courrier indésirable, c
 |Période de rétention de quarantaine <br/><br/> _QuarantineRetentionPeriod_|15 jours|30 jours|30 jours||
 |**Conseils de sécurité** <br/><br/> _InlineSafetyTipsEnabled_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`||
 |Expéditeurs autorisés <br/><br/> _AllowedSenders_|Aucun|Aucun|Aucun||
-|Domaines d’expéditeur autorisés <br/><br/> _AllowedSenderDomains_|Aucun|Aucun|Aucun|L’ajout de domaines que vous possédez (_domaines acceptés_) à la liste des expéditeurs autorisés est une mauvaise idée. Les agresseurs seraient en mesure de vous envoyer des courriers électroniques qui seraient autrement filtrés. <br/><br/> Utilisez les fonctionnalités d' [usurpation d’identité](learn-about-spoof-intelligence.md) dans le centre de sécurité & conformité de la page **paramètres anti-courrier indésirable** pour examiner tous les expéditeurs qui usurpent l’identité des expéditeurs dans les domaines de messagerie de votre organisation ou usurper les adresses de messagerie de l’expéditeur dans les domaines externes.|
+|Domaines d’expéditeur autorisés <br/><br/> _AllowedSenderDomains_|Aucun|Aucun|Aucun|L’ajout de domaines à la liste des expéditeurs autorisés est une mauvaise idée. Les agresseurs seraient en mesure de vous envoyer des courriers électroniques qui seraient autrement filtrés. <br/><br/> Utilisez les fonctionnalités d' [usurpation d’identité](learn-about-spoof-intelligence.md) dans le centre de sécurité & conformité de la page **paramètres anti-courrier indésirable** pour examiner tous les expéditeurs qui usurpent l’identité des expéditeurs dans les domaines de messagerie de votre organisation ou usurper les adresses de messagerie de l’expéditeur dans les domaines externes.|
 |Expéditeurs bloqués <br/><br/> _BlockedSenders_|Aucun|Aucun|Aucun||
 |Domaines des expéditeurs bloqués <br/><br/> _BlockedSenderDomains_|Aucun|Aucun|Aucun||
 |**Activer les notifications de courrier indésirable à l’utilisateur final** <br/><br/> _EnableEndUserSpamNotifications_|Désactivé <br/><br/> `$false`|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`||
@@ -80,21 +81,21 @@ Nous vous **recommandons de désactiver ces paramètres ASF** pour les niveaux *
 
 |Nom de la fonctionnalité de sécurité|Commentaire|
 |---|---|
-|**Liens d’image vers des sites distants** (_IncreaseScoreWithImageLinks_)||
-|**Adresse IP numérique dans l’URL** (_IncreaseScoreWithNumericIps_)||
-|**Redirection UL vers un autre port** (_IncreaseScoreWithRedirectToOtherPort_)||
-|**URL vers les sites Web. biz ou. info** (_IncreaseScoreWithBizOrInfoUrls_)||
-|**Messages vides** (_MarkAsSpamEmptyMessages_)||
-|**JavaScript ou VBScript en HTML** (_MarkAsSpamJavaScriptInHtml_)||
-|**Balises Frame ou IFRAME en HTML** (_MarkAsSpamFramesInHtml_)||
-|**Balises d’objet dans le code html** (_MarkAsSpamObjectTagsInHtml_)||
-|**Balises embed en HTML** (_MarkAsSpamEmbedTagsInHtml_)||
-|**Balises de formulaire dans le code html** (_MarkAsSpamFormTagsInHtml_)||
-|**Bogues Web dans le code html** (_MarkAsSpamWebBugsInHtml_)||
-|**Appliquer la liste de mots sensibles** (_MarkAsSpamSensitiveWordList_)||
-|**Enregistrement SPF : échec matériel** (_MarkAsSpamSpfRecordHardFail_)||
-|**Filtrage des ID de l’expéditeur conditionnel : échec matériel** (_MarkAsSpamFromAddressAuthFail_)||
-|Notification de **non-remise rétrodiffusion** (_MarkAsSpamNdrBackscatter_)||
+|**Liens d’image vers des sites distants** ( _IncreaseScoreWithImageLinks_ )||
+|**Adresse IP numérique dans l’URL** ( _IncreaseScoreWithNumericIps_ )||
+|**Redirection UL vers un autre port** ( _IncreaseScoreWithRedirectToOtherPort_ )||
+|**URL vers les sites Web. biz ou. info** ( _IncreaseScoreWithBizOrInfoUrls_ )||
+|**Messages vides** ( _MarkAsSpamEmptyMessages_ )||
+|**JavaScript ou VBScript en HTML** ( _MarkAsSpamJavaScriptInHtml_ )||
+|**Balises Frame ou IFRAME en HTML** ( _MarkAsSpamFramesInHtml_ )||
+|**Balises d’objet dans le code html** ( _MarkAsSpamObjectTagsInHtml_ )||
+|**Balises embed en HTML** ( _MarkAsSpamEmbedTagsInHtml_ )||
+|**Balises de formulaire dans le code html** ( _MarkAsSpamFormTagsInHtml_ )||
+|**Bogues Web dans le code html** ( _MarkAsSpamWebBugsInHtml_ )||
+|**Appliquer la liste de mots sensibles** ( _MarkAsSpamSensitiveWordList_ )||
+|**Enregistrement SPF : échec matériel** ( _MarkAsSpamSpfRecordHardFail_ )||
+|**Filtrage des ID de l’expéditeur conditionnel : échec matériel** ( _MarkAsSpamFromAddressAuthFail_ )||
+|Notification de **non-remise rétrodiffusion** ( _MarkAsSpamNdrBackscatter_ )||
 |
 
 #### <a name="eop-outbound-spam-policy-settings"></a>Paramètres de stratégie de courrier indésirable sortant EOP
@@ -167,9 +168,9 @@ Pour plus d’informations sur ces paramètres, consultez la rubrique [emprunt d
 
 |Nom de la fonctionnalité de sécurité|Par défaut|Standard|Empêcher|Commentaire|
 |---|:---:|:---:|:---:|---|
-|Utilisateurs protégés : **Ajouter des utilisateurs à protéger** <br/><br/> _EnableTargetedUserProtection_ <br/><br/> _TargetedUsersToProtect_|Désactivé <br/><br/> `$false` <br/><br/> aucune|Activé <br/><br/> `$true` <br/><br/> \<list of users\>|Activé <br/><br/> `$true` <br/><br/> \<list of users\>|En fonction de votre organisation, nous vous recommandons d’ajouter des utilisateurs (expéditeurs de messages) dans les rôles clés. En interne, les expéditeurs protégés peuvent être votre PDG, votre directeur financier et d’autres dirigeants. De manière externe, les expéditeurs protégés peuvent inclure les membres du Conseil ou votre Conseil d’administration.|
+|Utilisateurs protégés : **Ajouter des utilisateurs à protéger** <br/><br/> _EnableTargetedUserProtection_ <br/><br/> _TargetedUsersToProtect_|Désactivé <br/><br/> `$false` <br/><br/> none|Activé <br/><br/> `$true` <br/><br/> \<list of users\>|Activé <br/><br/> `$true` <br/><br/> \<list of users\>|En fonction de votre organisation, nous vous recommandons d’ajouter des utilisateurs (expéditeurs de messages) dans les rôles clés. En interne, les expéditeurs protégés peuvent être votre PDG, votre directeur financier et d’autres dirigeants. De manière externe, les expéditeurs protégés peuvent inclure les membres du Conseil ou votre Conseil d’administration.|
 |Domaines protégés : **inclure automatiquement les domaines dont je suis propriétaire** <br/><br/> _EnableOrganizationDomainsProtection_|Désactivé <br/><br/> `$false`|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`||
-|Domaines protégés : **inclure des domaines personnalisés** <br/><br/> _EnableTargetedDomainsProtection_ <br/><br/> _TargetedDomainsToProtect_|Désactivé <br/><br/> `$false` <br/><br/> aucune|Activé <br/><br/> `$true` <br/><br/> \<list of domains\>|Activé <br/><br/> `$true` <br/><br/> \<list of domains\>|En fonction de votre organisation, nous vous recommandons d’ajouter des domaines (domaines d’expéditeurs) dont vous n’êtes pas propriétaire, mais avec lesquels vous interagissez fréquemment.|
+|Domaines protégés : **inclure des domaines personnalisés** <br/><br/> _EnableTargetedDomainsProtection_ <br/><br/> _TargetedDomainsToProtect_|Désactivé <br/><br/> `$false` <br/><br/> none|Activé <br/><br/> `$true` <br/><br/> \<list of domains\>|Activé <br/><br/> `$true` <br/><br/> \<list of domains\>|En fonction de votre organisation, nous vous recommandons d’ajouter des domaines (domaines d’expéditeurs) dont vous n’êtes pas propriétaire, mais avec lesquels vous interagissez fréquemment.|
 |Utilisateurs protégés : **si un message électronique est envoyé par un utilisateur représenté** <br/><br/> _TargetedUserProtectionAction_|**Ne pas appliquer d’action** <br/><br/> `NoAction`|**Mettre en quarantaine le message** <br/><br/> `Quarantine`|**Mettre en quarantaine le message** <br/><br/> `Quarantine`||
 |Domaines protégés : **si un message électronique est envoyé par un domaine emprunté** <br/><br/> _TargetedDomainProtectionAction_|**Ne pas appliquer d’action** <br/><br/> `NoAction`|**Mettre en quarantaine le message** <br/><br/> `Quarantine`|**Mettre en quarantaine le message** <br/><br/> `Quarantine`||
 |**Afficher le Conseil pour les utilisateurs empruntés** <br/><br/> _EnableSimilarUsersSafetyTips_|Désactivé <br/><br/> `$false`|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`||
@@ -231,7 +232,8 @@ Pour configurer ces paramètres, reportez-vous à la rubrique [configurer des st
 
 Dans PowerShell, vous utilisez les applets de commande [New-safelinkspolicy permet](https://docs.microsoft.com/powershell/module/exchange/new-safelinkspolicy) et [Set-safelinkspolicy permet](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) pour ces paramètres.
 
-**Remarque**: comme décrit précédemment, il n’existe aucune stratégie de liens approuvés par défaut. Les valeurs de la colonne par défaut sont les valeurs par défaut dans les nouvelles stratégies de liens approuvés que vous créez.
+> [!NOTE]
+> Comme décrit précédemment, il n’existe aucune stratégie de liens approuvés par défaut. Les valeurs de la colonne par défaut sont les valeurs par défaut dans les nouvelles stratégies de liens approuvés que vous créez.
 
 ****
 
@@ -271,23 +273,24 @@ Pour configurer ces paramètres, voir [configurer des stratégies de pièces joi
 
 Dans PowerShell, vous utilisez les applets de commande [New-safeattachmentpolicy permet](https://docs.microsoft.com/powershell/module/exchange/new-safeattachmentpolicy) et [Set-safeattachmentpolicy permet](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) pour ces paramètres.
 
-**Remarque**: comme décrit précédemment, il n’y a pas de stratégie de pièces jointes approuvées par défaut. Les valeurs de la colonne par défaut sont les valeurs par défaut dans les nouvelles stratégies de pièces jointes approuvées que vous créez.
+> [!NOTE]
+> Comme décrit précédemment, il n’y a pas de stratégie de pièces jointes approuvées par défaut. Les valeurs de la colonne par défaut sont les valeurs par défaut dans les nouvelles stratégies de pièces jointes approuvées que vous créez.
 
 ****
 
 |Nom de la fonctionnalité de sécurité|Par défaut|Standard|Empêcher|Commentaire|
 |---|:---:|:---:|:---:|---|
 |**Pièces jointes fiables réponse aux programmes malveillants inconnus** <br/><br/> _Action_|Bloquer <br/><br/> `Block`|Bloquer <br/><br/> `Block`|Bloquer <br/><br/> `Block`||
-|**Redirection de la pièce jointe sur la détection** : **activer la redirection** <br/><br/> _Redirect_ <br/><br/> _RedirectAddress_|OFF et aucune adresse de messagerie n’est spécifiée. <br/><br/> `$true` <br/><br/> aucune|Et spécifiez une adresse de messagerie. <br/><br/> `$true` <br/><br/> une adresse de messagerie|Et spécifiez une adresse de messagerie. <br/><br/> `$true` <br/><br/> une adresse de messagerie|Rediriger les messages vers un administrateur de sécurité pour révision.|
+|**Redirection de la pièce jointe sur la détection** : **activer la redirection** <br/><br/> _Redirect_ <br/><br/> _RedirectAddress_|OFF et aucune adresse de messagerie n’est spécifiée. <br/><br/> `$true` <br/><br/> none|Et spécifiez une adresse de messagerie. <br/><br/> `$true` <br/><br/> une adresse de messagerie|Et spécifiez une adresse de messagerie. <br/><br/> `$true` <br/><br/> une adresse de messagerie|Rediriger les messages vers un administrateur de sécurité pour révision.|
 |**Appliquer la sélection ci-dessus si l’analyse anti-programme malveillant pour les pièces jointes expire ou si une erreur se produit.** <br/><br/> _ActionOnError_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`||
 |
 
 ## <a name="related-articles"></a>Articles connexes
 
-- Vous recherchez les meilleures pratiques pour les **règles de flux de messagerie Exchange (également appelées règles de transport**) ? Consultez la rubrique [Best Practices for Configuring mail Flow Rules in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices).
+- Vous recherchez les meilleures pratiques pour les **règles de flux de messagerie Exchange (également appelées règles de transport** ) ? Consultez la rubrique [Best Practices for Configuring mail Flow Rules in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices).
 
 - Les administrateurs et les utilisateurs peuvent envoyer des faux positifs (courriers électroniques marqués comme incorrects) et des faux négatifs (courrier incorrect autorisé) à Microsoft pour analyse. Pour plus d’informations, voir [Signaler des messages et des fichiers à Microsoft](report-junk-email-messages-to-microsoft.md).
 
 - Utilisez ces liens pour obtenir des informations sur **la configuration de votre** [service EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-your-eop-service), ainsi que sur la **configuration** de la [Protection avancée contre les menaces d’Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp). N’oubliez pas les instructions utiles dans «[protéger contre les menaces dans Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)».
 
-- Les **bases de sécurité pour Windows** sont disponibles [ici](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines) [pour les options](https://docs.microsoft.com/intune/protect/security-baselines) d’objet de stratégie de groupe/local et pour la sécurité basée sur Intune. Enfin, une comparaison entre Microsoft Defender Advanced Threat Protection (ATP) et les bases de sécurité Microsoft Intune est disponible [ici](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines).
+- Les **bases de sécurité pour Windows** sont disponibles ici : [où puis-je obtenir les bases de sécurité ?](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines) pour les options d’objets de stratégie de groupe/de site et les [bases de sécurité pour configurer les appareils Windows 10 dans Intune](https://docs.microsoft.com/intune/protect/security-baselines) pour la sécurité basée sur Intune. Enfin, une comparaison entre Microsoft Defender Advanced Threat Protection (ATP) et les bases de sécurité Microsoft Intune est disponible dans [compare the Microsoft Defender ATP et les bases de sécurité Windows Intune](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines).

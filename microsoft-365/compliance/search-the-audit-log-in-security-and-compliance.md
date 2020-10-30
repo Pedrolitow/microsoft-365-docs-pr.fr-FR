@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Vous pouvez utiliser le Centre de sécurité et conformité Office 365 ou le Centre de conformité Microsoft 365 pour rechercher dans le journal d’audit unifié les activités des utilisateurs et des administrateurs de votre organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e427cb2eaa282ebac46b47c6dd97718039c12cb8
-ms.sourcegitcommit: 3cdb670f10519f7af4015731e7910954ba9f70dc
+ms.openlocfilehash: 6c2ffc926114b8ffc2ebf2005b98e549ac03cf26
+ms.sourcegitcommit: 21c3e44862854c74e4008cfb661840f069c6b709
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48753343"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48787580"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Recherchez le journal d’audit dans le centre de conformité
 
@@ -674,6 +674,7 @@ Le tableau suivant répertorie les activités qui peuvent être enregistrées pa
 |Messages supprimés définitivement de la boîte aux lettres|HardDelete|Un courrier a été supprimé définitivement du dossier Éléments récupérables (supprimé définitivement de la boîte aux lettres).|
 |Autorisations de boîtes aux lettres de délégué supprimées|Remove-MailboxPermission|Un administrateur a supprimé l’autorisation FullAccess (qui était attribuée à un délégué) à partir de la boîte lettres d’un autre utilisateur. Une fois l’autorisation FullAccess supprimée, le délégué ne peut pas ouvrir l’autre boîte aux lettres ni accéder au contenu.|
 |Autorisations supprimées du dossier|RemoveFolderPermissions|Une autorisation de dossier a été supprimée. Les autorisations de dossier contrôlent quels utilisateurs de votre organisation peuvent accéder aux dossiers dans une boîte aux lettres et aux messages situés dans ces dossiers.|
+|Message envoyé|Envoyer|Un message a été envoyé, répondu ou transféré. Cette activité est uniquement enregistrée pour les utilisateurs disposant d’une licence Office 365 ou Microsoft 365 E5. Pour plus d’informations, voir la section « Accès aux événements critiques pour des enquêtes » dans [Audits Avancés](advanced-audit.md#access-to-crucial-events-for-investigations).|
 |Message envoyé à l’aide d’autorisations Envoyer en tant que|SendAs|Un message a été envoyé à l’aide de l’autorisation Envoyer en tant que. Cela signifie qu’un autre utilisateur a envoyé le message comme s’il provenait du propriétaire de la boîte aux lettres.|
 |Message envoyé à l’aide d’autorisations Envoyer de la part de|SendOnBehalf|Un message a été envoyé à l’aide de l’autorisation Envoyer de la part de. Cela signifie qu’un autre utilisateur a envoyé le message de la part du propriétaire de la boîte aux lettres. Le message indique au destinataire de la part de qui le message a été envoyé et qui a réellement envoyé le message.|
 |Règles de boîte de réception mises à jour à partir du client Outlook|UpdateInboxRules|Un propriétaire de boîte aux lettres ou un autre utilisateur ayant accès à la boîte aux lettres a modifié une règle de boîte de réception dans le client Outlook.|

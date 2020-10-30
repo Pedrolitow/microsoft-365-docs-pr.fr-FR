@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à utiliser le portail d’envoi du centre de sécurité & conformité pour envoyer des e-mails suspects, des courriers électroniques de hameçonnage suspects, du courrier indésirable et d’autres messages potentiellement nuisibles, des URL et des fichiers à Microsoft à des fins d’analyse.
-ms.openlocfilehash: 4bb0cd95daecfcba18ca1560e4c4780455b40157
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 5d4123acaf3c9891f9aeb8028173f3071c260935
+ms.sourcegitcommit: 04a43a146cb62a10b1a4555ec3bed49eb08fbb99
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446718"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48806759"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Utilisez la soumission de l’administrateur pour soumettre des courriers indésirables, l’hameçonnage, des URL et des fichiers à Microsoft
 
@@ -52,17 +52,17 @@ Pour d’autres façons d’envoyer des messages électroniques, des URL et des 
 
 ## <a name="report-suspicious-content-to-microsoft"></a>Signaler du contenu suspect à Microsoft
 
-1. Dans le centre de sécurité & conformité, accédez à envois de **gestion des menaces** \> **Submissions**, vérifiez que vous êtes sous l’onglet **soumissions administrateur** , puis cliquez sur **nouvelle soumission**.
+1. Dans le centre de sécurité & conformité, accédez à envois de **gestion des menaces** \> **Submissions** , vérifiez que vous êtes sous l’onglet **soumissions administrateur** , puis cliquez sur **nouvelle soumission** .
 
 2. Utilisez le menu volant **nouvelle soumission** qui apparaît pour envoyer le message, l’URL ou la pièce jointe, comme décrit dans les sections suivantes.
 
 ### <a name="submit-a-questionable-email-to-microsoft"></a>Envoyer un courrier électronique en question à Microsoft
 
-1. Dans la section **type d’objet** , sélectionnez **courrier électronique**. Dans la section **format de soumission** , utilisez l’une des options suivantes :
+1. Dans la section **type d’objet** , sélectionnez **courrier électronique** . Dans la section **format de soumission** , utilisez l’une des options suivantes :
 
-   - **ID de message réseau**: il s’agit d’une valeur GUID qui est disponible dans l’en-tête **X-MS-Exchange-Organization-Network-message-ID** du message.
+   - **ID de message réseau** : il s’agit d’une valeur GUID qui est disponible dans l’en-tête **X-MS-Exchange-Organization-Network-message-ID** du message.
 
-   - **Fichier**: cliquez sur **choisir un fichier**. Dans la boîte de dialogue qui s’ouvre, recherchez et sélectionnez le fichier. eml ou. MSG, puis cliquez sur **ouvrir**.
+   - **Fichier** : cliquez sur **choisir un fichier** . Dans la boîte de dialogue qui s’ouvre, recherchez et sélectionnez le fichier. eml ou. MSG, puis cliquez sur **ouvrir** .
 
 2. Dans la section **destinataires** , spécifiez un ou plusieurs destinataires sur lesquels vous souhaitez exécuter une vérification de stratégie. La vérification de stratégie détermine si l’analyse du courrier électronique a contourné les messages en raison des stratégies de l’utilisateur ou de l’organisation.
 
@@ -70,7 +70,7 @@ Pour d’autres façons d’envoyer des messages électroniques, des URL et des 
 
    - **Ne doit pas avoir été bloqué**
 
-   - **Doit avoir été bloqué**: sélectionnez **courrier indésirable**, **hameçonnage**ou **programme malveillant**. Si vous n’êtes pas sûr, utilisez votre meilleure appréciation.
+   - **Doit avoir été bloqué** : sélectionnez **courrier indésirable** , **hameçonnage** ou **programme malveillant** . Si vous n’êtes pas sûr, utilisez votre meilleure appréciation.
 
 4. Si le filtre a été contourné en raison de stratégies lors de l’envoi, vous verrez des informations sur cette stratégie.
 
@@ -82,13 +82,13 @@ Pour d’autres façons d’envoyer des messages électroniques, des URL et des 
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>Envoyer une URL suspecte à Microsoft
 
-1. Dans la section **type d’objet** , sélectionnez **URL**. Dans la zone qui s’affiche, entrez l’URL complète (par exemple, `https://www.fabrikam.com/marketing.html` ).
+1. Dans la section **type d’objet** , sélectionnez **URL** . Dans la zone qui s’affiche, entrez l’URL complète (par exemple, `https://www.fabrikam.com/marketing.html` ).
 
 2. Dans la section **raison de l’envoi** , sélectionnez l’une des options suivantes :
 
    - **Ne doit pas avoir été bloqué**
 
-   - **Doit avoir été bloqué**: sélectionnez **hameçonnage** ou **programme malveillant**.
+   - **Doit avoir été bloqué** : sélectionnez **hameçonnage** ou **programme malveillant** .
 
 3. Lorsque vous avez terminé, cliquez sur le bouton **Envoyer** .
 
@@ -96,15 +96,15 @@ Pour d’autres façons d’envoyer des messages électroniques, des URL et des 
 
 ### <a name="submit-a-suspected-file-to-microsoft"></a>Envoyer un fichier suspect à Microsoft
 
-1. Dans la section **type d’objet** , sélectionnez **pièce jointe**.
+1. Dans la section **type d’objet** , sélectionnez **pièce jointe** .
 
-2. Cliquez sur **choisir un fichier**. Dans la boîte de dialogue qui s’ouvre, recherchez et sélectionnez le fichier, puis cliquez sur **ouvrir**.
+2. Cliquez sur **choisir un fichier** . Dans la boîte de dialogue qui s’ouvre, recherchez et sélectionnez le fichier, puis cliquez sur **ouvrir** .
 
 3. Dans la section **raison de l’envoi** , sélectionnez l’une des options suivantes :
 
    - **Ne doit pas avoir été bloqué**
 
-   - **Doit avoir été bloqué**: le **programme malveillant** est le seul choix et est automatiquement sélectionné..
+   - **Doit avoir été bloqué** : le **programme malveillant** est le seul choix et est automatiquement sélectionné..
 
 4. Lorsque vous avez terminé, cliquez sur le bouton **Envoyer** .
 
@@ -112,7 +112,7 @@ Pour d’autres façons d’envoyer des messages électroniques, des URL et des 
 
 ## <a name="view-admin-submissions"></a>Afficher les soumissions de l’administrateur
 
-Dans le centre de sécurité & conformité, accédez à envois de **gestion des menaces** \> **Submissions**, vérifiez que vous êtes sous l’onglet **soumissions administrateur** , puis cliquez sur **nouvelle soumission**.
+Dans le centre de sécurité & conformité, accédez à envois de **gestion des menaces** \> **Submissions** , vérifiez que vous êtes sous l’onglet **soumissions administrateur** , puis cliquez sur **nouvelle soumission** .
 
 En haut de la page, vous pouvez entrer une date de début, une date de fin et, par défaut, vous pouvez filtrer par **ID de soumission** (valeur Guid affectée à chaque envoi) en entrant une valeur dans la zone et en cliquant sur le ![ bouton actualiser ](../../media/scc-quarantine-refresh.png) . Update
 
@@ -126,9 +126,9 @@ Pour modifier les critères de filtre, cliquez sur le bouton **ID de soumission*
 
 ![Options de filtrage pour les soumissions d’administration](../../media/admin-submission-email-filter-options.png)
 
-Pour exporter les résultats, cliquez sur **Exporter** vers le haut de la page, puis sélectionnez **données de graphique** ou **tableau**. Dans la boîte de dialogue qui s’affiche, enregistrez le fichier. csv.
+Pour exporter les résultats, cliquez sur **Exporter** vers le haut de la page, puis sélectionnez **données de graphique** ou **tableau** . Dans la boîte de dialogue qui s’affiche, enregistrez le fichier. csv.
 
-Sous le graphique, il existe trois onglets : **e-mail** (par défaut), **URL**et **pièce jointe**.
+Sous le graphique, il existe trois onglets : **e-mail** (par défaut), **URL** et **pièce jointe** .
 
 ### <a name="view-admin-email-submissions"></a>Afficher les envois de courrier de l’administrateur
 
@@ -137,7 +137,7 @@ Cliquez sur l’onglet **e-mail** .
 Vous pouvez cliquer sur le bouton **options de colonne** dans la partie inférieure de la page pour ajouter ou supprimer des colonnes dans l’affichage :
 
 - **Date**
-- **ID de soumission**: valeur Guid assignée à chaque soumission.
+- **ID de soumission** : valeur Guid assignée à chaque soumission.
 - **Soumis par**<sup>\*</sup>
 - **Sujet**<sup>\*</sup>
 - **Sender**
@@ -184,9 +184,9 @@ Vous pouvez cliquer sur le bouton **options de colonne** dans la partie inférie
 
 Si vous avez déployé le [complément de rapport de message](enable-the-report-message-add-in.md)ou que les utilisateurs utilisent la [création de rapports intégrée dans Outlook sur le Web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md), vous pouvez voir ce que les utilisateurs signalent sous l’onglet **soumissions** de l’utilisateur.
 
-1. Dans le centre de sécurité & conformité, accédez **Threat management** à \> **envois**de gestion des menaces.
+1. Dans le centre de sécurité & conformité, accédez **Threat management** à \> **envois** de gestion des menaces.
 
-2. Sélectionnez l’onglet **soumissions utilisateur** , puis cliquez sur **nouvelle soumission**.
+2. Sélectionnez l’onglet **soumissions utilisateur** , puis cliquez sur **nouvelle soumission** .
 
 Vous pouvez cliquer sur le bouton **options de colonne** dans la partie inférieure de la page pour ajouter ou supprimer des colonnes dans l’affichage :
 
@@ -211,13 +211,13 @@ Pour modifier les critères de filtre, cliquez sur le bouton **expéditeur** , p
 
 ![Options de filtrage pour les soumissions des utilisateurs](../../media/user-submissions-filter-options.png)
 
-Pour exporter les résultats, cliquez sur **Exporter** vers le haut de la page, puis sélectionnez **données de graphique** ou **tableau**. Dans la boîte de dialogue qui s’affiche, enregistrez le fichier. csv.
+Pour exporter les résultats, cliquez sur **Exporter** vers le haut de la page, puis sélectionnez **données de graphique** ou **tableau** . Dans la boîte de dialogue qui s’affiche, enregistrez le fichier. csv.
 
 ## <a name="view-user-submissions-to-the-custom-mailbox"></a>Afficher les soumissions des utilisateurs à la boîte aux lettres personnalisée
 
 **Si** vous avez [configuré une boîte aux lettres personnalisée](user-submission.md) pour recevoir des messages signalés par l’utilisateur, vous pouvez afficher et envoyer également les messages qui ont été remis à la boîte aux lettres de création de rapports.
 
-1. Dans le centre de sécurité & conformité, accédez **Threat management** à \> **envois**de gestion des menaces.
+1. Dans le centre de sécurité & conformité, accédez **Threat management** à \> **envois** de gestion des menaces.
 
 2. Sélectionnez l’onglet **boîte aux lettres personnalisée** .
 
@@ -232,7 +232,11 @@ Vous pouvez cliquer sur le bouton **options de colonne** dans la partie inférie
 
 En haut de la page, vous pouvez entrer une date de début, une date de fin et un filtre par **envoyé par** en entrant une valeur dans la zone, puis en cliquant sur le ![ bouton actualiser ](../../media/scc-quarantine-refresh.png) . Update
 
-Pour exporter les résultats, cliquez sur **Exporter** vers le haut de la page, puis sélectionnez **données de graphique** ou **tableau**. Dans la boîte de dialogue qui s’affiche, enregistrez le fichier. csv.
+Pour exporter les résultats, cliquez sur **Exporter** vers le haut de la page, puis sélectionnez **données de graphique** ou **tableau** . Dans la boîte de dialogue qui s’affiche, enregistrez le fichier. csv.
+
+## <a name="undo-user-submissions"></a>Annuler les soumissions de l’utilisateur
+
+Une fois qu’un utilisateur envoie un e-mail suspect à la boîte aux lettres personnalisée, l’utilisateur et l’administrateur n’ont pas la possibilité d’annuler l’envoi. Si l’utilisateur souhaite récupérer le courrier, il sera disponible pour la récupération dans les dossiers éléments supprimés ou courrier indésirable. 
 
 ### <a name="submit-messages-to-microsoft-from-the-custom-mailbox"></a>Envoyer des messages à Microsoft à partir de la boîte aux lettres personnalisée
 

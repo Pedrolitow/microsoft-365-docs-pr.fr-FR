@@ -20,12 +20,12 @@ description: 'Déterminez le montant des taxes à payer pour votre abonnement Mi
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: d3d1bc1239cb99da33f776e603356ccae95a2353
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: d3654dd307e15e58acdd06277cf7338da537e5c6
+ms.sourcegitcommit: 04a43a146cb62a10b1a4555ec3bed49eb08fbb99
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464095"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48806599"
 ---
 # <a name="tax-information"></a>Informations fiscales
 
@@ -99,21 +99,21 @@ Les entreprises dans les pays suivants peuvent fournir leur numéro de TVA ou le
 
 ## <a name="europe-the-middle-east-and-africa-emea"></a>Europe, Moyen Orient et Afrique (EMEA)
 
-Lorsque vous achetez des services Microsoft 365 dans l’Union européenne, cet achat est soumis à la T.V.A. Value-Added.
+Lorsque vous achetez des services Microsoft 365 dans la région EMEA, cet achat peut être soumis à la T.V.A. Value-Added Tax.
   
-- Si vous êtes dans un État membre de l’Union européenne et que vous ne fournissez pas votre numéro de TVA local valide, Microsoft Ireland Operations Ltd. applique le taux de T.V.A. local actuel, en fonction du pays de facturation défini sur.
+- Si vous êtes dans un pays membre de l’Union européenne, Arménie, Belarus, Norvège, Turquie ou Émirats Arabes Unis, et que vous ne fournissez pas votre numéro de TVA local valide, Microsoft Ireland Operations Ltd. applique le taux de T.V.A. local actuel, en fonction du pays de facturation défini sur.
 
-- Si vous vous trouvez en Suisse ou au Liechtenstein, le taux en vigueur en Suisse est appliqué, que vous ayez fourni un numéro de TVA ou non.
+- Si vous êtes en Liechtenstein, en Russie, en Serbie, en Afrique du Sud ou en Suisse, la TVA est appliquée, que vous fournissiez ou non votre numéro de TVA.
 
-- En règle générale, si vous vous trouvez dans un pays EMEA en dehors de l’Union européenne et en Suisse/Liechtenstein, la TVA n’est pas facturée par Microsoft Ireland Operations Ltd.
-
-- Avant de valider votre numéro de TVA, celui-ci doit être disponible pour la vérification dans le système d'échange d'informations sur la TVA (VIES). Si votre numéro de TVA ne peut pas être vérifié, contactez votre administration fiscale locale.
+- Pour les clients de l’UE, avant de pouvoir valider votre numéro de TVA, celui-ci doit être disponible pour la vérification dans le système d’échange d’informations sur la TVA (VIES). Si votre numéro de TVA ne peut pas être vérifié, contactez votre administration fiscale locale.
 
 Vous pouvez prétendre à un taux de T.V.A. nul si :
   
 - **Vous êtes dans un État membre de l’Union européenne en dehors de l’Irlande :** Vous pouvez indiquer votre numéro de TVA local valide. Cela permet à Microsoft Ireland Operations Ltd. d’évaluer la TVA de la transaction. Toutefois, vous avez peut-être une obligation de comptabilité TVA locale. Si vous avez des doutes, consultez votre conseiller fiscal. Pour obtenir des instructions, consultez [la rubrique ajouter votre ID TVA](#add-your-vat-id).
 
 - **Vous êtes en Irlande et vous avez la certification d’exemption de TVA valide appropriée :** Microsoft Ireland Operations Ltd. peut être autorisé à exempter la TVA de la transaction. Si ce n’est pas le cas, Microsoft Ireland Operations Ltd. applique le taux de T.V.A. irlandais actuel, que vous fournissiez un numéro de TVA ou non.
+
+- **Vous êtes en Arménie, au Belarus, en Norvège, en Turquie ou dans les Émirats Arabes Unis :** Vous pouvez indiquer votre numéro de TVA local. Cela donne droit à Microsoft Ireland Operations Ltd. à la T.V.A. taux zéro de la transaction. Toutefois, vous avez peut-être une obligation de comptabilité TVA locale, veuillez vérifier vos conseillers fiscaux si vous avez des doutes. Pour obtenir des instructions, consultez [la rubrique ajouter votre ID TVA](#add-your-vat-id).
 
 ## <a name="asia-pacific-countries-apac"></a>Pays d'Asie-Pacifique (APAC)
 
@@ -136,10 +136,10 @@ Si votre facturation est réalisée par Microsoft Corporation ([reportez-vous à
 ## <a name="add-your-vat-id"></a>Ajouter votre numéro de TVA
 
 1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
-2. Sous l’onglet **produits** , sélectionnez l’abonnement que vous souhaitez mettre à jour.
-3. Sur la page Détails de l’abonnement, dans la section **adresse d’utilisation du service** , sélectionnez **modifier l’adresse d’utilisation du service**.
-4. Dans le volet **modifier votre adresse d’utilisation des services** , dans la zone numéro de **TVA** , saisissez votre numéro de TVA, y compris le préfixe et sans espaces.
-5. Sélectionnez **Enregistrer**.
+2. Sur l’onglet **Produits** , sélectionnez l’abonnement que vous souhaitez mettre à jour.
+3. Sur la page Détails de l’abonnement, dans la section **adresse d’utilisation du service** , sélectionnez **modifier l’adresse d’utilisation du service** .
+4. Dans le volet **modifier l’adresse d’utilisation du service** , dans la zone numéro de **TVA** , saisissez votre numéro de TVA, y compris le préfixe et sans espaces.
+5. Sélectionnez **Enregistrer** .
 
 ## <a name="how-taxes-are-calculated"></a>Mode de calcul des taxes
 
