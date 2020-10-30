@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Configurez les points de terminaison contre la protection contre la perte de données Microsoft 365 pour surveiller les activités des fichiers et implémenter des actions de protection pour ces fichiers aux points de terminaison.
-ms.openlocfilehash: c579d0bbfdc72e56d99558ffa7e6812d00098c0d
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 82ba434d1874ce57abcf0bcc4b60858e0e2ccbf8
+ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430679"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48779212"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention-preview"></a>Prise en main des points de terminaison de protection contre la perte de données (aperçu)
 
@@ -82,12 +82,23 @@ Les données du point de terminaison DLP peuvent être affichées dans [l’Expl
 Assurez-vous que les appareils Windows 10 pour lesquels vous envisagez de déployer le point de terminaison DLP répondent à ces exigences.
 
 1. Vous devez exécuter Windows 10 x64 Build 1809 ou version ultérieure.
-2. Tous les appareils doivent être [joints à Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join) ou joints à Azure AD Hybride.
-3. Installez le navigateur Microsoft Chromium Edge sur l’appareil de point de terminaison afin d’appliquer des actions de stratégie pour l’activité de téléchargement vers le Cloud. [Télécharger le nouveau Microsoft Edge sur la base de chrome](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
+
+2. La version du client anti-programme malveillant est 4.18.2009.7 ou ultérieure. Vérifiez votre version actuelle à l’aide de l’application Sécurité Windows, sélectionnez l’icône Paramètres, puis À propos de. Le numéro de version est répertorié sous version du client anti-programme malveillant. Effectuez une mise à jour vers la dernière version du client anti-programme malveillant en installant Windows Update KB4052623. Remarque : aucune des composants de sécurité Windows ne doit être actif, vous pouvez exécuter la protection contre la perte de données de point de terminaison indépendamment de l’état de Sécurité Windows.
+
+3. Les mises à jour Windows suivantes sont installées. Remarque : ces mises à jour ne sont pas des conditions préalables à l’intégration d’un appareil au DLP de point de terminaison , mais contiennent des correctifs pour les problèmes importants qui doivent donc être installés avant d’utiliser le produit.
+
+    - Pour Windows 10 version 1809 : KB4559003, KB4577069, KB4580390
+    - Pour Windows 10 version 1903 ou 1909 : KB4559004, KB4577062, KB4580386
+    - Pour Windows 10 version 2004 : KB4568831, KB4577063
+    - Pour les appareils exécutant Office 2016 (et non aucune autre version d’Office) : KB4577063 
+
+4. Tous les appareils doivent être [joints à Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join) ou jointure hybride Azure AD.
+
+5. Installez le navigateur Microsoft Chromium Edge sur l’appareil de point de terminaison afin d’appliquer des actions de stratégie pour l’activité de téléchargement vers le Cloud. [Télécharger le nouveau Microsoft Edge sur la base de chrome](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
 
 ## <a name="onboarding-devices-into-device-management"></a>Dispositifs d’intégration dans la gestion des appareils
 
- Vous devez activer la surveillance des appareils et intégrer vos points de terminaison avant de pouvoir surveiller et protéger les éléments sensibles sur un appareil. Ces deux actions sont effectuées dans le portail de conformité Microsoft 365.
+Vous devez activer la surveillance des appareils et intégrer vos points de terminaison avant de pouvoir surveiller et protéger les éléments sensibles sur un appareil. Ces deux actions sont effectuées dans le portail de conformité Microsoft 365.
 
 Lorsque vous voulez intégrer des appareils qui n’ont pas encore été intégrés, vous devez télécharger et déployer les scripts appropriés sur ces appareils. Suivez la procédure [d’intégration d’appareils](endpoint-dlp-getting-started.md#onboarding-devices).
 
@@ -98,19 +109,26 @@ Si vous disposez déjà d’appareils incorporés dans [Microsoft Defender pour 
 Dans ce scénario de déploiement, vous allez intégrer des appareils qui n’ont pas encore été intégrés, et vous voulez simplement contrôler et protéger les éléments sensibles contre le partage involontaire sur les appareils Windows 10.
 
 1. Ouvrez le [Centre de conformité Microsoft](https://compliance.microsoft.com).
-2. Ouvrez la page Paramètres du centre de conformité et sélectionnez **Appareils intégrés**. 
 
-   ![activer la gestion des appareils](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
+2. Ouvrez la page Paramètres du centre de conformité et sélectionnez **Appareils intégrés** . 
+
+   > [!div class="mx-imgBorder"]
+   > ![activer la gestion des appareils](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
 
    > [!NOTE]
    > Bien que l’activation de l’intégration des appareils dure généralement environ 60 secondes, patientez jusqu’à 30 minutes avant de contacter le support Microsoft.
 
-3. Sélectionnez **Gestion des appareils** pour ouvrir la liste des **Appareils**. La liste est vide tant que vous n’avez pas intégré de périphériques.
-4. Sélectionnez **Intégration** pour lancer le processus d’intégration.
-5. Choisissez la manière dont vous voulez déployer ces autres appareils à partir de la liste**Méthode de déploiement**, puis **Télécharger le package**.
+3. Sélectionnez **Gestion des appareils** pour ouvrir la liste des **Appareils** . La liste est vide tant que vous n’avez pas intégré de périphériques.
 
-   ![Méthode de déploiement](../media/endpoint-dlp-getting-started-3-deployment-method.png)
+4. Sélectionnez **Intégration** pour lancer le processus d’intégration.
+
+5. Choisissez la manière dont vous voulez déployer ces autres appareils à partir de la liste **Méthode de déploiement** , puis **Télécharger le package** .
+
+   > [!div class="mx-imgBorder"]
+   > ![méthode de déploiement](../media/endpoint-dlp-getting-started-3-deployment-method.png)
+   
 6. Suivez les procédures appropriées dans [Outils et méthodes d’intégration pour les ordinateurs Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Ce lien vous dirige vers une page d’accueil dans laquelle vous pouvez accéder aux procédures Microsoft Defender pour point de terminaison qui correspondent au package de déploiement que vous avez sélectionné à l’étape 5 :
+
     - Intégrer les ordinateurs Windows 10 utilisant une stratégie de groupe
     - Intégrer les ordinateurs Windows à l’aide du gestionnaire de configuration de point de terminaison Microsoft
     - Intégrer les ordinateurs Windows 10 à l’aide des outils de gestion des appareils mobiles
@@ -127,18 +145,27 @@ Une fois l’opération effectuée et le point de terminaison intégré, celui-c
 Dans ce scénario, Microsoft Defender pour point de terminaison est déjà déployé et des points de terminaison y sont signalés. Tous ces points de terminaison s’affichent dans la liste des appareils gérés. Vous pouvez continuer à intégrer de nouveaux appareils dans le point de terminaison DLP pour étendre la couverture à l’aide de la [procédure d’intégration d’appareils](endpoint-dlp-getting-started.md#onboarding-devices).
 
 1. Ouvrez le [Centre de conformité Microsoft](https://compliance.microsoft.com).
-2. Ouvrez la page Paramètres du centre de conformité et sélectionnez **Activer la surveillance d’appareils**.
-3. Sélectionnez **Gestion des appareils** pour ouvrir la liste des **Appareils**. Vous devriez voir apparaître la liste des appareils qui signalent déjà à Microsoft Defender pour point de terminaison. ![Gestion des appareils](../media/endpoint-dlp-getting-started-2-device-management.png)
+
+2. Ouvrez la page Paramètres du centre de conformité et sélectionnez **Activer la surveillance d’appareils** .
+
+3. Sélectionnez **Gestion des appareils** pour ouvrir la liste des **Appareils** . Vous devriez voir apparaître la liste des appareils qui signalent déjà à Microsoft Defender pour point de terminaison.
+
+   > [!div class="mx-imgBorder"]
+   > ![Gestion des appareils](../media/endpoint-dlp-getting-started-2-device-management.png)
+   
 4. Sélectionnez **Intégration** si vous avez besoin d’intégrer d’autres appareils.
-5. Choisissez la manière dont vous voulez déployer ces autres appareils à partir de la liste**Méthode de déploiement**, puis **Télécharger le package**.
+
+5. Choisissez la manière dont vous voulez déployer ces autres appareils à partir de la liste **Méthode de déploiement** , puis **Télécharger le package** .
+
 6. Suivez les procédures appropriées dans [Outils et méthodes d’intégration pour les ordinateurs Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Ce lien vous dirige vers une page d’accueil dans laquelle vous pouvez accéder aux procédures Microsoft Defender pour point de terminaison qui correspondent au package de déploiement que vous avez sélectionné à l’étape 5 :
+
     - Intégrer les ordinateurs Windows 10 utilisant une stratégie de groupe
     - Intégrer les ordinateurs Windows à l’aide du gestionnaire de configuration de point de terminaison Microsoft
     - Intégrer les ordinateurs Windows 10 à l’aide des outils de gestion des appareils mobiles
     - Intégrer les ordinateurs Windows 10 utilisant un script local
     - Intégrer les ordinateurs virtuels d’infrastructure de bureau virtuel (VDI) non persistants.
 
-Une fois l’opération effectuée et le point de terminaison intégré, celui-ci doit être visible dans le tableau des **Appareils** et commencer à créer des rapports d’activité d’audit dans l’**Explorateur d’activités**.
+Une fois l’opération effectuée et le point de terminaison intégré, celui-ci doit être visible dans le tableau des **Appareils** et commencer à créer des rapports d’activité d’audit dans l’ **Explorateur d’activités** .
 
 > [!NOTE]
 >Cette expérience est sous l’application de la licence. Sans la licence requise, les données ne sont pas visibles ni accessibles.
@@ -146,9 +173,11 @@ Une fois l’opération effectuée et le point de terminaison intégré, celui-c
 ### <a name="viewing-endpoint-dlp-data-in-activity-explorer"></a>Affichage de données DLP de point de terminaison dans l’Explorateur d’activités
 
 1. Ouvrez la [Page classification des données](https://compliance.microsoft.com/dataclassification?viewid=overview) pour votre domaine dans le centre de conformité Microsoft 365, puis sélectionnez Explorateur d’activités.
+
 2. Reportez-vous aux procédures décrites dans [Prise en main de l’Explorateur d’activités](data-classification-activity-explorer.md) pour accéder aux données de vos appareils de point de terminaison et les filtrer.
 
-![filtre de l’Explorateur d’activités pour les appareils de point de terminaison](../media/endpoint-dlp-4-getting-started-activity-explorer.png)
+   > [!div class="mx-imgBorder"]
+   > ![filtre de l’Explorateur d’activités pour les appareils de point de terminaison](../media/endpoint-dlp-4-getting-started-activity-explorer.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
 Maintenant que vous disposez d’appareils intégrés et que vous pouvez afficher les données d’activité dans l’Explorateur d’activités, vous êtes prêt à passer à l’étape suivante dans laquelle vous créez des stratégies DLP qui protègent vos éléments sensibles.
@@ -165,5 +194,5 @@ Maintenant que vous disposez d’appareils intégrés et que vous pouvez affiche
 - [Microsoft Defender – Protection avancée contre les menaces (Microsoft Defender ATP)](https://docs.microsoft.com/windows/security/threat-protection/)
 - [Outils et méthodes d’intégration pour les appareils Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 - [Abonnement Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
-- [Azure Active Directory (ADD) adhésion](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join)
+- [Azure AD appareils joints](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join)
 - [Télécharger le nouveau Microsoft Edge sur la base de chrome](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)
