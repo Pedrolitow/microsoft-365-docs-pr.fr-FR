@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenez un rapport régulier sur la façon dont les membres de votre organisation utilisent les services Microsoft 365. Le tableau de bord Vue d’ensemble de l’utilisation vous permet d’explorer chaque graphique pour obtenir d'autres informations.
-ms.openlocfilehash: 4356b287afa56201da7cb644a4056d4c975964e5
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: dee0f3e586c49c25daafe999d065e743babf020e
+ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637006"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48779119"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Rapports Microsoft 365 dans le centre d'administration
 
@@ -48,13 +48,13 @@ Visionnez cette vidéo pour une vue d’ensemble : sur la façon d'utiliser les
 
 ::: moniker range="o365-germany"
 
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centre d'administration</a>, accédez à la page **Rapports** \> **sur l'Utilisation**.
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centre d'administration</a>, accédez à la page **Rapports** \> **sur l'Utilisation** .
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centre d'administration</a>, accédez à la page **Rapports** \> **sur l'Utilisation**.
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centre d'administration</a>, accédez à la page **Rapports** \> **sur l'Utilisation** .
 
 ::: moniker-end
 
@@ -130,19 +130,37 @@ En fonction de votre abonnement, les rapports suivants sont disponibles.
   
 ::: moniker range="o365-worldwide"
 
-- [Activité sur Yammer](yammer-activity-report.md)
+- [Activité sur Yammer](yammer-activity-report-ww.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-- [Utilisation de Yammer sur des appareils](yammer-device-usage-report.md)
+- [Activité sur Yammer pour le gouvernement américain](yammer-activity-report.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-- [Rapport d’activité des groupes Yammer](yammer-groups-activity-report.md)
+- [Utilisation de Yammer sur des appareils](yammer-device-usage-report-ww.md)
+
+::: moniker-end
+
+::: moniker range="o365-worldwide"
+
+- [Utilisation des appareils Yammer pour le gouvernement américain](yammer-device-usage-report.md)
+
+::: moniker-end
+
+::: moniker range="o365-worldwide"
+
+- [Rapport d’activité des groupes Yammer](yammer-groups-activity-report-ww.md)
+
+::: moniker-end
+
+::: moniker range="o365-worldwide"
+
+- [Rapport d’activité des groupes Yammer pour le gouvernement américain](yammer-groups-activity-report.md)
 
 ::: moniker-end
 
@@ -188,9 +206,9 @@ Si vous voulez masquer les informations concernant les utilisateurs individuels 
   
 1. Dans le centre d’administration, cliquez sur la page **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">Services &amp; Compléments</a>.
 
-2. Sélectionnez **Rapports**. 
+2. Sélectionnez **Rapports** . 
   
-3. Dans le volet **Rapports**, sélectionnez les options souhaitées, puis enregistrez vos modifications.
+3. Dans le volet **Rapports** , sélectionnez les options souhaitées, puis enregistrez vos modifications.
   
 Votre liste d’utilisateurs se présente comme suit :
   

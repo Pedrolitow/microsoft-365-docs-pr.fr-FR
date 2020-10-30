@@ -1,5 +1,5 @@
 ---
-title: Utilisation des points de terminaison de protection contre la perte de données (Preview)
+title: Utilisation de la protection contre la perte de données de point de terminaison
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment configurer les stratégies de protection contre la perte de données (DLP) en utilisant les points de terminaison de protection contre la perte de données (EPDLP) de Microsoft 365.
-ms.openlocfilehash: 0f1fc3159de6545007ddd62da2fca17ce87ad1dc
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 682996c084f4dce888aaff517ad84d335ed92206
+ms.sourcegitcommit: bd36c88e731e3fee2a3a5cb3564fdc94f11bab94
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48636815"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48769663"
 ---
 # <a name="using-endpoint-data-loss-prevention-preview"></a>Utilisation des points de terminaison de protection contre la perte de données (Preview)
 
@@ -67,13 +67,13 @@ Vous pouvez utiliser cette logique pour construire vos chemins d’exclusion :
 
 Vous pouvez ajouter des domaines à cette liste à laquelle le Chromium Edge fera référence lors de l’application de la restriction d’accès au téléchargement du Cloud de stratégie DLP de point de terminaison. 
 
-Si le mode de liste est paramétré sur **Bloquer**, l’utilisateur ne peut pas télécharger des éléments sensibles dans ces domaines. Lorsqu’une action de téléchargement est bloquée parce qu’un élément correspond à une stratégie DLP, DLP génère un avertissement ou bloque le téléchargement de l’élément sensible.
+Si le mode de liste est paramétré sur **Bloquer** , l’utilisateur ne peut pas télécharger des éléments sensibles dans ces domaines. Lorsqu’une action de téléchargement est bloquée parce qu’un élément correspond à une stratégie DLP, DLP génère un avertissement ou bloque le téléchargement de l’élément sensible.
 
-Si le mode de liste est paramétré sur **Autoriser**, les utilisateurs pourront charger des éléments sensibles **_uniquement_* à ces domaines, et l’accès de chargement à tous les autres domaines n’est pas autorisé.
+Si le mode de liste est paramétré sur **Autoriser** , les utilisateurs pourront charger des éléments sensibles * *_uniquement_* à ces domaines, et l’accès de chargement à tous les autres domaines n’est pas autorisé.
 
 ### <a name="unallowed-apps"></a>Applications non autorisées
 
-Lorsque le paramètre *Accès des applications et des navigateurs non autorisés** d’une stratégie est activé, et que les utilisateurs tentent d’utiliser ces applications pour accéder à un fichier protégé, l’activité est autorisée, ou bloquée mais les utilisateurs peuvent remplacer la restriction. Toutes les activités sont auditées et disponibles pour révision dans l’Explorateur d’activités.
+Lorsque le paramètre *Accès des applications et des navigateurs non autorisés* * d’une stratégie est activé, et que les utilisateurs tentent d’utiliser ces applications pour accéder à un fichier protégé, l’activité est autorisée, ou bloquée mais les utilisateurs peuvent remplacer la restriction. Toutes les activités sont auditées et disponibles pour révision dans l’Explorateur d’activités.
 
 ### <a name="unallowed-browsers"></a>Navigateurs non autorisés
 
@@ -94,7 +94,7 @@ Pour utiliser cette restriction, vous devez configurer trois éléments importan
 
 2. Ajouter les navigateurs qui ne sont pas autorisés à accéder à certains éléments sensibles lorsqu’une correspondance de la stratégie DLP se produit.
 
-3. Configurez les stratégies DLP pour définir les types d’éléments sensibles pour lesquels le téléchargement doit être limité à ces emplacements en activant **Télécharger vers les services Cloud** et **Accès à partir d’un navigateur non autorisé**.
+3. Configurez les stratégies DLP pour définir les types d’éléments sensibles pour lesquels le téléchargement doit être limité à ces emplacements en activant **Télécharger vers les services Cloud** et **Accès à partir d’un navigateur non autorisé** .
 
 Vous pouvez continuer à ajouter de nouveaux services, applications et stratégies pour développer et augmenter vos restrictions afin de répondre aux besoins de votre entreprise et de protéger les données sensibles. 
 
@@ -117,21 +117,21 @@ Ces scénarios nécessitent que les appareils soient déjà intégrés et report
 
 1. Ouvrir[Page de protection contre la perte de données](https://compliance.microsoft.com/datalossprevention?viewid=policies).
 
-2. Sélectionnez **Créer une stratégie (Preview)**.
+2. Sélectionnez **Créer une stratégie (Preview)** .
 
-3. Dans le cadre de ce scénario, sélectionnez **Confidentialité**, **Données d’informations d’identification personnelles (PII) pour les États-Unis** puis sélectionnez **Suivant**.
+3. Dans le cadre de ce scénario, sélectionnez **Confidentialité** , **Données d’informations d’identification personnelles (PII) pour les États-Unis** puis sélectionnez **Suivant** .
 
-4. Désactivez la case à cocher**État** pour tous les emplacements, sauf pour les **Appareils**. Cliquez sur **Suivant**.
+4. Désactivez la case à cocher **État** pour tous les emplacements, sauf pour les **Appareils** . Cliquez sur **Suivant** .
 
-5. Acceptez la sélection par défaut **Vérifier et personnaliser les paramètres du modèle**, puis sélectionnez **Suivant**.
+5. Acceptez la sélection par défaut **Vérifier et personnaliser les paramètres du modèle** , puis sélectionnez **Suivant** .
 
-6. Acceptez les valeurs par défaut**Actions de protection** et choisissez **Suivant**.
+6. Acceptez les valeurs par défaut **Actions de protection** et choisissez **Suivant** .
 
-7. Sélectionnez **Audit ou restreindre les activités sur les appareils Windows** et laissez **Audit uniquement**. Cliquez sur **Suivant**.
+7. Sélectionnez **Audit ou restreindre les activités sur les appareils Windows** et laissez **Audit uniquement** . Cliquez sur **Suivant** .
 
-8. Accepter la valeur par défaut **Je veux tester le contenu tout d’abord** et choisir **Afficher les conseils de stratégie en mode test**. Cliquez sur **Suivant**.
+8. Accepter la valeur par défaut **Je veux tester le contenu tout d’abord** et choisir **Afficher les conseils de stratégie en mode test** . Cliquez sur **Suivant** .
 
-9. Passez en revue vos paramètres, puis sélectionnez **Envoyer**.
+9. Passez en revue vos paramètres, puis sélectionnez **Envoyer** .
 
 10. La nouvelle stratégie DLP s’affiche dans la liste de stratégies.
 
@@ -147,18 +147,18 @@ Ces scénarios nécessitent que les appareils soient déjà intégrés et report
 
 2. Sélectionnez la stratégie **Données d’informations d’identification personnelle (PII) pour les États-Unis** que vous avez créées dans le scénario 1.
 
-3. Sélectionnez **Modifier une stratégie (preview)**.
+3. Sélectionnez **Modifier une stratégie (preview)** .
 
-4. Accédez à la page **Règles DLP avancées** et modifiez la **Faible quantité de contenu détectée fichier INF US à Identification Personnelle**.
+4. Accédez à la page **Règles DLP avancées** et modifiez la **Faible quantité de contenu détectée fichier INF US à Identification Personnelle** .
 
-5. Faites défiler vers le bas jusqu’à la section **Rapports d’incident** et configurez **Envoyer une alerte aux administrateurs lorsqu’une correspondance de règle se produit** sur **Activé**. Les alertes par courrier électronique sont envoyées automatiquement à l’administrateur et à toute autre personne que vous ajoutez à la liste des destinataires. 
+5. Faites défiler vers le bas jusqu’à la section **Rapports d’incident** et configurez **Envoyer une alerte aux administrateurs lorsqu’une correspondance de règle se produit** sur **Activé** . Les alertes par courrier électronique sont envoyées automatiquement à l’administrateur et à toute autre personne que vous ajoutez à la liste des destinataires. 
 
    > [!div class="mx-imgBorder"]
    > ![turn-on-incident-reports](../media/endpoint-dlp-2-using-dlp-incident-reports.png)
    
-6. Dans le cadre de ce scénario, sélectionnez **Envoyer une alerte chaque fois qu’une activité correspond à la règle**.
+6. Dans le cadre de ce scénario, sélectionnez **Envoyer une alerte chaque fois qu’une activité correspond à la règle** .
 
-7. Cliquez sur **Enregistrer**.
+7. Cliquez sur **Enregistrer** .
 
 8. Conservez tous vos paramètres précédents en choisissant **suivant** puis **Envoyer** les modifications apportées à la stratégie.
 
@@ -172,18 +172,18 @@ Ces scénarios nécessitent que les appareils soient déjà intégrés et report
 
 2. Sélectionnez la stratégie **Données d’informations d’identification personnelle (PII) pour les États-Unis** que vous avez créées dans le scénario 1.
 
-3. Sélectionnez **Modifier une stratégie (preview)**.
+3. Sélectionnez **Modifier une stratégie (preview)** .
 
-4. Accédez à la page **Règles DLP avancées** et modifiez la **Faible quantité de contenu détectée fichier INF US à Identification Personnelle**.
+4. Accédez à la page **Règles DLP avancées** et modifiez la **Faible quantité de contenu détectée fichier INF US à Identification Personnelle** .
 
-5. Faites défiler vers le bas jusqu’à la section **Audit ou restreindre les activités sur les appareils Windows** et pour chaque activité définissez l’action correspondante sur **Bloquer avec remplacement**.
+5. Faites défiler vers le bas jusqu’à la section **Audit ou restreindre les activités sur les appareils Windows** et pour chaque activité définissez l’action correspondante sur **Bloquer avec remplacement** .
 
    > [!div class="mx-imgBorder"]
    > ![définir un blocage avec une action de remplacement](../media/endpoint-dlp-6-using-dlp-set-blocked-with-override.png)
    
-6. Cliquez sur **Enregistrer**.
+6. Cliquez sur **Enregistrer** .
 
-7. Répétez les étapes 4-7 pour **Quantité de contenu élevé détectée le fichier INF (INF) US**.
+7. Répétez les étapes 4-7 pour **Quantité de contenu élevé détectée le fichier INF (INF) US** .
 
 8. Conservez tous vos paramètres précédents en choisissant **suivant** puis **Envoyer** les modifications apportées à la stratégie.
 
