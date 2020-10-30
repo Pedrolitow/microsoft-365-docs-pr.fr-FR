@@ -18,14 +18,13 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: Détails de la capacité de productivité de travail d’équipe.
-ms.openlocfilehash: d76447a187003aa3d3e87ec293cf4550ced2fc74
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: d7edd5685c8e818e08faf4ac227f3eb1a416c94c
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795339"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804792"
 ---
 # <a name="teamwork--people-experiences"></a>Travail d’équipe – expériences de personnes
 
@@ -193,3 +192,12 @@ Les colonnes suivantes sont présentées dans le tableau au niveau de l’espace
 - Le travail d’équipe mesure l’engagement des personnes au sein de votre organisation. Il ne&#39;de capturer l’activité des membres externes.
 - Les messages de canal dans le travail d’équipe n’incluent pas les messages envoyés via le client mobile Microsoft Teams.
 - Il peut y avoir des différences mineures entre les mesures de messagerie et les messages de canal entre les catégories de communication et de travail d’équipe que nous travaillons à résoudre.
+
+## <a name="related-content"></a>Contenu connexe
+
+[Microsoft 365 Apps Health – expériences technologiques](apps-health.md) (article) \
+[Communication – expériences des personnes](communication.md) (article) \
+[Collaboration sur le contenu – expériences des personnes](content-collaboration.md) (article) \
+[Réunions – expériences des personnes](meetings.md) (article) \
+[Mobilité – expériences de personnes](mobility.md) (article) \
+[Contrôles de confidentialité du score de productivité](privacy.md) (article)

@@ -18,14 +18,13 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: Les détails du score de productivité des personnes à mobilité réduite.
-ms.openlocfilehash: 0d67cae7421b7b27e39420f691d72abd57a63a32
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: f40984b3c053dcb976c901830bf796e3b7297f2d
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795390"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804780"
 ---
 # <a name="mobility--people-experiences"></a>Mobilité – expériences de personnes
 
@@ -172,3 +171,12 @@ Les mesures suivantes sont basées sur les 28 jours précédents :
 - **Jours dans Skype (bureau) :** Nombre de jours pendant lesquels la personne était active sur Skype dans la plateforme de bureau.
 - **Jours dans Skype (Web) :** Nombre de jours pendant lesquels la personne était active sur Skype dans la plateforme Web.
 - **Jours dans Skype (mobile) :** Nombre de jours pendant lesquels la personne était active sur Skype dans la plateforme mobile.
+
+## <a name="related-content"></a>Contenu connexe
+
+[Microsoft 365 Apps Health – expériences technologiques](apps-health.md) (article) \
+[Communication – expériences des personnes](communication.md) (article) \
+[Collaboration sur le contenu – expériences des personnes](content-collaboration.md) (article) \
+[Réunions – expériences des personnes](meetings.md) (article) \
+[Contrôles de confidentialité du score de productivité](privacy.md) (article) \
+[Travail d’équipe – expériences des personnes](teamwork.md) (article)

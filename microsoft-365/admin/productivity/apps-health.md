@@ -18,14 +18,13 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: Détails du score de productivité de la technologie d’intégrité Microsoft 365 Apps Health.
-ms.openlocfilehash: bb6454b336caa9ac1e7b8f6049ea46c681c8bd77
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: 4242a9b665bc7292232cc15ee0f1ec37915fb1ac
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795328"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804768"
 ---
 # <a name="microsoft-365-apps-health--technology-experiences"></a>Intégrité des applications Microsoft 365 : expériences technologiques
 
@@ -112,3 +111,12 @@ Les colonnes suivantes sont présentées dans le tableau au niveau de l’utilis
 - **État :**   Les applications Microsoft 365 prennent en charge l’état des appareils en fonction de la version et du canal actuels.
 - **Versions :**   Versions actuelles de Microsoft 365 apps sur les appareils.
 - **nombre de périphériques :**  Nombre d’appareils.
+
+## <a name="related-content"></a>Contenu connexe
+
+[Communication – expériences des personnes](communication.md) (article) \
+[Collaboration sur le contenu – expériences des personnes](content-collaboration.md) (article) \
+[Réunions – expériences des personnes](meetings.md) (article) \
+[Mobilité – expériences de personnes](mobility.md) (article) \
+[Contrôles de confidentialité du score de productivité](privacy.md) (article) \
+[Travail d’équipe – expériences des personnes](teamwork.md) (article)

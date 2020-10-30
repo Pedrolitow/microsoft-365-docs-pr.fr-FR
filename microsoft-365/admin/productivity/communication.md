@@ -18,14 +18,13 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: Détails du score de productivité de l’expérience de communication.
-ms.openlocfilehash: 071621759a922e6dda28a5a18f531a0f01d2f88f
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: 6f79a636c24548586048adf0151ac5eefb98fffe
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795022"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804654"
 ---
 # <a name="communication--people-experiences"></a>Communication – expériences de personnes
 
@@ -160,3 +159,12 @@ Cette section fournit des informations détaillées sur l’utilisateur sur les 
 - **Jours utilisés @mention par courrier électronique :** Nombre de jours pendant lesquels l’utilisateur a envoyé un message électronique contenant une @mention au cours des 28 derniers jours.
 
 Vous pouvez également exporter les données du rapport dans un fichier. csv Excel en sélectionnant le lien exporter le **bouton** exporter. Notez que vous pouvez personnaliser l’ensemble de colonnes de l’affichage en sélectionnant les colonnes requises après avoir cliqué sur **choisir les colonnes** .
+
+## <a name="related-content"></a>Contenu connexe
+
+[Microsoft 365 Apps Health – expériences technologiques](apps-health.md) (article) \
+[Collaboration sur le contenu – expériences des personnes](content-collaboration.md) (article) \
+[Réunions – expériences des personnes](meetings.md) (article) \
+[Mobilité – expériences de personnes](mobility.md) (article) \
+[Contrôles de confidentialité du score de productivité](privacy.md) (article) \
+[Travail d’équipe – expériences des personnes](teamwork.md) (article)

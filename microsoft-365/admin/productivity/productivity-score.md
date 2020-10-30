@@ -18,14 +18,13 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: Vue d’ensemble du score de productivité Microsoft.
-ms.openlocfilehash: 3d014cd0eb3a3ceed3b3f3b48f126453e4ced193
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: 3808583429c78460483cd7193d38810a7e189040
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48794964"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804725"
 ---
 # <a name="microsoft-productivity-score"></a>Score de productivité Microsoft 
 
@@ -43,25 +42,28 @@ Nous fournissons des données, des informations et des recommandations dans deux
 
     Nous fournissons ces informations, car lorsque les personnes collaborent en ligne, elles font gagner du temps, et la liberté de travailler sur n’importe quel appareil devient plus productive et satisfaite. La possibilité de communiquer de manière flexible rend les personnes plus efficaces, ce qui permet de former de plus en plus de relations. Pour obtenir des preuves, consultez la rubrique [Forrester Report](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
 
-- **Expériences technologiques :** La productivité dépend de la technologie fiable et efficace, ainsi que de l’utilisation efficace de Microsoft 365. Nous fournissons des [analyses de point de terminaison](https://aka.ms/endpointanalytics), ce qui vous permet de comprendre comment la productivité de vos utilisateurs peut être affectée par les problèmes de performances et d’intégrité liés à votre matériel et logiciels de point de terminaison. Nous fournissons également les actions recommandées pour les résoudre, ainsi que les analyses de connectivité réseau Microsoft 365 pour votre organisation.
+- **Expériences technologiques :** La productivité de votre équipe dépend de la technologie fiable et efficace, ainsi que de l’utilisation efficace de Microsoft 365. Le [point de terminaison Analytics](https://aka.ms/endpointanalytics) vous aide à comprendre comment la productivité de vos utilisateurs peut être affectée par les problèmes de performances et d’intégrité liés à votre matériel et à vos logiciels. Les actions recommandées vous aident à résoudre ces problèmes. Microsoft 365 Network Connectivity Insights vous aidera à résoudre les problèmes liés à connectivty pour votre organisation.
 
 Voir [qu’est-ce que le point de terminaison Analytics](https://docs.microsoft.com/mem/analytics/overview) pour une vue d’ensemble et les détails prérequis. Pour en savoir plus sur les informations sur la connectivité réseau Microsoft 365, consultez [la rubrique Network Connectivity Overview](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-networking-overview).
   
 
 ## <a name="how-the-score-is-calculated"></a>Mode de calcul du score
 
-Votre score de productivité est basé sur les scores combinés de vos catégories de personnes et d’expériences technologiques. Chaque catégorie est pondérée équitablement, avec un total de 100 points. Le score de productivité le plus élevé possible est 500.
+Votre score de productivité est basé sur les scores combinés de vos catégories de personnes et d’expériences technologiques. Chaque catégorie est pondérée équitablement, avec un total de 100 points. Le score de productivité le plus élevé possible est 800.
 
 ### <a name="score-categories"></a>Catégories de score 
 
-- Collaboration sur le contenu (100 points)
 - Communication (100 points)
+- Réunions (100 points)
+- Collaboration sur le contenu (100 points)
+- Travail d’équipe (100 points)
 - Mobilité (100 points)
 - Analyse du point de terminaison (100 points)
 - Connectivité réseau (100 points)
-- **Total possible = 500 points**
+- Intégrité des applications Microsoft 365 (100 points)
+- **Total possible = 800 points**
  
- Dans chaque catégorie, nous identifions les modèles pour les activités clés qui sont des indicateurs de la façon dont les utilisateurs utilisent les produits Microsoft 365 pour collaborer, communiquer et travailler sur plusieurs plateformes. Nous fournissons des affichages de 28 jours et de 180 jours des activités clés. Nous fournissons également des mesures de prise en charge qui ne font pas partie du calcul de score, mais qui sont importantes pour vous aider à identifier les comportements et les paramètres sous-jacents sur lesquels vous pouvez agir.
+ Dans chaque catégorie de score, nous identifions les modèles pour les activités clés qui sont des indicateurs de la façon dont les utilisateurs utilisent les produits Microsoft 365 pour collaborer, communiquer et travailler sur plusieurs plateformes. Nous fournissons des affichages de 28 jours et de 180 jours des activités clés. Nous fournissons également des mesures de prise en charge qui ne font pas partie du calcul du score, mais qui sont importantes pour vous aider à identifier les comportements et les paramètres sous-jacents que vous pouvez résoudre.
 
 ### <a name="products-included-in-productivity-score"></a>Produits inclus dans le score de productivité 
 
@@ -72,7 +74,9 @@ Votre score est mis à jour quotidiennement et reflète les actions de l’utili
 
 ## <a name="pre-requisites"></a>Conditions préalables 
 
-Pour obtenir des données de personnes, vous avez besoin d’un abonnement Microsoft 365 for Business ou Office 365 pour Enterprise, et vous devez utiliser les services Cloud mutualisés. Pour obtenir des données analytiques de point de terminaison pour votre client, vous devez ajouter Microsoft Intune à votre abonnement. Intune vous permet de protéger les données de votre organisation en gérant les appareils et les applications.       Une fois que vous avez Intune, vous pouvez activer l’analyse du point de terminaison au sein de l’expérience Intune. En savoir plus sur Microsoft Intune. 
+Pour les données de personnes, vous avez besoin d’un abonnement Microsoft 365 for Business ou Office 365 pour Enterprise. Pour les données analytiques de point de terminaison de votre client, vous devez ajouter Microsoft Intune à votre abonnement. Intune vous permet de protéger les données de votre organisation en gérant les appareils et les applications. Une fois que vous avez Intune, vous pouvez activer l’analyse du point de terminaison au sein de l’expérience Intune. En savoir plus sur Microsoft Intune. 
+> [!NOTE]
+> Une licence d’analyse Workplace n’est pas nécessaire pour obtenir les fonctionnalités de score de productivité.
 
 Pour afficher le score de productivité de votre organisation, vous devez disposer de l’un des rôles suivants : 
 
@@ -90,11 +94,11 @@ Vous pouvez accéder à l’expérience utilisateur à partir de la maison d’a
 
 La page d’accueil des scores de productivité indique votre score total et l’historique des scores, ainsi que le principal aperçu de chaque catégorie.
 
-![Page d’accueil des scores de productivité](../../media/pslanding.png)
+:::image type="content" source="../../media/prodscore-landing.png" alt-text="Page de score de productivité dans les rapports.":::
 
 **Votre score** est affiché sous la forme d’une valeur de pourcentage et en points. Vous pouvez voir vos points dans le numérateur et les points les plus maximaux possibles dans le dénominateur.
 
-Les **tests d’évaluation d’homologue** vous permettent de comparer votre score avec des organisations comme les vôtres. Pour les catégories de personnes qui rencontrent des personnes, la mesure de test d’homologue est calculée comme la moyenne des mesures au sein d’un ensemble d’organisations similaires. L’ensemble est composé d’organisations de votre région avec un nombre similaire d’utilisateurs sous licence, de types de licences, de secteurs d’activité et de leur utilisation avec Microsoft 365. 
+Les **tests d’évaluation d’homologue** vous permettent de comparer votre score avec des organisations comme les vôtres. Le banc d’essai homologue pour les catégories de personnes est calculé comme la moyenne des mesures au sein d’un ensemble d’organisations similaires. L’ensemble d’organisations est composé d’organisations de votre région avec un nombre similaire d’utilisateurs sous licence, de types de licences, de secteurs d’activité et de leur utilisation avec Microsoft 365. 
 
 Le benchmark d’homologue Analytics de point de terminaison inclut des cibles pour les performances de démarrage des périphériques et une configuration logicielle recommandée basée sur des valeurs multilatérales agrégées sur tous les clients.
 

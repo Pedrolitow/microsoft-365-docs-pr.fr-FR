@@ -18,14 +18,13 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: Détails du score de productivité des réunions-personnes.
-ms.openlocfilehash: 09869d92b093304e070d669db7d0e7dea825441f
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: cdb83000e176fb2a88d848a1b7f114499362672a
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795383"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804584"
 ---
 # <a name="meetings--people-experiences"></a>Réunions – expériences de personnes
 
@@ -166,3 +165,12 @@ Les colonnes suivantes sont représentées dans le tableau au niveau de l’util
 - Seules les personnes ayant accès à Microsoft teams sont considérées pour toute évaluation.
 - Nous excluons les événements de diffusion et certains événements qui ne sont pas balisés en tant que réunion ou appel.
 - Les événements qui commencent par le partage d’écran entre les participants sont catégorisés comme appels 1:1 (avec 2 participants) ou appels de groupe (3 participants ou plus).
+
+## <a name="related-content"></a>Contenu connexe
+
+[Microsoft 365 Apps Health – expériences technologiques](apps-health.md) (article) \
+[Communication – expériences des personnes](communication.md) (article) \
+[Collaboration sur le contenu – expériences des personnes](content-collaboration.md) (article) \
+[Mobilité – expériences de personnes](mobility.md) (article) \
+[Contrôles de confidentialité du score de productivité](privacy.md) (article) \
+[Travail d’équipe – expériences des personnes](teamwork.md) (article)

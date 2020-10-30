@@ -18,14 +18,13 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: Détails de la collaboration de contenu-score de productivité des personnes.
-ms.openlocfilehash: 6e8f3113d2f35e6af268e4a8088bef34f529a676
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: 87f89af527e2a1b843a9b70fbef590b69d920f7d
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795378"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804596"
 ---
 # <a name="content-collaboration--people-experiences"></a>Collaboration de contenu : expériences de personnes
 
@@ -202,4 +201,13 @@ Les colonnes suivantes sont présentées dans le tableau au niveau de l’utilis
 - **Fichiers partagés en externe :** Nombre de fichiers en ligne sur OneDrive ou SharePoint que la personne a partagée avec d’autres personnes en dehors de votre organisation au cours des 28 derniers jours.
 - **Pièces jointes par courrier électronique :** Valeur booléenne indiquant si la personne a envoyé le courrier électronique avec des fichiers (pas sur OneDrive ou SharePoint) en tant que pièces jointes au cours des 28 derniers jours.
 - **Pièces jointes de fichiers électroniques en ligne :** Valeur booléenne indiquant si la personne a envoyé un message électronique avec des liens vers des fichiers en ligne (sur OneDrive ou SharePoint) en tant que pièces jointes au cours des 28 derniers jours.
-- **Incorporer le lien vers le fichier en ligne :** Valeur booléenne indiquant si la personne a envoyé un message électronique avec des liens vers des fichiers en ligne (sur OneDrive ou SharePoint) incorporés dans le corps du message au cours des 28 derniers jours
+- **Incorporer le lien vers le fichier en ligne :** Valeur booléenne indiquant si la personne a envoyé un message électronique avec des liens vers des fichiers en ligne (sur OneDrive ou SharePoint) incorporés dans le corps du message au cours des 28 derniers jours.
+
+## <a name="related-content"></a>Contenu connexe
+
+[Microsoft 365 Apps Health – expériences technologiques](apps-health.md) (article) \
+[Communication – expériences des personnes](communication.md) (article) \
+[Réunions – expériences des personnes](meetings.md) (article) \
+[Mobilité – expériences de personnes](mobility.md) (article) \
+[Contrôles de confidentialité du score de productivité](privacy.md) (article) \
+[Travail d’équipe – expériences des personnes](teamwork.md) (article)
