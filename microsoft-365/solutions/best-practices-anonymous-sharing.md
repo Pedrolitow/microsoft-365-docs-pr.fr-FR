@@ -16,12 +16,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Dans cet article, vous allez découvrir les meilleures pratiques relatives au partage de fichiers et de dossiers avec des utilisateurs non authentifiés.
-ms.openlocfilehash: 511e04e69dae03caafd7c7828dd24cea6e7a8832
-ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
+ms.openlocfilehash: 18587fc6a718955cd5a752954b614c4d6fa5ee22
+ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48769319"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48779259"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>Meilleures pratiques relatives au partage de fichiers et de dossiers avec des utilisateurs non authentifiés
 
@@ -125,8 +125,6 @@ Création d’une stratégie DLP
 12. Cliquez sur **Enregistrer** , puis sur **Suivant** .
 13. Sélectionnez vos options de test, puis cliquez sur **Suivant** .
 14. Cliquez sur **Envoyer** , puis sur **Terminé** .
-
-limit-accidental-exposure-dlp-anyone-links.png
 
 ## <a name="protect-against-malicious-files"></a>Se protéger contre les fichiers malveillants
 
