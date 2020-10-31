@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir les stratégies de rétention qui s’appliquent à Microsoft Teams.
-ms.openlocfilehash: 3e4cfd5c9e5ef8c28ecd069f3474764b966d6c9a
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: b23161f57aedec062e155586f2e20d2791d02d3f
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48794999"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804573"
 ---
 # <a name="learn-about-retention-for-yammer"></a>Découvrir la rétention pour Yammer
 
@@ -59,9 +59,9 @@ Lorsque la politique de rétention consiste à conserver puis à supprimer :
 
 ![Diagramme de flux de rétention des messages Yammer](../media/yammerretentionlifecycle.png)
 
-Pour les deux voies du diagramme :
+Pour les deux voies du diagramme :
 
-1. **Si un message Yammer est modifié ou supprimé** par l'utilisateur pendant la période de conservation, le message original est copié (s'il est modifié) ou déplacé (s'il est supprimé) dans le dossier SubstrateHolds. Le message y est stocké jusqu'à l'expiration de la période de conservation, puis le message est supprimé définitivement.
+1. **Si un message Yammer est édité ou supprimé** par l'utilisateur pendant la période de conservation, le message original est immédiatement copié (s'il est édité) ou déplacé (s'il est supprimé) dans le dossier SubstrateHolds. Le message y est stocké jusqu'à l'expiration de la période de conservation, puis le message est supprimé définitivement.
 
 2. **Si un message Yammer n'est pas supprimé** et pour les messages courants après édition, le message est déplacé dans le dossier SubstrateHolds après l'expiration de la période de conservation. Cette action prend jusqu'à sept jours à compter de la date d'expiration. Lorsque le message se trouve dans le dossier SubstrateHolds, il est alors définitivement supprimé. 
 
@@ -72,7 +72,7 @@ Lorsque la stratégie de rétention consiste à conserver uniquement ou à suppr
 
 ### <a name="content-paths-for-retain-only-retention-policy"></a>Chemins d’accès au contenu pour la stratégie de rétention de conservation uniquement
 
-1. **Si un message Yammer est modifié ou supprimé**  : Une copie du message original est créée dans le dossier SubstrateHolds et y est conservée jusqu'à l'expiration de la période de conservation. Ensuite, le message est définitivement supprimé du dossier SubstrateHolds.
+1. **Si un message Yammer est édité ou supprimé** :Une copie du message original est immédiatement créée dans le dossier SubstrateHolds et y est conservée jusqu'à l'expiration de la période de conservation. Ensuite, le message est définitivement supprimé du dossier SubstrateHolds.
 
 2. **Si le message Yammer n'est pas modifié ou supprimé** et pour les messages courants après édition pendant la période de rétention : Rien ne se passe avant et après la période de rétention ; le message reste dans son emplacement d'origine.
 
@@ -80,7 +80,7 @@ Lorsque la stratégie de rétention consiste à conserver uniquement ou à suppr
 
 1. **Si le message Yammer n’est pas supprimé** pendant la période de rétention : à la fin de la période de rétention, il est déplacé vers le dossier SubstrateHolds. Cette action prend jusqu'à sept jours à compter de la date d'expiration. Ensuite, le message est définitivement supprimé du dossier SubstrateHolds.
 
-2. **Si le message Yammer est supprimé par l'utilisateur** pendant cette période, l'élément est déplacé vers le dossier SubstrateHolds où il est immédiatement supprimé définitivement.
+2. **Si le message Yammer est supprimé par l'utilisateur** pendant cette période, l'élément est immédiatement déplacé vers le dossier SubstrateHolds où il est immédiatement supprimé définitivement.
 
 
 ## <a name="messages-and-external-users"></a>Messages et utilisateurs externes
