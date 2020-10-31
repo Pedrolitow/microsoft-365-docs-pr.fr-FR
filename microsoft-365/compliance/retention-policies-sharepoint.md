@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment la rétention fonctionne pour SharePoint et OneDrive.
-ms.openlocfilehash: 31ffce3f02e273e771ca1753474bec48b66148bb
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 258cc8e777ca39d2528e520ff5634086bff302c7
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754138"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804539"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Découvrir la rétention pour SharePoint et OneDrive
 
@@ -51,19 +51,19 @@ Les fichiers suivants peuvent être supprimés:
 
 ## <a name="how-retention-works-for-sharepoint-and-onedrive"></a>Fonctionnement de la rétention pour SharePoint et OneDrive
 
-Pour la prise en charge de la rétention, SharePoint et OneDrive créent une bibliothèque de conservation et de préservation des documents s’il n’en existe pas. Vous pouvez afficher cette bibliothèque sur la page **Site.contents** dans le site de niveau supérieur de la collection de sites. La plupart des utilisateurs ne peuvent pas visualiser la bibliothèque de conservation et de préservation car elle est visible uniquement pour les administrateurs de collection de sites.
+Pour la prise en charge de la rétention, SharePoint et OneDrive créent une bibliothèque de conservation et de préservation des documents, en cas de besoin. Vous pouvez afficher cette bibliothèque sur la page **Site.contents** dans le site de niveau supérieur de la collection de sites. La plupart des utilisateurs ne peuvent pas visualiser la bibliothèque de conservation et de préservation car elle est visible uniquement pour les administrateurs de collection de sites.
   
 Si une personne tente de modifier ou de supprimer un document soumis à des paramètres de rétention, une vérification indique si le contenu a été modifié depuis l’application des paramètres de rétention. S’il s’agit du premier changement depuis l’application des paramètres de rétention, le contenu est copié dans la bibliothèque de conservation et de préservation des documents, ce qui permet ensuite à la personne de modifier ou de supprimer le contenu d’origine. Tout le contenu d’une collection de sites peut être copié dans la bibliothèque de conservation et de préservation des documents, indépendamment des paramètres de rétention.
   
 Un travail du minuteur nettoie périodiquement la bibliothèque de conservation et de préservation des documents. Ce travail compare tout le contenu de la bibliothèque de conservation et de préservation des documents à toutes les requêtes utilisées par les paramètres de rétention pour ce contenu. Le contenu antérieur à la période de rétention configurée est supprimé de la bibliothèque de conservation et de préservation des documents et de l’emplacement d’origine si celui-ci existe toujours. Ce travail du minuteur s’exécute tous les sept jours, ce qui signifie que l’opération peut prendre jusqu’à sept jours pour que le contenu soit supprimé.
   
-Ce comportement s’applique au contenu qui existe lorsque les stratégies de rétention sont appliquées. En outre, pour les stratégies de rétention, tout contenu qui est créé ou ajouté au site après avoir été inclus dans la stratégie sera conservé après la suppression. Toutefois, le nouveau contenu n’est pas copié dans la bibliothèque de conservation et de préservation la première fois qu’il est modifié, uniquement lorsqu’il est supprimé. Pour conserver toutes les versions d’un fichier, vous devez activer le [contrôle de version](#how-retention-works-with-document-versions-in-a-site-collection).
+Ce comportement s’applique au contenu qui existe lorsque les stratégies de rétention sont appliquées. En outre, pour les stratégies de rétention, tout contenu qui est créé ou ajouté au site après avoir été inclus dans la stratégie sera conservé après la suppression. Toutefois, le nouveau contenu n’est pas copié dans la bibliothèque de conservation et de préservation la première fois qu’il est modifié, uniquement lorsqu’il est supprimé. Pour conserver toutes les versions d’un fichier, vous devez activer le [contrôle de version](#how-retention-works-with-document-versions).
   
 Un utilisateur reçoit une erreur s’il tente de supprimer une bibliothèque, une liste, un dossier ou un site soumis à une stratégie de rétention. Un utilisateur peut supprimer un dossier s’il déplace ou supprime d’abord les fichiers du dossier qui sont soumis à la stratégie. De plus, la bibliothèque de conservation et de préservation des documents est créée à ce stade, et non lorsque vous créez une stratégie ou appliquez une étiquette de rétention. Cela signifie que pour tester la rétention, vous devez d’abord modifier ou supprimer un document d’un site soumis à une stratégie de rétention ou auquel est appliqué une étiquette de rétention, puis parcourir la bibliothèque de conservation et de préservation des documents pour afficher la copie conservée.
   
 Une fois que les paramètres de rétention sont attribués à un compte OneDrive ou un site SharePoint, les chemins d’accès au contenu sont fonction des paramètres de rétention qui consistent à conserver et à supprimer, à conserver uniquement ou à supprimer uniquement.
 
-Lorsque les paramètres de la stratégie de rétention sont définis sur conserver et supprimer :
+Lorsque les paramètres de la stratégie de rétention consistent à conserver et supprimer :
 
 ![Diagramme de cycle de vie de contenu dans SharePoint et OneDrive](../media/Retention_Diagram_of_retention_flow_in_sites.png)
   
@@ -90,24 +90,26 @@ Lorsque les paramètres de la stratégie de rétention sont définis sur conserv
 
 ## <a name="how-retention-works-for-onenote-content"></a>Fonctionnement de la rétention pour le contenu OneNote
 
-Lorsque vous appliquez une stratégie de rétention à un emplacement qui inclut du contenu OneNote, les différentes sections OneNote constituent en fait des fichiers différents. Cela signifie que chaque section est conservée et supprimée séparément, conformément aux paramètres de rétention que vous spécifiez.
+Lorsque vous appliquez une stratégie de rétention à un emplacement qui inclut du contenu OneNote, en arrière-plan, les différentes sections OneNote constituent des fichiers séparés. Cela signifie que chaque section est conservée et supprimée séparément, conformément aux paramètres de rétention que vous spécifiez.
 
-## <a name="how-retention-works-with-document-versions-in-a-site-collection"></a>Fonctionnement de la rétention avec les versions de document d’une collection de sites
+## <a name="how-retention-works-with-document-versions"></a>Fonctionnement de la rétention avec des versions de documents
 
-Le contrôle de version est une fonctionnalité présente dans toutes les bibliothèques de documents dans SharePoint et OneDrive. Par défaut, le contrôle de version conserve au moins les 500 versions principales, même si vous pouvez augmenter cette limite. Pour plus d’informations, consultez [Activer et configurer le contrôle de version pour une liste ou une bibliothèque](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37) et [Fonctionnement du contrôle de version dans les listes et les bibliothèques](https://support.microsoft.com/office/how-versioning-works-in-lists-and-libraries-0f6cd105-974f-44a4-aadb-43ac5bdfd247).
+Le contrôle de version est une fonctionnalité présente dans toutes listes et les bibliothèques de documents dans SharePoint et OneDrive. Par défaut, le contrôle de version conserve au moins les 500 versions principales, même si vous pouvez augmenter cette limite. Pour plus d’informations, consultez [Activer et configurer le contrôle de version pour une liste ou une bibliothèque](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37) et [Fonctionnement du contrôle de version dans les listes et les bibliothèques](https://support.microsoft.com/office/how-versioning-works-in-lists-and-libraries-0f6cd105-974f-44a4-aadb-43ac5bdfd247).
   
-Les paramètres uniquement pour la rétention conservent toutes les versions d’un document dans une collection de sites SharePoint ou un compte OneDrive. Lorsqu’un document soumis à des paramètres de rétention ou de conservation uniquement est modifié pour la première fois, une version du document d’origine est copiée dans la bibliothèque de conservation et de préservation des documents. Lorsqu’un document soumis à des paramètres de rétention ou de conservation uniquement est supprimé, toutes les versions sont copiées dans la bibliothèque de conservation et de préservation des documents si le contrôle de version est activé. Chaque version d’un document dans la bibliothèque de conservation et de préservation des documents est présente sous la forme d’un élément distinct avec sa propre période de rétention :
-  
+Lorsqu’un document avec plusieurs versions est soumis à des paramètres de rétention pour conserver le contenu, les versions copiées dans la bibliothèque de conservation et de préservation des documents sont des éléments distincts. Si vous avez configuré les paramètres de rétention pour suppression à la fin de la période de rétention :
+
 - Si la période de rétention est basée sur la date de création du contenu, chaque version comporte la même date d’expiration que le document d’origine. Le document d’origine et ses versions expirent tous en même temps.
 
-- Si la période de rétention est basée sur la date de la dernière modification du contenu, chaque version possède sa propre date d’expiration basée sur la date à laquelle le document d’origine a été modifié pour créer cette version. Les documents d’origine et ses versions expirent séparément l’un de l’autre.
+- Si la période de rétention est basée sur la date de la dernière modification du contenu, chaque version possède sa propre date d’expiration basée sur la date à laquelle le document d’origine a été modifié pour créer cette version. Le document d’origine et ses versions expirent séparément les uns des autres.
 
 > [!NOTE]
 > Les versions conservées des documents SharePoint et OneDrive ne sont pas consultables par les outils eDiscovery.
 
-Pour les éléments soumis à une stratégie de rétention (ou une conservation légale), les limites de contrôle de version de la bibliothèque de documents sont ignorées jusqu’à ce que la période de rétention du document soit atteinte. Dans ce scénario, les versions antérieures ne sont pas purgées automatiquement et les utilisateurs ne peuvent pas supprimer les versions.
+Lorsque l’action de rétention consiste à supprimer le document, elle supprime simultanément toutes les versions absentes de la bibliothèque de conservation et de préservation des documents, en fonction de la version actuelle.
 
-Ce n’est pas le cas des étiquettes de rétention lorsqu’une stratégie de rétention n’est pas appliquée au site. Au lieu de cela, les limites de contrôle de version sont honorées de sorte que les versions antérieures soient automatiquement supprimées afin de pouvoir accueillir les nouvelles versions, mais les utilisateurs ne peuvent pas supprimer les versions.
+Pour les éléments soumis à une stratégie de rétention (ou une conservation eDiscovery), le programme ignore les limites de contrôle de version de la bibliothèque de documents jusqu’à la période de rétention du document (où jusqu’à la fin de la conservation eDiscovery). Dans ce scénario, le programme ne purge pas automatiquement les versions antérieures, et les utilisateurs ne peuvent pas supprimer les versions.
+
+Ce n’est pas le cas des étiquettes de rétention lorsque le contenu n’est pas soumis à une stratégie de rétention (ou à une conservation eDiscovery). Au lieu de cela, les limites de contrôle de version sont honorées de sorte que les versions antérieures soient automatiquement supprimées afin de pouvoir accueillir les nouvelles versions, mais les utilisateurs ne peuvent pas supprimer les versions.
 
 ## <a name="when-a-user-leaves-the-organization"></a>Lorsqu’un utilisateur quitte l’organisation
 
