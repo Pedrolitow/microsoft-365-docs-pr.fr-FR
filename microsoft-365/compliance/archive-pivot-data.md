@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données de tableau croisé dynamique à partir de Globanet dans Microsoft 365. Ce connecteur vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 de sorte que vous puissiez utiliser les fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: 6dc312a03981fb527eb136bde802854d12ab663c
-ms.sourcegitcommit: 16cbac5eacadd7b30cbca1fd2435ba9098de5e1c
+ms.openlocfilehash: f9c0925856ffb9c43fa985c9da4bcd17485a5e39
+ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48785526"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48816577"
 ---
 # <a name="set-up-a-connector-to-archive-pivot-data"></a>Configurer un connecteur pour archiver les données de tableau croisé dynamique
 
@@ -41,9 +41,9 @@ La vue d’ensemble suivante décrit le processus d’utilisation d’un connect
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Créez un compte Globanet Merge1 pour Microsoft Connectors. Pour ce faire, contactez le [support client Globanet](https://globanet.com/ms-connectors-contact/). Vous devez vous connecter à ce compte lorsque vous créez le connecteur à l’étape 1.
+- Créez un compte Globanet Merge1 pour Microsoft Connectors. Pour créer ce compte, contactez le [support client Globanet](https://globanet.com/ms-connectors-contact/). Vous vous connecterez à ce compte lors de la création du connecteur à l’étape 1.
 
-- L’utilisateur qui crée le connecteur de tableau croisé dynamique à l’étape 1 (et le termine à l’étape 3) doit être affecté au rôle d’exportation d’importation de boîte aux lettres dans Exchange Online. Ce rôle est nécessaire pour ajouter des connecteurs sur la page connecteurs de données dans le centre de conformité Microsoft 365. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle exportation d’importation de boîte aux lettres au groupe de rôles gestion de l’organisation dans Exchange Online. Vous pouvez aussi créer un groupe de rôles, attribuer le rôle d’exportation d’importation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, reportez-vous aux sections [créer des groupes de rôles](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) ou modifier des [groupes](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) de rôles dans l’article « gérer des groupes de rôles dans Exchange Online ».
+- L’utilisateur qui crée le connecteur de tableau croisé dynamique à l’étape 1 (et le termine à l’étape 3) doit être affecté au rôle d’exportation d’importation de boîte aux lettres dans Exchange Online. Ce rôle est nécessaire pour ajouter des connecteurs sur la page connecteurs de données dans le centre de conformité Microsoft 365. Par défaut, ce rôle n’est pas affecté à un groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle exportation d’importation de boîte aux lettres au groupe de rôles gestion de l’organisation dans Exchange Online. Vous pouvez aussi créer un groupe de rôles, attribuer le rôle d’exportation d’importation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, reportez-vous aux sections [créer des groupes de rôles](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) ou modifier des [groupes](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) de rôles dans l’article « gérer des groupes de rôles dans Exchange Online ».
 
 ## <a name="step-1-set-up-the-pivot-connector"></a>Étape 1 : configurer le connecteur de tableau croisé dynamique
 
@@ -63,7 +63,7 @@ La première étape consiste à accéder à la page **connecteurs de données** 
 
 La deuxième étape consiste à configurer le connecteur de tableau croisé dynamique sur le site Merge1. Pour plus d’informations sur la configuration du connecteur de tableau croisé dynamique sur le site Merge1 Globanet, voir Merge1 le Guide de l' [utilisateur des connecteurs tiers](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Pivot%20User%20Guide%20.pdf).
 
-Une fois que vous avez cliqué sur **enregistrer & terminer** , vous êtes redirigé vers le centre de conformité Microsoft 365, sur la page **mappage utilisateur** de l’Assistant connecteur.
+Une fois que vous avez cliqué sur **enregistrer & terminer** , la page de **mappage utilisateur** de l’Assistant connecteur dans le centre de conformité Microsoft 365 s’affiche.
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Étape 3 : mapper les utilisateurs et terminer l’installation du connecteur
 
@@ -83,7 +83,7 @@ Après avoir créé le connecteur de tableau croisé dynamique, vous pouvez affi
 
 1. Accédez à [https://compliance.microsoft.com](https://compliance.microsoft.com) , puis cliquez sur **connecteurs de données** dans le volet de navigation de gauche.
 
-2. Cliquez sur l’onglet **connecteurs** , puis sélectionnez le connecteur de **tableau croisé dynamique** pour afficher la page de menu volant, qui contient les propriétés et les informations relatives au connecteur.
+2. Cliquez sur l’onglet **connecteurs** , puis sélectionnez le connecteur de **tableau croisé dynamique** pour afficher la page de menu volant. Cette page contient les propriétés et les informations relatives au connecteur.
 
 3. Sous **État du connecteur avec source** , cliquez sur le lien **Télécharger le journal** pour ouvrir (ou enregistrer) le journal d’État du connecteur. Ce journal contient des données qui ont été importées dans Microsoft Cloud.
 

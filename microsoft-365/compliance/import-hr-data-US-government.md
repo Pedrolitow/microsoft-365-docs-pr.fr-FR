@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Les administrateurs dans le nuage des États-Unis peuvent configurer un connecteur de données pour importer les données des employés à partir du système de ressources humaines (RH) de leur organisation vers Microsoft 365. Cela vous permet d’utiliser des données RH dans des stratégies de gestion des risques initiées pour vous aider à détecter les activités d’utilisateurs spécifiques susceptibles de constituer une menace interne pour votre organisation.
-ms.openlocfilehash: c1382cd94fcbba1d2ba561657c756e509af21dae
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 28f4c77ec626e2035451ec6e7c9562c5bf20f101
+ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196387"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48816839"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-in-us-government"></a>Configurer un connecteur pour importer des données RH dans le secteur public américain
 
@@ -40,11 +40,11 @@ Vous pouvez configurer un connecteur de données dans le centre de conformité M
 
 La première étape consiste à créer et à enregistrer une nouvelle application dans Azure Active Directory (Azure AD). L’application correspond au connecteur RH que vous créez à l’étape 3. La création de cette application permettra à Azure AD d’authentifier le connecteur RH lorsqu’il s’exécute et tente d’accéder à votre organisation. Cette application est également utilisée pour authentifier le script que vous exécutez à l’étape 4 pour télécharger vos données RH dans le Cloud de Microsoft. Lors de la création de cette application Azure AD, veillez à enregistrer les informations suivantes. Ces valeurs seront utilisées dans les étapes ultérieures.
 
-- ID de l’application Azure AD (également appelé *ID* de l’application ou *ID client*)
+- ID de l’application Azure AD (également appelé *ID* de l’application ou *ID client* )
 
-- Secret d’application Azure AD (également appelé *clé secrète client*)
+- Secret d’application Azure AD (également appelé *clé secrète client* )
 
-- ID de client (également appelé *ID d’annuaire*)
+- ID de client (également appelé *ID d’annuaire* )
 
 Pour obtenir des instructions détaillées sur la création d’une application dans Azure AD, consultez [la rubrique enregistrer une application avec la plateforme d’identité Microsoft](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
 
@@ -62,7 +62,7 @@ La première ligne, ou ligne d’en-tête, du fichier CSV répertorie les noms d
 
 Le tableau suivant décrit chaque colonne du fichier CSV :
 
-|**Nom de colonne**|**Description**|
+| Nom de colonne | Description |
 |:-----|:-----|
 | **EmailAddress** <br/> |Spécifie l’adresse e-mail de l’employé qui a terminé.|
 | **TerminationDate** <br/> |Indique la date à laquelle l’emploi de la personne a été officiellement terminé au sein de votre organisation. Par exemple, il peut s’agir de la date à laquelle l’employé a donné son avis sur la cessation de son organisation. Cette date peut être différente de la date du dernier jour de travail de la personne. Utilisez le format de date suivant : `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , qui est le [format de date et d’heure ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
@@ -77,17 +77,17 @@ L’étape suivante consiste à créer un connecteur RH dans le centre de confor
 
 1. Accédez à [https://compliance.microsoft.com](https://compliance.microsoft.com) , puis cliquez sur **connecteurs de données** dans le volet de navigation de gauche.
 
-2. Sur la page **connecteurs de données** , sous **RH**, cliquez sur **affichage**.
+2. Sur la page **connecteurs de données** , sous **RH** , cliquez sur **affichage** .
 
-3. Sur la page **RH** , cliquez sur **Ajouter un connecteur**.
+3. Sur la page **RH** , cliquez sur **Ajouter un connecteur** .
 
-4. Sur la page **informations d’identification d’authentification** , effectuez les opérations suivantes, puis cliquez sur **suivant**:
+4. Sur la page **informations d’identification d’authentification** , effectuez les opérations suivantes, puis cliquez sur **suivant** :
 
-   a. Tapez ou collez l’ID de l’application Azure AD pour l’application Azure que vous avez créée à l’étape 1.
+   1. Tapez ou collez l’ID de l’application Azure AD pour l’application Azure que vous avez créée à l’étape 1.
 
-   b. Tapez un nom pour le connecteur RH.
+   1. Tapez un nom pour le connecteur RH.
 
-5. Sur la page **mappage de fichiers** , tapez les noms des trois en-têtes de colonne (également appelés *paramètres*) à partir du fichier CSV que vous avez créé à l’étape 2 dans chacune des zones appropriées. Les noms ne respectent pas la casse. Comme expliqué précédemment, les noms que vous tapez dans ces zones doivent correspondre aux noms de paramètres dans votre fichier CSV. Par exemple, la capture d’écran suivante montre les noms des paramètres de l’exemple dans le fichier CSV d’exemple illustré à l’étape 2.
+5. Sur la page **mappage de fichiers** , tapez les noms des trois en-têtes de colonne (également appelés *paramètres* ) à partir du fichier CSV que vous avez créé à l’étape 2 dans chacune des zones appropriées. Les noms ne respectent pas la casse. Comme expliqué précédemment, les noms que vous tapez dans ces zones doivent correspondre aux noms de paramètres dans votre fichier CSV. Par exemple, la capture d’écran suivante montre les noms des paramètres de l’exemple dans le fichier CSV d’exemple illustré à l’étape 2.
 
    ![Les titres des en-têtes de colonne correspondent à ceux du fichier CSV.](../media/HRConnectorWizard3.png)
 
@@ -97,11 +97,11 @@ L’étape suivante consiste à créer un connecteur RH dans le centre de confor
 
    ![Examiner la page avec l’ID de travail et le lien vers GitHub pour obtenir un exemple de script](../media/HRConnector_Confirmation.png)
 
-   a. **ID de travail.** Vous aurez besoin de cet ID de travail pour exécuter le script à l’étape suivante. Vous pouvez la copier à partir de cette page ou de la page mobile du connecteur.
+   1. **ID de travail.** Vous aurez besoin de cet ID de travail pour exécuter le script à l’étape suivante. Vous pouvez la copier à partir de cette page ou de la page mobile du connecteur.
    
-   b. **Lien vers l’exemple de script.** Cliquez sur le lien **ici** pour accéder au site github afin d’accéder à l’exemple de script (le lien ouvre une nouvelle fenêtre). Laissez cette fenêtre ouverte pour pouvoir copier le script à l’étape 4. Vous pouvez également insérer un signet dans la destination ou copier l’URL afin de pouvoir y accéder à nouveau à l’étape 4. Ce lien est également disponible sur la page mobile du connecteur.
+   1. **Lien vers l’exemple de script.** Cliquez sur le lien **ici** pour accéder au site github afin d’accéder à l’exemple de script (le lien ouvre une nouvelle fenêtre). Laissez cette fenêtre ouverte pour pouvoir copier le script à l’étape 4. Vous pouvez également insérer un signet dans la destination ou copier l’URL afin de pouvoir y accéder à nouveau à l’étape 4. Ce lien est également disponible sur la page mobile du connecteur.
 
-7. Cliquez sur **Terminé**.
+7. Cliquez sur **Terminé** .
 
    Le nouveau connecteur est affiché dans la liste sous l’onglet **connecteurs** . 
 
@@ -109,7 +109,7 @@ L’étape suivante consiste à créer un connecteur RH dans le centre de confor
 
    ![Page de menu volant pour le nouveau connecteur RH](../media/HRConnectorWizard7.png)
 
-   Si vous ne l’avez pas déjà fait, vous pouvez copier les valeurs pour l’ID d' **application Azure** et l' **ID de travail de connecteur**. Vous en aurez besoin pour exécuter le script à l’étape suivante. Vous pouvez également télécharger le script à partir de la page de menu volant (ou le télécharger en utilisant le lien de l’étape suivante).
+   Si vous ne l’avez pas déjà fait, vous pouvez copier les valeurs pour l’ID d' **application Azure** et l' **ID de travail de connecteur** . Vous en aurez besoin pour exécuter le script à l’étape suivante. Vous pouvez également télécharger le script à partir de la page de menu volant (ou le télécharger en utilisant le lien de l’étape suivante).
 
    Vous pouvez également cliquer sur **modifier** pour modifier l’ID de l’application Azure ou les noms d’en-tête de colonne que vous avez définis sur la page **mappage de fichiers** .
 
@@ -137,7 +137,7 @@ La dernière étape de la configuration d’un connecteur RH consiste à exécut
 
    Le tableau suivant décrit les paramètres à utiliser avec ce script et leurs valeurs requises. Les informations que vous avez obtenues dans les étapes précédentes sont utilisées dans les valeurs de ces paramètres.
 
-   |**Parameter**|**Description**
+   | Paramètre | Description |
    |:-----|:-----|:-----|
    |`tenantId`|ID de votre organisation Microsoft 365 que vous avez obtenu à l’étape 1. Vous pouvez également obtenir l’ID de client de votre organisation sur le panneau de présentation dans le centre **d'** administration Azure ad. Il est utilisé pour identifier votre organisation.|
    |`appId` |L’ID de l’application Azure AD pour l’application que vous avez créée dans Azure AD à l’étape 1. Il est utilisé par Azure AD pour l’authentification lorsque le script tente d’accéder à votre organisation Microsoft 365. |
@@ -163,17 +163,17 @@ Après avoir créé le connecteur RH et exécuté le script pour charger vos don
 
 1. Accédez à [https://compliance.microsoft.com](https://compliance.microsoft.com) , puis cliquez sur **connecteurs de données** dans le volet de navigation de gauche.
 
-2. Cliquez sur l’onglet **connecteurs** , puis sélectionnez le connecteur RH pour afficher la page de menu volant, qui contient les propriétés et les informations relatives au connecteur.
+2. Cliquez sur l’onglet **connecteurs** , puis sélectionnez le connecteur RH pour afficher la page de menu volant. Cette page contient les propriétés et les informations relatives au connecteur.
 
    ![Page mobile du connecteur RH avec les propriétés et l’État](../media/HRConnectorFlyout1.png)
 
-3. Sous en **cours**, cliquez sur le lien **Télécharger le journal** pour ouvrir (ou enregistrer) le journal d’État du connecteur. Ce journal contient des informations sur chaque fois que le script s’exécute et charge les données à partir du fichier CSV vers le Cloud Microsoft. 
+3. Sous en **cours** , cliquez sur le lien **Télécharger le journal** pour ouvrir (ou enregistrer) le journal d’État du connecteur. Ce journal contient des informations sur chaque fois que le script s’exécute et charge les données à partir du fichier CSV vers le Cloud Microsoft. 
 
    ![Le fichier journal du connecteur RH affiche les lignes numériques à partir du fichier CSV qui ont été téléchargées](../media/HRConnectorLogFile.png)
 
    Le `RecordsSaved` champ indique le nombre de lignes du fichier CSV téléchargé. Par exemple, si le fichier CSV contient quatre lignes, la valeur des `RecordsSaved` champs est 4, si le script a téléchargé avec succès toutes les lignes dans le fichier CSV.
 
-Si vous n’avez pas exécuté le script à l’étape 4, un lien vers le téléchargement du script est affiché lors de la **dernière importation**. Vous pouvez télécharger le script, puis suivre les étapes de l’étape 4 pour l’exécuter.
+Si vous n’avez pas exécuté le script à l’étape 4, un lien vers le téléchargement du script est affiché lors de la **dernière importation** . Vous pouvez télécharger le script, puis suivre les étapes de l’étape 4 pour l’exécuter.
 
 ## <a name="optional-step-6-schedule-the-script-to-run-automatically"></a>Module Étape 6 : planifier le script pour qu’il s’exécute automatiquement
 
@@ -181,41 +181,41 @@ Pour vous assurer que les dernières données RH de votre organisation sont acce
 
 Vous pouvez utiliser l’application planificateur de tâches de Windows pour exécuter automatiquement le script tous les jours.
 
-1. Sur votre ordinateur local, cliquez sur le bouton **Démarrer** de Windows, puis tapez **Planificateur de tâches**.
+1. Sur votre ordinateur local, cliquez sur le bouton **Démarrer** de Windows, puis tapez **Planificateur de tâches** .
 
 2. Cliquez sur l’application **Planificateur de tâches** pour l’ouvrir.
 
-3. Dans la section **actions** , cliquez sur **créer une tâche**.
+3. Dans la section **actions** , cliquez sur **créer une tâche** .
 
-4. Sous l’onglet **général** , entrez un nom descriptif pour la tâche planifiée ; par exemple, le **script du connecteur RH**. Vous pouvez également ajouter une description facultative.
+4. Sous l’onglet **général** , entrez un nom descriptif pour la tâche planifiée ; par exemple, le **script du connecteur RH** . Vous pouvez également ajouter une description facultative.
 
-5. Sous **options de sécurité**, procédez comme suit :
+5. Sous **options de sécurité** , procédez comme suit :
 
-   a. Déterminez s’il faut exécuter le script uniquement lorsque vous avez ouvert une session sur l’ordinateur ou que vous l’exécutez lorsque vous êtes connecté.
+   1. Déterminez s’il faut exécuter le script uniquement lorsque vous avez ouvert une session sur l’ordinateur ou que vous l’exécutez lorsque vous êtes connecté.
    
-   b. Assurez-vous que la case à cocher **exécuter avec les privilèges les plus élevés** est activée.
+   1. Assurez-vous que la case à cocher **exécuter avec les privilèges les plus élevés** est activée.
 
-6. Sélectionnez l’onglet **déclencheurs** , cliquez sur **nouveau**, puis effectuez les opérations suivantes :
+6. Sélectionnez l’onglet **déclencheurs** , cliquez sur **nouveau** , puis effectuez les opérations suivantes :
 
-   a. Sous **paramètres**, sélectionnez l’option **quotidien** , puis choisissez une date et une heure pour exécuter le script pour la première fois. Le script se verra tous les jours au même moment.
+   1. Sous **paramètres** , sélectionnez l’option **quotidien** , puis choisissez une date et une heure pour exécuter le script pour la première fois. Le script se verra tous les jours au même moment.
    
-   b. Sous **Paramètres avancés**, vérifiez que la case à cocher **activé** est activée.
+   1. Sous **Paramètres avancés** , vérifiez que la case à cocher **activé** est activée.
    
-   c. Cliquez sur **OK**.
+   1. Cliquez sur  **OK** .
 
-7. Sélectionnez l’onglet **actions** , cliquez sur **nouveau**, puis effectuez les opérations suivantes :
+7. Sélectionnez l’onglet **actions** , cliquez sur **nouveau** , puis effectuez les opérations suivantes :
 
    ![Paramètres des actions pour créer une tâche planifiée pour le script du connecteur RH](../media/HRConnectorScheduleTask1.png)
 
-   a. Dans la liste déroulante **action** , assurez-vous que l’option **Démarrer un programme** est sélectionnée.
+   1. Dans la liste déroulante **action** , assurez-vous que l’option **Démarrer un programme** est sélectionnée.
 
-   b. Dans la zone **programme/script** , cliquez sur **Parcourir**, accédez à l’emplacement suivant et sélectionnez-le pour afficher le chemin d’accès dans la zone : `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe` .
+   1. Dans la zone **programme/script** , cliquez sur **Parcourir** , accédez à l’emplacement suivant et sélectionnez-le pour afficher le chemin d’accès dans la zone : `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe` .
 
-   c. Dans la zone **Ajouter des arguments (facultatif)** , collez la même commande de script que celle que vous avez exécutée à l’étape 4. Par exemple, `.\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn"  -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -csvFilePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"`
+   1. Dans la zone **Ajouter des arguments (facultatif)** , collez la même commande de script que celle que vous avez exécutée à l’étape 4. Par exemple, `.\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn"  -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -csvFilePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"`
 
-   d. Dans la zone **commencer dans (facultatif)** , collez l’emplacement du dossier du script que vous avez exécuté à l’étape 4. Par exemple, `C:\Users\contosoadmin\Desktop\Scripts`.
+   1. Dans la zone **commencer dans (facultatif)** , collez l’emplacement du dossier du script que vous avez exécuté à l’étape 4. Par exemple, `C:\Users\contosoadmin\Desktop\Scripts`.
 
-   e. Cliquez sur **OK** pour enregistrer les paramètres de la nouvelle action.
+   1. Cliquez sur **OK** pour enregistrer les paramètres de la nouvelle action.
 
 8. Dans la fenêtre **créer une tâche** , cliquez sur **OK** pour enregistrer la tâche planifiée. Vous serez peut-être invité à entrer vos informations d’identification de compte d’utilisateur.
 

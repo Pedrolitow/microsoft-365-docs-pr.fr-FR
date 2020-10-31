@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: f0251f783aebd1264facfcbaa23a9b7afa286833
-ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
+ms.openlocfilehash: e790dfa986e6132295279e64321bda71a736a4b2
+ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48774017"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48816849"
 ---
 # <a name="insider-risk-management-cases"></a>Dossiers de gestion des risques initiés
 
@@ -241,7 +241,7 @@ Pour en savoir plus sur Microsoft teams pour la gestion des risques initiaux, vo
 Le partage d’un cas de gestion des risques inSided permet aux investigateurs et analystes de risque de collaborer facilement avec les autres parties prenantes en matière de conformité de votre organisation. Vous pouvez rapidement partager un lien vers un cas d’Insider de gestion des risques avec des parties prenantes externes à partir du domaine de gestion des cas. Pour accéder au cas de gestion des risques inSided à partir du lien, les parties prenantes doivent être incluses dans n’importe quel groupe de rôles de gestion des risques Insiders.
 
 >[!NOTE]
->La version d’évaluation de ServiceNow se terminera le 1er novembre 30 2020 et ne sera pas poursuivie. Nous vous remercions de vos commentaires et de votre soutien pendant que nous déterminons les étapes suivantes.
+>Nous vous remercions pour vos commentaires sur l’aperçu du connecteur ServiceNow. Nous avons décidé de terminer la préversion d’ServiceNow Connector et de la prise en charge de la gestion des risques initiés le 30 novembre 2020. Nous évaluons activement d’autres méthodes pour fournir aux clients une intégration ServiceNow dans la gestion des risques initiés.
 
 Les options de partage suivantes sont disponibles :
 

@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: La protection contre la perte de données (DLP) dans le centre de sécurité &amp; conformité inclut 80 types d’informations sensibles que vous pouvez utiliser dans vos stratégies DLP. Cette rubrique répertorie tous ces types d'informations sensibles et indique ce qu'une stratégie DLP recherche pour chaque type.
-ms.openlocfilehash: 288c53d5e9264942e12d5634cec172a65ee79ca6
-ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
+ms.openlocfilehash: 498ff1482bd0109903968d1c8fe250311e37a51f
+ms.sourcegitcommit: 2810d1347e5016412074b2dd18e654aee7e593de
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48656051"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "48819114"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Définitions d’entités des types d’informations sensibles
 
@@ -3162,9 +3162,9 @@ sept à huit chiffres plus des délimiteurs un chiffre ou une lettre
 
 sept à huit chiffres plus des délimiteurs :
 - un à deux chiffres 
-- un point 
+- un point facultatif 
 - trois chiffres 
-- un point 
+- un point facultatif 
 - trois chiffres 
 - un tiret 
 - un chiffre ou une lettre (ne respectant pas la casse), qui est un chiffre de contrôle
@@ -3201,18 +3201,40 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="keyword_chile_id_card"></a>Keyword_chile_id_card
 
-- National Identification Number 
-- Identity card 
-- ID 
-- Identificateur 
-- Rol Único Nacional 
-- GÉNÉRER 
-- Rol Único Tributario 
-- ROUTINE 
-- Cédula de Identidad 
-- Número De Identificación Nacional 
-- Tarjeta de identificación 
-- Identificación 
+- Cédula de identidad
+- identificación
+- numéro d’identification nationale
+- numéro d’identification nationale
+- id national
+- Número de Identificación Nacional
+- ROL Único Nacional
+- rol único tributario
+- GÉNÉRER
+- ROUTINE
+- Tarjeta de Identificación
+- ROL Unico Nacional
+- Rol Unico Tributario
+- GÉNÉRER #
+- ROUTINE #
+- nationaluniqueroleID #
+- Nacional identidad
+- número identificación
+- identidad número
+- numéroto Identificacion
+- identidad numérique
+- N ° d’identité chilien
+- Numéro d’identité chilien
+- Identité chilien #
+- Registre fiscal unique
+- Rôle de lafonction unique
+- Rôle de taxation unique
+- Numéro d’identification unique unique
+- Numéro national unique
+- Rôle national unique
+- Rôle national unique
+- N ° d’identité du Chili
+- Numéro d’identité Chili
+- Identité Chili #
 
    
 ## <a name="china-resident-identity-card-prc-number"></a>Numéro de carte d’identité de résident chinoise (PRC)
@@ -8558,7 +8580,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-Aucun
+Néant
 
    
 ## <a name="international-classification-of-diseases-icd-10-cm"></a>Classification internationale des maladies (ICD-10-CM)
@@ -12044,7 +12066,9 @@ trois lettres, un espace (facultatif) et quatre chiffres
 
 ### <a name="pattern"></a>Modèle
 
-trois lettres (ne respectant pas la casse) un espace (facultatif) quatre chiffres
+- trois lettres (ne respectant pas la casse), sauf « I » et « O »
+- un espace (facultatif) 
+- quatre chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -12057,27 +12081,38 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Un mot clé figurant dans la liste Keyword_nz_terms est trouvé.
 - La somme de contrôle est correcte.
 
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
+- La fonction Func_new_zealand_ministry_of_health_number trouve un contenu qui correspond au modèle.
+- La somme de contrôle est correcte.
+
 ```xml
-<!-- New Zealand Health Number -->
-<Entity id="2b71c1c8-d14e-4430-82dc-fd1ed6bf05c7" patternsProximity="300" recommendedConfidence="85">
-    <Pattern confidenceLevel="85">
+    <!-- New Zealand Health Number -->
+    <Entity id="2b71c1c8-d14e-4430-82dc-fd1ed6bf05c7" patternsProximity="300" recommendedConfidence="85">
+      <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_new_zealand_ministry_of_health_number" />
-        <Any minMatches="1">
           <Match idRef="Keyword_nz_terms" />
-        </Any>
-    </Pattern>
-</Entity>
+      </Pattern>
+      <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_new_zealand_ministry_of_health_number" />
+       </Pattern>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
 #### <a name="keyword_nz_terms"></a>Keyword_nz_terms
 
-- NHI 
-- Nouvelle-Zélande 
-- Intégrité 
-- destinations 
-
+- NHI
+- Nouvelle-Zélande
+- Intégrité
+- destinations
+- Numéro d’index d’intégrité nationale
+- numéro NHI
+- n ° NHI
+- NHI #
+- N ° d’index sanitaire national
+- ID d’index d’intégrité nationale
+- Index d’intégrité nationale #
 
 ## <a name="new-zealand-social-wlefare-number"></a>Numéro de wlefare sociale Nouvelle-Zélande
 Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
@@ -14761,7 +14796,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-Aucun
+Néant
 
 ## <a name="spain-tax-identification-number"></a>Numéro d’identification fiscale Espagne
 Ce type d’informations sensibles est disponible uniquement dans les cas suivants :

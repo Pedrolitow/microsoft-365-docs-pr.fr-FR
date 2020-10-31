@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment créer et exécuter une requête dans un jeu de réexamen afin d’organiser les données pour une révision plus efficace dans un cas avancé de découverte électronique.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 508e8e9fdb4a558a998a33aa561dc3755edcc40d
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: 1ead897d412af2356d8b57ab8494539a5ed9a019
+ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47816717"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48816567"
 ---
 # <a name="query-the-data-in-a-review-set"></a>Interroger les données d’un jeu à réviser
 
@@ -36,25 +36,25 @@ Pour créer et exécuter une requête sur les documents d’un jeu de révision,
 
 ## <a name="building-a-review-set-query"></a>Création d’une requête d’ensemble de révision
 
-Vous pouvez créer une requête à l’aide d’une combinaison de cartes de condition et de langage de requête dans la carte de condition de mots-clés. Vous pouvez également regrouper les cartes de condition en tant que bloc (appelé *groupe de conditions*) pour créer une requête plus complexe. Pour consulter la liste et la description des propriétés de métadonnées que vous pouvez rechercher, consultez [Champs de métadonnées des documents dans Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md).
+Vous pouvez créer une requête à l’aide d’une combinaison de mots clés, de propriétés et de conditions dans la condition de mots clés. Vous pouvez également regrouper les conditions sous forme de bloc (appelé *groupe de conditions* ) pour créer une requête plus complexe. Pour consulter la liste et la description des propriétés de métadonnées que vous pouvez rechercher, consultez [Champs de métadonnées des documents dans Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md).
 
-### <a name="condition-cards"></a>Cartes de condition
+### <a name="conditions"></a>Conditions
 
-Chaque champ pouvant faire l’objet d’une recherche dans un jeu de révision dispose d’une carte de condition correspondante que vous pouvez utiliser pour créer votre requête.
+Chaque champ pouvant faire l’objet d’une recherche dans un ensemble de réexamen a une condition correspondante que vous pouvez utiliser pour créer votre requête.
 
-Il existe plusieurs types de cartes de condition :
+Il existe plusieurs types de conditions :
 
-- FREETEXT : une carte de condition FREETEXT est utilisée pour les champs de texte tels que subject. Vous pouvez répertorier plusieurs termes de recherche en les séparant par une virgule.
+- FREETEXT : une condition FREETEXT est utilisée pour les champs de texte tels que subject. Vous pouvez répertorier plusieurs termes de recherche en les séparant par une virgule.
 
-- Date : une carte de condition de date est utilisée pour les champs de date tels que date de dernière modification.
+- Date : une condition de date est utilisée pour les champs de date tels que date de dernière modification.
 
-- Options de recherche : une carte de condition options de recherche fournit une liste des valeurs possibles pour le champ particulier dans votre jeu de révision. Cette valeur est utilisée pour les champs, tels que sender, où il existe un nombre fini de valeurs possibles dans votre ensemble de révision.
+- Options de recherche : une condition options de recherche fournit une liste de valeurs possibles pour le champ particulier dans votre jeu de révision. Cette valeur est utilisée pour les champs, tels que sender, où il existe un nombre fini de valeurs possibles dans votre ensemble de révision.
 
-- Mot-clé : une carte de condition de mot-clé est une instance spécifique de la carte de condition FREETEXT que vous pouvez utiliser pour rechercher des termes ou utiliser le langage de requête KQL dans. Voir ci-dessous pour plus de détails.
+- Mot clé : une condition de mot clé est une instance spécifique de la condition FREETEXT que vous pouvez utiliser pour rechercher des termes ou utiliser le langage de requête KQL dans. Voir ci-dessous pour plus de détails.
 
 ### <a name="query-language"></a>Langage de requête
 
-En plus des cartes de condition, vous pouvez utiliser un langage de requête de type KQL dans la carte de mots-clés pour créer votre requête. Le langage de requête pour les requêtes de jeu de révision prend en charge les opérateurs booléens standard, tels que **and**, **or**, **not**et **near**. Il prend également en charge un caractère générique ( ?) à un seul caractère et un caractère générique à caractères multiples (*).
+En plus des conditions, vous pouvez utiliser un langage de requête de type KQL dans la condition Keywords pour créer votre requête. Le langage de requête pour les requêtes de jeu de révision prend en charge les opérateurs booléens standard, tels que **and** , **or** , **not** et **near** . Il prend également en charge un caractère générique ( ?) à un seul caractère et un caractère générique à caractères multiples (*).
 
 ## <a name="filters"></a>Filtres
 

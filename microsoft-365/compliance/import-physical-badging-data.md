@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur de données pour importer des données à partir du système badges physique de leur organisation vers Microsoft 365. Cela vous permet d’utiliser ces données dans des stratégies de gestion des risques initiées pour vous aider à détecter l’accès à vos bâtiments physiques par des utilisateurs spécifiques susceptibles d’indiquer une éventuelle menace interne pour votre organisation.
-ms.openlocfilehash: 6d52879031c8801191b1a419f38a1167c1bb0688
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 71f43d8e6abd53454b6c81d811d0dca2e8b08388
+ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48204380"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48816647"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>Configurer un connecteur pour importer des données badges physiques (aperçu)
 
@@ -51,11 +51,11 @@ La configuration d’un connecteur badges physique comprend les tâches suivante
 
 La première étape consiste à créer et à enregistrer une nouvelle application dans Azure Active Directory (Azure AD). L’application correspond au connecteur badges physique que vous créez à l’étape 3. La création de cette application permettra à Azure AD d’authentifier la demande de transmission pour la charge utile JSON contenant des données badges physiques. Lors de la création de cette application Azure AD, veillez à enregistrer les informations suivantes. Ces valeurs seront utilisées dans les étapes ultérieures.
 
-- ID de l’application Azure AD (également appelé *ID* de l’application ou *ID client*)
+- ID de l’application Azure AD (également appelé *ID* de l’application ou *ID client* )
 
-- Secret d’application Azure AD (également appelé *clé secrète client*)
+- Secret d’application Azure AD (également appelé *clé secrète client* )
 
-- ID de client (également appelé *ID d’annuaire*)
+- ID de client (également appelé *ID d’annuaire* )
 
 Pour obtenir des instructions détaillées sur la création d’une application dans Azure AD, consultez [la rubrique enregistrer une application avec la plateforme d’identité Microsoft](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
 
@@ -65,18 +65,18 @@ L’étape suivante consiste à créer un fichier JSON qui contient des informat
 
 Le fichier JSON doit être conforme à la définition de schéma requise par le connecteur. Voici les descriptions des propriétés de schéma requises pour le fichier JSON :
 
-|**Propriété**|**Description**|**Type de données**|
+| Propriété | Description | Type de données |
 |:-----------|:--------------|:------------|
 |UserId|Un employé peut avoir plusieurs identités numériques sur les systèmes. L’ID d’Azure AD doit déjà être résolu par le système source. |Nom d’utilisateur principal ou adresse de messagerie|
 |AssetId|ID de référence de l’immobilisation physique ou du point d’accès physique.| Chaîne alphanumérique|
 |AssetName|Nom convivial de l’immobilisation physique ou du point d’accès physique.|Chaîne alphanumérique|
 |EventTime|Horodatage de l’accès.|Date et heure, au format UTC|
-|AccessStatus|Valeur `Success` ou `Failed`| Chaîne|
+|AccessStatus|Valeur `Success` ou `Failed`| String|
 |||
 
 Voici un exemple d’un fichier JSON conforme au schéma requis :
 
-```text
+```json
 [
     {
         "UserId":"sarad@contoso.com"
@@ -137,11 +137,11 @@ L’étape suivante consiste à créer un connecteur badges physique dans le cen
 
 1. Accédez à [https://compliance.microsoft.com](https://compliance.microsoft.com/) , puis cliquez sur **connecteurs de données** dans le volet de navigation de gauche.
 
-2. Sur la page **connecteurs de données** , sous **badges physique**, cliquez sur **Afficher**.
+2. Sur la page **connecteurs de données** , sous **badges physique** , cliquez sur **Afficher** .
 
-3. Sur la page **badges physique** , cliquez sur **Ajouter un connecteur**.
+3. Sur la page **badges physique** , cliquez sur **Ajouter un connecteur** .
 
-4. Sur la page **informations d’identification d’authentification** , effectuez les opérations suivantes, puis cliquez sur **suivant**:
+4. Sur la page **informations d’identification d’authentification** , effectuez les opérations suivantes, puis cliquez sur **suivant** :
   
    1. Tapez ou collez l’ID de l’application Azure AD pour l’application Azure que vous avez créée à l’étape 1.
   
@@ -155,7 +155,7 @@ L’étape suivante consiste à créer un connecteur badges physique dans le cen
 
    La page d’état contient également un lien vers le script. Reportez-vous à ce script pour savoir comment publier le fichier JSON sur le point de terminaison de l’API.
 
-7. Cliquez sur **Terminé**.
+7. Cliquez sur **Terminé** .
 
    Le nouveau connecteur est affiché dans la liste sous l’onglet **connecteurs** .
 
@@ -190,7 +190,7 @@ Après avoir exécuté le script, le fichier JSON contenant les données badges 
 
    Le tableau suivant décrit les paramètres à utiliser avec ce script et leurs valeurs requises. Les informations que vous avez obtenues dans les étapes précédentes sont utilisées dans les valeurs de ces paramètres.
 
-   | **Parameter**|**Description**|
+   | Paramètre | Description |
    |:-------------|:--------------|
    |tenantId | Il s’agit de l’ID de votre organisation Microsoft 365 que vous avez obtenu à l’étape 1. Vous pouvez également obtenir le tenantId pour votre organisation sur le panneau de présentation dans le centre **d'** administration Azure ad. Il est utilisé pour identifier votre organisation. |
    |appId | Il s’agit de l’ID de l’application Azure AD pour l’application que vous avez créée dans Azure AD à l’étape 1. Il est utilisé par Azure AD pour l’authentification lorsque le script tente d’accéder à votre organisation Microsoft 365.                    |
@@ -218,17 +218,17 @@ Après avoir créé le connecteur badges physique et diffusé vos données badge
 
 1. Accédez à [https://compliance.microsoft.com](https://compliance.microsoft.com/) , puis cliquez sur **connecteurs de données** dans le volet de navigation de gauche.
 
-2. Cliquez sur l’onglet **connecteurs** , puis sélectionnez le connecteur badges physique pour afficher la page de menu volant, qui contient les propriétés et les informations relatives au connecteur.
+2. Cliquez sur l’onglet **connecteurs** , puis sélectionnez le connecteur badges physique pour afficher la page de menu volant. Cette page contient les propriétés et les informations relatives au connecteur.
 
    ![Page de menu volant d’État pour le connecteur badges physique](..\media\PhysicalBadgingStatusFlyout.png)
 
-3. Sous **dernière importation**, cliquez sur le lien **Télécharger le journal** pour ouvrir (ou enregistrer) le journal d’État du connecteur. Ce journal contient des informations sur chaque fois que le script s’exécute et charge les données à partir du fichier CSV vers le Cloud Microsoft.
+3. Sous **dernière importation** , cliquez sur le lien **Télécharger le journal** pour ouvrir (ou enregistrer) le journal d’État du connecteur. Ce journal contient des informations sur chaque fois que le script s’exécute et charge les données à partir du fichier CSV vers le Cloud Microsoft.
 
    ![Le fichier journal du connecteur badges physique affiche les lignes numériques du fichier JSON qui ont été téléchargées](..\media\PhysicalBadgingConnectorLogFile.png)
 
    Le champ **RecordsSaved** indique le nombre de lignes du fichier CSV téléchargé. Par exemple, si le fichier CSV contient quatre lignes, la valeur des champs **RecordsSaved** est 4, si le script a téléchargé avec succès toutes les lignes dans le fichier CSV.
 
-Si vous n’avez pas exécuté le script à l’étape 4, un lien vers le téléchargement du script est affiché lors de la **dernière importation**. Vous pouvez télécharger le script, puis suivre les étapes de l’étape 4 pour l’exécuter.
+Si vous n’avez pas exécuté le script à l’étape 4, un lien vers le téléchargement du script est affiché lors de la **dernière importation** . Vous pouvez télécharger le script, puis suivre les étapes de l’étape 4 pour l’exécuter.
 
 ## <a name="optional-step-6-schedule-the-script-to-run-automatically"></a>Module Étape 6 : planifier le script pour qu’il s’exécute automatiquement
 
@@ -236,35 +236,35 @@ Pour vous assurer que les dernières données badges physiques de votre organisa
 
 Vous pouvez utiliser l’application planificateur de tâches de Windows pour exécuter automatiquement le script tous les jours.
 
-1. Sur votre ordinateur local, cliquez sur le bouton **Démarrer** de Windows, puis tapez **Planificateur de tâches**.
+1. Sur votre ordinateur local, cliquez sur le bouton **Démarrer** de Windows, puis tapez **Planificateur de tâches** .
 
 2. Cliquez sur l’application **Planificateur de tâches** pour l’ouvrir.
 
-3. Dans la section **actions** , cliquez sur **créer une tâche**.
+3. Dans la section **actions** , cliquez sur **créer une tâche** .
 
-4. Sous l’onglet **général** , entrez un nom descriptif pour la tâche planifiée ; par exemple, le **script de connecteur badges physique**. Vous pouvez également ajouter une description facultative.
+4. Sous l’onglet **général** , entrez un nom descriptif pour la tâche planifiée ; par exemple, le **script de connecteur badges physique** . Vous pouvez également ajouter une description facultative.
 
-5. Sous **options de sécurité**, procédez comme suit :
+5. Sous **options de sécurité** , procédez comme suit :
 
    1. Déterminez s’il faut exécuter le script uniquement lorsque vous avez ouvert une session sur l’ordinateur ou que vous l’exécutez lorsque vous êtes connecté.
 
    2. Assurez-vous que la case à cocher **exécuter avec les privilèges les plus élevés** est activée.
 
-6. Sélectionnez l’onglet **déclencheurs** , cliquez sur **nouveau**, puis effectuez les opérations suivantes :
+6. Sélectionnez l’onglet **déclencheurs** , cliquez sur **nouveau** , puis effectuez les opérations suivantes :
 
-   1. Sous **paramètres**, sélectionnez l’option **quotidien** , puis choisissez une date et une heure pour exécuter le script pour la première fois. Le script se verra tous les jours au même moment.
+   1. Sous **paramètres** , sélectionnez l’option **quotidien** , puis choisissez une date et une heure pour exécuter le script pour la première fois. Le script se verra tous les jours au même moment.
 
-   2. Sous **Paramètres avancés**, vérifiez que la case à cocher **activé** est activée.
+   2. Sous **Paramètres avancés** , vérifiez que la case à cocher **activé** est activée.
 
-   3. Cliquez sur **OK**.
+   3. Cliquez sur  **OK** .
 
-7. Sélectionnez l’onglet **actions** , cliquez sur **nouveau**, puis effectuez les opérations suivantes :
+7. Sélectionnez l’onglet **actions** , cliquez sur **nouveau** , puis effectuez les opérations suivantes :
 
    ![Paramètres des actions pour créer une tâche planifiée pour le script du connecteur badges physique](..\media\SchedulePhysicalBadgingScript1.png)
 
    1. Dans la liste déroulante **action** , assurez-vous que l’option **Démarrer un programme** est sélectionnée.
 
-   2. Dans la zone **programme/script** , cliquez sur **Parcourir**, accédez à l’emplacement suivant et sélectionnez-le pour afficher le chemin d’accès dans la zone : C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe.
+   2. Dans la zone **programme/script** , cliquez sur **Parcourir** , accédez à l’emplacement suivant et sélectionnez-le pour afficher le chemin d’accès dans la zone : C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe.
 
    3. Dans la zone **Ajouter des arguments (facultatif)** , collez la même commande de script que celle que vous avez exécutée à l’étape 4. Par exemple, .\PhysicalBadging.ps1-tenantId "d5723623-11CF-4E2E-B5A5-01d1506273g9"-appId "c12823b7-b55a-4989-faba-02de41bb97c3"-appSecret "MNubVGbcQDkGCnn"-jobId "e081f4f4-3831-48D6-7BB3-fcfab1581458"-jsonFilePath "C:\Users\contosoadmin\Desktop\Data\physical_badging_data.csv"
 
