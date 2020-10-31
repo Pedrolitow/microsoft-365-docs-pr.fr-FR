@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX
 description: Les administrateurs peuvent apprendre à utiliser les balises de mise en quarantaine pour contrôler ce que les utilisateurs peuvent faire à leurs messages mis en quarantaine.
-ms.openlocfilehash: 557a6832807c1768f482e76c76c0e92b027e49a7
-ms.sourcegitcommit: 2810d1347e5016412074b2dd18e654aee7e593de
+ms.openlocfilehash: 89f03795d8f12b3df3e5090648c5a6c8b64c322a
+ms.sourcegitcommit: 676479f1e65492b44c4d0316a765f55ae9fae374
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/31/2020
-ms.locfileid: "48819174"
+ms.locfileid: "48819739"
 ---
 # <a name="quarantine-tags"></a>Balises de mise en quarantaine
 
@@ -477,7 +477,7 @@ L’autorisation **autoriser l’expéditeur** ( _PermissionToAllowSender_ ) con
 
 Pour plus d’informations sur la liste des expéditeurs approuvés, voir [empêcher le blocage des expéditeurs approuvés](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379666) et [utiliser Exchange Online PowerShell pour configurer la collection de listes fiables sur une boîte aux lettres](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox).
 
-### <a name="block-sender-permission"></a>Autorisation bloquer l’expéditeur
+#### <a name="block-sender-permission"></a>Autorisation bloquer l’expéditeur
 
 L’autorisation **proscrire l’expéditeur** ( _PermissionToBlockSender_ ) contrôle l’accès au bouton qui permet aux utilisateurs d’ajouter facilement l’expéditeur du message en quarantaine à la liste des expéditeurs bloqués.
 
@@ -491,7 +491,7 @@ L’autorisation **proscrire l’expéditeur** ( _PermissionToBlockSender_ ) con
 
 Pour plus d’informations sur la liste des expéditeurs bloqués, voir [bloquer les messages de quelqu’un](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379667) et [utiliser Exchange Online PowerShell pour configurer la collection de listes fiables sur une boîte aux lettres](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox).
 
-### <a name="delete-permission"></a>Autorisations de suppression
+#### <a name="delete-permission"></a>Autorisations de suppression
 
 L’autorisation de **suppression** ( _PermissionToDelete_ ) contrôle la possibilité pour les utilisateurs de supprimer leurs messages (messages dans lesquels l’utilisateur est un destinataire) de la mise en quarantaine.
 
@@ -501,7 +501,7 @@ L’autorisation de **suppression** ( _PermissionToDelete_ ) contrôle la possib
 
 - **Notifications de courrier indésirable de l’utilisateur final** : aucun effet.
 
-### <a name="preview-permission"></a>Autorisation d’aperçu
+#### <a name="preview-permission"></a>Autorisation d’aperçu
 
 L’autorisation **preview** ( _PermissionToPreview_ ) contrôle la possibilité pour les utilisateurs de prévisualiser leurs messages en quarantaine.
 
