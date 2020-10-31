@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En savoir plus sur les stratégies de rétention et les étiquettes de rétention, qui permettent de conserver les éléments dont vous avez besoin et de supprimer ceux qui ne vous servent pas.
-ms.openlocfilehash: 089a34d1e9a002bd61e688cd3f721c6e8249c5b7
-ms.sourcegitcommit: 095b1f52f2e73e8d44195916984efeb0908c2ad8
+ms.openlocfilehash: 50bbe9d80b7b0a1b9fa346fd6e5abc8971dadcfb
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48755583"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804757"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>En savoir plus sur les stratégies et les étiquettes de rétention
 
@@ -240,6 +240,8 @@ Pour comprendre comment et pourquoi une étiquette de rétention est appliquée 
 - Les étiquettes de rétention appliquées automatiquement à partir d’une stratégie d’application automatique sont attribuées implicitement
 
 Une étiquette de rétention attribuée de manière explicite prévaut sur une étiquette de rétention attribuée de manière implicite. Si vous souhaitez en savoir plus, consultez la section de cette page nommée [Principes de rétention et priorité](retention.md#the-principles-of-retention-or-what-takes-precedence).
+
+Pour SharePoint, vous pouvez également attribuer implicitement des étiquettes de rétention lorsque vous configurez une étiquette par défaut pour tout le contenu d’une bibliothèque, d’un dossier ou d’un ensemble de documents SharePoint. Dans ce scénario, les étiquettes appliquées automatiquement sont prioritaires par rapport aux étiquettes par défaut. Cependant, si vous souhaitez en savoir plus sur tous les résultats de l’utilisation d’une étiquette par défaut, veuillez consulter la section [Application d’une étiquette de rétention par défaut à tout le contenu dans une bibliothèque, un dossier ou un ensemble de documents SharePoint](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set). 
 
 #### <a name="monitoring-retention-labels"></a>Contrôle des étiquettes de conservation
 
