@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: how-to
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection:
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Vous pouvez utiliser le Centre de sécurité et conformité Office 365 ou le Centre de conformité Microsoft 365 pour rechercher dans le journal d’audit unifié les activités des utilisateurs et des administrateurs de votre organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6c2ffc926114b8ffc2ebf2005b98e549ac03cf26
-ms.sourcegitcommit: 21c3e44862854c74e4008cfb661840f069c6b709
+ms.openlocfilehash: cf5481584031469b459d5662f75e32fd9a793a94
+ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48787580"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48816757"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Recherchez le journal d’audit dans le centre de conformité
 
@@ -461,7 +461,7 @@ Le tableau suivant décrit les activités des fichiers et pages dans SharePoint 
 
 #### <a name="frequently-asked-questions-about-fileaccessed-and-filepreviewed-events"></a>Forum aux questions sur les événements FileAccessed et FilePreviewed
 
-**N’importe quelle activité non-utilisateur peut-elle déclencher des enregistrements d’audit FilePreviewed contenant un agent utilisateur comme « OneDriveMpc-Transform_Thumbnail » ?**
+**Des activités non-utilisateur peuvent-elles déclencher des enregistrements d’audit FilePreviewed contenant un agent utilisateur tel que « OneDriveMpc-Transform_Thumbnail » ?**
 
 Nous ne connaissons pas de situations dans lesquelles les actions non-utilisateur génèrent des événements de ce type. Les actions d’utilisateur telles que l’ouverture d’une carte de profil utilisateur (en cliquant sur son nom ou son adresse e-mail dans un message dans Outlook sur le web) génèrent des événements similaires.
 
@@ -895,7 +895,7 @@ Dans les descriptions ci-dessous, certaines opérations contiennent d’autres p
 |:-----|:-----|:-----|
 |Commentaire créé|CreateComment|Le propriétaire du formulaire ajoute un commentaire ou une note à un questionnaire.|
 |Formulaire créé|CreateForm|Le propriétaire du formulaire crée un nouveau formulaire.|
-|Formulaire modifié|EditForm|Le propriétaire du formulaire modifie un formulaire tel que la création, la suppression ou la modification d’une question. <br><br>La propriété EditOperation:string indique le nom de l'opération d'édition. Les opérations possibles sont : CreateQuestion, CreateQuestionChoice, DeleteQuestion, DeleteQuestionChoice, DeleteFormImage, DeleteQuestionImage, UpdateQuestion, UpdateQuestionChoice, UploadFormImage/Bing/Onedrive, UploadQuestionImage et ChangeTheme.  <br><br>La plupart des noms d’opérations sont explicites. <br><br>FormImage inclut tout emplacement au sein duquel l’utilisateur peut charger une image, par exemple dans une requête ou en tant que thème d’arrière-plan.|
+|Formulaire modifié|EditForm|Le propriétaire du formulaire modifie un formulaire tel que la création, la suppression ou la modification d’une question. La propriété *EditOperation:string* indique le nom de l’opération de modification. Voici les opérations possibles :<br/>– CreateQuestion<br/>– CreateQuestionChoice <br/>– DeleteQuestion <br/>– DeleteQuestionChoice <br/>– DeleteFormImage <br/>– DeleteQuestionImage <br/>– UpdateQuestion <br/>– UpdateQuestionChoice <br/>– UploadFormImage/Bing/Onedrive <br/>– UploadQuestionImage <br/>– ChangeTheme <br><br>FormImage inclut tout emplacement au sein duquel l’utilisateur peut charger une image, par exemple dans une requête ou en tant que thème d’arrière-plan.|
 |Formulaire déplacé|MoveForm|Le propriétaire du formulaire déplace un formulaire. <br><br>La propriété DestinationUserId:string indique l'ID d'utilisateur de la personne qui a déplacé le formulaire. La propriété NewFormId:String est le nouvel ID du formulaire nouvellement copié.|
 |Formulaire supprimé|DeleteForm|Un propriétaire d’un formulaire supprime une équipe. Cela inclut SoftDelete (option de suppression utilisée et formulaire déplacé vers la corbeille) et HardDelete (corbeille vidée).|
 |Formulaire consulté (moment de la création)|ViewForm|Le propriétaire du formulaire ouvre un formulaire existant pour modification.|
@@ -914,7 +914,8 @@ Dans les descriptions ci-dessous, certaines opérations contiennent d’autres p
 |Réponse consultée|ViewResponse|Le propriétaire du formulaire affiche une réponse spécifique. <br><br>La propriété ResponseId:string et la propriété ResponderId:string indiquent quel résultat est affiché. <br><br>Pour un répondant anonyme, la propriété ResponderId sera null.|
 |Lien de synthèse créé|GetSummaryLink|Le propriétaire du formulaire crée un lien de résultats de synthèse pour partager les résultats.|
 |Lien de synthèse supprimé|DeleteSummaryLink|Le propriétaire du formulaire supprime le lien de synthèse des résultats.|
-|Formulaire mis à jour état d’hameçonnage|UpdatePhishingStatus|Cet événement est consigné lorsque la valeur de l’état de sécurité interne a changé, même si cela a modifié l’état de sécurité final (par exemple, formulaire est désormais fermé ou ouvert). Cela signifie qu’il est possible que vous rencontriez des événements en double sans modification d’état de sécurité finale.|
+|Formulaire mis à jour état d’hameçonnage|UpdatePhishingStatus|Cet événement est enregistré chaque fois que la valeur détaillée de l’état de sécurité interne est modifiée, que cela modifie l’état de sécurité final ou non (par exemple, le formulaire est désormais Fermé ou Ouvert). Cela signifie que vous pouvez rencontrer des événements en double même si l’état de sécurité final n’a pas été modifié. Voici les valeurs d’état possibles pour cet événement :<br/>– Retirer <br/>– Retirer par l’administrateur <br/>– Admin débloqué <br/>– Bloqué automatiquement <br/>– Débloqué automatiquement <br/>– Utilisateur signalé <br/>– Réinitialiser l’utilisateur signalé|
+|État de l’hameçonnage de l’utilisateur mis à jour|UpdateUserPhishingStatus|Cet événement est enregistré chaque fois que la valeur de l’état de sécurité de l’utilisateur est modifiée. La valeur de l’état de l’utilisateur dans l’enregistrement d’audit est définie sur **Confirmé comme hameçonnage** lorsque l’utilisateur créé un formulaire d’hameçonnage qui est supprimé par l’équipe de sécurité de Microsoft Online. Si un administrateur débloque l’utilisateur, la valeur de l’état de l’utilisateur est définie sur **Réinitialiser en tant qu’utilisateur normal** .|
 |Invitation Forms Pro envoyée|ProInvitation|L’utilisateur clique pour activer une version d’évaluation Pro.|
 |Paramètres de formulaire mis à jour|UpdateFormSetting|Le propriétaire du formulaire met à jour un paramètre de formulaire. <br><br>La propriété FormSettingName:string indique le nom du paramètre et la nouvelle valeur.|
 |Paramètres d’utilisateur mis à jour|UpdateUserSetting|Le propriétaire du formulaire met à jour un paramètre d’utilisateur. <br><br>La propriété UserSettingName:string indique le nom et la nouvelle valeur du paramètre|
@@ -924,7 +925,7 @@ Dans les descriptions ci-dessous, certaines opérations contiennent d’autres p
 
 #### <a name="forms-activities-performed-by-coauthors-and-anonymous-responders"></a>Activités Forms réalisées par des co-auteurs et des répondants anonymes
 
-Forms prend en charge la collaboration pendant la conception des formulaires et l’analyse des réponses. Un collaborateur de formulaire est appelé *co-auteur* . Les co-auteurs peuvent effectuer les mêmes actions que le propriétaire d’un formulaire, excepté supprimer ou déplacer un formulaire. Forms vous permet également de créer un formulaire dans lequel les répondants restent anonymes.  Ce qui signifie qu’un répondant n’a pas besoin d’être connecté à votre organisation pour répondre à un formulaire. 
+Forms prend en charge la collaboration pendant la conception des formulaires et l’analyse des réponses. Un collaborateur de formulaire est appelé *co-auteur* . Les co-auteurs peuvent effectuer les mêmes actions que le propriétaire d’un formulaire, excepté supprimer ou déplacer un formulaire. Forms vous permet également de créer un formulaire dans lequel les répondants restent anonymes.  Ce qui signifie qu’un répondant n’a pas besoin d’être connecté à votre organisation pour répondre à un formulaire.
 
 Le tableau suivant décrit les activités d’audit et les informations figurant dans l’enregistrement d’audit pour les activités réalisées par les co-auteurs et les répondants anonymes.
 
