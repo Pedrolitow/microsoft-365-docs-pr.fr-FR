@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: Découvrez comment obtenir un rapport d’activité Microsoft Forms à l’aide du tableau de bord des rapports Microsoft 365 dans le centre d’administration Microsoft 365.
-ms.openlocfilehash: 78b09edfbfeb83c056af16787085b7c4cfe93fc6
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 843548e77067c7598cfa78ba6fac985237f6f62c
+ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949203"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841112"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>Rapports Microsoft 365 dans le centre d’administration-activité des formulaires
 
@@ -39,7 +39,7 @@ Par exemple, vous pouvez comprendre l’activité de chaque utilisateur titulair
 1. Dans le centre d’administration, accédez à la page **Rapports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Utilisation</a>.
 
     
-2. Dans la liste déroulante **Sélectionner un rapport** , sélectionnez activité des **formulaires** \> **activity**.
+2. Dans la liste déroulante **Sélectionner un rapport** , sélectionnez activité des **formulaires** \> **activity** .
 
 ## <a name="interpret-the-forms-activity-report"></a>Interpréter le rapport d’activité de formulaires
 

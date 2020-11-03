@@ -19,29 +19,28 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: Découvrez comment votre organisation adopte les services Microsoft 365 pour communiquer et collaborer.
-ms.openlocfilehash: fecaed3aa9fc2d0990cb3e7b416cee1bfab21d7e
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: d7e9e6cf945134df54221bb8a03ef83d1a8851cc
+ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948627"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841386"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Analyse de l'utilisation de Microsoft 365
----
 
 ## <a name="overview-of-microsoft-365-usage-analytics"></a>Vue d'ensemble de l'analyse de l'utilisation de Microsoft 365
 
-Utilisez l’analyse de l’utilisation de Microsoft 365 dans Power BI pour obtenir des informations sur la façon dont votre organisation adopte les différents services au sein de Microsoft 365 pour communiquer et collaborer. Vous pouvez visualiser et analyser les données d’utilisation de Microsoft 365, créer des rapports personnalisés et partager les informations au sein de votre organisation et obtenir des informations sur la façon dont des régions ou des services spécifiques utilisent Microsoft 365.
+Utilisez l’analyse de l’utilisation de Microsoft 365 dans Power BI pour obtenir des informations sur la façon dont votre organisation adopte les différents services dans Microsoft 365. Vous pouvez visualiser et analyser les données d’utilisation de Microsoft 365, créer des rapports personnalisés et partager les informations au sein de votre organisation. Vous pouvez également obtenir des informations sur la façon dont des régions ou services spécifiques utilisent Microsoft 365.
   
-L’analyse de l’utilisation de Microsoft 365 est une application de modèle qui vous donne accès à un tableau de bord prédéfini qui offre une vue des différents produits des 12 derniers mois et contient un certain nombre de rapports prédéfinis. Chaque rapport fournit des informations spécifiques sur l'utilisation. Les informations spécifiques de utilisateur sont disponibles pour le dernier mois calendaire complet.
+L’analyse de l’utilisation de Microsoft 365 vous donne accès à un tableau de bord prédéfini qui offre une vue des produits différents des 12 derniers mois et contient un certain nombre de rapports prédéfinis. Chaque rapport fournit des informations spécifiques sur l'utilisation. Les informations spécifiques à l’utilisateur sont disponibles pour le dernier mois de calendrier complet.
   
-Le [modèle de données](usage-analytics-data-model.md) qui alimente l’application de modèle inclut des attributs utilisateur d’Active Directory, ce qui permet de faire pivoter certains rapports. Les attributs Active Directory inclus sont les suivants : emplacement, département et organisation. 
+Le [modèle de données](usage-analytics-data-model.md) qui alimente l’application de modèle inclut des attributs utilisateur d’Active Directory, ce qui permet de faire pivoter certains rapports. Les attributs Active Directory suivants sont inclus : emplacement, service et organisation. 
   
 Pour commencer à collecter des données, voir [Activer l'analyse de l'utilisation de Microsoft 365](enable-usage-analytics.md). 
   
 L’analyse de l’utilisation de Microsoft 365 contient un certain nombre de rapports détaillés dans les sections suivantes. 
 
-Vous pouvez accéder à des rapports détaillés pour chaque zone en sélectionnant les tables de données. Vous pouvez afficher tous les rapports prédéfinis en sélectionnant les onglets situés en bas du site, une fois que vous affichez les rapports. Pour obtenir des instructions plus détaillées, consultez [la navigation et l’utilisation des rapports de l’analyse de l’utilisation 365 de Microsoft](navigate-and-utilize-reports.md) et [Personnalisation des rapports dans l’analyse de l’utilisation de Microsoft 365](customize-reports.md).
+Vous pouvez accéder à des rapports détaillés pour chaque zone en sélectionnant les tables de données. Vous pouvez afficher tous les rapports prédéfinis en sélectionnant les onglets situés en bas du site. Pour obtenir des instructions plus détaillées, consultez [la navigation et l’utilisation des rapports](navigate-and-utilize-reports.md) et de [la personnalisation des rapports](customize-reports.md).
 
 ## <a name="executive-summary"></a>Résumé analytique
 
@@ -83,7 +82,7 @@ Ce rapport contient un rapport distinct pour chaque service Microsoft 365, y com
 
 Les rapports d’activité de l’utilisateur sont disponibles pour certains services individuels. Ces rapports fournissent des données d’utilisation détaillées au niveau utilisateur jointes aux attributs Active Directory. En outre, le rapport d’adoption des services vous permet de découper les attributs Active Directory afin que vous puissiez voir les utilisateurs actifs sur tous les services individuels. Toutes les mesures sont regroupées pour le mois complet le plus récent.
 
-## <a name="faq"></a>Forum Aux Questions
+## <a name="faq"></a>FAQ
 
 ### <a name="is-this-template-app-going-to-be-available-through-purchase-or-will-it-be-free"></a>Cette application de modèle va-t-elle être disponible par le biais de l’achat ou sera-t-elle gratuite ?
 
@@ -93,7 +92,7 @@ Pour partager les tableaux de bord avec d’autres personnes, consultez la rubri
 
 ### <a name="who-can-connect-to-microsoft-365-usage-analytics"></a>Qui peut se connecter aux analyses de l'utilisation de Microsoft 365 ?
 
-Vous devez être un administrateur **général**, un administrateur **Exchange**, un **administrateur Skype entreprise**, un administrateur **SharePoint**, un **lecteur global** ou un **lecteur de rapports** pour établir la connexion à l’application de modèle. Pour plus d’informations, consultez la rubrique [à propos des rôles d’administrateur](../add-users/about-admin-roles.md) .
+Vous devez être un administrateur **général** , un administrateur **Exchange** , un **administrateur Skype entreprise** , un administrateur **SharePoint** , un **lecteur global** ou un **lecteur de rapports** pour établir la connexion à l’application de modèle. Pour plus d’informations, consultez la rubrique [à propos des rôles d’administrateur](../add-users/about-admin-roles.md) .
 
 ### <a name="who-can-customize-the-usage-analytics-reports"></a>Qui peut personnaliser les rapports d’analyse de l’utilisation ?
 

@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Configurez les fonctionnalités de conformité pour empêcher toute perte de données et protéger les informations sensibles de vos clients.
-ms.openlocfilehash: 18886ff3a0ba5e99e63c70ef083d7a69c75bac91
-ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
+ms.openlocfilehash: 2c95ad3f36df28af2c68cd11192bcfe92dfe29e3
+ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44785829"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841170"
 ---
 # <a name="set-up-compliance-features"></a>Configurer les fonctionnalités de conformité
 
@@ -35,7 +35,7 @@ Microsoft 365 Business Premium inclut des fonctionnalités pour protéger vos do
 
 ## <a name="set-up-dlp-features"></a>Configurer les fonctionnalités DLP
 
-Voir [Create a DLP Policy from a template](https://docs.microsoft.com/microsoft-365/compliance/create-a-dlp-policy-from-a-template) pour obtenir un exemple sur la façon de configurer une stratégie de protection contre les informations d’identification personnelle (PII). 
+Reportez-vous à la rubrique [Create a DLP Policy from a template](https://docs.microsoft.com/microsoft-365/compliance/create-a-dlp-policy-from-a-template) pour obtenir un exemple sur la façon de configurer une stratégie de protection contre la perte de données personnelles. 
   
 DLP comprend de nombreux modèles de stratégie prêts à l’emploi pour de nombreux paramètres régionaux différents. Par exemple, les données financières de l’Australie, le Canada Personal Information Act, les données financières américaines, etc. Consultez la rubrique relative aux [modèles de stratégie DLP](https://docs.microsoft.com/microsoft-365/compliance/what-the-dlp-policy-templates-include) pour une liste complète. Tous ces modèles peuvent être activés de la même manière que l’exemple de modèle PII. 
   
@@ -47,13 +47,13 @@ DLP comprend de nombreux modèles de stratégie prêts à l’emploi pour de nom
     
 Pour placer une boîte aux lettres en conservation pour litige, dans le centre d’administration :
     
-1. Dans le volet de **navigation de gauche, accédez à utilisateurs** \> **actifs**.
+1. Dans le volet de **navigation de gauche, accédez à utilisateurs** \> **actifs** .
     
-2. Sélectionnez un utilisateur dont vous souhaitez placer la boîte aux lettres en conservation pour litige. Dans le volet utilisateur, développez **paramètres de messagerie**, puis en regard de **paramètres supplémentaires**, choisissez **modifier les propriétés Exchange**.
+2. Sélectionnez un utilisateur dont vous souhaitez placer la boîte aux lettres en conservation pour litige. Dans le volet utilisateur, développez **paramètres de messagerie** , puis en regard de **paramètres supplémentaires** , choisissez **modifier les propriétés Exchange** .
     
-3. Sur la page boîte aux lettres de l’utilisateur, choisissez les fonctionnalités de boîte aux lettres * * dans le volet de navigation de gauche, puis cliquez sur le lien **activer** en **conservation pour litige**.
+3. Sur la page boîte aux lettres de l’utilisateur, choisissez les fonctionnalités de boîte aux lettres * * dans le volet de navigation de gauche, puis cliquez sur le lien **activer** en **conservation pour litige** .
     
-4. Dans la boîte de dialogue **conservation pour litige** , vous pouvez spécifier la durée de la conservation pour litige dans le champ Durée de la **conservation pour litige** . Laissez le champ vide si vous voulez placer un blocage infini. Vous pouvez également ajouter des notes et diriger le propriétaire de la boîte aux lettres vers un site Web vous devrez peut-être en savoir plus sur la suspension pour litige. \>**Enregistrer**.
+4. Dans la boîte de dialogue **conservation pour litige** , vous pouvez spécifier la durée de la conservation pour litige dans le champ Durée de la **conservation pour litige** . Laissez le champ vide si vous voulez placer un blocage infini. Vous pouvez également ajouter des notes et diriger le propriétaire de la boîte aux lettres vers un site Web vous devrez peut-être en savoir plus sur la suspension pour litige. \>**Enregistrer** .
     
 **Rétention :** Vous pouvez activer des stratégies de rétention personnalisées, par exemple, pour conserver un certain temps ou supprimer définitivement le contenu à la fin de la période de rétention. Pour en savoir plus, consultez la rubrique [vue d’ensemble des stratégies de rétention](https://docs.microsoft.com/microsoft-365/compliance/retention-policies).
 
