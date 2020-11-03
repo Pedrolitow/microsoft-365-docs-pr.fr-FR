@@ -14,12 +14,12 @@ ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 ms.custom:
 - seo-marvel-apr2020
 description: Dans cet article, vous découvrirez les rapports et les outils de dépannage disponibles pour les administrateurs de Microsoft Exchange Online Protection (EOP).
-ms.openlocfilehash: 86f4e18430324ed95f036f93746d826225ec3b2f
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 9a8eb8e35ef73eb27604eef4bf701982b1d51710
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196398"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845551"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>Création de rapports et suivi des messages dans EOP
 
@@ -30,13 +30,13 @@ Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange 
 
 ## <a name="usage-reports"></a>Rapports d’utilisation
 
-**Activité des groupes microsoft 365**: afficher des informations sur le nombre de groupes Microsoft 365 créés et utilisés.
+**Activité des groupes microsoft 365** : afficher des informations sur le nombre de groupes Microsoft 365 créés et utilisés.
 
-**Activité de messagerie**: afficher des informations sur le nombre de messages envoyés, reçus et lus dans l’ensemble de votre organisation, ainsi que sur des utilisateurs spécifiques.
+**Activité de messagerie** : afficher des informations sur le nombre de messages envoyés, reçus et lus dans l’ensemble de votre organisation, ainsi que sur des utilisateurs spécifiques.
 
-**Utilisation**des applications de messagerie : Affichez des informations sur les applications de messagerie utilisées. Ceci inclut le nombre total de connexions pour chaque application et les versions de Outlook qui se connectent.
+**Utilisation** des applications de messagerie : Affichez des informations sur les applications de messagerie utilisées. Ceci inclut le nombre total de connexions pour chaque application et les versions de Outlook qui se connectent.
 
-**Utilisation des boîtes aux lettres**: afficher des informations sur l’espace de stockage utilisé, la consommation de quota, le nombre d’éléments et la dernière activité (activité d’envoi ou de lecture) pour les boîtes aux lettres.
+**Utilisation des boîtes aux lettres** : afficher des informations sur l’espace de stockage utilisé, la consommation de quota, le nombre d’éléments et la dernière activité (activité d’envoi ou de lecture) pour les boîtes aux lettres.
 
 Pour plus d'informations, consultez les ressources suivantes :
 
@@ -52,11 +52,11 @@ Pour plus d'informations, consultez les ressources suivantes :
 
 Ces rapports améliorés fournissent une expérience de création de rapports interactive pour les administrateurs EOP, qui inclut des informations récapitulatives et la possibilité d’approfondir plus en détail.
 
-**Protection avancée contre les menaces (ATP)**: Affichez des informations sur les liens fiables et les pièces jointes fiables qui font partie de l’ATP.
+**Defender pour office 365** : Affichez des informations sur les liens fiables et les pièces jointes fiables qui font partie de Microsoft Defender pour Office 365.
 
-**EOP**: Affichez des informations sur les détections de programmes malveillants, le courrier falsifié, les détections de courrier indésirable et le flux de messagerie vers et depuis votre organisation.
+**EOP** : Affichez des informations sur les détections de programmes malveillants, le courrier falsifié, les détections de courrier indésirable et le flux de messagerie vers et depuis votre organisation.
 
-[Afficher les rapports pour Office 365 protection avancée contre les menaces](view-reports-for-atp.md)
+[Afficher des rapports pour Defender pour Office 365](view-reports-for-atp.md)
 
 ## <a name="custom-reports-using-microsoft-graph"></a>Rapports personnalisés à l’aide de Microsoft Graph
 

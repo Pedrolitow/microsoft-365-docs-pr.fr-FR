@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Les administrateurs peuvent consulter les questions fréquemment posées et les réponses sur la protection contre l’usurpation d’identité dans Exchange Online Protection (EOP).
-ms.openlocfilehash: 3b1a30541c46383284203eee61d8b6679ac3b493
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: a5b0484e41e3df7a7b6ad16e69a4f7062b19b554
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445710"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844391"
 ---
 # <a name="anti-spoofing-protection-faq"></a>FAQ sur la protection contre l’usurpation d’identité
 
@@ -45,11 +45,9 @@ Lorsque Microsoft a activé cette fonctionnalité dans 2018, certains faux posit
 
 Microsoft a d’abord adopté les nouvelles exigences d’authentification de messagerie plusieurs semaines avant de la déployer auprès des clients. S’il y a eu des perturbations au début, elles ont progressivement diminué.
 
-## <a name="is-spoof-intelligence-available-to-microsoft-365-customers-without-atp"></a>Est-ce que des usurpations d’identité sont disponibles pour les clients Microsoft 365 sans ATP ?
+## <a name="is-spoof-intelligence-available-to-microsoft-365-customers-without-defender-for-office-365"></a>Est-ce que des usurpations d’identité sont disponibles pour les clients Microsoft 365 sans Defender pour Office 365 ?
 
 Oui. À partir du 2018 octobre, toutes les organisations disposant de boîtes aux lettres dans Exchange Online et d’organisations EOP autonomes ne disposant pas de boîtes aux lettres Exchange Online sont accessibles à l’aide des usurpations d’identité.
-
-La technologie de détection d’usurpation d’identité était initialement disponible dans Office 365 Advanced Threat Protection. Par exemple, les abonnements Microsoft E5 ou les modules complémentaires ATP.
 
 ## <a name="how-can-i-report-spam-or-non-spam-messages-back-to-microsoft"></a>Comment signaler des messages comme étant ou n’étant pas du courrier indésirable à Microsoft ?
 
@@ -73,12 +71,12 @@ Malheureusement, non. Les agresseurs s’adapteront pour utiliser d’autres tec
 
 Presque tous les grands services de messagerie mettent en œuvre des vérifications SPF, DKIM et DMARC classiques. Certains services ont d’autres contrôles plus rigoureux, mais il n’y a pas d’exprès de EOP pour bloquer les messages électroniques non authentifiés et les traiter comme des messages falsifiés. Toutefois, le secteur informatique est de plus en plus conscient des problèmes liés à la messagerie non authentifiée, en particulier en raison du problème de hameçonnage.
 
-## <a name="do-i-still-need-to-enable-the-advanced-spam-filter-setting-spf-record-hard-fail-_markasspamspfrecordhardfail_-if-i-enable-anti-spoofing"></a>Dois-je toujours activer le paramètre de filtrage du courrier indésirable avancé « enregistrement SPF : échec matériel » (_MarkAsSpamSpfRecordHardFail_) si j’active la détection d’usurpation d’identité ?
+## <a name="do-i-still-need-to-enable-the-advanced-spam-filter-setting-spf-record-hard-fail-_markasspamspfrecordhardfail_-if-i-enable-anti-spoofing"></a>Dois-je toujours activer le paramètre de filtrage du courrier indésirable avancé « enregistrement SPF : échec matériel » ( _MarkAsSpamSpfRecordHardFail_ ) si j’active la détection d’usurpation d’identité ?
 
-Non. Ce paramètre ASF n’est plus obligatoire. La protection contre l’usurpation d’identité considère à la fois les pannes matérielles SPF et un ensemble plus large de critères. Si vous avez activé la détection d’usurpation d’identité et l’option **Enregistrement SPF : échec sévère** (_MarkAsSpamSpfRecordHardFail_), vous obtiendrez probablement davantage de faux positifs.
+Non. Ce paramètre ASF n’est plus obligatoire. La protection contre l’usurpation d’identité considère à la fois les pannes matérielles SPF et un ensemble plus large de critères. Si vous avez activé la détection d’usurpation d’identité et l’option **Enregistrement SPF : échec sévère** ( _MarkAsSpamSpfRecordHardFail_ ), vous obtiendrez probablement davantage de faux positifs.
 
 Nous vous recommandons de désactiver cette fonctionnalité car elle ne fournit quasiment aucun avantage supplémentaire pour détecter le courrier indésirable ou le message de hameçonnage, et générera plutôt des faux positifs. Pour plus d’informations, voir [paramètres du filtre de courrier indésirable avancé (ASF) dans EOP](advanced-spam-filtering-asf-options.md).
 
 ## <a name="does-sender-rewriting-scheme-help-fix-forwarded-email"></a>Le schéma de réécriture de l’expéditeur aide-t-il à résoudre les messages transférés ?
 
-Schéma de réécriture de l’expéditeur ne résout que partiellement le problème du courrier transféré. En réécrivant le **courrier SMTP à partir de**, le service SRS peut s’assurer que le message transféré passe par SPF à la destination suivante. Toutefois, étant donné que la détection d’usurpation d’identité est basée sur l’adresse **de** l’expéditeur en combinaison avec le domaine de la signature DKIM ou DKIM (ou **d'** autres signaux), il n’est pas suffisant d’empêcher le marquage du courrier remis comme falsifié.
+Schéma de réécriture de l’expéditeur ne résout que partiellement le problème du courrier transféré. En réécrivant le **courrier SMTP à partir de** , le service SRS peut s’assurer que le message transféré passe par SPF à la destination suivante. Toutefois, étant donné que la détection d’usurpation d’identité est basée sur l’adresse **de** l’expéditeur en combinaison avec le domaine de la signature DKIM ou DKIM (ou **d'** autres signaux), il n’est pas suffisant d’empêcher le marquage du courrier remis comme falsifié.

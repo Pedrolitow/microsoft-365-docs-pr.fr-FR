@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez comment SharePoint Online détecte les virus dans les fichiers que les utilisateurs téléchargent et empêche les utilisateurs de télécharger ou de synchroniser les fichiers.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 38d6111fe665e0af79cbd93f534b1058881ff76c
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: f774c9afd0988c504d6207b0e71ee9561312e6b4
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327986"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844235"
 ---
 # <a name="built-in-virus-protection-in-sharepoint-online-onedrive-and-microsoft-teams"></a>Protection antivirus intégrée dans SharePoint Online, OneDrive et Microsoft teams
 
@@ -65,9 +65,9 @@ Voici ce qui se passe :
 
 Les clients de synchronisation OneDrive ne téléchargent pas les fichiers contenant des virus. Le client de synchronisation affiche une notification indiquant que le fichier ne peut pas être synchronisé.
 
-## <a name="extended-capabilities-with-office-365-advanced-threat-protection"></a>Fonctionnalités étendues avec Office 365 protection avancée contre les menaces
+## <a name="extended-capabilities-with-microsoft-defender-for-office-365"></a>Fonctionnalités étendues avec Microsoft Defender pour Office 365
 
-Les organisations Microsoft 365 qui disposent d' [Office 365 Advanced Threat Protection (ATP)](office-365-atp.md) incluses dans leur abonnement ou achetées en tant que complément peuvent activer la protection avancée contre les menaces pour SharePoint, OneDrive et Microsoft teams pour améliorer la création de rapports et la protection. Pour plus d’informations, reportez-vous à la rubrique [ATP pour SharePoint, OneDrive et Microsoft teams](atp-for-spo-odb-and-teams.md).
+Les organisations Microsoft 365 disposant de [Microsoft Defender pour Office 365](office-365-atp.md) inclus dans leur abonnement ou acheté en tant que module complémentaire peuvent activer la protection avancée contre les menaces pour SharePoint, OneDrive et Microsoft teams pour améliorer la création de rapports et la protection. Pour plus d’informations, reportez-vous à la rubrique [ATP pour SharePoint, OneDrive et Microsoft teams](atp-for-spo-odb-and-teams.md).
 
 ## <a name="more-information"></a>Plus d’informations
 

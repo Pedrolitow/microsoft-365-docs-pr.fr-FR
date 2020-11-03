@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX
 description: Les administrateurs peuvent apprendre à utiliser les balises de mise en quarantaine pour contrôler ce que les utilisateurs peuvent faire à leurs messages mis en quarantaine.
-ms.openlocfilehash: 89f03795d8f12b3df3e5090648c5a6c8b64c322a
-ms.sourcegitcommit: 676479f1e65492b44c4d0316a765f55ae9fae374
+ms.openlocfilehash: e50d7eea4cec3c87231dda855725b1e901f5fa33
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "48819739"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845695"
 ---
 # <a name="quarantine-tags"></a>Balises de mise en quarantaine
 
@@ -68,11 +68,11 @@ Vous créez et attribuez des balises de mise en quarantaine dans le centre de s�
 
 ## <a name="step-1-create-quarantine-tags-in-the-security--compliance-center"></a>Étape 1 : créer des balises de mise en quarantaine dans le centre de sécurité & conformité
 
-1. Dans le centre de sécurité & conformité, accédez à stratégie de **gestion des menaces** , \> **Policy** puis sélectionnez **balises de mise en quarantaine** .
+1. Dans le centre de sécurité & conformité, accédez à stratégie de **gestion des menaces** , \> **Policy** puis sélectionnez **balises de mise en quarantaine**.
 
-2. Sur la page **balises de quarantaine** , sélectionnez **Ajouter une balise personnalisée** .
+2. Sur la page **balises de quarantaine** , sélectionnez **Ajouter une balise personnalisée**.
 
-3. L’Assistant **nouvelle balise** s’ouvre. Dans la page nom de la **balise** , entrez un bref nom unique dans le champ nom de la **balise** . Vous devrez identifier et sélectionner la balise par nom dans les étapes à venir. Lorsque vous avez terminé, cliquez sur **Suivant** .
+3. L’Assistant **nouvelle balise** s’ouvre. Dans la page nom de la **balise** , entrez un bref nom unique dans le champ nom de la **balise** . Vous devrez identifier et sélectionner la balise par nom dans les étapes à venir. Lorsque vous avez terminé, cliquez sur **Suivant**.
 
 4. Sur la page **accès aux messages des destinataires** , sélectionnez l’une des valeurs suivantes :
    - **Aucun accès**
@@ -89,18 +89,18 @@ Vous créez et attribuez des balises de mise en quarantaine dans le centre de s�
        - **Autoriser les destinataires à demander la libération d’un message en quarantaine**
 
      - **Sélectionnez les actions supplémentaires que les destinataires peuvent effectuer sur les messages mis en quarantaine** : sélectionnez certaines, toutes ou aucune des valeurs suivantes :
-       - **Supprimer**
+       - **Delete**
        - **Aperçu**
        - **Autoriser l’expéditeur**
        - **Bloquer l’expéditeur**
 
    Ces autorisations et leur effet sur les messages mis en quarantaine et les notifications de courrier indésirable de l’utilisateur final sont décrits dans la section Détails des autorisations de la [balise de mise en quarantaine](#quarantine-tag-permission-details) plus loin dans cet article.
 
-   Lorsque vous avez terminé, cliquez sur **Suivant** .
+   Lorsque vous avez terminé, cliquez sur **Suivant**.
 
 5. Sur la page **récapitulative** qui s’affiche, vérifiez vos paramètres. Vous pouvez cliquer sur **modifier** sur chaque paramètre pour le modifier.
 
-   Lorsque vous avez terminé, cliquez sur **Envoyer** .
+   Lorsque vous avez terminé, cliquez sur **Envoyer**.
 
 6. Cliquez sur **OK** dans la page de confirmation qui s’affiche.
 
@@ -229,7 +229,7 @@ Dans les fonctionnalités de protection _prises en charge_ qui met en quarantain
 |Fonctionnalité|Balises de mise en quarantaine prises en charge ?|Balises de mise en quarantaine par défaut utilisées|
 |---|:---:|---|
 |[Stratégies de blocage du courrier indésirable](configure-your-spam-filter-policies.md): <ul><li>**Courrier indésirable** ( _SpamAction_ )</li><li>**Courrier indésirable à niveau de confiance élevé** ( _HighConfidenceSpamAction_ )</li><li>**Courrier électronique de hameçonnage** ( _PhishSpamAction_ )</li><li>**Courrier électronique de hameçonnage à haute fiabilité** ( _HighConfidencePhishAction_ )</li><li>**Courrier en masse** ( _BulkSpamAction_ )</li></ul>|Oui|<ul><li>DefaultSpamTag (accès total)</li><li>DefaultHighConfSpamTag (accès total)</li><li>DefaultPhishTag (accès total)</li><li>DefaultHighConfPhishTag (pas d’accès)</li><li>DefaultBulkTag (accès total)</li></ul>
-|Stratégies anti-hameçonnage : <ul><li>[Protection contre l’usurpation d’identité](set-up-anti-phishing-policies.md#spoof-settings) ( _AuthenticationFailAction_ )</li><li>[Protection contre l’usurpation d’identité](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies):<sup>\*</sup> <ul><li>**Si le courrier électronique est envoyé par un utilisateur emprunté** ( _TargetedUserProtectionAction_ )</li><li>**Si le courrier électronique est envoyé par un domaine emprunté** ( _TargetedDomainProtectionAction_ )</li><li>Intelligence des boîtes **aux lettres** \> **Si le courrier électronique est envoyé par un utilisateur emprunté** ( _MailboxIntelligenceProtectionAction_ )</li></ul></li></ul></ul>|Non|s/o|
+|Stratégies anti-hameçonnage : <ul><li>[Protection contre l’usurpation d’identité](set-up-anti-phishing-policies.md#spoof-settings) ( _AuthenticationFailAction_ )</li><li>[Protection contre l’usurpation d’identité](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<sup>\*</sup> <ul><li>**Si le courrier électronique est envoyé par un utilisateur emprunté** ( _TargetedUserProtectionAction_ )</li><li>**Si le courrier électronique est envoyé par un domaine emprunté** ( _TargetedDomainProtectionAction_ )</li><li>Intelligence des boîtes **aux lettres** \> **Si le courrier électronique est envoyé par un utilisateur emprunté** ( _MailboxIntelligenceProtectionAction_ )</li></ul></li></ul></ul>|Non|s/o|
 |[Stratégies de protection contre les programmes malveillants](configure-anti-malware-policies.md): tous les messages détectés sont toujours mis en quarantaine.|Non|s/o|
 |[ATP pour SharePoint, OneDrive et Microsoft Teams](atp-for-spo-odb-and-teams.md)|Non|s/o|
 |Les [règles de flux de messagerie](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (également appelées règles de transport) avec l’action : **remet le message à la quarantaine hébergée** ( _mise en quarantaine_ ).|Non|s/o|
@@ -243,7 +243,7 @@ Si vous êtes satisfait des autorisations de l’utilisateur final fournies par 
 
 Pour plus d’informations sur la création et la modification de stratégies de blocage du courrier indésirable, voir [configurer les stratégies anti-courrier indésirable dans EOP](configure-your-spam-filter-policies.md).
 
-1. Dans le centre de sécurité & conformité, accédez à stratégie de **gestion des menaces** , \> **Policy** \> puis sélectionnez **blocage du courrier indésirable** . Ou ouvrez <https://protection.office.com/antispam> .
+1. Dans le centre de sécurité & conformité, accédez à stratégie de **gestion des menaces** , \> **Policy** \> puis sélectionnez **blocage du courrier indésirable**. Ou ouvrez <https://protection.office.com/antispam> .
 
 2. Recherchez et sélectionnez une stratégie de blocage du courrier indésirable existante à modifier, ou créez une nouvelle stratégie de blocage du courrier indésirable.
 
@@ -255,7 +255,7 @@ Pour plus d’informations sur la création et la modification de stratégies de
   
    ![Sélections de la balise de quarantaine dans une stratégie de blocage du courrier indésirable](../../media/quarantine-tags-in-anti-spam-policies.png)
 
-5. Lorsque vous avez terminé, cliquez sur **Enregistrer** .
+5. Lorsque vous avez terminé, cliquez sur **Enregistrer**.
 
 #### <a name="assign-quarantine-tags-in-anti-spam-policies-in-powershell"></a>Attribuer des balises de mise en quarantaine dans les stratégies de blocage du courrier indésirable dans PowerShell
 
@@ -304,9 +304,9 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Les paramètres globaux pour les balises de mise en quarantaine vous permettent de personnaliser les notifications de courrier indésirable de l’utilisateur final qui sont envoyées aux destinataires des messages mis en quarantaine. Pour plus d’informations sur ces notifications, consultez la rubrique [notifications de courrier indésirable de l’utilisateur final](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
-1. Dans le centre de sécurité & conformité, accédez à stratégie de **gestion des menaces** , \> **Policy** puis sélectionnez **balises de mise en quarantaine** .
+1. Dans le centre de sécurité & conformité, accédez à stratégie de **gestion des menaces** , \> **Policy** puis sélectionnez **balises de mise en quarantaine**.
 
-2. Sur la page **balises de quarantaine** , sélectionnez **paramètres globaux** .
+2. Sur la page **balises de quarantaine** , sélectionnez **paramètres globaux**.
 
 3. Dans la fenêtre mobile **paramètres de notification de mise en quarantaine** qui s’ouvre, configurez une partie ou l’ensemble des paramètres suivants :
 
@@ -318,7 +318,7 @@ Les paramètres globaux pour les balises de mise en quarantaine vous permettent 
 
    - **Choisir la langue** : les notifications de courrier indésirable de l’utilisateur final sont déjà localisées en fonction des paramètres de langue du destinataire. Vous pouvez spécifier un texte personnalisé dans différentes langues pour le **nom d’affichage** et les valeurs de clause d’exclusion de **responsabilité** .
 
-     Sélectionnez au moins une langue dans la première langue, puis cliquez sur **Ajouter** . Vous pouvez sélectionner plusieurs langues en cliquant sur **Ajouter** après chacune d’elles. Une case langue de section affiche toutes les langues que vous avez sélectionnées :
+     Sélectionnez au moins une langue dans la première langue, puis cliquez sur **Ajouter**. Vous pouvez sélectionner plusieurs langues en cliquant sur **Ajouter** après chacune d’elles. Une case langue de section affiche toutes les langues que vous avez sélectionnées :
 
      ![Langues sélectionnées dans la deuxième langue de la zone dans les paramètres de notification de mise en quarantaine globale des balises de mise en quarantaine](../../media/quarantine-tags-esn-customization-selected-languages.png)
 
@@ -340,7 +340,7 @@ Les paramètres globaux pour les balises de mise en quarantaine vous permettent 
 
 ## <a name="view-quarantine-tags-in-the-security--compliance-center"></a>Afficher les balises de mise en quarantaine dans le centre de sécurité & conformité
 
-1. Dans le centre de sécurité & conformité, accédez à stratégie de **gestion des menaces** , \> **Policy** puis sélectionnez **balises de mise en quarantaine** .
+1. Dans le centre de sécurité & conformité, accédez à stratégie de **gestion des menaces** , \> **Policy** puis sélectionnez **balises de mise en quarantaine**.
 
 - Pour afficher les paramètres des balises de mise en quarantaine prédéfinies ou personnalisées, sélectionnez la balise de mise en quarantaine dans la liste (n’activez pas la case à cocher).
 
@@ -384,9 +384,9 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
   Si la balise de mise en quarantaine est utilisée, [Remplacez la balise de mise en quarantaine affectée avant de la](#step-2-assign-a-quarantine-tag-to-supported-features) supprimer.
 
-1. Dans le centre de sécurité & conformité, accédez à stratégie de **gestion des menaces** , \> **Policy** puis sélectionnez **balises de mise en quarantaine** .
+1. Dans le centre de sécurité & conformité, accédez à stratégie de **gestion des menaces** , \> **Policy** puis sélectionnez **balises de mise en quarantaine**.
 
-2. Sur la page **balises de quarantaine** , sélectionnez la balise de mise en quarantaine personnalisée que vous souhaitez supprimer, puis cliquez sur **Supprimer la balise** .
+2. Sur la page **balises de quarantaine** , sélectionnez la balise de mise en quarantaine personnalisée que vous souhaitez supprimer, puis cliquez sur **Supprimer la balise**.
 
 3. Cliquez sur **Supprimer la balise** dans la boîte de dialogue de confirmation qui s’affiche.
 

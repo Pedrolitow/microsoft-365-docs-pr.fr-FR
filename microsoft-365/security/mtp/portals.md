@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 43d912718ef0bcbc1162fa7a25a708f84b90e569
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 26cba70070fdb08c715ea38ca35a8ed8cd26096a
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429442"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844787"
 ---
 # <a name="microsoft-security-portals-and-admin-centers"></a>Portails de sécurité Microsoft et centres d’administration
 
@@ -39,13 +39,13 @@ Les responsables de la sécurité et les administrateurs peuvent accéder aux po
 
 | Nom du portail | Description | Liens |
 |---|---|---| 
-| Centre de sécurité Microsoft 365 | Surveiller et répondre aux activités de menace et renforcer la sécurité sur vos identités, e-mails, données, points de terminaison et applications avec la [protection Microsoft contre les menaces](microsoft-threat-protection.md) | [security.microsoft.com](https://security.microsoft.com/) |
-| Centre de sécurité Microsoft Defender | Surveiller et répondre aux activités de menace sur vos points de terminaison à l’aide des fonctionnalités fournies par [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) | [securitycenter.windows.com](https://securitycenter.microsoft.com/) |
-| Centre de sécurité et conformité | Gérer [Exchange Online Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/exchange-online-protection-overview?view=o365-worldwide) et [Office 365 DAV](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide) pour protéger vos courriers électroniques et vos services de collaboration et garantir la conformité aux différentes réglementations en matière de gestion des données | [protection.office.com](https://protection.office.com) |
-| Portail du centre de sécurité Azure | Utiliser [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-intro) pour renforcer la sécurité de vos centres de données et de vos charges de travail hybrides dans le Cloud | [portal.azure.com/#blade/Microsoft_Azure_Security](https://portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/0) |
-| Portail Azure ATP | Identifier, détecter et examiner les menaces avancées, les identités compromises et les actions malveillantes à l’aide de signaux Active Directory avec [Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) | [portal.atp.azure.com](https://portal.atp.azure.com/) |
+| Centre de sécurité Microsoft 365 | Surveiller et répondre aux activités de menace et renforcer la sécurité au niveau de vos identités, e-mails, données, points de terminaison et applications avec [Microsoft 365 Defender](microsoft-threat-protection.md) | [security.microsoft.com](https://security.microsoft.com/) |
+| Centre de sécurité Microsoft Defender | Surveiller et répondre aux activités de menace sur vos points de terminaison à l’aide des fonctionnalités fournies avec [Microsoft Defender pour le point de terminaison](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) | [securitycenter.windows.com](https://securitycenter.microsoft.com/) |
+| Centre de sécurité et conformité | Gérer [Exchange Online Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/exchange-online-protection-overview?view=o365-worldwide) et [Microsoft defender pour Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide) afin de protéger vos services de messagerie et de collaboration, et garantir la conformité aux différentes réglementations en matière de gestion des données | [protection.office.com](https://protection.office.com) |
+| Portail Azure Defender * | Utiliser [Azure Defender *](https://docs.microsoft.com/azure/security-center/security-center-intro) pour renforcer la position de sécurité de vos centres de données et de vos charges de travail hybrides dans le Cloud | [portal.azure.com/#blade/Microsoft_Azure_Security](https://portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/0) |
+| Microsoft Defender pour le portail d’identité | Identifier, détecter et examiner les menaces avancées, les identités compromises et les actions malveillantes à l’aide de signaux Active Directory avec [Microsoft Defender pour l’identité](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) | [portal.atp.azure.com](https://portal.atp.azure.com/) |
 | Portail de sécurité des applications Cloud | Utiliser [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) pour obtenir une visibilité riche, contrôler le déplacement de données et des analyses sophistiquées pour identifier et combattre Cyber sur les services Cloud | [portal.cloudappsecurity.com](https://portal.cloudappsecurity.com/) |
-| Portail d’intelligence de sécurité Microsoft Defender | Obtenir les mises à jour de la sécurité pour Microsoft Defender ATP, soumettre des exemples et explorer l’Encyclopédie des menaces | [microsoft.com/wdsi](https://microsoft.com/wdsi) |
+| Portail d’intelligence de sécurité Microsoft Defender | Obtenir les mises à jour de la sécurité pour Microsoft Defender pour les points de terminaison, soumettre des exemples et explorer l’Encyclopédie des menaces | [microsoft.com/wdsi](https://microsoft.com/wdsi) |
 
 ## <a name="portals-for-other-workloads"></a>Portails pour d’autres charges de travail
 

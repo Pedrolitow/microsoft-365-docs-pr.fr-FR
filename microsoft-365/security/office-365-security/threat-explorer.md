@@ -18,18 +18,18 @@ ms.collection:
 - m365initiative-defender-office365
 description: Découvrez comment utiliser l’Explorateur et les détections en temps réel dans le centre de sécurité &amp; conformité pour examiner et répondre efficacement aux menaces.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2ae2c53f12465fd1d6ef5c5e4bd24309467be008
-ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
+ms.openlocfilehash: a6123306c1d707a3eeab5c5dd67ed25bebb71965
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48769375"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845676"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorateur de menaces et détections en temps réel
 
-Si votre organisation dispose d' [office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP) et que vous disposez des [autorisations nécessaires](#required-licenses-and-permissions), vous disposez de l' **Explorateur** ou des **détections en temps réel** (auparavant des *rapports en temps réel* ). [see what's new](#new-features-in-threat-explorer-and-real-time-detections) Dans le centre de sécurité & conformité, accédez à **gestion des menaces** , puis choisissez **Explorateur** _ou_ **détections en temps réel** .
+Si votre organisation dispose [de Microsoft Defender pour Office 365](office-365-atp.md)et que vous disposez des [autorisations nécessaires](#required-licenses-and-permissions), vous disposez de l' **Explorateur** ou des **détections en temps réel** (auparavant des *rapports en temps réel* [).](#new-features-in-threat-explorer-and-real-time-detections) Dans le centre de sécurité & conformité, accédez à **gestion des menaces** , puis choisissez **Explorateur** _ou_ **détections en temps réel**.
 
-|Avec le plan ATP 2, vous pouvez voir :|Avec le plan ATP 1, vous pouvez voir :|
+|Avec Microsoft Defender pour Office 365 plan 2, vous voyez les éléments suivants :|Avec Microsoft Defender pour Office 365 plan 1, vous voyez les éléments suivants :|
 |---|---|
 |![Explorateur de menaces](../../media/threatmgmt-explorer.png)|![Détections en temps réel](../../media/threatmgmt-realtimedetections.png)|
 |
@@ -42,27 +42,27 @@ Ce rapport vous permet d’utiliser les actions suivantes :
 
 - [Voir programmes malveillants détectés par les fonctionnalités de sécurité de Microsoft 365](#see-malware-detected-in-email-by-technology)
 - [Afficher les données sur les URL d’hameçonnage et cliquez sur verdict](#view-data-about-phishing-urls-and-click-verdict)
-- [Démarrer un processus d’enquête et de réponse automatisés à partir d’une vue dans l’Explorateur](#start-automated-investigation-and-response) (plan ATP 2 uniquement)
+- [Démarrer un processus d’enquête et de réponse automatisés à partir d’une vue dans l’Explorateur](#start-automated-investigation-and-response) (Defender pour Office 365 plan 2 uniquement)
 - ... [Examinez le courrier électronique malveillant, et bien plus encore](#more-ways-to-use-explorer-or-real-time-detections)!
 
 
 ## <a name="experience-improvements-to-threat-explorer-and-real-time-detections"></a>Amélioration de l’Explorateur de menaces et des détections en temps réel
 
-## <a name="tags-in-threat-explorer"></a>Balises dans l’Explorateur de menaces
+### <a name="tags-in-threat-explorer"></a>Balises dans l’Explorateur de menaces
 
 > [!NOTE]
 > La fonctionnalité de balises utilisateur est en mode aperçu, n’est pas accessible à tous et peut faire l’objet de modifications. Pour plus d’informations sur le calendrier des publications, consultez la feuille de route Microsoft 365.
 
-Les balises utilisateur sont des identificateurs pour des groupes d’utilisateurs spécifiques dans Microsoft Defender pour Office 365. Pour plus d’informations sur les balises, les licences et la configuration des balises, lisez la rubrique More : [User Tags in Office 365 ATP](user-tags.md).
+Les balises utilisateur sont des identificateurs pour des groupes d’utilisateurs spécifiques dans Microsoft Defender pour Office 365. Pour plus d’informations sur les balises, les licences et la configuration des balises, consultez la rubrique [User Tags in Defender for Office 365](user-tags.md).
 
-Dans l’Explorateur de menaces, vous pourrez voir des informations sur les balises utilisateur dans les expériences suivantes :
+Dans l’Explorateur de menaces, vous pouvez voir des informations sur les balises utilisateur dans les expériences suivantes :
 
 #### <a name="email-grid-view"></a>Affichage grille du courrier électronique
 
 La colonne de balises affichée dans la grille du courrier électronique contient toutes les balises qui ont été appliquées aux boîtes aux lettres de l’expéditeur ou du destinataire. Par défaut, les balises système telles que les comptes de priorité apparaissent en premier.
 
 > [!div class="mx-imgBorder"]
-> ![Balises de filtre](../../media/tags-grid.png)
+> ![Balises de filtre dans l’affichage de grille de courrier électronique](../../media/tags-grid.png)
 
 #### <a name="filtering"></a>Filtrage
 Nous avons maintenant des balises en tant que filtre afin de pouvoir Rechercher simplement des comptes de priorité ou des scénarios de balises utilisateur spécifiques (et même exclure les résultats avec certaines balises dans le cadre de cette expérience). La combinaison de ces éléments avec les autres filtres que nous fournissons vous aidera à limiter votre étendue d’enquête.
@@ -123,7 +123,7 @@ En plus de l’identification de tous les événements de remise et post-remise,
 
 Aujourd’hui, nous adressons l’emplacement de remise en surface au sein du grille e-mail et de la fenêtre mobile e-mail. À l’avenir, le champ d’emplacement de remise sera renommé vers l’emplacement de remise d’origine. En outre, nous introduisons également un autre champ appelé dernier emplacement de remise.
 
-L’emplacement de remise d’origine fournit des informations supplémentaires sur l’endroit où un courrier électronique a été remis initialement. L’emplacement de remise le plus récent inclut un emplacement où un e-mail a pu être débarqué après des actions système telles que ZAP ou les actions d’administration, telles que le **déplacement vers des éléments supprimés** . L’emplacement de remise le plus récent est destiné à informer les administrateurs de la dernière publication de l’emplacement connu du message ou de toute action système/administrateur. De par sa conception, il n’inclut aucune action de l’utilisateur final sur le courrier électronique. Par exemple : si un utilisateur supprime un message ou déplace le message vers Archive/PST, le message « remise » n’est pas mis à jour. Toutefois, si une action système a mis à jour l’emplacement (par exemple, ZAP en cas de déplacement d’un e-mail vers la quarantaine), vous verrez l’emplacement de remise le plus récent en quarantaine.
+L’emplacement de remise d’origine fournit des informations supplémentaires sur l’endroit où un courrier électronique a été remis initialement. L’emplacement de remise le plus récent inclut un emplacement où un e-mail a pu être débarqué après des actions système telles que ZAP ou les actions d’administration, telles que le **déplacement vers des éléments supprimés**. L’emplacement de remise le plus récent est destiné à informer les administrateurs de la dernière publication de l’emplacement connu du message ou de toute action système/administrateur. De par sa conception, il n’inclut aucune action de l’utilisateur final sur le courrier électronique. Par exemple : si un utilisateur supprime un message ou déplace le message vers Archive/PST, le message « remise » n’est pas mis à jour. Toutefois, si une action système a mis à jour l’emplacement (par exemple, ZAP en cas de déplacement d’un e-mail vers la quarantaine), vous verrez l’emplacement de remise le plus récent en quarantaine.
 
 > [!div class="mx-imgBorder"]
 > ![Emplacements de remise mis à jour](../../media/Updated_Delivery_Location.png)
@@ -196,6 +196,16 @@ Dans le cadre de l’amélioration du processus de recherche, nous avons mis à 
 - [Mise à jour dans le processus d’actualisation](#update-in-the-refresh-process)
 - [Descente de graphique à ajouter aux filtres](#chart-drilldown-to-add-to-filters)
 - [Mises à jour des informations sur les produits](#in-product-information-updates)
+
+### <a name="filter-by-user-tags"></a>Filtrer par balise utilisateur
+
+Vous pouvez désormais trier et filtrer par système ou par balises utilisateur personnalisées, afin de saisir rapidement l’étendue des menaces. Pour en savoir plus, consultez la rubrique [balises utilisateur dans Office 365 DAV](user-tags.md) .
+
+> [!IMPORTANT]
+> Le filtrage et le tri par les balises utilisateur sont actuellement en préversion publique.
+> Il peut être modifié de manière significative avant sa publication commerciale. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies à son propos.
+
+![Colonne Tags dans l’Explorateur](../../media/threat-explorer-tags.png)
 
 ### <a name="timezone-improvements"></a>Améliorations des fuseaux horaires
 
@@ -350,7 +360,7 @@ Supposons que vous souhaitez voir les programmes malveillants détectés par les
    > [!div class="mx-imgBorder"]
    > ![Menu Affichage de l’Explorateur](../../media/ExplorerViewEmailMalwareMenu.png)
 
-3. Cliquez sur **expéditeur** , puis choisissez technologie de détection de **base**  >  **Detection technology** .
+3. Cliquez sur **expéditeur** , puis choisissez technologie de détection de **base**  >  **Detection technology**.
 
    Vos technologies de détection sont désormais disponibles en tant que filtres pour le rapport.
 
@@ -372,12 +382,12 @@ Pour consulter les URL de hameçonnage dans les messages et les clics sur les UR
 
 1. Dans le centre de sécurité & conformité ( [https://protection.office.com](https://protection.office.com) ), sélectionnez Explorateur de **gestion des menaces**  >  **Explorer** (ou **détections en temps réel** ). (Cet exemple utilise Explorer.)
 
-2. Dans le menu **affichage** , choisissez **courrier**  >  **hameçon** .
+2. Dans le menu **affichage** , choisissez **courrier**  >  **hameçon**.
 
    > [!div class="mx-imgBorder"]
-   > ![Menu Affichage de l’Explorateur](../../media/ExplorerViewEmailPhishMenu.png)
+   > ![Menu Affichage pour l’Explorateur dans le contexte de hameçonnage](../../media/ExplorerViewEmailPhishMenu.png)
 
-3. Cliquez sur **expéditeur** , puis sur **URL** , puis  >  **cliquez sur verdict** .
+3. Cliquez sur **expéditeur** , puis sur **URL** , puis  >  **cliquez sur verdict**.
 
 4. Sélectionnez une ou plusieurs options, telles que **bloquées** et **bloquer le remplacement** , puis cliquez sur le bouton **Actualiser** qui se trouve sur la même ligne que les options pour appliquer le filtre. (Ne pas actualiser la fenêtre de votre navigateur.)
 
@@ -422,21 +432,21 @@ Supposons que vous voulez afficher les messages électroniques que les utilisate
 2. Dans le menu **affichage** , choisissez **Email**  >  **envois** de courrier électronique.
 
    > [!div class="mx-imgBorder"]
-   > ![Menu Affichage de l’Explorateur](../../media/explorer-view-menu-email-user-reported.png)
+   > ![Menu Affichage pour l’Explorateur des courriers électroniques](../../media/explorer-view-menu-email-user-reported.png)
 
-3. Cliquez sur **expéditeur** , puis sur type de rapport de **base**  >  **Report type** .
+3. Cliquez sur **expéditeur** , puis sur type de rapport de **base**  >  **Report type**.
 
 4. Sélectionnez une option, par exemple **hameçonnage** , puis cliquez sur le bouton **Actualiser** .
 
    > [!div class="mx-imgBorder"]
    > ![Hameçonnage signalé par l’utilisateur](../../media/EmailUserReportedReportType.png)
 
-Le rapport est actualisé pour afficher les données relatives aux messages électroniques que les personnes de votre organisation ont signalées comme tentatives de hameçonnage. Vous pouvez utiliser ces informations pour effectuer une analyse plus poussée et, si nécessaire, ajuster vos [stratégies anti-hameçonnage ATP](configure-atp-anti-phishing-policies.md).
+Le rapport est actualisé pour afficher les données relatives aux messages électroniques que les personnes de votre organisation ont signalées comme tentatives de hameçonnage. Vous pouvez utiliser ces informations pour effectuer une analyse plus approfondie et, si nécessaire, ajuster vos [stratégies anti-hameçonnage dans Microsoft Defender pour Office 365](configure-atp-anti-phishing-policies.md).
 
 ## <a name="start-automated-investigation-and-response"></a>Démarrer une enquête et une réponse automatisées
 
 > [!NOTE]
-> Les fonctionnalités d’analyse et de réponse automatisées sont disponibles dans **office 365 ATP plan 2** et **Office 365 E5** .
+> Les fonctionnalités d’analyse et de réponse automatisées sont disponibles dans **Microsoft Defender pour office 365 plan 2** et **Office 365 E5**.
 
 (Nouveau !) L’analyse [et la réponse automatisées](automated-investigation-response-office.md) peuvent permettre à l’équipe de votre équipe de sécurité de gagner du temps et de faire des efforts pour examiner et limiter les cyberattaques. En plus de configurer des alertes pouvant déclencher un manuel de sécurité, vous pouvez démarrer un processus d’enquête et de réponse automatisés à partir d’une vue dans l’Explorateur.
 
@@ -454,11 +464,11 @@ Outre les scénarios décrits dans cet article, vous disposez de nombreuses autr
 
 ## <a name="required-licenses-and-permissions"></a>Licences et autorisations requises
 
-Vous devez disposer de la protection avancée contre les menaces [Office 365](office-365-atp.md) pour obtenir des détections de l’Explorateur ou en temps réel.
+Vous devez disposer [de Microsoft Defender pour Office 365](office-365-atp.md) pour obtenir des détections de l’Explorateur ou en temps réel.
 
-- L’Explorateur est inclus dans Office 365 DAV plan 2.
-- Le rapport de détections en temps réel est inclus dans Office 365 DAV plan 1.
-- Prévoyez d’attribuer des licences pour tous les utilisateurs qui doivent être protégés par la protection avancée contre les menaces d’Office 365. (L’Explorateur ou les détections en temps réel affichent les données de détection pour les utilisateurs sous licence.)
+- L’Explorateur est inclus dans Defender pour Office 365 plan 2.
+- Le rapport de détections en temps réel est inclus dans Defender pour Office 365 plan 1.
+- Prévoyez d’attribuer des licences pour tous les utilisateurs qui doivent être protégés par Defender pour Office 365. (L’Explorateur ou les détections en temps réel affichent les données de détection pour les utilisateurs sous licence.)
 
 Pour afficher et utiliser l’Explorateur ou les détections en temps réel, vous devez disposer des autorisations appropriées, telles que celles accordées à un administrateur de sécurité ou à un lecteur de sécurité.
 
@@ -482,9 +492,9 @@ Pour en savoir plus sur les rôles et les autorisations, consultez les ressource
 
 ## <a name="some-differences-between-threat-explorer-and-real-time-detections"></a>Différences entre l’Explorateur de menaces et les détections en temps réel
 
-- Le rapport de **détections en temps réel** est disponible dans Office 365 DAV plan 1, tandis que l' **Explorateur de menaces** est disponible dans Office 365 DAV plan 2.
+- Le rapport de **détections en temps réel** est disponible dans Defender pour Office 365 plan 1, tandis que l' **Explorateur de menaces** est disponible dans Defender pour Office 365 plan 2.
 - Le rapport des **détections en temps réel** vous permet d’afficher les détections en temps réel. L' **Explorateur de menaces** le fait également, mais vous permet également d’afficher des détails supplémentaires pour une attaque donnée.
 - Une vue **tout le courrier** est disponible dans l’Explorateur de **menaces** (et n’est pas dans le rapport de **détections en temps réel** ).
-- D’autres fonctionnalités de filtrage et les actions disponibles sont incluses dans l' **Explorateur de menaces** .
+- D’autres fonctionnalités de filtrage et les actions disponibles sont incluses dans l' **Explorateur de menaces**.
 
-Pour plus d’informations, reportez-vous à la rubrique [Office 365 ATP Service Description : Feature Availability for Advanced Threat Protection (ATP) plans](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
+Pour plus d’informations, reportez-vous à [Microsoft Defender for office 365 Service Description : Feature Availability for Defender for office 365 plans](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).

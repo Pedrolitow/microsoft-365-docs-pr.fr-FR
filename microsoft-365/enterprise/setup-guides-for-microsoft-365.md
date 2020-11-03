@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Accélérez la planification et la configuration de Microsoft 365 ou Office 365 avec les guides de configuration.
-ms.openlocfilehash: 215f51af1fc553ef0710565af0a7c25111de8328
-ms.sourcegitcommit: 705915f8bf9b7c082d12a009523d8aa0670a74a1
+ms.openlocfilehash: 7024494de231e5adcce4bb91414b5f7bb3349f88
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48493696"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844091"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Guides de configuration pour les services Microsoft 365 et Office 365
 
@@ -135,12 +135,12 @@ Le [conseiller de déploiement AD FS](https://aka.ms/adfsguidance) vous fournit 
 
 ## <a name="guides-for-security-and-compliance"></a>Guides de sécurité et de conformité
 
-### <a name="microsoft-defender-advanced-threat-protection-atp-advisor"></a>Conseiller de protection avancée contre les menaces Microsoft Defender (ATP)
+### <a name="microsoft-defender-for-endpoint-advisor"></a>Microsoft Defender pour le conseiller de point de terminaison
 
-Le [conseiller de protection avancée contre les menaces Microsoft Defender](https://aka.ms/mdatpsetup) fournit des instructions qui permettent à votre réseau d’entreprise d’empêcher, de détecter, d’examiner et de répondre aux menaces avancées. Effectuez une évaluation en connaissance de la vulnérabilité de votre organisation et déterminez le package de déploiement et les méthodes de configuration les plus pertinents. 
+[Microsoft Defender for Endpoint Advisor](https://aka.ms/mdatpsetup) fournit des instructions qui permettent à votre réseau d’entreprise d’empêcher, de détecter, d’examiner et de répondre aux menaces avancées. Effectuez une évaluation en connaissance de la vulnérabilité de votre organisation et déterminez le package de déploiement et les méthodes de configuration les plus pertinents. 
 
 >[!NOTE]
->Une licence en volume Microsoft est requise pour Microsoft Defender ATP.
+>Une licence en volume Microsoft est requise pour Microsoft Defender pour le point de terminaison.
 
 ### <a name="exchange-online-protection-setup-guide"></a>Guide de configuration d’Exchange Online Protection
 
@@ -148,9 +148,9 @@ Microsoft Exchange Online Protection (EOP) est un service de filtrage du courrie
 
 Utilisez le [Guide de configuration d’Exchange Online Protection](https://aka.ms/EOPguidance) pour configurer EOP en sélectionnant l’un des trois scénarios de déploiement &mdash; : boîtes aux lettres locales, hybride (combinaison de boîtes aux lettres locales et de Cloud) ou toutes les boîtes aux lettres Cloud &mdash; correspondant à votre organisation. Le guide fournit des informations et des ressources pour configurer et passer en revue la licence de votre utilisateur, attribuer des autorisations dans le centre d’administration 365 de Microsoft et configurer les stratégies anti-programme malveillant et de courrier indésirable de votre organisation dans le centre de sécurité & Compliance Center. 
 
-### <a name="office-365-advanced-threat-protection-advisor"></a>Conseiller Office 365 Advanced Threat Protection
+### <a name="microsoft-defender-for-office-365-advisor"></a>Microsoft Defender pour Office 365 Advisor
 
-[Office 365 Advanced Threat Protection Advisor](https://aka.ms/oatpsetup) protège votre organisation contre les menaces malveillantes que votre environnement peut rencontrer par le biais de messages électroniques, de liens et d’outils de collaboration tiers. Ce guide vous fournit des ressources et des informations pour vous aider à préparer et à identifier le plan de protection avancée contre les menaces pour répondre aux besoins de votre organisation. 
+[Microsoft Defender for Office 365 Advisor](https://aka.ms/oatpsetup) protège votre organisation contre les menaces malveillantes que votre environnement peut rencontrer par le biais de messages électroniques, de liens et d’outils de collaboration tiers. Ce guide fournit des ressources et des informations pour vous aider à préparer et à identifier l’offre Defender pour Office 365 pour répondre aux besoins de votre organisation. 
 
 ### <a name="microsoft-information-protection-setup-guide"></a>Guide de configuration de la protection des informations Microsoft
 

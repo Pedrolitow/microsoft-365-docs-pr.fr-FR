@@ -1,6 +1,6 @@
 ---
-title: Détecter les problèmes liés au service de Protection Microsoft contre les menaces
-description: Trouver des solutions et contourner les problèmes connus de la Protection Microsoft contre les menaces
+title: Résoudre les problèmes liés au service Microsoft 365 Defender
+description: Trouver des solutions et contourner vers des problèmes Microsoft 365 Defender connus
 keywords: résolution des problèmes liés à la protection contre les menaces Microsoft, résolution des problèmes, Azure ATP, problèmes, module complémentaire, page Paramètres
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -19,35 +19,35 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: bcf5b79fcd2fdf0a5af5648e6f6b7ea65d69594c
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 16cb1116f400c8d0a83ccc4cac23da06cd1be2a4
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201286"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844667"
 ---
-# <a name="troubleshoot-microsoft-threat-protection-service-issues"></a>Détecter les problèmes liés au service de Protection Microsoft contre les menaces
+# <a name="troubleshoot-microsoft-365-defender-service-issues"></a>Résoudre les problèmes liés au service Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **S’applique à :**
-- Protection Microsoft contre les menaces
+- Microsoft 365 Defender
 
-Cette section traite des problèmes qui peuvent survenir lorsque vous utilisez le service Protection Microsoft contre les menaces.
+Cette section traite des problèmes qui peuvent survenir lorsque vous utilisez le service Microsoft 365 Defender.
 
 
-## <a name="i-dont-see-microsoft-threat-protection-content"></a>Je ne vois pas le contenu de la protection contre les menaces Microsoft
+## <a name="i-dont-see-microsoft-365-defender-content"></a>Je ne vois pas le contenu de Microsoft 365 Defender
 Si vous ne voyez pas les fonctionnalités dans le volet de navigation, telles que les incidents, le centre de maintenance ou la chasse dans votre portail, vous devez vérifier que votre client dispose des licences appropriées. 
 
 Si vous souhaitez en savoir plus, consultez[conditions préalables](prerequisites.md).
 
-## <a name="azure-atp-alerts-are-not-showing-up-in-the-microsoft-threat-protection-incidents"></a>Les alertes Azure ATP n’apparaissent pas dans les incidents de la Protection Microsoft contre les menaces
-Si Azure ATP est déployé dans votre environnement, mais que vous ne voyez pas d’alertes Azure ATP dans le cadre des incidents de Protection Microsoft contre les menaces, vous devez vous assurer que les applications Microsoft Cloud App Security et Azure ATP sont activées. 
+## <a name="microsoft-defender-for-identity-alerts-are-not-showing-up-in-the-microsoft-365-defender-incidents"></a>Microsoft Defender pour les alertes d’identité ne s’affiche pas dans les incidents Microsoft 365 Defender
+Si vous avez Microsoft Defender pour l’identité déployée dans votre environnement, mais que vous ne voyez pas Defender pour les alertes d’identité dans le cadre des incidents Microsoft 365 Defender, vous devez vous assurer que la sécurité de l’application Cloud de Microsoft et l’intégration des identités sont activées. 
 
-Pour plus d’informations, consultez [Intégration Azure ATP](https://docs.microsoft.com/cloud-app-security/aatp-integration).
+Pour plus d’informations, consultez la rubrique [Microsoft Defender for Identity Integration](https://docs.microsoft.com/cloud-app-security/aatp-integration).
 
 ## <a name="where-is-the-settings-page-for-turning-the-service-on"></a>Où se trouve la page Paramètres pour activer le service ?
-Pour activer Microsoft Threat Protection, accédez aux **paramètres** à partir du volet de navigation dans le centre de sécurité Microsoft 365. Cet élément de navigation n’est visible que si vous disposez des [autorisations et des licences prérequises](mtp-enable.md#check-license-eligibility-and-required-permissions).
+Pour activer Microsoft 365 Defender, accédez aux **paramètres** à partir du volet de navigation dans le centre de sécurité Microsoft 365. Cet élément de navigation n’est visible que si vous disposez des [autorisations et des licences prérequises](mtp-enable.md#check-license-eligibility-and-required-permissions).
  
 

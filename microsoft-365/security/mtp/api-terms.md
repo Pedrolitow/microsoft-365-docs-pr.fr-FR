@@ -1,6 +1,6 @@
 ---
-title: Licence et conditions d’utilisation des API de protection contre les menaces Microsoft
-description: Description de la licence et des conditions d’utilisation des API dans Microsoft Threat Protection
+title: Licence et conditions d’utilisation de l’API Microsoft 365 Defender
+description: Description de la licence et des conditions d’utilisation des API dans Microsoft 365 Defender
 keywords: API, API, licence, termes, API, légal, notifications, code de conduite
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -19,19 +19,19 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: d76992108fb3cda82bd9ad9886a2886f70695788
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: e88b59ea28f9e71c677c25d95edc2f91cc2e56d4
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203670"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844895"
 ---
-#  <a name="microsoft-threat-protection-apis-license-and-terms-of-use"></a>Licence et conditions d’utilisation des API de protection contre les menaces Microsoft
+#  <a name="microsoft-365-defender-apis-license-and-terms-of-use"></a>Licence et conditions d’utilisation de l’API Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- Protection Microsoft contre les menaces
+- Microsoft 365 Defender
 
 >[!IMPORTANT] 
 >Certaines informations se rapportent à des produits précommercialisés susceptibles d’être modifiés de manière substantielle avant leur publication commerciale. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -39,7 +39,7 @@ ms.locfileid: "48203670"
 
 ## <a name="apis"></a>API
 
- Les API de protection contre les menaces Microsoft sont régies par la [licence et les conditions d’utilisation de l’API Microsoft](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use).
+ Les API Microsoft 365 Defender sont régies par la [licence et les conditions d’utilisation de l’API Microsoft](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use).
 
 ### <a name="throttling-limits"></a>Limitations
 

@@ -18,19 +18,19 @@ ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent découvrir le fonctionnement de l’aide à la décision, notamment comment déterminer rapidement les expéditeurs qui envoient légitimement des messages électroniques non authentifiés.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6fc934491606a53ebfb4bae4f46ab9e1ee93467b
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 5995095e442bbcd07ddf4538b67be6e1b14fd8f1
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198570"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844211"
 ---
-# <a name="walkthrough---atp-spoof-intelligence-insight-in-microsoft-365"></a>Procédure pas à pas-aide à la décision d’usurpation d’identité dans Microsoft 365
+# <a name="walkthrough---defender-for-office-365-spoof-intelligence-insight-in-microsoft-365"></a>Procédure pas à pas-Defender pour Office 365 usurpation d’aide à la décision dans Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Dans les organisations Microsoft 365 avec la protection avancée contre les menaces (ATP), vous pouvez utiliser le service d’aide à la décision pour déterminer rapidement les expéditeurs qui envoient des messages électroniques non authentifiés. En leur permettant d’envoyer des messages falsifiés, vous pouvez réduire le risque de faux positifs pour vos utilisateurs. Vous pouvez également utiliser le gestionnaire d’aide à la décision pour surveiller et gérer les paires de domaines autorisées afin de fournir une couche de sécurité supplémentaire et empêcher les messages non sécurisés d’arriver dans votre organisation.
+Dans les organisations Microsoft 365 avec Defender pour Office 365, vous pouvez utiliser la fonction d’aide à la décision pour déterminer rapidement les expéditeurs qui envoient légitimement des messages électroniques non authentifiés. En leur permettant d’envoyer des messages falsifiés, vous pouvez réduire le risque de faux positifs pour vos utilisateurs. Vous pouvez également utiliser le gestionnaire d’aide à la décision pour surveiller et gérer les paires de domaines autorisées afin de fournir une couche de sécurité supplémentaire et empêcher les messages non sécurisés d’arriver dans votre organisation.
 
 Si vous débutez avec des [rapports et des informations dans le centre de sécurité & conformité](reports-and-insights-in-security-and-compliance.md), il peut vous aider à vous rendre compte d’un tableau de bord jusqu’à une analyse et des actions recommandées.
 
@@ -47,9 +47,9 @@ Cette procédure pas à pas est l’une des suivantes pour le centre de conformi
   - **Gestion de l’organisation** ou **Administrateur de sécurité** dans le [Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
   - **Gestion de l’organisation** ou **Gestion de l’hygiène** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
   - **Lecteur de sécurité** dans le [Centre de conformité et sécurité](permissions-in-the-security-and-compliance-center.md).
-  - **Gestion de l’organisation en affichage seul** dans[Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  - **Gestion de l’organisation en affichage seul** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
-- Vous activez et désactivez l’intelligence usurpée dans les stratégies anti-hameçonnage ATP. Pour plus d’informations, reportez-vous à la rubrique [configure ATP anti-phishing Policies in Microsoft 365](configure-atp-anti-phishing-policies.md).
+- Vous activez et désactivez l’intelligence contre les usurpations dans les stratégies de hameçonnage dans Microsoft Defender pour Office 365. Pour plus d’informations, reportez-vous à la rubrique [configure anti-phishing Policies in Microsoft Defender for Office 365 dans microsoft 365](configure-atp-anti-phishing-policies.md).
 
 - Dans les organisations Microsoft 365 avec des boîtes aux lettres Exchange Online et dans un environnement Exchange Online Protection (EOP) autonome sans boîte aux lettres Exchange Online, vous pouvez utiliser l’intelligence des usurpations pour surveiller et gérer les expéditeurs auxquels vous envoyez des messages non authentifiés. Si vous souhaitez en savoir plus, consultez l’article [Configurer la veille contre l’usurpation d’identité dans Microsoft 365](learn-about-spoof-intelligence.md).
 
@@ -59,9 +59,9 @@ Cette procédure pas à pas est l’une des suivantes pour le centre de conformi
 
 2. Dans la ligne **Insights** , recherchez l’un des éléments suivants :
 
-   - L' **intelligence d’usurpation d’identité est activée**: elle est appelée **domaines falsifiés dont l’authentification a échoué au cours des 30 derniers jours**. Valeur par défaut.
+   - L' **intelligence d’usurpation d’identité est activée** : elle est appelée **domaines falsifiés dont l’authentification a échoué au cours des 30 derniers jours**. Valeur par défaut.
 
-   - L' **intelligence d’usurpation d’identité est désactivée**: l’aperçu de l’option **activer la protection contre les usurpations**
+   - L' **intelligence d’usurpation d’identité est désactivée** : l’aperçu de l’option **activer la protection contre les usurpations**
 
 3. Le tableau de bord affiche des informations comme celles-ci :
 
@@ -83,17 +83,17 @@ Cette procédure pas à pas est l’une des suivantes pour le centre de conformi
 
    Les **paires de domaines suspectes** sont les suivantes :
 
-   - **Usurpation de confiance élevée**: Microsoft 365 a reçu des signaux forts que ces domaines sont suspects, selon les modèles d’envoi historique et le score de réputation des domaines. Microsoft 365 est hautement sûr que les domaines usurpent l’identité et que les messages envoyés à partir de ces domaines sont moins susceptibles d’être légitimes.
+   - **Usurpation de confiance élevée** : Microsoft 365 a reçu des signaux forts que ces domaines sont suspects, selon les modèles d’envoi historique et le score de réputation des domaines. Microsoft 365 est hautement sûr que les domaines usurpent l’identité et que les messages envoyés à partir de ces domaines sont moins susceptibles d’être légitimes.
 
-   - **Usurpation de confiance modérée**: Microsoft 365 a reçu des signaux modérés signalant que ces domaines sont suspects, en fonction des modèles d’envoi historiques et du score de réputation des domaines. Office 365 est modérément convaincu que les domaines sont des usurpations et que les messages envoyés à partir de ces domaines sont légitimes. Ce compartiment a plus de chances de contenir des faux positifs (FPs) que le compartiment d’usurpation de confiance élevée.
+   - **Usurpation de confiance modérée** : Microsoft 365 a reçu des signaux modérés signalant que ces domaines sont suspects, en fonction des modèles d’envoi historiques et du score de réputation des domaines. Office 365 est modérément convaincu que les domaines sont des usurpations et que les messages envoyés à partir de ces domaines sont légitimes. Ce compartiment a plus de chances de contenir des faux positifs (FPs) que le compartiment d’usurpation de confiance élevée.
 
-   - **Paires de domaines non suspectes** (y compris l' **usurpation d’identité**) : les usurpations d’identité sont des domaines dont l’authentification explicite a [échoué,](how-office-365-uses-spf-to-prevent-spoofing.md) [DKIM](use-dkim-to-validate-outbound-email.md), [DMARC](use-dmarc-to-validate-email.md)) mais qui ont transmis nos contrôles d’authentification de messagerie implicites ([authentification composite](email-validation-and-authentication.md#composite-authentication)). Par conséquent, Microsoft 365 a récupéré le courrier en votre nom et aucune action de détection d’usurpation d’identité n’a été effectuée sur le message.
+   - **Paires de domaines non suspectes** (y compris l' **usurpation d’identité** ) : les usurpations d’identité sont des domaines dont l’authentification explicite a [échoué,](how-office-365-uses-spf-to-prevent-spoofing.md) [DKIM](use-dkim-to-validate-outbound-email.md), [DMARC](use-dmarc-to-validate-email.md)) mais qui ont transmis nos contrôles d’authentification de messagerie implicites ( [authentification composite](email-validation-and-authentication.md#composite-authentication)). Par conséquent, Microsoft 365 a récupéré le courrier en votre nom et aucune action de détection d’usurpation d’identité n’a été effectuée sur le message.
 
 ### <a name="view-detailed-information-about-suspicious-domain-pairs-from-the-spoof-intelligence-insight"></a>Afficher des informations détaillées sur les paires de domaines suspectes à partir de l’aide à la décision
 
 1. Sur la vue d’aide à la décision, cliquez sur l’une des paires de domaines (élevée, modérée ou de récupération).
 
-   La page **usurpation** d’aide s’affiche, indiquant la liste des expéditeurs qui envoient des messages non authentifiés dans votre organisation. Les informations de cette page vous permettent de déterminer si des messages falsifiés sont autorisés ou si vous devez effectuer des actions supplémentaires. Vous pouvez trier les informations par nombre de messages, la date de la dernière détection de l’usurpation, et bien plus encore. (Cliquez sur les en-têtes de colonne, par exemple **nombre de messages** ou **Dernière vue**, par exemple).
+   La page **usurpation** d’aide s’affiche, indiquant la liste des expéditeurs qui envoient des messages non authentifiés dans votre organisation. Les informations de cette page vous permettent de déterminer si des messages falsifiés sont autorisés ou si vous devez effectuer des actions supplémentaires. Vous pouvez trier les informations par nombre de messages, la date de la dernière détection de l’usurpation, et bien plus encore. (Cliquez sur les en-têtes de colonne, par exemple **nombre de messages** ou **Dernière vue** , par exemple).
 
 2. Sélectionnez un élément dans le tableau pour ouvrir un volet de détails qui contient des informations détaillées sur la paire de domaines, notamment la raison pour laquelle nous l’avons détectée, ce que vous devez faire, un résumé de domaine, des données WhoIs sur l’expéditeur et des e-mails similaires que nous avons vus dans votre client du même expéditeur. À partir de là, vous pouvez également choisir d’ajouter ou de supprimer la paire de domaine de la liste des expéditeurs approuvés **AllowedToSpoof** .
 

@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment Microsoft 365 pour les campagnes affecte vos utilisateurs.
-ms.openlocfilehash: fc10e3521b9e165d0a6efd6d1ed37b53a5abf74f
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: c9cbb64a5585aae4db8f878afcfc19c98711518b
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527017"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845191"
 ---
 # <a name="how-microsoft-365-for-campaigns-affects-your-users"></a>Impact de Microsoft 365 pour les campagnes sur vos utilisateurs
 
@@ -40,8 +40,8 @@ Microsoft 365 pour les campagnes simplifie l’accès des pirates à votre envir
 ## <a name="use-secure-email-practices"></a>Utiliser des pratiques de messagerie sécurisées
 Tous les utilisateurs doivent connaître et utiliser ces pratiques de messagerie pour sécuriser leur messagerie :
 - Configurez le courrier électronique pour utiliser l’authentification multifacteur avec l’application de l’authentificateur.
-- Vérifier les messages légitimes et Rechercher des conseils de sécurité à partir de la protection avancée contre le hameçonnage.
-- Ouvrez uniquement les liens et les pièces jointes fiables, comme vérifié par les liens fiables ATP et les pièces jointes fiables ATP.
+- Vérifier les messages électroniques légitimes et Rechercher des conseils de sécurité dans Advanced phishing in Defender for Office 365 protection.
+- Ouvrez uniquement les liens et pièces jointes fiables, comme vérifié par les liens fiables et les pièces jointes fiables.
 
 En savoir plus sur le [hameçonnage et les autres attaques](m365-campaigns-phishing-and-attacks.md). 
 

@@ -1,6 +1,6 @@
 ---
-title: API de protection contre les menaces Microsoft prises en charge
-description: API de protection contre les menaces Microsoft prises en charge
+title: API Microsoft 365 Defender prises en charge
+description: API Microsoft 365 Defender prises en charge
 keywords: MTP, API, API
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -19,19 +19,19 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: fda90945f09abfadfe56ea11469687130d88b2a7
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: b7c0accf2d649d4ad6177260294922ee17783f2c
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203694"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844959"
 ---
-# <a name="supported-microsoft-threat-protection-apis"></a>API de protection contre les menaces Microsoft prises en charge 
+# <a name="supported-microsoft-365-defender-apis"></a>API Microsoft 365 Defender prises en charge 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- Protection Microsoft contre les menaces
+- Microsoft 365 Defender
 
 >[!IMPORTANT] 
 >Certaines informations se rapportent à des produits précommercialisés susceptibles d’être modifiés de manière substantielle avant leur publication commerciale. Microsoft makes no warranties, express or implied, with respect to the information provided here.

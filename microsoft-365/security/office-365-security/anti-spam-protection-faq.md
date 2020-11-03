@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent consulter les questions fréquemment posées et les réponses à propos de la protection contre le courrier indésirable dans Exchange Online Protection (EOP).
-ms.openlocfilehash: 2bf2808cc0da6124a0377b52dc46f88b2c8a69e0
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: d2505eea572e512b306cf26c7a57d1dc1b705c0b
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445734"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844463"
 ---
 # <a name="anti-spam-protection-faq"></a>FAQ sur la protection anti-courrier indésirable
 
@@ -59,7 +59,7 @@ Une fois que vous vous êtes inscrit au service et ajouté votre domaine, le fil
 
 Pour plus d’informations, voir les rubriques suivantes :
 
-[Paramètres recommandés pour la sécurité ATP d’Office 365](recommended-settings-for-eop-and-office365-atp.md)
+[Paramètres recommandés pour EOP et Microsoft Defender pour Office 365 sécurité](recommended-settings-for-eop-and-office365-atp.md)
 
 [Configurer le filtrage des connexions dans EOP](configure-the-connection-filter-policy.md)
 
@@ -105,9 +105,9 @@ Vous pouvez envoyer une notification à une adresse de messagerie spécifique qu
 
 Oui. Bien que nous vous recommandons de faire pointer votre enregistrement MX vers Microsoft, nous savons qu’il existe des raisons professionnelles légitimes pour acheminer votre courrier électronique vers un autre emplacement que Microsoft.
 
-- **Entrant**: modifiez vos enregistrements MX pour qu’ils pointent vers le fournisseur tiers, puis redirigez les messages vers EOP pour un traitement supplémentaire. Pour plus d’informations, reportez-vous à la rubrique [filtrage amélioré pour les connecteurs dans Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+- **Entrant** : modifiez vos enregistrements MX pour qu’ils pointent vers le fournisseur tiers, puis redirigez les messages vers EOP pour un traitement supplémentaire. Pour plus d’informations, reportez-vous à la rubrique [filtrage amélioré pour les connecteurs dans Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
-- **Sortant**: configurez le routage d’hôte actif de Microsoft 365 vers le fournisseur de destination tiers.
+- **Sortant** : configurez le routage d’hôte actif de Microsoft 365 vers le fournisseur de destination tiers.
 
 ## <a name="does-microsoft-have-any-documentation-about-how-i-can-protect-myself-from-phishing-scams"></a>Est-ce que Microsoft dispose de documentation concernant la façon dont je peux me protéger contre les tentatives de hameçonnage ?
 

@@ -1,6 +1,6 @@
 ---
-title: Type de ressource d’incident dans l’API de protection contre les menaces Microsoft
-description: En savoir plus sur les méthodes et les propriétés du type de ressource incident dans Microsoft Threat Protection
+title: Type de ressource d’incident dans l’API Microsoft 365 Defender
+description: En savoir plus sur les méthodes et les propriétés du type de ressource incident dans Microsoft 365 Defender
 keywords: incident, incidents, API
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: ac149ca7263b8ef8bb37a7dd18bf0787a3114b37
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 68bee647cdd5687dbaad08ce3cd01b427dabf030
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201302"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844019"
 ---
 # <a name="incident-resource-type"></a>Type de ressource d’incident
 
@@ -32,7 +32,7 @@ ms.locfileid: "48201302"
 
 
 **S’applique à :**
-- Protection Microsoft contre les menaces
+- Microsoft 365 Defender
 
 >[!IMPORTANT] 
 >Certaines informations se rapportent à des produits précommercialisés susceptibles d’être modifiés de manière substantielle avant leur publication commerciale. Microsoft makes no warranties, express or implied, with respect to the information provided here.

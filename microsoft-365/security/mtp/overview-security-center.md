@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: ed91ca8a2300cf69cb78ae24ad61e9aebb4dcc85
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 9aaeb5323900e65de47015b8cb28abf967694ea3
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429418"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844799"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Présentation du Centre de sécurité Microsoft 365
 
@@ -52,13 +52,13 @@ Le Centre de sécurité Microsoft 365 inclut les éléments suivants :
 
 * **Accueil** : obtenez un aperçu rapide de l’état global de la sécurité de votre organisation.
 * **Incidents** : Découvrez l’histoire plus large d’une attaque en reliant les points vus sur des alertes individuelles sur des entités. Vous saurez exactement où une attaque a commencé, quels appareils ont un impact, quels sont les utilisateurs concernés et où la menace s’est déroulée.
-* **Alertes** : une meilleure visibilité dans toutes les alertes dans votre environnement Microsoft 365. Inclut des alertes provenant de Microsoft Cloud App Security, Office 365 ATP, Azure Active Directory, Azure ATP et Microsoft Defender ATP. Disponible pour les clients E3 et E5.  
+* **Alertes** : une meilleure visibilité dans toutes les alertes dans votre environnement Microsoft 365. Inclut des alertes provenant de Microsoft Cloud App Security, Microsoft Defender pour Office 365, Azure Active Directory, Microsoft Defender for Identity et Microsoft Defender for Endpoint. Disponible pour les clients E3 et E5.  
 * **Centre de notifications** -réduisez le volume des alertes que votre équipe de sécurité doit adresser manuellement, ce qui permet à l’équipe des opérations de sécurité de se concentrer sur des menaces plus sophistiquées et d’autres initiatives de grande valeur.
 * **Rapports** : obtenez les détails et les informations dont vous avez besoin pour mieux protéger vos utilisateurs, appareils, applications et bien plus encore.
 * **Degré de sécurisation** : améliorez votre niveau de sécurité global grâce au degré de sécurisation Microsoft. Cette page fournit un résumé de tous les différentes fonctionnalités et fonctionnalités de sécurité que vous avez activées et inclut des recommandations pour les domaines à améliorer.
 * **Chasse avancée** : recherchez de façon proactive des programmes malveillants, des fichiers suspects et des activités dans votre organisation Microsoft 365.
 * **Classification** : contribue à protéger les pertes de données en ajoutant des étiquettes pour classer les documents, les messages électroniques, les documents, les sites et bien plus encore. Lorsqu’une étiquette est appliquée (automatiquement ou par l’utilisateur), le contenu ou le site est protégé en fonction des paramètres que vous choisissez. Par exemple, vous pouvez créer des étiquettes qui chiffrent les fichiers, ajouter un marquage du contenu et contrôler l’accès utilisateur aux sites spécifiques. 
-* **Stratégies**: configurez les stratégies pour gérer les appareils, protéger contre les menaces et recevoir des alertes relatives aux différentes activités de votre organisation.
+* **Stratégies** : configurez les stratégies pour gérer les appareils, protéger contre les menaces et recevoir des alertes relatives aux différentes activités de votre organisation.
 * **Autorisations** : permet de gérer les personnes de votre organisation qui ont accès à l’affichage du contenu et à l’exécution de tâches dans le centre de sécurité Microsoft 365. Vous pouvez également attribuer des autorisations Microsoft 365 dans le portail Azure AD.
 
 ## <a name="learn-more"></a>En savoir plus

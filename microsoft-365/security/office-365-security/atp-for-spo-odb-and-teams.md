@@ -21,19 +21,19 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-description: Découvrez la protection avancée contre les menaces Office 365 pour les fichiers dans SharePoint Online, OneDrive entreprise et Microsoft Teams.
-ms.openlocfilehash: e536809c74abbe87e1250acda3f3922180cfae97
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+description: Découvrez Microsoft Defender pour Office 365 pour les fichiers dans SharePoint Online, OneDrive entreprise et Microsoft Teams.
+ms.openlocfilehash: 7b007671a7fecb3ae074fd07ce38d17fb025f6b4
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446262"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844331"
 ---
 # <a name="atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Protection avancée contre les menaces pour SharePoint, OneDrive et Microsoft Teams
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-La protection avancée contre les menaces pour SharePoint, OneDrive et Microsoft teams dans [Office 365 la protection avancée contre les menaces (ATP)](office-365-atp.md) fournit une couche supplémentaire de protection pour les fichiers qui ont déjà été analysés au moment du chargement par le [moteur de détection de virus courant dans Microsoft 365](virus-detection-in-spo.md). La protection avancée contre les menaces pour SharePoint, OneDrive et Microsoft teams permet de détecter et de bloquer les fichiers existants identifiés comme étant malveillants dans les sites d’équipe et les bibliothèques de documents.
+La protection avancée contre les menaces pour SharePoint, OneDrive et Microsoft teams dans [Microsoft Defender pour Office 365](office-365-atp.md) fournit une couche supplémentaire de protection pour les fichiers qui ont déjà été analysés au moment du chargement par le [moteur de détection de virus courant dans Microsoft 365](virus-detection-in-spo.md). La protection avancée contre les menaces pour SharePoint, OneDrive et Microsoft teams permet de détecter et de bloquer les fichiers existants identifiés comme étant malveillants dans les sites d’équipe et les bibliothèques de documents.
 
 La protection avancée contre les menaces pour SharePoint, OneDrive et Microsoft teams n’est pas activée par défaut. Pour l’activer, voir Activer la protection avancée contre [les menaces pour SharePoint, OneDrive et Microsoft teams](turn-on-atp-for-spo-odb-and-teams.md).
 
@@ -59,14 +59,14 @@ Pour en savoir plus sur l’expérience utilisateur lorsqu’un fichier a été 
 
 ## <a name="view-information-about-malicious-files-detected-by-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Afficher des informations sur les fichiers malveillants détectés par la protection avancée contre les menaces pour SharePoint, OneDrive et Microsoft teams
 
-Les fichiers identifiés comme étant malveillants par la protection avancée contre les menaces s’afficheront dans [les rapports pour Office 365 protection avancée contre les menaces](view-reports-for-atp.md) et dans l' [Explorateur (et les détections en temps réel)](threat-explorer.md).
+Les fichiers identifiés comme étant malveillants par Microsoft Defender pour Office 365 s’afficheront dans des [rapports pour Microsoft Defender pour office 365](view-reports-for-atp.md) et dans l' [Explorateur (et les détections en temps réel)](threat-explorer.md).
 
-En ce qui concerne le 2018 mai, lorsqu’un fichier est identifié comme malveillant par la protection avancée contre les menaces, le fichier est également disponible en quarantaine. Pour plus d’informations, consultez [la rubrique utiliser le centre de sécurité & conformité pour gérer les fichiers mis en quarantaine](manage-quarantined-messages-and-files.md#atp-only-use-the-security--compliance-center-to-manage-quarantined-files).
+En ce qui concerne le 2018 mai, lorsqu’un fichier est identifié comme malveillant par Microsoft Defender pour Office 365, le fichier est également disponible en quarantaine. Pour plus d’informations, consultez [la rubrique utiliser le centre de sécurité & conformité pour gérer les fichiers mis en quarantaine](manage-quarantined-messages-and-files.md#microsoft-defender-for-office-365-only-use-the-security--compliance-center-to-manage-quarantined-files).
 
 ## <a name="keep-these-points-in-mind"></a>Gardez les points suivants à l’esprit
 
-- La protection avancée contre les menaces n’analysera pas chaque fichier unique dans SharePoint Online, OneDrive entreprise ou Microsoft Teams. Ce comportement est voulu par la conception même du produit. Les fichiers sont analysés de manière asynchrone. Le processus utilise les événements d’activité de partage et d’invité, ainsi que les heuristiques intelligentes et les signaux de menace pour identifier les fichiers malveillants.
+- Defender pour Office 365 n’analyse pas tous les fichiers dans SharePoint Online, OneDrive entreprise ou Microsoft Teams. Ce comportement est voulu par la conception même du produit. Les fichiers sont analysés de manière asynchrone. Le processus utilise les événements d’activité de partage et d’invité, ainsi que les heuristiques intelligentes et les signaux de menace pour identifier les fichiers malveillants.
 
-- Assurez-vous que vos sites SharePoint sont configurés pour utiliser l' [expérience moderne](https://docs.microsoft.com/sharepoint/guide-to-sharepoint-modern-experience). La protection contre l’ATP s’applique si l’expérience moderne ou la vue standard est utilisée ; Toutefois, les indicateurs visuels signalant qu’un fichier est bloqué sont disponibles uniquement dans l’expérience moderne.
+- Assurez-vous que vos sites SharePoint sont configurés pour utiliser l' [expérience moderne](https://docs.microsoft.com/sharepoint/guide-to-sharepoint-modern-experience). La protection Defender pour Office 365 s’applique si l’expérience moderne ou l’affichage classique est utilisé ; Toutefois, les indicateurs visuels signalant qu’un fichier est bloqué sont disponibles uniquement dans l’expérience moderne.
 
-- La protection avancée contre les menaces pour SharePoint, OneDrive et Microsoft teams fait partie de la stratégie globale de protection contre les menaces de votre organisation, qui inclut la protection contre le courrier indésirable et les programmes malveillants dans Exchange Online Protection (EOP), ainsi que les liens fiables et les pièces jointes fiables dans Office 365 ATP. Pour en savoir plus, consultez la rubrique [Protégez-vous contre les menaces dans Office 365](protect-against-threats.md).
+- La protection avancée contre les menaces pour SharePoint, OneDrive et Microsoft teams fait partie de la stratégie globale de protection contre les menaces de votre organisation, qui inclut la protection contre le courrier indésirable et les programmes malveillants dans Exchange Online Protection (EOP), ainsi que les liens fiables et les pièces jointes fiables dans Microsoft Defender pour Office 365. Pour en savoir plus, consultez la rubrique [Protégez-vous contre les menaces dans Office 365](protect-against-threats.md).

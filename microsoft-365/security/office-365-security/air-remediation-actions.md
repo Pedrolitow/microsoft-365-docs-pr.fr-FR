@@ -20,12 +20,12 @@ description: Découvrez les actions de correction suite à une enquête automati
 ms.date: 09/29/2020
 ms.custom:
 - air
-ms.openlocfilehash: ffd0429d3dc85371e7b6bb1c2d1246d9820d0e2e
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: c178655d60b45e45680a86c3973317e63c354f17
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446706"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844535"
 ---
 # <a name="remediation-actions-following-automated-investigation-in-microsoft-defender-for-office-365"></a>Actions de correction suite à une enquête automatisée dans Microsoft Defender pour Office 365
 
@@ -53,7 +53,7 @@ Le tableau suivant récapitule les menaces et les actions correctives approprié
 |Catégorie|Menace/risque|Action de correction|
 |---|---|---|
 |E-mail|Programme malveillant|Suppression logicielle/cluster <br/><br/>Si plus d’un petit nombre de messages électroniques dans un cluster contiennent un programme malveillant, le cluster est considéré comme malveillant.|
-|E-mail|URL malveillante<br/>(Une URL malveillante a été détectée par les [liens fiables dans Office 365 ATP](atp-safe-links.md).|Suppression logicielle/cluster <br/><br/>Les messages électroniques qui contiennent une URL malveillante sont considérés comme malveillants.|
+|E-mail|URL malveillante<br/>(Une URL malveillante a été détectée par les [liens fiables dans Microsoft Defender pour Office 365](atp-safe-links.md).|Suppression logicielle/cluster <br/><br/>Les messages électroniques qui contiennent une URL malveillante sont considérés comme malveillants.|
 |E-mail|Hameçonnage|Suppression logicielle/cluster <br/><br/>Si plus d’un petit nombre de messages électroniques dans un cluster contiennent des tentatives de hameçonnage, le cluster est considéré comme un hameçonnage.|
 |E-mail|Hameçonnage zapped <br/>(Les messages électroniques ont été remis et [zapped](https://docs.microsoft.com/microsoft-365/security/office-365-security/zero-hour-auto-purge).)|Suppression logicielle/cluster <br/><br/>Les rapports sont disponibles pour afficher les messages zapped. [Voir si zap a déplacé un message et une FAQ](https://docs.microsoft.com/microsoft-365/security/office-365-security/zero-hour-auto-purge#how-to-see-if-zap-moved-your-message).|
 |E-mail|Messages hameçons manqués [signalés](https://docs.microsoft.com/microsoft-365/security/office-365-security/enable-the-report-message-add-in) par un utilisateur|[Enquête automatisée déclenchée par le rapport de l’utilisateur](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-user-reported-phish-message-launches-an-investigation-playbook)|

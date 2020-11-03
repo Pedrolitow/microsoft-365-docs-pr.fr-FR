@@ -13,20 +13,20 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 ms.date: 02/25/2020
-description: Découvrez comment accélérer le processus de détection et d’adressage des comptes d’utilisateurs compromis avec des fonctionnalités d’analyse et de réponse automatisées dans Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: fa648b33180cab7d70348dc4d1d6e64930ecff99
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+description: Découvrez comment accélérer le processus de détection et d’adressage des comptes d’utilisateurs compromis avec des fonctionnalités d’analyse et de réponse automatisées dans Microsoft Defender pour Office 365 plan 2.
+ms.openlocfilehash: 0da065bea17796d09de771a767991804afb5335b
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201230"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844595"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Adresser des comptes d’utilisateurs compromis avec une enquête et une réponse automatisées
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-[Office 365 Advanced Threat Protection Plan 2](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide#office-365-atp-plan-1-and-plan-2) inclut de puissantes fonctionnalités d’analyse [et de réponse automatisées](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) (air). De telles fonctionnalités peuvent permettre à l’équipe de vos opérations de sécurité de gagner beaucoup de temps et d’efforts sur les menaces. Microsoft continue d’améliorer les fonctionnalités de sécurité. Récemment, les fonctionnalités AIR ont été améliorées pour inclure un manuel de sécurité de l’utilisateur compromis (actuellement en version d’évaluation). Lisez cet article pour en savoir plus sur le manifeste de sécurité de l’utilisateur compromis. Pour plus d’informations, reportez-vous au billet de blog [accélérer le temps nécessaire pour détecter et répondre à la compromission d’un utilisateur et limiter la portée de violation avec Office 365 ATP](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) .
+[Microsoft Defender pour Office 365 plan 2](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide#office-365-atp-plan-1-and-plan-2) inclut des fonctionnalités d’analyse [et de réponse automatisées](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) puissantes. De telles fonctionnalités peuvent permettre à l’équipe de vos opérations de sécurité de gagner beaucoup de temps et d’efforts sur les menaces. Microsoft continue d’améliorer les fonctionnalités de sécurité. Récemment, les fonctionnalités AIR ont été améliorées pour inclure un manuel de sécurité de l’utilisateur compromis (actuellement en version d’évaluation). Lisez cet article pour en savoir plus sur le manifeste de sécurité de l’utilisateur compromis. Pour plus d’informations, reportez-vous au billet de blog [accélérer le temps nécessaire pour détecter et répondre à la compromission de l’utilisateur et limiter la portée de violation avec Microsoft Defender pour Office 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) .
 
 ![Enquête automatisée pour un utilisateur compromis](/microsoft-365/media/office365atp-compduserinvestigation.jpg)
 
@@ -40,7 +40,7 @@ Les manifestes de sécurité de l’utilisateur compromis permettent à l’équ
 
 ## <a name="compromised-user-alerts"></a>Alertes utilisateur compromises
 
-Lorsqu’un compte d’utilisateur est compromis, des comportements atypiques ou anormaux se produisent. Par exemple, les messages de hameçonnage et de courrier indésirable peuvent être envoyés en interne à partir d’un compte d’utilisateur approuvé. Office 365 Advanced Threat Protection peut détecter de telles anomalies dans les modèles de courrier électronique et l’activité de collaboration dans Office 365. Lorsque cela se produit, les alertes sont déclenchées et le processus de minimisation des menaces commence.
+Lorsqu’un compte d’utilisateur est compromis, des comportements atypiques ou anormaux se produisent. Par exemple, les messages de hameçonnage et de courrier indésirable peuvent être envoyés en interne à partir d’un compte d’utilisateur approuvé. Defender pour Office 365 peut détecter ces anomalies dans les modèles de courrier électronique et l’activité de collaboration dans Office 365. Lorsque cela se produit, les alertes sont déclenchées et le processus de minimisation des menaces commence.
 
 Par exemple, voici une alerte qui a été déclenchée en raison d’un envoi de courrier électronique suspect :
 
@@ -67,7 +67,7 @@ Vous disposez de plusieurs options pour accéder à une liste d’utilisateurs r
 
 1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous.
 
-2. Dans le volet de navigation, **Alerts**choisissez  >  **tableau de bord**alertes.
+2. Dans le volet de navigation, **Alerts** choisissez  >  **tableau de bord** alertes.
 
 3. Dans le widget **autres alertes** , choisissez **utilisateurs restreints**.
 
@@ -79,7 +79,7 @@ Vous disposez de plusieurs options pour accéder à une liste d’utilisateurs r
 
 ### <a name="view-details-about-automated-investigations"></a>Afficher les détails des enquêtes automatisées
 
-Lorsqu’une enquête automatisée a commencé, vous pouvez consulter ses détails et résultats dans le centre de sécurité & conformité. Accédez aux **Threat management**  >  **enquêtes**de gestion des menaces, puis sélectionnez une enquête pour en afficher les détails.
+Lorsqu’une enquête automatisée a commencé, vous pouvez consulter ses détails et résultats dans le centre de sécurité & conformité. Accédez aux **Threat management**  >  **enquêtes** de gestion des menaces, puis sélectionnez une enquête pour en afficher les détails.
 
 Pour en savoir plus, consultez la rubrique [afficher les détails d’une enquête](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results).
 
@@ -97,7 +97,7 @@ Pour en savoir plus, consultez la rubrique [afficher les détails d’une enquê
 
 - [Rechercher et identifier des courriers électroniques malveillants dans Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered?view=o365-worldwide)
 
-- [En savoir plus sur AIR dans Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
+- [En savoir plus sur AIR dans Microsoft Defender pour le point de terminaison](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 
 - [Consultez la feuille de route Microsoft 365 pour découvrir les éléments bientôt disponibles et à déployer](https://www.microsoft.com/microsoft-365/roadmap?filters=)
 

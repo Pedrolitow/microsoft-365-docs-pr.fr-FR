@@ -1,6 +1,6 @@
 ---
-title: Hello World pour l’API REST Microsoft Threat Protection
-description: Découvrez comment créer une application et utiliser un jeton pour accéder aux API de protection contre les menaces Microsoft
+title: Hello World pour l’API REST Microsoft 365 Defender
+description: Découvrez comment créer une application et utiliser un jeton pour accéder aux API Microsoft 365 Defender
 keywords: application, jeton, Access, AAD, app, inscription de l’application, PowerShell, script, administrateur global, autorisation
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -19,20 +19,20 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: cdf3f6a0c007763d2772233b1a299d59c931b2e5
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: bd4f7e5485d67cf74477900ae2cc5c77f1a6ee41
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201326"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844043"
 ---
-# <a name="hello-world-for-microsoft-threat-protection-rest-api"></a>Hello World pour l’API REST Microsoft Threat Protection 
+# <a name="hello-world-for-microsoft-365-defender-rest-api"></a>Hello World pour l’API REST Microsoft 365 Defender 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **S’applique à :**
-- Protection Microsoft contre les menaces
+- Microsoft 365 Defender
 
 >[!IMPORTANT] 
 >Certaines informations se rapportent à des produits précommercialisés susceptibles d’être modifiés de manière substantielle avant leur publication commerciale. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -58,12 +58,12 @@ Pour l’étape d’inscription de l’application, vous devez disposer d’un r
 
 3. Dans le formulaire d’inscription, choisissez un nom pour votre application, puis sélectionnez **Enregistrer**.
 
-4. Autorisez votre application à accéder à Microsoft Defender ATP et attribuez-lui l’autorisation **lire tous les incidents** :
+4. Autorisez votre application à accéder à Microsoft Defender pour le point de terminaison et attribuez-lui l’autorisation **lire tous les incidents** :
 
-   - Sur la page de votre application, sélectionnez **autorisations d’API**  >  **Ajouter une**  >  **API mon organisation utilise** > tapez **Microsoft Threat Protection** et sélectionnez sur **Microsoft Threat Protection**.
+   - Sur la page de votre application, sélectionnez **autorisations d’API**  >  **Ajouter une**  >  **API mon organisation utilise** > tapez **Microsoft 365 Defender** et sélectionnez sur **Microsoft 365 Defender**.
 
    >[!NOTE]
-   >La protection contre les menaces Microsoft ne s’affiche pas dans la liste d’origine. Vous devez commencer à écrire son nom dans la zone de texte pour l’afficher.
+   >Microsoft 365 Defender n’apparaît pas dans la liste d’origine. Vous devez commencer à écrire son nom dans la zone de texte pour l’afficher.
 
    ![Image de l’accès à l’API et de la sélection de l’API](../../media/apis-in-my-org-tab.PNG)
 
@@ -87,10 +87,10 @@ Pour l’étape d’inscription de l’application, vous devez disposer d’un r
 
 6. Ajoutez un secret à l’application.
 
-    - Sélectionnez **certificats & secrets**, ajoutez une description à la clé secrète et sélectionnez **Ajouter**.
+    - Sélectionnez **certificats & secrets** , ajoutez une description à la clé secrète et sélectionnez **Ajouter**.
 
     >[!IMPORTANT]
-    > Après avoir sélectionné **Ajouter**, **Copiez la valeur secrète générée**. Vous ne pourrez pas récupérer une fois que vous aurez quitté !
+    > Après avoir sélectionné **Ajouter** , **Copiez la valeur secrète générée**. Vous ne pourrez pas récupérer une fois que vous aurez quitté !
 
     ![Image de la clé créer une application](../../media/webapp-create-key2.png)
 
@@ -105,8 +105,8 @@ Terminé! Vous avez correctement inscrit une application.
 
 ### <a name="step-2---get-a-token-using-the-app-and-use-this-token-to-access-the-api"></a>Étape 2 : obtenir un jeton à l’aide de l’application et utiliser ce jeton pour accéder à l’API.
 
--   Copiez le script ci-dessous dans PowerShell ISE ou dans un éditeur de texte, et enregistrez-le sous le**Get-Token.ps1**
--   L’exécution de ce script générera un jeton et l’enregistrera dans le dossier de travail sous le nom «**Latest-token.txt**».
+-   Copiez le script ci-dessous dans PowerShell ISE ou dans un éditeur de texte, et enregistrez-le sous le **Get-Token.ps1**
+-   L’exécution de ce script générera un jeton et l’enregistrera dans le dossier de travail sous le nom « **Latest-token.txt** ».
 
 ```
 # That code gets the App Context Token and save it to a file named "Latest-token.txt" under the current directory
@@ -188,6 +188,6 @@ Vous avez tous fini ! Vous venez d’effectuer les opérations suivantes :
 
 
 ## <a name="related-topic"></a>Voir aussi
-- [Accéder aux API de protection contre les menaces Microsoft](api-access.md)
-- [Accéder à la protection contre les menaces Microsoft avec le contexte d’application](api-create-app-web.md)
-- [Accéder à la protection contre les menaces Microsoft avec le contexte utilisateur](api-create-app-user-context.md)
+- [Accéder aux API Microsoft 365 Defender](api-access.md)
+- [Accéder à Microsoft 365 Defender avec le contexte d’application](api-create-app-web.md)
+- [Accéder à Microsoft 365 Defender avec le contexte utilisateur](api-create-app-user-context.md)

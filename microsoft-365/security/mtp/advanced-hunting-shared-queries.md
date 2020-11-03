@@ -1,5 +1,5 @@
 ---
-title: Utiliser des requêtes partagées dans le repérage avancé de la Protection Microsoft contre les menaces
+title: Utiliser des requêtes partagées dans la recherche avancée de Microsoft 365 Defender
 description: Commencez immédiatement le repérage des menaces à l’aide de requêtes prédéfinies et partagées. Partagez vos requêtes au public ou au sein de votre organisation.
 keywords: chasse de menace, recherche de menace, recherche de menace informatique, protection contre les menaces Microsoft, Microsoft 365, MTP, M365, recherche, requête, télémétrie, détections personnalisées, schéma, Kusto, GitHub référentiel, mes requêtes, requêtes partagées
 search.product: eADQiWindows 10XVcnh
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 7cdb15be274c89bd92995b9e947489c62521c6bb
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 48da1a3a64926f44582e7872f0b0ee03240409ca
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429682"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844079"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>Utiliser des requêtes partagées dans un repérage avancé
 
@@ -32,7 +32,7 @@ ms.locfileid: "48429682"
 
 
 **S’applique à :**
-- Protection Microsoft contre les menaces
+- Microsoft 365 Defender
 
 
 
@@ -45,7 +45,7 @@ Vous pouvez enregistrer une requête nouvelle ou existante pour qu’elle soit u
 
 1. Création ou modification d’une requête. 
 
-2. Cliquez sur le bouton déroulant **Enregistrer la requête**, puis sélectionnez **Enregistrer sous**.
+2. Cliquez sur le bouton déroulant **Enregistrer la requête** , puis sélectionnez **Enregistrer sous**.
     
 3. Entrez un nom pour la requête. 
 

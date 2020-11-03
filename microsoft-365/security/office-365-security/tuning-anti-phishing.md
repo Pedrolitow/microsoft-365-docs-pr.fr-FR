@@ -15,33 +15,33 @@ ms.collection:
 - m365initiative-defender-office365
 - MET150
 description: Les administrateurs peuvent apprendre à identifier les raisons et le mode de réception d’un message de hameçonnage dans Microsoft 365, ainsi que la marche à suivre pour éviter d’autres messages de hameçonnage.
-ms.openlocfilehash: ab7087355ce8ee41616f63a7b466a0d5d0fc7b0f
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: e933769b6bce9eb10765fb2b58025445432bed18
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446464"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845467"
 ---
 # <a name="tune-anti-phishing-protection"></a>Régler la protection anti-hameçonnage
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Bien que Microsoft 365 propose plusieurs fonctionnalités anti-hameçonnage qui sont activées par défaut, il est possible que certains messages de phishing continuent à accéder à vos boîtes aux lettres. Cette rubrique décrit ce que vous pouvez faire pour découvrir pourquoi un message de hameçonnage s’affiche, et ce que vous pouvez faire pour ajuster les paramètres anti-hameçonnage dans votre organisation Microsoft 365 _sans accidentellement_compliquer les choses.
+Bien que Microsoft 365 propose plusieurs fonctionnalités anti-hameçonnage qui sont activées par défaut, il est possible que certains messages de phishing continuent à accéder à vos boîtes aux lettres. Cette rubrique décrit ce que vous pouvez faire pour découvrir pourquoi un message de hameçonnage s’affiche, et ce que vous pouvez faire pour ajuster les paramètres anti-hameçonnage dans votre organisation Microsoft 365 _sans accidentellement_ compliquer les choses.
 
 ## <a name="first-things-first-deal-with-any-compromised-accounts-and-make-sure-you-block-any-more-phishing-messages-from-getting-through"></a>Tout d’abord : traitez les comptes compromis et assurez-vous de bloquer les messages de hameçonnage
 
 Si le compte d’un destinataire a été compromis suite à un message de hameçonnage, suivez les étapes décrites dans la [réponse à un compte de messagerie compromis dans Microsoft 365](responding-to-a-compromised-email-account.md).
 
-Si votre abonnement inclut la protection avancée contre les menaces (ATP), vous pouvez utiliser [Office 365 Threat Intelligence](office-365-ti.md) pour identifier les autres utilisateurs qui ont également reçu le message de hameçonnage. Vous disposez d’options supplémentaires pour bloquer les messages de hameçonnage :
+Si votre abonnement inclut Microsoft Defender pour Office 365, vous pouvez utiliser [office 365 Threat Intelligence](office-365-ti.md) pour identifier les autres utilisateurs qui ont également reçu le message de hameçonnage. Vous disposez d’options supplémentaires pour bloquer les messages de hameçonnage :
 
-- [Liens approuvés dans Office 365 Protection avancée contre les menaces](set-up-atp-safe-links-policies.md)
+- [Liens fiables dans Microsoft Defender pour Office 365](set-up-atp-safe-links-policies.md)
 
-- [Pièces jointes fiables dans Office 365 Protection avancée contre les menaces](set-up-atp-safe-attachments-policies.md)
+- [Pièces jointes fiables dans Microsoft Defender pour Office 365](set-up-atp-safe-attachments-policies.md)
 
-- [Stratégies anti-hameçonnage dans Office 365 ATP](configure-atp-anti-phishing-policies.md). Notez que vous pouvez augmenter temporairement les **seuils de phishing avancés** dans la stratégie, de **standard** à **agressif**, **plus agressif**ou **plus agressif**.
+- [Stratégies anti-hameçonnage dans Microsoft Defender pour Office 365](configure-atp-anti-phishing-policies.md). Notez que vous pouvez augmenter temporairement les **seuils de phishing avancés** dans la stratégie, de **standard** à **agressif** , **plus agressif** ou **plus agressif**.
 
-Vérifiez que ces fonctionnalités ATP sont activées.
+Vérifiez que les fonctionnalités de ces fonctionnalités de Defender pour Office 365 sont activées.
 
 ## <a name="report-the-phishing-message-to-microsoft"></a>Signaler le message de hameçonnage à Microsoft
 
@@ -59,7 +59,7 @@ Plus précisément, vous devez vérifier le champ d’en-tête **X-Forefront-ant
 
 - Pour les messages qui sont mis en quarantaine par erreur ou pour les messages autorisés, nous vous recommandons de rechercher ces messages dans l' [Explorateur de menaces et les détections en temps réel](threat-explorer.md). Vous pouvez effectuer une recherche par expéditeur, destinataire ou ID de message. Une fois que vous avez trouvé le message, accédez à détails en cliquant sur l’objet. Pour un message en quarantaine, consultez la rubrique « technologie de détection » afin de pouvoir utiliser la méthode appropriée pour le remplacement. Pour obtenir un message autorisé, vérifiez quelle stratégie a autorisé le message. 
 
-- Le courrier usurpé est marqué comme hameçonnage dans la protection avancée contre les menaces. Parfois, l’usurpation d’identité est inoffensive et les utilisateurs ne doivent pas être mis en quarantaine. Pour réduire l’impact sur les utilisateurs, consultez régulièrement le rapport d’aide à la [décision](learn-about-spoof-intelligence.md). Une fois que vous avez vérifié et effectué les remplacements nécessaires, vous pouvez être sûr de [configurer](set-up-anti-phishing-policies.md#spoof-settings) l’aide à la **mise en quarantaine** des messages suspects au lieu de les transmettre au dossier de courrier indésirable de l’utilisateur.
+- Le courrier usurpé est marqué comme hameçonnage dans Defender pour Office 365. Parfois, l’usurpation d’identité est inoffensive et les utilisateurs ne doivent pas être mis en quarantaine. Pour réduire l’impact sur les utilisateurs, consultez régulièrement le rapport d’aide à la [décision](learn-about-spoof-intelligence.md). Une fois que vous avez vérifié et effectué les remplacements nécessaires, vous pouvez être sûr de [configurer](set-up-anti-phishing-policies.md#spoof-settings) l’aide à la **mise en quarantaine** des messages suspects au lieu de les transmettre au dossier de courrier indésirable de l’utilisateur.
 
 - Vous pouvez répéter l’étape ci-dessus pour l’emprunt d’identité (domaine ou utilisateur). Le rapport d’emprunt d’identité se trouve sous informations sur le tableau de bord **gestion des menaces** \> **Dashboard** \> **Insights**.
 

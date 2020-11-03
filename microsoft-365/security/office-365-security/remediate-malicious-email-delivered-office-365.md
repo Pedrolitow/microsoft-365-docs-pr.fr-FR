@@ -13,20 +13,20 @@ MS.collection: ''
 search.appverid: MET150
 description: Correction des menaces
 appliesto:
-- Microsoft Threat Protection
-ms.openlocfilehash: a7c1f6f89f5414f5fc6ef8dd59d2894195e75f7f
-ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
+- Microsoft 365 Defender
+ms.openlocfilehash: af34b171cb213836d47edb2fb2905fb75341b02f
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48774058"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845599"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Correction des courriers électroniques malveillants remis dans Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-La correction consiste à prendre une mesure déterminée contre une menace. Les courriers électroniques malveillants envoyés à votre organisation peuvent être nettoyés par le système, via la suppression automatique de zéro heure ou par les équipes de sécurité par le biais d’actions correctives telles que le *déplacement vers la boîte de réception* , le déplacement vers le *courrier indésirable* , le déplacement vers les *éléments supprimés* , la *suppression douce* ou la *Suppression définitive* . Office Advanced Threat Protection (Office ATP) P2/E5 permet aux équipes de sécurité de corriger les menaces dans les fonctionnalités de messagerie et de collaboration via une enquête manuelle et automatisée.
+La correction consiste à prendre une mesure déterminée contre une menace. Les courriers électroniques malveillants envoyés à votre organisation peuvent être nettoyés par le système, via la suppression automatique de zéro heure ou par les équipes de sécurité par le biais d’actions correctives telles que le *déplacement vers la boîte de réception* , le déplacement vers le *courrier indésirable* , le déplacement vers les *éléments supprimés* , la *suppression douce* ou la *Suppression définitive*. Microsoft Defender for Office 365 P2/E5 permet aux équipes de sécurité de corriger les menaces dans les fonctionnalités de messagerie et de collaboration via une enquête manuelle et automatisée.
 
 > [!NOTE]
 > Pour résoudre les courriers électroniques malveillants, les équipes de sécurité doivent avoir le rôle de *recherche et de purge* affecté. L’attribution de rôle s’effectue par le biais d’autorisations dans le centre de sécurité et de conformité.
@@ -44,10 +44,10 @@ Pour effectuer des opérations comme afficher les en-têtes des messages ou tél
 |Utiliser l’Explorateur de menaces pour afficher les en-têtes et télécharger les messages électroniques remis aux boîtes aux lettres|Administrateur général <br>Administrateur de sécurité <br> Lecteur de sécurité <br> Aperçu|Oui|
 
 > [!NOTE]
-> La préversion est un *rôle* et non un *groupe de rôles* . Le rôle aperçu doit être ajouté à un groupe de rôles existant pour Office 365. Le *rôle administrateur général* est affecté dans le [centre d’administration 365 de Microsoft](https://admin.microsoft.com). Les rôles Administrateur de sécurité et lecteur de sécurité sont affectés dans les [centres de sécurité et de conformité](https://protection.office.com). Pour en savoir plus sur les rôles et les autorisations, consultez [la rubrique autorisations dans les centres de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
+> La préversion est un *rôle* et non un *groupe de rôles*. Le rôle aperçu doit être ajouté à un groupe de rôles existant pour Office 365. Le *rôle administrateur général* est affecté dans le [centre d’administration 365 de Microsoft](https://admin.microsoft.com). Les rôles Administrateur de sécurité et lecteur de sécurité sont affectés dans les [centres de sécurité et de conformité](https://protection.office.com). Pour en savoir plus sur les rôles et les autorisations, consultez [la rubrique autorisations dans les centres de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
 
 > [!NOTE]
-> Les administrateurs peuvent effectuer une action obligatoire sur les courriers électroniques, mais pour qu’ils soient approuvés, le rôle de *recherche et de purge* doit leur être attribué via les autorisations du **Centre de sécurité et de conformité**  >  **Permissions** .
+> Les administrateurs peuvent effectuer une action obligatoire sur les courriers électroniques, mais pour qu’ils soient approuvés, le rôle de *recherche et de purge* doit leur être attribué via les autorisations du **Centre de sécurité et de conformité**  >  **Permissions**.
 
 ## <a name="manual-and-automated-remediation"></a>Correction manuelle et automatique
 
@@ -73,7 +73,7 @@ Les actions d’analyse **et de réponse automatisées** sont déclenchées par 
 
 ![Courrier avec programme malveillant dans la page « zapped » indiquant le moment de l’exécution de l’opération zap.](../../media/tp-RemediationArticle3.png)
 
-Toutes les corrections (approbation directe ou approbation en deux étapes) qui ont été créées dans l’Explorateur de menaces, ainsi que les actions approuvées provenant d’enquêtes automatisées, sont affichées dans le centre de maintenance. Pour accéder à ces éléments via le volet de navigation de gauche, sous **examiner** le  >  **Centre de maintenance** .
+Toutes les corrections (approbation directe ou approbation en deux étapes) qui ont été créées dans l’Explorateur de menaces, ainsi que les actions approuvées provenant d’enquêtes automatisées, sont affichées dans le centre de maintenance. Pour accéder à ces éléments via le volet de navigation de gauche, sous **examiner** le  >  **Centre de maintenance**.
 
 ![Centre de notifications avec une liste des menaces par date et gravité.](../../media/tp-RemediationArticle4.png)
 

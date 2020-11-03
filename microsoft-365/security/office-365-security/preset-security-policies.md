@@ -13,15 +13,15 @@ localization_priority: Normal
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: Les administrateurs peuvent apprendre à appliquer des paramètres de stratégie standard et stricts pour les fonctionnalités de protection d’Exchange Online Protection (EOP) et Office 365 Advanced Threat Protection (ATP).
-ms.openlocfilehash: a624d48944965c217fb8547e4f09da0ec388e615
-ms.sourcegitcommit: 9d1351ea6d9942550b52132817f9f9693ddef2fd
+description: Les administrateurs peuvent apprendre à appliquer des paramètres de stratégie standard et stricte dans les fonctionnalités de protection d’Exchange Online Protection (EOP) et de Microsoft Defender pour Office 365
+ms.openlocfilehash: 38a03727f91878f356d8bc0dc618c711bfc500bb
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "48830536"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845731"
 ---
-# <a name="preset-security-policies-in-eop-and-office-365-atp"></a>Stratégies de sécurité prédéfinies dans EOP et Office 365 ATP
+# <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Stratégies de sécurité prédéfinies dans EOP et Microsoft Defender pour Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -59,31 +59,31 @@ Les conditions et les exceptions disponibles sont les suivantes :
 
 ### <a name="policies-in-preset-security-policies"></a>Stratégies dans les stratégies de sécurité prédéfinies
 
-Les stratégies de sécurité prédéfinies utilisent les stratégies correspondantes des différentes fonctionnalités de protection dans EOP et Office 365 ATP. Ces stratégies sont créées _une fois_ que vous avez affecté aux utilisateurs les stratégies de sécurité **standard** ou prédéfinies protection **stricte** . Vous ne pouvez pas modifier ces stratégies.
+Les stratégies de sécurité prédéfinies utilisent les stratégies correspondantes des différentes fonctionnalités de protection dans EOP et Microsoft Defender pour Office 365. Ces stratégies sont créées _une fois_ que vous avez affecté aux utilisateurs les stratégies de sécurité **standard** ou prédéfinies protection **stricte** . Vous ne pouvez pas modifier ces stratégies.
 
 - **Stratégies Exchange Online Protection (EoP)** : cela inclut les organisations Microsoft 365 avec les boîtes aux lettres Exchange Online et les organisations EOP autonomes sans boîtes aux lettres Exchange Online :
   
-  - [Stratégies de blocage du courrier indésirable](configure-your-spam-filter-policies.md) nommées **stratégie de sécurité prédéfinie standard** et **stratégie de sécurité prédéfinie stricte** .
-  - [Stratégies de protection contre les programmes malveillants](configure-anti-malware-policies.md) nommées **stratégie de sécurité** prédéfinie standard et **stratégie de sécurité prédéfinie stricte** .
+  - [Stratégies de blocage du courrier indésirable](configure-your-spam-filter-policies.md) nommées **stratégie de sécurité prédéfinie standard** et **stratégie de sécurité prédéfinie stricte**.
+  - [Stratégies de protection contre les programmes malveillants](configure-anti-malware-policies.md) nommées **stratégie de sécurité** prédéfinie standard et **stratégie de sécurité prédéfinie stricte**.
   - [Stratégies de hameçonnage d’EOP](set-up-anti-phishing-policies.md#spoof-settings) nommées **stratégie de sécurité** prédéfinie standard et **stratégie de sécurité prédéfinie stricte** (paramètres d’usurpation).
 
-- **Stratégies Office 365 Advanced Threat Protection (ATP)** : cela inclut les organisations avec les abonnements complémentaires Microsoft 365 E5 ou Office 365 ATP :
+- **Stratégies Microsoft Defender pour office 365** : cela inclut les organisations avec Microsoft 365 E5 ou Defender pour Office 365 abonnements complémentaires :
 
-  - Stratégies anti-hameçonnage ATP nommées stratégie de sécurité prédéfinie **standard** et **stratégie de sécurité prédéfinie stricte** , qui incluent :
+  - Stratégies anti-hameçonnage dans Microsoft Defender pour Office 365 nommé stratégie de **sécurité** prédéfinie standard et **stratégie de sécurité prédéfinie stricte** , notamment :
 
     - Les mêmes [paramètres d’usurpation](set-up-anti-phishing-policies.md#spoof-settings) qui sont disponibles dans les stratégies anti-hameçonnage EOP.
-    - [Paramètres d’emprunt d’identité](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies)
-    - [Seuils de hameçonnage avancés](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-atp-anti-phishing-policies)
+    - [Paramètres d’emprunt d’identité](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
+    - [Seuils de hameçonnage avancés](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
 
-  - [Stratégies de liens fiables](set-up-atp-safe-links-policies.md) nommées **stratégie de sécurité prédéfinie standard** et **stratégie de sécurité avec présélection stricte** .
+  - [Stratégies de liens fiables](set-up-atp-safe-links-policies.md) nommées **stratégie de sécurité prédéfinie standard** et **stratégie de sécurité avec présélection stricte**.
 
-  - [Stratégies de pièces jointes approuvées](set-up-atp-safe-attachments-policies.md) nommées **stratégie de sécurité prédéfinie standard** et **stratégie de sécurité avec présélection stricte** .
+  - [Stratégies de pièces jointes approuvées](set-up-atp-safe-attachments-policies.md) nommées **stratégie de sécurité prédéfinie standard** et **stratégie de sécurité avec présélection stricte**.
 
-Notez que vous pouvez appliquer des protections EOP à différents utilisateurs que les protections ATP.
+Notez que vous pouvez appliquer des protections EOP à différents utilisateurs que les protections Microsoft Defender pour Office 365.
 
 ### <a name="policy-settings-in-preset-security-policies"></a>Paramètres de stratégie dans les stratégies de sécurité prédéfinies
 
-Vous ne pouvez pas modifier les paramètres de stratégie dans les profils de protection. Les valeurs **standard** et **stricte** des paramètres de stratégie sont décrites dans la rubrique [paramètres recommandés pour la sécurité de l’ATP et d’Office 365](recommended-settings-for-eop-and-office365-atp.md).
+Vous ne pouvez pas modifier les paramètres de stratégie dans les profils de protection. Les valeurs **standard** et **stricte** des paramètres de stratégie sont décrites dans [paramètres recommandés pour EOP et Microsoft Defender pour Office 365 Security](recommended-settings-for-eop-and-office365-atp.md).
 
 ### <a name="order-of-precedence-for-preset-security-policies-and-other-policies"></a>Ordre de priorité pour les stratégies de sécurité prédéfinies et les autres stratégies
 
@@ -121,11 +121,11 @@ En d’autres termes, les paramètres de la stratégie de **protection stricte**
 
 1. Dans le centre de sécurité & conformité, accédez **Threat management** aux stratégies de \> **Policy** \> **sécurité prédéfinies** stratégie de gestion des menaces.
 
-2. Sous **protection standard** ou **protection stricte** , cliquez sur **modifier** .
+2. Sous **protection standard** ou **protection stricte** , cliquez sur **modifier**.
 
 3. L’Assistant **appliquer la protection standard** ou **appliquer une protection stricte** démarre. Sur les **protections EOP s’appliquent à** l’étape, identifiez les destinataires internes auxquels les [protections EOP](#policies-in-preset-security-policies) s’appliquent :
 
-   1. Cliquez sur **Ajouter une condition** . Dans la liste déroulante qui apparaît, sélectionnez une condition sous **appliqué si** :
+   1. Cliquez sur **Ajouter une condition**. Dans la liste déroulante qui apparaît, sélectionnez une condition sous **appliqué si** :
 
       - **Les destinataires sont**
       - **Les destinataires sont membres de**
@@ -139,23 +139,23 @@ En d’autres termes, les paramètres de la stratégie de **protection stricte**
 
       Répétez l’étape précédente pour ajouter des valeurs à la condition, puis répétez cette étape autant de fois que nécessaire ou jusqu’à ce que les conditions soient insuffisantes.
 
-   4. Pour ajouter une exception, cliquez sur **Ajouter une condition** . Dans la liste déroulante qui apparaît, sélectionnez une condition sous **sauf quand** . Les paramètres et le comportement sont exactement comme les conditions.
+   4. Pour ajouter une exception, cliquez sur **Ajouter une condition**. Dans la liste déroulante qui apparaît, sélectionnez une condition sous **sauf quand**. Les paramètres et le comportement sont exactement comme les conditions.
 
-   Lorsque vous avez terminé, cliquez sur **Suivant** .
+   Lorsque vous avez terminé, cliquez sur **Suivant**.
 
-4. Si votre organisation dispose d’Office 365 ATP, les **protections contre les disponibilités s’appliquent à** l’étape pour identifier les destinataires internes auxquels les [protections ATP Office 365](#policies-in-preset-security-policies) s’appliquent.
+4. Si votre organisation a Microsoft Defender pour Office 365, les **protections contre les disponibilités s’appliquent** à l’étape pour identifier les destinataires internes auxquels les [protections Microsoft defender pour Office 365](#policies-in-preset-security-policies) s’appliquent.
 
    Les paramètres et le comportement sont les mêmes que les **protections EOP s’appliquent à** l’étape.
 
-   Lorsque vous avez terminé, cliquez sur **Suivant** .
+   Lorsque vous avez terminé, cliquez sur **Suivant**.
 
-5. Dans l’étape **confirmer** , vérifiez vos sélections, puis cliquez sur **confirmer** .
+5. Dans l’étape **confirmer** , vérifiez vos sélections, puis cliquez sur **confirmer**.
 
 ### <a name="use-the-security--compliance-center-to-modify-the-assignments-of-preset-security-policies"></a>Utiliser le centre de sécurité & conformité pour modifier les affectations des stratégies de sécurité prédéfinies
 
 Les étapes de modification de l’affectation de la stratégie de sécurité de protection **standard** ou de protection **stricte** sont les mêmes que lorsque vous avez initialement [affecté les stratégies de sécurité prédéfinies aux utilisateurs](#use-the-security--compliance-center-to-assign-preset-security-policies-to-users).
 
-Pour désactiver les stratégies de **protection standard** ou de protection **stricte** tout en conservant les conditions et les exceptions existantes, faites glisser le bouton bascule sur **désactivé** . Pour activer les stratégies, faites glisser le bouton bascule sur **activé** .
+Pour désactiver les stratégies de **protection standard** ou de protection **stricte** tout en conservant les conditions et les exceptions existantes, faites glisser le bouton bascule sur **désactivé**. Pour activer les stratégies, faites glisser le bouton bascule sur **activé**.
 
 ### <a name="how-do-you-know-these-procedures-worked"></a>Comment savoir si ces procédures ont fonctionné ?
 

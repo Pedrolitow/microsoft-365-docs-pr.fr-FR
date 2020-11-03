@@ -1,6 +1,6 @@
 ---
-title: Configuration de votre laboratoire d’évaluation ou de votre environnement pilote Microsoft Threat Protection
-description: Accédez au centre de sécurité Microsoft 365, puis configurez votre environnement de laboratoire d’évaluation de la protection contre les menaces Microsoft.
+title: Configuration de votre laboratoire d’évaluation Microsoft 365 Defender ou de votre environnement pilote
+description: Accédez au centre de sécurité Microsoft 365, puis configurez votre environnement de laboratoire de test Microsoft 365 Defender.
 keywords: Programme d’installation de la protection contre les menaces Microsoft, programme d’installation pilote de Microsoft Threat Protection, essayez Microsoft Threat Protection, programme d’évaluation de la protection contre les menaces Microsoft
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,42 +18,42 @@ ms.collection:
 - m365solution-scenario
 - m365solution-evalutatemtp
 ms.topic: article
-ms.openlocfilehash: 53ff0842e73e275bf4a8fa8b18c1d08ad70a64ec
-ms.sourcegitcommit: a83acd5b9eeefd2e20e5bac916fe29d09fb53de9
+ms.openlocfilehash: 47f4ceeebd50784b1880a028ebe2698012c406da
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48418132"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844823"
 ---
-# <a name="set-up-your-microsoft-threat-protection-trial-lab-environment"></a>Configurer votre environnement de laboratoire d’évaluation de la protection contre les menaces Microsoft 
+# <a name="set-up-your-microsoft-365-defender-trial-lab-environment"></a>Configuration de votre environnement de laboratoire de test Microsoft 365 Defender 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **S’applique à :**
-- Protection Microsoft contre les menaces 
+- Microsoft 365 Defender 
 
 
-La création d’un laboratoire de test Microsoft Threat Protection ou d’un environnement pilote et son déploiement est un processus en trois phases :
+La création d’un laboratoire de test Microsoft 365 Defender ou d’un environnement pilote et son déploiement est un processus en trois phases :
 
 <br>
 <table border="0" width="100%" align="center">
   <tr style="text-align:center;">
     <td align="center" style="width:25%; border:0;" >
       <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval?view=o365-worldwide"> 
-        <img src="../../media/prepare.png" alt="Prepare your Microsoft Threat Protection trial lab or pilot environment" title="Préparation de votre laboratoire d’évaluation ou de votre environnement pilote Microsoft Threat Protection" />
+        <img src="../../media/prepare.png" alt="Prepare your Microsoft 365 Defender trial lab or pilot environment" title="Préparation de votre laboratoire d’évaluation ou de votre environnement pilote Microsoft 365 Defender" />
       <br/>Phase 1 : préparer </a><br>
     </td>
      <td align="center"bgcolor="#d5f5e3">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/setup-mtpeval?view=o365-worldwide">
-        <img src="../../media/setup.png" alt="Set up your Microsoft Threat Protection trial lab or pilot environment" title="Configuration de votre laboratoire d’évaluation ou de votre environnement pilote Microsoft Threat Protection" />
+        <img src="../../media/setup.png" alt="Set up your Microsoft 365 Defender trial lab or pilot environment" title="Configuration de votre laboratoire d’évaluation Microsoft 365 Defender ou de votre environnement pilote" />
       <br/>Phase 2 : configuration </a><br>
     </td>
     <td align="center">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide">
         <img src="../../media/config-onboard.png" alt="
-Configure each Microsoft Threat Protection pillar for your Microsoft Threat Protection trial lab or pilot environment and onboard your endpoints" title="
-Configurez chaque pilier de protection contre les menaces Microsoft pour votre laboratoire de test ou votre environnement pilote Microsoft Threat Protection et intégrez vos points de terminaison." />
+Configure each Microsoft 365 Defender pillar for your Microsoft 365 Defender trial lab or pilot environment and onboard your endpoints" title="
+Configurez chaque pilier de Microsoft 365 Defender pour votre laboratoire de test Microsoft 365 Defender ou votre environnement pilote et intégrez vos points de terminaison." />
       <br/>Phase 3 : configurer & Onboard </a><br>
 </td>
 
@@ -163,7 +163,7 @@ Dans cette phase, vous serez guidé pour :
 
    ![Image of_Microsoft 365 E5 page de la version d’évaluation gratuite où vous devez pointer le bouton essayer maintenant pour démarrer](../../media/mtp-eval-27.png)
  
-6. Accédez au **Centre d’administration Microsoft 365**  >  **utilisateurs**  >  **actifs**. Sélectionnez votre compte d’utilisateur, sélectionnez **gérer les licences de produits**, puis échangez la licence d’Office 365 E5 à **Microsoft 365 E5**. Cliquez sur **Enregistrer**.
+6. Accédez au **Centre d’administration Microsoft 365**  >  **utilisateurs**  >  **actifs**. Sélectionnez votre compte d’utilisateur, sélectionnez **gérer les licences de produits** , puis échangez la licence d’Office 365 E5 à **Microsoft 365 E5**. Cliquez sur **Enregistrer**.
 
    ![Page du centre d’administration de l’image of_Microsoft 365, dans laquelle vous pouvez sélectionner Microsoft 365 E5 licence](../../media/mtp-eval-28.png)
  
@@ -178,5 +178,5 @@ Dans cette phase, vous serez guidé pour :
 
 
 ## <a name="next-step"></a>Étape suivante
-|![Phase 3 : configurer & Onboard](../../media/config-onboard.png) <br>[Phase 3 : configurer & Onboard](config-mtpeval.md) | Configurez chaque pilier de protection contre les menaces Microsoft pour votre laboratoire de test ou votre environnement pilote Microsoft Threat Protection et intégrez vos points de terminaison.
+|![Phase 3 : configurer & Onboard](../../media/config-onboard.png) <br>[Phase 3 : configurer & Onboard](config-mtpeval.md) | Configurez chaque pilier de Microsoft 365 Defender pour votre laboratoire de test Microsoft 365 Defender ou votre environnement pilote et embarquez vos points de terminaison.
 |:-------|:-----|
