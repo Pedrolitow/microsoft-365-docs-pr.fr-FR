@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8787bf212db342c84f13f8522e8853310e00c0ce
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: dcb7997c8c248c2b4e7d16902b6ebdd7756ccd0b
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429406"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846627"
 ---
 # <a name="app-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Surveillance et création de rapports sur les applications dans le centre de sécurité Microsoft 365
 
@@ -65,10 +65,10 @@ Les emplacements des activités de l' **application Cloud** indiquent où les ut
 
 ## <a name="monitor-health-for-infrastructure-workloads"></a>Surveiller l’intégrité des charges de travail d’infrastructure
 
-L’intégrité de l' **infrastructure** indique des alertes d’état d’intégrité pour les charges de travail d’infrastructure dans Azure Security Center.
+L’intégrité de l' **infrastructure** indique des alertes d’état d’intégrité pour les charges de travail d’infrastructure dans Azure Defender *.
 
-Azure Security Center offre une gestion de sécurité unifiée et une protection avancée contre les menaces entre les charges de travail locales et de Cloud. Vous pouvez collecter, Rechercher et analyser des données de sécurité à partir de différentes sources, notamment des pare-feu et d’autres solutions partenaires.
+Azure Defender * fournit une gestion de sécurité unifiée et un Defender pour Office 365 sur des charges de travail locales et de Cloud. Vous pouvez collecter, Rechercher et analyser des données de sécurité à partir de différentes sources, notamment des pare-feu et d’autres solutions partenaires.
 
-Pour plus d’informations, reportez-vous à [Azure Security Center documentation](https://docs.microsoft.com/azure/security-center/).
+Pour plus d’informations, reportez-vous à [Azure Defender * documentation](https://docs.microsoft.com/azure/security-center/).
 
 ![Carte d’intégrité de l’infrastructure](../../media/infrastructure-health.png)

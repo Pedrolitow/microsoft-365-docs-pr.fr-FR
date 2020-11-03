@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 5944439da4c4df9253e5c6d67944ccc1a7339e71
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: b2aa72dea55d4c75f6e73161e07cf0a9bb5ecf1c
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45199770"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846272"
 ---
 # <a name="plan-for-insider-risk-management"></a>Planifier la gestion des risques Insider
 
@@ -65,7 +65,7 @@ Si vous ne disposez pas d’un plan Microsoft 365 entreprise E5 existant et que 
 
 - Lors de l’utilisation du modèle **utilisateurs de vol de données** , vous devez configurer un connecteur rh Microsoft 365 pour importer régulièrement les informations de démission et de date d’arrêt pour les utilisateurs de votre organisation. Pour obtenir des conseils détaillés sur la configuration du connecteur RH Microsoft 365 pour votre organisation, voir l’article [importer des données avec le connecteur RH](import-hr-data.md) .
 - Lorsque vous utilisez des modèles de **fuites de données** , vous devez configurer au moins une stratégie de protection contre la perte de données (DLP) pour définir des informations sensibles dans votre organisation et recevoir des alertes de risque pour les alertes de stratégie DLP de gravité élevée. Consultez l’article [créer, tester et ajuster une stratégie DLP](create-test-tune-dlp-policy.md) pour obtenir des instructions détaillées sur la configuration des stratégies DLP pour votre organisation.
-- Lors de l’utilisation de modèles de **violation de stratégie de sécurité** , vous devez activer la protection avancée contre les menaces de Microsoft Defender pour l’intégration de la gestion des risques initiaux dans le centre de sécurité de Defender pour importer les alertes de violation de sécurité. Voir l’article [configure Advanced Features in Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features) pour obtenir des conseils détaillés sur l’activation de l’intégration de Microsoft Defender ATP avec la gestion des risques initiés.
+- Lorsque vous utilisez des modèles de **violation de stratégie de sécurité** , vous devez activer Microsoft Defender pour le point de terminaison de l’intégration de la gestion des risques initiaux dans le centre de sécurité de Defender pour importer les alertes de violation de sécurité. Reportez-vous à l’article [configure Advanced Features in Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features) pour obtenir des conseils détaillés sur l’activation de l’intégration de Defender for Endpoint avec la gestion des risques initiés.
 - Lorsque vous utilisez des modèles **utilisateur mécontents** , vous devez configurer un connecteur rh Microsoft 365 pour importer régulièrement des informations sur l’état des performances ou de la rétrogradation pour les utilisateurs de votre organisation. Pour obtenir des conseils détaillés sur la configuration du connecteur RH Microsoft 365 pour votre organisation, voir l’article [importer des données avec le connecteur RH](import-hr-data.md) .
 
 ## <a name="test-with-a-small-group-of-users-in-a-production-environment"></a>Tester avec un petit groupe d’utilisateurs dans un environnement de production

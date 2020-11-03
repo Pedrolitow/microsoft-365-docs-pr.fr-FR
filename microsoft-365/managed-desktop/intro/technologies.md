@@ -1,7 +1,7 @@
 ---
 title: Technologies associées de Bureau géré Microsoft
 description: Cette rubrique répertorie les technologies et les applications utilisées dans le bureau géré Microsoft.
-keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: f4af346877b41b03c07750508ff93661cc642ec4
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: b98cec62a018556bfbd31df0aa824acbd00b37b6
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289104"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846239"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Technologies associées de Bureau géré Microsoft
 
@@ -42,7 +42,7 @@ Applications Web |  Yammer, Office dans un navigateur, Delve, Flow, StaffHub, P
  |
  --- | ---
 Virtualisation d’application (App-V) |    Les clients peuvent déployer des packages App-V à l’aide du client de gestion des applications Win32 Intune.
-Microsoft Defender – Protection avancée contre les menaces |  Microsoft Managed Desktop utilise cette fonctionnalité pour surveiller la sécurité des appareils. 
+Microsoft Defender pour point de terminaison |    Microsoft Managed Desktop utilise cette fonctionnalité pour surveiller la sécurité des appareils. 
 
 ## <a name="enterprise-mobility--security-e5"></a>Enterprise Mobility + Security E5
 

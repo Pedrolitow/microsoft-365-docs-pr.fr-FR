@@ -21,12 +21,12 @@ description: Obtenir une vue d’ensemble des fonctionnalités d’analyse et de
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: d63ba8a6d3ffb653b30448a973e1cd862631d350
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 316e2e30e5865e068f20d151cd0b081a96ee853f
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48447106"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845971"
 ---
 # <a name="an-overview-of-automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Vue d’ensemble de l’analyse et de la réponse automatisées (AIR) dans Microsoft Defender pour Office 365
 
@@ -73,7 +73,7 @@ Si votre organisation gère vos alertes de sécurité via un système de gestion
 
 ## <a name="security-playbooks"></a>Règles de sécurité
 
-Les règles de sécurité sont des stratégies principales qui sont au cœur de l’automatisation dans Microsoft Defender pour Office 365 et Microsoft Threat Protection. Les règles de sécurité fournies dans AIR sont basées sur des scénarios de sécurité réels courants et sont développés en fonction des commentaires des équipes d’opérations de sécurité. Un manuel de sécurité est lancé automatiquement lorsque des alertes spécifiques sont déclenchées au sein de votre organisation. Une fois que l’alerte est déclenchée, le manuel associé est exécuté par le système automatisé d’enquête et de réponse. L’enquête passe par l’analyse de l’alerte en fonction du manuel de cette alerte en examinant toutes les métadonnées associées (notamment les messages électroniques, les utilisateurs, les objets, les expéditeurs, etc.). En fonction des conclusions du manuel d’enquête, AIR recommande un ensemble d’actions que l’équipe de sécurité de votre organisation peut prendre pour contrôler et atténuer la menace. 
+Les règles de sécurité sont des stratégies principales qui se trouvent au cœur de l’automatisation dans Microsoft Defender pour Office 365 et Microsoft 365 Defender. Les règles de sécurité fournies dans AIR sont basées sur des scénarios de sécurité réels courants et sont développés en fonction des commentaires des équipes d’opérations de sécurité. Un manuel de sécurité est lancé automatiquement lorsque des alertes spécifiques sont déclenchées au sein de votre organisation. Une fois que l’alerte est déclenchée, le manuel associé est exécuté par le système automatisé d’enquête et de réponse. L’enquête passe par l’analyse de l’alerte en fonction du manuel de cette alerte en examinant toutes les métadonnées associées (notamment les messages électroniques, les utilisateurs, les objets, les expéditeurs, etc.). En fonction des conclusions du manuel d’enquête, AIR recommande un ensemble d’actions que l’équipe de sécurité de votre organisation peut prendre pour contrôler et atténuer la menace. 
 
 Les règles de sécurité que vous obtenez avec AIR sont conçues pour aborder les menaces les plus fréquentes auxquelles les entreprises rencontrent actuellement des courriers électroniques. Elles sont basées sur les opérations de sécurité et les équipes de réponse aux incidents, y compris les personnes qui permettent de défendre Microsoft et les ressources de nos clients.
 
@@ -118,7 +118,7 @@ Ensuite, plusieurs étapes d’enquête sur les menaces et de chasse sont exécu
 - Les messages électroniques similaires sont identifiés par des recherches de cluster de messagerie.
 - Le signal est partagé avec d’autres plateformes, telles que [Microsoft Defender pour le point de terminaison](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection).
 - Une détermination est effectuée sur le fait que les utilisateurs aient cliqué sur les liens malveillants dans les messages électroniques suspects.
-- Une vérification est effectuée sur Exchange Online Protection ([EOP](exchange-online-protection-overview.md)) et Office 365 Advanced Threat Protection ([ATP](office-365-atp.md)) pour voir s’il existe d’autres messages similaires signalés par les utilisateurs.
+- Une vérification est effectuée sur Exchange Online Protection ([EOP](exchange-online-protection-overview.md)) et ([Microsoft defender pour Office 365](office-365-atp.md)) pour voir s’il existe d’autres messages similaires signalés par les utilisateurs.
 - Une vérification est exécutée pour déterminer si un utilisateur a été compromis. Cette vérification exploite les signaux entre Office 365, [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)et [Azure Active Directory](https://docs.microsoft.com/azure/active-directory), en mettant en corrélation les anomalies d’activité de l’utilisateur associées.
 
 Au cours de la phase de chasse, les risques et les menaces sont affectés à différentes étapes de la chasse. 
@@ -143,7 +143,7 @@ Dans le menu **actions** , vous pouvez sélectionner l' **enquête du déclenche
 
 Les fonctionnalités AIR de Microsoft Defender pour Office 365 incluent des [rapports & les détails](air-view-investigation-results.md) que les équipes des opérations de sécurité peuvent utiliser pour surveiller et résoudre les menaces. Toutefois, vous pouvez également intégrer les fonctionnalités AIR à d’autres solutions. Les exemples incluent un système de gestion des événements et des informations de sécurité (SIEM), un système de gestion des cas ou une solution de création de rapports personnalisée. Ces types d’intégration peuvent être effectués à l’aide de l' [API activité de gestion d’Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). 
 
-Par exemple, une organisation a récemment mis en place un moyen pour l’équipe des opérations de sécurité d’afficher les alertes de hameçonnage signalées par l’utilisateur et déjà traitées par AIR. Leur solution intègre les alertes appropriées avec le serveur SIEM de l’organisation et son système de gestion de la casse. La solution réduit considérablement le nombre de faux positifs afin que l’équipe des opérations de sécurité puisse concentrer leur temps et leur efforts sur des menaces réelles. Pour en savoir plus sur cette solution personnalisée, consultez le [blog de la communauté technique : améliorer l’efficacité de votre SOC avec Office 365 ATP et l’API de gestion d’Office 365](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185).
+Par exemple, une organisation a récemment mis en place un moyen pour l’équipe des opérations de sécurité d’afficher les alertes de hameçonnage signalées par l’utilisateur et déjà traitées par AIR. Leur solution intègre les alertes appropriées avec le serveur SIEM de l’organisation et son système de gestion de la casse. La solution réduit considérablement le nombre de faux positifs afin que l’équipe des opérations de sécurité puisse concentrer leur temps et leur efforts sur des menaces réelles. Pour en savoir plus sur cette solution personnalisée, consultez [le blog de la communauté technique : améliorer l’efficacité de votre SOC avec Microsoft Defender pour Office 365 et l’API de gestion d’Office 365](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

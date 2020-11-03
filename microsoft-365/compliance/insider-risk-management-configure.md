@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: e8d30706895774986bc68936bd84c303a6460ece
-ms.sourcegitcommit: 21c3e44862854c74e4008cfb661840f069c6b709
+ms.openlocfilehash: 684e21a8288aee72f6170d54ffc86af3bcb0ece0
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48787510"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846262"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Prise en main de la gestion des risques internes
 
@@ -71,15 +71,15 @@ Procédez comme suit pour ajouter des utilisateurs à un groupe de rôles de ges
 
 1. Connectez-vous [https://protection.office.com/permissions](https://protection.office.com/permissions) à l’aide des informations d’identification d’un compte d’administrateur dans votre organisation Microsoft 365.
 
-2. Dans le centre de sécurité &amp; conformité, accédez à **autorisations** . Sélectionnez le lien pour afficher et gérer les rôles dans Office 365.
+2. Dans le centre de sécurité &amp; conformité, accédez à **autorisations**. Sélectionnez le lien pour afficher et gérer les rôles dans Office 365.
 
-3. Sélectionnez le groupe de rôles Gestion des risques Insiders auquel vous souhaitez ajouter des utilisateurs, puis sélectionnez **modifier le groupe de rôles** .
+3. Sélectionnez le groupe de rôles Gestion des risques Insiders auquel vous souhaitez ajouter des utilisateurs, puis sélectionnez **modifier le groupe de rôles**.
 
-4. Sélectionnez **choisir les membres** dans le volet de navigation de gauche, puis sélectionnez **modifier** .
+4. Sélectionnez **choisir les membres** dans le volet de navigation de gauche, puis sélectionnez **modifier**.
 
 5. Sélectionnez **Ajouter** , puis activez la case à cocher de tous les utilisateurs que vous souhaitez ajouter au groupe de rôles.
 
-6. Sélectionnez **Ajouter** , puis **Terminé** .
+6. Sélectionnez **Ajouter** , puis **Terminé**.
 
 7. Sélectionnez **Enregistrer** pour ajouter les utilisateurs au groupe de rôles. Sélectionnez **Fermer** pour effectuer les étapes.
 
@@ -93,7 +93,7 @@ Pour obtenir des instructions détaillées sur l’activation de l’audit, cons
 
 La plupart des modèles de gestion des risques Insiders comportent des éléments prérequis qui doivent être configurés pour que les indicateurs de stratégie génèrent des alertes d’activité pertinentes. Configurez les conditions préalables appropriées en fonction des stratégies que vous prévoyez de configurer pour votre organisation.
 
-Si vous configurez une stratégie à l’aide du *langage offensant dans le modèle de stratégie de messagerie* , vous pouvez ignorer cette étape et passer directement à l' **étape 4** .
+Si vous configurez une stratégie à l’aide du *langage offensant dans le modèle de stratégie de messagerie* , vous pouvez ignorer cette étape et passer directement à l' **étape 4**.
 
 ### <a name="configure-microsoft-365-hr-connector"></a>Configurer le connecteur RH de Microsoft 365
 
@@ -118,7 +118,7 @@ Les stratégies DLP aident à identifier les utilisateurs à activer le score de
 >Assurez-vous que vous avez effectué les opérations suivantes :
 >
 >- Vous comprenez et configurez correctement les utilisateurs dans l’étendue dans les stratégies de gestion des risques DLP et Insider pour produire la couverture de stratégie que vous attendez.
->- Assurez-vous que le paramètre **rapports d’incident** de la stratégie DLP pour la gestion des risques des Insiders utilisés avec ces modèles est configuré pour des alertes de niveau de gravité *élevé* . Les alertes de gestion des risques internes ne seront pas générées à partir des stratégies DLP avec le champ **rapports d’incident** défini sur *faible* ou *moyen* .
+>- Assurez-vous que le paramètre **rapports d’incident** de la stratégie DLP pour la gestion des risques des Insiders utilisés avec ces modèles est configuré pour des alertes de niveau de gravité *élevé* . Les alertes de gestion des risques internes ne seront pas générées à partir des stratégies DLP avec le champ **rapports d’incident** défini sur *faible* ou *moyen*.
 
 Une stratégie DLP est requise lors de l’utilisation des modèles de stratégie suivants :
 
@@ -165,10 +165,10 @@ Avant de configurer une stratégie, définissez les paramètres de risque Inside
     - [Détections d’anomalies](insider-risk-management-settings.md#anomaly-detections)
     - [Détections de langage choquant](insider-risk-management-settings.md#offensive-language-detections)
     - [Niveau du volume d’alerte](insider-risk-management-settings.md#alert-volume)
-    - [État de l’alerte de protection avancée contre les menaces Microsoft 365 Defender](insider-risk-management-settings.md#microsoft-defender-advanced-threat-protection-preview)
+    - [État de l’alerte Microsoft Defender pour le point de terminaison](insider-risk-management-settings.md#microsoft-defender-for-endpoint-preview)
     - [Paramètres de domaine](insider-risk-management-settings.md#domains-preview)
 6. Sur la page **Exporter les alertes** , activez l’exportation des informations d’alerte sur les risques internes à l’aide des API de gestion d’Office 365 si nécessaire.
-7. Dans la page **Priority User Groups** , créez un groupe d’utilisateurs de priorité et ajoutez des utilisateurs s’ils ne sont pas créés à l' **étape 3** .
+7. Dans la page **Priority User Groups** , créez un groupe d’utilisateurs de priorité et ajoutez des utilisateurs s’ils ne sont pas créés à l' **étape 3**.
 8. Sur la page **flux d’automate de puissance** , configurez un flux à partir de modèles de flux de risque d’initiés ou créez un flux. Reportez-vous à l’article [prise en main de paramètres de gestion des risques initiés](insider-risk-management-settings.md#power-automate-flows-preview) pour les instructions détaillées.
 9. Sur la **page Priority Assets** , configurez les ressources de priorité pour utiliser les données de votre contrôle physique et la plateforme d’accès importées par le connecteur badges physique. Reportez-vous à l’article [prise en main de paramètres de gestion des risques initiés](insider-risk-management-settings.md#priority-physical-assets-preview) pour les instructions détaillées.
 10. Sur la page **Microsoft teams** , activez l’intégration de Microsoft teams à la gestion des risques initiés pour créer automatiquement une équipe pour la collaboration d’un utilisateur ou d’un cas. Reportez-vous à l’article [prise en main de paramètres de gestion des risques initiés](insider-risk-management-settings.md#microsoft-teams-preview) pour les instructions détaillées.
@@ -194,9 +194,9 @@ Les stratégies de gestion des risques internes incluent les utilisateurs attrib
 4. Sélectionnez **suivant** pour continuer.
 5. Dans la page **utilisateurs** , sélectionnez **Ajouter un utilisateur ou un groupe** ou **Choisissez Priority Group Groups** pour définir les utilisateurs ou groupes d’utilisateurs de priorité inclus dans la stratégie, en fonction du modèle de stratégie que vous avez sélectionné. Activez la case à cocher **tous les utilisateurs et les groupes à extension messagerie** , le cas échéant (si vous n’avez pas sélectionné de modèle de priorité basé sur l’utilisateur). Sélectionnez **suivant** pour continuer.
 6. Sur la page **spécifier le contenu à classer par priorité (facultatif)** , vous pouvez attribuer les sources à hiérarchiser pour augmenter le score des risques. Toutefois, certaines activités ne génèrent pas d’alerte en tout lieu, sauf si le contenu associé contient des types d’informations sensibles intégrés ou personnalisés ou s’il a été spécifié comme priorité sur cette page :
-    - **Sites SharePoint** : sélectionnez **Ajouter un site SharePoint** et sélectionnez les organisations SharePoint dont vous souhaitez définir la priorité. Par exemple, *« Group1@contoso.sharepoint.com/sites/group1 »* .
-    - **Type d’informations sensibles** : sélectionnez **Ajouter un type d’informations sensibles** et sélectionnez les types de critère de diffusion dont vous souhaitez définir la priorité. Par exemple, *« numéro de compte bancaire américain »* et *« numéro de carte de crédit »* .
-    - **Étiquettes de sensibilité** : sélectionnez **Ajouter une étiquette de confidentialité** et sélectionnez les étiquettes dont vous souhaitez définir la priorité. Par exemple, *« confidentiel »* et *« secret »* .
+    - **Sites SharePoint** : sélectionnez **Ajouter un site SharePoint** et sélectionnez les organisations SharePoint dont vous souhaitez définir la priorité. Par exemple, *« Group1@contoso.sharepoint.com/sites/group1 »*.
+    - **Type d’informations sensibles** : sélectionnez **Ajouter un type d’informations sensibles** et sélectionnez les types de critère de diffusion dont vous souhaitez définir la priorité. Par exemple, *« numéro de compte bancaire américain »* et *« numéro de carte de crédit »*.
+    - **Étiquettes de sensibilité** : sélectionnez **Ajouter une étiquette de confidentialité** et sélectionnez les étiquettes dont vous souhaitez définir la priorité. Par exemple, *« confidentiel »* et *« secret »*.
 7. Sélectionnez **suivant** pour continuer.
 8. Sur la page **Sélectionner les indicateurs de stratégie** , vous verrez les [indicateurs](insider-risk-management-settings.md#indicators) que vous avez définis comme étant disponibles sur la page indicateurs des paramètres de **risque Insider**  >  **Indicators** . Si vous avez sélectionné un modèle de *fuites de données* au début de l’Assistant, vous devez sélectionner une stratégie DLP dans la liste déroulante **stratégie DLP** pour activer le déclenchement des indicateurs pour la stratégie. Sélectionnez les indicateurs que vous souhaitez appliquer à la stratégie. Si vous préférez ne pas utiliser les paramètres de seuil de stratégie par défaut pour ces indicateurs, désactivez l’option **utiliser les seuils par défaut recommandés par Microsoft** et entrez les valeurs de seuil pour chaque indicateur sélectionné. Si vous avez sélectionné au moins un indicateur de *Bureau* ou d' *appareil* , sélectionnez les **suramplificateurs de score de risque** , le cas échéant. Les amplificateurs de score de risque ne s’appliquent qu’aux indicateurs sélectionnés.
 

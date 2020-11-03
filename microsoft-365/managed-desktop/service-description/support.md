@@ -1,18 +1,18 @@
 ---
 title: Prise en charge du bureau géré Microsoft
 description: ''
-keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 39209e81c380887d8a65e28f12ea00c6050e28fa
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 52bbbad5acac3b0407ffbf0cd78888d74cfb05d3
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950329"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846191"
 ---
 # <a name="support-for-microsoft-managed-desktop"></a>Prise en charge du bureau géré Microsoft
 
@@ -33,7 +33,7 @@ La prise en charge de Microsoft Managed Desktop inclut :
 
 Produits pris en charge :
 
-- Windows 10 avec Microsoft Defender-protection avancée contre les menaces 
+- Windows 10 avec Microsoft Defender pour le point de terminaison
 - Ces applications Microsoft 365 apps pour les applications d’entreprise : Outlook, Word, PowerPoint, Excel, Skype entreprise client, Microsoft teams 
 - Microsoft Store pour Entreprises 
 - Client OneDrive entreprise 

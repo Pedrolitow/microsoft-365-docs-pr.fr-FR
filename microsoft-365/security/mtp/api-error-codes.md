@@ -1,6 +1,6 @@
 ---
-title: Codes d’erreur de l’API REST Common protection Microsoft Threat
-description: En savoir plus sur les codes d’erreur de l’API REST Microsoft Threat Protection courants
+title: Codes d’erreur de l’API REST Microsoft 365 Defender courants
+description: En savoir plus sur les codes d’erreur de l’API REST Microsoft 365 Defender courants
 keywords: API, erreur, codes, erreurs courantes, MTP, codes d’erreur de l’API
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -19,25 +19,25 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 81375b919b52ff895e5ec7014feb747b1a0eae65
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: aceb376662f2b27397aa2332f8929a57d5a3ee03
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201338"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846007"
 ---
-# <a name="common-microsoft-threat-protection-rest-api-error-codes"></a>Codes d’erreur de l’API REST Common protection Microsoft Threat
+# <a name="common-microsoft-365-defender-rest-api-error-codes"></a>Codes d’erreur de l’API REST Microsoft 365 Defender courants
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **S’applique à :**
-- Protection Microsoft contre les menaces
+- Microsoft 365 Defender
 
 >[!IMPORTANT] 
 >Certaines informations se rapportent à des produits précommercialisés susceptibles d’être modifiés de manière substantielle avant leur publication commerciale. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-Les codes d’erreur figurant dans le tableau suivant peuvent être renvoyés par une opération sur n’importe quelle API de protection contre les menaces Microsoft.
+Les codes d’erreur figurant dans le tableau suivant peuvent être renvoyés par une opération sur l’une des API Microsoft 365 Defender.
 
 Chaque réponse d’erreur contient un message d’erreur qui peut vous aider à résoudre le problème.
 

@@ -18,12 +18,12 @@ ms.collection:
 - remotework
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: 28d4fc196e75a1a7a27cbe2a0f6804646002354f
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: f9c26e7e4af99174c5723b44c59d7279ca93afa5
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464073"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846447"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Stratégies communes pour les identités et l’accès aux appareils
 
@@ -50,7 +50,7 @@ Le reste de cet article explique comment configurer ces stratégies.
 
 Pour vous donner le temps de réaliser ces tâches, nous vous recommandons de mettre en œuvre les stratégies de base dans l’ordre indiqué dans le tableau ci-dessous. Toutefois, les stratégies de MFA pour des niveaux de protection sensibles et hautement réglementés peuvent être implémentées à tout moment.
 
-|Niveau de protection|Stratégies|Informations supplémentaires|
+|Niveau de protection|Stratégies|Plus d’informations|
 |:---------------|:-------|:----------------|
 |**Baseline**|[Exiger l’authentification multifacteur lorsque le risque de connexion est *moyen* ou *élevé*](#require-mfa-based-on-sign-in-risk)| |
 |        |[Bloquer les clients ne prenant pas en charge l’authentification moderne](#block-clients-that-dont-support-modern-authentication)|Les clients qui n’utilisent pas l’authentification moderne peuvent contourner des stratégies d’accès conditionnel, c’est pourquoi il est important de les bloquer.|
@@ -59,7 +59,7 @@ Pour vous donner le temps de réaliser ces tâches, nous vous recommandons de me
 |        |[Exiger les applications approuvées et la protection des applications](#require-approved-apps-and-app-protection)|Applique la protection des applications mobiles pour les téléphones et les tablettes à l’aide d’iOS, de iPados ou Android.|
 |        |[Définir les stratégies de conformité des appareils](#define-device-compliance-policies)|Une stratégie pour chaque plateforme.|
 |        |[Exiger des PC conformes](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Applique la gestion Intune des PC à l’aide de Windows ou de MacOS.|
-|**Sensible**|[Exiger l’authentification multifacteur lorsque le risque de connexion est *faible*, *moyen*ou *élevé*](#require-mfa-based-on-sign-in-risk)| |
+|**Sensible**|[Exiger l’authentification multifacteur lorsque le risque de connexion est *faible* , *moyen* ou *élevé*](#require-mfa-based-on-sign-in-risk)| |
 |         |[Exiger des PC conformes *et des* appareils mobiles](#require-compliant-pcs-and-mobile-devices)|Applique la gestion d’Intune pour les PC (Windows ou MacOS) et les téléphones ou tablettes (iOS, iPados ou Android).|
 |**Hautement réglementé**|[*Toujours* exiger l’authentification multifacteur](#require-mfa-based-on-sign-in-risk)|
 | | | |
@@ -100,7 +100,7 @@ Une fois que vous avez enregistré vos utilisateurs, vous pouvez exiger l’auth
 
 1. Accédez au [portail Azure](https://portal.azure.com) et connectez-vous avec vos informations d’identification.
 2. Dans la liste des services Azure, sélectionnez **Azure Active Directory**.
-3. Dans la liste **gérer** , choisissez **sécurité**, puis **accès conditionnel**.
+3. Dans la liste **gérer** , choisissez **sécurité** , puis **accès conditionnel**.
 4. Choisissez **nouvelle stratégie** et tapez le nom de la nouvelle stratégie.
 
 Le tableau suivant décrit les paramètres de stratégie d’accès conditionnel pour exiger la fonction MFA en fonction du risque de connexion.
@@ -109,9 +109,9 @@ Dans la section **affectations** :
 
 |Paramètres|Propriétés|Valeurs|Remarques|
 |:---|:---------|:-----|:----|
-|Utilisateurs et groupes|Inclure| **Sélectionnez utilisateurs et groupes > utilisateurs et groupes**: sélectionnez des groupes spécifiques contenant des comptes d’utilisateurs ciblés. |Commencez par le groupe qui inclut les comptes d’utilisateur pilote.|
-||Exclure| **Utilisateurs et groupes**: sélectionnez votre groupe d’exceptions d’accès conditionnel ; comptes de service (identités d’application).|L’appartenance doit être modifiée en fonction de vos besoins et de manière temporaire.|
-|Actions ou applications Cloud| **Les applications Cloud > incluent** | **Sélectionnez applications**: sélectionnez les applications auxquelles appliquer cette stratégie. Par exemple, sélectionnez Exchange Online.||
+|Utilisateurs et groupes|Inclure| **Sélectionnez utilisateurs et groupes > utilisateurs et groupes** : sélectionnez des groupes spécifiques contenant des comptes d’utilisateurs ciblés. |Commencez par le groupe qui inclut les comptes d’utilisateur pilote.|
+||Exclure| **Utilisateurs et groupes** : sélectionnez votre groupe d’exceptions d’accès conditionnel ; comptes de service (identités d’application).|L’appartenance doit être modifiée en fonction de vos besoins et de manière temporaire.|
+|Actions ou applications Cloud| **Les applications Cloud > incluent** | **Sélectionnez applications** : sélectionnez les applications auxquelles appliquer cette stratégie. Par exemple, sélectionnez Exchange Online.||
 |Conditions| | |Configurez les conditions propres à votre environnement et à vos besoins.|
 ||Risque de connexion||Consultez les conseils dans le tableau suivant.|
 |||||
@@ -138,7 +138,7 @@ Dans la section **contrôles d’accès** :
 
 Choisissez **Sélectionner** pour enregistrer les paramètres de **concession** .
 
-Enfin, sélectionnez **activé** pour **activer la stratégie**, puis **créer**.
+Enfin, sélectionnez **activé** pour **activer la stratégie** , puis **créer**.
 
 Vous pouvez également utiliser l’outil [What If](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) pour tester la stratégie.
 
@@ -152,9 +152,9 @@ Dans la section **affectations** :
 
 |Paramètres|Propriétés|Valeurs|Remarques|
 |:---|:---------|:-----|:----|
-|Utilisateurs et groupes|Inclure| **Sélectionnez utilisateurs et groupes > utilisateurs et groupes**: sélectionnez des groupes spécifiques contenant des comptes d’utilisateurs ciblés. |Commencez par le groupe qui inclut les comptes d’utilisateur pilote.|
-||Exclure| **Utilisateurs et groupes**: sélectionnez votre groupe d’exceptions d’accès conditionnel ; comptes de service (identités d’application).|L’appartenance doit être modifiée en fonction de vos besoins et de manière temporaire.|
-|Actions ou applications Cloud|**Les applications Cloud > incluent**| **Sélectionnez applications**: sélectionnez les applications correspondant aux clients qui ne prennent pas en charge l’authentification moderne.||
+|Utilisateurs et groupes|Inclure| **Sélectionnez utilisateurs et groupes > utilisateurs et groupes** : sélectionnez des groupes spécifiques contenant des comptes d’utilisateurs ciblés. |Commencez par le groupe qui inclut les comptes d’utilisateur pilote.|
+||Exclure| **Utilisateurs et groupes** : sélectionnez votre groupe d’exceptions d’accès conditionnel ; comptes de service (identités d’application).|L’appartenance doit être modifiée en fonction de vos besoins et de manière temporaire.|
+|Actions ou applications Cloud|**Les applications Cloud > incluent**| **Sélectionnez applications** : sélectionnez les applications correspondant aux clients qui ne prennent pas en charge l’authentification moderne.||
 |Conditions| **Applications clientes** | Choisissez **Oui** pour **configurer** <br> Désactivez les cases à cocher pour le **navigateur** et **les applications mobiles et les clients de bureau** | |
 ||||
 
@@ -168,7 +168,7 @@ Dans la section **contrôles d’accès** :
 
 Choisissez **Sélectionner** pour enregistrer les paramètres de **concession** .
 
-Enfin, sélectionnez **activé** pour **activer la stratégie**, puis **créer**.
+Enfin, sélectionnez **activé** pour **activer la stratégie** , puis **créer**.
 
 Envisagez d’utiliser l’outil [What If](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) pour tester la stratégie.
 
@@ -198,7 +198,7 @@ Dans la deuxième section **affectations** :
 
 Sélectionnez **Terminer** pour enregistrer les paramètres d' **accès** .
 
-Enfin, sélectionnez **activé** pour **appliquer la stratégie**, puis **Enregistrer**.
+Enfin, sélectionnez **activé** pour **appliquer la stratégie** , puis **Enregistrer**.
 
 Envisagez d’utiliser l’outil [What If](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) pour tester la stratégie.
 
@@ -218,7 +218,7 @@ Pour voir les recommandations spécifiques pour chaque niveau de configuration e
 
 À l’aide des principes décrits dans les [configurations d’identité et d’accès aux appareils](microsoft-365-policies-configurations.md), les niveaux de protection de base et sensibles sont mappés en étroite collaboration avec les paramètres de protection avancée des données de niveau 2 entreprise. Le niveau de protection hautement réglementé est étroitement associé aux paramètres de protection des données élevés de niveau 3.
 
-|Niveau de protection |Stratégie de protection des applications  |Informations supplémentaires  |
+|Niveau de protection |Stratégie de protection des applications  |Plus d’informations  |
 |---------|---------|---------|
 |Baseline     | [Niveau 2 protection des données améliorée](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)        | Les paramètres de stratégie appliqués au niveau 2 incluent tous les paramètres de stratégie recommandés pour le niveau 1 et ajoutent ou met à jour uniquement les paramètres de stratégie ci-dessous pour implémenter davantage de contrôles et une configuration plus sophistiquée que le niveau 1.         |
 |Sensible     | [Niveau 2 protection des données améliorée](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)        | Les paramètres de stratégie appliqués au niveau 2 incluent tous les paramètres de stratégie recommandés pour le niveau 1 et ajoutent ou met à jour uniquement les paramètres de stratégie ci-dessous pour implémenter davantage de contrôles et une configuration plus sophistiquée que le niveau 1.        |
@@ -282,9 +282,9 @@ Pour obtenir des instructions pas à pas sur la création de stratégies de conf
 
 ### <a name="recommended-settings-for-windows-10-and-later"></a>Paramètres recommandés pour Windows 10 et versions ultérieures
 
-Les paramètres suivants sont recommandés pour les PC exécutant Windows 10 et versions ultérieures, comme configuré à l' **étape 2 : paramètres de conformité**, du processus de création de la stratégie.
+Les paramètres suivants sont recommandés pour les PC exécutant Windows 10 et versions ultérieures, comme configuré à l' **étape 2 : paramètres de conformité** , du processus de création de la stratégie.
 
-Pour l’intégrité de l' **appareil > les règles d’évaluation du service d’attestation d’intégrité Windows**, consultez ce tableau.
+Pour l’intégrité de l' **appareil > les règles d’évaluation du service d’attestation d’intégrité Windows** , consultez ce tableau.
 
 |Propriétés|Valeur|Action|
 |:---------|:-----|:----|
@@ -293,11 +293,11 @@ Pour l’intégrité de l' **appareil > les règles d’évaluation du service d
 |Exiger l’intégrité du code|Require (Rendre obligatoire)| Sélectionner |
 ||||
 
-Pour les **Propriétés du périphérique**, spécifiez les valeurs appropriées pour les versions du système d’exploitation en fonction de vos stratégies de sécurité et informatique.
+Pour les **Propriétés du périphérique** , spécifiez les valeurs appropriées pour les versions du système d’exploitation en fonction de vos stratégies de sécurité et informatique.
 
-Pour **la conformité de Configuration Manager**, sélectionnez **exiger**.
+Pour **la conformité de Configuration Manager** , sélectionnez **exiger**.
 
-Pour la **sécurité du système**, reportez-vous à ce tableau.
+Pour la **sécurité du système** , reportez-vous à ce tableau.
 
 |Type|Propriétés|Valeur|Action|
 |:---|:---------|:-----|:----|
@@ -319,11 +319,11 @@ Pour la **sécurité du système**, reportez-vous à ce tableau.
 ||Protection en temps réel|Require (Rendre obligatoire)|Sélectionner <br>Prise en charge uniquement pour les ordinateurs de bureau Windows 10|
 |||||
 
-**Microsoft Defender - PACM**
+**Microsoft Defender pour point de terminaison**
 
 |Type|Propriétés|Valeur|Action|
 |:---|:---------|:-----|:----|
-|Règles de protection avancée contre les menaces Microsoft Defender|Exiger que l’appareil soit au ou sous le score de risque machine|Moyen|Sélectionner|
+|Microsoft Defender pour les règles de point de terminaison|Exiger que l’appareil soit au ou sous le score de risque machine|Moyen|Sélectionner|
 |||||
 
 ## <a name="require-compliant-pcs-but-not-compliant-phones-and-tablets"></a>Exiger des PC conformes (mais pas les téléphones et les tablettes conformes)
@@ -334,22 +334,22 @@ Pour exiger des PC conformes :
 
 1. Accédez au [portail Azure](https://portal.azure.com) et connectez-vous avec vos informations d’identification.
 2. Dans la liste des services Azure, sélectionnez **Azure Active Directory**.
-3. Dans la liste **gérer** , choisissez **sécurité**, puis **accès conditionnel**.
+3. Dans la liste **gérer** , choisissez **sécurité** , puis **accès conditionnel**.
 4. Choisissez **nouvelle stratégie** et tapez le nom de la nouvelle stratégie.
 
-5. Sous **affectations**, choisissez **utilisateurs et groupes** et indiquez les personnes auxquelles la stratégie doit s’appliquer. Excluez également votre groupe d’exclusion d’accès conditionnel.
+5. Sous **affectations** , choisissez **utilisateurs et groupes** et indiquez les personnes auxquelles la stratégie doit s’appliquer. Excluez également votre groupe d’exclusion d’accès conditionnel.
 
-6. Sous **affectations**, sélectionnez **applications ou actions Cloud**.
+6. Sous **affectations** , sélectionnez **applications ou actions Cloud**.
 
-7. Pour **inclure**, choisissez **sélectionner les applications > sélectionnez**, puis sélectionnez les applications souhaitées dans la liste **applications Cloud** . Par exemple, sélectionnez Exchange Online. Choisissez **Sélectionner** lorsque vous avez fini.
+7. Pour **inclure** , choisissez **sélectionner les applications > sélectionnez** , puis sélectionnez les applications souhaitées dans la liste **applications Cloud** . Par exemple, sélectionnez Exchange Online. Choisissez **Sélectionner** lorsque vous avez fini.
 
-8. Pour exiger des PC conformes (mais pas les téléphones et les tablettes conformes), sous **affectations**, choisissez **conditions > plateformes d’appareils**. Sélectionnez **Oui** pour **configurer**. Sélectionnez  **Sélectionner les plateformes**de l’appareil, sélectionnez **Windows** et **MacOS**, puis sélectionnez **OK**.
+8. Pour exiger des PC conformes (mais pas les téléphones et les tablettes conformes), sous **affectations** , choisissez **conditions > plateformes d’appareils**. Sélectionnez **Oui** pour **configurer**. Sélectionnez  **Sélectionner les plateformes** de l’appareil, sélectionnez **Windows** et **MacOS** , puis sélectionnez **OK**.
 
-9. Sous **contrôles d’accès**, sélectionnez **accorder** .
+9. Sous **contrôles d’accès** , sélectionnez **accorder** .
 
 10. Sélectionnez **accorder l’accès** , puis vérifiez **que l’option exiger le périphérique est marquée comme conforme**. Pour plusieurs contrôles, sélectionnez **l’option exiger tous les contrôles sélectionnés**. Lorsque vous avez terminé, choisissez **Sélectionner**. 
 
-10. Sélectionnez **activé** pour **activer la stratégie**, puis **créer**.
+10. Sélectionnez **activé** pour **activer la stratégie** , puis **créer**.
 
 >[!Note]
 >Assurez-vous que votre appareil est conforme avant d’activer cette stratégie. Dans le cas contraire, vous pourriez être verrouillé et ne pourrez pas modifier cette stratégie tant que votre compte d’utilisateur n’a pas été ajouté au groupe d’exclusion d’accès conditionnel.
@@ -361,20 +361,20 @@ Pour exiger la conformité de tous les périphériques, procédez comme suit :
 
 1. Accédez au [portail Azure](https://portal.azure.com) et connectez-vous avec vos informations d’identification.
 2. Dans la liste des services Azure, sélectionnez **Azure Active Directory**.
-3. Dans la liste **gérer** , choisissez **sécurité**, puis **accès conditionnel**.
+3. Dans la liste **gérer** , choisissez **sécurité** , puis **accès conditionnel**.
 4. Choisissez **nouvelle stratégie** et tapez le nom de la nouvelle stratégie.
 
-5. Sous **affectations**, choisissez **utilisateurs et groupes** et indiquez les personnes auxquelles la stratégie doit s’appliquer. Excluez également votre groupe d’exclusion d’accès conditionnel.
+5. Sous **affectations** , choisissez **utilisateurs et groupes** et indiquez les personnes auxquelles la stratégie doit s’appliquer. Excluez également votre groupe d’exclusion d’accès conditionnel.
 
-6. Sous **affectations**, sélectionnez **applications ou actions Cloud**.
+6. Sous **affectations** , sélectionnez **applications ou actions Cloud**.
 
-7. Pour **inclure**, choisissez **sélectionner les applications > sélectionnez**, puis sélectionnez les applications souhaitées dans la liste **applications Cloud** . Par exemple, sélectionnez Exchange Online. Choisissez **Sélectionner** lorsque vous avez fini.
+7. Pour **inclure** , choisissez **sélectionner les applications > sélectionnez** , puis sélectionnez les applications souhaitées dans la liste **applications Cloud** . Par exemple, sélectionnez Exchange Online. Choisissez **Sélectionner** lorsque vous avez fini.
 
-8. Sous **contrôles d’accès**, sélectionnez **accorder** .
+8. Sous **contrôles d’accès** , sélectionnez **accorder** .
 
 9. Sélectionnez **accorder l’accès** , puis vérifiez **que l’option exiger le périphérique est marquée comme conforme**. Pour plusieurs contrôles, sélectionnez **l’option exiger tous les contrôles sélectionnés**. Lorsque vous avez terminé, choisissez **Sélectionner**. 
 
-10. Sélectionnez **activé** pour **activer la stratégie**, puis **créer**.
+10. Sélectionnez **activé** pour **activer la stratégie** , puis **créer**.
 
 >[!Note]
 >Assurez-vous que votre appareil est conforme avant d’activer cette stratégie. Dans le cas contraire, vous pourriez être verrouillé et ne pourrez pas modifier cette stratégie tant que votre compte d’utilisateur n’a pas été ajouté au groupe d’exclusion d’accès conditionnel.

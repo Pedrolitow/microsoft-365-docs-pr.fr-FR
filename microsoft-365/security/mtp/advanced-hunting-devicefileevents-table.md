@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 21b8832010cab30f1834c4c6a94b4542c3b2b6a7
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: f63328992af95562688e644f68b8151eb09b9e0f
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430090"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846147"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 
@@ -32,7 +32,7 @@ ms.locfileid: "48430090"
 
 
 **S’applique à :**
-- Protection Microsoft contre les menaces
+- Microsoft 365 Defender
 
 Le `DeviceFileEvents` tableau du schéma de [chasse avancé](advanced-hunting-overview.md) contient des informations sur la création de fichiers, la modification et d’autres événements de système de fichiers. Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
 

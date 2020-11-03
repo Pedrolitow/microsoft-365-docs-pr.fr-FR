@@ -25,34 +25,34 @@ search.appverid:
 - ZPP160
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
-description: Dans cet article, les administrateurs peuvent en savoir plus sur la protection des liens fiables dans Office 365 Advanced Threat Protection (ATP) pour protéger leur organisation contre le hameçonnage et les autres attaques qui utilisent des URL malveillantes.
-ms.openlocfilehash: 45936cabf012c5f40080f3bbfee224aec9593d30
-ms.sourcegitcommit: 04a43a146cb62a10b1a4555ec3bed49eb08fbb99
+description: Dans cet article, les administrateurs peuvent en savoir plus sur la protection des liens fiables dans Defender pour Office 365 afin de protéger leur organisation contre le hameçonnage et les autres attaques qui utilisent des URL malveillantes.
+ms.openlocfilehash: 869cb2f330b81481a2a0a013564853274654d0ef
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48806725"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846055"
 ---
-# <a name="safe-links-in-office-365-atp"></a>Liens approuvés dans Office 365 Protection avancée contre les menaces
+# <a name="safe-links-in-microsoft-defender-for-office-365"></a>Liens fiables dans Microsoft Defender pour Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 > [!IMPORTANT]
-> Cet article est destiné aux clients professionnels qui disposent d' [Office 365 Advanced Threat Protection (ATP)](office-365-atp.md). Si vous utilisez Outlook.com, la famille Microsoft 365 ou Microsoft 365 personnel, et que vous recherchez des informations sur Safelinks dans Outlook, consultez la rubrique [Advanced Outlook.com Security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Cet article est destiné aux clients professionnels qui disposent [de Microsoft Defender pour Office 365](office-365-atp.md). Si vous utilisez Outlook.com, la famille Microsoft 365 ou Microsoft 365 personnel, et que vous recherchez des informations sur Safelinks dans Outlook, consultez la rubrique [Advanced Outlook.com Security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-La fonctionnalité liens fiables est une fonctionnalité d' [Office 365 protection avancée contre les menaces](office-365-atp.md) qui permet l’analyse des URL et la réécriture des messages électroniques entrants dans le flux de messagerie et la vérification des URL et des liens dans les messages électroniques et les autres emplacements. L’analyse des liens fiables se produit en plus de la protection anti- [courrier indésirable et anti-programme malveillant](anti-spam-and-anti-malware-protection.md) dans les messages électroniques entrants dans Exchange Online Protection (EoP). L’analyse des liens fiables permet de protéger votre organisation contre les liens malveillants utilisés dans le hameçonnage et les autres attaques.
+La fonctionnalité liens fiables est une fonctionnalité de [Defender pour Office 365](office-365-atp.md) qui permet l’analyse des URL et la réécriture des messages électroniques entrants dans le flux de messagerie et la vérification des URL et des liens dans les messages électroniques et les autres emplacements. L’analyse des liens fiables se produit en plus de la protection anti- [courrier indésirable et anti-programme malveillant](anti-spam-and-anti-malware-protection.md) dans les messages électroniques entrants dans Exchange Online Protection (EoP). L’analyse des liens fiables permet de protéger votre organisation contre les liens malveillants utilisés dans le hameçonnage et les autres attaques.
 
 La protection des liens fiables est disponible aux emplacements suivants :
 
-- **Messages électroniques** : la protection des liens fiables pour les liens dans les messages électroniques est contrôlée par les stratégies de liens fiables. Il n’existe pas de stratégie de liens approuvés par défaut, pour **obtenir la protection des liens fiables dans les messages électroniques, vous devez créer une ou plusieurs stratégies de liens fiables** . Pour obtenir des instructions, voir [configurer des stratégies de liens fiables dans la protection](set-up-atp-safe-links-policies.md)avancée contre les menaces.
+- **Messages électroniques** : la protection des liens fiables pour les liens dans les messages électroniques est contrôlée par les stratégies de liens fiables. Il n’existe pas de stratégie de liens approuvés par défaut, pour **obtenir la protection des liens fiables dans les messages électroniques, vous devez créer une ou plusieurs stratégies de liens fiables**. Pour obtenir des instructions, reportez-vous à la rubrique [configurer des stratégies de liens fiables dans Microsoft Defender pour Office 365](set-up-atp-safe-links-policies.md).
 
   Pour plus d’informations sur la protection des liens fiables pour les messages électroniques, voir la section [paramètres de liens fiables pour les messages électroniques](#safe-links-settings-for-email-messages) plus loin dans cet article.
 
-- **Microsoft teams** (actuellement en mode Aperçu) : la protection des liens fiables pour les liens dans les conversations de teams, les conversations de groupe ou les canaux est également contrôlée par les stratégies de liens fiables. Il n’existe pas de stratégie de liens approuvés par défaut, pour **obtenir la protection des liens fiables dans Teams, vous devez créer une ou plusieurs stratégies de liens fiables** .
+- **Microsoft teams** (actuellement en mode Aperçu) : la protection des liens fiables pour les liens dans les conversations de teams, les conversations de groupe ou les canaux est également contrôlée par les stratégies de liens fiables. Il n’existe pas de stratégie de liens approuvés par défaut, pour **obtenir la protection des liens fiables dans Teams, vous devez créer une ou plusieurs stratégies de liens fiables**.
 
   Pour plus d’informations sur la protection des liens fiables dans Teams, consultez la section [paramètres de liens approuvés pour Microsoft teams](#safe-links-settings-for-microsoft-teams) plus loin dans cette rubrique.
 
-- **Applications office 365** : la protection des liens fiables pour les applications Office 365 est disponible dans les APS de bureau, mobiles et Web pris en charge. Vous **configurez** la protection des liens fiables pour les applications Office 365 dans le paramètre global qui se trouvent **en dehors** des stratégies de liens fiables. Pour obtenir des instructions, consultez la rubrique [configure Global Settings for Safe Links Settings in Office 365 ATP](configure-global-settings-for-safe-links.md).
+- **Applications office 365** : la protection des liens fiables pour les applications Office 365 est disponible dans les APS de bureau, mobiles et Web pris en charge. Vous **configurez** la protection des liens fiables pour les applications Office 365 dans le paramètre global qui se trouvent **en dehors** des stratégies de liens fiables. Pour obtenir des instructions, consultez la rubrique [configure Global Settings for Safe Links Settings in Microsoft Defender for Office 365](configure-global-settings-for-safe-links.md).
 
   Toutefois, la protection des liens fiables pour les applications Office 365 s' **applique** uniquement aux utilisateurs qui sont inclus dans les stratégies de liens fiables actifs. Si un utilisateur n’est pas inclus dans une stratégie de liens fiables active, il n’obtient pas de protection de liens fiables dans les applications Office 365 prises en charge.
 
@@ -71,7 +71,7 @@ Cet article décrit en détail les types de paramètres de liens fiables suivant
   - [Paramètres de liens fiables pour les applications Office 365](#safe-links-settings-for-office-365-apps)
   - [Liste « bloquer les URL suivantes » pour les liens fiables](#block-the-following-urls-list-for-safe-links)
 
-Le tableau suivant décrit les scénarios de liens fiables dans les organisations Microsoft 365 et Office 365 qui incluent ATP (en d’autres termes, le manque de licence n’est jamais un problème dans les exemples).
+Le tableau suivant décrit les scénarios de liens fiables dans les organisations Microsoft 365 et Office 365 qui incluent Defender pour Office 365 (en d’autres termes, le manque de licence n’est jamais un problème dans les exemples).
 
 ****
 
@@ -91,7 +91,7 @@ Une fois que les liens fiables réécritnt une URL, l’URL reste réécrite, m�
 
 Les paramètres des stratégies de liens fiables qui s’appliquent aux messages électroniques sont décrits dans la liste suivante :
 
-- **Sélectionnez l’action pour les URL potentiellement malveillantes dans les messages** : active ou désactive l’analyse des liens fiables dans les messages électroniques. La valeur recommandée est **activé** . L’activation de ce paramètre entraîne les actions suivantes.
+- **Sélectionnez l’action pour les URL potentiellement malveillantes dans les messages** : active ou désactive l’analyse des liens fiables dans les messages électroniques. La valeur recommandée est **activé**. L’activation de ce paramètre entraîne les actions suivantes.
 
   - L’analyse des liens fiables est activée dans Outlook (C2R) sur Windows.
   - Les URL sont réécrites et les utilisateurs sont acheminés via la protection des liens fiables lorsqu’ils cliquent sur les URL dans les messages.
@@ -152,7 +152,7 @@ Pour plus d’informations sur les valeurs recommandées pour les paramètres de
 > [!IMPORTANT]
 > Depuis le 2020 mars, cette fonctionnalité est en aperçu et n’est accessible qu’aux membres du programme Microsoft teams adoption de la technologie (TAP). Pour plus d’informations sur le calendrier des publications, consultez la feuille de [route Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?rtc=1&filters=&searchterms=Safe%2CLinks%2CProtection%2Cfor%2CMicrosoft%2CTeams).
 
-Vous activez ou désactivez la protection des liens fiables pour Microsoft teams dans stratégies de liens fiables. Plus précisément, vous utilisez le paramètre **Sélectionner l’action pour les URL inconnues ou potentiellement malveillantes dans Microsoft teams** . La valeur recommandée est **activé** .
+Vous activez ou désactivez la protection des liens fiables pour Microsoft teams dans stratégies de liens fiables. Plus précisément, vous utilisez le paramètre **Sélectionner l’action pour les URL inconnues ou potentiellement malveillantes dans Microsoft teams** . La valeur recommandée est **activé**.
 
 Les paramètres suivants des stratégies de liens fiables qui s’appliquent aux liens dans les messages électroniques s’appliquent également aux liens dans teams :
 
@@ -180,7 +180,7 @@ Si vous cliquez sur le bouton **revenir** sur la page d’avertissement, l’uti
 
 1. Un utilisateur démarre l’application Teams.
 
-2. Microsoft 365 vérifie que l’organisation de l’utilisateur comprend Office 365 ATP, et que l’utilisateur est inclus dans une stratégie de liens approuvés active où la protection de Microsoft teams est activée.
+2. Microsoft 365 vérifie que l’organisation de l’utilisateur inclut Microsoft Defender pour Office 365, et que l’utilisateur est inclus dans une stratégie de liens approuvés active où la protection de Microsoft teams est activée.
 
 3. Les URL sont validées au moment où l’utilisateur clique sur les conversations, les conversations de groupe, les canaux et les onglets.
 
@@ -204,11 +204,11 @@ Vous configurez la protection des liens fiables pour les applications Office 365
 
 Les paramètres de liens approuvés suivants sont disponibles pour les applications Office 365 :
 
-- **Applications office 365** : active ou désactive l’analyse des liens fiables dans les applications Office 365 prises en charge. La valeur par défaut et recommandée est **activé** .
+- **Applications office 365** : active ou désactive l’analyse des liens fiables dans les applications Office 365 prises en charge. La valeur par défaut et recommandée est **activé**.
 
 - **Ne pas suivre lorsque les utilisateurs cliquent sur les liens fiables** : active ou désactive le stockage de liens fiables cliquez sur données pour les URL sur lesquelles l’utilisateur clique dans la version de bureau Word, Excel, PowerPoint et Visio. La valeur recommandée est **off** , ce qui signifie que les clics utilisateur sont suivis.
 
-- **Ne pas autoriser les utilisateurs à cliquer sur les liens fiables vers l’URL d’origine** : autorise ou empêche les utilisateurs de cliquer sur la [page d’avertissement](#warning-pages-from-safe-links) à l’URL d’origine dans les versions de bureau Word, Excel, PowerPoint et Visio. La valeur par défaut et recommandée est **activé** .
+- **Ne pas autoriser les utilisateurs à cliquer sur les liens fiables vers l’URL d’origine** : autorise ou empêche les utilisateurs de cliquer sur la [page d’avertissement](#warning-pages-from-safe-links) à l’URL d’origine dans les versions de bureau Word, Excel, PowerPoint et Visio. La valeur par défaut et recommandée est **activé**.
 
 Pour configurer les paramètres de liens approuvés pour les applications Office 365, voir [configurer la protection des liens fiables pour les applications office 365](configure-global-settings-for-safe-links.md#configure-safe-links-protection-for-office-365-apps-in-the-security--compliance-center).
 

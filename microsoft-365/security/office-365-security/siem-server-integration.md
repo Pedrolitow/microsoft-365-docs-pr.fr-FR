@@ -17,12 +17,12 @@ ms.custom:
 - SIEM
 - seo-marvel-apr2020
 description: Obtenir une vue d’ensemble de l’intégration du serveur des informations de sécurité et de la gestion des événements (SIEM) à vos applications et services Cloud Microsoft 365
-ms.openlocfilehash: 6d657990417cab2a8cbb1b03b8b79a65c095d1a5
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 0e582333615d11c500b114225435903cea386ade
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202204"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846399"
 ---
 # <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>Intégration du serveur de gestion des événements et des informations de sécurité (SIEM) aux services et applications Microsoft 365
 
@@ -52,13 +52,13 @@ Un serveur SIEM peut recevoir des données à partir d’un large éventail de s
 
 |Service ou application Microsoft 365|Entrées/méthodes du serveur SIEM|Ressources pour en savoir plus|
 |---|---|---|
-|[Protection avancée contre les menaces dans Office 365](office-365-atp.md)|Journaux d'audit|[Intégration SIEM avec Office 365 protection avancée contre les menaces](siem-integration-with-office-365-ti.md)|
-|[Microsoft Defender – Protection avancée contre les menaces](https://docs.microsoft.com/windows/security/threat-protection/)|Point de terminaison HTTPs hébergé dans Azure <br/>API REST|[Attirez les alertes sur vos outils SIEM](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem)|
+|[Microsoft Defender pour Office 365](office-365-atp.md)|Journaux d'audit|[Intégration SIEM à Microsoft Defender pour Office 365](siem-integration-with-office-365-ti.md)|
+|[Microsoft Defender pour point de terminaison](https://docs.microsoft.com/windows/security/threat-protection/)|Point de terminaison HTTPs hébergé dans Azure <br/>API REST|[Attirez les alertes sur vos outils SIEM](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem)|
 |[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|Intégration des journaux|[Intégration SIEM à la sécurité des applications Cloud Microsoft](https://docs.microsoft.com/cloud-app-security/siem)|
 |
 
 > [!TIP]
-> Jetez un œil à [Azure Sentinel](https://docs.microsoft.com/azure/sentinel/overview). Azure sentinelle inclut des connecteurs pour les solutions Microsoft. Ces connecteurs sont disponibles « en l’absence de » et permettent une intégration en temps réel. Vous pouvez utiliser Azure Sentinel avec vos solutions de protection contre les menaces Microsoft et les services Microsoft 365, notamment Office 365, Azure AD, Azure ATP, sécurité des applications Cloud Microsoft, et bien plus encore.
+> Jetez un œil à [Azure Sentinel](https://docs.microsoft.com/azure/sentinel/overview). Azure sentinelle inclut des connecteurs pour les solutions Microsoft. Ces connecteurs sont disponibles « en l’absence de » et permettent une intégration en temps réel. Vous pouvez utiliser Azure Sentinel avec vos solutions Microsoft 365 Defender et Microsoft 365 services, notamment Office 365, Azure AD, Microsoft Defender for Identity, Microsoft Cloud App Security, et bien plus encore.
 
 ### <a name="audit-logging-must-be-turned-on"></a>La journalisation d’audit doit être activée.
 
@@ -70,6 +70,6 @@ Assurez-vous que la journalisation d’audit est activée avant de configurer l�
 
 ## <a name="more-resources"></a>Autres ressources
 
-[Intégrer des solutions de sécurité dans Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-partner-integration#exporting-data-to-a-siem)
+[Intégrer des solutions de sécurité dans Azure Defender *](https://docs.microsoft.com/azure/security-center/security-center-partner-integration#exporting-data-to-a-siem)
 
 [Intégrer les alertes de l’API de sécurité Microsoft Graph avec des technologies SIEM](https://docs.microsoft.com/graph/security-integration)

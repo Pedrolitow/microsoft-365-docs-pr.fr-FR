@@ -1,7 +1,7 @@
 ---
 title: Configuration des appareils
 description: Découvrez les stratégies par défaut appliquées aux appareils de bureau gérés par Microsoft.
-keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: a76bae70adeb07d9ea0574a25bac14f89a0a790d
-ms.sourcegitcommit: 61d7284b412d0f7bbd8bbb2225c2e6324f86b717
+ms.openlocfilehash: 5533284d4a3f55a51b3017a64e4c353b4ec71352
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "48262216"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846227"
 ---
 # <a name="device-configuration"></a>Configuration des appareils
 
@@ -53,5 +53,5 @@ Connexions limitées | Par défaut, les mises à jour sur les connexions limité
  ### <a name="additional-security-policies"></a>Stratégies de sécurité supplémentaires
 
  Ces stratégies sont ajoutées pour renforcer la sécurité des industries hautement réglementées. 
- - **Surveillance**de la sécurité : Microsoft surveille les appareils à l’aide de [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection). Si une menace est détectée, Microsoft avertit le client, isole l’appareil et corrige le problème à distance. 
- - **Désactiver PowerShell v2**: Microsoft a supprimé PowerShell V2 en août 2017. Cette fonctionnalité a été désactivée sur tous les appareils de bureau gérés par Microsoft. Pour plus d’informations sur ce changement, voir [Windows PowerShell 2,0 Deconseilléion](https://devblogs.microsoft.com/powershell/windows-powershell-2-0-deprecation/).
+ - **Surveillance** de la sécurité : Microsoft surveille les appareils à l’aide [de Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection). Si une menace est détectée, Microsoft avertit le client, isole l’appareil et corrige le problème à distance. 
+ - **Désactiver PowerShell v2** : Microsoft a supprimé PowerShell V2 en août 2017. Cette fonctionnalité a été désactivée sur tous les appareils de bureau gérés par Microsoft. Pour plus d’informations sur ce changement, voir [Windows PowerShell 2,0 Deconseilléion](https://devblogs.microsoft.com/powershell/windows-powershell-2-0-deprecation/).

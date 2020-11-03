@@ -1,19 +1,19 @@
 ---
 title: Technologies de sécurité dans le bureau géré Microsoft
 description: ''
-keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 1e50b07208df46b199aada9c2ccbe04cc1c1ae72
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: e69656e13cd9a300cd56bdd5db7703f2387d23d4
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289482"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846203"
 ---
 # <a name="security-technologies-in-microsoft-managed-desktop"></a>Technologies de sécurité dans le bureau géré Microsoft
 
@@ -39,7 +39,7 @@ Service | Description
 --- | ---
 Antivirus | Microsoft Defender AV est installé et configuré<br>Les définitions d’antivirus Microsoft Defender sont à jour
 Chiffrement de volume complet |    Windows BitLocker est la solution de chiffrement de volume pour les appareils de bureau gérés par Microsoft.<br><br>Une fois qu’une organisation est intégrée au service, les appareils sont chiffrés à l’aide de Windows BitLocker avec le module de plateforme d’approbation intégré (TPM) pour empêcher l’accès non autorisé aux données locales lorsque l’appareil est en mode veille ou inversement. 
-Surveillance |    Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) est utilisé pour la surveillance des menaces de sécurité sur tous les appareils de bureau gérés par Microsoft. Microsoft Defender ATP permet aux clients d’entreprise de détecter, d’examiner et de répondre aux menaces avancées dans leur réseau d’entreprise. Pour plus d’informations, consultez la rubrique [Microsoft Defender Advanced Threat Protection.](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) 
+Surveillance |    Microsoft Defender for Endpoint est utilisé pour la surveillance des menaces de sécurité sur tous les appareils de bureau gérés par Microsoft. Defender for Endpoint permet aux clients d’entreprise de détecter, d’examiner et de répondre aux menaces avancées dans leur réseau d’entreprise. Pour plus d’informations, reportez-vous à [Microsoft Defender for Endpoint.](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) 
 Mises à jour du système d’exploitation |  Les périphériques de bureau gérés Microsoft sont toujours sécurisés avec les dernières mises à jour de sécurité.
 Configuration d’appareil sécurisée |   Microsoft Managed Desktop implémente la base de sécurité Microsoft. Pour plus d’informations, consultez la rubrique [Windows Security baselines.](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines)
 

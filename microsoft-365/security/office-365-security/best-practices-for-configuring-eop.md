@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Suivez ces recommandations sur les meilleures pratiques pour la protection autonome d’Exchange Online Protection (EOP) afin de vous configurer pour réussir et éviter les erreurs de configuration courantes.
-ms.openlocfilehash: b734fe87b82c243531944bbd9cf53d22d5b42f53
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: abf68e361293b2a55cd0a382cc376cbfe21236e7
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48414033"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845947"
 ---
 # <a name="best-practices-for-configuring-standalone-eop"></a>Meilleures pratiques pour la configuration d’EOP autonome
 
@@ -35,7 +35,7 @@ Si votre organisation dispose de comptes d’utilisateur existants dans un envir
 
 ## <a name="recommended-settings"></a>Paramètres recommandés
 
-Nous habilitons les administrateurs de sécurité à personnaliser leurs paramètres de sécurité afin de répondre aux besoins de leur organisation. Même si, en règle générale, il existe deux niveaux de sécurité dans EOP et Office 365 ATP, qui nous sont recommandés : standard et strict. Ces paramètres sont répertoriés dans la [section Paramètres recommandés pour la sécurité de l’ATP et d’Office 365](recommended-settings-for-eop-and-office365-atp.md).
+Nous habilitons les administrateurs de sécurité à personnaliser leurs paramètres de sécurité afin de répondre aux besoins de leur organisation. Bien que, en règle générale, il existe deux niveaux de sécurité dans EOP et Microsoft Defender pour Office 365 que nous recommandons : standard et strict. Ces paramètres sont répertoriés dans la [section Paramètres recommandés pour EOP et Microsoft Defender pour Office 365 Security](recommended-settings-for-eop-and-office365-atp.md).
 
 ### <a name="miscellaneousnon-policy-settings"></a>Paramètres divers/non de stratégie
 
