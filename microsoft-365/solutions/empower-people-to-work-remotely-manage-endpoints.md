@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Utilisez Microsoft Endpoint Manager pour gérer vos appareils de gestion, PC et autres points de terminaison.
-ms.openlocfilehash: 72aa26c50f5d3c20409382f19d8beabb5d290023
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: 291c1111bbfaf9a549c0d2ac22dab450a32a6a96
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681479"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845263"
 ---
 # <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>Étape 4. Déployer la gestion des points de terminaison pour vos appareils, PC et autres points de terminaison
 
@@ -44,7 +44,7 @@ Si vous souhaitez en savoir plus, consultez la page [Présentation de Microsoft 
 
 ## <a name="configuration-manager"></a>Configuration Manager
 
-Configuration Manager est une solution de gestion locale qui vous permet de gérer les ordinateurs de bureau, les serveurs et les ordinateurs portables qui se trouvent sur votre réseau ou sur Internet. Utilisez Configuration Manager pour déployer des applications, des mises à jour logicielles et des systèmes d’exploitation. Vous pouvez également surveiller la conformité, interroger et agir sur les clients en temps réel, et bien plus encore. Vous pouvez l’activer dans le cloud pour l’intégrer à Intune, Azure AD, Microsoft Defender - Protection avancée contre les menaces, et d’autres services cloud. 
+Configuration Manager est une solution de gestion locale qui vous permet de gérer les ordinateurs de bureau, les serveurs et les ordinateurs portables qui se trouvent sur votre réseau ou sur Internet. Utilisez Configuration Manager pour déployer des applications, des mises à jour logicielles et des systèmes d’exploitation. Vous pouvez également surveiller la conformité, interroger et agir sur les clients en temps réel, et bien plus encore. Vous pouvez l’activer dans le cloud pour l’intégrer à Intune, Azure AD, Microsoft Defender pour point de terminaison et d’autres services cloud. 
 
 Si vous souhaitez en savoir plus, consultez la page [Présentation de Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/understand/introduction).
 

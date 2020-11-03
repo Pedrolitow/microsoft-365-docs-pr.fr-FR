@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2c9f0a97869f27cbcf5829a15f50bf2905472c28
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 547d79093b65fba37a020781fbfce938d122c943
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398483"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846376"
 ---
 # <a name="information-protection-for-gdpr-with-microsoft-365-capabilities"></a>Protection des informations concernant le RGPD avec les fonctionnalités Microsoft 365
 
@@ -57,8 +57,8 @@ Microsoft propose une configuration recommandée que vous pouvez utiliser comme 
 La protection contre les menaces est intégrée aux services Microsoft 365. Voici quelques ressources pour vous aider à démarrer :
 
 - [Feuille de route sur la sécurité Office 365 : principales priorités pour les 30 premiers jours, 90 premiers jours et au-delà](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap). Cette feuille de route comprend des recommandations pour l’implémentation des fonctionnalités. 
-- [Protégez-vous contre les menaces dans Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats). Découvrez les mesures de protection que vous pouvez prendre dans le Centre de sécurité Microsoft 365.
-- [Protection contre les menaces Windows](https://docs.microsoft.com/windows/security/threat-protection/). En savoir plus sur Windows Defender - Protection avancée contre les menaces et d’autres fonctionnalités dans Windows 10.
+- [Protégez-vous contre les menaces dans Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats). Découvrez les mesures de protection que vous pouvez prendre dans le Centre de sécurité Microsoft 365.
+- [Microsoft Defender pour point de terminaison](https://docs.microsoft.com/windows/security/threat-protection/). En savoir plus sur Microsoft Defender pour point de terminaison et d’autres fonctionnalités dans Windows 10.
 
 ## <a name="learn-more"></a>En savoir plus
 

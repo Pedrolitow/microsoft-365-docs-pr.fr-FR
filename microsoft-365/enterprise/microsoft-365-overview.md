@@ -13,12 +13,12 @@ localization_priority: Priority
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Fournit une présentation des composants, des plans et des chemins de déploiement pour Microsoft 365 pour entreprise.
-ms.openlocfilehash: 0cee9752ae21e08831b6a3df856452a7ca6aec71
-ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
+ms.openlocfilehash: 0916fa97daec166a7bae8b19e3c9efbd693f4874
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48655970"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846963"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Vue d’ensemble de Microsoft 365 pour entreprise
 
@@ -44,7 +44,7 @@ Microsoft 365 pour entreprise est disponible en trois plans.
 |Nom du plan|Fonctionnalités|
 |---|---|
 |E3|Accédez aux produits et fonctionnalités de base de Microsoft 365 pour améliorer en toute sécurité la productivité sur le lieu de travail et stimuler l'innovation.|
-|E5|Accédez aux derniers produits et fonctionnalités de Microsoft 365. Il s'agit notamment de la protection avancée contre les menaces, des outils de sécurité et des outils de collaboration. Ce plan comprend toutes les capacités de l'E3, plus des outils avancés de sécurité, de voix et d'analyse des données.|
+|E5|Accédez aux derniers produits et fonctionnalités de Microsoft 365. Il s'agit notamment de Defender pour Office 365, des outils de sécurité et des outils de collaboration. Ce plan comprend toutes les capacités de l'E3, plus des outils avancés de sécurité, de voix et d'analyse des données.|
 |F3|Entrez en contact avec vos travailleurs de première ligne grâce à des outils et des ressources spécialement conçus pour les aider à faire leur meilleur travail.|
 |||
 
@@ -85,7 +85,7 @@ Cette affiche de deux pages est un moyen rapide d'inventorier vos infrastructure
 
 [Windows 7](https://aka.ms/win7upgrade) a atteint la fin du support le **14 janvier 2020**.
 
-Ces produits ont atteint à la fin du support le **13 octobre 2020**:
+Ces produits ont atteint à la fin du support le **13 octobre 2020** :
 
 - [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)
 - [Exchange Server 2010](exchange-2010-end-of-support.md)

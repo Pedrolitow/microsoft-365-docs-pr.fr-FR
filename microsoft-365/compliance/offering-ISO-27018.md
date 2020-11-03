@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: a83bfef591c0e4baa2a24f0218999189dba7dba7
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 8e7dfcad68dc56e071072124c02c7e1346ddcde8
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208286"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843350"
 ---
 # <a name="isoiec-27018-code-of-practice-for-protecting-personal-data-in-the-cloud"></a>Code de pratique ISO/IEC 27018 pour la protection des données personnelles dans le cloud
 
@@ -61,7 +61,7 @@ En respectant les normes d’ISO/IEC 27001 et le code de pratique incorporé da
 - Power Virtual Agents
 - Spécialistes des menaces Microsoft
 - Microsoft Stream
-- Windows Defender ATP – Détection et réponse des point de terminaison, Vérification automatique et correction, Degré de sécurisation
+- Microsoft Defender pour point de terminaison – Détection et réponse des points de terminaison, enquête automatique et correction, niveau de sécurité
 
 ## <a name="audits-reports-and-certificates"></a>Audits, rapports et certificats
 

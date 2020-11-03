@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b4767b9cc3d267020fee1c44876bf47442d0cea2
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 61744c9c9d8bd5a7bb94cf9ab3599be0c2889efc
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47415492"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843106"
 ---
 # <a name="european-union-model-clauses"></a>Clauses contractuelles types de l’Union européenne
 
@@ -51,7 +51,7 @@ Le groupe a déterminé que la mise en œuvre des dispositions des accords avec 
 - Service Cloud Microsoft PowerApps, soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
 - Service Cloud Power BI soit en service autonome, soit inclus dans un plan ou une suite Office 365
 - Azure DevOps Services
-- Protection avancée contre les menaces Windows Defender pour les sections suivantes du service Cloud : détection de point de terminaison et réponse, enquête automatique et correction, score de sécurisé.
+- Microsoft Defender pour point de terminaison pour les sections suivantes du service cloud : détection de point de terminaison et réponse, enquête automatique et correction, niveau de sécurisé.
 
 ## <a name="audits-reports-and-certificates"></a>Audits, rapports et certificats
 

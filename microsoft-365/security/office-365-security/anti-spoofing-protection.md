@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: Les administrateurs peuvent découvrir les fonctionnalités d’usurpation d’identité disponibles dans Exchange Online Protection (EOP), qui peuvent vous aider à atténuer les attaques par hameçonnage d’expéditeurs et de domaines usurpés.
-ms.openlocfilehash: 8ec81c5032c4e3a0d0e556c37dd293b13e382b05
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 631c38a49b3e1fa5217545449c522ccc9cf0d913
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446274"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844415"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Protection contre l’usurpation d’identité dans EOP
 
@@ -39,13 +39,13 @@ Pour protéger ses utilisateurs, Microsoft prend la menace du hameçonnage au s�
 
 Les technologies anti-usurpation suivantes sont disponibles dans EOP :
 
-- **Veille contre l’usurpation d’identité** : passez en revue les messages usurpant une identité provenant des expéditeurs dans les domaines internes et externes, et autorisez ou bloquez ces expéditeurs. Si vous souhaitez en savoir plus, consultez l’article [Configurer la veille contre l’usurpation d’identité dans Microsoft 365](learn-about-spoof-intelligence.md).
+- **Veille contre l’usurpation d’identité**  : passez en revue les messages usurpant une identité provenant des expéditeurs dans les domaines internes et externes, et autorisez ou bloquez ces expéditeurs. Si vous souhaitez en savoir plus, consultez l’article [Configurer la veille contre l’usurpation d’identité dans Microsoft 365](learn-about-spoof-intelligence.md).
 
-- **Stratégies anti-hameçonnage** : dans EOP, les stratégies anti-hameçonnages vous permettent d’activer ou de désactiver la veille contre l’usurpation d’identité, d’activer ou de désactiver l’identification d’expéditeur non authentifié dans Outlook, et de spécifier l’action des expéditeurs usurpés bloqués (déplacez-vous vers le dossier courrier indésirable ou la mise en quarantaine). Les stratégies anti-hameçonnage avancées qui sont disponibles dans Office 365 Protection avancée contre les menaces (Office 365 DAV) contiennent également des paramètres d’anti-emprunt d’identité (expéditeurs et domaines protégés), des paramètres d’intelligence des boîtes aux lettres et des seuils de hameçonnage avancés ajustables. Si vous souhaitez en savoir plus, consultez l’article [Stratégies anti-hameçonnage dans Microsoft 365](set-up-anti-phishing-policies.md).
+- **Stratégies anti-hameçonnage** : dans EOP, les stratégies anti-hameçonnages vous permettent d’activer ou de désactiver la veille contre l’usurpation d’identité, d’activer ou de désactiver l’identification d’expéditeur non authentifié dans Outlook, et de spécifier l’action des expéditeurs usurpés bloqués (déplacez-vous vers le dossier courrier indésirable ou la mise en quarantaine). Les stratégies anti-hameçonnage avancées qui sont disponibles dans Microsoft Defender pour Office 365 contiennent également des paramètres anti-emprunt d’identité (expéditeurs et domaines protégés), des paramètres de veille des boîtes aux lettres et des seuils d’hameçonnage avancés ajustables. Si vous souhaitez en savoir plus, consultez l’article [Stratégies anti-hameçonnage dans Microsoft 365](set-up-anti-phishing-policies.md).
 
-- **Authentification de messagerie électronique** : l’utilisation de l’authentification de messagerie électronique (également appelée validation de messagerie électronique) pour les enregistrements SPF, DKIM et DMARC dans DNS fait partie intégrante de tout effort anti-usurpation d’identité. Vous pouvez configurer ces enregistrements pour vos domaines de sorte que les systèmes de messagerie électronique de destination peuvent vérifier la validité des messages censés provenir d’expéditeurs figurant de vos domaines. Pour les messages entrants, Microsoft 365 requiert une authentification de messagerie électronique pour les domaines d’expéditeur. Si vous souhaitez en savoir plus, consultez la page [Authentification de messagerie électronique dans Microsoft 365](email-validation-and-authentication.md).
+- **Authentification de messagerie électronique**  : l’utilisation de l’authentification de messagerie électronique (également appelée validation de messagerie électronique) pour les enregistrements SPF, DKIM et DMARC dans DNS fait partie intégrante de tout effort anti-usurpation d’identité. Vous pouvez configurer ces enregistrements pour vos domaines de sorte que les systèmes de messagerie électronique de destination peuvent vérifier la validité des messages censés provenir d’expéditeurs figurant de vos domaines. Pour les messages entrants, Microsoft 365 requiert une authentification de messagerie électronique pour les domaines d’expéditeur. Si vous souhaitez en savoir plus, consultez la page [Authentification de messagerie électronique dans Microsoft 365](email-validation-and-authentication.md).
 
-À compter du 2018 octobre, la protection contre l’usurpation d’identité est disponible dans EOP. Avant cela, la protection contre l’usurpation d’identité n’était disponible que dans les organisations dotées d’Office 365 - Protection avancée contre les menaces.
+À compter du 2018 octobre, la protection contre l’usurpation d’identité est disponible dans EOP.
 
 EOP analyse et bloque les messages qui ne peuvent pas être authentifiés par la combinaison de méthodes standard d'authentification de messagerie électronique et de techniques de réputation de l'expéditeur.
 
@@ -69,7 +69,7 @@ Les messages d'usurpation d'identité ont les conséquences négatives suivantes
 
   Le message semble légitime, mais l’identité de l’expéditeur a été usurpée.
 
-- **Les utilisateurs confondent les vrais messages et les faux**: même les utilisateurs qui connaissent le hameçonnage peuvent éprouver des difficultés à voir les différences entre les messages réels et les messages usurpant une identité.
+- **Les utilisateurs confondent les vrais messages et les faux** : même les utilisateurs qui connaissent le hameçonnage peuvent éprouver des difficultés à voir les différences entre les messages réels et les messages usurpant une identité.
 
   Le message suivant est un exemple de message de réinitialisation de mot de passe authentique provenant du compte Microsoft Sécurité :
 
@@ -81,7 +81,7 @@ Les messages d'usurpation d'identité ont les conséquences négatives suivantes
 
 Microsoft distingue deux types de messages usurpant une identité :
 
-- **Usurpation intra-organisationnelle** : également connue sous le nom d’usurpation d’identité _self-to-self_. Par exemple :
+- **Usurpation intra-organisationnelle**  : également connue sous le nom d’usurpation d’identité _self-to-self_. Par exemple :
 
   - L’expéditeur et le destinataire figurent dans le même domaine :
     > De : chris@contoso.com <br/> À : michelle@contoso.com
@@ -104,7 +104,7 @@ Microsoft distingue deux types de messages usurpant une identité :
 
   - SFTY est le niveau de sécurité du message. 9 indique un hameçonnage, .11 indique une usurpation intra-organisationnelle.
 
-- **Usurpation inter-domaines** : les domaines de l’expéditeur et du destinataire sont différents et n’ont aucune relation entre eux (également appelés domaines externes). Par exemple :
+- **Usurpation inter-domaines**  : les domaines de l’expéditeur et du destinataire sont différents et n’ont aucune relation entre eux (également appelés domaines externes). Par exemple :
     > De : chris@contoso.com <br/> À : michelle@tailspintoys.com
 
   Les messages qui échouent à l’[authentification composite](email-validation-and-authentication.md#composite-authentication) en raison d’une usurpation inter-domaines contiennent les valeurs d’en-têtes suivantes :
@@ -125,7 +125,7 @@ Si vous souhaitez en savoir plus sur DMARC, consultez la page [Utiliser DMARC po
 
 Les organisations EOP peuvent utiliser le rapport sur les **détections d’usurpation d’identité** dans le tableau de bord des rapports du Centre de sécurité et de conformité. Pour plus d’informations, consultez le [rapport sur les détections d’usurpation d’identité](view-email-security-reports.md#spoof-detections-report).
 
-L’organisation Protection avancée contre les menaces Office 365 peut utiliser l’Explorateur de menaces dans le Centre de sécurité et de conformité pour afficher des informations sur les tentatives de hameçonnage. Si vous souhaitez en savoir plus, consultez la page [Examen et réponse contre les menaces Microsoft 365](office-365-ti.md).
+Microsoft Defender pour Office 365 peut utiliser l’Explorateur de menaces dans le Centre de sécurité et de conformité pour afficher des informations sur les tentatives d’hameçonnage. Si vous souhaitez en savoir plus, consultez la page [Examen et réponse contre les menaces Microsoft 365](office-365-ti.md).
 
 ## <a name="problems-with-anti-spoofing-protection"></a>Problèmes liés à la protection contre l’usurpation d’identité
 

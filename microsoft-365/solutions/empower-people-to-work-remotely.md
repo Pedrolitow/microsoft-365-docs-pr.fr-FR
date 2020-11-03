@@ -18,12 +18,12 @@ ms.collection:
 - M365initiative-coredeploy
 ms.custom: ''
 description: Configurez l’infrastructure de service et de sécurité qui permet à vos employés de travailler à distance de n’importe où et à tout moment.
-ms.openlocfilehash: 60467f0ed3cf7aa75481cb3bb49f954c32bf2e7d
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: 23ec0ef33294bb532229c8f736ab5b6a5d000d4e
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681395"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845239"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Confier des responsabilités aux travailleurs à distance avec Microsoft 365
 
@@ -79,7 +79,7 @@ Pour activer les fonctionnalités de Microsoft 365 pour vos télétravailleurs, 
 |:-------|:-----|:-------|
 | Authentification multifacteur appliquée avec paramètres de sécurité par défaut   | Protégez-vous contre les identités compromises et les appareils en imposant une deuxième forme d’authentification pour les connexions. La sécurité par défaut nécessite l’authentification multifacteur pour tous les comptes d’utilisateurs.   | Microsoft 365 E3 ou E5 |
 | Authentification multifacteur appliquée avec accès conditionnel| Requiert une authentification multifacteur sur la base des propriétés de la connexion avec les stratégies d’accès conditionnel.    | Microsoft 365 E3 ou E5 | 
-| Authentification multifacteur appliquée avec accès conditionnel basé sur les risques   | Requiert une authentification multifacteur basée sur le risque de connexion de l’utilisateur avec Azure Advanced Threat Protection. | Microsoft 365 E5 ou E3 avec les licences Azure AD Premium P2 | 
+| Authentification multifacteur appliquée avec accès conditionnel basé sur les risques   | Requiert une authentification multifacteur basée sur le risque de connexion de l’utilisateur avec Microsoft Defender pour identité. | Microsoft 365 E5 ou E3 avec les licences Azure AD Premium P2 | 
 | Réinitialisation du mot de passe libre-service (SSPR)    | Autoriser vos utilisateurs à réinitialiser ou déverrouiller leur mot de passe ou leur compte.  | Microsoft 365 E3 ou E5 |
 | Proxy d’application Azure AD    | Fournir un accès à distance sécurisé pour les applications web hébergées sur les serveurs intranet.   | Nécessite un abonnement Azure payé séparément |
 | VPN point à site Azure   | Créer une connexion sécurisée à partir de l’appareil d’un employé distant sur votre intranet via un réseau virtuel Azure.   | Nécessite un abonnement Azure payé séparément |
