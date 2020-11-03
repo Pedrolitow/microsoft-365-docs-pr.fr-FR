@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 212189c89f354b186072bb109f119cf048680d08
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 176f131ad020d001b72b97332d54be71feef5548
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48431086"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847415"
 ---
 # <a name="identitylogonevents"></a>IdentityLogonEvents
 
@@ -32,9 +32,9 @@ ms.locfileid: "48431086"
 
 
 **S’applique à :**
-- Protection Microsoft contre les menaces
+- Microsoft 365 Defender
 
-Le `IdentityLogonEvents` tableau du schéma de [chasse avancé](advanced-hunting-overview.md) contient des informations sur les activités d’authentification effectuées via votre environnement Active Directory local capturées par Azure ATP et les activités d’authentification liées à Microsoft Online Services capturées par Microsoft Cloud App Security. Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
+Le `IdentityLogonEvents` tableau du schéma de [chasse avancé](advanced-hunting-overview.md) contient des informations sur les activités d’authentification effectuées via votre environnement Active Directory local capturé par Microsoft Defender pour les activités d’identité et d’authentification liées à Microsoft Online Services capturées par Microsoft Cloud App Security. Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
 
 >[!TIP]
 > Pour plus d’informations sur les types d’événements ( `ActionType` valeurs) pris en charge par un tableau, utilisez la [référence de schéma intégrée](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) disponible dans le centre de sécurité.

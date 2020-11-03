@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Empêchez les violations de données personnelles grâce aux services d’identité, de périphérique et de protection contre les menaces de Microsoft 365.
-ms.openlocfilehash: e084036860f5d15a14ca6c75305583b86a5fc53f
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 321b60efbdabe62b14502df4a16dd2dcec4b9cef
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398690"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847177"
 ---
 # <a name="use-identity-device-and-threat-protection-for-data-privacy-regulation"></a>Utiliser l’identité, l’appareil et la protection contre les menaces pour le règlement de confidentialité des données
 
@@ -70,12 +70,12 @@ Utilisez le [Gestionnaire de points de terminaison Microsoft](https://www.micros
 - Exiger que les appareils mobiles soient verrouillés lors de l’inactivité.
 - Exigez la réinitialisation des appareils mobiles sur plusieurs échecs de connexion.
 
-Utilisez [Exchange Online Protection et Office 365 protection avancée contre les menaces (ATP)](../security/office-365-security/office-365-atp.md) pour la catégorie **protéger contre les menaces** , avec lequel vous pouvez :
+Utilisez [Exchange Online Protection et Microsoft Defender pour Office 365](../security/office-365-security/office-365-atp.md) pour la catégorie **protéger contre les menaces** , avec lequel vous pouvez :
 
 - Activer l’authentification des expéditeurs (SPF, DMARC et DKIM).
-- Configurez les stratégies de protection avancée contre les menaces Office 365 (ATP).
-- Implémenter des pièces jointes fiables ATP.
-- Implémenter des liens fiables ATP.
+- Configurez Microsoft Defender pour les stratégies anti-hameçonnage d’Office 365.
+- Implémenter des pièces jointes fiables.
+- Implémenter des liens fiables.
 - Implémenter des stratégies de détection et de réponse contre les programmes malveillants.
 - Implémenter des stratégies de courrier indésirable entrant et sortant.
 
@@ -83,6 +83,6 @@ Utilisez [Exchange Online Protection et Office 365 protection avancée contre le
 
 - [Stratégies communes pour les identités et l’accès aux appareils](../security/office-365-security/identity-access-policies.md)
 - [Se protéger contre les menaces dans Office 365](https://support.office.com/article/protect-against-threats-in-office-365-b10023f6-f30f-45d3-b3ad-b71aa4aa0d58)
-- [Pièces jointes fiables ATP](../security/office-365-security/atp-safe-attachments.md)
-- [Liens fiables ATP](../security/office-365-security/atp-safe-links.md)
-- [Documents fiables PACM](../security/office-365-security/safe-docs.md)
+- [Pièces jointes fiables](../security/office-365-security/atp-safe-attachments.md)
+- [Liens fiables](../security/office-365-security/atp-safe-links.md)
+- [Documents sécurisés](../security/office-365-security/safe-docs.md)

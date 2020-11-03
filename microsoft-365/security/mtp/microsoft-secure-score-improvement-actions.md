@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: cb2aad70b8ba6ccd9075513b5f383ede42ebd6c0
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: ff81b6e1a290d928d68cb43b455713183d24f75b
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295127"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846639"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Évaluer votre niveau de sécurité avec le score de sécurité Microsoft
 
@@ -38,7 +38,7 @@ Pour vous aider à trouver plus rapidement les informations dont vous avez besoi
 
 * Identity (comptes Azure Active Directory & rôles)
 * Data (protection des informations Microsoft)
-* Appareil (Microsoft Defender ATP, connu sous le nom [de Microsoft Secure score for Devices](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
+* Appareil (Microsoft Defender pour le point de terminaison, connu sous le nom [de Microsoft Secure score for Devices](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
 * Application (applications de messagerie et de Cloud, y compris Office 365 et Microsoft Cloud App Security)
 * Infrastructure (aucune action d’amélioration pour l’instant)
 
@@ -57,9 +57,9 @@ En outre, si vous sélectionnez le bouton **inclure** en regard de votre score, 
 
 Voici les scores que vous pouvez ajouter à votre vue de votre score global afin de vous donner une image plus complète de votre score global :
 
-- **Score planifié**: afficher le score projeté lorsque les actions planifiées sont terminées
-- **Score de licence actuel**: affiche le score qui peut être obtenu avec votre licence Microsoft actuelle
-- **Score**possible : afficher le score qui peut être obtenu avec vos licences Microsoft et acceptation actuelle des risques
+- **Score planifié** : afficher le score projeté lorsque les actions planifiées sont terminées
+- **Score de licence actuel** : affiche le score qui peut être obtenu avec votre licence Microsoft actuelle
+- **Score** possible : afficher le score qui peut être obtenu avec vos licences Microsoft et acceptation actuelle des risques
 
 Cet affichage est ce qu’il ressemblera si vous avez inclus tous les affichages de score possibles :
 

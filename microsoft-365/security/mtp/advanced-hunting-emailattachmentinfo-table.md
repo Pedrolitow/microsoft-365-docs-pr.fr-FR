@@ -19,12 +19,12 @@ mms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: dcacc31f8ea2546cbf90e45a4323a60670a98458
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 87ebf4ca0ff773dd5622097385173f538d990afc
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429838"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847475"
 ---
 # <a name="emailattachmentinfo"></a>EmailAttachmentInfo
 
@@ -32,11 +32,11 @@ ms.locfileid: "48429838"
 
 
 **S’applique à :**
-- Protection Microsoft contre les menaces
+- Microsoft 365 Defender
 
 
 
-La table `EmailAttachmentInfo` dans le schéma de [repérage avancé](advanced-hunting-overview.md) contient des informations sur les pièces jointes des e-mails traités par Office 365 - Protection avancée contre les menaces. Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
+Le `EmailAttachmentInfo` tableau du schéma de [chasse avancé](advanced-hunting-overview.md) contient des informations sur les pièces jointes des courriers électroniques traités par Microsoft defender pour Office 365. Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
 
 Pour plus d’informations sur les autres tables du schéma de repérage avancé, [consultez la référence de repérage avancé](advanced-hunting-schema-tables.md).
 
@@ -51,7 +51,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `FileType` | string | Type d’extension de fichier |
 | `SHA256` | string | SHA-256 du fichier auquel l’action enregistrée a été appliquée. Ce champ n’est généralement pas rempli. Utilisez la colonne SHA1 lorsque celle-ci est disponible. |
 | `MalwareFilterVerdict` | string | Verdict de la pile de filtrage d’e-mails selon que l’e-mail contient des programmes malveillants : programme malveillant, programme non malveillant |
-| `MalwareDetectionMethod` | string | Méthode utilisée pour détecter les programmes malveillants dans le courrier électronique : moteur anti-programme malveillant, réputation de fichier, pièces jointes fiables ATP |
+| `MalwareDetectionMethod` | string | Méthode utilisée pour détecter les programmes malveillants dans le courrier électronique : moteur anti-programme malveillant, réputation de fichier, pièces jointes fiables |
 
 ## <a name="related-topics"></a>Sujets associés
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)

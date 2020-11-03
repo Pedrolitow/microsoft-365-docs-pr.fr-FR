@@ -1,5 +1,5 @@
 ---
-title: Gérer les erreurs de la chasse avancée pour la protection contre les menaces Microsoft
+title: Gérer les erreurs dans la chasse avancée pour Microsoft 365 Defender
 description: Comprendre les erreurs affichées lors de l’utilisation de la chasse avancée
 keywords: chasse aux menaces, recherche de menace, recherche de menace informatique, protection contre les menaces Microsoft, Microsoft 365, MTP, M365, recherche, requête, télémétrie, schéma, Kusto, délai d’attente, ressources, erreurs, erreur inconnue, limites, quota, paramètre, allocation
 search.product: eADQiWindows 10XVcnh
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 8b9c46e312d28c7a08efbfa74f96dc33b90fee0a
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: a5379db66034ecfe537f7d9effdd83f6c41bfd58
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48636892"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846891"
 ---
 # <a name="handle-advanced-hunting-errors"></a>Gérer les erreurs de chasse avancées
 
@@ -45,6 +45,6 @@ La chasse avancée affiche les erreurs pour signaler les erreurs de syntaxe et c
 
 ## <a name="related-topics"></a>Voir aussi
 - [Meilleures pratiques pour la chasse avancée](advanced-hunting-best-practices.md)
-- [Quotas et paramètres d’utilisation](advanced-hunting-limits.md)
+- [Paramètres d’utilisation et de quotas](advanced-hunting-limits.md)
 - [Comprendre le schéma](advanced-hunting-schema-tables.md)
 - [Vue d’ensemble du langage de requête Kusto](https://docs.microsoft.com/azure/data-explorer/kusto/query/)

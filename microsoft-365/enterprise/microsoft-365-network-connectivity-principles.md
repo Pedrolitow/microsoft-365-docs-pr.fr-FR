@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Cet article fournit les instructions les plus récentes pour vous permettre d’optimiser en toute sécurité la connectivité réseau Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7602ee5ac7001b4d4d88232c9528f0bdc731e90b
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 8036a4759f959a075ad0398e823116491e128c0b
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46689714"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847011"
 ---
 # <a name="microsoft-365-network-connectivity-principles"></a>Principes de connectivité réseau Microsoft 365
 
@@ -67,7 +67,7 @@ L’objectif principal de la conception du réseau doit être de minimiser la la
   
 L’identification du trafic réseau de Microsoft 365 est la première étape pour pouvoir différencier ce trafic du trafic réseau générique lié à Internet. La connectivité de Microsoft 365 peut être optimisée en mettant en œuvre une combinaison d’approches telles que l’optimisation de l’itinéraire réseau, les règles de pare-feu, les paramètres de proxy du navigateur et le contournement des périphériques d’inspection du réseau pour certains points de terminaison.
   
-Les précédents conseils relatifs à l’optimisation de Microsoft 365 divisaient les points de terminaison Microsoft 365 en deux catégories : **Obligatoires** et **Facultatifs**. Les points de terminaison ayant été ajoutés pour prendre en charge les nouveaux services et fonctionnalités Microsoft 365, nous avons réorganisé les points de terminaison Microsoft 365 en trois catégories : **Optimiser**, **Autoriser** et **Par défaut**. Les directives pour chaque catégorie s’appliquent à tous les points de terminaison de la catégorie, ce qui facilite la compréhension et la mise en œuvre des optimisations.
+Les précédents conseils relatifs à l’optimisation de Microsoft 365 divisaient les points de terminaison Microsoft 365 en deux catégories : **Obligatoires** et **Facultatifs**. Les points de terminaison ayant été ajoutés pour prendre en charge les nouveaux services et fonctionnalités Microsoft 365, nous avons réorganisé les points de terminaison Microsoft 365 en trois catégories : **Optimiser** , **Autoriser** et **Par défaut**. Les directives pour chaque catégorie s’appliquent à tous les points de terminaison de la catégorie, ce qui facilite la compréhension et la mise en œuvre des optimisations.
   
 Si vous souhaitez obtenir plus d’informations sur les catégories de points de terminaison et les méthodes d’optimisation de Microsoft 365, consultez la section [Nouvelles catégories de points de terminaison Office 365](microsoft-365-network-connectivity-principles.md#BKMK_Categories).
   
@@ -143,7 +143,7 @@ Les administrateurs Microsoft 365 peuvent créer des scripts PAC (Configuration
 #### <a name="microsoft-365-security-features"></a>Fonctionnalités de sécurité Microsoft 365
 <a name="BKMK_WebSvc"> </a>
 
-Microsoft est transparent sur la sécurité du centre de données, la sécurité opérationnelle et la réduction des risques autour des serveurs Microsoft 365 et des points de terminaison réseau qu’ils représentent. Les fonctionnalités de sécurité intégrées de Microsoft 365 sont disponibles pour réduire les risques de sécurité du réseau, tels que la protection contre la perte de données, les antivirus, l’authentification multifacteur, la boîte de verrouillage client, la protection avancée contre les menaces, Microsoft 365 Threat Intelligence, le score de sécurité Microsoft 365, Exchange Online Protection et la sécurité DDOS du réseau.
+Microsoft est transparent sur la sécurité du centre de données, la sécurité opérationnelle et la réduction des risques autour des serveurs Microsoft 365 et des points de terminaison réseau qu’ils représentent. Les fonctionnalités de sécurité intégrées de Microsoft 365 sont disponibles pour réduire les risques de sécurité du réseau, tels que la protection contre la perte de données, les antivirus, l’authentification multifacteur, Customer Lockbox, Defender pour Office 365, Microsoft 365 Threat Intelligence, Niveau de sécurité Microsoft 365, Exchange Online Protection et la sécurité DDOS du réseau.
   
 Si vous souhaitez en savoir plus sur le centre de données Microsoft et la sécurité du réseau mondial, consultez le [Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trustcenter/security).
   
@@ -157,13 +157,13 @@ Les points de terminaison Office 365 représentent un ensemble varié d’adres
   
 Dans notre guide précédent sur la gestion du trafic Microsoft 365, les points de terminaison étaient organisés en deux catégories : **obligatoires** et **facultatifs**. Les points de terminaison au sein de chaque catégorie nécessitaient différentes optimisations en fonction de la criticité du service, et de nombreux clients ont dû faire face à des difficultés pour justifier l’application des mêmes optimisations de réseau à la liste complète des URL et adresses IP Office 365.
   
-Dans le nouveau modèle, les points de terminaison sont séparés en trois catégories : **Optimiser**, **Autoriser** et **Par défaut**, ce qui permet de concentrer les efforts d’optimisation du réseau pour réaliser les meilleures améliorations de performances et le meilleur retour sur investissement. Les points de terminaison sont consolidés dans les catégories ci-dessus en fonction de la sensibilité de l’expérience utilisateur effective à la qualité du réseau, au volume et à l’enveloppe de performances des scénarios et à la facilité de mise en œuvre. Les optimisations recommandées peuvent être appliquées de la même manière à tous les points de terminaison d’une catégorie donnée.
+Dans le nouveau modèle, les points de terminaison sont séparés en trois catégories : **Optimiser** , **Autoriser** et **Par défaut** , ce qui permet de concentrer les efforts d’optimisation du réseau pour réaliser les meilleures améliorations de performances et le meilleur retour sur investissement. Les points de terminaison sont consolidés dans les catégories ci-dessus en fonction de la sensibilité de l’expérience utilisateur effective à la qualité du réseau, au volume et à l’enveloppe de performances des scénarios et à la facilité de mise en œuvre. Les optimisations recommandées peuvent être appliquées de la même manière à tous les points de terminaison d’une catégorie donnée.
   
 - Les points de terminaison **Optimiser** sont nécessaires pour la connectivité à chaque service Office 365 et représentent plus de 75 % de la bande passante, des connexions et du volume de données Office 365. Ces points de terminaison représentent les scénarios Office 365 les plus sensibles aux performances, à la latence et à la disponibilité du réseau. Tous les points de terminaison sont hébergés dans des centres de données Microsoft. Le taux de changement des paramètres de cette catégorie devrait être bien inférieur à celui des paramètres des deux autres catégories. Cette catégorie comprend un petit (environ 10) ensemble d’URL clés et un ensemble défini de sous-réseaux IP dédiés aux charges de travail principales de Office 365 comme Exchange Online, SharePoint Online, Skype Entreprise Online et Microsoft Teams.
 
     Une liste condensée des points de terminaison essentiels bien définis devrait vous aider à planifier et à mettre en œuvre plus rapidement et plus facilement des optimisations de réseau de grande valeur pour ces destinations.
 
-    Les exemples de points de terminaison *Optimiser* incluent *https://outlook.office365.com*, *https://\<tenant\>.sharepoint.com* et *https://\<tenant\>-my.sharepoint.com*.
+    Les exemples de points de terminaison *Optimiser* incluent *https://outlook.office365.com* , *https://\<tenant\>.sharepoint.com* et *https://\<tenant\>-my.sharepoint.com*.
 
     Les méthodes d’optimisation sont les suivantes :
 

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Qu’il s’agisse d’ajouter de nouvelles solutions au centre de conformité, de mettre à jour des fonctionnalités existantes en fonction de vos commentaires ou de déployer une documentation actualisée et actualisée, Microsoft 365 vous aide à rester informé de la mise en conformité en perpétuelle évolution. Découvrez ce que nous avons fait dans ce mois-ci.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: b124e4c4d120d981766493034aba9bc6eefa7d9c
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 1ebe91e94b286e7d9a1b46b7fd7abf625881a6a9
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446557"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847800"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Nouveautés dans la conformité Microsoft 365
 
@@ -34,7 +34,7 @@ Qu’il s’agisse d’ajouter de nouvelles solutions au [Centre de conformité 
 
 
 > [!TIP]
-> Que se passe-t-il dans d’autres centres d’administration ? Consultez les articles suivants :<br>[Nouveautés du centre d’administration Microsoft 365](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[Nouveautés du centre d’administration SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br>[Nouveautés de la protection Microsoft contre les menaces](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)<br><br>
+> Que se passe-t-il dans d’autres centres d’administration ? Consultez les articles suivants :<br>[Nouveautés du centre d’administration Microsoft 365](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[Nouveautés du centre d’administration SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br>[Nouveautés de Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)<br><br>
 Consultez la feuille de [route de microsoft 365](https://www.microsoft.com/en-us/microsoft-365/roadmap) pour en savoir plus sur les fonctionnalités de Microsoft 365 qui ont été lancées, qui sont déployées, qui sont en cours de développement, qui ont été annulées ou qui ont déjà été publiées.
 
 ## <a name="august-2020"></a>Août 2020
@@ -43,7 +43,7 @@ Consultez la feuille de [route de microsoft 365](https://www.microsoft.com/en-us
 
 Plusieurs fonctionnalités nouvelles et améliorées ont atteint la préversion publique ce mois-ci :
 
-**Gestion des risques internes**
+**Gestion des risques initiés**
 
 - Consultez nos six nouveaux [modèles de stratégie](insider-risk-management-policies.md#policy-templates):
     - Fuites de données par les utilisateurs prioritaires
@@ -53,10 +53,10 @@ Plusieurs fonctionnalités nouvelles et améliorées ont atteint la préversion 
     - Violations de stratégie de sécurité par utilisateurs prioritaires
     - Violations de stratégie de sécurité par des utilisateurs mécontents
 
-- L’intégration à [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) vous permet d’importer et de filtrer les alertes Microsoft Defender ATP pour les activités détectées par les stratégies créées à partir des nouveaux modèles de stratégie de violation de sécurité. Il existe également un [paramètre de risque d’initié](insider-risk-management-settings.md#microsoft-defender-advanced-threat-protection-preview) connexe dans lequel vous pouvez choisir d’importer des alertes de sécurité vers la gestion des risques initiés en fonction de l’état de triage des alertes Microsoft Defender ATP.
+- L’intégration à [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) vous permet d’importer et de filtrer les alertes de Microsoft Defender pour les points de terminaison pour les activités détectées par les stratégies créées à partir des nouveaux modèles de stratégie de violation de sécurité. Il existe également un [paramètre de risque d’initié](insider-risk-management-settings.md#microsoft-defender-for-endpoint-preview) connexe dans lequel vous pouvez choisir d’importer des alertes de sécurité vers la gestion des risques initiés en fonction de l’état de triage des alertes Microsoft Defender pour les points de terminaison.
 
     > [!NOTE]
-    > Pour tirer parti de l’intégration de Microsoft Defender ATP (y compris les nouveaux modèles de violation de la stratégie de sécurité), vous devez disposer de Microsoft Defender ATP configuré dans votre organisation. Vous devrez également activer Microsoft Defender ATP pour l’intégration de la gestion des risques initiés en [configurant des fonctionnalités avancées dans Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center).
+    > Pour tirer parti de Microsoft Defender pour l’intégration de points de terminaison (y compris les nouveaux modèles de violation de stratégie de sécurité), vous devez disposer de Microsoft Defender pour le point de terminaison configuré dans votre organisation. Vous devrez également activer Microsoft Defender pour le point de terminaison de l’intégration de la gestion des risques initiés en [configurant des fonctionnalités avancées dans Microsoft Defender pour le point de terminaison](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center).
  
 - Personnaliser les seuils des indicateurs lors [de la création d’une stratégie](insider-risk-management-policies.md#create-a-new-policy).
 - Configurez des [groupes d’utilisateurs prioritaires](insider-risk-management-settings.md#priority-user-groups-preview) pour définir les utilisateurs de votre organisation dont l’activité nécessite un examen plus approfondi en fonction de facteurs tels que leur position, le niveau d’accès aux informations sensibles ou l’historique des risques.
@@ -366,7 +366,7 @@ Vous vous demandez pourquoi il est calme sur la sortie ce mois-ci ? Nous sommes
 ### <a name="new-encryption-options-for-sensitivity-labels"></a>Nouvelles options de chiffrement pour les étiquettes de sensibilité 
 
 Lors de la configuration du chiffrement pour une étiquette de sensibilité, vous disposez de deux options qui permettent aux utilisateurs d’attribuer des autorisations lorsqu’ils appliquent manuellement l’étiquette à la messagerie et aux documents :<br>
-- Lors de l’application de l’étiquette à la **messagerie Outlook**, les utilisateurs peuvent appliquer des restrictions équivalentes à celles de l’option ne pas transférer. Les destinataires seront en mesure de lire le message, mais pas de transférer, imprimer ou copier le contenu.
-- Lors de l’application de l’étiquette à des **fichiers Word, PowerPoint et Excel**, les utilisateurs sont invités à attribuer des autorisations d’accès à des utilisateurs et des groupes spécifiques.
+- Lors de l’application de l’étiquette à la **messagerie Outlook** , les utilisateurs peuvent appliquer des restrictions équivalentes à celles de l’option ne pas transférer. Les destinataires seront en mesure de lire le message, mais pas de transférer, imprimer ou copier le contenu.
+- Lors de l’application de l’étiquette à des **fichiers Word, PowerPoint et Excel** , les utilisateurs sont invités à attribuer des autorisations d’accès à des utilisateurs et des groupes spécifiques.
 
 Accédez à [restreindre l’accès au contenu à l’aide des étiquettes de confidentialité pour appliquer le chiffrement](encryption-sensitivity-labels.md#let-users-assign-permissions) pour en savoir plus.

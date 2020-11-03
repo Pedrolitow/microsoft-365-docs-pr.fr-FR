@@ -1,5 +1,5 @@
 ---
-title: Quotas de chasse et paramètres d’utilisation avancés dans Microsoft Threat Protection
+title: Quotas de chasse et paramètres d’utilisation avancés dans Microsoft 365 Defender
 description: Comprendre les différents quotas et paramètres d’utilisation (limites de service) qui assurent la réactivité avancée du service de chasse
 keywords: chasse aux menaces, recherche de menace, recherche de menace, protection contre les menaces Microsoft 365, MTP, M365, recherche, requête, télémétrie, schéma, Kusto, limite du processeur, limite de requête, ressources, résultats maximaux, quota, paramètres, allocation
 search.product: eADQiWindows 10XVcnh
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 192fb47aafdd20bd5e1f0774a64ec3215f1203d1
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: bab63d9e5939f87f6a1edbf62d256b82552e4fe9
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48636904"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847367"
 ---
 # <a name="advanced-hunting-quotas-and-usage-parameters"></a>Quotas de chasse et paramètres d’utilisation avancés
 
@@ -32,7 +32,7 @@ ms.locfileid: "48636904"
 
 
 **S’applique à :**
-- Protection Microsoft contre les menaces
+- Microsoft 365 Defender
 
 Pour maintenir le service de manière efficace et réactive, la chasse avancée définit différents quotas et paramètres d’utilisation (également appelés « limites de service »). Ces quotas et paramètres s’appliquent aux requêtes exécutées manuellement et par les [règles de détection personnalisées](custom-detection-rules.md). Les clients qui exécutent régulièrement plusieurs requêtes doivent suivre la consommation et [appliquer les meilleures pratiques en matière d’optimisation](advanced-hunting-best-practices.md) afin de minimiser les interruptions.
 

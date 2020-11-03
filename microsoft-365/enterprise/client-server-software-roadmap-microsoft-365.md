@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: La feuille de route pour configurer le logiciel client et serveur pour Microsoft 365.
-ms.openlocfilehash: 94412ca4a7665807368ae33a0e50dc928445c8b7
-ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
+ms.openlocfilehash: d51aead9a50df3acace94526824cfa08fc083a01
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48655958"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847153"
 ---
 # <a name="client-and-server-software-roadmap-for-microsoft-365"></a>Feuille de route du logiciel client et serveur pour Microsoft 365
 
@@ -89,7 +89,7 @@ De nombreuses petites et grandes entreprises utilisent peut-être une combinaiso
 - doivent être mises à jour avec les derniers correctifs d’assistance et mises à jour de sécurité. Dans certains cas, ces mises à jour sont publiées tous les mois ;
 - ne sont pas configurées de façon optimale pour tirer parti des technologies cloud de Microsoft et pour vous aider à transformer numériquement votre entreprise.
 - n’incluent pas de nouvelles applications de productivité, telles que Microsoft Teams ;
-- n’incluent pas les dernières fonctionnalités de sécurité, telles que la protection avancée contre les menaces pour Exchange.
+- N’incluez pas les fonctionnalités de sécurité les plus récentes, telles qu’Exchange et Defender pour Office 365.
 
 Microsoft 365 pour Enterprise inclut des versions Cloud des services Office Server qui utilisent certains des mêmes outils que les versions locales du logiciel Office Server, telles que les navigateurs Web et le client Outlook. Ces services sont continuellement mis à jour pour la sécurité sans impliquer d’informatique, ce qui vous permet de gagner du temps pour la maintenance et la mise à jour des serveurs locaux. Ces services présentent également de nouvelles fonctionnalités qui ne sont pas disponibles dans les logiciels Office Server.
 

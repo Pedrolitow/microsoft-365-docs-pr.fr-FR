@@ -1,7 +1,7 @@
 ---
 title: Opérations de sécurité dans le bureau géré Microsoft
 description: ''
-keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 15a62da1222fc55d50dfd4c3b2f0e7ba4a0554eb
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: 5698e2a88adf3d2bae84a82e0e001132293e36be
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778615"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847715"
 ---
 # <a name="security-operations-in-microsoft-managed-desktop"></a>Opérations de sécurité dans le bureau géré Microsoft
 
@@ -41,4 +41,4 @@ Le SOC fournit les services suivants :
     - Récupération
     - Activité après incident
 - Les clients du bureau géré Microsoft peuvent s’inscrire dans le service Microsoft Threat experts. Le SOC est conforme à ce service afin de mieux comprendre les menaces complexes affectant votre organisation, notamment les requêtes d’alerte, les appareils potentiellement compromis, la cause première d’une connexion réseau suspecte et une intelligence supplémentaire contre les menaces concernant les campagnes de menace permanentes avancées. Pour plus d’informations, consultez la rubrique [Microsoft Threat experts](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-threat-experts).
-- Le processus de gestion des vulnérabilités et des menaces de la société d’assurance sociale utilise certains des services de Microsoft pour aider les recommandations de votre organisation à se protéger contre les menaces. Le SOC utilise les données de votre centre de sécurité de protection avancée contre les menaces Microsoft Defender et des sources de données de vulnérabilité pertinentes au sein et en dehors de Microsoft pour détecter les vulnérabilités et les erreurs de configuration et fournir des rapports actionnables.
+- Le processus de gestion des vulnérabilités et des menaces de la société d’assurance sociale utilise certains des services de Microsoft pour aider les recommandations de votre organisation à se protéger contre les menaces. Le SOC utilise les données de votre centre de sécurité Microsoft Defender pour le point de terminaison et des sources de données de vulnérabilité pertinentes au sein et en dehors de Microsoft pour détecter les vulnérabilités et les erreurs de configuration et fournir des rapports d’action exploitables.

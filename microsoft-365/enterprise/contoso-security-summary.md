@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comment Contoso utilise les fonctionnalités de sécurité de Microsoft 365 pour les entreprises.
-ms.openlocfilehash: d84b1423497a6a4358142902c4e159cc54b3500b
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 8d62dba96ecf19f0dc31af2cf5a2d85257ca19d5
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754231"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847105"
 ---
 # <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Résumé de Microsoft 365 pour la sécurité d’entreprise pour Contoso Corporation
 
@@ -89,9 +89,9 @@ Pour suivre les meilleures pratiques en matière de sécurité et les exigences 
 
   Contoso utilise [Antivirus Windows Defender](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) pour assurer la protection contre les programmes malveillants et la gestion anti-programme malveillant pour les PC et les périphériques exécutant Windows 10 Entreprise.
 
-- Flux de messagerie et enregistrement d’audit des boîtes aux lettres sécurisés avec Office 365 - Protection avancée contre les menaces 
+- Enregistrement sécurisé du flux de messagerie et de l’audit des boîtes aux lettres avec Microsoft Defender pour Office 365 
 
-  Contoso utilise Exchange Online Protection et [Office 365 - Protection avancée contre les menaces (ATP)](https://docs.microsoft.com/office365/securitycompliance/office-365-atp) pour se protéger contre les programmes malveillants inconnus, les virus et les URL malveillantes transmises par les e-mails.
+  Contoso utilise Exchange Online Protection et [Defender pour Office 365](https://docs.microsoft.com/office365/securitycompliance/office-365-atp) pour se protéger contre les programmes malveillants inconnus, les virus et les URL malveillantes transmises par courrier électronique.
 
   Contoso a également activé l’enregistrement d’audit de boîte aux lettres pour identifier les utilisateurs qui se connectent aux boîtes aux lettres des utilisateurs, envoie des messages et effectue d’autres activités par le propriétaire de la boîte aux lettres, un utilisateur délégué ou un administrateur.
 
@@ -127,9 +127,9 @@ Pour suivre les meilleures pratiques en matière de sécurité et les exigences 
 
 ## <a name="security-management"></a>Gestion de la sécurité
 
-- Tableau de bord central de sécurité pour les services informatiques avec Azure Security Center
+- Tableau de bord central de la sécurité pour les INFORMATICIENs avec Azure Defender *
 
-  Contoso utilise le [Centre de sécurité Azure](https://azure.microsoft.com/services/security-center/) pour présenter une vue unifiée de la sécurité et de la protection contre les menaces, pour gérer les stratégies de sécurité sur l’ensemble de ses charges de travail et pour répondre aux cyberattaques.
+  Contoso utilise [Azure Defender *](https://azure.microsoft.com/services/security-center/) pour présenter une vue unifiée de la sécurité et de la protection contre les menaces, pour gérer les stratégies de sécurité au sein de ses charges de travail et pour répondre aux cyberattaques.
 
 - Tableau de bord central de sécurité pour les utilisateurs utilisant le Centre de sécurité Windows Defender
 

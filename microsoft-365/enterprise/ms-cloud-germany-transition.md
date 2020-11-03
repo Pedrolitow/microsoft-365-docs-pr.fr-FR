@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Récapitulatif : comprendre la migration de Microsoft Cloud Allemagne (Microsoft Cloud Deutschland) vers les services Office 365 dans les nouvelles régions de centre de données allemandes.'
-ms.openlocfilehash: a77dc43c4c30992d2e50aad94878f9269573db52
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 23ccc30bab5d1045e4716cd637899e20362fc597
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327116"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846939"
 ---
 # <a name="migration-from-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Migration de Microsoft Cloud Deutschland vers Office 365 services dans les nouvelles régions de centre de connaissances allemand
 
@@ -133,7 +133,7 @@ Les 15 services suivants sont disponibles dans l’offre de service Cloud Deutsc
 3. Groupes (groupes modernes)
 4. Profil Delve
 5. Exchange Online Protection
-6. Protection avancée contre les menaces (ATP)
+6. Defender pour Office 365
 7. Advanced eDiscovery
 8. Gouvernance des données avancée
 9. SharePoint Online
@@ -153,7 +153,7 @@ Nous avons actuellement 29 services dans le cadre des services Office 365 dans
 5. MyAnalytics
 6. Workplace Analytics
 7. Exchange Online Protection
-8. Protection avancée contre les menaces (ATP)
+8. Defender pour Office 365
 9. Advanced eDiscovery
 10. Gestion de la sécurité avancée
 11. Gestion des droits relatifs à l’information
@@ -221,7 +221,7 @@ Lors de la migration de Microsoft Cloud Deutschland vers les services Office 365
 | Office 365 a1 pour Université \_ de (STANDARDWOFFPACK \_ universitaire \_ de) | Office 365 a1 pour facultés (STANDARDWOFFPACK \_ universitaire) |
 | Office 365 a1 pour étudiants \_ de (STANDARDWOFFPACK \_ Student \_ de) | Office 365 a1 pour étudiants (STANDARDWOFFPACK \_ Student) |
 | Office 365 Advanced Compliance \_ de (EQUIVIO \_ Analytics \_ de) | Microsoft 365 E5 conformité ( \_ conformité de la protection des informations \_ ) |
-| Office 365 Advanced Threat Protection (plan 1) \_ de (ATP \_ Enterprise \_ de) | Office 365 Advanced Threat Protection (plan 1) (ATP \_ ) |
+|Microsoft Defender pour Office 365 (plan 1) \_ de (ATP \_ Enterprise \_ de) |Microsoft Defender pour Office 365 (plan 1) (ATP \_ ) |
 | Office 365 Business Essentials \_ de (O365 \_ Business \_ Essentials \_ de) | Microsoft 365 Business Basic (O365 \_ Business \_ Essentials) |
 | Office 365 Business Premium \_ de (O365 \_ Business \_ Premium \_ de) | Microsoft 365 Business standard (Office 365 \_ Business \_ Premium) |
 | Office 365 Business \_ de (O365 \_ Business \_ de) | Microsoft 365 apps pour les entreprises (Office 365 \_ entreprise) |

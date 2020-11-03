@@ -1,6 +1,6 @@
 ---
-title: Hiérarchiser les incidents dans la Protection Microsoft contre les menaces
-description: Découvrir comment hiérarchiser les incidents à partir de la file d’attente des incidents dans la Protection Microsoft contre les menaces
+title: Hiérarchisation des incidents dans Microsoft 365 Defender
+description: Découvrez comment définir la priorité des incidents à partir de la file d’attente des incidents dans Microsoft 365 Defender
 keywords: incident, file d’attente, vue d’ensemble, appareils, identités, utilisateurs, boîte aux lettres, e-mail, incidents
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -21,24 +21,24 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 382cfd374c40d0c5a0dd7d7705281bd56263d8b8
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: f681d02cc4af8bd56ba945a3d944798e545bf93c
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430822"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846711"
 ---
-# <a name="prioritize-incidents-in-microsoft-threat-protection"></a>Hiérarchiser les incidents dans la Protection Microsoft contre les menaces
+# <a name="prioritize-incidents-in-microsoft-365-defender"></a>Hiérarchisation des incidents dans Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **S’applique à :**
-- Protection Microsoft contre les menaces
+- Microsoft 365 Defender
 
 
 
-La Protection Microsoft contre les menaces applique l’analyse de la corrélation et regroupe toutes les alertes et analyses associées à différents produits en un seul incident. La Protection Microsoft contre les menaces déclenche également des alertes uniques pour les activités qui peuvent uniquement être détectées comme malveillantes, en raison de la visibilité de bout en bout que la Protection Microsoft de la protection de menace a sur l’ensemble du patrimoine et de la suite de produits. En procédant ainsi, la Protection Microsoft contre les menaces donne une vue d’ensemble des attaques, ce qui permet à un analyste en charge des opérations de sécurité de comprendre et de gérer les menaces complexes au sein de l’organisation.
+Microsoft 365 Defender applique une analyse de corrélation et agrège toutes les alertes et les analyses associées de différents produits en un seul incident. Microsoft 365 Defender déclenche également des alertes uniques sur des activités qui peuvent uniquement être identifiées comme malveillantes en fonction de la visibilité de bout en bout que Microsoft 365 Defender a sur l’ensemble du parc et de la suite de produits. En procédant ainsi, Microsoft 365 Defender présente le plus grand récit d’attaque, ce qui permet à un analyste des opérations de sécurité de comprendre et de traiter les menaces complexes au sein de l’organisation.
 
 
 La **file d’attente des incidents** affiche un ensemble d’incidents qui ont été signalés par plusieurs appareils, utilisateurs et boîtes aux lettres. Elle vous aide à trier les incidents afin de hiérarchiser et de créer une décision de réponse cyber-sécurité.
@@ -75,7 +75,7 @@ Filtre pour afficher uniquement les incidents contenant plusieurs alertes. Il pe
 
 
 ### <a name="multiple-service-sources"></a>Plusieurs sources de service 
-Filtre pour afficher uniquement les incidents qui contiennent des alertes provenant de différentes sources (Microsoft Defender - Protection avancée contre les menaces, Microsoft Cloud App Security, Azure - Protection avancée contre les menaces, Office 365 - Protection avancée contre les menaces)
+Filtre pour afficher uniquement les incidents qui contiennent des alertes de sources différentes (Microsoft Defender pour les points de terminaison, sécurité des applications Cloud Microsoft, Microsoft Defender pour l’identité, Microsoft Defender pour Office 365)
 ### <a name="service-sources"></a>Sources de service
 En sélectionnant une source spécifique, vous pouvez vous concentrer sur les incidents qui contiennent au moins une alerte de la source choisie. 
 

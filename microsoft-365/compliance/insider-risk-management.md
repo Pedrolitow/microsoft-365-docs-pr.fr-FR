@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 289f0763d6a7e887946a5672fde5341f79f96855
-ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
+ms.openlocfilehash: 82a7d1c9eec13d87fa45b12b072e9712ccd267c2
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48816859"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847810"
 ---
 # <a name="insider-risk-management-in-microsoft-365"></a>Gestion des risques internes dans Microsoft 365
 
@@ -146,7 +146,7 @@ Les communications entre utilisateurs sont souvent une source de violations acci
 
 ## <a name="intentional-or-unintentional-security-policy-violations-preview"></a>Violations de stratégie de sécurité intentionnelles ou involontaires (préversion)
 
-Les utilisateurs ont généralement un grand degré de contrôle lors de la gestion de leurs appareils dans l’espace de travail moderne. Cela peut inclure des autorisations pour installer ou désinstaller des applications nécessaires dans les performances de leurs tâches ou pour désactiver temporairement les fonctionnalités de sécurité des appareils. Que cette activité soit involontaire, accidentelle ou malveillante, elle peut présenter un risque pour votre organisation et est importante pour identifier et agir pour minimiser les risques. Pour vous aider à identifier ces activités à risque, les modèles de violation de la stratégie de sécurité de gestion des risques Insider suivants dénotent les indicateurs de risque de sécurité et utilisent les alertes ATP (protection avancée contre les menaces) de Microsoft pour fournir des informations sur les activités liées à la sécurité :
+Les utilisateurs ont généralement un grand degré de contrôle lors de la gestion de leurs appareils dans l’espace de travail moderne. Cela peut inclure des autorisations pour installer ou désinstaller des applications nécessaires dans les performances de leurs tâches ou pour désactiver temporairement les fonctionnalités de sécurité des appareils. Que cette activité soit involontaire, accidentelle ou malveillante, elle peut présenter un risque pour votre organisation et est importante pour identifier et agir pour minimiser les risques. Pour vous aider à identifier ces activités à risque, les modèles de violation de la stratégie de sécurité de la gestion des risques Insider suivants dénotent les indicateurs de risque de sécurité et utilisent Microsoft Defender for Endpoint Alerts pour fournir des informations sur les activités liées à la sécurité :
 
 - [Violations de stratégie de sécurité générale (préversion)](insider-risk-management-policies.md#general-security-policy-violations-preview)
 - [Violations de stratégie de sécurité en faisant ressorter les utilisateurs (aperçu)](insider-risk-management-policies.md#security-policy-violations-by-departing-users-preview)

@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: d93ef3eb3bbf6def0f633aa0f69032e37d10c4c9
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 41b429e32122d6cc58a746649c8a0428f0a90b0f
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430374"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847427"
 ---
 # <a name="identitydirectoryevents"></a>IdentityDirectoryEvents
 
@@ -32,7 +32,7 @@ ms.locfileid: "48430374"
 
 
 **S’applique à :**
-- Protection Microsoft contre les menaces
+- Microsoft 365 Defender
 
 Le `IdentityDirectoryEvents` tableau du schéma de [chasse avancé](advanced-hunting-overview.md) contient des événements impliquant un contrôleur de domaine local exécutant Active Directory (AD). Ce tableau capture différents événements liés à l’identité, tels que les modifications de mot de passe, l’expiration du mot de passe et les modifications de nom d’utilisateur principal (UPN). Il capture également les événements système sur le contrôleur de domaine, comme la planification des tâches et l’activité PowerShell. Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
 

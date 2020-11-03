@@ -1,5 +1,5 @@
 ---
-title: Gérer les incidents dans la Protection Microsoft contre les menaces
+title: Gérer les incidents dans Microsoft 365 Defender
 description: Découvrez comment attribuer, mettre à jour l’état,
 keywords: incident, incidents, alertes, alertes corrélées, attribuer, mettre à jour, état, gérer, classification, microsoft, 365, m365
 search.product: eADQiWindows 10XVcnh
@@ -21,24 +21,24 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: c599343233e7e29589bc4e3d1cda01da505b16f1
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 29f55d99dd3acd26ae305c03b533e2ca9bb61f2a
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430560"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846651"
 ---
-# <a name="manage-incidents-in-microsoft-threat-protection"></a>Gérer les incidents dans la Protection Microsoft contre les menaces
+# <a name="manage-incidents-in-microsoft-365-defender"></a>Gérer les incidents dans Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **S’applique à :**
-- Protection Microsoft contre les menaces
+- Microsoft 365 Defender
 
 
 
-La gestion des incidents est essentielle pour s’assurer que les menaces sont contenues et traitées. La Protection Microsoft contre les menaces vous permet d’accéder à la gestion des incidents sur les appareils, chez les utilisateurs et dans les boîtes aux lettres. 
+La gestion des incidents est essentielle pour s’assurer que les menaces sont contenues et traitées. Dans Microsoft 365 Defender, vous avez accès à la gestion des incidents sur les appareils, les utilisateurs et les boîtes aux lettres. 
 
 
 Vous pouvez gérer les incidents en sélectionnant un incident dans la **file d’attente d’incidents**. 
@@ -64,7 +64,7 @@ Si aucun incident n’a encore été affecté, vous pouvez sélectionner **À mo
 
 ## <a name="set-status-and-classification"></a>Définir l’état et la classification
 ### <a name="incident-status"></a>État de l’incident
-Vous pouvez classer les incidents (comme **actifs**ou **résolus**) en modifiant leur état au fur et à mesure de l’avancement de votre enquête. Cela vous permet d’organiser et de gérer la manière dont votre équipe peut réagir aux incidents.
+Vous pouvez classer les incidents (comme **actifs** ou **résolus** ) en modifiant leur état au fur et à mesure de l’avancement de votre enquête. Cela vous permet d’organiser et de gérer la manière dont votre équipe peut réagir aux incidents.
 
 Par exemple, votre analyste SOC peut passer en revue les incidents **actifs** urgents pour la journée et décider de se les attribuer pour enquête.
 

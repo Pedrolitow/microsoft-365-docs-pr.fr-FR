@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 356548c3115aacce8c76d7fbc552811c168750ed
-ms.sourcegitcommit: e8b3855302fc34d09b6df6c737033a2f326d6eee
+ms.openlocfilehash: bfe63397d194567a7d71de703363083d2fd4fe75
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48770072"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847607"
 ---
 # <a name="devicetvmsecureconfigurationassessment"></a>DeviceTvmSecureConfigurationAssessment
 
@@ -32,7 +32,7 @@ ms.locfileid: "48770072"
 
 
 **S’applique à :**
-- Protection Microsoft contre les menaces
+- Microsoft 365 Defender
 
 
 
@@ -51,9 +51,9 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `ConfigurationSubcategory` | string | Sous-catégorie ou sous-groupement auquel appartient la configuration. Dans de nombreux cas, cela décrit des capacités ou des fonctionnalités spécifiques. |
 | `ConfigurationImpact` | string | Impact nominal de la configuration sur la note de configuration globale (1-10) |
 | `IsCompliant` | booléen | Indique si la configuration ou la stratégie est correctement configurée. |
-| `IsApplicable` | booléen | Indique si la configuration ou la stratégie s’applique à l’appareil. |
+| `IsApplicable` | valeur booléenne | Indique si la configuration ou la stratégie s’applique à l’appareil. |
 | `Context` | string | Informations contextuelles supplémentaires sur la configuration ou la stratégie |
-| `IsExpectedUserImpactCompliant` | booléen | Indique s’il y aura un impact sur l’utilisateur si la configuration ou la stratégie est appliquée. |
+| `IsExpectedUserImpactCompliant` | valeur booléenne | Indique s’il y aura un impact sur l’utilisateur si la configuration ou la stratégie est appliquée. |
 
 ## <a name="related-topics"></a>Sujets associés
 

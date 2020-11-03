@@ -1,6 +1,6 @@
 ---
-title: Accéder aux API de protection contre les menaces Microsoft à l’aide de pour le compte de l’utilisateur
-description: Découvrez comment accéder aux API de protection contre les menaces Microsoft à l’aide de pour le compte de l’utilisateur
+title: Accéder aux API Microsoft 365 Defender à l’aide de pour le compte de l’utilisateur
+description: Découvrez comment accéder aux API Microsoft 365 Defender à l’aide de pour le compte de l’utilisateur
 keywords: accès, de la part de l’utilisateur, de l’API, de l’application, de l’utilisateur, du jeton d’accès, du jeton
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -19,42 +19,42 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: a62d90004d00e8c553f1b011e77b871df7cd94f4
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: a72bc7648045e5cc37a1d899f9e15237ce29ed37
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197796"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847355"
 ---
-# <a name="access-microsoft-threat-protection-apis-on-behalf-of-user"></a>Accéder aux API de protection contre les menaces Microsoft pour le compte de l’utilisateur
+# <a name="access-microsoft-365-defender-apis-on-behalf-of-user"></a>Accéder aux API Microsoft 365 Defender pour le compte de l’utilisateur
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **S’applique à :**
-- Protection Microsoft contre les menaces
+- Microsoft 365 Defender
 
 >[!IMPORTANT] 
 >Certaines informations se rapportent à des produits précommercialisés susceptibles d’être modifiés de manière substantielle avant leur publication commerciale. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 
-Cette page explique comment créer une application pour accéder par programme à Microsoft Threat Protection au nom d’un utilisateur.
+Cette page explique comment créer une application pour accéder par programme à Microsoft 365 Defender au nom d’un utilisateur.
 
-Si vous avez besoin d’un accès par programme à la protection Microsoft contre les menaces sans utilisateur, reportez-vous à la rubrique [créer une application pour accéder à la protection contre les menaces Microsoft sans utilisateur](api-create-app-web.md).
+Si vous avez besoin d’un accès par programme à Microsoft 365 Defender sans utilisateur, reportez-vous à la rubrique [créer une application pour accéder à microsoft 365 Defender sans utilisateur](api-create-app-web.md).
 
-Si vous n’êtes pas certain de l’accès dont vous avez besoin, lisez l' [accès aux API de protection contre les menaces Microsoft](api-access.md).
+Si vous n’êtes pas certain de l’accès dont vous avez besoin, consultez l' [accès aux API Microsoft 365 Defender](api-access.md).
 
-La protection contre les menaces Microsoft expose une grande partie de ses données et actions via un ensemble d’API de programmation. Ces API vous permettront d’automatiser les flux de travail et d’innover en fonction des fonctionnalités de protection contre les menaces Microsoft. L’accès à l’API nécessite l’authentification OAuth 2.0. Pour plus d’informations, reportez-vous au [flux de code d’autorisation OAuth 2,0](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Microsoft 365 Defender expose une grande partie de ses données et actions via un ensemble d’API de programmation. Ces API vous permettront d’automatiser les flux de travail et d’innover en fonction des fonctionnalités de Microsoft 365 Defender. L’accès à l’API nécessite l’authentification OAuth 2.0. Pour plus d’informations, reportez-vous au [flux de code d’autorisation OAuth 2,0](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 En règle générale, vous devez effectuer les étapes suivantes pour utiliser les API :
 - Créer une application AAD
 - Obtenir un jeton d’accès à l’aide de cette application
-- Utiliser le jeton pour accéder à l’API de protection contre les menaces Microsoft
+- Utiliser le jeton pour accéder à l’API Microsoft 365 Defender
 
-Cette page explique comment créer une application AAD, obtenir un jeton d’accès à Microsoft Threat Protection et valider le jeton.
+Cette page explique comment créer une application AAD, obtenir un jeton d’accès à Microsoft 365 Defender et valider le jeton.
 
 >[!NOTE]
-> Lors de l’accès à l’API de protection contre les menaces Microsoft pour le compte d’un utilisateur, vous aurez besoin de l’autorisation d’application et de l’autorisation utilisateur appropriées.
+> Lors de l’accès à l’API Microsoft 365 Defender au nom d’un utilisateur, vous aurez besoin de l’autorisation d’application et de l’autorisation utilisateur appropriées.
 
 
 >[!TIP]
@@ -76,14 +76,14 @@ Cette page explique comment créer une application AAD, obtenir un jeton d’acc
    - **Type d’application :** Client public
    - **URI de redirection :**https://portal.azure.com
 
-4. Pour permettre à votre application d’accéder à la protection contre les menaces Microsoft et de lui attribuer des autorisations, dans la page de votre application, sélectionnez autorisations de l' **API**  >  **Ajouter**une  >  **API mon organisation utilise** des >, tapez **protection Microsoft contre les menaces**, puis sélectionnez **Microsoft Threat Protection**.
+4. Pour permettre à votre application d’accéder à Microsoft 365 Defender et de lui attribuer des autorisations, dans la page de votre application, sélectionnez autorisations de l' **API**  >  **Ajouter** une  >  **API mon organisation utilise** >, tapez **Microsoft 365 Defender** , puis sélectionnez **Microsoft 365 Defender**.
 
     >[!NOTE]
-    > La protection contre les menaces Microsoft ne s’affiche pas dans la liste d’origine. Vous devez commencer à écrire son nom dans la zone de texte pour l’afficher.
+    > Microsoft 365 Defender n’apparaît pas dans la liste d’origine. Vous devez commencer à écrire son nom dans la zone de texte pour l’afficher.
 
       ![Image de l’accès à l’API et de la sélection de l’API](../../media/apis-in-my-org-tab.PNG)
 
-    - Sélectionnez **autorisations déléguées** > choisissez les autorisations appropriées pour votre scénario, par exemple, **incident. Read**, puis sélectionnez **Ajouter des autorisations**.
+    - Sélectionnez **autorisations déléguées** > choisissez les autorisations appropriées pour votre scénario, par exemple, **incident. Read** , puis sélectionnez **Ajouter des autorisations**.
 
       ![Image de l’accès à l’API et de la sélection de l’API](../../media/request-api-permissions-delegated.PNG)
 
@@ -126,5 +126,5 @@ $response.AccessToken
 ```
 
 ## <a name="related-topics"></a>Voir aussi
-- [Accéder aux API de protection contre les menaces Microsoft](api-access.md)
-- [Accéder à la protection contre les menaces Microsoft avec le contexte d’application](api-create-app-web.md)
+- [Accéder aux API Microsoft 365 Defender](api-access.md)
+- [Accéder à Microsoft 365 Defender avec le contexte d’application](api-create-app-web.md)

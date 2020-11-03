@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Comment implémenter un tunnel VPN partagé pour Office 365
-ms.openlocfilehash: ff79138d44c98d76af1a3d9c374159b0fae4c7ed
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 4a7c2a18ae5d4f275210ddeaea90eb1bb9bc1f16
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295273"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846987"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>Implémentation d'un tunnel VPN partagé pour Office 365
 
@@ -33,7 +33,7 @@ ms.locfileid: "48295273"
 
 Depuis de nombreuses années, les entreprises utilisent les VPN pour prendre en charge les expériences à distance de leurs utilisateurs. Bien que les charges de travail principales soient restées en local, un réseau privé virtuel (VPN) du client distant routé via un centre de données sur le réseau d’entreprise constituait la méthode principale permettant aux utilisateurs distants d’accéder aux ressources de l’entreprise. Pour protéger ces connexions, les entreprises construisent des couches de solutions de sécurité réseau sur les chemins VPN. Cette opération a été effectuée afin de protéger l’infrastructure interne, ainsi que de protéger les sites web externes en reroutant le trafic vers le réseau privé virtuel (VPN), puis à partir du périmètre Internet local. Les VPN, les périmètres réseau et l’infrastructure de sécurité associée étaient souvent conçus et mis à l’ampleur pour un volume de trafic défini, généralement avec la majorité de la connectivité lancée à partir du réseau d’entreprise, et la plupart d’entre eux se trouvent dans les limites du réseau interne.
 
-Pendant un certain temps, les modèles VPN où toutes les connexions à partir de l’appareil utilisateur distant sont routés vers le réseau local (appelées **tunnel imposé**) étaient très durables tant que l’échelle simultanée des utilisateurs distants était modeste et que les volumes de trafic qui traversent le réseau privé (VPN) étaient faibles.  Certains clients ont continué à utiliser le tunnel de force VPN comme état de fait, même après que leurs applications soient déplacées de l'intérieur du périmètre de l'entreprise vers des clouds SaaS publics, Office 365 étant un excellent exemple.
+Pendant un certain temps, les modèles VPN où toutes les connexions à partir de l’appareil utilisateur distant sont routés vers le réseau local (appelées **tunnel imposé** ) étaient très durables tant que l’échelle simultanée des utilisateurs distants était modeste et que les volumes de trafic qui traversent le réseau privé (VPN) étaient faibles.  Certains clients ont continué à utiliser le tunnel de force VPN comme état de fait, même après que leurs applications soient déplacées de l'intérieur du périmètre de l'entreprise vers des clouds SaaS publics, Office 365 étant un excellent exemple.
 
 L’utilisation de réseaux privés virtuels avec tunnel imposé pour la connexion à des applications cloud distribuées et des performances est extrêmement optimale, mais l’impact négatif de cette opération peut avoir été accepté par certaines entreprises afin de maintenir l’état actuel d’une sécurité perspectives. Un exemple de diagramme de ce scénario est illustré ci-dessous :
 
@@ -49,7 +49,7 @@ La stratégie recommandée par Microsoft pour optimiser la connectivité des tra
 
 ## <a name="common-vpn-scenarios"></a>Scénarios VPN courants
 
-Dans la liste ci-dessous, vous verrez les scénarios VPN les plus courants dans les environnements d’entreprise. La plupart des clients utilisent généralement le modèle 1 (tunnel imposé VPN). Cette section vous aidera à effectuer une transition rapide et sécurisée vers le **modèle 2**, qui est réalisable avec un effort relativement faible et présente des avantages énormes pour les performances réseau et l’expérience utilisateur.
+Dans la liste ci-dessous, vous verrez les scénarios VPN les plus courants dans les environnements d’entreprise. La plupart des clients utilisent généralement le modèle 1 (tunnel imposé VPN). Cette section vous aidera à effectuer une transition rapide et sécurisée vers le **modèle 2** , qui est réalisable avec un effort relativement faible et présente des avantages énormes pour les performances réseau et l’expérience utilisateur.
 
 | **Model** | **Description** |
 | --- | --- |
@@ -91,7 +91,7 @@ Version plus avancée du numéro de modèle 2, dans laquelle tous les services i
 
 ## <a name="implement-vpn-split-tunneling"></a>Implémenter un tunnel partagé VPN
 
-Dans cette section, vous trouverez les étapes simples nécessaires pour migrer votre architecture de client VPN à partir d’un _tunnel imposé VPN_ vers un _VPN tunnel imposé VPN avec un petit nombre d’exceptions approuvées_, [modèle 2 de tunnel partagé VPN](#2-vpn-forced-tunnel-with-a-small-number-of-trusted-exceptions) dans la section [Scénarios VPN courants](#common-vpn-scenarios).
+Dans cette section, vous trouverez les étapes simples nécessaires pour migrer votre architecture de client VPN à partir d’un _tunnel imposé VPN_ vers un _VPN tunnel imposé VPN avec un petit nombre d’exceptions approuvées_ , [modèle 2 de tunnel partagé VPN](#2-vpn-forced-tunnel-with-a-small-number-of-trusted-exceptions) dans la section [Scénarios VPN courants](#common-vpn-scenarios).
 
 Le diagramme ci-dessous montre comment fonctionne la solution tunnel partagé VPN recommandée :
 
@@ -169,9 +169,9 @@ $destPrefix = "52.120.0.0/14", "52.112.0.0/14", "13.107.64.0/18" # Teams Media e
 foreach ($prefix in $destPrefix) {New-NetRoute -DestinationPrefix $prefix -InterfaceIndex $intIndex -NextHop $gateway}
 ```
 
-Dans le script ci-dessus, _$intIndex_ est l’index de l’interface connectée à Internet (trouver en exécutant **get-netadapter** dans PowerShell ; recherchez la valeur de_ifIndex_) et _$gateway_ est la passerelle par défaut de cette interface (trouver en exécutant **ipconfig** dans une invite de commandes ou **(Get-NetIPConfiguration | Foreach IPv4DefaultGateway).NextHop** dans PowerShell).
+Dans le script ci-dessus, _$intIndex_ est l’index de l’interface connectée à Internet (trouver en exécutant **get-netadapter** dans PowerShell ; recherchez la valeur de _ifIndex_ ) et _$gateway_ est la passerelle par défaut de cette interface (trouver en exécutant **ipconfig** dans une invite de commandes ou **(Get-NetIPConfiguration | Foreach IPv4DefaultGateway).NextHop** dans PowerShell).
 
-Une fois que vous avez ajouté les itinéraires, vous pouvez vérifier que la table d’itinéraires est correcte en exécutant **impression d'itinéraire** dans une invite de commandes ou dans PowerShell. La sortie doit contenir les itinéraires que vous avez ajoutés, affichant l’index d’interface (_22_ dans cet exemple) et la passerelle pour cette interface (_192.168.1.1_ dans cet exemple) :
+Une fois que vous avez ajouté les itinéraires, vous pouvez vérifier que la table d’itinéraires est correcte en exécutant **impression d'itinéraire** dans une invite de commandes ou dans PowerShell. La sortie doit contenir les itinéraires que vous avez ajoutés, affichant l’index d’interface ( _22_ dans cet exemple) et la passerelle pour cette interface ( _192.168.1.1_ dans cet exemple) :
 
 ![Sortie d’impression d’itinéraire](../media/vpn-split-tunneling/vpn-route-print.png)
 
@@ -232,7 +232,7 @@ Le trafic de signalisation est effectué via HTTPs et n’est pas comme le trafi
 
 L’un des arguments courants permettant d’éviter les tunnels partagés est qu’elle est moins sécurisée, par exemple, tout trafic qui n’utilise pas le tunnel VPN ne bénéficiera d’aucune autre méthode de chiffrement appliquée au tunnel VPN, et est donc moins sécurisé.
 
-L’argument de compteur principal permet de faire en sorte que le trafic multimédia soit déjà chiffré via _SRTP (Protocole de transport sécurisé en temps réel)_, un profil de protocole RTP (Protocole de transport en temps réel) qui assure la confidentialité, l’authentification et la protection contre les attaques contre le trafic RTP. SRTP lui-même utilise une clé de session générée de façon aléatoire, qui est échangée via le canal de signalement sécurisé TLS. Celui-ci sont décrites en détail dans [Ce guide de sécurité](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/security-guide-for-skype-for-business-online), mais la section principale est consacrée au chiffrement de médias.
+L’argument de compteur principal permet de faire en sorte que le trafic multimédia soit déjà chiffré via _SRTP (Protocole de transport sécurisé en temps réel)_ , un profil de protocole RTP (Protocole de transport en temps réel) qui assure la confidentialité, l’authentification et la protection contre les attaques contre le trafic RTP. SRTP lui-même utilise une clé de session générée de façon aléatoire, qui est échangée via le canal de signalement sécurisé TLS. Celui-ci sont décrites en détail dans [Ce guide de sécurité](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/security-guide-for-skype-for-business-online), mais la section principale est consacrée au chiffrement de médias.
 
 Le trafic multimédia est chiffré à l’aide de SRTP, qui utilise une clé de session générée par un générateur de nombres aléatoires sécurisés et échangées à l’aide du canal TLS de signalisation. De plus, le flux de contenu entrant dans les deux directions entre le serveur de médiation et son saut interne suivant est également chiffré à l’aide de SRTP.
 
@@ -266,15 +266,15 @@ Si vous avez besoin de données supplémentaires pour résoudre les problèmes, 
 
 Cette section fournit des liens vers des guides détaillés pour l’implémentation du tunnel partagée pour le trafic Office 365 des partenaires les plus courants dans cet espace. Nous ajouterons des guides à mesure qu’ils seront disponibles.
 
-- **Client VPN Windows 10** : [optimiser le trafic Office 365 pour les travailleurs distants avec le client VPN Windows 10 natif](https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-office-365-optimization)
-- **Cisco AnyConnect **: [Optimiser le tunnel mixte AnyConnect pour Office 365](https://www.cisco.com/c/en/us/support/docs/security/anyconnect-secure-mobility-client/215343-optimize-anyconnect-split-tunnel-for-off.html)
-- **Palo Alto GlobalProtect** : [optimisation du trafic Office 365 par tunnel VPN fractionné via exclusion d’accès](https://live.paloaltonetworks.com/t5/Prisma-Access-Articles/GlobalProtect-Optimizing-Office-365-Traffic/ta-p/319669)
-- **F5 Networks BIG-IP APM** : [optimiser le trafic Office 365 sur un accès à distance via des réseaux VPN lors de l’utilisation de BIG-IP APM](https://devcentral.f5.com/s/articles/SSL-VPN-Split-Tunneling-and-Office-365)
-- **Passerelle Citrix** : [optimisation du tunnel fractionné VPN de la passerelle Citrix pour Office 365](https://docs.citrix.com/en-us/citrix-gateway/13/optimizing-citrix-gateway-vpn-split-tunnel-for-office365.html)
-- **Pulse Secure** : [tunnellisation VPN : comment configurer la tunnellisation partagée pour exclure les applications Office 365](https://kb.pulsesecure.net/articles/Pulse_Secure_Article/KB44417)
-- **Check point VPN**: [Comment configurer le tunnel fractionné pour Office 365 et d’autres applications SaaS](https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk167000)
+- **Client VPN Windows 10**  : [optimiser le trafic Office 365 pour les travailleurs distants avec le client VPN Windows 10 natif](https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-office-365-optimization)
+- **Cisco AnyConnect** : [Optimiser le tunnel mixte AnyConnect pour Office 365](https://www.cisco.com/c/en/us/support/docs/security/anyconnect-secure-mobility-client/215343-optimize-anyconnect-split-tunnel-for-off.html)
+- **Palo Alto GlobalProtect**  : [optimisation du trafic Office 365 par tunnel VPN fractionné via exclusion d’accès](https://live.paloaltonetworks.com/t5/Prisma-Access-Articles/GlobalProtect-Optimizing-Office-365-Traffic/ta-p/319669)
+- **F5 Networks BIG-IP APM**  : [optimiser le trafic Office 365 sur un accès à distance via des réseaux VPN lors de l’utilisation de BIG-IP APM](https://devcentral.f5.com/s/articles/SSL-VPN-Split-Tunneling-and-Office-365)
+- **Passerelle Citrix**  : [optimisation du tunnel fractionné VPN de la passerelle Citrix pour Office 365](https://docs.citrix.com/en-us/citrix-gateway/13/optimizing-citrix-gateway-vpn-split-tunnel-for-office365.html)
+- **Pulse Secure**  : [tunnellisation VPN : comment configurer la tunnellisation partagée pour exclure les applications Office 365](https://kb.pulsesecure.net/articles/Pulse_Secure_Article/KB44417)
+- **Check point VPN** : [Comment configurer le tunnel fractionné pour Office 365 et d’autres applications SaaS](https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk167000)
 
-## <a name="faq"></a>Forum Aux Questions
+## <a name="faq"></a>FAQ
 
 L’équipe de sécurité Microsoft a publié [un article](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/) qui décrit les principales méthodes pour les professionnels de la sécurité et peut obtenir des contrôles de sécurité modernes dans les scénarios de travail à distance. De plus, vous trouverez ci-dessous quelques-unes des questions et réponses les plus fréquemment posées à ce sujet.
 
@@ -306,11 +306,11 @@ Nous pouvons ensuite déclencher une stratégie telle que approuver, déclencher
 
 Une fois encore, Office 365 offre une protection pour l’option optimiser les points de terminaison marqués dans les différentes couches du service, [décrites dans ce document](https://docs.microsoft.com/office365/Enterprise/office-365-malware-and-ransomware-protection). Comme indiqué plus haut, il est beaucoup plus efficace de fournir ces éléments de sécurité dans le service lui-même plutôt que d’essayer et de le faire en fonction des périphériques qui ne comprennent pas totalement les protocoles/trafics. Par défaut, SharePoint Online [analyse automatiquement les téléchargements de fichiers](https://docs.microsoft.com/microsoft-365/security/office-365-security/virus-detection-in-spo) pour les programmes malveillants connus.
 
-Pour les points de terminaison Exchange répertoriés ci-dessus, [Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) et [Office 365 - Protection avancée contre les menaces](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) font un excellent travail pour assurer la sécurité du trafic vers le service.
+Pour les points de terminaison Exchange mentionnés ci-dessus, [Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) et [Microsoft defender pour Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) offrent un excellent travail de sécurisation du trafic vers le service.
 
 ### <a name="can-i-send-more-than-just-the-optimize-traffic-direct"></a>Puis-je envoyer plus que le message direct Optimiser le trafic ?
 
-Une priorité doit être accordée au points de terminaison marqués **Optimiser**, car ceux-ci vous permettront de bénéficier d’un niveau de travail optimal. Toutefois, si vous le souhaitez, l’autorisation de points de terminaison marqués est requise pour que le service fonctionne et que des adresses IP fournies pour les points de terminaison pouvant être utilisés si nécessaire.
+Une priorité doit être accordée au points de terminaison marqués **Optimiser** , car ceux-ci vous permettront de bénéficier d’un niveau de travail optimal. Toutefois, si vous le souhaitez, l’autorisation de points de terminaison marqués est requise pour que le service fonctionne et que des adresses IP fournies pour les points de terminaison pouvant être utilisés si nécessaire.
 
 Il existe également différents fournisseurs qui proposent des solutions de sécurité/proxy en nuage appelés passerelles Web sécurisées, qui fournissent une application de sécurité centrale, de contrôle et de stratégie d’entreprise pour la navigation Web générale. Ces solutions peuvent fonctionner correctement dans un premier monde dans le monde entier, si elles sont hautement disponibles, performantes et configurées à proximité de vos utilisateurs en autorisant l’accès à Internet sécurisé à être remis à partir d’un emplacement en nuage proche de l’utilisateur. Cela supprime la nécessité d'une épingle à cheveux à travers le réseau VPN/d'entreprise pour le trafic de navigation général, tout en permettant un contrôle central de la sécurité.
 
@@ -324,11 +324,11 @@ Le port 80 est uniquement utilisé pour les opérations telles que la redirectio
 
 ### <a name="does-this-advice-apply-to-users-in-china-using-a-worldwide-instance-of-office-365"></a>Ces recommandations s’appliquent-ils aux utilisateurs résidant en Chine à l’aide d’une instance internationale d’Office 365 ?
 
-**Pas de**, ce n’est pas le cas. L’inconvénient des recommandations ci-dessus est que les utilisateurs résidant en Chine se connectent à une instance mondiale d’Office 365. En raison de l'encombrement fréquent des réseaux transfrontaliers dans la région, les performances de la sortie directe d'Internet peuvent être variables. La plupart des clients dans la région utilisent un réseau privé virtuel (VPN) pour transférer le trafic vers le réseau d’entreprise et utiliser leur circuit MPLS autorisé ou similaires à des sortir du pays via un chemin optimisé. Cette opération est décrite plus loin dans l’article [Optimisation des performances de Microsoft Office 365 pour les utilisateurs résidant en Chine](microsoft-365-networking-china.md).
+**Pas de** , ce n’est pas le cas. L’inconvénient des recommandations ci-dessus est que les utilisateurs résidant en Chine se connectent à une instance mondiale d’Office 365. En raison de l'encombrement fréquent des réseaux transfrontaliers dans la région, les performances de la sortie directe d'Internet peuvent être variables. La plupart des clients dans la région utilisent un réseau privé virtuel (VPN) pour transférer le trafic vers le réseau d’entreprise et utiliser leur circuit MPLS autorisé ou similaires à des sortir du pays via un chemin optimisé. Cette opération est décrite plus loin dans l’article [Optimisation des performances de Microsoft Office 365 pour les utilisateurs résidant en Chine](microsoft-365-networking-china.md).
 
 ### <a name="does-split-tunnel-configuration-work-for-teams-running-in-a-browser"></a>Est-ce que le travail de configuration de tunnel scindé pour teams s’exécute dans un navigateur ?
 
-**Pas de**, ce n’est pas le cas. Elle fonctionne uniquement sur le client Microsoft teams version 1.3.00.13565 ou ultérieure. Cette version inclut des améliorations quant à la façon dont le client détecte les chemins d’accès réseau disponibles.
+**Pas de** , ce n’est pas le cas. Elle fonctionne uniquement sur le client Microsoft teams version 1.3.00.13565 ou ultérieure. Cette version inclut des améliorations quant à la façon dont le client détecte les chemins d’accès réseau disponibles.
 
 ## <a name="related-topics"></a>Voir aussi
 

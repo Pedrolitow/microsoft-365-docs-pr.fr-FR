@@ -1,5 +1,5 @@
 ---
-title: Fonction AssignedIPAddresses () pour la protection avancée contre les menaces Microsoft
+title: Fonction AssignedIPAddresses () dans la chasse avancée pour Microsoft 365 Defender
 description: Découvrez comment utiliser la fonction AssignedIPAddresses () pour obtenir les dernières adresses IP affectées à un appareil
 keywords: chasse aux menaces, recherche de menace, recherche de menace informatique, protection contre les menaces Microsoft, Microsoft 365, MTP, M365, recherche, requête, télémétrie, référence de schéma, Kusto, FileProfile, profil de fichier, fonction, enrichissement
 search.product: eADQiWindows 10XVcnh
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 462a4884e2b17f9ae75ea3bdc1531b180dcc5934
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: cb9dffca148c95f284a6a7e920f3a08a839b748d
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430126"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847643"
 ---
 # <a name="assignedipaddresses"></a>AssignedIPAddresses()
 
@@ -32,7 +32,7 @@ ms.locfileid: "48430126"
 
 
 **S’applique à :**
-- Protection Microsoft contre les menaces
+- Microsoft 365 Defender
 
 Utilisez la `AssignedIPAddresses()` fonction dans vos requêtes de [chasse avancée](advanced-hunting-overview.md) pour obtenir rapidement les dernières adresses IP qui ont été affectées à un appareil. Si vous spécifiez un argument timestamp, cette fonction obtient les adresses IP les plus récentes à l’heure spécifiée. 
 
@@ -54,8 +54,8 @@ AssignedIPAddresses(x, y)
 
 ## <a name="arguments"></a>Arguments
 
-- **x**— `DeviceId` ou `DeviceName` valeur identifiant l’appareil
-- **y**— `Timestamp` valeur (DateTime) indiquant à la fonction d’obtenir les adresses IP affectées les plus récentes à partir d’un certain temps. Si ce n’est pas spécifié, la fonction renvoie les dernières adresses IP.
+- **x** — `DeviceId` ou `DeviceName` valeur identifiant l’appareil
+- **y** — `Timestamp` valeur (DateTime) indiquant à la fonction d’obtenir les adresses IP affectées les plus récentes à partir d’un certain temps. Si ce n’est pas spécifié, la fonction renvoie les dernières adresses IP.
 
 ## <a name="examples"></a>範例
 

@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Utilisez ce guide de laboratoire de test pour activer des paramètres de sécurité Microsoft 365 supplémentaires pour votre environnement de test Microsoft 365.
-ms.openlocfilehash: 7c3300111f5999714b87a176087207a1651cdcaf
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: d385688a6e59ee500442bcf1b815dfd165102242
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487399"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846999"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-for-enterprise-test-environment"></a>Amélioration de la sécurité Microsoft 365 pour votre environnement de test Microsoft 365 pour les entreprises
 
@@ -57,16 +57,16 @@ Les applications qui ne prennent pas en charge l’authentification moderne ne p
  
 2. Dans le nouvel onglet **Centre d’administration Microsoft 365** , sous **centres d’administration** dans le volet de navigation de gauche, cliquez sur **SharePoint**.
 3. Dans le nouvel onglet **Centre d’administration SharePoint** , cliquez sur **stratégies > contrôle d’accès**.
-4. Cliquez sur **applications qui ne prennent pas en charge l’authentification moderne**, sélectionnez **bloquer l’accès**, puis cliquez sur **Enregistrer**.
+4. Cliquez sur **applications qui ne prennent pas en charge l’authentification moderne** , sélectionnez **bloquer l’accès** , puis cliquez sur **Enregistrer**.
 
 
-### <a name="enable-advanced-threat-protection-for-sharepoint-onedrive-for-business-and-microsoft-teams"></a>Activer la protection avancée contre les menaces pour SharePoint, OneDrive entreprise et Microsoft teams
+### <a name="enable-defender-for-office-365-for-sharepoint-onedrive-for-business-and-microsoft-teams"></a>Activer Defender pour Office 365 pour SharePoint, OneDrive entreprise et Microsoft teams
 
-Office 365 Advanced Threat Protection (ATP) for SharePoint, OneDrive et Microsoft teams protège votre organisation contre le partage accidentel de fichiers malveillants.
+Defender for Office 365 for SharePoint, OneDrive et Microsoft teams protège votre organisation contre le partage accidentel de fichiers malveillants.
 
 1. Accédez au [Centre de sécurité & conformité](https://protection.office.com) et connectez-vous avec votre compte d’administrateur général.
 
-2. Dans le volet de navigation de gauche, sous **gestion des menaces**, cliquez sur **stratégie**, puis sur **pièces jointes approuvées ATP**. 
+2. Dans le volet de navigation de gauche, sous **gestion des menaces** , cliquez sur **stratégie** , puis sur **pièces jointes fiables**. 
 
 3. Sous **protéger les fichiers dans SharePoint, OneDrive et Microsoft teams**. Sélectionnez Activer la protection avancée contre **les menaces pour SharePoint, OneDrive et Microsoft teams**.
 
@@ -85,7 +85,7 @@ Pour vérifier que le traitement anti-programme malveillant est effectué sur de
 2. Cliquez sur **anti-programme malveillant**.
 3. Double-cliquez sur la stratégie nommée **default**.
 4. Dans la fenêtre **stratégie anti-programme malveillant** , cliquez sur **paramètres**.
-4. Sous **Common Attachment types Filter**, sélectionnez **activé**, puis cliquez sur **Enregistrer**.
+4. Sous **Common Attachment types Filter** , sélectionnez **activé** , puis cliquez sur **Enregistrer**.
 
 
 ## <a name="phase-3-examine-the-security-dashboard"></a>Phase 3 : examiner le tableau de bord de sécurité
@@ -96,7 +96,7 @@ Pour afficher le tableau de bord de sécurité :
 
 1. Si nécessaire, accédez au [Centre de sécurité & conformité](https://protection.office.com) et connectez-vous avec votre compte d’administrateur général.
 
-2. Dans le volet de navigation de gauche, sous **gestion des menaces**, cliquez sur **tableau de bord**.
+2. Dans le volet de navigation de gauche, sous **gestion des menaces** , cliquez sur **tableau de bord**.
 
 Examinez attentivement toutes les cartes du tableau de bord pour vous familiariser avec les informations fournies.
 

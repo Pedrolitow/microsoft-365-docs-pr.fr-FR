@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 6c758c05a64cd7ce84a2b021fe32f9e5ce5c1090
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 97640c318908b87c211caed780624080508a255f
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48431062"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847343"
 ---
 # <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>Recherche de menaces sur les appareils, les e-mails, les applications et les identités
 
@@ -32,12 +32,12 @@ ms.locfileid: "48431062"
 
 
 **S’applique à :**
-- Protection Microsoft contre les menaces
+- Microsoft 365 Defender
 
-La recherche [avancée](advanced-hunting-overview.md) dans Microsoft Threat Protection vous permet de rechercher de façon proactive les menaces parmi les éléments suivants :
-- Appareils gérés par Microsoft Defender ATP
+La [chasse avancée](advanced-hunting-overview.md) dans Microsoft 365 Defender vous permet de rechercher de façon proactive les menaces parmi les éléments suivants :
+- Appareils gérés par Microsoft Defender pour le point de terminaison
 - Messages électroniques traités par Microsoft 365
-- Activités d’application Cloud, événements d’authentification et activités de contrôleur de domaine suivis par Microsoft Cloud App Security and Azure ATP
+- Activités d’application Cloud, événements d’authentification et activités de contrôleur de domaine suivis par Microsoft Cloud App Security et Microsoft Defender for Identity
 
 Ce niveau de visibilité vous permet de rechercher rapidement les menaces qui traversent les sections de votre réseau, notamment les intrusions sophistiquées qui arrivent sur le courrier électronique ou le Web, d’élever les privilèges locaux, d’acquérir des informations d’identification de domaine privilégié et de se déplacer par la suite vers l’ensemble de vos appareils. 
 

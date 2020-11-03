@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 06a82fda31e602ed2feb53d00e8839daf801bf7e
-ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
+ms.openlocfilehash: a9f983cebfbed1482fca7e44b77c200cbd9574ac
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48277483"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847117"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migration de boîtes aux lettres entre clients (aperçu)
 
@@ -99,17 +99,17 @@ Préparez le client source :
 
     | Paramètre | Valeur | Obligatoire ou facultatif
     |---------------------------------------------|-----------------|--------------|
-    | -ResourceTenantDomain                       | Domaine client source, tel que Fabrikam \. onmicrosoft.com. | Obligatoire |
-    | -ResourceTenantAdminEmail                   | Adresse de messagerie de l’administrateur client source. Il s’agit de l’administrateur client source qui sera envoyé à l’utilisation de l’application de migration de boîtes aux lettres envoyée par l’administrateur cible. Il s’agit de l’administrateur qui recevra l’invitation par courrier électronique pour l’application. | Obligatoire |
-    | -TargetTenantDomain                         | Domaine client cible, tel que contoso \. onmicrosoft.com. | Obligatoire |
-    | -ResourceTenantId                           | ID de l’organisation cliente source (GUID). | Obligatoire |
-    | -SubscriptionId                             | Abonnement Azure à utiliser pour créer des ressources. | Obligatoire |
-    | -N                              | Nom du groupe de ressources Azure qui contient ou contiendra le coffre-fort de clés. | Obligatoire |
-    | -KeyVaultName                               | Instance de coffre-fort de clés Azure qui stockera votre certificat/secret d’application de migration de boîte aux lettres. | Obligatoire |
-    | -CertificateName                            | Nom du certificat lors de la génération ou de la recherche de certificat dans le coffre-fort. | Obligatoire |
-    | -CertificateSubject                         | Nom d’objet du certificat Azure Key Vault, tel que CN = contoso_fabrikam. | Obligatoire |
+    | -ResourceTenantDomain                       | Domaine client source, tel que Fabrikam \. onmicrosoft.com. | Requis |
+    | -ResourceTenantAdminEmail                   | Adresse de messagerie de l’administrateur client source. Il s’agit de l’administrateur client source qui sera envoyé à l’utilisation de l’application de migration de boîtes aux lettres envoyée par l’administrateur cible. Il s’agit de l’administrateur qui recevra l’invitation par courrier électronique pour l’application. | Requis |
+    | -TargetTenantDomain                         | Domaine client cible, tel que contoso \. onmicrosoft.com. | Requis |
+    | -ResourceTenantId                           | ID de l’organisation cliente source (GUID). | Requis |
+    | -SubscriptionId                             | Abonnement Azure à utiliser pour créer des ressources. | Requis |
+    | -N                              | Nom du groupe de ressources Azure qui contient ou contiendra le coffre-fort de clés. | Requis |
+    | -KeyVaultName                               | Instance de coffre-fort de clés Azure qui stockera votre certificat/secret d’application de migration de boîte aux lettres. | Requis |
+    | -CertificateName                            | Nom du certificat lors de la génération ou de la recherche de certificat dans le coffre-fort. | Requis |
+    | -CertificateSubject                         | Nom d’objet du certificat Azure Key Vault, tel que CN = contoso_fabrikam. | Requis |
     | -ExistingApplicationId                      | Application de migration de messagerie à utiliser si une application a déjà été créée. | Facultatif |
-    | -AzureAppPermissions                        | Les autorisations doivent être accordées à l’application de migration de boîtes aux lettres, telle qu’Exchange ou MSGraph (Exchange pour le transfert de boîtes aux lettres, MSGraph pour l’utilisation de cette application pour envoyer une invitation de lien de consentement au locataire de ressources). | Obligatoire |
+    | -AzureAppPermissions                        | Les autorisations doivent être accordées à l’application de migration de boîtes aux lettres, telle qu’Exchange ou MSGraph (Exchange pour le transfert de boîtes aux lettres, MSGraph pour l’utilisation de cette application pour envoyer une invitation de lien de consentement au locataire de ressources). | Requis |
     | -UseAppAndCertGeneratedForSendingInvitation | Paramètre d’utilisation de l’application créée pour la migration à utiliser pour envoyer une invitation de lien de consentement à l’administrateur de client source. Si ce n’est pas le cas, vous pouvez demander aux informations d’identification de l’administrateur cible de se connecter au gestionnaire d’invitations et envoyer l’invitation en tant qu’administrateur cible. | Facultatif |
     | -KeyVaultAuditStorageAccountName            | Le compte de stockage dans lequel les journaux d’audit du coffre-fort principal seraient stockés. | Facultatif |
     | -KeyVaultAuditStorageResourceGroup          | Le groupe de ressources qui contient le compte de stockage pour le stockage des journaux d’audit de coffre de clés. | Facultatif |
@@ -407,7 +407,7 @@ L’envoi de lots de migration est également pris en charge à partir du nouvea
 
 Une fois que la boîte aux lettres passe de la source à la cible, vous devez vous assurer que les utilisateurs de messagerie locaux, source et cible, sont mis à jour avec le nouvel targetAddress. Dans les exemples, le targetDeliveryDomain utilisé dans le déplacement est **contoso \. onmicrosoft.com**. Mettez à jour les utilisateurs de messagerie à l’aide de ce targetAddress.
  
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Foire aux questions
  
 **Faut-il mettre à jour RemoteMailboxes dans la source en local après le déplacement ?**
  
@@ -533,7 +533,7 @@ NT AUTHORITY\SELF                                {FullAccess, ReadPermission}   
 
 - **Problème : les MailUsers de Cloud avec un protocole SMTP proxyAddress Block Mme se déplace en arrière-plan.** Lors de la création d’objets MailUser de client cible, vous devez vous assurer que toutes les adresses proxy SMTP appartiennent à l’organisation cliente cible. S’il existe un proxyAddress SMTP sur l’utilisateur de messagerie cible qui n’appartient pas au client local, la conversion de MailUser en boîte aux lettres est bloquée. Cela est dû à notre assurance que les objets de boîte aux lettres peuvent uniquement envoyer des messages à partir de domaines pour lesquels le client fait autorité (domaines réclamés par le client) : 
 - 
-   - Lorsque vous synchronisez des utilisateurs sur site à l’aide d’Azure AD Connect, vous configurez des objets MailUser sur site avec ExternalEmailAddress pointant vers le client source où la boîte aux lettres existe (laran@contoso \. onmicrosoft.com) et vous marquez le PrimarySmtpAddress comme un domaine qui réside dans le client cible (Lara. Newton@northwind \. com). Ces valeurs sont synchronisées avec le client et un utilisateur de messagerie approprié est mis en service et prêt pour la migration. Un exemple d’objet est illustré ici.
+   - Lorsque vous synchronisez des utilisateurs sur site à l’aide d’Azure AD Connect, vous configurez des objets MailUser sur site avec ExternalEmailAddress pointant vers le client source où la boîte aux lettres existe (laran@contoso \. onmicrosoft.com) et vous marquez le PrimarySmtpAddress comme un domaine qui réside dans le client cible (Lara.Newton@northwind \. com). Ces valeurs sont synchronisées avec le client et un utilisateur de messagerie approprié est mis en service et prêt pour la migration. Un exemple d’objet est illustré ici.
      ```powershell
      target/AADSynced user] PS C> Get-MailUser laran | select ExternalEmailAddress, EmailAddresses   
      ExternalEmailAddress               EmailAddresses 
@@ -542,7 +542,7 @@ NT AUTHORITY\SELF                                {FullAccess, ReadPermission}   
      ```
 
    > [!Note]
-   > L’adresse * \. com contoso. onmicrosoft* n’est *pas* présente dans le tableau EmailAddresses/proxyAddresses.
+   > L’adresse *\. com contoso. onmicrosoft* n’est *pas* présente dans le tableau EmailAddresses/proxyAddresses.
 
 - **Problème : les objets MailUser avec des adresses SMTP principales « externes » sont modifiés/réinitialisés sur les domaines « internes » demandés par l’entreprise**
 
@@ -644,8 +644,8 @@ NT AUTHORITY\SELF                                {FullAccess, ReadPermission}   
    | Centre d’affaires Microsoft                         |
    | Microsoft MyAnalytics (complet)                      |
    | Office 365 Advanced eDiscovery                    |
-   | Office 365 – Protection avancée contre les menaces (plan 1)    |
-   | Office 365 – Protection avancée contre les menaces (plan 2)    |
+   | Microsoft Defender pour Office 365 (plan 1)    |
+   | Microsoft Defender pour Office 365 (plan 2)    |
    | Office 365 Privileged Access Management           |
    | Outlook Customer Manager                          |
    | Chiffrement Premium dans Office 365                  |

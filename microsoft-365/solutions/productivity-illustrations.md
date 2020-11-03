@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 9c4898f6ecf17ad57da9ecd54499764c7efc2a6c
-ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
+ms.openlocfilehash: 160211fe481d14749bd778255e6844b12aa80672
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48816873"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847235"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Illustrations de productivité Microsoft 365
 
@@ -58,14 +58,14 @@ Sécurité et protection des informations pour les organisations multi-régions 
 |:-----|:-----|
 |[![Image miniature pour l’infographie multi-régions](../media/solutions-architecture-center/multi-region-single-tenant-security-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.vsdx)<br>Mise à jour de Mars 2020 |L’utilisation d’un seul client Microsoft 365 pour votre organisation mondiale constitue le meilleur choix et la meilleure expérience pour de multiples raisons. Cependant, de nombreux architectes sont aux prises avec la façon de se conformer aux objectifs de sécurité et de protection des informations dans différentes régions. Cet ensemble de thèmes fournit des recommandations. |
 
-### <a name="microsoft-defender-atp-deployment-strategy"></a>Stratégie de déploiement Microsoft Defender - Protection avancée contre les menaces
+### <a name="microsoft-defender-for-endpoint-deployment-strategy"></a>Stratégie de déploiement de Microsoft Defender pour le point de terminaison
 
 Selon votre environnement, certains outils conviennent mieux à certaines architectures.
 
 
 | Item | Description |
 |:-----|:-----|
-|[![Image de pouce pour le stratégie de déploiement Microsoft Defender - Protection avancée contre les menaces](../media/solutions-architecture-center/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.vsdx) <br>Mise à jour de février 2020| Le matériel architectural vous aide à planifier votre déploiement pour les architectures suivantes : <ul><li> Cloud-natif </li><li> Cogestion </li><li> Sur site</li><li>Évaluation et intégration locale</li>
+|[![Image miniature de Microsoft Defender pour la stratégie de déploiement du point de terminaison](../media/solutions-architecture-center/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.vsdx) <br>Mise à jour de février 2020| Le matériel architectural vous aide à planifier votre déploiement pour les architectures suivantes : <ul><li> Cloud-natif </li><li> Cogestion </li><li> Sur site</li><li>Évaluation et intégration locale</li>
 
 
 <a name="BKMK_O365IDP"></a>

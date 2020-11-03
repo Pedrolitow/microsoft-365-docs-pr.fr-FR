@@ -1,5 +1,5 @@
 ---
-title: Enquêter sur les incidents dans la Protection Microsoft contre les menaces
+title: Enquête sur les incidents dans Microsoft 365 Defender
 description: Analyser les incidents liés aux appareils, aux utilisateurs et aux boîtes aux lettres.
 keywords: incident, incidents, ordinateurs, appareils, utilisateurs, identités, courrier, courrier électronique, boîte aux lettres, investigation, graphique, preuves
 search.product: eADQiWindows 10XVcnh
@@ -21,33 +21,33 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 7a4e901c016d55115eb79001ff2fc42d2340f8f2
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: a6cdf55b33c91a33675bb4909c0cb08e8561d212
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430596"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846747"
 ---
-# <a name="investigate-incidents-in-microsoft-threat-protection"></a>Enquêter sur les incidents dans la Protection Microsoft contre les menaces
+# <a name="investigate-incidents-in-microsoft-365-defender"></a>Enquête sur les incidents dans Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **S’applique à :**
 
-- Protection Microsoft contre les menaces
+- Microsoft 365 Defender
 
-La Protection Microsoft contre les menaces regroupe toutes les alertes, ressources, examens et preuves connexes provenant de vos appareils, utilisateurs et boîtes aux lettres pour vous offrir une vue d’ensemble complète de la gamme d’attaques.
+Microsoft 365 Defender agrège toutes les alertes, les ressources, les analyses et les preuves associées de tous vos appareils, utilisateurs et boîtes aux lettres pour vous donner une vue d’ensemble complète de l’étendue d’une attaque.
 
 Examinez les alertes qui affectent votre réseau, déterminez leur signification et rassemblez des preuves associées aux incidents pour mettre en place une formule corrective efficace.
 
 ## <a name="investigate-an-incident"></a>Examiner un incident
 
-1. Sélectionnez un incident dans la file d’attente des incidents. <BR> Cette opération ouvre un volet latéral et donne un aperçu des informations importantes telles que l’État, la gravité, les catégories et les entités affectées.
+1. Sélectionnez un incident dans la file d’attente des incidents. <BR> Un volet latéral s’ouvre et donne un aperçu des informations importantes, telles que l’État, la gravité, les catégories et les entités affectées.
 
     ![Image du volet latéral de l’incident](../../media/incident-side-panel.png)
 
-2. Sélectionnez **Ouvrir la page incident**. <BR> La page incident s’ouvre, dans laquelle vous trouverez des informations supplémentaires sur l’incident, des commentaires et des actions, des onglets (vue d’ensemble, alertes, appareils, utilisateurs, examens, preuves).
+2. Sélectionnez **Ouvrir la page incident**. <BR> Cette action ouvre la page incident où vous trouverez des informations supplémentaires sur l’incident, des commentaires et des actions, des onglets (vue d’ensemble, alertes, périphériques, utilisateurs, enquêtes, preuves).
 
 3. Examinez les alertes, les appareils, les utilisateurs et les autres entités impliquées dans l’incident.
 
@@ -57,7 +57,7 @@ La page de présentation vous permet d’accéder à un instantané de l’évé
 
 ![Image de la page de présentation des incidents](../../media/incidents-overview.png)
 
-Les catégories d’attaques vous donnent une vue visuelle et numérique de l’avancement de l’attaque par rapport à la chaîne de terminaison. Comme pour les autres produits de sécurité Microsoft, la Protection Microsoft contre les menaces est alignée à l’infrastructure [MITRE ATT&CK&trade;](https://attack.mitre.org/).
+Les catégories d’attaque vous donnent un aperçu visuel et numérique de la progression de l’attaque par rapport à la chaîne Kill. Comme pour d’autres produits de sécurité Microsoft, Microsoft 365 Defender est aligné sur l’infrastructure [Mitre ATT &trade;&CK](https://attack.mitre.org/) .
 
 La section l'étendue fournit la liste des principales ressources affectées à cet incident. S’il existe des informations spécifiques sur cet élément (par exemple, niveau de risque, priorité d’examen, et balisage sur les éléments) qui s’affichent également dans cette section.
 
@@ -69,11 +69,11 @@ Cette vue d’ensemble peut vous aider à procéder au triage initial de l’inc
 
 ## <a name="alerts"></a>Alertes
 
-Vous pouvez afficher toutes les alertes relatives à l’incident et d’autres informations les concernant, telles que la gravité, les entités impliquées dans l’alerte, la source des alertes (Azure - Protection avancée contre les menaces, Microsoft Defender - Protection avancée contre les menaces, Office 365 - Protection avancée contre les menaces) et la raison pour laquelle ils ont été associés.
+Vous pouvez afficher toutes les alertes liées à l’incident et d’autres informations les concernant telles que la gravité, les entités impliquées dans l’alerte, la source des alertes (Microsoft Defender pour l’identité, Microsoft Defender pour les points de terminaison, Microsoft Defender pour Office 365) et la raison pour laquelle ils ont été associés.
 
 ![Image de la page alertes d’incident](../../media/incident-alerts.png)
 
-Par défaut, les alertes sont classées par ordre chronologique, pour vous permettre de consulter d’abord l’attaque au fil du temps. En cliquant sur chaque alerte, vous accédez à la page d'alerte correspondante sur laquelle vous pouvez effectuer un examen approfondi de cette alerte.
+Par défaut, les alertes sont classées par ordre chronologique, pour vous permettre de consulter d’abord l’attaque au fil du temps. Si vous cliquez sur chaque alerte, la page d’alerte appropriée s’affiche pour vous permettre d’effectuer une analyse approfondie de cette alerte.
 
 ## <a name="devices"></a>Appareils
 
@@ -95,21 +95,21 @@ En cliquant sur le nom d'utilisateur, vous accédez à la page Cloud App Securit
 
 ## <a name="mailboxes"></a>Boîtes aux lettres
 
-Examinez les boîtes aux lettres qui ont été identifiés comme faisant partie d'un incident ou y étant liés. Pour approfondir l’examen, la sélection de l’alerte liée au courrier permet d’ouvrir Office 365 - Protection avancée contre les menaces dans laquelle vous pouvez prendre des actions de correction.
+Examinez les boîtes aux lettres qui ont été identifiés comme faisant partie d'un incident ou y étant liés. Pour effectuer une enquête supplémentaire, la sélection de l’alerte liée au courrier ouvre Microsoft Defender pour Office 365 où vous pouvez prendre des mesures correctives.
 
 ![Image de l’onglet boîte aux lettres d’un incident](../../media/incident-mailboxes.png)
 
 ## <a name="investigations"></a>Examens
 
-Sélectionnez **enquêtes** pour afficher toutes les analyses automatisées déclenchées par des alertes dans cet incident. Les examens effectuent des actions de correction ou attendent l’approbation d’analystes d’actions, en fonction de la manière dont vous avez configuré vos examens automatisés pour qu’ils s’exécutent dans Microsoft Defender - Protection contre les menaces et Office 365 - Protection avancée contre les menaces.
+Sélectionnez **enquêtes** pour afficher toutes les analyses automatisées déclenchées par des alertes dans cet incident. Les enquêtes effectuent des actions de correction ou attendent l’approbation d’un analyste d’actions, en fonction de la configuration de vos investigations automatisées à exécuter dans Microsoft Defender for Endpoint and Defender for Office 365.
 
 ![Image de l’onglet examens d’un incident](../../media/incident-investigations.png)
 
-Sélectionnez un examen pour accéder à la page Détails de l’examen pour obtenir des informations complètes sur l’état l’examen et de la correction. S’il existe des actions en attente d’approbation dans le cadre de l’examen, celles-ci s’affichent dans l’onglet actions en attente. Effectuez des actions dans le cadre de la correction des incidents.
+Sélectionnez un examen pour accéder à la page Détails de l’examen pour obtenir des informations complètes sur l’état l’examen et de la correction. S’il existe des actions en attente d’approbation dans le cadre de l’enquête, elles apparaissent dans l’onglet actions en attente. Prendre des mesures dans le cadre de la correction des incidents.
 
 ## <a name="evidence"></a>Évidence
 
-La Protection Microsoft contre les menaces examine automatiquement tous les événements et entités suspects pris en charge par les incidents dans les alertes, et vous fournit des réponses automatiques et des informations sur les fichiers, processus, services, courriers électroniques et bien plus encore. Cela permet de détecter et de bloquer rapidement les menaces potentielles dans l’incident.
+Microsoft 365 Defender examine automatiquement tous les événements pris en charge par les incidents et les entités suspectes dans les alertes, en vous fournissant une réponse automatique et des informations sur les fichiers, les processus, les services, les e-mails et bien plus encore. Cela permet de détecter et de bloquer rapidement les menaces potentielles dans l’incident.
 
 ![Image de l’onglet preuve d’un incident](../../media/incident-evidence.png)
 
