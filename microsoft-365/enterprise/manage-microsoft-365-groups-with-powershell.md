@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: Dans cet article, Découvrez comment effectuer des tâches de gestion courantes pour les groupes Microsoft 365 dans PowerShell.
-ms.openlocfilehash: c1aa551597644b7f41c3445a791ea27579464f7b
-ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
+ms.openlocfilehash: 1cad2aa39a6b106cbb4dbfbafa995899b2442ed1
+ms.sourcegitcommit: 9d1351ea6d9942550b52132817f9f9693ddef2fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48277476"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "48830614"
 ---
 # <a name="manage-microsoft-365-groups-with-powershell"></a>Gérer les groupes Microsoft 365 avec PowerShell
 
@@ -125,7 +125,7 @@ Set-UnifiedGroup -Identity "Legal Department" -HiddenFromAddressListsEnabled $tr
 
 Si vous ne voulez pas que les utilisateurs d’autres organisations puissent envoyer des courriers électroniques à un groupe Microsoft 365, vous pouvez modifier les paramètres de ce groupe. Il permettra uniquement aux utilisateurs internes d’envoyer un courrier électronique à votre groupe. Si un utilisateur externe tente d’envoyer un message à ce groupe, celui-ci sera rejeté.
 
-Exécutez la cmdlet Set-UnifiedGroup pour mettre à jour ce paramètre, comme suit :
+Exécutez l’applet de commande Set-UnifiedGroup pour mettre à jour ce paramètre, comme suit :
 
 ```powershell
 Set-UnifiedGroup -Identity "Internal senders only" -RequireSenderAuthenticationEnabled $true
@@ -136,7 +136,7 @@ Set-UnifiedGroup -Identity "Internal senders only" -RequireSenderAuthenticationE
 
 Chaque fois qu’un expéditeur tente d’envoyer un message électronique à un groupe Microsoft 365, un info-courrier peut s’afficher.
 
-Exécutez la cmdlet Set-Unified Group pour ajouter un info-courrier au groupe :
+Exécutez l’applet de commande de groupe de Set-Unified pour ajouter un info-courrier au groupe :
 
 ```powershell
 Set-UnifiedGroup -Identity "MailTip Group" -MailTip "This group has a MailTip"
@@ -181,10 +181,10 @@ Les applets de commande suivantes peuvent être utilisées avec les groupes Micr
 |:-----|:-----|
 |[Get-UnifiedGroup](https://go.microsoft.com/fwlink/p/?LinkId=616182) <br/> |Utilisez cette applet de commande pour rechercher des groupes Microsoft 365 existants et afficher les propriétés de l’objet de groupe.  <br/> |
 |[Set-UnifiedGroup](https://go.microsoft.com/fwlink/p/?LinkId=616189) <br/> |Mettre à jour les propriétés d’un groupe Microsoft 365 spécifique  <br/> |
-|[New-UnifiedGroup](https://go.microsoft.com/fwlink/p/?LinkId=616183) <br/> |Créez un groupe Microsoft 365. Cette applet de commande fournit un ensemble minimal de paramètres. Pour définir des valeurs pour les propriétés étendues, utilisez Set-UnifiedGroup après avoir créé le groupe.  <br/> |
+|[New-UnifiedGroup](https://go.microsoft.com/fwlink/p/?LinkId=616183) <br/> |Créez un groupe Microsoft 365. Cette applet de commande fournit un ensemble minimal de paramètres. Pour définir les valeurs des propriétés étendues, utilisez Set-UnifiedGroup après avoir créé le groupe.  <br/> |
 |[Remove-UnifiedGroup](https://go.microsoft.com/fwlink/p/?LinkId=616186) <br/> |Supprimer un groupe Microsoft 365 existant  <br/> |
 |[Get-UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616194) <br/> |Récupérer les informations d’appartenance et de propriétaire pour un groupe Microsoft 365  <br/> |
-|[Add-UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616191) <br/> |Ajouter des centaines ou des milliers d’utilisateurs ou de nouveaux propriétaires à un groupe Microsoft 365 existant  <br/> |
+|[Add-UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616191) <br/> |Ajouter des membres, des propriétaires et des abonnés à un groupe Microsoft 365 existant <br/> |
 |[Remove-UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616195) <br/> |Supprimer des propriétaires et des membres d’un groupe Microsoft 365 existant  <br/> |
 |[Get-applet userphoto](https://go.microsoft.com/fwlink/p/?LinkId=536510) <br/> |Permet d’afficher des informations sur la photo de l’utilisateur associée à un compte. Les photos des utilisateurs sont stockées dans Active Directory  <br/> |
 |[Set-applet userphoto](https://go.microsoft.com/fwlink/p/?LinkId=536511) <br/> |Utilisé pour associer une photo d’utilisateur à un compte. Les photos des utilisateurs sont stockées dans Active Directory  <br/> |
@@ -194,7 +194,7 @@ Les applets de commande suivantes peuvent être utilisées avec les groupes Micr
 
 [Mettre à niveau les listes de distribution vers des groupes Microsoft 365](https://docs.microsoft.com/office365/admin/manage/upgrade-distribution-lists)
 
-[Gérer les personnes autorisées à créer des groupes Microsoft 365](https://docs.microsoft.com/office365/admin/create-groups/manage-creation-of-groups)
+[Gérer les personnes autorisées à créer des groupes Microsoft 365](https://docs.microsoft.com/office365/admin/create-groups/manage-creation-of-groups)
 
 [Gérer l’accès invité aux groupes Microsoft 365](https://support.office.com/article/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 

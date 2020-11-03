@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Découvrez comment déployer des compléments pour les utilisateurs et les groupes de votre organisation à l’aide du déploiement centralisé dans le centre d’administration.
-ms.openlocfilehash: 20ebdfd2072c49fabadcbaf66dead54e75f9becd
-ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.openlocfilehash: 9708ec9877c4d07b0cf93ea9d6815303236eff4b
+ms.sourcegitcommit: 9d1351ea6d9942550b52132817f9f9693ddef2fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48304791"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "48830636"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>Déployer des compléments dans le centre d’administration
 
@@ -63,33 +63,33 @@ Avant de commencer, consultez [la rubrique déterminer si un déploiement centra
   
 1. Dans le centre d’administration, accédez à **Settings** la \> page **compléments** de paramètres. Si vous ne voyez pas la page **de complément** , accédez à la page **paramètres** \> **intégrés applications intégrées** \> **Add-ins** .
     
-2. Sélectionnez **déployer un complément** en haut de la page, puis cliquez sur **suivant**.
+2. Sélectionnez **déployer un complément** en haut de la page, puis cliquez sur **suivant** .
  
     > [!NOTE]
-    > Le centre d’administration est mis à jour vers l’expérience de déploiement avec des applications intégrées. Si vous ne voyez pas les étapes ci-dessus, accédez à la section déploiement centralisé en accédant à **paramètres**  >  **intégrés**dans les applications. En haut de la page **applications intégrées** , choisissez **compléments**.
+    > Le centre d’administration est mis à jour vers l’expérience de déploiement avec des applications intégrées. Si vous ne voyez pas les étapes ci-dessus, accédez à la section déploiement centralisé en accédant à **paramètres**  >  **intégrés** dans les applications. En haut de la page **applications intégrées** , choisissez **compléments** .
     
 3. Sélectionnez une option et suivez les instructions.
   
 4. Si vous avez sélectionné l’option d’ajout d’un complément à partir de l’Office Store, effectuez votre sélection de complément. </br>
 
-    Vous pouvez afficher les compléments disponibles par catégories : **suggestions pour vous**, **évaluation**ou **nom**. Seuls les compléments gratuits sont disponibles dans l’Office Store. Les compléments payants ne sont pas pris en charge pour le moment. Une fois que vous avez sélectionné un complément, acceptez les conditions requises pour continuer. <br/> 
+    Vous pouvez afficher les compléments disponibles par catégories : **suggestions pour vous** , **évaluation** ou **nom** . Seuls les compléments gratuits sont disponibles dans l’Office Store. Les compléments payants ne sont pas pris en charge pour le moment. Une fois que vous avez sélectionné un complément, acceptez les conditions requises pour continuer. <br/> 
 
     > [!NOTE] 
-    > Avec l’option Office Store, les mises à jour et les améliorations sont apportées automatiquement aux utilisateurs.
+    > Avec l’option Office Store, les mises à jour et les améliorations sont automatiquement déployées pour les utilisateurs.
 
-5. Sur la page suivante, sélectionnez **Tout le monde**, **Utilisateurs/groupes spécifiques**ou **Moi uniquement** pour spécifier les personnes vers lesquelles le complément est déployé. Utilisez la zone de recherche pour rechercher des utilisateurs ou des groupes spécifiques. <br/>
+5. Sur la page suivante, sélectionnez **Tout le monde** , **Utilisateurs/groupes spécifiques** ou **Moi uniquement** pour spécifier les personnes vers lesquelles le complément est déployé. Utilisez la zone de recherche pour rechercher des utilisateurs ou des groupes spécifiques. <br/>
 
     > [!NOTE] 
     > Pour en savoir plus sur les autres États qui s’appliquent à un complément, consultez la rubrique [États des compléments](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center.md).
   
-6. Sélectionnez **Déployer**.
+6. Sélectionnez **Déployer** .
   
 7. Une coche verte apparaît lorsque le complément est déployé. Suivez les instructions sur la page pour tester le complément.
 
     > [!NOTE]
     > Il se peut que les utilisateurs doivent relancer Office pour afficher l’icône du complément sur le ruban de l’application. Les compléments Outlook peuvent prendre jusqu’à 24 heures pour apparaître sur les rubans des applications.
     
-8. Lorsque vous avez terminé, sélectionnez **suivant**. Si vous avez déjà déployé, vous pouvez sélectionner Modifier les utilisateurs **qui ont accès au complément** pour le déployer sur un plus grand nombre d’utilisateurs.
+8. Lorsque vous avez terminé, sélectionnez **suivant** . Si vous avez déjà déployé, vous pouvez sélectionner Modifier les utilisateurs **qui ont accès au complément** pour le déployer sur un plus grand nombre d’utilisateurs.
 
     Si vous avez déployé le complément auprès d’autres membres de votre organisation, suivez les instructions pour annoncer le déploiement du complément. <br/>
   

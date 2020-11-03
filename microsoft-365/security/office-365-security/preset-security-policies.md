@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à appliquer des paramètres de stratégie standard et stricts pour les fonctionnalités de protection d’Exchange Online Protection (EOP) et Office 365 Advanced Threat Protection (ATP).
-ms.openlocfilehash: 8431d36779069b0b289a2533fbd6b85abee24536
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: a624d48944965c217fb8547e4f09da0ec388e615
+ms.sourcegitcommit: 9d1351ea6d9942550b52132817f9f9693ddef2fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48326542"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "48830536"
 ---
 # <a name="preset-security-policies-in-eop-and-office-365-atp"></a>Stratégies de sécurité prédéfinies dans EOP et Office 365 ATP
 
@@ -44,40 +44,40 @@ Par ailleurs, l’ordre de priorité est important si plusieurs stratégies de s
 
 Un profil détermine le niveau de protection. Les profils suivants sont disponibles :
 
-- **Protection standard**: profil de protection de base adapté à la plupart des utilisateurs.
-- **Protection stricte**: un profil de protection plus agressif pour les utilisateurs sélectionnés (cibles de valeur élevée ou utilisateurs prioritaires).
+- **Protection standard** : profil de protection de base adapté à la plupart des utilisateurs.
+- **Protection stricte** : un profil de protection plus agressif pour les utilisateurs sélectionnés (cibles de valeur élevée ou utilisateurs prioritaires).
 
 Vous utilisez des règles avec des conditions et des exceptions qui déterminent les personnes auxquelles les profils sont ou qui ne sont pas appliqués.
 
-Vous pouvez uniquement utiliser une condition ou une exception une seule fois, mais vous pouvez spécifier plusieurs valeurs pour la condition ou l’exception. Plusieurs valeurs de la même condition ou exception utilisent la logique OU (par exemple, _\<recipient1\>_ ou _\<recipient2\>_). Des conditions ou des exceptions différentes utilisent la logique ET (par exemple, _\<recipient1\>_ et _\<member of group 1\>_).
+Vous pouvez uniquement utiliser une condition ou une exception une seule fois, mais vous pouvez spécifier plusieurs valeurs pour la condition ou l’exception. Plusieurs valeurs de la même condition ou exception utilisent la logique OU (par exemple, _\<recipient1\>_ ou _\<recipient2\>_ ). Des conditions ou des exceptions différentes utilisent la logique ET (par exemple, _\<recipient1\>_ et _\<member of group 1\>_ ).
 
 Les conditions et les exceptions disponibles sont les suivantes :
 
-- **Les destinataires sont**: des boîtes aux lettres, des utilisateurs de messagerie ou des contacts de messagerie dans votre organisation.
-- **Les destinataires sont membres de**: groupes de votre organisation.
-- **Les domaines de destinataire sont**: domaines acceptés configurés dans Microsoft 365.
+- **Les destinataires sont** : des boîtes aux lettres, des utilisateurs de messagerie ou des contacts de messagerie dans votre organisation.
+- **Les destinataires sont membres de** : groupes de votre organisation.
+- **Les domaines de destinataire sont** : domaines acceptés configurés dans Microsoft 365.
 
 ### <a name="policies-in-preset-security-policies"></a>Stratégies dans les stratégies de sécurité prédéfinies
 
 Les stratégies de sécurité prédéfinies utilisent les stratégies correspondantes des différentes fonctionnalités de protection dans EOP et Office 365 ATP. Ces stratégies sont créées _une fois_ que vous avez affecté aux utilisateurs les stratégies de sécurité **standard** ou prédéfinies protection **stricte** . Vous ne pouvez pas modifier ces stratégies.
 
-- **Stratégies Exchange Online Protection (EoP)**: cela inclut les organisations Microsoft 365 avec les boîtes aux lettres Exchange Online et les organisations EOP autonomes sans boîtes aux lettres Exchange Online :
+- **Stratégies Exchange Online Protection (EoP)** : cela inclut les organisations Microsoft 365 avec les boîtes aux lettres Exchange Online et les organisations EOP autonomes sans boîtes aux lettres Exchange Online :
   
-  - [Stratégies de blocage du courrier indésirable](configure-your-spam-filter-policies.md) nommées **stratégie de sécurité prédéfinie standard** et **stratégie de sécurité prédéfinie stricte**.
-  - [Stratégies de protection contre les programmes malveillants](configure-anti-malware-policies.md) nommées **stratégie de sécurité** prédéfinie standard et **stratégie de sécurité prédéfinie stricte**.
+  - [Stratégies de blocage du courrier indésirable](configure-your-spam-filter-policies.md) nommées **stratégie de sécurité prédéfinie standard** et **stratégie de sécurité prédéfinie stricte** .
+  - [Stratégies de protection contre les programmes malveillants](configure-anti-malware-policies.md) nommées **stratégie de sécurité** prédéfinie standard et **stratégie de sécurité prédéfinie stricte** .
   - [Stratégies de hameçonnage d’EOP](set-up-anti-phishing-policies.md#spoof-settings) nommées **stratégie de sécurité** prédéfinie standard et **stratégie de sécurité prédéfinie stricte** (paramètres d’usurpation).
 
-- **Stratégies Office 365 Advanced Threat Protection (ATP)**: cela inclut les organisations avec les abonnements complémentaires Microsoft 365 E5 ou Office 365 ATP :
+- **Stratégies Office 365 Advanced Threat Protection (ATP)** : cela inclut les organisations avec les abonnements complémentaires Microsoft 365 E5 ou Office 365 ATP :
 
-  - Stratégies anti-hameçonnage ATP nommées stratégie de sécurité prédéfinie **standard** et **stratégie de sécurité prédéfinie stricte**, qui incluent :
+  - Stratégies anti-hameçonnage ATP nommées stratégie de sécurité prédéfinie **standard** et **stratégie de sécurité prédéfinie stricte** , qui incluent :
 
     - Les mêmes [paramètres d’usurpation](set-up-anti-phishing-policies.md#spoof-settings) qui sont disponibles dans les stratégies anti-hameçonnage EOP.
     - [Paramètres d’emprunt d’identité](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies)
     - [Seuils de hameçonnage avancés](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-atp-anti-phishing-policies)
 
-  - [Stratégies de liens fiables](set-up-atp-safe-links-policies.md) nommées **stratégie de sécurité prédéfinie standard** et **stratégie de sécurité avec présélection stricte**.
+  - [Stratégies de liens fiables](set-up-atp-safe-links-policies.md) nommées **stratégie de sécurité prédéfinie standard** et **stratégie de sécurité avec présélection stricte** .
 
-  - [Stratégies de pièces jointes approuvées](set-up-atp-safe-attachments-policies.md) nommées **stratégie de sécurité prédéfinie standard** et **stratégie de sécurité avec présélection stricte**.
+  - [Stratégies de pièces jointes approuvées](set-up-atp-safe-attachments-policies.md) nommées **stratégie de sécurité prédéfinie standard** et **stratégie de sécurité avec présélection stricte** .
 
 Notez que vous pouvez appliquer des protections EOP à différents utilisateurs que les protections ATP.
 
@@ -114,17 +114,18 @@ En d’autres termes, les paramètres de la stratégie de **protection stricte**
   - Pour un accès en lecture seule aux stratégies de sécurité prédéfinies, vous devez être membre de l’un des groupes de rôles suivants :
 
     - **Lecteur de sécurité** dans le [Centre de conformité et sécurité](permissions-in-the-security-and-compliance-center.md).
-    - **Gestion de l’organisation en affichage seul** dans[Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+    - Le **lecteur global** dans le [centre de sécurité & conformité](permissions-in-the-security-and-compliance-center.md).
+    - **Gestion de l’organisation en affichage seul** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
 ### <a name="use-the-security--compliance-center-to-assign-preset-security-policies-to-users"></a>Utiliser le centre de sécurité & conformité pour affecter des stratégies de sécurité prédéfinies aux utilisateurs
 
-1. Dans le centre de sécurité & conformité, accédez **Threat management** aux stratégies de \> **Policy** \> **sécurité prédéfinies**stratégie de gestion des menaces.
+1. Dans le centre de sécurité & conformité, accédez **Threat management** aux stratégies de \> **Policy** \> **sécurité prédéfinies** stratégie de gestion des menaces.
 
-2. Sous **protection standard** ou **protection stricte**, cliquez sur **modifier**.
+2. Sous **protection standard** ou **protection stricte** , cliquez sur **modifier** .
 
 3. L’Assistant **appliquer la protection standard** ou **appliquer une protection stricte** démarre. Sur les **protections EOP s’appliquent à** l’étape, identifiez les destinataires internes auxquels les [protections EOP](#policies-in-preset-security-policies) s’appliquent :
 
-   1. Cliquez sur **Ajouter une condition**. Dans la liste déroulante qui apparaît, sélectionnez une condition sous **appliqué si**:
+   1. Cliquez sur **Ajouter une condition** . Dans la liste déroulante qui apparaît, sélectionnez une condition sous **appliqué si** :
 
       - **Les destinataires sont**
       - **Les destinataires sont membres de**
@@ -138,23 +139,23 @@ En d’autres termes, les paramètres de la stratégie de **protection stricte**
 
       Répétez l’étape précédente pour ajouter des valeurs à la condition, puis répétez cette étape autant de fois que nécessaire ou jusqu’à ce que les conditions soient insuffisantes.
 
-   4. Pour ajouter une exception, cliquez sur **Ajouter une condition**. Dans la liste déroulante qui apparaît, sélectionnez une condition sous **sauf quand**. Les paramètres et le comportement sont exactement comme les conditions.
+   4. Pour ajouter une exception, cliquez sur **Ajouter une condition** . Dans la liste déroulante qui apparaît, sélectionnez une condition sous **sauf quand** . Les paramètres et le comportement sont exactement comme les conditions.
 
-   Lorsque vous avez terminé, cliquez sur **Suivant**.
+   Lorsque vous avez terminé, cliquez sur **Suivant** .
 
 4. Si votre organisation dispose d’Office 365 ATP, les **protections contre les disponibilités s’appliquent à** l’étape pour identifier les destinataires internes auxquels les [protections ATP Office 365](#policies-in-preset-security-policies) s’appliquent.
 
    Les paramètres et le comportement sont les mêmes que les **protections EOP s’appliquent à** l’étape.
 
-   Lorsque vous avez terminé, cliquez sur **Suivant**.
+   Lorsque vous avez terminé, cliquez sur **Suivant** .
 
-5. Dans l’étape **confirmer** , vérifiez vos sélections, puis cliquez sur **confirmer**.
+5. Dans l’étape **confirmer** , vérifiez vos sélections, puis cliquez sur **confirmer** .
 
 ### <a name="use-the-security--compliance-center-to-modify-the-assignments-of-preset-security-policies"></a>Utiliser le centre de sécurité & conformité pour modifier les affectations des stratégies de sécurité prédéfinies
 
 Les étapes de modification de l’affectation de la stratégie de sécurité de protection **standard** ou de protection **stricte** sont les mêmes que lorsque vous avez initialement [affecté les stratégies de sécurité prédéfinies aux utilisateurs](#use-the-security--compliance-center-to-assign-preset-security-policies-to-users).
 
-Pour désactiver les stratégies de **protection standard** ou de protection **stricte** tout en conservant les conditions et les exceptions existantes, faites glisser le bouton bascule sur **désactivé**. Pour activer les stratégies, faites glisser le bouton bascule sur **activé**.
+Pour désactiver les stratégies de **protection standard** ou de protection **stricte** tout en conservant les conditions et les exceptions existantes, faites glisser le bouton bascule sur **désactivé** . Pour activer les stratégies, faites glisser le bouton bascule sur **activé** .
 
 ### <a name="how-do-you-know-these-procedures-worked"></a>Comment savoir si ces procédures ont fonctionné ?
 
