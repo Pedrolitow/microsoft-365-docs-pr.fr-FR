@@ -24,12 +24,12 @@ description: Découvrez comment acheter un module complémentaire pour ajouter d
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: e73a3430dbcded25a15fad19815106a72798d8e8
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: cfbce7efa1c80d9e5da8390c183233a6f2a12eb7
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638386"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842819"
 ---
 # <a name="buy-or-edit-an-add-on"></a>Acheter ou modifier un module complémentaire
 
@@ -46,7 +46,7 @@ Plusieurs des offres Microsoft 365 pour les entreprises ont des modules complém
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, accédez à la page **facturation ** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Acheter des services</a>.
+1. Dans le centre d’administration, accédez à la page **facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Acheter des services</a>.
 
 2. Au bas de la page **acheter des services** , sélectionnez **compléments**.
 
@@ -68,7 +68,7 @@ Plusieurs des offres Microsoft 365 pour les entreprises ont des modules complém
 
 2. Sur la page **abonnements** , sélectionnez l’abonnement pour lequel vous souhaitez acheter un module complémentaire.
 
-3. Dans le coin inférieur gauche des détails de l’abonnement, sélectionnez **compléments** \> **acheter des modules**complémentaires.
+3. Dans le coin inférieur gauche des détails de l’abonnement, sélectionnez **compléments** \> **acheter des modules** complémentaires.
 
     ![Acheter le lien des modules complémentaires sur la page abonnements du centre d’administration Microsoft 365.](../media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
   
@@ -90,7 +90,7 @@ Plusieurs des offres Microsoft 365 pour les entreprises ont des modules complém
 
 2. Sur la page **abonnements** , sélectionnez l’abonnement pour lequel vous souhaitez acheter un module complémentaire.
 
-3. Dans le coin inférieur gauche des détails de l’abonnement, sélectionnez **compléments** \> **acheter des modules**complémentaires.
+3. Dans le coin inférieur gauche des détails de l’abonnement, sélectionnez **compléments** \> **acheter des modules** complémentaires.
 
     ![Acheter le lien des modules complémentaires sur la page abonnements du centre d’administration Microsoft 365.](../media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
   
@@ -234,13 +234,13 @@ Pour plus d'informations sur les modules complémentaires d'Skype Entreprise, vo
 |**Module complémentaire**|**Disponible dans les abonnements suivants**|
 |:-----|:-----|
 |Référentiel sécurisé du client  <br/> | Office 365 Entreprise E1  <br/>  Office 365 Entreprise E3  <br/>  Office 365 Entreprise E4  <br/> |
-|[Office 365 Online-Protection avancée contre les menaces](https://go.microsoft.com/fwlink/p/?LinkId=691156) <br/> | Office 365 Entreprise E1  <br/>  Office 365 Entreprise E3  <br/>  Office 365 Entreprise E4  <br/> |
+|[Microsoft Defender pour Office 365](https://go.microsoft.com/fwlink/p/?LinkId=691156) <br/> | Office 365 Entreprise E1  <br/>  Office 365 Entreprise E3  <br/>  Office 365 Entreprise E4  <br/> |
 |[Archivage Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=691157) <br/> | Microsoft 365 Business Basic  <br/>  Microsoft 365 Business Standard  <br/>  Office 365 Entreprise E1  <br/>  Office 365 Entreprise F1  <br/> |
 |Microsoft MyAnalytics  <br/> | Office 365 Entreprise E1  <br/>  Office 365 Entreprise E3  <br/>  Office 365 Entreprise E4  <br/> |
 |Conformité avancée Office 365  <br/> | Office 365 Entreprise E1  <br/>  Office 365 Entreprise E3  <br/>  Office 365 Entreprise E4  <br/> |
 |Espace de stockage supplémentaire Office 365  <br/> | Applications Microsoft 365 pour les entreprises  <br/>  Microsoft 365 Business Basic  <br/>  Microsoft 365 Business Standard  <br/>  Office 365 Entreprise E1  <br/>  Office 365 Entreprise E2  <br/>  Office 365 Entreprise E3  <br/>  Office 365 Entreprise E4  <br/>  Office 365 Entreprise E5  <br/>  Office pour le Web avec SharePoint plan 1  <br/>  Office pour le Web avec SharePoint plan 2  <br/>  SharePoint Online (plan 1)  <br/>  SharePoint Online (plan 2)  <br/> |
 |Système téléphonique  <br/> | Office 365 Entreprise E1  <br/>  Office 365 Entreprise E3  <br/>  Office 365 Entreprise E4  <br/>  Office 365 Entreprise E5  <br/> |
-|Audioconférence  <br/> |  Microsoft 365 Business Basic <br/> Microsoft 365 Business Standard <br/> Office 365 Entreprise E1 <br/> Office 365 Entreprise E3 <br/> Office 365 Entreprise E4 <br/> Office 365 Entreprise E5 sans audioconférence <br/> Microsoft 365 Business Premium <br/> Microsoft 365 E3 <br/> Microsoft 365 E5  <br/> |
+|Audioconférence  <br/> |  Microsoft 365 Business Basic <br/> Microsoft 365 Business Standard <br/> Office 365 Entreprise E1 <br/> Office 365 Entreprise E3 <br/> Office 365 Entreprise E4 <br/> Office 365 Entreprise E5 sans audioconférence <br/> Microsoft 365 Business Premium <br/> Microsoft 365 E3 <br/> Microsoft 365 E5  <br/> |
 |Crédits de communication  <br/> | Office 365 Entreprise E5  <br/> |
 |Plan d’appels nationaux <br/> | Office 365 Entreprise E5  <br/> |
 |Plan d’appels internationaux  <br/> | Office 365 Entreprise E5  <br/> |

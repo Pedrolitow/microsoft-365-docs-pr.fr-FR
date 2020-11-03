@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: a7d79684a085072e1af113bc0466ab26574ab904
-ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
+ms.openlocfilehash: d63994778762968962b2a32f026dbb81af39b664
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48779231"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843815"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Nouveautés de Microsoft Secure score
 
@@ -35,7 +35,7 @@ Pour faire en sorte que Microsoft Secure score un meilleur représentant de votr
 
 ## <a name="october-2020"></a>Octobre 2020
 
-### <a name="remove-improvement-action-related-to-microsoft-defender-advanced-threat-protection"></a>Supprimer l’action d’amélioration liée à la protection avancée contre les menaces Microsoft Defender
+### <a name="remove-improvement-action-related-to-microsoft-defender-for-endpoint"></a>Supprimer l’action d’amélioration liée à Microsoft Defender pour le point de terminaison
 
 - Activer la vérification du contenu Web de l’application Windows Store SmartScreen de Microsoft Defender pour avertir
 
@@ -54,8 +54,8 @@ Dans le temps, le score de sécurité d’identité et l’API Graph adopteront 
 ## <a name="updated-improvement-actions"></a>Actions d’amélioration mises à jour
 
 - Ajout d’actions d’amélioration Azure Active Directory
-- Ajout d’actions d’amélioration de la protection avancée contre les menaces
-- Prise en charge des recommandations de sécurité de la [& de gestion des vulnérabilités](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) de Microsoft Defender ATP
+- Ajout de Microsoft Defender pour les actions d’amélioration de l’identité
+- Prise en charge des recommandations de sécurité pour la gestion des vulnérabilités de Microsoft Defender [& Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
     - Toutes les recommandations de sécurité fournies par TVM sont désormais disponibles
 
 ## <a name="updated-interface-and-functionality"></a>Interface et fonctionnalité mises à jour

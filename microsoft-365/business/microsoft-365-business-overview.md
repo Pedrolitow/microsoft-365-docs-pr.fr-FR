@@ -29,12 +29,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Découvrez Microsoft 365 Business Premium, un service d’abonnement qui inclut les applications de productivité Office et une protection avancée pour votre entreprise contre les menaces informatiques.
-ms.openlocfilehash: 50b1fec21593bd22577e07e000cedb89dfd90f66
-ms.sourcegitcommit: f7566dd6010744c72684efdc37f4471672330b61
+ms.openlocfilehash: e67ae036bf3ce7811f19c8745838bb51dde073ea
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "45138225"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842177"
 ---
 # <a name="overview-of-microsoft-365-business-premium"></a>Vue d’ensemble de la sécurité de Microsoft 365 Business Premium
 
@@ -69,19 +69,19 @@ Microsoft 365 Business Premium vous permet de protéger vos données dans chacu
 
 ## <a name="how-your-data-and-devices-are-protected"></a>Comment vos données et vos appareils sont-ils protégés ?
 
-Microsoft 365 Business Premium permet de vous **défendre contre les menaces** :
+Microsoft 365 Business Premium permet de vous **défendre contre les menaces**  :
 
-- En analysant en temps réel les liens présents dans les courriers électroniques et les documents pour bloquer les sites Web dangereux (liens fiables ATP).
+- L’analyse des liens dans les e-mails et les documents en temps réel pour bloquer les sites Web dangereux (liens fiables).
 
-- En exécutant une analyse avancée des pièces jointes de courrier électronique dans un environnement bac à sable afin de détecter les programmes malveillants nouvellement développés (pièces joints fiables ATP). 
+- Exécution d’une analyse avancée des pièces jointes de courrier électronique dans un environnement de bac à sable pour détecter les programmes malveillants nouvellement développés (pièces jointes fiables). 
 
-- En activant des stratégies anti-hameçonnage qui utilisent des modèles d’apprentissage automatique et la détection d’emprunt d’identité pour offrir une protection contre les attaques avancées (intelligence anti-hameçonnage ATP). 
+- Activation des stratégies anti-hameçonnage qui utilisent les modèles d’apprentissage automatique et la détection de l’emprunt d’identité pour assurer une protection contre les attaques avancées (anti-hameçonnage dans Defender for Office 365 intelligence). 
 
 - En configurant des stratégies avancées qui désactivent l’accès à partir d’emplacements non approuvés ou qui ignorent l’authentification multifacteur à partir d’emplacements approuvés, comme votre réseau Office (authentification multifacteur Azure, y compris les adresses IP approuvées et l’accès conditionnel). 
 
 - En appliquant la protection contre les programmes malveillants sur tous les appareils Windows 10 de votre organisation et en protégeant les fichiers dans les dossiers système principaux contre les modifications apportées par les rançongiciels (Windows Defender)
 
-Vos **données professionnelles sont protégées** :
+Vos **données professionnelles sont protégées**  :
 
 - Par l’utilisation de la détection automatique permettant d’empêcher les informations sensibles, comme les numéros de sécurité sociale ou les cartes de crédit, d’être divulguées en dehors de votre entreprise (protection contre la perte de données). 
 
@@ -91,7 +91,7 @@ Vos **données professionnelles sont protégées** :
 
 - Par l’activation de l’archivage cloud illimité afin que vous puissiez conserver tous les courriers électroniques de votre organisation, y compris les boîtes aux lettres des anciens employés (archivage Exchange Online).
 
-Vos **appareils sont sécurisés** :
+Vos **appareils sont sécurisés**  :
 
 - Par le contrôle des appareils et des utilisateurs qui peuvent accéder à vos données Microsoft, avec des options permettant d’empêcher les utilisateurs de se connecter à partir d’ordinateurs de bureau, d’applications non approuvées ou en dehors des heures de travail (accès conditionnel).
 

@@ -16,12 +16,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment activer le complément de message de rapport pour Outlook et Outlook sur le Web, pour des utilisateurs individuels ou l’ensemble de votre organisation.
-ms.openlocfilehash: b061d9db44b08a65b59481035c055a1b75eb6e3c
-ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
+ms.openlocfilehash: d760aa5d58e628872682131efae9d9c3b3c46734
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48600368"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842451"
 ---
 # <a name="enable-the-report-message-add-in"></a>Activez le complément Signaler un message
 
@@ -35,7 +35,7 @@ Le complément de message de rapport pour Outlook et Outlook sur le Web (ancienn
 
 Par exemple, supposons que des personnes signalent un grand nombre de messages comme hameçonnage. Ces informations sont représentées dans le [tableau de bord de sécurité](security-dashboard.md) et d’autres rapports. L’équipe de sécurité de votre organisation peut utiliser ces informations pour indiquer que les stratégies de détection d’hameçonnage doivent être mises à jour. Ou bien, si des personnes signalent un grand nombre de messages marqués comme légitimes comme légitimes à l’aide du complément de message de rapport, il se peut que l’équipe de sécurité de votre organisation doive ajuster les [stratégies de blocage du courrier](configure-your-spam-filter-policies.md)indésirable.
 
-En outre, si votre organisation utilise [Office 365 Advanced Threat Protection Plan 1](office-365-atp.md) ou [plan 2](office-365-ti.md), le complément Report message fournit à l’équipe de sécurité de votre organisation des informations utiles qu’il peut utiliser pour examiner et mettre à jour les stratégies de sécurité.
+En outre, si votre organisation utilise [Microsoft Defender pour Office 365 plan 1](office-365-atp.md) ou [plan 2](office-365-ti.md), le complément Report message fournit à l’équipe de sécurité de votre organisation des informations utiles pour examiner et mettre à jour les stratégies de sécurité.
 
 Les administrateurs peuvent activer le complément de message de rapport pour l’organisation, et les utilisateurs individuels peuvent l’installer pour eux-mêmes.
 
@@ -101,7 +101,7 @@ Pour savoir comment utiliser le complément, voir [use the Report message Add-in
 
    ![Déployer une nouvelle page de complément](../../media/NewAddInScreen2.png)
 
-4. Dans la page **Sélectionner un complément** qui s’affiche, cliquez sur dans la zone de **recherche** , entrez **message de rapport**, **puis cliquez sur** ![ icône de recherche de recherche ](../../media/search-icon.png) . Dans la liste des résultats, recherchez **message de rapport** , puis cliquez sur **Ajouter**.
+4. Dans la page **Sélectionner un complément** qui s’affiche, cliquez sur dans la zone de **recherche** , entrez **message de rapport** , **puis cliquez sur** ![ icône de recherche de recherche ](../../media/search-icon.png) . Dans la liste des résultats, recherchez **message de rapport** , puis cliquez sur **Ajouter**.
 
    ![Sélectionner les résultats de la recherche de complément](../../media/NewAddInScreen3.png)
 
@@ -109,17 +109,17 @@ Pour savoir comment utiliser le complément, voir [use the Report message Add-in
 
 6. Dans la page **configurer le complément** qui s’affiche, configurez les paramètres suivants :
 
-   - **Utilisateurs affectés**: sélectionnez l’une des valeurs suivantes :
+   - **Utilisateurs affectés** : sélectionnez l’une des valeurs suivantes :
 
      - **Tout le monde** (par défaut)
      - **Utilisateurs/groupes spécifiques**
      - **Juste moi**
 
-   - **Méthode de déploiement**: sélectionnez l’une des valeurs suivantes :
+   - **Méthode de déploiement** : sélectionnez l’une des valeurs suivantes :
 
-     - **Fixed (valeur par défaut)**: le complément est déployé automatiquement sur les utilisateurs spécifiés et ils ne peuvent pas le supprimer.
-     - **Disponible**: les utilisateurs peuvent installer le complément à **leur domicile** \> **obtenir des compléments** \> **gérés par l’administrateur**.
-     - **Facultatif**: le complément est déployé automatiquement sur les utilisateurs spécifiés, mais ils peuvent choisir de le supprimer.
+     - **Fixed (valeur par défaut)** : le complément est déployé automatiquement sur les utilisateurs spécifiés et ils ne peuvent pas le supprimer.
+     - **Disponible** : les utilisateurs peuvent installer le complément à **leur domicile** \> **obtenir des compléments** \> **gérés par l’administrateur**.
+     - **Facultatif** : le complément est déployé automatiquement sur les utilisateurs spécifiés, mais ils peuvent choisir de le supprimer.
 
    ![Page Configurer le complément](../../media/configure-add-in.png)
 

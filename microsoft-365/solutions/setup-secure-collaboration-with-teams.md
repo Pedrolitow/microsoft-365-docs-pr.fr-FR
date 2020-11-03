@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: ''
 f1.keywords: NOCSH
 description: Découvrez comment configurer teams pour protéger vos données en fonction de leur sensibilité.
-ms.openlocfilehash: ef49e788805139bf82fa5b1b43d2a87323640820
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 5cf4937a79fdf33e160432c740504ec84d196585
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527707"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843539"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365"></a>Configurer la collaboration sécurisée avec Microsoft 365
 
@@ -62,7 +62,7 @@ Pour configurer Secure collabration, vous utilisez les fonctionnalités et fonct
 
 | Produit ou composant | Fonctionnalité | Licence |
 |:-------|:-----|:-------|
-| Office 365 – Protection avancée contre les menaces | Pièces jointes approuvées ATP pour SPO, OneDrive et Teams ; Documents sécurisés ATP ; Liens fiables ATP pour teams    | Microsoft 365 E1, E3 et E5 |
+| Microsoft Defender pour Office 365 | Pièces jointes fiables pour SPO, OneDrive et Teams ; Documents approuvés ; Liens fiables pour teams    | Microsoft 365 E1, E3 et E5 |
 | SharePoint    | Stratégies de partage de sites et de fichiers, autorisations de partage de site, liens de partage, demandes d’accès, paramètres de partage du site invité | Microsoft 365 E1, E3 et E5 |
 | Microsoft Teams   | Accès invité, teams Private, Private Channels | Microsoft 365 E1, E3 et E5 |
 | Conformité Microsoft 365  | Étiquettes de confidentialité    | Microsoft 365 E3 et E5 |
@@ -74,7 +74,7 @@ Pour gérer l’accès aux informations avec différentes sensibilités, nous av
 ![Image miniature représentant le poster architecture logique Teams](../media/solutions-architecture-center/Teams-tiers-of-protection-1.png)
 
 
-Ces niveaux de *ligne de base*, *sensibles*et *hautement sensibles* , augmentent graduellement les protections qui empêchent le surPartage et les fuites d’informations potentielles, comme illustré dans le tableau suivant.
+Ces niveaux de *ligne de base* , *sensibles* et *hautement sensibles* , augmentent graduellement les protections qui empêchent le surPartage et les fuites d’informations potentielles, comme illustré dans le tableau suivant.
 
 ||**Niveau de référence**|**Niveau sensible**|**Niveau hautement sensible**|
 |:--|:-----------|:------------|:-------------------|
@@ -125,7 +125,7 @@ Lorsque vous êtes prêt à déployer cette solution, suivez ces étapes :
 1. Configurez les [trois différents niveaux de protection pour teams](configure-teams-three-tiers-protection.md).
 2. Configurez les paramètres permettant de [partager des informations de confidentialité avec des personnes extérieures à votre organisation](collaborate-with-people-outside-your-organization.md).
 
-## <a name="see-also"></a>Consultez également
+## <a name="see-also"></a>Voir aussi
 
 [Documentation de sécurité Office 365](https://docs.microsoft.com/microsoft-365/security)
 

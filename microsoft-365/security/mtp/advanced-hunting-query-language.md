@@ -1,5 +1,5 @@
 ---
-title: Découvrez le langage de requête de repérage avancé dans la Protection Microsoft contre les menaces
+title: Découvrez le langage de requête de recherche avancé dans Microsoft 365 Defender
 description: Créez votre première requête de repérage de menace et découvrez les opérateurs communs et les autres aspects du langage de requête de repérage avancé
 keywords: chasse de menace, recherche de menace, recherche de menace informatique, protection contre les menaces Microsoft, Microsoft 365, MTP, M365, recherche, requête, langue, apprentissage, première requête, télémétrie, événements, télémétrie, détections personnalisées, schéma, Kusto, opérateurs, types de données, téléchargement PowerShell, exemple de requête
 search.product: eADQiWindows 10XVcnh
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 09f0a5437c3ae3b54fa086d93e475e4881c2d4bf
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: bb3caff642e752cb6d3941b697820fbad69ae23c
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48431050"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841975"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Découvrir le langage de requête de repérage avancé
 
@@ -32,7 +32,7 @@ ms.locfileid: "48431050"
 
 
 **S’applique à :**
-- Protection Microsoft contre les menaces
+- Microsoft 365 Defender
 
 Le repérage avancé est basé sur le [langage de requête Kusto](https://docs.microsoft.com/azure/kusto/query/). Vous pouvez utiliser des instructions et des opérateurs Kusto pour créer des requêtes qui recherchent des informations dans un [schéma](advanced-hunting-schema-tables.md)spécialisé. Pour mieux comprendre ces concepts, exécutez votre première requête.
 
@@ -155,9 +155,9 @@ Pour en savoir plus sur ces types de données, consultez la rubrique [about Kust
 
 ## <a name="get-help-as-you-write-queries"></a>Obtenez de l’aide lorsque vous rédigez des requêtes
 Tirez parti des fonctionnalités suivantes pour rédiger des requêtes plus rapidement :
-- **Suggestion**automatique : lors de l’écriture de requêtes, la recherche avancée fournit des suggestions d’IntelliSense. 
-- **Arborescence de schéma**: représentation de schéma qui inclut la liste des tables et leurs colonnes sont fournies en regard de votre zone de travail. Si vous souhaitez en savoir plus, veuillez placer le pointeur sur un élément. Double-cliquez sur un élément pour l’insérer dans l’éditeur de requête.
-- **[Référence de schéma](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**: référence dans le portail avec descriptions des tables et des colonnes, ainsi que des types d’événements pris en charge ( `ActionType` valeurs) et des exemples de requêtes
+- **Suggestion** automatique : lors de l’écriture de requêtes, la recherche avancée fournit des suggestions d’IntelliSense. 
+- **Arborescence de schéma** : représentation de schéma qui inclut la liste des tables et leurs colonnes sont fournies en regard de votre zone de travail. Si vous souhaitez en savoir plus, veuillez placer le pointeur sur un élément. Double-cliquez sur un élément pour l’insérer dans l’éditeur de requête.
+- **[Référence de schéma](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** : référence dans le portail avec descriptions des tables et des colonnes, ainsi que des types d’événements pris en charge ( `ActionType` valeurs) et des exemples de requêtes
 
 ## <a name="work-with-multiple-queries-in-the-editor"></a>Utiliser plusieurs requêtes dans l’éditeur
 Vous pouvez utiliser l’éditeur de requête pour tester plusieurs requêtes. Pour utiliser plusieurs requêtes :

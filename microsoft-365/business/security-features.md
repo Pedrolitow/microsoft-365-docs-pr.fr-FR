@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Découvrez les fonctionnalités de sécurité fournies avec Microsoft 365 Business Premium pour vous aider à protéger vos données sur des PC, des téléphones et des tablettes.
-ms.openlocfilehash: 5e16d4bf297d363b6f9b44ce854c857e7e5464ed
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 587d80c27f867a387c901d23f4ec05f3c5905bf6
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357315"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843485"
 ---
 # <a name="microsoft-365-business-premium-security-and-compliance-features"></a>Fonctionnalités de sécurité et de conformité de Microsoft 365 Business Premium
 
@@ -63,9 +63,9 @@ Vous pouvez gérer de nombreuses fonctionnalités de sécurité Microsoft 365 Bu
 
 Les fonctionnalités avancées de Microsoft 365 Business Premium sont disponibles pour vous aider à protéger votre entreprise contre les menaces et protéger les informations sensibles.
   
-- **[Office 365 – Protection avancée contre les menaces](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)**
+- **[Microsoft Defender pour Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)**
     
-    La protection avancée contre les menaces (ATP) permet de protéger votre activité contre le hameçonnage et les attaques par ransomware sophistiqués conçus pour compromettre les informations des employés ou des clients. Les fonctionnalités sont les suivantes : 
+    Microsoft Defender pour Office 365 permet de protéger votre entreprise contre les attaques par hameçonnage et par ransomware sophistiqué conçues pour compromettre les informations des employés ou des clients. Les fonctionnalités sont les suivantes : 
     
   - Analyse avancée des pièces jointes et analyse anti-puissance pour détecter et rejeter les messages dangereux.
     
@@ -111,7 +111,7 @@ Votre abonnement Microsoft 365 Business Premium inclut des fonctionnalités qui 
 Vous pouvez gérer ces fonctionnalités dans le centre d’administration et de sécurité et dans le centre d' &amp; administration Intune. Au fil du temps, les contrôles simplifiés seront ajoutés au centre d’administration 365 de Microsoft.
   
     
-## <a name="faq"></a>Forum Aux Questions
+## <a name="faq"></a>FAQ
 
  ### <a name="are-these-security-features-available-in-all-markets"></a>Ces fonctionnalités de sécurité sont-elles disponibles sur tous les marchés ?
   
@@ -125,4 +125,4 @@ Oui, ces fonctionnalités sont disponibles sur tous les marchés où Microsoft 3
     
     ![Dans le volet de navigation de gauche, dans le centre d’administration Microsoft 365, sélectionnez centres d’administration.](../media/fa4484f8-c637-45fd-a7bd-bdb3abfd6c03.png)
   
-3. Choisissez ** &amp; conformité de sécurité** pour accéder au &amp; Centre de sécurité conformité.
+3. Choisissez **&amp; conformité de sécurité** pour accéder au &amp; Centre de sécurité conformité.

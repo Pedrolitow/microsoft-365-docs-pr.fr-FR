@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment configurer la clé client pour les fichiers Microsoft 365 pour Exchange Online, Skype entreprise, SharePoint Online, OneDrive entreprise et Teams.
-ms.openlocfilehash: be7aacf180cf8ffc59a490279083aeb2aa6a0567
-ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
+ms.openlocfilehash: 69e12d46ae4106a399a8eeff49ebbe0f2a3055e2
+ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48768972"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841285"
 ---
 # <a name="set-up-customer-key"></a>Configurer la clé client
 
@@ -31,9 +31,9 @@ Vous devez configurer Azure avant de pouvoir utiliser la clé client pour Office
   
 ## <a name="before-you-set-up-customer-key"></a>Avant de configurer la clé client
 
-Avant de commencer, assurez-vous que vous disposez de la licence appropriée pour votre organisation et que votre compte est facturé et qu’il n’est pas payé avec une carte de crédit. La clé client dans Microsoft 365 est proposée dans Office 365 E5 ou le SKU de conformité avancée. Pour comprendre les concepts et procédures présentés dans cette rubrique, consultez la documentation sur le [coffre-fort des clés Azure](https://docs.microsoft.com/azure/key-vault/) . De même, familiarisez-vous avec les termes utilisés dans Azure, par exemple, [client](https://docs.microsoft.com/previous-versions/azure/azure-services/jj573650(v=azure.100)).
+Avant de commencer, assurez-vous que vous disposez de la licence appropriée pour votre organisation. À partir du 1er avril 2020, la clé client dans Office 365 est proposée dans Office 365 E5, M365 E5, M365 E5 conformité et M365 E5 information protection & gouvernance. Office 365 Advanced Compliance SKU n’est plus disponible pour la création de nouvelles licences. Les licences Office 365 Advanced Compliance existantes continueront à être prises en charge.
 
-Pour comprendre les concepts et procédures présentés dans cette rubrique, consultez la documentation sur le [coffre-fort des clés Azure](https://docs.microsoft.com/azure/key-vault/) . De même, familiarisez-vous avec les termes utilisés dans Azure, par exemple, le [client Azure ad](https://docs.microsoft.com/previous-versions/azure/azure-services/jj573650(v=azure.100)#what-is-an-azure-ad-tenant).
+Avant de commencer, assurez-vous que vous disposez de la licence appropriée pour votre organisation et que votre compte est facturé et qu’il n’est pas payé avec une carte de crédit. Pour comprendre les concepts et procédures présentés dans cette rubrique, consultez la documentation sur le [coffre-fort des clés Azure](https://docs.microsoft.com/azure/key-vault/) . De même, familiarisez-vous avec les termes utilisés dans Azure, par exemple, le [client Azure ad](https://docs.microsoft.com/previous-versions/azure/azure-services/jj573650(v=azure.100)#what-is-an-azure-ad-tenant).
 
 FastTrack est utilisé uniquement pour collecter les informations de configuration de service et de client requises utilisées pour s’inscrire à la clé client. Les offres de clés de client sont publiées via FastTrack pour que vous et nos partenaires pouvez envoyer les informations requises à l’aide de la même méthode. FastTrack facilite également l’archivage des données que vous fournissez dans l’offre.
   
@@ -55,7 +55,7 @@ Vous effectuerez la plupart de ces tâches en vous connectant à distance à Azu
 
 - [Soumettre une demande d’activation de la clé client pour Office 365](#submit-a-request-to-activate-customer-key-for-office-365)
 
-Une fois que vous avez créé les deux nouveaux abonnements Azure, vous devez soumettre la demande d’offre de clé client appropriée en remplissant un formulaire Web hébergé dans le portail Microsoft FastTrack. **L’équipe FastTrack ne fournit pas d’assistance pour la clé client. Office utilise simplement le portail FastTrack pour vous permettre d’envoyer le formulaire et de nous aider à suivre les offres pertinentes pour la clé client** .
+Une fois que vous avez créé les deux nouveaux abonnements Azure, vous devez soumettre la demande d’offre de clé client appropriée en remplissant un formulaire Web hébergé dans le portail Microsoft FastTrack. **L’équipe FastTrack ne fournit pas d’assistance pour la clé client. Office utilise simplement le portail FastTrack pour vous permettre d’envoyer le formulaire et de nous aider à suivre les offres pertinentes pour la clé client**.
 
 - [Créer un coffre-fort de clés Azure pour chaque abonnement](#create-a-premium-azure-key-vault-in-each-subscription)
 
@@ -110,7 +110,7 @@ Pour soumettre une offre d’activation de la clé client, procédez comme suit�
   
 1. À l’aide d’un compte professionnel ou scolaire disposant d’autorisations d’administrateur globales dans votre organisation, connectez-vous au [portail Microsoft FastTrack](https://fasttrack.microsoft.com/).
 
-2. Une fois que vous êtes connecté, accédez au **tableau de bord** .
+2. Une fois que vous êtes connecté, accédez au **tableau de bord**.
 
 3. Choisissez **Deploy** dans la barre de navigation **ou** sélectionnez **afficher toutes les ressources de déploiement** sur la carte de **déploiement** des informations, puis passez en revue la liste des offres actuelles.
 
@@ -120,9 +120,9 @@ Pour soumettre une offre d’activation de la clé client, procédez comme suit�
 
    - **Fichiers SharePoint Online, OneDrive et teams :** Choisissez l' **aide de la clé de chiffrement de demande pour SharePoint et OneDrive** offre.
 
-5. Une fois que vous avez consulté les détails de l’offre, choisissez **passer à l’étape 2** .
+5. Une fois que vous avez consulté les détails de l’offre, choisissez **passer à l’étape 2**.
 
-6. Renseignez toutes les informations pertinentes et les informations demandées dans le formulaire d’offre. Prêtez particulièrement attention à vos choix pour les responsables de votre organisation autorisés à approuver la destruction permanente et irréversible des clés et des données de chiffrement. Une fois que vous avez terminé le formulaire, sélectionnez **Envoyer** .
+6. Renseignez toutes les informations pertinentes et les informations demandées dans le formulaire d’offre. Prêtez particulièrement attention à vos choix pour les responsables de votre organisation autorisés à approuver la destruction permanente et irréversible des clés et des données de chiffrement. Une fois que vous avez terminé le formulaire, sélectionnez **Envoyer**.
 
 ### <a name="register-azure-subscriptions-to-use-a-mandatory-retention-period"></a>Enregistrer des abonnements Azure pour utiliser une période de rétention obligatoire
 
@@ -279,7 +279,7 @@ Où :
   > [!TIP]
   > Clés de nom à l’aide d’une convention d’affectation de noms similaire à celle décrite ci-dessus pour les coffres clés. De cette manière, dans les outils qui affichent uniquement le nom de la clé, la chaîne est auto-descriptive.
   
-- Si vous avez l’intention de protéger la clé avec un HSM, vérifiez que vous spécifiez **HSM** comme valeur du paramètre _destination_ , sinon, spécifiez **Software** .
+- Si vous avez l’intention de protéger la clé avec un HSM, vérifiez que vous spécifiez **HSM** comme valeur du paramètre _destination_ , sinon, spécifiez **Software**.
 
 Par exemple :
   

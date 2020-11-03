@@ -1,5 +1,5 @@
 ---
-title: Configurer les paramètres globaux pour les paramètres de liens fiables dans Office 365 DAV
+title: Configurer les paramètres globaux pour les paramètres de liens fiables dans Defender pour Office 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,37 +16,37 @@ search.appverid:
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: Les administrateurs peuvent apprendre à afficher et à configurer les paramètres globaux (la liste des URL « bloquer les URL suivantes » et la protection pour les applications Office 365) pour les liens fiables dans Office 365 Advanced Threat Protection (ATP).
-ms.openlocfilehash: 50bef8a1edad50540c7212eb4259e17e2368a56c
-ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+description: Les administrateurs peuvent apprendre à afficher et à configurer les paramètres globaux (la liste des URL de blocage et la liste 365 des URL suivantes) pour les liens fiables dans Microsoft Defender pour Office 365.
+ms.openlocfilehash: 655fba35bf3675bfd571c8e4923a00fbeba85304
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48350876"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842427"
 ---
-# <a name="configure-global-settings-for-safe-links-in-office-365-atp"></a>Configurer les paramètres généraux pour les liens approuvés dans Office 365 PACM
+# <a name="configure-global-settings-for-safe-links-in-microsoft-defender-for-office-365"></a>Configurer les paramètres globaux pour les liens fiables dans Microsoft Defender pour Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 > [!IMPORTANT]
-> Cet article est destiné aux entreprises qui ont [Office 365 – Protection avancée contre les menaces](office-365-atp.md). Si vous êtes un utilisateur à domicile et que vous recherchez des informations sur Safelinks dans Outlook, consultez la rubrique [Advanced Outlook.com Security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Cet article est destiné aux clients professionnels qui disposent [de Microsoft Defender pour Office 365](office-365-atp.md). Si vous êtes un utilisateur à domicile et que vous recherchez des informations sur Safelinks dans Outlook, consultez la rubrique [Advanced Outlook.com Security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-La fonctionnalité liens fiables est une fonctionnalité de la [protection avancée contre les menaces (ATP) d’Office 365](office-365-atp.md) qui permet d’analyser les messages électroniques entrants dans le flux de messagerie et de cliquer sur vérification des URL et des liens dans les messages électroniques et à d’autres emplacements. Pour plus d’informations, consultez la rubrique [liens approuvés dans Office 365 ATP](atp-safe-links.md).
+La fonctionnalité liens fiables est une fonctionnalité de [Microsoft Defender pour Office 365](office-365-atp.md) qui permet d’analyser les messages électroniques entrants dans le flux de messagerie et de cliquer sur vérification des URL et des liens dans les messages électroniques et à d’autres emplacements. Pour plus d’informations, reportez-vous à [liens fiables dans Microsoft Defender pour Office 365](atp-safe-links.md).
 
-Vous configurez la plupart des paramètres de liens fiables dans stratégies de liens fiables. Pour obtenir des instructions, consultez la rubrique relative [à la configuration des stratégies de liens fiables dans Office 365 DAV](set-up-atp-safe-links-policies.md).
+Vous configurez la plupart des paramètres de liens fiables dans stratégies de liens fiables. Pour obtenir des instructions, reportez-vous à la rubrique [configurer des stratégies de liens fiables dans Microsoft Defender pour Office 365](set-up-atp-safe-links-policies.md).
 
 Toutefois, les liens fiables utilisent également des paramètres globaux qui s’appliquent à tous les utilisateurs inclus dans les stratégies de liens fiables actives. Ces paramètres globaux :
 
 - La liste **bloquer les URL suivantes** . Pour plus d’informations, reportez-vous à [la liste « bloquer les URL suivantes » pour les liens fiables](atp-safe-links.md#block-the-following-urls-list-for-safe-links)
 - Protection des liens fiables pour les applications Office 365. Pour plus d’informations, consultez la rubrique [paramètres de liens approuvés pour les applications Office 365](atp-safe-links.md#safe-links-settings-for-office-365-apps).
 
-Vous pouvez configurer les paramètres de liens de sécurité globaux dans le centre de sécurité & conformité ou dans PowerShell (Exchange Online PowerShell pour les organisations Microsoft 365 éligibles avec des boîtes aux lettres dans Exchange Online ; environnement de ligne de commande Exchange autonome EOP pour les organisations sans boîtes aux lettres Exchange Online, mais avec les abonnements complémentaires Office 365 ATP).
+Vous pouvez configurer les paramètres de liens de sécurité globaux dans le centre de sécurité & conformité ou dans PowerShell (Exchange Online PowerShell pour les organisations Microsoft 365 éligibles avec des boîtes aux lettres dans Exchange Online ; environnement de ligne de commande Exchange pour les organisations sans boîtes aux lettres Exchange Online, mais avec Microsoft Defender for Office 365 compléments d’abonnement).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Les fonctionnalités fournies par les paramètres globaux pour les liens fiables s’appliquent uniquement aux utilisateurs qui sont inclus dans les stratégies de liens fiables actifs. Il n’existe pas de stratégie de liens de sécurité intégrée ou par défaut, vous devez donc créer au moins une stratégie de liens fiables pour que ces paramètres globaux soient actifs. Pour obtenir des instructions, consultez la rubrique relative [à la configuration des stratégies de liens fiables dans Office 365 DAV](set-up-atp-safe-links-policies.md).
+- Les fonctionnalités fournies par les paramètres globaux pour les liens fiables s’appliquent uniquement aux utilisateurs qui sont inclus dans les stratégies de liens fiables actifs. Il n’existe pas de stratégie de liens de sécurité intégrée ou par défaut, vous devez donc créer au moins une stratégie de liens fiables pour que ces paramètres globaux soient actifs. Pour obtenir des instructions, reportez-vous à la rubrique [configurer des stratégies de liens fiables dans Microsoft Defender pour Office 365](set-up-atp-safe-links-policies.md).
 
-- Vous ouvrez le Centre de conformité et sécurité sur <https://protection.office.com/>. Pour accéder directement à la page **liens approuvés ATP** , utilisez <https://protection.office.com/safelinksv2> .
+- Vous ouvrez le Centre de conformité et sécurité sur <https://protection.office.com/>. Pour accéder directement à la page **liens approuvés** , utilisez <https://protection.office.com/safelinksv2> .
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -59,13 +59,13 @@ Vous pouvez configurer les paramètres de liens de sécurité globaux dans le ce
 
 - Autoriser jusqu’à 30 minutes pour l’application d’une stratégie nouvelle ou mise à jour.
 
-- De [nouvelles fonctionnalités sont continuellement ajoutées à](office-365-atp.md#new-features-in-office-365-atp)la protection avancée contre les menaces. À mesure que de nouvelles fonctionnalités sont ajoutées, vous devrez peut-être apporter des ajustements aux stratégies de liens fiables existantes.
+- De [nouvelles fonctionnalités sont continuellement ajoutées à Microsoft Defender pour Office 365](office-365-atp.md#new-features-in-microsoft-defender-for-office-365). À mesure que de nouvelles fonctionnalités sont ajoutées, vous devrez peut-être apporter des ajustements aux stratégies de liens fiables existantes.
 
 ## <a name="configure-the-block-the-following-urls-list-in-the-security--compliance-center"></a>Configurer la liste « bloquer les URL suivantes » dans le centre de sécurité & conformité
 
 La liste **bloquer les URL suivantes** identifie les liens qui doivent toujours être bloqués par l’analyse des liens fiables dans les applications prises en charge. Pour plus d’informations, reportez-vous à [la section « bloquer les URL suivantes » pour les liens fiables](atp-safe-links.md#block-the-following-urls-list-for-safe-links).
 
-1. Dans le centre de sécurité & conformité, accédez à la stratégie de **gestion des menaces** - \> **Policy** \> **liens approuvés ATP**, puis cliquez sur **paramètres globaux**.
+1. Dans le centre de sécurité & conformité, accédez à la stratégie de **gestion des menaces** - \> **Policy** \> **liens approuvés ATP** , puis cliquez sur **paramètres globaux**.
 
 2. Dans la **stratégie de liens fiables pour votre organisation** , passez à la zone **bloquer les URL suivantes** .
 
@@ -110,15 +110,15 @@ Vous pouvez utiliser la cmdlet **Get-AtpPolicyForO365** pour afficher les entré
 
 La protection des liens fiables pour les applications Office 365 s’applique aux documents dans les applications de bureau, mobiles et Web Office prises en charge. Pour plus d’informations, consultez la rubrique [paramètres de liens approuvés pour les applications Office 365](atp-safe-links.md#safe-links-settings-for-office-365-apps).
 
-1. Dans le centre de sécurité & conformité, accédez à la stratégie de **gestion des menaces** - \> **Policy** \> **liens approuvés ATP**, puis cliquez sur **paramètres globaux**.
+1. Dans le centre de sécurité & conformité, accédez à la stratégie de **gestion des menaces** - \> **Policy** \> **liens approuvés ATP** , puis cliquez sur **paramètres globaux**.
 
 2. Dans la **stratégie de liens fiables pour votre organisation** , la fonctionnalité de survol qui s’affiche, configurez les paramètres suivants dans la section **paramètres qui s’appliquent au contenu à l’exception de la messagerie** :
 
-   - **Applications office 365**: Vérifiez que le bouton bascule est sur la droite pour activer les liens fiables pour les applications Office 365 prises en charge : ![ activer/désactiver ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
+   - **Applications office 365** : Vérifiez que le bouton bascule est sur la droite pour activer les liens fiables pour les applications Office 365 prises en charge : ![ activer/désactiver ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
 
-   - **Ne pas suivre lorsque les utilisateurs cliquent sur les liens fiables**: déplacer le bouton bascule vers la gauche pour suivre les clics d’utilisateur liés aux URL bloquées dans les applications Office 365 prises en charge : désactiver ![ ](../../media/scc-toggle-off.png) .
+   - **Ne pas suivre lorsque les utilisateurs cliquent sur les liens fiables** : déplacer le bouton bascule vers la gauche pour suivre les clics d’utilisateur liés aux URL bloquées dans les applications Office 365 prises en charge : désactiver ![ ](../../media/scc-toggle-off.png) .
 
-   - **Ne laissez pas les utilisateurs cliquer via les liens fiables à l’URL d’origine**: Vérifiez que le bouton bascule est sur la droite pour empêcher les utilisateurs de cliquer sur l’URL bloquée d’origine dans les applications Office 365 prises en charge : ![ activer/désactiver ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
+   - **Ne laissez pas les utilisateurs cliquer via les liens fiables à l’URL d’origine** : Vérifiez que le bouton bascule est sur la droite pour empêcher les utilisateurs de cliquer sur l’URL bloquée d’origine dans les applications Office 365 prises en charge : ![ activer/désactiver ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
 
    Lorsque vous avez terminé, cliquez sur **Enregistrer**.
 
@@ -146,7 +146,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 Pour vérifier que vous avez bien configuré les paramètres globaux pour les liens fiables (la liste **bloquer les URL suivantes** et les paramètres protection des applications Office 365), effectuez l’une des opérations suivantes :
 
-- Dans le centre de sécurité & conformité, accédez à la stratégie de **gestion des menaces** - \> **Policy** \> **liens approuvés ATP**, cliquez sur **paramètres globaux**et vérifiez les paramètres dans le survol qui s’affiche.
+- Dans le centre de sécurité & conformité, accédez à la stratégie de **gestion des menaces** - \> **Policy** \> **liens approuvés ATP** , cliquez sur **paramètres globaux** et vérifiez les paramètres dans le survol qui s’affiche.
 
 - Dans Exchange Online PowerShell ou Exchange Online Protection PowerShell, exécutez la commande suivante et vérifiez les paramètres :
 

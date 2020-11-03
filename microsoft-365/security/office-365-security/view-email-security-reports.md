@@ -18,19 +18,19 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez comment rechercher et utiliser des rapports de sécurité de messagerie pour votre organisation. Les rapports de sécurité de messagerie sont disponibles dans le centre de sécurité & conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 58c29d37d4f7deab17b2c24bfd7fb74e5ba9cb45
-ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
+ms.openlocfilehash: 36d7fde77ae8a6280dae26e5a0f7a75537bf28d4
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48600564"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841871"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Afficher les rapports de sécurité de courrier dans le centre de sécurité et conformité
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Un grand nombre de rapports sont disponibles dans le [Centre de conformité security &](https://protection.office.com) pour vous aider à découvrir comment les fonctionnalités de sécurité de messagerie, telles que le blocage du courrier indésirable, les programmes malveillants et les fonctionnalités de chiffrement de Microsoft 365 protègent votre organisation. Si vous disposez des [autorisations nécessaires](#what-permissions-are-needed-to-view-these-reports), vous pouvez afficher ces rapports dans le centre de sécurité & conformité en accédant au **Reports** \> **tableau de bord**rapports. Pour accéder directement au tableau de bord rapports, ouvrez <https://protection.office.com/insightdashboard> .
+Un grand nombre de rapports sont disponibles dans le [Centre de conformité security &](https://protection.office.com) pour vous aider à découvrir comment les fonctionnalités de sécurité de messagerie, telles que le blocage du courrier indésirable, les programmes malveillants et les fonctionnalités de chiffrement de Microsoft 365 protègent votre organisation. Si vous disposez des [autorisations nécessaires](#what-permissions-are-needed-to-view-these-reports), vous pouvez afficher ces rapports dans le centre de sécurité & conformité en accédant au **Reports** \> **tableau de bord** rapports. Pour accéder directement au tableau de bord rapports, ouvrez <https://protection.office.com/insightdashboard> .
 
 ![Tableau de bord des rapports dans le centre de sécurité & conformité](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
@@ -51,13 +51,13 @@ Vous pouvez filtrer le graphique et le tableau détails en cliquant sur **filtre
 
 - **Date de début** et **Date de fin**
 
-- **Suspect**: le compte d’utilisateur a envoyé un courrier électronique suspect et n’est pas autorisé à envoyer des courriers électroniques.
+- **Suspect** : le compte d’utilisateur a envoyé un courrier électronique suspect et n’est pas autorisé à envoyer des courriers électroniques.
 
-- **Restricted**: le compte d’utilisateur ne peut pas envoyer de courrier électronique en raison de modèles très suspects.
+- **Restricted** : le compte d’utilisateur ne peut pas envoyer de courrier électronique en raison de modèles très suspects.
 
 ![Affichage de rapport dans le rapport utilisateurs compromis](../../media/compromised-users-report-activity-view.png)
 
-Si vous cliquez sur **afficher les détails table**, vous pouvez voir les détails suivants :
+Si vous cliquez sur **afficher les détails table** , vous pouvez voir les détails suivants :
 
 - **Heure de création**
 - **ID d'utilisateur**
@@ -83,39 +83,39 @@ Pour en savoir plus sur le chiffrement, consultez la rubrique [chiffrement des m
 
 Vous pouvez utiliser les filtres suivants sur le graphique :
 
-- **Afficher les données par : rapport de chiffrement des messages** et dépanner **par : méthode**de chiffrement : les méthodes de chiffrement suivantes sont disponibles :
+- **Afficher les données par : rapport de chiffrement des messages** et dépanner **par : méthode** de chiffrement : les méthodes de chiffrement suivantes sont disponibles :
 
   - **Chiffrement par utilisateur**
   - **Chiffrement par stratégie**
 
-  Si vous cliquez sur **filtres**, vous pouvez modifier le graphique avec les filtres suivants :
+  Si vous cliquez sur **filtres** , vous pouvez modifier le graphique avec les filtres suivants :
 
   - **Date de début** et **Date de fin**
   - Méthode de chiffrement.
   - Modèle de chiffrement.
 
-- **Afficher les données par : rapport de chiffrement des messages** et dépanner **par : modèle de chiffrement**: les méthodes de chiffrement suivantes sont disponibles :
+- **Afficher les données par : rapport de chiffrement des messages** et dépanner **par : modèle de chiffrement** : les méthodes de chiffrement suivantes sont disponibles :
 
   - **Ne pas transférer**
   - **Chiffrer uniquement**
   - **OME précédent**
   - **Personnalisé**
 
-  Si vous cliquez sur **filtres**, vous pouvez modifier le graphique avec les filtres suivants :
+  Si vous cliquez sur **filtres** , vous pouvez modifier le graphique avec les filtres suivants :
 
   - **Date de début** et **Date de fin**
   - Méthode de chiffrement
   - Modèle de chiffrement
 
-- **Afficher les données de : 5 principaux domaines de destinataire**: cette vue affiche un graphique en secteurs avec le nombre de messages envoyés pour les 5 principaux domaines de destinataire.
+- **Afficher les données de : 5 principaux domaines de destinataire** : cette vue affiche un graphique en secteurs avec le nombre de messages envoyés pour les 5 principaux domaines de destinataire.
 
-  Si vous cliquez sur **filtres**, vous pouvez sélectionner une **Date de début** et une date de **fin**.
+  Si vous cliquez sur **filtres** , vous pouvez sélectionner une **Date de début** et une date de **fin**.
 
 ### <a name="details-table-view-for-the-encryption-report"></a>Vue de la table Détails pour le rapport de chiffrement
 
-Si vous cliquez sur **afficher les détails table**, les informations affichées dépendent du graphique que vous examinez :
+Si vous cliquez sur **afficher les détails table** , les informations affichées dépendent du graphique que vous examinez :
 
-- Dépanner **en : méthode de chiffrement** ou **décomposer par : modèle de chiffrement**: les informations suivantes sont affichées :
+- Dépanner **en : méthode de chiffrement** ou **décomposer par : modèle de chiffrement** : les informations suivantes sont affichées :
 
   - **Date**
   - **Adresse de l’expéditeur**
@@ -124,7 +124,7 @@ Si vous cliquez sur **afficher les détails table**, les informations affichées
   - **Adresse du destinataire**
   - **Subject**
 
-- **Afficher les données par : les principaux domaines de destinataires**:
+- **Afficher les données par : les principaux domaines de destinataires** :
 
   - **Date**
   - **Domaine du destinataire**
@@ -160,12 +160,12 @@ Vous pouvez filtrer le graphique et le tableau détails en cliquant sur **filtre
 
 ![Affichage du rapport dans le rapport détection des programmes malveillants dans le courrier électronique](../../media/malware-detections-report-view.png)
 
-Si vous cliquez sur **afficher les détails table**, vous pouvez voir les détails suivants :
+Si vous cliquez sur **afficher les détails table** , vous pouvez voir les détails suivants :
 
 - **Date**
 - **Adresse de l’expéditeur**
 - **Adresse du destinataire**
-- **ID du message**: disponible dans le champ d’en-tête **message-ID** de l’en-tête du message et doit être unique. Un exemple de valeur est `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (Notez les chevrons).
+- **ID du message** : disponible dans le champ d’en-tête **message-ID** de l’en-tête du message et doit être unique. Un exemple de valeur est `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (Notez les chevrons).
 - **Subject**
 - **Filename**
 - **Nom du programme malveillant**
@@ -192,18 +192,18 @@ Pour plus d’informations sur la protection contre le courrier indésirable, co
 
 Les graphiques suivants sont disponibles dans l’affichage rapport :
 
-- **Décomposation par : action**: les types d’événements suivants sont affichés :
+- **Décomposation par : action** : les types d’événements suivants sont affichés :
 
   - **Contenu du courrier indésirable filtré**
   - **Blocage d’IP de courrier indésirable**
   - **Bloc d’enveloppe de courrier indésirable**
-  - **Filtre DBEB de courrier indésirable**: blocage du périmètre basé sur l’annuaire (DBEB)
+  - **Filtre DBEB de courrier indésirable** : blocage du périmètre basé sur l’annuaire (DBEB)
 
   Lorsque vous placez le curseur de la souris sur un jour (point de données) dans le graphique, vous pouvez voir le nombre d’éléments qui ont été bloqués cette journée, ainsi que la façon dont ces éléments sont catégorisés.
 
   ![Affichage des actions dans le rapport des détections de courrier indésirable](../../media/spam-detections-report-action-view.png)
 
-- **Décomposer en : direction**: les instructions suivantes sont affichées :
+- **Décomposer en : direction** : les instructions suivantes sont affichées :
 
   - **Entrants**
   - **Sortant**
@@ -257,7 +257,7 @@ Vous pouvez filtrer le graphique et le tableau détails en cliquant sur **filtre
 
 ![Affichage de rapport dans le rapport des détections d’usurpation d’identité](../../media/spoof-detections-report-view.png)
 
-Si vous cliquez sur **afficher les détails table**, vous pouvez voir les détails suivants :
+Si vous cliquez sur **afficher les détails table** , vous pouvez voir les détails suivants :
 
 - **Date**
 - **Expéditeur usurpé**
@@ -270,24 +270,24 @@ Pour revenir à l’affichage de rapport, cliquez sur **afficher le rapport**.
 
 ## <a name="threat-protection-status-report"></a>Rapport sur l’état de la protection contre les menaces
 
-Le rapport d' **État de protection contre les menaces** est disponible à la fois dans EOP et dans Office 365 ATP ; Toutefois, les rapports contiennent des données différentes. Par exemple, les clients EOP peuvent afficher des informations sur les programmes malveillants détectés dans les courriers électroniques, mais pas sur les [fichiers malveillants détectés par la protection avancée contre les menaces pour SharePoint, OneDrive ou Microsoft teams](atp-for-spo-odb-and-teams.md).
+Le rapport d' **État de protection contre les menaces** est disponible dans EOP et Microsoft Defender pour Office 365 ; Toutefois, les rapports contiennent des données différentes. Par exemple, les clients EOP peuvent afficher des informations sur les programmes malveillants détectés dans les courriers électroniques, mais pas sur les [fichiers malveillants détectés par la protection avancée contre les menaces pour SharePoint, OneDrive ou Microsoft teams](atp-for-spo-odb-and-teams.md).
 
-Le rapport indique le nombre de messages électroniques avec du contenu malveillant, tels que des fichiers ou des adresses de sites Web (URL) bloqués par le moteur anti-programme malveillant, la [purge automatique avec zéro heure (supprimable)](zero-hour-auto-purge.md)et les fonctionnalités ATP telles que les [liens approuvés](atp-safe-links.md), [les pièces jointes fiables](atp-safe-attachments.md)et l' [anti-hameçonnage ATP](set-up-anti-phishing-policies.md). Vous pouvez utiliser ces informations pour identifier les tendances ou déterminer si les stratégies de l’organisation doivent être ajustées. Il est important de comprendre que si un message est envoyé à cinq destinataires, nous le dénombrez cinq messages différents et pas un message.
+Le rapport indique le nombre de messages électroniques avec du contenu malveillant, tels que des fichiers ou des adresses de sites Web (URL) bloqués par le moteur anti-programme malveillant, la [purge automatique avec une heure zéro (ZAP)](zero-hour-auto-purge.md)et Defender pour Office 365, tels que les [liens approuvés](atp-safe-links.md), [les pièces jointes fiables](atp-safe-attachments.md)et les fonctionnalités [anti-hameçonnage](set-up-anti-phishing-policies.md). Vous pouvez utiliser ces informations pour identifier les tendances ou déterminer si les stratégies de l’organisation doivent être ajustées. Il est important de comprendre que si un message est envoyé à cinq destinataires, nous le dénombrez cinq messages différents et pas un message.
 
 Pour afficher le rapport, ouvrez le [Centre de sécurité & conformité](https://protection.office.com), accédez à **rapports** \> **Dashboard** et sélectionnez **Threat Protection Status**. Pour accéder directement au rapport, ouvrez l’une des URL suivantes :
 
-- Office 365 ATP : <https://protection.office.com/reportv2?id=TPSAggregateReportATP>
+- Microsoft Defender pour Office 365 : <https://protection.office.com/reportv2?id=TPSAggregateReportATP>
 - EOP <https://protection.office.com/reportv2?id=TPSAggregateReport>
 
 ![Widget état de la protection contre les menaces dans le tableau de bord rapports](../../media/threat-protection-status-report-widget.png)
 
-Par défaut, le graphique affiche les données des 7 derniers jours. Si vous cliquez sur **filtres**, vous pouvez sélectionner une plage de dates de 90 jours (les abonnements à la version d’évaluation peuvent être limités à 30 jours). La vue de table des détails autorise le filtrage pendant 30 jours.
+Par défaut, le graphique affiche les données des 7 derniers jours. Si vous cliquez sur **filtres** , vous pouvez sélectionner une plage de dates de 90 jours (les abonnements à la version d’évaluation peuvent être limités à 30 jours). La vue de table des détails autorise le filtrage pendant 30 jours.
 
 ### <a name="report-view-for-the-threat-protection-status-report"></a>Affichage de rapport pour le rapport d’état de protection contre les menaces
 
 Les vues disponibles sont les suivantes :
 
-- **Afficher les données par : vue d’ensemble**: les informations de détection suivantes sont affichées :
+- **Afficher les données par : vue d’ensemble** : les informations de détection suivantes sont affichées :
 
   - **Courrier malveillant de messagerie**
   - **Courrier hameçon**
@@ -295,14 +295,14 @@ Les vues disponibles sont les suivantes :
 
   ![Vue d’ensemble dans le rapport d’état de protection contre les menaces](../../media/threat-protection-status-report-overview-view.png)
 
-- **Afficher les données par : contenu \> Programme malveillant**<sup>1</sup>: les informations suivantes sont affichées pour les organisations Office 365 ATP :
+- **Afficher les données par : contenu \> Programme malveillant**<sup>1</sup>: les informations suivantes sont affichées pour les organisations Microsoft defender pour Office 365 :
 
-  - **Moteur anti-programme malveillant**: captures de fichiers malveillants dans SharePoint Online, OneDrive et teams par anti-programme malveillant.
-  - **Détonation**des fichiers malveillants dans SharePoint Online, OneDrive et teams par des pièces jointes fiables.
+  - **Moteur anti-programme malveillant** : captures de fichiers malveillants dans SharePoint Online, OneDrive et teams par anti-programme malveillant.
+  - **Détonation** des fichiers malveillants dans SharePoint Online, OneDrive et teams par des pièces jointes fiables.
 
   ![Vue de programmes malveillants de contenu dans le rapport d’état de protection contre les menaces](../../media/threat-protection-status-report-content-malware-view.png)
 
-- **Afficher les données par : substitution de message**: les informations de raison de remplacement suivantes sont affichées :
+- **Afficher les données par : substitution de message** : les informations de raison de remplacement suivantes sont affichées :
 
   - **Omission sur site**
   - **Autoriser IP**
@@ -316,17 +316,17 @@ Les vues disponibles sont les suivantes :
 
   ![Vue de remplacement de message dans le rapport d’état de protection contre les menaces](../../media/threat-protection-status-report-message-override-view.png)
 
-- Dépanner **par : la technologie de détection** et l' **affichage des données par : E-mail \> hameçon**: les informations suivantes sont affichées :
+- Dépanner **par : la technologie de détection** et l' **affichage des données par : E-mail \> hameçon** : les informations suivantes sont affichées :
 
-  - Fonctionnalité de **réputation d’URL générée par l’ATP**<sup>1</sup>: réputation d’URL malveillante générée à partir de détonateurs ATP dans d’autres clients ATP.
-  - **Filtre anti-hameçonnage avancé**: signaux d’hameçonnage basés sur l’apprentissage de l’ordinateur.
-  - **Échec de l’anti-falsification-DMARC**: échec de l’authentification DMARC sur les messages.
-  - **Anti-spoof-intra-org**: l’expéditeur tente d’usurper le domaine du destinataire.
-  - **Anti-falsification-domaine externe**: l’expéditeur tente d’usurper un autre domaine.
-  - **Emprunt d’identité de marque**: emprunt d’identité de marques connues basées sur des expéditeurs.
+  - Fonctionnalité d' **URL générée** par la protection avancée contre les menaces <sup>1</sup>: réputation d’URL malveillante générée par Defender pour Office 365 les détonateurs d’autres utilisateurs de Defender pour Office 365.
+  - **Filtre anti-hameçonnage avancé** : signaux d’hameçonnage basés sur l’apprentissage de l’ordinateur.
+  - **Échec de l’anti-falsification-DMARC** : échec de l’authentification DMARC sur les messages.
+  - **Anti-spoof-intra-org** : l’expéditeur tente d’usurper le domaine du destinataire.
+  - **Anti-falsification-domaine externe** : l’expéditeur tente d’usurper un autre domaine.
+  - **Emprunt d’identité de marque** : emprunt d’identité de marques connues basées sur des expéditeurs.
   - **Emprunt d’identité de domaine**<sup>1</sup>: emprunt d’identité de domaines que le client possède ou définit.
-  - **Réputation d’URL EOP**: réputation d’URL malveillante.
-  - **Filtre de hameçonnage général**: signal d’hameçonnage basé sur les règles d’analyste. 
+  - **Réputation d’URL EOP** : réputation d’URL malveillante.
+  - **Filtre de hameçonnage général** : signal d’hameçonnage basé sur les règles d’analyste. 
   - **Autres**
   - **Hameçonnage zap**<sup>2</sup>: suppression automatique des messages d’hameçonnage par zéro heure.
   - **Détonation d’URL**<sup>1</sup>
@@ -334,11 +334,11 @@ Les vues disponibles sont les suivantes :
 
   ![Affichage de la technologie de détection pour les messages d’hameçonnage dans le rapport d’état de protection contre les menaces](../../media/threat-protection-status-report-phishing-detection-tech-view.png)
 
-- Dépanner **par : les technologies de détection** et les **données d’affichage par : \> programmes malveillants de messagerie**: les informations suivantes sont affichées :
+- Dépanner **par : les technologies de détection** et les **données d’affichage par : \> programmes malveillants de messagerie** : les informations suivantes sont affichées :
 
   - **Réputation de fichier générée par l’ATP**<sup>1</sup>: toutes les réputations de fichiers malveillants générées par les détonateurs ATP.
   - **Moteur anti-programme malveillant**<sup>1</sup>: détection à partir de moteurs anti-programme malveillant.
-  - **Bloc de type fichier de stratégie anti-programme malveillant**: il s’agit de messages électroniques filtrés en raison du type de fichier malveillant identifié dans le message.
+  - **Bloc de type fichier de stratégie anti-programme malveillant** : il s’agit de messages électroniques filtrés en raison du type de fichier malveillant identifié dans le message.
   - **Détonation de fichier**<sup>1</sup>: captures de détonation de fichier par des pièces jointes fiables.  
   - **Réputation de fichier malveillant**
   - **Programme malveillant zap**<sup>2</sup>
@@ -346,7 +346,7 @@ Les vues disponibles sont les suivantes :
 
   ![Affichage de la technologie de détection pour les programmes malveillants dans le rapport d’état de protection contre les menaces](../../media/threat-protection-status-report-malware-detection-tech-view.png)
 
-- **Décomposation par : type de stratégie** et **affichage des données : envoyez un message électronique \> hameçon** ou **Affichez les données par : courrier \> malveillant**: les informations suivantes sont affichées :
+- **Décomposation par : type de stratégie** et **affichage des données : envoyez un message électronique \> hameçon** ou **Affichez les données par : courrier \> malveillant** : les informations suivantes sont affichées :
 
   - **Anti-programme malveillant**
   - **Pièce jointe fiable**<sup>1</sup>
@@ -357,7 +357,7 @@ Les vues disponibles sont les suivantes :
 
   ![Vue type de stratégie pour le courrier électronique d’hameçonnage dans le rapport d’état de protection contre les menaces](../../media/threat-protection-status-report-phishing-policy-type-view.png)
 
-- Dépanner **: état de remise** et **afficher les données par : courrier \> hameçon** ou **affichage des données par : courrier \> malveillant**: les informations suivantes sont affichées :
+- Dépanner **: état de remise** et **afficher les données par : courrier \> hameçon** ou **affichage des données par : courrier \> malveillant** : les informations suivantes sont affichées :
 
   - **Échec de la remise**
   - **Raccroché**
@@ -371,43 +371,43 @@ Les vues disponibles sont les suivantes :
 
   ![Affichage de l’état de remise du courrier électronique d’hameçonnage dans le rapport d’état de protection contre les menaces](../../media/threat-protection-status-report-phishing-delivery-status-view.png)
 
-<sup>1</sup> ATP Office 365 uniquement
+<sup>1</sup> Defender pour Office 365 uniquement
 
 <sup>2</sup> la purge automatique à zéro heure (ZAP) n’est pas disponible dans la version autonome d’EOP (elle fonctionne uniquement dans les boîtes aux lettres Exchange Online).
 
-Si vous cliquez sur **filtres**, les filtres disponibles dépendent du graphique que vous examinez :
+Si vous cliquez sur **filtres** , les filtres disponibles dépendent du graphique que vous examinez :
 
-Pour **les \> programmes malveillants de contenu**, vous pouvez modifier le rapport par **Date de début** et **Date de fin**, ainsi que la valeur de **détection** .
+Pour **les \> programmes malveillants de contenu** , vous pouvez modifier le rapport par **Date de début** et **Date de fin** , ainsi que la valeur de **détection** .
 
-Pour le **remplacement de message**, vous pouvez modifier le rapport avec les filtres suivants :
+Pour le **remplacement de message** , vous pouvez modifier le rapport avec les filtres suivants :
 
 - **Date de début** et **Date de fin**
 - **Motif de remplacement**
-- **Tag**: Filter by tag pour renvoyer des utilisateurs ou des groupes auxquels une balise spécifique a été appliquée. Pour plus d’informations sur les balises utilisateur, voir [User Tags](user-tags.md).
+- **Tag** : Filter by tag pour renvoyer des utilisateurs ou des groupes auxquels une balise spécifique a été appliquée. Pour plus d’informations sur les balises utilisateur, voir [User Tags](user-tags.md).
 - **Domaine**
 
 Pour tous les autres affichages, vous pouvez modifier le rapport avec les filtres suivants :
 
 - **Date de début** et **Date de fin**
 - **Détection**
-- **Protégé par**: **ATP** ou **EOP**
-- **Tag**: Filter by tag pour renvoyer des utilisateurs ou des groupes auxquels une balise spécifique a été appliquée. Pour plus d’informations sur les balises utilisateur, voir [User Tags](user-tags.md).
+- **Protégé par** : **ATP** ou **EOP**
+- **Tag** : Filter by tag pour renvoyer des utilisateurs ou des groupes auxquels une balise spécifique a été appliquée. Pour plus d’informations sur les balises utilisateur, voir [User Tags](user-tags.md).
 - **Domaine**
 
 ### <a name="details-table-view-for-the-threat-protection-status-report"></a>Vue de la table Détails pour le rapport d’état de protection contre les menaces
 
-Si vous cliquez sur **afficher les détails table**, les informations affichées dépendent du graphique que vous examinez :
+Si vous cliquez sur **afficher les détails table** , les informations affichées dépendent du graphique que vous examinez :
 
-- **Afficher les données par : contenu \> Programmes malveillants**:
+- **Afficher les données par : contenu \> Programmes malveillants** :
 
   - **Date**
   - **Location**
   - **Demandé par**
   - **Nom du programme malveillant**
 
-Si vous cliquez sur **filtres** dans cet affichage, vous pouvez modifier le rapport par **Date de début** et date de **fin**, ainsi que par la valeur de **détection** .
+Si vous cliquez sur **filtres** dans cet affichage, vous pouvez modifier le rapport par **Date de début** et date de **fin** , ainsi que par la valeur de **détection** .
 
-- **Afficher les données par : remplacement de message**:
+- **Afficher les données par : remplacement de message** :
 
   - **Date**
   - **Subject**
@@ -422,11 +422,11 @@ Si vous cliquez sur **filtres** dans cet affichage, vous pouvez modifier le rapp
 
 - **Date de début** et **Date de fin**
 - **Motif de remplacement**
-- **Tag**: Filter by tag pour renvoyer des utilisateurs ou des groupes auxquels une balise spécifique a été appliquée. Pour plus d’informations sur les balises utilisateur, voir [User Tags](user-tags.md).
+- **Tag** : Filter by tag pour renvoyer des utilisateurs ou des groupes auxquels une balise spécifique a été appliquée. Pour plus d’informations sur les balises utilisateur, voir [User Tags](user-tags.md).
 - **Domaine**
 - **Destinataires** (Notez que cette propriété filtrable est disponible uniquement dans l’affichage Table des détails)
 
-**Afficher les données par : vue d’ensemble**: aucun bouton **afficher la table des détails** n’est disponible.
+**Afficher les données par : vue d’ensemble** : aucun bouton **afficher la table des détails** n’est disponible.
 
 - Tous les autres graphiques :
 
@@ -439,12 +439,12 @@ Si vous cliquez sur **filtres** dans cet affichage, vous pouvez modifier le rapp
   - **Source de compromission**
   - **Tags**
 
-Si vous cliquez sur **filtres**, vous pouvez modifier le rapport avec les filtres suivants :
+Si vous cliquez sur **filtres** , vous pouvez modifier le rapport avec les filtres suivants :
 
 - **Date de début** et **Date de fin**
 - **Détection**
-- **Protégé par** (Office 365 ATP uniquement) : **ATP** ou **EOP**
-- **Tag**: Filter by tag pour renvoyer des utilisateurs ou des groupes auxquels une balise spécifique a été appliquée. Pour plus d’informations sur les balises utilisateur, voir [User Tags](user-tags.md).
+- **Protégé par** : **defender pour Office 365** ou **EOP**
+- **Tag** : Filter by tag pour renvoyer des utilisateurs ou des groupes auxquels une balise spécifique a été appliquée. Pour plus d’informations sur les balises utilisateur, voir [User Tags](user-tags.md).
 - **Domaine**
 - **Destinataires** (Notez que cette propriété filtrable est disponible uniquement dans l’affichage Table des détails)
 
@@ -460,7 +460,7 @@ Lorsque vous placez le curseur de la souris sur un coin du graphique en secteurs
 
 ![Affichage des rapports de programmes malveillants principaux](../../media/top-malware-report-view.png)
 
-Si vous cliquez sur **afficher les détails table**, vous pouvez voir les détails suivants :
+Si vous cliquez sur **afficher les détails table** , vous pouvez voir les détails suivants :
 
 - **Principaux programmes malveillants**
 - **Count**
@@ -469,7 +469,7 @@ Si vous cliquez sur **filtres** dans le mode État ou le tableau détails, vous 
 
 ## <a name="url-threat-protection-report"></a>Rapport d’URL de protection contre les menaces
 
-Le **rapport URL protection contre les menaces** est disponible dans Office 365 Advanced Threat Protection (ATP). Pour plus d’informations, consultez la rubrique [URL Threat Protection report](view-reports-for-atp.md#url-threat-protection-report).
+Le **rapport URL protection contre les menaces** est disponible dans Microsoft Defender pour Office 365. Pour plus d’informations, consultez la rubrique [URL Threat Protection report](view-reports-for-atp.md#url-threat-protection-report).
 
 ## <a name="user-reported-messages-report"></a>Rapport sur les messages signalés par l’utilisateur
 
@@ -518,4 +518,4 @@ Si vous ne voyez pas de données dans vos rapports, vérifiez que vos stratégie
 
 [Afficher les rapports de flux de messagerie dans le centre de sécurité & conformité](view-mail-flow-reports.md)
 
-[Afficher les rapports pour Office 365 protection avancée contre les menaces](view-reports-for-atp.md)
+[Afficher des rapports pour Defender pour Office 365](view-reports-for-atp.md)

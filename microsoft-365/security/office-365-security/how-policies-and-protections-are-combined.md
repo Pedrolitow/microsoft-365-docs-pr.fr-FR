@@ -16,25 +16,25 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur l’ordre des applications des protections dans Exchange Online Protection (EOP) et la façon dont la valeur de priorité dans les stratégies de protection détermine quelle stratégie est appliquée.
-ms.openlocfilehash: 6b17a524fb9dfbf5e33604c2ec26a678befc8834
-ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
+ms.openlocfilehash: 9bff44a0c9964c60f5b8b5c0afdfe6d29ee6da93
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48600284"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843609"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Ordre et priorité de la protection de la messagerie
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection (EOP) autonomes sans boîte aux lettres Exchange Online, le courrier électronique entrant peut être marqué par plusieurs formes de protection. Par exemple, les stratégies de protection contre le hameçonnage intégrées, disponibles pour tous les clients Microsoft 365, et les stratégies anti-hameçonnage plus robustes disponibles pour les clients Office 365 Advanced Threat Protection (Office 365 ATP). Les messages passent également par des analyses de détection multiples pour les programmes malveillants, le courrier indésirable, le hameçonnage, etc. Une fois cette activité terminée, il peut y avoir une certaine confusion quant à l’application de la stratégie.
+Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection (EOP) autonomes sans boîte aux lettres Exchange Online, le courrier électronique entrant peut être marqué par plusieurs formes de protection. Par exemple, les stratégies de détection d’hameçonnage intégrées dans EOP qui sont disponibles pour tous les clients Microsoft 365, et les stratégies anti-hameçonnage plus fiables qui sont disponibles pour les clients Microsoft Defender pour Office 365. Les messages passent également par des analyses de détection multiples pour les programmes malveillants, le courrier indésirable, le hameçonnage, etc. Une fois cette activité terminée, il peut y avoir une certaine confusion quant à l’application de la stratégie.
 
 En règle générale, une stratégie appliquée à un message est identifiée dans l’en-tête **X-Forefront-antispam-Report** de la propriété **Cat (Category)** . Pour plus d’informations, consultez la rubrique [en-têtes de message anti-courrier indésirable](anti-spam-message-headers.md).
 
 Il existe deux facteurs principaux qui déterminent la stratégie appliquée à un message :
 
-- **Priorité du type de protection de messagerie**: cette commande n’est pas configurable et est décrite dans le tableau suivant :
+- **Priorité du type de protection de messagerie** : cette commande n’est pas configurable et est décrite dans le tableau suivant :
 
   ****
 
@@ -44,23 +44,23 @@ Il existe deux facteurs principaux qui déterminent la stratégie appliquée à 
   |n°2|Hameçonnage|CAT : PHSH|[Configuration de stratégies de blocage du courrier indésirable dans Exchange Online Protection](configure-your-spam-filter-policies.md)|
   |3|Courrier fortement suspecté d’être indésirable|CAT : HSPM|[Configuration de stratégies de blocage du courrier indésirable dans Exchange Online Protection](configure-your-spam-filter-policies.md)|
   |4 |Usurpation|CAT : USURPATION|[Configurer l’intelligence des usurpations d’identité dans EOP](learn-about-spoof-intelligence.md)|
-  |disque<sup>\*</sup>|Emprunt d’identité d’utilisateur (domaines protégés)|UIMP|[Configurer des stratégies anti-hameçonnage ATP](configure-atp-anti-phishing-policies.md)|
-  |6.x<sup>\*</sup>|Emprunt d’identité de domaine (utilisateurs protégés)|DIMP|[Configurer des stratégies anti-hameçonnage ATP](configure-atp-anti-phishing-policies.md)|
+  |disque<sup>\*</sup>|Emprunt d’identité d’utilisateur (domaines protégés)|UIMP|[Configurer des stratégies anti-hameçonnage dans Microsoft Defender pour Office 365](configure-atp-anti-phishing-policies.md)|
+  |6.x<sup>\*</sup>|Emprunt d’identité de domaine (utilisateurs protégés)|DIMP|[Configurer des stratégies anti-hameçonnage dans Microsoft Defender pour Office 365](configure-atp-anti-phishing-policies.md)|
   |7 |Courrier indésirable|CAT : SPM|[Configuration de stratégies de blocage du courrier indésirable dans Exchange Online Protection](configure-your-spam-filter-policies.md)|
   |8 |Courrier en nombre|CAT : BULK|[Configuration de stratégies de blocage du courrier indésirable dans Exchange Online Protection](configure-your-spam-filter-policies.md)|
   |
 
-  <sup>\*</sup> Ces fonctionnalités sont disponibles uniquement dans les stratégies anti-hameçonnage ATP.
+  <sup>\*</sup> Ces fonctionnalités sont disponibles uniquement dans les stratégies anti-hameçonnage de Microsoft Defender pour Office 365.
 
-- **Priorité de la stratégie**: pour chaque type de protection (blocage du courrier indésirable, anti-programme malveillant, anti-hameçonnage, etc.), il existe une stratégie par défaut qui s’applique à tous les utilisateurs, mais vous pouvez créer des stratégies personnalisées qui s’appliquent à des utilisateurs spécifiques. Chaque stratégie personnalisée a une valeur de priorité qui détermine l’ordre dans lequel les stratégies sont appliquées. La stratégie par défaut est toujours appliquée en dernier.
+- **Priorité de la stratégie** : pour chaque type de protection (blocage du courrier indésirable, anti-programme malveillant, anti-hameçonnage, etc.), il existe une stratégie par défaut qui s’applique à tous les utilisateurs, mais vous pouvez créer des stratégies personnalisées qui s’appliquent à des utilisateurs spécifiques. Chaque stratégie personnalisée a une valeur de priorité qui détermine l’ordre dans lequel les stratégies sont appliquées. La stratégie par défaut est toujours appliquée en dernier.
 
   Si un utilisateur est défini dans plusieurs stratégies du même type, seule la stratégie avec la priorité la plus élevée est appliquée. Les stratégies restantes de ce type ne sont pas évaluées pour l’utilisateur (y compris la stratégie par défaut).
 
-Par exemple, considérez les stratégies anti-hameçonnage ATP suivantes **qui s’appliquent aux mêmes utilisateurs**, et un message qui est identifié à la fois comme emprunt d’identité d’utilisateur et usurpation d’identité :
+Par exemple, considérez les stratégies anti-hameçonnage suivantes dans Microsoft Defender pour Office 365 **qui s’appliquent aux mêmes utilisateurs** , et un message qui est identifié à la fois comme emprunt d’identité d’utilisateur et usurpation d’identité :
 
   ****
 
-  |Stratégie anti-hameçonnage ATP|Priorité|Emprunt d’identité de l’utilisateur|Détection d’usurpation d’identité|
+  |Nom de la stratégie|Priorité|Emprunt d’identité de l’utilisateur|Détection d’usurpation d’identité|
   |---|---|---|---|
   |Stratégie A|0,1|Activé|Désactivé|
   |Stratégie B|n°2|Désactivé|Activé|

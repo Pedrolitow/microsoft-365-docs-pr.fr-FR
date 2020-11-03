@@ -12,12 +12,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: f6b79d3252084b298f94e01b18ebe3505f83b480
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 3840a6beae3b586fc90420f7813ff6e9d3cc6c60
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196856"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843851"
 ---
 # <a name="device-profile-page"></a>Page profil de périphérique
 
@@ -27,9 +27,9 @@ ms.locfileid: "48196856"
 Le portail de sécurité Microsoft 365 vous fournit des pages de profil de périphérique, afin que vous puissiez rapidement évaluer l’intégrité et l’état des appareils sur votre réseau.
 
 > [!IMPORTANT]
-> La page de profil de l’appareil peut sembler légèrement différente, selon que l’appareil est répertorié dans Microsoft Defender ATP, Azure ATP ou les deux.
+> La page de profil de périphérique peut sembler légèrement différente, selon que l’appareil est ou non s’inscrire dans Microsoft Defender pour le point de terminaison, Microsoft Defender pour l’identité ou les deux.
 
-Si le périphérique est s’inscrire dans Microsoft Defender ATP, vous pouvez également utiliser la page profil de l’appareil pour effectuer certaines tâches de sécurité courantes.
+Si le périphérique est intégré à Microsoft Defender pour le point de terminaison, vous pouvez également utiliser la page profil de l’appareil pour effectuer certaines tâches de sécurité courantes.
 
 ## <a name="navigating-the-device-profile-page"></a>Navigation dans la page de profil de l’appareil
 
@@ -41,7 +41,7 @@ L’encadré (1) répertorie les détails de base sur l’appareil.
 
 La zone de contenu principale (2) contient des onglets que vous pouvez parcourir pour afficher différents types d’informations sur l’appareil.
 
-Si le périphérique est inscrit dans Microsoft Defender ATP, vous verrez également une liste d’actions de réponse (3). Les actions de réponse vous permettent d’effectuer des tâches courantes liées à la sécurité.
+Si le périphérique est inscrit dans Microsoft Defender pour le point de terminaison, vous verrez également une liste d’actions de réponse (3). Les actions de réponse vous permettent d’effectuer des tâches courantes liées à la sécurité.
 
 ## <a name="sidebar"></a>Gadgets
 
@@ -51,15 +51,15 @@ En regard de la zone de contenu principale de la page de profil d’appareil est
 
 Le volet de navigation répertorie le nom complet et le niveau d’exposition de l’appareil. Elle fournit également des informations de base importantes dans les sous-sections de petite taille qui peuvent être ouvertes ou fermées, telles que :
 
-* **Tags** -toutes les balises personnalisées, ATP, ATP ou personnalisées de Microsoft Defender associées à l’appareil. Les balises d’Azure ATP ne sont pas modifiables.
-* **Informations de sécurité** -incidents ouverts et alertes actives. Les périphériques qui s’inscrivent dans Microsoft Defender ATP affichent également le niveau d’exposition et le niveau de risque.
+* **Tags** -tout Microsoft Defender pour point de terminaison, Microsoft Defender pour l’identité ou les balises personnalisées associées au périphérique. Les balises de Microsoft Defender for Identity ne sont pas modifiables.
+* **Informations de sécurité** -incidents ouverts et alertes actives. Le niveau d’exposition et le niveau de risque sont également affichés dans Microsoft Defender pour le point de terminaison.
 
 > [!TIP]
 > Le niveau d’exposition indique le degré de conformité de l’appareil aux recommandations en matière de sécurité, tandis que le niveau de risque est calculé en fonction d’un certain nombre de facteurs, dont les types et la gravité des alertes actives.
 
-* **Détails** sur l’appareil-domaine, système d’exploitation, horodatage de la première vue de l’appareil, adresses IP, ressources. Les appareils qui sont intégrés à Microsoft Defender ATP affichent également l’état d’intégrité. Les périphériques intégrés à Azure ATP afficheront le nom SAM et un horodatage pour la première création de l’appareil.
+* **Détails** sur l’appareil-domaine, système d’exploitation, horodatage de la première vue de l’appareil, adresses IP, ressources. Les appareils qui sont intégrés à Microsoft Defender pour Endpoint affichent également l’état d’intégrité. Les appareils qui sont intégrés à Microsoft Defender pour Identity affichent le nom SAM et un horodatage pour la première création de l’appareil.
 * **Activité réseau** : pour la première fois et pour la dernière fois, le périphérique a été vu sur le réseau.
-* **Données d’annuaire** (*uniquement pour les périphériques qui sont intégrés à Azure ATP*)-indicateurs [UAC](https://docs.microsoft.com/windows/security/identity-protection/user-account-control/user-account-control-overview) , [noms principaux](https://docs.microsoft.com/windows/win32/ad/service-principal-names)de service et appartenances aux groupes.
+* **Données d’annuaire** ( *uniquement pour les appareils qui sont intégrés à l’identité de Microsoft Defender* )-indicateurs [UAC](https://docs.microsoft.com/windows/security/identity-protection/user-account-control/user-account-control-overview) , [noms principaux](https://docs.microsoft.com/windows/win32/ad/service-principal-names)de propriété et appartenances aux groupes.
 
 ## <a name="response-actions"></a>Actions de réponse
 
@@ -68,13 +68,13 @@ Les actions de réponse offrent un moyen rapide de se défendre et d’analyser 
 ![Image de la barre d’action pour le profil d’appareil](../../media/mtp-device-profile/hybrid-device-long-action-bar.png)
 
 > [!IMPORTANT]
-> * Les [actions de réponse](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts) ne sont disponibles que si le périphérique est intégré à la protection avancée contre les menaces Microsoft.
-> * Les appareils qui sont s’inscrire dans Microsoft Defender ATP peuvent afficher différents nombres d’actions de réponse, en fonction du numéro de version et du système d’exploitation de l’appareil.
+> * Les [actions de réponse](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts) ne sont disponibles que si le périphérique est intégré à Microsoft Defender pour le point de terminaison.
+> * Les appareils qui sont intégrés à Microsoft Defender pour le point de terminaison peuvent afficher plusieurs actions de réponse, en fonction du système d’exploitation et du numéro de version de l’appareil.
 
 Les actions disponibles sur la page profil d’appareil sont les suivantes :
 
 * **Gérer les balises** : met à jour les balises personnalisées que vous avez appliquées à cet appareil.
-* **Isoler l’appareil** : isole l’appareil du réseau de votre organisation tout en le gardant connecté à la protection avancée contre les menaces de Microsoft Defender. Vous pouvez choisir d’autoriser l’exécution d’Outlook, de teams et de Skype entreprise lorsque l’appareil est isolé, à des fins de communication.
+* **Isoler l’appareil** : isole l’appareil du réseau de votre organisation tout en le gardant connecté à Microsoft Defender pour le point de terminaison. Vous pouvez choisir d’autoriser l’exécution d’Outlook, de teams et de Skype entreprise lorsque l’appareil est isolé, à des fins de communication.
 * **Centre de notifications** : afficher l’état des actions soumises. Disponible uniquement si une autre action a déjà été sélectionnée.
 * **Restreindre l’exécution de l’application** : empêche les applications qui ne sont pas signées par Microsoft de s’exécuter.
 * **Exécuter l’analyse antivirus** : met à jour les définitions de l’antivirus Windows Defender et exécute immédiatement une analyse antivirus. Choisissez entre analyse rapide ou analyse complète.
@@ -87,7 +87,7 @@ Les actions disponibles sur la page profil d’appareil sont les suivantes :
 
 Les onglets de profil d’appareil vous permettent d’afficher une vue d’ensemble des détails de sécurité de l’appareil et des tableaux contenant une liste d’alertes.
 
-Les appareils inscrit dans Microsoft Defender ATP affichent également des onglets qui comportent une chronologie, une liste de recommandations de sécurité, un inventaire logiciel, une liste de vulnérabilités découvertes et des Kbits/s manquants (mises à jour de sécurité).
+Les appareils inscrits dans Microsoft Defender for Endpoint affichent également des onglets qui comportent une chronologie, une liste de recommandations de sécurité, un inventaire logiciel, une liste de vulnérabilités découvertes et des Kbits/s manquants (mises à jour de sécurité).
 
 ### <a name="overview-tab"></a>Onglet vue d’ensemble
 
@@ -97,11 +97,11 @@ L’onglet par défaut est **vue d’ensemble**. Elle fournit un aperçu rapide 
 
 Ici, vous pouvez obtenir un aperçu rapide des alertes actives de l’appareil et des utilisateurs actuellement connectés.
 
-Si le périphérique est s’inscrire dans Microsoft Defender ATP, vous verrez également le niveau de risque de l’appareil et les données disponibles sur les évaluations de sécurité. Les évaluations de sécurité décrivent le niveau d’exposition de l’appareil, fournissent des recommandations en matière de sécurité et répertorient les logiciels concernés et les vulnérabilités découvertes.
+Si le périphérique est intégré à Microsoft Defender pour le point de terminaison, vous verrez également le niveau de risque de l’appareil et les données disponibles sur les évaluations de sécurité. Les évaluations de sécurité décrivent le niveau d’exposition de l’appareil, fournissent des recommandations en matière de sécurité et répertorient les logiciels concernés et les vulnérabilités découvertes.
 
 ### <a name="alerts-tab"></a>Onglet Alertes
 
-L’onglet **alertes** contient la liste des alertes qui ont été déclenchées sur l’appareil, à la fois Azure ATP et Microsoft Defender ATP.
+L’onglet **alertes** contient la liste des alertes qui ont été déclenchées sur l’appareil, de Microsoft Defender pour l’identité et de Microsoft Defender pour le point de terminaison.
 
 ![Image de l’onglet Alertes pour le profil d’appareil](../../media/mtp-device-profile/hybrid-device-tab-alerts.png)
 
@@ -177,9 +177,9 @@ Le nombre d’éléments affichés par page et les colonnes affichées peuvent �
 
 La sélection d’un élément ouvre un menu volant qui établit un lien vers la mise à jour.
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
-* [Vue d’ensemble de la Protection Microsoft contre les menaces](microsoft-threat-protection.md)
-* [Activer la Protection Microsoft contre les menaces](mtp-enable.md)
+* [Vue d’ensemble de Microsoft 365 Defender](microsoft-threat-protection.md)
+* [Activer Microsoft 365 Defender](mtp-enable.md)
 * [Examiner les entités sur les appareils à l’aide de la réponse dynamique](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response)
 * [Recherche et réponse automatiques dans Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)

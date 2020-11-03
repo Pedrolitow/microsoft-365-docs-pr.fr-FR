@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Découvrez comment déplacer votre entreprise de Microsoft 365 Business Premium vers Microsoft 365 E3.
-ms.openlocfilehash: fbd5c0710bffa92cfc17447094bb9b2683641d5f
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 874da0d35759c8af4c3ee2ca4a1bdfa90a91627c
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195516"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842197"
 ---
 # <a name="migrate-from-microsoft-365-business-premium-to-microsoft-365-e3"></a>Migration de Microsoft 365 Business Premium vers Microsoft 365 E3
 
@@ -40,7 +40,7 @@ Votre entreprise a besoin de fonctionnalités d’entreprise, telles que les app
 La mise à niveau est facile : vous pouvez démarrer la mise à niveau [à partir du centre d’administration](../commerce/subscriptions/upgrade-to-different-plan.md). Toutes les données et la configuration de votre abonnement actuel sont conservées. Il n’y a rien à faire pour vous préparer à la migration et rien à faire par la suite, sauf tirer parti des nouvelles fonctionnalités.
 
 >[!Note]
->Vous pouvez également utiliser un abonnement Microsoft 365 Business Premium pour un maximum de 300 postes et obtenir un abonnement Microsoft 365 E3 pour plus de 300 places. Toutefois, Office 365 ATP n’est pas inclus dans Microsoft 365 E3. Pour une protection permanente contre les menaces, vous devez ajouter des licences Office 365 ATP supplémentaires afin que tous les utilisateurs de votre police Office 365 ATP soient titulaires d’une licence.
+>Vous pouvez également utiliser un abonnement Microsoft 365 Business Premium pour un maximum de 300 postes et obtenir un abonnement Microsoft 365 E3 pour plus de 300 places. Toutefois, Microsoft Defender pour Office 365 n’est pas inclus dans Microsoft 365 E3. Pour une protection permanente contre les menaces, ajoutez des licences supplémentaires pour Office 365 afin que tous les utilisateurs de l’étendue de vos stratégies Defender pour Office 365 soient titulaires d’une licence.
 >
 
 ## <a name="differences-between-microsoft-365-business-premium-and-microsoft-365-enterprise"></a>Différences entre Microsoft 365 Business Premium et Microsoft 365 Enterprise
@@ -60,12 +60,12 @@ Ce tableau présente les différences entre Microsoft 365 Business Premium et Mi
 | Gestionnaire de clients Outlook, MileIQ    | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | | 
 | **Protection contre les menaces**        | | | 
 | Fonctionnalités de réduction de la surface d’attaque    | [Voir la liste suivante](#threat-protection) | Gestion d’entreprise de l’isolation matérielle pour Microsoft Edge | 
-| Office 365 Advanced Threat Protection (ATP) plan 1 | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | Non inclus, mais peut être ajouté sur | 
+| Defender pour Office 365 plan 1 | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | Non inclus, mais peut être ajouté sur | 
 | **Gestion des identités**        | | | 
 | Réinitialisation du mot de passe en libre-service pour les comptes hybrides Azure Active Directory (Azure AD), Azure Multi-Factor Authentication (MFA), l’accès conditionnel, l’écriture différée de mot de passe pour les identités locales|     ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus avec Microsoft 365 E3](../media/check-mark.png) | 
 | Découverte des applications Cloud, Azure AD Connect Health    |     | ![Inclus avec Microsoft 365 E3](../media/check-mark.png) | 
-| Authentification unique (SSO) pour les applications Azure AD Office 365 (SSO) : 10 applications par utilisateur (Galerie applications SaaS telles que Salesforce) * | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus avec Microsoft 365 E3](../media/check-mark.png) | 
-| Azure AD Premium 1 SSO : pas de limite (applications locales via un proxy d’application Azure AD et applications non-Galerie utilisant des modèles d’intégration d’applications en libre-service)    |     | ![Inclus avec Microsoft 365 E3](../media/check-mark.png) | 
+| Azure AD Office 365 Apps Single Sign-On (SSO) : 10 Apps per User (Galerie applications SaaS telles que Salesforce) * | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus avec Microsoft 365 E3](../media/check-mark.png) | 
+| Azure AD Premium 1 SSO : aucune limite (applications locales via le proxy d’application Azure AD et les applications non galerie à l’aide des modèles d’intégration d’application de Self-Service)    |     | ![Inclus avec Microsoft 365 E3](../media/check-mark.png) | 
 | **Gestion des appareils et des applications**        | | | 
 | Microsoft Intune, Windows AutoPilot|     ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus avec Microsoft 365 E3](../media/check-mark.png) | 
 |Accès au bureau virtuel (VDA)    |  |     ![Inclus avec Microsoft 365 E3](../media/check-mark.png) | 
@@ -129,7 +129,7 @@ Windows 10 Business inclut les protections suivantes :
 Windows 10 entreprise E3 inclut également la gestion de l’isolation matérielle pour Microsoft Edge.
 
 >[!Note]
->Les utilisateurs migrés vers Microsoft 365 E3 auront chacun une licence Office 365 ATP pour la protection continue contre les menaces. N’oubliez pas d’acheter des licences Office 365 ATP supplémentaires afin que tous les utilisateurs de l’étendue de vos stratégies de protection avancée contre les menaces Office 365 soient titulaires d’une licence. 
+>Les utilisateurs migrés vers Microsoft 365 E3 auront chacun une licence Microsoft Defender pour Office 365 pour une protection continue contre les menaces. N’oubliez pas d’acheter des licences supplémentaires pour Office 365 afin que tous les utilisateurs de l’étendue de vos stratégies Defender pour Office 365 soient titulaires d’une licence. 
 >
 
 ### <a name="device-management-with-intune"></a>Gestion des appareils avec Intune

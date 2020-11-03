@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: ea580ad6b7bb7cc905a299e473f23a4c74fb289e
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: a41e05f54a8ba94752c6df91628a2200367ac0f3
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48294783"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843839"
 ---
 # <a name="microsoft-secure-score"></a>Degré de sécurisation Microsoft
 
@@ -76,7 +76,7 @@ Par exemple, une action d’amélioration vous indique 10 points en protégeant 
 
 ### <a name="products-included-in-secure-score"></a>Produits inclus dans le score de sécurité
 
-Il existe actuellement des recommandations pour Microsoft 365 (y compris Exchange Online), Azure Active Directory, Microsoft Defender ATP, Azure ATP et la sécurité des applications Cloud. Des recommandations pour d’autres produits de sécurité seront bientôt disponibles. Les recommandations ne couvrent pas toutes les surfaces d’attaque associées à chaque produit, mais elles sont de bonnes bases. Vous pouvez également marquer les actions d’amélioration telles qu’elles sont couvertes par une atténuation tierce ou alternative.
+Il existe actuellement des recommandations pour Microsoft 365 (y compris Exchange Online), Azure Active Directory, Microsoft Defender for Endpoint, Microsoft Defender for Identity et Cloud App Security. Des recommandations pour d’autres produits de sécurité seront bientôt disponibles. Les recommandations ne couvrent pas toutes les surfaces d’attaque associées à chaque produit, mais elles sont de bonnes bases. Vous pouvez également marquer les actions d’amélioration telles qu’elles sont couvertes par une atténuation tierce ou alternative.
 
 ### <a name="security-defaults"></a>Paramètres de sécurité par défaut
 

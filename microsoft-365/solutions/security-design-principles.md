@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 563972c458e77d96cf075f048dcee027bf29bc95
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 9a1a0204f1c79ad1eab7d62adf45022d1d5bc035
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399396"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842797"
 ---
 # <a name="security-hurdles-you-can-sail-over--one-architects-viewpoint"></a>Obstacles de sécurité que vous pouvez parcourir — point de vue d’un architecte
 
@@ -55,7 +55,7 @@ Pour obtenir une configuration recommandée, consultez la rubrique [configuratio
 
 De nombreuses équipes de sécurité utilisent toujours les meilleures pratiques de sécurité traditionnelles créées pour tout le monde local, y compris la maintenance d’une « sécurité de périmètre réseau » et la tentative de « forcer » les outils et les contrôles de sécurité sur local vers des solutions Cloud. Ces contrôles n’ont pas été conçus pour le Cloud, sont inefficaces et entravent l’adoption de fonctionnalités de Cloud modernes. Les processus et les outils qui fonctionnent pour une approche de sécurité du périmètre réseau ont prouvé qu’ils ne sont pas efficaces, ce qui permet de tirer parti des fonctionnalités de sécurité modernes et automatisées.
 
-Vous pouvez parler de cette difficulté en décalant les stratégies de défense vers la protection gérée sur le Cloud, l’analyse et la correction automatisées, le test de stylet automatisé, la protection avancée contre les menaces et l’analyse des incidents. Les clients qui utilisent des solutions de gestion des appareils modernes ont mis en œuvre une gestion automatisée, une mise à jour standardisée, un antivirus, une application de stratégie et une protection des applications sur tous les périphériques (smartphone, ordinateur personnel, ordinateur portable ou tablette). Cela élimine la nécessité de recourir à un VPN, à Microsoft System Center Configuration Manager (SCCM) et aux stratégies de groupe Active Directory. Ceci, combiné à des stratégies d’accès conditionnel, offre un contrôle et une visibilité puissants, ainsi qu’un accès simplifié aux ressources, quel que soit l’emplacement d’utilisation de leurs utilisateurs.
+Vous pouvez parler de ce problème en décalant les stratégies de défense vers la protection gérée dans le Cloud, une enquête et une correction automatisées, un test du stylet automatisé, un défendeur pour Office 365 et une analyse des incidents. Les clients qui utilisent des solutions de gestion des appareils modernes ont mis en œuvre une gestion automatisée, une mise à jour standardisée, un antivirus, une application de stratégie et une protection des applications sur tous les périphériques (smartphone, ordinateur personnel, ordinateur portable ou tablette). Cela élimine la nécessité de recourir à un VPN, à Microsoft System Center Configuration Manager (SCCM) et aux stratégies de groupe Active Directory. Ceci, combiné à des stratégies d’accès conditionnel, offre un contrôle et une visibilité puissants, ainsi qu’un accès simplifié aux ressources, quel que soit l’emplacement d’utilisation de leurs utilisateurs.
 
 ## <a name="strive-for-best-together-security-tools"></a>S’efforcer des outils de sécurité « de meilleure qualité »
 
@@ -79,7 +79,7 @@ Pour vous aider à résoudre ces obstacles, Microsoft a créé plusieurs ressour
 
 |Ressource   |Plus d’informations  |
 |---------|---------|
-|[Principales tâches pour les équipes de sécurité qui prennent en charge le télétravail](../security/top-security-tasks-for-remote-work.md)      | Si vous vous retrouvez soudainement à la mise en place d’un personnel de travail à la maison, cet article vous permet d’effectuer un renforcement de la sécurité rapidement. Elle inclut les principales tâches recommandées en fonction de votre plan de gestion des licences.    |
+|[Principales tâches pour les équipes de sécurité qui prennent en charge le travail à domicile](../security/top-security-tasks-for-remote-work.md)      | Si vous vous retrouvez soudainement à la mise en place d’un personnel de travail à la maison, cet article vous permet d’effectuer un renforcement de la sécurité rapidement. Elle inclut les principales tâches recommandées en fonction de votre plan de gestion des licences.    |
 |[Sécurité Microsoft 365 pour les décideurs d’entreprise](../security/Microsoft-365-security-for-bdm.md)    | Lorsque vous avez le temps d’utiliser un plan plus complet, cet article inclut des recommandations qui s’étendent sur Microsoft 365, classées par surface d’attaque. Il s’agit même d’une feuille de calcul que vous pouvez utiliser pour trier les licences et les domaines (par exemple, l’identité, la protection contre les menaces et la surveillance).  |
 |[Recommandations sur l’architecture de sécurité Microsoft](https://docs.microsoft.com/security/compass/compass)    | Si vous êtes un architecte de sécurité, veillez à consulter les recommandations de sécurité organisées par discipline, notamment l’identité, la mise en réseau et les opérations de sécurité.   |
 |[Recommandations concernant les opérations de sécurité Microsoft](https://docs.microsoft.com/security/compass/security-operations-videos-and-decks)|Découvrez les recommandations de Microsoft concernant la configuration et l’exécution d’un centre d’opérations sécurité (SOC) |

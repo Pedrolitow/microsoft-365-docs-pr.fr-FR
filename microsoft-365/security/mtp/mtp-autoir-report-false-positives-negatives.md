@@ -1,6 +1,6 @@
 ---
-title: Gérer les faux positifs ou les faux négatifs dans l’AIR dans la protection contre les menaces Microsoft
-description: Un message a-t-il été manqué ou incorrectement détecté par AIR dans la protection contre les menaces Microsoft ? Découvrez comment soumettre des faux positifs ou faux négatifs à Microsoft pour analyse.
+title: Gérer les faux positifs ou les faux négatifs dans l’AIR dans Microsoft 365 Defender
+description: Un message a-t-il été manqué ou incorrectement détecté par AIR dans Microsoft 365 Defender ? Découvrez comment soumettre des faux positifs ou faux négatifs à Microsoft pour analyse.
 keywords: automatisation, analyse, alerte, déclencheur, action, correction, faux positif, faux négatif
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: ecfd1bb9e5ff548c08aea322d12d626fa7fb6120
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 92ad4a96665a5355bce7e3546f8c52779f770927
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429634"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843731"
 ---
 # <a name="handle-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Gérer les faux positifs/négatifs dans les fonctionnalités d’analyse et de réponse automatisées
 
@@ -34,9 +34,9 @@ ms.locfileid: "48429634"
 
 
 **S’applique à :**
-- Protection Microsoft contre les menaces
+- Microsoft 365 Defender
 
-La protection contre les menaces a-t-elle permis d’effectuer des [recherches et des réponses automatiques](mtp-autoir.md) dans Microsoft Threat Protection ? Il existe des étapes que vous pouvez suivre pour résoudre ce problème. Vous pouvez :
+[Les fonctionnalités d’enquête et de réponse automatisées](mtp-autoir.md) dans Microsoft 365 Defender manquent ou détectent-elles mal ? Il existe des étapes que vous pouvez suivre pour résoudre ce problème. Vous pouvez :
 
 - [Signaler un faux positif/négatif à Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis);
 
@@ -50,15 +50,15 @@ Utilisez cet article comme guide.
 
 |Élément manqué ou incorrectement détecté |Service  |Procédure  |
 |---------|---------|---------|
-|-Message électronique <br/>-Pièce jointe de courrier électronique <br/>-URL dans un message électronique<br/>-URL dans un fichier Office      |[Protection avancée contre les menaces dans Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)        |[Soumission de courrier indésirable, hameçon, URL et fichiers suspects à Microsoft pour analyse](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission)         |
-|Fichier ou application sur un appareil    |[Microsoft Defender – Protection avancée contre les menaces](https://docs.microsoft.com/windows/security/threat-protection)         |[Envoi d’un fichier à Microsoft pour l’analyse des programmes malveillants](https://www.microsoft.com/wdsi/filesubmission)         |
+|-Message électronique <br/>-Pièce jointe de courrier électronique <br/>-URL dans un message électronique<br/>-URL dans un fichier Office      |[Microsoft Defender pour Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)        |[Soumission de courrier indésirable, hameçon, URL et fichiers suspects à Microsoft pour analyse](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission)         |
+|Fichier ou application sur un appareil    |[Microsoft Defender pour point de terminaison](https://docs.microsoft.com/windows/security/threat-protection)         |[Envoi d’un fichier à Microsoft pour l’analyse des programmes malveillants](https://www.microsoft.com/wdsi/filesubmission)         |
 
 ## <a name="adjust-an-alert-to-prevent-false-positives-from-recurring"></a>Ajuster une alerte pour empêcher les faux positifs d’être périodiques
 
 |Scénario |Service |Procédure |
 |--------|--------|--------|
 |-Une alerte est déclenchée par une utilisation légitime <br/>-Une alerte est incorrecte    |[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)<br/> ou <br/>[Détection de menaces avancées Azure](https://docs.microsoft.com/azure/security/fundamentals/threat-detection)         |[Gérer les alertes dans le portail de sécurité des applications Cloud](https://docs.microsoft.com/cloud-app-security/managing-alerts)         |
-|Un fichier, une adresse IP, une URL ou un domaine est traité comme un programme malveillant sur un appareil, même s’il est sûr.|[Microsoft Defender – Protection avancée contre les menaces](https://docs.microsoft.com/windows/security/threat-protection) |[Créer un indicateur personnalisé avec une action « autoriser »](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) |
+|Un fichier, une adresse IP, une URL ou un domaine est traité comme un programme malveillant sur un appareil, même s’il est sûr.|[Microsoft Defender pour point de terminaison](https://docs.microsoft.com/windows/security/threat-protection) |[Créer un indicateur personnalisé avec une action « autoriser »](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) |
 
 
 ## <a name="undo-a-remediation-action-that-was-taken-on-a-device"></a>Annuler une action de correction effectuée sur un appareil
@@ -80,11 +80,11 @@ Si une action de correction a été effectuée sur un appareil (par exemple, un 
 
 5. Dans la vue Détails de l’enquête, sélectionnez l’onglet **actions** .
 
-6. Sélectionnez un élément dont le statut est **terminé**, puis recherchez un lien, tel que **approuvé**, dans la colonne **décisions** . Cette opération ouvre un menu volant avec plus de détails sur l’action.
+6. Sélectionnez un élément dont le statut est **terminé** , puis recherchez un lien, tel que **approuvé** , dans la colonne **décisions** . Cette opération ouvre un menu volant avec plus de détails sur l’action.
 
 7. Pour annuler l’action, sélectionnez **Supprimer la correction**.
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Consulter les détails et les résultats d'un examen automatisé](mtp-autoir-results.md)
-- [Repérage proactive de menaces avec repérage avancé dans la Protection Microsoft contre les menaces](advanced-hunting-overview.md)
+- [Recherche proactive de menaces à l’aide de la chasse avancée dans Microsoft 365 Defender](advanced-hunting-overview.md)

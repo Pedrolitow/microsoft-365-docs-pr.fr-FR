@@ -1,5 +1,5 @@
 ---
-title: Tableaux de données dans le schéma de repérage avancé de la Protection Microsoft contre les menaces
+title: Tables de données dans le schéma de chasse avancé de Microsoft 365 Defender
 description: Découvrez les tableaux du schéma de repérage avancé pour comprendre les données sur lesquelles vous pouvez exécuter des requêtes de repérage de menace
 keywords: chasse aux menaces, recherche de menace, recherche de menace informatique, protection contre les menaces Microsoft, Microsoft 365, MTP, M365, recherche, requête, télémétrie, référence de schéma, Kusto, table, données
 search.product: eADQiWindows 10XVcnh
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: c23637f2a26f62e3fa1ca50e9f8c75edb7c2b50a
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: d267219cfa36987c7372a42572d00f4441ccd0cd
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429650"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842487"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>Comprendre le schéma de repérage avancé
 
@@ -32,7 +32,7 @@ ms.locfileid: "48429650"
 
 
 **S’applique à :**
-- Protection Microsoft contre les menaces
+- Microsoft 365 Defender
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
@@ -57,7 +57,7 @@ La référence suivante répertorie les tableaux du schéma. Chaque nom de table
 | Nom du tableau | Description |
 |------------|-------------|
 | **[AlertEvidence](advanced-hunting-alertevidence-table.md)** | Fichiers, adresses IP, URL, utilisateurs ou périphériques associés à des alertes |
-| **[AlertInfo](advanced-hunting-alertinfo-table.md)** | Alertes de Microsoft Defender ATP, Office 365 ATP, sécurité de l’application Cloud Microsoft et Azure ATP, y compris les informations de gravité et la catégorisation des menaces  |
+| **[AlertInfo](advanced-hunting-alertinfo-table.md)** | Alertes de Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Cloud App Security et Microsoft Defender for Identity, y compris les informations de gravité et la catégorisation des menaces  |
 | **[AppFileEvents](advanced-hunting-appfileevents-table.md)** | Activités liées aux fichiers dans les applications et les services Cloud |
 | **[DeviceEvents](advanced-hunting-deviceevents-table.md)** | Plusieurs types d’événements, y compris les événements déclenchés par des contrôles de sécurité tels que l’Antivirus Windows Defender et la protection contre l’exploitation |
 | **[DeviceFileCertificateInfo](advanced-hunting-DeviceFileCertificateInfo-table.md)** | Informations de certificat des fichiers signés provenant d’événements de vérification de certificat sur les points de terminaison |

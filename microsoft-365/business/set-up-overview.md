@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Découvrez les étapes de configuration de Microsoft 365 Business Premium, de l’abonnement, à l’ajout d’un domaine et des utilisateurs, à la configuration des stratégies de sécurité, et bien plus encore.
-ms.openlocfilehash: 8ec01a58d1a15d5c4aa1cef8b81518b474630d8b
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+ms.openlocfilehash: 46370166a9d5e8c9308b8947513e631c159f0b86
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841133"
+ms.locfileid: "48842127"
 ---
 # <a name="overview-of-setup"></a>Vue d’ensemble de la configuration
 
@@ -48,7 +48,7 @@ La plupart des étapes de configuration peuvent être effectuées dans le progra
 
    - **[Ajoutez votre domaine](set-up.md#add-your-domain-to-personalize-sign-in)** (si vous avez acheté votre domaine lors de l' [inscription](sign-up.md), cette étape est déjà terminée).
 
-   - **Ajouter des utilisateurs** . Vous pouvez ajouter des utilisateurs de l’une des trois façons suivantes :
+   - **Ajouter des utilisateurs**. Vous pouvez ajouter des utilisateurs de l’une des trois façons suivantes :
         - Dans le [programme d’installation guidé](set-up.md#add-users-in-the-wizard).
         - Utilisez la synchronisation d’annuaires pour [Ajouter des utilisateurs à l’aide d’Azure ad Connect](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization) si vous disposez d’un annuaire Active Directory local.
         - Vous pouvez également [Ajouter des utilisateurs ultérieurement](add-users-m365b.md) dans le centre d’administration.
@@ -61,7 +61,7 @@ La plupart des étapes de configuration peuvent être effectuées dans le progra
   Outre les paramètres de sécurité de l’Assistant Installation, vous pouvez augmenter votre sécurité en ajoutant les paramètres suivants :
 
 - **Protection contre les programmes malveillants**
-- **Protection contre le hameçonnage (ATP)**
+- **Anti-hameçonnage dans Defender pour Office 365**
 - **Archivage Exchange Online**
 - **Azure information protection (plan1** )
 

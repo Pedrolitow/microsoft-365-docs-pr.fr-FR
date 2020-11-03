@@ -1,5 +1,5 @@
 ---
-title: Effectuer des actions sur les résultats de la recherche avancée dans Microsoft Threat Protection
+title: Effectuer des actions sur les résultats de la recherche avancée de la chasse dans Microsoft 365 Defender
 description: Résoudre rapidement les menaces et les ressources affectées dans vos résultats de recherche avancée de la chasse
 keywords: chasse aux menaces, recherche de menace, recherche de menace informatique, protection contre les menaces Microsoft, Microsoft 365, MTP, M365, recherche, requête, télémétrie, effectuer une action
 search.product: eADQiWindows 10XVcnh
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 7250feffa69cc1a6cc37908a599dff0fab6c5e6c
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 506af82ec08ad6cd8dbeece5c1c2741e09e4817a
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429651"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842463"
 ---
 # <a name="take-action-on-advanced-hunting-query-results"></a>Effectuer des actions sur les résultats de la recherche avancée de la chasse
 
@@ -32,7 +32,7 @@ ms.locfileid: "48429651"
 
 
 **S’applique à :**
-- Protection Microsoft contre les menaces
+- Microsoft 365 Defender
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
@@ -42,7 +42,7 @@ Vous pouvez rapidement contenir des menaces ou des ressources d’adresses compr
 - Mettre en quarantaine les fichiers
 
 ## <a name="required-permissions"></a>Autorisations requises
-Pour pouvoir prendre des mesures par le biais de la chasse avancée, vous avez besoin d’un rôle dans Microsoft Defender ATP avec des [autorisations pour soumettre des actions de correction sur les appareils](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#permission-options). Si vous ne pouvez pas agir, contactez un administrateur général pour obtenir l’autorisation suivante :
+Pour pouvoir prendre des mesures par le biais de la chasse avancée, vous avez besoin d’un rôle dans Microsoft Defender pour le point de terminaison avec des [autorisations pour soumettre des actions de correction sur les appareils](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#permission-options). Si vous ne pouvez pas agir, contactez un administrateur général pour obtenir l’autorisation suivante :
 
 *Actions de correction actives > gestion des menaces et des vulnérabilités-gestion des corrections*
 
@@ -55,7 +55,7 @@ Vous pouvez effectuer les actions suivantes sur les appareils identifiés par la
 - Lancer une enquête automatisée pour vérifier et corriger les menaces sur l’appareil et éventuellement sur d’autres appareils affectés
 - Limiter l’exécution de l’application aux seuls fichiers exécutables signés par Microsoft, ce qui empêche les activités de menace ultérieures par des programmes malveillants ou d’autres fichiers exécutables non approuvés
 
-Pour plus d’informations sur l’exécution de ces actions de réponse via Microsoft Defender ATP, lisez la rubrique [about Response actions on Devices](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts).
+Pour plus d’informations sur l’exécution de ces actions de réponse via Microsoft Defender for Endpoint, lisez la rubrique [about Response actions on Devices](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts).
    
 ## <a name="quarantine-files"></a>Mettre en quarantaine les fichiers
 Vous pouvez déployer l’action de *mise en quarantaine* sur les fichiers afin qu’ils soient automatiquement mis en quarantaine lorsqu’ils sont détectés. Lors de la sélection de cette action, vous pouvez choisir entre les colonnes suivantes pour identifier les fichiers de la requête à mettre en quarantaine :
@@ -76,7 +76,7 @@ Pour effectuer l’une des actions décrites, sélectionnez un ou plusieurs enre
 ![Image de l’enregistrement sélectionné avec le panneau pour inspecter l’enregistrement](../../media/mtp-ah/ah-take-actions.png)
 
 ## <a name="review-actions-taken"></a>Examiner les actions effectuées
-Chaque action est enregistrée individuellement dans le [Centre de notifications](mtp-action-center.md) sous historique du **Centre de notifications**  >  **History** ([Security.Microsoft.com/Action-Center/History](https://security.microsoft.com/action-center/history)). Accédez au centre de notifications pour vérifier l’état de chaque action.
+Chaque action est enregistrée individuellement dans le [Centre de notifications](mtp-action-center.md) sous historique du **Centre de notifications**  >  **History** ( [Security.Microsoft.com/Action-Center/History](https://security.microsoft.com/action-center/history)). Accédez au centre de notifications pour vérifier l’état de chaque action.
  
 ## <a name="related-topics"></a>Voir aussi
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)

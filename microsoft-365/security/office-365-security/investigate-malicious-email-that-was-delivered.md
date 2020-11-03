@@ -19,19 +19,19 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez comment utiliser les fonctionnalités d’analyse et de réponse aux menaces pour rechercher et examiner des courriers électroniques malveillants.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 120cc32a2736858a0f0d99ab37f1d51c70a6071c
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 7677c1741a173c0528504f0fad67439608845f64
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201912"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842939"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-office-365"></a>Enquête sur le courrier électronique malveillant remis dans Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-[Office 365 Advanced Threat Protection](office-365-atp.md) vous permet d’examiner les activités qui permettent de mettre en péril les personnes de votre organisation et de protéger votre organisation. Par exemple, si vous participez à l’équipe de sécurité de votre organisation, vous pouvez rechercher et enquêter sur les messages électroniques suspects qui ont été remis. Vous pouvez le faire à l’aide de l' [Explorateur de menaces (ou des détections en temps réel)](threat-explorer.md).
+[Microsoft Defender pour Office 365](office-365-atp.md) vous permet d’examiner les activités qui permettent de mettre en péril les personnes de votre organisation et de protéger votre organisation. Par exemple, si vous participez à l’équipe de sécurité de votre organisation, vous pouvez rechercher et enquêter sur les messages électroniques suspects qui ont été remis. Vous pouvez le faire à l’aide de l' [Explorateur de menaces (ou des détections en temps réel)](threat-explorer.md).
 
 > [!NOTE]
 > Accédez à l’article de correction [ici](remediate-malicious-email-delivered-office-365.md).
@@ -40,7 +40,7 @@ ms.locfileid: "48201912"
 
 Assurez-vous que les conditions suivantes sont remplies :
 
-- Votre organisation dispose d' [Office 365 protection avancée contre les menaces](office-365-atp.md) et des [licences sont attribuées aux utilisateurs](../../admin/manage/assign-licenses-to-users.md).
+- Votre organisation dispose de [Microsoft Defender pour Office 365](office-365-atp.md) et des [licences sont attribuées à des utilisateurs](../../admin/manage/assign-licenses-to-users.md).
 
 - l' [enregistrement d’audit](../../compliance/turn-audit-log-search-on-or-off.md) est activé pour votre organisation.
 
@@ -56,7 +56,7 @@ Pour effectuer certaines actions, telles que l’affichage des en-têtes de mess
 
 |Activité|Groupe de rôles|Prévisualiser le rôle nécessaire ?|
 |---|---|---|
-|Utilisation de l’Explorateur de menaces (et des détections en temps réel) pour analyser les menaces |Administrateur général <br> Administrateur de sécurité <br> Lecteur de sécurité|Non|
+|Utilisation de l’Explorateur de menaces (et des détections en temps réel) pour analyser les menaces |Administrateur général <br> Administrateur de sécurité <br> Lecteur de sécurité|Non|
 |Utiliser l’Explorateur de menaces (et les détections en temps réel) pour afficher les en-têtes des messages électroniques, ainsi que pour afficher un aperçu et télécharger des messages électroniques mis en quarantaine|Administrateur général <br> Administrateur de sécurité <br>Lecteur de sécurité|Non|
 |Utiliser l’Explorateur de menaces pour afficher les en-têtes et télécharger les messages électroniques remis aux boîtes aux lettres|Administrateur général <br>Administrateur de sécurité <br> Lecteur de sécurité <br> Aperçu|Oui|
 |
@@ -71,7 +71,7 @@ L’Explorateur de menaces est un rapport puissant qui peut servir plusieurs obj
 > [!NOTE]
 > Les recherches par défaut dans l’explorateur n’incluent actuellement pas les éléments zapped.  Cela s’applique à tous les affichages, par exemple les affichages de programmes malveillants ou de hameçonnage. Pour inclure les éléments zapped, vous devez ajouter une « action de remise » définie sur inclure « supprimé par ZAP ». Si vous incluez toutes les options, vous verrez tous les résultats d’action de remise, y compris les éléments zapped.
 
-1. **Accédez à l’Explorateur de menaces**: accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous à l’aide de votre compte professionnel ou scolaire pour Office 365. Vous accédez au centre de sécurité &amp; conformité.
+1. **Accédez à l’Explorateur de menaces** : accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous à l’aide de votre compte professionnel ou scolaire pour Office 365. Vous accédez au centre de sécurité &amp; conformité.
 
 2. Dans le lancement rapide de navigation de gauche, choisissez Explorateur de **gestion des menaces** \> **Explorer**.
 
@@ -79,17 +79,17 @@ L’Explorateur de menaces est un rapport puissant qui peut servir plusieurs obj
 
     Vous remarquerez peut-être la nouvelle colonne **actions spéciales** . Cette fonctionnalité vise à indiquer aux administrateurs le résultat du traitement d’un message électronique. La colonne **actions spéciales** est accessible au même endroit que l' **action de remise** et l’emplacement de **remise**. Les actions spéciales peuvent être mises à jour à la fin de la chronologie du courrier électronique de l’Explorateur de menaces, qui est une nouvelle fonctionnalité visant à améliorer l’expérience de la chasse des administrateurs.
 
-3. **Affichages dans l’Explorateur de menaces**: dans le menu **affichage** , choisissez **tous les messages électroniques**.
+3. **Affichages dans l’Explorateur de menaces** : dans le menu **affichage** , choisissez **tous les messages électroniques**.
 
     ![Menu Affichage de l’Explorateur de menaces, messagerie-programmes malveillants, hameçons, envois et toutes les options de messagerie, également contenu-programmes malveillants.](../../media/tp-InvestigateMalEmail-viewmenu.png)
 
     La vue de *programmes malveillants* est actuellement la vue par défaut et capture les messages électroniques dans lesquels une menace de programme malveillant est détectée. La vue de *hameçonnage* fonctionne de la même manière, pour les hameçons.
 
-    Toutefois, *tout* le courrier électronique reçoit la liste de tous les messages reçus par l’organisation, qu’ils soient détectés ou non. Comme vous pouvez l’imaginer, il s’agit d’un grand nombre de données, c’est pourquoi cette vue affiche un espace réservé qui demande l’application d’un filtre. (Cette vue est disponible uniquement pour les clients DAV P2.)
+    Toutefois, *tout* le courrier électronique reçoit la liste de tous les messages reçus par l’organisation, qu’ils soient détectés ou non. Comme vous pouvez l’imaginer, il s’agit d’un grand nombre de données, c’est pourquoi cette vue affiche un espace réservé qui demande l’application d’un filtre. (Cette vue est disponible uniquement pour les clients Defender pour Office 365 P2.)
 
     L’affichage des *envois* affiche tous les messages envoyés par l’administrateur ou l’utilisateur qui ont été signalés à Microsoft.
 
-4. **Recherche et filtrage dans l’Explorateur de menaces**: les filtres apparaissent en haut de la page dans la barre de recherche pour aider les administrateurs à effectuer leurs recherches. Vous pouvez remarquer que plusieurs filtres peuvent être appliqués simultanément et que plusieurs valeurs séparées par des virgules ont été ajoutées à un filtre pour limiter la recherche. N’oubliez pas :
+4. **Recherche et filtrage dans l’Explorateur de menaces** : les filtres apparaissent en haut de la page dans la barre de recherche pour aider les administrateurs à effectuer leurs recherches. Vous pouvez remarquer que plusieurs filtres peuvent être appliqués simultanément et que plusieurs valeurs séparées par des virgules ont été ajoutées à un filtre pour limiter la recherche. N’oubliez pas :
 
     - Les filtres correspondent exactement à la plupart des conditions de filtrage.
     - Le filtre de l’objet utilise une requête CONTAINs.
@@ -97,9 +97,9 @@ L’Explorateur de menaces est un rapport puissant qui peut servir plusieurs obj
     - Le domaine de l’URL, le chemin d’URL et le domaine d’URL et les filtres de chemin d’accès ne nécessitent aucun protocole pour le filtrage.
     - Vous devez cliquer sur l’icône actualiser chaque fois que vous modifiez les valeurs du filtre pour obtenir les résultats pertinents.
 
-5. **Filtres avancés**: grâce à ces filtres, vous pouvez créer des requêtes complexes et filtrer votre jeu de données. Si vous cliquez sur *filtres avancés* , un menu volant s’ouvre avec des options.
+5. **Filtres avancés** : grâce à ces filtres, vous pouvez créer des requêtes complexes et filtrer votre jeu de données. Si vous cliquez sur *filtres avancés* , un menu volant s’ouvre avec des options.
 
-   Le filtrage avancé est un excellent complément des fonctionnalités de recherche. Un filtre **non** booléen a été introduit sur le *destinataire*, l' *expéditeur* et le domaine de l' *expéditeur* pour permettre aux administrateurs d’effectuer des recherches en excluant les valeurs. Cette option apparaît sous le paramètre *de sélection contient aucun de*. **Ne laisser pas** les administrateurs exclure les boîtes aux lettres d’alerte, les boîtes aux lettres de réponse par défaut de leurs investigations et est utile pour les cas où les administrateurs recherchent un sujet spécifique (Subject = "attention") où le destinataire peut être défini sur *none of defaultMail \@ contoso.com*. Il s’agit d’une recherche de valeur exacte.
+   Le filtrage avancé est un excellent complément des fonctionnalités de recherche. Un filtre **non** booléen a été introduit sur le *destinataire* , l' *expéditeur* et le domaine de l' *expéditeur* pour permettre aux administrateurs d’effectuer des recherches en excluant les valeurs. Cette option apparaît sous le paramètre *de sélection contient aucun de*. **Ne laisser pas** les administrateurs exclure les boîtes aux lettres d’alerte, les boîtes aux lettres de réponse par défaut de leurs investigations et est utile pour les cas où les administrateurs recherchent un sujet spécifique (Subject = "attention") où le destinataire peut être défini sur *none of defaultMail \@ contoso.com*. Il s’agit d’une recherche de valeur exacte.
 
    ![Le paramètre Recipients-'ne contient aucun des’filtre avancé.](../../media/tp-InvestigateMalEmail-AdvancedFilter.png)
 
@@ -107,7 +107,7 @@ L’Explorateur de menaces est un rapport puissant qui peut servir plusieurs obj
 
    ![L’option filtrage par heures permet de réduire la quantité de données que les équipes de sécurité de données doivent traiter, et dont la durée la plus courte est de 30 minutes.](../../media/tp-InvestigateMalEmail-FilterbyHours.png)
 
-6. **Champs dans l’Explorateur de menaces : l'** Explorateur de menaces expose beaucoup plus d’informations sur la sécurité, telles que l' *action de remise*, l' *emplacement de remise*, l' *action spéciale*, la *direction*, les *remplacements*et les menaces liées à l' *URL*. Il permet également à l’équipe de sécurité de votre organisation d’examiner avec une plus grande certitude.
+6. **Champs dans l’Explorateur de menaces : l'** Explorateur de menaces expose beaucoup plus d’informations sur la sécurité, telles que l' *action de remise* , l' *emplacement de remise* , l' *action spéciale* , la *direction* , les *remplacements* et les menaces liées à l' *URL*. Il permet également à l’équipe de sécurité de votre organisation d’examiner avec une plus grande certitude.
 
     L' *action de remise* est l’action entreprise sur un courrier électronique en raison de stratégies ou de détections existantes. Voici les actions possibles qu’un courrier électronique peut effectuer :
 
@@ -116,7 +116,7 @@ L’Explorateur de menaces est un rapport puissant qui peut servir plusieurs obj
     - **Bloqué** : tous les messages électroniques mis en quarantaine, qui ont échoué ou qui ont été supprimés. (Cette inaccessibilité est entièrement inaccessible par l’utilisateur.)
     - **Remplacé** : tout message électronique où des pièces jointes malveillantes sont remplacées par des fichiers. txt qui indiquent que la pièce jointe était malveillante
 
-    **Emplacement de remise**: le filtre d’emplacement de remise est disponible afin d’aider les administrateurs à comprendre où se terminent les e-mails malveillants suspectés et les actions qui ont été effectuées. Les données résultantes peuvent être exportées dans la feuille de calcul. Les emplacements de remise possibles sont les suivants :
+    **Emplacement de remise** : le filtre d’emplacement de remise est disponible afin d’aider les administrateurs à comprendre où se terminent les e-mails malveillants suspectés et les actions qui ont été effectuées. Les données résultantes peuvent être exportées dans la feuille de calcul. Les emplacements de remise possibles sont les suivants :
 
     - **Boîte de réception ou dossier** : le courrier électronique se trouve dans la boîte de réception ou dans un dossier spécifique, en fonction de vos règles de messagerie.
     - **Local ou externe** : la boîte aux lettres n’existe pas dans le Cloud, mais elle est locale.
@@ -126,9 +126,9 @@ L’Explorateur de menaces est un rapport puissant qui peut servir plusieurs obj
     - **Échec** : la messagerie n’a pas pu atteindre la boîte aux lettres.
     - **Ignoré** : le courrier électronique a été perdu dans le flux de messagerie.
 
-    **Direction**: cette option permet à votre équipe chargée des opérations de sécurité de filtrer en fonction de la « direction » à partir de laquelle un courrier arrive. Les valeurs de direction sont *entrantes*, *sortantes*et *intra-org* (correspondant aux messages entrants dans votre organisation de l’extérieur, qui sont envoyés hors de votre organisation ou qui sont envoyés en interne à votre organisation, respectivement). Ces informations peuvent aider les équipes des opérations de sécurité à emprunter l’usurpation d’identité et l’emprunt d’identité, car il n’est pas possible de trouver une différence entre la valeur de direction (par exemple, *Entrant*) et le domaine de l’expéditeur (qui *semble* être un domaine interne) est évident ! La valeur de la direction est distincte et peut différer du suivi des messages. Les résultats peuvent être exportés dans la feuille de calcul.
+    **Direction** : cette option permet à votre équipe chargée des opérations de sécurité de filtrer en fonction de la « direction » à partir de laquelle un courrier arrive. Les valeurs de direction sont *entrantes* , *sortantes* et *intra-org* (correspondant aux messages entrants dans votre organisation de l’extérieur, qui sont envoyés hors de votre organisation ou qui sont envoyés en interne à votre organisation, respectivement). Ces informations peuvent aider les équipes des opérations de sécurité à emprunter l’usurpation d’identité et l’emprunt d’identité, car il n’est pas possible de trouver une différence entre la valeur de direction (par exemple, *Entrant* ) et le domaine de l’expéditeur (qui *semble* être un domaine interne) est évident ! La valeur de la direction est distincte et peut différer du suivi des messages. Les résultats peuvent être exportés dans la feuille de calcul.
 
-    **Substitutions**: ce filtre prend des informations qui s’affichent sous l’onglet Détails du courrier et l’utilise pour exposer les stratégies d’organisation ou d’organisation permettant d’autoriser et de bloquer les messages qui ont été *remplacés*. L’élément le plus important de ce filtre est qu’il permet à l’équipe de sécurité de votre organisation de voir le nombre de messages électroniques suspects qui ont été remis en raison de la configuration. Cela leur donne la possibilité de modifier les autorisation et de les bloquer selon les besoins. Ce jeu de résultats de ce filtre peut être exporté vers la feuille de calcul.
+    **Substitutions** : ce filtre prend des informations qui s’affichent sous l’onglet Détails du courrier et l’utilise pour exposer les stratégies d’organisation ou d’organisation permettant d’autoriser et de bloquer les messages qui ont été *remplacés*. L’élément le plus important de ce filtre est qu’il permet à l’équipe de sécurité de votre organisation de voir le nombre de messages électroniques suspects qui ont été remis en raison de la configuration. Cela leur donne la possibilité de modifier les autorisation et de les bloquer selon les besoins. Ce jeu de résultats de ce filtre peut être exporté vers la feuille de calcul.
 
     ****
 
@@ -141,13 +141,13 @@ L’Explorateur de menaces est un rapport puissant qui peut servir plusieurs obj
     |Bloqué par la stratégie de l’utilisateur|La remise des messages à la boîte aux lettres a été bloquée par la stratégie de l’utilisateur.|
     |
 
-    **Menace d’URL**: le champ URL Threat a été inclus dans l’onglet *Details (détails* ) d’un e-mail pour indiquer la menace présentée par une URL. Les menaces présentées par une URL peuvent inclure des *programmes malveillants*, des *hameçons*ou du *courrier indésirable*, et une URL sans *menace* indique *aucun* dans la section menaces.
+    **Menace d’URL** : le champ URL Threat a été inclus dans l’onglet *Details (détails* ) d’un e-mail pour indiquer la menace présentée par une URL. Les menaces présentées par une URL peuvent inclure des *programmes malveillants* , des *hameçons* ou du *courrier indésirable* , et une URL sans *menace* indique *aucun* dans la section menaces.
 
-7. **Affichage chronologie du courrier électronique**: votre équipe des opérations de sécurité peut avoir besoin d’approfondir les détails du courrier électronique pour approfondir votre enquête. La chronologie du courrier permet aux administrateurs d’afficher les actions exécutées sur un e-mail à partir de la remise à la post-livraison. Pour afficher une chronologie par courrier électronique, cliquez sur l’objet d’un message électronique, puis cliquez sur chronologie du courrier électronique. (Il apparaît dans les autres en-têtes, tels que Résumé ou détails.) Ces résultats peuvent être exportés dans la feuille de calcul.
+7. **Affichage chronologie du courrier électronique** : votre équipe des opérations de sécurité peut avoir besoin d’approfondir les détails du courrier électronique pour approfondir votre enquête. La chronologie du courrier permet aux administrateurs d’afficher les actions exécutées sur un e-mail à partir de la remise à la post-livraison. Pour afficher une chronologie par courrier électronique, cliquez sur l’objet d’un message électronique, puis cliquez sur chronologie du courrier électronique. (Il apparaît dans les autres en-têtes, tels que Résumé ou détails.) Ces résultats peuvent être exportés dans la feuille de calcul.
 
-    La chronologie du courrier électronique s’ouvre dans une table qui affiche tous les événements de remise et post-remise pour le courrier électronique. S’il n’y a pas d’autres actions sur le courrier électronique, vous devez voir un seul événement pour la remise d’origine qui indique un résultat, comme *bloqué*, avec un verdict comme *hameçonnage*. Les administrateurs peuvent exporter l’intégralité de la chronologie du courrier, y compris tous les détails de l’onglet et de la messagerie (par exemple, objet, expéditeur, destinataire, réseau et ID de message). La chronologie du courrier diminue en fonction de la randomisation, car il y a moins de temps passé à vérifier différents emplacements pour essayer de comprendre les événements qui se sont produits depuis que le courrier électronique est arrivé. Lorsque plusieurs événements se produisent à la même heure ou proches de celle-ci dans un message électronique, ces événements apparaissent dans un affichage chronologie.
+    La chronologie du courrier électronique s’ouvre dans une table qui affiche tous les événements de remise et post-remise pour le courrier électronique. S’il n’y a pas d’autres actions sur le courrier électronique, vous devez voir un seul événement pour la remise d’origine qui indique un résultat, comme *bloqué* , avec un verdict comme *hameçonnage*. Les administrateurs peuvent exporter l’intégralité de la chronologie du courrier, y compris tous les détails de l’onglet et de la messagerie (par exemple, objet, expéditeur, destinataire, réseau et ID de message). La chronologie du courrier diminue en fonction de la randomisation, car il y a moins de temps passé à vérifier différents emplacements pour essayer de comprendre les événements qui se sont produits depuis que le courrier électronique est arrivé. Lorsque plusieurs événements se produisent à la même heure ou proches de celle-ci dans un message électronique, ces événements apparaissent dans un affichage chronologie.
 
-8. **Aperçu/téléchargement**: l’Explorateur de menaces offre à votre équipe de sécurité les informations dont il a besoin pour enquêter sur le courrier électronique suspect. Votre équipe des opérations de sécurité peut :
+8. **Aperçu/téléchargement** : l’Explorateur de menaces offre à votre équipe de sécurité les informations dont il a besoin pour enquêter sur le courrier électronique suspect. Votre équipe des opérations de sécurité peut :
 
     - [Vérifiez l’action de remise et l’emplacement](#check-the-delivery-action-and-location).
 
@@ -200,8 +200,8 @@ La **chronologie par courrier électronique** est un champ dans l’Explorateur 
 
 [Correction des courriers électroniques malveillants remis dans Office 365](remediate-malicious-email-delivered-office-365.md)
 
-[Protection avancée contre les menaces dans Office 365](office-365-ti.md)
+[Microsoft Defender pour Office 365](office-365-ti.md)
 
 [Se protéger contre les menaces dans Office 365](protect-against-threats.md)
 
-[Afficher les rapports pour Office 365 protection avancée contre les menaces](view-reports-for-atp.md)
+[Afficher des rapports pour Defender pour Office 365](view-reports-for-atp.md)

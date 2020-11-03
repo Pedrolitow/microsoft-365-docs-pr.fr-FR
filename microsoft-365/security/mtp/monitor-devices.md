@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9b84ca774e1b9bd0bca51b8ee21f6a06f2fde5b4
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 92760ef14fb1192e4462bab656e22f3595f9b449
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430620"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843863"
 ---
 # <a name="device-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Surveillance et création de rapports sur les appareils dans le centre de sécurité Microsoft 365
 
@@ -33,11 +33,11 @@ Maintenez vos appareils sécurisés, mis à jour, et présentez les menaces pote
 
 ## <a name="view-device-alerts"></a>Afficher les alertes de l’appareil
 
-Obtenez des alertes à jour sur l’activité de violation et d’autres menaces sur vos appareils à partir de Microsoft Defender ATP (disponible avec une licence E5). Le centre de sécurité Microsoft 365 contrôle efficacement ces alertes à un niveau élevé à l’aide de votre flux de travail préféré.
+Obtenez des alertes actualisées sur l’activité de violation et d’autres menaces sur vos appareils à partir de Microsoft Defender for Endpoint (disponible avec une licence E5). Le centre de sécurité Microsoft 365 contrôle efficacement ces alertes à un niveau élevé à l’aide de votre flux de travail préféré.
 
 ### <a name="monitor-high-impact-alerts"></a>Surveiller les alertes à fort impact
 
-Chaque alerte Microsoft Defender ATP a une gravité correspondante (élevé, moyen, faible ou informatif). Il indique l’impact potentiel sur votre réseau si vous n’êtes pas en mode sans assistance.  
+Chaque alerte Microsoft Defender pour le point de terminaison a une gravité correspondante (élevé, moyen, faible ou informatif). Il indique l’impact potentiel sur votre réseau si vous n’êtes pas en mode sans assistance.  
 
 Utilisez la carte de **gravité des alertes de périphérique** pour vous concentrer spécifiquement sur les alertes plus sévères et susceptibles de nécessiter une réponse immédiate. À partir de cette carte, vous pouvez consulter plus d’informations sur le portail du centre de sécurité Microsoft Defender.
 
@@ -45,7 +45,7 @@ Utilisez la carte de **gravité des alertes de périphérique** pour vous concen
 
 ### <a name="understand-sources-of-alerts"></a>Comprendre les sources d’alertes
 
-Microsoft Defender ATP exploite les données d’une large gamme de capteurs de sécurité et de sources d’intelligence pour générer des alertes. Par exemple, il peut utiliser les informations de détection de l’antivirus Microsoft Defender et du logiciel anti-programme malveillant tiers. Il peut également utiliser votre propre intelligence de menace personnalisée fournie par le biais de l’API de service Web.
+Microsoft Defender for Endpoint exploite les données d’une large gamme de capteurs de sécurité et de sources d’intelligence pour générer des alertes. Par exemple, il peut utiliser les informations de détection de l’antivirus Microsoft Defender et du logiciel anti-programme malveillant tiers. Il peut également utiliser votre propre intelligence de menace personnalisée fournie par le biais de l’API de service Web.
 
 La carte sources de détection des alertes de **périphérique** affiche la répartition des alertes par source. Effectuer le suivi de l’activité liée à certaines sources, en particulier vos sources personnalisées. Vous pouvez également utiliser la carte pour vous concentrer sur les alertes provenant de capteurs qui ne sont pas configurés pour bloquer automatiquement les activités ou les composants malveillants.
 
@@ -55,7 +55,7 @@ La carte sources de détection des alertes de **périphérique** affiche la rép
 
 ### <a name="understand-the-types-of-threats-that-trigger-alerts"></a>Comprendre les types de menaces déclenchant des alertes
 
-Microsoft Defender ATP trie chaque alerte dans une catégorie représentant un certain stade de la chaîne d’attaque ou du type de composant de menace. Par exemple, une activité de menace détectée peut être classée « mouvement latéral » pour indiquer qu’il y a eu une tentative d’accès à d’autres appareils sur le réseau. L’activité est probablement survenue après que des pirates ont acquis un premier lieu. Lorsqu’il est détecté, un composant de menace peut être classé globalement comme logiciel malveillant ou spécifiquement comme type de menace spécifique. Les caractéristiques incluent les ransomware, le vol d’informations d’identification ou d’autres types de logiciels malveillants ou indésirables.
+Microsoft Defender for Endpoint trie chaque alerte dans une catégorie représentant une certaine étape dans la chaîne d’attaque ou le type de composant de menace. Par exemple, une activité de menace détectée peut être classée « mouvement latéral » pour indiquer qu’il y a eu une tentative d’accès à d’autres appareils sur le réseau. L’activité est probablement survenue après que des pirates ont acquis un premier lieu. Lorsqu’il est détecté, un composant de menace peut être classé globalement comme logiciel malveillant ou spécifiquement comme type de menace spécifique. Les caractéristiques incluent les ransomware, le vol d’informations d’identification ou d’autres types de logiciels malveillants ou indésirables.
 
 La carte des **catégories de menaces du périphérique** affiche la répartition des alertes dans ces catégories. Utilisez ces informations pour identifier les activités de menace, telles que les tentatives de vol d’informations d’identification, qui ont généralement un impact plus élevé que les tentatives d’ingénierie sociale. Vous pouvez également surveiller les menaces pouvant être destructrices telles que les ransomware.
 
@@ -69,7 +69,7 @@ La carte d' **État des alertes de périphérique** indique le nombre d’alerte
 
 ### <a name="monitor-classification-of-resolved-alerts"></a>Surveiller la classification des alertes résolues
 
-Lors de la résolution d’une alerte Microsoft Defender ATP, votre équipe de sécurité peut spécifier si une alerte a été vérifiée comme suit :
+Lors de la résolution d’une alerte Microsoft Defender pour le point de terminaison, votre équipe de sécurité peut spécifier si une alerte a été vérifiée comme suit :
 
 * Alerte vraie qui identifie les composants de menace ou d’activité de violation réels
 * Alerte erronée ayant détecté une activité normale de manière incorrecte
@@ -86,12 +86,12 @@ En plus de déterminer si une alerte est true ou false au cours de la résolutio
 
 La carte de **détermination des alertes de périphérique** indique la détermination fournie pour chaque alerte.
 
-* **Apt**: menace persistante avancée, indiquant que le composant de menace ou d’activité détecté fait partie d’une violation sophistiquée conçue pour se faire une brèche dans le réseau affecté  
-* **Programme malveillant**: fichier ou code malveillant
-* **Personnel de sécurité**: activité normale effectuée par le personnel de sécurité
-* **Test de sécurité**: activité ou composants destinés à simuler les menaces réelles et devant déclencher des alertes de sécurité et générer des alertes
-* **Logiciels indésirables**: applications et autres logiciels qui ne sont pas considérés comme malveillants, mais enfreignent une stratégie ou des normes d’utilisation acceptables.
-* **Autres**: toute autre détermination qui ne relève pas des types fournis
+* **Apt** : menace persistante avancée, indiquant que le composant de menace ou d’activité détecté fait partie d’une violation sophistiquée conçue pour se faire une brèche dans le réseau affecté  
+* **Programme malveillant** : fichier ou code malveillant
+* **Personnel de sécurité** : activité normale effectuée par le personnel de sécurité
+* **Test de sécurité** : activité ou composants destinés à simuler les menaces réelles et devant déclencher des alertes de sécurité et générer des alertes
+* **Logiciels indésirables** : applications et autres logiciels qui ne sont pas considérés comme malveillants, mais enfreignent une stratégie ou des normes d’utilisation acceptables.
+* **Autres** : toute autre détermination qui ne relève pas des types fournis
 
 À partir de cette carte, vous pouvez consulter plus d’informations dans le centre de sécurité Microsoft Defender.
 
@@ -162,9 +162,9 @@ La carte **Règles de réduction de la surface d’attaque** offre une vue d’e
 
 La barre supérieure de la carte affiche le nombre total d’appareils figurant dans les modes de déploiement suivants :
 
-* **Mode blocage**: appareils avec au moins une règle configurée pour bloquer l’activité détectée
-* **Mode audit**: appareils pour lesquels aucune règle n’est définie pour bloquer les activités détectées, mais au moins un ensemble de règles pour auditer les activités détectées  
-* **Désactivé**: les appareils dont toutes les règles de récupération automatique sont désactivées
+* **Mode blocage** : appareils avec au moins une règle configurée pour bloquer l’activité détectée
+* **Mode audit** : appareils pour lesquels aucune règle n’est définie pour bloquer les activités détectées, mais au moins un ensemble de règles pour auditer les activités détectées  
+* **Désactivé** : les appareils dont toutes les règles de récupération automatique sont désactivées
 
 La partie inférieure de cette carte présente les paramètres par règle sur tous vos appareils. Chaque barre indique le nombre de périphériques qui sont configurés pour bloquer, la détection d’audit ou la règle est complètement désactivée.
 
@@ -176,10 +176,10 @@ Pour afficher des informations détaillées sur les détections de règles ASR s
 
 Le graphique en haut de la page affiche les détections dans le temps de détections de pile qui ont été bloquées ou auditées. Le tableau en bas répertorie les détections les plus récentes. Utilisez les informations suivantes sur le tableau pour comprendre la nature des détections :
 
-* **Fichier détecté**: le fichier, généralement un script ou un document, dont le contenu a déclenché l’activité d’attaque suspecte.
-* **Règle**: nom décrivant les activités d’attaque la règle est conçue pour être interceptée. En savoir plus sur les règles ASR existantes
-* Application **source**: l’application qui a chargé ou exécuté le contenu qui déclenche l’activité d’attaque présumée. Il peut s’agir d’une application légitime, telle qu’un navigateur Web, une application Office ou un outil système tel que PowerShell
-* **Publisher**: fournisseur qui a publié l’application source
+* **Fichier détecté** : le fichier, généralement un script ou un document, dont le contenu a déclenché l’activité d’attaque suspecte.
+* **Règle** : nom décrivant les activités d’attaque la règle est conçue pour être interceptée. En savoir plus sur les règles ASR existantes
+* Application **source** : l’application qui a chargé ou exécuté le contenu qui déclenche l’activité d’attaque présumée. Il peut s’agir d’une application légitime, telle qu’un navigateur Web, une application Office ou un outil système tel que PowerShell
+* **Publisher** : fournisseur qui a publié l’application source
 
 ### <a name="review-device-asr-rule-settings"></a>Vérifier les paramètres de règle ASR de l’appareil
 
@@ -207,7 +207,7 @@ Le tableau répertorie tous les noms de fichiers détectés par les règles de r
 
 Pour obtenir la liste des fichiers sélectionnés avec leur chemin d’accès complet pour l’exclusion, sélectionnez **obtenir les chemins d’exclusion**.
 
-Journaux pour le déchargement des **informations d’identification de blocage de règle ASR du sous-système de l’autorité de sécurité locale (lsass.exe) de Windows** capturez le **lsass.exe**de l’application source. Il s’agit d’un fichier système normal, mais capturé en tant que fichier détecté. Par conséquent, la liste générée des chemins d’exclusion inclut ce fichier. Pour exclure le fichier qui a déclenché cette règle au lieu de **lsass.exe**, utilisez le chemin d’accès à l’application source au lieu du fichier détecté.
+Journaux pour le déchargement des **informations d’identification de blocage de règle ASR du sous-système de l’autorité de sécurité locale (lsass.exe) de Windows** capturez le **lsass.exe** de l’application source. Il s’agit d’un fichier système normal, mais capturé en tant que fichier détecté. Par conséquent, la liste générée des chemins d’exclusion inclut ce fichier. Pour exclure le fichier qui a déclenché cette règle au lieu de **lsass.exe** , utilisez le chemin d’accès à l’application source au lieu du fichier détecté.
 
 Pour localiser l’application source, exécutez la [requête de recherche avancée](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting) suivante pour cette règle spécifique (identifiée par l’ID de règle 9e6c4e1f-7d60-472f-bA1a-a39ef669e4b2) :
 

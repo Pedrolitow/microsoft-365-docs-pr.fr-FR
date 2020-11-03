@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Utilisez le nouveau tableau de bord de sécurité pour consulter l’état de protection contre les menaces d’Office 365, et afficher et agir sur les alertes de sécurité.
-ms.openlocfilehash: 1bef6d0496c39d5157bbc40893d2710e89d1c734
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: f7576de9db1403c3c010b2fd826866ec11a7e20a
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200072"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843623"
 ---
 # <a name="security-dashboard"></a>Tableau de bord de sécurité
 
@@ -57,7 +57,7 @@ Les informations que vous verrez dans le résumé de gestion des menaces dépend
 |---|---|
 |Messages malveillants bloqués<br/>Messages d’hameçonnage bloqués<br>Messages signalés par les utilisateurs<br><br><br><br>|Messages malveillants bloqués<br>Messages d’hameçonnage bloqués<br>Messages signalés par les utilisateurs<br>Blocage des programmes malveillants de jour zéro<br>Messages d’hameçonnage avancés détectés<br>URL malveillantes bloquées|
 
-Pour afficher ou accéder au widget Résumé de la gestion des menaces, vous devez disposer des autorisations permettant d’afficher les rapports de protection avancée contre les menaces. Pour en savoir plus, consultez [la rubrique Quelles autorisations sont requises pour afficher les rapports ATP ?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports).
+Pour afficher ou accéder au widget Résumé de la gestion des menaces, vous devez disposer des autorisations permettant d’afficher les rapports Defender pour Office 365. Pour en savoir plus, consultez [la rubrique Quelles autorisations sont nécessaires pour afficher les rapports Defender pour Office 365 ?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports).
 
 ## <a name="threat-protection-status"></a>Statut de protection contre les menaces
 
@@ -65,14 +65,14 @@ Le widget état de protection contre les menaces indique l’efficacité de la p
 
 ![Widget d’état de protection contre les menaces](../../media/tpswidget.png)
 
-Les détails varient selon que votre abonnement Microsoft 365 inclut ou non [Exchange Online Protection](exchange-online-protection-overview.md) (EoP) avec ou sans [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP).
+Les détails varient selon que votre abonnement Microsoft 365 inclut ou non [Exchange Online Protection](exchange-online-protection-overview.md) (EoP) avec ou sans [Microsoft defender pour Office 365](office-365-atp.md).
 
 |Si votre abonnement inclut...|Ces détails s’affichent.|
 |---|---|
-|EOP mais pas Office 365 ATP|Courrier électronique malveillant détecté et bloqué par EOP.<br><br> Consultez la rubrique [Threat Protection Status Report (EoP)](view-email-security-reports.md#threat-protection-status-report).|
-|Office 365 – Protection avancée contre les menaces|Contenu malveillant et courrier involontaire détecté et bloqué par EOP et Office 365 ATP<br><br>Nombre agrégé de messages électroniques uniques dont le contenu malveillant est bloqué par le moteur anti-programme malveillant, la [purge automatique avec suppression automatique des heures d’heure](zero-hour-auto-purge.md)et les fonctionnalités ATP (y compris les [liens fiables](atp-safe-links.md), [les pièces jointes fiables](atp-safe-attachments.md)et l' [anti-hameçonnage ATP](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)).<br><br>Consultez la rubrique [Threat Protection Status Report (ATP)](view-reports-for-atp.md#threat-protection-status-report).|
+|EOP mais pas Microsoft Defender pour Office 365|Courrier électronique malveillant détecté et bloqué par EOP.<br><br> Consultez la rubrique [Threat Protection Status Report (EoP)](view-email-security-reports.md#threat-protection-status-report).|
+|Microsoft Defender pour Office 365|Contenu malveillant et courrier involontaire détecté et bloqué par EOP et Defender pour Office 365<br><br>Nombre agrégé de messages électroniques uniques dont le contenu malveillant est bloqué par le moteur anti-programme malveillant, la [purge automatique à zéro heure](zero-hour-auto-purge.md)et les fonctionnalités Defender pour Office 365 (y compris les [liens approuvés](atp-safe-links.md), [les pièces jointes fiables](atp-safe-attachments.md)et la [protection anti-hameçonnage dans Defender pour Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)).<br><br>Consultez la rubrique [Threat Protection Status Report](view-reports-for-atp.md#threat-protection-status-report).|
 
-Pour afficher ou accéder au widget d’État protection contre les menaces, vous devez disposer des autorisations permettant d’afficher les rapports de protection avancée contre les menaces. Pour en savoir plus, consultez [la rubrique Quelles autorisations sont requises pour afficher les rapports ATP ?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)
+Pour afficher ou accéder au widget d’État protection contre les menaces, vous devez disposer des autorisations permettant d’afficher les rapports Defender pour Office 365. Pour en savoir plus, consultez [la rubrique Quelles autorisations sont requises pour afficher les rapports Defender pour Office 365 ?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)
 
 ## <a name="global-weekly-threat-detections"></a>Détections de menaces hebdomadaires globales
 
@@ -86,7 +86,7 @@ Les mesures sont calculées de la manière décrite dans le tableau suivant :
 |---|---|
 |Messages analysés|Nombre de messages électroniques analysés multiplié par le nombre de destinataires|
 |Menaces arrêtées|Nombre de messages électroniques identifiés comme contenant des programmes malveillants multiplié par le nombre de destinataires|
-|Bloqué par [la](office-365-atp.md) protection avancée contre les menaces|Nombre de messages électroniques bloqués par la protection avancée contre les menaces multiplié par le nombre de destinataires|
+|Bloqué par [Defender pour Office 365 ](office-365-atp.md)|Nombre de messages électroniques bloqués par Defender pour Office 365 multiplié par le nombre de destinataires|
 |Supprimés après la remise|Nombre de messages supprimés par [purge automatique 0 heure](zero-hour-auto-purge.md) multiplié par le nombre de destinataires|
 
 ## <a name="malware"></a>Programme malveillant
@@ -105,7 +105,7 @@ Par exemple, vous pouvez constater que les messages électroniques de hameçonna
 
 ## <a name="threat-investigation-and-response"></a>Examen et réponse contre les menaces
 
-Si l’abonnement de votre organisation comprend  [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md), votre tableau de bord de sécurité comporte une section qui inclut des outils d’enquête et de réponse de menace avancés. Ces outils incluent [des fonctionnalités d’analyse et de réponse automatisées](automated-investigation-response-office.md). L’analyse et la réponse automatisées peuvent être utiles dans des scénarios tels que l' [adressage rapide des comptes d’utilisateurs compromis](address-compromised-users-quickly.md).
+Si l’abonnement de votre organisation inclut  [Microsoft Defender pour Office 365 plan 2](office-365-ti.md), votre tableau de bord de sécurité comporte une section qui inclut des outils d’enquête et de réponse de menace avancés. Ces outils incluent [des fonctionnalités d’analyse et de réponse automatisées](automated-investigation-response-office.md). L’analyse et la réponse automatisées peuvent être utiles dans des scénarios tels que l' [adressage rapide des comptes d’utilisateurs compromis](address-compromised-users-quickly.md).
 
 Pour en savoir plus, consultez la rubrique [prise en main de l’enquête et de la réponse automatisées (air) dans Office 365](office-365-air.md).
 
@@ -115,9 +115,9 @@ Dans la partie inférieure du tableau de bord de sécurité se trouve une sectio
 
 ![La section tendances récapitule les tendances de flux de messagerie de l’organisation.](../../media/trends.png)
 
-De plus, si l’abonnement de votre organisation comprend [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md), vous aurez également un rapport **alertes de gestion des menaces récentes** dans cette section qui permet à votre équipe de sécurité d’afficher et de prendre des mesures concernant les alertes de sécurité à priorité élevée.
+De plus, si l’abonnement de votre organisation inclut [Defender pour Office 365 plan 2](office-365-ti.md), vous aurez également un rapport **alertes de gestion des menaces récentes** dans cette section qui permet à votre équipe de sécurité d’afficher et de prendre des mesures concernant les alertes de sécurité à priorité élevée.
 
-Pour afficher ou accéder au widget courrier électronique envoyé et reçu, vous devez disposer des autorisations permettant d’afficher les rapports de protection avancée contre les menaces. Pour en savoir plus, consultez [la rubrique Quelles autorisations sont requises pour afficher les rapports ATP ?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports).
+Pour afficher ou accéder au widget courrier électronique envoyé et reçu, vous devez disposer des autorisations permettant d’afficher les rapports Defender pour Office 365. Pour en savoir plus, consultez [la rubrique Quelles autorisations sont nécessaires pour afficher les rapports Defender pour Office 365 ?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports).
 
 Pour afficher ou accéder au widget alertes de gestion des menaces récentes, vous devez disposer des autorisations pour afficher les alertes. Pour en savoir plus, consultez la rubrique [autorisations RBAC requises pour afficher les alertes](../../compliance/alert-policies.md#rbac-permissions-required-to-view-alerts).
 
@@ -125,8 +125,8 @@ Pour afficher ou accéder au widget alertes de gestion des menaces récentes, vo
 
 [Afficher les rapports de sécurité de courrier dans le centre de sécurité et conformité](view-email-security-reports.md)
 
-[Afficher les rapports pour Office 365 protection avancée contre les menaces](view-reports-for-atp.md)
+[Afficher les rapports pour Microsoft Defender pour Office 365](view-reports-for-atp.md)
 
-[Protection avancée contre les menaces dans Office 365](office-365-atp.md)
+[Defender pour Office 365](office-365-atp.md)
 
 [Enquête et réponse aux menaces Office 365](office-365-ti.md)

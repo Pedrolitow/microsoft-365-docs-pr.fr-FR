@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Obtenez Microsoft 365 pour les campagnes afin de protéger votre campagne contre les menaces Cybersecurity pour la messagerie, les données et les communications.
-ms.openlocfilehash: fcb28ba7ca52ee3498afd12cf93157fa90d0d80b
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: 6fe67f8e5723a272643c7980bf1744f80c612188
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131975"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843233"
 ---
 # <a name="get-microsoft-365-for-campaigns"></a>Obtenir Microsoft 365 pour les campagnes
 
@@ -43,11 +43,11 @@ Si vous n’êtes pas éligible à une tarification spéciale, Microsoft 365 Bus
 
 ## <a name="what-does-microsoft-365-for-campaigns-include"></a>Quelles sont les fonctionnalités de Microsoft 365 pour les campagnes ?
 Cette configuration de Microsoft 365 Business Premium inclut des contrôles simples qui vous permettent, ainsi que votre personnel, de collaborer en toute sécurité : 
-- **Protéger l’identité**de l’utilisateur : Assurez-vous que les utilisateurs sont bien ceux qu’ils disent être lorsqu’ils se connectent pour envoyer des courriers électroniques ou accéder à des fichiers (authentification multifacteur).
-- **Protéger**les informations sensibles : Protégez les informations sensibles pour surveiller les informations qui sont partagées en dehors de votre organisation (protection contre la perte de données).
-- **Protéger les appareils mobiles**: protéger les données sur les appareils mobiles (stratégie de protection des applications mobiles).
-- **Protection contre le contenu malveillant**: empêchez l’accès au contenu malveillant en analysant les pièces jointes des messages électroniques (protection avancée contre les menaces).
-- **Protéger les mots de passe**: configurez les mots de passe pour qu’ils n’expirent jamais, ce qui est plus sécurisé et empêche les arrêts de travail (stratégie de mot de passe). 
+- **Protéger l’identité** de l’utilisateur : Assurez-vous que les utilisateurs sont bien ceux qu’ils disent être lorsqu’ils se connectent pour envoyer des courriers électroniques ou accéder à des fichiers (authentification multifacteur).
+- **Protéger** les informations sensibles : Protégez les informations sensibles pour surveiller les informations qui sont partagées en dehors de votre organisation (protection contre la perte de données).
+- **Protéger les appareils mobiles** : protéger les données sur les appareils mobiles (stratégie de protection des applications mobiles).
+- **Protégez votre contenu contre les contenus malveillants** : empêchez l’accès au contenu malveillant en analysant les pièces jointes des messages électroniques (Defender pour Office 365).
+- **Protéger les mots de passe** : configurez les mots de passe pour qu’ils n’expirent jamais, ce qui est plus sécurisé et empêche les arrêts de travail (stratégie de mot de passe). 
 
 
 ## <a name="what-does-it-cost-who-needs-it-and-what-is-the-commitment"></a>Qu’est-ce qui coûte, qui en a besoin et quel est l’engagement ?

@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 4e63badee2ca031bdd3ea7682396353d1658981b
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: c2772d0fc77e563bc80b0f29815349d1bfb3e2ea
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430408"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842511"
 ---
 # <a name="get-expert-training-on-advanced-hunting"></a>Obtenir une formation expert sur la chasse avancée
 
@@ -32,14 +32,14 @@ ms.locfileid: "48430408"
 
 
 **S’applique à :**
-- Protection Microsoft contre les menaces
+- Microsoft 365 Defender
 
-Dynamisez vos connaissances de _la recherche avancée avec le suivi de l’adversaire_, une série de présentations techniques en ligne pour les nouveaux analystes de sécurité et les Hunters de menaces éprouvées. La série vous guide tout au long du processus de création de vos propres requêtes complexes. Commencez par la première vidéo sur Fundamentals ou accédez à des vidéos plus avancées qui répondent à votre niveau d’expérience.
+Dynamisez vos connaissances de _la recherche avancée avec le suivi de l’adversaire_ , une série de présentations techniques en ligne pour les nouveaux analystes de sécurité et les Hunters de menaces éprouvées. La série vous guide tout au long du processus de création de vos propres requêtes complexes. Commencez par la première vidéo sur Fundamentals ou accédez à des vidéos plus avancées qui répondent à votre niveau d’expérience.
 
 
 | Titre | Description | Surveillance | Requêtes | 
 |--|--|--|--|
-| Épisode 1 : notions de base de KQL | Cet épisode couvre les notions de base de la chasse avancée dans la protection contre les menaces Microsoft. Découvrez les données de chasse avancées et les opérateurs et la syntaxe de KQL de base. | [YouTube](https://youtu.be/0D9TkGjeJwM?t=351) (54:14) | [Fichier CSL](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl) |
+| Épisode 1 : notions de base de KQL | Cet épisode couvre les notions de base de la chasse avancée dans Microsoft 365 Defender. Découvrez les données de chasse avancées et les opérateurs et la syntaxe de KQL de base. | [YouTube](https://youtu.be/0D9TkGjeJwM?t=351) (54:14) | [Fichier CSL](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl) |
 | Épisode 2 : jointures | Continuez à en savoir plus sur les données dans la chasse avancée et sur la façon de joindre des tables ensemble. Découvrez `inner` ,, `outer` `unique` et `semi` Joignez et comprenez les nuances de la jointure Kusto par défaut `innerunique` . | [YouTube](https://youtu.be/LMrO6K5TWOU?t=297) (53:33) | [Fichier CSL](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.csl) |
 | Épisode 3 : résumé, glissement et visualisation des données | À présent que vous avez appris à filtrer, manipuler et joindre des données, il est temps de les résumer, de les quantifier, de les faire pivoter et de les visualiser. Cet épisode décrit l' `summarize` opérateur et différents calculs, tout en introduisant des tables supplémentaires dans le schéma. Vous apprendrez également à transformer des jeux de données en graphiques qui peuvent vous aider à extraire de l’aperçu. | [YouTube](https://youtu.be/UKnk9U1NH6Y?t=296) (48:52) | [Fichier CSL](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%203%20-%20Summarizing%2C%20Pivoting%2C%20and%20Joining.csl) |
 | Épisode 4 : allons-nous ! Application de KQL au suivi des incidents | Dans cet épisode, vous apprendrez à effectuer le suivi de certaines activités d’agresseur. Nous utilisons notre compréhension améliorée de Kusto et de la recherche avancée pour suivre une attaque. Découvrez les astuces utilisées dans le domaine, y compris l’ABC de Cybersecurity et la façon de les appliquer à la réponse aux incidents. | [YouTube](https://youtu.be/2EUxOc_LNd8?t=291) (59:36) | [Fichier CSL](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.csl)
@@ -51,7 +51,7 @@ L’extrait suivant d’un fichier CSL montre un ensemble complet de conseils ma
 
 ```kusto
 // DeviceLogonEvents
-// A table containing a row for each logon a device enrolled in Defender ATP
+// A table containing a row for each logon a device enrolled in Microsoft Defender for Endpoint
 // Contains
 // - Account information associated with the logon
 // - The device which the account logged onto
@@ -67,7 +67,7 @@ DeviceLogonEvents
 | count
 
 // DeviceLogonEvents
-// A table containing a row for each logon a device enrolled in Defender ATP
+// A table containing a row for each logon a device enrolled in Microsoft Defender for Endpoint
 // Contains
 // - Account information associated with the logon
 // - The device which the account logged onto

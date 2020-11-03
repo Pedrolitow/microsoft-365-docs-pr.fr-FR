@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 63f12aaa84415b354fd257558612dbbe28e41360
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 86cc32cf395f2216eb3e167e372d1225734c4c28
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429454"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842631"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -32,11 +32,11 @@ ms.locfileid: "48429454"
 
 
 **S’applique à :**
-- Protection Microsoft contre les menaces
+- Microsoft 365 Defender
 
 
 
-Le tableau `EmailEvents` dans le schéma de [repérage avancé](advanced-hunting-overview.md) contient des informations sur les événements impliquant le traitement d'e-mails sur Office 365 - Protection avancée contre les menaces. Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
+Le `EmailEvents` tableau du schéma de [chasse avancé](advanced-hunting-overview.md) contient des informations sur les événements impliquant le traitement des courriers électroniques sur Microsoft defender pour Office 365. Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
 
 >[!TIP]
 > Pour plus d’informations sur les types d’événements ( `ActionType` valeurs) pris en charge par un tableau, utilisez la [référence de schéma intégrée](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) disponible dans le centre de sécurité.
@@ -62,9 +62,9 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `DeliveryAction` | chaîne | Action de livraison de l'e-mail : remis, courrier indésirable, bloqué ou remplacé |
 | `DeliveryLocation` | chaîne | Emplacement de remise du courrier électronique : boîte de réception/dossier, local/externe, courrier indésirable, quarantaine, échec, supprimé, éléments supprimés |
 | `PhishFilterVerdict` | chaîne | Verdict de la pile de filtrage d’e-mails selon que l’e-mail is est phish : Phish ou non Phish |
-| `PhishDetectionMethod` | chaîne | Méthode utilisée pour détecter l'e-mail en tant que Phish : réputation d’URL malveillante, détonation URL de liens fiables ATP, filtre d’hameçonnage avancé, filtre de hameçonnage général, anti-spoof : intra-organisationnel, anti-spoof : domaine externe, emprunt d’identité de domaine, emprunt d’identité d’utilisateur, marque emprunt d’identité |
-| `MalwareFilterVerdict` | chaîne | Verdict de la pile de filtrage d’e-mails selon que l’e-mail contient des programmes malveillants : programme malveillant, programme non malveillant |
-| `MalwareDetectionMethod` | string | Méthode utilisée pour détecter les programmes malveillants dans le courrier électronique : moteur anti-programme malveillant, réputation de fichier, pièces jointes fiables ATP |
+| `PhishDetectionMethod` | chaîne | Méthode utilisée pour détecter le courrier électronique en tant que hameçonnage : réputation d’URL malveillante, détonation d’URL de liens fiables, filtre de hameçonnage avancé, filtre de hameçonnage général, anti-usurpation : intra-org, anti-spoof : domaine externe, emprunt d’identité de domaine, emprunt d’identité d’utilisateur, emprunt d’identité de marque |
+| `MalwareFilterVerdict` | string | Verdict de la pile de filtrage d’e-mails selon que l’e-mail contient des programmes malveillants : programme malveillant, programme non malveillant |
+| `MalwareDetectionMethod` | string | Méthode utilisée pour détecter les programmes malveillants dans le courrier électronique : moteur anti-programme malveillant, réputation de fichier, pièces jointes fiables |
 | `FinalEmailAction` | chaîne | Action finale effectuée sur l’e-mail sur la base du verdict du filtre, des stratégies et des actions des utilisateurs : déplacer le message vers le dossier courrier indésirable, ajouter l’en-tête X, modifier l’objet, rediriger le message, supprimer le message, envoyer à la quarantaine, aucune action entreprise |
 | `FinalEmailActionPolicy` | chaîne | Stratégie d’action appliquée : antispam hautement fiable, anti-courrier indésirable, antispam, courrier indésirable de courrier indésirable, emprunt d’identité de domaine anti-hameçonnage, emprunt d’identité d’utilisateur anti-hameçonnage, usurpation d’identité anti-hameçonnage, emprunt d’identité de graphe anti-hameçonnage, anti-programme malveillant, sécurité pièces jointes, règles de transport d’entreprise (ETR) |
 | `FinalEmailActionPolicyGuid` | chaîne | Identificateur unique de la stratégie qui a déterminé l’action de courrier finale |

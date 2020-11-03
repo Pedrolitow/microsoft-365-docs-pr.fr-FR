@@ -1,5 +1,5 @@
 ---
-title: Meilleures pratiques de recherche avancée de la recherche dans Microsoft Threat Protection
+title: Meilleures pratiques pour les requêtes de recherche avancée dans Microsoft 365 Defender
 description: Découvrez comment créer des requêtes de recherche rapide, efficace et sans erreur avec la chasse avancée
 keywords: chasse aux menaces, recherche de menace, recherche sur les menaces informatiques, protection contre les menaces Microsoft, Microsoft 365, MTP, M365, recherche, requête, télémétrie, schéma, Kusto, éviter le délai d’attente, lignes de commande, ID de processus, optimiser, meilleures pratiques, analyser, joindre, Résumé
 search.product: eADQiWindows 10XVcnh
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 29e5eb64445c6c5c45b8e1fd1633c030b5f32b86
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 2b2ac519e63e5a7cba648dba67d2780bb7600e14
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48649666"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843071"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>Pratiques recommandées pour la requête de repérage avancé
 
@@ -32,7 +32,7 @@ ms.locfileid: "48649666"
 
 
 **S’applique à :**
-- Protection Microsoft contre les menaces
+- Microsoft 365 Defender
 
 Appliquez ces recommandations pour obtenir des résultats plus rapidement et éviter les délais d’attente lors de l’exécution de requêtes complexes. Si vous souhaitez en savoir plus sur l’amélioration des performances de requête, veuillez consulter [Meilleures pratiques de requête Kusto](https://docs.microsoft.com/azure/kusto/query/best-practices).
 
@@ -43,8 +43,8 @@ Les clients qui exécutent régulièrement plusieurs requêtes doivent suivre la
 
 ## <a name="general-optimization-tips"></a>Conseils généraux pour l’optimisation
 
-- **Taille des nouvelles requêtes**: Si vous pensez qu’une requête renverra un jeu de résultats volumineux, évaluez-la d’abord à l’aide de l' [opérateur Count](https://docs.microsoft.com/azure/data-explorer/kusto/query/countoperator). Utilisez la [limite](https://docs.microsoft.com/azure/data-explorer/kusto/query/limitoperator) ou son synonyme `take` pour éviter les jeux de résultats volumineux.
-- **Appliquer des filtres plus tôt**: appliquer des filtres de temps et d’autres filtres pour réduire le jeu de données, en particulier avant d’utiliser les fonctions de transformation et d’analyse, telles que [Substring ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/substringfunction), [Replace (](https://docs.microsoft.com/azure/data-explorer/kusto/query/replacefunction)), [Trim ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/trimfunction), [ToUpper ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/toupperfunction)ou [parse_json ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsejsonfunction). Dans l’exemple ci-dessous, la fonction d’analyse [extractjson ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/extractjsonfunction) est utilisée après que les opérateurs de filtrage ont réduit le nombre d’enregistrements.
+- **Taille des nouvelles requêtes** : Si vous pensez qu’une requête renverra un jeu de résultats volumineux, évaluez-la d’abord à l’aide de l' [opérateur Count](https://docs.microsoft.com/azure/data-explorer/kusto/query/countoperator). Utilisez la [limite](https://docs.microsoft.com/azure/data-explorer/kusto/query/limitoperator) ou son synonyme `take` pour éviter les jeux de résultats volumineux.
+- **Appliquer des filtres plus tôt** : appliquer des filtres de temps et d’autres filtres pour réduire le jeu de données, en particulier avant d’utiliser les fonctions de transformation et d’analyse, telles que [Substring ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/substringfunction), [Replace (](https://docs.microsoft.com/azure/data-explorer/kusto/query/replacefunction)), [Trim ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/trimfunction), [ToUpper ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/toupperfunction)ou [parse_json ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsejsonfunction). Dans l’exemple ci-dessous, la fonction d’analyse [extractjson ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/extractjsonfunction) est utilisée après que les opérateurs de filtrage ont réduit le nombre d’enregistrements.
 
     ```kusto
     DeviceEvents
@@ -54,18 +54,18 @@ Les clients qui exécutent régulièrement plusieurs requêtes doivent suivre la
     | extend DriveLetter = extractjson("$.DriveLetter", AdditionalFields)
      ```
 
-- **Contenant les temps contient**— pour éviter de Rechercher inutilement des sous-chaînes dans des mots, utilisez l' `has` opérateur au lieu de `contains` . [En savoir plus sur les opérateurs de chaîne](https://docs.microsoft.com/azure/data-explorer/kusto/query/datatypes-string-operators)
-- **Rechercher dans des colonnes spécifiques**: recherchez une colonne spécifique au lieu d’exécuter des recherches de texte intégral dans toutes les colonnes. N’utilisez pas `*` pour vérifier toutes les colonnes.
-- Respect **de la casse pour la vitesse**— les recherches sensibles à la casse sont plus spécifiques et généralement plus performantes. Les noms des opérateurs de [chaîne](https://docs.microsoft.com/azure/data-explorer/kusto/query/datatypes-string-operators)respectant la casse, tels que `has_cs` et `contains_cs` , se terminent généralement par `_cs` . Vous pouvez également utiliser l’opérateur Equals avec respect de la casse `==` et non `=~` .
-- **Parse, ne pas extraire**: dans la mesure du possible, utilisez l' [opérateur d’analyse](https://docs.microsoft.com/azure/data-explorer/kusto/query/parseoperator) ou une fonction d’analyse telle que [parse_json ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsejsonfunction). Évitez l' `matches regex` opérateur String ou la [fonction Extract ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/extractfunction), qui utilisent les deux l’expression régulière. Réservez l’utilisation de l’expression régulière pour des scénarios plus complexes. [En savoir plus sur les fonctions d’analyse](#parse-strings)
-- **Filtrer les tables et non les expressions**: ne filtrez pas une colonne calculée si vous pouvez filtrer une colonne de table.
-- **Aucun caractère de trois caractères**— Évitez de comparer ou de filtrer à l’aide de termes de trois caractères maximum. Ces termes ne sont pas indexés et leur correspondance nécessitera davantage de ressources.
-- **Project de manière sélective**: Rendez vos résultats plus faciles à comprendre en ne projetant que les colonnes dont vous avez besoin. La projection de colonnes spécifiques avant l’exécution d’opérations [join](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator) ou similaires permet également d’améliorer les performances.
+- **Contenant les temps contient** — pour éviter de Rechercher inutilement des sous-chaînes dans des mots, utilisez l' `has` opérateur au lieu de `contains` . [En savoir plus sur les opérateurs de chaîne](https://docs.microsoft.com/azure/data-explorer/kusto/query/datatypes-string-operators)
+- **Rechercher dans des colonnes spécifiques** : recherchez une colonne spécifique au lieu d’exécuter des recherches de texte intégral dans toutes les colonnes. N’utilisez pas `*` pour vérifier toutes les colonnes.
+- Respect **de la casse pour la vitesse** — les recherches sensibles à la casse sont plus spécifiques et généralement plus performantes. Les noms des opérateurs de [chaîne](https://docs.microsoft.com/azure/data-explorer/kusto/query/datatypes-string-operators)respectant la casse, tels que `has_cs` et `contains_cs` , se terminent généralement par `_cs` . Vous pouvez également utiliser l’opérateur Equals avec respect de la casse `==` et non `=~` .
+- **Parse, ne pas extraire** : dans la mesure du possible, utilisez l' [opérateur d’analyse](https://docs.microsoft.com/azure/data-explorer/kusto/query/parseoperator) ou une fonction d’analyse telle que [parse_json ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsejsonfunction). Évitez l' `matches regex` opérateur String ou la [fonction Extract ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/extractfunction), qui utilisent les deux l’expression régulière. Réservez l’utilisation de l’expression régulière pour des scénarios plus complexes. [En savoir plus sur les fonctions d’analyse](#parse-strings)
+- **Filtrer les tables et non les expressions** : ne filtrez pas une colonne calculée si vous pouvez filtrer une colonne de table.
+- **Aucun caractère de trois caractères** — Évitez de comparer ou de filtrer à l’aide de termes de trois caractères maximum. Ces termes ne sont pas indexés et leur correspondance nécessitera davantage de ressources.
+- **Project de manière sélective** : Rendez vos résultats plus faciles à comprendre en ne projetant que les colonnes dont vous avez besoin. La projection de colonnes spécifiques avant l’exécution d’opérations [join](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator) ou similaires permet également d’améliorer les performances.
 
 ## <a name="optimize-the-join-operator"></a>Optimiser l' `join` opérateur
 L' [opérateur Join](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator) fusionne les lignes de deux tables en faisant correspondre les valeurs dans les colonnes spécifiées. Appliquez ces conseils pour optimiser les requêtes qui utilisent cet opérateur.
 
-- **Petit tableau à gauche**: l' `join` opérateur fait correspondre les enregistrements de la table à gauche de votre instruction JOIN aux enregistrements à droite. En faisant en sorte que le tableau est plus petit sur la gauche, moins d’enregistrements doivent être mis en correspondance, ce qui accélère la requête. 
+- **Petit tableau à gauche** : l' `join` opérateur fait correspondre les enregistrements de la table à gauche de votre instruction JOIN aux enregistrements à droite. En faisant en sorte que le tableau est plus petit sur la gauche, moins d’enregistrements doivent être mis en correspondance, ce qui accélère la requête. 
 
     Dans le tableau ci-dessous, nous allons réduire le tableau `DeviceLogonEvents` de gauche pour ne traiter que trois appareils spécifiques avant de les joindre à des `IdentityLogonEvents` SID de compte.
  
@@ -80,7 +80,7 @@ L' [opérateur Join](https://docs.microsoft.com/azure/data-explorer/kusto/query/
     on AccountSid
     ```
 
-- **Utilisez la version INNER JOIN**: la version de [jointure](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator#join-flavors) par défaut ou la [innerunique-Join](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#innerunique-join-flavor) déduplique les lignes du tableau de gauche en fonction de la clé de jointure avant de renvoyer une ligne pour chaque correspondance à la table de droite. Si la table de gauche comporte plusieurs lignes avec la même valeur pour la `join` clé, ces lignes seront dédoublées afin de laisser une seule ligne aléatoire pour chaque valeur unique.
+- **Utilisez la version INNER JOIN** : la version de [jointure](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator#join-flavors) par défaut ou la [innerunique-Join](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#innerunique-join-flavor) déduplique les lignes du tableau de gauche en fonction de la clé de jointure avant de renvoyer une ligne pour chaque correspondance à la table de droite. Si la table de gauche comporte plusieurs lignes avec la même valeur pour la `join` clé, ces lignes seront dédoublées afin de laisser une seule ligne aléatoire pour chaque valeur unique.
 
     Ce comportement par défaut peut ignorer des informations importantes de la table de gauche qui peuvent fournir des informations utiles. Par exemple, la requête ci-dessous n’affiche qu’un seul e-mail contenant une pièce jointe particulière, même si la même pièce jointe a été envoyée à l’aide de plusieurs messages électroniques :
 
@@ -99,7 +99,7 @@ L' [opérateur Join](https://docs.microsoft.com/azure/data-explorer/kusto/query/
     | where Subject == "Document Attachment" and FileName == "Document.pdf"
     | join kind=inner (DeviceFileEvents | where Timestamp > ago(1h)) on SHA256 
     ```
-- **Joindre des enregistrements à partir d’une fenêtre temporelle**: lors de l’examen des événements de sécurité, les analystes recherchent des événements associés qui se produisent sur la même période. Appliquer la même approche lorsque `join` vous utilisez également les performances en réduisant le nombre d’enregistrements à vérifier.
+- **Joindre des enregistrements à partir d’une fenêtre temporelle** : lors de l’examen des événements de sécurité, les analystes recherchent des événements associés qui se produisent sur la même période. Appliquer la même approche lorsque `join` vous utilisez également les performances en réduisant le nombre d’enregistrements à vérifier.
     
     La requête ci-dessous vérifie les événements de connexion dans les 30 minutes suivant la réception d’un fichier malveillant :
 
@@ -115,7 +115,7 @@ L' [opérateur Join](https://docs.microsoft.com/azure/data-explorer/kusto/query/
     ) on AccountName 
     | where (LogonTime - EmailReceivedTime) between (0min .. 30min)
     ```
-- **Appliquer des filtres de temps sur les deux côtés**— même si vous n’examinez pas une fenêtre de temps spécifique, l’application de filtres de temps sur les tables gauche et droite peut réduire le nombre d’enregistrements à vérifier et améliorer les `join` performances. La requête ci-dessous s’applique `Timestamp > ago(1h)` aux deux tables afin qu’elle ne rejoigne que les enregistrements de la dernière heure :
+- **Appliquer des filtres de temps sur les deux côtés** — même si vous n’examinez pas une fenêtre de temps spécifique, l’application de filtres de temps sur les tables gauche et droite peut réduire le nombre d’enregistrements à vérifier et améliorer les `join` performances. La requête ci-dessous s’applique `Timestamp > ago(1h)` aux deux tables afin qu’elle ne rejoigne que les enregistrements de la dernière heure :
 
     ```kusto
     EmailAttachmentInfo
@@ -124,7 +124,7 @@ L' [opérateur Join](https://docs.microsoft.com/azure/data-explorer/kusto/query/
     | join kind=inner (DeviceFileEvents | where Timestamp > ago(1h)) on SHA256 
     ```  
 
-- **Utiliser des conseils pour les performances**: utilisez des conseils avec l' `join` opérateur pour indiquer au serveur principal de distribuer la charge lors de l’exécution d’opérations gourmandes en ressources. [En savoir plus sur les conseils de jointure](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator#join-hints)
+- **Utiliser des conseils pour les performances** : utilisez des conseils avec l' `join` opérateur pour indiquer au serveur principal de distribuer la charge lors de l’exécution d’opérations gourmandes en ressources. [En savoir plus sur les conseils de jointure](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator#join-hints)
 
     Par exemple, l' **[indicateur de lecture aléatoire](https://docs.microsoft.com/azure/data-explorer/kusto/query/shufflequery)** permet d’améliorer les performances des requêtes lors de la jointure de tables à l’aide d’une clé à haute cardinalité, une clé avec de nombreuses valeurs uniques, telles que la `AccountObjectId` requête ci-dessous :
 
@@ -149,7 +149,7 @@ L' [opérateur Join](https://docs.microsoft.com/azure/data-explorer/kusto/query/
 ## <a name="optimize-the-summarize-operator"></a>Optimiser l' `summarize` opérateur
 L' [opérateur de synthèse](https://docs.microsoft.com/azure/data-explorer/kusto/query/summarizeoperator) agrège le contenu d’un tableau. Appliquez ces conseils pour optimiser les requêtes qui utilisent cet opérateur.
 
-- **Rechercher des valeurs distinctes**: en règle générale, utilisez `summarize` pour rechercher des valeurs distinctes pouvant être répétitives. Il peut s’avérer inutile de l’utiliser pour agréger des colonnes qui n’ont pas de valeurs répétitives.
+- **Rechercher des valeurs distinctes** : en règle générale, utilisez `summarize` pour rechercher des valeurs distinctes pouvant être répétitives. Il peut s’avérer inutile de l’utiliser pour agréger des colonnes qui n’ont pas de valeurs répétitives.
 
     Bien qu’un seul courrier électronique puisse faire partie de plusieurs événements, l’exemple ci-dessous n’est _pas_ une utilisation efficace de, `summarize` car un ID de message réseau pour un e-mail individuel est toujours fourni avec une adresse d’expéditeur unique.
  
@@ -173,7 +173,7 @@ L' [opérateur de synthèse](https://docs.microsoft.com/azure/data-explorer/kust
     | summarize by SenderFromAddress, RecipientEmailAddress   
     ```
 
-- **Lecture aléatoire de la requête**, bien qu' `summarize` il soit préférable de l’utiliser dans des colonnes avec des valeurs répétitives, les mêmes colonnes peuvent également avoir _une haute cardinalité_ ou un grand nombre de valeurs uniques. Comme l' `join` opérateur, vous pouvez également appliquer l' [indicateur de lecture aléatoire](https://docs.microsoft.com/azure/data-explorer/kusto/query/shufflequery) `summarize` pour répartir la charge de traitement et éventuellement améliorer les performances lors de l’utilisation de colonnes à haute cardinalité.
+- **Lecture aléatoire de la requête** , bien qu' `summarize` il soit préférable de l’utiliser dans des colonnes avec des valeurs répétitives, les mêmes colonnes peuvent également avoir _une haute cardinalité_ ou un grand nombre de valeurs uniques. Comme l' `join` opérateur, vous pouvez également appliquer l' [indicateur de lecture aléatoire](https://docs.microsoft.com/azure/data-explorer/kusto/query/shufflequery) `summarize` pour répartir la charge de traitement et éventuellement améliorer les performances lors de l’utilisation de colonnes à haute cardinalité.
 
     La requête ci-dessous utilise `summarize` pour compter le nombre d’adresses de messagerie de destinataires distinctes, qui peut s’exécuter dans des centaines de milliers dans les grandes organisations. Pour améliorer les performances, il intègre les `hint.shufflekey` éléments suivants :
 
@@ -208,7 +208,7 @@ Plusieurs méthodes s’offrent à vous pour créer une ligne de commande pour a
 
 Pour créer des requêtes plus durables sur les lignes de commande, appliquez les pratiques suivantes :
 
-- Identifiez les processus connus (par exemple, *net.exe* ou *psexec.exe*) en faisant correspondre les champs de nom de fichier au lieu de filtrer sur la ligne de commande proprement dite.
+- Identifiez les processus connus (par exemple, *net.exe* ou *psexec.exe* ) en faisant correspondre les champs de nom de fichier au lieu de filtrer sur la ligne de commande proprement dite.
 - Analyser les sections de ligne de commande à l’aide de la [fonction parse_command_line ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parse-command-line) 
 - Lors de l’interrogation des arguments de la ligne de commande, ne recherchez pas une correspondance exacte de plusieurs arguments non liés dans un certain ordre. Au lieu de cela, vous devez utiliser des expressions régulières ou utiliser plusieurs opérateurs de contenu séparés..
 - Utilisez des correspondances non respectées de casse. Par exemple, utilisez `=~` ,, `in~` et `contains` au lieu de `==` , `in` , et `contains_cs` .
@@ -265,7 +265,7 @@ Pour en savoir plus sur toutes les fonctions d’analyse prises en charge, consu
 
 ## <a name="related-topics"></a>Voir aussi
 - [Documentation du langage de requête Kusto](https://docs.microsoft.com/azure/data-explorer/kusto/query/)
-- [Quotas et paramètres d’utilisation](advanced-hunting-limits.md)
+- [Paramètres d’utilisation et de quotas](advanced-hunting-limits.md)
 - [Gérer les erreurs de chasse avancées](advanced-hunting-errors.md)
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
