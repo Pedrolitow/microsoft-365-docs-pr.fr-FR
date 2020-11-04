@@ -15,13 +15,13 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 f1.keywords: NOCSH
-description: Dans cet article, vous allez découvrir les options à votre disposition pour créer un environnement de partage d’invités sécurisé dans Microsoft 365.
-ms.openlocfilehash: 3ca7dba7c22f1eaa24f1285e42aa3f4caaf70b65
-ms.sourcegitcommit: 21c3e44862854c74e4008cfb661840f069c6b709
+description: Découvrez les options disponibles pour créer un environnement de partage d’invités sécurisé dans Microsoft 365, offrant un accès invité pour une collaboration améliorée.
+ms.openlocfilehash: e9dcb55deb5fc7ecd4230fdbcc8da9f881e90481
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48787570"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906762"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Créer un environnement de partage d’invités sécurisé
 
@@ -51,15 +51,15 @@ Dans cet exemple, nous allons configurer l’authentification multifacteur pour 
 Pour configurer l'authentification multifacteur pour les invités, procédez comme suit :
 
 1. Accédez à [Stratégies d’accès conditionnel Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade).
-2. Dans le panneau **Accès conditionnel | Stratégies** , cliquez sur **Nouvelle stratégie** .
+2. Dans le panneau **Accès conditionnel | Stratégies** , cliquez sur **Nouvelle stratégie**.
 3. Dans le champ **Nom** , tapez un nom.
-4. Sous **Affectations** , cliquez sur **Utilisateurs et groupes** .
-5. Dans le panneau **Utilisateurs et groupes** , sélectionnez **Sélectionner Utilisateurs et groupes** , activez la case à cocher **Tous les invités et utilisateurs externes** .
-6. Sous **Affectations** , cliquez sur **Actions ou applications Cloud** .
-7. Dans le panneau **Actions ou applications Cloud** , sélectionnez **Toutes les applications Cloud** sous l’onglet **Inclure** .
-8. Sous **Contrôles d’accès** , cliquez sur **Accorder** .
-9. Dans le panneau **Accorder** , activez la case à cocher **Exiger une authentification multifacteur** , puis cliquez sur **Sélectionner** .
-10. Dans le panneau **Nouveau** , sous **Activer la stratégie** , cliquez sur **Activer** , puis sur **Créer** .
+4. Sous **Affectations** , cliquez sur **Utilisateurs et groupes**.
+5. Dans le panneau **Utilisateurs et groupes** , sélectionnez **Sélectionner Utilisateurs et groupes** , activez la case à cocher **Tous les invités et utilisateurs externes**.
+6. Sous **Affectations** , cliquez sur **Actions ou applications Cloud**.
+7. Dans le panneau **Actions ou applications Cloud** , sélectionnez **Toutes les applications Cloud** sous l’onglet **Inclure**.
+8. Sous **Contrôles d’accès** , cliquez sur **Accorder**.
+9. Dans le panneau **Accorder** , activez la case à cocher **Exiger une authentification multifacteur** , puis cliquez sur **Sélectionner**.
+10. Dans le panneau **Nouveau** , sous **Activer la stratégie** , cliquez sur **Activer** , puis sur **Créer**.
 
 Les invités doivent maintenant s'inscrire à l'authentification multifacteur avant de pouvoir accéder au contenu, aux sites ou aux équipes partagés.
 
@@ -77,32 +77,32 @@ Pour créer des conditions d’utilisation d’Azure AD, procédez comme suit :
 
 1. Connectez-vous à Azure en tant qu’administrateur général, administrateur de sécurité ou administrateur d’accès conditionnel.
 2. Accédez aux [Conditions d’utilisation](https://aka.ms/catou).
-3. Cliquez sur **Nouvelles conditions d’utilisation** .
+3. Cliquez sur **Nouvelles conditions d’utilisation**.
 
    ![Capture d'écran des paramètres des nouvelles conditions d'utilisation d'Azure AD](../media/azure-ad-guest-terms-of-use.png)
 
-4. Tapez un **Nom** et **Nom d'affichage** .
+4. Tapez un **Nom** et **Nom d'affichage**.
 6. Pour le **document Conditions d'utilisation** , accédez au fichier PDF que vous avez créé et sélectionnez-le.
 7. Sélectionnez la langue de votre document Conditions d’utilisation.
-8. Validez l'option **Demander aux utilisateurs d'étendre les conditions d'utilisation** en la définissant sur **ACTIVÉ** .
-9. Sous **Accès conditionnel** , dans la liste **Appliquer le modèle de stratégie sur l'accès conditionnel** , choisissez **Créer une stratégie d'accès conditionnel ultérieurement** .
-10. Cliquez sur **Créer** .
+8. Validez l'option **Demander aux utilisateurs d'étendre les conditions d'utilisation** en la définissant sur **ACTIVÉ**.
+9. Sous **Accès conditionnel** , dans la liste **Appliquer le modèle de stratégie sur l'accès conditionnel** , choisissez **Créer une stratégie d'accès conditionnel ultérieurement**.
+10. Cliquez sur **Créer**.
 
 Une fois que vous avez créé les conditions d’utilisation, l’étape suivante consiste à créer une stratégie d’accès conditionnel qui affiche les conditions d’utilisation des utilisateurs invités.
 
 Pour créer une stratégie d’accès conditionnel, procédez comme suit :
 
 1. Accédez à [Stratégies d’accès conditionnel Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade).
-2. Dans le panneau **Accès conditionnel | Stratégies** , cliquez sur **Nouvelle stratégie** .
+2. Dans le panneau **Accès conditionnel | Stratégies** , cliquez sur **Nouvelle stratégie**.
 3. Dans le champ **Nom** , tapez un nom.
-4. Sous **Affectations** , cliquez sur **Utilisateurs et groupes** .
-5. Dans le panneau **Utilisateurs et groupes** , sélectionnez **Sélectionner Utilisateurs et groupes** , activez la case à cocher **Tous les invités et utilisateurs externes** .
-6. Sous **Affectations** , cliquez sur **Actions ou applications Cloud** .
-7. Sous l'onglet **Inclure** , sélectionnez **Sélectionner les applications** , puis cliquez sur **Sélectionner** .
-8. Dans le panneau **Sélectionner** , sélectionnez **Microsoft Teams** , **Office 365 SharePoint Online** et **Outlook Groups** , puis cliquez sur **Sélectionner** .
-9. Sous **Contrôles d’accès** , cliquez sur **Accorder** .
-10. Dans le panneau **Accorder** , sélectionnez **Conditions d’utilisation de l’invité** , puis cliquez sur **Sélectionner** .
-11. Dans le panneau **Nouveau** , sous **Activer la stratégie** , cliquez sur **Activer** , puis sur **Créer** .
+4. Sous **Affectations** , cliquez sur **Utilisateurs et groupes**.
+5. Dans le panneau **Utilisateurs et groupes** , sélectionnez **Sélectionner Utilisateurs et groupes** , activez la case à cocher **Tous les invités et utilisateurs externes**.
+6. Sous **Affectations** , cliquez sur **Actions ou applications Cloud**.
+7. Sous l'onglet **Inclure** , sélectionnez **Sélectionner les applications** , puis cliquez sur **Sélectionner**.
+8. Dans le panneau **Sélectionner** , sélectionnez **Microsoft Teams** , **Office 365 SharePoint Online** et **Outlook Groups** , puis cliquez sur **Sélectionner**.
+9. Sous **Contrôles d’accès** , cliquez sur **Accorder**.
+10. Dans le panneau **Accorder** , sélectionnez **Conditions d’utilisation de l’invité** , puis cliquez sur **Sélectionner**.
+11. Dans le panneau **Nouveau** , sous **Activer la stratégie** , cliquez sur **Activer** , puis sur **Créer**.
 
 À présent, la première fois qu’un utilisateur invité tente d’accéder au contenu, à une équipe ou à un site de votre organisation, il est tenu d’accepter les conditions d’utilisation.
 
@@ -123,27 +123,27 @@ Pour créer un nouveau programme, procédez comme suit :
 
 1. Connectez-vous au Portail Microsoft Azure et ouvrez l’onglet [Page de Gouvernance d’identité](https://portal.azure.com/#blade/Microsoft_AAD_ERM/DashboardBlade).
 2. Dans le menu de gauche, cliquez sur **Programmes**
-3. Cliquez sur **Nouveau programme** .
-4. Tapez un **Nom**  et **Description** .
-5. Cliquez sur **Créer** .
+3. Cliquez sur **Nouveau programme**.
+4. Tapez un **Nom**  et **Description**.
+5. Cliquez sur **Créer**.
 
 Une fois le programme a été créé, nous pouvons créer une révision d’accès invité et l’associer au programme.
 
 Pour configurer une révision d’accès des utilisateurs invités, procédez comme suit :
 
-1. Sur la [Page de Gouvernance d’identité](https://portal.azure.com/#blade/Microsoft_AAD_ERM/DashboardBlade), dans le menu de gauche, cliquez sur **Révisions d’accès** .
-2. Cliquez sur **Nouvelle révision d’accès** .
+1. Sur la [Page de Gouvernance d’identité](https://portal.azure.com/#blade/Microsoft_AAD_ERM/DashboardBlade), dans le menu de gauche, cliquez sur **Révisions d’accès**.
+2. Cliquez sur **Nouvelle révision d’accès**.
 
    ![Capture d’écran des paramètres de révision d’accès d’Azure AD](../media/azure-ad-create-access-review.png)
 
 3. Dans le champ **Nom** , tapez un nom.
-4. Pour **Fréquence** , choisissez **Trimestrielle** .
-5. Pour **Fin** , choisissez **Jamais** .
-6. Pour **Portée** , choisissez **Utilisateurs invités uniquement** .
-7. Cliquez sur **Groupe** , sélectionnez les groupes que vous voulez inclure dans la révision Access, puis cliquez sur **Sélectionner** .
-8. Sous **Programmes** , cliquez sur **Lier au programme** .
+4. Pour **Fréquence** , choisissez **Trimestrielle**.
+5. Pour **Fin** , choisissez **Jamais**.
+6. Pour **Portée** , choisissez **Utilisateurs invités uniquement**.
+7. Cliquez sur **Groupe** , sélectionnez les groupes que vous voulez inclure dans la révision Access, puis cliquez sur **Sélectionner**.
+8. Sous **Programmes** , cliquez sur **Lier au programme**.
 9. Dans le panneau **Sélectionner un programme** , choisissez **Programme de révision d’accès invité**
-10. Cliquez sur **Démarrer** .
+10. Cliquez sur **Démarrer**.
 
 Une révision d’accès distincte est créée pour chaque groupe que vous spécifiez. Les propriétaires de groupe de chaque groupe recevront un e-mail trimestriel pour accepter ou refuser l'accès invité à leurs groupes.
 
@@ -164,30 +164,30 @@ Pour les groupes et équipes Microsoft 365, cette opération s’effectue à l�
 Pour limiter l'accès web uniquement aux invités pour les groupes et les équipes
 
 1. Accédez à [Stratégies d’accès conditionnel Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade).
-2. Dans le panneau **Accès conditionnel – Stratégies** , cliquez sur **Nouvelle stratégie** .
+2. Dans le panneau **Accès conditionnel – Stratégies** , cliquez sur **Nouvelle stratégie**.
 3. Dans le champ **Nom** , tapez un nom.
-4. Sous **Affectations** , cliquez sur **Utilisateurs et groupes** .
-5. Dans le panneau **Utilisateurs et groupes** , sélectionnez **Sélectionner Utilisateurs et groupes** , activez la case à cocher **Tous les invités et utilisateurs externes** .
-6. Sous **Affectations** , cliquez sur **Actions ou applications Cloud** .
-7. Sous l'onglet **Inclure** , sélectionnez **Sélectionner les applications** , puis cliquez sur **Sélectionner** .
-8. Dans le panneau **Sélectionner** , sélectionnez **Microsoft Teams** , et **Outlook Groups** , puis cliquez sur **Sélectionner** .
-9. Sous **Affectations** , cliquez sur **Conditions** .
-10. Dans le panneau **Conditions** , cliquez sur **Applications clientes** .
-11. Dans le panneau **Applications clientes** , cliquez sur **Oui** pour **Configurer** , puis sélectionnez les paramètres **Applications mobiles et clients de bureau** , **Clients Exchange ActiveSync** et **Autres clients** . Désactivez la case à cocher **Navigateur** .
+4. Sous **Affectations** , cliquez sur **Utilisateurs et groupes**.
+5. Dans le panneau **Utilisateurs et groupes** , sélectionnez **Sélectionner Utilisateurs et groupes** , activez la case à cocher **Tous les invités et utilisateurs externes**.
+6. Sous **Affectations** , cliquez sur **Actions ou applications Cloud**.
+7. Sous l'onglet **Inclure** , sélectionnez **Sélectionner les applications** , puis cliquez sur **Sélectionner**.
+8. Dans le panneau **Sélectionner** , sélectionnez **Microsoft Teams** , et **Outlook Groups** , puis cliquez sur **Sélectionner**.
+9. Sous **Affectations** , cliquez sur **Conditions**.
+10. Dans le panneau **Conditions** , cliquez sur **Applications clientes**.
+11. Dans le panneau **Applications clientes** , cliquez sur **Oui** pour **Configurer** , puis sélectionnez les paramètres **Applications mobiles et clients de bureau** , **Clients Exchange ActiveSync** et **Autres clients**. Désactivez la case à cocher **Navigateur**.
 
     ![Capture d'écran des paramètres des applications clientes à accès conditionnel d'Azure AD](../media/azure-ad-conditional-access-client-mobile.png)
 
-12. Cliquez sur **Terminé** .
-13. Sous **Contrôles d’accès** , cliquez sur **Accorder** .
-14. Sur le panneau **Accorder** , sélectionnez les options **Exige que l’appareil soit marqué comme conforme** et **Exige un appareil joint Azure AD Hybride** .
-15. Sous **Pour plusieurs contrôles** , sélectionnez **Exige l’un des contrôles sélectionnés** , puis cliquez sur **Sélectionner** .
-16. Dans le panneau **Nouveau** , sous **Activer la stratégie** , cliquez sur **Activer** , puis sur **Créer** .
+12. Cliquez sur **Terminé**.
+13. Sous **Contrôles d’accès** , cliquez sur **Accorder**.
+14. Sur le panneau **Accorder** , sélectionnez les options **Exige que l’appareil soit marqué comme conforme** et **Exige un appareil joint Azure AD Hybride**.
+15. Sous **Pour plusieurs contrôles** , sélectionnez **Exige l’un des contrôles sélectionnés** , puis cliquez sur **Sélectionner**.
+16. Dans le panneau **Nouveau** , sous **Activer la stratégie** , cliquez sur **Activer** , puis sur **Créer**.
 
 Pour limiter l'accès web uniquement aux invités pour SharePoint
 
-1. Dans le [Centre d’administration SharePoint](https://admin.microsoft.com/sharepoint), développez **Stratégies** et cliquez sur **Contrôle d’accès** .
-2. Cliquez **Appareils non gérés** .
-3. Sélectionnez l’option **Autoriser un accès limité, uniquement sur le web** , puis cliquez sur **Enregistrer** .
+1. Dans le [Centre d’administration SharePoint](https://admin.microsoft.com/sharepoint), développez **Stratégies** et cliquez sur **Contrôle d’accès**.
+2. Cliquez **Appareils non gérés**.
+3. Sélectionnez l’option **Autoriser un accès limité, uniquement sur le web** , puis cliquez sur **Enregistrer**.
 
 Notez que ce paramètre dans le Centre d’administration SharePoint crée une stratégie d’accès conditionnel de prise en charge dans Azure AD.
 
@@ -198,17 +198,17 @@ Exiger des invités qu'ils s'authentifient régulièrement peut réduire le risq
 Pour configurer une stratégie de délai d’expiration de session d’invité, procédez comme suit :
 
 1. Accédez à [Stratégies d’accès conditionnel Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade).
-2. Dans le panneau **Accès conditionnel – Stratégies** , cliquez sur **Nouvelle stratégie** .
-3. Dans la zone **Nom** , tapez *Délai d’expiration de session des invités* .
-4. Sous **Affectations** , cliquez sur **Utilisateurs et groupes** .
-5. Dans le panneau **Utilisateurs et groupes** , sélectionnez **Sélectionner Utilisateurs et groupes** , activez la case à cocher **Tous les invités et utilisateurs externes** .
-6. Sous **Affectations** , cliquez sur **Actions ou applications Cloud** .
-7. Sous l'onglet **Inclure** , sélectionnez **Sélectionner les applications** , puis cliquez sur **Sélectionner** .
-8. Dans le panneau **Sélectionner** , sélectionnez **Microsoft Teams** , **Office 365 SharePoint Online** et **Outlook Groups** , puis cliquez sur **Sélectionner** .
-9. Sous **Contrôles d’accès** , cliquez sur **Session** .
-10. Dans le panneau **Session** , sélectionnez **Fréquence de connexion** .
-11. Sélectionnez **1** et **Jours** pour la période, puis cliquez sur **Sélectionner** .
-12. Dans le panneau **Nouveau** , sous **Activer la stratégie** , cliquez sur **Activer** , puis sur **Créer** .
+2. Dans le panneau **Accès conditionnel – Stratégies** , cliquez sur **Nouvelle stratégie**.
+3. Dans la zone **Nom** , tapez *Délai d’expiration de session des invités*.
+4. Sous **Affectations** , cliquez sur **Utilisateurs et groupes**.
+5. Dans le panneau **Utilisateurs et groupes** , sélectionnez **Sélectionner Utilisateurs et groupes** , activez la case à cocher **Tous les invités et utilisateurs externes**.
+6. Sous **Affectations** , cliquez sur **Actions ou applications Cloud**.
+7. Sous l'onglet **Inclure** , sélectionnez **Sélectionner les applications** , puis cliquez sur **Sélectionner**.
+8. Dans le panneau **Sélectionner** , sélectionnez **Microsoft Teams** , **Office 365 SharePoint Online** et **Outlook Groups** , puis cliquez sur **Sélectionner**.
+9. Sous **Contrôles d’accès** , cliquez sur **Session**.
+10. Dans le panneau **Session** , sélectionnez **Fréquence de connexion**.
+11. Sélectionnez **1** et **Jours** pour la période, puis cliquez sur **Sélectionner**.
+12. Dans le panneau **Nouveau** , sous **Activer la stratégie** , cliquez sur **Activer** , puis sur **Créer**.
 
 ## <a name="create-a-sensitive-information-type-for-a-highly-sensitive-project"></a>Créer un type d’informations sensibles pour un projet hautement sensible
 
@@ -218,13 +218,13 @@ Vous pouvez créer des types d'informations sensibles personnalisés pour vous a
 
 Pour créer un type d’informations sensibles personnalisé, procédez comme suit :
 
-1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com), dans le volet de navigation gauche, développez **Classification** , puis cliquez sur **Types d’informations sensibles** .
-2. Cliquez sur **Créer** .
-3. Pour **Nom** et **Description** , tapez **Projet Saturne** , puis cliquez sur **Suivant** .
-4. Cliquez sur **Ajouter un élément** .
+1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com), dans le volet de navigation gauche, développez **Classification** , puis cliquez sur **Types d’informations sensibles**.
+2. Cliquez sur **Créer**.
+3. Pour **Nom** et **Description** , tapez **Projet Saturne** , puis cliquez sur **Suivant**.
+4. Cliquez sur **Ajouter un élément**.
 5. Dans la liste **Détecter le contenu contenant** , sélectionnez **Mots clés** , puis tapez *Projet Saturne* dans la zone de mot clé.
-6. Cliquez sur **Suivant** , puis sur **Terminer** .
-7. Si vous êtes invité à tester le type d’informations sensibles, cliquez sur **Non** .
+6. Cliquez sur **Suivant** , puis sur **Terminer**.
+7. Si vous êtes invité à tester le type d’informations sensibles, cliquez sur **Non**.
 
 ### <a name="more-information"></a>Plus d’informations
 
@@ -237,22 +237,22 @@ Si vous utilisez des étiquettes de confidentialité au sein de votre organisati
 Pour créer une stratégie d’étiquetage automatique :
 
 1. Ouvrez le [centre d’administration de la conformité Microsoft 365](https://compliance.microsoft.com).
-2. Dans le volet de navigation gauche, cliquez sur **Protection des informations** .
-3. Sous l’onglet **Étiquetage automatique** , cliquez sur **Créer une stratégie d’étiquetage automatique** .
-4. Sur la page **Sélectionnez les informations que vous voulez appliquer à** , sélectionnez **Personnaliser** , puis cliquez sur **Suivant** .
-5. Entrez le nom et une description de la stratégie, puis cliquez sur **Suivant** .
-6. Dans la page **Sélectionnez l’emplacement où vous voulez appliquer l’étiquette** , activez **Sites SharePoint** , puis cliquez sur **Choisir le sites** .
-7. Ajoutez les URL des sites sur lesquels vous voulez activer l’étiquetage automatique, puis cliquez sur **Terminé** .
-8. Cliquez sur **Suivant** .
-9. Dans la page **Configurer les règles courantes ou avancées** , sélectionnez **Règles courantes** et cliquez sur **Suivant** .
-10. Dans la page **Définir des règles pour le contenu de tous les emplacements** , cliquez sur **Nouvelle règle** .
-11. Dans la page **Nouvelle règle** , attribuez un nom à la règle, cliquez sur **Ajouter une condition** , puis cliquez sur **Le contenu contient des types d’informations sensibles** .
-12. Cliquez sur **Ajouter** , cliquez sur **Types d’informations sensibles** , sélectionnez les types d’informations sensibles que vous souhaitez utiliser, cliquez sur **Ajouter** , puis sur **Enregistrer** .
-13. Cliquez sur **Suivant** .
-14. Cliquez sur **Sélectionner une étiquette** , sélectionnez l’étiquette que vous voulez utiliser, puis cliquez sur **Ajouter** .
-15. Cliquez sur **Suivant** .
-16. Laissez la stratégie en mode de simulation, puis cliquez sur **Suivant** .
-17. Cliquez sur **Créer une stratégie** , puis cliquez sur **Terminé** .
+2. Dans le volet de navigation gauche, cliquez sur **Protection des informations**.
+3. Sous l’onglet **Étiquetage automatique** , cliquez sur **Créer une stratégie d’étiquetage automatique**.
+4. Sur la page **Sélectionnez les informations que vous voulez appliquer à** , sélectionnez **Personnaliser** , puis cliquez sur **Suivant**.
+5. Entrez le nom et une description de la stratégie, puis cliquez sur **Suivant**.
+6. Dans la page **Sélectionnez l’emplacement où vous voulez appliquer l’étiquette** , activez **Sites SharePoint** , puis cliquez sur **Choisir le sites**.
+7. Ajoutez les URL des sites sur lesquels vous voulez activer l’étiquetage automatique, puis cliquez sur **Terminé**.
+8. Cliquez sur **Suivant**.
+9. Dans la page **Configurer les règles courantes ou avancées** , sélectionnez **Règles courantes** et cliquez sur **Suivant**.
+10. Dans la page **Définir des règles pour le contenu de tous les emplacements** , cliquez sur **Nouvelle règle**.
+11. Dans la page **Nouvelle règle** , attribuez un nom à la règle, cliquez sur **Ajouter une condition** , puis cliquez sur **Le contenu contient des types d’informations sensibles**.
+12. Cliquez sur **Ajouter** , cliquez sur **Types d’informations sensibles** , sélectionnez les types d’informations sensibles que vous souhaitez utiliser, cliquez sur **Ajouter** , puis sur **Enregistrer**.
+13. Cliquez sur **Suivant**.
+14. Cliquez sur **Sélectionner une étiquette** , sélectionnez l’étiquette que vous voulez utiliser, puis cliquez sur **Ajouter**.
+15. Cliquez sur **Suivant**.
+16. Laissez la stratégie en mode de simulation, puis cliquez sur **Suivant**.
+17. Cliquez sur **Créer une stratégie** , puis cliquez sur **Terminé**.
 
 Une fois la stratégie en place, lorsqu’un utilisateur tape « Projet Saturne » dans un document, la stratégie d’étiquetage automatique applique automatiquement l’étiquette spécifiée lors de l’analyse du fichier.
 
@@ -267,25 +267,25 @@ Vous pouvez utiliser la [protection contre la perte de données (DLP)](https://d
 Création d’une stratégie DLP
 
 1. Dans le Centre de conformité Microsoft 365, accédez à la [page de protection contre la perte de données](https://compliance.microsoft.com/datalossprevention).
-2. Cliquez sur la stratégie **Créer** .
-3. Sélectionnez **Personnaliser** , puis cliquez sur **Suivant** .
-4. Tapez un nom pour la stratégie, puis cliquez sur **Suivant** .
-5. Dans la page **Emplacements pour appliquer la stratégie** , désactivez tous les paramètres, sauf **Sites SharePoint** et **Comptes OneDrive** , puis cliquez sur **Suivant** .
-6. Sur la page **Définir les paramètres de stratégie** , cliquez sur **Suivant** .
+2. Cliquez sur la stratégie **Créer**.
+3. Sélectionnez **Personnaliser** , puis cliquez sur **Suivant**.
+4. Tapez un nom pour la stratégie, puis cliquez sur **Suivant**.
+5. Dans la page **Emplacements pour appliquer la stratégie** , désactivez tous les paramètres, sauf **Sites SharePoint** et **Comptes OneDrive** , puis cliquez sur **Suivant**.
+6. Sur la page **Définir les paramètres de stratégie** , cliquez sur **Suivant**.
 7. Sur la page **Personnaliser les règles avancées de protection contre la perte de données** , cliquez sur **Créer une règle** , puis tapez un nom pour la règle.
-8. Sous **Conditions** , cliquez sur **Ajouter une condition** , puis sélectionnez **Le contenu contient** .
-9. Cliquez sur **Ajouter** , sélectionnez **Étiquettes de confidentialité** , sélectionnez les étiquettes à utiliser, puis cliquez sur **Ajouter** .
+8. Sous **Conditions** , cliquez sur **Ajouter une condition** , puis sélectionnez **Le contenu contient**.
+9. Cliquez sur **Ajouter** , sélectionnez **Étiquettes de confidentialité** , sélectionnez les étiquettes à utiliser, puis cliquez sur **Ajouter**.
 
    ![Capture d’écran des options de conditions, types d’informations sensibles, étiquettes de confidentialité et étiquettes de rétention.](../media/limit-accidental-exposure-dlp-conditions.png)
 
-10. Sous **Actions** cliquez sur **Ajouter une action** , puis sélectionnez **Restreindre l’accès ou chiffrer le contenu dans des emplacements Microsoft 365** .
-11. Activez la case à cocher **Restreindre l’accès ou chiffrer le contenu dans les emplacements Microsoft 365** , puis sélectionnez l’option **Uniquement les personnes extérieures à votre organisation** .
+10. Sous **Actions** cliquez sur **Ajouter une action** , puis sélectionnez **Restreindre l’accès ou chiffrer le contenu dans des emplacements Microsoft 365**.
+11. Activez la case à cocher **Restreindre l’accès ou chiffrer le contenu dans les emplacements Microsoft 365** , puis sélectionnez l’option **Uniquement les personnes extérieures à votre organisation**.
 
       ![Capture d’écran des options d’action de règle de protection contre la perte de données](../media/dlp-remove-guest-access-sensitive-files.png)
 
-12. Cliquez sur **Enregistrer** , puis sur **Suivant** .
-13. Sélectionnez vos options de test, puis cliquez sur **Suivant** .
-14. Cliquez sur **Envoyer** , puis sur **Terminé** .
+12. Cliquez sur **Enregistrer** , puis sur **Suivant**.
+13. Sélectionnez vos options de test, puis cliquez sur **Suivant**.
+14. Cliquez sur **Envoyer** , puis sur **Terminé**.
 
 Il est important de noter que cette stratégie ne supprime pas l’accès si l’invité est membre du site ou de l’équipe. Si vous comptez utiliser des documents hautement sensibles dans un site ou une équipe comptant des membres invités, envisagez d'utiliser des c[anaux privés dans Teams ](https://support.microsoft.com/office/de3e20b0-7494-439c-b7e5-75899ebe6a0e)et d'autoriser uniquement les membres de votre organisation dans les canaux privés.
 

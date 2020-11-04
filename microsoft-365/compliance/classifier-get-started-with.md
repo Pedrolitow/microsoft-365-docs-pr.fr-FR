@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un classificateur Microsoft 365 est un outil que vous pouvez former afin de reconnaître différents types de contenu en leur donnant des exemples à consulter. Cet article vous explique comment créer et former un classifieur personnalisé et comment le former pour améliorer la précision.
-ms.openlocfilehash: 4475456e7116acbc705a3121079391a571fcca8a
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+ms.openlocfilehash: f0d3659c1ee03fe69a5513f24d15b295400a24dc
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841231"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906345"
 ---
 # <a name="get-started-with-trainable-classifiers-preview"></a>Prise en main des classificateurs de formation (préversion)
 
@@ -44,7 +44,7 @@ Les classifieurs sont une fonctionnalité de conformité de Microsoft 365 E5 ou 
 Pour accéder aux classifieurs dans l’interface utilisateur : 
 
 - l’administrateur global doit s’abonner au client pour créer des classifieurs personnalisés.
-- le rôle d’administrateur de conformité, le rôle d’enquête de données ou l’administrateur des données de conformité est requis pour former un classifieur.
+- L’administrateur de conformité ou le rôle d’enquête de données est nécessaire pour former un classifieur.
 
 Vous aurez besoin de comptes dotés des autorisations suivantes pour utiliser les classifieurs dans les scénarios suivants :
 

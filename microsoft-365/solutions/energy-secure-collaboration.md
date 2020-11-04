@@ -11,14 +11,14 @@ ms.collection:
 - M365-security-compliance
 ms.prod: microsoft-365-enterprise
 localization_priority: Priority
-description: Découvrez comment Microsoft 365 aide les organisations énergétiques à évoluer vers une plateforme de collaboration moderne, tout en assurant la sécurité et la conformité des données et des systèmes avec les réglementations.
-ms.custom: ''
-ms.openlocfilehash: 67cdf4d0bd037f71f3e483097152ce8baeedd396
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+description: Microsoft 365 aide les organisations énergétiques à évoluer vers une plateforme de collaboration moderne, tout en assurant la sécurité et la conformité des données et des systèmes avec les réglementations.
+ms.custom: seo-marvel-jun2020
+ms.openlocfilehash: 0fedb042d01814ef6cd53e9271f93b3c80b6babe
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843563"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906226"
 ---
 # <a name="key-compliance-and-security-considerations-for-the-energy-industry"></a>Principales considérations en matière de conformité et de sécurité pour le secteur de l’énergie
 ![Illustration métaphorique pour une vue globale de plusieurs industries utilisant le cloud](../media/solution-arch-center/MSC17_global_016.png)

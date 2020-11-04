@@ -12,13 +12,13 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-description: La découverte électronique inaltérable et la conservation inaltérable (et les cmdlets PowerShell correspondantes) dans Exchange Online seront supprimées au cours de la première moitié de 2020. La cmdlet Search-Mailbox et Advanced eDiscovery v 1.0 est également en cours de retrait dans la même période.
-ms.openlocfilehash: 98e04ada0afa03404ba36da2004a9352a01f598a
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+description: In-Place la conservation de la découverte électronique et de In-Place (et les cmdlets PowerShell correspondantes) dans Exchange Online seront supprimées au cours de la première moitié de 2020. Les applets de commande Search-Mailbox et Advanced eDiscovery v 1.0 sont également retirées au cours de la même période.
+ms.openlocfilehash: e8edda9436d62e07d0f64126a012791080766aba
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546280"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877465"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Retrait des outils eDiscovery hérités
 
@@ -31,7 +31,7 @@ Au fil des années, Microsoft a fourni des outils eDiscovery qui vous permettent
 
 - [Découverte électronique inaltérable](https://docs.microsoft.com/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) et [conservation](https://docs.microsoft.com/exchange/security-and-compliance/create-or-remove-in-place-holds) inaltérable dans le centre d’administration Exchange.
 
-- Les cmdlets Exchange Online PowerShell qui prennent en charge la découverte électronique inaltérable et les conservations inaltérables (ces cmdlets sont collectivement identifiées comme des applets de commande **-MailboxSearch* ). Cela inclut les applets de commande suivantes :
+- Les cmdlets Exchange Online PowerShell qui prennent en charge les blocages eDiscovery et In-Place de In-Place (ces cmdlets sont collectivement identifiées comme des applets de commande * *-MailboxSearch* ). Cela inclut les applets de commande suivantes :
 
   - [New-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/new-mailboxsearch)
 
@@ -42,7 +42,7 @@ Au fil des années, Microsoft a fourni des outils eDiscovery qui vous permettent
   - [Set-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/set-mailboxsearch)
 
    > [!NOTE]
-   > Les cmdlets [Get-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/get-mailboxsearch) et [Remove-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/remove-mailboxsearch) seront disponibles une fois que les autres cmdlets * * * *-MailboxSearch * * * seront déclassées afin que vous puissiez les utiliser pour accéder à d’autres outils de découverte électronique et de conservation. Toutefois, après une certaine date (citée ci-dessous), le support Microsoft ne prend plus en charge ces deux cmdlets.
+   > Les cmdlets [Get-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/get-mailboxsearch) et [Remove-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/remove-mailboxsearch) seront disponibles une fois que les autres cmdlets * * * *-MailboxSearch * * _ sont déclassées afin que vous puissiez les utiliser pour vous aider dans la transition vers d’autres outils de découverte électronique et de conservation. Toutefois, après une certaine date (citée ci-dessous), le support Microsoft ne prend plus en charge ces deux cmdlets.
 
 - Cmdlet [Search-Mailbox](https://docs.microsoft.com/powershell/module/exchange/search-mailbox) dans Exchange Online PowerShell.
 
@@ -63,11 +63,11 @@ Au fil des années, Microsoft a fourni des outils eDiscovery qui vous permettent
 
 Les sections suivantes de cet article fournissent des instructions sur chaque fonctionnalité déclassée. Ces informations, y compris les chronologies et les outils de remplacement, que vous pouvez utiliser à la place de l’outil retiré.
 
-## <a name="in-place-ediscovery-and-in-place-holds-in-the-exchange-admin-center"></a>Découverte électronique inaltérable et conservations inaltérables dans le centre d’administration Exchange 
+## <a name="in-place-ediscovery-and-in-place-holds-in-the-exchange-admin-center"></a>In-Place eDiscovery et des In-Place conservations dans le centre d’administration Exchange 
 
-Conformément à l’annonce d’origine le 1er juillet 2017, la fonctionnalité de blocage de la découverte électronique inaltérable & dans le centre d’administration Exchange est en cours de retrait. La page de découverte électronique inaltérable & conservation du centre d’administration Exchange vous permet de rechercher, de mettre en attente et d’exporter du contenu à partir d’Exchange Online. La découverte électronique inaltérable vous permet également de copier les résultats de la recherche dans une boîte aux lettres de découverte afin que vous-même ou d’autres gestionnaires eDiscovery puissiez consulter le contenu et le mettre à la disposition des demandes juridiques, réglementaires et publiques.
+Conformément à l’annonce d’origine le 1er juillet 2017, la fonctionnalité de blocage de la In-Place eDiscovery & dans le centre d’administration Exchange est en cours de retrait. La page In-Place eDiscovery & conservation du centre d’administration Exchange vous permet de rechercher, de mettre en attente et d’exporter du contenu à partir d’Exchange Online. In-Place eDiscovery vous permet également de copier les résultats de la recherche dans une boîte aux lettres de découverte afin que vous-même ou d’autres gestionnaires eDiscovery puissiez consulter le contenu et le mettre à la disposition des demandes juridiques, réglementaires et publiques.
 
-Étant donné que toutes ces fonctionnalités (à l’exception de la copie des résultats de la recherche dans une boîte aux lettres de découverte) sont désormais disponibles dans les outils de recherche de contenu, eDiscovery et eDiscovery dans le [Centre de conformité microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center) (avec des fonctionnalités améliorées, une fiabilité et une prise en charge pour une large gamme de services Microsoft 365 Pour vous aider lors de la transition vers ces autres outils eDiscovery, le tableau ci-dessous répertorie les outils que vous pouvez utiliser à la place de la découverte électronique inaltérable et de la conservation inaltérable.
+Étant donné que toutes ces fonctionnalités (à l’exception de la copie des résultats de la recherche dans une boîte aux lettres de découverte) sont désormais disponibles dans les outils de recherche de contenu, eDiscovery et eDiscovery dans le [Centre de conformité microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center) (avec des fonctionnalités améliorées, une fiabilité et une prise en charge pour une large gamme de services Microsoft 365 Pour vous aider lors de la transition vers ces autres outils eDiscovery, le tableau ci-dessous répertorie les outils que vous pouvez utiliser au lieu de In-Place la découverte électronique et la conservation de In-Place.
 
 ### <a name="scope-of-affected-organizations"></a>Étendue des organisations affectées
 
@@ -77,13 +77,13 @@ Conformément à l’annonce d’origine le 1er juillet 2017, la fonctionnalité
 
 - Organisations gouvernementales Office 365 et Microsoft 365 ; Cela inclut GCC, GCC High et DoD
 
-- Office 365 Allemagne
+- Office 365 Allemagne
 
 ### <a name="timeline-for-retirement"></a>Chronologie de la retraite
 
-- 1er juillet 2020 : vous ne serez pas en mesure de créer des recherches et des suspensions, mais vous pouvez toujours exécuter, modifier et supprimer des recherches existantes à vos propres risques. Le support Microsoft ne dispose plus de & de découverte électronique inaltérable dans le centre d’administration Exchange.
+- 1er juillet 2020 : vous ne serez pas en mesure de créer des recherches et des suspensions, mais vous pouvez toujours exécuter, modifier et supprimer des recherches existantes à vos propres risques. Le support Microsoft ne pourra plus In-Place & eDiscovery dans le centre d’administration Exchange.
 
-- 1er octobre 2020 : la fonctionnalité de découverte électronique inaltérable & conserve les fonctionnalités du centre d’administration Exchange en mode lecture seule. Cela signifie que vous pourrez uniquement supprimer des recherches et des suspensions existantes.
+- 1er octobre 2020 : les fonctionnalités de In-Place eDiscovery & de conservation dans le centre d’administration Exchange sont placées en mode lecture seule. Cela signifie que vous pourrez uniquement supprimer des recherches et des suspensions existantes.
 
 ### <a name="alternative-tools"></a>Outils de remplacement
 
@@ -92,16 +92,16 @@ Le tableau suivant décrit les autres outils que vous pouvez utiliser pour rempl
 <table>
 <thead>
 <tr class="header">
-<th><strong>Fonctionnalité</strong></th>
-<th><strong>Outil de remplacement</strong></th>
-<th><strong>Commentaires</strong></th>
+<th>Les fonctionnalités</th>
+<th>Outil de remplacement</th>
+<th>Commentaires</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>Recherche, exportation et conservation à des fins juridiques</td>
 <td>Cas de découverte électronique de base dans le centre de conformité Microsoft 365 </td>
-<td><p>L’utilisation des fonctionnalités des cas de découverte électronique de base offre la parité fonctionnelle aux conservations de découverte électronique inaltérable et inaltérable. Les voici :</p>
+<td><p>L’utilisation des fonctionnalités des cas de découverte électronique de base fournit la parité fonctionnelle pour In-Place les conservations eDiscovery et In-Place. Les voici :</p>
 <ul>
 <li>
 <p>La recherche s’adapte à des millions d’emplacements</p>
@@ -152,9 +152,9 @@ Le tableau suivant décrit les autres outils que vous pouvez utiliser pour rempl
 </tbody>
 </table>
 
-### <a name="faqs-about-in-place-ediscovery-and-in-place-holds"></a>FAQ sur la découverte électronique inaltérable et les conservations inaltérables
+### <a name="faqs-about-in-place-ediscovery-and-in-place-holds"></a>FAQ sur les conservations eDiscovery et In-Place de In-Place
 
-**J’utilise la fonctionnalité copier les résultats de recherche des & de découverte électronique inaltérable dans le centre d’administration Exchange pour copier les résultats de la recherche dans une boîte aux lettres de découverte pour révision par les avocats. Quelles sont les options disponibles ?**
+_ *J’utilise la fonctionnalité copier les résultats de recherche d' In-Place & eDiscovery dans le centre d’administration Exchange pour copier les résultats de la recherche dans une boîte aux lettres de découverte pour révision par les avocats. Quelles sont les options disponibles ?**
 
 Il existe deux façons de répliquer cette fonctionnalité dès à présent. La première consiste à utiliser [des ensembles de révision dans Advanced eDiscovery v 2.0](https://docs.microsoft.com/microsoft-365/compliance/view-documents-in-review-set). Les ensembles de révisions disposent de la plupart des fonctionnalités que vous voyez dans un outil de révision classique, comme la recherche rapide de documents, le marquage, le Threading de messagerie, le regroupement en double, l’analyse des thèmes et le codage prédictif. Si vous souhaitez toujours utiliser des boîtes aux lettres de découverte pour révision, la deuxième option consiste à exporter les résultats de recherche vers des fichiers PST, puis à importer les fichiers PST dans une boîte aux lettres de découverte à l’aide de la [fonctionnalité d’importation PST](use-network-upload-to-import-pst-files.md) dans le centre de conformité Microsoft.
 
@@ -164,11 +164,11 @@ Le centre de conformité Microsoft 365 utilise également des [limites de confor
 
 **Comment puis-je déplacer mes recherches et conservations en cours vers le centre de conformité Microsoft 365 ?**
 
-Il est possible de migrer des recherches de découverte électronique inaltérable et de les maintenir à partir du centre d’administration Exchange à l’aide de PowerShell. Pour obtenir des instructions, voir [migrer des recherches et des suspensions du centre d’administration Exchange vers le centre de conformité Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2114224).
+Il est possible de migrer les In-Place les recherches de découverte électronique à partir du centre d’administration Exchange à l’aide de PowerShell. Pour obtenir des instructions, voir [migrer des recherches et des suspensions du centre d’administration Exchange vers le centre de conformité Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2114224).
 
 ## <a name="-mailboxsearch-cmdlets"></a>\*-Cmdlets MailboxSearch
 
-Conformément à la note d’origine annoncée le 1er juillet 2017 dans le centre d’administration Exchange, la fonctionnalité de découverte électronique & locale et les applets de commande ** \* MailboxSearch** correspondantes sont en cours de retrait. Ces applets de commande permettent aux utilisateurs de rechercher, de mettre en attente et d’exporter du contenu de boîtes aux lettres pour des demandes juridiques, réglementaires et publiques.
+Conformément à l’avis d’origine annoncé le 1er juillet 2017 dans le centre d’administration Exchange, la fonctionnalité de blocage de la In-Place eDiscovery & et les cmdlets **\* MailboxSearch** correspondantes sont en cours de retrait. Ces applets de commande permettent aux utilisateurs de rechercher, de mettre en attente et d’exporter du contenu de boîtes aux lettres pour des demandes juridiques, réglementaires et publiques.
 
 Étant donné que ces fonctionnalités sont désormais disponibles dans le centre de [<span class="underline">conformité Microsoft 365</span>](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center) et Office 365 Security & PowerShell avec des performances et une évolutivité accrues, vous devez utiliser ces cmdlets améliorées. Ces applets de commande incluent [<span class="underline"> \* -ComplianceCase</span>](https://docs.microsoft.com/powershell/module/exchange/get-compliancecase), [<span class="underline"> \* -ComplianceSearch</span>](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch), [<span class="underline"> \* -CaseHoldPolicy</span>](https://docs.microsoft.com/powershell/module/exchange/get-caseholdpolicy), [<span class="underline"> \* -CaseHoldRule</span>](https://docs.microsoft.com/powershell/module/exchange/get-caseholdrule)et [<span class="underline"> \* -ComplianceSearchAction</span>](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction).
 
@@ -180,13 +180,13 @@ Conformément à la note d’origine annoncée le 1er juillet 2017 dans le centr
 
 - Organisations gouvernementales Office 365 et Microsoft 365 ; Cela inclut GCC, GCC High et DoD
 
-- Office 365 Allemagne
+- Office 365 Allemagne
 
 ### <a name="timeline"></a>Chronologie
 
-- 1er juillet 2020 : vous ne pourrez pas utiliser **New-MailboxSearch** pour créer de nouvelles recherches de découverte électronique inaltérable et des conservations inaltérables, mais vous pouvez toujours utiliser des applets de commande pour exécuter, modifier et supprimer des recherches et des suspensions existantes à vos propres risques. Le support Microsoft ne fournira plus d’aide pour ces types de recherches et de suspensions.
+- 1er juillet 2020 : vous ne pourrez pas utiliser **New-MailboxSearch** pour créer de nouvelles recherches de découverte électronique In-Place et In-Place conservations, mais vous pouvez toujours utiliser des applets de commande pour exécuter, modifier et supprimer des recherches et des suspensions existantes à vos propres risques. Le support Microsoft ne fournira plus d’aide pour ces types de recherches et de suspensions.
 
-- 1er octobre 2020 : comme indiqué précédemment, le & de découverte électronique inaltérable conserve les fonctionnalités du centre d’administration Exchange en mode lecture seule. Cela signifie également que vous ne pourrez pas utiliser les cmdlets **New-MailboxSearch**, **Start-MailboxSearch**ou **Set-MailboxSearch** . Vous ne pourrez obtenir et supprimer que les recherches et les suspensions existantes.
+- Le 1er octobre 2020 : comme indiqué précédemment, le In-Place eDiscovery & conserve les fonctionnalités du centre d’administration Exchange en mode lecture seule. Cela signifie également que vous ne pourrez pas utiliser les cmdlets **New-MailboxSearch** , **Start-MailboxSearch** ou **Set-MailboxSearch** . Vous ne pourrez obtenir et supprimer que les recherches et les suspensions existantes.
 
 ### <a name="alternative-tools"></a>Outils de remplacement
 
@@ -195,9 +195,9 @@ Le tableau suivant décrit les autres outils que vous pouvez utiliser pour rempl
 <table>
 <thead>
 <tr class="header">
-<th><strong>Fonctionnalité</strong></th>
-<th><strong>Outils de remplacement</strong></th>
-<th><strong>Commentaires</strong></th>
+<th>Les fonctionnalités</th>
+<th>Outils de remplacement</th>
+<th>Commentaires</th>
 </tr>
 </thead>
 <tbody>
@@ -222,7 +222,7 @@ Le tableau suivant décrit les autres outils que vous pouvez utiliser pour rempl
 </tr>
 <tr class="odd">
 <td>Copier les résultats de la recherche dans une boîte aux lettres de découverte</td>
-<td>Aucune</td>
+<td>Aucun</td>
 <td>Il n’existe pas de remplacement direct de cette fonctionnalité, car elle ne fournit pas d’accès à tous les services Microsoft 365. Consultez le Forum aux questions ci-dessous pour obtenir d’autres solutions.</td>
 </tr>
   <tr class=even>
@@ -235,15 +235,15 @@ Le tableau suivant décrit les autres outils que vous pouvez utiliser pour rempl
 </tbody>
 </table>
 
-### <a name="faqs-about--mailboxsearch-cmdlets"></a>FAQ sur les applets de commande ***-MailboxSearch**
+### <a name="faqs-about--mailboxsearch-cmdlets"></a>FAQ sur les applets de commande * **-MailboxSearch**
 
 **Nous utilisons la fonctionnalité de recherche de copie pour exporter des messages électroniques ou des messages instantanés à des fins autres enquêtes juridiques et eDiscovery. Quelles sont les autres options dont nous disposons après avoir retiré ces applets de commande ?**
 
-Les [<span class="underline">API Microsoft Graph</span>](https://developer.microsoft.com/en-us/graph) fournissent un certain nombre de méthodes pour extraire des données à des fins d’analyse et d’autres objectifs qui sont beaucoup plus résilientes et évolutives que l’utilisation des cmdlets ** \* -MailboxSearch** .
+Les [<span class="underline">API Microsoft Graph</span>](https://developer.microsoft.com/en-us/graph) fournissent un certain nombre de méthodes pour extraire des données à des fins d’analyse et d’autres objectifs qui sont beaucoup plus résilientes et évolutives que l’utilisation des cmdlets **\* -MailboxSearch** .
 
 **Comment puis-je migrer mes recherches et conservations vers le centre de conformité Microsoft 365 ?**
 
-Il est possible de migrer des recherches de découverte électronique inaltérable et de les mettre en attente à partir du centre d’administration Exchange à l’aide d’un script PowerShell. Pour plus d’informations, reportez-vous [à la rubrique Migrate Legacy eDiscovery Searches and holds to the Microsoft 365 Compliance Center](migrate-legacy-eDiscovery-searches-and-holds.md).
+Il est possible de migrer les In-Place les recherches de découverte électronique à partir du centre d’administration Exchange à l’aide d’un script PowerShell. Pour plus d’informations, reportez-vous [à la rubrique Migrate Legacy eDiscovery Searches and holds to the Microsoft 365 Compliance Center](migrate-legacy-eDiscovery-searches-and-holds.md).
 
 **Une fois que les applets de commande sont déclassées, est-ce que je peux toujours supprimer ou récupérer les recherches ?**
 
@@ -261,7 +261,7 @@ La cmdlet **Search-Mailbox** dans Exchange Online PowerShell est en cours de ret
 
 - Organisations gouvernementales Office 365 et Microsoft 365 ; Cela inclut GCC, GCC High et DoD
 
-- Office 365 Allemagne
+- Office 365 Allemagne
 
 ### <a name="timeline"></a>Chronologie
 
@@ -274,9 +274,9 @@ Le tableau suivant décrit les autres outils que vous pouvez utiliser pour rempl
 <table>
 <thead>
 <tr class="header">
-<th><strong>Fonctionnalité</strong></th>
-<th><strong>Outils de remplacement</strong></th>
-<th><strong>Commentaires</strong></th>
+<th>Les fonctionnalités</th>
+<th>Outils de remplacement</th>
+<th>Commentaires</th>
 </tr>
 </thead>
 <tbody>
@@ -323,7 +323,7 @@ Le tableau suivant décrit les autres outils que vous pouvez utiliser pour rempl
 
 ## <a name="exchange-web-services-api-operations"></a>Opérations de l’API des services Web Exchange
 
-Ces opérations dans l’API des services Web Exchange sont utilisées par la fonctionnalité de découverte électronique inaltérable &s dans le centre d’administration Exchange et les applets de commande ** \* MailboxSearch** correspondantes dans Exchange Online PowerShell. Elles seront également supprimées dans le cadre de la suppression des autres outils eDiscovery hérités.
+Ces opérations dans l’API des services Web Exchange sont utilisées par la fonctionnalité In-Place eDiscovery & suspensions dans le centre d’administration Exchange et les cmdlets **\* MailboxSearch** correspondantes dans Exchange Online PowerShell. Elles seront également supprimées dans le cadre de la suppression des autres outils eDiscovery hérités.
 
 ### <a name="scope-of-affected-organizations"></a>Étendue des organisations affectées
 
@@ -333,7 +333,7 @@ Ces opérations dans l’API des services Web Exchange sont utilisées par la fo
 
 - Organisations gouvernementales Office 365 et Microsoft 365 ; Cela inclut GCC, GCC High et DoD
 
-- Office 365 Allemagne
+- Office 365 Allemagne
 
 ### <a name="timeline"></a>Chronologie
 
@@ -341,25 +341,25 @@ Ces opérations dans l’API des services Web Exchange sont utilisées par la fo
 
 ## <a name="advanced-ediscovery-v10"></a>Advanced eDiscovery v 1.0
 
-Advanced eDiscovery v 1.0, qui est la version de Advanced eDiscovery disponible dans un cas de découverte électronique fondamentale en cliquant sur **basculer vers Advanced eDiscovery**, est en cours de retrait. Sa fonctionnalité a été remplacée par la nouvelle [solution EDiscovery avancée](https://aka.ms/edisco) dans le centre de conformité Microsoft 365.
+Advanced eDiscovery v 1.0, qui est la version de Advanced eDiscovery disponible dans un cas de découverte électronique fondamentale en cliquant sur **basculer vers Advanced eDiscovery** , est en cours de retrait. Sa fonctionnalité a été remplacée par la nouvelle [solution EDiscovery avancée](https://aka.ms/edisco) dans le centre de conformité Microsoft 365.
 
 Pour déterminer si votre organisation utilise Advanced eDiscovery v 1.0 :
 
 1. Accédez au [Centre de sécurité & conformité d’Office 365](https://protection.office.com).
 
-2. Dans le volet de navigation de gauche du centre de sécurité & conformité, cliquez sur **ediscovery > eDiscovery**, puis ouvrez un cas de découverte électronique de base.
+2. Dans le volet de navigation de gauche du centre de sécurité & conformité, cliquez sur **ediscovery > eDiscovery** , puis ouvrez un cas de découverte électronique de base.
 
-3. Si vous voyez le bouton **basculer vers Advanced eDiscovery** , le fait de cliquer dessus vous permettra d’accéder à la version 1,0 de Advanced eDiscovery, qui est en cours de retrait. La possibilité de créer et de gérer des cas dans la découverte électronique centrale n’est pas affectée. Seule la possibilité d’ajouter et d’analyser des données de cas dans Advanced eDiscovery v 1.0 (en cliquant sur **basculer vers Advanced eDiscovery**) est supprimée.
+3. Si vous voyez le bouton **basculer vers Advanced eDiscovery** , le fait de cliquer dessus vous permettra d’accéder à la version 1,0 de Advanced eDiscovery, qui est en cours de retrait. La possibilité de créer et de gérer des cas dans la découverte électronique centrale n’est pas affectée. Seule la possibilité d’ajouter et d’analyser des données de cas dans Advanced eDiscovery v 1.0 (en cliquant sur **basculer vers Advanced eDiscovery** ) est supprimée.
 
-La nouvelle solution eDiscovery avancée de Microsoft 365 (également appelée *Advanced eDiscovery v 2.0*) offre toutes les fonctionnalités de la solution d’origine, mais inclut désormais une approche basée sur le dépositaire pour identifier le contenu dans d’autres services Microsoft 365, recueillir ce contenu, puis l’ajouter à un ensemble de révisions où les réviseurs peuvent tirer parti des requêtes de recherche rapide, des balises et des fonctionnalités d’analyse pour vous aider à rechercher des documents pertinents. Advanced eDiscovery inclut désormais un traitement amélioré et des visionneuses natives pour les types de fichier Microsoft et non-Microsoft, une liste complète des types de fichiers est [ici](https://docs.microsoft.com/microsoft-365/compliance/supported-filetypes-ediscovery20) et les champs de métadonnées pris en charge sont présents [ici](https://docs.microsoft.com/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery). Par ailleurs, la nouvelle solution eDiscovery avancée fournit une fonctionnalité de gestion des blocages de gestion puissante qui vous permet d’appliquer des suspensions au contenu dans différents services, d’avertir les utilisateurs des suspensions et de suivre les réponses des dépositaires, tout cela dans un cas avancé de découverte électronique.
+La nouvelle solution eDiscovery avancée de Microsoft 365 (également appelée *Advanced eDiscovery v 2.0* ) offre toutes les fonctionnalités de la solution d’origine, mais inclut désormais une approche basée sur le dépositaire pour identifier le contenu dans d’autres services Microsoft 365, recueillir ce contenu, puis l’ajouter à un ensemble de révisions où les réviseurs peuvent tirer parti des requêtes de recherche rapide, des balises et des fonctionnalités d’analyse pour vous aider à rechercher des documents pertinents. Advanced eDiscovery inclut désormais un traitement amélioré et des visionneuses natives pour les types de fichier Microsoft et non-Microsoft, une liste complète des types de fichiers est [ici](https://docs.microsoft.com/microsoft-365/compliance/supported-filetypes-ediscovery20) et les champs de métadonnées pris en charge sont présents [ici](https://docs.microsoft.com/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery). Par ailleurs, la nouvelle solution eDiscovery avancée fournit une fonctionnalité de gestion des blocages de gestion puissante qui vous permet d’appliquer des suspensions au contenu dans différents services, d’avertir les utilisateurs des suspensions et de suivre les réponses des dépositaires, tout cela dans un cas avancé de découverte électronique.
 
 Pour accéder à eDiscovery avancée v 2.0 :
 
 1. Accédez au [centre de conformité Microsoft 365](https://compliance.microsoft.com).
 
-2. Dans le volet de navigation gauche du centre de conformité Microsoft 365, cliquez sur **Tout afficher**, puis cliquez sur **eDiscovery >avancée**.
+2. Dans le volet de navigation gauche du centre de conformité Microsoft 365, cliquez sur **Tout afficher** , puis cliquez sur **eDiscovery >avancée**.
 
-Pour l’instant, nous vous recommandons de commencer la transition de votre flux de travail eDiscovery vers la nouvelle fonctionnalité eDiscovery avancée. Bien que vous puissiez toujours accéder à Advanced eDiscovery v 1.0 dans des cas existants, le support Microsoft ne sera pas pris en charge après le 1er octobre 2020. Pour plus d’informations, consultez la chronologie suivante.
+Pour l’instant, nous vous recommandons de commencer la transition de votre flux de travail eDiscovery vers la nouvelle fonctionnalité eDiscovery avancée. Si nécessaire, vous pouvez archiver vos cas Advanced eDiscovery 1,0 en exportant le contenu et en le stockant hors connexion. Bien que vous puissiez toujours accéder à Advanced eDiscovery v 1.0 dans les cas existants jusqu’au 31 décembre 2020, le support Microsoft ne fournira aucune assistance après le 1er octobre 2020. Pour plus d’informations, consultez la chronologie suivante.
 
 ### <a name="scope-of-affected-organizations"></a>Étendue des organisations affectées
 
@@ -367,13 +367,17 @@ Pour l’instant, nous vous recommandons de commencer la transition de votre flu
 
 - Organisations Office 365 et Microsoft 365 éducation
 
-- Office 365 Allemagne
+- Organisations gouvernementales Office 365 et Microsoft 365 ; Cela inclut GCC, GCC High et DoD
+
+- Office 365 Allemagne
 
 ### <a name="timeline"></a>Chronologie
 
 - 1er juillet 2020 : vous ne pourrez pas créer de nouveaux cas de découverte électronique avancée v 1.0.
 
 - 1er octobre 2020 : vous ne pourrez pas ajouter de nouvelles données (préparer les résultats de recherche pour Advanced eDiscovery) dans n’importe quel cas. Vous pourrez continuer à travailler avec des données dans les cas existants à vos risques et périls. Le support Microsoft ne fournira plus d’assistance. 
+
+- 31 décembre 2020 : vous ne serez pas en mesure d’accéder aux cas avancés de la version 1.0 de eDiscovery.
 
 ### <a name="alternative-tools"></a>Outils de remplacement
 
