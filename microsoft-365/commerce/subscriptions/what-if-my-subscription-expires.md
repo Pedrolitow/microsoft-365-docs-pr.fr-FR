@@ -23,16 +23,16 @@ search.appverid:
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: Découvrez ce qui arrive à vos données lorsque votre abonnement Microsoft 365 pour les entreprises expire, est désactivé ou si vous annulez l’opération.
-ms.openlocfilehash: 77b65931056ca504d6f3efd7ca86560496495f5d
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: b09f56fefb7791af012c9dab2ba4e5684b9bf89f
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646870"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906822"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Qu’arrive-t-il à mes données et à l’accès à la fin de mon abonnement Microsoft 365 pour les entreprises ?
 
-Si votre abonnement prend fin, parce qu’il arrive à expiration ou parce que vous décidez de l’annuler, votre accès aux services, applications et données client de Microsoft 365 passe par plusieurs États avant que l' *abonnement soit complètement*désactivé ou annulé. Si vous êtes conscient de cette progression, vous serez mieux armé pour revenir à un état actif avant qu’il ne soit trop tard, ou — si vous quittez Microsoft 365, sauvegardez vos données avant qu’elles ne soient définitivement supprimées.
+Si votre abonnement prend fin, parce qu’il arrive à expiration ou parce que vous décidez de l’annuler, votre accès aux services, applications et données client de Microsoft 365 passe par plusieurs États avant que l' *abonnement soit complètement* désactivé ou annulé. Si vous êtes conscient de cette progression, vous serez mieux armé pour revenir à un état actif avant qu’il ne soit trop tard, ou — si vous quittez Microsoft 365, sauvegardez vos données avant qu’elles ne soient définitivement supprimées.
 
 Lisez ces informations importantes avant de contacter le [support technique Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products).
   
@@ -203,6 +203,10 @@ Les administrateurs et les utilisateurs n'ont plus accès aux services ou applic
 > [!NOTE]
 > L'ajout d'un nouvel abonnement du même type que celui précédemment annulé ne restaure pas les données associées à l'abonnement annulé.
 
+
+> [!NOTE]
+> Si une licence de fournisseur de services cryptographiques est suspendue, il n’y a pas de période de grâce de 30 jours et les services sont désactivés immédiatement. Les données seront supprimées après 90 jours si le client n’est pas réactivé en ajoutant une nouvelle licence.
+
 ### <a name="what-happens-when-my-trial-ends"></a>Que se passe-t-il à l'expiration de ma version d'évaluation ?
 
 À l’expiration de votre version d’évaluation, vous ne pouvez pas continuer à utiliser gratuitement Microsoft 365. Plusieurs options s'offrent à vous :
@@ -237,3 +241,4 @@ Les administrateurs et les utilisateurs n'ont plus accès aux services ou applic
 [Annuler votre abonnement](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/cancel-your-subscription) (article) \
 [Renouveler Microsoft 365 pour les entreprises](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/renew-your-subscription) (article) \
 [Réactiver votre abonnement](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/reactivate-your-subscription) (article)
+

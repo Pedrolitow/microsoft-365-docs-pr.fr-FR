@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e156a8dc71dc9aca4a5d608b29307f4d36f0ec6b
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 697124400ab869825a0d7e46357566c82b1583b3
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208136"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845042"
 ---
 # <a name="isoiec-27701-privacy-information-management-system-pims"></a>ISO/CEI 27701 Système de gestion de l'information sur la protection de la vie privée (SGIP)
 
@@ -33,9 +33,9 @@ La nouvelle norme internationale [ISO/IEC 27701 Système de gestion des informat
 
 Les fournisseurs attendus à certifier contre PIMS seront efficaces pour établir des politiques de confidentialité responsables par les fournisseurs et les partenaires, quel que soit la taille de votre organisation. La norme ISO/IEC 27701 résout trois défis clés en matière de conformité :
 
-- **Trop d'exigences réglementaires à jongler**: la conciliation de plusieurs exigences réglementaires via l’utilisation d’un ensembles universel de contrôles opérationnels permet une implémentation cohérente et efficace.
+- **Trop d'exigences réglementaires à jongler** : la conciliation de plusieurs exigences réglementaires via l’utilisation d’un ensembles universel de contrôles opérationnels permet une implémentation cohérente et efficace.
 - **Trop coûteux pour auditer la réglementation** : les auditeurs, tant internes qu'externes, peuvent évaluer la conformité réglementaire à l'aide d'un ensemble de contrôles opérationnels universels dans un seul cycle d'audit.
-- **Les promesses de conformité sans preuve sont potentiellement risquées**: les accords commerciaux impliquant un déplacement d’informations personnelles peuvent justifier la certification de la conformité.
+- **Les promesses de conformité sans preuve sont potentiellement risquées** : les accords commerciaux impliquant un déplacement d’informations personnelles peuvent justifier la certification de la conformité.
 
 ## <a name="too-many-regulatory-requirements-to-juggle"></a>Trop d'exigences réglementaires à jongler
 
@@ -83,8 +83,8 @@ Quelle que soit la taille de votre organisation, qu’il s’agisse d’un contr
 - Power BI intégré
 - Power Virtual Agents
 - Microsoft Stream
-- Spécialistes des menaces Microsoft
-- Windows Defender Protection avancée contre les menaces
+- Spécialistes des menaces de Microsoft
+- Microsoft Defender pour point de terminaison
 
 ## <a name="audits-reports-and-certificates"></a>Audits, rapports et certificats
 

@@ -15,13 +15,13 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
-description: Découvrez les étapes de configuration de Microsoft 365 nécessaires pour configurer une équipe de collaboration avec des invités dans Teams.
-ms.openlocfilehash: 7a2259358d6976184d393980b2b7c0320c3bb171
-ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
+description: Découvrez les étapes de configuration de Microsoft 365 nécessaires pour configurer une équipe de collaboration pour les tâches, les conversations et la documentation avec des invités dans Teams.
+ms.openlocfilehash: b4eea473f03441144a0236ec53dcecde9080fc7a
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48409047"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906858"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Collaborer avec des invités au sein d’une équipe
 
@@ -54,7 +54,7 @@ Pour définir les paramètres de relation organisationnelle
 
 Notez les paramètres dans la section **restrictions de collaboration** . Assurez-vous que les domaines des invités avec lesquels vous souhaitez collaborer ne sont pas bloqués.
 
-Si vous travaillez avec des invités de plusieurs organisations, vous souhaiterez peut-être limiter leur capacité à accéder aux données d’annuaire. Cela les empêchera de voir qui d’autre est un invité dans l’annuaire. Pour ce faire, sous **restrictions d’accès des utilisateurs invités**, sélectionnez **les utilisateurs invités ont un accès limité aux propriétés et l’appartenance aux paramètres d’objets d’annuaire** ou **l’accès des utilisateurs invités est limité aux propriétés et aux appartenances de leurs propres objets d’annuaire**.
+Si vous travaillez avec des invités de plusieurs organisations, vous souhaiterez peut-être limiter leur capacité à accéder aux données d’annuaire. Cela les empêchera de voir qui d’autre est un invité dans l’annuaire. Pour ce faire, sous **restrictions d’accès des utilisateurs invités** , sélectionnez **les utilisateurs invités ont un accès limité aux propriétés et l’appartenance aux paramètres d’objets d’annuaire** ou **l’accès des utilisateurs invités est limité aux propriétés et aux appartenances de leurs propres objets d’annuaire**.
 
 ## <a name="teams-guest-access-settings"></a>Paramètres d’accès invité de teams
 
@@ -68,7 +68,7 @@ Pour déterminer les paramètres d’accès invité Teams, procédez comme suit�
 
 1. Connectez-vous au Centre d’administration Microsoft 365 sur[https://admin.microsoft.com](https://admin.microsoft.com).
 2. Dans le volet de navigation de gauche, cliquez sur **Afficher tout**.
-3. Sous **Centres d’administration**, cliquez sur **Teams**.
+3. Sous **Centres d’administration** , cliquez sur **Teams**.
 4. Dans le centre d’administration Teams, dans le volet de navigation de gauche, développez Paramètres à l’échelle de l' **organisation** , puis cliquez sur **accès invité**.
 5. Assurez-vous que **Autoriser l’accès invité dans Teams** est défini sur **Activé**.
 6. Apportez les modifications souhaitées aux autres paramètres invités, puis cliquez sur **Enregistrer**.
@@ -104,7 +104,7 @@ Si vous souhaitez autoriser le partage de fichiers et de dossiers avec des perso
 
 Pour définir les paramètres de partage au niveau de l’organisation SharePoint
 
-1. Dans le centre d’administration 365 de Microsoft, dans le volet de navigation de gauche, sous **centres d’administration**, cliquez sur **SharePoint**.
+1. Dans le centre d’administration 365 de Microsoft, dans le volet de navigation de gauche, sous **centres d’administration** , cliquez sur **SharePoint**.
 2. Dans le centre d’administration SharePoint, dans le volet de navigation de gauche, développez **stratégies** , puis cliquez sur **partage**.
 3. Assurez-vous que le partage externe pour SharePoint est défini sur **tout le monde** ou sur **des invités nouveaux et existants**.
 4. Si vous avez effectué des modifications, cliquez sur **Enregistrer**.
@@ -128,7 +128,7 @@ Choisissez l’un des types de liaison suivants, qui sera sélectionné par déf
 Pour définir les paramètres de lien par défaut au niveau de l’organisation SharePoint
 
 1. Accédez à la page de partage dans le centre d’administration SharePoint.
-2. Sous **liens de fichiers et de dossiers**, sélectionnez le lien de partage par défaut à utiliser.
+2. Sous **liens de fichiers et de dossiers** , sélectionnez le lien de partage par défaut à utiliser.
 3. Si vous avez effectué des modifications, cliquez sur **Enregistrer**.
 
 ## <a name="create-a-team"></a>Créer une équipe
@@ -147,7 +147,7 @@ Nous allons inviter les utilisateurs ultérieurement. Ensuite, il est important 
 
 ## <a name="sharepoint-site-level-sharing-settings"></a>Paramètres de partage au niveau du site SharePoint
 
-Vérifiez les paramètres de partage au niveau du site pour vous assurer qu’ils autorisent le type d’accès que vous souhaitez pour cette équipe. Par exemple, si vous définissez les paramètres au niveau de l’organisation sur tous les **utilisateurs**, mais que vous souhaitez que tous les invités s’authentifient pour cette équipe, assurez-vous que les paramètres de partage au niveau du site sont définis sur **nouveaux et invités existants**.
+Vérifiez les paramètres de partage au niveau du site pour vous assurer qu’ils autorisent le type d’accès que vous souhaitez pour cette équipe. Par exemple, si vous définissez les paramètres au niveau de l’organisation sur tous les **utilisateurs** , mais que vous souhaitez que tous les invités s’authentifient pour cette équipe, assurez-vous que les paramètres de partage au niveau du site sont définis sur **nouveaux et invités existants**.
 
 ![Capture d’écran des paramètres de partage externe de site SharePoint](../media/sharepoint-site-external-sharing-settings.png)
 
@@ -166,14 +166,14 @@ Les paramètres de partage des invités sont désormais configurés, de sorte qu
 Pour inviter des utilisateurs internes à une équipe
 1. Dans l’équipe, cliquez sur **plus d’options** ( **\*\*\*** ), puis sur **Ajouter un membre**.
 2. Tapez le nom de la personne que vous souhaitez inviter.
-3. Cliquez sur **Ajouter**, puis sur **Fermer**.
+3. Cliquez sur **Ajouter** , puis sur **Fermer**.
 
 Pour inviter des invités à une équipe
 1. Dans l’équipe, cliquez sur **plus d’options** ( **\*\*\*** ), puis sur **Ajouter un membre**.
 2. Tapez l’adresse de messagerie de l’invité que vous souhaitez inviter.
 3. Cliquez sur **modifier les informations invité**.
 4. Tapez le nom complet de l’invité et cliquez sur la coche.
-5. Cliquez sur **Ajouter**, puis sur **Fermer**.
+5. Cliquez sur **Ajouter** , puis sur **Fermer**.
 
 ## <a name="see-also"></a>Voir aussi
 

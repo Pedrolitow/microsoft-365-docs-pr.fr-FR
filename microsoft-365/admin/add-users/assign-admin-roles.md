@@ -27,18 +27,18 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: Découvrez comment attribuer des rôles d’administrateur à un ou plusieurs utilisateurs de votre entreprise afin qu’ils puissent effectuer des tâches spécifiques dans le centre d’administration.
-ms.openlocfilehash: 6d7a09ca9c515494eaf18ea144b7f67ce0003890
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: c0dfef0860e5729a135a142383bdb60aa9d310be
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131757"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906250"
 ---
 # <a name="assign-admin-roles"></a>Attribuer des rôles d’administrateur
 
 Si vous êtes la personne qui a acheté votre abonnement Microsoft professionnel, vous êtes l’administrateur général. Cela signifie que vous disposez d’un contrôle illimité sur les produits dans vos abonnements et que vous pouvez accéder à la plupart des données.
 
-Si vous souhaitez en savoir plus, veuillez consulter la page [À propos des rôles d’administrateur](about-admin-roles.md).
+Pour plus d’informations, consultez [À propos des rôles d’administrateur](about-admin-roles.md).
 
 Lorsque vous ajoutez de nouveaux utilisateurs, si vous ne leur attribuez pas un rôle d’administrateur, ils se trouvent dans le *rôle d’utilisateur* et n’ont pas de privilèges d’administrateur pour l’un des centres d’administration Microsoft. Toutefois, si vous avez besoin d’aide, vous pouvez attribuer un rôle d’administrateur à un utilisateur. Par exemple, si vous avez besoin que quelqu’un vous aide à réinitialiser les mots de passe, vous ne devez pas lui attribuer le rôle d’administrateur global, vous devez lui attribuer le rôle d’administrateur de mot de passe. Le fait d’avoir un trop grand nombre d’administrateurs généraux, avec un accès illimité à vos données et à votre entreprise en ligne, constitue un risque pour la sécurité.
 
@@ -64,13 +64,13 @@ Vous pouvez attribuer des utilisateurs à un rôle de deux manières différente
 3. Sélectionnez Ajouter des **administrateurs attribués** > **Add**.
 4. Tapez le nom d' **affichage** ou le nom **d'** utilisateur de l’utilisateur, puis sélectionnez l’utilisateur dans la liste de suggestions.
 5. Ajoutez plusieurs utilisateurs jusqu’à ce que vous ayez fini.
-6. Sélectionnez **Enregistrer**, puis l’utilisateur est ajouté à la liste des administrateurs attribués.
+6. Sélectionnez **Enregistrer** , puis l’utilisateur est ajouté à la liste des administrateurs attribués.
 
 ### <a name="assign-a-user-to-an-admin-role-from-active-users"></a>Attribuer un rôle d’administrateur à un utilisateur via l’option Utilisateurs actifs
 
 1. Dans le centre d’administration, accédez **à la page utilisateurs** > [actifs active](https://go.microsoft.com/fwlink/p/?linkid=834822) Users.
 
-2. Sur la page **utilisateurs actifs** , sélectionnez l’utilisateur dont vous souhaitez modifier le rôle d’administrateur. Dans le volet flyout, en regard de **rôles**, sélectionnez **gérer les rôles**.
+2. Sur la page **utilisateurs actifs** , sélectionnez l’utilisateur dont vous souhaitez modifier le rôle d’administrateur. Dans le volet flyout, en regard de **rôles** , sélectionnez **gérer les rôles**.
 
 3. Sélectionnez le rôle d’administrateur que vous voulez attribuer à l’utilisateur. Si vous ne voyez pas le rôle que vous recherchez, sélectionnez **Afficher tout** en bas de la liste.
 
@@ -80,7 +80,7 @@ Vous pouvez attribuer des utilisateurs à un rôle de deux manières différente
 
 1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
 
-2. Sur la page **utilisateurs actifs** , sélectionnez l’utilisateur dont vous souhaitez modifier le rôle d’administrateur. Dans le volet flyout, en regard de **rôles**, sélectionnez **modifier**. 
+2. Sur la page **utilisateurs actifs** , sélectionnez l’utilisateur dont vous souhaitez modifier le rôle d’administrateur. Dans le volet flyout, en regard de **rôles** , sélectionnez **modifier**. 
 
     Si vous ne voyez pas l’option **modifier** , cela signifie que vous n’êtes pas autorisé à modifier et que vous ne pouvez pas attribuer de rôles d’administrateur à d’autres personnes. Demandez à un administrateur général de votre entreprise d’attribuer des rôles pour vous. Dans une petite entreprise, le propriétaire de l’entreprise (la personne qui a acheté votre abonnement) est un administrateur général. Dans une grande entreprise, les personnes clés du service informatique sont des administrateurs globaux.
 
@@ -92,7 +92,7 @@ Vous pouvez attribuer des utilisateurs à un rôle de deux manières différente
 
 1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
 
-2. Sur la page **utilisateurs actifs** , sélectionnez l’utilisateur dont vous souhaitez modifier le rôle d’administrateur. Dans le volet flyout, en regard de **rôles**, sélectionnez **modifier**.
+2. Sur la page **utilisateurs actifs** , sélectionnez l’utilisateur dont vous souhaitez modifier le rôle d’administrateur. Dans le volet flyout, en regard de **rôles** , sélectionnez **modifier**.
 
     Si vous ne voyez pas l’option **modifier** , cela signifie que vous n’êtes pas autorisé à modifier et que vous ne pouvez pas attribuer de rôles d’administrateur à d’autres personnes. Demandez à un administrateur général de votre entreprise d’attribuer des rôles pour vous. Dans une petite entreprise, le propriétaire de l’entreprise (la personne qui a acheté votre abonnement) est un administrateur général. Dans une grande entreprise, les personnes clés du service informatique sont des administrateurs globaux.
 
@@ -108,9 +108,14 @@ Utilisez les instructions suivantes pour attribuer des rôles à des dizaines d'
 
 ::: moniker range="o365-worldwide"
 
-## <a name="check-your-permissions"></a>Vérifier vos autorisations
+## <a name="check-admin-roles-in-your-organization"></a>Vérifier les rôles d’administrateur dans votre organisation
 
-Vous ne disposez peut-être pas des autorisations appropriées pour attribuer des rôles d’administrateur à d’autres utilisateurs. Vérifiez que vous disposez des autorisations appropriées ou demandez à un autre administrateur d’attribuer des rôles pour vous.
+Vous ne disposez peut-être pas des autorisations appropriées pour attribuer des rôles d’administrateur à d’autres utilisateurs. Vérifiez que vous disposez des autorisations appropriées ou demandez à un autre administrateur d’affecter des rôles pour vous.
+
+Vous pouvez vérifier les autorisations de rôle d’administrateur de deux manières différentes :
+
+- Vous pouvez accéder aux détails de l’utilisateur et regarder sous **rôles** sur la page du **compte** .
+- Sinon, vous pouvez accéder à **rôles** et sélectionner le rôle d’administrateur, puis sélectionner administrateurs attribués pour déterminer les utilisateurs qui sont affectés.
 
 ::: moniker-end
 

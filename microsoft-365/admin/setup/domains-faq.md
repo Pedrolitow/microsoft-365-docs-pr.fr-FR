@@ -16,6 +16,7 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
+- seo-marvel-may2020
 search.appverid:
 - BCS160
 - MET150
@@ -23,20 +24,20 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
-description: Pour en savoir plus sur les domaines, trouvez des réponses à vos questions fréquemment posées.
-ms.openlocfilehash: b51b5fe56bbae56dd473dd831ec91e629d9233f3
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: Pour en savoir plus sur les domaines (domaine onmicrosoft et transférer le domaine), recherchez les réponses à vos questions dans Forum aux questions.
+ms.openlocfilehash: 8d504711f46383000697736d6825a813f01fbe69
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644578"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906476"
 ---
 # <a name="domains-faq"></a>Forum aux questions sur les domaines
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview).
 
 ::: moniker-end
 
@@ -85,7 +86,7 @@ Il est important de disposer ou de créer  **un seul enregistrement txt pour SPF
 
 [] Un domaine est un nom unique qui apparaît après le signe **@** dans les adresses de messagerie et après **www.** dans les adresses web. Il prend généralement la forme du nom de votre organisation et d’un suffixe Internet standard, tel que  *yourbusiness.com*  ou  *stateuniversity.edu.* 
   
-L’utilisation d’un domaine personnalisé comme «**rob \@ contoso.com**» avec Microsoft 365 peut vous aider à créer une crédibilité et une reconnaissance pour votre marque. 
+L’utilisation d’un domaine personnalisé comme « **rob \@ contoso.com** » avec Microsoft 365 peut vous aider à créer une crédibilité et une reconnaissance pour votre marque. 
   
 Vous pouvez [acheter un domaine dans Microsoft 365 et nous allons le configurer automatiquement](../get-help-with-domains/buy-a-domain-name.md), ou vous pouvez acheter ou en disposer un dont vous êtes déjà propriétaire auprès d’un bureau d’enregistrement de domaines.
     
@@ -206,9 +207,9 @@ Pour la procédure de la fonctionnalité de messagerie pilote Microsoft 365 à p
 
 ## <a name="why-do-i-have-an-onmicrosoftcom-domain"></a>Pourquoi ai-je un domaine « onmicrosoft.com » ?
 
-Microsoft 365 crée un domaine pour vous, comme *contoso.onmicrosoft.com*, lorsque vous vous inscrivez auprès du service. Le nom d’utilisateur que vous créez lors de votre inscription comprend le domaine, par exemple *Alan@contoso.onmicrosoft.com*. 
+Microsoft 365 crée un domaine pour vous, comme *contoso.onmicrosoft.com* , lorsque vous vous inscrivez auprès du service. Le nom d’utilisateur que vous créez lors de votre inscription comprend le domaine, par exemple *Alan@contoso.onmicrosoft.com*. 
   
- **Si vous voulez faire ressembler votre courrier électronique *Alan \@ contoso.com*:** [acheter le domaine](../get-help-with-domains/buy-a-domain-name.md) ou simplement suivre les étapes de la procédure [ajouter vos utilisateurs et votre domaine à Microsoft 365](add-domain.md) si vous en êtes déjà propriétaire. 
+ **Si vous voulez faire ressembler votre courrier électronique *Alan \@ contoso.com* :** [acheter le domaine](../get-help-with-domains/buy-a-domain-name.md) ou simplement suivre les étapes de la procédure [ajouter vos utilisateurs et votre domaine à Microsoft 365](add-domain.md) si vous en êtes déjà propriétaire. 
   
 - **Vous ne pouvez pas renommer le domaine onmicrosoft après l’inscription.** Par exemple, si le domaine initial que vous avez choisi était fourthcoffee.onmicrosoft.com, vous ne pouvez pas le modifier pour qu’il soit fabrikam.onmicrosoft.com. Pour utiliser un autre domaine onmicrosoft.com, vous devez démarrer un nouvel abonnement avec Microsoft 365. 
     
@@ -223,9 +224,9 @@ Vous pouvez continuer à utiliser le domaine onmicrosoft.com initial même aprè
 ::: moniker range="o365-germany"
 ## <a name="why-do-i-have-an-onmicrosoftde-domain"></a>Pourquoi ai-je un domaine « onmicrosoft.de » ?
 
-Microsoft 365 crée un domaine pour vous, comme *contoso.onmicrosoft.de*, lorsque vous vous inscrivez auprès du service. Le nom d’utilisateur que vous créez lors de votre inscription comprend le domaine, par exemple *Alan@contoso.onmicrosoft.de*. 
+Microsoft 365 crée un domaine pour vous, comme *contoso.onmicrosoft.de* , lorsque vous vous inscrivez auprès du service. Le nom d’utilisateur que vous créez lors de votre inscription comprend le domaine, par exemple *Alan@contoso.onmicrosoft.de*. 
   
- **Si vous souhaitez que votre courrier électronique ressemble à *Alan@contoso.de*:** [achetez le domaine](../get-help-with-domains/buy-a-domain-name.md) ou suivez simplement les étapes de la procédure [ajouter vos utilisateurs et votre domaine à Microsoft 365](add-domain.md) si vous en êtes déjà propriétaire. 
+ **Si vous souhaitez que votre courrier électronique ressemble à *Alan@contoso.de* :** [achetez le domaine](../get-help-with-domains/buy-a-domain-name.md) ou suivez simplement les étapes de la procédure [ajouter vos utilisateurs et votre domaine à Microsoft 365](add-domain.md) si vous en êtes déjà propriétaire. 
   
 - **Vous ne pouvez pas renommer le domaine onmicrosoft après l’inscription.** Par exemple, si le domaine initial que vous avez choisi était fourthcoffee.onmicrosoft.de, vous ne pouvez pas le modifier pour qu’il soit fabrikam.onmicrosoft.de. Pour utiliser un autre domaine onmicrosoft.de, vous devez démarrer un nouvel abonnement avec Microsoft 365. 
     

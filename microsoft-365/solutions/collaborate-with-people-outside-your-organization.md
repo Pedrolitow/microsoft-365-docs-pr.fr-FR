@@ -13,15 +13,16 @@ ms.collection:
 - m365solution-scenario
 ms.custom:
 - seo-marvel-apr2020
+- seo-marvel-jun2020
 localization_priority: Normal
 f1.keywords: NOCSH
-description: Configurez Microsoft 365 pour activer le partage et la sécurité supplémentaire lorsque vous invitez les utilisateurs externes à collaborer dans teams et à partager des sites SharePoint.
-ms.openlocfilehash: 11359e2de358d5673da6c39ca2d419c94349a829
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+description: Découvrez comment configurer des applications Microsoft 365 telles que Teams, OneDrive et SharePoint pour la collaboration avec des personnes extérieures à votre organisation.
+ms.openlocfilehash: 9a15ea06cec6982977ec88edf5ee95b35591a33c
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377412"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906988"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>Collaboration avec des personnes extérieures à votre organisation
 
@@ -58,7 +59,7 @@ Lorsque vous travaillez sur un projet de grande taille qui implique de nombreux 
 
 Si certaines des fonctionnalités de partage de Microsoft 365 sont en conflit avec vos stratégies de gouvernance, consultez la rubrique [Limit sharing in microsoft 365](microsoft-365-limit-sharing.md) pour en savoir plus sur les options permettant de limiter le partage.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 [Introduction à la collaboration de fichiers dans Microsoft 365](https://docs.microsoft.com/sharepoint/intro-to-file-collaboration)
 

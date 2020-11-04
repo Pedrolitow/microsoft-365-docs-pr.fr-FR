@@ -19,6 +19,7 @@ ms.custom:
 - IT_Networking
 - TRN_M365B
 - OKR_SMB_Videos
+- seo-marvel-may2020
 - AdminSurgePortfolio
 search.appverid:
 - BCS160
@@ -27,27 +28,27 @@ search.appverid:
 - ODB150
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
-description: Découvrez comment utiliser OneDrive et un site d’équipe pour le stockage et le partage de fichiers.
-ms.openlocfilehash: e6722dc7460a63878ba7fc6a15f6c384ca37e136
-ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+description: Découvrez comment utiliser OneDrive et un site d’équipe pour le stockage Microsoft 365 et le partage de fichiers Microsoft 365.
+ms.openlocfilehash: cc6a7a45fda65073dc9b0cd15a844ec9aefca794
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48350360"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906392"
 ---
-# <a name="set-up-file-storage-and-sharing"></a>Configurer le stockage et le partage des fichiers
+# <a name="set-up-file-storage-and-sharing-in-microsoft-365"></a>Configurer le stockage et le partage de fichiers dans Microsoft 365
 
 L’un des meilleurs moyens de configurer le stockage et le partage de fichiers pour votre entreprise consiste à utiliser OneDrive et un site d’équipe. Cette configuration est idéale si vous avez une petite entreprise ne comptant que quelques employés.
 
-Regardez une courte vidéo sur l’emplacement de stockage des fichiers dans Microsoft 365.<br><br>
+Regardez une courte vidéo sur le stockage des fichiers dans le Cloud Microsoft 365.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FTHX] 
 
 Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
-## <a name="where-you-can-store-documents-in-microsoft-365"></a>Où vous pouvez stocker des documents dans Microsoft 365
+## <a name="microsoft-365-document-storage-and-management"></a>« Stockage et gestion des documents Microsoft 365 »
 
-- OneDrive est conçu pour une utilisation individuelle, avec le partage occasionnel de fichiers. 
+- OneDrive est conçu pour une utilisation individuelle, avec le partage occasionnel de fichiers.
 
 - Un site d’équipe est conçu pour partager et collaborer sur des fichiers régulièrement. Un site d’équipe est idéal pour stocker des fichiers ayant une propriété partagée lorsque plusieurs personnes possèdent les fichiers et peuvent collaborer dessus. Créez une équipe Microsoft pour ajouter un site d’équipe. [Pour plus d’informations, consultez la rubrique créer une équipe dans teams](https://support.microsoft.com/office/174adf5f-846b-4780-b765-de1a0a737e2b).
 
@@ -72,7 +73,7 @@ Voici des recommandations pour les éléments à stocker dans chaque emplacement
 
 Chaque membre de votre entreprise disposant d’une licence Microsoft 365 affectée (et SharePoint Online sélectionné) obtient l’espace de stockage OneDrive dans le Cloud. Ils peuvent stocker ici des fichiers professionnels pour accéder à partir de n’importe quel appareil et ils sont uniquement disponibles pour cet utilisateur. Par exemple, ils peuvent stocker une proposition de projet, leurs notes de réunion ou le script d'une démonstration qu'ils devront effectuer.
   
-Les employés peuvent également partager des fichiers et des dossiers OneDrive. Si un employé est hors de la société ou quitte celle-ci, les autres utilisateurs peuvent accéder aux fichiers partagés stockés dans OneDrive.
+Les employés peuvent également partager des fichiers et des dossiers OneDrive. Si un employé quitte ou quitte la société, les autres utilisateurs peuvent accéder aux fichiers partagés stockés dans OneDrive (partage de dossiers d’équipe OneDrive).
   
 Voici comment chaque personne de votre équipe peut configurer OneDrive et partager des fichiers.
 
@@ -157,11 +158,11 @@ Voici quelques conseils pour tirer le meilleur parti de OneDrive ou de votre sit
   
 ### <a name="file-storage-and-collaboration-recommendations-for-other-types-of-small-businesses"></a>Recommandations relatives au stockage des fichiers et à la collaboration pour les autres types de petites entreprises
 
-- **Exclusives unique**: utilisez OneDrive pour stocker vos propres fichiers et les partager avec des clients au cas par cas.
+- **Exclusives unique** : utilisez OneDrive pour stocker vos propres fichiers et les partager avec des clients au cas par cas.
 
 - **Co-** propriétaires : les deux propriétaires utilisent OneDrive et partagent des fichiers.
 
-- **Entreprises avec des clients ou partenaires externes ayant besoin d’accéder à des fichiers**: créez un site d’équipe pour stocker et partager des documents destinés à un client spécifique. Configurez le site pour autoriser l’accès uniquement à ce client. Vous n’avez pas besoin de vous inquiéter qu’un client aura accidentellement accès aux informations destinées à un autre client.
+- **Entreprises avec des clients ou partenaires externes ayant besoin d’accéder à des fichiers** : créez un site d’équipe pour stocker et partager des documents destinés à un client spécifique. Configurez le site pour autoriser l’accès uniquement à ce client. Vous n’avez pas besoin de vous inquiéter qu’un client aura accidentellement accès aux informations destinées à un autre client.
 
 ### <a name="keep-private-files-private"></a>Maintenir la confidentialité des fichiers privés
 
@@ -192,7 +193,7 @@ Vous pouvez activer le stockage tiers pour vos utilisateurs dans Microsoft 365 a
 
 4. Activez ou désactivez la case à cocher pour activer ou désactiver le stockage tiers, puis sélectionnez **enregistrer les modifications**.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - [Personnalisez votre site d’équipe pour le stockage et le partage de fichiers](customize-team-site.md). Ce didacticiel détaillé explique comment tirer parti des fonctionnalités supplémentaires de stockage et de collaboration.
 

@@ -13,26 +13,28 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: d0653266-31db-4f6a-a804-d34b667c16bf
-description: 'Découvrez comment configurer des applications Office sur des appareils Mac, PC ou mobiles. '
-ms.openlocfilehash: e48725a6e4997d6891cb3876d1b0ba07966d416b
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.custom:
+- seo-marvel-may2020
+- AdminSurgePortfolio
+description: À présent que vous avez configuré Microsoft 365, Découvrez comment installer des applications Office individuelles sur votre Mac, votre PC ou vos appareils mobiles et configurer le courrier électronique dans Outlook.
+ms.openlocfilehash: 07a347894946ee1f71f43f729d0e2e5401e36933
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44779020"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906452"
 ---
 # <a name="install-office-applications"></a>Installer les applications Office
 
-Maintenant que vous avez configuré Microsoft 365, vous pouvez configurer les applications Office sur votre Mac, PC ou appareils mobiles.
+Maintenant que vous avez configuré Microsoft 365, vous pouvez installer des applications Office individuelles sur vos appareils Mac, PC ou mobiles.
   
 Suivez ces liens pour obtenir des informations sur les opérations suivantes :
   
-- Installer les applications Office : [installer Office sur votre PC ou Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)
+- Installer les applications Office :  [installer Office sur votre PC ou Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)
 
 - Configurer des appareils mobiles : [programme d’installation de Microsoft 365 mobile-aide](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f)
 

@@ -1,5 +1,5 @@
 ---
-title: Mettre à niveau vos utilisateurs Microsoft 365 vers le dernier client Office
+title: Mettre à niveau votre Office 2010 vers Microsoft 365-Microsoft 365 admin
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -16,16 +16,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.custom:
+- fwlink 824861; CampaignID
+- O365_Comm_SR_UpgradeOffice
+- seo-marvel-may2020
 - fwlink 824861; CampaignID O365_Comm_SR_UpgradeOffice
 - AdminSurgePortfolio
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
-description: Découvrez comment mettre à niveau vos utilisateurs vers le client Office le plus récent.
-ms.openlocfilehash: 40160dc5590144a1132971368da70c6f36ed460c
-ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
+description: Découvrez comment mettre à niveau Microsoft Office vers le dernier client Office pour les utilisateurs de votre organisation.
+ms.openlocfilehash: 596dfc8f4a005d01c0bf330243bf1fb3c639f97e
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48456323"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906440"
 ---
 # <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>Mettre à niveau vos utilisateurs Microsoft 365 vers le dernier client Office
 
@@ -47,7 +50,7 @@ Pour plus d’informations, voir la feuille [de route de fin d’assistance pour
 
  Si vous n’êtes pas un administrateur et que vous disposez d’un produit de la [famille Microsoft 365](https://support.microsoft.com/office/28cbc8cf-1332-4f04-9123-9b660abb629e#BKMK_OfficePlans) , consultez [la rubrique Comment mettre à niveau Office](https://support.microsoft.com/office/ee68f6cf-422f-464a-82ec-385f65391350) pour obtenir des informations sur la mise à niveau de votre ancienne version d’Office.
 
-## <a name="get-ready-to-upgrade"></a>Préparer la mise à niveau
+## <a name="get-ready-to-upgrade-to-microsoft-365"></a>Préparer la mise à niveau vers Microsoft 365
 
 En tant qu’administrateur, vous contrôlez la version des personnes Office de votre organisation pouvant être installées. Nous vous recommandons vivement d’aider les utilisateurs de votre organisation qui exécutent des versions antérieures d’Office, comme Office 2010, Office 2013 ou Office 2016 à effectuer une mise à niveau vers la dernière version, afin de tirer parti de ses améliorations en matière de sécurité et de productivité.
 

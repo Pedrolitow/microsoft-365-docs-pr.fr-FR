@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: a01a0599776c33d46850bcd0a5fbc6c3377056fa
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 3c57f608a8abdb9ce08efa663b7a88d9e4a684aa
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208296"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843360"
 ---
 # <a name="isoiec-270172015-code-of-practice-for-information-security-controls"></a>ISO/IEC 27017:2015 Code de pratique international des contrôles de sécurité des informations
 
@@ -46,8 +46,8 @@ La norme ISO/IEC 27017 est la seule à fournir des conseils à la fois aux four
 - [Azure, Azure Gouvernement et Azure Allemagne](https://aka.ms/AzureCompliance)
 - Microsoft Cloud App Security
 - [Dynamics 365, Dynamics 365 et Dynamics 365 Allemagne](https://aka.ms/d365-compliance-list)
-- Microsoft Defender – Protection avancée contre les menaces
-- Microsoft Graph
+- Microsoft Defender pour point de terminaison
+- Microsoft Graph
 - Microsoft Healthcare Bot
 - Intune
 - Bureau géré Microsoft

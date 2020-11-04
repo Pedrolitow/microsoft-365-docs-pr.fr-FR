@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 1151fd74e5f40a91107467b6004049081c4a9a69
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 00f9832eadb55b3056ca3fcd3a79ee12afe83034
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208236"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841883"
 ---
 # <a name="payment-card-industry-pci-data-security-standard-dss"></a>Norme de sécurité des données (DSS) d’industrie de carte de paiement (PCI)
 
@@ -44,7 +44,7 @@ Il est cependant important de comprendre que le statut de conformité PCI DSS d
 - Service cloud Flow, soit en service autonome, soit tel qu’inclus dans un plan ou une suite Office 365 ou Dynamics 365
 - Microsoft Graph
 - Intune
-- [Microsoft Defender – Protection avancée contre les menaces](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
+- [Microsoft Defender pour point de terminaison](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
 - Service Cloud PowerApps, soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
 - Service Cloud Power BI soit en service autonome, soit inclus dans un plan ou une suite Office 365
 - OneDrive Entreprise et SharePoint Online (États-Unis uniquement)

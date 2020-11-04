@@ -1,6 +1,6 @@
 ---
-title: 'Pour identifier et au-delà : point de vue d’un architecte'
-description: Description.
+title: Microsoft 365 Enterprise Resource Planning-architecture de sécurité
+description: Découvrez les stratégies de conception principales pour l’architecture de Microsoft entreprise d’Alex Shteynberg, Technical principal Architect chez Microsoft.
 ms.author: bcarter
 author: brendacarter
 manager: bcarter
@@ -11,14 +11,15 @@ localization_priority: Normal
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.custom: ''
+- M365solutions
+ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: fc975610e24980c6a552179359bb643eb9ac040c
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: e691b47a2d508064243886957ac491088df2f8ae
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845251"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906894"
 ---
 # <a name="to-identity-and-beyond--one-architects-viewpoint"></a>Pour identifier et au-delà : point de vue d’un architecte
 
@@ -132,11 +133,11 @@ La combinaison de tous ces signaux permet des stratégies dynamiques comme celle
 
 Si vous acceptez cette définition d’autorisation étendue, vous devez implémenter des solutions supplémentaires. Les solutions que vous implémentez dépendent de la façon dont vous souhaitez que la stratégie soit dynamique et des menaces auxquelles vous souhaitez affecter la priorité. Voici quelques exemples de systèmes de ce type :
 - [Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/) 
-- [Microsoft Defender pour l’identité](https://docs.microsoft.com/azure-advanced-threat-protection/)
-- [Microsoft Defender pour point de terminaison](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
-- [Microsoft Defender pour Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide)
+- [Microsoft Defender pour identité](https://docs.microsoft.com/azure-advanced-threat-protection/)
+- [Microsoft Defender pour point de terminaison](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
+- [Microsoft Defender pour Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide)
 - [Sécurité des applications Cloud Microsoft](https://docs.microsoft.com/cloud-app-security/) (MCAS)
-- [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection?view=o365-worldwide)
+- [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection?view=o365-worldwide)
 - [Microsoft Intune](https://docs.microsoft.com/mem/intune/)
 - [Microsoft information protection](https://docs.microsoft.com/microsoft-365/compliance/protect-information?view=o365-worldwide) (MIP)
 - [Azure Sentinel](https://docs.microsoft.com/azure/sentinel/) 
@@ -275,7 +276,7 @@ Des exemples de journaux Microsoft 365 accessibles via d’autres API sont les s
 - [Suivi des messages Exchange](https://docs.microsoft.com/powershell/module/exchange/get-messagetrace)
 - Systèmes de menace/UEBA présentés ci-dessus (par exemple, Azure AD Identity Protection, Microsoft Cloud App Security, Microsoft Defender for Endpoint, etc.)
 - [Protection des informations Microsoft](https://docs.microsoft.com/microsoft-365/compliance/data-classification-activity-explorer?view=o365-worldwide)
-- [Microsoft Defender pour point de terminaison](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/api-power-bi)
+- [Microsoft Defender pour point de terminaison](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/api-power-bi)
 - [Microsoft Graph](https://graph.microsoft.com)
 
 Il est important d’identifier d’abord toutes les sources de journal requises pour un programme de sécurité et de conformité. Notez également que les différents journaux ont des limites de rétention en ligne différentes. 
@@ -284,7 +285,7 @@ Du point de vue de la délégation d’administration, la plupart des journaux d
 
 Diagramme de niveau supérieur :
 
-![diagramme de haut niveau du flux de journal](../media/solutions-architecture-center/identity-beyond-illustration-4.png)  
+![diagramme des sources de journal pour un programme de sécurité et de conformité](../media/solutions-architecture-center/identity-beyond-illustration-4.png)  
 
 Le diagramme ci-dessus représente les fonctionnalités intégrées permettant d’envoyer des journaux aux événements Hub et/ou Azure Storage et/ou Azure log Analytics. Tous les systèmes ne le sont pas encore. Toutefois, il existe d’autres approches pour envoyer ces journaux au même référentiel. Par exemple, reportez-vous à [la rubrique protection de vos équipes avec Azure Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/protecting-your-teams-with-azure-sentinel/ba-p/1265761).
 

@@ -11,25 +11,25 @@ ms.service: o365-administration
 search.appverid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: 6e4038982f396bbd427273225c2a3d1a9f866252
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: d87a52bc6aca2f033a6e0d26a8c9c0e167908759
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948125"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906964"
 ---
 # <a name="topic-center-overview-preview"></a>Présentation du centre de rubriques (aperçu)
 
 > [!Note] 
-> Le contenu de cet article est destiné à Project cortex privé preview. Pour [plus d’informations sur le projet cortex](https://aka.ms/projectcortex).
+> Le contenu de cet article est destiné à Project cortex privé preview. [En savoir plus sur le Projet cortex](https://aka.ms/projectcortex).
 
 Le centre de rubrique est un site SharePoint moderne qui sert de centre de connaissances pour votre organisation. Il est créé lors de la configuration de la [gestion des connaissances](set-up-knowledge-network.md) dans le centre d’administration 365 de Microsoft.
 
-Via le Centre des rubriques, les utilisateurs disposant des autorisations appropriées peuvent effectuer les opérations suivantes :
+Le centre de la rubrique dispose d’une page d’accueil par défaut où vous pouvez voir les rubriques auxquelles vous avez été connecté ou que vous avez suggéré de vous connecter. Les utilisateurs disposant des autorisations appropriées peuvent également :
 
-- Confirmer ou refuser des rubriques découvertes
 - Créer une page de rubrique
-- Modifier une page de rubrique existante
+- Confirmer ou rejeter les rubriques suggérées
+- Modifier et publier des modifications apportées à une page de rubrique
 
 > [!Note] 
 > Vous pouvez en savoir plus sur chaque tâche dans [utilisation des rubriques dans le Centre des rubriques](work-with-topics.md).
@@ -44,14 +44,26 @@ Votre centre de rubrique est créé lors de la configuration de la gestion des c
 
 2. Sur la page **connecter des personnes à la connaissance** , dans la section **en un clin d’œil** , consultez l’adresse du Centre des **rubriques** pour l’URL du site.
 
-## <a name="permissions-to-use-the-topic-center"></a>Autorisations d’utilisation du centre de la rubrique
+## <a name="home-page"></a>Page d’accueil
 
-Pour travailler dans le centre de la rubrique, vous devez disposer des autorisations requises. Votre administrateur peut attribuer ces autorisations aux utilisateurs lors de la configuration de la [gestion des connaissances](set-up-knowledge-network.md), ou les nouveaux utilisateurs peuvent être ajoutés par la [suite](give-user-permissions-to-the-topic-center.md) par un administrateur via le centre d’administration Microsoft 365.
+Pour afficher le centre de la rubrique, vous devez disposer des autorisations d’affichage des rubriques et des expériences. Votre administrateur peut attribuer ces autorisations aux utilisateurs lors de la configuration de la [gestion des connaissances](set-up-knowledge-network.md), ou les nouveaux utilisateurs peuvent être ajoutés par la [suite](give-user-permissions-to-the-topic-center.md) par un administrateur via le centre d’administration Microsoft 365.
+
+Sur la page d’accueil 
+- **Afficher les rubriques** : afficher les expériences. Ainsi, vous pouvez voir les rubriques de l’organisation et obtenir des commentaires sur les sujets où vous avez été connecté :
+1. Connexions suggérées : rubriques où ma connexion a été suggérée
+2. Connexions confirmées : rubriques où je suis épinglé sur le sujet ou j’ai confirmé que mes rubriques de connexion seront déplacées de la section suggestion vers confirmée lorsque je confirme une connexion suggérée.
+Une fois que je suis épinglé, les modifications apportées à la page de rubrique peuvent être réalisées pour répartir ma connexion.
+
+- **Créer et modifier des rubriques** : une nouvelle rubrique est disponible et vous pouvez modifier des pages
+
+
+## <a name="permissions-to-use-the-manage-topics-capability-topic-center"></a>Autorisations d’utilisation du centre de la rubrique gérer les rubriques Capability
+
+Pour travailler dans la section gérer les rubriques du Centre des rubriques, vous devez disposer des autorisations requises. Votre administrateur peut attribuer ces autorisations aux utilisateurs lors de la configuration de la [gestion des connaissances](set-up-knowledge-network.md), ou les nouveaux utilisateurs peuvent être ajoutés par la [suite](give-user-permissions-to-the-topic-center.md) par un administrateur via le centre d’administration Microsoft 365.
 
 Les utilisateurs du Centre des rubriques peuvent disposer de deux jeux d’autorisations :
 
-- **Créer et modifier des rubriques**: créer des rubriques ou mettre à jour le contenu de la rubrique, comme la description, les documents et les personnes associées. Affectez cette autorisation aux experts techniques qui sont chargés de consulter les pages des rubriques.
-- **Gérer les rubriques**: utilisez le tableau de bord de rubrique pour consulter les rubriques dans l’organisation. Les utilisateurs peuvent effectuer des actions telles que la confirmation et le rejet des rubriques non confirmées.
+- **Gérer les rubriques** : utilisez le tableau de bord de rubrique pour consulter les rubriques dans l’organisation. Les utilisateurs peuvent effectuer des actions telles que la confirmation et le rejet des rubriques non confirmées.
 
 Un utilisateur peut recevoir les deux ensembles d’autorisations, ou un seul si nécessaire. 
 

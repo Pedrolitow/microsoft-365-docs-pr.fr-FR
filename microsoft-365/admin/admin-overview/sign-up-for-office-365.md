@@ -27,35 +27,35 @@ search.appverid:
 ms.assetid: 9b23c065-eef9-4bf7-acf5-127eb46d5e67
 ROBOTS: NOINDEX
 description: 'Découvrez ce que vous devez savoir avant de passer par le processus d’inscription pour Office 365. '
-ms.openlocfilehash: 0e5e4d89811807bfdb1bb71fb213973bdba075e2
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 7cbbcecdf3520ce5f8bd266100c3934a9cd7a664
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646630"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906274"
 ---
 # <a name="how-to-sign-up---admin-help"></a>Comment s’inscrire à l’aide de l’administrateur
 
 ::: moniker range="o365-worldwide"
 
-Inscrivez-vous à Microsoft 365 pour les entreprises afin que votre équipe puisse commencer à utiliser les versions les plus récentes de Word, Excel, PowerPoint et d’autres programmes Office dans votre entreprise.
+Inscrivez-vous à Microsoft 365 pour entreprise afin que votre équipe puisse commencer à utiliser les versions les plus récentes de Word, Excel, PowerPoint et d’autres programmes Office.
   
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-Inscrivez-vous à Microsoft 365 pour les entreprises afin que votre équipe puisse commencer à utiliser les versions les plus récentes de Word, Excel, PowerPoint et d’autres programmes Office dans votre entreprise.
+Inscrivez-vous à Microsoft 365 pour les entreprises afin que votre équipe puisse commencer à utiliser les versions les plus récentes de Word, Excel, PowerPoint et d’autres programmes Office.
   
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-Office 365 géré par 21Vianet est conçu pour répondre aux besoins des services Cloud sécurisés, fiables et évolutifs en Chine. Ce service fonctionne avec la technologie pour laquelle Microsoft a octroyé une licence à 21Vianet. Microsoft ne fonctionne pas avec le service lui-même. 21Vianet fonctionne, fournit et gère la remise du service. 21Vianet est le fournisseur de services Internet Data Center le plus volumineux en Chine, qui fournit des services d’hébergement, de services réseau gérés et d’infrastructure informatique en nuage. En utilisant les licences Microsoft, 21Vianet exploite les centres de données Microsoft locaux pour vous permettre d’utiliser les services Microsoft tout en conservant les données en Chine. 21Vianet fournit également vos services d’abonnement et de facturation, ainsi que la prise en charge.
+Office 365 géré par 21Vianet est conçu pour répondre aux besoins de services cloud sécurisés, fiables et évolutifs en Chine. Ce service fonctionne avec la technologie pour laquelle Microsoft a octroyé une licence à 21Vianet. Microsoft ne fonctionne pas avec le service lui-même. 21Vianet fonctionne, fournit et gère la remise du service. 21Vianet est le fournisseur de services Internet Data Center le plus volumineux en Chine, qui fournit des services d’hébergement, de services réseau gérés et d’infrastructure informatique en nuage. En utilisant les licences Microsoft, 21Vianet exploite les centres de données Microsoft locaux pour vous permettre d’utiliser les services Microsoft tout en conservant les données en Chine. 21Vianet fournit également vos services d’abonnement et de facturation, ainsi que la prise en charge.
   
 > [!NOTE]
 > Ces services sont soumis au droit chinois.
   
-Lorsque vous vous inscrivez à Office 365 géré par 21Vianet, votre équipe peut commencer à utiliser les versions les plus récentes de Word, Excel, PowerPoint et d’autres programmes Office dans votre entreprise.
+Inscrivez-vous à Office 365 géré par 21Vianet afin que votre équipe puisse commencer à utiliser les versions les plus récentes de Word, Excel, PowerPoint et d’autres programmes Office.
   
 Vous êtes prêt à vous inscrire ? [Sélectionnez un plan](https://products.office.com/zh-cn/business/compare-office-365-for-business-plans).
   
@@ -72,7 +72,7 @@ Visionnez une courte vidéo sur le choix d’un plan Microsoft 365 pour les entr
 
 Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
-Vous avez besoin d'aide pour faire votre choix ? Des conseillers techniques sont disponibles pour répondre à vos questions. Nous allons simplement [comparer tous les produits](https://products.office.com/compare-all-microsoft-office-products?tab=2) et choisir l’une des options de support de contact dans la partie gauche de la page.
+Vous avez besoin d’aide pour choisir un plan ? Des conseillers techniques sont disponibles pour répondre à vos questions. Accédez à [comparer tous les produits](https://products.office.com/compare-all-microsoft-office-products?tab=2) et choisissez l’une des options de support de contact dans la partie gauche de la page.
   
 ::: moniker-end
 
@@ -81,7 +81,7 @@ Vous avez besoin d'aide pour faire votre choix ? Des conseillers techniques sont
 
 Avant de procéder à l’achat, soumettez-vous au plan de votre inscription. Cela vous évitera de rencontrer des difficultés croissantes par la suite.
   
-Vous avez besoin d'aide pour faire votre choix ? Des conseillers techniques sont disponibles pour répondre à vos questions. Nous allons simplement [comparer tous les produits](https://products.office.com/compare-all-microsoft-office-products?tab=2) et choisir l’une des options de support de contact dans la partie gauche de la page. 
+Vous avez besoin d’aide pour choisir un plan ? Des conseillers techniques sont disponibles pour répondre à vos questions. Nous allons simplement [comparer tous les produits](https://products.office.com/compare-all-microsoft-office-products?tab=2) et choisir l’une des options de support de contact dans la partie gauche de la page. 
   
 ::: moniker-end
 
@@ -96,8 +96,8 @@ Vous n’avez pas besoin d’annuler votre version d’évaluation. Si vous n’
 
 Regardez une courte vidéo illustrant le processus d’inscription.<br><br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ] 
- 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
@@ -115,16 +115,16 @@ Vous n’avez pas besoin d’annuler votre version d’évaluation. Si vous n’
 
 - **Adresse et informations de contact pour votre abonnement :**
 
-  - **Pays/région** dans lequel les services seront utilisés. Vous ne **pourrez pas** modifier ces informations par la suite, même dans le cadre du processus d'inscription. Vous devrez réexécuter l'Assistant d'inscription.
+  - **Pays** où les services seront utilisés. Vous **ne** serez pas en mesure de modifier le pays plus tard, même pendant le processus d’inscription. vous devrez redémarrer l’Assistant inscription.
 
   - **Adresse de courrier** et **numéro de téléphone** pour nous permettre de vous contacter le cas échéant en relation avec votre abonnement. Par exemple, si vous oubliez votre mot de passe, ces informations nous permettent de vous envoyer un mot de passe temporaire. Les informations de facturation sont également envoyées à l'adresse de courrier que vous spécifiez.
 
     > [!NOTE]
     > L’adresse de messagerie que vous entrez ici est différente de votre adresse de messagerie Microsoft 365 (votre nom de connexion, ci-dessous). Comme nous envoyons également les informations de facturation à cette adresse, nous vous recommandons d'utiliser une adresse de courrier pouvant recevoir les courriers professionnels.
   
-- **Nom de connexion (ID d’utilisateur) :** Il s’agit de l’adresse de messagerie initiale de Microsoft 365, qui vous permet de vous lancer rapidement.
+- **Nom de connexion (ID d’utilisateur) :** Cet ID d’utilisateur devient votre adresse de messagerie initiale de Microsoft 365 pour vous aider à démarrer rapidement.
 
-    Il s’agit de l’adresse de messagerie que vous utilisez pour vous connecter. Par exemple, si le nom de votre entreprise est Fourth Coffee, vous pouvez choisir l'identifiant utilisateur rene@fourthcoffee.onmicrosoft.com.
+    Cet ID d’utilisateur est l’adresse de messagerie que vous utilisez pour vous connecter. Par exemple, si le nom de votre entreprise est Fourth Coffee, vous pouvez choisir l'identifiant utilisateur rene@fourthcoffee.onmicrosoft.com.
 
     La plupart des utilisateurs ajoutent leur propre domaine personnalisé peu après leur inscription afin qu’ils puissent commencer à recevoir des courriers électroniques. Par exemple, si vous avez un domaine personnalisé nommé fourthcoffee.com, vous pouvez définir l'adresse de courrier rene@fourthcoffee.com.
 

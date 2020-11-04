@@ -11,27 +11,29 @@ ms.collection:
 - M365-collaboration
 - m365solution-securecollab
 - m365solution-overview
-ms.custom: ''
+ms.custom:
+- M365solutions
+- seo-marvel-jun2020
 f1.keywords: NOCSH
-description: Découvrez comment configurer teams pour protéger vos données en fonction de leur sensibilité.
-ms.openlocfilehash: 5cf4937a79fdf33e160432c740504ec84d196585
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+description: Découvrez comment configurer la collaboration de contenu sécurisé dans teams pour protéger vos données en fonction de leur sensibilité.
+ms.openlocfilehash: 310605d0db84e33be1d5fdc925fadcfcdf9dddaf
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843539"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906798"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365"></a>Configurer la collaboration sécurisée avec Microsoft 365
 
 La possibilité de partager facilement des informations avec les personnes appropriées tout en empêchant le surPartage est essentielle au succès d’une organisation. Cela inclut la possibilité de partager des données sensibles en toute sécurité avec uniquement les personnes qui doivent y accéder. En fonction du projet, il peut s’agir de partager des données sensibles avec des personnes extérieures à votre organisation.
 
-Ce guide de solution comprend deux composants qui vous aident à :
+Cette aide sur les solutions de collaboration comprend deux composants qui vous aident à :
 - Déployer Microsoft teams avec le niveau de protection approprié pour chaque projet
 - Configurer le partage externe avec les paramètres de sécurité appropriés pour chaque projet
 
 ![Déployer teams avec une protection appropriée et configurer le partage externe avec les paramètres de sécurité appropriés](..\media\solutions-architecture-center\secure-collaboration-overview.png)
 
-Si les outils de collaboration polyvalents et faciles à utiliser ne sont pas disponibles, les utilisateurs collaborent souvent en utilisant des documents de messagerie. Il s’agit d’une méthode de collaboration laborieuse et sujette aux erreurs, qui peut augmenter le risque d’un partage d’informations inapproprié. Si les utilisateurs trouvent des informations de partage trop difficiles, ils peuvent revenir à l’utilisation de produits grand public qui ne sont pas régis par ce dernier. Cela peut poser un risque encore plus élevé.
+Si les outils de collaboration de contenu polyvalents et faciles à utiliser ne sont pas disponibles, les utilisateurs collaborent souvent en utilisant des documents de messagerie. Il s’agit d’une méthode de collaboration laborieuse et sujette aux erreurs, qui peut augmenter le risque d’un partage d’informations inapproprié. Si les utilisateurs trouvent des informations de partage trop difficiles, ils peuvent revenir à l’utilisation de produits grand public qui ne sont pas régis par ce dernier. Cela peut poser un risque encore plus élevé.
 
 Avec Microsoft 365, vous pouvez déployer teams avec une variété de configurations qui vous aident à :
 
@@ -62,7 +64,7 @@ Pour configurer Secure collabration, vous utilisez les fonctionnalités et fonct
 
 | Produit ou composant | Fonctionnalité | Licence |
 |:-------|:-----|:-------|
-| Microsoft Defender pour Office 365 | Pièces jointes fiables pour SPO, OneDrive et Teams ; Documents approuvés ; Liens fiables pour teams    | Microsoft 365 E1, E3 et E5 |
+| Microsoft Defender pour Office 365 | Pièces jointes fiables pour SPO, OneDrive et Teams ; Documents approuvés ; Liens fiables pour teams    | Microsoft 365 E1, E3 et E5 |
 | SharePoint    | Stratégies de partage de sites et de fichiers, autorisations de partage de site, liens de partage, demandes d’accès, paramètres de partage du site invité | Microsoft 365 E1, E3 et E5 |
 | Microsoft Teams   | Accès invité, teams Private, Private Channels | Microsoft 365 E1, E3 et E5 |
 | Conformité Microsoft 365  | Étiquettes de confidentialité    | Microsoft 365 E3 et E5 |

@@ -1,5 +1,5 @@
 ---
-title: Utilisation de l’inscription en libre-service au sein de votre organisation
+title: Utilisation de l’inscription en libre-service dans votre organisation
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -19,17 +19,17 @@ ms.custom:
 search.appverid:
 - MET150
 ms.assetid: 4f8712ff-9346-4c6c-bb63-a21ad7a62cbd
-description: Découvrez les programmes libre-service de Microsoft 365 self-service, tels que Microsoft Power Apps, Microsoft Flow et Dynamics 365 for finance.
-ms.openlocfilehash: 8e8ed80cc24e3c6ec0a4a9d408d202495de52adb
-ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
+description: Découvrez la connexion en libre-service de Microsoft 365 et les programmes libre-service disponibles tels que Microsoft Power Apps, Microsoft Flow et Dynamics 365 for finance.
+ms.openlocfilehash: 21e41661141a817a1751c80608035d839d2e3952
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324479"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906572"
 ---
-# <a name="using-self-service-sign-up-in-your-organization"></a>Utilisation de l’inscription en libre-service au sein de votre organisation
+# <a name="using-self-service-sign-up-in-your-organization"></a>Utilisation de l’inscription en libre-service dans votre organisation
 
-En libre-service, les utilisateurs de votre organisation peuvent facilement s’inscrire aux services en ligne de Microsoft. Nous appelons ce processus de connexion en libre-service, car vos utilisateurs peuvent s’inscrire pour utiliser les services payés par votre abonnement ou utiliser des services gratuits, sans vous demander de prendre des mesures pour leur compte.
+L’inscription en libre-service permet aux utilisateurs de votre organisation de s’inscrire plus facilement aux services en ligne de Microsoft. Nous appelons ce processus d’inscription en libre-service, car vos utilisateurs peuvent s’inscrire pour utiliser les services payés par votre abonnement ou utiliser des services gratuits, sans vous demander de prendre des mesures pour leur compte.
   
 ## <a name="how-self-service-sign-up-works"></a>Fonctionnement de l’inscription en libre-service
 
@@ -44,9 +44,8 @@ L’exemple suivant décrit le fonctionnement de l’auto-inscription pour un é
 
 Vous trouverez ci-dessous les programmes libre-service actuellement disponibles. Cette liste sera mise à jour au fur et à mesure que de nouveaux programmes seront ajoutés.
   
-|||||
+| Programme <br/> | Description <br/> | Informations supplémentaires <br/> | Site Web pour l’inscription en libre-service <br/> |
 |:-----|:-----|:-----|:-----|
-|**Programme** <br/> |**Description** <br/> |**Informations supplémentaires** <br/> |Site Web pour l’inscription en libre-service * * * * <br/> |
 |Office 365 a1 * * * <br/> |Tout étudiant ou enseignant peut utiliser une adresse de messagerie scolaire pour s’inscrire gratuitement à Office 365 et obtenir des applications Office pour le Web, 1 to d’espace de stockage OneDrive sur le Cloud et SharePoint Online pour les sites de cours, d’équipe et de projet.  <br/> |[FAQ technique sur l’éducation Office 365](https://go.microsoft.com/fwlink/p/?LinkId=536625) <br/> |[Office 365 Éducation](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |
 |**Office 365 a1 plus** <br/> |Les étudiants et enseignants éligibles peuvent s’inscrire à Office 365 a1 plus, ce qui inclut tous les éléments mentionnés ci-dessus, ainsi que les applications Microsoft 365 pour les entreprises. Les applications Microsoft 365 pour Enterprise sont des logiciels de productivité, notamment Word, PowerPoint, Excel, Outlook, OneNote, Publisher, Access et Skype entreprise, qui est installé sur votre ordinateur de bureau ou portable.  <br/> |[FAQ technique sur l’éducation Office 365](https://go.microsoft.com/fwlink/p/?LinkId=536625) <br/> |[Office 365 Éducation](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |
 |**Power BI** <br/> |Power BI permet aux utilisateurs de visualiser des données, de partager des découvertes et de collaborer de façon intuitive. <br/> Si votre organisation vous abonne déjà, vous pouvez également consulter la rubrique « Power BI Pro Individual User Trial », qui offre aux utilisateurs un accès limité et gratuit à des fonctionnalités avancées.  <br/> |[Power BI dans votre organisation](https://go.microsoft.com/fwlink/p/?LinkId=536626) <br/> |[Microsoft Power BI](https://go.microsoft.com/fwlink/p/?LinkId=536629) <br/> |

@@ -14,12 +14,12 @@ ms.collection:
 - m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 2d1316927124b1ce03910190922fa0804853ae4b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 1bf06c605290dc94f64da6c2aabca3683c234c9a
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845275"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906750"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365"></a>Déployer les fonctionnalités de protection contre les menaces sur Microsoft 365
 
@@ -53,9 +53,9 @@ L’illustration suivante représente un chemin d’accès recommandé pour le d
 |Solution/fonctionnalités  |Description  |
 |---------|---------|
 |Authentification multifacteur et accès conditionnel     |Protégez-vous contre les identités et les appareils compromis. Commencez par cette protection, car elle est fondamentale. La configuration recommandée dans ce guide inclut la protection des identités Azure AD comme condition préalable.     |
-|Microsoft Defender pour l’identité     |  Solution de sécurité basée sur le Cloud qui tire parti de vos signaux Active Directory sur site pour identifier, détecter et examiner les menaces avancées, les identités compromises et les actions malveillantes dirigées vers votre organisation. Concentrez-vous sur Microsoft Defender pour Identity Next, car il protège votre infrastructure sur local et votre infrastructure cloud, ne dispose d’aucune dépendance ou prérequis, et peut vous offrir des avantages immédiats.       | 
-|Microsoft Defender pour Office 365     | Protège votre organisation contre les menaces malveillantes posées par les messages électroniques, les liens (URL) et les outils de collaboration. Protections contre les programmes malveillants, le hameçonnage, l’usurpation d’identité et d’autres types d’attaques. La configuration de Microsoft Defender pour Office 365 est recommandée dans la mesure où le contrôle des modifications, la migration des paramètres du système en place et d’autres considérations peuvent mettre plus de temps à déployer. <br><br>Remarque : Veillez à configurer les fonctionnalités de protection contre les menaces incluses dans tous les abonnements Office 365 (Exchange Online Protection).       |
-|Microsoft Defender pour point de terminaison    | Une plateforme de protection des points de terminaison qui permet de prévenir, de détecter, d’examiner et de répondre aux menaces avancées.  Le déploiement de Defender pour le point de terminaison peut prendre un certain temps, mais la configuration peut être réalisée en parallèle avec d’autres fonctionnalités.   |
+|Microsoft Defender pour identité     |  Solution de sécurité basée sur le Cloud qui tire parti de vos signaux Active Directory sur site pour identifier, détecter et examiner les menaces avancées, les identités compromises et les actions malveillantes dirigées vers votre organisation. Concentrez-vous sur Microsoft Defender pour Identity Next, car il protège votre infrastructure sur local et votre infrastructure cloud, ne dispose d’aucune dépendance ou prérequis, et peut vous offrir des avantages immédiats.       | 
+|Microsoft Defender pour Office 365     | Protège votre organisation contre les menaces malveillantes posées par les messages électroniques, les liens (URL) et les outils de collaboration. Protections contre les programmes malveillants, le hameçonnage, l’usurpation d’identité et d’autres types d’attaques. La configuration de Microsoft Defender pour Office 365 est recommandée dans la mesure où le contrôle des modifications, la migration des paramètres du système en place et d’autres considérations peuvent mettre plus de temps à déployer. <br><br>Remarque : Veillez à configurer les fonctionnalités de protection contre les menaces incluses dans tous les abonnements Office 365 (Exchange Online Protection).       |
+|Microsoft Defender pour point de terminaison    | Une plateforme de protection des points de terminaison qui permet de prévenir, de détecter, d’examiner et de répondre aux menaces avancées.  Le déploiement de Defender pour le point de terminaison peut prendre un certain temps, mais la configuration peut être réalisée en parallèle avec d’autres fonctionnalités.   |
 |Microsoft Cloud App Security     |   Un courtier en matière de sécurité d’accès au Cloud pour la découverte, l’enquête et la gouvernance. Vous pouvez activer Microsoft Cloud App Security dès le début pour commencer à collecter des données et des informations. L’implémentation d’informations et d’autres protections ciblées dans vos applications SaaS implique une planification et peut prendre plus de temps.       | 
 
 > [!TIP]
@@ -77,5 +77,3 @@ Pour vous assurer que votre organisation dispose de la meilleure protection poss
 Vos fonctionnalités de protection contre les menaces peuvent être configurées en parallèle, de sorte que si vous avez plusieurs équipes de sécurité réseau responsables de différents services, ils peuvent configurer les fonctionnalités de protection de votre organisation en même temps. Le diagramme suivant illustre le processus de haut niveau pour le déploiement des fonctionnalités de protection contre les menaces. 
 
 ![Processus de déploiement des fonctionnalités de protection contre les menaces](../media/solutions-architecture-center/deploy-threat-protection-across-m365-grid.png) 
-
-

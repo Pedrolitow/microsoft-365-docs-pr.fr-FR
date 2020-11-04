@@ -14,18 +14,18 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
-description: À partir du 14 septembre 2019, les banques des 31 pays de l’espace économique européen sont tenues de vérifier l’identité de la personne qui effectue un achat en ligne avant que le paiement ne puisse être traité.
+description: Depuis le 14 septembre 2019, les banques des 31 pays de l’espace économique européen sont tenues de vérifier l’identité de la personne qui effectue un achat en ligne avant que le paiement ne puisse être traité. "
 keywords: services de paiement directive 2, authentification client renforcée, authentification multifacteur
-ms.openlocfilehash: fc8784949cdacea10957660c99795b4ade0f9f7a
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: d6564a8c6d31bd0758f1084e7ee9b6857aed034e
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638422"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906608"
 ---
 # <a name="payment-services-directive-2-and-strong-customer-authentication-for-commercial-customers"></a>Services de paiement directive 2 et authentification client forte pour les clients commerciaux
 
-À partir du 14 septembre 2019, les banques des 31 pays de l’espace économique européen sont tenues de vérifier l’identité de la personne qui effectue un achat en ligne avant que le paiement ne puisse être traité. Cette vérification nécessite une authentification multifacteur afin de garantir la sécurité et la protection de vos achats en ligne. La date de cette exigence de vérification sera retardée pour certains pays. 
+Depuis le 14 septembre 2019, les banques des 31 pays de l’espace économique européen sont tenues de vérifier l’identité de la personne qui effectue un achat en ligne avant que le paiement ne puisse être traité. Cette vérification nécessite une authentification multifacteur afin de garantir la sécurité et la protection de vos achats en ligne. La date de cette exigence de vérification sera retardée pour certains pays.
 
 Pour plus d’informations, consultez [la rubrique Microsoft FAQ sur les services de paiement directive 2 et authentification client renforcée](https://support.microsoft.com/help/4517854/microsoft-account-open-banking-customer-authentication).
 
