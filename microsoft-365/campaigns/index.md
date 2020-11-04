@@ -25,61 +25,67 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Microsoft 365 pour les campagnes
-ms.openlocfilehash: 752e62badc0a7af4c4fd81d8f11680ddbe741b50
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 57997af310eb07c61b5f2cdb03f24b5e443d6e2e
+ms.sourcegitcommit: 371249d3dde12092b820cd11ed3e02b31e88636a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527285"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48897292"
 ---
 <a name="microsoft-365-for-campaigns"></a>Microsoft 365 pour les campagnes
 ===========================
 
 Dans notre monde actuel, le maintien de la sécurité des données et des communications est une priorité, notamment pour les campagnes politiques, les pratiques médicales et juridiques, ainsi que de nombreuses autres entreprises. Microsoft 365 pour les campagnes inclut un série de recommandations conçues pour vous aider à protéger vos données. Cette bibliothèque inclut de l’aide pour configurer et utiliser cet environnement recommandé, même si vous n’êtes pas une campagne.
 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3clbH]
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3clbH] 
+<a name="what-is-microsoft-365-for-campaigns"></a>Qu’est-ce que Microsoft 365 pour les campagnes ?
+------------------------------------
 
+Il s’agit d’une configuration sécurisée recommandée qui inclut Microsoft 365 Business Premium afin de vous permettre d’effectuer les opérations suivantes :
 
-**Qu’est-ce que Microsoft 365 pour les campagnes ?** Il s’agit d’une configuration sécurisée recommandée qui inclut Microsoft 365 Business Premium afin de vous permettre d’effectuer les opérations suivantes :
-- Utiliser les outils de productivité et de collaboration professionnels approuvés, tels que Outlook, Word, Excel et d’autres produits Office 
-- Protéger vos fichiers professionnels sur tous vos appareils iOS, Android et Windows 10 grâce à une sécurité de qualité professionnelle facile à gérer 
-- Appliquer une protection supplémentaire pour les comptes d’utilisateur et l’identité 
+- Utiliser les outils de productivité et de collaboration professionnels approuvés, tels que Outlook, Word, Excel et d’autres produits Office.
+- Protéger vos fichiers professionnels sur tous vos appareils iOS, Android et Windows 10 grâce à une sécurité de qualité professionnelle facile à gérer.
+- Appliquer une protection supplémentaire pour les comptes d’utilisateur et l’identité.
 
 ![Microsoft 365 Business Premium protège vos outils de productivité, vos outils de collaboration, le stockage de fichiers, la messagerie électronique, les appareils et l’identité](../media/M365-WhatIsIt-SecurityFocus.png)
 
 Les campagnes de choix fédérales aux États-Unis éligibles à un tarif spécial pour Microsoft 365 Business Premium peuvent bénéficier de ces instructions pour configurer une sécurité accrue et découvrir comment collaborer en toute sécurité.
 
 Cette bibliothèque comprend les éléments suivants :
+
 - Instructions de configuration pour renforcer la sécurité.
 - Aide pour les utilisateurs à configurer des appareils pour un accès sécurisé.
 - Des conseils sur la collaboration et le partage sécurisés.
 
-Pour plus d’informations sur les fonctionnalités incluses, consultez [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business). 
-
+Pour plus d’informations sur les fonctionnalités incluses, consultez [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business).
 
 <a name="get-started"></a>Prise en main
 --------------------------
 
-![Roadmap](https://docs.microsoft.com/office/media/icons/walkthrough-map-blue.png) **Pour commencer, procédez comme suit :**  
+Pour commencer, procédez comme suit :
 
 - [Obtenir les campagnes Microsoft 365](get-microsoft-365-campaigns.md)
 - [Découvrez comment vos utilisateurs peuvent utiliser Microsoft 365](m365-campaigns-users.md)
 - [Configurer les campagnes Microsoft 365](microsoft-365-campaigns-setup-overview.md)
-
-
 
 <a name="solutions-for-your-campaign-or-small-business"></a>Solutions pour votre campagne ou petite entreprise
 --------------------------
 
 Une fois que vous avez configuré votre environnement Microsoft 365 sécurisé, vous pouvez utiliser les solutions suivantes pour commencer à travailler :
 
-|               |               |
+| Créer Teams pour la collaboration | Configurer des réunions en ligne |
 | ------------- | ------------- |
 | ![un site de communication SharePoint](../media/sm-m365-democracy-teams-collab.png) | ![une réunion en ligne](../media/m365-democracy-teams-meetings.png) |
-| **Créer Teams pour la collaboration**  Simplifier la communication et la collaboration avec des équipes spécifiques pour les membres du personnel, l’ensemble du personnel, les partenaires et les fournisseurs avec Microsoft Teams. [Créer votre équipe](create-teams-for-collaboration.md) | **Configurer des réunions en ligne**  Planifier une réunion avec l’audio, la vidéo et le partage avec Microsoft Teams. [Organiser une réunion](set-up-meetings.md) |
+| Collaborer avec des équipes pour le personnel clé, l'ensemble du personnel et les partenaires ou fournisseurs. [Créer votre équipe](create-teams-for-collaboration.md) | Planifier une réunion avec l’audio, la vidéo et le partage avec Microsoft Teams. [Organiser une réunion](set-up-meetings.md) |
+
+| Chiffrer ou étiqueter votre courrier électronique sensible | Créer un site de communication |
+| ------------- | ------------- |
 | ![Courrier électronique chiffré et étiqueté](../media/sm-m365-campaign-email-encrypt.png) | ![un site de communications SharePoint](../media/sm-m365-democracy-comms-site.png) |
-| **Chiffrer ou étiqueter votre courrier électronique sensible**  Utiliser les étiquettes de confidentialité et de chiffrement pour protéger les messages électroniques qui contiennent des informations confidentielles ou sensibles. [Envoyer un message électronique chiffré](send-encrypted-email.md) | **Créer un site de communication**  Partager des événements, des messages, des images et bien plus avec les membres de votre équipe dans un site de communications interne créé avec SharePoint. [Créer votre site](create-communications-site.md) |
-| ![partage d’un fichier dans Microsoft Teams](../media/m365-democracy-teams-sharefiles.png) | |
-| **Partager des fichiers et des vidéos**  Enregistrer vos fichiers et vidéos dans le cloud pour qu’ils soient accessibles à toutes les personnes appropriées. [Démarrer le partage](share-files-and-videos.md) | |
+| Utiliser les étiquettes de confidentialité et de chiffrement pour protéger les messages électroniques qui contiennent des informations confidentielles ou sensibles. [Envoyer un message électronique chiffré](send-encrypted-email.md) | Partager des événements, des messages, des images et bien plus avec les membres de votre équipe dans un site de communications interne créé avec SharePoint. [Créer votre site](create-communications-site.md) |
+
+| Partager des fichiers et des vidéos |
+| ------------- |
+| ![partage d’un fichier dans Microsoft Teams](../media/m365-democracy-teams-sharefiles.png) |
+| Enregistrer vos fichiers et vidéos dans le cloud pour qu’ils soient accessibles à toutes <br><br>les personnes appropriées. [Démarrer le partage](share-files-and-videos.md) |
 
