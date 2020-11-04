@@ -2,7 +2,7 @@
 title: Envoi manuel de messages à Microsoft pour analyse
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 ms.date: ''
@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Les administrateurs et les utilisateurs finaux peuvent apprendre à envoyer des messages électroniques (courrier marqué comme faux ou courrier incorrect) à Microsoft pour analyse.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6673dc7e7ac263ea9f734c002d0ffac410fadc07
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 68a0921f85e5b916cd53ebe84e4ea7d35e39967e
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202196"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877704"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>Envoi manuel de messages à Microsoft pour analyse
 
@@ -48,9 +48,9 @@ Si vous recevez un message transmis par le biais du filtrage du courrier indési
 
 1. Créez un message électronique vide avec l’un des destinataires suivants :
 
-   - **Courrier indésirable**: `junk@office365.microsoft.com`
+   - **Courrier indésirable** : `junk@office365.microsoft.com`
 
-   - **Hameçonnage**: `phish@office365.microsoft.com`
+   - **Hameçonnage** : `phish@office365.microsoft.com`
 
 2. Faites glisser et déposez le message de courrier indésirable dans le nouveau message. Cette opération permet d’enregistrer le message de courrier indésirable ou de hameçonnage en tant que pièce jointe dans le nouveau message. Ne copiez pas et ne collez pas le contenu du message ou transférez le message (nous avons besoin du message d’origine pour pouvoir inspecter les en-têtes des messages).
 

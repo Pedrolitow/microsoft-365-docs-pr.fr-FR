@@ -2,7 +2,7 @@
 title: Analyse des clients SMTP AUTH et rapports dans le tableau de bord de flux de messagerie
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 audience: ITPro
@@ -13,12 +13,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à utiliser le rapport et l’analyseur d’authentification SMTP dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité afin de surveiller les expéditeurs de messages électroniques de leur organisation qui utilisent SMTP authentifié (authentification SMTP) pour envoyer des messages électroniques.
-ms.openlocfilehash: 7ca673e5ecc92c28996a976c26a38ae570f16203
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 54798dfcad50c263705b027c879fdf71d0dabfba
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199240"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877560"
 ---
 # <a name="smtp-auth-clients-insight-and-report-in-the-security--compliance-center"></a>Clients d’authentification SMTP Insight and report dans le centre de conformité & Security
 
@@ -45,11 +45,11 @@ Par défaut, le rapport affiche les données des 7 derniers jours, mais les donn
 
 La section vue d’ensemble contient les graphiques suivants :
 
-- **Afficher les données par : volume d’envoi**: par défaut, le graphique indique le nombre de messages client SMTP AUTH qui ont été envoyés à partir de tous les domaines (**afficher les données pour : tous les domaines des expéditeurs** sont sélectionnés par défaut). Vous pouvez filtrer les résultats sur un domaine d’expéditeur spécifique en cliquant sur **afficher les données pour** et en sélectionnant le domaine de l’expéditeur dans la liste déroulante. Si vous pointez sur un point de données spécifique (jour), le nombre de messages s’affiche.
+- **Afficher les données par : volume d’envoi** : par défaut, le graphique indique le nombre de messages client SMTP AUTH qui ont été envoyés à partir de tous les domaines ( **afficher les données pour : tous les domaines des expéditeurs** sont sélectionnés par défaut). Vous pouvez filtrer les résultats sur un domaine d’expéditeur spécifique en cliquant sur **afficher les données pour** et en sélectionnant le domaine de l’expéditeur dans la liste déroulante. Si vous pointez sur un point de données spécifique (jour), le nombre de messages s’affiche.
 
   ![Affichage du volume d’envoi dans le rapport clients SMTP AUTH dans le centre de sécurité & conformité](../../media/mfi-smtp-auth-clients-report-sending-volume-view.png)
 
-- **Afficher les données par : utilisation de TLS**: le graphique indique le pourcentage d’utilisation TLS pour tous les messages client SMTP AUTH pendant la période sélectionnée. Ce graphique vous permet d’identifier et de prendre des mesures sur les utilisateurs et les comptes système qui utilisent encore des versions plus anciennes de TLS.
+- **Afficher les données par : utilisation de TLS** : le graphique indique le pourcentage d’utilisation TLS pour tous les messages client SMTP AUTH pendant la période sélectionnée. Ce graphique vous permet d’identifier et de prendre des mesures sur les utilisateurs et les comptes système qui utilisent encore des versions plus anciennes de TLS.
 
   ![Affichage de l’utilisation de TLS dans le rapport clients d’authentification SMTP dans le centre de sécurité & conformité](../../media/mfi-smtp-auth-clients-report-tls-usage-view.png)
 
@@ -59,16 +59,16 @@ Cliquez sur **demander un rapport** pour recevoir une version plus détaillée d
 
 ### <a name="details-table-view-for-the-smtp-auth-clients-report"></a>Vue de la table Détails pour le rapport clients SMTP AUTH
 
-Si vous cliquez sur **afficher les détails table**, les informations affichées dépendent du graphique que vous examinez :
+Si vous cliquez sur **afficher les détails table** , les informations affichées dépendent du graphique que vous examinez :
 
-- **Afficher les données par : volume d’envoi**: les informations suivantes sont affichées dans un tableau :
+- **Afficher les données par : volume d’envoi** : les informations suivantes sont affichées dans un tableau :
 
   - **Adresse de l’expéditeur**
   - **Nombre de messages**
 
   Si vous sélectionnez une ligne, les mêmes détails s’affichent dans un menu volant.
 
-- **Afficher les données par : utilisation de TLS**: les informations suivantes sont affichées dans un tableau :
+- **Afficher les données par : utilisation de TLS** : les informations suivantes sont affichées dans un tableau :
 
   - **Adresse de l’expéditeur**
   - **TLS 1.0%**<sup>\*</sup>
@@ -88,6 +88,6 @@ Cliquez sur **demander un rapport** pour recevoir une version plus détaillée d
 
 Pour revenir à l’affichage rapports, cliquez sur **afficher le rapport**.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 Pour plus d’informations sur les autres informations du tableau de bord de flux de messagerie, consultez [la rubrique mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).

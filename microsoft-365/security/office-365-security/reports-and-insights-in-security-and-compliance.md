@@ -2,7 +2,7 @@
 title: Smart Reports, Insights-Centre de conformité & Microsoft 365 Security
 f1.keywords:
 - NOCSH
-ms.author: deniseb
+ms.author: siosulli
 author: denisebmsft
 manager: dansimp
 ms.date: ''
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez les rapports intelligents et les informations disponibles dans le centre de sécurité & conformité, ainsi que la façon de les utiliser pour afficher et explorer les données et prendre des mesures rapides.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d6a73e93de79f346fb1bce8da23e25194d202191
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 384ae51a514c31c659ce80f30e0b8c09976ec44b
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845515"
+ms.locfileid: "48877348"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>Rapports intelligents et aperçus dans le Centre de sécurité et de conformité
 
@@ -60,7 +60,7 @@ Un grand nombre de rapports sont disponibles dans le centre de conformité & sé
 |**Rapports de conformité** <br/> Rapports FedRAMP, rapports sur la gouvernance, sur les risques et sur la conformité, rapports de gestion de la sécurité de l'information ISO et rapports d'audit et d'évaluation des contrôles de la société de services.|Dans le centre de sécurité & conformité, accédez **Service assurance** à \> **rapports de conformité de la** garantie de service.|[Planifier la sécurité & conformité dans Office 365](../../compliance/plan-for-security-and-compliance.md)|
 |
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 [Surveillance et affichage des rapports dans le centre de sécurité Microsoft 365](../mtp/monitoring-and-reporting.md)
   

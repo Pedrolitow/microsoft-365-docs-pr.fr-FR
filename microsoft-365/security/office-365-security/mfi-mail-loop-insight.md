@@ -2,7 +2,7 @@
 title: Résoudre les problèmes de boucles de courrier possibles
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 audience: ITPro
@@ -13,12 +13,12 @@ ms.assetid: cb801985-3c89-4979-9c18-17829a4cb563
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à utiliser la fonction de résolution des problèmes possibles dans le tableau de bord de flux de messagerie dans le centre de sécurité & Compliance pour identifier et corriger les boucles de messagerie au sein de leur organisation.
-ms.openlocfilehash: e868c020ae307ba490e85e5803f94a67a1a94057
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 15ad5c467d18ce3038bcb05db798a9b5a7c3e391
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198444"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877503"
 ---
 # <a name="fix-possible-mail-loop-insight-in-the-security--compliance-center"></a>Corriger les éventuelles boucles de courrier dans le centre de sécurité & conformité
 
@@ -34,13 +34,13 @@ La **fonctionnalité corriger la boucle de courrier possible** dans la zone **re
 Lorsque vous cliquez sur **afficher les détails** dans le widget, un lanceur apparaît avec davantage d’informations :
 
 - **Domaine**
-- **Nombre de messages**: vous pouvez cliquer sur **afficher les exemples de messages** pour afficher les résultats du [suivi](message-trace-scc.md) des messages pour un exemple de messages qui ont été affectés par la boucle.
-- **Type de domaine**«par exemple, faisant autorité ou ne faisant pas autorité.
-- **Enregistrement MX**: l’hôte (**serveur de messagerie**) et les valeurs de **priorité** de l’enregistrement MX pour le domaine.
-- **Raison** de la boucle et **Comment résoudre**: nous allons essayer d’identifier les scénarios de boucle de courrier les plus courants et de fournir les actions recommandées (le cas échéant) pour corriger la boucle.
+- **Nombre de messages** : vous pouvez cliquer sur **afficher les exemples de messages** pour afficher les résultats du [suivi](message-trace-scc.md) des messages pour un exemple de messages qui ont été affectés par la boucle.
+- **Type de domaine** «par exemple, faisant autorité ou ne faisant pas autorité.
+- **Enregistrement MX** : l’hôte ( **serveur de messagerie** ) et les valeurs de **priorité** de l’enregistrement MX pour le domaine.
+- **Raison** de la boucle et **Comment résoudre** : nous allons essayer d’identifier les scénarios de boucle de courrier les plus courants et de fournir les actions recommandées (le cas échéant) pour corriger la boucle.
 
 ![Fenêtre volante de détails qui apparaît après avoir cliqué sur Afficher les détails dans la boîte de message de correction possible](../../media/mfi-fix-possible-mail-loop-details.png)
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 Pour plus d’informations sur les autres informations du tableau de bord de flux de messagerie, consultez [la rubrique mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).

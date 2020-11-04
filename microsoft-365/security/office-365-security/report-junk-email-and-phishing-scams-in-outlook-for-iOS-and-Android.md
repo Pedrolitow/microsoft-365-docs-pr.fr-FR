@@ -2,7 +2,7 @@
 title: Signaler les messages de courrier indésirable et de hameçonnage dans Outlook pour iOS et Android
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 ms.date: ''
@@ -16,12 +16,12 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent découvrir les options de notification de courrier indésirable, non de courrier indésirable et de hameçonnage dans Outlook pour iOS et Android.
-ms.openlocfilehash: 23668a762301ee442bc805e62863079ee7ae6076
-ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+ms.openlocfilehash: 1c842ac5349f9c2804c637fa4c5598b06e8f489f
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48350854"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877290"
 ---
 # <a name="report-junk-and-phishing-email-in-outlook-for-ios-and-android-in-exchange-online"></a>Signaler le courrier indésirable et le hameçonnage dans Outlook pour iOS et Android dans Exchange Online
 
@@ -54,7 +54,7 @@ Pour les messages de la boîte de réception ou de tout autre dossier de message
 
    ![Signaler le courrier indésirable ou de hameçonnage](../../media/Android-report-junk-or-phishing.png)
 
-4. Dans la boîte de dialogue qui s’affiche, vous pouvez choisir **rapport** ou **non**. En sélectionnant **non merci**, si vous avez cliqué sur **courrier indésirable** , le message est déplacé dans le dossier courrier indésirable si vous avez cliqué sur **hameçonnage** le message est déplacé vers le dossier éléments supprimés. Sélectionnez **rapport** pour envoyer une copie du message à Microsoft.
+4. Dans la boîte de dialogue qui s’affiche, vous pouvez choisir **rapport** ou **non**. En sélectionnant **non merci** , si vous avez cliqué sur **courrier indésirable** , le message est déplacé dans le dossier courrier indésirable si vous avez cliqué sur **hameçonnage** le message est déplacé vers le dossier éléments supprimés. Sélectionnez **rapport** pour envoyer une copie du message à Microsoft.
 
    ![Signaler les options de signalement de courrier indésirable ou de hameçonnage](../../media/Android-junk-email-reporting-options.png)
 

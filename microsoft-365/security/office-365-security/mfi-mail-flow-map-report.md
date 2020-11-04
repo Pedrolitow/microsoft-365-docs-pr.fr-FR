@@ -1,8 +1,8 @@
 ---
-title: Carte du flux de messagerie
+title: Carte du flux de courriers
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 audience: ITPro
@@ -13,12 +13,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à utiliser la carte de flux de messagerie dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité pour visualiser et suivre la façon dont les messages circulent vers et depuis leur organisation via des connecteurs et sans utiliser de connecteurs.
-ms.openlocfilehash: 74cabb7f7b34be6248d18d71565c8a9729d7e38b
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: fc03f05db77c40dbf726692e6fb6069d587a5ffc
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199370"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877764"
 ---
 # <a name="mail-flow-map-in-the-security--compliance-center"></a>Carte de flux de messagerie dans le centre de sécurité & conformité
 
@@ -37,11 +37,11 @@ Cliquez sur le widget **carte de flux de messagerie** pour accéder au rapport d
 
 Les graphiques suivants sont disponibles dans l’affichage rapport :
 
-- **Afficher les données de : vue d’ensemble**: il s’agit fondamentalement d’un affichage plus large du widget. Si vous placez le curseur de la souris sur une couleur spécifique, le nombre de messages s’affiche pour ce type de connecteur.
+- **Afficher les données de : vue d’ensemble** : il s’agit fondamentalement d’un affichage plus large du widget. Si vous placez le curseur de la souris sur une couleur spécifique, le nombre de messages s’affiche pour ce type de connecteur.
 
   ![Vue d’ensemble dans le rapport de carte de flux de messagerie](../../media/mfi-mail-flow-map-report-overview.png)
 
-- **Afficher les données pour : Detail**: cette vue affiche des détails sur les connecteurs et les domaines de destination. Les principaux domaines expéditeur et destinataire sont répertoriés et les autres sont placés dans **d’autres**. Si vous placez le curseur de la souris sur une couleur et une section spécifiques, le nombre de messages s’affiche.
+- **Afficher les données pour : Detail** : cette vue affiche des détails sur les connecteurs et les domaines de destination. Les principaux domaines expéditeur et destinataire sont répertoriés et les autres sont placés dans **d’autres**. Si vous placez le curseur de la souris sur une couleur et une section spécifiques, le nombre de messages s’affiche.
 
   ![Affichage détaillé dans le rapport de carte de flux de messagerie](../../media/mfi-mail-flow-map-report-detail.png)
 

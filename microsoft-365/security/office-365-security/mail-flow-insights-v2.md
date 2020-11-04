@@ -2,7 +2,7 @@
 title: Informations sur le flux de messagerie dans le tableau de bord de flux de messagerie
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 audience: ITPro
@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Les administrateurs peuvent en savoir plus sur les informations et les rapports disponibles dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f9ac8b8b0d346d78af252a9e427d0ef2b1a4c4ea
-ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
+ms.openlocfilehash: d252b9d898d4ee5a0df854a871f821c2b02bb482
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48769017"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877776"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Informations sur le flux de courriers dans le Centre de sécurité et de conformité
 
@@ -76,6 +76,6 @@ Pour plus d’informations sur les autorisations dans le centre de sécurité & 
 
 ## <a name="where-to-find-the-mail-flow-dashboard"></a>Où trouver le tableau de bord de flux de messagerie ?
 
-Ouvrez le centre de sécurité & conformité à l’adresse <https://protection.office.com> , développez **flux de messagerie** , puis sélectionnez **tableau de bord** .
+Ouvrez le centre de sécurité & conformité à l’adresse <https://protection.office.com> , développez **flux de messagerie** , puis sélectionnez **tableau de bord**.
 
 Pour accéder directement au tableau de bord du flux de messagerie, ouvrez <https://protection.office.com/mailflow/dashboard> .

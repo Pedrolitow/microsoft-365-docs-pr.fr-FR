@@ -2,7 +2,7 @@
 title: Aperçu des messages transférés automatiquement
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 audience: ITPro
@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: Les administrateurs peuvent en savoir plus sur le rapport de messages transférés automatiquement dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité.
-ms.openlocfilehash: d4b772e6392e0af22e6bed475970f637ed03dcb1
-ms.sourcegitcommit: 1522a6471e0c5254a6d0f592e1f4dfacd1dd473a
+ms.openlocfilehash: 01a094b8531672708fc024e8ed0c5833786dbb0c
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "48245946"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877788"
 ---
 # <a name="auto-forwarded-messages-insight-in-the-security--compliance-center"></a>Aperçu des messages transmis automatiquement dans le centre de sécurité & conformité
 
@@ -31,14 +31,14 @@ La vue **messages transmis automatiquement** dans le [tableau de bord de flux de
 
 Lorsque vous cliquez sur le nombre de messages dans le widget, un volet flyout apparaît et affiche des informations supplémentaires sur les messages transférés automatiquement :
 
-- **Messages transférés automatiquement par les méthodes de transfert**:
+- **Messages transférés automatiquement par les méthodes de transfert** :
 
   - **Par les règles de flux de messagerie**
   - **Par les règles de boîte de réception**
-  - **Par transfert SMTP**: il s’agit du transfert automatique que les administrateurs peuvent configurer sur une boîte aux lettres, comme décrit dans [configurer le transfert du courrier pour une boîte aux lettres](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding).
+  - **Par transfert SMTP** : il s’agit du transfert automatique que les administrateurs peuvent configurer sur une boîte aux lettres, comme décrit dans [configurer le transfert du courrier pour une boîte aux lettres](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding).
   - Un lien vers le [rapport de transfert](view-mail-flow-reports.md#forwarding-report) pour plus de détails.
 
-- **Messages transférés automatiquement par les domaines et les utilisateurs**:
+- **Messages transférés automatiquement par les domaines et les utilisateurs** :
 
   - **5 principaux domaines transférés vers**
   - **Nouveaux domaines (semaine dernière)**

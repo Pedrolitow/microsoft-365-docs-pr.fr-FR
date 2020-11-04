@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Les clients Office 365 existants doivent soumettre une demande avant la date d’échéance de leur pays pour que leurs données Microsoft 365 services soient déplacées vers leur nouvelle région géographique.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7f8f25fcaf3e8beb59ca43ad260e2636cf0c4949
-ms.sourcegitcommit: d648356b27842e779921859480b1b405a1804c7c
+ms.openlocfilehash: b6ad699830389ef405b005bf8675a2bd0fb4f20b
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48361938"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877254"
 ---
 # <a name="how-to-request-your-data-move"></a>Procédure de demande d’un déplacement de données
 
@@ -44,14 +44,14 @@ Les clients Microsoft 365 éligibles peuvent demander la migration de leurs donn
 |Afrique du Sud  <br/> |25 juillet 2019  <br/> |30 juin 2020  <br/> |
 |Suisse, Liechtenstein  <br/> |10 décembre 2019  <br/> |30 juin 2020  <br/> |
 |Norvège  <br/> |15 avril 2020  <br/> |31 octobre 2020  <br/> |
-|Allemagne  <br/> |Vision  <br/> |Vision  <br/> |
+|Allemagne  <br/> |1er novembre 2020  <br/> |30 avril 2021  <br/> |
 
 ## <a name="how-to-request-a-move"></a>Procédure de demande d’un déplacement
 
-Les clients éligibles verront une page dans le [Centre d’administration 365 de Microsoft](https://aka.ms/365admin), qui leur permettra de demander que leurs données client principales soient déplacées vers leur nouvelle région de centre de données.  
+Les clients éligibles verront une page dans le centre d’administration 365 de Microsoft, qui leur permettra de demander que leurs données client principales soient déplacées vers leur nouvelle région de centre de données.  
   
-Pour accéder à la page dans le centre d’administration 365 de Microsoft, dans le volet de navigation à gauche, développez **paramètres**, puis cliquez sur paramètres de l' **organisation**.
-Sélectionnez l’onglet **profil d’organisation**, puis sélectionnez l’option **résidence des données**.
+Pour accéder à la page dans le centre d’administration 365 de Microsoft, dans le volet de navigation à gauche, développez **paramètres** , puis cliquez sur paramètres de l' **organisation**.
+Sélectionnez l’onglet **profil d’organisation** , puis sélectionnez l’option **résidence des données**.
   
 Vous ne verrez pas cette section si votre client n’est pas éligible au programme de déplacement de Microsoft 365.  Si votre organisation a des besoins en matière de résidence des données et que vous devez demander une migration, activez la case à cocher, puis **Enregistrez**.
   
@@ -69,7 +69,7 @@ Les déplacements peuvent prendre jusqu'à 24 mois à compter de la date d'éch�
 
 Depuis le 2020 janvier, les clients des pays Office 365 éligibles peuvent opter pour la migration des données du service de conversation Microsoft Teams.  Les clients ayant précédemment opté pour un déplacement de résidence de données auront également des équipes déplacer vers leur propre région de centre de données local.  Aucune action supplémentaire n’est requise par ces clients.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 [Transfert de données principales vers le nouveau centre de données Office 365 régions centres](moving-data-to-new-datacenter-geos.md)
 

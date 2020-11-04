@@ -2,7 +2,7 @@
 title: Rapport de domaine non accepté dans le tableau de bord de flux de messagerie
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 audience: ITPro
@@ -13,12 +13,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à utiliser le rapport de domaine non accepté dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité pour surveiller les messages provenant de votre organisation locale où le domaine de l’expéditeur n’est pas configuré dans Microsoft 365.
-ms.openlocfilehash: d05489ec4a6d670fc89b5d943b3e7061506b6fe8
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 06acacb79c826cb465b3fd28086a7df9d64eabdc
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199324"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877716"
 ---
 # <a name="non-accepted-domain-report-in-the-security--compliance-center"></a>Rapport de domaine non accepté dans le centre de sécurité & conformité
 
@@ -35,7 +35,7 @@ Microsoft 365 peut limiter ces messages si nous disposons de données pour prouv
 
 Si vous cliquez sur le graphique sur le widget de **domaine non accepté** , vous accédez au rapport de **domaine non accepté** .
 
-Par défaut, l’activité de tous les connecteurs concernés est affichée. Si vous cliquez sur **afficher les données pour**, vous pouvez sélectionner un connecteur spécifique dans la liste déroulante.
+Par défaut, l’activité de tous les connecteurs concernés est affichée. Si vous cliquez sur **afficher les données pour** , vous pouvez sélectionner un connecteur spécifique dans la liste déroulante.
 
 Si vous placez le curseur de la souris sur un point de données (jour) dans le graphique, vous verrez le nombre total de messages pour le connecteur.
 
@@ -49,7 +49,7 @@ Si vous cliquez sur **afficher la table des détails** dans un affichage de rapp
 - **Nom du connecteur entrant**
 - **Domaine de l’expéditeur**
 - **Nombre de messages**
-- **Exemples de messages**: ID de message d’un exemple de messages concernés.
+- **Exemples de messages** : ID de message d’un exemple de messages concernés.
 
 Si vous cliquez sur **filtres** dans un affichage tableau détaillé, vous pouvez spécifier une plage de dates avec **Date de début** et date de **fin**.
 
@@ -61,12 +61,12 @@ Lorsque vous sélectionnez une ligne dans le tableau, une fenêtre mobile appara
 - **Nom du connecteur entrant**
 - **Domaine de l’expéditeur**
 - **Nombre de messages**
-- **Exemples de messages**: vous pouvez cliquer sur **afficher les exemples de messages** pour afficher les résultats du [suivi](message-trace-scc.md) des messages pour un exemple des messages concernés.
+- **Exemples de messages** : vous pouvez cliquer sur **afficher les exemples de messages** pour afficher les résultats du [suivi](message-trace-scc.md) des messages pour un exemple des messages concernés.
 
 ![Menu volant des détails après la sélection d’une ligne dans la vue du tableau de détails dans le rapport de domaine non accepté](../../media/mfi-non-accepted-domain-report-details-flyout.png)
 
 Pour revenir à l’affichage rapports, cliquez sur **afficher le rapport**.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 Pour plus d’informations sur les autres informations du tableau de bord de flux de messagerie, consultez [la rubrique mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).

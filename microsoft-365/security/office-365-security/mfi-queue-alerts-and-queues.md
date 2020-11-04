@@ -2,7 +2,7 @@
 title: Vue d’attente dans le tableau de bord de flux de messagerie
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 audience: ITPro
@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: Les administrateurs peuvent apprendre à utiliser le widget files d’attente dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité pour surveiller les flux de messages infructueux vers leurs organisations locales ou partenaires sur des connecteurs sortants.
-ms.openlocfilehash: 3291a21828215d0a2a99c2226147bb1b748b8469
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: e6935793cd04c6072784cd20b55649126864c369
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199288"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877572"
 ---
 # <a name="queues-insight-in-the-security--compliance-center"></a>Files d’attente Insight dans le centre de conformité & Security
 
@@ -34,7 +34,7 @@ Si le volume de messagerie en file d’attente dépasse le seuil prédéfini (la
 
 - La vue **files d’attente** du [tableau de bord de flux de messagerie](mail-flow-insights-v2.md) dans le centre de [sécurité & conformité](https://protection.office.com). Pour plus d’informations, reportez-vous à la section [files d’attente du tableau de bord du flux de messagerie](#queues-insight-in-the-mail-flow-dashboard) de cette rubrique.
   
-- Une alerte est affichée dans les **alertes récentes** le tableau de bord des alertes dans le [Centre de sécurité & conformité](https://protection.office.com) (tableau de bord des**alertes** \> **Dashboard** ou <https://protection.office.com/alertsdashboard> ).
+- Une alerte est affichée dans les **alertes récentes** le tableau de bord des alertes dans le [Centre de sécurité & conformité](https://protection.office.com) (tableau de bord des **alertes** \> **Dashboard** ou <https://protection.office.com/alertsdashboard> ).
 
   ![Alertes récentes dans le tableau de bord des alertes dans le centre de sécurité & conformité](../../media/mfi-queued-messages-alert.png)
 
@@ -52,16 +52,16 @@ Si le volume de messagerie en file d’attente dépasse le seuil prédéfini (la
 
    ![Les messages ont été retardés détails de stratégie d’alerte le centre de sécurité & conformité](../../media/mfi-queued-messages-alert-policy.png)
 
-   - **État**: vous pouvez activer ou désactiver l’alerte.
+   - **État** : vous pouvez activer ou désactiver l’alerte.
 
-   - **Destinataires du message électronique** et **limite de notification quotidienne**: cliquez sur **modifier** pour configurer les paramètres suivants :
+   - **Destinataires du message électronique** et **limite de notification quotidienne** : cliquez sur **modifier** pour configurer les paramètres suivants :
 
 4. Pour configurer les paramètres de notification, cliquez sur **modifier**. Dans le menu volant **modifier la stratégie** qui s’affiche, configurez les paramètres suivants :
 
-   - **Envoyer des notifications par courrier électronique**: la valeur par défaut est activé.
-   - **Destinataires du message électronique**: la valeur par défaut est **TenantAdmins**.
-   - **Limite quotidienne des notifications**: la valeur par défaut est **aucune limite**.
-   - **Seuil**: la valeur par défaut est 200.
+   - **Envoyer des notifications par courrier électronique** : la valeur par défaut est activé.
+   - **Destinataires du message électronique** : la valeur par défaut est **TenantAdmins**.
+   - **Limite quotidienne des notifications** : la valeur par défaut est **aucune limite**.
+   - **Seuil** : la valeur par défaut est 200.
 
    ![Les paramètres de notification dans les messages ont été retardés détails de la stratégie d’alerte le centre de sécurité & conformité](../../media/mfi-queued-messages-alert-policy-notification-settings.png)
 
@@ -76,13 +76,13 @@ Même si le volume des messages mis en file d’attente n’a pas dépassé le s
 Si vous cliquez sur le nombre de messages dans le widget, un menu volant en **file d’attente de messages** s’affiche avec les informations suivantes :
 
 - **Nombre de messages en file d’attente**
-- **Nom du connecteur**: cliquez sur le nom du connecteur pour gérer le connecteur dans le centre d’administration Exchange.
+- **Nom du connecteur** : cliquez sur le nom du connecteur pour gérer le connecteur dans le centre d’administration Exchange.
 - **Heure de début de la file d’attente**
 - **Messages les plus anciens expirés**
 - **Serveur de destination**
 - **Dernière adresse IP**
 - **Dernière erreur**
-- **Résolution**: les problèmes et solutions courants sont disponibles. Si le lien **Fix It Now** est disponible, cliquez dessus pour résoudre le problème. Dans le cas contraire, cliquez sur les liens disponibles pour obtenir plus d’informations sur l’erreur et les solutions possibles.
+- **Résolution** : les problèmes et solutions courants sont disponibles. Si le lien **Fix It Now** est disponible, cliquez dessus pour résoudre le problème. Dans le cas contraire, cliquez sur les liens disponibles pour obtenir plus d’informations sur l’erreur et les solutions possibles.
 
 ![Détails après avoir cliqué sur l’aperçu des files d’attente dans le tableau de bord de flux de messagerie](../../media/mfi-queues-details.png)
 

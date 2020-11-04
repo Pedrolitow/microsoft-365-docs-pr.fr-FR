@@ -2,7 +2,7 @@
 title: Vue d’ensemble du tableau de bord de sécurité
 f1.keywords:
 - NOCSH
-ms.author: deniseb
+ms.author: siosulli
 author: denisebmsft
 manager: dansimp
 audience: ITPro
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Utilisez le nouveau tableau de bord de sécurité pour consulter l’état de protection contre les menaces d’Office 365, et afficher et agir sur les alertes de sécurité.
-ms.openlocfilehash: f7576de9db1403c3c010b2fd826866ec11a7e20a
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: b49422621e70d597251cd342559e59ffa0e128f6
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843623"
+ms.locfileid: "48877324"
 ---
 # <a name="security-dashboard"></a>Tableau de bord de sécurité
 
@@ -70,7 +70,7 @@ Les détails varient selon que votre abonnement Microsoft 365 inclut ou non [Exc
 |Si votre abonnement inclut...|Ces détails s’affichent.|
 |---|---|
 |EOP mais pas Microsoft Defender pour Office 365|Courrier électronique malveillant détecté et bloqué par EOP.<br><br> Consultez la rubrique [Threat Protection Status Report (EoP)](view-email-security-reports.md#threat-protection-status-report).|
-|Microsoft Defender pour Office 365|Contenu malveillant et courrier involontaire détecté et bloqué par EOP et Defender pour Office 365<br><br>Nombre agrégé de messages électroniques uniques dont le contenu malveillant est bloqué par le moteur anti-programme malveillant, la [purge automatique à zéro heure](zero-hour-auto-purge.md)et les fonctionnalités Defender pour Office 365 (y compris les [liens approuvés](atp-safe-links.md), [les pièces jointes fiables](atp-safe-attachments.md)et la [protection anti-hameçonnage dans Defender pour Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)).<br><br>Consultez la rubrique [Threat Protection Status Report](view-reports-for-atp.md#threat-protection-status-report).|
+|Microsoft Defender pour Office 365|Contenu malveillant et courrier involontaire détecté et bloqué par EOP et Defender pour Office 365<br><br>Nombre agrégé de messages électroniques uniques dont le contenu malveillant est bloqué par le moteur anti-programme malveillant, la [purge automatique à zéro heure](zero-hour-auto-purge.md)et les fonctionnalités Defender pour Office 365 (y compris les [liens approuvés](atp-safe-links.md), [les pièces jointes fiables](atp-safe-attachments.md)et la [protection anti-hameçonnage dans Defender pour Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)).<br><br>Consultez la rubrique [Threat Protection Status Report](view-reports-for-atp.md#threat-protection-status-report).|
 
 Pour afficher ou accéder au widget d’État protection contre les menaces, vous devez disposer des autorisations permettant d’afficher les rapports Defender pour Office 365. Pour en savoir plus, consultez [la rubrique Quelles autorisations sont requises pour afficher les rapports Defender pour Office 365 ?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)
 
@@ -121,7 +121,7 @@ Pour afficher ou accéder au widget courrier électronique envoyé et reçu, vou
 
 Pour afficher ou accéder au widget alertes de gestion des menaces récentes, vous devez disposer des autorisations pour afficher les alertes. Pour en savoir plus, consultez la rubrique [autorisations RBAC requises pour afficher les alertes](../../compliance/alert-policies.md#rbac-permissions-required-to-view-alerts).
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 [Afficher les rapports de sécurité de courrier dans le centre de sécurité et conformité](view-email-security-reports.md)
 

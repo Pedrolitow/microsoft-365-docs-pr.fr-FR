@@ -2,7 +2,7 @@
 title: Informations sur les courriers électroniques de nouveaux utilisateurs
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 audience: ITPro
@@ -11,12 +11,12 @@ ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: ''
 description: Les administrateurs peuvent apprendre à utiliser les nouveaux utilisateurs pour transférer des courriers électroniques dans le centre de sécurité & conformité afin de déterminer quand les utilisateurs de leur organisation acheminent les messages vers de nouveaux domaines.
-ms.openlocfilehash: 42f8c536f8a8a1421d97726c7af432c01d053b05
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: af66a84efbd4c0b8f1ccdacf4b71d1caca1c3929
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200654"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877524"
 ---
 # <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a>Les nouveaux utilisateurs transférant des courriers électroniques dans le centre de sécurité & conformité
 
@@ -35,7 +35,7 @@ Lorsque vous cliquez sur le widget, un menu volant s’affiche pour vous permett
 
 ![Fenêtre volante de détails qui apparaît après avoir cliqué sur le nouvel utilisateur.](../../media/mfi-new-users-forwarding-email-details.png)
 
-Vous pouvez également accéder à cette page de détails lorsque vous sélectionnez l’option **Afficher tout** dans la zone de **recommandations & premières Insights** (tableau de**Reports** \> **bord** rapports ou <https://protection.office.com/insightdashboard> ).
+Vous pouvez également accéder à cette page de détails lorsque vous sélectionnez l’option **Afficher tout** dans la zone de **recommandations & premières Insights** (tableau de **Reports** \> **bord** rapports ou <https://protection.office.com/insightdashboard> ).
 
 Vous pouvez cliquer sur le lien **Voir le rapport associé** à la vue pour accéder au **rapport des modifications de transfert** , comme décrit dans la section suivante.
 
@@ -59,11 +59,11 @@ Ce rapport n’est pas disponible directement dans le [tableau de bord de flux d
 
 Les graphiques suivants sont disponibles dans l’affichage rapport :
 
-- **Afficher les données pour : nouveaux utilisateurs de transfert**:
+- **Afficher les données pour : nouveaux utilisateurs de transfert** :
 
   ![Nouvel affichage des utilisateurs de transfert dans le rapport des modifications de transfert](../../media/forwarding-modifications-report-new-forwarding-users.png)
 
-- **Afficher les données pour : nouveaux domaines de transfert**:
+- **Afficher les données pour : nouveaux domaines de transfert** :
 
   ![Nouvelle vue Domains transférées dans le rapport des modifications de transfert](../../media/forwarding-modifications-report-new-forwarded-domains.png)
 
@@ -71,20 +71,20 @@ Si vous cliquez sur **filtres** dans un affichage de rapport, vous pouvez spéci
 
 ### <a name="details-table-view-for-the-forwarding-modifications-report"></a>Vue de la table Détails pour le rapport des modifications de transfert
 
-Si vous cliquez sur **afficher les détails table**, les informations affichées dépendent du graphique que vous examinez :
+Si vous cliquez sur **afficher les détails table** , les informations affichées dépendent du graphique que vous examinez :
 
-- **Afficher les données pour : nouveaux utilisateurs de transfert**:
+- **Afficher les données pour : nouveaux utilisateurs de transfert** :
 
-  - **Name**: adresse de messagerie de l’expéditeur.
+  - **Name** : adresse de messagerie de l’expéditeur.
   - **Type de transfert**
   - **Adresse du destinataire**
   - **Details**
   - **Count**
   - **Première date de transfert**
 
-- **Afficher les données pour : nouveaux domaines de transfert**:
+- **Afficher les données pour : nouveaux domaines de transfert** :
 
-  - **Name**: domaine de messagerie de l’expéditeur.
+  - **Name** : domaine de messagerie de l’expéditeur.
   - **Type de transfert**
   - **Adresse du destinataire**
   - **Details**
@@ -95,18 +95,18 @@ Si vous cliquez sur **filtres** dans un affichage tableau détaillé, vous pouve
 
 Si vous sélectionnez une ligne dans le tableau, une fenêtre volante de **Détails** s’affiche avec les informations suivantes :
 
-- **Name**: il s’agit de l’adresse de messagerie de l’expéditeur (de l’affichage des **données pour : nouvelle** vue des utilisateurs de transfert) ou du domaine de messagerie de l’expéditeur (de l’affichage des **données pour : nouvelle** vue des domaines de transfert).
+- **Name** : il s’agit de l’adresse de messagerie de l’expéditeur (de l’affichage des **données pour : nouvelle** vue des utilisateurs de transfert) ou du domaine de messagerie de l’expéditeur (de l’affichage des **données pour : nouvelle** vue des domaines de transfert).
 - **Type de transfert**
 - **Destinataire**
 - **Details**
 - **Count**
 - **Date de début**
-- **Recommandation**: à partir de là, vous pouvez cliquer sur le lien pour gérer l’utilisateur dans le centre d’administration 365 de Microsoft.
+- **Recommandation** : à partir de là, vous pouvez cliquer sur le lien pour gérer l’utilisateur dans le centre d’administration 365 de Microsoft.
 
 ![Fenêtre mobile détails à partir de la table Détails de la vue nouveaux utilisateurs de transfert dans le rapport des modifications de transfert](../../media/mfi-forwarding-modifications-report-new-forwarding-users-view-details-table-details.png)
 
 Pour revenir à l’affichage rapports, cliquez sur **afficher le rapport**.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 Pour plus d’informations sur les autres informations du tableau de bord de flux de messagerie, consultez [la rubrique mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).
