@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Créez et publiez automatiquement des étiquettes de rétention afin de pouvoir les appliquer de manière automatique pour conserver les éléments dont vous avez besoin et de supprimer ceux qui sont inutiles
-ms.openlocfilehash: cb8b6840085a1a044c0bcb7bf8b09c5776a31e0e
-ms.sourcegitcommit: 31f25790b37dfb740530017ef1701db0c5134829
+ms.openlocfilehash: 9a4b19bd30201f5a5ff75b49ec384b451526b91b
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "48740268"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877301"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Application automatique d’une étiquette de rétention pour conserver ou supprimer du contenu
 
@@ -86,9 +86,9 @@ Les instructions de navigation varient selon que vous utilisez la [gestion des e
     
     - Pour plus d’informations sur les descripteurs de plan de fichier, consultez [Utiliser le plan de gestion des fichiers pour gérer les étiquettes de rétention](file-plan-manager.md)
     
-    - Pour utiliser l’étiquette de rétention pour déclarer des enregistrements, sélectionnez **Marquer les éléments comme enregistrements**, ou **Marquer les éléments comme enregistrements réglementaires**. Pour plus d’information, voir [Configuration d’étiquettes de rétention pour déclarer des enregistrements](declare-records.md#configuring-retention-labels-to-declare-records).
+    - Pour utiliser l’étiquette de rétention pour déclarer des enregistrements, sélectionnez **Marquer les éléments comme enregistrements** , ou **Marquer les éléments comme enregistrements réglementaires**. Pour plus d’information, voir [Configuration d’étiquettes de rétention pour déclarer des enregistrements](declare-records.md#configuring-retention-labels-to-declare-records).
 
-3. Une fois l’étiquette créée, les options permettant de la publier s’affichent. Appliquez automatiquement l’étiquette, ou enregistrez-la simplement : sélectionnez **Appliquer automatiquement cette étiquette à un type spécifique de contenu**, puis sélectionnez **Terminé** pour démarrer l’assistant à la création d’attribution automatique d’étiquettes qui vous conduit directement à l’étape 2 de la procédure suivante.
+3. Une fois l’étiquette créée, les options permettant de la publier s’affichent. Appliquez automatiquement l’étiquette, ou enregistrez-la simplement : sélectionnez **Appliquer automatiquement cette étiquette à un type spécifique de contenu** , puis sélectionnez **Terminé** pour démarrer l’assistant à la création d’attribution automatique d’étiquettes qui vous conduit directement à l’étape 2 de la procédure suivante.
 
 Pour modifier une étiquette existante, sélectionnez-la, puis sélectionnez **Modifier l’étiquette** pour démarrer l’assistant à l’édition de rétention qui vous permet de modifier les descriptions d’étiquettes et les [paramètres éligibles](#updating-retention-labels-and-their-policies) à partir de l’étape 2.
 
@@ -99,7 +99,7 @@ Lorsque vous créez une stratégie d’application automatique, vous sélectionn
 
 1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com/), accédez à l’un des emplacements suivants :
     
-    - Si vous utilisez la gestion des enregistrements : **Gouvernance d’informations** :
+    - Si vous utilisez la gestion des enregistrements : **Gouvernance d’informations**  :
         - **Solutions** > **Gestion des enregistrements** > **Stratégies des étiquettes** onglet > **Auto-appliquer une étiquette**
     
     - Si vous n’utilisez pas la gestion des enregistrements :
@@ -128,7 +128,7 @@ Vous pouvez appliquer automatiquement des étiquettes de rétention au contenu q
 
 #### <a name="auto-apply-labels-to-content-with-specific-types-of-sensitive-information"></a>Application automatique d’étiquettes au contenu incluant des types spécifiques d’informations sensibles
 
-Lorsque vous créez des étiquettes de rétention d’application automatique pour des informations sensibles, vous voyez s’afficher la même liste de modèles de stratégie que lorsque vous créez une stratégie de protection contre la perte de données. Chaque modèle est préconfiguré pour rechercher des types spécifiques d’informations sensibles. Par exemple, le modèle présenté ici recherche les numéros américains d’identification fiscale (ITIN), de sécurité sociale (SSN) et de passeports depuis la catégorie **Confidentialité**, ainsi que le **modèle de données d’informations d’identification personnelle (PII) américaines** :
+Lorsque vous créez des étiquettes de rétention d’application automatique pour des informations sensibles, vous voyez s’afficher la même liste de modèles de stratégie que lorsque vous créez une stratégie de protection contre la perte de données. Chaque modèle est préconfiguré pour rechercher des types spécifiques d’informations sensibles. Par exemple, le modèle présenté ici recherche les numéros américains d’identification fiscale (ITIN), de sécurité sociale (SSN) et de passeports depuis la catégorie **Confidentialité** , ainsi que le **modèle de données d’informations d’identification personnelle (PII) américaines** :
 
 ![Modèles de stratégies avec des types d’informations sensibles](../media/dafd87d4-c7bb-439a-ac7b-193c018f98a5.png)
 
@@ -174,7 +174,7 @@ Exemples de requêtes :
 > [!NOTE]
 > La possibilité de conserver et de supprimer les enregistrements de réunions Teams est déployé dans l’aperçu et ne fonctionnera pas avant la sauvegarde des enregistrements dans OneDrive ou SharePoint. Pour plus d’informations, consultez [Utiliser OneDrive Entreprise et SharePoint Online ou Stream pour les enregistrements de réunion](https://docs.microsoft.com/MicrosoftTeams/tmr-meeting-recording-change).
 
-Pour identifier les enregistrements de réunion Microsoft Teams stockés dans les comptes OneDrive des utilisateurs ou dans SharePoint, spécifiez les éléments suivants pour **l’éditeur de requête de mot clé**:
+Pour identifier les enregistrements de réunion Microsoft Teams stockés dans les comptes OneDrive des utilisateurs ou dans SharePoint, spécifiez les éléments suivants pour **l’éditeur de requête de mot clé** :
 
 ``` 
 ProgID:Media AND ProgID:Meeting
@@ -182,19 +182,19 @@ ProgID:Media AND ProgID:Meeting
 
 Pour cette étiquette de rétention, vous devez également la publier sur les comptes OneDrive des utilisateurs appropriés ou sur les sites SharePoint en créant une stratégie d’étiquette. La plupart du temps, les enregistrements de réunion sont enregistrés dans OneDrive, mais pour les réunions de canal, ils sont enregistrés dans SharePoint.
 
-Lorsque vous avez enregistré la stratégie d’application automatique :
+Lorsque vous avez enregistré la stratégie de l’étiquette de rétention d’application automatique :
 
-1. Sélectionnez l’onglet**des stratégies d’étiquette** > **Publier des étiquettes**
+1. Sélectionnez l’onglet **des stratégies d’étiquette** > **Publier des étiquettes**
 
-2. Lorsque vous êtes invité à sélectionner une étiquette, sélectionnez l’étiquette que vous avez créée à l’aide de la requête KQL pour identifier les enregistrements de réunions Teams.
+2. Lorsque vous êtes invité à sélectionner une étiquette, sélectionnez la même étiquette que vous avez sélectionnée pour la stratégie d’application automatique qui identifie les enregistrements de réunions de Teams.
 
-3. Lorsque vous êtes invité à entrer l’emplacement, choisissez **Les sites SharePoint** et **Les comptes OneDrive**. Vous pouvez ensuite conserver la valeur par défaut de **Tous**, ou spécifier des emplacements individuels, tels que l’inclusion ou l’exclusion de comptes OneDrive spécifiques.
+3. Lorsque vous êtes invité à entrer l’emplacement, choisissez **Les sites SharePoint** et **Les comptes OneDrive**. Vous pouvez ensuite conserver la valeur par défaut de **Tous** , ou spécifier des emplacements individuels, tels que l’inclusion ou l’exclusion de comptes OneDrive spécifiques.
 
 4. Terminez l’assistant et enregistrez cette stratégie d’étiquette.
 
 #### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>Appliquer automatiquement des étiquettes au contenu à l’aide de classifieurs entraînables
 
-Lorsque vous choisissez l’option de classifieur entraînable, vous pouvez sélectionner un classifieur intégré ou un classifieur personnalisé. Les classifieurs intégrés incluent : **CV**, **SourceCode**, **Harcèlement ciblé**, **Blasphème** et la **Menace** :
+Lorsque vous choisissez l’option de classifieur entraînable, vous pouvez sélectionner un classifieur intégré ou un classifieur personnalisé. Les classifieurs intégrés incluent : **CV** , **SourceCode** , **Harcèlement ciblé** , **Blasphème** et la **Menace**  :
 
 ![Sélectionnez un classificateur à entraîner](../media/retention-label-classifers.png)
 
@@ -214,7 +214,7 @@ Lorsque vous appliquez automatiquement des étiquettes de rétention, l’applic
   
 ![Diagramme indiquant quand les étiquettes d’application automatique prennent effet](../media/b8c00657-477a-4ade-b914-e643ef97a10d.png)
 
-Si les étiquettes attendues n’apparaissent pas après sept jours, consultez l’**État** de la stratégie d’application automatique en sélectionnant celle-ci dans la page des **Stratégies d’étiquette** dans le centre de conformité. Si vous voyez l’état de **Désactivé (erreur)** et dans les détails des emplacements, consultez un message indiquant qu’il prend plus de temps que prévu pour déployer la stratégie (pour SharePoint) ou essayez de redéployer la stratégie (pour OneDrive), essayez d’exécuter la commande PowerShell [RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) pour réessayer la distribution de la stratégie :
+Si les étiquettes attendues n’apparaissent pas après sept jours, consultez l’ **État** de la stratégie d’application automatique en sélectionnant celle-ci dans la page des **Stratégies d’étiquette** dans le centre de conformité. Si vous voyez l’état de **Désactivé (erreur)** et dans les détails des emplacements, consultez un message indiquant qu’il prend plus de temps que prévu pour déployer la stratégie (pour SharePoint) ou essayez de redéployer la stratégie (pour OneDrive), essayez d’exécuter la commande PowerShell [RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) pour réessayer la distribution de la stratégie :
 
 1. [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous pouvez créer une conservation associée à un cas de découverte électronique de base pour conserver le contenu qui peut être pertinent pour une enquête.
-ms.openlocfilehash: bf04fd0f0637247e4637b5d3fce82f911ca51f0e
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: d2c9c02f7530c58975ddf99289a3a0872788146a
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546880"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920328"
 ---
 # <a name="create-an-ediscovery-hold"></a>Créer une suspension de cas eDiscovery
 
@@ -42,7 +42,7 @@ Pour créer une conservation de découverte électronique qui est associée à u
   
 1. Accédez à [https://compliance.microsoft.com](https://compliance.microsoft.com) et connectez-vous à l’aide des informations d’identification du compte d’utilisateur auquel ont été attribuées les autorisations eDiscovery appropriées.
 
-2. Dans le volet de navigation de gauche du centre de conformité Microsoft 365, cliquez sur **Afficher tout**, puis sur **découverte électronique > Core**.
+2. Dans le volet de navigation de gauche du centre de conformité Microsoft 365, cliquez sur **Afficher tout** , puis sur **découverte électronique > Core**.
 
 3. Sur la page de **découverte électronique principale** , sélectionnez le cas dans lequel vous souhaitez créer le blocage, puis cliquez sur **ouvrir le cas**.
 
@@ -56,11 +56,11 @@ Pour créer une conservation de découverte électronique qui est associée à u
 
     ![Choisissez les emplacements de contenu à mettre sous conservation](../media/a59e4265-9151-4dbf-913f-6a4ab8db06b4.png)
   
-   a. **Emplacements de boîte aux lettres** : cliquez sur **choisir les utilisateurs, les groupes ou les équipes** , puis cliquez à nouveau sur **choisir les utilisateurs, les groupes ou les équipes** pour spécifier les boîtes aux lettres à mettre en attente. Utilisez la zone de recherche pour rechercher des boîtes aux lettres utilisateur et des groupes de distribution (pour mettre en attente les boîtes aux lettres des membres du groupe) à mettre en attente. Vous pouvez également placer une suspension sur la boîte aux lettres associée pour une équipe Microsoft, un groupe Office 365 ou un groupe Yammer. Activez la case à cocher utilisateur, groupe, équipe, cliquez sur **choisir**, puis sur **Terminer**.
+   1. **Emplacements de boîte aux lettres** : cliquez sur **choisir les utilisateurs, les groupes ou les équipes** , puis cliquez à nouveau sur **choisir les utilisateurs, les groupes ou les équipes** pour spécifier les boîtes aux lettres à mettre en attente. Utilisez la zone de recherche pour rechercher des boîtes aux lettres utilisateur et des groupes de distribution (pour mettre en attente les boîtes aux lettres des membres du groupe) à mettre en attente. Vous pouvez également placer une suspension sur la boîte aux lettres associée pour une équipe Microsoft, un groupe Office 365 ou un groupe Yammer. Activez la case à cocher utilisateur, groupe, équipe, cliquez sur **choisir** , puis sur **Terminer**.
 
-   b. **Emplacements de site** : cliquez sur **choisir des sites** , puis cliquez à nouveau sur **choisir les sites** pour spécifier les comptes SharePoint et OneDrive à mettre en attente. Saisissez l’URL de chaque site à placer en conservation. Vous pouvez également ajouter l’URL du site SharePoint pour une équipe Microsoft, un groupe Office 365 ou un groupe Yammer. Cliquez sur **choisir**, puis sur **Terminer**.
+   1. **Emplacements de site** : cliquez sur **choisir des sites** , puis cliquez à nouveau sur **choisir les sites** pour spécifier les comptes SharePoint et OneDrive à mettre en attente. Saisissez l’URL de chaque site à placer en conservation. Vous pouvez également ajouter l’URL du site SharePoint pour une équipe Microsoft, un groupe Office 365 ou un groupe Yammer. Cliquez sur **choisir** , puis sur **Terminer**.
   
-   c. **Dossiers publics Exchange.** Déplacez le contrôle bascule bascule ![ ](../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) vers la position **tout** pour mettre en attente tous les dossiers publics de votre organisation Exchange Online. Vous ne pouvez pas choisir des dossiers publics spécifiques à mettre en attente. Laissez le commutateur Toggle défini sur **None** si vous ne souhaitez pas mettre de conservation sur les dossiers publics.
+   1. **Dossiers publics Exchange.** Déplacez le contrôle bascule bascule ![ ](../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) vers la position **tout** pour mettre en attente tous les dossiers publics de votre organisation Exchange Online. Vous ne pouvez pas choisir des dossiers publics spécifiques à mettre en attente. Laissez le commutateur Toggle défini sur **None** si vous ne souhaitez pas mettre de conservation sur les dossiers publics.
 
    > [!NOTE]
    > Vous devez ajouter au moins un emplacement de contenu à la suspension. Dans le cas contraire, les éléments statiques de conservation eDiscovery indiqueront qu’aucun élément n’est en attente.
@@ -71,9 +71,9 @@ Pour créer une conservation de découverte électronique qui est associée à u
 
     ![Créer une conservation basée sur une requête avec des conditions](../media/d587b58e-d05c-4ac0-b0fe-09019e4f1063.png)
   
-    a. Dans la zone sous **Mots clés**, tapez une requête de recherche afin que seul le contenu correspondant aux critères de recherche soit préservé. Vous pouvez spécifier des mots clés, des propriétés de message électronique ou des propriétés de document, telles que des noms de fichiers. Vous pouvez également utiliser des requêtes plus complexes qui utilisent un opérateur booléen, comme **and**, **or**ou **not**.
+    1. Dans la zone sous **Mots clés** , tapez une requête de recherche afin que seul le contenu correspondant aux critères de recherche soit préservé. Vous pouvez spécifier des mots clés, des propriétés de message électronique ou des propriétés de document, telles que des noms de fichiers. Vous pouvez également utiliser des requêtes plus complexes qui utilisent un opérateur booléen, comme **and** , **or** ou **not**.
 
-    b. Cliquez sur **Ajouter des conditions** pour ajouter une ou plusieurs conditions afin de limiter la requête de recherche pour la suspension. Chaque condition ajoute une clause à la requête de recherche KQL créée et exécutée lors de la création de la suspension. Par exemple, vous pouvez spécifier une plage de dates pour que les documents de courrier ou de site créés dans la plage de dates soient suspendus. Une condition est logiquement liée à la requête par mot clé (spécifiée dans la zone **Mots clés** ) par l’opérateur **et** . Cela signifie que les éléments doivent répondre à la fois à la requête de mot clé et à la condition à conserver.
+    1. Cliquez sur **Ajouter des conditions** pour ajouter une ou plusieurs conditions afin de limiter la requête de recherche pour la suspension. Chaque condition ajoute une clause à la requête de recherche KQL créée et exécutée lors de la création de la suspension. Par exemple, vous pouvez spécifier une plage de dates pour que les documents de courrier ou de site créés dans la plage de dates soient suspendus. Une condition est logiquement liée à la requête par mot clé (spécifiée dans la zone **Mots clés** ) par l’opérateur **et** . Cela signifie que les éléments doivent répondre à la fois à la requête de mot clé et à la condition à conserver.
 
     Pour plus d’informations sur la création d’une requête de recherche et l’utilisation de conditions, consultez la rubrique [requêtes de mots clés et conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md).
 
@@ -123,13 +123,13 @@ Voici quelques autres éléments à garder à l’esprit lors de la recherche d�
 
 - Si plusieurs conservations eDiscovery sont placées à un seul emplacement dans un cas de découverte électronique et que vous choisissez de rechercher des emplacements en conservation, le nombre maximal de mots clés pour cette requête de recherche est de 500. Cela est dû au fait que la recherche combine toutes les conservations basées sur une requête à l’aide de l’opérateur **or** . S’il y a plus de 500 mots clés dans les requêtes de suspension combinées et la requête de recherche, tout le contenu de la boîte aux lettres est recherché, et pas seulement celui qui correspond à la casse basée sur une requête.
 
-- Si une conservation de découverte électronique a l’état **activer**, vous pouvez toujours effectuer des recherches dans les emplacements pendant que la conservation est activée.
+- Si une conservation de découverte électronique a l’état **activer** , vous pouvez toujours effectuer des recherches dans les emplacements pendant que la conservation est activée.
 
 ## <a name="preserve-content-in-microsoft-teams"></a>Conserver du contenu dans Microsoft teams
 
 Les conversations qui font partie d’un canal Microsoft teams sont stockées dans la boîte aux lettres associée à l’équipe Microsoft. De même, les fichiers partagés par les membres d’une équipe dans un canal sont stockés sur le site SharePoint de l’équipe. Par conséquent, vous devez placer la boîte aux lettres d’équipe et le site SharePoint dans la conservation eDiscovery pour conserver les conversations et les fichiers dans un canal.
 
-En guise d’alternative, les conversations qui font partie de la liste des conversations dans Teams (appelée *1:1 conversations* ou *1 : N conversations de groupe*) sont stockées dans les boîtes aux lettres des utilisateurs qui participent à la conversation. Les fichiers que les utilisateurs partagent dans les conversations de conversation sont stockés dans le compte OneDrive de l’utilisateur qui partage le fichier. Par conséquent, vous devez ajouter les boîtes aux lettres d’utilisateur et les comptes OneDrive à une conservation eDiscovery pour conserver les conversations et les fichiers dans la liste des conversations. Il est recommandé de placer une conservation sur les boîtes aux lettres des membres d’une équipe Microsoft en plus de placer la boîte aux lettres d’équipe et la conservation du site.
+En guise d’alternative, les conversations qui font partie de la liste des conversations dans Teams (appelée *1:1 conversations* ou *1 : N conversations de groupe* ) sont stockées dans les boîtes aux lettres des utilisateurs qui participent à la conversation. Les fichiers que les utilisateurs partagent dans les conversations de conversation sont stockés dans le compte OneDrive de l’utilisateur qui partage le fichier. Par conséquent, vous devez ajouter les boîtes aux lettres d’utilisateur et les comptes OneDrive à une conservation eDiscovery pour conserver les conversations et les fichiers dans la liste des conversations. Il est recommandé de placer une conservation sur les boîtes aux lettres des membres d’une équipe Microsoft en plus de placer la boîte aux lettres d’équipe et la conservation du site.
 
 À partir du 2020 février, nous avons activé la fonctionnalité de conservation du contenu dans les canaux privés. Étant donné que les conversations de canal privé sont stockées dans les boîtes aux lettres des participants à la conversation, le fait de placer une boîte aux lettres utilisateur sur une conservation eDiscovery préserve les conversations de canal privé. De plus, si une boîte aux lettres utilisateur a été placée dans une conservation de découverte électronique antérieure au 2020 février, la suspension s’applique automatiquement aux messages de canal privé stockés dans cette boîte aux lettres. La conservation des fichiers partagés dans les canaux privés est également prise en charge.
 
@@ -163,7 +163,7 @@ Gardez les points suivants à l’esprit lorsque vous placez les groupes teams e
     ```
 
     > [!NOTE]
-    > Pour exécuter l'applet de commande **Get-UnifiedGroup**, vous devez avoir le rôle de destinataires en affichage seul dans Exchange Online ou être membre d’un groupe de rôles affecté du rôle de destinataires en affichage seul. 
+    > Pour exécuter l'applet de commande **Get-UnifiedGroup** , vous devez avoir le rôle de destinataires en affichage seul dans Exchange Online ou être membre d’un groupe de rôles affecté du rôle de destinataires en affichage seul. 
   
 - Lors de la recherche dans la boîte aux lettres d’un utilisateur, les équipes ou le groupe Office 365 dont l’utilisateur est membre ne feront pas l’objet d’une recherche. De même, lorsque vous placez une équipe ou un groupe Office 365 sur une conservation eDiscovery, seule la boîte aux lettres de groupe et le site de groupe sont placés en conservation. Les boîtes aux lettres et les sites OneDrive entreprise des membres du groupe ne sont pas mis en attente, sauf si vous les ajoutez explicitement au blocage eDiscovery. Par conséquent, si vous devez placer une équipe ou un groupe Office 365 en conservation pour une raison juridique, envisagez d’ajouter les boîtes aux lettres et les comptes OneDrive des membres de l’équipe ou du groupe sur le même blocage.
 
@@ -174,9 +174,9 @@ Gardez les points suivants à l’esprit lorsque vous placez les groupes teams e
     ```
 
     > [!NOTE]
-    > Pour exécuter l'applet de commande **Get-UnifiedGroupLinks**, vous devez avoir le rôle de destinataires en affichage seul dans Exchange Online ou être membre d’un groupe de rôles affecté du rôle de destinataires en affichage seul.
+    > Pour exécuter l'applet de commande **Get-UnifiedGroupLinks** , vous devez avoir le rôle de destinataires en affichage seul dans Exchange Online ou être membre d’un groupe de rôles affecté du rôle de destinataires en affichage seul.
 
-## <a name="onedrive-accounts"></a>Les comptes OneDrive
+## <a name="onedrive-accounts"></a>Comptes OneDrive
 
 Pour collecter une liste des URL pour les sites OneDrive entreprise de votre organisation afin de pouvoir les ajouter à une suspension ou une recherche associée à un cas eDiscovery, consultez la rubrique [créer une liste de tous les emplacements OneDrive de votre organisation](https://docs.microsoft.com/onedrive/list-onedrive-urls). Le script de cet article crée un fichier texte qui contient une liste de tous les sites OneDrive de votre organisation. Pour exécuter ce script, vous devez installer et utiliser SharePoint Online Management Shell. N’oubliez pas d’ajouter l’URL du domaine MySite de votre organisation à chaque site OneDrive dans lequel vous souhaitez effectuer une recherche. Il s’agit du domaine où se trouve tout le contenu de votre OneDrive (par exemple,`https://contoso-my.sharepoint.com`). Voici un exemple d’URL pour le site d’un utilisateur OneDrive : `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`.
 
@@ -187,19 +187,19 @@ Pour collecter une liste des URL pour les sites OneDrive entreprise de votre org
 
 Une fois qu’une boîte aux lettres, un site SharePoint ou un compte OneDrive est supprimé d’une conservation de découverte électronique, une attente de *retard* est appliquée. Cela signifie que la suppression effective de la conservation est retardée de 30 jours afin d’empêcher la suppression définitive des données d’un emplacement de contenu. Les administrateurs peuvent ainsi Rechercher ou récupérer du contenu qui sera purgé après la suppression d’une conservation de découverte électronique. Les détails du fonctionnement de la conservation du retard pour les boîtes aux lettres et les sites sont différents.
 
-- **Boîtes aux lettres :** Un retard de conservation est placé sur une boîte aux lettres la prochaine fois que l’Assistant dossier géré traite la boîte aux lettres et détecte qu’une conservation de découverte électronique a été supprimée. Plus précisément, un délai d’attente est appliqué à une boîte aux lettres lorsque l’Assistant dossier géré définit l’une des propriétés de boîte aux lettres suivantes sur **true**:
+- **Boîtes aux lettres :** Un retard de conservation est placé sur une boîte aux lettres la prochaine fois que l’Assistant dossier géré traite la boîte aux lettres et détecte qu’une conservation de découverte électronique a été supprimée. Plus précisément, un délai d’attente est appliqué à une boîte aux lettres lorsque l’Assistant dossier géré définit l’une des propriétés de boîte aux lettres suivantes sur **true** :
 
    - **DelayHoldApplied :** Cette propriété s’applique au contenu lié au courrier électronique (généré par des personnes utilisant Outlook et Outlook sur le Web) stocké dans la boîte aux lettres d’un utilisateur.
 
    - **DelayReleaseHoldApplied :** Cette propriété s’applique au contenu basé sur le Cloud (généré par des applications autres qu’Outlook telles que Microsoft Teams, Microsoft Forms et Microsoft Yammer) stocké dans la boîte aux lettres d’un utilisateur. Les données Cloud générées par une application Microsoft sont généralement stockées dans un dossier masqué de la boîte aux lettres d’un utilisateur.
 
-   Lorsqu’une boîte aux lettres est placée en attente de retard (lorsque l’une des propriétés précédentes est définie sur **true**), la boîte aux lettres est toujours considérée comme suspendue pendant une durée de conservation illimitée, comme si la boîte aux lettres était en conservation pour litige. Au bout de 30 jours, le délai d’attente expire et Microsoft 365 tente automatiquement de supprimer le blocage de délai (en définissant la propriété DelayHoldApplied ou DelayReleaseHoldApplied sur **false**) de sorte que la conservation soit supprimée. Une fois que l’une de ces propriétés est définie sur **false**, les éléments correspondants marqués pour suppression sont purgés lors du prochain traitement de la boîte aux lettres par l’Assistant dossier géré.
+   Lorsqu’une boîte aux lettres est placée en attente de retard (lorsque l’une des propriétés précédentes est définie sur **true** ), la boîte aux lettres est toujours considérée comme suspendue pendant une durée de conservation illimitée, comme si la boîte aux lettres était en conservation pour litige. Au bout de 30 jours, le délai d’attente expire et Microsoft 365 tente automatiquement de supprimer le blocage de délai (en définissant la propriété DelayHoldApplied ou DelayReleaseHoldApplied sur **false** ) de sorte que la conservation soit supprimée. Une fois que l’une de ces propriétés est définie sur **false** , les éléments correspondants marqués pour suppression sont purgés lors du prochain traitement de la boîte aux lettres par l’Assistant dossier géré.
 
    Pour des informations supplémentaires, consultez [Gestion des boîtes aux lettres avec période de grâce](identify-a-hold-on-an-exchange-online-mailbox.md#managing-mailboxes-on-delay-hold).
 
 - **Sites SharePoint et OneDrive :** Tout contenu SharePoint ou OneDrive conservé dans la bibliothèque de conservation n’est pas supprimé pendant la période de retard de 30 jours après la suppression d’un site d’une conservation eDiscovery. Ceci est semblable à ce qui se produit lorsqu’un site est publié à partir d’une stratégie de rétention. En outre, vous ne pouvez pas supprimer manuellement ce contenu dans la bibliothèque de conservation pendant la période de retard de 30 jours. 
 
-   Pour plus d’informations, consultez [la rubrique libération d’une stratégie de rétention](retention.md#releasing-a-retention-policy).
+   Pour plus d’informations, consultez [la rubrique libération d’une stratégie de rétention](retention.md#releasing-a-policy-for-retention).
 
 Une suspension de délai est également appliquée aux emplacements de contenu lorsque vous fermez un cas de découverte électronique de base, car les conservations sont désactivées lors de la fermeture du cas. Pour plus d’informations sur la fermeture d’un cas, voir [Close, Reopen et Delete a Core eDiscovery case](close-reopen-delete-core-ediscovery-cases.md).
 
@@ -207,7 +207,7 @@ Une suspension de délai est également appliquée aux emplacements de contenu l
 
 Le tableau suivant répertorie les limites pour les cas de découverte électronique et les conservations de casse.
 
-  |**Description de la limite**|**Limite**|
+  | Description de la limite | Limite |
   |:-----|:-----|
   |Nombre maximal de cas pour une organisation  <br/> |Sans limite  <br/> |
   |Nombre maximal de conservations eDiscovery pour une organisation  <br/> |10 000  <br/> |
@@ -217,4 +217,9 @@ Le tableau suivant répertorie les limites pour les cas de découverte électron
   |||
 
    > [!NOTE]
-   > <sup>1</sup> pour afficher une liste de plus de 1 000 cas, de suspensions, de recherches ou d’exportations, vous pouvez utiliser la cmdlet Office 365 Security & Compliance PowerShell correspondante :<br/> [Get-ComplianceCase](https://docs.microsoft.com/powershell/module/exchange/get-compliancecase) <br/> [Get-CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/get-caseholdpolicy)<br/> [Get-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch)<br/> [Get-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction)
+   > <sup>1</sup> pour afficher une liste de plus de 1 000 cas, de suspensions, de recherches ou d’exportations, vous pouvez utiliser la cmdlet Office 365 Security & Compliance PowerShell correspondante :
+   >
+   > - [Get-ComplianceCase](https://docs.microsoft.com/powershell/module/exchange/get-compliancecase)
+   > - [Get-CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/get-caseholdpolicy)
+   > - [Get-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch)
+   > - [Get-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction)

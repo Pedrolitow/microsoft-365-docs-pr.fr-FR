@@ -18,12 +18,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment ajouter des résultats de recherche ou des exemples de ces résultats de recherche à un ensemble de vérification de cas eDiscovery avancé.
-ms.openlocfilehash: 6eed13c2096ad3cd33fbc7af93399824866b17c2
-ms.sourcegitcommit: 2179abfe0b7a8bea917eb1c1057ed3795bdf91e6
+ms.openlocfilehash: 25ea5fe076753d4a5685f1224b98a2005d334f5f
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47336650"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48919976"
 ---
 # <a name="add-search-results-to-a-review-set"></a>Ajouter des résultats de recherche à un jeu à réviser
 
@@ -37,6 +37,8 @@ Lorsque vous ajoutez les résultats d’une recherche à un jeu de réviseur (le
 
 - Tous les éléments (y compris le contenu et les métadonnées) sont réindexés de sorte que toutes les données du jeu de révision soient entièrement utilisables lors de la révision des données de cas. La réindexation des données entraîne des recherches rapides et rapides lorsque vous recherchez des données dans l’ensemble de vérifications lors de l’enquête de cas.
 
+- Un fichier chiffré avec une [technologie de chiffrement Microsoft](encryption.md) et joint à un message électronique renvoyé dans les résultats de la recherche est déchiffré lorsque le message électronique et le fichier joint sont ajoutés à l’ensemble de révision. Vous pouvez passer en revue et interroger le fichier déchiffré dans l’ensemble de révision. Le rôle de déchiffrement RMS doit vous être attribué pour ajouter des pièces jointes déchiffrées à un jeu de révision. Pour plus d’informations, consultez la rubrique [déchiffrement dans les outils eDiscovery de Microsoft 365](ediscovery-decryption.md).
+
 Pour ajouter des données à un jeu de réexamens, cliquez sur une recherche dans l’onglet **recherches** , puis sur **Ajouter des résultats à examiner le jeu** sur la page de menu volant.
 
 Vous pouvez ajouter à un jeu de réexamen existant ou créer un jeu de révision.  Si vous ajoutez à un nouveau jeu de réexamen, spécifiez son nom, puis cliquez sur **Ajouter** pour afficher la page de menu volant.
@@ -49,11 +51,11 @@ L’ajout de données à un groupe de révision est un processus à long terme. 
 
 Lorsque vous ajoutez le contenu d’une recherche à un jeu de réexamen existant ou nouveau, les options suivantes vous permettent de collecter le contenu à des fins de révision :
 
-- **Inclure des versions à partir de SharePoint (version bêta)**: utilisez cette option pour activer la collection de toutes les versions d’un document SharePoint en fonction des limites de version et des paramètres de recherche de la collection. La sélection de cette option augmentera considérablement la taille des éléments ajoutés à l’ensemble de révision.
+- **Inclure des versions à partir de SharePoint (version bêta)** : utilisez cette option pour activer la collection de toutes les versions d’un document SharePoint en fonction des limites de version et des paramètres de recherche de la collection. La sélection de cette option augmentera considérablement la taille des éléments ajoutés à l’ensemble de révision.
 
-- **Options de récupération**de la conversation : les éléments ajoutés à l’ensemble de révision sont activés pour les conversations thématiques afin de vous aider à consulter le contenu dans le contexte de la conversation d’avant et d’une conversation. Pour plus d’informations, consultez la rubrique [Review conversations in Advanced eDiscovery](conversation-review-sets.md).
+- **Options de récupération** de la conversation : les éléments ajoutés à l’ensemble de révision sont activés pour les conversations thématiques afin de vous aider à consulter le contenu dans le contexte de la conversation d’avant et d’une conversation. Pour plus d’informations, consultez la rubrique [Review conversations in Advanced eDiscovery](conversation-review-sets.md).
 
-- **Activer la récupération pour les pièces jointes modernes**: utilisez cette option pour inclure les pièces jointes modernes ou les fichiers liés dans la collection à des fins de révision. Pour plus d’informations sur les propriétés pouvant faire l’objet d’une recherche concernant les pièces jointes modernes, voir [document Metadata Fields in Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md).
+- **Activer la récupération pour les pièces jointes modernes** : utilisez cette option pour inclure les pièces jointes modernes ou les fichiers liés dans la collection à des fins de révision. Pour plus d’informations sur les propriétés pouvant faire l’objet d’une recherche concernant les pièces jointes modernes, voir [document Metadata Fields in Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md).
 
 ## <a name="add-a-sample-to-a-review-set"></a>Ajouter un échantillon à un jeu de révision
 
