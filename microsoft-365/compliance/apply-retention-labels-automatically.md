@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Créez et publiez automatiquement des étiquettes de rétention afin de pouvoir les appliquer de manière automatique pour conserver les éléments dont vous avez besoin et de supprimer ceux qui sont inutiles
-ms.openlocfilehash: 9a4b19bd30201f5a5ff75b49ec384b451526b91b
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: 5833684c729876315ce3866a8af52d79b924caef
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877301"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920018"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Application automatique d’une étiquette de rétention pour conserver ou supprimer du contenu
 
@@ -224,8 +224,6 @@ Si les étiquettes attendues n’apparaissent pas après sept jours, consultez l
     Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
    ```
 
-
-
 ## <a name="updating-retention-labels-and-their-policies"></a>Mise à jour des étiquettes de rétention et de leurs stratégies
 
 Lorsque vous modifiez une étiquette de rétention ou une stratégie d’application automatique et que l’étiquette de rétention est déjà appliquée au contenu, vos paramètres mis à jour sont automatiquement appliqués à ce contenu, en plus du contenu nouvellement identifié.
@@ -233,6 +231,10 @@ Lorsque vous modifiez une étiquette de rétention ou une stratégie d’applica
 Certains paramètres ne peuvent pas être modifiés une fois l’étiquette ou la stratégie créée et enregistrée, notamment :
 - Paramètres de rétention à l’exception de la période de rétention, sauf si vous avez configuré l’étiquette pour conserver ou supprimer le contenu en fonction de sa date de création.
 - Option de marquage des éléments comme enregistrement.
+
+## <a name="locking-the-policy-to-prevent-changes"></a>Verrouillage de la stratégie pour empêcher toute modification
+
+Si vous devez vous assurer que personne ne peut désactiver la stratégie, supprimer la stratégie ou la rendre moins restrictive, voir [Utiliser un verrou de conservation pour restreindre les modifications apportées aux stratégies de rétention et aux stratégies d’étiquette de rétention](retention-preservation-lock.md).
 
 ## <a name="next-steps"></a>Prochaines étapes
 
