@@ -12,167 +12,167 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
-description: La feuille de route pour configurer le logiciel client et serveur pour Microsoft 365.
-ms.openlocfilehash: d51aead9a50df3acace94526824cfa08fc083a01
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+description: Utilisez cette feuille de route pour configurer le logiciel client et serveur pour Microsoft 365.
+ms.openlocfilehash: 2fb63f73ad49c68cbeb6c92497835c36f9faf737
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847153"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920441"
 ---
 # <a name="client-and-server-software-roadmap-for-microsoft-365"></a>Feuille de route du logiciel client et serveur pour Microsoft 365
 
-La plupart des organisations d’entreprise ont un environnement hétérogène avec plusieurs versions de systèmes d’exploitation, de logiciels clients et de logiciels de serveur. Microsoft 365 for Enterprise inclut les versions les plus sécurisées de ces composants clés de votre infrastructure informatique avec des fonctionnalités de productivité qui sont conçues pour tirer parti des technologies Cloud.
+La plupart des organisations d’entreprise ont un environnement hétérogène qui inclut plusieurs versions de systèmes d’exploitation, de logiciels clients et de logiciels de serveur. Microsoft 365 Enterprise inclut les versions les plus sûres des composants clés de votre infrastructure informatique. Il inclut également des fonctionnalités de productivité qui sont conçues pour tirer parti des technologies Cloud.
 
-Pour optimiser la valeur commerciale de la suite de produits intégrée Microsoft 365 pour Enterprise, commencez la planification et la mise en œuvre d’une stratégie de migration des versions de :
+Afin d’optimiser la valeur commerciale de la suite intégrée Microsoft 365 Entreprise, commencez par planifier et implémenter une stratégie pour migrer les versions :
 
-- Le client Office installé sur vos ordinateurs vers les applications Microsoft 365 pour les entreprises
-- Serveurs Office installés sur vos serveurs sur leurs services équivalents dans Microsoft 365
-- Windows 7 et Windows 8.1 sur vos appareils vers Windows 10 Entreprise
+- Le client Office installé sur vos ordinateurs vers les applications Microsoft 365 pour entreprises.
+- Les serveurs Office installés sur vos serveurs sur leurs services équivalents dans Microsoft 365.
+- Windows 7 et Windows 8,1 sur vos appareils vers Windows 10 entreprise.
 
 >[!Note]
->Windows 7 a atteint la fin du support le **14 janvier 2020**. Pour plus d’informations, cliquez [ici](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020).
+>La prise en charge de Windows 7 a pris fin le *14 janvier 2020*. Pour plus d’informations, consultez les [Détails de fin de prise en charge](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020).
 >
 
-La réalisation de toutes ces migrations au fil du temps permet à votre organisation de se rapprocher de l' [espace de travail moderne](https://www.microsoft.com/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/), un environnement sécurisé et intégré qui déverrouille le travail d’équipe et la créativité au sein de votre organisation, tous étant activés et habilités par Microsoft 365 pour les entreprises.
+À mesure que vous réalisez ces migrations au fil du temps, votre organisation se rapproche de la vision de l' [espace de travail moderne](https://www.microsoft.com/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/). Cet environnement sécurisé et intégré peut vous aider à déverrouiller le travail d’équipe et la créativité au sein de votre organisation. Microsoft 365 entreprise vous permet de tout le long de la procédure.
 
-## <a name="migration-for-microsoft-office-client-products"></a>Migration pour les produits client Microsoft Office
+## <a name="migration-for-office-client-products"></a>Migration pour les produits clients Office
 
-De nombreuses petites et grandes entreprises utilisent peut-être une combinaison d’anciennes versions des produits clients Office, tels que Word, Excel et PowerPoint. Ces anciennes versions :
+Les organisations de grande et petite taille utilisent souvent une combinaison de versions plus anciennes des produits clients Office, telles que Word, Excel et PowerPoint. Ces versions antérieures sont les suivantes :
 
-- peuvent être [mises à jour](https://support.office.com/article/install-office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5) avec les derniers correctifs d’assistance et mises à jour de sécurité, mais le processus est parfois manuel et peut ne pas convenir à votre entreprise ;
-- ne sont pas configurées de façon optimale pour tirer parti des technologies cloud de Microsoft et pour vous aider à transformer numériquement votre entreprise.
-- Ne contiennent pas de nouvelles fonctionnalités.
+- Peut être [mis à jour](https://support.office.com/article/install-office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5) avec les dernières mises à jour de sécurité et correctifs de prise en charge. Toutefois, le processus est parfois manuel et ne peut pas être redimensionné au sein de votre organisation.
+- Ne sont pas optimisés pour utiliser les technologies de Cloud Microsoft qui vous permettent de transformer votre entreprise de façon numérique.
+- Ne fournissez pas les dernières fonctionnalités.
 
-Microsoft 365 pour Enterprise inclut les applications Microsoft 365 pour Enterprise, une version des produits clients Office disponible avec une licence Microsoft 365 pour Enterprise et est installée et mise à jour à partir du Cloud Microsoft. Les applications Microsoft 365 pour les entreprises incluent des mises à jour de sécurité et les fonctionnalités les plus récentes. Si vous souhaitez en savoir plus, consultez la rubrique [À propos des Applications Microsoft 365 pour les grandes entreprises](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps).
+Microsoft 365 Enterprise inclut les applications Microsoft 365 pour les entreprises. Cette version des produits client Office est disponible avec une licence Microsoft 365 Enterprise. Il est installé et mis à jour à partir du Cloud Microsoft. Les applications Microsoft 365 pour les entreprises incluent des mises à jour de sécurité et les fonctionnalités les plus récentes. Pour plus d’informations, consultez la rubrique [à propos des applications Microsoft 365 pour les entreprises](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps).
 
 ### <a name="office-2007"></a>Office 2007
 
-Pour les versions d’Office dans la version Office 2007, la date de fin de l’assistance est déjà passée. Pour plus d’informations, consultez la page relative à la [feuille de route pour la fin de l’assistance pour Office 2007](https://docs.microsoft.com/deployoffice/office-2007-end-support-roadmap).
+Pour les versions d’Office dans la version Office 2007, la fin de la prise en charge est déjà passée. Pour plus d’informations, reportez-vous à la feuille [de route Office 2007 end-support](https://docs.microsoft.com/deployoffice/office-2007-end-support-roadmap).
 
-Au lieu de mettre à niveau vos ordinateurs exécutant Office 2007 avec Office 2010, Office 2013 ou Office 2016, vous pouvez :
+Au lieu de mettre à niveau vos ordinateurs qui exécutent Office 2007 vers Office 2010, Office 2013 ou Office 2016, envisagez de suivre les étapes suivantes :
 
-1. obtenir une licence Microsoft 365 et l’affecter à vos utilisateurs ;
-2. désinstaller Office 2007 sur leur ordinateur ;
-3. Installation des applications Microsoft 365 pour les entreprises, soit individuellement, soit conjointement avec un déploiement informatique. Pour plus d’informations, reportez-vous au [Guide de déploiement pour les applications Microsoft 365](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps).
+1. Obtenez et attribuez une licence Microsoft 365 pour vos utilisateurs.
+2. Désinstallez Office 2007 sur leur ordinateur.
+3. Installez les applications Microsoft 365 pour Enterprise, de manière individuelle ou lors d’un déploiement informatique. Pour plus d’informations, reportez-vous au [Guide de déploiement pour les applications Microsoft 365](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps).
 
-Les applications Microsoft 365 pour les entreprises installent automatiquement les mises à jour et profitent des services sur le cloud pour renforcer la productivité et la sécurité.
+Microsoft 365 Apps for Enterprise installe automatiquement les mises à jour. Elle peut tirer parti des services Cloud pour améliorer la sécurité et la productivité.
 
 ### <a name="office-2010"></a>Office 2010
 
-Pour les versions d’Office dans la version Office 2010, la prise en charge a pris fin le **13 octobre 2020**. Pour plus d’informations, voir [Feuille de route de la fin de la prise en charge d’Office 2010](https://docs.microsoft.com/deployoffice/office-2010-end-support-roadmap).
+Pour les versions d’Office dans la version Office 2010, la prise en charge a pris fin le *13 octobre 2020*. Pour plus d’informations, reportez-vous à la feuille [de route Office 2010 end-support](https://docs.microsoft.com/deployoffice/office-2010-end-support-roadmap).
 
-Au lieu de mettre à niveau vos ordinateurs exécutant Office 2010 avec Office 2013 ou Office 2016, les deux devant être mis à jour manuellement, vous pouvez :
+Vous pouvez envisager de mettre à niveau vos ordinateurs exécutant Office 2010 vers Office 2013 ou Office 2016. Toutefois, ces deux versions doivent être mises à jour manuellement. Nous vous conseillons de prendre les mesures suivantes à la place :
 
-1. obtenir une licence Microsoft 365 et l’affecter à vos utilisateurs ;
-2. désinstaller Office 2010 de leur ordinateur ;
-3. Installation des applications Microsoft 365 pour les entreprises, soit individuellement, soit conjointement avec un déploiement informatique. Pour plus d’informations, reportez-vous au [Guide de déploiement pour les applications Microsoft 365](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps).
+1. Obtenez et attribuez une licence Microsoft 365 pour vos utilisateurs.
+2. Désinstallez Office 2010 sur leur ordinateur.
+3. Installez les applications Microsoft 365 pour Enterprise, de manière individuelle ou lors d’un déploiement informatique. Pour plus d’informations, reportez-vous au [Guide de déploiement pour les applications Microsoft 365](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps).
 
-Les applications Microsoft 365 pour les entreprises installent automatiquement les mises à jour de sécurité et de nouvelle fonctionnalité, et profitent des services sur le cloud de Microsoft 365 pour renforcer la productivité et la sécurité.
+Microsoft 365 Apps for Enterprise installe automatiquement les mises à jour de sécurité et les nouvelles mises à jour de fonctionnalités. Elle peut tirer parti des services en nuage dans Microsoft 365 pour améliorer la sécurité et la productivité.
 
 ### <a name="office-2013-and-office-2016"></a>Office 2013 et Office 2016
 
-La fin de la feuille de route du support technique pour les versions d’Office 2013 et Office 2016 n’a pas encore été déterminée. Cependant, comme avec Office 2010, vous devez encore [installer les mises à jour de sécurité](https://support.office.com/article/install-office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5), qui peuvent ne pas évoluer correctement en fonction de la taille de votre organisation.
+La feuille de route de fin de prise en charge pour Office 2013 et Office 2016 n’a pas encore été déterminée. Dans ces versions, comme Office 2010, vous devez toujours [installer les mises à jour de sécurité](https://support.office.com/article/install-office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5). Cette tâche ne peut pas être correctement redimensionnée en fonction de la taille de votre organisation.
 
-Plutôt que de continuer à mettre à jour vos ordinateurs avec les mises à jour de sécurité les plus récentes d’Office 2013 ou Office 2016, ou à mettre à jour vos ordinateurs d’Office 2013 vers Office 2016, prévoyez ce qui suit :
+Au lieu de maintenir vos ordinateurs à jour avec les dernières mises à jour de sécurité pour Office 2013 ou Office 2016, ou de mettre à jour vos ordinateurs à partir d’Office 2013 vers Office 2016, procédez comme suit :
 
-1. obtenir une licence Microsoft 365 et l’affecter à vos utilisateurs ;
-2. désinstaller Office 2013 ou Office 2016 de leur ordinateur ;
-3. Installation des applications Microsoft 365 pour les entreprises, soit individuellement, soit conjointement avec un déploiement informatique. Pour plus d’informations, reportez-vous au [Guide de déploiement pour les applications Microsoft 365](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps).
+1. Obtenez et attribuez une licence Microsoft 365 pour vos utilisateurs.
+2. Désinstallez Office 2013 ou Office 2016 sur leur ordinateur.
+3. Installez les applications Microsoft 365 pour Enterprise, de manière individuelle ou lors d’un déploiement informatique. Pour plus d’informations, reportez-vous au [Guide de déploiement pour les applications Microsoft 365](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps).
 
-Les applications Microsoft 365 pour les entreprises installent automatiquement les mises à jour de sécurité et de nouvelle fonctionnalité, et profitent des services sur le cloud de Microsoft 365 pour renforcer la productivité et la sécurité.
+Microsoft 365 Apps for Enterprise installe automatiquement les mises à jour de sécurité et les nouvelles mises à jour de fonctionnalités. Elle peut tirer parti des services en nuage dans Microsoft 365 pour améliorer la sécurité et la productivité.
 
-## <a name="migration-for-microsoft-office-server-products"></a>Migration pour les produits serveur Microsoft Office
+## <a name="migration-for-office-server-products"></a>Migration pour les produits serveur Office
 
-De nombreuses petites et grandes entreprises utilisent peut-être une combinaison d’anciennes versions des produits serveur Office, tels que Exchange Server et SharePoint. Ces anciennes versions :
+Les grandes et les petites organisations utilisent souvent une combinaison de versions plus anciennes des produits Office Server, telles qu’Exchange Server et SharePoint Server. Ces versions antérieures sont les suivantes :
 
-- doivent être mises à jour avec les derniers correctifs d’assistance et mises à jour de sécurité. Dans certains cas, ces mises à jour sont publiées tous les mois ;
-- ne sont pas configurées de façon optimale pour tirer parti des technologies cloud de Microsoft et pour vous aider à transformer numériquement votre entreprise.
-- n’incluent pas de nouvelles applications de productivité, telles que Microsoft Teams ;
+- Doit être mis à jour avec les dernières mises à jour de sécurité et correctifs de prise en charge. Dans certains cas, ces mises à jour sont publiées tous les mois.
+- Ne sont pas optimisés pour utiliser les technologies de Cloud Microsoft qui vous permettent de transformer votre entreprise de façon numérique.
+- N’incluez pas de nouvelles applications de productivité, telles que Microsoft Teams.
 - N’incluez pas les fonctionnalités de sécurité les plus récentes, telles qu’Exchange et Defender pour Office 365.
 
-Microsoft 365 pour Enterprise inclut des versions Cloud des services Office Server qui utilisent certains des mêmes outils que les versions locales du logiciel Office Server, telles que les navigateurs Web et le client Outlook. Ces services sont continuellement mis à jour pour la sécurité sans impliquer d’informatique, ce qui vous permet de gagner du temps pour la maintenance et la mise à jour des serveurs locaux. Ces services présentent également de nouvelles fonctionnalités qui ne sont pas disponibles dans les logiciels Office Server.
+Microsoft 365 Enterprise inclut des versions en nuage des services Office Server qui utilisent certains des mêmes outils que les versions locales du logiciel Office Server, telles que les navigateurs Web et le client Outlook. Ces services sont automatiquement mis à jour pour la sécurité. Votre personnel informatique enregistre le temps nécessaire à la maintenance et à la mise à jour des serveurs locaux. Ces services offrent également de nouvelles améliorations de fonctionnalité qui ne sont pas présentes dans les logiciels Office Server.
 
-Pour plus d’informations sur la migration des utilisateurs et des données pour des charges de travail Microsoft 365 spécifiques :
+Pour plus d’informations sur la migration des utilisateurs et des données pour des charges de travail Microsoft 365 spécifiques, consultez les ressources suivantes :
 
-- Boîtes aux lettres utilisateur d’Exchange Server vers Exchange Online, consultez la rubrique [Move mailboxes between on-premises and Exchange Online Organizations](https://docs.microsoft.com/exchange/hybrid-deployment/move-mailboxes).
-- Données SharePoint à partir de SharePoint Server vers SharePoint Online, consultez [la rubrique migrer votre contenu vers Microsoft 365](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online).
-- Skype entreprise Online à Microsoft Teams, voir [migration and Interoperability Guidance](https://docs.microsoft.com/microsoftteams/migration-interop-guidance-for-teams-with-skype).
+- [Déplacer des boîtes aux lettres à partir d’un serveur Exchange local vers Exchange Online](https://docs.microsoft.com/exchange/hybrid-deployment/move-mailboxes)
+- [Migrer des données SharePoint à partir de SharePoint Server vers SharePoint Online](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online)
+- [Migrer Skype entreprise Online vers Microsoft teams](https://docs.microsoft.com/microsoftteams/migration-interop-guidance-for-teams-with-skype)
 
-### <a name="office-server-2007"></a>Office Server 2007
+### <a name="office-2007-server-products"></a>Produits serveur Office 2007
 
-Pour les produits serveurs de la version Office 2007, la date de fin de l’assistance est déjà passée. Pour plus d’informations, consultez les articles suivants :
+Pour les produits serveur de la version Office 2007, la fin de la prise en charge est déjà passée. Pour plus d’informations, consultez les articles suivants :
 
-- [Feuille de route pour la fin de l’assistance pour Exchange 2007](exchange-2007-end-of-support.md)
-- [Feuille de route pour la fin de l’assistance pour SharePoint Server 2007](sharepoint-2007-end-of-support.md)
-- [Feuille de route pour la fin de l’assistance pour Project Server 2007](project-server-2007-end-of-support.md)
-- [Feuille de route pour la fin de l’assistance pour Office Communications Server](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade)
-- [Feuille de route pour la fin de l’assistance pour PerformancePoint Server 2007](pps-2007-end-of-support.md)
+- [Feuille de route de fin de prise en charge d’Exchange 2007](exchange-2007-end-of-support.md)
+- [Feuille de route de fin de prise en charge de SharePoint Server 2007](sharepoint-2007-end-of-support.md)
+- [Feuille de route Project Server 2007 end-support](project-server-2007-end-of-support.md)
+- [Feuille de route de fin de prise en charge d’Office Communications Server](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade)
+- [Feuille de route de fin de prise en charge de PerformancePoint Server 2007](pps-2007-end-of-support.md)
 
-Au lieu de mettre à niveau vos produits serveur de la version Office 2007 avec les produits serveur des versions Office 2010, Office 2013 ou Office 2016, vous pouvez :
+Au lieu de mettre à niveau vos produits serveur dans la version Office 2007 avec des produits serveur dans les versions pour Office 2010, Office 2013 ou Office 2016, envisagez de suivre les étapes suivantes :
 
-1. Migration des données de vos serveurs Office 2007 vers Microsoft 365. Pour obtenir de l’aide, engagez un partenaire Microsoft.
-2. déployer les nouveaux processus de travail et fonctionnalités pour vos utilisateurs ;
-3. supprimer les serveurs locaux exécutant les produits serveurs Office 2007 lorsque vous n’en avez plus besoin.
+1. Migrez les données de vos serveurs Office 2007 vers Microsoft 365. Pour obtenir plus d’informations ou de l’aide, engagez un partenaire Microsoft.
+2. Déployez les nouvelles fonctionnalités et les processus de travail pour vos utilisateurs.
+3. Lorsque vous n’avez plus besoin des serveurs locaux exécutant les produits serveur Office 2007, désactivez-les.
 
-### <a name="office-server-2010"></a>Office Server 2010
+### <a name="office-2010-server-products"></a>Produits serveur Office 2010
 
-La prise en charge d' [Exchange Server 2010](exchange-2010-end-of-support.md) a pris fin le **13 octobre 2020**.
+La prise en charge d' [Exchange Server 2010](exchange-2010-end-of-support.md) a pris fin le *13 octobre 2020*.
 
-La fin du support pour [SharePoint Server 2010](upgrade-from-sharepoint-2010.md) est prévue pour le **13 avril 2021**.
+La fin du support pour [SharePoint Server 2010](upgrade-from-sharepoint-2010.md) est prévue pour le *13 avril 2021*.
 
-Au lieu de mettre à niveau ces produits serveur de la version Office 2010 avec les produits serveur des versions Office 2013 ou Office 2016, vous pouvez :
+Au lieu de mettre à niveau ces produits serveur dans la version Office 2010 avec des produits serveur dans les versions pour Office 2013 ou Office 2016, envisagez de suivre les étapes suivantes :
 
-1. Migrer les données sur vos serveurs Office 2010 vers Microsoft 365. Pour plus d’informations, voir [FastTrack pour Microsoft 365](https://fasttrack.microsoft.com/microsoft365). Sinon, embauchez un partenaire Microsoft.
-2. déployer les nouveaux processus de travail et fonctionnalités pour vos utilisateurs ;
-3. supprimer les serveurs locaux exécutant les produits serveurs Office 2010 lorsque vous n’en avez plus besoin.
+1. Migrez les données de vos serveurs Office 2010 vers Microsoft 365. Pour plus d’informations, reportez-vous à la rubrique [FastTrack pour microsoft 365](https://fasttrack.microsoft.com/microsoft365) ou embaucher un partenaire Microsoft.
+2. Déployez les nouvelles fonctionnalités et les processus de travail pour vos utilisateurs.
+3. Lorsque vous n’avez plus besoin des serveurs locaux exécutant les produits serveur Office 2010, désactivez-les.
 
-### <a name="office-server-2013"></a>Office Server 2013
+### <a name="office-2013-server-products"></a>Produits serveur Office 2013
 
-Pour les produits serveur de la version Office 2013, la fin de l’assistance n’a pas été déterminée. Au lieu de mettre à niveau vos produits serveurs de la version Office 2013 avec les produits serveurs de la version Office 2016, vous pouvez :
+Pour les produits serveur de la version Office 2013, la fin de la prise en charge n’a pas été déterminée. Au lieu de mettre à niveau vos produits serveur dans la version Office 2013 avec les produits serveur de la version Office 2016, envisagez de suivre les étapes suivantes :
 
-1. Migration des données de vos serveurs Office 2013 vers Microsoft 365. Pour plus d’informations, voir [FastTrack pour Microsoft 365](https://fasttrack.microsoft.com/microsoft365). Sinon, embauchez un partenaire Microsoft.
-2. déployer les nouveaux processus de travail et fonctionnalités pour vos utilisateurs ;
-3. supprimer les serveurs locaux exécutant les produits serveur Office 2013 lorsque vous n’en avez plus besoin.
+1. Migrez les données de vos serveurs Office 2013 vers Microsoft 365. Pour plus d’informations, reportez-vous à la rubrique [FastTrack pour microsoft 365](https://fasttrack.microsoft.com/microsoft365) ou embaucher un partenaire Microsoft.
+2. Déployez les nouvelles fonctionnalités et les processus de travail pour vos utilisateurs.
+3. Lorsque vous n’avez plus besoin des serveurs locaux exécutant les produits serveur Office 2013, désactivez-les.
 
-### <a name="office-server-2016"></a>Office Server 2016
+### <a name="office-2016-server-products"></a>Produits serveur Office 2016
 
-Pour les produits serveurs de la version Office 2016, la fin de l’assistance n’a pas été déterminée. Pour tirer parti du service cloud et des améliorations apportées pour transformer numériquement votre entreprise, vous pouvez :
+Pour les produits serveur de la version Office 2016, la fin de la prise en charge n’a pas été déterminée. Pour tirer parti du service basé sur le Cloud et des améliorations apportées à la transformation numérique de votre entreprise, envisagez de suivre les étapes suivantes :
 
-1. Migration des données de vos serveurs Office 2016 vers Microsoft 365. Pour plus d’informations, voir [FastTrack pour Microsoft 365](https://fasttrack.microsoft.com/microsoft365). Sinon, embauchez un partenaire Microsoft.
-2. déployer les nouveaux processus de travail et fonctionnalités pour vos utilisateurs ;
-3. supprimer les serveurs locaux exécutant les produits serveur Office 2016 lorsque vous n’en avez plus besoin.
+1. Migrez les données de vos serveurs Office 2016 vers Microsoft 365. Pour plus d’informations, reportez-vous à la rubrique [FastTrack pour microsoft 365](https://fasttrack.microsoft.com/microsoft365) ou embaucher un partenaire Microsoft.
+2. Déployez les nouvelles fonctionnalités et les processus de travail pour vos utilisateurs.
+3. Lorsque vous n’avez plus besoin des serveurs locaux exécutant les produits serveur Office 2016, désactivez-les.
 
-## <a name="migration-for-microsoft-windows-7-and-81"></a>Migration pour Microsoft Windows 7 et 8.1
+## <a name="migration-for-windows-7-and-81"></a>Migration pour Windows 7 et 8,1
 
-Windows 7 a atteint la fin du support le **14 janvier 2020**. Pour migrer vos appareils exécutant Windows 7 ou Windows 8.1, vous pouvez effectuer une mise à niveau sur place.
+Prise en charge terminée pour Windows 7 le *14 janvier 2020*. Pour migrer vos appareils exécutant Windows 7 ou Windows 8,1, vous pouvez effectuer une mise à niveau sur place.
 
 Pour accéder à d’autres méthodes, voir [Scénarios de déploiement de Windows 10](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios). Vous pouvez également [planifier le déploiement de Windows 10](https://aka.ms/planforwin10deployment) par vous-même.
 
-## <a name="summary-of-options-for-office-2010-clients-and-servers-and-windows-7"></a>Résumé des options pour les clients et serveurs Office 2010 et Windows 7
+## <a name="office-2010-clients-and-servers-and-windows-7"></a>Clients et serveurs Office 2010 et Windows 7
 
-Pour consulter un résumé visuel des options de mise à niveau, de migration et de déplacement vers le Cloud pour ces produits, voir l’[affiche de fin du support technique](../downloads/Office2010Windows7EndOfSupport.pdf).
+Voici un résumé visuel des options de mise à niveau, de migration et de déplacement sur le Cloud pour les clients et les serveurs Office 2010 et Windows 7 :
 
-[![Image de l’affiche de la fin de la prise en charge pour les clients et serveurs Office 2010 et Windows 7](../media/microsoft-365-overview/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
+[![Image illustrant les options de fin de prise en charge pour les clients et les serveurs Office 2010 et Windows 7.](../media/microsoft-365-overview/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
 
-Cette affiche de page unique est un moyen rapide de comprendre les différents chemins que vous pouvez suivre pour empêcher les produits client et serveur Office 2010 et Windows 7 d’atteindre la fin de la prise en charge, avec les chemins d’accès par défaut et la prise en charge de destination résultante dans Microsoft 365 pour entreprise en surbrillance.
+Cette affiche de page unique est un moyen rapide de comprendre les chemins que vous pouvez suivre pour gérer la fin de la prise en charge pour les produits client et serveur Office 2010 et Windows 7. Les chemins d’accès préférés sont pris en charge dans Microsoft 365 Enterprise.
 
-Vous pouvez [télécharger cette affiche](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Office2010Windows7EndOfSupport.pdf) et l’imprimer au format lettre, légal ou tabloïd (11 x 17).
+Vous pouvez [Télécharger cette affiche](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Office2010Windows7EndOfSupport.pdf) et l’imprimer au format Letter, Legal size ou tabloïd US (11 x 17).
 
 ## <a name="transition-your-entire-organization"></a>Transition de l'ensemble de votre organisation
 
-Pour mieux comprendre comment déplacer l’intégralité de votre organisation vers les produits et services de Microsoft 365 pour Enterprise, téléchargez et affichez l' [affiche de transition](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf).
+Pour mieux comprendre comment déplacer l’intégralité de votre organisation vers les produits et services de Microsoft 365 Enterprise, téléchargez cette affiche de transition :
 
-[![Image pour l'affiche Transition vers Microsoft 365](../media/microsoft-365-overview/transition-org-to-m365.png)](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf)
+[![Image illustrant la transition vers l’affiche Microsoft 365.](../media/microsoft-365-overview/transition-org-to-m365.png)](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf)
 
-Cette affiche en double page vous permet d’inventorier rapidement votre infrastructure et de trouver des instructions pour effectuer la migration vers les produits ou services correspondants dans Microsoft 365 pour entreprise. Elle reprend les produits Windows et Office et d’autres éléments d’infrastructure et de sécurité comme la gestion des appareils, l’identité, les informations et la protection contre les menaces.
+Cette affiche de deux pages est un moyen rapide d'inventorier vos infrastructures existantes. Utilisez-le pour obtenir des conseils sur le passage à un produit ou un service dans Microsoft 365 Enterprise. Il présente les produits Windows et Office, ainsi que d’autres éléments d’infrastructure et de sécurité, tels que la gestion des périphériques, l’identité et la protection contre les menaces, et la protection des informations et de la conformité.
 
-## <a name="how-microsoft-does-microsoft-365-for-enterprise"></a>Comment Microsoft fait Microsoft 365 pour les entreprises
+## <a name="how-microsoft-migrated-to-microsoft-365-enterprise"></a>Migration de Microsoft vers Microsoft 365 entreprise
 
-Découvrez comment les experts informatiques de Microsoft ont migré l’entreprise vers Microsoft 365 pour Enterprise avec ces ressources :
+Découvrez comment les experts informatiques de Microsoft ont migré l’entreprise vers Microsoft 365 entreprise :
 
 - [Déploiement et mise à jour des applications Microsoft 365 pour les entreprises](https://www.microsoft.com/itshowcase/Article/Content/757/Deploying-and-updating-Microsoft-Office-365-ProPlus)
 - [Microsoft migre 150 000 boîtes aux lettres vers Exchange Online](https://www.microsoft.com/itshowcase/Article/Content/577/Microsoft-migrates-150000-mailboxes-to-Exchange-Online)
 - [SharePoint dans le cloud : découvrez comment Microsoft a mis en œuvre sa propre migration](https://www.microsoft.com/itshowcase/Article/Content/691/SharePoint-to-the-cloud-Learn-how-Microsoft-ran-its-own-migration)
 - [Déploiement de Windows 10 chez Microsoft en tant que mise à niveau sur place](https://www.microsoft.com/itshowcase/Article/Content/668/Deploying-Windows-10-at-Microsoft-as-an-inplace-upgrade)
-- [Déploiement de Windows 10 : conseils et astuces de Microsoft IT](https://www.microsoft.com/itshowcase/Article/Content/951/Windows-10-deployment-tips-and-tricks-from-Microsoft-IT) (vidéo)
+- [Déploiement de Windows 10 : conseils et astuces de Microsoft IT](https://www.microsoft.com/itshowcase/Article/Content/951/Windows-10-deployment-tips-and-tricks-from-Microsoft-IT) (vidéo)

@@ -8,12 +8,12 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 37a43717ebb003c10a65e14da46012dab164916d
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 2af301fcac2f02a415972f8bf7857fa7b6ee0c1e
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429382"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48919831"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Appareils de bureau gérés Microsoft 
 
@@ -28,7 +28,7 @@ Pour être inscrit dans Microsoft Managed Desktop, un appareil doit être l’un
 Les liens vers les appareils sont fournis à des fins de référence uniquement. Si vous souhaitez commander des appareils, utilisez les contacts de votre canal commercial afin de vous assurer que vous choisissez les configurations correctes. Dans ce tableau, la *Date d’archivage* correspond à la date à laquelle ces modèles feront l’objet d’une durée de vie de service de bureau gérée Microsoft plus courte ; tous les appareils embarqués après cette date ne recevront pas de prise en charge complète de trois ans par le bureau géré Microsoft. Les appareils archivés sont également répertoriés dans [Microsoft Managed Desktop Archived Devices](archived-device-list.md). *Date de suppression* est la date à laquelle ce modèle ne sera plus pris en charge par le bureau géré par Microsoft. À cette date, tous les périphériques d’enregistrement de ce modèle seront supprimés du bureau géré Microsoft, quel que soit le moment de leur enregistrement.
 
 >[!NOTE]
->Des appareils peuvent être ajoutés à ce tableau à tout moment, mais nous vous fournirons un préavis de 90 jours pour toute modification affectant les archives ou la date de retraite. Les derniers périphériques ajoutés sont marqués par **\*** .
+>Des appareils peuvent être ajoutés à ce tableau à tout moment, mais nous vous fournirons un préavis de 90 jours pour toute modification affectant les archives ou la date de retraite. Les appareils ajoutés le plus récemment sont marqués avec * *\** _.
 
 
 ## <a name="microsoft-managed-desktop-devices"></a>Appareils de bureau gérés Microsoft
@@ -37,7 +37,7 @@ Les liens vers les appareils sont fournis à des fins de référence uniquement.
 
 | Modèle    | Spécifications minimales  | Autres conditions requises    | Date d’archivage   | Date de déclassement   |
 |----------|----------------|---------------------------|----------------|--------------------|
-| **\*[Dell Precision 5310 2-en-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-5310-2-in-1-business-laptop/spd/latitude-13-5310-2-in-1-laptop)** | 256 Go/Intel i5/8 Go de RAM | Appareil infrarouge requis | 28 avril 2022  | 28 avril 2025 |
+| _ *\* [Dell Precision 5310 2-in-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-5310-2-in-1-business-laptop/spd/latitude-13-5310-2-in-1-laptop)** | 256 Go/Intel i5/8 Go de RAM | Appareil infrarouge requis | 28 avril 2022  | 28 avril 2025 |
 | **\*[Dell Latitude 5410](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/new-latitude-5410-business-laptop/spd/latitude-14-5410-laptop)** | 256 Go/Intel i5/8 Go de RAM | Appareil infrarouge requis | 28 avril 2022 | 28 avril 2025  |
 | **\*[Dell Latitude 5510](https://www.dell.com/en-us/work/shop/laptops/15-5510/spd/latitude-15-5510-laptop)** | 256 Go/Intel i5/8 Go de RAM | Appareil infrarouge requis | 28 avril 2022 | 28 avril 2025 |
 | **\*[Dell Latitude 7310/7310 2-in-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/latitude-7310-business-laptop-or-2-in-1/spd/latitude-13-7310-2-in-1-laptop)** | 256 Go/Intel i5/8 Go de RAM | Appareil infrarouge requis | 4 mai 2022  | 4 mai 2025  |
@@ -59,7 +59,7 @@ Les liens vers les appareils sont fournis à des fins de référence uniquement.
 | [HP EliteBook x360 1040 G7](https://store.hp.com/us/en/pdp/hp-elitebook-x360-1040-g7-notebook-pc-customizable-8wa57av-mb) | 256 Go/Intel i5/8 Go de RAM | SKU avec 8XW08AV| 31 août 2021 | 31 août 2024 |
 | [HP Elite DragonFly](https://www8.hp.com/us/en/laptops/2-in-1s/elite-dragonfly-convertible.html) | 256 Go/Intel i5/8 Go de RAM | SKU avec 9MZ21AV | 31 mars 2021 | 31 mars 2024 |
 | [Station de travail HP Z2 mini G5](https://store.hp.com/us/en/pdp/hp-z2-mini-g5-workstation-customizable-9jd39av-mb) | 256 Go/Intel i5/8 Go de RAM | SKU avec 8QR48AV| 31 décembre 2021 | 31 décembre 2024 |
-| [Station de travail mobile HP ZBook 14U/15U G6](https://store.hp.com/us/en/mdp/hp-zbook-14u-mobile-workstation) | 256 Go/Intel i5/8 Go de RAM | SKU avec 9JD63AV, appareil infrarouge obligatoire | 30 novembre 2020 | 30 novembre 2023 |
+| **\*[Station de travail mobile HP ZBook Firefly 14/15 G7](https://store.hp.com/us/en/mdp/laptops/hp-zbook-14u-mobile-workstation)** | 256 Go/Intel i5/8 Go de RAM | SKU avec 9MZ22AV, appareil infrarouge obligatoire | 30 novembre 2021 | 30 novembre 2024 |
 
 ### <a name="microsoft"></a>Microsoft
 

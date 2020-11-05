@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à créer, modifier et supprimer les stratégies anti-hameçonnage avancées disponibles dans les organisations avec Microsoft Defender pour Office 365.
-ms.openlocfilehash: 9e07107c302f83b71a97517b11e71eac81f84f6b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: ecc68a8dc050a5f08c6982b023861e0ea8976775
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845923"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920655"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Configurer des stratégies anti-hameçonnage dans Microsoft Defender pour Office 365
 
@@ -159,9 +159,9 @@ Utilisez les procédures suivantes pour modifier les stratégies de détection d
 
      - **Adresse de messagerie** :
 
-        - Cliquez dans la zone et faites défiler la liste des utilisateurs à sélectionner.
-        - Cliquez dans la zone et commencez à taper pour filtrer la liste et sélectionnez un utilisateur.
-        - Pour supprimer une entrée, cliquez sur **supprimer** ![ l’icône Supprimer ](../../media/scc-remove-icon.png) de l’utilisateur.
+       - Cliquez dans la zone et faites défiler la liste des utilisateurs à sélectionner.
+       - Cliquez dans la zone et commencez à taper pour filtrer la liste et sélectionnez un utilisateur.
+       - Pour supprimer une entrée, cliquez sur **supprimer** ![ l’icône Supprimer ](../../media/scc-remove-icon.png) de l’utilisateur.
 
      - **Name** : cette valeur est renseignée en fonction de l’adresse de messagerie que vous avez sélectionnée, mais vous pouvez la modifier.
 
@@ -170,15 +170,15 @@ Utilisez les procédures suivantes pour modifier les stratégies de détection d
      Pour modifier une entrée existante, sélectionnez-la dans la liste.
 
      > [!NOTE]
-     > Vous pouvez entrer un maximum de 60 utilisateurs dans le centre de sécurité & conformité ou dans PowerShell.
-       
+     > Vous pouvez avoir un maximum de 60 utilisateurs dans toutes les stratégies de protection contre le hameçonnage. En d’autres termes, vous pouvez avoir 60 utilisateurs protégés dans une stratégie, 12 utilisateurs protégés par 5 stratégies, etc.
+
    - **Ajouter des domaines à protéger** : configurez l’un des paramètres suivants ou les deux :
 
      - **Inclure automatiquement les domaines dont je suis propriétaire** : la valeur par défaut est **off**. Pour l’activer, faites glisser le bouton bascule sur **activé**.
      - **Inclure les domaines personnalisés** : la valeur par défaut est **off**. Pour l’activer, faites glisser le bouton bascule sur **activé** , puis dans la zone **Ajouter des domaines** , entrez le nom de domaine (par exemple, contoso.com), appuyez sur entrée et répétez l’opération si nécessaire.
 
      > [!NOTE]
-     > Vous pouvez entrer un maximum de 50 domaines dans le centre de sécurité & conformité ou dans PowerShell.
+     > Vous pouvez avoir un maximum de 50 domaines dans toutes les stratégies de détection d’hameçonnage. En d’autres termes, vous pouvez avoir 50 utilisateurs protégés dans une stratégie, 10 utilisateurs protégés dans 5 stratégies, etc.
 
    - **Actions** : cliquez sur **modifier**
 
@@ -193,12 +193,12 @@ Utilisez les procédures suivantes pour modifier les stratégies de détection d
 
      - **Si le courrier électronique est envoyé par un domaine emprunté** : configurez l’une des actions suivantes pour les messages dans lesquels l’expéditeur usurpé se trouve dans l’un des domaines protégés que vous avez spécifiés dans **Ajouter des domaines à protéger** :
 
-     - **Ne pas appliquer d’action**
-     - **Rediriger le message vers d’autres adresses de messagerie**
-     - **Déplacer le message dans le dossier Courrier indésirable**
-     - **Mettre en quarantaine le message**
-     - **Remise du message et ajout d’autres adresses à la ligne CCI**
-     - **Supprimer le message avant qu’il ne soit remis**
+       - **Ne pas appliquer d’action**
+       - **Rediriger le message vers d’autres adresses de messagerie**
+       - **Déplacer le message dans le dossier Courrier indésirable**
+       - **Mettre en quarantaine le message**
+       - **Remise du message et ajout d’autres adresses à la ligne CCI**
+       - **Supprimer le message avant qu’il ne soit remis**
 
    - Cliquez sur **conseils de sécurité pour l’emprunt d’identité** et configurez les paramètres suivants :
 
@@ -267,7 +267,6 @@ Utilisez les procédures suivantes pour modifier les stratégies de détection d
 
      - Vous pouvez cliquer sur **modifier** dans chaque section pour revenir à la page appropriée.
      - Vous pouvez activer ou **Désactiver** les paramètres suivants **directement sur cette** page :
-
        - **Activer la protection contre l’usurpation d’identité**
        - **Activer la fonctionnalité d’expéditeur non authentifié**
 

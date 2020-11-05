@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur l’usurpation d’identité dans Exchange Online Protection (EOP), où vous pouvez autoriser ou bloquer des expéditeurs usurpés spécifiques.
-ms.openlocfilehash: 4ebc32a6c87c58edcceb0d57ee8d55be43f2dd20
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 4d40dae9518b451affc11c6666ee8f7454eceff3
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841827"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920643"
 ---
 # <a name="configure-spoof-intelligence-in-eop"></a>Configurer l’intelligence des usurpations d’identité dans EOP
 
@@ -181,7 +181,7 @@ Vous pouvez configurer les paramètres d’aide à la décision d’usurpation d
 
 - [Configurez les stratégies anti-hameçonnage dans EOP](configure-anti-phishing-policies-eop.md).
 
-- [Configurez les stratégies anti-hameçonnage dans Microsoft Defender pour Office 365 dans microsoft 365](configure-atp-anti-phishing-policies.md).
+- [Configurez les stratégies anti-hameçonnage dans Microsoft Defender pour Office 365](configure-atp-anti-phishing-policies.md).
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>Comment savoir si ces procédures ont fonctionné ?
 

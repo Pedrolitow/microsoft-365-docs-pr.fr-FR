@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: bfb58cb043f2bc641245814c41e389ddcdbfdefa
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 3dae9f208f5bb08d694322eb9f7cff35986930da
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842415"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920489"
 ---
 # <a name="frequently-asked-questions-when-turning-on-microsoft-365-defender"></a>Forum aux questions lors de l’activation de Microsoft 365 Defender
 
@@ -32,7 +32,7 @@ ms.locfileid: "48842415"
 
 
 **S’applique à :**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Lisez les réponses aux questions les plus fréquemment posées sur l’activation de [Microsoft 365 Defender](microsoft-threat-protection.md), notamment les licences et autorisations requises, le déploiement des services de prise en charge et les paramètres initiaux.
 
@@ -42,8 +42,8 @@ Pour obtenir des instructions sur la façon d’activer le service, [Lisez activ
 
 Les clients disposant des licences non E5 suivantes peuvent utiliser Microsoft 365 Defender :
 
-- Microsoft Defender pour point de terminaison
-- Microsoft Defender pour l’identité
+- Microsoft Defender pour point de terminaison
+- Microsoft Defender pour identité
 - Microsoft Cloud App Security
 - Defender pour Office 365 (plan 2)
  
@@ -59,7 +59,7 @@ Pour optimiser vos expériences Microsoft 365 Defender, nous vous recommandons d
 Microsoft 365 Defender sélectionne automatiquement un emplacement optimal pour le centre de données où les données consolidées sont traitées et stockées. Si vous disposez de Microsoft Defender for Endpoint, il sélectionne le même emplacement que celui utilisé par Defender for Endpoint.
 
 >[!NOTE]
->Microsoft Defender for Endpoint provisions automatiques dans les centres de données de l’Union européenne (UE) lors de l’activation via Azure Defender *. Microsoft 365 Defender est automatiquement mis en service dans le même centre de données UE pour les clients qui ont configuré Microsoft Defender pour un point de terminaison de cette manière. 
+>Microsoft Defender for Endpoint provisions automatiques dans les centres de données de l’Union européenne (UE) lors de l’activation via Azure Defender. Microsoft 365 Defender est automatiquement mis en service dans le même centre de données UE pour les clients qui ont configuré Microsoft Defender pour un point de terminaison de cette manière. 
 
 L’emplacement du centre de données est affiché avant et après la mise en service du service dans la page Paramètres de Microsoft 365 Defender ( **paramètres > microsoft 365 Defender** ). Si vous préférez utiliser un autre emplacement pour les centres de données, sélectionnez **besoin d’aide ?** dans le centre de sécurité Microsoft 365 pour contacter le support Microsoft.
 
@@ -95,7 +95,7 @@ Obtenez les dernières expériences disponibles sur le public en activant l' [ap
 ## <a name="is-microsoft-365-defender-available-for-us-government-community-cloud-gcc-or-gcc-high"></a>Microsoft 365 Defender est-il disponible pour le Cloud Community Government (GCC) ou GCC High ?
 Il n’est pas disponible pour le moment.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Vue d’ensemble de Microsoft 365 Defender](microsoft-threat-protection.md)
 - [Activez Microsoft 365 Defender](mtp-enable.md).

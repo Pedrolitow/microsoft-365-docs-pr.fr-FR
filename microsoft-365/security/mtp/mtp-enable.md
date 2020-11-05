@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b5bb99ed4b8cee7ea920679e20f69c7a0e002d26
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: c5b8cae9e4eabcb2b3c6a7eb76971784193a221d
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843635"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920501"
 ---
 # <a name="turn-on-microsoft-365-defender"></a>Activer Microsoft 365 Defender
 
@@ -32,7 +32,7 @@ ms.locfileid: "48843635"
 
 
 **S’applique à :**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 [Microsoft 365 Defender](microsoft-threat-protection.md) unifie votre processus de réponse aux incidents en intégrant les fonctionnalités clés de Microsoft Defender pour le point de terminaison, Microsoft Defender pour Office 365, Microsoft Cloud App Security et Microsoft Defender for Identity. Cette expérience unifiée ajoute des fonctionnalités puissantes auxquelles vous pouvez accéder dans le Centre de sécurité Microsoft 365.
 
@@ -69,7 +69,7 @@ Microsoft 365 Defender stockera et traite les données dans le [même emplacemen
 Sélectionnez **besoin d’aide ?** dans le centre de sécurité Microsoft 365 pour contacter le support Microsoft concernant la mise en service de Microsoft 365 Defender dans un autre emplacement de centre de données. 
 
 >[!NOTE]
->Microsoft Defender for Endpoint provisions automatiques dans les centres de données de l’Union européenne (UE) lors de l’activation via Azure Defender *. Microsoft 365 Defender est automatiquement mis en service dans le même centre de données UE pour les clients qui ont configuré Defender pour le système d’extrémité de cette manière. 
+>Microsoft Defender for Endpoint provisions automatiques dans les centres de données de l’Union européenne (UE) lors de l’activation via Azure Defender. Microsoft 365 Defender est automatiquement mis en service dans le même centre de données UE pour les clients qui ont configuré Defender pour le système d’extrémité de cette manière. 
 
 ### <a name="confirm-that-the-service-is-on"></a>Vérifiez que le service est activé
 Une fois le service configuré, il ajoute :
@@ -96,7 +96,7 @@ Pour obtenir des réponses aux questions les plus fréquemment posées sur l’a
 
 Le personnel du support Microsoft peut vous aider à mettre en service ou à mettre hors service le service et les ressources associées sur votre client. Pour obtenir de l’aide, sélectionnez **besoin d’aide ?** dans le centre de sécurité Microsoft 365. Lorsque vous contactez le support technique, mentionnez Microsoft 365 Defender.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Foire aux questions](mtp-enable-faq.md)
 - [Conditions requises et autres conditions préalables relatives aux licences](prerequisites.md)

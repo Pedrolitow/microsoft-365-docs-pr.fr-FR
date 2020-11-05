@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Les administrateurs peuvent en savoir plus sur les informations et les rapports disponibles dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d252b9d898d4ee5a0df854a871f821c2b02bb482
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: f7781dca48e1eae4716dbe6c7c3b40da4bae0cd8
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877776"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920007"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Informations sur le flux de courriers dans le Centre de sécurité et de conformité
 
@@ -66,13 +66,12 @@ Le tableau de bord de flux de messagerie est disponible pour les membres des gro
 
 - **[Administrateur Exchange](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** dans Azure Active Directory.
 
-- **Administrateur de flux** de service dans le centre de sécurité & conformité : si un membre de ce groupe de rôles n’est pas également membre des groupes de rôles administrateur général ou administrateur Exchange, notez les problèmes et exigences suivants :
-
+- **Administrateur de flux** de service dans le centre de sécurité & conformité. Si le compte n’est pas également membre du groupe de rôles gestion de l’organisation ou administrateur Exchange, prenez en compte les points suivants :
   - L’utilisateur doit se connecter au centre de sécurité & conformité directement à l’adresse <https://protection.office.com> .
   - L’utilisateur disposera uniquement de l’autorisation lecture seule sur le tableau de bord du flux de messagerie.
   - L’utilisateur n’a pas accès au centre d’administration Microsoft 365.
 
-Pour plus d’informations sur les autorisations dans le centre de sécurité & conformité, consultez [la rubrique autorisations dans le centre de sécurité & Compliance Center](permissions-in-the-security-and-compliance-center.md) et [accordez aux utilisateurs l’accès au centre de conformité & Security](grant-access-to-the-security-and-compliance-center.md).
+Pour plus d’informations sur les autorisations, consultez [la rubrique autorisations dans le centre de sécurité & conformité](permissions-in-the-security-and-compliance-center.md) et [accordez aux utilisateurs l’accès au centre de sécurité & conformité](grant-access-to-the-security-and-compliance-center.md).
 
 ## <a name="where-to-find-the-mail-flow-dashboard"></a>Où trouver le tableau de bord de flux de messagerie ?
 

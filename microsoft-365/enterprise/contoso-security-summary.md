@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comment Contoso utilise les fonctionnalités de sécurité de Microsoft 365 pour les entreprises.
-ms.openlocfilehash: 8d62dba96ecf19f0dc31af2cf5a2d85257ca19d5
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: a72a770029328eaddf76cbe1b2039386c50c2750
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847105"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920417"
 ---
 # <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Résumé de Microsoft 365 pour la sécurité d’entreprise pour Contoso Corporation
 
@@ -127,9 +127,9 @@ Pour suivre les meilleures pratiques en matière de sécurité et les exigences 
 
 ## <a name="security-management"></a>Gestion de la sécurité
 
-- Tableau de bord central de la sécurité pour les INFORMATICIENs avec Azure Defender *
+- Tableau de bord central de la sécurité pour les INFORMATICIENs avec Azure Defender
 
-  Contoso utilise [Azure Defender *](https://azure.microsoft.com/services/security-center/) pour présenter une vue unifiée de la sécurité et de la protection contre les menaces, pour gérer les stratégies de sécurité au sein de ses charges de travail et pour répondre aux cyberattaques.
+  Contoso utilise [Azure Defender](https://azure.microsoft.com/services/security-center/) pour présenter une vue unifiée de la sécurité et de la protection contre les menaces, pour gérer les stratégies de sécurité sur l’ensemble de ses charges de travail et pour répondre aux cyberattaques.
 
 - Tableau de bord central de sécurité pour les utilisateurs utilisant le Centre de sécurité Windows Defender
 

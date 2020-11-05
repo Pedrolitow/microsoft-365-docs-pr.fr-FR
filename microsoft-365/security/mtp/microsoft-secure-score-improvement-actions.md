@@ -20,24 +20,23 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: ff81b6e1a290d928d68cb43b455713183d24f75b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 02c79edaa05e7903a8797cdf83c18a4ce69716dc
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846639"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920535"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Évaluer votre niveau de sécurité avec le score de sécurité Microsoft
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
 
 Microsoft Secure score est une mesure de la position de sécurité d’une organisation, avec un nombre supérieur indiquant d’autres actions d’amélioration. Vous pouvez https://security.microsoft.com/securescore le trouver dans le [Centre de sécurité Microsoft 365](overview-security-center.md).
 
 Pour vous aider à trouver plus rapidement les informations dont vous avez besoin, les actions d’amélioration de Microsoft sont organisées en groupes :
 
 * Identity (comptes Azure Active Directory & rôles)
-* Data (protection des informations Microsoft)
+* Données (aucune action d’amélioration pour l’instant)
 * Appareil (Microsoft Defender pour le point de terminaison, connu sous le nom [de Microsoft Secure score for Devices](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
 * Application (applications de messagerie et de Cloud, y compris Office 365 et Microsoft Cloud App Security)
 * Infrastructure (aucune action d’amélioration pour l’instant)

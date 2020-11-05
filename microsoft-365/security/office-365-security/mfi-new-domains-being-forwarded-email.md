@@ -10,20 +10,22 @@ ms.topic: conceptual
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: ''
-description: Les administrateurs peuvent apprendre à utiliser les nouveaux domaines en cours de transmission de courriers électroniques dans le centre d’administration Exchange moderne pour rechercher les utilisateurs de leur organisation qui transfèrent des messages vers des domaines externes qui n’ont jamais été transférés.
-ms.openlocfilehash: 7dfdd63a9358b1057313962bc21424a325d7bc52
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+description: Les administrateurs peuvent apprendre à utiliser les nouveaux domaines en cours de transmission de messages électroniques dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité afin de déterminer quand leurs utilisateurs transfèrent des messages à des domaines externes qui n’ont jamais été transférés.
+ms.openlocfilehash: f2d8c9229062cbef0ad90b3d0fd843d6588a08dc
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877740"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920564"
 ---
 # <a name="new-domains-being-forwarded-email-insight-in-the-security--compliance-center"></a>Nouveaux domaines transmis par courrier électronique dans le centre de sécurité & conformité
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Même si vous avez des raisons professionnelles valables pour transférer des messages électroniques à des destinataires externes dans des domaines spécifiques, il est suspect lorsque les utilisateurs de votre organisation redirigent soudainement les messages vers des domaines externes et que personne de l’organisation n’a transféré les messages vers ces domaines avant (nouveaux domaines). Cette condition peut indiquer que les comptes d’utilisateur sont compromis. Si vous pensez que les comptes ont été compromis, consultez la rubrique relative [à la réponse à un compte de courrier compromis](https://docs.microsoft.com/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account).
+Il existe des raisons professionnelles valables pour transférer des messages électroniques à des destinataires externes dans des domaines spécifiques. Toutefois, il est suspect lorsque les utilisateurs de votre organisation redirigent soudainement les messages vers un domaine où personne de votre organisation n’a transféré les messages vers (un nouveau domaine).
+
+Cette condition peut indiquer que les comptes d’utilisateur sont compromis. Si vous pensez que les comptes ont été compromis, consultez la rubrique relative [à la réponse à un compte de courrier compromis](https://docs.microsoft.com/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account).
 
 Les **nouveaux domaines transmis par courrier électronique** dans le [centre de sécurité & Compliance Center](https://protection.office.com) vous avertissent lorsque les utilisateurs de votre organisation acheminent des messages vers de nouveaux domaines.
 

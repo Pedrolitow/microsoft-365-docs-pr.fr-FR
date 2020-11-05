@@ -5,7 +5,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: how-to
+ms.article: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -14,25 +14,29 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Les administrateurs de Microsoft 365 peuvent découvrir comment effectuer une récupération suite à une attaque par ransomware.
-ms.openlocfilehash: dd740b19abac9d30196c1ffd82c8a3f377b19dbf
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: de1cddbdf1c2b3ffeb8fd74a8f0d31e815eb1b70
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845539"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920607"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Récupération d’une attaque par ransomware dans Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Même si vous avez toutes les précautions à prendre pour protéger votre organisation, vous pouvez toujours devenir victime d’une attaque par [ransomware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware) . Les ransomware sont de grandes entreprises et les attaques sont vérifiées de façon sophistiquée.
+Même si vous avez toutes les précautions à prendre pour protéger votre organisation, vous pouvez toujours devenir victime d’une attaque par [ransomware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware) . Les ransomware sont de grandes entreprises et les attaques sont très sophistiquées.
 
-Les étapes de cette rubrique vous permettront de récupérer les données qui ont été chiffrées par le ransomware, et vous aideront à arrêter la propagation de l’infection dans votre organisation. Avant de commencer, prenez en compte les éléments suivants :
+Les étapes décrites dans cet article vous permettront de récupérer les données et d’arrêter la propagation interne de l’infection. Avant de commencer, prenez en compte les éléments suivants :
 
-- Il n’existe aucune garantie que le fait de payer le ransomware renverra l’accès à vos fichiers. En fait, le paiement du ransomware peut vous faire une cible pour plus de ransomware. Si vous avez déjà payé, mais que vous avez réussi à récupérer vos fichiers sans avoir à utiliser la résolution de l’agresseur, vous devez appeler votre banque pour savoir si elle peut bloquer la transaction. Nous vous recommandons également de signaler les attaques par ransomware à l’application de la Loi, les sites Web de signalement de fraude et Microsoft, comme décrit plus loin dans cette rubrique.
+- Il n’existe aucune garantie que le fait de payer le ransomware renverra l’accès à vos fichiers. En fait, le paiement du ransomware peut vous faire une cible pour plus de ransomware.
 
-- Il est très important de répondre rapidement à l’attaque et ses conséquences. Plus vous patientez, moins vous pouvez récupérer les données affectées.
+  Si vous avez déjà payé, mais que vous avez récupéré sans utiliser la solution de l’agresseur, contactez votre banque pour savoir si elle peut bloquer la transaction.
+
+  Nous vous recommandons également de signaler les attaques par ransomware à l’application de la Loi, les sites Web de notification de fraude et Microsoft, comme décrit plus loin dans cet article.
+
+- Il est important pour vous de répondre rapidement à l’attaque et ses conséquences. Plus vous patientez, moins vous pouvez récupérer les données affectées.
 
 ## <a name="step-1-verify-your-backups"></a>Étape 1 : vérifier vos sauvegardes
 
@@ -40,13 +44,13 @@ Si vous avez des sauvegardes hors connexion, vous pouvez probablement restaurer 
 
 Si vous n’avez pas de sauvegardes, ou si vos sauvegardes ont également été affectées par le ransomware, vous pouvez ignorer cette étape.
 
-## <a name="step-2-disable-activesync-and-onedrive-sync"></a>Étape 2 : désactivation d’ActiveSync et de la synchronisation OneDrive
+## <a name="step-2-disable-exchange-activesync-and-onedrive-sync"></a>Étape 2 : désactivation de la synchronisation Exchange ActiveSync et OneDrive
 
 Le point important ici est d’arrêter la propagation du chiffrement des données par les ransomware.
 
-Si vous pensez que le courrier électronique est une cible, vous devez temporairement désactiver l’accès des utilisateurs aux boîtes aux lettres. Exchange ActiveSync est utilisé par les appareils mobiles pour synchroniser les données entre l’appareil et la boîte aux lettres Exchange Online.
+Si vous suspectez un courrier électronique en tant que cible du chiffrement de ransomware, désactivez temporairement l’accès des utilisateurs aux boîtes aux lettres. Exchange ActiveSync synchronise les données entre les appareils et les boîtes aux lettres Exchange Online.
 
-Pour désactiver ActiveSync pour une boîte aux lettres, consultez [la rubrique How to Disable Exchange ActiveSync for users in Exchange Online](https://support.microsoft.com/help/2795303).
+Pour désactiver Exchange ActiveSync pour une boîte aux lettres, consultez [la rubrique How to Disable Exchange ActiveSync for users in Exchange Online](https://support.microsoft.com/help/2795303).
 
 Pour désactiver d’autres types d’accès à une boîte aux lettres, voir :
 
@@ -58,7 +62,9 @@ La suspension de la synchronisation de OneDrive permettra de protéger vos donn�
 
 ## <a name="step-3-remove-the-malware-from-the-affected-devices"></a>Étape 3 : supprimer le programme malveillant des appareils affectés
 
-Exécutez une analyse antivirus complète avec les mises à jour les plus récentes sur tous les ordinateurs et appareils suspects pour détecter et supprimer la charge utile associée aux ransomware. N’oubliez pas les appareils qui synchronisent des données ou la cible des lecteurs réseau mappés (ces ordinateurs et périphériques doivent également être analysés).
+Exécutez une analyse antivirus complète et active sur tous les ordinateurs et appareils suspects pour détecter et supprimer la charge utile associée aux ransomware.
+
+N’oubliez pas d’analyser les périphériques qui synchronisent des données ou les cibles des lecteurs réseau mappés.
 
 Vous pouvez utiliser [Windows Defender](https://www.microsoft.com/windows/comprehensive-security) ou (pour les clients plus anciens) [Microsoft Security Essentials](https://www.microsoft.com/download/details.aspx?id=5201).
 
@@ -90,7 +96,7 @@ Dans le cas rare où le ransomware a supprimé tous vos courriers électroniques
 
 ## <a name="step-7-re-enable-exchange-activesync-and-onedrive-sync"></a>Étape 7 : réactivation de la synchronisation Exchange ActiveSync et OneDrive
 
-Une fois que vous avez nettoyé vos ordinateurs et vos appareils et récupéré vos données, vous pouvez réactiver la synchronisation ActiveSync et OneDrive que vous avez précédemment désactivée à l' [étape 2](#step-2-disable-activesync-and-onedrive-sync).
+Une fois que vous avez nettoyé vos ordinateurs et vos appareils et récupéré vos données, vous pouvez réactiver Exchange ActiveSync et la synchronisation OneDrive précédemment désactivée à l' [étape 2](#step-2-disable-exchange-activesync-and-onedrive-sync).
 
 ## <a name="step-8-optional-block-onedrive-sync-for-specific-file-extensions"></a>Étape 8 (facultatif) : bloquer la synchronisation de OneDrive pour des extensions de fichier spécifiques
 
@@ -126,7 +132,7 @@ Si votre pays n’est pas indiqué, demandez à vos organismes d’application d
 
 ### <a name="submit-email-messages-to-microsoft"></a>Envoyer des messages électroniques à Microsoft
 
-Vous pouvez signaler un message de hameçonnage contenant des ransomware à l’aide de l’une des méthodes suivantes. Pour plus d’informations, voir [Signaler des messages et des fichiers à Microsoft](report-junk-email-messages-to-microsoft.md).
+Vous pouvez signaler les messages de hameçonnage contenant des ransomware à l’aide de l’une des méthodes suivantes. Pour plus d’informations, voir [Signaler des messages et des fichiers à Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## <a name="see-also"></a>Voir aussi
 

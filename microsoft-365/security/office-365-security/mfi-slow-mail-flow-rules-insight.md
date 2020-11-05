@@ -14,12 +14,12 @@ ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à utiliser le correctif lent les règles de flux de messagerie du centre de sécurité & Compliance Center pour identifier et corriger les règles de flux de messagerie inefficaces ou rompues (également appelées règles de transport) dans leur organisation.
-ms.openlocfilehash: 6a2a3c42eadf3c621b34d2a21344eafd2618e669
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: f51c5a577fc6d9c52e35a5217cae4ae94c546c9d
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877536"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920547"
 ---
 # <a name="fix-slow-mail-flow-rules-insight-in-the-security--compliance-center"></a>Réparer le ralentissement des règles de flux de messagerie dans le centre de sécurité & conformité
 
@@ -32,7 +32,9 @@ Des règles inefficaces de flux de messagerie (également appelées règles de t
 - Conditions qui utilisent des critères de correspondance des expressions régulières complexes (Regex).
 - Conditions d’utilisation de l’archivage de contenu dans les pièces jointes.
 
-Les **règles de flux de messagerie de résolution lente** dans la zone **recommandé pour vous** du [tableau de bord de flux de messagerie](mail-flow-insights-v2.md) dans le centre de [sécurité & conformité](https://protection.office.com) vous avertit lorsqu’une règle de flux de messagerie prend trop de temps pour se terminer. Cette vue ne s’affiche qu’une fois la condition détectée (si vous n’avez pas de boucles de courrier, vous ne verrez pas la vue d’ensemble).
+Les **règles de flux de messagerie de résolution lente** dans la zone **recommandé pour vous** du [tableau de bord de flux de messagerie](mail-flow-insights-v2.md) dans le centre de [sécurité & conformité](https://protection.office.com) vous avertit lorsqu’une règle de flux de messagerie prend trop de temps pour se terminer.
+
+Cette vue ne s’affiche qu’une fois la condition détectée (si vous n’avez pas de boucles de courrier, vous ne verrez pas la vue d’ensemble).
 
 Vous pouvez utiliser cette notification pour identifier et ajuster les règles de flux de messagerie afin de réduire les retards de flux de messagerie.
 
@@ -47,8 +49,8 @@ Lorsque vous cliquez sur **afficher les détails** dans le widget, un lanceur ap
 
 ![Fenêtre volante de détails qui apparaît après avoir cliqué sur Afficher les détails dans la boîte de message Fix ralentissement des règles de flux de messagerie](../../media/mfi-fix-slow-mail-flow-rules-details.png)
 
-Pour plus d’informations sur les conditions et les exceptions dans les règles de flux de messagerie dans Exchange Online, consultez la rubrique [mail Flow Rule conditions and exceptions (prédicats) in Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
+Pour plus d’informations sur les conditions et les exceptions dans les règles de flux de messagerie, consultez la rubrique [mail Flow Rule conditions and exceptions (prédicats) in Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="see-also"></a>Voir aussi
 
 Pour plus d’informations sur les autres informations du tableau de bord de flux de messagerie, consultez [la rubrique mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).

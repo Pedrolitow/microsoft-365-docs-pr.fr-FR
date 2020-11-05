@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez la structure de base de l’infrastructure informatique de contoso sur site et la façon dont les besoins de l’entreprise sont satisfaits par Microsoft 365 pour les entreprises.
-ms.openlocfilehash: 0a837a457869fc579d94ee5e5f9bb114cb93f641
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: b3b67429faccc5d22d49a2921fff4c8b3c3c062e
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847129"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920453"
 ---
 # <a name="contoso-it-infrastructure-and-business-needs"></a>Infrastructure informatique contoso et besoins de l’entreprise
 
@@ -122,9 +122,9 @@ Le service informatique de Contoso a déterminé le mappage suivant des besoins 
 |  | Accroître la créativité et l’innovation | Windows Ink, Cortana at Work, PowerPoint |
 | Sécurité |  |  |
 |  | Gestion des identités et des accès | Comptes Administrateur général dédiés avec l’authentification multifacteur (MFA) Azure et Azure AD Privileged Identity Management (PIM) <BR> Authentification multifacteur pour tous les comptes d’utilisateur <BR> Accès conditionnel <BR> Windows Hello <BR> Windows Credential Guard |
-|  | Protection contre les menaces | Advanced Threat Analytics <BR> Windows Defender <BR> Defender pour Office 365 <BR> Microsoft Defender pour Office 365 <BR> Enquête et réponse de menace Microsoft 365 <BR> |
+|  | Protection contre les menaces | Advanced Threat Analytics <BR> Windows Defender <BR> Defender pour Office 365 <BR> Microsoft Defender pour Office 365 <BR> Enquête et réponse de menace Microsoft 365 <BR> |
 |  | Protection des informations | Azure Information Protection <BR> Protection contre la perte de données (DLP) <BR> Protection des informations Windows (WIP) <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
-|  | Gestion de la sécurité | Azure Defender *  <BR> Centre de sécurité Windows Defender |
+|  | Gestion de la sécurité | Azure Defender  <BR> Centre de sécurité Windows Defender |
 | Accès mobile et à distance, et partenaires professionnels |  |  |
 |  | Meilleure sécurité pour les travailleurs mobiles et à distance | Microsoft Intune |
 |  | Réduire l’infrastructure d’accès distant pour les employés | Charges de travail Microsoft 365 et données informatiques |
