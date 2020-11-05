@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Vous pouvez utiliser le Centre de sécurité et conformité Office 365 ou le Centre de conformité Microsoft 365 pour rechercher dans le journal d’audit unifié les activités des utilisateurs et des administrateurs de votre organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cf5481584031469b459d5662f75e32fd9a793a94
-ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
+ms.openlocfilehash: d7deb2068db9f15f31a04c45564b966af90d2e2b
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48816757"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846295"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Recherchez le journal d’audit dans le centre de conformité
 
@@ -102,7 +102,7 @@ Avant de commencer à effectuer une recherche dans le journal d’audit, veillez
 
   Pour plus d’informations, consultez l’article [Désactiver la recherche dans le journal d’audit](turn-audit-log-search-on-or-off.md).
 
-- Comme indiqué précédemment, la cmdlet sous-jacente utilisée pour effectuer une recherche dans le journal d’audit est une cmdlet Exchange Online, à savoir **Search-UnifiedAuditLog** . Cela signifie que vous pouvez utiliser cette cmdlet pour effectuer une recherche dans le journal d’audit au lieu d’utiliser la page **Recherche dans le journal d’audit** du Centre de sécurité et conformité. Vous devez exécuter cette cmdlet dans PowerShell distant connecté à votre organisation Exchange Online. Pour plus d’informations, voir [Search-UnifiedAuditLog](https://go.microsoft.com/fwlink/p/?linkid=834776).
+- Comme indiqué précédemment, la cmdlet sous-jacente utilisée pour effectuer une recherche dans le journal d’audit est une cmdlet Exchange Online, à savoir **Search-UnifiedAuditLog**. Cela signifie que vous pouvez utiliser cette cmdlet pour effectuer une recherche dans le journal d’audit au lieu d’utiliser la page **Recherche dans le journal d’audit** du Centre de sécurité et conformité. Vous devez exécuter cette cmdlet dans PowerShell distant connecté à votre organisation Exchange Online. Pour plus d’informations, voir [Search-UnifiedAuditLog](https://go.microsoft.com/fwlink/p/?linkid=834776).
 
   Pour plus d’informations sur l’exportation des résultats de recherche renvoyés par l’applet de commande **Search-UnifiedAuditLog** vers un fichier CSV, voir la section «conseils pour l'exportation et l’affichage du journal d’audit» dans [exporter, configurer et afficher les enregistrements du journal d’audit.](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log).
 
@@ -112,7 +112,7 @@ Avant de commencer à effectuer une recherche dans le journal d’audit, veillez
 
   |Service ou fonctionnalité Microsoft 365|30 minutes|24 heures|
   |:-----|:-----:|:-----:|
-  |Schéma Threat Intelligence et Protection avancée contre les menaces|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Defender pour Office 365 et veille contre les menaces|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Azure Active Directory (événements de connexion utilisateur)||![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Azure Active Directory (événements administrateur)||![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Protection contre la perte de données|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
@@ -139,6 +139,9 @@ Avant de commencer à effectuer une recherche dans le journal d’audit, veillez
 
 ## <a name="search-the-audit-log"></a>Effectuer une recherche dans le journal d’audit
 
+> [!NOTE]
+> Nous cherchons actuellement un problème dans lequel les activités Azure AD ne sont pas disponibles dans l’outil de recherche dans le journal d’audit. Ce problème a commencé vers le 26 octobre 2020. Ces activités comprennent les activités d'administration des utilisateurs Azure AD, les activités d'administration des groupes, les activités d'administration des applications, les activités d'administration des rôles et les activités d'administration des répertoires. Nous fournirons une mise à jour une fois le problème résolu.
+    
 Pour effectuer une recherche dans le journal d’audit dans Office 365, vous devez procéder comme suit. 
 
 [Étape 1 : effectuer une recherche dans le journal d’audit](#step-1-run-an-audit-log-search)
@@ -158,7 +161,7 @@ Pour effectuer une recherche dans le journal d’audit dans Office 365, vous dev
 
 2. Connectez-vous à l’aide de votre compte scolaire ou professionnel.
 
-3. Dans le volet gauche du Centre de sécurité et de conformité, cliquez sur **Recherche** puis sur **Recherche du journal d’audit** .
+3. Dans le volet gauche du Centre de sécurité et de conformité, cliquez sur **Recherche** puis sur **Recherche du journal d’audit**.
 
     La page **Recherche dans le journal d’audit** s’affiche.
 
@@ -176,7 +179,7 @@ Pour effectuer une recherche dans le journal d’audit dans Office 365, vous dev
    1. **Date de début** et **Date de fin**  : Les sept derniers jours sont sélectionnés par défaut. Sélectionnez une plage de dates et d’heures pour afficher les événements survenus pendant cette période. Les date et heure sont présentées au format UTC (temps universel coordonné). La plage de dates maximale que vous pouvez spécifier est de 90 jours. Une erreur s’affiche si la plage de dates sélectionnée est supérieure à 90 jours.
 
       > [!TIP]
-      > Si vous utilisez la plage de dates maximale de 90 jours, sélectionnez l’heure actuelle pour l’option **Date de début** . Dans le cas contraire, un message d’erreur indiquant que la date de début est antérieure à la date de fin apparaît. Si vous avez activé l’audit au cours des 90 derniers jours, la plage de dates maximale ne peut pas commencer avant la date à laquelle l’audit a été activé.
+      > Si vous utilisez la plage de dates maximale de 90 jours, sélectionnez l’heure actuelle pour l’option **Date de début**. Dans le cas contraire, un message d’erreur indiquant que la date de début est antérieure à la date de fin apparaît. Si vous avez activé l’audit au cours des 90 derniers jours, la plage de dates maximale ne peut pas commencer avant la date à laquelle l’audit a été activé.
 
    1. **Utilisateurs**  : Cliquez dans cette zone, puis sélectionnez un ou plusieurs utilisateurs pour lesquels afficher les résultats. Les entrées du journal d’audit pour l’activité sélectionnée effectuée par les utilisateurs que vous sélectionnez dans cette zone apparaissent dans la liste des résultats. Laissez cette zone vide pour renvoyer les entrées pour tous les utilisateurs (et les comptes de service) dans votre organisation.
 
@@ -202,17 +205,17 @@ Pour effectuer une recherche dans le journal d’audit dans Office 365, vous dev
 
   ![Cliquez sur le nom d’un groupe d’activités pour sélectionner toutes les activités](../media/3cde97cb-6f35-47c0-8612-ecd9c6ac36a3.png)
 
-- Vous devez sélectionner **Afficher les résultats pour toutes les activités** dans la liste **Activités** pour afficher les entrées du journal d’audit de l’administrateur Exchange. Les événements dans ce journal d’audit affichent un nom de cmdlet (par exemple, **Set-Mailbox** ) dans la colonne **Activité** des résultats. Pour plus d’informations, cliquez sur l’onglet **activités auditées** dans cette rubrique, puis sur **activités de l’administrateur Exchange** .
+- Vous devez sélectionner **Afficher les résultats pour toutes les activités** dans la liste **Activités** pour afficher les entrées du journal d’audit de l’administrateur Exchange. Les événements dans ce journal d’audit affichent un nom de cmdlet (par exemple, **Set-Mailbox** ) dans la colonne **Activité** des résultats. Pour plus d’informations, cliquez sur l’onglet **activités auditées** dans cette rubrique, puis sur **activités de l’administrateur Exchange**.
 
-  De même, certaines activités d’audit n’ont pas d’élément correspondant dans la liste **Activités** . Si vous connaissez le nom de l’opération correspondant à ces activités, vous pouvez effectuer une recherche sur toutes les activités, puis filtrer les résultats en entrant le nom de l’opération dans la zone pour la colonne **Activité** . Voir [Étape 3 : filtrer les résultats de recherche](#step-3-filter-the-search-results) pour plus d’informations sur le filtrage des résultats.
+  De même, certaines activités d’audit n’ont pas d’élément correspondant dans la liste **Activités**. Si vous connaissez le nom de l’opération correspondant à ces activités, vous pouvez effectuer une recherche sur toutes les activités, puis filtrer les résultats en entrant le nom de l’opération dans la zone pour la colonne **Activité**. Voir [Étape 3 : filtrer les résultats de recherche](#step-3-filter-the-search-results) pour plus d’informations sur le filtrage des résultats.
 
 - Cliquez sur **Effacer** pour effacer les critères de recherche actuels. La plage de dates reprend la valeur par défaut des sept derniers jours. Vous pouvez également cliquer sur **Effacer tout pour afficher les résultats correspondant à toutes les activités** pour annuler toutes les activités sélectionnées.
 
-- Si 5 000 résultats sont détectés, vous pouvez partir du principe que plus de 5 000 événements correspondent aux critères de recherche. Vous pouvez affiner les critères de recherche et relancer la recherche pour renvoyer moins de résultats. Vous pouvez également exporter tous les résultats de recherche en sélectionnant **Exporter les résultats** > \> **Télécharger tous les résultats** .
+- Si 5 000 résultats sont détectés, vous pouvez partir du principe que plus de 5 000 événements correspondent aux critères de recherche. Vous pouvez affiner les critères de recherche et relancer la recherche pour renvoyer moins de résultats. Vous pouvez également exporter tous les résultats de recherche en sélectionnant **Exporter les résultats** > \> **Télécharger tous les résultats**.
 
 ### <a name="step-2-view-the-search-results"></a>Étape 2 : consulter les résultats de la recherche
 
-Les résultats d’une recherche dans le journal d’audit apparaissent sous **Résultats** sur la page **Recherche dans le journal d’audit** . Comme indiqué précédemment, un maximum de 5 000 événements (les plus récents) peut s’afficher, par incréments de 150. Pour afficher davantage d’événements, vous pouvez utiliser la barre de défilement du volet **Résultats** ou appuyer sur **Maj+Fin** afin d’afficher les 150 événements suivants.
+Les résultats d’une recherche dans le journal d’audit apparaissent sous **Résultats** sur la page **Recherche dans le journal d’audit**. Comme indiqué précédemment, un maximum de 5 000 événements (les plus récents) peut s’afficher, par incréments de 150. Pour afficher davantage d’événements, vous pouvez utiliser la barre de défilement du volet **Résultats** ou appuyer sur **Maj+Fin** afin d’afficher les 150 événements suivants.
 
 Les résultats contiennent les informations suivantes sur chaque événement renvoyé par la recherche :
 
@@ -225,7 +228,7 @@ Les résultats contiennent les informations suivantes sur chaque événement ren
 
 - **Utilisateur**  : Utilisateur (ou compte de service) qui a effectué l’action ayant déclenché l’événement.
 
-- **Activité :** Activité effectuée par l’utilisateur. Cette valeur correspond aux activités que vous avez sélectionnées dans la liste déroulante **Activités** . Pour un événement figurant dans le journal d’audit de l’administrateur Exchange, la valeur dans cette colonne est une cmdlet Exchange.
+- **Activité :** Activité effectuée par l’utilisateur. Cette valeur correspond aux activités que vous avez sélectionnées dans la liste déroulante **Activités**. Pour un événement figurant dans le journal d’audit de l’administrateur Exchange, la valeur dans cette colonne est une cmdlet Exchange.
 
 - **Élément :** Objet qui a été créé ou modifié suite à l’activité correspondante. Par exemple, fichier consulté ou modifié, ou compte d’utilisateur mis à jour. Certaines activités n’ont pas de valeur dans cette colonne.
 
@@ -236,7 +239,7 @@ Les résultats contiennent les informations suivantes sur chaque événement ren
 
 #### <a name="view-the-details-for-a-specific-event"></a>Afficher les détails d’un événement spécifique
 
-Vous pouvez afficher davantage d’informations sur un événement en cliquant sur l’enregistrement d’événement dans la liste des résultats de recherche. La page **Détails** qui s’affiche contient les propriétés détaillées de l’enregistrement d’événement. Les propriétés affichées dépendent du service dans lequel l’événement se produit. Pour afficher des détails supplémentaires, cliquez sur **Plus d’informations** . Pour consulter des descriptions, voir [Propriétés détaillées dans le journal d’audit](detailed-properties-in-the-office-365-audit-log.md).
+Vous pouvez afficher davantage d’informations sur un événement en cliquant sur l’enregistrement d’événement dans la liste des résultats de recherche. La page **Détails** qui s’affiche contient les propriétés détaillées de l’enregistrement d’événement. Les propriétés affichées dépendent du service dans lequel l’événement se produit. Pour afficher des détails supplémentaires, cliquez sur **Plus d’informations**. Pour consulter des descriptions, voir [Propriétés détaillées dans le journal d’audit](detailed-properties-in-the-office-365-audit-log.md).
 
 ![Cliquez sur Informations supplémentaires pour afficher les propriétés détaillées de l’enregistrement d’événement du journal d’audit](../media/6df582ae-d339-4735-b1a6-80914fb77a08.png)
 
@@ -248,7 +251,7 @@ Pour filtrer les résultats :
 
 1. Effectuez une recherche dans le journal d’audit.
 
-2. Lorsque les résultats sont affichés, cliquez sur **Filtrer les résultats** .
+2. Lorsque les résultats sont affichés, cliquez sur **Filtrer les résultats**.
 
    Les zones de mot clé apparaissent sous chaque en-tête de colonne.
 
@@ -256,10 +259,10 @@ Pour filtrer les résultats :
 
    ![Tapez un mot dans le filtre pour afficher les événements correspondant au filtre](../media/542dc323-a997-402c-934b-cc5e218e50bc.png)
 
-4. Pour effacer un filtre, cliquez sur le **X** dans la zone de filtre, ou cliquez sur **Masquer le filtrage** .
+4. Pour effacer un filtre, cliquez sur le **X** dans la zone de filtre, ou cliquez sur **Masquer le filtrage**.
 
 > [!TIP]
-> Pour afficher des événements dans le journal d’audit de l’administrateur Exchange, tapez un **-** (tiret) dans la zone de filtre **Activité** . Cela permet d’afficher le nom des cmdlets qui figurent dans la colonne **Activité** des événements d’administrateur Exchange. Vous pouvez ensuite trier les noms de cmdlet par ordre alphabétique.
+> Pour afficher des événements dans le journal d’audit de l’administrateur Exchange, tapez un **-** (tiret) dans la zone de filtre **Activité**. Cela permet d’afficher le nom des cmdlets qui figurent dans la colonne **Activité** des événements d’administrateur Exchange. Vous pouvez ensuite trier les noms de cmdlet par ordre alphabétique.
 
 ### <a name="step-4-export-the-search-results-to-a-file"></a>Étape 4 : exporter les résultats de la recherche dans un fichier
 
@@ -269,9 +272,9 @@ Vous pouvez exporter les résultats d’une recherche dans le journal d’audit 
 
 2. Cliquez sur **Exporter les résultats** , puis sélectionnez l’une des options suivantes :
 
-   - **Enregistrer les résultats chargés :** Choisissez cette option pour exporter uniquement les entrées affichées sous **Résultats** sur la page **Recherche dans le journal d’audit** . Le fichier .csv téléchargé contient les mêmes colonnes (et données) que celles affichées sur la page (Date, Utilisateur, Activité, Élément et Détails). Une colonne supplémentaire (nommée **Plus** ) est incluse dans le fichier .csv qui contient davantage d’informations de l’entrée du journal d’audit. Comme vous exportez les mêmes résultats que ceux chargés (et visibles) sur la page **Recherche dans le journal d’audit** , 5 000 entrées au maximum sont exportées.
+   - **Enregistrer les résultats chargés :** Choisissez cette option pour exporter uniquement les entrées affichées sous **Résultats** sur la page **Recherche dans le journal d’audit**. Le fichier .csv téléchargé contient les mêmes colonnes (et données) que celles affichées sur la page (Date, Utilisateur, Activité, Élément et Détails). Une colonne supplémentaire (nommée **Plus** ) est incluse dans le fichier .csv qui contient davantage d’informations de l’entrée du journal d’audit. Comme vous exportez les mêmes résultats que ceux chargés (et visibles) sur la page **Recherche dans le journal d’audit** , 5 000 entrées au maximum sont exportées.
 
-   - **Télécharger tous les résultats**  : choisissez cette option pour exporter toutes les entrées du journal d’audit qui correspondent aux critères de recherche. Pour un ensemble plus vaste de résultats de recherche, choisissez cette option pour télécharger toutes les entrées du journal d’audit en plus des 5 000 résultats d’audit qui apparaissent sur la page **Recherche dans le journal d’audit** . Cette option permet de télécharger les données brutes du journal d’audit dans un fichier .csv et contient des informations supplémentaires de l’entrée du journal d’audit dans la colonne **AuditData** . Le téléchargement du fichier peut prendre plus de temps si vous choisissez cette option d’exportation, car le fichier peut-être plus volumineux que celui téléchargé à l’aide de l’autre option.
+   - **Télécharger tous les résultats**  : choisissez cette option pour exporter toutes les entrées du journal d’audit qui correspondent aux critères de recherche. Pour un ensemble plus vaste de résultats de recherche, choisissez cette option pour télécharger toutes les entrées du journal d’audit en plus des 5 000 résultats d’audit qui apparaissent sur la page **Recherche dans le journal d’audit**. Cette option permet de télécharger les données brutes du journal d’audit dans un fichier .csv et contient des informations supplémentaires de l’entrée du journal d’audit dans la colonne **AuditData**. Le téléchargement du fichier peut prendre plus de temps si vous choisissez cette option d’exportation, car le fichier peut-être plus volumineux que celui téléchargé à l’aide de l’autre option.
 
      > [!IMPORTANT]
      > Vous pouvez télécharger un maximum de 50 000 entrées dans un fichier .csv à partir d’une seule recherche dans le journal d’audit. Si 50 000 résultats sont téléchargés dans le fichier .csv, vous pouvez partir du principe que plus de 50 000 événements remplissent les critères de recherche. Pour exporter davantage de résultats, essayez d’utiliser une plage de dates pour réduire le nombre d’entrées du journal d’audit. Vous devrez peut-être effectuer plusieurs recherches avec des plages de dates plus réduites pour exporter plus de 50 000 entrées.
@@ -286,7 +289,7 @@ Vous pouvez exporter les résultats d’une recherche dans le journal d’audit 
 
   Après avoir fractionné la colonne **AuditData** , vous pouvez filtrer sur la colonne **Opérations** pour afficher les propriétés détaillées pour un type d’activité spécifique.
 
-- L’option **Télécharger tous les résultats** télécharge les données brutes du journal d’audit dans un fichier .csv. Les noms de colonne qui apparaissent dans ce fichier (CreationDate, UserIds, Operation, AuditData) sont différents de ceux figurant dans le fichier téléchargé si vous sélectionnez l’option **Enregistrer les résultats chargés** . Les valeurs dans les deux fichiers .csv peuvent également différer pour la même activité. Par exemple, l’activité dans la colonne **Action** du fichier .csv peut avoir une valeur différente de la version « conviviale » qui apparaît dans la colonne **Activité** sur la page Recherche dans le **journal d’audit** . Par exemple, MailboxLogin et Utilisateur connecté à la boîte aux lettres.
+- L’option **Télécharger tous les résultats** télécharge les données brutes du journal d’audit dans un fichier .csv. Les noms de colonne qui apparaissent dans ce fichier (CreationDate, UserIds, Operation, AuditData) sont différents de ceux figurant dans le fichier téléchargé si vous sélectionnez l’option **Enregistrer les résultats chargés**. Les valeurs dans les deux fichiers .csv peuvent également différer pour la même activité. Par exemple, l’activité dans la colonne **Action** du fichier .csv peut avoir une valeur différente de la version « conviviale » qui apparaît dans la colonne **Activité** sur la page Recherche dans le **journal d’audit**. Par exemple, MailboxLogin et Utilisateur connecté à la boîte aux lettres.
 
 - Lorsque vous téléchargez tous les résultats d’une requête de recherche qui contient les événements de différents services, la colonne **AuditData** du fichier .csv contient différentes propriétés selon le service dans lequel l’action a été effectuée. Par exemple, les entrées des journaux d’audit Exchange et Azure AD incluent une propriété nommée **ResultStatus** qui indique si l’action a réussi ou non. Cette propriété n’est pas incluse pour les événements dans SharePoint. De même, les événements SharePoint ont une propriété qui identifie l’URL de site pour les activités liées aux fichiers et dossiers. Pour modifier ce comportement, vous pouvez utiliser des recherches différentes pour exporter les résultats des activités d’un service.
 
@@ -479,7 +482,7 @@ Les événements FilePreviewed et FileAccessed indiquent que l’appel d’un ut
 
 #### <a name="the-appsharepoint-user-in-audit-records"></a>L’application\@sharepoint de l’utilisateur dans des enregistrements d’audit
 
-Dans les enregistrements d’audit relatives à certaines activités de fichier (et d’autres activités liées à SharePoint), vous pouvez remarquer que l’utilisateur ayant effectué l’activité (identifié dans les champs Utilisateur et UserId) est app@sharepoint. Cela indique que l' « Utilisateur » ayant effectué l’activité était une application. Dans ce cas, l’application a obtenu des autorisations dans SharePoint pour effectuer des actions à l’échelle de l’organisation (par exemple, effectuer une recherche de site SharePoint ou de compte OneDrive) au nom d’un utilisateur, d’un administrateur ou d’un service. Ce processus d’octroi d’autorisations à une application est appelé accès par *Application SharePoint uniquement* . Cela signifie que l’authentification présentée à SharePoint pour effectuer une action a été faite par une application au lieu d’un utilisateur. C’est la raison pour laquelle l’utilisateur app@sharepoint est trouvé dans certains enregistrements d’audit. Pour obtenir plus d'informations, consultez [Accorder l’accès en utilisant l'application SharePoint uniquement](https://docs.microsoft.com/sharepoint/dev/solution-guidance/security-apponly-azureacs).
+Dans les enregistrements d’audit relatives à certaines activités de fichier (et d’autres activités liées à SharePoint), vous pouvez remarquer que l’utilisateur ayant effectué l’activité (identifié dans les champs Utilisateur et UserId) est app@sharepoint. Cela indique que l' « Utilisateur » ayant effectué l’activité était une application. Dans ce cas, l’application a obtenu des autorisations dans SharePoint pour effectuer des actions à l’échelle de l’organisation (par exemple, effectuer une recherche de site SharePoint ou de compte OneDrive) au nom d’un utilisateur, d’un administrateur ou d’un service. Ce processus d’octroi d’autorisations à une application est appelé accès par *Application SharePoint uniquement*. Cela signifie que l’authentification présentée à SharePoint pour effectuer une action a été faite par une application au lieu d’un utilisateur. C’est la raison pour laquelle l’utilisateur app@sharepoint est trouvé dans certains enregistrements d’audit. Pour obtenir plus d'informations, consultez [Accorder l’accès en utilisant l'application SharePoint uniquement](https://docs.microsoft.com/sharepoint/dev/solution-guidance/security-apponly-azureacs).
 
 Par exemple, app@sharepoint est souvent considéré comme l’utilisateur des événements « Requête de recherche effectuée » et « Fichier consulté ». La raison est qu’une application de votre organisation avec accès Application SharePoint uniquement effectue des requêtes de recherche et accède à des fichiers lors de l’application de stratégies de rétention à des comptes OneDrive ainsi qu'à des sites.
 
@@ -603,7 +606,7 @@ Le tableau suivant répertorie les événements liés à l’attribution d’aut
 |Paramètre de demande d’accès modifié|WebRequestAccessModified|Les paramètres de demande d’accès ont été modifiés sur un site.|
 |Paramètre «les membres peuvent partagés» modifié|WebMembersCanShareModified|Le paramètre **les membres peuvent partager** a été modifié sur un site.|
 |Modification du niveau d’autorisation sur une collection de sites|PermissionLevelModified|Un niveau d’autorisation a été modifié sur une collection de sites.|
-|Autorisations de site modifiées|SitePermissionsModified|L’administrateur ou le propriétaire du site (ou compte système) modifie le niveau d’autorisation affecté à un groupe sur un site. Cette activité est également enregistrée si toutes les autorisations sont supprimées d’un groupe. <br/><br/> **Remarque** : cette opération est déconseillée dans SharePoint Online. Pour rechercher des événements connexes, vous pouvez rechercher d’autres activités liées à une autorisation, telles que **Administrateur de collection de sites ajoutée** , **Utilisateur ou groupe ajouté à un groupe SharePoint** , **Utilisateur autorisé à créer des groupes** , **Groupe créé** et **Groupe supprimé** .|
+|Autorisations de site modifiées|SitePermissionsModified|L’administrateur ou le propriétaire du site (ou compte système) modifie le niveau d’autorisation affecté à un groupe sur un site. Cette activité est également enregistrée si toutes les autorisations sont supprimées d’un groupe. <br/><br/> **Remarque** : cette opération est déconseillée dans SharePoint Online. Pour rechercher des événements connexes, vous pouvez rechercher d’autres activités liées à une autorisation, telles que **Administrateur de collection de sites ajoutée** , **Utilisateur ou groupe ajouté à un groupe SharePoint** , **Utilisateur autorisé à créer des groupes** , **Groupe créé** et **Groupe supprimé**.|
 |Suppression d’un niveau d’autorisation dans une collection de sites|PermissionLevelRemoved|Un niveau d’autorisation a été supprimé d’une collection de sites.|
 |Administrateur de collection de site supprimé|SiteCollectionAdminRemoved|L’administrateur de collection de sites ou le propriétaire supprime une personne en tant qu’administrateur de collection de sites pour un site. Cette activité est également enregistrée lorsqu’un administrateur se supprime de la liste des administrateurs de collections de sites pour le compte OneDrive d’un utilisateur (en modifiant le profil utilisateur dans le centre d’administration SharePoint).  Pour renvoyer cette activité dans les résultats de la recherche dans le journal d’audit, vous devez rechercher toutes les activités.|
 |Utilisateur ou groupe supprimé au groupe SharePoint|RemovedFromGroup|L’utilisateur a supprimé un membre ou un invité d’un groupe SharePoint. Il s’agit peut-être d’une action intentionnelle ou du résultat d’une autre activité (par exemple, événement d’annulation de partage).|
@@ -665,7 +668,7 @@ Le tableau suivant répertorie les activités qui peuvent être enregistrées pa
 |Messages copiés vers un autre dossier|Copy|Un message a été copié vers un autre dossier.|
 |Élément de boîte aux lettres créé|Créer|Un élément est créé dans le dossier Calendrier, Contacts, Notes ou Tâches de la boîte aux lettres.  Par exemple, une nouvelle demande de réunion est créée. Notez que la création, l’envoi ou la réception d’un message ne sont pas audités. De même, la création d’un dossier de boîte aux lettres n’est pas auditée.|
 |Nouvelle règle de boîte de réception créée dans Outlook Web App|New-InboxRule|Un propriétaire de boîte aux lettres ou un autre utilisateur ayant accès à la boîte aux lettres a créé une règle de boîte de réception dans Outlook Web App.|
-|Messages supprimés du dossier Éléments supprimés|SoftDelete|Un message a été supprimé définitivement ou non du dossier Éléments supprimés. Ces éléments sont déplacés vers le dossier Éléments récupérables. Les messages sont également déplacés vers le dossier Éléments récupérables lorsqu’un utilisateur les sélectionne et appuie sur **Maj+Suppr** .|
+|Messages supprimés du dossier Éléments supprimés|SoftDelete|Un message a été supprimé définitivement ou non du dossier Éléments supprimés. Ces éléments sont déplacés vers le dossier Éléments récupérables. Les messages sont également déplacés vers le dossier Éléments récupérables lorsqu’un utilisateur les sélectionne et appuie sur **Maj+Suppr**.|
 |Message étiqueté en tant qu’enregistrement|ApplyRecordLabel|Un message a été classifié en tant qu’enregistrement. Ceci se produit lorsqu’une étiquette de rétention qui classifie le contenu en tant qu’enregistrement est manuellement ou automatiquement appliquée à un message.|
 |Messages déplacés vers un autre dossier|Move|Un message a été déplacé vers un autre dossier.|
 |Messages déplacés vers le dossier Éléments supprimés|MoveToDeletedItems|Un message a été supprimé et déplacé vers le dossier Éléments supprimés.|
@@ -811,7 +814,7 @@ Vous pouvez effectuer une recherche dans le journal d’audit des activités des
 
 ### <a name="microsoft-teams-healthcare-activities"></a>Activités Santé Microsoft Teams
 
-Si votre organisation utilise l’application [Patients](https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-app-overview) dans Microsoft Teams, vous pouvez effectuer une recherche dans le journal d’audit pour consulter les activités liées à l’application Patients. Si votre environnement est configuré pour prendre en charge l’application Patients, un groupe d’activités supplémentaire pour ces activités est disponible dans la liste du sélecteur **Activitiés** .
+Si votre organisation utilise l’application [Patients](https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-app-overview) dans Microsoft Teams, vous pouvez effectuer une recherche dans le journal d’audit pour consulter les activités liées à l’application Patients. Si votre environnement est configuré pour prendre en charge l’application Patients, un groupe d’activités supplémentaire pour ces activités est disponible dans la liste du sélecteur **Activitiés**.
 
 ![Microsoft Teams Santé dans la liste du sélecteur Activités](../media/TeamsHealthcareAuditActivities.png)
 
@@ -819,20 +822,20 @@ Pour obtenir une description des activités de l’application Patients, voir le
 
 ### <a name="microsoft-teams-shifts-activities"></a>Activités Shifts dans Microsoft Teams
 
-Si votre organisation utilise l’application Shifts dans Microsoft Teams, vous pouvez effectuer une recherche dans le journal d’audit pour consulter les activités liées à cette application. Si votre environnement est configuré pour prendre en charge l’application Shifts, un groupe d’activités supplémentaire pour ces activités est disponible dans la liste du sélecteur **Activités** .
+Si votre organisation utilise l’application Shifts dans Microsoft Teams, vous pouvez effectuer une recherche dans le journal d’audit pour consulter les activités liées à cette application. Si votre environnement est configuré pour prendre en charge l’application Shifts, un groupe d’activités supplémentaire pour ces activités est disponible dans la liste du sélecteur **Activités**.
 
 Pour obtenir une description des activités de l’application Shifts, consultez [Rechercher dans le journal d’audit des événements dans Microsoft Teams](https://docs.microsoft.com/microsoftteams/audit-log-events#shifts-in-teams-activities).
 
 ### <a name="yammer-activities"></a>Activités dans Yammer
 
-Le tableau suivant répertorie les activités des utilisateurs et des administrateurs dans Yammer qui sont enregistrées dans le journal d’audit. Pour renvoyer des activités Yammer du journal d’audit, vous devez sélectionner **Afficher les résultats pour toutes les activités** dans la liste **Activités** . Utilisez les zones des plages de dates et la liste **Utilisateurs** pour limiter les résultats de la recherche.
+Le tableau suivant répertorie les activités des utilisateurs et des administrateurs dans Yammer qui sont enregistrées dans le journal d’audit. Pour renvoyer des activités Yammer du journal d’audit, vous devez sélectionner **Afficher les résultats pour toutes les activités** dans la liste **Activités**. Utilisez les zones des plages de dates et la liste **Utilisateurs** pour limiter les résultats de la recherche.
 
 |Nom facile à retenir|Opération|Description|
 |:-----|:-----|:-----|
 |Modification d’une stratégie de rétention des données|SoftDeleteSettingsUpdated|Un administrateur vérifié met à jour le paramètre de stratégie de rétention des données de réseau en vue d’une suppression définitive ou réversible. Seuls les administrateurs vérifiés peuvent effectuer cette opération.|
 |Modification de configuration réseau|NetworkConfigurationUpdated|Un administrateur réseau ou vérifié modifie la configuration du réseau Yammer. Cela inclut la définition d’un intervalle pour l’exportation de données et l’activation de la conversation instantanée.|
 |Modification des paramètres de profil réseau|ProcessProfileFields|Un administrateur réseau ou vérifié modifie les informations qui apparaissent sur les profils de membre des utilisateurs du réseau.|
-|Modification du mode Contenu privé|SupervisorAdminToggled|Un administrateur vérifié active ou désactive le *mode contenu privé* . Ce mode permet à un administrateur d’afficher les publications dans des groupes privés et les messages privés entre utilisateurs individuels (ou groupes d’utilisateurs). Seuls les administrateurs vérifiés peuvent effectuer cette opération.|
+|Modification du mode Contenu privé|SupervisorAdminToggled|Un administrateur vérifié active ou désactive le *mode contenu privé*. Ce mode permet à un administrateur d’afficher les publications dans des groupes privés et les messages privés entre utilisateurs individuels (ou groupes d’utilisateurs). Seuls les administrateurs vérifiés peuvent effectuer cette opération.|
 |Modification de la configuration de la sécurité|NetworkSecurityConfigurationUpdated|Un administrateur vérifié met à jour la configuration de sécurité du réseau Yammer. Cela inclut la définition des stratégies d’expiration de mot de passe et les restrictions d’adresses IP. Seuls les administrateurs vérifiés peuvent effectuer cette opération.|
 |Création de fichier|FileCreated|Un utilisateur charge un fichier.|
 |Groupe créé|GroupCreation|L’utilisateur crée un groupe.|
@@ -915,7 +918,7 @@ Dans les descriptions ci-dessous, certaines opérations contiennent d’autres p
 |Lien de synthèse créé|GetSummaryLink|Le propriétaire du formulaire crée un lien de résultats de synthèse pour partager les résultats.|
 |Lien de synthèse supprimé|DeleteSummaryLink|Le propriétaire du formulaire supprime le lien de synthèse des résultats.|
 |Formulaire mis à jour état d’hameçonnage|UpdatePhishingStatus|Cet événement est enregistré chaque fois que la valeur détaillée de l’état de sécurité interne est modifiée, que cela modifie l’état de sécurité final ou non (par exemple, le formulaire est désormais Fermé ou Ouvert). Cela signifie que vous pouvez rencontrer des événements en double même si l’état de sécurité final n’a pas été modifié. Voici les valeurs d’état possibles pour cet événement :<br/>– Retirer <br/>– Retirer par l’administrateur <br/>– Admin débloqué <br/>– Bloqué automatiquement <br/>– Débloqué automatiquement <br/>– Utilisateur signalé <br/>– Réinitialiser l’utilisateur signalé|
-|État de l’hameçonnage de l’utilisateur mis à jour|UpdateUserPhishingStatus|Cet événement est enregistré chaque fois que la valeur de l’état de sécurité de l’utilisateur est modifiée. La valeur de l’état de l’utilisateur dans l’enregistrement d’audit est définie sur **Confirmé comme hameçonnage** lorsque l’utilisateur créé un formulaire d’hameçonnage qui est supprimé par l’équipe de sécurité de Microsoft Online. Si un administrateur débloque l’utilisateur, la valeur de l’état de l’utilisateur est définie sur **Réinitialiser en tant qu’utilisateur normal** .|
+|État de l’hameçonnage de l’utilisateur mis à jour|UpdateUserPhishingStatus|Cet événement est enregistré chaque fois que la valeur de l’état de sécurité de l’utilisateur est modifiée. La valeur de l’état de l’utilisateur dans l’enregistrement d’audit est définie sur **Confirmé comme hameçonnage** lorsque l’utilisateur créé un formulaire d’hameçonnage qui est supprimé par l’équipe de sécurité de Microsoft Online. Si un administrateur débloque l’utilisateur, la valeur de l’état de l’utilisateur est définie sur **Réinitialiser en tant qu’utilisateur normal**.|
 |Invitation Forms Pro envoyée|ProInvitation|L’utilisateur clique pour activer une version d’évaluation Pro.|
 |Paramètres de formulaire mis à jour|UpdateFormSetting|Le propriétaire du formulaire met à jour un paramètre de formulaire. <br><br>La propriété FormSettingName:string indique le nom du paramètre et la nouvelle valeur.|
 |Paramètres d’utilisateur mis à jour|UpdateUserSetting|Le propriétaire du formulaire met à jour un paramètre d’utilisateur. <br><br>La propriété UserSettingName:string indique le nom et la nouvelle valeur du paramètre|
@@ -925,7 +928,7 @@ Dans les descriptions ci-dessous, certaines opérations contiennent d’autres p
 
 #### <a name="forms-activities-performed-by-coauthors-and-anonymous-responders"></a>Activités Forms réalisées par des co-auteurs et des répondants anonymes
 
-Forms prend en charge la collaboration pendant la conception des formulaires et l’analyse des réponses. Un collaborateur de formulaire est appelé *co-auteur* . Les co-auteurs peuvent effectuer les mêmes actions que le propriétaire d’un formulaire, excepté supprimer ou déplacer un formulaire. Forms vous permet également de créer un formulaire dans lequel les répondants restent anonymes.  Ce qui signifie qu’un répondant n’a pas besoin d’être connecté à votre organisation pour répondre à un formulaire.
+Forms prend en charge la collaboration pendant la conception des formulaires et l’analyse des réponses. Un collaborateur de formulaire est appelé *co-auteur*. Les co-auteurs peuvent effectuer les mêmes actions que le propriétaire d’un formulaire, excepté supprimer ou déplacer un formulaire. Forms vous permet également de créer un formulaire dans lequel les répondants restent anonymes.  Ce qui signifie qu’un répondant n’a pas besoin d’être connecté à votre organisation pour répondre à un formulaire.
 
 Le tableau suivant décrit les activités d’audit et les informations figurant dans l’enregistrement d’audit pour les activités réalisées par les co-auteurs et les répondants anonymes.
 
@@ -976,13 +979,13 @@ La journalisation d’audit de l’administrateur Exchange (activée par défaut
 
 Voici quelques conseils pour rechercher des activités d’administrateur Exchange dans le journal d’audit :
 
-- Pour renvoyer des entrées du journal d’audit de l’administrateur Exchange, vous devez sélectionner **Afficher les résultats pour toutes les activités** dans la liste **Activités** . Utiliser les zones des plages de dates et la liste **Utilisateurs** pour limiter les résultats de recherche des cmdlets exécutées par un administrateur Exchange spécifique à une plage de dates donnée.
+- Pour renvoyer des entrées du journal d’audit de l’administrateur Exchange, vous devez sélectionner **Afficher les résultats pour toutes les activités** dans la liste **Activités**. Utiliser les zones des plages de dates et la liste **Utilisateurs** pour limiter les résultats de recherche des cmdlets exécutées par un administrateur Exchange spécifique à une plage de dates donnée.
 
-- Pour afficher des événements du journal d’audit de l’administrateur Exchange, filtrez les résultats de la recherche, puis tapez **-** (tiret) dans la zone de filtre **activité** . Cela permet d’afficher le nom des cmdlets qui figurent dans la colonne **Activité** des événements d’administrateur Exchange. Vous pouvez ensuite trier les noms de cmdlet par ordre alphabétique.
+- Pour afficher des événements du journal d’audit de l’administrateur Exchange, filtrez les résultats de la recherche, puis tapez **-** (tiret) dans la zone de filtre **activité**. Cela permet d’afficher le nom des cmdlets qui figurent dans la colonne **Activité** des événements d’administrateur Exchange. Vous pouvez ensuite trier les noms de cmdlet par ordre alphabétique.
 
   ![Tapez un tiret dans le champ Activités pour filtrer les événements Admin d’Exchange](../media/7628e7aa-6263-474a-a28b-2dcf5694bb27.png)
 
-- Pour obtenir des informations sur les cmdlets exécutées, les paramètres et valeurs de paramètres utilisés et les objets affectés, vous devez exporter les résultats de recherche et sélectionner l’option **Télécharger tous les résultats** . Pour plus d’informations, voir [Exporter, configurer et afficher des enregistrements du journal d’audit](export-view-audit-log-records.md).
+- Pour obtenir des informations sur les cmdlets exécutées, les paramètres et valeurs de paramètres utilisés et les objets affectés, vous devez exporter les résultats de recherche et sélectionner l’option **Télécharger tous les résultats**. Pour plus d’informations, voir [Exporter, configurer et afficher des enregistrements du journal d’audit](export-view-audit-log-records.md).
 
 - Vous pouvez également utiliser la `Search-UnifiedAuditLog -RecordType ExchangeAdmin` commande dans Exchange Online PowerShell pour renvoyer uniquement les enregistrements d’audit du journal d’audit de l’administrateur Exchange. L’exécution de l’entrée de journal d’audit correspondante dans les résultats de la recherche peut prendre jusqu’à 30 minutes après l’exécution d’une applet de commande Exchange. Pour plus d’informations, voir [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog). Pour plus d’informations sur l’exportation des résultats de recherche renvoyés par l’applet de commande **Search-UnifiedAuditLog** vers un fichier CSV, voir la section «conseils pour l'exportation et l’affichage du journal d’audit» dans [exporter, configurer et afficher les enregistrements du journal d’audit.](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log).
 
@@ -998,7 +1001,7 @@ Voici quelques conseils pour rechercher des activités d’administrateur Exchan
 
 **Quels services Microsoft 365 font actuellement l’objet d’un audit ?**
 
-Les services les plus utilisés tels qu’Exchange Online, SharePoint Online, OneDrive Entreprise, Azure Active Directory, Microsoft Teams, Dynamics 365, Advanced Threat Protection et Power BI font l’objet d’un audit. Pour obtenir la liste des services audités, voir le [ldébut de cet article](search-the-audit-log-in-security-and-compliance.md).
+Les services les plus utilisés tels que Exchange Online, SharePoint Online, OneDrive Entreprise, Azure Active Directory, Microsoft Teams, Dynamics 365, Defender pour Office 365 et Power BI font l’objet d’un audit. Pour obtenir la liste des services audités, voir le [ldébut de cet article](search-the-audit-log-in-security-and-compliance.md).
 
 **Quelles activités sont auditées par le service d’audit dans Office 365 ?**
 

@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Configurez les points de terminaison contre la protection contre la perte de données Microsoft 365 pour surveiller les activités des fichiers et implémenter des actions de protection pour ces fichiers aux points de terminaison.
-ms.openlocfilehash: 82ba434d1874ce57abcf0bcc4b60858e0e2ccbf8
-ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
+ms.openlocfilehash: 95446e15e656e3c1aa658f897863608311b350e0
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48779212"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842038"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention-preview"></a>Prise en main des points de terminaison de protection contre la perte de données (aperçu)
 
@@ -110,7 +110,7 @@ Dans ce scénario de déploiement, vous allez intégrer des appareils qui n’on
 
 1. Ouvrez le [Centre de conformité Microsoft](https://compliance.microsoft.com).
 
-2. Ouvrez la page Paramètres du centre de conformité et sélectionnez **Appareils intégrés** . 
+2. Ouvrez la page Paramètres du centre de conformité et sélectionnez **Appareils intégrés**. 
 
    > [!div class="mx-imgBorder"]
    > ![activer la gestion des appareils](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
@@ -118,11 +118,11 @@ Dans ce scénario de déploiement, vous allez intégrer des appareils qui n’on
    > [!NOTE]
    > Bien que l’activation de l’intégration des appareils dure généralement environ 60 secondes, patientez jusqu’à 30 minutes avant de contacter le support Microsoft.
 
-3. Sélectionnez **Gestion des appareils** pour ouvrir la liste des **Appareils** . La liste est vide tant que vous n’avez pas intégré de périphériques.
+3. Sélectionnez **Gestion des appareils** pour ouvrir la liste des **Appareils**. La liste est vide tant que vous n’avez pas intégré de périphériques.
 
 4. Sélectionnez **Intégration** pour lancer le processus d’intégration.
 
-5. Choisissez la manière dont vous voulez déployer ces autres appareils à partir de la liste **Méthode de déploiement** , puis **Télécharger le package** .
+5. Choisissez la manière dont vous voulez déployer ces autres appareils à partir de la liste **Méthode de déploiement** , puis **Télécharger le package**.
 
    > [!div class="mx-imgBorder"]
    > ![méthode de déploiement](../media/endpoint-dlp-getting-started-3-deployment-method.png)
@@ -146,16 +146,16 @@ Dans ce scénario, Microsoft Defender pour point de terminaison est déjà dépl
 
 1. Ouvrez le [Centre de conformité Microsoft](https://compliance.microsoft.com).
 
-2. Ouvrez la page Paramètres du centre de conformité et sélectionnez **Activer la surveillance d’appareils** .
+2. Ouvrez la page Paramètres du centre de conformité et sélectionnez **Activer la surveillance d’appareils**.
 
-3. Sélectionnez **Gestion des appareils** pour ouvrir la liste des **Appareils** . Vous devriez voir apparaître la liste des appareils qui signalent déjà à Microsoft Defender pour point de terminaison.
+3. Sélectionnez **Gestion des appareils** pour ouvrir la liste des **Appareils**. Vous devriez voir apparaître la liste des appareils qui signalent déjà à Microsoft Defender pour point de terminaison.
 
    > [!div class="mx-imgBorder"]
    > ![Gestion des appareils](../media/endpoint-dlp-getting-started-2-device-management.png)
    
 4. Sélectionnez **Intégration** si vous avez besoin d’intégrer d’autres appareils.
 
-5. Choisissez la manière dont vous voulez déployer ces autres appareils à partir de la liste **Méthode de déploiement** , puis **Télécharger le package** .
+5. Choisissez la manière dont vous voulez déployer ces autres appareils à partir de la liste **Méthode de déploiement** , puis **Télécharger le package**.
 
 6. Suivez les procédures appropriées dans [Outils et méthodes d’intégration pour les ordinateurs Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Ce lien vous dirige vers une page d’accueil dans laquelle vous pouvez accéder aux procédures Microsoft Defender pour point de terminaison qui correspondent au package de déploiement que vous avez sélectionné à l’étape 5 :
 
@@ -165,7 +165,7 @@ Dans ce scénario, Microsoft Defender pour point de terminaison est déjà dépl
     - Intégrer les ordinateurs Windows 10 utilisant un script local
     - Intégrer les ordinateurs virtuels d’infrastructure de bureau virtuel (VDI) non persistants.
 
-Une fois l’opération effectuée et le point de terminaison intégré, celui-ci doit être visible dans le tableau des **Appareils** et commencer à créer des rapports d’activité d’audit dans l’ **Explorateur d’activités** .
+Une fois l’opération effectuée et le point de terminaison intégré, celui-ci doit être visible dans le tableau des **Appareils** et commencer à créer des rapports d’activité d’audit dans l’ **Explorateur d’activités**.
 
 > [!NOTE]
 >Cette expérience est sous l’application de la licence. Sans la licence requise, les données ne sont pas visibles ni accessibles.
@@ -191,7 +191,7 @@ Maintenant que vous disposez d’appareils intégrés et que vous pouvez affiche
 - [Vue d’ensemble de la protection contre la perte de données](data-loss-prevention-policies.md)
 - [Création, test et réglage d’une stratégie DLP](create-test-tune-dlp-policy.md)
 - [Prise en main de l’explorateur d’activités](data-classification-activity-explorer.md)
-- [Microsoft Defender – Protection avancée contre les menaces (Microsoft Defender ATP)](https://docs.microsoft.com/windows/security/threat-protection/)
+- [Microsoft Defender pour point de terminaison](https://docs.microsoft.com/windows/security/threat-protection/)
 - [Outils et méthodes d’intégration pour les appareils Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 - [Abonnement Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
 - [Azure AD appareils joints](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join)
