@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 4ca7654482251d86c44a3956c71f704a0cc3f2d4
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 042555cfcbe231f370c07ee3887e6b7f6b3701b8
+ms.sourcegitcommit: 751dc531f0410ee075c179efe409a01664483ee2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208616"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48925590"
 ---
 # <a name="criminal-justice-information-services-cjis-security-policy"></a>Stratégie de sécurité CJIS (pénal Justice Information Services)
 
@@ -43,7 +43,7 @@ Découvrez les avantages de la stratégie de sécurité CJIS sur le Cloud Micros
 
 Découvrez comment accélérer votre stratégie de sécurité CJIS à l’aide de notre plan de sécurité et de conformité Azure : [Télécharger les instructions d’implémentation CJIS pour les services Cloud de Microsoft Governance](https://gallery.technet.microsoft.com/CJIS-Implementation-62af7c27)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft concernés
 
 - [Public Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365 gouvernement américain](https://aka.ms/d365-compliance-list)
@@ -56,15 +56,15 @@ Le FBI ne propose pas de certification de conformité de Microsoft avec les exig
 
 [Conditions requises pour le Cloud Microsoft CJIS](https://aka.ms/MicrosoftCJISCloudRequirements)
 
-## <a name="cjis-status-in-the-united-states-current-as-of-9232019"></a>État CJIS aux États-Unis (actuel à 9/23/2019)
+## <a name="cjis-status-in-the-united-states-current-as-of-1152020"></a>État CJIS aux États-Unis (actuel à 11/5/2020)
 
-37 États et le district de Columbia avec des contrats de gestion, mis en évidence sur la carte en vert incluent :
+44 États et le district de Columbia avec des contrats de gestion, mis en évidence sur la carte en vert incluent :
 
-Alabama, Alaska, Arkansas, Arizona, Californie, Colorado, Floride, Géorgie, Hawaii, Illinois, Indiana, Iowa, Kansas, Kentucky, Maine, Massachusetts, Michigan, Minnesota, Missouri, Montana, New Jersey, New York, Nevada, Caroline du Nord, Oklahoma, Oregon, Rhode, île sud, Tennessee, Texas, Utah, Vermont, Virginie, Washington, Washington D.C., îles de l’Ouest, Wisconsin.
+Alabama, Alaska, Arizona, Arkansas, Californie, Colorado, Connecticut, Floride, Géorgie, Hawaii, Idaho, Illinois, Indiana, Iowa, Kansas, Kentucky, Maine, Massachusetts, Michigan, Minnesota, Mississippi, Missouri, Montana, Nebraska, Nevada, nouvelle Hampshire, New Jersey, New York, Nord Dakota, Oklahoma, Oregon, Pennsylvanie, Rhode, île sud-est, Tennessee, Texas, Utah, Vermont, Virginie, Washington, West Virginie, Wisconsin et le district de Columbia
 
 L’engagement de Microsoft à respecter les contrôles de réglementation CJIS applicables permet aux organisations de justice pénale de mettre en œuvre des solutions basées sur le nuage et de respecter la stratégie de sécurité CJIS V 5.8.
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
 **Où puis-je demander des informations de conformité ?**
 
@@ -78,9 +78,9 @@ Microsoft signe un accord d’information avec un département CJIS Systems Agen
 
 La [stratégie de sécurité CJIS](https://aka.ms/cjis-security-policy) couvre les précautions que votre Agence doit prendre pour protéger CJI. En outre, votre responsable de compte Microsoft peut vous mettre en contact avec les personnes connaissant les exigences de votre juridiction.
 
-## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Utiliser le gestionnaire de conformité Microsoft pour évaluer votre risque
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Utilisez le Gestionnaire de Conformité Microsoft pour évaluer vos risques
 
-Le [Gestionnaire de conformité Microsoft](compliance-manager.md) est une fonctionnalité du [Centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Le gestionnaire de conformité offre un modèle Premium pour la création d’une évaluation pour cette réglementation. Recherchez le modèle dans la page **modèles d’évaluation** du gestionnaire de conformité. Découvrez comment [créer des évaluations dans le gestionnaire de conformité](compliance-manager-assessments.md).
+[Le Gestionnaire de Conformité Microsoft](compliance-manager.md) est une fonctionnalité dans le [centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Le Gestionnaire de Conformité offre un modèle Premium pour la création d’une évaluation de ce règlement. Recherchez le modèle sur la page **modèles d’évaluation** dans le Gestionnaire de Conformité. Découvrez comment [créer des évaluations dans le Gestionnaire de Conformité](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressources
 
