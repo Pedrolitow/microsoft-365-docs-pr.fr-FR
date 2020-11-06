@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 56d849a7abcbe480d82200cc7841d42e9c189762
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: 347266f71dada3de1bbd9b1434cb1e6628249147
+ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795104"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48931923"
 ---
 # <a name="readiness-assessment-tool"></a>Outil d’évaluation de la préparation
 
@@ -22,7 +22,7 @@ Pour une plus bonne expérience possible lors de l’inscription au bureau gér�
 
 L’outil vérifie les paramètres dans le gestionnaire de points de terminaison Microsoft (en particulier Microsoft Intune), Azure Active Directory (Azure AD) et Microsoft 365 pour s’assurer qu’ils fonctionneront avec Microsoft Managed Desktop. Le bureau géré Microsoft conserve les données associées à ces vérifications pendant 12 mois après la dernière exécution d’une vérification dans votre organisation Azure AD. Au bout de 12 mois, nous les conservent dans un formulaire déidentifié.  Vous pouvez choisir de supprimer les données collectées.
 
-Tout utilisateur disposant au moins du rôle d’administrateur Intune pourra exécuter cet outil, mais trois des vérifications ([connecteurs de certificat](readiness-assessment-fix.md#certificate-connectors), [authentification multifacteur](readiness-assessment-fix.md#multi-factor-authentication)et [réinitialisation de mot de passe en libre-service](readiness-assessment-fix.md#self-service-password-reset)) nécessitent des autorisations supplémentaires.
+Tout utilisateur disposant au moins du rôle d’administrateur Intune pourra exécuter cet outil, mais deux des vérifications ([connecteurs de certificat](readiness-assessment-fix.md#certificate-connectors) et [authentification multifacteur](readiness-assessment-fix.md#multi-factor-authentication) nécessitent des autorisations supplémentaires.
  
 L’outil d’évaluation vérifie ces éléments :
 

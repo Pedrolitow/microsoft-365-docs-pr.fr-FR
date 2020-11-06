@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: a6dec9473ee632b74bb79e50156cedff53a3cba3
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: c28353698dd372e14d5ec51b92eb4c0c051c92a4
+ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795116"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48931911"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Corriger les problèmes détectés par l’outil d’évaluation de la disponibilité
 
@@ -118,7 +118,7 @@ Les appareils de bureau gérés Microsoft doivent être autorisés à s’inscri
 
 **Non prêt**
 
-Suivez les étapes de la procédure [définir les restrictions d’inscriptions](https://docs.microsoft.com/mem/intune/enrollment/enrollment-restrictions-set) pour modifier le paramètre sur **autoriser** .
+Suivez les étapes de la procédure [définir les restrictions d’inscriptions](https://docs.microsoft.com/mem/intune/enrollment/enrollment-restrictions-set) pour modifier le paramètre sur **autoriser**.
 
 
 ### <a name="enrollment-status-page"></a>Page d’état d’enregistrement
@@ -127,7 +127,7 @@ La page d’état d’enregistrement (ESP) est actuellement activée. Si vous pa
 
 **Non prêt**
 
-Le profil ESP par défaut est défini pour afficher la progression de la configuration de l' **application et du profil** . Désactivez ce paramètre en suivant les étapes de [la page Configurer l’état de l’inscription](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status).
+Le profil ESP par défaut est défini pour afficher la progression de la configuration de l' **application et du profil**. Désactivez ce paramètre ou assurez-vous que les affectations à n’importe quel groupe Azure AD n’incluent pas les appareils de bureau géré Microsoft en suivant les étapes décrites dans la [page Configurer l’état de l’inscription](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status).
 
 **OpenSSL**
 
@@ -137,9 +137,9 @@ Assurez-vous que tous les profils dont le paramètre **afficher l’application 
 
 Les appareils Windows 10 dans votre organisation Azure AD doivent être automatiquement apportés dans Intune.
 
-**Non prêt**
+**OpenSSL**
 
-Les utilisateurs de votre organisation Azure AD ne sont pas automatiquement intégrés dans Microsoft Intune. Modifiez l’étendue utilisateur MDM sur **une partie** ou la **totalité** . Si vous choisissez **certaines** , revenez après l’enregistrement et sélectionnez le groupe **moderne espace de travail-tout** Azure AD pour les **groupes** .
+Assurez-vous que l’étendue utilisateur MDM est définie sur **some** ou **All** , et non sur **aucun**. Si vous choisissez **certaines** , revenez après l’enregistrement et sélectionnez le groupe **moderne espace de travail-tout** Azure AD pour les **groupes**.
 
 
 ### <a name="microsoft-store-for-business"></a>Microsoft Store pour Entreprises
@@ -180,7 +180,7 @@ Les scripts Windows PowerShell ne peuvent pas être affectés de manière à cib
 
 **OpenSSL**
 
-Assurez-vous que les scripts Windows PowerShell de votre organisation Azure AD ne ciblent pas les utilisateurs ou les appareils de bureau Microsoft. Pour plus d’informations, reportez-vous à [utiliser des scripts PowerShell sur des appareils Windows 10 dans Intune](https://docs.microsoft.com/mem/intune/apps/intune-management-extension).
+Assurez-vous que les scripts Windows PowerShell de votre organisation Azure AD ne ciblent pas les utilisateurs ou les appareils de bureau Microsoft. N’affectez pas de script PowerShell pour cibler tous les utilisateurs, tous les appareils ou les deux. Modifiez la stratégie de façon à utiliser une affectation ciblant un groupe Azure AD spécifique qui n’inclut aucun périphérique de bureau géré Microsoft. Pour plus d’informations, reportez-vous à [utiliser des scripts PowerShell sur des appareils Windows 10 dans Intune](https://docs.microsoft.com/mem/intune/apps/intune-management-extension).
 
 ### <a name="region"></a>Région
 
@@ -254,7 +254,7 @@ Indique comment vérifier un paramètre qui (si sa valeur est définie sur "fals
 
 **OpenSSL**
 
-Assurez-vous que **AllowAdHocSubscriptions** est défini sur **true** . Dans le cas contraire, l’itinérance de l’état de l’entreprise peut ne pas fonctionner. Pour plus d’informations, consultez la rubrique [Set-MsolCompanySettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0).
+Assurez-vous que **AllowAdHocSubscriptions** est défini sur **true**. Dans le cas contraire, l’itinérance de l’état de l’entreprise peut ne pas fonctionner. Pour plus d’informations, consultez la rubrique [Set-MsolCompanySettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0).
 
 
 ### <a name="enterprise-state-roaming"></a>Itinérance du statut Entreprise
@@ -308,19 +308,11 @@ Les paramètres de sécurité par défaut sont activés. Désactivez les paramè
 
 ### <a name="self-service-password-reset"></a>Réinitialisation du mot de passe en libre-service
 
-La réinitialisation du mot de passe en libre-service (SSPR) doit être activée.
-
-**Non prêt**
-
-SSPR doit être activé pour tous les utilisateurs. Si ce n’est pas le cas, les comptes de service de bureau géré Microsoft ne peuvent pas fonctionner. Pour plus d’informations, consultez [la rubrique Tutorial : autoriser les utilisateurs à déverrouiller leur compte ou réinitialiser les mots de passe à l’aide de la réinitialisation du mot de passe en libre-service Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr).
+La réinitialisation du mot de passe en libre-service (SSPR) doit être activée pour tous les utilisateurs. Si ce n’est pas le cas, les comptes de service de bureau géré Microsoft ne peuvent pas fonctionner. Pour plus d’informations, consultez [la rubrique Tutorial : autoriser les utilisateurs à déverrouiller leur compte ou réinitialiser les mots de passe à l’aide de la réinitialisation du mot de passe en libre-service Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr).
 
 **OpenSSL**
 
 Assurez-vous que le paramètre **sélectionné** SSPR inclut Microsoft Managed Desktop Devices.
-
-**Error**
-
-Le rôle d’administrateur Intune ne dispose pas des autorisations suffisantes pour cette vérification. Vous aurez également besoin du rôle Azure AD du lecteur de rapports pour exécuter cette vérification.
 
 
 ### <a name="standard-user-role"></a>Rôle d’utilisateur standard

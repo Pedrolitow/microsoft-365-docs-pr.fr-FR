@@ -1,5 +1,5 @@
 ---
-title: Vue d’ensemble de l’analyse et de la réponse automatisée (AIR)
+title: Fonctionnement de l’analyse et de la réponse automatiques dans Microsoft Defender pour Office 365
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -16,86 +16,32 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 keywords: réponse automatique aux incidents, investigation, correction, protection contre les menaces
-ms.date: 09/29/2020
-description: Obtenir une vue d’ensemble des fonctionnalités d’analyse et de réponse automatisées dans Microsoft Defender pour Office 365
+ms.date: 11/05/2020
+description: Découvrez comment fonctionnent les fonctionnalités d’analyse et de réponse automatisées dans Microsoft Defender pour Office 365
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: 316e2e30e5865e068f20d151cd0b081a96ee853f
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 6923e283e4ec62de9e4a9c1d9196eb032724798d
+ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845971"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48931957"
 ---
-# <a name="an-overview-of-automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Vue d’ensemble de l’analyse et de la réponse automatisées (AIR) dans Microsoft Defender pour Office 365
+# <a name="how-automated-investigation-and-response-air-works-in-microsoft-defender-for-office-365"></a>Fonctionnement de l’analyse et de la réponse automatiques dans Microsoft Defender pour Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+À mesure que des alertes de sécurité sont déclenchées, c’est à votre équipe chargée des opérations de sécurité d’examiner ces alertes et de prendre des mesures pour protéger votre organisation. Parfois, les équipes d’opérations de sécurité peuvent être submergées par le volume des alertes déclenchées. Les fonctionnalités d’analyse et de réponse automatisées de Microsoft Defender pour Office 365 peuvent vous aider.
 
-À mesure que des alertes de sécurité sont déclenchées, c’est à votre équipe chargée des opérations de sécurité d’examiner ces alertes et de prendre des mesures pour protéger votre organisation. Parfois, les équipes d’opérations de sécurité peuvent être submergées par le volume des alertes déclenchées. Les fonctionnalités d’analyse et de réponse automatisées de Microsoft Defender pour Office 365 peuvent vous aider. 
+AIR permet à votre équipe des opérations de sécurité de fonctionner de manière plus efficace. Les fonctionnalités AIR incluent des processus d’enquête automatisés en réponse à des menaces connues qui existent aujourd’hui. Les actions de correction appropriées attendent l’approbation, ce qui permet à votre équipe des opérations de sécurité de répondre aux menaces détectées.
 
-AIR permet à votre équipe des opérations de sécurité de fonctionner de manière plus efficace. Les fonctionnalités AIR incluent des processus d’enquête automatisés en réponse à des menaces connues qui existent aujourd’hui. Les actions de correction appropriées attendent l’approbation, ce qui permet à votre équipe des opérations de sécurité de répondre aux menaces détectées. 
+Cet article explique comment AIR passe par plusieurs exemples. Lorsque vous êtes prêt à commencer à utiliser AIR, consultez la rubrique [enquêter et répondre aux menaces de manière automatique](office-365-air.md).
 
-Cet article fournit une vue d’ensemble de l’AIR. Lorsque vous êtes prêt à commencer à utiliser AIR, consultez la rubrique [enquêter et répondre aux menaces de manière automatique](office-365-air.md).
+- [Exemple 1 : un message hameçon signalé par un utilisateur lance un manuel d’enquête.](#example-a-user-reported-phish-message-launches-an-investigation-playbook)
+- [Exemple 2 : un administrateur de sécurité déclenche une enquête à partir de l’Explorateur de menaces](#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)
+- [Exemple 3 : une équipe d’opérations de sécurité intègre AIR avec sa SIEM à l’aide de l’API activité de gestion d’Office 365](#example-a-security-operations-team-integrates-air-with-their-siem-using-the-office-365-management-activity-api)
 
-## <a name="at-a-high-level"></a>À un niveau élevé
-
-Comme les alertes sont déclenchées, les règles de sécurité entrent en vigueur. En fonction de la situation, un [processus d’enquête automatisé](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) peut commencer. Pendant et après une enquête automatisée, les [actions correctives](air-remediation-actions.md) sont recommandées. Aucune action n’est effectuée automatiquement dans Microsoft Defender pour Office 365. Votre équipe de gestion des opérations de sécurité examine, puis [approuve ou rejette chaque action de correction](air-review-approve-pending-completed-actions.md). Lorsque toutes les actions effectuées après une enquête sont approuvées ou rejetées, l’enquête se termine. Toutes ces activités sont suivies et affichables dans le centre de sécurité Microsoft 365 ( [https://security.microsoft.com](https://security.microsoft.com) ). (Pour en savoir plus, consultez la rubrique [afficher les détails d’une enquête](air-view-investigation-results.md#view-details-of-an-investigation)).
-
-Les sections suivantes fournissent plus d’informations sur les alertes, les règles de sécurité et des exemples d’AIR en action.
-
-## <a name="alerts"></a>Alertes
-
-Les [alertes](../../compliance/alert-policies.md#viewing-alerts) représentent des déclencheurs pour les flux de travail d’équipe des opérations de sécurité pour la réponse aux incidents. La définition de la priorité des alertes à droite pour l’enquête, tout en s’assurant qu’aucune menace n’est sans adresse est complexe. Lorsque les enquêtes dans les alertes sont effectuées manuellement, les équipes des opérations de sécurité doivent rechercher et corréler les entités (telles que le contenu, les appareils et les utilisateurs) menacées. Ces tâches et les flux de travail peuvent être très longs et impliquer plusieurs outils et systèmes. Avec AIR, l’enquête et la réponse pour les événements de sécurité sont automatisées en ayant des alertes de gestion des menaces et de sécurité clés déclenchant automatiquement des règles de réponse de sécurité. 
-
-Pour l’AIR, les alertes générées à partir des types de stratégies d’alerte suivants sont analysées automatiquement :  
-
-- Un clic d’URL potentiellement malveillant a été détecté
-- Courrier électronique signalé par l’utilisateur comme hameçonnage`*`
-- Messages électroniques contenant des programmes malveillants supprimés après la remise`*`
-- Messages électroniques contenant des URL d’hameçonnage supprimées après la remise`*`
-- Modèles d’envoi de courrier électronique suspects détectés
-- Utilisateur non autorisé à envoyer un message électronique
-- Enquête manuelle déclenchée par l’administrateur du courrier électronique`*`
-
-> [!NOTE]
-> Les alertes signalées par un astérisque ( `*` ) sont affectées d’une gravité *informatif* dans les stratégies d’alerte respectives au sein du centre de sécurité Microsoft 365, les notifications par courrier étant désactivées. Les notifications par courrier électronique peuvent être activées par le biais de la [Configuration des stratégies d’alerte](../../compliance/alert-policies.md#alert-policy-settings). 
-
-Pour afficher les alertes, dans le centre de sécurité & conformité, sélectionnez **alertes**  >  **afficher les alertes**. Sélectionnez une alerte pour afficher ses détails, puis, à partir de là, utilisez le lien **consulter l’enquête** pour accéder à l' [enquête](air-view-investigation-results.md#investigation-graph)correspondante.  
-
-> [!NOTE]
-> Les alertes d’information sont masquées par défaut dans l’affichage des alertes. Pour les afficher, modifiez le filtrage des alertes de manière à inclure des alertes d’information.
-
-Si votre organisation gère vos alertes de sécurité via un système de gestion des alertes, un système de gestion des services ou un système de gestion des événements et des informations de sécurité (SIEM), vous pouvez envoyer des alertes à ce système via une notification par courrier électronique ou via l' [API activité de gestion d’Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). Les notifications d’alerte d’enquête via le courrier électronique ou l’API incluent des liens permettant d’accéder aux alertes dans le centre de sécurité Microsoft 365, permettant ainsi à l’administrateur de sécurité affecté de naviguer rapidement dans l’enquête.
-
-![Alertes liées à des enquêtes](../../media/air-alerts-page-details.png) 
-
-## <a name="security-playbooks"></a>Règles de sécurité
-
-Les règles de sécurité sont des stratégies principales qui se trouvent au cœur de l’automatisation dans Microsoft Defender pour Office 365 et Microsoft 365 Defender. Les règles de sécurité fournies dans AIR sont basées sur des scénarios de sécurité réels courants et sont développés en fonction des commentaires des équipes d’opérations de sécurité. Un manuel de sécurité est lancé automatiquement lorsque des alertes spécifiques sont déclenchées au sein de votre organisation. Une fois que l’alerte est déclenchée, le manuel associé est exécuté par le système automatisé d’enquête et de réponse. L’enquête passe par l’analyse de l’alerte en fonction du manuel de cette alerte en examinant toutes les métadonnées associées (notamment les messages électroniques, les utilisateurs, les objets, les expéditeurs, etc.). En fonction des conclusions du manuel d’enquête, AIR recommande un ensemble d’actions que l’équipe de sécurité de votre organisation peut prendre pour contrôler et atténuer la menace. 
-
-Les règles de sécurité que vous obtenez avec AIR sont conçues pour aborder les menaces les plus fréquentes auxquelles les entreprises rencontrent actuellement des courriers électroniques. Elles sont basées sur les opérations de sécurité et les équipes de réponse aux incidents, y compris les personnes qui permettent de défendre Microsoft et les ressources de nos clients.
-
-- Message hameçon signalé par l’utilisateur
-- URL-clic sur la modification de verdict
-- Détection de programmes malveillants après la livraison (programmes malveillants ZAP)
-- Hameçonnage détecté après la livraison ZAP (hameçon ZAP)
-- Utilisateur signalé comme compromis 
-- Enquête manuelle par courrier électronique (déclenché par un administrateur à partir de programmes malveillants d’explorer, de hameçonnage ou de tout le courrier électronique)
-
-De plus en plus de règles et de mises à jour de manuels seront publiées à mesure qu’elles sont terminées. Consultez la feuille de [route Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) pour voir les autres éléments planifiés et bientôt disponibles.
-
-### <a name="playbooks-include-investigation-and-recommendations"></a>Les règles incluent une enquête et des recommandations
-
-Dans AIR, chaque manuel de sécurité inclut les éléments suivants : 
-
-- une enquête racine des entités d’un e-mail (par exemple, des fichiers, des URL, des destinataires, des adresses IP, etc.),
-- la chasse aux courriels similaires reçus par l’Organisation ; 
-- les étapes à suivre pour identifier et corréler les autres menaces potentielles, et 
-- actions de correction des menaces recommandées.
-
-Chaque étape de haut niveau inclut un certain nombre de sous-étapes qui sont exécutées pour fournir une réponse approfondie, détaillée et exhaustive aux menaces.
 
 ## <a name="example-a-user-reported-phish-message-launches-an-investigation-playbook"></a>Exemple : un message hameçon signalé par un utilisateur lance un manuel d’enquête.
 
@@ -151,4 +97,4 @@ Par exemple, une organisation a récemment mis en place un moyen pour l’équip
 
 - [Consultez la feuille de route Microsoft 365 pour voir ce qui est planifié et publié bientôt](https://www.microsoft.com/microsoft-365/roadmap?filters=)
 
-- [En savoir plus sur les fonctionnalités d’analyse et de réponse automatisées supplémentaires dans Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir?view=o365-worldwide&preserve-view=true)
+- [En savoir plus sur les fonctionnalités d’analyse et de réponse automatisées dans Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir?view=o365-worldwide&preserve-view=true)
