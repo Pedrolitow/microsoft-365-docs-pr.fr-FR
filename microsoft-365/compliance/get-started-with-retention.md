@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous êtes prêt à mettre en place des stratégies et des étiquettes de rétention pour la gouvernance des données de votre organisation, mais vous ne savez pas par où commencer ? Lisez quelques conseils pratiques pour commencer.
-ms.openlocfilehash: ea5ccdbe0267c2b894e6b69cf8b048925af1b409
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: b4dcbe15e2a2d9e3d056555a9212125b60133826
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399509"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48919862"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>Prise en main des stratégies et des étiquettes de rétention
 
@@ -38,7 +38,7 @@ Vous êtes prêt à commencer à gouverner les données de votre organisation en
     
     Dans le cadre de cette évaluation, déterminez si vous utiliserez la [gestion des enregistrements](records-management.md).
 
-3. **Créez des stratégies de rétention et des étiquettes de rétention**, en fonction des paramètres de rétention et des actions que vous avez identifiés.
+3. **Créez des stratégies de rétention et des étiquettes de rétention** , en fonction des paramètres de rétention et des actions que vous avez identifiés.
     
     Pour les étiquettes de rétention, il peut être utile d’utiliser un [plan de fichiers](file-plan-manager.md) afin de définir et d’affiner vos étiquettes de rétention dans une feuille de calcul. Importez ensuite cette feuille de calcul pour créer vos étiquettes.
     
@@ -54,7 +54,7 @@ Pour afficher les options de licence permettant à vos utilisateurs de bénéfic
 
 Les membres de votre équipe de conformité, appelés à créer et gérer des stratégies et des étiquettes de rétention, ont besoin d’autorisations pour accéder au [Centre de conformité Microsoft 365](https://compliance.microsoft.com/). Par défaut, votre administrateur client (administrateur général) a accès à cet emplacement et peut accorder aux responsables de la conformité et à d’autres personnes un accès sans leur donner toutes les autorisations d’un administrateur client. Pour accorder des autorisations à cette administration limitée, nous vous recommandons d'ajouter des utilisateurs au groupe de rôles d’administrateur **Administrateur de la conformité**. Pour obtenir des instructions, veuillez consulter la page [Octroi de l’accès au Centre de sécurité et conformité aux utilisateurs](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center).
 
-Ces autorisations ne sont nécessaires que pour créer, configurer et appliquer des politiques de rétention et des étiquettes de rétention. La personne qui configure ces politiques et étiquettes n'a pas besoin d'accéder au contenu.
+Ces autorisations ne sont nécessaires que pour créer, configurer et appliquer des politiques de rétention et des étiquettes de rétention. La personne qui configure ces stratégies et étiquettes n’a pas besoin d’avoir un accès au contenu.
 
 ## <a name="common-scenarios-for-retention-policies-and-retention-labels"></a>Scénarios courants pour les stratégies et étiquettes de rétention
 
@@ -69,9 +69,8 @@ Utilisez le tableau suivant pour vous aider à faire correspondre vos besoins m�
 |Permettez aux administrateurs d’appliquer des actions de rétention et de suppression à un modèle de compréhension de document afin que celles-ci soient automatiquement appliquées aux documents identifiés dans une bibliothèque SharePoint|[Créer des étiquettes de rétention et les appliquer dans les applications](create-apply-retention-labels.md)|
 |Appliquez automatiquement les actions de rétention et de suppression pour les documents et e-mails |[Appliquer automatiquement une étiquette de rétention au contenu](apply-retention-labels-automatically.md)|
 |Démarrez la période de rétention lorsqu’un événement se produit, par exemple :  <br />- Des employés quittent l’organisation <br />- Des contrats expirent <br />- Fin de vie d’un produit| [Débuter la rétention lorsqu’un événement se produit](event-driven-retention.md)|
-|Gérer le cycle de vie de différents types de documents dans SharePoint| [Utiliser les étiquettes de rétention pour gérer le cycle de vie des documents stockés dans SharePoint](auto-apply-retention-labels-scenario.md)|
-|Conformez-vous à la réglementation SEC Rule 17 a-4|[Utiliser Exchange Online et le centre de sécurité et conformité pour se conformer à la réglementation SEC Rule 17 a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md) |
-|Vérifiez que le contenu est révisé et approuvé avant sa suppression permanente à la fin de sa période de rétention|[Révisions avant destruction](disposition.md#disposition-reviews) |
+|Limiter les modifications apportées aux stratégies afin de répondre aux exigences réglementaires ou de protéger contre les administrateurs malveillants| [Utiliser le verrouillage de conservation pour restreindre les modifications apportées aux stratégies de rétention et d’étiquettes de rétention](retention-preservation-lock.md)
+|Vérifiez que le contenu est révisé et approuvé avant sa suppression à la fin de sa période de rétention|[Révisions avant destruction](disposition.md#disposition-reviews) |
 | Contrôler la manière dont les paramètres conserver et supprimer sont appliqués aux éléments | [Surveillance des étiquettes de rétention](retention.md#monitoring-retention-labels) |
 |Utiliser une solution unique de gestion des documents et des e-mails |[En savoir plus sur la gestion des enregistrements](records-management.md) |
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous avez besoin d’une solution de gestion des enregistrements pour Microsoft 365 qui gère les contenus à forte valeur ajoutée pour les obligations légales, professionnelles ou réglementaires, mais vous ne savez pas par où commencer ? Lisez quelques conseils pratiques pour commencer.
-ms.openlocfilehash: b7fc33e8a58857d839598cc74cdddc5247fd4a0d
-ms.sourcegitcommit: 7e8151ff74cb1cfc0dd59fadcac423c338415d77
+ms.openlocfilehash: 679300f581dd9177c00f367f4452d12142f49ee4
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "48390161"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48919852"
 ---
 # <a name="get-started-with-records-management"></a>Prise en main de la gestion des enregistrements
 
@@ -51,7 +51,7 @@ Pour afficher les options de licence permettant à vos utilisateurs de bénéfic
 
 Les membres de votre équipe de conformité qui sont chargés de la gestion des enregistrements ont besoin d’autorisations pour accéder au [Centre de conformité Microsoft 365](https://compliance.microsoft.com/). Par défaut, l’administrateur client (administrateur général) a accès à cet emplacement et peut accorder aux responsables de la conformité et à d’autres personnes un accès sans leur donner toutes les autorisations d’un administrateur client. Pour accorder des autorisations pour cette administration limitée, nous vous recommandons d'ajouter les utilisateurs au groupe de rôles d’administrateur de la **Gestion des Enregistrements** qui autorise le rôle de la **Gestion d’Enregistrement**.
 
-Les autorisations incluses dans ce groupe de rôles n’incluent pas les autorisations nécessaires pour [la révision et la vérification avant la suppression](disposition.md), et même un administrateur général ne possède pas cette autorisation par défaut. Pour gérer la suppression, utilisez **le rôle**Gestion de la Suppression, en créant un groupe de rôles personnalisé ou en utilisant un groupe de rôles par défaut qui inclut un rôle (tel que**l’Administrateur de la Conformité**).
+Les autorisations incluses dans ce groupe de rôles n’incluent pas les autorisations nécessaires pour [la révision et la vérification avant la suppression](disposition.md), et même un administrateur général ne possède pas cette autorisation par défaut. Pour gérer la suppression, utilisez **le rôle** Gestion de la Suppression, en créant un groupe de rôles personnalisé ou en utilisant un groupe de rôles par défaut qui inclut un rôle (tel que **l’Administrateur de la Conformité** ).
 
 Pour plus d’informations sur ces groupes de rôles et les rôles, consultez [Autorisations dans le Centre de Sécurité et de Conformité](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center#roles-in-the-security--compliance-center).
 
@@ -76,10 +76,11 @@ Utilisez le tableau suivant pour vous aider à faire correspondre vos besoins m�
 |Permettez aux administrateurs d’appliquer des actions de rétention et de suppression à un modèle de compréhension de document afin que celles-ci soient automatiquement appliquées aux documents identifiés dans une bibliothèque SharePoint|[Créer des étiquettes de rétention et les appliquer dans les applications](create-apply-retention-labels.md)|
 |Appliquez automatiquement les actions de rétention et de suppression pour les documents et e-mails |[Appliquer automatiquement une étiquette de rétention au contenu](apply-retention-labels-automatically.md)|
 |Démarrez la période de rétention lorsqu’un événement se produit, par exemple :  <br />- Des employés quittent l’organisation <br />- Des contrats expirent <br />- Fin de vie d’un produit| [Débuter la rétention lorsqu’un événement se produit](event-driven-retention.md)|
+|Limiter les modifications apportées aux stratégies afin de répondre aux exigences réglementaires ou de protéger contre les administrateurs malveillants| [Utiliser le verrouillage de conservation pour restreindre les modifications apportées aux stratégies de rétention et d’étiquettes de rétention](retention-preservation-lock.md)
 |Gérer le cycle de vie de différents types de documents dans SharePoint| [Utiliser les étiquettes de rétention pour gérer le cycle de vie des documents stockés dans SharePoint](auto-apply-retention-labels-scenario.md)|
-|Vérifiez que le contenu est révisé et approuvé avant sa suppression permanente à la fin de sa période de rétention|[Révisions avant destruction](disposition.md#disposition-reviews) |
+|Vérifiez que le contenu est révisé et approuvé avant sa suppression à la fin de sa période de rétention|[Révisions avant destruction](disposition.md#disposition-reviews) |
 |Obtenez une preuve de destruction permanente du contenu à la fin de sa période de rétention.|[Destruction des enregistrements](disposition.md#disposition-of-records) |
-|Contrôler la manière dont les paramètres conserver et supprimer sont appliqués aux éléments | [Surveillance des étiquettes de rétention](retention.md#monitoring-retention-labels) |
+| Contrôler la manière dont les paramètres conserver et supprimer sont appliqués aux éléments | [Surveillance des étiquettes de rétention](retention.md#monitoring-retention-labels) |
 
 ## <a name="end-user-documentation-for-records"></a>Documentation de l’utilisateur final sur les enregistrements
 
