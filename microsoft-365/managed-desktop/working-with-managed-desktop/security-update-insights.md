@@ -1,18 +1,18 @@
 ---
 title: Perspectives sur la mise à jour de sécurité Windows
 description: ''
-keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 772d1d52e977a067ff9bc3517de9cb2ae6c8c9a3
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: b3b1f43217b3be285f20925065bf9710a38f9606
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950366"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48941440"
 ---
 # <a name="windows-security-update-insights"></a>Perspectives sur la mise à jour de sécurité Windows
 Cet affichage fournit une vue d’ensemble de l’état des mises à jour de sécurité pour vos appareils de bureau gérés par Microsoft. 
@@ -23,11 +23,11 @@ Pour afficher les données d’utilisation, sélectionnez l’onglet <strong>mis
 
 ## <a name="device-status"></a>État de l’appareil
 
-Pour que les appareils soient mis à jour par Windows Update, ils doivent être connectés à Internet et ne pas être mis en veille prolongée pendant une durée minimale de six heures, dont deux doivent être continus. Tant qu’un appareil est connecté et qu’il n’est pas mis en veille prolongée, il est considéré comme étant « en cours d’utilisation ». Bien qu’il soit possible qu’un appareil qui ne répond pas à ces exigences soit mis à jour, les appareils qui les satisfont ont la plus grande probabilité d’être mis à jour. 
+Pour que les appareils soient mis à jour par Windows Update, ils doivent être connectés à Internet et ne pas être mis en veille prolongée pendant une durée minimale de six heures, dont deux doivent être continus. Bien qu’il soit possible qu’un appareil qui ne répond pas à ces exigences soit mis à jour, les appareils qui les satisfont ont la plus grande probabilité d’être mis à jour. 
 
 Nous catégoriserons l’activité de l’appareil dans le contexte de Windows Update selon les termes suivants :
 
-- <strong>Actif :</strong> Appareils ayant satisfait aux critères d’utilisation minimaux (six heures, deux en continu) pour la version la plus récente de la mise à jour de sécurité et qui ont archivé avec Microsoft Intune au moins tous les cinq jours
+- <strong>Actif :</strong> Appareils ayant satisfait aux critères d’activité minimum (six heures, deux en continu) pour la dernière version de la mise à jour de sécurité et qui ont archivé avec Microsoft Intune au moins tous les cinq jours
 - <strong>Synchronisés :</strong> Appareils ayant archivé avec Intune au cours des 28 derniers jours
 - <strong>Désynchronisation :</strong> Appareils qui <i>n’ont pas</i> archivé avec Intune au cours des 28 derniers jours
 

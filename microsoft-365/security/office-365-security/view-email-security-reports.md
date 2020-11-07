@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez comment rechercher et utiliser des rapports de sécurité de messagerie pour votre organisation. Les rapports de sécurité de messagerie sont disponibles dans le centre de sécurité & conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 36d7fde77ae8a6280dae26e5a0f7a75537bf28d4
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: fafb499e40c0014a85c9566b3e5aadf2751202a1
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841871"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48941474"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Afficher les rapports de sécurité de courrier dans le centre de sécurité et conformité
 
@@ -336,7 +336,7 @@ Les vues disponibles sont les suivantes :
 
 - Dépanner **par : les technologies de détection** et les **données d’affichage par : \> programmes malveillants de messagerie** : les informations suivantes sont affichées :
 
-  - **Réputation de fichier générée par l’ATP**<sup>1</sup>: toutes les réputations de fichiers malveillants générées par les détonateurs ATP.
+  - Fonctionnalité **de réputation de fichier générée par l’ATP**<sup>1</sup>: toute réputation de fichier malveillant générée par Defender pour les détonateurs Office 365.
   - **Moteur anti-programme malveillant**<sup>1</sup>: détection à partir de moteurs anti-programme malveillant.
   - **Bloc de type fichier de stratégie anti-programme malveillant** : il s’agit de messages électroniques filtrés en raison du type de fichier malveillant identifié dans le message.
   - **Détonation de fichier**<sup>1</sup>: captures de détonation de fichier par des pièces jointes fiables.  
@@ -510,7 +510,7 @@ Pour plus d’informations, consultez la rubrique [autorisations dans Exchange O
 
 Si vous ne voyez pas de données dans vos rapports, vérifiez que vos stratégies sont correctement configurées. Pour en savoir plus, consultez la rubrique se [protéger contre les menaces](protect-against-threats.md).
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques associées
 
 [Protection contre le courrier indésirable et les programmes malveillants dans EOP](anti-spam-and-anti-malware-protection.md)
 

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Découvrez comment commencer à collecter des données pour votre client à l’aide de l’application de modèle d’analyse de l’utilisation 365 de Microsoft dans Power BI.
-ms.openlocfilehash: 0817e6441540086bf679c6533b1bad2e4087b4b9
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+ms.openlocfilehash: 347256fa7acaae18cd31f0c8c6b7eca20ad2e9dd
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841456"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48941330"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Activation de l'analyse de l'utilisation de Microsoft 365
 
@@ -56,32 +56,27 @@ Pour partager vos données, vous et les personnes avec lesquelles vous partagez 
   
 ### <a name="enable-the-template-app"></a>Activer l’application de modèle
 
-Pour activer l’application de modèle, vous devez avoir l’une des valeurs suivantes : 
-- **Administrateur général**
-- **Lecteur de rapport**
-- **Administrateur Exchange**
-- **Administrateur Skype entreprise**
-- **Administrateur SharePoint** 
+Pour activer l’application de modèle, vous devez être un **administrateur général**.
   
 Pour plus d’informations, consultez la rubrique [à propos des rôles d’administrateur](../add-users/about-admin-roles.md) . 
   
 1. Dans le centre d’administration, accédez à la page **Rapports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Utilisation</a>. 
     
-2. Sur la page **utilisation** , recherchez la carte d' **analyse d’utilisation Microsoft 365** , puis sélectionnez **prise en main** .
+2. Sur la page **utilisation** , recherchez la carte d' **analyse d’utilisation Microsoft 365** , puis sélectionnez **prise en main**.
     
-3. Dans le panneau rapports qui s’ouvre, définissez **mettre les données à la disposition de l’analyse de l’utilisation de Microsoft 365 pour Power bi à l'** **On** \> **enregistrement** . 
+3. Dans le panneau rapports qui s’ouvre, définissez **mettre les données à la disposition de l’analyse de l’utilisation de Microsoft 365 pour Power bi à l'** **On** \> **enregistrement**. 
   
 Le processus de collecte de données se terminera dans deux à 48 heures en fonction de la taille de votre client. Le bouton **go to Power bi** est activé (il n’est plus grisé) une fois la collecte de données terminée. 
     
 ### <a name="start-the-template-app"></a>Démarrer l’application de modèle
 
-Pour démarrer l’application de modèle, vous devez être un **administrateur général** , un **lecteur de rapport** , un **administrateur Exchange** , un **administrateur Skype entreprise** ou un **administrateur SharePoint** . 
+Pour démarrer l’application de modèle, vous devez être un **administrateur général** , un **lecteur de rapport** , un **administrateur Exchange** , un **administrateur Skype entreprise** ou un **administrateur SharePoint**. 
   
-1. Copiez l’ID de client et sélectionnez **accéder à Power bi** .
+1. Copiez l’ID de client et sélectionnez **accéder à Power bi**.
     
 2.  Lorsque vous accédez à Power BI, connectez-vous. **Sélectionnez ensuite applications** -> **obtenir des applications** dans le menu de navigation.    
   
-3. Dans l’onglet **apps** , tapez Microsoft 365 dans la zone de recherche, puis sélectionnez **analyse de l’utilisation de Microsoft 365** \> **Get it now** .
+3. Dans l’onglet **apps** , tapez Microsoft 365 dans la zone de recherche, puis sélectionnez **analyse de l’utilisation de Microsoft 365** \> **Get it now**.
 
     [![Sélectionnez obtenir maintenant](../../media/78102250-9874-4a32-8365-436f13560b52.png)](https://app.powerbi.com/groups/me/getapps/services/cia_microsoft365.microsoft-365-usage-analytics)
     
@@ -89,9 +84,9 @@ Pour démarrer l’application de modèle, vous devez être un **administrateur 
 
 5.  Sélectionnez **Explorer l’application** pour afficher l’application avec des exemples de données. Sélectionnez **connecter** pour connecter l’application aux données de votre organisation.
 
-6.  Sélectionnez **connecter** , sur l’écran **se connecter à l’utilisation de Microsoft 365** , puis tapez l’ID de client (sans les tirets) que vous avez copié à l’étape (1), puis sélectionnez **suivant** .
+6.  Sélectionnez **connecter** , sur l’écran **se connecter à l’utilisation de Microsoft 365** , puis tapez l’ID de client (sans les tirets) que vous avez copié à l’étape (1), puis sélectionnez **suivant**.
     
-7. Dans l’écran suivant, sélectionnez **OAuth2** comme **méthode d’authentification** \> **Sign in** . Si vous choisissez une autre méthode d’authentification, la connexion à l’application de modèle échouera.
+7. Dans l’écran suivant, sélectionnez **OAuth2** comme **méthode d’authentification** \> **Sign in**. Si vous choisissez une autre méthode d’authentification, la connexion à l’application de modèle échouera.
     
     ![Choisir un compte Microsoft comme méthode d’authentification](../../media/ab6f0463-c3f7-4088-a605-67c699fa86adnew.png)
   
@@ -103,8 +98,8 @@ Les agrégats de niveau client seront disponibles dans tous les rapports. **Les 
 
 Pour anonymiser les données collectées pour tous les rapports, vous devez être administrateur général. Cette opération masque les informations identifiables telles que les noms d’utilisateur, de groupe et de site dans les rapports et l’application de modèle.
   
-1. Dans le centre d’administration, accédez à **Settings** paramètres d' \> **organisation** paramètres, puis, sous l’onglet **services** , choisissez **rapports** .
+1. Dans le centre d’administration, accédez à **Settings** paramètres d' \> **organisation** paramètres, puis, sous l’onglet **services** , choisissez **rapports**.
     
-2. Sélectionnez **rapports** , puis choisissez d' **afficher les identificateurs anonymes** . Ce paramètre est appliqué à la fois aux rapports d’utilisation ainsi qu’à l’application de modèle.
+2. Sélectionnez **rapports** , puis choisissez d' **afficher les identificateurs anonymes**. Ce paramètre est appliqué à la fois aux rapports d’utilisation ainsi qu’à l’application de modèle.
   
-3. Sélectionnez **Enregistrer les modifications** .
+3. Sélectionnez **Enregistrer les modifications**.

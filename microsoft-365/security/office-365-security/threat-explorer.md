@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Découvrez comment utiliser l’Explorateur et les détections en temps réel dans le centre de sécurité &amp; conformité pour examiner et répondre efficacement aux menaces.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a6123306c1d707a3eeab5c5dd67ed25bebb71965
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 6a1aff37cc845e09be332b853aa938cb66fdb43f
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845676"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48941486"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorateur de menaces et détections en temps réel
 
@@ -53,7 +53,7 @@ Ce rapport vous permet d’utiliser les actions suivantes :
 > [!NOTE]
 > La fonctionnalité de balises utilisateur est en mode aperçu, n’est pas accessible à tous et peut faire l’objet de modifications. Pour plus d’informations sur le calendrier des publications, consultez la feuille de route Microsoft 365.
 
-Les balises utilisateur sont des identificateurs pour des groupes d’utilisateurs spécifiques dans Microsoft Defender pour Office 365. Pour plus d’informations sur les balises, les licences et la configuration des balises, consultez la rubrique [User Tags in Defender for Office 365](user-tags.md).
+Les balises utilisateur sont des identificateurs pour des groupes d’utilisateurs spécifiques dans Microsoft Defender pour Office 365. Pour plus d’informations sur les balises, les licences et la configuration des balises, consultez la rubrique [User Tags](user-tags.md).
 
 Dans l’Explorateur de menaces, vous pouvez voir des informations sur les balises utilisateur dans les expériences suivantes :
 
@@ -199,7 +199,7 @@ Dans le cadre de l’amélioration du processus de recherche, nous avons mis à 
 
 ### <a name="filter-by-user-tags"></a>Filtrer par balise utilisateur
 
-Vous pouvez désormais trier et filtrer par système ou par balises utilisateur personnalisées, afin de saisir rapidement l’étendue des menaces. Pour en savoir plus, consultez la rubrique [balises utilisateur dans Office 365 DAV](user-tags.md) .
+Vous pouvez désormais trier et filtrer par système ou par balises utilisateur personnalisées, afin de saisir rapidement l’étendue des menaces. Pour en savoir plus, consultez la rubrique [balises utilisateur](user-tags.md) .
 
 > [!IMPORTANT]
 > Le filtrage et le tri par les balises utilisateur sont actuellement en préversion publique.

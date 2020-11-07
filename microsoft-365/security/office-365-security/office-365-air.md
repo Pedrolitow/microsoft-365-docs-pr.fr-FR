@@ -1,5 +1,5 @@
 ---
-title: Prise en main de l’analyse et de la réponse automatisées dans Microsoft Defender pour Office 365
+title: Recherche et réponse automatisées dans Microsoft Defender pour Office 365
 keywords: AIR, autoIR, ATP, automatisation, analyse, réponse, correction, menaces, avancé, menace, protection
 f1.keywords:
 - NOCSH
@@ -21,14 +21,14 @@ description: Commencez à utiliser les fonctionnalités d’analyse et de répon
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: 5796cdf21f9dd12c35a2f84422f03503433755b0
-ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
+ms.openlocfilehash: 5a7995e0aeba0f29efb1a085a04a299b1e709b1f
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/06/2020
-ms.locfileid: "48931935"
+ms.locfileid: "48941462"
 ---
-# <a name="get-started-using-automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Prise en main de l’analyse et de la réponse automatiques dans Microsoft Defender pour Office 365
+# <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Recherche et réponse automatisées (AIR) dans Microsoft Defender pour Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -134,7 +134,7 @@ Les autorisations sont accordées par le biais de certains rôles, tels que ceux
 - Utilisateurs finals
 
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - [Afficher les détails et les résultats d’une enquête automatisée](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results#view-details-of-an-investigation)
 

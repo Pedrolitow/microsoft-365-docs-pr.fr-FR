@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Choisir entre différentes méthodes MDM et MAM.
-ms.openlocfilehash: 6231b7c82f280a60ae9d30bcf27697dc131b2471
-ms.sourcegitcommit: 5a355bde865369f64ea1788a378da23c65b1d249
+ms.openlocfilehash: 2866aa8cf172361b2b5f5055932717154cd6ddd1
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/06/2020
-ms.locfileid: "48930262"
+ms.locfileid: "48941296"
 ---
 # <a name="options-for-protecting-your-devices-and-app-data"></a>Options de protection des périphériques et des données de l’application
 
@@ -37,8 +37,6 @@ Vous disposez de plusieurs méthodes pour sécuriser les appareils et les donné
 - Plans d’entreprise Microsoft 365 qui incluent la sécurité avancée et la protection contre les menaces.
 
 ## <a name="device-management-options"></a>Options de gestion des appareils
-
-![Figure illustrant les abonnements qui doivent utiliser les méthodes MDM et MAM.](../../m365-mam-mdm.png)
 
 - La **sécurité et la mobilité de base** sont proposées avec la plupart des plans Microsoft 365 et est le seul choix intégré offert pour Microsoft 365 Business standard et Microsoft 365 Business Basic. Pour plus d’informations, consultez la rubrique [disponibilité de la sécurité et de la sécurité de base](../basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md#availability-of-basic-mobility-and-security-and-intune). 
 

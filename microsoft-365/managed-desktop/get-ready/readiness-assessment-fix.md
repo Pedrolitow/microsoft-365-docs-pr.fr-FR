@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: c28353698dd372e14d5ec51b92eb4c0c051c92a4
-ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
+ms.openlocfilehash: 642de80e1a133f212b7afb6774d9aab2eeaabdbf
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/06/2020
-ms.locfileid: "48931911"
+ms.locfileid: "48941408"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Corriger les problèmes détectés par l’outil d’évaluation de la disponibilité
 
@@ -308,20 +308,20 @@ Les paramètres de sécurité par défaut sont activés. Désactivez les paramè
 
 ### <a name="self-service-password-reset"></a>Réinitialisation du mot de passe en libre-service
 
-La réinitialisation du mot de passe en libre-service (SSPR) doit être activée pour tous les utilisateurs. Si ce n’est pas le cas, les comptes de service de bureau géré Microsoft ne peuvent pas fonctionner. Pour plus d’informations, consultez [la rubrique Tutorial : autoriser les utilisateurs à déverrouiller leur compte ou réinitialiser les mots de passe à l’aide de la réinitialisation du mot de passe en libre-service Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr).
+La réinitialisation du mot de passe en libre-service (SSPR) doit être activée pour tous les utilisateurs, à l’exception des comptes de service de bureau géré Microsoft. Pour plus d’informations, consultez [la rubrique Tutorial : autoriser les utilisateurs à déverrouiller leur compte ou réinitialiser les mots de passe à l’aide de la réinitialisation du mot de passe en libre-service Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr).
 
 **OpenSSL**
 
-Assurez-vous que le paramètre **sélectionné** SSPR inclut Microsoft Managed Desktop Devices.
+Assurez-vous que le paramètre **sélectionné** SSPR inclut Microsoft Managed Desktop Devices, mais exclut les comptes Microsoft Managed Desktop service. Les comptes de service de bureau géré Microsoft ne peuvent pas fonctionner comme prévu lorsque SSPR est activé.  
 
 
 ### <a name="standard-user-role"></a>Rôle d’utilisateur standard
 
-Les utilisateurs de bureau géré Microsoft doivent être des utilisateurs standard sans privilèges d’administrateur local. Ils se verront attribuer un rôle d’utilisateur standard lorsqu’ils démarreront leur périphérique de bureau géré Microsoft.
+À l’exception des utilisateurs auxquels sont attribués les rôles Azure AD attribués aux administrateurs généraux et aux appareils, les utilisateurs de bureau gérés Microsoft seront des utilisateurs standard sans privilèges d’administrateur local. Tous les autres utilisateurs se verront attribuer un rôle d’utilisateur standard lorsqu’ils démarreront leur périphérique de bureau géré Microsoft.
 
 **OpenSSL**
 
-Les utilisateurs de bureau géré Microsoft ne doivent pas avoir de privilèges d’administrateur local avant l’enregistrement.
+Les utilisateurs de bureau géré Microsoft ne disposeront pas des privilèges d’administrateur local sur leurs appareils de bureau gérés Microsoft après l’enregistrement.
 
 ## <a name="microsoft-365-apps-for-enterprise"></a>Applications Microsoft 365 for entreprise
 
