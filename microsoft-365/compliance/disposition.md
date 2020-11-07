@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Surveiller et gérer la suppression de contenu, que vous utilisiez une révision de destruction ou que le contenu soit automatiquement supprimé selon les paramètres que vous avez configurés.
-ms.openlocfilehash: a0fd71aa1eb7c0a7eff97e783f4b0dfb8a50a915
-ms.sourcegitcommit: 61d7284b412d0f7bbd8bbb2225c2e6324f86b717
+ms.openlocfilehash: dfea1cfece8a9faccced134cf30923527bd241f5
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "48262236"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48941365"
 ---
 # <a name="disposition-of-content"></a>Destruction de contenu
 
@@ -75,7 +75,7 @@ Vous pouvez voir une vue d’ensemble de toutes les suppressions en attente dans
 
 ![Destructions en attente dans la vue d’ensemble de la Gestion des enregistrements](../media/dispositions-overview.png)
 
-Lorsque vous sélectionnez l’option **Afficher toutes les destructions en attente**, vous êtes redirigé vers la page **Destruction** . Par exemple :
+Lorsque vous sélectionnez l’option **Afficher toutes les destructions en attente** , vous êtes redirigé vers la page **Destruction** . Par exemple :
 
 ![Page de destruction dans le centre de conformité Microsoft 365](../media/disposition-tab.png)
 
@@ -92,7 +92,7 @@ Dans la page **Définir les paramètres de rétention** pour une étiquette de r
 
 ![Paramètres de conservation pour une étiquette](../media/disposition-review-option.png)
  
-Une fois que vous avez sélectionné cet option **Déclencher une révision avant destruction**, vous spécifiez les relecteurs de destruction sur la page suivante de l’Assistant :
+Une fois que vous avez sélectionné cet option **Déclencher une révision avant destruction** , vous spécifiez les relecteurs de destruction sur la page suivante de l’Assistant :
 
 ![Spécification des réviseurs avant destruction](../media/disposition-reviewers.png)
 
@@ -132,7 +132,9 @@ Les éléments qui apparaissent dans la **Éléments supprimés** pour les étiq
 
 > [!NOTE]
 > Cette fonctionnalité est basée sur les informations du [journal d’audit unifié](search-the-audit-log-in-security-and-compliance.md) et nécessite par conséquent que l’audit soit [activé et puisse faire l’objet d’une recherche](turn-audit-log-search-on-or-off.md) de sorte que les événements correspondants soient capturés.
-    
+
+Pour l’audit, recherchez **Fichier étant identifié comme un enregistrement supprimé**.
+
 ## <a name="filter-and-export-the-views"></a>Filtrer et exporter les affichages
 
 Lorsque vous sélectionnez une étiquette de rétention dans la page **Destruction** , l’onglet **Destruction en attente** (le cas échéant) et **Éléments supprimés** vous permettent de filtrer les affichages pour trouver des éléments plus facilement. 

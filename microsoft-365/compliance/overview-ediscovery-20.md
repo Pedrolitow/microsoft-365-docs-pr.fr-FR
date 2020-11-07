@@ -20,16 +20,16 @@ search.appverid:
 ms.assetid: ''
 description: Cet article fournit une vue d’ensemble de Advanced eDiscovery dans Microsoft 365, un outil destiné aux investigations internes et externes.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d8a43d8a7f0b1803b374839d8ed0d7d82c6adace
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 95c864b9e2222000b1114ae42dbbb5705228d531
+ms.sourcegitcommit: dab50e1cc5bba920720b80033c93457f5ca1c330
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399053"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "48944342"
 ---
 # <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Vue d’ensemble de la solution avancée eDiscovery dans Microsoft 365
 
-La solution eDiscovery avancée de Microsoft 365 repose sur les fonctionnalités d’analyse et de découverte électronique existantes dans Office 365. Cette nouvelle solution, appelée *Advanced eDiscovery*, fournit un flux de travail de bout en bout pour conserver, collecter, examiner, analyser et exporter du contenu réactif aux investigations internes et externes de votre organisation. Il permet également aux équipes juridiques de gérer l’ensemble du flux de travail de notification de suspension légale pour communiquer avec les dépositaires impliqués dans un cas. 
+La solution eDiscovery avancée de Microsoft 365 repose sur les fonctionnalités d’analyse et de découverte électronique existantes dans Office 365. Cette nouvelle solution, appelée *Advanced eDiscovery* , fournit un flux de travail de bout en bout pour conserver, collecter, examiner, analyser et exporter du contenu réactif aux investigations internes et externes de votre organisation. Il permet également aux équipes juridiques de gérer l’ensemble du flux de travail de notification de suspension légale pour communiquer avec les dépositaires impliqués dans un cas. 
 
 > [!NOTE]
 > Advanced eDiscovery nécessite un abonnement Office 365 ou Microsoft 365 E5 Enterprise. Pour plus d’informations sur la gestion des licences eDiscovery avancée, consultez [la rubrique Microsoft 365 Licensing Guidance for security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-ediscovery).
@@ -44,27 +44,35 @@ Le flux de travail intégré de Advanced eDiscovery s’aligne sur le processus 
 
 À un niveau élevé, voici comment Advanced eDiscovery prend en charge le flux de travail EDRM :
 
-- **Identificateur.** Une fois que vous avez identifié les personnes intéressantes pour une enquête, vous pouvez les ajouter en tant que dépositaires (également appelés « *dépositaires de données*», car ils peuvent posséder des informations pertinentes pour l’enquête) dans un cas avancé de découverte électronique. Une fois que les utilisateurs sont ajoutés en tant que dépositaires, il est facile de conserver, de collecter et de consulter les documents des dépositaires.
+- **Identificateur.** Une fois que vous avez identifié les personnes intéressantes pour une enquête, vous pouvez les ajouter en tant que dépositaires (également appelés « *dépositaires de données* », car ils peuvent posséder des informations pertinentes pour l’enquête) dans un cas avancé de découverte électronique. Une fois que les utilisateurs sont ajoutés en tant que dépositaires, il est facile de conserver, de collecter et de consulter les documents des dépositaires.
 
 - **Leur.** Pour conserver et protéger les données correspondant à une enquête, la fonctionnalité eDiscovery avancée vous permet de placer une suspension légale sur les sources de données associées aux dépositaires dans un cas. Vous pouvez également placer des données non privatives de place en conservation. Advanced eDiscovery comprend également un flux de travail de communication intégré qui vous permet d’envoyer des notifications de conservation légale aux dépositaires et d’effectuer le suivi de leurs remerciements.
 
 - **Collection.** Une fois que vous avez identifié (et préservé) les sources de données pertinentes pour l’enquête, vous pouvez utiliser l’outil de recherche intégré dans Advanced eDiscovery Search for and Collect Live Data from the privatives Data sources (et les sources de données non privatives de cœur, le cas échéant) susceptibles de concerner le cas.
 
-- **Formation.** Une fois que vous avez collecté toutes les données pertinentes pour le cas, l’étape suivante consiste à le traiter pour révision et analyse. Dans Advanced eDiscovery, les données sur place que vous avez identifiées dans la phase de collecte sont copiées vers un emplacement de stockage Azure (appelé un *ensemble de révision*), ce qui vous fournit une vue statique des données de cas. 
- 
+- **Formation.** Une fois que vous avez collecté toutes les données pertinentes pour le cas, l’étape suivante consiste à le traiter pour révision et analyse. Dans Advanced eDiscovery, les données sur place que vous avez identifiées dans la phase de collecte sont copiées vers un emplacement de stockage Azure (appelé un *ensemble de révision* ), ce qui vous fournit une vue statique des données de cas. 
+
 - **Veuillez.** Une fois que les données ont été ajoutées à un jeu de révisions, vous pouvez afficher des documents spécifiques et exécuter une autre requête pour réduire les données qui sont les plus pertinentes pour le cas. Peut également annoter et baliser des documents spécifiques.
- 
+
 - **Analys.** Advanced eDiscovery propose un outil d’analyse intégré qui vous permet d’approfondir les données de l’ensemble de révision que vous déterminez n’est pas pertinent pour l’enquête. En plus de réduire le volume des données pertinentes, la découverte électronique avancée vous permet également d’enregistrer les coûts de la révision légale en vous permettant d’organiser le contenu pour faciliter et améliorer l’efficacité du processus de révision.
 
 - **Production** et **présentation.** Lorsque vous êtes prêt, vous pouvez exporter des documents à partir d’un jeu de révision pour vérification légale. Vous pouvez exporter des documents dans leur format d’origine ou dans un format spécifié par EDRM afin qu’ils puissent être importés dans des applications tierces.
 
-## <a name="advanced-ediscovery-workflow"></a>Flux de travail eDiscovery avancé
+## <a name="advanced-ediscovery-architecture"></a>Architecture eDiscovery avancée
 
-Les sections suivantes décrivent chaque étape du flux de travail intégré dans Advanced eDiscovery. La capture d’écran suivante montre l’onglet **Accueil** d’un cas nommé *responsabilité du produit 2019002*. Remarque les onglets de flux de travail en haut de la page sont séquencés pour s’aligner avec le processus EDRM. 
+Voici un diagramme d’architecture eDiscovery avancé qui montre le flux de travail de bout en bout dans un environnement géographique unique et dans un environnement multi-géo, et le flux de données de bout en bout qui est aligné avec le EDRM.
+
+[![Affiche de modèle : architecture eDiscovery avancée dans Microsoft 365](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
+
+[Afficher sous forme d’image](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
+
+[Télécharger en tant que fichier PDF](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf)
+
+[Télécharger en tant que fichier Visio](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)
 
 Pour plus d’informations sur le flux de travail de bout en bout dans Advanced eDiscovery, reportez-vous à cette [vidéo de mécanique Microsoft](https://go.microsoft.com/fwlink/?linkid=2066133).
 
-![Les onglets dans Advanced eDiscovery suivent le flux de travail EDRM](../media/aedisco-homepage-1.png)
+Les sections suivantes décrivent chaque étape du flux de travail intégré dans Advanced eDiscovery.
 
 ## <a name="managing-custodians-and-non-custodial-data-sources"></a>Gestion des dépositaires et des sources de données non privatives de cœur
 

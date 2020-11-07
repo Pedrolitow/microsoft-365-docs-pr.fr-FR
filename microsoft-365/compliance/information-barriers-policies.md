@@ -16,12 +16,12 @@ ms.collection:
 localization_priority: None
 description: Découvrez comment définir des stratégies pour les barrières d’informations dans Microsoft Teams.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f7e1fbb0f1d468f8e1b79f9cc414fdb87a224283
-ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
+ms.openlocfilehash: ffeb1f1ca3296390fa10a636d3806127095712f8
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48379179"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48941429"
 ---
 # <a name="define-information-barrier-policies"></a>Définir des stratégies d’obstacle aux informations
 
@@ -38,7 +38,7 @@ Lorsque vous définissez des stratégies pour les barrières d’informations, v
 
 - Les attributs du compte utilisateur sont définis dans Azure Active Directory (ou Exchange Online). Ces attributs peuvent inclure le service, la fonction, l’emplacement, le nom d’équipe et d’autres détails du profil du poste. 
 
-- Les segments sont des ensembles d’utilisateurs définis dans le centre de sécurité & conformité à l’aide d’un **attribut de compte d’utilisateur**sélectionné. (consultez la [liste des attributs pris en charge](information-barriers-attributes.md)). 
+- Les segments sont des ensembles d’utilisateurs définis dans le centre de sécurité & conformité à l’aide d’un **attribut de compte d’utilisateur** sélectionné. (consultez la [liste des attributs pris en charge](information-barriers-attributes.md)). 
 
 - Les stratégies de cloisonnement de l’information déterminent les limites ou les restrictions de communication. Lorsque vous définissez des stratégies de cloisonnement de l’information, vous avez le choix entre deux types de stratégie :
     - Les stratégies « bloquer » empêchent un segment de communiquer avec un autre segment.
@@ -70,7 +70,7 @@ En plus des [licences et des autorisations requises](information-barriers.md#req
 
 - Journalisation d’audit : pour Rechercher l’état d’une application de stratégie, la journalisation d’audit doit être activée. Nous vous recommandons d’effectuer cette opération avant de commencer à définir des segments ou des stratégies. Pour en savoir plus, consultez [la rubrique activer ou désactiver la recherche dans le journal d’audit](turn-audit-log-search-on-or-off.md).
 
-- Aucune stratégie de carnet d’adresses-avant de définir et d’appliquer des stratégies de barrière des informations, assurez-vous qu’aucune stratégie de carnet d’adresses Exchange n’est mise en place. Les obstacles aux informations sont basés sur les stratégies de carnet d’adresses, mais les deux types de stratégies ne sont pas compatibles. Si vous disposez de ces stratégies, veillez à [Supprimer les stratégies de carnet d’adresses](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) en premier. Une fois que les stratégies de barrière des informations sont activées et que le carnet d’adresses hiérarchique est activé, tous les utilisateurs ***qui ne sont pas inclus*** dans un segment de barrière des informations voient le [carnet d’adresses hiérarchique](https://docs.microsoft.com/exchange/address-books/hierarchical-address-books/hierarchical-address-books) dans Exchange Online.
+- Aucune stratégie de carnet d’adresses-avant de définir et d’appliquer des stratégies de barrière des informations, assurez-vous qu’aucune stratégie de carnet d’adresses Exchange n’est mise en place. Les obstacles aux informations sont basés sur les stratégies de carnet d’adresses, mais les deux types de stratégies ne sont pas compatibles. Si vous disposez de ces stratégies, veillez à [Supprimer les stratégies de carnet d’adresses](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) en premier. Une fois que les stratégies de barrière des informations sont activées et que le carnet d’adresses hiérarchique est activé, tous les utilisateurs * *_qui ne sont pas inclus_* dans un segment de barrière des informations voient le [carnet d’adresses hiérarchique](https://docs.microsoft.com/exchange/address-books/hierarchical-address-books/hierarchical-address-books) dans Exchange Online.
 
 - PowerShell-actuellement, les stratégies de barrière des informations sont définies et gérées dans le centre de conformité Office 365 Security & à l’aide des cmdlets PowerShell. Bien que plusieurs exemples soient fournis dans cet article, vous devez être familiarisé avec les cmdlets et les paramètres PowerShell. Vous aurez également besoin du module Azure PowerShell.
     - [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
@@ -90,7 +90,7 @@ En plus des [licences et des autorisations requises](information-barriers.md#req
 
    2. Lorsque vous y êtes invité, connectez-vous à l’aide de votre compte professionnel ou scolaire pour Office 365.
 
-   3. Dans la boîte de dialogue **autorisations demandées** , passez en revue les informations, puis choisissez **accepter**.
+   3. Dans la boîte de dialogue _ *autorisations demandées* *, passez en revue les informations, puis choisissez **accepter**.
 
 Lorsque toutes les conditions préalables sont remplies, passez à la section suivante.
 
@@ -116,7 +116,7 @@ En plus de votre liste initiale de stratégies, créez une liste de segments pou
 > [!IMPORTANT]
 > Un utilisateur ne peut contenir qu’un seul segment.
 
-Déterminez les attributs des données d’annuaire de votre organisation que vous utiliserez pour définir des segments. Vous pouvez utiliser *Department*, *memberOf*ou l’un des attributs pris en charge. Assurez-vous que vous avez sélectionné des valeurs dans l’attribut que vous sélectionnez pour les utilisateurs. [Consultez la liste des attributs pris en charge pour les barrières d’informations](information-barriers-attributes.md).
+Déterminez les attributs des données d’annuaire de votre organisation que vous utiliserez pour définir des segments. Vous pouvez utiliser *Department* , *memberOf* ou l’un des attributs pris en charge. Assurez-vous que vous avez sélectionné des valeurs dans l’attribut que vous sélectionnez pour les utilisateurs. [Consultez la liste des attributs pris en charge pour les barrières d’informations](information-barriers-attributes.md).
 
 > [!IMPORTANT]
 > **Avant de passer à la section suivante, assurez-vous que vos données d’annuaire possèdent des valeurs pour les attributs que vous pouvez utiliser pour définir des segments**. Si vos données d’annuaire n’ont pas de valeurs pour les attributs que vous souhaitez utiliser, les comptes d’utilisateur doivent être mis à jour pour inclure ces informations avant de passer à des barrières d’informations. Pour obtenir de l’aide, consultez les ressources suivantes :<br/>- [Configurer les propriétés des comptes d’utilisateur avec Office 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)<br/>- [Ajouter ou mettre à jour les informations de profil d’un utilisateur à l’aide d’Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
@@ -129,7 +129,7 @@ La définition de segments n’a pas d’impact sur les utilisateurs ; Il défi
 
     |Syntaxe   |Exemple  |
     |---------|---------|
-    |`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -eq 'attributevalue'"`     |`New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"` <p>Dans cet exemple, un segment appelé *HR* est défini à l’aide de *HR*, une valeur dans l’attribut *Department* . La partie **-EQ** de l’applet de commande fait référence à « Equals ». (Vous pouvez également utiliser **-** ne pour signifier « différent de ». Voir [using « Equals » et « not Equals » dans définitions de segment](#using-equals-and-not-equals-in-segment-definitions).)        |
+    |`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -eq 'attributevalue'"`     |`New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"` <p>Dans cet exemple, un segment appelé *HR* est défini à l’aide de *HR* , une valeur dans l’attribut *Department* . La partie **-EQ** de l’applet de commande fait référence à « Equals ». (Vous pouvez également utiliser **-** ne pour signifier « différent de ». Voir [using « Equals » et « not Equals » dans définitions de segment](#using-equals-and-not-equals-in-segment-definitions).)        |
 
     Une fois que vous avez exécuté chaque cmdlet, vous devez voir une liste de détails sur le nouveau segment. Les détails incluent le type du segment, qui a été créé ou modifié pour la dernière fois, et ainsi de suite. 
 
@@ -180,7 +180,7 @@ Avec votre liste de segments d’utilisateurs et les stratégies de barrière de
 - [Scénario 2 : Autoriser un segment à communiquer avec un seul autre segment](#scenario-2-allow-a-segment-to-communicate-only-with-one-other-segment)
 
 > [!IMPORTANT]
-> Assurez **-vous que lorsque vous définissez des stratégies, vous n’affectez pas plusieurs stratégies à un segment**. Par exemple, si vous définissez une stratégie pour un segment appelé *ventes*, ne définissez pas de stratégie supplémentaire pour les *ventes*.<p>De plus, lorsque vous définissez des stratégies de barrière des informations, veillez à définir ces stratégies sur état inactif jusqu’à ce que vous soyez prêt à les appliquer. La définition (ou modification) de stratégies n’affecte pas les utilisateurs tant que ces stratégies n’ont pas le statut actif, puis appliquées.
+> Assurez **-vous que lorsque vous définissez des stratégies, vous n’affectez pas plusieurs stratégies à un segment**. Par exemple, si vous définissez une stratégie pour un segment appelé *ventes* , ne définissez pas de stratégie supplémentaire pour les *ventes*.<p>De plus, lorsque vous définissez des stratégies de barrière des informations, veillez à définir ces stratégies sur état inactif jusqu’à ce que vous soyez prêt à les appliquer. La définition (ou modification) de stratégies n’affecte pas les utilisateurs tant que ces stratégies n’ont pas le statut actif, puis appliquées.
 
 (Voir l' [exemple : stratégies de barrière des informations de contoso](#contosos-information-barrier-policies) dans cet article.)
 
@@ -256,11 +256,11 @@ Avec PowerShell, vous pouvez afficher l’état des comptes d’utilisateur, des
 
 |Pour afficher cette  |Procédez comme suit  |
 |---------|---------|
-|Comptes d’utilisateur     |Utilisez la cmdlet **Get-InformationBarrierRecipientStatus** avec les paramètres d’identité. <p>Syntaxe `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>Vous pouvez utiliser n’importe quelle valeur qui identifie de façon unique chaque utilisateur, comme le nom, l’alias, le nom unique, le nom de domaine canonique, l’adresse de messagerie ou le GUID. <p>Exemple : `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p>Dans cet exemple, nous faisons référence à deux comptes d’utilisateur dans Office 365 : *meganb* pour *Megan*, et *Alexw* pour *Alex*. <p>(Vous pouvez également utiliser cette applet de commande pour un seul utilisateur : `Get-InformationBarrierRecipientStatus -Identity <value>` ) <p>Cette applet de commande retourne des informations sur les utilisateurs, telles que les valeurs d’attribut et les stratégies de barrière des informations qui sont appliquées.|
+|Comptes d’utilisateur     |Utilisez la cmdlet **Get-InformationBarrierRecipientStatus** avec les paramètres d’identité. <p>Syntaxe `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>Vous pouvez utiliser n’importe quelle valeur qui identifie de façon unique chaque utilisateur, comme le nom, l’alias, le nom unique, le nom de domaine canonique, l’adresse de messagerie ou le GUID. <p>Exemple : `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p>Dans cet exemple, nous faisons référence à deux comptes d’utilisateur dans Office 365 : *meganb* pour *Megan* , et *Alexw* pour *Alex*. <p>(Vous pouvez également utiliser cette applet de commande pour un seul utilisateur : `Get-InformationBarrierRecipientStatus -Identity <value>` ) <p>Cette applet de commande retourne des informations sur les utilisateurs, telles que les valeurs d’attribut et les stratégies de barrière des informations qui sont appliquées.|
 |Pertinents     |Utilisez la cmdlet **Get-OrganizationSegment** .<p>Syntaxe `Get-OrganizationSegment` <p>Cette opération permet d’afficher la liste de tous les segments définis pour votre organisation.         |
 |Stratégies de barrière des informations     |Utilisez la cmdlet **Get-InformationBarrierPolicy** . <p> Syntaxe `Get-InformationBarrierPolicy` <p>Cette opération affiche la liste des stratégies de barrière des informations qui ont été définies, ainsi que leur état.       |
 |Application de stratégie de barrière des informations la plus récente     | Utilisez la cmdlet **Get-InformationBarrierPoliciesApplicationStatus** . <p>Syntaxe `Get-InformationBarrierPoliciesApplicationStatus`<p>    Cela permet d’afficher des informations indiquant si l’application de stratégie a été exécutée, si elle a échoué ou est en cours d’exécution.       |
-|Toutes les applications de stratégie de barrière des informations|Utiliser `Get-InformationBarrierPoliciesApplicationStatus -All $true`<p>Cela permet d’afficher des informations indiquant si l’application de stratégie a été exécutée, si elle a échoué ou est en cours d’exécution.|
+|Toutes les applications de stratégie de barrière des informations|Utiliser `Get-InformationBarrierPoliciesApplicationStatus -All`<p>Cela permet d’afficher des informations indiquant si l’application de stratégie a été exécutée, si elle a échoué ou est en cours d’exécution.|
 
 <!-- IN the " The most recent information barrier policy application, add link to troubleshooting topic -->
 

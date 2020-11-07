@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Vous pouvez utiliser le Centre de sécurité et conformité Office 365 ou le Centre de conformité Microsoft 365 pour rechercher dans le journal d’audit unifié les activités des utilisateurs et des administrateurs de votre organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d7deb2068db9f15f31a04c45564b966af90d2e2b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 2254fb9fd47b1554064194b815ff4d19b2d33472
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846295"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48941451"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Recherchez le journal d’audit dans le centre de conformité
 
@@ -440,7 +440,7 @@ Le tableau suivant décrit les activités des fichiers et pages dans SharePoint 
 |Fichier supprimé|FileDeleted|Un utilisateur supprime un document d’un site.|
 |Fichier supprimé de la Corbeille|FileDeletedFirstStageRecycleBin|Un utilisateur supprime un fichier de la Corbeille d’un site.|
 |Fichier supprimé de la Corbeille second niveau|FileDeletedSecondStageRecycleBin|Un utilisateur supprime un fichier de la Corbeille second niveau d’un site.|
-|Supprimer l’enregistrement de l’étiquette stratégie de conformité|ComplianceRecordDelete|Un document identifié comme étant un enregistrement a été supprimé. Un document est considéré comme un enregistrement lorsqu’une étiquette de rétention qui identifie le contenu comme étant un enregistrement est appliquée au document.|
+|Fichier étant identifié comme un enregistrement supprimé|RecordDelete|Un document identifié comme étant un enregistrement a été supprimé. Un document est considéré comme un enregistrement lorsqu’une étiquette de rétention qui identifie le contenu comme étant un enregistrement est appliquée au document.|
 |Détection de correspondance incorrecte des documents|DocumentSensitivityMismatchDetected|Un utilisateur télécharge un document sur un site protégé par une étiquette de confidentialité et le document comporte une étiquette de confidentialité plus élevée que celle du site. Par exemple, un document marqué Confidentiel est chargé sur un site intitulé Général. <br/><br/> Cet événement ne se déclenche pas si le document comprend une étiquette de confidentialité de priorité inférieure à celle appliquée sur le site. Par exemple, un document marqué Général est téléchargé sur un site intitulé Confidentiel. Pour plus d’informations sur la priorité d'étiquettes de confidentialité, consultez la [Priorité d’étiquette (importance de l'ordre)](sensitivity-labels.md#label-priority-order-matters).|
 |Détection d’un programme malveillant dans le fichier|FileMalwareDetected|Le moteur antivirus de SharePoint détecte un programme malveillant dans un fichier.|
 |Extraction de fichier ignorée|FileCheckOutDiscarded|Un utilisateur ignore (ou annule) un fichier extrait. Les modifications qu’il a apportées au fichier le temps de son extraction sont ignorées et ne sont pas enregistrées dans la version du document dans la bibliothèque de documents.|

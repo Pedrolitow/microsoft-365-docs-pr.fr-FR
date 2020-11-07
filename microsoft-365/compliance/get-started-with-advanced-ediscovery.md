@@ -17,18 +17,17 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
 description: Cet article explique comment commencer à utiliser Advanced eDiscovery dans Microsoft 365. Une fois que vous avez effectué quelques étapes rapides, l’outil eDiscovery avancé est prêt à être utilisé. La première étape consiste à créer un cas, puis à commencer à utiliser les fonctionnalités avancées de découverte électronique.
-ms.openlocfilehash: 64c8681a47c21a7a6bfa9d67677405f74d75a96f
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 59537499ed52f44a9d32b8921fd297c5cd7c0d3f
+ms.sourcegitcommit: dab50e1cc5bba920720b80033c93457f5ca1c330
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398493"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "48944332"
 ---
 # <a name="get-started-with-advanced-ediscovery"></a>Prise en main Advanced eDiscovery
 
-Advanced eDiscovery dans Microsoft 365 fournit un flux de travail de bout en bout pour conserver, collecter, examiner, analyser et exporter les données qui répondent aux investigations internes et externes de votre organisation. Rien n’est nécessaire pour déployer Advanced eDiscovery, mais il existe des tâches préalables à effectuer par un administrateur informatique et un gestionnaire eDiscovery pour que votre organisation puisse commencer à créer et à utiliser des cas avancés de découverte électronique pour gérer vos recherches.
+Advanced eDiscovery dans Microsoft 365 fournit un [flux de travail de bout en bout](overview-ediscovery-20.md#advanced-ediscovery-architecture) pour conserver, collecter, examiner, analyser et exporter les données qui répondent aux investigations internes et externes de votre organisation. Rien n’est nécessaire pour déployer Advanced eDiscovery, mais il existe des tâches préalables à effectuer par un administrateur informatique et un gestionnaire eDiscovery pour que votre organisation puisse commencer à créer et à utiliser des cas avancés de découverte électronique pour gérer vos recherches.
 
 Cet article décrit les étapes nécessaires pour configurer Advanced eDiscovery. Cela inclut la garantie de la bonne licence requise pour accéder à Advanced eDiscovery et ajouter des dépositaires aux incidents, ainsi que l’attribution d’autorisations à vos équipes juridiques et d’enquête afin qu’ils puissent accéder aux incidents et les gérer. Cet article fournit également une vue d’ensemble de l’utilisation des cas pour gérer le flux de travail eDiscovery avancé pour une enquête légale.
 
@@ -110,7 +109,7 @@ L’étape suivante consiste à créer un cas et à commencer à utiliser Advanc
 
 1. Accédez à [https://compliance.microsoft.com](https://compliance.microsoft.com) et connectez-vous à l’aide des informations d’identification du compte d’utilisateur auquel ont été attribuées les autorisations eDiscovery appropriées. Les membres du groupe de rôles gestion de l’organisation peuvent également créer des cas avancés eDiscovery.
 
-2. Dans le volet de navigation gauche du centre de conformité Microsoft 365, cliquez sur **Tout afficher**, puis cliquez sur **eDiscovery >avancée**.
+2. Dans le volet de navigation gauche du centre de conformité Microsoft 365, cliquez sur **Tout afficher** , puis cliquez sur **eDiscovery >avancée**.
 
 3. Sur la page **découverte électronique avancée** , cliquez sur l’onglet **incidents** , puis cliquez sur **créer un cas**.
 
@@ -120,17 +119,17 @@ L’étape suivante consiste à créer un cas et à commencer à utiliser Advanc
 
    Le nouvel incident est créé et l’onglet **paramètres** dans le nouvel incident s’affiche. 
 
-6. Dans la vignette **accès & autorisations** sous l’onglet **paramètres** , cliquez sur **Sélectionner**, puis sur **mettre à jour**.
+6. Dans la vignette **accès & autorisations** sous l’onglet **paramètres** , cliquez sur **Sélectionner** , puis sur **mettre à jour**.
 
 7. Cliquez sur **Mise à jour**.
 
-8. Sur la page de menu contextuel **gérer ce cas** , sous **gérer les membres**, cliquez sur **Ajouter** pour ajouter des membres à la demande de devis.
+8. Sur la page de menu contextuel **gérer ce cas** , sous **gérer les membres** , cliquez sur **Ajouter** pour ajouter des membres à la demande de devis.
 
 9. Dans la liste des personnes, activez la case à cocher en regard des noms des personnes que vous souhaitez ajouter à la demande de devis. Comme indiqué précédemment, assurez-vous que les personnes que vous ajoutez au cas ont reçu les autorisations eDiscovery appropriées.
 
 10. Une fois que vous avez sélectionné les personnes à ajouter en tant que membres de la demande, cliquez sur **Ajouter**.
 
-11. Dans la page de garde **Gérer ce cas**, cliquez sur **Enregistrer** pour enregistrer la nouvelle liste des membres de cas.
+11. Dans la page de garde **Gérer ce cas** , cliquez sur **Enregistrer** pour enregistrer la nouvelle liste des membres de cas.
 
 12. Cliquez sur l’onglet **Accueil** pour accéder à la page d’accueil du dossier.
 
@@ -144,7 +143,7 @@ Pour commencer à utiliser Advanced eDiscovery, voici un flux de travail simple 
 
    - Les données de la boîte aux lettres Exchange du dépositaire, le compte OneDrive et tous les groupes Microsoft teams ou Yammer dont le dépositaire est membre peuvent être « marquées » comme étant des données privatives dans le cas.
   
-   - Les données des dépositaires sont réindexées (par un processus appelé *indexation avancée*). Cela permet d’optimiser la recherche dans l’étape suivante.
+   - Les données des dépositaires sont réindexées (par un processus appelé *indexation avancée* ). Cela permet d’optimiser la recherche dans l’étape suivante.
   
    - Vous pouvez placer un blocage sur les données des dépositaires. Cela permet de conserver les données qui peuvent être pertinentes pour le cas lors de l’enquête.
   
@@ -162,9 +161,9 @@ Pour commencer à utiliser Advanced eDiscovery, voici un flux de travail simple 
 
 3. **[Ajouter des données à un ensemble de révision](add-data-to-review-set.md)**. Une fois que vous avez configuré et vérifié qu’une recherche renvoie les données souhaitées, l’étape suivante consiste à ajouter les résultats de la recherche à un jeu de révision. Lorsque vous ajoutez des données à un ensemble de vérification, les éléments sont copiés de leur emplacement d’origine vers un emplacement de stockage Azure sécurisé. Les données sont réindexées pour les optimiser pour les recherches rapides et rapides lors de l’examen et de l’analyse des éléments de l’ensemble de révision. En outre, vous pouvez également [Ajouter des données non-Office 365 dans un jeu de révision](load-non-office-365-data-into-a-review-set.md).
 
-   Il existe également un type particulier de jeu d’analyse auquel vous pouvez ajouter des données, appelé « *révision de conversation*». Ces types d’ensembles de révisions fournissent des fonctionnalités de reconstruction de conversation pour reconstruire, examiner et exporter des conversations thématiques comme celles de Microsoft Teams. Pour plus d’informations, consultez la rubrique [Review conversations in Advanced eDiscovery](conversation-review-sets.md).
+   Il existe également un type particulier de jeu d’analyse auquel vous pouvez ajouter des données, appelé « *révision de conversation* ». Ces types d’ensembles de révisions fournissent des fonctionnalités de reconstruction de conversation pour reconstruire, examiner et exporter des conversations thématiques comme celles de Microsoft Teams. Pour plus d’informations, consultez la rubrique [Review conversations in Advanced eDiscovery](conversation-review-sets.md).
 
-4. **Examinez et analysez les données dans un jeu de révision**. À présent que les données se trouvent dans un ensemble de révision, vous pouvez utiliser un large éventail d’outils et de fonctionnalités pour afficher et analyser les données de cas afin de réduire la quantité de données la plus pertinente pour le cas où vous êtes à l’étude. Voici une liste de certains outils et fonctionnalités que vous pouvez utiliser pendant ce processus.
+4. **Examinez et analysez les données dans un jeu de révision**. À présent que les données se trouvent dans un ensemble de révision, vous pouvez utiliser un large éventail d’outils et de fonctionnalités pour afficher et analyser les données de cas afin de réduire la quantité de données la plus pertinente pour le cas que vous étudiez. Voici une liste de certains outils et fonctionnalités que vous pouvez utiliser pendant ce processus.
 
    - [Afficher des documents](view-documents-in-review-set.md). Cela inclut l’affichage des métadonnées pour chaque document dans un jeu de révision et l’affichage du document dans sa version native ou sa version textuelle.
 
