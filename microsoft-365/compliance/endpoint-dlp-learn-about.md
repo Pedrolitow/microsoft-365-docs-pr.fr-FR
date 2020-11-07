@@ -18,13 +18,13 @@ ms.collection:
 - m365initiative-compliance
 search.appverid:
 - MET150
-description: 'Les points de terminaison contre la protection contre la perte de données Microsoft 365 étend la surveillance des activités des fichiers et des actions de protection pour les points de terminaison. Les fichiers sont rendus visibles dans les solutions de conformité Microsoft 365 '
-ms.openlocfilehash: cbf4a53658885102226d2b874180f5cc5f264a91
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+description: 'La prévention des pertes de données du Point de terminaison Microsoft 365 étend la surveillance des activités des fichiers et des actions de protection de ces aux points de terminaison. Les fichiers sont rendus visibles dans les solutions de conformité Microsoft 365 '
+ms.openlocfilehash: 3dedf8f3134dbdd00c45e6b0aed741a3b3173984
+ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841860"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48931968"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention-preview"></a>En savoir plus sur les points de terminaison de protection contre la perte de données Microsoft 365 (Preview)
 
@@ -55,7 +55,8 @@ Vous devez tenir compte d’un certain nombre de concepts supplémentaires avant
 
 La gestion des appareils est une fonctionnalité qui permet d’assembler la télémétrie à partir d’appareils et de l’intégrer à des solutions de conformité Microsoft 365 telles que point de terminaison DLP et [ gestionnaire des risques Insider](insider-risk-management.md). Vous devez intégrer tous les appareils que vous voulez utiliser en tant qu’emplacements dans les stratégies DLP.
 
-![activer la gestion des appareils](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
+> [!div class="mx-imgBorder"]
+> ![activer la gestion des appareils](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
 
 L’intégration et déclassement sont gérés à l’aide de scripts téléchargés à partir du centre de gestion des appareils. Le centre inclut des scripts personnalisés pour chacune de ces méthodes de déploiement :
 
@@ -65,17 +66,19 @@ L’intégration et déclassement sont gérés à l’aide de scripts téléchar
 - Gestion des périphériques mobiles/Microsoft Intune
 - Scripts d’intégration VDI pour les machines non persistantes
 
-![page d’intégration d’appareils](../media/endpoint-dlp-learn-about-3-device-onboarding-page.png)
+> [!div class="mx-imgBorder"]
+> ![page d’intégration d’appareils](../media/endpoint-dlp-learn-about-3-device-onboarding-page.png)
 
  Utilisez les procédures décrites dans [Prise en main des points de terminaison Microsoft 365 DLP](endpoint-dlp-getting-started.md) vers les appareils intégrés.
 
 Si vous avez des appareils intégrés via [Microsoft Defender pour point de terminaison](https://docs.microsoft.com/windows/security/threat-protection/), ces derniers apparaissent automatiquement dans la liste des appareils.
 
-![liste des appareils gérés](../media/endpoint-dlp-learn-about-2-device-list.png)
+> [!div class="mx-imgBorder"]
+> ![liste des appareils gérés](../media/endpoint-dlp-learn-about-2-device-list.png)
 
 ### <a name="viewing-endpoint-dlp-data"></a>Affichage des données DLP de point de terminaison
 
- Le point de terminaison DLP de point de terminaison affiche le type MIME basé sur l’activité, de sorte que les activités sont capturées même si l’extension de fichier est modifiée. Dans la version public Preview, il observe tous les :
+ Le DLP du point de terminaison contrôle l’activité basée sur le type MIME, de sorte que les activités sont capturées même si l’extension de fichier est modifiée. Dans la version public Preview, il observe tous les :
 
 - Fichiers Word
 - Fichiers PowerPoint
@@ -83,6 +86,8 @@ Si vous avez des appareils intégrés via [Microsoft Defender pour point de term
 - Fichiers .pdf
 - Fichiers .csv
 - Fichiers .tsv
+- fichiers .txt
+- Fichiers RTF
 - fichiers c
 - fichiers de classe
 - fichiers CPP
@@ -91,11 +96,12 @@ Si vous avez des appareils intégrés via [Microsoft Defender pour point de term
 - fichiers Java
 
 > [!NOTE]
-> Les fichiers. txt et de code source ne sont pas audités par défaut, DLP les évalue par rapport aux stratégies appliquées, puis les actions des utilisateurs sont auditées ou bloquées en conséquence.
+> Le DLP du Point de terminaison évalue les fichiers de tous les types précités par rapport à la stratégie DLP et applique les actions de protection en conséquence. Tous les fichiers qui correspondent à une stratégie DLP sont audités pour toutes les actions prises en charge, même si elles ne sont pas bloquées. De plus, l’activité des fichiers effectuée sur un fichier Word, PowerPoint, Excel, PDF et. csv est auditée par défaut, indépendamment du fait qu’une stratégie DLP existe ou qu’elle corresponde à ces fichiers.
 
 Une fois qu’un appareil est intégré, les informations relatives aux activités auditées sont transmises dans l’Explorateur d’activités, même avant de configurer et déployer des stratégies DLP qui ont des périphériques comme emplacement.
 
-![événements de point de terminaison DLP dans l’Explorateur d’activités](../media/endpoint-dlp-learn-about-4-activity-explorer.png)
+> [!div class="mx-imgBorder"]
+> ![événements DLP du point de terminaison dans l’explorateur d’activités](../media/endpoint-dlp-learn-about-4-activity-explorer.png)
 
 Point de terminaison DLP recueille de nombreuses informations sur l’activité auditée.
 
@@ -126,9 +132,10 @@ Par exemple, si un fichier est copié sur un support USB amovible, les attributs
 - modèle d’appareil multimédia amovible
 - numéro de série de l’appareil multimédia amovible
 
-![attributs d’activité copier vers USB](../media/endpoint-dlp-learn-about-5-activity-attributes.png)
+> [!div class="mx-imgBorder"]
+> ![copier dans les attributs d’activités usb](../media/endpoint-dlp-learn-about-5-activity-attributes.png)
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Maintenant que vous en savez plus sur les points de terminaison DLP, vos prochaines étapes sont les suivantes :
 

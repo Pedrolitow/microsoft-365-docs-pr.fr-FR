@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: L’audit avancé de Microsoft 365 offre de nouvelles fonctionnalités d’audit pour aider votre organisation à effectuer des enquêtes de conformité et de légalité.
-ms.openlocfilehash: c63280825c04d401c0cdc44d7128031c3b7ffdd8
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 6524eadfd1622771e0da5bb8bcec73e11c0cfcdf
+ms.sourcegitcommit: 751dc531f0410ee075c179efe409a01664483ee2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398555"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48925614"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Audit avancé de Microsoft 365
 
@@ -36,7 +36,7 @@ Cet article offre une vue d’ensemble des fonctionnalités d'Audit Avancées.
 
 ## <a name="long-term-retention-of-audit-logs"></a>Conservation à long terme des journaux d’audit
 
-L’audit avancé conserve tous les enregistrements d’audit Exchange, SharePoint et Azure Active Directory pendant une durée d'un an. Ceci est réalisé par une stratégie de rétention du journal d’audit par défaut qui conserve tout enregistrement d’audit contenant la valeur **Exchange**, **SharePoint**ou **AzureActiveDirectory** pour la propriété **Charge de travail** (indiquant le service dans lequel l’activité s’est produite) pendant un an. La rétention d’enregistrements d’audit sur des périodes plus longues peut vous aider à effectuer des investigations de conformité ou de vérification en cours. Pour plus d’informations, voir la section « Stratégie de rétention du journal d’audit par défaut » dans [Gérer les stratégies de rétention du journal d’audit](audit-log-retention-policies.md#default-audit-log-retention-policy).
+L’audit avancé conserve tous les enregistrements d’audit Exchange, SharePoint et Azure Active Directory pendant une durée d'un an. Ceci est réalisé par une stratégie de rétention du journal d’audit par défaut qui conserve tout enregistrement d’audit contenant la valeur **Exchange** , **SharePoint** ou **AzureActiveDirectory** pour la propriété **Charge de travail** (indiquant le service dans lequel l’activité s’est produite) pendant un an. La rétention d’enregistrements d’audit sur des périodes plus longues peut vous aider à effectuer des investigations de conformité ou de vérification en cours. Pour plus d’informations, voir la section « Stratégie de rétention du journal d’audit par défaut » dans [Gérer les stratégies de rétention du journal d’audit](audit-log-retention-policies.md#default-audit-log-retention-policy).
 
 Nous publions également la fonctionnalité pour retenir les journaux d’audit pendant 10 ans. La rétention de 10 ans des journaux d’audit permet de faciliter les investigations de longue durée et de répondre aux obligations réglementaires, légales et internes.
 
@@ -107,9 +107,9 @@ Vous pouvez également exécuter les commandes [Search-UnifiedAuditLog -Operatio
 
 ### <a name="searchqueryinitiatedexchange"></a>SearchQueryInitiatedExchange
 
-L’événement SearchQueryInitiatedExchange est déclenché lorsqu’une personne utilise la barre de recherche dans Outlook ou Outlook sur le Web pour rechercher des éléments dans une boîte aux lettres. Les investigateurs peuvent utiliser l’événement SearchQueryInitiatedExchange pour déterminer si un intrus qui a compromis un compte a recherché ou essayé d’accéder à des informations sensibles dans la boîte aux lettres. L’enregistrement d’audit d’un événement SearchQueryInitiatedExchange contient des informations telles que le texte de la requête de recherche et indique si la recherche a été effectuée dans le client de bureau Outlook ou dans Outlook sur le Web. En examinant les requêtes de recherche qu’un intrus peut avoir effectué, un investigateur peut mieux comprendre l’objectif des données de messagerie qui ont été recherchées.
+L’événement SearchQueryInitiatedExchange est déclenché lorsqu’une personne utilise la barre de recherche dans Outlook ou Outlook sur le Web pour rechercher des éléments dans une boîte aux lettres. Les investigateurs peuvent utiliser l’événement SearchQueryInitiatedExchange pour déterminer si un intrus qui a compromis un compte a recherché ou essayé d’accéder à des informations sensibles dans la boîte aux lettres. L’enregistrement d’audit d’un événement SearchQueryInitiatedExchange contient des informations telles que le texte de la requête de recherche.  En examinant les requêtes de recherche qu’un intrus peut avoir effectué, un investigateur peut mieux comprendre l’objectif des données de messagerie qui ont été recherchées.
 
-Pour rechercher les enregistrements d’audit de SearchQueryInitiatedExchange, vous pouvez rechercher l’activité **Recherche d’émail effectuée ** dans la **liste déroulante** des activités de recherche dans [l’outil de recherche du journal d’audit](search-the-audit-log-in-security-and-compliance.md) dans le centre de conformité.
+Pour rechercher les enregistrements d’audit de SearchQueryInitiatedExchange, vous pouvez rechercher l’activité **Recherche d’émail effectuée** dans la **liste déroulante** des activités de recherche dans [l’outil de recherche du journal d’audit](search-the-audit-log-in-security-and-compliance.md) dans le centre de conformité.
 
 ![La recherche d’actions de recherche d’email effectuée  dans l’outil de recherche du journal d’audit](../media/AdvAudit_SearchExchange.png)
 
@@ -120,7 +120,7 @@ Vous pouvez également exécuter le [Search-UnifiedAuditLog-Operations SearchQue
 
 ### <a name="searchqueryinitiatedsharepoint"></a>SearchQueryInitiatedSharePoint
 
-À l’instar de la recherche d’éléments de boîte aux lettres, l’événement SearchQueryInitiatedSharePoint est déclenché lorsqu’une personne recherche des éléments sur le site SharePoint, les sites Teams, les sites de collaboration et les sites hub de votre organisation. Les investigateurs peuvent utiliser l’événement SearchQueryInitiatedSharePoint pour déterminer si un intrus a essayé de rechercher des informations sensibles (et éventuellement y a accédé) dans SharePoint. L’enregistrement d’audit d’un événement SearchQueryInitiatedSharePoint contient également le texte de la requête de recherche. En examinant les requêtes de recherche qu’un intrus peut avoir effectué, un investigateur peut mieux comprendre l’objectif et l’étendue des données de fichiers qui ont été recherchées.
+À l’instar de la recherche d’éléments de boîte aux lettres, l’événement SearchQueryInitiatedSharePoint est déclenché lorsqu’une personne recherche des éléments sur le site SharePoint de votre organisation. Les investigateurs peuvent utiliser l’événement SearchQueryInitiatedSharePoint pour déterminer si un intrus a essayé de rechercher des informations sensibles (et éventuellement y a accédé) dans SharePoint. L’enregistrement d’audit d’un événement SearchQueryInitiatedSharePoint contient également le texte de la requête de recherche. En examinant les requêtes de recherche qu’un intrus peut avoir effectué, un investigateur peut mieux comprendre l’objectif et l’étendue des données de fichiers qui ont été recherchées.
 
 Pour rechercher les enregistrements d’audit SearchQueryInitiatedSharePoint, vous pouvez rechercher l’activité **Recherche SharePoint effectuée** dans la **liste déroulante** des activités de recherche dans [l’outil de recherche du journal d’audit](search-the-audit-log-in-security-and-compliance.md) dans le centre de conformité.
 

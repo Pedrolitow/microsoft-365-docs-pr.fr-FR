@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Créez et publiez automatiquement des étiquettes de rétention afin de pouvoir les appliquer de manière automatique pour conserver les éléments dont vous avez besoin et de supprimer ceux qui sont inutiles
-ms.openlocfilehash: 5833684c729876315ce3866a8af52d79b924caef
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: c1c18f5445b326ad7353d8c534940d3db69a3f24
+ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920018"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48931978"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Application automatique d’une étiquette de rétention pour conserver ou supprimer du contenu
 
@@ -180,19 +180,10 @@ Pour identifier les enregistrements de réunion Microsoft Teams stockés dans le
 ProgID:Media AND ProgID:Meeting
 ```
 
-Pour cette étiquette de rétention, vous devez également la publier sur les comptes OneDrive des utilisateurs appropriés ou sur les sites SharePoint en créant une stratégie d’étiquette. La plupart du temps, les enregistrements de réunion sont enregistrés dans OneDrive, mais pour les réunions de canal, ils sont enregistrés dans SharePoint.
+La plupart du temps, les enregistrements de réunion sont enregistrés dans OneDrive. Mais les réunions de canal sont enregistrés dans SharePoint.
 
-Lorsque vous avez enregistré la stratégie de l’étiquette de rétention d’application automatique :
 
-1. Sélectionnez l’onglet **des stratégies d’étiquette** > **Publier des étiquettes**
-
-2. Lorsque vous êtes invité à sélectionner une étiquette, sélectionnez la même étiquette que vous avez sélectionnée pour la stratégie d’application automatique qui identifie les enregistrements de réunions de Teams.
-
-3. Lorsque vous êtes invité à entrer l’emplacement, choisissez **Les sites SharePoint** et **Les comptes OneDrive**. Vous pouvez ensuite conserver la valeur par défaut de **Tous** , ou spécifier des emplacements individuels, tels que l’inclusion ou l’exclusion de comptes OneDrive spécifiques.
-
-4. Terminez l’assistant et enregistrez cette stratégie d’étiquette.
-
-#### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>Appliquer automatiquement des étiquettes au contenu à l’aide de classifieurs entraînables
+#### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>Appliquer automatiquement des étiquettes au contenu à l’aide de classificateurs entraînables
 
 Lorsque vous choisissez l’option de classifieur entraînable, vous pouvez sélectionner un classifieur intégré ou un classifieur personnalisé. Les classifieurs intégrés incluent : **CV** , **SourceCode** , **Harcèlement ciblé** , **Blasphème** et la **Menace**  :
 
@@ -216,7 +207,7 @@ Lorsque vous appliquez automatiquement des étiquettes de rétention, l’applic
 
 Si les étiquettes attendues n’apparaissent pas après sept jours, consultez l’ **État** de la stratégie d’application automatique en sélectionnant celle-ci dans la page des **Stratégies d’étiquette** dans le centre de conformité. Si vous voyez l’état de **Désactivé (erreur)** et dans les détails des emplacements, consultez un message indiquant qu’il prend plus de temps que prévu pour déployer la stratégie (pour SharePoint) ou essayez de redéployer la stratégie (pour OneDrive), essayez d’exécuter la commande PowerShell [RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) pour réessayer la distribution de la stratégie :
 
-1. [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
+1. [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
 2. Exécutez la commande suivante :
     
@@ -234,7 +225,7 @@ Certains paramètres ne peuvent pas être modifiés une fois l’étiquette ou l
 
 ## <a name="locking-the-policy-to-prevent-changes"></a>Verrouillage de la stratégie pour empêcher toute modification
 
-Si vous devez vous assurer que personne ne peut désactiver la stratégie, supprimer la stratégie ou la rendre moins restrictive, voir [Utiliser un verrou de conservation pour restreindre les modifications apportées aux stratégies de rétention et aux stratégies d’étiquette de rétention](retention-preservation-lock.md).
+Si vous voulez vous assurer que personne ne peut désactiver la stratégie, supprimer la stratégie ou la rendre moins restrictive, consultez [Utiliser le Verrou de Conservation pour restreindre les modifications apportées aux stratégies de rétention et aux stratégies d’étiquette de rétention](retention-preservation-lock.md).
 
 ## <a name="next-steps"></a>Prochaines étapes
 
