@@ -15,16 +15,18 @@ ms.collection:
 - M365-security-compliance
 - remotework
 description: Protégez votre courrier électronique et vos données professionnelles contre les menaces informatiques, notamment les ransomware, le hameçonnage et les pièces jointes malveillantes.
-ms.openlocfilehash: e91d2c6fc3df7cbcd7fedc198747838d470ab7d8
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 8f170079a5542f703376139cdd6ec4550712d0fd
+ms.sourcegitcommit: dab50e1cc5bba920720b80033c93457f5ca1c330
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845419"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "48944370"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>12 premières tâches pour les équipes de sécurité qui prennent en charge le travail à domicile
 
 Si vous êtes comme [Microsoft](https://www.microsoft.com/microsoft-365/blog/2020/03/10/staying-productive-while-working-remotely-with-microsoft-teams/) et que vous avez soudainement besoin de prendre en charge un personnel basé principalement sur la maison, nous souhaitons vous aider à garantir le bon fonctionnement de votre organisation. Cet article donne la priorité aux tâches pour aider les équipes de sécurité à implémenter les fonctionnalités de sécurité les plus importantes aussi rapidement que possible.
+
+![Effectuez ces tâches principales pour prendre en charge le travail à partir de la maison.](../media/security/security-support-remote-work.png)
 
 Si vous êtes une petite ou moyenne organisation à l’aide de l’un des plans d’entreprise de Microsoft, consultez plutôt ces ressources :
 
@@ -44,7 +46,7 @@ Pour les clients qui utilisent nos plans d’entreprise, Microsoft vous recomman
 |n°2|[Se protéger contre les menaces](#2-protect-against-threats)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |3|[Configurer Microsoft Defender pour Office 365](#3-configure-microsoft-defender-for-office-365)|||![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |4 |[Configurer Microsoft Defender pour l’identité](#4-configure-microsoft-defender-for-identity)|||![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|5 |[Activer Microsoft 365 Defender](#5-turn-on-microsoft-365-defender)|||![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|5 |[Activer Microsoft 365 Defender](#5-turn-on-microsoft-365-defender)|||![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |6 |[Configurer la protection des applications mobiles Intune pour les téléphones et les tablettes](#6-configure-intune-mobile-app-protection-for-phones-and-tablets)||![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |7 |[Configurer l’authentification MFA et l’accès conditionnel pour les invités, y compris la protection des applications Intune](#7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection)||![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |8 |[Inscrire des PC dans la gestion des appareils et exiger des PC conformes](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)||![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|
@@ -110,7 +112,7 @@ Vous devrez collaborer avec votre administrateur Exchange Online et votre admini
 
 ## <a name="4-configure-microsoft-defender-for-identity"></a>4 : configurer Microsoft Defender pour l’identité
 
-[Microsoft Defender for Identity](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) est une solution de sécurité basée sur le Cloud qui tire parti de vos signaux Active Directory locaux pour identifier, détecter et examiner les menaces avancées, les identités compromises et les actions malveillantes dirigées vers votre organisation. Concentrez-vous sur cette étape, car elle protège votre infrastructure local et votre infrastructure cloud, ne dispose d’aucune dépendance ou prérequis et peut fournir des avantages immédiats.
+[Microsoft Defender pour identité](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) est une solution de sécurité basée sur le cloud qui exploite les signaux de votre Active Directory sur site pour identifier, détecter et examiner les menaces avancées, les identités compromises et les actions des utilisateurs malveillants ciblant votre organisation. Concentrez-vous sur cette étape, car elle protège votre infrastructure local et votre infrastructure cloud, ne dispose d’aucune dépendance ou prérequis et peut fournir des avantages immédiats.
 
 - Consultez la rubrique [Microsoft Defender for Identity QuickStarts](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1) pour obtenir le programme d’installation rapidement
 - Regarder la [vidéo : présentation de Microsoft Defender pour l’identité](https://www.youtube.com/watch?reload=9&v=EGY2m8yU_KE)

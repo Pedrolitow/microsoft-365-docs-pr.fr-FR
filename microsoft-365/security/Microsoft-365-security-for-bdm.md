@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: les scénarios de menace et d’attaque les plus courants rencontrés par les organisations pour leurs environnements Microsoft 365 et les actions recommandées pour atténuer ces risques.
-ms.openlocfilehash: b359b16042d419a06096a48ddcbc50affbcc4cd6
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 64f4491db3dc4ef18411b166fb23c4388383dae2
+ms.sourcegitcommit: dab50e1cc5bba920720b80033c93457f5ca1c330
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843127"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "48944299"
 ---
 # <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>Sécurité Microsoft 365 pour les décideurs d’entreprise (BDM)
 
@@ -30,6 +30,8 @@ Cet article est organisé par ordre de priorité du travail, en commençant par 
 [![Image miniature de la feuille de calcul recommandations de sécurité Microsoft 365 BDM](../downloads/microsoft-365-bdm-security-recommendations-spreadsheet-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-BDM-security-recommendations-spreadsheet.xlsx)
 
 Microsoft vous fournit l’outil de score sécurisé au sein de votre client pour analyser automatiquement votre position de sécurité en fonction de vos activités régulières, attribuer un score et fournir des recommandations en matière d’amélioration de la sécurité. Avant de prendre les mesures recommandées dans cet article, Notez votre score actuel et vos recommandations. Les actions recommandées dans cet article augmentent votre score. L’objectif est de ne pas atteindre le score maximal, mais de prendre conscience des possibilités de protection de votre environnement d’une manière qui n’influe pas sur la productivité de vos utilisateurs. Consultez la rubrique [Microsoft Secure score](mtp/microsoft-secure-score.md).
+
+![Suivez les étapes ci-dessous pour atténuer les risques pour votre entreprise.](../media/security/security-for-bdms-overview.png)
 
 Une autre chose avant de commencer. . . Veillez à [activer le journal d’audit](../compliance/search-the-audit-log-in-security-and-compliance.md). Vous aurez besoin de ces données ultérieurement, dans le cas où vous devriez examiner un incident ou une violation. 
 
