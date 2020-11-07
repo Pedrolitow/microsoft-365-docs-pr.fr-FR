@@ -15,19 +15,19 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à identifier des groupes d’utilisateurs spécifiques à l’aide de balises utilisateur dans Microsoft Defender pour Office 365 plan 2. Le filtrage des balises est disponible dans les alertes, les rapports et les analyses de Microsoft Defender pour Office 365 afin d’identifier rapidement les utilisateurs balisés.
-ms.openlocfilehash: fcc13a04ed603712bb2a45ccaadbaf161702c502
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 9c83a323a3116b3da61a133c7fb449978ca13841
+ms.sourcegitcommit: 9dbc6a08177aaca112e84d30dbaa79a0a8e9dbf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842879"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "48945317"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Balises utilisateur dans Microsoft Defender pour Office 365
 
 > [!NOTE]
 > La fonctionnalité de balises utilisateur est en mode aperçu, n’est pas accessible à tous et peut faire l’objet de modifications. Pour plus d’informations sur le calendrier des publications, consultez la feuille de [route Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap).
 
-Les balises utilisateur sont des identificateurs pour des groupes d’utilisateurs spécifiques dans [Defender pour Office 365](office-365-atp.md). Il existe deux types de balises utilisateur :
+Les balises utilisateur sont des identificateurs pour des groupes d’utilisateurs spécifiques dans [Microsoft Defender pour Office 365](office-365-atp.md). Il existe deux types de balises utilisateur :
 
 - **Balises système** : actuellement, le [compte de priorité](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) est le seul type de balise système.
 - **Balises personnalisées** : créez ces balises utilisateur vous-même.

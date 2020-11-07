@@ -16,12 +16,12 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur les options disponibles et préférées pour autoriser les messages entrants dans Exchange Online Protection (EOP).
-ms.openlocfilehash: 4009dcd506921b473e938828e5bdc10411c06ce2
-ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
+ms.openlocfilehash: 0ab0a636cb70d98aa7c17ffe6aaec66ae1f4ecc7
+ms.sourcegitcommit: 9dbc6a08177aaca112e84d30dbaa79a0a8e9dbf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48600320"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "48945341"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Créer des listes d’expéditeurs approuvés dans EOP
 
@@ -57,17 +57,17 @@ Règles de flux de messagerie dans Exchange Online et dans un environnement auto
 
 L’exemple suivant suppose que vous avez besoin d’un courrier électronique de contoso.com pour ignorer le filtrage du courrier indésirable. Pour ce faire, configurez les paramètres suivants :
 
-1. **Condition**: **le domaine de l’expéditeur** \> **est** \> contoso.com.
+1. **Condition** : **le domaine de l’expéditeur** \> **est** \> contoso.com.
 
 2. Configurez l’un des paramètres suivants :
 
-   - **Condition de règle de flux de messagerie**: **un en-tête** \> **de message inclut l’un de ces mots nom d'** en-tête : valeur d' \> **Header name** `Authentication-Results` \> **en-tête**: `dmarc=pass` ou `dmarc=bestguesspass` .
+   - **Condition de règle de flux de messagerie** : **un en-tête** \> **de message inclut l’un de ces mots nom d'** en-tête : valeur d' \> **Header name** `Authentication-Results` \> **en-tête** : `dmarc=pass` ou `dmarc=bestguesspass` .
 
-     Cette condition vérifie l’état de l’authentification de l’expéditeur du domaine de messagerie d’envoi pour s’assurer que le domaine d’envoi n’est pas usurpé. Pour plus d’informations sur l’authentification de messagerie, voir [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md)et [DMARC](use-dmarc-to-validate-email.md).
+     Cette condition vérifie l’état d’authentification de messagerie du domaine de messagerie d’envoi pour s’assurer que le domaine d’envoi n’est pas usurpé. Pour plus d’informations sur l’authentification de messagerie, voir [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md)et [DMARC](use-dmarc-to-validate-email.md).
 
-   - **Liste d’adresses IP autorisées**: spécifiez l’adresse IP source ou la plage d’adresses dans la stratégie de filtrage des connexions.
+   - **Liste d’adresses IP autorisées** : spécifiez l’adresse IP source ou la plage d’adresses dans la stratégie de filtrage des connexions.
   
-     Utilisez ce paramètre si le domaine d’envoi n’a pas d’authentification. Être aussi restrictif que possible lorsqu’il s’agit des adresses IP source dans la liste d’adresses IP autorisées. Nous vous recommandons d’utiliser une plage d’adresses IP supérieure ou égale à 24 (moins est préférable). N’utilisez pas de plages d’adresses IP appartenant à des services grand public (par exemple, outlook.com) ou à des infrastructures partagées.
+     Utilisez ce paramètre si le domaine d’envoi n’utilise pas l’authentification de messagerie. Être aussi restrictif que possible lorsqu’il s’agit des adresses IP source dans la liste d’adresses IP autorisées. Nous vous recommandons d’utiliser une plage d’adresses IP supérieure ou égale à 24 (moins est préférable). N’utilisez pas de plages d’adresses IP appartenant à des services grand public (par exemple, outlook.com) ou à des infrastructures partagées.
 
    > [!IMPORTANT]
    >
@@ -77,17 +77,17 @@ L’exemple suivant suppose que vous avez besoin d’un courrier électronique d
    >
    > - Si vous autorisez une adresse IP se trouvant derrière une passerelle NAT (Network Address Translation), vous devez déterminer les serveurs impliqués dans le pool NAT afin de déterminer l’étendue de votre liste d’adresses IP autorisées. Les adresses IP et les participants NAT peuvent modifier. Vous devez vérifier régulièrement vos entrées de liste d’adresses IP autorisées dans le cadre de vos procédures de maintenance standard.
 
-3. **Conditions facultatives**:
+3. **Conditions facultatives** :
 
-   - **L’expéditeur** \> **est interne/externe** \> À **l’extérieur de l’organisation**: cette condition est implicite, mais il est possible de l’utiliser pour prendre en compte les serveurs de messagerie locaux qui ne sont peut-être pas correctement configurés.
+   - **L’expéditeur** \> **est interne/externe** \> À **l’extérieur de l’organisation** : cette condition est implicite, mais il est possible de l’utiliser pour prendre en compte les serveurs de messagerie locaux qui ne sont peut-être pas correctement configurés.
 
    - **L’objet ou le corps** \> **l’objet ou le corps inclut l’un de ces mots** \> \<keywords\>: Si vous pouvez restreindre davantage les messages en fonction de mots clés ou d’expressions dans la ligne d’objet ou le corps du message, vous pouvez utiliser ces mots comme condition.
 
-4. **Action**: configurez ces deux actions dans la règle :
+4. **Action** : configurez ces deux actions dans la règle :
 
    a. **Modifier les propriétés** \> du message **définir le seuil de probabilité de courrier indésirable (SCL)** \> **Contourner le filtrage du courrier indésirable**.
 
-   b. **Un en-tête** \> de message **inclut l’un de ces mots** \> **Nom de l’en-** tête : \<CustomHeaderName\> **valeur d’en-tête**: \<CustomHeaderValue\> .
+   b. **Modifier les propriétés** \> du message **définissez un en-tête de message** : **Définissez l’en-tête du message** \<CustomHeaderName\> **sur la valeur** \<CustomHeaderValue\> .
 
       Par exemple, `X-ETR: Bypass spam filtering for authenticated sender 'contoso.com'`. Si vous avez plusieurs domaines dans la règle, vous pouvez personnaliser le texte d’en-tête en fonction de vos besoins.
 
@@ -105,7 +105,7 @@ Lorsque les messages ignorent le filtrage du courrier indésirable en raison de 
 
 Si vous ne pouvez pas utiliser les règles de flux de messagerie comme décrit précédemment, la meilleure solution consiste à ajouter le ou les serveurs de messagerie source à la liste d’adresses IP autorisées dans la stratégie de filtrage des connexions. Pour plus d’informations, consultez la rubrique [Configure connection Filtering in EOP](configure-the-connection-filter-policy.md).
 
-**Remarques**:
+**Remarques**  :
 
 - Il est important de conserver le nombre d’adresses IP autorisées à un minimum, donc d’éviter d’utiliser des plages d’adresses IP entières dès que possible.
 
@@ -130,7 +130,7 @@ La limite maximale de ces listes est d’environ 1000 entrées ; Bien que vous 
 
 ## <a name="considerations-for-bulk-email"></a>Considérations relatives au courrier en nombre
 
-Un message électronique SMTP standard est constitué d’une *enveloppe de message* et d’un contenu de message. L’enveloppe de message contient les informations requises pour la transmission et la remise du message entre les serveurs SMTP. Le contenu du message comporte les champs d’en-tête de message (collectivement appelés l’*en-tête de message*) et le corps du message. L’enveloppe de message est décrite dans la norme RFC 5321 et l’en-tête de message est décrit dans la spécification RFC 5322. Les destinataires ne voient jamais l’enveloppe de message réelle, car elle est générée par le processus de transmission des messages, et elle ne fait pas partie du message.
+Un message électronique SMTP standard est constitué d’une *enveloppe de message* et d’un contenu de message. L’enveloppe de message contient les informations requises pour la transmission et la remise du message entre les serveurs SMTP. Le contenu du message comporte les champs d’en-tête de message (collectivement appelés l’ *en-tête de message* ) et le corps du message. L’enveloppe de message est décrite dans la norme RFC 5321 et l’en-tête de message est décrit dans la spécification RFC 5322. Les destinataires ne voient jamais l’enveloppe de message réelle, car elle est générée par le processus de transmission des messages, et elle ne fait pas partie du message.
 
 - L' `5321.MailFrom` adresse (également appelée adresse **de messagerie de** l’expéditeur, expéditeur P1 ou expéditeur de l’enveloppe) est l’adresse de messagerie utilisée dans la transmission SMTP du message. Cette adresse de messagerie est généralement enregistrée dans le champ d’en-tête de **retour** de l’en-tête du message (bien que l’expéditeur ait la possibilité de désigner une autre adresse de messagerie de **chemin d’accès** ). Si le message ne peut pas être remis, il s’agit du destinataire de la notification d’échec de remise (également appelée notification de non-remise).
 
