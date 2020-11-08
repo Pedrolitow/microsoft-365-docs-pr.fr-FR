@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Ressources pour vous aider à respecter les réglementations en matière de gouvernance des informations et de gestion des enregistrements.
-ms.openlocfilehash: 2aa413400d9d60b759b35d04175b674cedb0a733
-ms.sourcegitcommit: 5a355bde865369f64ea1788a378da23c65b1d249
+ms.openlocfilehash: f8641af2ec839c9ed3f4d029b4f6de52fe7033e3
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/06/2020
-ms.locfileid: "48930187"
+ms.locfileid: "48941419"
 ---
 # <a name="regulatory-requirements-for-information-governance-and-records-management"></a>Réglementations en matière de gouvernance des informations et de gestion des enregistrements
 
@@ -36,7 +36,7 @@ Ces ressources peuvent être téléchargées à partir de la page [Ressources de
 
 Charges de travail applicables : SharePoint, OneDrive, Teams, Exchange et Skype Entreprise
 
-Publié en octobre 2020, ce rapport a été créé en partenariat avec Cohasset Associates, Inc. (Cohasset) pour évaluer les fonctionnalités des services Microsoft 365 pour l’enregistrement, le stockage et la gestion des demandes d’enregistrement électronique, comme spécifié par :  
+Publié en novembre 2020, ce rapport a été créé en partenariat avec Cohasset Associates, Inc. (Cohasset) pour évaluer les fonctionnalités des services Microsoft 365 pour l’enregistrement, le stockage et la gestion des demandes d’enregistrement électronique, comme spécifié par :  
 
 - Dans 17 CFR § 240.17a-4(f), la SEC (Securities and Exchange Commission), réglemente les membres, courtiers ou les négociants Exchange.  
 
