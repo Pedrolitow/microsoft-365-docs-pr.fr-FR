@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Découvrez les vues de campagne dans Microsoft Defender pour Office 365.
-ms.openlocfilehash: 181b6ce5859dd5146512fe854c983b6b9096d8c6
-ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
+ms.openlocfilehash: 1e5754e077d4c1b8f685b5dea1f8a59985e08a13
+ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48941354"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "48948480"
 ---
 # <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Vues de campagne dans Microsoft Defender pour Office 365
 
@@ -115,9 +115,9 @@ Le filtrage le plus élémentaire que vous pouvez faire est la date/l’heure de
 
 Pour filtrer davantage l’affichage, vous pouvez effectuer une seule propriété avec plusieurs valeurs de filtrage en cliquant sur le bouton **type de campagne** , en sélectionnant l’option **Actualiser**.
 
-Les propriétés de la campagne disponibles sont décrites dans la liste suivante :
+Les propriétés de campagne filtrables disponibles dans le bouton **type de campagne** sont décrites dans la liste suivante :
 
-- Basic
+- De **base** :
   - **Type de campagne** : sélectionnez **programme malveillant** ou **hameçonnage**. L’effacement des sélections a le même résultat que la sélection des deux.
   - **Nom de la campagne**
   - **Sous-type de campagne**
@@ -127,23 +127,26 @@ Les propriétés de la campagne disponibles sont décrites dans la liste suivant
   - **Subject**
   - **Nom de fichier des pièces jointes**
   - **Famille de programmes malveillants**
+  - **Balises** : utilisateurs ou groupes auxquels la balise utilisateur spécifiée a été appliquée (y compris les comptes prioritaires). Pour plus d’informations sur les balises utilisateur, voir [User Tags](user-tags.md).
+  - **Substitutions système**
   - **Action de remise**
+  - **Action supplémentaire**
+  - **Orientation**
   - **Technologie de détection**
-  - **Tags**
+  - **Emplacement de remise d’origine**
+  - **Dernier emplacement de remise**
   - **Substitutions système**
 
-- Avancé
+- **Avancé** :
   - **ID de message Internet** : disponible dans le champ d’en-tête **message-ID** de l’en-tête du message. Un exemple de valeur est `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (Notez les chevrons).
   - **ID de message réseau** : valeur Guid disponible dans le champ d’en-tête **X-MS-Exchange-Organization-Network-message-ID** de l’en-tête du message.
   - **IP de l’expéditeur**
   - **Attachment SHA256** : pour trouver la valeur de hachage SHA256 d’un fichier dans Windows, exécutez la commande suivante dans une invite de commandes : `certutil.exe -hashfile "<Path>\<Filename>" SHA256` .
-
   - **ID de cluster**
-
   - **ID de stratégie d’alerte**
+  - **Le signal d’URL ZAP**
 
-- URL
-
+- **URL** :
   - **Domaine d’URL**
   - **Domaine et chemin d’accès de l’URL**
   - **URL**

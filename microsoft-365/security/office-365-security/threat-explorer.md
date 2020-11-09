@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Découvrez comment utiliser l’Explorateur et les détections en temps réel dans le centre de sécurité &amp; conformité pour examiner et répondre efficacement aux menaces.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6a1aff37cc845e09be332b853aa938cb66fdb43f
-ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
+ms.openlocfilehash: 561e4c62922a4da0789111de5c3be7844bb83692
+ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48941486"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "48948492"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorateur de menaces et détections en temps réel
 
@@ -45,7 +45,6 @@ Ce rapport vous permet d’utiliser les actions suivantes :
 - [Démarrer un processus d’enquête et de réponse automatisés à partir d’une vue dans l’Explorateur](#start-automated-investigation-and-response) (Defender pour Office 365 plan 2 uniquement)
 - ... [Examinez le courrier électronique malveillant, et bien plus encore](#more-ways-to-use-explorer-or-real-time-detections)!
 
-
 ## <a name="experience-improvements-to-threat-explorer-and-real-time-detections"></a>Amélioration de l’Explorateur de menaces et des détections en temps réel
 
 ### <a name="tags-in-threat-explorer"></a>Balises dans l’Explorateur de menaces
@@ -65,6 +64,7 @@ La colonne de balises affichée dans la grille du courrier électronique contien
 > ![Balises de filtre dans l’affichage de grille de courrier électronique](../../media/tags-grid.png)
 
 #### <a name="filtering"></a>Filtrage
+
 Nous avons maintenant des balises en tant que filtre afin de pouvoir Rechercher simplement des comptes de priorité ou des scénarios de balises utilisateur spécifiques (et même exclure les résultats avec certaines balises dans le cadre de cette expérience). La combinaison de ces éléments avec les autres filtres que nous fournissons vous aidera à limiter votre étendue d’enquête.
 
 [![Balises ](../../media/tags-filter-normal.png) de filtre](../../media/tags-filter-normal.png#lightbox)
@@ -113,11 +113,11 @@ Dans l’onglet Détails du menu déroulant courrier >, vous pouvez voir la mena
 
 En plus de l’identification de tous les événements de remise et post-remise, l’affichage de la chronologie fournit également des informations sur la menace identifiée à ce moment pour un sous-ensemble de ces événements. Il fournit également des informations supplémentaires sur les actions supplémentaires (par exemple, ZAP, correction manuelle) ainsi que le résultat de cette action. L’affichage chronologie contient des informations sur la remise d’origine, ainsi que tous les événements post-remise effectués sur un message électronique.
 
--   Source : il peut s’agir de l’administrateur/système/utilisateur en fonction de la source de l’événement.
--   Événement : cela inclut les événements de niveau supérieur tels que la remise d’origine, la correction manuelle, la préversion, les envois et la remise dynamique.
--   Action : Cela couvre l’action spécifique qui a été effectuée dans le cadre de l’action ZAP ou d’administration (par exemple, suppression récupérable).
--   Menaces : couvre les menaces (programmes malveillants, hameçons, courrier indésirable) identifiées à ce moment-là.
--   Résultat/Détails : fournit plus d’informations sur le résultat de l’action, qu’elle ait été effectuée dans le cadre de l’action ZAP/admin.
+- Source : il peut s’agir de l’administrateur/système/utilisateur en fonction de la source de l’événement.
+- Événement : cela inclut les événements de niveau supérieur tels que la remise d’origine, la correction manuelle, la préversion, les envois et la remise dynamique.
+- Action : Cela couvre l’action spécifique qui a été effectuée dans le cadre de l’action ZAP ou d’administration (par exemple, suppression récupérable).
+- Menaces : couvre les menaces (programmes malveillants, hameçons, courrier indésirable) identifiées à ce moment-là.
+- Résultat/Détails : fournit plus d’informations sur le résultat de l’action, qu’elle ait été effectuée dans le cadre de l’action ZAP/admin.
 
 ### <a name="original-and-latest-delivery-location"></a>Emplacement de remise d’origine et dernier
 
@@ -170,15 +170,15 @@ Les substitutions système sont une méthode permettant de faire des exceptions 
 
 Les améliorations apportées aux données sur les URL et les URL sont les suivantes :
 
- - Affichage de l’URL sur laquelle l’utilisateur a cliqué complet (y compris les paramètres de requête faisant partie de l’URL) dans la section clics de la fenêtre mobile d’URL. Nous affichons actuellement le domaine et le chemin d’accès de l’URL dans la barre de titre. Nous étendons ces informations pour afficher l’URL complète.
+- Affichage de l’URL sur laquelle l’utilisateur a cliqué complet (y compris les paramètres de requête faisant partie de l’URL) dans la section clics de la fenêtre mobile d’URL. Nous affichons actuellement le domaine et le chemin d’accès de l’URL dans la barre de titre. Nous étendons ces informations pour afficher l’URL complète.
 
- - Correctifs parmi les filtres d’URL (URL et domaine d’URL/domaine d’URL et chemin d’accès) : nous avons effectué des mises à jour pour la recherche de messages contenant une URL/cliquez sur verdict. Dans ce cas, nous avons activé la prise en charge des recherches de protocoles agnostiques (ce qui signifie que vous pouvez rechercher directement une URL sans http). Par défaut, la recherche d’URL est mappée sur http, sauf indication explicite. Par exemple :
+- Correctifs parmi les filtres d’URL (URL et domaine d’URL/domaine d’URL et chemin d’accès) : nous avons effectué des mises à jour pour la recherche de messages contenant une URL/cliquez sur verdict. Dans ce cas, nous avons activé la prise en charge des recherches de protocoles agnostiques (ce qui signifie que vous pouvez rechercher directement une URL sans http). Par défaut, la recherche d’URL est mappée sur http, sauf indication explicite. Par exemple :
 
-   1. Recherchez avec et sans le `http://` préfixe dans les champs de filtre « URL », « domaine d’URL » et « domaine d’URL et chemin d’accès ». Ce comportement est cohérent et doit afficher le même résultat.
+  1. Recherchez avec et sans le `http://` préfixe dans les champs de filtre « URL », « domaine d’URL » et « domaine d’URL et chemin d’accès ». Ce comportement est cohérent et doit afficher le même résultat.
 
-   1. Recherchez le `https://` préfixe dans « URL ». Lorsqu’il n’est pas présent, le `http://` préfixe est utilisé.
+  1. Recherchez le `https://` préfixe dans « URL ». Lorsqu’il n’est pas présent, le `http://` préfixe est utilisé.
 
-   1. `/` au début et à la fin des champs « chemin de l’URL », « domaine de l’URL », « domaine de l’URL et chemin d’accès » est ignoré. `/` à la fin du champ « URL » est ignoré.
+  1. `/` au début et à la fin des champs « chemin de l’URL », « domaine de l’URL », « domaine de l’URL et chemin d’accès » est ignoré. `/` à la fin du champ « URL » est ignoré.
 
 ### <a name="phish-confidence-level"></a>Niveau de confiance d’hameçonnage
 
@@ -247,12 +247,13 @@ Vous pourrez également exporter la liste des utilisateurs ciblés jusqu’à un
 > [!div class="mx-imgBorder"]
 > ![Principaux utilisateurs ciblés](../../media/Top_Targeted_Users.png)
 
-
 ### <a name="exchange-transport-rules"></a>Règles de transport Exchange
+
 Dans le cadre de l’enrichissement des données, vous devez également être en mesure d’afficher toutes les différentes règles de transport appliquées à un message. Ces informations sont présentes dans l’affichage de grille du courrier électronique (pour cela, sélectionnez les options de colonne dans la grille et ajouter une règle de transport Exchange à partir des options de colonne dans la grille), ainsi que la fenêtre mobile des détails dans le message.
 Vous pouvez voir le GUID ainsi que le nom des règles de transport qui ont été appliquées au message. En outre, vous pouvez rechercher les messages à l’aide du nom de la règle de transport. Il s’agit d’une recherche « Contains », ce qui signifie que vous pourrez effectuer des recherches à l’aide de recherches partielles.
 
 #### <a name="important-note"></a>Remarque importante :
+
 La disponibilité de la recherche et du nom ETR dépend du rôle spécifique qui vous a été attribué. Vous devez disposer de l’un des rôles/autorisations suivants pour afficher les noms de ETR et la recherche.  Si vous n’avez pas l’un des rôles suivants qui vous sont attribués, vous ne pourrez pas voir les noms des règles de transport et rechercher les messages à l’aide des noms ETR. Toutefois, vous pourrez voir les informations d’étiquette et de GUID ETR dans les détails du courrier électronique. Les autres expériences concernant l’affichage des enregistrements dans les grilles de courrier, les boutons volants de messagerie, les filtres et les exportations ne sont pas affectées.
 
 - EXO uniquement-protection contre la perte de données : All

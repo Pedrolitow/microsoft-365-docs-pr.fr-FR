@@ -21,14 +21,14 @@ description: Découvrez comment fonctionnent les fonctionnalités d’analyse et
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: 6923e283e4ec62de9e4a9c1d9196eb032724798d
-ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
+ms.openlocfilehash: 039cca2f6f61d7c82f8c3e85f1fd147a68f84b68
+ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48931957"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "48948432"
 ---
-# <a name="how-automated-investigation-and-response-air-works-in-microsoft-defender-for-office-365"></a>Fonctionnement de l’analyse et de la réponse automatiques dans Microsoft Defender pour Office 365
+# <a name="how-automated-investigation-and-response-works-in-microsoft-defender-for-office-365"></a>Fonctionnement de l’analyse et de la réponse automatiques dans Microsoft Defender pour Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -91,7 +91,7 @@ Les fonctionnalités AIR de Microsoft Defender pour Office 365 incluent des [rap
 
 Par exemple, une organisation a récemment mis en place un moyen pour l’équipe des opérations de sécurité d’afficher les alertes de hameçonnage signalées par l’utilisateur et déjà traitées par AIR. Leur solution intègre les alertes appropriées avec le serveur SIEM de l’organisation et son système de gestion de la casse. La solution réduit considérablement le nombre de faux positifs afin que l’équipe des opérations de sécurité puisse concentrer leur temps et leur efforts sur des menaces réelles. Pour en savoir plus sur cette solution personnalisée, consultez [le blog de la communauté technique : améliorer l’efficacité de votre SOC avec Microsoft Defender pour Office 365 et l’API de gestion d’Office 365](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185).
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - [Prise en main de l’utilisation de l’AIR](office-365-air.md)
 

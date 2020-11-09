@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-overview
-ms.openlocfilehash: 6d0f090f9931e88566e37b038cc30375657019c3
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: 4667f84cc3a2e34e6b5e85640c84f090d0b0f1df
+ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487671"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "48948468"
 ---
 # <a name="identity-and-device-access-configurations"></a>Configurations des identités et de l’accès aux appareils
 
@@ -71,9 +71,9 @@ La plupart des organisations ont des besoins spécifiques en matière de sécuri
 
 Chaque secteur d’activité possède aussi sa propre réglementation spécialisée. Au lieu de fournir une liste de toutes les options de sécurité possibles ou une recommandation par segment d’industrie ou fonction, des recommandations ont été fournies pour trois niveaux différents de sécurité et de protection pouvant être appliqués en fonction de la granularité de vos besoins.
 
-- **Baseline protection**: nous vous recommandons de définir une norme minimale pour la protection des données, ainsi que les identités et les appareils qui accèdent à vos données. Vous pouvez suivre ces recommandations de base pour fournir une protection par défaut efficace qui répond aux besoins de nombreuses organisations.
-- **Protection sensible**: certains clients disposent d’un sous-ensemble de données qui doivent être protégées à des niveaux supérieurs, ou nécessitent que toutes les données soient protégées à un niveau supérieur. Vous pouvez renforcer la protection de l’ensemble ou des ensembles de données spécifiques dans votre environnement Microsoft 365. Nous vous recommandons de protéger les identités et les appareils qui accèdent à des données sensibles avec des niveaux de sécurité comparables.  
-- **Hautement réglementé**: certaines organisations peuvent avoir une petite quantité de données qui est hautement classée, qui constituent des secrets commerciaux ou des données réglementées. Microsoft fournit des fonctionnalités pour aider les organisations à respecter de telles exigences, notamment de protection renforcée des appareils et des identités.
+- **Baseline protection** : nous vous recommandons de définir une norme minimale pour la protection des données, ainsi que les identités et les appareils qui accèdent à vos données. Vous pouvez suivre ces recommandations de base pour fournir une protection par défaut efficace qui répond aux besoins de nombreuses organisations.
+- **Protection sensible** : certains clients disposent d’un sous-ensemble de données qui doivent être protégées à des niveaux supérieurs, ou nécessitent que toutes les données soient protégées à un niveau supérieur. Vous pouvez renforcer la protection de l’ensemble ou des ensembles de données spécifiques dans votre environnement Microsoft 365. Nous vous recommandons de protéger les identités et les appareils qui accèdent à des données sensibles avec des niveaux de sécurité comparables.  
+- **Hautement réglementé** : certaines organisations peuvent avoir une petite quantité de données qui est hautement classée, qui constituent des secrets commerciaux ou des données réglementées. Microsoft fournit des fonctionnalités pour aider les organisations à respecter de telles exigences, notamment de protection renforcée des appareils et des identités.
 
 ![Cône de sécurité : tous les clients > certains clients > des clients spécifiques. Application étendue à une application spécifique](../../media/microsoft-365-policies-configurations/M365-idquality-threetiers.png)
 
@@ -194,9 +194,7 @@ Microsoft vous recommande de ne pas créer de jeux de stratégie qui s’appliqu
 3. Configurez les stratégies d’accès conditionnel pour les utilisateurs invités et externes.
 4. Configurez des stratégies d’accès conditionnel pour les applications Cloud Microsoft 365, telles que Microsoft Teams, Exchange Online et SharePoint.
 
-<!--
-After you have configured identity and device access, see the [Azure AD feature deployment guide](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2) for a phased checklist of additional features to consider and [Azure AD Identity Governance](https://docs.microsoft.com/azure/active-directory/governance/) to protect, monitor, and audit access.  
---> 
+Une fois que vous avez configuré l’accès aux identités et aux appareils, consultez le Guide de déploiement de la [fonctionnalité Azure ad](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2) pour obtenir une liste de vérification des fonctionnalités supplémentaires à prendre en compte et la [gouvernance des identités Azure ad](https://docs.microsoft.com/azure/active-directory/governance/) pour protéger, surveiller et auditer les accès.  
 
 ## <a name="next-step"></a>Étape suivante
 

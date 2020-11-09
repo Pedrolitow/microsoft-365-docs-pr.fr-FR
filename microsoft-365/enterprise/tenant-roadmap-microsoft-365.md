@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: it-pro
 description: La feuille de route pour configurer vos clients pour Microsoft 365.
-ms.openlocfilehash: 038d9b0d94b84d184f0d9d9b250d0ee4d2c19de9
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: d2640a036eedda0b0962a15a03dcf0211ea0209b
+ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48753965"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "48948396"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>Feuille de route de client pour Microsoft 365
 
@@ -33,7 +33,7 @@ Pour que votre client soit prêt pour les utilisateurs, les groupes, les licence
 
 Une fois que vous avez vérifié que votre réseau est optimisé pour l’accès à Microsoft 365 pour les travailleurs locaux et distants, vos tâches importantes suivantes envisagent de planifier et de configurer votre client Microsoft 365 pour les noms de domaine DNS, les services courants et pour cette infrastructure d’identité qui prend en charge la connexion des utilisateurs sécurisés.
 
-### <a name="plan"></a>Prévision
+### <a name="plan"></a>Planification
 
 Pour planifier l’implémentation de votre client, procédez comme suit :
 
@@ -66,9 +66,9 @@ Avec Microsoft 365 Multi-Geo, votre organisation peut étendre sa présence Micr
 
 Pour plus d’informations, consultez la rubrique [Microsoft 365 multi-géo](microsoft-365-multi-geo.md).
 
-## <a name="manage-multiple-microsoft-365-tenant"></a>Gérer plusieurs clients Microsoft 365 
+## <a name="manage-multiple-microsoft-365-tenants"></a>Gérer plusieurs clients Microsoft 365 
 
-Bien que le fait d’avoir un seul client pour votre Oganization soit idéal, il peut s’agir de l’une des nombreuses organisations qui ont plusieurs locataires. Il peut s’agir de fusions et d’acquisitions, mais également d’une isolation administrative ou d’une décentralisation.
+Bien qu’il existe un seul client pour votre Oganization, il peut s’agir de l’une des nombreuses organisations qui ont plusieurs locataires. Il peut s’agir de fusions et d’acquisitions, mais également d’une isolation administrative ou d’une décentralisation.
 
 Si vous avez plusieurs clients Microsoft 365, consultez les articles suivants pour plus d’informations sur :
 

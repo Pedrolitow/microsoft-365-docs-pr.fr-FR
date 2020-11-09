@@ -1,5 +1,5 @@
 ---
-title: Corriger les problèmes détectés par l’outil d’évaluation de la disponibilité
+title: Résoudre les problèmes détectés par l’outil de préparation et d’évaluation
 description: Actions détaillées à effectuer pour chaque problème rencontré par l’outil
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
@@ -9,14 +9,14 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 642de80e1a133f212b7afb6774d9aab2eeaabdbf
-ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
+ms.openlocfilehash: c342ea9f662d883883755d2f67e5c25ffabddf83
+ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48941408"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "48948408"
 ---
-# <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Corriger les problèmes détectés par l’outil d’évaluation de la disponibilité
+# <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Résoudre les problèmes détectés par l’outil de préparation et d’évaluation
 
 Pour chaque vérification, l’outil signale l’un des quatre résultats possibles :
 
@@ -242,7 +242,7 @@ Vous disposez d’une stratégie de mise à jour circulaire qui cible tous les p
 
 **OpenSSL**
 
-Assurez-vous que toutes les stratégies Ring de mise à jour que vous avez excluent le groupe **de travail moderne-tous les** groupes Azure ad. Pour connaître les étapes à suivre, voir [Manage Windows 10 Software Updates in Intune](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure). Les **appareils de travail modernes-tous les** groupes Azure ad sont un groupe dynamique que nous créons lors de l’inscription au bureau géré Microsoft, de sorte que vous devrez revenir pour exclure ce groupe après l’inscription.
+Assurez-vous que toutes les stratégies Ring de mise à jour que vous avez excluez les **périphériques Workplace modernes-tous les** groupes Azure ad. Si vous avez affecté le groupe d’utilisateurs Azure AD à ces stratégies, assurez-vous que toutes les stratégies Ring de mise à jour que vous avez également exclues le groupe **de travail moderne-tous** les groupes Azure ad qui inclut vos utilisateurs de bureau gérés Microsoft. Pour connaître les étapes à suivre, voir [Manage Windows 10 Software Updates in Intune](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure). Les groupes **espace de travail moderne-tous** et **Modern Workplace-tous** les groupes Azure ad sont affectés à des groupes que nous créons lors de l’inscription au bureau géré Microsoft, de sorte que vous devez revenir à exclure ce groupe après l’inscription.
 
 
 ## <a name="azure-active-directory-settings"></a>Paramètres Azure Active Directory

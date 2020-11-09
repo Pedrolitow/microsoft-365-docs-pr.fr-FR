@@ -1,5 +1,5 @@
 ---
-title: Conseils de sécurité dans les messages électroniques
+title: Conseils de sécurité dans les e-mails
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -18,14 +18,14 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez comment EOP et Office 365 vous protègent contre le courrier indésirable, le hameçonnage et les programmes malveillants en ajoutant un Conseil de sécurité en haut des e-mails.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3da52a8ef2913c30c281fec74f92142847e29792
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 0e204021bfd79dabd4abdeefaa990da50915eaf0
+ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201982"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "48948456"
 ---
-# <a name="safety-tips-in-email-messages"></a>Conseils de sécurité dans les messages électroniques
+# <a name="safety-tips-in-email-messages"></a>Conseils de sécurité dans les e-mails
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -47,14 +47,6 @@ Le Conseil de sécurité, un message codé en couleur, vous avertit des messages
     ![Capture d’écran illustrant un Conseil de sécurité vert.](../../media/acbc11d0-f626-4848-9fbf-66eeeda3f803.png)
 
     En plus des messages non sécurisés, nous vous informerons également sur les messages valides provenant d’expéditeurs que nous approuvons avec un Conseil de sécurité vert. Un Conseil de sécurité vert dans un message électronique signifie que nous avons vérifié l’expéditeur du message et vérifié qu’il était sûr. Microsoft conserve cette liste d’expéditeurs approuvés qui inclut des organisations financières et d’autres personnes fréquemment usurpées ou empruntées d’identité.
-
-- Courrier non filtré (Conseil de sécurité gris).
-
-    ![Capture d’écran illustrant un Conseil de sécurité gris.](../../media/c4d0cf8f-08e9-4c84-beee-1d9e0b022e0a.png)
-
-    Nous vous indiquerons également quand nous avons ignoré la vérification d’un message, car il provient d’un expéditeur que vous approuvez sur votre liste des expéditeurs approuvés ou si une règle de flux de messagerie existe pour contourner le filtrage.
-
-    Le Conseil de sécurité gris s’affiche également lorsque les images externes sont bloquées, c’est-à-dire que le message se trouve dans votre boîte de réception et qu’il ne semble pas être un courrier indésirable, mais il contient des images externes que vous n’avez pas choisi de télécharger.
 
 ## <a name="working-with-safety-tips"></a>Utilisation des conseils de sécurité
 
