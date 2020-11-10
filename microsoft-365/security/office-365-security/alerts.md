@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Découvrez comment utiliser les fonctionnalités d’alerte dans le centre de sécurité & de la sécurité d’Office 365 pour afficher et gérer les alertes, notamment la gestion des alertes avancées.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8867732611af275b45b14dc0894e24ed4c89d062
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: a29da0a76ff1b681c87182ff55b787327a969607
+ms.sourcegitcommit: 89f56c3e0b619a4700a75a21927d9ffc90658632
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48447046"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48984887"
 ---
 # <a name="alerts-in-the-security--compliance-center"></a>Alertes dans le centre de sécurité & conformité
 
@@ -40,7 +40,7 @@ Les alertes se trouvent dans le centre de sécurité & conformité. Voici commen
 
 ### <a name="to-go-directly-to-the-security--compliance-center"></a>Pour accéder directement au centre de conformité & de sécurité
 
-1. Accédez à [https://protection.office.com](https://protection.office.com).
+1. Accédez à <https://protection.office.com>.
 
 2. Connectez-vous à l’aide de votre compte scolaire ou professionnel.
 
@@ -52,7 +52,7 @@ Les alertes se trouvent dans le centre de sécurité & conformité. Voici commen
 
 2. Cliquez sur le lanceur d’applications dans le coin supérieur gauche, puis cliquez sur **sécurité & conformité**.
 
-    Vous ne trouvez pas l’application que vous cherchez ? Dans le Lanceur d’applications, sélectionnez **Toutes les applications** pour afficher une liste alphabétique des applications Office 365 disponibles. À partir de là, vous pouvez rechercher une application spécifique.
+   Vous ne trouvez pas l’application que vous cherchez ? Dans le Lanceur d’applications, sélectionnez **Toutes les applications** pour afficher une liste alphabétique des applications Office 365 disponibles. À partir de là, vous pouvez rechercher une application spécifique.
 
 3. Dans le volet de gauche, cliquez sur **alertes** pour afficher les fonctionnalités des alertes.
 
@@ -64,6 +64,6 @@ Le tableau suivant décrit les outils disponibles sous **alertes** dans le centr
 
 |Outil|Description|
 |---|---|
-|[Gérer les alertes](../../compliance/create-activity-alerts.md)|Utilisez des alertes d’activité pour envoyer des notifications par courrier électronique à vous-même ou à d’autres administrateurs lorsque les utilisateurs effectuent des activités spécifiques dans Office 365. Les alertes d’activité sont semblables à la recherche d’événements dans le journal d’audit, à l’exception du fait que vous recevez un message électronique lorsqu’un événement pour lequel vous avez créé une alerte a lieu.|
-|[Gérer les alertes avancées ](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|Utilisez la fonctionnalité **gérer les alertes avancées** d’Office 365 Cloud App Security pour configurer les stratégies qui peuvent vous alerter contre les activités suspectes et anormales dans Office 365. Une fois que vous êtes alerté, vous pouvez examiner les situations susceptibles de poser problème et, si nécessaire, prendre des mesures pour résoudre les problèmes de sécurité.|
+|[Gérer les alertes](../../compliance/create-activity-alerts.md)|Utilisez des alertes d’activité pour envoyer des notifications par courrier électronique à vous-même ou à d’autres administrateurs lorsque les utilisateurs effectuent des activités spécifiques dans Microsoft 365. Les alertes d’activité sont semblables à la recherche d’événements dans le journal d’audit, à l’exception du fait que vous recevez un message électronique lorsqu’un événement pour lequel vous avez créé une alerte a lieu.|
+|[Gérer les alertes avancées](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|Utilisez la fonctionnalité **gérer les alertes avancées** de Microsoft 365 Cloud App Security pour configurer des stratégies qui peuvent vous alerter en cas d’activité suspecte et anormale dans Microsoft 365. Une fois que vous êtes alerté, vous pouvez examiner les situations susceptibles de poser problème et, si nécessaire, prendre des mesures pour résoudre les problèmes de sécurité.|
 |
