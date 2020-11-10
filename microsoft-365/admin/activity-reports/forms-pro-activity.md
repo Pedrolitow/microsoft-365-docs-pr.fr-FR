@@ -1,5 +1,5 @@
 ---
-title: Rapports Microsoft 365 dans le centre d’administration-activité Pro Forms
+title: Rapports Microsoft 365 dans le centre d’administration-activité vocale client Dynamics 365
 ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
@@ -17,19 +17,19 @@ search.appverid:
 - MET150
 - MOE150
 - GEA150
-description: Découvrez comment obtenir un rapport d’activité Microsoft Forms Pro à l’aide du tableau de bord des rapports Microsoft 365 dans le centre d’administration Microsoft 365.
-ms.openlocfilehash: d7252aae40a61d65a32630d01dc2a6fcd1466212
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+description: Découvrez comment obtenir un rapport d’activité voix client Microsoft Dynamics 365 à l’aide du tableau de bord des rapports Microsoft 365 dans le centre d’administration Microsoft 365.
+ms.openlocfilehash: de03067197c80634f02318b35a79eb84e33c4b86
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841156"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988551"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---forms-pro-activity"></a>Rapports Microsoft 365 dans le centre d’administration-activité Pro Forms
+# <a name="microsoft-365-reports-in-the-admin-center---dynamics-365-customer-voice-activity"></a>Rapports Microsoft 365 dans le centre d’administration-activité vocale client Dynamics 365
 
 Le tableau de bord **rapports** Microsoft 365 affiche une vue d’ensemble de l’activité sur les produits de votre organisation. Il vous permet d'explorer les rapports au niveau de chaque produit afin d'offrir des informations plus précises sur les activités pour chaque produit. Voir [la rubrique Présentation des rapports](activity-reports.md).
   
-Par exemple, vous pouvez comprendre l’activité de chaque utilisateur titulaire d’une licence pour utiliser Microsoft Forms Pro en examinant leurs interactions avec Forms Pro. Elle vous aide également à comprendre le niveau de collaboration en examinant le nombre d’enquêtes Pro créées et les enquêtes Pro auxquelles les utilisateurs ont répondu. 
+Par exemple, vous pouvez comprendre l’activité de chaque utilisateur titulaire d’une licence pour utiliser Microsoft Dynamics 365 Customer Voice en examinant leurs interactions avec Dynamics 365 Customer Voice. Elle vous aide également à comprendre le niveau de collaboration en examinant le nombre d’enquêtes Pro créées et les enquêtes Pro auxquelles les utilisateurs ont répondu. 
   
 > [!NOTE]
 > Vous devez être un administrateur général, un lecteur global ou un lecteur de rapports dans Microsoft 365 ou un administrateur Exchange, SharePoint, teams, Team communications ou Skype entreprise pour afficher des rapports. 
@@ -39,21 +39,21 @@ Par exemple, vous pouvez comprendre l’activité de chaque utilisateur titulair
 1. Dans le centre d’administration, accédez à la page **Rapports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Utilisation</a>.
 
     
-2. Dans la liste déroulante **Sélectionner un rapport** , sélectionnez **formulaires Pro** \> **activité** .
+2. Dans la liste déroulante **Sélectionner un rapport** , sélectionnez activité **vocale client Dynamics 365** \> **activity**.
 
-## <a name="interpret-the-forms-activity-report"></a>Interpréter le rapport d’activité de formulaires
+## <a name="interpret-the-dynamics-365-customer-voice-activity-report"></a>Interpréter le rapport d’activité vocale client Dynamics 365
 
-Vous pouvez obtenir un aperçu de l’activité Forms Pro de votre utilisateur en examinant les graphiques **activité** et **utilisateurs** . 
+Vous pouvez obtenir un aperçu de l’activité vocale client Dynamics 365 de votre utilisateur en examinant les graphiques **activité** et **utilisateurs** . 
 
 ![Rapport d’activité de formulaires](../../media/formsproactivity.png)
 
 |Item|Description|
 |:-----|:-----|
-|1.  <br/> |Le rapport d’activité **Forms Pro** peut être consulté pour connaître les tendances des 7, 30, 90 ou 180. Toutefois, si vous sélectionnez un jour particulier dans le rapport, le tableau (7) affiche les données jusqu’à 28 jours après la date actuelle (pas la date de génération du rapport).   <br/> |
+|1.  <br/> |Le rapport d’activité **vocale client Dynamics 365** peut être consulté pour connaître les tendances des 7, 30, 90 ou 180 derniers jours. Toutefois, si vous sélectionnez un jour particulier dans le rapport, le tableau (7) affiche les données jusqu’à 28 jours après la date actuelle (pas la date de génération du rapport).   <br/> |
 |2.  <br/> |Les données de chaque rapport sont généralement aussi récentes que les 48 dernières heures.  <br/> |
-|3.  <br/> |La vue **utilisateurs** vous permet de comprendre la tendance du nombre d’utilisateurs de formulaires Pro. Un utilisateur est considéré comme actif s’il a exécuté une activité relative à une enquête Pro (créer, modifier, afficher, etc.) pendant une période spécifique.  <br/> |
-|4.  <br/> |La vue **activité** vous permet de comprendre la tendance du nombre d’utilisateurs actifs. Un utilisateur est considéré comme actif s’il a exécuté une activité de fichier (enregistrer, synchroniser, modifier ou partager) ou a visité une page pendant une période spécifique.<br/> Remarque : une activité peut se produire plusieurs fois pour une seule enquête, mais elle ne comptera qu’en une seule enquête active. Par exemple, vous pouvez créer une enquête Pro et continuer à modifier la même enquête plusieurs fois pendant une période spécifiée, elle comptera uniquement en une seule enquête. <br>|
-|5.<br/>|Sur le graphique **utilisateurs** , l’axe Y indique le nombre d’utilisateurs uniques. L’axe X représente la date à laquelle les utilisateurs uniques sont actifs. Les légendes sont les suivantes :<br/><br/>Les **concepteurs** signifient que l’utilisateur a créé ou modifié une enquête Forms Pro.<br><br>Dans le graphique **activité** , l’axe Y indique le nombre de réponses Forms Pro par enquête. L’axe X représente la date à laquelle l’activité d’enquête ou de réponse a eu lieu. Les légendes sont les suivantes :<br/><br/>**Enquêtes créées** indique le nombre d’études de formulaires Pro uniques créées par les utilisateurs<br>**Réponses** indique le nombre de réponses anonymes ou non anonymes que les utilisateurs qui ont reçu l’enquête ont soumises. |
+|3.  <br/> |La vue **utilisateurs** vous permet de comprendre la tendance du nombre d’utilisateurs de la voix cliente Dynamics 365 actifs. Un utilisateur est considéré comme actif s’il a exécuté une activité relative à une enquête Pro (créer, modifier, afficher, etc.) pendant une période spécifique.  <br/> |
+|4.  <br/> |La vue **activité** vous permet de comprendre la tendance du nombre d’utilisateurs actifs. Un utilisateur est considéré comme actif s'il a eu une activité de fichier (enregistrer, synchroniser, modifier ou partager) ou consulté une page au cours de la période spécifiée.<br/> Remarque : une activité peut se produire plusieurs fois pour une seule enquête, mais elle ne comptera qu’en une seule enquête active. Par exemple, vous pouvez créer une enquête Pro et continuer à modifier la même enquête plusieurs fois pendant une période spécifiée, elle comptera uniquement en une seule enquête. <br>|
+|5.<br/>|Sur le graphique **utilisateurs** , l’axe Y indique le nombre d’utilisateurs uniques. L’axe X représente la date à laquelle les utilisateurs uniques sont actifs. Les légendes sont les suivantes :<br/><br/>Les **concepteurs** signifient que l’utilisateur a créé ou modifié une enquête vocale client Dynamics 365.<br><br>Dans le graphique **activité** , l’axe Y indique le nombre de réponses vocales client Dynamics 365 par enquête. L’axe X représente la date à laquelle l’activité d’enquête ou de réponse a eu lieu. Les légendes sont les suivantes :<br/><br/>**Enquêtes créées** indique le nombre d’enquêtes vocales client Dynamics 365 uniques que les utilisateurs ont créées<br>**Réponses** indique le nombre de réponses anonymes ou non anonymes que les utilisateurs qui ont reçu l’enquête ont soumises. |
 |6.<br/>|Vous pouvez filtrer la série que vous voyez sur le graphique en sélectionnant un élément dans la légende. Par exemple, dans le graphique utilisateurs, sélectionnez concepteurs, répondeurs ou nombre total d’utilisateurs pour voir uniquement les informations relatives à chacun d’eux. La modification de cette sélection ne modifie pas les informations dans le tableau de grille en dessous.|
 |7.<br/>|Le tableau montre une répartition des activités au niveau de chaque utilisateur. Les légendes sont les suivantes :<br/><br/>**Username** est l’adresse de messagerie de l’utilisateur qui a effectué l’activité sur Microsoft Forms.<br/>**Date de la dernière activité (UTC)** est la dernière date à laquelle une activité de formulaire a été effectuée par l’utilisateur pour la plage de dates sélectionnée. Pour voir l'activité qui s'est produite à une date spécifique, sélectionnez celle-ci directement dans le graphique.<br/>Cette opération filtre le tableau pour afficher les données d’activité des fichiers uniquement pour les utilisateurs ayant effectué l’activité à ce jour spécifique.<br/><br/>**Nombre d’enquêtes créées** indique le nombre d’études que l’utilisateur a créées.<br/> **Nombre de réponses d’enquête** indique le nombre de réponses des répondeurs vers lesquels l’enquête a été distribuée.|
 |8.<br/>|Sélectionnez l’icône **gérer les colonnes** pour ajouter ou supprimer des colonnes dans le rapport.|

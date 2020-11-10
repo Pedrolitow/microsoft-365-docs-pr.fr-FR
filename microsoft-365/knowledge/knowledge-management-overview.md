@@ -11,12 +11,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Vue d’ensemble de la gestion des connaissances dans le projet cortex.
-ms.openlocfilehash: d422b54bb7991fb5fd61465cd0428ab586d10bf5
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 27ce6457f2329ccaa4738d6868b4f2051c0c0a51
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906940"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988841"
 ---
 # <a name="knowledge-management-overview-preview"></a>Vue d’ensemble de la gestion des connaissances (aperçu)
 
@@ -75,7 +75,7 @@ Les contrôles d’administration dans le centre d’administration Microsoft 36
 - Contrôlez les utilisateurs qui peuvent confirmer ou rejeter des rubriques dans le centre de la rubrique.
 - Contrôler les utilisateurs qui peuvent créer et modifier des rubriques dans le Centre des rubriques.
 
-Pour plus d’informations, consultez [la rubrique gérer votre réseau de connaissances](manage-knowledge-network.md) . 
+Pour plus d’informations, consultez [la rubrique gérer votre réseau de connaissances](topic-experiences-discovery.md) . 
 
 ## <a name="topic-curation--feedback"></a>& des commentaires sur les de la rubrique
 
@@ -87,5 +87,5 @@ En outre, les utilisateurs disposant des autorisations appropriées peuvent bali
 
 
 ## <a name="see-also"></a>Voir aussi
-[Configurer la gestion des connaissances](set-up-knowledge-network.md)</br>
+[Configurer la gestion des connaissances](set-up-topic-experiences.md)</br>
 [Présentation du centre de rubriques](topic-center-overview.md)

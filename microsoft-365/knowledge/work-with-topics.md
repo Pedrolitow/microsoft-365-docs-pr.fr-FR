@@ -11,12 +11,12 @@ ms.service: o365-administration
 search.appverid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: d2fd3df200ab350ca3e6595402bab17034d960a7
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 464a926b99cceeb652756ad6d1456c5e17d2a925
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906918"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988737"
 ---
 # <a name="work-with-topics-in-the-topic-center-preview"></a>Utilisation des rubriques dans le Centre des rubriques (aperçu)
 
@@ -28,7 +28,7 @@ Dans le centre de la rubrique, un gestionnaire de connaissances peut consulter d
 
 ## <a name="requirements"></a>Configuration requise
 
-Pour travailler dans le Centre des rubriques, vous devez disposer des autorisations requises. Votre administrateur peut vous ajouter lors de la configuration de la [gestion des connaissances](set-up-knowledge-network.md), ou les nouveaux utilisateurs peuvent être ajoutés par la [suite](give-user-permissions-to-the-topic-center.md).
+Pour travailler dans le Centre des rubriques, vous devez disposer des autorisations requises. Votre administrateur peut vous ajouter lors de la configuration de la [gestion des connaissances](set-up-topic-experiences.md), ou les nouveaux utilisateurs peuvent être ajoutés par la [suite](give-user-permissions-to-the-topic-center.md).
 
 Les utilisateurs du Centre des rubriques peuvent disposer de deux jeux d’autorisations :
 
@@ -72,7 +72,7 @@ Pour consulter une rubrique confirmée :
 3. Vous pouvez également la rejeter.
 
 ## <a name="review-published-topics"></a>Examen des rubriques publiées
-Les rubriques publiées ont été modifiées afin que les informations speific apparaissent toujours dans la page. Les rubriques créées manuellement apparaissent ici.
+Les sujets publiés ont été modifiés de sorte que des informations spécifiques apparaissent toujours à l’auteur de la page. Les rubriques créées manuellement apparaissent ici.
 
    
 ## <a name="create-a-new-topic"></a>Créer une rubrique

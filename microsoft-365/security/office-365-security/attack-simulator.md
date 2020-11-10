@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à utiliser un simulateur d’attaque pour exécuter des organisations de hameçonnage et de mot de passe simulées dans les organisations Microsoft 365 E5 ou Microsoft Defender pour Office 365 plan 2.
-ms.openlocfilehash: b7d04b3c81791bfc107b48176373ffc84fc8f6c5
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 0698d5d97dcedec05e76728379971fad2ab669c6
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845995"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988563"
 ---
 # <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Simulateur d’attaque dans Microsoft Defender pour Office 365
 
@@ -35,6 +35,9 @@ Si votre organisation a Microsoft Defender pour Office 365 plan 2, qui inclut le
 
 > [!NOTE]
 > Les données de formation et de simulation d’attaque sont stockées avec d’autres données client pour les services Microsoft 365. Pour plus d’informations, consultez la rubrique [emplacements des données Microsoft 365](/microsoft-365/enterprise/o365-data-locations).
+
+> [!TIP]
+> La formation à la simulation d’attaque est disponible pour la version préliminaire publique dans le centre de sécurité Microsoft 365. Pour en savoir plus, consultez [simulation d’une attaque par hameçonnage avec Microsoft Defender pour Office 365](attack-simulation-training.md) .
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 

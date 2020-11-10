@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment obtenir le rapport d’activité de l’utilisateur de Microsoft teams et obtenir des informations sur l’activité de teams dans votre organisation.
-ms.openlocfilehash: 8ce29b43e6238883470d1159ad1d22fefca88792
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: b85f073a2916b646a5a03e62913de44b410ca058
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637066"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988469"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>Rapports Microsoft 365 dans le centre d’administration-activité de l’utilisateur Microsoft teams
 
@@ -44,7 +44,7 @@ Vous pouvez afficher l’activité de l’utilisateur dans le rapport teams en s
 
 Sélectionnez **choisir les colonnes** pour ajouter ou supprimer des colonnes dans le rapport.  <br/> ![Teams user activity report - choose columns](../../media/a1513028-cf09-4186-93a6-8a203cd22475.png)
 
-Vous pouvez également exporter les données du rapport dans un fichier. csv Excel en sélectionnant le lien **Exporter** . Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. Le format exporté pour l’heure **audio**, l’heure **vidéo** et le **partage d’écran** suit le format de durée ISO8601.
+Vous pouvez également exporter les données du rapport dans un fichier. csv Excel en sélectionnant le lien **Exporter** . Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. Le format exporté pour l’heure **audio** , l’heure **vidéo** et le **partage d’écran** suit le format de durée ISO8601.
 
 |Item|Description|
 |:-----|:-----|
@@ -59,5 +59,5 @@ Vous pouvez également exporter les données du rapport dans un fichier. csv Exc
 |Réunions organisées ad hoc <br/> |Nombre de réunions non planifiées dans le calendrier que l’utilisateur a organisées pendant la période spécifiée. <br/>|
 |Réunions organisées planifiées  <br/> |Nombre de réunions planifiées qu’un utilisateur a organisé pendant la période spécifiée.  <br/> |
 |Est sous licence |Sélectionné si l’utilisateur est titulaire d’une licence pour utiliser Teams.|
-|Autres activités|l’utilisateur est considéré comme actif mais a une valeur nulle pour les messages de conversation, les appels 1:1, les messages de canal, le nombre total de réunions et les réunions. Voici quelques exemples d’actions lorsqu’un utilisateur ouvre un message de canal, mais ne répond pas ou lorsqu’un message privé est reçu et qu’il est lu mais qu’il n’y répond pas. |
+|Autres activités|L’utilisateur est actif mais a effectué d’autres activités que les types d’actions exposés dans le rapport (envoi ou réponse à des messages de canal et de conversation, planification ou participation à des appels et réunions 1:1). Exemples d’actions lorsqu’un utilisateur modifie l’état de teams ou le message d’État teams ou ouvre un message de canal, mais ne répond pas. |
 |||

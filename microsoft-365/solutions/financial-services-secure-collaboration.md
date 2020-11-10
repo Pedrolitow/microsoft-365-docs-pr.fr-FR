@@ -12,12 +12,12 @@ ms.custom: seo-marvel-jun2020
 localization_priority: Priority
 description: Découvrez comment les établissements financiers peuvent gérer la conformité de la sécurité financière et collaborer efficacement à l’aide de Microsoft 365 et Teams.
 f1.keywords: NOCSH
-ms.openlocfilehash: 8bc9e965029414dadc39757b926949f3f60afc16
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 7192b29d09acb23df368e2458fac62c18bbbadb2
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906906"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988713"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>Principales considérations en matière de conformité et de sécurité pour les marchés bancaires et des capitaux américains
 
@@ -164,7 +164,7 @@ Microsoft 365 permet à toutes les organisations d’identifier les données se
 * **Microsoft Information Protection (MIP)** pour la classification basée sur l’utilisateur et la classification automatisée des données sensibles.
 * **Protection contre la perte de données Office 365 (DLP)** permettant d’identifier automatiquement les données sensibles à l’aide de types de données sensibles (en d’autres termes, expressions régulières) et de mots clés et de l’application des stratégies.
 
-**[Microsoft Information Protection (MIP)](../compliance/protect-information.md)** permet aux organisations de classifier des documents et des courriers électroniques de façon intelligente à l’aide d’étiquettes de confidentialité. Les étiquettes de confidentialité peuvent être appliquées manuellement par les utilisateurs aux documents dans les applications Microsoft Office et aux courriels dans Outlook. Les étiquettes peuvent automatiquement appliquer des marquages de documents, une protection par chiffrement et l’application de la gestion des droits. Vous pouvez également appliquer des étiquettes de confidentialité automatiquement en configurant des stratégies qui utilisent des mots clés et des types de données sensibles (par exemple, numéros de carte de crédit, numéros d’identification et numéros d’identification) pour rechercher et classer automatiquement les données sensibles.
+**[Microsoft Information Protection (MIP)](../compliance/information-protection.md)** permet aux organisations de classifier des documents et des courriers électroniques de façon intelligente à l’aide d’étiquettes de confidentialité. Les étiquettes de confidentialité peuvent être appliquées manuellement par les utilisateurs aux documents dans les applications Microsoft Office et aux courriels dans Outlook. Les étiquettes peuvent automatiquement appliquer des marquages de documents, une protection par chiffrement et l’application de la gestion des droits. Vous pouvez également appliquer des étiquettes de confidentialité automatiquement en configurant des stratégies qui utilisent des mots clés et des types de données sensibles (par exemple, numéros de carte de crédit, numéros d’identification et numéros d’identification) pour rechercher et classer automatiquement les données sensibles.
 
 En outre, Microsoft fournit des « classificateurs pouvant être formés » qui utilisent des modèles d'apprentissage machine pour identifier les données sensibles en fonction du contenu, et non pas simplement par le biais de la correspondance de modèles ou par les éléments du contenu. Un classifieur apprend à identifier un type de contenu en examinant de nombreux exemples de contenu à classer. La formation d’un classifieur commence par offrir des exemples de contenu dans une catégorie particulière. Après avoir pris connaissance de ces exemples, le modèle est testé en lui fournissant un mélange d’exemples correspondants et non correspondants. Le classifieur prévoit si un exemple donné est inclus dans la catégorie. Une personne confirme ensuite les résultats, en triant les positifs, les négatifs, les faux positifs et les faux négatifs pour améliorer la précision des prévisions du classifieur. Lors de la publication du classifieur, celui-ci traite le contenu dans Microsoft SharePoint Online, Exchange Online et OneDrive Entreprise, et classifie automatiquement le contenu.
 

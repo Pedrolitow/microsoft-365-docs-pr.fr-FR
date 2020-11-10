@@ -11,19 +11,19 @@ ms.service: o365-administration
 search.appverid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: d87a52bc6aca2f033a6e0d26a8c9c0e167908759
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 39a851ed3613057c7b3b931a94a79fed235d277a
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906964"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988829"
 ---
 # <a name="topic-center-overview-preview"></a>Présentation du centre de rubriques (aperçu)
 
 > [!Note] 
 > Le contenu de cet article est destiné à Project cortex privé preview. [En savoir plus sur le Projet cortex](https://aka.ms/projectcortex).
 
-Le centre de rubrique est un site SharePoint moderne qui sert de centre de connaissances pour votre organisation. Il est créé lors de la configuration de la [gestion des connaissances](set-up-knowledge-network.md) dans le centre d’administration 365 de Microsoft.
+Le centre de rubrique est un site SharePoint moderne qui sert de centre de connaissances pour votre organisation. Il est créé lors de la configuration de la [gestion des connaissances](set-up-topic-experiences.md) dans le centre d’administration 365 de Microsoft.
 
 Le centre de la rubrique dispose d’une page d’accueil par défaut où vous pouvez voir les rubriques auxquelles vous avez été connecté ou que vous avez suggéré de vous connecter. Les utilisateurs disposant des autorisations appropriées peuvent également :
 
@@ -36,7 +36,7 @@ Le centre de la rubrique dispose d’une page d’accueil par défaut où vous p
 
 ## <a name="where-is-the-topic-center"></a>Où se trouve le centre de la rubrique
 
-Votre centre de rubrique est créé lors de la configuration de la gestion des connaissances. Une fois l’installation terminée, un administrateur peut trouver l’URL dans la [page de gestion du centre de connaissances](manage-knowledge-network.md).
+Votre centre de rubrique est créé lors de la configuration de la gestion des connaissances. Une fois l’installation terminée, un administrateur peut trouver l’URL dans la [page de gestion du centre de connaissances](topic-experiences-discovery.md).
 
 1. Dans le centre d’administration 365 de Microsoft, sélectionnez **configuration** dans le volet de navigation, puis, dans la section **connaissances** de l’organisation, sélectionnez **connecter des personnes aux connaissances**.
 
@@ -46,7 +46,7 @@ Votre centre de rubrique est créé lors de la configuration de la gestion des c
 
 ## <a name="home-page"></a>Page d’accueil
 
-Pour afficher le centre de la rubrique, vous devez disposer des autorisations d’affichage des rubriques et des expériences. Votre administrateur peut attribuer ces autorisations aux utilisateurs lors de la configuration de la [gestion des connaissances](set-up-knowledge-network.md), ou les nouveaux utilisateurs peuvent être ajoutés par la [suite](give-user-permissions-to-the-topic-center.md) par un administrateur via le centre d’administration Microsoft 365.
+Pour afficher le centre de la rubrique, vous devez disposer des autorisations d’affichage des rubriques et des expériences. Votre administrateur peut attribuer ces autorisations aux utilisateurs lors de la configuration de la [gestion des connaissances](set-up-topic-experiences.md), ou les nouveaux utilisateurs peuvent être ajoutés par la [suite](give-user-permissions-to-the-topic-center.md) par un administrateur via le centre d’administration Microsoft 365.
 
 Sur la page d’accueil 
 - **Afficher les rubriques** : afficher les expériences. Ainsi, vous pouvez voir les rubriques de l’organisation et obtenir des commentaires sur les sujets où vous avez été connecté :
@@ -59,7 +59,7 @@ Une fois que je suis épinglé, les modifications apportées à la page de rubri
 
 ## <a name="permissions-to-use-the-manage-topics-capability-topic-center"></a>Autorisations d’utilisation du centre de la rubrique gérer les rubriques Capability
 
-Pour travailler dans la section gérer les rubriques du Centre des rubriques, vous devez disposer des autorisations requises. Votre administrateur peut attribuer ces autorisations aux utilisateurs lors de la configuration de la [gestion des connaissances](set-up-knowledge-network.md), ou les nouveaux utilisateurs peuvent être ajoutés par la [suite](give-user-permissions-to-the-topic-center.md) par un administrateur via le centre d’administration Microsoft 365.
+Pour travailler dans la section gérer les rubriques du Centre des rubriques, vous devez disposer des autorisations requises. Votre administrateur peut attribuer ces autorisations aux utilisateurs lors de la configuration de la [gestion des connaissances](set-up-topic-experiences.md), ou les nouveaux utilisateurs peuvent être ajoutés par la [suite](give-user-permissions-to-the-topic-center.md) par un administrateur via le centre d’administration Microsoft 365.
 
 Les utilisateurs du Centre des rubriques peuvent disposer de deux jeux d’autorisations :
 
