@@ -16,16 +16,16 @@ f1.keywords:
 ms.custom:
 - seo-marvel-apr2020
 description: Cet article contient des ressources destinées aux utilisateurs d’Office 2007 ou Office 2010 afin de les aider à planifier leur mise à niveau.
-ms.openlocfilehash: 4fa340f2dfa8091aba962da475f5ffb883ba4e3f
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 3193be0fb7b386f78ed4bdb9b80f2a2da72102b4
+ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920264"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48951138"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Planifiez votre mise à jour des serveurs et clients Office 2007 et Office 2010
 
-*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
+*Cet article s’applique à la fois à Microsoft 365 pour les entreprises et Office 365 pour les entreprises.*
 
 Si votre organisation utilise des versions anciennes de produits et de serveurs Office, il est maintenant très utile de commencer à planifier votre mise à niveau. Les produits et services Office 2007 ont atteint leur [fin de prise en charge](upgrade-from-office-2007-servers-and-products.md). Pour les produits et services Office 2010 :
 
@@ -44,12 +44,12 @@ Microsoft 365 inclut les licences et les fonctionnalités qui permettent de s’
   
 Microsoft 365 est le moyen de transformer numériquement votre entreprise en améliorant constamment les appareils et les expériences de productivité qui sont activés et sécurisés par le Cloud Microsoft.
  
-|Ressource|Description|
+|Resource|Description|
 |---|---|
 |[Microsoft 365](https://www.microsoft.com/microsoft-365)|Obtenir des informations sur les versions de Microsoft 365.|
-|[Documentation Microsoft 365 entreprise](https://docs.microsoft.com/microsoft-365/business/)|Obtenez des informations détaillées sur la version de Microsoft 365 pour les petites et moyennes entreprises.|
-|[Documentation Microsoft 365 éducation](https://docs.microsoft.com/microsoft-365/education/)|Obtenez des informations détaillées sur la version de Microsoft 365 pour les organisations éducatives.|
-|[Documentation Microsoft 365 Entreprise](https://docs.microsoft.com/microsoft-365/enterprise/)|Obtenez des informations détaillées sur la version de Microsoft 365 pour les organisations d’entreprise.|
+|[Documentation Microsoft 365 pour les entreprises](https://docs.microsoft.com/microsoft-365/business/)|Obtenez des informations détaillées sur la version de Microsoft 365 pour les petites et moyennes entreprises.|
+|[Documentation Microsoft 365 pour l’éducation](https://docs.microsoft.com/microsoft-365/education/)|Obtenez des informations détaillées sur la version de Microsoft 365 pour les organisations éducatives.|
+|[Documentation Microsoft 365 pour entreprise](https://docs.microsoft.com/microsoft-365/enterprise/)|Obtenez des informations détaillées sur la version de Microsoft 365 pour les organisations d’entreprise.|
 |||
 
 ## <a name="what-happens-if-i-dont-upgrade"></a>Que se passe-t-il si je ne suis pas mis à niveau ?
@@ -107,11 +107,11 @@ Si vous utilisez Office 2007 ou Office 2010 à la maison, prenez en compte les o
 
 Si vous choisissez de ne pas effectuer la mise à niveau maintenant, vos applications Office continueront de s’exécuter conformément aux [chronologies](https://support.microsoft.com/lifecycle/search/13615). Toutefois, pour obtenir des mises à jour de sécurité ou des fonctionnalités nouvelles et améliorées, vous devez effectuer une mise à niveau.
    
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - [Mettre à niveau des serveurs et clients Office 2007](upgrade-from-office-2007-servers-and-products.md)
 - [Mettre à niveau des serveurs et clients Office 2010](upgrade-from-office-2010-servers-and-products.md)
    
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
   
 [Politique de cycle de vie Microsoft](https://go.microsoft.com/fwlink/?linkid=865200)

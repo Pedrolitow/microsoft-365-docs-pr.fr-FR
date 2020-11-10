@@ -1,5 +1,5 @@
 ---
-title: Obtenir des informations via la formation à la simulation d’attaque
+title: Découvrez les formations à la simulation d’attaque
 ms.author: daniha
 author: danihalfin
 manager: dansimp
@@ -10,15 +10,15 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-description: Découvrez comment la formation à la simulation d’attaque dans le centre de sécurité Microsoft 365 les employés et obtient des informations sur les résultats de la simulation et de la formation.
-ms.openlocfilehash: 180ddc773b5a299692e40ddc558d3b3a89f4093b
-ms.sourcegitcommit: dab50e1cc5bba920720b80033c93457f5ca1c330
+description: Découvrez comment la formation à la simulation d’attaque dans le centre de sécurité Microsoft 365 affecte les employés et obtient des informations sur les résultats de la simulation et de la formation.
+ms.openlocfilehash: 80b8c275d1d64dd3dbd6509309fb88cd641734e3
+ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "48944467"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48950982"
 ---
-# <a name="gain-insights-through-attack-simulation-training"></a>Obtenir des informations via la formation à la simulation d’attaque
+# <a name="gain-insights-through-attack-simulation-training"></a>Découvrez les formations à la simulation d’attaque
 
 Lors de la formation à la simulation d’attaque, Microsoft vous fournit des informations sur les résultats des simulations et les employés de la formation. Ces informations vous aideront à vous informer sur la progression de vos employés sur la disponibilité des menaces, ainsi que sur les recommandations suivantes pour mieux préparer les employés et votre environnement pour les attaques.
 
@@ -38,14 +38,20 @@ Dans le graphique, vous pouvez voir :
 
 En outre, `<number> less susceptible to phishing` reflète la différence entre le nombre réel d’employés compromis par l’attaque et le taux de compromission prévu. Ce nombre d’employés est moins susceptible d’être compromis par des attaques similaires à l’avenir, tandis que la `<percent%> better than predicted rate` manière dont les employés étaient globalement en contraste avec le taux de compromission prévu.
 
-![Carte d’impact de comportement sur la présentation de la formation à la simulation d’attaque](../../media/attack-sim-preview-behavior-impact-card.png)
+> [!div class="mx-imgBorder"]
+> ![Carte d’impact de comportement sur la présentation de la formation à la simulation d’attaque](../../media/attack-sim-preview-behavior-impact-card.png)
 
 Pour afficher un rapport plus détaillé, cliquez sur **afficher les simulations et le rapport d’efficacité de formation** qui fournit les mêmes informations avec un contexte supplémentaire à partir de la simulation proprement dite, comme les techniques de simulation et le nombre total d’utilisateurs ciblés.
 
 ## <a name="recommended-actions"></a>Actions recommandées
 
-Dans l' [onglet **simulations**](https://security.microsoft.com/attacksimulator?viewid=simulations) , sélectionnez l’une des simulations pour accéder aux détails de la simulation. Vous trouverez ici la section **actions recommandées** .
+Dans l' [onglet **simulations**](https://security.microsoft.com/attacksimulator?viewid=simulations), la sélection de l’une des simulations vous permet d’accéder à des détails de simulation. Vous trouverez ici la section **actions recommandées** .
 
 La section actions recommandées décrit en détail les recommandations disponibles dans [Microsoft Secure score](../mtp/microsoft-secure-score.md). Ces recommandations sont basées sur la charge utile utilisée dans la simulation et vous aideront à protéger vos employés et votre environnement. Cliquez sur chaque action d’amélioration pour accéder à ses détails.
 
-![Section actions de recommandation sur la formation à la simulation d’attaque](../../media/attack-sim-preview-recommended-actions.png)
+> [!div class="mx-imgBorder"]
+> ![Section actions de recommandation sur la formation à la simulation d’attaque](../../media/attack-sim-preview-recommended-actions.png)
+
+## <a name="related-links"></a>Liens connexes
+
+**Simulateur d’attaque** [créer une simulation d’attaque par hameçonnage](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training?view=o365-worldwide) et [créer une charge utile pour la formation de vos collaborateurs](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training-payloads?view=o365-worldwide)
