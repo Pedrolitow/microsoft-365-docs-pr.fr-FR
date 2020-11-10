@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Vous pouvez désormais appliquer des stratégies DLP aux conversations et canaux Microsoft Teams. Lisez cet article pour en savoir plus sur son fonctionnement.
-ms.openlocfilehash: 58a96cea3a45fb640b06e09debd35dd005b15a32
-ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
+ms.openlocfilehash: 22f279eaccaed20984a59b9b3ae5655df00b2ae3
+ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45024724"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48951072"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Protection contre la perte de données et Microsoft teams
 
@@ -69,7 +69,7 @@ Pour effectuer cette tâche, vous devez disposer d’un rôle disposant d’auto
 
 2. Choisissez stratégie de **protection contre la perte de données**  >  **Policy**.
 
-3. Sélectionnez une stratégie, puis en regard de **paramètres de stratégie**, sélectionnez **modifier**.
+3. Sélectionnez une stratégie, puis en regard de **paramètres de stratégie** , sélectionnez **modifier**.
 
 4. Créez une règle ou modifiez une règle existante pour la stratégie.<br/>![Modification d’une règle pour une stratégie](../media/dlp-teams-editrule.png)<br/>
 
@@ -89,7 +89,7 @@ Pour effectuer cette tâche, vous devez disposer d’un rôle disposant d’auto
 
 2. Choisissez stratégie de **protection contre la perte de données**  >  **Policy**.
 
-3. Sélectionnez une stratégie, puis examinez les valeurs figurant dans la zone **emplacements**. Si vous voyez la **conversation teams et les messages de canal**, tous sont définis. Si ce n’est pas le cas, cliquez sur **modifier**.<br/>![Emplacements pour la stratégie existante](../media/dlp-teams-editexistingpolicy.png)<br/>
+3. Sélectionnez une stratégie, puis examinez les valeurs figurant dans la zone **emplacements**. Si vous voyez la **conversation teams et les messages de canal** , tous sont définis. Si ce n’est pas le cas, cliquez sur **modifier**.<br/>![Emplacements pour la stratégie existante](../media/dlp-teams-editexistingpolicy.png)<br/>
 
 4. Dans la colonne **État** , activez la stratégie pour la **conversation de teams et les messages de canal**.<br/>![DLP pour les conversations et les canaux teams](../media/dlp-teams-addteamschatschannels.png)<br/>
 
@@ -111,21 +111,46 @@ Pour effectuer cette tâche, vous devez disposer d’un rôle disposant d’auto
 
 4. Dans l’onglet **nom de votre stratégie** , spécifiez un nom et une description pour la stratégie, puis cliquez sur **suivant**.
 
-5. Dans l’onglet **choisir les emplacements** , conservez le paramètre par défaut tous les emplacements ou sélectionnez **me laisser choisir des emplacements spécifiques**, puis cliquez sur **suivant**.<br/>Si vous avez choisi des emplacements spécifiques, sélectionnez-les pour votre stratégie DLP, puis cliquez sur **suivant**.<br/>![Emplacements de stratégie DLP](../media/dlp-teams-selectlocationsnewpolicy.png)<br/>
+5. Dans l’onglet **choisir les emplacements** , conservez le paramètre par défaut tous les emplacements ou sélectionnez **me laisser choisir des emplacements spécifiques** , puis cliquez sur **suivant**.<br/>Si vous avez choisi des emplacements spécifiques, sélectionnez-les pour votre stratégie DLP, puis cliquez sur **suivant**.<br/>![Emplacements de stratégie DLP](../media/dlp-teams-selectlocationsnewpolicy.png)<br/>
     > [!NOTE]
     > Si vous souhaitez vous assurer que les documents qui contiennent des informations sensibles ne sont pas partagés de manière inappropriée dans Teams, assurez-vous que les **sites SharePoint** et **OneDrive** sont activés, ainsi que la **conversation et les messages de canal de teams**.
 
 <br/>
 
-6. Dans l' **onglet Paramètres de stratégie** , sous **personnaliser le type de contenu à protéger**, conservez les paramètres par défaut simples ou choisissez **utiliser les paramètres avancés**, puis cliquez sur **suivant**. Si vous choisissez Paramètres avancés, vous pouvez créer ou modifier des règles pour votre stratégie. (Pour obtenir de l’aide, consultez la rubrique [paramètres simples et paramètres avancés](data-loss-prevention-policies.md#simple-settings-vs-advanced-settings).)
+6. Dans l' **onglet Paramètres de stratégie** , sous **personnaliser le type de contenu à protéger** , conservez les paramètres par défaut simples ou choisissez **utiliser les paramètres avancés** , puis cliquez sur **suivant**. Si vous choisissez Paramètres avancés, vous pouvez créer ou modifier des règles pour votre stratégie. (Pour obtenir de l’aide, consultez la rubrique [paramètres simples et paramètres avancés](data-loss-prevention-policies.md#simple-settings-vs-advanced-settings).)
 
-7.  Dans l’onglet **paramètres de stratégie** , sous que voulez **-vous faire si nous détectons des informations sensibles ?**, vérifiez les paramètres. (C’est ici que vous pouvez choisir de conserver les conseils de stratégie par défaut [et les notifications par courrier électronique](use-notifications-and-policy-tips.md), ou de les personnaliser.)<br/>![Paramètres de stratégie DLP avec conseils et notifications](../media/dlp-teams-policysettings-tipsemails.png)<br/>Lorsque vous avez terminé d’examiner ou de modifier les paramètres, choisissez **suivant**.
+7.  Dans l’onglet **paramètres de stratégie** , sous que voulez **-vous faire si nous détectons des informations sensibles ?** , vérifiez les paramètres. (C’est ici que vous pouvez choisir de conserver les conseils de stratégie par défaut [et les notifications par courrier électronique](use-notifications-and-policy-tips.md), ou de les personnaliser.)<br/>![Paramètres de stratégie DLP avec conseils et notifications](../media/dlp-teams-policysettings-tipsemails.png)<br/>Lorsque vous avez terminé d’examiner ou de modifier les paramètres, choisissez **suivant**.
 
-8. Dans l' **onglet Paramètres de stratégie** , sous voulez- **vous activer la stratégie ou effectuer d’abord des tests ?**, indiquez si vous souhaitez activer la stratégie, la [Tester](data-loss-prevention-policies.md#roll-out-dlp-policies-gradually-with-test-mode)ou la désactiver pour le moment, puis cliquez sur **suivant**.<br/>![Indiquez si la stratégie doit être activée ou non.](../media/dlp-teams-policysettings-turnonnow.png)<br/>
+8. Dans l' **onglet Paramètres de stratégie** , sous voulez- **vous activer la stratégie ou effectuer d’abord des tests ?** , indiquez si vous souhaitez activer la stratégie, la [Tester](data-loss-prevention-policies.md#roll-out-dlp-policies-gradually-with-test-mode)ou la désactiver pour le moment, puis cliquez sur **suivant**.<br/>![Indiquez si la stratégie doit être activée ou non.](../media/dlp-teams-policysettings-turnonnow.png)<br/>
 
 9. Dans l’onglet **vérifier vos paramètres** , passez en revue les paramètres de votre nouvelle stratégie. Choisissez **modifier** pour apporter des modifications. Lorsque vous avez terminé, sélectionnez **créer**.
 
 Prévoyez environ une heure pour que votre nouvelle stratégie fonctionne dans votre centre de données et synchronisez-vous avec les comptes d’utilisateur.
+
+## <a name="prevent-external-access-to-sensitive-documents"></a>Empêcher l’accès externe aux documents sensibles
+
+Pour vous assurer que les documents SharePoint qui contiennent des informations sensibles ne sont pas accessibles par des invités externes à partir de SharePoint ou de teams par défaut, sélectionnez ce qui suit :
+
+- Vous pouvez vous assurer que les documents sont protégés jusqu’à ce que DLP les analyse et les marque comme étant fiables pour les partager en [marquant les nouveaux fichiers comme sensibles par défaut](https://docs.microsoft.com/sharepoint/sensitive-by-default) .
+- Structure de stratégie DLP recommandée
+    - **Conditions**
+        - Le contenu contient l’un de ces types d’informations sensibles : [sélectionnez tous les éléments qui s’appliquent]
+        - Le contenu est partagé par Microsoft 365 avec des personnes en dehors de mon organisation
+        <br/>![Conditions DLP pour détecter le partage externe de contenu sensible](../media/dlp-teams-external-sharing/external-condition.png)<br/>
+
+
+    - **Actions**
+        - Restreindre l’accès au contenu pour les utilisateurs externes
+        - Informer les utilisateurs avec les conseils de messagerie et de stratégie
+        - Envoyer des rapports d’incident à l’administrateur    
+        <br/>![Action DLP pour bloquer le partage externe de contenu sensible](../media/dlp-teams-external-sharing/external-action.png)<br/>
+
+Stratégie DLP en action lors d’une tentative de partage d’un document dans SharePoint qui contient des informations sensibles avec un invité externe :
+<br/>![Partage externe bloqué](../media/dlp-teams-external-sharing/external-sharing-blocked.png)<br/>
+
+
+Stratégie DLP en action lorsque les invités tentent d’ouvrir un document dans teams avec bloquer l’extérieur :
+<br/>![Accès externe bloqué](../media/dlp-teams-external-sharing/external-access-blocked.png)<br/>
 
 ## <a name="related-articles"></a>Articles connexes
 

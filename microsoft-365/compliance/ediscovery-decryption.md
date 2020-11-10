@@ -15,26 +15,28 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-ROBOTS: NOINDEX, NOFOLLOW
 description: Découvrez comment les outils eDiscovery de Microsoft 365 gèrent les documents chiffrés joints aux messages électroniques.
-ms.openlocfilehash: b7c1dc20b8e400b9880cc00a88a2d23a4b6d1979
-ms.sourcegitcommit: 751dc531f0410ee075c179efe409a01664483ee2
+ms.openlocfilehash: 3a4a094f1da28c9a017836c099507f5af739b0b9
+ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48925583"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48951117"
 ---
 # <a name="decryption-in-microsoft-365-ediscovery-tools"></a>Déchiffrement dans les outils eDiscovery de Microsoft 365
 
-Les organisations utilisent la technologie de chiffrement pour protéger le contenu sensible au sein de leur organisation et s’assurer que seules les personnes appropriées ont accès à ce contenu. Les organisations utilisent différents types de chiffrement, les technologies de chiffrement Microsoft et les technologies tierces pour répondre à leurs besoins en matière de sécurité et protéger leurs informations sensibles.
+Le chiffrement est une partie importante de votre stratégie de protection des informations et de protection des informations. Les organisations de tous types utilisent la technologie de chiffrement pour protéger le contenu sensible au sein de leur organisation et garantir que seules les personnes appropriées ont accès à ce contenu.
 
-À ce jour, la gestion du contenu chiffré dans le flux de travail de découverte électronique dans Microsoft 365 nécessite un traitement spécial des éléments chiffrés en fonction du type de chiffrement utilisé et de l’étape spécifique dans le flux de travail. Ceci était principalement réalisé en déchiffrant le contenu des messages électroniques lorsqu’il a été exporté à partir de recherches de contenu, de cas de découverte électronique principaux et de cas de découverte électronique avancée. Le contenu chiffré avec les technologies de chiffrement Microsoft n’a pas pu être prévisualisé tant qu’il n’a pas été exporté. Dans Advanced eDiscovery, le contenu chiffré a été signalé par une erreur de traitement, qui a nécessité de télécharger l’élément chiffré, de le déchiffrer, puis de télécharger le fichier déchiffré dans un jeu de révision.
+Pour exécuter des tâches eDiscovery communes sur du contenu chiffré, les gestionnaires eDiscovery ont été tenus de déchiffrer le contenu des messages électroniques lors de son exportation à partir de recherches de contenu, de cas de découverte électronique principaux et de cas avancés de découverte électronique. Le contenu chiffré avec les technologies de chiffrement Microsoft n’était pas disponible à des fins de révision tant qu’il n’a pas été exporté.
 
-Pour faciliter la gestion du contenu chiffré dans le flux de travail de découverte électronique, les outils eDiscovery de Microsoft 365 peuvent déchiffrer les fichiers chiffrés joints aux messages électroniques et envoyés dans Exchange Online. Avant cette nouvelle capacité, seul le contenu d’un message électronique protégé par la gestion des droits (et non les fichiers joints) a été déchiffré. À présent, si un fichier chiffré avec une technologie de chiffrement Microsoft est joint à un message électronique qui correspond aux critères de recherche, le fichier chiffré est déchiffré lorsque les résultats de la recherche sont préparés pour l’aperçu. Cela permet aux gestionnaires eDiscovery d’afficher le contenu des pièces jointes chiffrées lors de l’aperçu des résultats de la recherche.
+Pour faciliter la gestion du contenu chiffré dans le flux de travail de découverte électronique, les outils eDiscovery de Microsoft 365 incorporent désormais le déchiffrement des fichiers chiffrés joints aux messages électroniques et envoyés dans Exchange Online. Avant cette nouvelle capacité, seul le contenu d’un message électronique protégé par la gestion des droits (et non les fichiers attachés) a été déchiffré. À présent, si un fichier chiffré avec une technologie de chiffrement Microsoft est joint à un message électronique correspondant aux critères de recherche, le fichier chiffré est déchiffré lors de la préparation des résultats de la recherche. Cela permet aux gestionnaires de découverte électronique d’afficher le contenu des pièces jointes chiffrées lors de l’aperçu des résultats de la recherche et de les examiner une fois qu’ils ont été ajoutés à un jeu de révisions dans Advanced eDiscovery.
+
+> [!NOTE]
+> En commençant bientôt les outils eDiscovery de Microsoft 365 prennent en charge les documents chiffrés stockés dans SharePoint Online et OneDrive entreprise.
 
 ## <a name="supported-encryption-technologies"></a>Technologies de chiffrement prises en charge
 
-Les outils de découverte électronique Microsoft prennent en charge les éléments chiffrés avec les technologies de chiffrement Microsoft. Ces technologies incluent le chiffrement de messages Office, la protection des informations Microsoft (étiquettes de confidentialité) et Azure Rights Management. Pour plus d’informations sur les technologies de chiffrement Microsoft, consultez la rubrique [chiffrement](encryption.md). Le contenu chiffré par des technologies de chiffrement tierces n’est pas pris en charge. Il n’y a pas de prise en charge lors de l’aperçu ou de l’exportation de contenu chiffré avec des technologies non Microsoft.
+Les outils de découverte électronique Microsoft prennent en charge les éléments chiffrés avec les technologies de chiffrement Microsoft. Ces technologies incluent le chiffrement de messages Office, la protection des informations Microsoft (bientôt disponible) et Azure Rights Management. Pour plus d’informations sur les technologies de chiffrement Microsoft, consultez la rubrique [chiffrement](encryption.md). Le contenu chiffré par des technologies de chiffrement tierces n’est pas pris en charge. Il n’y a pas de prise en charge lors de l’aperçu ou de l’exportation de contenu chiffré avec des technologies non Microsoft.
 
 ## <a name="ediscovery-activities-that-support-encrypted-items"></a>activités eDiscovery qui prennent en charge les éléments chiffrés
 
@@ -42,7 +44,7 @@ Le tableau suivant identifie les tâches effectuées dans les outils eDiscovery 
 
 |tâche eDiscovery  |Recherche de contenu  |Core eDiscovery  |Advanced eDiscovery  |
 |:---------|:---------|:---------|:---------|
-|Rechercher du contenu dans des fichiers chiffrés     |Non      |Non      |Non      |
+|Rechercher du contenu dans des fichiers chiffrés     |Oui      |Oui      |Oui      |
 |Afficher un aperçu des fichiers chiffrés     |Oui      |Oui     |Oui       |
 |Examiner les fichiers chiffrés dans un jeu de révision    |N/A      |N/A        | Oui        |
 |Exporter des fichiers chiffrés    |Oui       |Oui  |Oui    |

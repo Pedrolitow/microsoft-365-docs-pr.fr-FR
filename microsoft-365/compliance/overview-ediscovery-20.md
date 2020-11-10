@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: ''
 description: Cet article fournit une vue d’ensemble de Advanced eDiscovery dans Microsoft 365, un outil destiné aux investigations internes et externes.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 95c864b9e2222000b1114ae42dbbb5705228d531
-ms.sourcegitcommit: dab50e1cc5bba920720b80033c93457f5ca1c330
+ms.openlocfilehash: 2ef61c8c60cb2cd7114798969dce14c7dce0a2fd
+ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "48944342"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48951151"
 ---
 # <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Vue d’ensemble de la solution avancée eDiscovery dans Microsoft 365
 
@@ -72,11 +72,13 @@ Voici un diagramme d’architecture eDiscovery avancé qui montre le flux de tra
 
 Pour plus d’informations sur le flux de travail de bout en bout dans Advanced eDiscovery, reportez-vous à cette [vidéo de mécanique Microsoft](https://go.microsoft.com/fwlink/?linkid=2066133).
 
-Les sections suivantes décrivent chaque étape du flux de travail intégré dans Advanced eDiscovery.
+Les sections qui suivent décrivent chaque étape du flux de travail intégré dans Advanced eDiscovery. La capture d’écran suivante présente l’onglet **vue d’ensemble** d’un cas nommé *2020.11.03-contoso v. fabrikam*.
+
+![Onglets dans le flux de travail eDiscovery avancé intégré](../media/AeD-Case-Screenshot1.png)
 
 ## <a name="managing-custodians-and-non-custodial-data-sources"></a>Gestion des dépositaires et des sources de données non privatives de cœur
 
-Utilisez l’onglet **sources** pour ajouter et gérer les personnes que vous avez identifiées comme des personnes intéressantes dans le cas et d’autres sources de données qui ne peuvent pas être associées à un dépositaire. Lorsque vous ajoutez des dépositaires ou des sources de données non privatives de temps, vous pouvez effectuer rapidement des actions telles que le placement d’une conservation légale sur des dépositaires et des sources de données non-privatives, la communication avec des dépositaires et la recherche de dépositaires et de sources de données non privatives pour collecter du contenu pertinent pour le cas. Au fur et à mesure de la progression, il est facile d’ajouter de nouveaux dépositaires ou des sources de dates non privatives de ressources ou de les diffuser à partir du cas. Pour plus d’informations, consultez la rubrique [utiliser des dépositaires dans Advanced eDiscovery](managing-custodians.md).
+Utilisez l’onglet **sources de données** pour ajouter et gérer les personnes que vous avez identifiées comme des personnes intéressantes dans le cas et d’autres sources de données qui ne peuvent pas être associées à un dépositaire. Lorsque vous ajoutez des dépositaires ou des sources de données non privatives de temps, vous pouvez effectuer rapidement des actions telles que le placement d’une conservation légale sur des dépositaires et des sources de données non-privatives, la communication avec des dépositaires et la recherche de dépositaires et de sources de données non privatives pour collecter du contenu pertinent pour le cas. Au fur et à mesure de la progression, il est facile d’ajouter de nouveaux dépositaires ou des sources de dates non privatives de ressources ou de les diffuser à partir du cas. Pour plus d’informations, consultez la rubrique [utiliser des dépositaires dans Advanced eDiscovery](managing-custodians.md).
 
 ## <a name="managing-legal-hold-notifications"></a>Gestion des notifications de conservation légale
 
@@ -84,7 +86,7 @@ Utilisez l’onglet **communications** pour gérer le processus de communication
 
 ## <a name="managing-content-preservation"></a>Gestion de la conservation du contenu
 
-Lorsque vous ajoutez un dépositaire à un cas, vous pouvez placer un blocage sur des données privatives. Utilisez l’onglet **suspensions** pour gérer le blocage créé lorsque vous ajoutez des dépositaires, et pour gérer les autres conservations légales associées au cas ; par exemple, vous pouvez identifier et placer une conservation sur des sources de données non privatives de cœur. Vous pouvez également modifier n’importe quelle conservation dans le cas et en faire une conservation basée sur une requête pour conserver uniquement le contenu qui correspond à la requête. Par exemple, vous pouvez ajouter une plage de dates à la suspension afin que seul le contenu créé dans une date spécifique soit dans l’intervalle préservé. Vous pouvez également obtenir des statistiques sur le contenu en attente, supprimer la conservation une fois qu’elle n’est plus pertinente pour le cas ou la supprimer. Pour plus d’informations, consultez la rubrique Manage holds [in Advanced eDiscovery](managing-holds.md).
+Lorsque vous ajoutez un dépositaire à un cas, vous pouvez placer un blocage sur des données privatives. Utilisez l’onglet **blocage** pour gérer le blocage créé lorsque vous ajoutez des dépositaires, et pour gérer les autres conservations légales associées au cas ; par exemple, vous pouvez identifier et placer une conservation sur des sources de données non privatives de cœur. Vous pouvez également modifier n’importe quelle conservation dans le cas et en faire une conservation basée sur une requête pour conserver uniquement le contenu qui correspond à la requête. Par exemple, vous pouvez ajouter une plage de dates à la suspension afin que seul le contenu créé dans une date spécifique soit dans l’intervalle préservé. Vous pouvez également obtenir des statistiques sur le contenu en attente, supprimer la conservation une fois qu’elle n’est plus pertinente pour le cas ou la supprimer. Pour plus d’informations, consultez la rubrique Manage holds [in Advanced eDiscovery](managing-holds.md).
 
 ## <a name="indexing-custodian-data"></a>Indexation des données des dépositaires
 
