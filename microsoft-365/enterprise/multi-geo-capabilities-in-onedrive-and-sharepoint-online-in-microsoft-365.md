@@ -18,16 +18,16 @@ ms.collection:
 localization_priority: Normal
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: Étendez votre présence Microsoft 365 à plusieurs régions géographiques grâce aux fonctionnalités multi-géographiques dans OneDrive Online.
-ms.openlocfilehash: 84abfc01d5073889e998347f58d4a3e8bb29ea33
-ms.sourcegitcommit: 5a355bde865369f64ea1788a378da23c65b1d249
+ms.openlocfilehash: 8f42b071abef0602304f1a468190c33700fe3e82
+ms.sourcegitcommit: 321610fd312e5c54ae8a757a71ab0c9fd2f1ac03
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48930176"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48995908"
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online"></a>Fonctionnalités multi-géographiques OneDrive et SharePoint Online
 
-Les fonctionnalités multi-géographiques dans OneDrive et SharePoint Online permettent de contrôler le pays ou la région où des ressources partagées tels que les sites d’équipe SharePoint et les boîtes aux lettres de groupe Microsoft 365 qui sont stockés au repos. 
+Les fonctionnalités multigéographiques dans OneDrive et SharePoint Online permettent de contrôler les ressources partagées, telles que les sites d’équipe SharePoint et les boîtes aux lettres de groupe Microsoft 365 stockées au repos dans un pays ou une région.
 
 Chaque utilisateur, une boîte aux lettres de groupe et un site SharePoint ont un emplacement recommandé de données (PDL) qui indique l’emplacement géographique où les données connexes sont stockées. Les donnée personnelle des utilisateurs (boîte aux lettres Exchange et OneDrive), ainsi que les sites de Groupes Microsoft 365 ou SharePoint qu’ils créent peuvent être stockées dans l’emplacement spécifié géographique pour répondre aux exigences de résidence de données. Vous pouvez[spécifier des différents administrateurs pour chaque emplacement géo](add-a-sharepoint-geo-admin.md).
 
