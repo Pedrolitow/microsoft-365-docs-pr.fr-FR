@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur les stratégies anti-hameçonnage disponibles dans Exchange Online Protection (EOP) et Microsoft Defender pour Office 365.
-ms.openlocfilehash: c1254ccdc678bd25c2d3481b0a43cca5ff9816c0
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: b54f452fb984f61913f2ade53ad45ed169a43832
+ms.sourcegitcommit: f941495e9257a0013b4a6a099b66c649e24ce8a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48919775"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48993353"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Stratégies anti-hameçonnage dans Microsoft 365
 
@@ -97,7 +97,7 @@ Les paramètres d’usurpation suivants sont disponibles dans les stratégies de
   > [!NOTE]
   >
   > - La protection contre l’usurpation d’identité est activée par défaut dans la stratégie anti-hameçonnage par défaut et dans toute nouvelle stratégie anti-hameçonnage personnalisée que vous créez.
-  > 
+  >
   > - Vous n’avez pas besoin de désactiver la protection contre l’usurpation d’identité si votre enregistrement MX ne pointe pas vers Microsoft 365 ; vous activez le filtrage amélioré pour les connecteurs à la place. Pour obtenir des instructions, voir [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
   Pour les messages provenant d’expéditeurs usurpés bloqués, vous pouvez également spécifier l’action à effectuer sur les messages :
@@ -158,7 +158,10 @@ Les paramètres d’emprunt d’identité suivants sont disponibles uniquement d
   Vous pouvez utiliser des utilisateurs protégés pour ajouter des adresses de messagerie d’expéditeurs internes et externes afin de protéger l’emprunt d’identité. Cette liste d' **expéditeurs** protégés de l’emprunt d’identité de l’utilisateur est différente de la liste des **destinataires** auxquels la stratégie s’applique (tous les destinataires de la stratégie par défaut ; des destinataires spécifiques, comme configuré dans le paramètre **appliqué à** dans la section [paramètres de stratégie](#policy-settings) ).
 
   > [!NOTE]
-  > Le nombre maximal d’utilisateurs protégés (adresses de messagerie des expéditeurs) que vous pouvez définir dans toutes les stratégies de détection d’hameçonnage est de 60. En d’autres termes, vous pouvez avoir 60 utilisateurs protégés dans une stratégie, 12 utilisateurs protégés par 5 stratégies, etc.
+  >
+  > - Dans chaque stratégie anti-hameçonnage, vous pouvez spécifier un maximum de 60 utilisateurs protégés (adresses e-mail de l’expéditeur). Vous ne pouvez pas spécifier le même utilisateur protégé dans plusieurs stratégies.
+  >
+  > - La protection contre l’usurpation d’identité d’utilisateur ne fonctionne pas si l’expéditeur et le destinataire ont déjà communiqué par courrier électronique. Si l’expéditeur et le destinataire n’ont jamais communiqué par courrier électronique, le message est identifié en tant que tentative d’emprunt d’identité.
 
   Par défaut, aucune adresse de messagerie d’expéditeur n’est configurée pour la protection contre l’emprunt d’identité des **utilisateurs pour protéger**. Par conséquent, par défaut, aucune adresse de messagerie d’expéditeur n’est couverte par la protection contre l’emprunt d’identité, soit dans la stratégie par défaut, soit dans des stratégies personnalisées.
 
@@ -167,7 +170,7 @@ Les paramètres d’emprunt d’identité suivants sont disponibles uniquement d
 - **Domaines à protéger** : empêche l’emprunt d’identité des domaines spécifiés **dans le domaine de l’expéditeur du message**. Par exemple, tous les domaines que vous possédez ([domaines acceptés](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) ou des domaines spécifiques (domaines que vous possédez ou domaines partenaires). Cette liste de **domaines d’expéditeur** protégés de l’emprunt d’identité est différente de la liste des **destinataires** auxquels la stratégie s’applique (tous les destinataires de la stratégie par défaut ; des destinataires spécifiques tels que configurés dans le paramètre **appliqué à** dans la section [paramètres de stratégie](#policy-settings) ).
 
   > [!NOTE]
-  > Le nombre maximal de domaines protégés que vous pouvez définir dans toutes les stratégies de protection contre le hameçonnage est de 50. En d’autres termes, vous pouvez avoir 50 domaines protégés dans une stratégie, 10 domaines protégés dans 5 stratégies, etc.
+  > Le nombre maximal de domaines protégés que vous pouvez définir dans toutes les stratégies de protection contre le hameçonnage est de 50.
 
   Par défaut, aucun domaine d’expéditeur n’est configuré pour la protection contre l’emprunt d’identité dans les **domaines à protéger**. Par conséquent, par défaut, aucun domaine d’expéditeur n’est couvert par la protection contre l’emprunt d’identité, soit dans la stratégie par défaut, soit dans des stratégies personnalisées.
 

@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à créer, modifier et supprimer les stratégies anti-hameçonnage avancées disponibles dans les organisations avec Microsoft Defender pour Office 365.
-ms.openlocfilehash: ecc68a8dc050a5f08c6982b023861e0ea8976775
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 7665d0dc475909d04da209aa6c1cd6b12378f8a9
+ms.sourcegitcommit: f941495e9257a0013b4a6a099b66c649e24ce8a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920655"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48993387"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Configurer des stratégies anti-hameçonnage dans Microsoft Defender pour Office 365
 
@@ -170,7 +170,10 @@ Utilisez les procédures suivantes pour modifier les stratégies de détection d
      Pour modifier une entrée existante, sélectionnez-la dans la liste.
 
      > [!NOTE]
-     > Vous pouvez avoir un maximum de 60 utilisateurs dans toutes les stratégies de protection contre le hameçonnage. En d’autres termes, vous pouvez avoir 60 utilisateurs protégés dans une stratégie, 12 utilisateurs protégés par 5 stratégies, etc.
+     >
+     > - Dans chaque stratégie anti-hameçonnage, vous pouvez spécifier un maximum de 60 utilisateurs protégés (adresses e-mail de l’expéditeur). Vous ne pouvez pas spécifier le même utilisateur protégé dans plusieurs stratégies.
+     >
+     > - La protection contre l’usurpation d’identité d’utilisateur ne fonctionne pas si l’expéditeur et le destinataire ont déjà communiqué par courrier électronique. Si l’expéditeur et le destinataire n’ont jamais communiqué par courrier électronique, le message est identifié en tant que tentative d’emprunt d’identité.
 
    - **Ajouter des domaines à protéger** : configurez l’un des paramètres suivants ou les deux :
 
@@ -178,7 +181,7 @@ Utilisez les procédures suivantes pour modifier les stratégies de détection d
      - **Inclure les domaines personnalisés** : la valeur par défaut est **off**. Pour l’activer, faites glisser le bouton bascule sur **activé** , puis dans la zone **Ajouter des domaines** , entrez le nom de domaine (par exemple, contoso.com), appuyez sur entrée et répétez l’opération si nécessaire.
 
      > [!NOTE]
-     > Vous pouvez avoir un maximum de 50 domaines dans toutes les stratégies de détection d’hameçonnage. En d’autres termes, vous pouvez avoir 50 utilisateurs protégés dans une stratégie, 10 utilisateurs protégés dans 5 stratégies, etc.
+     > Vous pouvez avoir un maximum de 50 domaines dans toutes les stratégies de détection d’hameçonnage.
 
    - **Actions** : cliquez sur **modifier**
 

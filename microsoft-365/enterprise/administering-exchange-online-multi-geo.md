@@ -12,12 +12,12 @@ f1.keywords:
 ms.custom: seo-marvel-mar2020
 localization_priority: normal
 description: Découvrez comment administrer les paramètres multi-géo Exchange Online dans votre environnement Microsoft 365 avec PowerShell.
-ms.openlocfilehash: ea7090cd65634138f9677960beab7770825a6e86
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: c9219d29a1fdae68075d296404a6c2aeab30f1aa
+ms.sourcegitcommit: f941495e9257a0013b4a6a099b66c649e24ce8a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950675"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48993375"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>Administration des boîtes aux lettres Exchange Online dans un environnement multigéographique
 
@@ -29,7 +29,7 @@ Pour voir la propriété **PreferredDataLocation** sur les objets utilisateur, v
 
 En règle générale, Exchange Online PowerShell se connecte à l’emplacement géographique central. Vous pouvez cependant aussi vous connecter directement à des emplacements satellites géographiques. En raison des améliorations apportées aux performances, nous vous recommandons de vous connecter directement à l’emplacement satellite géographique lorsque vous gérez uniquement des utilisateurs situés dans cet emplacement.
 
-Les conditions requises pour l’installation et l’utilisation du module EXO v2 sont décrites dans [Installer et gérer le module EXO v2](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module).
+Les conditions requises pour l’installation et l’utilisation du module EXO V2 sont décrites dans [Installer et gérer le module EXO V2](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module).
 
 Pour connecter Exchange Online PowerShell à un emplacement géographique spécifique, le paramètre *ConnectionUri* est différent des instructions de connexion normales. Les autres commandes et valeurs sont identiques.
 
@@ -93,11 +93,11 @@ Get-OrganizationConfig | Select DefaultMailboxRegion
 
 La cmdlet **Get-Mailbox** dans Exchange Online PowerShell affiche les propriétés multigéographiques associées suivantes sur les boîtes aux lettres :
 
-- **Database** : les 3 premières lettres du nom de base de données correspondent au géocode indiquant où la boîte aux lettres se trouve actuellement. Pour les boîtes aux lettres d’archivage en ligne, il convient d’utiliser la propriété **ArchiveDatabase**.
+- **Database**  : les 3 premières lettres du nom de base de données correspondent au géocode indiquant où la boîte aux lettres se trouve actuellement. Pour les boîtes aux lettres d’archivage en ligne, il convient d’utiliser la propriété **ArchiveDatabase**.
 
-- **MailboxRegion** : spécifie le code de géolocalisation défini par l’administrateur (synchronisé à partir de **PreferredDataLocation** dans Azure AD).
+- **MailboxRegion**  : spécifie le code de géolocalisation défini par l’administrateur (synchronisé à partir de **PreferredDataLocation** dans Azure AD).
 
-- **MailboxRegionLastUpdateTime** : indique quand la propriété MailboxRegion a été mise à jour (automatiquement ou manuellement) pour la dernière fois.
+- **MailboxRegionLastUpdateTime**  : indique quand la propriété MailboxRegion a été mise à jour (automatiquement ou manuellement) pour la dernière fois.
 
 Pour afficher ces propriétés pour une boîte aux lettres, utilisez la syntaxe suivante :
 
@@ -160,21 +160,39 @@ Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataL
 >   - le nombre total de boîtes aux lettres déplacées ;
 >   - la disponibilité des ressources nécessaires pour le déplacement.
 
-### <a name="move-disabled-mailboxes-that-are-on-litigation-hold"></a>Déplacer des boîtes aux lettres désactivées pour cause de Conservation pour litige
+### <a name="move-an-inactive-mailbox-to-a-specific-geo"></a>Déplacer une boîte aux lettres inactive vers une région géographique spécifique
 
-Il est possible de déplacer des boîtes aux lettres désactivées pour cause de Conservation pour litige à des fins de découverte électronique (eDiscovery) en modifiant leur valeur **PreferredDataLocation**. Pour déplacer une boîte aux lettres désactivée pour cause de Conservation pour litige :
+Vous ne pouvez pas déplacer les boîtes aux lettres inactives conservées à des fins de conformité (par exemple, les boîtes aux lettres en conservation pour litige) en modifiant leur valeur **PreferredDataLocation** . Pour déplacer une boîte aux lettres inactive vers une autre région, procédez comme suit :
 
-1. Attribuez temporairement une licence à la boîte aux lettres.
+1. Récupérez la boîte aux lettres inactive. Pour obtenir des instructions, consultez la rubrique [récupérer une boîte aux lettres inactive](https://docs.microsoft.com/microsoft-365/compliance/recover-an-inactive-mailbox).
 
-2. Modifiez la valeur **PreferredDataLocation**.
+2. Empêcher l’Assistant dossier géré de traiter la boîte aux lettres récupérée en remplaçant par \<MailboxIdentity\> le nom, l’alias, le compte ou l’adresse de messagerie de la boîte aux lettres et en exécutant la commande suivante dans [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell):
 
-3. Une fois la boîte aux lettres déplacée vers l’emplacement géographique choisi, supprimez sa licence afin de la remettre à l’état désactivé.
+    ```powershell
+    Set-Mailbox <MailboxIdentity> -ElcProcessingDisabled $true
+    ```
+
+3. Affectez une licence **Exchange Online plan 2** à la boîte aux lettres récupérée. Cette étape est nécessaire pour remettre la boîte aux lettres en conservation pour litige. Pour obtenir des instructions, consultez la rubrique [attribuer des licences aux utilisateurs](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users).
+
+4. Configurez la valeur **PreferredDataLocation** sur la boîte aux lettres, comme décrit dans la section précédente.
+
+5. Une fois que vous avez vérifié que la boîte aux lettres a été déplacée vers le nouvel emplacement géographique, replacez la boîte aux lettres récupérée en conservation pour litige. Pour obtenir des instructions, consultez [la rubrique placer une boîte aux lettres en conservation pour litige](https://docs.microsoft.com/microsoft-365/compliance/create-a-litigation-hold#place-a-mailbox-on-litigation-hold).
+
+6. Après avoir vérifié que la conservation pour litige est en place, autorisez l’Assistant dossier géré à traiter à nouveau la boîte aux lettres en remplaçant par \<MailboxIdentity\> le nom, l’alias, le compte ou l’adresse de messagerie de la boîte aux lettres et en exécutant la commande suivante dans [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell):
+
+    ```powershell
+    Set-Mailbox <MailboxIdentity> -ElcProcessingDisabled $false
+    ```
+
+7. Rendez la boîte aux lettres inactive de nouveau en supprimant le compte d’utilisateur associé à la boîte aux lettres. Pour obtenir des instructions, consultez [la rubrique supprimer un utilisateur de votre organisation](https://docs.microsoft.com/microsoft-365/admin/add-users/delete-a-user). Cette étape libère également la licence Exchange Online plan 2 pour d’autres utilisations.
+
+**Remarque** : lorsque vous déplacez une boîte aux lettres inactive vers un autre emplacement géographique, vous risquez d’affecter les résultats de la recherche de contenu ou la possibilité d’effectuer une recherche dans la boîte aux lettres à partir de l’ancien emplacement géographique. Pour plus d’informations, reportez-vous à la rubrique [recherche et exportation de contenu dans des environnements Multigéographiques](https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries#searching-and-exporting-content-in-multi-geo-environments).
 
 ## <a name="create-new-cloud-mailboxes-in-a-specific-geo-location"></a>Créer des boîtes aux lettres cloud dans un emplacement géographique spécifique
 
 Pour créer une boîte aux lettres dans un emplacement géographique spécifique, vous devez effectuez l’une des opérations suivantes :
 
-- Configurer la valeur **PreferredDataLocation** de la manière décrite dans la section précédente *avant* de créer la boîte aux lettres dans Exchange Online ; par exemple, définir la valeur **PreferredDataLocation** sur un utilisateur avant l’attribution d’une licence.
+- Configurez la valeur **PreferredDataLocation** comme décrit dans la section [déplacement précédent d’une boîte aux lettres Cloud uniquement existante vers une emplacement géographique spécifique](#move-an-existing-cloud-only-mailbox-to-a-specific-geo-location) *avant* de créer la boîte aux lettres dans Exchange Online. Par exemple, configurez la valeur **PreferredDataLocation** sur un utilisateur avant d’attribuer une licence.
 
 - Attribuer une licence lors de la définition de la valeur **PreferredDataLocation**.
 
@@ -190,7 +208,7 @@ Cet exemple montre comment créer un compte d’utilisateur pour Elizabeth Brunn
 - Prénom : Elizabeth
 - Nom : Brunner
 - Nom d’affichage : Elizabeth Brunner
-- Mot de passe : généré de façon aléatoire et affiché dans les résultats de la commande (étant donné que nous n’utilisons pas le paramètre *Password*)
+- Mot de passe : généré de façon aléatoire et affiché dans les résultats de la commande (étant donné que nous n’utilisons pas le paramètre *Password* )
 - Licence : `contoso:ENTERPRISEPREMIUM` (E5)
 - Emplacement : Australie (AUS)
 
@@ -201,7 +219,7 @@ New-MsolUser -UserPrincipalName ebrunner@contoso.onmicrosoft.com -DisplayName "E
 Pour plus d’informations sur la création de comptes d’utilisateur et la recherche de valeurs LicenseAssignment dans Azure AD PowerShell, voir [Création de comptes d’utilisateurs avec PowerShell](create-user-accounts-with-microsoft-365-powershell.md) et [Afficher les licences et les services avec PowerShell](view-licenses-and-services-with-microsoft-365-powershell.md).
 
 > [!NOTE]
-> Sii vous utilisez Exchange Online PowerShell pour activer une boîte aux lettres et avez besoin que la boîte aux lettres soit créée directement dans la zone géographique spécifiée dans **PreferredDataLocation**, vous devez utiliser une cmdlet Exchange Online telle que **Enable-Mailbox** ou **New-Mailbox** directement sur le service cloud. Si vous utilisez la cmdlet **Enable-RemoteMailbox** dans le powerShell Exchange sur site, la boîte aux lettres est créée dans l’emplacement géographique central.
+> Sii vous utilisez Exchange Online PowerShell pour activer une boîte aux lettres et avez besoin que la boîte aux lettres soit créée directement dans la zone géographique spécifiée dans **PreferredDataLocation** , vous devez utiliser une cmdlet Exchange Online telle que **Enable-Mailbox** ou **New-Mailbox** directement sur le service cloud. Si vous utilisez la cmdlet **Enable-RemoteMailbox** dans le powerShell Exchange sur site, la boîte aux lettres est créée dans l’emplacement géographique central.
 
 ## <a name="onboard-existing-on-premises-mailboxes-in-a-specific-geo-location"></a>Intégrer des boîtes aux lettres locales existant dans un emplacement géographique spécifique
 
