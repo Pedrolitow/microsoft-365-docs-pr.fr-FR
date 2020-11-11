@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment les outils eDiscovery de Microsoft 365 gèrent les documents chiffrés joints aux messages électroniques.
-ms.openlocfilehash: 3a4a094f1da28c9a017836c099507f5af739b0b9
-ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
+ms.openlocfilehash: 91d5689bfb64d272c896c0e92422ce1f45fd5f72
+ms.sourcegitcommit: 89f56c3e0b619a4700a75a21927d9ffc90658632
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/10/2020
-ms.locfileid: "48951117"
+ms.locfileid: "48984898"
 ---
 # <a name="decryption-in-microsoft-365-ediscovery-tools"></a>Déchiffrement dans les outils eDiscovery de Microsoft 365
 
@@ -32,11 +32,11 @@ Pour exécuter des tâches eDiscovery communes sur du contenu chiffré, les gest
 Pour faciliter la gestion du contenu chiffré dans le flux de travail de découverte électronique, les outils eDiscovery de Microsoft 365 incorporent désormais le déchiffrement des fichiers chiffrés joints aux messages électroniques et envoyés dans Exchange Online. Avant cette nouvelle capacité, seul le contenu d’un message électronique protégé par la gestion des droits (et non les fichiers attachés) a été déchiffré. À présent, si un fichier chiffré avec une technologie de chiffrement Microsoft est joint à un message électronique correspondant aux critères de recherche, le fichier chiffré est déchiffré lors de la préparation des résultats de la recherche. Cela permet aux gestionnaires de découverte électronique d’afficher le contenu des pièces jointes chiffrées lors de l’aperçu des résultats de la recherche et de les examiner une fois qu’ils ont été ajoutés à un jeu de révisions dans Advanced eDiscovery.
 
 > [!NOTE]
-> En commençant bientôt les outils eDiscovery de Microsoft 365 prennent en charge les documents chiffrés stockés dans SharePoint Online et OneDrive entreprise.
+> À partir de bientôt, les outils eDiscovery de Microsoft 365 prennent en charge les documents chiffrés stockés dans SharePoint Online et OneDrive entreprise. Cela inclut les documents chiffrés à la suite d’étiquettes de sensibilité appliquées.
 
 ## <a name="supported-encryption-technologies"></a>Technologies de chiffrement prises en charge
 
-Les outils de découverte électronique Microsoft prennent en charge les éléments chiffrés avec les technologies de chiffrement Microsoft. Ces technologies incluent le chiffrement de messages Office, la protection des informations Microsoft (bientôt disponible) et Azure Rights Management. Pour plus d’informations sur les technologies de chiffrement Microsoft, consultez la rubrique [chiffrement](encryption.md). Le contenu chiffré par des technologies de chiffrement tierces n’est pas pris en charge. Il n’y a pas de prise en charge lors de l’aperçu ou de l’exportation de contenu chiffré avec des technologies non Microsoft.
+Les outils de découverte électronique Microsoft prennent en charge les éléments chiffrés avec les technologies de chiffrement Microsoft. Ces technologies incluent le chiffrement de messages Office et Azure Rights Management. Pour plus d’informations sur les technologies de chiffrement Microsoft, consultez la rubrique [chiffrement](encryption.md). Le contenu chiffré par des technologies de chiffrement tierces n’est pas pris en charge. Il n’y a pas de prise en charge lors de l’aperçu ou de l’exportation de contenu chiffré avec des technologies non Microsoft.
 
 ## <a name="ediscovery-activities-that-support-encrypted-items"></a>activités eDiscovery qui prennent en charge les éléments chiffrés
 

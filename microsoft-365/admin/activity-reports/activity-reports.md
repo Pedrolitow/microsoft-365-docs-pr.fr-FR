@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenez un rapport régulier sur la façon dont les membres de votre organisation utilisent les services Microsoft 365. Le tableau de bord Vue d’ensemble de l’utilisation vous permet d’explorer chaque graphique pour obtenir d'autres informations.
-ms.openlocfilehash: dee0f3e586c49c25daafe999d065e743babf020e
-ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
+ms.openlocfilehash: 9c3416f415c43377669b2c032e10696343c4416f
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48779119"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988457"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Rapports Microsoft 365 dans le centre d'administration
 
@@ -48,13 +48,13 @@ Visionnez cette vidéo pour une vue d’ensemble : sur la façon d'utiliser les
 
 ::: moniker range="o365-germany"
 
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centre d'administration</a>, accédez à la page **Rapports** \> **sur l'Utilisation** .
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centre d'administration</a>, accédez à la page **Rapports** \> **sur l'Utilisation**.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centre d'administration</a>, accédez à la page **Rapports** \> **sur l'Utilisation** .
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centre d'administration</a>, accédez à la page **Rapports** \> **sur l'Utilisation**.
 
 ::: moniker-end
 
@@ -96,10 +96,14 @@ En fonction de votre abonnement, les rapports suivants sont disponibles.
   
 - [Utilisation des applications de messagerie](email-apps-usage.md)
 
-- [Utilisation des formulaires](forms-activity.md)
+- [Utilisation des formulaires](forms-activity-ww.md)
 
-- [Utilisation de Forms Pro](forms-pro-activity.md)
+- [Formulaires d'activité pour le gouvernement américain](forms-activity.md)
+
+- [Activité vocale pour le client Dynamics 365](forms-pro-activity-ww.md)
   
+- [Activité vocale pour le gouvernement américain Dynamics 365](forms-pro-activity.md)
+
 - [Groupes Microsoft 365](office-365-groups.md)
   
 - [Activité des utilisateurs de OneDrive Entreprise](onedrive-for-business-activity-ww.md)
@@ -206,7 +210,7 @@ Si vous voulez masquer les informations concernant les utilisateurs individuels 
   
 1. Dans le centre d’administration, cliquez sur la page **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">Services &amp; Compléments</a>.
 
-2. Sélectionnez **Rapports** . 
+2. Sélectionnez **Rapports**. 
   
 3. Dans le volet **Rapports** , sélectionnez les options souhaitées, puis enregistrez vos modifications.
   

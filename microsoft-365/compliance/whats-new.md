@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Qu’il s’agisse d’ajouter de nouvelles solutions au centre de conformité, de mettre à jour des fonctionnalités existantes en fonction de vos commentaires ou de déployer une documentation actualisée et actualisée, Microsoft 365 vous aide à rester informé de la mise en conformité en perpétuelle évolution. Découvrez ce que nous avons fait dans ce mois-ci.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 1ebe91e94b286e7d9a1b46b7fd7abf625881a6a9
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: cf019e15b1d5b915c58325c7d7c6f160acffe03e
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847800"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988852"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Nouveautés dans la conformité Microsoft 365
 
@@ -43,7 +43,7 @@ Consultez la feuille de [route de microsoft 365](https://www.microsoft.com/en-us
 
 Plusieurs fonctionnalités nouvelles et améliorées ont atteint la préversion publique ce mois-ci :
 
-**Gestion des risques initiés**
+**Gestion des risques internes**
 
 - Consultez nos six nouveaux [modèles de stratégie](insider-risk-management-policies.md#policy-templates):
     - Fuites de données par les utilisateurs prioritaires
@@ -100,7 +100,7 @@ L’activité d’administration liée à la rétention est désormais enregistr
 
 Pour vous aider à comprendre quelles solutions de conformité sont utilisées pour protéger et régir les données sensibles de votre organisation, nous avons créé deux nouvelles pages d’accueil présentant la façon dont les solutions fonctionnent ensemble pour atteindre ces objectifs, notamment des liens vers des documents connexes afin que vous puissiez approfondir votre travail.
 
-[Microsoft information protection dans Microsoft 365](protect-information.md)<br>
+[Microsoft information protection dans Microsoft 365](information-protection.md)<br>
 [Microsoft information Governance dans Microsoft 365](manage-Information-governance.md)
 
 ### <a name="advanced-ediscovery-add-non-custodial-data-sources-to-your-cases"></a>Découverte électronique avancée : ajout de sources de données non-privatives à vos cas
