@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment la rétention fonctionne pour SharePoint et OneDrive.
-ms.openlocfilehash: 258cc8e777ca39d2528e520ff5634086bff302c7
-ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
+ms.openlocfilehash: 84191cf7df1c8382b336ecce47c50ca24bc2aede
+ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48804539"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48951107"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Découvrir la rétention pour SharePoint et OneDrive
 
@@ -38,16 +38,20 @@ Pour les autres charges de travail, consultez:
 
 ## <a name="whats-included-for-retention-and-deletion"></a>Éléments composant la rétention et la suppression
 
-Tous les fichiers stockés dans SharePoint ou OneDrive peuvent être conservés en appliquant une stratégie de rétention ou une étiquette de rétention.
+Tous les fichiers stockés dans SharePoint ou OneDrive peuvent être conservés en appliquant une stratégie de rétention ou une étiquette de rétention. 
 
 Les fichiers suivants peuvent être supprimés:
 
-- Lorsque vous utilisez une stratégie de rétention : tous les fichiers dans les bibliothèques de documents, y compris les bibliothèques de documents SharePoint créées automatiquement, telles que **Eléments de site** .
+- Lorsque vous utilisez une stratégie de rétention : tous les fichiers dans les bibliothèques de documents, y compris les bibliothèques de documents SharePoint créées automatiquement, telles que **Eléments de site**.
     
 - Lorsque vous utilisez des étiquettes de rétention : tous les fichiers dans toutes les bibliothèques de documents et tous les fichiers au niveau racine qui ne se trouvent pas dans un dossier.
     
-    Lorsque vous utilisez une [requête KQL avec une stratégie d’application automatique pour une étiquette de rétention](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties), vous pouvez exclure des bibliothèques de documents à l’aide de cette entrée: `NOT(DocumentLink:"<URL to document library>")`
+> [!TIP]
+> Lorsque vous utilisez une [requête avec une stratégie d’application automatique pour une étiquette de rétention](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties), vous pouvez exclure des bibliothèques de documents à l’aide de cette entrée : `NOT(DocumentLink:"<URL to document library>")`
 
+Les paramètres de rétention ne s’appliquent pas à l’organisation de structures qui incluent des bibliothèques, des listes et des dossiers. Ou aux éléments dans les listes système, listes masquées permettant à SharePoint de gérer le système et d’inclure le catalogue de pages maîtres, le catalogue de solutions et les sources de données.
+
+Pour les stratégies de rétention et les stratégies d’application automatique des étiquettes : l’indexation des sites SharePoint est nécessaire pour l’application des paramètres de rétention. Cependant, si des éléments dans les bibliothèques de documents SharePoint sont configurés pour ne pas s’afficher dans les résultats de la recherche, cette configuration n’exclut pas les fichiers des paramètres de rétention.
 
 ## <a name="how-retention-works-for-sharepoint-and-onedrive"></a>Fonctionnement de la rétention pour SharePoint et OneDrive
 

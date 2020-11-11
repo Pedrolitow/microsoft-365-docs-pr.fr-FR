@@ -18,34 +18,34 @@ search.appverid:
 - MOE150
 - MET150
 description: L’audit avancé de Microsoft 365 offre de nouvelles fonctionnalités d’audit pour aider votre organisation à effectuer des enquêtes de conformité et de légalité.
-ms.openlocfilehash: 6524eadfd1622771e0da5bb8bcec73e11c0cfcdf
-ms.sourcegitcommit: 751dc531f0410ee075c179efe409a01664483ee2
+ms.openlocfilehash: 51ec75cc8d8ae554ea9cbef3a9ea2aa18171e70a
+ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48925614"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48950993"
 ---
-# <a name="advanced-audit-in-microsoft-365"></a>Audit avancé de Microsoft 365
+# <a name="advanced-audit-in-microsoft-365"></a>Audit avancé dans Microsoft 365
 
-La [fonctionnalité d'audit unifiée](search-the-audit-log-in-security-and-compliance.md) de Microsoft 365 offre aux organisations une visibilité dans de nombreux types d’activités auditées dans différents services de Microsoft 365. L’audit avancé permet aux organisations d’effectuer des investigations de conformité et d’audit en augmentant la rétention du journal d’audit nécessaire pour mener une investigation, en fournissant l’accès à des événements importants qui permettent de déterminer l’étendue de la compromission et un accès plus rapide à l’API de l’Activité de Gestion d’Office 365.
+La [fonctionnalité d’audit unifié](search-the-audit-log-in-security-and-compliance.md) de Microsoft 365 fournit aux organisations une visibilité sur de nombreux types d’activités auditées sur différents services de Microsoft 365. L’audit avancé permet aux organisations d’effectuer des enquêtes de légalité et de conformité en augmentant la rétention du journal d’audit nécessaire pour mener une enquête, en fournissant l’accès à des événements importants qui permettent de déterminer l’étendue de la compromission et un accès plus rapide à l’API Activité de gestion Office 365.
 
 > [!NOTE]
-> Advanced audit est à la disposition des organisations disposant d’un abonnement Office 365 E5 ou Microsoft 365 Entreprise E5. De plus, une Conformité Microsoft 365 E5 ou E5 eDiscovery et une licence de complément d’audit peuvent être attribuées aux utilisateurs lorsqu'une licence par utilisateur est requise pour des fonctionnalités d’audit avancées, comme dans le cas de la rétention à long terme de journaux d’audit et l’accès à des évènements essentiels pour enquêtes. Pour plus d’informations sur les licences, voir [instructions relatives aux licences Microsoft 365 pour la sécurité et la conformité](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-audit).
+> L’audit avancé est disponible pour les organisations disposant d’un abonnement Office 365 E5 or Microsoft 365 Entreprise E5. En outre, les utilisateurs peuvent recevoir une licence de module complémentaire Microsoft 365 E5 Conformité ou E5 eDiscovery et Audit lorsque les fonctionnalités d’audit avancé exigent une licence par utilisateur. C’est le cas, par exemple, de la rétention à long terme des journaux d’audit et de l’accès aux événements cruciaux pour les enquêtes. Si vous souhaitez en savoir plus sur la gestion des licences, veuillez consulter la rubrique [Guide de sécurité et conformité pour les licences Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-audit).
 
-Cet article offre une vue d’ensemble des fonctionnalités d'Audit Avancées.
+Cet article offre une vue d’ensemble des fonctionnalités d'audit avancé.
 
 ## <a name="long-term-retention-of-audit-logs"></a>Conservation à long terme des journaux d’audit
 
-L’audit avancé conserve tous les enregistrements d’audit Exchange, SharePoint et Azure Active Directory pendant une durée d'un an. Ceci est réalisé par une stratégie de rétention du journal d’audit par défaut qui conserve tout enregistrement d’audit contenant la valeur **Exchange** , **SharePoint** ou **AzureActiveDirectory** pour la propriété **Charge de travail** (indiquant le service dans lequel l’activité s’est produite) pendant un an. La rétention d’enregistrements d’audit sur des périodes plus longues peut vous aider à effectuer des investigations de conformité ou de vérification en cours. Pour plus d’informations, voir la section « Stratégie de rétention du journal d’audit par défaut » dans [Gérer les stratégies de rétention du journal d’audit](audit-log-retention-policies.md#default-audit-log-retention-policy).
+L’audit avancé conserve tous les enregistrements d’audit Exchange, SharePoint, et Azure Active Directory pendant un an. Pour cela, une stratégie par défaut de rétention des journaux d’audit conserve en effet les enregistrements d’audit contenant la valeur **Exchange** , **SharePoint** , ou **AzureActiveDirectory** de la propriété **Workload** (qui indique le service où l’activité s’est produite) pendant un an. La rétention d’enregistrements d’audit sur des périodes plus longues peut vous aider à effectuer des enquêtes de légalité et de conformité en cours. Si vous souhaitez en savoir plus, veuillez consulter la section « Stratégie de rétention de journal d'audit par défaut » dans [Gérer les stratégies de rétention du journal d'audit](audit-log-retention-policies.md#default-audit-log-retention-policy).
 
-Nous publions également la fonctionnalité pour retenir les journaux d’audit pendant 10 ans. La rétention de 10 ans des journaux d’audit permet de faciliter les investigations de longue durée et de répondre aux obligations réglementaires, légales et internes.
+Nous publions également la fonctionnalité permettant de conserver les journaux d’audit pendant 10 ans. La rétention des journaux d’audit pendant 10 ans permet de faciliter les enquêtes de longue durée et de répondre aux obligations réglementaires, légales et internes.
 
 > [!NOTE]
-> La rétention des journaux d’audit pendant 10 ans nécessite une licence supplémentaire de complément.  Cette nouvelle licence sera disponible au début de 2021. Pour plus d’informations, voir la section [Questions Courantes sur l’Audit Avancé](#faqs-for-advanced-audit) de cet article.
+> La conservation des journaux d’audit pendant 10 ans nécessite une licence de module complémentaire. Cette nouvelle licence sera disponible début 2021. Si vous souhaitez en savoir plus, veuillez consulter la section [FAQ pour l’audit avancé](#faqs-for-advanced-audit) dans cet article.
 
 ### <a name="audit-log-retention-policies"></a>Stratégies de rétention du journal d'audit
 
-Tous les enregistrements d’audit générés dans d’autres services qui ne sont pas couverts par la stratégie de rétention par défaut du journal d’audit (décrits dans la section précédente) sont conservés pendant une durée de 90 jours. Toutefois, vous pouvez créer des stratégies de rétention de journal d’audit personnalisées pour retenir d'autres enregistrements d’audit pendant 10 ans. Vous pouvez créer une stratégie pour conserver les enregistrements d’audit basés sur un ou plusieurs critères énumérés ci-après :
+Nous conservons tous les enregistrements d’audit générés dans d’autres services et non couverts par la stratégie de rétention par défaut du journal d’audit (décrits dans la section précédente) pendant 90 jours. En revanche, vous pouvez créer des stratégies de rétention de journal d’audit personnalisées pour conserver les autres enregistrements d’audit pendant une période prolongée de 10 ans. Vous pouvez créer une stratégie pour conserver les enregistrements d’audit sur la base d’un ou plusieurs des critères suivants :
 
 - Service Microsoft 365 dans lequel les activités auditées ont lieu.
 
@@ -53,11 +53,11 @@ Tous les enregistrements d’audit générés dans d’autres services qui ne so
 
 - L’utilisateur effectuant une activité auditée.
 
-Vous pouvez également spécifier la durée de conservation des enregistrements d’audit qui correspondent à une stratégie et à un niveau de priorité pour que les stratégies spécifiques soient prioritaires sur les autres stratégies. Veuillez noter également que toute stratégie de rétention de journal d’audit personnalisée sera prioritaire sur la stratégie de rétention d’audit par défaut si vous devez retenir des enregistrements d’audit Exchange, SharePoint ou Azure Active Directory pendant moins d’un an (ou pendant 10 ans) pour certains ou tous les utilisateurs de votre organisation. Pour plus d’informations, voir [gérer les stratégies de rétention du journal d’audit](audit-log-retention-policies.md).
+Vous pouvez également spécifier la durée de conservation des enregistrements d’audit qui correspondent à la stratégie et un niveau de priorité pour que des stratégies spécifiques soient prioritaires par rapport à d’autres. Notez également que toute stratégie de rétention de journal d’audit personnalisée aura priorité sur la stratégie de rétention d’audit par défaut si vous avez besoin de conserver les enregistrements d’audit Exchange, SharePoint ou Azure Active Directory pendant moins d’une année (ou pendant 10 ans) pour tout ou partie des utilisateurs de votre organisation. Si vous souhaitez en savoir plus, veuillez consulter la rubrique [Gérer les stratégies de rétention du journal d'audit](audit-log-retention-policies.md).
 
 ## <a name="access-to-crucial-events-for-investigations"></a>Accès aux événements essentiels lors d'enquêtes
 
-L’audit avancé permet aux organisations de mener des investigations de conformité et d’audit en fournissant l’accès aux événements importants, tels que l’accès à des éléments de courrier, l’envoi de réponses à des éléments de courrier et leur transfert, ainsi que le moment et la recherche d’un utilisateur dans Exchange Online et SharePoint Online. Ces événements importants peuvent vous aider à identifier les violations possibles et déterminer l’étendue de la compromission.  L’ Audit Avancé fournit les événements importants suivants:
+L’audit avancé permet aux organisations de mener des enquêtes de légalité et de conformité en donnant accès aux événements cruciaux, tels que la consultation d’éléments de courrier, l’envoi de réponses à des éléments de courrier et leur transfert, ainsi que le moment et l’objet d’une recherche effectuée par un utilisateur dans Exchange Online et SharePoint Online. Ces événements cruciaux peuvent vous aider à identifier les violations possibles et déterminer l’étendue de la compromission. L’audit avancé fournit les événements cruciaux suivants :
 
 - [MailItemsAccessed](#mailitemsaccessed)
 
@@ -69,17 +69,17 @@ L’audit avancé permet aux organisations de mener des investigations de confor
 
 ### <a name="mailitemsaccessed"></a>MailItemsAccessed
 
-L’événement MailItemsAccessed est une action d’audit de boîte aux lettres qui est déclenchée lorsque les données de courrier sont consultées par les protocoles de messagerie et les clients de messagerie. L’action MailItemsAccessed peut aider les enquêteurs à identifier les violations de données et à mesurer l’étendue des messages susceptibles d’être compromis. Si une personne malveillante a accès aux e-mails, l’action MailItemsAccessed se déclenche même s’il n’y a pas de signal explicite indiquant qu'un message a été réellement lu (en d’autres termes, le type d’accès comme BIND ou synchrone, par exemple, est sauvegardé dans l’enregistrement d’audit).
+L’événement MailItemsAccessed est une action d’audit de boîte aux lettres en cas de consultation des données de courrier par les protocoles de messagerie et les clients de messagerie. L’action MailItemsAccessed permet aux enquêteurs d’identifier les violations de données et de déterminer l’étendue des messages éventuellement compromis. Si un attaquant a accédé à des e-mails, l’action MailItemsAccessed se déclenche, même si aucun signal explicite n’indique que l’attaquant a effectivement lu les messages (en d’autres termes, l’enregistrement d’audit comprend le type d’accès tel qu’un lien ou une synchronisation).
 
 L’action de la boite aux lettres MailItemsAccessed remplace MessageBind dans la journalisation d’audit des boîtes aux lettres dans Exchange Online et offre ces améliorations:
 
-- MessageBind était seulement configurable pour une ouverture de session utilisateur de type AuditAdmin et ne s’appliquait pas aux actions de propriétaires ou de délégués. MailItemsAccessed s’applique à tout type d’ouverture de session.
+- MessageBind était seulement configurable pour une ouverture de session utilisateur de type AuditAdmin et ne s’appliquait pas aux actions de propriétaires ou de délégués. MailItemsAccessed s’applique à tous les types d’ouverture de session.
 
-- MessageBind ne prenait en charge que l'accès à un client de messagerie. Il ne s’appliquait pas aux activités synchrones. Les événements MailItemsAccessed sont déclenchés par les types d’accès BIND et synchrone.
+- MessageBind n’accède qu’à un client de messagerie. Il ne s’applique pas aux activités de synchronisation. Les types d’accès bind (lier) et sync (synchroniser) déclenchent tous deux les événements MailItemsAccessed.
 
 - Les actions MessageBind déclencheraient la création de plusieurs enregistrements d’audit lors de l’accès au même e-mail, ce qui entraînerait un audit « retentissant ». En revanche, les événements MailItemsAccessed sont regroupés dans un nombre réduit d’enregistrements d’audit.
 
-Si vous souhaitez en savoir plus sur les enregistrements d’audit pour les activités MailItemsAccessed, consultez [Utiliser l’audit avancé pour enquêter sur les comptes compromis](mailitemsaccessed-forensics-investigations.md).
+Si vous souhaitez en savoir plus sur les enregistrements d’audit pour les activités MailItemsAccessed, veuillez consulter la rubrique [Utiliser l’audit avancé pour enquêter sur les comptes compromis](mailitemsaccessed-forensics-investigations.md).
 
 Pour rechercher des enregistrements d’audit MailItemsAccessed, vous pouvez rechercher l’activité **Eléments de la boîte aux lettres consultés** dans la liste déroulante des **Activités de la boîte aux lettres Exchange** dans [l’outil de recherche du journal d’audit](search-the-audit-log-in-security-and-compliance.md) dans le centre de conformité de Microsoft 365.
 
@@ -95,11 +95,11 @@ L’événement Envoi est également une action d’audit de boîte aux lettres 
 
 - Répond à un message électronique
 
-- Transfert un message électronique
+- Transfère un e-mail
 
-Les investigateurs peuvent utiliser l’événement Envoi pour identifier les messages envoyés à partir d’un compte compromis. L’enregistrement d’audit d’un événement Envoi contient des informations sur le message, par exemple, la date d’envoi du message, l’ID InternetMessage, la ligne d’objet et si le message contient des pièces jointes. Ces informations d’audit peuvent aider les investigateurs à identifier les informations relatives aux messages électroniques envoyés à partir d’un compte compromis ou envoyés par un intrus. De plus, les investigateurs peuvent utiliser un outil eDiscovery Microsoft 365 pour rechercher le message (à l’aide de la ligne d’objet ou de l’ID de message) pour identifier les destinataires du message et le contenu réel du message envoyé.
+Les investigateurs peuvent utiliser l’événement Send (Envoyer) pour identifier les e-mails envoyés depuis un compte compromis. L’enregistrement d’audit d’un événement d’envoi contient des informations sur le message, par exemple, la date d’envoi du message, l’ID InternetMessage, la ligne d’objet et si le message contient des pièces jointes. Ces informations d’audit peuvent aider les enquêteurs à identifier les informations relatives aux e-mails envoyés depuis un compte compromis ou envoyés par un attaquant. De plus, les enquêteurs peuvent utiliser un outil eDiscovery Microsoft 365 pour rechercher le message (à l’aide de la ligne d’objet ou de l’ID de message), puis identifier les destinataires et le contenu réel du message envoyé.
 
-Pour rechercher des enregistrements d’audit d’Envoi, vous pouvez rechercher l’activité **Message envoyé** dans la liste déroulante des **Activités de la boîte aux lettres Exchange** dans [l’outil de recherche du journal d’audit](search-the-audit-log-in-security-and-compliance.md) dans le centre de conformité de Microsoft 365.
+Pour rechercher des enregistrements d’audit d’Envoi, vous pouvez rechercher l’activité **Message envoyé** dans la liste déroulante **Activités de la boîte aux lettres Exchange** de [l’outil de recherche du journal d’audit](search-the-audit-log-in-security-and-compliance.md) dans le Centre de conformité de Microsoft 365.
 
 ![Recherche d’actions de Message envoyé dans l’outil de recherche du journal d’audit](../media/AdvAudit_SentMessage.png)
 
@@ -107,9 +107,9 @@ Vous pouvez également exécuter les commandes [Search-UnifiedAuditLog -Operatio
 
 ### <a name="searchqueryinitiatedexchange"></a>SearchQueryInitiatedExchange
 
-L’événement SearchQueryInitiatedExchange est déclenché lorsqu’une personne utilise la barre de recherche dans Outlook ou Outlook sur le Web pour rechercher des éléments dans une boîte aux lettres. Les investigateurs peuvent utiliser l’événement SearchQueryInitiatedExchange pour déterminer si un intrus qui a compromis un compte a recherché ou essayé d’accéder à des informations sensibles dans la boîte aux lettres. L’enregistrement d’audit d’un événement SearchQueryInitiatedExchange contient des informations telles que le texte de la requête de recherche.  En examinant les requêtes de recherche qu’un intrus peut avoir effectué, un investigateur peut mieux comprendre l’objectif des données de messagerie qui ont été recherchées.
+L’événement SearchQueryInitiatedExchange se déclenche lorsqu’une personne utilise la barre de recherche d’Outlook sur le web (OWA) pour rechercher des éléments dans une boîte aux lettres. Les enquêteurs peuvent utiliser l’événement SearchQueryInitiatedExchange pour déterminer si un attaquant qui a sans doute compromis un compte a recherché ou essayé de consulter des informations sensibles dans la boîte aux lettres. L’enregistrement d’audit d’un événement SearchQueryInitiatedExchange contient des informations telles que le texte réel de la requête de recherche. En examinant les requêtes de recherche d’un attaquant éventuel, les enquêteurs peuvent mieux comprendre l’objectif des données d’e-mail recherchées.
 
-Pour rechercher les enregistrements d’audit de SearchQueryInitiatedExchange, vous pouvez rechercher l’activité **Recherche d’émail effectuée** dans la **liste déroulante** des activités de recherche dans [l’outil de recherche du journal d’audit](search-the-audit-log-in-security-and-compliance.md) dans le centre de conformité.
+Pour rechercher les enregistrements d’audit de SearchQueryInitiatedExchange, vous pouvez rechercher l’activité **Recherche d’e-mail effectuée** dans la liste déroulante **Activités de recherche** de [l’outil de recherche du journal d’audit](search-the-audit-log-in-security-and-compliance.md) dans le centre de conformité.
 
 ![La recherche d’actions de recherche d’email effectuée  dans l’outil de recherche du journal d’audit](../media/AdvAudit_SearchExchange.png)
 
@@ -120,9 +120,9 @@ Vous pouvez également exécuter le [Search-UnifiedAuditLog-Operations SearchQue
 
 ### <a name="searchqueryinitiatedsharepoint"></a>SearchQueryInitiatedSharePoint
 
-À l’instar de la recherche d’éléments de boîte aux lettres, l’événement SearchQueryInitiatedSharePoint est déclenché lorsqu’une personne recherche des éléments sur le site SharePoint de votre organisation. Les investigateurs peuvent utiliser l’événement SearchQueryInitiatedSharePoint pour déterminer si un intrus a essayé de rechercher des informations sensibles (et éventuellement y a accédé) dans SharePoint. L’enregistrement d’audit d’un événement SearchQueryInitiatedSharePoint contient également le texte de la requête de recherche. En examinant les requêtes de recherche qu’un intrus peut avoir effectué, un investigateur peut mieux comprendre l’objectif et l’étendue des données de fichiers qui ont été recherchées.
+À l’instar de la recherche d’éléments de boîte aux lettres, l’événement SearchQueryInitiatedSharePoint se déclenche lorsqu’une personne recherche des événements sur le site d’accueil SharePoint de votre organisation. Les enquêteurs peuvent utiliser l’événement SearchQueryInitiatedSharePoint pour déterminer si un attaquant a recherché (et éventuellement trouvé) des informations sensibles dans SharePoint. L’enregistrement d’audit d’un événement SearchQueryInitiatedSharePoint contient également le texte réel de la requête de recherche. En examinant les requêtes de recherche qu’un attaquant a sans doute effectuées, un investigateur peut mieux comprendre l’objectif et l’étendue des données de fichiers qui ont été recherchées.
 
-Pour rechercher les enregistrements d’audit SearchQueryInitiatedSharePoint, vous pouvez rechercher l’activité **Recherche SharePoint effectuée** dans la **liste déroulante** des activités de recherche dans [l’outil de recherche du journal d’audit](search-the-audit-log-in-security-and-compliance.md) dans le centre de conformité.
+Pour rechercher les enregistrements d’audit SearchQueryInitiatedSharePoint, vous pouvez rechercher l’activité **Recherche SharePoint effectuée** dans la liste déroulante **Activités de recherche** de [l’outil de recherche du journal d’audit](search-the-audit-log-in-security-and-compliance.md) dans le centre de conformité.
 
 ![La recherche d’actions de recherche SharePoint effectuée  dans l’outil de recherche du journal d’audit](../media/AdvAudit_SearchSharePoint.png)
 
@@ -133,25 +133,25 @@ Vous pouvez également exécuter le [Search-UnifiedAuditLog-Operations SearchQue
 
 ## <a name="high-bandwidth-access-to-the-office-365-management-activity-api"></a>Accès haut débit à l’API Activité de gestion Office 365
 
-Les organisations ayant accès à des journaux d’audit via l’API Activité de gestion Office 365 étaient restreintes par des seuils de limitation au niveau de l’éditeur. Cela signifie que pour un éditeur faisant une extraction de données pour le compte de plusieurs clients, la limite était partagée par tous les clients.
+Les organisations qui accèdent à des journaux d’audit via l’API Activité de gestion Office 365 étaient restreintes par des seuils de limitation au niveau de l’éditeur. Cela signifie que pour un éditeur extrayant des données pour le compte de plusieurs clients, tous les clients partageaient la limite.
 
-Grâce à la publication de l'audit avancé, nous allons passer d’une limite au niveau éditeur à une limite au niveau du client. Chaque organisation obtient ainsi son propre quota de bande passante entièrement allouée pour accéder à ses données d’audit. La bande passante n'est pas une limite statique prédéfinie. Elle est modelée sur une combinaison de facteurs, tels que le nombre de sièges au sein de l’organisation, et les organisations E5 obtiennent une bande passante plus importante que les organisations non E5.
+Grâce à la publication de l'audit avancé, nous allons passer d’une limite au niveau éditeur à une limite au niveau du client. Chaque organisation obtient ainsi son propre quota de bande passante entièrement allouée pour accéder à ses données d’audit. La bande passante n'est pas une limite statique prédéfinie. Elle est modelée sur une combinaison de facteurs, tels que le nombre de sièges au sein de l’organisation, et les organisations E5 obtiennent une bande passante plus importante que les organisations non E5.
 
-Les organisations reçoivent une ligne de base de 2 000 demandes par minute. Cette limite augmentera de façon dynamique en fonction du nombre de sièges d’une organisation et du nombre de licences dans son abonnement. Les organisations E5 disposeront d’environ deux fois plus de bande passante que les organisations non-E5. La bande passante aura également un plafond maximal pour protéger l’état d’intégrité du service.
+Les organisations reçoivent une ligne de base de 2 000 demandes par minute. Cette limite augmentera de façon dynamique en fonction du nombre de sièges d’une organisation et du nombre de licences dans son abonnement. Les organisations E5 disposeront d’environ deux fois plus de bande passante que les organisations non E5. La bande passante aura également un plafond maximal pour protéger l’état d’intégrité du service.
 
-Pour plus d’informations, consultez la rubrique « Limitation de l'API » dans la [Référence de l’API Activité de gestion Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference#api-throttling).
+Si vous souhaitez en savoir plus, veuillez consulter la rubrique « Limitation de l'API » dans la [Référence de l’API Activité de gestion Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference#api-throttling).
 
 ## <a name="faqs-for-advanced-audit"></a>FAQ pour l’audit avancé
 
 **Est-ce que chaque utilisateur a besoin d'une licence E5 pour bénéficier de l'Audit avancé ?**
 
-Pour bénéficier des fonctionnalités d’audit avancées de niveau utilisateur, ce dernier doit se voir attribuer une licence E5. Certaines fonctionnalités vous permettront de vérifier la présence de la licence appropriée pour exposer la fonctionnalité à l’utilisateur. Par exemple, si vous essayez de conserver les enregistrements d’audit pour un utilisateur ne disposant pas d’une licence E5 pendant plus de 90 jours, le système renvoie un message d’erreur.
+Pour bénéficier des fonctionnalités d’audit avancées de niveau utilisateur, ce dernier doit disposer d’une licence E5. Certaines fonctionnalités vérifient la présence de la licence appropriée pour exposer la fonctionnalité à l’utilisateur. Par exemple, si vous essayez de conserver les enregistrements d’audit pour un utilisateur ne disposant pas d’une licence E5 pendant plus de 90 jours, le système renvoie un message d’erreur.
 
 **Mon organisation dispose d'un abonnement E5. Dois-je faire quelque chose pour accéder aux enregistrements d'audit des événements importants?**
 
-Pour les clients éligibles, il n'y a aucune action requise pour accéder aux événements d’audit importants. Cependant, comme expliqué précédemment dans cette rubrique, la latence provoquée par le problème de renvoi de licence peut empêcher les enregistrements d'audit pour les évènements importants renvoyés dans une recherche dans le journal d'audit. Dans ce cas, suivez les instructions du Forum aux questions précédent concernant le problème de renvoi de licences temporaires.
+Pour les clients éligibles et les utilisateurs disposants de la licence appropriée, aucune action n’est requise pour accéder aux événements d’audit cruciaux.
 
-**Quand la nouvelle licence de complément de rétention de journal d’audit de 10 ans sera-t-elle disponible?**
+**Quand la nouvelle licence de module complémentaire de rétention de journal d’audit de 10 ans sera-t-elle disponible ?**
 
 Le nouveau complément de rétention de journal d’audit de 10 ans sera disponible à l’achat par les clients disposant d’abonnements E5 au début de 2021.
 
