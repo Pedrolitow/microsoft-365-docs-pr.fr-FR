@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: c342ea9f662d883883755d2f67e5c25ffabddf83
-ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
+ms.openlocfilehash: b77313a18a5744549e492de991e282bc34dbb6da
+ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "48948408"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49002416"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Résoudre les problèmes détectés par l’outil de préparation et d’évaluation
 
@@ -214,7 +214,7 @@ Passez en revue les applications que les utilisateurs de bureau géré Microsoft
 
 **OpenSSL**
 
-Vous devez préparer un inventaire des applications que vos utilisateurs de bureau géré Microsoft doivent disposer. Assurez-vous que ces applications peuvent être déployées par Intune. Pour plus d’informations, consultez la rubrique [applications in Microsoft Managed Desktop](apps.md).
+Vous devez préparer un inventaire des applications que vos utilisateurs de bureau géré Microsoft doivent disposer. Étant donné que ces applications doivent être déployées par Intune, évaluez la réutilisation des applications Intune existantes. Envisagez d’utiliser le portail d’entreprise (voir [installer le portail d’entreprise Intune sur les appareils](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/company-portal) et la page d’état d’enregistrement (ESP) pour distribuer des applications à vos utilisateurs. Pour plus d’informations, reportez-vous à la rubrique [applications dans le bureau géré Microsoft](apps.md) et [expérience de première exécution avec AutoPilot et la page État de l’enregistrement](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/esp-first-run).
 
 Vous pouvez demander à votre responsable de compte Microsoft une requête dans le gestionnaire de configuration de point de terminaison Microsoft pour identifier les applications qui sont prêtes à migrer vers Intune ou qui ont besoin d’un ajustement.
 
@@ -289,9 +289,8 @@ Les utilisateurs disposant de certains rôles de sécurité doivent disposer de 
 
 **OpenSSL**
 
-Si l’un de ces rôles est affecté dans votre organisation Azure AD, assurez-vous que ces rôles sont également attribués à Microsoft Defender pour le point de terminaison. Dans le cas contraire, les administrateurs disposant de ces rôles ne pourront pas accéder au portail d’administration.
+Si des utilisateurs sont affectés à l’un de ces rôles dans votre organisation Azure AD, assurez-vous qu’ils disposent également de ces rôles dans Microsoft Defender pour le point de terminaison. Dans le cas contraire, les administrateurs disposant de ces rôles ne pourront pas accéder au portail d’administration.
 
-- Lecteur de sécurité
 - Opérateur de sécurité
 - Lecteur général
 
@@ -308,7 +307,7 @@ Les paramètres de sécurité par défaut sont activés. Désactivez les paramè
 
 ### <a name="self-service-password-reset"></a>Réinitialisation du mot de passe en libre-service
 
-La réinitialisation du mot de passe en libre-service (SSPR) doit être activée pour tous les utilisateurs, à l’exception des comptes de service de bureau géré Microsoft. Pour plus d’informations, consultez [la rubrique Tutorial : autoriser les utilisateurs à déverrouiller leur compte ou réinitialiser les mots de passe à l’aide de la réinitialisation du mot de passe en libre-service Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr).
+La réinitialisation du mot de passe en libre-service (SSPR) doit être activée pour tous les utilisateurs de bureau géré Microsoft, à l’exception des comptes de service de bureau géré Microsoft. Pour plus d’informations, consultez [la rubrique Tutorial : autoriser les utilisateurs à déverrouiller leur compte ou réinitialiser les mots de passe à l’aide de la réinitialisation du mot de passe en libre-service Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr).
 
 **OpenSSL**
 
@@ -325,11 +324,11 @@ Les utilisateurs de bureau géré Microsoft ne disposeront pas des privilèges d
 
 ## <a name="microsoft-365-apps-for-enterprise"></a>Applications Microsoft 365 for entreprise
 
-### <a name="onedrive-for-business"></a>OneDrive Entreprise
+### <a name="onedrive"></a>OneDrive
 
 Le paramètre **autoriser la synchronisation uniquement sur des PC joints à des domaines spécifiques** entre en conflit avec le bureau géré Microsoft.
 
 **OpenSSL**
 
-Vous utilisez le paramètre **autoriser la synchronisation uniquement sur des PC joints à des domaines spécifiques** . Ce paramètre ne fonctionne pas avec Microsoft Managed Desktop. Désactivez ce paramètre, puis configurez OneDrive entreprise pour qu’il utilise une stratégie d’accès conditionnel. Voir [planifier un déploiement d’accès conditionnel](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access) pour obtenir de l’aide.
+Vous utilisez le paramètre **autoriser la synchronisation uniquement sur des PC joints à des domaines spécifiques** . Ce paramètre ne fonctionne pas avec Microsoft Managed Desktop. Désactivez ce paramètre, puis configurez OneDrive pour qu’il utilise une stratégie d’accès conditionnel. Voir [planifier un déploiement d’accès conditionnel](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access) pour obtenir de l’aide.
 

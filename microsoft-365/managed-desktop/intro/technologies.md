@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: b98cec62a018556bfbd31df0aa824acbd00b37b6
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: a6e3e7cc0404a56e4d69da69b95aa95fa6795dd5
+ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846239"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49002220"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Technologies associées de Bureau géré Microsoft
 
@@ -31,9 +31,9 @@ Cette rubrique résume les composants inclus dans les licences d’entreprise re
  |
  --- | ---
 Applications Microsoft 365 pour les entreprises (64 bits) | Ces applications Office seront livrées avec le périphérique : Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype entreprise, OneNote.<br><br>Les versions 64 bits complètes de Microsoft Project et Microsoft Visio ne sont pas incluses. Toutefois, étant donné que l’installation de ces applications dépend de l’installation des applications Microsoft 365 pour Enterprise, le bureau géré Microsoft a créé des déploiements Microsoft Intune et des groupes de sécurité par défaut, que vous pouvez ensuite utiliser pour déployer ces applications auprès des utilisateurs titulaires d’une licence. Pour plus d’informations, consultez la rubrique [installer Microsoft Project ou Microsoft Visio sur des appareils de bureau gérés Microsoft](../get-started/project-visio.md).
-OneDrive Entreprise |L’authentification unique Azure Active Directory est activée pour les utilisateurs lors de la première connexion à OneDrive entreprise.<br><br>La redirection de dossiers connue pour les dossiers « bureau », « document » et « images » est incluse ; activé et configuré par le bureau géré Microsoft. 
+OneDrive |L’authentification unique Azure Active Directory est activée pour les utilisateurs lors de la première connexion à OneDrive.<br><br>La redirection de dossiers connue pour les dossiers « bureau », « document » et « images » est incluse ; activé et configuré par le bureau géré Microsoft.
 Store Apps |    Microsoft Sway et Power BI ne sont pas fournis avec l’appareil. Ces applications peuvent être téléchargées à partir du Microsoft Store.
-Applications Win32 |    Teams n’est pas fourni avec le périphérique, mais il est empaqueté et fourni par Microsoft pour les appareils de bureau gérés par Microsoft. Le client Azure information protection n’est pas livré avec l’appareil, mais vous pouvez en faire un package pour le déploiement. 
+Applications Win32 |    Teams n’est pas fourni avec le périphérique, mais il est empaqueté et fourni par Microsoft pour les appareils de bureau gérés par Microsoft. Le client Azure information protection n’est pas livré avec l’appareil, mais vous pouvez en faire un package pour le déploiement.
 Applications Web |  Yammer, Office dans un navigateur, Delve, Flow, StaffHub, PowerApps et Planner ne sont pas fournis avec l’appareil. Les utilisateurs peuvent accéder à la version Web de ces applications à l’aide d’un navigateur.
 
 
@@ -42,7 +42,7 @@ Applications Web |  Yammer, Office dans un navigateur, Delve, Flow, StaffHub, P
  |
  --- | ---
 Virtualisation d’application (App-V) |    Les clients peuvent déployer des packages App-V à l’aide du client de gestion des applications Win32 Intune.
-Microsoft Defender pour point de terminaison |    Microsoft Managed Desktop utilise cette fonctionnalité pour surveiller la sécurité des appareils. 
+Microsoft Defender pour point de terminaison |    Microsoft Managed Desktop utilise cette fonctionnalité pour surveiller la sécurité des appareils. 
 
 ## <a name="enterprise-mobility--security-e5"></a>Enterprise Mobility + Security E5
 
