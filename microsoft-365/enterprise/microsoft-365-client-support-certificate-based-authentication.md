@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: Dans cet article, vous trouverez des détails sur la prise en charge de l’application cliente Microsoft 365 pour l’authentification basée sur les certificats..
+description: Dans cet article, vous trouverez des détails sur la prise en charge de l’application cliente Microsoft 365 pour l’authentification basée sur les certificats.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2f2f5acb88e49cf7a81bd5e89c0c9c85feea6672
-ms.sourcegitcommit: 86e878849a8bdd456cee6a3f49939d26223fb626
+ms.openlocfilehash: 57ced47c268f4d0515acb26aa8f705fa6e9ae0f9
+ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "48997802"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "48999383"
 ---
 # <a name="microsoft-365-client-app-support-certificate-based-authentication"></a>Prise en charge des applications clientes Microsoft 365 : authentification basée sur des certificats
 
@@ -29,11 +29,10 @@ ms.locfileid: "48997802"
 
 L’authentification moderne est un terme générique pour une combinaison de méthodes d’authentification et d’autorisation. Cela inclut ce qui suit :
 
-- Méthodes d’authentification : authentification multifacteur ; Authentification basée sur les certificats clients.
+- **Méthodes d’authentification** : authentification multifacteur ; Authentification basée sur les certificats clients.
+- **Méthodes d’autorisation** : mise en œuvre par Microsoft de l’autorisation Open (OAuth).
 
-- Méthodes d’autorisation : mise en œuvre par Microsoft de l’autorisation Open (OAuth).
-
-L’authentification moderne est activée par le biais de l’utilisation d’une bibliothèque d’authentification, telle que ADAL ou MSAL. L’authentification moderne est celle que les clients utilisent pour authentifier et autoriser l’accès aux ressources Microsoft 365. L’authentification moderne s’appuie sur OAuth et fournit un mécanisme sécurisé permettant aux clients d’accéder aux services Microsoft 365, sans avoir à accéder aux informations d’identification de l’utilisateur. Lors de la connexion, l’utilisateur s’authentifie directement auprès d’Azure Active Directory et reçoit une paire de jetons accès/actualiser en retour. Le jeton d’accès octroie au client l’accès aux ressources appropriées dans le client Microsoft 365. Un jeton d’actualisation est utilisé pour obtenir une nouvelle paire de jetons d’accès ou d’actualisation lorsque le jeton d’accès actuel arrive à expiration.
+L’authentification moderne est activée par le biais de l’utilisation d’une bibliothèque d’authentification, telle que la bibliothèque d’authentification Active Directory (ADAL) ou la bibliothèque d’authentification Microsoft (MSAL). L’authentification moderne est celle que les clients utilisent pour authentifier et autoriser l’accès aux ressources Microsoft 365. L’authentification moderne s’appuie sur OAuth et fournit un mécanisme sécurisé permettant aux clients d’accéder aux services Microsoft 365, sans avoir à accéder aux informations d’identification de l’utilisateur. Lors de la connexion, l’utilisateur s’authentifie directement auprès d’Azure Active Directory et reçoit une paire de jetons accès/actualiser en retour. Le jeton d’accès octroie au client l’accès aux ressources appropriées dans le client Microsoft 365. Un jeton d’actualisation est utilisé pour obtenir une nouvelle paire de jetons d’accès ou d’actualisation lorsque le jeton d’accès actuel arrive à expiration.
 
 L’authentification moderne prend en charge différents mécanismes d’authentification, tels que l’authentification basée sur les certificats. Les clients sur des appareils Windows, Android ou iOS peuvent utiliser l’authentification basée sur les certificats (CBA) pour s’authentifier auprès d’Azure Active Directory à l’aide d’un certificat client sur l’appareil. Au lieu d’un nom d’utilisateur/mot de passe standard, le certificat est utilisé pour obtenir une paire de jetons accès/actualisation à partir d’Azure Active Directory.
 
@@ -53,7 +52,7 @@ Les versions les plus récentes des clients et des plateformes suivants prennent
 | Portail d’entreprise | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | N/A |
 | Auxquelles | Vision | Vision | N/A | ![Pris en charge](../media/check-mark.png) | N/A |
 | Delve | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | N/A | N/A | N/A |
-| Edge | ![Pris en charge](../media/check-mark.png)* | ![Pris en charge](../media/check-mark.png)* | N/A | N/A | ![Pris en charge](../media/check-mark.png) |
+| Edge<sup>1</sup> | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | N/A | N/A | ![Pris en charge](../media/check-mark.png) |
 | Excel | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) |
 | Administrateur Exchange Online | N/A | N/A | N/A | N/A | ![Pris en charge](../media/check-mark.png) |
 | Formulaires | N/A | N/A | N/A | N/A | N/A |
@@ -87,12 +86,8 @@ Les versions les plus récentes des clients et des plateformes suivants prennent
 | Analyse de l’espace de travail | N/A | N/A | N/A | N/A | N/A |
 | Yammer | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | Vision | N/A | Vision |
 
-> [!IMPORTANT]
-> Edge pour iOS et Android prend en charge l’authentification basée sur des certificats lors de l’ajout de flux. Edge pour iOS et Android ne prend pas en charge l’authentification basée sur les certificats lors de l’exécution de l’authentification sur des sites Web, qui sont généralement des sites intranet. Dans ce scénario, un utilisateur accède à un site Web (généralement sur l’intranet) où le site Web demande à l’utilisateur de s’authentifier via un certificat. Cela n’implique pas du tout l’authentification moderne et n’utilise pas de bibliothèque d’authentification Microsoft. Ceci est dû à une limitation de iOS : iOS empêche les applications tierces d’accéder à la chaîne de trousseau système où les certificats sont stockés (seules les applications Apple et le [contrôleur WebView Safari](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) peuvent accéder à la chaîne de trousseau système).
-
- 
-
-Comme le serveur Edge s’appuie sur WebKit, Edge ne peut pas accéder au trousseau du système et présenter l’utilisateur avec le choix de certificat. Ceci, malheureusement, est par conception en raison de l’architecture d’Apple.
+>[!NOTE]
+><sup>1</sup> Edge pour iOS et Android prend en charge l’authentification basée sur des certificats lors de l’ajout de flux. Edge pour iOS et Android ne prend pas en charge l’authentification basée sur les certificats lors de l’exécution de l’authentification sur des sites Web, qui sont généralement des sites intranet. <br><br>  Dans ce scénario, un utilisateur accède à un site Web (généralement sur l’intranet) où le site Web demande à l’utilisateur de s’authentifier via un certificat. Cela n’implique pas du tout l’authentification moderne et n’utilise pas de bibliothèque d’authentification Microsoft. Ceci est dû à une limitation de iOS : iOS empêche les applications tierces d’accéder à la chaîne de trousseau système où les certificats sont stockés (seules les applications Apple et le [contrôleur WebView Safari](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) peuvent accéder à la chaîne de trousseau système). <br><br> Comme le serveur Edge s’appuie sur WebKit, Edge ne peut pas accéder au trousseau du système et présenter l’utilisateur avec le choix de certificat. Ceci, malheureusement, est par conception en raison de l’architecture d’Apple.
 
 ## <a name="supported-powershell-modules"></a>Modules PowerShell pris en charge
 

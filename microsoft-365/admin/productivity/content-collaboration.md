@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Détails de la collaboration de contenu-score de productivité des personnes.
-ms.openlocfilehash: 87f89af527e2a1b843a9b70fbef590b69d920f7d
-ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
+ms.openlocfilehash: 5cdbe0cbb683715a19b182d0781fe238d026a400
+ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48804596"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "48999427"
 ---
 # <a name="content-collaboration--people-experiences"></a>Collaboration de contenu : expériences de personnes
 
@@ -32,7 +32,7 @@ Le score de productivité vous permet de transformer le travail réalisé avec d
 
 ## <a name="why-your-organization39s-content-collaboration-score-matters"></a>Pourquoi les résultats de la collaboration de contenu de votre organisation&#39;s.
 
-Un pilier fondamental de la productivité de l’organisation est la manière dont les utilisateurs collaborent dans des fichiers. Avec votre contenu sur Microsoft 365, les utilisateurs accèdent, créent, modifient et collaborent sur du contenu avec d’autres personnes depuis n’importe quel emplacement. Des recherches montrent que lorsque des personnes collaborent avec des fichiers en ligne, chaque personne enregistre une moyenne de 100 minutes par semaine. Consultez la rubrique [Evidence](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
+Un pilier fondamental de la productivité de l’organisation est la manière dont les utilisateurs collaborent dans des fichiers. Avec votre contenu sur Microsoft 365, les utilisateurs accèdent, créent, modifient et collaborent sur du contenu avec d’autres personnes depuis n’importe quel emplacement. Des recherches montrent que lorsque des personnes collaborent avec des fichiers en ligne, chaque personne enregistre une moyenne de 100 minutes par semaine. [Consultez la rubrique Evidence](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
 
 ## <a name="how-we-calculate-the-content-collaboration-score"></a>Comment nous calculons le score de collaboration de contenu
 
@@ -81,7 +81,7 @@ Les types pris en compte pour ces informations incluent les fichiers Word, Excel
 
 Le graphique de visualisations de tendances affiche la ligne de tendance des mesures principales de l’analyse des lecteurs, créateurs et collaborateurs au cours des 180 derniers jours. Chaque point de données du graphique est un agrégat des activités pendant les 28 derniers jours. Chaque point de données du créateur fournit le décompte de toutes les personnes qui ont été marquées comme créateurs au cours des 28 derniers jours pour chaque date de l’axe x.
 
-:::image type="content" source="../../media/trendvisualization.jpg" alt-text="Perspectives principales du score de collaboration de communication.":::
+:::image type="content" source="../../media/trendvisualization.jpg" alt-text="Graphique présentant des tendances pour la collaboration principale.":::
 
 ### <a name="scoring-framework"></a>Infrastructure de score
 
@@ -93,7 +93,7 @@ Nous vous proposons également des informations qui vous aideront à mieux compr
 
 ### <a name="creating-files-to-onedrive-or-sharepoint"></a>Création de fichiers dans OneDrive ou SharePoint
 
-:::image type="content" source="../../media/sharepointonedrivefiles.jpg" alt-text="Perspectives principales du score de collaboration de communication.":::
+:::image type="content" source="../../media/sharepointonedrivefiles.jpg" alt-text="Graphique illustrant le nombre de personnes qui créent des fichiers dans OneDrive ou SharePoint":::
 
 1. **En-tête :** Met en surbrillance le pourcentage de personnes actives sur les applications Office 365 Microsoft qui créent des fichiers sur OneDrive ou SharePoint.
 2. **Body :** Fournit des informations sur la valeur de la création de contenu dans OneDrive et SharePoint.
@@ -109,7 +109,7 @@ Nous vous proposons également des informations qui vous aideront à mieux compr
 
 ### <a name="use-of-attachments-in-email"></a>Utilisation de pièces jointes dans les messages électroniques
 
-:::image type="content" source="../../media/emailattachments.png" alt-text="Perspectives principales du score de collaboration de communication.":::
+:::image type="content" source="../../media/emailattachments.png" alt-text="Utilisation de pièces jointes de courrier électronique.":::
 
 1. **En-tête :** Met en surbrillance le pourcentage de personnes qui utilisent des pièces jointes dans des messages électroniques qui n’ont pas été enregistrés dans OneDrive ou SharePoint.
 2. **Body :** Fournit des informations sur la valeur de partage de liens vers des fichiers en ligne du point de vue de la sécurité et de la collaboration.
@@ -127,7 +127,7 @@ Nous vous proposons également des informations qui vous aideront à mieux compr
 
 ### <a name="sharing-of-online-files"></a>Partage de fichiers en ligne
 
-:::image type="content" source="../../media/sharingonlinefiles.png" alt-text="Perspectives principales du score de collaboration de communication.":::
+:::image type="content" source="../../media/sharingonlinefiles.png" alt-text="Graphique illustrant le nombre de personnes partageant des fichiers en ligne.":::
 
 1. **En-tête :** Met en surbrillance le pourcentage de personnes ayant accès à OneDrive ou SharePoint qui partagent des fichiers en externe.
 2. **Body :** Fournit des informations sur les administrateurs&#39; capacité à modifier les paramètres de partage de fichiers dans l’Organisation pour activer le niveau de collaboration le mieux adapté à votre organisation.
@@ -142,7 +142,7 @@ Nous vous proposons également des informations qui vous aideront à mieux compr
 
 ### <a name="intensity-of-files-collaborated-on"></a>Intensité des fichiers sur lesquels la collaboration est activée
 
-:::image type="content" source="../../media/intensityofcollab.png" alt-text="Perspectives principales du score de collaboration de communication.":::
+:::image type="content" source="../../media/intensityofcollab.png" alt-text="Graphique illustrant le nombre de fichiers qui ont été le plus en collaboration.":::
 
 1. **En-tête :** Cela met en évidence le pourcentage de personnes ayant accès à OneDrive ou SharePoint collaborant sur 4 fichiers ou plus.
 2. **Body :** Cela fournit des informations sur la façon dont les utilisateurs peuvent tirer parti des fichiers en ligne pour une meilleure collaboration.
@@ -164,7 +164,7 @@ Nous vous proposons également des informations qui vous aideront à mieux compr
 
 ### <a name="network-performance-strength-for-onedrive-and-sharepoint"></a>Performances réseau pour OneDrive et SharePoint
 
-:::image type="content" source="../../media/networkperfstrength.png" alt-text="Perspectives principales du score de collaboration de communication.":::
+:::image type="content" source="../../media/networkperfstrength.png" alt-text="Graphique illustrant les performances réseau pour OneDrive et SharePoint.":::
 
 1. **En-tête :** Met en surbrillance le pourcentage d’appareils sortants de tous les tests ayant une mauvaise connexion réseau à OneDrive et SharePoint. 
 2. **Body :** Fournit des informations sur la raison pour laquelle les performances de connexion réseau sont importantes pour la collaboration. 
