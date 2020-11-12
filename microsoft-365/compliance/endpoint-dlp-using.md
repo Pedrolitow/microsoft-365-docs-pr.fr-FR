@@ -17,17 +17,17 @@ ms.collection:
 - SPO_Content
 search.appverid:
 - MET150
-description: Découvrez comment configurer les stratégies de protection contre la perte de données (DLP) en utilisant les points de terminaison de protection contre la perte de données (EPDLP) de Microsoft 365.
-ms.openlocfilehash: 95c470a3dfc90f9c7b9a36d282c016781e4e13a8
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+description: Découvrez comment configurer les stratégies de protection contre la perte de données (DLP) pour utiliser les emplacements de protection contre la perte de données de point de terminaison (EPDLP) Microsoft 365.
+ms.openlocfilehash: 6de6443dc0d276c862db43963ac28bd762e3756f
+ms.sourcegitcommit: 89f56c3e0b619a4700a75a21927d9ffc90658632
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847188"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48984918"
 ---
-# <a name="using-endpoint-data-loss-prevention-preview"></a>Utilisation des points de terminaison de protection contre la perte de données (Preview)
+# <a name="using-endpoint-data-loss-prevention"></a>Utilisation de la protection contre la perte de données de point de terminaison
 
-Cet article décrit trois scénarios dans lesquels vous créez et modifiez une stratégie DLP qui utilise des appareils comme emplacement.
+Cet article décrit trois scénarios dans lesquels vous créez et modifiez une stratégie DLP qui utilise des appareils comme emplacements.
 
 ## <a name="dlp-settings"></a>Paramètres DLP
 

@@ -22,12 +22,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment identifier, surveiller et protéger automatiquement les informations sensibles de votre organisation dans Office 365.
-ms.openlocfilehash: 9e201b7adcde638cc87f57c7c28180420b9e8125
-ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
+ms.openlocfilehash: d1b82f1e5581e1d24284a549f3c9572e0f8343a3
+ms.sourcegitcommit: 89f56c3e0b619a4700a75a21927d9ffc90658632
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48379285"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48984938"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Vue d’ensemble de la protection contre la perte de données
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -59,9 +59,9 @@ Avec une stratégie DLP, vous pouvez :
     
     Pour évaluer la manière dont votre organisation se conforme à une stratégie DLP, vous pouvez voir le nombre de correspondances obtenues par chaque stratégie et chaque règle. Si une stratégie DLP autorise les utilisateurs à remplacer un conseil de stratégie et signaler un faux positif, vous pouvez également afficher ce que les utilisateurs ont signalé.
     
-Vous créez et gérez des stratégies DLP sur la page Protection contre la perte de données dans le Centre de conformité et sécurité d’Office 365.
+Vous créez et gérez des stratégies DLP sur la page Protection contre la perte de données dans le Centre de conformité Microsoft 365.
   
-![Page Protection contre la perte de données dans le Centre de conformité et sécurité Office 365](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
+![Page Protection contre la perte de données dans le Centre de sécurité &amp; conformité Office 365](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
   
 ## <a name="what-a-dlp-policy-contains"></a>Contenu d’une stratégie DLP
 
@@ -83,11 +83,20 @@ Par exemple, vous pouvez avoir une stratégie DLP qui vous aide à détecter la 
   
 ### <a name="locations"></a>Emplacements
 
-Une stratégie DLP peut rechercher et protéger les informations sensibles dans Microsoft 365, que ces informations se trouvent sur Exchange Online, SharePoint Online, OneDrive Entreprise ou Microsoft Teams. Vous pouvez choisir de protéger le contenu dans le courrier Exchange, les conversations et les messages de canal de Microsoft Teams, ainsi que toutes les bibliothèques SharePoint ou OneDrive, ou de sélectionner des emplacements spécifiques pour une stratégie.
-  
-![Options pour les emplacements dans lesquels une stratégie DLP peut être appliquée](../media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
+Les stratégies DLP s’appliquent aux éléments sensibles dans les emplacements Microsoft 365. Vous pouvez les étendre comme détaillé dans le tableau suivant.
 
- Si vous décidez d’inclure des groupes de distribution particuliers dans Exchange, la stratégie DLP est uniquement étendue aux membres de ceux-ci. De manière identique, l’exclusion d’un groupe de distribution exclut tous ses membres de l’évaluation de la stratégie. Vous pouvez choisir de limiter une stratégie aux membres des listes de distribution, aux groupes de distribution dynamiques et aux groupes de sécurité. Une stratégie DLP ne peut pas contenir plus de 50 inclusions et exclusions de ce genre.
+
+|emplacement | Inclure/exclure par|
+|---------|---------|
+|e-mail Exchange| groupes de distribution|
+|sites SharePoint |sites |
+|comptes OneDrive |comptes |
+|conversation et messages de canal Teams |comptes |
+|appareils Windows 10 |utilisateurs ou groupe |
+|Microsoft Cloud App Security |instance |
+
+
+ Si vous décidez d’inclure des groupes de distribution particuliers dans Exchange, la stratégie DLP s’étendra uniquement aux membres de ceux-ci. De manière identique, l’exclusion d’un groupe de distribution exclut tous ses membres de l’évaluation de la stratégie. Vous pouvez choisir de limiter une stratégie aux membres des listes de distribution, aux groupes de distribution dynamiques et aux groupes de sécurité. Une stratégie DLP ne peut pas contenir plus de 50 inclusions et exclusions de ce genre.
 
 Si vous optez pour l’inclusion ou l’exclusion de sites SharePoint ou de comptes OneDrive spécifiques, notez qu’une stratégie DLP ne peut pas contenir plus de 100 inclusions et exclusions. Vous pouvez néanmoins contourner cette limite en appliquant une stratégie mise en place à l’échelle de l’organisation ou une stratégie qui s’applique aux emplacements entiers.
   
@@ -108,7 +117,7 @@ Les différents composants d’une règle sont décrits ci-dessous.
 
 Les conditions sont importantes car elles déterminent les types d’informations que vous recherchez, et le moment auquel effectuer une action. Par exemple, vous pouvez choisir d’ignorer les documents contenant des numéros de passeport, sauf si le document contient plus de 10 numéros et est partagé avec des personnes extérieures à votre organisation.
   
-Les conditions concernent le **contenu**, par exemple les types d’informations sensibles que vous recherchez et aussi le **contexte**, par exemple les personnes avec lesquelles le document est partagé. Vous pouvez utiliser les conditions pour affecter différentes actions à différents niveaux de risque. Par exemple, un contenu sensible partagé en interne peut être moins risqué et nécessiter moins d’actions qu’un contenu sensible partagé avec des personnes extérieures à l’organisation. 
+Les conditions concernent le **contenu** , par exemple les types d’informations sensibles que vous recherchez et aussi le **contexte** , par exemple les personnes avec lesquelles le document est partagé. Vous pouvez utiliser les conditions pour affecter différentes actions à différents niveaux de risque. Par exemple, un contenu sensible partagé en interne peut être moins risqué et nécessiter moins d’actions qu’un contenu sensible partagé avec des personnes extérieures à l’organisation. 
   
 ![Liste affichant les conditions DLP disponibles](../media/0fa43f90-d007-4506-ae93-43e8424fe103.png)
   
@@ -193,7 +202,7 @@ Lorsqu’une règle est satisfaite, vous pouvez envoyer un rapport d’incident 
   
 ![Page de configuration de rapports d’incident](../media/31c6da0e-981c-415e-91bf-d94ca391a893.png)
 
-DLP n’analyse pas les messages électronique de la même façon que les éléments dans SharePoint Online ou OneDrive Entreprise. Dans SharePoint Online et OneDrive Entreprise, DLP analyse les éléments existants, ainsi que les nouveaux et génère un rapport d’incident chaque fois qu’une correspondance est trouvée. Dans Exchange Online, DLP analyse uniquement les nouveaux messages électroniques et génère un rapport en cas de correspondance de stratégie. DLP ***ne peut pas*** analyser ou mettre en correspondance les éléments de messagerie existants qui sont stockés dans une boîte aux lettres ou une archive.
+DLP n’analyse pas les messages électronique de la même façon que les éléments dans SharePoint Online ou OneDrive Entreprise. Dans SharePoint Online et OneDrive Entreprise, DLP analyse les éléments existants, ainsi que les nouveaux et génère un rapport d’incident chaque fois qu’une correspondance est trouvée. Dans Exchange Online, DLP analyse uniquement les nouveaux e-mails, puis génère un rapport en cas de correspondance de stratégie. DLP* n’analyse *_pas_* et ne met pas en correspondance les e-mails existants stockés dans une boîte aux lettres ou une archive.
   
 ## <a name="grouping-and-logical-operators"></a>Opérateurs logiques et opérateurs de regroupement
 
@@ -229,7 +238,7 @@ Vous pouvez rapidement ajouter un groupe, qui peut avoir ses propres conditions 
 
 Entre les groupes, vous pouvez choisir si les conditions dans un seul groupe ou tous les groupes doivent être satisfaites pour que le contenu corresponde à la règle.
   
-Par exemple, le type d’informations sensibles intégrées pour la réglementation des États-Unis sur le **HIPAA** a une règle qui utilise un opérateur **ET** entre les groupes, de sorte qu’elle identifie le contenu qui contient : 
+Par exemple, la stratégie _ *U.S. HIPAA* * intégrée comporte une règle qui utilise un opérateur **ET** entre les groupes, puis identifie ainsi le contenu qui inclut : 
   
 - le groupe **identificateurs de données personnelles** (au moins un numéro de sécurité sociale **OU** numéro DEA) 
     
@@ -245,7 +254,7 @@ Lorsque vous créez des règles dans une stratégie, chaque règle se voit attri
   
 ![Règles dans l’ordre de priorité](../media/dlp-rules-in-priority-order.png)
   
-Une fois que vous avez configuré plusieurs stratégies DLP, vous pouvez modifier la priorité d’une ou plusieurs stratégies. Pour ce faire, sélectionnez une stratégie, sélectionnez **Modifier la stratégie**, puis utilisez la liste **Priorité** pour préciser sa priorité.
+Une fois que vous avez configuré plusieurs stratégies DLP, vous pouvez modifier la priorité d’une ou plusieurs stratégies. Pour ce faire, sélectionnez une stratégie, sélectionnez **Modifier la stratégie** , puis utilisez la liste **Priorité** pour préciser sa priorité.
 
 ![Définition d’une priorité pour une stratégie](../media/dlp-set-policy-priority.png)
 
@@ -342,14 +351,14 @@ Pour ces raisons, les conseils pour la création de règles avec des précisions
 Lorsque vous utilisez une [étiquette de rétention](retention.md#retention-labels) précédemment créée et publiée comme condition dans une stratégie DLP, vous devez tenir compte des éléments suivants :
 
 - L’étiquette de rétention doit être déjà créée et publiée avant de tenter de l’utiliser en tant que condition dans une stratégie DLP.
-- La synchronisation des étiquettes de rétention publiées peut prendre de un à sept jours. Pour plus d’informations, voir [Lorsque les étiquettes de rétention sont disponibles à l’application](create-apply-retention-labels.md#when-retention-labels-become-available-to-apply) pour les étiquettes de rétention publiées dans une stratégie de rétention, et [Temps nécessaire pour la prise d’effet des étiquettes de rétention](apply-retention-labels-automatically.md#how-long-it-takes-for-retention-labels-to-take-effect) pour les étiquettes de rétention publiées automatiquement.
-- L’utilisation d’une étiquette de rétention dans une stratégie **est prise en charge uniquement pour des éléments SharePoint et OneDrive**.
+- La synchronisation des étiquettes de rétention publiées peut prendre d’un à sept jours. Si vous souhaitez en savoir plus, veuillez consulter les rubriques [Lorsque les étiquettes de rétention sont disponibles à l’application](create-apply-retention-labels.md#when-retention-labels-become-available-to-apply) pour les étiquettes de rétention publiées dans une stratégie de rétention, et [Temps nécessaire pour la prise d’effet des étiquettes de rétention](apply-retention-labels-automatically.md#how-long-it-takes-for-retention-labels-to-take-effect) pour les étiquettes de rétention publiées automatiquement.
+- Nous **prenons en charge l’utilisation d’une étiquette de rétention dans une stratégie uniquement pour des éléments SharePoint et OneDrive** _.
 
   ![Étiquettes comme condition](../media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
 
-  Vous souhaitez peut-être utiliser une étiquette de rétention dans une stratégie DLP si vous avez des éléments sous rétention et suppression auxquels vous voulez appliquer des contrôles supplémentaires, par exemple :
+  Vous souhaiterez peut-être utiliser une étiquette de rétention dans une stratégie DLP si vous avez des éléments à conserver, puis à détruire auxquels vous voulez appliquer des contrôles supplémentaires, par exemple :
 
-  - Vous avez publié une étiquette de rétention nommée **année fiscale 2018** qui, lorsqu’elle est appliquée à des documents fiscaux de 2018 stockés dans SharePoint, les conserve pendant 10 ans, puis les supprime. Vous ne souhaitez pas non plus que ces éléments soient partagés à l’extérieur de votre organisation, ce que vous pouvez faire grâce à une stratégie DLP.
+  - Vous avez publié une étiquette de rétention nommée _*année fiscale 2018** qui, appliquée à des documents fiscaux de 2018 stockés dans SharePoint, les conserve pendant 10 ans, puis les supprime. Vous ne souhaitez pas non plus partager ces éléments à l’extérieur de votre organisation, ce que vous pouvez faire grâce à une stratégie DLP.
 
   > [!IMPORTANT]
   > L’erreur ci-après s’affiche si vous spécifiez une étiquette de rétention comme condition dans une stratégie DLP et que vous incluez également Exchange et/ou Teams comme emplacement : **« La protection du contenu étiqueté dans les messages électroniques et d’équipe n’est pas prise en charge. Supprimez l’étiquette ci-dessous ou désactivez Exchange ou Teams en tant qu’emplacement. »** Cela est dû au fait qu’Exchange transport n’évalue pas les métadonnées d’étiquette lors de l’envoi et de la distribution des messages. 
@@ -418,7 +427,7 @@ Lorsque vous créez vos stratégies DLP, vous devez envisager de les déployer p
   
 Si vous créez des stratégies DLP susceptibles d’avoir un impact important, nous vous recommandons de suivre l’ordre suivant :
   
-1. **Démarrez en mode test sans conseils de stratégie**, puis utilisez les rapports DLP et les rapports d’incident pour évaluer l’impact. Vous pouvez utiliser les rapports DLP pour connaître le nombre, l’emplacement, le type et la gravité des correspondances de stratégie. En fonction des résultats, vous pouvez affiner les règles selon vos besoins. En mode test, les stratégies DLP n’auront aucun impact sur la productivité des personnes qui travaillent dans votre organisation. 
+1. **Démarrez en mode test sans conseils de stratégie** , puis utilisez les rapports DLP et les rapports d’incident pour évaluer l’impact. Vous pouvez utiliser les rapports DLP pour connaître le nombre, l’emplacement, le type et la gravité des correspondances de stratégie. En fonction des résultats, vous pouvez affiner les règles selon vos besoins. En mode test, les stratégies DLP n’auront aucun impact sur la productivité des personnes qui travaillent dans votre organisation. 
     
 2. **Passez en mode test avec notifications et conseils de stratégie** pour commencer à faire découvrir vos stratégies de conformité aux utilisateurs et les préparer pour les règles qui vont être appliquées. À ce stade, vous pouvez également demander aux utilisateurs de signaler les faux positifs afin d’affiner les règles. 
     
@@ -430,7 +439,7 @@ Si vous créez des stratégies DLP susceptibles d’avoir un impact important, n
 
     ![Options de désactivation d’une règle dans une stratégie](../media/f7b258ff-1b8b-4127-b580-83c6492f2bef.png)
 
-    Vous pouvez également modifier la priorité de plusieurs règles dans une stratégie. Pour ce faire, ouvrez une stratégie pour modification. Dans une ligne de règle, sélectionnez les points de suspension (**...**), puis choisissez une option, comme, par exemple, **Descendre** ou **Mettre à la fin**.
+    Vous pouvez également modifier la priorité de plusieurs règles dans une stratégie. Pour ce faire, ouvrez une stratégie pour modification. Dans une ligne de règle, sélectionnez les points de suspension ( **...** ), puis choisissez une option, comme, par exemple, **Descendre** ou **Mettre à la fin**.
 
     ![Définition d’une priorité de règle](../media/dlp-set-rule-priority.png)
   

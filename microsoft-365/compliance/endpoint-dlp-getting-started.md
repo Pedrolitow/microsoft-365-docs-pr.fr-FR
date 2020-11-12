@@ -1,5 +1,5 @@
 ---
-title: Prise en main des points de terminaison de protection contre la perte de données Microsoft 365 (Preview)
+title: Prise en main de la protection contre la perte de données de point de terminaison Microsoft 365
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,17 +18,17 @@ ms.collection:
 - m365initiative-compliance
 search.appverid:
 - MET150
-description: Configurez les points de terminaison contre la protection contre la perte de données Microsoft 365 pour surveiller les activités des fichiers et implémenter des actions de protection pour ces fichiers aux points de terminaison.
-ms.openlocfilehash: 95446e15e656e3c1aa658f897863608311b350e0
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+description: Configurez la protection contre la perte de données de point de terminaison Microsoft 365 pour surveiller les activités des fichiers, puis implémenter des actions de protection de ces fichiers aux points de terminaison.
+ms.openlocfilehash: 8f4b1b04aadbb639f6c7daeeb564c10abd7737b2
+ms.sourcegitcommit: ca733da1ed919b286a93068b560608e82f8def05
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842038"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48990549"
 ---
-# <a name="get-started-with-endpoint-data-loss-prevention-preview"></a>Prise en main des points de terminaison de protection contre la perte de données (aperçu)
+# <a name="get-started-with-endpoint-data-loss-prevention"></a>Prise en main de la protection contre la perte de données de point de terminaison
 
-Microsoft Points de terminaison Protection contre la perte de données (Endpoint DLP) fait partie de la suite de fonctionnalités Microsoft 365 de protection contre la perte de données (DLP) que vous pouvez utiliser pour découvrir et protéger les éléments sensibles dans les services Microsoft 365. Pour plus d’informations sur les offres DLP de Microsoft, voir [Vue d’ensemble de la protection contre la perte de données](data-loss-prevention-policies.md). Pour en savoir plus sur Endpoint DLP, voir [En savoir plus sur Points de terminaison Protection contre la perte de données (Preview)](endpoint-dlp-learn-about.md)
+La protection contre la perte de données de point de terminaison (Endpoint DLP) Microsoft fait partie de la suite de fonctionnalités de protection contre la perte de données (DLP) Microsoft 365 que vous pouvez utiliser pour découvrir et protéger les éléments sensibles dans les services Microsoft 365. Pour plus d’informations sur les offres DLP de Microsoft, voir [Vue d’ensemble de la protection contre la perte de données](data-loss-prevention-policies.md). Pour en savoir plus sur Endpoint DLP, voir [En savoir plus sur Points de terminaison Protection contre la perte de données (Preview)](endpoint-dlp-learn-about.md)
 
 Microsoft Endpoint DLP vous permet de surveiller les appareils Windows 10 et de détecter les situations d’utilisation et de partage des éléments sensibles. Ainsi, vous bénéficiez de la visibilité et du contrôle dont vous avez besoin pour vous assurer qu’ils sont utilisés et protégés correctement, et pour éviter tout comportement risqué susceptible de les compromettre.
 
@@ -44,6 +44,7 @@ Avant de commencer à utiliser point de terminaison DLP, vous devez confirmer vo
 - Microsoft 365 A5 Conformité
 - Microsoft 365 E5, Protection des informations et gouvernance
 - Microsoft 365 A5, Protection des informations et gouvernance
+
 
 ### <a name="permissions"></a>Autorisations
 
@@ -94,9 +95,11 @@ Assurez-vous que les appareils Windows 10 pour lesquels vous envisagez de déplo
 
 4. Tous les appareils doivent être [joints à Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join) ou jointure hybride Azure AD.
 
-5. Installez le navigateur Microsoft Chromium Edge sur l’appareil de point de terminaison afin d’appliquer des actions de stratégie pour l’activité de téléchargement vers le Cloud. [Télécharger le nouveau Microsoft Edge sur la base de chrome](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
+5. Installez le navigateur Microsoft Chromium Edge sur l’appareil de point de terminaison afin d’appliquer des actions de stratégie pour l’activité de téléchargement vers le Cloud. Si vous souhaitez en savoir plus, veuillez consulter la rubrique [Télécharger le nouveau Microsoft Edge basé sur Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
 
-## <a name="onboarding-devices-into-device-management"></a>Dispositifs d’intégration dans la gestion des appareils
+6. Si vous utilisez le Canal Entreprise mensuel de Microsoft 365 Apps versions 2004-2008, un problème connu concerne la protection contre la perte de données de point de terminaison qui classe le contenu Office. Vous devez effectuer une mise à jour vers la version 2009 ou une version ultérieure. Si vous souhaitez en savoir plus, veuillez consulter la rubrique [Historique des mises à jour de Microsoft 365 Apps (répertoriées par date)](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date). Si vous souhaitez en savoir plus sur ce problème, veuillez consultez la section Suite Office, dans les [Notes de publication pour les publications du Canal actuel dans 2020](https://docs.microsoft.com/officeupdates/current-channel#version-2010-october-27).
+
+## <a name="onboarding-devices-into-device-management"></a>Intégration d’appareils dans la gestion des appareils
 
 Vous devez activer la surveillance des appareils et intégrer vos points de terminaison avant de pouvoir surveiller et protéger les éléments sensibles sur un appareil. Ces deux actions sont effectuées dans le portail de conformité Microsoft 365.
 

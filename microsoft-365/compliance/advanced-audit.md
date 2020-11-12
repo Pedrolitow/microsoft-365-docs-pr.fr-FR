@@ -18,19 +18,19 @@ search.appverid:
 - MOE150
 - MET150
 description: L’audit avancé de Microsoft 365 offre de nouvelles fonctionnalités d’audit pour aider votre organisation à effectuer des enquêtes de conformité et de légalité.
-ms.openlocfilehash: 51ec75cc8d8ae554ea9cbef3a9ea2aa18171e70a
-ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
+ms.openlocfilehash: bd7b4f78d37feddd7c66322460a6532a77045ba2
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/10/2020
-ms.locfileid: "48950993"
+ms.locfileid: "48988666"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Audit avancé dans Microsoft 365
 
 La [fonctionnalité d’audit unifié](search-the-audit-log-in-security-and-compliance.md) de Microsoft 365 fournit aux organisations une visibilité sur de nombreux types d’activités auditées sur différents services de Microsoft 365. L’audit avancé permet aux organisations d’effectuer des enquêtes de légalité et de conformité en augmentant la rétention du journal d’audit nécessaire pour mener une enquête, en fournissant l’accès à des événements importants qui permettent de déterminer l’étendue de la compromission et un accès plus rapide à l’API Activité de gestion Office 365.
 
 > [!NOTE]
-> L’audit avancé est disponible pour les organisations disposant d’un abonnement Office 365 E5 or Microsoft 365 Entreprise E5. En outre, les utilisateurs peuvent recevoir une licence de module complémentaire Microsoft 365 E5 Conformité ou E5 eDiscovery et Audit lorsque les fonctionnalités d’audit avancé exigent une licence par utilisateur. C’est le cas, par exemple, de la rétention à long terme des journaux d’audit et de l’accès aux événements cruciaux pour les enquêtes. Si vous souhaitez en savoir plus sur la gestion des licences, veuillez consulter la rubrique [Guide de sécurité et conformité pour les licences Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-audit).
+> L’audit avancé est disponible pour les organisations disposant d’un abonnement Office 365 E5/G5 ou Microsoft 365 Entreprise E5/G5. En outre, les utilisateurs peuvent recevoir une licence de module complémentaire Microsoft 365 E5 Conformité ou G5 eDiscovery et Audit lorsque les fonctionnalités d’audit avancé exigent une licence par utilisateur. C’est le cas, par exemple, de la rétention à long terme des journaux d’audit et de l’accès aux événements cruciaux pour les enquêtes. Si vous souhaitez en savoir plus sur la gestion des licences, veuillez consulter la rubrique [Guide de sécurité et conformité pour les licences Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-audit).
 
 Cet article offre une vue d’ensemble des fonctionnalités d'audit avancé.
 
