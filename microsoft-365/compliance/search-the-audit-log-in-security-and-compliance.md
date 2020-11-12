@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Vous pouvez utiliser le Centre de sécurité et conformité Office 365 ou le Centre de conformité Microsoft 365 pour rechercher dans le journal d’audit unifié les activités des utilisateurs et des administrateurs de votre organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2254fb9fd47b1554064194b815ff4d19b2d33472
-ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
+ms.openlocfilehash: ded01bc262cd1bb2fbabcd237278447e486d109a
+ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48941451"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "48999508"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Recherchez le journal d’audit dans le centre de conformité
 
@@ -140,7 +140,7 @@ Avant de commencer à effectuer une recherche dans le journal d’audit, veillez
 ## <a name="search-the-audit-log"></a>Effectuer une recherche dans le journal d’audit
 
 > [!NOTE]
-> Nous cherchons actuellement un problème dans lequel les activités Azure AD ne sont pas disponibles dans l’outil de recherche dans le journal d’audit. Ce problème a commencé vers le 26 octobre 2020. Ces activités comprennent les activités d'administration des utilisateurs Azure AD, les activités d'administration des groupes, les activités d'administration des applications, les activités d'administration des rôles et les activités d'administration des répertoires. Nous fournirons une mise à jour une fois le problème résolu.
+> Il y a eu un problème d’indisponibilité des activités Azure AD dans l’outil de recherche du journal d’audit du 22 octobre 2020 au 6 novembre 2020. Ces activités comprennent les activités d'administration des utilisateurs Azure AD, les activités d'administration des groupes, les activités d'administration des applications, les activités d'administration des rôles et les activités d'administration des répertoires. Les événements manquants pour la période d’impact seront disponibles au cours des prochains jours, et devraient prendre fin au plus tard le 20 novembre 2020. Dans certains cas, il est possible que les clients remarquent des données d’événement en double pour les événements générés entre le 26 octobre 2020 et le 05 novembre 2020.
     
 Pour effectuer une recherche dans le journal d’audit dans Office 365, vous devez procéder comme suit. 
 

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le tableau de bord de classification des données vous permet de consulter les données sensibles qui ont été trouvées et classifiées au sein de votre organisation.
-ms.openlocfilehash: 503235ad2ee35760a03cb2427d1e84f5f3639b9f
-ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
+ms.openlocfilehash: 7bf9a7151f8df45716ab032dd3c62a33f4f5adc8
+ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48379226"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "48999394"
 ---
 # <a name="know-your-data---data-classification-overview"></a>Connaissez vos données : vue d’ensemble de la classification des données
 
@@ -47,14 +47,9 @@ Suivez une visite guidée par vidéo sur nos fonctionnalités de classification 
 
 La classification de données analyse votre contenu sensible et le contenu étiqueté avant votre création de stratégies. Cette opération est appelée **zéro gestion des modifications**. Cela vous permet de voir l’impact de toutes les étiquettes de rétention et de confidentialité sur votre environnement, et de vous aider à évaluer vos besoins en matière de protection et de stratégie de gouvernance.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Conditions préalables
 
-Chaque compte qui accède et utilise la classification de données doit posséder une licence pour l’un des abonnements suivants :
-
-- Microsoft 365 (E5/A5)
-- Office 365 (E5)
-- Complément Conformité avancée (E5)
-- Complément Threat Intelligence avancé (E5)
+Un certain nombre d’abonnements différents prennent en charge le DLP du Point de Terminaison. Pour afficher les options d’acquisition de la licence du DLP du Point de Terminaison, consultez [ Acquisition de la licence de Protection de l’Information à titre indicatif](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection). 
 
 ### <a name="permissions"></a>Autorisations
 
