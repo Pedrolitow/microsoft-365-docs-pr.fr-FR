@@ -1,7 +1,7 @@
 ---
 title: Règle de l’autorité réglementaire du secteur financier (FINRA) 4511 (c) États-Unis
 description: Une entreprise d’évaluation indépendante a validé que Azure et Office 365 peuvent aider les entreprises financières à respecter la règle FINRA 4511 enregistrer les besoins en matière de conservation et de stockage non modifiable.
-keywords: Microsoft 365, conformité, offres
+keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
 ms.prod: microsoft-365-enterprise
 ms.topic: article
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: dc4adef382724ce4176f2b5f779218d62b6079e0
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 2ba5dc4726f359545d59de7387fc62a3fe897588
+ms.sourcegitcommit: 321610fd312e5c54ae8a757a71ab0c9fd2f1ac03
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48919688"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48995887"
 ---
 # <a name="financial-industry-regulatory-authority-finra-rule-4511c-united-states"></a>Règle de l’autorité réglementaire du secteur financier (FINRA) 4511 (c) États-Unis
 
@@ -45,11 +45,9 @@ Cohasset validée que le [stockage d’objets BLOB Azure inaltérables](https://
 
 Les fournisseurs de logiciels et les partenaires avec des charges de travail sensibles peuvent désormais compter sur le stockage d’objets BLOB Azure inaltérables en tant que solution Cloud de magasin unique pour les enregistrements de rétention et de stockage non modifiable. Les établissements financiers peuvent désormais créer leurs propres applications en tirant parti de ces fonctionnalités tout en restant conformes.
 
-## <a name="microsoft-office-365"></a>Microsoft Office 365
+## <a name="microsoft-365"></a>Microsoft 365
 
-Pour évaluer la conformité d’Office 365 avec la règle FINRA 4511 (c), Microsoft a conservé un cabinet juridique indépendant de leader spécialisé dans la réglementation, Covington & Burling, LLP. Dans le rapport obtenu, l’archivage dans Microsoft Office 365, la rétention des données et la réglementation 17A -4, Covington validée que [Office 365 avec verrouillage de conservation](retention-preservation-lock.md) inclut des fonctionnalités d’archivage permettant aux clients réglementés, y compris les concessionnaires, de stocker les données d’une manière qui les aide à se conformer aux exigences FINRA pour la rétention des enregistrements.
-
-L’archivage dans Office 365 permet de conserver un large éventail de données, notamment la messagerie électronique, la messagerie vocale, les documents partagés, les messages instantanés et les données tierces. En particulier, l’archivage dans Office 365 permet aux clients de définir des stratégies de rétention de messagerie globales ou granulaires pour stocker des données pendant une période définie et au-delà dans un format non réinscriptible et non effaçable.
+Pour les conditions requises de [FINRA 4511 (c)](retention-regulatory-requirements.md#sec-17a-4f-finra-4511c-and-cftc-131c-d) , Cohasset validées que Microsoft 365 inclut des fonctionnalités d’archivage permettant aux clients réglementés, y compris les concessionnaires, de stocker les données d’une manière qui les aide à se conformer aux exigences de la sec pour la rétention des enregistrements. Les fonctionnalités de rétention de Microsoft 365 contribuent à conserver un large éventail de données, notamment la messagerie électronique, la messagerie vocale, les documents partagés, les messages instantanés et les données tierces. En particulier, l’archivage dans Microsoft 365 permet aux clients de définir des stratégies de rétention de messagerie globales ou granulaires pour stocker des données pendant une période définie et au-delà dans un format non réinscriptible et non effaçable.
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft concernés
 

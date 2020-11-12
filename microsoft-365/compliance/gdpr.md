@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0310226bba62995a6e72178fcf1fd2e96f462944
-ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.openlocfilehash: 9a0878e513b48b7c6d5ca95cc9399918e1998af0
+ms.sourcegitcommit: 321610fd312e5c54ae8a757a71ab0c9fd2f1ac03
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48304814"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48995897"
 ---
 # <a name="general-data-protection-regulation-summary"></a>Sythèse du règlement général sur la protection des données
 
@@ -32,9 +32,9 @@ Le règlement général sur la protection des données (RGPD) présente de nouve
 Définitions utiles pour les termes RGPD utilisés dans ce document :
 
 - **Contrôleur de données (contrôleur)**  : la personne morale, l’autorité publique, le service ou tout autre organisme qui, seul ou conjointement avec d’autres entités, détermine les finalités et les moyens de traitement des données personnelles.  
-- **Données personnelles et personne concernée** : toutes les informations relatives à une personne physique identifiée ou identifiable (personne concernée); une personne physique identifiable est une personne qui peut être identifiée, directement ou indirectement.  
+- **Données personnelles et personne concernée**  : toutes les informations relatives à une personne physique identifiée ou identifiable (personne concernée); une personne physique identifiable est une personne qui peut être identifiée, directement ou indirectement.  
 - **Responsable du traitement** : la personne physique ou morale, l’autorité publique, le service ou tout autre organisme qui traite des données à caractère personnel pour le compte de l’entité de contrôle.  
-- **Données client** : les données produites et stockées dans les opérations quotidiennes dans le cadre du fonctionnement de votre entreprise.
+- **Données client**  : les données produites et stockées dans les opérations quotidiennes dans le cadre du fonctionnement de votre entreprise.
 
 ## <a name="what-is-the-gdpr"></a>Qu’est-ce que le RGPD ?
 
@@ -59,7 +59,7 @@ Comme indiqué ci-dessus, le plan d’action recommandé pour le RGPD et les lis
 
 ## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Utilisez le Gestionnaire de Conformité Microsoft pour évaluer vos risques
 
-[Le Gestionnaire de Conformité Microsoft](compliance-manager.md) est une fonctionnalité dans le [centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Le Gestionnaire de conformité offre une évaluation prédéfinie de cette réglementation pour les clients d’Entreprise E5. Recherchez le modèle de création de l’évaluation sur la page ** des modèles d’évaluation** dans le Gestionnaire de Conformité. Découvrez comment [créer des évaluations dans le Gestionnaire de Conformité](compliance-manager-assessments.md).
+[Le Gestionnaire de Conformité Microsoft](compliance-manager.md) est une fonctionnalité dans le [centre de conformité Microsoft 365](microsoft-365-compliance-center.md) pour vous aider à comprendre la position de la conformité de votre organisation et à prendre des mesures pour réduire les risques. Le Gestionnaire de conformité offre une évaluation prédéfinie de cette réglementation pour les clients d’Entreprise E5. Recherchez le modèle de création de l’évaluation sur la page **des modèles d’évaluation** dans le Gestionnaire de Conformité. Découvrez comment [créer des évaluations dans le Gestionnaire de Conformité](compliance-manager-assessments.md).
 
 ## <a name="data-subject-request-dsr"></a>Demandes des personnes concernées (DSR)
 
@@ -209,7 +209,7 @@ Les conditions RGPD de Microsoft reflètent les engagements requis des responsab
 
 **Sous quelle base Microsoft facilite-t-il le transfert de données personnelles en dehors de l’UE ?**
 
-Microsoft utilise depuis longtemps les clauses contractuelles standard (également appelées clauses de modèle) comme base de transfert de données pour ses services en ligne d'entreprise. Les clauses contractuelles standard sont des termes standard fournis par la Commission européenne, qui peuvent être utilisés pour transférer des données en dehors de l’espace économique européen de façon conforme. Microsoft a incorporé les clauses contractuelles standard dans tous nos contrats de licence en volume via les [Conditions d’utilisation des services en ligne](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46). L’article 29 a détecté que la mise en place des clauses contractuelles standard par Microsoft est conforme. Lorsque le bouclier de protection des données UE-US est devenu disponible, Microsoft a été la première entreprise à certifier. Pour plus d’informations, consultez [Certification Microsoft du bouclier de protection des données](https://www.privacyshield.gov/participant?id=a2zt0000000KzNaAAK&status=Active)et lisez les [Conditions d’utilisation des services en ligne](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46). Le bouclier de protection des données EU-US permet aux clients qui souhaitent transférer leurs données vers les États-Unis de façon cohérente avec leurs obligations en matière de protection des données.
+Microsoft utilise depuis longtemps les clauses contractuelles standard (également appelées clauses de modèle) comme base de transfert de données pour ses services en ligne d'entreprise. Les clauses contractuelles standard sont des termes standard fournis par la Commission européenne, qui peuvent être utilisés pour transférer des données en dehors de l’espace économique européen de façon conforme. Microsoft a incorporé les clauses contractuelles standard dans tous nos contrats de licence en volume via les [Conditions d’utilisation des services en ligne](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46). L’article 29 a détecté que la mise en place des clauses contractuelles standard par Microsoft est conforme. Lorsque le bouclier de protection des données UE-US est devenu disponible, Microsoft a été la première entreprise à certifier. Pour plus d’informations, consultez [Certification Microsoft du bouclier de protection des données](https://www.privacyshield.gov/participant?id=a2zt0000000KzNaAAK&status=Active)et lisez les [Conditions d’utilisation des services en ligne](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46). Le bouclier de protection des données EU-US permet aux clients qui souhaitent transférer leurs données vers les États-Unis de façon cohérente avec leurs obligations en matière de protection des données.
 
 **Quelles sont les autres offres de conformité Microsoft ?**
 
@@ -219,12 +219,12 @@ En tant qu’entreprise mondiale avec des clients dans presque tous les pays au 
 
 Le RGPD impose de nombreuses exigences sur les organisations qui collectent ou traitent des données personnelles, y compris une obligation de respecter les six principes clés :
 
-- *Transparence*, *équité*et *légalité* dans la manipulation et l’utilisation des données personnelles. Vous devrez être clair avec les personnes concernées sur la façon dont vous utilisez les données à caractère personnel et vous avez également besoin d'une « base licite » pour traiter ces données.
-- Limiter le traitement de données personnelles à *spécifié*, *explicite* et *à des fins légitimes*. Vous ne pourrez pas réutiliser ou divulguer des données personnelles à des fins non « compatibles » avec l’objectif pour lequel les données ont été collectées à l’origine.
+- *Transparence* , *équité* et *légalité* dans la manipulation et l’utilisation des données personnelles. Vous devrez être clair avec les personnes concernées sur la façon dont vous utilisez les données à caractère personnel et vous avez également besoin d'une « base licite » pour traiter ces données.
+- Limiter le traitement de données personnelles à *spécifié* , *explicite* et *à des fins légitimes*. Vous ne pourrez pas réutiliser ou divulguer des données personnelles à des fins non « compatibles » avec l’objectif pour lequel les données ont été collectées à l’origine.
 - *Réduire la collecte et le stockage des données personnelles* à celles qui sont adéquates et pertinentes pour l’objectif attendu.
 - Garantir la *l’exactitude des données personnelles* et leur permettre d’être *effacé ou rectifié*. Vous devez prendre des mesures pour vous assurer que les données personnelles que vous conservez sont exactes et peuvent être corrigées en cas d’erreur.
 - *Limiter le stockage des données personnelles*. Vous devez vous assurer que vous conservez les données personnelles uniquement pendant toute la durée nécessaire pour atteindre les objectifs pour lesquels les données ont été collectées.
-- Garantir *la sécurité*, *l’intégrité*et la *confidentialité des données personnelles*. Votre organisation doit prendre des mesures pour assurer la sécurité des données personnelles par le biais de mesures de sécurité techniques et organisationnelles.
+- Garantir *la sécurité* , *l’intégrité* et la *confidentialité des données personnelles*. Votre organisation doit prendre des mesures pour assurer la sécurité des données personnelles par le biais de mesures de sécurité techniques et organisationnelles.
 
 Vous devez comprendre quelles sont les obligations spécifiques de votre organisation envers le RGPD et comment les respecter, même si Microsoft est là pour vous aider dans votre parcours de mise en conformité du RGPD.
 
