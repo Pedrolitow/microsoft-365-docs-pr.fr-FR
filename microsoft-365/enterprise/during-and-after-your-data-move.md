@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: Les déplacements de données sont des opérations principales qui se produisent lorsque Microsoft déplace des services et des données associées pour votre client vers une nouvelle région de centre de données.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d2e63dd046f62f07e367b3632f96bf7261b99c9c
-ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
+ms.openlocfilehash: 63536a46e28f264f49e8071710221b0847f62414
+ms.sourcegitcommit: 86e878849a8bdd456cee6a3f49939d26223fb626
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48333699"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48997790"
 ---
 # <a name="during-and-after-your-data-move"></a>Pendant et après le déplacement de vos données
 
@@ -45,7 +45,7 @@ Regardez le centre de messages Microsoft 365 pour confirmer le déplacement de c
 |Afrique du Sud  <br/> |1er juillet 2022  <br/> |
 |Suisse, Liechtenstein  <br/> |1er juillet 2022  <br/> |
 |Norvège  <br/> |1er novembre 2022  <br/> |
-|Allemagne  <br/> |1er avril 2023  <br/> |
+|Allemagne  <br/> |1er mai 2023  <br/> |
 
 ## <a name="exchange-online"></a>Exchange Online
 
@@ -102,7 +102,7 @@ Les fonctionnalités de recherche suivantes sont concernées :
     
 - Protection contre la perte de données (DLP) : Les politiques ne sont pas appliquées sur les éléments qui changent avant que l’analyse n’ait récupéré les modifications.
 
-## <a name="microsoft-teams"></a>Microsoft Teams
+## <a name="microsoft-teams"></a>Microsoft Teams
 
 Outre Exchange Online, SharePoint Online et OneDrive entreprise, Microsoft migre les données du service de conversation teams vers le centre de données local.
 
