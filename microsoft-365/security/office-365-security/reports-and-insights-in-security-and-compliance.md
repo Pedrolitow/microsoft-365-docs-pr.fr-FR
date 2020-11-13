@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez les rapports intelligents et les informations disponibles dans le centre de sécurité & conformité, ainsi que la façon de les utiliser pour afficher et explorer les données et prendre des mesures rapides.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 384ae51a514c31c659ce80f30e0b8c09976ec44b
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: 860457962e2a269829d9b3bcdb94ac29eeaeaa11
+ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877348"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49020878"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>Rapports intelligents et aperçus dans le Centre de sécurité et de conformité
 
@@ -53,14 +53,14 @@ Un grand nombre de rapports sont disponibles dans le centre de conformité & sé
 |**Gouvernance des données** <br/> Informations sur l’application des étiquettes, les étiquettes considérées comme des enregistrements, les tendances d’étiquette et bien plus encore|Dans le centre de sécurité & conformité, accédez **Information governance** au \> **tableau de bord** de gouvernance des informations.|[Afficher les rapports de gouvernance des données](../../compliance/view-the-data-governance-reports.md)|
 |**Tableau de bord de gestion des menaces** (également appelé tableau de bord de sécurité)  <br/> Détections de menaces, tendances des programmes malveillants, utilisateurs les plus ciblés, détails sur les messages électroniques envoyés et reçus, etc.|Dans le centre de sécurité & conformité, accédez **Threat management** au \> **tableau de bord** de gestion des menaces|[Afficher des rapports pour Defender pour Office 365](view-reports-for-atp.md)|
 |**Explorateur de menaces** (également appelé Explorateur) ou **détections en temps réel** <br/> Programmes malveillants suspects détectés dans les messages électroniques et les fichiers dans Microsoft 365|Dans le centre de sécurité & conformité, accédez à l’Explorateur de **gestion des menaces** \> **Explorer** ou aux **détections en temps réel** .<br/> |[Threat Explorer (et détections en temps réel)](threat-explorer.md)|
-|**Defender pour Office 365 et rapports de sécurité de messagerie électronique** <br/> Rapports sur la sécurité et la protection contre les menaces (y compris les programmes malveillants, le courrier indésirable, le hameçonnage et l’usurpation d’identité)|Dans le centre de sécurité & conformité, accédez à **rapports** \> **Dashboard**|[Afficher des rapports pour Defender pour Office 365](view-reports-for-atp.md) <br/><br/> [Afficher les rapports de sécurité de courrier dans le centre de sécurité et conformité](view-email-security-reports.md)|
-|**Flux de messagerie** <br/> Informations sur les messages électroniques envoyés et reçus, les alertes récentes, les expéditeurs et destinataires les plus fréquents, les rapports de transfert de courrier et plus encore|Dans le centre de sécurité & conformité, accédez à tableau de bord de **flux de messagerie** \> **Dashboard** et aux **rapports** \> **tableau de bord**|[Informations sur le flux de messagerie dans le centre de sécurité et conformité](mail-flow-insights-v2.md) <br/><br/> [Afficher les rapports de flux de messagerie dans le centre de sécurité & conformité](view-mail-flow-reports.md)|
+|**Defender pour Office 365 et rapports de sécurité de messagerie électronique** <br/> Rapports sur la sécurité et la protection contre les menaces (y compris les programmes malveillants, le courrier indésirable, le hameçonnage et l’usurpation d’identité)|Dans le centre de sécurité & conformité, accédez à **rapports** \> **Dashboard**|[Afficher des rapports pour Defender pour Office 365](view-reports-for-atp.md) <p> [Afficher les rapports de sécurité de courrier dans le centre de sécurité et conformité](view-email-security-reports.md)|
+|**Flux de messagerie** <br/> Informations sur les messages électroniques envoyés et reçus, les alertes récentes, les expéditeurs et destinataires les plus fréquents, les rapports de transfert de courrier et plus encore|Dans le centre de sécurité & conformité, accédez à tableau de bord de **flux de messagerie** \> **Dashboard** et aux **rapports** \> **tableau de bord**|[Informations sur le flux de messagerie dans le centre de sécurité et conformité](mail-flow-insights-v2.md) <p> [Afficher les rapports de flux de messagerie dans le centre de sécurité & conformité](view-mail-flow-reports.md)|
 |**Mise en conformité GDPR** <br/> Informations sur la conformité RGPD, notamment des liens vers des personnes concernées, des tendances des étiquettes et des cas d' & fermé active|Dans le centre de sécurité & conformité, accédez au tableau de bord de **confidentialité des données** \> **RGPD**|[Protection des informations Office 365 pour le RGPD](https://docs.microsoft.com/microsoft-365/compliance/office-365-information-protection-for-gdpr)|
 |**Journal d’audit** <br/> Informations sur les activités Microsoft 365, les utilisateurs, les fichiers ou les dossiers, etc.|Dans le centre de sécurité & conformité, accédez à recherche **& enquête** \> **audit log Search**|[Effectuer des recherches dans le journal d’audit depuis le Centre de sécurité et conformité](../../compliance/search-the-audit-log-in-security-and-compliance.md)|
 |**Rapports de conformité** <br/> Rapports FedRAMP, rapports sur la gouvernance, sur les risques et sur la conformité, rapports de gestion de la sécurité de l'information ISO et rapports d'audit et d'évaluation des contrôles de la société de services.|Dans le centre de sécurité & conformité, accédez **Service assurance** à \> **rapports de conformité de la** garantie de service.|[Planifier la sécurité & conformité dans Office 365](../../compliance/plan-for-security-and-compliance.md)|
 |
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Surveillance et affichage des rapports dans le centre de sécurité Microsoft 365](../mtp/monitoring-and-reporting.md)
   

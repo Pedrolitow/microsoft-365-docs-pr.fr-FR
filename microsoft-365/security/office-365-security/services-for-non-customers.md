@@ -16,12 +16,12 @@ ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
 ms.collection:
 - M365-security-compliance
 description: Pour préserver la confiance des utilisateurs dans l'utilisation de la messagerie électronique, Microsoft a mis en place diverses stratégies et technologies pour aider à protéger ses utilisateurs.
-ms.openlocfilehash: e9389d52ee1d6c1c0bbab8630778749a6ed6005f
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 478f94d2ed1a03253168486d48fb2b2df57a6a5e
+ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199576"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49021024"
 ---
 # <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>Services pour les non-clients envoyant des courriers électroniques à Microsoft 365
 
@@ -38,7 +38,7 @@ Cette vue d’ensemble fournit des informations sur les avantages que nous fourn
 
 |Service|Avantages|
 |---|---|
-|Ce contenu d'aide en ligne|Fournit : <br/> Point de départ pour toutes les questions relatives à la remise des communications aux utilisateurs EOP. <br/><br/> Comprend un guide en ligne simple avec nos stratégies et exigences. <br/><br/> Vue d’ensemble des filtres de courrier indésirable et des technologies d’authentification employés par Microsoft.|
+|Ce contenu d'aide en ligne|Fournit : <ul><li>Point de départ pour toutes les questions relatives à la remise des communications aux utilisateurs EOP.</li><li>Comprend un guide en ligne simple avec nos stratégies et exigences.</li><li>Vue d’ensemble des filtres de courrier indésirable et des technologies d’authentification employés par Microsoft.</li><ul>|
 |[Support technique Microsoft](#microsoft-support)|Offre un support autonome et de transmission à une instance supérieure pour les problèmes de remise.|
 |[Portail d’adresses IP de blocage du courrier indésirable](#anti-spam-ip-delist-portal)|Un outil permettant d'envoyer une demande de suppression d'adresse IP de la liste. Avant d'envoyer cette demande, il incombe à l'expéditeur de s'assurer que tout autre courrier provenant de l'adresse IP en question n'est pas abusif ou malveillant.|
 |[Création de rapport de courrier indésirable et de mauvaise utilisation pour le courrier indésirable provenant d'Exchange Online](#abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online)|Empêche l’envoi de courrier indésirable et d’autres messages indésirables à partir d’Exchange Online et le désordre sur Internet et votre système de messagerie.|

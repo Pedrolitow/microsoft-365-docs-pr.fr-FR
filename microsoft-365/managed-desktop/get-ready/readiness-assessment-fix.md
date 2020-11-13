@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: b77313a18a5744549e492de991e282bc34dbb6da
-ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
+ms.openlocfilehash: 0459de8974fe6bae98e6984fd7dc65afeb04b4e7
+ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49002416"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49021084"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Résoudre les problèmes détectés par l’outil de préparation et d’évaluation
 
@@ -29,6 +29,8 @@ Pour chaque vérification, l’outil signale l’un des quatre résultats possib
 |Erreur | Le rôle Azure active Director (AD) que vous utilisez ne dispose pas des autorisations suffisantes pour effectuer cette vérification. |
 
 ## <a name="microsoft-intune-settings"></a>Paramètres Microsoft Intune
+
+Vous pouvez accéder aux paramètres Intune dans le centre d' [administration](https://endpoint.microsoft.com)du gestionnaire de points de terminaison Microsoft.
 
 ### <a name="autopilot-deployment-profile"></a>Profil de déploiement de AutoPilot
 
@@ -247,6 +249,7 @@ Assurez-vous que toutes les stratégies Ring de mise à jour que vous avez exclu
 
 ## <a name="azure-active-directory-settings"></a>Paramètres Azure Active Directory
 
+Vous pouvez accéder aux paramètres Azure Active Directory sur le [portail Azure](https://portal.azure.com).
 
 ### <a name="ad-hoc-subscriptions"></a>Abonnements ad hoc
 
@@ -326,7 +329,7 @@ Les utilisateurs de bureau géré Microsoft ne disposeront pas des privilèges d
 
 ### <a name="onedrive"></a>OneDrive
 
-Le paramètre **autoriser la synchronisation uniquement sur des PC joints à des domaines spécifiques** entre en conflit avec le bureau géré Microsoft.
+Le paramètre **autoriser la synchronisation uniquement sur des PC joints à des domaines spécifiques** entre en conflit avec le bureau géré Microsoft. Vous pouvez accéder aux paramètres OneDrive dans le [Centre d’administration](https://admin.onedrive.com)onedrive.
 
 **OpenSSL**
 
