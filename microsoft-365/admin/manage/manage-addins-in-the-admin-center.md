@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Découvrez comment utiliser des compléments centralisés pour déployer des compléments pour les utilisateurs et les groupes de votre organisation.
-ms.openlocfilehash: 6339858871834637c0b8fdd1b16c17b534026de9
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 5521b01e059ca8ae4a97ecb094f9aa1198263701
+ms.sourcegitcommit: 34ebec8e2bd54ba3d4ccfd9724797665c965c17f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48207885"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49071476"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>Gérer des compléments dans le centre d’administration
 
@@ -58,10 +58,10 @@ Envisagez de supprimer un complément s’il n’est plus utilisé. Par exemple,
 
 Vous pouvez également supprimer un complément qui a été déployé.
 
-1. Dans le centre d’administration, accédez à la page **paramètres**de  >  **& des compléments** .
+1. Dans le centre d’administration, accédez à la page **paramètres** de  >  **& des compléments** .
 
      > [!NOTE]
-    > Le centre d’administration est mis à jour vers l’expérience de déploiement avec des applications intégrées. Si vous ne voyez pas les étapes ci-dessus, accédez à la section déploiement centralisé en accédant à **paramètres**  >  **intégrés**dans les applications. En haut de la page **applications intégrées** , choisissez **compléments**.
+    > Le centre d’administration est mis à jour vers l’expérience de déploiement avec des applications intégrées. Si vous ne voyez pas les étapes ci-dessus, accédez à la section déploiement centralisé en accédant à **paramètres**  >  **intégrés** dans les applications. En haut de la page **applications intégrées** , choisissez **compléments**.
 
 2. Sélectionnez le complément déployé.
 
@@ -73,10 +73,10 @@ Vous pouvez également supprimer un complément qui a été déployé.
 
 Post-déploiement, les administrateurs peuvent également gérer l’accès des utilisateurs aux compléments.
 
-1. Dans le centre d’administration, accédez à la page **paramètres**de  >  **& des compléments** .
+1. Dans le centre d’administration, accédez à la page **paramètres** de  >  **& des compléments** .
 
      > [!NOTE]
-    > Le centre d’administration est mis à jour vers l’expérience de déploiement avec des applications intégrées. Si vous ne voyez pas les étapes ci-dessus, accédez à la section déploiement centralisé en accédant à **paramètres**  >  **intégrés**dans les applications. En haut de la page **applications intégrées** , choisissez **compléments**.
+    > Le centre d’administration est mis à jour vers l’expérience de déploiement avec des applications intégrées. Si vous ne voyez pas les étapes ci-dessus, accédez à la section déploiement centralisé en accédant à **paramètres**  >  **intégrés** dans les applications. En haut de la page **applications intégrées** , choisissez **compléments**.
 
 2. Sélectionnez le complément déployé.
 
@@ -96,7 +96,7 @@ En tant qu’organisation, vous souhaiterez peut-être empêcher le télécharge
 1. Dans le centre d’administration, cliquez sur la page **Paramètres** \> [Services &amp; Compléments](https://go.microsoft.com/fwlink/p/?linkid=2053743).
 
      > [!NOTE]
-    > Le centre d’administration est mis à jour vers l’expérience de déploiement avec des applications intégrées. Si vous ne voyez pas les étapes ci-dessus, accédez à la section déploiement centralisé en accédant à **paramètres**  >  **intégrés**dans les applications. En haut de la page **applications intégrées** , choisissez **compléments**.
+    > Le centre d’administration est mis à jour vers l’expérience de déploiement avec des applications intégrées. Si vous ne voyez pas les étapes ci-dessus, accédez à la section déploiement centralisé en accédant à **paramètres**  >  **intégrés** dans les applications. En haut de la page **applications intégrées** , choisissez **compléments**.
     
 3. Sélectionnez **Applications et services appartenant aux utilisateurs**.
     
@@ -132,6 +132,9 @@ La prise en charge de la désactivation de l’Office Store est disponible dans 
 Cela n’empêche pas un administrateur d’utiliser un déploiement centralisé pour affecter un complément à partir de l’Office Store.
   
 Pour empêcher un utilisateur de se connecter à l’aide d’un compte Microsoft, vous pouvez limiter l’ouverture de session pour utiliser uniquement le compte d’organisation. Pour plus d’informations, voir [identité, authentification et autorisation dans Office 2016](https://technet.microsoft.com/library/jj683102%28v=office.16%29.aspx).  
+
+> [!NOTE]
+> Empêcher les utilisateurs d’accéder à l’Office Store les empêchera également d’utiliser les [Compléments Office chargement pour les tester](https://docs.microsoft.com/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins).
 
 ## <a name="more-about-the-end-user-experience-with-add-ins"></a>En savoir plus sur l’expérience de l’utilisateur final avec les compléments
 

@@ -7,12 +7,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: f1b1a8f03b7a11a0467826281bc2b789140dbcee
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 7e40a5eb7144fef3d330e0e8fc3c711af15d4c49
+ms.sourcegitcommit: 34ebec8e2bd54ba3d4ccfd9724797665c965c17f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327055"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49071442"
 ---
 # <a name="steps-for-partners-to-register-devices"></a>Procédure permettant aux partenaires d’inscrire des appareils
 
@@ -46,7 +46,7 @@ Une fois que vous avez établi la relation avec vos clients, vous pouvez utilise
 >[!NOTE]
 > Vous devriez avoir reçu ce fichier. csv avec l’achat de votre appareil. Si vous n’avez pas reçu de fichier. csv, vous pouvez en créer un vous-même en suivant les étapes décrites dans la partie [Ajout de périphériques à Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/add-devices#collecting-the-hardware-id-from-existing-devices-using-powershell). Le script Windows PowerShell est différent de celui utilisé pour le [portail d’administration de bureau géré Microsoft](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/register-devices-self?view=o365-worldwide#obtain-the-hardware-hash). Les partenaires doivent utiliser [Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) pour inscrire des appareils pour les appareils de bureau gérés Microsoft dans le centre de partenaires.
 
-Si vous obtenez un message d’erreur lors d’une tentative de chargement du fichier. csv, vérifiez le format du fichier. Vous pouvez utiliser le hachage matériel uniquement, ou le nom du fabricant, le numéro de série et le modèle (dans l’ordre de cette colonne) ou l’ID de produit Windows. Vous pouvez également utiliser l’exemple de fichier. csv fourni par le lien en regard de **Ajouter des périphériques** pour créer une liste d’appareils. 
+Si vous obtenez un message d’erreur lors d’une tentative de chargement du fichier. csv, vérifiez le format du fichier. Assurez-vous que l’ordre des colonnes correspond à ce qui est décrit dans [utiliser les profils Windows AutoPilot sur les nouveaux appareils pour personnaliser l’expérience out-of-Box d’un client](https://docs.microsoft.com/partner-center/autopilot#add-devices-to-a-customers-account). Vous pouvez également utiliser l’exemple de fichier. csv fourni par le lien en regard de **Ajouter des périphériques** pour créer une liste d’appareils. 
 
 Pour plus d’informations sur le pilotage automatique dans les scénarios de partenaires, consultez la rubrique [Ajouter des périphériques au compte d’un client](https://docs.microsoft.com/partner-center/autopilot#add-devices-to-a-customers-account).
 

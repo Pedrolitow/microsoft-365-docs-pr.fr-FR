@@ -7,12 +7,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 225cb8b74a50fa8308cc14e8ad35283e6a7aa044
-ms.sourcegitcommit: e9f32675061cd1cf4a3e2dada393e10d7c552efe
+ms.openlocfilehash: 48c69a71a98e381123a8f87acc20a34eb6e99806
+ms.sourcegitcommit: 34ebec8e2bd54ba3d4ccfd9724797665c965c17f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48279568"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49071488"
 ---
 # <a name="register-new-devices-yourself"></a>Inscrivez vous-même les nouveaux appareils
 
@@ -47,6 +47,8 @@ Vous pouvez utiliser le script PowerShell [Get-WindowsAutoPilotInfo.ps1](https:/
 1.  Ouvrez une invite PowerShell avec des droits d’administration.
 2.  Générer `Install-Script -Name Get-WindowsAutoPilotInfo`
 3.  Générer `powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
+4.  Exécutez `powershell -ExecutionPolicy restricted` pour empêcher l’exécution des scripts non restreints suivants.
+
 
 #### <a name="flash-drive-method"></a>Flash Drive, méthode
 
@@ -83,8 +85,8 @@ Dans le [Gestionnaire de points de terminaison Microsoft](https://endpoint.micro
 
 Procédez comme suit :
 
-1. Dans **chargement du fichier**, indiquez le chemin d’accès au fichier CSV que vous avez créé précédemment.
-3. Sélectionnez **inscrire les appareils**. Le système ajoute les périphériques à votre liste d’appareils sur le panneau des **appareils**, marqué comme **inscription en attente**. L’inscription prend généralement moins de 10 minutes et, lorsque le périphérique s’affiche comme **prêt pour l’utilisateur** , ce qui signifie qu’il est prêt et qu’il attend qu’un utilisateur commence à utiliser.
+1. Dans **chargement du fichier** , indiquez le chemin d’accès au fichier CSV que vous avez créé précédemment.
+3. Sélectionnez **inscrire les appareils**. Le système ajoute les périphériques à votre liste d’appareils sur le panneau des **appareils** , marqué comme **inscription en attente**. L’inscription prend généralement moins de 10 minutes et, lorsque le périphérique s’affiche comme **prêt pour l’utilisateur** , ce qui signifie qu’il est prêt et qu’il attend qu’un utilisateur commence à utiliser.
 
 
 Vous pouvez surveiller la progression de l’enregistrement de l’appareil sur la page principale. Les États possibles sont les suivants :
@@ -119,7 +121,6 @@ Si vous le souhaitez, vous pouvez également appliquer l’image par vous-même.
 > Avant de remettre l’appareil à votre utilisateur, vérifiez que vous avez obtenu et appliqué les [licences appropriées](../get-ready/prerequisites.md) pour cet utilisateur.
 
 Si toutes les licences sont appliquées, vous pouvez [faire en sorte que vos utilisateurs soient prêts à utiliser les appareils](get-started-devices.md), puis votre utilisateur peut démarrer l’appareil et poursuivre l’installation de Windows.
-
 
 
 

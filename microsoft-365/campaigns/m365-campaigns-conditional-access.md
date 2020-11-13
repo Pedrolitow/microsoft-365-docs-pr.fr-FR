@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment exiger l’authentification MFA et configurer des stratégies d’accès conditionnel pour Microsoft 365 pour les entreprises.
-ms.openlocfilehash: 917fb52eb5034c3dda28c277b9e86e04db6cac62
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 5908a36f09753cd8f66169c6a67be45c748807b7
+ms.sourcegitcommit: 34ebec8e2bd54ba3d4ccfd9724797665c965c17f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527197"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49071500"
 ---
 # <a name="require-multi-factor-authentication-and-set-up-conditional-access-policies"></a>Exiger l’authentification multifacteur et configurer des stratégies d’accès conditionnel
 
@@ -71,16 +71,16 @@ Pour exiger que tous les utilisateurs se connectent avec une deuxième forme d�
 
 ## <a name="set-up-baseline-policies"></a>Configurer des stratégies de base
 
-1. Accédez au [portail Azure](https://portal.azure.com), puis accédez à **Azure Active Directory** \> **accès conditionnel**.
-    
-    Les stratégies de base sont répertoriées sur la page, et vous pouvez voir que l' **authentification MFA pour les administrateurs** et la **protection des utilisateurs finaux** sont déjà activées une fois que vous avez effectué les étapes de la rubrique [require MFA](#require-mfa).
+1. Accédez au [portail Azure](https://portal.azure.com), puis accédez à **Azure Active Directory** \> **ConditionalAttribute Access** pour créer une **nouvelle stratégie**.
 
-    ![Page répertoriant les stratégies de base pour l’accès conditionnel.](../media/casettings.png)
-2. Consultez les instructions spécifiques suivantes pour chaque stratégie :
-
-    - [Exiger l’authentification multifacteur pour les administrateurs](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-administrators)
-    - [Exiger l’authentification multifacteur pour les utilisateurs](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-end-users)  
-    - [Bloquer l’authentification héritée](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth)
+Consultez les instructions spécifiques suivantes pour chaque stratégie : <br>
+    - [Exiger l’authentification multifacteur pour les administrateurs](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-administrators) <br>
+    - [Exiger l’authentification multifacteur pour les utilisateurs](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-end-users) <br>
+    - [Bloquer l’authentification héritée](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth) <br>
     - [Exiger MFA pour la gestion des services](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-azure)
+    
+> [!NOTE]
+> Les stratégies d’aperçu n’existent plus et les utilisateurs devront créer leurs propres stratégies.
+
 
 Vous pouvez configurer des stratégies supplémentaires, telles que la demande d’applications clientes approuvées. Pour plus d’informations, consultez la documentation sur l' [accès conditionnel](https://docs.microsoft.com/azure/active-directory/conditional-access/).

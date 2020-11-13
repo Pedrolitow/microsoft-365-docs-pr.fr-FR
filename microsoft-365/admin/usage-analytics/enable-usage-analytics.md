@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Découvrez comment commencer à collecter des données pour votre client à l’aide de l’application de modèle d’analyse de l’utilisation 365 de Microsoft dans Power BI.
-ms.openlocfilehash: 347256fa7acaae18cd31f0c8c6b7eca20ad2e9dd
-ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
+ms.openlocfilehash: cda5931e81f7ea13208825afa658f1c672a2f326
+ms.sourcegitcommit: 34ebec8e2bd54ba3d4ccfd9724797665c965c17f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48941330"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49071454"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Activation de l'analyse de l'utilisation de Microsoft 365
 
@@ -92,7 +92,7 @@ Pour démarrer l’application de modèle, vous devez être un **administrateur 
   
 8. Une fois l’application de modèle instanciée, le tableau de bord d’analyse de l’utilisation de Microsoft 365 sera disponible dans Power BI sur le Web. Le chargement initial du tableau de bord prend entre 2 et 30 minutes.
   
-Les agrégats de niveau client seront disponibles dans tous les rapports. **Les détails au niveau de l’utilisateur ne seront disponibles qu’après le 1er ou le 15 jour du mois civil après avoir** pris l’opt. Cela aura un impact sur tous les rapports sous activité de l’utilisateur. Pour obtenir des conseils sur l’affichage et l’utilisation de ces rapports, voir [naviguer et utiliser les rapports de l’analyse de l’utilisation de Microsoft 365](navigate-and-utilize-reports.md) .
+Les agrégats de niveau client seront disponibles dans tous les rapports après avoir cliqué sur. Les **Détails au niveau de l’utilisateur ne seront disponibles que dans le cinquième mois du calendrier suivant**. Cela aura un impact sur tous les rapports sous activité de l’utilisateur (voir [naviguer et utiliser les rapports de l’analyse de l’utilisation de Microsoft 365](navigate-and-utilize-reports.md) pour obtenir des conseils sur l’affichage et l’utilisation de ces rapports).
     
 ## <a name="make-the-collected-data-anonymous"></a>Anonymiser les données collectées
 
