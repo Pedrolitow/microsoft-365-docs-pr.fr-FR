@@ -22,12 +22,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment identifier, surveiller et protéger automatiquement les informations sensibles de votre organisation dans Office 365.
-ms.openlocfilehash: d1b82f1e5581e1d24284a549f3c9572e0f8343a3
-ms.sourcegitcommit: 89f56c3e0b619a4700a75a21927d9ffc90658632
+ms.openlocfilehash: 0817d48879fccbefcda22d677c85a250dc017dd0
+ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48984938"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "48999498"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Vue d’ensemble de la protection contre la perte de données
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -55,11 +55,11 @@ Avec une stratégie DLP, vous pouvez :
     
     Vous pouvez informer vos utilisateurs sur les stratégies DLP et les aider à maintenir la conformité sans bloquer leur travail. Par exemple, si un utilisateur tente de partager un document contenant des informations sensibles, une stratégie DLP peut lui envoyer une notification par courrier électronique et afficher un conseil de stratégie dans le contexte de la bibliothèque de documents, qui lui permet de remplacer la stratégie s’il a une raison professionnelle de le faire. Les mêmes conseils de stratégie s’affichent également dans Outlook sur le web, Outlook, Excel, PowerPoint et Word.
     
-- **Consulter les rapports DLP présentant le contenu qui correspond aux stratégies DLP de votre organisation.**
+- **Consulter les rapports et alertes DLP présentant le contenu qui correspond aux stratégies DLP de votre organisation.**
     
-    Pour évaluer la manière dont votre organisation se conforme à une stratégie DLP, vous pouvez voir le nombre de correspondances obtenues par chaque stratégie et chaque règle. Si une stratégie DLP autorise les utilisateurs à remplacer un conseil de stratégie et signaler un faux positif, vous pouvez également afficher ce que les utilisateurs ont signalé.
+    Pour afficher les alertes et les métadonnées relatives à vos stratégies DLP, vous pouvez utiliser le [Tableau de bord de gestion des alertes DLP](dlp-configure-view-alerts-policies.md). Vous pouvez également afficher des rapports de correspondance de stratégie pour évaluer la conformité de votre organisation à une stratégie DLP. Si une stratégie DLP autorise les utilisateurs à remplacer un conseil de stratégie et signaler un faux positif, vous pouvez également afficher ce que les utilisateurs ont signalé.
     
-Vous créez et gérez des stratégies DLP sur la page Protection contre la perte de données dans le Centre de conformité Microsoft 365.
+Vous créez et gérez des stratégies DLP sur la page Protection contre la perte de données dans le Centre de conformité Microsoft 365.
   
 ![Page Protection contre la perte de données dans le Centre de sécurité &amp; conformité Office 365](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
   
@@ -196,13 +196,15 @@ Dans un compte OneDrive Entreprise, un conseil de stratégie se présente comme 
 
  Pour en savoir plus sur les notifications utilisateur et les conseils de stratégie en matière de stratégie DLP, voir [Utilisation des notifications et des conseils de stratégie](use-notifications-and-policy-tips.md).
 
-#### <a name="incident-reports"></a>Rapports d’incident
+#### <a name="alerts-and-incident-reports"></a>Rapports sur les alertes et les incidents
 
-Lorsqu’une règle est satisfaite, vous pouvez envoyer un rapport d’incident contenant les détails de l’événement à votre responsable de la mise en conformité (ou une autre personne de votre choix). Ce rapport comprend des informations sur l’élément qui a fait l’objet d’une correspondance, le contenu qui a satisfait à la règle ainsi que le nom de la personne qui a modifié le contenu en dernier. Pour les messages électroniques, le rapport inclut également sous forme de pièce jointe le message d’origine qui correspond à une stratégie DLP.
+Lorsqu’une règle est satisfaite, vous pouvez envoyer un e-mail d’alerte contenant les détails de celle-ci à votre responsable de la conformité (ou toute autre personne de votre choix). Ce message d’alerte comporte un lien vers le [Tableau de bord de gestion des alertes DLP](dlp-configure-view-alerts-policies.md) auquel le responsable de la conformité peut accéder pour afficher les détails des alertes et des événements. Le tableau de bord contient les détails de l’événement ayant déclenché l’alerte, ainsi que les détails de la stratégie DLP correspondante et le contenu sensible détecté.
+
+En outre, vous pouvez également envoyer un rapport d’incident incluant les détails de l’événement. Ce rapport comprend des informations sur l’élément ayant fait l’objet d’une correspondance, le contenu qui a satisfait à la règle ainsi que le nom de la personne qui a modifié le contenu en dernier. Pour les messages électroniques, le rapport inclut également sous forme de pièce jointe le message d’origine qui correspond à une stratégie DLP.
   
-![Page de configuration de rapports d’incident](../media/31c6da0e-981c-415e-91bf-d94ca391a893.png)
+![Page de configuration de rapports d’incident](../media/Alerts-and-incident-report.png)
 
-DLP n’analyse pas les messages électronique de la même façon que les éléments dans SharePoint Online ou OneDrive Entreprise. Dans SharePoint Online et OneDrive Entreprise, DLP analyse les éléments existants, ainsi que les nouveaux et génère un rapport d’incident chaque fois qu’une correspondance est trouvée. Dans Exchange Online, DLP analyse uniquement les nouveaux e-mails, puis génère un rapport en cas de correspondance de stratégie. DLP* n’analyse *_pas_* et ne met pas en correspondance les e-mails existants stockés dans une boîte aux lettres ou une archive.
+DLP n’analyse pas les messages électroniques de la même façon que les éléments dans SharePoint Online ou OneDrive Entreprise. Dans SharePoint Online et OneDrive Entreprise, DLP analyse les éléments existants, ainsi que les nouveaux et génère un rapport d’incident et d’alerte chaque fois qu’une correspondance est trouvée. Dans Exchange Online, DLP analyse uniquement les nouveaux e-mails, puis génère un rapport en cas de correspondance de stratégie. DLP* n’analyse *_pas_* et ne met pas en correspondance les e-mails existants stockés dans une boîte aux lettres ou une archive.
   
 ## <a name="grouping-and-logical-operators"></a>Opérateurs logiques et opérateurs de regroupement
 
