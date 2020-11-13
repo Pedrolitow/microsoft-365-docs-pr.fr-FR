@@ -11,18 +11,19 @@ ms.collection:
 - M365-collaboration
 - m365solution-securecollab
 - m365solution-scenario
+- m365initiative-externalcollab
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Découvrez comment configurer des applications Microsoft 365 telles que Teams, OneDrive et SharePoint pour la collaboration avec des personnes extérieures à votre organisation.
-ms.openlocfilehash: 9a15ea06cec6982977ec88edf5ee95b35591a33c
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 60789041abca98769fa25e2f299ee2d7eebe0726
+ms.sourcegitcommit: 8a726ed7ec19a8728c079780fa4d343a5f759fbb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906988"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49029980"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>Collaboration avec des personnes extérieures à votre organisation
 
@@ -59,7 +60,7 @@ Lorsque vous travaillez sur un projet de grande taille qui implique de nombreux 
 
 Si certaines des fonctionnalités de partage de Microsoft 365 sont en conflit avec vos stratégies de gouvernance, consultez la rubrique [Limit sharing in microsoft 365](microsoft-365-limit-sharing.md) pour en savoir plus sur les options permettant de limiter le partage.
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Introduction à la collaboration de fichiers dans Microsoft 365](https://docs.microsoft.com/sharepoint/intro-to-file-collaboration)
 

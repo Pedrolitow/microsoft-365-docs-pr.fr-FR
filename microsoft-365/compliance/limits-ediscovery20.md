@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez les limites de cas, les limites d’indexation et les limites de recherche en vigueur pour la solution eDiscovery avancée dans Microsoft 365.
-ms.openlocfilehash: 7d676b568c7e4cddedeff02c62b4645619d53357
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: abc93acb5f32ea1fdae607d8e1053adc59ad6cea
+ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446251"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49020961"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>Limites définies dans Advanced eDiscovery
 
@@ -62,10 +62,10 @@ Les limites décrites dans cette section concernent l’utilisation de l’outil
 |:-----|:-----|
 |Nombre maximal de boîtes aux lettres ou de sites pouvant faire l’objet d’une recherche dans une seule recherche.  <br/> |Sans limite  <br/> |
 |Nombre maximal de recherches pouvant être exécutées en même temps.  <br/> |Sans limite  <br/> | 
-|Nombre maximal de recherches qu’un utilisateur peut démarrer en même temps.  <br/> |10   <br/> | 
-|Nombre maximal de caractères pour une requête de recherche (y compris les opérateurs et les conditions).  <br/> |**Boîtes aux lettres**: 10 000<br/>**Sites**: 4 000 lors de la recherche sur tous les sites ou 2 000 lors de la recherche sur 20 sites <sup>2</sup> <br/> |
-|Nombre minimal de caractères alpha pour les caractères génériques de préfixe ; par exemple **, \* un ou un** **défini \* **. <br/> |3  <br/> |  
-|Nombre maximal de variantes renvoyées lors de l’utilisation d’un caractère générique de préfixe pour rechercher une expression exacte ou avec un caractère générique de préfixe et l’opérateur de type booléen **near** .  <br/> |10 000 <sup>3</sup> <br/> |
+|Nombre maximal de recherches qu’un utilisateur peut démarrer en même temps.  <br/> |10   <br/> | 
+|Nombre maximal de caractères pour une requête de recherche (y compris les opérateurs et les conditions).  <br/> |**Boîtes aux lettres** : 10 000<br/>**Sites** : 4 000 lors de la recherche sur tous les sites ou 2 000 lors de la recherche sur 20 sites <sup>2</sup> <br/> |
+|Nombre minimal de caractères alpha pour les caractères génériques de préfixe ; par exemple * *1 \** _ ou _*Set \**_. <br/> |3  <br/> |  
+|Nombre maximal de variantes renvoyées lors de l’utilisation d’un caractère générique de préfixe pour rechercher une expression exacte ou avec un caractère générique de préfixe et l’opérateur booléen _ *near* *.  <br/> |10 000 <sup>3</sup> <br/> |
 |Nombre maximal d’éléments par boîte aux lettres utilisateur qui s’affichent sur la page d’aperçu pour les recherches. Les éléments les plus récents sont affichés.   <br/> |100  <br/> |
 |Nombre maximal d’éléments de toutes les boîtes aux lettres affichés sur la page d’aperçu pour les recherches.  <br/> |1,000  <br/> |
 |Nombre maximal de boîtes aux lettres qui peuvent être prévisualisées pour les résultats de la recherche.  S’il y a plus de 1000 boîtes aux lettres contenant des éléments qui correspondent à la requête de recherche, seules les 1 000 premières boîtes aux lettres avec le plus de résultats sont disponibles pour l’aperçu.<br/> |1,000  <br/> |
@@ -79,15 +79,27 @@ Les limites décrites dans cette section concernent l’utilisation de l’outil
 ## <a name="viewer-limits"></a>Limites de la visionneuse
 
 |**Description de la limite**|**Limite**|
-  |:-----|:-----|
-  |Taille maximale du fichier Excel pouvant être consulté dans la visionneuse native.  <br/> |4 MO  <br/> |
+|:-----|:-----|
+|Taille maximale du fichier Excel pouvant être consulté dans la visionneuse native.  <br/> |4 MO  <br/> |
+|||
+
+## <a name="export-limits"></a>Limites d’exportation
+
+|**Description de la limite**|**Limite**|
+|:-----|:-----|
+|Taille maximale d’une exportation unique.|3 millions documents ou 100 Go, en fonction de ce qui est le plus petit|
+|Quantité maximale de données dans un seul jour. | 2 TO |
+|Nombre maximal d’exportations simultanées dans votre organisation. | 10 <sup>4</sup> |
+|Nombre maximal d’exportations simultanées par utilisateur. | 3 |
+|Taille maximale d’un fichier PST unique. | 10 Go |
+|Nombre maximal d’exportations simultanées par jeu de révision. | 1  |
 |||
 
 ## <a name="review-set-download-limits"></a>Vérifier les limites de téléchargement des jeux
 
 |**Description de la limite**|**Limite**|
 |:-----|:-----|
-|Taille totale du fichier ou nombre maximal de documents téléchargés à partir d’un jeu de révision.  <br/> |3 Mo ou 50 documents <sup>4</sup>|
+|Taille totale du fichier ou nombre maximal de documents téléchargés à partir d’un jeu de révision.  <br/> |3 Mo ou 50 documents <sup>5</sup>|
 |||
 
 <br/>
@@ -96,6 +108,7 @@ Les limites décrites dans cette section concernent l’utilisation de l’outil
 > [!NOTE]
 > <sup>1</sup> tout élément qui dépasse une limite de fichier s’affiche en tant qu’erreur de traitement.<br/>
 > <sup>2</sup> lors de la recherche de sites SharePoint et OneDrive entreprise, les caractères des URL des sites recherchés décomptent de cette limite.<br/>
-> <sup>3</sup> pour les requêtes sans expression (valeur de mot clé qui n’utilise pas de guillemets doubles), nous utilisons un index de préfixe spécial. Cela indique qu’un mot a lieu dans un document, mais pas à son emplacement dans le document. Pour effectuer une requête d’expression (valeur de mot clé avec des guillemets doubles), nous devons comparer la position dans le document pour les mots de l’expression. Cela signifie que nous ne pouvons pas utiliser l’index de préfixe pour les requêtes d’expression. Dans ce cas, nous développons la requête en interne avec tous les mots que le préfixe développe ; par exemple, **l' \* heure** peut se développer sur **« heure, minuteur ou temps, ou Timex ou timeboxed ou... »**. La limite de 10 000 est le nombre maximal de variantes que le mot peut développer, pas le nombre de documents correspondant à la requête. Il n’existe pas de limite supérieure pour les termes autres que les expressions.<br/>
-> <sup>4</sup> cette limite s’applique au téléchargement des documents sélectionnés à partir d’un jeu de révision. Elle ne s’applique pas à l’exportation de documents à partir d’un jeu de révision. Pour plus d’informations sur le téléchargement et l’exportation de documents, voir [Export case Data in Advanced eDiscovery](exporting-data-ediscover20.md). <br/>
+> <sup>3</sup> pour les requêtes sans expression (valeur de mot clé qui n’utilise pas de guillemets doubles), nous utilisons un index de préfixe spécial. Cela indique qu’un mot a lieu dans un document, mais pas à son emplacement dans le document. Pour effectuer une requête d’expression (valeur de mot clé avec des guillemets doubles), nous devons comparer la position dans le document pour les mots de l’expression. Cela signifie que nous ne pouvons pas utiliser l’index de préfixe pour les requêtes d’expression. Dans ce cas, nous développons la requête en interne avec tous les mots que le préfixe développe ; par exemple, **Time \* *_ peut être étendu à _* "Time, Timer ou Times, Timex ou timeboxed ou..."**. La limite de 10 000 est le nombre maximal de variantes que le mot peut développer, pas le nombre de documents correspondant à la requête. Il n’existe pas de limite supérieure pour les termes autres que les expressions.<br/>
+> <sup>4</sup> cette limite est partagée entre tous les outils eDiscovery. Cela signifie que les exportations simultanées dans la recherche de contenu, la découverte électronique de base et la découverte électronique avancée sont appliquées à cette limite. <br/>
+> <sup>5</sup> cette limite s’applique au téléchargement des documents sélectionnés à partir d’un jeu de révision. Elle ne s’applique pas à l’exportation de documents à partir d’un jeu de révision. Pour plus d’informations sur le téléchargement et l’exportation de documents, voir [Export case Data in Advanced eDiscovery](exporting-data-ediscover20.md). <br/>
 

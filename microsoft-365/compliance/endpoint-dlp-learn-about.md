@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La protection contre la perte de données des point de terminaison de Microsoft 365 étend la surveillance des activités de fichiers et les actions de protection pour ces fichiers aux points de terminaison. Les fichiers sont rendus visibles dans les solutions de conformité Microsoft 365 '
-ms.openlocfilehash: 966e201acb8038d85f0d06c0800c9845fd79097e
-ms.sourcegitcommit: 89f56c3e0b619a4700a75a21927d9ffc90658632
+ms.openlocfilehash: 0f69261cb5617c7d6de7900b85a5a254a04bc45e
+ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48984928"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "48999458"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Découvrir la protection contre la perte de données des point de terminaison de Microsoft 365
 
@@ -97,6 +97,14 @@ Si vous avez des appareils intégrés via [Microsoft Defender pour point de term
 
 > [!NOTE]
 > La DLP des points de terminaison évalue les fichiers des types indiqués ci-dessus par rapport à la stratégie DLP et applique les actions de protection en conséquence. Tous les fichiers qui correspondent à une stratégie DLP sont audités pour toutes les actions prises en charge, même s’ils ne sont pas bloqués. De plus, l’activité des fichiers effectuée sur les fichiers Word, PowerPoint, Excel, PDF et .csv est auditée par défaut, indépendamment du fait qu’une stratégie DLP existe ou corresponde à ces fichiers.
+
+Vous pouvez afficher les alertes liées aux stratégies DLP appliquées sur les appareils de point de terminaison en accédant au [Tableau de bord de Gestion des Alertes DLP.](dlp-configure-view-alerts-policies.md)
+
+![Information d’alerte](../media/Alert-info-1.png)
+
+Vous pouvez également afficher les détails de l’événement associé avec des métadonnées complètes dans le même tableau de bord
+
+![Informations sur l’événement](../media/Event-info-1.png)
 
 Une fois qu’un appareil est intégré, les informations relatives aux activités auditées sont transmises dans l’Explorateur d’activités, avant même de configurer et déployer des stratégies DLP qui ont des périphériques comme emplacement.
 

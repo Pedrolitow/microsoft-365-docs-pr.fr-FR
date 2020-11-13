@@ -11,17 +11,18 @@ ms.collection:
 - M365-collaboration
 - m365solution-3tiersprotection
 - m365solution-securecollab
+- m365initiative-externalcollab
 ms.custom:
 - seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Dans cet article, vous allez apprendre à collaborer avec des invités sur un document dans SharePoint et OneDrive.
-ms.openlocfilehash: 022811be642a79c07c632cefcc67a27f19e3af4f
-ms.sourcegitcommit: 39af527404cb06e05c5aa4550dbec39aec133016
+ms.openlocfilehash: e3492732756aecb176eb21f0bdfd0d394013975e
+ms.sourcegitcommit: 8a726ed7ec19a8728c079780fa4d343a5f759fbb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "48422604"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49030004"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>Collaborer avec des invités sur un document
 
@@ -54,7 +55,7 @@ Pour définir les paramètres de collaboration externe
 
 Notez les paramètres dans la section **restrictions de collaboration** . Assurez-vous que les domaines des invités avec lesquels vous souhaitez collaborer ne sont pas bloqués.
 
-Si vous travaillez avec des invités de plusieurs organisations, vous souhaiterez peut-être limiter leur capacité à accéder aux données d’annuaire. Cela les empêchera de voir qui d’autre est un invité dans l’annuaire. Pour ce faire, sous **restrictions d’accès des utilisateurs invités**, sélectionnez **les utilisateurs invités ont un accès limité aux propriétés et l’appartenance aux paramètres d’objets d’annuaire** ou **l’accès des utilisateurs invités est limité aux propriétés et aux appartenances de leurs propres objets d’annuaire**.
+Si vous travaillez avec des invités de plusieurs organisations, vous souhaiterez peut-être limiter leur capacité à accéder aux données d’annuaire. Cela les empêchera de voir qui d’autre est un invité dans l’annuaire. Pour ce faire, sous **restrictions d’accès des utilisateurs invités** , sélectionnez **les utilisateurs invités ont un accès limité aux propriétés et l’appartenance aux paramètres d’objets d’annuaire** ou **l’accès des utilisateurs invités est limité aux propriétés et aux appartenances de leurs propres objets d’annuaire**.
 
 ## <a name="sharepoint-organization-level-sharing-settings"></a>Paramètres de partage au niveau de l’organisation SharePoint
 
@@ -71,8 +72,8 @@ Pour SharePoint, choisissez le paramètre le plus permissif qui sera nécessaire
 
 Pour définir les paramètres de partage au niveau de l’organisation SharePoint
 
-1. Dans le centre d’administration 365 de Microsoft, dans le volet de navigation de gauche, sous **centres d’administration**, cliquez sur **SharePoint**.
-2. Dans le centre d’administration SharePoint, dans le volet de navigation de gauche, sous **stratégies**, cliquez sur **partage**.
+1. Dans le centre d’administration 365 de Microsoft, dans le volet de navigation de gauche, sous **centres d’administration** , cliquez sur **SharePoint**.
+2. Dans le centre d’administration SharePoint, dans le volet de navigation de gauche, sous **stratégies** , cliquez sur **partage**.
 3. Assurez-vous que le partage externe pour SharePoint ou OneDrive est défini sur **tout le monde** ou sur **des invités nouveaux et existants**. (Notez que le paramètre OneDrive ne peut pas être plus permissif que le paramètre SharePoint.)
 4. Si vous avez effectué des modifications, cliquez sur **Enregistrer**.
 
@@ -94,7 +95,7 @@ Choisissez un lien de l’un des types suivants, qui est ensuite sélectionné p
 Pour définir les paramètres de lien par défaut au niveau de l’organisation SharePoint et OneDrive
 
 1. Accédez à la page de partage dans le centre d’administration SharePoint.
-2. Sous **liens de fichiers et de dossiers**, sélectionnez le lien de partage par défaut à utiliser.
+2. Sous **liens de fichiers et de dossiers** , sélectionnez le lien de partage par défaut à utiliser.
 3. Si vous avez effectué des modifications, cliquez sur **Enregistrer**.
 
 Pour définir les autorisations pour le lien de partage, sous **Choisissez l’autorisation sélectionnée par défaut pour les liens de partage.**
