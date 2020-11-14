@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un classificateur Microsoft 365 pouvant être formé est un outil que vous pouvez former afin de reconnaître différents types de contenu en lui donnant des échantillons positifs et négatifs. Une fois que le classifieur est formé, vous confirmez que ses résultats sont précis. Vous l’utilisez ensuite pour effectuer une recherche dans le contenu de votre organisation et le classifier pour appliquer des étiquettes de rétention ou de sensibilité ou l’inclure dans la protection contre la perte de données (DLP) ou les stratégies de rétention.
-ms.openlocfilehash: 7abfbe101508d24e58464ff38b14ab87447001f0
-ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
+ms.openlocfilehash: d26e33efea09c2afb33c2b5e5ade264cb8bfaee6
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48379303"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49072943"
 ---
 # <a name="learn-about-classifiers-preview"></a>En savoir plus sur les classifieurs (aperçu)
 
@@ -68,10 +68,10 @@ Les étiquettes de sensibilité peuvent utiliser des classifieurs comme conditio
 Microsoft 365 est fourni avec cinq classifieurs prédéfinis :
 
 > [!CAUTION]
-> Nous déconfigurons le classificateur de **langue choquante** , car il a produit un nombre élevé de faux positifs. Ne l’utilisez pas et, si vous l’utilisez, vous devez déconnecter vos processus d’entreprise. Nous vous recommandons d’utiliser à la place les classifieurs préqualifiés de **menace**, de **blasphème**et de **harcèlement** .
+> Nous déconfigurons le classificateur de **langue choquante** , car il a produit un nombre élevé de faux positifs. Ne l’utilisez pas et, si vous l’utilisez, vous devez déconnecter vos processus d’entreprise. Nous vous recommandons d’utiliser à la place les classifieurs préqualifiés de **menace** , de **blasphème** et de **harcèlement** .
 
-- **CV**: détecte les éléments qui sont des comptes textuels des qualifications personnelles, éducatives, qualifications professionnelles, expérience professionnelle et autres informations d’identification personnelle d’un demandeur.
-- **Code source**: détecte les éléments qui contiennent un ensemble d’instructions et d’instructions écrites dans les 25 principaux langages de programmation informatique utilisés sur GitHub
+- **CV** : détecte les éléments qui sont des comptes textuels des qualifications personnelles, éducatives, qualifications professionnelles, expérience professionnelle et autres informations d’identification personnelle d’un demandeur.
+- **Code source** : détecte les éléments qui contiennent un ensemble d’instructions et d’instructions écrites dans les 25 principaux langages de programmation informatique utilisés sur GitHub
     - 3.0
     - C
     - C#
@@ -99,9 +99,9 @@ Microsoft 365 est fourni avec cinq classifieurs prédéfinis :
 > [!NOTE]
 > Le code source est formé pour détecter si la majorité du texte est du code source. Il ne détecte pas le texte de code source qui est intercalé en texte brut.
 
-- **Harcèlement**: détecte une catégorie spécifique d’éléments de texte de langue choquants liés à un comportement offensant ciblant une ou plusieurs personnes en fonction des caractéristiques suivantes : race, ethnique, religion, origine nationale, sexe, orientation sexuelle, âge, handicap
-- **Blasphème**: détecte une catégorie spécifique d’éléments de texte en langue choquante qui contiennent des expressions qui déportent la plupart des utilisateurs
-- **Menace**: détecte une catégorie spécifique d’éléments de texte de langue offensant liés aux menaces pour valider la violence ou causer des dommages ou dégâts physiques à une personne ou à une propriété.
+- **Harcèlement** : détecte une catégorie spécifique d’éléments de texte de langue choquants liés à un comportement offensant ciblant une ou plusieurs personnes en fonction des caractéristiques suivantes : race, ethnique, religion, origine nationale, sexe, orientation sexuelle, âge, handicap
+- **Blasphème** : détecte une catégorie spécifique d’éléments de texte en langue choquante qui contiennent des expressions qui déportent la plupart des utilisateurs
+- **Menace** : détecte une catégorie spécifique d’éléments de texte de langue offensant liés aux menaces pour valider la violence ou causer des dommages ou dégâts physiques à une personne ou à une propriété.
 
 Ces éléments apparaissent dans la vue classification des données du **Centre de conformité Microsoft 365**  >  **(aperçu)**  >  **Trainable classifiers** avec le statut `Ready to use` .
 
@@ -113,9 +113,6 @@ Ces éléments apparaissent dans la vue classification des données du **Centre 
 ### <a name="custom-classifiers"></a>Classifieurs personnalisés
 
 Lorsque les classifieurs prédéfinis ne répondent pas à vos besoins, vous pouvez créer et former vos propres classifieurs. La création de vos propres tâches est beaucoup plus importante, mais elles seront beaucoup mieux adaptées à vos besoins.
-
-> [!IMPORTANT]
-> Par défaut, seul l’utilisateur qui crée un classifieur personnalisé peut former et examiner les prévisions effectuées par ce classifieur. Si vous souhaitez que d’autres personnes puissent former et passer en revue les prévisions de classifieur, consultez la rubrique [accorder à d’autres personnes les droits de formation et de révision](classifier-get-started-with.md#give-others-train-and-review-rights).
 
 #### <a name="process-flow-for-creating-custom-classifiers"></a>Flux de processus pour la création de classifieurs personnalisés
 

@@ -12,16 +12,16 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 1523e80f187cd7df6d8e44b91b85c39608e2f49c
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 6eb8bf91f5af60658686066b75b33b7a8dabe6bc
+ms.sourcegitcommit: e03bc2945e63f7f2638257e530056ae9283b45d9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416488"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49070868"
 ---
 # <a name="insider-risk-management-content-explorer"></a>Explorateur de contenu de gestion des risques Insiders
 
-L’Explorateur de contenu de gestion des risques inSided permet aux utilisateurs d’avoir un rôle d' **enquêteur de gestion des risques Insiders** pour examiner le contexte et les détails des communications capturées dans les alertes. Pour toutes les alertes, les copies de données et les fichiers de messages sont archivés en tant qu’instantanés dans le temps des éléments, tout en conservant les fichiers et les messages d’origine dans les sources de stockage. La copie des données et des messages est transparente pour l’utilisateur associé à l’alerte et pour le propriétaire du contenu. Les paramètres d’autorisation et les droits d’accès pour les données sont conservés pour le contenu copié, ainsi que les messages et analystes de risques, et les investigateurs ont besoin de ces autorisations et droits s’ils doivent ouvrir et afficher les fichiers. Chaque fichier et message reçoit automatiquement un ID de fichier unique dans le cas d’une gestion des risques inSided à des fins de gestion. Les documents associés à des activités d’indicateur d’appareil ne sont pas inclus dans l’Explorateur de contenu.
+L’Explorateur de contenu de gestion des risques inSided permet aux utilisateurs de se voir attribuer le rôle *Insider Management investigations* pour examiner le contexte et les détails du contenu associé à l’activité des alertes. Pour toutes les alertes confirmées à un cas, les copies de données et les fichiers de messages sont archivés en tant qu’instantanés dans le temps des éléments, tout en conservant les fichiers et les messages d’origine dans les sources de stockage. La copie des données et des messages est transparente pour l’utilisateur associé à l’alerte et pour le propriétaire du contenu. Si le contenu inclut des autorisations de gestion des droits relatifs à l’information, ces autorisations sont conservées pour le contenu copié et les utilisateurs auxquels le rôle d' *enquêteur de gestion des risques Insiders* auront besoin de ces autorisations et droits s’ils doivent ouvrir et afficher les fichiers. Chaque fichier et chaque message reçoivent automatiquement un ID de fichier unique dans le cas d’une gestion des risques inSided à des fins de gestion. Les documents associés à des activités d’indicateur d’appareil ne sont pas inclus dans l’Explorateur de contenu.
 
 ![Explorateur de contenu de gestion des risques Insiders](../media/insider-risk-content-explorer.png)
 
@@ -44,7 +44,7 @@ Pour ajouter ou supprimer des en-têtes de colonne pour la file d’attente de c
 | **Thème dominant** | Thème dominant calculé pour l’analyse. |
 | **ID de jeu de courrier** | ID de groupe pour tous les messages dans le même groupe de courriers. |
 | **ID de famille** | ID de famille groupe tous les éléments ; pour le courrier électronique, cette colonne inclut le message et toutes les pièces jointes ; pour les documents, cette colonne inclut le document et tous les éléments incorporés. |
-| **Classe file** | Pour le contenu provenant de SharePoint et OneDrive : **document**; pour le contenu à partir d’Exchange : * * E-mail ou **pièce jointe**. |
+| **Classe file** | Pour le contenu provenant de SharePoint et OneDrive : **document** ; pour le contenu à partir d’Exchange : * * E-mail ou **pièce jointe**. |
 | **ID de fichier** | Identificateur de document unique dans le cas. |
 | **Icône de type de fichier** | Extension d’un fichier ; par exemple, docx, One, pptx ou xlsx. Ce champ est la même propriété que la propriété de site FileExtension. |
 | **ID** | Identificateur GUID du fichier. |
@@ -53,7 +53,7 @@ Pour ajouter ou supprimer des en-têtes de colonne pour la file d’attente de c
 | **Dernière modification** | Date de la dernière modification apportée à un document. |
 | **Marqué comme représentant** | Un document de chaque ensemble de doublons exact est marqué comme représentant. |
 | **Type de message** | Type de message électronique à rechercher. Valeurs possibles : contacts, documents, courrier électronique, données externes, télécopies, messagerie instantanée, journaux, réunions, Microsoft Teams (renvoie les éléments des conversations, des réunions et des appels dans Microsoft Teams), notes, publications, RSSFeeds, tâches, messagerie vocale |
-| **Auront** | Liste de tous les participants d’un message ; par exemple, expéditeur, à, CC, CCI. |
+| **Participants** | Liste de tous les participants d’un message ; par exemple, expéditeur, à, CC, CCI. |
 | **ID de tableau croisé dynamique** | ID d’un tableau croisé dynamique. |
 | **Received** | Date à laquelle un message électronique a été reçu par un destinataire. Ce champ est la même propriété que la propriété e-mail reçue. |
 | **Destinataires** | Tous les champs de destinataire dans un message électronique. Ces champs sont à, CC et CCI. |
@@ -124,10 +124,10 @@ Le tableau suivant répertorie les conditions de propriété de message électro
 | **Date de début de la réunion** | Date de début de réunion pour les réunions. |
 | **Type de message** | Type de message électronique à rechercher. Valeurs possibles : contacts, documents, courrier électronique, données externes, télécopies, messagerie instantanée, journaux, réunions, Microsoft Teams (renvoie les éléments des conversations, des réunions et des appels dans Microsoft Teams), notes, publications, RSSFeeds, tâches, messagerie vocale |
 | **Domaine du participant** | Liste de tous les domaines des participants d’un message. |
-| **Auront** | Tous les champs de personnes dans un message électronique. Ces champs sont from, to, CC et BCC. |
+| **Participants** | Tous les champs de personnes dans un message électronique. Ces champs sont from, to, CC et BCC. |
 | **Received** | Date à laquelle un message électronique a été reçu par un destinataire. |
 | **Domaines de destinataires** | Liste de tous les domaines de destinataires d’un message. |
-| **Sender** | Champ sender (from) pour les types de message.  Le format **est \<SmtpAddress> DisplayName **. |
+| **Sender** | Champ sender (from) pour les types de message.  Le format **est \<SmtpAddress> DisplayName**. |
 | **Domaine de l’expéditeur** | Domaine de l’expéditeur. |
 | **Subject** | Texte de la ligne d’objet d’un message électronique.  <br/> **Remarque :** Lorsque vous utilisez la propriété Subject dans une requête, la recherche renvoie tous les messages dans lesquels la ligne d’objet contient le texte que vous recherchez. En d’autres termes, la requête ne renvoie que les messages qui ont une correspondance exacte. Par exemple, si vous recherchez `subject:"Quarterly Financials"` , vos résultats incluent les messages dont l’objet est « trimestriel financials 2018 ». |
 | **To** | Champ À d’un message électronique. |
@@ -148,7 +148,7 @@ Le tableau suivant répertorie les conditions de propriété documents disponibl
 | **Custodian** | Nom du dépositaire auquel l’élément a été associé. |
 | **Thème dominant** | Thème dominant calculé pour l’analyse. |
 | **ID de famille** | ID de famille groupe tous les éléments ; pour le courrier électronique, ce champ inclut le message et toutes les pièces jointes ; pour les documents, ce champ inclut le document et tous les éléments incorporés. |
-| **Classe file** | Pour le contenu provenant de SharePoint et OneDrive : **document**; pour le contenu à partir d’Exchange : * * E-mail ou **pièce jointe**. |
+| **Classe file** | Pour le contenu provenant de SharePoint et OneDrive : **document** ; pour le contenu à partir d’Exchange : * * E-mail ou **pièce jointe**. |
 | **Types de fichiers** | Extension d’un fichier ; par exemple, docx, One, pptx ou xlsx. |
 | **A un participant à l’avocat** | True lorsqu’au moins un des participants figure dans la liste des avocats ; Sinon, la valeur est false. |
 | **ID non modifiable** | ID non modifiable tel qu’il est stocké dans Office 365. |

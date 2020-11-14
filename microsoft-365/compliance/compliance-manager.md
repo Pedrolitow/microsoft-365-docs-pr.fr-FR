@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le gestionnaire de conformité Microsoft aide les organisations à simplifier et à automatiser les évaluations des risques et suggère des actions recommandées pour résoudre les risques.
-ms.openlocfilehash: d7136368a1c9726d1a77a0c99e717b98e1920242
-ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
+ms.openlocfilehash: 4508f07b0077d409de1ac033de67d20d1c3f2a7e
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48791802"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49072933"
 ---
 # <a name="microsoft-compliance-manager"></a>Gestionnaire de conformité Microsoft
 
@@ -30,7 +30,7 @@ ms.locfileid: "48791802"
 
 ## <a name="whats-new-the-ga-release-of-compliance-manager"></a>Nouveautés : la version GA du gestionnaire de conformité
 
-Le gestionnaire de conformité est désormais généralement disponible (GA) en tant que solution de gestion de la conformité de bout en bout dans le [Centre de conformité Microsoft 365](microsoft-365-compliance-center.md). Avec cette version, le gestionnaire de conformité termine la transition à partir de son emplacement précédent dans le portail d’approbation de service Microsoft.
+Le gestionnaire de conformité est désormais généralement disponible (GA) en tant que solution de gestion de la conformité de bout en bout dans le [Centre de conformité Microsoft 365](microsoft-365-compliance-center.md). Avec cette version, le gestionnaire de conformité termine la transition à partir de son emplacement précédent dans le portail d’approbation de service Microsoft. Le gestionnaire de conformité est également désormais disponible pour les clients modérés de la communauté américaine (GCC).
 
 Le début de la préversion publique du score de conformité est devenu un outil centralisé doté de fonctionnalités de gestion de la conformité améliorées et d’une plus grande facilité d’utilisation.  La version GA offre une plus grande collection d’évaluations prédéfinies pour vous aider à mettre à l’échelle vos activités de conformité.
 

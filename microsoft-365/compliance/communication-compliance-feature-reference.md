@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 9cb1afe0d8983943b83661880b4b41a6138703ad
-ms.sourcegitcommit: 5a355bde865369f64ea1788a378da23c65b1d249
+ms.openlocfilehash: e8ce5a144c7361cd483a903dc3e287a4a51a508b
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48930207"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49073071"
 ---
 # <a name="communication-compliance-feature-reference"></a>Référence de la fonctionnalité de conformité des communications
 
@@ -58,7 +58,7 @@ En fonction de la façon dont vous souhaitez gérer les stratégies de communica
 
 Sélectionnez l’une des options de groupe de rôles suivantes lors de la configuration de la conformité des communications :
 
-|**Role**|**Autorisations de rôle**|
+|**Groupe de rôles**|**Autorisations de groupe de rôles**|
 |:-----|:-----|
 | **Conformité de la communication** | Utilisez ce groupe de rôles pour gérer la conformité des communications de votre organisation dans un seul groupe. En ajoutant tous les comptes d’utilisateur pour les administrateurs, analystes, investigateurs et visionneuses désignés, vous pouvez configurer des autorisations de conformité de la communication dans un seul groupe. Ce groupe de rôles contient tous les rôles d’autorisation de conformité de communication. Cette configuration est la méthode la plus simple pour démarrer rapidement la conformité de la communication et convient aux organisations qui n’ont pas besoin d’autorisations distinctes définies pour des groupes d’utilisateurs distincts. |
 | **Administrateur de conformité de communication** | Utilisez ce groupe de rôles pour configurer initialement la conformité de la communication et par la suite pour séparer les administrateurs de conformité des communications en un groupe défini. Les utilisateurs affectés à ce groupe de rôles peuvent créer, lire, mettre à jour et supprimer des stratégies de conformité de communication, des paramètres globaux et des affectations de groupes de rôles. Les utilisateurs affectés à ce groupe de rôles ne peuvent pas afficher les alertes de message. |
@@ -241,7 +241,7 @@ La protection de la confidentialité des utilisateurs qui ont des correspondance
 
 Pour les utilisateurs disposant d’une correspondance de conformité de communication, vous pouvez choisir l’un des paramètres suivants dans les **paramètres de conformité de communication** :
 
-- **Afficher les versions anonymes des** noms d’utilisateur : les noms d’utilisateur sont rendus anonymes pour empêcher les administrateurs, les analystes, les enquêteurs de données et les relecteurs de voir qui est associé à des alertes de stratégie. Par exemple, un utilisateur « gracieuses Taylor » apparaît avec un pseudonyme aléatoire tel que « AnonIS8-988 » dans tous les domaines de l’expérience de conformité des communications. Le choix de ce paramètre permet d'anonymiser tous les utilisateurs ayant des correspondances de stratégie actuelle et passée et s’applique à toutes les stratégies. Les informations de profil utilisateur dans les détails de l’alerte de conformité des communications ne seront pas disponibles lorsque cette option est sélectionnée. Toutefois, les noms d’utilisateur sont affichés lors de l’ajout de nouveaux utilisateurs à des stratégies existantes ou lors de l’affectation d’utilisateurs à de nouvelles stratégies. Si vous choisissez de désactiver ce paramètre, les noms d’utilisateur sont affichés pour tous les utilisateurs qui ont des correspondances de stratégie actuelle ou passée.
+- **Afficher les versions anonymes des** noms d’utilisateur : les noms d’utilisateur sont rendus anonymes pour empêcher les utilisateurs du groupe de rôles *analyste de conformité de communication* de voir qui est associé à des alertes de stratégie. Les utilisateurs du groupe de rôles contrôle de *conformité des communications* verront toujours les noms d’utilisateur, pas les versions anonymes. Par exemple, un utilisateur « gracieuses Taylor » apparaît avec un pseudonyme aléatoire tel que « AnonIS8-988 » dans tous les domaines de l’expérience de conformité des communications. Le choix de ce paramètre permet d'anonymiser tous les utilisateurs ayant des correspondances de stratégie actuelle et passée et s’applique à toutes les stratégies. Les informations de profil utilisateur dans les détails de l’alerte de conformité des communications ne seront pas disponibles lorsque cette option est sélectionnée. Toutefois, les noms d’utilisateur sont affichés lors de l’ajout de nouveaux utilisateurs à des stratégies existantes ou lors de l’affectation d’utilisateurs à de nouvelles stratégies. Si vous choisissez de désactiver ce paramètre, les noms d’utilisateur sont affichés pour tous les utilisateurs qui ont des correspondances de stratégie actuelle ou passée.
 - **Ne pas afficher les versions anonymes des** noms d’utilisateur : les noms d’utilisateur sont affichés pour toutes les correspondances de stratégie actuelle et passée pour les alertes de conformité de communication. Les informations de profil utilisateur (nom, titre, alias, organisation ou service) sont affichées pour l’utilisateur pour toutes les alertes de conformité de communication.
 
 ## <a name="notice-templates"></a>Modèles de notifications

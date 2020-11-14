@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 6e0f8e2661692930469aff85e0a7eeef2dd647e0
-ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
+ms.openlocfilehash: bdfb99531035054e0d6a27bc2c8b82c7f641ff2d
+ms.sourcegitcommit: d333d82fd5e4f3265e8b9372094e85875bee6fe5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "48948385"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49071940"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>Loi HIPAA (Health Insurance Portability and Accountability Act) & Hi-Tech
 
@@ -114,5 +114,5 @@ Pour aider les clients avec cette tâche, Microsoft a publié ces guides :
 - [Conditions de Microsoft Online Services](https://aka.ms/Online-Services-Terms)
 - [Cloud Microsoft Service publique](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Présentation de la conformité HIPAA avec Azure](https://www.youtube.com/embed/6ptdye1LZ5k?autoplay=0)(19 mai 2016)
-- [Exemple de plan HITRUST HIPAA](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust/)
+- [Exemple de plan HITRUST HIPAA](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust-9-2)
 - [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

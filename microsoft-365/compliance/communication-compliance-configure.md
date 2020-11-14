@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: f4cd713abdda0eba20e0b783ff89653ae02efb72
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: b9d7655377b1bb5ff4810fd469efd092bd7a5f67
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464084"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49072923"
 ---
 # <a name="get-started-with-communication-compliance"></a>Prise en main de la conformité des communications
 
@@ -65,7 +65,7 @@ En fonction de la façon dont vous souhaitez gérer les stratégies de communica
 
 Sélectionnez l’une des options de groupe de rôles suivantes lors de la configuration de la conformité des communications :
 
-|**Role**|**Autorisations de rôle**|
+| Role | Autorisations de rôle |
 |:-----|:-----|
 | **Conformité de la communication** | Utilisez ce groupe de rôles pour gérer la conformité des communications de votre organisation dans un seul groupe. En ajoutant tous les comptes d’utilisateur pour les administrateurs, analystes, investigateurs et visionneuses désignés, vous pouvez configurer des autorisations de conformité de la communication dans un seul groupe. Ce groupe de rôles contient tous les rôles d’autorisation de conformité de communication. Cette configuration est la méthode la plus simple pour démarrer rapidement la conformité de la communication et convient aux organisations qui n’ont pas besoin d’autorisations distinctes définies pour des groupes d’utilisateurs distincts. |
 | **Administrateur de conformité de communication** | Utilisez ce groupe de rôles pour configurer initialement la conformité de la communication et par la suite pour séparer les administrateurs de conformité des communications en un groupe défini. Les utilisateurs affectés à ce groupe de rôles peuvent créer, lire, mettre à jour et supprimer des stratégies de conformité de communication, des paramètres globaux et des affectations de groupes de rôles. Les utilisateurs affectés à ce groupe de rôles ne peuvent pas afficher les alertes de message. |
@@ -85,7 +85,7 @@ Sélectionnez l’une des options de groupe de rôles suivantes lors de la confi
 
 5. Sélectionnez **Ajouter** , puis activez la case à cocher de tous les utilisateurs que vous souhaitez ajouter au groupe de rôles de *conformité de communication* .
 
-6. Sélectionnez **Ajouter**, puis **Terminé**.
+6. Sélectionnez **Ajouter** , puis **Terminé**.
 
 7. Sélectionnez **Enregistrer** pour ajouter les utilisateurs au groupe de rôles. Sélectionnez **Fermer** pour effectuer les étapes
 
@@ -103,7 +103,7 @@ Utilisez cette option pour affecter des utilisateurs à des groupes de rôles sp
 
 5. Sélectionnez **Ajouter** , puis activez la case à cocher de tous les utilisateurs que vous souhaitez ajouter au groupe de rôles.
 
-6. Sélectionnez **Ajouter**, puis **Terminé**.
+6. Sélectionnez **Ajouter** , puis **Terminé**.
 
 7. Sélectionnez **Enregistrer** pour ajouter les utilisateurs au groupe de rôles.
 
@@ -125,10 +125,10 @@ Pour obtenir des instructions détaillées sur l’activation de l’audit, cons
 
 Utilisez le tableau suivant pour vous aider à configurer les groupes au sein de votre organisation pour les stratégies de conformité de communication :
 
-| **Membre de la stratégie** | **Groupes pris en charge** | **Groupes non pris en charge** |
+| Membre de la stratégie | Groupes pris en charge | Groupes non pris en charge |
 |:-----|:-----|:-----|
-|Utilisateurs supervisés <br> Utilisateurs non supervisés | Groupes de distribution <br> Groupes Microsoft 365 | Groupes de distribution dynamique |
-| Relecteurs | Aucun | Groupes de distribution <br> groupes de distribution dynamiques <br> Groupes de sécurité à extension messagerie |
+|Utilisateurs supervisés <br> Utilisateurs non supervisés | Groupes de distribution <br> Groupes Microsoft 365 | groupes de distribution dynamiques <br> Groupes de sécurité à extension messagerie |
+| Relecteurs | Néant | Groupes de distribution <br> groupes de distribution dynamiques <br> Groupes de sécurité à extension messagerie |
   
 Lorsque vous affectez un groupe de distribution dans la stratégie, la stratégie surveille toutes les conversations par courrier électronique et teams à partir de chaque utilisateur dans le groupe de distribution. Lorsque vous affectez un groupe Microsoft 365 dans la stratégie, la stratégie analyse tous les messages électroniques et les conversations de teams envoyés à ce groupe, et non les messages électroniques et les conversations reçus par chaque membre du groupe.
 
@@ -140,11 +140,11 @@ Si vous êtes une organisation disposant d’un déploiement Exchange sur site o
 Pour plus d’informations sur la configuration des groupes, voir :
 
 - [Création et gestion de groupes de distribution](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
-- [Vue d’ensemble des groupes Microsoft 365](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
+- [Vue d’ensemble des groupes Microsoft 365](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups)
 
 ## <a name="step-4-optional-verify-your-yammer-tenant-is-in-native-mode"></a>Étape 4 (facultatif) : Vérifiez que votre client Yammer est en mode natif
 
-En mode natif, tous les utilisateurs de Yammer se trouvent dans Azure Active Directory (AAD), tous les groupes sont des Groupes Office 365 et tous les fichiers sont stockés dans SharePoint Online. Votre client Yammer doit être en mode natif pour que les stratégies de conformité de communication analysent et identifient les conversations dangereuses dans les messages privés et les conversations communautaires dans Yammer.
+En mode natif, tous les utilisateurs de Yammer sont dans Azure Active Directory (Azure AD), tous les groupes sont des groupes Office 365 et tous les fichiers sont stockés dans SharePoint Online. Votre client Yammer doit être en mode natif pour que les stratégies de conformité de communication analysent et identifient les conversations dangereuses dans les messages privés et les conversations communautaires dans Yammer.
 
 Pour plus d’informations sur la configuration de yammer en mode natif, voir :
 
@@ -167,25 +167,36 @@ Pour plus d’informations sur la configuration de yammer en mode natif, voir :
     Si vous choisissez un modèle de stratégie pour créer une stratégie, vous devez :
 
     - Vérifiez ou mettez à jour le nom de la stratégie. Les noms de stratégie ne peuvent pas être modifiés une fois la stratégie créée.
+    
     - Choisissez les utilisateurs ou les groupes à superviser, y compris le choix des utilisateurs ou des groupes que vous souhaitez exclure.
+    
     - Choisissez les relecteurs de la stratégie. Les relecteurs sont des utilisateurs individuels et tous les relecteurs doivent avoir des boîtes aux lettres hébergées sur Exchange Online. Les relecteurs ajoutés ici sont les relecteurs que vous pouvez choisir lors de la réaffectation d’une alerte dans le flux de travail d’enquête et de correction. Lorsque les relecteurs sont ajoutés à une stratégie, ils reçoivent automatiquement un message électronique les avertissant de l’affectation à la stratégie et fournissent des liens vers des informations sur le processus de révision.
+    
     - Choisissez un champ de condition limité, généralement un type d’informations sensibles ou un dictionnaire de mots clés à appliquer à la stratégie.
 
     Si vous choisissez d’utiliser l’Assistant stratégie pour créer une stratégie personnalisée, vous devez :
 
     - Donnez un nom et une description à la stratégie. Les noms de stratégie ne peuvent pas être modifiés une fois la stratégie créée.
+    
     - Choisissez les utilisateurs ou les groupes à superviser, y compris tous les utilisateurs de votre organisation, des utilisateurs et des groupes spécifiques, ou d’autres utilisateurs et groupes que vous souhaitez exclure.
+    
     - Choisissez les relecteurs de la stratégie. Les relecteurs sont des utilisateurs individuels et tous les relecteurs doivent avoir des boîtes aux lettres hébergées sur Exchange Online. Les relecteurs ajoutés ici sont les relecteurs que vous pouvez choisir lors de la réaffectation d’une alerte dans le flux de travail d’enquête et de correction. Lorsque les relecteurs sont ajoutés à une stratégie, ils reçoivent automatiquement un message électronique les avertissant de l’affectation à la stratégie et fournissent des liens vers des informations sur le processus de révision.
+    
     - Choisissez les canaux de communication à analyser, y compris Exchange, Microsoft Teams, Yammer ou Skype entreprise. Vous choisirez également d’analyser les sources tierces si vous avez configuré un connecteur dans Microsoft 365.
+    
     - Choisissez la direction de communication à surveiller, y compris les communications entrantes, sortantes ou internes.
+    
     - Définir les [conditions](communication-compliance-feature-reference.md#ConditionalSettings)de la stratégie de conformité de communication. Vous pouvez choisir entre une adresse de message, un mot clé, un type de fichier et une condition de correspondance de taille.
+    
     - Choisissez si vous souhaitez inclure des types d’informations sensibles. Cette étape vous permet de sélectionner les types d’informations sensibles par défaut et personnalisés. Sélectionnez des types d’informations sensibles personnalisés ou des dictionnaires de mots clés personnalisés existants dans l’Assistant stratégie de conformité des communications. Si nécessaire, vous pouvez créer ces éléments avant d’exécuter l’Assistant. Vous pouvez également créer des types d’informations sensibles à partir de l’Assistant stratégie de conformité des communications.
-    - Choisissez si vous souhaitez activer les classifieurs. Les classifieurs peuvent détecter une langue et des images inappropriées envoyées ou reçues dans le corps de messages électroniques ou d’autres types de texte. Vous pouvez choisir les classifieurs intégrés suivants : *menace*, *blasphèmes*, *harcèlement ciblé*, *images adultes*, *images Racy*et *images Gory*.
+    
+    - Choisissez si vous souhaitez activer les classifieurs. Les classifieurs peuvent détecter une langue et des images inappropriées envoyées ou reçues dans le corps de messages électroniques ou d’autres types de texte. Vous pouvez choisir les classifieurs intégrés suivants : *menace* , *blasphèmes* , *harcèlement ciblé* , *images adultes* , *images Racy* et *images Gory*.
 
-    >[!CAUTION]
-    >Nous déprécions le **langage inconvenant** classifieur intégré, car il génère un grand nombre de faux positifs. Ne l’utilisez pas et, si vous l’utilisez, vous devez déconnecter vos processus d’entreprise. Nous vous recommandons d’utiliser à la place les classifieurs intégrés de **menace**, de **blasphème**et de **harcèlement ciblé** .
+      > [!CAUTION]
+      > Nous déprécions le **langage inconvenant** classifieur intégré, car il génère un grand nombre de faux positifs. Ne l’utilisez pas et, si vous l’utilisez, vous devez déconnecter vos processus d’entreprise. Nous vous recommandons d’utiliser à la place les classifieurs intégrés de **menace** , de **blasphème** et de **harcèlement ciblé** .
 
     - Définir le pourcentage de communications à réviser.
+    
     - Examinez vos sélections de stratégie et créez la stratégie.
 
 5. Sélectionnez **créer une stratégie** lors de l’utilisation des modèles ou de l' **envoi** lors de l’utilisation de l’Assistant stratégie personnalisée.
@@ -227,10 +238,11 @@ Une fois que vous avez créé une stratégie de conformité de communication, il
 Procédez comme suit pour tester votre stratégie de conformité de communication :
 
 1. Ouvrez un client de messagerie, Microsoft teams ou Yammer lors de la connexion en tant qu’utilisateur supervisé défini dans la stratégie que vous souhaitez tester.
+
 2. Envoyez un message électronique, une conversation Microsoft teams ou un message Yammer correspondant aux critères que vous avez définis dans la stratégie de conformité de communication. Ce test peut être un mot clé, une taille de pièce jointe, un domaine, etc. Assurez-vous de déterminer si vos paramètres conditionnels configurés dans la stratégie sont trop restrictifs ou trop stricts.
 
     > [!NOTE]
-    > Les communications de tous les canaux sources peuvent prendre jusqu’à 24 heures pour être entièrement traitées dans une stratégie.
+    > Le traitement complet des messages électroniques peut prendre jusqu’à 24 heures dans une stratégie. Les communications dans Microsoft Teams, Yammer et les plateformes tierces peuvent prendre jusqu’à 48 heures pour être entièrement traitées dans une stratégie.
 
 3. Connectez-vous à Microsoft 365 en tant que réviseur désigné dans la stratégie de conformité de communication. Accédez à **Communication compliance**  >  **alertes** de conformité des communications pour afficher les alertes correspondant à vos stratégies.
 
@@ -238,6 +250,6 @@ Procédez comme suit pour tester votre stratégie de conformité de communicatio
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Une fois que vous avez terminé ces étapes pour créer votre première stratégie de conformité de communication, vous commencerez à recevoir des alertes des indicateurs d’activité après environ 24 heures. Configurez des stratégies supplémentaires selon vos besoins à l’aide des instructions de l’étape 5 de cet article.
+Une fois que vous avez terminé ces étapes pour créer votre première stratégie de conformité de communication, vous commencerez à recevoir des alertes des indicateurs d’activité après 24-48 heures. Configurez des stratégies supplémentaires selon vos besoins à l’aide des instructions de l’étape 5 de cet article.
 
 Pour en savoir plus sur l’examen des alertes de conformité des communications, consultez la rubrique [examiner et corriger les alertes de conformité des communications](communication-compliance-investigate-remediate.md).
