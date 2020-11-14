@@ -3,7 +3,7 @@ title: Gérer les comptes d’utilisateurs, les licences et les groupes Microsof
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/17/2020
+ms.date: 11/13/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 26b9ff81-93b0-4251-beaf-3c9f1d7c80c8
 description: Découvrez comment gérer les comptes d’utilisateur, les licences et les groupes Microsoft 365 avec PowerShell.
-ms.openlocfilehash: 0c6ca6a4165b616097405a9de178c254aa489a3c
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: ec60fcfe3c3d2c0e26cb2cca6a56741067d154c0
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47429985"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49073124"
 ---
 # <a name="manage-microsoft-365-user-accounts-licenses-and-groups-with-powershell"></a>Gérer les comptes d’utilisateurs, les licences et les groupes Microsoft 365 avec PowerShell
 
@@ -40,6 +40,7 @@ Pour plus d'informations, consultez les articles suivants :
 - [Attribution de rôles aux comptes d’utilisateurs](assign-roles-to-user-accounts-with-microsoft-365-powershell.md)
 - [Suppression et restauration de comptes d’utilisateurs](delete-and-restore-user-accounts-with-microsoft-365-powershell.md)
 - [Blocage de comptes d’utilisateurs](block-user-accounts-with-microsoft-365-powershell.md)
+- [Mots de passe](manage-passwords-with-microsoft-365-powershell.md)
 
 ## <a name="licenses-and-services"></a>Licences et services
 - [Affichage des licences et des services](view-licenses-and-services-with-microsoft-365-powershell.md)

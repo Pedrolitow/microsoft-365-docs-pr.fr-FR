@@ -18,12 +18,12 @@ ms.collection:
 - remotework
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: f9c26e7e4af99174c5723b44c59d7279ca93afa5
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 19e121ce3f85dc31c3bf81c4750300c4016b1222
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846447"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49072770"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Stratégies communes pour les identités et l’accès aux appareils
 
@@ -35,8 +35,9 @@ Ce guide explique comment déployer les stratégies recommandées dans un enviro
 
 Le diagramme suivant illustre l’ensemble de stratégies recommandé. Elle indique le niveau de protection auquel chaque stratégie s’applique et indique si les stratégies s’appliquent aux PC, téléphones et tablettes, ou aux deux catégories d’appareils. Il indique également l’emplacement où vous configurez ces stratégies.
 
-[ ![ Stratégies courantes de configuration de l’identité et de l’accès aux appareils](../../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png) 
- [voir une version plus grande de cette image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
+[![Stratégies courantes de configuration de l’accès aux appareils et aux identités](../../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
+
+[Afficher une version plus grande de cette image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
 
 Voici un résumé PDF d’une page avec des liens vers les stratégies individuelles :
 
@@ -107,7 +108,7 @@ Le tableau suivant décrit les paramètres de stratégie d’accès conditionnel
 
 Dans la section **affectations** :
 
-|Paramètres|Propriétés|Valeurs|Remarques|
+|Paramètre|Propriétés|Valeurs|Remarques|
 |:---|:---------|:-----|:----|
 |Utilisateurs et groupes|Inclure| **Sélectionnez utilisateurs et groupes > utilisateurs et groupes** : sélectionnez des groupes spécifiques contenant des comptes d’utilisateurs ciblés. |Commencez par le groupe qui inclut les comptes d’utilisateur pilote.|
 ||Exclure| **Utilisateurs et groupes** : sélectionnez votre groupe d’exceptions d’accès conditionnel ; comptes de service (identités d’application).|L’appartenance doit être modifiée en fonction de vos besoins et de manière temporaire.|
@@ -129,7 +130,7 @@ Appliquez les paramètres de niveau de risque en fonction du niveau de protectio
 
 Dans la section **contrôles d’accès** :
 
-|Paramètres|Propriétés|Valeurs|Action|
+|Paramètre|Propriétés|Valeurs|Action|
 |:---|:---------|:-----|:----|
 |Accorder|**Grant access**| | Sélectionner |
 |||**Exiger l’authentification multifacteur**| Vérifier |
@@ -150,7 +151,7 @@ Consultez [cet article](../../enterprise/microsoft-365-client-support-modern-aut
 
 Dans la section **affectations** :
 
-|Paramètres|Propriétés|Valeurs|Remarques|
+|Paramètre|Propriétés|Valeurs|Remarques|
 |:---|:---------|:-----|:----|
 |Utilisateurs et groupes|Inclure| **Sélectionnez utilisateurs et groupes > utilisateurs et groupes** : sélectionnez des groupes spécifiques contenant des comptes d’utilisateurs ciblés. |Commencez par le groupe qui inclut les comptes d’utilisateur pilote.|
 ||Exclure| **Utilisateurs et groupes** : sélectionnez votre groupe d’exceptions d’accès conditionnel ; comptes de service (identités d’application).|L’appartenance doit être modifiée en fonction de vos besoins et de manière temporaire.|
@@ -160,7 +161,7 @@ Dans la section **affectations** :
 
 Dans la section **contrôles d’accès** :
 
-|Paramètres|Propriétés|Valeurs|Action|
+|Paramètre|Propriétés|Valeurs|Action|
 |:---|:---------|:-----|:----|
 |Accorder|**Bloquer l’accès**| | Sélectionner |
 ||**Demander tous les contrôles sélectionnés** ||Sélectionner|
@@ -192,7 +193,7 @@ Dans la deuxième section **affectations** :
 
 | Type | Propriétés | Valeurs                  | Action |
 |:-----|:-----------|:------------------------|:------|
-| Access | **Autoriser l’accès** |  | Sélectionner  |
+| Accès | **Autoriser l’accès** |  | Sélectionner  |
 |      |     | **Exiger le changement du mot de passe** | Vérifier  |
 |||||
 
@@ -301,13 +302,13 @@ Pour la **sécurité du système** , reportez-vous à ce tableau.
 
 |Type|Propriétés|Valeur|Action|
 |:---|:---------|:-----|:----|
-|Password|Exiger un mot de passe pour déverrouiller les appareils mobiles|Require (Rendre obligatoire)| Sélectionner |
+|Mot de passe|Exiger un mot de passe pour déverrouiller les appareils mobiles|Require (Rendre obligatoire)| Sélectionner |
 ||Mots de passe simples|Bloquer|Sélectionner|
 ||Type de mot de passe|Valeur par défaut du périphérique|Sélectionner|
-||Longueur minimale du mot de passe|6 |Type|
-||Nombre maximal de minutes d’inactivité avant que le mot de passe ne soit requis|15 |Type <br>Ce paramètre est pris en charge pour Android versions 4,0 et supérieures ou KNOX 4,0 et versions ultérieures. Pour les appareils iOS, il est pris en charge pour iOS 8,0 et versions ultérieures.|
+||Longueur minimale du mot de passe|6 |Type|
+||Nombre maximal de minutes d’inactivité avant que le mot de passe ne soit requis|15 |Type <br>Ce paramètre est pris en charge pour Android versions 4,0 et supérieures ou KNOX 4,0 et versions ultérieures. Pour les appareils iOS, il est pris en charge pour iOS 8,0 et versions ultérieures.|
 ||Expiration du mot de passe (jours)|41|Type|
-||Nombre de mots de passe précédents pour empêcher la réutilisation|5 |Type|
+||Nombre de mots de passe précédents pour empêcher la réutilisation|5 |Type|
 ||Exiger un mot de passe lorsque l’appareil revient de l’état inactif (mobile et holographique)|Require (Rendre obligatoire)|Disponible pour Windows 10 et versions ultérieures|
 |Chiffrement|Chiffrement du stockage des données sur l’appareil|Require (Rendre obligatoire)|Sélectionner|
 |Sécurité de l’appareil|-|Require (Rendre obligatoire)|Sélectionner|

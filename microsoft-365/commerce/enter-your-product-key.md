@@ -15,34 +15,30 @@ ms.collection:
 - commerce
 - Adm_NonTOC
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
-ms.assetid: 0199dd39-7c46-4875-af9b-588df3a9afea
 ROBOTS: NOINDEX
 description: Découvrez Comment échanger une clé de produit Microsoft 365 Business standard achetée auprès d’un détaillant.
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: 9dcf38937e6140f1b0b20688d1dac0a9f3962cbe
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 1c647efaa880096a9fc7713aa28960d563eff69d
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638362"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49072746"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Entrer votre clé de produit pour Microsoft 365 Business standard
 
-Si vous avez acheté Microsoft 365 Business standard auprès d’un détaillant, cet article vous aide à activer votre abonnement. 
+Si vous avez acheté Microsoft 365 Business standard auprès d’un détaillant, cet article vous aide à activer votre abonnement.
   
  **Vous avez besoin d'autres informations ?**
- **Pour obtenir de l’aide sur la famille microsoft 365 ou microsoft 365 personnel**, consultez la rubrique [utilisation de clés de produit avec Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx).  
+ **Pour obtenir de l’aide sur la famille microsoft 365 ou microsoft 365 personnel** , consultez la rubrique [utilisation de clés de produit avec Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx).  
  **Client de licence en volume ?** Si vous avez acheté Microsoft 365 pour les entreprises via un [programme de licence Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298), reportez-vous à l’article « [Entrez la clé de produit achetée auprès de Microsoft Open](purchases-from-microsoft-open.md)».
   
 ## <a name="activate-a-new-subscription"></a>Activer un nouvel abonnement
 
-1. Accédez à <a href="https://go.microsoft.com/fwlink/p/?LinkId=839911" target="_blank">Office.com/SetupKey</a>.
+1. Accédez à <a href="https://go.microsoft.com/fwlink/p/?LinkId=839911" target="_blank">https://microsoft365.com/setupbusiness</a>.
 
 2. Entrez votre clé de produit, puis cliquez sur **suivant**.
 
@@ -59,7 +55,7 @@ Si vous avez acheté Microsoft 365 Business standard auprès d’un détaillant,
 
 ## <a name="extend-the-expiration-date-or-add-a-license-to-an-existing-subscription"></a>Prolonger la date d’expiration ou ajouter une licence à un abonnement existant
 
-Pour utiliser une clé de produit afin d’étendre la date d’expiration ou d’ajouter une licence à votre abonnement Microsoft 365 entreprise standard existant, vous avez besoin d’une clé nouvelle et inutilisée pour le même plan Microsoft 365. La saisie de votre clé de produit Microsoft 365 ne fonctionnera pas, car une clé qui a déjà été échangée ne peut pas être réutilisée. Voir [Ajouter des licences ou étendre un abonnement payé pour l’utilisation d’une clé de produit](licenses/add-licenses-using-product-key.md).
+Pour prolonger la date d’expiration ou ajouter une licence à votre abonnement Microsoft 365 Business standard existant, utilisez une clé nouvelle et inutilisée pour le même plan Microsoft 365. La saisie de votre clé de produit Microsoft 365 ne fonctionnera pas, car une clé qui a déjà été échangée ne peut pas être réutilisée. Voir [Ajouter des licences ou étendre un abonnement payé pour l’utilisation d’une clé de produit](licenses/add-licenses-using-product-key.md).
 
 ## <a name="whats-next"></a>Étape suivante
 

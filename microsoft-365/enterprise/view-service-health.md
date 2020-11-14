@@ -26,12 +26,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Affichez l’état d’intégrité des services Microsoft 365 avant d’appeler le support pour voir s’il existe une interruption de service Active.
-ms.openlocfilehash: 20e19072e1a851fba20e556be696146b8ad57a2f
-ms.sourcegitcommit: 392f60efa0921c64ac1462dd63985cd156e6498a
+ms.openlocfilehash: b1819e455732d142c563f598433c410b0ae60882
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "48134074"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49072758"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>Comment vérifier l’état du service Microsoft 365
 
@@ -39,7 +39,8 @@ ms.locfileid: "48134074"
 
 Vous pouvez afficher l’intégrité de vos services Microsoft, y compris Office sur le Web, Yammer, Microsoft Dynamics CRM et les services Cloud de gestion des appareils mobiles, dans la page **État du service** dans le [centre d’administration 365 de Microsoft](https://go.microsoft.com/fwlink/p/?linkid=2024339). If you are experiencing problems with a cloud service, you can check the service health to determine whether this is a known issue with a resolution in progress before you call support or spend time troubleshooting.
 
-Si vous ne parvenez pas à vous connecter au service portail de service, vous pouvez utiliser la [page État du service](https://status.office365.com) pour vérifier les problèmes connus qui vous empêchent de vous connecter à votre client.
+Si vous ne parvenez pas à vous connecter au centre d’administration, vous pouvez utiliser la [page État du service](https://status.office365.com) pour vérifier les problèmes connus qui vous empêchent de vous connecter à votre client.  Pour plus d’informations sur certains événements, inscrivez-vous à [@MSFT365status](https://twitter.com/MSFT365Status) sur Twitter.
+
   
 ### <a name="how-to-check-service-health"></a>Vérifier l’état du service
 
@@ -50,7 +51,7 @@ Si vous ne parvenez pas à vous connecter au service portail de service, vous po
   
 2. Si vous n’utilisez pas le nouveau centre d’administration, sur la page d' **Accueil** , sélectionnez le bouton **essayer le nouveau centre d’administration** dans le coin supérieur droit.
 
-3. Pour afficher l’état du service, dans le centre d’administration, accédez à intégrité du service d' **intégrité**  >  **Service health**ou sélectionnez la carte d' **intégrité des services** dans le **tableau de bord d’accueil**. La carte de tableau de bord indique s’il existe un problème de service actif et des liens vers la page d’état détaillé du **service** .
+3. Pour afficher l’état du service, dans le centre d’administration, accédez à intégrité du service d' **intégrité**  >  **Service health** ou sélectionnez la carte d' **intégrité des services** dans le **tableau de bord d’accueil**. La carte de tableau de bord indique s’il existe un problème de service actif et des liens vers la page d’état détaillé du **service** .
   
 4. Sur la page **État du service** , l’état d’intégrité de chaque service Cloud est indiqué dans un tableau.
 
@@ -62,11 +63,11 @@ Pour filtrer votre vue sur les services rencontrant actuellement un incident, s�
 
 L’onglet **historique** affiche l’historique des incidents et des avis qui ont été résolus.
 
-Si vous rencontrez un problème avec un service Microsoft 365 et que vous ne l’avez pas mentionné dans la page **État du service** , nous vous le signalons en sélectionnant **signaler un problème**et achever la forme abrégée. Nous examinerons les données et rapports associés d’autres organisations pour voir l’étendue du problème et, si c’est le cas, il provenait de notre service. Si c’est le cas, nous l’ajouterons en tant que nouvel incident ou avis sur la page **État du service** , où vous pouvez suivre sa résolution. Si elle ne s’affiche pas dans la liste dans un délai de 30 minutes, contactez le support technique pour résoudre le problème.
+Si vous rencontrez un problème avec un service Microsoft 365 et que vous ne l’avez pas mentionné dans la page **État du service** , nous vous le signalons en sélectionnant **signaler un problème** et achever la forme abrégée. Nous examinerons les données et rapports associés d’autres organisations pour voir l’étendue du problème et, si c’est le cas, il provenait de notre service. Si c’est le cas, nous l’ajouterons en tant que nouvel incident ou avis sur la page **État du service** , où vous pouvez suivre sa résolution. Si elle ne s’affiche pas dans la liste dans un délai de 30 minutes, contactez le support technique pour résoudre le problème.
 
-Pour personnaliser l’affichage des services affichés dans le tableau de bord, sélectionnez **Preferences**  >  **affichage personnalisé**des préférences et désactivez les cases à cocher des services que vous souhaitez filtrer en dehors de votre affichage tableau de bord d’État du service. Assurez-vous que la case à cocher est activée pour chaque service que vous souhaitez surveiller.    
+Pour personnaliser l’affichage des services affichés dans le tableau de bord, sélectionnez **Preferences**  >  **affichage personnalisé** des préférences et désactivez les cases à cocher des services que vous souhaitez filtrer en dehors de votre affichage tableau de bord d’État du service. Assurez-vous que la case à cocher est activée pour chaque service que vous souhaitez surveiller.    
 
-Pour vous inscrire aux notifications par courrier électronique des nouveaux incidents affectant votre client et des changements d’État pour un incident actif, sélectionnez **Préférences**  >  **e-mail**, cliquez sur **Envoyer les notifications d’intégrité du service dans le courrier électronique**, puis spécifiez :
+Pour vous inscrire aux notifications par courrier électronique des nouveaux incidents affectant votre client et des changements d’État pour un incident actif, sélectionnez **Préférences**  >  **e-mail** , cliquez sur **Envoyer les notifications d’intégrité du service dans le courrier électronique** , puis spécifiez :
 
 - Jusqu’à deux adresses de messagerie.
 - Si vous souhaitez recevoir des notifications pour les incidents ou les avis
@@ -103,7 +104,7 @@ Les explications relatives à l'état du service étant publiées en temps réel
   
 1. Accédez à [Translator](https://www.bing.com/translator/).
 
-2. Sur la page **État du Service**, sélectionnez un avis ou un incident. Sous **Afficher les détails**, copiez le texte relatif au problème.
+2. Sur la page **État du Service** , sélectionnez un avis ou un incident. Sous **Afficher les détails** , copiez le texte relatif au problème.
 
 3. Dans Translator, collez le texte, puis sélectionnez **Traduire**.
 
