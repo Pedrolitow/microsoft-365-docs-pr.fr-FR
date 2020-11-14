@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: "Une exigence pour l'ensemble des solutions Microsoft Information Protection : créer, configurer et publier des étiquettes de confidentialité afin de classer et protéger les documents et messages électroniques de votre organisation."
-ms.openlocfilehash: 2476c1f7e73c4da5699dcd8b297e251ab13b0798
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 9fc130a15229f7d464ed8336c3ae37d1af367ed3
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445419"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49073113"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Créer et configurer des étiquettes de confidentialité et leurs stratégies.
 
@@ -53,7 +53,7 @@ L’administrateur général de votre organisation dispose des autorisations tot
     - Centre de sécurité et conformité :
         - **Classification** > **des étiquettes de confidentialité**
 
-2. Sous la page **Étiquettes**, sélectionnez **+ Créer une étiquette** pour démarrer l’assistant Nouvelle étiquette de confidentialité. 
+2. Sous la page **Étiquettes** , sélectionnez **+ Créer une étiquette** pour démarrer l’assistant Nouvelle étiquette de confidentialité. 
     
     Par exemple, dans le Centre de conformité Microsoft 365 :
     
@@ -61,7 +61,7 @@ L’administrateur général de votre organisation dispose des autorisations tot
     
     Remarque : par défaut, les clients n’ont pas d’étiquettes et vous devez les créer. Les étiquettes de l’exemple d’image montrent les étiquettes par défaut qui ont été [déplacées à partir d’Azure Information Protection](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels).
 
-3. Sur la page **Définir l’étendue de cette étiquette**, les options sélectionnées déterminent l’étendue de l’étiquette pour les paramètres que vous pouvez configurer et l’emplacement où ils seront visibles lors de la publication :
+3. Sur la page **Définir l’étendue de cette étiquette** , les options sélectionnées déterminent l’étendue de l’étiquette pour les paramètres que vous pouvez configurer et l’emplacement où ils seront visibles lors de la publication :
     
     ![Étendues des étiquettes de confidentialité](../media/sensitivity-labels-scopes.png)
     
@@ -73,15 +73,15 @@ L’administrateur général de votre organisation dispose des autorisations tot
     
     Pour plus d’informations sur les paramètres d’étiquette, voir [Fonction des étiquettes de confidentialité](sensitivity-labels.md#what-sensitivity-labels-can-do) à partir des informations générales et utilisez l’aide de l’Assistant pour les paramètres individuels.
 
-5. Répétez ces étapes pour créer d’autres étiquettes. Toutefois, si vous voulez créer une sous-étiquette, commencez par sélectionner l’étiquette parent et choisissez **...** pour **Plus d’actions**, puis **Ajouter une sous-étiquette**.
+5. Répétez ces étapes pour créer d’autres étiquettes. Toutefois, si vous voulez créer une sous-étiquette, commencez par sélectionner l’étiquette parent et choisissez **...** pour **Plus d’actions** , puis **Ajouter une sous-étiquette**.
 
-6. Lorsque vous avez créé les étiquettes dont vous avez besoin, vérifiez leur ordre et déplacez-les vers le haut ou vers le bas si nécessaire. Pour modifier l’ordre d’une étiquette, sélectionnez **...** pour **Plus d’actions**, puis choisissez **Déplacer vers le haut** ou **Déplacer vers le bas**. Pour plus d’informations, voir [Priorité d'étiquette (trier les thèmes)](sensitivity-labels.md#label-priority-order-matters) dans les informations générales.
+6. Lorsque vous avez créé les étiquettes dont vous avez besoin, vérifiez leur ordre et déplacez-les vers le haut ou vers le bas si nécessaire. Pour modifier l’ordre d’une étiquette, sélectionnez **...** pour **Plus d’actions** , puis choisissez **Déplacer vers le haut** ou **Déplacer vers le bas**. Pour plus d’informations, voir [Priorité d'étiquette (trier les thèmes)](sensitivity-labels.md#label-priority-order-matters) dans les informations générales.
 
-Pour modifier une étiquette existante, sélectionnez-la, puis choisissez le bouton **Modifier l'étiquette** :
+Pour modifier une étiquette existante, sélectionnez-la, puis choisissez le bouton **Modifier l'étiquette**  :
 
 ![Bouton « Modifier l’étiquette » pour modifier une étiquette de confidentialité](../media/edit-sensitivity-label-full.png)
 
-Ce bouton démarre l’Assistant **Modifier l'étiquette de confidentialité**, vous permettant de modifier les paramètres d’étiquette à l’étape 4.
+Ce bouton démarre l’Assistant **Modifier l'étiquette de confidentialité** , vous permettant de modifier les paramètres d’étiquette à l’étape 4.
 
 Ne supprimez pas une étiquette, sauf si vous comprenez l’impact pour les utilisateurs. Pour plus d’informations, consultez la section [Retrait et suppression d’étiquettes](#removing-and-deleting-labels). 
 
@@ -91,7 +91,7 @@ Ne supprimez pas une étiquette, sauf si vous comprenez l’impact pour les util
 Les étiquettes sont disponibles dans des applications ou des services après les avoir publiées. Les étiquettes doivent être [ajoutées à une stratégie d'étiquette](#publish-sensitivity-labels-by-creating-a-label-policy) pour être publiées.
 
 > [!IMPORTANT]
-> Dans l'onglet **Étiquettes**, ne pas sélectionner l'onglet **Publier des étiquettes** (ou le bouton **Publier une étiquette** lorsque vous modifiez une étiquette), sauf si vous devez créer une nouvelle stratégie d'étiquette. Plusieurs stratégies d’étiquette sont nécessaires uniquement si les utilisateurs ont besoin d’étiquettes ou de paramètres de stratégie différents. Votre objectif est d’avoir autant de stratégies d’étiquettes que possible, mais il n’est pas rare de n’avoir qu’une seule stratégie d’étiquette par organisation.
+> Dans l'onglet **Étiquettes** , ne pas sélectionner l'onglet **Publier des étiquettes** (ou le bouton **Publier une étiquette** lorsque vous modifiez une étiquette), sauf si vous devez créer une nouvelle stratégie d'étiquette. Plusieurs stratégies d’étiquette sont nécessaires uniquement si les utilisateurs ont besoin d’étiquettes ou de paramètres de stratégie différents. Votre objectif est d’avoir autant de stratégies d’étiquettes que possible, mais il n’est pas rare de n’avoir qu’une seule stratégie d’étiquette par organisation.
 
 ### <a name="additional-label-settings-with-security--compliance-center-powershell"></a>Paramètres d’étiquette supplémentaires dans le Centre de sécurité et conformité PowerShell
 
@@ -101,11 +101,7 @@ Par exemple :
 
 - Utilisez le paramètre *LocaleSettings* pour des déploiements internationaux pour que les utilisateurs voient le nom de l’étiquette et l’info-bulle dans leur langue locale. La [section suivante](#example-configuration-to-configure-a-sensitivity-label-for-different-languages) présente un exemple de configuration qui spécifie le nom de l’étiquette et le texte d’info-bulle pour le français, l’italien et l’allemand.
 
-- Utilisez le paramètre *ApplyContentMarkingFooterFontName* afin de spécifier votre choix de police pour le pied de page spécifié. Calibri est la police par défaut pour les en-têtes, les pieds de page et le texte de filigrane. Si le nom de la police de remplacement n’est pas disponible pour le service ou l’appareil qui affiche les étiquettes, la police utilisée est Calibri.
-
-- Utilisez le paramètre *ApplyContentMarkingHeaderFontColor* afin de spécifier votre choix de couleur personnalisée pour l’en-tête indiqué, à l’aide d’un code hexadécimal pour les composants rouge, vert et bleu (RVB). Par exemple, #40e0d0 est la valeur hexadécimale RVB pour la couleur turquoise. Vous trouverez ces codes dans plusieurs applications qui vous permettent de modifier des images. Par exemple, Microsoft Paint vous permet de choisir une couleur personnalisée dans une palette et les valeurs RVB s’affichent automatiquement. Vous pouvez ensuite les copier.
-
-Pour le client d’étiquetage unifié Azure Information Protection uniquement, vous pouvez également spécifier des [paramètres avancés](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations) qui incluent la définition d’une couleur d’étiquette et l’application d’une propriété personnalisée lorsqu’une étiquette est appliquée. Pour obtenir la liste complète, voir [Paramètres avancés disponibles pour les étiquettes](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels) depuis le guide d’administration de ce client.
+- Pour le client d’étiquetage unifié Azure Information Protection uniquement, vous pouvez spécifier des [paramètres avancés](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations) qui incluent la définition d’une couleur d’étiquette et l’application d’une propriété personnalisée lorsqu’une étiquette est appliquée. Pour obtenir la liste complète, voir [Paramètres avancés disponibles pour les étiquettes](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels) depuis le guide d’administration de ce client.
 
 #### <a name="example-configuration-to-configure-a-sensitivity-label-for-different-languages"></a>Exemple de configuration d'une étiquette de confidentialité dans différentes langues
 
@@ -151,7 +147,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
     - Centre de sécurité et conformité :
         - **Classification** > **des étiquettes de confidentialité**
 
-2. Sélectionnez l’onglet **Stratégies d’étiquette**, puis **Publier des étiquettes** pour démarrer l’Assistant Créer une stratégie :
+2. Sélectionnez l’onglet **Stratégies d’étiquette** , puis **Publier des étiquettes** pour démarrer l’Assistant Créer une stratégie :
     
     Par exemple, dans le Centre de conformité Microsoft 365 :
         
@@ -168,17 +164,17 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 5. Suivez les invites pour configurer les paramètres de stratégie.
     
-    Les paramètres de stratégie qui s’affichent correspondent à l’étendue des étiquettes que vous avez sélectionnées. Par exemple, si vous avez sélectionné des étiquettes dont l’étendue est uniquement **Fichiers et e-mails**, vous ne voyez pas les paramètres de stratégie **Appliquer cette étiquette par défaut aux groupes et sites** et **Demander aux utilisateurs d’appliquer une étiquette à leurs groupes et sites**.
+    Les paramètres de stratégie qui s’affichent correspondent à l’étendue des étiquettes que vous avez sélectionnées. Par exemple, si vous avez sélectionné des étiquettes dont l’étendue est uniquement **Fichiers et e-mails** , vous ne voyez pas les paramètres de stratégie **Appliquer cette étiquette par défaut aux groupes et sites** et **Demander aux utilisateurs d’appliquer une étiquette à leurs groupes et sites**.
     
     Pour plus d’informations sur ces paramètres, consultez [Fonction des stratégies d’étiquette](sensitivity-labels.md#what-label-policies-can-do) à partir des informations générales et utilisez l’aide de l’Assistant pour les paramètres individuels.
 
 7. Répétez ces étapes si vous avez besoin d'autres paramètres de stratégie pour des utilisateurs ou des étendues différents. Par exemple, vous souhaitez employer d’autres étiquettes pour un groupe d’utilisateurs, ou une étiquette par défaut différente pour un sous-ensemble d’utilisateurs. Ou, si vous avez configuré des étiquettes avec des étendues différentes.
 
-8. Si vous créez plusieurs stratégies d’étiquette pouvant entraîner un conflit pour un utilisateur, vérifiez l’ordre des stratégies et, le cas échéant, déplacez-les vers le haut ou vers le bas. Pour modifier l’ordre d’une stratégie d'étiquette, sélectionnez **...** pour **Plus d’actions**, puis choisissez **Déplacer vers le haut ** ou **Déplacer vers le bas**. Pour plus d’informations, voir [Priorité de stratégie d'étiquette (trier les thèmes)](sensitivity-labels.md#label-policy-priority-order-matters) dans les informations générales.
+8. Si vous créez plusieurs stratégies d’étiquette pouvant entraîner un conflit pour un utilisateur, vérifiez l’ordre des stratégies et, le cas échéant, déplacez-les vers le haut ou vers le bas. Pour modifier l’ordre d’une stratégie d'étiquette, sélectionnez **...** pour **Plus d’actions** , puis choisissez **Déplacer vers le haut** ou **Déplacer vers le bas**. Pour plus d’informations, voir [Priorité de stratégie d'étiquette (trier les thèmes)](sensitivity-labels.md#label-policy-priority-order-matters) dans les informations générales.
 
 La stratégie d’étiquette est publiée automatiquement dès la fin de l'Assistant. Pour apporter des modifications à une stratégie publiée, il vous suffit la modifier. Vous ne devez sélectionner aucune action de publication ou de republication spécifique.
 
-Pour modifier une stratégie d'étiquette existante, sélectionnez-la, puis choisissez le bouton **Modifier la stratégie** : 
+Pour modifier une stratégie d'étiquette existante, sélectionnez-la, puis choisissez le bouton **Modifier la stratégie**  : 
 
 ![Modifier une étiquette de confidentialité](../media/edit-sensitivity-label-policy-full.png)
 

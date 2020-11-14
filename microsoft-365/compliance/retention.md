@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En savoir plus sur les stratégies de rétention et les étiquettes de rétention, qui permettent de conserver les éléments dont vous avez besoin et de supprimer ceux qui ne vous servent pas.
-ms.openlocfilehash: 0dfccef331c279354f066ebffa80143d43192472
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: bedf82d9d53ef14755651d5994e6c5c269cf5d6e
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920524"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49073135"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>En savoir plus sur les stratégies et les étiquettes de rétention
 
@@ -204,14 +204,7 @@ Il n’est possible d’attribuer qu’une seule étiquette de rétention à un 
     
 - S’il existe plusieurs règles qui affectent une étiquette à appliquer automatiquement et que le contenu remplit les critères de plusieurs règles, l’étiquette de rétention de la règle la plus ancienne (par date de création) est affectée.
     
-Pour comprendre comment et pourquoi une étiquette de rétention est appliquée plutôt qu’une autre, il est important de comprendre la différence entre l’attribution explicite et l’attribution implicite d’une étiquette :
-
-- Les étiquettes de rétention appliquées à partir d’une stratégie d’étiquette sont attribuées de manière explicite
-- Les étiquettes de rétention appliquées automatiquement à partir d’une stratégie d’application automatique sont attribuées implicitement
-
-Une étiquette de rétention attribuée de manière explicite prévaut sur une étiquette de rétention attribuée de manière implicite. Si vous souhaitez en savoir plus, consultez la section de cette page nommée [Principes de rétention et priorité](retention.md#the-principles-of-retention-or-what-takes-precedence).
-
-Pour SharePoint, vous pouvez également attribuer implicitement des étiquettes de rétention lorsque vous configurez une étiquette par défaut pour tout le contenu d’une bibliothèque, d’un dossier ou d’un ensemble de documents SharePoint. Dans ce scénario, les étiquettes appliquées automatiquement sont prioritaires par rapport aux étiquettes par défaut. Cependant, si vous souhaitez en savoir plus sur tous les résultats de l’utilisation d’une étiquette par défaut, veuillez consulter la section [Application d’une étiquette de rétention par défaut à tout le contenu dans une bibliothèque, un dossier ou un ensemble de documents SharePoint](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set). 
+Cependant, si vous souhaitez en savoir plus sur tous les résultats de l’utilisation d’une étiquette par défaut, veuillez consulter la section [Application d’une étiquette de rétention par défaut à tout le contenu dans une bibliothèque, un dossier ou un ensemble de documents SharePoint](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
 
 #### <a name="monitoring-retention-labels"></a>Contrôle des étiquettes de conservation
 

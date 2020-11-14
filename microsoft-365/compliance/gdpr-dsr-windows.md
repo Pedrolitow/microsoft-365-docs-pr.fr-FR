@@ -8,35 +8,35 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.author: daniha
+ms.author: siosulli
 author: DaniHalfin
 manager: dansimp
 audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: 916ee45dae92d14c78b92bb16b6dca7c455bf803
-ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.openlocfilehash: e4065fc992305976a1309b05a473e15e1f03f09c
+ms.sourcegitcommit: e03bc2945e63f7f2638257e530056ae9283b45d9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48304898"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49070878"
 ---
 # <a name="data-processor-service-for-windows-enterprise-data-subject-requests-for-the-gdpr-and-ccpa"></a>Service de processeur de données pour les demandes des personnes concernées Windows Entreprise pour le RGPD et le CCPA 
 
 >[!NOTE]
->Cette rubrique est destinée aux participants au programme de prévisualisation du service de traitement des données pour Windows Enterprise et nécessite l'acceptation de conditions d'utilisation spécifiques. Pour en savoir plus sur le programme et accepter les conditions d’utilisation, voir [https://aka.ms/WindowsEnterprisePublicPreview](https://aka.ms/WindowsEnterprisePublicPreview).
+>Cette rubrique est destinée aux participants au programme de prévisualisation du service de traitement des données pour Windows et nécessite l'acceptation de conditions d'utilisation spécifiques. Pour en savoir plus sur le programme et accepter les conditions d’utilisation, voir [https://aka.ms/WindowsEnterprisePublicPreview](https://aka.ms/WindowsEnterprisePublicPreview).
 
 ## <a name="introduction-to-data-subject-requests-dsrs"></a>Présentation des demandes des personnes concernées (DPC) 
-Le Règlement général sur la protection des données (RGPD) de l’UE accorde le droit aux individus (appelés, dans le règlement, _personnes concernées_) de gérer les données personnelles qui ont été collectées par un employeur ou tout autre type d’agence ou d’organisation (également appelé _responsable du traitement des données_ ou _responsable du traitement_). Dans le RGPD, les données personnelles sont définies de façon générale comme toute donnée relative à une personne physique identifiée ou identifiable. Le RGPD confère aux personnes concernées des droits précis sur leurs données personnelles ; ces droits vous donnent la possibilité d’obtenir des copies de ces données personnelles, de les modifier, d’en limiter le traitement, de les supprimer ou de les recevoir dans un format électronique afin de pouvoir les transférer à un autre responsable du traitement. Une demande officielle d’une personne concernée à un responsable du traitement pour effectuer une action sur ses données personnelles est appelée _demande de droits de la personne concernée_ ou DPC dans le présent document. 
+Le Règlement général sur la protection des données (RGPD) de l’UE accorde le droit aux individus (appelés, dans le règlement, _personnes concernées_ ) de gérer les données personnelles qui ont été collectées par un employeur ou tout autre type d’agence ou d’organisation (également appelé _responsable du traitement des données_ ou _responsable du traitement_ ). Dans le RGPD, les données personnelles sont définies de façon générale comme toute donnée relative à une personne physique identifiée ou identifiable. Le RGPD confère aux personnes concernées des droits précis sur leurs données personnelles ; ces droits vous donnent la possibilité d’obtenir des copies de ces données personnelles, de les modifier, d’en limiter le traitement, de les supprimer ou de les recevoir dans un format électronique afin de pouvoir les transférer à un autre responsable du traitement. Une demande officielle d’une personne concernée à un responsable du traitement pour effectuer une action sur ses données personnelles est appelée _demande de droits de la personne concernée_ ou DPC dans le présent document. 
 
 De même, le CCPA (California Consumer Privacy Act), prévoit des droits de confidentialité et des obligations pour les consommateurs de la Californie, y compris des droits similaires aux droits des personnes concernées du RGPD, tels que le droit de supprimer, d’accéder et de recevoir (portabilité) leurs informations personnelles. Le CCPA prévoit également des publications d’informations, des protections contre la discrimination des personnes faisant usage de leurs droits et la possibilité d’opter pour ou contre certains transferts de données classés en tant que « ventes ». Les ventes sont largement définies pour inclure le partage de données à des fins importantes. Pour plus d’informations sur le CCPA, voir le [California Consumer Privacy Act](https://docs.microsoft.com/microsoft-365/compliance/offering-ccpa) et le [Forum aux questions California Consumer Privacy Act](https://docs.microsoft.com/microsoft-365/compliance/ccpa-faq).
 
 Le guide explique comment utiliser les outils d’administration, les services et les produits Microsoft pour aider nos clients entités de contrôle à rechercher des données personnelles et à agir dessus pour répondre à des DPC. Plus précisément, il décrit comment rechercher, consulter et traiter des données personnelles stockées dans le cloud Microsoft. Voici un aperçu des processus décrits dans ce guide : 
 
-1. **Accéder** : récupérez des données personnelles qui résident dans le cloud Microsoft et, si nécessaire, effectuez-en une copie pour la personne concernée. 
-2. **Supprimer** : supprimez définitivement des données personnelles qui résidaient dans le cloud Microsoft. 
-3. **Exporter** : fournissez une copie électronique (dans un format lisible par une machine) des données personnelles à la personne concernée. Les informations à caractère personnel sous CCPA englobent toutes les informations relatives à une personne identifiée ou identifiable.
+1. **Accéder**  : récupérez des données personnelles qui résident dans le cloud Microsoft et, si nécessaire, effectuez-en une copie pour la personne concernée. 
+2. **Supprimer**  : supprimez définitivement des données personnelles qui résidaient dans le cloud Microsoft. 
+3. **Exporter**  : fournissez une copie électronique (dans un format lisible par une machine) des données personnelles à la personne concernée. Les informations à caractère personnel sous CCPA englobent toutes les informations relatives à une personne identifiée ou identifiable.
 
 Les informations à caractère personnel sous CCPA englobent toutes les informations relatives à une personne identifiée ou identifiable. Il n’existe pas de distinction entre les rôles privé, public ou professionnel d’une personne. Le terme défini « informations personnelles » est à peu près aligné sur celui de « données personnelles » dans le RGPD. Toutefois, le CCPA inclut également les données relatives à la famille et au foyer. Pour plus d’informations sur le CCPA, voir le [California Consumer Privacy Act](https://docs.microsoft.com/microsoft-365/compliance/offering-ccpa) et le [Forum aux questions California Consumer Privacy Act](https://docs.microsoft.com/microsoft-365/compliance/ccpa-faq).
 
@@ -52,9 +52,9 @@ Vous trouverez ci-dessous la liste des définitions de termes utilisés dans ce 
 
 * _Sous-traitant :_ une personne physique ou morale, une autorité publique, une agence ou un autre organisme qui traite les données à caractère personnel pour le compte du responsable du traitement. 
 
-* _Données client_ : toutes les données, y compris tous les fichiers texte, son, vidéo ou image et les logiciels qui ont été fournis à Microsoft par le client ou pour son compte dans le cadre du service d’entreprise. 
+* _Données client_  : toutes les données, y compris tous les fichiers texte, son, vidéo ou image et les logiciels qui ont été fournis à Microsoft par le client ou pour son compte dans le cadre du service d’entreprise. 
 
-* _Les données de diagnostic Windows_ : donnés techniques vitales des appareils Windows, relatives aux appareils et aux performances de Windows et du logiciel associé. Il permet de maintenir Windows à jour, sécurisé, fiable, performant et amélioré dans Windows par le biais de l’analyse globale de l’utilisation de Windows. Voici quelques exemples de données de diagnostic Windows : type de matériel utilisé, applications installées avec leur utilisation respective et informations de fiabilité sur les pilotes d’appareils. Certains composants et applications Windows se connectent directement aux services Microsoft, mais les données échangées ne correspondent pas à des données de diagnostic Windows. Par exemple, l’échange d’un emplacement d’utilisateur pour la météo locale ou les actualités n’est pas un exemple de données de diagnostic de Windows. 
+* _Les données de diagnostic Windows_  : donnés techniques vitales des appareils Windows, relatives aux appareils et aux performances de Windows et du logiciel associé. Il permet de maintenir Windows à jour, sécurisé, fiable, performant et amélioré dans Windows par le biais de l’analyse globale de l’utilisation de Windows. Voici quelques exemples de données de diagnostic Windows : type de matériel utilisé, applications installées avec leur utilisation respective et informations de fiabilité sur les pilotes d’appareils. Certains composants et applications Windows se connectent directement aux services Microsoft, mais les données échangées ne correspondent pas à des données de diagnostic Windows. Par exemple, l’échange d’un emplacement d’utilisateur pour la météo locale ou les actualités n’est pas un exemple de données de diagnostic de Windows. 
 
 ## <a name="how-to-use-this-guide"></a>Comment utiliser ce guide 
 

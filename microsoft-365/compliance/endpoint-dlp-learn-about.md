@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La protection contre la perte de données des point de terminaison de Microsoft 365 étend la surveillance des activités de fichiers et les actions de protection pour ces fichiers aux points de terminaison. Les fichiers sont rendus visibles dans les solutions de conformité Microsoft 365 '
-ms.openlocfilehash: 0f69261cb5617c7d6de7900b85a5a254a04bc45e
-ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
+ms.openlocfilehash: e469872dac19db08f7b525c8a5ada725c75bfa10
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "48999458"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49072973"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Découvrir la protection contre la perte de données des point de terminaison de Microsoft 365
 
@@ -147,13 +147,13 @@ Par exemple, si un fichier est copié sur un support USB amovible, les attributs
 
 Maintenant que vous en savez plus sur les points de terminaison DLP, vos prochaines étapes sont les suivantes :
 
-1) [Prise en main des points de terminaison de protection contre la perte de données Microsoft (Preview)](endpoint-dlp-getting-started.md)
-2) [Utilisation des points de terminaison de protection contre la perte de données Microsoft (Preview)](endpoint-dlp-using.md)
+1) [Prise en main des points de terminaison de protection contre la perte de données Microsoft (préversion)](endpoint-dlp-getting-started.md)
+2) [Utilisation des points de terminaison de protection contre la perte de données Microsoft (préversion)](endpoint-dlp-using.md)
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Prise en main des points de terminaison de protection contre la perte de données Microsoft (Preview)](endpoint-dlp-getting-started.md)
-- [Utilisation des points de terminaison de protection contre la perte de données Microsoft (Preview)](endpoint-dlp-using.md)
+- [Prise en main des points de terminaison de protection contre la perte de données Microsoft (préversion)](endpoint-dlp-getting-started.md)
+- [Utilisation des points de terminaison de protection contre la perte de données Microsoft (préversion)](endpoint-dlp-using.md)
 - [Vue d’ensemble de la protection contre la perte de données](data-loss-prevention-policies.md)
 - [Création, test et réglage d’une stratégie DLP](create-test-tune-dlp-policy.md)
 - [Prise en main de l’explorateur d’activités](data-classification-activity-explorer.md)
