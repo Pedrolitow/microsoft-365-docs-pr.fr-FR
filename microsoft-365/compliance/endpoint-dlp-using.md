@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment configurer les stratégies de protection contre la perte de données (DLP) pour utiliser les emplacements de protection contre la perte de données de point de terminaison (EPDLP) Microsoft 365.
-ms.openlocfilehash: 6de6443dc0d276c862db43963ac28bd762e3756f
-ms.sourcegitcommit: 89f56c3e0b619a4700a75a21927d9ffc90658632
+ms.openlocfilehash: 64cdfeab4b527dd3b84e7586d1419e5bf8b383df
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48984918"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49073103"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Utilisation de la protection contre la perte de données de point de terminaison
 
@@ -33,7 +33,7 @@ Cet article décrit trois scénarios dans lesquels vous créez et modifiez une s
 
 Avant de commencer, vous devez configurer vos paramètres DLP appliqués à toutes les stratégies DLP pour les appareils. Vous devez les configurer si vous envisagez de créer des stratégies qui appliquent :
 
-- restrictions de sortie dans le Cloud
+- des restrictions de sortie dans le cloud
 - restrictions relatives aux applications non autorisées
 
 Ou
@@ -45,7 +45,7 @@ Ou
 
 ### <a name="file-path-exclusions"></a>Exclusions de chemin d’accès de fichier
 
-Vous pouvez exclure certains chemins de la surveillance DLP, des alertes DLP et de l’application de stratégie DLP sur vos appareils, car ils sont trop bruyants ou ne contiennent pas les fichiers qui vous intéressent. Les fichiers stockés dans ces emplacements ne seront pas audités et tous les fichiers créés ou modifiés dans ces emplacements ne seront pas soumis à l’application de stratégie DLP. Vous pouvez configurer les exclusions de chemin d’accès dans les paramètres DLP.
+Vous souhaiterez peut-être exclure certains chemins d’accès de la surveillance DLP, des alertes DLP et de l’application de la stratégie DLP sur vos appareils, car ils sont trop brouillons ou ne contiennent pas de fichiers intéressants. Les fichiers situés à ces emplacements ne seront pas audités et les fichiers qui sont créés ou modifiés dans ces emplacements ne seront pas soumis à l’application de la stratégie DLP. Vous pouvez configurer des exclusions de chemin d’accès dans les paramètres DLP.
 
 Vous pouvez utiliser cette logique pour construire vos chemins d’exclusion :
 
@@ -65,28 +65,28 @@ Vous pouvez utiliser cette logique pour construire vos chemins d’exclusion :
 
 ### <a name="service-domains"></a>Domaines de service
 
-Vous pouvez ajouter des domaines à cette liste à laquelle le Chromium Edge fera référence lors de l’application de la restriction d’accès au téléchargement du Cloud de stratégie DLP de point de terminaison. 
+Vous pouvez ajouter à cette liste des domaines auxquels Edge Chromium fera référence lors de l’application de la restriction d’accès au téléchargement de la stratégie DLP pour point de terminaison. 
 
-Si le mode de liste est paramétré sur **Bloquer** , l’utilisateur ne peut pas télécharger des éléments sensibles dans ces domaines. Lorsqu’une action de téléchargement est bloquée parce qu’un élément correspond à une stratégie DLP, DLP génère un avertissement ou bloque le téléchargement de l’élément sensible.
+Si le mode liste est défini sur **Bloquer** , l’utilisateur ne pourra pas télécharger les éléments sensibles vers ces domaines. Lorsqu’une action de téléchargement est bloquée car un élément correspond à une stratégie DLP, DLP génère un avertissement ou bloque le téléchargement de l’élément sensible.
 
-Si le mode de liste est paramétré sur **Autoriser** , les utilisateurs pourront charger des éléments sensibles * *_uniquement_* à ces domaines, et l’accès de chargement à tous les autres domaines n’est pas autorisé.
+Si le mode de liste est paramétré sur **Autoriser** , les utilisateurs pourront charger des éléments sensibles * *_uniquement_* dans ces domaines, et l’accès de chargement à tous les autres domaines n’est pas autorisé.
 
 ### <a name="unallowed-apps"></a>Applications non autorisées
 
-Lorsque le paramètre *Accès des applications et des navigateurs non autorisés* * d’une stratégie est activé, et que les utilisateurs tentent d’utiliser ces applications pour accéder à un fichier protégé, l’activité est autorisée, ou bloquée mais les utilisateurs peuvent remplacer la restriction. Toutes les activités sont auditées et disponibles pour révision dans l’Explorateur d’activités.
+Lorsque le paramètre _ *Accès par des applications et navigateurs non autorisés* * d’une stratégie est activé et que les utilisateurs tentent d’utiliser ces applications pour accéder à un fichier protégé, l’activité est autorisée, bloquée ou bloquée, mais les utilisateurs peuvent ignorer la restriction. Toutes les activités sont auditées et peuvent être consultées dans l’explorateur d’activités.
 
 ### <a name="unallowed-browsers"></a>Navigateurs non autorisés
 
-Vous ajoutez des navigateurs, identifiés par leurs noms de exécutables, qui ne peuvent pas accéder à des fichiers qui remplissent les conditions d’une stratégie DLP appliquée dans laquelle la restriction de chargement vers les services Cloud est définie sur bloquer ou annuler le blocage. Lorsque ces navigateurs ne peuvent pas accéder à un fichier, les utilisateurs finaux voient s’afficher une notification leur demandant d’ouvrir le fichier via le Chromium Edge.
+Vous ajoutez des navigateurs, identifiés par leurs noms de fichiers exécutables, qui ne pourront pas accéder aux fichiers qui correspondent aux conditions d’une stratégie DLP appliquée dans laquelle la restriction de téléchargement vers les services cloud est définie sur bloquer ou bloquer le remplacement. Lorsque ces navigateurs ne peuvent pas accéder à un fichier, les utilisateurs finaux verront une notification toast leur demandant d’ouvrir le fichier via Edge Chromium.
 
 [!IMPORTANT]
-N’incluez pas le chemin d’accès du fichier exécutable, mais uniquement le nom du fichier exécutable (c’est à dire, browser. exe).
+N’incluez pas le chemin d’accès du fichier exécutable, mais uniquement le nom du fichier exécutable (par exemple, browser.exe).
 
-## <a name="tying-dlp-settings-together"></a>Lier les paramètres DLP ensemble
+## <a name="tying-dlp-settings-together"></a>Lier les paramètres DLP
 
-Avec les points de terminaison DLP et le navigateur Chromium Edge, vous pouvez limiter le partage involontaire des éléments sensibles aux applications et services Cloud non autorisés. Le Chromium Edge comprend les conditions dans lesquelles un élément est limité par une stratégie DLP de point de terminaison et applique les restrictions d’accès.
+Avec le navigateur web Edge Chromium et la DLP pour point de terminaison, vous pouvez limiter le partage involontaire d’éléments sensibles aux applications et services cloud non autorisés. Edge Chromium comprend quand un élément est restreint par une stratégie DLP pour point de terminaison et applique des restrictions d’accès.
 
-Lorsque vous utilisez la fonctionnalité point de terminaison DLP comme emplacement dans une stratégie DLP correctement configurée et le navigateur Chromium Edge, les navigateurs non autorisés que vous avez définis dans ces paramètres ne pourront pas accéder aux éléments sensibles qui correspondent à vos contrôles de stratégie DLP. Au lieu de cela, les utilisateurs seront redirigés vers le Chromium Edge et le Chromium Edge, avec sa compréhension des restrictions imposées par DLP, peut bloquer ou restreindre les activités lorsque les conditions de la stratégie DLP sont réunies.
+Lorsque vous utilisez DLP pour point de terminaison comme emplacement dans une stratégie DLP correctement configurée et le navigateur Edge Chromium, les navigateurs non autorisés que vous avez définis dans ces paramètres ne pourront pas accéder aux éléments sensibles qui correspondent à vos contrôles de stratégie DLP. Les utilisateurs seront plutôt redirigés pour utiliser Edge Chromium qui, avec sa compréhension des restrictions imposées par DLP, peut bloquer ou restreindre les activités lorsque les conditions de la stratégie DLP sont remplies.
 
 Pour utiliser cette restriction, vous devez configurer trois éléments importants :
 
@@ -100,12 +100,12 @@ Vous pouvez continuer à ajouter de nouveaux services, applications et stratégi
 
 Cette configuration vous permet de garantir la sécurité de vos données tout en évitant les restrictions inutiles qui empêchent les utilisateurs d’accéder aux éléments non sensibles et de les empêcher de les partager.
 
-## <a name="endpoint-dlp-policy-scenarios"></a>Scénarios de stratégie DLP pour les points de terminaison
+## <a name="endpoint-dlp-policy-scenarios"></a>Scénarios de stratégie DLP pour point de terminaison
 
-Pour vous familiariser avec les fonctionnalités de point de terminaison DLP et la manière dont elles se trouvent dans les stratégies DLP, nous avons rassemblé certains scénarios que vous pouvez suivre. Tout le contenu de point de terminaison DLP sera affecté au contenu DLP principal lorsque le point de terminaison DLP est disponible en général.
+Pour vous aider à vous familiariser avec les fonctionnalités DLP pour point de terminaison et la manière dont elles apparaissent dans les stratégies DLP, nous avons rassemblé quelques scénarios à suivre. Tout le contenu DLP pour point de terminaison sera intégré à l’ensemble de contenu DLP principal lorsque DLP pour point de terminaison sera disponible pour le grand public.
 
 > [!IMPORTANT]
-> Ces scénarios de points de terminaison DLP ne sont pas les procédures officielles pour la création et le réglage des stratégies DLP. Reportez-vous aux rubriques ci-dessous lorsque vous devez utiliser les stratégies DLP dans les situations générales suivantes :
+> Ces scénarios DLP pour point de terminaison ne sont pas les procédures officielles de création et de configuration des stratégies DLP. Reportez-vous aux rubriques ci-dessous lorsque vous devez travailler avec des stratégies DLP dans des situations générales :
 >- [Vue d’ensemble de la protection contre la perte de données](data-loss-prevention-policies.md)
 >- [Prise en main de la stratégie DLP par défaut](get-started-with-the-default-dlp-policy.md)
 >- [Création d’une stratégie DLP à partir d’un modèle](create-a-dlp-policy-from-a-template.md)
@@ -113,31 +113,31 @@ Pour vous familiariser avec les fonctionnalités de point de terminaison DLP et 
 
 ### <a name="scenario-1-create-a-policy-from-a-template-audit-only"></a>Scénario 1 : créer une stratégie à partir d’un modèle, audit uniquement
 
-Ces scénarios nécessitent que les appareils soient déjà intégrés et reportés dans l’Explorateur d’activités. Si vous n’avez pas encore intégré d’appareils, voir [Prise en main de la protection contre la perte de données (Preview) de point de terminaison](endpoint-dlp-getting-started.md).
+Ces scénarios nécessitent que vous ayez déjà des appareils intégrés et des rapports dans l’explorateur d’activité. Si vous n’avez pas encore intégré d’appareils, consultez l’article [Prise en main de la protection contre la perte de données de point de terminaison](endpoint-dlp-getting-started.md).
 
-1. Ouvrir[Page de protection contre la perte de données](https://compliance.microsoft.com/datalossprevention?viewid=policies).
+1. Ouvrir la [page de protection contre la perte de données](https://compliance.microsoft.com/datalossprevention?viewid=policies).
 
-2. Sélectionnez **Créer une stratégie (Preview)**.
+2. Sélectionnez **Créer une stratégie**.
 
-3. Dans le cadre de ce scénario, sélectionnez **Confidentialité** , **Données d’informations d’identification personnelles (PII) pour les États-Unis** puis sélectionnez **Suivant**.
+3. Dans le cadre de ce scénario, sélectionnez **Confidentialité** , **Données d’informations d’identification personnelles pour les États-Unis** puis, **Suivant**.
 
-4. Désactivez la case à cocher **État** pour tous les emplacements, sauf pour les **Appareils**. Cliquez sur **Suivant**.
+4. Désactivez le champ **État** pour tous les emplacements, à l’exception de **Appareils**. Sélectionnez **Suivant**.
 
 5. Acceptez la sélection par défaut **Vérifier et personnaliser les paramètres du modèle** , puis sélectionnez **Suivant**.
 
-6. Acceptez les valeurs par défaut **Actions de protection** et choisissez **Suivant**.
+6. Acceptez les valeurs par défaut **Actions de protection** et sélectionnez **Suivant**.
 
-7. Sélectionnez **Audit ou restreindre les activités sur les appareils Windows** et laissez **Audit uniquement**. Cliquez sur **Suivant**.
+7. Sélectionnez **Auditer ou restreindre les activités sur les appareils Windows** et laissez les actions définies sur **Audit uniquement**. Sélectionnez **Suivant**.
 
-8. Accepter la valeur par défaut **Je veux tester le contenu tout d’abord** et choisir **Afficher les conseils de stratégie en mode test**. Cliquez sur **Suivant**.
+8. Acceptez la valeur par défaut, **Je veux d’abord tester** et sélectionnez **Afficher les conseils de stratégie en mode de test**. Sélectionnez **Suivant**.
 
-9. Passez en revue vos paramètres, puis sélectionnez **Envoyer**.
+9. Vérifiez vos paramètres, puis sélectionnez **Envoyer**.
 
-10. La nouvelle stratégie DLP s’affiche dans la liste de stratégies.
+10. La nouvelle stratégie DLP s’affiche dans la liste des stratégies.
 
-11. Consultez l’Explorateur d’activités pour les données des points de terminaison monitorés. Configurez le filtre d’emplacement pour les appareils et ajoutez la stratégie, puis filtrez par nom de stratégie pour afficher l’impact de cette stratégie. Pour plus d’informations, voir [Prise en main de l’Explorateur d’activités](data-classification-activity-explorer.md) si nécessaire.
+11. Recherchez dans l’explorateur d’activité les données des points de terminaison surveillés. Définissez le filtre d’emplacement pour les appareils et ajoutez la stratégie. Ensuite, filtrez par nom de stratégie pour voir l’impact de cette stratégie. Consultez l’article [Prise en main de l’explorateur d’activités](data-classification-activity-explorer.md) si nécessaire.
 
-12. Essayez de partager un test qui contient du contenu qui déclenchera la condition de données d’informations d’identification personnelle (PII) américaine avec une personne extérieure à votre organisation. Cette opération doit déclencher la stratégie.
+12. Tenter de partager un test qui contient un contenu qui déclenchera la condition des données des informations personnelles identifiables pour les États-Unis avec une personne extérieure à votre organisation. Cela devrait déclencher la stratégie.
 
 13. Consultez l’Explorateur d’activités pour l’événement.
 
@@ -145,24 +145,24 @@ Ces scénarios nécessitent que les appareils soient déjà intégrés et report
 
 1. Ouvrir[Page de protection contre la perte de données](https://compliance.microsoft.com/datalossprevention?viewid=policies).
 
-2. Sélectionnez la stratégie **Données d’informations d’identification personnelle (PII) pour les États-Unis** que vous avez créées dans le scénario 1.
+2. Sélectionnez la stratégie **Données d’informations d’identification personnelle pour les États-Unis** que vous avez créée dans le scénario 1.
 
-3. Sélectionnez **Modifier une stratégie (preview)**.
+3. Sélectionnez **Modifier la stratégie**.
 
-4. Accédez à la page **Règles DLP avancées** et modifiez la **Faible quantité de contenu détectée fichier INF US à Identification Personnelle**.
+4. Accédez à la page **Règles DLP avancées** et modifiez la **Faible quantité de contenu détectée pour les informations d’identification personnelle**.
 
-5. Faites défiler vers le bas jusqu’à la section **Rapports d’incident** et configurez **Envoyer une alerte aux administrateurs lorsqu’une correspondance de règle se produit** sur **Activé**. Les alertes par courrier électronique sont envoyées automatiquement à l’administrateur et à toute autre personne que vous ajoutez à la liste des destinataires. 
+5. Faites défiler jusqu’à la section **Rapports d’incident** et définissez **Envoyer une alerte aux administrateurs lorsqu’une correspondance de règle se produit** sur **Activé**. Les alertes par e-mail seront automatiquement envoyées à l’administrateur et aux autres personnes que vous ajoutez à la liste des destinataires. 
 
    > [!div class="mx-imgBorder"]
-   > ![turn-on-incident-reports](../media/endpoint-dlp-2-using-dlp-incident-reports.png)
+   > ![activer les rapports d’incident](../media/endpoint-dlp-2-using-dlp-incident-reports.png)
    
 6. Dans le cadre de ce scénario, sélectionnez **Envoyer une alerte chaque fois qu’une activité correspond à la règle**.
 
 7. Cliquez sur **Enregistrer**.
 
-8. Conservez tous vos paramètres précédents en choisissant **suivant** puis **Envoyer** les modifications apportées à la stratégie.
+8. Conservez tous vos paramètres précédents en choisissant **suivant** puis **Envoyez** les modifications apportées à la stratégie.
 
-9. Essayez de partager un test qui contient du contenu qui déclenchera la condition de données d’informations d’identification personnelle (PII) américaine avec une personne extérieure à votre organisation. Cette opération doit déclencher la stratégie.
+9. Tenter de partager un test qui contient un contenu qui déclenchera la condition des données des informations personnelles identifiables pour les États-Unis avec une personne extérieure à votre organisation. Cela devrait déclencher la stratégie.
 
 10. Consultez l’Explorateur d’activités pour l’événement.
 
@@ -170,11 +170,11 @@ Ces scénarios nécessitent que les appareils soient déjà intégrés et report
 
 1. Ouvrir[Page de protection contre la perte de données](https://compliance.microsoft.com/datalossprevention?viewid=policies).
 
-2. Sélectionnez la stratégie **Données d’informations d’identification personnelle (PII) pour les États-Unis** que vous avez créées dans le scénario 1.
+2. Sélectionnez la stratégie **Données d’informations d’identification personnelle pour les États-Unis** que vous avez créée dans le scénario 1.
 
-3. Sélectionnez **Modifier une stratégie (preview)**.
+3. Sélectionnez **Modifier la stratégie**.
 
-4. Accédez à la page **Règles DLP avancées** et modifiez la **Faible quantité de contenu détectée fichier INF US à Identification Personnelle**.
+4. Accédez à la page **Règles DLP avancées** et modifiez la **Faible quantité de contenu détectée pour les informations d’identification personnelle**.
 
 5. Faites défiler vers le bas jusqu’à la section **Audit ou restreindre les activités sur les appareils Windows** et pour chaque activité définissez l’action correspondante sur **Bloquer avec remplacement**.
 
@@ -185,9 +185,9 @@ Ces scénarios nécessitent que les appareils soient déjà intégrés et report
 
 7. Répétez les étapes 4-7 pour **Quantité de contenu élevé détectée le fichier INF (INF) US**.
 
-8. Conservez tous vos paramètres précédents en choisissant **suivant** puis **Envoyer** les modifications apportées à la stratégie.
+8. Conservez tous vos paramètres précédents en choisissant **suivant** puis **Envoyez** les modifications apportées à la stratégie.
 
-9. Essayez de partager un test qui contient du contenu qui déclenchera la condition de données d’informations d’identification personnelle (PII) américaine avec une personne extérieure à votre organisation. Cette opération doit déclencher la stratégie.
+9. Tenter de partager un test qui contient un contenu qui déclenchera la condition des données des informations personnelles identifiables pour les États-Unis avec une personne extérieure à votre organisation. Cela devrait déclencher la stratégie.
 
    Une fenêtre contextuelle semblable à celle-ci s’affiche sur l’appareil client :
 
@@ -198,8 +198,8 @@ Ces scénarios nécessitent que les appareils soient déjà intégrés et report
 
 ## <a name="see-also"></a>Voir aussi
 
-- [En savoir plus sur les points de terminaison de protection contre la perte de données (Preview)](endpoint-dlp-learn-about.md)
-- [Prise en main des points de terminaison de protection contre la perte de données (Preview)](endpoint-dlp-getting-started.md)
+- [Découvrir la protection contre la perte de données de point de terminaison](endpoint-dlp-learn-about.md)
+- [Prise en main la protection contre la perte de données de point de terminaison](endpoint-dlp-getting-started.md)
 - [Vue d’ensemble de la protection contre la perte de données](data-loss-prevention-policies.md)
 - [Création, test et réglage d’une stratégie DLP](create-test-tune-dlp-policy.md)
 - [Prise en main de l’explorateur d’activités](data-classification-activity-explorer.md)
