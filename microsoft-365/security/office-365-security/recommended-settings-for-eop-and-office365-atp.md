@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Quelles sont les meilleures pratiques pour les paramètres de sécurité Exchange Online Protection (EOP) et Defender pour Office 365 ? Quelles sont les recommandations actuelles pour la protection standard ? Qu’est-ce qui doit être utilisé si vous voulez être plus strict ? Quels sont les autres éléments que vous obtenez si vous utilisez également Defender pour Office 365 ?
-ms.openlocfilehash: bc91ba58c9dc14954f638853ad24fcf7a26684e3
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: bcad3609f5f73ac538ae9d1a0964ecc8e176003e
+ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123469"
+ms.locfileid: "49126636"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Paramètres recommandés pour EOP et Microsoft Defender pour Office 365 sécurité
 
@@ -189,11 +189,11 @@ Notez qu’il s’agit des mêmes paramètres que ceux disponibles dans les [par
 
 ****
 
-|Nom de la fonctionnalité de sécurité|Standard|Empêcher|Commentaire|
-|---|---|---|---|
-|**Activer la protection contre l’usurpation d’identité** <p> _EnableAntispoofEnforcement_|Activé <p> `$true`|Activé <p> `$true`||
-|**Activer l’expéditeur non authentifié** <p> _EnableUnauthenticatedSender_|Activé <p> `$true`|Activé <p> `$true`|Ajoute un point d’interrogation ( ?) à la photo de l’expéditeur dans Outlook pour les expéditeurs usurpés non identifiés. Pour plus d’informations, reportez-vous à la rubrique [usurpation des paramètres dans les stratégies anti-hameçonnage](set-up-anti-phishing-policies.md).|
-|**Si un message électronique est envoyé par une personne qui n’est pas autorisé à usurper votre domaine** <p> _AuthenticationFailAction_|**Déplacer le message vers les dossiers de courrier indésirable des destinataires** <p> `MoveToJmf`|**Mettre en quarantaine le message** <p> `Quarantine`|Ce paramètre s’applique aux expéditeurs bloqués dans l' [intelligence d’usurpation d’identité](learn-about-spoof-intelligence.md).|
+|Nom de la fonctionnalité de sécurité|Par défaut|Standard|Empêcher|Commentaire|
+|---|---|---|---|---|
+|**Activer la protection contre l’usurpation d’identité** <p> _EnableAntispoofEnforcement_|Activé <p> `$true`|Activé <p> `$true`|Activé <p> `$true`||
+|**Activer l’expéditeur non authentifié** <p> _EnableUnauthenticatedSender_|Activé <p> `$true`|Activé <p> `$true`|Activé <p> `$true`|Ajoute un point d’interrogation ( ?) à la photo de l’expéditeur dans Outlook pour les expéditeurs usurpés non identifiés. Pour plus d’informations, reportez-vous à la rubrique [usurpation des paramètres dans les stratégies anti-hameçonnage](set-up-anti-phishing-policies.md).|
+|**Si un message électronique est envoyé par une personne qui n’est pas autorisé à usurper votre domaine** <p> _AuthenticationFailAction_|**Déplacer le message vers les dossiers de courrier indésirable des destinataires** <p> `MoveToJmf`|**Déplacer le message vers les dossiers de courrier indésirable des destinataires** <p> `MoveToJmf`|**Mettre en quarantaine le message** <p> `Quarantine`|Ce paramètre s’applique aux expéditeurs bloqués dans l' [intelligence d’usurpation d’identité](learn-about-spoof-intelligence.md).|
 |
 
 #### <a name="advanced-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Paramètres avancés des stratégies anti-hameçonnage dans Microsoft Defender pour Office 365

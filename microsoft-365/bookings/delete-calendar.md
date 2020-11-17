@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 8c3a913c-2247-4519-894d-b6263eeb9920
 description: Utilisez le centre d’administration Microsoft 365 ou Windows PowerShell pour supprimer des calendriers de livres.
-ms.openlocfilehash: 3a1cb1c54f60247ab72056b3e39b56b0981228b7
-ms.sourcegitcommit: eb3c30d53a5434d8bad7c8f48a5612f3e2675945
+ms.openlocfilehash: 2fcb92cee18d709ef0e1fa3faa0246e622a9f9db
+ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422441"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49126648"
 ---
 # <a name="delete-a-booking-calendar-in-bookings"></a>Supprimer un calendrier de réservation dans bookings
 
@@ -46,7 +46,7 @@ Le calendrier de réservation est l’emplacement où sont stockées toutes les 
 
 ## <a name="delete-a-booking-calendar-using-exchange-online-powershell"></a>Supprimer un calendrier de réservation à l’aide d’Exchange Online PowerShell
 
-Consultez la rubrique [connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) pour connaître les conditions préalables et obtenir des instructions pour la connexion à Exchange Online PowerShell.
+Consultez la rubrique [connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps) pour connaître les conditions préalables et obtenir des instructions pour la connexion à Exchange Online PowerShell.
 
 Pour effectuer ces étapes, vous devez utiliser une fenêtre de commande Microsoft PowerShell active que vous avez exécutée en sélectionnant l’option « Exécuter en tant qu’administrateur ».
 

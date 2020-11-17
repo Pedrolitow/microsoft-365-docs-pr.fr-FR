@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: beffbe01-ce2d-4614-9ae5-7898868e2729
 description: Découvrez comment obtenir un rapport d’utilisation des boîtes aux lettres pour connaître les activités des utilisateurs à l’aide d’une boîte aux lettres utilisateur.
-ms.openlocfilehash: 0b0c57bda813e1600866513df86b7c973dcdffdc
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 8d942f507c1e3102f909fb33eb16e00f7ebf05ea
+ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949131"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49126566"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---mailbox-usage"></a>Rapports Microsoft 365 dans le centre d’administration-utilisation des boîtes aux lettres
 
@@ -37,8 +37,8 @@ Le **rapport d’utilisation des boîtes aux lettres** fournit des informations 
 
 1. Dans le centre d’administration, accédez à la page **Rapports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Utilisation</a>.
 
-    
-2. Dans la liste déroulante **Sélectionner un rapport** , **Exchange** sélectionnez \> **utilisation des boîtes aux lettres**Exchange.
+2. Sélectionnez **afficher plus** sous **utilisateurs actifs-services Microsoft 365**. 
+3. Dans la liste déroulante **utilisateurs actifs** , sélectionnez **Exchange** \> **utilisation des boîtes aux lettres** Exchange.
   
 ## <a name="interpret-the-mailbox-usage-report"></a>Interpréter le rapport Utilisation des boîtes aux lettres
 
@@ -57,4 +57,3 @@ Pour obtenir un aperçu de l' **utilisation des boîtes aux lettres** de votre o
 |9.  <br/> |Vous pouvez également exporter les données du rapport dans un fichier. csv Excel en sélectionnant le lien **Exporter** .  <br/> |
 |||
    
-

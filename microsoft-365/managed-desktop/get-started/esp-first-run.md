@@ -1,5 +1,5 @@
 ---
-title: Première expérience d’utilisation avec AutoPilot et la page d’état d’enregistrement
+title: Expérience de première exécution avec le pilote automatique et la page état d’inscription
 description: Comment déployer l’expérience ESP, les paramètres utilisés et les modifications apportées à la configuration
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
@@ -10,14 +10,14 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 7337dd28f7940256d1753cd4c0b6309406fab2d1
-ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.openlocfilehash: 5e2340c7c0bf00165bb43740d3d095b5b0402fc0
+ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48305269"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49126624"
 ---
-# <a name="first-run-experience-with-autopilot-and-the-enrollment-status-page"></a>Première expérience d’utilisation avec AutoPilot et la page d’état d’enregistrement
+# <a name="first-run-experience-with-autopilot-and-the-enrollment-status-page"></a>Expérience de première exécution avec le pilote automatique et la page état d’inscription
 
 Microsoft Managed Desktop utilise à la fois la page d' [État d’enregistrement](https://docs.microsoft.com/windows/deployment/windows-autopilot/enrollment-status) de [Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot) et de Microsoft Intune pour offrir la meilleure expérience de première utilisation possible à vos utilisateurs.
 
@@ -95,7 +95,7 @@ Si le programme d’installation utilisé par le bureau géré par Microsoft ne 
 
 ### <a name="autopilot-settings-change"></a>Modification des paramètres de pilotage automatique
 
-Vous souhaiterez peut-être demander un autre modèle de nom d’appareil. Toutefois, vous ne pouvez pas modifier le mode de déploiement, rejoindre Azure en tant que, paramètres de confidentialité ou type de compte d’utilisateur.
+Vous souhaiterez peut-être demander un autre modèle de nom d’appareil. Toutefois, vous ne pouvez pas modifier le mode de déploiement, rejoindre Azure AD en tant que, paramètres de confidentialité ou type de compte d’utilisateur.
 
 ### <a name="enrollment-status-page-settings-change"></a>Modification des paramètres de page d’état d’enregistrement
 
