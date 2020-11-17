@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Outil de test de connectivité réseau Microsoft 365 (aperçu)
-ms.openlocfilehash: 2be48f42c8529334b55b311e6f202d9f3b25ff9e
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 4fc12645ccd6a022e4ef4ebe849ac91ba431129b
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295525"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087078"
 ---
 # <a name="microsoft-365-network-connectivity-test-tool-preview"></a>Outil de test de connectivité réseau Microsoft 365 (aperçu)
 
@@ -193,7 +193,7 @@ Pendant le téléchargement de 15 Mo, nous Mesurez la latence TCP sur la porte d
 
 Indique le nom DNS et l’adresse IP du serveur de portes frontales du service SharePoint auquel vous étiez dirigé. Il est fourni à des fins d’information uniquement et aucune analyse réseau n’est associée.
 
-### <a name="microsoft-teams"></a>Microsoft Teams
+### <a name="microsoft-teams"></a>Microsoft Teams
 
 Cette section présente les résultats des tests liés à Microsoft Teams.
 
@@ -217,7 +217,7 @@ Indique la gigue UDP mesurée, qui doit être inférieure à **30ms**.
 
 Nous testons la connectivité HTTP à partir de l’emplacement du Bureau de l’utilisateur vers tous les points de terminaison réseau Microsoft 365 requis. Ces éléments sont publiés à l’adresse [https://aka.ms/o365ip](https://aka.ms/o365ip) . Network Insight est illustré pour les points de terminaison réseau requis qui ne peuvent pas être connectés à.
 
-La connectivité ay est bloquée par un serveur proxy, un pare-feu ou un autre périphérique de sécurité réseau sur le périmètre du réseau d’entreprise ou en cours d’utilisation en tant que proxy Cloud.
+La connectivité peut être bloquée par un serveur proxy, un pare-feu ou un autre périphérique de sécurité réseau sur le périmètre du réseau d’entreprise. La connectivité au port TCP 80 est testée avec une demande HTTP et la connectivité au port TCP 443 est testée avec une demande HTTPs. S’il n’y a aucune réponse, le nom de domaine complet est marqué comme un échec. S’il existe un code de réponse HTTP 407, le nom de domaine complet est marqué comme un échec. S’il existe un code de réponse HTTP 403, l’attribut Server de la réponse est alors vérifié et, s’il semble être un serveur proxy, nous le marquez comme une défaillance. Vous pouvez simuler les tests que nous effectuons à l’aide de l’outil de ligne de commande Windows curl.exe.
 
 Nous testons le certificat SSL à chaque point de terminaison réseau Microsoft 365 requis qui se trouve dans la catégorie Optimize ou Allow, comme défini sur [https://aka.ms/o365ip](https://aka.ms/o365ip) . Si un ou plusieurs tests ne trouvent pas de certificat SSL Microsoft, le réseau chiffré doit avoir été intercepté par un périphérique réseau intermédiaire. Un Network Insight est illustré sur tous les points de terminaison réseau chiffrés interceptés.
 
@@ -239,7 +239,7 @@ Cela présente des problèmes d’intégrité significatifs avec le réseau mond
 
 ![État de l’intégrité du réseau](../media/m365-mac-perf/m365-mac-perf-status-page.png)
 
-## <a name="faq"></a>Forum Aux Questions
+## <a name="faq"></a>FAQ
 
 Voici des réponses à certaines de nos questions fréquemment posées.
 

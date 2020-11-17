@@ -8,15 +8,16 @@ ms.date: 7/20/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
+ms.collection: enabler-strategic
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: f6bb4f5e09adcb1be6323a5d3d182cc3d1bc6017
-ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
+ms.openlocfilehash: db54ff053dcb1c9c1c608608ab1a37da8090cdb3
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48337228"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087510"
 ---
 # <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Microsoft SharePoint Syntex adoption : prise en main
 
@@ -127,7 +128,7 @@ Déterminer les personnes de votre organisation qui créeront et géreront les m
 | SharePoint/Knowledge admin | Administrateur Power Platform | Gestionnaire de connaissances | Propriétaire du modèle |
 |:-------|:-------|:-------|:-------|
 | Rôle AAD| Ajouter un rôle | Rôle AAD | Champions  |
-| Configurer le traitement de formulaires | Configurer un environnement de service de données commun pour le traitement des formulaires | Collecter des cas d’utilisation | Collecter des cas d’utilisation professionnelle |
+| Configurer le traitement des formulaires | Configurer un environnement de service de données commun pour le traitement des formulaires | Collecter des cas d’utilisation | Collecter des cas d’utilisation professionnelle |
 | Gérer les centres de contenu et les autorisations| Acheter et attribuer des crédits AIB | Établir les meilleures pratiques et analyser le modèle d’analyse | Créer et appliquer des modèles |
 
 Gestionnaire de connaissances, propriétaire du processus métier et propriétaire du modèle de contenu créez des modèles d’exemple et des adoptions de champion dans l’organisation.

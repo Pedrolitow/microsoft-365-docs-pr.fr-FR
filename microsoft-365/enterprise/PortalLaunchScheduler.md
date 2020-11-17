@@ -17,90 +17,126 @@ search.appverid:
 - SPO160
 - MET150
 description: Cet article explique comment lancer votre portail à l’aide du planificateur de lancement de portail
-ms.openlocfilehash: 929492742fd140654bd13be8165093ee10647c6d
-ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
+ms.openlocfilehash: 6a191cf323e180fa77614eb09bae4185228a5029
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "48999578"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087666"
 ---
 # <a name="launch-your-portal-using-the-portal-launch-scheduler"></a>Lancer votre portail à l’aide du planificateur de lancement du portail
 
-Vous pouvez lancer votre portail à l’aide du planificateur de lancement de portail en validant d’abord la capacité de l’administrateur client à configurer une vague pour un nouveau portail. L’administrateur peut ensuite valider une redirection de demandes en fonction de l’existence d’un utilisateur dans les ondes actives.
+Un portail est un site SharePoint sur votre intranet et qui comporte un grand nombre d’internautes qui utilisent du contenu sur le site. Le lancement de votre portail dans les vagues est une partie importante de la façon de s’assurer que les utilisateurs ont une expérience fluide et performante qui accèdent à un nouveau portail SharePoint Online. 
 
-Pour plus d’informations sur le lancement d’un portail réussi, suivez les principes de base, les pratiques et les recommandations détaillés dans la rubrique [création, lancement et maintenance d’un portail intègre](https://go.microsoft.com/fwlink/?linkid=2105838). 
+Le lancement dans les vagues est un moyen clé de déployer votre portail, comme indiqué dans [la planification de votre plan de déploiement du lancement de portail dans SharePoint Online](https://docs.microsoft.com/en-us/microsoft-365/Enterprise/Planportallaunchroll-out?view=o365-worldwide). Le planificateur de lancement de portail est conçu pour vous aider à suivre une approche de déploiement Wave/phase en gérant les redirections pour le nouveau portail. Pendant chacune des vagues, vous pouvez recueillir les commentaires des utilisateurs et surveiller les performances pendant chaque vague de déploiement. Cela présente l’avantage d’introduire lentement le portail, ce qui vous permet de suspendre et de résoudre les problèmes avant de passer à la prochaine vague, et de garantir une expérience positive pour vos utilisateurs. 
 
-## <a name="app-setup"></a>Installation de l’application
-1. Désinstallez-le si vous disposez `Microsoft.Online.SharePoint.PowerShell` d’un ordinateur existant dans le panneau de configuration.
-2. Sur PowerShell `Install-Module -Name Microsoft.Online.SharePoint.PowerShell` .
+Il existe deux types de redirection : 
+- bidirectionnel : lancer un nouveau portail SharePoint Online moderne pour remplacer un portail classique ou moderne SharePoint existant 
+- redirection temporaire des pages : lancer un nouveau portail SharePoint Online moderne sans portail SharePoint existant
 
-## <a name="connect-to-sharepoint-online"></a>Se connecter à SharePoint Online
-1. Ouvrez [SharePoint Online Management Shell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) dans Windows.
-2. Connectez-vous à votre client en tant qu’administrateur.
-   - `Connect-SPOService -Url "https://*-admin.sharepoint.com" -Credential "username”`
-3.  Entrez votre mot de passe lorsque vous y êtes invité.
+Le planificateur de lancement du portail est uniquement disponible pour lancer des portails SharePoint Online modernes, comme les sites de communication et les sites d’équipe modernes. Les lancements doivent être planifiés au moins 7 jours à l’avance. Le nombre d’ondes requises est déterminé par le nombre d’utilisateurs attendu. Avant de planifier le lancement d’un portail, l' [outil Diagnostics de la page pour SharePoint](https://aka.ms/perftool) doit être exécuté pour vérifier que la page d’accueil du portail est intègre. À la fin du lancement du portail, tous les utilisateurs disposant d’autorisations sur le site seront en mesure d’accéder au nouveau site. 
 
-## <a name="command-to-get-an-existing-setup"></a>Commande pour obtenir une configuration existante
+Pour plus d’informations sur le lancement d’un portail réussi, suivez les principes de base, les pratiques et les recommandations détaillés dans [Creating, lancement and Maintaining a successful Portal](https://docs.microsoft.com/sharepoint/portal-health). 
 
-Pour afficher les configurations de lancement de portail existantes :
+> [!NOTE]
+> Cette fonctionnalité n’est pas disponible pour Office 365 Germany, Office 365 géré par 21Vianet (Chine) ou Microsoft 365.
 
-1. Transmettre `Get-SPOPortalLaunchWaves  -LaunchSiteUrl  https://*.sharepoint.com/sites/newsite` .
-2. Transmettez le paramètre supplémentaire `-DisplayFormat Raw` si vous souhaitez voir la collection Wave au format RAW.
+## <a name="app-setup-and-connecting-to-sharepoint-online"></a>Installation de l’application et connexion à SharePoint Online
+1. [Téléchargez la dernière version de SharePoint Online Management Shell](https://go.microsoft.com/fwlink/p/?LinkId=255251).
 
-## <a name="commands-for-bi-directional-redirection"></a>Commandes de redirection bidirectionnelle
+    > [!NOTE]
+    > Si vous avez installé une version antérieure de SharePoint Online Management Shell, accédez à Ajouter ou supprimer des programmes et désinstaller « SharePoint Online Management Shell ».<br>Dans la page du Centre de téléchargement, sélectionnez votre langue, puis cliquez sur le bouton Télécharger. Vous serez invité à choisir entre le téléchargement d’un fichier .msi x64 et x86. Téléchargez le fichier x64 si vous exécutez la version 64 bits de Windows ou le fichier x86 si vous exécutez la version 32 bits. En cas de doute, consultez [Quelle est la version du système d’exploitation Windows que j’utilise ?](https://support.microsoft.com/help/13443/windows-which-operating-system). Une fois le fichier téléchargé, exécutez-le, puis suivez les étapes de l'Assistant d'installation.
 
-Pour migrer les anciens utilisateurs de site vers le nouveau site de manière intermédiaire :
+2. Connectez-vous à SharePoint en tant qu’[administrateur général ou administrateur SharePoint](/sharepoint/sharepoint-admin-role) dans Microsoft 365. Pour savoir comment procéder, reportez-vous à l’article [Prise en main de SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
 
-1. Créez des vagues de lancement de portail.
-   - Ceci s’applique uniquement lors de la phase de test de la version préliminaire.
-   - Pour tester immédiatement l’impact de la modification, assurez-vous que la première vague `LaunchDateUtc` est définie sur la date actuelle. Si vous ne fournissez pas cet indicateur, vous obtenez un message d’erreur. Cette erreur se produit car les lancements en production doivent être planifiés au moins 7 jours à l’avance.
 
-  `New-SPOPortalLaunchWaves  -LaunchSiteUrl "https://*.sharepoint.com/sites/newsite" -RedirectionType Bidirectional -RedirectUrl "https://*.sharepoint.com/sites/oldsite" -ExpectedNumberOfUsers LessThan10kUsers -WaveOverrideUsers "*@microsoft.com" -Waves ' [{Name:"Wave 1", Groups:["Viewers SG1"], LaunchDateUtc:"2020/10/14"}, {Name:"Wave 2", Groups:["Viewers SG2"], LaunchDateUtc:"2020/10/15"}]' -IsTesting $true`
+## <a name="view-any-existing-portal-launch-setups"></a>Afficher les configurations de lancement de portail existantes
 
-2. Validation complète.
-  - La redirection peut prendre jusqu’à 5 minutes pour terminer sa configuration au sein du service ; par conséquent, veuillez patienter avant de poursuivre.
-  - Si vous vous connectez avec l’utilisateur spécifié en tant que `WaveOverrideUsers` , aucune modification n’est apportée. Vous devez rester sur le site sur lequel vous avez accédé.
-  - Connectez-vous avec un utilisateur qui fait partie des *visionneuses SG1*.
-    - Accédez à l’ancien site et vous devez être redirigé vers le nouveau site.
-    - Accédez au nouveau site et restez sur le nouveau site.
-    - Connectez-vous avec l’utilisateur dans les *visionneuses SG2* et accédez à l’ancien site et restez sur l’ancien site.
-    - Accédez au nouveau site et vous devez être redirigé vers l’ancien site.
+Pour voir s’il existe des configurations de lancement de portail existantes :
 
-3. Suspendre le lancement du portail.
-  - Si vous devez suspendre les ondes de lancement, vous pouvez les suspendre pendant « x » jours. La définition `Status` de la suspension de l’indicateur empêche toute progression des vagues à venir. 
-  - `Set-SPOPortalLaunchWaves -Status Pause - LaunchSiteUrl  https://*.sharepoint.com/sites/NewSite`.
-  - Cela permet de valider que tous les utilisateurs sont redirigés vers l’ancien site.
+   ```PowerShell
+   Get-SPOPortalLaunchWaves -LaunchSiteUrl <object> -DisplayFormat <object>
+   ```
 
-4. Redémarrez la progression du lancement du portail. 
-  - `Set-SPOPortalLaunchWaves -Status Restart - LaunchSiteUrl  https://*.sharepoint.com/sites/NewSite`.
-  - Vérifiez que la redirection est maintenant restaurée.
+## <a name="schedule-a-portal-launch-on-the-site"></a>Planifier un lancement de portail sur le site
 
-5. Supprimer un portail lancer le programme d’installation.
-  - `Remove-SPOPortalLaunchWaves -LaunchSiteUrl https://*.sharepoint.com/sites/NewSite`.
-  - Vérifiez qu’aucune redirection ne se produit pour tous les utilisateurs.
+Le nombre d’ondes requises dépend de la taille de lancement attendue. 
+- Moins de 10 000 utilisateurs : 1 vague
+- 10 000 à 30k utilisateurs : 3 vagues 
+- 30k + 100 000 utilisateurs : 5 ondulations
+- Plus de 100 000 utilisateurs : 5 ondulations et contacter votre équipe de compte Microsoft
 
-## <a name="commands-for-redirection-to-temporary-page"></a>Commandes de redirection vers une page temporaire
+### <a name="steps-for-bi-directional-redirection"></a>Étapes de la redirection bidirectionnelle
 
-Suivez ces étapes si vous n’avez pas de site précédent et si vous ne souhaitez pas que les utilisateurs qui ne sont pas dans l’atterrissage se déplacent sur la nouvelle page de portail.
+La redirection bidirectionnelle implique le lancement d’un nouveau portail SharePoint Online moderne pour remplacer un portail classique ou moderne SharePoint existant. Les utilisateurs des ondes actives seront redirigés vers le nouveau site, qu’ils naviguaient vers l’ancien ou le nouveau site. Les utilisateurs d’une vague non lancée qui tentent d’accéder au nouveau site sont redirigés vers l’ancien site jusqu’à ce que leur vague soit lancée. Si vous avez des administrateurs ou des propriétaires qui ont besoin d’accéder aux anciens et aux nouveaux sites sans être redirigés, vérifiez qu’ils sont répertoriés à l’aide du `WaveOverrideUsers` paramètre. 
 
-Pour créer une page temporaire dans l’un des sites :
+Pour migrer des utilisateurs à partir d’un site SharePoint existant vers un nouveau site SharePoint de manière intermédiaire :
 
+1. Exécutez la commande suivante pour désigner les vagues de lancement du portail.
+   
+   ```PowerShell
+    New-SPOPortalLaunchWaves -LaunchSiteUrl <object> -RedirectionType Bidirectional -RedirectUrl <string> -ExpectedNumberOfUsers <object> -WaveOverrideUsers <object> -Waves <object>
+    ```
+
+Exemple :
+   ```PowerShell
+   New-SPOPortalLaunchWaves -LaunchSiteUrl "https://contoso.sharepoint.com/teams/newsite" -RedirectionType Bidirectional -RedirectUrl "https://contoso.sharepoint.com/teams/oldsite" -ExpectedNumberOfUsers 10kTo30kUsers -WaveOverrideUsers "admin@contoso.com" -Waves ' 
+[{Name:"Wave 1", Groups:["Viewers 1"], LaunchDateUtc:"2020/10/14"}, 
+{Name:"Wave 2", Groups:["Viewers 2"], LaunchDateUtc:"2020/10/15"}, 
+{Name:"Wave 3", Groups:["Viewers 3"], LaunchDateUtc:"2020/10/16"}]'
+   ```
+
+2. Validation complète. La redirection peut prendre 5-10 minutes pour terminer sa configuration au sein du service. 
+
+### <a name="steps-for-redirection-to-temporary-page"></a>Étapes de la redirection vers la page temporaire
+
+La redirection de page temporaire doit être utilisée lorsqu’il n’existe aucun portail SharePoint existant. Les utilisateurs sont dirigés vers un nouveau portail SharePoint Online moderne de manière intermédiaire. Si un utilisateur est dans une vague qui n’a pas été lancée, il est redirigé vers une page temporaire (n’importe quelle URL). 
+
+1. Exécutez la commande suivante pour désigner les vagues de lancement du portail.
+   
+      ```PowerShell
+    New-SPOPortalLaunchWaves -LaunchSiteUrl <object> -RedirectionType ToTemporaryPage -RedirectUrl <string> -ExpectedNumberOfUsers <object> -WaveOverrideUsers <object> -Waves <object>
+    ```
+
+Exemple :
+   ```PowerShell
+   New-SPOPortalLaunchWaves -LaunchSiteUrl "https://contoso.sharepoint.com/teams/newsite" -RedirectionType ToTemporaryPage -RedirectUrl "https://portal.contoso.com/UnderConstruction.aspx" -ExpectedNumberOfUsers 10kTo30kUsers -WaveOverrideUsers "admin@contoso.com" -Waves ' 
+[{Name:"Wave 1", Groups:["Viewers 1"], LaunchDateUtc:"2020/10/14"}, 
+{Name:"Wave 2", Groups:["Viewers 2"], LaunchDateUtc:"2020/10/15"}, 
+{Name:"Wave 3", Groups:["Viewers 3"], LaunchDateUtc:"2020/10/16"}]'
+   ```
+
+2. Validation complète. La redirection peut prendre 5-10 minutes pour terminer sa configuration au sein du service. 
+   - `New-SPOPortalLaunchWaves  -LaunchSiteUrl "https://*.sharepoint.com/sites/newsite" -RedirectionType Bidirectional -RedirectUrl "https://*.sharepoint.com/sites/oldsite" -ExpectedNumberOfUsers LessThan10kUsers -WaveOverrideUsers "*@microsoft.com" -Waves ' [{Name:"Wave 1", Groups:["Viewers SG1"], LaunchDateUtc:"2020/10/14"}, {Name:"Wave 2", Groups:["Viewers SG2"], LaunchDateUtc:"2020/10/15"}]' -IsTesting $true`
+
+## <a name="pause-or-restart-a-portal-launch-on-the-site"></a>Suspendre ou redémarrer un lancement de portail sur le site
+
+1. Pour suspendre le lancement d’un portail en cours et empêcher temporairement les progrès à venir, exécutez la commande suivante :
+
+   ```PowerShell
+   Set-SPOPortalLaunchWaves -Status Pause - LaunchSiteUrl <object>
+   ```
+2. Vérifiez que tous les utilisateurs sont redirigés vers l’ancien site. 
+
+3. Pour redémarrer un lancement de portail suspendu, exécutez la commande suivante :
+
+   ```PowerShell
+   Set-SPOPortalLaunchWaves -Status Restart - LaunchSiteUrl <object>
+   ```
+   
+4. Vérifiez que la redirection est maintenant restaurée. 
+
+## <a name="delete-a-portal-launch-on-the-site"></a>Supprimer un lancement de portail sur le site
 1. Créer une vague de lancement de portail.
-   - `New-SPOPortalLaunchWaves  -LaunchSiteUrl "https://*.sharepoint.com/sites/NewSite" -RedirectionType ToTemporaryPage -RedirectUrl "https://*.sharepoint.com/sites/OldSite" -ExpectedNumberOfUsers From10kTo30kUsers -WaveOverrideUsers *@microsoft.com -Waves [{Name:"Wave 1", Groups:["Viewers SG1"], LaunchDateUtc:"2020/10/14"}, {Name:"Wave 2", Groups:["Viewers SG2"], LaunchDateUtc:"2020/10/15"}]' -IsTesting $true`
+  - `New-SPOPortalLaunchWaves  -LaunchSiteUrl "https://*.sharepoint.com/sites/NewSite" -RedirectionType ToTemporaryPage -RedirectUrl "https://*.sharepoint.com/sites/OldSite" -ExpectedNumberOfUsers From10kTo30kUsers -WaveOverrideUsers *@microsoft.com -Waves [{Name:"Wave 1", Groups:["Viewers SG1"], LaunchDateUtc:"2020/10/14"}, {Name:"Wave 2", Groups:["Viewers SG2"], LaunchDateUtc:"2020/10/15"}]' -IsTesting $true`
 
-2. Validation complète.
+2. Exécutez la commande suivante pour supprimer un lancement de portail planifié ou en cours pour un site.
 
-  - Patientez cinq minutes avant de poursuivre, car l’action peut prendre jusqu’à cinq minutes.
-  - Connectez-vous à l’utilisateur qui fait partie des *observateurs SG1* et :
-     - Accédez au nouveau site, et vous devez rester sur le nouveau site.
-     - Naviguez jusqu’à la page Temp, et vous devez rester sur la page Temp.
-  - Connectez-vous à l’utilisateur qui fait partie des *visionneuses SG2* et :
-     - Naviguez jusqu’au nouveau site, et vous devez être redirigé vers la page Temp.
-     - Accédez à la page Temp et restez sur la page Temp.
+   ```PowerShell
+   Remove-SPOPortalLaunchWaves -LaunchSiteUrl <object>
+   ```
 
-3. Supprimer un portail lancer le programme d’installation.
-  - `Remove-SPOPortalLaunchWaves - LaunchSiteUrl  https://*.sharepoint.com/sites/NewSite`.
-  - Vérifiez qu’aucune redirection ne se produit pour tous les utilisateurs.
+3. Vérifiez qu’aucune redirection ne se produit pour tous les utilisateurs.
 
 ## <a name="learn-more"></a>En savoir plus
 [Planification de votre plan de déploiement de lancement de portail dans SharePoint Online](https://docs.microsoft.com/microsoft-365/Enterprise/Planportallaunchroll-out)

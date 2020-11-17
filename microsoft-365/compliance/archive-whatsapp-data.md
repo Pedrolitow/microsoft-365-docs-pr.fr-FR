@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur de télémessage pour importer et archiver des données WhatsApp dans Microsoft 365. Cela vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 de sorte que vous puissiez utiliser les fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: a8a3465ca3f728290b69cf9b6c5d0820daf00221
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 2600356fc2628d5832f93f7dbe4fc247d8812410
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199157"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087181"
 ---
 # <a name="set-up-a-connector-to-archive-whatsapp-data"></a>Configuration d’un connecteur pour l’archivage des données WhatsApp
 
 Utilisez le connecteur de Télémessage dans le centre de conformité Microsoft 365 pour importer et archiver des appels WhatsApp, des conversations, des pièces jointes, des fichiers et des messages supprimés. Une fois que vous avez configuré et configuré un connecteur, celui-ci se connecte au compte de messagerie de votre organisation une fois par jour et importe la communication mobile des employés à l’aide de l’archiveur téléphonique des télémessages WhatsApp ou de l’archivage de Cloud WhatsApp sur les boîtes aux lettres de Microsoft 365.
 
-Une fois que les données WhatsApp sont stockées dans des boîtes aux lettres d’utilisateurs, vous pouvez appliquer des fonctionnalités de conformité de Microsoft 365 telles que la conservation pour litige, la recherche de contenu et les stratégies de rétention de Microsoft 365 aux données Verizon. Par exemple, vous pouvez rechercher des messages WhatsApp à l’aide de la recherche de contenu ou associer la boîte aux lettres qui contient des messages WhatsApp à un dépositaire dans un cas avancé de découverte électronique. L’utilisation d’un connecteur WhatsApp pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à respecter les stratégies gouvernementales et réglementaires.
+Une fois que les données WhatsApp sont stockées dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité de Microsoft 365 telles que la conservation pour litige, la recherche de contenu et les stratégies de rétention 365 Microsoft aux données WhatsApp. Par exemple, vous pouvez rechercher des messages WhatsApp à l’aide de la recherche de contenu ou associer la boîte aux lettres qui contient des messages WhatsApp à un dépositaire dans un cas avancé de découverte électronique. L’utilisation d’un connecteur WhatsApp pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à respecter les stratégies gouvernementales et réglementaires.
 
 ## <a name="overview-of-archiving-whatsapp-data"></a>Vue d’ensemble des données d’archivage WhatsApp
 

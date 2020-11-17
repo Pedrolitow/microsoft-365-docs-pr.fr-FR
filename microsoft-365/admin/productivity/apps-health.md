@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Détails du score de productivité de la technologie d’intégrité Microsoft 365 Apps Health.
-ms.openlocfilehash: 9497118f4ebfb1cb2b64670638ce939da21eb261
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+ms.openlocfilehash: c38f2109ed41377cfccb9838c95dbfbebbfd322a
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841188"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49123510"
 ---
 # <a name="microsoft-365-apps-health--technology-experiences"></a>Intégrité des applications Microsoft 365 : expériences technologiques
 
-La fonction de score de productivité aide les organisations à transformer le travail réalisé avec les mesures relatives à la façon dont les utilisateurs utilisent les applications Microsoft 365 et les expériences technologiques de prise en charge. Le score reflète les performances de votre organisation&#39;s pour les catégories de personnes et d’expériences technologiques et compare votre score avec des organisations comme les vôtres. La catégorie d’intégrité Apps fait partie des mesures qui tombent sous expériences de personnes. Pour en savoir plus, consultez la rubrique [vue d’ensemble](productivity-score.md) de la note de productivité.
+La fonction de score de productivité aide les organisations à transformer le travail réalisé avec les mesures relatives à la façon dont les utilisateurs utilisent les applications Microsoft 365 et les expériences technologiques de prise en charge. Le score reflète les performances de votre organisation&#39;s pour les catégories de personnes et d’expériences technologiques et compare votre score avec des organisations comme les vôtres. La catégorie d’intégrité Apps fait partie des mesures qui tombent sous les expériences technologiques. Pour en savoir plus, consultez la rubrique [vue d’ensemble](productivity-score.md) de la note de productivité.
 
 ## <a name="why-your-organization39s-microsoft-365-apps-health-score-matters"></a>Pourquoi le score d’intégrité de votre organisation&#39;s Microsoft 365 Apps est important
 
@@ -59,7 +59,7 @@ Les informations prises en compte incluent le canal, la version et la version de
 
 Le graphique suivant indique le nombre d’appareils dans le canal de mise à jour recommandé au cours des 180 derniers jours. Le point de données sur le graphique en courbes est un agrégat d’activité pendant les 28 derniers jours.
 
-:::image type="content" source="../../media/appshealth-primarytrend.png" alt-text="Principale en vue de la visualisation pour les applications Microsoft 365.":::
+:::image type="content" source="../../media/appshealth-primarytrend.png" alt-text="Graphique illustrant la tendance pour les appareils exécutant le canal de mise à jour recommandé.":::
 
 ### <a name="scoring-framework"></a>Infrastructure de score
 
@@ -71,7 +71,7 @@ Nous fournissons également des informations de prise en charge qui vous permett
 
 ### <a name="devices-on-current-channel-and-running-supported-versions"></a>Périphériques sur le canal actuel et exécution des versions prises en charge
 
-:::image type="content" source="../../media/devices-current-suppported-channel.png" alt-text="Principale en vue de la visualisation pour les applications Microsoft 365.":::
+:::image type="content" source="../../media/devices-current-suppported-channel.png" alt-text="Graphique illustrant le nombre d’appareils dans le canal pris en charge actuel.":::
 
 1. **En-tête :**  Met en surbrillance le pourcentage d’appareils sur le canal actuel exécutent des versions prises en charge des applications Microsoft 365.
 1. **Body :**  Fournit des informations sur la valeur des appareils exécutant les applications Microsoft 365 sur le canal recommandé.
@@ -82,7 +82,7 @@ Nous fournissons également des informations de prise en charge qui vous permett
 
 ### <a name="devices-running-latest-and-supported-versions"></a>Appareils exécutant les versions les plus récentes et prises en charge
 
-:::image type="content" source="../../media/device-supported-versions.png" alt-text="Principale en vue de la visualisation pour les applications Microsoft 365.":::
+:::image type="content" source="../../media/device-supported-versions.png" alt-text="Graphique illustrant le nombre d’appareils exécutant les versions d’applications les plus récentes et prises en charge.":::
 
 1. **En-tête :**  Met en surbrillance le pourcentage d’appareils exécutant les versions et appareils pris en charge exécutant les versions les plus récentes.
 1. **Body :**  Fournit des informations sur la valeur de l’exécution des appareils sur les canaux recommandés et les versions prises en charge/les plus récentes.
@@ -99,7 +99,7 @@ Nous fournissons également des informations de prise en charge qui vous permett
 
 Ce graphique indique la ligne de tendance des appareils exécutant les versions prises en charge et les versions les plus récentes des applications 365 de Microsoft au cours des 180 derniers jours.
 
-:::image type="content" source="../../media/trendline-devices-supportedversions.png" alt-text="Principale en vue de la visualisation pour les applications Microsoft 365.":::
+:::image type="content" source="../../media/trendline-devices-supportedversions.png" alt-text="Graphique qui Showa le nombre de périphériques qui exécutent des versions d’applications prises en charge et les plus récentes dans le temps.":::
 
 ## <a name="people-in-your-organization"></a>Personnes de votre organisation
 

@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur les stratégies anti-hameçonnage disponibles dans Exchange Online Protection (EOP) et Microsoft Defender pour Office 365.
-ms.openlocfilehash: b54f452fb984f61913f2ade53ad45ed169a43832
-ms.sourcegitcommit: f941495e9257a0013b4a6a099b66c649e24ce8a1
+ms.openlocfilehash: c728a69a3b0841219e4f9b546e80e71b2cf89151
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "48993353"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49123630"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Stratégies anti-hameçonnage dans Microsoft 365
 
@@ -65,17 +65,17 @@ Le reste de cet article décrit les paramètres disponibles dans les stratégies
 
 Les paramètres de stratégie suivants sont disponibles dans les stratégies de détection d’hameçonnage dans EOP et Microsoft Defender pour Office 365 :
 
-- **Name** : vous ne pouvez pas renommer la stratégie anti-hameçonnage par défaut, mais vous pouvez nommer et renommer les stratégies personnalisées que vous créez.
+- **Name**: vous ne pouvez pas renommer la stratégie anti-hameçonnage par défaut, mais vous pouvez nommer et renommer les stratégies personnalisées que vous créez.
 
 - **Description** Vous ne pouvez pas ajouter de description à la stratégie anti-hameçonnage par défaut, mais vous pouvez ajouter et modifier la description des stratégies personnalisées que vous créez.
 
-- **Appliqué à** : identifie les destinataires internes auxquels s’applique la stratégie anti-hameçonnage. Cette valeur est requise dans les stratégies personnalisées et n’est pas disponible dans la stratégie par défaut (la stratégie par défaut s’applique à tous les destinataires).
+- **Appliqué à**: identifie les destinataires internes auxquels s’applique la stratégie anti-hameçonnage. Cette valeur est requise dans les stratégies personnalisées et n’est pas disponible dans la stratégie par défaut (la stratégie par défaut s’applique à tous les destinataires).
 
-  Vous pouvez uniquement utiliser une condition ou une exception une seule fois, mais vous pouvez spécifier plusieurs valeurs pour la condition ou l’exception. Plusieurs valeurs de la même condition ou exception utilisent la logique OU (par exemple, _\<recipient1\>_ ou _\<recipient2\>_ ). Des conditions ou des exceptions différentes utilisent la logique ET (par exemple, _\<recipient1\>_ et _\<member of group 1\>_ ).
+  Vous pouvez uniquement utiliser une condition ou une exception une seule fois, mais vous pouvez spécifier plusieurs valeurs pour la condition ou l’exception. Plusieurs valeurs de la même condition ou exception utilisent la logique OU (par exemple, _\<recipient1\>_ ou _\<recipient2\>_). Des conditions ou des exceptions différentes utilisent la logique ET (par exemple, _\<recipient1\>_ et _\<member of group 1\>_).
 
-  - **Destinataire** : une ou plusieurs boîtes aux lettres, utilisateurs de messagerie ou contacts de messagerie dans votre organisation.
-  - Le **destinataire est membre de** : un ou plusieurs groupes de votre organisation.
-  - **Le domaine du destinataire est** : un ou plusieurs domaines acceptés configurés dans Microsoft 365.
+  - **Destinataire**: une ou plusieurs boîtes aux lettres, utilisateurs de messagerie ou contacts de messagerie dans votre organisation.
+  - Le **destinataire est membre de**: un ou plusieurs groupes de votre organisation.
+  - **Le domaine du destinataire est**: un ou plusieurs domaines acceptés configurés dans Microsoft 365.
 
   - **Sauf** dans les cas suivants : exceptions pour la règle. Les paramètres et le comportement sont exactement comme les conditions :
 
@@ -102,15 +102,15 @@ Les paramètres d’usurpation suivants sont disponibles dans les stratégies de
 
   Pour les messages provenant d’expéditeurs usurpés bloqués, vous pouvez également spécifier l’action à effectuer sur les messages :
 
-  - **Déplacer le message vers le dossier courrier indésirable** : il s’agit de la valeur par défaut. Le message est remis à la boîte aux lettres et déplacé vers le dossier courrier indésirable. Dans Exchange Online, le message est déplacé vers le dossier courrier indésirable si la règle de courrier indésirable est activée dans la boîte aux lettres (elle est activée par défaut). Pour plus d’informations, consultez la rubrique [configurer les paramètres du courrier indésirable sur les boîtes aux lettres Exchange Online dans Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
+  - **Déplacer le message vers le dossier courrier indésirable**: il s’agit de la valeur par défaut. Le message est remis à la boîte aux lettres et déplacé vers le dossier courrier indésirable. Dans Exchange Online, le message est déplacé vers le dossier courrier indésirable si la règle de courrier indésirable est activée dans la boîte aux lettres (elle est activée par défaut). Pour plus d’informations, consultez la rubrique [configurer les paramètres du courrier indésirable sur les boîtes aux lettres Exchange Online dans Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-  - **Mettre en quarantaine le message** : envoie le message en quarantaine au lieu des destinataires prévus. Pour plus d’informations sur la mise en quarantaine, consultez les articles suivants :
+  - **Mettre en quarantaine le message**: envoie le message en quarantaine au lieu des destinataires prévus. Pour plus d’informations sur la mise en quarantaine, consultez les articles suivants :
 
     - [Mise en quarantaine dans Microsoft 365](quarantine-email-messages.md)
     - [Gérer les messages et les fichiers mis en quarantaine en tant qu’administrateur dans Microsoft 365](manage-quarantined-messages-and-files.md)
     - [Rechercher et débloquer les messages mis en quarantaine en tant qu’utilisateur dans Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
-- **Expéditeur non authentifié** : consultez les informations de la section suivante.
+- **Expéditeur non authentifié**: consultez les informations de la section suivante.
 
 ### <a name="unauthenticated-sender"></a>Expéditeur non authentifié
 
@@ -140,7 +140,7 @@ Pour plus d’informations, consultez [la rubrique identifier les messages suspe
 Cette section décrit les paramètres de stratégie qui sont disponibles uniquement dans les stratégies anti-hameçonnage dans Microsoft Defender pour Office 365.
 
 > [!NOTE]
-> Par défaut, les paramètres exclusifs de l’option Defender pour Office 365 ne sont pas configurés ou activés, même dans la stratégie par défaut. Pour tirer parti de ces fonctionnalités, vous devez les activer et les configurer dans la stratégie anti-hameçonnage par défaut ou créer et configurer des stratégies anti-hameçonnage personnalisées.
+> La stratégie anti-hameçonnage par défaut dans Microsoft Defender pour Office 365 fournit une [protection contre l’usurpation d’identité](set-up-anti-phishing-policies.md#spoof-settings) et une intelligence de boîte aux lettres pour tous les destinataires. Toutefois, les autres fonctionnalités de [protection contre l’emprunt d’identité](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) disponibles et les [Paramètres avancés](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365) ne sont pas configurés ni activés dans la stratégie par défaut. Pour activer toutes les fonctionnalités de protection, modifiez la stratégie anti-hameçonnage par défaut ou créez des stratégies anti-hameçonnage supplémentaires.
 
 ### <a name="impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Paramètres d’emprunt d’identité dans les stratégies anti-hameçonnage dans Microsoft Defender pour Office 365
 
@@ -153,7 +153,7 @@ Un domaine usurpé pourrait autrement être considéré comme légitime (domaine
 
 Les paramètres d’emprunt d’identité suivants sont disponibles uniquement dans les stratégies anti-hameçonnage dans Microsoft Defender pour Office 365 :
 
-- **Utilisateurs à protéger** : empêche l’usurpation d’identité des adresses de messagerie internes ou externes spécifiées **en tant qu’expéditeurs de messages**. Par exemple, vous recevez un message électronique du vice-président de votre société qui vous demande d’envoyer des informations internes sur l’entreprise. Voulez-vous le faire ? De nombreuses personnes envoient la réponse sans l’avoir pensée.
+- **Utilisateurs à protéger**: empêche l’usurpation d’identité des adresses de messagerie internes ou externes spécifiées **en tant qu’expéditeurs de messages**. Par exemple, vous recevez un message électronique du vice-président de votre société qui vous demande d’envoyer des informations internes sur l’entreprise. Voulez-vous le faire ? De nombreuses personnes envoient la réponse sans l’avoir pensée.
 
   Vous pouvez utiliser des utilisateurs protégés pour ajouter des adresses de messagerie d’expéditeurs internes et externes afin de protéger l’emprunt d’identité. Cette liste d' **expéditeurs** protégés de l’emprunt d’identité de l’utilisateur est différente de la liste des **destinataires** auxquels la stratégie s’applique (tous les destinataires de la stratégie par défaut ; des destinataires spécifiques, comme configuré dans le paramètre **appliqué à** dans la section [paramètres de stratégie](#policy-settings) ).
 
@@ -167,7 +167,7 @@ Les paramètres d’emprunt d’identité suivants sont disponibles uniquement d
 
   Lorsque vous ajoutez des adresses de messagerie électronique internes ou externes aux **utilisateurs pour protéger** la liste, les messages provenant de ces **expéditeurs** sont soumis aux contrôles de protection contre l’emprunt d’identité. Le message est vérifié pour l’emprunt d’identité **si** le message est envoyé à un **destinataire** auquel la stratégie s’applique (tous les destinataires de la stratégie par défaut ; **S’applique aux** destinataires dans les stratégies personnalisées). Si l’emprunt d’identité est détecté dans l’adresse de messagerie de l’expéditeur, les actions de protection contre l’emprunt d’identité pour les utilisateurs sont appliquées au message (ce qu’il faut faire avec le message, s’il faut afficher les conseils de sécurité des utilisateurs empruntés, etc.).
 
-- **Domaines à protéger** : empêche l’emprunt d’identité des domaines spécifiés **dans le domaine de l’expéditeur du message**. Par exemple, tous les domaines que vous possédez ([domaines acceptés](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) ou des domaines spécifiques (domaines que vous possédez ou domaines partenaires). Cette liste de **domaines d’expéditeur** protégés de l’emprunt d’identité est différente de la liste des **destinataires** auxquels la stratégie s’applique (tous les destinataires de la stratégie par défaut ; des destinataires spécifiques tels que configurés dans le paramètre **appliqué à** dans la section [paramètres de stratégie](#policy-settings) ).
+- **Domaines à protéger**: empêche l’emprunt d’identité des domaines spécifiés **dans le domaine de l’expéditeur du message**. Par exemple, tous les domaines que vous possédez ([domaines acceptés](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) ou des domaines spécifiques (domaines que vous possédez ou domaines partenaires). Cette liste de **domaines d’expéditeur** protégés de l’emprunt d’identité est différente de la liste des **destinataires** auxquels la stratégie s’applique (tous les destinataires de la stratégie par défaut ; des destinataires spécifiques tels que configurés dans le paramètre **appliqué à** dans la section [paramètres de stratégie](#policy-settings) ).
 
   > [!NOTE]
   > Le nombre maximal de domaines protégés que vous pouvez définir dans toutes les stratégies de protection contre le hameçonnage est de 50.
@@ -176,36 +176,36 @@ Les paramètres d’emprunt d’identité suivants sont disponibles uniquement d
 
   Lorsque vous ajoutez des domaines à la liste **domaines à protéger** , les messages provenant d' **expéditeurs de ces domaines** sont soumis aux contrôles de protection contre l’emprunt d’identité. Le message est vérifié pour l’emprunt d’identité **si** le message est envoyé à un **destinataire** auquel la stratégie s’applique (tous les destinataires de la stratégie par défaut ; **S’applique aux** destinataires dans les stratégies personnalisées). Si l’emprunt d’identité est détecté dans le domaine de l’expéditeur, les actions de protection contre l’emprunt d’identité pour les domaines sont appliquées au message (ce qu’il faut faire avec le message, s’il faut afficher les conseils de sécurité des utilisateurs empruntés, etc.).
 
-- **Actions pour les utilisateurs ou domaines protégés** : choisissez l’action à effectuer sur les messages entrants qui contiennent des tentatives d’emprunt d’identité pour les utilisateurs protégés et les domaines protégés de la stratégie. Vous pouvez spécifier différentes actions pour l’emprunt d’identité des utilisateurs protégés et l’emprunt d’identité des domaines protégés :
+- **Actions pour les utilisateurs ou domaines protégés**: choisissez l’action à effectuer sur les messages entrants qui contiennent des tentatives d’emprunt d’identité pour les utilisateurs protégés et les domaines protégés de la stratégie. Vous pouvez spécifier différentes actions pour l’emprunt d’identité des utilisateurs protégés et l’emprunt d’identité des domaines protégés :
 
   - **Ne pas appliquer d’action**
 
-  - **Rediriger le message vers d’autres adresses de messagerie** : envoie le message aux destinataires spécifiés au lieu des destinataires prévus.
+  - **Rediriger le message vers d’autres adresses de messagerie**: envoie le message aux destinataires spécifiés au lieu des destinataires prévus.
 
-  - **Déplacer le message vers le dossier courrier indésirable** : le message est remis à la boîte aux lettres et déplacé vers le dossier courrier indésirable. Dans Exchange Online, le message est déplacé vers le dossier courrier indésirable si la règle de courrier indésirable est activée dans la boîte aux lettres (elle est activée par défaut). Pour plus d’informations, consultez la rubrique [configurer les paramètres du courrier indésirable sur les boîtes aux lettres Exchange Online dans Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
+  - **Déplacer le message vers le dossier courrier indésirable**: le message est remis à la boîte aux lettres et déplacé vers le dossier courrier indésirable. Dans Exchange Online, le message est déplacé vers le dossier courrier indésirable si la règle de courrier indésirable est activée dans la boîte aux lettres (elle est activée par défaut). Pour plus d’informations, consultez la rubrique [configurer les paramètres du courrier indésirable sur les boîtes aux lettres Exchange Online dans Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-    - **Mettre en quarantaine le message** : envoie le message en quarantaine au lieu des destinataires prévus. Pour plus d’informations sur la mise en quarantaine, consultez les articles suivants :
+    - **Mettre en quarantaine le message**: envoie le message en quarantaine au lieu des destinataires prévus. Pour plus d’informations sur la mise en quarantaine, consultez les articles suivants :
 
     - [Mise en quarantaine dans Microsoft 365](quarantine-email-messages.md)
     - [Gérer les messages et les fichiers mis en quarantaine en tant qu’administrateur dans Microsoft 365](manage-quarantined-messages-and-files.md)
     - [Rechercher et débloquer les messages mis en quarantaine en tant qu’utilisateur dans Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
-  - **Remise du message et ajout d’autres adresses à la ligne CCI** : remet le message aux destinataires concernés et remet en silence le message aux destinataires spécifiés.
+  - **Remise du message et ajout d’autres adresses à la ligne CCI**: remet le message aux destinataires concernés et remet en silence le message aux destinataires spécifiés.
 
-  - **Supprimer le message avant qu’il ne soit remis** : supprime silencieusement le message entier, y compris toutes les pièces jointes.
+  - **Supprimer le message avant qu’il ne soit remis**: supprime silencieusement le message entier, y compris toutes les pièces jointes.
 
-- **Conseils de sécurité** : active ou désactive les conseils de sécurité d’emprunt d’identité suivants qui apparaîtront pour les messages qui échouent aux vérifications de l’emprunt d’identité :
+- **Conseils de sécurité**: active ou désactive les conseils de sécurité d’emprunt d’identité suivants qui apparaîtront pour les messages qui échouent aux vérifications de l’emprunt d’identité :
 
-  - **Utilisateurs empruntés** : l’adresse de l’utilisateur contient un utilisateur protégé.
-  - **Domaines empruntés** : l’adresse de provenance contient un domaine protégé.
-  - **Caractères inhabituels** : l’adresse de l’expéditeur contient des jeux de caractères inhabituels (par exemple, des symboles mathématiques, du texte ou une combinaison de majuscules et minuscules) dans un expéditeur ou un domaine protégé.
+  - **Utilisateurs empruntés**: l’adresse de l’utilisateur contient un utilisateur protégé.
+  - **Domaines empruntés**: l’adresse de provenance contient un domaine protégé.
+  - **Caractères inhabituels**: l’adresse de l’expéditeur contient des jeux de caractères inhabituels (par exemple, des symboles mathématiques, du texte ou une combinaison de majuscules et minuscules) dans un expéditeur ou un domaine protégé.
 
   > [!NOTE]
   > Même lorsque les conseils de sécurité pour l’emprunt d’identité sont désactivés, vous pouvez utiliser une règle de flux de messagerie (également appelée règle de transport) pour ajouter un en-tête de message nommé **X-MS-Exchange-EnableFirstContactSafetyTip** aux messages. Des conseils de sécurité spécifiques seront affichés pour avertir les destinataires qu’ils ne reçoivent pas de courrier électronique de l’expéditeur ou dans les cas où le destinataire reçoit un message électronique pour la première fois de l’expéditeur.
 
-- **Intelligence des boîtes aux lettres** : active ou désactive l’intelligence artificielle (ai) qui détermine les modèles de courrier des utilisateurs avec leurs contacts fréquents. Ce paramètre permet à l’AI de faire la distinction entre les messages légitimes et falsifiés de ces contacts. La boîte aux lettres n’est disponible que pour les boîtes aux lettres Exchange Online.
+- **Intelligence des boîtes aux lettres**: active ou désactive l’intelligence artificielle (ai) qui détermine les modèles de courrier des utilisateurs avec leurs contacts fréquents. Ce paramètre permet à l’AI de faire la distinction entre les messages légitimes et falsifiés de ces contacts. La boîte aux lettres n’est disponible que pour les boîtes aux lettres Exchange Online.
 
-- **Protection contre l’usurpation d’identité basée sur les boîtes aux lettres** : active ou désactive les résultats d’emprunt d’identité améliorés en fonction du mappage d’expéditeur individuel de chaque utilisateur. Cette intelligence permet à Microsoft 365 de personnaliser la détection de l’emprunt d’identité de l’utilisateur et de mieux gérer les faux positifs. Lorsque l’emprunt d’identité de l’utilisateur est détecté, vous pouvez définir une action spécifique à effectuer sur le message :
+- **Protection contre l’usurpation d’identité basée sur les boîtes aux lettres**: active ou désactive les résultats d’emprunt d’identité améliorés en fonction du mappage d’expéditeur individuel de chaque utilisateur. Cette intelligence permet à Microsoft 365 de personnaliser la détection de l’emprunt d’identité de l’utilisateur et de mieux gérer les faux positifs. Lorsque l’emprunt d’identité de l’utilisateur est détecté, vous pouvez définir une action spécifique à effectuer sur le message :
 
   - **Ne pas appliquer d’action**
   - **Rediriger le message vers d’autres adresses de messagerie**
@@ -214,18 +214,18 @@ Les paramètres d’emprunt d’identité suivants sont disponibles uniquement d
   - **Remise du message et ajout d’autres adresses à la ligne CCI**
   - **Supprimer le message avant qu’il ne soit remis**
 
-- **Expéditeurs et domaines approuvés** : exceptions aux paramètres de protection contre l’emprunt d’identité. Les messages provenant des domaines des expéditeurs et des expéditeurs spécifiés ne sont jamais classés comme attaques par emprunt d’identité par la stratégie. En d’autres termes, l’action pour les expéditeurs protégés, les domaines protégés ou la protection contre les boîtes aux lettres n’est pas appliquée à ces expéditeurs approuvés ou domaines d’expéditeurs. La limite maximale de ces listes est d’environ 1000 entrées.
+- **Expéditeurs et domaines approuvés**: exceptions aux paramètres de protection contre l’emprunt d’identité. Les messages provenant des domaines des expéditeurs et des expéditeurs spécifiés ne sont jamais classés comme attaques par emprunt d’identité par la stratégie. En d’autres termes, l’action pour les expéditeurs protégés, les domaines protégés ou la protection contre les boîtes aux lettres n’est pas appliquée à ces expéditeurs approuvés ou domaines d’expéditeurs. La limite maximale de ces listes est d’environ 1000 entrées.
 
 ### <a name="advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Seuils de hameçonnage avancés dans les stratégies de détection d’hameçonnage dans Microsoft Defender pour Office 365
 
 Les seuils de hameçonnage avancés suivants sont disponibles uniquement dans les stratégies anti-hameçonnage de Microsoft Defender pour Office 365. Ces seuils contrôlent la sensibilité pour l’application des modèles d’apprentissage automatique aux messages permettant de déterminer un verdict de phishing :
 
-- **1-standard** : il s’agit de la valeur par défaut. La gravité de l’action effectuée sur le message dépend du degré de certitude que le message est de type hameçonnage (faible, moyenne, haute ou très élevée). Par exemple, les messages qui sont identifiés comme un hameçonnage avec un degré de confiance très élevé ont les actions les plus graves appliquées, tandis que les messages identifiés comme du hameçonnage avec un faible degré de confiance ont des actions moins graves appliquées.
+- **1-standard**: il s’agit de la valeur par défaut. La gravité de l’action effectuée sur le message dépend du degré de certitude que le message est de type hameçonnage (faible, moyenne, haute ou très élevée). Par exemple, les messages qui sont identifiés comme un hameçonnage avec un degré de confiance très élevé ont les actions les plus graves appliquées, tandis que les messages identifiés comme du hameçonnage avec un faible degré de confiance ont des actions moins graves appliquées.
 
-- **2-agressif** : les messages identifiés comme du hameçonnage avec un haut degré de confiance sont traités comme s’ils étaient identifiés avec un très haut degré de confiance.
+- **2-agressif**: les messages identifiés comme du hameçonnage avec un haut degré de confiance sont traités comme s’ils étaient identifiés avec un très haut degré de confiance.
 
-- **3-plus agressif** : les messages identifiés comme hameçonnage avec un niveau de confiance moyen ou élevé sont traités comme s’ils étaient identifiés avec un très haut degré de confiance.
+- **3-plus agressif**: les messages identifiés comme hameçonnage avec un niveau de confiance moyen ou élevé sont traités comme s’ils étaient identifiés avec un très haut degré de confiance.
 
-- **4-le plus agressif** : les messages identifiés comme hameçonnage avec un niveau de confiance faible, moyen ou élevé sont traités comme s’ils étaient identifiés avec un très haut degré de confiance.
+- **4-le plus agressif**: les messages identifiés comme hameçonnage avec un niveau de confiance faible, moyen ou élevé sont traités comme s’ils étaient identifiés avec un très haut degré de confiance.
 
 Le risque de faux positifs (bons messages marqués comme incorrects) augmente à mesure que vous augmentez ce paramètre. Pour plus d’informations sur les paramètres recommandés, reportez-vous à la rubrique [anti-hameçonnage Policy in Microsoft Defender for Office 365 Settings](recommended-settings-for-eop-and-office365-atp.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365).

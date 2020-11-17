@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Trouvez des réponses aux questions fréquemment posées sur le gestionnaire de conformité Microsoft, ce qui permet aux organisations de simplifier et d’automatiser les évaluations des risques.
-ms.openlocfilehash: 49886cba59cc486c4345e069a4b782951fed4c68
-ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
+ms.openlocfilehash: 91b5957d843a2e3fba22a1a9f1e630fbfede8713
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48791780"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087067"
 ---
 # <a name="compliance-manager-frequently-asked-questions"></a>Forum aux questions sur le gestionnaire de conformité
 
@@ -73,7 +73,7 @@ Le gestionnaire de conformité est une solution de bout en bout dans le centre d
 
 ## <a name="are-there-licensing-requirements-for-using-compliance-manager"></a>Existe-t-il des exigences en matière de licences pour utiliser le gestionnaire de conformité ?
 
-Oui. La version GA du gestionnaire de conformité contient de nouveaux termes de licence. Toutes les organisations disposant de licences Office 365 et Microsoft 365 (sauf pour le gouvernement américain et DoD) ont accès au gestionnaire de conformité. Toutefois, les évaluations disponibles pour votre organisation et la manière dont vous gérez les modèles d’évaluation dépendent de votre contrat de licence. Pour plus d’informations, consultez les [conseils de licence Microsoft 365 pour la sécurité et la conformité](https://go.microsoft.com/fwlink/?linkid=2132371) .
+Oui. La version GA du gestionnaire de conformité contient de nouveaux termes de licence. Toutes les organisations disposant de licences Office 365 et Microsoft 365 et de la communauté pour le gouvernement américain (GCC) ont accès au gestionnaire de conformité. Toutefois, les évaluations disponibles pour votre organisation et la manière dont vous gérez les modèles d’évaluation dépendent de votre contrat de licence. Pour plus d’informations, consultez les [conseils de licence Microsoft 365 pour la sécurité et la conformité](https://go.microsoft.com/fwlink/?linkid=2132371) .
 
 ## <a name="if-i-have-a-high-score-does-it-mean-im-fully-compliant"></a>Si j’ai un score élevé, cela signifie-t-il que je suis entièrement conforme ?
 

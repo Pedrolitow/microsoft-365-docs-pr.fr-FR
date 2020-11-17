@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Détails du score de productivité de l’expérience de communication.
-ms.openlocfilehash: 6f79a636c24548586048adf0151ac5eefb98fffe
-ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
+ms.openlocfilehash: ba2e69659f49c90d3b65e56e54b3026c7c9ff36a
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48804654"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49123444"
 ---
 # <a name="communication--people-experiences"></a>Communication – expériences de personnes
 
@@ -57,8 +57,8 @@ Microsoft 365 offre aux personnes la flexibilité nécessaire pour s’adapter a
 3. **Visualisation de l’état actuel :**
     - Barre horizontale où la partie bleue représente le pourcentage exprimé dans l’en-tête
     - Met en surbrillance le (numérateur/dénominateur) utilisé pour calculer le pourcentage exprimé dans l’en-tête :
-      - **Numérateur** : nombre de personnes utilisant plus d’un mode de communication au cours des 28 derniers jours
-      - **Dénominateur** : nombre de personnes marquées comme activées pour plusieurs produits de communication au cours des 28 derniers jours
+      - **Numérateur**: nombre de personnes utilisant plus d’un mode de communication au cours des 28 derniers jours
+      - **Dénominateur**: nombre de personnes marquées comme activées pour plusieurs produits de communication au cours des 28 derniers jours
     - La valeur de benchmark de l' **homologue** de la mesure clé est également indiquée sous forme de pourcentage
 
 1. **Afficher les ressources de communication :** Cliquez ici pour inscrire tout le contenu de prise en charge sous la forme de vidéos/Articles liés à la communication. À partir de ces éléments, vous pouvez accéder à la playlist personnalisée pour la communication, puis pour toutes les catégories de score de productivité.
@@ -67,7 +67,7 @@ Microsoft 365 offre aux personnes la flexibilité nécessaire pour s’adapter a
 
  Ce graphique fournit la tendance du numérateur de la mesure clé dans l’analyse principale, c’est-à-dire le nombre de personnes utilisant plusieurs modes de communication au cours des 180 derniers jours. Ici, la valeur quotidienne est un agrégat du nombre de personnes qui utilisent plusieurs formes de communication au cours des 28 derniers jours.
 
-:::image type="content" source="../../media/trend-communication.png" alt-text="Principaux détails sur les modes de communication.":::
+:::image type="content" source="../../media/trend-communication.png" alt-text="Graphique illustrant le nombre de personnes qui utilisent plusieurs modes de communication par rapport à l’heure.":::
 
 ### <a name="scoring-model"></a>Modèle de notation
 
@@ -79,17 +79,17 @@ Nous vous proposons également des informations qui vous aideront à mieux compr
 
 ### <a name="breakdown-of-communication-by-modes"></a>Répartition des communications par mode
 
-:::image type="content" source="../../media/howpeoplecommunicate.png" alt-text="Principaux détails sur les modes de communication.":::
+:::image type="content" source="../../media/howpeoplecommunicate.png" alt-text="! [Répartition des modes de communication.]":::
 
 1. **En-tête :** Met en évidence l’objectif de la vue de fournir une analyse détaillée des différents modes de communication pris en compte dans la communication
 2. **Body :** Fournit des informations sur la valeur de l’utilisation de différents modes de partage des connaissances
 3. **Visualisation :** La répartition représente le ues pour chaque mode. La partie colorée et la fraction de chaque barre représentent le nombre de personnes qui envoient des courriers électroniques, des messages ou des publications communautaires sous la forme d’un pourcentage du nombre de personnes activées pour ce mode :
       - **Personnes envoyant des courriers :** La partie colorée et la fraction représentent le pourcentage d’utilisateurs activés pour Exchange qui envoient des courriers électroniques. Cette fraction est construite de la façon suivante :
-          - **Numérateur** : personnes envoyant des courriers électroniques au cours des 28 derniers jours
-          - **Dénominateur** : personnes activées pour Exchange au cours des 28 derniers jours
+          - **Numérateur**: personnes envoyant des courriers électroniques au cours des 28 derniers jours
+          - **Dénominateur**: personnes activées pour Exchange au cours des 28 derniers jours
       - **Personnes envoyant des messages dans Microsoft teams :** La partie colorée et la fraction représentent le pourcentage d’utilisateurs activés pour Microsoft teams qui envoient des messages. Cette fraction est construite de la façon suivante :
-          - **Numérateur** : personnes envoyant des messages sur Microsoft teams au cours des 28 derniers jours
-          - **Dénominateur** : personnes activées pour Microsoft teams au cours des 28 derniers jours
+          - **Numérateur**: personnes envoyant des messages sur Microsoft teams au cours des 28 derniers jours
+          - **Dénominateur**: personnes activées pour Microsoft teams au cours des 28 derniers jours
       - **Publication de personnes dans les communautés :** La partie colorée et la fraction représentent le pourcentage d’utilisateurs activés pour Yammer qui sont en cours de publication dans des communautés. Cette fraction est construite de la façon suivante :
           - **Numérateur :** Publication de personnes dans les communautés Yammer au cours des 28 derniers jours
           - **Dénominateur :** Contacts activés pour Yammer au cours des 28 derniers jours
@@ -97,15 +97,15 @@ Nous vous proposons également des informations qui vous aideront à mieux compr
 
 ### <a name="mentions-in-emails"></a>@mentions dans les e-mails
 
-:::image type="content" source="../../media/emailmentions.png" alt-text="Principaux détails sur les modes de communication.":::
+:::image type="content" source="../../media/emailmentions.png" alt-text="! [Courriels avec mentions.]":::
 
 1. **En-tête :** Met en évidence l’augmentation du taux de réponse pour les nouveaux threads de messagerie démarrés au cours des 28 derniers jours lorsqu’ils contiennent des @mentions
 2. **Body :** Fournit des informations sur la valeur de l’utilisation de @mentions dans les e-mails. En outre, les personnes qui utilisent @mentions sont exprimées sous la forme d’un pourcentage de tous les utilisateurs qui ont envoyé un message électronique au cours des 28 derniers jours.
 3. **Visualisation :** Décompose le taux de réponse pour les nouveaux threads de messagerie selon qu’ils ont @mentions ou non :
-      - **Réponses aux courriers électroniques avec @mentions :** La partie colorée et la fraction représentent le taux de réponse pour les nouveaux fils de courrier contenant des @mentions. Cette fraction est construite de la façon suivante :
+      - **Réponses aux courriels avec des \@ mentions :** la partie colorée et la fraction représentent le taux de réponse pour les nouveaux fils de courrier contenant des @mentions. Cette fraction est construite de la façon suivante :
           - **Numérateur :** Nouveaux fils de courrier électronique contenant des @mentions qui ont été démarrés et ont également reçu une réponse au cours des 28 derniers jours.
           - **Dénominateur :** Nouveaux fils de courrier électronique contenant des @mentions démarrés au cours des 28 derniers jours
-      - **Réponses aux courriers électroniques sans @mentions :** La partie colorée et la fraction représentent le taux de réponse pour les nouveaux fils de courrier contenant des @mentions. Cette fraction est construite de la façon suivante :
+      - **Réponses aux courriels sans \@ mention :** la partie colorée et la fraction représentent le taux de réponse pour les nouveaux fils de courrier contenant des @mentions. Cette fraction est construite de la façon suivante :
           - **Numérateur :** Les nouveaux threads de messagerie qui ne contiennent pas de @mentions, qui ont été démarrés et reçoivent également une réponse au cours des 28 derniers jours.
           - **Dénominateur :** Nouveaux fils de courrier ne contenant pas de @mentions qui ont été démarrés au cours des 28 derniers jours.
 4. **Afficher le contenu connexe :** Sélectionnez ce lien pour afficher les vidéos assemblées et d’autres contenus d’aide connexes.
@@ -113,7 +113,7 @@ Nous vous proposons également des informations qui vous aideront à mieux compr
 
 ### <a name="breakdown-of-messages-by-type-in-microsoft-teams"></a>Répartition des messages par type dans Microsoft teams
 
-:::image type="content" source="../../media/teamsmessages.png" alt-text="Principaux détails sur les modes de communication.":::
+:::image type="content" source="../../media/teamsmessages.png" alt-text="! [Types de message Teams.]":::
 
 1. **En-tête :** Met en surbrillance les personnes qui envoient des messages de canal sous la forme d’un pourcentage de personnes qui ont envoyé un type de message (y compris des messages de conversation et de canal) au cours des 28 derniers jours
 2. **Body :** Fournit des informations sur la valeur de l’utilisation des messages de canal au sein de Microsoft teams
@@ -128,7 +128,7 @@ Nous vous proposons également des informations qui vous aideront à mieux compr
 
 ### <a name="questions-and-answers-in-yammer"></a>Questions et réponses dans Yammer
 
-:::image type="content" source="../../media/yammerqsandas.png" alt-text="Principaux détails sur les modes de communication.":::
+:::image type="content" source="../../media/yammerqsandas.png" alt-text="[Questions et réponses dans Yammer]":::
 
 1. **En-tête :** Met en surbrillance les billets marqués en tant que questions sur Yammer qui ont reçu une réponse marquée comme &quot; meilleure réponse &quot; sous la forme d’un pourcentage de tous les billets marqués comme questions sur Yammer au cours des 28 derniers jours
 2. **Body :** Fournit des informations sur la valeur de l’utilisation des questions et des réponses dans Yammer pour partager des connaissances.
@@ -158,7 +158,7 @@ Cette section fournit des informations détaillées sur l’utilisateur sur les 
 - **Jours publiés sur Yammer :** Nombre de jours publiés sur Yammer au cours des 28 derniers jours.
 - **Jours utilisés @mention par courrier électronique :** Nombre de jours pendant lesquels l’utilisateur a envoyé un message électronique contenant une @mention au cours des 28 derniers jours.
 
-Vous pouvez également exporter les données du rapport dans un fichier. csv Excel en sélectionnant le lien exporter le **bouton** exporter. Notez que vous pouvez personnaliser l’ensemble de colonnes de l’affichage en sélectionnant les colonnes requises après avoir cliqué sur **choisir les colonnes** .
+Vous pouvez également exporter les données du rapport dans un fichier. csv Excel en sélectionnant le lien exporter le **bouton** exporter. Notez que vous pouvez personnaliser l’ensemble de colonnes de l’affichage en sélectionnant les colonnes requises après avoir cliqué sur **choisir les colonnes**.
 
 ## <a name="related-content"></a>Contenu connexe
 

@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'Exportez les résultats de la recherche à partir d’une recherche de contenu dans le centre de sécurité & conformité sur un ordinateur local. Les résultats par courrier électronique sont exportés en tant que fichiers PST. Le contenu de sites SharePoint et OneDrive entreprise est exporté sous forme de documents Office natifs. '
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3703216c28a5122f163e646942d3fac651e0ef29
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: d1d657c7dc004bc587a8934292b6117ac4e023a0
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920318"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087331"
 ---
 # <a name="export-content-search-results"></a>Exporter les résultats de la recherche de contenu
 
@@ -92,12 +92,12 @@ Vous devez préparer les résultats de recherche pour l’exportation. Lorsque v
   
 4. Sur la page **recherche de contenu** , sélectionnez une recherche. 
   
-5. Dans le volet Détails, sous **Exporter les résultats vers un ordinateur** , cliquez sur **Démarrer l’exportation**.
+5. Dans le volet Détails, sous **Exporter les résultats vers un ordinateur**, cliquez sur **Démarrer l’exportation**.
   
     > [!NOTE]
     > Si les résultats d’une recherche datent d’il y a plus de 7 jours, vous êtes invité à mettre à jour les résultats. Dans ce cas, annulez l’exportation, cliquez sur **Mettre à jour les résultats de recherche** dans le volet Détails de la recherche sélectionnée, puis redémarrez l’exportation lorsque les résultats sont mis à jour.  
   
-6. Sur la page **Exporter les résultats de la recherche** , sous **options de sortie** , choisissez l’une des options suivantes :
+6. Sur la page **Exporter les résultats de la recherche** , sous **options de sortie**, choisissez l’une des options suivantes :
   
     - Tous les éléments, à l’exception de ceux dont le format n’est pas reconnu, sont chiffrés ou n’ont pas été indexés pour d’autres raisons
   
@@ -107,11 +107,11 @@ Vous devez préparer les résultats de recherche pour l’exportation. Lorsque v
   
     Consultez la section [plus d’informations](#more-information) pour obtenir une description du mode d’exportation des éléments partiellement indexés. Pour plus d’informations sur les éléments partiellement indexés, consultez la rubrique [éléments partiellement indexés dans la recherche de contenu](partially-indexed-items-in-content-search.md).
   
-7. Sous **Exporter le contenu Exchange en tant que** , choisissez l’une des options suivantes :
+7. Sous **Exporter le contenu Exchange en tant que**, choisissez l’une des options suivantes :
   
     - **Un fichier PST pour chaque boîte aux lettres :** Exporte un fichier PST pour chaque boîte aux lettres d’utilisateur qui contient les résultats de la recherche. Tous les résultats de la boîte aux lettres d’archivage de l’utilisateur sont inclus dans le même fichier PST. Cette option reproduit la structure de dossiers de boîte aux lettres à partir de la boîte aux lettres source.
   
-    - **Un fichier PST contenant tous les messages :** Exporte un seul fichier PST (nommé *Exchange. pst* ) qui contient les résultats de la recherche de toutes les boîtes aux lettres source incluses dans la recherche. Cette option reproduit la structure de dossiers de boîte aux lettres pour chaque message.
+    - **Un fichier PST contenant tous les messages :** Exporte un seul fichier PST (nommé *Exchange. pst*) qui contient les résultats de la recherche de toutes les boîtes aux lettres source incluses dans la recherche. Cette option reproduit la structure de dossiers de boîte aux lettres pour chaque message.
   
     - **Un fichier PST contenant tous les messages dans un dossier unique :** Exporte les résultats de la recherche vers un fichier PST unique où tous les messages se trouvent dans un seul dossier de niveau supérieur. Cette option permet aux relecteurs de vérifier les éléments par ordre chronologique (les éléments sont triés par date d’envoi) sans avoir à naviguer dans la structure de dossiers de boîte aux lettres d’origine pour chaque élément.
   
@@ -128,9 +128,9 @@ Vous devez préparer les résultats de recherche pour l’exportation. Lorsque v
   
 10. Cliquez sur la case à cocher **Exporter les fichiers dans un dossier compressé (zippé)** pour exporter les résultats de recherche dans des dossiers compressés. Cette option est disponible uniquement lorsque vous choisissez d’exporter les éléments Exchange en tant que messages individuels et lorsque les résultats de la recherche incluent des documents SharePoint ou OneDrive. Cette option est principalement utilisée pour contourner la limite de 260 caractères dans les noms de chemin d’accès des fichiers Windows lorsque les éléments sont exportés. Voir « noms de fichier des éléments exportés » dans la section [plus d’informations](#more-information) . 
   
-11. Cliquez sur **Démarrer l’exportation**.
-  
-    Les résultats de la recherche sont préparés pour le téléchargement, ce qui signifie qu’ils sont téléchargés vers l’emplacement de stockage Azure dans le Cloud Microsoft. Lorsque les résultats de recherche sont prêts à être téléchargés, le lien **Télécharger les résultats exportés** s’affiche sous **Exporter les résultats vers un ordinateur** dans le volet Détails. 
+11. Cliquez sur **Démarrer l’exportation**. Les résultats de la recherche sont préparés pour le téléchargement, ce qui signifie qu’ils sont téléchargés vers un emplacement de stockage Azure dans le Cloud Microsoft. L'opération peut prendre plusieurs minutes.
+
+Consultez la section suivante pour obtenir des instructions sur le téléchargement des résultats de recherche exportés.
   
 ## <a name="step-2-download-the-search-results"></a>Étape 2 : Télécharger les résultats de recherche
 
@@ -138,34 +138,23 @@ L’étape suivante consiste à télécharger les résultats de la recherche à 
   
 Comme expliqué précédemment, vous pouvez augmenter la vitesse de téléchargement en configurant un paramètre de Registre Windows sur l’ordinateur que vous utilisez pour exporter les résultats de la recherche. Pour plus d’informations, consultez [la rubrique augmentation de la vitesse de téléchargement lors de l’exportation des résultats de recherche eDiscovery à partir d’Office 365](increase-download-speeds-when-exporting-ediscovery-results.md).
   
-1. Dans le volet Détails de la recherche pour laquelle vous avez démarré l’exportation, sous **Exporter les résultats vers un ordinateur** , cliquez sur **Télécharger les résultats exportés**.
+1. Sur la page **recherche de contenu** , cliquez sur l’onglet **exportations** . 
   
-    La fenêtre **Télécharger les résultats exportés** s’affiche et contient les informations suivantes sur les résultats de la recherche qui seront téléchargés sur votre ordinateur. 
+   Vous devrez peut-être cliquer sur **Actualiser** pour mettre à jour la liste des travaux d’exportation afin qu’elle affiche la tâche d’exportation que vous avez créée. Les travaux d’exportation portent le même nom que la recherche correspondante, avec des **_Export** ajoutés au nom de la recherche.
   
-    - Le nombre d’éléments à télécharger.
-  
-    - La taille totale estimée des éléments à télécharger.
-  
-    - Si les éléments indexés ou non indexés seront exportés. Les éléments non indexés sont des éléments qui ont un format reconnu, sont chiffrés ou n’ont pas été indexés pour d’autres raisons. Pour plus d’informations, consultez la rubrique [Unindexed items in Content Search](partially-indexed-items-in-content-search.md).
-  
-    - Indique si les versions des documents SharePoint doivent être téléchargées.
-  
-    - L’état de la préparation. Vous pouvez commencer à télécharger les résultats de recherche, même si la préparation des données n’est pas terminée.
-  
-2. Sous **Clé d’exportation** , cliquez sur **Copier dans le Presse-papiers**. Cette clé est utilisée à l’étape 5 pour télécharger les résultats de la recherche.
-  
-    > [!NOTE]
-    > Étant donné que tout le monde peut installer et lancer l’outil d’exportation de découverte électronique, et utiliser cette clé pour télécharger les résultats de recherche, prenez toutes les précautions nécessaires pour protéger cette clé, comme vous le feriez avec les mots de passe ou d’autres informations de sécurité. 
-  
-3. Cliquez sur **Télécharger les résultats**.
+2. Sélectionnez le travail d’exportation que vous avez créé à l’étape 1.
 
-4. Si vous êtes invité à installer l' **outil d’exportation de découverte électronique** , cliquez sur **installer**.
+3. Sur la page de menu volant, sous **Exporter la clé**, cliquez sur **copier dans le presse-papiers**. Cette clé est utilisée à l’étape 6 pour télécharger les résultats de la recherche.
+  
+4. Cliquez sur **Télécharger les résultats**.
 
-5. Dans l' **outil d’exportation de découverte électronique** , procédez comme suit :
+5. Si vous êtes invité à installer l' **outil d’exportation de découverte électronique**, cliquez sur **installer**.
+
+6. Dans l' **outil d’exportation de découverte électronique**, procédez comme suit :
 
    ![Outil d’exportation de découverte électronique](../media/eDiscoveryExportTool.png)
 
-   1. Collez la clé d’exportation que vous avez copiée à l’étape 2 dans la zone appropriée.
+   1. Collez la clé d’exportation que vous avez copiée à l’étape 3 dans la zone appropriée.
   
    2. Cliquez sur **Parcourir** pour spécifier l’emplacement de téléchargement du fichier des résultats de recherche.
   
@@ -174,7 +163,7 @@ Comme expliqué précédemment, vous pouvez augmenter la vitesse de télécharge
   
 6. Cliquez sur **Démarrer** pour télécharger les résultats de recherche sur votre ordinateur.
   
-    L’ **outil d’exportation de découverte électronique** affiche l’état du processus d’exportation, ainsi qu’une estimation du nombre (et de la taille) d’éléments qui doivent encore être téléchargés. Une fois le processus d’exportation terminé, vous pouvez accéder aux fichiers à l’emplacement où ils ont été téléchargés.
+    L’**outil d’exportation de découverte électronique** affiche l’état du processus d’exportation, ainsi qu’une estimation du nombre (et de la taille) d’éléments qui doivent encore être téléchargés. Une fois le processus d’exportation terminé, vous pouvez accéder aux fichiers à l’emplacement où ils ont été téléchargés.
 
 ## <a name="more-information"></a>Plus d’informations
 
@@ -268,7 +257,7 @@ Voici plus d’informations sur l’exportation des résultats de la recherche.
 
     Notez également que dans l’exemple précédent (lorsque vous exportez des éléments indexés et partiellement indexés ou que vous exportez uniquement des éléments indexés), le rapport de **synthèse d’exportation** inclus avec les résultats de recherche exportés répertorie 1 000 éléments estimés et 1 000 éléments téléchargés pour les mêmes raisons que celles précédemment décrites. 
 
-- Si la recherche à partir de laquelle vous exportez les résultats est une recherche d’emplacements de contenu spécifiques ou de tous les emplacements de contenu de votre organisation, seuls les éléments partiels des emplacements de contenu contenant des éléments qui correspondent aux critères de recherche seront exportés. En d’autres termes, si aucun résultat de recherche n’est trouvé dans une boîte aux lettres ou un site, tous les éléments partiellement indexés de cette boîte aux lettres ou ce site ne seront pas exportés. Cela est dû au fait que l’exportation d’éléments partiellement indexés à partir de nombreux emplacements de l’organisation peut augmenter la probabilité d’erreurs d’exportation et augmenter le temps nécessaire pour exporter et télécharger les résultats de la recherche.
+- Si la recherche à partir de laquelle vous exportez les résultats est une recherche d’emplacements de contenu spécifiques ou de tous les emplacements de contenu de votre organisation, seuls les éléments partiels provenant d’emplacements de contenu contenant des éléments qui correspondent aux critères de recherche seront exportés. En d’autres termes, si aucun résultat de recherche n’est trouvé dans une boîte aux lettres ou un site, tous les éléments partiellement indexés de cette boîte aux lettres ou ce site ne seront pas exportés. Cela est dû au fait que l’exportation d’éléments partiellement indexés à partir de nombreux emplacements de l’organisation peut augmenter la probabilité d’erreurs d’exportation et augmenter le temps nécessaire pour exporter et télécharger les résultats de la recherche.
 
     Pour exporter des éléments partiellement indexés de tous les emplacements de contenu pour une recherche, configurez la recherche de sorte qu’elle renvoie tous les éléments (en supprimant les mots clés de la requête de recherche), puis exportez uniquement les éléments partiellement indexés lorsque vous exportez les résultats de la recherche.
 
@@ -326,7 +315,7 @@ Tous les messages électroniques protégés par des droits (protégés par RMS) 
   
 - Comme expliqué précédemment, pour déchiffrer les messages protégés par RMS lorsque vous les exportez, vous devez exporter les résultats de la recherche en tant que messages individuels. Si vous exportez des résultats de recherche vers un fichier PST, les messages protégés par RMS restent chiffrés.
 
-- Les messages déchiffrés sont identifiés dans le rapport **ResultsLog** . Ce rapport contient une colonne nommée **Decode Status** et une valeur **décodée** dans cette colonne identifie les messages déchiffrés.
+- Les messages déchiffrés sont identifiés dans le rapport **ResultsLog** . Ce rapport contient une colonne nommée **Decode Status** et une valeur **décodée** dans cette colonne identifie les messages qui ont été déchiffrés.
 
 - Outre le déchiffrement des pièces jointes lors de l’exportation des résultats de recherche, vous pouvez également prévisualiser le fichier déchiffré lors de l’aperçu des résultats de la recherche. Vous pouvez uniquement afficher le message électronique protégé par des droits après l’avoir exporté.
 

@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Quelles sont les meilleures pratiques pour les paramètres de sécurité Exchange Online Protection (EOP) et Defender pour Office 365 ? Quelles sont les recommandations actuelles pour la protection standard ? Qu’est-ce qui doit être utilisé si vous voulez être plus strict ? Quels sont les autres éléments que vous obtenez si vous utilisez également Defender pour Office 365 ?
-ms.openlocfilehash: 032cd6a50f56fd3e1e47faebfaea5f6665553a4b
-ms.sourcegitcommit: 09518b7c9146cda7fd42839ee644ad418d48491a
+ms.openlocfilehash: bc91ba58c9dc14954f638853ad24fcf7a26684e3
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49001524"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49123469"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Paramètres recommandés pour EOP et Microsoft Defender pour Office 365 sécurité
 
@@ -81,21 +81,21 @@ Nous vous **recommandons de désactiver ces paramètres ASF** pour les niveaux *
 
 |Nom de la fonctionnalité de sécurité|Commentaire|
 |---|---|
-|**Liens d’image vers des sites distants** ( _IncreaseScoreWithImageLinks_ )||
-|**Adresse IP numérique dans l’URL** ( _IncreaseScoreWithNumericIps_ )||
-|**Redirection UL vers un autre port** ( _IncreaseScoreWithRedirectToOtherPort_ )||
-|**URL vers les sites Web. biz ou. info** ( _IncreaseScoreWithBizOrInfoUrls_ )||
-|**Messages vides** ( _MarkAsSpamEmptyMessages_ )||
-|**JavaScript ou VBScript en HTML** ( _MarkAsSpamJavaScriptInHtml_ )||
-|**Balises Frame ou IFRAME en HTML** ( _MarkAsSpamFramesInHtml_ )||
-|**Balises d’objet dans le code html** ( _MarkAsSpamObjectTagsInHtml_ )||
-|**Balises embed en HTML** ( _MarkAsSpamEmbedTagsInHtml_ )||
-|**Balises de formulaire dans le code html** ( _MarkAsSpamFormTagsInHtml_ )||
-|**Bogues Web dans le code html** ( _MarkAsSpamWebBugsInHtml_ )||
-|**Appliquer la liste de mots sensibles** ( _MarkAsSpamSensitiveWordList_ )||
-|**Enregistrement SPF : échec matériel** ( _MarkAsSpamSpfRecordHardFail_ )||
-|**Filtrage des ID de l’expéditeur conditionnel : échec matériel** ( _MarkAsSpamFromAddressAuthFail_ )||
-|Notification de **non-remise rétrodiffusion** ( _MarkAsSpamNdrBackscatter_ )||
+|**Liens d’image vers des sites distants** (_IncreaseScoreWithImageLinks_)||
+|**Adresse IP numérique dans l’URL** (_IncreaseScoreWithNumericIps_)||
+|**Redirection UL vers un autre port** (_IncreaseScoreWithRedirectToOtherPort_)||
+|**URL vers les sites Web. biz ou. info** (_IncreaseScoreWithBizOrInfoUrls_)||
+|**Messages vides** (_MarkAsSpamEmptyMessages_)||
+|**JavaScript ou VBScript en HTML** (_MarkAsSpamJavaScriptInHtml_)||
+|**Balises Frame ou IFRAME en HTML** (_MarkAsSpamFramesInHtml_)||
+|**Balises d’objet dans le code html** (_MarkAsSpamObjectTagsInHtml_)||
+|**Balises embed en HTML** (_MarkAsSpamEmbedTagsInHtml_)||
+|**Balises de formulaire dans le code html** (_MarkAsSpamFormTagsInHtml_)||
+|**Bogues Web dans le code html** (_MarkAsSpamWebBugsInHtml_)||
+|**Appliquer la liste de mots sensibles** (_MarkAsSpamSensitiveWordList_)||
+|**Enregistrement SPF : échec matériel** (_MarkAsSpamSpfRecordHardFail_)||
+|**Filtrage des ID de l’expéditeur conditionnel : échec matériel** (_MarkAsSpamFromAddressAuthFail_)||
+|Notification de **non-remise rétrodiffusion** (_MarkAsSpamNdrBackscatter_)||
 |
 
 #### <a name="eop-outbound-spam-policy-settings"></a>Paramètres de stratégie de courrier indésirable sortant EOP
@@ -148,7 +148,7 @@ Des avantages supplémentaires en matière de sécurité sont offerts avec un ab
 
 > [!IMPORTANT]
 >
-> - La stratégie anti-hameçonnage par défaut dans Microsoft Defender pour Office 365 fournit une [protection contre les falsifications](set-up-anti-phishing-policies.md#spoof-settings) pour tous les destinataires. Toutefois, les paramètres de [protection contre l’emprunt d’identité](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) disponibles pour des expéditeurs ou des domaines d’expéditeur spécifiques ne sont pas configurés ou activés dans la stratégie par défaut. Pour activer la protection contre l’emprunt d’identité, configurez la stratégie par défaut ou créez des stratégies anti-hameçonnage supplémentaires dans Defender pour Office 365.
+> - La stratégie anti-hameçonnage par défaut dans Microsoft Defender pour Office 365 fournit une [protection contre l’usurpation d’identité](set-up-anti-phishing-policies.md#spoof-settings) et une intelligence de boîte aux lettres pour tous les destinataires. Toutefois, les autres fonctionnalités de [protection contre l’emprunt d’identité](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) disponibles et les [Paramètres avancés](#advanced-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) ne sont pas configurés ni activés dans la stratégie par défaut. Pour activer toutes les fonctionnalités de protection, modifiez la stratégie anti-hameçonnage par défaut ou créez des stratégies anti-hameçonnage supplémentaires.
 >
 > - Aucune stratégie de liens fiables ou stratégies de pièces jointes fiables par défaut ne protège automatiquement tous les destinataires de l’organisation. Pour obtenir les protections, vous devez créer au moins une stratégie de liens fiables et une stratégie de pièces jointes fiables.
 >
@@ -168,9 +168,9 @@ Pour plus d’informations sur ces paramètres, reportez-vous à la rubrique [em
 
 |Nom de la fonctionnalité de sécurité|Par défaut|Standard|Empêcher|Commentaire|
 |---|:---:|:---:|:---:|---|
-|Utilisateurs protégés : **Ajouter des utilisateurs à protéger** <p> _EnableTargetedUserProtection_ <p> _TargetedUsersToProtect_|Désactivé <p> `$false` <p> none|Activé <p> `$true` <p> \<list of users\>|Activé <p> `$true` <p> \<list of users\>|En fonction de votre organisation, nous vous recommandons d’ajouter des utilisateurs (expéditeurs de messages) dans les rôles clés. En interne, les expéditeurs protégés peuvent être votre PDG, votre directeur financier et d’autres dirigeants. De manière externe, les expéditeurs protégés peuvent inclure les membres du Conseil ou votre Conseil d’administration.|
+|Utilisateurs protégés : **Ajouter des utilisateurs à protéger** <p> _EnableTargetedUserProtection_ <p> _TargetedUsersToProtect_|Désactivé <p> `$false` <p> aucune|Activé <p> `$true` <p> \<list of users\>|Activé <p> `$true` <p> \<list of users\>|En fonction de votre organisation, nous vous recommandons d’ajouter des utilisateurs (expéditeurs de messages) dans les rôles clés. En interne, les expéditeurs protégés peuvent être votre PDG, votre directeur financier et d’autres dirigeants. De manière externe, les expéditeurs protégés peuvent inclure les membres du Conseil ou votre Conseil d’administration.|
 |Domaines protégés : **inclure automatiquement les domaines dont je suis propriétaire** <p> _EnableOrganizationDomainsProtection_|Désactivé <p> `$false`|Activé <p> `$true`|Activé <p> `$true`||
-|Domaines protégés : **inclure des domaines personnalisés** <p> _EnableTargetedDomainsProtection_ <p> _TargetedDomainsToProtect_|Désactivé <p> `$false` <p> none|Activé <p> `$true` <p> \<list of domains\>|Activé <p> `$true` <p> \<list of domains\>|En fonction de votre organisation, nous vous recommandons d’ajouter des domaines (domaines d’expéditeurs) dont vous n’êtes pas propriétaire, mais avec lesquels vous interagissez fréquemment.|
+|Domaines protégés : **inclure des domaines personnalisés** <p> _EnableTargetedDomainsProtection_ <p> _TargetedDomainsToProtect_|Désactivé <p> `$false` <p> aucune|Activé <p> `$true` <p> \<list of domains\>|Activé <p> `$true` <p> \<list of domains\>|En fonction de votre organisation, nous vous recommandons d’ajouter des domaines (domaines d’expéditeurs) dont vous n’êtes pas propriétaire, mais avec lesquels vous interagissez fréquemment.|
 |Utilisateurs protégés : **si un message électronique est envoyé par un utilisateur représenté** <p> _TargetedUserProtectionAction_|**Ne pas appliquer d’action** <p> `NoAction`|**Mettre en quarantaine le message** <p> `Quarantine`|**Mettre en quarantaine le message** <p> `Quarantine`||
 |Domaines protégés : **si un message électronique est envoyé par un domaine emprunté** <p> _TargetedDomainProtectionAction_|**Ne pas appliquer d’action** <p> `NoAction`|**Mettre en quarantaine le message** <p> `Quarantine`|**Mettre en quarantaine le message** <p> `Quarantine`||
 |**Afficher le Conseil pour les utilisateurs empruntés** <p> _EnableSimilarUsersSafetyTips_|Désactivé <p> `$false`|Activé <p> `$true`|Activé <p> `$true`||
@@ -281,13 +281,13 @@ Dans PowerShell, vous utilisez les applets de commande [New-safeattachmentpolicy
 |Nom de la fonctionnalité de sécurité|Par défaut|Standard|Empêcher|Commentaire|
 |---|:---:|:---:|:---:|---|
 |**Pièces jointes fiables réponse aux programmes malveillants inconnus** <p> _Action_|Bloquer <p> `Block`|Bloquer <p> `Block`|Bloquer <p> `Block`||
-|**Redirection de la pièce jointe sur la détection** : **activer la redirection** <p> _Redirect_ <p> _RedirectAddress_|OFF et aucune adresse de messagerie n’est spécifiée. <p> `$true` <p> none|Et spécifiez une adresse de messagerie. <p> `$true` <p> une adresse de messagerie|Et spécifiez une adresse de messagerie. <p> `$true` <p> une adresse de messagerie|Rediriger les messages vers un administrateur de sécurité pour révision.|
+|**Redirection de la pièce jointe sur la détection** : **activer la redirection** <p> _Redirect_ <p> _RedirectAddress_|OFF et aucune adresse de messagerie n’est spécifiée. <p> `$true` <p> aucune|Et spécifiez une adresse de messagerie. <p> `$true` <p> une adresse de messagerie|Et spécifiez une adresse de messagerie. <p> `$true` <p> une adresse de messagerie|Rediriger les messages vers un administrateur de sécurité pour révision.|
 |**Appliquer la sélection ci-dessus si l’analyse anti-programme malveillant pour les pièces jointes expire ou si une erreur se produit.** <p> _ActionOnError_|Activé <p> `$true`|Activé <p> `$true`|Activé <p> `$true`||
 |
 
 ## <a name="related-articles"></a>Articles connexes
 
-- Vous recherchez les meilleures pratiques pour les **règles de flux de messagerie Exchange (également appelées règles de transport** ) ? Consultez la rubrique [Best Practices for Configuring mail Flow Rules in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices).
+- Vous recherchez les meilleures pratiques pour les **règles de flux de messagerie Exchange (également appelées règles de transport**) ? Consultez la rubrique [Best Practices for Configuring mail Flow Rules in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices).
 
 - Les administrateurs et les utilisateurs peuvent envoyer des faux positifs (courriers électroniques marqués comme incorrects) et des faux négatifs (courrier incorrect autorisé) à Microsoft pour analyse. Pour plus d’informations, voir [Signaler des messages et des fichiers à Microsoft](report-junk-email-messages-to-microsoft.md).
 

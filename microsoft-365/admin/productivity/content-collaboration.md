@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Détails de la collaboration de contenu-score de productivité des personnes.
-ms.openlocfilehash: 5cdbe0cbb683715a19b182d0781fe238d026a400
-ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
+ms.openlocfilehash: 99f5a897dc372a45be31a8c01379c6fe4c980de9
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "48999427"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49123445"
 ---
 # <a name="content-collaboration--people-experiences"></a>Collaboration de contenu : expériences de personnes
 
-Le score de productivité vous permet de transformer le travail réalisé avec des mesures concernant la façon dont les utilisateurs utilisent les applications Microsoft 365 et les expériences technologiques qui les prennent en charge. Le score reflète les performances de votre organisation&#39;s pour les expériences des personnes et des technologies et compare votre score avec des organisations comme les vôtres. La collaboration de contenu est l’une des mesures qui relève de l’expérience des personnes. Consultez la  [rubrique vue d’ensemble du score de productivité](productivity-score.md).
+Le score de productivité vous permet de transformer le travail réalisé avec des mesures concernant la façon dont les utilisateurs utilisent les applications Microsoft 365 et les expériences technologiques qui les prennent en charge. Le score reflète les performances de votre organisation&#39;s pour les expériences des personnes et des technologies et compare votre score avec des organisations comme les vôtres. La collaboration de contenu est l’une des mesures qui relève de l’expérience des personnes. Consultez la [rubrique vue d’ensemble du score de productivité](productivity-score.md).
 
 ## <a name="why-your-organization39s-content-collaboration-score-matters"></a>Pourquoi les résultats de la collaboration de contenu de votre organisation&#39;s.
 
@@ -140,7 +140,7 @@ Nous vous proposons également des informations qui vous aideront à mieux compr
         - Dénominateur : nombre total de personnes ayant eu accès à OneDrive ou à SharePoint pendant au moins 1 des 28 derniers jours
 4. **Lien vers les ressources :** Sélectionnez ce lien pour afficher le contenu de l’aide.
 
-### <a name="intensity-of-files-collaborated-on"></a>Intensité des fichiers sur lesquels la collaboration est activée
+### <a name="number-of-files-collaborated-on"></a>Nombre de fichiers sur lesquels la collaboration est activée
 
 :::image type="content" source="../../media/intensityofcollab.png" alt-text="Graphique illustrant le nombre de fichiers qui ont été le plus en collaboration.":::
 
@@ -149,16 +149,16 @@ Nous vous proposons également des informations qui vous aideront à mieux compr
 3. **Visualisation :** Cela montre une distribution des personnes ayant accès à OneDrive ou SharePoint, en fonction du nombre de fichiers sur lesquels ils collaborent. Cette procédure est illustrée par les 4 catégories suivantes (pour chacune, la partie bleue de la barre et la fraction représentent le pourcentage de personnes ayant accès à OneDrive ou SharePoint qui appartiennent à cette catégorie) :
       - **Aucune collaboration :**
         - **Numérateur :** Nombre de personnes ne collaborant pas sur les fichiers au cours des 28 derniers jours
-        - **Dénominateur :** Nombre total de personnes ayant accès à OneDrive ou à SharePoint pendant au moins 1 des 28 derniers jours
+        - **Dénominateur :** Nombre total de personnes ayant accès à OneDrive ou à SharePoint pendant au moins 1 des 28 derniers jours.
       - **Collaboration sur les fichiers 1-3 :**
         - **Numérateur :** Nombre de personnes collaborant sur 1-3 fichiers au cours des 28 derniers jours
-        - **Dénominateur :** Nombre total de personnes ayant eu accès à OneDrive ou à SharePoint pendant au moins 1 des 28 derniers jours
+        - **Dénominateur :** Nombre total de personnes ayant eu accès à OneDrive ou à SharePoint pendant au moins 1 des 28 derniers jours.
       - **Collaboration sur les fichiers 4-10 :**
         - **Numérateur :** Nombre de personnes collaborant sur 4-10 fichiers au cours des 28 derniers jours
-        - **Dénominateur :** nombre total de personnes ayant eu accès à OneDrive ou à SharePoint pendant au moins 1 des 28 derniers jours
+        - **Dénominateur :** nombre total de personnes ayant eu accès à OneDrive ou à SharePoint pendant au moins 1 des 28 derniers jours.
       - **Collaboration sur 11 fichiers ou plus :**
         - **Numérateur :** Nombre de personnes collaborant sur 11 ou plusieurs fichiers au cours des 28 derniers jours
-        - **Dénominateur :** Nombre total de personnes ayant eu accès à OneDrive ou à SharePoint pendant au moins 1 des 28 derniers jours
+        - **Dénominateur :** Nombre total de personnes ayant eu accès à OneDrive ou à SharePoint pendant au moins 1 des 28 derniers jours.
         
 4. **Lien vers les ressources :** Sélectionnez ce lien pour afficher le contenu de l’aide.
 
@@ -169,11 +169,11 @@ Nous vous proposons également des informations qui vous aideront à mieux compr
 1. **En-tête :** Met en surbrillance le pourcentage d’appareils sortants de tous les tests ayant une mauvaise connexion réseau à OneDrive et SharePoint. 
 2. **Body :** Fournit des informations sur la raison pour laquelle les performances de connexion réseau sont importantes pour la collaboration. 
 3. **Visualisation :** indique un pourcentage d’appareils avec différents niveaux de performances de connectivité réseau en ce qui concerne OneDrive et SharePoint :
-      - **80-100 (recommandé)** : la partie verte foncée (colorée) de la barre représente le pourcentage d’appareils dont les performances sont optimales.
-      - **60-80** : la partie verte (colorée) de la barre représente le pourcentage d’appareils dont le score de performances réseau est compris entre 60-80. 
-      - **40-60** : la partie orange (colorée) de la barre représente le pourcentage d’appareils dont le score de performances réseau est compris entre 40-60. 
-      - **20-40** : la partie rouge (en couleur) de la barre représente le pourcentage d’appareils dont le score de performances réseau est compris entre 20-40. 
-      - **0-20** : la partie rouge foncé (en couleur) de la barre représente le pourcentage d’appareils dont le score de performances réseau est le pire entre 0-20. 
+      - **80-100 (recommandé)**: la partie vert foncé (coloré) de la barre représente le pourcentage d’appareils avec les meilleures performances.
+      - **60-80**: la partie verte (colorée) de la barre représente le pourcentage d’appareils dont le score de performances réseau est compris entre 60-80. 
+      - **40-60**: la partie orange (colorée) de la barre représente le pourcentage d’appareils dont le score de performances réseau est compris entre 40-60. 
+      - **20-40**: la partie rouge (en couleur) de la barre représente le pourcentage d’appareils dont le score de performances réseau est compris entre 20-40. 
+      - **0-20**: la partie rouge foncé (en couleur) de la barre représente le pourcentage d’appareils dont le score de performances réseau est le pire entre 0-20. 
 
 ### <a name="people-in-your-organization"></a>Personnes de votre organisation
 
@@ -183,12 +183,12 @@ Les colonnes suivantes sont présentées dans le tableau au niveau de l’utilis
 
 - **Username**  est l’adresse de messagerie de l’utilisateur.
 - **Nom d’affichage**  est le nom complet de l’utilisateur.
-- **Date de la dernière activité**  indique la dernière fois que l’utilisateur a effectué une activité relative à l’un des Insights de la collaboration de contenu au cours des 28 derniers jours.
-- **Service :** L’utilisateur&#39;service s, comme défini dans Azure Active Directory (AAD)
-- **Société :** L’utilisateur&#39;la société, comme défini dans AAD
-- **Pays :** Pays de&#39;de l’utilisateur, tel que défini dans AAD
-- **État :** État&#39;s de l’utilisateur, tel que défini dans AAD
-- **Ville :** La ville de l’utilisateur&#39;s, comme défini dans AAD
+- La date de la **dernière activité** correspond à la dernière fois que l’utilisateur a effectué une activité relative à l’un des Insights de la collaboration de contenu au cours des 28 derniers jours.
+- **Service :** L’utilisateur&#39;service s, comme défini dans Azure Active Directory (AAD).
+- **Société :** L’utilisateur&#39;la société, comme défini dans AAD.
+- **Pays :** Pays de&#39;de l’utilisateur, tel que défini dans AAD.
+- **État :** L’utilisateur&#39;État s, comme défini dans AAD.
+- **Ville :** L’utilisateur&#39;City, comme défini dans AAD.
 - **OneDrive :** Valeur booléenne indiquant si la personne a accès à OneDrive pendant au moins 1 des 28 derniers jours.
 - **SharePoint :** Valeur booléenne indiquant si la personne a eu accès toSharePoint pendant au moins 1 des 28 derniers jours.
 - **Accès aux fichiers Office :** Valeur booléenne indiquant si la personne a accédé à des fichiers via Microsoft Word, Excel, PowerPoint ou OneNote au cours des 28 derniers jours.

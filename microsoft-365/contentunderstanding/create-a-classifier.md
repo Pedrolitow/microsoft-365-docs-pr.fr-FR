@@ -7,14 +7,15 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
+ms.collection: enabler-strategic
 localization_priority: Priority
 description: Découvrez comment créer un classifieur
-ms.openlocfilehash: 97a7b28d45499a46d72029d47b422d2c32696a54
-ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
+ms.openlocfilehash: 478b4253f7bb888323c2a873f3ab295cc841e193
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48804814"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087678"
 ---
 # <a name="create-a-classifier-in-microsoft-sharepoint-syntex"></a>Créer un classifieur dans Microsoft SharePoint Syntex
 
@@ -49,13 +50,13 @@ Pour créer un classifieur, vous devez :
 
 La première étape de création de votre modèle consiste à lui attribuer un nom :
 
-1. Dans le centre de contenu, sélectionnez **Nouveau** , puis **Créer un modèle** .
-2. Dans le volet **Nouveau modèle de compréhension de document** , renseignez le champ **Nom** avec le nom du modèle. Par exemple, si vous souhaitez identifier les documents de renouvellement de contrat, vous pouvez nommer le modèle *Renouvellement de contrat* .
-3. Sélectionnez **Créer** . Cette opération permet de créer une page d’accueil pour le modèle.</br>
+1. Dans le centre de contenu, sélectionnez **Nouveau**, puis **Créer un modèle**.
+2. Dans le volet **Nouveau modèle de compréhension de document**, renseignez le champ **Nom** avec le nom du modèle. Par exemple, si vous souhaitez identifier les documents de renouvellement de contrat, vous pouvez nommer le modèle *Renouvellement de contrat*.
+3. Sélectionnez **Créer**. Cette opération permet de créer une page d’accueil pour le modèle.</br>
 
     ![Page d’accueil du modèle de classifieur](../media/content-understanding/model-home.png)
 
-La création d’un modèle entraîne également celle d’un type de contenu de site. Un type de contenu représente une catégorie de documents qui ont des caractéristiques communes et qui partagent une collection de colonnes ou de propriétés de métadonnées pour ce contenu spécifique. Les types de contenu SharePoint sont gérés via la [galerie des types de contenu](https://support.microsoft.com/office/create-or-customize-a-site-content-type-27eb6551-9867-4201-a819-620c5658a60f). Pour cet exemple, la création du modèle entraîne celle d’un type de contenu *Renouvellement de contrat* .
+La création d’un modèle entraîne également celle d’un type de contenu de site. Un type de contenu représente une catégorie de documents qui ont des caractéristiques communes et qui partagent une collection de colonnes ou de propriétés de métadonnées pour ce contenu spécifique. Les types de contenu SharePoint sont gérés via la [galerie des types de contenu](https://support.microsoft.com/office/create-or-customize-a-site-content-type-27eb6551-9867-4201-a819-620c5658a60f). Pour cet exemple, la création du modèle entraîne celle d’un type de contenu *Renouvellement de contrat*.
 
 Sélectionnez **Paramètres avancés** si vous souhaitez mapper ce modèle à un type de contenu d’entreprise existant dans la galerie des types de contenu SharePoint, pour utiliser son schéma. Les types de contenu d’entreprise sont stockés dans le hub Type de contenu au sein du Centre d’administration SharePoint. Ils sont syndiqués sur tous les sites du client. Note : vous pouvez certes utiliser un type de contenu existant pour tirer parti de son schéma et faciliter l’identification et la classification. Néanmoins, vous devez entraîner votre modèle à extraire des informations des fichiers qu’il identifie.</br>
 
@@ -81,9 +82,9 @@ Veillez à utiliser au moins cinq exemples positifs et au moins un exemple néga
 
 Pour ajouter des exemples de fichiers :
 
-1. Sur la page d’accueil du modèle, dans la mosaïque **Ajouter des exemples de fichiers** , cliquez sur **Ajouter des fichiers** .
-2. À la page **Sélectionner des exemples de fichiers pour votre modèle** , sélectionnez vos exemples de fichiers dans la bibliothèque Fichiers d’entraînement du centre de contenu. Si vous ne l’avez pas déjà fait, choisissez de les charger maintenant en cliquant sur **Charger** pour les copier dans la bibliothèque Fichiers d’entraînement.
-3. Après avoir sélectionné vos exemples de fichiers à utiliser pour entraîner le modèle, cliquez sur **Ajouter** .
+1. Sur la page d’accueil du modèle, dans la mosaïque **Ajouter des exemples de fichiers**, cliquez sur **Ajouter des fichiers**.
+2. À la page **Sélectionner des exemples de fichiers pour votre modèle**, sélectionnez vos exemples de fichiers dans la bibliothèque Fichiers d’entraînement du centre de contenu. Si vous ne l’avez pas déjà fait, choisissez de les charger maintenant en cliquant sur **Charger** pour les copier dans la bibliothèque Fichiers d’entraînement.
+3. Après avoir sélectionné vos exemples de fichiers à utiliser pour entraîner le modèle, cliquez sur **Ajouter**.
 
     ![Sélectionner des exemples de fichiers](../media/content-understanding/select-sample.png) 
 
@@ -91,9 +92,9 @@ Pour ajouter des exemples de fichiers :
 
 Une fois que vous avez ajouté vos exemples de fichiers, vous devez les étiqueter comme positifs ou négatifs.
 
-1. Depuis la page d’accueil du modèle, dans la mosaïque **Classer des fichiers et exécuter l’entraînement** , cliquez sur **Entraîner le classifieur** .
+1. Depuis la page d’accueil du modèle, dans la mosaïque **Classer des fichiers et exécuter l’entraînement**, cliquez sur **Entraîner le classifieur**.
    La page d’étiquettes affiche alors une liste de vos exemples de fichiers, le premier fichier étant visible dans la visionneuse.
-2. Dans la visionneuse située en haut du premier exemple de fichier, un texte doit vous demander si le fichier est un exemple du modèle que vous venez de créer. Si cet exemple est positif, sélectionnez **Oui** . Si cet exemple est négatif, sélectionnez **Non** .
+2. Dans la visionneuse située en haut du premier exemple de fichier, un texte doit vous demander si le fichier est un exemple du modèle que vous venez de créer. Si cet exemple est positif, sélectionnez **Oui**. Si cet exemple est négatif, sélectionnez **Non**.
 3. Dans la liste **Exemples étiquetés** à gauche, sélectionnez, puis étiquetez les fichiers supplémentaires à utiliser comme exemples. 
 
     ![Page d’accueil du classifieur](../media/content-understanding/classifier-home-page.png) 
@@ -104,7 +105,7 @@ Une fois que vous avez ajouté vos exemples de fichiers, vous devez les étiquet
 
 ## <a name="create-an-explanation"></a>Créer une explication
 
-L’étape suivante consiste à créer une explication à la page Entraîner. Une explication permet au modèle de comprendre comment reconnaître le document. Par exemple, les documents Renouvellement de contrat contiennent toujours une chaîne de caractères *Demande de divulgation supplémentaire* .
+L’étape suivante consiste à créer une explication à la page Entraîner. Une explication permet au modèle de comprendre comment reconnaître le document. Par exemple, les documents Renouvellement de contrat contiennent toujours une chaîne de caractères *Demande de divulgation supplémentaire*.
 
 > [!Note]
 > Utilisées avec des extracteurs, les explications identifient la chaîne à extraire du document. 
@@ -113,12 +114,12 @@ Pour créer une explication :
 
 1. Depuis la page d’accueil du modèle, sélectionnez l’onglet **Entraîner** pour accéder à la page correspondante.
 2. À la page Entraîner, la section **Fichiers entraînés** contient normalement une liste des exemples de fichiers précédemment étiquetés. Sélectionnez un des fichiers positifs de la liste pour l’afficher dans la visionneuse.
-3. Dans la section Explication, sélectionnez **Nouveau** , puis **Espace** .
-4. À la page **Créer une explication**  :</br>
+3. Dans la section Explication, sélectionnez **Nouveau**, puis **Espace**.
+4. À la page **Créer une explication** :</br>
     a. Tapez le **nom** (par exemple, « bloc de divulgation »).</br>
-    b. Sélectionnez le **type** . Pour l’échantillon, sélectionnez **Liste d’expressions** , puisque vous ajoutez une chaîne de caractères.</br>
-    c. Dans la zone **Tapez ici** , tapez la chaîne. Pour l’échantillon, ajoutez « Demande de divulgation supplémentaire ». Vous pouvez sélectionner **Respecter la casse** si la chaîne doit respecter la casse.</br>
-    d. Cliquez sur **Enregistrer** .
+    b. Sélectionnez le **type**. Pour l’échantillon, sélectionnez **Liste d’expressions**, puisque vous ajoutez une chaîne de caractères.</br>
+    c. Dans la zone **Tapez ici**, tapez la chaîne. Pour l’échantillon, ajoutez « Demande de divulgation supplémentaire ». Vous pouvez sélectionner **Respecter la casse** si la chaîne doit respecter la casse.</br>
+    d. Cliquez sur **Enregistrer**.
 
     ![Créer une explication](../media/content-understanding/explanation.png) 
     
@@ -132,8 +133,8 @@ Si une **incompatibilité** apparaît sur les fichiers étiquetés, vous devrez 
 
 Si vous avez reçu une correspondance sur vos fichiers échantillons étiquetés, vous pouvez à présent tester votre modèle sur les autres exemples de fichiers non étiquetés pour vérifier que ce modèle est inconnu.  Cette étape est facultative mais utile, car elle permet d’évaluer la « pertinence » ou le degré de préparation du modèle avant utilisation, en le testant sur des fichiers pour l’instant inconnus de ce dernier.
 
-1. Dans la page d’accueil du modèle, sélectionnez l’onglet **Test** . Le modèle est alors exécuté sur vos fichiers échantillons non étiquetés.
-2. Dans la liste **Fichiers de test** , vos exemples de fichiers indiquent s’ils sont positifs ou négatifs d’après les prévisions du modèle. Utilisez ces informations pour déterminer plus facilement l’efficacité de votre classifieur lors de l’identification de vos documents.
+1. Dans la page d’accueil du modèle, sélectionnez l’onglet **Test**. Le modèle est alors exécuté sur vos fichiers échantillons non étiquetés.
+2. Dans la liste **Fichiers de test**, vos exemples de fichiers indiquent s’ils sont positifs ou négatifs d’après les prévisions du modèle. Utilisez ces informations pour déterminer plus facilement l’efficacité de votre classifieur lors de l’identification de vos documents.
 
     ![Test des fichiers non étiquetés](../media/content-understanding/test-on-files.png) 
 

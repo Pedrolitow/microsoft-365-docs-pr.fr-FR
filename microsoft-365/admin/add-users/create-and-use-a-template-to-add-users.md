@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Vous pouvez créer et utiliser un modèle pour gagner du temps et normaliser les paramètres lors de l’ajout de plusieurs utilisateurs.
-ms.openlocfilehash: 92d3bd68a57291586da27eb2d578a26c53d20d78
-ms.sourcegitcommit: 1522a6471e0c5254a6d0f592e1f4dfacd1dd473a
+ms.openlocfilehash: aef5085da603c38b37544b76c5336c9bfe4edd24
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "48245856"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49123416"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>Créer et utiliser un modèle pour ajouter des utilisateurs
 
@@ -33,7 +33,7 @@ Vous pouvez créer et utiliser un modèle pour gagner du temps et normaliser les
 
 ## <a name="create-a-template"></a>Créer un modèle
 
-Modèles faciles à créer &mdash; vous pouvez sélectionner **les**  >  **Active users**  >  **modèles utilisateur**des utilisateurs actifs, puis sélectionner **Ajouter un modèle** dans la liste déroulante, ou vous pouvez ajouter un nouvel utilisateur et lorsque vous avez terminé, vous aurez la possibilité d’enregistrer l’entrée en tant que modèle.
+Modèles faciles à créer &mdash; vous pouvez sélectionner **les**  >  **Active users**  >  **modèles utilisateur** des utilisateurs actifs, puis sélectionner **Ajouter un modèle** dans la liste déroulante, ou vous pouvez ajouter un nouvel utilisateur et lorsque vous avez terminé, vous aurez la possibilité d’enregistrer l’entrée en tant que modèle.
 
 Lorsque vous créez un modèle après avoir ajouté un utilisateur, les valeurs que vous choisissez pour les paramètres suivants sont enregistrées dans le modèle :
 
@@ -44,7 +44,7 @@ Lorsque vous créez un modèle après avoir ajouté un utilisateur, les valeurs 
 - Choix de licence
 - Choix de l’application
 - Role
-- La plupart des informations de profil, telles que le **profil de travail**, le **service**, le **Bureau**, le **téléphone professionnel**et l' **adresse postale** ; 
+- La plupart des informations de profil, telles que le **profil de travail**, le **service**, le **Bureau**, le **téléphone professionnel** et l' **adresse postale** ; 
 
 Les informations suivantes sont propres à l’utilisateur et ne sont pas enregistrées dans le modèle :
 
@@ -66,17 +66,17 @@ Pour utiliser un modèle existant afin d’ajouter un utilisateur :
 
 2. Sélectionnez **modèles utilisateur**, puis sélectionnez un modèle dans la liste déroulante. (La liste ne contient que les modèles que vous avez créés, pas ceux créés par les autres administrateurs.)
 
- > [!NOTE]
- > Vous pouvez également utiliser un modèle pour ajouter un utilisateur en sélectionnant **modèles utilisateur**  >  **gérer les modèles**, en sélectionnant un modèle, puis en sélectionnant **utiliser le modèle**.
+   > [!NOTE]
+   > Vous pouvez également utiliser un modèle pour ajouter un utilisateur en sélectionnant **modèles utilisateur**  >  **gérer les modèles**, en sélectionnant un modèle, puis en sélectionnant **utiliser le modèle**.
 
 3. Suivez les étapes pour créer un utilisateur à partir du modèle que vous avez sélectionné.
 
-> [!NOTE]
-> Si vous ne disposez pas de licences suffisantes pour un utilisateur que vous ajoutez et que vos informations de paiement sont disponibles, nous essaierons d’acheter une autre licence à l’aide de vos informations de paiement existantes. Si vos informations de paiement ne sont pas disponibles, l’utilisateur sera créé en tant qu’utilisateur sans licence.
+   > [!NOTE]
+   > Si vous ne disposez pas de licences suffisantes pour un utilisateur que vous ajoutez et que vos informations de paiement sont disponibles, nous essaierons d’acheter une autre licence à l’aide de vos informations de paiement existantes. Si vos informations de paiement ne sont pas disponibles, l’utilisateur sera créé en tant qu’utilisateur sans licence.
 
 ## <a name="manage-templates"></a>Gérer les modèles
 
-Vous pouvez facilement supprimer les modèles dont vous n’avez plus besoin et en ajouter de nouveaux. Pour supprimer un modèle :
+Vous pouvez uniquement supprimer les modèles dont vous n’avez plus besoin et en ajouter de nouveaux. Pour supprimer un modèle :
 
 1. Dans le centre d’administration, **Sélectionnez utilisateurs**  >  **actifs**.
 

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: f39b374926ef714a32cfce4a625cc1387bb68097
-ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
+ms.openlocfilehash: f214c1fcfa8a68695ca0c32a9807972a71ba7612
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48104469"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087159"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Examiner et corriger les alertes de conformité des communications
 
@@ -81,7 +81,7 @@ Les stratégies de conformité des communications analysent et pré-groupent aut
 
 6. Sélectionnez un ou plusieurs messages pour les contrôles d’action de correction pour ces messages.
 
-7. Sélectionnez **résoudre**, **avertir**, **escalader**ou **Télécharger** pour appliquer l’action aux messages dupliqués sélectionnés comme filtre par défaut.
+7. Sélectionnez **résoudre**, **avertir**, **escalader** ou **Télécharger** pour appliquer l’action aux messages dupliqués sélectionnés comme filtre par défaut.
 
 8. Sélectionnez **Fermer** après avoir terminé les actions de correction sur les messages.
 
@@ -102,7 +102,7 @@ Quel que soit l’endroit où vous commencez à réviser les alertes ou le filtr
 Après avoir examiné les notions de base du message, il est temps d’ouvrir un message pour examiner les détails et pour déterminer d’autres actions de correction. Sélectionnez un message pour afficher l’ensemble des informations d’en-tête et de corps du message. Plusieurs affichages sont disponibles pour vous aider à déterminer la bonne marche à suivre :
 
 - **Mode Source** : cet mode est l’affichage des messages standard couramment consulté dans la plupart des plateformes de messagerie web. Les informations d’en-tête sont mises en forme dans le style normal et le corps du message prend en charge les fichiers graphiques incorporés et le texte renvoyé à la ligne.
-- **Mode texte** : le mode texte affiche un affichage de texte numéroté par une ligne uniquement du message et inclut une mise en surbrillance des mots clés pour les termes correspondants dans la stratégie de conformité des communications associée. La mise en surbrillance des mots clés vous permet d’analyser rapidement les longs messages pour le domaine qui vous intéresse. Les fichiers incorporés ne sont pas affichés et la numérotation des lignes de cet affichage est utile pour référencer des détails pertinents entre plusieurs relecteurs.
+- **Affichage de texte**: la vue de texte affiche un affichage de texte uniquement du message et inclut un surlignage de mots clés dans les messages et les pièces jointes pour les termes correspondant à la stratégie de conformité de la communication associée. La mise en surbrillance des mots clés peut vous aider à analyser rapidement les messages longs et les pièces jointes pour le domaine qui vous intéresse. Dans certains cas, le texte mis en surbrillance peut être uniquement dans les pièces jointes pour les messages correspondant aux conditions de la stratégie. Les fichiers incorporés ne sont pas affichés et la numérotation des lignes de cet affichage est utile pour référencer des détails pertinents entre plusieurs relecteurs.
 - **Mode annoter** : cet mode permet aux réviseurs d’ajouter des annotations directement sur le message qui sont enregistrées dans l’affichage du message.
 - **Historique des utilisateurs** : le mode historique des utilisateurs affiche toutes les autres alertes générées par une stratégie de conformité des communications pour l’utilisateur qui envoie le message.
 - **Affichage détaillé des messages**: Affichage avancé des métadonnées et des informations de configuration des messages.
@@ -117,7 +117,7 @@ Maintenant que vous avez consulté les détails du message pour l’alerte, vous
 - **Resolve**: la sélection du contrôle de **résolution** supprime immédiatement le message de la file d’attente des **alertes en attente** et aucune autre action ne peut être effectuée sur le message. En sélectionnant **résoudre**, vous avez essentiellement fermé l’alerte sans autre classification et elle ne peut pas être rouverte pour d’autres actions. Tous les messages résolus sont affichés sous l’onglet **résolu** .
 - **Faux positif**: vous pouvez toujours résoudre un message en tant que faux positif à tout moment pendant le flux de travail de révision des messages. Faux positif signifie que l’alerte n’était pas actionnable ou que l’alerte a été générée de manière incorrecte par le processus d’alerte. Le message ne peut pas être rouvert et tous les faux positifs sont affichés sous l’onglet **résolu** .
 - **Power automate (** préversion) : utilisez un flux automatique de puissance pour automatiser les tâches de processus pour un message d’alerte. Par défaut, la conformité de la communication inclut le *Gestionnaire de notification lorsqu’un utilisateur dispose d’un* modèle de flux d’alerte de conformité de communication que les réviseurs peuvent utiliser pour automatiser le processus de notification pour les utilisateurs avec des alertes de message. Pour plus d’informations sur la création et la gestion de la mise en conformité des flux de communication, consultez l’article de [référence des fonctionnalités de conformité des communications](communication-compliance-feature-reference.md#power-automate-flows-preview) .
-- **Balise comme**: balise le message comme étant *conforme*, *non conforme*ou comme étant *question* en relation avec les stratégies et les normes de votre organisation. L’ajout de balises et de commentaires de marquage vous permet de microfiltrer les alertes de stratégie pour les escalades ou dans d’autres processus de révision interne. Une fois le marquage terminé, vous pouvez également choisir de résoudre le message pour le déplacer de la file d’attente de révision en attente.
+- **Balise comme**: balise le message comme étant *conforme*, *non conforme* ou comme étant *question* en relation avec les stratégies et les normes de votre organisation. L’ajout de balises et de commentaires de marquage vous permet de microfiltrer les alertes de stratégie pour les escalades ou dans d’autres processus de révision interne. Une fois le marquage terminé, vous pouvez également choisir de résoudre le message pour le déplacer de la file d’attente de révision en attente.
 - **Notifier**: vous pouvez utiliser le contrôle **Notify** pour affecter un modèle d’avertissement personnalisé à l’alerte et envoyer un avertissement à l’utilisateur. Choisissez le modèle d’avertissement approprié configuré dans la zone **paramètres de conformité des communications** et sélectionnez Envoyer pour **Envoyer** un rappel à l’utilisateur qui a envoyé le message et résoudre le problème.
 - **Escalade**: à l’aide du contrôle d' **escalade** , vous pouvez choisir les autres personnes de votre organisation qui doivent consulter le message. Dans la liste des relecteurs configurés dans la stratégie de conformité des communications, effectuez une sélection dans une liste pour envoyer une notification par courrier électronique demandant une révision supplémentaire de l’alerte de message. Le réviseur sélectionné peut utiliser un lien figurant dans la notification par courrier électronique pour accéder directement aux éléments qui y sont réaffectés pour révision.
 - **Escalade pour l’enquête**: en utilisant le contrôle **d’enquête escalade** , vous pouvez créer un nouveau [cas eDiscovery avancé](overview-ediscovery-20.md) pour un ou plusieurs messages. Vous fournirez un nom et des remarques pour le nouvel incident, et l’utilisateur qui a envoyé le message correspondant à la stratégie est automatiquement affecté comme dépositaire de cas. Vous n’avez pas besoin d’autorisations supplémentaires pour gérer le cas. La création d’un cas ne permet pas de résoudre ou de créer une nouvelle balise pour le message. Vous pouvez sélectionner un total de 100 messages lors de la création d’un cas avancé eDiscovery lors du processus de correction. Les messages de tous les canaux de communication surveillés par la conformité des communications sont pris en charge. Par exemple, vous pouvez sélectionner 50 conversations Microsoft Teams, 25 messages électroniques Exchange Online et 25 messages Yammer lorsque vous ouvrez un nouveau cas de découverte électronique avancée pour un utilisateur.

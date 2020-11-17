@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Vue d’ensemble du score de productivité Microsoft.
-ms.openlocfilehash: 3808583429c78460483cd7193d38810a7e189040
-ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
+ms.openlocfilehash: 49ae35d68b0d0ebf627e44e5912d4a1bb7b712c0
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48804725"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49123488"
 ---
 # <a name="microsoft-productivity-score"></a>Score de productivité Microsoft 
 
@@ -80,7 +80,7 @@ Pour les données de personnes, vous avez besoin d’un abonnement Microsoft 365
 
 Pour afficher le score de productivité de votre organisation, vous devez disposer de l’un des rôles suivants : 
 
-- Administrateur global 
+- Administrateur général 
 - Administrateurs Exchange
 - Administrateur SharePoint 
 - Administrateur pour Skype Entreprise 
@@ -88,7 +88,7 @@ Pour afficher le score de productivité de votre organisation, vous devez dispos
 - Lecteur général 
 - Lecteur de rapports 
 
-Vous pouvez accéder à l’expérience utilisateur à partir de la maison d’administration 365 sous **rapports** de  >  **productivité** .
+Vous pouvez accéder à l’expérience utilisateur à partir de la maison d’administration 365 sous **rapports** de  >  **productivité**.
 
 ## <a name="interpreting-productivity-score"></a>Interprétation de la note de productivité 
 

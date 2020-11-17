@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
-ms.openlocfilehash: 5ba17c414b6f6470d2e9af14d1f484b435cb4f51
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 3c8477ce16249cb4d21c736da60d619774175041
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846495"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49123606"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>Configurer les fonctionnalités d’analyse et de réponse automatisées dans Microsoft 365 Defender
 
@@ -91,17 +91,17 @@ Les paramètres de sécurité d’Office 365 aident à protéger la messagerie e
 
 1. Accédez au centre de sécurité Microsoft 365 ( [https://security.microsoft.com](https://security.microsoft.com) ) et connectez-vous.
 
-2. Dans le volet de navigation, recherchez les **incidents** , le **Centre de notifications** et la **chasse** , comme illustré dans l’image suivante :
+2. Dans le volet de navigation, recherchez les **incidents**, le **Centre de notifications** et la **chasse**, comme illustré dans l’image suivante :
 
    :::image type="content" source="../../media/mtp-enable/mtp-on.png" alt-text="MTP sur":::
 
-   - Si vous voyez des **incidents** , le **Centre de maintenance** et la **chasse** , Microsoft 365 Defender est activé. Passez à la procédure suivante, [Vérifiez ou modifiez le niveau d’automatisation pour les groupes d’appareils](#review-or-change-the-automation-level-for-device-groups).
+   - Si vous voyez des **incidents**, le **Centre de maintenance** et la **chasse**, Microsoft 365 Defender est activé. Voir la procédure, [examiner ou modifier le niveau d’automatisation pour les groupes d’appareils](#review-or-change-the-automation-level-for-device-groups) (dans cet article).
 
-   - Si vous ne voyez *pas* les **incidents** , le **Centre de maintenance** ou la **chasse** , il se peut que Microsoft 365 Defender ne soit pas activé. Dans ce cas, passez à l’étape suivante.
+   - Si vous ne voyez *pas* les **incidents**, le **Centre de maintenance** ou la **chasse**, il se peut que Microsoft 365 Defender ne soit pas activé. Dans ce cas, passez à l’étape suivante ([consulter les actions en attente et terminées](#review-pending-and-completed-actions-in-the-action-center), dans cet article).
 
 3. Dans le volet de navigation, choisissez **paramètres**  >  **Microsoft 365 Defender**. Vérifiez que Microsoft 365 Defender est activé. 
 
-   Besoin d’aide ? Voir [activer Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable).
+   Vous avez besoin d’aide ? Voir [activer Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable).
 
 ## <a name="review-pending-and-completed-actions-in-the-action-center"></a>Vérifier les actions en attente et terminées dans le centre de notifications
 

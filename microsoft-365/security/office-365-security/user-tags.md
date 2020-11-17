@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à identifier des groupes d’utilisateurs spécifiques à l’aide de balises utilisateur dans Microsoft Defender pour Office 365 plan 2. Le filtrage des balises est disponible dans les alertes, les rapports et les analyses de Microsoft Defender pour Office 365 afin d’identifier rapidement les utilisateurs balisés.
-ms.openlocfilehash: 9c83a323a3116b3da61a133c7fb449978ca13841
-ms.sourcegitcommit: 9dbc6a08177aaca112e84d30dbaa79a0a8e9dbf8
+ms.openlocfilehash: 14ebcebeb8081a2de341fd06facabd9f7d55b119
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "48945317"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49123618"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Balises utilisateur dans Microsoft Defender pour Office 365
 
@@ -29,8 +29,8 @@ ms.locfileid: "48945317"
 
 Les balises utilisateur sont des identificateurs pour des groupes d’utilisateurs spécifiques dans [Microsoft Defender pour Office 365](office-365-atp.md). Il existe deux types de balises utilisateur :
 
-- **Balises système** : actuellement, le [compte de priorité](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) est le seul type de balise système.
-- **Balises personnalisées** : créez ces balises utilisateur vous-même.
+- **Balises système**: actuellement, le [compte de priorité](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) est le seul type de balise système.
+- **Balises personnalisées**: créez ces balises utilisateur vous-même.
 
 Si votre organisation a Defender pour Office 365 plan 2 (inclus dans votre abonnement ou en tant que module complémentaire), vous pouvez créer des balises utilisateur personnalisées en plus de l’utilisation de la balise Accounts Priority.
 
@@ -40,6 +40,7 @@ Une fois que vous avez appliqué des balises système ou des balises personnalis
 - [Explorateur de menaces et détections en temps réel](threat-explorer.md)
 - [Rapport sur l’état de la protection contre les menaces](view-email-security-reports.md#threat-protection-status-report)
 - [Vues de campagne](campaigns.md)
+- Pour les comptes prioritaires, vous pouvez utiliser le [rapport problèmes de messagerie pour les comptes prioritaires](https://docs.microsoft.com/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) dans le centre d’administration Exchange.
 
 Cet article explique comment configurer les balises utilisateur dans le centre de sécurité & conformité. Il n’existe pas de cmdlets dans Security & Compliance Center pour gérer les balises utilisateur.
 
@@ -47,7 +48,7 @@ Cet article explique comment configurer les balises utilisateur dans le centre d
 
 - Vous ouvrez le Centre de conformité et sécurité sur <https://protection.office.com/>. Pour accéder directement à la page **balises utilisateur** , ouvrez <https://protection.office.com/userTags> .
 
-- Pour créer, modifier ou supprimer des **balises utilisateur personnalisées** , vous devez être membre des groupes de rôles gestion de l' **organisation** ou **administrateur de sécurité** dans le centre de sécurité & conformité. Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
+- Pour créer, modifier ou supprimer des **balises utilisateur personnalisées**, vous devez être membre des groupes de rôles gestion de l' **organisation** ou **administrateur de sécurité** dans le centre de sécurité & conformité. Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
 
 - Pour configurer des comptes de priorité (balises système), vous devez être un [administrateur général](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) ou un [administrateur Exchange](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator).
 
@@ -60,17 +61,14 @@ Cet article explique comment configurer les balises utilisateur dans le centre d
 2. Sur la page **balises utilisateur** qui s’ouvre, cliquez sur **créer une balise**.
 
 3. L’Assistant **créer une balise** s’ouvre en un nouveau. Dans la page **définir la balise** , configurez les paramètres suivants :
-
-   - **Nom** : entrez un nom unique et descriptif pour la balise. Il s’agit de la valeur que vous allez voir et utiliser.
-
-   - **Description** : entrez une description facultative pour la balise.
+   - **Nom**: entrez un nom unique et descriptif pour la balise. Il s’agit de la valeur que vous allez voir et utiliser.
+   - **Description**: entrez une description facultative pour la balise.
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
 4. Dans la page **affecter des boîtes aux lettres** , effectuez l’une des opérations suivantes :
 
    - Cliquez sur **Ajouter des boîtes aux lettres**. Dans le survol qui s’affiche, effectuez l’une des opérations suivantes pour ajouter des utilisateurs ou des groupes individuels :
-
      - Cliquez dans la zone et faites défiler la liste pour sélectionner un utilisateur ou un groupe.
      - Cliquez dans la zone et commencez à taper pour filtrer la liste, puis sélectionnez un utilisateur ou un groupe.
      - Pour ajouter des valeurs supplémentaires, cliquez dans une zone vide de la zone.
@@ -109,8 +107,8 @@ Cet article explique comment configurer les balises utilisateur dans le centre d
 
 ## <a name="use-the-security-center-to-remove-user-tags"></a>Utiliser le centre de sécurité pour supprimer des balises utilisateur
 
-**Remarque** : vous ne pouvez pas supprimer la balise de **compte de priorité** intégrée.
+**Remarque**: vous ne pouvez pas supprimer la balise de **compte de priorité** intégrée.
 
 1. Dans le centre de sécurité, accédez **Threat management** aux \> **balises utilisateur** de gestion des menaces.
 
-2. Sur la page **balises utilisateur** qui s’ouvre, sélectionnez la balise utilisateur que vous souhaitez supprimer, cliquez sur **Supprimer la balise** , puis sélectionnez **Oui, supprimer** dans l’avertissement qui s’affiche.
+2. Sur la page **balises utilisateur** qui s’ouvre, sélectionnez la balise utilisateur que vous souhaitez supprimer, cliquez sur **Supprimer la balise**, puis sélectionnez **Oui, supprimer** dans l’avertissement qui s’affiche.
