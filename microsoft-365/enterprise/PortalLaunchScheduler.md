@@ -17,18 +17,18 @@ search.appverid:
 - SPO160
 - MET150
 description: Cet article explique comment lancer votre portail à l’aide du planificateur de lancement de portail
-ms.openlocfilehash: 6a191cf323e180fa77614eb09bae4185228a5029
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: a7a007fdd95638109830a8e3689232060f2b9d8b
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087666"
+ms.locfileid: "49123582"
 ---
 # <a name="launch-your-portal-using-the-portal-launch-scheduler"></a>Lancer votre portail à l’aide du planificateur de lancement du portail
 
 Un portail est un site SharePoint sur votre intranet et qui comporte un grand nombre d’internautes qui utilisent du contenu sur le site. Le lancement de votre portail dans les vagues est une partie importante de la façon de s’assurer que les utilisateurs ont une expérience fluide et performante qui accèdent à un nouveau portail SharePoint Online. 
 
-Le lancement dans les vagues est un moyen clé de déployer votre portail, comme indiqué dans [la planification de votre plan de déploiement du lancement de portail dans SharePoint Online](https://docs.microsoft.com/en-us/microsoft-365/Enterprise/Planportallaunchroll-out?view=o365-worldwide). Le planificateur de lancement de portail est conçu pour vous aider à suivre une approche de déploiement Wave/phase en gérant les redirections pour le nouveau portail. Pendant chacune des vagues, vous pouvez recueillir les commentaires des utilisateurs et surveiller les performances pendant chaque vague de déploiement. Cela présente l’avantage d’introduire lentement le portail, ce qui vous permet de suspendre et de résoudre les problèmes avant de passer à la prochaine vague, et de garantir une expérience positive pour vos utilisateurs. 
+Le lancement dans les vagues est un moyen clé de déployer votre portail, comme indiqué dans [la planification de votre plan de déploiement du lancement de portail dans SharePoint Online](https://docs.microsoft.com/microsoft-365/Enterprise/Planportallaunchroll-out?view=o365-worldwide). Le planificateur de lancement de portail est conçu pour vous aider à suivre une approche de déploiement Wave/phase en gérant les redirections pour le nouveau portail. Pendant chacune des vagues, vous pouvez recueillir les commentaires des utilisateurs et surveiller les performances pendant chaque vague de déploiement. Cela présente l’avantage d’introduire lentement le portail, ce qui vous permet de suspendre et de résoudre les problèmes avant de passer à la prochaine vague, et de garantir une expérience positive pour vos utilisateurs. 
 
 Il existe deux types de redirection : 
 - bidirectionnel : lancer un nouveau portail SharePoint Online moderne pour remplacer un portail classique ou moderne SharePoint existant 
