@@ -23,28 +23,28 @@ search.appverid:
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: Découvrez ce qui arrive à vos données lorsque votre abonnement Microsoft 365 pour les entreprises expire, est désactivé ou si vous annulez l’opération.
-ms.openlocfilehash: b09f56fefb7791af012c9dab2ba4e5684b9bf89f
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: c191b2fa795614a272b28cedae8d23693933dc95
+ms.sourcegitcommit: 0badd6a7af803a52c7c46a4374211cb89307eacf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906822"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49135978"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Qu’arrive-t-il à mes données et à l’accès à la fin de mon abonnement Microsoft 365 pour les entreprises ?
 
-Si votre abonnement prend fin, parce qu’il arrive à expiration ou parce que vous décidez de l’annuler, votre accès aux services, applications et données client de Microsoft 365 passe par plusieurs États avant que l' *abonnement soit complètement* désactivé ou annulé. Si vous êtes conscient de cette progression, vous serez mieux armé pour revenir à un état actif avant qu’il ne soit trop tard, ou — si vous quittez Microsoft 365, sauvegardez vos données avant qu’elles ne soient définitivement supprimées.
+Si votre abonnement prend fin, parce qu’il arrive à expiration ou parce que vous décidez de l’annuler, votre accès aux services, applications et données client de Microsoft 365 passe par plusieurs États avant que l’abonnement soit complètement désactivé ou *supprimé*. Si vous êtes conscient de cette progression, vous serez mieux armé pour revenir à un état actif avant qu’il ne soit trop tard, ou — si vous quittez Microsoft 365, sauvegardez vos données avant qu’elles ne soient définitivement supprimées.
 
 Lisez ces informations importantes avant de contacter le [support technique Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products).
   
 ## <a name="what-happens-to-data-when-a-subscription-expires"></a>Qu’arrive-t-il aux données lorsqu’un abonnement expire ?
 
-- Si votre abonnement expire, il passe par les étapes suivantes : expiré/désactivé/annulé. L’étape expirée commence immédiatement après la date de fin de l’abonnement.
+- Si votre abonnement expire, il passe par les étapes suivantes : expiré/désactivé/supprimé. L’étape expirée commence immédiatement après la date de fin de l’abonnement.
 - Si vous désactivez la facturation périodique de votre abonnement annuel, les étapes sont les mêmes que celles d’un abonnement expiré. Le premier démarrage est le anniversaire de l’abonnement annuel, pas à compter de la date à laquelle vous avez désactivé le paramètre de facturation périodique de l’abonnement.
 - Si vous annulez votre abonnement mensuel, il est désactivé immédiatement (à la date d’annulation). Cela signifie que vos utilisateurs perdent immédiatement l’accès aux ressources Microsoft 365 et que seuls les administrateurs ont accès aux données pour les 90 prochains jours.
 
 Le tableau suivant décrit ce à quoi vous pouvez vous attendre lors de l’expiration d’un abonnement Microsoft 365 pour les entreprises payant.
 
-| **Active**                                                             | **Expiré <br/> (30 jours \* )**                                                | **Désactivé <br/> (90 jours \* )**                                               | **Supprimé**                                                                         |
+| Actif | Expiré <br/>(30 jours \* ) | Désactivé <br/>(90 jours \* ) | Deleted |
 |------------------------------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
 | *Données accessibles à tous les*                                               | *Données accessibles à tous les*                                                     | *Données accessibles aux administrateurs uniquement*                                             | **Données supprimées <br/> Azure Active Directory est supprimé, s’il n’est pas utilisé par d’autres services** |
 | Les utilisateurs ont un accès normal à Microsoft 365, les fichiers et les applications   | Les utilisateurs ont un accès normal à Microsoft 365, les fichiers et les applications              | Les utilisateurs ne peuvent pas accéder à Microsoft 365, aux fichiers ou aux applications                        | Les utilisateurs ne peuvent pas accéder à Microsoft 365, aux fichiers ou aux applications                                     |
@@ -192,16 +192,16 @@ Dans cet état, votre niveau d'accès est considérablement restreint. Vos utili
 
 En tant qu’administrateur général ou administrateur de facturation, vous pouvez [réactiver l’abonnement](reactivate-your-subscription.md) et continuer à utiliser Microsoft 365 avec toutes vos données client intactes. Si vous choisissez de ne pas réactiver, [Sauvegardez vos données](back-up-data-before-switching-plans.md).
 
-### <a name="state-deprovisioned"></a>État : mis en service
+### <a name="state-deleted"></a>État : supprimé
   
- **Ce à quoi vous devez vous attendre :** si vous ne réactivez pas votre abonnement pendant sa période de grâce ou sa désactivation, il est annulé.
+ **À quoi vous devez vous attendre :** Si vous ne réactivez pas votre abonnement pendant sa période de grâce ou si ce dernier est désactivé, l’abonnement est supprimé.
   
 Les administrateurs et les utilisateurs n'ont plus accès aux services ou applications Office inclus dans l'abonnement. Toutes les données client, depuis les données utilisateur vers les documents et le courrier électronique, sont supprimées définitivement et irrécupérables.
   
 À ce stade, vous ne pouvez pas réactiver l'abonnement. Toutefois, en tant qu’administrateur général ou administrateur de facturation, vous pouvez toujours accéder au centre d’administration pour gérer d’autres abonnements ou acheter de nouveaux abonnements pour répondre aux besoins de votre entreprise.
   
 > [!NOTE]
-> L'ajout d'un nouvel abonnement du même type que celui précédemment annulé ne restaure pas les données associées à l'abonnement annulé.
+> L’ajout d’un nouvel abonnement du même type qui a été supprimé ne restaure pas les données associées à l’abonnement supprimé.
 
 
 > [!NOTE]
