@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Déterminer l’emplacement de stockage des données client Microsoft 365 dans le monde
-ms.openlocfilehash: e450468b54bdbce0e6c01dd3b935922836ab9f90
-ms.sourcegitcommit: 705915f8bf9b7c082d12a009523d8aa0670a74a1
+ms.openlocfilehash: 4fd3f480ef2ad3389e9a959695b9654badbda27f
+ms.sourcegitcommit: 0badd6a7af803a52c7c46a4374211cb89307eacf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48493684"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49135990"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -127,6 +127,7 @@ Pour les centres de données spécifiques d’un pays ou d’une région, les é
 | Pays | Ville |
 | --- | --- |
 | Australie | Sydney, Melbourne |
+| Brésil | Rio, Campinas |
 | Canada | Ville de Québec, Toronto |
 | Union européenne | Autriche (Vienne), Finlande (Helsinki), France (Paris, Marseille), Irlande (Dublin), Pays-Bas (Amsterdam) |
 | France | Paris, Marseille |
@@ -892,19 +893,19 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 
 | Service | Lieu |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 3 : Amériques |
-| OneDrive Entreprise | Zone géographique mondiale 3 : Amériques |
-| SharePoint Online | Zone géographique mondiale 3 : Amériques |
+| Exchange Online | Brésil |
+| OneDrive Entreprise | Brésil |
+| SharePoint Online | Brésil |
 | Skype Entreprise | États-Unis |
-| Microsoft Teams | États-Unis |
-| Office Online Mobile &amp; | Zone géographique mondiale 3 : Amériques |
-| Exchange Online Protection | Zone géographique mondiale 3 : Amériques |
+| Microsoft Teams | Brésil |
+| Office Online &amp; Mobile | Brésil |
+| Exchange Online Protection | Brésil |
 | Intune | États-Unis |
-| MyAnalytics | Zone géographique mondiale 3 : Amériques |
+| MyAnalytics | Brésil |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
-| Services OneNote | Zone géographique mondiale 3 : Amériques |
+| Services OneNote | Brésil |
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
