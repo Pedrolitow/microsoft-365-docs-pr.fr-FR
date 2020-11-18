@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Découvrez comment utiliser les limites de conformité pour créer des limites logiques qui contrôlent les emplacements de contenu utilisateur qu’un gestionnaire eDiscovery peut rechercher dans Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c57689cc6e626b62ae976bac9f9771205431bc8a
-ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
+ms.openlocfilehash: afc01ea88e9a2de6550741dcaac105ef764a752f
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48370400"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131129"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>Configuration des limites de conformité pour les enquêtes eDiscovery
 
@@ -219,6 +219,8 @@ Les filtres d’autorisations de recherche vous permettent également de contrô
     |JPN  <br/> |Asie-Pacifique  <br/> |
     |IND  <br/> |Asie-Pacifique  <br/> |
     |BARRÉ  <br/> |Contacter  <br/> |
+    |AFTERUPDATE  <br/> |Europe |
+    |BRA  <br/> |Centres de l’Amérique du Nord |
     |||
 
    Si vous ne spécifiez pas le paramètre **Region** pour un filtre d’autorisations de recherche, la zone SharePoint principale de l’organisation sera recherchée. Les résultats de la recherche sont exportés vers le centre de contenu le plus proche.
@@ -298,9 +300,9 @@ Gardez les limites suivantes à l’esprit lors de la gestion des cas eDiscovery
 
 - Il n’est pas recommandé d’utiliser des filtres d’exclusion (par exemple, `-not()` dans un filtre d’autorisations de recherche) pour une limite de conformité basée sur le contenu. L’utilisation d’un filtre d’exclusion peut avoir des résultats inattendus si le contenu avec des attributs récemment mis à jour n’a pas été indexé. 
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
-**Qui peut créer et gérer des filtres d’autorisations de recherche (à l’aide des cmdlets New-ComplianceSecurityFilter et Set-ComplianceSecurityFilter) ?**
+**Qui peut créer et gérer des filtres d’autorisations de recherche (à l’aide des applets de commande New-ComplianceSecurityFilter et Set-ComplianceSecurityFilter) ?**
   
 Pour créer, afficher et modifier des filtres d’autorisations de recherche, vous devez être membre du groupe de rôles gestion de l’organisation dans le centre de sécurité & conformité.
   

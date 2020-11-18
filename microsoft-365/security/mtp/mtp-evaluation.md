@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-overview
 - m365solution-evalutatemtp
 ms.topic: conceptual
-ms.openlocfilehash: d6c96f7720344721bb2786dc130c490a5a8ea657
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: fe0a06dd104f0f0532363ee046f4bad1c03c5400
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846483"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49130893"
 ---
 # <a name="create-a-microsoft-365-defender-trial-lab-or-pilot-environment"></a>Création d’un laboratoire d’évaluation ou d’un environnement pilote Microsoft 365 Defender 
 
@@ -33,7 +33,7 @@ ms.locfileid: "48846483"
 
 
 **S’applique à :**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 L’objectif de la création de ce laboratoire d’évaluation ou de cet environnement pilote est d’illustrer les fonctionnalités complètes et intégrées de Microsoft 365 Defender. Découvrez comment cette solution de sécurité intelligente détecte, empêche, recherche automatiquement les menaces avancées de votre organisation et y répond. 
 
@@ -54,11 +54,13 @@ Ce guide vous aidera à :
 
 Il existe trois phases pour créer un environnement de laboratoire de test Microsoft 365 Defender et le déployer :
 
+![Phases de déploiement : Prepare, Setup, Onboard](../../media/phase-diagrams/deployment-phases.png)
+
 |Phase | Description | 
 |:-------|:-----|
-| ![Phase 1 : préparer](../../media/prepare.png)<br>[Phase 1 : préparer](prepare-mtpeval.md)| Découvrez ce que vous devez prendre en compte lors du déploiement de Microsoft 365 Defender dans un laboratoire d’évaluation ou un environnement pilote : <br><br>-Parties prenantes et déconnexion <br> -Considérations sur l’environnement <br>-Accès <br>-Installation d’Azure Active Directory <br> -Ordre de configuration
-|  ![Phase 2 : configuration](../../media/setup.png) <br>[Phase 2 : configuration](setup-mtpeval.md)|  Suivez les étapes initiales pour accéder au centre de sécurité Microsoft 365 afin de configurer votre laboratoire d’évaluation ou votre environnement pilote Microsoft 365 Defender. Vous serez guidé pour :<br><br>-Inscrivez-vous à la version d’évaluation de Microsoft 365 E5 <br>  -Configurer le domaine<br>-Affecter les licences Microsoft 365 E5<br>-Exécutez l’Assistant Installation dans le portail.|
-|  ![Phase 3 : configurer & Onboard](../../media/config-onboard.png) <br>[Phase 3 : configurer & Onboard](config-mtpeval.md) | Configurez chaque pilier Microsoft 365 Defender et les points de terminaison intégrés. Vous serez guidé pour :<br><br>-Configurer Microsoft Defender pour Office 365<br>-Configurer la sécurité des applications Cloud Microsoft<br>-Configurer Microsoft Defender pour l’identité<br>-Configurer Microsoft Defender pour le point de terminaison
+|[Phase 1 : préparer](prepare-mtpeval.md)| Découvrez ce que vous devez prendre en compte lors du déploiement de Microsoft 365 Defender dans un laboratoire d’évaluation ou un environnement pilote : <br><br>-Parties prenantes et déconnexion <br> -Considérations sur l’environnement <br>-Accès <br>-Installation d’Azure Active Directory <br> -Ordre de configuration
+|[Phase 2 : configuration](setup-mtpeval.md)|  Suivez les étapes initiales pour accéder au centre de sécurité Microsoft 365 afin de configurer votre laboratoire d’évaluation ou votre environnement pilote Microsoft 365 Defender. Vous serez guidé pour :<br><br>-Inscrivez-vous à la version d’évaluation de Microsoft 365 E5 <br>  -Configurer le domaine<br>-Affecter les licences Microsoft 365 E5<br>-Exécutez l’Assistant Installation dans le portail.|
+|[Phase 3 : configurer & Onboard](config-mtpeval.md) | Configurez chaque pilier Microsoft 365 Defender et les points de terminaison intégrés. Vous serez guidé pour :<br><br>-Configurer Microsoft Defender pour Office 365<br>-Configurer la sécurité des applications Cloud Microsoft<br>-Configurer Microsoft Defender pour l’identité<br>-Configurer Microsoft Defender pour le point de terminaison
 
 
 ## <a name="in-scope"></a>Dans l’étendue
@@ -71,10 +73,10 @@ Les tâches suivantes sont dans l’étendue de ce guide :
     -   Affecter des licences Microsoft 365 E5
     -   Fin de l’Assistant Installation dans le portail
 -   Configurer tous les piliers de Microsoft 365 Defender en fonction des meilleures pratiques
-    -   Microsoft Defender pour Office 365
-    -   Microsoft Defender pour l’identité
+    -   Microsoft Defender pour Office 365
+    -   Microsoft Defender pour identité
     -   Microsoft Cloud App Security
-    -   Microsoft Defender pour point de terminaison
+    -   Microsoft Defender pour point de terminaison
 
 ## <a name="out-of-scope"></a>Non compris
 
@@ -84,5 +86,5 @@ Ce guide de déploiement ne comporte pas les éléments suivants :
 -   Test de pénétration dans l’environnement de production
 
 ## <a name="next-step"></a>Étape suivante
-![Phase 1 : préparer](../../media/prepare.png) <br>[Phase 1 : préparer](prepare-mtpeval.md) 
+[Phase 1 : préparer](prepare-mtpeval.md) 
 <br> Préparation de votre laboratoire d’évaluation ou de votre environnement pilote Microsoft 365 Defender

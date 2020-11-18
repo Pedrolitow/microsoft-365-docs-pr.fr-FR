@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez comment rechercher et utiliser des rapports de sécurité de messagerie pour votre organisation. Les rapports de sécurité de messagerie sont disponibles dans le centre de sécurité & conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 75370cbbdfbc59bf8e9334d1e11d8b92c5c97e61
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 1b2fd7a18589932d56ea39722b48462d2a6eac2f
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087750"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131200"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Afficher les rapports de sécurité de courrier dans le centre de sécurité et conformité
 
@@ -334,7 +334,7 @@ Les vues disponibles sont les suivantes :
   - **Réputation d’URL EOP**: réputation d’URL malveillante.
   - **Filtre de hameçonnage général**: signal d’hameçonnage basé sur les règles d’analyste.
   - **Autres**
-  - **Hameçonnage zap**<sup>2</sup>: suppression automatique des messages d’hameçonnage par zéro heure.
+  - **Hameçonnage zap**<sup>2</sup>: vidage automatique des messages d’hameçonnage par zéro heure.
   - **Détonation d’URL**<sup>1</sup>
   - **Emprunt d’identité de l’utilisateur**<sup>1</sup>: emprunt d’identité des utilisateurs défini par l’administrateur ou appris via l’intelligence des boîtes aux lettres.
 

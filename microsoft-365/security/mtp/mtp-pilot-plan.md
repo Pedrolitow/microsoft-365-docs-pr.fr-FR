@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-scenario
 - m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: ec2bfe52308231577e4f2749e1f4cdf24a36f604
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 4420342f964564305bb113c45ee0e3107f8a822e
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846019"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49130980"
 ---
 # <a name="planning-your-pilot-microsoft-365-defender-project"></a>Planification de votre projet pilote Microsoft 365 Defender 
 
@@ -33,46 +33,11 @@ ms.locfileid: "48846019"
 
 
 **S’applique à :**
-- Microsoft 365 Defender
-<br>
-<table border="0" width="100%" align="center">
-  <tr style="text-align:center;">
-    <td align="center" style="width:25%; border:0;" bgcolor="#d5f5e3">
-      <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-plan"> 
-        <img src="../../media/mtp/plan.png" alt="Plan your pilot Microsoft 365 Defender project" title="Planification de votre projet pilote Microsoft 365 Defender" />
-      <br/>Prévision</a><br>
-    </td>
-    <td align="center">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval">
-        <img src="../../media/mtp/prep.png" alt="Prepare your Microsoft 365 Defender trial lab or pilot environment" title="Préparation de votre laboratoire d’évaluation ou de votre environnement pilote Microsoft 365 Defender" />
-      <br/>Préparation</a><br>
-    </td>
-    <td align="center">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate">
-        <img src="../../media/mtp/run-sim.png" alt="Run your Microsoft 365 Defender attack simulations" title="Exécuter vos simulations d’attaque de Microsoft 365 Defender" />
-     <br/>Simuler une attaque</a><br>
-    </td>
-    <td align="center">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-close">
-        <img src="../../media/mtp/close.png" alt="Close and summarize your Microsoft 365 Defender pilot" title="Fermeture et synthèse de votre pilote Microsoft 365 Defender" />
-     <br/>Fermer et synthétiser</a><br>
-    </td>
-  </tr>
-  <tr>
-    <td style="width:25%; border:0;">
-   
-    </td>
-    <td valign="top" style="width:25%; border:0;">
-    
-</td>
-    <td valign="top" style="width:25%; border:0;">
+- Microsoft 365 Defender
 
-</td>    
-    <td valign="top" style="width:25%; border:0;">
-
-</td>
-  </tr>
-</table>
+|![Planification](../../media/phase-diagrams/1-planning.png)<br/>Planification|[![Préparation](../../media/phase-diagrams/2-prepare.png)](prepare-mtpeval.md)<br/>[Préparation](prepare-mtpeval.md) | [![Simuler une attaque](../../media/phase-diagrams/3-simluate.png)](mtp-pilot-simulate.md)<br/>[Simuler une attaque](mtp-pilot-simulate.md) | [![Fermer et synthétiser](../../media/phase-diagrams/4-summary.png)](mtp-pilot-close.md)<br/>[Fermer et synthétiser](mtp-pilot-close.md)|
+|--|--|--|--|
+|*Vous êtes là !*| | | |
 
 Vous êtes actuellement à la phase de planification.
 
@@ -95,7 +60,7 @@ L’étendue du projet pilote détermine la portée du test, en fonction de votr
 
 Les types de systèmes d’exploitation à évaluer doivent également être définis en fonction de la composition de l’organisation. Cela peut être le suivant : [points de terminaison Mac](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac#system-requirements), [serveurs Linux](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-linux#system-requirements), [points de terminaison windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements#supported-windows-versions), [Windows Server 2016](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements#supported-windows-versions).
 
-## <a name="use-cases"></a>Cas d'utilisation
+## <a name="use-cases"></a>Cas d’utilisation
 
 Les cas d’utilisation représentent des instructions expliquant comment l’outil testé est destiné à être consommé par les utilisateurs prévus. Celles-ci peuvent être formulées sous la forme de récits utilisateur du point de vue d’un personnage particulier, tel qu’un analyste SOC. Par exemple :
 - En tant qu’analyste SOC, je dois afficher, corréler, évaluer et gérer les alertes et les événements sur les appareils, les utilisateurs et les boîtes aux lettres de mon réseau. [Gestion des incidents]

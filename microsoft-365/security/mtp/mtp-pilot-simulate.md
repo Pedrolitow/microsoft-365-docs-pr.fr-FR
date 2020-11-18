@@ -20,59 +20,21 @@ ms.collection:
 - m365solution-scenario
 - m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: 700bd7a3f4ba8d152cf66a27c0f66aa375872698
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: fac3a79f1522e5e7777b2b54bce2b8bd695f8d7a
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842061"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131344"
 ---
 # <a name="run-your-microsoft-365-defender-attack-simulations"></a>Exécuter vos simulations d’attaque de Microsoft 365 Defender  
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
-- Microsoft 365 Defender
-<br>
-<table border="0" width="100%" align="center">
-  <tr style="text-align:center;">
-    <td align="center" style="width:25%; border:0;" >
-      <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-plan"> 
-        <img src="../../media/mtp/plan.png" alt="Plan your pilot Microsoft 365 Defender project" title="Planification de votre projet pilote Microsoft 365 Defender" />
-      <br/>Coplanaires </a><br>
-    </td>
-    <td align="center">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval">
-        <img src="../../media/mtp/prep.png" alt="Prepare your Microsoft 365 Defender trial lab or pilot environment" title="Préparation de votre laboratoire d’évaluation ou de votre environnement pilote Microsoft 365 Defender" />
-      <br/>Instructions </a><br>
-    </td>
-    <td align="center"bgcolor="#d5f5e3">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate">
-        <img src="../../media/mtp/run-sim.png" alt="Run your Microsoft 365 Defender attack simulations" title="Exécuter vos simulations d’attaque de Microsoft 365 Defender" />
-      <br/>Simuler une attaque </a><br>
-    </td>
-    <td align="center">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-close">
-        <img src="../../media/mtp/close.png" alt="Close and summarize your Microsoft 365 Defender pilot" title="Fermeture et synthèse de votre pilote Microsoft 365 Defender" />
-      <br/>Fermer et résumer </a><br>
-    </td>
-  </tr>
-  <tr>
-    <td style="width:25%; border:0;">
-   
-    </td>
-    <td valign="top" style="width:25%; border:0;">
-    
-</td>
-    <td valign="top" style="width:25%; border:0;">
-
-</td>    
-    <td valign="top" style="width:25%; border:0;">
-
-</td>
-  </tr>
-</table>
+|[![Planification](../../media/phase-diagrams/1-planning.png)](mtp-pilot-plan.md)<br/>[Planification](mtp-pilot-plan.md) |[![Préparation](../../media/phase-diagrams/2-prepare.png)](prepare-mtpeval.md)<br/>[Préparation](prepare-mtpeval.md) | ![Simuler une attaque](../../media/phase-diagrams/3-simluate.png)<br/>Simuler une attaque| [![Fermer et synthétiser](../../media/phase-diagrams/4-summary.png)](mtp-pilot-close.md)<br/>[Fermer et synthétiser](mtp-pilot-close.md)|
+|--|--|--|--|
+|| |*Vous êtes là !* | |
 
 Vous êtes actuellement en phase de simulation d’attaque.
 
@@ -369,9 +331,9 @@ Il existe une seule boîte aux lettres interne et un seul périphérique requis 
 
     1.  Examinez les résultats et vérifiez si vous pouvez identifier le courrier électronique que vous avez ouvert.  Le message peut prendre jusqu’à 2 heures pour apparaître dans la chasse avancée. Si l’environnement de messagerie est volumineux et qu’il existe de nombreux résultats, vous pouvez utiliser l' **option Afficher les filtres** pour rechercher le message. 
 
-   Dans l’exemple, le courrier électronique a été envoyé à partir d’un compte Yahoo. Cliquez sur l' **+** icône située en regard de **yahoo.com** sous la section SenderFromDomain, puis cliquez sur **appliquer** pour ajouter le domaine sélectionné à la requête.  Utilisez le domaine ou le compte de messagerie qui a été utilisé pour envoyer le message de test à l’étape 1 de l’exécution de la simulation pour filtrer vos résultats.  Exécutez à nouveau la requête pour obtenir un jeu de résultats plus petit afin de vérifier que le message a été affiché à partir de la simulation.
+           Dans l’exemple, le courrier électronique a été envoyé à partir d’un compte Yahoo. Cliquez sur l' **+** icône située en regard de **yahoo.com** sous la section SenderFromDomain, puis cliquez sur **appliquer** pour ajouter le domaine sélectionné à la requête.  Utilisez le domaine ou le compte de messagerie qui a été utilisé pour envoyer le message de test à l’étape 1 de l’exécution de la simulation pour filtrer vos résultats.  Exécutez à nouveau la requête pour obtenir un jeu de résultats plus petit afin de vérifier que le message a été affiché à partir de la simulation.
    
-        ![Screenshot of the filters. Use filters to narrow down the search, and find what you’re looking for faster.](../../media/mtp/fig20.png) 
+        ![Capture d’écran des filtres. Utilisez des filtres pour affiner la recherche et trouver plus rapidement ce que vous recherchez.](../../media/mtp/fig20.png) 
 
         ```console
         EmailEvents 
@@ -382,7 +344,7 @@ Il existe une seule boîte aux lettres interne et un seul périphérique requis 
    
         ![Capture d’écran du volet latéral enregistrement Inspect qui s’ouvre lorsqu’un résultat de la chasse avancée est sélectionné](../../media/mtp/fig21.png) 
 
-4.  Maintenant que vous avez vérifié que vous pouvez voir le message, ajoutez un filtre pour les pièces jointes. Concentrez-vous sur tous les messages électroniques contenant des pièces jointes dans l’environnement. Pour ce scénario, concentrez-vous sur les messages électroniques entrants, et non sur ceux qui sont envoyés à partir de votre environnement. Supprimez tous les filtres que vous avez ajoutés pour localiser votre message et ajouter «| où **AttachmentCount > 0** et **EmailDirection** «  ==  **entrant** »
+4.  Maintenant que vous avez vérifié que vous pouvez voir le message, ajoutez un filtre pour les pièces jointes. Concentrez-vous sur tous les messages électroniques contenant des pièces jointes dans l’environnement. Pour ce scénario, concentrez-vous sur les messages électroniques entrants, et non sur ceux qui sont envoyés à partir de votre environnement. Supprimez tous les filtres que vous avez ajoutés pour localiser votre message et ajouter «| où **AttachmentCount > 0** et **EmailDirection**«  ==  **entrant** »
 
     La requête suivante vous indique le résultat avec une liste plus courte que votre requête initiale pour tous les événements de messagerie :
 
@@ -394,7 +356,7 @@ Il existe une seule boîte aux lettres interne et un seul périphérique requis 
 
 5.  Ensuite, incluez les informations relatives à la pièce jointe (par exemple, le nom de fichier, les hachages) à votre jeu de résultats. Pour ce faire, rejoignez la table **EmailAttachmentInfo** . Les champs communs à utiliser pour la jointure, dans ce cas, sont **NetworkMessageId** et **RecipientObjectId**.
 
-La requête suivante inclut également une ligne supplémentaire «| **Project-Rename EmailTimestamp = timestamp** "qui permettra d’identifier l’horodatage associé à la messagerie par rapport aux estampilles associées aux actions de fichier que vous ajouterez à l’étape suivante.
+    La requête suivante inclut également une ligne supplémentaire «| **Project-Rename EmailTimestamp = timestamp**"qui permettra d’identifier l’horodatage associé à la messagerie par rapport aux estampilles associées aux actions de fichier que vous ajouterez à l’étape suivante.
 
     ```console
     EmailEvents 
@@ -473,9 +435,9 @@ Les détections personnalisées exécuteront la requête en fonction de la fréq
 
     ![Capture d’écran de la page règles de détection qui affiche les détails de la règle et de l’exécution](../../media/mtp/fig27b.png) 
 
-À partir de cette page, vous pouvez sélectionner la règle de détection, qui ouvrira une page de détails. 
+    À partir de cette page, vous pouvez sélectionner la règle de détection, qui ouvrira une page de détails. 
 
-    ![Screenshot of the email attachments page where you can see the status of the rule execution, triggered alerts and actions, edit the detection, and so on](../../media/mtp/fig28.png) 
+    ![Capture d’écran de la page pièces jointes de courrier électronique où vous pouvez voir l’état de l’exécution de la règle, des alertes déclenchées et des actions, modifier la détection, etc.](../../media/mtp/fig28.png) 
 
 ### <a name="additional-advanced-hunting-walk-through-exercises"></a>Exercices supplémentaires de la chasse à la chasse
 

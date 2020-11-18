@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 - m365solution-evalutatemtp
 ms.topic: article
-ms.openlocfilehash: 47f4ceeebd50784b1880a028ebe2698012c406da
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 503b7a6a6b3ad6394293e9f70dbdd336f6bee9dd
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844823"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131308"
 ---
 # <a name="set-up-your-microsoft-365-defender-trial-lab-environment"></a>Configuration de votre environnement de laboratoire de test Microsoft 365 Defender 
 
@@ -31,35 +31,15 @@ ms.locfileid: "48844823"
 
 
 **S’applique à :**
-- Microsoft 365 Defender 
+- Microsoft 365 Defender 
 
 
 La création d’un laboratoire de test Microsoft 365 Defender ou d’un environnement pilote et son déploiement est un processus en trois phases :
 
-<br>
-<table border="0" width="100%" align="center">
-  <tr style="text-align:center;">
-    <td align="center" style="width:25%; border:0;" >
-      <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval?view=o365-worldwide"> 
-        <img src="../../media/prepare.png" alt="Prepare your Microsoft 365 Defender trial lab or pilot environment" title="Préparation de votre laboratoire d’évaluation ou de votre environnement pilote Microsoft 365 Defender" />
-      <br/>Phase 1 : préparer </a><br>
-    </td>
-     <td align="center"bgcolor="#d5f5e3">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/setup-mtpeval?view=o365-worldwide">
-        <img src="../../media/setup.png" alt="Set up your Microsoft 365 Defender trial lab or pilot environment" title="Configuration de votre laboratoire d’évaluation Microsoft 365 Defender ou de votre environnement pilote" />
-      <br/>Phase 2 : configuration </a><br>
-    </td>
-    <td align="center">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide">
-        <img src="../../media/config-onboard.png" alt="
-Configure each Microsoft 365 Defender pillar for your Microsoft 365 Defender trial lab or pilot environment and onboard your endpoints" title="
-Configurez chaque pilier de Microsoft 365 Defender pour votre laboratoire de test Microsoft 365 Defender ou votre environnement pilote et intégrez vos points de terminaison." />
-      <br/>Phase 3 : configurer & Onboard </a><br>
-</td>
+|[![Phase 1 : préparer](../../media/phase-diagrams/prepare.png)](prepare-mtpeval.md)<br/>[Phase 1 : préparer](prepare-mtpeval.md) |![Phase 2 : configurer](../../media/phase-diagrams/setup.png)<br/>Phase 2 : configurer |[![Phase 3 : intégration](../../media/phase-diagrams/onboard.png)](config-mtpeval.md)<br/>[Phase 3 : intégration](config-mtpeval.md) | [![Retour au pilote](../../media/phase-diagrams/backtopilot.png)](mtp-pilot.md)<br/>[Retour au manuel pilote](mtp-pilot.md) |
+|--|--|--|--|
+||*Vous êtes là !*  | | |
 
-
-  </tr>
-</table>
 
 Vous êtes actuellement dans la phase de configuration. Suivez les étapes initiales pour accéder au centre de sécurité Microsoft 365, puis configurez votre laboratoire d’évaluation ou votre environnement pilote.
 
@@ -163,7 +143,7 @@ Dans cette phase, vous serez guidé pour :
 
    ![Image of_Microsoft 365 E5 page de la version d’évaluation gratuite où vous devez pointer le bouton essayer maintenant pour démarrer](../../media/mtp-eval-27.png)
  
-6. Accédez au **Centre d’administration Microsoft 365**  >  **utilisateurs**  >  **actifs**. Sélectionnez votre compte d’utilisateur, sélectionnez **gérer les licences de produits** , puis échangez la licence d’Office 365 E5 à **Microsoft 365 E5**. Cliquez sur **Enregistrer**.
+6. Accédez au **Centre d’administration Microsoft 365**  >  **utilisateurs**  >  **actifs**. Sélectionnez votre compte d’utilisateur, sélectionnez **gérer les licences de produits**, puis échangez la licence d’Office 365 E5 à **Microsoft 365 E5**. Cliquez sur **Enregistrer**.
 
    ![Page du centre d’administration de l’image of_Microsoft 365, dans laquelle vous pouvez sélectionner Microsoft 365 E5 licence](../../media/mtp-eval-28.png)
  
@@ -178,5 +158,5 @@ Dans cette phase, vous serez guidé pour :
 
 
 ## <a name="next-step"></a>Étape suivante
-|![Phase 3 : configurer & Onboard](../../media/config-onboard.png) <br>[Phase 3 : configurer & Onboard](config-mtpeval.md) | Configurez chaque pilier de Microsoft 365 Defender pour votre laboratoire de test Microsoft 365 Defender ou votre environnement pilote et embarquez vos points de terminaison.
+|[Phase 3 : configurer & Onboard](config-mtpeval.md) | Configurez chaque pilier de Microsoft 365 Defender pour votre laboratoire de test Microsoft 365 Defender ou votre environnement pilote et embarquez vos points de terminaison.
 |:-------|:-----|

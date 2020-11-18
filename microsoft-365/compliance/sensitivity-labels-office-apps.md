@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Découvrez comment les utilisateurs utilisent les étiquettes de confidentialité dans les applications Office pour ordinateur de bureau, mobile et le Web, et quelles applications prennent en charge les étiquettes de sensibilité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a56ed063a639c0037102df8729362ebb4cca94f5
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: de005e40cf346c8dd6e02e0394272a97b186920f
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087037"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131107"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Utiliser les étiquettes de confidentialité dans les applications Office
 
@@ -59,7 +59,7 @@ Pour iOS et Android : lorsqu’une version minimale est indiquée, la fonctionn
 |[Exiger une justification pour modifier une étiquette](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Oui-opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Fournir un lien aide vers une page d’aide personnalisée](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Oui-opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Marquer le contenu](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Oui-opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Marquages dynamiques avec des variables](#dynamic-markings-with-variables)                                              | Aperçu : [canal bêta et canal actuel (aperçu)](https://office.com/insider)           | 16.42 +     | 2.42 + | 16.0.13328 + | En cours de révision |
+|[Marquages dynamiques avec des variables](#dynamic-markings-with-variables)                                              | 2010 +           | 16.42 +     | 2.42 + | 16.0.13328 + | En cours de révision |
 |[Attribuer des autorisations maintenant](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Oui-opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Permettre aux utilisateurs d’attribuer des autorisations](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004 + | 16.35 +   | En cours de révision   | En cours de révision         | En cours de révision                                                        |
 |[Afficher l’utilisation des étiquettes avec l’analyse d’étiquette et l'](label-analytics.md) envoi de données pour les administrateurs                      | En cours de révision            | En cours de révision        | En cours de révision   | En cours de révision         | En cours de révision                                                        |

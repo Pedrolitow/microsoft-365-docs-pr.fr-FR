@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-defender-office365
 - MET150
 description: Les administrateurs peuvent apprendre à identifier les raisons et le mode de réception d’un message de hameçonnage dans Microsoft 365, ainsi que la marche à suivre pour éviter d’autres messages de hameçonnage.
-ms.openlocfilehash: e933769b6bce9eb10765fb2b58025445432bed18
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: c495be3f5a90ca96f9a7a05513df9438f88910ad
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845467"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131320"
 ---
 # <a name="tune-anti-phishing-protection"></a>Régler la protection anti-hameçonnage
 
@@ -39,7 +39,7 @@ Si votre abonnement inclut Microsoft Defender pour Office 365, vous pouvez utili
 
 - [Pièces jointes fiables dans Microsoft Defender pour Office 365](set-up-atp-safe-attachments-policies.md)
 
-- [Stratégies anti-hameçonnage dans Microsoft Defender pour Office 365](configure-atp-anti-phishing-policies.md). Notez que vous pouvez augmenter temporairement les **seuils de phishing avancés** dans la stratégie, de **standard** à **agressif** , **plus agressif** ou **plus agressif**.
+- [Stratégies anti-hameçonnage dans Microsoft Defender pour Office 365](configure-atp-anti-phishing-policies.md). Notez que vous pouvez augmenter temporairement les **seuils de phishing avancés** dans la stratégie, de **standard** à **agressif**, **plus agressif** ou **plus agressif**.
 
 Vérifiez que les fonctionnalités de ces fonctionnalités de Defender pour Office 365 sont activées.
 
@@ -51,13 +51,13 @@ La création de messages de phishing est utile pour régler les filtres utilisé
 
 Vous pouvez examiner les en-têtes du message de hameçonnage pour voir s’il y a quelque chose que vous pouvez faire vous-même pour empêcher d’autres messages de phishing de venir. En d’autres termes, l’examen des en-têtes de messages peut vous aider à identifier tous les paramètres de votre organisation qui ont été chargés d’autoriser les messages de hameçonnage dans.
 
-Plus précisément, vous devez vérifier le champ d’en-tête **X-Forefront-antispam-Report** dans les en-têtes de message pour obtenir des indications de courrier indésirable ignoré ou de filtrage du courrier indésirable dans la valeur de filtrage du courrier indésirable (SFV). Les messages qui ignorent le filtrage auront une entrée de `SCL:-1` , ce qui signifie que l’un de vos paramètres a autorisé ce message en remplaçant le courrier indésirable ou le score de phishing déterminé par le service. Pour plus d’informations sur l’obtention des en-têtes de message et la liste complète des en-têtes de message anti-courrier indésirable et anti-hameçonnage disponibles, consultez les [en-têtes de message anti-courrier indésirable dans Microsoft 365](anti-spam-message-headers.md).
+Plus précisément, vous devez vérifier le champ d’en-tête **X-Forefront-antispam-Report** dans les en-têtes de message pour obtenir des indications de filtrage ignoré pour le courrier indésirable ou le hameçonnage dans la valeur de filtrage du courrier indésirable (SFV). Les messages qui ignorent le filtrage auront une entrée de `SCL:-1` , ce qui signifie que l’un de vos paramètres a autorisé ce message en remplaçant le courrier indésirable ou le score de phishing déterminé par le service. Pour plus d’informations sur l’obtention des en-têtes de message et la liste complète des en-têtes de message anti-courrier indésirable et anti-hameçonnage disponibles, consultez les en [-têtes de message anti-courrier indésirable dans Microsoft 365](anti-spam-message-headers.md).
 
 ## <a name="best-practices-to-stay-protected"></a>Meilleures pratiques pour rester protégé
 
 - Sur une base mensuelle, exécutez le [score sécurisé](../mtp/microsoft-secure-score.md) pour évaluer les paramètres de sécurité de votre organisation.
 
-- Pour les messages qui sont mis en quarantaine par erreur ou pour les messages autorisés, nous vous recommandons de rechercher ces messages dans l' [Explorateur de menaces et les détections en temps réel](threat-explorer.md). Vous pouvez effectuer une recherche par expéditeur, destinataire ou ID de message. Une fois que vous avez trouvé le message, accédez à détails en cliquant sur l’objet. Pour un message en quarantaine, consultez la rubrique « technologie de détection » afin de pouvoir utiliser la méthode appropriée pour le remplacement. Pour obtenir un message autorisé, vérifiez quelle stratégie a autorisé le message. 
+- Pour les messages qui sont mis en quarantaine par erreur ou pour les messages autorisés, nous vous recommandons de rechercher ces messages dans l' [Explorateur de menaces et les détections en temps réel](threat-explorer.md). Vous pouvez effectuer une recherche par expéditeur, destinataire ou ID de message. Une fois que vous avez trouvé le message, accédez à détails en cliquant sur l’objet. Pour un message en quarantaine, consultez la rubrique « technologie de détection » afin de pouvoir utiliser la méthode appropriée pour le remplacement. Pour obtenir un message autorisé, vérifiez quelle stratégie a autorisé le message.
 
 - Le courrier usurpé est marqué comme hameçonnage dans Defender pour Office 365. Parfois, l’usurpation d’identité est inoffensive et les utilisateurs ne doivent pas être mis en quarantaine. Pour réduire l’impact sur les utilisateurs, consultez régulièrement le rapport d’aide à la [décision](learn-about-spoof-intelligence.md). Une fois que vous avez vérifié et effectué les remplacements nécessaires, vous pouvez être sûr de [configurer](set-up-anti-phishing-policies.md#spoof-settings) l’aide à la **mise en quarantaine** des messages suspects au lieu de les transmettre au dossier de courrier indésirable de l’utilisateur.
 
@@ -74,8 +74,8 @@ Plus précisément, vous devez vérifier le champ d’en-tête **X-Forefront-ant
   - Utilisez la défaillance matérielle ( \- tout) pour vous assurer que les expéditeurs non autorisés sont rejetés par les systèmes de messagerie qui sont configurés pour le faire. Vous pouvez utiliser l’Assistant d’aide à la [décision](learn-about-spoof-intelligence.md) pour identifier les expéditeurs qui utilisent votre domaine afin que vous puissiez inclure des expéditeurs tiers autorisés dans votre enregistrement SPF.
 
   Pour obtenir des instructions de configuration, voir :
-  
-  - [Configurer SPF pour empêcher l’usurpation](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
+
+  - [Configurer SPF pour empêcher l’usurpation d’identité](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
   - [Utilisation de DKIM pour valider les messages sortants envoyés à partir de votre domaine personnalisé](use-dkim-to-validate-outbound-email.md)
 

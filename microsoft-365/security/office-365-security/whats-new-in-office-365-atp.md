@@ -20,12 +20,12 @@ ms.topic: conceptual
 ms.date: 10/09/2020
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
-ms.openlocfilehash: e0801fb26b0bc7c4d37ab9455d9fcd2630f0fe51
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 5aa1d5fe14f6213931e089c2f97fcf06c96397b3
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842843"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131146"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Nouveautés de Microsoft Defender pour Office 365
 
@@ -34,12 +34,16 @@ ms.locfileid: "48842843"
 
 **S’applique à :**
 
-- [Microsoft Defender pour Office 365](office-365-atp.md)
+- [Microsoft Defender pour Office 365](office-365-atp.md)
 
 Cet article répertorie les nouvelles fonctionnalités de la dernière version de Microsoft Defender pour Office 365. Les fonctionnalités actuellement en aperçu sont signalées par (préversion **)**.
 
 > [!TIP]
 > Vous n’avez pas encore Microsoft Defender pour Office 365 ? [Contactez le service commercial pour commencer une version d’évaluation](https://go.microsoft.com/fwlink/p/?LinkId=518644).
+
+## <a name="november-2020"></a>Novembre 2020 
+
+- Mise à jour des limites d’exportation dans Review > Centre d’action > correction à partir de l’envoi de messages et du journal des actions (Defender pour Office 365 plan 2)
 
 ## <a name="septemberoctober-2020"></a>Septembre/octobre 2020 
 
@@ -75,11 +79,11 @@ Cet article répertorie les nouvelles fonctionnalités de la dernière version d
 
 - [Exporter l’URL cliquez sur données pour une analyse hors connexion](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (Microsoft Defender pour Office 365 plan 1 ou plan 2)
 
-- [Utiliser les vues de campagne dans Microsoft Defender pour office 365 (version d' **évaluation** )](campaigns.md) (Microsoft Defender pour Office 365 plan 2)
+- [Utiliser les vues de campagne dans Microsoft Defender pour office 365 (version d'**évaluation**)](campaigns.md) (Microsoft Defender pour Office 365 plan 2)
 
 ## <a name="november-2019"></a>Novembre 2019
 
-- Découvrez les [nouvelles fonctionnalités de détection et de réponse de l’utilisateur compromis](address-compromised-users-quickly.md) ( **Aperçu** ) (Microsoft Defender pour Office 365 plan 2)
+- Découvrez les [nouvelles fonctionnalités de détection et de réponse de l’utilisateur compromis](address-compromised-users-quickly.md) (**Aperçu**) (Microsoft Defender pour Office 365 plan 2)
 
 ## <a name="september-2019"></a>Septembre 2019
 
@@ -101,7 +105,7 @@ Cet article répertorie les nouvelles fonctionnalités de la dernière version d
 
 - [Affichez les données sur les URL d’hameçonnage et cliquez sur verdict](threat-explorer.md#view-data-about-phishing-urls-and-click-verdict) (Microsoft Defender pour Office 365 plan 1 ou plan 2)
 
-## <a name="microsoft-defender-for-office-365-plan-1-and-plan-2"></a>Microsoft Defender pour Office 365 plan 1 et plan 2
+## <a name="microsoft-defender-for-office-365-plan-1-and-plan-2"></a>Microsoft Defender pour Office 365 Plan 1 et Plan 2
 
 Saviez-vous que Microsoft Defender pour Office 365 est disponible dans deux plans ? [En savoir plus sur ce que chaque plan inclut](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2).
 
