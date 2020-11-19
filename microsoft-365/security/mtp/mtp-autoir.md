@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.date: 09/16/2020
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: d17bd49206bcdef9f60a4873c642179165753887
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 2b8872288291adc0b9fc5e1c1541f885711df230
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843683"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49356702"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Recherche et réponse automatisées dans Microsoft 365 Defender
 
@@ -34,7 +34,10 @@ ms.locfileid: "48843683"
 
 
 **S’applique à :**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
+
+> Vous souhaitez découvrir Microsoft 365 Defender ? Vous pouvez l' [évaluer dans un environnement de laboratoire](https://aka.ms/mtp-trial-lab) ou [exécuter votre projet pilote en production](https://aka.ms/m365d-pilotplaybook).
+>
 
 À mesure que des alertes de sécurité sont déclenchées, c’est à votre équipe chargée des opérations de sécurité d’examiner ces alertes et de prendre des mesures pour protéger votre organisation. La hiérarchisation et l’examen des alertes peuvent prendre beaucoup de temps, en particulier lorsque de nouvelles alertes continuent d’arriver pendant qu’un examen est en cours. Les équipes en charge des opérations de sécurité peuvent être submergées par le volume des menaces qu’elles doivent gérer. Les fonctionnalités d’analyse et de réponse automatisées, avec autoréparation, dans Microsoft 365 Defender peuvent vous aider.
 
@@ -69,10 +72,10 @@ Une alerte déclenchée crée un incident, qui peut lancer une enquête automati
 
 |Entités |Services de protection contre les menaces  |
 |---------|---------|
-|Appareils (également appelés points de terminaison)     |[Microsoft Defender pour point de terminaison](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)<br/>[Microsoft Defender pour l’identité](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) |      
-|Contenu de l’e-mail (fichiers et messages dans les boîtes aux lettres)     |[Microsoft Defender pour Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)         |
+|Appareils (également appelés points de terminaison)     |[Microsoft Defender pour point de terminaison](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)<br/>[Microsoft Defender pour identité](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) |      
+|Contenu de l’e-mail (fichiers et messages dans les boîtes aux lettres)     |[Microsoft Defender pour Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)         |
 
-Chaque enquête génère des verdicts ( *malveillants* , *suspects* ou *aucune menace détectée* ) pour chaque preuve examinée. Selon le type de menace et le verdict résultant, les actions de correction se produisent automatiquement ou après approbation de l’équipe des opérations de sécurité de votre organisation. Les actions en attente et achevées sont répertoriées dans le [Centre de notifications](mtp-action-center.md).
+Chaque enquête génère des verdicts (*malveillants*, *suspects* ou *aucune menace détectée*) pour chaque preuve examinée. Selon le type de menace et le verdict résultant, les actions de correction se produisent automatiquement ou après approbation de l’équipe des opérations de sécurité de votre organisation. Les actions en attente et achevées sont répertoriées dans le [Centre de notifications](mtp-action-center.md).
 
 Pendant l’exécution d’un examen, les autres alertes associées qui apparaissent sont ajoutées à l’examen jusqu’à la fin de l’opération. Si une entité suspecte est détectée ailleurs, l’examen automatisée s’étend pour inclure cette entité, et un manuel de sécurité général s’exécute. 
 

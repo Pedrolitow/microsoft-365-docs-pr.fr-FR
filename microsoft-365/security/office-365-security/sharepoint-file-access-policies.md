@@ -17,18 +17,18 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: 653bd90fb68eb42423d5f32633736bba4b5943b4
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: 7e8104e234bd1b724bc62fb1a9b401ab83a2bcb4
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464311"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357526"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>Recommandations de stratégie pour sécuriser les sites et les fichiers SharePoint
 
 Cet article explique comment implémenter les stratégies d’identité et d’accès aux appareils recommandées pour protéger SharePoint et OneDrive entreprise. Ce guide s’appuie sur les [stratégies courantes d’identité et d’accès aux appareils](identity-access-policies.md).
 
-Ces recommandations sont basées sur trois niveaux de sécurité et de protection pour les fichiers SharePoint qui peuvent être appliqués en fonction de la granularité de vos besoins : **ligne de base**, **sensibles**et **hautement réglementés**. Pour en savoir plus sur ces niveaux de sécurité et sur les systèmes d’exploitation clients recommandés, ces recommandations sont indiquées dans [la vue d’ensemble](microsoft-365-policies-configurations.md).
+Ces recommandations sont basées sur trois niveaux de sécurité et de protection pour les fichiers SharePoint qui peuvent être appliqués en fonction de la granularité de vos besoins : **ligne de base**, **sensibles** et **hautement réglementés**. Pour en savoir plus sur ces niveaux de sécurité et sur les systèmes d’exploitation clients recommandés, ces recommandations sont indiquées dans [la vue d’ensemble](microsoft-365-policies-configurations.md).
 
 En plus de mettre en œuvre ces instructions, veillez à configurer les sites SharePoint avec le bon niveau de protection, notamment en définissant les autorisations appropriées pour le contenu sensible et hautement réglementé.
 
@@ -46,18 +46,19 @@ Les nouvelles stratégies mettent en œuvre la protection des appareils pour le 
 
 Le tableau suivant répertorie les stratégies dont vous avez besoin pour vérifier et mettre à jour ou créer des éléments pour SharePoint. Les stratégies courantes lient aux instructions de configuration associées dans l’article [Common Identity and Device Access Policies](identity-access-policies.md) .
 
-|Niveau de protection|Stratégies|Informations supplémentaires|
-|:---------------|:-------|:----------------|
+|Niveau de protection|Stratégies|Plus d’informations|
+|---|---|---|
 |**Baseline**|[Exiger l’authentification multifacteur lorsque le risque de connexion est *moyen* ou *élevé*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Incluez SharePoint dans l’affectation d’applications Cloud.|
-|        |[Bloquer les clients ne prenant pas en charge l’authentification moderne](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Incluez SharePoint dans l’affectation d’applications Cloud.|
-|        |[Appliquer des stratégies de protection des données d’application](identity-access-policies.md#apply-app-data-protection-policies)|Assurez-vous que toutes les applications recommandées sont incluses dans la liste des applications. Veillez à mettre à jour la stratégie pour chaque plateforme (iOS, Android, Windows).|
-|        |[Exiger des PC conformes](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Incluez SharePoint dans la liste des applications Cloud.|
-|        |[Utiliser des restrictions appliquées par l’application dans SharePoint](#use-app-enforced-restrictions-in-sharepoint)|Ajoutez cette nouvelle stratégie. Cette option indique à Azure Active Directory (Azure AD) d’utiliser les paramètres spécifiés dans SharePoint. Cette stratégie s’applique à tous les utilisateurs, mais elle affecte uniquement l’accès aux sites inclus dans les stratégies d’accès SharePoint.|
+||[Bloquer les clients ne prenant pas en charge l’authentification moderne](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Incluez SharePoint dans l’affectation d’applications Cloud.|
+||[Appliquer des stratégies de protection des données d’application](identity-access-policies.md#apply-app-data-protection-policies)|Assurez-vous que toutes les applications recommandées sont incluses dans la liste des applications. Veillez à mettre à jour la stratégie pour chaque plateforme (iOS, Android, Windows).|
+||[Exiger des PC conformes](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Incluez SharePoint dans la liste des applications Cloud.|
+||[Utiliser des restrictions appliquées par l’application dans SharePoint](#use-app-enforced-restrictions-in-sharepoint)|Ajoutez cette nouvelle stratégie. Cette option indique à Azure Active Directory (Azure AD) d’utiliser les paramètres spécifiés dans SharePoint. Cette stratégie s’applique à tous les utilisateurs, mais elle affecte uniquement l’accès aux sites inclus dans les stratégies d’accès SharePoint.|
 |**Sensible**|[Exiger l’authentification multifacteur lorsque le risque de connexion est *faible*, *moyen* ou *élevé*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Incluez SharePoint dans les affectations d’applications Cloud.|
-|         |[Exiger des PC conformes *et des* appareils mobiles](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Incluez SharePoint dans la liste des applications Cloud.|
+||[Exiger des PC conformes *et des* appareils mobiles](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Incluez SharePoint dans la liste des applications Cloud.|
 ||[Stratégie de contrôle d’accès SharePoint](#sharepoint-access-control-policies): autoriser uniquement le navigateur à accéder à des sites SharePoint spécifiques à partir d’appareils non gérés.|Cela empêche la modification et le téléchargement de fichiers. Utiliser PowerShell pour spécifier des sites.|
 |**Hautement réglementé**|[*Toujours* exiger l’authentification multifacteur](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Incluez SharePoint dans l’affectation d’applications Cloud.|
 ||[Stratégie de contrôle d’accès SharePoint](#use-app-enforced-restrictions-in-sharepoint): bloquer l’accès à des sites SharePoint spécifiques à partir d’appareils non gérés.|Utiliser PowerShell pour spécifier des sites.|
+|
 
 ## <a name="use-app-enforced-restrictions-in-sharepoint"></a>Utiliser des restrictions appliquées par l’application dans SharePoint
 
@@ -98,4 +99,3 @@ Configurez les stratégies d’accès conditionnel pour :
 
 - [Microsoft Teams](teams-access-policies.md)
 - [Exchange Online](secure-email-recommended-policies.md)
-

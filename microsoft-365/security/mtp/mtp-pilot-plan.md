@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-scenario
 - m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: 4420342f964564305bb113c45ee0e3107f8a822e
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 649f3e777a330e1b60faf4f3513a470b51e56a80
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49130980"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49356978"
 ---
 # <a name="planning-your-pilot-microsoft-365-defender-project"></a>Planification de votre projet pilote Microsoft 365 Defender 
 
@@ -88,8 +88,8 @@ Une façon de rassembler tous les éléments de votre plan peut consister à cr�
 | Cas d’utilisation | Configuration requise | Configuration requise | Plan de test | Résultat attendu | État du test | Niveau | Notes |
 |:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
 |Gestion des incidents|-Microsoft 365 Defender  </br></br>-Microsoft Defender pour l’identité </br></br>-Microsoft Defender pour le point de terminaison </br></br>-Sécurité des applications Cloud Microsoft (facultatif)|Voir les [conditions préalables](https://aka.ms/mtp-trial-lab) pour la préparation, l’installation et la configuration pour plus de détails |[Simuler une attaque](mtp-pilot-simulate.md) <br></br>[Examen de l’incident](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#investigate-an-incident) |Les investigateurs peuvent comprendre l’étendue et l’impact de l’incident et gérer l’incident.||||
-|AutoIR|-Microsoft 365 Defender </br></br>-Microsoft Defender pour l’identité </br></br>-Microsoft Defender pour le point de terminaison |Voir les [conditions préalables](https://aka.ms/mtp-trial-lab) pour la préparation, l’installation et la configuration pour plus de détails <br>Activer AutoIR  |[Simuler une attaque](mtp-pilot-simulate.md) <br></br>[Enquête automatisée](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#automated-investigation-and-remediation) |Les alertes et les incidents sont automatiquement résolus par Microsoft 365 Defender||||
-|Repérage avancé|-Microsoft 365 Defender </br></br>-Microsoft Defender pour le point de terminaison </br></br>-Microsoft Defender pour Office 365 |Voir les [conditions préalables](https://aka.ms/mtp-trial-lab) pour la préparation, l’installation et la configuration pour plus de détails|[Scénario de chasse avancé](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#advanced-hunting-scenario) |Les investigateurs peuvent trouver des données par le biais d’une recherche avancée, d’un pivotement vers des entités affectées et en créant des détections personnalisées.||||
+|AutoIR|-Microsoft 365 Defender </br></br>-Microsoft Defender pour l’identité </br></br>-Microsoft Defender pour le point de terminaison |Voir les [conditions préalables](https://aka.ms/mtp-trial-lab) pour la préparation, l’installation et la configuration pour plus de détails <br>Activer AutoIR  |[Simuler une attaque](mtp-pilot-simulate.md) <br></br>[Enquête automatisée](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#automated-investigation-and-remediation) |Les alertes et les incidents sont automatiquement résolus par Microsoft 365 Defender||||
+|Repérage avancé|-Microsoft 365 Defender </br></br>-Microsoft Defender pour le point de terminaison </br></br>-Microsoft Defender pour Office 365 |Voir les [conditions préalables](https://aka.ms/mtp-trial-lab) pour la préparation, l’installation et la configuration pour plus de détails|[Scénario de chasse avancé](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#advanced-hunting-scenario) |Les investigateurs peuvent trouver des données par le biais d’une recherche avancée, d’un pivotement vers des entités affectées et en créant des détections personnalisées.||||
 
 
 

@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: e5ac3e9a02c333d3168c328aa6ad5532c48af99e
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 6149b6f128b3c96d2338e325caa8df835c292b13
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846687"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357610"
 ---
 # <a name="incidents-overview-in-microsoft-365-defender"></a>Présentation des incidents dans Microsoft 365 Defender
 
@@ -34,8 +34,10 @@ ms.locfileid: "48846687"
 
 
 **S’applique à :**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
+> Vous souhaitez découvrir Microsoft 365 Defender ? Vous pouvez l' [évaluer dans un environnement de laboratoire](https://aka.ms/mtp-trial-lab) ou [exécuter votre projet pilote en production](https://aka.ms/m365d-pilotplaybook).
+>
 
 
 Les incidents sont basés sur les alertes associées. Elles sont créées lorsqu’un événement ou une activité malveillante est détecté sur votre réseau. Les alertes individuelles fournissent des indices précieux sur une attaque en cours. Toutefois, les attaques utilisent généralement plusieurs vecteurs et techniques pour effectuer une violation. Piecing les indices individuels peuvent être difficiles et longs.

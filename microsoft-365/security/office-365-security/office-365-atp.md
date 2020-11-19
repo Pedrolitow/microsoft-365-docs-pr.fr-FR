@@ -20,12 +20,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft Defender pour Office 365 inclut des pièces jointes sécurisées, des liens fiables, des outils anti-hameçonnage avancés, des outils de création de rapports et des fonctionnalités d’intelligence contre les menaces.
-ms.openlocfilehash: c102948ff66a6362a1adb60734629b79e7eb7ad5
-ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
+ms.openlocfilehash: 11b6445e17fc870c2999ddb56715b0c5cee5b5fc
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49021108"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357706"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender pour Office 365
 
@@ -43,26 +43,26 @@ Microsoft Defender pour Office 365 protège votre organisation contre les mena
 
 - **[Fonctionnalités de recherche et de réponse aux menaces](#use-threat-investigation-and-response-capabilities)**  : utilisez des outils de pointe pour étudier, comprendre, simuler et prévenir les menaces.
 
-- **[Fonctionnalités automatisées d’enquête et de réponse](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)**  : économisez du temps et des efforts pour investiguer et atténuer les menaces.
+- **[Fonctionnalités automatisées d’enquête et de réponse](office-365-air.md)**  : économisez du temps et des efforts pour investiguer et atténuer les menaces.
 
 ## <a name="getting-started"></a>Prise en main
 
-Si vous débutez sur Microsoft Defender pour Office 365 ou si vous apprenez mieux par la *pratique* , vous pouvez être amené à interrompre la configuration de Defender pour Office 365 initiale en bloc, en examinant et en affichant des rapports à l’aide de cet article comme référence. Voici quelques blocs logiques de configuration précoce :
+Si vous débutez sur Microsoft Defender pour Office 365 ou si vous apprenez mieux par la *pratique*, vous pouvez être amené à interrompre la configuration de Defender pour Office 365 initiale en bloc, en examinant et en affichant des rapports à l’aide de cet article comme référence. Voici quelques blocs logiques de configuration précoce :
 
-- Configurez tous les éléments à l’aide de la fonctionnalité « *anti* » dans le nom.
-    - anti-programme malveillant
-    - anti-hameçonnage
-    - anti-spam
-- Configurez tous les éléments avec « *Fiable* » dans le nom.
-    - Liens fiables
-    - pièces jointes fiables
-- Protégez les charges de travail (par exemple, SharePoint Online, OneDrive et Teams) 
+- Configurez tous les éléments à l’aide de la fonctionnalité «*anti*» dans le nom.
+  - anti-programme malveillant
+  - anti-hameçonnage
+  - anti-spam
+- Configurez tous les éléments avec «*Fiable*» dans le nom.
+  - Liens fiables
+  - pièces jointes fiables
+- Protégez les charges de travail (par exemple, SharePoint Online, OneDrive et Teams)
 - Protéger avec la purge automatique Zero-Hour
 
-Pour savoir comment procéder, [cliquez sur ce lien](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide&preserve-view=true). 
+Pour savoir comment procéder, [cliquez sur ce lien](protect-against-threats.md).
 
 > [!NOTE]
-> Microsoft Defender pour Office 365 est disponible en deux types de plans différents. Vous pouvez déterminer si vous avez le **Plan 1** si vous avez des détections en temps réel, et le **Plan 2** , si vous avez l’Explorateur de menaces. Le plan que vous avez influence les outils que vous verrez, alors soyez certain que vous êtes conscient de votre plan au fur et à mesure que vous apprenez.
+> Microsoft Defender pour Office 365 est disponible en deux types de plans différents. Vous pouvez déterminer si vous avez le **Plan 1** si vous avez des détections en temps réel, et le **Plan 2**, si vous avez l’Explorateur de menaces. Le plan que vous avez influence les outils que vous verrez, alors soyez certain que vous êtes conscient de votre plan au fur et à mesure que vous apprenez.
 
 ## <a name="microsoft-defender-for-office-365-plan-1-and-plan-2"></a>Microsoft Defender pour Office 365 Plan 1 et Plan 2
 
@@ -72,7 +72,7 @@ Le tableau suivant récapitule les actions incluent dans chaque plan.
 
 |Microsoft Defender pour Office 365 Plan 1|Microsoft Defender pour Office 365 Plan 2|
 |---|---|
-|<br/>Fonctionnalités de configuration, de protection et de détection : <ul><li>[Pièces jointes fiables](atp-safe-attachments.md)</li><li>[Liens fiables](atp-safe-links.md)</li><li>[ATP pour SharePoint, OneDrive et Microsoft Teams](atp-for-spo-odb-and-teams.md)</li><li>[Anti-hameçonnage dans la protection de Defender pour Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[Détections en temps réel](threat-explorer.md)</li></ul>|Fonctionnalités de Microsoft Defender pour Office 365 Plan 1<br/>--- plus ---<br/>Fonctionnalités d’automatisation, d’examen, de correction et de formation :</li><li>[Suivi des menaces](threat-trackers.md)</li><li>[Threat Explorer](threat-explorer.md)</li><li>[Examen et réponse automatisés](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)</li><li>[Simulateur d’attaques](attack-simulator.md)</li></ul>|
+|<br/>Fonctionnalités de configuration, de protection et de détection : <ul><li>[Pièces jointes fiables](atp-safe-attachments.md)</li><li>[Liens fiables](atp-safe-links.md)</li><li>[ATP pour SharePoint, OneDrive et Microsoft Teams](atp-for-spo-odb-and-teams.md)</li><li>[Anti-hameçonnage dans la protection de Defender pour Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[Détections en temps réel](threat-explorer.md)</li></ul>|Fonctionnalités de Microsoft Defender pour Office 365 Plan 1<br/>--- plus ---<br/>Fonctionnalités d’automatisation, d’examen, de correction et de formation :</li><li>[Suivi des menaces](threat-trackers.md)</li><li>[Threat Explorer](threat-explorer.md)</li><li>[Examen et réponse automatisés](office-365-air.md)</li><li>[Simulateur d’attaques](attack-simulator.md)</li></ul>|
 |
 
 - Microsoft Defender pour Office 365 Plan 2 est inclus dans Office 365 E5, Office 365 A5, Microsoft 365 E5 Securité et Microsoft 365 E5.
@@ -132,7 +132,7 @@ Microsoft Defender pour Office 365 Plan 2 inclut les meilleurs [outils d’ex
 
 ## <a name="save-time-with-automated-investigation-and-response"></a>Gagner du temps avec l’examen et la réponse automatisé
 
-( **NOUVEAU !** ) Lorsque vous effectuez des recherches sur une attaque potentielle de sécurité sur Internet, le temps est essentiel. Plus vous pourrez identifier et atténuer les menaces rapidement, mieux votre organisation se portera. [Examen et réponse automatique aux incidents](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) (AIR) inclut un ensemble de règles de sécurité qui peuvent être lancées automatiquement, par exemple lorsqu’une alerte est déclenchée, ou manuellement, par exemple à partir d’un affichage dans Explorer. Réponse automatique aux incidents permet à votre équipe spécialisée dans les opérations de sécurité d’économiser du temps et des efforts pour réduire efficacement les menaces. Pour en savoir plus, voir [Air dans Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air).
+(**NOUVEAU !**) Lorsque vous effectuez des recherches sur une attaque potentielle de sécurité sur Internet, le temps est essentiel. Plus vous pourrez identifier et atténuer les menaces rapidement, mieux votre organisation se portera. [Examen et réponse automatique aux incidents](office-365-air.md) (AIR) inclut un ensemble de règles de sécurité qui peuvent être lancées automatiquement, par exemple lorsqu’une alerte est déclenchée, ou manuellement, par exemple à partir d’un affichage dans Explorer. Réponse automatique aux incidents permet à votre équipe spécialisée dans les opérations de sécurité d’économiser du temps et des efforts pour réduire efficacement les menaces. Pour en savoir plus, voir [Air dans Office 365](office-365-air.md).
 
 ## <a name="permissions-required-to-use-microsoft-defender-for-office-365-features"></a>Autorisations requises pour utiliser les fonctionnalités de Microsoft Defender pour Office 365
 

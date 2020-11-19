@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: En savoir plus sur le paramètre sécurisé par défaut dans Exchange Online Protection (EOP)
-ms.openlocfilehash: 9f676dcd89f0322792bd40e06879b9758082d94e
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 23c0cad2b96b3a2002f235db7739b903cf862366
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49131096"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357862"
 ---
 # <a name="secure-by-default-in-office-365"></a>Sécurité par défaut dans Office 365
 
@@ -47,7 +47,7 @@ Les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Onlin
 - Expéditeurs approuvés Outlook
 - Liste d’adresses IP autorisées (filtrage des connexions)
 
-Vous trouverez plus d’informations sur ces substitutions dans la [liste créer des listes d’expéditeurs approuvés](https://docs.microsoft.com/microsoft-365/security/office-365-security/create-safe-sender-lists-in-office-365).
+Vous trouverez plus d’informations sur ces substitutions dans la [liste créer des listes d’expéditeurs approuvés](create-safe-sender-lists-in-office-365.md).
 
 Sécurisé par défaut il ne s’agit pas d’un paramètre qui peut être activé ou désactivé, mais de la façon dont notre filtrage fonctionne de la manière à ce que les messages potentiellement dangereux ou indésirables soient conservés de vos boîtes aux lettres. Les logiciels malveillants et le hameçonnage à haut niveau de fiabilité doivent être mis en quarantaine. Seuls les administrateurs peuvent gérer les messages mis en quarantaine en tant que programmes malveillants ou hameçonnage à haut niveau de confiance, et ils peuvent également signaler des faux positifs à Microsoft à partir de là. Pour plus d’informations, consultez la rubrique [gestion des messages et des fichiers mis en quarantaine en tant qu’administrateur dans EOP](manage-quarantined-messages-and-files.md) .
 

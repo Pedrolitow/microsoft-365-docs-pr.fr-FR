@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Découvrez les vues de campagne dans Microsoft Defender pour Office 365.
-ms.openlocfilehash: 1e5754e077d4c1b8f685b5dea1f8a59985e08a13
-ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
+ms.openlocfilehash: 82dbccabe4917b8b90f67456fbac1c673bad3286
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "48948480"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357658"
 ---
 # <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Vues de campagne dans Microsoft Defender pour Office 365
 
@@ -45,9 +45,9 @@ Une campagne est une attaque par e-mail coordonné contre une ou plusieurs organ
 Microsoft exploite les grandes quantités de données anti-hameçonnage, de blocage du courrier indésirable et anti-programme malveillant dans l’ensemble du service afin d’identifier les campagnes. Nous analysons et classifions les informations d’attaque en fonction de plusieurs facteurs. Par exemple :
 
 - **Source** de l’attaque : les adresses IP source et les domaines de messagerie de l’expéditeur.
-- **Propriétés de message** : le contenu, le style et la tonalité des messages.
-- **Destinataires du message** : relation entre les destinataires. Par exemple, les domaines de destinataire, les fonctions de destinataire (administrateurs, cadres, etc.), les types de sociétés (grande, petite, publique, privée, etc.) et les industries.
-- **Charge utile d’attaque** : liens malveillants, pièces jointes ou autres charges utiles dans les messages.
+- **Propriétés de message**: le contenu, le style et la tonalité des messages.
+- **Destinataires du message**: relation entre les destinataires. Par exemple, les domaines de destinataire, les fonctions de destinataire (administrateurs, cadres, etc.), les types de sociétés (grande, petite, publique, privée, etc.) et les industries.
+- **Charge utile d’attaque**: liens malveillants, pièces jointes ou autres charges utiles dans les messages.
 
 Une campagne peut être à courte durée de vie ou peut s’étendre sur plusieurs jours, semaines ou mois avec des périodes actives et inactives. Une campagne peut être lancée par rapport à votre organisation, ou votre organisation peut faire partie d’une campagne plus importante sur plusieurs sociétés.
 
@@ -64,7 +64,7 @@ Vous pouvez également accéder aux vues de campagne à partir de :
 - **Gestion** \> des menaces **Explorateur** \> **Affichage** \> **Hameçonnage** \> Onglet **campagne**
 - **Gestion** \> des menaces **Explorateur** \> **Affichage** \> **Programmes malveillants** \> Onglet **campagne**
 
-Pour accéder aux vues de campagne, vous devez être membre des groupes de rôles gestion de l' **organisation** , administrateur de la **sécurité** ou **lecteur de sécurité** dans le centre de sécurité & Compliance Center. Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
+Pour accéder aux vues de campagne, vous devez être membre des groupes de rôles gestion de l' **organisation**, administrateur de la **sécurité** ou **lecteur de sécurité** dans le centre de sécurité & Compliance Center. Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="campaigns-overview"></a>Vue d’ensemble des campagnes
 
@@ -79,25 +79,25 @@ Le reste de la page vue d’ensemble affiche les informations suivantes dans l�
 
 - **Nom**
 
-- **Exemple d’objet**  : la ligne d’objet de l’un des messages de la campagne. Notez que tous les messages de la campagne n’auront pas nécessairement le même objet.
+- **Exemple d’objet** : la ligne d’objet de l’un des messages de la campagne. Notez que tous les messages de la campagne n’auront pas nécessairement le même objet.
 
-- **Ciblé** : pourcentage tel que calculé par : (nombre de destinataires de campagne dans votre organisation)/(nombre total de destinataires dans la campagne pour toutes les organisations du service). Cette valeur indique le degré auquel la campagne est dirigée uniquement au sein de votre organisation (valeur la plus élevée) par rapport à d’autres organisations du service (une valeur inférieure).
+- **Ciblé**: pourcentage tel que calculé par : (nombre de destinataires de campagne dans votre organisation)/(nombre total de destinataires dans la campagne pour toutes les organisations du service). Cette valeur indique le degré auquel la campagne est dirigée uniquement au sein de votre organisation (valeur la plus élevée) par rapport à d’autres organisations du service (une valeur inférieure).
 
-- **Type** : cette valeur est **hameçonnage** ou **programme malveillant**.
+- **Type**: cette valeur est **hameçonnage** ou **programme malveillant**.
 
-- **Sous-type** : cette valeur contient davantage de détails sur la campagne. Par exemple :
-  - **Hameçonnage** : le cas échéant, la marque qui est en hameçonnage par cette campagne. Par exemple,,,, `Microsoft` `365` `Unknown` `Outlook` ou `DocuSign` .
-  - **Programme malveillant** : par exemple, `HTML/PHISH` ou `HTML/<MalwareFamilyName>` .
+- **Sous-type**: cette valeur contient davantage de détails sur la campagne. Par exemple :
+  - **Hameçonnage**: le cas échéant, la marque qui est en hameçonnage par cette campagne. Par exemple,,,, `Microsoft` `365` `Unknown` `Outlook` ou `DocuSign` .
+  - **Programme malveillant**: par exemple, `HTML/PHISH` ou `HTML/<MalwareFamilyName>` .
 
   Le cas échéant, la marque en cours d’hameçonnage par cette campagne. Lorsque la détection est contrôlée par la technologie Defender pour Office 365, le préfixe **ATP** est ajouté à la valeur de sous-type.
 
 - **Destinataires** : nombre d’utilisateurs qui ont été ciblés par cette campagne.
 
-- **Boîte de réception** : nombre d’utilisateurs ayant reçu des messages de cette campagne dans leur boîte de réception (non remis dans leur dossier courrier indésirable).
+- **Boîte de réception**: nombre d’utilisateurs ayant reçu des messages de cette campagne dans leur boîte de réception (non remis dans leur dossier courrier indésirable).
 
-- **Clic** : nombre d’utilisateurs sur lesquels l’utilisateur a cliqué sur l’URL ou pour ouvrir la pièce jointe dans le message de hameçonnage.
+- **Clic**: nombre d’utilisateurs sur lesquels l’utilisateur a cliqué sur l’URL ou pour ouvrir la pièce jointe dans le message de hameçonnage.
 
-- **Cliquez sur taux** : pourcentage tel que calculé par « boîte de réception sur laquelle l' **utilisateur a cliqué**  /  **Inboxed** ». Cette valeur est un indicateur de l’efficacité de la campagne. En d’autres termes, si les destinataires pouvaient identifier le message en tant qu’hameçonnage, et s’ils ne cliquaient pas sur l’URL de la charge utile.
+- **Cliquez sur taux**: pourcentage tel que calculé par « boîte de réception sur laquelle l'**utilisateur a cliqué**  /  **Inboxed**». Cette valeur est un indicateur de l’efficacité de la campagne. En d’autres termes, si les destinataires pouvaient identifier le message en tant qu’hameçonnage, et s’ils ne cliquaient pas sur l’URL de la charge utile.
 
   Notez que le **taux de clic** n’est pas utilisé dans les campagnes de programmes malveillants.
 
@@ -117,8 +117,8 @@ Pour filtrer davantage l’affichage, vous pouvez effectuer une seule propriét�
 
 Les propriétés de campagne filtrables disponibles dans le bouton **type de campagne** sont décrites dans la liste suivante :
 
-- De **base** :
-  - **Type de campagne** : sélectionnez **programme malveillant** ou **hameçonnage**. L’effacement des sélections a le même résultat que la sélection des deux.
+- De **base**:
+  - **Type de campagne**: sélectionnez **programme malveillant** ou **hameçonnage**. L’effacement des sélections a le même résultat que la sélection des deux.
   - **Nom de la campagne**
   - **Sous-type de campagne**
   - **Expéditeur**
@@ -127,7 +127,7 @@ Les propriétés de campagne filtrables disponibles dans le bouton **type de cam
   - **Subject**
   - **Nom de fichier des pièces jointes**
   - **Famille de programmes malveillants**
-  - **Balises** : utilisateurs ou groupes auxquels la balise utilisateur spécifiée a été appliquée (y compris les comptes prioritaires). Pour plus d’informations sur les balises utilisateur, voir [User Tags](user-tags.md).
+  - **Balises**: utilisateurs ou groupes auxquels la balise utilisateur spécifiée a été appliquée (y compris les comptes prioritaires). Pour plus d’informations sur les balises utilisateur, voir [User Tags](user-tags.md).
   - **Substitutions système**
   - **Action de remise**
   - **Action supplémentaire**
@@ -137,16 +137,16 @@ Les propriétés de campagne filtrables disponibles dans le bouton **type de cam
   - **Dernier emplacement de remise**
   - **Substitutions système**
 
-- **Avancé** :
-  - **ID de message Internet** : disponible dans le champ d’en-tête **message-ID** de l’en-tête du message. Un exemple de valeur est `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (Notez les chevrons).
-  - **ID de message réseau** : valeur Guid disponible dans le champ d’en-tête **X-MS-Exchange-Organization-Network-message-ID** de l’en-tête du message.
+- **Avancé**:
+  - **ID de message Internet**: disponible dans le champ d’en-tête **message-ID** de l’en-tête du message. Un exemple de valeur est `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (Notez les chevrons).
+  - **ID de message réseau**: valeur Guid disponible dans le champ d’en-tête **X-MS-Exchange-Organization-Network-message-ID** de l’en-tête du message.
   - **IP de l’expéditeur**
-  - **Attachment SHA256** : pour trouver la valeur de hachage SHA256 d’un fichier dans Windows, exécutez la commande suivante dans une invite de commandes : `certutil.exe -hashfile "<Path>\<Filename>" SHA256` .
+  - **Attachment SHA256**: pour trouver la valeur de hachage SHA256 d’un fichier dans Windows, exécutez la commande suivante dans une invite de commandes : `certutil.exe -hashfile "<Path>\<Filename>" SHA256` .
   - **ID de cluster**
   - **ID de stratégie d’alerte**
   - **Le signal d’URL ZAP**
 
-- **URL** :
+- **URL**:
   - **Domaine d’URL**
   - **Domaine et chemin d’accès de l’URL**
   - **URL**
@@ -165,7 +165,7 @@ Une fois que vous avez créé un filtre de base ou avancé, vous pouvez l’enre
 
 Pour exporter le graphique ou la liste des campagnes, cliquez sur **Exporter** , puis sélectionnez **Exporter les données du graphique** ou exporter la liste des **campagnes**.
 
-Si vous disposez d’un abonnement Microsoft Defender pour le point de terminaison, vous pouvez cliquer sur **WDATP** pour connecter ou déconnecter les informations sur les campagnes avec Microsoft Defender pour le point de terminaison. Pour plus d’informations, reportez-vous à l' [intégration de Microsoft Defender pour Office 365 à Microsoft Defender for Endpoint](https://docs.microsoft.com/microsoft-365/security/office-365-security/integrate-office-365-ti-with-wdatp).
+Si vous disposez d’un abonnement Microsoft Defender pour le point de terminaison, vous pouvez cliquer sur **WDATP** pour connecter ou déconnecter les informations sur les campagnes avec Microsoft Defender pour le point de terminaison. Pour plus d’informations, reportez-vous à l' [intégration de Microsoft Defender pour Office 365 à Microsoft Defender for Endpoint](integrate-office-365-ti-with-wdatp.md).
 
 ## <a name="campaign-details"></a>Détails de la campagne
 
@@ -175,17 +175,17 @@ Lorsque vous cliquez sur le nom d’une campagne, les détails de la campagne s�
 
 En haut de la vue Détails de la campagne, les informations de campagne suivantes sont disponibles :
 
-- **ID** : identificateur unique de la campagne.
+- **ID**: identificateur unique de la campagne.
 
-- **Démarré** et **terminé** : date de début et date de fin de la campagne. Notez que ces dates peuvent s’étendre davantage que vos dates de filtrage sélectionnées sur la page de vue d’ensemble.
+- **Démarré** et **terminé**: date de début et date de fin de la campagne. Notez que ces dates peuvent s’étendre davantage que vos dates de filtrage sélectionnées sur la page de vue d’ensemble.
 
-- **Impact** : cette section contient les données suivantes pour le filtre de plage de dates que vous avez sélectionné (ou que vous sélectionnez dans la chronologie) :
+- **Impact**: cette section contient les données suivantes pour le filtre de plage de dates que vous avez sélectionné (ou que vous sélectionnez dans la chronologie) :
   - Nombre total de destinataires.
   - Nombre de messages qui ont reçu la boîte de réception (c’est-à-dire remis dans la boîte de réception, et non dans le dossier courrier indésirable).
   - Le nombre d’utilisateurs sur lesquels l’utilisateur a cliqué dans le message de hameçonnage.
   - Howe nombre d’utilisateurs visitaient l’URL.
 
-- **Ciblé** : pourcentage tel que calculé par : (nombre de destinataires de campagne dans votre organisation)/(nombre total de destinataires dans la campagne pour toutes les organisations du service). Notez que cette valeur est calculée sur toute la durée de vie de la campagne et ne change pas en fonction des filtres de date.
+- **Ciblé**: pourcentage tel que calculé par : (nombre de destinataires de campagne dans votre organisation)/(nombre total de destinataires dans la campagne pour toutes les organisations du service). Notez que cette valeur est calculée sur toute la durée de vie de la campagne et ne change pas en fonction des filtres de date.
 
 - Chronologie interactive de l’activité de campagne : la chronologie affiche l’activité sur toute la durée de vie de la campagne. Par défaut, la zone ombrée inclut le filtre de plage de dates que vous avez sélectionné dans la vue d’ensemble. Vous pouvez cliquer et faire glisser pour sélectionner un point de départ et un point de terminaison spécifiques, ce <u>qui modifiera les données affichées dans la zone d' **impact** , et sur le reste de la page, comme décrit dans les sections suivantes</u>.
 
@@ -208,13 +208,13 @@ Le diagramme contient les informations suivantes :
 
 - **Adresses IP de l’expéditeur**
 - **Domaines de l’expéditeur**
-- Valeurs de **verdict du filtre** : les valeurs de verdict sont liées aux valeurs de filtrage d’hameçonnage et de filtrage du courrier indésirable disponibles, comme décrit dans [les en-têtes de message anti-courrier indésirable](anti-spam-message-headers.md). Les valeurs disponibles sont décrites dans le tableau suivant :
+- Valeurs de **verdict du filtre**: les valeurs de verdict sont liées aux valeurs de filtrage d’hameçonnage et de filtrage du courrier indésirable disponibles, comme décrit dans [les en-têtes de message anti-courrier indésirable](anti-spam-message-headers.md). Les valeurs disponibles sont décrites dans le tableau suivant :
 
   ****
 
   |Valeur|Verdict du filtre de courrier indésirable|Description|
   |---|---|---|
-  |**Autorisé**|`SFV:SKN` <br/><br/> `SFV:SKI`|Le message a été marqué comme n’étant pas un courrier indésirable et/ou a ignoré le filtrage avant d’être évalué par le filtrage du courrier indésirable. Par exemple, le message a été marqué comme n’étant pas un courrier indésirable par une règle de flux de messagerie (également appelée règle de transport).<br/><br/>Le message a ignoré le filtrage du courrier indésirable pour d’autres raisons. Par exemple, l’expéditeur et le destinataire semblent être dans la même organisation.|
+  |**Autorisé**|`SFV:SKN` <p> `SFV:SKI`|Le message a été marqué comme n’étant pas un courrier indésirable et/ou a ignoré le filtrage avant d’être évalué par le filtrage du courrier indésirable. Par exemple, le message a été marqué comme n’étant pas un courrier indésirable par une règle de flux de messagerie (également appelée règle de transport). <p> Le message a ignoré le filtrage du courrier indésirable pour d’autres raisons. Par exemple, l’expéditeur et le destinataire semblent être dans la même organisation.|
   |**Bloqué**|`SFV:SKS`|Le message a été marqué comme courrier indésirable avant d’être évalué par le filtrage du courrier indésirable. Par exemple, par une règle de flux de messagerie.|
   |**Détecté**|`SFV:SPM`|Le message a été marqué comme courrier indésirable par le filtrage du courrier indésirable.|
   |**Non détecté**|`SFV:NSPM`|Le message a été marqué comme non courrier indésirable par le filtrage du courrier indésirable.|
@@ -230,10 +230,10 @@ Le diagramme contient les informations suivantes :
 
   <sup>\*\*</sup> Examinez vos stratégies de blocage du courrier indésirable, car ces messages doivent être mis en quarantaine et non remis.
 
-- **Emplacements de remise** : vous souhaiterez probablement analyser les messages remis aux destinataires (dans la boîte de réception ou le dossier courrier indésirable), même si les utilisateurs ne cliquaient pas sur l’URL de la charge utile dans le message. Vous pouvez également supprimer les messages mis en quarantaine en quarantaine. Pour plus d’informations, consultez la rubrique [messages électroniques mis en quarantaine dans EOP](quarantine-email-messages.md).
+- **Emplacements de remise**: vous souhaiterez probablement analyser les messages remis aux destinataires (dans la boîte de réception ou le dossier courrier indésirable), même si les utilisateurs ne cliquaient pas sur l’URL de la charge utile dans le message. Vous pouvez également supprimer les messages mis en quarantaine en quarantaine. Pour plus d’informations, consultez la rubrique [messages électroniques mis en quarantaine dans EOP](quarantine-email-messages.md).
   - **Dossier supprimé**
   - **Raccroché**
-  - **External** : le destinataire est situé dans votre organisation de messagerie locale dans les environnements hybrides.
+  - **External**: le destinataire est situé dans votre organisation de messagerie locale dans les environnements hybrides.
   - **Échec**
   - **Renvoyé**
   - **Boîte de réception**
@@ -241,7 +241,7 @@ Le diagramme contient les informations suivantes :
   - **Mise en quarantaine**
   - **Unknown**
 
-- **Clics sur l’URL** : ces valeurs sont décrites dans la section suivante.
+- **Clics sur l’URL**: ces valeurs sont décrites dans la section suivante.
 
 > [!NOTE]
 > Dans toutes les couches contenant plus de 10 éléments, les 10 premiers éléments sont affichés, tandis que les autres sont regroupés dans les **autres**.
@@ -253,10 +253,10 @@ Lorsqu’un message d’hameçonnage est remis dans le dossier boîte de récept
 Si un utilisateur a cliqué sur l’URL de la charge utile dans le message d’hameçonnage, les actions sont affichées dans la zone de **clics sur l’URL** du diagramme dans la vue Détails de la campagne.
 
 - **Autorisé**
-- **BlockPage** : le destinataire a cliqué sur l’URL de charge utile, mais son accès au site Web malveillant a été bloqué par une stratégie de [liens fiables](atp-safe-links.md) dans votre organisation.
-- **BlockPageOverride** : le destinataire a cliqué sur l’URL de charge utile dans le message, les liens fiables ont essayé de les arrêter, mais ils ont été autorisés à remplacer le bloc. Inspectez vos [stratégies de liens fiables](set-up-atp-safe-links-policies.md) afin de déterminer pourquoi les utilisateurs sont autorisés à remplacer le verdict des liens fiables et à passer au site Web malveillant.
-- **PendingDetonationPage** : les pièces jointes fiables dans Microsoft Defender pour Office 365 sont en cours d’ouverture et d’étude de l’URL de charge utile dans un environnement d’ordinateur virtuel.
-- **PendingDetonationPageOverride** : le destinataire a été autorisé à remplacer le processus de détonation de charge utile et à ouvrir l’URL sans attendre les résultats.
+- **BlockPage**: le destinataire a cliqué sur l’URL de charge utile, mais son accès au site Web malveillant a été bloqué par une stratégie de [liens fiables](atp-safe-links.md) dans votre organisation.
+- **BlockPageOverride**: le destinataire a cliqué sur l’URL de charge utile dans le message, les liens fiables ont essayé de les arrêter, mais ils ont été autorisés à remplacer le bloc. Inspectez vos [stratégies de liens fiables](set-up-atp-safe-links-policies.md) afin de déterminer pourquoi les utilisateurs sont autorisés à remplacer le verdict des liens fiables et à passer au site Web malveillant.
+- **PendingDetonationPage**: les pièces jointes fiables dans Microsoft Defender pour Office 365 sont en cours d’ouverture et d’étude de l’URL de charge utile dans un environnement d’ordinateur virtuel.
+- **PendingDetonationPageOverride**: le destinataire a été autorisé à remplacer le processus de détonation de charge utile et à ouvrir l’URL sans attendre les résultats.
 
 ### <a name="tabs"></a>Onglets
 
@@ -276,15 +276,15 @@ Les onglets de la vue Détails de la campagne vous permettent d’approfondir la
   - **Nombre total**
   - **Boîte de réception**
   - **Pas de boîte de réception**
-  - **SPF transmis** : l’expéditeur a été authentifié par [Sender Policy Framework (SPF)](how-office-365-uses-spf-to-prevent-spoofing.md). Un expéditeur qui ne passe pas la validation SPF indique un expéditeur non authentifié ou le message usurpe l’identité d’un expéditeur légitime.
+  - **SPF transmis**: l’expéditeur a été authentifié par [Sender Policy Framework (SPF)](how-office-365-uses-spf-to-prevent-spoofing.md). Un expéditeur qui ne passe pas la validation SPF indique un expéditeur non authentifié ou le message usurpe l’identité d’un expéditeur légitime.
 
 - **Expéditeurs**
-  - **Expéditeur** : il s’agit de l’adresse de l’expéditeur réelle dans la commande SMTP Mail from, qui n’est pas nécessairement l’adresse de messagerie de l’expéditeur que les utilisateurs voient dans leurs clients de messagerie.
+  - **Expéditeur**: il s’agit de l’adresse de l’expéditeur réelle dans la commande SMTP Mail from, qui n’est pas nécessairement l’adresse de messagerie de l’expéditeur que les utilisateurs voient dans leurs clients de messagerie.
   - **Nombre total**
   - **Boîte de réception**
   - **Pas de boîte de réception**
-  - **DKIM transmis** : l’expéditeur a été authentifié par des [clés de domaine identifiées par des clés de domaine (DKIM)](support-for-validation-of-dkim-signed-messages.md). Un expéditeur qui ne passe pas la validation DKIM indique un expéditeur non authentifié ou le message usurpe l’identité d’un expéditeur légitime.
-  - **DMARC réussi** : l’expéditeur a été authentifié par [l’authentification de message basée sur un domaine, la création de rapports et la conformité (DMARC)](use-dmarc-to-validate-email.md). Un expéditeur qui ne passe pas la validation DMARC indique un expéditeur non authentifié ou le message usurpe l’identité d’un expéditeur légitime.
+  - **DKIM transmis**: l’expéditeur a été authentifié par des [clés de domaine identifiées par des clés de domaine (DKIM)](support-for-validation-of-dkim-signed-messages.md). Un expéditeur qui ne passe pas la validation DKIM indique un expéditeur non authentifié ou le message usurpe l’identité d’un expéditeur légitime.
+  - **DMARC réussi**: l’expéditeur a été authentifié par [l’authentification de message basée sur un domaine, la création de rapports et la conformité (DMARC)](use-dmarc-to-validate-email.md). Un expéditeur qui ne passe pas la validation DMARC indique un expéditeur non authentifié ou le message usurpe l’identité d’un expéditeur légitime.
 
 - **Attachments**
   - **Filename**
@@ -302,5 +302,5 @@ Les onglets de la vue Détails de la campagne vous permettent d’approfondir la
 
 Les boutons de la vue Détails de la campagne vous permettent d’utiliser le Power Explorer pour approfondir l’examen de la campagne.
 
-- **Explorer la campagne** : ouvre un nouvel onglet de recherche de l’Explorateur de menaces à l’aide de la valeur **ID de campagne** comme filtre de recherche.
+- **Explorer la campagne**: ouvre un nouvel onglet de recherche de l’Explorateur de menaces à l’aide de la valeur **ID de campagne** comme filtre de recherche.
 - **Explorer les messages** de la boîte de réception : ouvre un nouvel onglet de recherche de l’Explorateur de menaces à l’aide de l' **ID de campagne** et de l' **emplacement de remise : boîte de réception** comme filtre de recherche.

@@ -18,18 +18,18 @@ ms.collection:
 - remotework
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: c8a1609bed124789229c6ae6d1f80b7d9c70bb66
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: f2d3b9180ad5ab58e92812ed7b2d4f7ba07e2971
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646810"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357108"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Recommandations de stratégies pour sécuriser les e-mails
 
 Cet article explique comment implémenter les stratégies d’identité et d’accès aux appareils recommandées pour protéger les clients de messagerie et de messagerie de l’organisation qui prennent en charge l’authentification moderne et l’accès conditionnel. Ce guide s’appuie sur les [stratégies courantes d’identité et d’accès aux appareils](identity-access-policies.md) et présente également quelques recommandations supplémentaires.
 
-Ces recommandations sont basées sur trois niveaux de sécurité et de protection différents, qui peuvent être appliqués en fonction de la granularité de vos besoins : **ligne de base**, **sensibles**et **hautement réglementés**. Vous trouverez plus d’informations sur ces niveaux de sécurité et les systèmes d’exploitation clients recommandés auxquels cet article fait référence dans la [présentation des configurations et des stratégies de sécurité recommandées](microsoft-365-policies-configurations.md).
+Ces recommandations sont basées sur trois niveaux de sécurité et de protection différents, qui peuvent être appliqués en fonction de la granularité de vos besoins : **ligne de base**, **sensibles** et **hautement réglementés**. Vous trouverez plus d’informations sur ces niveaux de sécurité et les systèmes d’exploitation clients recommandés auxquels cet article fait référence dans la [présentation des configurations et des stratégies de sécurité recommandées](microsoft-365-policies-configurations.md).
 
 Ces recommandations nécessitent que vos utilisateurs utilisent des clients de messagerie modernes, notamment Outlook pour iOS et Android sur des appareils mobiles. Outlook pour iOS et Android prend en charge les meilleures fonctionnalités d’Office 365. Ces applications Outlook mobiles sont également conçues avec des fonctionnalités de sécurité qui prennent en charge l’utilisation mobile et fonctionnent conjointement avec d’autres fonctionnalités de sécurité Cloud Microsoft. Pour plus d’informations, consultez la rubrique [Outlook pour iOS et Android Forum aux questions](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-faq).
 
@@ -45,17 +45,18 @@ Notez l’ajout d’une nouvelle stratégie pour Exchange Online afin de bloquer
 
 Si vous avez inclus Exchange Online et Outlook dans l’étendue des stratégies lors de leur configuration, il vous suffit de créer la nouvelle stratégie pour bloquer les clients ActiveSync. Passez en revue les stratégies répertoriées dans le tableau suivant et effectuez les ajouts recommandés, ou confirmez que ceux-ci sont déjà inclus. Chaque stratégie lie les instructions de configuration associées dans les [stratégies courantes d’accès aux identités et aux appareils](identity-access-policies.md).
 
-|Niveau de protection|Stratégies|Informations supplémentaires|
-|:---------------|:-------|:----------------|
+|Niveau de protection|Stratégies|Plus d’informations|
+|---|---|---|
 |**Baseline**|[Exiger l’authentification multifacteur lorsque le risque de connexion est *moyen* ou *élevé*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Inclure Exchange Online dans l’affectation d’applications Cloud|
-|        |[Bloquer les clients ne prenant pas en charge l’authentification moderne](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Inclure Exchange Online dans l’affectation d’applications Cloud|
-|        |[Appliquer des stratégies de protection des données d’application](identity-access-policies.md#apply-app-data-protection-policies)|Assurez-vous qu’Outlook est inclus dans la liste des applications. Veillez à mettre à jour la stratégie pour chaque plateforme (iOS, Android, Windows)|
-|        |[Exiger les applications approuvées et la protection des applications](identity-access-policies.md#require-approved-apps-and-app-protection)|Inclure Exchange Online dans la liste des applications Cloud|
-|        |[Exiger des PC conformes](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Inclure Exchange Online dans la liste des applications Cloud|
-|        |[Bloquer les clients ActiveSync](#block-activesync-clients)|Ajouter cette nouvelle stratégie| 
-|**Sensible**|[Exiger l’authentification multifacteur lorsque le risque de connexion est *faible*, *moyen* ou *élevé*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)| Inclure Exchange Online dans l’affectation d’applications Cloud|
-|         |[Exiger des PC conformes *et des* appareils mobiles](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Inclure Exchange Online dans la liste des applications Cloud|
+||[Bloquer les clients ne prenant pas en charge l’authentification moderne](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Inclure Exchange Online dans l’affectation d’applications Cloud|
+||[Appliquer des stratégies de protection des données d’application](identity-access-policies.md#apply-app-data-protection-policies)|Assurez-vous qu’Outlook est inclus dans la liste des applications. Veillez à mettre à jour la stratégie pour chaque plateforme (iOS, Android, Windows)|
+||[Exiger les applications approuvées et la protection des applications](identity-access-policies.md#require-approved-apps-and-app-protection)|Inclure Exchange Online dans la liste des applications Cloud|
+||[Exiger des PC conformes](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Inclure Exchange Online dans la liste des applications Cloud|
+||[Bloquer les clients ActiveSync](#block-activesync-clients)|Ajouter cette nouvelle stratégie|
+|**Sensible**|[Exiger l’authentification multifacteur lorsque le risque de connexion est *faible*, *moyen* ou *élevé*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Inclure Exchange Online dans l’affectation d’applications Cloud|
+||[Exiger des PC conformes *et des* appareils mobiles](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Inclure Exchange Online dans la liste des applications Cloud|
 |**Hautement réglementé**|[*Toujours* exiger l’authentification multifacteur](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Inclure Exchange Online dans l’affectation d’applications Cloud|
+|
 
 ## <a name="block-activesync-clients"></a>Bloquer les clients ActiveSync
 
@@ -85,20 +86,19 @@ Voici les étapes à effectuer :
    Set-OwaMailboxPolicy -Identity Default -ConditionalAccessPolicy ReadOnlyPlusAttachmentsBlocked
    ```
 
-4. Dans le portail Azure, créez une stratégie d’accès conditionnel avec ces paramètres :
+5. Dans le portail Azure, créez une stratégie d’accès conditionnel avec ces paramètres :
 
-   **Affectations > des utilisateurs et des groupes**: sélectionnez les utilisateurs et les groupes appropriés à inclure et à exclure.
+   **Affectations** \> **Utilisateurs et groupes**: sélectionnez les utilisateurs et les groupes appropriés à inclure et à exclure.
 
-   Les **affectations > les applications Cloud ou les actions > applications cloud > incluent > sélectionner des applications**: sélectionnez **Office 365 Exchange Online**
+   **Affectations** \> Actions ou applications **Cloud** \> **Applications Cloud** \> **Inclure** \> **Sélectionnez applications**: sélectionnez **Office 365 Exchange Online**
 
-   **Contrôles d’accès > session**: sélectionner **utiliser des restrictions** appliquées aux applications
+   **Contrôles** \> d’accès **Session**: sélectionnez **utiliser les restrictions** appliquées aux applications
 
 ## <a name="require-that-ios-and-android-devices-must-use-outlook"></a>Exiger que les appareils iOS et Android doivent utiliser Outlook
 
 Pour vous assurer que les utilisateurs des appareils iOS et Android peuvent uniquement accéder au contenu professionnel ou scolaire à l’aide d’Outlook pour iOS et Android, vous avez besoin d’une stratégie d’accès conditionnel ciblant ces utilisateurs potentiels.
 
 Consultez les étapes de configuration de cette stratégie dans [Manage Messaging Messaging Access by using Outlook for iOS and Android]( https://docs.microsoft.com/mem/intune/apps/app-configuration-policies-outlook#apply-conditional-access).
-
 
 ## <a name="set-up-message-encryption"></a>Configurer le chiffrement des messages
 

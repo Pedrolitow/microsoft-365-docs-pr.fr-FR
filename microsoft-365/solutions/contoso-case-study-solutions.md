@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: Comment une multinationale fictive mais représentative a déployé des solutions Microsoft 365.
-ms.openlocfilehash: 8ee25baa9c412e51de7d70e35662d03d1c148369
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 8ba1661a2a4257409b7622b6d78dca4bcd103929
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46521636"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357694"
 ---
 # <a name="microsoft-365-solutions-for-the-contoso-corporation"></a>Solutions Microsoft 365 pour Contoso Corporation
 
@@ -31,6 +31,8 @@ L’objectif global de Contoso pour Microsoft 365 Entreprise est d’accélérer
 D’abord, découvrez la société [Contoso Corporation](../enterprise/contoso-overview.md), ses bureaux dans le monde et les considérations de conception qui ont été adressées lorsqu’elle a déployé Microsoft 365 Entreprise.
 
 Découvrez ensuite comment Contoso a utilisé Microsoft 365 pour ces solutions et scénarios :
+
+- [Réponse et infrastructure liées à la COVID-19 pour les employés hybrides](contoso-hybrid-workforce.md)
 
 - [Une équipe isolée pour un projet top secret](contoso-team-for-top-secret-project.md)
 

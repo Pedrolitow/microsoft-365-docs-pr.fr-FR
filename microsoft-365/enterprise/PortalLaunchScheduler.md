@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: Cet article explique comment lancer votre portail à l’aide du planificateur de lancement de portail
-ms.openlocfilehash: a7a007fdd95638109830a8e3689232060f2b9d8b
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: e5e5850fa7e74f3e3b342e9bb28d17f65b491664
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123582"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49356666"
 ---
 # <a name="launch-your-portal-using-the-portal-launch-scheduler"></a>Lancer votre portail à l’aide du planificateur de lancement du portail
 
@@ -34,7 +34,7 @@ Il existe deux types de redirection :
 - bidirectionnel : lancer un nouveau portail SharePoint Online moderne pour remplacer un portail classique ou moderne SharePoint existant 
 - redirection temporaire des pages : lancer un nouveau portail SharePoint Online moderne sans portail SharePoint existant
 
-Le planificateur de lancement du portail est uniquement disponible pour lancer des portails SharePoint Online modernes, comme les sites de communication et les sites d’équipe modernes. Les lancements doivent être planifiés au moins 7 jours à l’avance. Le nombre d’ondes requises est déterminé par le nombre d’utilisateurs attendu. Avant de planifier le lancement d’un portail, l' [outil Diagnostics de la page pour SharePoint](https://aka.ms/perftool) doit être exécuté pour vérifier que la page d’accueil du portail est intègre. À la fin du lancement du portail, tous les utilisateurs disposant d’autorisations sur le site seront en mesure d’accéder au nouveau site. 
+Le planificateur de lancement de portail est disponible uniquement pour lancer des portails SharePoint Online modernes (c’est-à-dire des sites de communication). Les lancements doivent être planifiés au moins 7 jours à l’avance. Le nombre d’ondes requises est déterminé par le nombre d’utilisateurs attendu. Avant de planifier le lancement d’un portail, l' [outil Diagnostics de la page pour SharePoint](https://aka.ms/perftool) doit être exécuté pour vérifier que la page d’accueil du portail est intègre. À la fin du lancement du portail, tous les utilisateurs disposant d’autorisations sur le site seront en mesure d’accéder au nouveau site. 
 
 Pour plus d’informations sur le lancement d’un portail réussi, suivez les principes de base, les pratiques et les recommandations détaillés dans [Creating, lancement and Maintaining a successful Portal](https://docs.microsoft.com/sharepoint/portal-health). 
 
@@ -66,9 +66,11 @@ Le nombre d’ondes requises dépend de la taille de lancement attendue.
 - 30k + 100 000 utilisateurs : 5 ondulations
 - Plus de 100 000 utilisateurs : 5 ondulations et contacter votre équipe de compte Microsoft
 
-### <a name="steps-for-bi-directional-redirection"></a>Étapes de la redirection bidirectionnelle
+### <a name="steps-for-bidirectional-redirection"></a>Étapes de la redirection bidirectionnelle
 
-La redirection bidirectionnelle implique le lancement d’un nouveau portail SharePoint Online moderne pour remplacer un portail classique ou moderne SharePoint existant. Les utilisateurs des ondes actives seront redirigés vers le nouveau site, qu’ils naviguaient vers l’ancien ou le nouveau site. Les utilisateurs d’une vague non lancée qui tentent d’accéder au nouveau site sont redirigés vers l’ancien site jusqu’à ce que leur vague soit lancée. Si vous avez des administrateurs ou des propriétaires qui ont besoin d’accéder aux anciens et aux nouveaux sites sans être redirigés, vérifiez qu’ils sont répertoriés à l’aide du `WaveOverrideUsers` paramètre. 
+La redirection bidirectionnelle implique le lancement d’un nouveau portail SharePoint Online moderne pour remplacer un portail classique ou moderne SharePoint existant. Les utilisateurs des ondes actives seront redirigés vers le nouveau site, qu’ils naviguaient vers l’ancien ou le nouveau site. Les utilisateurs d’une vague non lancée qui tentent d’accéder au nouveau site sont redirigés vers l’ancien site jusqu’à ce que leur vague soit lancée. 
+
+Si vous avez des administrateurs ou des propriétaires qui ont besoin d’accéder aux anciens et aux nouveaux sites sans être redirigés, vérifiez qu’ils sont répertoriés à l’aide du `WaveOverrideUsers` paramètre. Nous prenons uniquement en charge la redirection entre la page d’accueil par défaut sur l’ancien site et la page d’accueil par défaut sur le nouveau site.
 
 Pour migrer des utilisateurs à partir d’un site SharePoint existant vers un nouveau site SharePoint de manière intermédiaire :
 

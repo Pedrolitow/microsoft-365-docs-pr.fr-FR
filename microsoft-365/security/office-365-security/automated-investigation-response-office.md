@@ -21,12 +21,12 @@ description: Découvrez comment fonctionnent les fonctionnalités d’analyse et
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: 039cca2f6f61d7c82f8c3e85f1fd147a68f84b68
-ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
+ms.openlocfilehash: b901585f0a25c51c377e974c56faffe560eab5f3
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "48948432"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357670"
 ---
 # <a name="how-automated-investigation-and-response-works-in-microsoft-defender-for-office-365"></a>Fonctionnement de l’analyse et de la réponse automatiques dans Microsoft Defender pour Office 365
 
@@ -91,10 +91,10 @@ Les fonctionnalités AIR de Microsoft Defender pour Office 365 incluent des [rap
 
 Par exemple, une organisation a récemment mis en place un moyen pour l’équipe des opérations de sécurité d’afficher les alertes de hameçonnage signalées par l’utilisateur et déjà traitées par AIR. Leur solution intègre les alertes appropriées avec le serveur SIEM de l’organisation et son système de gestion de la casse. La solution réduit considérablement le nombre de faux positifs afin que l’équipe des opérations de sécurité puisse concentrer leur temps et leur efforts sur des menaces réelles. Pour en savoir plus sur cette solution personnalisée, consultez [le blog de la communauté technique : améliorer l’efficacité de votre SOC avec Microsoft Defender pour Office 365 et l’API de gestion d’Office 365](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185).
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 - [Prise en main de l’utilisation de l’AIR](office-365-air.md)
 
 - [Consultez la feuille de route Microsoft 365 pour voir ce qui est planifié et publié bientôt](https://www.microsoft.com/microsoft-365/roadmap?filters=)
 
-- [En savoir plus sur les fonctionnalités d’analyse et de réponse automatisées dans Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir?view=o365-worldwide&preserve-view=true)
+- [En savoir plus sur les fonctionnalités d’analyse et de réponse automatisées dans Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)

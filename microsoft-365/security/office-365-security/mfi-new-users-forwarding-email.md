@@ -11,12 +11,12 @@ ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: ''
 description: Les administrateurs peuvent apprendre à utiliser les nouveaux utilisateurs pour transférer des courriers électroniques dans le centre de sécurité & conformité afin de déterminer quand les utilisateurs de leur organisation acheminent les messages vers de nouveaux domaines.
-ms.openlocfilehash: af66a84efbd4c0b8f1ccdacf4b71d1caca1c3929
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: 22bbd762b221fae151a489aa1e9485dfc7baf06a
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877524"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357272"
 ---
 # <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a>Les nouveaux utilisateurs transférant des courriers électroniques dans le centre de sécurité & conformité
 
@@ -25,7 +25,7 @@ ms.locfileid: "48877524"
 
 Il est suspect lorsque les nouveaux comptes d’utilisateur dans votre organisation commencent soudainement à transférer les messages électroniques vers des domaines externes.
 
-Les **nouveaux domaines en cours de transmission de courrier électronique** dans le [centre de sécurité & de conformité](https://protection.office.com) vous avertit lorsque des utilisateurs nouvellement créés dans votre organisation acheminent des messages vers des domaines externes. Cette condition peut indiquer que des comptes d’administrateur compromis ont été utilisés pour créer les nouveaux utilisateurs. Si vous pensez que les comptes ont été compromis, consultez la rubrique relative [à la réponse à un compte de courrier compromis](https://docs.microsoft.com/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account).
+Les **nouveaux domaines en cours de transmission de courrier électronique** dans le [centre de sécurité & de conformité](https://protection.office.com) vous avertit lorsque des utilisateurs nouvellement créés dans votre organisation acheminent des messages vers des domaines externes. Cette condition peut indiquer que des comptes d’administrateur compromis ont été utilisés pour créer les nouveaux utilisateurs. Si vous pensez que les comptes ont été compromis, consultez la rubrique relative [à la réponse à un compte de courrier compromis](responding-to-a-compromised-email-account.md).
 
 Cette vue s’affiche uniquement lorsque le problème est détecté et qu’il apparaît sur la page [rapport de transfert](view-mail-flow-reports.md#forwarding-report) .
 
@@ -59,11 +59,11 @@ Ce rapport n’est pas disponible directement dans le [tableau de bord de flux d
 
 Les graphiques suivants sont disponibles dans l’affichage rapport :
 
-- **Afficher les données pour : nouveaux utilisateurs de transfert** :
+- **Afficher les données pour : nouveaux utilisateurs de transfert**:
 
   ![Nouvel affichage des utilisateurs de transfert dans le rapport des modifications de transfert](../../media/forwarding-modifications-report-new-forwarding-users.png)
 
-- **Afficher les données pour : nouveaux domaines de transfert** :
+- **Afficher les données pour : nouveaux domaines de transfert**:
 
   ![Nouvelle vue Domains transférées dans le rapport des modifications de transfert](../../media/forwarding-modifications-report-new-forwarded-domains.png)
 
@@ -71,20 +71,20 @@ Si vous cliquez sur **filtres** dans un affichage de rapport, vous pouvez spéci
 
 ### <a name="details-table-view-for-the-forwarding-modifications-report"></a>Vue de la table Détails pour le rapport des modifications de transfert
 
-Si vous cliquez sur **afficher les détails table** , les informations affichées dépendent du graphique que vous examinez :
+Si vous cliquez sur **afficher les détails table**, les informations affichées dépendent du graphique que vous examinez :
 
-- **Afficher les données pour : nouveaux utilisateurs de transfert** :
+- **Afficher les données pour : nouveaux utilisateurs de transfert**:
 
-  - **Name** : adresse de messagerie de l’expéditeur.
+  - **Name**: adresse de messagerie de l’expéditeur.
   - **Type de transfert**
   - **Adresse du destinataire**
   - **Details**
   - **Count**
   - **Première date de transfert**
 
-- **Afficher les données pour : nouveaux domaines de transfert** :
+- **Afficher les données pour : nouveaux domaines de transfert**:
 
-  - **Name** : domaine de messagerie de l’expéditeur.
+  - **Name**: domaine de messagerie de l’expéditeur.
   - **Type de transfert**
   - **Adresse du destinataire**
   - **Details**
@@ -95,18 +95,18 @@ Si vous cliquez sur **filtres** dans un affichage tableau détaillé, vous pouve
 
 Si vous sélectionnez une ligne dans le tableau, une fenêtre volante de **Détails** s’affiche avec les informations suivantes :
 
-- **Name** : il s’agit de l’adresse de messagerie de l’expéditeur (de l’affichage des **données pour : nouvelle** vue des utilisateurs de transfert) ou du domaine de messagerie de l’expéditeur (de l’affichage des **données pour : nouvelle** vue des domaines de transfert).
+- **Name**: il s’agit de l’adresse de messagerie de l’expéditeur (de l’affichage des **données pour : nouvelle** vue des utilisateurs de transfert) ou du domaine de messagerie de l’expéditeur (de l’affichage des **données pour : nouvelle** vue des domaines de transfert).
 - **Type de transfert**
 - **Destinataire**
 - **Details**
 - **Count**
 - **Date de début**
-- **Recommandation** : à partir de là, vous pouvez cliquer sur le lien pour gérer l’utilisateur dans le centre d’administration 365 de Microsoft.
+- **Recommandation**: à partir de là, vous pouvez cliquer sur le lien pour gérer l’utilisateur dans le centre d’administration 365 de Microsoft.
 
 ![Fenêtre mobile détails à partir de la table Détails de la vue nouveaux utilisateurs de transfert dans le rapport des modifications de transfert](../../media/mfi-forwarding-modifications-report-new-forwarding-users-view-details-table-details.png)
 
 Pour revenir à l’affichage rapports, cliquez sur **afficher le rapport**.
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 Pour plus d’informations sur les autres informations du tableau de bord de flux de messagerie, consultez [la rubrique mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).

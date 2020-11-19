@@ -14,21 +14,23 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: b88a06a61f1f7664f9c2e39ceba09df427f97454
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 824864ffd69a1f885c56a55957fc369fec4f640a
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844691"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357296"
 ---
 # <a name="top-scoring-in-industry-tests"></a>Score le plus élevé dans les tests d’industrie
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
+> Vous souhaitez découvrir Microsoft 365 Defender ? Vous pouvez l' [évaluer dans un environnement de laboratoire](https://aka.ms/mtp-trial-lab) ou [exécuter votre projet pilote en production](https://aka.ms/m365d-pilotplaybook).
+>
 
 [Microsoft 365 Defender](https://www.microsoft.com/security/business/threat-protection/integrated-threat-protection) technologies réalisent régulièrement des scores élevés dans des tests indépendants, ce qui illustre la puissance de ses fonctionnalités de protection contre les menaces d’entreprise. Microsoft a pour objectif d’être transparent à propos de ces notes d’examens. Cette page résume les résultats et fournit une analyse.
 
-## <a name="microsoft-365-defender"></a>Microsoft 365 Defender
+## <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
 [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) est une suite de défense d’entreprise pré-et post-violation unifiée. Elle coordonne de façon native la détection, la prévention, l’enquête et la réponse au-delà des points de terminaison, des identités, de la messagerie et des applications pour fournir une protection intégrée contre les attaques sophistiquées.
 

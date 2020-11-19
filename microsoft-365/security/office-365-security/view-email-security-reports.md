@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez comment rechercher et utiliser des rapports de sécurité de messagerie pour votre organisation. Les rapports de sécurité de messagerie sont disponibles dans le centre de sécurité & conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1b2fd7a18589932d56ea39722b48462d2a6eac2f
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 038f310d8690652a3aefb2eab5ac01f76986d210
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49131200"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357934"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Afficher les rapports de sécurité de courrier dans le centre de sécurité et conformité
 
@@ -479,7 +479,7 @@ Le **rapport URL protection contre les menaces** est disponible dans Microsoft D
 
 ## <a name="user-reported-messages-report"></a>Rapport sur les messages signalés par l’utilisateur
 
-Le rapport **messages signalés** par l’utilisateur affiche des informations sur les messages électroniques que les utilisateurs ont signalés comme courriers indésirables, tentatives de hameçonnage ou courrier électronique à l’aide du [complément de message de rapport](https://docs.microsoft.com/microsoft-365/security/office-365-security/enable-the-report-message-add-in).
+Le rapport **messages signalés** par l’utilisateur affiche des informations sur les messages électroniques que les utilisateurs ont signalés comme courriers indésirables, tentatives de hameçonnage ou courrier électronique à l’aide du [complément de message de rapport](enable-the-report-message-add-in.md).
 
 Des détails sont disponibles pour chaque message, notamment la raison de remise, une exception de stratégie de courrier indésirable ou une règle de flux de messagerie configurée pour votre organisation. Pour afficher les détails, sélectionnez un élément dans la liste rapports utilisateur, puis affichez les informations sous les onglets **Résumé** et **Détails** .
 
@@ -504,7 +504,7 @@ Pour afficher et utiliser les rapports, vous devez être membre du groupe de rô
 
   -Gestion de l’organisation-administrateur de la sécurité (vous pouvez également le faire dans le [Centre d’administration Azure Active Directory](https://aad.portal.azure.com) -lecteur de sécurité
 
-  Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
+  Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
 
 - Dans Exchange Online, vous devez être membre de l’un des groupes de rôles suivants :
 

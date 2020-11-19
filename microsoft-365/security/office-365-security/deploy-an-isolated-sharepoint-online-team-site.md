@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: Utilisez ce guide de déploiement étape par étape pour créer et configurer un site d’équipe SharePoint Online isolé dans Microsoft Office 365.
-ms.openlocfilehash: f2800e74149e79e5c3f0444799f454ab8b3caf69
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: f9e8482238c7da4d10b6299b0f8a997734edbb13
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203130"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49356906"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>Déploiement d’un site d’équipe SharePoint Online isolé
 
@@ -112,7 +112,7 @@ Si vous gérez des comptes d’utilisateur et des groupes via Office 365, vous p
   
 Pour le centre d’administration Microsoft 365, connectez-vous à l’aide d’un compte d’utilisateur auquel a été attribué le rôle administrateur de compte d’utilisateur ou administrateur de société et utilisez des groupes pour ajouter les comptes d’utilisateur et les groupes d’utilisateurs appropriés aux groupes d’accès appropriés.
   
-Pour PowerShell, [Connectez-vous d’abord avec le module Azure Active Directory PowerShell pour Graph](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell?view=o365-worldwide#connect-with-the-azure-active-directory-powershell-for-graph-module).
+Pour PowerShell, [Connectez-vous d’abord avec le module Azure Active Directory PowerShell pour Graph](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).
   
 Ensuite, utilisez le bloc de commandes suivant pour ajouter un compte d’utilisateur individuel à un groupe d’accès :
   
@@ -194,7 +194,7 @@ Ensuite, dans le nouveau site d’équipe SharePoint Online, configurez les aut
     
 6. Dans le volet **autorisations** , cliquez sur **paramètres d’autorisations avancés**.
     
-7. Dans l’onglet **autorisations** de votre navigateur, cliquez sur ** \<site name> membres** de la liste.
+7. Dans l’onglet **autorisations** de votre navigateur, cliquez sur **\<site name> membres** de la liste.
     
 8. Dans **Utilisateurs et groupes**, cliquez sur **Nouveau**.
     
@@ -202,7 +202,7 @@ Ensuite, dans le nouveau site d’équipe SharePoint Online, configurez les aut
     
 10. Cliquez sur le bouton de retour de votre navigateur.
     
-11. Cliquez sur ** \<site name> propriétaires** dans la liste.
+11. Cliquez sur **\<site name> propriétaires** dans la liste.
     
 12. Dans **Utilisateurs et groupes**, cliquez sur **Nouveau**.
     
@@ -210,7 +210,7 @@ Ensuite, dans le nouveau site d’équipe SharePoint Online, configurez les aut
     
 14. Cliquez sur le bouton de retour de votre navigateur.
     
-15. Cliquez sur ** \<site name> visiteurs** de la liste.
+15. Cliquez sur **\<site name> visiteurs** de la liste.
     
 16. Dans **Utilisateurs et groupes**, cliquez sur **Nouveau**.
     
@@ -220,11 +220,11 @@ Ensuite, dans le nouveau site d’équipe SharePoint Online, configurez les aut
     
 Voici les résultats que vous devez escompter :
   
-- Le groupe SharePoint ** \<site name> propriétaires** contient le groupe d’accès administrateurs du site, dans lequel tous les membres ont le niveau d’autorisation **contrôle total** .
+- Le groupe SharePoint **\<site name> propriétaires** contient le groupe d’accès administrateurs du site, dans lequel tous les membres ont le niveau d’autorisation **contrôle total** .
     
-- Le groupe SharePoint ** \<site name> membres** contient le groupe d’accès membres du site, dans lequel tous les membres ont le niveau d’autorisation **modifier** .
+- Le groupe SharePoint **\<site name> membres** contient le groupe d’accès membres du site, dans lequel tous les membres ont le niveau d’autorisation **modifier** .
     
-- Le groupe SharePoint ** \<site name> visiteurs** contient le groupe d’accès visiteurs du site, dans lequel tous les membres ont le niveau d’autorisation **lecture** .
+- Le groupe SharePoint **\<site name> visiteurs** contient le groupe d’accès visiteurs du site, dans lequel tous les membres ont le niveau d’autorisation **lecture** .
     
 - L’option permettant aux membres d’inviter d’autres membres ou non membres à demander l’accès au site est désactivée.
     

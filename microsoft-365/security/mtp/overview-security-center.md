@@ -17,18 +17,19 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
-ms.openlocfilehash: 97dece3f3c732686cff885923532af14b6106b48
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 70fd278dd4cdeadd5e8911705ac3f87d981a3de0
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906839"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49356870"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Présentation du Centre de sécurité Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
+> Vous souhaitez découvrir Microsoft 365 Defender ? Vous pouvez l' [évaluer dans un environnement de laboratoire](https://aka.ms/mtp-trial-lab) ou [exécuter votre projet pilote en production](https://aka.ms/m365d-pilotplaybook).
+>
 La gestion de la sécurité de votre entreprise afin de vous protéger contre un environnement de menace en perpétuelle évolution pose de nombreux défis. Vous avez peut-être trop de solutions de sécurité avec différents emplacements pour configurer un grand nombre de contrôles. Vous pouvez éprouver des difficultés à savoir quels contrôles sont les plus efficaces et qui introduiront de nouveaux défis pour votre personnel. Il peut être difficile pour les équipes de sécurité de trouver le juste équilibre entre la sécurité et la productivité.
 
 Accédez au centre de sécurité Microsoft 365, le nouveau domicile pour la surveillance et la gestion de la sécurité dans vos identités, données, périphériques, applications et infrastructure Microsoft. Cette section vous permet d’afficher facilement l’état de la sécurité de votre organisation, de configurer des appareils, des utilisateurs et des applications, ainsi que d’obtenir des alertes pour les activités suspectes. Le centre de sécurité Microsoft 365 est destiné à aider les administrateurs de sécurité et les équipes des opérations de sécurité à gérer et à protéger leur organisation.
@@ -59,7 +60,7 @@ Le Centre de sécurité Microsoft 365 inclut les éléments suivants :
 * **Degré de sécurisation** : améliorez votre niveau de sécurité global grâce au degré de sécurisation Microsoft. Cette page fournit un résumé de tous les différentes fonctionnalités et fonctionnalités de sécurité que vous avez activées et inclut des recommandations pour les domaines à améliorer.
 * **Chasse avancée** : recherchez de façon proactive des programmes malveillants, des fichiers suspects et des activités dans votre organisation Microsoft 365.
 * **Classification** : contribue à protéger les pertes de données en ajoutant des étiquettes pour classer les documents, les messages électroniques, les documents, les sites et bien plus encore. Lorsqu’une étiquette est appliquée (automatiquement ou par l’utilisateur), le contenu ou le site est protégé en fonction des paramètres que vous choisissez. Par exemple, vous pouvez créer des étiquettes qui chiffrent les fichiers, ajouter un marquage du contenu et contrôler l’accès utilisateur aux sites spécifiques. 
-* **Stratégies** : configurez les stratégies pour gérer les appareils, protéger contre les menaces et recevoir des alertes relatives aux différentes activités de votre organisation.
+* **Stratégies**: configurez les stratégies pour gérer les appareils, protéger contre les menaces et recevoir des alertes relatives aux différentes activités de votre organisation.
 * **Autorisations** : permet de gérer les personnes de votre organisation qui ont accès à l’affichage du contenu et à l’exécution de tâches dans le centre de sécurité Microsoft 365. Vous pouvez également attribuer des autorisations Microsoft 365 dans le portail Azure AD.
 
 ## <a name="learn-more"></a>En savoir plus

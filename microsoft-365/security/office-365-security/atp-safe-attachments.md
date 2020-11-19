@@ -19,18 +19,18 @@ ms.collection:
 - m365initiative-defender-office365
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur la fonctionnalité de pièces jointes fiables dans Microsoft Defender pour Office 365.
-ms.openlocfilehash: d758db46f53be46d8213794f90bf8c462f9135e8
-ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
+ms.openlocfilehash: da3949a4520c52c7f5685efd109f8c976305ea06
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49020950"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357212"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Pièces jointes fiables dans Microsoft Defender pour Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-Les pièces jointes fiables dans [Microsoft Defender pour Office 365](office-365-atp.md) fournissent une couche supplémentaire de protection des pièces jointes qui ont déjà été analysées par la protection contre les [programmes malveillants dans Exchange Online Protection (EoP)](anti-malware-protection.md). En particulier, les pièces jointes fiables utilisent un environnement virtuel pour vérifier les pièces jointes des messages électroniques avant leur remise aux destinataires (processus appelé _détonation_ ).
+Les pièces jointes fiables dans [Microsoft Defender pour Office 365](office-365-atp.md) fournissent une couche supplémentaire de protection des pièces jointes qui ont déjà été analysées par la protection contre les [programmes malveillants dans Exchange Online Protection (EoP)](anti-malware-protection.md). En particulier, les pièces jointes fiables utilisent un environnement virtuel pour vérifier les pièces jointes des messages électroniques avant leur remise aux destinataires (processus appelé _détonation_).
 
 Protection des pièces jointes fiables pour les messages électroniques est contrôlée par les stratégies de pièces jointes fiables. Il n’existe pas de stratégie de pièces jointes approuvées par défaut, **pour obtenir la protection des pièces jointes fiables, vous devez créer une ou plusieurs stratégies de pièces jointes fiables**. Pour obtenir des instructions, consultez la rubrique [configurer des stratégies de pièces jointes fiables dans Defender pour Office 365](set-up-atp-safe-attachments-policies.md).
 
@@ -59,7 +59,7 @@ L’analyse des pièces jointes fiables a lieu dans la région où se trouvent v
 
 Cette section décrit les paramètres des stratégies de pièces jointes approuvées :
 
-- **Pièces jointes fiables réponse aux programmes malveillants inconnus** : ce paramètre contrôle l’action d’analyse anti-programme malveillant des pièces jointes fiables dans les messages électroniques. Les options disponibles sont décrites dans le tableau suivant :
+- **Pièces jointes fiables réponse aux programmes malveillants inconnus**: ce paramètre contrôle l’action d’analyse anti-programme malveillant des pièces jointes fiables dans les messages électroniques. Les options disponibles sont décrites dans le tableau suivant :
 
   ****
 
@@ -69,24 +69,24 @@ Cette section décrit les paramètres des stratégies de pièces jointes approuv
   |**Moniteur**|Remet les messages avec des pièces jointes, puis effectue le suivi de ce qui se produit avec des programmes malveillants <p> La remise de messages fiables peut être retardée en raison de l’analyse des pièces jointes approuvées.|Voir WHERE détection des programmes malveillants dans votre organisation.|
   |**Bloquer**|Empêche la remise des messages dont les pièces jointes aux programmes malveillants sont détectées. <p> Les messages sont [mis en quarantaine](manage-quarantined-messages-and-files.md) lorsque seuls les administrateurs (pas les utilisateurs finaux) peuvent consulter, publier ou supprimer les messages. <p> Bloque automatiquement les instances futures des messages et des pièces jointes. <p> La remise de messages fiables peut être retardée en raison de l’analyse des pièces jointes approuvées.|Protège votre organisation contre les attaques répétées à l’aide des mêmes pièces jointes. <p> Il s’agit de la valeur par défaut et de la valeur recommandée dans [stratégies de sécurité prédéfinies](preset-security-policies.md)standard et strict.|
   |**Replace**|Supprime les pièces jointes malveillantes détectées. <p> Avertir les destinataires que des pièces jointes ont été supprimées. <p>  Les messages sont [mis en quarantaine](manage-quarantined-messages-and-files.md) lorsque seuls les administrateurs (pas les utilisateurs finaux) peuvent consulter, publier ou supprimer les messages. <p> La remise de messages fiables peut être retardée en raison de l’analyse des pièces jointes approuvées.|Augmenter la visibilité aux destinataires pour lesquels les pièces jointes ont été supprimées en raison d’un programme malveillant détecté.|
-  |**Remise dynamique**|Remet les messages immédiatement, mais remplace les pièces jointes par des espaces réservés jusqu’à la fin de l’analyse des pièces jointes fiables. <p> Pour plus d’informations, consultez la section relative [à la remise dynamique des stratégies de pièces jointes approuvées](#dynamic-delivery-in-safe-attachments-policies) plus loin dans cette rubrique.|Éviter les retards de message tout en protégeant les destinataires des fichiers malveillants <br/> <br/> Autoriser les destinataires à prévisualiser les pièces jointes en mode sans échec lors de l’analyse|
+  |**Remise dynamique**|Remet les messages immédiatement, mais remplace les pièces jointes par des espaces réservés jusqu’à la fin de l’analyse des pièces jointes fiables. <p> Pour plus d’informations, consultez la section relative [à la remise dynamique des stratégies de pièces jointes approuvées](#dynamic-delivery-in-safe-attachments-policies) plus loin dans cette rubrique.|Éviter les retards de message tout en protégeant les destinataires des fichiers malveillants. <p> Autoriser les destinataires à prévisualiser les pièces jointes en mode sans échec lors de l’analyse.|
   |
 
-- **Rediriger la pièce jointe sur la détection : activez la redirection** et **envoyez la pièce jointe à l’adresse de messagerie suivante** : pour les actions **bloquer** , **surveiller** ou **remplacer** , envoyez des messages contenant des pièces jointes de programmes malveillants à l’adresse de messagerie interne ou externe spécifiée à des fins d’analyse et d’enquête.
+- **Rediriger la pièce jointe sur la détection : activez la redirection** et **envoyez la pièce jointe à l’adresse de messagerie suivante**: pour les actions **bloquer**, **surveiller** ou **remplacer** , envoyez des messages contenant des pièces jointes de programmes malveillants à l’adresse de messagerie interne ou externe spécifiée à des fins d’analyse et d’enquête.
 
   La recommandation pour les paramètres de stratégie standard et strict est d’activer la redirection. Pour plus d’informations, consultez la rubrique [paramètres de pièces jointes fiables](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-settings).
 
-- **Appliquer la sélection ci-dessus si l’analyse anti-programme malveillant pour les pièces jointes expire ou si une erreur se produit** : l’action spécifiée par les **pièces jointes approuvées une réponse inconnue aux programmes malveillants** est prise sur les messages, même lorsque l’analyse Sélectionnez toujours cette option si vous sélectionnez **activer la redirection**. Sinon, les messages peuvent être perdus.
+- **Appliquer la sélection ci-dessus si l’analyse anti-programme malveillant pour les pièces jointes expire ou si une erreur se produit**: l’action spécifiée par les **pièces jointes approuvées une réponse inconnue aux programmes malveillants** est prise sur les messages, même lorsque l’analyse Sélectionnez toujours cette option si vous sélectionnez **activer la redirection**. Sinon, les messages peuvent être perdus.
 
-- **Filtres de destinataires** : vous devez spécifier les conditions de destinataire et les exceptions qui déterminent la personne à laquelle la stratégie s’applique. Vous pouvez utiliser ces propriétés pour les conditions et les exceptions :
+- **Filtres de destinataires**: vous devez spécifier les conditions de destinataire et les exceptions qui déterminent la personne à laquelle la stratégie s’applique. Vous pouvez utiliser ces propriétés pour les conditions et les exceptions :
 
   - **Le destinataire est**
   - **Le domaine du destinataire est**
   - **Le destinataire est membre de**
 
-  Vous ne pouvez utiliser une condition ou une exception qu'une seule fois, mais la condition ou l'exception peut contenir plusieurs valeurs. Plusieurs valeurs de la même condition ou exception utilisent la logique OU (par exemple, _\<recipient1\>_ ou _\<recipient2\>_ ). Des conditions ou des exceptions différentes utilisent la logique ET (par exemple, _\<recipient1\>_ et _\<member of group 1\>_ ).
+  Vous ne pouvez utiliser une condition ou une exception qu'une seule fois, mais la condition ou l'exception peut contenir plusieurs valeurs. Plusieurs valeurs de la même condition ou exception utilisent la logique OU (par exemple, _\<recipient1\>_ ou _\<recipient2\>_). Des conditions ou des exceptions différentes utilisent la logique ET (par exemple, _\<recipient1\>_ et _\<member of group 1\>_).
 
-- **Priority** : Si vous créez plusieurs stratégies, vous pouvez spécifier l’ordre dans lequel elles sont appliquées. Aucune stratégie ne peut avoir la même priorité, et le traitement de stratégie s’arrête une fois la première stratégie appliquée.
+- **Priority**: Si vous créez plusieurs stratégies, vous pouvez spécifier l’ordre dans lequel elles sont appliquées. Aucune stratégie ne peut avoir la même priorité, et le traitement de stratégie s’arrête une fois la première stratégie appliquée.
 
   Pour plus d’informations sur l’ordre de priorité et l’évaluation et l’application de plusieurs stratégies, consultez [Ordre et la priorité de la protection de la messagerie](how-policies-and-protections-are-combined.md).
 

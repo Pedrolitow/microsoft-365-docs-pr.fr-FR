@@ -17,17 +17,19 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: conceptual
-ms.openlocfilehash: 5214f7c399ab511ec16231e4dda97a2c33b37668
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: ade93bf8c89077c117ada764478cc74f4a5f14cc
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844703"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357318"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Nouveautés de Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
+> Vous souhaitez découvrir Microsoft 365 Defender ? Vous pouvez l' [évaluer dans un environnement de laboratoire](https://aka.ms/mtp-trial-lab) ou [exécuter votre projet pilote en production](https://aka.ms/m365d-pilotplaybook).
+>
 
 Les fonctionnalités suivantes sont généralement disponibles (GA) dans la dernière version de Microsoft 365 Defender.
 
@@ -35,6 +37,9 @@ Flux RSS : recevez une notification lorsque cette page est mise à jour en copi
 ```http
 https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+Threat+Protection%22&locale=en-us
 ```
+> Vous souhaitez découvrir Microsoft 365 Defender ? Vous pouvez l' [évaluer dans un environnement de laboratoire](https://aka.ms/mtp-trial-lab) ou [exécuter votre projet pilote en production](https://aka.ms/m365d-pilotplaybook)
+>
+
 ## <a name="september-2020"></a>Septembre 2020
 - [Table IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md) <br> Recherchez des événements impliquant un contrôleur de domaine sur site exécutant Active Directory (AD). Cette table de schéma de [chasse avancée](advanced-hunting-overview.md) couvre une plage d’événements liés à l’identité et de système sur le contrôleur de domaine.
 - [Fonction AssignedIPAddresses ()](advanced-hunting-assignedipaddresses-function.md) <br> Utilisez cette fonction dans vos requêtes de chasse avancée pour obtenir rapidement les dernières adresses IP affectées à un appareil ou les adresses IP les plus récentes à partir d’un moment spécifique.

@@ -17,17 +17,19 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e434f6088fa1cd08e6b14e3808007e89f32b83a3
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: d52c401c4b2e995e5ec18895c158f77ce0fce746
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48431038"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49356882"
 ---
 # <a name="monitor-and-view-reports-in-the-microsoft-365-security-center"></a>Surveillance et affichage des rapports dans le centre de sécurité Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
+> Vous souhaitez découvrir Microsoft 365 Defender ? Vous pouvez l' [évaluer dans un environnement de laboratoire](https://aka.ms/mtp-trial-lab) ou [exécuter votre projet pilote en production](https://aka.ms/m365d-pilotplaybook).
+>
 
 Le centre de sécurité Microsoft 365 fournit un résumé des États de protection et de sécurité dans votre environnement Microsoft 365.
 

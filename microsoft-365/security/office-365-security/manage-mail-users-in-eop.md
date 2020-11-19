@@ -1,5 +1,5 @@
 ---
-title: Gérer les utilisateurs de courrier dans une version autonome de EOP
+title: Gérer les utilisateurs d’e-mail dans EOP autonome
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -13,14 +13,14 @@ localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: Découvrez comment gérer les utilisateurs de messagerie dans Exchange Online Protection (EOP), notamment à l’aide de la synchronisation d’annuaires, du centre d’administration Exchange et de PowerShell pour gérer les utilisateurs.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 56e6f8955b5993fb4b5064aa92cdde80a4c67ffe
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 3c3e69def731a85c0dccffdcb5620560dcf00052
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201782"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49356726"
 ---
-# <a name="manage-mail-users-in-standalone-eop"></a>Gérer les utilisateurs de courrier dans une version autonome de EOP
+# <a name="manage-mail-users-in-standalone-eop"></a>Gérer les utilisateurs d’e-mail dans EOP autonome
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -63,7 +63,7 @@ Pour les organisations EOP autonomes avec un petit nombre d’utilisateurs, vous
 
    - **Nom de famille**
 
-   - <sup>\*</sup>**Nom d’affichage**: par défaut, cette zone affiche les valeurs des **zones Prénom**, **initiales**et nom de **famille** . Vous pouvez accepter cette valeur ou la modifier. La valeur doit être unique et sa longueur maximale est de 64 caractères.
+   - <sup>\*</sup>**Nom d’affichage**: par défaut, cette zone affiche les valeurs des **zones Prénom**, **initiales** et nom de **famille** . Vous pouvez accepter cette valeur ou la modifier. La valeur doit être unique et sa longueur maximale est de 64 caractères.
 
    - <sup>\*</sup>**Alias**: entrez un alias unique, en utilisant jusqu’à 64 caractères, pour l’utilisateur.
 
@@ -109,12 +109,12 @@ L’onglet **informations** sur le contact permet d’afficher ou de modifier le
 - **Code postal**
 - **Pays**
 - **Téléphone professionnel**
-- **Téléphone portable **
+- **Téléphone portable**
 - **Fax**
 - **Autres options**
 
   - **Bureau**
-  - **Téléphone personnel **
+  - **Téléphone personnel**
   - **Page Web**
   - **Notes**
 
@@ -258,11 +258,11 @@ Dans la version autonome d’EOP, la synchronisation d’annuaires est disponibl
 
 - Il est recommandé d’utiliser la synchronisation d’annuaires avec les fonctionnalités suivantes :
 
-  - Listes **des expéditeurs approuvés Outlook et listes des expéditeurs bloqués**: lorsqu’ils sont synchronisés avec le service, ces listes prévalent sur le filtrage du courrier indésirable dans le service. Cela permet aux utilisateurs de gérer leur propre liste d’expéditeurs approuvés et la liste des expéditeurs bloqués avec des entrées individuelles de domaine et d’expéditeur. Pour plus d’informations, voir [Configurer les paramètres du courrier indésirable sur les boîtes aux lettres Exchange Online](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes).
+  - Listes **des expéditeurs approuvés Outlook et listes des expéditeurs bloqués**: lorsqu’ils sont synchronisés avec le service, ces listes prévalent sur le filtrage du courrier indésirable dans le service. Cela permet aux utilisateurs de gérer leur propre liste d’expéditeurs approuvés et la liste des expéditeurs bloqués avec des entrées individuelles de domaine et d’expéditeur. Pour plus d’informations, voir [Configurer les paramètres du courrier indésirable sur les boîtes aux lettres Exchange Online](configure-junk-email-settings-on-exo-mailboxes.md).
 
   - **Blocage du périmètre basé sur l’annuaire (DBEB)**: pour plus d’informations sur DBEB, voir [use Directory based Edge Blocking to Reject messages sent to Invalid Recipients](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking).
 
-  - **Accès de l’utilisateur final à la mise en quarantaine**: pour accéder à ses messages mis en quarantaine, les destinataires doivent disposer d’un ID d’utilisateur et d’un mot de passe valides dans le service. Pour plus d’informations sur la mise en quarantaine, consultez [la rubrique Rechercher et débloquer les messages mis en quarantaine en tant qu’utilisateur](https://docs.microsoft.com/microsoft-365/security/office-365-security/find-and-release-quarantined-messages-as-a-user).
+  - **Accès de l’utilisateur final à la mise en quarantaine**: pour accéder à ses messages mis en quarantaine, les destinataires doivent disposer d’un ID d’utilisateur et d’un mot de passe valides dans le service. Pour plus d’informations sur la mise en quarantaine, consultez [la rubrique Rechercher et débloquer les messages mis en quarantaine en tant qu’utilisateur](find-and-release-quarantined-messages-as-a-user.md).
 
   - **Règles de flux de messagerie (également appelées règles de transport)**: lorsque vous utilisez la synchronisation d’annuaires, vos utilisateurs et groupes Active Directory existants sont automatiquement téléchargés dans le Cloud, et vous pouvez créer des règles de flux de messagerie qui ciblent des utilisateurs et/ou des groupes spécifiques sans avoir à les ajouter manuellement au service. Notez que les [groupes de distribution dynamique](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups) ne peuvent pas être synchronisés via la synchronisation d’annuaires.
 

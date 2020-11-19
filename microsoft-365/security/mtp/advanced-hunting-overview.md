@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 627791e9dc3d4bf18047a05734a4e275152d19da
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: bab055036a8e7fdcf88329413c9fd86269af2aaa
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845031"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357220"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-365-defender"></a>Recherche proactive de menaces à l’aide de la chasse avancée dans Microsoft 365 Defender
 
@@ -33,7 +33,10 @@ ms.locfileid: "48845031"
 
 
 **S’applique à :**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
+
+> Vous souhaitez découvrir Microsoft 365 Defender ? Vous pouvez l' [évaluer dans un environnement de laboratoire](https://aka.ms/mtp-trial-lab) ou [exécuter votre projet pilote en production](https://aka.ms/m365d-pilotplaybook).
+>
 
 Le repérage avancé est un outil de repérage de menaces basé sur des requêtes qui vous permet d’explorer jusqu’à 30 jours de données brutes. Vous pouvez inspecter de manière proactive les événements de votre réseau afin de localiser les indicateurs de menace et les entités. L’accès flexible aux données permet une chasse libre aux menaces connues et potentielles.
 <p></p>
@@ -44,10 +47,10 @@ Vous pouvez utiliser les mêmes requêtes de repérage de menaces pour créer de
 
 Cette fonctionnalité est similaire à la [chasse avancée dans Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview). Disponible dans le centre de sécurité Microsoft 365, cette fonctionnalité prend en charge les requêtes qui vérifient un ensemble de données plus large à partir des éléments suivants :
 
-- Microsoft Defender pour point de terminaison
-- Microsoft Defender pour Office 365
+- Microsoft Defender pour point de terminaison
+- Microsoft Defender pour Office 365
 - Microsoft Cloud App Security
-- Microsoft Defender pour l’identité
+- Microsoft Defender pour identité
 
 Pour utiliser la chasse avancée, [activez Microsoft 365 Defender](mtp-enable.md).
 
@@ -70,8 +73,8 @@ Pour utiliser la chasse avancée ou d’autres fonctionnalités de [Microsoft 36
 ## <a name="data-freshness-and-update-frequency"></a>Actualisation et fréquence de mise à jour des données
 Les données de chasse avancées peuvent être classées en deux types distincts, chacune étant consolidée différemment.
 
-- **Données d’événement ou d’activité** : renseigne des tableaux sur les alertes, les événements de sécurité, les événements système et les évaluations de routine. La chasse avancée reçoit ces données presque immédiatement après que les capteurs qui les recueillent les transmettent aux services Cloud correspondants. Par exemple, vous pouvez interroger des données d’événement à partir de capteurs sains sur des stations de travail ou des contrôleurs de domaine presque immédiatement après qu’ils sont disponibles sur Microsoft Defender pour le point de terminaison et Microsoft Defender pour l’identité.
-- **Données d’entité** : renseigne des tables avec des informations sur les utilisateurs et les appareils. Ces données proviennent de sources de données relativement statiques et de sources dynamiques, telles que les entrées et les journaux des événements Active Directory. Pour fournir des données actualisées, les tableaux sont mis à jour avec les nouvelles informations toutes les 15 minutes, ajoutant des lignes qui ne sont peut-être pas entièrement renseignées. Toutes les 24 heures, les données sont consolidées pour insérer un enregistrement qui contient le jeu de données le plus complet et le plus complet sur chaque entité.
+- **Données d’événement ou d’activité**: renseigne des tableaux sur les alertes, les événements de sécurité, les événements système et les évaluations de routine. La chasse avancée reçoit ces données presque immédiatement après que les capteurs qui les recueillent les transmettent aux services Cloud correspondants. Par exemple, vous pouvez interroger des données d’événement à partir de capteurs sains sur des stations de travail ou des contrôleurs de domaine presque immédiatement après qu’ils sont disponibles sur Microsoft Defender pour le point de terminaison et Microsoft Defender pour l’identité.
+- **Données d’entité**: renseigne des tables avec des informations sur les utilisateurs et les appareils. Ces données proviennent de sources de données relativement statiques et de sources dynamiques, telles que les entrées et les journaux des événements Active Directory. Pour fournir des données actualisées, les tableaux sont mis à jour avec les nouvelles informations toutes les 15 minutes, ajoutant des lignes qui ne sont peut-être pas entièrement renseignées. Toutes les 24 heures, les données sont consolidées pour insérer un enregistrement qui contient le jeu de données le plus complet et le plus complet sur chaque entité.
 
 ## <a name="time-zone"></a>Fuseau horaire
 Les informations de temps dans la chasse avancée se trouvent dans le fuseau horaire UTC.

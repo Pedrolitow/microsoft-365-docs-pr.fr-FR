@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX
 description: Les administrateurs peuvent apprendre à utiliser les balises de mise en quarantaine pour contrôler ce que les utilisateurs peuvent faire à leurs messages mis en quarantaine.
-ms.openlocfilehash: e50d7eea4cec3c87231dda855725b1e901f5fa33
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: e194aabf57a1a105f01d8d34815312d3c2fa153d
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845695"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357646"
 ---
 # <a name="quarantine-tags"></a>Balises de mise en quarantaine
 
@@ -44,12 +44,12 @@ Les autorisations individuelles disponibles et ce qui est inclus ou non dans les
 
 |Autorisation|Pas d’accès|Accès limité|Accès total|
 |---|:---:|:---:|:---:|
-|**Autoriser l’expéditeur** ( _PermissionToAllowSender_ )|||![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Bloquer l’expéditeur** ( _PermissionToBlockSender_ )||![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Supprimer** ( _PermissionToDelete_ )||![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Aperçu** ( _PermissionToPreview_ )||![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Autoriser les destinataires à libérer un message en quarantaine** ( _PermissionToRelease_ )|||![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Autoriser les destinataires à demander la libération d’un message en quarantaine** ( _PermissionToRequestRelease_ )||![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+|**Autoriser l’expéditeur** (_PermissionToAllowSender_)|||![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|**Bloquer l’expéditeur** (_PermissionToBlockSender_)||![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|**Supprimer** (_PermissionToDelete_)||![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|**Aperçu** (_PermissionToPreview_)||![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|**Autoriser les destinataires à libérer un message en quarantaine** (_PermissionToRelease_)|||![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|**Autoriser les destinataires à demander la libération d’un message en quarantaine** (_PermissionToRequestRelease_)||![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
 |
 
 Si vous n’aimez pas les autorisations par défaut dans les groupes d’autorisations prédéfinis, vous pouvez utiliser des autorisations personnalisées lors de la création ou de la modification de balises de mise en quarantaine personnalisées. Pour plus d’informations sur ce que fait chaque autorisation, voir la section Détails de l' [autorisation de mise en quarantaine](#quarantine-tag-permission-details) plus loin dans cet article.
@@ -84,12 +84,12 @@ Vous créez et attribuez des balises de mise en quarantaine dans le centre de s�
    Pour spécifier des autorisations personnalisées, sélectionnez **définir un accès spécifique (avancé)** et configurez les paramètres suivants :
 
      - **Sélectionnez la préférence** de l’action de publication : sélectionnez l’une des valeurs suivantes :
-       - **Aucune action de libération** : il s’agit de la valeur par défaut.
+       - **Aucune action de libération**: il s’agit de la valeur par défaut.
        - **Autoriser les destinataires à diffuser un message en quarantaine**
        - **Autoriser les destinataires à demander la libération d’un message en quarantaine**
 
-     - **Sélectionnez les actions supplémentaires que les destinataires peuvent effectuer sur les messages mis en quarantaine** : sélectionnez certaines, toutes ou aucune des valeurs suivantes :
-       - **Delete**
+     - **Sélectionnez les actions supplémentaires que les destinataires peuvent effectuer sur les messages mis en quarantaine**: sélectionnez certaines, toutes ou aucune des valeurs suivantes :
+       - **Supprimer**
        - **Aperçu**
        - **Autoriser l’expéditeur**
        - **Bloquer l’expéditeur**
@@ -178,19 +178,19 @@ La valeur par défaut des paramètres inutilisés est `$false` , de sorte que vo
 
 Les exemples suivants montrent comment créer des objets permission qui correspondent aux groupes d’autorisations prédéfinis :
 
-- **Aucun accès** :
+- **Aucun accès**:
 
   ```powershell
   $NoAccess = New-QuarantinePermissions
   ```
 
-- **Accès limité** :
+- **Accès limité**:
 
   ```powershell
   $LimitedAccess = New-QuarantinePermissions -PermissionToBlockSender $true -PermissionToDelete $true -PermissionToPreview $true -PermissionToRequestRelease $true
   ```
 
-- **Accès total** :
+- **Accès total**:
 
   ```powershell
   $FullAccess = New-QuarantinePermissions -PermissionToAllowSender $true -PermissionToBlockSender $true -PermissionToDelete $true -PermissionToPreview $true -PermissionToRelease $true
@@ -228,11 +228,11 @@ Dans les fonctionnalités de protection _prises en charge_ qui met en quarantain
 
 |Fonctionnalité|Balises de mise en quarantaine prises en charge ?|Balises de mise en quarantaine par défaut utilisées|
 |---|:---:|---|
-|[Stratégies de blocage du courrier indésirable](configure-your-spam-filter-policies.md): <ul><li>**Courrier indésirable** ( _SpamAction_ )</li><li>**Courrier indésirable à niveau de confiance élevé** ( _HighConfidenceSpamAction_ )</li><li>**Courrier électronique de hameçonnage** ( _PhishSpamAction_ )</li><li>**Courrier électronique de hameçonnage à haute fiabilité** ( _HighConfidencePhishAction_ )</li><li>**Courrier en masse** ( _BulkSpamAction_ )</li></ul>|Oui|<ul><li>DefaultSpamTag (accès total)</li><li>DefaultHighConfSpamTag (accès total)</li><li>DefaultPhishTag (accès total)</li><li>DefaultHighConfPhishTag (pas d’accès)</li><li>DefaultBulkTag (accès total)</li></ul>
-|Stratégies anti-hameçonnage : <ul><li>[Protection contre l’usurpation d’identité](set-up-anti-phishing-policies.md#spoof-settings) ( _AuthenticationFailAction_ )</li><li>[Protection contre l’usurpation d’identité](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<sup>\*</sup> <ul><li>**Si le courrier électronique est envoyé par un utilisateur emprunté** ( _TargetedUserProtectionAction_ )</li><li>**Si le courrier électronique est envoyé par un domaine emprunté** ( _TargetedDomainProtectionAction_ )</li><li>Intelligence des boîtes **aux lettres** \> **Si le courrier électronique est envoyé par un utilisateur emprunté** ( _MailboxIntelligenceProtectionAction_ )</li></ul></li></ul></ul>|Non|s/o|
+|[Stratégies de blocage du courrier indésirable](configure-your-spam-filter-policies.md): <ul><li>**Courrier indésirable** (_SpamAction_)</li><li>**Courrier indésirable à niveau de confiance élevé** (_HighConfidenceSpamAction_)</li><li>**Courrier électronique de hameçonnage** (_PhishSpamAction_)</li><li>**Courrier électronique de hameçonnage à haute fiabilité** (_HighConfidencePhishAction_)</li><li>**Courrier en masse** (_BulkSpamAction_)</li></ul>|Oui|<ul><li>DefaultSpamTag (accès total)</li><li>DefaultHighConfSpamTag (accès total)</li><li>DefaultPhishTag (accès total)</li><li>DefaultHighConfPhishTag (pas d’accès)</li><li>DefaultBulkTag (accès total)</li></ul>
+|Stratégies anti-hameçonnage : <ul><li>[Protection contre l’usurpation d’identité](set-up-anti-phishing-policies.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[Protection contre l’usurpation d’identité](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<sup>\*</sup> <ul><li>**Si le courrier électronique est envoyé par un utilisateur emprunté** (_TargetedUserProtectionAction_)</li><li>**Si le courrier électronique est envoyé par un domaine emprunté** (_TargetedDomainProtectionAction_)</li><li>Intelligence des boîtes **aux lettres** \> **Si le courrier électronique est envoyé par un utilisateur emprunté** (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul></ul>|Non|s/o|
 |[Stratégies de protection contre les programmes malveillants](configure-anti-malware-policies.md): tous les messages détectés sont toujours mis en quarantaine.|Non|s/o|
 |[ATP pour SharePoint, OneDrive et Microsoft Teams](atp-for-spo-odb-and-teams.md)|Non|s/o|
-|Les [règles de flux de messagerie](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (également appelées règles de transport) avec l’action : **remet le message à la quarantaine hébergée** ( _mise en quarantaine_ ).|Non|s/o|
+|Les [règles de flux de messagerie](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (également appelées règles de transport) avec l’action : **remet le message à la quarantaine hébergée** (_mise en quarantaine_).|Non|s/o|
 |
 
 <sup>\*</sup> Les paramètres de protection contre l’emprunt d’identité sont disponibles uniquement dans les stratégies anti-hameçonnage de Microsoft Defender pour Office 365.
@@ -251,7 +251,7 @@ Pour plus d’informations sur la création et la modification de stratégies de
   
 4. Si vous avez sélectionné **message mis en quarantaine** pour l’action d’une option de filtrage du courrier indésirable disponible, la zone **appliquer la balise de stratégie de mise en quarantaine** est disponible pour vous permettant de sélectionner la balise de mise en quarantaine pour ce verdict.
 
-   **Remarque** : lorsque vous créez une stratégie, une valeur de balise de mise en quarantaine vide pour un filtrage du courrier indésirable en verdict indique que la balise de mise en quarantaine par défaut pour ce verdict est utilisée. Lorsque vous modifiez ultérieurement la stratégie, les valeurs non renseignées sont remplacées par les noms de balise de mise en quarantaine par défaut réels, comme décrit dans le tableau précédent.
+   **Remarque**: lorsque vous créez une stratégie, une valeur de balise de mise en quarantaine vide pour un filtrage du courrier indésirable en verdict indique que la balise de mise en quarantaine par défaut pour ce verdict est utilisée. Lorsque vous modifiez ultérieurement la stratégie, les valeurs non renseignées sont remplacées par les noms de balise de mise en quarantaine par défaut réels, comme décrit dans le tableau précédent.
   
    ![Sélections de la balise de quarantaine dans une stratégie de blocage du courrier indésirable](../../media/quarantine-tags-in-anti-spam-policies.png)
 
@@ -265,7 +265,7 @@ Si vous préférez utiliser PowerShell pour attribuer des balises de mise en qua
 <New-HostedContentFilterPolicy -Name "<Unique name>" | Set-HostedContentFilterPolicy -Identity "<Policy name>">  [-SpamAction Quarantine] [-SpamQuarantineTag <QuarantineTagName>] [-HighConfidenceSpamAction Quarantine] [-HighConfidenceSpamQuarantineTag <QuarantineTagName>] [-PhishSpamAction Quarantine] [-PhishQuarantineTag <QuarantineTagName>] [-HighConfidencePhishQuarantineTag <QuarantineTagName>] [-BulkSpamAction Quarantine] [-BulkQuarantineTag <QuarantineTagName>] ...
 ```
 
-**Remarques**  :
+**Remarques** :
 
 - La valeur par défaut du paramètre _HighConfidencePhishAction_ est mise en quarantaine, vous n’avez donc pas besoin de définir l’action de mise en quarantaine pour les détections de hameçonnage à haute fiabilité dans les nouvelles stratégies de blocage du courrier indésirable. Pour tous les autres filtrages de courrier indésirable en fonction des stratégies anti-courrier indésirable nouvelles ou existantes, la balise de mise en quarantaine n’est effective que si la valeur de l’action est mise en quarantaine. Pour afficher les valeurs d’action dans les stratégies anti-courrier indésirable existantes, exécutez la commande suivante :
 
@@ -310,19 +310,19 @@ Les paramètres globaux pour les balises de mise en quarantaine vous permettent 
 
 3. Dans la fenêtre mobile **paramètres de notification de mise en quarantaine** qui s’ouvre, configurez une partie ou l’ensemble des paramètres suivants :
 
-   - **Utiliser mon logo de société** : sélectionnez cette option pour remplacer le logo Microsoft par défaut qui est utilisé en haut des notifications de courrier indésirable de l’utilisateur final. Avant cela, vous devez suivre les instructions de la procédure [personnaliser le thème Microsoft 365 de votre organisation](https://docs.microsoft.com/microsoft-365/admin/setup/customize-your-organization-theme) pour télécharger votre logo personnalisé.
+   - **Utiliser mon logo de société**: sélectionnez cette option pour remplacer le logo Microsoft par défaut qui est utilisé en haut des notifications de courrier indésirable de l’utilisateur final. Avant cela, vous devez suivre les instructions de la procédure [personnaliser le thème Microsoft 365 de votre organisation](https://docs.microsoft.com/microsoft-365/admin/setup/customize-your-organization-theme) pour télécharger votre logo personnalisé.
 
      La capture d’écran suivante montre un logo personnalisé dans une notification de courrier indésirable pour l’utilisateur final :
 
      ![Un logo personnalisé dans une notification de courrier indésirable pour l’utilisateur final](../../media/quarantine-tags-esn-customization-logo.png)
 
-   - **Choisir la langue** : les notifications de courrier indésirable de l’utilisateur final sont déjà localisées en fonction des paramètres de langue du destinataire. Vous pouvez spécifier un texte personnalisé dans différentes langues pour le **nom d’affichage** et les valeurs de clause d’exclusion de **responsabilité** .
+   - **Choisir la langue**: les notifications de courrier indésirable de l’utilisateur final sont déjà localisées en fonction des paramètres de langue du destinataire. Vous pouvez spécifier un texte personnalisé dans différentes langues pour le **nom d’affichage** et les valeurs de clause d’exclusion de **responsabilité** .
 
      Sélectionnez au moins une langue dans la première langue, puis cliquez sur **Ajouter**. Vous pouvez sélectionner plusieurs langues en cliquant sur **Ajouter** après chacune d’elles. Une case langue de section affiche toutes les langues que vous avez sélectionnées :
 
      ![Langues sélectionnées dans la deuxième langue de la zone dans les paramètres de notification de mise en quarantaine globale des balises de mise en quarantaine](../../media/quarantine-tags-esn-customization-selected-languages.png)
 
-   - **Nom d’affichage** : Personnalisez le nom d’affichage de l’expéditeur utilisé dans les notifications de courrier indésirable de l’utilisateur final.
+   - **Nom d’affichage**: Personnalisez le nom d’affichage de l’expéditeur utilisé dans les notifications de courrier indésirable de l’utilisateur final.
 
      Pour chaque langue que vous avez ajoutée, sélectionnez la langue dans la seconde langue (ne cliquez pas sur le X) et entrez la valeur de texte souhaitée dans la zone **nom complet** .
 
@@ -372,7 +372,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 ## <a name="remove-quarantine-tags-in-the-security--compliance-center"></a>Supprimer les balises de mise en quarantaine dans le centre de sécurité & conformité
 
-**Remarques**  :
+**Remarques** :
 
 - Vous ne pouvez pas supprimer les balises de quarantaine prédéfinies.
 
@@ -412,11 +412,11 @@ Les autorisations individuelles qui sont incluses dans des groupes d’autorisat
 
 Si la balise de mise en quarantaine affecte les autorisations **aucune** autorisation (aucune autorisation), les utilisateurs reçoivent toujours des fonctionnalités de ligne de base :
 
-- **Détails du message en quarantaine** : le bouton d' **en-tête afficher le message** est toujours disponible.
+- **Détails du message en quarantaine**: le bouton d' **en-tête afficher le message** est toujours disponible.
 
   ![Boutons disponibles dans les détails du message en quarantaine si la balise de mise en quarantaine donne à l’utilisateur aucune autorisation d’accès](../../media/quarantine-tags-quarantined-message-details-no-access.png)
 
-- **Notifications de courrier indésirable de l’utilisateur final** : le bouton **Review** qui dirige l’utilisateur vers le message en quarantaine est toujours disponible.
+- **Notifications de courrier indésirable de l’utilisateur final**: le bouton **Review** qui dirige l’utilisateur vers le message en quarantaine est toujours disponible.
 
   ![Boutons disponibles dans la notification de courrier indésirable de l’utilisateur final si la balise de mise en quarantaine donne à l’utilisateur aucune autorisation d’accès](../../media/quarantine-tags-esn-no-access.png)
 
@@ -424,7 +424,7 @@ Si la balise de mise en quarantaine affecte les autorisations **aucune** autoris
 
 Si la balise de mise en quarantaine affecte les autorisations d' **accès limitées** , les utilisateurs obtiennent les fonctionnalités suivantes :
 
-- **Détails du message en quarantaine** : les boutons suivants sont disponibles :
+- **Détails du message en quarantaine**: les boutons suivants sont disponibles :
   - **Version de la demande**
   - **Afficher l’en-tête du message**
   - **Aperçu du message**
@@ -433,7 +433,7 @@ Si la balise de mise en quarantaine affecte les autorisations d' **accès limit�
 
   ![Boutons disponibles dans les détails du message en quarantaine si la balise de mise en quarantaine accorde aux utilisateurs des autorisations d’accès limitées](../../media/quarantine-tags-quarantined-message-details-limited-access.png)
 
-- **Notifications de courrier indésirable de l’utilisateur final** : les boutons suivants sont disponibles :
+- **Notifications de courrier indésirable de l’utilisateur final**: les boutons suivants sont disponibles :
   - **Bloquer l’expéditeur**
   - **Révision**
 
@@ -443,7 +443,7 @@ Si la balise de mise en quarantaine affecte les autorisations d' **accès limit�
 
 Si la balise de mise en quarantaine affecte les autorisations d' **accès total** (toutes les autorisations disponibles), les utilisateurs bénéficient des fonctionnalités suivantes :
 
-- **Détails du message en quarantaine** : les boutons suivants sont disponibles :
+- **Détails du message en quarantaine**: les boutons suivants sont disponibles :
   - **Message de publication**
   - **Afficher l’en-tête du message**
   - **Aperçu du message**
@@ -453,9 +453,9 @@ Si la balise de mise en quarantaine affecte les autorisations d' **accès total*
 
   ![Boutons disponibles dans les détails du message en quarantaine si la balise de mise en quarantaine accorde à l’utilisateur les autorisations d’accès total](../../media/quarantine-tags-quarantined-message-details-full-access.png)
 
-- **Notifications de courrier indésirable de l’utilisateur final** : les boutons suivants sont disponibles :
+- **Notifications de courrier indésirable de l’utilisateur final**: les boutons suivants sont disponibles :
   - **Bloquer l’expéditeur**
-  - **Version**
+  - **Débloquer**
   - **Révision**
 
   ![Boutons disponibles dans la notification de courrier indésirable de l’utilisateur final si la balise de mise en quarantaine accorde à l’utilisateur les autorisations d’accès total](../../media/quarantine-tags-esn-full-access.png)
@@ -467,68 +467,68 @@ Si la balise de mise en quarantaine affecte les autorisations d' **accès total*
 
 #### <a name="allow-sender-permission"></a>Autorisation de l’expéditeur
 
-L’autorisation **autoriser l’expéditeur** ( _PermissionToAllowSender_ ) contrôle l’accès au bouton qui permet aux utilisateurs d’ajouter facilement l’expéditeur du message en quarantaine à leur liste des expéditeurs approuvés.
+L’autorisation **autoriser l’expéditeur** (_PermissionToAllowSender_) contrôle l’accès au bouton qui permet aux utilisateurs d’ajouter facilement l’expéditeur du message en quarantaine à leur liste des expéditeurs approuvés.
 
-- **Détails du message en quarantaine** :
+- **Détails du message en quarantaine**:
   - **Autoriser** l’autorisation de l’expéditeur activé : le bouton **autoriser l’expéditeur** est disponible.
   - **Autoriser l’expéditeur** désactivé : le bouton **autoriser l’expéditeur** n’est pas disponible.
 
-- **Notifications de courrier indésirable de l’utilisateur final** : aucun effet.
+- **Notifications de courrier indésirable de l’utilisateur final**: aucun effet.
 
-Pour plus d’informations sur la liste des expéditeurs approuvés, voir [empêcher le blocage des expéditeurs approuvés](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379666) et [utiliser Exchange Online PowerShell pour configurer la collection de listes fiables sur une boîte aux lettres](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox).
+Pour plus d’informations sur la liste des expéditeurs approuvés, voir [empêcher le blocage des expéditeurs approuvés](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379666) et [utiliser Exchange Online PowerShell pour configurer la collection de listes fiables sur une boîte aux lettres](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox).
 
 #### <a name="block-sender-permission"></a>Autorisation bloquer l’expéditeur
 
-L’autorisation **proscrire l’expéditeur** ( _PermissionToBlockSender_ ) contrôle l’accès au bouton qui permet aux utilisateurs d’ajouter facilement l’expéditeur du message en quarantaine à la liste des expéditeurs bloqués.
+L’autorisation **proscrire l’expéditeur** (_PermissionToBlockSender_) contrôle l’accès au bouton qui permet aux utilisateurs d’ajouter facilement l’expéditeur du message en quarantaine à la liste des expéditeurs bloqués.
 
-- **Détails du message en quarantaine** :
+- **Détails du message en quarantaine**:
   - Autorisation de blocage de l' **expéditeur** activée : le bouton **bloquer l’expéditeur** est disponible.
   - Autorisation de blocage de l' **expéditeur** désactivée : le bouton **bloquer l’expéditeur** n’est pas disponible.
 
-- **Notifications de courrier indésirable de l’utilisateur final** :
+- **Notifications de courrier indésirable de l’utilisateur final**:
   - Autorisation de blocage de l' **expéditeur** désactivée : le bouton **bloquer l’expéditeur** n’est pas disponible.
   - Autorisation de blocage de l' **expéditeur** activée : le bouton **bloquer l’expéditeur** est disponible.
 
-Pour plus d’informations sur la liste des expéditeurs bloqués, voir [bloquer les messages de quelqu’un](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379667) et [utiliser Exchange Online PowerShell pour configurer la collection de listes fiables sur une boîte aux lettres](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox).
+Pour plus d’informations sur la liste des expéditeurs bloqués, voir [bloquer les messages de quelqu’un](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379667) et [utiliser Exchange Online PowerShell pour configurer la collection de listes fiables sur une boîte aux lettres](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox).
 
 #### <a name="delete-permission"></a>Autorisations de suppression
 
-L’autorisation de **suppression** ( _PermissionToDelete_ ) contrôle la possibilité pour les utilisateurs de supprimer leurs messages (messages dans lesquels l’utilisateur est un destinataire) de la mise en quarantaine.
+L’autorisation de **suppression** (_PermissionToDelete_) contrôle la possibilité pour les utilisateurs de supprimer leurs messages (messages dans lesquels l’utilisateur est un destinataire) de la mise en quarantaine.
 
-- **Détails du message en quarantaine** :
+- **Détails du message en quarantaine**:
   - Autorisation de **suppression** activée : le bouton **supprimer de la quarantaine** est disponible.
   - Autorisation de **suppression** désactivée : le bouton **supprimer du contrôle** n’est pas disponible.
 
-- **Notifications de courrier indésirable de l’utilisateur final** : aucun effet.
+- **Notifications de courrier indésirable de l’utilisateur final**: aucun effet.
 
 #### <a name="preview-permission"></a>Autorisation d’aperçu
 
-L’autorisation **preview** ( _PermissionToPreview_ ) contrôle la possibilité pour les utilisateurs de prévisualiser leurs messages en quarantaine.
+L’autorisation **preview** (_PermissionToPreview_) contrôle la possibilité pour les utilisateurs de prévisualiser leurs messages en quarantaine.
 
-- **Détails du message en quarantaine** :
+- **Détails du message en quarantaine**:
   - Autorisation d' **Aperçu** activée : le bouton **Aperçu du message** est disponible.
   - Autorisation d' **Aperçu** désactivée : le bouton **Aperçu du message** n’est pas disponible.
 
-- **Notifications de courrier indésirable de l’utilisateur final** : aucun effet.
+- **Notifications de courrier indésirable de l’utilisateur final**: aucun effet.
 
 #### <a name="allow-recipients-to-release-a-message-from-quarantine-permission"></a>Autoriser les destinataires à libérer un message à partir de l’autorisation de mise en quarantaine
 
-L’autorisation **autoriser les destinataires à libérer un message à partir de la quarantaine** ( _PermissionToRelease_ ) contrôle la capacité des utilisateurs à libérer leurs messages mis en quarantaine directement et sans l’approbation d’un administrateur.
+L’autorisation **autoriser les destinataires à libérer un message à partir de la quarantaine** (_PermissionToRelease_) contrôle la capacité des utilisateurs à libérer leurs messages mis en quarantaine directement et sans l’approbation d’un administrateur.
 
-- **Détails du message en quarantaine** :
+- **Détails du message en quarantaine**:
   - Autorisation activée : le bouton **diffuser le message** est disponible.
   - Autorisation désactivée : le bouton **diffuser le message** n’est pas disponible.
   
-- **Notifications de courrier indésirable de l’utilisateur final** :
+- **Notifications de courrier indésirable de l’utilisateur final**:
   - Autorisation activée : le bouton de **publication** est disponible.
   - Autorisation désactivée : le bouton de **publication** n’est pas disponible.
 
 #### <a name="allow-recipients-to-request-a-message-to-be-released-from-quarantine-permission"></a>Autoriser les destinataires à demander la libération d’un message à partir de l’autorisation de mise en quarantaine
 
-L’option **autoriser les destinataires à demander la libération d’un message à partir de l’autorisation de mise en quarantaine** ( _PermissionToRequestRelease_ ) contrôle la capacité des utilisateurs à _demander_ la libération de leurs messages mis en quarantaine. Le message n’est publié qu’après qu’un administrateur a approuvé la demande.
+L’option **autoriser les destinataires à demander la libération d’un message à partir de l’autorisation de mise en quarantaine** (_PermissionToRequestRelease_) contrôle la capacité des utilisateurs à _demander_ la libération de leurs messages mis en quarantaine. Le message n’est publié qu’après qu’un administrateur a approuvé la demande.
 
-- **Détails du message en quarantaine** :
+- **Détails du message en quarantaine**:
   - Autorisation activée : le bouton de lancement de la **demande** est disponible.
   - Autorisation désactivée : le bouton de libération de la **demande** n’est pas disponible.
 
-- **Notifications de courrier indésirable de l’utilisateur final** : le bouton de **publication** n’est pas disponible.
+- **Notifications de courrier indésirable de l’utilisateur final**: le bouton de **publication** n’est pas disponible.

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: En utilisant le Centre de sécurité Microsoft 365 ou le Centre de conformité Microsoft 365, vous pouvez gérer les autorisations de façon centralisée pour toutes les tâches liées à la sécurité ou à la conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0f7dcddd7070f95ae61b17b9623dfcbab4a62e5f
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: a6c0ceee2b07dd93affc75fae1111aad9d7f5198
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920631"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357874"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center-and-microsoft-365-security-center"></a>Autorisations dans le Centre de conformité Microsoft 365 et le Centre de sécurité Microsoft 365
 
@@ -172,7 +172,7 @@ En attribuant un utilisateur à l’un des rôles d’administrateur de conformi
 
 |Service Microsoft 365|Informations sur le rôle|
 |---|---|
-|Rôles d’administrateur dans Office 365 et Microsoft 365 pour les offres d’entreprise|[Rôles d’administrateur Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide)|
+|Rôles d’administrateur dans Office 365 et Microsoft 365 pour les offres d’entreprise|[Rôles d’administrateur Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|
 |Azure Active Directory (Azure AD) et Azure AD Identity Protection|[Rôles d’administrateur Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |Microsoft Defender pour identité|[Microsoft Defender pour les groupes de rôle d’identité](https://docs.microsoft.com/azure-advanced-threat-protection/atp-role-groups)|
 |Azure Information Protection|[Rôles d’administrateur Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|

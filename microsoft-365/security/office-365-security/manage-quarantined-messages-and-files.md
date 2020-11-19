@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à afficher et à gérer les messages mis en quarantaine pour tous les utilisateurs dans Exchange Online Protection (EOP). Les administrateurs dans les organisations disposant de Microsoft Defender pour Office 365 peuvent également gérer les fichiers mis en quarantaine dans SharePoint Online, OneDrive entreprise et Microsoft Teams.
-ms.openlocfilehash: 94dfc8503d61c16aadc8e9d0ccfd295e2684fbba
-ms.sourcegitcommit: 1db81b85d327fe423695ce675ad325e538417211
+ms.openlocfilehash: fed05ee202e4352200a80516e0ec1b62c8421178
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49349279"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357132"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Gérer les messages et fichiers mis en quarantaine en tant qu’administrateur dans Exchange Online PowerShell
 
@@ -103,7 +103,7 @@ Vous pouvez afficher et gérer les messages mis en quarantaine dans le centre de
      - **Stratégie anti-programme malveillant**
      - **Stratégie de pièces jointes fiables**
      - **Stratégie anti-hameçonnage**
-     - **Stratégie de filtrage de contenu hébergé** (stratégie de blocage du courrier indésirable)
+     - **Stratégie de filtrage de contenu hébergé** (stratégie anti-courrier indésirable)
      - **Règle de transport**
 
    - **Destinataire du message**: tous les utilisateurs ou seulement les messages qui vous sont envoyés. Les utilisateurs finaux peuvent gérer uniquement les messages mis en quarantaine qui leur sont envoyés.
@@ -165,7 +165,7 @@ Une fois que vous avez sélectionné un message, vous disposez de plusieurs opti
   - Choisissez l’une des options suivantes :
     - **Diffuser les messages à tous les destinataires**
     - **Publier des messages à des destinataires spécifiques**
-    - **Publier des messages vers d’autres personnes**
+    - **Publier des messages à d’autres personnes**: Notez que la publication de messages malveillants pour des personnes autres que des destinataires d’origine n’est pas prise en charge. 
 
   Lorsque vous avez terminé, cliquez sur **Déplacer les messages**.
 
@@ -208,7 +208,7 @@ Lorsque vous sélectionnez plusieurs messages mis en quarantaine dans la liste (
   > [!NOTE]
   > Prenons le scénario suivant : john@gmail.com envoie un message à faith@contoso.com et john@subsidiary.contoso.com. Gmail bifurcation ce message en deux exemplaires qui sont tous deux routés en quarantaine en tant que hameçonnage dans Microsoft. Un administrateur publie ces deux messages dans admin@contoso.com. Le premier message publié qui atteint la boîte aux lettres d’administration est remis. Le deuxième message publié est identifié comme remise en double et est ignoré. Les messages sont identifiés comme étant des doublons s’ils ont le même ID de message et le même horaire de réception.
 
-- **Supprimer des messages** : le message est immédiatement supprimé sans être envoyé aux destinataires d’origine dès que vous cliquez sur **Oui** dans le message d’avertissement qui s’affiche.
+- **Supprimer des messages**: après avoir cliqué sur **Oui** dans le message d’avertissement qui s’affiche, les messages sont immédiatement supprimés sans être envoyés aux destinataires d’origine.
 
 Lorsque vous avez terminé, cliquez sur **Fermer**.
 

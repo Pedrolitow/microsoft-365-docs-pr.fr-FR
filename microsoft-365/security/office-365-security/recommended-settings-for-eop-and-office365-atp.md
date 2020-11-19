@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Quelles sont les meilleures pratiques pour les paramètres de sécurité Exchange Online Protection (EOP) et Defender pour Office 365 ? Quelles sont les recommandations actuelles pour la protection standard ? Qu’est-ce qui doit être utilisé si vous voulez être plus strict ? Quels sont les autres éléments que vous obtenez si vous utilisez également Defender pour Office 365 ?
-ms.openlocfilehash: bcad3609f5f73ac538ae9d1a0964ecc8e176003e
-ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
+ms.openlocfilehash: af741e1af412d535c53beb83c36c0cbe3fcd617b
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49126636"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357120"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Paramètres recommandés pour EOP et Microsoft Defender pour Office 365 sécurité
 
@@ -291,6 +291,6 @@ Dans PowerShell, vous utilisez les applets de commande [New-safeattachmentpolicy
 
 - Les administrateurs et les utilisateurs peuvent envoyer des faux positifs (courriers électroniques marqués comme incorrects) et des faux négatifs (courrier incorrect autorisé) à Microsoft pour analyse. Pour plus d’informations, voir [Signaler des messages et des fichiers à Microsoft](report-junk-email-messages-to-microsoft.md).
 
-- Utilisez ces liens pour obtenir des informations sur la façon de **configurer** votre [service EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-your-eop-service)et **configurer** [Microsoft Defender pour Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp). N’oubliez pas les instructions utiles dans «[protéger contre les menaces dans Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)».
+- Utilisez ces liens pour obtenir des informations sur la façon de **configurer** votre [service EOP](set-up-your-eop-service.md)et **configurer** [Microsoft Defender pour Office 365](office-365-atp.md). N’oubliez pas les instructions utiles dans «[protéger contre les menaces dans Office 365](protect-against-threats.md)».
 
 - Les **bases de sécurité pour Windows** sont disponibles ici : [où puis-je obtenir les bases de sécurité ?](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines) pour les options d’objets de stratégie de groupe/de site et les [bases de sécurité pour configurer les appareils Windows 10 dans Intune](https://docs.microsoft.com/intune/protect/security-baselines) pour la sécurité basée sur Intune. Enfin, une comparaison entre Microsoft Defender pour le point de terminaison et les bases de sécurité Microsoft Intune est disponible dans [comparaison des lignes de base de sécurité Microsoft Defender pour les points de terminaison et Windows Intune](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines).
