@@ -7,14 +7,15 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
+ms.collection: enabler-strategic
 localization_priority: Priority
 description: Créer un modèle de traitement de formulaire dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: 7edea0d36c85fba7bda31effdcdff08cd59a1174
-ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
+ms.openlocfilehash: aed918d899fe7c5e3c49b733d2411c178e9b98d0
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49002428"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087690"
 ---
 # <a name="create-a-form-processing-model-in-microsoft-sharepoint-syntex"></a>Créer un modèle de traitement de formulaire dans Microsoft SharePoint Syntex
 
@@ -34,9 +35,9 @@ Pour créer un modèle de traitement de formulaire, vous devez suivre les étape
  - Étape 5 : publier votre modèle
  - Étape 6 : utiliser votre modèle
 
-## <a name="requirements"></a>Conditions préalables
+## <a name="requirements"></a>Configuration requise
 
-Vous pouvez créer un modèle de traitement de formulaire uniquement dans les bibliothèques de documents SharePoint pour lesquelles il est activé. Si le traitement de formulaire est activé, vous pouvez voir le **AI Builder** **« Créer un modèle de traitement de formulaire »** dans le menu **Automatiser** de votre bibliothèque de documents.  Si vous souhaitez que le traitement soit activé sur votre bibliothèque de documents, vous devez contacter votre administrateur SharePoint.
+Vous pouvez créer un modèle de traitement de formulaire uniquement dans les bibliothèques de documents SharePoint pour lesquelles il est activé. Si le traitement de formulaire est activé, vous pouvez voir le **AI Builder** **« Créer un modèle de traitement de formulaire »** dans le menu **Automatiser** de votre bibliothèque de documents. Si vous souhaitez que le traitement soit activé sur votre bibliothèque de documents, vous devez contacter votre administrateur SharePoint.
 
  ![Créer un modèle de générateur d’IA](../media/content-understanding/create-ai-builder-model.png)</br>
 
@@ -44,11 +45,11 @@ Vous pouvez créer un modèle de traitement de formulaire uniquement dans les bi
 
 La première étape de la création d’un modèle de traitement de formulaire consiste à le nommer, à créer le type de contenu et à créer une vue de bibliothèque de documents pour celui-ci.
 
-1. Dans la bibliothèque de documents, sélectionnez le menu **Automatiser** , puis **AI Builder** , et enfin **Créer un modèle de traitement de formulaire**.
+1. Dans la bibliothèque de documents, sélectionnez le menu **Automatiser**, puis **AI Builder**, et enfin **Créer un modèle de traitement de formulaire**.
 
     ![Créer un modèle](../media/content-understanding/create-ai-builder-model.png)</br>
 
-2. Dans le volet **Nouveau modèle de traitement de formulaire** , dans le champ **Nom** , saisissez un nom pour votre modèle (par exemple, *Bons de commande* ).
+2. Dans le volet **Nouveau modèle de traitement de formulaire**, dans le champ **Nom**, saisissez un nom pour votre modèle (par exemple, *Bons de commande*).
 
     ![Nouveau modèle de traitement de formulaire](../media/content-understanding/new-form-model.png)</br> 
 
@@ -69,13 +70,13 @@ Après avoir créé votre nouveau modèle de traitement de formulaire, votre nav
 
    ![AI Builder de Power Apps](../media/content-understanding/powerapps.png)</br> 
  
-1. Sélectionnez **Ajouter des documents** pour commencer à ajouter des exemples de documents analysés afin de déterminer les paires de valeurs nommées pouvant être extraites. Vous pouvez ensuite choisir de **Télécharger à partir du stockage local** , de **SharePoint** ou du **Stockage Blob Azure**. Vous devez utiliser au moins cinq fichiers pour la formation.
+1. Sélectionnez **Ajouter des documents** pour commencer à ajouter des exemples de documents analysés afin de déterminer les paires de valeurs nommées pouvant être extraites. Vous pouvez ensuite choisir **Télécharger à partir d’un stockage local**, **SharePoint** ou **Espace de stockage BLOB Azure**. Vous devez utiliser au moins cinq fichiers pour la formation.
 
 2. Après avoir ajouté des fichiers, sélectionnez **Analyser** pour vérifier les informations communes à tous les fichiers. Cette opération peut prendre quelques minutes.</br> 
  
     ![Analyser les fichiers](../media/content-understanding/analyze.png)</br> 
 
-3. Une fois les fichiers analysés, dans la page **Sélectionnez les champs de formulaire à enregistrer** , sélectionnez le fichier pour afficher les champs détectés.</br>
+3. Une fois les fichiers analysés, dans la page **Sélectionnez les champs de formulaire à enregistrer**, sélectionnez le fichier pour afficher les champs détectés.</br>
 
     ![Sélectionner les champs de formulaire](../media/content-understanding/select-form-fields.png)</br> 
 
@@ -87,35 +88,35 @@ Après avoir analysé les documents pour les champs, vous pouvez maintenant voir
 
     ![Sélectionner la page des champs](../media/content-understanding/select-fields-page.png)</br> 
 
-2. Sélectionnez les champs que vous souhaitez enregistrer et cochez la case pour confirmer votre sélection. Par exemple, dans le modèle Bon de commande, choisissez de sélectionner les champs *Date* , *B.C.* et *Total*.  Notez que vous pouvez également choisir de renommer un champ si vous le souhaitez. </br>
+2. Sélectionnez les champs que vous souhaitez enregistrer et cochez la case pour confirmer votre sélection. Par exemple, dans le modèle Bon de commande, choisissez de sélectionner les champs *Date*, *B.C.* et *Total*. Notez que vous pouvez également choisir de renommer un champ si vous le souhaitez. </br>
 
     ![Sélectionnez B.C.#](../media/content-understanding/po.png)</br> 
 
-3. Si un champ n’a pas été détecté par l’analyse, vous pouvez toujours choisir de l’ajouter. Sélectionnez les informations que vous souhaitez extraire et, dans la zone de nom, saisissez le nom souhaité. Cochez ensuite la case. Notez que vous devez confirmer les champs non détectés dans vos fichiers d’exemple restants.
+3. Si un champ n’a pas été détecté par l’analyse, vous pouvez toujours choisir de l’ajouter. Sélectionnez les informations que vous souhaitez extraire et, dans la zone de nom, saisissez le nom souhaité. Activez la case à cocher. Notez que vous devez confirmer les champs non détectés dans vos fichiers d’exemple restants.
 
 4. Cliquez sur **Confirmer les champs** après avoir sélectionné les champs que vous souhaitez enregistrer. </br>
  
     ![Confirmer les champs après avoir sélectionné les champs](../media/content-understanding/confirm-fields.png)</br> 
  
-5. Sur la page **Sélectionnez les champs de formulaire que vous souhaitez enregistrer** , le nombre de champs que vous avez sélectionnés s’affiche. Sélectionnez **Terminé**.
+5. Sur la page **Sélectionnez les champs de formulaire que vous souhaitez enregistrer**, le nombre de champs que vous avez sélectionnés s’affiche. Sélectionnez **Terminé**.
 
 ## <a name="step-4-train-and-test-your-model"></a>Étape 4 : entraîner et tester votre modèle
 
 Après avoir sélectionné les champs que vous souhaitez enregistrer, la page **Résumé du modèle** vous permet d’entraîner et de tester votre modèle.
 
-1. Sur la page **Résumé du modèle** , les champs enregistrés s’afficheront dans la section **Champs sélectionnés**. Sélectionnez **Entraîner** pour commencer la formation sur vos fichiers d’exemple. Notez que cette opération peut prendre quelques minutes.</br>
+1. Sur la page **Résumé du modèle**, les champs enregistrés s’afficheront dans la section **Champs sélectionnés**. Sélectionnez **Entraîner** pour commencer la formation sur vos exemples de fichiers. Notez que cette opération peut prendre quelques minutes.</br>
 
      ![Sélectionner Entraîner les champs](../media/content-understanding/select-fields-train.png)</br> 
 
 2. Lorsque vous voyez la notification indiquant que la formation est terminée, sélectionnez **Accéder à la page Informations**. 
 
-3. Sur la page **Informations sur le modèle** , vous pouvez choisir de tester le fonctionnement de votre modèle en sélectionnant **Test rapide**. Cela vous permet de glisser et déposer des fichiers sur la page et de voir si les champs sont détectés.
+3. Sur la page **Informations sur le modèle**, vous pouvez choisir de tester le fonctionnement de votre modèle en sélectionnant **Test rapide**. Cela vous permet de glisser et déposer des fichiers sur la page et de voir si les champs sont détectés.
 
     ![Confirmer les champs](../media/content-understanding/select-fields-train.png)</br> 
 
 2. Lorsque vous voyez la notification indiquant que la formation est terminée, sélectionnez **Accéder à la page Informations**. 
 
-3. Sur la page **Informations sur le modèle** , choisissez de tester le fonctionnement de votre modèle en sélectionnant **Test rapide**. Cela vous permet de glisser et déposer des fichiers sur la page et de voir si les champs sont détectés.
+3. Sur la page **Informations sur le modèle**, choisissez de tester le fonctionnement de votre modèle en sélectionnant **Test rapide**. Cela vous permet de glisser et déposer des fichiers sur la page et de voir si les champs sont détectés.
 
 ## <a name="step-5-publish-your-model"></a>Étape 5 : publier votre modèle
 
