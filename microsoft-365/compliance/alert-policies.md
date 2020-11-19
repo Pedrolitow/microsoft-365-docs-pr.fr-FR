@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: conceptual
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
@@ -19,12 +19,12 @@ ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 ms.custom:
 - seo-marvel-apr2020
 description: Créez des stratégies d’alerte dans le centre de sécurité et conformité dans Office 365 et Microsoft 365 pour surveiller les menaces potentielles, les pertes de données et les problèmes d’autorisations.
-ms.openlocfilehash: 400c2373ea9c1f6c19e5481c620a657df2c22aa8
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 7b2d5b380f71a31302a54cedb6076e6fca54fa86
+ms.sourcegitcommit: 5480982967a90ca3060a59676a6b29155f2de861
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842144"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49350744"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>Stratégies d’alerte dans le Centre de sécurité et de conformité
 
@@ -94,7 +94,7 @@ Une stratégie d’alerte se compose des paramètres et conditions suivants.
 
   Lorsqu’une activité correspond aux conditions de la stratégie d’alerte, l’alerte générée est marquée avec la catégorie définie dans ce paramètre. Cela vous permet de suivre et de gérer les alertes qui ont le même paramètre de catégorie sur la page **afficher les alertes** dans le centre de sécurité et de conformité, car vous pouvez trier et filtrer les alertes en fonction de la catégorie.
 
-- **Gravité d’alerte** : similaire à la catégorie d’alerte, vous affectez un attribut de gravité ( **faible** , **moyenne** , **haute** ou **informatif** ) pour les stratégies d’alerte. Comme la catégorie d’alerte, lorsqu’une activité correspond aux conditions de la stratégie d’alerte, l’alerte générée est marquée avec le même niveau de gravité que celui défini pour la stratégie d’alerte. De nouveau, cela vous permet de suivre et de gérer les alertes qui ont le même paramètre de gravité sur la page **afficher les alertes** . Par exemple, vous pouvez filtrer la liste des alertes afin d’afficher uniquement les alertes dont la gravité est **élevée** .
+- **Gravité d’alerte** : similaire à la catégorie d’alerte, vous affectez un attribut de gravité (**faible**, **moyenne**, **haute** ou **informatif**) pour les stratégies d’alerte. Comme la catégorie d’alerte, lorsqu’une activité correspond aux conditions de la stratégie d’alerte, l’alerte générée est marquée avec le même niveau de gravité que celui défini pour la stratégie d’alerte. De nouveau, cela vous permet de suivre et de gérer les alertes qui ont le même paramètre de gravité sur la page **afficher les alertes** . Par exemple, vous pouvez filtrer la liste des alertes afin d’afficher uniquement les alertes dont la gravité est **élevée** .
 
     > [!TIP]
     > Lors de la configuration d’une stratégie d’alerte, envisagez d’affecter une sévérité supérieure aux activités susceptibles d’avoir des conséquences négatives, telles que la détection de programmes malveillants après livraison aux utilisateurs, l’affichage de données sensibles ou classifiées, le partage de données avec des utilisateurs externes ou d’autres activités susceptibles de provoquer une perte de données ou des menaces de sécurité. Cela peut vous aider à hiérarchiser les alertes et les actions que vous effectuez pour examiner et résoudre les causes sous-jacentes.
@@ -134,7 +134,7 @@ Le tableau indique également la planification Office 365 entreprise et Office 3
 |**Volume inhabituel de suppression de fichiers**|Génère une alerte lorsqu’un nombre anormalement élevé de fichiers est supprimé dans SharePoint ou OneDrive pendant une période courte. Cette stratégie a un paramètre de gravité **moyenne** .|Gouvernance des informations|E5/G5, Defender pour Office 365 P2 ou abonnement au complément Microsoft 365 E5|
 |**Augmentation inhabituelle d’e-mails signalés comme hameçons**|Génère une alerte lorsqu’il y a une augmentation significative du nombre de personnes au sein de votre organisation à l’aide du complément Report message dans Outlook pour signaler les messages en tant que courriers de hameçonnage. Cette stratégie a un paramètre de gravité **élevée** . Pour plus d’informations sur ce complément, reportez-vous à [la rubrique utiliser le complément de message de rapport](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).|Gestion des menaces|L’abonnement de compléments E5/G5 ou Defender pour Office 365 P2|
 |**Emprunt d’identité d’utilisateur remis à la boîte de réception/dossier**<sup>1,</sup><sup>2</sup>|Génère une alerte lorsque Microsoft détecte qu’un administrateur ou un remplacement d’utilisateur a autorisé la remise d’un message d’hameçonnage par emprunt d’identité d’utilisateur à la boîte de réception (ou à un autre dossier accessible par l’utilisateur) d’une boîte aux lettres. Voici quelques exemples de remplacements : une boîte de réception ou une règle de flux de messagerie qui autorise les messages provenant d’un expéditeur ou d’un domaine spécifique, ou une stratégie de blocage du courrier indésirable qui autorise les messages provenant d’expéditeurs ou de domaines spécifiques. Cette stratégie a un paramètre de gravité **moyenne** .|Gestion des menaces|L’abonnement de compléments E5/G5 ou Defender pour Office 365 P2|
-|**Utilisateur non autorisé à envoyer un message électronique**|Génère une alerte lorsqu’une personne de votre organisation est restreinte d’envoyer des messages sortants. Cela se produit généralement lorsqu’un compte est compromis, et que l’utilisateur est affiché sur la page **utilisateurs restreints** dans le centre de sécurité & conformité. (Pour accéder à cette page, accédez à **gestion des menaces > examiner > utilisateurs restreints** ). Cette stratégie a un paramètre de gravité **élevée** . Pour plus d’informations sur les utilisateurs avec accès restreint, consultez [la rubrique Suppression d’un utilisateur, d’un domaine ou d’une adresse IP d’une liste rouge après l’envoi de courrier indésirable](https://docs.microsoft.com/office365/securitycompliance/removing-user-from-restricted-users-portal-after-spam).|Gestion des menaces|E1/F1/G1, E3/G3 ou E5/G5|
+|**Utilisateur non autorisé à envoyer un message électronique**|Génère une alerte lorsqu’une personne de votre organisation est restreinte d’envoyer des messages sortants. Cela se produit généralement lorsqu’un compte est compromis, et que l’utilisateur est affiché sur la page **utilisateurs restreints** dans le centre de sécurité & conformité. (Pour accéder à cette page, accédez à **gestion des menaces > examiner > utilisateurs restreints**). Cette stratégie a un paramètre de gravité **élevée** . Pour plus d’informations sur les utilisateurs avec accès restreint, consultez [la rubrique Suppression d’un utilisateur, d’un domaine ou d’une adresse IP d’une liste rouge après l’envoi de courrier indésirable](https://docs.microsoft.com/office365/securitycompliance/removing-user-from-restricted-users-portal-after-spam).|Gestion des menaces|E1/F1/G1, E3/G3 ou E5/G5|
 |||||
 
 > [!NOTE]
@@ -263,7 +263,7 @@ Pour voir la catégorie affectée à une stratégie d’alerte par défaut, cons
 
 Une fois les alertes générées et affichées sur la page **afficher les alertes** dans le centre de sécurité et de conformité, vous pouvez les trier, les examiner et les résoudre. Voici quelques tâches que vous pouvez effectuer pour gérer les alertes.
 
-- **Affecter un État à des alertes.** Vous pouvez attribuer l’un des statuts suivants aux alertes : **actif** (valeur par défaut), **investigation** , **résolu** ou **fermé**. Ensuite, vous pouvez filtrer ce paramètre pour afficher les alertes ayant le même paramètre d’État. Ce paramètre d’état permet de suivre le processus de gestion des alertes.
+- **Affecter un État à des alertes.** Vous pouvez attribuer l’un des statuts suivants aux alertes : **actif** (valeur par défaut), **investigation**, **résolu** ou **fermé**. Ensuite, vous pouvez filtrer ce paramètre pour afficher les alertes ayant le même paramètre d’État. Ce paramètre d’état permet de suivre le processus de gestion des alertes.
 
 - **Afficher les détails de l’alerte.** Vous pouvez sélectionner une alerte pour afficher une page de menu volant avec des détails sur l’alerte. Les informations détaillées dépendent de la stratégie d’alerte correspondante, mais elle inclut généralement les éléments suivants : nom de l’opération réelle qui a déclenché l’alerte (par exemple, une cmdlet), une description de l’activité qui a déclenché l’alerte, l’utilisateur (ou la liste des utilisateurs) qui a déclenché l’alerte, ainsi que le nom (et le lien) de la stratégie d’alerte correspondante.
 
@@ -281,7 +281,7 @@ Une fois les alertes générées et affichées sur la page **afficher les alerte
 
 - **Supprimer les notifications par courrier électronique.** Vous pouvez désactiver (ou supprimer) les notifications par courrier électronique à partir de la page de menu volant pour une alerte. Lorsque vous supprimez des notifications par courrier électronique, Microsoft n’envoie pas de notifications lorsque des activités ou des événements répondent aux conditions de la stratégie d’alerte. Mais des alertes seront déclenchées lorsque les activités effectuées par les utilisateurs correspondront aux conditions de la stratégie d’alerte. Vous pouvez également désactiver les notifications par courrier électronique en modifiant la stratégie d’alerte.
 
-- **Résoudre les alertes.** Vous pouvez marquer une alerte comme étant résolue sur la page de menu volant pour une alerte (qui définit l’état de l’alerte sur **résolu** ). Sauf si vous modifiez le filtre, les alertes résolues ne s’affichent pas sur la page **afficher les alertes** .
+- **Résoudre les alertes.** Vous pouvez marquer une alerte comme étant résolue sur la page de menu volant pour une alerte (qui définit l’état de l’alerte sur **résolu**). Sauf si vous modifiez le filtre, les alertes résolues ne s’affichent pas sur la page **afficher les alertes** .
 
 ## <a name="viewing-cloud-app-security-alerts"></a>Affichage des alertes de sécurité des applications Cloud
 

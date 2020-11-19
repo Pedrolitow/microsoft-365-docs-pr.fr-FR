@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: Les déplacements de données sont des opérations principales qui se produisent lorsque Microsoft déplace des services et des données associées pour votre client vers une nouvelle région de centre de données.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 63536a46e28f264f49e8071710221b0847f62414
-ms.sourcegitcommit: 86e878849a8bdd456cee6a3f49939d26223fb626
+ms.openlocfilehash: ca3159aeb951fb0cb3bf3aba953979dabc6ba024
+ms.sourcegitcommit: 1db81b85d327fe423695ce675ad325e538417211
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "48997790"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49349255"
 ---
 # <a name="during-and-after-your-data-move"></a>Pendant et après le déplacement de vos données
 
@@ -46,6 +46,7 @@ Regardez le centre de messages Microsoft 365 pour confirmer le déplacement de c
 |Suisse, Liechtenstein  <br/> |1er juillet 2022  <br/> |
 |Norvège  <br/> |1er novembre 2022  <br/> |
 |Allemagne  <br/> |1er mai 2023  <br/> |
+|Brésil  <br/> |1er juin 2023  <br/> |
 
 ## <a name="exchange-online"></a>Exchange Online
 

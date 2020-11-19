@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: Les administrateurs peuvent découvrir les fonctionnalités d’usurpation d’identité disponibles dans Exchange Online Protection (EOP), qui peuvent vous aider à atténuer les attaques par hameçonnage d’expéditeurs et de domaines usurpés.
-ms.openlocfilehash: 631c38a49b3e1fa5217545449c522ccc9cf0d913
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 57d6dc8d9c1935578db15abdbb3e17e72bb64257
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844415"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49130828"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Protection contre l’usurpation d’identité dans EOP
 
@@ -39,11 +39,11 @@ Pour protéger ses utilisateurs, Microsoft prend la menace du hameçonnage au s�
 
 Les technologies anti-usurpation suivantes sont disponibles dans EOP :
 
-- **Veille contre l’usurpation d’identité**  : passez en revue les messages usurpant une identité provenant des expéditeurs dans les domaines internes et externes, et autorisez ou bloquez ces expéditeurs. Si vous souhaitez en savoir plus, consultez l’article [Configurer la veille contre l’usurpation d’identité dans Microsoft 365](learn-about-spoof-intelligence.md).
+- **Veille contre l’usurpation d’identité** : passez en revue les messages usurpant une identité provenant des expéditeurs dans les domaines internes et externes, et autorisez ou bloquez ces expéditeurs. Si vous souhaitez en savoir plus, consultez l’article [Configurer la veille contre l’usurpation d’identité dans Microsoft 365](learn-about-spoof-intelligence.md).
 
 - **Stratégies anti-hameçonnage** : dans EOP, les stratégies anti-hameçonnages vous permettent d’activer ou de désactiver la veille contre l’usurpation d’identité, d’activer ou de désactiver l’identification d’expéditeur non authentifié dans Outlook, et de spécifier l’action des expéditeurs usurpés bloqués (déplacez-vous vers le dossier courrier indésirable ou la mise en quarantaine). Les stratégies anti-hameçonnage avancées qui sont disponibles dans Microsoft Defender pour Office 365 contiennent également des paramètres anti-emprunt d’identité (expéditeurs et domaines protégés), des paramètres de veille des boîtes aux lettres et des seuils d’hameçonnage avancés ajustables. Si vous souhaitez en savoir plus, consultez l’article [Stratégies anti-hameçonnage dans Microsoft 365](set-up-anti-phishing-policies.md).
 
-- **Authentification de messagerie électronique**  : l’utilisation de l’authentification de messagerie électronique (également appelée validation de messagerie électronique) pour les enregistrements SPF, DKIM et DMARC dans DNS fait partie intégrante de tout effort anti-usurpation d’identité. Vous pouvez configurer ces enregistrements pour vos domaines de sorte que les systèmes de messagerie électronique de destination peuvent vérifier la validité des messages censés provenir d’expéditeurs figurant de vos domaines. Pour les messages entrants, Microsoft 365 requiert une authentification de messagerie électronique pour les domaines d’expéditeur. Si vous souhaitez en savoir plus, consultez la page [Authentification de messagerie électronique dans Microsoft 365](email-validation-and-authentication.md).
+- **Authentification de messagerie électronique** : l’utilisation de l’authentification de messagerie électronique (également appelée validation de messagerie électronique) pour les enregistrements SPF, DKIM et DMARC dans DNS fait partie intégrante de tout effort anti-usurpation d’identité. Vous pouvez configurer ces enregistrements pour vos domaines de sorte que les systèmes de messagerie électronique de destination peuvent vérifier la validité des messages censés provenir d’expéditeurs figurant de vos domaines. Pour les messages entrants, Microsoft 365 requiert une authentification de messagerie électronique pour les domaines d’expéditeur. Si vous souhaitez en savoir plus, consultez la page [Authentification de messagerie électronique dans Microsoft 365](email-validation-and-authentication.md).
 
 À compter du 2018 octobre, la protection contre l’usurpation d’identité est disponible dans EOP.
 
@@ -69,7 +69,7 @@ Les messages d'usurpation d'identité ont les conséquences négatives suivantes
 
   Le message semble légitime, mais l’identité de l’expéditeur a été usurpée.
 
-- **Les utilisateurs confondent les vrais messages et les faux** : même les utilisateurs qui connaissent le hameçonnage peuvent éprouver des difficultés à voir les différences entre les messages réels et les messages usurpant une identité.
+- **Les utilisateurs confondent les vrais messages et les faux**: même les utilisateurs qui connaissent le hameçonnage peuvent éprouver des difficultés à voir les différences entre les messages réels et les messages usurpant une identité.
 
   Le message suivant est un exemple de message de réinitialisation de mot de passe authentique provenant du compte Microsoft Sécurité :
 
@@ -81,7 +81,7 @@ Les messages d'usurpation d'identité ont les conséquences négatives suivantes
 
 Microsoft distingue deux types de messages usurpant une identité :
 
-- **Usurpation intra-organisationnelle**  : également connue sous le nom d’usurpation d’identité _self-to-self_. Par exemple :
+- **Usurpation intra-organisationnelle** : également connue sous le nom d’usurpation d’identité _self-to-self_. Par exemple :
 
   - L’expéditeur et le destinataire figurent dans le même domaine :
     > De : chris@contoso.com <br/> À : michelle@contoso.com
@@ -104,7 +104,7 @@ Microsoft distingue deux types de messages usurpant une identité :
 
   - SFTY est le niveau de sécurité du message. 9 indique un hameçonnage, .11 indique une usurpation intra-organisationnelle.
 
-- **Usurpation inter-domaines**  : les domaines de l’expéditeur et du destinataire sont différents et n’ont aucune relation entre eux (également appelés domaines externes). Par exemple :
+- **Usurpation inter-domaines** : les domaines de l’expéditeur et du destinataire sont différents et n’ont aucune relation entre eux (également appelés domaines externes). Par exemple :
     > De : chris@contoso.com <br/> À : michelle@tailspintoys.com
 
   Les messages qui échouent à l’[authentification composite](email-validation-and-authentication.md#composite-authentication) en raison d’une usurpation inter-domaines contiennent les valeurs d’en-têtes suivantes :
@@ -133,11 +133,11 @@ Les listes de diffusion (également connues sous le nom de listes de discussion)
 
 Par exemple, Gabriela Laureano (glaureano@contoso.com) s'intéresse à l'observation des oiseaux. Elle s'inscrit à la liste de diffusion birdwatchers@fabrikam.com et envoie le message suivant à la liste :
 
-> **De :** « Denise Bourgeois » \<glaureano@contoso.com\> <br/> **À :** liste de discussion des Ornithologues\<birdwatchers@fabrikam.com\> <br/> **Objet :** Superbe observation de geais bleus au sommet du Mont Rainier. Rainier cette semaine <br/><br/>Quelqu’un veut-il voir l’observation de cette semaine au Mont Rainier. Rainier ?
+> **De :** « Denise Bourgeois » \<glaureano@contoso.com\> <br/> **À :** liste de discussion des Ornithologues\<birdwatchers@fabrikam.com\> <br/> **Objet :** Superbe observation de geais bleus au sommet du Mont Rainier. Rainier cette semaine <p> Quelqu’un veut-il voir l’observation de cette semaine au Mont Rainier. Rainier ?
 
 Le serveur de liste de diffusion reçoit le message, modifie son contenu et le rediffuse aux membres de la liste. Le message rediffusé a la même adresse De (glaureano@contoso.com), mais une balise est ajoutée à la ligne d’objet, et un pied de page est ajouté au bas du message. Ce type de modification est courant dans les listes de diffusion et peut entraîner des faux positifs en matière d’usurpation d'identité.
 
-> **De :** « Denise Bourgeois » \<glaureano@contoso.com\> <br/> **À :** liste de discussion des Ornithologues\<birdwatchers@fabrikam.com\> <br/> **Objet :** [ORNITHOLOGUES] Superbe observation de geais bleus au sommet du Mont Rainier cette semaine. Rainier cette semaine <br/><br/> Quelqu’un veut-il voir l’observation de cette semaine au Mont Rainier. Rainier ? <br/><br/> Ce message a été envoyé à la liste de discussion Ornithologues. Vous pouvez vous désabonner à tout moment.
+> **De :** « Denise Bourgeois » \<glaureano@contoso.com\> <br/> **À :** liste de discussion des Ornithologues\<birdwatchers@fabrikam.com\> <br/> **Objet :** [ORNITHOLOGUES] Superbe observation de geais bleus au sommet du Mont Rainier cette semaine. Rainier cette semaine <p> Quelqu’un veut-il voir l’observation de cette semaine au Mont Rainier. Rainier ? <p> Ce message a été envoyé à la liste de discussion Ornithologues. Vous pouvez vous désabonner à tout moment.
 
 Pour aider les messages de la liste de diffusion à passer les vérifications d’usurpation d’identité, procédez comme suit selon que vous contrôlez ou non la liste de diffusion :
 

@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les utilisateurs peuvent découvrir comment afficher et gérer les messages mis en quarantaine dans Exchange Online Protection (EOP) qui auraient dû leur être remis.
-ms.openlocfilehash: 2a8e37dc430af5b3d3c47179c721d83832f01184
-ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
+ms.openlocfilehash: 48c727c442ee6f861499f1a72c687f7b3457c594
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48600344"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49130850"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Rechercher et publier des messages mis en quarantaine en tant qu’utilisateur dans EOP
 
@@ -54,27 +54,16 @@ En tant qu'utilisateur, vous pouvez afficher, déplacer et supprimer les message
 2. Vous pouvez trier les résultats en cliquant sur un en-tête de colonne disponible. Cliquez sur **Modifier les colonnes** pour afficher jusqu’à sept colonnes. Les valeurs par défaut sont marquées d'un astérisque (<sup>\*</sup>) :
 
    - **Reçu**<sup>\*</sup>
-
    - **Expéditeur**<sup>\*</sup>
-
    - **Sujet**<sup>\*</sup>
-
    - **Raison de la quarantaine**<sup>\*</sup>
-
    - **Déplacer ?**<sup>\*</sup>
-
    - **Type de stratégie**<sup>\*</sup>
-
    - **Expire**<sup>\*</sup>
-
    - **Destinataire**
-
    - **ID de message**
-
    - **Nom de la stratégie**
-
    - **Taille**
-
    - **Direction**
 
    Lorsque vous avez terminé, cliquez sur **Enregistrer** ou sur **Définir par défaut**.
@@ -82,29 +71,21 @@ En tant qu'utilisateur, vous pouvez afficher, déplacer et supprimer les message
 3. Pour filtrer les résultats, cliquez sur **Filtrer**. Les filtres disponibles sont :
 
    - **Date d’expiration** : filtrer les messages par date d'expiration de la quarantaine :
-
      - **Aujourd’hui**
-
      - **Dans les 2 prochains jours**
-
      - **Dans les 7 prochains jours**
-
      - **Personnaliser**: Entrer une **Date de début** et une **Date de fin**.
 
    - **Heure de réception**: Entrer une **Date de début** et une **Date de fin**.
 
    - **Raison de la mise en quarantaine :**
-
      - **E-mail de masse**
-
      - **Courrier indésirable**
-
      - **Hameçonnage**
-     
+
    - **Type de stratégie** : filtrer les messages par type de stratégie :
      - **Stratégie anti-hameçonnage**
-     - **Stratégie de filtrage de contenu hébergé**
-     
+     - **Stratégie de filtrage de contenu hébergé** (stratégie anti-courrier indésirable)
 
    Pour effacer le filtre, cliquez sur **Effacer**. Pour masquer le menu déroulant de filtrage, cliquez de nouveau sur **Filtrer**.
 
@@ -113,7 +94,7 @@ En tant qu'utilisateur, vous pouvez afficher, déplacer et supprimer les message
    - **ID du message** : l’identificateur global unique du message. Si vous sélectionnez un message dans la liste, la valeur **ID du message** apparaît dans le volet déroulant **Détails** qui s’affiche. Les administrateurs peuvent utiliser le [suivi des messages](message-trace-scc.md) pour rechercher les messages et les valeurs d’ID de message correspondantes.
 
    - **Adresse e-mail de l'expéditeur** : adresse e-mail d'un seul expéditeur.
-   
+
    - **Nom de la stratégie** : utilisez le nom de stratégie complet indiqué dans le message. La recherche n’est pas sensible à la casse.
 
    - **Adresse e-mail du destinataire** : adresse e-mail d'un seul destinataire.
@@ -165,9 +146,7 @@ Après avoir sélectionné un message, vous pouvez effectuer les actions suivant
 - **Afficher l’en-tête du message** : Sélectionnez ce lien pour afficher le texte d’en-tête du message. Pour analyser en profondeur les champs d'en-tête et les valeurs, copiez le texte d’en-tête du message dans le presse-papiers, puis sélectionnez **Analyseur d’en-tête de message Microsoft** pour accéder à l’analyseur de connectivité à distance (Faites un clic droit et sélectionnez **Ouvrir dans un nouvel onglet** si vous ne souhaitez pas laisser Microsoft 365 accomplir cette tâche). Collez l’en-tête du message dans la section analyseur d’en-tête de message de la page, puis sélectionnez **Analyser les en-têtes** :
 
 - **Prévisualiser le message** : dans le volet déroulant qui apparaît, choisissez l’une des options suivantes :
-
   - **Mode Source** : affiche la version HTML du corps du message, dans laquelle tous les liens sont désactivés.
-  
   - **Mode texte** : affiche le corps du message au format texte brut.
 
 - **Télécharger le message** : dans le volet déroulant qui s’affiche, sélectionnez **Je comprends les risques liés au téléchargement de ce message** pour enregistrer une copie locale du message au format .eml.

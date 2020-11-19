@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Découvrez les nouvelles régions centres de centre de données Office 365 et comment utiliser l’option de résidence des données pour demander un déplacement de vos données de base vers une nouvelle région.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 17b8d5c828a8c528aba180c260510345e77226d5
-ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
+ms.openlocfilehash: 6c5e63a973ca6fdf6aaaaca884df306ff790c325
+ms.sourcegitcommit: 1db81b85d327fe423695ce675ad325e538417211
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48333711"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49349243"
 ---
 # <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>Transfert de données principales vers le nouveau centre de données Microsoft 365 régions centres
 
@@ -48,6 +48,7 @@ Les clients existants dont les données client essentielles sont stockées dans 
 |**Suisse, Liechtenstein**| Union européenne | Suisse | Décembre 2019 |
 |**Allemagne**| Union européenne | Allemagne | Décembre 2019 |
 |**Norvège**| Union européenne | Norvège | Avril 2020 |
+|**Brésil**| Amériques | Brésil | Novembre 2020 |
 
 À partir du 1er octobre 2020, les clients disposant d’un abonnement Office 365 éducation inclus dans le client ne sont pas éligibles pour la migration.
 

@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: Les administrateurs peuvent découvrir comment EOP utilise l’authentification de messagerie électronique (SPF, DKIM et DMARC) pour empêcher l’usurpation d’identité, le hameçonnage et les courriers indésirables.
-ms.openlocfilehash: d490caf600fef9d9caab79a1a97ec29637e10d66
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 7c196b68d88187da2890cc886f646c5416ef9a11
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202974"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131072"
 ---
 # <a name="email-authentication-in-eop"></a>Authentification de messagerie électronique dans EOP
 
@@ -32,9 +32,9 @@ ms.locfileid: "48202974"
 
 L’authentification de messagerie électronique (également appelée validation du courrier électronique) est un ensemble de normes qui tente de bloquer l’usurpation d’identité (messages électroniques provenant de faux expéditeurs). Dans toutes les organisations Microsoft 365, EOP utilise ces normes pour vérifier les e-mails entrants :
 
-- [SPF](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing?view=o365-worldwide)
+- [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
-- [DKIM](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email?view=o365-worldwide)
+- [DKIM](use-dkim-to-validate-outbound-email.md)
 
 - [DMARC](use-dmarc-to-validate-email.md)
 
@@ -175,7 +175,7 @@ Pour autoriser cet expéditeur à envoyer un courrier non authentifié, remplace
 
 ### <a name="create-an-allow-entry-for-the-senderrecipient-pair"></a>Créer une entrée d’autorisation pour la paire expéditeur/destinataire
 
-Pour contourner le filtrage du courrier indésirable, certaines parties du filtrage du hameçonnage, et non le filtrage des programmes malveillants pour des expéditeurs spécifiques, consultez la rubrique [Créer des listes d’expéditeurs sûrs dans Microsoft 365](create-safe-sender-lists-in-office-365.md).
+Pour contourner le filtrage du courrier indésirable, certaines parties du filtrage pour le hameçonnage, et non le filtrage des programmes malveillants pour des expéditeurs spécifiques, consultez la rubrique [Créer des listes d’expéditeurs sûrs dans Microsoft 365](create-safe-sender-lists-in-office-365.md).
 
 ### <a name="ask-the-sender-to-configure-email-authentication-for-domains-you-dont-own"></a>Demandez à l’expéditeur de configurer l’authentification de courrier électronique pour les domaines que vous ne possédez pas
 
@@ -188,7 +188,7 @@ En raison du problème de courrier indésirable et de hameçonnage, Microsoft Co
 - S’ils utilisent des expéditeurs en bloc pour envoyer du courrier électronique en leur nom, vérifiez que le domaine dans l'adresse De (s'il leur appartient) s'aligne sur le domaine qui franchit les protocoles SPF ou DMARC.
 
 - Vérifiez que les emplacements suivants (s’ils sont utilisés) sont inclus dans l’enregistrement SPF :
-  
+
   - Serveurs de messagerie électronique locaux.
   - Courrier électronique envoyé à partir d’un fournisseur Software as-a-service (Logiciel en tant que service).
   - Courrier électronique envoyé à partir d’un service d’hébergement Cloud (Microsoft Azure, GoDaddy, Rackspace, services Web Amazon, etc.).

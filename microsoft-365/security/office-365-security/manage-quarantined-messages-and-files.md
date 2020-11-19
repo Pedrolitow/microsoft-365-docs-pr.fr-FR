@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à afficher et à gérer les messages mis en quarantaine pour tous les utilisateurs dans Exchange Online Protection (EOP). Les administrateurs dans les organisations disposant de Microsoft Defender pour Office 365 peuvent également gérer les fichiers mis en quarantaine dans SharePoint Online, OneDrive entreprise et Microsoft Teams.
-ms.openlocfilehash: 9d58f8c08d994e5e9736c8223239b54e52c4edab
-ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
+ms.openlocfilehash: 94dfc8503d61c16aadc8e9d0ccfd295e2684fbba
+ms.sourcegitcommit: 1db81b85d327fe423695ce675ad325e538417211
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48951046"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49349279"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Gérer les messages et fichiers mis en quarantaine en tant qu’administrateur dans Exchange Online PowerShell
 
@@ -48,9 +48,11 @@ Vous pouvez afficher et gérer les messages mis en quarantaine dans le centre de
 
 - Les messages mis en quarantaine sont conservés pendant une période de temps par défaut avant d’être supprimés automatiquement :
 
-  - Messages mis en quarantaine par des stratégies de blocage du courrier indésirable (courrier indésirable, hameçonnage et courrier en masse) : 30 jours. Il s’agit de la valeur par défaut et la valeur maximale. Pour configurer cette valeur, reportez-vous à la rubrique [configurer des stratégies anti-courrier indésirable](configure-your-spam-filter-policies.md).
+  - 30 jours pour les messages mis en quarantaine par les stratégies de blocage du courrier indésirable (courrier indésirable, hameçonnage et courrier en nombre). Il s’agit de la valeur par défaut et la valeur maximale. Pour configurer (inférieure) cette valeur, consultez la rubrique [configure anti-spam Policies](configure-your-spam-filter-policies.md).
 
-  - Messages contenant des programmes malveillants : 15 jours.
+  - 15 jours pour les messages contenant des programmes malveillants.
+
+  - 15 jours pour les fichiers mis en quarantaine par la protection avancée contre les menaces pour SharePoint, OneDrive et Microsoft teams dans Defender pour Office 365.
 
   Lorsqu’un message arrive à expiration en quarantaine, vous ne pouvez pas le récupérer.
 
@@ -81,46 +83,46 @@ Vous pouvez afficher et gérer les messages mis en quarantaine dans le centre de
 
 4. Pour filtrer les résultats, cliquez sur **Filtrer**. Les filtres disponibles sont :
 
-   - **Date d’expiration**  : filtrer les messages par date d'expiration de la quarantaine :
+   - **Date d’expiration** : filtrer les messages par date d'expiration de la quarantaine :
      - **Aujourd’hui**
      - **Dans les 2 prochains jours**
      - **Dans les 7 prochains jours**
-     - **Personnaliser** : Entrer une **Date de début** et une **Date de fin**.
+     - **Personnaliser**: Entrer une **Date de début** et une **Date de fin**.
 
-   - **Heure de réception** : Entrer une **Date de début** et une **Date de fin**.
+   - **Heure de réception**: Entrer une **Date de début** et une **Date de fin**.
 
    - **Raison de la mise en quarantaine :**
-     - **Stratégie** : le message correspond aux conditions d’une règle de flux de messagerie (également appelée règle de transport).
+     - **Stratégie**: le message correspond aux conditions d’une règle de flux de messagerie (également appelée règle de transport).
      - **E-mail de masse**
-     - **Hameçonnage** : le verdict de filtrage du courrier indésirable était le message de **hameçonnage** ou la protection anti-hameçonnage a mis en quarantaine le message ( [paramètres d’usurpation](set-up-anti-phishing-policies.md#spoof-settings) ou [protection contre](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)l’usurpation d’identité).
+     - **Hameçonnage**: le verdict de filtrage du courrier indésirable était le message de **hameçonnage** ou la protection anti-hameçonnage a mis en quarantaine le message ([paramètres d’usurpation](set-up-anti-phishing-policies.md#spoof-settings) ou [protection contre](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)l’usurpation d’identité).
      - **Programme malveillant**
      - **Courrier indésirable**
      - **Hameçonnage à niveau de confiance élevé**
 
-   - **Type de stratégie**  : filtrer les messages par type de stratégie :
+   - **Type de stratégie** : filtrer les messages par type de stratégie :
      - **Stratégie anti-programme malveillant**
      - **Stratégie de pièces jointes fiables**
      - **Stratégie anti-hameçonnage**
      - **Stratégie de filtrage de contenu hébergé** (stratégie de blocage du courrier indésirable)
      - **Règle de transport**
 
-   - **Destinataire du message** : tous les utilisateurs ou seulement les messages qui vous sont envoyés. Les utilisateurs finaux peuvent gérer uniquement les messages mis en quarantaine qui leur sont envoyés.
+   - **Destinataire du message**: tous les utilisateurs ou seulement les messages qui vous sont envoyés. Les utilisateurs finaux peuvent gérer uniquement les messages mis en quarantaine qui leur sont envoyés.
 
    Pour effacer le filtre, cliquez sur **Effacer**. Pour masquer le menu déroulant de filtrage, cliquez de nouveau sur **Filtrer**.
 
 5. Utilisez **Trier les résultats par** (le bouton **ID de message** par défaut) et une valeur correspondante pour rechercher des messages spécifiques. Les caractères génériques ne sont pas pris en charge. Vous pouvez effectuer une recherche sur les valeurs suivantes :
 
-   - **ID du message**  : l’identificateur global unique du message.
+   - **ID du message** : l’identificateur global unique du message.
 
      Par exemple, vous avez utilisé le [suivi des messages](message-trace-scc.md) pour rechercher un message qui a été envoyé à un utilisateur de votre organisation, et vous déterminez que le message a été mis en quarantaine au lieu d’être remis. Veillez à inclure la valeur d’ID de message complète, qui peut inclure des chevrons ( \<\> ). Par exemple : `<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`.
 
-   - **Adresse e-mail de l'expéditeur**  : adresse e-mail d'un seul expéditeur.
+   - **Adresse e-mail de l'expéditeur** : adresse e-mail d'un seul expéditeur.
 
-   - **Nom de la stratégie**  : utilisez le nom de stratégie complet indiqué dans le message. La recherche n’est pas sensible à la casse.
+   - **Nom de la stratégie** : utilisez le nom de stratégie complet indiqué dans le message. La recherche n’est pas sensible à la casse.
 
-   - **Adresse e-mail du destinataire**  : adresse e-mail d'un seul destinataire.
+   - **Adresse e-mail du destinataire** : adresse e-mail d'un seul destinataire.
 
-   - **Sujet**  : utiliser l'intégralité du sujet du message. La recherche n’est pas sensible à la casse.
+   - **Sujet** : utiliser l'intégralité du sujet du message. La recherche n’est pas sensible à la casse.
   
    - **Nom** de la stratégie : nom de la stratégie responsable de la mise en quarantaine du message.
 
@@ -130,35 +132,35 @@ Une fois le message spécifique mis en quarantaine trouvé, sélectionnez-le pou
 
 #### <a name="view-quarantined-message-details"></a>Afficher les détails des messages mis en quarantaine
 
-Lorsque vous sélectionnez un message électronique dans la liste, les détails de message suivants s’affichent dans le volet déroulant **Détails**  :
+Lorsque vous sélectionnez un message électronique dans la liste, les détails de message suivants s’affichent dans le volet déroulant **Détails** :
 
-- **ID du message**  : l’identificateur global unique pour le message.
+- **ID du message** : l’identificateur global unique pour le message.
 
 - **Adresse de l’expéditeur**
 
-- **Reçu**  : Date et heure de réception du message.
+- **Reçu** : Date et heure de réception du message.
 
 - **Subject**
 
-- **Raison** de la mise en quarantaine : indique si un message a été identifié **Bulk** comme **courrier indésirable** , **hameçon, hameçon** , correspond à une règle de flux de messagerie ( **règle de transport** ) ou a été identifié comme contenant un **programme malveillant**.
+- **Raison** de la mise en quarantaine : indique si un message a été identifié **Bulk** comme **courrier indésirable**, **hameçon, hameçon**, correspond à une règle de flux de messagerie (**règle de transport**) ou a été identifié comme contenant un **programme malveillant**.
 
 - **Nombre de destinataires**
 
-- **Destinataires**  : si le message contient plusieurs destinataires, vous devez cliquer sur **Prévisualiser le message** ou **Afficher l’en-tête du message** pour afficher la liste complète des destinataires.
+- **Destinataires** : si le message contient plusieurs destinataires, vous devez cliquer sur **Prévisualiser le message** ou **Afficher l’en-tête du message** pour afficher la liste complète des destinataires.
 
-- **Expires**  : Date et heure auxquelles le message sera automatiquement et définitivement supprimé de la quarantaine.
+- **Expires** : Date et heure auxquelles le message sera automatiquement et définitivement supprimé de la quarantaine.
 
-- **Déplacé pour**  : toutes les adresses e-mail (le cas échéant) auxquelles le message a été envoyé.
+- **Déplacé pour** : toutes les adresses e-mail (le cas échéant) auxquelles le message a été envoyé.
 
-- **Pas encore déplacé pour**  : toutes les adresses e-mail (le cas échéant) auxquelles le message n'a pas encore été envoyé.
+- **Pas encore déplacé pour** : toutes les adresses e-mail (le cas échéant) auxquelles le message n'a pas encore été envoyé.
 
 ### <a name="take-action-on-quarantined-email"></a>Effectuer une action sur les messages mis en quarantaine
 
 Une fois que vous avez sélectionné un message, vous disposez de plusieurs options pour effectuer les messages dans le volet de la fenêtre de **Détails** :
 
-- **Message de publication** : dans le volet flyout qui apparaît, choisissez les options suivantes :
+- **Message de publication**: dans le volet flyout qui apparaît, choisissez les options suivantes :
 
-  - **Signaler les messages à Microsoft pour analyse** : cette option est sélectionnée par défaut et signale le message en quarantaine à Microsoft comme un faux positif. Si le message a été mis en quarantaine en tant que courrier indésirable, en masse, hameçonnage ou contenant un programme malveillant, le message est également signalé à l’équipe d’analyse du courrier indésirable de Microsoft. En fonction de leur analyse, les règles de filtrage du courrier indésirable à l’échelle du service peuvent être ajustées pour autoriser le message.
+  - **Signaler les messages à Microsoft pour analyse**: cette option est sélectionnée par défaut et signale le message en quarantaine à Microsoft comme un faux positif. Si le message a été mis en quarantaine en tant que courrier indésirable, en masse, hameçonnage ou contenant un programme malveillant, le message est également signalé à l’équipe d’analyse du courrier indésirable de Microsoft. En fonction de leur analyse, les règles de filtrage du courrier indésirable à l’échelle du service peuvent être ajustées pour autoriser le message.
 
   - Choisissez l’une des options suivantes :
     - **Diffuser les messages à tous les destinataires**
@@ -172,26 +174,26 @@ Une fois que vous avez sélectionné un message, vous disposez de plusieurs opti
   - Vous ne pouvez pas diffuser un message au même destinataire plus d’une fois.
   - Seuls les destinataires qui n’ont pas reçu le message s’affichent dans la liste des destinataires potentiels.
 
-- **Afficher l’en-tête du message**  : Sélectionnez ce lien pour afficher le texte d’en-tête du message. Pour analyser en profondeur les champs d'en-tête et les valeurs, copiez le texte d’en-tête du message dans le presse-papiers, puis sélectionnez **Analyseur d’en-tête de message Microsoft** pour accéder à l’analyseur de connectivité à distance (Faites un clic droit et sélectionnez **Ouvrir dans un nouvel onglet** si vous ne souhaitez pas laisser Microsoft 365 accomplir cette tâche). Collez l’en-tête du message dans la section analyseur d’en-tête de message de la page, puis sélectionnez **Analyser les en-têtes**  :
+- **Afficher l’en-tête du message** : Sélectionnez ce lien pour afficher le texte d’en-tête du message. Pour analyser en profondeur les champs d'en-tête et les valeurs, copiez le texte d’en-tête du message dans le presse-papiers, puis sélectionnez **Analyseur d’en-tête de message Microsoft** pour accéder à l’analyseur de connectivité à distance (Faites un clic droit et sélectionnez **Ouvrir dans un nouvel onglet** si vous ne souhaitez pas laisser Microsoft 365 accomplir cette tâche). Collez l’en-tête du message dans la section analyseur d’en-tête de message de la page, puis sélectionnez **Analyser les en-têtes** :
 
-- **Prévisualiser le message**  : dans le volet déroulant qui apparaît, choisissez l’une des options suivantes :
+- **Prévisualiser le message** : dans le volet déroulant qui apparaît, choisissez l’une des options suivantes :
 
-  - **Mode Source**  : affiche la version HTML du corps du message, dans laquelle tous les liens sont désactivés.
-  - **Mode texte**  : affiche le corps du message au format texte brut.
+  - **Mode Source** : affiche la version HTML du corps du message, dans laquelle tous les liens sont désactivés.
+  - **Mode texte** : affiche le corps du message au format texte brut.
 
-- **Supprimer de la quarantaine** : après avoir cliqué sur **Oui** dans le message d’avertissement qui s’affiche, le message est immédiatement supprimé sans être envoyé aux destinataires d’origine.
+- **Supprimer de la quarantaine**: après avoir cliqué sur **Oui** dans le message d’avertissement qui s’affiche, le message est immédiatement supprimé sans être envoyé aux destinataires d’origine.
 
-- **Télécharger le message**  : dans le volet déroulant qui s’affiche, sélectionnez **Je comprends les risques liés au téléchargement de ce message** pour enregistrer une copie locale du message au format .eml.
+- **Télécharger le message** : dans le volet déroulant qui s’affiche, sélectionnez **Je comprends les risques liés au téléchargement de ce message** pour enregistrer une copie locale du message au format .eml.
 
-- **Envoyer un message** : dans le volet flyout qui apparaît, choisissez les options suivantes :
+- **Envoyer un message**: dans le volet flyout qui apparaît, choisissez les options suivantes :
 
-  - **Type d’objet** : **e-mail** (par défaut), **URL** ou **pièce jointe**.
+  - **Type d’objet**: **e-mail** (par défaut), **URL** ou **pièce jointe**.
 
-  - **Format d’envoi** : **ID de message réseau** (par défaut, avec la valeur correspondante dans la zone **ID de message réseau** ) ou **fichier** (accédez à un fichier. eml ou. MSG local). Notez que si vous sélectionnez **fichier** , puis **ID de message réseau** , la valeur initiale est supprimée.
+  - **Format d’envoi**: **ID de message réseau** (par défaut, avec la valeur correspondante dans la zone **ID de message réseau** ) ou **fichier** (accédez à un fichier. eml ou. MSG local). Notez que si vous sélectionnez **fichier** , puis **ID de message réseau**, la valeur initiale est supprimée.
 
-  - **Destinataires** : saisissez au bail d’un destinataire d’origine du message, ou cliquez sur **Sélectionner tout** pour identifier tous les destinataires. Vous pouvez également cliquer sur **Sélectionner tout** , puis supprimer des destinataires de manière sélective.
+  - **Destinataires**: saisissez au bail d’un destinataire d’origine du message, ou cliquez sur **Sélectionner tout** pour identifier tous les destinataires. Vous pouvez également cliquer sur **Sélectionner tout** , puis supprimer des destinataires de manière sélective.
 
-  - **Raison du dépôt** : **ne doit pas avoir été bloqué** (par défaut) ou **doit avoir été bloqué**.
+  - **Raison du dépôt**: **ne doit pas avoir été bloqué** (par défaut) ou **doit avoir été bloqué**.
 
   Lorsque vous avez terminé, cliquez sur **Envoyer**.
 
@@ -201,12 +203,12 @@ Si vous ne déplacez pas ou ne supprimez pas le message, il sera supprimé aprè
 
 Lorsque vous sélectionnez plusieurs messages mis en quarantaine dans la liste (jusqu’à 100), le volet déroulant **Actions groupées** s’affiche et vous pouvez effectuer les actions suivantes :
 
-- **Déplacer les messages**  : Les options sont les mêmes que lorsque vous déplacez un seul message, sauf que vous ne pouvez pas sélectionner **Déplacer les messages pour des destinataires spécifiques**. Vous pouvez seulement sélectionner **Déplacer le message pour tous les destinataires** ou **Déplacer les messages pour d'autres personnes**.
+- **Déplacer les messages** : Les options sont les mêmes que lorsque vous déplacez un seul message, sauf que vous ne pouvez pas sélectionner **Déplacer les messages pour des destinataires spécifiques**. Vous pouvez seulement sélectionner **Déplacer le message pour tous les destinataires** ou **Déplacer les messages pour d'autres personnes**.
 
   > [!NOTE]
   > Prenons le scénario suivant : john@gmail.com envoie un message à faith@contoso.com et john@subsidiary.contoso.com. Gmail bifurcation ce message en deux exemplaires qui sont tous deux routés en quarantaine en tant que hameçonnage dans Microsoft. Un administrateur publie ces deux messages dans admin@contoso.com. Le premier message publié qui atteint la boîte aux lettres d’administration est remis. Le deuxième message publié est identifié comme remise en double et est ignoré. Les messages sont identifiés comme étant des doublons s’ils ont le même ID de message et le même horaire de réception.
 
-- **Supprimer des messages**  : le message est immédiatement supprimé sans être envoyé aux destinataires d’origine dès que vous cliquez sur **Oui** dans le message d’avertissement qui s’affiche.
+- **Supprimer des messages** : le message est immédiatement supprimé sans être envoyé aux destinataires d’origine dès que vous cliquez sur **Oui** dans le message d’avertissement qui s’affiche.
 
 Lorsque vous avez terminé, cliquez sur **Fermer**.
 
@@ -237,7 +239,7 @@ Dans les organisations avec Defender pour Office 365, les administrateurs peuven
 
 4. Pour filtrer les résultats, cliquez sur **Filtrer**. Les filtres disponibles sont :
 
-   - **Date d’expiration**  : filtrer les messages par date d'expiration de la quarantaine :
+   - **Date d’expiration** : filtrer les messages par date d'expiration de la quarantaine :
      - **Aujourd’hui**
      - **Dans les 2 prochains jours**
      - **Dans les 7 prochains jours**
@@ -253,24 +255,24 @@ Une fois que vous avez trouvé un fichier en quarantaine spécifique, sélection
 Lorsque vous sélectionnez un fichier dans la liste, les détails de fichier suivants s’affichent dans le volet flyout de **Détails** :
 
 - **Nom de fichier**
-- **URL du fichier** : URL qui définit l’emplacement du fichier (par exemple, dans SharePoint Online).
+- **URL du fichier**: URL qui définit l’emplacement du fichier (par exemple, dans SharePoint Online).
 - **Contenu malveillant détecté sur** Date/heure de mise en quarantaine du fichier.
-- **Expire** : date à laquelle le fichier sera supprimé de la quarantaine.
-- **Détecté par** : Defender pour Office 365 ou le moteur anti-programme malveillant de Microsoft.
+- **Expire**: date à laquelle le fichier sera supprimé de la quarantaine.
+- **Détecté par**: Defender pour Office 365 ou le moteur anti-programme malveillant de Microsoft.
 - **Déplacer ?**
 - **Nom du programme malveillant**
-- **ID de document** : identificateur unique pour le document.
-- **Taille du fichier** : en kilo-octets (Ko).
+- **ID de document**: identificateur unique pour le document.
+- **Taille du fichier**: en kilo-octets (Ko).
 - **Organisation** ID unique de votre organisation.
 - **Dernière modification**
-- **Modifié par** : utilisateur qui a modifié le fichier pour la dernière fois.
-- **Valeur 256-bit (SHA-256) de l’algorithme de hachage sécurisé** : vous pouvez utiliser cette valeur de hachage pour identifier le fichier dans d’autres magasins de réputation ou dans d’autres emplacements de votre environnement.
+- **Modifié par**: utilisateur qui a modifié le fichier pour la dernière fois.
+- **Valeur 256-bit (SHA-256) de l’algorithme de hachage sécurisé**: vous pouvez utiliser cette valeur de hachage pour identifier le fichier dans d’autres magasins de réputation ou dans d’autres emplacements de votre environnement.
 
 ### <a name="take-action-on-quarantined-files"></a>Effectuer des actions sur les fichiers mis en quarantaine
 
 Lorsque vous sélectionnez un fichier dans la liste, vous pouvez effectuer les actions suivantes sur le fichier dans le volet flyout de **Détails** :
 
-- **Fichiers de version** : sélectionnez (par défaut) ou désélectionnez **les fichiers de rapports à Microsoft pour analyse** , puis cliquez sur **libérer les fichiers**.
+- **Fichiers de version**: sélectionnez (par défaut) ou désélectionnez **les fichiers de rapports à Microsoft pour analyse**, puis cliquez sur **libérer les fichiers**.
 - **Télécharger un fichier**
 - **Supprimer le fichier de la quarantaine**
 
@@ -281,7 +283,7 @@ Si vous ne libérez pas ou ne supprimez pas les fichiers, ils seront supprimés 
 Lorsque vous sélectionnez plusieurs fichiers mis en quarantaine dans la liste (jusqu’à 100), le volet flyout **actions en bloc** s’affiche et vous pouvez effectuer les actions suivantes :
 
 - **Fichiers de version**
-- **Supprimer des fichiers** : après avoir cliqué sur **Oui** dans le message d’avertissement qui s’affiche, les fichiers sont immédiatement supprimés.
+- **Supprimer des fichiers**: après avoir cliqué sur **Oui** dans le message d’avertissement qui s’affiche, les fichiers sont immédiatement supprimés.
 
 ## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-view-and-manage-quarantined-messages-and-files"></a>Utiliser Exchange Online PowerShell ou l’environnement de ligne de commande Exchange EOP PowerShell autonome pour afficher et gérer les messages et les fichiers mis en quarantaine
 
