@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 1af320ee6151036000e4e8c6fedc4d9152411283
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: bf8672ee6c3332ea6f8522f5086d72e58d1b9048
+ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46530234"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49371489"
 ---
 # <a name="configurable-settings---microsoft-managed-desktop"></a>Paramètres configurables : Bureau géré Microsoft
 
@@ -22,7 +22,7 @@ Microsoft Managed Desktop déploie les paramètres et les stratégies qui sont a
 
 Configurable Settings in Microsoft Managed Desktop offre aux administrateurs informatiques un moyen de personnaliser et de déployer des paramètres propres à leur organisation et leurs besoins professionnels. Ces paramètres s’ajoutent aux stratégies et aux paramètres de configuration des appareils qui sont gérés par le bureau géré Microsoft.  
 
-Les modifications de paramètres configurables sont apportées dans le Cloud et appliquées à vos appareils de bureau gérés par Microsoft dans des groupes de déploiement définis. Ce processus est similaire à la façon dont Microsoft Managed Desktop gère les modifications apportées aux stratégies et paramètres de l’appareil configuruation qui sont définis et gérés par le service. À l’aide de la même procédure que celle utilisée par Microsoft Managed Desktop pour le déploiement des modifications, vous continuez à faire avancer votre organisation à l’aide des pratiques modernes de gestion informatique.
+Les modifications de paramètres configurables sont apportées dans le Cloud et appliquées à vos appareils de bureau gérés par Microsoft dans des groupes de déploiement définis. Ce processus est similaire à la façon dont Microsoft Managed Desktop gère les modifications apportées aux paramètres de configuration des appareils et aux stratégies définies et gérées par le service. À l’aide de la même procédure que celle utilisée par Microsoft Managed Desktop pour le déploiement des modifications, vous continuez à faire avancer votre organisation à l’aide des pratiques modernes de gestion informatique.
 
 ## <a name="when-to-use-configurable-settings"></a>Quand utiliser des paramètres configurables ?
 
@@ -64,7 +64,7 @@ Vous configurez et modifiez les étapes dans le portail d’administration de bu
 Tous les paramètres configurables sont gérés à l’aide du portail d’administration de bureau géré Microsoft. Pour plus d’informations, consultez la rubrique [Deploy changes](config-setting-deploy.md). 
 
 **Étape 5-suivi des modifications** – suivez la progression de vos modifications sur l’état du déploiement. Pour chaque paramètre, vous pouvez :
-- **Suivre l’avancement** : suivre l’état après le déploiement de la modification. L’État prend la valeur **en cours**, puis **terminé**ou **échec**. En cas d’échec d’un déploiement, une demande de support est automatiquement ouverte pour les opérations de bureau géré Microsoft pour examiner le problème.  
+- **Suivre l’avancement** : suivre l’état après le déploiement de la modification. L’État prend la valeur **en cours**, puis **terminé** ou **échec**. En cas d’échec d’un déploiement, une demande de support est automatiquement ouverte pour les opérations de bureau géré Microsoft pour examiner le problème.  
 - **Voir version déployée** : chaque modification déployée possède un numéro de version.
 - **Rétablir les modifications** : la restauration d’une modification arrête le déploiement actuel et rétablit tous les groupes avec les dernières modifications qui ont été déployées sur tous les groupes. Vous revenez à la dernière valeur de paramètre correcte.
 - **Valider les modifications** -une fois le déploiement terminé, vérifiez que les modifications ont été appliquées comme prévu.  

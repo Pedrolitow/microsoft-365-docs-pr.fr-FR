@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Décrit comment préparer la mise en service des utilisateurs à Microsoft 365 à l’aide de la synchronisation d’annuaires et des avantages à long terme de cette méthode.
-ms.openlocfilehash: b74310b0f444da118699c5ad5fbb68b15519b830
-ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
+ms.openlocfilehash: e49cc4472b47320650d8a0ca90395b69ae5b6df7
+ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48773984"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49371623"
 ---
 # <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>Préparer la synchronisation d'annuaires pour Microsoft 365
 
@@ -127,7 +127,7 @@ Les attributs que vous devez préparer sont répertoriés ici :
     Notez que les caractères non valides s’appliquent aux caractères qui suivent le délimiteur de type et à «  : », ce qui signifie que SMTP :User@contso.com est autorisé, mais SMTP :user :M@contoso.com ne l’est pas.
 
     > [!IMPORTANT]
-    > Toutes les adresses SMTP (simple mail transport Protocol) doivent respecter les normes de messagerie électronique. S’il existe des adresses en double ou indésirables, consultez la rubrique d’aide [suppression des adresses de proxy en double et indésirables dans Exchange](https://go.microsoft.com/fwlink/?LinkId=293860).
+    > Toutes les adresses SMTP (simple mail transport Protocol) doivent respecter les normes de messagerie électronique. Supprimez les adresses en double ou indésirables, le cas échéant.
 
 - **sAMAccountName**
 
@@ -161,7 +161,7 @@ Les attributs que vous devez préparer sont répertoriés ici :
   - Caractères autorisés : A – Z, a-z, 0 – 9, '. - _ ! # ^ ~
   - Les lettres avec des signes diacritiques, tels que les trémas, les accents et les tildes, sont des caractères non valides.
   - Le caractère @ est requis dans chaque valeur **userPrincipalName** .
-  - Le caractère @ ne peut pas être le premier caractère dans chaque valeur **userPrincipalName** .
+  - Le caractère @ ne peut pas être le premier caractère dans chaque valeur **userPrincipalName**.
   - Le nom d’utilisateur ne peut pas se terminer par un point (.), une esperluette ( &amp; ), un espace ou un signe arobase (@).
   - Le nom d’utilisateur ne peut pas contenir d’espaces.
   - Les domaines routables doivent être utilisés ; par exemple, les domaines locaux ou internes ne peuvent pas être utilisés.
@@ -170,7 +170,7 @@ Les attributs que vous devez préparer sont répertoriés ici :
 
 ## <a name="3-prepare-the-userprincipalname-attribute"></a>3. préparer l’attribut userPrincipalName
 
-Active Directory est conçu pour permettre aux utilisateurs finaux de votre organisation de se connecter à votre annuaire à l’aide de **sAMAccountName** ou de **userPrincipalName** . De même, les utilisateurs finaux peuvent se connecter à Microsoft 365 en utilisant le nom d’utilisateur principal (UPN) de leur compte professionnel ou scolaire. La synchronisation d’annuaires tente de créer des utilisateurs dans Azure Active Directory à l’aide du même nom d’utilisateur principal qui se trouve dans votre AD DS. Le nom d’utilisateur principal est mis en forme comme une adresse de messagerie.
+Active Directory est conçu pour permettre aux utilisateurs finaux de votre organisation de se connecter à votre annuaire à l’aide de **sAMAccountName** ou de **userPrincipalName**. De même, les utilisateurs finaux peuvent se connecter à Microsoft 365 en utilisant le nom d’utilisateur principal (UPN) de leur compte professionnel ou scolaire. La synchronisation d’annuaires tente de créer des utilisateurs dans Azure Active Directory à l’aide du même nom d’utilisateur principal qui se trouve dans votre AD DS. Le nom d’utilisateur principal est mis en forme comme une adresse de messagerie.
 
 Dans Microsoft 365, le nom d’utilisateur principal est l’attribut par défaut utilisé pour générer l’adresse de messagerie. Il est facile d’obtenir le **userPrincipalName** (dans AD DS et dans Azure AD) et l’adresse de messagerie principale dans **proxyAddresses** définie sur différentes valeurs. Lorsqu’elles sont définies sur des valeurs différentes, les administrateurs et les utilisateurs finaux peuvent être confondus.
 

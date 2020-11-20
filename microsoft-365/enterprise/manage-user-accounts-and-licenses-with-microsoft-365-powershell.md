@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 26b9ff81-93b0-4251-beaf-3c9f1d7c80c8
 description: Découvrez comment gérer les comptes d’utilisateur, les licences et les groupes Microsoft 365 avec PowerShell.
-ms.openlocfilehash: ec60fcfe3c3d2c0e26cb2cca6a56741067d154c0
-ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
+ms.openlocfilehash: d3745b9365c67615efe32881408d1a717b8dbbed
+ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49073124"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49371535"
 ---
 # <a name="manage-microsoft-365-user-accounts-licenses-and-groups-with-powershell"></a>Gérer les comptes d’utilisateurs, les licences et les groupes Microsoft 365 avec PowerShell
 
@@ -53,5 +53,6 @@ Pour plus d'informations, consultez les articles suivants :
 - [Suppression de licences à des comptes d’utilisateurs](remove-licenses-from-user-accounts-with-microsoft-365-powershell.md)
 
 ## <a name="groups"></a>Groupes
-- [Maintenir l’appartenance à un groupe](maintain-group-membership-with-microsoft-365-powershell.md)
+- [Gérer les groupes de sécurité](manage-security-groups-with-microsoft-365-powershell.md)
+- [Tenir à jour l’appartenance au groupe de sécurité](maintain-group-membership-with-microsoft-365-powershell.md)
 - [Gestion des groupes Microsoft 365](manage-microsoft-365-groups-with-powershell.md)

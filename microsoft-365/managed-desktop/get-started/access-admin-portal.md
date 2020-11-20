@@ -9,12 +9,12 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: 5adf57c2397c4de3c5ea8622a2a9be7207ebf152
-ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
+ms.openlocfilehash: 66e4e5c305947f90f935563a3baf0592ce42480a
+ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48379294"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49371669"
 ---
 # <a name="access-the-admin-portal"></a>Accéder au portail d’administration
 
@@ -37,7 +37,7 @@ Chacun des rôles ci-dessous peut être affecté pour fournir différents niveau
 |Administrateur général     | Les administrateurs disposant de ce rôle disposent **d’autorisations de lecture et d’écriture sur toutes les fonctionnalités** du portail d’administration de bureau géré Microsoft.         |
 |Lecteur général     | Les administrateurs disposant de ce rôle disposent d' **autorisations en lecture seule sur toutes les fonctionnalités** du portail d’administration de bureau géré Microsoft.         |
 |Administrateur du service Intune     |  Les administrateurs disposant de ce rôle disposent **d’autorisations de lecture et d’écriture sur les fonctionnalités qui ne sont pas liées à la sécurité** dans le portail d’administration de bureau géré Microsoft.       |
-|Administrateur de support de service     | Les administrateurs disposant de ce rôle disposent **d’autorisations de lecture et d’écriture sur les fonctionnalités qui ne sont pas liées à la sécurité** dans le portail d’administration de bureau géré Microsoft.         |
+|Administrateur de support de service     | Les administrateurs disposant de ce rôle disposent **d’autorisations en lecture seule sur des fonctionnalités qui ne sont pas liées à la sécurité** et aux **autorisations d’écriture pour gérer les demandes de prise en charge** dans le portail d’administration de bureau géré Microsoft.         |
 |Administrateur de la sécurité | Les administrateurs disposant de ce rôle disposent d' **autorisations en lecture seule sur toutes les fonctionnalités** et **des autorisations d’écriture pour les fonctionnalités liées** à la sécurité dans le bureau géré Microsoft dans le portail d’administration. |
 |Lecteur de sécurité |Les administrateurs disposant de ce rôle disposent d' **autorisations en lecture seule sur toutes les fonctionnalités** du portail d’administration de bureau géré Microsoft.|
 
