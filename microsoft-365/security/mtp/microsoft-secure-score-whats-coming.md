@@ -17,27 +17,30 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 5627358db1b762db772b8f4ee61569968dc73a73
-ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
+ms.openlocfilehash: 3e9a8b34f8f112cadc0377dd73ba846c88b8604c
+ms.sourcegitcommit: aa8d2de6ffac0157fffd14d0ea7f51ef0c287607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367112"
+ms.locfileid: "49374006"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Fonctionnalités du score de sécurité Microsoft
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Nous apportons des modifications à l’avenir proche pour faire en sorte que [Microsoft Secure](microsoft-secure-score.md) évalue un meilleur représentant de votre position de sécurité et améliore l’utilisation. Votre score et le score maximal possible peuvent varier.
+Vous pouvez trouver https://security.microsoft.com/securescore le score de sécurité Microsoft à l’adresse dans le [Centre de sécurité Microsoft 365](overview-security-center.md).
 
 ## <a name="proposed-changes"></a>Proposed changes
 
+Nous apportons des modifications à l’avenir proche pour faire en sorte que [Microsoft Secure](microsoft-secure-score.md) évalue un meilleur représentant de votre position de sécurité et améliore l’utilisation. Votre score et le score maximal possible peuvent varier.
+
 ### <a name="november-2020"></a>Novembre 2020
 
-Suppression de la possibilité de créer des tickets ServiceNow via le score de sécurité en accédant à **Share > ServiceNow**.
+#### <a name="removing-the-ability-to-create-servicenow-tickets-through-secure-score"></a>Suppression de la possibilité de créer des tickets ServiceNow via le score de sécurité 
 
-- La période d’aperçu du connecteur ServiceNow se termine. Cette fonctionnalité ne sera plus disponible à la fin du 2020. Nous vous remercions pour vos commentaires et le support technique pendant que nous déterminons les étapes suivantes.
+La possibilité de créer des tickets ServiceNow via le score de sécurité en accédant à **Share > ServiceNow** sera supprimée.
 
+La période d’aperçu du connecteur ServiceNow se termine. Cette fonctionnalité ne sera plus disponible à la fin du 2020. Nous vous remercions pour vos commentaires et le support technique pendant que nous déterminons les étapes suivantes.
 
 ## <a name="related-resources"></a>Ressources connexes
 
