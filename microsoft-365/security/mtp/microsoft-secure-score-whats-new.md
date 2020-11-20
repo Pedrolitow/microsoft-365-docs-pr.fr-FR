@@ -20,18 +20,26 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: d63994778762968962b2a32f026dbb81af39b664
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 0ba3d7a5e46f7e0f8677ce2844c5551bf70739e3
+ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843815"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367109"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Nouveautés de Microsoft Secure score
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 Pour faire en sorte que Microsoft Secure score un meilleur représentant de votre position de sécurité, nous avons apporté des modifications. Pour en savoir plus sur les modifications planifiées, consultez [la rubrique what’s from Microsoft Secure score ?](microsoft-secure-score-whats-coming.md).
+
+## <a name="november-2020"></a>Novembre 2020
+
+### <a name="added-3-services-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>Ajout des trois actions d’amélioration liées aux services pour Microsoft Defender pour le point de terminaison (précédemment Microsoft Defender ATP) :
+
+- Corriger le chemin d’accès non quoted service pour les services Windows
+- Modifier le chemin d’accès exécutable de service en un emplacement protégé courant
+- Modifier le compte de service pour éviter le mot de passe mis en cache dans le Registre Windows
 
 ## <a name="october-2020"></a>Octobre 2020
 

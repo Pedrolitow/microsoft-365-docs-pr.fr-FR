@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/09/2019
+ms.date: 11/19/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Utilisez ce guide de laboratoire de test pour ajouter des stratégies de conformité d’appareil Intune à votre environnement de test Microsoft 365 pour les entreprises.
-ms.openlocfilehash: c1de822e5a97416bd0c672d88f2902d8986638c8
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: d42c9a603ca581941cb5a8f30b9ecd9d6f780759
+ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487411"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367094"
 ---
 # <a name="device-compliance-policies-for-your-microsoft-365-for-enterprise-test-environment"></a>Stratégies de conformité des appareils pour votre environnement de test Microsoft 365 pour les entreprises
 
@@ -48,34 +48,25 @@ Si vous souhaitez configurer des stratégies MAM dans une entreprise simulée, s
 
 ## <a name="phase-2-create-a-device-compliance-policy-for-windows-10-devices"></a>Phase 2 : créer une stratégie de conformité des appareils pour les appareils Windows 10
 
-Dans cette phase, créez une stratégie de conformité des appareils pour les appareils Windows 10.
-  
-1. Accédez au [Centre d’administration microsoft 365](https://admin.microsoft.com) et connectez-vous à votre abonnement de laboratoire de test Microsoft 365 avec votre compte d’administrateur général.
-1. Dans un nouvel onglet de votre navigateur, ouvrez le portail Azure à l’adresse [https://portal.azure.com](https://portal.azure.com) .
-1. Dans la zone de recherche du portail Azure, entrez **Intune**, puis sélectionnez **Intune**.
-1. Si vous voyez un message « **vous n’avez pas activé la gestion des appareils activés** » dans le volet **Microsoft Intune** , sélectionnez-le. Dans le volet **autorité de gestion des appareils mobiles** , sélectionnez **autorité MDM Intune**, puis sélectionnez **choisir**.
-1. Actualisez l’onglet de votre navigateur.
-1. Dans le volet de navigation de gauche, sélectionnez **groupes**.
-1. Dans le volet **groupes-tous les groupes** , sélectionnez **+ nouveau groupe**.
-1. Dans le volet de **groupe** , sélectionnez **Microsoft 365** ou **sécurité** pour **type de groupe ?**, entrez **utilisateurs d’appareils Windows 10 gérés** dans **nom**, sélectionnez **attribué** dans **type d’appartenance**, puis sélectionnez **créer**.
-1. Sélectionnez **Microsoft Intune**.
-1. Dans le volet **Microsoft Intune** , dans la liste **tâches rapides** , sélectionnez **créer une stratégie de conformité**.
-1. Dans le volet **profils de stratégie de conformité** , sélectionnez créer une **stratégie**.
-1. Dans le volet **créer une stratégie** , dans **nom**, entrez **Windows 10**. Dans **plateforme**, sélectionnez **Windows 10 et versions ultérieures**, sélectionnez **OK** dans le volet **stratégie de conformité Windows 10** , puis sélectionnez **créer**.
-1. Sélectionnez **profils de stratégie de conformité**, puis sélectionnez le nom de la stratégie **Windows 10** .
-1. Dans le volet **Windows 10** , sélectionnez **affectations**, puis sélectionnez les **groupes à inclure**.
-1. Dans le volet **Sélectionner des groupes à inclure** , sélectionnez le groupe **utilisateurs d’appareils Windows 10 gérés** , puis sélectionnez **Sélectionner**.
-1. Sélectionnez **Enregistrer**, sélectionnez **Microsoft Intune-vue d’ensemble**, puis sélectionnez **applications client** dans le volet de navigation de gauche.
-1. Dans le volet **applications client** , sélectionnez **applications**, puis **Ajouter**.
-1. Dans le volet **Ajouter une application** , sélectionnez type d' **application**, puis sélectionnez **Windows 10** sous **Microsoft 365 suite**.
-1. Dans le volet **Ajouter une application** , sélectionnez **informations sur la suite d’applications**.
-1. Dans le volet d' **informations App suite** , entrez **Microsoft 365 apps pour entreprises** dans les descriptions nom et **suite**de la **suite** , puis sélectionnez **OK**.
-1. Dans le volet **Ajouter une application** , sélectionnez configurer une suite d' **applications**, puis cliquez sur **OK**.
-1. Dans le volet **Ajouter une application** , sélectionnez Paramètres de la suite d' **applications**.
-1. Pour **canal de mise à jour**, sélectionnez **entreprise semi-annuelle**, puis sélectionnez **OK**.
-1. Dans le volet **Ajouter une application** , sélectionnez **Ajouter**.
+Au cours de cette phase, vous allez créer une stratégie de conformité des appareils pour les appareils Windows 10. Cette phase utilise Microsoft Intune et le [Centre d’administration du gestionnaire de points de terminaison Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) pour ajouter un groupe et créer une stratégie de conformité.
 
-Vous disposez maintenant d’une stratégie de conformité de l’appareil pour tester les applications sélectionnées dans la stratégie de conformité des appareils **Windows 10** et pour les membres du groupe **utilisateurs d’appareils Windows 10 gérés** . Veuillez noter que la sélection de **Microsoft 365** comme type de groupe crée des ressources supplémentaires.
+1. Accédez au [Centre d’administration microsoft 365](https://admin.microsoft.com), puis connectez-vous à votre abonnement de laboratoire de test Microsoft 365 avec votre compte d’administrateur général. Sélectionnez le centre d’administration du **Gestionnaire de point de terminaison** . Le [Centre d’administration du gestionnaire de point de terminaison](https://go.microsoft.com/fwlink/?linkid=2109431) s’ouvre.
+
+    Si un message similaire à celui **que vous n’avez pas activé la gestion des appareils** , un message s’affiche, puis sélectionnez Intune comme autorité MDM. Pour connaître les étapes spécifiques, reportez-vous à [la rubrique Set the Mobile Device Management Authority](/mem/intune/fundamentals/mdm-authority-set).
+
+    Le centre d’administration du gestionnaire de point de terminaison est axé sur la gestion des applications et des applications. Pour une visite guidée de ce centre d’administration, consultez la rubrique [Tutorial : Walkthrough Intune in Microsoft Endpoint Manager](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager).
+
+2. Dans **groupes**, ajoutez un nouveau groupe de sécurité ou un groupe de **sécurité** **Microsoft 365** nommé **utilisateurs d’appareils Windows 10 gérés**, avec un type d’appartenance **affecté** . Dans les étapes suivantes, vous allez affecter votre stratégie de conformité à ce groupe. 
+
+    Pour connaître les étapes spécifiques, et pour plus d’informations sur **Microsoft 365** ou sur les groupes de **sécurité** , consultez la rubrique [Add Groups to organi Users and Devices](/mem/intune/fundamentals/groups-add).
+
+3. Dans **appareils**, créez une stratégie de conformité Windows 10. Affectez cette stratégie au groupe d' **utilisateurs d’appareils Windows 10 géré** que vous avez créé.
+
+    Dans votre stratégie, vous pouvez bloquer les mots de passe simples, exiger un pare-feu, exiger que le service anti-programme malveillant de Microsoft Defender soit en cours d’exécution, et plus encore. En règle générale, une stratégie de conformité inclut les paramètres de base ou le minimum absolu que chaque appareil doit avoir.
+
+    Pour connaître les étapes spécifiques, et pour plus d’informations sur les paramètres de conformité disponibles que vous pouvez configurer, reportez-vous à la rubrique [utiliser des stratégies de conformité pour définir des règles pour les appareils que vous gérez](/mem/intune/protect/device-compliance-get-started).
+
+Lorsque vous avez terminé, vous disposez d’une stratégie de conformité de l’appareil pour tester les membres dans le groupe **utilisateurs d’appareils Windows 10 gérés** .
   
 ## <a name="next-step"></a>Étape suivante
 

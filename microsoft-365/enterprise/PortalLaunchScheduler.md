@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: Cet article explique comment lancer votre portail à l’aide du planificateur de lancement de portail
-ms.openlocfilehash: e5e5850fa7e74f3e3b342e9bb28d17f65b491664
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 7e488caba5e4df47bb3f51f195e093891565d95c
+ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49356666"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367200"
 ---
 # <a name="launch-your-portal-using-the-portal-launch-scheduler"></a>Lancer votre portail à l’aide du planificateur de lancement du portail
 
@@ -34,7 +34,7 @@ Il existe deux types de redirection :
 - bidirectionnel : lancer un nouveau portail SharePoint Online moderne pour remplacer un portail classique ou moderne SharePoint existant 
 - redirection temporaire des pages : lancer un nouveau portail SharePoint Online moderne sans portail SharePoint existant
 
-Le planificateur de lancement de portail est disponible uniquement pour lancer des portails SharePoint Online modernes (c’est-à-dire des sites de communication). Les lancements doivent être planifiés au moins 7 jours à l’avance. Le nombre d’ondes requises est déterminé par le nombre d’utilisateurs attendu. Avant de planifier le lancement d’un portail, l' [outil Diagnostics de la page pour SharePoint](https://aka.ms/perftool) doit être exécuté pour vérifier que la page d’accueil du portail est intègre. À la fin du lancement du portail, tous les utilisateurs disposant d’autorisations sur le site seront en mesure d’accéder au nouveau site. 
+Le planificateur de lancement de portail est disponible uniquement pour lancer des portails SharePoint Online modernes, c’est-à-dire des sites de communication et des sites d’équipe modernes. Les lancements doivent être planifiés au moins 7 jours à l’avance. Le nombre d’ondes requises est déterminé par le nombre d’utilisateurs attendu. Avant de planifier le lancement d’un portail, l' [outil Diagnostics de la page pour SharePoint](https://aka.ms/perftool) doit être exécuté pour vérifier que la page d’accueil du portail est intègre. À la fin du lancement du portail, tous les utilisateurs disposant d’autorisations sur le site seront en mesure d’accéder au nouveau site. 
 
 Pour plus d’informations sur le lancement d’un portail réussi, suivez les principes de base, les pratiques et les recommandations détaillés dans [Creating, lancement and Maintaining a successful Portal](https://docs.microsoft.com/sharepoint/portal-health). 
 
@@ -45,7 +45,7 @@ Pour plus d’informations sur le lancement d’un portail réussi, suivez les p
 1. [Téléchargez la dernière version de SharePoint Online Management Shell](https://go.microsoft.com/fwlink/p/?LinkId=255251).
 
     > [!NOTE]
-    > Si vous avez installé une version antérieure de SharePoint Online Management Shell, accédez à Ajouter ou supprimer des programmes et désinstaller « SharePoint Online Management Shell ».<br>Dans la page du Centre de téléchargement, sélectionnez votre langue, puis cliquez sur le bouton Télécharger. Vous serez invité à choisir entre le téléchargement d’un fichier .msi x64 et x86. Téléchargez le fichier x64 si vous exécutez la version 64 bits de Windows ou le fichier x86 si vous exécutez la version 32 bits. En cas de doute, consultez [Quelle est la version du système d’exploitation Windows que j’utilise ?](https://support.microsoft.com/help/13443/windows-which-operating-system). Une fois le fichier téléchargé, exécutez-le, puis suivez les étapes de l'Assistant d'installation.
+    > Si vous avez installé une version antérieure de SharePoint Online Management Shell, accédez à Ajouter ou supprimer des programmes et désinstaller « SharePoint Online Management Shell ». <br>Dans la page du Centre de téléchargement, sélectionnez votre langue, puis cliquez sur le bouton Télécharger. Vous serez invité à choisir entre le téléchargement d’un fichier .msi x64 et x86. Téléchargez le fichier x64 si vous exécutez la version 64 bits de Windows ou le fichier x86 si vous exécutez la version 32 bits. En cas de doute, consultez [Quelle est la version du système d’exploitation Windows que j’utilise ?](https://support.microsoft.com/help/13443/windows-which-operating-system). Une fois le fichier téléchargé, exécutez-le, puis suivez les étapes de l'Assistant d'installation.
 
 2. Connectez-vous à SharePoint en tant qu’[administrateur général ou administrateur SharePoint](/sharepoint/sharepoint-admin-role) dans Microsoft 365. Pour savoir comment procéder, reportez-vous à l’article [Prise en main de SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
 
@@ -70,7 +70,7 @@ Le nombre d’ondes requises dépend de la taille de lancement attendue.
 
 La redirection bidirectionnelle implique le lancement d’un nouveau portail SharePoint Online moderne pour remplacer un portail classique ou moderne SharePoint existant. Les utilisateurs des ondes actives seront redirigés vers le nouveau site, qu’ils naviguaient vers l’ancien ou le nouveau site. Les utilisateurs d’une vague non lancée qui tentent d’accéder au nouveau site sont redirigés vers l’ancien site jusqu’à ce que leur vague soit lancée. 
 
-Si vous avez des administrateurs ou des propriétaires qui ont besoin d’accéder aux anciens et aux nouveaux sites sans être redirigés, vérifiez qu’ils sont répertoriés à l’aide du `WaveOverrideUsers` paramètre. Nous prenons uniquement en charge la redirection entre la page d’accueil par défaut sur l’ancien site et la page d’accueil par défaut sur le nouveau site.
+Nous prenons uniquement en charge la redirection entre la page d’accueil par défaut sur l’ancien site et la page d’accueil par défaut sur le nouveau site. Si vous avez des administrateurs ou des propriétaires qui ont besoin d’accéder aux anciens et aux nouveaux sites sans être redirigés, vérifiez qu’ils sont répertoriés à l’aide du `WaveOverrideUsers` paramètre. Si vous avez des administrateurs ou des propriétaires qui ont besoin d’accéder aux anciens et aux nouveaux sites sans être redirigés, vérifiez qu’ils sont répertoriés à l’aide du `WaveOverrideUsers` paramètre. Nous prenons uniquement en charge la redirection entre la page d’accueil par défaut sur l’ancien site et la page d’accueil par défaut sur le nouveau site.
 
 Pour migrer des utilisateurs à partir d’un site SharePoint existant vers un nouveau site SharePoint de manière intermédiaire :
 

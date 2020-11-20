@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur l’usurpation d’identité dans Exchange Online Protection (EOP), où vous pouvez autoriser ou bloquer des expéditeurs usurpés spécifiques.
-ms.openlocfilehash: 4d40dae9518b451affc11c6666ee8f7454eceff3
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 62964550be161b16767595890872055b56586f1d
+ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920643"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367130"
 ---
 # <a name="configure-spoof-intelligence-in-eop"></a>Configurer l’intelligence des usurpations d’identité dans EOP
 
@@ -53,7 +53,7 @@ Vous pouvez gérer l’aide à la décision dans le centre de sécurité & confo
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Vous ouvrez le Centre de conformité et sécurité sur <https://protection.office.com/>. Pour accéder directement à la page **Paramètres anti-courrier indésirable** , utilisez <https://protection.office.com/antispam>. Pour accéder directement à la page **anti-hameçonnage** , utilisez <https://protection.office.com/antiphishing> .
+- Vous ouvrez le Centre de conformité et sécurité sur <https://protection.office.com/>. Pour accéder directement à la page **Paramètres anti-courrier indésirable**, utilisez <https://protection.office.com/antispam>. Pour accéder directement à la page **anti-hameçonnage** , utilisez <https://protection.office.com/antiphishing> .
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -89,49 +89,49 @@ Vous pouvez gérer l’aide à la décision dans le centre de sécurité & confo
 
 4. Dans la fenêtre **décider si ces expéditeurs sont autorisés à usurper votre** sélection, sélectionnez l’un des onglets suivants :
 
-   - **Vos domaines** : les expéditeurs usurpant l’identité des utilisateurs dans vos domaines internes.
-   - **Domaines externes** : les expéditeurs usurpant l’identité des utilisateurs dans les domaines externes.
+   - **Vos domaines**: les expéditeurs usurpant l’identité des utilisateurs dans vos domaines internes.
+   - **Domaines externes**: les expéditeurs usurpant l’identité des utilisateurs dans les domaines externes.
 
-5. Cliquez sur ![ développer une icône ](../../media/scc-expand-icon.png) dans la colonne **autorisé à usurper** . Choisissez **Oui** pour autoriser l’expéditeur usurpé ou **non** pour marquer le message comme falsifié. L’action est contrôlée par la stratégie anti-hameçonnage par défaut ou par des stratégies anti-hameçonnage personnalisées (la valeur par défaut est **déplacer le message vers le dossier courrier indésirable** ). Pour plus d’informations, reportez-vous à la rubrique [usurpation des paramètres dans les stratégies anti-hameçonnage](set-up-anti-phishing-policies.md#spoof-settings).
+5. Cliquez sur ![ développer une icône ](../../media/scc-expand-icon.png) dans la colonne **autorisé à usurper** . Choisissez **Oui** pour autoriser l’expéditeur usurpé ou **non** pour marquer le message comme falsifié. L’action est contrôlée par la stratégie anti-hameçonnage par défaut ou par des stratégies anti-hameçonnage personnalisées (la valeur par défaut est **déplacer le message vers le dossier courrier indésirable**). Pour plus d’informations, reportez-vous à la rubrique [usurpation des paramètres dans les stratégies anti-hameçonnage](set-up-anti-phishing-policies.md#spoof-settings).
 
    ![Capture d’écran montrant le menu volant des expéditeurs falsifiés et indique si l’expéditeur est autorisé à usurper](../../media/c0c062fd-f4a4-4d78-96f7-2c22009052bb.jpg)
 
    Les colonnes et les valeurs que vous voyez sont expliquées dans la liste suivante :
 
-   - **Utilisateur usurpé** : le compte d’utilisateur qui est usurpé. Il s’agit de l’expéditeur du message dans l’adresse de provenance (également appelée `5322.From` adresse) qui apparaît dans les clients de messagerie. La validité de cette adresse n’est pas vérifiée par SPF.
+   - **Utilisateur usurpé**: le compte d’utilisateur qui est usurpé. Il s’agit de l’expéditeur du message dans l’adresse de provenance (également appelée `5322.From` adresse) qui apparaît dans les clients de messagerie. La validité de cette adresse n’est pas vérifiée par SPF.
 
      - Dans l’onglet **vos domaines** , la valeur contient une adresse de messagerie unique, ou si le serveur de messagerie source usurpe plusieurs comptes d’utilisateur, il en contient **plusieurs**.
 
      - Sous l’onglet **domaines externes** , la valeur contient le domaine de l’utilisateur usurpé, et non l’adresse de messagerie complète.
 
-   - **Infrastructure d’envoi** : domaine trouvé dans une recherche DNS inversée (enregistrement PTR) de l’adresse IP du serveur de messagerie source ou adresse IP si la source n’a pas d’enregistrement PTR.
+   - **Infrastructure d’envoi**: domaine trouvé dans une recherche DNS inversée (enregistrement PTR) de l’adresse IP du serveur de messagerie source ou adresse IP si la source n’a pas d’enregistrement PTR.
 
      Pour plus d’informations sur les sources de messages et les expéditeurs de messages, voir [une vue d’ensemble des normes des messages électroniques](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards).
 
-   - **Nbre de messages** : nombre de messages provenant de l’infrastructure d’envoi à votre organisation qui contiennent l’expéditeur ou les expéditeurs usurpés au cours des 30 derniers jours.
+   - **Nbre de messages**: nombre de messages provenant de l’infrastructure d’envoi à votre organisation qui contiennent l’expéditeur ou les expéditeurs usurpés au cours des 30 derniers jours.
 
-   - **nombre de plaintes de l’utilisateur** : plaintes déposées par vos utilisateurs par rapport à cet expéditeur au cours des 30 derniers jours. Les plaintes se présentent généralement sous la forme d’envois de courrier indésirable à Microsoft.
+   - **nombre de plaintes de l’utilisateur**: plaintes déposées par vos utilisateurs par rapport à cet expéditeur au cours des 30 derniers jours. Les plaintes se présentent généralement sous la forme d’envois de courrier indésirable à Microsoft.
 
-   - **Résultat de l’authentification** : l’une des valeurs suivantes :
+   - **Résultat de l’authentification**: l’une des valeurs suivantes :
 
-      - **Réussite** : l’expéditeur a passé des vérifications d’authentification de courrier électronique de l’expéditeur (SPF ou DKIM).
-      - **Échec** : l’expéditeur a échoué aux vérifications d’authentification de l’expéditeur EOP.
-      - **Inconnu** : le résultat de ces vérifications n’est pas connu.
+      - **Réussite**: l’expéditeur a passé des vérifications d’authentification de courrier électronique de l’expéditeur (SPF ou DKIM).
+      - **Échec**: l’expéditeur a échoué aux vérifications d’authentification de l’expéditeur EOP.
+      - **Inconnu**: le résultat de ces vérifications n’est pas connu.
 
-   - **Décision définie par** : indique qui a déterminé si l’infrastructure d’envoi est autorisée à usurper l’identité de l’utilisateur :
+   - **Décision définie par**: indique qui a déterminé si l’infrastructure d’envoi est autorisée à usurper l’identité de l’utilisateur :
 
        - **Stratégie d’intelligence infalsifiable** (automatique)
        - **Administrateur** (manuel)
 
    - **Dernière** détection : dernière date à laquelle un message a été reçu de l’infrastructure d’envoi qui contient l’utilisateur usurpé.
 
-   - **Autorisé à usurper ?** : les valeurs que vous voyez ici sont les suivantes :
+   - **Autorisé à usurper ?**: les valeurs que vous voyez ici sont les suivantes :
 
-     - **Oui** : les messages provenant de la combinaison d’une infrastructure utilisateur et d’une infrastructure d’envoi usurpés sont autorisés et ne sont pas traités comme des messages falsifiés.
+     - **Oui**: les messages provenant de la combinaison d’une infrastructure utilisateur et d’une infrastructure d’envoi usurpés sont autorisés et ne sont pas traités comme des messages falsifiés.
 
-     - **Non** : les messages provenant de la combinaison d’une infrastructure d’utilisateur et d’expéditeur usurpée sont marqués comme falsifiés. L’action est contrôlée par la stratégie anti-hameçonnage par défaut ou par des stratégies anti-hameçonnage personnalisées (la valeur par défaut est **déplacer le message vers le dossier courrier indésirable** ). Pour plus d’informations, consultez la section suivante.
+     - **Non**: les messages provenant de la combinaison d’une infrastructure d’utilisateur et d’expéditeur usurpée sont marqués comme falsifiés. L’action est contrôlée par la stratégie anti-hameçonnage par défaut ou par des stratégies anti-hameçonnage personnalisées (la valeur par défaut est **déplacer le message vers le dossier courrier indésirable**). Pour plus d’informations, consultez la section suivante.
 
-     - **Certains utilisateurs** ( **votre onglet domaines** uniquement) : une infrastructure d’envoi usurpe l’identité de plusieurs utilisateurs, où certains utilisateurs usurpés sont autorisés et d’autres non. Utilisez l’onglet **détaillé** pour afficher les adresses spécifiques.
+     - **Certains utilisateurs** (**votre onglet domaines** uniquement) : une infrastructure d’envoi usurpe l’identité de plusieurs utilisateurs, où certains utilisateurs usurpés sont autorisés et d’autres non. Utilisez l’onglet **détaillé** pour afficher les adresses spécifiques.
 
 6. Au bas de la page, cliquez sur **Enregistrer**.
 

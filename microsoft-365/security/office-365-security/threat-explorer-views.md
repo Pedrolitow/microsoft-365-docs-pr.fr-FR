@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Découvrez comment utiliser l’Explorateur de menaces et le rapport de détection en temps réel pour examiner les menaces et y répondre dans le &amp; Centre de sécurité conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 83fa2d89c74b5ec1e2de7e65457313f20bbf2681
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: f9412350384c0b2092c376db371e93fa5295c454
+ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844319"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367188"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Affichages dans l’Explorateur de menaces et détections en temps réel
 
@@ -41,10 +41,10 @@ Lorsque vous ouvrez l’Explorateur (ou le rapport de détection en temps réel)
 
 |Abonnement|Utilitaire|Jours de données|
 |---|---|---|
-|Version d’évaluation de Microsoft Defender pour Office 365 P1|Détections en temps réel|7 |
+|Version d’évaluation de Microsoft Defender pour Office 365 P1|Détections en temps réel|7 |
 |Microsoft Defender pour Office 365 P1 payé|Détections en temps réel|0,30|
-|Version d’évaluation de Microsoft Defender pour Office 365 P1 test payant pour Office 365 P2|Threat Explorer|7 |
-|Version d’évaluation de Microsoft Defender pour Office 365 P2|Threat Explorer|7 |
+|Version d’évaluation de Microsoft Defender pour Office 365 P1 test payant pour Office 365 P2|Threat Explorer|7 |
+|Version d’évaluation de Microsoft Defender pour Office 365 P2|Threat Explorer|7 |
 |Microsoft Defender pour Office 365 P2 payé|Threat Explorer|0,30|
 |
 
@@ -98,7 +98,7 @@ Pour afficher ce rapport, dans l’Explorateur (ou les détections en temps rée
 
 Cliquez sur **expéditeur** pour ouvrir votre liste d’options d’affichage. Cette liste permet d’afficher des informations par expéditeur, destinataires, type de rapport (l’utilisateur a déterminé que le courrier électronique a été légitime, non légitime ou hameçon), et bien plus encore.
 
-Par exemple, pour afficher les informations sur les messages électroniques qui ont été signalés en tant **Sender** que tentatives de hameçonnage, cliquez sur  >  **type de rapport** de l’expéditeur, sélectionnez **hameçonnage** , puis cliquez sur le bouton Actualiser.
+Par exemple, pour afficher les informations sur les messages électroniques qui ont été signalés en tant **Sender** que tentatives de hameçonnage, cliquez sur  >  **type de rapport** de l’expéditeur, sélectionnez **hameçonnage**, puis cliquez sur le bouton Actualiser.
 
 ![Hameçonnage sélectionné pour le filtre de type de rapport](../../media/ThreatExplorerEmailUserReportedPhishSelected.png)
 
@@ -113,9 +113,9 @@ Sélectionnez un élément dans la liste pour afficher des détails supplémenta
 Pour afficher ce rapport, dans l’Explorateur, sélectionnez **Afficher** le courrier  >  **électronique** de  >  **tous les messages**. Cette vue affiche une vue d’ensemble de l’activité de messagerie, y compris le courrier électronique identifié comme malveillant en raison d’un hameçonnage ou d’un programme malveillant, ainsi que tous les messages non malveillants (e-mail normal, courrier indésirable et courrier en nombre).
 
 > [!NOTE]
-> Si vous obtenez une erreur indiquant un **trop grand nombre de données à afficher** , ajoutez un filtre et, si nécessaire, Affinez la plage de dates que vous visualisez.
+> Si vous obtenez une erreur indiquant un **trop grand nombre de données à afficher**, ajoutez un filtre et, si nécessaire, Affinez la plage de dates que vous visualisez.
 
-Pour appliquer un filtre, choisissez **expéditeur** , sélectionnez un élément dans la liste, puis cliquez sur le bouton Actualiser. Dans notre exemple, nous avons utilisé la **technologie de détection** en tant que filtre (plusieurs options sont disponibles). Afficher les informations par expéditeur, domaine de l’expéditeur, destinataires, objet, nom de fichier de la pièce jointe, famille de programmes malveillants, statut de protection (actions effectuées par vos stratégies et fonctionnalités de protection contre les menaces dans Office 365), technologie de détection (comment le programme malveillant a été détecté), et plus encore.
+Pour appliquer un filtre, choisissez **expéditeur**, sélectionnez un élément dans la liste, puis cliquez sur le bouton Actualiser. Dans notre exemple, nous avons utilisé la **technologie de détection** en tant que filtre (plusieurs options sont disponibles). Afficher les informations par expéditeur, domaine de l’expéditeur, destinataires, objet, nom de fichier de la pièce jointe, famille de programmes malveillants, statut de protection (actions effectuées par vos stratégies et fonctionnalités de protection contre les menaces dans Office 365), technologie de détection (comment le programme malveillant a été détecté), et plus encore.
 
 ![Afficher les données sur les messages détectés par la technologie de détection](../../media/0c032eb3-6021-4174-9f06-ff8f30c245ca.png)
 

@@ -15,12 +15,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Les utilisateurs peuvent apprendre à gérer leurs achats en libre-service.
-ms.openlocfilehash: 7a5b52c0378e4d8f2a48ce7cdb56fb1901c25472
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: a94a474bf2a5c506f4e6ed02659cd10d371fb779
+ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546605"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367154"
 ---
 # <a name="manage-self-service-purchases-users"></a>Gérer les achats libre-service (utilisateurs)
 
@@ -39,12 +39,12 @@ Votre administrateur dispose d’une vue en lecture seule dans les abonnements q
 
 Vous pouvez afficher la liste de tous les abonnements achetés en libre-service que vous avez achetés.
 
-1. Dans le centre d’administration, accédez à la page **facturation**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits</a> .
+1. Dans le centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
 2. Sur l’onglet **produits** , sélectionnez l’icône de filtre, puis sélectionnez **self-service**.
 
 ## <a name="how-to-buy-more-or-reduce-licenses"></a>Comment acheter plus ou réduire les licences
 
-1. Dans le centre d’administration, accédez à la page **facturation**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits</a> .
+1. Dans le centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
 2. Sous l’onglet **produits** , sélectionnez l’abonnement pour lequel vous souhaitez acheter plus ou réduire les licences pour.
 3. Sélectionnez **acheter des licences** ou **supprimer des licences**.
 4. Dans le volet droit, dans la zone **nombre total de licences** , entrez le nombre total de licences que vous souhaitez pour cet abonnement, puis choisissez **Enregistrer**. Par exemple, si vous avez 100 licences et que vous souhaitez en ajouter 5, entrez 105.
@@ -53,7 +53,7 @@ Vous pouvez afficher la liste de tous les abonnements achetés en libre-service 
 
 ### <a name="to-assign-licenses"></a>Pour attribuer des licences
 
-1. Dans le centre d’administration, accédez à **Billing**la  >  page<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">licences</a> de facturation.
+1. Dans le centre d’administration, accédez à **Billing** la  >  page <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">licences</a> de facturation.
 2. Choisissez l’abonnement pour lequel vous souhaitez attribuer des licences.
 3. Choisissez **attribuer des licences**.
 4. Dans le volet **Attribuer des licences aux utilisateurs**, commencez à saisir un nom, puis sélectionnez-le dans les résultats pour l’ajouter à la liste. Vous pouvez ajouter jusqu'à 20 utilisateurs à la fois.
@@ -63,7 +63,7 @@ Vous pouvez afficher la liste de tous les abonnements achetés en libre-service 
 
 ### <a name="to-unassign-licenses"></a>Pour annuler l’affectation des licences
 
-1. Dans le centre d’administration, accédez à **Billing**la  >  page<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">licences</a> de facturation.
+1. Dans le centre d’administration, accédez à **Billing** la  >  page <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">licences</a> de facturation.
 2. Sélectionnez le produit pour lequel vous souhaitez annuler l’affectation de licences.
 3. Choisissez les utilisateurs dont vous souhaitez annuler l’affectation des licences.
 4. Choisissez **Annuler l’affectation des licences**.
@@ -71,14 +71,14 @@ Vous pouvez afficher la liste de tous les abonnements achetés en libre-service 
 
 ## <a name="cancel-a-subscription"></a>Annuler un abonnement
 
-1. Dans le centre d’administration, accédez à la page **facturation**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits</a> .
-2. Sur l’onglet **produits** , recherchez l’abonnement que vous souhaitez annuler. Sélectionnez **autres actions** (trois points), puis **Annuler l’abonnement**.
-3. Dans le volet **Annuler l’abonnement** , choisissez une raison pour laquelle vous annulez. Vous pouvez également fournir les commentaires dont vous disposez.
+1. Dans le centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
+2. Sur la page **Produits**, recherchez l’abonnement que vous souhaitez annuler. Sélectionnez **Autres actions** (points de suspension), puis sélectionnez **Annuler l’abonnement**.
+3. Dans le volet **Annuler l’abonnement** , choisissez la raison pour laquelle vous annulez l’abonnement. Vous pouvez également fournir les commentaires dont vous disposez.
 4. Sélectionnez **Enregistrer**.
 
 ## <a name="manage-your-payment-details"></a>Gérer les détails de votre paiement
 
-1. Dans le centre d’administration, accédez à **la**  >  **Bills & payments**  >  page<a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">profils de facturation</a> & paiement des factures.
+1. Dans le centre d’administration, accédez à **la**  >  **Bills & payments**  >  page <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">profils de facturation</a> & paiement des factures.
 2. Sélectionnez un profil de facturation dans la liste.
 3. Sur la page Détails du profil de facturation, sous **mode de paiement**, choisissez l’une des options suivantes :
     - Si vous souhaitez mettre à jour un mode de paiement existant, sélectionnez **modifier**.
@@ -87,14 +87,14 @@ Vous pouvez afficher la liste de tous les abonnements achetés en libre-service 
 
 ### <a name="update-an-existing-payment-method"></a>Mise à jour d’un mode de paiement existant
 
-1. Dans le centre d’administration, accédez à **la**  >  page<a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">factures & paiement</a> .
+1. Dans le centre d’administration, accédez à **la**  >  page <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">factures & paiement</a> .
 2. Dans l’onglet **modes de paiement** , sélectionnez un mode de paiement existant dans la liste.
 3. Dans le volet droit, choisissez **modifier**. Vous pouvez modifier le code de sécurité, la date d’expiration, le nom de la carte et l’adresse.
 4. Effectuez les modifications nécessaires, puis choisissez **Enregistrer**.
 
 ### <a name="add-a-new-payment-method"></a>Ajouter un nouveau mode de paiement
 
-1. Dans le centre d’administration, accédez à **la**  >  page<a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">factures & paiement</a> .
+1. Dans le centre d’administration, accédez à **la**  >  page <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">factures & paiement</a> .
 2. Dans l’onglet **modes de paiement** , choisissez **Ajouter un mode de paiement**.
 3. Dans le volet **Ajouter un mode de paiement** , entrez les informations relatives au nouveau mode de paiement, puis choisissez **Ajouter**.
 
