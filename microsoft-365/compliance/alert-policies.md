@@ -19,12 +19,12 @@ ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 ms.custom:
 - seo-marvel-apr2020
 description: Créez des stratégies d’alerte dans le centre de sécurité et conformité dans Office 365 et Microsoft 365 pour surveiller les menaces potentielles, les pertes de données et les problèmes d’autorisations.
-ms.openlocfilehash: 7b2d5b380f71a31302a54cedb6076e6fca54fa86
-ms.sourcegitcommit: 5480982967a90ca3060a59676a6b29155f2de861
+ms.openlocfilehash: b6a1689ab475b9518c290bf3db03d2144610bf8b
+ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49350744"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367177"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>Stratégies d’alerte dans le Centre de sécurité et de conformité
 
@@ -33,7 +33,7 @@ Vous pouvez utiliser les outils de tableau de bord des stratégies et des alerte
 Les stratégies d’alerte vous permettent de catégoriser les alertes déclenchées par une stratégie, d’appliquer la stratégie à tous les utilisateurs de votre organisation, de définir un niveau de seuil pour le déclenchement d’une alerte et de décider s’il faut recevoir des notifications par courrier électronique lorsque des alertes sont déclenchées. Il existe également une page **afficher les alertes** dans le centre de sécurité et conformité où vous pouvez afficher et filtrer des alertes, définir un statut d’alerte pour vous aider à gérer les alertes, puis ignorer les alertes après avoir résolu ou résolu l’incident sous-jacent.
 
 > [!NOTE]
-> Les stratégies d’alerte sont disponibles pour les organisations disposant d’un abonnement Microsoft 365 Enterprise, Office 365 Enterprise ou Office 365 gouvernement E1/F1/G1, E3/G3 ou E5/G5. La fonctionnalité avancée est uniquement disponible pour les organisations disposant d’un abonnement E5/G5, ou pour les organisations qui ont un abonnement E1/F1/G1 ou E3/G3 et un abonnement Microsoft Defender pour Office 365 P2 ou Microsoft 365 E5 conformité ou un abonnement Microsoft 365 E5 eDiscovery et audit. La fonctionnalité nécessitant un abonnement E5/G5 ou complément est mise en surbrillance dans cette rubrique. Notez également que les stratégies d’alerte sont disponibles dans les environnements Office 365 GCC, GCC High et DoD US Government.
+> Les stratégies d’alerte sont disponibles pour les organisations disposant d’un abonnement Microsoft 365 Enterprise, Office 365 Enterprise ou Office 365 gouvernement E1/F1/G1, E3/G3 ou E5/G5. La fonctionnalité avancée est uniquement disponible pour les organisations disposant d’un abonnement E5/G5, ou pour les organisations qui ont un abonnement E1/F1/G1 ou E3/G3 et un abonnement Microsoft Defender pour Office 365 P2 ou une conformité Microsoft 365 E5 ou un abonnement de module complémentaire eDiscovery et d’audit à E5. La fonctionnalité nécessitant un abonnement E5/G5 ou complément est mise en surbrillance dans cette rubrique. Notez également que les stratégies d’alerte sont disponibles dans les environnements Office 365 GCC, GCC High et DoD US Government.
 
 ## <a name="how-alert-policies-work"></a>Fonctionnement des stratégies d’alerte
 

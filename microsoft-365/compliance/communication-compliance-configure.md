@@ -20,18 +20,18 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: b9d7655377b1bb5ff4810fd469efd092bd7a5f67
-ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
+ms.openlocfilehash: d41965741bc02876cde7e99904194c9f5787202a
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49072923"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357189"
 ---
 # <a name="get-started-with-communication-compliance"></a>Prise en main de la conformité des communications
 
 Utilisez des stratégies de conformité des communications pour identifier les communications des utilisateurs à des fins d’examen par des relecteurs internes ou externes. Pour plus d’informations sur la façon dont les stratégies de conformité des communications peuvent vous aider à surveiller les communications au sein de votre organisation, consultez la rubrique [communications Compliance Policies in Microsoft 365](communication-compliance.md). Si vous souhaitez passer en revue la manière dont Contoso a configuré rapidement une stratégie de conformité de communication pour surveiller le langage choquant dans Microsoft Teams, Exchange Online et les communications Yammer, consultez cette [étude de cas](communication-compliance-case-study.md).
 
-## <a name="before-you-begin"></a>Avant de commencer
+## <a name="subscriptions-and-licensing"></a>Abonnements et gestion des licences
 
 Avant de commencer la mise en route de la conformité de la communication, vous devez confirmer votre [abonnement Microsoft 365](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) et tous les modules complémentaires. Pour accéder à la conformité de la communication et l’utiliser, votre organisation doit disposer de l’un des abonnements ou des modules complémentaires suivants :
 
@@ -85,7 +85,7 @@ Sélectionnez l’une des options de groupe de rôles suivantes lors de la confi
 
 5. Sélectionnez **Ajouter** , puis activez la case à cocher de tous les utilisateurs que vous souhaitez ajouter au groupe de rôles de *conformité de communication* .
 
-6. Sélectionnez **Ajouter** , puis **Terminé**.
+6. Sélectionnez **Ajouter**, puis **Terminé**.
 
 7. Sélectionnez **Enregistrer** pour ajouter les utilisateurs au groupe de rôles. Sélectionnez **Fermer** pour effectuer les étapes
 
@@ -103,7 +103,7 @@ Utilisez cette option pour affecter des utilisateurs à des groupes de rôles sp
 
 5. Sélectionnez **Ajouter** , puis activez la case à cocher de tous les utilisateurs que vous souhaitez ajouter au groupe de rôles.
 
-6. Sélectionnez **Ajouter** , puis **Terminé**.
+6. Sélectionnez **Ajouter**, puis **Terminé**.
 
 7. Sélectionnez **Enregistrer** pour ajouter les utilisateurs au groupe de rôles.
 
@@ -190,10 +190,10 @@ Pour plus d’informations sur la configuration de yammer en mode natif, voir :
     
     - Choisissez si vous souhaitez inclure des types d’informations sensibles. Cette étape vous permet de sélectionner les types d’informations sensibles par défaut et personnalisés. Sélectionnez des types d’informations sensibles personnalisés ou des dictionnaires de mots clés personnalisés existants dans l’Assistant stratégie de conformité des communications. Si nécessaire, vous pouvez créer ces éléments avant d’exécuter l’Assistant. Vous pouvez également créer des types d’informations sensibles à partir de l’Assistant stratégie de conformité des communications.
     
-    - Choisissez si vous souhaitez activer les classifieurs. Les classifieurs peuvent détecter une langue et des images inappropriées envoyées ou reçues dans le corps de messages électroniques ou d’autres types de texte. Vous pouvez choisir les classifieurs intégrés suivants : *menace* , *blasphèmes* , *harcèlement ciblé* , *images adultes* , *images Racy* et *images Gory*.
+    - Choisissez si vous souhaitez activer les classifieurs. Les classifieurs peuvent détecter une langue et des images inappropriées envoyées ou reçues dans le corps de messages électroniques ou d’autres types de texte. Vous pouvez choisir les classifieurs intégrés suivants : *menace*, *blasphèmes*, *harcèlement ciblé*, *images adultes*, *images Racy* et *images Gory*.
 
       > [!CAUTION]
-      > Nous déprécions le **langage inconvenant** classifieur intégré, car il génère un grand nombre de faux positifs. Ne l’utilisez pas et, si vous l’utilisez, vous devez déconnecter vos processus d’entreprise. Nous vous recommandons d’utiliser à la place les classifieurs intégrés de **menace** , de **blasphème** et de **harcèlement ciblé** .
+      > Nous déprécions le **langage inconvenant** classifieur intégré, car il génère un grand nombre de faux positifs. Ne l’utilisez pas et, si vous l’utilisez, vous devez déconnecter vos processus d’entreprise. Nous vous recommandons d’utiliser à la place les classifieurs intégrés de **menace**, de **blasphème** et de **harcèlement ciblé** .
 
     - Définir le pourcentage de communications à réviser.
     

@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 684e21a8288aee72f6170d54ffc86af3bcb0ece0
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 9c8d9dbc0087f1b7311863ea63e578bad3040249
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846262"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357433"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Prise en main de la gestion des risques internes
 
@@ -31,7 +31,7 @@ Utilisez des stratégies de gestion des risques internes pour identifier les act
 
 Pour plus d’informations sur la façon dont les stratégies de risque d’initié peuvent vous aider à gérer les risques au sein de votre organisation, consultez la rubrique [gestion des risques internes dans Microsoft 365](insider-risk-management.md).
 
-## <a name="before-you-begin"></a>Avant de commencer
+## <a name="subscriptions-and-licensing"></a>Abonnements et gestion des licences
 
 Avant de commencer à gérer les risques initiaux, vous devez confirmer votre [abonnement Microsoft 365](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) et tous les modules complémentaires. Pour accéder à la gestion des risques initiés et l’utiliser, votre organisation doit disposer de l’un des abonnements ou des modules complémentaires suivants :
 
@@ -79,7 +79,7 @@ Procédez comme suit pour ajouter des utilisateurs à un groupe de rôles de ges
 
 5. Sélectionnez **Ajouter** , puis activez la case à cocher de tous les utilisateurs que vous souhaitez ajouter au groupe de rôles.
 
-6. Sélectionnez **Ajouter** , puis **Terminé**.
+6. Sélectionnez **Ajouter**, puis **Terminé**.
 
 7. Sélectionnez **Enregistrer** pour ajouter les utilisateurs au groupe de rôles. Sélectionnez **Fermer** pour effectuer les étapes.
 
@@ -170,7 +170,7 @@ Avant de configurer une stratégie, définissez les paramètres de risque Inside
 6. Sur la page **Exporter les alertes** , activez l’exportation des informations d’alerte sur les risques internes à l’aide des API de gestion d’Office 365 si nécessaire.
 7. Dans la page **Priority User Groups** , créez un groupe d’utilisateurs de priorité et ajoutez des utilisateurs s’ils ne sont pas créés à l' **étape 3**.
 8. Sur la page **flux d’automate de puissance** , configurez un flux à partir de modèles de flux de risque d’initiés ou créez un flux. Reportez-vous à l’article [prise en main de paramètres de gestion des risques initiés](insider-risk-management-settings.md#power-automate-flows-preview) pour les instructions détaillées.
-9. Sur la **page Priority Assets** , configurez les ressources de priorité pour utiliser les données de votre contrôle physique et la plateforme d’accès importées par le connecteur badges physique. Reportez-vous à l’article [prise en main de paramètres de gestion des risques initiés](insider-risk-management-settings.md#priority-physical-assets-preview) pour les instructions détaillées.
+9. Sur la **page Priority Assets**, configurez les ressources de priorité pour utiliser les données de votre contrôle physique et la plateforme d’accès importées par le connecteur badges physique. Reportez-vous à l’article [prise en main de paramètres de gestion des risques initiés](insider-risk-management-settings.md#priority-physical-assets-preview) pour les instructions détaillées.
 10. Sur la page **Microsoft teams** , activez l’intégration de Microsoft teams à la gestion des risques initiés pour créer automatiquement une équipe pour la collaboration d’un utilisateur ou d’un cas. Reportez-vous à l’article [prise en main de paramètres de gestion des risques initiés](insider-risk-management-settings.md#microsoft-teams-preview) pour les instructions détaillées.
 11. Sélectionnez **Enregistrer** pour activer ces paramètres pour vos stratégies de risque Insider.
 
@@ -181,9 +181,9 @@ Les stratégies de gestion des risques internes incluent les utilisateurs attrib
 1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com), accédez à **gestion des risques internes** et sélectionnez l’onglet **stratégies** .
 2. Sélectionnez **créer une stratégie** pour ouvrir l’Assistant stratégie.
 3. Sur la page **nouvelle stratégie de risque Insider** , renseignez les champs suivants :
-    - **Nom (obligatoire)** : entrez un nom convivial pour la stratégie.
-    - **Description (facultatif)** : entrez une description pour la stratégie.
-    - **Choisir un modèle de stratégie (obligatoire)** : sélectionnez un des [modèles de stratégie](insider-risk-management-policies.md#policy-templates) pour définir les types d’indicateurs de risque sont surveillés par la stratégie.
+    - **Nom (obligatoire)**: entrez un nom convivial pour la stratégie.
+    - **Description (facultatif)**: entrez une description pour la stratégie.
+    - **Choisir un modèle de stratégie (obligatoire)**: sélectionnez un des [modèles de stratégie](insider-risk-management-policies.md#policy-templates) pour définir les types d’indicateurs de risque sont surveillés par la stratégie.
 
     >[!IMPORTANT]
     >La plupart des modèles de stratégie comportent des éléments prérequis qui doivent être configurés pour que la stratégie génère des alertes appropriées. Si vous n’avez pas configuré les prérequis de stratégie applicables, reportez-vous à l' **étape 3** ci-dessus.
@@ -194,9 +194,9 @@ Les stratégies de gestion des risques internes incluent les utilisateurs attrib
 4. Sélectionnez **suivant** pour continuer.
 5. Dans la page **utilisateurs** , sélectionnez **Ajouter un utilisateur ou un groupe** ou **Choisissez Priority Group Groups** pour définir les utilisateurs ou groupes d’utilisateurs de priorité inclus dans la stratégie, en fonction du modèle de stratégie que vous avez sélectionné. Activez la case à cocher **tous les utilisateurs et les groupes à extension messagerie** , le cas échéant (si vous n’avez pas sélectionné de modèle de priorité basé sur l’utilisateur). Sélectionnez **suivant** pour continuer.
 6. Sur la page **spécifier le contenu à classer par priorité (facultatif)** , vous pouvez attribuer les sources à hiérarchiser pour augmenter le score des risques. Toutefois, certaines activités ne génèrent pas d’alerte en tout lieu, sauf si le contenu associé contient des types d’informations sensibles intégrés ou personnalisés ou s’il a été spécifié comme priorité sur cette page :
-    - **Sites SharePoint** : sélectionnez **Ajouter un site SharePoint** et sélectionnez les organisations SharePoint dont vous souhaitez définir la priorité. Par exemple, *« Group1@contoso.sharepoint.com/sites/group1 »*.
-    - **Type d’informations sensibles** : sélectionnez **Ajouter un type d’informations sensibles** et sélectionnez les types de critère de diffusion dont vous souhaitez définir la priorité. Par exemple, *« numéro de compte bancaire américain »* et *« numéro de carte de crédit »*.
-    - **Étiquettes de sensibilité** : sélectionnez **Ajouter une étiquette de confidentialité** et sélectionnez les étiquettes dont vous souhaitez définir la priorité. Par exemple, *« confidentiel »* et *« secret »*.
+    - **Sites SharePoint**: sélectionnez **Ajouter un site SharePoint** et sélectionnez les organisations SharePoint dont vous souhaitez définir la priorité. Par exemple, *« Group1@contoso.sharepoint.com/sites/group1 »*.
+    - **Type d’informations sensibles**: sélectionnez **Ajouter un type d’informations sensibles** et sélectionnez les types de critère de diffusion dont vous souhaitez définir la priorité. Par exemple, *« numéro de compte bancaire américain »* et *« numéro de carte de crédit »*.
+    - **Étiquettes de sensibilité**: sélectionnez **Ajouter une étiquette de confidentialité** et sélectionnez les étiquettes dont vous souhaitez définir la priorité. Par exemple, *« confidentiel »* et *« secret »*.
 7. Sélectionnez **suivant** pour continuer.
 8. Sur la page **Sélectionner les indicateurs de stratégie** , vous verrez les [indicateurs](insider-risk-management-settings.md#indicators) que vous avez définis comme étant disponibles sur la page indicateurs des paramètres de **risque Insider**  >  **Indicators** . Si vous avez sélectionné un modèle de *fuites de données* au début de l’Assistant, vous devez sélectionner une stratégie DLP dans la liste déroulante **stratégie DLP** pour activer le déclenchement des indicateurs pour la stratégie. Sélectionnez les indicateurs que vous souhaitez appliquer à la stratégie. Si vous préférez ne pas utiliser les paramètres de seuil de stratégie par défaut pour ces indicateurs, désactivez l’option **utiliser les seuils par défaut recommandés par Microsoft** et entrez les valeurs de seuil pour chaque indicateur sélectionné. Si vous avez sélectionné au moins un indicateur de *Bureau* ou d' *appareil* , sélectionnez les **suramplificateurs de score de risque** , le cas échéant. Les amplificateurs de score de risque ne s’appliquent qu’aux indicateurs sélectionnés.
 
@@ -212,4 +212,4 @@ Les stratégies de gestion des risques internes incluent les utilisateurs attrib
 
 Une fois que vous avez terminé ces étapes pour créer votre première stratégie de gestion des risques Insiders, vous commencerez à recevoir des alertes des indicateurs d’activité après environ 24 heures. Configurez des stratégies supplémentaires selon vos besoins à l’aide des instructions de l’étape 4 de cet article ou des procédures décrites dans [Create a New Insider Risk Policy](insider-risk-management-policies.md#create-a-new-policy).
 
-Pour en savoir plus sur l’analyse des alertes des risques internes et le **tableau de bord des alertes** , consultez la rubrique alertes de gestion des [risques internes](insider-risk-management-alerts.md).
+Pour en savoir plus sur l’analyse des alertes des risques internes et le **tableau de bord des alertes**, consultez la rubrique alertes de gestion des [risques internes](insider-risk-management-alerts.md).
