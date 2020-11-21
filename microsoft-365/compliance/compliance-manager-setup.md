@@ -17,20 +17,20 @@ search.appverid:
 - MOE150
 - MET150
 description: Définissez les autorisations et les rôles utilisateur du gestionnaire de conformité Microsoft, et configurez le test automatisé des actions. Gérer l’historique des utilisateurs et filtrer votre vue de tableau de bord.
-ms.openlocfilehash: d6dd7263779ae7f3e9366c0984360c191a62d5e8
-ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
+ms.openlocfilehash: bcb75943df88578b30063d8e35877cb2e3e6250b
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49072889"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376555"
 ---
 # <a name="get-started-with-compliance-manager"></a>Prise en main du Gestionnaire de conformité
 
-**Dans cet article :** Cet article vous aide à configurer le gestionnaire de conformité. Découvrez comment **accéder** au gestionnaire de conformité, **définir des rôles et des autorisations** , et configurer le **test automatique des actions d’amélioration**. Parcourez **votre tableau de bord du gestionnaire de conformité** et comprenez les pages principales : la page actions d’amélioration, la page solutions, la page évaluations et la page modèles d’évaluation.
+**Dans cet article :** Cet article vous aide à configurer le gestionnaire de conformité. Découvrez comment **accéder** au gestionnaire de conformité, **définir des rôles et des autorisations**, et configurer le **test automatique des actions d’amélioration**. Parcourez **votre tableau de bord du gestionnaire de conformité** et comprenez les pages principales : la page actions d’amélioration, la page solutions, la page évaluations et la page modèles d’évaluation.
 
 ## <a name="who-can-access-compliance-manager"></a>Qui peut accéder au gestionnaire de conformité
 
-Le gestionnaire de conformité est disponible pour les organisations disposant de licences Office 365 et Microsoft 365, ainsi que pour le Cloud communautaire pour le gouvernement américain (GCC). Les fonctionnalités de gestion et de disponibilité de l’évaluation dépendent de votre contrat de licence.  [Afficher les détails de description de service](https://go.microsoft.com/fwlink/?linkid=2132371).
+Le gestionnaire de conformité est disponible pour les organisations disposant de licences Office 365 et Microsoft 365, ainsi que pour les clients du secteur public américain (GCC) modérés et GCC. Les fonctionnalités de gestion et de disponibilité de l’évaluation dépendent de votre contrat de licence.  [Afficher les détails de description de service](https://go.microsoft.com/fwlink/?linkid=2132371).
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -51,6 +51,9 @@ Le gestionnaire de conformité utilise un modèle d’autorisation de contrôle 
 
 La personne qui détient le rôle d’administrateur global pour votre organisation peut définir des autorisations utilisateur dans le centre de conformité Microsoft 365, ainsi que dans Azure Active Directory (Azure AD).
 
+> [!NOTE]
+> Les clients des environnements High Government Community (GCC) peuvent uniquement définir des autorisations utilisateur et des rôles pour le gestionnaire de conformité dans Azure AD. Voir ci-dessous pour les instructions Azure AD et les définitions de type de rôle.
+
 Pour définir des autorisations et attribuer des rôles à partir du centre de conformité Microsoft 365, suivez les étapes ci-dessous :
 
 1. Sélectionnez **autorisations** sur le volet de navigation de gauche depuis n’importe quel endroit du [Centre de conformité Microsoft 365](https://compliance.microsoft.com/).
@@ -67,7 +70,7 @@ Pour définir des autorisations et attribuer des rôles à partir du centre de c
 
 7. Activez la case à cocher en regard des noms que vous souhaitez ajouter, puis cliquez sur le bouton **Ajouter** en bas.
 
-8. Lorsque vous avez fini d’affecter des utilisateurs, sélectionnez **Terminer** , puis **Enregistrer** , puis **Fermer**.
+8. Lorsque vous avez fini d’affecter des utilisateurs, sélectionnez **Terminer**, puis **Enregistrer**, puis **Fermer**.
 
 ##### <a name="more-about-the-office-365-secruity--compliance-center"></a>En savoir plus sur le centre de conformité Office 365 Secruity &
 
@@ -97,6 +100,9 @@ Le tableau ci-dessous présente les fonctions autorisées par chaque rôle dans 
 ## <a name="settings-for-automated-testing-and-user-history"></a>Paramètres pour les tests automatisés et l’historique des utilisateurs
 
 Les paramètres du gestionnaire de conformité dans le centre de conformité Microsoft 365 vous permettent d’activer et de désactiver le test automatique des actions d’amélioration. Les paramètres vous permettent également de gérer les données des utilisateurs associés aux actions d’amélioration, notamment la possibilité de réaffecter les actions d’amélioration à un autre utilisateur.  Seules les personnes disposant d’un rôle d’administrateur général ou de gestionnaire de conformité peuvent accéder aux paramètres du gestionnaire de conformité.
+
+> [!NOTE]
+> La fonctionnalité de test automatisé n’est pas disponible pour les clients dans les environnements de grande qualité, car le score de sécurité n’est pas disponible dans ces environnements. Les clients professionnels de GCC doivent implémenter et tester manuellement leurs actions d’amélioration.
 
 ### <a name="set-up-automated-testing"></a>Configurer les tests automatisés
 
@@ -178,7 +184,7 @@ Vous pouvez réaffecter les actions d’amélioration d’un utilisateur à l’
 
 6. Dans le champ **Rechercher des utilisateurs** , entrez le nom ou l’adresse de messagerie de l’utilisateur auquel vous souhaitez affecter les actions *d'* amélioration.
 
-7. Lorsque vous voyez le nom de votre utilisateur prévu dans **lequel les actions d’amélioration seront affectées** , sélectionnez l’utilisateur, puis sélectionnez **affecter des actions**.
+7. Lorsque vous voyez le nom de votre utilisateur prévu dans **lequel les actions d’amélioration seront affectées**, sélectionnez l’utilisateur, puis sélectionnez **affecter des actions**.
 
 8. Une fois la réaffectation terminée, un message de confirmation s’affiche dans le volet flyout, confirmant que toutes les actions d’amélioration de l’utilisateur précédent ont été réattribuées au nouvel utilisateur. Si vous recevez un avis d’échec de la réaffectation, fermez la fenêtre et réessayez. Pour fermer le volet flyout, sélectionnez **Terminer**.
 
@@ -233,8 +239,8 @@ Cette section présente les solutions qui contiennent des actions d’améliorat
 
 Cette section fournit une vue plus détaillée de votre score de deux manières différentes :
 
-- **Catégories** : indique le pourcentage de votre score global dans les catégories de protection des données, telles que « protéger les informations » ou « gérer les appareils ».
-- **Évaluations** : indique le pourcentage de votre progression dans la gestion des évaluations pour des normes, réglementations ou lois spécifiques en matière de protection des données, telles que RGPD ou NIST 800-53.
+- **Catégories**: indique le pourcentage de votre score global dans les catégories de protection des données, telles que « protéger les informations » ou « gérer les appareils ».
+- **Évaluations**: indique le pourcentage de votre progression dans la gestion des évaluations pour des normes, réglementations ou lois spécifiques en matière de protection des données, telles que RGPD ou NIST 800-53.
 
 ### <a name="filtering-your-dashboard-view"></a>Filtrage de l’affichage du tableau de bord
 
@@ -268,13 +274,13 @@ L’affichage par défaut de cette page n’affiche pas les actions d’amélior
 
 La page actions d’amélioration affiche les points de données suivants pour chaque action d’amélioration :
 
-- **Points atteints** : nombre de points obtenus en dehors du total disponible en effectuant l’action
-- **Réglementations** : réglementations ou normes relatives à l’action
-- **Groupe** : groupe auquel vous avez affecté l’action.
-- **Solutions** : la solution à partir de laquelle vous pouvez effectuer l’action
-- **Évaluations** : évaluations qui contiennent l’action
-- **Catégories** : catégorie de protection des données associée (par exemple, protection des informations, gestion des appareils, etc.)
-- **État du test** :
+- **Points atteints**: nombre de points obtenus en dehors du total disponible en effectuant l’action
+- **Réglementations**: réglementations ou normes relatives à l’action
+- **Groupe**: groupe auquel vous avez affecté l’action.
+- **Solutions**: la solution à partir de laquelle vous pouvez effectuer l’action
+- **Évaluations**: évaluations qui contiennent l’action
+- **Catégories**: catégorie de protection des données associée (par exemple, protection des informations, gestion des appareils, etc.)
+- **État du test**:
     - **Aucun** – pas de mise à jour d’État enregistrée
     - **Non évalué** -le test n’a pas commencé
     - **Réussite** de l’implémentation réussie
@@ -320,18 +326,18 @@ La page évaluations répertorie toutes les [évaluations](compliance-manager-as
 
 La page évaluations résume les informations clés de chaque évaluation :
 
-- **Évaluation** : nom de l’évaluation
-- **État** :
+- **Évaluation**: nom de l’évaluation
+- **État**:
     - **Complet** -tous les contrôles ont l’État « réussite », ou au moins un est passé et le reste est « hors de portée »
     - **Incomplet** : au moins un contrôle a l’État « failed » (échec).
     - **Aucun** : tous les contrôles n’ont pas été testés
     - **En cours** -les actions d’amélioration ont un autre statut, y compris « en cours », « crédit partiel » ou «non détecté
 - **Progression** de l’évaluation : pourcentage du travail effectué vers l’achèvement, mesuré par le nombre de contrôles correctement testés
-- **Vos actions d’amélioration** : nombre d’actions terminées pour satisfaire l’implémentation de vos contrôles
-- **Actions Microsoft** : nombre d’actions terminées pour répondre à l’implémentation des contrôles Microsoft
-- **Group** : nom du groupe auquel l’évaluation appartient
-- **Produit** : service Microsoft 365 associé
-- **Réglementation** : norme, politique ou loi réglementaire qui s’applique à l’évaluation
+- **Vos actions d’amélioration**: nombre d’actions terminées pour satisfaire l’implémentation de vos contrôles
+- **Actions Microsoft**: nombre d’actions terminées pour répondre à l’implémentation des contrôles Microsoft
+- **Group**: nom du groupe auquel l’évaluation appartient
+- **Produit**: service Microsoft 365 associé
+- **Réglementation**: norme, politique ou loi réglementaire qui s’applique à l’évaluation
 
 ### <a name="filtering-your-assessments-view"></a>Filtrage de l’affichage des évaluations
 

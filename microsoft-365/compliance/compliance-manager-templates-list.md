@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le gestionnaire de conformité Microsoft fournit des modèles pour la création d’évaluations qui s’alignent sur des réglementations, des normes et des réglementations nationales, régionales et industrielles.
-ms.openlocfilehash: 9bce625bd8733570a62e3b5f7685cace84005b69
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: f02c4f5a1be9a3cec61a29efa2f42151a291943a
+ms.sourcegitcommit: aa8d2de6ffac0157fffd14d0ea7f51ef0c287607
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48294794"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49374017"
 ---
 # <a name="compliance-manager-templates-list"></a>Liste des modèles de Gestionnaire de conformité
 
@@ -62,66 +62,94 @@ En savoir plus sur [l’affichage et la gestion de vos modèles](compliance-mana
 - Alabama-politique 621 : notification de violation des données (Microsoft 365)
 - Alaska-chapitre 48-Personal Information Protection Act (Microsoft 365)
 - Albanie : Loi sur la protection des données personnelles non. 9887
-- Antigua-et-Barbuda-Data Protection Act/2013 (Microsoft 365)
+- Antigua et Barbuda-Data Protection Act/2013 (Microsoft 365)
+- Annexe III à n ° circulaire OMB A-130-sécurité des ressources d’information automatisées fédérales
 - [Argentine-Personal Data Protection Act 25,326](offering-pdpa-argentina.md) (Microsoft 365)
 - Arkansas-Personal Information Protection Act (Microsoft 365)
 - Cadre de confidentialité Asie Pacifique (APEC)
+- Australie-ASD : 8 (Microsoft 365)
+- Australie-loi sur les Archives nationales
+- Australie-enregistrements publics-normes d’archivage Office Victoria (Microsoft 365)
 - Australie-courrier indésirable 2003 (Microsoft 365)
+- 2014 (Australie) Code (version 2,1)
 - Australian Energy Sector Cyber Security Framework (AESCSF) (Microsoft 365)
 - [Programme d’évaluation de la sécurité des informations inscrites australienne (IRAP) version 2](offering-ccsl-irap-australia.md) (Microsoft 365)
 - [Autorité de régulation prudentielle australienne](offering-apra-australia.md) (Microsoft 365)
 - Autrichienne de télécommunications Act 2003 (Microsoft 365)
+- Bahamas-Data Protection Act (Microsoft 365)
 - Barbade-Data Protection Bill 2019 (Microsoft 365)
+- Loi du Belarus sur les informations, l’informatisation et la protection des informations (Microsoft 365)
 - [Belgique NBB Dec 2015](offering-nbb-fsma-belgium.md) (Microsoft 365)
 - Bermudes-Electronic transaction Act (Microsoft 365)
+- Loi de Bosnie-Herzégovine sur la protection des données personnelles
 - Brésil-code de protection du consommateur n °. 8078 (Office 365)
 - Brésil-Loi sur la protection des données générales (LGPD) (Microsoft 365)
+- Loi de Bulgarie pour la protection des données personnelles 2002 (Microsoft 365)
 - Californie-Code civil, section 1798
 - Californie-Loi sur la violation de la base de données (California SB 1386)
 - California-Education code-EDC, titre 3, Division 14, partie 65, Chapter 2,5-social Media Privacy
+- Confidentialité de l’information en Californie-SB-327 : périphériques connectés (Microsoft 365)
+- Loi California Consumer Reporting agences (Microsoft 365)
 - [California Consumer Privacy Act (CCPA)](offering-ccpa.md) (Microsoft 365)
 - Canada-violation des règlements de sécurité (Microsoft 365)
 - Canada-British Columbia-Information Privacy & Security-FOIPPA (Microsoft 365)
 - [Canada-Bureau du Superintendent des établissements financiers](offering-osfi-canada.md) (Microsoft 365)
 - Canada-Personal Health Information Protection Act (loi LPRPS) (Microsoft 365)
 - Canada-protection des informations personnelles et Electronic documents Act (loi LPRPDE) (Microsoft 365)
+- Protégé par le Canada-B
 - Cybersecure Canada (Microsoft 365)
 - CAN-SPAM Act (Microsoft 365)
 - [Norme de sécurité de CDSA Content Protection &](offering-cdsa.md) (Microsoft 365)
 - [CFR-Code de la réglementation fédérale du titre 21](offering-fda-cfr-title-21-part-11.md) (Microsoft 365)
+- Normes anti-terrorisme des installations chimiques (CFATS) (Microsoft 365)
 - Règle de protection de la vie des enfants (COPPA) (Microsoft 365)
 - Chine-spécification de sécurité des informations personnelles (Microsoft 365)
 - [Groupe d’implémentation CIS 1, groupe 2, groupe 3](offering-cis-benchmark.md)
 - [Matrice de contrôles Cloud CSA (Cloud Security Alliance)](offering-csa-star-attestation.md)
 - CMMC niveau 1, niveau 2, niveau 3, niveau 4, niveau 5 (Microsoft 365)
 - COBIT 5 (Microsoft 365)
+- Colombie-décret non. 1377/2013 (utilisé pour être la Loi de Colombie 1581/2012)
 - Colombie-External lettre 007 007 de 2018 (Microsoft 365)
+- Colombie-Loi 1266/2008-habeas data Act (Microsoft 365)
 - Colombie-Loi 1581/2012 (Microsoft 365)
+- Déclaration de la Commission et conseils relatifs à la divulgation d’Cybersecurity d’entreprise publique-États-Unis
 - Fraude informatique et abus Act (CFAA) (Microsoft 365)
 - Connecticut statuts généraux-dispositions générales pour les entrepreneurs d’État qui reçoivent des informations confidentielles (Microsoft 365)
+- Loi sur l’État Connecticut-violation de la sécurité des données informatiques contenant des informations personnelles (Microsoft 365)
 - Loi sur la sécurité des informations personnelles des particuliers (Microsoft 365)
 - [Stratégie de sécurité CJIS (pénal Justice Information Services)](offering-cjis.md) (Microsoft 365)
 - Croatie-Personal Data Protection Act (Microsoft 365)
 - Loi Cybersecurity de la République populaire de Chine (Microsoft 365)
+- Chypre traitement de la Loi sur les données personnelles (Microsoft 365)
 - N ° d’action tchèque 110/2019 coll. on Personal Data Processing-2019 (Microsoft 365)
+- Tchèque-on Cyber Security et modification des actes connexes (Act on Cyber Security)-no Act. 181 (Microsoft 365)
+- Violations de la sécurité des ordinateurs du Delaware-sous-titre commerce et commerce-sous-titre II-12B-100 à 12B-104
+- Danemark : Loi sur la protection des données
+- Danemark-ordre exécutif sur les informations et le consentement requis en cas de stockage et d’accès aux informations dans End-User équipement de terminal
 - [DFARS](offering-dfars.md) (Microsoft 365)
 - Directive 2013/40/EU du Parlement européen et du Conseil (Microsoft 365)
 - Dubai-Health Data Protection Regulation (Microsoft 365)
 - Réglementations sur la protection des consommateurs de Dubaï (autorités réglementaires de télécommunications) (Microsoft 365)
 - ISR de Dubaï (Microsoft 365)
 - Code électronique des réglementations fédérales-partie 748,0 et annexe A (Microsoft 365)
+- ENISA information assurance Framework
 - Estonie-Personal Data Protection Act (Microsoft 365)
 - Estonie : le système de mesures de sécurité pour les systèmes d’information (Microsoft 365)
 - Directive 2002 58 de la directive ePrivacy ce (Microsoft 365)
+- EudraLex volume 4 : principes BPF, annexe 11
+- Directive européenne 2006/24/EC
 - Règles de confidentialité FDIC (Microsoft 365)
 - [Livret sur la sécurité des informations du Conseil d’étude fédérale des institutions financières (FFIEC)](offering-ffiec-us.md) (Microsoft 365, Intune)
 - [Contrôles de sécurité élevée FedRamp](offering-fedramp.md) (Office 365)
 - [FedRamp High Security Controls_NIST 800-53](offering-fedramp.md) (Microsoft 365)
 - [FedRAMP modéré](offering-fedramp.md)
+- Finlande-Data Protection Act
 - Critères finlandais pour l’évaluation de la sécurité des informations des services Cloud (Microsoft 365)
+- Liste de vérification de l’Cybersecurity FINRA
 - France-Act 78-17 du 6 janvier 1978 sur les technologies de l’information, les fichiers de données et les extraertiess civils (Microsoft 365)
 - Freedom of Information Act (FOIA) (Microsoft 365)
 - FTC Privacy of Consumer Financial information (Microsoft 365)
+- Ghana Data Protection Act
 - Principes d’archivage généralement acceptés (Microsoft 365)
 - [Allemagne-Cloud Computing-contrôles de conformité-catalogue (C5)](offering-c5-germany.md) (Microsoft 365)
 - Allemagne-Federal Data Protection Act (Microsoft 365)
@@ -130,20 +158,34 @@ En savoir plus sur [l’affichage et la gestion de vos modèles](compliance-mana
 - Hawaii-violation de la sécurité des informations personnelles chapitre 487N
 - [HIPAA/Hi](offering-hipaa-hitech.md) (Microsoft 365, Intune)
 - [HiTRUST](offering-hitrust.md) (Microsoft 365)
--  Ordonnancement des données personnelles (confidentialité) de Hong Kong (Microsoft 365)
+- Ordonnancement des données personnelles (confidentialité) de Hong Kong (Microsoft 365)
+- Inde-IT Act de 2000 (Microsoft 365)
+- Réglementation de l’information sur l’Inde (pratiques et procédures de sécurité raisonnables et données ou informations personnelles sensibles)
 - Indonésie-loi 11/2008 (Microsoft 365)
 - Indonésie-Peraturan Pemerintah n ° 82 Tahun 2012-réglementation du gouvernement-Règlement sur la protection des données (Microsoft 365)
+- IRAP v3
 - [IRS-P1075](offering-irs-1075.md) (Microsoft 365)
+- IRS-procédure de revenu 98-25 enregistrements automatisés
+- ISO 15489 (Microsoft 365)
+- [ISO 22301:2019](offering-iso-22301.md) (Microsoft 365)
+- ISO 27005:2018 (Microsoft 365)
 - [ISO 27017:2015](offering-iso-27017.md) (Microsoft 365)
+- ISO 27799 Health informatique : gestion de la sécurité des informations dans l’état de santé à l’aide de la norme ISO/IEC 27002 (Microsoft 365)
+- ISO 31000:2018 (Microsoft 365)
+- ISO 80001-1 application de la gestion des risques pour les réseaux informatiques qui incorporent des appareils médicaux (Microsoft 365)
 - [ISO/IEC 27018:2014](offering-iso-27018.md)
+- [ISO/IEC 27701:2019](offering-iso-27701.md) (Microsoft 365)
 - Israël-protection de la confidentialité (transfert de données vers les bases de données à l’étranger) règlements (Microsoft 365)
 - Infrastructure de gestion de la sécurité des informations ITU X. 1052 (Microsoft 365)
 - Japon-agir sur l’interdiction d’accès aux ordinateurs non autorisés (Microsoft 365)
+- Japon-modèle commun de mesures de sécurité des informations pour les agences gouvernementales et les organismes associés (Microsoft 365)
+- Japon-normes communes concernant les mesures de sécurité des informations pour les agences gouvernementales et les organismes associés
 - Marque de confidentialité japonaise
 - Acte japonais sur la protection des informations personnelles (n ° de loi) 57 de 2003) (Microsoft 365)
 - Commission mixte AHO Information Management standard (Microsoft 365)
 - Loi sur la protection des données du Kenya (Microsoft 365)
 - Corée : Loi de promotion sur l’utilisation du réseau d’informations et de communications et sur la protection des données (Microsoft 365)
+- Corée-utilisation et protection des informations de crédit Act (loi spéciale) (Microsoft 365)
 - Korea Personal Information Protection Act (Microsoft 365)
 - Koweït-CSF (Microsoft 365)
 - Luxembourg Act (Microsoft 365)
@@ -155,16 +197,20 @@ En savoir plus sur [l’affichage et la gestion de vos modèles](compliance-mana
 - Île de la Loi sur la protection des données Act 2004 (Microsoft 365)
 - Loi du Mexique-Federal protection des consommateurs (Microsoft 365)
 - Loi sur la protection des données fédérales pour le Mexique (Microsoft 365)
+- Normes de risque minimales acceptables pour les échanges (MARS-E) 2,0 (Microsoft 365)
 - [Meilleures pratiques en matière de sécurité du contenu MPa](offering-mpaa.md) (Microsoft 365)
+- Loi Myanmar sur la protection de la vie privée et de la sécurité des citoyens
 - NAIC-standards de protection du modèle d’informations client règle MDL-673 (Microsoft 365)
 - Népal-droit à Information Act
 - [Virement bancaire NERC](offering-nerc-cip.md) (Microsoft 365)
 - Pays-Bas-protection des données personnelles Act/1999 (Microsoft 365)
 - Chapitre Nevada 603A-sécurité et confidentialité des informations personnelles (Microsoft 365)
+- New York Privacy Act-ébauche (Microsoft 365)
 - Stratégie de rétention des données d’intégrité de la Nouvelle-Zélande (Office 365)
 - Code de confidentialité des informations médicales de Nouvelle-Zélande 1994 (Microsoft 365)
 - Nouvelle infrastructure de sécurité des informations médicales (HISF)-2015 (Microsoft 365)
-- New Zealand Privacy Act (Microsoft 365)
+- Nouvelle-Zélande Privacy Act 2020 (Microsoft 365)
+- Microsoft 365 (Nouvelle-Zélande)
 - Code de confidentialité des informations de télécommunications de la Nouvelle-Zélande 2003
 - Règlement sur la protection des données du Nigeria (Microsoft 365)
 - NIST 800-37 (Microsoft 365)
@@ -174,6 +220,8 @@ En savoir plus sur [l’affichage et la gestion de vos modèles](compliance-mana
 - [CSF CSF](offering-nist-csf.md) (Microsoft 365)
 - Structure de confidentialité NIST
 - Publication spéciale NIST 800-128 (Microsoft 365)
+- Publication spéciale NIST 1800-1 sécurisation des enregistrements d’intégrité électronique sur des appareils mobiles (Microsoft 365)
+- Publication spéciale NIST 1800-5 IT Asset Management
 - Norvège-Personal Data Act (Microsoft 365)
 - NYDFS (Microsoft 365)
 - Oman-Loi sur les transactions électroniques (Microsoft 365)
@@ -186,12 +234,17 @@ En savoir plus sur [l’affichage et la gestion de vos modèles](compliance-mana
 - Confidentialité du règlement des informations financières et médicales des consommateurs, NAIC MDL-672, Q2 2017 (Microsoft 365)
 - Porto Rico-informations de citoyen sur la Loi sur la sécurité des banques de données (Microsoft 365)
 - Stratégie de sécurité du Cloud Qatar
+- Stratégie d’externalisation RBNZ BS11 (Microsoft 365)
 - Loi de la République de Moldova sur la protection des données personnelles (Microsoft 365)
 - [Banque de réserve de l’Inde Cyber Security Framework](offering-rbi-irdai-india.md) (Microsoft 365)
+- Roumanie-Loi sur la protection des données 190/2018 (Microsoft 365)
+- Russie-Loi fédérale 149-FZ sur les informations, technologies de l’information et sécurité des informations
 - [Loi fédérale sur la Fédération russe concernant les données personnelles](offering-russia-data-localization.md) (Microsoft 365)
+- Loi sur la protection des données de la Saint-Lucie (Microsoft 365)
 - [SEC 17-4 (a)](offering-sec-17a-4.md) (Microsoft 365)
 - SIG (Microsoft 365)
 - Singapour-Banque Act (Cap. 19)
+- Singapour-Cybersecurity 2018 (Microsoft 365)
 - Singapour-IMDA IoT Cyber Security Guide (Microsoft 365)
 - Singapour-autorité monétaire de Singapour Technology Risk Management Framework (Microsoft 365)
 - [Singapour-sécurité Cloud multiniveau (MTCS) standard](offering-mtcs-singapore.md) (Microsoft 365)
@@ -204,6 +257,7 @@ En savoir plus sur [l’affichage et la gestion de vos modèles](compliance-mana
 - Afrique du Sud pour la protection des consommateurs ACT 68 2008 (Microsoft 365)
 - Loi sud-africaine communications et transactions électroniques, 2002 (Microsoft 365)
 - Afrique du Sud POPIA (Microsoft 365)
+- Infrastructure de sécurité pour l’Espagne (Microsoft 365)
 - Contrôles de sécurité clients SWIFT (Microsoft 365)
 - Suisse-Loi fédérale sur la protection des données (FADP) (Microsoft 365)
 - Taïwan-règles d’implémentation pour le système d’audit interne et de contrôle interne des établissements de paiement électronique-2015 (Microsoft 365)
@@ -217,14 +271,21 @@ En savoir plus sur [l’affichage et la gestion de vos modèles](compliance-mana
 - Protection des données de Trinité-et-Tobago (Act 13 de 2011) (Microsoft 365)
 - [Exchange-évaluation de la sécurité des informations approuvé](offering-tisax-germany.md)
 - Turquie-KVKK protection des données personnelles 6698 (Microsoft 365)
+- Émirats Arabes Unis-n ° 2 sur 2019 sur l’utilisation des technologies d’information et de communication (TIC) dans les champs d’intégrité
 - Royaume-Uni-les activités de pétrole offshore/2011 (Microsoft 365)
 - [UK Cyber Essentials](offering-cyber-essentials-plus-uk.md) (Microsoft 365)
 - UK-Cyber Security for Defense Suppliers standard (Microsoft 365)
 - Confidentialité et communications électroniques au Royaume-Uni (Microsoft 365)
 - Ukraine-protection des données personnelles (Microsoft 365)
+- US DoE 10 CFR part 810 (Microsoft 365)
 - USA-Federal Information Security Act Act de 2014 (FISMA) (Microsoft 365)
 - [US FERPA](offering-ferpa.md) (Microsoft 365)
 - US-Cloud Act (Microsoft 365)
 - Loi sur la protection de la solvabilité en Utah (Microsoft 365)
+- Loi Ouzbékistan sur les données personnelles
+- Normes de sécurité des données de protection des Victorian V 2.0 (VPDSS 2,0) (Microsoft 365)
 - Vietnam-Loi sur la protection des droits de l’utilisateur (Microsoft 365)
+- Vietnam-Loi de Cybersecurity (Microsoft 365)
+- Vietnam-Loi de sécurité des informations réseau
 - Vietnam-Loi sur les technologies de l’information (Microsoft 365)
+- Yémen-Yémen droit du droit d’accès aux informations (Microsoft 365)

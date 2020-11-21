@@ -14,16 +14,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment effectuer une implémentation et des tests sur les contrôles dans le gestionnaire de conformité Microsoft. Affecter le travail, stocker la documentation et exporter des rapports.
-ms.openlocfilehash: 99b08ca1336c3f347764230896af47fe1486d4b2
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 4b7ece89752a2c3e54a0a69bade2f489feacd0c3
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48204351"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376525"
 ---
 # <a name="assign-and-complete-improvement-actions-in-compliance-manager"></a>Affecter et effectuer des actions d’amélioration dans le gestionnaire de conformité
 
-**Dans cet article :** Cet article explique comment **gérer votre flux de travail de conformité** avec des actions d’amélioration. Découvrez comment **attribuer des actions d’amélioration** pour l’implémentation et le test, gérer les **mises à jour**et exporter des **rapports**.
+**Dans cet article :** Cet article explique comment **gérer votre flux de travail de conformité** avec des actions d’amélioration. Découvrez comment **attribuer des actions d’amélioration** pour l’implémentation et le test, gérer les **mises à jour** et exporter des **rapports**.
 
 ## <a name="manage-compliance-workflows-with-improvement-actions"></a>Gérer les flux de travail de conformité avec des actions d’amélioration
 
@@ -56,7 +56,7 @@ Une fois que vous avez identifié le cessionnaire approprié, assurez-vous qu’
 
 2. Dans le volet flyout état de modification, activez la case à cocher **affecté à** pour afficher une liste de **personnes suggérées** pour les utilisateurs. Vous pouvez sélectionner l’utilisateur dans la liste ou taper l’adresse de messagerie de la personne à laquelle vous souhaitez l’attribuer.
 
-3. Sélectionnez **enregistrer et fermer**. L’utilisateur affecté reçoit un message électronique expliquant que l’action d’amélioration lui a été affectée, avec un lien direct vers l’action d’amélioration.
+3. Sélectionnez **enregistrer et fermer**. L’utilisateur affecté reçoit un message électronique expliquant que l’action d’amélioration lui a été affectée, avec un lien direct vers l’action d’amélioration. (Remarque : la communauté du gouvernement américain (GCC) ne reçoit pas de courrier électronique lorsque des actions leur sont attribuées.)
 
 L’utilisateur affecté peut ensuite effectuer les actions recommandées.
 

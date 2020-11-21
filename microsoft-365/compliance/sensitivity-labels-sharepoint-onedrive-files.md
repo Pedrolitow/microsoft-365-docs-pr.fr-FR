@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Les administrateurs peuvent activer la prise en charge de l’étiquette de sensibilité pour les fichiers Word, Excel et PowerPoint dans SharePoint et OneDrive.
-ms.openlocfilehash: 84628cdf1e56bfcdf72bc5aca7aed61eba6a7782
-ms.sourcegitcommit: 2beefb695cead03cc21d6066f589572d3ae029aa
+ms.openlocfilehash: 0feb98c6a0040ad67b4607062abdf0be5b5fbdb8
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49349690"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376327"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Activer les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive
 
@@ -218,6 +218,26 @@ Pour obtenir les GUID pour vos étiquettes de sensibilité, utilisez la cmdlet [
     ``` 
 
 Pour plus d’informations sur l’utilisation des propriétés gérées, voir [gérer le schéma de recherche dans SharePoint](https://docs.microsoft.com/sharepoint/manage-search-schema).
+
+## <a name="remove-encryption-for-a-labeled-document"></a>Supprimer le chiffrement pour un document étiqueté
+
+Il peut y avoir des occasions rares lorsqu’un administrateur SharePoint doit supprimer le chiffrement d’un document stocké dans SharePoint. Tout utilisateur disposant du [droit gestion des droits relatifs](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) à l’exportation ou contrôle total qui lui est affecté pour ce document peut supprimer le chiffrement appliqué par le service Azure Rights Management à partir d’Azure information protection. Par exemple, les utilisateurs disposant de l’un de ces droits d’utilisation peuvent remplacer une étiquette qui applique le chiffrement avec une étiquette sans chiffrement. En guise d’alternative, un [super utilisateur](https://docs.microsoft.com/azure/information-protection/configure-super-users) peut télécharger le fichier et enregistrer une copie locale sans le chiffrement.
+
+En guise d’alternative, un administrateur général ou un [administrateur SharePoint](https://docs.microsoft.com/sharepoint/sharepoint-admin-role) peut exécuter l’applet de commande [Unlock-SPOSensitivityLabelEncryptedFile](https://docs.microsoft.com/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile) , qui supprime à la fois l’étiquette de sensibilité et le chiffrement. Cette applet de commande s’exécute même si l’administrateur n’a pas les autorisations d’accès au site ou au fichier, ou si le service Azure Rights Management n’est pas disponible. 
+
+Par exemple :
+
+```powershell
+Unlock-SPOSensitivityLabelEncryptedFile -FileUrl "https://contoso.com/sites/Marketing/Shared Documents/Doc1.docx" -JustificationText "Need to decrypt this file"
+```
+
+Conditions requises :
+
+- SharePoint Online Management Shell version 16.0.20616.12000 ou ultérieure.
+
+- Le chiffrement a été appliqué par une étiquette de sensibilité avec des paramètres de chiffrement définis par l’administrateur (les paramètres [affecter les autorisations maintenant](encryption-sensitivity-labels.md#assign-permissions-now) ). Le [chiffrement à double clé](encryption-sensitivity-labels.md#double-key-encryption) n’est pas pris en charge pour cette applet de commande.
+
+Le texte de la justification est ajouté à l' [événement d’audit](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) de l' **étiquette de confidentialité supprimée du fichier**, et l’action de déchiffrement est également enregistrée dans la journalisation de l’utilisation de la [protection pour Azure information protection](https://docs.microsoft.com/azure/information-protection/log-analyze-usage).
 
 ## <a name="how-to-disable-sensitivity-labels-for-sharepoint-and-onedrive-opt-out"></a>Procédure de désactivation des étiquettes de confidentialité pour SharePoint et OneDrive (exclusion)
 

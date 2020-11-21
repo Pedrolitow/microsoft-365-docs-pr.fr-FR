@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le gestionnaire de conformité Microsoft aide les organisations à simplifier et à automatiser les évaluations des risques et suggère des actions recommandées pour résoudre les risques.
-ms.openlocfilehash: 4508f07b0077d409de1ac033de67d20d1c3f2a7e
-ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
+ms.openlocfilehash: 7bff6a2a7a150a08b98fe7a92cd71d266df9fda7
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49072933"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376545"
 ---
 # <a name="microsoft-compliance-manager"></a>Gestionnaire de conformité Microsoft
 
@@ -30,7 +30,7 @@ ms.locfileid: "49072933"
 
 ## <a name="whats-new-the-ga-release-of-compliance-manager"></a>Nouveautés : la version GA du gestionnaire de conformité
 
-Le gestionnaire de conformité est désormais généralement disponible (GA) en tant que solution de gestion de la conformité de bout en bout dans le [Centre de conformité Microsoft 365](microsoft-365-compliance-center.md). Avec cette version, le gestionnaire de conformité termine la transition à partir de son emplacement précédent dans le portail d’approbation de service Microsoft. Le gestionnaire de conformité est également désormais disponible pour les clients modérés de la communauté américaine (GCC).
+Le gestionnaire de conformité est désormais généralement disponible (GA) en tant que solution de gestion de la conformité de bout en bout dans le [Centre de conformité Microsoft 365](microsoft-365-compliance-center.md). Avec cette version, le gestionnaire de conformité termine la transition à partir de son emplacement précédent dans le portail d’approbation de service Microsoft. Le gestionnaire de conformité est également désormais disponible pour les clients de la communauté gouvernementale américaine (GCC), à l’heure actuelle, modérée et GCC.
 
 Le début de la préversion publique du score de conformité est devenu un outil centralisé doté de fonctionnalités de gestion de la conformité améliorées et d’une plus grande facilité d’utilisation.  La version GA offre une plus grande collection d’évaluations prédéfinies pour vous aider à mettre à l’échelle vos activités de conformité.
 
@@ -83,9 +83,9 @@ Un contrôle est une exigence d’un règlement, d’une norme ou d’une strat�
 
 Le gestionnaire de conformité suit les types de contrôles suivants :
 
-1. **Contrôles gérés par Microsoft** : contrôles pour les services Cloud Microsoft, que Microsoft est responsable de l’implémentation
-2. **Vos contrôles** : parfois appelés contrôles gérés par le client, il s’agit de contrôles implémentés et gérés par votre organisation.
-3. **Contrôles partagés** : les contrôles que votre organisation et Microsoft partagent la responsabilité de l’implémentation
+1. **Contrôles gérés par Microsoft**: contrôles pour les services Cloud Microsoft, que Microsoft est responsable de l’implémentation
+2. **Vos contrôles**: parfois appelés contrôles gérés par le client, il s’agit de contrôles implémentés et gérés par votre organisation.
+3. **Contrôles partagés**: les contrôles que votre organisation et Microsoft partagent la responsabilité de l’implémentation
 
 ##### <a name="learn-more"></a>En savoir plus
 
@@ -99,11 +99,11 @@ Une évaluation est un regroupement de contrôles à partir d’un règlement, d
 
 Les évaluations comportent plusieurs composants :
 
-- **Services dans l’étendue** : l’ensemble spécifique des services Microsoft applicables à l’évaluation
-- **Contrôles gérés par Microsoft** : contrôles pour les services de Cloud Computing Microsoft, que Microsoft met en œuvre en votre nom
-- **Vos contrôles** : parfois appelés contrôles gérés par le client, il s’agit de contrôles implémentés et gérés par votre organisation.
-- **Contrôles partagés** : les contrôles que votre organisation et Microsoft partagent la responsabilité de l’implémentation
-- **Score d’évaluation** : indique votre progression dans la réalisation de tous les points possibles à partir d’actions au sein de l’évaluation gérée par votre organisation et par Microsoft
+- **Services dans l’étendue**: l’ensemble spécifique des services Microsoft applicables à l’évaluation
+- **Contrôles gérés par Microsoft**: contrôles pour les services de Cloud Computing Microsoft, que Microsoft met en œuvre en votre nom
+- **Vos contrôles**: parfois appelés contrôles gérés par le client, il s’agit de contrôles implémentés et gérés par votre organisation.
+- **Contrôles partagés**: les contrôles que votre organisation et Microsoft partagent la responsabilité de l’implémentation
+- **Score d’évaluation**: indique votre progression dans la réalisation de tous les points possibles à partir d’actions au sein de l’évaluation gérée par votre organisation et par Microsoft
 
 Lors de la création d’évaluations, vous les affectez à un groupe. Vous pouvez configurer des groupes de la manière la plus logique pour votre organisation. Par exemple, vous pouvez regrouper les évaluations en fonction de l’année, de la région, de la solution, des équipes au sein de votre organisation ou d’une autre façon. Une fois que vous avez créé des groupes, vous pouvez [filtrer votre tableau de bord du gestionnaire de conformité](compliance-manager-setup.md#filtering-your-dashboard-view) pour afficher votre score par un ou plusieurs groupes.
 
