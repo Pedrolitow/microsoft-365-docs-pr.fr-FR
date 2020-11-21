@@ -20,12 +20,12 @@ ms.custom:
 - AdminSurgePortfolio
 - Commerce
 monikerRange: o365-worldwide
-ms.openlocfilehash: 279b41716a5d69c819330e0fbcadd04d0aa51fee
-ms.sourcegitcommit: aa8d2de6ffac0157fffd14d0ea7f51ef0c287607
+ms.openlocfilehash: ea6a60d205c7fbe91b35b22b7ec7b3ee51715444
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49374032"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376292"
 ---
 # <a name="billing-information-for-microsoft-365-for-business-in-mexico"></a>Informations de facturation pour Microsoft 365 pour les entreprises au Mexique
 
@@ -63,5 +63,5 @@ Une facture générée par des entités étrangères (dans ce cas Microsoft Corp
 
 ## <a name="related-content"></a>Contenu connexe
 
-[Afficher votre facture](view-your-bill-or-invoice.md)\
-[Comprendre votre facture pour Microsoft 365 pour les entreprises](understand-your-invoice2.md)
+[Afficher votre](view-your-bill-or-invoice.md) facture (article) \
+[Comprendre votre facture pour Microsoft 365 pour les entreprises](understand-your-invoice2.md) (article)

@@ -18,17 +18,16 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez comment EOP et Office 365 vous protègent contre le courrier indésirable, le hameçonnage et les programmes malveillants en ajoutant un Conseil de sécurité en haut des e-mails.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0e204021bfd79dabd4abdeefaa990da50915eaf0
-ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
+ms.openlocfilehash: e36887e2bb0146c86a8a4f1526f1e712a38b46ba
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "48948456"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376618"
 ---
 # <a name="safety-tips-in-email-messages"></a>Conseils de sécurité dans les e-mails
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
 
 Exchange Online Protection (EOP) et Microsoft 365 vous protègent en matière de courrier indésirable, de hameçonnage et de protection contre les programmes malveillants. À l’heure actuelle, certaines de ces attaques sont tellement bien conçues qu’elles semblent légitimes. L’envoi de messages vers le dossier courrier indésirable n’est pas toujours suffisant. À présent, lorsque vous vérifiez votre courrier électronique dans Outlook ou Outlook sur le Web ou un client de messagerie, EOP vérifie automatiquement l’expéditeur et ajoute un Conseil de sécurité en haut du message.
 

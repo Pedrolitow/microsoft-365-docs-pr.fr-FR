@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: f84c1c4a8d507ae9a4be3cb69a816a8494e08cc3
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 9bd5ad3e2544e0c715ade59ca4744e08c8a548a6
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906786"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376664"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Illustrations de productivité Microsoft 365
 
@@ -43,12 +43,12 @@ Quels sont les besoins des architectes informatique concernant les groupes dans 
 
 Microsoft 365 inclut un large éventail de fonctionnalités de protection et de conformité des informations. En plus des outils de productivité de Microsoft, ces fonctionnalités sont conçues pour aider les organisations à collaborer en temps réel tout en adhérant à des structures rigoureuses de conformité réglementaire. 
 
-Cet ensemble d’illustrations utilise l’un des secteurs les plus réglementés, les services financiers, pour montrer comment ces fonctionnalités peuvent être appliquées afin de répondre aux exigences réglementaires courantes. N’hésitez pas à adapter ces illustrations pour votre propre usage. 
+Cet ensemble d’illustrations utilise l’un des secteurs les plus réglementés, les services financiers, pour montrer comment ces fonctionnalités peuvent être appliquées afin de répondre aux exigences réglementaires courantes. N’hésitez pas à les adapter à votre usage personnel. 
 
 
 | Item | Description |
 |:-----|:-----|
-|[![Affiche de modèle : fonctionnalités de protection et de conformité des informations Microsoft 365](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> [Télécharger en tant que fichier PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) \| [Télécharger en tant que Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx)   <br/> Mise à jour du 2020 octobre|TTC <ul><li>  Protection des informations Microsoft et protection contre la perte de données</li><li>Stratégies de rétention et étiquettes de rétention. </li><li>Obstacles aux informations</li><li>Conformité des communications</li><li>Risque pour les initiés</li><li>Réception de données tierces</li>|
+|[![Poster du modèle : fonctionnalités de la conformité et de la protection des informations Microsoft 365](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> Anglais : [Télécharger en tant que PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) Télécharger en tant \| [que fichier Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx)   <br/> Japonais : [Télécharger en tant que PDF](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf) Télécharger en tant \| [que fichier Visio](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx)   <br/> Mise à jour du 2020 novembre|TTC <ul><li>  Protection des informations et protection contre la perte de données Microsoft</li><li>Stratégies de rétention et étiquettes de rétention. </li><li>Obstacles aux informations</li><li>Conformité des communications</li><li>Risque pour les initiés</li><li>Réception de données tierces</li>|
 
 
 ### <a name="security-and-information-protection-for-multi-region-organizations"></a>Sécurité et protection des informations pour les organisations multi-régions
@@ -84,7 +84,7 @@ Flux de travail et flux de données de bout en bout de découverte électronique
 
 | Item | Description |
 |:-----|:-----|
-|[![Affiche de modèle : architecture eDiscovery avancée dans Microsoft 365](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [Afficher sous forme d’image](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \| [Télécharger en tant que fichier PDF](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf) \| [Télécharger en tant que Visio](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)   <br/> Mise à jour du 2020 octobre|TTC <ul><li>  Flux de travail de bout en bout dans un seul environnement</li><li>Flux de travail de bout en bout dans un environnement multi-géo Microsoft 365 </li><li>Flux de données de bout en bout prenant en charge le flux de travail EDRM</li> |
+|[![Affiche de modèle : architecture eDiscovery avancée dans Microsoft 365](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [Afficher sous forme d’image](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \| [Télécharger en tant que fichier PDF](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf) \| [Télécharger en tant que Visio](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)   <br/> Mise à jour : octobre 2020|TTC <ul><li>  Flux de travail de bout en bout dans un seul environnement</li><li>Flux de travail de bout en bout dans un environnement multi-géo Microsoft 365 </li><li>Flux de données de bout en bout prenant en charge le flux de travail EDRM</li> |
   
 <!--
 

@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur les stratégies anti-hameçonnage disponibles dans Exchange Online Protection (EOP) et Microsoft Defender pour Office 365.
-ms.openlocfilehash: c728a69a3b0841219e4f9b546e80e71b2cf89151
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: a02d69b278420d814871df8eebdd6efcdf5d8e7f
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123630"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376357"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Stratégies anti-hameçonnage dans Microsoft 365
 
@@ -200,8 +200,11 @@ Les paramètres d’emprunt d’identité suivants sont disponibles uniquement d
   - **Domaines empruntés**: l’adresse de provenance contient un domaine protégé.
   - **Caractères inhabituels**: l’adresse de l’expéditeur contient des jeux de caractères inhabituels (par exemple, des symboles mathématiques, du texte ou une combinaison de majuscules et minuscules) dans un expéditeur ou un domaine protégé.
 
-  > [!NOTE]
-  > Même lorsque les conseils de sécurité pour l’emprunt d’identité sont désactivés, vous pouvez utiliser une règle de flux de messagerie (également appelée règle de transport) pour ajouter un en-tête de message nommé **X-MS-Exchange-EnableFirstContactSafetyTip** aux messages. Des conseils de sécurité spécifiques seront affichés pour avertir les destinataires qu’ils ne reçoivent pas de courrier électronique de l’expéditeur ou dans les cas où le destinataire reçoit un message électronique pour la première fois de l’expéditeur.
+> [!IMPORTANT]
+>
+> Même lorsque les conseils de sécurité pour l’emprunt d’identité sont désactivés, **il est recommandé** d’utiliser une règle de flux de messagerie (également appelée règle de transport) pour ajouter un en-tête de message nommé **X-MS-Exchange-EnableFirstContactSafetyTip** aux messages. Des conseils de sécurité spécifiques seront affichés pour avertir les destinataires qu’ils ne reçoivent pas de courrier électronique de l’expéditeur ou dans les cas où le destinataire reçoit un message électronique pour la première fois de l’expéditeur.
+>:::image type="content" source="../../media/Urja_FirstContactEmail-Set-us-anti-phish-pol-safetyTip-ImpersonationProtection-MultipleRecipients.png" alt-text="Texte du Conseil de sécurité pour la protection contre l’emprunt d’identité avec plusieurs destinataires.":::
+<p>
 
 - **Intelligence des boîtes aux lettres**: active ou désactive l’intelligence artificielle (ai) qui détermine les modèles de courrier des utilisateurs avec leurs contacts fréquents. Ce paramètre permet à l’AI de faire la distinction entre les messages légitimes et falsifiés de ces contacts. La boîte aux lettres n’est disponible que pour les boîtes aux lettres Exchange Online.
 
