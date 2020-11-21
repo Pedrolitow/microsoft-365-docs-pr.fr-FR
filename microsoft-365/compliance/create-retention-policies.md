@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez une stratégie de rétention pour garder un contrôle efficace sur le contenu que les utilisateurs génèrent par courriers électroniques, documents et conversations. Conservez ce que vous voulez et supprimez le reste.
-ms.openlocfilehash: 83f438b6a32ad56f1f239858d2f3fad61875c460
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: bcf0ef5aa76113102013bc20fca02e6d516c3203
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357339"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376577"
 ---
 # <a name="create-and-configure-retention-policies"></a>Créer et configurer des stratégies de rétention
 
@@ -99,7 +99,7 @@ Il est possible qu’une stratégie de conservation appliquée aux groupes Micro
 ### <a name="retention-policy-for-yammer-locations"></a>Stratégie de rétention pour les emplacements Yammer
 
 > [!NOTE]
-> Les stratégies de rétention pour Yammer sont déployées en version préliminaire. Si vous ne voyez pas encore les nouveaux emplacements pour Yammer, réessayez dans quelques jours.
+> Les stratégies de rétention Yammer sont déployées en préversion. Si vous ne voyez pas encore les nouveaux emplacements Yammer, réessayez dans quelques semaines.
 >
 > Pour utiliser cette fonctionnalité, votre réseau Yammer doit être [Mode Natif](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode), et non Mode Hybride.
 
@@ -193,7 +193,7 @@ Pour vérifier la syntaxe de votre client et identifier les URL des utilisateurs
 
 Pour conserver ou supprimer le contenu d’un groupe Microsoft 365 (anciennement groupe Office 365), utilisez l’emplacement **Groupes Microsoft 365**. Même si un groupe Microsoft 365 dispose d'une boîte aux lettres Exchange, une politique de conservation qui inclut l'ensemble de l'emplacement du **courrier électronique Exchange** n'inclura pas le contenu des boîtes aux lettres du groupe Microsoft 365. En outre, bien que l'emplacement du **courrier électronique Exchange** vous permette initialement de spécifier une boîte aux lettres de groupe à inclure ou à exclure, lorsque vous essayez d'enregistrer la stratégie de rétention, vous recevez une erreur indiquant que « RemoteGroupMailbox » n'est pas une sélection valable pour l'emplacement Exchange.
 
-Une stratégie de rétention appliquée à un groupe Microsoft 365 inclut la boîte aux lettres de groupe et le site d’équipe SharePoint. Les fichiers stockés sur le site d’équipe SharePoint sont couverts par cet emplacement, mais pas les messages de conversations ou de canal Teams ayant leur propre emplacement de stratégie de rétention.
+La stratégie de rétention d’un groupe Microsoft 365 comprend la boîte aux lettres du groupe et le site d’équipes SharePoint.. Les fichiers stockés sur le site d’équipes SharePoint sont couverts par cet emplacement, à la différence des conversations Teams ou des messages de canal Teams qui ont leur propre emplacements de stratégie de rétention.
 
 ### <a name="configuration-information-for-skype-for-business"></a>Informations de configuration de Skype Entreprise
 

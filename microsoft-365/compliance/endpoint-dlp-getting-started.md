@@ -19,16 +19,16 @@ ms.collection:
 search.appverid:
 - MET150
 description: Configurez la protection contre la perte de données de point de terminaison Microsoft 365 pour surveiller les activités des fichiers, puis implémenter des actions de protection de ces fichiers aux points de terminaison.
-ms.openlocfilehash: 6ba3b83d634f946f818890a732a83166f346162d
-ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
+ms.openlocfilehash: 8211ffbe3a84c0ee9fb4cb4c22d4dcea7f906a78
+ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49073093"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49371600"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>Prise en main de la protection contre la perte de données de point de terminaison
 
-La protection contre la perte de données de point de terminaison Microsoft (DLP de point de terminaison) fait partie de la suite de fonctionnalités de protection contre la perte de données Microsoft 365 que vous pouvez utiliser pour découvrir et protéger les éléments sensibles dans les services Microsoft 365. Si vous souhaitez en savoir plus sur toutes les offres DLP de Microsoft, consultez l’article [Présentation de la protection contre la perte de données](data-loss-prevention-policies.md). Si vous souhaitez en savoir plus sur la DLP de point de terminaison, consultez l’article [Découvrir la protection contre la perte de données de point de terminaison](endpoint-dlp-learn-about.md)
+La protection contre la perte de données de point de terminaison (Endpoint DLP) Microsoft fait partie de la suite de fonctionnalités de protection contre la perte de données (DLP) Microsoft 365 que vous pouvez utiliser pour découvrir et protéger les éléments sensibles dans les services Microsoft 365. Pour plus d’informations sur les offres DLP de Microsoft, voir [Vue d’ensemble de la protection contre la perte de données](data-loss-prevention-policies.md). Pour en savoir plus sur la DLP du Point de terminaison , consultez [Découvrir la protection contre la perte de données](endpoint-dlp-learn-about.md)
 
 La DLP de point de terminaison Microsoft vous permet de surveiller les appareils Windows 10 et de détecter le partage et l’utilisation des éléments sensibles. Cela vous donne la visibilité et le contrôle dont vous avez besoin pour vous assurer qu’ils sont correctement utilisés et protégés, et pour éviter les comportements à risque qui pourraient les compromettre.
 
@@ -105,7 +105,7 @@ Vous devez activer la surveillance des appareils et intégrer vos points de term
 
 Lorsque vous souhaitez intégrer des appareils qui n’ont pas encore été intégrés, vous téléchargez le script approprié et le déployez sur ces appareils. Suivez la procédure pour [Intégrer des appareils](endpoint-dlp-getting-started.md#onboarding-devices).
 
-Si vous avez déjà des appareils intégrés dans [Microsoft Defender pour point de terminaison](https://docs.microsoft.com/windows/security/threat-protection/), ils apparaîtront déjà dans la liste des appareils gérés. Suivez la procédure [Avec les appareils intégrés à Microsoft Defender pour point de terminaison](endpoint-dlp-getting-started.md#with-devices-onboarded-into-microsoft-defender-for- endpoint).
+Si vous avez déjà des appareils intégrés dans [Microsoft Defender pour point de terminaison](https://docs.microsoft.com/windows/security/threat-protection/), ils apparaîtront déjà dans la liste des appareils gérés. Suivez la procédure [Avec les appareils intégrés à Microsoft Defender pour point de terminaison](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-getting-started?view=o365-worldwide&source=docs#with-devices-onboarded-into-microsoft-defender-for-endpoint).
 
 ### <a name="onboarding-devices"></a>Intégrer les appareils
 
@@ -125,7 +125,7 @@ Dans ce scénario de déploiement, vous allez intégrer des appareils qui n’on
 
 4. Sélectionnez **Intégration** pour lancer le processus d’intégration.
 
-5. Choisissez la manière dont vous voulez déployer ces autres appareils à partir de la liste **Méthode de déploiement** , puis **Télécharger le package**.
+5. Choisissez la manière dont vous voulez déployer ces autres appareils à partir de la liste **Méthode de déploiement**, puis **Télécharger le package**.
 
    > [!div class="mx-imgBorder"]
    > ![méthode de déploiement](../media/endpoint-dlp-getting-started-3-deployment-method.png)
@@ -158,7 +158,7 @@ Dans ce scénario, Microsoft Defender pour point de terminaison est déjà dép
    
 4. Sélectionnez **Intégration** si vous avez besoin d’intégrer d’autres appareils.
 
-5. Choisissez la manière dont vous souhaitez déployer ces autres appareils dans la liste **Méthode de déploiement** , puis **Télécharger le package**.
+5. Choisissez la manière dont vous souhaitez déployer ces autres appareils dans la liste **Méthode de déploiement**, puis **Télécharger le package**.
 
 6. Suivez les procédures appropriées décrites dans l’article [Outils et méthodes d’intégration pour les ordinateurs Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Ce lien vous dirige vers une page de destination dans laquelle vous pouvez accéder aux procédures Microsoft Defender pour point de terminaison qui correspondent au package de déploiement que vous avez sélectionné à l’étape 5 :
 
@@ -168,7 +168,7 @@ Dans ce scénario, Microsoft Defender pour point de terminaison est déjà dép
     - Intégrer les ordinateurs Windows 10 utilisant un script local
     - Intégrer les ordinateurs virtuels d’infrastructure de bureau virtuel (VDI) non persistants.
 
-Une fois l’opération effectuée et le point de terminaison intégré, celui-ci doit être visible dans le tableau des **Appareils** et doit commencer à créer des rapports d’activité d’audit dans l’ **Explorateur d’activités**.
+Une fois l’opération effectuée et le point de terminaison intégré, celui-ci doit être visible dans le tableau des **Appareils** et doit commencer à créer des rapports d’activité d’audit dans l’**Explorateur d’activités**.
 
 > [!NOTE]
 >Cette expérience est soumise à l’application de la licence. Sans la licence requise, les données ne seront ni visibles ni accessibles.
