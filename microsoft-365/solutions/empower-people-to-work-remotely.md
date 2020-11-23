@@ -18,12 +18,12 @@ ms.collection:
 - M365initiative-coredeploy
 ms.custom: seo-marvel-jun2020
 description: Assurez-vous que vous avez activé toutes les fonctionnalités de Microsoft 365 pour optimiser la productivité des employés à distance et maintenir l’accès sécurisé à vos serveurs, données et cloud.
-ms.openlocfilehash: b886341adc49ba728856dc39786e926ebfadd3ef
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 833f0351c3eb78afb7218ea1c1c51151d70bb608
+ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906738"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49371501"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Confier des responsabilités aux travailleurs à distance avec Microsoft 365
 
@@ -112,4 +112,6 @@ Procédez comme suit pour sécuriser et optimiser l’accès aux serveurs et aux
 
 [![Mesures pour confier des responsabilités aux travailleurs à distance avec Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)](empower-people-to-work-remotely-secure-sign-in.md)
 
-Si vous souhaitez en savoir plus, notamment obtenir les informations les plus récentes de Microsoft sur la prise en charge des télétravailleurs, veuillez consulter la rubrique [Enabling hybrid work with Microsoft Teams site (Activer le travail hybride avec le site de Microsoft Teams)](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/).
+Si vous souhaitez en savoir plus sur les informations Microsoft les plus récentes relatives à la prise en charge des travailleurs à distance, consultez [Activation du travail hybride avec le site de Microsoft Teams](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/).
+
+Pour découvrir comment une organisation multinationale représentative, bien que fictive, a responsabilisé ses employés à distance, consultez [Réponse COVID-19 et infrastructure de Contoso pour le travail à distance et sur site](contoso-remote-onsite-work.md).
