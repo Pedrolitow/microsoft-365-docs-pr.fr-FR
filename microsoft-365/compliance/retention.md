@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En savoir plus sur les stratégies de rétention et les étiquettes de rétention, qui permettent de conserver les éléments dont vous avez besoin et de supprimer ceux qui ne vous servent pas.
-ms.openlocfilehash: bedf82d9d53ef14755651d5994e6c5c269cf5d6e
-ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
+ms.openlocfilehash: 5ceec4ed45286afa14004dcfcb9476040df9a5ec
+ms.sourcegitcommit: 26b35012c42fef935d6c4a6509dde6c22a9b922a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49073135"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "49385270"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>En savoir plus sur les stratégies et les étiquettes de rétention
 
@@ -38,7 +38,7 @@ Le volume et la complexité des données e-mails, documents, messages instantan�
     
 - **aider votre organisation à partager efficacement les connaissances et à être plus agile** en vérifiant que vos utilisateurs traitent uniquement le contenu actuel et pertinent pour eux. 
     
-La configuration des paramètres de rétention peut vous aider à atteindre tous ces objectifs. La gestion du contenu nécessite généralement deux actions :
+Les paramètres de rétention que vous configurez peuvent vous aider à atteindre tous ces objectifs. La gestion du contenu nécessite généralement deux actions :
   
 - **Conservation** du contenu afin que celui-ci ne puisse pas être supprimé définitivement avant la fin de la période de rétention. 
     
@@ -51,11 +51,11 @@ Avec ces deux actions de rétention, vous pouvez configurer les paramètres de r
 - Suppression uniquement : supprimez le contenu après une période spécifiée.
 - Conservation puis suppression : conserver le contenu pendant une période spécifiée, puis le supprimer.
 
-Ces paramètres de rétention fonctionnent avec du contenu en place, ce qui vous permet d’éviter les charges liées à la création et à la configuration d’un espace de stockage supplémentaire pour conserver du contenu pour des raisons de conformité. Vous n’avez plus besoin non plus d’implémenter des processus personnalisés pour copier et synchroniser ces données.
+Ces paramètres de rétention fonctionnent avec du contenu en place qui vous dispense des charges liées à la création et à la configuration d’un espace de stockage supplémentaire pour conserver du contenu pour des raisons de conformité. En plus, vous n’avez pas besoin d’exécuter des processus personnalisés pour copier et synchroniser ces données.
 
 ## <a name="how-retention-settings-work-with-content-in-place"></a>Fonctionnement des paramètres de rétention avec le contenu en place
 
-Si des paramètres de rétention sont affectés au contenu, celui-ci reste à son emplacement d’origine. Les utilisateurs peuvent continuer à travailler avec leurs documents ou la messagerie comme si rien n’avait changé. Toutefois, s’ils modifient ou suppriment le contenu qui est inclus dans la stratégie de rétention, une copie du contenu est automatiquement conservée.
+Lorsqu’un contenu est soumis à des paramètres de rétention, ce contenu demeure à son emplacement d’origine. Les contacts peuvent invariablement continuer à travailler avec leurs documents ou mails. Mais s’ils modifient ou suppriment du contenu inclus dans la stratégie de rétention, une copie du contenu est automatiquement conservée.
   
 - Pour les sites SharePoint et OneDrive : la copie est conservée dans la bibliothèque de **Conservation et préservation**.
 
@@ -64,9 +64,9 @@ Si des paramètres de rétention sont affectés au contenu, celui-ci reste à so
 - Pour les messages Teams et Yammer : la copie est conservée dans un dossier masqué appelé **SubstrateHolds** sous la forme d’un sous-dossier dans le dossier **Éléments récupérables** de Exchange.
 
 > [!NOTE]
-> La bibliothèque de Conservation et préservation utilise un espace de stockage qui n’est pas exempté du quota de stockage d’un site. Il se peut que vous deviez augmenter votre espace de stockage lorsque vous utilisez des paramètres de rétention pour SharePoint et les groupes Microsoft 365.
+> La bibliothèque de conservation et de préservation des documents utilise un espace de stockage qui n’est pas exempté du quota de stockage d’un site. Il se peut que vous deviez augmenter votre espace de stockage lorsque vous utilisez les paramètres de rétention pour les groupes SharePoint et Microsoft 365.
 > 
-Ces emplacements sécurisés et le contenu conservé ne sont pas visibles pour la plupart des utilisateurs. Dans la plupart des cas, les personnes n’ont même pas besoin de savoir que leur contenu est soumis aux paramètres de rétention.
+Ces emplacements sécurisés et le contenu conservé ne sont pas visibles pour la plupart des contacts. Dans la plupart des cas, les contacts n’ont même pas besoin de savoir que leur contenu est soumis à des paramètres de rétention.
 
 Pour plus d’informations sur le fonctionnement des paramètres de rétention en fonction des différentes charges de travail, consultez les articles suivants :
 
@@ -81,9 +81,9 @@ Vous pouvez utiliser les stratégies de rétention et les étiquettes de rétent
 
 Utilisez une stratégie de rétention pour attribuer les mêmes paramètres de rétention au contenu au niveau d’un site ou d’une boîte aux lettres, et utiliser une étiquette de rétention pour affecter des paramètres de rétention à l’échelle d’un élément (dossier, document, courrier électronique).
 
-Par exemple, si tous les documents d’un site SharePoint doivent être conservés pendant cinq ans, il est plus efficace de le faire avec une stratégie de rétention que d’appliquer la même étiquette de rétention à tous les documents de ce site. Toutefois, si certains documents de ce site doivent être conservés pendant cinq ans et d’autres pendant dix ans, une stratégie de rétention ne fonctionnera pas. Lorsque vous devez spécifier les paramètres de rétention au niveau de l’élément, utilisez les étiquettes de rétention. 
+Par exemple, si tous les documents d’un site SharePoint doivent être conservés pendant 5 ans, il est plus efficace de le faire avec une stratégie de rétention que d’appliquer la même étiquette de rétention à tous les documents de ce site. Toutefois, si certains documents de ce site doivent être conservés pendant 5 ans et d’autres conservés pendant 10 ans, une stratégie de rétention n’est pas appropriée. Lorsque vous devez spécifier les paramètres de rétention au niveau de l’élément, utilisez les étiquettes de rétention. 
 
-Contrairement aux stratégies de rétention, les paramètres de rétention des étiquettes de rétention circulent avec le contenu s’il est déplacé vers un autre emplacement au sein de votre client Microsoft 365. De plus, les étiquettes de rétention présentent les fonctionnalités suivantes, non prises en charge par les stratégies de rétention : 
+Contrairement aux stratégies de rétention, les paramètres de rétention des étiquettes de rétention circulent avec le contenu s’il est déplacé vers un autre emplacement au sein de votre client Microsoft 365. En plus, ces fonctionnalités  des étiquettes de rétention ne sont pas prises en charge par les stratégies de rétention : 
  
 - Options de démarrage de la période de rétention à partir de la date d’étiquetage du contenu ou en fonction d’un événement, en plus de l’âge du contenu ou du moment de la dernière modification de celui-ci.
 
@@ -100,7 +100,7 @@ Contrairement aux stratégies de rétention, les paramètres de rétention des �
 Les stratégies de rétention peuvent être appliquées aux emplacements suivants :
 - Messagerie électronique Exchange
 - Site SharePoint
-- Comptes OneDrive
+- comptes OneDrive
 - Groupes Microsoft 365
 - Skype Entreprise
 - Dossiers publics Exchange
@@ -110,6 +110,8 @@ Les stratégies de rétention peuvent être appliquées aux emplacements suivant
 - Messages privés Yammer
 
 L’application d’une stratégie unique à plusieurs emplacements, ou à des emplacements ou des utilisateurs spécifiques, est d’une grande efficacité.
+
+Pour le début de la période de rétention, vous pouvez choisir la date de création ou de la prise en charge du contenu uniquement pour les fichiers et les emplacements SharePoint, OneDrive et Office 365, pour la date de la dernière modification du contenu.
 
 Les éléments héritent des paramètres de rétention de leur conteneur spécifié dans la stratégie de rétention. S’ils sont ensuite déplacés à l’extérieur de ce conteneur lorsque la stratégie est configurée de manière à conserver le contenu, une copie de cet élément est conservée dans l’emplacement sécurisé de la charge de travail. Toutefois, les paramètres de rétention ne sont pas acheminés avec le contenu dans son nouvel emplacement. Si nécessaire, utilisez des étiquettes de rétention au lieu de stratégies de rétention.
 
@@ -215,7 +217,7 @@ Vous pouvez ensuite approfondir vos informations à l’aide de [Explorateur de 
 > [!TIP]
 >Envisagez d’utiliser d’autres informations sur la classification des données, telles que les classifieurs et les types d’informations sensibles, pour vous aider à identifier le contenu que vous devrez peut-être conserver ou supprimer, ou à gérer comme enregistrements.
 
-Le Centre de sécurité et conformité Office 365 contient des informations de présentation équivalentes pour les étiquettes de rétention de **tableau de bord** > **gouvernance d’informations** , ainsi que des informations plus détaillées de **la gouvernance des informations** > **d’activité des étiquettes**. Pour plus d’informations sur la surveillance des étiquettes de rétention dans cet ancien centre d’administration, voir la documentation suivante :
+Le Centre de sécurité et conformité Office 365 contient des informations de présentation équivalentes pour les étiquettes de rétention de **tableau de bord** > **gouvernance d’informations**, ainsi que des informations plus détaillées de **la gouvernance des informations** > **d’activité des étiquettes**. Pour plus d’informations sur la surveillance des étiquettes de rétention dans cet ancien centre d’administration, voir la documentation suivante :
 - [Afficher les rapports de gouvernance des données](view-the-data-governance-reports.md)
 - [Afficher l’utilisation d’étiquettes à l'aide des analyses d’étiquettes](label-analytics.md)
 - [Afficher l’activité des étiquettes pour les documents](view-label-activity-for-documents.md)
@@ -224,7 +226,7 @@ Le Centre de sécurité et conformité Office 365 contient des informations de p
 
 Lorsque les étiquettes de rétention sont affectées au contenu par les utilisateurs ou automatiquement, vous pouvez utiliser la recherche de contenu pour rechercher les contenus classés et dotés d’étiquettes de rétention spécifiques.
 
-Lorsque vous créez une recherche de contenu, sélectionnez la condition **Étiquette de rétention** , puis entrez le nom complet ou une partie du nom de l’étiquette de rétention et utilisez un caractère générique. Si vous souhaitez en savoir plus, consultez la page [Requêtes par mots-clés et conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md).
+Lorsque vous créez une recherche de contenu, sélectionnez la condition **Étiquette de rétention**, puis entrez le nom complet ou une partie du nom de l’étiquette de rétention et utilisez un caractère générique. Si vous souhaitez en savoir plus, consultez la page [Requêtes par mots-clés et conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md).
   
 ![État des étiquettes de rétention](../media/retention-label-condition.png)
 
@@ -243,7 +245,7 @@ Utilisez le tableau suivant pour savoir si vous devez utiliser une stratégie ou
 |Présence d’interface utilisateur pour les utilisateurs finals | Non | Oui |
 |Persiste si le contenu est déplacé | Non | Oui, au sein de votre client Microsoft 365 |
 |Déclaration d’un élément comme enregistrement| Non | Oui |
-|Démarrer la période de rétention: <br /> - Lors de la création ou de la dernière modification des éléments <br /> - Lorsque vous avez étiqueté ou basé sur un événement | <br />Oui <br />Non | <br />Oui <br /> Oui |
+|Démarrage de la période de rétention à la date d’étiquetage ou en fonction d’un événement | Non | Oui |
 |Révisions avant élimination | Non| Oui |
 |Preuve de la destruction pendant 7 ans | Non |Oui, lorsque l’élément est déclaré comme enregistrement|
 |Audit des activités administratives| Oui | Oui|
