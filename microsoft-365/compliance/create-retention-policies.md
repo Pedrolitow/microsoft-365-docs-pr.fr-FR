@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez une stratégie de rétention pour garder un contrôle efficace sur le contenu que les utilisateurs génèrent par courriers électroniques, documents et conversations. Conservez ce que vous voulez et supprimez le reste.
-ms.openlocfilehash: bcf0ef5aa76113102013bc20fca02e6d516c3203
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: 4479731af4787a6ef77dc48d27e5dfb60834d9c5
+ms.sourcegitcommit: 26b35012c42fef935d6c4a6509dde6c22a9b922a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376577"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "49385250"
 ---
 # <a name="create-and-configure-retention-policies"></a>Créer et configurer des stratégies de rétention
 
@@ -99,7 +99,7 @@ Il est possible qu’une stratégie de conservation appliquée aux groupes Micro
 ### <a name="retention-policy-for-yammer-locations"></a>Stratégie de rétention pour les emplacements Yammer
 
 > [!NOTE]
-> Les stratégies de rétention Yammer sont déployées en préversion. Si vous ne voyez pas encore les nouveaux emplacements Yammer, réessayez dans quelques semaines.
+> Les stratégies de rétention pour Yammer sont déployées en version préliminaire. Si vous ne voyez pas encore de nouveaux emplacements pour Yammer, veuillez réessayer dans quelques semaines.
 >
 > Pour utiliser cette fonctionnalité, votre réseau Yammer doit être [Mode Natif](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode), et non Mode Hybride.
 
@@ -193,7 +193,7 @@ Pour vérifier la syntaxe de votre client et identifier les URL des utilisateurs
 
 Pour conserver ou supprimer le contenu d’un groupe Microsoft 365 (anciennement groupe Office 365), utilisez l’emplacement **Groupes Microsoft 365**. Même si un groupe Microsoft 365 dispose d'une boîte aux lettres Exchange, une politique de conservation qui inclut l'ensemble de l'emplacement du **courrier électronique Exchange** n'inclura pas le contenu des boîtes aux lettres du groupe Microsoft 365. En outre, bien que l'emplacement du **courrier électronique Exchange** vous permette initialement de spécifier une boîte aux lettres de groupe à inclure ou à exclure, lorsque vous essayez d'enregistrer la stratégie de rétention, vous recevez une erreur indiquant que « RemoteGroupMailbox » n'est pas une sélection valable pour l'emplacement Exchange.
 
-La stratégie de rétention d’un groupe Microsoft 365 comprend la boîte aux lettres du groupe et le site d’équipes SharePoint.. Les fichiers stockés sur le site d’équipes SharePoint sont couverts par cet emplacement, à la différence des conversations Teams ou des messages de canal Teams qui ont leur propre emplacements de stratégie de rétention.
+Une stratégie de rétention appliquée à un groupe Microsoft 365 inclut la boîte aux lettres de groupe et le site d’équipe SharePoint. Les fichiers stockés sur le site d’équipe SharePoint sont couverts par cet emplacement, mais pas les messages de conversations ou de canal Teams ayant leur propre emplacement de stratégie de rétention.
 
 ### <a name="configuration-information-for-skype-for-business"></a>Informations de configuration de Skype Entreprise
 
@@ -227,7 +227,7 @@ Lors de la configuration d’une stratégie de rétention, choisissez de conserv
 
 Lors de la configuration d’une stratégie de rétention, vous pouvez choisir de conserver les éléments indéfiniment ou bien pendant un nombre donné de jours, de mois ou d’années. La période de rétention est calculée sur la base de l’âge du contenu et non par rapport à la date d’application de la stratégie de rétention.
 
-Pour le début de la période de rétention, vous pouvez également choisir la date de création du contenu ou bien, pour les fichiers et les locations SharePoint, OneDrive et Office 365 uniquement, la date de dernière modification du contenu.
+Pour le début de la période de rétention, vous pouvez choisir la date de création ou de la prise en charge du contenu uniquement pour les fichiers et les emplacements SharePoint, OneDrive et Office 365, pour la date de la dernière modification du contenu.
 
 Exemples :
 
@@ -279,6 +279,9 @@ Pour utiliser la configuration optionnelle afin de définir vos paramètres de c
 > Dans ce scénario, désactivez le paramètre emplacement si vous ne souhaitez pas que le paramètre **Tout** pour l’emplacement soit soumis à la stratégie de rétention. Vous pouvez également spécifier les exclusions à exempter de la stratégie.
 
 ## <a name="updating-retention-policies"></a>Mise à jour des stratégies de rétention
+
+Certains paramètres ne peuvent pas être modifiés une fois la stratégie de rétention créée et enregistrée, notamment :
+- Le nom de la stratégie de rétention et les paramètres de rétention à l’exception de la période de rétention et le début de la période de rétention.
 
 Si vous modifiez une stratégie de rétention et que des éléments y sont déjà sujets aux paramètres originaux, vos paramètres mis à jour seront automatiquement appliqués à ces éléments en plus des éléments qui seront nouvellement identifiés.
 
