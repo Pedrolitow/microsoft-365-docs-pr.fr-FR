@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 3e9a8b34f8f112cadc0377dd73ba846c88b8604c
-ms.sourcegitcommit: aa8d2de6ffac0157fffd14d0ea7f51ef0c287607
+ms.openlocfilehash: e42c65fdb4d409c1da7b85fbe7eca13170b9b974
+ms.sourcegitcommit: a9486f9dc51f0908393000ec3c211e3430c26abd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49374006"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "49409232"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Fonctionnalités du score de sécurité Microsoft
 
@@ -33,6 +33,17 @@ Vous pouvez trouver https://security.microsoft.com/securescore le score de sécu
 ## <a name="proposed-changes"></a>Proposed changes
 
 Nous apportons des modifications à l’avenir proche pour faire en sorte que [Microsoft Secure](microsoft-secure-score.md) évalue un meilleur représentant de votre position de sécurité et améliore l’utilisation. Votre score et le score maximal possible peuvent varier.
+
+### <a name="december-2020"></a>Décembre 2020
+
+Ajout de 6 actions d’amélioration liées aux comptes pour Microsoft Defender pour le point de terminaison (précédemment Microsoft Defender ATP) :
+
+- Définir « longueur minimale du mot de passe » sur « 14 caractères ou plus »
+- Définir « conserver l’historique des mots de passe » à « 24 ou plusieurs mots de passe »
+- Définissez « âge maximal du mot de passe » sur « 60 » ou « moins de jours », mais pas sur « 0 »
+- Définir « âge minimal du mot de passe » sur « 1 ou plusieurs jours »
+- Désactivation du compte administrateur intégré
+- Désactiver le compte invité intégré
 
 ### <a name="november-2020"></a>Novembre 2020
 

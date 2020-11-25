@@ -1,6 +1,6 @@
 ---
 title: Hiérarchisation des incidents dans Microsoft 365 Defender
-description: Découvrez comment définir la priorité des incidents à partir de la file d’attente des incidents dans Microsoft 365 Defender
+description: Découvrez comment filtrer les incidents à partir de la file d’attente des incidents dans Microsoft 365 Defender
 keywords: incident, file d’attente, vue d’ensemble, appareils, identités, utilisateurs, boîte aux lettres, e-mail, incidents
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 4369d51ed740af652be632ba0b8752c708d6c719
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: e587004fbb3bc6defab985cea9b427f64b3aab35
+ms.sourcegitcommit: a9486f9dc51f0908393000ec3c211e3430c26abd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877218"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "49409254"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Hiérarchisation des incidents dans Microsoft 365 Defender
 
@@ -38,7 +38,7 @@ ms.locfileid: "48877218"
 
 
 
-Microsoft 365 Defender applique une analyse de corrélation et agrège toutes les alertes et les analyses associées de différents produits en un seul incident. Microsoft 365 Defender déclenche également des alertes uniques sur des activités qui peuvent uniquement être identifiées comme malveillantes en fonction de la visibilité de bout en bout que Microsoft 365 Defender a sur l’ensemble du parc et de la suite de produits. En procédant ainsi, Microsoft 365 Defender présente le plus grand récit d’attaque, ce qui permet à un analyste des opérations de sécurité de comprendre et de traiter les menaces complexes au sein de l’organisation.
+Microsoft 365 Defender applique une analyse de corrélation et agrège toutes les alertes et les analyses associées de différents produits en un seul incident. Microsoft 365 Defender déclenche également des alertes uniques sur des activités qui peuvent uniquement être identifiées comme malveillantes en fonction de la visibilité de bout en bout que Microsoft 365 Defender a sur l’ensemble du parc et de la suite de produits. Cet affichage donne à votre analyste en matière de sécurité un récit d’attaque plus large, qui les aide à mieux comprendre et à gérer les menaces complexes au sein de l’organisation.
 
 
 La **file d’attente des incidents** affiche un ensemble d’incidents qui ont été signalés par plusieurs appareils, utilisateurs et boîtes aux lettres. Elle vous aide à trier les incidents afin de hiérarchiser et de créer une décision de réponse cyber-sécurité.
@@ -100,8 +100,7 @@ La gravité d’un incident est l’impact qu’il peut avoir sur vos biens. Plu
 ### <a name="status"></a>Statut
 Vous pouvez choisir de limiter la liste des incidents affichés en fonction de leur état pour identifier ceux qui sont actifs ou résolus.
 
->[!IMPORTANT]
->La classification, le groupe d’appareils, l’état de l’enquête et les filtres de plateforme du système d’exploitation sont actuellement disponibles uniquement en préversion publique.
+
 
 
 ## <a name="next-steps"></a>Étapes suivantes
