@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Découvrez comment les utilisateurs utilisent les étiquettes de confidentialité dans les applications Office pour ordinateur de bureau, mobile et le Web, et quelles applications prennent en charge les étiquettes de sensibilité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 415f9345c3634adf62c42b9e13192be5ad7ea795
-ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
+ms.openlocfilehash: b616a25f4e130f7b73b82e80bf82136c229d5efd
+ms.sourcegitcommit: a9486f9dc51f0908393000ec3c211e3430c26abd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49371692"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "49409201"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Utiliser les étiquettes de confidentialité dans les applications Office
 
@@ -62,11 +62,15 @@ Pour iOS et Android : lorsqu’une version minimale est indiquée, la fonctionn
 |[Marquages dynamiques avec des variables](#dynamic-markings-with-variables)                                              | 2010 +           | 16.42 +     | 2.42 + | 16.0.13328 + | En cours de révision |
 |[Attribuer des autorisations maintenant](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Oui-opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Permettre aux utilisateurs d’attribuer des autorisations](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004 + | 16.35 +   | En cours de révision   | En cours de révision         | En cours de révision                                                        |
-|[Afficher l’utilisation des étiquettes avec l’analyse d’étiquette et l'](label-analytics.md) envoi de données pour les administrateurs                      | En cours de révision            | En cours de révision        | En cours de révision   | En cours de révision         | En cours de révision                                                        |
+|[Afficher l’utilisation des étiquettes avec l’analyse d’étiquette et l'](label-analytics.md) envoi de données pour les administrateurs                      | En cours de révision            | En cours de révision        | En cours de révision   | En cours de révision         | OK <sup>\*</sup>                                                        |
 |[Demander aux utilisateurs d’appliquer une étiquette à leurs courriers électroniques et documents](sensitivity-labels.md#what-label-policies-can-do)   | En cours de révision            | En cours de révision        | En cours de révision   | En cours de révision         | En cours de révision                                                        |
 |[Appliquer automatiquement une étiquette de confidentialité à du contenu](apply-sensitivity-label-automatically.md)                    | 2009 +                                  | Aperçu pour Word et PowerPoint : déploiement vers le [canal actuel (aperçu)](https://office.com/insider) | En cours de révision | En cours de révision | [Oui-opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |Prise en charge de l' [enregistrement automatique](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) et de la [co-création](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) sur des documents étiquetés et protégés | En cours de révision | En cours de révision | En cours de révision | En cours de révision | [Oui-opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
+
+**Bas**
+
+<sup>\*</sup> Actuellement, n’inclut pas le texte de la justification pour supprimer une étiquette ou réduire le niveau de classification.
 
 ### <a name="sensitivity-label-capabilities-in-outlook"></a>Fonctionnalités d’étiquette de confidentialité dans Outlook
 
@@ -80,10 +84,11 @@ Pour iOS et Android : lorsqu’une version minimale est indiquée, la fonctionn
 |[Marquages dynamiques avec des variables](#dynamic-markings-with-variables)                                              | En cours de révision                     | En cours de révision                 | En cours de révision         | En cours de révision           | En cours de révision               |
 |[Attribuer des autorisations maintenant](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | Oui               |
 |[Permettre aux utilisateurs d’attribuer des autorisations](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | Oui               |
-|[Afficher l’utilisation des étiquettes avec l’analyse d’étiquette et l'](label-analytics.md) envoi de données pour les administrateurs                      | En cours de révision                       | En cours de révision                    | En cours de révision           | En cours de révision               | En cours de révision               |
+|[Afficher l’utilisation des étiquettes avec l’analyse d’étiquette et l'](label-analytics.md) envoi de données pour les administrateurs                      | En cours de révision                       | En cours de révision                    | En cours de révision           | En cours de révision               | Oui               |
 |[Demander aux utilisateurs d’appliquer une étiquette à leurs courriers électroniques et documents](sensitivity-labels.md#what-label-policies-can-do)   | En cours de révision                       | En cours de révision                    | En cours de révision           | En cours de révision               | En cours de révision               |
 |[Appliquer automatiquement une étiquette de confidentialité à du contenu](apply-sensitivity-label-automatically.md)                    | 2009 +                      | En cours de révision                    | En cours de révision           | En cours de révision               | Oui |
 |
+
 
 ## <a name="office-built-in-labeling-client-and-other-labeling-solutions"></a>Client d’étiquetage Office intégré et autres solutions d’étiquetage
 
@@ -199,7 +204,7 @@ En plus de restreindre l’accès aux utilisateurs de votre organisation, vous p
 
 Si les utilisateurs externes n’ont pas de compte dans Azure Active Directory, vous pouvez créer un compte invité pour ceux-ci dans votre client. Pour leur adresse de messagerie, vous pouvez spécifier n’importe quelle adresse de messagerie déjà utilisée. Par exemple, son adresse Gmail. Ce compte d’invité peut également être utilisé pour accéder à un document partagé dans SharePoint ou OneDrive lorsque vous avez [activé les étiquettes de sensibilité pour les fichiers Office dans SharePoint et onedrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
-Les utilisateurs externes peuvent également utiliser un compte Microsoft pour les documents chiffrés lorsqu’ils utilisent les applications Microsoft 365 ([anciennement Office 365 applications](https://docs.microsoft.com/deployoffice/name-change)) sur Windows et sur Android (version 13029 +) et iOS (version 1385219 +). Cette fonctionnalité n’est pas encore prise en charge pour macOS. Par exemple, une personne partage un document chiffré avec elle, et les paramètres de chiffrement spécifient leur adresse de messagerie Gmail. Cet utilisateur peut créer son propre compte Microsoft qui utilise son adresse de messagerie Gmail. Ensuite, une fois connecté avec ce compte, il peut ouvrir le document et le modifier, en fonction des restrictions d’utilisation spécifiées pour cet utilisateur. Pour un exemple de procédure pas à pas de ce scénario, voir [ouverture et modification du document protégé](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document).
+Les utilisateurs externes peuvent également utiliser un compte Microsoft pour les documents chiffrés lorsqu’ils utilisent les applications Microsoft 365 ([anciennement Office 365 Apps](https://docs.microsoft.com/deployoffice/name-change)) sur Windows et nouvellement pris en charge sur MacOS (version 16.42 +), Android (version 13029 +) et iOS (version 2.42 +). Par exemple, une personne partage un document chiffré avec elle, et les paramètres de chiffrement spécifient leur adresse de messagerie Gmail. Cet utilisateur peut créer son propre compte Microsoft qui utilise son adresse de messagerie Gmail. Ensuite, une fois connecté avec ce compte, il peut ouvrir le document et le modifier, en fonction des restrictions d’utilisation spécifiées pour cet utilisateur. Pour un exemple de procédure pas à pas de ce scénario, voir [ouverture et modification du document protégé](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document).
 
 > [!NOTE]
 > L’adresse de messagerie du compte Microsoft doit correspondre à l’adresse de messagerie spécifiée pour limiter l’accès aux paramètres de chiffrement.

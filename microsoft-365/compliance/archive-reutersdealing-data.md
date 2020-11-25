@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données d’Reuters traitant des données à partir de Globanet vers Microsoft 365. Ce connecteur vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365. Une fois que vous avez archivé ces données, vous pouvez utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces.
-ms.openlocfilehash: bd3eefb1054d8ef9302ffa6f94ddce740bd55a70
-ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
+ms.openlocfilehash: 6b1b1421944e139b0e5051e99dafb4fba9e126ba
+ms.sourcegitcommit: 95b85a1fdf43e3f0839483fa22e279262703f15f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49002755"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "49407308"
 ---
-# <a name="set-up-a-connector-to-archive-reuters-dealing-data-preview"></a>Configuration d’un connecteur pour l’archivage des données de transaction Reuters (aperçu)
+# <a name="set-up-a-connector-to-archive-reuters-dealing-data"></a>Configuration d’un connecteur pour l’archivage des données de transaction Reuters
 
 Utilisez un connecteur Globanet dans le centre de conformité Microsoft 365 pour importer et archiver des données à partir de la plateforme de gestion Reuters vers des boîtes aux lettres utilisateur dans votre organisation Microsoft 365. Globanet fournit un connecteur de [transaction Reuters](https://globanet.com/reuters-dealing/) qui est configuré pour capturer des éléments à partir de la source de données tierce (de manière régulière), puis les importer dans Microsoft 365. Le connecteur convertit les communications de gestion du compte de gestion de Reuters en un format de message électronique, puis importe ces éléments dans la boîte aux lettres de l’utilisateur dans Microsoft 365.
 
@@ -63,7 +63,7 @@ La première étape consiste à accéder à la page **connecteurs de données** 
 
 La deuxième étape consiste à configurer le connecteur de gestion Reuters sur Globanet le site Merge1. Pour plus d’informations sur la configuration du connecteur de gestion Reuters, voir [Merge1 tiers Connector User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Reuters%20Dealing%20User%20Guide%20.pdf).
 
-Une fois que vous avez cliqué sur **enregistrer & terminer** , la page de **mappage utilisateur** de l’Assistant connecteur dans le centre de conformité Microsoft 365 s’affiche.
+Une fois que vous avez cliqué sur **enregistrer & terminer**, la page de **mappage utilisateur** de l’Assistant connecteur dans le centre de conformité Microsoft 365 s’affiche.
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Étape 3 : mapper les utilisateurs et terminer l’installation du connecteur
 
@@ -71,13 +71,13 @@ Pour mapper les utilisateurs et terminer l’installation du connecteur dans le 
 
 1. Sur la page **Map Reuters dealing users to Microsoft 365 Users** , activez le mappage automatique des utilisateurs.
 
-   Les éléments de gestion de Reuters incluent une propriété appelée *courrier électronique* , qui contient des adresses de messagerie pour les utilisateurs de votre organisation. Si le connecteur peut associer cette adresse à un utilisateur de Microsoft 365, les éléments sont importés dans la boîte aux lettres de cet utilisateur.
+   Les éléments de gestion de Reuters incluent une propriété appelée *courrier électronique*, qui contient des adresses de messagerie pour les utilisateurs de votre organisation. Si le connecteur peut associer cette adresse à un utilisateur de Microsoft 365, les éléments sont importés dans la boîte aux lettres de cet utilisateur.
 
 2. Sur la page consentement de l' **administrateur** , cliquez sur le bouton **fournir le consentement** . Vous serez redirigé vers le site Microsoft. Cliquez sur **accepter** pour fournir le consentement.
 
     Votre organisation doit consentir à autoriser le service d’importation Office 365 à accéder aux données de boîte aux lettres dans votre organisation. Pour fournir le consentement de l’administrateur, vous devez être connecté avec les informations d’identification d’un administrateur général Microsoft 365, puis accepter la demande de consentement. Si vous n’êtes pas connecté en tant qu’administrateur général, vous pouvez accéder à [cette page](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) et vous connecter à l’aide des informations d’identification d’administrateur général pour accepter la demande.
 
-3. Cliquez sur **suivant** , vérifiez vos paramètres, puis accédez à la page **connecteurs de données** pour voir la progression du processus d’importation pour le nouveau connecteur.
+3. Cliquez sur **suivant**, vérifiez vos paramètres, puis accédez à la page **connecteurs de données** pour voir la progression du processus d’importation pour le nouveau connecteur.
 
 ## <a name="step-4-monitor-the-reuters-dealing-connector"></a>Étape 4 : Surveillez le connecteur de gestion Reuters
 
@@ -87,7 +87,7 @@ Une fois que vous avez créé le connecteur de gestion Reuters, vous pouvez affi
 
 2. Cliquez sur l’onglet **connecteurs** , puis sélectionnez le connecteur de **gestion Reuters** pour afficher la page de menu volant, qui contient les propriétés et les informations relatives au connecteur.
 
-3. Sous **État du connecteur avec source** , cliquez sur le lien **Télécharger le journal** pour ouvrir (ou enregistrer) le journal d’État du connecteur. Ce journal contient des données qui ont été importées dans Microsoft Cloud.
+3. Sous **État du connecteur avec source**, cliquez sur le lien **Télécharger le journal** pour ouvrir (ou enregistrer) le journal d’État du connecteur. Ce journal contient des données qui ont été importées dans Microsoft Cloud.
 
 ## <a name="known-issues"></a>Problèmes connus
 

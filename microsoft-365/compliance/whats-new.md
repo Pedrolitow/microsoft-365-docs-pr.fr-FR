@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Qu’il s’agisse d’ajouter de nouvelles solutions au centre de conformité, de mettre à jour des fonctionnalités existantes en fonction de vos commentaires ou de déployer une documentation actualisée et actualisée, Microsoft 365 vous aide à rester informé de la mise en conformité en perpétuelle évolution. Découvrez ce que nous avons fait dans ce mois-ci.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 27228f37673eee64ae44de9b88b7505d1958c05f
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: 1d4583e5216a369801c48a47b488a35fc4e62b37
+ms.sourcegitcommit: 95b85a1fdf43e3f0839483fa22e279262703f15f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376607"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "49407338"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Nouveautés dans la conformité Microsoft 365
 
@@ -93,7 +93,7 @@ Regardez la vidéo ci-dessous pour savoir comment le gestionnaire de conformité
 
 ### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
 
-[Prise en charge des clients gouvernementaux américains](https://docs.microsoft.com/en-us/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description). Les étiquettes de sensibilité sont désormais prises en charge pour les clients GCC, GCC High et DoD, uniquement pour le client et le scanneur d’étiquetage unifiés Azure information protection.
+[Prise en charge des clients gouvernementaux américains](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description). Les étiquettes de sensibilité sont désormais prises en charge pour les clients GCC, GCC High et DoD, uniquement pour le client et le scanneur d’étiquetage unifiés Azure information protection.
 
 ### <a name="trainable-classifiers"></a>Classifieurs entraînables
 
