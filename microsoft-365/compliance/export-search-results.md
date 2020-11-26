@@ -20,14 +20,14 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
-description: 'Exportez les résultats de la recherche à partir d’une recherche de contenu dans le centre de sécurité & conformité sur un ordinateur local. Les résultats par courrier électronique sont exportés en tant que fichiers PST. Le contenu de sites SharePoint et OneDrive entreprise est exporté sous forme de documents Office natifs. '
+description: Exportez les résultats de la recherche à partir d’une recherche de contenu dans le centre de conformité Microsoft 365 vers un ordinateur local. Les résultats par courrier électronique sont exportés en tant que fichiers PST. Le contenu de sites SharePoint et OneDrive entreprise est exporté sous forme de documents Office natifs.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d1d657c7dc004bc587a8934292b6117ac4e023a0
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 48f5cab4c25199873c795cdfb9afac54f4f402a0
+ms.sourcegitcommit: 8ad481ed61cb6dabf8afb0fb04296666fa166450
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087331"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "49422873"
 ---
 # <a name="export-content-search-results"></a>Exporter les résultats de la recherche de contenu
 
@@ -57,7 +57,9 @@ L’exportation des résultats d’une recherche de contenu implique la prépara
   > <sup>1</sup> Microsoft ne fabrique pas d’extensions ou de modules complémentaires tiers pour les applications ClickOnce. L’exportation des résultats de recherche à l’aide d’un navigateur non pris en charge avec des extensions ou des modules complémentaires tiers n’est pas prise en charge.<br/>
   > <sup>2</sup> suite à des modifications récentes apportées à Microsoft Edge, la prise en charge de ClickOnce n’est plus activée par défaut. Pour obtenir des instructions sur l’activation de la prise en charge ClickOnce dans Edge, consultez [la rubrique utiliser l’outil d’exportation de découverte électronique dans Microsoft Edge](configure-edge-to-export-search-results.md).
   
-- Lorsque vous téléchargez les résultats de recherche (décrit à l’étape 2), vous pouvez augmenter la vitesse de téléchargement en configurant un paramètre de Registre Windows sur l’ordinateur que vous utilisez pour exporter les résultats de la recherche. Pour plus d’informations, consultez [la rubrique augmentation de la vitesse de téléchargement lors de l’exportation des résultats de recherche eDiscovery à partir d’Office 365](increase-download-speeds-when-exporting-ediscovery-results.md).
+- Nous vous recommandons de télécharger les résultats de la recherche sur un ordinateur local. Toutefois, pour éviter que l’infrastructure de proxy ou de pare-feu de votre entreprise provoque des problèmes lors du téléchargement des résultats de recherche, vous pouvez envisager de télécharger les résultats de la recherche sur un bureau virtuel en dehors de votre réseau. Cela peut réduire les délais d’attente qui se produisent dans les connexions de données Azure lors de l’exportation d’un grand nombre de fichiers. Pour plus d’informations sur les bureaux virtuels, consultez [la rubrique Windows Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop). 
+
+- Pour améliorer les performances lors du téléchargement des résultats de recherche, envisagez de diviser les recherches qui renvoient un grand ensemble de résultats en recherches plus petites. Par exemple, vous pouvez utiliser des plages de dates dans les requêtes de recherche pour renvoyer un plus petit ensemble de résultats pouvant être téléchargés plus rapidement.
   
 - Lorsque vous exportez des résultats de recherche, les données sont stockées temporairement dans un emplacement de stockage Azure fourni par Microsoft dans le Cloud Microsoft avant d’être téléchargé sur votre ordinateur local. Assurez-vous que votre organisation peut se connecter au point de terminaison dans Azure, c’est-à-dire **\* . blob.Core.Windows.net** (le caractère générique représente un identificateur unique pour votre exportation). Les données de résultats de recherche sont supprimées de l’emplacement de stockage Azure deux semaines après sa création. 
   
@@ -136,8 +138,6 @@ Consultez la section suivante pour obtenir des instructions sur le téléchargem
 
 L’étape suivante consiste à télécharger les résultats de la recherche à partir de l’emplacement de stockage Azure vers votre ordinateur local.
   
-Comme expliqué précédemment, vous pouvez augmenter la vitesse de téléchargement en configurant un paramètre de Registre Windows sur l’ordinateur que vous utilisez pour exporter les résultats de la recherche. Pour plus d’informations, consultez [la rubrique augmentation de la vitesse de téléchargement lors de l’exportation des résultats de recherche eDiscovery à partir d’Office 365](increase-download-speeds-when-exporting-ediscovery-results.md).
-  
 1. Sur la page **recherche de contenu** , cliquez sur l’onglet **exportations** . 
   
    Vous devrez peut-être cliquer sur **Actualiser** pour mettre à jour la liste des travaux d’exportation afin qu’elle affiche la tâche d’exportation que vous avez créée. Les travaux d’exportation portent le même nom que la recherche correspondante, avec des **_Export** ajoutés au nom de la recherche.
@@ -165,7 +165,7 @@ Comme expliqué précédemment, vous pouvez augmenter la vitesse de télécharge
   
     L’**outil d’exportation de découverte électronique** affiche l’état du processus d’exportation, ainsi qu’une estimation du nombre (et de la taille) d’éléments qui doivent encore être téléchargés. Une fois le processus d’exportation terminé, vous pouvez accéder aux fichiers à l’emplacement où ils ont été téléchargés.
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
 Voici plus d’informations sur l’exportation des résultats de la recherche.
   
