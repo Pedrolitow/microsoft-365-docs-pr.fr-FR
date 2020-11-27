@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Surveiller et gérer la suppression de contenu, que vous utilisiez une révision de destruction ou que le contenu soit automatiquement supprimé selon les paramètres que vous avez configurés.
-ms.openlocfilehash: dfea1cfece8a9faccced134cf30923527bd241f5
-ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
+ms.openlocfilehash: 9900bbc58818a98ad41f4f796184ccf21041bbfe
+ms.sourcegitcommit: a9486f9dc51f0908393000ec3c211e3430c26abd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48941365"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "49409211"
 ---
 # <a name="disposition-of-content"></a>Destruction de contenu
 
@@ -41,6 +41,8 @@ Pour attribuer le rôle de gestion de destruction aux utilisateurs, ajoutez-les 
 
 > [!NOTE]
 > Même un administrateur général doit avoir accès au rôle **Gestion des suppressions** . 
+
+De plus, pour afficher le contenu des éléments pendant le processus de destruction, ajoutez des utilisateurs aux deux groupes de rôles suivants : **la visionneuse de contenu de l’Explorateur de contenu** et **visionneuse de liste de l’Explorateur de contenu**. Si les utilisateurs n’ont pas les autorisations de ces groupes de rôles, ils peuvent toujours sélectionner une action de révision de destruction pour achever la révision de destruction, mais vous devez le faire sans avoir la possibilité d’afficher le contenu de l’élément à partir du centre de conformité.
 
 Pour obtenir des instructions, reportez-vous à la rubrique [Octroi de l’accès au Centre de sécurité et conformité Office 365 aux utilisateurs](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 
@@ -75,7 +77,7 @@ Vous pouvez voir une vue d’ensemble de toutes les suppressions en attente dans
 
 ![Destructions en attente dans la vue d’ensemble de la Gestion des enregistrements](../media/dispositions-overview.png)
 
-Lorsque vous sélectionnez l’option **Afficher toutes les destructions en attente** , vous êtes redirigé vers la page **Destruction** . Par exemple :
+Lorsque vous sélectionnez l’option **Afficher toutes les destructions en attente**, vous êtes redirigé vers la page **Destruction** . Par exemple :
 
 ![Page de destruction dans le centre de conformité Microsoft 365](../media/disposition-tab.png)
 
@@ -92,7 +94,7 @@ Dans la page **Définir les paramètres de rétention** pour une étiquette de r
 
 ![Paramètres de conservation pour une étiquette](../media/disposition-review-option.png)
  
-Une fois que vous avez sélectionné cet option **Déclencher une révision avant destruction** , vous spécifiez les relecteurs de destruction sur la page suivante de l’Assistant :
+Une fois que vous avez sélectionné cet option **Déclencher une révision avant destruction**, vous spécifiez les relecteurs de destruction sur la page suivante de l’Assistant :
 
 ![Spécification des réviseurs avant destruction](../media/disposition-reviewers.png)
 
@@ -133,7 +135,7 @@ Les éléments qui apparaissent dans la **Éléments supprimés** pour les étiq
 > [!NOTE]
 > Cette fonctionnalité est basée sur les informations du [journal d’audit unifié](search-the-audit-log-in-security-and-compliance.md) et nécessite par conséquent que l’audit soit [activé et puisse faire l’objet d’une recherche](turn-audit-log-search-on-or-off.md) de sorte que les événements correspondants soient capturés.
 
-Pour l’audit, recherchez **Fichier étant identifié comme un enregistrement supprimé**.
+Pour l’audit, recherchez **fichier supprimé marqué comme enregistrement** dans la catégorie **activités de fichier et de page** . Cet événement d’audit est applicable aux documents et messages électroniques.
 
 ## <a name="filter-and-export-the-views"></a>Filtrer et exporter les affichages
 
