@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Déterminez si votre client et vos utilisateurs satisfont à la configuration requise, afin que vous puissiez utiliser un déploiement centralisé pour déployer des compléments Office.
-ms.openlocfilehash: af7a127d438e81d6ecd025b6a71b9d7e5df2ecc8
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: 04c5f9090ca788f00f2d17d3af59e8022195e9be
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681623"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519364"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Déterminer si le déploiement centralisé des compléments fonctionne pour votre organisation
 
@@ -45,7 +45,7 @@ Un complément peut prendre jusqu’à 24 heures pour s’afficher pour le clien
   
 ## <a name="requirements"></a>Configuration requise
 
-Le déploiement centralisé des compléments nécessite que les utilisateurs utilisent les applications Microsoft 365 pour Microsoft 365 pour Enterprise ou Microsoft 365 pour les entreprises (et qu’ils soient connectés à Office à l’aide de leur ID d’organisation) et disposent de boîtes aux lettres Exchange Online et Exchange Online actives. Le répertoire de votre abonnement doit être dans ou fédéré à Azure Active Directory.
+Le déploiement centralisé des compléments nécessite que les utilisateurs utilisent les SKU Microsoft 365 Enterprise : E3/E5/F3 ou SKU d’entreprise : Business Basic, Business standard, Business Premium (et sont connectés à Office à l’aide de leur ID d’organisation) et disposent de boîtes aux lettres Exchange Online et active Exchange Online. Le répertoire de votre abonnement doit être dans ou fédéré à Azure Active Directory.
 Vous pouvez afficher les conditions requises spécifiques pour Office et Exchange ci-dessous, ou utiliser le [Vérificateur de compatibilité de déploiement centralisé](#centralized-deployment-compatibility-checker).
 
 La fonctionnalité Déploiement centralisé ne prend pas en charge ce qui suit :
@@ -55,17 +55,17 @@ La fonctionnalité Déploiement centralisé ne prend pas en charge ce qui suit :
 - Déploiement de compléments vers une boîte aux lettres Exchange sur local
 - le déploiement de compléments vers SharePoint ;  
 - Applications teams
-- le déploiement de compléments COM (Component Object Model) ou Visual Studio Tools pour Office (VSTO).
-- Déploiements de Microsoft 365 qui n’incluent pas Exchange, comme Microsoft 365 apps pour les entreprises
+- Déploiement de compléments COM (Component Object Model) ou Visual Studio Tools pour Office (VSTO).
+- Les déploiements de Microsoft 365 qui n’incluent pas Exchange Online, tels que les SKU : Microsoft 365 Apps for Business and Microsoft 365 Apps for Enterprise.
 
 ### <a name="office-requirements"></a>Configuration requise pour Office
 
 - Pour les compléments Word, Excel et PowerPoint, vos utilisateurs doivent utiliser l’un des éléments suivants :
-  - Sur un appareil Windows, version 1704 ou ultérieure d’applications Microsoft 365 pour Microsoft 365 pour Enterprise ou Microsoft 365 pour entreprises.
+  - Sur un appareil Windows, version 1704 ou ultérieure de Microsoft 365 Enterprise SKU : E3/E5/F3 ou Business UGS : Business Basic, Business standard, Business Premium.
   - Sur un Mac, version 15,34 ou ultérieure.
 
 - Pour Outlook, vos utilisateurs doivent utiliser l’un des éléments suivants : 
-  - Version 1701 ou ultérieure des applications Microsoft 365 pour Microsoft 365 pour entreprises ou Microsoft 365 pour les entreprises.
+  - Version 1701 ou ultérieure de Microsoft 365 Enterprise SKU : E3/E5/F3 ou Business UGS : Business Basic, Business standard, Business Premium.
   - Version 1808 ou ultérieure d’Office professionnel plus 2019 ou Office standard 2019.
   - Version 16.0.4494.1000 ou ultérieure d’Office professionnel plus 2016 (MSI) ou Office standard 2016 (MSI)\*
   - Version 15.0.4937.1000 ou ultérieure d’Office professionnel plus 2013 (MSI) ou Office standard 2013 (MSI)\*
@@ -74,20 +74,6 @@ La fonctionnalité Déploiement centralisé ne prend pas en charge ce qui suit :
 - Version 2.2.145 ou ultérieure d’Outlook Mobile pour Android 
     
     * Les versions MSI d’Outlook affichent les compléments installés par l’administrateur dans le ruban Outlook approprié, et non dans la section « mes compléments ».
-    
-
-#### <a name="find-out-if-microsoft-365-apps-for-enterprise-is-installed"></a>Déterminer si les applications Microsoft 365 pour les entreprises sont installées
-
-Pour utiliser les applications Microsoft 365 pour Enterprise, un utilisateur doit disposer d’un compte Microsoft 365 et avoir reçu une licence. Pour plus d’informations, reportez-vous à la rubrique [Overview of Microsoft 365 Apps for Enterprise](https://go.microsoft.com/fwlink/p/?linkid=846328).
-
-Le moyen le plus simple de détecter si les applications Microsoft 365 pour Enterprise sont installées sur un utilisateur et de l’utiliser récemment est d’utiliser le rapport des activations de Microsoft Office, qui est disponible dans le centre d’administration Microsoft 365. Le rapport fournit la liste de tous les utilisateurs qui ont activé les applications Microsoft 365 pour les entreprises au cours des 7, 30, 90 ou 180 derniers jours. À des fins de déploiement centralisé, les activations de bureau pour Windows ou Mac sont les colonnes importantes dans le rapport. Vous pouvez exporter le rapport vers Excel. Pour plus d’informations sur le rapport, reportez-vous à [la rubrique rapports microsoft 365 dans le centre d’administration-activations de Microsoft Office](../activity-reports/microsoft-office-activations.md).
-  
-Si vous ne souhaitez pas utiliser le rapport d’activation, vous pouvez demander à un utilisateur d’ouvrir une application Office telle que Word sur son ordinateur, puis choisir le compte de **fichier** \> **Account**. Sous **informations sur le produit**, vous devriez voir le **produit abonnement** et **Microsoft 365 pour entreprise**, ou Microsoft 365 Business Premium, comme illustré dans l’image suivante.
-
-![Informations sur le produit dans une application Office](../../media/product-information-microsoft-365-enterprise.png)
-  
-Pour obtenir de l’aide concernant les applications Microsoft 365 pour les entreprises, consultez la rubrique [Troubleshooting Tips for microsoft 365 Apps for Enterprise](https://go.microsoft.com/fwlink/p/?linkid=846339).
-
 
 ### <a name="exchange-online-requirements"></a>Configuration requise pour Exchange Online
 

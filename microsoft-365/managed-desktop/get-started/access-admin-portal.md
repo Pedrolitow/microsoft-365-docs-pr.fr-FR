@@ -9,12 +9,12 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: 66e4e5c305947f90f935563a3baf0592ce42480a
-ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
+ms.openlocfilehash: deeced350ad867a374a486967c2cbd278ba91710
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49371669"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519328"
 ---
 # <a name="access-the-admin-portal"></a>Accéder au portail d’administration
 
@@ -59,7 +59,7 @@ Chacun des rôles ci-dessous peut être affecté pour fournir différents niveau
 Si vous avez besoin d’aide pour attribuer des rôles Azure Active Directory, reportez-vous à la rubrique [Administrator Role Permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
 
 Pour faciliter la gestion des rôles intégrés, un groupe de sécurité a été créé pour chaque rôle personnalisé (par exemple, « rôles Workplace modernes – gestionnaire de sécurité »). Pour attribuer des utilisateurs à l’un des groupes de sécurité, procédez comme suit :
-1.  Accédez au portail Azure et accédez au panneau Azure Active Directory.
+1.  Accédez au portail du gestionnaire de points de terminaison Microsoft
 2.  Sélectionnez groupes sur le côté gauche.
 3.  Recherchez les rôles Workplace modernes, puis sélectionnez le groupe associé au rôle que vous souhaitez attribuer. 
 4.  Sélectionnez membres sur le côté gauche, puis sélectionnez + Ajouter des membres dans la barre de commandes.

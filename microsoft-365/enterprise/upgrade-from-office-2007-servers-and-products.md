@@ -24,18 +24,18 @@ f1.keywords:
 - NOCSH
 description: Cet article fournit des ressources pour vous aider à effectuer une mise à niveau à partir de serveurs et clients Office 2007, car la prise en charge d’Office 2007 s’est terminée.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3dc33d03c32880627f3c85d6212756f45548ce0b
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 28fa1d56ef66297eaf69d2d11b720e3de2d668f7
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46689586"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519780"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Ressources pour vous aider à effectuer une mise à niveau à partir de serveurs et clients Office 2007
 
-*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Si vous utilisez les produits et services Office 2007, la prise en charge de ces applications a pris fin. Pendant que vous planifiez votre mise à niveau, il est très utile de passer au Cloud Microsoft, en commençant par Microsoft 365. Utilisez cet article comme point de départ pour passer en revue vos options et planifier votre mise à niveau.
+Si vous utilisez les produits et services Office 2007, sachez que la prise en charge de ces applications a pris fin. Envisagez de passer à Microsoft Cloud en commençant par Microsoft 365. Utilisez cet article comme point de départ pour passer en revue vos options et planifier votre mise à niveau.
       
 ## <a name="office-2007-planning-roadmaps"></a>Feuilles de route de planification d’Office 2007
   
@@ -50,7 +50,13 @@ Le support technique est terminé pour les produits et services Office 2007. Les
 |[Mise à niveau à partir d’Office Communications Server](https://docs.microsoft.com/SkypeForBusiness/plan-your-deployment/upgrade) <br/> |8 janvier 2018  <br/> |
 |[Feuille de route pour la fin de l’assistance pour PerformancePoint Server 2007](pps-2007-end-of-support.md) <br/> |9 janvier 2018  <br/> |
    
-Lorsque la prise en charge d’un produit Microsoft est terminée, il n’existe aucune nouvelle mise à jour de sécurité, aucune mise à jour non relative à la sécurité, aucune option de support technique gratuite ou payant (y compris des accords de support personnalisé) ou des mises à jour de contenu technique en ligne. Que vous soyez une organisation d’entreprise ou un utilisateur à domicile individuel, plusieurs options sont à prendre en compte :
+Une fois la prise en charge d’un produit Microsoft terminée, il n’y en a pas plus :
+- Nouvelles mises à jour de sécurité
+- Nouvelles mises à jour non relatives à la sécurité
+- Options de support technique gratuit ou payant disponibles (y compris les accords de support personnalisés)
+- Nouvelles mises à jour de contenu technique en ligne
+
+Que vous soyez une organisation d’entreprise ou un utilisateur à domicile individuel, vous avez plusieurs options à prendre en compte.
 
 ## <a name="im-a-home-user-what-do-i-do"></a>Je suis un particulier. Que dois-je faire ?
 
@@ -64,4 +70,3 @@ Si vous utilisez les produits et applications Office 2007 à la maison, reportez
 
 [Planifiez votre mise à jour des serveurs et clients Office 2007 et Office 2010](plan-upgrade-previous-versions-office.md)
   
-

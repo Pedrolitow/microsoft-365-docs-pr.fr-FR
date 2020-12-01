@@ -10,12 +10,12 @@ search.appverid: ''
 ms.collection: enabler-strategic
 localization_priority: Priority
 description: En savoir plus sur le traitement de formulaires dans Microsoft SharePoint Syntex
-ms.openlocfilehash: 6c2cb2ee3c1fc621e7814f4603ad2e6f0b891701
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: a1429d93d6716fe5db31f0da2a77a68dcf98cd6e
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087402"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519669"
 ---
 # <a name="form-processing-overview"></a>Vue d’ensemble du traitement des formulaires
 
@@ -35,8 +35,6 @@ Par exemple, vous pouvez créer un modèle de traitement de formulaire qui ident
 ![Vue de la bibliothèque de documents](../media/content-understanding/doc-lib-done.png)</br>  
 
 Vous pouvez également utiliser des exemples de fichiers pour former votre modèle et définir les informations à extraire de votre formulaire. La mise en page de votre document est acquise en formant votre modèle. Vous n’avez besoin que de cinq documents de formulaires pour commencer. AI analyse vos exemples de fichiers pour les paires clé-valeur, puis identifie manuellement celles qui n’ont pas été détectées.  Le générateur AI vous permet de tester la précision de votre modèle dans vos exemples de fichiers.
-
-Vous avez besoin d’un minimum de cinq documents de formulaires pour commencer. AI analyse vos exemples de fichiers pour les paires clé-valeur, puis identifie manuellement celles qui n’ont pas été détectées.  Le générateur AI vous permet de tester la précision de votre modèle dans vos exemples de fichiers.
 
 Une fois que vous avez créé votre modèle et que vous l’avez publié, celui-ci crée un [Power Automate Flow](https://docs.microsoft.com/power-automate/getting-started). Le flux s’exécute lorsqu’un fichier est téléchargé dans la bibliothèque de documents SharePoint et extrait les données qui ont été identifiées dans le modèle. Les données extraites s’affichent dans les colonnes de la vue bibliothèque de documents de votre modèle.
 

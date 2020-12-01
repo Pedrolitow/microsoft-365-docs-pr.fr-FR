@@ -21,12 +21,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Découvrez comment utiliser les diagnostics de page pour optimiser les performances des composants WebPart dans les pages de site modernes SharePoint Online.
-ms.openlocfilehash: 7dcfcbfe033ef5f4257cc9688b61aca3227ade8b
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: f7b72aa8ed212147c06660585c4e58e548762c35
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46689906"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519750"
 ---
 # <a name="optimize-web-part-performance-in-sharepoint-online-modern-site-pages"></a>Optimiser les performances des composants WebPart dans les pages de sites modernes SharePoint Online
 
@@ -80,7 +80,7 @@ Il existe trois catégories de causes possibles pour expliquer les faibles perfo
   - Réutilisez les infrastructures telles que _React_ et _Fabric imports_ incluses dans SharePoint Framework (SPFx). Pour obtenir plus d’informations, consultez l’article [Vue d’ensemble de SharePoint Framework](https://docs.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview).
   - Assurez-vous que vous utilisez la version la plus récente de SharePoint Framework et effectuez une mise à niveau vers de nouvelles versions dès qu’elles sont disponibles.
 - Extraction/mise en cache de données
-  - Si le composant WebPart s’appuie sur des appels serveur supplémentaires pour extraire des données à afficher, assurez-vous que les API serveur sont rapides et/ou implémentent la mise en cache côté client (par exemple, _localStorage_ ou _IndexDB_ pour les ensembles plus grands).
+  - Si le composant WebPart s’appuie sur des appels serveur supplémentaires pour l’affichage des données, assurez-vous que ces API sont rapides et/ou implémentent la mise en cache côté client (par exemple, en utilisant _localStorage_ ou _IndexedDB_ pour des ensembles plus grands).
   - Si plusieurs appels sont nécessaires pour afficher les données critiques, pensez à effectuer un traitement par lots sur le serveur ou à utiliser d’autres méthodes de consolidation des requêtes en un seul appel.
   - De même, si certains éléments de données nécessitent une API plus lente, mais ne sont pas essentiels au rendu initial, découplez-les à un appel séparé exécuté après le rendu des données critiques.
   - Si plusieurs parties utilisent les mêmes données, utilisez une couche de données commune pour éviter les appels en double.

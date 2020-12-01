@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: La protection de la confidentialité avec le score de productivité.
-ms.openlocfilehash: 8686c7c86249a408fe8d4fda14c2ae23a168cafe
-ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
+ms.openlocfilehash: c88886e9d1470bda48d023b77472e7dd296508a0
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "48999405"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519352"
 ---
 # <a name="privacy-controls-for-productivity-score"></a>Contrôles de confidentialité du score de productivité
 
@@ -44,7 +44,7 @@ Les contrôles suivants vous permettent de :
 
 Pour afficher l’intégralité du score de productivité, y compris les mesures au niveau du client et les détails par utilisateur, votre rôle doit être l’un des rôles d’administrateur suivants :
 
-- Administrateur global
+- Administrateur général
 - Administrateurs Exchange
 - Administrateur SharePoint
 - Administrateur pour Skype Entreprise
@@ -54,7 +54,7 @@ Pour afficher l’intégralité du score de productivité, y compris les mesures
 
 Attribuez le rôle de lecteur de rapports à toute personne responsable de la gestion et de l’adoption des modifications. Ce rôle leur donne accès à l’expérience complète, y compris les mesures au niveau du client et les détails au niveau de chaque utilisateur.
 
-Le rapport des expériences des personnes contient les détails de l’activité par utilisateur pour chaque page de détails de catégorie. Attribuez un rôle personnalisé appelé lecteur de rapports de synthèse d’utilisation (disponible à partir du 29 octobre 2020) pour permettre l’accès uniquement aux métriques agrégées des expériences de personnes. Ce rôle devra être attribué via les cmdlets PowerShell jusqu’à ce qu’il devienne accessible à partir du centre d’administration Microsoft sur 11/15/2020.
+Le rapport des expériences des personnes contient les détails de l’activité par utilisateur pour chaque page de détails de catégorie. Attribuez un rôle personnalisé appelé lecteur de rapports de synthèse d’utilisation (disponible à partir du 29 octobre 2020) pour permettre l’accès uniquement aux métriques agrégées des expériences de personnes. Ce rôle devra être attribué via les cmdlets PowerShell jusqu’à ce qu’il devienne accessible à partir du centre d’administration Microsoft plus tard au cours de l’année.
 
 Pour attribuer le rôle de lecteur rapports de synthèse d’utilisation avec PowerShell :
 
@@ -62,6 +62,7 @@ Pour attribuer le rôle de lecteur rapports de synthèse d’utilisation avec Po
 
 ```powershell
 Connect-AzureAD
+Enable-AzureADDirectoryRole -RoleTemplateId '75934031-6c7e-415a-99d7-48dbd49e875e'
 $role=Get-AzureADDirectoryRole -Filter "roleTemplateId eq '75934031-6c7e-415a-99d7-48dbd49e875e'"
 Get-AzureADDirectoryRoleMember -ObjectId $role.ObjectId
 $u=Get-AzureADUser -ObjectId <user upn>
@@ -77,7 +78,7 @@ Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId $u.ObjectId
 Pour que les données collectées pour tous les rapports soient anonymes, vous devez être administrateur général. Cette action masque les informations identifiables telles que les noms d’utilisateur, de groupe et de site dans tous les rapports, y compris le score de productivité et l’utilisation de Microsoft 365.
 
 1. Dans le centre d’administration, accédez à **Settings** paramètres d'   >   **organisation** paramètres, puis, sous l’onglet **services** , choisissez **rapports**.
-2. Sélectionnez  **rapports** , puis choisissez d'  **afficher les identificateurs anonymes pour les noms d’utilisateur, de groupe et de site dans score de productivité et rapports d’utilisation**. Ce paramètre est appliqué à la fois aux rapports d’utilisation et à l’application de modèle.
+2. Sélectionnez  **rapports**, puis choisissez d'  **afficher les identificateurs anonymes pour les noms d’utilisateur, de groupe et de site dans score de productivité et rapports d’utilisation**. Ce paramètre est appliqué à la fois aux rapports d’utilisation et à l’application de modèle.
 3. Sélectionnez  **enregistrer les modifications**.
 
 :::image type="content" source="../../media/orgsettings_anonymous.jpg" alt-text="Rendez les informations utilisateur anonymes pour les rapports.":::
@@ -87,7 +88,7 @@ Pour que les données collectées pour tous les rapports soient anonymes, vous d
 Lorsque le score de productivité est généralement disponible, vous pouvez également désactiver la zone des utilisateurs du score de productivité. Si vous désactivez, personne de l’organisation ne pourra afficher ces mesures et votre organisation est supprimée des calculs qui impliquent la communication, les réunions, le travail d’équipe, la collaboration de contenu et la mobilité.
 
 1. Dans le centre d’administration, accédez à **Settings** paramètres d'   >   **organisation** paramètres, puis, sous l’onglet **services** , choisissez **rapports**.
-2. Sélectionnez  **rapports** , puis désactivez la case à cocher  **autoriser les données d’utilisation de Microsoft 365 à être utilisées pour les utilisateurs**. Pour comprendre comment modifier les paramètres de partage de données pour l’analyse des points de terminaison dans le gestionnaire de configuration Intune, cliquez sur **en savoir plus**.
+2. Sélectionnez  **rapports**, puis désactivez la case à cocher  **autoriser les données d’utilisation de Microsoft 365 à être utilisées pour les utilisateurs**. Pour comprendre comment modifier les paramètres de partage de données pour l’analyse des points de terminaison dans le gestionnaire de configuration Intune, cliquez sur **en savoir plus**.
 3. Sélectionnez  **enregistrer les modifications**.
 
 :::image type="content" source="../../media/orgsettingspageoptout.jpg" alt-text="Page Paramètres de l’organisation dans laquelle vous pouvez désactiver les expériences de personnes.":::
