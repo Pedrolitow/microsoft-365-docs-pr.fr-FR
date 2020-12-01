@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: Dans une solution de gestion des enregistrements, vous pouvez généralement configurer une étiquette de rétention pour démarrer la période de rétention sur la base d’un événement que vous identifiez.
-ms.openlocfilehash: 1572995909f370c5c3a544cb3f85e20c35629f88
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: cf8ce1dc2ca77e2ba028d0c35f58cd0ab419b32d
+ms.sourcegitcommit: 5ce64d510b15c6e2df32b78e6086f77156731e3c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47816891"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "49477623"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>Débuter la rétention lorsqu’un événement se produit
 
@@ -35,7 +35,7 @@ Lorsque vous conservez du contenu, la période de rétention est souvent basée 
   
 Exemples d'utilisation de la rétention basée sur les événements :
   
-- **Employés quittant l'organisation**Supposons que les enregistrements d’un employé doivent être conservés 10 ans à compter de son départ de l’organisation. Une fois les 10 ans écoulés, tous les documents concernant l’embauche, les résultats et le départ de cet employé doivent être supprimés. L’événement qui déclenche la période de rétention de 10 ans est le départ de l’employé de l’organisation. 
+- **Employés quittant l'organisation** Supposons que les enregistrements d’un employé doivent être conservés 10 ans à compter de son départ de l’organisation. Une fois les 10 ans écoulés, tous les documents concernant l’embauche, les résultats et le départ de cet employé doivent être supprimés. L’événement qui déclenche la période de rétention de 10 ans est le départ de l’employé de l’organisation. 
     
 - **Expiration du contrat** Supposons que tous les enregistrements liés aux contrats doivent être conservés pendant cinq ans après l’expiration du contrat. L’événement qui déclenche la période de rétention de cinq ans est l’expiration du contrat. 
     
@@ -74,7 +74,7 @@ Pour utiliser avec succès la rétention basée sur les événements, il est imp
 
 4. Lorsque vous avez créé un événement, sa date est synchronisée avec tout le contenu portant l’étiquette de rétention du type d’événement correspondant et contenant l’ID d’élément ou le mot clé spécifié. Comme pour toute étiquette de rétention, cette synchronisation peut prendre jusqu’à 7 jours. Dans le diagramme précédent, la période de rétention de tous les éléments encerclés en rouge est déclenchée par cet événement. En d’autres termes, lorsque ce produit atteint sa fin de vie, cet événement déclenche la période de rétention pour les enregistrements de ce produit.
 
-Il est important de comprendre que si vous ne spécifiez pas d'identifiant ou de mots clés pour un événement, ** tout contenu**avec une étiquette de rétention de ce type d'événement aura sa période de rétention déclenchée par l'événement. Cela signifie que, dans le diagramme précédent, tout le contenu commencera à être conservé. Ce n’est peut-être pas ce que vous voulez faire.
+Il est important de comprendre que si vous ne spécifiez pas d'identifiant ou de mots clés pour un événement, **tout contenu** avec une étiquette de rétention de ce type d'événement aura sa période de rétention déclenchée par l'événement. Cela signifie que, dans le diagramme précédent, tout le contenu commencera à être conservé. Ce n’est peut-être pas ce que vous voulez faire.
 
 Enfin, rappelez-vous que chaque étiquette de rétention possède ses propres paramètres de rétention. Dans cet exemple, ils indiquent tous 10 ans, mais un événement peut très bien déclencher des étiquettes de rétention dont chacune possède sa propre période de rétention.
   
@@ -89,7 +89,7 @@ Flux de travail général pour la rétention basée sur un événement :
 
 ### <a name="step-1-create-a-label-whose-retention-period-is-based-on-an-event"></a>Étape 1 : créer une étiquette dont la période de rétention est basée sur des événements
 
-Pour créer et configurer votre étiquette de rétention, utilisez les instructions [Créer et configurer les étiquettes de rétention](create-retention-labels.md#create-and-configure-retention-labels). Mais pour ce qui est de la rétention basée sur un événement, sur la **page Définir les paramètres de  rétention** de l'assistant Créer une étiquette de rétention, après**Démarrer la période de rétention basée sur**, sélectionnez un des types d'événements par défaut dans la liste déroulante, ou créez le vôtre en sélectionnant **Créer un nouveau type d'événement**:
+Pour créer et configurer votre étiquette de rétention, utilisez les instructions [Créer et configurer les étiquettes de rétention](create-retention-labels.md#create-and-configure-retention-labels). Mais pour ce qui est de la rétention basée sur un événement, sur la **page Définir les paramètres de  rétention** de l'assistant Créer une étiquette de rétention, après **Démarrer la période de rétention basée sur**, sélectionnez un des types d'événements par défaut dans la liste déroulante, ou créez le vôtre en sélectionnant **Créer un nouveau type d'événement**:
 
 ![Créer un nouveau type d’événement pour une étiquette de rétention](../media/SPRetention6.png)
 
@@ -139,18 +139,19 @@ L’ID d’élément constitue simplement une autre propriété de document qui 
   
 ### <a name="step-5-create-an-event"></a>Étape 5 : créer un événement
 
-Lorsqu’une instance précise de ce type d’événement se produit (par exemple, un produit arrive en fin de vie), accédez à la page **Gestions des enregistrements** > **Événements** dans le Centre de conformité Microsoft 365, et sélectionnez **+ Créer**pour créer un événement. Vous devez déclencher un événement en le créant en cliquant ici..
+Lorsqu’une instance précise de ce type d’événement se produit (par exemple, un produit arrive en fin de vie), accédez à la page **Gestions des enregistrements** > **Événements** dans le Centre de conformité Microsoft 365, et sélectionnez **+ Créer** pour créer un événement. Vous devez déclencher un événement en le créant en cliquant ici..
 
 ![Créer un événement pour déclencher le démarrage de la rétention pour les étiquettes de rétention basée sur les événements](../media/create-event-records-management.png)
 
+Jusqu’à un million d’événements sont pris en charge par client.
 
 ### <a name="step-6-choose-the-same-event-type-used-by-the-label-in-step-2"></a>Étape 6 : Choisir le même type d’événement utilisé par l’étiquette à l’étape 2
 
-Lorsque vous créez l’événement, choisissez le même type d'événement que celui spécifié dans les paramètres de l’étiquette de rétention à l’étape 2. Par exemple, si vous avez sélectionné **Durée de vie du produit**comme type d'événement pour les paramètres de l’étiquette, sélectionnez **Durée de vie du produit** lorsque vous créez l'événement. La période de rétention sera déclenchée uniquement pour le contenu auquel sont appliquées des étiquettes de rétention de ce type d’événement.
+Lorsque vous créez l’événement, choisissez le même type d'événement que celui spécifié dans les paramètres de l’étiquette de rétention à l’étape 2. Par exemple, si vous avez sélectionné **Durée de vie du produit** comme type d'événement pour les paramètres de l’étiquette, sélectionnez **Durée de vie du produit** lorsque vous créez l'événement. La période de rétention sera déclenchée uniquement pour le contenu auquel sont appliquées des étiquettes de rétention de ce type d’événement.
 
 ![Option dans les paramètres d’événement permettant de choisir un type d’événement](../media/choose-event-type-records-management.png)
 
-Par ailleurs, si vous devez créer un événement pour plusieurs étiquettes de rétention qui ont différents types d'événements, sélectionnez l'option**Choisir les étiquettes existantes**. Sélectionnez ensuite les étiquettes configurées pour les types d’événements que vous voulez associer à cet événement.
+Par ailleurs, si vous devez créer un événement pour plusieurs étiquettes de rétention qui ont différents types d'événements, sélectionnez l'option **Choisir les étiquettes existantes**. Sélectionnez ensuite les étiquettes configurées pour les types d’événements que vous voulez associer à cet événement.
 
 ### <a name="step-7-enter-keywords-or-an-asset-id"></a>Étape 7 : saisir des mots clés ou un ID d’élément
 
@@ -295,7 +296,7 @@ Utilisation du code d’exemple pour appeler des API REST :
 
 ##### <a name="get-events-based-on-a-time-range"></a>Obtenir des événements en fonction de l’intervalle de temps
 
-- **Méthode **: GET
+- **Méthode**: GET
 
 - **URL** :`https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent?BeginDateTime=2019-01-11&EndDateTime=2019-01-16`
 
@@ -320,7 +321,7 @@ Utilisation du code d’exemple pour appeler des API REST :
 
 ##### <a name="get-an-event-by-id"></a>Obtenir un événement par ID
 
-- **Méthode **: GET
+- **Méthode**: GET
 
 - **URL** :`https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent('174e9a86-74ff-4450-8666-7c11f7730f66')`
 
@@ -344,7 +345,7 @@ Utilisation du code d’exemple pour appeler des API REST :
 
 ##### <a name="get-an-event-by-name"></a>Obtenir un événement par le nom
 
-- **Méthode **: GET
+- **Méthode**: GET
 
 - **URL** :`https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent`
 
