@@ -20,12 +20,12 @@ description: Apprenez à vérifier votre domaine et à créer des enregistrement
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-ms.openlocfilehash: 6c2359cbf2da24fa7e2cd579d61216d948e0cb83
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: bc22dbd3a050516f518c9ddc9ccf5a3af9c76f12
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645370"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519292"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>Ajouter des enregistrements DNS pour connecter votre domaine
 
@@ -155,12 +155,12 @@ Certains fournisseurs d’hébergement imposent des restrictions sur les valeurs
 Si votre fournisseur d’hébergement n’autorise pas la définition de ce champ sur **@**, laissez ce champ vide. Utilisez cette approche *uniquement* lorsque votre fournisseur d’hébergement utilise des champs distincts pour les valeurs Service et Protocole. Dans le cas contraire, consultez les notes sur les valeurs Service et Protocole ci-dessous.
 
 ##### <a name="service-and-protocol"></a>Service et Protocole
-Si votre fournisseur d’hébergement ne fournit pas ces champs pour les enregistrements SRV, vous devez spécifier les valeurs de **Service** et **Protocole**dans le champ **Nom** de l’enregistrement. Remarque : suivant votre fournisseur d’hébergement, le champ **Nom** peut avoir une autre appellation, comme **Hôte**, **Nom de l’hôte** ou **Sous-domaine**. Pour ajouter ces valeurs, vous devez créer une seule chaîne, en séparant les valeurs par un point. 
+Si votre fournisseur d’hébergement ne fournit pas ces champs pour les enregistrements SRV, vous devez spécifier les valeurs de **Service** et **Protocole** dans le champ **Nom** de l’enregistrement. Remarque : suivant votre fournisseur d’hébergement, le champ **Nom** peut avoir une autre appellation, comme **Hôte**, **Nom de l’hôte** ou **Sous-domaine**. Pour ajouter ces valeurs, vous devez créer une seule chaîne, en séparant les valeurs par un point. 
 
 Exemple : `_sip._tls`
 
 ##### <a name="priority-weight-and-port-br"></a>Priorité, Poids, et Port <br>
-Si votre fournisseur d’hébergement ne fournit pas ces champs pour les enregistrements SRV, vous devez spécifier ces valeurs dans le champs **Cible** de l’enregistrement. Remarque : selon votre fournisseur d’hébergement, le champ **Cible** peut être appelé différemment, comme **Contenu**, **Adresse IP**ou **Hôte cible**. 
+Si votre fournisseur d’hébergement ne fournit pas ces champs pour les enregistrements SRV, vous devez spécifier ces valeurs dans le champs **Cible** de l’enregistrement. Remarque : selon votre fournisseur d’hébergement, le champ **Cible** peut être appelé différemment, comme **Contenu**, **Adresse IP** ou **Hôte cible**. 
 
 Pour ajouter ces valeurs, créez une seule chaîne, en séparant les valeurs par des espaces, *ou parfois par un point*. Si vous n’êtes pas sûr, consultez votre fournisseur. Les valeurs doivent être incluses dans l’ordre suivant : Priority (Priorité), Weight (Poids), Port (Port), Target (Cible). 
 
