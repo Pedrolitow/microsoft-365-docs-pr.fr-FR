@@ -22,12 +22,12 @@ description: Utilisez les étiquettes de confidentialité de Microsoft informati
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: e881a9178e6b4d4cf703c329dea6f50acb0393c5
-ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
+ms.openlocfilehash: 62f9cd4eb2056843cae9d68de5803afd422f8560
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49371646"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527603"
 ---
 # <a name="learn-about-sensitivity-labels"></a>En savoir plus sur les étiquettes de niveau de confidentialité
 
@@ -35,11 +35,11 @@ ms.locfileid: "49371646"
 
 Pour mener à bien leur travail, les membres de votre organisation collaborent avec d’autres personnes au sein de l’organisation et en dehors de celle-ci. Cela signifie que le contenu n’est plus protégé par un pare-feu : il peut se déplacer partout, sur les appareils, applications et services. Dans ce cas, vous devez sécuriser et protéger l’itinérance, tout en respectant les stratégies métier et de conformité de votre organisation.
 
-Les étiquettes de confidentialité de l’infrastructure Microsoft Information Protection vous permettent de classifier et protéger les données de votre organisation, tout en veillant à ce que la productivité des utilisateurs et leur aptitude à collaborer ne soient pas compromises.
+Les étiquettes de confidentialité de l'infrastructure Microsoft Information Protection vous permettent de classifier et protéger les données de votre organisation, tout en veillant à ce que la productivité des utilisateurs et leur aptitude à collaborer ne soient pas compromises.
 
-Exemple illustrant les étiquettes de confidentialité disponibles dans Excel, dans l’onglet **Accueil** du ruban. Dans cet exemple, l’étiquette appliquée s’affiche dans la barre d’état :
+Exemple montrant les étiquettes de confidentialité disponibles dans Excel à partir de l’onglet **Accueil** du ruban. Dans cet exemple, l’étiquette appliquée affiche dans la barre d’état :
 
-![Étiquette de confidentialité dans le ruban Excel et la barre d’état](../media/Sensitivity-label-in-Excel.png)
+![Étiquette de confidentialité dans le ruban Excel et sur la barre d’état](../media/Sensitivity-label-in-Excel.png)
 
 Pour appliquer des étiquettes de confidentialité, les utilisateurs doivent être connectés avec leur compte Microsoft 365 professionnel ou scolaire.
 
@@ -50,60 +50,58 @@ Pour appliquer des étiquettes de confidentialité, les utilisateurs doivent êt
 
 Vous pouvez utiliser les étiquettes de niveau de confidentialité aux fins suivantes :
   
-- **appliquer des paramètres de protection comme le chiffrement ou les filigranes sur le contenu étiqueté.** Par exemple, vos utilisateurs peuvent appliquer une étiquette Confidentiel à un document ou un message électronique, et cette étiquette peut chiffrer le contenu et appliquer un filigrane Confidentiel.
+- **Appliquer des paramètres de protection tels que le chiffrement ou des filigranes sur le contenu étiqueté.** Par exemple, vos utilisateurs peuvent appliquer une étiquette Confidentiel à un document ou un message électronique, et cette étiquette peut chiffrer le contenu et appliquer un filigrane Confidentiel.
 
-- **protéger le contenu des applications Office sur différentes plateformes et appareils.** Pour obtenir une liste des applications prises en charge, consultez l’article [Utiliser des étiquettes de confidentialité dans les applications Office](sensitivity-labels-office-apps.md).
+- **Protéger le contenu dans les applications Office sur différents appareils et plateformes.** Pour obtenir la liste des applications prises en charge, consultez [Utiliser les étiquettes de confidentialité dans les applications Office](sensitivity-labels-office-apps.md).
 
-- **protéger le contenu des applications et services tiers** à l’aide de Microsoft Cloud App Security. Avec la Sécurité des applications cloud, vous pouvez détecter, classifier, étiqueter et protéger le contenu des applications et services tiers, tels que SalesForce, Box ou DropBox, même si l’application ou le service tiers ne lit pas ou ne prend pas en charge les étiquettes de confidentialité.
+- **Protéger le contenu dans les services et les applications tiers** à l’aide de Microsoft Cloud App Security. Avec Cloud App Security (CAS), vous pouvez détecter, classer, étiqueter et protéger le contenu dans les services tiers et applications tierces, comme SalesForce, Box ou Dropbox, même si l’application tierce ou le service tiers ne lit pas ou ne prend pas en charge les étiquettes de niveau de confidentialité.
 
-- **protéger les conteneurs** qui incluent Teams, des Groupes Microsoft 365 et des sites SharePoint. Par exemple, définissez les paramètres de confidentialité, l’accès des utilisateurs externes et l’accès à partir d’appareils non gérés.
+- **Protégez les conteneurs** qui incluent Teams, les groupes Microsoft 365 et les sites SharePoint. Par exemple, définissez les paramètres de confidentialité, l’accès des utilisateurs externes et le partage externe, ainsi que l’accès à partir d’appareils non gérés.
 
-- **étendre les étiquettes de confidentialité aux applications et services tiers.** À l’aide du kit de développement logiciel (SDK) Microsoft Information Protection, les applications tierces peuvent lire les étiquettes de confidentialité et appliquer des paramètres de protection.
+- **Étendre les étiquettes de confidentialité à des applications et services tiers.** Grâce à l'utilisation du SDK Microsoft informations Protection, des applications tierces peuvent lire des étiquettes de confidentialité et appliquer des paramètres de protection.
 
-- **classifier le contenu sans utiliser de paramètres de protection.** Vous pouvez également simplement attribuer une classification au contenu (comme un autocollant) qui persiste et se déplace avec le contenu lorsqu’il est utilisé et partagé. Vous pouvez utiliser cette classification pour générer des rapports d’utilisation et afficher les données d’activité de votre contenu sensible. Sur la base de ces informations, vous pouvez toujours choisir d’appliquer les paramètres de protection ultérieurement.
+- **Classifier du contenu sans utiliser les paramètres de protection.** Vous pouvez également simplement affecter une classification au contenu (comme un autocollant physique) qui continue de s’afficher et se déplace avec le contenu quand il utilisé et partagé. Vous pouvez utiliser cette classification pour générer des rapports d’utilisation et consultez les données d’activité pour votre contenu sensible. En se basant sur ces informations, vous pouvez toujours choisir d’appliquer les paramètres de protection plus tard.
 
-Dans tous ces cas, les étiquettes de confidentialité dans Microsoft 365 peuvent vous permettre d’effectuer les bonnes actions sur le bon contenu. Avec les étiquettes de confidentialité, vous pouvez classifier les données dans votre organisation et appliquer les paramètres de protection en fonction de cette classification.
+Dans tous ces cas, les étiquettes de confidentialité dans Microsoft 365 peuvent vous aider à effectuer les actions adéquates sur le contenu approprié. Ces dernières vous permettent de classifier des données dans toute votre organisation et d’appliquer des paramètres de protection basés sur cette classification.
 
 ## <a name="what-a-sensitivity-label-is"></a>Qu’est-ce qu’une étiquette de confidentialité ?
 
 Lorsque vous attribuez une étiquette de confidentialité à un document ou à un message électronique, elle ressemble à un cachet appliqué à un contenu qui est :
 
-- **personnalisable.** Vous pouvez créer des catégories pour les différents niveaux de sensibilité du contenu dans votre organisation, comme Personnel, Public, Général, Confidentiel ou Hautement confidentiel.
+- **Personnalisable.** Vous pouvez créer des catégories pour les différents niveaux de sensibilité du contenu dans votre organisation, comme Personnel, Public, Général, Confidentiel ou Hautement confidentiel.
 
-- **un texte clair.** L’étiquette étant stockée en texte clair dans les métadonnées du contenu, les applications et services tiers peuvent la lire, puis appliquer leurs propres actions de protection, si nécessaire.
+- **Texte en clair.** L’étiquette étant stockée sous forme de texte clair dans les métadonnées du contenu, les applications et services tiers peuvent la lire, puis appliquer leurs propres actions de protection, le cas échéant.
 
-- **persistant.** Une fois que l’étiquette de confidentialité est appliquée au contenu, elle est stockée dans les métadonnées de ce courrier électronique ou document. Cela signifie que l’étiquette se déplace avec le contenu, les paramètres de protection inclus. Ces données deviennent la base de l’application et de l’application des stratégies.
+- **Permanentes.** Après avoir appliqué une étiquette de confidentialité à du contenu, celle-ci est stockée dans les métadonnées du courrier électronique ou du document. L’étiquette se déplace par conséquent avec le contenu, y compris les paramètres de protection, et que ces données constituent la base de l’application et de l’exécution des stratégies.
 
-Dans les applications Office, une étiquette de confidentialité s’affiche pour les utilisateurs comme une balise sur un message électronique ou un document.
+Dans les applications Office, une étiquette de confidentialité s'affiche pour les utilisateurs comme une balise sur un message électronique ou un document.
 
-Chaque élément qui prend en charge les étiquettes de confidentialité peut avoir une seule étiquette de confidentialité appliquée. Une étiquette de confidentialité et une [étiquette de rétention](retention.md#retention-labels) peuvent être appliquées aux documents et aux courriers électroniques.
+Chaque élément qui prend en charge les étiquettes de confidentialité peut se voir appliquer une étiquette de confidentialité unique. Les documents et les e-mails peuvent se voir appliquer à la fois une étiquette de confidentialité et une [étiquette de rétention](retention.md#retention-labels).
 
 > [!div class="mx-imgBorder"]
-> ![Étiquette de confidentialité appliquée à un courrier électronique](../media/Sensitivity-label-on-email.png)
+> ![Étiquette de confidentialité appliquée à un e-mail](../media/Sensitivity-label-on-email.png)
 
 ## <a name="what-sensitivity-labels-can-do"></a>Fonction des étiquettes de niveau de confidentialité
 
-Une fois qu’une étiquette de confidentialité est appliquée à un courrier électronique ou à un document, tous les paramètres de protection configurés pour cette étiquette sont appliqués au contenu. Avec une étiquette de confidentialité, vous pouvez :
+Une fois qu’une étiquette de confidentialité est appliquée à un e-mail ou un document, tout paramètre de protection relatif à cette étiquette sont appliqués au contenu. Vous pouvez utiliser une étiquette de confidentialité aux fins suivantes :
 
-- **chiffrer** uniquement les courriers électroniques ou bien les courriers électroniques et les documents. Vous pouvez choisir les utilisateurs ou les groupes autorisés à effectuer quelles actions et pendant combien de temps. Par exemple, vous pouvez choisir d’autoriser les utilisateurs d’un groupe spécifique d’une autre organisation à disposer des autorisations nécessaires pour examiner du contenu pendant sept jours seulement après que le contenu a été étiqueté. Sinon, plutôt que des autorisations définies par l’administrateur, vous pouvez autoriser vos utilisateurs à attribuer des autorisations au contenu lorsqu’ils appliquent l’étiquette. 
+- **Chiffrer** les e-mails uniquement ou les e-mails et les documents. Vous pouvez choisir les utilisateurs ou le groupe autorisés à effectuer telle ou telle action et la durée de l’autorisation. Par exemple, vous pouvez choisir d’autoriser les utilisateurs d’un groupe spécifique d'une autre organisation à vérifier le contenu pendant sept jours seulement après l’étiquetage du contenu. Par ailleurs, au lieu d’autorisations définies par l'administrateur, vous pouvez autoriser vos utilisateurs à attribuer des autorisations au contenu lorsqu’ils appliquent l’étiquette. 
     
-    Si vous souhaitez en savoir plus sur les paramètres de **Chiffrement** lorsque vous créez ou modifiez une étiquette de confidentialité, consultez l’article [Restreindre l’accès au contenu en utilisant le chiffrement dans les étiquettes de confidentialité](encryption-sensitivity-labels.md).
+    Pour plus d’informations sur les paramètres de **Chiffrement** lorsque vous créez ou modifiez une étiquette de confidentialité, voir [Restreindre l’accès au contenu en utilisant le chiffrement dans les étiquettes de confidentialité](encryption-sensitivity-labels.md).
 
-- **marquer le contenu** lorsque vous utilisez les applications Office, en ajoutant des filigranes, des en-têtes ou des pieds de page aux courriers électroniques ou aux documents auxquels l’étiquette est appliquée. Les filigranes peuvent être appliqués aux documents mais pas aux courriers électroniques. Exemple d’en-tête et de filigrane :
+- **Marquer le contenu** lorsque vous utilisez des applications Office, en ajoutant filigranes, pieds de page ou en-têtes à des e-mails ou des documents comportant l’étiquette. Vous pouvez appliquer des filigranes aux documents, mais pas aux e-mails. Exemple d’en-tête et de filigrane :
     
     ![Filigrane et en-tête appliqués au document](../media/Sensitivity-label-watermark-header.png)
     
-    Besoin de vérifier quand les marquages de contenu sont appliqués ? Consultez l’article [Quand les applications Office appliquent le marquage et le chiffrement du contenu](sensitivity-labels-office-apps.md#when-office-apps-apply-content-marking-and-encryption).
+    Avez-vous besoin de vérifier la date de l’application des marques de contenu ? Veuillez consulter la section [Délai de marquage et de chiffrage de contenus par les applications Office](sensitivity-labels-office-apps.md#when-office-apps-apply-content-marking-and-encryption).
     
-    Certaines applications, mais pas toutes, prennent en charge les marquages dynamiques à l’aide de variables. Par exemple, insérez le nom de l’étiquette ou le nom du document dans l’en-tête, le pied de page ou le filigrane. Si vous souhaitez en savoir plus, consultez l’article [Marquages dynamiques avec variables](sensitivity-labels-office-apps.md#dynamic-markings-with-variables).
+    Certaines applications, mais pas toutes, prennent en charge les marquages dynamiques à l’aide de variables. Par exemple, vous pouvez insérer le nom d’étiquette ou le nom du document dans l’en-tête, le pied de page ou le filigrane. Pour plus d’informations, consultez[Marquages dynamiques avec des variables](sensitivity-labels-office-apps.md#dynamic-markings-with-variables).
     
-    Bien que vous puissiez configurer un nom de police personnalisé pour ces marquages de contenu et une large gamme de couleurs de police qui incluent le code RVB personnalisé, ces paramètres sont pris en charge uniquement par le [client d’étiquetage unifié Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2). Lorsque vous utilisez l’étiquetage intégré, le paramètre de nom de police est ignoré et les couleurs suivantes uniquement sont prises en charge : noir, jaune, bleu, vert, rouge. Si vous sélectionnez une couleur qui n’est pas prise en charge, le noir est utilisé par défaut.
-
     Longueurs de chaînes : les filigranes sont limités à 255 caractères. Les en-têtes et les pieds de page sont limités à 1 024 caractères, sauf dans Excel. Excel présente une limite totale de 255 caractères pour les en-têtes et les pieds de page, mais cette limite inclut des caractères qui ne sont pas visibles, tels que des codes de mise en forme. Si cette limite est atteinte, la chaîne entrée n’apparaît pas dans Excel.
 
 - **Protégez du contenu dans des conteneurs tels que des sites et des groupes** lorsque vous activez la fonctionnalité à [utiliser des étiquettes de confidentialité avec Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint](sensitivity-labels-teams-groups-sites.md).
     
-    Vous ne pouvez pas configurer les paramètres de protection pour les groupes et les sites tant que vous n’activez pas cette fonctionnalité. Cette configuration d’étiquettes ne permet pas aux documents ni aux e-mails d’être automatiquement étiquetés. En lieu et place, les paramètres d’étiquette protègent le contenu en contrôlant l’accès au conteneur dans lequel le contenu est stocké. Ces paramètres incluent les paramètres de confidentialité, l’accès des utilisateurs externes ainsi que l’accès à partir d’appareils non gérés.
+    Vous ne pouvez pas configurer les paramètres de protection pour les groupes et les sites tant que vous n’activez pas cette fonctionnalité. Cette configuration d’étiquettes ne permet pas aux documents ni aux e-mails d’être automatiquement étiquetés. En lieu et place, les paramètres d’étiquette protègent le contenu en contrôlant l’accès au conteneur dans lequel le contenu est stocké. Ces paramètres incluent les paramètres de confidentialité, l’accès des utilisateurs externes et le partage externe, ainsi que l’accès à partir d’appareils non gérés.
 
 - **Appliquez automatiquement l’étiquette dans des applications Office ou recommandez une étiquette.** Vous pouvez choisir le type d’informations sensibles que vous voulez étiqueter. L'étiquette peut être appliquée automatiquement, ou vous pouvez inviter les utilisateurs à appliquer l’étiquette que vous recommandez. Si vous recommandez une étiquette, l’invite affiche le texte de votre choix. Par exemple :
     

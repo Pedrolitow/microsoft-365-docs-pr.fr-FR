@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: e8ce5a144c7361cd483a903dc3e287a4a51a508b
-ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
+ms.openlocfilehash: 009ed10cb9d005757a786d3a3b2c0bba2c8e6d44
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49073071"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527637"
 ---
 # <a name="communication-compliance-feature-reference"></a>Référence de la fonctionnalité de conformité des communications
 
@@ -79,9 +79,9 @@ Pour faciliter la planification de la migration, prenez en compte l’exemple su
 
 Pour mettre à jour les rôles de ces utilisateurs pour la nouvelle structure de groupe de rôles, et pour séparer les autorisations d’accès et de gestion des utilisateurs, vous pouvez considérer trois nouveaux groupes et les nouvelles affectations de groupe de rôles associées :
 
-- **Administrateurs informatiques** : attribué au nouveau groupe de rôles d' *administrateur de conformité de communication* .
-- **Triage** : affecté au groupe de rôles *analyste de conformité des communications* .
-- **Relecteurs** : affectés au nouveau groupe de rôles contrôle de *conformité de communication* .
+- **Administrateurs informatiques**: attribué au nouveau groupe de rôles d' *administrateur de conformité de communication* .
+- **Triage**: affecté au groupe de rôles *analyste de conformité des communications* .
+- **Relecteurs**: affectés au nouveau groupe de rôles contrôle de *conformité de communication* .
 
 ## <a name="supervised-users"></a>Utilisateurs supervisés
 
@@ -106,24 +106,24 @@ L’ajout de groupes et de listes de distribution aux stratégies de conformité
 
 Avec les stratégies de conformité de communication, vous pouvez choisir d’analyser les messages d’une ou plusieurs des plateformes de communication suivantes en tant que groupe ou en tant que sources autonomes. Les communications capturées sur ces plateformes sont conservées pendant sept ans pour chaque stratégie par défaut, même si les utilisateurs quittent votre organisation et que leurs boîtes aux lettres sont supprimées.
 
-- **Microsoft teams** : les communications de conversation dans les canaux Microsoft teams publics et privés, ainsi que dans les conversations individuelles, peuvent être analysées. Lorsque des utilisateurs sont affectés à une stratégie de conformité de communication lorsque la couverture Microsoft teams est sélectionnée, les communications de conversation pour les utilisateurs sont automatiquement analysées sur toutes les équipes Microsoft teams dont les utilisateurs sont membres. La couverture Microsoft teams est automatiquement incluse pour les modèles de stratégie prédéfinis et est sélectionnée par défaut dans le modèle de stratégie personnalisé. Les conversations de teams correspondant à des conditions de stratégie de conformité de communication peuvent prendre jusqu’à 24 heures pour être traitées. Utilisez les configurations de gestion de groupe suivantes pour superviser les conversations des utilisateurs individuels et les communications de canal dans teams :
+- **Microsoft teams**: les communications de conversation dans les canaux Microsoft teams publics et privés, ainsi que dans les conversations individuelles, peuvent être analysées. Lorsque des utilisateurs sont affectés à une stratégie de conformité de communication lorsque la couverture Microsoft teams est sélectionnée, les communications de conversation pour les utilisateurs sont automatiquement analysées sur toutes les équipes Microsoft teams dont les utilisateurs sont membres. La couverture Microsoft teams est automatiquement incluse pour les modèles de stratégie prédéfinis et est sélectionnée par défaut dans le modèle de stratégie personnalisé. Les conversations de teams correspondant à des conditions de stratégie de conformité de communication peuvent prendre jusqu’à 48 heures de traitement. Utilisez les configurations de gestion de groupe suivantes pour superviser les conversations des utilisateurs individuels et les communications de canal dans teams :
 
     - **Pour les communications de conversation de teams :** Affectez des utilisateurs individuels ou affectez un [groupe de distribution](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) à la stratégie de conformité des communications. Ce paramètre s'applique aux relations d'utilisateur/chat en tête à tête ou à plusieurs.
     - **Pour les communications de canal teams :** Affectez à chaque canal Microsoft teams ou groupe Microsoft 365 que vous souhaitez analyser, qui contient un utilisateur spécifique à la stratégie de conformité de communication. Si vous ajoutez le même utilisateur à d’autres canaux Microsoft Teams ou à des groupes Microsoft 365, veillez à ajouter ces nouveaux canaux et groupes à la stratégie de conformité des communications.
-    - **Pour les communications de conversation avec des environnements de messagerie hybrides** : la conformité des communications permet de surveiller les messages de conversation pour les utilisateurs des organisations disposant d’un déploiement local Exchange ou d’un fournisseur de messagerie externe ayant activé Microsoft Teams. Vous devez créer un groupe de distribution pour les utilisateurs disposant de boîtes aux lettres locales ou externes à surveiller. Lors de la création d’une stratégie de conformité de communication, vous affectez ce groupe de distribution à la sélection **utilisateurs et groupes surveillés** dans l’Assistant stratégie.
+    - **Pour les communications de conversation avec des environnements de messagerie hybrides**: la conformité des communications permet de surveiller les messages de conversation pour les utilisateurs des organisations disposant d’un déploiement local Exchange ou d’un fournisseur de messagerie externe ayant activé Microsoft Teams. Vous devez créer un groupe de distribution pour les utilisateurs disposant de boîtes aux lettres locales ou externes à surveiller. Lors de la création d’une stratégie de conformité de communication, vous affectez ce groupe de distribution à la sélection **utilisateurs et groupes surveillés** dans l’Assistant stratégie.
 
     >[!IMPORTANT]
     >Vous devez effectuer une demande auprès du Support Microsoft pour autoriser votre organisation à utiliser l’interface utilisateur graphique dans le centre de conformité et sécurité pour rechercher des données de conversations Teams pour des utilisateurs locaux. Pour plus d’informations, reportez-vous à la rubrique [recherche de boîtes aux lettres en nuage pour les utilisateurs locaux](search-cloud-based-mailboxes-for-on-premises-users.md).
 
 Vous devez effectuer une demande auprès du Support Microsoft pour autoriser votre organisation à utiliser l’interface utilisateur graphique dans le centre de conformité et sécurité pour rechercher des équipes dans les boîtes aux lettres en ligne des utilisateurs locaux.
 
-- **Messagerie Exchange** : les boîtes aux lettres hébergées sur Exchange Online dans le cadre de votre abonnement Microsoft 365 ou Office 365 sont toutes éligibles pour l’analyse des messages. Les messages électroniques et les pièces jointes Exchange correspondant à des conditions de stratégie de conformité de communication peuvent mettre jusqu’à 24 heures pour être traités. Les types de pièces jointes prises en charge pour la conformité des communications sont les mêmes que les [types de fichiers pris en charge pour les inspections du contenu des règles de flux de messagerie Exchange](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
+- **Messagerie Exchange**: les boîtes aux lettres hébergées sur Exchange Online dans le cadre de votre abonnement Microsoft 365 ou Office 365 sont toutes éligibles pour l’analyse des messages. Les messages électroniques et les pièces jointes Exchange correspondant à des conditions de stratégie de conformité de communication peuvent mettre jusqu’à 24 heures pour être traités. Les types de pièces jointes prises en charge pour la conformité des communications sont les mêmes que les [types de fichiers pris en charge pour les inspections du contenu des règles de flux de messagerie Exchange](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
 
-- **Yammer** : les messages privés, les conversations publiques et les pièces jointes associées dans les communautés Yammer peuvent être analysés. Lorsqu’un utilisateur est ajouté à la stratégie de conformité de communication qui inclut Yammer comme canal défini, les communications entre toutes les communautés Yammer dont l’utilisateur est membre sont incluses dans le processus d’analyse. Les conversations et les pièces jointes Yammer correspondant à des conditions de stratégie de conformité de communication peuvent prendre jusqu’à 24 heures pour être traitées. Yammer doit être en [mode natif](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode) pour les stratégies de conformité de communication afin de surveiller les communications et les pièces jointes Yammer. En mode natif, tous les utilisateurs de Yammer se trouvent dans Azure Active Directory (AAD), tous les groupes sont des Groupes Office 365 et tous les fichiers sont stockés dans SharePoint Online.
+- **Yammer**: les messages privés, les conversations publiques et les pièces jointes associées dans les communautés Yammer peuvent être analysés. Lorsqu’un utilisateur est ajouté à la stratégie de conformité de communication qui inclut Yammer comme canal défini, les communications entre toutes les communautés Yammer dont l’utilisateur est membre sont incluses dans le processus d’analyse. Les conversations et les pièces jointes Yammer correspondant à des conditions de stratégie de conformité de communication peuvent prendre jusqu’à 24 heures pour être traitées. Yammer doit être en [mode natif](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode) pour les stratégies de conformité de communication afin de surveiller les communications et les pièces jointes Yammer. En mode natif, tous les utilisateurs de Yammer se trouvent dans Azure Active Directory (AAD), tous les groupes sont des Groupes Office 365 et tous les fichiers sont stockés dans SharePoint Online.
 
-- **Skype Entreprise Online**  :Les communications de conversation et les pièces jointes associées dans Skype Entreprise Online peuvent être supervisées. Les conversations Skype Entreprise Online correspondant aux conditions de la stratégie de conformité des communications peuvent prendre jusqu’à 24 heures. Les conversations de conversation surveillées proviennent de [conversations précédentes enregistrées dans Skype entreprise Online](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2).  Utilisez la configuration de gestion de groupe suivante pour superviser les communications de conversation des utilisateurs dans Skype entreprise Online :
+- **Skype Entreprise Online** :Les communications de conversation et les pièces jointes associées dans Skype Entreprise Online peuvent être supervisées. Les conversations Skype Entreprise Online correspondant aux conditions de la stratégie de conformité des communications peuvent prendre jusqu’à 24 heures. Les conversations de conversation surveillées proviennent de [conversations précédentes enregistrées dans Skype entreprise Online](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2).  Utilisez la configuration de gestion de groupe suivante pour superviser les communications de conversation des utilisateurs dans Skype entreprise Online :
 
-    - **Pour les communications de conversation de Skype entreprise Online** : affectez des utilisateurs individuels ou affectez un [groupe de distribution](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) à la stratégie de conformité des communications. Ce paramètre s'applique aux relations d'utilisateur/chat en tête à tête ou à plusieurs.
+    - **Pour les communications de conversation de Skype entreprise Online**: affectez des utilisateurs individuels ou affectez un [groupe de distribution](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) à la stratégie de conformité des communications. Ce paramètre s'applique aux relations d'utilisateur/chat en tête à tête ou à plusieurs.
 
 - **Sources** tierces : vous pouvez analyser les communications pour les données importées dans des boîtes aux lettres de votre organisation Microsoft 365 à partir de sources tierces, telles que la dérogation [instantanée](archive-instant-bloomberg-data.md), la [marge](archive-slack-data.md), le [Zoom](archive-zoommeetings-data.md), le SMS et bien d’autres. Pour obtenir la liste complète des connecteurs pris en charge dans la conformité des communications, consultez la rubrique [archivage des données](archiving-third-party-data.md)tierces.
 
@@ -149,9 +149,9 @@ Vous avez la possibilité de sélectionner **tous les utilisateurs** ou de défi
 
 Par défaut, la **direction est** la condition est affichée et ne peut pas être supprimée. Les paramètres de direction de communication d’une stratégie sont choisis individuellement ou ensemble :
 
-- **Entrant** : vous pouvez choisir **entrant** pour examiner les communications envoyées **aux** personnes que vous avez choisies de superviser.
-- **Sortant** : vous pouvez choisir **sortant** si vous souhaitez consulter les communications envoyées **par** les personnes que vous avez choisies de superviser.
-- **Internal** : vous pouvez choisir **Internal** pour examiner les communications envoyées **entre** les personnes que vous avez identifiées dans la stratégie.
+- **Entrant**: vous pouvez choisir **entrant** pour examiner les communications envoyées **aux** personnes que vous avez choisies de superviser.
+- **Sortant**: vous pouvez choisir **sortant** si vous souhaitez consulter les communications envoyées **par** les personnes que vous avez choisies de superviser.
+- **Internal**: vous pouvez choisir **Internal** pour examiner les communications envoyées **entre** les personnes que vous avez identifiées dans la stratégie.
 
 ### <a name="sensitive-information-types"></a>Types d’informations sensibles
 
@@ -174,14 +174,14 @@ Les classifieurs intégrés et globaux analysent les messages envoyés ou reçus
 
 Conformité des communications les classifieurs intégrés et les classifieurs globaux analysent les communications pour les termes, les images et les sentiments pour les types de langue et de contenu suivants :
 
-- **Menace** : analyse les menaces pour valider la violence ou nuire physiquement à une personne ou à une propriété.
-- **Harcèlement ciblé** : analyse les comportements offensants ciblant les personnes en matière de race, de couleur, de religion et d’origine nationale.
-- **Blasphèmes** : analyse les expressions à inconvenances qui dépassent la plupart des gens.
-- **Images pour adultes** : recherche des images sexuellement explicites.
-- **Images Racy** : recherche des images sexuellement à l’esprit, mais qui contiennent moins de contenu explicite que les images considérées comme adultes.
-- **Images Gory** : recherche les images qui décrivent la violence et Gore.
+- **Menace**: analyse les menaces pour valider la violence ou nuire physiquement à une personne ou à une propriété.
+- **Harcèlement ciblé**: analyse les comportements offensants ciblant les personnes en matière de race, de couleur, de religion et d’origine nationale.
+- **Blasphèmes**: analyse les expressions à inconvenances qui dépassent la plupart des gens.
+- **Images pour adultes**: recherche des images sexuellement explicites.
+- **Images Racy**: recherche des images sexuellement à l’esprit, mais qui contiennent moins de contenu explicite que les images considérées comme adultes.
+- **Images Gory**: recherche les images qui décrivent la violence et Gore.
 
-Les classifieurs d’image *adulte* , *Racy* et *Gory* analysent les fichiers dans. JPEG,. PNG,. GIF et. Formats BMP. La taille des fichiers image doit être inférieure à 4 méga-octets (Mo) et les dimensions des images doivent être supérieures à 50x50 pixels et supérieures à 50 kilo-octets (Ko) pour que l’image soit considérée comme étant à évaluer. L’identification de l’image est prise en charge pour les messages électroniques Exchange Online, ainsi que pour les canaux et conversations Microsoft Teams.
+Les classifieurs d’image *adulte*, *Racy* et *Gory* analysent les fichiers dans. JPEG,. PNG,. GIF et. Formats BMP. La taille des fichiers image doit être inférieure à 4 méga-octets (Mo) et les dimensions des images doivent être supérieures à 50x50 pixels et supérieures à 50 kilo-octets (Ko) pour que l’image soit considérée comme étant à évaluer. L’identification de l’image est prise en charge pour les messages électroniques Exchange Online, ainsi que pour les canaux et conversations Microsoft Teams.
 
 Les classifieurs intégrés et globaux ne fournissent pas une liste exhaustive des termes ou des images de ces zones. De plus, les normes linguistiques et culturelles changent en permanence, et à la lumière de ces réalités, Microsoft se réserve le droit de mettre à jour les classifieurs à sa discrétion. Alors que les classifieurs peuvent aider votre organisation à surveiller ces domaines, les classifieurs ne sont pas destinés à fournir les moyens exclusifs de surveillance ou d’adressage de cette langue ou de cette image. Votre organisation, et non Microsoft, reste responsable de toutes les décisions relatives à la surveillance, à l’analyse et au blocage de la langue et des images dans ces domaines, notamment en matière de conformité à la confidentialité locale et aux autres lois applicables. Microsoft encourage le Conseil juridique avant de procéder au déploiement et à l’utilisation.
 
@@ -207,13 +207,13 @@ Le tableau suivant décrit plus en plus de chaque condition.
 | **Le message contient l’un de ces mots**  <br><br> **Le message ne contient aucun de ces mots** | Pour appliquer la stratégie lorsque certains mots ou expressions sont inclus ou exclus dans un message, entrez chaque mot séparé par une virgule. Pour les expressions de deux mots ou plus, utilisez des guillemets pour encadrer l’expression. Chaque mot ou phrase que vous entrez est appliqué séparément (un seul mot doit obligatoirement s’appliquer à la stratégie à appliquer au message). Pour plus d’informations sur la saisie des mots ou des expressions, voir la section suivante [Matching words and phrases to emails or attachments](communication-compliance-feature-reference.md#Matchwords).|
 | **La pièce jointe contient l’un de ces mots**  <br><br> **La pièce jointe ne contient aucun de ces mots** | Pour appliquer la stratégie lorsque certains mots ou expressions sont inclus ou exclus dans une pièce jointe (par exemple, un document Word), entrez chaque mot séparé par une virgule. Pour les expressions de deux mots ou plus, utilisez des guillemets pour encadrer l’expression. Chaque mot ou phrase que vous entrez est appliqué séparément (un seul mot doit obligatoirement s’appliquer à la stratégie à appliquer à la pièce jointe). Pour plus d’informations sur la saisie des mots ou des expressions, voir la section suivante [Matching words and phrases to emails or attachments](communication-compliance-feature-reference.md#Matchwords).|
 | **La pièce jointe est l’un de ces types de fichiers**  <br><br> **Aucune de ces types de fichiers n’est associée à la pièce jointe** | Pour superviser les communications qui incluent ou excluent des types spécifiques de pièces jointes, entrez les extensions de fichiers (par exemple,. exe ou. pdf). Si vous souhaitez inclure ou exclure plusieurs extensions de fichiers, entrez-les sur des lignes distinctes. Une seule extension de pièce jointe doit correspondre pour que la stratégie s’applique.|
-| **La taille du message est supérieure à**  <br><br> **La taille du message n’est pas supérieure à** | Pour examiner les messages en fonction d’une certaine taille, utilisez les conditions suivantes pour spécifier la taille maximale ou minimale qu’un message peut contenir avant d’être soumis à révision. Par exemple, si vous spécifiez une **taille de message supérieure à** \> **1,0 Mo** , tous les messages de 1,01 Mo et plus sont soumis à révision. Vous pouvez choisir des octets, kilo-octets, mégaoctets ou gigaoctets pour cette condition.|
-| **La taille de la pièce jointe est supérieure à**  <br><br> **La pièce jointe n’est pas supérieure à** | Pour examiner les messages en fonction de la taille de leurs pièces jointes, spécifiez la taille maximale ou minimale qu’une pièce jointe peut contenir avant que le message et ses pièces jointes soient soumis à révision. Par exemple, si vous spécifiez une **taille de pièce jointe supérieure** à \> **2,0 Mo** , tous les messages avec des pièces jointes 2,01 Mo et supérieures sont soumis à la révision. Vous pouvez choisir des octets, kilo-octets, mégaoctets ou gigaoctets pour cette condition.|
+| **La taille du message est supérieure à**  <br><br> **La taille du message n’est pas supérieure à** | Pour examiner les messages en fonction d’une certaine taille, utilisez les conditions suivantes pour spécifier la taille maximale ou minimale qu’un message peut contenir avant d’être soumis à révision. Par exemple, si vous spécifiez une **taille de message supérieure à** \> **1,0 Mo**, tous les messages de 1,01 Mo et plus sont soumis à révision. Vous pouvez choisir des octets, kilo-octets, mégaoctets ou gigaoctets pour cette condition.|
+| **La taille de la pièce jointe est supérieure à**  <br><br> **La pièce jointe n’est pas supérieure à** | Pour examiner les messages en fonction de la taille de leurs pièces jointes, spécifiez la taille maximale ou minimale qu’une pièce jointe peut contenir avant que le message et ses pièces jointes soient soumis à révision. Par exemple, si vous spécifiez une **taille de pièce jointe supérieure** à \> **2,0 Mo**, tous les messages avec des pièces jointes 2,01 Mo et supérieures sont soumis à la révision. Vous pouvez choisir des octets, kilo-octets, mégaoctets ou gigaoctets pour cette condition.|
    
 #### <a name="matching-words-and-phrases-to-emails-or-attachments"></a>Correspondance de mots et expressions avec des courriers électroniques ou des pièces jointes
 <a name="Matchwords"> </a>
 
-Chaque mot que vous entrez et séparé par une virgule est appliqué séparément (un seul mot doit obligatoirement s’appliquer à la condition de stratégie à appliquer à la messagerie ou à la pièce jointe). Par exemple, nous utilisons la condition, le **message contient l’un de ces mots** , avec les mots-clés « Banker », « Confidential » et « Insider Insider » séparé par une virgule (Banker, Confidential, « negociation d’initié »). La stratégie s’applique aux messages qui incluent le mot « Banker », « Confidential » ou l’expression « negociation Insiders ». Un seul de ces mots ou expression doit être présent pour que cette condition de stratégie s’applique. Les mots contenus dans le message ou dans la pièce jointe doivent correspondre exactement à ce que vous entrez.
+Chaque mot que vous entrez et séparé par une virgule est appliqué séparément (un seul mot doit obligatoirement s’appliquer à la condition de stratégie à appliquer à la messagerie ou à la pièce jointe). Par exemple, nous utilisons la condition, le **message contient l’un de ces mots**, avec les mots-clés « Banker », « Confidential » et « Insider Insider » séparé par une virgule (Banker, Confidential, « negociation d’initié »). La stratégie s’applique aux messages qui incluent le mot « Banker », « Confidential » ou l’expression « negociation Insiders ». Un seul de ces mots ou expression doit être présent pour que cette condition de stratégie s’applique. Les mots contenus dans le message ou dans la pièce jointe doivent correspondre exactement à ce que vous entrez.
 
 >[!IMPORTANT]
 >Lors de l’importation d’un fichier de dictionnaire personnel, chaque mot ou expression doit être séparé par un retour chariot et sur une ligne distincte. <br> Par exemple : <br><br>
@@ -221,15 +221,15 @@ Chaque mot que vous entrez et séparé par une virgule est appliqué séparémen
 >*Divulguer* <br>
 >*commerce d’initié*
 
-Pour analyser les messages électroniques et les pièces jointes des mêmes mots clés, créez une [stratégie de protection contre la perte de données](create-test-tune-dlp-policy.md) avec un dictionnaire de [Mots clés personnalisé](create-a-keyword-dictionary.md) pour les termes que vous souhaitez analyser dans les messages. Cette configuration de stratégie identifie les mots clés définis qui apparaissent dans le message électronique **ou** dans la pièce jointe du courrier électronique. L’utilisation des paramètres de stratégie conditionnelle standard (le *message contient l’un de ces mots* et la *pièce jointe contient l’un de ces mots* ) pour identifier les termes dans les messages et dans les pièces jointes exige que les termes soient **présents dans le** message et la pièce jointe.
+Pour analyser les messages électroniques et les pièces jointes des mêmes mots clés, créez une [stratégie de protection contre la perte de données](create-test-tune-dlp-policy.md) avec un dictionnaire de [Mots clés personnalisé](create-a-keyword-dictionary.md) pour les termes que vous souhaitez analyser dans les messages. Cette configuration de stratégie identifie les mots clés définis qui apparaissent dans le message électronique **ou** dans la pièce jointe du courrier électronique. L’utilisation des paramètres de stratégie conditionnelle standard (le *message contient l’un de ces mots* et la *pièce jointe contient l’un de ces mots*) pour identifier les termes dans les messages et dans les pièces jointes exige que les termes soient **présents dans le** message et la pièce jointe.
   
 #### <a name="enter-multiple-conditions"></a>Entrer plusieurs conditions
 
 Si vous entrez plusieurs conditions, Microsoft 365 utilise toutes les conditions ensemble pour déterminer le moment auquel la stratégie de conformité des communications doit être appliquée aux éléments de communication. Lorsque vous configurez plusieurs conditions, toutes les conditions doivent être remplies pour que la stratégie s’applique, sauf si vous entrez une exception. Par exemple, vous avez besoin d’une stratégie qui s’applique si un message contient le mot « commercial » et qu’il est supérieur à 2 Mo. Toutefois, si le message contient également les mots « approuvé par Contoso Financial », la stratégie ne doit pas s’appliquer. Dans cet exemple, les trois conditions suivantes sont définies comme suit :
   
-- Le **message contient l’un de ces mots** , avec le mot clé « Trade »
-- La **taille du message est supérieure à** , avec la valeur 2 Mo
-- Le **message ne contient aucun de ces mots** , avec les mots-clés « approuvé par l’équipe financière de contoso »
+- Le **message contient l’un de ces mots**, avec le mot clé « Trade »
+- La **taille du message est supérieure à**, avec la valeur 2 Mo
+- Le **message ne contient aucun de ces mots**, avec les mots-clés « approuvé par l’équipe financière de contoso »
 
 ### <a name="review-percentage"></a>Vérifier le pourcentage
 
@@ -239,7 +239,7 @@ Si vous souhaitez réduire la quantité de contenu à réviser, vous pouvez spé
 
 La protection de la confidentialité des utilisateurs qui ont des correspondances de stratégie est importante et peut contribuer à promouvoir l’objection en matière d’analyse des données et de révision des alertes de conformité des communications. Ce paramètre s’applique uniquement aux noms d’utilisateurs qui affichent la solution de conformité de communication. Elle n’affecte pas le mode d’affichage des noms dans les autres solutions de conformité ou le centre d’administration.
 
-Pour les utilisateurs disposant d’une correspondance de conformité de communication, vous pouvez choisir l’un des paramètres suivants dans les **paramètres de conformité de communication** :
+Pour les utilisateurs disposant d’une correspondance de conformité de communication, vous pouvez choisir l’un des paramètres suivants dans les **paramètres de conformité de communication**:
 
 - **Afficher les versions anonymes des** noms d’utilisateur : les noms d’utilisateur sont rendus anonymes pour empêcher les utilisateurs du groupe de rôles *analyste de conformité de communication* de voir qui est associé à des alertes de stratégie. Les utilisateurs du groupe de rôles contrôle de *conformité des communications* verront toujours les noms d’utilisateur, pas les versions anonymes. Par exemple, un utilisateur « gracieuses Taylor » apparaît avec un pseudonyme aléatoire tel que « AnonIS8-988 » dans tous les domaines de l’expérience de conformité des communications. Le choix de ce paramètre permet d'anonymiser tous les utilisateurs ayant des correspondances de stratégie actuelle et passée et s’applique à toutes les stratégies. Les informations de profil utilisateur dans les détails de l’alerte de conformité des communications ne seront pas disponibles lorsque cette option est sélectionnée. Toutefois, les noms d’utilisateur sont affichés lors de l’ajout de nouveaux utilisateurs à des stratégies existantes ou lors de l’affectation d’utilisateurs à de nouvelles stratégies. Si vous choisissez de désactiver ce paramètre, les noms d’utilisateur sont affichés pour tous les utilisateurs qui ont des correspondances de stratégie actuelle ou passée.
 - **Ne pas afficher les versions anonymes des** noms d’utilisateur : les noms d’utilisateur sont affichés pour toutes les correspondances de stratégie actuelle et passée pour les alertes de conformité de communication. Les informations de profil utilisateur (nom, titre, alias, organisation ou service) sont affichées pour l’utilisateur pour toutes les alertes de conformité de communication.
@@ -282,7 +282,7 @@ Si vous souhaitez créer un message électronique en texte simple pour les notif
 
 Les filtres de conformité de la communication vous permettent de filtrer et de trier les messages d’alerte pour des actions plus rapides d’enquête et de correction. Le filtrage est disponible sur les onglets **en attente** et **résolus** pour chaque stratégie. Pour enregistrer un filtre ou un jeu de filtres en tant que requête de filtre enregistrée, une ou plusieurs valeurs doivent être configurées en tant que sélections de filtre. Le tableau suivant présente les détails des filtres :
 
-|**Filter**|**Details**|
+|**Filtre**|**Details**|
 |:-----|:-----|
 | **Date** | Date à laquelle le message a été envoyé ou reçu par un utilisateur au sein de votre organisation. Pour filtrer un seul jour, sélectionnez une plage de dates qui commence le jour pour lequel vous souhaitez obtenir des résultats et se terminer par le jour suivant. Par exemple, si vous souhaitez filtrer les résultats pour 9/20/2020, choisissez une plage de dates de filtre de 9/20/2020-9/21/2020.|
 | **Classe file** | Classe du message en fonction du type de message, qu’il *s’agisse d’un message ou* d’une *pièce jointe*. |
@@ -292,11 +292,11 @@ Les filtres de conformité de la communication vous permettent de filtrer et de 
 | **Destinataire** | Utilisateur auquel le message a été envoyé. |
 | **Sender** | La personne qui a envoyé le message. |
 | **Domaine de l’expéditeur** | Le domaine qui a envoyé le message. |
-| **Taille** | Taille du message en Ko. |
+| **Size** | Taille du message en Ko. |
 | **Subject/title** | Objet du message ou titre de conversation. |
-| **Tags** | Les balises affectées à un message, qu’elles soient *douteuses* , *conformes* ou *non conformes*. |
+| **Tags** | Les balises affectées à un message, qu’elles soient *douteuses*, *conformes* ou *non conformes*. |
 | **Transmis à** | Nom d’utilisateur de la personne incluse dans le cadre d’une action de réaffectation de message. |
-| **Classifieurs requêtes** | Nom des classifieurs intégrés et personnalisés qui s’appliquent au message. Certains exemples incluent un *langage offensant* , un *harcèlement ciblé* , un *blasphème* , une *menace* , etc.
+| **Classifieurs requêtes** | Nom des classifieurs intégrés et personnalisés qui s’appliquent au message. Certains exemples incluent un *langage offensant*, un *harcèlement ciblé*, un *blasphème*, une *menace*, etc.
 
 ## <a name="alert-policies"></a>Stratégies d’alerte
 
@@ -346,7 +346,7 @@ Les clients disposant d’abonnements Microsoft 365 qui incluent la conformité 
 
 Le modèle automate d’alimentation suivant est fourni aux clients pour prendre en charge l’automatisation des processus pour les alertes de conformité de communication :
 
-- **Avertir le gestionnaire lorsqu’un utilisateur a une alerte de conformité de communication** : il se peut que certaines organisations doivent avoir une notification de gestion immédiate lorsqu’un utilisateur a une alerte de conformité de communication. Lorsque ce flux est configuré et sélectionné, le responsable de l’utilisateur du cas reçoit un message électronique contenant les informations suivantes sur toutes les alertes :
+- **Avertir le gestionnaire lorsqu’un utilisateur a une alerte de conformité de communication**: il se peut que certaines organisations doivent avoir une notification de gestion immédiate lorsqu’un utilisateur a une alerte de conformité de communication. Lorsque ce flux est configuré et sélectionné, le responsable de l’utilisateur du cas reçoit un message électronique contenant les informations suivantes sur toutes les alertes :
     - Stratégie applicable pour l’alerte
     - Date/heure de l’alerte
     - Niveau de gravité de l’alerte

@@ -1,5 +1,5 @@
 ---
-title: Utiliser un script pour ajouter des utilisateurs à une conservation dans un cas de découverte électronique de base dans le centre de sécurité & conformité
+title: Utiliser un script pour ajouter des utilisateurs à une conservation dans un cas de découverte électronique principale
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -19,19 +19,19 @@ search.appverid:
 - MET150
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 ms.custom: seo-marvel-apr2020
-description: Découvrez comment exécuter un script pour ajouter des boîtes aux lettres & des sites OneDrive entreprise à une nouvelle conservation associée à un cas eDiscovery dans le centre de sécurité & Compliance Center.
-ms.openlocfilehash: 454fd4ea4517a46410c9d0922cc83b141fdbd893
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+description: Découvrez comment exécuter un script pour ajouter des boîtes aux lettres & sites OneDrive entreprise à une nouvelle conservation associée à un cas eDiscovery dans le centre de conformité Microsoft 365.
+ms.openlocfilehash: 31c3bfef4eda4802618020f607bc7706780f3629
+ms.sourcegitcommit: 4a9e1b6851b988bcd31e87b184fc185be949840d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357674"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49525613"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-a-core-ediscovery-case"></a>Utiliser un script pour ajouter des utilisateurs à une conservation dans un cas de découverte électronique principale
 
-Le centre de sécurité & conformité fournit des applets de commande Windows PowerShell qui vous permettent d’automatiser les tâches fastidieuses liées à la création et à la gestion des cas eDiscovery. À l’heure actuelle, l’utilisation de l’outil de cas eDiscovery dans le centre de conformité & Compliance pour mettre en attente un grand nombre d’emplacements de contenu de dépositaire prend du temps et une préparation. Par exemple, avant de créer une conservation, vous devez collecter l’URL de chaque site OneDrive entreprise que vous souhaitez mettre en attente. Ensuite, pour chaque utilisateur que vous souhaitez mettre en attente, vous devez ajouter sa boîte aux lettres et son site OneDrive entreprise à la suspension. Dans les prochaines versions du centre de sécurité & conformité, cela sera plus facile à réaliser. En attendant, vous pouvez utiliser le script de cet article pour automatiser ce processus.
+Centre de sécurité & conformité PowerShell fournit des cmdlets qui vous permettent d’automatiser les tâches qui prennent du temps liées à la création et à la gestion des cas eDiscovery. Actuellement, le cas de découverte électronique de base dans le centre de conformité & Security Center pour mettre en attente un grand nombre d’emplacements de contenu de dépositaire prend du temps et une préparation. Par exemple, avant de créer une conservation, vous devez collecter l’URL de chaque site OneDrive entreprise que vous souhaitez mettre en attente. Ensuite, pour chaque utilisateur que vous souhaitez mettre en attente, vous devez ajouter sa boîte aux lettres et son site OneDrive entreprise à la suspension. Vous pouvez utiliser le script de cet article pour automatiser ce processus.
   
-Le script vous invite à indiquer le nom du domaine de mon site de votre organisation (par exemple, **contoso** dans l’URL https://contoso-my.sharepoint.com) , le nom d’un cas de découverte électronique existant, le nom du nouveau blocage associé au cas, la liste des adresses de messagerie des utilisateurs que vous souhaitez mettre en attente et une requête de recherche à utiliser si vous souhaitez créer une conservation basée sur une requête. Le script obtient ensuite l’URL du site OneDrive entreprise pour chaque utilisateur de la liste, crée la nouvelle conservation, puis ajoute la boîte aux lettres et le site OneDrive entreprise pour chaque utilisateur de la liste à la suspension. Le script génère également des fichiers journaux qui contiennent des informations sur la nouvelle conservation.
+Le script vous invite à indiquer le nom du domaine de mon site de votre organisation (par exemple, `contoso` dans l’URL https://contoso-my.sharepoint.com) , le nom d’un cas de découverte électronique existant, le nom du nouveau blocage associé au cas, la liste des adresses de messagerie des utilisateurs que vous souhaitez mettre en attente et une requête de recherche à utiliser si vous souhaitez créer une conservation basée sur une requête. Le script obtient ensuite l’URL du site OneDrive entreprise pour chaque utilisateur de la liste, crée la nouvelle conservation, puis ajoute la boîte aux lettres et le site OneDrive entreprise pour chaque utilisateur de la liste à la suspension. Le script génère également des fichiers journaux qui contiennent des informations sur la nouvelle conservation.
   
 Voici la procédure à suivre :
   
@@ -51,7 +51,9 @@ Voici la procédure à suivre :
 
 - Le script ajoute la liste des utilisateurs à une nouvelle conservation associée à un cas existant. Assurez-vous que le cas où vous souhaitez associer le blocage est créé avant d’exécuter le script.
 
-- Chaque fois que vous exécutez le script, de nouvelles sessions PowerShell de sécurité & de conformité et des sessions PowerShell SharePoint Online sont créées. Vous pouvez donc utiliser toutes les sessions PowerShell disponibles. Pour éviter ce problème, vous pouvez exécuter les commandes suivantes pour déconnecter vos sessions PowerShell actives.
+- Le script de cet article prend en charge l’authentification moderne lors de la connexion à la sécurité & Centre de conformité PowerShell. Vous pouvez utiliser le script as-is si vous êtes une organisation Microsoft 365 ou Microsoft 365 GCC. Si vous êtes une organisation Office 365 Germany, une organisation Microsoft 365 GCC High ou une organisation DoD Microsoft 365, vous devrez modifier le script pour pouvoir l’exécuter. Plus précisément, vous devez modifier la ligne `Connect-IPPSSession` et utiliser les paramètres *ConnectionUri* et *AzureADAuthorizationEndpointUri* (et les valeurs appropriées pour votre type d’organisation) pour vous connecter au centre de sécurité & de centre de conformité PowerShell. Pour plus d’informations, reportez-vous aux exemples de la rubrique [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa).
+
+- Chaque fois que vous exécutez le script, de nouvelles sessions de sécurité & de conformité PowerShell et SharePoint Online Management Shell sont créées. Vous pouvez donc utiliser toutes les sessions PowerShell disponibles. Pour éviter ce problème, vous pouvez exécuter les commandes suivantes pour déconnecter vos sessions PowerShell actives.
 
   ```powershell
   Get-PSSession | Remove-PSSession
@@ -115,21 +117,20 @@ Une fois que vous avez collecté les informations que le script vous demande, la
 
    ```powershell
    #script begin
-   " " 
+   " "
    write-host "***********************************************"
    write-host "   Security & Compliance Center   " -foregroundColor yellow -backgroundcolor darkgreen
    write-host "   eDiscovery cases - Add users to a hold   " -foregroundColor yellow -backgroundcolor darkgreen 
    write-host "***********************************************"
-   " " 
-   # Get user credentials &amp; Connect to Office 365 SCC, SPO
-   $credentials = Get-Credential -Message "Specify your credentials to connect to the Security & Compliance Center and SharePoint Online"
-   $s = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri "https://ps.compliance.protection.outlook.com/powershell-liveid" -Credential $credentials -Authentication Basic -AllowRedirection -SessionOption (New-PSSessionOption -SkipCACheck -SkipCNCheck -SkipRevocationCheck)
-   $a = Import-PSSession $s -AllowClobber
-       if (!$s)
-       {
-           Write-Error "Couldn't create PowerShell session."
-           return;
-       }
+   " "
+   # Connect to SCC PowerShell using modern authentication
+   if (!$SccSession)
+   {
+     Import-Module ExchangeOnlineManagement
+     Connect-IPPSSession
+   }
+   # Get user credentials to connect to SPO Management Shell
+   $credentials = Get-Credential -Message "Type your credentials again to connect to SharePoint Online Management Shell"
    # Load the SharePoint assemblies from the SharePoint Online Management Shell
    # To install, go to https://go.microsoft.com/fwlink/p/?LinkId=255251
    if (!$SharePointClient -or !$SPRuntime -or !$SPUserProfile)
@@ -296,7 +297,7 @@ Une fois que vous avez collecté les informations que le script vous demande, la
 
 4. Entrez les informations que le script vous demande.
 
-   Le script se connecte à la sécurité & Centre de conformité PowerShell, puis crée la nouvelle conservation dans le cas de découverte électronique et ajoute les boîtes aux lettres et OneDrive entreprise pour les utilisateurs de la liste. Vous pouvez accéder à la page de **découverte électronique** dans le centre de sécurité & Compliance Center pour afficher le nouveau blocage. 
+   Le script se connecte à la sécurité & Centre de conformité PowerShell, puis crée la nouvelle conservation dans le cas de découverte électronique et ajoute les boîtes aux lettres et OneDrive entreprise pour les utilisateurs de la liste. Vous pouvez accéder à la page de **découverte électronique** dans le centre de sécurité & Compliance Center pour afficher le nouveau blocage.
 
 Une fois l’exécution du script terminée, les fichiers journaux suivants sont créés et enregistrés dans le dossier où se trouve le script.
   

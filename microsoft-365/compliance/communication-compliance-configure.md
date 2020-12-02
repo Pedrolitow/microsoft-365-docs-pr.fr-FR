@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: d41965741bc02876cde7e99904194c9f5787202a
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: a3c9aabd370117c085574144ff9450e74ae277c7
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357189"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527523"
 ---
 # <a name="get-started-with-communication-compliance"></a>Prise en main de la conformité des communications
 
@@ -45,6 +45,7 @@ Avant de commencer la mise en route de la conformité de la communication, vous 
 - Abonnement Microsoft 365 G5 + le complément de conformité Microsoft 365 G5
 - Abonnement Microsoft 365 G5 + le complément de gestion des risques Microsoft 365 G5 Insider
 - Office 365 entreprise E5 abonnement (payant ou version d’évaluation)
+- Abonnement Office 365 a5 (payant ou version d’évaluation)
 - Office 365 entreprise E3 abonnement + le complément Office 365 Advanced Compliance (qui n’est plus disponible pour les nouveaux abonnements, reportez-vous à la rubrique note)
 
 Les utilisateurs inclus dans les stratégies de conformité des communications doivent disposer de l’une des licences ci-dessus.
@@ -52,7 +53,7 @@ Les utilisateurs inclus dans les stratégies de conformité des communications d
 >[!IMPORTANT]
 >Office 365 Advanced Compliance n’est plus vendu en tant qu’abonnement autonome. Lorsque les abonnements actuels arrivent à expiration, les clients doivent effectuer une transition vers l’un des abonnements ci-dessus, qui contiennent les mêmes fonctionnalités de conformité ou des fonctionnalités de conformité supplémentaires.
 
-Si vous ne disposez pas d’un plan Office 365 entreprise E5 existant et que vous souhaitez essayer de gérer les risques internes, vous pouvez [ajouter Microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) à votre abonnement existant ou [vous inscrire pour obtenir une version d’évaluation](https://www.microsoft.com/microsoft-365/enterprise) d’Office 365 entreprise E5.
+Si vous ne disposez pas d’une offre Office 365 entreprise E5 existante et que vous souhaitez essayer la conformité de la communication, vous pouvez [ajouter Microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) à votre abonnement existant ou [vous inscrire pour obtenir une version d’évaluation](https://www.microsoft.com/microsoft-365/enterprise) d’Office 365 entreprise E5.
 
 ## <a name="step-1-required-enable-permissions-for-communication-compliance"></a>Étape 1 (obligatoire) : activer les autorisations pour la conformité de la communication
 
@@ -125,10 +126,10 @@ Pour obtenir des instructions détaillées sur l’activation de l’audit, cons
 
 Utilisez le tableau suivant pour vous aider à configurer les groupes au sein de votre organisation pour les stratégies de conformité de communication :
 
-| Membre de la stratégie | Groupes pris en charge | Groupes non pris en charge |
+| **Membre de la stratégie** | **Groupes pris en charge** | **Groupes non pris en charge** |
 |:-----|:-----|:-----|
-|Utilisateurs supervisés <br> Utilisateurs non supervisés | Groupes de distribution <br> Groupes Microsoft 365 | groupes de distribution dynamiques <br> Groupes de sécurité à extension messagerie |
-| Relecteurs | Néant | Groupes de distribution <br> groupes de distribution dynamiques <br> Groupes de sécurité à extension messagerie |
+|Utilisateurs supervisés <br> Utilisateurs non supervisés | Groupes de distribution <br> Groupes Microsoft 365 | Groupes de distribution dynamique <br> Groupes de distribution imbriqués <br> Groupes de sécurité à extension messagerie |
+| Relecteurs | Aucune | Groupes de distribution <br> groupes de distribution dynamiques <br> Groupes de distribution imbriqués <br> Groupes de sécurité à extension messagerie |
   
 Lorsque vous affectez un groupe de distribution dans la stratégie, la stratégie surveille toutes les conversations par courrier électronique et teams à partir de chaque utilisateur dans le groupe de distribution. Lorsque vous affectez un groupe Microsoft 365 dans la stratégie, la stratégie analyse tous les messages électroniques et les conversations de teams envoyés à ce groupe, et non les messages électroniques et les conversations reçus par chaque membre du groupe.
 

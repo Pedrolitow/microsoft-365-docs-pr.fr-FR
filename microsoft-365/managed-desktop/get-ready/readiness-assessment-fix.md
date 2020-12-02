@@ -1,5 +1,5 @@
 ---
-title: Résoudre les problèmes détectés par l’outil de préparation et d’évaluation
+title: Corriger les problèmes détectés par l’outil d’évaluation de la disponibilité
 description: Actions détaillées à effectuer pour chaque problème rencontré par l’outil
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
@@ -9,14 +9,14 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 0459de8974fe6bae98e6984fd7dc65afeb04b4e7
-ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
+ms.openlocfilehash: f23209568fcfc2db4a22dbb034890c5a25e21bf7
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49021084"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527732"
 ---
-# <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Résoudre les problèmes détectés par l’outil de préparation et d’évaluation
+# <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Corriger les problèmes détectés par l’outil d’évaluation de la disponibilité
 
 Pour chaque vérification, l’outil signale l’un des quatre résultats possibles :
 
@@ -141,7 +141,7 @@ Les appareils Windows 10 dans votre organisation Azure AD doivent être automati
 
 **OpenSSL**
 
-Assurez-vous que l’étendue utilisateur MDM est définie sur **some** ou **All** , et non sur **aucun**. Si vous choisissez **certaines** , revenez après l’enregistrement et sélectionnez le groupe **moderne espace de travail-tout** Azure AD pour les **groupes**.
+Assurez-vous que l’étendue utilisateur MDM est définie sur **some** ou **All**, et non sur **aucun**. Si vous choisissez **certaines**, revenez après l’enregistrement et sélectionnez le groupe **moderne espace de travail-tout** Azure AD pour les **groupes**.
 
 
 ### <a name="microsoft-store-for-business"></a>Microsoft Store pour Entreprises
@@ -152,7 +152,7 @@ Nous utilisons Microsoft Store pour les entreprises afin que vous puissiez tél�
 
 Microsoft Store pour les entreprises n’est pas activé ou n’est pas synchronisé avec Intune. Pour plus d’informations, consultez la rubrique [How to Manage volume purchased Apps from the Microsoft Store for Business with Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/windows-store-for-business) and [install Intune Company Portal on on Devices](../get-started/company-portal.md).
 
-### <a name="multi-factor-authentication"></a>Authentification multifacteur
+### <a name="multifactor-authentication"></a>Authentification multifacteur
 
 L’authentification multifacteur ne doit pas être appliquée accidentellement aux comptes de service de bureau géré Microsoft.
 

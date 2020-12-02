@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: 'Les administrateurs Exchange Online gèrent les courriers électroniques et les boîtes aux lettres de votre organisation. Par exemple, ils récupèrent les éléments supprimés dans la boîte aux lettres d’un utilisateur. '
-ms.openlocfilehash: cd2c4c10554cbaf425fa6ae9156a8ceeb1a21503
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 8e332e886ca25221fefbbc5d1bb790bd4f513f00
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646702"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527512"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>À propos du rôle d’administrateur Exchange Online
 
@@ -44,7 +44,7 @@ Voici quelques-unes des tâches clés que les utilisateurs peuvent effectuer lor
 
 - Configurez des fonctionnalités de boîte aux lettres, telles que la stratégie de partage de boîtes aux lettres : comment les utilisateurs peuvent partager des informations de calendrier et de contacts avec d’autres personnes en dehors de votre organisation.
 
-- Configurer les délégués «[Envoyer en tant que](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)» et «[Envoyer sur abehalf](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)» pour la boîte aux lettres d’un utilisateur. Par exemple, un dirigeant souhaitera que son assistant(e) ait la possibilité d’envoyer des messages en son nom.
+- Configurer les délégués «[Envoyer en tant que](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)» et «[Envoyer de la part de](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)» pour la boîte aux lettres d’un utilisateur. Par exemple, un dirigeant souhaitera que son assistant(e) ait la possibilité d’envoyer des messages en son nom.
 
 - [Créez une boîte aux lettres partagée](../email/create-a-shared-mailbox.md) pour permettre à un groupe de personnes de surveiller et d’envoyer des courriers électroniques à partir d’une adresse de messagerie commune.
 
@@ -58,7 +58,7 @@ Si vous avez une organisation de grande taille, l’administrateur Exchange peut
   
  Par exemple, l’administrateur Exchange peut affecter quelqu’un au groupe de rôles gestion de la découverte afin qu’il puisse effectuer des recherches de boîtes aux lettres pour des données répondant à certains critères. Pour plus d’informations, consultez la rubrique [autorisations dans Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) et [gérer les groupes de rôles](https://docs.microsoft.com/exchange/manage-role-groups-exchange-2013-help).
   
-## <a name="learn-about-other-admin-role"></a>En savoir plus sur les autres rôles d’administrateur
+## <a name="learn-about-other-admin-roles"></a>En savoir plus sur les autres rôles d’administrateur
 
 - [À propos des rôles d’administrateur Microsoft 365](about-admin-roles.md)
 

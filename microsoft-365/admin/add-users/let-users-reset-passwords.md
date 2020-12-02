@@ -2,8 +2,8 @@
 title: Autoriser les utilisateurs à réinitialiser leurs mots de passe
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Découvrez comment réinitialiser vos mots de passe à l’aide de l’outil de réinitialisation du mot de passe libre-service.
-ms.openlocfilehash: 7ecadaa42610e0b77dc1727c11140080bd7b1779
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: bbde517858186d844412aca21f231620ed76496a
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646678"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49551919"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Autoriser les utilisateurs à réinitialiser leurs mots de passe
 
@@ -65,13 +65,13 @@ Ces étapes activent la réinitialisation du mot de passe libre-service pour tou
 
 ::: moniker range="o365-germany"
 
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centre d’administration</a>, accédez à la page **paramètres** de \> ** &amp; confidentialité** de la sécurité.
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centre d’administration</a>, accédez à la page **paramètres** de \> **&amp; confidentialité** de la sécurité.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centre d’administration</a>, accédez à la **Settings** \> **Settings** \> page ** &amp; confidentialité** de la sécurité des paramètres de paramètres.
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centre d’administration</a>, accédez à la **Settings** \> **Settings** \> page **&amp; confidentialité** de la sécurité des paramètres de paramètres.
 
 ::: moniker-end
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de confidentialité pour protéger le contenu des sites SharePoint et Microsoft Teams, ainsi que des Groupes Microsoft 365.
-ms.openlocfilehash: 7f8337d368c5c9de7cf1d9ff90831777c0811b87
-ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
+ms.openlocfilehash: 927b85a5c2ef14313acd5c1637f561342d71ccc0
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48600469"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527569"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint
 
@@ -32,6 +32,7 @@ Outre l’utilisation d' [étiquettes de confidentialité](sensitivity-labels.md
 
 - Confidentialité (privée ou publique) de sites Teams et groupes Microsoft 365
 - Accès des utilisateurs externes
+- Partage externe à partir des sites SharePoint (en préversion)
 - Accès à partir d’appareils enregistrés
 
 > [!IMPORTANT]
@@ -83,7 +84,7 @@ En activant les étiquettes de confidentialité pour les conteneurs, vous pouvez
 2. Ensuite, sur la page **Définir les paramètres de protection pour les groupes et sites**, sélectionnez l’une des options suivantes ou les deux :
     
     - **Paramètres de confidentialité et d’accès des utilisateurs externes** pour configurer les paramètres **Confidentialité** et **Accès des utilisateurs externes**. 
-    - **Paramètres d’accès aux appareils et de partage externe** pour configurer le paramètre **Accès à partir d’appareils non gérés**.
+    - **Paramètres d’accès aux appareils et de partage externe** pour configurer le paramètre **Contrôler le partage externe à partir de sites SharePoint étiquetés** et **Accès à partir d’appareils non gérés**.
 
 3. Si vous avez sélectionné **Paramètres de confidentialité et d’accès des utilisateurs externes**, configurez désormais les paramètres suivants :
     
@@ -97,7 +98,9 @@ En activant les étiquettes de confidentialité pour les conteneurs, vous pouvez
     
     - **Accès des utilisateurs externes** : déterminez si le propriétaire du groupe peut [ajouter des invités au groupe](/office365/admin/create-groups/manage-guest-access-in-groups).
 
-4. Si vous avez sélectionné **Paramètre d’accès aux appareils et de partage externe**, configurez à présent le paramètre suivant :
+4. Si vous avez sélectionné **Paramètre d’accès aux appareils et de partage externe**, configurez à présent les paramètres suivants :
+    
+    - **Contrôler le partage externe à partir de sites SharePoint étiquetés** : actuellement en préversion, sélectionnez cette option pour ensuite sélectionner soit partage externe pour tout le monde, pour des invités nouveaux et existants, pour des invités existants ou pour les personnes de votre organisation uniquement. Pour plus d’informations sur cette configuration et sur les paramètres, consultez la documentation SharePoint [Activer ou désactiver le partage externe pour un site](https://docs.microsoft.com/sharepoint/change-external-sharing-site).
     
     - **Accès à partir d’appareils non gérés** : cette option utilise la fonctionnalité SharePoint qui utilise l’accès conditionnel Azure AD pour bloquer ou limiter l’accès aux contenus SharePoint et OneDrive provenant d’appareils non gérés. Pour plus d’informations, voir [Contrôler l’accès à partir des appareils non gérés](/sharepoint/control-access-from-unmanaged-devices) dans la documentation SharePoint. L’option spécifiée pour ce paramètre d’étiquette correspond à l’exécution d’une commande PowerShell pour un site, comme décrit dans les étapes 3 à 5 de la section [Bloquer ou limiter l’accès à un site SharePoint ou OneDrive spécifique](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive) des instructions de SharePoint.
         

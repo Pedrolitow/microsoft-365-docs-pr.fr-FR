@@ -2,8 +2,8 @@
 title: Personnaliser un site d’équipe SharePoint pour le stockage et le partage de fichiers
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
+ms.author: sharik
+author: SKjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
 description: Découvrez comment personnaliser, organiser et gérer votre site d’équipe SharePoint avec des bibliothèques de documents, des listes et des concentrateurs.
-ms.openlocfilehash: 3eb09f0b0160333e3b17ebc5f02424ba3d24a13c
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 3ef82cecf22226380fbb18492a7630aa023b4036
+ms.sourcegitcommit: 4a9e1b6851b988bcd31e87b184fc185be949840d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906488"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49525532"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>Personnaliser votre site d’équipe pour le stockage et le partage de fichiers
 
@@ -85,7 +85,7 @@ Visionnez une vidéo sur l’ajout de calendriers à votre site, voir [Create a 
 
 Votre site d’équipe partage presque tous les membres du groupe associé au site. Si vous souhaitez disposer d’un site distinct pour des clients spécifiques, vous pouvez créer des sites d’équipe supplémentaires et les gérer à l’aide de sites hub SharePoint. Voici plus d’informations.
   
-Les sites hub vous permettent d’ajouter et d’associer des sites. Pour plus d’informations, voir [qu’est-ce qu’un site hub SharePoint ?](https://support.microsoft.com/office/fe26ae84-14b7-45b6-a6d1-948b3966427f).
+Les sites hub vous permettent d’ajouter et d’associer des sites. Pour plus d’informations, consultez [la rubrique qu’est-ce qu’un site hub SharePoint ?](https://support.microsoft.com/office/fe26ae84-14b7-45b6-a6d1-948b3966427f).
   
 Prêt à créer un site Hub, reportez-vous à la rubrique [créer un site hub dans SharePoint Online](/sharepoint/create-hub-site).
   
@@ -93,11 +93,11 @@ Pour savoir comment ajouter des sites à un site Hub, consultez la rubrique [ass
   
 ## <a name="sharing-files-with-the-team"></a>Partage de fichiers avec l’équipe
 
-Bien que le stockage de fichiers et la gestion des documents soient un début, le partage avec votre équipe et les clients externes est également important. Voici quelques liens vers des rubriques qui vous aideront à gérer les utilisateurs et à partager vos données.
+Bien que le stockage de fichiers et la gestion des documents soient un début, le partage avec votre équipe et les clients externes est également important. Les articles suivants vous aideront à gérer les utilisateurs et à partager vos données :
   
-Pour le partage de fichiers avec votre équipe, voir [partager des fichiers ou des dossiers SharePoint dans Microsoft 365](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c).
+- Pour le partage de fichiers avec votre équipe, voir [partager des fichiers ou des dossiers SharePoint dans Microsoft 365](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c).
   
-Pour comprendre le partage en dehors de votre équipe, consultez la rubrique [vue d’ensemble du partage externe](/sharepoint/external-sharing-overview).
+- Pour comprendre le partage en dehors de votre équipe, consultez la rubrique [vue d’ensemble du partage externe](/sharepoint/external-sharing-overview).
   
 ## <a name="managing-users-and-groups"></a>Gestion des utilisateurs et des groupes
 
@@ -109,9 +109,9 @@ Pour ajouter des utilisateurs à un groupe Microsoft 365, reportez-vous à [la r
   
 Découvrez comment gérer les demandes d’accès à l’aide de la [configuration et](https://support.microsoft.com/office/94B26E0B-2822-49D4-929A-8455698654B3)de la gestion des demandes d’accès.
   
-## <a name="here-are-more-topics-you-might-be-interested-in"></a>Autres rubriques susceptibles de vous intéresser
+## <a name="here-are-more-articles-you-might-be-interested-in"></a>Voici d’autres articles susceptibles de vous intéresser.
 
-- **Configurer les applications Office sur vos tablettes et téléphones**. Vous devez procéder à cette configuration pour pouvoir modifier les fichiers stockés sur votre site d'équipe à partir de votre tablette ou téléphone. Si vous n'installez pas les applications Office sur votre tablette ou téléphone, vous pouvez consulter les fichiers de votre site d'équipe, mais pas les modifier. 
+- **Configurer les applications Office sur vos tablettes et téléphones**. Vous devez effectuer cette opération pour pouvoir modifier les fichiers stockés sur votre site d’équipe à partir de votre tablette ou téléphone. Si vous n'installez pas les applications Office sur votre tablette ou téléphone, vous pouvez consulter les fichiers de votre site d'équipe, mais pas les modifier. 
     
   - [Installer et configurer Office sur un Android avec Microsoft 365](https://support.microsoft.com/office/cafe9d6f-8b0c-4b03-b20a-12438a82a22d)
     

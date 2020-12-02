@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Détails du score de productivité de l’expérience de communication.
-ms.openlocfilehash: ba2e69659f49c90d3b65e56e54b3026c7c9ff36a
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: a6fccdcc7f6440195bb83949ee294bbb4fe5ce7f
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123444"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527500"
 ---
 # <a name="communication--people-experiences"></a>Communication – expériences de personnes
 
@@ -119,9 +119,9 @@ Nous vous proposons également des informations qui vous aideront à mieux compr
 2. **Body :** Fournit des informations sur la valeur de l’utilisation des messages de canal au sein de Microsoft teams
 3. **Visualisation :** Décompose l’utilisation des messages de conversation et de canal :
       - **Personnes envoyant des messages de conversation :** La partie colorée et la fraction représentent l’utilisation de messages de conversation dans les personnes qui ont envoyé des messages sur Microsoft Teams. La fraction est construite de la façon suivante :
-        - **Numérateur :** Personnes qui envoient des messages de conversation sur Microsoft teams au cours des 28 derniers jours
-        - **Dénominateur :** Des personnes ont envoyé des messages sur Microsoft teams au cours des 28 derniers jours
-      - **Personnes envoyant des messages de conversation :** La partie colorée et la fraction représentent l’utilisation de messages de canal au sein des personnes qui envoient des messages sur Microsoft Teams. La fraction est construite de la façon suivante :
+        - **Numérateur :** Les personnes qui envoient des messages de conversation sur Microsoft teams au cours des 28 derniers jours.
+        - **Dénominateur :** Personnes qui ont envoyé des messages sur Microsoft teams au cours des 28 derniers jours.
+      - **Personnes envoyant des messages de canal :** La partie colorée et la fraction représentent l’utilisation de messages de canal au sein des personnes qui envoient des messages sur Microsoft Teams. La fraction est construite de la façon suivante :
         - **Numérateur :** Les personnes qui envoient des messages de conversation sur Microsoft teams au cours des 28 derniers jours.
         - **Dénominateur :** Personnes qui ont envoyé des messages sur Microsoft teams au cours des 28 derniers jours.
 4. **Afficher le contenu connexe :** Sélectionnez ce lien pour afficher les vidéos assemblées et d’autres contenus d’aide connexes.

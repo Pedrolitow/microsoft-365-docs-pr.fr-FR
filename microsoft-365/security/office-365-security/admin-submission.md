@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à utiliser le portail d’envoi du centre de sécurité & conformité pour envoyer des e-mails suspects, des courriers électroniques de hameçonnage suspects, du courrier indésirable et d’autres messages potentiellement nuisibles, des URL et des fichiers à Microsoft à des fins d’analyse.
-ms.openlocfilehash: be2fc8e41e3b53923b0297f30dfb102bbabd7489
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: 1e133c0d4a875fc9735cc8a92e42b6ffeee6dd5f
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877266"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527744"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Utilisez la soumission de l’administrateur pour soumettre des courriers indésirables, l’hameçonnage, des URL et des fichiers à Microsoft
 
@@ -52,7 +52,7 @@ Pour d’autres façons d’envoyer des messages électroniques, des URL et des 
 
 ## <a name="report-suspicious-content-to-microsoft"></a>Signaler du contenu suspect à Microsoft
 
-1. Dans le centre de sécurité & conformité, accédez à envois de **gestion des menaces** \> **Submissions** , vérifiez que vous êtes sous l’onglet **soumissions administrateur** , puis cliquez sur **nouvelle soumission**.
+1. Dans le centre de sécurité & conformité, accédez à envois de **gestion des menaces** \> **Submissions**, vérifiez que vous êtes sous l’onglet **soumissions administrateur** , puis cliquez sur **nouvelle soumission**.
 
 2. Utilisez le menu volant **nouvelle soumission** qui apparaît pour envoyer le message, l’URL ou la pièce jointe, comme décrit dans les sections suivantes.
 
@@ -60,9 +60,12 @@ Pour d’autres façons d’envoyer des messages électroniques, des URL et des 
 
 1. Dans la section **type d’objet** , sélectionnez **courrier électronique**. Dans la section **format de soumission** , utilisez l’une des options suivantes :
 
-   - **ID de message réseau** : il s’agit d’une valeur GUID qui est disponible dans l’en-tête **X-MS-Exchange-Organization-Network-message-ID** du message.
+   - **ID de message réseau**: il s’agit d’une valeur GUID qui est disponible dans l’en-tête **X-MS-Exchange-Organization-Network-message-ID** du message.
 
-   - **Fichier** : cliquez sur **choisir un fichier**. Dans la boîte de dialogue qui s’ouvre, recherchez et sélectionnez le fichier. eml ou. MSG, puis cliquez sur **ouvrir**.
+   - **Fichier**: cliquez sur **choisir un fichier**. Dans la boîte de dialogue qui s’ouvre, recherchez et sélectionnez le fichier. eml ou. MSG, puis cliquez sur **ouvrir**.
+   
+   > [!NOTE]
+   > Les administrateurs disposant de Defender pour Office 365 plan 1 ou plan 2 peuvent envoyer des messages datant de 30 jours. Les autres administrateurs ne pourront revenir qu’à plus de 7 jours.
 
 2. Dans la section **destinataires** , spécifiez un ou plusieurs destinataires sur lesquels vous souhaitez exécuter une vérification de stratégie. La vérification de stratégie détermine si l’analyse du courrier électronique a contourné les messages en raison des stratégies de l’utilisateur ou de l’organisation.
 
@@ -70,13 +73,9 @@ Pour d’autres façons d’envoyer des messages électroniques, des URL et des 
 
    - **Ne doit pas avoir été bloqué**
 
-   - **Doit avoir été bloqué** : sélectionnez **courrier indésirable** , **hameçonnage** ou **programme malveillant**. Si vous n’êtes pas sûr, utilisez votre meilleure appréciation.
+   - **Doit avoir été bloqué**: sélectionnez **courrier indésirable**, **hameçonnage** ou **programme malveillant**. Si vous n’êtes pas sûr, utilisez votre meilleure appréciation.
 
-4. Si le filtre a été contourné en raison de stratégies lors de l’envoi, vous verrez des informations sur cette stratégie.
-
-   Si le filtre n’a pas été contourné en raison d’une ou de plusieurs stratégies, l’analyse se terminera en quelques minutes. Vous verrez des informations supplémentaires sur l’envoi en cliquant sur le lien État. Cela inclut les résultats de la vérification de stratégie et le verdict de nouvelle analyse. Remarque cela n’exécute pas de nouveau le courrier électronique via la pile de filtrage complète de Microsoft Defender pour Office 365, mais exécute une nouvelle analyse partielle en fonction de certains attributs de l’e-mail, de l’URL ou du fichier.
-
-5. Lorsque vous avez terminé, cliquez sur le bouton **Envoyer** .
+4. Lorsque vous avez terminé, cliquez sur le bouton **Envoyer** .
 
 ![Exemple de soumission d’URL](../../media/submission-flyout-email.PNG)
 
@@ -88,7 +87,7 @@ Pour d’autres façons d’envoyer des messages électroniques, des URL et des 
 
    - **Ne doit pas avoir été bloqué**
 
-   - **Doit avoir été bloqué** : sélectionnez **hameçonnage** ou **programme malveillant**.
+   - **Doit avoir été bloqué**: sélectionnez **hameçonnage** ou **programme malveillant**.
 
 3. Lorsque vous avez terminé, cliquez sur le bouton **Envoyer** .
 
@@ -104,7 +103,7 @@ Pour d’autres façons d’envoyer des messages électroniques, des URL et des 
 
    - **Ne doit pas avoir été bloqué**
 
-   - **Doit avoir été bloqué** : le **programme malveillant** est le seul choix et est automatiquement sélectionné..
+   - **Doit avoir été bloqué**: le **programme malveillant** est le seul choix et est automatiquement sélectionné..
 
 4. Lorsque vous avez terminé, cliquez sur le bouton **Envoyer** .
 
@@ -112,7 +111,7 @@ Pour d’autres façons d’envoyer des messages électroniques, des URL et des 
 
 ## <a name="view-admin-submissions"></a>Afficher les soumissions de l’administrateur
 
-Dans le centre de sécurité & conformité, accédez à envois de **gestion des menaces** \> **Submissions** , vérifiez que vous êtes sous l’onglet **soumissions administrateur** , puis cliquez sur **nouvelle soumission**.
+Dans le centre de sécurité & conformité, accédez à envois de **gestion des menaces** \> **Submissions**, vérifiez que vous êtes sous l’onglet **soumissions administrateur** , puis cliquez sur **nouvelle soumission**.
 
 En haut de la page, vous pouvez entrer une date de début, une date de fin et, par défaut, vous pouvez filtrer par **ID de soumission** (valeur Guid affectée à chaque envoi) en entrant une valeur dans la zone et en cliquant sur le ![ bouton actualiser ](../../media/scc-quarantine-refresh.png) . Update
 
@@ -137,7 +136,7 @@ Cliquez sur l’onglet **e-mail** .
 Vous pouvez cliquer sur le bouton **options de colonne** dans la partie inférieure de la page pour ajouter ou supprimer des colonnes dans l’affichage :
 
 - **Date**
-- **ID de soumission** : valeur Guid assignée à chaque soumission.
+- **ID de soumission**: valeur Guid assignée à chaque soumission.
 - **Soumis par**<sup>\*</sup>
 - **Sujet**<sup>\*</sup>
 - **Sender**
@@ -145,10 +144,19 @@ Vous pouvez cliquer sur le bouton **options de colonne** dans la partie inférie
 - **Type d’envoi**
 - **Motif de remise**
 - **Originaire**<sup>\*</sup>
-- **Type de contrôle**
-- **Source du contrôle**
 
   <sup>\*</sup> Si vous cliquez sur cette valeur, des informations détaillées s’affichent dans un lanceur.
+
+#### <a name="admin-submission-rescan-details"></a>Détails de la nouvelle analyse de l’envoi administrateur
+
+Les messages envoyés dans les soumissions de l’administrateur sont de nouveau analysés et les résultats sont affichés dans la fenêtre d’affichage des détails :
+
+- En cas de défaillance de l’authentification de l’expéditeur au moment de la remise.
+- Informations sur les accès à une stratégie qui auraient pu affecter ou remplacer le verdict d’un message.
+- Les résultats de la détonation actuelle permettent de déterminer si les URL ou les fichiers contenus dans le message étaient malveillants ou non.
+- Commentaires des classeurs.
+
+Si un remplacement a été trouvé, la nouvelle analyse doit se terminer en quelques minutes. S’il n’y a pas eu de problème dans l’authentification de messagerie ou si la remise n’a pas été affectée par un remplacement, les commentaires des classeurs peuvent prendre jusqu’à une journée.
 
 ### <a name="view-admin-url-submissions"></a>Afficher les envois d’URL d’administrateur
 

@@ -2,8 +2,8 @@
 title: Modifier un nom d’utilisateur et une adresse de messagerie
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: 'Découvrez comment un administrateur général peut modifier l’adresse de messagerie et le nom complet d’un utilisateur. '
-ms.openlocfilehash: 82284f653675ee4f8c89fe52d75bbc0a0efe2e2b
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 1672401e9a8e994b91804870130b659ad8724b5e
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646690"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49551507"
 ---
 # <a name="change-a-user-name-and-email-address"></a>Modifier un nom d’utilisateur et une adresse de messagerie
 
@@ -40,9 +40,9 @@ Regardez une courte vidéo sur la modification de l’adresse de courrier d’un
 
 Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
-## <a name="change-a-users-email-address"></a>Modifier l’adresse de courrier d’un utilisateur
-
 Vous devez être un [administrateur général](about-admin-roles.md) pour effectuer ces étapes. 
+
+## <a name="change-a-users-email-address"></a>Modifier l’adresse de courrier d’un utilisateur
 
 ::: moniker range="o365-worldwide"
  

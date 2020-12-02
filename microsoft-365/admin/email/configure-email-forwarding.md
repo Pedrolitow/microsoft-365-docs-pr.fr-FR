@@ -2,8 +2,8 @@
 title: Configurer le transfert des e-mails
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: Configurez le transfert du courrier vers un ou plusieurs comptes de messagerie à l’aide d’Office 365.
-ms.openlocfilehash: d19e2c533be6fac927bdf2aa65d72acab9fad6f6
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: acdca0b19eda70d7da34ce1093a4a1b11052fd79
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645526"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49551831"
 ---
 # <a name="configure-email-forwarding"></a>Configurer le transfert des e-mails
 
@@ -45,7 +45,7 @@ En tant qu’administrateur d’une organisation, vous pouvez avoir besoin d’u
 
  Avant de configurer le transfert du courrier, notez les points suivants : 
 
-- Une fois que vous avez configuré le transfert du courrier, seuls les **nouveaux** messages électroniques envoyés à la boîte aux lettres  *de à partir de*  seront fowarded. 
+- Une fois que vous avez configuré le transfert du courrier, seuls les **nouveaux** messages électroniques envoyés à la boîte aux lettres  *à partir de*  seront transférés. 
     
 - Le transfert du courrier exige que le compte  *de à partir*  de dispose d’une licence. Si vous configurez le transfert du courrier, car l’utilisateur a quitté votre organisation, une autre solution consiste à [convertir sa boîte aux lettres en boîte aux lettres partagée](convert-user-mailbox-to-shared-mailbox.md). De cette manière, plusieurs personnes peuvent y accéder. Toutefois, une boîte aux lettres partagée ne peut pas dépasser 50 Go. 
     

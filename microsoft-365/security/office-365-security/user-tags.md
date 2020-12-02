@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à identifier des groupes d’utilisateurs spécifiques à l’aide de balises utilisateur dans Microsoft Defender pour Office 365 plan 2. Le filtrage des balises est disponible dans les alertes, les rapports et les analyses de Microsoft Defender pour Office 365 afin d’identifier rapidement les utilisateurs balisés.
-ms.openlocfilehash: 14ebcebeb8081a2de341fd06facabd9f7d55b119
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: 136de95addae7dcd48de2c6ac1f30ce67714817c
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123618"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49552018"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Balises utilisateur dans Microsoft Defender pour Office 365
 
@@ -66,9 +66,9 @@ Cet article explique comment configurer les balises utilisateur dans le centre d
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
-4. Dans la page **affecter des boîtes aux lettres** , effectuez l’une des opérations suivantes :
+4. Dans la page **affecter des utilisateurs** , effectuez l’une des opérations suivantes :
 
-   - Cliquez sur **Ajouter des boîtes aux lettres**. Dans le survol qui s’affiche, effectuez l’une des opérations suivantes pour ajouter des utilisateurs ou des groupes individuels :
+   - Cliquez sur **Ajouter des utilisateurs**. Dans le survol qui s’affiche, effectuez l’une des opérations suivantes pour ajouter des utilisateurs ou des groupes individuels :
      - Cliquez dans la zone et faites défiler la liste pour sélectionner un utilisateur ou un groupe.
      - Cliquez dans la zone et commencez à taper pour filtrer la liste, puis sélectionnez un utilisateur ou un groupe.
      - Pour ajouter des valeurs supplémentaires, cliquez dans une zone vide de la zone.

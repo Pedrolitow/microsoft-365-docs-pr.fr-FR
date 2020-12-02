@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: En savoir plus sur le paramètre sécurisé par défaut dans Exchange Online Protection (EOP)
-ms.openlocfilehash: 23c0cad2b96b3a2002f235db7739b903cf862366
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 1a68c14a2d37f1fc3bfb032c4d3ca34c09a89890
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357862"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527768"
 ---
 # <a name="secure-by-default-in-office-365"></a>Sécurité par défaut dans Office 365
 
@@ -59,5 +59,5 @@ Les substitutions doivent être utilisées uniquement pour :
 
 - Simulations d’hameçonnage : les attaques simulées peuvent vous aider à identifier les utilisateurs vulnérables avant qu’une attaque réelle n’influe sur votre organisation.
 - Boîtes aux lettres de sécurité/COP : boîtes aux lettres dédiées utilisées par les équipes de sécurité pour obtenir des messages non filtrés (à la fois bon et mauvais). Teams peut ensuite vérifier s’il contient du contenu malveillant.
-- Filtres tiers : certains fournisseurs tiers recommandent de désactiver EOP (SCL =-1) car le filtre tiers gère le filtrage du courrier. Microsoft ne recommande pas de désactiver EOP au fur et à mesure que EOP est requis pour Office 365.
+- Filtres tiers : certains fournisseurs tiers vont recommander de désactiver EOP (SCL =-1) car le filtre tiers gérera le filtrage du courrier. Microsoft ne recommande pas de désactiver EOP au fur et à mesure que EOP est requis pour Office 365. Au lieu de cela, nous vous recommandons d’activer le [filtrage amélioré pour les connecteurs](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) à la place.
 - Faux positifs : vous pouvez autoriser certains messages qui sont toujours analysés par Microsoft [via des soumissions d’administration](admin-submission.md). Comme pour toutes les substitutions, il est recommandé qu’elles soient temporaires.

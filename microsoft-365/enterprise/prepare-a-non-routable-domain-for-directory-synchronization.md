@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: Pour savoir comment procéder, si vous avez un domaine non-routale associé à vos utilisateurs locaux avant de procéder à une synchronisation avec Microsoft 365.
-ms.openlocfilehash: 21344cb0d495691a96867d401a5262fbbcfd02d4
-ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
+ms.openlocfilehash: f38f6143b6e26b2849c174f74c94d009ddea73cd
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49002380"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527720"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>Préparation d’un domaine non routable pour la synchronisation d’annuaires
 Lorsque vous synchronisez votre annuaire sur site avec Microsoft 365, vous devez disposer d’un domaine vérifié dans Azure Active Directory (Azure AD). Seuls les noms d’utilisateur principal (UPN) associés au domaine local sont synchronisés. Toutefois, tout nom UPN contenant un domaine non routable, par exemple, local (comme billa@contoso. local), sera synchronisé avec un domaine. onmicrosoft.com (comme billa@contoso.onmicrosoft.com). 
@@ -60,7 +60,7 @@ Une fois que vous avez mis à jour l’UPN pour utiliser le domaine vérifié, v
     
     ![Choisissez domaines et approbations Active Directory.](../media/46b6e007-9741-44af-8517-6f682e0ac974.png)
   
-2. Dans la fenêtre **domaines et approbations Active Directory** , cliquez avec le bouton droit sur **domaines et approbations Active Directory** , puis choisissez **Propriétés**.
+2. Dans la fenêtre **domaines et approbations Active Directory** , cliquez avec le bouton droit sur **domaines et approbations Active Directory**, puis choisissez **Propriétés**.
     
     ![Cliquez avec le bouton droit sur domaines et approbations Active Directory, puis choisissez Propriétés.](../media/39d20812-ffb5-4ba9-8d7b-477377ac360d.png)
   
@@ -91,7 +91,7 @@ Une fois que vous avez mis à jour l’UPN pour utiliser le domaine vérifié, v
 
 Si vous avez un grand nombre d’utilisateurs à mettre à jour, il est plus facile d’utiliser Windows PowerShell. L’exemple suivant utilise les cmdlets [Get-ADUser](https://go.microsoft.com/fwlink/p/?LinkId=624312) et [Set-ADUser](https://go.microsoft.com/fwlink/p/?LinkId=624313) pour remplacer tous les suffixes contoso. local par contoso.com. 
 
-Pour exemple, vous pouvez exécuter les commandes Windows PowerShell suivantes pour mettre à jour tous les suffixes contoso. local vers contoso.com :
+Par exemple, vous pouvez exécuter les commandes Windows PowerShell suivantes pour mettre à jour tous les suffixes contoso. local vers contoso.com :
     
   ```powershell
   $LocalUsers = Get-ADUser -Filter "UserPrincipalName -like '*contoso.local'" -Properties userPrincipalName -ResultSetSize $null

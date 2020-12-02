@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: e2d1c68c3fe963c957e4c3e18fce441b92c96bf1
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: 491422126f7d159689e7995b69bef0f395491dcb
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519820"
+ms.locfileid: "49527708"
 ---
 # <a name="readiness-assessment-tool"></a>Outil d’évaluation de la préparation
 
@@ -22,7 +22,7 @@ Pour une plus bonne expérience possible lors de l’inscription au bureau gér�
 
 L’outil vérifie les paramètres dans le gestionnaire de points de terminaison Microsoft (en particulier Microsoft Intune), Azure Active Directory (Azure AD) et Microsoft 365 pour s’assurer qu’ils fonctionneront avec Microsoft Managed Desktop. Le bureau géré Microsoft conserve les données associées à ces vérifications pendant 12 mois après la dernière exécution d’une vérification dans votre organisation Azure AD. Au bout de 12 mois, nous les conservent dans un formulaire déidentifié.  Vous pouvez choisir de supprimer les données collectées.
 
-Tout utilisateur disposant au moins du rôle d’administrateur Intune pourra exécuter cet outil, mais deux des vérifications ([stratégies d’accès conditionnel](readiness-assessment-fix.md#conditional-access-policies) et [authentification multifacteur](readiness-assessment-fix.md#multi-factor-authentication) nécessitent des autorisations supplémentaires.
+Tout utilisateur disposant au moins du rôle d’administrateur Intune pourra exécuter cet outil, mais deux des vérifications (les[stratégies d’accès conditionnel](readiness-assessment-fix.md#conditional-access-policies) et [l’authentification multifacteur](readiness-assessment-fix.md#multifactor-authentication) nécessitent des autorisations supplémentaires.
  
 L’outil d’évaluation vérifie ces éléments :
 
@@ -79,3 +79,7 @@ Pour chaque vérification, l’outil signale l’un des quatre résultats possib
 |OpenSSL    | Suivez les étapes de l’outil pour une expérience optimale avec l’enregistrement et pour les utilisateurs. Vous *pouvez* effectuer l’opération d’enregistrement, mais vous devez résoudre ces problèmes avant de déployer votre premier périphérique.        |
 |Non prêt | L' *enregistrement échoue* si vous ne résolvez pas ces problèmes. Suivez les étapes de l’outil pour les résoudre.        |
 |Erreur | Le rôle Azure active Director (AD) que vous utilisez ne dispose pas des autorisations suffisantes pour effectuer cette vérification. |
+
+## <a name="after-enrollment"></a>Après l’enregistrement
+
+Une fois que vous avez terminé l’enregistrement dans le bureau géré Microsoft, n’oubliez pas de revenir en arrière et d’ajuster certains paramètres Intune et Azure AD. Pour plus d’informations, voir [ajuster les paramètres après l’enregistrement](../get-started/conditional-access.md).

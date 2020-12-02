@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Déterminer l’emplacement de stockage des données client Microsoft 365 dans l’Union européenne
-ms.openlocfilehash: 5a50600c123dad1a0e4d14fd8f47283f951d3edc
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: 78c2ae75656df017631fce0a189f6e25ee44f20f
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376692"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527684"
 ---
 # <a name="data-locations-for-the-european-union"></a>Emplacements de données pour l’Union européenne
 
@@ -63,10 +63,12 @@ Nous disposons de centres de données dans des emplacements géographiques en Al
 ||||| 
 
 >[!Note]
->Si vous avez un abonnement Microsoft Office 365 Éducation avec une adresse de facturation en France ou en Allemagne, vos données peuvent être stockées dans nos centres de données régionaux de l’Union européenne. 
+>Si vous avez un abonnement Microsoft Office 365 Éducation avec une adresse de facturation en France ou en Allemagne, vos données peuvent être stockées dans nos centres de données régionaux de l’Union européenne. Pour connaître les emplacements des données des clients en dehors de l’Union européenne, consultez [Où sont stockées vos données client Microsoft 365](o365-data-locations.md).
 >
 
-### <a name="where-eu-data-is-computed"></a>Emplacement du calcul de données de l’Union Européenne
+
+
+### <a name="where-eu-data-is-computed"></a>Emplacement du calcul de données de l’Union européenne
 
 Lorsque vous commencez à utiliser l’un des services ci-dessus, les calculs nécessaires à la fourniture de service pour vos données stockées dans l’un de nos centres régionaux de données en Europe (ou dans votre pays) s’effectueront dans cette même limite géographique, sauf si un transfert de données temporaire est nécessaire pour effectuer le calcul dans un centre de données Microsoft qui est plus éloigné. 
 

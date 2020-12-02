@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: Implémentez Microsoft Information Protection (MIP) pour vous permettre de protéger les informations sensibles où qu’elles se trouvent.
-ms.openlocfilehash: 4f98adbcee2b3daf4b347a16137d61cc0e790486
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 4c8f4af11779cd8b3df043bc92187625c41f4ac9
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087191"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519809"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft Information Protection dans Microsoft 365.
 
@@ -55,7 +55,7 @@ Pour appliquer des actions de protection flexibles qui incluent le chiffrement, 
 |[Étiquettes de confidentialité](sensitivity-labels.md)| Une solution unique pour les applications, les services et les appareils qui permet d’étiqueter et de protéger vos données lors de leur déplacement à l’intérieur et à l’extérieur de votre organisation <br /><br />Exemple de scénario : [appliquer et afficher les étiquettes de confidentialité dans Power BI et protéger les données lorsqu’elles sont exportées](https://docs.microsoft.com/power-bi/admin/service-security-apply-data-sensitivity-labels)|[Prise en main des étiquettes de confidentialité](get-started-with-sensitivity-labels.md) |
 |[Client d’étiquetage unifié Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)| Étend les étiquettes de confidentialité pour des fonctionnalités supplémentaires, qui incluent l’étiquetage et la protection de tous les types de fichiers depuis l’Explorateur de fichiers et PowerShell, pour les ordinateurs Windows<br /><br /> Exemples de fonctionnalités supplémentaires : [configurations personnalisées pour le client d’étiquetage unifié Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations)| [Guide de l’utilisateur pour l’étiquetage unifié d’Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide)|
 |[Chiffrement à double clé](double-key-encryption.md)| Dans tous les cas, vous seul pouvez déchiffrer le contenu protégé. Pour respecter les obligations réglementaires, vous devez conserver les clés de chiffrement dans la limite géographique définie | [Déployer le chiffrement à double clé](double-key-encryption.md#deploy-dke)|
-|[Chiffrement de messages Office 365](ome.md)| Chiffre les e-mails et les documents joints envoyés à tous les utilisateurs sur tous les appareils, afin que seuls les destinataires autorisés puissent lire les informations envoyées par e-mail  <br /><br />Exemple de scénario : [révoquer les e-mails chiffrés avec le Chiffrement avancé des messages](revoke-ome-encrypted-mail.md) | [Configurer les nouvelles fonctionnalités de chiffrement de messages](set-up-new-message-encryption-capabilities.md)|
+|[Chiffrement de messages Office 365 (OME)](ome.md)| Chiffre les e-mails et les documents joints envoyés à tous les utilisateurs sur tous les appareils, afin que seuls les destinataires autorisés puissent lire les informations envoyées par e-mail  <br /><br />Exemple de scénario : [révoquer les e-mails chiffrés avec le Chiffrement avancé des messages](revoke-ome-encrypted-mail.md) | [Configurer les nouvelles fonctionnalités de chiffrement de messages](set-up-new-message-encryption-capabilities.md)|
 |[Chiffrement du service avec la clé client](customer-key-overview.md) | Empêche l’affichage de données par des systèmes ou du personnel non autorisés, et complète le chiffrement de disque BitLocker dans les centres de données Microsoft | [Configurer la clé client pour Office 365](customer-key-set-up.md)|
 |[Gestion des droits relatifs à l’information SharePoint](set-up-irm-in-sp-admin-center.md#irm-enable-sharepoint-document-libraries-and-lists)|Protège les listes et les bibliothèques SharePoint. Lorsqu’un utilisateur extrait un document, le fichier téléchargé est protégé afin que seules les personnes autorisées puissent afficher et utiliser le fichier conformément aux stratégies que vous spécifiez | [Configurer la gestion des droits relatifs à l’information dans le centre d’administration SharePoint](set-up-irm-in-sp-admin-center.md)|
 [Connecteur de gestion des droits](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector) |Offre uniquement une protection pour les déploiements locaux existants qui utilisent Exchange ou SharePoint Server, ou les serveurs de fichiers qui fonctionnent avec Windows Server et l’infrastructure de classification de fichiers | [Étapes de déploiement du connecteur RMS](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector#steps-to-deploy-the-rms-connector)
