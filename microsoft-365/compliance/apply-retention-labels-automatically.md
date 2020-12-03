@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Créez des étiquettes de rétention et des stratégies d’étiquetage automatique afin de pouvoir appliquer les étiquettes de manière automatique pour conserver les éléments utiles et supprimer les éléments inutiles.
-ms.openlocfilehash: ebfd088dd6dc3205f02e563e31f6fb25372608ad
-ms.sourcegitcommit: 26b35012c42fef935d6c4a6509dde6c22a9b922a
+ms.openlocfilehash: 766106e9c650047e37c9fa341bd2e78b390d814d
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "49385260"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519452"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Application automatique d’une étiquette de rétention pour conserver ou supprimer du contenu
 
@@ -53,10 +53,10 @@ Les processus d’application automatique d’une étiquette de rétention sont 
 Utilisez les instructions suivantes pour les deux étapes d’administration.
 
 > [!NOTE]
-> Les stratégies automatiques utilisent l’étiquetage côté service avec des conditions pour appliquer automatiquement des étiquettes de rétention. Vous pouvez également appliquer automatiquement une étiquette de rétention à une stratégie d’étiquette lorsque vous procédez comme suit : 
+> Les polices automatiques utilisent l'étiquetage côté service avec des conditions pour appliquer automatiquement des étiquettes de conservation. Vous pouvez également appliquer automatiquement un label de conservation avec une politique d'étiquetage lorsque vous faites ce qui suit : 
 >
-> - Appliquez une étiquette de rétention par défaut à une bibliothèque, un dossier ou à un groupe de documents SharePoint afin que le contenu sans étiquette dans ce conteneur soit automatiquement étiqueté
->- Application automatique d’une étiquette de rétention pour les e-mails à l’aide de règles
+> - Appliquer un label de conservation par défaut pour sharePoint et Outlook, de sorte que les contenus non étiquetés soient automatiquement étiquetés
+>- Appliquer automatiquement un label de conservation au e-mail en utilisant des règles
 >
 > Pour ces scénarios, voir [Créer des étiquettes de rétention et les appliquer dans les applications](create-apply-retention-labels.md).
 
@@ -92,7 +92,6 @@ Les instructions de navigation varient selon que vous utilisez la [gestion des e
 
 Pour modifier une étiquette existante, sélectionnez-la, puis sélectionnez **Modifier l’étiquette** pour démarrer l’assistant à l’édition de rétention qui vous permet de modifier les descriptions d’étiquettes et les [paramètres éligibles](#updating-retention-labels-and-their-policies) à partir de l’étape 2.
 
-
 ### <a name="step-2-create-an-auto-apply-policy"></a>Étape 2 : créer une stratégie d’application automatique
 
 Lorsque vous créez une stratégie d’application automatique, vous sélectionnez une étiquette de rétention pour l’appliquer automatiquement à du contenu, en fonction des conditions spécifiées.
@@ -113,10 +112,11 @@ Lorsque vous créez une stratégie d’application automatique, vous sélectionn
     
     Pour plus d’informations sur la prise en charge des emplacements par des étiquettes de rétention, voir la section [Étiquettes de rétention et emplacements](retention.md#retention-label-policies-and-locations).
 
-Pour modifier une stratégie d’application automatique d’étiquettes existante, sélectionnez-la pour démarrer l’assistant à la modification de stratégie de rétention qui vous permet de modifier l’étiquette de rétention sélectionnée et les [paramètres éligibles](#updating-retention-labels-and-their-policies) à partir de l’étape 2.
+Pour modifier une politique d'application automatique existante, sélectionnez-la pour lancer l'assistant Modifier la politique de conservation qui vous permet de modifier l'étiquette de conservation sélectionnée et tous[les paramètres admissibles](#updating-retention-labels-and-their-policies)à partir de l'étape 2.
 
+Une fois que le contenu est étiqueté au moyen d'une politique d'étiquetage automatique, l'étiquette appliquée ne peut pas être automatiquement retirée ou modifiée en changeant le contenu ou la politique, ou par une nouvelle politique d'étiquetage automatique. Pour plus d'informations, voir [Une seule étiquette de conservation à la fois](retention.md#only-one-retention-label-at-a-time).
 
-### <a name="configuring-conditions-for-auto-apply-retention-labels"></a>Configuration des conditions d’application automatique des étiquettes de rétention
+### <a name="configuring-conditions-for-auto-apply-retention-labels"></a>Configurer les conditions d'application automatique des étiquettes de conservation
 
 Vous pouvez appliquer automatiquement des étiquettes de rétention au contenu quand celui-ci inclut :
 
