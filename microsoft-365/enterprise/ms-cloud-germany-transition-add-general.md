@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Résumé : informations générales supplémentaires sur les services lors du passage de Microsoft Cloud Germany (Microsoft Cloud Deutschland) vers les services Office 365 dans la nouvelle région de centre de données allemande.'
-ms.openlocfilehash: 6fa09165f8aaa68e0f9fc567d96a4e53baaa594e
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: 93692200f2519dbc647bb4e81b4bd8c646815858
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551781"
+ms.locfileid: "49558429"
 ---
 # <a name="additional-general-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Informations générales supplémentaires pour la migration à partir de Microsoft Cloud Deutschland
 
@@ -49,14 +49,14 @@ Il existe trois conditions préalables à la mise à jour de votre autorité de 
 
 Une application peut être l’une des suivantes :
 
-- Application à page unique (SPA)
-- Application Web qui se connecte aux utilisateurs
-- Application Web qui appelle des API Web
-- API Web protégée
-- API Web qui appelle des API Web
-- Application de bureau
-- App daemon
-- Application mobile
+- [Application à page unique (SPA)](https://docs.microsoft.com/azure/active-directory/develop/scenario-spa-overview)
+- [Application Web qui se connecte aux utilisateurs](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-app-sign-user-overview)
+- [Application Web qui appelle des API Web](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-app-call-api-overview)
+- [API Web protégée](https://docs.microsoft.com/azure/active-directory/develop/scenario-protected-web-api-overview)
+- [API Web qui appelle des API Web](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-api-call-api-overview)
+- [Application de bureau](https://docs.microsoft.com/azure/active-directory/develop/scenario-desktop-overview)
+- [App daemon](https://docs.microsoft.com/azure/active-directory/develop/scenario-daemon-overview)
+- [Application mobile](https://docs.microsoft.com/azure/active-directory/develop/scenario-mobile-overview)
  
 > [!NOTE] 
 > Lorsqu’une application bascule vers en utilisant `login.microsoftonline.com` comme autorité, les jetons sont signés par cette nouvelle autorité. Si vous hébergez des applications de ressource appelées par d’autres applications, vous devrez autoriser la validation des jetons de Lax. Cela signifie que votre application doit autoriser les jetons signés par les nuages publics Azure AD Germany et Azure AD. Cette validation de jeton LAX est nécessaire jusqu’à ce que toutes les applications clientes qui appellent votre service soient entièrement migrées vers le cloud public Azure AD. Après la migration, votre application de ressource doit uniquement accepter les jetons signés par le cloud public Azure AD.
@@ -76,10 +76,10 @@ Une application peut être l’une des suivantes :
 
 5. Mettez à jour les paramètres d’environnement `AzurePublic` (au lieu `AzureGermany` ) dans les outils d’administration et les scripts pour :
 
-    - Azure PowerShell
-    - Azure AD PowerShell (MSOnline)
-    - Azure AD PowerShell (AzureAD)
-    - Interface de commande de commande Azure
+    - [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-2.8.0&viewFallbackFrom=azurermps-5.6.0)
+    - [Azure AD PowerShell (MSOnline)](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-1.0)
+    - [Azure AD PowerShell (AzureAD)](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0)
+    - [Interface de commande de commande Azure](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest)
  
 **Qu’en est-il des applications que je publie ?**
 
@@ -163,7 +163,7 @@ Mise en route :
 
 Navigation par le biais de la transition :
 
-- [Actions et impacts sur les phases de migration](ms-cloud-germany-transition-phases.md)
+- [Actions et impacts des phases de migration](ms-cloud-germany-transition-phases.md)
 - [Pré-travail supplémentaire](ms-cloud-germany-transition-add-pre-work.md)
 - Informations supplémentaires pour les [services](ms-cloud-germany-transition-add-general.md), les [appareils](ms-cloud-germany-transition-add-devices.md), les [expériences](ms-cloud-germany-transition-add-experience.md)et [AD FS](ms-cloud-germany-transition-add-adfs.md).
 

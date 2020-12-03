@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Dans cet article, vous allez apprendre à utiliser le portail supprimer de la liste pour vous supprimer de la liste des expéditeurs bloqués de Microsoft 365.
-ms.openlocfilehash: 637b610d0dd621e6d922d23354aead8e3824ad6a
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: f4e7bcc13ac6c133880eb0ebe69ba3f724d0a84e
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445530"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561422"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>Utiliser le portail Retirer d’une liste pour vous supprimer de la liste des expéditeurs bloqués
 
@@ -39,13 +39,13 @@ Microsoft utilise la liste des expéditeurs bloqués pour protéger ses clients 
 
 Vous savez que vous avez été ajouté à la liste si vous recevez une réponse à un courrier électronique incluant une erreur ressemblant à ce qui suit :
 
-> 550 5.7.606-649 accès refusé, IP d’envoi interdit [_adresse IP_]; Pour demander la suppression de cette liste, visitez https://sender.office.com/ le site et suivez les instructions. Pour plus d’informations, consultez la rubrique [notifications de non-remise aux messages électroniques dans Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online).
+> 550 5.7.606-649 accès refusé, IP d’envoi interdit [_adresse IP_]; Pour demander la suppression de cette liste, visitez <https://sender.office.com/> le site et suivez les instructions. Pour plus d’informations, consultez la rubrique [notifications de non-remise aux messages électroniques dans Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online).
 
 où  _IP address_ est l'adresse IP de l'ordinateur sur lequel s'exécute le serveur de messagerie.
 
 ### <a name="to-use-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>Pour utiliser le portail déliste pour vous supprimer de la liste des expéditeurs bloqués
 
-1. Dans un navigateur web, accédez à [https://sender.office.com](https://sender.office.com).
+1. Dans un navigateur web, accédez à <https://sender.office.com>.
 
 2. Suivez les instructions de la page. Assurez-vous que vous utilisez l'adresse de messagerie à laquelle le message d'erreur a été envoyé et l'adresse IP qui est spécifiée dans le message d'erreur. Vous ne pouvez entrer qu'une adresse de messagerie et une adresse IP par visite.
 

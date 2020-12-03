@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: La sécurité et la mobilité de base font partie des plans Microsoft 365.
-ms.openlocfilehash: b9568d0aad03fc3c8a5c81d02f98f5b238124a82
-ms.sourcegitcommit: 5a355bde865369f64ea1788a378da23c65b1d249
+ms.openlocfilehash: 8724b3dccbdb5949190ceda4b804b9f1f2a5d4b2
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48930164"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561494"
 ---
 # <a name="choose-between-basic-mobility-and-security-or-intune"></a>Choisir entre une mobilité de base et une sécurité ou Intune
 
@@ -33,7 +33,7 @@ ms.locfileid: "48930164"
  
 La mobilité et la sécurité de base et Intune sont inclus dans un grand nombre de plans, comme décrit dans le tableau suivant.
 
-|**Planifier**|**Mobilité et sécurité de base**|**Microsoft Intune**|
+| Prévision | Mobilité et sécurité de base | Microsoft Intune |
 |:-----|:-----|:-----|
 |Microsoft 365 Apps|Oui|Non|
 |Microsoft 365 Business Basic|Oui|Non|
@@ -41,7 +41,7 @@ La mobilité et la sécurité de base et Intune sont inclus dans un grand nombre
 |Office 365 E1 |Oui|Non|
 |Office 365 E3 |Oui|Non|
 |Office 365 E5 |Oui|Non|
-|Microsoft 365 Business Premium |Oui|Oui|
+|Microsoft 365 Business Premium |Oui|Oui|
 |Microsoft 365 terrain 3 |Oui|Oui|
 |Microsoft 365 Entreprise E3 |Oui|Oui|
 |Microsoft 365 Entreprise E5 |Oui|Oui|
@@ -64,11 +64,11 @@ Microsoft Intune et la mobilité et la sécurité intégrées de base vous perme
 >[!NOTE]
 >Vous pouvez gérer les utilisateurs et leurs appareils mobiles à l’aide de Intune et de la mobilité et de la sécurité de base dans la même organisation standard entreprise Microsoft 365 *en configurant d’abord les paramètres de sécurité et de mobilité de base, puis en ajoutant Microsoft Intune*. Cela vous permet de choisir mobilité et sécurité de base ou la solution Intune plus riche en fonctionnalités. Attribuez une licence Intune pour activer les fonctionnalités Intune.
 
-|**Fonctionnalités**|**Principales fonctionnalités**|**Mobilité et sécurité de base**|**Microsoft Intune**|
+| Fonctionnalité | Principales fonctionnalités | Mobilité et sécurité de base | Microsoft Intune |
 |:-----|:-----|:-----|:-----|
 |Types d’appareil|La gestion de différentes plateformes de système d’exploitation et de variantes de mode de gestion. |Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>|Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>Mac OS, iPad OS|
 |Conformité des appareils|Définir et gérer les stratégies de sécurité, telles que le verrouillage du code confidentiel au niveau du périphérique et la détection jailbreak. |Limitations sur les appareils Android 9 et versions ultérieures. Voir les [Détails](capabilities.md). |Oui|
-|Accès conditionnel basé sur la conformité des appareils |Empêcher les appareils non conformes d’accéder à la messagerie d’entreprise et aux données à partir du Cloud. |Non pris en charge sur Windows 10.<br/>Limité au contrôle de l’accès à Exchange Online, SharePoint Online et Outlook. |Non |
+|Accès conditionnel basé sur la conformité des appareils |Empêcher les appareils non conformes d’accéder à la messagerie d’entreprise et aux données à partir du Cloud. |Non pris en charge sur Windows 10.<br/>Limité au contrôle de l’accès à Exchange Online, SharePoint Online et Outlook. |Oui |
 |Configuration des appareils  |Configurer les paramètres de l’appareil (par exemple, la désactivation de l’appareil photo)|Conformité des appareils|Définir et gérer les stratégies de sécurité, telles que le verrouillage du code confidentiel au niveau du périphérique et la détection jailbreak. |Limitations sur les appareils Android 9 et versions ultérieures. Voir les [Détails](capabilities.md). |Oui|
  |Ensemble limité de paramètres. |Oui|
 |Profils de messagerie  |Mettez en service un profil de messagerie natif sur l’appareil. |Oui|Oui|

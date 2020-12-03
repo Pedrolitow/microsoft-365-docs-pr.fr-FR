@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment exiger l’authentification MFA et configurer des stratégies d’accès conditionnel pour Microsoft 365 pour les entreprises.
-ms.openlocfilehash: 5908a36f09753cd8f66169c6a67be45c748807b7
-ms.sourcegitcommit: 34ebec8e2bd54ba3d4ccfd9724797665c965c17f
+ms.openlocfilehash: 08a77615d6801eef52465c450c2559a9d786befb
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49071500"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558273"
 ---
 # <a name="require-multi-factor-authentication-and-set-up-conditional-access-policies"></a>Exiger l’authentification multifacteur et configurer des stratégies d’accès conditionnel
 
@@ -45,7 +45,7 @@ Actuellement, les stratégies de base sont les suivantes :
     - **Bloquer l’authentification héritée** : les applications clientes plus anciennes et certaines nouvelles applications n’utilisent pas de protocoles d’authentification plus récents et plus sécurisés. Ces anciennes applications peuvent contourner des stratégies d’accès conditionnel et obtenir un accès non autorisé à votre environnement. Cette stratégie bloque l’accès à partir des clients qui ne prennent pas en charge l’accès conditionnel. 
     - **Exiger MFA pour la gestion des services** : nécessite l’authentification multifacteur pour l’accès aux outils de gestion, y compris le portail Azure (où vous configurez les stratégies de base). 
 
-Microsoft vous recommande d’activer toutes ces stratégies de base. Une fois ces stratégies activées, les administrateurs et les utilisateurs sont invités à s’inscrire pour l’authentification multifacteur Azure.
+Microsoft vous recommande d’activer toutes ces stratégies de base. Une fois ces stratégies activées, les administrateurs et les utilisateurs sont invités à s’inscrire pour l’authentification multifacteur Azure AD.
 
 Pour plus d’informations sur ces stratégies, voir [qu’est-ce qu’une stratégie de base](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-baseline-protection)?
 

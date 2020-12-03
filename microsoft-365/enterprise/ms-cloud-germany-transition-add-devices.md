@@ -18,16 +18,16 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Résumé : informations supplémentaires sur les services lors du passage de Microsoft Cloud Germany (Microsoft Cloud Deutschland) vers les services Office 365 dans la nouvelle région de centre de données allemande.'
-ms.openlocfilehash: da05a3c2eb6a8d579c53d403a1ef575c389eda12
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: 941b836871f4ffb7f39f6e144675e9ee15510270
+ms.sourcegitcommit: ff1f0a97e9d43bc786f04d2ea7e01695531b9f28
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551952"
+ms.locfileid: "49560855"
 ---
 # <a name="additional-device-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Informations supplémentaires sur l’appareil pour la migration à partir de Microsoft Cloud Deutschland
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 **Comment puis-je savoir si mon organisation est concernée ?**
 
@@ -136,6 +136,12 @@ L’appareil est automatiquement joint à Azure AD sans intervention de l’util
 
 
 ## <a name="windows-azure-ad-join"></a>Participation à Windows Azure AD
+
+**Important :** Le principal de service Intune sera activé après la migration de commerce, ce qui implique l’activation de l’inscription d’appareil Azure AD. Si vous avez bloqué l’inscription de l’appareil Azure AD avant la migration, vous devez désactiver le principal du service Intune avec PowerShell pour désactiver l’inscription de l’appareil Azure AD avec le portail Azure AD. Vous pouvez désactiver le principal du service Intune à l’aide de cette commande dans le module Azure Active Directory PowerShell pour Graph.
+
+```powershell
+Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "0000000a-0000-0000-c000-000000000000" | Set-AzureADServicePrincipal -AccountEnabled:$false
+```
 
 ### <a name="unjoin"></a>Se désinscrire
 
@@ -275,7 +281,7 @@ Mise en route :
 
 Navigation par le biais de la transition :
 
-- [Actions et impacts sur les phases de migration](ms-cloud-germany-transition-phases.md)
+- [Actions et impacts des phases de migration](ms-cloud-germany-transition-phases.md)
 - [Pré-travail supplémentaire](ms-cloud-germany-transition-add-pre-work.md)
 - Informations supplémentaires pour les [services](ms-cloud-germany-transition-add-general.md), les [appareils](ms-cloud-germany-transition-add-devices.md), les [expériences](ms-cloud-germany-transition-add-experience.md)et [AD FS](ms-cloud-germany-transition-add-adfs.md).
 

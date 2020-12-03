@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: Utilisez cet article pour en savoir plus sur l’activation et la configuration de la gestion des accès privilégiés dans Office 365.
-ms.openlocfilehash: d75a8944cdacb6df2d6ee6570c0ce327d0e7ae00
-ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
+ms.openlocfilehash: 6018d3b842dcadb60208e6ab53707a50e26f9d35
+ms.sourcegitcommit: ff1f0a97e9d43bc786f04d2ea7e01695531b9f28
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48341202"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49560872"
 ---
 # <a name="get-started-with-privileged-access-management"></a>Prise en main de la gestion des accès privilégiés
 
@@ -85,7 +85,7 @@ Une fois l’approbation accordée, l’utilisateur demandeur peut exécuter la 
 
 2. Dans le centre d’administration, accédez à **groupes**  >  **Ajouter un groupe**.
 
-3. Sélectionnez **groupe de sécurité à extension messagerie** , puis renseignez les champs **nom**, **adresse de messagerie du groupe**et **Description** pour le nouveau groupe.
+3. Sélectionnez **groupe de sécurité à extension messagerie** , puis renseignez les champs **nom**, **adresse de messagerie du groupe** et **Description** pour le nouveau groupe.
 
 4. Enregistrez le groupe.  La configuration totale du groupe peut prendre quelques minutes et s’affiche dans le Centre d’administration Microsoft 365.
 
@@ -101,7 +101,7 @@ Une fois l’approbation accordée, l’utilisateur demandeur peut exécuter la 
 
 1. Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com) à l’aide des informations d’identification d’un compte d’administrateur de votre organisation.
 
-2. Dans le centre d’administration, accédez à **paramètres**  >  **Organisation des paramètres d’organisation**  >  **sécurité & confidentialité**des  >  **accès privilégiés**.
+2. Dans le centre d’administration, accédez à **paramètres**  >  **Organisation des paramètres d’organisation**  >  **sécurité & confidentialité** des  >  **accès privilégiés**.
 
 3. Activez le contrôle **exiger des approbations pour les tâches privilégiées** .
 
@@ -120,7 +120,7 @@ Enable-ElevatedAccessControl -AdminGroup '<default approver group>' -SystemAccou
 Exemple :
 
 ```PowerShell
-Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com' -SystemAccounts @('sys1@fabrikamorg.onmicrosoft.com', sys2@fabrikamorg.onmicrosoft.com')
+Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com' -SystemAccounts @('sys1@fabrikamorg.onmicrosoft.com', 'sys2@fabrikamorg.onmicrosoft.com')
 ```
 
 >[!NOTE]
@@ -136,7 +136,7 @@ Vous pouvez créer et configurer jusqu’à 30 stratégies d’accès privilégi
 
 1. Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com) à l’aide des informations d’identification d’un compte d’administrateur de votre organisation.
 
-2. Dans le centre d’administration, accédez à **paramètres**  >  **Organisation des paramètres d’organisation**  >  **sécurité & confidentialité**des  >  **accès privilégiés**.
+2. Dans le centre d’administration, accédez à **paramètres**  >  **Organisation des paramètres d’organisation**  >  **sécurité & confidentialité** des  >  **accès privilégiés**.
 
 3. Sélectionnez **gérer les stratégies d’accès et les demandes**.
 
@@ -182,7 +182,7 @@ Les demandes d’accès privilégié sont valables pendant 24 heures après l�
 
 1. Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com) à l’aide de vos informations d’identification.
 
-2. Dans le centre d’administration, accédez à **paramètres**  >  **Organisation des paramètres d’organisation**  >  **sécurité & confidentialité**des  >  **accès privilégiés**.
+2. Dans le centre d’administration, accédez à **paramètres**  >  **Organisation des paramètres d’organisation**  >  **sécurité & confidentialité** des  >  **accès privilégiés**.
 
 3. Sélectionnez **gérer les stratégies d’accès et les demandes**.
 
@@ -222,11 +222,11 @@ Après la création d’une demande d’approbation, l’état de la demande d�
 
 1. Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com) avec vos informations d’identification.
 
-2. Dans le centre d’administration, accédez à **paramètres**  >  **Organisation des paramètres d’organisation**  >  **sécurité & confidentialité**des  >  **accès privilégiés**.
+2. Dans le centre d’administration, accédez à **paramètres**  >  **Organisation des paramètres d’organisation**  >  **sécurité & confidentialité** des  >  **accès privilégiés**.
 
 3. Sélectionnez **gérer les stratégies d’accès et les demandes**.
 
-4. Sélectionnez **affichage** pour filtrer les demandes soumises par état **en attente**, **approuvé**, **refusé**ou **référentiel sécurisé du client** .
+4. Sélectionnez **affichage** pour filtrer les demandes soumises par état **en attente**, **approuvé**, **refusé** ou **référentiel sécurisé du client** .
 
 #### <a name="in-exchange-management-powershell"></a>Dans Exchange Management PowerShell
 
@@ -250,7 +250,7 @@ Lorsqu’une demande d’approbation est créée, les membres du groupe d’appr
 
 1. Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com) avec vos informations d’identification.
 
-2. Dans le centre d’administration, accédez à **paramètres**  >  **Organisation des paramètres d’organisation**  >  **sécurité & confidentialité**des  >  **accès privilégiés**.
+2. Dans le centre d’administration, accédez à **paramètres**  >  **Organisation des paramètres d’organisation**  >  **sécurité & confidentialité** des  >  **accès privilégiés**.
 
 3. Sélectionnez **gérer les stratégies d’accès et les demandes**.
 
@@ -292,7 +292,7 @@ Si elle n’est plus nécessaire dans votre organisation, vous pouvez supprimer 
 
 1. Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com) à l’aide des informations d’identification d’un compte d’administrateur de votre organisation.
 
-2. Dans le centre d’administration, accédez à **paramètres**  >  **Organisation des paramètres d’organisation**  >  **sécurité & confidentialité**des  >  **accès privilégiés**.
+2. Dans le centre d’administration, accédez à **paramètres**  >  **Organisation des paramètres d’organisation**  >  **sécurité & confidentialité** des  >  **accès privilégiés**.
 
 3. Sélectionnez **gérer les stratégies d’accès et les demandes**.
 
@@ -318,7 +318,7 @@ Si nécessaire, vous pouvez désactiver la gestion des accès privilégiés pour
 
 1. Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com) avec des informations d’identification pour un compte d’administrateur de votre organisation.
 
-2. Dans le centre d’administration, accédez à **paramètres**  >  **Organisation des paramètres d’organisation**  >  **sécurité & confidentialité**des  >  **accès privilégiés**.
+2. Dans le centre d’administration, accédez à **paramètres**  >  **Organisation des paramètres d’organisation**  >  **sécurité & confidentialité** des  >  **accès privilégiés**.
 
 3. Activez l' **autorisation exiger des approbations pour le contrôle d’accès privilégié** .
 

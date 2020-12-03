@@ -16,18 +16,18 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 description: Configurez l’authentification multifacteur à l’aide de messages texte envoyés à un téléphone intelligent dans votre environnement de test Microsoft 365 pour entreprise.
-ms.openlocfilehash: f41fe7ad933f85c4b44a1e90529a998651412191
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: 4c59405c1ce59cafaf0309e2314e5cbfa4eb080a
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487139"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558441"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-for-enterprise-test-environment"></a>Authentification multifacteur pour votre environnement de test Microsoft 365 pour les entreprises
 
 *Ce guide de laboratoire de test peut être utilisé pour les environnements de test Microsoft 365 pour les environnements de test d’entreprise et Office 365.*
 
-Pour un niveau de sécurité supplémentaire pour la connexion à Microsoft 365 ou tout service ou application qui utilise le client Azure AD pour votre abonnement, vous pouvez activer l’authentification multifacteur Azure, qui nécessite plus qu’un nom d’utilisateur et un mot de passe pour vérifier un compte.
+Pour un niveau de sécurité supplémentaire pour la connexion à Microsoft 365 ou tout service ou application qui utilise le client Azure AD pour votre abonnement, vous pouvez activer l’authentification multifacteur Azure AD, qui nécessite plus qu’un nom d’utilisateur et un mot de passe pour vérifier un compte.
 
 Avec l’authentification multifacteur, les utilisateurs doivent accuser réception d’un appel téléphonique, taper un code de vérification envoyé dans un message texte ou vérifier l’authentification avec une application sur leurs téléphones intelligents après avoir entré correctement leurs mots de passe. Ils ne peuvent se connecter qu’après la satisfaction de ce deuxième facteur d’authentification.
   
@@ -66,7 +66,7 @@ Activez l’authentification multifacteur pour le compte d’utilisateur 2 en pr
     
 5. Dans la section **utilisateur 2** , sous **étapes rapides**, sélectionnez **activer**.
     
-6. Dans la boîte de dialogue à propos de l’activation de l' **authentification multifacteur** , sélectionnez **activer l’authentification**multifacteur.
+6. Dans la boîte de dialogue à propos de l’activation de l' **authentification multifacteur** , sélectionnez **activer l’authentification** multifacteur.
     
 7. Dans la boîte de dialogue **mises à jour réussies** , sélectionnez **Fermer**.
     
@@ -120,11 +120,11 @@ Ensuite, créez un groupe nommé MFAUsers et ajoutez-y le compte utilisateur 3.
 Ensuite, créez une stratégie d’accès conditionnel pour exiger l’authentification multifacteur pour les membres du groupe MFAUsers.
 
 1. Dans un nouvel onglet de votre navigateur, accédez à [https://portal.azure.com](https://portal.azure.com) .
-2. Sélectionnez **Azure Active Directory**  >  **Security**  >  **accès conditionnel**de sécurité Azure Active Directory.
+2. Sélectionnez **Azure Active Directory**  >  **Security**  >  **accès conditionnel** de sécurité Azure Active Directory.
 3. Dans le volet **accès conditionnel – stratégies** , sélectionnez **nouvelle stratégie**.
 4. Dans le volet **nouveau** , entrez **MFA pour les comptes d’utilisateur** dans la zone **nom** .
 5. Dans la section **affectations** , sélectionnez **utilisateurs et groupes**.
-6. Sous l’onglet **inclure** du volet **utilisateurs et groupes** , sélectionnez **Sélectionner des**utilisateurs et des groupes d'  >  **utilisateurs et**  >  **de groupes**.
+6. Sous l’onglet **inclure** du volet **utilisateurs et groupes** , sélectionnez **Sélectionner des** utilisateurs et des groupes d'  >  **utilisateurs et**  >  **de groupes**.
 7. Dans le volet **Sélectionner** , sélectionnez le groupe **MFAUsers** , **puis sélectionnez**  >  **Terminer**.
 8. Dans la section **contrôles d’accès** du **nouveau** volet, sélectionnez **accorder**.
 9. Dans le volet **accorder** , sélectionnez **exiger l’authentification multifacteur**, puis sélectionnez **Sélectionner**.

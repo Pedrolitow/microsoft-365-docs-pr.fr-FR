@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez comment Contoso utilise les fonctionnalités de protection des informations de Microsoft 365 pour entreprise pour sécuriser ses biens numériques dans le Cloud.
-ms.openlocfilehash: a1aa08a20d284d3a003f4a406c37f2107ce19bd1
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 7cc51110a0bc4c87e57e71b2ddb42aa0dbaa288d
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754600"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558503"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Protection des informations de Contoso Corporation
 
@@ -34,7 +34,7 @@ Contoso a effectué une analyse de ses données et déterminé les niveaux de cl
 
 | Niveau 1 : ligne de base | Niveau 2 : Sensible | Niveau 3 : hautement réglementé |
 |:-------|:-----|:-----|
-| Les données sont chiffrées et uniquement accessibles par des utilisateurs authentifiés.<BR> <BR> Fourni pour toutes les données stockées sur site et dans le stockage et les charges de travail basées sur le Cloud. Les données sont chiffrées lorsqu’elles résident dans le service et en transit entre le service et les appareils clients. <BR><BR>Les données de niveau 1 incluent, par exemple, les communications d’entreprise normales (courrier électronique) et les fichiers des collaborateurs de l’administration, des ventes et du support technique. | Niveau 1 avec une authentification et une protection renforcées contre la perte de données.<BR> <BR> Une authentification forte comporte une authentification multi-facteur Azure (MFA) avec validation SMS. La protection contre la perte de données garantit que les informations sensibles ou critiques ne transitent pas en dehors du Cloud Microsoft.<BR><BR>Les données de niveau 2 sont, par exemple, des informations financières et juridiques ainsi que les données de recherche et de développement de nouveaux produits. | Niveau 2 avec des niveaux de chiffrement, d’authentification et d’audit plus élevés.<BR><BR>Niveaux de chiffrement des données au repos et dans le cloud les plus élevés, conformes aux réglementations locales, associés à une authentification multi-facteur avec cartes à puce et fonctionnalités d’audit et d’alerte granulaires.<BR> <BR>Des exemples de données de niveau 3 sont les informations personnelles des clients et des partenaires, les spécifications d’ingénierie de produit et les techniques de fabrication propriétaires.  |
+| Les données sont chiffrées et uniquement accessibles par des utilisateurs authentifiés.<BR> <BR> Fourni pour toutes les données stockées sur site et dans le stockage et les charges de travail basées sur le Cloud. Les données sont chiffrées lorsqu’elles résident dans le service et en transit entre le service et les appareils clients. <BR><BR>Les données de niveau 1 incluent, par exemple, les communications d’entreprise normales (courrier électronique) et les fichiers des collaborateurs de l’administration, des ventes et du support technique. | Niveau 1 avec une authentification et une protection renforcées contre la perte de données.<BR> <BR> L’authentification forte inclut l’authentification multifacteur Azure AD avec la validation SMS. La protection contre la perte de données garantit que les informations sensibles ou critiques ne transitent pas en dehors du Cloud Microsoft.<BR><BR>Les données de niveau 2 sont, par exemple, des informations financières et juridiques ainsi que les données de recherche et de développement de nouveaux produits. | Niveau 2 avec des niveaux de chiffrement, d’authentification et d’audit plus élevés.<BR><BR>Niveaux de chiffrement des données au repos et dans le cloud les plus élevés, conformes aux réglementations locales, associés à une authentification multi-facteur avec cartes à puce et fonctionnalités d’audit et d’alerte granulaires.<BR> <BR>Des exemples de données de niveau 3 sont les informations personnelles des clients et des partenaires, les spécifications d’ingénierie de produit et les techniques de fabrication propriétaires.  |
 ||||
 
 ## <a name="contoso-information-policies"></a>Stratégies d’informations contoso

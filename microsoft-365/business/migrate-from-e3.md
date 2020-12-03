@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Découvrez comment déplacer votre entreprise vers Microsoft 365 Business Premium à partir d’Office 365 E3.
-ms.openlocfilehash: b8aa58f1f050ec6247479ed02e142507a2df45fc
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: eebf78c24ed4bfd1a4fc2d843f37aebbe3d35e31
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842157"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558255"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>Migration à partir d’Office 365 E3 vers Microsoft 365 Business Premium 
 
@@ -45,7 +45,7 @@ Ce tableau présente les différences entre Microsoft 365 Business Premium et Of
 | Applications Office<sup>1</sup>    | Applications Microsoft 365 pour les entreprises    | Applications Microsoft 365 for entreprise | 
 | **Applications de productivité sur le Cloud**        | | | 
 | Exchange Online et Outlook    | limite de stockage de 50 Go par boîte aux lettres et archivage Exchange Online illimité    | limite de stockage de 100 Go par boîte aux lettres et archivage Exchange Online illimité | 
-| Teams    | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus dans Office 365 E3](../media/check-mark.png) | 
+| Équipes    | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus dans Office 365 E3](../media/check-mark.png) | 
 | OneDrive Entreprise    | limite de stockage de 1 to par utilisateur    | Illimité | 
 | Yammer, SharePoint Online, planificateur, flux    | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus dans Office 365 E3](../media/check-mark.png) | 
 | StaffHub    | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus dans Office 365 E3](../media/check-mark.png) | 
@@ -53,7 +53,7 @@ Ce tableau présente les différences entre Microsoft 365 Business Premium et Of
 | **Protection contre les menaces**        | | | 
 | Defender pour Office 365 plan 1 | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | Non inclus, mais peut être ajouté sur | 
 | **Gestion des identités**        | | | 
-| Réinitialisation du mot de passe en libre-service pour les comptes hybrides Azure Active Directory (Azure AD), Azure Multi-Factor Authentication (MFA), l’accès conditionnel, l’écriture différée de mot de passe pour les identités locales|     ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    |  | 
+| Réinitialisation du mot de passe en libre-service pour les comptes hybrides Azure Active Directory (Azure AD), l’authentification multifacteur (MFA) Azure AD, l’accès conditionnel et l’écriture différée de mot de passe pour les identités locales|     ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    |  | 
 | **Gestion des appareils et des applications**        | | |
 | Microsoft Intune, Windows AutoPilot|     ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    |  |
 | Activation d'ordinateurs partagés|     ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus dans Office 365 E3](../media/check-mark.png)| 

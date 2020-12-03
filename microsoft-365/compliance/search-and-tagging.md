@@ -2,8 +2,8 @@
 title: Recherche et balisage
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 audience: ITPro
@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 22f5adad-1bc0-460d-94a9-8732929f5b99
 description: Dans Advanced eDiscovery, le module de recherche et de marquage vous permet de rechercher, de prévisualiser et d’organiser les documents dans votre cas. Actuellement, ce module est en version bêta.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: eba95f4832e674bae0a26d3fa8466b0118a9715d
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 7afa106d07e60dfc297b90c25965dafeeb7337a7
+ms.sourcegitcommit: a566ef236c85edfd566c8c3f859b80f9e5ce0473
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818893"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49562931"
 ---
 # <a name="search-and-tagging"></a>Recherche et balisage
 
@@ -64,9 +64,9 @@ Le tableau suivant répertorie les propriétés que vous pouvez rechercher à l�
 |**relevancetag_ [TagName]**\*\* <br/> | Si un élément a été marqué manuellement pour des éléments de pertinence, la balise définie par [TagName]. <br/> |
 |||
 
-\*Disponible uniquement si le module thèmes a été exécuté.
+\* Disponible uniquement si le module thèmes a été exécuté.
 
-\*\*Disponible uniquement si le module de pertinence a été exécuté.
+\*\* Disponible uniquement si le module de pertinence a été exécuté.
 
 Vous pouvez également utiliser une carte de condition dans l’outil de recherche avancée eDiscovery pour ajouter une condition (pour les propriétés sélectionnées) à une requête de recherche. La capture d’écran suivante montre les conditions qui peuvent être ajoutées à une requête. La colonne **Group** indique si la propriété s’applique aux messages électroniques, aux documents de site ou aux deux (indiqué par la valeur *Common*). Cette colonne identifie également les propriétés pouvant faire l’objet d’une recherche après l’exécution du module de pertinence.
 
@@ -76,7 +76,7 @@ Pour plus d’informations sur les propriétés pouvant faire l’objet d’une 
   
 ## <a name="related-topics"></a>Voir aussi
 
-[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
   
 [Présentation de l’évaluation en matière de pertinence](assessment-in-relevance-in-advanced-ediscovery.md)
   

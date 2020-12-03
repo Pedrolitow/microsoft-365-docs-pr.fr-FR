@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Découvrez comment déplacer votre entreprise de Microsoft 365 Business Premium vers Microsoft 365 E3.
-ms.openlocfilehash: 3f840a27cdcf50bba7710681135f6c2e241ad14b
-ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
+ms.openlocfilehash: 3f1bb9591e1bd2bac49326325ce6c8c2d6778497
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367052"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558235"
 ---
 # <a name="migrate-from-microsoft-365-business-premium-to-microsoft-365-e3"></a>Migration de Microsoft 365 Business Premium vers Microsoft 365 E3
 
@@ -54,7 +54,7 @@ Ce tableau présente les différences entre Microsoft 365 Business Premium et Mi
 | Applications Office *    | [Applications Microsoft 365 pour les entreprises](#office-365-business)    | Applications Microsoft 365 for entreprise | 
 | **Applications de productivité sur le Cloud**        | | | 
 | Exchange Online et Outlook    | limite de stockage de 50 Go par boîte aux lettres et archivage Exchange Online illimité    | limite de stockage de 100 Go par boîte aux lettres et archivage Exchange Online illimité | 
-| Teams    | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus avec Microsoft 365 E3](../media/check-mark.png) | 
+| Équipes    | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus avec Microsoft 365 E3](../media/check-mark.png) | 
 | OneDrive Entreprise    | limite de stockage de 1 to par utilisateur    | Illimité | 
 | Yammer, SharePoint Online, planificateur, flux    | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus avec Microsoft 365 E3](../media/check-mark.png) | 
 | MileIQ    | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | | 
@@ -62,7 +62,7 @@ Ce tableau présente les différences entre Microsoft 365 Business Premium et Mi
 | Fonctionnalités de réduction de la surface d’attaque    | [Voir la liste suivante](#threat-protection) | Gestion d’entreprise de l’isolation matérielle pour Microsoft Edge | 
 | Defender pour Office 365 plan 1 | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | Non inclus, mais peut être ajouté sur | 
 | **Gestion des identités**        | | | 
-| Réinitialisation du mot de passe en libre-service pour les comptes hybrides Azure Active Directory (Azure AD), Azure Multi-Factor Authentication (MFA), l’accès conditionnel, l’écriture différée de mot de passe pour les identités locales|     ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus avec Microsoft 365 E3](../media/check-mark.png) | 
+| Réinitialisation du mot de passe en libre-service pour les comptes hybrides Azure Active Directory (Azure AD), l’authentification multifacteur (MFA) Azure AD, l’accès conditionnel et l’écriture différée de mot de passe pour les identités locales|     ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus avec Microsoft 365 E3](../media/check-mark.png) | 
 | Découverte des applications Cloud, Azure AD Connect Health    |     | ![Inclus avec Microsoft 365 E3](../media/check-mark.png) | 
 | Azure AD Office 365 Apps Single Sign-On (SSO) : 10 Apps per User (Galerie applications SaaS telles que Salesforce) * | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus avec Microsoft 365 E3](../media/check-mark.png) | 
 | Azure AD Premium 1 SSO : aucune limite (applications locales via le proxy d’application Azure AD et les applications non galerie à l’aide des modèles d’intégration d’application de Self-Service)    |     | ![Inclus avec Microsoft 365 E3](../media/check-mark.png) | 

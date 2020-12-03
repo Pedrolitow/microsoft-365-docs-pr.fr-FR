@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comment Contoso utilise les fonctionnalités de sécurité de Microsoft 365 pour les entreprises.
-ms.openlocfilehash: a72a770029328eaddf76cbe1b2039386c50c2750
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 5c951a973fbebeff92040f9411ad2c81788f920a
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920417"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558393"
 ---
 # <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Résumé de Microsoft 365 pour la sécurité d’entreprise pour Contoso Corporation
 
@@ -56,7 +56,7 @@ Pour suivre les meilleures pratiques en matière de sécurité et les exigences 
 
 - Comptes d’administrateur général dédiés avec l’authentification multifacteur (MFA) et Azure AD Privileged Identity Management (PIM)
 
-  Au lieu d’attribuer le rôle d’administrateur global aux comptes d’utilisateur quotidiens, Contoso a créé trois comptes d’administrateur général dédiés avec des mots de passe forts. Les comptes sont protégés par Azure Multi-Factor Authentication (MFA) et Azure Active Directory (Azure AD) Privileged Identity Management (PIM). *PIM est uniquement disponible avec Microsoft 365 E5.*
+  Au lieu d’attribuer le rôle d’administrateur global aux comptes d’utilisateur quotidiens, Contoso a créé trois comptes d’administrateur général dédiés avec des mots de passe forts. Les comptes sont protégés par Azure AD Multi-Factor Authentication (MFA) et Azure Active Directory (Azure AD) Privileged Identity Management (PIM). *PIM est uniquement disponible avec Microsoft 365 E5.*
 
   La connexion avec un compte d’administrateur général est uniquement réalisée pour des tâches d’administration spécifiques. Les mots de passe sont uniquement connus du personnel désigné et ne peuvent être utilisés que dans une période configurée dans Azure AD PIM.
 

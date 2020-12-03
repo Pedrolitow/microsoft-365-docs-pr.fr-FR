@@ -14,19 +14,19 @@ search.appverid: MET150
 description: Correction des menaces
 appliesto:
 - Microsoft 365 Defender
-ms.openlocfilehash: 5568a296697c7cdbbada333d45f498a2876603f9
-ms.sourcegitcommit: 5480982967a90ca3060a59676a6b29155f2de861
+ms.openlocfilehash: 4adabe3e85b2bff26167bfad92a9a7fcbf24e58e
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49350733"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561290"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Correction des courriers électroniques malveillants remis dans Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-La correction consiste à prendre une mesure déterminée contre une menace. Les courriers électroniques malveillants envoyés à votre organisation peuvent être nettoyés par le système, via la suppression automatique de zéro heure ou par les équipes de sécurité par le biais d’actions correctives telles que le *déplacement vers la boîte de réception*, le déplacement vers le *courrier indésirable*, le déplacement vers les *éléments supprimés*, la *suppression douce* ou la *Suppression définitive*. Microsoft Defender for Office 365 P2/E5 permet aux équipes de sécurité de corriger les menaces dans les fonctionnalités de messagerie et de collaboration via une enquête manuelle et automatisée.
+La correction consiste à prendre une mesure déterminée contre une menace. Les courriers électroniques malveillants envoyés à votre organisation peuvent être nettoyés par le système, par le biais de la suppression automatique des heures, ou par des équipes de sécurité par le biais d’actions correctives telles que le *déplacement vers la boîte de réception*, le déplacement vers le *courrier indésirable*, le déplacement vers les *éléments supprimés*, la *suppression douce* ou la *Suppression définitive*. Microsoft Defender for Office 365 P2/E5 permet aux équipes de sécurité de corriger les menaces dans les fonctionnalités de messagerie et de collaboration via une enquête manuelle et automatisée.
 
 > [!NOTE]
 > Pour résoudre les courriers électroniques malveillants, les équipes de sécurité doivent avoir le rôle de *recherche et de purge* affecté. L’attribution de rôle s’effectue par le biais d’autorisations dans le centre de sécurité et de conformité.

@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - remotework
 description: Protégez votre courrier électronique et vos données professionnelles contre les menaces informatiques, notamment les ransomware, le hameçonnage et les pièces jointes malveillantes.
-ms.openlocfilehash: 8f170079a5542f703376139cdd6ec4550712d0fd
-ms.sourcegitcommit: dab50e1cc5bba920720b80033c93457f5ca1c330
+ms.openlocfilehash: df6d837c31244efb1b6cea804972601acdb5dc17
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "48944370"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558537"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>12 premières tâches pour les équipes de sécurité qui prennent en charge le travail à domicile
 
@@ -42,17 +42,17 @@ Pour les clients qui utilisent nos plans d’entreprise, Microsoft vous recomman
 
 |Étape|Tâche|Tous les plans Office 365 Enterprise|Microsoft 365 E3|Microsoft 365 E5|
 |---|---|---|---|---|
-|0,1|[Activer l’authentification multifacteur Azure](#1-enable-azure-multi-factor-authentication-mfa)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|n°2|[Se protéger contre les menaces](#2-protect-against-threats)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|3|[Configurer Microsoft Defender pour Office 365](#3-configure-microsoft-defender-for-office-365)|||![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|1 |[Activer l’authentification multifacteur (MFA) Azure AD](#1-enable-azure-ad-multi-factor-authentication-mfa)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|2 |[Se protéger contre les menaces](#2-protect-against-threats)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|3 |[Configurer Microsoft Defender pour Office 365](#3-configure-microsoft-defender-for-office-365)|||![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |4 |[Configurer Microsoft Defender pour l’identité](#4-configure-microsoft-defender-for-identity)|||![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|5 |[Activer Microsoft 365 Defender](#5-turn-on-microsoft-365-defender)|||![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|5 |[Activer Microsoft 365 Defender](#5-turn-on-microsoft-365-defender)|||![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |6 |[Configurer la protection des applications mobiles Intune pour les téléphones et les tablettes](#6-configure-intune-mobile-app-protection-for-phones-and-tablets)||![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |7 |[Configurer l’authentification MFA et l’accès conditionnel pour les invités, y compris la protection des applications Intune](#7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection)||![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |8 |[Inscrire des PC dans la gestion des appareils et exiger des PC conformes](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)||![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |9 |[Optimiser votre réseau pour la connectivité Cloud](#9-optimize-your-network-for-cloud-connectivity)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |10 |[Former les utilisateurs](#10-train-users)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|a4|[Pris en main de Microsoft Cloud App Security](#11-get-started-with-microsoft-cloud-app-security)|||![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|11 |[Pris en main de Microsoft Cloud App Security](#11-get-started-with-microsoft-cloud-app-security)|||![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |12 |[Surveiller les menaces et prendre des mesures](#12-monitor-for-threats-and-take-action)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |
 
@@ -60,7 +60,7 @@ Avant de commencer, vérifiez votre [score de sécurité microsoft 365](https://
 
 ![Capture d’écran du score de sécurité Microsoft](../media/secure-score.png)
 
-## <a name="1-enable-azure-multi-factor-authentication-mfa"></a>1 : activer Azure Multi-Factor Authentication (MFA)
+## <a name="1-enable-azure-ad-multi-factor-authentication-mfa"></a>1 : activer l’authentification multifacteur Azure AD
 
 La meilleure chose que vous pouvez faire pour améliorer la sécurité pour les employés travaillant à domicile consiste à activer l’authentification multifacteur. Si vous n’avez pas encore de processus en place, traitez-le comme un pilote d’urgence et assurez-vous que les personnes du support technique sont prêtes à aider les employés qui se bloquent. Comme vous ne pouvez pas distribuer de périphériques de sécurité matérielle, utilisez les applications d’authentification Windows Hello biométrie et Smartphone telles que Microsoft Authenticator.
 
@@ -112,7 +112,7 @@ Vous devrez collaborer avec votre administrateur Exchange Online et votre admini
 
 ## <a name="4-configure-microsoft-defender-for-identity"></a>4 : configurer Microsoft Defender pour l’identité
 
-[Microsoft Defender pour identité](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) est une solution de sécurité basée sur le cloud qui exploite les signaux de votre Active Directory sur site pour identifier, détecter et examiner les menaces avancées, les identités compromises et les actions des utilisateurs malveillants ciblant votre organisation. Concentrez-vous sur cette étape, car elle protège votre infrastructure local et votre infrastructure cloud, ne dispose d’aucune dépendance ou prérequis et peut fournir des avantages immédiats.
+[Microsoft Defender for Identity](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) est une solution de sécurité basée sur le Cloud qui tire parti de vos signaux Active Directory locaux pour identifier, détecter et examiner les menaces avancées, les identités compromises et les actions malveillantes dirigées vers votre organisation. Concentrez-vous sur cette étape, car elle protège votre infrastructure local et votre infrastructure cloud, ne dispose d’aucune dépendance ou prérequis et peut fournir des avantages immédiats.
 
 - Consultez la rubrique [Microsoft Defender for Identity QuickStarts](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1) pour obtenir le programme d’installation rapidement
 - Regarder la [vidéo : présentation de Microsoft Defender pour l’identité](https://www.youtube.com/watch?reload=9&v=EGY2m8yU_KE)

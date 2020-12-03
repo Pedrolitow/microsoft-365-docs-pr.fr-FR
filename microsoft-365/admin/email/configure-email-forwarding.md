@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: Configurez le transfert du courrier vers un ou plusieurs comptes de messagerie à l’aide d’Office 365.
-ms.openlocfilehash: acdca0b19eda70d7da34ce1093a4a1b11052fd79
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: c821d4363a053b432c4376d7b4fec4926df7b568
+ms.sourcegitcommit: ff1f0a97e9d43bc786f04d2ea7e01695531b9f28
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551831"
+ms.locfileid: "49560791"
 ---
 # <a name="configure-email-forwarding"></a>Configurer le transfert des e-mails
 
@@ -39,6 +39,9 @@ ms.locfileid: "49551831"
 ::: moniker-end
   
 En tant qu’administrateur d’une organisation, vous pouvez avoir besoin d’une société pour configurer le transfert du courrier électronique pour la boîte aux lettres d’un utilisateur. Le transfert du courrier vous permet de transférer des messages électroniques envoyés à la boîte aux lettres d’un utilisateur vers une boîte aux lettres d’un autre utilisateur à l’intérieur ou à l’extérieur de votre organisation.
+
+> [!IMPORTANT]
+> Vous pouvez utiliser des stratégies de filtrage du courrier indésirable sortant pour contrôler le transfert automatique vers des destinataires externes. Pour plus d’informations, consultez la rubrique [contrôler le transfert automatique du courrier électronique externe dans Microsoft 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/external-email-forwarding?view=o365-worldwide#how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls).
 
   
 ## <a name="configure-email-forwarding"></a>Configurer le transfert des e-mails
@@ -53,7 +56,7 @@ Pour effectuer ces étapes, vous devez être administrateur Exchange ou administ
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
     
 2. Sélectionnez le nom de l’utilisateur dont vous souhaitez transférer le courrier électronique pour ouvrir la page des propriétés. 
  
@@ -71,7 +74,7 @@ Pour effectuer ces étapes, vous devez être administrateur Exchange ou administ
 
 ::: moniker range="o365-germany"
     
- 1.   Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>. 
+ 1.   Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>. 
     
 2. Sélectionnez le nom de l’utilisateur dont vous souhaitez transférer le courrier électronique pour ouvrir la page des propriétés. 
 
@@ -89,7 +92,7 @@ Pour effectuer ces étapes, vous devez être administrateur Exchange ou administ
 
 ::: moniker range="o365-21vianet"
 
- 1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>. 
+ 1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>. 
     
 2. Sélectionnez le nom de l’utilisateur dont vous souhaitez transférer le courrier électronique pour ouvrir la page des propriétés. 
 
@@ -102,5 +105,6 @@ Pour effectuer ces étapes, vous devez être administrateur Exchange ou administ
      Ou, dans le centre d’administration, [créez un groupe de distribution](../setup/create-distribution-lists.md), [Ajoutez-y les adresses](add-user-or-contact-to-distribution-list.md), puis configurez le transfert pour qu’il pointe vers la LD en suivant les instructions indiquées dans cet article.
     
 5. Ne supprimez pas le compte de l’utilisateur auquel est envoyé le courrier électronique que vous transférez ou supprimez sa licence.  Si vous le faites, le transfert du courrier s’arrêtera. 
+
 
 ::: moniker-end 

@@ -20,12 +20,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez les fonctionnalités d’enquête sur les menaces et de réponse dans Microsoft Defender for Office 365 plan.
-ms.openlocfilehash: 6dba883a910306b548f1880be00ad45207da27dd
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 7ae61e7ea70d8be5c31ec12443c8943f6e54bcf4
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845791"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561254"
 ---
 # <a name="threat-investigation-and-response"></a>Examen et réponse contre les menaces
 
@@ -33,12 +33,13 @@ ms.locfileid: "48845791"
 
 
 Les fonctionnalités d’enquête et de réponse aux menaces de [Microsoft Defender pour Office 365](office-365-atp.md) aident les analystes et administrateurs de la sécurité à protéger les utilisateurs de Microsoft 365 pour les entreprises en :
+
 - Faciliter l’identification, la surveillance et la compréhension de cyberattaques
 - Aider à résoudre rapidement les menaces dans Exchange Online, SharePoint Online, OneDrive entreprise et Microsoft teams
 - Fournir des informations et des connaissances pour aider les opérations de sécurité à empêcher les cyberattaques contre l’Organisation
 - Utilisation de [l’instruction et de la réponse automatisées dans Office 365](automated-investigation-response-office.md) pour les menaces critiques basées sur la messagerie
-    
-Les fonctionnalités d’enquête et de réponse aux menaces fournissent des informations sur les menaces et les actions de réponse associées disponibles dans le centre de sécurité &amp; conformité. Ces informations peuvent aider l’équipe de sécurité de votre organisation à protéger les utilisateurs contre les attaques de messagerie ou de fichier. Les fonctionnalités permettent de surveiller les signaux et de collecter des données à partir de plusieurs sources, telles que l’activité des utilisateurs, l’authentification, le courrier électronique, les PC compromis et les incidents de sécurité. Les décideurs d’entreprise et votre équipe en matière de sécurité peuvent utiliser ces informations pour comprendre et répondre aux menaces pesant sur votre organisation et protéger votre propriété intellectuelle.
+
+Les fonctionnalités d’enquête et de réponse aux menaces fournissent des informations sur les menaces et les actions de réponse associées disponibles dans le centre de sécurité & conformité. Ces informations peuvent aider l’équipe de sécurité de votre organisation à protéger les utilisateurs contre les attaques de messagerie ou de fichier. Les fonctionnalités permettent de surveiller les signaux et de collecter des données à partir de plusieurs sources, telles que l’activité des utilisateurs, l’authentification, le courrier électronique, les PC compromis et les incidents de sécurité. Les décideurs d’entreprise et votre équipe en matière de sécurité peuvent utiliser ces informations pour comprendre et répondre aux menaces pesant sur votre organisation et protéger votre propriété intellectuelle.
 
 ## <a name="get-acquainted-with-threat-investigation-and-response-tools"></a>Se familiariser avec les outils d’enquête et de réponse aux menaces
 
@@ -53,19 +54,19 @@ Les fonctionnalités d’enquête et de réponse aux menaces dans le centre de s
 ### <a name="threat-dashboard"></a>Tableau de bord des menaces
 
 Utilisez le tableau de bord des menaces (également appelé tableau de [bord de sécurité](security-dashboard.md)) pour voir rapidement les menaces qui ont été résolues et pour signaler aux décideurs d’entreprise comment les services Microsoft 365 sécurisent votre entreprise.
-  
+
 ![Tableau de bord des menaces](../../media/ce013a31-3f80-4d09-bb95-bfb7623b8bc4.png)
-  
-Pour afficher et utiliser ce tableau de bord, dans le centre de sécurité &amp; conformité, accédez au tableau de bord **gestion des menaces** \> **Dashboard**.
-  
+
+Pour afficher et utiliser ce tableau de bord, dans le centre de sécurité & conformité, accédez au tableau de bord **gestion des menaces** \> **Dashboard**.
+
 ### <a name="threat-explorer"></a>Threat Explorer
 
 Utilisez l' [Explorateur de menaces (et les détections en temps réel)](threat-explorer.md) pour analyser les menaces, voir le volume des attaques au fil du temps et analyser les données par familles de menaces, infrastructure des agresseurs et bien plus encore. L’Explorateur de menaces (également appelé Explorateur) est l’emplacement de départ du flux de travail d’enquête d’un analyste de la sécurité.
 
 ![Explorateur de menaces](../../media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png)
-  
-Pour afficher et utiliser ce rapport, dans le centre de sécurité &amp; conformité, accédez à l’Explorateur de **gestion des menaces** \> **Explorer**.
-  
+
+Pour afficher et utiliser ce rapport, dans le centre de sécurité & conformité, accédez à l’Explorateur de **gestion des menaces** \> **Explorer**.
+
 ### <a name="incidents"></a>Incidents
 
 Utilisez la liste des incidents (qui est également appelée « enquêtes ») pour afficher la liste des incidents de sécurité du vol. Les incidents sont utilisés pour suivre les menaces telles que les messages électroniques suspects, ainsi que pour effectuer des recherches et des corrections supplémentaires.
@@ -101,7 +102,7 @@ Microsoft Defender pour Office 365 utilise le contrôle d’accès basé sur un 
 > [!TIP]
 > Bien que certains rôles, comme administrateur de la sécurité, puissent être attribués dans le centre de sécurité & conformité, il est préférable d’utiliser le centre d’administration Microsoft 365 ou Azure Active Directory à la place. Pour plus d’informations sur les rôles, les groupes de rôles et les autorisations, consultez les ressources suivantes :
 >
-> - [Autorisations dans le centre de sécurité &amp; conformité](permissions-in-the-security-and-compliance-center.md)
+> - [Autorisations dans le centre de conformité et de sécurité](permissions-in-the-security-and-compliance-center.md)
 >
 > - [Autorisations des rôles d’administrateur dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
 
@@ -116,7 +117,7 @@ Microsoft Defender pour Office 365 utilise le contrôle d’accès basé sur un 
 |Intégrer Microsoft Defender pour Office 365 plan 2 à Microsoft Defender for Endpoint  <br/><br/> Intégration de Microsoft Defender pour Office 365 plan 2 à un serveur SIEM|Le rôle **administrateur général** ou **administrateur de sécurité** affecté dans Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) ou dans le centre d’administration 365 de Microsoft ( [https://admin.microsoft.com](https://admin.microsoft.com) ).<br/>--- **Protect** ---<br/>Un rôle approprié attribué dans des applications supplémentaires (telles que le [Centre de sécurité Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) ou votre serveur Siem)|
 |
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - [En savoir plus sur les suivis de menace-nouveau et notable](threat-trackers.md)
 

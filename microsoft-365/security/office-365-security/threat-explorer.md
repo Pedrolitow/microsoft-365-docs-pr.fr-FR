@@ -16,18 +16,18 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Découvrez comment utiliser l’Explorateur et les détections en temps réel dans le centre de sécurité &amp; conformité pour examiner et répondre efficacement aux menaces.
+description: Découvrez comment utiliser l’Explorateur et les détections en temps réel dans le centre de sécurité & conformité pour examiner et répondre efficacement aux menaces.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bc137a7390961e2b6abe049aead2b238cb9d3a16
-ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
+ms.openlocfilehash: 021810a4d64dc3a8d9089a3b7174a1b5f536745a
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49021120"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561398"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorateur de menaces et détections en temps réel
 
-Si votre organisation dispose [de Microsoft Defender pour Office 365](office-365-atp.md)et que vous disposez des [autorisations nécessaires](#required-licenses-and-permissions), vous disposez de l' **Explorateur** ou des **détections en temps réel** (auparavant des *rapports en temps réel* [).](#new-features-in-threat-explorer-and-real-time-detections) Dans le centre de sécurité & conformité, accédez à **gestion des menaces** , puis choisissez **Explorateur** _ou_ **détections en temps réel**.
+Si votre organisation dispose [de Microsoft Defender pour Office 365](office-365-atp.md)et que vous disposez des [autorisations nécessaires](#required-licenses-and-permissions), vous disposez de l' **Explorateur** ou des **détections en temps réel** (auparavant des *rapports en temps réel* [).](#new-features-in-threat-explorer-and-real-time-detections) Dans le centre de sécurité & conformité, accédez à **gestion des menaces**, puis choisissez **Explorateur** _ou_ **détections en temps réel**.
 
 |Avec Microsoft Defender pour Office 365 plan 2, vous voyez les éléments suivants :|Avec Microsoft Defender pour Office 365 plan 1, vous voyez les éléments suivants :|
 |---|---|
@@ -289,7 +289,7 @@ Ces nouvelles fonctionnalités sont décrites ci-dessous.
 
 ### <a name="preview-email-header-and-download-email-body"></a>Aperçu de l’en-tête de message et téléchargement du corps du courrier électronique
 
-La possibilité de prévisualiser un en-tête de message et de télécharger le corps du courrier est une nouvelle fonctionnalité disponible dans l’Explorateur de menaces. Les administrateurs pourront analyser les en-têtes/messages électroniques téléchargés contre les menaces. Étant donné que le téléchargement de messages électroniques peut compromettre l’exposition des informations, ce processus est contrôlé par le contrôle d’accès basé sur les rôles (RBAC). Un nouveau rôle, *Aperçu* , doit être ajouté à un autre groupe de rôles (tel que les opérations de sécurité ou administrateur de sécurité) pour accorder la possibilité de télécharger des messages et des en-têtes d’aperçu dans la vue tous les messages électroniques.
+La possibilité de prévisualiser un en-tête de message et de télécharger le corps du courrier est une nouvelle fonctionnalité disponible dans l’Explorateur de menaces. Les administrateurs pourront analyser les en-têtes/messages électroniques téléchargés contre les menaces. Étant donné que le téléchargement de messages électroniques peut compromettre l’exposition des informations, ce processus est contrôlé par le contrôle d’accès basé sur les rôles (RBAC). Un nouveau rôle, *Aperçu*, doit être ajouté à un autre groupe de rôles (tel que les opérations de sécurité ou administrateur de sécurité) pour accorder la possibilité de télécharger des messages et des en-têtes d’aperçu dans la vue tous les messages électroniques.
 
 Toutefois, l’Explorateur (et les détections en temps réel) ajoute également de nouveaux champs conçus pour vous donner une image plus complète de l’emplacement de vos messages électroniques. Une partie de cette modification est de faciliter la chasse aux personnes qui effectuent des opérations de sécurité, mais le résultat net est de savoir en un clin d’œil l’emplacement des messages électroniques posant problème.
 
@@ -318,13 +318,13 @@ Et voici ce que l’utilisateur peut voir, et ce qu’il ne peut pas faire :
 
 Emplacement de remise : affiche les résultats des stratégies et des détections qui exécutent une post-remise. Elle est liée à une action de remise. Ce champ a été ajouté pour permettre de mieux comprendre l’action entreprise lors de la détection d’un message problématique. Voici les valeurs possibles de l’emplacement de remise :
 
-- **Boîte de réception ou dossier** : le courrier électronique est dans la boîte de réception ou dans un dossier (en fonction de vos règles de messagerie électronique).
-- **Local ou externe** : la boîte aux lettres n’existe pas sur le Cloud mais est en local.
-- **Dossier de courrier indésirable** : le courrier électronique se trouve dans le dossier de courrier indésirable d’un utilisateur.
-- **Dossier éléments supprimés** : le courrier électronique dans le dossier éléments supprimés d’un utilisateur.
-- **Mise en quarantaine** : le courrier électronique en quarantaine et ne se trouve pas dans la boîte aux lettres d’un utilisateur.
-- **Échec** : la messagerie n’a pas pu atteindre la boîte aux lettres.
-- **Ignoré** : le courrier électronique est perdu dans le flux de messagerie.
+- **Boîte de réception ou dossier**: le courrier électronique est dans la boîte de réception ou dans un dossier (en fonction de vos règles de messagerie électronique).
+- **Local ou externe**: la boîte aux lettres n’existe pas sur le Cloud mais est en local.
+- **Dossier de courrier indésirable**: le courrier électronique se trouve dans le dossier de courrier indésirable d’un utilisateur.
+- **Dossier éléments supprimés**: le courrier électronique dans le dossier éléments supprimés d’un utilisateur.
+- **Mise en quarantaine**: le courrier électronique en quarantaine et ne se trouve pas dans la boîte aux lettres d’un utilisateur.
+- **Échec**: la messagerie n’a pas pu atteindre la boîte aux lettres.
+- **Ignoré**: le courrier électronique est perdu dans le flux de messagerie.
 
 ### <a name="email-timeline"></a>Chronologie du courrier électronique
 
@@ -354,14 +354,14 @@ Vous pouvez accéder au même emplacement dans le rapport des détections en tem
 
 Supposons que vous souhaitez voir les programmes malveillants détectés par les messages électroniques, par la technologie Microsoft 365. Pour ce faire, utilisez l’affichage [courrier > programmes malveillants](threat-explorer-views.md#email--malware) de l’Explorateur (ou des détections en temps réel).
 
-1. Dans le centre de sécurité & conformité ( [https://protection.office.com](https://protection.office.com) ), sélectionnez Explorateur de **gestion des menaces**  >  **Explorer** (ou **détections en temps réel** ). (Cet exemple utilise Explorer.)
+1. Dans le centre de sécurité & conformité ( [https://protection.office.com](https://protection.office.com) ), sélectionnez Explorateur de **gestion des menaces**  >  **Explorer** (ou **détections en temps réel**). (Cet exemple utilise Explorer.)
 
 2. Dans le menu **affichage** , choisissez **Email**  >  **programmes malveillants** de messagerie.
 
    > [!div class="mx-imgBorder"]
    > ![Menu Affichage de l’Explorateur](../../media/ExplorerViewEmailMalwareMenu.png)
 
-3. Cliquez sur **expéditeur** , puis choisissez technologie de détection de **base**  >  **Detection technology**.
+3. Cliquez sur **expéditeur**, puis choisissez technologie de détection de **base**  >  **Detection technology**.
 
    Vos technologies de détection sont désormais disponibles en tant que filtres pour le rapport.
 
@@ -381,16 +381,16 @@ Supposons que vous vouliez voir les tentatives de hameçonnage via des URL dans 
 
 Pour consulter les URL de hameçonnage dans les messages et les clics sur les URL dans les messages hameçons, utilisez la vue [courrier > hameçonnage](threat-explorer-views.md#email--phish) de l’Explorateur (ou des détections en temps réel).
 
-1. Dans le centre de sécurité & conformité ( [https://protection.office.com](https://protection.office.com) ), sélectionnez Explorateur de **gestion des menaces**  >  **Explorer** (ou **détections en temps réel** ). (Cet exemple utilise Explorer.)
+1. Dans le centre de sécurité & conformité ( [https://protection.office.com](https://protection.office.com) ), sélectionnez Explorateur de **gestion des menaces**  >  **Explorer** (ou **détections en temps réel**). (Cet exemple utilise Explorer.)
 
 2. Dans le menu **affichage** , choisissez **courrier**  >  **hameçon**.
 
    > [!div class="mx-imgBorder"]
    > ![Menu Affichage pour l’Explorateur dans le contexte de hameçonnage](../../media/ExplorerViewEmailPhishMenu.png)
 
-3. Cliquez sur **expéditeur** , puis sur **URL** , puis  >  **cliquez sur verdict**.
+3. Cliquez sur **expéditeur**, puis sur **URL**, puis  >  **cliquez sur verdict**.
 
-4. Sélectionnez une ou plusieurs options, telles que **bloquées** et **bloquer le remplacement** , puis cliquez sur le bouton **Actualiser** qui se trouve sur la même ligne que les options pour appliquer le filtre. (Ne pas actualiser la fenêtre de votre navigateur.)
+4. Sélectionnez une ou plusieurs options, telles que **bloquées** et **bloquer le remplacement**, puis cliquez sur le bouton **Actualiser** qui se trouve sur la même ligne que les options pour appliquer le filtre. (Ne pas actualiser la fenêtre de votre navigateur.)
 
    > [!div class="mx-imgBorder"]
    > ![URL et cliquez sur verdicts](../../media/ThreatExplorerEmailPhishClickVerdictOptions.png)
@@ -415,29 +415,29 @@ Pour consulter les URL de hameçonnage dans les messages et les clics sur les UR
 
 Dans les lances de messagerie ou d’URL, les principaux clics et les résultats de filtrage, vous verrez des valeurs de clic différentes dans le cadre de votre expérience de chasse. Vous trouverez ci-dessous les valeurs possibles des verdicts de clic et leur interprétation :
 
-- **None** : nous n’avons pas pu capturer le verdict de l’URL. L’utilisateur peut avoir cliqué dans l’URL.
-- **Autorisé** : l’utilisateur a été autorisé à accéder à l’URL.
-- **Bloqué** : l’utilisateur n’a pas pu accéder à l’URL.
-- **Verdict en attente** : l’utilisateur a été présenté avec la page de détonation en attente.
-- **Bloqué remplacé** : l’utilisateur n’a pas pu accéder à l’URL ; Toutefois, l’utilisateur overrode le bloc pour accéder à l’URL.
-- **Verdict en attente ignoré** : l’utilisateur a été présenté avec la page de détonation ; Toutefois, l’utilisateur overrode la page pour accéder à l’URL.
-- **Erreur** : l’utilisateur s’est affiché avec la page d’erreur. Cela peut également signifier qu’il y a eu une erreur lors de la capture du verdict.
-- **Échec** : une exception inconnue s’est produite lors de la capture du verdict. L’utilisateur peut avoir cliqué dans l’URL.
+- **None**: nous n’avons pas pu capturer le verdict de l’URL. L’utilisateur peut avoir cliqué dans l’URL.
+- **Autorisé**: l’utilisateur a été autorisé à accéder à l’URL.
+- **Bloqué**: l’utilisateur n’a pas pu accéder à l’URL.
+- **Verdict en attente**: l’utilisateur a été présenté avec la page de détonation en attente.
+- **Bloqué remplacé**: l’utilisateur n’a pas pu accéder à l’URL ; Toutefois, l’utilisateur overrode le bloc pour accéder à l’URL.
+- **Verdict en attente ignoré**: l’utilisateur a été présenté avec la page de détonation ; Toutefois, l’utilisateur overrode la page pour accéder à l’URL.
+- **Erreur**: l’utilisateur s’est affiché avec la page d’erreur. Cela peut également signifier qu’il y a eu une erreur lors de la capture du verdict.
+- **Échec**: une exception inconnue s’est produite lors de la capture du verdict. L’utilisateur peut avoir cliqué dans l’URL.
 
 ## <a name="review-email-messages-reported-by-users"></a>Examiner les messages électroniques signalés par les utilisateurs
 
 Supposons que vous voulez afficher les messages électroniques que les utilisateurs de votre organisation ont signalés comme courriers indésirables, non légitimes ou le hameçonnage à l’aide du [complément de message de rapport pour Outlook et Outlook sur le Web](enable-the-report-message-add-in.md). Pour ce faire, utilisez l’affichage [courrier > les soumissions](threat-explorer-views.md#email--submissions) de l’Explorateur (ou des détections en temps réel).
 
-1. Dans le centre de sécurité & conformité ( [https://protection.office.com](https://protection.office.com) ), sélectionnez Explorateur de **gestion des menaces**  >  **Explorer** (ou **détections en temps réel** ). (Cet exemple utilise Explorer.)
+1. Dans le centre de sécurité & conformité ( [https://protection.office.com](https://protection.office.com) ), sélectionnez Explorateur de **gestion des menaces**  >  **Explorer** (ou **détections en temps réel**). (Cet exemple utilise Explorer.)
 
 2. Dans le menu **affichage** , choisissez **Email**  >  **envois** de courrier électronique.
 
    > [!div class="mx-imgBorder"]
    > ![Menu Affichage pour l’Explorateur des courriers électroniques](../../media/explorer-view-menu-email-user-reported.png)
 
-3. Cliquez sur **expéditeur** , puis sur type de rapport de **base**  >  **Report type**.
+3. Cliquez sur **expéditeur**, puis sur type de rapport de **base**  >  **Report type**.
 
-4. Sélectionnez une option, par exemple **hameçonnage** , puis cliquez sur le bouton **Actualiser** .
+4. Sélectionnez une option, par exemple **hameçonnage**, puis cliquez sur le bouton **Actualiser** .
 
    > [!div class="mx-imgBorder"]
    > ![Hameçonnage signalé par l’utilisateur](../../media/EmailUserReportedReportType.png)
@@ -473,7 +473,7 @@ Vous devez disposer [de Microsoft Defender pour Office 365](office-365-atp.md) p
 
 Pour afficher et utiliser l’Explorateur ou les détections en temps réel, vous devez disposer des autorisations appropriées, telles que celles accordées à un administrateur de sécurité ou à un lecteur de sécurité.
 
-- Pour le centre de sécurité &amp; conformité, vous devez disposer de l’un des rôles suivants :
+- Pour le centre de sécurité & conformité, vous devez disposer de l’un des rôles suivants :
 
   - Gestion de l’organisation
   - Administrateur de la sécurité (qui peut être affecté dans le centre d’administration Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) ))
@@ -488,7 +488,7 @@ Pour afficher et utiliser l’Explorateur ou les détections en temps réel, vou
 
 Pour en savoir plus sur les rôles et les autorisations, consultez les ressources suivantes :
 
-- [Autorisations dans le centre de sécurité &amp; conformité](permissions-in-the-security-and-compliance-center.md)
+- [Autorisations dans le centre de conformité et de sécurité](permissions-in-the-security-and-compliance-center.md)
 - [Autorisations des fonctionnalités dans Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
 
 ## <a name="some-differences-between-threat-explorer-and-real-time-detections"></a>Différences entre l’Explorateur de menaces et les détections en temps réel

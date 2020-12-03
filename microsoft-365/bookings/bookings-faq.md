@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: Questions fréquemment posées sur Microsoft bookings.
-ms.openlocfilehash: 40605cfc7e5d30e12cd34a463a76e8d9c324efc7
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 47bb71476c3fd0b32f9be3e71b188bef6efe2498
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445450"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561554"
 ---
 # <a name="microsoft-bookings-frequently-asked-questions"></a>Questions fréquemment posées sur Microsoft bookings
 
@@ -29,7 +29,7 @@ Bookings est un service en ligne, vous n’avez donc pas besoin de télécharger
 
 ### <a name="who-has-access-to-microsoft-bookings"></a>Qui a accès à Microsoft bookings ?
 
-Bookings est disponible et actif par défaut pour les clients Microsoft 365 Business Premium, a3, a5, E3 et E5 dans le monde entier. Bookings est également disponible dans Office 365 géré par 21Vianet.
+Bookings est disponible et actif par défaut pour les clients Microsoft 365 Business Premium, Microsoft 365 Business standard, a3, a5, E3 et E5 dans le monde entier. Bookings est également disponible dans Office 365 géré par 21Vianet.
 
 ### <a name="will-my-customers-see-my-personal-or-business-calendar"></a>Mes clients verront-ils mon calendrier personnel ou professionnel ?
 
@@ -37,7 +37,7 @@ Vos clients voient uniquement le calendrier bookings que vous publiez en ligne p
 
 ### <a name="how-do-end-users-access-the-bookings-app"></a>Comment les utilisateurs finaux accèdent-ils à l’application bookings ?
 
-Toute personne disposant d’une licence pour Microsoft 365 Business Premium, a3, a5, E3, E5 ou est ajoutée en tant que membre du personnel dans les rôles administrateur ou visionneuse peut accéder aux réservations dans le sélecteur d’application dans l’expérience Web Microsoft 365. Une application auxiliaire est également disponible pour iOS et Android.
+Toute personne disposant d’une licence pour Microsoft 365 Business Premium, Microsoft 365 Business standard, a3, a5, E3, E5 ou est ajoutée en tant que membre du personnel dans les rôles administrateur ou visionneuse peut accéder aux réservations dans le sélecteur d’application dans l’expérience Web Microsoft 365. Une application auxiliaire est également disponible pour iOS et Android.
 
 ### <a name="can-i-use-bookings-in-my-own-web-site"></a>Puis-je utiliser bookings dans mon propre site Web ?
 
@@ -49,9 +49,9 @@ Oui. Nous fournissons un lien vers votre page de réservation dans l’onglet **
 
 ### <a name="can-our-it-department-control-whether-end-users-can-access-bookings"></a>Notre service informatique peut-il contrôler si les utilisateurs finaux peuvent accéder aux réservations ?
 
-Bookings est disponible dans les clients Business Premium, M365 a3/a5 et E3/E5 par défaut, mais les administrateurs peuvent le désactiver dans le centre d’administration Microsoft 365 s’ils choisissent. Pour ce faire, [suivez les instructions ci-dessous](turn-bookings-on-or-off.md).
+Bookings est disponible dans Microsoft 365 Business Premium, Microsoft 365 Business standard, M365 a3/a5 et E3/E5 locataires par défaut, mais les administrateurs peuvent le désactiver dans le centre d’administration de Microsoft 365 s’ils le choisissent. Pour ce faire, [suivez les instructions ci-dessous](turn-bookings-on-or-off.md).
 
-Si un client souhaite désactiver l’accès aux réservations pour certaines licences éligibles dans son client, il peut soit utiliser une stratégie de groupe pour limiter les licences, soit implémenter une stratégie de boîte aux lettres OWA qui limitera les personnes en mesure de créer des calendriers de réservations.
+Si un client souhaite désactiver l’accès aux réservations pour certaines licences éligibles dans son client, il peut utiliser une stratégie de groupe pour limiter les licences ou implémenter une stratégie de boîte aux lettres OWA qui limitera les personnes en mesure de créer des calendriers de réservations.
 
 Si vous utilisez une stratégie de boîte aux lettres OWA pour désactiver l’accès aux réservations, tous les utilisateurs auront une licence de livres, cependant, lorsqu’ils tenteront d’accéder à l’application, ils ne fonctionneront que s’ils font partie de la stratégie ou s’ils ont été ajoutés à un calendrier bookings existant en tant que personnel. Détails [dans](turn-bookings-on-or-off.md) la section « autoriser uniquement les utilisateurs sélectionnés à créer des calendriers de livrets ».
 
@@ -114,7 +114,7 @@ Bookings est une solution idéale pour les clients d’entreprise et de petite e
 
 ### <a name="how-do-i-get-microsoft-bookings"></a>Comment obtenir des livres Microsoft ?
 
-Bookings est disponible dans Microsoft 365 pour les clients disposant de licences Business Premium, a3, a5, E3 et E5, ainsi qu’une application de complément iOS et Android. Bookings n’est pas disponible en tant qu’application autonome. Outlook Web App ou Outlook sur le Web doit être activé pour utiliser les réservations, car il stocke les données dans Outlook.
+Bookings est disponible dans Microsoft 365 pour les clients disposant des licences Microsoft 365 Business Premium, Microsoft 365 Business standard, a3, a5, E3 et E5, ainsi qu’une application de complément iOS et Android. Bookings n’est pas disponible en tant qu’application autonome. Outlook Web App ou Outlook sur le Web doit être activé pour utiliser les réservations, car il stocke les données dans Outlook.
 
 Une licence de livres offre des fonctionnalités complètes pour le produit, notamment la création et la gestion de calendriers. Elle permet également aux utilisateurs d’afficher et de modifier des calendriers existants lorsque ces utilisateurs sont ajoutés en tant que personnel dans un rôle d’administrateur ou de visionneuse.
 
@@ -172,9 +172,9 @@ Un paramètre appelé **délai maximal** détermine le plus à l’avance (mesur
 
 ### <a name="how-does-bookings-work-across-time-zones"></a>Comment les réservations fonctionnent-elles sur plusieurs fuseaux horaires ?
 
-Toutes les heures se situent dans le fuseau horaire de l’entreprise (votre fuseau horaire local) par défaut. Cela signifie que tout paramètre que vous configurez pour un calendrier bookings, tel que les heures de travail, apparaît dans ce fuseau horaire. La page libre-service permet d’afficher toutes les heures de rendez-vous dans le fuseau horaire de l’utilisateur final, qui peut être désactivé si vous le souhaitez.Si l’option **toujours afficher les créneaux horaires dans le fuseau horaire de l’entreprise** reste désactivée sous l’onglet réservations, les personnes visitant cette page verront les créneaux horaires dans leurs fuseaux horaires locaux.
+Toutes les heures se situent dans le fuseau horaire de l’entreprise (votre fuseau horaire local) par défaut. Cela signifie que tout paramètre que vous configurez pour un calendrier bookings, tel que les heures de travail, apparaît dans ce fuseau horaire. La page libre-service permet d’afficher toutes les heures de rendez-vous dans le fuseau horaire de l’utilisateur final, qui peut être désactivé si vous le souhaitez. Si l’option **toujours afficher les créneaux horaires dans le fuseau horaire de l’entreprise** reste désactivée sous l’onglet réservations, les personnes visitant cette page verront les créneaux horaires dans leurs fuseaux horaires locaux.
 
-:::image type="content" source="media/bookings-faq-region.png" alt-text="Planification dans les réservations":::
+:::image type="content" source="media/bookings-faq-region.png" alt-text="Paramètres de région et de fuseau horaire des réservations":::
 
 Il n’existe aucune provision pour définir le fuseau horaire du personnel dans bookings. Le fuseau horaire du personnel et, par conséquent, les heures d’ouverture, sera dans le fuseau horaire de l’entreprise.
 
@@ -202,7 +202,7 @@ Oui, nous disposons d’une fonctionnalité de livres de groupes qui permet à p
 
 Oui. Il existe une case à cocher sous l’onglet page de réservation dans l’application Web : **nécessite un compte Microsoft 365 ou Office 365 de la part de mon organisation pour livrer**. L’activation de cette case à cocher restreint l’accès à la page libre-service uniquement à ceux qui se trouvent dans votre client. Le calendrier bookings qui se trouve dans l’application Web pour la création et la gestion est accessible uniquement par les personnes ajoutées en tant que personnel à la page avec des rôles administrateur ou visionneuse.
 
-:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Planification dans les réservations":::
+:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Réservation du contrôle d’accès aux pages dans bookings":::
 
 ### <a name="how-frequently-does-the-home-page-update"></a>Quelle est la fréquence de mise à jour de la page d’accueil ?
 
@@ -250,7 +250,7 @@ Chaque calendrier bookings est géré indépendamment. Il n’existe pas d’aff
 
 L’accès à l’application Web bookings implique l’authentification via l’authentification AAD (Azure Active Directory) normale. La page réservation libre-service peut être mise à la disposition de tous les utilisateurs disposant du lien page Web. Toutefois, lorsque le paramètre **exiger un compte Microsoft 365 ou Office 365 du site mon organisation** à livre est sélectionné, l’utilisation de la page est restreinte uniquement dans le client Microsoft 365 (à l’aide de l’authentification AAD).
 
-:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Planification dans les réservations":::
+:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Réservation du contrôle d’accès aux pages dans bookings":::
 
 ### <a name="does-customer-data-leave-the-production-system-for-any-reason"></a>Les données client quittent-elles le système de production pour une raison quelconque ?
 
@@ -303,7 +303,8 @@ Pour que les réservations soient synchronisées correctement avec les calendrie
 
 1. Connectez-vous à Microsoft 365, puis sélectionnez **Outlook** à partir du lanceur d’applications.
 
-   ![Image d’Outlook dans le lanceur d’applications](../media/bookings-applauncher-outlook.png)
+   > [!div class="mx-imgBorder"]
+   > ![Image d’Outlook dans le lanceur d’applications](../media/bookings-applauncher-outlook.png)
 
 1. En haut de la page, sélectionnez **partager** le \> **calendrier**.
 
@@ -311,10 +312,11 @@ Pour que les réservations soient synchronisées correctement avec les calendrie
 
 1. Dans la section **personnes au sein de votre organisation** , sélectionnez la zone de liste déroulante en regard de **mon organisation**, puis sélectionnez l’option **afficher quand je suis occupé**.
 
-> [!NOTE]
-> Ce paramètre partage vos informations de disponibilité avec les réservations et avec d’autres utilisateurs au sein de votre organisation. Il n’inclut pas d’autres informations, telles que le type de rendez-vous planifié, l’utilisateur avec lequel vous avez planifié le rendez-vous ou son emplacement.
+   > [!NOTE]
+   > Ce paramètre partage vos informations de disponibilité avec les réservations et avec d’autres utilisateurs au sein de votre organisation. Il n’inclut pas d’autres informations, telles que le type de rendez-vous planifié, l’utilisateur avec lequel vous avez planifié le rendez-vous ou son emplacement.
 
-   ![Image de l’écran de partage de calendrier avec possibilité de voir quand je suis occupé](../media/bookings-view-busy.png)
+   > [!div class="mx-imgBorder"]
+   > ![Image de l’écran de partage de calendrier avec possibilité de voir quand je suis occupé](../media/bookings-view-busy.png)
 
 1. Sélectionnez **Terminé**.
 
@@ -335,7 +337,7 @@ Si un employé a quitté votre entreprise et que vous l’avez supprimé de votr
 
 Pour vérifier si vous avez plusieurs calendriers, dans le menu de gauche, sélectionnez la flèche déroulante en regard du nom de votre société, puis sélectionnez **ouvrir**. Si vous n’avez qu’un seul calendrier, vous ne verrez que la possibilité d’ajouter un calendrier de réservation. Cet exemple montre qu’il existe un deuxième calendrier nommé « Contoso CO ».
 
-   ![Image de choisir un écran de calendrier avec un deuxième calendrier affiché](../media/bookings-choose-calendar.png)
+![Image de choisir un écran de calendrier avec un deuxième calendrier affiché](../media/bookings-choose-calendar.png)
 
 ### <a name="theres-a-syncing-error-we-cant-identify"></a>Il y a une erreur de synchronisation que nous ne pouvons pas identifier.
 

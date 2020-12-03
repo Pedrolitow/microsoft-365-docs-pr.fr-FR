@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 9c8d9dbc0087f1b7311863ea63e578bad3040249
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 793f51146dc85dc1c6750e82301d0e1206187ad9
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357433"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558198"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Prise en main de la gestion des risques internes
 
@@ -92,8 +92,6 @@ Pour obtenir des instructions détaillées sur l’activation de l’audit, cons
 ## <a name="step-3-configure-prerequisites-for-templates"></a>Étape 3 : configuration des conditions préalables pour les modèles
 
 La plupart des modèles de gestion des risques Insiders comportent des éléments prérequis qui doivent être configurés pour que les indicateurs de stratégie génèrent des alertes d’activité pertinentes. Configurez les conditions préalables appropriées en fonction des stratégies que vous prévoyez de configurer pour votre organisation.
-
-Si vous configurez une stratégie à l’aide du *langage offensant dans le modèle de stratégie de messagerie* , vous pouvez ignorer cette étape et passer directement à l' **étape 4**.
 
 ### <a name="configure-microsoft-365-hr-connector"></a>Configurer le connecteur RH de Microsoft 365
 
@@ -208,7 +206,7 @@ Les stratégies de gestion des risques internes incluent les utilisateurs attrib
 11. Sélectionnez **suivant** pour continuer.
 12. Sur la page **révision** , passez en revue les paramètres que vous avez choisis pour la stratégie. Sélectionnez **modifier** pour modifier les valeurs de la stratégie ou sélectionnez **Envoyer** pour créer et activer la stratégie.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Une fois que vous avez terminé ces étapes pour créer votre première stratégie de gestion des risques Insiders, vous commencerez à recevoir des alertes des indicateurs d’activité après environ 24 heures. Configurez des stratégies supplémentaires selon vos besoins à l’aide des instructions de l’étape 4 de cet article ou des procédures décrites dans [Create a New Insider Risk Policy](insider-risk-management-policies.md#create-a-new-policy).
 

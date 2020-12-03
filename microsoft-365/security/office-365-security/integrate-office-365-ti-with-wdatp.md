@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Utilisez Microsoft Defender pour Office 365 avec Microsoft Defender for Endpoint pour obtenir des informations plus détaillées sur les menaces pesant sur vos appareils et votre contenu de messagerie.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7f668aa1234509789dacd2b018b94f1bfbc79e2c
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 8a598dce3a8049d97d43b742477ca8f7a2bfeadb
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357778"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561218"
 ---
 # <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>Utiliser Microsoft Defender pour Office 365 avec Microsoft Defender pour le point de terminaison
 
@@ -47,7 +47,7 @@ Dans cet exemple, vous pouvez voir que les destinataires du message électroniqu
 
 - Votre organisation doit avoir Microsoft Defender pour Office 365 (ou Office 365 E5) et Microsoft Defender pour le point de terminaison.
     
-- Vous devez être un administrateur général ou disposer d’un rôle d’administrateur de sécurité (tel que administrateur de sécurité) affecté dans le [ &amp; Centre de sécurité](https://protection.office.com)et de conformité. (Voir [Permissions in the Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md))
+- Vous devez être un administrateur général ou disposer d’un rôle d’administrateur de sécurité (tel que administrateur de sécurité) affecté dans le [Centre de sécurité & conformité](https://protection.office.com). (Consultez [la rubrique autorisations dans le centre de sécurité & conformité](permissions-in-the-security-and-compliance-center.md))
     
 - Vous devez avoir accès à l' [Explorateur (ou aux détections en temps réel)](threat-explorer.md) dans le centre de sécurité & conformité et au centre de sécurité Microsoft Defender.
     
@@ -73,6 +73,6 @@ L’intégration de Microsoft Defender pour Office 365 avec Microsoft Defender p
 
 [Fonctionnalités d’enquête et de réponse aux menaces dans Office 365](office-365-ti.md)
   
-[Microsoft Defender pour Office 365](office-365-atp.md)
+[Microsoft Defender pour Office 365](office-365-atp.md)
   
-[Microsoft Defender pour point de terminaison](https://docs.microsoft.com/windows/security/threat-protection)
+[Microsoft Defender pour le point de terminaison](https://docs.microsoft.com/windows/security/threat-protection)

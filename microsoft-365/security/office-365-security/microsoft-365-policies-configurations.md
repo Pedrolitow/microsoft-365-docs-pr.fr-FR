@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-overview
-ms.openlocfilehash: 993dd1ed66ca5bc6635c0eadf2dc7345ab84b57d
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 0144e9478e74e252e0c4ccc0c902df376129c388
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49356918"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558285"
 ---
 # <a name="identity-and-device-access-configurations"></a>Configurations des identités et de l’accès aux appareils
 
@@ -110,7 +110,7 @@ Azure AD fournit une suite complète de fonctionnalités de gestion des identit�
 
 |Fonctionnalité|Description|Licence|
 |---|---|---|
-|[Authentification multifacteur (MFA)](/azure/active-directory/authentication/concept-mfa-howitworks)|L’authentification multifacteur exige que les utilisateurs fournissent deux formes de vérification, telles qu’un mot de passe utilisateur, ainsi qu’une notification de l’application Microsoft Authenticator ou d’un appel téléphonique. MFA réduit considérablement le risque que des informations d’identification volées puissent être utilisées pour accéder à votre environnement. Microsoft 365 utilise le service d’authentification multifacteur Azure pour les connexions MFA.|Microsoft 365 E3 ou E5|
+|[Authentification multifacteur (MFA)](/azure/active-directory/authentication/concept-mfa-howitworks)|L’authentification multifacteur exige que les utilisateurs fournissent deux formes de vérification, telles qu’un mot de passe utilisateur, ainsi qu’une notification de l’application Microsoft Authenticator ou d’un appel téléphonique. MFA réduit considérablement le risque que des informations d’identification volées puissent être utilisées pour accéder à votre environnement. Microsoft 365 utilise le service d’authentification multifacteur Azure AD pour les connexions MFA.|Microsoft 365 E3 ou E5|
 |[Accès conditionnel](/azure/active-directory/conditional-access/overview)|Azure AD évalue les conditions de connexion de l’utilisateur et utilise des stratégies d’accès conditionnel pour déterminer l’accès autorisé. Par exemple, dans ce guide, nous vous montrons comment créer une stratégie d’accès conditionnel pour exiger la conformité de l’appareil pour l’accès aux données sensibles. Cela réduit considérablement le risque qu’un pirate avec son propre appareil et des informations d’identification dérobées puisse accéder à vos données sensibles. Il protège également les données sensibles sur les appareils, car les appareils doivent répondre à des exigences spécifiques en matière d’intégrité et de sécurité.|Microsoft 365 E3 ou E5|
 |[Groupes Azure AD](/azure/active-directory/fundamentals/active-directory-manage-groups)|Les stratégies d’accès conditionnel, la gestion des appareils avec Intune, et même les autorisations sur les fichiers et les sites de votre organisation, dépendent de l’affectation à des comptes d’utilisateurs ou à des groupes Azure AD. Nous vous recommandons de créer des groupes Azure AD qui correspondent aux niveaux de protection que vous implémentez. Par exemple, votre personnel exécutif est probablement plus à même de cibler des pirates. Par conséquent, il est logique d’ajouter les comptes d’utilisateur de ces employés à un groupe Azure AD et d’affecter ce groupe aux stratégies d’accès conditionnelles et à d’autres stratégies qui appliquent un niveau de protection plus élevé pour l’accès.|Microsoft 365 E3 ou E5|
 |[Enregistrement de l’appareil](/azure/active-directory/devices/overview)|Vous inscrivez un appareil dans Azure AD pour créer une identité pour l’appareil. Cette identité est utilisée pour authentifier l’appareil lorsqu’un utilisateur se connecte et pour appliquer des stratégies d’accès conditionnel qui nécessitent des PC joints à un domaine ou des PC conformes. Pour ce guide, nous utilisons l’inscription d’appareil pour inscrire automatiquement des ordinateurs Windows associés à un domaine. L’enregistrement d’appareil est une condition préalable à la gestion des appareils avec Intune.|Microsoft 365 E3 ou E5|

@@ -2,8 +2,8 @@
 title: Décision basée sur les résultats dans Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
 description: Découvrez comment l’onglet décider dans Advanced eDiscovery fournit des données qui peuvent vous aider à déterminer la taille correcte de l’ensemble de révision des fichiers de cas.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 04c6f0c8fede315f175e0ed6ae265c7463405a62
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 60213226bef1c04767d4be17a09b58d6940ac223
+ms.sourcegitcommit: a566ef236c85edfd566c8c3f859b80f9e5ce0473
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46528004"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49562965"
 ---
 # <a name="decision-based-on-the-results-in-advanced-ediscovery-classic"></a>Décision basée sur les résultats dans Advanced eDiscovery (classique)
 
@@ -56,7 +56,7 @@ Le volet de détails étendu affiche des détails supplémentaires. Les fichiers
   
 ## <a name="related-topics"></a>Voir aussi
 
-[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
   
 [Présentation de l’évaluation en matière de pertinence](assessment-in-relevance-in-advanced-ediscovery.md)
   

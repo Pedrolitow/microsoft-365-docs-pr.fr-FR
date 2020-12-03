@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: a36e5a52-4df2-479e-bb97-9e67b8483e10
 description: Découvrez comment modifier le profil de votre organisation, par exemple le nom de l’organisation, l’adresse, le téléphone, le contact technique et la messagerie électronique.
-ms.openlocfilehash: 17202bb35e6d5e7d40b135f65467aef111aad070
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 19769c827284000e1ad0e86e3666d9980322b6a9
+ms.sourcegitcommit: ff1f0a97e9d43bc786f04d2ea7e01695531b9f28
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645106"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49560852"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>Modifier l'adresse de votre organisation, le contact technique et d'autres informations de profil
 
@@ -73,14 +73,15 @@ En tant qu’administrateur, vous pouvez modifier votre adresse de messagerie de
 
 1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a>.
 
-2. Dans l’en-tête, sélectionnez votre icône de profil, puis sélectionnez **mon compte**.
+2. Dans l’en-tête, sélectionnez votre icône de profil, puis sélectionnez **afficher le compte**.
 
-3. À gauche, sélectionnez **infos personnelles**.
+3. À gauche, sélectionnez **informations de sécurité**.
 
-4. Dans la fiche **Détails du contact** , sélectionnez **modifier**.
+4. Dans la section courrier électronique, sélectionnez **modifier** .
 
-5. Modifiez l’adresse dans la zone autre adresse de **messagerie** , puis sélectionnez **Enregistrer**.
+5. Modifiez l’adresse dans la zone adresse de **messagerie de secours** , puis cliquez sur **suivant**.
 
+6. Entrez le code envoyé à l’adresse de messagerie de secours et sélectionnez **OK** pour vérifier la modification.
 Pour en savoir plus sur la modification d’autres informations de profil, voir [modifier vos préférences de contact](change-contact-preferences.md) ou [modifier votre langue d’affichage](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b.aspx).
   
 ### <a name="email-signatures"></a>Signatures électroniques

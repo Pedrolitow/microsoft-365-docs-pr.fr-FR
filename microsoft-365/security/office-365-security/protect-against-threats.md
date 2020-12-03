@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 description: Les administrateurs peuvent en savoir plus sur la protection contre les menaces dans Microsoft 365 et configurer la façon de l’utiliser pour votre organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d80e81ab5648d186bb72f29acc010442877aba7c
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 98a20c8805ff9eb735ca880cfc24a0acf9698b3e
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49356678"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561200"
 ---
 # <a name="protect-against-threats"></a>Protéger contre les menaces
 
@@ -54,7 +54,7 @@ Les fonctionnalités de protection contre les menaces sont incluses dans *tous l
 |Protection anti-hameçonnage|[Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Protection anti-courrier indésirable|[Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Purge automatique avec zéro heure (pour la messagerie électronique)|[Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
-|Protection contre les URL et les fichiers malveillants dans les e-mails et les documents Office (liens fiables et pièces jointes fiables)|[Microsoft Defender pour Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
+|Protection contre les URL et les fichiers malveillants dans les e-mails et les documents Office (liens fiables et pièces jointes fiables)|[Microsoft Defender pour Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 |Activer la protection avancée contre les menaces pour les charges de travail SharePoint, OneDrive et Microsoft teams|[Defender pour Office 365 ](atp-for-spo-odb-and-teams.md)|
 |Protection avancée contre le hameçonnage|[Defender pour Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 
@@ -71,7 +71,7 @@ Pour configurer les stratégies Defender pour Office 365, vous devez disposer d�
 |Gestion d’Organisation Exchange Online|[Autorisations dans Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <br>et<br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)|
 |
 
-Pour en savoir plus, consultez [la rubrique autorisations dans le centre de sécurité &amp; conformité](permissions-in-the-security-and-compliance-center.md).
+Pour en savoir plus, consultez [la rubrique autorisations dans le centre de sécurité & conformité](permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="before-you-begin-turn-on-audit-logging-for-reporting-and-investigation"></a>Avant de commencer, activez la journalisation d’audit pour la création de rapports et l’enquête.
 

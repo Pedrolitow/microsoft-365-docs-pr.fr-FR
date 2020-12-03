@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Résumé : informations supplémentaires sur l’expérience client lors du passage de Microsoft Cloud Germany (Microsoft Cloud Deutschland) vers les services Office 365 dans la nouvelle région de centre de données allemande.'
-ms.openlocfilehash: b282a12966e7a6dc8a1a331409834322c5087a10
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: 1eef8be624a92bf2dcaba8f0df2147697202be3a
+ms.sourcegitcommit: ff1f0a97e9d43bc786f04d2ea7e01695531b9f28
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551874"
+ms.locfileid: "49560837"
 ---
 # <a name="additional-experience-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Informations supplémentaires sur l’expérience de la migration à partir de Microsoft Cloud Deutschland 
 
@@ -101,7 +101,7 @@ Si vous utilisez un déploiement hybride sur site :
 
 | Étape (s) | Description | S’applique à | Impact |
 |:-------|:-----|:-------|:-------|
-| Clients, Office Online pendant le basculement du client Office, Azure AD finalise l’étendue du client pour pointer vers les services Office 365.<!--v-gmoor: What?--> | Ce changement de configuration permet aux clients Office de mettre à jour et de pointer vers les points de terminaison des services Office 365. | Tous les clients Office | -Supprimez MSOID CNAME du DNS appartenant au client, le cas échéant. <br><br> -Avertir les utilisateurs de fermer _toutes les_ applications Office, puis de se reconnecter (ou forcer les clients à redémarrer et aux utilisateurs de se connecter) pour permettre aux clients Office de prendre les modifications. <br><br> -Avertir les utilisateurs et le personnel du support technique que les utilisateurs *peuvent* voir apparaître une bannière Office pour les inviter à réactiver les applications Office dans les 72 heures du basculement. <br><br> -Toutes les applications Office sur les ordinateurs personnels doivent être fermées, et les utilisateurs doivent se déconnecter, puis se reconnecter. Dans la barre d’activation jaune, connectez-vous pour réactiver les services Office 365. <br><br> -Les machines partagées nécessitent des actions similaires aux machines personnelles et ne nécessitent pas de procédure spéciale. <br><br> -Sur les appareils mobiles, les utilisateurs doivent se déconnecter des applications, les fermer, puis se reconnecter. |
+| Clients, Office Online pendant le basculement du client Office, Azure AD finalise l’étendue du client pour pointer vers les services Office 365. | Ce changement de configuration permet aux clients Office de mettre à jour et de pointer vers les points de terminaison des services Office 365. | Tous les clients Office | -Supprimez MSOID CNAME du DNS appartenant au client, le cas échéant. <br><br> -Avertir les utilisateurs de fermer _toutes les_ applications Office, puis de se reconnecter (ou forcer les clients à redémarrer et aux utilisateurs de se connecter) pour permettre aux clients Office de prendre les modifications. <br><br> -Avertir les utilisateurs et le personnel du support technique que les utilisateurs *peuvent* voir apparaître une bannière Office pour les inviter à réactiver les applications Office dans les 72 heures du basculement. <br><br> -Toutes les applications Office sur les ordinateurs personnels doivent être fermées, et les utilisateurs doivent se déconnecter, puis se reconnecter. Dans la barre d’activation jaune, connectez-vous pour réactiver les services Office 365. <br><br> -Les machines partagées nécessitent des actions similaires aux machines personnelles et ne nécessitent pas de procédure spéciale. <br><br> -Sur les appareils mobiles, les utilisateurs doivent se déconnecter des applications, les fermer, puis se reconnecter. |
 |||||
 
 <!--
@@ -117,7 +117,7 @@ Pour eDiscovery :
 
 | Étape (s) | Description | S’applique à | Impact |
 |:-------|:-----|:-------|:-------|
-| Lors de la migration, les recherches de découverte électronique échouent ou renvoient 0 résultats pour SharePoint Online, OneDrive entreprise et les emplacements Exchange Online qui ont été migrés. | Lors de la migration, les clients peuvent continuer à créer des cas, des suspensions, des recherches et des exportations dans le centre de sécurité & conformité, notamment la recherche de contenu.  Toutefois, les recherches sur SharePoint Online, OneDrive entreprise et les emplacements Exchange Online qui ont été migrés renvoient 0 résultat, sinon une erreur est générée. Pour la correction, reportez-vous à la colonne _impact_ . | Tous les clients utilisant eDiscovery |  Si une recherche renvoie 0 résultat ou une erreur lors de la migration, effectuez l’action suivante pour SharePoint Online : <br><br>  Téléchargez des sites directement à partir du site SharePoint Online/OneDrive entreprise en suivant les instructions de la procédure de [téléchargement des fichiers et des dossiers à partir de OneDrive ou de SharePoint](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05). Cette méthode nécessite des autorisations d’administrateur SharePoint Online ou des autorisations en lecture seule sur le site. <br><br> Si les limites sont dépassées, comme expliqué dans [Télécharger des fichiers et des dossiers à partir de OneDrive ou de SharePoint](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05), les clients peuvent utiliser le client de synchronisation OneDrive entreprise en suivant les instructions de la rubrique [synchroniser des fichiers SharePoint et teams avec votre ordinateur](https://support.office.com/article/sync-sharepoint-files-with-the-new-onedrive-sync-app-6de9ede8-5b6e-4503-80b2-6190f3354a88). <br><br> -Exchange Online <br><br> - [Découverte électronique inaltérable dans Exchange Server](https://docs.microsoft.com/Exchange/policy-and-compliance/ediscovery/ediscovery) |
+| Lors de la migration, les recherches de découverte électronique échouent ou renvoient 0 résultats pour SharePoint Online, OneDrive entreprise et les emplacements Exchange Online qui ont été migrés. | Lors de la migration, les clients peuvent continuer à créer des cas, des suspensions, des recherches et des exportations dans le [Centre de sécurité & conformité](https://docs.microsoft.com/microsoft-365/compliance/manage-legal-investigations), notamment la [recherche de contenu](https://docs.microsoft.com/microsoft-365/compliance/search-for-content).  Toutefois, les recherches sur SharePoint Online, OneDrive entreprise et les emplacements Exchange Online qui ont été migrés renvoient 0 résultat, sinon une erreur est générée. Pour la correction, reportez-vous à la colonne _impact_ . | Tous les clients utilisant eDiscovery |  Si une recherche renvoie 0 résultat ou une erreur lors de la migration, effectuez l’action suivante pour SharePoint Online : <br><br>  Téléchargez des sites directement à partir du site SharePoint Online/OneDrive entreprise en suivant les instructions de la procédure de [téléchargement des fichiers et des dossiers à partir de OneDrive ou de SharePoint](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05). Cette méthode nécessite des autorisations d’administrateur SharePoint Online ou des autorisations en lecture seule sur le site. <br><br> Si les limites sont dépassées, comme expliqué dans [Télécharger des fichiers et des dossiers à partir de OneDrive ou de SharePoint](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05), les clients peuvent utiliser le client de synchronisation OneDrive entreprise en suivant les instructions de la rubrique [synchroniser des fichiers SharePoint et teams avec votre ordinateur](https://support.office.com/article/sync-sharepoint-files-with-the-new-onedrive-sync-app-6de9ede8-5b6e-4503-80b2-6190f3354a88). <br><br> -Exchange Online <br><br> - [Découverte électronique inaltérable dans Exchange Server](https://docs.microsoft.com/Exchange/policy-and-compliance/ediscovery/ediscovery) |
 |||||
 
 <!--
@@ -125,7 +125,7 @@ Pour eDiscovery :
 -->          
 
 
-### <a name="sharepoint-online"></a>SharePoint Online
+### <a name="sharepoint-online"></a>SharePoint Online
 
 | Étape (s) | Description | S’applique à | Impact |
 |:-------|:-----|:-------|:-------|
@@ -234,7 +234,7 @@ Pour eDiscovery :
 [Reference: Experience – Post Migration][ [eDiscovery]
 -->             
 
-### <a name="sharepoint-online"></a>SharePoint Online
+### <a name="sharepoint-online"></a>SharePoint Online
 
 | Étape (s) | Description | S’applique à | Impact |
 |:-------|:-----|:-------|:-------|
@@ -260,7 +260,7 @@ Mise en route :
 
 Navigation par le biais de la transition :
 
-- [Actions et impacts sur les phases de migration](ms-cloud-germany-transition-phases.md)
+- [Actions et impacts des phases de migration](ms-cloud-germany-transition-phases.md)
 - [Pré-travail supplémentaire](ms-cloud-germany-transition-add-pre-work.md)
 - Informations supplémentaires pour les [services](ms-cloud-germany-transition-add-general.md), les [appareils](ms-cloud-germany-transition-add-devices.md), les [expériences](ms-cloud-germany-transition-add-experience.md)et [AD FS](ms-cloud-germany-transition-add-adfs.md).
 

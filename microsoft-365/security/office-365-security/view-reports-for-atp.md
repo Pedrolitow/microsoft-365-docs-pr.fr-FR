@@ -17,14 +17,14 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Recherchez et utilisez des rapports pour Microsoft Defender pour Office 365 dans le centre de sécurité &amp; conformité.
+description: Recherchez et utilisez des rapports pour Microsoft Defender pour Office 365 dans le centre de sécurité & conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8885eea2168cc40c497f6fa1066ae020dda7fd7c
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 5efaef018c78bd161c9cde81af36be92173479ae
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087708"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561726"
 ---
 # <a name="view-reports-for-microsoft-defender-for-office-365"></a>Afficher les rapports pour Microsoft Defender pour Office 365
 
@@ -35,7 +35,7 @@ Microsoft Defender pour les organisations Office 365 (par exemple, les abonnemen
 
 ![Tableau de bord des rapports dans le centre de sécurité & conformité](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
-## <a name="defender-for-office-365-file-types-report"></a>Rapport sur les types de fichiers de Defender pour Office 365
+## <a name="defender-for-office-365-file-types-report"></a>Rapport de types de fichiers Defender 365 pour Office
 
 Le rapport de **rapports sur les types de fichiers Office 365 Defender** indique le type de fichiers détectés comme malveillants par des [pièces jointes fiables](atp-safe-attachments.md).
 
@@ -119,7 +119,7 @@ Si vous cliquez sur **afficher les détails table**, le rapport fournit une vue 
 
 Pour revenir à l’affichage rapports, cliquez sur **afficher le rapport**.
 
-## <a name="defender-for-office-365-message-disposition-report"></a>Rapport d’actions sur les messages de Defender pour Office 365
+## <a name="defender-for-office-365-message-disposition-report"></a>Rapport de disposition de messages pour Defender pour Office 365
 
 Le rapport de **disposition des messages ATP** indique les actions qui ont été effectuées pour les messages électroniques détectés comme présentant du contenu malveillant.
 
@@ -298,7 +298,7 @@ Le rapport **URL protection contre les menaces** comporte deux vues agrégées q
   - **Excel**
   - **OneNote**
   - **Visio**
-  - **Teams**
+  - **Équipes**
   - **Other**
 
   Si vous cliquez sur **filtres**, vous pouvez modifier le rapport avec les filtres suivants :
@@ -338,7 +338,7 @@ Outre les rapports décrits dans cette rubrique, plusieurs autres rapports sont 
 
 ## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>Quelles sont les autorisations nécessaires pour afficher les rapports Defender pour Office 365 ?
 
-Pour afficher et utiliser les rapports décrits dans cette rubrique, **vous devez disposer d’un rôle approprié pour le centre de sécurité &amp; et le centre d’administration Exchange**.
+Pour afficher et utiliser les rapports décrits dans cette rubrique, **vous devez disposer d’un rôle approprié pour le centre de sécurité & conformité et le centre d’administration Exchange**.
 
 - Pour le centre de sécurité & conformité, vous devez disposer de l’un des rôles suivants :
 

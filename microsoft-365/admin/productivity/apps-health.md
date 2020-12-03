@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Détails du score de productivité de la technologie d’intégrité Microsoft 365 Apps Health.
-ms.openlocfilehash: c38f2109ed41377cfccb9838c95dbfbebbfd322a
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: a84e919ce01775b8791ed7a1992464e4f52c7234
+ms.sourcegitcommit: a566ef236c85edfd566c8c3f859b80f9e5ce0473
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123510"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49562942"
 ---
 # <a name="microsoft-365-apps-health--technology-experiences"></a>Intégrité des applications Microsoft 365 : expériences technologiques
 
-La fonction de score de productivité aide les organisations à transformer le travail réalisé avec les mesures relatives à la façon dont les utilisateurs utilisent les applications Microsoft 365 et les expériences technologiques de prise en charge. Le score reflète les performances de votre organisation&#39;s pour les catégories de personnes et d’expériences technologiques et compare votre score avec des organisations comme les vôtres. La catégorie d’intégrité Apps fait partie des mesures qui tombent sous les expériences technologiques. Pour en savoir plus, consultez la rubrique [vue d’ensemble](productivity-score.md) de la note de productivité.
+Le score de productivité fournit des informations sur la transformation numérique de votre organisation, grâce à son utilisation de Microsoft 365 et aux technologies qui la prennent en charge. Le score de votre organisation reflète les évaluations des personnes et de la technologie et peut être comparé aux tests d’évaluation provenant d’organisations semblables aux vôtres. La catégorie d’intégrité Apps fait partie des mesures qui tombent sous les expériences technologiques. Pour en savoir plus, consultez la [rubrique vue d’ensemble du score de productivité](productivity-score.md) et lisez la [déclaration de confidentialité de Microsoft](https://privacy.microsoft.com/privacystatement).
 
 ## <a name="why-your-organization39s-microsoft-365-apps-health-score-matters"></a>Pourquoi le score d’intégrité de votre organisation&#39;s Microsoft 365 Apps est important
 
@@ -101,11 +101,11 @@ Ce graphique indique la ligne de tendance des appareils exécutant les versions 
 
 :::image type="content" source="../../media/trendline-devices-supportedversions.png" alt-text="Graphique qui Showa le nombre de périphériques qui exécutent des versions d’applications prises en charge et les plus récentes dans le temps.":::
 
-## <a name="people-in-your-organization"></a>Personnes de votre organisation
+## <a name="devices-in-your-organization"></a>Périphériques de votre organisation
 
 Cette section vous aide à agir sur les mesures que vous souhaitez concentrer en fournissant des informations pertinentes à toutes les mesures pour les expériences technologiques Microsoft 365 apps.
 
-Les colonnes suivantes sont présentées dans le tableau au niveau de l’utilisateur :
+Les colonnes suivantes sont présentées dans le tableau au niveau de la chaîne/version :
 
 - **Canal** : canal Microsoft 365 Apps actuel sur les appareils.
 - **État :**   Les applications Microsoft 365 prennent en charge l’état des appareils en fonction de la version et du canal actuels.

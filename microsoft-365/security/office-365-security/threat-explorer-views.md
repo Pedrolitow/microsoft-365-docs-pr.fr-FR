@@ -14,14 +14,14 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Découvrez comment utiliser l’Explorateur de menaces et le rapport de détection en temps réel pour examiner les menaces et y répondre dans le &amp; Centre de sécurité conformité.
+description: Découvrez comment utiliser l’Explorateur de menaces et le rapport de détection en temps réel pour examiner les menaces et y répondre dans le centre de sécurité & conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f9412350384c0b2092c376db371e93fa5295c454
-ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
+ms.openlocfilehash: 551425bf3e6b2c4fbb429dd6698b4f85e30d1ebe
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367188"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561230"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Affichages dans l’Explorateur de menaces et détections en temps réel
 
@@ -30,7 +30,7 @@ ms.locfileid: "49367188"
 
 ![Threat Explorer](../../media/ThreatExplorerFirstOpened.png)
 
-L' [Explorateur de menaces](threat-explorer.md) (et le rapport de détections en temps réel) est un outil puissant, en temps réel, qui permet aux équipes des opérations de sécurité d’examiner et de répondre aux menaces dans le centre de sécurité &amp; conformité. Explorer (et le rapport de détections en temps réel) affiche des informations sur les programmes malveillants et les messages hameçons suspects dans des e-mails et des fichiers dans Office 365, ainsi que d’autres menaces et risques de sécurité pour votre organisation.
+L' [Explorateur de menaces](threat-explorer.md) (et le rapport de détections en temps réel) est un outil puissant, en temps réel, qui permet aux équipes des opérations de sécurité d’examiner et de répondre aux menaces dans le centre de sécurité & conformité. Explorer (et le rapport de détections en temps réel) affiche des informations sur les programmes malveillants et les messages hameçons suspects dans des e-mails et des fichiers dans Office 365, ainsi que d’autres menaces et risques de sécurité pour votre organisation.
 
 - Si vous disposez [de Microsoft Defender pour Office 365](office-365-atp.md) plan 2, vous disposez de l’Explorateur.
 - Si vous disposez de Microsoft Defender pour Office 365 plan 1, vous disposez de détections en temps réel.
@@ -41,10 +41,10 @@ Lorsque vous ouvrez l’Explorateur (ou le rapport de détection en temps réel)
 
 |Abonnement|Utilitaire|Jours de données|
 |---|---|---|
-|Version d’évaluation de Microsoft Defender pour Office 365 P1|Détections en temps réel|7 |
+|Version d’évaluation de Microsoft Defender pour Office 365 P1|Détections en temps réel|7 |
 |Microsoft Defender pour Office 365 P1 payé|Détections en temps réel|0,30|
-|Version d’évaluation de Microsoft Defender pour Office 365 P1 test payant pour Office 365 P2|Threat Explorer|7 |
-|Version d’évaluation de Microsoft Defender pour Office 365 P2|Threat Explorer|7 |
+|Version d’évaluation de Microsoft Defender pour Office 365 P1 test payant pour Office 365 P2|Threat Explorer|7 |
+|Version d’évaluation de Microsoft Defender pour Office 365 P2|Threat Explorer|7 |
 |Microsoft Defender pour Office 365 P2 payé|Threat Explorer|0,30|
 |
 
