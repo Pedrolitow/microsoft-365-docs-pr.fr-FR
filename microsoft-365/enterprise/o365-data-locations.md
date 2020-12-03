@@ -16,20 +16,20 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Déterminer l’emplacement de stockage des données client Microsoft 365 dans le monde
-ms.openlocfilehash: 6ad35082cbed602325e2a32edb825a17b5cb9f4a
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: 4b1e0d30d37ec9bc7a333216854e8eb602e07cc1
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376514"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519726"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
 -->
 
-# <a name="where-your-microsoft-365-customer-data-is-stored"></a>Emplacement de stockage des données client Microsoft 365
+# <a name="where-your-microsoft-365-customer-data-is-stored"></a>Emplacement de stockage des données client de Microsoft 365
 
-Les tableaux ci-dessous indiquent l’emplacement de stockage des données client pour les services Microsoft 365 dans tous les emplacements cloud globaux de Microsoft. Développez l’emplacement du pays de votre adresse de facturation pour découvrir l’emplacement de stockage des données client de chaque service.
+Les tableaux ci-dessous indiquent le lieu de stockage de données client au repos pour les services Microsoft 365 de tous les emplacements cloud généraux de Microsoft. Développez le pays de votre adresse de facturation pour connaître l’emplacement de stockage des données client de chaque service.
 
 Si votre entreprise se situe au sein de l’Union européenne, consultez [Emplacements des données pour l’Union européenne](EU-data-storage-locations.md) pour plus d’informations. 
 
@@ -143,7 +143,7 @@ Pour les centres de données spécifiques d’un pays ou d’une région, les é
 | Royaume-Uni | Durham, Londres, Cardiff |
 | États-Unis |  Boydton, Cheyenne, Chicago, Des Moines, Quincy, San Antonio, Santa Clara, San José |
 
-Les nouveaux locataires Microsoft 365 sont configurés géographiquement par défaut en fonction du pays de l'adresse de facturation liée à l'abonnement initial de ce client. Pour confirmer l'emplacement du stockage de données client relatif à des services Office 365 existants, veuillez consulter les informations relatives à l’emplacement des données propres aux locataires dans Paramètres | Profil de l’organisation | Fiche d’emplacement des données du Centre d'administration Office 365. Vous pouvez également développer le pays dans lequel votre entreprise est située, à partir de la liste ci-dessous, pour découvrir le lieu d'emplacement du stockage des données client si vous décidiez d'utiliser un service Microsoft 365 aujourd’hui.
+Par défaut, les nouveaux locataires Microsoft 365 sont configurés géographiquement en fonction du pays de l'adresse de facturation liée à l'abonnement initial de ce client. Pour confirmer l'emplacement du stockage de données client relatif à des services Office 365 existants, consultez les informations relatives à l’emplacement des données propres aux locataires dans Paramètres | Paramètres de l’organisation | Profil de l’organisation | Fiche d’emplacement des données du Centre d'administration Office 365. Vous pouvez également développer le pays dans lequel votre entreprise est située, à partir de la liste ci-dessous, pour découvrir l'emplacement du stockage des données client si vous décidiez d'utiliser un service Microsoft 365 aujourd’hui.
 
 ## <a name="afghanistan"></a>Afghanistan
 <details><summary>Cliquez pour développer</summary><p>
@@ -704,7 +704,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
-| SharePoint Online | Zone géographique 1 : EMEA |
+| SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
@@ -1019,7 +1019,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
-| Office Online Mobile &amp; | Zone géographique 1 : EMEA |
+| Office Online &amp; Mobile | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
@@ -1964,7 +1964,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Yammer | Union européenne  |
 | Services OneNote | Union européenne |
 | Stream | Union européenne |
-| Tableau blanc collaboratif | Union européenne |
+| Tableau blanc | Union européenne |
 | Formulaires | Union européenne |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -2914,7 +2914,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
-| Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
+| Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |

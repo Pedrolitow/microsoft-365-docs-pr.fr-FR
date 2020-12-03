@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de critère de diffusion, vous pouvez affecter automatiquement une étiquette à un document ou message électronique ou vous pouvez inviter les utilisateurs pour sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: 2cfe509e61737cde77dbf865d4d56d9e7f8d0d33
-ms.sourcegitcommit: 95b85a1fdf43e3f0839483fa22e279262703f15f
+ms.openlocfilehash: 705752a63d3cd1ca5f6950643648ba5c3dd50336
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "49407348"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49551345"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette sensibilité au contenu
 
@@ -36,6 +36,8 @@ La possibilité d’appliquer automatiquement des étiquettes à du contenu est 
 - Vous n’avez pas à dépendre des utilisateurs pour classer correctement tout le contenu.
 
 - Vos utilisateurs n’ont plus besoin de connaître vos stratégies. À la place, ils peuvent porter leur attention sur leur travail.
+
+Lorsque le contenu est étiqueté manuellement, l’étiquette n’est jamais remplacée par l’étiquetage automatique. Toutefois, l’étiquetage automatique peut remplacer une [étiquette de priorité inférieure](sensitivity-labels.md#label-priority-order-matters) qui a été appliquée automatiquement.
 
 Deux méthodes s’offrent à vous pour appliquer automatiquement une étiquette de confidentialité :
 
@@ -86,12 +88,9 @@ Utilisez le tableau suivant pour vous aider à déterminer les différences de c
 |Remplacer le chiffrement IRM appliqué sans étiquette|Oui, si l’utilisateur dispose du droit d’utilisation minimal d’exportation |Oui (e-mail uniquement) |
 |Étiquette du courrier électronique entrant|Non |Oui (chiffrement non appliqué) |
 
-\* L’étiquetage automatique n’est actuellement pas disponible dans toutes les régions. Si votre client ne prend pas en charge cette fonctionnalité, l’onglet étiquetage automatique n’apparaît pas dans le centre d’étiquettes d’administrateurs.
+\* L’étiquetage automatique n’est actuellement pas disponible dans toutes les régions. Si votre client ne prend pas en charge cette fonctionnalité, l’onglet Étiquetage automatique n’apparaît pas dans le centre d’étiquettes d’administrateurs.
 
-> [!NOTE]
-> Lorsque le contenu est étiqueté manuellement, l’étiquette n’est jamais remplacée par l’étiquetage automatique. Toutefois, les stratégies d’étiquetage automatique peuvent remplacer une [étiquette de priorité plus faible](sensitivity-labels.md#label-priority-order-matters) appliquée à l’aide de l’étiquetage automatique pour les applications Office.
-
-## <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>Comment plusieurs conditions sont évaluées lorsqu’elles s’appliquent à plus d’une étiquette
+## <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>Comment plusieurs conditions sont évaluées lorsqu’elles s’appliquent à plusieurs étiquettes
 
 Les étiquettes sont classées pour évaluation en fonction de leur position que vous spécifiez dans la stratégie: l’étiquette positionné a tout d’abord la position la plus basse (au moins sensible) et l’étiquette positionnée a dernière position plus élevée (plus sensible). Pour plus d’informations sur la priorité, voir [Priorité étiquettes (ordre aspects importants)](sensitivity-labels.md#label-priority-order-matters).
 
