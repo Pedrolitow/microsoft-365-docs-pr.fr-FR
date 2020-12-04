@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent découvrir comment fonctionne l’aide à la décision. Ils peuvent déterminer rapidement les expéditeurs qui envoient des messages légitimes à leur organisation à partir de domaines qui ne passent pas de vérifications d’authentification de messagerie (SPF, DKIM ou DMARC).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 89a31c6df7c9b6e02f52ea414ceb6334427feab1
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 6f5ebd0fd42d17354eeb1e03c946ac5446c3667c
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920477"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572740"
 ---
 # <a name="walkthrough---spoof-intelligence-insight-in-microsoft-defender-for-office-365"></a>Procédure pas à pas-usurpation d’aide à la décision de Microsoft Defender pour Office 365
 
@@ -44,12 +44,13 @@ Cette procédure pas à pas est l’une des suivantes pour le centre de conformi
 
   Vous pouvez afficher le centre d’aide à la décision à partir de plusieurs tableaux de bord dans le centre de conformité & Compliance Center. Quel que soit le tableau de bord que vous examinez, le détail fournit les mêmes détails et vous permet d’effectuer rapidement les mêmes tâches.
 
-- Des autorisations doivent vous être attribuées avant de pouvoir effectuer les procédures décrites dans cette rubrique. Pour utiliser la fonction d’aide à la décision, vous devez être membre de l’un des groupes de rôles suivants :
+- Avant de pouvoir effectuer les procédures décrites dans cet article, vous devez disposer d’autorisations dans le centre de sécurité & Compliance Center :
+  - **Gestion de l'organisation**
+  - **Administrateur de la sécurité**
+  - **Lecteur de sécurité**
+  - **Lecteur général**
 
-  - **Gestion de l’organisation** ou **Administrateur de sécurité** dans le [Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
-  - **Gestion de l’organisation** ou **Gestion de l’hygiène** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
-  - **Lecteur de sécurité** dans le [Centre de conformité et sécurité](permissions-in-the-security-and-compliance-center.md).
-  - **Gestion de l’organisation en affichage seul** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  **Remarque**: l’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le centre d’administration 365 de Microsoft donne aux utilisateurs les autorisations requises dans le centre de sécurité & conformité _et_ des autorisations pour d’autres fonctionnalités de Microsoft 365. Si vous souhaitez en savoir plus, veuillez consulter la page [À propos des rôles d’administrateur](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
 
 - Vous activez et désactivez l’intelligence contre les usurpations dans les stratégies de hameçonnage dans Microsoft Defender pour Office 365. Pour plus d’informations, consultez la rubrique [configure anti-phishing Policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
 
@@ -61,8 +62,8 @@ Cette procédure pas à pas est l’une des suivantes pour le centre de conformi
 
 2. Dans la ligne **Insights** , recherchez l’un des éléments suivants :
 
-   - L' **intelligence d’usurpation d’identité est activée** : elle est appelée **domaines falsifiés dont l’authentification a échoué au cours des 30 derniers jours**. Valeur par défaut.
-   - L' **intelligence d’usurpation d’identité est désactivée** : l’aperçu de l’option **activer la protection contre les usurpations**
+   - L' **intelligence d’usurpation d’identité est activée**: elle est appelée **domaines falsifiés dont l’authentification a échoué au cours des 30 derniers jours**. Valeur par défaut.
+   - L' **intelligence d’usurpation d’identité est désactivée**: l’aperçu de l’option **activer la protection contre les usurpations**
 
 3. Le tableau de bord affiche des informations comme celles-ci :
 
@@ -72,7 +73,7 @@ Cette procédure pas à pas est l’une des suivantes pour le centre de conformi
 
    - **Mode** d’affichage : si l’aide à l’usurpation d’identité est activée, le grand nombre de messages ont été affectés par nos capacités d’aide à la falsification au cours des 30 derniers jours.
 
-   - **Quel mode si** : si l’intelligence d’usurpation d’identité est désactivée, le rapport indique le nombre de messages qui *auraient* été affectés par nos capacités d’aide à la falsification au cours des 30 derniers jours.
+   - **Quel mode si**: si l’intelligence d’usurpation d’identité est désactivée, le rapport indique le nombre de messages qui *auraient* été affectés par nos capacités d’aide à la falsification au cours des 30 derniers jours.
 
    Dans les deux cas, les domaines usurpés affichés dans la vue sont divisés en deux catégories : les paires de domaines **suspects** et les **paires de domaines non suspectes**. Ces catégories sont encore subdivisées en trois compartiments différents que vous pouvez examiner.
 
@@ -84,11 +85,11 @@ Cette procédure pas à pas est l’une des suivantes pour le centre de conformi
 
    Les **paires de domaines suspectes** sont les suivantes :
 
-   - **Usurpation de confiance élevée** : selon les modèles d’envoi historique et le score de réputation des domaines, nous sommes très convaincus que les domaines sont des usurpations et les messages provenant de ces domaines sont plus susceptibles d’être malveillants.
+   - **Usurpation de confiance élevée**: selon les modèles d’envoi historique et le score de réputation des domaines, nous sommes très convaincus que les domaines sont des usurpations et les messages provenant de ces domaines sont plus susceptibles d’être malveillants.
 
-   - **Usurpation de confiance modérée** : basée sur des modèles d’envoi historiques et sur le score de réputation des domaines, nous sommes modérément confiants que les domaines sont des usurpations et que les messages envoyés à partir de ces domaines sont légitimes. Les faux positifs sont plus susceptibles de se situer dans cette catégorie que le taux d’usurpation de confiance élevée.
+   - **Usurpation de confiance modérée**: basée sur des modèles d’envoi historiques et sur le score de réputation des domaines, nous sommes modérément confiants que les domaines sont des usurpations et que les messages envoyés à partir de ces domaines sont légitimes. Les faux positifs sont plus susceptibles de se situer dans cette catégorie que le taux d’usurpation de confiance élevée.
 
-   - **Paires de domaines non suspectes** (y compris l' **usurpation d’identité** ) : le domaine a échoué à des vérifications d’authentification de messagerie indéfinies [SPF](how-office-365-uses-spf-to-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md)et [DMARC](use-dmarc-to-validate-email.md)). Toutefois, le domaine a transmis nos vérifications d’authentification de messagerie implicites ([authentification composite](email-validation-and-authentication.md#composite-authentication)). Par conséquent, aucune action de détection d’usurpation d’identité n’a été effectuée sur le message.
+   - **Paires de domaines non suspectes** (y compris l' **usurpation d’identité**) : le domaine a échoué à des vérifications d’authentification de messagerie indéfinies [SPF](how-office-365-uses-spf-to-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md)et [DMARC](use-dmarc-to-validate-email.md)). Toutefois, le domaine a transmis nos vérifications d’authentification de messagerie implicites ([authentification composite](email-validation-and-authentication.md#composite-authentication)). Par conséquent, aucune action de détection d’usurpation d’identité n’a été effectuée sur le message.
 
 ### <a name="view-detailed-information-about-suspicious-domain-pairs-from-the-spoof-intelligence-insight"></a>Afficher des informations détaillées sur les paires de domaines suspectes à partir de l’aide à la décision
 
@@ -119,7 +120,7 @@ L’autorisation d’une paire de domaines autorise uniquement la combinaison du
 
 Par exemple, vous autorisez la paire de domaines suivante à envoyer des messages falsifiés dans votre organisation :
 
-- *Domaine usurpé* : gmail.com "
+- *Domaine usurpé*: gmail.com "
 - *Infrastructure d’envoi* `tms.mx.com` :
 
 Seul le courrier électronique provenant de cette paire de domaines sera autorisé à usurper. Les autres expéditeurs tentant d’usurper gmail.com ne sont pas autorisés. Les messages dans d’autres domaines de tms.mx.com sont vérifiés par l’aide à l’usurpation d’identité.

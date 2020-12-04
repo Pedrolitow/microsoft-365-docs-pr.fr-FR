@@ -17,12 +17,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à afficher, créer, modifier et supprimer des stratégies de liens fiables et des paramètres globaux de liens fiables dans Microsoft Defender pour Office 365.
-ms.openlocfilehash: ed95c72c98e0c9d59b9860e89843c5f9b4970c8e
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 550be48d5f1cae490c53c8f4a9fcedb0b9f21f73
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846435"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572716"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Configurer des stratégies de liens fiables dans Microsoft Defender pour Office 365
 
@@ -39,8 +39,8 @@ Vous pouvez configurer des stratégies de liens fiables dans le centre de sécur
 
 Les éléments de base d’une stratégie de liens fiables sont les suivants :
 
-- **Stratégie de liens fiables** : activer la protection des liens fiables, activer l’analyse des URL en temps réel, spécifier s’il faut attendre la fin de l’analyse en temps réel avant de remettre le message, activer l’analyse des messages internes, spécifier s’il faut effectuer le suivi des clics des utilisateurs sur les URL et spécifier si les utilisateurs peuvent cliquer sur le bac à l’URL d’origine.
-- **La règle de liens fiables** : spécifie la priorité et les filtres de destinataire (auxquels la stratégie s’applique).
+- **Stratégie de liens fiables**: activer la protection des liens fiables, activer l’analyse des URL en temps réel, spécifier s’il faut attendre la fin de l’analyse en temps réel avant de remettre le message, activer l’analyse des messages internes, spécifier s’il faut effectuer le suivi des clics des utilisateurs sur les URL et spécifier si les utilisateurs peuvent cliquer sur le bac à l’URL d’origine.
+- **La règle de liens fiables**: spécifie la priorité et les filtres de destinataire (auxquels la stratégie s’applique).
 
 La différence entre ces deux éléments n’est pas évidente lorsque vous gérez des stratégies de liens fiables dans le centre de sécurité & Compliance Center :
 
@@ -59,10 +59,16 @@ Dans Exchange Online PowerShell ou EOP PowerShell autonome, vous gérez la strat
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Pour afficher, créer, modifier et supprimer des stratégies de liens approuvés, vous devez être membre de l’un des groupes de rôles suivants :
+- Avant de pouvoir effectuer les procédures décrites dans cet article, vous devez disposer d’autorisations dans le centre de sécurité & Compliance Center :
+  - Pour créer, modifier et supprimer des stratégies de liens approuvés, vous devez être membre des groupes de rôles gestion de l' **organisation** ou **administrateur de sécurité** .
+  - Pour un accès en lecture seule aux stratégies de liens fiables, vous devez être membre des groupes de rôles **lecteur global** ou **lecteur de sécurité** .
 
-  - **Gestion de l’organisation** ou **Administrateur de sécurité** dans le [Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
-  - **Gestion** de l’organisation dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
+
+  **Remarques**:
+
+  - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le centre d’administration 365 de Microsoft donne aux utilisateurs les autorisations requises dans le centre de sécurité & conformité _et_ des autorisations pour d’autres fonctionnalités de Microsoft 365. Si vous souhaitez en savoir plus, veuillez consulter la page [À propos des rôles d’administrateur](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Le groupe de rôles gestion de l' **Organisation en affichage seul** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) offre également un accès en lecture seule à la fonctionnalité.
 
 - Pour connaître les paramètres recommandés pour les stratégies de liens fiables, consultez la rubrique [Safe Links Policy Settings](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings).
 
@@ -88,21 +94,21 @@ La création d’une stratégie de liens fiables personnalisée dans le centre d
 
 4. Sur la page **paramètres** qui s’affiche, configurez les paramètres suivants :
 
-   - **Sélectionnez l’action pour les URL potentiellement malveillantes dans les messages** : sélectionnez **activé** pour activer la protection des liens fiables dans les messages électroniques.
+   - **Sélectionnez l’action pour les URL potentiellement malveillantes dans les messages**: sélectionnez **activé** pour activer la protection des liens fiables dans les messages électroniques.
 
-   - **Sélectionnez l’action pour les URL inconnues ou potentiellement malveillantes dans Microsoft teams** : sélectionnez **activé** pour activer la protection des liens fiables dans Teams.
+   - **Sélectionnez l’action pour les URL inconnues ou potentiellement malveillantes dans Microsoft teams**: sélectionnez **activé** pour activer la protection des liens fiables dans Teams.
 
-   - **Application de l’analyse des URL en temps réel pour les liens suspects et les liens pointant vers des fichiers** : sélectionnez ce paramètre pour activer l’analyse en temps réel des liens dans les messages électroniques.
+   - **Application de l’analyse des URL en temps réel pour les liens suspects et les liens pointant vers des fichiers**: sélectionnez ce paramètre pour activer l’analyse en temps réel des liens dans les messages électroniques.
 
-   - **Patientez jusqu’à la fin de l’analyse des URL avant de remettre le message** : sélectionnez ce paramètre pour attendre la fin de l’analyse des URL en temps réel avant de remettre le message.
+   - **Patientez jusqu’à la fin de l’analyse des URL avant de remettre le message**: sélectionnez ce paramètre pour attendre la fin de l’analyse des URL en temps réel avant de remettre le message.
 
-   - **Appliquer des liens fiables aux messages électroniques envoyés au sein de l’organisation** : sélectionnez ce paramètre pour appliquer la stratégie de liens fiables aux messages entre les expéditeurs internes et les destinataires internes.
+   - **Appliquer des liens fiables aux messages électroniques envoyés au sein de l’organisation**: sélectionnez ce paramètre pour appliquer la stratégie de liens fiables aux messages entre les expéditeurs internes et les destinataires internes.
 
-   - **Ne pas suivre les clics des utilisateurs** : laissez ce paramètre non sélectionné pour permettre au suivi de cliquer sur les URL dans les messages électroniques.
+   - **Ne pas suivre les clics des utilisateurs**: laissez ce paramètre non sélectionné pour permettre au suivi de cliquer sur les URL dans les messages électroniques.
 
-   - **Ne pas autoriser les utilisateurs à cliquer vers l’URL d’origine** : sélectionnez ce paramètre pour empêcher les utilisateurs de cliquer sur l’URL d’origine dans les [pages d’avertissement](atp-safe-links.md#warning-pages-from-safe-links).
+   - **Ne pas autoriser les utilisateurs à cliquer vers l’URL d’origine**: sélectionnez ce paramètre pour empêcher les utilisateurs de cliquer sur l’URL d’origine dans les [pages d’avertissement](atp-safe-links.md#warning-pages-from-safe-links).
 
-   - **Ne réécrivez pas les URL suivantes** : permet d’accéder aux URL spécifiées qui seraient sinon bloquées par les liens fiables.
+   - **Ne réécrivez pas les URL suivantes**: permet d’accéder aux URL spécifiées qui seraient sinon bloquées par les liens fiables.
 
      Dans la zone, tapez l’URL ou la valeur souhaitée, puis cliquez sur ![Icône Ajouter un bouton](../../media/ITPro-EAC-AddIcon.png).
 
@@ -118,13 +124,13 @@ La création d’une stratégie de liens fiables personnalisée dans le centre d
 
 5. Sur la page **appliqué à** qui s’affiche, identifiez les destinataires internes auxquels s’applique la stratégie.
 
-   Vous pouvez uniquement utiliser une condition ou une exception une seule fois, mais vous pouvez spécifier plusieurs valeurs pour la condition ou l’exception. Plusieurs valeurs de la même condition ou exception utilisent la logique OU (par exemple, _\<recipient1\>_ ou _\<recipient2\>_ ). Des conditions ou des exceptions différentes utilisent la logique ET (par exemple, _\<recipient1\>_ et _\<member of group 1\>_ ).
+   Vous pouvez uniquement utiliser une condition ou une exception une seule fois, mais vous pouvez spécifier plusieurs valeurs pour la condition ou l’exception. Plusieurs valeurs de la même condition ou exception utilisent la logique OU (par exemple, _\<recipient1\>_ ou _\<recipient2\>_). Des conditions ou des exceptions différentes utilisent la logique ET (par exemple, _\<recipient1\>_ et _\<member of group 1\>_).
 
-   Cliquez sur **Ajouter une condition**. Dans la liste déroulante qui apparaît, sélectionnez une condition sous **appliqué si** :
+   Cliquez sur **Ajouter une condition**. Dans la liste déroulante qui apparaît, sélectionnez une condition sous **appliqué si**:
 
-   - **Le destinataire est** : spécifie une ou plusieurs boîtes aux lettres, utilisateurs de messagerie ou contacts de messagerie dans votre organisation.
-   - **Le destinataire est membre de** : spécifie un ou plusieurs groupes dans votre organisation.
-   - **Le domaine du destinataire est**  : spécifie les destinataires dans un ou plusieurs domaines configurés et acceptés dans votre organisation.
+   - **Le destinataire est**: spécifie une ou plusieurs boîtes aux lettres, utilisateurs de messagerie ou contacts de messagerie dans votre organisation.
+   - **Le destinataire est membre de**: spécifie un ou plusieurs groupes dans votre organisation.
+   - **Le domaine du destinataire est** : spécifie les destinataires dans un ou plusieurs domaines configurés et acceptés dans votre organisation.
 
    Une fois que vous avez sélectionné la condition, une liste déroulante correspondante apparaît avec **une case à** cocher.
 
@@ -182,7 +188,7 @@ Pour plus d’informations sur l’ordre de priorité et l’évaluation et l’
 
 Les stratégies de liens fiables sont affichées dans l’ordre dans lequel elles sont traitées (la première stratégie a la valeur de **priorité** 0).
 
-**Remarque** : dans le centre de sécurité & conformité, vous pouvez uniquement modifier la priorité de la stratégie de liens fiables une fois que vous l’avez créée. Dans PowerShell, vous pouvez remplacer la priorité par défaut lors de la création de la règle de liens fiables (ce qui peut avoir une incidence sur la priorité des règles existantes).
+**Remarque**: dans le centre de sécurité & conformité, vous pouvez uniquement modifier la priorité de la stratégie de liens fiables une fois que vous l’avez créée. Dans PowerShell, vous pouvez remplacer la priorité par défaut lors de la création de la règle de liens fiables (ce qui peut avoir une incidence sur la priorité des règles existantes).
 
 Pour modifier la priorité d’une stratégie, déplacez-la vers le haut ou vers le bas de la liste (vous ne pouvez pas modifier directement le numéro de **priorité** dans le Centre de sécurité & conformité).
 
@@ -194,7 +200,7 @@ Pour modifier la priorité d’une stratégie, déplacez-la vers le haut ou vers
 
    - La stratégie de liens fiables avec la valeur de **priorité** **0** a uniquement le bouton **diminuer la priorité** disponible.
 
-   - La stratégie de liens fiables avec la valeur de **priorité** la plus faible (par exemple, **3** ) n’a que le bouton **augmenter la priorité** disponible.
+   - La stratégie de liens fiables avec la valeur de **priorité** la plus faible (par exemple, **3**) n’a que le bouton **augmenter la priorité** disponible.
 
    - Si vous avez trois stratégies de liens fiables ou plus, les stratégies entre les valeurs de priorité la plus élevée et la plus faible ont les deux boutons **augmenter la priorité** et **diminuer la priorité** .
 
@@ -208,7 +214,7 @@ Pour modifier la priorité d’une stratégie, déplacez-la vers le haut ou vers
 
 2. Sur la page **liens approuvés** , sélectionnez une stratégie dans la liste et cliquez dessus (ne cochez pas la case).
 
-3. Dans la boîte de dialogue détails de la stratégie, cliquez sur **Supprimer la stratégie** , puis cliquez sur **Oui** dans la boîte de dialogue d’avertissement qui s’affiche.
+3. Dans la boîte de dialogue détails de la stratégie, cliquez sur **Supprimer la stratégie**, puis cliquez sur **Oui** dans la boîte de dialogue d’avertissement qui s’affiche.
 
 ## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-links-policies"></a>Utiliser Exchange Online PowerShell ou l’environnement de ligne de commande Exchange EOP PowerShell autonome pour configurer les stratégies de liens fiables
 
@@ -227,14 +233,14 @@ La création d’une stratégie de liens fiables dans PowerShell est un processu
 1. Créez la stratégie de liens fiables.
 2. Créer la règle de liens fiables qui spécifie la stratégie de liens approuvés à laquelle la règle s’applique.
 
- **Remarques**  :
+ **Remarques**:
 
 - Vous pouvez créer une règle de liens fiables et lui affecter une stratégie de liens approuvés existante non associée. Une règle de liens fiables ne peut pas être associée à plusieurs stratégies de liens fiables.
 
 - Vous pouvez configurer les paramètres suivants sur les nouvelles stratégies de liens fiables dans PowerShell qui ne sont pas disponibles dans le centre de sécurité & de conformité tant que vous n’avez pas créé la stratégie :
 
-  - Créez la nouvelle stratégie comme désactivé ( _activé_ `$false` sur la cmdlet **New-safelinksrule permet** ).
-  - Définir la priorité de la stratégie lors de la création ( _priorité_ _\<Number\>_ ) sur la cmdlet **New-safelinksrule permet** ).
+  - Créez la nouvelle stratégie comme désactivé (_activé_ `$false` sur la cmdlet **New-safelinksrule permet** ).
+  - Définir la priorité de la stratégie lors de la création (_priorité_ _\<Number\>_ ) sur la cmdlet **New-safelinksrule permet** ).
 
 - Une nouvelle stratégie de liens approuvés que vous créez dans PowerShell n’est pas visible dans le centre de sécurité &, tant que vous n’avez pas affecté la stratégie à une règle de liens fiables.
 
@@ -246,7 +252,7 @@ Pour créer une stratégie de liens fiables, utilisez la syntaxe suivante :
 New-SafeLinksPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-IsEnabled <$true | $false>] [-EnableSafeLinksForTeams <$true | $false>] [-ScanUrls <$true | $false>] [-DeliverMessageAfterScan <$true | $false>] [-EnableForInternalSenders <$true | $false>] [-DoNotAllowClickThrough <$true | $false>] [-DoNotTrackUserClicks <$true | $false>] [-DoNotRewriteUrls "Entry1","Entry2",..."EntryN"]
 ```
 
-**Remarques**  :
+**Remarques**:
 
 - Pour plus d’informations sur la syntaxe d’entrée à utiliser pour le paramètre _DoNotRewriteUrls_ , voir [entrée Syntax pour la liste « ne pas réécrire les URL suivantes »](atp-safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list).
 
@@ -416,7 +422,7 @@ Cet exemple définit la priorité de la règle nommée Marketing Department sur�
 Set-SafeLinksRule -Identity "Marketing Department" -Priority 2
 ```
 
-**Remarque** : pour définir la priorité d’une nouvelle règle lors de sa création, utilisez plutôt le paramètre _Priority_ sur la cmdlet **New-safelinksrule permet** .
+**Remarque**: pour définir la priorité d’une nouvelle règle lors de sa création, utilisez plutôt le paramètre _Priority_ sur la cmdlet **New-safelinksrule permet** .
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Set-safelinksrule permet](https://docs.microsoft.com/powershell/module/exchange/set-safelinksrule).
 

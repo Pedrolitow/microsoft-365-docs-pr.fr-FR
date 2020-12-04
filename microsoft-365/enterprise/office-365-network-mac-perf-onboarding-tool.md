@@ -14,16 +14,19 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Outil de test de connectivité réseau Microsoft 365 (aperçu)
-ms.openlocfilehash: 4fc12645ccd6a022e4ef4ebe849ac91ba431129b
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: b29eb29cd390c3febd0992e942cf8ab39f652fb2
+ms.sourcegitcommit: 26c2f01d6f88f6c288b04f9f08062d68dd1e67e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087078"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49569986"
 ---
 # <a name="microsoft-365-network-connectivity-test-tool-preview"></a>Outil de test de connectivité réseau Microsoft 365 (aperçu)
 
 L’outil de test de connectivité réseau Microsoft 365 se trouve à l’adresse <https://connectivity.office.com> . Il s’agit d’un outil complémentaire pour les informations sur l’évaluation du réseau et les informations sur le réseau disponibles dans le centre d’administration Microsoft 365 sous **Health | Menu connectivité** .
+
+> [!IMPORTANT]
+> Il est important de se connecter à votre client Microsoft 365 car tous les rapports de test sont partagés avec votre administrateur et chargés vers le client pendant que vous êtes connecté.
 
 ![Outil de test de connectivité](../media/m365-mac-perf/m365-mac-perf-test-tool-page.png)
 
@@ -265,7 +268,7 @@ Une meilleure porte d’appel de service Microsoft 365 (anciennement connu sous 
 
 L’emplacement de sortie Internet est l’emplacement où votre trafic réseau quitte votre réseau d’entreprise et se connecte à Internet. Elle est également identifiée comme l’emplacement où vous avez un périphérique de traduction d’adresses réseau (NAT) et généralement l’endroit où vous vous connectez avec un fournisseur de services Internet (ISP). Si vous voyez une longue distance entre votre emplacement et votre emplacement Internet sortant, cela peut indiquer une sorte de trajet WAN important.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 [Connectivité réseau dans le centre d’administration Microsoft 365 (version d’évaluation)](office-365-network-mac-perf-overview.md)
 

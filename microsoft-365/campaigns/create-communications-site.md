@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Créez un site de communication pour votre campagne.
-ms.openlocfilehash: 3435ede554c16bb787b87a6ea76e0c41f62b8fe5
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 5bd0dd36188f5ec1d550c9baa875e18debd99528
+ms.sourcegitcommit: 26c2f01d6f88f6c288b04f9f08062d68dd1e67e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165720"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49569962"
 ---
 # <a name="create-a-communications-site-for-your-campaign"></a>Créer un site de communication pour votre campagne
 
@@ -51,12 +51,12 @@ Les liens suivants pour PowerPoint et PDF peuvent être téléchargés et imprim
 
 [![Image du site de communications infographie](../media/M365-Campaigns-CreateCommunicationSite-358-201.png)](downloads/M365CampaignsCreateCommunicationSite.pdf)
 
-[PDF](downloads/M365CampaignsCreateCommunicationSite.pdf) | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/campaigns/downloads/M365CampaignsCreateCommunicationSite.pptx)
+[PDF](downloads/M365CampaignsCreateCommunicationSite.pdf)  |  [PowerPoint](downloads/M365CampaignsCreateCommunicationSite.pptx)
 
 
 ## <a name="set-it-up"></a>Configuration
 
-1. Connectez-vous https://Office.comà.
+1. Connectez-vous à https://Office.com.
 2. Dans le coin supérieur gauche de la page, sélectionnez l’icône du lanceur d’applications, puis sélectionnez la vignette **SharePoint** . Si vous ne voyez pas la vignette **SharePoint** , cliquez sur la vignette **sites** ou sur **tout** si SharePoint n’est pas visible.
 3. En haut de la page d’accueil SharePoint, cliquez sur **+ créer un site** , puis sur l’option **site de communication** .
 

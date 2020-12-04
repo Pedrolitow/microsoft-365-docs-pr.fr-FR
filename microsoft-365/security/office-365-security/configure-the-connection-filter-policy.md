@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à configurer le filtrage des connexions dans Exchange Online Protection (EOP) pour autoriser ou bloquer les messages électroniques provenant de serveurs de messagerie.
-ms.openlocfilehash: 95e178e34c944c13cd99e4d4a0e9f30ed083842c
-ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
+ms.openlocfilehash: a2a755516f029f5d72016e9ea8fcb87a997d5065
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48318251"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572824"
 ---
 # <a name="configure-connection-filtering"></a>Configuration du filtrage des connexions
 
@@ -49,19 +49,18 @@ Cette rubrique décrit comment configurer la stratégie de filtrage des connexio
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Des autorisations doivent vous être attribuées avant de pouvoir exécuter ces procédures. décrites dans cette rubrique :
+- Avant de pouvoir effectuer les procédures décrites dans cet article, vous devez disposer d’autorisations dans le centre de sécurité & Compliance Center :
+  - Pour modifier la stratégie de filtrage des connexions par défaut, vous devez être membre des groupes de rôles gestion de l' **organisation** ou **administrateur de sécurité** .
+  - Pour un accès en lecture seule à la stratégie de filtrage des connexions par défaut, vous devez être membre des groupes de rôles **lecteur global** ou **lecteur de sécurité** .
 
-  - Pour modifier la stratégie de filtrage des connexions par défaut, vous devez être membre de l’un des groupes de rôles suivants :
+  Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
 
-    - **Gestion de l’organisation** ou **Administrateur de sécurité** dans le [Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
-    - **Gestion de l’organisation** ou **Gestion de l’hygiène** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  **Remarques**:
 
-  - Pour un accès en lecture seule à la stratégie de filtrage des connexions par défaut, vous devez être membre de l’un des groupes de rôles suivants :
+  - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le centre d’administration 365 de Microsoft donne aux utilisateurs les autorisations requises dans le centre de sécurité & conformité _et_ des autorisations pour d’autres fonctionnalités de Microsoft 365. Si vous souhaitez en savoir plus, veuillez consulter la page [À propos des rôles d’administrateur](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Le groupe de rôles gestion de l' **Organisation en affichage seul** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) offre également un accès en lecture seule à la fonctionnalité.
 
-    - **Lecteur de sécurité** dans le [Centre de conformité et sécurité](permissions-in-the-security-and-compliance-center.md).
-    - **Gestion de l’organisation en affichage seul** dans[Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
-
-- Pour rechercher les adresses IP sources des serveurs de messagerie (expéditeurs) que vous souhaitez autoriser ou bloquer, vous pouvez vérifier le champ d’en-**tête de connexion**IP dans l’en-tête du message. Pour afficher un en-tête de message dans différents clients de messagerie, consultez la rubrique [afficher les en-têtes de message Internet dans Outlook](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c).
+- Pour rechercher les adresses IP sources des serveurs de messagerie (expéditeurs) que vous souhaitez autoriser ou bloquer, vous pouvez vérifier le champ d’en-**tête de connexion** IP dans l’en-tête du message. Pour afficher un en-tête de message dans différents clients de messagerie, consultez la rubrique [afficher les en-têtes de message Internet dans Outlook](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c).
 
 - La liste d’adresses IP autorisées est prioritaire sur la liste d’adresses IP bloquées (une adresse sur les deux listes n’est pas bloquée).
 
@@ -69,7 +68,7 @@ Cette rubrique décrit comment configurer la stratégie de filtrage des connexio
 
 ## <a name="use-the-security--compliance-center-to-modify-the-default-connection-filter-policy"></a>Utiliser le centre de sécurité & conformité pour modifier la stratégie de filtrage des connexions par défaut
 
-1. Dans le centre de sécurité & conformité et accédez **Threat management** à \> **Policy** \> **protection contre le courrier indésirable**de la stratégie de gestion des menaces.
+1. Dans le centre de sécurité & conformité et accédez **Threat management** à \> **Policy** \> **protection contre le courrier indésirable** de la stratégie de gestion des menaces.
 
 2. Sur la page **paramètres de blocage du courrier indésirable** , développez **stratégie de filtrage des connexions** en cliquant sur ![ développer, puis ](../../media/scc-expand-icon.png) sur modifier la **stratégie**.
 
@@ -97,7 +96,7 @@ Cette rubrique décrit comment configurer la stratégie de filtrage des connexio
 
 ## <a name="use-the-security--compliance-center-to-view-the-default-connection-filter-policy"></a>Utiliser le centre de sécurité & conformité pour afficher la stratégie de filtrage des connexions par défaut
 
-1. Dans le centre de sécurité & conformité et accédez **Threat management** à \> **Policy** \> **protection contre le courrier indésirable**de la stratégie de gestion des menaces.
+1. Dans le centre de sécurité & conformité et accédez **Threat management** à \> **Policy** \> **protection contre le courrier indésirable** de la stratégie de gestion des menaces.
 
 2. Dans la page **paramètres du blocage du courrier indésirable** , cliquez sur le menu déroulant en regard de la stratégie par défaut nommée **stratégie de filtrage des connexions**.
 
@@ -111,7 +110,7 @@ Utilisez la syntaxe suivante :
 Set-HostedConnectionFilterPolicy -Identity Default [-AdminDisplayName <"Optional Comment">] [-EnableSafeList <$true | $false>] [-IPAllowList <IPAddressOrRange1,IPAddressOrRange2...>] [-IPBlockList <IPAddressOrRange1,IPAddressOrRange2...>]
 ```
 
-**Remarques** :
+**Remarques**:
 
 - Les valeurs d’adresse IP ou de plage d’adresses valides sont les suivantes :
 

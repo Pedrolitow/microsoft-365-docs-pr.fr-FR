@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à utiliser le portail d’envoi du centre de sécurité & conformité pour envoyer des e-mails suspects, des courriers électroniques de hameçonnage suspects, du courrier indésirable et d’autres messages potentiellement nuisibles, des URL et des fichiers à Microsoft à des fins d’analyse.
-ms.openlocfilehash: 1e133c0d4a875fc9735cc8a92e42b6ffeee6dd5f
-ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
+ms.openlocfilehash: 0c01afff2e9e5a656099192f3867bb3a6f1cee23
+ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49527744"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49568589"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Utilisez la soumission de l’administrateur pour soumettre des courriers indésirables, l’hameçonnage, des URL et des fichiers à Microsoft
 
@@ -60,10 +60,10 @@ Pour d’autres façons d’envoyer des messages électroniques, des URL et des 
 
 1. Dans la section **type d’objet** , sélectionnez **courrier électronique**. Dans la section **format de soumission** , utilisez l’une des options suivantes :
 
-   - **ID de message réseau**: il s’agit d’une valeur GUID qui est disponible dans l’en-tête **X-MS-Exchange-Organization-Network-message-ID** du message.
+   - **ID de message réseau**: il s’agit d’une valeur GUID qui est disponible dans l’en-tête **x-MS-Exchange-Organization-Network-message-ID** dans le message ou dans l’en-tête **x-MS-Office 365-Filtering-correlation-ID** dans les messages mis en quarantaine.
 
    - **Fichier**: cliquez sur **choisir un fichier**. Dans la boîte de dialogue qui s’ouvre, recherchez et sélectionnez le fichier. eml ou. MSG, puis cliquez sur **ouvrir**.
-   
+
    > [!NOTE]
    > Les administrateurs disposant de Defender pour Office 365 plan 1 ou plan 2 peuvent envoyer des messages datant de 30 jours. Les autres administrateurs ne pourront revenir qu’à plus de 7 jours.
 
@@ -244,7 +244,7 @@ Pour exporter les résultats, cliquez sur **Exporter** vers le haut de la page, 
 
 ## <a name="undo-user-submissions"></a>Annuler les soumissions de l’utilisateur
 
-Une fois qu’un utilisateur envoie un e-mail suspect à la boîte aux lettres personnalisée, l’utilisateur et l’administrateur n’ont pas la possibilité d’annuler l’envoi. Si l’utilisateur souhaite récupérer le courrier, il sera disponible pour la récupération dans les dossiers éléments supprimés ou courrier indésirable. 
+Une fois qu’un utilisateur envoie un e-mail suspect à la boîte aux lettres personnalisée, l’utilisateur et l’administrateur n’ont pas la possibilité d’annuler l’envoi. Si l’utilisateur souhaite récupérer le courrier, il sera disponible pour la récupération dans les dossiers éléments supprimés ou courrier indésirable.
 
 ### <a name="submit-messages-to-microsoft-from-the-custom-mailbox"></a>Envoyer des messages à Microsoft à partir de la boîte aux lettres personnalisée
 

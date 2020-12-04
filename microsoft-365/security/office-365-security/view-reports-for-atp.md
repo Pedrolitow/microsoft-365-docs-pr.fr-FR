@@ -1,5 +1,5 @@
 ---
-title: Afficher des rapports pour Defender pour Office 365
+title: Afficher les rapports de Defender pour Office 365 dans le tableau de bord rapports
 f1.keywords:
 - CSH
 ms.author: tracyp
@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-defender-office365
 description: Recherchez et utilisez des rapports pour Microsoft Defender pour Office 365 dans le centre de sécurité & conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5efaef018c78bd161c9cde81af36be92173479ae
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: a237049c9ebbccf1c01feeb21129496e16d437b2
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561726"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572488"
 ---
-# <a name="view-reports-for-microsoft-defender-for-office-365"></a>Afficher les rapports pour Microsoft Defender pour Office 365
+# <a name="view-defender-for-office-365-reports-in-the-reports-dashboard-in-the-security--compliance-center"></a>Afficher les rapports de Defender pour Office 365 dans le tableau de bord rapports du centre de sécurité & conformité
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -298,7 +298,7 @@ Le rapport **URL protection contre les menaces** comporte deux vues agrégées q
   - **Excel**
   - **OneNote**
   - **Visio**
-  - **Équipes**
+  - **Teams**
   - **Other**
 
   Si vous cliquez sur **filtres**, vous pouvez modifier le rapport avec les filtres suivants :
@@ -338,33 +338,22 @@ Outre les rapports décrits dans cette rubrique, plusieurs autres rapports sont 
 
 ## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>Quelles sont les autorisations nécessaires pour afficher les rapports Defender pour Office 365 ?
 
-Pour afficher et utiliser les rapports décrits dans cette rubrique, **vous devez disposer d’un rôle approprié pour le centre de sécurité & conformité et le centre d’administration Exchange**.
+Pour afficher et utiliser les rapports décrits dans cette rubrique, vous devez être membre de l’un des groupes de rôles suivants dans le centre de sécurité & conformité :
 
-- Pour le centre de sécurité & conformité, vous devez disposer de l’un des rôles suivants :
+- **Gestion de l'organisation**
+- **Administrateur de la sécurité**
+- **Lecteur de sécurité**
+- **Lecteur général**
 
-  - Gestion de l’organisation
-  - Administrateur de la sécurité (qui peut être affecté dans le centre d’administration Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) ))
-  - Opérateur de sécurité (cela peut être attribué dans le centre d’administration Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) ))
-  - Lecteur de sécurité
+Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
 
-- Pour Exchange Online, vous devez disposer de l’un des rôles suivants, qui est affecté dans le centre d’administration Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) ou avec des applets de commande PowerShell (consultez la rubrique [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)) :
-
-  - Gestion de l’organisation
-  - Gestion de l’organisation en affichage seul
-  - Rôle Destinataires en affichage uniquement
-  - Gestion de la conformité
-
-Pour en savoir plus, consultez les ressources suivantes :
-
-- [Autorisations dans le centre de conformité et de sécurité](permissions-in-the-security-and-compliance-center.md)
-
-- [Autorisations des fonctionnalités dans Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
+**Remarque**: l’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le centre d’administration 365 de Microsoft donne aux utilisateurs les autorisations requises dans le centre de sécurité & conformité _et_ des autorisations pour d’autres fonctionnalités de Microsoft 365. Si vous souhaitez en savoir plus, veuillez consulter la page [À propos des rôles d’administrateur](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>Qu’en est-il si les rapports n’affichent pas de données ?
 
 Si vous ne voyez pas de données dans votre compte Defender pour les rapports Office 365, vérifiez que vos stratégies sont correctement configurées. Votre organisation doit avoir [des stratégies de liens fiables](set-up-atp-safe-links-policies.md) et des [stratégies de pièces jointes approuvées](set-up-atp-safe-attachments-policies.md) définies de manière à ce que la protection Defender pour Office 365 soit mise en place. Consultez également la rubrique protection contre le [courrier indésirable et les programmes malveillants](anti-spam-and-anti-malware-protection.md).
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 [Rapports intelligents et aperçus dans le Centre de sécurité et conformité](reports-and-insights-in-security-and-compliance.md)
   

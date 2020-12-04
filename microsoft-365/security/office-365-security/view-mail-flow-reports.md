@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent en savoir plus sur les rapports de flux de messagerie disponibles dans le tableau de bord des rapports dans le centre de sécurité & conformité.
 ms.custom: ''
-ms.openlocfilehash: 840b9920fc3f994140702eae0bf5ddbdeac4b465
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 701735374e03f2afb91323ceb4b3fbf30988bdcd
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357922"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572800"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Afficher les rapports de flux de messagerie dans le tableau de bord rapports du centre de sécurité & conformité
 
@@ -241,7 +241,7 @@ Vous pouvez modifier ces filtres en cliquant sur **Filtrer** ou en cliquant sur 
 Le tableau de données contient les informations suivantes :
 
 - **Direction**
-- **Type (Type)**
+- **Type**
 - **24 heures**
 - **3 jours**
 - **7 jours**
@@ -462,7 +462,7 @@ Pour revenir à l’affichage de rapport, cliquez sur **afficher le rapport**.
 Si vous cliquez sur **afficher les détails** de la table dans la fenêtre dépanner **par : direction** ou dépanner **par :** le mode de direction, les informations suivantes sont affichées :
 
 - **Date (UTC)**
-- **Type (Type)**
+- **Type**
 - **Direction**
 - **Nombre de messages**
 
@@ -535,21 +535,18 @@ Pour revenir à l’affichage de rapport, cliquez sur **afficher le rapport**.
 
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>Quelles sont les autorisations nécessaires pour afficher ces rapports ?
 
-Pour afficher et utiliser les rapports, vous devez être membre du groupe de rôles spécifié dans le centre de sécurité & conformité **et** dans Exchange Online.
+Pour afficher et utiliser les rapports décrits dans cette rubrique, vous devez être membre de l’un des groupes de rôles suivants dans le centre de sécurité & conformité :
 
-- Dans le centre de sécurité & conformité, vous devez être membre de l’un des groupes de rôles suivants :
+- **Gestion de l'organisation**
+- **Administrateur de la sécurité**
+- **Lecteur de sécurité**
+- **Lecteur général**
 
-  -Gestion de l’organisation-administrateur de la sécurité (vous pouvez également le faire dans le [Centre d’administration Azure Active Directory](https://aad.portal.azure.com) -lecteur de sécurité
+Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
 
-  Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
+**Remarque**: l’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le centre d’administration 365 de Microsoft donne aux utilisateurs les autorisations requises dans le centre de sécurité & conformité _et_ des autorisations pour d’autres fonctionnalités de Microsoft 365. Si vous souhaitez en savoir plus, veuillez consulter la page [À propos des rôles d’administrateur](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
 
-- Dans Exchange Online, vous devez être membre de l’un des groupes de rôles suivants :
-
-  -Gestion de l’organisation-affichage uniquement-gestion de l’organisation-affichage uniquement des destinataires-gestion de la conformité
-
-Pour plus d’informations, consultez la rubrique [autorisations dans Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo) et [gérer les groupes de rôles dans Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
-
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 [Rapports intelligents et aperçus dans le Centre de sécurité et conformité](reports-and-insights-in-security-and-compliance.md)
 

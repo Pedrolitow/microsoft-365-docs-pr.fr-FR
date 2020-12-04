@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à créer, modifier et supprimer les stratégies anti-hameçonnage disponibles dans les organisations Exchange Online Protection (EOP) avec ou sans boîte aux lettres Exchange Online.
-ms.openlocfilehash: 797dc36670ad8c3b8515a1e06efc43e57ea2dc71
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 69ab17263ab8c0cc03d3bc4aed6bdf39b251b9fb
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846459"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572524"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>Configurer des stratégies anti-hameçonnage dans EOP
 
@@ -36,8 +36,8 @@ Pour plus d’informations sur la création et la modification des stratégies a
 
 Les éléments de base d’une stratégie anti-hameçonnage sont les suivants :
 
-- **Stratégie anti-hameçonnage** : spécifie les protections de hameçonnage à activer ou à désactiver, ainsi que les actions à appliquer.
-- **La règle anti-hameçonnage** : spécifie la priorité et les filtres de destinataire (auxquels s’applique la stratégie) pour une stratégie anti-hameçonnage.
+- **Stratégie anti-hameçonnage**: spécifie les protections de hameçonnage à activer ou à désactiver, ainsi que les actions à appliquer.
+- **La règle anti-hameçonnage**: spécifie la priorité et les filtres de destinataire (auxquels s’applique la stratégie) pour une stratégie anti-hameçonnage.
 
 La différence entre ces deux éléments n’est pas évidente lorsque vous gérez des stratégies de détection d’hameçonnage dans le centre de sécurité & Compliance Center :
 
@@ -50,7 +50,7 @@ Dans Exchange Online PowerShell, vous gérez la stratégie et la règle séparé
 Chaque organisation dispose d’une stratégie anti-hameçonnage intégrée nommée Office antiphishing par défaut, qui comporte les propriétés suivantes :
 
 - La stratégie est appliquée à tous les destinataires de l’organisation, même s’il n’y a aucune règle anti-hameçonnage (filtres de destinataire) associée à la stratégie.
-- La stratégie a la valeur de priorité personnalisée la **plus petite** , que vous ne pouvez pas modifier (la stratégie est toujours appliquée en dernier). Les stratégies personnalisées que vous créez ont toujours une priorité plus élevée.
+- La stratégie a la valeur de priorité personnalisée la **plus petite**, que vous ne pouvez pas modifier (la stratégie est toujours appliquée en dernier). Les stratégies personnalisées que vous créez ont toujours une priorité plus élevée.
 - La stratégie est la stratégie par défaut (la propriété **IsDefault** possède la valeur`True`) et vous ne pouvez pas supprimer la stratégie par défaut.
 
 Pour accroître l’efficacité de la protection anti-hameçonnage, vous pouvez créer des stratégies anti-hameçonnage personnalisées avec des paramètres plus stricts appliqués à des utilisateurs ou à des groupes d’utilisateurs spécifiques.
@@ -63,17 +63,17 @@ Pour accroître l’efficacité de la protection anti-hameçonnage, vous pouvez 
 
   Vous ne pouvez pas gérer les stratégies de détection d’hameçonnage dans une version autonome d’EOP PowerShell.
 
-- Avant de pouvoir effectuer les procédures décrites dans cet article, vous devez disposer des autorisations suivantes :
+- Avant de pouvoir effectuer les procédures décrites dans cet article, vous devez disposer d’autorisations dans le centre de sécurité & Compliance Center :
+  - Pour ajouter, modifier et supprimer des stratégies de détection d’hameçonnage, vous devez être membre des groupes de rôles de gestion de l' **organisation** ou d' **administrateur de sécurité** .
+  - Pour un accès en lecture seule aux stratégies de détection d’hameçonnage, vous devez être membre des groupes de rôles **lecteur global** ou **lecteur** de sécurité <sup>\*</sup> .
 
-  - Pour ajouter, modifier et supprimer des stratégies de détection d’hameçonnage, vous devez être membre de l’un des groupes de rôles suivants :
+  Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
 
-    - **Gestion de l’organisation** ou **Administrateur de sécurité** dans le [Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
-    - **Gestion de l’organisation** ou **Gestion de l’hygiène** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  **Remarques**:
 
-  - Pour un accès en lecture seule aux stratégies de détection d’hameçonnage, vous devez être membre de l’un des groupes de rôles suivants :
-
-    - **Lecteur de sécurité** dans le [Centre de conformité et sécurité](permissions-in-the-security-and-compliance-center.md).
-    - **Gestion de l’organisation en affichage seul** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le centre d’administration 365 de Microsoft donne aux utilisateurs les autorisations requises dans le centre de sécurité & conformité _et_ des autorisations pour d’autres fonctionnalités de Microsoft 365. Si vous souhaitez en savoir plus, veuillez consulter la page [À propos des rôles d’administrateur](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Le groupe de rôles gestion de l' **Organisation en affichage seul** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) offre également un accès en lecture seule à la fonctionnalité <sup>\*</sup> .
+  - <sup>\*</sup> Dans le centre de sécurité & conformité, l’accès en lecture seule permet aux utilisateurs d’afficher les paramètres des stratégies anti-hameçonnage personnalisées. Les utilisateurs en lecture seule ne peuvent pas voir les paramètres dans la stratégie anti-hameçonnage par défaut.
 
 - Pour créer et modifier des stratégies de détection d’hameçonnage dans un EOP autonome, vous devez effectuer une opération qui nécessite l' _hydratation_ de votre client. Par exemple, dans le centre d’administration Exchange, vous pouvez accéder à l’onglet **autorisations** , sélectionner un groupe de rôles existant, cliquer sur **modifier** l' ![ icône modifier ](../../media/ITPro-EAC-EditIcon.png) , puis supprimer un rôle (ce que vous devrez finalement rajouter). Si votre locataire n’a jamais été hydraté, vous obtenez une boîte de dialogue intitulée **mettre à jour les paramètres d’organisation** avec une barre de progression qui doit se terminer avec succès. Pour plus d’informations sur la mise en attente, reportez-vous à la cmdlet [Enable-OrganizationCustomization](https://docs.microsoft.com/powershell/module/exchange/enable-organizationcustomization) (qui n’est pas disponible dans la version autonome d’EOP PowerShell ou dans le centre de conformité & Security).
 
@@ -103,13 +103,13 @@ Lorsque vous créez une stratégie anti-hameçonnage, vous pouvez uniquement sp�
 
 4. Sur la page **appliqué à** qui s’affiche, identifiez les destinataires internes auxquels s’applique la stratégie.
 
-   Vous pouvez uniquement utiliser une condition ou une exception une seule fois, mais vous pouvez spécifier plusieurs valeurs pour la condition ou l’exception. Plusieurs valeurs de la même condition ou exception utilisent la logique OU (par exemple, _\<recipient1\>_ ou _\<recipient2\>_ ). Des conditions ou des exceptions différentes utilisent la logique ET (par exemple, _\<recipient1\>_ et _\<member of group 1\>_ ).
+   Vous pouvez uniquement utiliser une condition ou une exception une seule fois, mais vous pouvez spécifier plusieurs valeurs pour la condition ou l’exception. Plusieurs valeurs de la même condition ou exception utilisent la logique OU (par exemple, _\<recipient1\>_ ou _\<recipient2\>_). Des conditions ou des exceptions différentes utilisent la logique ET (par exemple, _\<recipient1\>_ et _\<member of group 1\>_).
 
-   Cliquez sur **Ajouter une condition**. Dans la liste déroulante qui apparaît, sélectionnez une condition sous **appliqué si** :
+   Cliquez sur **Ajouter une condition**. Dans la liste déroulante qui apparaît, sélectionnez une condition sous **appliqué si**:
 
-   - **Le destinataire est** : spécifie une ou plusieurs boîtes aux lettres, utilisateurs de messagerie ou contacts de messagerie dans votre organisation.
-   - **Le destinataire est membre de** : spécifie un ou plusieurs groupes dans votre organisation.
-   - **Le domaine du destinataire est**  : spécifie les destinataires dans un ou plusieurs domaines configurés et acceptés dans votre organisation.
+   - **Le destinataire est**: spécifie une ou plusieurs boîtes aux lettres, utilisateurs de messagerie ou contacts de messagerie dans votre organisation.
+   - **Le destinataire est membre de**: spécifie un ou plusieurs groupes dans votre organisation.
+   - **Le domaine du destinataire est** : spécifie les destinataires dans un ou plusieurs domaines configurés et acceptés dans votre organisation.
 
    Une fois que vous avez sélectionné la condition, une liste déroulante correspondante apparaît avec **une case à** cocher.
 
@@ -147,7 +147,7 @@ Utilisez les procédures suivantes pour modifier les stratégies de détection d
 
    - Une fois que vous avez cliqué sur **modifier** dans une section, les paramètres disponibles sont présentés dans un format d’Assistant, mais vous pouvez sauter les pages dans n’importe quel ordre, et vous pouvez cliquer sur **Enregistrer** sur n’importe quelle page (ou sur **Annuler** ou **Fermer** l' ![ icône ](../../media/scc-remove-icon.png) pour revenir à la page **modifier votre stratégie \<name\>** (vous n’avez pas besoin de consulter la dernière page de l’Assistant pour enregistrer ou quitter
 
-4. **Paramètre de stratégie** : cliquez sur **modifier** pour modifier les mêmes paramètres que ceux qui étaient disponibles lorsque vous avez [créé la stratégie](#use-the-security--compliance-center-to-create-anti-phishing-policies) dans la section précédente :
+4. **Paramètre de stratégie**: cliquez sur **modifier** pour modifier les mêmes paramètres que ceux qui étaient disponibles lorsque vous avez [créé la stratégie](#use-the-security--compliance-center-to-create-anti-phishing-policies) dans la section précédente :
 
    - **Name**
    - **Description**
@@ -156,25 +156,25 @@ Utilisez les procédures suivantes pour modifier les stratégies de détection d
 
    Lorsque vous avez terminé, cliquez sur **Enregistrer** sur une page.
 
-5. **Spoof** : cliquez sur **modifier** pour activer ou désactiver l’Assistant usurpation d’identité, activez ou désactivez l’identification de l’expéditeur non authentifié dans Outlook, puis configurez l’action à appliquer aux messages provenant d’expéditeurs usurpés bloqués. Pour plus d’informations, reportez-vous à la rubrique [usurpation des paramètres dans les stratégies anti-hameçonnage](set-up-anti-phishing-policies.md#spoof-settings).
+5. **Spoof**: cliquez sur **modifier** pour activer ou désactiver l’Assistant usurpation d’identité, activez ou désactivez l’identification de l’expéditeur non authentifié dans Outlook, puis configurez l’action à appliquer aux messages provenant d’expéditeurs usurpés bloqués. Pour plus d’informations, reportez-vous à la rubrique [usurpation des paramètres dans les stratégies anti-hameçonnage](set-up-anti-phishing-policies.md#spoof-settings).
 
    Notez que ces mêmes paramètres sont également disponibles dans les stratégies de détection d’hameçonnage dans Defender pour Office 365.
 
-   - **Usurpation des paramètres de filtrage** : la valeur par défaut est **activée** , et nous vous recommandons de la laisser activée. Pour le désactiver, faites glisser le bouton de bascule sur **désactivé**. Pour plus d’informations, consultez la rubrique [configure usurpation Intelligence in EOP](learn-about-spoof-intelligence.md).
+   - **Usurpation des paramètres de filtrage**: la valeur par défaut est **activée**, et nous vous recommandons de la laisser activée. Pour le désactiver, faites glisser le bouton de bascule sur **désactivé**. Pour plus d’informations, consultez la rubrique [configure usurpation Intelligence in EOP](learn-about-spoof-intelligence.md).
 
      > [!NOTE]
      > Vous n’avez pas besoin de désactiver la protection contre l’usurpation d’identité si votre enregistrement MX ne pointe pas vers Microsoft 365 ; vous activez le filtrage amélioré pour les connecteurs à la place. Pour obtenir des instructions, voir [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
-   - **Activer la fonctionnalité d’expéditeur non authentifié** : la valeur par défaut est **activé**. Pour le désactiver, faites glisser le bouton de bascule sur **désactivé**.
+   - **Activer la fonctionnalité d’expéditeur non authentifié**: la valeur par défaut est **activé**. Pour le désactiver, faites glisser le bouton de bascule sur **désactivé**.
 
-   - **Actions** : spécifiez l’action à effectuer sur les messages qui échouent à l’aide d’usurpation d’identité :
+   - **Actions**: spécifiez l’action à effectuer sur les messages qui échouent à l’aide d’usurpation d’identité :
 
-     **Si un message électronique est envoyé par un utilisateur qui n’est pas autorisé à usurper votre domaine** :
+     **Si un message électronique est envoyé par un utilisateur qui n’est pas autorisé à usurper votre domaine**:
 
      - **Déplacer le message vers les dossiers de courrier indésirable des destinataires**
      - **Mettre en quarantaine le message**
 
-   - **Vérifiez vos paramètres** : au lieu de cliquer sur chaque étape individuelle, les paramètres sont affichés dans un résumé.
+   - **Vérifiez vos paramètres**: au lieu de cliquer sur chaque étape individuelle, les paramètres sont affichés dans un résumé.
 
      - Vous pouvez cliquer sur **modifier** dans chaque section pour revenir à la page appropriée.
      - Vous pouvez activer ou **Désactiver** les paramètres suivants **directement sur cette** page :
@@ -228,7 +228,7 @@ Pour plus d’informations sur l’ordre de priorité et l’évaluation et l’
 
 Les stratégies anti-hameçonnage personnalisées sont affichées dans l’ordre dans lequel elles sont traitées (la première stratégie a la valeur de **priorité** 0). La stratégie anti-hameçonnage par défaut nommée Office antiphishing par défaut a une valeur de priorité personnalisée la **plus faible** et vous ne pouvez pas la modifier.
 
- **Remarque** : dans le centre de sécurité & conformité, vous pouvez uniquement modifier la priorité de la stratégie anti-hameçonnage une fois que vous l’avez créée. Dans PowerShell, vous pouvez remplacer la priorité par défaut lors de la création de la règle anti-hameçonnage (qui peut avoir une incidence sur la priorité des règles existantes).
+ **Remarque**: dans le centre de sécurité & conformité, vous pouvez uniquement modifier la priorité de la stratégie anti-hameçonnage une fois que vous l’avez créée. Dans PowerShell, vous pouvez remplacer la priorité par défaut lors de la création de la règle anti-hameçonnage (qui peut avoir une incidence sur la priorité des règles existantes).
 
 Pour modifier la priorité d’une stratégie, cliquez sur **augmenter la priorité** ou sur **diminuer la priorité** dans les propriétés de la stratégie (vous ne pouvez pas modifier directement le numéro de **priorité** dans le centre de sécurité & conformité). La modification de la priorité d’une stratégie n’a de sens que si vous disposez de plusieurs stratégies.
 
@@ -240,7 +240,7 @@ Pour modifier la priorité d’une stratégie, cliquez sur **augmenter la priori
 
    - La stratégie anti-hameçonnage personnalisée avec la valeur **Priority** de priorité **0** a uniquement le bouton **diminuer la priorité** disponible.
 
-   - La stratégie anti-hameçonnage personnalisée avec la valeur de **priorité** la plus faible (par exemple, **3** ) a uniquement le bouton **augmenter la priorité** disponible.
+   - La stratégie anti-hameçonnage personnalisée avec la valeur de **priorité** la plus faible (par exemple, **3**) a uniquement le bouton **augmenter la priorité** disponible.
 
    - Si vous avez au moins trois stratégies anti-hameçonnage personnalisées, les stratégies de priorité la plus élevée et la plus faible ont les deux boutons **augmenter la priorité** et **diminuer la priorité** .
 
@@ -266,7 +266,7 @@ Pour modifier la priorité d’une stratégie, cliquez sur **augmenter la priori
 
 2. Sélectionnez la stratégie que vous souhaitez supprimer. Si elle est déjà sélectionnée, désactivez-la et sélectionnez-la à nouveau.
 
-3. Dans le menu volant **modifier \<name\> votre stratégie** qui s’affiche, cliquez sur **Supprimer la stratégie** , puis cliquez sur **Oui** dans la boîte de dialogue d’avertissement qui s’affiche.
+3. Dans le menu volant **modifier \<name\> votre stratégie** qui s’affiche, cliquez sur **Supprimer la stratégie**, puis cliquez sur **Oui** dans la boîte de dialogue d’avertissement qui s’affiche.
 
 Vous ne pouvez pas supprimer la stratégie par défaut.
 
@@ -290,14 +290,14 @@ La création d’une stratégie anti-hameçonnage dans PowerShell est un process
 1. Créez la stratégie anti-hameçonnage.
 2. Créez la règle anti-hameçonnage qui spécifie la stratégie anti-hameçonnage à laquelle la règle s’applique.
 
- **Remarques**  :
+ **Remarques**:
 
 - Vous pouvez créer une nouvelle règle anti-hameçonnage et lui affecter une stratégie anti-hameçonnage existante non associée. Une règle anti-hameçonnage ne peut pas être associée à plusieurs stratégies anti-hameçonnage.
 
 - Vous pouvez configurer les paramètres suivants sur les nouvelles stratégies anti-hameçonnage de PowerShell qui ne sont pas disponibles dans le centre de sécurité & de sécurité tant que vous n’avez pas créé la stratégie :
 
-  - Créez la nouvelle stratégie comme désactivé ( _activé_ `$false` sur la cmdlet **New-antiphishrule permet** ).
-  - Définir la priorité de la stratégie lors de la création ( _priorité_ _\<Number\>_ ) sur la cmdlet **New-antiphishrule permet** ).
+  - Créez la nouvelle stratégie comme désactivé (_activé_ `$false` sur la cmdlet **New-antiphishrule permet** ).
+  - Définir la priorité de la stratégie lors de la création (_priorité_ _\<Number\>_ ) sur la cmdlet **New-antiphishrule permet** ).
 
 - Une nouvelle stratégie anti-hameçonnage que vous créez dans PowerShell n’est pas visible dans le centre de sécurité & de conformité tant que vous n’avez pas affecté la stratégie à une règle anti-hameçonnage.
 
@@ -464,7 +464,7 @@ Cet exemple définit la priorité de la règle nommée Marketing Department sur�
 Set-AntiPhishRule -Identity "Marketing Department" -Priority 2
 ```
 
-**Remarques**  :
+**Remarques** :
 
 - Pour définir la priorité d’une nouvelle règle lors de sa création, utilisez plutôt le paramètre _Priority_ sur la cmdlet **New-antiphishrule permet** .
 

@@ -1,5 +1,5 @@
 ---
-title: La gouvernance en premier
+title: Création de votre plan de gouvernance de collaboration
 ms.reviewer: mmclean
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -14,15 +14,15 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-description: La gouvernance en premier
-ms.openlocfilehash: 7f6104997028434b9c8aeab946ac6e1f06a61c84
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+description: Découvrez comment créer votre plan de gouvernance de collaboration
+ms.openlocfilehash: 2fb2db16df3c83347831f4ea3489835e5037bbec
+ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377424"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49568281"
 ---
-# <a name="governance-first"></a>La gouvernance en premier
+# <a name="create-your-collaboration-governance-plan"></a>Création de votre plan de gouvernance de collaboration
 
 Il est toujours préférable de commencer votre migration vers Microsoft 365 avec une vision claire :
 
@@ -34,9 +34,9 @@ Il est toujours préférable de commencer votre migration vers Microsoft 365 ave
 
 Une déclaration claire de vision fournit des indications essentielles pour les compromis de décision inévitable que vous devrez prendre en compte sur votre plan de gouvernance. Le degré de formalisation et la profondeur sur laquelle vous devez documenter le plan de gouvernance doivent s’aligner sur les résultats que vous souhaitez obtenir. La vision fournit ainsi un cadre pour le contexte et l’investissement dans la gouvernance.
 
-Le Cloud Microsoft 365 crée de nouveaux paradigmes pour les technologies afin de prendre en charge l’entreprise. Ces nouveaux paradigmes modifient la manière dont ces technologies sont adoptées, gérées et régies. 
+Microsoft 365 crée de nouveaux paradigmes pour les technologies afin de prendre en charge l’entreprise. Ces nouveaux paradigmes modifient la manière dont ces technologies sont adoptées, gérées et régies. 
 
-La gouvernance Microsoft 365 doit compléter les stratégies existantes qui régissent les environnements locaux.  Cependant, étant donné que le Cloud permet de nouvelles opportunités de prendre en charge l’entreprise, il est important de comprendre ces opportunités et de réfléchir à une approche de gouvernance qui crée un équilibre approprié entre les objectifs de l’utilisateur, les risques de l’entreprise et les exigences industrielles et réglementaires.
+La gouvernance Microsoft 365 doit compléter les stratégies existantes qui régissent les environnements locaux. Cependant, étant donné que le Cloud permet de nouvelles opportunités de prendre en charge l’entreprise, il est important de comprendre ces opportunités et de réfléchir à une approche de gouvernance qui crée un équilibre approprié entre les objectifs de l’utilisateur, les risques de l’entreprise et les exigences industrielles et réglementaires.
 
 Tout d’abord, la gouvernance implique le démarrage de votre parcours vers le Cloud avec certaines décisions clés pour la meilleure position pour le succès global. Voici quelques-unes de ces décisions :
 
@@ -58,11 +58,11 @@ La planification de la gouvernance pour Microsoft 365 consiste à s’assurer qu
 
 - Résultats **assurance** – diriger les propriétaires de sites ou d’équipes dans le sens approprié pour obtenir des résultats professionnels. L’assurance de résultats est en grande partie de fournir des conseils aux auteurs de contenu et aux propriétaires de sites, de groupes et d’équipes afin de s’assurer que la formation appropriée est disponible pour garantir qu’ils sachent comment faire bon choix pour obtenir les résultats souhaités au sein des normes et des pratiques globales de l’organisation.
 
-La planification de la gouvernance doit être abordée, mais la gouvernance doit être une tâche que vous revisitez continuellement dans un processus itératif. À mesure que votre patrimoine de données évolue au fil du temps, vous souhaiterez revoir vos décisions de gouvernance afin de s’adapter à l’évolution des besoins de l’entreprise et de la disponibilité des fonctionnalités. Vous aurez peut-être besoin d’une plus grande visibilité pour s’assurer de la conformité. Il se peut que vous ayez besoin de moins de visibilité pour encourager davantage l’application créative des fonctionnalités principales. Vous pouvez constater que les rôles et les responsabilités doivent être mis à jour pour refléter les modifications apportées à la solution ou les modifications apportées à la façon dont les utilisateurs utilisent différentes applications.
+La planification de la gouvernance doit être abordée, mais la gouvernance a besoin d’être constamment revisitée lors d’un processus itératif. À mesure que votre patrimoine de données évolue au fil du temps, vous souhaiterez revoir vos décisions de gouvernance afin de s’adapter à l’évolution des besoins de l’entreprise et de la disponibilité des fonctionnalités. Vous aurez peut-être besoin d’une plus grande visibilité pour s’assurer de la conformité. Il se peut que vous ayez besoin de moins de visibilité pour encourager davantage l’application créative des fonctionnalités principales. Vous pouvez constater que les rôles et les responsabilités doivent être mis à jour pour refléter les modifications apportées à la solution ou les modifications apportées à la façon dont les utilisateurs utilisent différentes applications.
 
-Par exemple, l’une des capacités clés de Microsoft 365 est la possibilité de travailler facilement en collaboration avec les organisations et les utilisateurs externes. Dans certains secteurs, certaines organisations choisissent de bloquer tout partage externe. D’autres utilisateurs activent le partage externe dans des scénarios spécifiques ou avec des organisations spécifiques. Il n’existe aucune bonne ou mauvaise décision de gouvernance lorsqu’il s’agit d’un partage externe, et il existe de nombreux scénarios dans lesquels vous pouvez activer différents paramètres dans Microsoft 365 pour autoriser le partage dans certains cas et le bloquer dans d’autres. Toutefois, si vous commencez le parcours d’un environnement local vers le Cloud, il est important de réfléchir aux décisions de partage externe et de comprendre les avantages et les risques associés aux différentes options disponibles.
+Par exemple, l’une des capacités clés de Microsoft 365 est la possibilité de travailler facilement en collaboration avec des personnes extérieures à votre organisation. Dans certains secteurs, certaines organisations choisissent de bloquer tout partage externe. D’autres utilisateurs activent le partage externe dans des scénarios spécifiques ou avec des organisations spécifiques. Il n’existe aucune bonne ou mauvaise décision de gouvernance lorsqu’il s’agit d’un partage externe, et il existe de nombreux scénarios dans lesquels vous pouvez activer différents paramètres dans Microsoft 365 pour autoriser le partage dans certains cas et le bloquer dans d’autres. Toutefois, si vous commencez le parcours d’un environnement local vers le Cloud, il est important de réfléchir aux décisions de partage externe et de comprendre les avantages et les risques associés aux différentes options disponibles.
 
-## <a name="why-think-about-governance-first"></a>Pourquoi pensez-vous d’abord à la gouvernance ?
+## <a name="think-about-governance-first"></a>Abordez la gouvernance
 
 Votre investissement dans Microsoft 365 n’est qu’une bonne qualité de la valeur du contenu et des expériences que vous activez, de sorte que la gouvernance au début de votre voyage vous permet de ne pas verrouiller ou de ne pas activer trop avant d’avoir eu la possibilité de comprendre et d’évaluer les implications de chaque décision. Il existe plusieurs « boutons et numéros » que vous pouvez activer dans le centre d’administration 365 de Microsoft et pour des sites et des équipes individuels. Un plan de gouvernance efficace est essentiel pour atteindre les objectifs de l’entreprise, mais la gouvernance concerne l’équilibre entre les risques et les avantages. Si nous verrouillant tous les éléments, les utilisateurs trouveront un moyen de contourner les règles s’ils doivent le faire pour effectuer le travail.
 
@@ -98,7 +98,7 @@ Utilisez les décisions de gouvernance clés, mais n’essayez pas de prendre to
 
 En plus du partage externe, comme indiqué précédemment, une autre décision clé pour chaque organisation consiste à mettre en service des sites et des groupes. Par exemple, tenez compte des éléments suivants :
 
-- Étant donné qu’il est très facile pour les utilisateurs de créer des groupes Microsoft 365, il se peut que vous souhaitiez ouvrir la création de groupe afin qu’il ne soit pas submergé par les demandes de création pour le compte d’autres personnes. Pour éviter la « prolifération des groupes », vous pouvez créer un flux de travail personnalisé qui envoie un courrier électronique avec la gouvernance, la formation et d’autres informations aux créateurs de groupe dès que le groupe est créé. (Par exemple, « vous venez de créer un site/une équipe, une communauté, etc.--Voici vos responsabilités et liens vers formation... ») En revanche, en fonction de votre entreprise, vous souhaiterez peut-être contrôler les personnes autorisées à créer des groupes.
+- Étant donné qu’il est très facile pour les utilisateurs de créer des groupes Microsoft 365, il se peut que vous souhaitiez ouvrir la création de groupe afin qu’il ne soit pas submergé par les demandes de création pour le compte d’autres personnes. Pour éviter la « prolifération des groupes », vous pouvez créer un flux de travail personnalisé qui envoie un courrier électronique avec la gouvernance, la formation et d’autres informations aux créateurs de groupe dès que le groupe est créé. (Par exemple, « vous venez de créer un site/une équipe, une communauté, etc.--Voici vos responsabilités et liens vers formation... ») En revanche, en fonction de votre entreprise, vous pouvez décider de la possibilité de créer des groupes.
 
 - Si vous souhaitez contrôler la manière dont les sites SharePoint sont créés, vous pouvez masquer le lien **créer un site** sur la page d’accueil de SharePoint. Créez un formulaire personnalisé ou créez une conception de site et un script de site personnalisés pour automatiser la mise en service des nouveaux sites SharePoint modernes à l’aide d’une structure de site prédéfinie qui peut inclure des liens vers vos meilleures pratiques en matière de gouvernance et de formation.
 
@@ -130,12 +130,14 @@ En fin de compte, la réussite de vos efforts en matière de planification de la
 
 - Devez-vous créer une certification et une nouvelle certification pour les propriétaires de site et d’équipe ?
 
-- Pouvez-vous créer un programme de spécialistes Microsoft 365 pour votre organisation ? De plus, envisagez de rejoindre le programme des champions Microsoft 365 pour obtenir des idées et des approches pour votre propre programme de champions et pour vous connecter à des personnes de votre choix, ainsi qu’à des dirigeants de pensée de Microsoft.
+- Pouvez-vous créer un programme de spécialistes Microsoft 365 pour votre organisation ? De plus, envisagez de rejoindre le [programme des champions Microsoft 365](https://aka.ms/O365Champions) pour obtenir des idées et des approches pour votre propre programme de champions et pour vous connecter à des personnes de votre choix, ainsi qu’à des dirigeants de pensée de Microsoft.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 [Gouvernance dans Microsoft Cloud adoption Framework pour Azure](https://docs.microsoft.com/azure/cloud-adoption-framework/govern)
 
 [Vue d’ensemble de la gouvernance SharePoint](https://docs.microsoft.com/sharepoint/governance-overview)
 
 [Planifier l’organisation et la gouvernance du cycle de vie des services de groupe](plan-organization-lifecycle-governance.md)
+
+[Collaboration sur des fichiers dans SharePoint avec Microsoft 365](https://docs.microsoft.com/sharepoint/deploy-file-collaboration)

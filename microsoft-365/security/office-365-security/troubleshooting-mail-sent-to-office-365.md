@@ -1,5 +1,5 @@
 ---
-title: Résolution des problèmes de courrier envoyé à Microsoft 365
+title: Résolution des problèmes d’e-mails envoyés à Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -18,14 +18,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Cet article fournit des informations sur la résolution des problèmes liés à l’envoi de messages électroniques à des boîtes de réception dans Microsoft 365 & meilleures pratiques pour le publipostage vers les clients Microsoft 365.
-ms.openlocfilehash: 52b4bb333a92dcaa21f45977b3d59a96053a69c2
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 895f2651529cd46968d053fefac10cb22b6a5d86
+ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201730"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49568553"
 ---
-# <a name="troubleshooting-mail-sent-to-microsoft-365"></a>Résolution des problèmes de courrier envoyé à Microsoft 365
+# <a name="troubleshooting-mail-sent-to-microsoft-365"></a>Résolution des problèmes d’e-mails envoyés à Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -51,9 +51,7 @@ Pour savoir comment créer et gérer des enregistrements DNS, y compris l’enre
 Il se peut que nous n’acceptions pas les e-mails provenant d’expéditeurs dont la recherche DNS inversée a échoué. Dans certains cas, des expéditeurs légitimes s’annoncent de façon incorrecte sous la forme d’une adresse IP routable non Internet lorsqu’ils tentent d’ouvrir une connexion à EOP. Les adresses IP réservées pour le réseau privé (non routable) incluent :
 
 - 192.168.0.0/16 (ou 192.168.0.0 - 192.168.255.255)
-
 - 10.0.0.0/8 (ou 10.0.0.0 - 10.255.255.255)
-
 - 172.16.0.0/11 (ou 172.16.0.0 - 172.31.255.255)
 
 ## <a name="you-received-a-non-delivery-report-ndr-when-sending-email-to-a-user-in-office-365"></a>Vous avez reçu une notification d’échec de remise lors de l’envoi d’un message électronique à un utilisateur dans Office 365

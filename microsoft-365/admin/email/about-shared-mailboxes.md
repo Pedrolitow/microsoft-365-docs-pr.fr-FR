@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Les boîtes aux lettres partagées sont utilisées lorsque plusieurs personnes ont besoin d’accéder à la même boîte aux lettres. Découvrez ce que vous devez savoir avant de créer une boîte aux lettres partagée.
-ms.openlocfilehash: d0e0888a71e2a017b3934caa67f8d53ffb787fe7
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: cc94ae30edcc7a8307328230989dc4a883732b0e
+ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445698"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49568293"
 ---
 # <a name="about-shared-mailboxes"></a>À propos des boîtes aux lettres partagées
 
@@ -42,7 +42,7 @@ Avant [de créer une boîte aux lettres partagée](create-a-shared-mailbox.md), 
 
 - **Utilisateurs externes :** Vous ne pouvez pas autoriser les personnes extérieures à votre entreprise (comme les personnes disposant d’un compte Gmail) à accéder à votre boîte aux lettres partagée. Si vous voulez effectuer cette action, envisagez plutôt de créer un groupe pour Outlook. Pour en savoir plus, consultez [la rubrique créer un groupe Microsoft 365 dans le centre d’administration](../create-groups/create-groups.md).
 
--  **Utiliser avec Outlook :** En plus de l’utilisation d’Outlook sur le Web à partir de votre navigateur pour accéder aux boîtes aux lettres partagées, vous pouvez également utiliser l’application Outlook pour iOS ou Outlook pour Android. Pour en savoir plus, consultez <a href="https://support.microsoft.com/office/f866242c-81b2-472e-8776-6c49c5473c9f" target="_blank">la rubrique ajouter une boîte aux lettres partagée à Outlook Mobile</a>. Une autre solution consiste à créer un groupe pour votre boîte aux lettres partagée. Pour plus d'informations, voir [Comparer les groupes](../create-groups/compare-groups.md).  
+- **Utiliser avec Outlook :** En plus de l’utilisation d’Outlook sur le Web à partir de votre navigateur pour accéder aux boîtes aux lettres partagées, vous pouvez également utiliser l’application Outlook pour iOS ou Outlook pour Android. Pour en savoir plus, consultez [la rubrique ajouter une boîte aux lettres partagée à Outlook Mobile](https://support.microsoft.com/office/f866242c-81b2-472e-8776-6c49c5473c9f). Une autre solution consiste à créer un groupe pour votre boîte aux lettres partagée. Pour plus d'informations, voir [Comparer les groupes](../create-groups/compare-groups.md).
 
 - **Chiffrement :** Vous ne pouvez pas chiffrer le courrier électronique envoyé à partir d’une boîte aux lettres partagée. Cela est dû au fait qu’une boîte aux lettres partagée ne dispose pas de son propre contexte de sécurité (nom d’utilisateur/mot de passe) et qu’elle ne peut pas recevoir de clé. Si plusieurs personnes sont membres et qu’elles envoient ou reçoivent des courriers électroniques chiffrés avec leurs propres clés, d’autres membres peuvent lire le courrier électronique et d’autres non, en fonction de la clé publique avec laquelle l’e-mail a été chiffré.
 

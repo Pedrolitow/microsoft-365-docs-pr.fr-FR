@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur l’usurpation d’identité dans Exchange Online Protection (EOP), où vous pouvez autoriser ou bloquer des expéditeurs usurpés spécifiques.
-ms.openlocfilehash: 62964550be161b16767595890872055b56586f1d
-ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
+ms.openlocfilehash: 9168d43e6e5544ad3454729afc8140642deba0ef
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367130"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572728"
 ---
 # <a name="configure-spoof-intelligence-in-eop"></a>Configurer l’intelligence des usurpations d’identité dans EOP
 
@@ -57,17 +57,16 @@ Vous pouvez gérer l’aide à la décision dans le centre de sécurité & confo
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Des autorisations doivent vous être attribuées avant de pouvoir exécuter ces procédures. décrites dans cette rubrique :
+- Avant de pouvoir effectuer les procédures décrites dans cet article, vous devez disposer d’autorisations dans le centre de sécurité & Compliance Center :
+  - Pour modifier la stratégie d’aide à la décision d’usurpation d’identité ou activer ou désactiver l’intelligence d’usurpation d’identité, vous devez être membre des groupes de rôles gestion de l' **organisation** ou **administrateur de sécurité** .
+  - Pour un accès en lecture seule à la stratégie d’aide à la décision, vous devez être membre des groupes de rôles **lecteur global** ou **lecteur de sécurité** .
 
-  - Pour modifier la stratégie d’intelligence de falsification ou activer ou désactiver l’aide à l’usurpation d’identité, vous devez être membre de l’un des groupes de rôles suivants :
+  Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
 
-    - **Gestion de l’organisation** ou **Administrateur de sécurité** dans le [Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
-    - **Gestion de l’organisation** ou **Gestion de l’hygiène** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  **Remarques**:
 
-  - Pour un accès en lecture seule à la stratégie d’aide à la décision, vous devez être membre de l’un des groupes de rôles suivants :
-
-    - **Lecteur de sécurité** dans le [Centre de conformité et sécurité](permissions-in-the-security-and-compliance-center.md).
-    - **Gestion de l’organisation en affichage seul** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le centre d’administration 365 de Microsoft donne aux utilisateurs les autorisations requises dans le centre de sécurité & conformité _et_ des autorisations pour d’autres fonctionnalités de Microsoft 365. Si vous souhaitez en savoir plus, veuillez consulter la page [À propos des rôles d’administrateur](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Le groupe de rôles gestion de l' **Organisation en affichage seul** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) offre également un accès en lecture seule à la fonctionnalité.
 
 - Pour connaître les paramètres recommandés pour l’intelligence d’usurpation, voir paramètres de la [stratégie anti-hameçonnage par défaut EOP](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings).
 

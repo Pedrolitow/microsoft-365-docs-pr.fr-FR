@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez comment rechercher et utiliser des rapports de sécurité de messagerie pour votre organisation. Les rapports de sécurité de messagerie sont disponibles dans le centre de sécurité & conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 038f310d8690652a3aefb2eab5ac01f76986d210
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 1ab78f17cd5689f9110227762c149d3691433179
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357934"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572560"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Afficher les rapports de sécurité de courrier dans le centre de sécurité et conformité
 
@@ -498,25 +498,22 @@ Pour afficher ce rapport, dans le [Centre de sécurité & conformité](https://p
 
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>Quelles sont les autorisations nécessaires pour afficher ces rapports ?
 
-Pour afficher et utiliser les rapports, vous devez être membre du groupe de rôles spécifié dans le centre de sécurité & conformité **et** dans Exchange Online.
+Pour afficher et utiliser les rapports décrits dans cette rubrique, vous devez être membre de l’un des groupes de rôles suivants dans le centre de sécurité & conformité :
 
-- Dans le centre de sécurité & conformité, vous devez être membre de l’un des groupes de rôles suivants :
+- **Gestion de l'organisation**
+- **Administrateur de la sécurité**
+- **Lecteur de sécurité**
+- **Lecteur général**
 
-  -Gestion de l’organisation-administrateur de la sécurité (vous pouvez également le faire dans le [Centre d’administration Azure Active Directory](https://aad.portal.azure.com) -lecteur de sécurité
+Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
 
-  Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
-
-- Dans Exchange Online, vous devez être membre de l’un des groupes de rôles suivants :
-
-  -Gestion de l’organisation-affichage uniquement-gestion de l’organisation-affichage uniquement des destinataires-gestion de la conformité
-
-Pour plus d’informations, consultez la rubrique [autorisations dans Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo) et [gérer les groupes de rôles dans Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
+**Remarque**: l’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le centre d’administration 365 de Microsoft donne aux utilisateurs les autorisations requises dans le centre de sécurité & conformité _et_ des autorisations pour d’autres fonctionnalités de Microsoft 365. Si vous souhaitez en savoir plus, veuillez consulter la page [À propos des rôles d’administrateur](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>Qu’en est-il si les rapports n’affichent pas de données ?
 
 Si vous ne voyez pas de données dans vos rapports, vérifiez que vos stratégies sont correctement configurées. Pour en savoir plus, consultez la rubrique se [protéger contre les menaces](protect-against-threats.md).
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 [Protection contre le courrier indésirable et les programmes malveillants dans EOP](anti-spam-and-anti-malware-protection.md)
 

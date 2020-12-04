@@ -37,7 +37,7 @@ Nous vous recommandons également d’activer les fonctionnalités de base de De
 
 |Option|Informations|
 |:------|:-----------|
-|Pièces jointes fiables pour SPO, OneDrive et Teams|[Pièces jointes fiables](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-attachments)<br>[Defender pour Office 365 – SharePoint, OneDrive et Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams).|
+|Pièces jointes fiables pour SPO, OneDrive et Teams|[Pièces jointes fiables](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-attachments)<br>[Defender pour Office 365 – SharePoint, OneDrive et Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams).|
 |Documents sécurisés|[Documents sécurisés dans Microsoft Defender pour Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs)|
 |Liens fiables pour Teams|[Liens fiables Office 365 dans Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links-for-teams)<br>[Liens fiables](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)|
 
@@ -51,8 +51,8 @@ Pour déterminer les paramètres d’accès invité Teams, procédez comme suit�
 
 1. Connectez-vous au Centre d’administration Microsoft 365 sur[https://admin.microsoft.com](https://admin.microsoft.com).
 2. Dans la barre de navigation de gauche, cliquez sur **Afficher tout**.
-3. Sous **Centres d’administration** , cliquez sur **Teams**.
-4. Dans le Centre d’administration Teams, dans le volet de navigation gauche, développez **Paramètres à l’échelle de l’organisation** , puis cliquez sur **Accès invité**.
+3. Sous **Centres d’administration**, cliquez sur **Teams**.
+4. Dans le Centre d’administration Teams, dans le volet de navigation gauche, développez **Paramètres à l’échelle de l’organisation**, puis cliquez sur **Accès invité**.
 5. Assurez-vous que **Autoriser l’accès invité dans Teams** est défini sur **Activé**.
 6. Apportez les modifications souhaitées aux autres paramètres invités, puis cliquez sur **Enregistrer**.
 
@@ -67,8 +67,8 @@ Pour réduire le risque de partager accidentellement des fichiers ou des dossier
 
 Pour modifier le lien de partage par défaut, procédez comme suit :
 1. Ouvrez le [Centre d’administration SharePoint](https://admin.microsoft.com/sharepoint).
-2. Sous **Stratégies** , cliquez sur **Partage**.
-3. Sous **Liens de fichier et de dossier** , sélectionnez **Uniquement les membres de votre organisation**.
+2. Sous **Stratégies**, cliquez sur **Partage**.
+3. Sous **Liens de fichier et de dossier**, sélectionnez **Uniquement les membres de votre organisation**.
 4. Cliquez sur **Enregistrer**.
 
 Pour une expérience de partage d’invités optimale, nous vous recommandons également d’activer [L’intégration de SharePoint et OneDrive à l’aide d’Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview).
@@ -87,8 +87,8 @@ Pour mettre à jour les paramètres de partage de site, procédez comme suit :
 1. Dans la barre d’outils de l’équipe, cliquez sur **Fichiers**.
 2. Cliquez sur **Ouvrir dans SharePoint**.
 3. Dans la barre d’outils du site SharePoint, cliquez sur l’icône Paramètres, puis cliquez sur **Autorisations du site**.
-4. Dans le volet **Autorisations de site** , sous **Paramètres de partage** , cliquez sur **Modifier les paramètres de partage**.
-5. Sous **Autorisations de partage** , sélectionnez **Propriétaires et membres du site. les personnes disposant des autorisations de modification peuvent partager des fichiers et des dossiers, mais seuls les propriétaires de site peuvent partager le site** , puis cliquer sur **Enregistrer**.
+4. Dans le volet **Autorisations de site**, sous **Paramètres de partage**, cliquez sur **Modifier les paramètres de partage**.
+5. Sous **Autorisations de partage**, sélectionnez **Propriétaires et membres du site. les personnes disposant des autorisations de modification peuvent partager des fichiers et des dossiers, mais seuls les propriétaires de site peuvent partager le site**, puis cliquer sur **Enregistrer**.
 
 ## <a name="additional-protections"></a>Autres protections
 
