@@ -15,14 +15,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à configurer les entrées d’URL dans la liste des clients autorisés/bloqués du centre de sécurité & Compliance Center.
-ms.openlocfilehash: eb9dcc5b239aae1366a0a2e0eebd68b3f0082e6b
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 1aae54ffd6026a7fc131017a10f9676d96be9b69
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202338"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572637"
 ---
-# <a name="manage-urls-in-the-tenant-allowblock-list"></a>Gérer les URL dans la liste verte/rouge du client
+# <a name="manage-urls-in-the-tenant-allowblock-list"></a>Gérer les URL dans la liste Autoriser/Bloquer du client
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -52,23 +52,22 @@ Cette rubrique décrit comment configurer les entrées dans la liste des clients
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Des autorisations doivent vous être attribuées avant de pouvoir exécuter ces procédures. décrites dans cette rubrique :
+- Avant de pouvoir effectuer les procédures décrites dans cet article, vous devez disposer d’autorisations dans le centre de sécurité & Compliance Center :
+  - Pour ajouter et supprimer des valeurs dans la liste d’autorisation/de blocage de client, vous devez être membre des groupes de rôles de gestion de l' **organisation** ou d' **administrateur de sécurité** .
+  - Pour un accès en lecture seule à la liste verte/rouge de client, vous devez être membre des groupes de rôles **lecteur global** ou **lecteur de sécurité** .
 
-  - Pour ajouter et supprimer des valeurs dans la liste d’autorisation/de blocage de client, vous devez être membre de l’un des groupes de rôles suivants :
+  Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
 
-    - **Gestion de l’organisation** ou **Administrateur de sécurité** dans le [Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
-    - **Gestion de l’organisation** ou **Gestion de l’hygiène** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  **Remarques**:
 
-  - Pour un accès en lecture seule à la liste verte/rouge de client, vous devez être membre de l’un des groupes de rôles suivants :
-
-    - **Lecteur de sécurité** dans le [Centre de conformité et sécurité](permissions-in-the-security-and-compliance-center.md).
-    - **Gestion de l’organisation en affichage seul** dans[Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le centre d’administration 365 de Microsoft donne aux utilisateurs les autorisations requises dans le centre de sécurité & conformité _et_ des autorisations pour d’autres fonctionnalités de Microsoft 365. Si vous souhaitez en savoir plus, veuillez consulter la page [À propos des rôles d’administrateur](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Le groupe de rôles gestion de l' **Organisation en affichage seul** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) offre également un accès en lecture seule à la fonctionnalité.
 
 ## <a name="use-the-security--compliance-center-to-create-url-entries-in-the-tenant-allowblock-list"></a>Utiliser le centre de sécurité & conformité pour créer des entrées d’URL dans la liste verte/rouge de client
 
 Pour plus d’informations sur la syntaxe des entrées d’URL, voir la syntaxe de l' [URL de la section liste des clients autorisés/bloqués](#url-syntax-for-the-tenant-allowblock-list) plus loin dans cette rubrique.
 
-1. Dans le centre de sécurité & conformité, accédez **Threat management** à \> **Policy** \> **liste verte/rouge**de la stratégie de gestion des menaces.
+1. Dans le centre de sécurité & conformité, accédez **Threat management** à \> **Policy** \> **liste verte/rouge** de la stratégie de gestion des menaces.
 
 2. Sur la page **liste des clients autorisés/bloqués** , vérifiez que l’onglet **URL** est sélectionné, puis cliquez sur **Ajouter** .
 
@@ -92,7 +91,7 @@ Pour plus d’informations sur la syntaxe des entrées d’URL, voir la syntaxe 
 
 ## <a name="use-the-security--compliance-center-to-view-entries-in-the-tenant-allowblock-list"></a>Utiliser le centre de sécurité & conformité pour afficher les entrées dans la liste des clients autorisés/bloqués
 
-1. Dans le centre de sécurité & conformité, accédez **Threat management** à \> **Policy** \> **liste verte/rouge**de la stratégie de gestion des menaces.
+1. Dans le centre de sécurité & conformité, accédez **Threat management** à \> **Policy** \> **liste verte/rouge** de la stratégie de gestion des menaces.
 
 2. Sélectionnez l’onglet **URL** .
 
@@ -114,19 +113,19 @@ Cliquez sur **filtre**. Dans le menu volant **filtre** qui s’affiche, configur
 
 - **N’expire jamais**: sélectionnez désactivé (désactiver ![ ](../../media/scc-toggle-off.png) ) ou activé ( ![ bascule ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) ).
 
-- **Dernière mise à jour**: sélectionnez une date**de**début (de), une date de fin (**à**) ou les deux.
+- **Dernière mise à jour**: sélectionnez une date **de** début (de), une date de fin (**à**) ou les deux.
 
 - **Date d’expiration**: sélectionnez une date de début (**de**), une date de fin (**à**) ou les deux.
 
 Lorsque vous avez terminé, cliquez sur **appliquer**.
 
-Pour effacer les filtres existants, cliquez sur **Filtrer**et, dans le menu volant **filtre** qui s’affiche, cliquez sur **effacer les filtres**.
+Pour effacer les filtres existants, cliquez sur **Filtrer** et, dans le menu volant **filtre** qui s’affiche, cliquez sur **effacer les filtres**.
 
 ## <a name="use-the-security--compliance-center-to-modify-entries-in-the-tenant-allowblock-list"></a>Utiliser le centre de sécurité & conformité pour modifier des entrées dans la liste des clients autorisés/bloqués
 
 Vous ne pouvez pas modifier la valeur de l’URL proprement dite. Au lieu de cela, vous devez supprimer l’entrée et la recréer.
 
-1. Dans le centre de sécurité & conformité, accédez **Threat management** à \> **Policy** \> **liste verte/rouge**de la stratégie de gestion des menaces.
+1. Dans le centre de sécurité & conformité, accédez **Threat management** à \> **Policy** \> **liste verte/rouge** de la stratégie de gestion des menaces.
 
 2. Sélectionnez l’onglet **URL** .
 
@@ -150,7 +149,7 @@ Vous ne pouvez pas modifier la valeur de l’URL proprement dite. Au lieu de cel
 
 ## <a name="use-the-security--compliance-center-to-remove-entries-from-the-tenant-allowblock-list"></a>Utiliser le centre de sécurité & conformité pour supprimer des entrées de la liste des clients autorisés/bloqués
 
-1. Dans le centre de sécurité & conformité, accédez **Threat management** à \> **Policy** \> **liste verte/rouge**de la stratégie de gestion des menaces.
+1. Dans le centre de sécurité & conformité, accédez **Threat management** à \> **Policy** \> **liste verte/rouge** de la stratégie de gestion des menaces.
 
 2. Sélectionnez l’onglet **URL** .
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Définissez les autorisations et les rôles utilisateur du gestionnaire de conformité Microsoft, et configurez le test automatisé des actions. Gérer l’historique des utilisateurs et filtrer votre vue de tableau de bord.
-ms.openlocfilehash: bcb75943df88578b30063d8e35877cb2e3e6250b
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: 9a09e12457d39e2f4aab99d3bec68b77c1a3a975
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376555"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572393"
 ---
 # <a name="get-started-with-compliance-manager"></a>Prise en main du Gestionnaire de conformité
 
@@ -72,7 +72,7 @@ Pour définir des autorisations et attribuer des rôles à partir du centre de c
 
 8. Lorsque vous avez fini d’affecter des utilisateurs, sélectionnez **Terminer**, puis **Enregistrer**, puis **Fermer**.
 
-##### <a name="more-about-the-office-365-secruity--compliance-center"></a>En savoir plus sur le centre de conformité Office 365 Secruity &
+##### <a name="more-about-the-office-365-security--compliance-center"></a>En savoir plus sur le centre de sécurité & conformité d’Office 365
 
 Pour plus d’informations sur [les autorisations, consultez la rubrique Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
 

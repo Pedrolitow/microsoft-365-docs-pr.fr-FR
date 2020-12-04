@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX
 description: Les administrateurs peuvent apprendre à utiliser les balises de mise en quarantaine pour contrôler ce que les utilisateurs peuvent faire à leurs messages mis en quarantaine.
-ms.openlocfilehash: e194aabf57a1a105f01d8d34815312d3c2fa153d
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 68f28e2dff3bdeada2685ef6806489f5e57f5daf
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357646"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572668"
 ---
 # <a name="quarantine-tags"></a>Balises de mise en quarantaine
 
@@ -62,9 +62,7 @@ Vous créez et attribuez des balises de mise en quarantaine dans le centre de s�
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Pour afficher, créer, modifier ou supprimer des balises de mise en quarantaine, vous devez être membre de l’un des groupes de rôles suivants :
-  - **Gestion de l’organisation** ou **Administrateur de sécurité** dans le [Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
-  - **Gestion de l’organisation** ou **Gestion de l’hygiène** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+- Pour afficher, créer, modifier ou supprimer des balises de mise en quarantaine, vous devez être membre des rôles de gestion de l' **organisation** ou d' **administrateur de sécurité** dans le centre de [sécurité & conformité](permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="step-1-create-quarantine-tags-in-the-security--compliance-center"></a>Étape 1 : créer des balises de mise en quarantaine dans le centre de sécurité & conformité
 
@@ -131,13 +129,13 @@ L’ordre et les valeurs requis pour chaque autorisation individuelle dans des g
 
 |Autorisation|Pas d’accès|Accès limité|Accès total|
 |---|:---:|:---:|:---:|
-|PermissionToAllowSender|0|0|0,1|
-|PermissionToBlockSender|0|0,1|0,1|
-|PermissionToDelete|0|0,1|0,1|
+|PermissionToAllowSender|0|0|1 |
+|PermissionToBlockSender|0|1 |1 |
+|PermissionToDelete|0|1 |1 |
 |PermissionToDownload<sup>\*</sup>|0|0|0|
-|PermissionToPreview|0|0,1|0,1|
-|PermissionToRelease<sup>\*\*</sup>|0|0|0,1|
-|PermissionToRequestRelease<sup>\*\*</sup>|0|0,1|0|
+|PermissionToPreview|0|1 |1 |
+|PermissionToRelease<sup>\*\*</sup>|0|0|1 |
+|PermissionToRequestRelease<sup>\*\*</sup>|0|1 |0|
 |PermissionToViewHeader<sup>\*</sup>|0|0|0|
 |Valeur binaire|00000000|01101010|11101100|
 |Valeur décimale à utiliser|0|106|236|
@@ -265,7 +263,7 @@ Si vous préférez utiliser PowerShell pour attribuer des balises de mise en qua
 <New-HostedContentFilterPolicy -Name "<Unique name>" | Set-HostedContentFilterPolicy -Identity "<Policy name>">  [-SpamAction Quarantine] [-SpamQuarantineTag <QuarantineTagName>] [-HighConfidenceSpamAction Quarantine] [-HighConfidenceSpamQuarantineTag <QuarantineTagName>] [-PhishSpamAction Quarantine] [-PhishQuarantineTag <QuarantineTagName>] [-HighConfidencePhishQuarantineTag <QuarantineTagName>] [-BulkSpamAction Quarantine] [-BulkQuarantineTag <QuarantineTagName>] ...
 ```
 
-**Remarques** :
+**Remarques**:
 
 - La valeur par défaut du paramètre _HighConfidencePhishAction_ est mise en quarantaine, vous n’avez donc pas besoin de définir l’action de mise en quarantaine pour les détections de hameçonnage à haute fiabilité dans les nouvelles stratégies de blocage du courrier indésirable. Pour tous les autres filtrages de courrier indésirable en fonction des stratégies anti-courrier indésirable nouvelles ou existantes, la balise de mise en quarantaine n’est effective que si la valeur de l’action est mise en quarantaine. Pour afficher les valeurs d’action dans les stratégies anti-courrier indésirable existantes, exécutez la commande suivante :
 
@@ -372,7 +370,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 ## <a name="remove-quarantine-tags-in-the-security--compliance-center"></a>Supprimer les balises de mise en quarantaine dans le centre de sécurité & conformité
 
-**Remarques** :
+**Remarques**:
 
 - Vous ne pouvez pas supprimer les balises de quarantaine prédéfinies.
 
@@ -455,7 +453,7 @@ Si la balise de mise en quarantaine affecte les autorisations d' **accès total*
 
 - **Notifications de courrier indésirable de l’utilisateur final**: les boutons suivants sont disponibles :
   - **Bloquer l’expéditeur**
-  - **Débloquer**
+  - **Version**
   - **Révision**
 
   ![Boutons disponibles dans la notification de courrier indésirable de l’utilisateur final si la balise de mise en quarantaine accorde à l’utilisateur les autorisations d’accès total](../../media/quarantine-tags-esn-full-access.png)
@@ -491,7 +489,7 @@ L’autorisation **proscrire l’expéditeur** (_PermissionToBlockSender_) contr
 
 Pour plus d’informations sur la liste des expéditeurs bloqués, voir [bloquer les messages de quelqu’un](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379667) et [utiliser Exchange Online PowerShell pour configurer la collection de listes fiables sur une boîte aux lettres](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox).
 
-#### <a name="delete-permission"></a>Autorisations de suppression
+#### <a name="delete-permission"></a>Supprimer une autorisation
 
 L’autorisation de **suppression** (_PermissionToDelete_) contrôle la possibilité pour les utilisateurs de supprimer leurs messages (messages dans lesquels l’utilisateur est un destinataire) de la mise en quarantaine.
 

@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez comment définir des stratégies de pièces jointes fiables afin de protéger votre organisation contre les fichiers malveillants par courrier électronique.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ca0bfb7ba91f86fee187cfe3445c0dd6c8d4ad56
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: a14f5a22795fc08b76165466d8e44ee38d8a2d81
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845491"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572636"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Configurer des stratégies de pièces jointes fiables dans Microsoft Defender pour Office 365
 
@@ -39,8 +39,8 @@ Vous pouvez configurer des stratégies de pièces jointes fiables dans le centre
 
 Les éléments de base d’une stratégie de pièces jointes fiables sont les suivants :
 
-- **Stratégie de pièces jointes approuvées** : spécifie les actions pour les détections de programmes malveillants inconnues, l’envoi de messages avec des pièces jointes de programmes malveillants à une adresse e-mail spécifique et la remise des messages si l’analyse des pièces jointes fiables ne peut pas aboutir.
-- **La règle de pièce jointe fiable** : spécifie la priorité et les filtres de destinataire (auxquels la stratégie s’applique).
+- **Stratégie de pièces jointes approuvées**: spécifie les actions pour les détections de programmes malveillants inconnues, l’envoi de messages avec des pièces jointes de programmes malveillants à une adresse e-mail spécifique et la remise des messages si l’analyse des pièces jointes fiables ne peut pas aboutir.
+- **La règle de pièce jointe fiable**: spécifie la priorité et les filtres de destinataire (auxquels la stratégie s’applique).
 
 La différence entre ces deux éléments n’est pas évidente lorsque vous gérez des stratégies de pièces jointes fiables dans le centre de sécurité & conformité :
 
@@ -59,10 +59,16 @@ Dans Exchange Online PowerShell ou EOP PowerShell autonome, vous gérez la strat
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Pour afficher, créer, modifier et supprimer des stratégies de pièces jointes approuvées, vous devez être membre de l’un des groupes de rôles suivants :
+- Avant de pouvoir effectuer les procédures décrites dans cet article, vous devez disposer d’autorisations dans le centre de sécurité & Compliance Center :
+  - Pour créer, modifier et supprimer des stratégies de pièces jointes approuvées, vous devez être membre des groupes de rôles gestion de l' **organisation** ou **administrateur de sécurité** .
+  - Pour un accès en lecture seule aux stratégies de pièces jointes approuvées, vous devez être membre des groupes de rôles **lecteur global** ou **lecteur de sécurité** .
 
-  - **Gestion de l’organisation** ou **Administrateur de sécurité** dans le [Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
-  - **Gestion** de l’organisation dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
+
+  **Remarques**:
+
+  - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le centre d’administration 365 de Microsoft donne aux utilisateurs les autorisations requises dans le centre de sécurité & conformité _et_ des autorisations pour d’autres fonctionnalités de Microsoft 365. Si vous souhaitez en savoir plus, veuillez consulter la page [À propos des rôles d’administrateur](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Le groupe de rôles gestion de l' **Organisation en affichage seul** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) offre également un accès en lecture seule à la fonctionnalité.
 
 - Pour connaître les paramètres recommandés pour les stratégies de pièces jointes approuvées, consultez la rubrique [Safe Attachments Settings](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-settings).
 
@@ -86,33 +92,33 @@ La création d’une stratégie de pièces jointes fiables personnalisée dans l
 
 4. Sur la page **paramètres** qui s’affiche, configurez les paramètres suivants :
 
-   - **Pièces jointes approuvées réponse aux programmes malveillants inconnus** : sélectionnez l’une des valeurs suivantes :
+   - **Pièces jointes approuvées réponse aux programmes malveillants inconnus**: sélectionnez l’une des valeurs suivantes :
 
-     - **Off** : en règle générale, nous ne recommandons pas cette valeur.
+     - **Off**: en règle générale, nous ne recommandons pas cette valeur.
      - **Moniteur**
-     - **Block** : il s’agit de la valeur par défaut et de la valeur recommandée dans les stratégies de sécurité standard et rigoureuses [prédéfinies](preset-security-policies.md).
+     - **Block**: il s’agit de la valeur par défaut et de la valeur recommandée dans les stratégies de sécurité standard et rigoureuses [prédéfinies](preset-security-policies.md).
      - **Replace**
      - **Remise dynamique (fonctionnalité aperçu)**
 
      Ces valeurs sont expliquées dans [paramètres de stratégie de pièces jointes approuvées](atp-safe-attachments.md#safe-attachments-policy-settings).
 
-   - **Envoyez la pièce jointe à l’adresse de messagerie suivante** : pour les valeurs d’action **bloquer** , **surveiller** ou **remplacer** , vous pouvez sélectionner **activer la redirection** pour envoyer des messages contenant des pièces jointes de programmes malveillants à l’adresse de messagerie interne ou externe spécifiée à des fins d’analyse et d’enquête.
+   - **Envoyez la pièce jointe à l’adresse de messagerie suivante**: pour les valeurs d’action **bloquer**, **surveiller** ou **remplacer**, vous pouvez sélectionner **activer la redirection** pour envoyer des messages contenant des pièces jointes de programmes malveillants à l’adresse de messagerie interne ou externe spécifiée à des fins d’analyse et d’enquête.
 
      La recommandation pour les paramètres de stratégie standard et strict est d’activer la redirection. Pour plus d’informations, consultez la rubrique [paramètres de pièces jointes fiables](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-settings).
 
-   - **Appliquer la sélection ci-dessus si l’analyse anti-programme malveillant pour les pièces jointes expire ou si une erreur se produit** : l’action spécifiée par les **pièces jointes approuvées une réponse inconnue aux programmes malveillants** est prise sur les messages, même lorsque l’analyse Sélectionnez toujours cette option si vous sélectionnez **Rediriger activé**. Sinon, les messages peuvent être perdus.
+   - **Appliquer la sélection ci-dessus si l’analyse anti-programme malveillant pour les pièces jointes expire ou si une erreur se produit**: l’action spécifiée par les **pièces jointes approuvées une réponse inconnue aux programmes malveillants** est prise sur les messages, même lorsque l’analyse Sélectionnez toujours cette option si vous sélectionnez **Rediriger activé**. Sinon, les messages peuvent être perdus.
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
 5. Sur la page **appliqué à** qui s’affiche, identifiez les destinataires internes auxquels s’applique la stratégie.
 
-   Vous pouvez uniquement utiliser une condition ou une exception une seule fois, mais vous pouvez spécifier plusieurs valeurs pour la condition ou l’exception. Plusieurs valeurs de la même condition ou exception utilisent la logique OU (par exemple, _\<recipient1\>_ ou _\<recipient2\>_ ). Des conditions ou des exceptions différentes utilisent la logique ET (par exemple, _\<recipient1\>_ et _\<member of group 1\>_ ).
+   Vous pouvez uniquement utiliser une condition ou une exception une seule fois, mais vous pouvez spécifier plusieurs valeurs pour la condition ou l’exception. Plusieurs valeurs de la même condition ou exception utilisent la logique OU (par exemple, _\<recipient1\>_ ou _\<recipient2\>_). Des conditions ou des exceptions différentes utilisent la logique ET (par exemple, _\<recipient1\>_ et _\<member of group 1\>_).
 
-   Cliquez sur **Ajouter une condition**. Dans la liste déroulante qui apparaît, sélectionnez une condition sous **appliqué si** :
+   Cliquez sur **Ajouter une condition**. Dans la liste déroulante qui apparaît, sélectionnez une condition sous **appliqué si**:
 
-   - **Le destinataire est** : spécifie une ou plusieurs boîtes aux lettres, utilisateurs de messagerie ou contacts de messagerie dans votre organisation.
-   - **Le destinataire est membre de** : spécifie un ou plusieurs groupes dans votre organisation.
-   - **Le domaine du destinataire est**  : spécifie les destinataires dans un ou plusieurs domaines configurés et acceptés dans votre organisation.
+   - **Le destinataire est**: spécifie une ou plusieurs boîtes aux lettres, utilisateurs de messagerie ou contacts de messagerie dans votre organisation.
+   - **Le destinataire est membre de**: spécifie un ou plusieurs groupes dans votre organisation.
+   - **Le domaine du destinataire est** : spécifie les destinataires dans un ou plusieurs domaines configurés et acceptés dans votre organisation.
 
    Une fois que vous avez sélectionné la condition, une liste déroulante correspondante apparaît avec **une case à** cocher.
 
@@ -170,7 +176,7 @@ Pour plus d’informations sur l’ordre de priorité et l’évaluation et l’
 
 Les stratégies de pièces jointes approuvées sont affichées dans l’ordre dans lequel elles sont traitées (la première stratégie a la valeur de **priorité** 0).
 
-**Remarque** : dans le centre de sécurité & conformité, vous pouvez uniquement modifier la priorité de la stratégie de pièces jointes fiables une fois que vous l’avez créée. Dans PowerShell, vous pouvez remplacer la priorité par défaut lors de la création de la règle de pièce jointe fiable (ce qui peut avoir une incidence sur la priorité des règles existantes).
+**Remarque**: dans le centre de sécurité & conformité, vous pouvez uniquement modifier la priorité de la stratégie de pièces jointes fiables une fois que vous l’avez créée. Dans PowerShell, vous pouvez remplacer la priorité par défaut lors de la création de la règle de pièce jointe fiable (ce qui peut avoir une incidence sur la priorité des règles existantes).
 
 Pour modifier la priorité d’une stratégie, déplacez-la vers le haut ou vers le bas de la liste (vous ne pouvez pas modifier directement le numéro de **priorité** dans le Centre de sécurité & conformité).
 
@@ -182,7 +188,7 @@ Pour modifier la priorité d’une stratégie, déplacez-la vers le haut ou vers
 
    - La stratégie de pièces jointes approuvées avec la valeur de **priorité** **0** a uniquement le bouton **diminuer la priorité** disponible.
 
-   - La stratégie de pièces jointes approuvées avec la valeur de **priorité** la plus faible (par exemple, **3** ) n’a que le bouton **augmenter la priorité** disponible.
+   - La stratégie de pièces jointes approuvées avec la valeur de **priorité** la plus faible (par exemple, **3**) n’a que le bouton **augmenter la priorité** disponible.
 
    - Si vous avez au moins trois stratégies de pièces jointes approuvées, les stratégies entre les valeurs de priorité la plus élevée et la plus faible ont les deux boutons **augmenter la priorité** et **diminuer la priorité** .
 
@@ -196,7 +202,7 @@ Pour modifier la priorité d’une stratégie, déplacez-la vers le haut ou vers
 
 2. Dans la page **pièces jointes approuvées** , sélectionnez une stratégie dans la liste et cliquez dessus (ne cochez pas la case).
 
-3. Dans la boîte de dialogue détails de la stratégie, cliquez sur **Supprimer la stratégie** , puis cliquez sur **Oui** dans la boîte de dialogue d’avertissement qui s’affiche.
+3. Dans la boîte de dialogue détails de la stratégie, cliquez sur **Supprimer la stratégie**, puis cliquez sur **Oui** dans la boîte de dialogue d’avertissement qui s’affiche.
 
 ## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies"></a>Utiliser Exchange Online PowerShell ou l’environnement de ligne de commande Exchange EOP PowerShell autonome pour configurer des stratégies de pièces jointes fiables
 
@@ -215,13 +221,13 @@ La création d’une stratégie de pièces jointes fiables dans PowerShell est u
 1. Créez la stratégie de pièces jointes fiables.
 2. Créer la règle de pièce jointe fiable qui spécifie la stratégie de pièces jointes fiables à laquelle la règle s’applique.
 
- **Remarques**  :
+ **Remarques**:
 
 - Vous pouvez créer une règle de pièce jointe fiable et lui affecter une stratégie de pièces jointes fiables existante non associée. Une règle de pièce jointe fiable ne peut pas être associée à plusieurs stratégies de pièces jointes fiables.
 
 - Vous pouvez configurer les paramètres suivants sur les nouvelles stratégies de pièces jointes fiables dans PowerShell qui ne sont pas disponibles dans le centre de sécurité & jusqu’à ce que vous ayez créé la stratégie :
-  - Créez la nouvelle stratégie comme désactivé ( _activé_ `$false` sur la cmdlet **New-safeattachmentrule permet** ).
-  - Définir la priorité de la stratégie lors de la création ( _priorité_ _\<Number\>_ ) sur la cmdlet **New-safeattachmentrule permet** ).
+  - Créez la nouvelle stratégie comme désactivé (_activé_ `$false` sur la cmdlet **New-safeattachmentrule permet** ).
+  - Définir la priorité de la stratégie lors de la création (_priorité_ _\<Number\>_ ) sur la cmdlet **New-safeattachmentrule permet** ).
 
 - Une nouvelle stratégie de pièces jointes approuvées que vous créez dans PowerShell n’est pas visible dans le centre de sécurité &, tant que vous n’avez pas affecté la stratégie à une règle de pièce jointe fiable.
 
@@ -388,7 +394,7 @@ Cet exemple définit la priorité de la règle nommée Marketing Department sur�
 Set-SafeAttachmentRule -Identity "Marketing Department" -Priority 2
 ```
 
-**Remarque** : pour définir la priorité d’une nouvelle règle lors de sa création, utilisez plutôt le paramètre _Priority_ sur la cmdlet **New-safeattachmentrule permet** .
+**Remarque**: pour définir la priorité d’une nouvelle règle lors de sa création, utilisez plutôt le paramètre _Priority_ sur la cmdlet **New-safeattachmentrule permet** .
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Set-safeattachmentrule permet](https://docs.microsoft.com/powershell/module/exchange/set-safeattachmentrule).
 
