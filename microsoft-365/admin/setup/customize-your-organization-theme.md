@@ -20,20 +20,20 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: 'Découvrez comment modifier le thème par défaut de Microsoft 365 et le personnaliser pour qu’il corresponde au logo ou à la couleur de votre entreprise. '
-ms.openlocfilehash: f3ba6021205289426ee78f16c7d0678e4b81ef75
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 7392ea43c32635a9852b0fbceed80475d99c9d64
+ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44779856"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49580684"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Personnaliser le thème Microsoft 365 de votre organisation
 
-En tant qu’administrateur de votre abonnement Microsoft 365 pour les entreprises, vous pouvez modifier le thème par défaut qui s’affiche dans la barre de navigation supérieure pour tous les membres de l’Organisation : 
+En tant qu’administrateur de votre abonnement Microsoft 365 pour les entreprises, vous pouvez modifier le thème par défaut qui s’affiche dans la barre de navigation supérieure pour tous les membres de l’Organisation :
 
 - Ajoutez le logo de votre société.
-- Modifiez les couleurs de façon à ce qu’elles correspondent au reste de votre marque. 
-- Ajouter un lien de destination les utilisateurs passent lorsqu’ils sélectionnent votre logo. 
+- Modifiez les couleurs de façon à ce qu’elles correspondent au reste de votre marque.
+- Ajouter un lien de destination les utilisateurs passent lorsqu’ils sélectionnent votre logo.
   
 ## <a name="customize-your-theme-in-the-admin-center"></a>Personnaliser votre thème dans le centre d’administration
 
@@ -42,7 +42,7 @@ En tant qu’administrateur de votre abonnement Microsoft 365 pour les entrepris
 2. Sous l’onglet Profil de l' **organisation** , sélectionnez **thèmes personnalisés**.
 
 3. Dans le panneau **thèmes de douane** , modifiez les éléments de thème souhaités pour votre organisation :
-    
+
     - **Utiliser une image de logo personnalisée**: indiquez si vous souhaitez utiliser une image à partir d’une URL ou pour télécharger une image. Si vous utilisez une URL, assurez-vous que l’URL utilise le protocole HTTPs et que l’image est de 200 x 30 pixels de n’importe quel format de n’importe quelle taille. Vous pouvez télécharger un logo inférieur à 10 Ko (200 x 30 pixels au format JPG, PNG, GIF ou SVG).
 
       > [!NOTE]
@@ -53,9 +53,9 @@ En tant qu’administrateur de votre abonnement Microsoft 365 pour les entrepris
     - **Sélectionnez image d’arrière-plan**: sélectionnez l’image et téléchargez votre propre fichier jpg, png ou gif avec une résolution de 1366 x 50 pixels, ne dépassant pas 15 Ko. L’image d’arrière-plan s’affiche dans la barre de navigation supérieure de chaque page.
 
       > [!NOTE]
-      > Les images qui contiennent du texte peuvent ne pas s’afficher comme prévu. Les éléments intégrés qui apparaissent sur les côtés gauche et droit de la barre de navigation peuvent varier d’un service à l’autres, et votre texte peut être masqué par ces éléments. 
+      > Les images qui contiennent du texte peuvent ne pas s’afficher comme prévu. Les éléments intégrés qui apparaissent sur les côtés gauche et droit de la barre de navigation peuvent varier d’un service à l’autres, et votre texte peut être masqué par ces éléments.
 
-    - **Couleur**de la barre de navigation : sélectionnez une couleur à utiliser pour l’arrière-plan de la barre de navigation. La barre de navigation apparaît en haut de chaque page.
+    - **Couleur** de la barre de navigation : sélectionnez une couleur à utiliser pour l’arrière-plan de la barre de navigation. La barre de navigation apparaît en haut de chaque page.
 
     - **Texte et icônes** : Sélectionnez la couleur à utiliser pour le texte et les icônes de la barre de navigation supérieure.
 
@@ -64,9 +64,9 @@ En tant qu’administrateur de votre abonnement Microsoft 365 pour les entrepris
     - **Empêcher les utilisateurs de remplacer le thème**: inverser ce bouton pour empêcher les utilisateurs de choisir leur propre thème à partir de notre sélection de thème. Cela n’empêche pas les utilisateurs de définir un thème à contraste élevé.
 
     - **Afficher le nom d’utilisateur**: choisissez d’afficher ou non le nom complet d’un utilisateur au niveau du point d’entrée au responsable de compte dans le coin supérieur droit de la page lorsque l’utilisateur est connecté. Par défaut, les utilisateurs voient leur photo ou leurs initiales, si aucune photo n’a été téléchargée.
-    
+
 4. Sélectionnez **Enregistrer les modifications**.
-    
+
 Vous pouvez voir votre nouveau thème immédiatement dans le centre d’administration. Après un court délai, vous pouvez le voir dans Microsoft 365, y compris sur les pages dans Outlook, SharePoint, l' [application mobile SharePoint pour iOS](https://support.microsoft.com/office/339402ce-16bb-4c97-9475-0c5375ccef7a)et l' [application mobile SharePoint pour Android](https://support.microsoft.com/office/d875654b-fb0a-4dbe-a17a-a676cf936284).
 
 Vous pouvez supprimer votre icône ou vos couleurs personnalisées à tout moment. Retournez simplement sur la page du thème et sélectionnez **Supprimer les thèmes personnalisés**.
@@ -77,12 +77,10 @@ Vous pouvez supprimer votre icône ou vos couleurs personnalisées à tout momen
 
 - **Couleurs personnalisées**: choisissez une **couleur d’arrière-plan** de la barre de navigation avec un rapport de contraste élevé avec l’image de **logo** que vous avez choisie. Choisissez une couleur de **texte et d’icônes** avec un taux de contraste élevé à la **couleur d’arrière-plan** de la barre de navigation afin que tout le texte et les icônes soient clairement visibles.
 
-- **Couleur d’accentuation**: sélectionnez un document qui apparaît bien sur un arrière-plan blanc ou clair. La couleur d’accentuation permet de colorer certains liens et boutons qui apparaissent sur un arrière-plan blanc ou clair. Par exemple, la couleur d’accentuation est utilisée pour colorier des éléments dans la boîte de réception d’un utilisateur et sur sa page de portail Office.com. 
+- **Couleur d’accentuation**: sélectionnez un document qui apparaît bien sur un arrière-plan blanc ou clair. La couleur d’accentuation permet de colorer certains liens et boutons qui apparaissent sur un arrière-plan blanc ou clair. Par exemple, la couleur d’accentuation est utilisée pour colorier des éléments dans la boîte de réception d’un utilisateur et sur sa page de portail Office.com.
   
 - **Ratio de contraste**: le rapport de contraste recommandé entre la couleur de texte, d’icône ou de bouton et la couleur d’arrière-plan est 4,5:1.
   
 ## <a name="related-articles"></a>Articles connexes
 
 [Ajouter des vignettes personnalisées à la page Mes applications et au lanceur d'applications](../manage/customize-the-app-launcher.md)
-  
-  

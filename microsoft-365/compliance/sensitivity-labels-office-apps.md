@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Découvrez comment les utilisateurs utilisent les étiquettes de confidentialité dans les applications Office pour ordinateur de bureau, mobile et le Web, et quelles applications prennent en charge les étiquettes de sensibilité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fb1918d2d6b39d01cf6340276c8d8ee00a5e1670
-ms.sourcegitcommit: ad0a63aa94cbfa686bf1ecbfec0152bb8e0e35af
+ms.openlocfilehash: 685228823c87eff975fabd2dd398c1b67be8eeef
+ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "49413052"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49580737"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Utiliser les étiquettes de confidentialité dans les applications Office
 
@@ -63,7 +63,7 @@ Pour iOS et Android : lorsqu’une version minimale est indiquée, la fonctionn
 |[Attribuer des autorisations maintenant](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Oui-opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Permettre aux utilisateurs d’attribuer des autorisations](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004 + | 16.35 +   | En cours de révision   | En cours de révision         | En cours de révision                                                        |
 |[Afficher l’utilisation des étiquettes avec l’analyse d’étiquette et l'](label-analytics.md) envoi de données pour les administrateurs                      | En cours de révision            | En cours de révision        | En cours de révision   | En cours de révision         | OK <sup>\*</sup>                                                        |
-|[Demander aux utilisateurs d’appliquer une étiquette à leurs courriers électroniques et documents](sensitivity-labels.md#what-label-policies-can-do)   | En cours de révision            | En cours de révision        | En cours de révision   | En cours de révision         | En cours de révision                                                        |
+|[Demander aux utilisateurs d’appliquer une étiquette à leurs courriers électroniques et documents](sensitivity-labels.md#what-label-policies-can-do)   | Aperçu : [canal bêta](https://office.com/insider)             | Aperçu : [canal bêta](https://office.com/insider)         | En cours de révision   | En cours de révision         | En cours de révision                                            
 |[Appliquer automatiquement une étiquette de confidentialité à du contenu](apply-sensitivity-label-automatically.md)                    | 2009 +                                  | Aperçu pour Word et PowerPoint : déploiement vers le [canal actuel (aperçu)](https://office.com/insider) | En cours de révision | En cours de révision | [Oui-opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |Prise en charge de l' [enregistrement automatique](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) et de la [co-création](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) sur des documents étiquetés et protégés | En cours de révision | En cours de révision | En cours de révision | En cours de révision | [Oui-opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
@@ -84,8 +84,8 @@ Pour iOS et Android : lorsqu’une version minimale est indiquée, la fonctionn
 |[Marquages dynamiques avec des variables](#dynamic-markings-with-variables)                                              | En cours de révision                     | En cours de révision                 | En cours de révision         | En cours de révision           | En cours de révision               |
 |[Attribuer des autorisations maintenant](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | Oui               |
 |[Permettre aux utilisateurs d’attribuer des autorisations](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | Oui               |
+|[Demander aux utilisateurs d’appliquer une étiquette à leurs courriers électroniques et documents](#require-users-to-apply-a-label-to-their-email-and-documents)   | Aperçu : [canal bêta](https://office.com/insider)                        | 16.43 +                     | 4.57.0 +            | 4.2037.4 +                | Oui                |
 |[Afficher l’utilisation des étiquettes avec l’analyse d’étiquette et l'](label-analytics.md) envoi de données pour les administrateurs                      | En cours de révision                       | En cours de révision                    | En cours de révision           | En cours de révision               | Oui               |
-|[Demander aux utilisateurs d’appliquer une étiquette à leurs courriers électroniques et documents](sensitivity-labels.md#what-label-policies-can-do)   | En cours de révision                       | En cours de révision                    | En cours de révision           | En cours de révision               | En cours de révision               |
 |[Appliquer automatiquement une étiquette de confidentialité à du contenu](apply-sensitivity-label-automatically.md)                    | 2009 +                      | En cours de révision                    | En cours de révision           | En cours de révision               | Oui |
 |
 
@@ -264,6 +264,29 @@ Lorsque vous configurez une étiquette de sensibilité pour les marques de conte
 > [!NOTE]
 > La syntaxe de ces variables respecte la casse.
 
+## <a name="require-users-to-apply-a-label-to-their-email-and-documents"></a>Demander aux utilisateurs d’appliquer une étiquette à leurs courriers électroniques et documents
+
+> [!IMPORTANT]
+> Également appelé étiquetage obligatoire, toutes les applications sur toutes les plateformes ne prennent actuellement pas en charge le paramètre de stratégie **permettant aux utilisateurs d’appliquer une étiquette à leurs courriers électroniques et documents**.
+> 
+> Le [client d’étiquetage unifié Azure information protection](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app) prend en charge l’étiquetage obligatoire et l’étiquetage intégré aux applications Office, reportez-vous aux tableaux de la section [fonctionnalités](#support-for-sensitivity-label-capabilities-in-apps) de cette page.
+
+Lorsque ce paramètre de stratégie est sélectionné, les utilisateurs auxquels la stratégie est attribuée doivent sélectionner et appliquer une étiquette de sensibilité dans les scénarios suivants :
+
+- Pour le client d’étiquetage unifié Azure information protection, procédez comme suit :
+    - Pour les documents (Word, Excel, PowerPoint) : lorsqu’un document non labellisé est enregistré ou que les utilisateurs ferment le document.
+    - Pour les e-mails (Outlook) : lorsque les utilisateurs envoient un message sans étiquette.
+
+- Pour les étiquettes intégrées dans les applications Office :
+    - Pour les documents ((Word, Excel, PowerPoint) : lors de l’ouverture ou de l’enregistrement d’un document non labellisé.
+    - Pour les e-mails (Outlook) : lorsque les utilisateurs envoient un message électronique non labellisé.
+
+Informations supplémentaires pour l’étiquetage intégré :
+
+- Lorsque les utilisateurs sont invités à ajouter une étiquette de critère de diffusion, car ils ouvrent un document sans étiquette, ils peuvent ajouter une étiquette ou choisir d’ouvrir le document en lecture seule.
+
+- Lorsque l’étiquetage obligatoire est activé, les utilisateurs ne peuvent pas supprimer les étiquettes de confidentialité des documents, mais peuvent modifier une étiquette existante.
+
 #### <a name="setting-different-visual-markings-for-word-excel-powerpoint-and-outlook"></a>Définition de marques visuelles différentes pour Word, Excel, PowerPoint et Outlook
 
 En tant que variable supplémentaire, vous pouvez configurer des marquages visuels par type d’application Office à l’aide d’une instruction de variable « if. app » dans la chaîne de texte, et identifier le type d’application à l’aide des valeurs **Word**, **Excel**, **PowerPoint** ou **Outlook**. Vous pouvez également abréger ces valeurs, ce qui est nécessaire si vous souhaitez en spécifier plusieurs dans la même instruction if. app.
@@ -298,6 +321,7 @@ Exemples :
     `${If.App.WP}This content is ${If.End}Confidential`
 
     Dans Word et PowerPoint, l’étiquette applique le texte de filigrane « ce contenu est confidentiel ». Dans Excel, l’étiquette applique le texte de filigrane « Confidential ». Dans Outlook, l’étiquette n’applique pas de texte de filigrane, car les filigranes sous forme de marques visuelles ne sont pas pris en charge dans Outlook.
+>>>>>>> a51fef4b19dc23a23a161de3e8333dcd7527540b
 
 ## <a name="end-user-documentation"></a>Documentation destinée aux utilisateurs finaux
 

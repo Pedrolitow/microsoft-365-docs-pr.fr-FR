@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre comment Contoso Corporation a répondu au COVID-19 Pandemic et a conçu son infrastructure d’installation et de mise à jour logicielle pour un travail à distance ou sur site.
-ms.openlocfilehash: 8e25b399d7acd2cb3486283623d29315eac9491e
-ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
+ms.openlocfilehash: d04b4efcdd4dd04315ad37311cdd2cfbc2e64e88
+ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49371762"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49580672"
 ---
 # <a name="contosos-covid-19-response-and-support-for-remote-and-onsite-work"></a>Réponse COVID-19 et prise en charge de contoso pour le travail à distance et sur site
 
@@ -44,8 +44,8 @@ Un collaborateur distant avec le client VPN installé utilise le DNS pour trouve
 Une fois que les modifications initiales ont été apportées pour prendre en charge principalement les employés distants pendant les verrouillages régionaux, Contoso a apporté des modifications d’infrastructure pour prendre en charge le travail à distance et sur site dans lequel un travailleur pourrait être :
 
 - Toujours à distance.
-- Toujours en local.
-- Une combinaison de à distance et en local.
+- Toujours sur site.
+- Une combinaison de site à distance et à distance.
 
 Les fonctionnalités d’identité, de sécurité et de conformité de Microsoft 365 sont conçues pour une approbation zéro et pour fonctionner indépendamment de l’emplacement de l’utilisateur et de son appareil. Pour plus d’informations, consultez la rubrique [Zero Trust](https://www.microsoft.com/security/business/zero-trust).
 

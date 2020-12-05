@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: Découvrez comment définir certains mots de passe utilisateur individuels pour ne jamais expirer à l’aide de Windows PowerShell.
-ms.openlocfilehash: 9497dfb5793ddbfc3d6845ec1efba91ad972ea38
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 2d60a8312be070d3f56cfef7cfb93e6c5da32991
+ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646654"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49580636"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>Définir le mot de passe d’un utilisateur de façon à ce qu’il n’expire jamais
 
@@ -107,6 +107,9 @@ Run one of the following commands:
     Get-AzureADUser -All $true | Set-AzureADUser -PasswordPolicies DisablePasswordExpiration
     ```
 
+> [!WARNING]
+> Les comptes d’utilisateur configurés avec le `-PasswordPolicies DisablePasswordExpiration` paramètre vieillissent en fonction de l' `pwdLastSet` attribut. En fonction de l' `pwdLastSet` attribut, si vous modifiez l’expiration `-PasswordPolicies None` , tous les mots de passe ayant une pwdLastSet antérieure à 90 jours doivent être modifiés par l’utilisateur lors de sa prochaine connexion. Cette modification peut affecter un grand nombre d’utilisateurs.
+
 ### <a name="set-a-password-to-expire"></a>Définir un mot de passe pour qu’il expire
 
 Exécutez une des commandes suivantes :
@@ -122,9 +125,6 @@ Exécutez une des commandes suivantes :
     ```powershell
     Get-AzureADUser -All $true | Set-AzureADUser -PasswordPolicies None
     ```
-
-> [!WARNING]
-> Les comptes d’utilisateur configurés avec le `-PasswordPolicies DisablePasswordExpiration` paramètre vieillissent en fonction de l' `pwdLastSet` attribut de compte d’utilisateur. Par exemple, si vous définissez des mots de passe d’utilisateur qui n’expirent jamais, puis 90 jours ou plus, les mots de passe expirent toujours. En fonction de l' `pwdLastSet` attribut du compte d’utilisateur, pour les comptes d’utilisateur configurés avec le `-PasswordPolicies None` paramètre, tous les mots de passe dont la `pwdLastSet` date est antérieure à 90 jours imposent à l’utilisateur de les modifier la prochaine fois qu’ils se connectent. Cette modification peut affecter un grand nombre d’utilisateurs.
 
 ## <a name="related-content"></a>Contenu connexe
 
