@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: Implémentez Microsoft Information Protection (MIP) pour vous permettre de protéger les informations sensibles où qu’elles se trouvent.
-ms.openlocfilehash: 4c8f4af11779cd8b3df043bc92187625c41f4ac9
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: 4afc73b5a2cefe88d2e3af5fd6665ec64e5c0ee3
+ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519809"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49568316"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft Information Protection dans Microsoft 365.
 
@@ -36,9 +36,12 @@ Les fonctionnalités MIP sont incluses dans la Conformité Microsoft 365 et vou
 
 Si vous souhaitez en savoir plus sur la gestion de vos données, consultez l’article [Gouvernance des données Microsoft dans Microsoft 365](manage-Information-governance.md).
 
-## <a name="know-your-data"></a>Connaître ses données
+## <a name="know-your-data"></a>Connaître vos données
 
-Pour comprendre votre paysage de données et identifier les données importantes dans votre environnement hybride, utilisez les fonctionnalités suivantes :
+> [!NOTE]
+> Si vous souhaitez en savoir plus sur la classification et l’étiquetage des données dans Azure Purview, actuellement en préversion, veuillez consulter la section [Étiqueter automatiquement votre contenu dans Azure Purview](https://docs.microsoft.com/azure/purview/create-sensitivity-label).
+
+Pour comprendre votre paysage de données, puis identifier les données importantes dans votre environnement hybride, utilisez les fonctionnalités suivantes :
  
 |Fonctionnalité|Utilité|Prise en main|
 |:------|:------------|:--------------------|:-----------------------------|
@@ -62,6 +65,7 @@ Pour appliquer des actions de protection flexibles qui incluent le chiffrement, 
 |[Scanner d’étiquetage unifié Azure Information Protection](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)| Découvre, étiquette et protège les informations sensibles résidant dans des magasins de données locaux. | [Configurer et installer le scanner d’étiquetage unifié Azure Information Protection](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-configure-install)|
 |[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)| Découvre, étiquette et protège les informations sensibles résidant dans les magasins de données situés dans le cloud | [Découvrir, classifier, étiqueter et protéger les données réglementées et sensibles stockées dans le cloud](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
 |[Kit de développement logiciel (SDK) de Microsoft Information Protection](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk)|Étend les étiquettes de confidentialité aux applications et services tiers  <br /><br /> Exemple de scénario : [définir et obtenir une étiquette de confidentialité (C++)](https://docs.microsoft.com/information-protection/develop/quick-file-set-get-label-cpp) |[Configuration et paramétrage du kit de développement logiciel (SDK) de Microsoft Information Protection (MIP)](https://docs.microsoft.com/information-protection/develop/setup-configure-mip)|
+
 
 ## <a name="prevent-data-loss"></a>Éviter les pertes de données
 
