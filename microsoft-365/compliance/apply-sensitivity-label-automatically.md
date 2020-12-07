@@ -1,5 +1,5 @@
 ---
-title: Appliquer automatiquement une étiquette sensibilité au contenu
+title: Appliquer automatiquement une étiquette de confidentialité au contenu dans Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -15,23 +15,26 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-description: Lorsque vous créez une étiquette de critère de diffusion, vous pouvez affecter automatiquement une étiquette à un document ou message électronique ou vous pouvez inviter les utilisateurs pour sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: 705752a63d3cd1ca5f6950643648ba5c3dd50336
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+description: Lorsque vous créez une étiquette de confidentialité, vous pouvez attribuer automatiquement une étiquette aux fichiers et aux courriers électroniques, ou vous pouvez inviter les utilisateurs à sélectionner l’étiquette que vous recommandez.
+ms.openlocfilehash: 15b841f857eee1861a39a3d0e2e27025fadb90f4
+ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551345"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49568496"
 ---
-# <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette sensibilité au contenu
+# <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette de confidentialité au contenu
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](https://aka.ms/ComplianceSD).*
+
+> [!NOTE]
+> Si vous souhaitez en savoir plus sur l’application automatique des étiquette de confidentialité dans Azure Purview (préversion), consultez l’article [Étiqueter automatiquement votre contenu dans Azure Purview](https://docs.microsoft.com/azure/purview/create-sensitivity-label).
 
 Lorsque vous créez une étiquette de confidentialité, vous pouvez attribuer automatiquement cette étiquette au contenu lorsque celle-ci répond aux conditions que vous spécifiez.
 
 La possibilité d’appliquer automatiquement des étiquettes à du contenu est importante pour les raisons suivantes :
 
-- Vous n’avez pas besoin de former vos utilisateurs pour leur apprendre quand ils doivent utiliser chacune de vos classifications.
+- Vous n’avez pas besoin de former vos utilisateurs pour leur apprendre à utiliser chacune de vos classifications.
 
 - Vous n’avez pas à dépendre des utilisateurs pour classer correctement tout le contenu.
 
@@ -39,9 +42,9 @@ La possibilité d’appliquer automatiquement des étiquettes à du contenu est 
 
 Lorsque le contenu est étiqueté manuellement, l’étiquette n’est jamais remplacée par l’étiquetage automatique. Toutefois, l’étiquetage automatique peut remplacer une [étiquette de priorité inférieure](sensitivity-labels.md#label-priority-order-matters) qui a été appliquée automatiquement.
 
-Deux méthodes s’offrent à vous pour appliquer automatiquement une étiquette de confidentialité :
+Deux méthodes s’offrent à vous pour appliquer automatiquement une étiquette de confidentialité au contenu dans Microsoft 365 :
 
-- **Étiquetage côté client lorsque les utilisateurs modifient des documents ou rédigent des e-mails (lorsqu’ils répondent ou transfèrent également)**  : utilisez une étiquette configurée pour l’étiquetage automatique pour les applications Office (Word, Excel, PowerPoint et Outlook). 
+- **Étiquetage côté client lorsque les utilisateurs modifient des documents ou rédigent des e-mails (lorsqu’ils répondent ou transfèrent un e-mail également)**  : utilisez une étiquette configurée pour l’étiquetage automatique des fichiers et des e-mails (cela inclut Word, Excel, PowerPoint et Outlook). 
     
     Cette méthode prend en charge la recommandation d’une étiquette aux utilisateurs ainsi que l’application automatique d’une étiquette. Dans les deux cas, l’utilisateur décide d’accepter ou de refuser l’étiquette afin de garantir l’étiquetage correct du contenu. Cet étiquetage côté client présente un délai minimal pour les documents, car l’étiquette peut être appliquée avant même que le document ne soit enregistré. Cependant, toutes les applications clientes ne prennent pas en charge l’étiquetage automatique. Cette fonctionnalité est prise en charge par le client d’étiquetage unifié Azure Information Protection et par [certaines versions d’Office](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps). 
     
@@ -75,7 +78,7 @@ Deux méthodes s’offrent à vous pour appliquer automatiquement une étiquette
 
 Utilisez le tableau suivant pour vous aider à déterminer les différences de comportement de ces deux méthodes d’étiquetage automatiques complémentaires :
 
-|Fonctionnalité ou comportement|Paramètre d’étiquette : étiquetage automatique pour les applications Office |Stratégie : étiquetage automatique|
+|Fonctionnalité ou comportement|Paramètre de l’étiquette : étiquetage automatique des fichiers et des e-mails  |Stratégie : étiquetage automatique|
 |:-----|:-----|:-----|
 |Dépendance de l’application|[Oui](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) |Non \* |
 |Limiter par emplacement|Non |Oui |
@@ -108,9 +111,9 @@ L’étiquetage automatique dans les applications Office pour Windows est pris e
 
 Les paramètres d’étiquetage automatique des applications Office sont disponibles lorsque vous [créer ou modifier une étiquette de confidentialité](create-sensitivity-labels.md). Assurez-vous que **Fichiers et e-mails** est sélectionné comme étendue de l’étiquette : 
 
-![Options d’étendue d’étiquette de confidentialité pour les fichiers et les e-mails](../media/filesandemails-scope-options-sensitivity-label.png)
+![Options d’étendue des étiquettes de confidentialité pour les fichiers et les e-mails](../media/filesandemails-scope-options-sensitivity-label.png)
 
-À mesure que vous avancez dans l’Assistant, vous voyez la page **Étiquetage automatique pour les applications Office** dans laquelle vous pouvez choisir parmi une liste de types d’informations sensibles ou de classifieurs pouvant être formés :
+Lorsque vous parcourez l’Assistant, la page **Étiquetage automatique des fichiers et e-mails** s’affiche. Sur cette page, vous pouvez choisir des options parmi une liste de types d’informations sensibles ou de classifieurs entraînables :
 
 ![Conditions de l’étiquetage automatique dans les applications Office](../media/sensitivity-labels-conditions.png)
 
