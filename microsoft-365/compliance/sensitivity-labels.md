@@ -22,22 +22,22 @@ description: Utilisez les étiquettes de confidentialité de Microsoft informati
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 62f9cd4eb2056843cae9d68de5803afd422f8560
-ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
+ms.openlocfilehash: 86ca60c2b128f8cf7468a2e435179c45294f4743
+ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49527603"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49580727"
 ---
 # <a name="learn-about-sensitivity-labels"></a>En savoir plus sur les étiquettes de niveau de confidentialité
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](https://aka.ms/ComplianceSD).*
 
-Pour mener à bien leur travail, les membres de votre organisation collaborent avec d’autres personnes au sein de l’organisation et en dehors de celle-ci. Cela signifie que le contenu n’est plus protégé par un pare-feu : il peut se déplacer partout, sur les appareils, applications et services. Dans ce cas, vous devez sécuriser et protéger l’itinérance, tout en respectant les stratégies métier et de conformité de votre organisation.
+Pour mener à bien leur travail, les membres de votre organisation collaborent avec d’autres personnes internes ou externes à votre organisation. Cela signifie que le contenu n’est plus protégé par un pare-feu : il peut se déplacer partout, sur les appareils, applications et services. Dans ce cas, vous devez sécuriser et protéger l’itinérance, tout en respectant les stratégies métier et de conformité de votre organisation.
 
-Les étiquettes de confidentialité de l'infrastructure Microsoft Information Protection vous permettent de classifier et protéger les données de votre organisation, tout en veillant à ce que la productivité des utilisateurs et leur aptitude à collaborer ne soient pas compromises.
+Les étiquettes de confidentialité de la solution Microsoft Information Protection vous permettent de classifier et protéger les données de votre organisation, tout en veillant à ce que la productivité des utilisateurs et leur aptitude à collaborer ne soient pas compromises.
 
-Exemple montrant les étiquettes de confidentialité disponibles dans Excel à partir de l’onglet **Accueil** du ruban. Dans cet exemple, l’étiquette appliquée affiche dans la barre d’état :
+Exemple illustrant les étiquettes de confidentialité disponibles dans Excel à partir de l’onglet **Accueil** du ruban. Dans cet exemple, l’étiquette appliquée affiche dans la barre d’état :
 
 ![Étiquette de confidentialité dans le ruban Excel et sur la barre d’état](../media/Sensitivity-label-in-Excel.png)
 
@@ -57,6 +57,8 @@ Vous pouvez utiliser les étiquettes de niveau de confidentialité aux fins suiv
 - **Protéger le contenu dans les services et les applications tiers** à l’aide de Microsoft Cloud App Security. Avec Cloud App Security (CAS), vous pouvez détecter, classer, étiqueter et protéger le contenu dans les services tiers et applications tierces, comme SalesForce, Box ou Dropbox, même si l’application tierce ou le service tiers ne lit pas ou ne prend pas en charge les étiquettes de niveau de confidentialité.
 
 - **Protégez les conteneurs** qui incluent Teams, les groupes Microsoft 365 et les sites SharePoint. Par exemple, définissez les paramètres de confidentialité, l’accès des utilisateurs externes et le partage externe, ainsi que l’accès à partir d’appareils non gérés.
+
+- **Étendre les étiquettes de confidentialité aux ressources dans Azure Purview** : lorsque vous activez cette fonctionnalité, actuellement en préversion, vous pouvez appliquer des étiquettes de confidentialité à des ressources tels que des colonnes SQL, des fichiers dans le Stockage Blob Azure, etc. 
 
 - **Étendre les étiquettes de confidentialité à des applications et services tiers.** Grâce à l'utilisation du SDK Microsoft informations Protection, des applications tierces peuvent lire des étiquettes de confidentialité et appliquer des paramètres de protection.
 
@@ -115,11 +117,17 @@ Lorsque vous créez une étiquette de confidentialité, vous êtes invité à co
 - Les paramètres d’étiquette que vous pouvez configurer pour cette étiquette
 - L’emplacement où l’étiquette sera visible par les utilisateurs
 
-Cette configuration d’étendue vous permet d’utiliser des étiquettes de confidentialité qui s’appliquent uniquement aux documents et e-mails et qui ne peuvent pas être sélectionnées pour les conteneurs. Il en va de même pour les étiquettes de confidentialité qui sont uniquement destinées aux conteneurs et qui ne peuvent pas être sélectionnées pour les documents et les courriers électroniques. Par défaut, les deux étendues sont sélectionnées :
+Cette configuration d’étendue vous permet d’utiliser des étiquettes de confidentialité qui s’appliquent uniquement aux documents et e-mails et qui ne peuvent pas être sélectionnées pour les conteneurs. Il en va de même pour les étiquettes de confidentialité qui sont uniquement destinées aux conteneurs et qui ne peuvent pas être sélectionnées pour les documents et les courriers électroniques. Nouveauté actuellement en préversion : vous pouvez également sélectionner l’étendue des ressources Azure Purview :
 
 ![Options d’étendue des étiquettes de confidentialité](../media/sensitivity-labels-scopes.png)
 
-Lorsque vous modifiez ce paramètre par défaut et que vous sélectionnez une seule étendue, vous voyez encore la première page des paramètres de configuration de l’autre étendue, mais vous ne pouvez pas les sélectionner. Par exemple, si l’étendue des fichiers et e-mails n’est pas sélectionnée, vous ne pouvez pas sélectionner les options de la page suivante :
+Par défaut, l’étendue **Fichiers et e-mails** est toujours sélectionnée. Les autres étendues sont sélectionnées par défaut lorsque les fonctionnalités sont activées pour votre client :
+
+- **Groupes et sites** : [activer les étiquettes de confidentialité pour les conteneurs et synchroniser les étiquettes](sensitivity-labels-teams-groups-sites.md#how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels)
+
+- **Ressources Azure Purview (préversion)**  : [Étiqueter automatiquement le contenu dans Azure Purview](https://go.microsoft.com/fwlink/?linkid=2148989)
+
+Si vous modifiez les valeurs par défaut pour que toutes les étendues ne soient pas sélectionnées, vous verrez la première page des paramètres de configuration des étendues que vous n’avez pas sélectionnées, mais vous ne pourrez pas configurer les paramètres. Par exemple, si l’étendue des fichiers et e-mails n’est pas sélectionnée, vous ne pouvez pas sélectionner les options de la page suivante :
 
 ![Options non disponibles pour les étiquettes de confidentialité](../media/sensitivity-labels-unavailable-settings.png)
 
@@ -155,7 +163,9 @@ Si vous modifiez une étiquette de sensibilité, la version de celle-ci qui éta
 
 ## <a name="what-label-policies-can-do"></a>Fonction des stratégies d’étiquette
 
-Après avoir créé vos étiquettes de confidentialité, vous devez les publier pour les rendre disponibles pour les personnes et les services de votre organisation. Les étiquettes de confidentialité peuvent ensuite être appliquées aux documents et courriers électroniques. Contrairement aux étiquettes de rétention qui sont publiées dans des emplacements tels que toutes les boîtes aux lettres Exchange, les étiquettes de confidentialité sont publiées pour les utilisateurs ou les groupes. Les étiquettes de confidentialité s’affichent ensuite dans les applications Office de ces utilisateurs et de ces groupes.
+Après avoir créé vos étiquettes de confidentialité, vous devez les publier afin qu’elles soient disponibles pour les personnes et les services de votre organisation. Les étiquettes de confidentialité peuvent ensuite être appliquées aux documents et aux e-mails Office, ainsi qu’à d’autres éléments qui prennent en charge les étiquettes de confidentialité. 
+
+Contrairement aux étiquettes de rétention qui sont publiées dans des emplacements comme les boîtes aux lettres Exchange, les étiquettes de confidentialité sont publiées pour les utilisateurs ou les groupes. Les applications qui prennent en charge les étiquettes de confidentialité peuvent ensuite les afficher à ces utilisateurs et groupes sous forme d’étiquettes appliquées ou d’étiquettes qu’ils peuvent appliquer.
 
 Avec une stratégie d’étiquette, vous pouvez effectuer les actions suivantes :
 
@@ -169,18 +179,18 @@ Avec une stratégie d’étiquette, vous pouvez effectuer les actions suivantes�
 
     ![Invite de saisie d’une justification par les utilisateurs](../media/Sensitivity-label-justification-required.png)
 
-- **Exigez que les utilisateurs appliquent une étiquette** avec une option pour les e-mails et les documents, et une autre pour les conteneurs. Également connu sous le nom d'étiquetage obligatoire, ces options permettent d’assurer qu’une étiquette soit appliquée avant que les utilisateurs puissent enregistrer des documents, envoyer des e-mails, ainsi que créer des groupes ou des sites.
+- **Exigez que les utilisateurs appliquent une étiquette** avec une option pour les e-mails et les documents, et une autre pour les conteneurs. Également connues sous le nom d'étiquetage obligatoire, ces options permettent d’assurer qu’une étiquette soit appliquée avant que les utilisateurs puissent enregistrer des documents, envoyer des e-mails, ainsi que créer des groupes ou des sites.
     
-    Pour les documents et les e-mails, une étiquette peut être attribuée manuellement par l’utilisateur, automatiquement suite à une condition que vous configurez, ou être attribuée par défaut (l'option d’étiquette par défaut décrite ci-dessus). Un exemple d’invite présenté dans Outlook lorsqu’un utilisateur doit attribuer une étiquette :
+    Pour les documents et les e-mails, une étiquette peut être attribuée manuellement par l’utilisateur, automatiquement suite à une condition que vous configurez, ou être attribuée par défaut (l'option d’étiquette par défaut précédemment décrite). Un exemple d’invite présenté dans Outlook lorsqu’un utilisateur doit attribuer une étiquette :
 
     ![Invite demandant à l’utilisateur Outlook d’appliquer l’étiquette requise](../media/sensitivity-labels-mandatory-prompt-aipv2-outlook.PNG)
     
     > [!NOTE]
-    > L’étiquetage obligatoire des documents et e-mails exige actuellement le [client d’étiquetage unifié Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app). Ce client ne s’exécute que sur Windows. Cette fonctionnalité n’est donc pas encore prise en charge sur Mac, iOS et Android.
+    > L’étiquetage obligatoire des documents et e-mails n’est pas disponible dans toutes les applications ou sur toutes les plateformes. Pour plus d’informations, consultez [Demander aux utilisateurs d'appliquer une étiquette à leurs e-mails et documents](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents).
     
     Pour les conteneurs, une étiquette doit être attribuée au moment de la création du groupe ou du site.
     
-    Envisagez d’utiliser cette option pour vous permettre d'augmenter la couverture d’étiquetage. Il faut noter que, sans formation des utilisateurs, ces paramètres peuvent entraîner un étiquetage incorrect. De plus, sauf si vous avez également défini une étiquette correspondante par défaut, l’étiquetage obligatoire risque de contrarier vos utilisateurs qui reçoivent de fréquentes invites. 
+    Envisagez d’utiliser cette option pour vous permettre d'augmenter la couverture d’étiquetage. Il faut noter que, sans formation des utilisateurs, ces paramètres peuvent entraîner un étiquetage incorrect. De plus, sauf si vous avez également défini une étiquette correspondante par défaut, l’étiquetage obligatoire risque de contrarier vos utilisateurs qui reçoivent de fréquentes invites.
 
 - **Fournir un lien d’aide vers une page d’aide personnalisée.** Si vos utilisateurs ne sont pas sûrs de comprendre la signification ou l'utilisation de vos étiquettes de confidentialité, vous pouvez fournir une URL de type En savoir plus, qui apparaît en bas du menu **Etiquettes de confidentialité** dans les applications Office :
 
@@ -196,11 +206,11 @@ Pour rendre vos étiquettes de confidentialité accessibles aux utilisateurs, vo
 
 Une stratégie d’étiquette comprend les éléments suivants :
 
-- Un groupe d’étiquettes.
-- L’étendue de la stratégie d’étiquette, c’est-à-dire les utilisateurs et les groupes inclus dans la stratégie.
-- Les paramètres de la stratégie d’étiquette décrite ci-dessus (étiquette par défaut, justification, étiquette obligatoire et lien d’aide).
+- un groupe d’étiquettes.
+- les utilisateurs et les groupes auxquels la stratégie sera attribuée avec des étiquettes.
+- l’étendue de la stratégie et des paramètres de stratégie pour cette étendue (comme l’étiquette par défaut pour les fichiers et les e-mails).
 
-Vous pouvez inclure un utilisateur dans différentes stratégies d’étiquette, et l’utilisateur pourra voir toutes les étiquettes de confidentialité de ces stratégies. Toutefois, un utilisateur n'obtient les paramètres de stratégie qu'à partir de la stratégie d’étiquette dont la priorité est la plus élevée.
+Vous pouvez inclure un utilisateur dans différentes stratégies d’étiquette, et celui-ci pourra voir toutes les étiquettes de confidentialité de ces stratégies. Toutefois, un utilisateur n'obtient les paramètres de stratégie qu'à partir de la stratégie d’étiquette dont la priorité est la plus élevée.
 
 Si vous ne voyez pas l'étiquette ou le paramètre de stratégie d’étiquette attendu pour un utilisateur ou un groupe après avoir attendu 30 minutes, vérifiez l’ordre des stratégies d’étiquette de confidentialité. Pour réorganiser les stratégies d’étiquette, sélectionnez une stratégie d’étiquette de confidentialité > sélectionnez les points de suspension sur la droite > **Descendre** ou **Monter**.
 

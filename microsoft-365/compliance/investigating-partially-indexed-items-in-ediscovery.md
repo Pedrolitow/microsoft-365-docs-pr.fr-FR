@@ -18,24 +18,24 @@ ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment gérer des éléments partiellement indexés (ou non indexés) à partir d’Exchange, SharePoint et OneDrive entreprise au sein de votre organisation.
-ms.openlocfilehash: bbf234e2051cd103d1b99ab75b8e5c15365762a9
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 132a174f0c163c75939b75906baa3833c6387fa7
+ms.sourcegitcommit: 490a65d32b6d656c661c36a2cc8dda03bf6cba77
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48919996"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49588561"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>Étude des éléments partiellement indexés dans eDiscovery
 
 Une recherche de découverte électronique exécutée à partir du centre de conformité Microsoft 365 inclut automatiquement les éléments partiellement indexés dans les résultats de recherche estimés lors de l’exécution d’une recherche. Les éléments partiellement indexés sont des éléments de boîte aux lettres Exchange et des documents sur SharePoint et des sites OneDrive entreprise qui n’ont pas été complètement indexés pour la recherche. La plupart des messages électroniques et des documents de site sont indexés, car ils sont inclus dans les [limites d’indexation pour les messages électroniques](limits-for-content-search.md#indexing-limits-for-email-messages). Toutefois, certains éléments peuvent dépasser ces limites d’indexation et seront partiellement indexés. Voici d’autres raisons pour lesquelles les éléments ne peuvent pas être indexés pour la recherche et sont renvoyés en tant qu’éléments partiellement indexés lors de l’exécution d’une recherche de découverte électronique :
   
-- Les messages électroniques comportent un fichier joint sans gestionnaire valide, tel que des fichiers image ; Il s’agit de la cause la plus fréquente d’éléments de courrier électronique partiellement indexés
+- Les messages électroniques comportent un fichier joint sans gestionnaire valide, tel que des fichiers image ; Il s’agit de la cause la plus fréquente d’éléments de courrier électronique partiellement indexés.
 
-- Trop de fichiers joints à un message électronique
+- Le nombre de fichiers joints à un message électronique est trop important.
 
-- Un fichier joint à un message électronique est trop volumineux
+- Un fichier joint à un message électronique est trop volumineux.
 
-- Le type de fichier est pris en charge pour l’indexation, mais une erreur d’indexation s’est produite pour un fichier spécifique.
+- Le type de fichier est pris en charge pour l'indexation, mais une erreur d'indexation s'est produite pour un fichier spécifique.
 
 Bien que cela varie, les clients de la plupart des organisations disposent de moins de 1% de contenu par volume et de moins de 12% de contenu par taille partiellement indexée. La raison de la différence entre le volume et la taille est que les fichiers volumineux ont une probabilité plus élevée de contenir du contenu qui ne peut pas être complètement indexé.
   
@@ -45,10 +45,10 @@ Une fois que vous avez exécuté une recherche de découverte électronique, le 
   
 - Si un élément est partiellement indexé et correspond à la requête de recherche, il est inclus dans le nombre (et la taille) des éléments de résultat de recherche et des éléments partiellement indexés. Toutefois, lorsque les résultats de cette même recherche sont exportés, l’élément est inclus uniquement avec le jeu de résultats de recherche ; elle n’est pas incluse en tant qu’élément partiellement indexé.
 
-- Si vous spécifiez une plage de dates pour une requête de recherche (en l’incluant dans la requête de mot clé ou à l’aide d’une condition), tout élément partiellement indexé ne correspondant pas à la plage de dates n’est pas inclus dans le nombre d’éléments partiellement indexés. Seuls les éléments partiellement indexés qui appartiennent à la plage de dates sont inclus dans le nombre d’éléments partiellement indexés.
+- Si vous spécifiez une plage de dates pour une requête de recherche (en l’incluant dans la requête de mot clé ou à l’aide d’une condition), tout élément partiellement indexé ne correspondant pas à la plage de dates n’est pas inclus dans le nombre d’éléments partiellement indexés. Seuls les éléments partiellement indexés qui appartiennent à la plage de dates sont inclus dans le nombre d’éléments indexés.
 
-> [!NOTE]
-> Les éléments partiellement indexés situés dans les sites SharePoint et OneDrive ne *sont pas* inclus dans l’estimation des éléments partiellement indexés affichés dans les statistiques détaillées de la recherche. Toutefois, les éléments partiellement indexés peuvent être exportés lorsque vous exportez les résultats d’une recherche de découverte électronique. Par exemple, si vous recherchez uniquement les sites de recherche, le nombre estimé des éléments partiellement indexés est égal à zéro.
+  > [!NOTE]
+  > Les éléments partiellement indexés situés dans les sites SharePoint et OneDrive ne *sont pas* inclus dans l’estimation des éléments partiellement indexés affichés dans les statistiques détaillées de la recherche. Toutefois, les éléments partiellement indexés peuvent être exportés lorsque vous exportez les résultats d’une recherche de découverte électronique. Par exemple, si vous recherchez uniquement les sites de recherche, le nombre estimé des éléments partiellement indexés est égal à zéro.
   
 ## <a name="calculating-the-ratio-of-partially-indexed-items-in-your-organization"></a>Calcul du ratio d’éléments partiellement indexés dans votre organisation
 
@@ -87,17 +87,17 @@ Lorsque vous exportez des résultats de recherche de découverte électronique o
   
 ## <a name="errors-related-to-partially-indexed-items"></a>Erreurs liées à des éléments partiellement indexés
 
-Les balises d’erreur sont constituées de deux informations, l’erreur et le type de fichier. Par exemple, dans cette paire erreur/type de message :
+Les balises d’erreur sont constituées de deux informations, l’erreur et le type de fichier. Par exemple, dans cette paire erreur/type de fichier :
 
 ```text
  parseroutputsize_xls
 ```
 
- `parseroutputsize` est l’erreur et `xls` est le type de fichier du fichier dans lequel l’erreur s’est produite. Dans les cas où le type de fichier n’a pas été reconnu ou que le type de fichier n’a pas pu s’appliquer à l’erreur, vous verrez la valeur `noformat` à la place du type de fichier.
+ `parseroutputsize` est l’erreur et `xls` est le type de fichier du fichier dans lequel l’erreur s’est produite. Dans les cas où le type de fichier n’a pas été reconnu ou que le type de fichier n’a pas été appliqué à l’erreur, vous verrez la valeur `noformat` à la place du type de fichier.
   
 Voici une liste des erreurs d’indexation et une description de la cause possible de l’erreur.
   
-|**Balise Error**|**Description**|
+| Balise Error | Description |
 |:-----|:-----|
 | `attachmentcount` <br/> |Un message électronique contient trop de pièces jointes et certaines de ces pièces jointes n’ont pas été traitées.  <br/> |
 | `attachmentdepth` <br/> |Le plan de recherche de contenu et l’analyseur de documents ont trouvé trop de niveaux de pièces jointes imbriqués dans d’autres pièces jointes. Certaines de ces pièces jointes n’ont pas été traitées.  <br/> |
@@ -108,7 +108,7 @@ Voici une liste des erreurs d’indexation et une description de la cause possib
 | `parserencrypted` <br/> |Le contenu de la pièce jointe ou du message électronique est chiffré et Microsoft 365 n’a pas pu décoder le contenu.  <br/> |
 | `parsererror` <br/> |Une erreur inconnue s’est produite lors de l’analyse. Cela résulte généralement d’un problème logiciel ou d’un blocage de service.  <br/> |
 | `parserinputsize` <br/> |Une pièce jointe était trop volumineuse pour être gérée par l’analyseur, et l’analyse de cette pièce jointe n’a pas été effectuée ou n’a pas été terminée.  <br/> |
-| `parsermalformed` <br/> |Une pièce jointe est mal formée et n’a pas pu être gérée par l’analyseur. Ce résultat peut provenir d’anciens formats de fichiers, de fichiers créés par des logiciels incompatibles ou de virus prétendant être autres que réclamés.  <br/> |
+| `parsermalformed` <br/> |Une pièce jointe est mal formée et n’a pas pu être gérée par l’analyseur. Ce résultat peut être dû à d’anciens formats de fichiers, de fichiers créés par des logiciels incompatibles ou de virus prétendant être considérés comme étant autres que réclamés.  <br/> |
 | `parseroutputsize` <br/> |La sortie de l’analyse d’une pièce jointe était trop volumineuse et devait être tronquée.  <br/> |
 | `parserunknowntype` <br/> |Une pièce jointe a un type de fichier que Microsoft 365 n’a pas pu détecter.  <br/> |
 | `parserunsupportedtype` <br/> |Une pièce jointe a un type de fichier qu’Office 365 a pu détecter, mais l’analyse de ce type de fichier n’est pas prise en charge.  <br/> |
