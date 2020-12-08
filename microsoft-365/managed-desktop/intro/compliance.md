@@ -9,16 +9,16 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 65d1d18037a10cd36c3be9498a4373fa67b6afd9
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: d47757e8e9b36baf060c86436bd7840ded7c324d
+ms.sourcegitcommit: 280200281aec862517876319a3fe4ce170674047
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519609"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "49586672"
 ---
 # <a name="compliance"></a>Conformité
 
-Lorsque vous utilisez Microsoft Managed Desktop IT-as-a-service, Microsoft vous fournit un ensemble complet d’offres de conformité. Cet effort aide votre organisation à respecter les différentes exigences de conformité.
+Lorsque vous utilisez Microsoft Managed Desktop, Microsoft vous fournit un ensemble complet d’offres de conformité. Cet effort aide votre organisation à respecter les différentes exigences de conformité.
 
 ## <a name="compliance-coverage"></a>Couverture de la conformité
 
@@ -35,6 +35,9 @@ Microsoft Managed Desktop a obtenu les certifications suivantes :
 - [Certification Cloud Security Alliance (CSA) STAR](https://docs.microsoft.com/compliance/regulatory/offering-CSA-Star-Certification)
 - [Contrôles de l’organisation de service (SOC) 1, 2, 3](https://docs.microsoft.com/compliance/regulatory/offering-SOC)
 - [Norme de sécurité des données (DSS) d’industrie de carte de paiement (PCI)](https://docs.microsoft.com/compliance/regulatory/offering-PCI-DSS)
+- [Loi HIPAA (Health Insurance Portability and Accountability Act)](https://docs.microsoft.com/compliance/regulatory/offering-hipaa-hitech)
+- [Programme d’évaluation de la sécurité des informations pour le gouvernement australien (IRAP)](https://docs.microsoft.com/compliance/regulatory/offering-ccsl-irap-australia)
+
 
 ## <a name="auditor-reports-and-compliance-certificates"></a>Rapports de l’auditeur et certificats de conformité
 
@@ -45,4 +48,4 @@ Vous pouvez trouver des informations pertinentes, notamment des exigences de con
 
 ## <a name="shared-responsibility"></a>Responsabilité partagée
 
-La conformité des services Cloud est une responsabilité partagée entre les fournisseurs de services Cloud et leurs clients. Pour en savoir plus, consultez la rubrique [responsabilités partagées pour le Cloud Computing](https://gallery.technet.microsoft.com/Shared-Responsibilities-81d0ff91) dans la Galerie technet.
+La conformité des services Cloud est une responsabilité partagée entre les fournisseurs de services Cloud et leurs clients. Pour en savoir plus, consultez la rubrique [responsabilités partagées pour le Cloud Computing](https://docs.microsoft.com/azure/security/fundamentals/shared-responsibility).

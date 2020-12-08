@@ -1,5 +1,5 @@
 ---
-title: Examiner les menaces détectées et prendre des mesures
+title: Examen des menaces détectées et action corrective
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -15,14 +15,14 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Découvrez comment examiner et gérer les menaces détectées par l’antivirus Microsoft Defender sur vos appareils Windows 10.
-ms.openlocfilehash: ffdf5cffb50d6145d6059233e0850839f4dfb582
-ms.sourcegitcommit: 26b35012c42fef935d6c4a6509dde6c22a9b922a
+ms.openlocfilehash: 41465cb81850415a7b490b6af7f0ec66c724ca68
+ms.sourcegitcommit: 490a65d32b6d656c661c36a2cc8dda03bf6cba77
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "49385239"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49588516"
 ---
-# <a name="review-detected-threats-and-take-action"></a>Examiner les menaces détectées et prendre des mesures
+# <a name="review-detected-threats-and-take-action"></a>Examen des menaces détectées et action corrective
 
 Dès qu’un fichier ou un logiciel malveillant est détecté, l’antivirus Microsoft Defender l’bloque et l’empêche de s’exécuter. En outre, si la protection sur le Cloud est activée, les menaces nouvellement détectées sont ajoutées au moteur antivirus et anti-programme malveillant afin que vos autres appareils et utilisateurs soient également protégés.
 
@@ -42,7 +42,7 @@ Vous disposez de plusieurs options pour afficher des informations spécifiques s
 
 - Page **périphériques actifs** dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centre d’administration 365 de Microsoft</a>. Consultez [la rubrique Manage Threat Detections sur la page périphériques actifs](#manage-threat-detections-on-the-active-devices-page) de cet article.
 - Page **menaces actives** dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centre d’administration 365 de Microsoft</a>. Voir [Manage Threat Detections sur la page Threats active](#manage-threat-detections-on-the-active-threats-page) dans cet article.
-- La page **antivirus** dans le <a href="https://endpoint.microsoft.com" target="_blank">Gestionnaire de points de terminaison Microsoft</a>. Consultez la rubrique [Manage Threat Detections in Microsoft Endpoint Manager](#manage-threat-detections-in-microsoft-endpoint-manager) dans cet article.
+- La page **antivirus** dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2150463" target="_blank">Gestionnaire de points de terminaison Microsoft</a>. Consultez la rubrique [Manage Threat Detections in Microsoft Endpoint Manager](#manage-threat-detections-in-microsoft-endpoint-manager) dans cet article.
 
 Pour plus d’informations, consultez la rubrique [menaces détectées par l’antivirus Microsoft Defender](threats-detected-defender-av.md).
 
@@ -77,8 +77,8 @@ Lorsque vous affichez les détails sur des menaces ou des périphériques spéci
 
 | Opération | Description |
 |--|--|
-| Configurer la protection | Vos stratégies de protection contre les menaces doivent être configurées. Sélectionnez le lien pour accéder à votre page de configuration de stratégie.<br><br>Vous avez besoin d’aide ? Voir [Manage Device Security with Endpoint Security Policies in Microsoft Intune](/mem/intune/protect/endpoint-security-policy). |
-| Mettre à jour une stratégie | Vos stratégies antivirus et de protection en temps réel doivent être mises à jour ou configurées. Sélectionnez le lien pour accéder à la page Configuration de la stratégie.<br><br>Vous avez besoin d’aide ? Voir [Manage Device Security with Endpoint Security Policies in Microsoft Intune](/mem/intune/protect/endpoint-security-policy). |
+| Configurer la protection | Vos stratégies de protection contre les menaces doivent être configurées. Sélectionnez le lien pour accéder à votre page de configuration de stratégie.<br><br>Besoin d’aide ? Voir [Manage Device Security with Endpoint Security Policies in Microsoft Intune](/mem/intune/protect/endpoint-security-policy). |
+| Mettre à jour une stratégie | Vos stratégies antivirus et de protection en temps réel doivent être mises à jour ou configurées. Sélectionnez le lien pour accéder à la page Configuration de la stratégie.<br><br>Besoin d’aide ? Voir [Manage Device Security with Endpoint Security Policies in Microsoft Intune](/mem/intune/protect/endpoint-security-policy). |
 | Exécuter l’analyse rapide | Lance une analyse antivirus rapide sur l’appareil, en se concentrant sur les emplacements courants où des programmes malveillants peuvent être enregistrés, tels que les clés de Registre et les dossiers de démarrage Windows connus. |
 | Exécuter une analyse complète | Démarre une analyse antivirus complète sur l’appareil, en se concentrant sur les emplacements courants où un programme malveillant peut être enregistré, et sur l’ajout de chaque fichier et dossier sur l’appareil. Les résultats sont envoyés au [Gestionnaire de points de terminaison Microsoft](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager). |
 | Mettre à jour les antivirus | Exige que l’appareil obtient des [mises à jour](https://go.microsoft.com/fwlink/?linkid=2149926) de la sécurité pour les antivirus et la protection contre les programmes malveillants. |
@@ -88,7 +88,7 @@ Lorsque vous affichez les détails sur des menaces ou des périphériques spéci
 
 Vous pouvez utiliser le gestionnaire de points de terminaison Microsoft pour gérer les détections de menaces. Les appareils Windows 10 doivent être [inscrit dans Intune](/mem/intune/enrollment/windows-enrollment-methods) (partie du gestionnaire de points de terminaison Microsoft).
 
-1. Accédez au centre d’administration du gestionnaire de points de terminaison de Microsoft à l’adresse <a href="https://endpoint.microsoft.com" target="_blank">https://endpoint.microsoft.com</a> et connectez-vous.
+1. Accédez au centre d’administration du gestionnaire de points de terminaison de Microsoft à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=2150463" target="_blank">https://endpoint.microsoft.com</a> et connectez-vous.
 
 2. Dans le volet de navigation, sélectionnez **sécurité du point de terminaison**.
 
