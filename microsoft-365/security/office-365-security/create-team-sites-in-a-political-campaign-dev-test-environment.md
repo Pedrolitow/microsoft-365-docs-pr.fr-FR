@@ -18,12 +18,12 @@ search.appverid:
 ms.custom: seo-marvel-apr2020
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: 'Résumé : Créez des sites d’équipe SharePoint Online publics, privés, sensibles et hautement confidentiels dans votre environnement de développement/test dans le cadre d’une campagne électorale.'
-ms.openlocfilehash: 1ae147cef3f7c946946d10fe50a7c23bd9e61a2e
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: d6fe2067e51e47fed4bd90e1a1fa6c898034a6d7
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203154"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561194"
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>Création de sites d’équipe dans un environnement de développement/test dans le cadre d’une campagne électorale
 
@@ -46,9 +46,9 @@ Dans cette phase, vous allez créer les étiquettes correspondant aux différent
     
 2. Sous l’onglet **Accueil Microsoft Office**, cliquez sur la vignette **Administration**.
     
-3. Sous le nouvel onglet **Centre d’administration Microsoft 365** de votre navigateur, cliquez sur **Centres d’administration > Sécurité &amp; conformité**.
+3. Sous le nouvel onglet **Centre d’administration Microsoft** 365 de votre navigateur, cliquez sur **Centres d’administration > Sécurité et conformité**.
     
-4. Sous le nouvel onglet **Accueil - Sécurité &amp; conformité de votre navigateur**, cliquez sur **Classifications > Étiquettes**.
+4. Sous le nouvel onglet **Accueil - Sécurité et conformité** de votre navigateur, cliquez sur **Classifications > Étiquettes**.
     
 5. Dans le volet **Accueil > Étiquettes**, cliquez sur **Créer une étiquette**.
     
@@ -196,7 +196,7 @@ Pour créer un site d’équipe SharePoint Online isolé pour les données sen
     
 Voici les résultats de la configuration des autorisations :
   
-- Le groupe SharePoint **Marketing campagne - Membres** contient uniquement le groupe **Senior and strategic staff** (qui contient les comptes d’utilisateurs Candidate, ChiefOfStaff et Strategic1), le groupe **Marketing campagne ** (qui contient le compte d’administrateur général), le groupe **Analytics staff** (qui contient le compte d’utilisateur DataScientist1) et le compte d’utilisateur **Regular1**.
+- Le groupe SharePoint **Marketing campagne - Membres** contient uniquement le groupe **Senior and strategic staff** (qui contient les comptes d’utilisateurs Candidate, ChiefOfStaff et Strategic1), le groupe **Marketing campagne** (qui contient le compte d’administrateur général), le groupe **Analytics staff** (qui contient le compte d’utilisateur DataScientist1) et le compte d’utilisateur **Regular1**.
     
 - Le groupe SharePoint **Marketing campagne - Propriétaires** contient uniquement le groupe **Équipe informatique** (qui contient uniquement les comptes d’utilisateurs ITAdmin1 et ITAdmin2).
     
@@ -218,9 +218,9 @@ Ensuite, configurez le dossier de documents du site d’équipe Marketing campa
     
 Ensuite, configurez une stratégie de protection contre la perte de données qui avertit les utilisateurs quand ils partagent un document sur un site d’équipe SharePoint Online avec l’étiquette Sensible à l’extérieur de l’organisation. Cette stratégie DLP s’applique aux ressources du site Marketing campagne.
   
-1. Sous l’onglet **Accueil Microsoft Office** de votre navigateur, cliquez sur la vignette **Sécurité &amp; conformité**.
+1. Sous l’onglet **Accueil Microsoft Office** de votre navigateur, cliquez sur la vignette **Sécurité et conformité**.
     
-2. Sous le nouvel onglet **Sécurité &amp; conformité** de votre navigateur, cliquez sur **Protection contre la perte de données > Stratégie**.
+2. Sous le nouvel onglet **Sécurité et conformité** de votre navigateur, cliquez sur **Protection contre la perte de données > Stratégie**.
     
 3. Dans le volet **Protection contre la perte de données**, cliquez sur **+ Créer une stratégie**.
     
@@ -329,9 +329,9 @@ Ensuite, configurez une stratégie DLP qui bloque les utilisateurs quand ils par
   
 1. Si nécessaire, utilisez un navigateur de votre ordinateur local et connectez-vous au centre d’administration ([https://admin.microsoft.com](https://admin.microsoft.com)) à l’aide d’un compte disposant du rôle Administrateur de la sécurité ou Administrateur de la société.
     
-2. Sous l’onglet **Accueil Microsoft Office** de votre navigateur, cliquez sur la vignette **Sécurité &amp; conformité**.
+2. Sous l’onglet **Accueil Microsoft Office** de votre navigateur, cliquez sur la vignette **Sécurité et conformité**.
     
-3. Sous le nouvel onglet **Sécurité &amp; conformité** de votre navigateur, cliquez sur **Protection contre la perte de données > Stratégie**.
+3. Sous le nouvel onglet **Sécurité et conformité** de votre navigateur, cliquez sur **Protection contre la perte de données > Stratégie**.
     
 4. Dans le volet **Protection contre la perte de données**, cliquez sur **+ Créer une stratégie**.
     
