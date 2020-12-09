@@ -19,12 +19,12 @@ ms.assetid: ''
 description: Découvrez les étapes de résolution de base que vous pouvez suivre pour résoudre les problèmes courants dans Office 365 eDiscovery.
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a2db7fac04f29587f451b8feff5b641624e0cf45
-ms.sourcegitcommit: 8ad481ed61cb6dabf8afb0fb04296666fa166450
+ms.openlocfilehash: 4f1bad23705729c15976959a3902501f05da7600
+ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "49422863"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49602035"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>Examiner, dépanner et résoudre les problèmes eDiscovery courants
 
@@ -58,8 +58,7 @@ Recherchez les utilisateurs en double ou la liste de distribution avec le même 
 
 ## <a name="errorissue-search-fails-on-specific-locations"></a>Erreur/problème : la recherche échoue sur des emplacements spécifiques
 
-Une recherche de contenu ou eDiscovery peut produire l’erreur suivante :
->Cette recherche s’est terminée avec les erreurs (#).  Voulez-vous relancer la recherche sur les emplacements ayant échoué ?
+Une recherche de contenu ou eDiscovery peut produire l’erreur suivante : `This search completed with (#) errors.  Would you like to retry the search on the failed locations?`
 
 ![Capture d’écran des erreurs d’emplacement spécifique à la recherche](../media/edisc-tshoot-specific-location-search-fails.png)
 
@@ -194,6 +193,14 @@ erreur de distribution de la stratégie de conservation de cas eDiscovery. L’e
    ```
 
 4. Contactez le support technique Microsoft.
+
+## <a name="error-the-condition-specified-using-http-conditional-headers-is-not-met"></a>Erreur : "la condition spécifiée à l’aide d’en-tête (s) conditionnel HTTP n’est pas remplie"
+
+Lors du téléchargement des résultats de recherche à l’aide de l’outil d’exportation de découverte électronique, il est possible que vous receviez l’erreur suivante : `System.Net.WebException: The remote server returned an error: (412) The condition specified using HTTP conditional header(s) is not met.` il s’agit d’une erreur passagère, qui se produit généralement dans l’emplacement de stockage Azure.
+
+### <a name="resolution"></a>Résolution
+
+Pour résoudre ce problème, essayez de nouveau de [Télécharger les résultats](export-search-results.md#step-2-download-the-search-results)de la recherche, ce qui redémarrera l’outil d’exportation de découverte électronique.
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: Exportez les résultats de la recherche à partir d’une recherche de contenu dans le centre de conformité Microsoft 365 vers un ordinateur local. Les résultats par courrier électronique sont exportés en tant que fichiers PST. Le contenu de sites SharePoint et OneDrive entreprise est exporté sous forme de documents Office natifs.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 48f5cab4c25199873c795cdfb9afac54f4f402a0
-ms.sourcegitcommit: 8ad481ed61cb6dabf8afb0fb04296666fa166450
+ms.openlocfilehash: a697f5cf81022bf8d8122d0dd57c07ba8a578f0a
+ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "49422873"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49602051"
 ---
 # <a name="export-content-search-results"></a>Exporter les résultats de la recherche de contenu
 
@@ -165,7 +165,7 @@ L’étape suivante consiste à télécharger les résultats de la recherche à 
   
     L’**outil d’exportation de découverte électronique** affiche l’état du processus d’exportation, ainsi qu’une estimation du nombre (et de la taille) d’éléments qui doivent encore être téléchargés. Une fois le processus d’exportation terminé, vous pouvez accéder aux fichiers à l’emplacement où ils ont été téléchargés.
 
-## <a name="more-information"></a>Informations supplémentaires
+## <a name="more-information"></a>Plus d’informations
 
 Voici plus d’informations sur l’exportation des résultats de la recherche.
   
@@ -345,6 +345,8 @@ Tous les messages électroniques protégés par des droits (protégés par RMS) 
 
 ### <a name="miscellaneous"></a>Divers
   
+- Lors du téléchargement des résultats de recherche à l’aide de l’outil d’exportation de découverte électronique, il est possible que vous receviez l’erreur suivante : `System.Net.WebException: The remote server returned an error: (412) The condition specified using HTTP conditional header(s) is not met.` il s’agit d’une erreur passagère, qui se produit généralement dans l’emplacement de stockage Azure. Pour résoudre ce problème, essayez de nouveau de [Télécharger les résultats](#step-2-download-the-search-results)de la recherche, ce qui redémarrera l’outil d’exportation de découverte électronique.
+
 - Tous les résultats de recherche et les rapports d’exportation sont inclus dans un dossier qui porte le même nom que la recherche de contenu. Les courriers électroniques exportés se trouvent dans un dossier nommé **Exchange**. Les documents se trouvent dans un dossier nommé **SharePoint**.
 
 - Les métadonnées du système de fichiers pour les documents sur les sites SharePoint et OneDrive entreprise sont conservées lorsque les documents sont exportés vers votre ordinateur local. En d’autres termes, les propriétés de document (par exemple, Date de création et Date de la dernière modification) ne sont pas modifiées lorsque les documents sont exportés.

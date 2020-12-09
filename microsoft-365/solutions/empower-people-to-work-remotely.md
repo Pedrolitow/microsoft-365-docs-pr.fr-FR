@@ -17,13 +17,13 @@ ms.collection:
 - m365solution-overview
 - M365initiative-coredeploy
 ms.custom: seo-marvel-jun2020
-description: Assurez-vous que vous avez activé toutes les fonctionnalités de Microsoft 365 pour optimiser la productivité des employés à distance et maintenir l’accès sécurisé à vos serveurs, données et cloud.
-ms.openlocfilehash: 833f0351c3eb78afb7218ea1c1c51151d70bb608
-ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
+description: Vérifiez que vous avez bien activé toutes les fonctionnalités de Microsoft 365. Ce faisant, vous pourrez optimiser la productivité des télétravailleurs et sécuriser l’accès à vos serveurs, vos données et votre cloud.
+ms.openlocfilehash: 1af5d1dd2fbc6f5792ee0458e521dfa2f46f46b5
+ms.sourcegitcommit: 490a65d32b6d656c661c36a2cc8dda03bf6cba77
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49371501"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49588572"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Confier des responsabilités aux travailleurs à distance avec Microsoft 365
 
@@ -100,6 +100,16 @@ Pour plus d’informations sur la sécurité et la conformité, consultez [Dépl
 [![Affiche Confier des responsabilités aux télétravailleurs](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](../downloads/empower-remote-workers.pdf)
 
 Vous pouvez également télécharger cette affiche au format [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/empower-remote-workers.pdf) et l’imprimer sur du papier au format lettre, légal ou tabloïd (11 x 17).
+
+## <a name="provide-remote-working-for-all-of-your-workers"></a>Fournir un travail à distance pour tous vos employés
+
+Vous pouvez permettre à tous vos employés de rester productifs où que vous soyez grâce à ces appareils :
+
+- Un appareil moderne, tel qu’un ordinateur portable surface et Windows 10, qui dispose des fonctionnalités, de la sécurité et des performances pour accéder aux applications et services Cloud de Microsoft 365 directement sur le Web.
+
+- N’importe quel appareil, y compris les anciens ordinateurs portables ou de bureau, qui peut accéder aux applications et services Cloud de Microsoft 365 indirectement via un [bureau virtuel Windows 10](empower-people-to-work-remotely-remote-access.md#deploy-windows-virtual-desktop-to-provide-remote-access-for-remote-workers-using-personal-devices). Cette option offre des performances élevées, une sécurité renforcée et une gestion informatique simplifiée.
+
+## <a name="next-steps"></a>Étapes suivantes
 
 Procédez comme suit pour sécuriser et optimiser l’accès aux serveurs et aux services cloud de votre organisation, puis optimiser la productivité des télétravailleurs.
 

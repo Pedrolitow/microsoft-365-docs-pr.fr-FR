@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: 'Découvrez comment un administrateur général peut modifier l’adresse de messagerie et le nom complet d’un utilisateur. '
-ms.openlocfilehash: 1672401e9a8e994b91804870130b659ad8724b5e
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: 7f894af3778964dfa6c696c1f467bc0dd8313f32
+ms.sourcegitcommit: 98146c67a1d99db5510fa130340d3b7be8d81b21
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551507"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "49585293"
 ---
 # <a name="change-a-user-name-and-email-address"></a>Modifier un nom d’utilisateur et une adresse de messagerie
 
@@ -81,7 +81,8 @@ Vous devez être un [administrateur général](about-admin-roles.md) pour effect
 
 ::: moniker-end
 
-**IMPORTANT** : Si vous recevez un message d’erreur, consultez la rubrique [Résolution des messages d’erreur](#resolve-error-messages).
+> [!IMPORTANT]
+> IMPORTANT : Si vous recevez un message d’erreur, consultez la rubrique [Résolution des messages d’erreur](#resolve-error-messages).
 
 ## <a name="set-the-primary-email-address"></a>Définition de l’adresse de courrier principale
 
@@ -93,23 +94,24 @@ Vous devez être un [administrateur général](about-admin-roles.md) pour effect
 
 3. Sélectionnez **Définir comme principale** pour l'adresse de courrier que vous souhaitez définir comme adresse principale pour cette personne. 
     
-    **IMPORTANT** : l’option Définir comme principale n’apparaît pas si vous avez acheté Microsoft 365 auprès de GoDaddy ou d’un autre service partenaire qui fournit une console de gestion. Au lieu de cela, connectez-vous à la console de gestion de GoDaddy ou du partenaire pour définir l’alias principal. 
-    
-    De même, cette option n’apparaît que si vous êtes un administrateur général. Si elle n’apparait pas, vous n’êtes pas autorisé à modifier le nom et l’adresse de messagerie principale d’un utilisateur.
+   > [!IMPORTANT]
+   > IMPORTANT : l’option Définir comme principale n’apparaît pas si vous avez acheté Microsoft 365 auprès de GoDaddy ou d’un autre service partenaire qui fournit une console de gestion. Au lieu de cela, connectez-vous à la console de gestion de GoDaddy ou du partenaire pour définir l’alias principal. 
+   >  
+   > De même, cette option n’apparaît que si vous êtes un administrateur général. Si elle n’apparait pas, vous n’êtes pas autorisé à modifier le nom et l’adresse de messagerie principale d’un utilisateur.
   
 4. Un avertissement jaune de grande taille s’affiche, indiquant que vous êtes sur le point de modifier les informations de connexion de la personne. Sélectionnez **Enregistrer**, puis **Fermer**.
     
 5. Communiquez les informations suivantes à la personne :
  
-  - Cette modification peut prendre du temps.
+   - Cette modification peut prendre du temps.
   
-  - Son nouveau nom d’utilisateur. Elle en aura besoin pour se connecter à Microsoft 365.
+   - Son nouveau nom d’utilisateur. Elle en aura besoin pour se connecter à Microsoft 365.
     
-  - Si cette personne utilise Skype Entreprise Online, elle devra replanifier les réunions Skype Entreprise Online qu'elle a organisées et demander à ses contacts externes de mettre à jour les anciennes informations de contact la concernant.
+   - Si cette personne utilise Skype Entreprise Online, elle devra replanifier les réunions Skype Entreprise Online qu'elle a organisées et demander à ses contacts externes de mettre à jour les anciennes informations de contact la concernant.
 
-  - Si cette personne utilise OneDrive, l’URL de cet emplacement a été modifiée. Si cette personne a des blocs-notes OneNote dans son espace OneDrive, elle aura sans doute besoin de les fermer, puis de les rouvrir dans OneNote. Si cette personne a des fichiers partagés provenant de son OneDrive, les liens vers les fichiers risquent de ne pas fonctionner et l’utilisateur peut partager de nouveau.    
+   - Si cette personne utilise OneDrive, l’URL de cet emplacement a été modifiée. Si cette personne a des blocs-notes OneNote dans son espace OneDrive, elle aura sans doute besoin de les fermer, puis de les rouvrir dans OneNote. Si cette personne a des fichiers partagés provenant de son OneDrive, les liens vers les fichiers risquent de ne pas fonctionner et l’utilisateur peut partager de nouveau.    
   
-  - Si son mot de passe change aussi, elle sera invitée à entrer le nouveau mot de passe sur son appareil mobile ; sinon, la synchronisation ne sera pas effectuée.
+   - Si son mot de passe change aussi, elle sera invitée à entrer le nouveau mot de passe sur son appareil mobile ; sinon, la synchronisation ne sera pas effectuée.
   
 ::: moniker-end
 
@@ -121,23 +123,24 @@ Vous devez être un [administrateur général](about-admin-roles.md) pour effect
 
 3. Sélectionnez **Définir comme principale** pour l'adresse de courrier que vous souhaitez définir comme adresse principale pour cette personne. 
     
-    **IMPORTANT** : l’option Définir comme principale n’apparaît pas si vous avez acheté Microsoft 365 auprès de GoDaddy ou d’un autre service partenaire qui fournit une console de gestion. Au lieu de cela, connectez-vous à la console de gestion de GoDaddy ou du partenaire pour définir l’alias principal. 
-    
-    De même, cette option n’apparaît que si vous êtes un administrateur général. Si elle n’apparait pas, vous n’êtes pas autorisé à modifier le nom et l’adresse de messagerie principale d’un utilisateur.
+   > [!IMPORTANT]
+   > IMPORTANT : l’option Définir comme principale n’apparaît pas si vous avez acheté Microsoft 365 auprès de GoDaddy ou d’un autre service partenaire qui fournit une console de gestion. Au lieu de cela, connectez-vous à la console de gestion de GoDaddy ou du partenaire pour définir l’alias principal. 
+   > 
+   > De même, cette option n’apparaît que si vous êtes un administrateur général. Si elle n’apparait pas, vous n’êtes pas autorisé à modifier le nom et l’adresse de messagerie principale d’un utilisateur.
   
 4. Un avertissement jaune de grande taille s’affiche, indiquant que vous êtes sur le point de modifier les informations de connexion de la personne. Sélectionnez **Enregistrer**, puis **Fermer**.
     
 5. Communiquez les informations suivantes à la personne :
  
-  - L’application de cette modification peut prendre un certain temps.
+   - L’application de cette modification peut prendre un certain temps.
   
-  - Son nouveau nom d'utilisateur. Elle en aura besoin pour se connecter à Microsoft 365.
+   - Son nouveau nom d'utilisateur. Elle en aura besoin pour se connecter à Microsoft 365.
     
-  - Si elle utilise Skype Entreprise Online, indiquez-lui qu'elle devra replanifier les réunions Skype Entreprise Online qu'elle a organisées et qu'elle devra également demander à ses contacts externes de mettre à jour les anciennes informations de contact la concernant.
+   - Si elle utilise Skype Entreprise Online, indiquez-lui qu'elle devra replanifier les réunions Skype Entreprise Online qu'elle a organisées et qu'elle devra également demander à ses contacts externes de mettre à jour les anciennes informations de contact la concernant.
 
-  - Si cette personne utilise OneDrive, indiquez-lui que l’URL de cet emplacement a été modifiée. Si cette personne a des blocs-notes OneNote dans son espace OneDrive, il se peut qu’elle ait besoin de les fermer, puis de les rouvrir dans OneNote. Si cette personne a des fichiers partagés provenant de son OneDrive, les liens vers les fichiers risquent de ne pas fonctionner et l’utilisateur peut partager de nouveau.    
+   - Si cette personne utilise OneDrive, indiquez-lui que l’URL de cet emplacement a été modifiée. Si cette personne a des blocs-notes OneNote dans son espace OneDrive, il se peut qu’elle ait besoin de les fermer, puis de les rouvrir dans OneNote. Si cette personne a des fichiers partagés provenant de son OneDrive, les liens vers les fichiers risquent de ne pas fonctionner et l’utilisateur peut partager de nouveau.    
   
-  - Si son mot de passe change, signalez-lui qu’elle sera invitée à entrer le nouveau mot de passe sur son appareil mobile ; sinon, la synchronisation ne sera pas effectuée.
+   - Si son mot de passe change, signalez-lui qu’elle sera invitée à entrer le nouveau mot de passe sur son appareil mobile ; sinon, la synchronisation ne sera pas effectuée.
 
 ::: moniker-end
 
@@ -149,23 +152,24 @@ Vous devez être un [administrateur général](about-admin-roles.md) pour effect
 
 3. Sélectionnez **Définir comme principale** pour l'adresse de courrier que vous souhaitez définir comme adresse principale pour cette personne. 
     
-    **IMPORTANT** : l’option Définir comme principale n’apparaît pas si vous avez acheté Microsoft 365 auprès de GoDaddy ou d’un autre service partenaire qui fournit une console de gestion. Au lieu de cela, connectez-vous à la console de gestion de GoDaddy ou du partenaire pour définir l’alias principal. 
-    
-    De même, cette option n’apparaît que si vous êtes un administrateur général. Si elle n’apparait pas, vous n’êtes pas autorisé à modifier le nom et l’adresse de messagerie principale d’un utilisateur.
+   > [!IMPORTANT]
+   > IMPORTANT : l’option Définir comme principale n’apparaît pas si vous avez acheté Microsoft 365 auprès de GoDaddy ou d’un autre service partenaire qui fournit une console de gestion. Au lieu de cela, connectez-vous à la console de gestion de GoDaddy ou du partenaire pour définir l’alias principal. 
+   >  
+   > De même, cette option n’apparaît que si vous êtes un administrateur général. Si elle n’apparait pas, vous n’êtes pas autorisé à modifier le nom et l’adresse de messagerie principale d’un utilisateur.
   
 4. Un avertissement jaune de grande taille s’affiche, indiquant que vous êtes sur le point de modifier les informations de connexion de la personne. Sélectionnez **Enregistrer**, puis **Fermer**.
     
 5. Communiquez les informations suivantes à la personne :
  
-  - L’application de cette modification peut prendre un certain temps.
+   - L’application de cette modification peut prendre un certain temps.
   
-  - Son nouveau nom d'utilisateur. Elle en aura besoin pour se connecter à Microsoft 365.
+   - Son nouveau nom d'utilisateur. Elle en aura besoin pour se connecter à Microsoft 365.
     
-  - Si elle utilise Skype Entreprise Online, indiquez-lui qu'elle devra replanifier les réunions Skype Entreprise Online qu'elle a organisées et qu'elle devra également demander à ses contacts externes de mettre à jour les anciennes informations de contact la concernant.
+   - Si elle utilise Skype Entreprise Online, indiquez-lui qu'elle devra replanifier les réunions Skype Entreprise Online qu'elle a organisées et qu'elle devra également demander à ses contacts externes de mettre à jour les anciennes informations de contact la concernant.
 
-  - Si cette personne utilise OneDrive, indiquez-lui que l’URL de cet emplacement a été modifiée. Si cette personne a des blocs-notes OneNote dans son espace OneDrive, il se peut qu’elle ait besoin de les fermer, puis de les rouvrir dans OneNote. Si cette personne a des fichiers partagés provenant de son OneDrive, les liens vers les fichiers risquent de ne pas fonctionner et l’utilisateur peut partager de nouveau.    
+   - Si cette personne utilise OneDrive, indiquez-lui que l’URL de cet emplacement a été modifiée. Si cette personne a des blocs-notes OneNote dans son espace OneDrive, il se peut qu’elle ait besoin de les fermer, puis de les rouvrir dans OneNote. Si cette personne a des fichiers partagés provenant de son OneDrive, les liens vers les fichiers risquent de ne pas fonctionner et l’utilisateur peut partager de nouveau.    
   
-  - Si son mot de passe change, signalez-lui qu’elle sera invitée à entrer le nouveau mot de passe sur son appareil mobile ; sinon, la synchronisation ne sera pas effectuée.
+   - Si son mot de passe change, signalez-lui qu’elle sera invitée à entrer le nouveau mot de passe sur son appareil mobile ; sinon, la synchronisation ne sera pas effectuée.
 
 ::: moniker-end
   
@@ -179,7 +183,7 @@ Vous devez être un [administrateur général](about-admin-roles.md) pour effect
 
 3. Dans la zone **Nom d’affichage**, tapez un nouveau nom pour la personne, puis sélectionnez **Enregistrer**.
 
-    Si le message d'erreur « **Impossible de modifier l'utilisateur. Vérifiez les informations sur l'utilisateur et réessayez** » apparaît, voir [Résolution des messages d’erreur](#resolve-error-messages).
+   Si le message d'erreur « **Impossible de modifier l'utilisateur. Vérifiez les informations sur l'utilisateur et réessayez** » apparaît, voir [Résolution des messages d’erreur](#resolve-error-messages).
 
 L'application de cette modification dans tous les services peut prendre jusqu'à 24 heures. Une fois la modification appliquée, la personne devra se connecter à Outlook, à Skype Entreprise et à SharePoint avec son nom d'utilisateur mis à jour.
 
@@ -193,7 +197,7 @@ L'application de cette modification dans tous les services peut prendre jusqu'à
 
 3. Dans la zone **Nom d’affichage**, tapez un nouveau nom pour la personne, puis sélectionnez **Enregistrer**.
 
-    Si le message d'erreur « **Impossible de modifier l'utilisateur. Vérifiez les informations sur l'utilisateur et réessayez** » apparaît, voir [Résolution des messages d’erreur](#resolve-error-messages).
+   Si le message d'erreur « **Impossible de modifier l'utilisateur. Vérifiez les informations sur l'utilisateur et réessayez** » apparaît, voir [Résolution des messages d’erreur](#resolve-error-messages).
 
 L'application de cette modification dans tous les services peut prendre jusqu'à 24 heures. Une fois la modification appliquée, la personne devra se connecter à Outlook, à Skype Entreprise et à SharePoint avec son nom d'utilisateur mis à jour. Vous devez donc en informer celui-ci.
 
@@ -207,7 +211,7 @@ L'application de cette modification dans tous les services peut prendre jusqu'à
 
 3. Dans la zone **Nom d’affichage**, tapez un nouveau nom pour la personne, puis sélectionnez **Enregistrer**.
 
-    Si le message d'erreur « **Impossible de modifier l'utilisateur. Vérifiez les informations sur l'utilisateur et réessayez** » apparaît, voir [Résolution des messages d’erreur](#resolve-error-messages).
+   Si le message d'erreur « **Impossible de modifier l'utilisateur. Vérifiez les informations sur l'utilisateur et réessayez** » apparaît, voir [Résolution des messages d’erreur](#resolve-error-messages).
 
 L'application de cette modification dans tous les services peut prendre jusqu'à 24 heures. Une fois la modification appliquée, la personne devra se connecter à Outlook, à Skype Entreprise et à SharePoint avec son nom d'utilisateur mis à jour. Vous devez donc en informer celui-ci.
 
