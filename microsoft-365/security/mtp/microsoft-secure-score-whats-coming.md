@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: e42c65fdb4d409c1da7b85fbe7eca13170b9b974
-ms.sourcegitcommit: a9486f9dc51f0908393000ec3c211e3430c26abd
+ms.openlocfilehash: 950daef315ef27fe5d6bc40528eb0104974c8c00
+ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "49409232"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49604394"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Fonctionnalités du score de sécurité Microsoft
 
@@ -44,14 +44,6 @@ Ajout de 6 actions d’amélioration liées aux comptes pour Microsoft Defender 
 - Définir « âge minimal du mot de passe » sur « 1 ou plusieurs jours »
 - Désactivation du compte administrateur intégré
 - Désactiver le compte invité intégré
-
-### <a name="november-2020"></a>Novembre 2020
-
-#### <a name="removing-the-ability-to-create-servicenow-tickets-through-secure-score"></a>Suppression de la possibilité de créer des tickets ServiceNow via le score de sécurité 
-
-La possibilité de créer des tickets ServiceNow via le score de sécurité en accédant à **Share > ServiceNow** sera supprimée.
-
-La période d’aperçu du connecteur ServiceNow se termine. Cette fonctionnalité ne sera plus disponible à la fin du 2020. Nous vous remercions pour vos commentaires et le support technique pendant que nous déterminons les étapes suivantes.
 
 ## <a name="related-resources"></a>Ressources connexes
 

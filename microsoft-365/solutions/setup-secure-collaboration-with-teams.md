@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-jun2020
 f1.keywords: NOCSH
 description: Découvrez comment configurer la collaboration de contenu sécurisé dans teams pour protéger vos données en fonction de leur sensibilité.
-ms.openlocfilehash: 310605d0db84e33be1d5fdc925fadcfcdf9dddaf
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 4f2e157025f00660e77ba3377221368e37e45445
+ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906798"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49602072"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365"></a>Configurer la collaboration sécurisée avec Microsoft 365
 
@@ -60,13 +60,13 @@ Des informations essentielles au succès de votre organisation ou ayant des exig
 
 Pour tous les scénarios mentionnés ci-dessus, vous pouvez utiliser teams dans Microsoft teams pour stocker, partager et collaborer sur les informations. 
 
-Pour configurer Secure collabration, vous utilisez les fonctionnalités et fonctionnalités de Microsoft 365.
+Pour configurer la collaboration sécurisée, vous utilisez les fonctionnalités et fonctionnalités de Microsoft 365.
 
 | Produit ou composant | Fonctionnalité | Licence |
 |:-------|:-----|:-------|
 | Microsoft Defender pour Office 365 | Pièces jointes fiables pour SPO, OneDrive et Teams ; Documents approuvés ; Liens fiables pour teams    | Microsoft 365 E1, E3 et E5 |
 | SharePoint    | Stratégies de partage de sites et de fichiers, autorisations de partage de site, liens de partage, demandes d’accès, paramètres de partage du site invité | Microsoft 365 E1, E3 et E5 |
-| Microsoft Teams   | Accès invité, teams Private, Private Channels | Microsoft 365 E1, E3 et E5 |
+| Microsoft Teams   | Accès invité, teams Private, Private Channels | Microsoft 365 E1, E3 et E5 |
 | Conformité Microsoft 365  | Étiquettes de confidentialité    | Microsoft 365 E3 et E5 |
 
 ### <a name="using-teams-for-all-kinds-of-data"></a>Utilisation de teams pour tous les types de données
@@ -76,9 +76,9 @@ Pour gérer l’accès aux informations avec différentes sensibilités, nous av
 ![Image miniature représentant le poster architecture logique Teams](../media/solutions-architecture-center/Teams-tiers-of-protection-1.png)
 
 
-Ces niveaux de *ligne de base* , *sensibles* et *hautement sensibles* , augmentent graduellement les protections qui empêchent le surPartage et les fuites d’informations potentielles, comme illustré dans le tableau suivant.
+Ces niveaux de *ligne de base*, *sensibles* et *hautement sensibles* , augmentent graduellement les protections qui empêchent le surPartage et les fuites d’informations potentielles, comme illustré dans le tableau suivant.
 
-||**Niveau de référence**|**Niveau sensible**|**Niveau hautement sensible**|
+|-|**Niveau de référence**|**Niveau sensible**|**Niveau hautement sensible**|
 |:--|:-----------|:------------|:-------------------|
 |Équipe publique ou privée|Les deux|Private|Private|
 |Partage non authentifié|Blocked|Blocked|Blocked|

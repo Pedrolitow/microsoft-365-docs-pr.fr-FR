@@ -20,22 +20,26 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 6d1358da465bd7e31ca7b234f140aa8e48bb7508
-ms.sourcegitcommit: aa8d2de6ffac0157fffd14d0ea7f51ef0c287607
+ms.openlocfilehash: 4b25f701aca24563dc4f1a15f78a80e1e2064367
+ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49373994"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49604382"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Nouveautés de Microsoft Secure score
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Pour faire en sorte que Microsoft Secure score un meilleur représentant de votre position de sécurité, nous avons apporté des modifications. Pour en savoir plus sur les modifications planifiées, consultez [la rubrique what’s from Microsoft Secure score ?](microsoft-secure-score-whats-coming.md).
+Pour faire en sorte que Microsoft Secure score un meilleur représentant de votre position de sécurité, nous avons apporté des modifications. Pour en savoir plus sur les modifications planifiées, consultez [la rubrique what’s from Microsoft Secure score ?](microsoft-secure-score-whats-coming.md)
 
 Vous pouvez trouver https://security.microsoft.com/securescore le score de sécurité Microsoft à l’adresse dans le [Centre de sécurité Microsoft 365](overview-security-center.md).
 
-## <a name="november-2020"></a>Novembre 2020
+## <a name="november-2020"></a>Novembre 2020
+
+### <a name="removed-the-ability-to-create-servicenow-tickets-through-secure-score"></a>Suppression de la possibilité de créer des tickets ServiceNow via Secure score 
+
+La possibilité de créer des tickets ServiceNow via le score de sécurité en accédant à **Share > ServiceNow** n’est plus disponible. Nous vous remercions pour vos commentaires et le support technique pendant que nous déterminons les étapes suivantes.
 
 ### <a name="added-3-services-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>Ajout des trois actions d’amélioration liées aux services pour Microsoft Defender pour le point de terminaison (précédemment Microsoft Defender ATP) :
 
@@ -43,7 +47,7 @@ Vous pouvez trouver https://security.microsoft.com/securescore le score de sécu
 - Modifier le chemin d’accès exécutable de service en un emplacement protégé courant
 - Modifier le compte de service pour éviter le mot de passe mis en cache dans le Registre Windows
 
-## <a name="october-2020"></a>Octobre 2020
+## <a name="october-2020"></a>Octobre 2020
 
 ### <a name="remove-improvement-action-related-to-microsoft-defender-for-endpoint"></a>Supprimer l’action d’amélioration liée à Microsoft Defender pour le point de terminaison
 
@@ -77,7 +81,7 @@ Dans le temps, le score de sécurité d’identité et l’API Graph adopteront 
 * Gérer vos objectifs à venir à l’aide de projections de score et des actions planifiées
 * Et bien plus encore !
 
-## <a name="we-want-to-hear-from-you"></a>Nous souhaitons être informés
+## <a name="we-want-to-hear-from-you"></a>Votre avis nous intéresse
 
 Si vous rencontrez des problèmes, informez-le en publiant dans la communauté [Security, Privacy & Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) . Nous Surveillez la communauté et vous fournirons de l’aide.
 

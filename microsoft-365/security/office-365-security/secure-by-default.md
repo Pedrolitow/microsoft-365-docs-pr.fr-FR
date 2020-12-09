@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: En savoir plus sur le paramètre sécurisé par défaut dans Exchange Online Protection (EOP)
-ms.openlocfilehash: 54000d351463ba90751f1f27638fb52847cf05ce
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: 758d2169d80630a38c0b498e8c1848568e5ec941
+ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558513"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49602030"
 ---
 # <a name="secure-by-default-in-office-365"></a>Sécurité par défaut dans Office 365
 
@@ -40,6 +40,8 @@ Les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Onlin
 
 - Les messages électroniques avec un programme malveillant suspectés seront automatiquement mis en quarantaine et les destinataires seront avertis. Consultez la rubrique [configure anti-malware Policies in EOP](configure-anti-malware-policies.md).
 - Courrier électronique identifié comme un hameçonnage à niveau de confiance élevé sera géré en fonction de l’action de stratégie de blocage du courrier indésirable. Consultez la rubrique [configurer des stratégies anti-courrier indésirable dans EOP](configure-your-spam-filter-policies.md).
+
+Pour plus d’informations sur EOP, consultez la rubrique [Exchange Online Protection Overview](exchange-online-protection-overview.md).
 
 Étant donné que Microsoft souhaite assurer la sécurité de nos clients par défaut, certains remplacements de locataire ne sont pas appliqués pour les programmes malveillants ou le hameçonnage à haut niveau de confiance. Ces substitutions sont les suivantes :
 
@@ -65,5 +67,5 @@ Vous devez envisager d’utiliser des remplacements uniquement dans les scénari
 
 - Simulations d’hameçonnage : les attaques simulées peuvent vous aider à identifier les utilisateurs vulnérables avant qu’une attaque réelle n’influe sur votre organisation.
 - Boîtes aux lettres de sécurité/COP : boîtes aux lettres dédiées utilisées par les équipes de sécurité pour obtenir des messages non filtrés (à la fois bon et mauvais). Teams peut ensuite vérifier s’il contient du contenu malveillant.
-- Filtres tiers : certains fournisseurs tiers vont recommander de désactiver EOP (SCL =-1) car le filtre tiers gérera le filtrage du courrier. Microsoft ne recommande pas de désactiver EOP au fur et à mesure que EOP est requis pour Office 365. Au lieu de cela, nous vous recommandons d’activer le [filtrage amélioré pour les connecteurs](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+- Filtres tiers : certains fournisseurs tiers vont recommander de désactiver EOP (SCL =-1) car le filtre tiers gérera le filtrage du courrier. Microsoft ne recommande pas de désactiver EOP au fur et à mesure que EOP est requis pour [Microsoft Defender pour Office 365](office-365-atp.md). Au lieu de cela, nous vous recommandons d’activer le [filtrage amélioré pour les connecteurs](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 - Faux positifs : vous pouvez autoriser temporairement certains messages qui sont toujours analysés par Microsoft [via des soumissions d’administration](admin-submission.md). Comme pour toutes les substitutions, il est recommandé qu’elles soient temporaires.

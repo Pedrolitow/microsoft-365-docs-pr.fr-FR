@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur l’usurpation d’identité dans Exchange Online Protection (EOP), où vous pouvez autoriser ou bloquer des expéditeurs usurpés spécifiques.
-ms.openlocfilehash: 9168d43e6e5544ad3454729afc8140642deba0ef
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: bc8ae2664acf96ea6cd4c20c2f9195db9b75b3da
+ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572728"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49602120"
 ---
 # <a name="configure-spoof-intelligence-in-eop"></a>Configurer l’intelligence des usurpations d’identité dans EOP
 
@@ -65,8 +65,8 @@ Vous pouvez gérer l’aide à la décision dans le centre de sécurité & confo
 
   **Remarques**:
 
-  - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le centre d’administration 365 de Microsoft donne aux utilisateurs les autorisations requises dans le centre de sécurité & conformité _et_ des autorisations pour d’autres fonctionnalités de Microsoft 365. Si vous souhaitez en savoir plus, veuillez consulter la page [À propos des rôles d’administrateur](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
-  - Le groupe de rôles gestion de l' **Organisation en affichage seul** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) offre également un accès en lecture seule à la fonctionnalité.
+  - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux utilisateurs les autorisations requises dans le centre de sécurité et de conformité _et_ les autorisations pour les autres fonctionnalités de Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Le groupe de rôles **Gestion de l’organisation en affichage seul** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) permet également d’accéder en lecture seule à la fonctionnalité.
 
 - Pour connaître les paramètres recommandés pour l’intelligence d’usurpation, voir paramètres de la [stratégie anti-hameçonnage par défaut EOP](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings).
 
@@ -103,7 +103,7 @@ Vous pouvez gérer l’aide à la décision dans le centre de sécurité & confo
 
      - Sous l’onglet **domaines externes** , la valeur contient le domaine de l’utilisateur usurpé, et non l’adresse de messagerie complète.
 
-   - **Infrastructure d’envoi**: domaine trouvé dans une recherche DNS inversée (enregistrement PTR) de l’adresse IP du serveur de messagerie source ou adresse IP si la source n’a pas d’enregistrement PTR.
+   - **Infrastructure d’envoi**: domaine trouvé dans une recherche DNS inversée (enregistrement PTR) de l’adresse IP du serveur de messagerie source. Si l’adresse IP source n’a pas d’enregistrement PTR, l’infrastructure d’envoi est identifiée par \<source IP\> /24 (par exemple, 192.168.100.100/24).
 
      Pour plus d’informations sur les sources de messages et les expéditeurs de messages, voir [une vue d’ensemble des normes des messages électroniques](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards).
 
@@ -112,22 +112,18 @@ Vous pouvez gérer l’aide à la décision dans le centre de sécurité & confo
    - **nombre de plaintes de l’utilisateur**: plaintes déposées par vos utilisateurs par rapport à cet expéditeur au cours des 30 derniers jours. Les plaintes se présentent généralement sous la forme d’envois de courrier indésirable à Microsoft.
 
    - **Résultat de l’authentification**: l’une des valeurs suivantes :
-
       - **Réussite**: l’expéditeur a passé des vérifications d’authentification de courrier électronique de l’expéditeur (SPF ou DKIM).
       - **Échec**: l’expéditeur a échoué aux vérifications d’authentification de l’expéditeur EOP.
       - **Inconnu**: le résultat de ces vérifications n’est pas connu.
 
    - **Décision définie par**: indique qui a déterminé si l’infrastructure d’envoi est autorisée à usurper l’identité de l’utilisateur :
-
        - **Stratégie d’intelligence infalsifiable** (automatique)
        - **Administrateur** (manuel)
 
    - **Dernière** détection : dernière date à laquelle un message a été reçu de l’infrastructure d’envoi qui contient l’utilisateur usurpé.
 
    - **Autorisé à usurper ?**: les valeurs que vous voyez ici sont les suivantes :
-
      - **Oui**: les messages provenant de la combinaison d’une infrastructure utilisateur et d’une infrastructure d’envoi usurpés sont autorisés et ne sont pas traités comme des messages falsifiés.
-
      - **Non**: les messages provenant de la combinaison d’une infrastructure d’utilisateur et d’expéditeur usurpée sont marqués comme falsifiés. L’action est contrôlée par la stratégie anti-hameçonnage par défaut ou par des stratégies anti-hameçonnage personnalisées (la valeur par défaut est **déplacer le message vers le dossier courrier indésirable**). Pour plus d’informations, consultez la section suivante.
 
      - **Certains utilisateurs** (**votre onglet domaines** uniquement) : une infrastructure d’envoi usurpe l’identité de plusieurs utilisateurs, où certains utilisateurs usurpés sont autorisés et d’autres non. Utilisez l’onglet **détaillé** pour afficher les adresses spécifiques.

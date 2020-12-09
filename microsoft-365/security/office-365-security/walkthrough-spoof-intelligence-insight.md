@@ -18,21 +18,21 @@ ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent découvrir comment fonctionne l’aide à la décision. Ils peuvent déterminer rapidement les expéditeurs qui envoient des messages légitimes à leur organisation à partir de domaines qui ne passent pas de vérifications d’authentification de messagerie (SPF, DKIM ou DMARC).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6f5ebd0fd42d17354eeb1e03c946ac5446c3667c
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: 9139a2b4c3c7ed8262f3d75b445defb869371d07
+ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572740"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49602106"
 ---
 # <a name="walkthrough---spoof-intelligence-insight-in-microsoft-defender-for-office-365"></a>Procédure pas à pas-usurpation d’aide à la décision de Microsoft Defender pour Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Dans les organisations Microsoft 365 avec Defender pour Office 365, vous pouvez utiliser la fonction d’aide à la décision pour déterminer rapidement les expéditeurs qui envoient des messages électroniques non authentifiés (messages provenant de domaines ne passant pas les vérifications SPF, DKIM ou DMARC).
+Dans les organisations Microsoft 365 avec Defender pour Office 365, vous pouvez utiliser la fonction d’aide à la décision pour déterminer rapidement les expéditeurs externes qui envoient des messages électroniques non authentifiés (messages provenant de domaines qui ne passent pas de contrôles SPF, DKIM ou DMARC).
 
-En autorisant les expéditeurs connus à envoyer des messages falsifiés à partir d’emplacements connus, vous pouvez réduire les faux positifs (courrier marqué comme incorrect). En surveillant les expéditeurs usurpés autorisés, vous fournissez une couche supplémentaire de sécurité pour empêcher les messages non sécurisés d’arriver dans votre organisation.
+En autorisant les expéditeurs externes connus à envoyer des messages falsifiés à partir d’emplacements connus, vous pouvez réduire les faux positifs (bon message électronique marqué comme incorrect). En surveillant les expéditeurs usurpés autorisés, vous fournissez une couche supplémentaire de sécurité pour empêcher les messages non sécurisés d’arriver dans votre organisation.
 
 Pour plus d’informations sur les rapports et les Insights, voir [rapports et informations dans le centre de sécurité & conformité](reports-and-insights-in-security-and-compliance.md).
 
@@ -40,7 +40,7 @@ Cette procédure pas à pas est l’une des suivantes pour le centre de conformi
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Vous ouvrez le Centre de conformité et sécurité sur <https://protection.office.com/>. Pour accéder directement à la page du **tableau de bord de sécurité** , utilisez <https://protection.office.com/searchandinvestigation/dashboard> .
+- Vous ouvrez le Centre de sécurité et conformité sur <https://protection.office.com/>. Pour accéder directement à la page du **tableau de bord de sécurité** , utilisez <https://protection.office.com/searchandinvestigation/dashboard> .
 
   Vous pouvez afficher le centre d’aide à la décision à partir de plusieurs tableaux de bord dans le centre de conformité & Compliance Center. Quel que soit le tableau de bord que vous examinez, le détail fournit les mêmes détails et vous permet d’effectuer rapidement les mêmes tâches.
 
@@ -50,9 +50,9 @@ Cette procédure pas à pas est l’une des suivantes pour le centre de conformi
   - **Lecteur de sécurité**
   - **Lecteur général**
 
-  **Remarque**: l’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le centre d’administration 365 de Microsoft donne aux utilisateurs les autorisations requises dans le centre de sécurité & conformité _et_ des autorisations pour d’autres fonctionnalités de Microsoft 365. Si vous souhaitez en savoir plus, veuillez consulter la page [À propos des rôles d’administrateur](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  **Remarque**: l’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le centre d’administration 365 de Microsoft donne aux utilisateurs les autorisations requises dans le centre de sécurité & conformité _et_ des autorisations pour d’autres fonctionnalités de Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
 
-- Vous activez et désactivez l’intelligence contre les usurpations dans les stratégies de hameçonnage dans Microsoft Defender pour Office 365. Pour plus d’informations, consultez la rubrique [configure anti-phishing Policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
+- Vous activez et désactivez l’intelligence contre les usurpations dans les stratégies de hameçonnage dans Microsoft Defender pour Office 365. L’intelligence usurpée est activée par défaut. Pour plus d’informations, consultez la rubrique [configure anti-phishing Policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
 
 - Pour surveiller et gérer les expéditeurs qui envoient des messages non authentifiés à l’aide d’une usurpation d’identité, reportez-vous à la rubrique [configure usurpation Intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
 
@@ -62,8 +62,8 @@ Cette procédure pas à pas est l’une des suivantes pour le centre de conformi
 
 2. Dans la ligne **Insights** , recherchez l’un des éléments suivants :
 
-   - L' **intelligence d’usurpation d’identité est activée**: elle est appelée **domaines falsifiés dont l’authentification a échoué au cours des 30 derniers jours**. Valeur par défaut.
-   - L' **intelligence d’usurpation d’identité est désactivée**: l’aperçu de l’option **activer la protection contre les usurpations**
+   - **Domaines susceptibles d’être usurpés au cours des sept derniers jours**: cette vue indique que l’intelligence contre l’usurpation d’identité est activée (elle est activée par défaut).
+   - **Activer la protection contre les falsifications**: cela indique que l’intelligence d’usurpation d’identité est désactivée et que le fait de cliquer sur le Insight vous permet d’activer l’intelligence usurpée.
 
 3. Le tableau de bord affiche des informations comme celles-ci :
 
@@ -71,59 +71,55 @@ Cette procédure pas à pas est l’une des suivantes pour le centre de conformi
 
    Cette vue comprend deux modes :
 
-   - **Mode** d’affichage : si l’aide à l’usurpation d’identité est activée, le grand nombre de messages ont été affectés par nos capacités d’aide à la falsification au cours des 30 derniers jours.
+   - **Mode** d’affichage : si l’aide à l’usurpation d’identité est activée, elle indique le nombre de messages affectés par nos capacités d’aide à la falsification au cours des sept derniers jours.
+   - **Quel mode si**: si l’intelligence d’usurpation d’identité est désactivée, le rapport indique le nombre de messages qui *auraient* été affectés par nos capacités d’aide à la falsification au cours des sept derniers jours.
 
-   - **Quel mode si**: si l’intelligence d’usurpation d’identité est désactivée, le rapport indique le nombre de messages qui *auraient* été affectés par nos capacités d’aide à la falsification au cours des 30 derniers jours.
+   Dans les deux cas, les domaines usurpés affichés dans la vue sont divisés en deux catégories : les domaines **suspects** et les **domaines non suspects**.
 
-   Dans les deux cas, les domaines usurpés affichés dans la vue sont divisés en deux catégories : les paires de domaines **suspects** et les **paires de domaines non suspectes**. Ces catégories sont encore subdivisées en trois compartiments différents que vous pouvez examiner.
+   - Les **domaines suspects** sont les suivants :
 
-   Une **paire de domaine** est une combinaison de l’adresse de l’expéditeur et de l’infrastructure d’envoi :
+     - Usurpation de confiance élevée : selon les modèles d’envoi historique et le score de réputation des domaines, nous sommes très convaincus que les domaines sont des usurpations et les messages provenant de ces domaines sont plus susceptibles d’être malveillants.
 
-   - L’adresse de l’expéditeur correspond à l’adresse de messagerie de l’expéditeur affichée dans la zone de dans clients de messagerie. Cette adresse est également appelée `5322.From` adresse.
+     - Usurpation de confiance modérée : basée sur des modèles d’envoi historiques et sur le score de réputation des domaines, nous sommes modérément confiants que les domaines sont des usurpations et que les messages envoyés à partir de ces domaines sont légitimes. Les faux positifs sont plus susceptibles de se situer dans cette catégorie que le taux d’usurpation de confiance élevée.
 
-   - L’infrastructure d’envoi, ou expéditeur, est le domaine de l’organisation de la recherche DNS inverse (enregistrement PTR) de l’adresse IP d’envoi. Si l’adresse IP d’envoi n’a pas d’enregistrement PTR, l’expéditeur est identifié par l’adresse IP d’envoi avec le masque de sous-réseau 255.255.255.0 dans la notation CIDR (/24). Par exemple, si l’adresse IP est 192.168.100.100, l’adresse IP complète de l’expéditeur est 192.168.100.100/24.
+   **Domaines non suspects**: le domaine a échoué aux vérifications d’authentification de messagerie indéfinies [SPF](how-office-365-uses-spf-to-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md)et [DMARC](use-dmarc-to-validate-email.md)). Toutefois, le domaine a transmis nos vérifications d’authentification de messagerie implicites ([authentification composite](email-validation-and-authentication.md#composite-authentication)). Par conséquent, aucune action de détection d’usurpation d’identité n’a été effectuée sur le message.
 
-   Les **paires de domaines suspectes** sont les suivantes :
+### <a name="view-detailed-information-about-suspicious-domains-from-the-spoof-intelligence-insight"></a>Afficher des informations détaillées sur les domaines suspects à partir de l’aide à la décision
 
-   - **Usurpation de confiance élevée**: selon les modèles d’envoi historique et le score de réputation des domaines, nous sommes très convaincus que les domaines sont des usurpations et les messages provenant de ces domaines sont plus susceptibles d’être malveillants.
+1. Sur la page d’aide à la décision, cliquez sur **domaines suspects** ou **domaines non suspects** pour accéder à la page d’aide à la **décision** . La page d’aide à la **décision** contient les informations suivantes :
 
-   - **Usurpation de confiance modérée**: basée sur des modèles d’envoi historiques et sur le score de réputation des domaines, nous sommes modérément confiants que les domaines sont des usurpations et que les messages envoyés à partir de ces domaines sont légitimes. Les faux positifs sont plus susceptibles de se situer dans cette catégorie que le taux d’usurpation de confiance élevée.
+   - **Domaine usurpé**: domaine de l’utilisateur usurpé affiché dans la zone **de** dans clients de messagerie. Cette adresse est également appelée `5322.From` adresse.
+   - **Infrastructure**: également appelée infrastructure d' _envoi_. Domaine trouvé dans une recherche DNS inversée (enregistrement PTR) de l’adresse IP du serveur de messagerie source. Si l’adresse IP source n’a pas d’enregistrement PTR, l’infrastructure d’envoi est identifiée par \<source IP\> /24 (par exemple, 192.168.100.100/24).
+   - **Nombre** de messages : nombre de messages de l’infrastructure d’envoi à votre organisation qui contiennent le domaine usurpé spécifié au cours des 7 derniers jours.
+   - **Dernière** détection : dernière date à laquelle un message a été reçu de l’infrastructure d’envoi qui contient le domaine usurpé.
+   - **Type d’usurpation**: cette valeur est **externe**.
+   - **Autorisé à usurper ?**: les valeurs que vous voyez ici sont les suivantes :
+     - **Oui**: les messages provenant de la combinaison du domaine de l’utilisateur usurpé et de l’infrastructure d’envoi sont autorisés et ne sont pas traités comme des messages falsifiés.
+     - **Non**: les messages provenant de la combinaison de l’infrastructure d’envoi et du domaine de l’utilisateur usurpé sont marqués comme falsifiés. L’action est contrôlée par la stratégie anti-hameçonnage par défaut ou par des stratégies anti-hameçonnage personnalisées (la valeur par défaut est **déplacer le message vers le dossier courrier indésirable**).
 
-   - **Paires de domaines non suspectes** (y compris l' **usurpation d’identité**) : le domaine a échoué à des vérifications d’authentification de messagerie indéfinies [SPF](how-office-365-uses-spf-to-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md)et [DMARC](use-dmarc-to-validate-email.md)). Toutefois, le domaine a transmis nos vérifications d’authentification de messagerie implicites ([authentification composite](email-validation-and-authentication.md#composite-authentication)). Par conséquent, aucune action de détection d’usurpation d’identité n’a été effectuée sur le message.
+     Pour plus d’informations, consultez la rubrique [configure anti-phishing Policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
 
-### <a name="view-detailed-information-about-suspicious-domain-pairs-from-the-spoof-intelligence-insight"></a>Afficher des informations détaillées sur les paires de domaines suspectes à partir de l’aide à la décision
-
-1. Sur la vue d’aide à la décision, cliquez sur l’une des paires de domaines (élevée, modérée ou de récupération).
-
-   La page **usurpation** d’aide s’affiche. La page affiche la liste des expéditeurs qui envoient des messages non authentifiés dans votre organisation.
-
-   Ces informations vous permettent de déterminer si des messages falsifiés sont autorisés ou si vous devez effectuer des actions supplémentaires.
-
-   Vous pouvez trier les informations par nombre de messages, la date de la dernière détection de l’usurpation, et bien plus encore.
-
-2. Sélectionnez un élément dans le tableau pour ouvrir un volet d’informations contenant des informations détaillées sur la paire de domaines. Ces informations sont les suivantes :
+2. Sélectionnez un élément dans la liste pour afficher les détails relatifs à la paire domaine/envoi d’infrastructure dans un lanceur. Ces informations sont les suivantes :
    - Pourquoi nous avons pris cette explication.
    - Ce que vous devez faire.
    - Un résumé de domaine.
    - Identification des données relatives à l’expéditeur.
    - Messages similaires que nous avons vus dans votre client par le même expéditeur.
 
-   À partir de là, vous pouvez également choisir d’ajouter ou de supprimer la paire de domaine de la liste des expéditeurs approuvés **AllowedToSpoof** .
+   À partir de là, vous pouvez également choisir d’ajouter ou de supprimer la paire domaine/envoi d’infrastructure de la liste **autorisé à usurper** l’expéditeur. Définissez simplement le bouton bascule en conséquence.
 
    ![Capture d’écran d’un domaine dans le volet d’informations d’aide à la décision](../../media/03ad3e6e-2010-4e8e-b92e-accc8bbebb79.png)
 
-### <a name="add-or-remove-a-domain-from-the-allowedtospoof-list"></a>Ajouter ou supprimer un domaine de la liste AllowedToSpoof
+### <a name="adding-a-domain-to-the-allowed-to-spoof-list"></a>Ajout d’un domaine à la liste des autorisations d’usurpation d’identité
 
-Vous ajoutez ou supprimez un domaine de la liste AllowedToSpoof (expéditeur fiable) dans le volet d’informations de l’aide à la décision pour la paire de domaines. Définissez simplement le bouton bascule en conséquence.
+L’ajout d’un domaine à la liste autorisé à usurper à partir de l’aide à la décision ne permet que de combiner le domaine usurpé *et* l’infrastructure émettrice. Elle n’autorise pas les messages provenant du domaine usurpé à partir de n’importe quelle source, et ne permet pas non plus d’envoyer des courriers électroniques à partir de l’infrastructure d’envoi de n’importe quel domaine.
 
-L’autorisation d’une paire de domaines autorise uniquement la combinaison du domaine usurpé *et* de l’infrastructure d’envoi. Elle n’autorise pas les messages provenant du domaine usurpé à partir de n’importe quelle source, et ne permet pas non plus d’envoyer des courriers électroniques à partir de l’infrastructure d’envoi de n’importe quel domaine.
+Par exemple, vous autorisez le domaine suivant à la liste des autorisations d’usurpation d’identité :
 
-Par exemple, vous autorisez la paire de domaines suivante à envoyer des messages falsifiés dans votre organisation :
+- **Domaine**: gmail.com
+- **Infrastructure**: TMS.mx.com
 
-- *Domaine usurpé*: gmail.com "
-- *Infrastructure d’envoi* `tms.mx.com` :
-
-Seul le courrier électronique provenant de cette paire de domaines sera autorisé à usurper. Les autres expéditeurs tentant d’usurper gmail.com ne sont pas autorisés. Les messages dans d’autres domaines de tms.mx.com sont vérifiés par l’aide à l’usurpation d’identité.
+Seul le courrier électronique de ce domaine/cette paire d’infrastructure d’envoi sera autorisé à usurper. Les autres expéditeurs tentant d’usurper gmail.com ne sont pas autorisés. Les messages dans d’autres domaines de tms.mx.com sont vérifiés par l’aide à l’usurpation d’identité.
 
 ## <a name="related-topics"></a>Rubriques connexes
 

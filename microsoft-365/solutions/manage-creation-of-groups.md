@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: Découvrez comment contrôler quels utilisateurs peuvent créer des groupes Microsoft 365.
-ms.openlocfilehash: e3424a9cc916c9464478fbe4411bbbf7b971d989
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: 3a0ac5ef48eabfd06e0df3f509c7d8e4be3cff10
+ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572620"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49602018"
 ---
 # <a name="manage-who-can-create-microsoft-365-groups"></a>Gérer les personnes autorisées à créer des groupes Microsoft 365
 
@@ -33,8 +33,8 @@ Si votre entreprise exige que vous restreigniez les personnes autorisées à cr�
 - Outlook
 - SharePoint
 - Yammer
-- Microsoft Teams
-- Microsoft Stream
+- Microsoft Teams
+- Microsoft Stream
 - Planificateur
 - PowerBI (classique)
 - Projet pour le Web/feuille de route
@@ -114,7 +114,7 @@ Lorsque vous y êtes invité, [Connectez-vous avec votre compte d’administrate
 
 ```PowerShell
 $GroupName = "<SecurityGroupName>"
-$AllowGroupCreation = $False"
+$AllowGroupCreation = $False
 
 Connect-AzureAD
 

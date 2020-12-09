@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: La protection de la confidentialité avec le score de productivité.
-ms.openlocfilehash: db123042761b07ed64dd2dd94e783d65205e1460
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: ceb19fcb7bbf2f6a58e38684604ed3b0dac2a5d4
+ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561509"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49604325"
 ---
 # <a name="privacy-controls-for-productivity-score"></a>Contrôles de confidentialité du score de productivité
 
@@ -42,10 +42,10 @@ Les contrôles vous donnent les éléments suivants :
 
 Pour afficher l’intégralité de la note de productivité, vous avez besoin de l’un des rôles d’administrateur suivants :
 
-- Administrateur global
+- Administrateur général
 - Administrateurs Exchange
 - Administrateur SharePoint
-- Administrateur pour Skype Entreprise
+- Administrateur Skype Entreprise
 - Administrateur Teams
 - Lecteur général
 - Lecteur de rapports
@@ -73,7 +73,7 @@ Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId $u.ObjectId
 
 ## <a name="capability-to-opt-out-of-people-experiences"></a>Possibilité de désactiver les expériences de personnes
 
-Vous pouvez également désactiver la zone des utilisateurs du score de productivité. Si vous désactivez l’option, personne de votre organisation ne pourra afficher ces mesures, et votre organisation sera supprimée des calculs impliquant la communication, les réunions, le travail d’équipe, la collaboration de contenu et la mobilité.
+Vous pouvez également désactiver la zone des utilisateurs du score de productivité. Si vous désactivez l’option, personne de votre organisation ne pourra afficher ces mesures, et votre organisation sera supprimée des calculs impliquant la communication, les réunions, le travail d’équipe, la collaboration de contenu et la mobilité. Vous devez être un administrateur général pour exclure votre organisation des rapports d’expérience utilisateur.
 
 Pour choisir une option, procédez comme suit :
 

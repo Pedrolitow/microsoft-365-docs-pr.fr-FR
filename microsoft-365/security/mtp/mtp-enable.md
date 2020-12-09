@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: c5b8cae9e4eabcb2b3c6a7eb76971784193a221d
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: fbe98b814b253551432ea35102f2bd6eeba921f8
+ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920501"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49602085"
 ---
 # <a name="turn-on-microsoft-365-defender"></a>Activer Microsoft 365 Defender
 
@@ -52,13 +52,13 @@ Microsoft 365 Defender agrège les données à partir des différents services p
 Pour bénéficier de la meilleure protection et optimiser Microsoft 365 Defender, nous vous recommandons de déployer tous les services pris en charge applicables sur votre réseau. Pour plus d’informations, consultez la rubrique [Deploying Supported services](deploy-supported-services.md).
 
 ## <a name="before-starting-the-service"></a>Avant de démarrer le service
-Avant d’activer le service, le centre de sécurité Microsoft 365 ( [Security.Microsoft.com](https://security.microsoft.com)) affiche la page Paramètres de Microsoft 365 Defender lorsque vous sélectionnez **incidents** , **Centre de maintenance** ou **sélection** dans le volet de navigation. Ces éléments de navigation ne s’affichent pas si vous n’êtes pas éligible à l’utilisation de Microsoft 365 Defender.
+Avant d’activer le service, le centre de sécurité Microsoft 365 ([Security.Microsoft.com](https://security.microsoft.com)) affiche la page Paramètres de Microsoft 365 Defender lorsque vous sélectionnez **incidents**, **Centre de maintenance** ou **sélection** dans le volet de navigation. Ces éléments de navigation ne s’affichent pas si vous n’êtes pas éligible à l’utilisation de Microsoft 365 Defender.
 
 ![Image de la page Paramètres de Microsoft 365 Defender affichée si Microsoft 365 Defender n’a pas été activé pour les ](../../media/mtp-enable/mtp-settings.png)
  *paramètres de Microsoft 365 Defender dans le centre de sécurité Microsoft 365*
 
 ## <a name="starting-the-service"></a>Démarrage du service
-Pour activer Microsoft 365 Defender, il vous suffit de sélectionner **activer microsoft 365 Defender** et d’appliquer la modification. Vous pouvez également accéder à cette option en sélectionnant **paramètres** ( [Security.Microsoft.com/Settings](https://security.microsoft.com/settings)) dans le volet de navigation, puis en sélectionnant **Microsoft 365 Defender**.
+Pour activer Microsoft 365 Defender, il vous suffit de sélectionner **activer microsoft 365 Defender** et d’appliquer la modification. Vous pouvez également accéder à cette option en sélectionnant **paramètres** ([Security.Microsoft.com/Settings](https://security.microsoft.com/settings)) dans le volet de navigation, puis en sélectionnant **Microsoft 365 Defender**.
 
 >[!NOTE]
 >Si vous ne voyez pas les **paramètres** dans le volet de navigation ou que vous n’avez pas accès à la page, vérifiez vos autorisations et licences.
@@ -85,11 +85,6 @@ Une fois le service configuré, il ajoute :
 Pour partager Microsoft Defender pour les données d’identité avec Microsoft 365 Defender, assurez-vous que Microsoft Cloud App Security et Microsoft Defender for Identity Integration sont activés. [Découvrez cette intégration](https://docs.microsoft.com/cloud-app-security/aatp-integration)
 
 
-## <a name="turn-off-microsoft-365-defender"></a>Désactiver Microsoft 365 Defender
-Pour cesser d’utiliser Microsoft 365 Defender, accédez à **paramètres**  >  **Microsoft 365 Defender**  >  **opt-in/opt-out** dans le centre de sécurité Microsoft 365. Désélectionnez **activer Microsoft 365 Defender** et appliquer les modifications.
-
-Les fonctionnalités correspondantes seront supprimées du centre de sécurité Microsoft 365.
-
 ## <a name="get-assistance"></a>Obtenir de l'aide
 
 Pour obtenir des réponses aux questions les plus fréquemment posées sur l’activation de Microsoft 365 Defender, [Lisez le Forum aux](mtp-enable-faq.md)questions.
@@ -98,7 +93,7 @@ Le personnel du support Microsoft peut vous aider à mettre en service ou à met
 
 ## <a name="related-topics"></a>Rubriques connexes
 
-- [Foire aux questions](mtp-enable-faq.md)
+- [Forum aux questions](mtp-enable-faq.md)
 - [Conditions requises et autres conditions préalables relatives aux licences](prerequisites.md)
 - [Déployer les services pris en charge](deploy-supported-services.md)
 - [Vue d’ensemble de Microsoft 365 Defender](microsoft-threat-protection.md)
