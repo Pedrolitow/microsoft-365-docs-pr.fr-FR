@@ -18,18 +18,18 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: 67835f4140179c69b5e0f2cd0287e656dd4c49ad
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: bd0b4efb1281d467a61e4aee792b507f0ca44181
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558549"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616559"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Tâches préalables à l’implémentation de stratégies d’accès aux identités et aux appareils
 
 Cet article décrit les conditions préalables qui doivent être implémentées pour pouvoir déployer les stratégies d’identité et d’accès aux appareils recommandées. Cet article décrit également les configurations de client de plateforme par défaut recommandées pour fournir la meilleure expérience d’authentification unique (SSO) à vos utilisateurs, ainsi que les conditions préalables techniques pour l’accès conditionnel.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Conditions requises
 
 Avant d’implémenter les stratégies d’identité et d’accès aux appareils recommandées, votre organisation doit respecter plusieurs conditions préalables pour ces modèles d’identité et d’authentification pour Microsoft 365 et Office 365 :
 
@@ -38,7 +38,7 @@ Avant d’implémenter les stratégies d’identité et d’accès aux appareils
 - Hybride avec authentification directe (directe)
 - Fédération
 
-Le tableau suivant détaille les fonctionnalités prérequises et leur configuration qui s’appliquent à tous les modèles d’identité, sauf indication contraire. 
+Le tableau suivant détaille les fonctionnalités prérequises et leur configuration qui s’appliquent à tous les modèles d’identité, sauf indication contraire.
 
 |Configuration|Exceptions|
 |---|:---:|
@@ -76,7 +76,7 @@ Nous recommandons également que les appareils appartenant à l’Organisation s
 
 ### <a name="recommended-email-clients"></a>Clients de messagerie recommandés
 
-Les clients de messagerie suivants prennent en charge l’authentification moderne et l’accès conditionnel. 
+Les clients de messagerie suivants prennent en charge l’authentification moderne et l’accès conditionnel.
 
 |Plate-forme|Client|Version/Notes|
 |---|---|---|
@@ -116,9 +116,9 @@ Pour les éditions de Microsoft 365 ou Office 365 qui ne prennent pas en charge 
 
 Voici quelques recommandations supplémentaires :
 
-- Utilisez [Azure ad Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started) pour réduire le nombre de comptes d’administration persistants. 
-- [Utilisez la gestion des accès privilégiés](../../compliance/privileged-access-management-overview.md) pour protéger votre organisation contre les violations susceptibles d’utiliser des comptes d’administrateur privilégié existants avec un accès permanent aux données sensibles ou l’accès aux paramètres de configuration critiques. 
-- Créez et utilisez des comptes distincts auxquels sont attribués des [rôles d’administrateur Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) *uniquement pour l’administration*. Les administrateurs doivent avoir leur propre compte d’utilisateur pour une utilisation normale non administrative et n’utiliser un compte d’administrateur que si nécessaire pour effectuer une tâche associée à leur rôle ou fonction. 
+- Utilisez [Azure ad Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started) pour réduire le nombre de comptes d’administration persistants.
+- [Utilisez la gestion des accès privilégiés](../../compliance/privileged-access-management-overview.md) pour protéger votre organisation contre les violations susceptibles d’utiliser des comptes d’administrateur privilégié existants avec un accès permanent aux données sensibles ou l’accès aux paramètres de configuration critiques.
+- Créez et utilisez des comptes distincts auxquels sont attribués des [rôles d’administrateur Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) *uniquement pour l’administration*. Les administrateurs doivent avoir leur propre compte d’utilisateur pour une utilisation normale non administrative et n’utiliser un compte d’administrateur que si nécessaire pour effectuer une tâche associée à leur rôle ou fonction.
 - Suivez les [meilleures pratiques en matière](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices) de sécurisation des comptes privilégiés dans Azure ad.
 
 ## <a name="next-step"></a>Étape suivante

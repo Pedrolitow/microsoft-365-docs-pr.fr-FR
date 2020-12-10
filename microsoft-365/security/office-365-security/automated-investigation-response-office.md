@@ -21,12 +21,12 @@ description: Découvrez comment fonctionnent les fonctionnalités d’analyse et
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: b901585f0a25c51c377e974c56faffe560eab5f3
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: bbc51201f9d96744ed5bc236516158a75f7af272
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357670"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615227"
 ---
 # <a name="how-automated-investigation-and-response-works-in-microsoft-defender-for-office-365"></a>Fonctionnement de l’analyse et de la réponse automatiques dans Microsoft Defender pour Office 365
 
@@ -41,7 +41,6 @@ Cet article explique comment AIR passe par plusieurs exemples. Lorsque vous ête
 - [Exemple 1 : un message hameçon signalé par un utilisateur lance un manuel d’enquête.](#example-a-user-reported-phish-message-launches-an-investigation-playbook)
 - [Exemple 2 : un administrateur de sécurité déclenche une enquête à partir de l’Explorateur de menaces](#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)
 - [Exemple 3 : une équipe d’opérations de sécurité intègre AIR avec sa SIEM à l’aide de l’API activité de gestion d’Office 365](#example-a-security-operations-team-integrates-air-with-their-siem-using-the-office-365-management-activity-api)
-
 
 ## <a name="example-a-user-reported-phish-message-launches-an-investigation-playbook"></a>Exemple : un message hameçon signalé par un utilisateur lance un manuel d’enquête.
 
@@ -58,7 +57,7 @@ Lors de la phase d’enquête de racine, différents aspects du courrier électr
 - et bien plus encore.
 
 Une fois l’enquête terminée, le manuel fournit une liste des actions recommandées à effectuer sur le courrier électronique d’origine et les entités qui lui sont associées.
-  
+
 Ensuite, plusieurs étapes d’enquête sur les menaces et de chasse sont exécutées :
 
 - Les messages électroniques similaires sont identifiés par des recherches de cluster de messagerie.
@@ -67,15 +66,15 @@ Ensuite, plusieurs étapes d’enquête sur les menaces et de chasse sont exécu
 - Une vérification est effectuée sur Exchange Online Protection ([EOP](exchange-online-protection-overview.md)) et ([Microsoft defender pour Office 365](office-365-atp.md)) pour voir s’il existe d’autres messages similaires signalés par les utilisateurs.
 - Une vérification est exécutée pour déterminer si un utilisateur a été compromis. Cette vérification exploite les signaux entre Office 365, [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)et [Azure Active Directory](https://docs.microsoft.com/azure/active-directory), en mettant en corrélation les anomalies d’activité de l’utilisateur associées.
 
-Au cours de la phase de chasse, les risques et les menaces sont affectés à différentes étapes de la chasse. 
+Au cours de la phase de chasse, les risques et les menaces sont affectés à différentes étapes de la chasse.
 
-La correction est la phase finale du manuel. Pendant cette phase, les étapes de correction sont prises, en fonction des phases d’enquête et de chasse. 
+La correction est la phase finale du manuel. Pendant cette phase, les étapes de correction sont prises, en fonction des phases d’enquête et de chasse.
 
 ## <a name="example-a-security-administrator-triggers-an-investigation-from-threat-explorer"></a>Exemple : un administrateur de sécurité déclenche une enquête à partir de l’Explorateur de menaces
 
-En plus des recherches automatisées déclenchées par une alerte, l’équipe des opérations de sécurité de votre organisation peut déclencher une enquête automatisée à partir d’une vue dans l' [Explorateur de menaces](threat-explorer.md).  Cette enquête crée également une alerte, de sorte que les incidents de Microsoft Defender et les outils SIEM externes puissent voir que cette enquête a été déclenchée. 
+En plus des recherches automatisées déclenchées par une alerte, l’équipe des opérations de sécurité de votre organisation peut déclencher une enquête automatisée à partir d’une vue dans l' [Explorateur de menaces](threat-explorer.md).  Cette enquête crée également une alerte, de sorte que les incidents de Microsoft Defender et les outils SIEM externes puissent voir que cette enquête a été déclenchée.
 
-Par exemple, supposons que vous utilisiez l’affichage **programme malveillant** dans l’Explorateur. À l’aide des onglets situés sous le graphique, sélectionnez l’onglet **courrier électronique** . Si vous sélectionnez un ou plusieurs éléments dans la liste, le bouton **+ actions** est activé. 
+Par exemple, supposons que vous utilisiez l’affichage **programme malveillant** dans l’Explorateur. À l’aide des onglets situés sous le graphique, sélectionnez l’onglet **courrier électronique** . Si vous sélectionnez un ou plusieurs éléments dans la liste, le bouton **+ actions** est activé.
 
 ![Explorateur avec des messages sélectionnés](../../media/Explorer-Malware-Email-ActionsInvestigate.png)
 
@@ -87,7 +86,7 @@ Dans le menu **actions** , vous pouvez sélectionner l' **enquête du déclenche
 
 ## <a name="example-a-security-operations-team-integrates-air-with-their-siem-using-the-office-365-management-activity-api"></a>Exemple : une équipe d’opérations de sécurité intègre AIR avec sa SIEM à l’aide de l’API activité de gestion d’Office 365
 
-Les fonctionnalités AIR de Microsoft Defender pour Office 365 incluent des [rapports & les détails](air-view-investigation-results.md) que les équipes des opérations de sécurité peuvent utiliser pour surveiller et résoudre les menaces. Toutefois, vous pouvez également intégrer les fonctionnalités AIR à d’autres solutions. Les exemples incluent un système de gestion des événements et des informations de sécurité (SIEM), un système de gestion des cas ou une solution de création de rapports personnalisée. Ces types d’intégration peuvent être effectués à l’aide de l' [API activité de gestion d’Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). 
+Les fonctionnalités AIR de Microsoft Defender pour Office 365 incluent des [rapports & les détails](air-view-investigation-results.md) que les équipes des opérations de sécurité peuvent utiliser pour surveiller et résoudre les menaces. Toutefois, vous pouvez également intégrer les fonctionnalités AIR à d’autres solutions. Les exemples incluent un système de gestion des événements et des informations de sécurité (SIEM), un système de gestion des cas ou une solution de création de rapports personnalisée. Ces types d’intégration peuvent être effectués à l’aide de l' [API activité de gestion d’Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference).
 
 Par exemple, une organisation a récemment mis en place un moyen pour l’équipe des opérations de sécurité d’afficher les alertes de hameçonnage signalées par l’utilisateur et déjà traitées par AIR. Leur solution intègre les alertes appropriées avec le serveur SIEM de l’organisation et son système de gestion de la casse. La solution réduit considérablement le nombre de faux positifs afin que l’équipe des opérations de sécurité puisse concentrer leur temps et leur efforts sur des menaces réelles. Pour en savoir plus sur cette solution personnalisée, consultez [le blog de la communauté technique : améliorer l’efficacité de votre SOC avec Microsoft Defender pour Office 365 et l’API de gestion d’Office 365](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185).
 

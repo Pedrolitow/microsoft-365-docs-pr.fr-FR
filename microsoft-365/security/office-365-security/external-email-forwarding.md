@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: .
-ms.openlocfilehash: 59e2c938c70dd8e3060fd85d084acbe8f79856ad
-ms.sourcegitcommit: 04a43a146cb62a10b1a4555ec3bed49eb08fbb99
+ms.openlocfilehash: bbe341899599d5092db0b0961add5a9825eca3b4
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48806635"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616595"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>Contrôler le transfert automatique du courrier électronique externe dans Microsoft 365
 
@@ -31,24 +31,24 @@ Les types de transferts automatiques suivants sont disponibles dans Microsoft 36
 
 - Les utilisateurs peuvent configurer des [règles de boîte de réception](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59) pour transférer automatiquement des messages vers des expéditeurs externes (délibérément ou en raison d’un compte compromis).
 
-- Les administrateurs peuvent configurer le transfert des [boîtes aux lettres](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) (également appelé _transfert SMTP_ ) pour transférer automatiquement les messages vers des destinataires externes.
+- Les administrateurs peuvent configurer le transfert des [boîtes aux lettres](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) (également appelé _transfert SMTP_) pour transférer automatiquement les messages vers des destinataires externes.
 
 Vous pouvez utiliser des stratégies de filtrage du courrier indésirable sortant pour contrôler le transfert automatique vers des destinataires externes. Trois paramètres sont disponibles :
 
-- **Automatique** : le transfert externe automatique est bloqué. Le transfert automatique interne des messages continuera à fonctionner. Il s’agit du paramètre par défaut.
+- **Automatique**: le transfert externe automatique est bloqué. Le transfert automatique interne des messages continuera à fonctionner. Il s’agit du paramètre par défaut.
 
 - **Activé : le** transfert externe automatique est autorisé et non restreint.
 
-- **Off** : le transfert externe automatique est désactivé et entraîne une notification d’échec de remise (également appelée notification de non-remise) à l’expéditeur.
+- **Off**: le transfert externe automatique est désactivé et entraîne une notification d’échec de remise (également appelée notification de non-remise) à l’expéditeur.
 
 Pour obtenir des instructions sur la configuration de ces paramètres, consultez la rubrique [configuration du filtrage du courrier indésirable sortant dans EOP](configure-the-outbound-spam-policy.md).
 
 > [!NOTE]
-> 
+>
 > - La désactivation du transfert automatique désactive les règles de boîte de réception (utilisateurs) ou le transfert des boîtes aux lettres (administrateurs) qui redirigent les messages vers des adresses externes.
-> 
+>
 > - Le transfert automatique des messages entre les utilisateurs internes n’est pas affecté par les paramètres des stratégies de filtrage du courrier indésirable sortant.
-> 
+>
 > - Vous pouvez afficher des informations sur les utilisateurs qui transfèrent automatiquement des messages à des destinataires externes dans le [rapport de messages transférés](mfi-auto-forwarded-messages-report.md)automatiquement.
 
 ## <a name="how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls"></a>Fonctionnement des paramètres de stratégie de filtrage du courrier indésirable sortant avec d’autres contrôles de transfert automatique du courrier

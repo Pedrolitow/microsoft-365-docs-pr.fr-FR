@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez les stratégies d’expiration des groupes Microsoft 365.
-ms.openlocfilehash: 4b283bcc9f4e54462a71b9aee70d6312b9f127d6
-ms.sourcegitcommit: 5480982967a90ca3060a59676a6b29155f2de861
+ms.openlocfilehash: d55cc7fff939cb07ae2eba92de411e8f0d088885
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49350711"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613653"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Stratégie d’expiration de groupe Microsoft 365
 
@@ -55,7 +55,7 @@ Il est important de comprendre que l’expiration est désactivée par défaut. 
 
 ## <a name="how-to-set-the-expiration-policy"></a>Procédure de définition de la stratégie d’expiration
 
-Comme indiqué ci-dessus, l’expiration est désactivée par défaut. Un administrateur doit activer la stratégie d’expiration et définir les propriétés pour qu’elle prenne effet. Pour l’activer, accédez à l’expiration des groupes **Azure Active Directory**  >  **Groups**  >  **Expiration**. Ici, vous pouvez définir la durée de vie du groupe par défaut et spécifier le délai d’expiration de la première et de la deuxième notifications d’expiration pour le propriétaire du groupe.
+Comme indiqué ci-dessus, l’expiration est désactivée par défaut. Un administrateur doit activer la stratégie d’expiration et définir les propriétés pour qu’elle prenne effet. Pour l’activer, accédez à l’expiration des groupes **Azure Active Directory**  >    >  . Ici, vous pouvez définir la durée de vie du groupe par défaut et spécifier le délai d’expiration de la première et de la deuxième notifications d’expiration pour le propriétaire du groupe.
 
 La durée de vie du groupe est spécifiée en jours et peut être définie sur 180, 365 ou sur une valeur personnalisée que vous spécifiez. La valeur personnalisée doit être d’au moins 30 jours.
 
@@ -81,7 +81,11 @@ Si, pour une raison quelconque, aucun des propriétaires ou administrateurs ne r
 
 Si vous avez un groupe que vous n’avez plus l’intention d’utiliser, mais que vous souhaitez conserver son contenu, voir [Archive Groups, teams et Yammer](end-life-cycle-groups-teams-sites-yammer.md) pour plus d’informations sur l’exportation des informations à partir des différents groupes services.
 
-## <a name="related-articles"></a>Articles connexes
+## <a name="related-topics"></a>Voir aussi
+
+[Planification de la gouvernance de collaboration étape par étape](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[Création de votre plan de gouvernance de collaboration](collaboration-governance-first.md)
 
 [Vue d’ensemble des stratégies de rétention](https://support.office.com/article/5e377752-700d-4870-9b6d-12bfc12d2423)
 

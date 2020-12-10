@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Interactions des services de groupe
-ms.openlocfilehash: 235a897314a784ba3bb1ac50fe8bdfe9986a70d3
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 6d5681b11cdbd837f784b6c8364cce23f964b167
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377628"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613225"
 ---
 # <a name="groups-services-interactions"></a>Interactions des services de groupe
 
@@ -95,8 +95,8 @@ L’expérience de la restriction de création de groupe varie selon les applica
 |Planificateur|**Nouveau plan** explique que la création de groupe a été désactivée et propose d’ajouter le plan à un groupe existant.|
 |Projet pour le Web et feuille de route|Le menu **créer un groupe** explique que la création de groupe est restreinte et suggère l’utilisation d’un groupe existant.|
 |SharePoint|Toujours en mesure de créer un site d’équipe qui n’est pas connecté à un groupe.|
-|Flux|L’option de **groupe** ne s’affiche pas dans le **menu créer**.|
-|Équipes|L’utilisateur ne peut pas créer une équipe avec un nouveau groupe, mais il peut toujours créer une équipe qui utilise un groupe existant.<br><br>**Le bouton créer une équipe** est remplacé par **créer une équipe à partir d’un groupe**.|
+|Stream|L’option de **groupe** ne s’affiche pas dans le **menu créer**.|
+|Teams|L’utilisateur ne peut pas créer une équipe avec un nouveau groupe, mais il peut toujours créer une équipe qui utilise un groupe existant.<br><br>**Le bouton créer une équipe** est remplacé par **créer une équipe à partir d’un groupe**.|
 |Yammer|**Créer une** option de groupe est supprimé de la navigation groupes/communautés principaux.|
 
 ## <a name="services-interactions-with-groups"></a>Interactions entre les services et les groupes
@@ -123,8 +123,8 @@ Le tableau suivant fournit une vue d’ensemble des interactions entre les group
 |Project pour le web|Plan de projet|Oui|Oui|Non|
 |Feuille de route|Feuille de route|Oui|Oui|Non|
 |SharePoint|Site|Oui|Oui|Oui|
-|Flux|Canal, vidéo|Oui|Oui|Oui|
-|Équipes|Équipe|Non|Oui|Oui|
+|Stream|Canal, vidéo|Oui|Oui|Oui|
+|Teams|Équipe|Non|Oui|Oui|
 |Yammer|Group|Oui|Oui|Oui|
 
 Bien que le tableau ci-dessus offre une vue d’ensemble de haut niveau des interactions de groupe avec les services Microsoft 365, il existe un certain nombre de nuances et de subtilités que vous devez comprendre. Les sections suivantes présentent de façon plus approfondie les charges de travail spécifiques et leurs interactions avec les groupes.
@@ -165,7 +165,7 @@ Non, Azure AD est la plateforme sous-jacente où existent des groupes.
 
 La suppression du groupe dans Azure AD entraîne la suppression des services et du contenu associés au groupe appropriés.
 
-## <a name="teams"></a>Équipes
+## <a name="teams"></a>Teams
 
 Teams est un espace de travail centré sur la conversation visant à améliorer la collaboration en fournissant une interface singulière permettant d’interagir avec un grand nombre de services Microsoft et tiers.
 
@@ -566,7 +566,7 @@ Non, le site lui-même est associé au groupe, mais le contenu peut être dépla
 
 Oui, la suppression du site dans SharePoint entraîne la suppression des services et du contenu associés aux groupes et aux groupes.
 
-## <a name="stream"></a>Flux
+## <a name="stream"></a>Stream
 
 Microsoft Stream est une plateforme d’hébergement et de partage vidéo.
 
@@ -639,4 +639,10 @@ Non, le groupe Yammer ne peut être associé qu’au groupe Microsoft 365 auquel
 **La suppression du groupe Yammer supprime-t-elle le groupe Microsoft 365 ?**
 
 Oui, la suppression du groupe dans Yammer entraîne la suppression des services et du contenu associés au groupe et au groupe Microsoft.
+
+## <a name="related-topics"></a>Voir aussi
+
+[Planification de la gouvernance de collaboration étape par étape](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[Création de votre plan de gouvernance de collaboration](collaboration-governance-first.md)
 

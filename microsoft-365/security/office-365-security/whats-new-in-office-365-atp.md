@@ -20,12 +20,12 @@ ms.topic: conceptual
 ms.date: 10/09/2020
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
-ms.openlocfilehash: 01a5e374396b1f7ef79dff436cd9ecc4e0c4abf1
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: d219895767919c2a0658f8b83150fe6edde01b5b
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357236"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615551"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Nouveautés de Microsoft Defender pour Office 365
 
@@ -56,7 +56,7 @@ Cet article répertorie les nouvelles fonctionnalités de la dernière version d
 ## <a name="julyaugust-2020"></a>Juillet/août 2020
 
 - [Améliorations de l’expérience de la chasse](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections) (Microsoft Defender pour Office 365 plan 1 ou plan 2)
-- [Appliquer facilement les paramètres recommandés à l’aide de stratégies de sécurité prédéfinies](preset-security-policies.md) 
+- [Appliquer facilement les paramètres recommandés à l’aide de stratégies de sécurité prédéfinies](preset-security-policies.md)
 
 ## <a name="marchapril-2020"></a>Mars/avril 2020
 
@@ -71,7 +71,7 @@ Cet article répertorie les nouvelles fonctionnalités de la dernière version d
   - Options non Filter avancé (il s’agit d’options de filtrage avancées qui incluent ne pas inclure, pas, etc.)
   - Filtres de temps granulaire (jour, heure, demi-heure)
 
-- Le widget **incidents** est maintenant le widget **Centre de notifications** . (Pour afficher vos widgets de sécurité, dans le centre de sécurité & conformité, accédez à **gestion**  >  des menaces **Révision**.) (Microsoft Defender pour Office 365 plan 2)
+- Le widget **incidents** est maintenant le widget **Centre de notifications** . (Pour afficher vos widgets de sécurité, dans le centre de sécurité & conformité, accédez à **gestion** \> des menaces **Révision**.) (Microsoft Defender pour Office 365 plan 2)
 
 - [Documents approuvés dans Microsoft 365](safe-docs.md) **(version d’évaluation)**
 
@@ -93,7 +93,7 @@ Cet article répertorie les nouvelles fonctionnalités de la dernière version d
 
 - [Afficher les en-têtes des messages électroniques et télécharger le corps du message](investigate-malicious-email-that-was-delivered.md) (Microsoft Defender pour Office 365 plan 1 ou plan 2)
 
-## <a name="august-2019"></a>Août 2019
+## <a name="august-2019"></a>Août 2019
 
 - [Affichage de la chronologie de l’e-mail](investigate-malicious-email-that-was-delivered.md#view-the-timeline-of-your-email) (Microsoft Defender pour Office 365 plan 1 ou plan 2)
 
@@ -105,7 +105,7 @@ Cet article répertorie les nouvelles fonctionnalités de la dernière version d
 
 - [Affichez les données sur les URL d’hameçonnage et cliquez sur verdict](threat-explorer.md#view-data-about-phishing-urls-and-click-verdict) (Microsoft Defender pour Office 365 plan 1 ou plan 2)
 
-## <a name="microsoft-defender-for-office-365-plan-1-and-plan-2"></a>Microsoft Defender pour Office 365 Plan 1 et Plan 2
+## <a name="microsoft-defender-for-office-365-plan-1-and-plan-2"></a>Microsoft Defender pour Office 365 plan 1 et plan 2
 
 Saviez-vous que Microsoft Defender pour Office 365 est disponible dans deux plans ? [En savoir plus sur ce que chaque plan inclut](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2).
 

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: Découvrez comment contrôler quels utilisateurs peuvent créer des groupes Microsoft 365.
-ms.openlocfilehash: 3a0ac5ef48eabfd06e0df3f509c7d8e4be3cff10
-ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
+ms.openlocfilehash: 2954f68dce289d43b37bf8f5c6ff43fe1b5c48c7
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49602018"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613559"
 ---
 # <a name="manage-who-can-create-microsoft-365-groups"></a>Gérer les personnes autorisées à créer des groupes Microsoft 365
 
@@ -36,7 +36,7 @@ Si votre entreprise exige que vous restreigniez les personnes autorisées à cr�
 - Microsoft Teams
 - Microsoft Stream
 - Planificateur
-- PowerBI (classique)
+- Power BI (classique)
 - Projet pour le Web/feuille de route
 
 Vous pouvez restreindre la création de groupes Microsoft 365 aux membres d’un groupe de sécurité particulier. Pour configurer ce, utilisez Windows PowerShell. Cet article vous guide tout au long des étapes nécessaires.
@@ -167,7 +167,11 @@ Renouvelez la même procédure avec un membre du groupe de sécurité.
 > [!NOTE]
 > Si les membres du groupe de sécurité ne peuvent pas créer de groupes, vérifiez qu’ils ne sont pas bloqués via leur [stratégie de boîte aux lettres OWA](https://go.microsoft.com/fwlink/?linkid=852135).
 
-## <a name="related-articles"></a>Articles connexes
+## <a name="related-topics"></a>Voir aussi
+
+[Planification de la gouvernance de collaboration étape par étape](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[Création de votre plan de gouvernance de collaboration](collaboration-governance-first.md)
 
 [Mise en route d’Office 365 PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=808033)
 

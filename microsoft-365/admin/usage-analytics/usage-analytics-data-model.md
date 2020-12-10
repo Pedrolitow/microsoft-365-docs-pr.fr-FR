@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: 'Découvrez comment l’analyse de l’utilisation se connecte à une API et fournit une tendance mensuelle de l’utilisation des différents services Microsoft 365.  '
-ms.openlocfilehash: 9d13d979e64a68aaffb3582ad6b09ab901843cd4
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+ms.openlocfilehash: d7b3e7e9467a57f913f069c48249e82b5958aabb
+ms.sourcegitcommit: 039205fdaaa2a233ff7e95cd91bace474b84b68c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841374"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49611447"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Modèle de données d'analyse de l'utilisation de Microsoft 365
 
@@ -153,7 +153,7 @@ Ce tableau fournit des données d’adoption mensuelles sur le mois en termes d�
 |Product  <br/> |Nom des produits pour lesquels les informations d'utilisation sont synthétisées. La valeur Microsoft 365 dans la colonne Product représente l’activité de tous les produits  <br/> |
 |Timeframe  <br/> |Mois. La colonne contient une ligne par produit et par mois pour les 12 derniers mois, mois en cours compris.  <br/> |
 |EnabledUsers  <br/> |Nombre d’utilisateurs activés pour utiliser le produit pour la valeur de la période, si un utilisateur a été activé pour la partie du mois, il est toujours compté.  <br/> |
-|ActiveUsers  <br/> |Nombre d’utilisateurs ayant effectué une activité intentionnelle dans le produit pour la valeur de la période.  <br/> Un utilisateur est comptabilisé comme actif au cours d'un mois donné s'il a effectué une des activités clés à l'aide du produit. Les activités clés sont disponibles dans la table **Activité produit des locataires** .  <br/> |
+|ActiveUsers  <br/> |Nombre d’utilisateurs ayant effectué une activité intentionnelle dans le produit pour la valeur de la période.  <br/> Un utilisateur est comptabilisé comme actif au cours d'un mois donné s'il a effectué une des activités clés à l'aide du produit. Les activités clés sont disponibles dans la table **Activité produit des locataires**.  <br/> |
 |CumulativeActiveUsers  <br/> |Nombre d'utilisateurs activés pour utiliser un produit et ayant utilisé ce produit jusqu'au mois pris en compte au moins une fois depuis le début de la collecte des données dans le nouveau système d'utilisation.  <br/> |
 |MoMReturningUsers  <br/> |Nombre d'utilisateurs ayant été actifs au cours du mois pris en compte et qui étaient également actifs au cours du mois précédent.  <br/> |
 |FirstTimeUsers  <br/> |Nombre d'utilisateurs devenus actifs au cours de la période prise en compte pour la première fois depuis la collecte des données dans le nouveau système d'utilisation.  <br/> Un utilisateur est comptabilisé comme nouvel utilisateur au cours d'un mois donné si une activité de celui-ci est détectée pour la première fois depuis le début de la collecte des données dans le nouveau système de création de rapports. Une fois compté en tant qu’utilisateur pour la première fois, même si cet utilisateur a un grand intervalle dans son activité, il ne sera jamais compté en tant qu’utilisateur pour la première fois.  <br/> |
@@ -215,8 +215,8 @@ Cette table se compose de données de synthèse mensuelles sur l’utilisation o
 |DocumentCount  <br/> |Nombre total de documents qui existaient sur le site à la fin de la période prise en compte.  <br/> |
 |Dipland  <br/> |Somme de l'espace de stockage total utilisé à la fin de la période prise en compte, tous sites confondus.  <br/> |
 |ActivityType  <br/> |Nombre de sites ayant enregistré les différents types d'activité de fichier (tout/fichiers actifs/fichiers partagés en externe/fichiers partagés en interne/fichiers synchronisés).  <br/> Représente l’activité de fichier qui a été exécutée.  <br/> |
-|SitesWithOwnerActivities  <br/> |Nombre de sites actifs, où le propriétaire a effectué une activité de fichier particulière sur son propre site.  <br/> |
-|SitesWithNonOwnerActivities  <br/> |Somme des sites actifs du mois, où des utilisateurs autres que le propriétaire ont effectué une activité de fichier particulière.  <br/> |
+|SitesWithOwnerActivities  <br/> |Nombre de sites actifs, où le propriétaire a effectué une activité de fichier particulière sur son propre site. Vous pouvez obtenir le propriétaire du site à partir de la commande PowerShell **Get-sposite**. Il s’agit de la personne responsable du site.   <br/> |
+|SitesWithNonOwnerActivities  <br/> |Somme des sites actifs du mois, où des utilisateurs autres que le propriétaire ont effectué une activité de fichier particulière. Vous pouvez obtenir le propriétaire du site à partir de la commande PowerShell **Get-sposite**. Il s’agit de la personne responsable du site. <br/> |
 |ActivityTotalSites  <br/> |Nombre de sites ayant enregistré de l'activité au cours de la période prise en compte. Si un site a enregistré de l'activité plus tôt au cours de la période et qu'il a été supprimé à la fin de la période, il est malgré tout comptabilisé dans le total des sites actifs correspondant à cette période.  <br/> |
 |Timeframe  <br/> |Cette colonne comporte une date. Elle est utilisée en tant que relation multiunivoque dans la table Calendrier.  <br/> |
 |Content Date  <br/> |Si la période prise en compte est le mois en cours, cette valeur correspond à la date des données les plus récentes disponibles pour le mois en cours.  <br/> Si la période prise en compte est le mois précédent, cette valeur correspond à la date des données les plus récentes du mois précédent.  <br/> |

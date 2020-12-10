@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à afficher et à gérer les messages mis en quarantaine pour tous les utilisateurs dans Exchange Online Protection (EOP). Les administrateurs dans les organisations disposant de Microsoft Defender pour Office 365 peuvent également gérer les fichiers mis en quarantaine dans SharePoint Online, OneDrive entreprise et Microsoft Teams.
-ms.openlocfilehash: fed05ee202e4352200a80516e0ec1b62c8421178
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 8f4ca5caef9bf244315db2271011126ad4d7976e
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357132"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616775"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Gérer les messages et fichiers mis en quarantaine en tant qu’administrateur dans Exchange Online PowerShell
 
@@ -99,11 +99,11 @@ Vous pouvez afficher et gérer les messages mis en quarantaine dans le centre de
      - **Courrier indésirable**
      - **Hameçonnage à niveau de confiance élevé**
 
-   - **Type de stratégie** : filtrer les messages par type de stratégie :
+   - **Type de stratégie**: filtrer les messages par type de stratégie :
      - **Stratégie anti-programme malveillant**
      - **Stratégie de pièces jointes fiables**
      - **Stratégie anti-hameçonnage**
-     - **Stratégie de filtrage de contenu hébergé** (stratégie anti-courrier indésirable)
+     - **Stratégie de filtrage de contenu hébergé** (stratégie de blocage du courrier indésirable)
      - **Règle de transport**
 
    - **Destinataire du message**: tous les utilisateurs ou seulement les messages qui vous sont envoyés. Les utilisateurs finaux peuvent gérer uniquement les messages mis en quarantaine qui leur sont envoyés.
@@ -118,12 +118,12 @@ Vous pouvez afficher et gérer les messages mis en quarantaine dans le centre de
 
    - **Adresse e-mail de l'expéditeur** : adresse e-mail d'un seul expéditeur.
 
-   - **Nom de la stratégie** : utilisez le nom de stratégie complet indiqué dans le message. La recherche n’est pas sensible à la casse.
+   - **Nom** de la stratégie : utilisez le nom de la stratégie complète du message. La recherche n’est pas sensible à la casse.
 
    - **Adresse e-mail du destinataire** : adresse e-mail d'un seul destinataire.
 
    - **Sujet** : utiliser l'intégralité du sujet du message. La recherche n’est pas sensible à la casse.
-  
+
    - **Nom** de la stratégie : nom de la stratégie responsable de la mise en quarantaine du message.
 
    Après avoir entrer les critères de recherche, cliquez sur le ![Bouton actualiser](../../media/scc-quarantine-refresh.png) **Actualiser** pour filtrer les résultats.
@@ -165,7 +165,7 @@ Une fois que vous avez sélectionné un message, vous disposez de plusieurs opti
   - Choisissez l’une des options suivantes :
     - **Diffuser les messages à tous les destinataires**
     - **Publier des messages à des destinataires spécifiques**
-    - **Publier des messages à d’autres personnes**: Notez que la publication de messages malveillants pour des personnes autres que des destinataires d’origine n’est pas prise en charge. 
+    - **Publier des messages à d’autres personnes**: Notez que la publication de messages malveillants pour des personnes autres que des destinataires d’origine n’est pas prise en charge.
 
   Lorsque vous avez terminé, cliquez sur **Déplacer les messages**.
 

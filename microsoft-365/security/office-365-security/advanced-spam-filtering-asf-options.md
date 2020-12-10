@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur les paramètres de filtre de courrier indésirable avancés (ASF) disponibles dans les stratégies de blocage du courrier indésirable dans Exchange Online Protection (EOP).
-ms.openlocfilehash: f9295de6fb524cff16394d305ca9247d9f7ce07b
-ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
+ms.openlocfilehash: 3ac2b45cc03327f47bd73efe54e78312cbda4bb6
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49020926"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615251"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>Paramètres du filtre de courrier indésirable avancé (ASF) dans EOP
 
@@ -50,25 +50,25 @@ Les sections suivantes décrivent les paramètres et les options ASF disponibles
 
 Pour chaque paramètre ASF, les options suivantes sont disponibles dans les stratégies de blocage du courrier indésirable :
 
-- **Activé** : ASF ajoute le champ d’en-tête X correspondant au message et marque le message comme **courrier indésirable** (SCL 5 ou 6 pour [augmenter les paramètres de score de courrier indésirable](#increase-spam-score-settings)) ou courrier indésirable à **niveau de confiance élevé** (SCL 9 pour [marquer comme courrier indésirable](#mark-as-spam-settings)).
+- **Activé**: ASF ajoute le champ d’en-tête X correspondant au message et marque le message comme **courrier indésirable** (SCL 5 ou 6 pour [augmenter les paramètres de score de courrier indésirable](#increase-spam-score-settings)) ou courrier indésirable à **niveau de confiance élevé** (SCL 9 pour [marquer comme courrier indésirable](#mark-as-spam-settings)).
 
-- **Désactivé** : le paramètre ASF est désactivé. Il s’agit de la valeur par défaut, et nous vous recommandons de ne pas la modifier.
+- **Désactivé**: le paramètre ASF est désactivé. Il s’agit de la valeur par défaut, et nous vous recommandons de ne pas la modifier.
 
-- **Test** : ASF ajoute le champ d’en-tête X correspondant au message. Ce qu’il advient du message est déterminé par la valeur des **options de mode de test** ( *TestModeAction* ) :
+- **Test**: ASF ajoute le champ d’en-tête X correspondant au message. Ce qu’il advient du message est déterminé par la valeur des **options de mode de test** (*TestModeAction*) :
 
-  - **None** : la remise des messages n’est pas affectée par la détection ASF. Le message est toujours soumis à d’autres types de filtrage et de règles dans EOP.
+  - **None**: la remise des messages n’est pas affectée par la détection ASF. Le message est toujours soumis à d’autres types de filtrage et de règles dans EOP.
 
-  - **Ajouter un texte d’en-tête x par défaut ( *AddXHeader* )** : la valeur d’en-tête x `X-CustomSpam: This message was filtered by the custom spam filter option` est ajoutée au message. Vous pouvez utiliser cette valeur dans les règles de boîte de réception ou les règles de flux de messagerie (également appelées règles de transport) pour affecter la remise du message.
+  - **Ajouter un texte d’en-tête x par défaut (*AddXHeader*)**: la valeur d’en-tête x `X-CustomSpam: This message was filtered by the custom spam filter option` est ajoutée au message. Vous pouvez utiliser cette valeur dans les règles de boîte de réception ou les règles de flux de messagerie (également appelées règles de transport) pour affecter la remise du message.
 
-  - **Envoyer un message CCI ( *BccMessage* )** : les adresses de messagerie spécifiées (valeur du paramètre *TestModeBccToRecipients* dans PowerShell) sont ajoutées au champ CCI du message, et le message est remis aux destinataires CCI supplémentaires. Dans le centre de sécurité & conformité, séparez les adresses de messagerie par des points-virgules (;). Dans PowerShell, vous séparez plusieurs adresses de messagerie par des virgules.
+  - **Envoyer un message CCI (*BccMessage*)**: les adresses de messagerie spécifiées (valeur du paramètre *TestModeBccToRecipients* dans PowerShell) sont ajoutées au champ CCI du message, et le message est remis aux destinataires CCI supplémentaires. Dans le centre de sécurité & conformité, séparez les adresses de messagerie par des points-virgules (;). Dans PowerShell, vous séparez plusieurs adresses de messagerie par des virgules.
 
-  **Remarques** :
+  **Remarques** :
 
   - Le mode test n’est pas disponible pour les paramètres ASF suivants :
 
-    - **Filtrage des ID de l’expéditeur conditionnel : échec matériel** ( *MarkAsSpamFromAddressAuthFail* )
-    - Notification de **non-remise rétrodiffusion** ( *MarkAsSpamNdrBackscatter* )
-    - **Enregistrement SPF : échec matériel** ( *MarkAsSpamSpfRecordHardFail* )
+    - **Filtrage des ID de l’expéditeur conditionnel : échec matériel** (*MarkAsSpamFromAddressAuthFail*)
+    - Notification de **non-remise rétrodiffusion**(*MarkAsSpamNdrBackscatter*)
+    - **Enregistrement SPF : échec matériel** (*MarkAsSpamSpfRecordHardFail*)
 
   - La même action de mode test est appliquée à *tous les* paramètres ASF définis sur **test**. Vous ne pouvez pas configurer différentes actions de mode test pour différents paramètres ASF.
 
@@ -100,9 +100,9 @@ Les paramètres ASF suivants définissent la valeur SCL des messages détectés 
 |**Balises Object dans le code HTML** <p> *MarkAsSpamObjectTagsInHtml*|Les messages qui contiennent `<object>` des balises HTML sont marqués comme courrier indésirable à confiance élevée. <p> Cette balise permet aux plug-ins ou aux applications de s’exécuter dans une fenêtre HTML.|`X-CustomSpam: Object tag in html`|
 |**Balises Embed dans le code HTML** <p> *MarkAsSpamEmbedTagsInHtml*|Le message contenant `<embed>` des balises HTML est marqué comme courrier indésirable à niveau de confiance élevé. <p> Cette balise permet l’incorporation de différents types de documents dans un document HTML (par exemple, des sons, des vidéos ou des images).|`X-CustomSpam: Embed tag in html`|
 |**Balises Form dans le code HTML** <p> *MarkAsSpamFormTagsInHtml*|Les messages qui contiennent `<form>` des balises HTML sont marqués comme courrier indésirable à confiance élevée. <p> Cette balise est utilisée pour créer des formulaires de site Web. Les publicités électroniques utilisent souvent cette balise pour demander des informations au destinataire.|`X-CustomSpam: Form tag in html`|
-|**Bogues web dans le code HTML** <p> *MarkAsSpamWebBugsInHtml*|Un *bug Web* (également appelé « *balise Web* ») est un élément graphique (souvent aussi petit qu’un pixel d’un pixel) utilisé dans les messages électroniques pour déterminer si le message a été lu par le destinataire. <p> Les messages contenant des bogues Web sont marqués comme courrier indésirable à fiabilité élevée. <p> Les bulletins d’information légitimes peuvent utiliser des bogues Web, bien que de nombreux considèrent cette atteinte à la vie privée. |`X-CustomSpam: Web bug`|
+|**Bogues web dans le code HTML** <p> *MarkAsSpamWebBugsInHtml*|Un *bug Web* (également appelé « *balise Web*») est un élément graphique (souvent aussi petit qu’un pixel d’un pixel) utilisé dans les messages électroniques pour déterminer si le message a été lu par le destinataire. <p> Les messages contenant des bogues Web sont marqués comme courrier indésirable à fiabilité élevée. <p> Les bulletins d’information légitimes peuvent utiliser des bogues Web, bien que de nombreux considèrent cette atteinte à la vie privée. |`X-CustomSpam: Web bug`|
 |**Appliquer la liste de mots sensibles** <p> *MarkAsSpamSensitiveWordList*|Microsoft gère une liste dynamique, mais non modifiable, de mots qui sont associés à des messages potentiellement choquants. <p> Les messages qui contiennent des mots de la liste de mots sensibles dans l’objet ou le corps du message sont marqués comme courrier indésirable à niveau de confiance élevé.|`X-CustomSpam: Sensitive word in subject/body`|
 |**Enregistrement SPF : échec sévère** <p> *MarkAsSpamSpfRecordHardFail*|Les messages envoyés à partir d’une adresse IP qui n’est pas spécifiée dans l’enregistrement SPF (Sender Policy Framework) de DNS pour le domaine de messagerie source sont marqués comme courrier indésirable à confiance élevée. <p> Le mode test n’est pas disponible pour ce paramètre.|`X-CustomSpam: SPF Record Fail`|
 |**Filtrage conditionnel de l'ID de l'expéditeur : échec sévère** <p> *MarkAsSpamFromAddressAuthFail*|Les messages qui échouent à la vérification de l’ID de l’expéditeur conditionnel sont marqués comme courrier indésirable. <p> Ce paramètre associe un contrôle SPF à une vérification de l’ID de l’expéditeur pour vous protéger des en-têtes de message contenant des expéditeurs falsifiés. <p> Le mode test n’est pas disponible pour ce paramètre.|`X-CustomSpam: SPF From Record Fail`|
-|**Rétrodiffusion de rapport de non-remise** <p> *MarkAsSpamNdrBackscatter*|*Rétrodiffusion* est des notifications d’échec de remise inutiles (également appelées notifications de non-remise) causées par des expéditeurs falsifiés dans les messages électroniques. Pour plus d’informations, consultez la rubrique [messages rétrodiffusion et EOP](backscatter-messages-and-eop.md). <p> Vous n’avez pas besoin de configurer ce paramètre dans les environnements suivants, car les notifications d’échec de remise légitimes sont remises et rétrodiffusion est marqué comme courrier indésirable : <ul><li>Organisations Microsoft 365 avec des boîtes aux lettres Exchange Online.</li><li>Les organisations de messagerie locales dans lesquelles vous acheminez les messages *sortants* via EOP.</li></ul><br/> Dans les environnements EOP autonomes qui protègent les messages électroniques entrants en boîtes aux lettres locales, l’activation ou la désactivation de ce paramètre a les résultats suivants : <ul><li> **Activé** : les notifications d’échec de remise légitimes sont remises et rétrodiffusion est marqué comme courrier indésirable.</li><li>**Désactivé** : les notifications d’échec de remise et les rétrodiffusion légitimes passent par un filtrage normal. La plupart des notifications d’échec de remise légitimes seront envoyées à l’expéditeur du message d’origine. Certains rétrodiffusion, mais pas tous, sont marqués comme courrier indésirable à fiabilité élevée. Par définition, rétrodiffusion peut uniquement être remis à l’expéditeur usurpé, et non à l’expéditeur d’origine.</li></ul><br/> Le mode test n’est pas disponible pour ce paramètre.|`X-CustomSpam: Backscatter NDR`|
+|**Rétrodiffusion de rapport de non-remise** <p> *MarkAsSpamNdrBackscatter*|*Rétrodiffusion* est des notifications d’échec de remise inutiles (également appelées notifications de non-remise) causées par des expéditeurs falsifiés dans les messages électroniques. Pour plus d’informations, consultez la rubrique [messages rétrodiffusion et EOP](backscatter-messages-and-eop.md). <p> Vous n’avez pas besoin de configurer ce paramètre dans les environnements suivants, car les notifications d’échec de remise légitimes sont remises et rétrodiffusion est marqué comme courrier indésirable : <ul><li>Organisations Microsoft 365 avec des boîtes aux lettres Exchange Online.</li><li>Les organisations de messagerie locales dans lesquelles vous acheminez les messages *sortants* via EOP.</li></ul> <p> Dans les environnements EOP autonomes qui protègent les messages électroniques entrants en boîtes aux lettres locales, l’activation ou la désactivation de ce paramètre a les résultats suivants : <ul><li> **Activé**: les notifications d’échec de remise légitimes sont remises et rétrodiffusion est marqué comme courrier indésirable.</li><li>**Désactivé**: les notifications d’échec de remise et les rétrodiffusion légitimes passent par un filtrage normal. La plupart des notifications d’échec de remise légitimes seront envoyées à l’expéditeur du message d’origine. Certains rétrodiffusion, mais pas tous, sont marqués comme courrier indésirable à fiabilité élevée. Par définition, rétrodiffusion peut uniquement être remis à l’expéditeur usurpé, et non à l’expéditeur d’origine.</li></ul> <p> Le mode test n’est pas disponible pour ce paramètre.|`X-CustomSpam: Backscatter NDR`|
 |

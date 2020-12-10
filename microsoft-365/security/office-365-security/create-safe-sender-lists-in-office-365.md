@@ -16,12 +16,12 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur les options disponibles et préférées pour autoriser les messages entrants dans Exchange Online Protection (EOP).
-ms.openlocfilehash: 6d862f0ed6d6bbea56cb2bb79fee69a044e4fede
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 71c413cdf3f9a189420c33953d7bce41362ab6a9
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49130792"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616631"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Créer des listes d’expéditeurs approuvés dans EOP
 
@@ -61,12 +61,12 @@ L’exemple suivant suppose que vous avez besoin d’un courrier électronique d
 
 2. Configurez l’un des paramètres suivants :
 
-   - **Condition de règle de flux de messagerie**: **un en-tête** \> **de message inclut l’un de ces mots nom d'** en-tête : valeur d' \> **Header name** `Authentication-Results` \> **en-tête**: `dmarc=pass` ou `dmarc=bestguesspass` .
+   - **Condition de règle de flux de messagerie**: **un en-tête** \> **de message inclut l’un de ces mots nom d'** en-tête : valeur d' \>  `Authentication-Results` \> **en-tête**: `dmarc=pass` ou `dmarc=bestguesspass` .
 
      Cette condition vérifie l’état d’authentification de messagerie du domaine de messagerie d’envoi pour s’assurer que le domaine d’envoi n’est pas usurpé. Pour plus d’informations sur l’authentification de messagerie, voir [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md)et [DMARC](use-dmarc-to-validate-email.md).
 
    - **Liste d’adresses IP autorisées**: spécifiez l’adresse IP source ou la plage d’adresses dans la stratégie de filtrage des connexions.
-  
+
      Utilisez ce paramètre si le domaine d’envoi n’utilise pas l’authentification de messagerie. Être aussi restrictif que possible lorsqu’il s’agit des adresses IP source dans la liste d’adresses IP autorisées. Nous vous recommandons d’utiliser une plage d’adresses IP supérieure ou égale à 24 (moins est préférable). N’utilisez pas de plages d’adresses IP appartenant à des services grand public (par exemple, outlook.com) ou à des infrastructures partagées.
 
    > [!IMPORTANT]
@@ -105,7 +105,7 @@ Lorsque les messages ignorent le filtrage du courrier indésirable en raison de 
 
 Si vous ne pouvez pas utiliser les règles de flux de messagerie comme décrit précédemment, la meilleure solution consiste à ajouter le ou les serveurs de messagerie source à la liste d’adresses IP autorisées dans la stratégie de filtrage des connexions. Pour plus d’informations, consultez la rubrique [Configure connection Filtering in EOP](configure-the-connection-filter-policy.md).
 
-**Remarques**:
+**Remarques** :
 
 - Il est important de conserver le nombre d’adresses IP autorisées à un minimum, donc d’éviter d’utiliser des plages d’adresses IP entières dès que possible.
 

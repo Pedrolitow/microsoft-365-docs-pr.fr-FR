@@ -1,5 +1,5 @@
 ---
-title: Suivi des messages dans le centre de conformité et de sécurité
+title: Suivi des messages dans le Centre de sécurité et de conformité
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -13,14 +13,14 @@ ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent utiliser le suivi des messages dans le centre de sécurité & conformité afin de déterminer ce qui s’est passé aux messages.
-ms.openlocfilehash: 1e9f5e21655e55f711997defcb7ace0319ff4be6
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 46aa454ff709e9b17c3b18992757a9a4c3a51247
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197536"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616751"
 ---
-# <a name="message-trace-in-the-security--compliance-center"></a>Suivi des messages dans le centre de conformité et de sécurité
+# <a name="message-trace-in-the-security--compliance-center"></a>Suivi des messages dans le Centre de sécurité et de conformité
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -63,10 +63,13 @@ Les valeurs par défaut sont **tous les expéditeurs** et **tous les destinatair
 
 - **Par ces personnes**: cliquez dans ce champ pour sélectionner un ou plusieurs expéditeurs de votre organisation. Vous pouvez également commencer à taper un nom et les éléments de la liste seront filtrés en fonction de ce que vous avez tapé, de la même manière qu’une page de recherche.
 
-- **Pour les personnes**suivantes : cliquez dans ce champ pour sélectionner un ou plusieurs destinataires dans votre organisation.
+- **Pour les personnes** suivantes : cliquez dans ce champ pour sélectionner un ou plusieurs destinataires dans votre organisation.
 
 > [!NOTE]
-> Vous pouvez également taper les adresses de messagerie des expéditeurs et des destinataires externes. Les caractères génériques sont pris en charge (par exemple, `*@contoso.com` ), mais vous ne pouvez pas utiliser plusieurs entrées génériques dans le même champ simultanément. <br/><br/> Vous pouvez coller plusieurs listes d’expéditeurs ou de destinataires en les séparant par des points-virgules ( `;` ). espaces ( `\s` ), retours chariot ( `\r` ) ou lignes suivantes ( `\n` ).
+>
+> - Vous pouvez également taper les adresses de messagerie des expéditeurs et des destinataires externes. Les caractères génériques sont pris en charge (par exemple, `*@contoso.com` ), mais vous ne pouvez pas utiliser plusieurs entrées génériques dans le même champ simultanément.
+>
+> - Vous pouvez coller plusieurs listes d’expéditeurs ou de destinataires en les séparant par des points-virgules ( `;` ). espaces ( `\s` ), retours chariot ( `\r` ) ou lignes suivantes ( `\n` ).
 
 ### <a name="time-range"></a>Plage horaire
 
@@ -108,7 +111,7 @@ Vous pouvez laisser la valeur par défaut **tous** sélectionnée ou vous pouvez
 
 - **Obtention de l’État :** Le message a été récemment reçu par Microsoft 365, mais aucune autre donnée d’État n’est encore disponible. Vérifiez de nouveau dans quelques minutes.
 
-**Remarque**: les valeurs **en attente,** **mises en quarantaine**et **filtrées en tant que courrier indésirable** sont uniquement disponibles pour les recherches de moins de 10 jours. De plus, il peut y avoir un délai de 5 à 10 minutes entre l’état de remise réel et signalé.
+**Remarque**: les valeurs **en attente,** **mises en quarantaine** et **filtrées en tant que courrier indésirable** sont uniquement disponibles pour les recherches de moins de 10 jours. De plus, il peut y avoir un délai de 5 à 10 minutes entre l’état de remise réel et signalé.
 
 #### <a name="message-id"></a>ID de message
 
@@ -134,7 +137,7 @@ Les types de rapports disponibles sont les suivants :
 
 - **Résumé**: disponible si l’intervalle de temps est inférieur à 10 jours et ne requiert aucune option de filtrage supplémentaire. Les résultats sont disponibles presque immédiatement après que vous avez cliqué sur **Rechercher**. Le rapport renvoie jusqu’à 20000 résultats.
 
-- **Résumé amélioré** ou **étendu**: ces rapports sont disponibles uniquement sous forme de fichiers CSV téléchargeables et nécessitent une ou plusieurs des options de filtrage **suivantes, quelle**que soit la plage horaire : **par ces personnes**, ou **ID de message**. Vous pouvez utiliser des caractères génériques pour les expéditeurs ou les destinataires (par exemple, \* @contoso. com). Le rapport de synthèse améliorée renvoie jusqu’à 50000 résultats. Le rapport étendu renvoie jusqu’à 1000 résultats.
+- **Résumé amélioré** ou **étendu**: ces rapports sont disponibles uniquement sous forme de fichiers CSV téléchargeables et nécessitent une ou plusieurs des options de filtrage **suivantes, quelle** que soit la plage horaire : **par ces personnes**, ou **ID de message**. Vous pouvez utiliser des caractères génériques pour les expéditeurs ou les destinataires (par exemple, \* @contoso. com). Le rapport de synthèse améliorée renvoie jusqu’à 50000 résultats. Le rapport étendu renvoie jusqu’à 1000 résultats.
 
 **Remarques** :
 
@@ -174,7 +177,7 @@ Vous pouvez cliquer sur les en-têtes de colonne pour trier les résultats en fo
 
 Vous pouvez cliquer sur **Filtrer les résultats** pour filtrer les résultats par une ou plusieurs colonnes.
 
-Vous pouvez exporter les résultats une fois que vous avez sélectionné une ou plusieurs lignes en cliquant sur **Exporter les résultats** , puis en sélectionnant **exporter tous les résultats**, **Exporter les résultats chargés**ou **Exporter la sélection**.
+Vous pouvez exporter les résultats une fois que vous avez sélectionné une ou plusieurs lignes en cliquant sur **Exporter les résultats** , puis en sélectionnant **exporter tous les résultats**, **Exporter les résultats chargés** ou **Exporter la sélection**.
 
 #### <a name="find-related-records-for-this-message"></a>Rechercher des enregistrements associés pour ce message
 
@@ -236,7 +239,7 @@ Les rapports de synthèse (terminé) disponibles sont disponibles dans la sectio
 
 - **origin_timestamp** <sup>*</sup> : date et heure de réception initiale du message par le service, à l’aide du fuseau horaire UTC configuré.
 
-- **sender_address**: adresse de messagerie de l’expéditeur (*alias*de @ *domaine*).
+- **sender_address**: adresse de messagerie de l’expéditeur (*alias* de @ *domaine*).
 
 - **Recipient_status**: état de la remise du message au destinataire. Si le message a été envoyé à plusieurs destinataires, il affiche tous les destinataires et l’état correspondant pour chacun, au format : \<*email address*\> ## \<*status*\> . Par exemple :
 
@@ -260,9 +263,9 @@ Les rapports de synthèse (terminé) disponibles sont disponibles dans la sectio
 
 - **connector_id**: nom du connecteur source ou de destination. Pour plus d’informations sur les connecteurs dans Exchange Online, consultez la rubrique [configure mail Flow using Connectors in Office 365](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
 
-- **delivery_priority** <sup>*</sup> : indique si le message a été envoyé avec **une priorité élevée**, **faible**ou **normale** .
+- **delivery_priority** <sup>*</sup> : indique si le message a été envoyé avec **une priorité élevée**, **faible** ou **normale** .
 
-<sup>*</sup>Ces propriétés sont disponibles uniquement dans les rapports de synthèse étendus.
+<sup>*</sup> Ces propriétés sont disponibles uniquement dans les rapports de synthèse étendus.
 
 ### <a name="extended-reports"></a>Rapports étendus
 

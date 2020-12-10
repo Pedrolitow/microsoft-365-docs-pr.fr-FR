@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Découvrez les options de conformité pour les groupes, les équipes et la collaboration SharePoint de Microsoft 365.
-ms.openlocfilehash: 0383b0728d9b8ea12ce75de8bf0e250932d14ae5
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: e1ca6e638b2d44ae3b04e2a0f13222424e89714d
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377532"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613629"
 ---
 # <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>Options de conformité pour les groupes Microsoft 365, teams et collaboration SharePoint
 
@@ -113,8 +113,10 @@ Avec des barrières d’informations, vous pouvez segmenter vos données et util
 
 ## <a name="related-topics"></a>Voir aussi
 
+[Planification de la gouvernance de collaboration étape par étape](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[Création de votre plan de gouvernance de collaboration](collaboration-governance-first.md)
+
 [Sécurité et conformité pour Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/security-and-compliance)
 
 [Protéger les informations](https://docs.microsoft.com/microsoft-365/compliance/protect-information)
-
-

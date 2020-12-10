@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Cet article fournit des informations sur la résolution des problèmes liés à l’envoi de messages électroniques à des boîtes de réception dans Microsoft 365 & meilleures pratiques pour le publipostage vers les clients Microsoft 365.
-ms.openlocfilehash: 895f2651529cd46968d053fefac10cb22b6a5d86
-ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
+ms.openlocfilehash: 8b7c008f827a579e234d8a8feab008d36ecfe064
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49568553"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615407"
 ---
 # <a name="troubleshooting-mail-sent-to-microsoft-365"></a>Résolution des problèmes d’e-mails envoyés à Microsoft 365
 
@@ -92,11 +92,11 @@ L'Objet doit être un bref résumé du contenu du message, et le corps du messag
 
 Correct :
 
-> De : marketing@shoppershandbag.com <br/> Objet : catalogue mis à jour pour la saison de Noël !
+> De : marketing@shoppershandbag.com <br> Objet : catalogue mis à jour pour la saison de Noël !
 
 Incorrect :
 
-> De : someone@outlook.com <br/> Objet : Catalogues
+> De : someone@outlook.com <br> Objet : Catalogues
 
 Plus vous vous présentez et décrivez ce que vous faites de façon claire, moins vos courriers seront bloqués par la plupart des filtres anti-spam.
 

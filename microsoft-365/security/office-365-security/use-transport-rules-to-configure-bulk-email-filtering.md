@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à utiliser des règles de flux de messagerie (règles de transport) pour identifier et filtrer les messages en masse (courrier gris) dans Exchange Online Protection (EOP).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 82a93cdc7375468748f241e2d15d729811095330
-ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
+ms.openlocfilehash: 1f88358973648846d650700bb5939c052851c789
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48600308"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615635"
 ---
 # <a name="use-mail-flow-rules-to-filter-bulk-email-in-eop"></a>Utiliser des règles de flux de courriers pour filtrer les e-mails en bloc dans EOP
 
@@ -39,7 +39,7 @@ Cette rubrique explique comment créer ces règles de flux de messagerie dans le
 - Pour pouvoir effectuer ces procédures, vous devez disposer des autorisations suivantes :
 
   - Dans Exchange Online, consultez l’entrée « flux de messagerie » dans [autorisations des fonctionnalités dans Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/feature-permissions).
-  
+
   - Dans EOP autonome, vous avez besoin du rôle de règles de transport, qui est affecté par défaut aux rôles OrganizationManagement, ComplianceManagement et RecordsManagement. Pour plus d’informations, consultez la rubrique [autorisations dans EOP autonome](feature-permissions-in-eop.md) et utiliser le centre d’administration Exchange pour [modifier la liste des membres dans les groupes de rôles](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
 - Pour ouvrir le centre d’administration Exchange dans Exchange Online, consultez la rubrique [Exchange Admin Center in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center). Pour ouvrir le centre d’administration Exchange en mode autonome EOP, consultez la rubrique [Exchange Admin Center in standalone EOP](exchange-admin-center-in-exchange-online-protection-eop.md).
@@ -93,7 +93,7 @@ Cette rubrique explique comment créer ces règles de flux de messagerie dans le
 
        Lorsque vous avez terminé, cliquez sur **OK**.
 
-     - **L’objet ou le corps** \> **Subject ou Body comprend l’un des mots**suivants : dans la boîte de dialogue **spécifier des mots ou des expressions** qui s’affiche, entrez l’une des valeurs suivantes, puis cliquez sur **Ajouter** une ![ icône Ajouter ](../../media/ITPro-EAC-AddIcon.png) et répétez l’opération jusqu’à ce que vous ayez entré toutes les valeurs.
+     - **L’objet ou le corps** \> **Subject ou Body comprend l’un des mots** suivants : dans la boîte de dialogue **spécifier des mots ou des expressions** qui s’affiche, entrez l’une des valeurs suivantes, puis cliquez sur **Ajouter** une ![ icône Ajouter ](../../media/ITPro-EAC-AddIcon.png) et répétez l’opération jusqu’à ce que vous ayez entré toutes les valeurs.
 
        - `to change your preferences or unsubscribe`
        - `Modify email preferences or unsubscribe`
@@ -149,7 +149,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Pour vérifier que vous avez configuré les règles de flux de messagerie pour filtrer les messages électroniques en masse, effectuez l’une des opérations suivantes :
 
-- Dans le centre d’administration Exchange, accédez à règles de **flux de messagerie** \> **Rules** \> Sélectionnez la règle \> , cliquez sur **modifier** ![ l’icône d’édition ](../../media/ITPro-EAC-EditIcon.png) et vérifiez les paramètres.
+- Dans le centre d’administration Exchange, accédez à règles de **flux de messagerie** \>  \> Sélectionnez la règle \> , cliquez sur **modifier** ![ l’icône d’édition ](../../media/ITPro-EAC-EditIcon.png) et vérifiez les paramètres.
 
 - Dans PowerShell, remplacez \<Rule Name\> par le nom de la règle, puis exécutez la commande suivante pour vérifier les paramètres :
 

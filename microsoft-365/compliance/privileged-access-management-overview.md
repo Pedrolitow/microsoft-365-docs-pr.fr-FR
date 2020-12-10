@@ -1,12 +1,13 @@
 ---
-title: Gestion des accès privilégiés
-f1.keywords:
-- NOCSH
+title: En savoir plus sur la gestion des accès privilégiés
+description: Cet article fournit une vue d’ensemble sur la gestion des accès privilégiés dans Microsoft 365, y compris les réponses aux questions fréquemment posées (FAQ).
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: overview
+f1.keywords:
+- NOCSH
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -19,16 +20,14 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 - seo-marvel-apr2020
-ms.assetid: ''
-description: Cet article fournit une vue d’ensemble sur la gestion des accès privilégiés dans Microsoft 365, y compris les réponses aux questions fréquemment posées (FAQ).
-ms.openlocfilehash: a1bcf1fbe767b4657be8a8ebcc8bf7b101c498d8
-ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
+ms.openlocfilehash: dc7c6807e8c89b4146784e5be7f57472777a4c84
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48341232"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613328"
 ---
-# <a name="privileged-access-management"></a>Gestion des accès privilégiés
+# <a name="learn-about-privileged-access-management"></a>En savoir plus sur la gestion des accès privilégiés
 
 La gestion des accès privilégiés permet de contrôler l’accès de manière granulaire sur les tâches d’administration privilégiée dans Office 365. Elle peut faciliter la protection de votre organisation contre des violations utilisant les comptes d’administration privilégiés existants avec un accès permanent aux données sensibles ou un accès aux paramètres de configuration critiques. La gestion des accès privilégiés demande aux utilisateurs de demander un accès juste-à-temps pour effectuer des tâches élevées et privilégiées par le biais d’un flux de travail d’approbation à forte échelle de temps. Cette configuration permet aux utilisateurs d’effectuer la tâche particulière, sans risque d’exposition aux données sensibles ou aux paramètres de configuration critiques. L’activation de la gestion des accès privilégiés dans Microsoft 365 permet à votre organisation de fonctionner avec des privilèges permanents et de fournir une couche de défense contre les vulnérabilités d’accès administratif permanentes.
 

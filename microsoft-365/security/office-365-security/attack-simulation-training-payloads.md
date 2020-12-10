@@ -11,14 +11,14 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Découvrez comment créer une charge utile personnalisée pour la formation à la simulation d’attaque dans Microsoft Defender pour Office 365.
-ms.openlocfilehash: ffb5397d9b39a35b4cb8bd0fdb3301cd156896e1
-ms.sourcegitcommit: dab50e1cc5bba920720b80033c93457f5ca1c330
+ms.openlocfilehash: a8366e6cbf703ef1e1a14e216ada71200668cd14
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "48944519"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616271"
 ---
-# <a name="create-a-custom-payload-for-attack-simulation-training"></a>Créer une charge utile personnalisée pour la formation à la simulation d’attaque
+# <a name="create-a-custom-payload-for-attack-simulation-training"></a>Créer une charge personnalisée pour une formation à la simulation d’attaque
 
 Microsoft propose un catalogue de charges utiles robuste pour les différentes techniques d’ingénierie sociale à associer à votre formation à la simulation d’attaque. Toutefois, vous pouvez créer des charges utiles personnalisées qui fonctionneront mieux pour votre organisation. Les rubriques suivantes décrivent comment créer une charge utile dans la formation à la simulation d’attaque via Microsoft Defender pour Office 365.
 
@@ -60,7 +60,7 @@ Ajoutez une description personnalisée pour décrire l’indicateur et cliquez d
 
 ## <a name="review-payload"></a>Examiner la charge utile
 
-Vous avez fini de créer votre charge utile. À présent, il est temps de passer en revue les détails et d’afficher un aperçu de votre charge utile. L’aperçu inclut tous les indicateurs que vous avez créés. Vous pouvez modifier chaque partie de la charge utile à partir de cette étape. Une fois satisfait, **envoyez** votre charge utile. 
+Vous avez fini de créer votre charge utile. À présent, il est temps de passer en revue les détails et d’afficher un aperçu de votre charge utile. L’aperçu inclut tous les indicateurs que vous avez créés. Vous pouvez modifier chaque partie de la charge utile à partir de cette étape. Une fois satisfait, **envoyez** votre charge utile.
 
 > [!IMPORTANT]
 > Le **client** sera défini comme source pour les charges que vous avez créées. Lors de la sélection des charges utiles, vérifiez que le **client** n’est pas filtré.

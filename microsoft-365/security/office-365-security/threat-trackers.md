@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: En savoir plus sur les suivis de menace, y compris les nouveaux suivis, pour aider votre organisation à répondre aux préoccupations de sécurité.
-ms.openlocfilehash: e173bb2b4ee6e7c54c7414c7f102d8c4d1d06641
-ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
+ms.openlocfilehash: 551f5704337ef8989fd1568854822bc1d9d4c14b
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49568455"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615455"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Suivi des menaces-nouveautés et remarquables
 
@@ -46,7 +46,7 @@ La plupart des pages de suivi incluent des numéros de tendance mis à jour rég
 
 Les suivis ne sont qu’une partie des nombreuses fonctionnalités de [Microsoft Defender pour Office 365 plan 2](office-365-ti.md). Les analyseurs de menace incluent les [suivis Noteworth](#noteworthy-trackers), les [suivis des tendances](#trending-trackers), les [requêtes suivies](#tracked-queries)et les [requêtes enregistrées](#saved-queries).
 
-Pour afficher et utiliser vos suivis de menace pour votre organisation, accédez au centre de sécurité & conformité ( [https://protection.office.com](https://protection.office.com) ) et sélectionnez **Threat Management** \> **Threat Tracker**.
+Pour afficher et utiliser vos suivis de menace pour votre organisation, accédez au centre de sécurité & conformité ( <https://protection.office.com> ) et sélectionnez **Threat Management** \> **Threat Tracker**.
 
 > [!NOTE]
 > Pour utiliser les suivis des menaces, vous devez être un administrateur général, un administrateur de sécurité ou un lecteur de sécurité. Consultez [la rubrique autorisations dans le centre de sécurité & conformité](permissions-in-the-security-and-compliance-center.md).

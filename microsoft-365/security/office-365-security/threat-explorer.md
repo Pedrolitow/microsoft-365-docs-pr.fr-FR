@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Découvrez comment utiliser l’Explorateur et les détections en temps réel dans le centre de sécurité & conformité pour examiner et répondre efficacement aux menaces.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 021810a4d64dc3a8d9089a3b7174a1b5f536745a
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: 4328bfc52497f911c57256f8366b3742523b17b0
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561398"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615563"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorateur de menaces et détections en temps réel
 
@@ -67,7 +67,7 @@ La colonne de balises affichée dans la grille du courrier électronique contien
 
 Nous avons maintenant des balises en tant que filtre afin de pouvoir Rechercher simplement des comptes de priorité ou des scénarios de balises utilisateur spécifiques (et même exclure les résultats avec certaines balises dans le cadre de cette expérience). La combinaison de ces éléments avec les autres filtres que nous fournissons vous aidera à limiter votre étendue d’enquête.
 
-[![Balises ](../../media/tags-filter-normal.png) de filtre](../../media/tags-filter-normal.png#lightbox)
+[![Balises de filtre](../../media/tags-filter-normal.png)](../../media/tags-filter-normal.png#lightbox)
 
 > [!div class="mx-imgBorder"]
 > ![Balises not filter](../../media/tags-filter-not.png)
@@ -149,7 +149,7 @@ Les actions supplémentaires consistent en des actions appliquées après la rem
 > - Il y aura de nouveaux champs et valeurs pour les technologies de détection et des actions supplémentaires (en particulier pour les scénarios ZAP). Évaluez vos requêtes sauvegardées existantes et les requêtes suivies afin de vous assurer qu’elles fonctionnent avec les nouvelles valeurs.
 
 > [!div class="mx-imgBorder"]
-> ![Additional_Actions](../../media/Additional_Actions.png)
+> ![Actions supplémentaires dans l’Explorateur](../../media/Additional_Actions.png)
 
 ### <a name="system-overrides"></a>Substitutions système
 
@@ -161,10 +161,10 @@ Les substitutions système sont une méthode permettant de faire des exceptions 
 - Bloqué par la stratégie d’organisation : c’est lorsque les équipes de sécurité de l’organisation définissent des stratégies ou des règles de flux de messagerie pour bloquer les expéditeurs, les domaines, les langues de message ou les adresses IP source pour les utilisateurs au sein de leur organisation. Il peut également s’agir d’un ensemble d’utilisateurs ou de l’ensemble de l’organisation.
 - Extension de fichier bloquée par la stratégie d’organisation : c’est lorsqu’une extension de type de fichier est bloquée par les équipes de sécurité d’une organisation par le biais des paramètres de stratégie anti-programme malveillant. Ces valeurs apparaissent maintenant dans les détails du courrier électronique pour vous aider à effectuer des recherches. Les équipes de secopss peuvent également filtrer sur les extensions de fichiers bloquées à l’aide de la fonctionnalité de filtrage enrichie.
 
-[![System_Overrides ](../../media/System_Overrides.png)](../../media/System_Overrides.png#lightbox)
+[![Substitutions système dans l’Explorateur](../../media/System_Overrides.png)](../../media/System_Overrides.png#lightbox)
 
 > [!div class="mx-imgBorder"]
-> ![System_Overrides_Grid](../../media/System_Overrides_Grid.png)
+> ![Le système remplace la grille dans l’Explorateur](../../media/System_Overrides_Grid.png)
 
 ### <a name="improvements-around-url-and-clicks-experience"></a>Améliorations concernant l’expérience de l’URL et des clics
 
@@ -184,7 +184,7 @@ Les améliorations apportées aux données sur les URL et les URL sont les suiva
 
 Le niveau de confiance d’hameçonnage aide à identifier le degré de confiance, avec lequel un courrier électronique a été catégorisé comme hameçonnage. Les deux valeurs possibles sont High et normal. Au cours des étapes initiales, ce filtre n’est disponible que dans la vue de hameçonnage de l’Explorateur de menaces.
 
-[![Phish_Confidence_Level ](../../media/Phish_Confidence_Level.png)](../../media/Phish_Confidence_Level.png#lightbox)
+[![Niveau de confiance d’hameçonnage dans l’Explorateur](../../media/Phish_Confidence_Level.png)](../../media/Phish_Confidence_Level.png#lightbox)
 
 ### <a name="zap-url-signal"></a>Le signal d’URL ZAP
 
@@ -354,14 +354,14 @@ Vous pouvez accéder au même emplacement dans le rapport des détections en tem
 
 Supposons que vous souhaitez voir les programmes malveillants détectés par les messages électroniques, par la technologie Microsoft 365. Pour ce faire, utilisez l’affichage [courrier > programmes malveillants](threat-explorer-views.md#email--malware) de l’Explorateur (ou des détections en temps réel).
 
-1. Dans le centre de sécurité & conformité ( [https://protection.office.com](https://protection.office.com) ), sélectionnez Explorateur de **gestion des menaces**  >  **Explorer** (ou **détections en temps réel**). (Cet exemple utilise Explorer.)
+1. Dans le centre de sécurité & conformité ( <https://protection.office.com> ), sélectionnez Explorateur de **gestion des menaces** \>  (ou **détections en temps réel**). (Cet exemple utilise Explorer.)
 
-2. Dans le menu **affichage** , choisissez **Email**  >  **programmes malveillants** de messagerie.
+2. Dans le menu **affichage** , choisissez  \> **programmes malveillants** de messagerie.
 
    > [!div class="mx-imgBorder"]
    > ![Menu Affichage de l’Explorateur](../../media/ExplorerViewEmailMalwareMenu.png)
 
-3. Cliquez sur **expéditeur**, puis choisissez technologie de détection de **base**  >  **Detection technology**.
+3. Cliquez sur **expéditeur**, puis choisissez technologie de détection de **base** \> .
 
    Vos technologies de détection sont désormais disponibles en tant que filtres pour le rapport.
 
@@ -381,14 +381,14 @@ Supposons que vous vouliez voir les tentatives de hameçonnage via des URL dans 
 
 Pour consulter les URL de hameçonnage dans les messages et les clics sur les URL dans les messages hameçons, utilisez la vue [courrier > hameçonnage](threat-explorer-views.md#email--phish) de l’Explorateur (ou des détections en temps réel).
 
-1. Dans le centre de sécurité & conformité ( [https://protection.office.com](https://protection.office.com) ), sélectionnez Explorateur de **gestion des menaces**  >  **Explorer** (ou **détections en temps réel**). (Cet exemple utilise Explorer.)
+1. Dans le centre de sécurité & conformité ( <https://protection.office.com> ), sélectionnez Explorateur de **gestion des menaces** \>  (ou **détections en temps réel**). (Cet exemple utilise Explorer.)
 
-2. Dans le menu **affichage** , choisissez **courrier**  >  **hameçon**.
+2. Dans le menu **affichage** , choisissez **courrier** \> **hameçon**.
 
    > [!div class="mx-imgBorder"]
    > ![Menu Affichage pour l’Explorateur dans le contexte de hameçonnage](../../media/ExplorerViewEmailPhishMenu.png)
 
-3. Cliquez sur **expéditeur**, puis sur **URL**, puis  >  **cliquez sur verdict**.
+3. Cliquez sur **expéditeur**, puis sur **URL** , puis \> **cliquez sur verdict**.
 
 4. Sélectionnez une ou plusieurs options, telles que **bloquées** et **bloquer le remplacement**, puis cliquez sur le bouton **Actualiser** qui se trouve sur la même ligne que les options pour appliquer le filtre. (Ne pas actualiser la fenêtre de votre navigateur.)
 
@@ -428,14 +428,14 @@ Dans les lances de messagerie ou d’URL, les principaux clics et les résultats
 
 Supposons que vous voulez afficher les messages électroniques que les utilisateurs de votre organisation ont signalés comme courriers indésirables, non légitimes ou le hameçonnage à l’aide du [complément de message de rapport pour Outlook et Outlook sur le Web](enable-the-report-message-add-in.md). Pour ce faire, utilisez l’affichage [courrier > les soumissions](threat-explorer-views.md#email--submissions) de l’Explorateur (ou des détections en temps réel).
 
-1. Dans le centre de sécurité & conformité ( [https://protection.office.com](https://protection.office.com) ), sélectionnez Explorateur de **gestion des menaces**  >  **Explorer** (ou **détections en temps réel**). (Cet exemple utilise Explorer.)
+1. Dans le centre de sécurité & conformité ( <https://protection.office.com> ), sélectionnez Explorateur de **gestion des menaces** \>  (ou **détections en temps réel**). (Cet exemple utilise Explorer.)
 
-2. Dans le menu **affichage** , choisissez **Email**  >  **envois** de courrier électronique.
+2. Dans le menu **affichage** , choisissez  \> **envois** de courrier électronique.
 
    > [!div class="mx-imgBorder"]
    > ![Menu Affichage pour l’Explorateur des courriers électroniques](../../media/explorer-view-menu-email-user-reported.png)
 
-3. Cliquez sur **expéditeur**, puis sur type de rapport de **base**  >  **Report type**.
+3. Cliquez sur **expéditeur**, puis sur type de rapport de **base** \> .
 
 4. Sélectionnez une option, par exemple **hameçonnage**, puis cliquez sur le bouton **Actualiser** .
 
@@ -476,14 +476,14 @@ Pour afficher et utiliser l’Explorateur ou les détections en temps réel, vou
 - Pour le centre de sécurité & conformité, vous devez disposer de l’un des rôles suivants :
 
   - Gestion de l’organisation
-  - Administrateur de la sécurité (qui peut être affecté dans le centre d’administration Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) ))
+  - Administrateur de la sécurité (qui peut être affecté dans le centre d’administration Azure Active Directory ( <https://aad.portal.azure.com> )
   - Lecteur de sécurité
 
-- Pour Exchange Online, vous devez disposer de l’un des rôles suivants, qui est affecté dans le centre d’administration Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) ou avec des applets de commande PowerShell (consultez la rubrique [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)) :
+- Pour Exchange Online, vous devez disposer de l’un des rôles suivants, qui est affecté dans le centre d’administration Exchange ( <https://admin.protection.outlook.com/ecp/> ) ou [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell):
 
   - Gestion de l’organisation
-  - Gestion de l’organisation en affichage seul
-  - Rôle Destinataires en affichage uniquement
+  - Afficher uniquement la gestion de l’organisation
+  - Afficher uniquement les destinataires
   - Gestion de la conformité
 
 Pour en savoir plus sur les rôles et les autorisations, consultez les ressources suivantes :

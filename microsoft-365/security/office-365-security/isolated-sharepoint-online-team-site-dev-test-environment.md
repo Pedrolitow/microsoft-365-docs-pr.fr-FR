@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: 'Résumé : configurez un site d’équipe SharePoint Online isolé du reste de l’organisation dans votre environnement de développement/test Microsoft 365.'
-ms.openlocfilehash: e21dccb9ef535bb997d6e62b70e5576bf531041c
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 6e056cd1d930d13e1ae20f8f8d0cdc9aa886f17e
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199660"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616487"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>Site d’équipe SharePoint Online isolé dans votre environnement de développement/test
 
@@ -35,9 +35,7 @@ Les sites d’équipe SharePoint Online dans Microsoft 365 sont des emplacements
 L’accès aux sites d’équipe SharePoint Online et ce que les utilisateurs peuvent faire sont contrôlés par les groupes SharePoint et les niveaux d’autorisation. Par défaut, les sites SharePoint Online comportent trois niveaux d’accès :
 
 - Les **membres** peuvent afficher, créer et modifier des ressources sur le site.
-
 - Les **propriétaires** ont un contrôle total sur le site, et peuvent même modifier les autorisations.
-
 - Les **Visiteurs** peuvent uniquement afficher les ressources du site.
 
 Cet article décrit la configuration d’un site d’équipe SharePoint Online isolé pour un projet de recherche secrète nommé ProjectX. Les conditions d’accès sont les suivantes :
@@ -135,15 +133,15 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
 
 Résultats
 
-- Le groupe d’accès ProjectX-membres contient les comptes d’utilisateur concepteur de prospects et chercheur de prospect
+- Le groupe d’accès ProjectX-Members contient les comptes d’utilisateur concepteur de prospects et chercheur de prospect
 
-- Le groupe d’accès ProjectX-administrateurs contient le compte d’administrateur général pour votre abonnement à la version d’évaluation
+- Le groupe d’accès ProjectX-Admins contient le compte d’administrateur général pour votre abonnement à la version d’évaluation
 
-- Le groupe d’accès ProjectX-visualisers contient le compte d’utilisateur VP du développement.
+- Le groupe d’accès ProjectX-Viewers contient le compte d’utilisateur VP du développement.
 
 La figure 1 présente les groupes d’accès et leur appartenance.
 
-**Figure 1**
+**Figure 1**:
 
 ![Groupes Microsoft 365 et leur appartenance pour un site de groupe SharePoint Online isolé](../../media/5b7373b9-2a80-4880-afe5-63ffb17237e6.png)
 
@@ -151,7 +149,7 @@ La figure 1 présente les groupes d’accès et leur appartenance.
 
 Pour créer un site d’équipe SharePoint Online pour ProjectX, procédez comme suit :
 
-1. À l’aide d’un navigateur sur votre ordinateur local (configuration légère) ou sur CLIENT1 (configuration d’entreprise simulée), connectez-vous au centre d’administration 365 de Microsoft ( [https://admin.microsoft.com](https://admin.microsoft.com) ) à l’aide de votre compte d’administrateur général.
+1. À l’aide d’un navigateur sur votre ordinateur local (configuration légère) ou sur CLIENT1 (configuration d’entreprise simulée), connectez-vous au centre d’administration 365 de Microsoft ( <https://admin.microsoft.com> ) à l’aide de votre compte d’administrateur général.
 
 2. Dans la liste des mosaïques, cliquez sur **SharePoint**.
 
@@ -197,11 +195,11 @@ Pour créer un site d’équipe SharePoint Online pour ProjectX, procédez comme
 
 Voici les résultats de la configuration des autorisations :
 
-- Le groupe SharePoint membres de ProjectX contient uniquement le groupe d’accès ProjectX membres (qui contient uniquement les comptes d’utilisateur de concepteur de prospect et de chercheur de Prospect) et le groupe ProjectX (qui contient uniquement le compte d’utilisateur d’administrateur général).
+- Le groupe SharePoint membres de ProjectX contient uniquement le groupe d’accès ProjectX-Members (qui contient uniquement les comptes d’utilisateur de concepteur de prospect et de chercheur de Prospect) et le groupe ProjectX (qui contient uniquement le compte d’utilisateur d’administrateur général).
 
-- Le groupe SharePoint propriétaires ProjectX contient uniquement le groupe d’accès ProjectX-administrateurs (qui contient uniquement le compte d’utilisateur de l’administrateur général).
+- Le groupe SharePoint propriétaires ProjectX contient uniquement le groupe d’accès ProjectX-Admins (qui contient uniquement le compte d’utilisateur de l’administrateur général).
 
-- Le groupe SharePoint visiteurs ProjectX contient uniquement le groupe d’accès ProjectX-affiche (qui contient uniquement le compte d’utilisateur VP du développement).
+- Le groupe SharePoint visiteurs ProjectX contient uniquement le groupe d’accès ProjectX-Viewers (qui contient uniquement le compte d’utilisateur VP du développement).
 
 - Les membres ne peuvent pas modifier les autorisations au niveau du site (cette opération peut être uniquement effectuée par les membres du groupe ProjectX-Administrateurs).
 
@@ -219,7 +217,7 @@ Nous allons maintenant illustrer l’accès à l’aide du compte d’utilisateu
 
 2. Cliquez sur le nom de votre administrateur général, puis cliquez sur **Déconnexion**.
 
-3. Connectez-vous au centre d’administration Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) ) à l’aide du nom de compte du concepteur de prospect et de son mot de passe.
+3. Connectez-vous au centre d’administration Microsoft 365 ( <https://admin.microsoft.com> ) à l’aide du nom de compte du concepteur de prospect et de son mot de passe.
 
 4. Dans la liste des vignettes, cliquez sur **SharePoint**.
 
@@ -249,7 +247,7 @@ Nous allons maintenant illustrer l’accès à l’aide du compte d’utilisateu
 
 Nous allons maintenant illustrer l’accès à l’aide du compte d’utilisateur VP du développement :
 
-1. Connectez-vous au centre d’administration Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) ) à l’aide du nom de compte VP du développement et de son mot de passe.
+1. Connectez-vous au centre d’administration Microsoft 365 ( <https://admin.microsoft.com> ) à l’aide du nom de compte VP du développement et de son mot de passe.
 
 2. Dans la liste des vignettes, cliquez sur **SharePoint**.
 
@@ -265,7 +263,7 @@ Nous allons maintenant illustrer l’accès à l’aide du compte d’utilisateu
 
 À présent, nous allons illustrer l’accès à un compte d’utilisateur qui n’a pas d’autorisations :
 
-1. Connectez-vous au centre d’administration Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) ) à l’aide du nom de compte utilisateur 3 et de son mot de passe.
+1. Connectez-vous au centre d’administration Microsoft 365 ( <https://admin.microsoft.com> ) à l’aide du nom de compte utilisateur 3 et de son mot de passe.
 
 2. Dans la liste des mosaïques, cliquez sur **SharePoint**.
 

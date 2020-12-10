@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX
 description: Les administrateurs peuvent apprendre à utiliser les balises de mise en quarantaine pour contrôler ce que les utilisateurs peuvent faire à leurs messages mis en quarantaine.
-ms.openlocfilehash: 68f28e2dff3bdeada2685ef6806489f5e57f5daf
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: 498a5f45fa62481f7f4f8dfe5ece8a51a038f99a
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572668"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616007"
 ---
 # <a name="quarantine-tags"></a>Balises de mise en quarantaine
 
@@ -58,7 +58,7 @@ Vous créez et attribuez des balises de mise en quarantaine dans le centre de s�
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Vous ouvrez le Centre de conformité et sécurité sur <https://protection.office.com/>. Pour accéder directement à la page **balises de quarantaine** , ouvrez <https://protection.office.com/quarantineTags> .
+- Vous ouvrez le Centre de sécurité et conformité sur <https://protection.office.com/>. Pour accéder directement à la page **balises de quarantaine** , ouvrez <https://protection.office.com/quarantineTags> .
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -66,7 +66,7 @@ Vous créez et attribuez des balises de mise en quarantaine dans le centre de s�
 
 ## <a name="step-1-create-quarantine-tags-in-the-security--compliance-center"></a>Étape 1 : créer des balises de mise en quarantaine dans le centre de sécurité & conformité
 
-1. Dans le centre de sécurité & conformité, accédez à stratégie de **gestion des menaces** , \> **Policy** puis sélectionnez **balises de mise en quarantaine**.
+1. Dans le centre de sécurité & conformité, accédez à stratégie de **gestion des menaces** , \>  puis sélectionnez **balises de mise en quarantaine**.
 
 2. Sur la page **balises de quarantaine** , sélectionnez **Ajouter une balise personnalisée**.
 
@@ -161,7 +161,9 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 Pour créer une balise de mise en quarantaine à l’aide du paramètre _EndUserQuarantinePermissionsValue_ , procédez comme suit :
 
 A. Stockez un objet d’autorisations de mise en quarantaine dans une variable à l’aide de la cmdlet **New-QuarantinePermissions** .
-<br/>
+
+<p>
+
 B. Utilisez la variable comme valeur _EndUserQuarantinePermissions_ dans la commande **New-QuarantineTag** .
 
 ##### <a name="step-a-store-a-quarantine-permissions-object-in-a-variable"></a>Étape A : stocker un objet d’autorisations de mise en quarantaine dans une variable
@@ -241,16 +243,16 @@ Si vous êtes satisfait des autorisations de l’utilisateur final fournies par 
 
 Pour plus d’informations sur la création et la modification de stratégies de blocage du courrier indésirable, voir [configurer les stratégies anti-courrier indésirable dans EOP](configure-your-spam-filter-policies.md).
 
-1. Dans le centre de sécurité & conformité, accédez à stratégie de **gestion des menaces** , \> **Policy** \> puis sélectionnez **blocage du courrier indésirable**. Ou ouvrez <https://protection.office.com/antispam> .
+1. Dans le centre de sécurité & conformité, accédez à stratégie de **gestion des menaces** , \>  \> puis sélectionnez **blocage du courrier indésirable**. Ou ouvrez <https://protection.office.com/antispam> .
 
 2. Recherchez et sélectionnez une stratégie de blocage du courrier indésirable existante à modifier, ou créez une nouvelle stratégie de blocage du courrier indésirable.
 
 3. Dans la fenêtre mobile détails de la stratégie, développez la section **actions de courrier indésirable et en bloc** .
-  
+
 4. Si vous avez sélectionné **message mis en quarantaine** pour l’action d’une option de filtrage du courrier indésirable disponible, la zone **appliquer la balise de stratégie de mise en quarantaine** est disponible pour vous permettant de sélectionner la balise de mise en quarantaine pour ce verdict.
 
    **Remarque**: lorsque vous créez une stratégie, une valeur de balise de mise en quarantaine vide pour un filtrage du courrier indésirable en verdict indique que la balise de mise en quarantaine par défaut pour ce verdict est utilisée. Lorsque vous modifiez ultérieurement la stratégie, les valeurs non renseignées sont remplacées par les noms de balise de mise en quarantaine par défaut réels, comme décrit dans le tableau précédent.
-  
+
    ![Sélections de la balise de quarantaine dans une stratégie de blocage du courrier indésirable](../../media/quarantine-tags-in-anti-spam-policies.png)
 
 5. Lorsque vous avez terminé, cliquez sur **Enregistrer**.
@@ -263,7 +265,7 @@ Si vous préférez utiliser PowerShell pour attribuer des balises de mise en qua
 <New-HostedContentFilterPolicy -Name "<Unique name>" | Set-HostedContentFilterPolicy -Identity "<Policy name>">  [-SpamAction Quarantine] [-SpamQuarantineTag <QuarantineTagName>] [-HighConfidenceSpamAction Quarantine] [-HighConfidenceSpamQuarantineTag <QuarantineTagName>] [-PhishSpamAction Quarantine] [-PhishQuarantineTag <QuarantineTagName>] [-HighConfidencePhishQuarantineTag <QuarantineTagName>] [-BulkSpamAction Quarantine] [-BulkQuarantineTag <QuarantineTagName>] ...
 ```
 
-**Remarques**:
+**Remarques** :
 
 - La valeur par défaut du paramètre _HighConfidencePhishAction_ est mise en quarantaine, vous n’avez donc pas besoin de définir l’action de mise en quarantaine pour les détections de hameçonnage à haute fiabilité dans les nouvelles stratégies de blocage du courrier indésirable. Pour tous les autres filtrages de courrier indésirable en fonction des stratégies anti-courrier indésirable nouvelles ou existantes, la balise de mise en quarantaine n’est effective que si la valeur de l’action est mise en quarantaine. Pour afficher les valeurs d’action dans les stratégies anti-courrier indésirable existantes, exécutez la commande suivante :
 
@@ -302,7 +304,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Les paramètres globaux pour les balises de mise en quarantaine vous permettent de personnaliser les notifications de courrier indésirable de l’utilisateur final qui sont envoyées aux destinataires des messages mis en quarantaine. Pour plus d’informations sur ces notifications, consultez la rubrique [notifications de courrier indésirable de l’utilisateur final](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
-1. Dans le centre de sécurité & conformité, accédez à stratégie de **gestion des menaces** , \> **Policy** puis sélectionnez **balises de mise en quarantaine**.
+1. Dans le centre de sécurité & conformité, accédez à stratégie de **gestion des menaces** , \>  puis sélectionnez **balises de mise en quarantaine**.
 
 2. Sur la page **balises de quarantaine** , sélectionnez **paramètres globaux**.
 
@@ -338,7 +340,7 @@ Les paramètres globaux pour les balises de mise en quarantaine vous permettent 
 
 ## <a name="view-quarantine-tags-in-the-security--compliance-center"></a>Afficher les balises de mise en quarantaine dans le centre de sécurité & conformité
 
-1. Dans le centre de sécurité & conformité, accédez à stratégie de **gestion des menaces** , \> **Policy** puis sélectionnez **balises de mise en quarantaine**.
+1. Dans le centre de sécurité & conformité, accédez à stratégie de **gestion des menaces** , \>  puis sélectionnez **balises de mise en quarantaine**.
 
 - Pour afficher les paramètres des balises de mise en quarantaine prédéfinies ou personnalisées, sélectionnez la balise de mise en quarantaine dans la liste (n’activez pas la case à cocher).
 
@@ -370,7 +372,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 ## <a name="remove-quarantine-tags-in-the-security--compliance-center"></a>Supprimer les balises de mise en quarantaine dans le centre de sécurité & conformité
 
-**Remarques**:
+**Remarques** :
 
 - Vous ne pouvez pas supprimer les balises de quarantaine prédéfinies.
 
@@ -382,7 +384,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
   Si la balise de mise en quarantaine est utilisée, [Remplacez la balise de mise en quarantaine affectée avant de la](#step-2-assign-a-quarantine-tag-to-supported-features) supprimer.
 
-1. Dans le centre de sécurité & conformité, accédez à stratégie de **gestion des menaces** , \> **Policy** puis sélectionnez **balises de mise en quarantaine**.
+1. Dans le centre de sécurité & conformité, accédez à stratégie de **gestion des menaces** , \>  puis sélectionnez **balises de mise en quarantaine**.
 
 2. Sur la page **balises de quarantaine** , sélectionnez la balise de mise en quarantaine personnalisée que vous souhaitez supprimer, puis cliquez sur **Supprimer la balise**.
 
@@ -516,7 +518,7 @@ L’autorisation **autoriser les destinataires à libérer un message à partir 
 - **Détails du message en quarantaine**:
   - Autorisation activée : le bouton **diffuser le message** est disponible.
   - Autorisation désactivée : le bouton **diffuser le message** n’est pas disponible.
-  
+
 - **Notifications de courrier indésirable de l’utilisateur final**:
   - Autorisation activée : le bouton de **publication** est disponible.
   - Autorisation désactivée : le bouton de **publication** n’est pas disponible.

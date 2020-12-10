@@ -17,19 +17,19 @@ ms.custom:
 - SIEM
 - seo-marvel-apr2020
 description: Obtenir une vue d’ensemble de l’intégration du serveur des informations de sécurité et de la gestion des événements (SIEM) à vos applications et services Cloud Microsoft 365
-ms.openlocfilehash: 17e21d19463187744afe855b2304ac71956545d2
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 851b27769badb2629b7e9fb1c93992c76828a633
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48919763"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615647"
 ---
 # <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>Intégration du serveur de gestion des événements et des informations de sécurité (SIEM) aux services et applications Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-## <a name="summary"></a>Résumé
+## <a name="summary"></a>Synthèse
 
 Votre organisation utilise-t-elle ou envisage-t-elle un serveur de gestion des événements et des informations de sécurité (SIEM) ? Vous vous demandez peut-être comment il s’intègre à Microsoft 365 ou Office 365. Cet article fournit une liste de ressources que vous pouvez utiliser pour intégrer votre serveur SIEM aux services et applications Microsoft 365.
 
@@ -53,7 +53,7 @@ Un serveur SIEM peut recevoir des données à partir d’un large éventail de s
 |Service ou application Microsoft 365|Entrées/méthodes du serveur SIEM|Ressources pour en savoir plus|
 |---|---|---|
 |[Microsoft Defender pour Office 365](office-365-atp.md)|Journaux d'audit|[Intégration SIEM à Microsoft Defender pour Office 365](siem-integration-with-office-365-ti.md)|
-|[Microsoft Defender pour point de terminaison](https://docs.microsoft.com/windows/security/threat-protection/)|Point de terminaison HTTPs hébergé dans Azure <br/>API REST|[Attirez les alertes sur vos outils SIEM](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem)|
+|[Microsoft Defender pour point de terminaison](https://docs.microsoft.com/windows/security/threat-protection/)|Point de terminaison HTTPs hébergé dans Azure <p> API REST|[Attirez les alertes sur vos outils SIEM](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem)|
 |[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|Intégration des journaux|[Intégration SIEM à la sécurité des applications Cloud Microsoft](https://docs.microsoft.com/cloud-app-security/siem)|
 |
 

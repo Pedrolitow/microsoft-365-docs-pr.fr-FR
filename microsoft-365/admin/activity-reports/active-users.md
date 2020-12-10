@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d
 description: Découvrez comment obtenir un rapport utilisateurs actifs à l’aide du tableau de bord des rapports Microsoft 365 dans le centre d’administration 365 Microsoft et déterminer le nombre de licences de produit utilisées.
-ms.openlocfilehash: 162e818e96f6301cf0ec31580950be1ae19a0f35
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 0f5d113bf17d338c52f998db45a8626a6636a996
+ms.sourcegitcommit: 039205fdaaa2a233ff7e95cd91bace474b84b68c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48636994"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49611339"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---active-users"></a>Rapports Microsoft 365 dans le centre d’administration-utilisateurs actifs
 
@@ -39,7 +39,7 @@ Par exemple, vous pouvez utiliser le rapport **Utilisateurs actifs** pour déter
 
 1. Dans le centre d’administration, accédez à la page **Rapports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Utilisation</a>.
 
-2. Sélectionnez **Office 365** \> **utilisateurs actifs** Office 365 dans la liste déroulante. 
+2. Sélectionnez  \> **utilisateurs actifs** Office 365 dans la liste déroulante. 
 
 ## <a name="interpret-the-active-users-report"></a>Interpréter le rapport Utilisateurs actifs
 
@@ -49,7 +49,7 @@ Par exemple, vous pouvez utiliser le rapport **Utilisateurs actifs** pour déter
 |1.  <br/> |Le rapport **Utilisateurs actifs** peut être consulté pour connaître les tendances enregistrées au cours des 7, 30, 90 ou 180 derniers jours. Toutefois, si vous affichez un jour particulier dans le rapport, le tableau (7) affiche les données jusqu’à 28 jours après la date actuelle (pas la date à laquelle le rapport a été généré).  <br/> |
 |2.  <br/> |Les données de chaque rapport couvrent généralement les 24 à 48 heures.  <br/> |
 |3.  <br/> |Le graphique **Utilisateurs actifs** présente les utilisateurs actifs chaque jour pendant la période sur laquelle porte le rapport, classés par produit.  <br/> Le graphique **Services** présente le nombre d'utilisateurs par type d'activité et service.  <br/> |
-|4.  <br/> | Sur le graphique **Utilisateurs actifs**, l'axe X indique la période sélectionnée pour le rapport, tandis que l'axe Y affiche les utilisateurs actifs chaque jour, classés par type de licence et distingués par un codage couleur.  <br/>  Sur le graphique d'activités **Services**, l'axe X indique les services individuels que vos utilisateurs sont autorisés à utiliser au cours de la période spécifiée, tandis que l'axe Y indique le nombre d'utilisateurs en fonction de l'état de l'activité, avec un codage couleur selon l'état de l'activité.  <br/> |
+|4.  <br/> | Dans le graphique **utilisateurs actifs** , l’axe x affiche la période de création de rapports sélectionnée et l’axe y affiche les utilisateurs actifs quotidiens séparés et les couleurs codées par type de licence.  <br/>  Sur le graphique d'activités **Services**, l'axe X indique les services individuels que vos utilisateurs sont autorisés à utiliser au cours de la période spécifiée, tandis que l'axe Y indique le nombre d'utilisateurs en fonction de l'état de l'activité, avec un codage couleur selon l'état de l'activité.  <br/> |
 |5.  <br/> |Vous pouvez filtrer la série que vous voyez sur le graphique en sélectionnant un élément dans la légende. Cette sélection ne modifie nullement les informations figurant dans le tableau grille.  <br/> |
 |6.  <br/> |Vous pouvez également exporter les données du rapport dans un fichier. csv Excel en sélectionnant le lien **Exporter** ![ exporter vos données vers un fichier Excel ](../../media/816a224b-6ca7-4967-a135-4f6427f64dc8.JPG) . Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter.  <br/> |
 |7.  <br/> |Vous pouvez modifier les informations affichées dans la grille à l'aide de contrôles de colonnes.  <br/> Si votre abonnement est géré par 21Vianet, vous ne verrez pas Yammer. <br/> <br/> |

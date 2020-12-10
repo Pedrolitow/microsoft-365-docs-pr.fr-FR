@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Quelles sont les meilleures pratiques pour les paramètres de sécurité Exchange Online Protection (EOP) et Defender pour Office 365 ? Quelles sont les recommandations actuelles pour la protection standard ? Qu’est-ce qui doit être utilisé si vous voulez être plus strict ? Quels sont les autres éléments que vous obtenez si vous utilisez également Defender pour Office 365 ?
-ms.openlocfilehash: ee450c8da346d5815710afe2622f8f2c600132d4
-ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
+ms.openlocfilehash: 192e37a1a9a373f7b6712600bc3c81189f7c51ad
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367212"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615959"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Paramètres recommandés pour EOP et Microsoft Defender pour Office 365 sécurité
 
@@ -59,7 +59,7 @@ Pour créer et configurer des stratégies de blocage du courrier indésirable, c
 |Action de détection de **courrier d’hameçonnage** <p> _PhishSpamAction_|**Déplacer le message dans le dossier Courrier indésirable** <p> `MoveToJmf`|**Mettre en quarantaine le message** <p> `Quarantine`|**Mettre en quarantaine le message** <p> `Quarantine`||
 |Action de détection de **courrier d’hameçonnage à haut niveau de fiabilité** <p> _HighConfidencePhishAction_|**Mettre en quarantaine le message** <p> `Quarantine`|**Mettre en quarantaine le message** <p> `Quarantine`|**Mettre en quarantaine le message** <p> `Quarantine`||
 |Action de détection de **courrier en nombre** <p> _BulkSpamAction_|**Déplacer le message dans le dossier Courrier indésirable** <p> `MoveToJmf`|**Déplacer le message dans le dossier Courrier indésirable** <p> `MoveToJmf`|**Mettre en quarantaine le message** <p> `Quarantine`||
-|Seuil de courrier électronique en masse <p> _BulkThreshold_|7 |6 |4 |Pour plus d’informations, reportez-vous à [Bulk Complaint Level (BCL) in Office 365](bulk-complaint-level-values.md).|
+|Seuil de courrier électronique en masse <p> _BulkThreshold_|7 |6 |4 |Pour plus d’informations, reportez-vous à [Bulk Complaint Level (BCL) in Office 365](bulk-complaint-level-values.md).|
 |Période de rétention de quarantaine <p> _QuarantineRetentionPeriod_|15 jours|30 jours|30 jours||
 |**Conseils de sécurité** <p> _InlineSafetyTipsEnabled_|Activé <p> `$true`|Activé <p> `$true`|Activé <p> `$true`||
 |Expéditeurs autorisés <p> _AllowedSenders_|Aucun|Aucun|Aucun||
@@ -223,7 +223,7 @@ Dans PowerShell, vous utilisez l’applet de commande [Set-AtpPolicyForO365](htt
 |---|:---:|:---:|:---:|---|
 |**Utiliser les liens fiables dans : applications Office 365** <p> _EnableSafeLinksForO365Clients_|Activé <p> `$true`|Activé <p> `$true`|Activé <p> `$true`|Utiliser les liens fiables dans les applications Office 365 Desktop et mobile (iOS et Android) prises en charge. Pour plus d’informations, consultez la rubrique [paramètres de liens approuvés pour les applications Office 365](atp-safe-links.md#safe-links-settings-for-office-365-apps).|
 |**Ne pas suivre lorsque les utilisateurs cliquent sur les liens fiables** <p> _TrackClicks_|Activé <p> `$false`|Désactivé <p> `$true`|Désactivé <p> `$true`|La désactivation de ce paramètre (paramètre _TrackClicks_ à `$true` ) effectue le suivi des clics des utilisateurs dans les applications Office 365 prises en charge.|
-|**Ne pas autoriser les utilisateurs à cliquer sur les liens fiables vers l’URL d’origine** <p> _AllowClickThrough_|Activé <p> `$false`|Activé <p> `$false`|Activé <p> `$false`|L’activation de ce paramètre ( _AllowClickThrough_ paramètre AllowClickThrough `$false` ) empêche le clic sur l’URL d’origine dans les applications Office 365 prises en charge.|
+|**Ne pas autoriser les utilisateurs à cliquer sur les liens fiables vers l’URL d’origine** <p> _AllowClickThrough_|Activé <p> `$false`|Activé <p> `$false`|Activé <p> `$false`|L’activation de ce paramètre (  paramètre AllowClickThrough `$false` ) empêche le clic sur l’URL d’origine dans les applications Office 365 prises en charge.|
 |
 
 #### <a name="safe-links-policy-settings"></a>Paramètres de stratégie de liens fiables
@@ -263,8 +263,8 @@ Dans PowerShell, vous utilisez l’applet de commande [Set-AtpPolicyForO365](htt
 |Nom de la fonctionnalité de sécurité|Par défaut|Standard|Empêcher|Commentaire|
 |---|:---:|:---:|:---:|---|
 |**Activer la protection avancée contre les menaces pour SharePoint, OneDrive et Microsoft Teams** <p> _EnableATPForSPOTeamsODB_|Activé <p> `$true`|Activé <p> `$true`||
-|**Activer des documents approuvés pour les clients Office**<bt/><br/> _EnableSafeDocs_|Activé <p> `$true`|Activé <p> `$true`|Ce paramètre est disponible uniquement avec les licences de sécurité Microsoft 365 E5 ou Microsoft 365 E5. Pour plus d’informations, reportez-vous à la rubrique [documents approuvés dans Microsoft Defender pour Office 365](safe-docs.md).|
-|**Autoriser les utilisateurs à cliquer en mode protégé même si les documents fiables identifient le fichier comme étant malveillant**<bt/><br/> _AllowSafeDocsOpen_|Désactivé <p> `$false`|Désactivé <p> `$false`|Ce paramètre est lié aux documents approuvés.|
+|**Activer des documents approuvés pour les clients Office** <p> _EnableSafeDocs_|Activé <p> `$true`|Activé <p> `$true`|Ce paramètre est disponible uniquement avec les licences de sécurité Microsoft 365 E5 ou Microsoft 365 E5. Pour plus d’informations, reportez-vous à la rubrique [documents approuvés dans Microsoft Defender pour Office 365](safe-docs.md).|
+|**Autoriser les utilisateurs à cliquer en mode protégé même si les documents fiables identifient le fichier comme étant malveillant** <p> _AllowSafeDocsOpen_|Désactivé <p> `$false`|Désactivé <p> `$false`|Ce paramètre est lié aux documents approuvés.|
 |
 
 #### <a name="safe-attachments-policy-settings"></a>Paramètres de stratégie de pièces jointes fiables

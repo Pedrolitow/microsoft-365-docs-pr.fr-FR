@@ -20,12 +20,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez les fonctionnalités d’enquête sur les menaces et de réponse dans Microsoft Defender for Office 365 plan.
-ms.openlocfilehash: 7ae61e7ea70d8be5c31ec12443c8943f6e54bcf4
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: cbda50dacd6b892c976ce55632c8fc35813839b7
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561254"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49614773"
 ---
 # <a name="threat-investigation-and-response"></a>Examen et réponse contre les menaces
 
@@ -57,7 +57,7 @@ Utilisez le tableau de bord des menaces (également appelé tableau de [bord de 
 
 ![Tableau de bord des menaces](../../media/ce013a31-3f80-4d09-bb95-bfb7623b8bc4.png)
 
-Pour afficher et utiliser ce tableau de bord, dans le centre de sécurité & conformité, accédez au tableau de bord **gestion des menaces** \> **Dashboard**.
+Pour afficher et utiliser ce tableau de bord, dans le centre de sécurité & conformité, accédez au tableau de bord **gestion des menaces** \> .
 
 ### <a name="threat-explorer"></a>Threat Explorer
 
@@ -65,7 +65,7 @@ Utilisez l' [Explorateur de menaces (et les détections en temps réel)](threat-
 
 ![Explorateur de menaces](../../media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png)
 
-Pour afficher et utiliser ce rapport, dans le centre de sécurité & conformité, accédez à l’Explorateur de **gestion des menaces** \> **Explorer**.
+Pour afficher et utiliser ce rapport, dans le centre de sécurité & conformité, accédez à l’Explorateur de **gestion des menaces** \> .
 
 ### <a name="incidents"></a>Incidents
 
@@ -73,7 +73,7 @@ Utilisez la liste des incidents (qui est également appelée « enquêtes ») 
 
 ![Liste des incidents de menace actuels dans Office 365](../../media/acadd4c7-d2de-4146-aeb8-90cfad805a9c.png)
 
-Pour afficher la liste des incidents en cours pour votre organisation, dans le centre de sécurité & conformité, accédez à incidents de vérification de la **gestion des menaces** \> **Review** \> **Incidents**.
+Pour afficher la liste des incidents en cours pour votre organisation, dans le centre de sécurité & conformité, accédez à incidents de vérification de la **gestion des menaces** \>  \> .
 
 ![Dans le centre de sécurité & conformité, sélectionnez vérification de la gestion des menaces. \>](../../media/e0f46454-fa38-40f0-a120-b595614d1d22.png)
 
@@ -110,14 +110,14 @@ Microsoft Defender pour Office 365 utilise le contrôle d’accès basé sur un 
 
 |Activité|Rôles et autorisations|
 |---|---|
-|Utiliser le tableau de bord de menace (ou le nouveau [tableau de bord de sécurité](security-dashboard.md))<br/> <br/>Afficher les informations sur les menaces récentes ou actuelles|Un des éléments suivants : <br/>- **Administrateur général**  <br/> - **Administrateur de la sécurité** <br/>- **Lecteur de sécurité** <br/> <br/>Ces rôles peuvent être attribués dans Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) ou dans le centre d’administration Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) ).|
-|Utilisation de l' [Explorateur de menaces (et des détections en temps réel)](threat-explorer.md) pour analyser les menaces|Un des éléments suivants : <br/>- **Administrateur général**  <br/> - **Administrateur de la sécurité** <br/>- **Lecteur de sécurité** <br/> <br/>Ces rôles peuvent être attribués dans Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) ou dans le centre d’administration Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) ).|
-|Afficher les incidents (également appelés enquêtes) <br/> Ajouter des messages électroniques à un incident|Un des éléments suivants : <br/>- **Administrateur général**  <br/> - **Administrateur de la sécurité** <br/>- **Lecteur de sécurité** <br/> <br/>Ces rôles peuvent être attribués dans Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) ou dans le centre d’administration Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) ).|
-|Déclencher les actions de messagerie dans un incident <br/> <br/> Rechercher et supprimer des messages électroniques suspects|Un des éléments suivants : <br/>- **Administrateur général**  <br/> - **Administrateur de sécurité** plus le rôle de **recherche et de purge**<br/><br/>Les rôles administrateur **général** et **administrateur de sécurité** peuvent être attribués dans Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) ou dans le centre d’administration 365 de Microsoft ( [https://admin.microsoft.com](https://admin.microsoft.com) ). <br/><br/>Le rôle de **recherche et de purge** doit être attribué dans le centre de sécurité & conformité ( [https://protection.office.com](https://protection.office.com) ).|
-|Intégrer Microsoft Defender pour Office 365 plan 2 à Microsoft Defender for Endpoint  <br/><br/> Intégration de Microsoft Defender pour Office 365 plan 2 à un serveur SIEM|Le rôle **administrateur général** ou **administrateur de sécurité** affecté dans Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) ou dans le centre d’administration 365 de Microsoft ( [https://admin.microsoft.com](https://admin.microsoft.com) ).<br/>--- **Protect** ---<br/>Un rôle approprié attribué dans des applications supplémentaires (telles que le [Centre de sécurité Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) ou votre serveur Siem)|
+|Utiliser le tableau de bord de menace (ou le nouveau [tableau de bord de sécurité](security-dashboard.md)) <p> Afficher les informations sur les menaces récentes ou actuelles|Un des éléments suivants : <ul><li>**Administrateur général**</li><li>**Administrateur de la sécurité**</li><li>**Lecteur de sécurité**</li></ul> <p> Ces rôles peuvent être attribués dans Azure Active Directory ( <https://portal.azure.com> ) ou dans le centre d’administration Microsoft 365 ( <https://admin.microsoft.com> ).|
+|Utilisation de l' [Explorateur de menaces (et des détections en temps réel)](threat-explorer.md) pour analyser les menaces|Un des éléments suivants : <ul><li>**Administrateur général**</li><li>**Administrateur de la sécurité**</li><li>**Lecteur de sécurité**</li></ul> <p> Ces rôles peuvent être attribués dans Azure Active Directory ( <https://portal.azure.com> ) ou dans le centre d’administration Microsoft 365 ( <https://admin.microsoft.com> ).|
+|Afficher les incidents (également appelés enquêtes) <p> Ajouter des messages électroniques à un incident|Un des éléments suivants : <ul><li>**Administrateur général**</li><li>**Administrateur de la sécurité**</li><li>**Lecteur de sécurité**</li></ul> <p> Ces rôles peuvent être attribués dans Azure Active Directory ( <https://portal.azure.com> ) ou dans le centre d’administration Microsoft 365 ( <https://admin.microsoft.com> ).|
+|Déclencher les actions de messagerie dans un incident <p> Rechercher et supprimer des messages électroniques suspects|Un des éléments suivants : <ul><li>**Administrateur général**</li><li>**Administrateur de sécurité** plus le rôle de **recherche et de purge**</li></ul> <p> Les rôles administrateur **général** et **administrateur de sécurité** peuvent être attribués dans Azure Active Directory ( <https://portal.azure.com> ) ou dans le centre d’administration 365 de Microsoft ( <https://admin.microsoft.com> ). <p> Le rôle de **recherche et de purge** doit être attribué dans le centre de sécurité & conformité ( <https://protection.office.com> ).|
+|Intégrer Microsoft Defender pour Office 365 plan 2 à Microsoft Defender for Endpoint  <p> Intégration de Microsoft Defender pour Office 365 plan 2 à un serveur SIEM|Le rôle **administrateur général** ou **administrateur de sécurité** affecté dans Azure Active Directory ( <https://portal.azure.com> ) ou dans le centre d’administration 365 de Microsoft ( <https://admin.microsoft.com> ). <p> --- **Protect** --- <p> Un rôle approprié attribué dans des applications supplémentaires (telles que le [Centre de sécurité Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) ou votre serveur Siem).|
 |
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 - [En savoir plus sur les suivis de menace-nouveau et notable](threat-trackers.md)
 

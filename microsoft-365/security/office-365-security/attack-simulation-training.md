@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Découvrez comment simuler les attaques par hameçonnage et former vos utilisateurs à la prévention du hameçonnage avec la formation à la simulation d’attaque de Microsoft Defender pour Office 365.
-ms.openlocfilehash: b9b8a431fc28942f5e11bc7ce2e805ca082cf36b
-ms.sourcegitcommit: dab50e1cc5bba920720b80033c93457f5ca1c330
+ms.openlocfilehash: 8f5f457f60c81fe961282f33bb8c37f4d9e27aab
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "48944503"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616103"
 ---
 # <a name="simulate-a-phishing-attack"></a>Simulation d’une attaque par hameçonnage
 
@@ -58,8 +58,8 @@ Les charges utiles comportent un certain nombre de points de données pour vous 
 - **Cliquer sur** le nombre de taux indique combien de personnes ont cliqué sur cette charge utile.
 - **Taux d’endommagement prévu** : prévoit le pourcentage de personnes qui seront compromises par cette charge utile en fonction des données historiques de cette charge utile parmi les clients Microsoft Defender pour Office 365.
 - **Simulations lancées** compte le nombre de fois que cette charge utile a été utilisée dans d’autres simulations.
-- La **complexité** , disponible par le biais de **filtres** , est calculée en fonction du nombre d’indicateurs au sein de la charge utile qui permettent aux cibles de l’informatique d’être une attaque. Un plus grand nombre d’indicateurs entraîne une complexité moindre.
-- **Source** , disponible par le biais de **filtres** , indique si la charge utile a été créée sur votre client ou fait partie du catalogue de charge utile préexistant de Microsoft (Global).
+- La **complexité**, disponible par le biais de **filtres**, est calculée en fonction du nombre d’indicateurs au sein de la charge utile qui permettent aux cibles de l’informatique d’être une attaque. Un plus grand nombre d’indicateurs entraîne une complexité moindre.
+- **Source**, disponible par le biais de **filtres**, indique si la charge utile a été créée sur votre client ou fait partie du catalogue de charge utile préexistant de Microsoft (Global).
 
 ![Charge utile sélectionnée lors de la formation à la simulation d’attaque dans le centre de sécurité Microsoft 365](../../media/attack-sim-preview-select-payload.png)
 
@@ -69,11 +69,11 @@ Si vous souhaitez créer votre propre charge utile, lisez [Create a Payload for 
 
 ## <a name="audience-targeting"></a>Ciblage d’audience
 
-À présent, il est temps de sélectionner l’audience de cette simulation. Vous pouvez choisir d' **inclure tous les utilisateurs de votre organisation** ou d' **inclure uniquement des utilisateurs et des groupes spécifiques**. 
+À présent, il est temps de sélectionner l’audience de cette simulation. Vous pouvez choisir d' **inclure tous les utilisateurs de votre organisation** ou d' **inclure uniquement des utilisateurs et des groupes spécifiques**.
 
 Lorsque vous choisissez d' **inclure uniquement des utilisateurs et des groupes spécifiques,** vous pouvez :
 
-- **Ajoutez des utilisateurs** , ce qui vous permet d’utiliser la recherche pour votre client, ainsi que les fonctionnalités avancées de recherche et de filtrage, telles que le ciblage des utilisateurs qui n’ont pas été ciblés par une simulation au cours des 3 derniers mois.
+- **Ajoutez des utilisateurs**, ce qui vous permet d’utiliser la recherche pour votre client, ainsi que les fonctionnalités avancées de recherche et de filtrage, telles que le ciblage des utilisateurs qui n’ont pas été ciblés par une simulation au cours des 3 derniers mois.
   ![Filtrage des utilisateurs dans formation à la simulation d’attaque sur le centre de sécurité Microsoft 365](../../media/attack-sim-preview-user-targeting.png)
 - **Importer à partir de CSV** vous permet d’importer un ensemble prédéfini d’utilisateurs pour cette simulation.
 
@@ -94,7 +94,7 @@ Dans les étapes suivantes, vous devrez **Ajouter des formations** si vous avez 
 
 ## <a name="launch-details-and-review"></a>Détails du lancement et révision
 
-Maintenant que tout est configuré, vous pouvez lancer cette simulation immédiatement ou la planifier à une date ultérieure. Vous devrez également choisir quand mettre fin à cette simulation. Nous allons arrêter de capturer l’interaction avec cette simulation au-delà de la période sélectionnée. 
+Maintenant que tout est configuré, vous pouvez lancer cette simulation immédiatement ou la planifier à une date ultérieure. Vous devrez également choisir quand mettre fin à cette simulation. Nous allons arrêter de capturer l’interaction avec cette simulation au-delà de la période sélectionnée.
 
 **Activer la fourniture de fuseau horaire prenant en charge la région** pour transmettre des messages d’attaque simulés à vos employés pendant leurs heures de travail en fonction de leur région.
 

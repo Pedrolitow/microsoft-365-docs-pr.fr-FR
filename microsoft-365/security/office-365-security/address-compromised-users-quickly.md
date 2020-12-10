@@ -14,12 +14,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.date: 02/25/2020
 description: Découvrez comment accélérer le processus de détection et d’adressage des comptes d’utilisateurs compromis avec des fonctionnalités d’analyse et de réponse automatisées dans Microsoft Defender pour Office 365 plan 2.
-ms.openlocfilehash: 80e4529f864d83d2a1711007f0f095de39955e68
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 19c9bad33263178f92c6fe523b44497cf38ebd53
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357910"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616736"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Adresser des comptes d’utilisateurs compromis avec une enquête et une réponse automatisées
 
@@ -63,11 +63,11 @@ Lorsqu’un compte d’utilisateur est compromis, des alertes sont déclenchées
 
 ### <a name="view-and-investigate-restricted-users"></a>Afficher et examiner les utilisateurs avec accès restreint
 
-Vous disposez de plusieurs options pour accéder à une liste d’utilisateurs restreints. Par exemple, dans le centre de sécurité & conformité, vous pouvez accéder à la **gestion des menaces**  >  **examiner**  >  **les utilisateurs restreints**. La procédure suivante décrit la navigation à l’aide du tableau de bord **alertes** , qui permet de visualiser les différents types d’alertes qui ont pu être déclenchés.
+Vous disposez de plusieurs options pour accéder à une liste d’utilisateurs restreints. Par exemple, dans le centre de sécurité & conformité, vous pouvez accéder à la **gestion des menaces** \> **examiner** \> **les utilisateurs restreints**. La procédure suivante décrit la navigation à l’aide du tableau de bord **alertes** , qui permet de visualiser les différents types d’alertes qui ont pu être déclenchés.
 
-1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous.
+1. Accédez à <https://protection.office.com> et connectez-vous.
 
-2. Dans le volet de navigation, **Alerts** choisissez  >  **tableau de bord** alertes.
+2. Dans le volet de navigation,  choisissez \> **tableau de bord** alertes.
 
 3. Dans le widget **autres alertes** , choisissez **utilisateurs restreints**.
 
@@ -81,7 +81,7 @@ Vous disposez de plusieurs options pour accéder à une liste d’utilisateurs r
 
 ### <a name="view-details-about-automated-investigations"></a>Afficher les détails des enquêtes automatisées
 
-Lorsqu’une enquête automatisée a commencé, vous pouvez consulter ses détails et résultats dans le centre de sécurité & conformité. Accédez aux **Threat management**  >  **enquêtes** de gestion des menaces, puis sélectionnez une enquête pour en afficher les détails.
+Lorsqu’une enquête automatisée a commencé, vous pouvez consulter ses détails et résultats dans le centre de sécurité & conformité. Accédez aux  \> **enquêtes** de gestion des menaces, puis sélectionnez une enquête pour en afficher les détails.
 
 Pour en savoir plus, consultez la rubrique [afficher les détails d’une enquête](air-view-investigation-results.md).
 

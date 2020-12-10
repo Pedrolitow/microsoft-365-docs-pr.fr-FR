@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur les stratégies anti-hameçonnage disponibles dans Exchange Online Protection (EOP) et Microsoft Defender pour Office 365.
-ms.openlocfilehash: 839d76c1e07b457f671f1f0eccd0a9160e4039a3
-ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
+ms.openlocfilehash: 9d3c8c0bf2b1c440892a1099d3d0812d95027156
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49568578"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615767"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Stratégies anti-hameçonnage dans Microsoft 365
 
@@ -129,7 +129,6 @@ Pour empêcher l’ajout d’un point d’interrogation ou d’une balise à des
 - Autoriser l’expéditeur à usurper la stratégie d’intelligence d’usurpation d’identité. Cette action empêche l’affichage de la balise via dans les messages provenant de l’expéditeur lorsque l’identification de l’expéditeur non authentifié est désactivée. Pour obtenir des instructions, consultez la rubrique [configure usurpation Intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
 
 - [Configurez l’authentification de messagerie](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own) pour le domaine de l’expéditeur.
-  
   - Pour le point d’interrogation de la photo de l’expéditeur, SPF ou DKIM sont les plus importants.
   - Pour la balise via, vérifiez le domaine dans la signature DKIM ou l’adresse **Mail from** correspond (ou est un sous-domaine du) au domaine dans l’adresse de l’expéditeur.
 

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Intégrer le serveur SIEM de votre organisation à Microsoft Defender pour Office 365 et aux événements de menace associés dans l’API de gestion des activités Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6253ed0133bf53bdbeca71bb595a850e25441311
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: 93ff1606130c60ceb46087d28bb26f9a6d27d330
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561698"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615659"
 ---
 # <a name="siem-integration-with-microsoft-defender-for-office-365"></a>Intégration SIEM à Microsoft Defender pour Office 365
 
@@ -61,7 +61,9 @@ Le tableau suivant récapitule les valeurs de **AuditLogRecordType** qui sont pe
 |
 
 > [!IMPORTANT]
-> Vous devez être un administrateur général ou avoir le rôle d’administrateur de sécurité attribué pour le centre de sécurité & conformité afin de configurer l’intégration SIEM avec Microsoft Defender pour Office 365.<br/>La journalisation d’audit doit être activée pour votre environnement Microsoft 365. Pour obtenir de l’aide, consultez la rubrique [activer ou désactiver la recherche dans le journal d’audit](../../compliance/turn-audit-log-search-on-or-off.md).
+> Vous devez être un administrateur général ou avoir le rôle d’administrateur de sécurité attribué pour le centre de sécurité & conformité afin de configurer l’intégration SIEM avec Microsoft Defender pour Office 365.
+>
+> La journalisation d’audit doit être activée pour votre environnement Microsoft 365. Pour obtenir de l’aide, consultez la rubrique [activer ou désactiver la recherche dans le journal d’audit](../../compliance/turn-audit-log-search-on-or-off.md).
 
 ## <a name="see-also"></a>Voir aussi
 

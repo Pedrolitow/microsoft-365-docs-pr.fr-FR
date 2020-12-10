@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 description: Les administrateurs peuvent en savoir plus sur la protection contre les menaces dans Microsoft 365 et configurer la façon de l’utiliser pour votre organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 98a20c8805ff9eb735ca880cfc24a0acf9698b3e
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: 646fff4550de2e07342c0fef04952846db65a8eb
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561200"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615119"
 ---
 # <a name="protect-against-threats"></a>Protéger contre les menaces
 
@@ -54,7 +54,7 @@ Les fonctionnalités de protection contre les menaces sont incluses dans *tous l
 |Protection anti-hameçonnage|[Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Protection anti-courrier indésirable|[Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Purge automatique avec zéro heure (pour la messagerie électronique)|[Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
-|Protection contre les URL et les fichiers malveillants dans les e-mails et les documents Office (liens fiables et pièces jointes fiables)|[Microsoft Defender pour Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
+|Protection contre les URL et les fichiers malveillants dans les e-mails et les documents Office (liens fiables et pièces jointes fiables)|[Microsoft Defender pour Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 |Activer la protection avancée contre les menaces pour les charges de travail SharePoint, OneDrive et Microsoft teams|[Defender pour Office 365 ](atp-for-spo-odb-and-teams.md)|
 |Protection avancée contre le hameçonnage|[Defender pour Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 
@@ -68,7 +68,7 @@ Pour configurer les stratégies Defender pour Office 365, vous devez disposer d�
 |---|---|
 |administrateur général|[À propos des rôles d’administrateur Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|
 |Administrateur de sécurité|[Autorisations des rôles d’administrateur dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
-|Gestion d’Organisation Exchange Online|[Autorisations dans Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <br>et<br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)|
+|Gestion d’Organisation Exchange Online|[Autorisations dans Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <p> et <p> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)|
 |
 
 Pour en savoir plus, consultez [la rubrique autorisations dans le centre de sécurité & conformité](permissions-in-the-security-and-compliance-center.md).
@@ -81,7 +81,7 @@ Commencez la journalisation d’audit au plus tôt. L’audit doit être **activ
 
 La [protection contre les programmes malveillants](anti-malware-protection.md) est disponible dans les abonnements incluant [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
 
-1. Dans le [Centre de sécurité & conformité](https://protection.office.com), **Threat management** choisissez  >  **Policy**  >  **protection contre les programmes malveillants** pour la stratégie de gestion des menaces.
+1. Dans le [Centre de sécurité & conformité](https://protection.office.com),  choisissez \>  \> **protection contre les programmes malveillants** pour la stratégie de gestion des menaces.
 
 2. Double-cliquez sur la stratégie **par défaut** , puis sélectionnez **paramètres**.
 
@@ -101,7 +101,7 @@ La [protection anti-hameçonnage](anti-phishing-protection.md) est disponible da
 
 La procédure suivante décrit comment configurer une stratégie anti-hameçonnage dans Microsoft Defender pour Office 365. Les étapes sont similaires pour la configuration d’une stratégie anti-hameçonnage dans EOP.
 
-1. Dans le [Centre de sécurité & conformité](https://protection.office.com), **Threat management** sélectionnez  >  **Policy**  >  **protection contre les** menaces pour le hameçonnage.
+1. Dans le [Centre de sécurité & conformité](https://protection.office.com),  sélectionnez \>  \> **protection contre les** menaces pour le hameçonnage.
 
 2. Cliquez sur **stratégie par défaut**.
 
@@ -135,7 +135,7 @@ Pour en savoir plus sur les options de stratégie anti-hameçonnage, consultez l
 
 La [protection contre le courrier indésirable](anti-spam-protection.md) est disponible dans les abonnements incluant [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
 
-1. Dans le [Centre de sécurité & conformité](https://protection.office.com), **Threat management** choisissez  >  **Policy**  >  **protection contre le courrier indésirable** pour la stratégie de gestion des menaces.
+1. Dans le [Centre de sécurité & conformité](https://protection.office.com),  choisissez \>  \> **protection contre le courrier indésirable** pour la stratégie de gestion des menaces.
 
 2. Sous l’onglet **personnalisé** , activez les paramètres personnalisés.
 
@@ -157,7 +157,7 @@ La protection du temps de clic à partir d’URL et de fichiers malveillants est
 
 Pour configurer des [pièces jointes fiables](atp-safe-attachments.md), créez au moins une stratégie de liens fiables.
 
-1. Dans le [Centre de sécurité & conformité](https://protection.office.com), sélectionnez **gestion des menaces**-  >  **Policy**  >  **pièces jointes ATP**, puis cliquez sur **créer**.
+1. Dans le [Centre de sécurité & conformité](https://protection.office.com), sélectionnez **gestion des menaces** - \>  \> **pièces jointes ATP**, puis cliquez sur **créer**.
 
 2. Dans l’Assistant **nouvelle stratégie de pièces jointes approuvées** qui s’affiche, configurez les paramètres suivants :
 
@@ -177,7 +177,7 @@ Pour configurer des [pièces jointes fiables](atp-safe-attachments.md), créez a
 
 Pour configurer des [liens fiables](atp-safe-links.md), vérifiez et modifiez vos paramètres globaux pour les liens fiables et créez au moins une stratégie de liens fiables.
 
-1. Dans le [Centre de sécurité & conformité](https://protection.office.com), sélectionnez **gestion des menaces**-  >  **Policy**  >  **liens approuvés ATP**, puis cliquez sur **paramètres globaux**, puis configurez les paramètres suivants :
+1. Dans le [Centre de sécurité & conformité](https://protection.office.com), sélectionnez **gestion des menaces** - \>  \> **liens approuvés ATP**, puis cliquez sur **paramètres globaux**, puis configurez les paramètres suivants :
 
    - Vérifier **l’utilisation des liens fiables dans : les applications Office 365** sont activées : ![ activer/désactiver ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
    - **Ne pas effectuer le suivi lorsque les utilisateurs cliquent sur liens fiables**: désactiver ce paramètre pour effectuer le suivi des clics des utilisateurs : désactiver ![ ](../../media/scc-toggle-off.png) .
@@ -214,7 +214,7 @@ Les charges de travail telles que SharePoint, OneDrive et teams sont conçues po
 > [!IMPORTANT]
 > **Avant de commencer cette procédure, assurez-vous que la journalisation d’audit est déjà activée pour votre environnement Microsoft 365**. Cette opération est généralement réalisée par une personne disposant du rôle journaux d’audit dans Exchange Online. Pour plus d’informations, consultez la rubrique [activer ou désactiver la recherche dans le journal d’audit](../../compliance/turn-audit-log-search-on-or-off.md)!
 
-1. Dans le [Centre de sécurité & conformité](https://protection.office.com), **Threat management** choisissez pièces jointes fiables pour la stratégie de gestion des menaces  >  **Policy**  >  **ATP Safe Attachments**, puis cliquez sur **paramètres globaux**.
+1. Dans le [Centre de sécurité & conformité](https://protection.office.com),  choisissez pièces jointes fiables pour la stratégie de gestion des menaces \>  \> , puis cliquez sur **paramètres globaux**.
 
 2. Vérifiez que l’option Activer la protection avancée contre les menaces **pour SharePoint, OneDrive et Microsoft teams** est activée : ![ activer/désactiver ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) , puis cliquez sur **Enregistrer**.
 
@@ -284,7 +284,7 @@ Après avoir configuré les fonctionnalités de protection contre les menaces, v
 
 |Procédure|Ressources pour en savoir plus|
 |---|---|
-|Découvrez comment les fonctionnalités de protection contre les menaces fonctionnent pour votre organisation en affichant des rapports|[Tableau de bord de sécurité](security-dashboard.md)<br/>[Rapports de sécurité de messagerie](view-email-security-reports.md)<br/>[Rapports pour Microsoft Defender pour Office 365](view-reports-for-atp.md)<br/>[Threat Explorer](threat-explorer.md)|
-|Vérifier et réviser régulièrement vos stratégies de protection contre les menaces selon vos besoins|[Degré de sécurisation](../mtp/microsoft-secure-score.md)<br/>[Rapports intelligents et Insights](reports-and-insights-in-security-and-compliance.md)<br/>[Fonctionnalités d’enquête et de réponse aux menaces Microsoft 365](keep-users-safe-with-office-365-ti.md)|
-|Surveillez les nouvelles fonctionnalités et les mises à jour de service|[Options de publication standard et ciblées](https://docs.microsoft.com/microsoft-365/admin/manage/release-options-in-office-365)<br/>[Centre de messages](https://docs.microsoft.com/microsoft-365/admin/manage/message-center)<br/>[Feuille de route de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection)<br/>[Descriptions des services](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)|
+|Découvrez comment les fonctionnalités de protection contre les menaces fonctionnent pour votre organisation en affichant des rapports|[Tableau de bord de sécurité](security-dashboard.md) <p> [Rapports de sécurité de messagerie](view-email-security-reports.md) <p> [Rapports pour Microsoft Defender pour Office 365](view-reports-for-atp.md) <p> [Threat Explorer](threat-explorer.md)|
+|Vérifier et réviser régulièrement vos stratégies de protection contre les menaces selon vos besoins|[Degré de sécurisation](../mtp/microsoft-secure-score.md) <p> [Rapports intelligents et Insights](reports-and-insights-in-security-and-compliance.md) <p> [Fonctionnalités d’enquête et de réponse aux menaces Microsoft 365](keep-users-safe-with-office-365-ti.md)|
+|Surveillez les nouvelles fonctionnalités et les mises à jour de service|[Options de publication standard et ciblées](https://docs.microsoft.com/microsoft-365/admin/manage/release-options-in-office-365) <p> [Centre de messages](https://docs.microsoft.com/microsoft-365/admin/manage/message-center) <p> [Feuille de route de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection) <p> [Descriptions des services](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)|
 |Découvrez les détails des configurations de sécurité standard et rigoureuses recommandées pour EOP et Defender pour Office 365|[Paramètres recommandés pour EOP et Microsoft Defender pour Office 365 sécurité](recommended-settings-for-eop-and-office365-atp.md)|

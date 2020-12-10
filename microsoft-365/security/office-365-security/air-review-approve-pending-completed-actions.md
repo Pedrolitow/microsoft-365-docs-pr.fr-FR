@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Découvrez les actions de correction dans les fonctionnalités d’enquête et de réponse automatisées dans Microsoft Defender pour Office 365 plan 2.
-ms.openlocfilehash: 7dc5c0ba2e320e3f140d26e79e5c2e4a8fde79d7
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 9a1fdb4bec5168dfcd816dbce7da01f930e38ae1
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844559"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615191"
 ---
 # <a name="view-pending-or-completed-remediation-actions-following-an-automated-investigation-in-office-365"></a>Afficher les actions de correction en attente ou terminées à la suite d’une enquête automatisée dans Office 365
 
@@ -39,17 +39,17 @@ Lors de l’affichage [des détails d’une enquête](air-view-investigation-res
 > [!IMPORTANT]
 > Les autorisations appropriées sont requises pour approuver ou rejeter les actions correctives. Consultez la rubrique [Required Permissions to use air Capabilities](office-365-air.md#required-permissions-to-use-air-capabilities).
 
-1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous. Cette opération vous permet d’accéder au centre de sécurité & conformité.
+1. Accédez à <https://protection.office.com> et connectez-vous. Cette opération vous permet d’accéder au centre de sécurité & conformité.
 
-2. Accédez aux enquêtes de **gestion des menaces**  >  **Investigations**.
+2. Accédez aux enquêtes de **gestion des menaces** \> .
 
-3. Dans la liste des enquêtes, sélectionnez un élément dans la colonne **ID** . 
+3. Dans la liste des enquêtes, sélectionnez un élément dans la colonne **ID** .
 
 4. Sélectionnez l’onglet **actions** .
 
 5. Sélectionnez un élément dans la liste. (Cela active les boutons approuver et rejeter.)
 
-6. Examinez les informations disponibles pour les éléments que vous avez sélectionnés, puis approuvez ou rejetez la ou les actions. 
+6. Examinez les informations disponibles pour les éléments que vous avez sélectionnés, puis approuvez ou rejetez la ou les actions.
    - **Approuver** : le début de la correction.
    - Le **rejet** n’effectue aucune action supplémentaire
 

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
 description: Découvrez comment choisir le domaine à utiliser lors de la création de groupes Microsoft 365 en configurant des stratégies d’adresse de messagerie à l’aide de PowerShell.
-ms.openlocfilehash: bb6137a3dfce17bc9c94648e5ea9e12ec2776195
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 1e56268c3994b1ac822869d154be826326039bfc
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377436"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49612939"
 ---
 # <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>Choisir le domaine à utiliser lors de la création de groupes Microsoft 365
 
@@ -79,7 +79,7 @@ Supposons que vous souhaitez contrôler les sous-domaines dans lesquels les grou
 
 ## <a name="change-email-address-policies"></a>Modifier les stratégies d’adresse de messagerie
 
-Pour modifier les modèles de priorité ou d’adresse de messagerie d’un protocole EAP existant, utilisez la cmdlet Set-EmailAddressPolicy.
+Pour modifier les modèles de priorité ou d’adresse de messagerie d’un protocole EAP existant, utilisez l’applet de commande Set-EmailAddressPolicy.
   
 ```
 Set-EmailAddressPolicy -Name StudentsGroups -EnabledEmailAddressTemplates "SMTP:@students.groups.contoso.com","smtp:@groups.contoso.com", "smtp:@students.contoso.com" ManagedByFilter {Department -eq 'Students'} -Priority 2
@@ -90,7 +90,7 @@ La modification d’un protocole EAP n’a pas d’impact sur les groupes qui on
   
 ## <a name="delete-email-address-policies"></a>Supprimer des stratégies d’adresse de messagerie
 
-Pour supprimer un protocole EAP, utilisez la cmdlet Remove-EmailAddressPolicy.
+Pour supprimer un protocole EAP, utilisez l’applet de commande Remove-EmailAddressPolicy.
   
 ```
 Remove-EmailAddressPolicy -Identity StudentsGroups
@@ -119,5 +119,9 @@ Voici quelques éléments à prendre en compte :
 - Une limite maximale de 100 stratégies d’adresse de messagerie peut être configurée pour une organisation.
     
 ## <a name="related-articles"></a>Articles connexes
+
+[Planification de la gouvernance de collaboration étape par étape](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[Création de votre plan de gouvernance de collaboration](collaboration-governance-first.md)
 
 [Créer un groupe Microsoft 365 dans le centre d’administration](https://docs.microsoft.com/microsoft-365/admin/create-groups/create-groups)

@@ -1,5 +1,5 @@
 ---
-title: Gestion des risques internes
+title: En savoir plus sur la gestion des risques internes Microsoft
 description: Découvrez comment limiter les risques au sein de votre organisation avec la gestion des risques initiés dans Microsoft 365.
 keywords: Microsoft 365, Insider Risk, gestion des risques, conformité
 localization_priority: Normal
@@ -15,14 +15,14 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 82a7d1c9eec13d87fa45b12b072e9712ccd267c2
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: bd228675cfe5f0443064053a0c6e18968524df7e
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847810"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613420"
 ---
-# <a name="insider-risk-management-in-microsoft-365"></a>Gestion des risques internes dans Microsoft 365
+# <a name="learn-about-insider-risk-management-in-microsoft-365"></a>En savoir plus sur la gestion des risques internes dans Microsoft 365
 
 La gestion des risques initiés est une solution de conformité dans Microsoft 365 qui permet de réduire les risques internes en vous permettant de détecter, d’examiner et d’agir sur les activités malveillantes et involontaires dans votre organisation. Les stratégies de risque d’initié vous permettent de définir les types de risques à identifier et à détecter dans votre organisation, notamment en agissant sur les incidents et en transférant les incidents à Microsoft Advanced eDiscovery si nécessaire. Les analystes de risques de votre organisation peuvent rapidement prendre les mesures appropriées pour s’assurer que les utilisateurs sont conformes aux normes de conformité de votre organisation.
 
@@ -48,10 +48,10 @@ La gestion des risques initiés par les utilisateurs utilise l’ensemble comple
 
 La gestion des risques initiés est axée sur les principes suivants :
 
-- **Transparence** : équilibrer la confidentialité des utilisateurs et l’Organisation des risques avec l’architecture de confidentialité.
-- **Configurable** : stratégies configurables basées sur les groupes de secteur industriel, géographique et d’entreprise.
-- **Intégré** : flux de travail intégré dans les solutions de conformité Microsoft 365.
-- **Exploitable** : fournit des informations pour activer les notifications utilisateur, les enquêtes de données et les investigations utilisateur.
+- **Transparence**: équilibrer la confidentialité des utilisateurs et l’Organisation des risques avec l’architecture de confidentialité.
+- **Configurable**: stratégies configurables basées sur les groupes de secteur industriel, géographique et d’entreprise.
+- **Intégré**: flux de travail intégré dans les solutions de conformité Microsoft 365.
+- **Exploitable**: fournit des informations pour activer les notifications utilisateur, les enquêtes de données et les investigations utilisateur.
 
 ## <a name="workflow"></a>Flux de travail
 
@@ -83,7 +83,7 @@ Vous pouvez sélectionner l’un des modèles de stratégie suivants pour commen
 
 Les alertes sont automatiquement générées par des indicateurs de risque qui correspondent aux conditions de la stratégie et sont affichés dans le [tableau de bord des alertes](insider-risk-management-alerts.md). Ce tableau de bord permet d’afficher un aperçu rapide de toutes les alertes nécessitant une révision, d’ouvrir des alertes dans le temps et de statistiques d’alerte pour votre organisation. Toutes les alertes de stratégie s’affichent avec les informations suivantes pour vous aider à identifier rapidement l’état des alertes existantes et de nouvelles alertes qui nécessitent une action :
 
-- Statut
+- État
 - Severity
 - Heure de détection
 - Cas
@@ -106,8 +106,8 @@ Des [cas](insider-risk-management-cases.md) sont créés pour les alertes qui n�
 La sélection d’un cas dans le tableau de bord de cas ouvre le cas à des fins d’examen et de révision. Cette étape est le cœur du flux de travail de gestion des risques Insiders. Ce domaine est l’endroit où les activités de risque, les conditions de la stratégie, les détails des alertes et les détails de l’utilisateur sont synthétisés dans un mode intégré pour les relecteurs. Les principaux outils d’enquête de cette zone sont les suivants :
 
 - **Activité** de l’utilisateur : l’activité de l’utilisateur est automatiquement affichée dans un graphique interactif qui représente les activités dans le temps et selon le niveau de risque pour les activités actuelles ou passées. Les relecteurs peuvent rapidement filtrer et afficher l’historique des risques de l’utilisateur et effectuer des recherches dans des activités spécifiques pour obtenir plus d’informations.
-- **Explorateur de contenu** : tous les fichiers de données et les messages électroniques associés aux activités d’alerte sont automatiquement capturés et affichés dans l’Explorateur de contenu. Les relecteurs peuvent filtrer et afficher les fichiers et les messages par source de données, type de fichier, balises, conversation et bien d’autres attributs.
-- **Notes de cas** : les relecteurs peuvent fournir des notes pour un cas dans la section Notes de cas. Cette liste consolide toutes les notes dans une vue centrale et inclut les informations de réviseur et de date d’envoi.
+- **Explorateur de contenu**: tous les fichiers de données et les messages électroniques associés aux activités d’alerte sont automatiquement capturés et affichés dans l’Explorateur de contenu. Les relecteurs peuvent filtrer et afficher les fichiers et les messages par source de données, type de fichier, balises, conversation et bien d’autres attributs.
+- **Notes de cas**: les relecteurs peuvent fournir des notes pour un cas dans la section Notes de cas. Cette liste consolide toutes les notes dans une vue centrale et inclut les informations de réviseur et de date d’envoi.
 
 ![Enquête sur la gestion des risques des Insiders](../media/insider-risk-investigate.png)
 
@@ -117,9 +117,9 @@ Après enquête, les réviseurs peuvent rapidement agir pour résoudre le cas ou
 
 Dans les situations les plus graves, vous devrez peut-être partager les informations de cas de gestion des risques Insider avec d’autres réviseurs ou services dans votre organisation. La gestion des risques initiés est étroitement intégrée aux autres solutions de conformité Microsoft 365 pour vous aider à résoudre les risques de bout en bout.
 
-- **Advanced eDiscovery** : le remontage d’un cas pour l’enquête vous permet de transférer des données et de gérer le cas vers Advanced EDiscovery dans Microsoft 365. Advanced eDiscovery fournit un flux de travail intégral pour préserver, collecter, examiner, analyser et exporter du contenu adapté aux examens internes et externes de votre organisation. Il permet aux équipes juridiques de gérer l’ensemble du flux de travail de notification de conservation légale. Pour en savoir plus sur les cas Advanced eDiscovery, consultez [Présentation de Advanced eDiscovery dans Microsoft 365](overview-ediscovery-20.md).
-- **ServiceNow (aperçu)** : ServiceNow est une plateforme de Cloud Computing populaire qui aide les organisations à gérer les flux de travail numériques pour les opérations d’entreprise. La gestion des risques initiés prend en charge le partage des alertes de cas avec votre service ServiceNow et vous permet de créer des demandes d’incident et de modification liées à des cas particuliers de risque d’initié. Pour en savoir plus sur le partage des informations d’alerte avec ServiceNow, voir [partager un cas avec ServiceNow](insider-risk-management-cases.md#share-the-case).
-- **Office 365 Management API Integration (Preview)** : la gestion des risques internes prend en charge l’exportation des informations d’alerte vers les services d’informations de sécurité et de gestion des événements via les API de gestion d’Office 365. L’accès aux informations d’alerte dans la plateforme le mieux adapté aux processus de risque de votre organisation vous offre plus de flexibilité dans la procédure à suivre pour agir sur les activités à risque. Pour en savoir plus sur l’exportation des informations d’alerte avec les API de gestion d’Office 365, consultez la rubrique [Export Alerts](insider-risk-management-settings.md#export-alerts-preview).
+- **Advanced eDiscovery**: le remontage d’un cas pour l’enquête vous permet de transférer des données et de gérer le cas vers Advanced EDiscovery dans Microsoft 365. Advanced eDiscovery fournit un flux de travail intégral pour préserver, collecter, examiner, analyser et exporter du contenu adapté aux examens internes et externes de votre organisation. Il permet aux équipes juridiques de gérer l’ensemble du flux de travail de notification de conservation légale. Pour en savoir plus sur les cas Advanced eDiscovery, consultez [Présentation de Advanced eDiscovery dans Microsoft 365](overview-ediscovery-20.md).
+- **ServiceNow (aperçu)**: ServiceNow est une plateforme de Cloud Computing populaire qui aide les organisations à gérer les flux de travail numériques pour les opérations d’entreprise. La gestion des risques initiés prend en charge le partage des alertes de cas avec votre service ServiceNow et vous permet de créer des demandes d’incident et de modification liées à des cas particuliers de risque d’initié. Pour en savoir plus sur le partage des informations d’alerte avec ServiceNow, voir [partager un cas avec ServiceNow](insider-risk-management-cases.md#share-the-case).
+- **Office 365 Management API Integration (Preview)**: la gestion des risques internes prend en charge l’exportation des informations d’alerte vers les services d’informations de sécurité et de gestion des événements via les API de gestion d’Office 365. L’accès aux informations d’alerte dans la plateforme le mieux adapté aux processus de risque de votre organisation vous offre plus de flexibilité dans la procédure à suivre pour agir sur les activités à risque. Pour en savoir plus sur l’exportation des informations d’alerte avec les API de gestion d’Office 365, consultez la rubrique [Export Alerts](insider-risk-management-settings.md#export-alerts-preview).
 
 >[!NOTE]
 >Nous vous remercions pour vos commentaires sur l’aperçu du connecteur ServiceNow. Nous avons décidé de terminer la préversion d’ServiceNow Connector et de la prise en charge de la gestion des risques initiés le 30 novembre 2020. Nous évaluons activement d’autres méthodes pour fournir aux clients une intégration ServiceNow dans la gestion des risques initiés.

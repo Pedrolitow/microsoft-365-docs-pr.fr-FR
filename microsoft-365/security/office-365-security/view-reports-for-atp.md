@@ -19,19 +19,19 @@ ms.collection:
 - m365initiative-defender-office365
 description: Recherchez et utilisez des rapports pour Microsoft Defender pour Office 365 dans le centre de sécurité & conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a237049c9ebbccf1c01feeb21129496e16d437b2
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: 2818362eea4071430bb2c784ceb0ce0eeb970a79
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572488"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615575"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-reports-dashboard-in-the-security--compliance-center"></a>Afficher les rapports de Defender pour Office 365 dans le tableau de bord rapports du centre de sécurité & conformité
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Microsoft Defender pour les organisations Office 365 (par exemple, les abonnements Microsoft 365 E5 ou Microsoft Defender pour Office 365 plan 1 ou Microsoft Defender for Office 365 plan 2 Add-ons) contiennent un grand nombre de rapports liés à la sécurité. Si vous disposez des [autorisations nécessaires](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports), vous pouvez afficher ces rapports dans le centre de sécurité & conformité en accédant au **Reports** \> **tableau de bord** rapports. Pour accéder directement au tableau de bord rapports, ouvrez <https://protection.office.com/insightdashboard> .
+Microsoft Defender pour les organisations Office 365 (par exemple, les abonnements Microsoft 365 E5 ou Microsoft Defender pour Office 365 plan 1 ou Microsoft Defender for Office 365 plan 2 Add-ons) contiennent un grand nombre de rapports liés à la sécurité. Si vous disposez des [autorisations nécessaires](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports), vous pouvez afficher ces rapports dans le centre de sécurité & conformité en accédant au  \> **tableau de bord** rapports. Pour accéder directement au tableau de bord rapports, ouvrez <https://protection.office.com/insightdashboard> .
 
 ![Tableau de bord des rapports dans le centre de sécurité & conformité](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
@@ -41,7 +41,7 @@ Le rapport de **rapports sur les types de fichiers Office 365 Defender** indique
 
  La vue agrégée du rapport autorise 90 jours de filtrage, tandis que l’affichage détaillé autorise uniquement les 10 jours de filtrage.
 
-Pour afficher le rapport, ouvrez le [Centre de sécurité & conformité](https://protection.office.com), accédez **Reports** au \> **tableau de bord** rapports et sélectionnez **types de fichiers Defender pour Office 365**. Pour accéder directement au rapport, ouvrez <https://protection.office.com/reportv2?id=ATPFileReport> .
+Pour afficher le rapport, ouvrez le [Centre de sécurité & conformité](https://protection.office.com), accédez  au \> **tableau de bord** rapports et sélectionnez **types de fichiers Defender pour Office 365**. Pour accéder directement au rapport, ouvrez <https://protection.office.com/reportv2?id=ATPFileReport> .
 
 ![Widget de types de fichiers Office 365 Defender dans le tableau de bord rapports](../../media/atp-file-types-report-widget.png)
 
@@ -123,7 +123,7 @@ Pour revenir à l’affichage rapports, cliquez sur **afficher le rapport**.
 
 Le rapport de **disposition des messages ATP** indique les actions qui ont été effectuées pour les messages électroniques détectés comme présentant du contenu malveillant.
 
-Pour afficher le rapport, ouvrez le [Centre de sécurité & conformité](https://protection.office.com), accédez **Reports** au \> **tableau de bord** rapports et sélectionnez mise en **place de message Defender pour Office 365**. Pour accéder directement au rapport, ouvrez <https://protection.office.com/reportv2?id=ATPMessageReport> .
+Pour afficher le rapport, ouvrez le [Centre de sécurité & conformité](https://protection.office.com), accédez  au \> **tableau de bord** rapports et sélectionnez mise en **place de message Defender pour Office 365**. Pour accéder directement au rapport, ouvrez <https://protection.office.com/reportv2?id=ATPMessageReport> .
 
 ![« Defender for Office 365 message disposition widget » dans le tableau de bord rapports](../../media/atp-message-disposition-report-widget.png)
 
@@ -211,7 +211,7 @@ Le **rapport de latence du courrier** affiche une vue agrégée de la remise de 
 
 La latence du réseau et du côté client ne sont pas incluses.
 
-Pour afficher le rapport, ouvrez le [Centre de sécurité & conformité](https://protection.office.com), accédez **Reports** au \> **tableau de bord** rapports et sélectionnez rapport de **latence de messagerie**. Pour accéder directement au rapport, ouvrez <https://protection.office.com/mailLatencyReport?viewid=P50> .
+Pour afficher le rapport, ouvrez le [Centre de sécurité & conformité](https://protection.office.com), accédez  au \> **tableau de bord** rapports et sélectionnez rapport de **latence de messagerie**. Pour accéder directement au rapport, ouvrez <https://protection.office.com/mailLatencyReport?viewid=P50> .
 
 ![Widget rapport de latence du courrier dans le tableau de bord rapports](../../media/mail-latency-report-widget.png)
 
@@ -264,7 +264,7 @@ Le rapport d' **État de protection contre les menaces** est une vue unique qui 
 
 Le **rapport URL protection contre les menaces** fournit des vues récapitulatives et des tendances pour les menaces détectées, ainsi que les actions effectuées sur les clics d’URL dans le cadre de [liens fiables](atp-safe-links.md). Ce rapport n’aura pas de clic sur les données des utilisateurs pour lesquels la stratégie de liens fiables est sélectionnée, l’option **ne pas suivre les clics utilisateur** est activée.
 
-Pour afficher le rapport, ouvrez le [Centre de sécurité & conformité](https://protection.office.com), accédez **Reports** au \> **tableau de bord** rapports et sélectionnez **URL protection Report**. Pour accéder directement au rapport, ouvrez <https://protection.office.com/reportv2?id=URLProtectionActionReport> .
+Pour afficher le rapport, ouvrez le [Centre de sécurité & conformité](https://protection.office.com), accédez  au \> **tableau de bord** rapports et sélectionnez **URL protection Report**. Pour accéder directement au rapport, ouvrez <https://protection.office.com/reportv2?id=URLProtectionActionReport> .
 
 ![Widget rapport de protection des URL dans le tableau de bord rapports](../../media/url-protection-report-widget.png)
 
@@ -347,14 +347,14 @@ Pour afficher et utiliser les rapports décrits dans cette rubrique, vous devez 
 
 Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
 
-**Remarque**: l’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le centre d’administration 365 de Microsoft donne aux utilisateurs les autorisations requises dans le centre de sécurité & conformité _et_ des autorisations pour d’autres fonctionnalités de Microsoft 365. Si vous souhaitez en savoir plus, veuillez consulter la page [À propos des rôles d’administrateur](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+**Remarque**: l’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le centre d’administration 365 de Microsoft donne aux utilisateurs les autorisations requises dans le centre de sécurité & conformité _et_ des autorisations pour d’autres fonctionnalités de Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>Qu’en est-il si les rapports n’affichent pas de données ?
 
 Si vous ne voyez pas de données dans votre compte Defender pour les rapports Office 365, vérifiez que vos stratégies sont correctement configurées. Votre organisation doit avoir [des stratégies de liens fiables](set-up-atp-safe-links-policies.md) et des [stratégies de pièces jointes approuvées](set-up-atp-safe-attachments-policies.md) définies de manière à ce que la protection Defender pour Office 365 soit mise en place. Consultez également la rubrique protection contre le [courrier indésirable et les programmes malveillants](anti-spam-and-anti-malware-protection.md).
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Rapports intelligents et aperçus dans le Centre de sécurité et conformité](reports-and-insights-in-security-and-compliance.md)
-  
+
 [Autorisations de rôle (Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-permissions)

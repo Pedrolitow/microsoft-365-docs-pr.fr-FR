@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft offre une assistance pour EOP à divers emplacements et via plusieurs méthodes, y compris via des options de support autonome et de support assisté.
-ms.openlocfilehash: dd68200b7a3723adc7ccba899c0cc88031891197
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 3d11abee08fa3fdd7dfb659bd90e29908f9e4bda
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920429"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49614857"
 ---
 # <a name="help-and-support-for-eop"></a>Aide et support pour EOP
 
@@ -76,13 +76,13 @@ Microsoft met à disposition des numéros de téléphone locaux ou gratuits pour
 
 |Pays ou région|Questions préalables à l'achat et concernant la facturation|Questions d'assistance technique|
 |---|---|---|
-|Brésil|Numéro gratuit : 08007621146 <br/> Local : 1147001999|Identique|
-|France|Numéro gratuit : 0805 540 594 <br/> Local : 01 57 32 42 97|Identique|
-|Allemagne|Numéro gratuit : 0800 589 2332 <br/>  Local : 069 380 789 508|Identique|
-|Japon|Numéro gratuit : 0120-628860 <br/> Local : 343326257|Numéro gratuit : 0120-996680 <br/> Local : 357679793|
-|Corée|Numéro gratuit : 080-495-0880 <br/> Local : 234831937|Identique|
-|Espagne|Numéro gratuit : 900 814 197 <br/> Local : 912 718 160|Identique|
-|Royaume-Uni|Numéro gratuit : 0800 032 6417 <br/> Local : 0203 450 6455|Identique|
+|Brésil|Numéro gratuit : 08007621146 <br> Local : 1147001999|Identique|
+|France|Numéro gratuit : 0805 540 594 <br> Local : 01 57 32 42 97|Identique|
+|Allemagne|Numéro gratuit : 0800 589 2332 <br>  Local : 069 380 789 508|Identique|
+|Japon|Numéro gratuit : 0120-628860 <br> Local : 343326257|Numéro gratuit : 0120-996680 <br> Local : 357679793|
+|Corée|Numéro gratuit : 080-495-0880 <br> Local : 234831937|Identique|
+|Espagne|Numéro gratuit : 900 814 197 <br> Local : 912 718 160|Identique|
+|Royaume-Uni|Numéro gratuit : 0800 032 6417 <br> Local : 0203 450 6455|Identique|
 |États-Unis|Numéro gratuit : 1-877-913-2707|Numéro gratuit : 1-800-865-9408|
 |
 

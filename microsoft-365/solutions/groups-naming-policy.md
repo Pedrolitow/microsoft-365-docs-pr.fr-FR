@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 description: Découvrez comment créer une stratégie d’attribution de noms pour les groupes Microsoft 365.
-ms.openlocfilehash: 55faf5c61d577b35b34923efc7b65457fe46de29
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 15fcbace737398c6edd2062e72622e8551ebd222
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377604"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613501"
 ---
 # <a name="microsoft-365-groups-naming-policy"></a>Stratégie de noms de groupes Microsoft 365
 
@@ -45,7 +45,7 @@ L’utilisation de la stratégie d’attribution de noms Azure AD pour les group
 
 Cela est également requis pour l’administrateur qui crée la stratégie de noms de groupes.
 
-## <a name="prefix-suffix-naming-policy"></a>Préfixe-suffixe de nom de suffixe
+## <a name="prefix-suffix-naming-policy"></a>Stratégie de noms de Prefix-Suffix
 
 Les préfixes et suffixes peuvent être des chaînes fixes ou des attributs d’utilisateur.
 
@@ -108,7 +108,7 @@ Aucune recherche de sous-chaîne n’est effectuée ; plus précisément, une c
 
 Certains administrateurs sont exemptés de ces stratégies, pour toutes les charges de travail et les points de terminaison de groupe, afin qu’ils puissent créer des groupes avec ces mots bloqués et avec les conventions d’affectation de noms de votre choix. Voici la liste des rôles d’administrateur exemptés de la stratégie de noms de groupes.
 
-- Administrateur global
+- Administrateur général
 
 - Prise en charge du niveau 1 du partenaire
 
@@ -132,5 +132,9 @@ Pour configurer une stratégie d’attribution de noms :
 ![Capture d’écran des paramètres de stratégie d’attribution de noms de groupes dans Azure Active Directory](../media/groups-naming-policy-azure.png)
 
 ## <a name="related-topics"></a>Voir aussi
+
+[Planification de la gouvernance de collaboration étape par étape](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[Création de votre plan de gouvernance de collaboration](collaboration-governance-first.md)
 
 [Cmdlets Azure Active Directory pour la configuration de paramètres de groupe](https://go.microsoft.com/fwlink/?linkid=868341)

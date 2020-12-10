@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à configurer les entrées d’URL dans la liste des clients autorisés/bloqués du centre de sécurité & Compliance Center.
-ms.openlocfilehash: 1aae54ffd6026a7fc131017a10f9676d96be9b69
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: 0fdfa23ba22b240032e7a6888948de180aa0f6ae
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572637"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49614963"
 ---
 # <a name="manage-urls-in-the-tenant-allowblock-list"></a>Gérer les URL dans la liste Autoriser/Bloquer du client
 
@@ -38,7 +38,7 @@ Cette rubrique décrit comment configurer les entrées dans la liste des clients
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Vous ouvrez le Centre de conformité et sécurité sur <https://protection.office.com/>. Pour accéder directement à la page d' **autorisation/de blocage de client** , utilisez <https://protection.office.com/tenantAllowBlockList> .
+- Vous ouvrez le Centre de sécurité et conformité sur <https://protection.office.com/>. Pour accéder directement à la page d' **autorisation/de blocage de client** , utilisez <https://protection.office.com/tenantAllowBlockList> .
 
 - Les valeurs d’URL disponibles sont décrites dans la [syntaxe URL de la section liste des clients autorisés/bloqués](#url-syntax-for-the-tenant-allowblock-list) plus loin dans cette rubrique.
 
@@ -58,16 +58,16 @@ Cette rubrique décrit comment configurer les entrées dans la liste des clients
 
   Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
 
-  **Remarques**:
+  **Remarques** :
 
-  - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le centre d’administration 365 de Microsoft donne aux utilisateurs les autorisations requises dans le centre de sécurité & conformité _et_ des autorisations pour d’autres fonctionnalités de Microsoft 365. Si vous souhaitez en savoir plus, veuillez consulter la page [À propos des rôles d’administrateur](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
-  - Le groupe de rôles gestion de l' **Organisation en affichage seul** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) offre également un accès en lecture seule à la fonctionnalité.
+  - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux utilisateurs les autorisations requises dans le centre de sécurité et de conformité _et_ les autorisations pour les autres fonctionnalités de Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Le groupe de rôles **Gestion de l’organisation en affichage seul** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) permet également d’accéder en lecture seule à la fonctionnalité.
 
 ## <a name="use-the-security--compliance-center-to-create-url-entries-in-the-tenant-allowblock-list"></a>Utiliser le centre de sécurité & conformité pour créer des entrées d’URL dans la liste verte/rouge de client
 
 Pour plus d’informations sur la syntaxe des entrées d’URL, voir la syntaxe de l' [URL de la section liste des clients autorisés/bloqués](#url-syntax-for-the-tenant-allowblock-list) plus loin dans cette rubrique.
 
-1. Dans le centre de sécurité & conformité, accédez **Threat management** à \> **Policy** \> **liste verte/rouge** de la stratégie de gestion des menaces.
+1. Dans le centre de sécurité & conformité, accédez  à \>  \> **liste verte/rouge** de la stratégie de gestion des menaces.
 
 2. Sur la page **liste des clients autorisés/bloqués** , vérifiez que l’onglet **URL** est sélectionné, puis cliquez sur **Ajouter** .
 
@@ -91,7 +91,7 @@ Pour plus d’informations sur la syntaxe des entrées d’URL, voir la syntaxe 
 
 ## <a name="use-the-security--compliance-center-to-view-entries-in-the-tenant-allowblock-list"></a>Utiliser le centre de sécurité & conformité pour afficher les entrées dans la liste des clients autorisés/bloqués
 
-1. Dans le centre de sécurité & conformité, accédez **Threat management** à \> **Policy** \> **liste verte/rouge** de la stratégie de gestion des menaces.
+1. Dans le centre de sécurité & conformité, accédez  à \>  \> **liste verte/rouge** de la stratégie de gestion des menaces.
 
 2. Sélectionnez l’onglet **URL** .
 
@@ -125,7 +125,7 @@ Pour effacer les filtres existants, cliquez sur **Filtrer** et, dans le menu vol
 
 Vous ne pouvez pas modifier la valeur de l’URL proprement dite. Au lieu de cela, vous devez supprimer l’entrée et la recréer.
 
-1. Dans le centre de sécurité & conformité, accédez **Threat management** à \> **Policy** \> **liste verte/rouge** de la stratégie de gestion des menaces.
+1. Dans le centre de sécurité & conformité, accédez  à \>  \> **liste verte/rouge** de la stratégie de gestion des menaces.
 
 2. Sélectionnez l’onglet **URL** .
 
@@ -149,7 +149,7 @@ Vous ne pouvez pas modifier la valeur de l’URL proprement dite. Au lieu de cel
 
 ## <a name="use-the-security--compliance-center-to-remove-entries-from-the-tenant-allowblock-list"></a>Utiliser le centre de sécurité & conformité pour supprimer des entrées de la liste des clients autorisés/bloqués
 
-1. Dans le centre de sécurité & conformité, accédez **Threat management** à \> **Policy** \> **liste verte/rouge** de la stratégie de gestion des menaces.
+1. Dans le centre de sécurité & conformité, accédez  à \>  \> **liste verte/rouge** de la stratégie de gestion des menaces.
 
 2. Sélectionnez l’onglet **URL** .
 
@@ -296,7 +296,7 @@ Les entrées d’URL valides et leurs résultats sont décrits dans les sections
   - test.com/q=contoso.com
   - www.contoso.com
   - www. contoso. com/q = a@contoso. com
-  
+
 - **Correspondance de bloc**:
 
   - contoso.com
@@ -324,7 +324,7 @@ Les entrées d’URL valides et leurs résultats sont décrits dans les sections
   - contoso.com
   - test.com/contoso.com
   - www.contoso.com/abc
-  
+
 #### <a name="scenario-right-wildcard-at-top-of-path"></a>Scénario : caractère générique droit en haut du chemin d’accès
 
 **Entrée**: `contoso.com/a/*`
@@ -341,7 +341,7 @@ Les entrées d’URL valides et leurs résultats sont décrits dans les sections
   - contoso.com/a
   - www.contoso.com
   - www. contoso. com/q = a@contoso. com
-  
+
 #### <a name="scenario-left-tilde"></a>Scénario : tilde gauche
 
 **Entrée**: `~contoso.com`

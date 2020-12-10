@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Pendant et après une enquête automatisée dans Microsoft 365, vous pouvez afficher les résultats et les résultats clés.
 ms.date: 11/05/2020
-ms.openlocfilehash: 4dc74987619c3f958c874927af6e4240b9d7e154
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 2018f008e043f36cd41047185f305209fcb725d7
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357284"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615143"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Détails et résultats d’une enquête automatisée dans Microsoft 365
 
@@ -53,13 +53,13 @@ L’état d’enquête indique la progression de l’analyse et des actions. Lor
 
 ## <a name="view-details-of-an-investigation"></a>Afficher les détails d’une enquête
 
-1. Accédez au centre de sécurité & conformité ( [https://protection.office.com](https://protection.office.com) ) et connectez-vous.
+1. Accédez au centre de sécurité & conformité ( <https://protection.office.com> ) et connectez-vous.
 
 2. Effectuez l’une des opérations suivantes :
 
-    - Accédez au tableau de bord **gestion des menaces** \> **Dashboard**. Cela vous amène au [tableau de bord de sécurité](security-dashboard.md). Vos widgets d’AIR s’affichent dans la partie supérieure du [tableau de bord de sécurité](security-dashboard.md). Sélectionnez un widget, par exemple, **Résumé des enquêtes**.
+    - Accédez au tableau de bord **gestion des menaces** \> . Cela vous amène au [tableau de bord de sécurité](security-dashboard.md). Vos widgets d’AIR s’affichent dans la partie supérieure du [tableau de bord de sécurité](security-dashboard.md). Sélectionnez un widget, par exemple, **Résumé des enquêtes**.
 
-    - Accédez aux enquêtes de **gestion des menaces** \> **Investigations**.
+    - Accédez aux enquêtes de **gestion des menaces** \> .
 
     L’une ou l’autre de ces méthodes vous permet d’accéder à une liste d’investigations.
 
@@ -77,9 +77,9 @@ Certains types d’alertes déclenchent une enquête automatisée dans Microsoft
 
 Utilisez la procédure suivante pour afficher les détails d’une alerte associée à une enquête automatisée.
 
-1. Accédez au centre de sécurité & conformité ( [https://protection.office.com](https://protection.office.com) ) et connectez-vous.
+1. Accédez au centre de sécurité & conformité ( <https://protection.office.com> ) et connectez-vous.
 
-2. Accédez aux enquêtes de **gestion des menaces** \> **Investigations**.
+2. Accédez aux enquêtes de **gestion des menaces** \> .
 
 3. Dans la liste des enquêtes, sélectionnez un élément dans la colonne **ID** .
 

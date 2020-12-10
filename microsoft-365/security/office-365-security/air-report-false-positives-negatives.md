@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom:
 - autoir
-ms.openlocfilehash: 27edc44145e7b61768d9caf00a3f308e8561d708
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 0fe8891f5ea6af215791c5f4321a93667a9d58f0
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357398"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616175"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Comment signaler les faux positifs/négatifs dans les fonctionnalités d’analyse et de réponse automatisées
 
@@ -79,9 +79,9 @@ Avec l’Explorateur de menaces, votre équipe des opérations de sécurité peu
 
 Dans le centre de notifications, vous pouvez voir les actions de correction qui ont été prises et éventuellement annuler l’action.
 
-1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous. Vous accédez au centre de sécurité & conformité.
+1. Accédez à <https://protection.office.com> et connectez-vous. Vous accédez au centre de sécurité & conformité.
 
-2. Accédez aux enquêtes de **gestion des menaces**  >  **Investigations**.
+2. Accédez aux enquêtes de **gestion des menaces** \> .
 
 3. Dans la liste des enquêtes, sélectionnez l’icône **ouvrir dans une nouvelle fenêtre** en regard de l’ID d’un élément.
 

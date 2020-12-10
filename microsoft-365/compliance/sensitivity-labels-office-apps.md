@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Découvrez comment les utilisateurs utilisent les étiquettes de confidentialité dans les applications Office pour ordinateur de bureau, mobile et le Web, et quelles applications prennent en charge les étiquettes de sensibilité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 685228823c87eff975fabd2dd398c1b67be8eeef
-ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
+ms.openlocfilehash: 3a8d0181b7a17922f788605953fc9af3ca450d6d
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49580737"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613618"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Utiliser les étiquettes de confidentialité dans les applications Office
 
@@ -239,7 +239,7 @@ Les scénarios qui incluent l’application d’une étiquette de sensibilité e
 
 - Exportation des données étiquetées et chiffrées à partir de Power BI
 
-- Microsoft Cloud App Security
+- Microsoft Cloud App Security
 
 Pour ces scénarios, à l’aide de leurs applications Office, un utilisateur avec étiquetage intégré peut appliquer les marques de contenu de l’étiquette en supprimant ou en remplaçant temporairement l’étiquette actuelle, puis en réappliquant l’étiquette d’origine.
 
@@ -254,12 +254,12 @@ Lorsque vous configurez une étiquette de sensibilité pour les marques de conte
 
 | Variable | Description | Exemple lorsque l’étiquette est appliquée |
 | -------- | ----------- | ------- |
-| `${Item.Label}` | Nom complet de l’étiquette actuelle | **Général**|
-| `${Item.Name}` | Nom de fichier actuel ou objet du message électronique | **Sales.docx** |
-| `${Item.Location}` | Chemin d’accès actuel et nom de fichier du document ou objet de l’e-mail pour un message électronique | **\\\Sales\2020\Q3\Report.docx**|
-| `${User.Name}` | Nom complet de l’utilisateur actuel  | **Richard Simone** |
-| `${User.PrincipalName}` | Nom d’utilisateur principal (UPN) de l’utilisateur actuel Azure AD | **rsimone \@ contoso.com** |
-| `${Event.DateTime}` | Date et heure actuelles pour le fuseau horaire local | **8/10/2020 1:30 PM** |
+| `${Item.Label}` | Nom d’affichage de l’étiquette de l’étiquette appliquée| **Général**|
+| `${Item.Name}` | Nom de fichier ou objet de l’e-mail du contenu étiqueté | **Sales.docx** |
+| `${Item.Location}` | Chemin d’accès et nom de fichier du document en cours d’étiquetage ou objet de l’e-mail pour lequel un message est étiqueté. | **\\\Sales\2020\Q3\Report.docx**|
+| `${User.Name}` | Nom d’affichage de l’utilisateur appliquant l’étiquette| **Richard Simone** |
+| `${User.PrincipalName}` | Nom d’utilisateur principal Azure AD (UPN) de l’utilisateur qui applique l’étiquette | **rsimone \@ contoso.com** |
+| `${Event.DateTime}` | Date et heure auxquelles le contenu est étiqueté, dans le fuseau horaire local de l’utilisateur qui applique l’étiquette | **8/10/2020 1:30 PM** |
 
 > [!NOTE]
 > La syntaxe de ces variables respecte la casse.
@@ -321,7 +321,7 @@ Exemples :
     `${If.App.WP}This content is ${If.End}Confidential`
 
     Dans Word et PowerPoint, l’étiquette applique le texte de filigrane « ce contenu est confidentiel ». Dans Excel, l’étiquette applique le texte de filigrane « Confidential ». Dans Outlook, l’étiquette n’applique pas de texte de filigrane, car les filigranes sous forme de marques visuelles ne sont pas pris en charge dans Outlook.
->>>>>>> a51fef4b19dc23a23a161de3e8333dcd7527540b
+
 
 ## <a name="end-user-documentation"></a>Documentation destinée aux utilisateurs finaux
 

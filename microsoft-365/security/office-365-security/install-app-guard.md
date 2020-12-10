@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Obtenez la dernière version de l’isolation matérielle. Empêcher les attaques actuelles et émergentes, telles que les attaques ou les liens malveillants, de perturber la productivité des employés et la sécurité de l’entreprise.
-ms.openlocfilehash: 075006bb8f000dbbda2fd564e0c7cf83c1a15129
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: a1d0fb857a80d5500036f6d9a95f930ec4df38a0
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561434"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616787"
 ---
 # <a name="application-guard-for-office-public-preview-for-admins"></a>Application Guard pour Office (préversion publique) pour les administrateurs
 
@@ -34,7 +34,7 @@ ms.locfileid: "49561434"
 
 Microsoft Defender application Guard pour Office (application Guard pour Office) permet d’empêcher les fichiers non approuvés d’accéder aux ressources approuvées, tout en garantissant la sécurité de votre entreprise contre les attaques nouvelles et émergentes. Cet article guide les administrateurs par le biais de la configuration d’appareils pour un aperçu de application Guard pour Office. Il fournit des informations sur la configuration système requise et les étapes d’installation permettant d’activer application Guard pour Office sur un appareil.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Conditions requises
 
 ### <a name="minimum-hardware-requirements"></a>Configuration matérielle minimale requise
 
@@ -76,9 +76,7 @@ Pour plus d’informations sur la configuration système requise, reportez-vous 
 
    Vous pouvez également définir la stratégie de fournisseur de services de chiffrement correspondante :
 
-   OMA-URI : **./Device/Vendor/msft/WindowsDefenderApplicationGuard/Settings/AllowWindowsDefenderApplicationGuard**<br/>
-   Type de données : **entier**<br/>
-   Valeur : **2**
+   > OMA-URI : **./Device/Vendor/msft/WindowsDefenderApplicationGuard/Settings/AllowWindowsDefenderApplicationGuard** <br> Type de données : **entier** <br> Valeur : **2**
 
 4. Redémarrez le système.
 

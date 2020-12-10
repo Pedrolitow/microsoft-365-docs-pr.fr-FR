@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Les administrateurs peuvent consulter les questions fréquemment posées et les réponses sur la protection contre l’usurpation d’identité dans Exchange Online Protection (EOP).
-ms.openlocfilehash: a5b0484e41e3df7a7b6ad16e69a4f7062b19b554
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: f567c7bc0c6a6efed7621cec86c5db4e616290b7
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844391"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616730"
 ---
 # <a name="anti-spoofing-protection-faq"></a>FAQ sur la protection contre l’usurpation d’identité
 
@@ -71,12 +71,12 @@ Malheureusement, non. Les agresseurs s’adapteront pour utiliser d’autres tec
 
 Presque tous les grands services de messagerie mettent en œuvre des vérifications SPF, DKIM et DMARC classiques. Certains services ont d’autres contrôles plus rigoureux, mais il n’y a pas d’exprès de EOP pour bloquer les messages électroniques non authentifiés et les traiter comme des messages falsifiés. Toutefois, le secteur informatique est de plus en plus conscient des problèmes liés à la messagerie non authentifiée, en particulier en raison du problème de hameçonnage.
 
-## <a name="do-i-still-need-to-enable-the-advanced-spam-filter-setting-spf-record-hard-fail-_markasspamspfrecordhardfail_-if-i-enable-anti-spoofing"></a>Dois-je toujours activer le paramètre de filtrage du courrier indésirable avancé « enregistrement SPF : échec matériel » ( _MarkAsSpamSpfRecordHardFail_ ) si j’active la détection d’usurpation d’identité ?
+## <a name="do-i-still-need-to-enable-the-advanced-spam-filter-setting-spf-record-hard-fail-_markasspamspfrecordhardfail_-if-i-enable-anti-spoofing"></a>Dois-je toujours activer le paramètre de filtrage du courrier indésirable avancé « enregistrement SPF : échec matériel » (_MarkAsSpamSpfRecordHardFail_) si j’active la détection d’usurpation d’identité ?
 
-Non. Ce paramètre ASF n’est plus obligatoire. La protection contre l’usurpation d’identité considère à la fois les pannes matérielles SPF et un ensemble plus large de critères. Si vous avez activé la détection d’usurpation d’identité et l’option **Enregistrement SPF : échec sévère** ( _MarkAsSpamSpfRecordHardFail_ ), vous obtiendrez probablement davantage de faux positifs.
+Non. Ce paramètre ASF n’est plus obligatoire. La protection contre l’usurpation d’identité considère à la fois les pannes matérielles SPF et un ensemble plus large de critères. Si vous avez activé la détection d’usurpation d’identité et l’option **Enregistrement SPF : échec sévère** (_MarkAsSpamSpfRecordHardFail_), vous obtiendrez probablement davantage de faux positifs.
 
 Nous vous recommandons de désactiver cette fonctionnalité car elle ne fournit quasiment aucun avantage supplémentaire pour détecter le courrier indésirable ou le message de hameçonnage, et générera plutôt des faux positifs. Pour plus d’informations, voir [paramètres du filtre de courrier indésirable avancé (ASF) dans EOP](advanced-spam-filtering-asf-options.md).
 
 ## <a name="does-sender-rewriting-scheme-help-fix-forwarded-email"></a>Le schéma de réécriture de l’expéditeur aide-t-il à résoudre les messages transférés ?
 
-Schéma de réécriture de l’expéditeur ne résout que partiellement le problème du courrier transféré. En réécrivant le **courrier SMTP à partir de** , le service SRS peut s’assurer que le message transféré passe par SPF à la destination suivante. Toutefois, étant donné que la détection d’usurpation d’identité est basée sur l’adresse **de** l’expéditeur en combinaison avec le domaine de la signature DKIM ou DKIM (ou **d'** autres signaux), il n’est pas suffisant d’empêcher le marquage du courrier remis comme falsifié.
+Schéma de réécriture de l’expéditeur ne résout que partiellement le problème du courrier transféré. En réécrivant le **courrier SMTP à partir de**, le service SRS peut s’assurer que le message transféré passe par SPF à la destination suivante. Toutefois, étant donné que la détection d’usurpation d’identité est basée sur l’adresse **de** l’expéditeur en combinaison avec le domaine de la signature DKIM ou DKIM (ou **d'** autres signaux), il n’est pas suffisant d’empêcher le marquage du courrier remis comme falsifié.

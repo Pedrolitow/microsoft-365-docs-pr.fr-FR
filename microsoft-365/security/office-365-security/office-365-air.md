@@ -21,12 +21,12 @@ description: Commencez à utiliser les fonctionnalités d’analyse et de répon
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: 86414eaf0917a6cad7debc44e3f7aa604c55ae70
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 8b6ef712e2e90e6798f16c54bc82f99590dbea42
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357742"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49614833"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Recherche et réponse automatisées (AIR) dans Microsoft Defender pour Office 365
 
@@ -124,7 +124,7 @@ Les autorisations sont accordées par le biais de certains rôles, tels que ceux
 |Tâche|Rôle (s) requis|
 |---|---|
 |Configurer les fonctionnalités AIR|Un des rôles suivants : <ul><li>Administrateur général</li><li>Administrateur de sécurité</li></ul> <p> Ces rôles peuvent être attribués dans [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) ou dans le [centre de sécurité & conformité](permissions-in-the-security-and-compliance-center.md).|
-|Démarrer une enquête automatisée <p> --- ou --- <p> Approuver ou rejeter les actions recommandées|L’un des rôles suivants, affecté dans [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) ou dans le [centre de sécurité & conformité](permissions-in-the-security-and-compliance-center.md): <ul><li>Administrateur général</li><li>Administrateur de sécurité</li><li>Lecteur de sécurité <br/>--- et ---</li><li>Recherche et purger (ce rôle est affecté uniquement dans le [Centre de sécurité & conformité](permissions-in-the-security-and-compliance-center.md). Vous devrez peut-être créer un groupe de rôles à cet emplacement et ajouter le rôle de recherche et de purge à ce nouveau groupe de rôles.</li></ul>|
+|Démarrer une enquête automatisée <p> --- ou --- <p> Approuver ou rejeter les actions recommandées|L’un des rôles suivants, affecté dans [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) ou dans le [centre de sécurité & conformité](permissions-in-the-security-and-compliance-center.md): <ul><li>Administrateur général</li><li>Administrateur de sécurité</li><li>Lecteur de sécurité <br> --- et --- </li><li>Recherche et purger (ce rôle est affecté uniquement dans le [Centre de sécurité & conformité](permissions-in-the-security-and-compliance-center.md). Vous devrez peut-être créer un groupe de rôles à cet emplacement et ajouter le rôle de recherche et de purge à ce nouveau groupe de rôles.</li></ul>|
 |
 
 ## <a name="required-licenses"></a>Licences requises
@@ -133,7 +133,7 @@ Les autorisations sont accordées par le biais de certains rôles, tels que ceux
 
 - Administrateurs de la sécurité (y compris les administrateurs généraux)
 - Équipe des opérations de sécurité de votre organisation (y compris les lecteurs de sécurité et les rôles de **recherche et de purge** )
-- Utilisateurs finaux
+- Utilisateurs finals
 
 ## <a name="next-steps"></a>Étapes suivantes
 

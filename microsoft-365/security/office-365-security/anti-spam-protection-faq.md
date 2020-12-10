@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent consulter les questions fréquemment posées et les réponses à propos de la protection contre le courrier indésirable dans Exchange Online Protection (EOP).
-ms.openlocfilehash: d2505eea572e512b306cf26c7a57d1dc1b705c0b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 21c70f1942703b8e5f3f4d96b136aff46afcc32b
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844463"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615431"
 ---
 # <a name="anti-spam-protection-faq"></a>FAQ sur la protection anti-courrier indésirable
 
@@ -105,9 +105,9 @@ Vous pouvez envoyer une notification à une adresse de messagerie spécifique qu
 
 Oui. Bien que nous vous recommandons de faire pointer votre enregistrement MX vers Microsoft, nous savons qu’il existe des raisons professionnelles légitimes pour acheminer votre courrier électronique vers un autre emplacement que Microsoft.
 
-- **Entrant** : modifiez vos enregistrements MX pour qu’ils pointent vers le fournisseur tiers, puis redirigez les messages vers EOP pour un traitement supplémentaire. Pour plus d’informations, reportez-vous à la rubrique [filtrage amélioré pour les connecteurs dans Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+- **Entrant**: modifiez vos enregistrements MX pour qu’ils pointent vers le fournisseur tiers, puis redirigez les messages vers EOP pour un traitement supplémentaire. Pour plus d’informations, reportez-vous à la rubrique [filtrage amélioré pour les connecteurs dans Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
-- **Sortant** : configurez le routage d’hôte actif de Microsoft 365 vers le fournisseur de destination tiers.
+- **Sortant**: configurez le routage d’hôte actif de Microsoft 365 vers le fournisseur de destination tiers.
 
 ## <a name="does-microsoft-have-any-documentation-about-how-i-can-protect-myself-from-phishing-scams"></a>Est-ce que Microsoft dispose de documentation concernant la façon dont je peux me protéger contre les tentatives de hameçonnage ?
 
@@ -124,7 +124,7 @@ Les instructions ci-dessous constituent les meilleures pratiques pour l'envoi de
 - **Le domaine de messagerie source doit être résolu dans le système DNS.**
 
   Par exemple, si l’expéditeur est user@fabrikam, le domaine fabrikam est résolu en adresse IP 192.0.43.10.
-  
+
   Si aucun enregistrement A ou enregistrement MX ne correspond au domaine d’envoi dans DNS, le service route le message via son pool de remise à risque plus élevé, que le contenu du message soit du courrier indésirable ou non. Pour plus d’informations sur le pool de remise à risque plus élevé, consultez la rubrique [pool de remise à haut risque pour les messages sortants](high-risk-delivery-pool-for-outbound-messages.md).
 
 - **Le courrier sortant eServer doit avoir une entrée DNS (PTR) inverse.**
@@ -139,7 +139,7 @@ Les instructions ci-dessous constituent les meilleures pratiques pour l'envoi de
 
   Les enregistrements SPF constituent un mécanisme permettant de valider le fait que du courrier électronique envoyé par un domaine provient réellement de ce dernier et n'est pas falsifié. Pour plus d'informations sur les enregistrements SPF, consultez les liens suivants :
 
-  [Configurer SPF pour empêcher l’usurpation](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
+  [Configurer SPF pour empêcher l’usurpation d’identité](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
   [Foire aux questions domaines](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain)
 
@@ -155,11 +155,11 @@ Les instructions ci-dessous constituent les meilleures pratiques pour l'envoi de
 
   Le corps du message doit contenir une indication claire concernant l'offre, le service ou le produit. Par exemple, si un expéditeur envoie un publipostage pour le compte de la société Contoso, voici à quoi doit ressembler le contenu des champs De et Objet du message électronique :
 
-  > De : marketing@contoso.com <br/> Objet : Nouveau catalogue à jour pour la période de Noël
+  > De : marketing@contoso.com <br> Objet : Nouveau catalogue à jour pour la période de Noël
 
   Voici un exemple de ce qu'il ne faut pas faire parce que ce n'est pas assez descriptif :
 
-  > De : utilisateur@hotmail.com <br/> Objet : Catalogues
+  > De : utilisateur@hotmail.com <br> Objet : Catalogues
 
 - **Si vous envoyez un publipostage à un grand nombre de destinataires et que le message présente le format d'un bulletin d'informations, il doit contenir un lien de désabonnement au bas du texte de contenu.**
 

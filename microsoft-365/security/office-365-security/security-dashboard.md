@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Utilisez le nouveau tableau de bord de sécurité pour consulter l’état de protection contre les menaces d’Office 365, et afficher et agir sur les alertes de sécurité.
-ms.openlocfilehash: b49422621e70d597251cd342559e59ffa0e128f6
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: 6a2669e3e36ee9238de99014a6c899df75204726
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877324"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615815"
 ---
 # <a name="security-dashboard"></a>Tableau de bord de sécurité
 
@@ -40,7 +40,7 @@ Regardez la vidéo pour obtenir une vue d’ensemble, puis lisez cet article pou
 
 En fonction de l’abonnement de votre organisation, le tableau de bord de sécurité inclut plusieurs widgets, tels que le résumé de la gestion des menaces, l’état de protection contre les menaces, des détections de menaces globales hebdomadaires, des programmes malveillants, etc., comme décrit dans les sections suivantes.
 
-Pour afficher le tableau de bord sécurité, dans le [Centre de sécurité & conformité](../../compliance/go-to-the-securitycompliance-center.md), accédez au tableau de bord **gestion des menaces** \> **Dashboard**.
+Pour afficher le tableau de bord sécurité, dans le [Centre de sécurité & conformité](../../compliance/go-to-the-securitycompliance-center.md), accédez au tableau de bord **gestion des menaces** \> .
 
 > [!NOTE]
 > Vous devez être un administrateur général, un administrateur de sécurité ou un lecteur de sécurité pour afficher le tableau de bord de sécurité. Certains widgets nécessitent des autorisations supplémentaires pour être visualisées. Pour en savoir plus, consultez [la rubrique autorisations dans le centre de sécurité & conformité](permissions-in-the-security-and-compliance-center.md).
@@ -55,7 +55,7 @@ Les informations que vous verrez dans le résumé de gestion des menaces dépend
 
 |Office 365 E3|Office 365 E5|
 |---|---|
-|Messages malveillants bloqués<br/>Messages d’hameçonnage bloqués<br>Messages signalés par les utilisateurs<br><br><br><br>|Messages malveillants bloqués<br>Messages d’hameçonnage bloqués<br>Messages signalés par les utilisateurs<br>Blocage des programmes malveillants de jour zéro<br>Messages d’hameçonnage avancés détectés<br>URL malveillantes bloquées|
+|Messages malveillants bloqués<br>Messages d’hameçonnage bloqués<br>Messages signalés par les utilisateurs<br><br><br><br>|Messages malveillants bloqués<br>Messages d’hameçonnage bloqués<br>Messages signalés par les utilisateurs<br>Blocage des programmes malveillants de jour zéro<br>Messages d’hameçonnage avancés détectés<br>URL malveillantes bloquées|
 
 Pour afficher ou accéder au widget Résumé de la gestion des menaces, vous devez disposer des autorisations permettant d’afficher les rapports Defender pour Office 365. Pour en savoir plus, consultez [la rubrique Quelles autorisations sont nécessaires pour afficher les rapports Defender pour Office 365 ?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports).
 
@@ -69,8 +69,8 @@ Les détails varient selon que votre abonnement Microsoft 365 inclut ou non [Exc
 
 |Si votre abonnement inclut...|Ces détails s’affichent.|
 |---|---|
-|EOP mais pas Microsoft Defender pour Office 365|Courrier électronique malveillant détecté et bloqué par EOP.<br><br> Consultez la rubrique [Threat Protection Status Report (EoP)](view-email-security-reports.md#threat-protection-status-report).|
-|Microsoft Defender pour Office 365|Contenu malveillant et courrier involontaire détecté et bloqué par EOP et Defender pour Office 365<br><br>Nombre agrégé de messages électroniques uniques dont le contenu malveillant est bloqué par le moteur anti-programme malveillant, la [purge automatique à zéro heure](zero-hour-auto-purge.md)et les fonctionnalités Defender pour Office 365 (y compris les [liens approuvés](atp-safe-links.md), [les pièces jointes fiables](atp-safe-attachments.md)et la [protection anti-hameçonnage dans Defender pour Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)).<br><br>Consultez la rubrique [Threat Protection Status Report](view-reports-for-atp.md#threat-protection-status-report).|
+|EOP mais pas Microsoft Defender pour Office 365|Courrier électronique malveillant détecté et bloqué par EOP.<p> Consultez la rubrique [Threat Protection Status Report (EoP)](view-email-security-reports.md#threat-protection-status-report).|
+|Microsoft Defender pour Office 365|Contenu malveillant et courrier involontaire détecté et bloqué par EOP et Defender pour Office 365 <p> Nombre agrégé de messages électroniques uniques dont le contenu malveillant est bloqué par le moteur anti-programme malveillant, la [purge automatique à zéro heure](zero-hour-auto-purge.md)et les fonctionnalités Defender pour Office 365 (y compris les [liens approuvés](atp-safe-links.md), [les pièces jointes fiables](atp-safe-attachments.md)et la [protection anti-hameçonnage dans Defender pour Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)). <p> Consultez la rubrique [Threat Protection Status Report](view-reports-for-atp.md#threat-protection-status-report).|
 
 Pour afficher ou accéder au widget d’État protection contre les menaces, vous devez disposer des autorisations permettant d’afficher les rapports Defender pour Office 365. Pour en savoir plus, consultez [la rubrique Quelles autorisations sont requises pour afficher les rapports Defender pour Office 365 ?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)
 
@@ -121,7 +121,7 @@ Pour afficher ou accéder au widget courrier électronique envoyé et reçu, vou
 
 Pour afficher ou accéder au widget alertes de gestion des menaces récentes, vous devez disposer des autorisations pour afficher les alertes. Pour en savoir plus, consultez la rubrique [autorisations RBAC requises pour afficher les alertes](../../compliance/alert-policies.md#rbac-permissions-required-to-view-alerts).
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Afficher les rapports de sécurité de courrier dans le centre de sécurité et conformité](view-email-security-reports.md)
 

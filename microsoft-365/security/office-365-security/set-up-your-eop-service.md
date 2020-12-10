@@ -14,12 +14,12 @@ ms.custom:
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: Les administrateurs peuvent apprendre à configurer Exchange Online Protection (EOP) autonome pour protéger les environnements de messagerie locaux.
-ms.openlocfilehash: 53386b700c2a2832cf16d47da0678dfb91c5b6d7
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: ab34d715bd8196bb2376926402f6a88018d1d7ae
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197166"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615671"
 ---
 # <a name="set-up-your-standalone-eop-service"></a>Configurer votre service EOP autonome
 
@@ -29,7 +29,9 @@ ms.locfileid: "48197166"
 Cette rubrique explique comment configurer Exchange Online Protection (EOP) en mode autonome. Si vous avez été redirigé depuis l'Assistant Domaines Office 365, revenez à l'Assistant Domaines Office 365 si vous ne souhaitez pas utiliser Exchange Online Protection. Si vous recherchez plus d'informations sur la configuration des connecteurs, consultez la rubrique [Configure mail flow using connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
 
 > [!NOTE]
-> Elle suppose que vous disposez de boîtes aux lettres locales et que vous voulez les protéger avec EOP (scénario dit « autonome »). Si vous voulez héberger toutes vos boîtes aux lettres dans le nuage avec Exchange Online, il n'est pas nécessaire de réaliser toutes les étapes décrites dans cette rubrique. Consultez la [comparaison des plans Exchange Online](https://products.office.com/exchange/compare-microsoft-exchange-online-plans) pour vous inscrire et acheter des boîtes aux lettres Cloud. Si vous voulez héberger certaines de vos boîtes aux lettres localement et d'autres dans le nuage, il s'agit d'un scénario hybride. Des paramètres de flux de messagerie plus avancés sont requis. [Déploiements hybrides Exchange Server](https://docs.microsoft.com/exchange/exchange-hybrid) explique le flux de messagerie hybride et comporte des liens vers des ressources qui expliquent comment le configurer.
+> Elle suppose que vous disposez de boîtes aux lettres locales et que vous voulez les protéger avec EOP (scénario dit « autonome »). Si vous voulez héberger toutes vos boîtes aux lettres dans le nuage avec Exchange Online, il n'est pas nécessaire de réaliser toutes les étapes décrites dans cette rubrique. Consultez la [comparaison des plans Exchange Online](https://products.office.com/exchange/compare-microsoft-exchange-online-plans) pour vous inscrire et acheter des boîtes aux lettres Cloud.
+>
+> Si vous voulez héberger certaines de vos boîtes aux lettres localement et d'autres dans le nuage, il s'agit d'un scénario hybride. Des paramètres de flux de messagerie plus avancés sont requis. [Déploiements hybrides Exchange Server](https://docs.microsoft.com/exchange/exchange-hybrid) explique le flux de messagerie hybride et comporte des liens vers des ressources qui expliquent comment le configurer.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
@@ -96,4 +98,6 @@ Suivez les étapes de configuration du domaine pour mettre à jour votre enregis
 - Si vous souhaitez effectuer un test de message sortant, vous pouvez envoyer un message électronique d'un utilisateur de votre organisation vers un compte de messagerie basé sur le web et confirmer sa réception.
 
 > [!TIP]
-> Une fois votre configuration terminée, aucune étape supplémentaire n'est requise pour activer la suppression du courrier indésirable et des programmes malveillants par EOP. Ces opérations sont effectuées automatiquement. Toutefois, vous pouvez affiner vos paramètres en fonction des besoins de votre entreprise. Pour plus d’informations, consultez la rubrique [protection contre le courrier indésirable et les programmes malveillants dans Office 365](anti-spam-and-anti-malware-protection.md) et [configure usurpation d’identité](learn-about-spoof-intelligence.md). <br/><br/> Maintenant que votre service est en cours d’exécution, nous vous recommandons de lire les [meilleures pratiques pour la configuration d’EOP](best-practices-for-configuring-eop.md), qui décrit les paramètres recommandés et les éléments à prendre en compte après avoir configuré EOP.
+> Une fois votre configuration terminée, aucune étape supplémentaire n'est requise pour activer la suppression du courrier indésirable et des programmes malveillants par EOP. Ces opérations sont effectuées automatiquement. Toutefois, vous pouvez affiner vos paramètres en fonction des besoins de votre entreprise. Pour plus d’informations, consultez la rubrique [protection contre le courrier indésirable et les programmes malveillants dans Office 365](anti-spam-and-anti-malware-protection.md) et [configure usurpation d’identité](learn-about-spoof-intelligence.md).
+>
+> Maintenant que votre service est en cours d’exécution, nous vous recommandons de lire les [meilleures pratiques pour la configuration d’EOP](best-practices-for-configuring-eop.md), qui décrit les paramètres recommandés et les éléments à prendre en compte après avoir configuré EOP.

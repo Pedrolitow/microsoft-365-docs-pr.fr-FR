@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: Les utilisateurs doivent disposer d’autorisations dans le centre de conformité Microsoft 365 Security & pour pouvoir gérer les fonctionnalités de sécurité ou de conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5d586684d44545f7aea94c30f5474b1fe5fa4651
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 1bf8da85a0e090a9d74934ea5084f547d6a8794f
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202806"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616607"
 ---
 # <a name="give-users-access-to-the-security--compliance-center"></a>Octroi de l’accès au Centre de conformité et sécurité aux utilisateurs
 
@@ -51,9 +51,9 @@ Pour plus d’informations sur les différentes autorisations que vous pouvez ac
 
 2. Dans la liste des groupes de rôles, sélectionnez le groupe de rôles, puis cliquez sur **modifier** l' ![ icône modifier ](../../media/O365-MDM-CreatePolicy-EditIcon.gif) .
 
-3. Dans la page des propriétés du groupe de rôles sous **membres**, cliquez sur **Ajouter**une ![ icône ](../../media/ITPro-EAC-AddIcon.gif) et sélectionnez le nom de l’utilisateur (ou des utilisateurs) que vous souhaitez ajouter.
+3. Dans la page des propriétés du groupe de rôles sous **membres**, cliquez sur **Ajouter** une ![ icône ](../../media/ITPro-EAC-AddIcon.gif) et sélectionnez le nom de l’utilisateur (ou des utilisateurs) que vous souhaitez ajouter.
 
-4. Une fois que vous avez sélectionné tous les utilisateurs que vous souhaitez ajouter au groupe de rôles, cliquez sur **ajouter- \> ** puis sur **OK**.
+4. Une fois que vous avez sélectionné tous les utilisateurs que vous souhaitez ajouter au groupe de rôles, cliquez sur **ajouter- \>** puis sur **OK**.
 
 5. Lorsque vous avez terminé, cliquez sur **Enregistrer**.
 
@@ -81,7 +81,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Pour vérifier que vous avez bien autorisé l’accès au centre de sécurité & conformité, effectuez l’une des opérations suivantes :
 
-- Dans le centre de sécurité & conformité, accédez à **autorisations** et sélectionnez le groupe de rôles. Dans la fenêtre mobile des détails qui s’ouvre, vérifiez les membres du groupe de rôles. 
+- Dans le centre de sécurité & conformité, accédez à **autorisations** et sélectionnez le groupe de rôles. Dans la fenêtre mobile des détails qui s’ouvre, vérifiez les membres du groupe de rôles.
 
 - Dans sécurité & Centre de conformité PowerShell, remplacez \<RoleGroupName\> par le nom du groupe de rôles, puis exécutez la commande suivante :
 

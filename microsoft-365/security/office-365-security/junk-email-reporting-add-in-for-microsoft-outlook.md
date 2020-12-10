@@ -14,12 +14,12 @@ ms.assetid: 4650fec1-4ee3-4659-abbc-bf091718cb26
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment installer et utiliser le complément Microsoft Junk Email Reporting pour signaler les messages de courrier indésirable, de courrier indésirable et de hameçonnage à Microsoft.
-ms.openlocfilehash: 6e4c16ed8efd781a6e8ecea422fe55fb6723209c
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: 6f08c72ae797825695c443848429dcfd2cd485a2
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877548"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616427"
 ---
 # <a name="install-and-use-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>Installer et utiliser le complément de création de rapports de courrier indésirable pour Microsoft Outlook
 
@@ -48,11 +48,11 @@ Cette rubrique explique comment installer et utiliser le complément de créatio
 
 1. Pour les messages de la boîte de réception ou de tout autre dossier de messagerie, à l’exception du courrier indésirable, utilisez l’une des méthodes suivantes pour signaler les messages de courrier indésirable et de hameçonnage :
 
-   - Sélectionnez le message ou ouvrez le message. Dans l’onglet **Accueil** ou **message** du ruban, cliquez sur **courrier indésirable** , puis sélectionnez **signaler comme courrier indésirable** ou **signaler comme hameçonnage**.
+   - Sélectionnez le message ou ouvrez le message. Dans l’onglet **Accueil** ou **message** du ruban, cliquez sur **courrier indésirable**, puis sélectionnez **signaler comme courrier indésirable** ou **signaler comme hameçonnage**.
 
      ![Signaler le courrier indésirable ou de hameçonnage à partir du ruban](../../media/junk-email-reporting-ribbon.png)
 
-   - Cliquez avec le bouton droit sur le message, sélectionnez **courrier indésirable** , puis **signaler comme courrier indésirable** ou **signaler comme hameçonnage**.
+   - Cliquez avec le bouton droit sur le message, sélectionnez **courrier indésirable**, puis **signaler comme courrier indésirable** ou **signaler comme hameçonnage**.
 
      ![Signaler le courrier indésirable ou le courrier indésirable en cliquant avec le bouton droit](../../media/junk-email-reporting-right-click.png)
 
@@ -70,18 +70,18 @@ Cette rubrique explique comment installer et utiliser le complément de créatio
 
    - Déplacé vers le dossier courrier indésirable s’il a été signalé comme courrier indésirable.
    - Supprimé s’il a été signalé comme hameçonnage.
-   
+
    Pour confirmer que les messages ont été envoyés, ouvrez le dossier **Éléments envoyés** pour afficher les messages envoyés.
 
 ## <a name="use-the-junk-email-reporting-add-in-to-report-non-spam-and-phishing-messages-from-the-junk-email-folder"></a>Utiliser le complément de création de rapports de courrier indésirable pour signaler les messages de courrier indésirable et de hameçonnage dans le dossier courrier indésirable
 
 1. Dans le dossier courrier indésirable, utilisez l’une des méthodes suivantes pour signaler les fausses alertes de courrier indésirable ou les messages de hameçonnage :
 
-   - Sélectionnez le message ou ouvrez le message. Dans l’onglet **Accueil** ou **message** du ruban, cliquez sur **légitime** , puis sélectionnez **signaler comme légitime** ou **signaler comme hameçonnage**.
+   - Sélectionnez le message ou ouvrez le message. Dans l’onglet **Accueil** ou **message** du ruban, cliquez sur **légitime**, puis sélectionnez **signaler comme légitime** ou **signaler comme hameçonnage**.
 
      ![Signaler des courriers indésirables ou de hameçonnage à partir du ruban dans le dossier courrier indésirable](../../media/junk-email-reporting-junk-folder-ribbon.png)
 
-   - Cliquez avec le bouton droit sur le message, cliquez sur **courrier indésirable** , puis sélectionnez **signaler comme légitime** ou **signaler comme hameçonnage**.
+   - Cliquez avec le bouton droit sur le message, cliquez sur **courrier indésirable**, puis sélectionnez **signaler comme légitime** ou **signaler comme hameçonnage**.
 
      ![Signaler le courrier indésirable ou le courrier indésirable dans le dossier courrier indésirable](../../media/junk-email-reporting-junk-folder-right-click.png)
 
@@ -108,8 +108,8 @@ Cette rubrique explique comment installer et utiliser le complément de créatio
 
 - Accédez au <https://www.microsoft.com/download/details.aspx?id=18275> fichier. msi approprié pour votre version d’Office et téléchargez-le dans un emplacement facile à trouver :
 
-  - **32-bit** : `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
-  - **64-bit** : `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
+  - **32-bit**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
+  - **64-bit**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
 
 - Pour Outlook 2013 ou version ultérieure, la seule condition requise est Microsoft .NET Framework 2,0. Dans Windows 10, vous n’installez pas .NET Framework 2,0 à partir d’un téléchargement.
 
@@ -121,7 +121,7 @@ Cette rubrique explique comment installer et utiliser le complément de créatio
 
 3. Recherchez le fichier. msi que vous avez téléchargé et double-cliquez dessus.
 
-4. Dans la page **Bienvenue à la configuration du complément Microsoft Junk Email Reporting** , cliquez sur **Suivant**.
+4. Dans la page **Bienvenue à la configuration du complément Microsoft Junk Email Reporting**, cliquez sur **Suivant**.
 
 5. Consultez le contrat de licence, cliquez sur **J’accepte les termes du contrat de licence** si vous acceptez les termes, puis cliquez sur **suivant**.
 
@@ -209,27 +209,27 @@ Pour vérifier que vous avez correctement installé le complément de création 
 
 Une fois que vous avez fermé Outlook, utilisez l’une des procédures suivantes pour désinstaller le complément de création de rapports de courrier indésirable :
 
-- **Panneau de configuration** : Appuyez sur la touche Windows + R. Dans la boîte de dialogue **exécuter** qui s’ouvre, saisissez `control appwiz.cpl` puis cliquez sur **OK**.
+- **Panneau de configuration**: Appuyez sur la touche Windows + R. Dans la boîte de dialogue **exécuter** qui s’ouvre, saisissez `control appwiz.cpl` puis cliquez sur **OK**.
 
   Recherchez et sélectionnez **complément Microsoft Junk Email Reporting** dans la liste, puis cliquez sur **désinstaller**.
 
-- **Package Windows Installer** : recherchez ou téléchargez le fichier. msi approprié, puis double-cliquez dessus.
+- **Package Windows Installer**: recherchez ou téléchargez le fichier. msi approprié, puis double-cliquez dessus.
 
-  - **32-bit** : `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
+  - **32-bit**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
 
-  - **64-bit** : `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
+  - **64-bit**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
 
   Dans la boîte de dialogue qui s’affiche, sélectionnez **supprimer le complément Microsoft Junk Email Reporting pour Outlook** , puis cliquez sur **suivant**.
 
-- **Mode silencieux** : recherchez ou téléchargez le fichier. msi approprié. Dans une fenêtre d’invite de commandes, remplacez \<PathToFile\> par l’emplacement du fichier. msi et exécutez l’une des commandes suivantes :
+- **Mode silencieux**: recherchez ou téléchargez le fichier. msi approprié. Dans une fenêtre d’invite de commandes, remplacez \<PathToFile\> par l’emplacement du fichier. msi et exécutez l’une des commandes suivantes :
 
-  - **32-bit** :
+  - **32-bit**:
 
     ```dos
     msiexec /x "<PathToFile>\Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi" /qn MSIRESTARTMANAGERCONTROL="DisableShutdown"
     ```
 
-  - **64-bit** :
+  - **64-bit**:
 
     ```dos
     msiexec /x "<PathToFile>\Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi" /qn MSIRESTARTMANAGERCONTROL="DisableShutdown"
@@ -263,7 +263,7 @@ Pour les autres méthodes que vous pouvez utiliser pour envoyer des messages à 
 
 1. Vérifiez ou définissez la `LoggingLevel` clé de Registre sur la valeur « verbose » :
 
-   - **Outlook 32 bits sur Windows 32 bits** :
+   - **Outlook 32 bits sur Windows 32 bits**:
 
      ```text
      Windows Registry Editor Version 5.00
@@ -272,7 +272,7 @@ Pour les autres méthodes que vous pouvez utiliser pour envoyer des messages à 
      "LoggingLevel"="Verbose"
      ```
 
-   - **Outlook 32 bits sur Windows 64 bits** :
+   - **Outlook 32 bits sur Windows 64 bits**:
 
      ```text
      Windows Registry Editor Version 5.00
@@ -281,7 +281,7 @@ Pour les autres méthodes que vous pouvez utiliser pour envoyer des messages à 
      "LoggingLevel"="Verbose"
      ```
 
-   - **Outlook 64 bits** :
+   - **Outlook 64 bits**:
 
      ```text
      Windows Registry Editor Version 5.00

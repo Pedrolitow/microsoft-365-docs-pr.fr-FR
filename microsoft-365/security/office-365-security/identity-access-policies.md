@@ -18,12 +18,12 @@ ms.collection:
 - remotework
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: b4468bfc7ef4b6f76d44b328f4e5b6d61d7f06ac
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 0a9c09e33eb8fd5d03fcbdf44701544e656673d2
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357838"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615155"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Stratégies communes pour les identités et l’accès aux appareils
 
@@ -41,7 +41,7 @@ Le diagramme suivant illustre l’ensemble de stratégies recommandé. Elle indi
 
 Voici un résumé PDF d’une page avec des liens vers les stratégies individuelles :
 
-[![Image miniature pour la protection des identités et des périphériques pour le document Microsoft 365](../../media/microsoft-365-policies-configurations/MSFT-cloud-architecture-identity-device-protection-handout.png)](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) <br/>  [Afficher en tant que PDF](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) \| [Télécharger en tant que fichier PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf)
+[![Image miniature pour la protection des identités et des périphériques pour le document Microsoft 365](../../media/microsoft-365-policies-configurations/MSFT-cloud-architecture-identity-device-protection-handout.png)](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) <br> [Afficher en tant que PDF](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) \| [Télécharger en tant que fichier PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf)
 
 Le reste de cet article explique comment configurer ces stratégies.
 
@@ -107,7 +107,7 @@ Le tableau suivant décrit les paramètres de stratégie d’accès conditionnel
 
 Dans la section **affectations** :
 
-|Setting|Propriétés|Valeurs|Remarques|
+|Paramètres|Propriétés|Valeurs|Remarques|
 |---|---|---|---|
 |Utilisateurs et groupes|Inclure|**Sélectionnez utilisateurs et groupes > utilisateurs et groupes**: sélectionnez des groupes spécifiques contenant des comptes d’utilisateurs ciblés.|Commencez par le groupe qui inclut les comptes d’utilisateur pilote.|
 ||Exclure|**Utilisateurs et groupes**: sélectionnez votre groupe d’exceptions d’accès conditionnel ; comptes de service (identités d’application).|L’appartenance doit être modifiée en fonction de vos besoins et de manière temporaire.|
@@ -129,7 +129,7 @@ Appliquez les paramètres de niveau de risque en fonction du niveau de protectio
 
 Dans la section **contrôles d’accès** :
 
-|Setting|Propriétés|Valeurs|Action|
+|Paramètres|Propriétés|Valeurs|Action|
 |---|---|---|---|
 |Accorder|**Grant access**||Sélectionner|
 |||**Exiger l’authentification multifacteur**|Vérifier|
@@ -150,17 +150,17 @@ Consultez [cet article](../../enterprise/microsoft-365-client-support-modern-aut
 
 Dans la section **affectations** :
 
-|Setting|Propriétés|Valeurs|Remarques|
+|Paramètres|Propriétés|Valeurs|Remarques|
 |---|---|---|---|
 |Utilisateurs et groupes|Inclure|**Sélectionnez utilisateurs et groupes > utilisateurs et groupes**: sélectionnez des groupes spécifiques contenant des comptes d’utilisateurs ciblés.|Commencez par le groupe qui inclut les comptes d’utilisateur pilote.|
 ||Exclure|**Utilisateurs et groupes**: sélectionnez votre groupe d’exceptions d’accès conditionnel ; comptes de service (identités d’application).|L’appartenance doit être modifiée en fonction de vos besoins et de manière temporaire.|
 |Actions ou applications Cloud|**Les applications Cloud > incluent**|**Sélectionnez applications**: sélectionnez les applications correspondant aux clients qui ne prennent pas en charge l’authentification moderne.||
-|Conditions|**Applications clientes**|Choisissez **Oui** pour **configurer** <br/> Désactivez les cases à cocher pour le **navigateur** et **les applications mobiles et les clients de bureau**||
+|Conditions|**Applications clientes**|Choisissez **Oui** pour **configurer** <p> Désactivez les cases à cocher pour le **navigateur** et **les applications mobiles et les clients de bureau**||
 |
 
 Dans la section **contrôles d’accès** :
 
-|Setting|Propriétés|Valeurs|Action|
+|Paramètres|Propriétés|Valeurs|Action|
 |---|---|---|---|
 |Accorder|**Bloquer l’accès**||Sélectionner|
 ||**Demander tous les contrôles sélectionnés**||Sélectionner|
@@ -192,7 +192,7 @@ Dans la deuxième section **affectations** :
 
 |Type|Propriétés|Valeurs|Action|
 |---|---|---|---|
-|Access|**Autoriser l’accès**||Sélectionner|
+|Accès|**Autoriser l’accès**||Sélectionner|
 |||**Exiger le changement du mot de passe**|Vérifier|
 |
 
@@ -275,7 +275,7 @@ Vous devez créer une stratégie pour chaque PC, téléphone ou plateforme de ta
 - Windows 8,1 et versions ultérieures
 - Windows 10 et versions ultérieures
 
-Pour créer des stratégies de conformité des appareils, connectez-vous au [Centre d’administration du gestionnaire de points de terminaison Microsoft](https://endpoint.microsoft.com) avec vos informations d’identification d’administrateur, puis accédez à périphériques stratégies de conformité des **appareils**  >  **Compliance policies**  >  **Policies**. Sélectionnez **créer une stratégie**.
+Pour créer des stratégies de conformité des appareils, connectez-vous au [Centre d’administration du gestionnaire de points de terminaison Microsoft](https://endpoint.microsoft.com) avec vos informations d’identification d’administrateur, puis accédez à périphériques stratégies de conformité des **appareils** \>  \> . Sélectionnez **créer une stratégie**.
 
 Pour que les stratégies de conformité des appareils soient déployées, elles doivent être affectées à des groupes d’utilisateurs. Vous affectez une stratégie après l’avoir créée et enregistrée. Dans le centre d’administration, sélectionnez la stratégie, puis sélectionnez **affectations**. Après avoir sélectionné les groupes pour lesquels vous souhaitez recevoir la stratégie, sélectionnez **Enregistrer** pour enregistrer l’affectation de groupe et déployer la stratégie.
 
@@ -302,22 +302,22 @@ Pour la **sécurité du système**, reportez-vous à ce tableau.
 
 |Type|Propriétés|Valeur|Action|
 |---|---|---|---|
-|Password|Exiger un mot de passe pour déverrouiller les appareils mobiles|Require (Rendre obligatoire)|Sélectionner|
+|Mot de passe|Exiger un mot de passe pour déverrouiller les appareils mobiles|Require (Rendre obligatoire)|Sélectionner|
 ||Mots de passe simples|Bloquer|Sélectionner|
 ||Type de mot de passe|Valeur par défaut du périphérique|Sélectionner|
-||Longueur minimale du mot de passe|6 |Type|
-||Nombre maximal de minutes d’inactivité avant que le mot de passe ne soit requis|15 |Type <br/> Ce paramètre est pris en charge pour Android versions 4,0 et supérieures ou KNOX 4,0 et versions ultérieures. Pour les appareils iOS, il est pris en charge pour iOS 8,0 et versions ultérieures.|
+||Longueur minimale du mot de passe|6 |Type|
+||Nombre maximal de minutes d’inactivité avant que le mot de passe ne soit requis|15 |Type <p> Ce paramètre est pris en charge pour Android versions 4,0 et supérieures ou KNOX 4,0 et versions ultérieures. Pour les appareils iOS, il est pris en charge pour iOS 8,0 et versions ultérieures.|
 ||Expiration du mot de passe (jours)|41|Type|
-||Nombre de mots de passe précédents pour empêcher la réutilisation|5 |Type|
+||Nombre de mots de passe précédents pour empêcher la réutilisation|5 |Type|
 ||Exiger un mot de passe lorsque l’appareil revient de l’état inactif (mobile et holographique)|Require (Rendre obligatoire)|Disponible pour Windows 10 et versions ultérieures|
 |Chiffrement|Chiffrement du stockage des données sur l’appareil|Require (Rendre obligatoire)|Sélectionner|
 |Sécurité de l’appareil|-|Require (Rendre obligatoire)|Sélectionner|
 ||Antivirus|Require (Rendre obligatoire)|Sélectionner|
-||Logiciel anti-espion|Require (Rendre obligatoire)|Sélectionner <br/> Ce paramètre nécessite une solution de protection contre les logiciels espions inscrite auprès du centre de sécurité Windows.|
+||Logiciel anti-espion|Require (Rendre obligatoire)|Sélectionner <p> Ce paramètre nécessite une solution de protection contre les logiciels espions inscrite auprès du centre de sécurité Windows.|
 |Defender|Logiciel anti-programme malveillant Microsoft Defender|Require (Rendre obligatoire)|Sélectionner|
-||Version minimale du logiciel anti-programme malveillant de Microsoft Defender||Type <br/> Uniquement pris en charge pour les ordinateurs de bureau Windows 10. Microsoft recommande une version qui n’est pas plus de cinq par rapport à la version la plus récente.|
+||Version minimale du logiciel anti-programme malveillant de Microsoft Defender||Type <p> Uniquement pris en charge pour les ordinateurs de bureau Windows 10. Microsoft recommande une version qui n’est pas plus de cinq par rapport à la version la plus récente.|
 ||Mise à jour de la signature du logiciel anti-programme malveillant Microsoft Defender|Require (Rendre obligatoire)|Sélectionner|
-||Protection en temps réel|Require (Rendre obligatoire)|Sélectionner <br/> Prise en charge uniquement pour les ordinateurs de bureau Windows 10|
+||Protection en temps réel|Require (Rendre obligatoire)|Sélectionner <p> Prise en charge uniquement pour les ordinateurs de bureau Windows 10|
 |
 
 #### <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender pour point de terminaison

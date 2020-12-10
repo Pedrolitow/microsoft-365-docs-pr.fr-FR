@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-office365
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur la fonctionnalité de pièces jointes fiables dans Microsoft Defender pour Office 365.
-ms.openlocfilehash: da3949a4520c52c7f5685efd109f8c976305ea06
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: d38f95991a1d310e8a894a32e06b5891ebb498a9
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357212"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616679"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Pièces jointes fiables dans Microsoft Defender pour Office 365
 
@@ -65,9 +65,9 @@ Cette section décrit les paramètres des stratégies de pièces jointes approuv
 
   |Option|Effet|À utiliser lorsque vous souhaitez :|
   |---|---|---|
-  |**Désactivé**|Les pièces jointes ne sont pas analysées par des pièces jointes fiables. Les messages sont toujours analysés pour la protection contre les programmes malveillants [dans EOP](anti-malware-protection.md).|Désactivez l’analyse pour les destinataires sélectionnés. <p> Éviter les retards inutiles dans le routage du courrier interne. <p> **Cette option n’est pas recommandée pour la plupart des utilisateurs. Cette option ne doit être utilisée que pour désactiver l’analyse des pièces jointes fiables pour les destinataires qui reçoivent uniquement des messages provenant d’expéditeurs approuvés.**|
+  |**Désactiver**|Les pièces jointes ne sont pas analysées par des pièces jointes fiables. Les messages sont toujours analysés pour la protection contre les programmes malveillants [dans EOP](anti-malware-protection.md).|Désactivez l’analyse pour les destinataires sélectionnés. <p> Éviter les retards inutiles dans le routage du courrier interne. <p> **Cette option n’est pas recommandée pour la plupart des utilisateurs. Cette option ne doit être utilisée que pour désactiver l’analyse des pièces jointes fiables pour les destinataires qui reçoivent uniquement des messages provenant d’expéditeurs approuvés.**|
   |**Moniteur**|Remet les messages avec des pièces jointes, puis effectue le suivi de ce qui se produit avec des programmes malveillants <p> La remise de messages fiables peut être retardée en raison de l’analyse des pièces jointes approuvées.|Voir WHERE détection des programmes malveillants dans votre organisation.|
-  |**Bloquer**|Empêche la remise des messages dont les pièces jointes aux programmes malveillants sont détectées. <p> Les messages sont [mis en quarantaine](manage-quarantined-messages-and-files.md) lorsque seuls les administrateurs (pas les utilisateurs finaux) peuvent consulter, publier ou supprimer les messages. <p> Bloque automatiquement les instances futures des messages et des pièces jointes. <p> La remise de messages fiables peut être retardée en raison de l’analyse des pièces jointes approuvées.|Protège votre organisation contre les attaques répétées à l’aide des mêmes pièces jointes. <p> Il s’agit de la valeur par défaut et de la valeur recommandée dans [stratégies de sécurité prédéfinies](preset-security-policies.md)standard et strict.|
+  |**Bloc**|Empêche la remise des messages dont les pièces jointes aux programmes malveillants sont détectées. <p> Les messages sont [mis en quarantaine](manage-quarantined-messages-and-files.md) lorsque seuls les administrateurs (pas les utilisateurs finaux) peuvent consulter, publier ou supprimer les messages. <p> Bloque automatiquement les instances futures des messages et des pièces jointes. <p> La remise de messages fiables peut être retardée en raison de l’analyse des pièces jointes approuvées.|Protège votre organisation contre les attaques répétées à l’aide des mêmes pièces jointes. <p> Il s’agit de la valeur par défaut et de la valeur recommandée dans [stratégies de sécurité prédéfinies](preset-security-policies.md)standard et strict.|
   |**Replace**|Supprime les pièces jointes malveillantes détectées. <p> Avertir les destinataires que des pièces jointes ont été supprimées. <p>  Les messages sont [mis en quarantaine](manage-quarantined-messages-and-files.md) lorsque seuls les administrateurs (pas les utilisateurs finaux) peuvent consulter, publier ou supprimer les messages. <p> La remise de messages fiables peut être retardée en raison de l’analyse des pièces jointes approuvées.|Augmenter la visibilité aux destinataires pour lesquels les pièces jointes ont été supprimées en raison d’un programme malveillant détecté.|
   |**Remise dynamique**|Remet les messages immédiatement, mais remplace les pièces jointes par des espaces réservés jusqu’à la fin de l’analyse des pièces jointes fiables. <p> Pour plus d’informations, consultez la section relative [à la remise dynamique des stratégies de pièces jointes approuvées](#dynamic-delivery-in-safe-attachments-policies) plus loin dans cette rubrique.|Éviter les retards de message tout en protégeant les destinataires des fichiers malveillants. <p> Autoriser les destinataires à prévisualiser les pièces jointes en mode sans échec lors de l’analyse.|
   |

@@ -26,12 +26,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Dans cet article, les administrateurs peuvent en savoir plus sur la protection des liens fiables dans Defender pour Office 365 afin de protéger leur organisation contre le hameçonnage et les autres attaques qui utilisent des URL malveillantes.
-ms.openlocfilehash: 869cb2f330b81481a2a0a013564853274654d0ef
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: f2a747b0776a16ac981158ab866f28699583a06b
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846055"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616319"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Liens fiables dans Microsoft Defender pour Office 365
 
@@ -44,7 +44,7 @@ La fonctionnalité liens fiables est une fonctionnalité de [Defender pour Offic
 
 La protection des liens fiables est disponible aux emplacements suivants :
 
-- **Messages électroniques** : la protection des liens fiables pour les liens dans les messages électroniques est contrôlée par les stratégies de liens fiables. Il n’existe pas de stratégie de liens approuvés par défaut, pour **obtenir la protection des liens fiables dans les messages électroniques, vous devez créer une ou plusieurs stratégies de liens fiables**. Pour obtenir des instructions, reportez-vous à la rubrique [configurer des stratégies de liens fiables dans Microsoft Defender pour Office 365](set-up-atp-safe-links-policies.md).
+- **Messages électroniques**: la protection des liens fiables pour les liens dans les messages électroniques est contrôlée par les stratégies de liens fiables. Il n’existe pas de stratégie de liens approuvés par défaut, pour **obtenir la protection des liens fiables dans les messages électroniques, vous devez créer une ou plusieurs stratégies de liens fiables**. Pour obtenir des instructions, reportez-vous à la rubrique [configurer des stratégies de liens fiables dans Microsoft Defender pour Office 365](set-up-atp-safe-links-policies.md).
 
   Pour plus d’informations sur la protection des liens fiables pour les messages électroniques, voir la section [paramètres de liens fiables pour les messages électroniques](#safe-links-settings-for-email-messages) plus loin dans cet article.
 
@@ -52,7 +52,7 @@ La protection des liens fiables est disponible aux emplacements suivants :
 
   Pour plus d’informations sur la protection des liens fiables dans Teams, consultez la section [paramètres de liens approuvés pour Microsoft teams](#safe-links-settings-for-microsoft-teams) plus loin dans cette rubrique.
 
-- **Applications office 365** : la protection des liens fiables pour les applications Office 365 est disponible dans les APS de bureau, mobiles et Web pris en charge. Vous **configurez** la protection des liens fiables pour les applications Office 365 dans le paramètre global qui se trouvent **en dehors** des stratégies de liens fiables. Pour obtenir des instructions, consultez la rubrique [configure Global Settings for Safe Links Settings in Microsoft Defender for Office 365](configure-global-settings-for-safe-links.md).
+- **Applications office 365**: la protection des liens fiables pour les applications Office 365 est disponible dans les APS de bureau, mobiles et Web pris en charge. Vous **configurez** la protection des liens fiables pour les applications Office 365 dans le paramètre global qui se trouvent **en dehors** des stratégies de liens fiables. Pour obtenir des instructions, consultez la rubrique [configure Global Settings for Safe Links Settings in Microsoft Defender for Office 365](configure-global-settings-for-safe-links.md).
 
   Toutefois, la protection des liens fiables pour les applications Office 365 s' **applique** uniquement aux utilisateurs qui sont inclus dans les stratégies de liens fiables actifs. Si un utilisateur n’est pas inclus dans une stratégie de liens fiables active, il n’obtient pas de protection de liens fiables dans les applications Office 365 prises en charge.
 
@@ -60,13 +60,13 @@ La protection des liens fiables est disponible aux emplacements suivants :
 
 Cet article décrit en détail les types de paramètres de liens fiables suivants :
 
-- **Paramètres des stratégies de liens fiables** : ces paramètres s’appliquent uniquement aux utilisateurs qui sont inclus dans les stratégies spécifiques, et les paramètres peuvent être différents selon les stratégies. Ces paramètres sont les suivants :
+- **Paramètres des stratégies de liens fiables**: ces paramètres s’appliquent uniquement aux utilisateurs qui sont inclus dans les stratégies spécifiques, et les paramètres peuvent être différents selon les stratégies. Ces paramètres sont les suivants :
 
   - [Paramètres de liens fiables pour les messages électroniques](#safe-links-settings-for-email-messages)
   - [Paramètres de liens fiables pour Microsoft teams](#safe-links-settings-for-microsoft-teams)
   - [Listes « ne pas réécrire les URL suivantes » dans stratégies de liens fiables](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)
 
-- **Paramètres globaux de liens approuvés** : ces paramètres sont configurés globalement, pas dans les stratégies de liens fiables. Toutefois, les paramètres s’appliquent uniquement aux utilisateurs qui sont inclus dans les stratégies de liens fiables actifs. Ces paramètres sont les suivants :
+- **Paramètres globaux de liens approuvés**: ces paramètres sont configurés globalement, pas dans les stratégies de liens fiables. Toutefois, les paramètres s’appliquent uniquement aux utilisateurs qui sont inclus dans les stratégies de liens fiables actifs. Ces paramètres sont les suivants :
 
   - [Paramètres de liens fiables pour les applications Office 365](#safe-links-settings-for-office-365-apps)
   - [Liste « bloquer les URL suivantes » pour les liens fiables](#block-the-following-urls-list-for-safe-links)
@@ -77,9 +77,9 @@ Le tableau suivant décrit les scénarios de liens fiables dans les organisation
 
 |Scénario|Résultat|
 |---|---|
-|Jean est membre du service marketing. La protection des liens fiables pour les applications Office 365 est activée dans les paramètres globaux pour les liens fiables et une stratégie de liens fiables qui s’applique aux membres du service marketing existe. Jean ouvre une présentation PowerPoint dans un message électronique, puis clique sur une URL dans la présentation.|Jean est protégé par les liens fiables. <br/><br/> Jean est inclus dans une stratégie de liens fiables, et la protection des liens fiables pour les applications Office 365 est activée. <br/><br/> Pour plus d’informations sur la configuration requise pour la protection des liens fiables dans les applications Office 365, voir la section [paramètres de liens approuvés pour les applications office 365](#safe-links-settings-for-office-365-apps) plus loin dans cet article.|
-|Aucune stratégie de liens fiables n’est configurée pour l’organisation Microsoft 365 E5 de Chris. Chris reçoit un courrier électronique d’un expéditeur externe contenant une URL vers un site Web malveillant qu’il clique finalement.|Chris n’est pas protégé par les liens fiables. <br/><br/> Un administrateur doit créer au moins une stratégie de liens fiables pour obtenir une protection des liens fiables dans les messages électroniques entrants. Chris doit être inclus dans les conditions de la stratégie pour obtenir une protection des liens fiables.|
-|Dans l’organisation de Pat, aucun administrateur n’a créé de stratégies de liens fiables, mais la protection des liens fiables pour les applications Office 365 est activée. Pat ouvre un document Word et clique sur une URL dans le fichier.|Pat n’est pas protégé par les liens fiables. <br/><br/> Bien que la protection des liens fiables pour les applications Office 365 est activée globalement, Pat n’est pas inclus dans les stratégies de liens fiables actives, de sorte que la protection ne peut pas être appliquée.|
+|Jean est membre du service marketing. La protection des liens fiables pour les applications Office 365 est activée dans les paramètres globaux pour les liens fiables et une stratégie de liens fiables qui s’applique aux membres du service marketing existe. Jean ouvre une présentation PowerPoint dans un message électronique, puis clique sur une URL dans la présentation.|Jean est protégé par les liens fiables. <p> Jean est inclus dans une stratégie de liens fiables, et la protection des liens fiables pour les applications Office 365 est activée. <p> Pour plus d’informations sur la configuration requise pour la protection des liens fiables dans les applications Office 365, voir la section [paramètres de liens approuvés pour les applications office 365](#safe-links-settings-for-office-365-apps) plus loin dans cet article.|
+|Aucune stratégie de liens fiables n’est configurée pour l’organisation Microsoft 365 E5 de Chris. Chris reçoit un courrier électronique d’un expéditeur externe contenant une URL vers un site Web malveillant qu’il clique finalement.|Chris n’est pas protégé par les liens fiables. <p> Un administrateur doit créer au moins une stratégie de liens fiables pour obtenir une protection des liens fiables dans les messages électroniques entrants. Chris doit être inclus dans les conditions de la stratégie pour obtenir une protection des liens fiables.|
+|Dans l’organisation de Pat, aucun administrateur n’a créé de stratégies de liens fiables, mais la protection des liens fiables pour les applications Office 365 est activée. Pat ouvre un document Word et clique sur une URL dans le fichier.|Pat n’est pas protégé par les liens fiables. <p> Bien que la protection des liens fiables pour les applications Office 365 est activée globalement, Pat n’est pas inclus dans les stratégies de liens fiables actives, de sorte que la protection ne peut pas être appliquée.|
 |Dans l’organisation de Lee, `https://tailspintoys.com` est configuré dans la liste **bloquer les URL suivantes** dans les paramètres globaux pour les liens fiables. Une stratégie de liens fiables qui inclut Lee existe déjà. Lee reçoit un message électronique qui contient l’URL `https://tailspintoys.com/aboutus/trythispage` . Lee clique sur l’URL.|L’URL peut être automatiquement bloquée pour Lee ; Cela dépend de l’entrée URL de la liste et du client de messagerie Lee utilisé. Pour plus d’informations, consultez la section [« bloquer les URL suivantes » pour les liens fiables](#block-the-following-urls-list-for-safe-links) plus loin dans cette rubrique.|
 |Marie et Julia fonctionnent pour contoso.com. Il y a longtemps, les administrateurs ont configuré des stratégies de liens fiables qui s’appliquent à Marie et Julia. Marie envoie un message électronique à Julia, pas de savoir que le courrier électronique contient une URL malveillante.|Julia est protégé par les liens fiables **si** la stratégie de liens fiables qui s’applique à elle est configurée pour s’appliquer aux messages entre les destinataires internes. Pour plus d’informations, consultez la section [paramètres de liens approuvés pour les messages électroniques](#safe-links-settings-for-email-messages) plus loin dans cette rubrique.|
 
@@ -91,41 +91,41 @@ Une fois que les liens fiables réécritnt une URL, l’URL reste réécrite, m�
 
 Les paramètres des stratégies de liens fiables qui s’appliquent aux messages électroniques sont décrits dans la liste suivante :
 
-- **Sélectionnez l’action pour les URL potentiellement malveillantes dans les messages** : active ou désactive l’analyse des liens fiables dans les messages électroniques. La valeur recommandée est **activé**. L’activation de ce paramètre entraîne les actions suivantes.
+- **Sélectionnez l’action pour les URL potentiellement malveillantes dans les messages**: active ou désactive l’analyse des liens fiables dans les messages électroniques. La valeur recommandée est **activé**. L’activation de ce paramètre entraîne les actions suivantes.
 
   - L’analyse des liens fiables est activée dans Outlook (C2R) sur Windows.
   - Les URL sont réécrites et les utilisateurs sont acheminés via la protection des liens fiables lorsqu’ils cliquent sur les URL dans les messages.
   - Lorsque l’utilisateur clique dessus, les URL sont comparées à une liste d’URL malveillantes connues et à la [liste « bloquer les URL suivantes »](#block-the-following-urls-list-for-safe-links).
   - Les URL qui n’ont pas de réputation valide sont détonations de manière asynchrone en arrière-plan.
 
-- **Application de l’analyse des URL en temps réel pour les liens suspects et les liens pointant vers des fichiers** : permet l’analyse en temps réel des liens, y compris les liens dans les messages électroniques qui pointent vers du contenu téléchargeable. La valeur recommandée est activée.
+- **Application de l’analyse des URL en temps réel pour les liens suspects et les liens pointant vers des fichiers**: permet l’analyse en temps réel des liens, y compris les liens dans les messages électroniques qui pointent vers du contenu téléchargeable. La valeur recommandée est activée.
 
-  - **Patientez jusqu’à la fin de l’analyse des URL avant de remettre le message** :
+  - **Patientez jusqu’à la fin de l’analyse des URL avant de remettre le message**:
 
     - Activé : les messages qui contiennent des URL sont conservés jusqu’à la fin de l’analyse. Les messages sont remis uniquement une fois que les URL sont approuvées comme étant sûres. Il s’agit de la valeur recommandée.
     - Désactivé : si l’analyse des URL ne peut pas aboutir, envoyez le message.
 
-- **Appliquer des liens fiables aux messages électroniques envoyés au sein de l’organisation** : active ou désactive l’analyse des liens fiables sur les messages envoyés entre des expéditeurs internes et des destinataires internes au sein de la même organisation Exchange Online. La valeur recommandée est activée.
+- **Appliquer des liens fiables aux messages électroniques envoyés au sein de l’organisation**: active ou désactive l’analyse des liens fiables sur les messages envoyés entre des expéditeurs internes et des destinataires internes au sein de la même organisation Exchange Online. La valeur recommandée est activée.
 
-- **Ne pas suivre les clics des utilisateurs** : active ou désactive le stockage de liens fiables cliquez sur données pour les URL sur lesquelles l’utilisateur clique dans les messages électroniques. La valeur recommandée est de laisser ce paramètre non sélectionné (pour effectuer le suivi des clics des utilisateurs).
+- **Ne pas suivre les clics des utilisateurs**: active ou désactive le stockage de liens fiables cliquez sur données pour les URL sur lesquelles l’utilisateur clique dans les messages électroniques. La valeur recommandée est de laisser ce paramètre non sélectionné (pour effectuer le suivi des clics des utilisateurs).
 
   URL le suivi des liens dans les messages électroniques envoyés entre des expéditeurs internes et des destinataires internes n’est pas pris en charge actuellement.
 
-- **Ne pas autoriser les utilisateurs à cliquer vers l’URL d’origine** : autorise ou empêche les utilisateurs de cliquer sur la [page d’avertissement](#warning-pages-from-safe-links) à l’URL d’origine. La valeur Recommended est activée.
+- **Ne pas autoriser les utilisateurs à cliquer vers l’URL d’origine**: autorise ou empêche les utilisateurs de cliquer sur la [page d’avertissement](#warning-pages-from-safe-links) à l’URL d’origine. La valeur Recommended est activée.
 
-- **Ne pas réécrire les URL suivantes** : laisse les URL telles quelles. Conserve une liste personnalisée d’URL sûres qui n’ont pas besoin d’être analysées. La liste est unique pour chaque stratégie de liens fiables. Pour plus d’informations sur la liste **ne pas réécrire les URL suivantes** , consultez les [listes « ne pas réécrire les URL suivantes » dans stratégies de liens approuvés](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies) plus loin dans cet article.
+- **Ne pas réécrire les URL suivantes**: laisse les URL telles quelles. Conserve une liste personnalisée d’URL sûres qui n’ont pas besoin d’être analysées. La liste est unique pour chaque stratégie de liens fiables. Pour plus d’informations sur la liste **ne pas réécrire les URL suivantes** , consultez les [listes « ne pas réécrire les URL suivantes » dans stratégies de liens approuvés](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies) plus loin dans cet article.
 
 Pour plus d’informations sur les valeurs recommandées pour les paramètres de stratégie standard et stricte pour les stratégies de liens fiables, voir [paramètres de stratégie de liens fiables](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings).
 
-- **Filtres de destinataires** : vous devez spécifier les conditions de destinataire et les exceptions qui déterminent la personne à laquelle la stratégie s’applique. Vous pouvez utiliser ces propriétés pour les conditions et les exceptions :
+- **Filtres de destinataires**: vous devez spécifier les conditions de destinataire et les exceptions qui déterminent la personne à laquelle la stratégie s’applique. Vous pouvez utiliser ces propriétés pour les conditions et les exceptions :
 
   - **Le destinataire est**
   - **Le domaine du destinataire est**
   - **Le destinataire est membre de**
 
-  Vous ne pouvez utiliser une condition ou une exception qu'une seule fois, mais la condition ou l'exception peut contenir plusieurs valeurs. Plusieurs valeurs de la même condition ou exception utilisent la logique OU (par exemple, _\<recipient1\>_ ou _\<recipient2\>_ ). Des conditions ou des exceptions différentes utilisent la logique ET (par exemple, _\<recipient1\>_ et _\<member of group 1\>_ ).
+  Vous ne pouvez utiliser une condition ou une exception qu'une seule fois, mais la condition ou l'exception peut contenir plusieurs valeurs. Plusieurs valeurs de la même condition ou exception utilisent la logique OU (par exemple, _\<recipient1\>_ ou _\<recipient2\>_). Des conditions ou des exceptions différentes utilisent la logique ET (par exemple, _\<recipient1\>_ et _\<member of group 1\>_).
 
-- **Priority** : Si vous créez plusieurs stratégies, vous pouvez spécifier l’ordre dans lequel elles sont appliquées. Aucune stratégie ne peut avoir la même priorité, et le traitement de stratégie s’arrête une fois la première stratégie appliquée.
+- **Priority**: Si vous créez plusieurs stratégies, vous pouvez spécifier l’ordre dans lequel elles sont appliquées. Aucune stratégie ne peut avoir la même priorité, et le traitement de stratégie s’arrête une fois la première stratégie appliquée.
 
   Pour plus d’informations sur l’ordre de priorité et l’évaluation et l’application de plusieurs stratégies, consultez [Ordre et la priorité de la protection de la messagerie](how-policies-and-protections-are-combined.md).
 
@@ -166,7 +166,7 @@ Une fois que vous avez activé la protection des liens fiables pour Microsoft Te
 
 - Si vous avez cliqué sur le lien dans une conversation Teams, une conversation de groupe ou à partir de canaux, la page d’avertissement, comme illustré dans la capture d’écran ci-dessous, apparaît dans le navigateur Web par défaut.
 - Si vous avez cliqué sur le lien à partir d’un onglet épinglé, la page d’avertissement s’affiche dans l’interface teams au sein de cet onglet. Pour des raisons de sécurité, l’option permettant d’ouvrir le lien dans un navigateur Web est désactivée.
-- En fonction de la configuration du paramètre **ne pas autoriser les utilisateurs à cliquer sur l’URL d’origine** dans la stratégie, l’utilisateur est autorisé ou non à accéder à l’URL d’origine ( **Continuer malgré tout (non recommandé)** dans la capture d’écran). Nous vous recommandons d’activer le paramètre **ne pas autoriser les utilisateurs à cliquer sur vers l’URL d’origine** afin que les utilisateurs ne puissent pas cliquer sur jusqu’à l’URL d’origine.
+- En fonction de la configuration du paramètre **ne pas autoriser les utilisateurs à cliquer sur l’URL d’origine** dans la stratégie, l’utilisateur est autorisé ou non à accéder à l’URL d’origine (**Continuer malgré tout (non recommandé)** dans la capture d’écran). Nous vous recommandons d’activer le paramètre **ne pas autoriser les utilisateurs à cliquer sur vers l’URL d’origine** afin que les utilisateurs ne puissent pas cliquer sur jusqu’à l’URL d’origine.
 
 Si l’utilisateur qui a envoyé le lien n’est pas inclus dans une stratégie de liens fiables où la protection des équipes est activée, l’utilisateur est libre de cliquer jusqu’à l’URL d’origine sur son ordinateur ou périphérique.
 
@@ -204,11 +204,11 @@ Vous configurez la protection des liens fiables pour les applications Office 365
 
 Les paramètres de liens approuvés suivants sont disponibles pour les applications Office 365 :
 
-- **Applications office 365** : active ou désactive l’analyse des liens fiables dans les applications Office 365 prises en charge. La valeur par défaut et recommandée est **activé**.
+- **Applications office 365**: active ou désactive l’analyse des liens fiables dans les applications Office 365 prises en charge. La valeur par défaut et recommandée est **activé**.
 
-- **Ne pas suivre lorsque les utilisateurs cliquent sur les liens fiables** : active ou désactive le stockage de liens fiables cliquez sur données pour les URL sur lesquelles l’utilisateur clique dans la version de bureau Word, Excel, PowerPoint et Visio. La valeur recommandée est **off** , ce qui signifie que les clics utilisateur sont suivis.
+- **Ne pas suivre lorsque les utilisateurs cliquent sur les liens fiables**: active ou désactive le stockage de liens fiables cliquez sur données pour les URL sur lesquelles l’utilisateur clique dans la version de bureau Word, Excel, PowerPoint et Visio. La valeur recommandée est **off**, ce qui signifie que les clics utilisateur sont suivis.
 
-- **Ne pas autoriser les utilisateurs à cliquer sur les liens fiables vers l’URL d’origine** : autorise ou empêche les utilisateurs de cliquer sur la [page d’avertissement](#warning-pages-from-safe-links) à l’URL d’origine dans les versions de bureau Word, Excel, PowerPoint et Visio. La valeur par défaut et recommandée est **activé**.
+- **Ne pas autoriser les utilisateurs à cliquer sur les liens fiables vers l’URL d’origine**: autorise ou empêche les utilisateurs de cliquer sur la [page d’avertissement](#warning-pages-from-safe-links) à l’URL d’origine dans les versions de bureau Word, Excel, PowerPoint et Visio. La valeur par défaut et recommandée est **activé**.
 
 Pour configurer les paramètres de liens approuvés pour les applications Office 365, voir [configurer la protection des liens fiables pour les applications office 365](configure-global-settings-for-safe-links.md#configure-safe-links-protection-for-office-365-apps-in-the-security--compliance-center).
 
@@ -228,7 +228,7 @@ Pour plus d’informations sur les valeurs recommandées pour les paramètres de
 
    - Si l’URL pointe vers un site Web qui a été jugé malveillant, une page d' [avertissement de site Web malveillant](#malicious-website-warning) (ou une page d’avertissement différente) s’ouvre.
 
-   - Si l’URL pointe vers un fichier téléchargeable et que la stratégie de liens approuvés qui s’applique à l’utilisateur est configurée pour analyser les liens vers du contenu téléchargeable ( **appliquer l’analyse des URL en temps réel pour les liens suspects et les liens qui pointent vers des fichiers** ), le fichier téléchargeable est vérifié.
+   - Si l’URL pointe vers un fichier téléchargeable et que la stratégie de liens approuvés qui s’applique à l’utilisateur est configurée pour analyser les liens vers du contenu téléchargeable (**appliquer l’analyse des URL en temps réel pour les liens suspects et les liens qui pointent vers des fichiers**), le fichier téléchargeable est vérifié.
 
    - Si l’URL est considérée comme fiable, l’utilisateur est dirigé vers le site Web.
 
@@ -249,7 +249,7 @@ Lorsqu’un utilisateur d’une stratégie de liens approuvés active clique sur
 
 Vous configurez la liste des URL dans les paramètres globaux pour les liens fiables. Pour obtenir des instructions, consultez la rubrique [configurer la liste « bloquer les URL suivantes »](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-security--compliance-center).
 
-**Remarques**  :
+**Remarques** :
 
 - Pour obtenir une liste véritablement universelle des URL bloquées partout, voir [gérer les URL dans la liste des clients autorisés/bloqués](tenant-allow-block-list.md).
 
@@ -274,7 +274,7 @@ Des exemples de valeurs que vous pouvez entrer et leurs résultats sont décrits
 
 |Valeur|Résultat|
 |---|---|
-|`contoso.com` <br/> ou <br/> `*contoso.com*`|Bloque le domaine, les sous-domaines et les chemins d’accès. Par exemple, `https://www.contoso.com` , `https://sub.contoso.com` et `https://contoso.com/abc` sont bloqués.|
+|`contoso.com` <p> ou <p> `*contoso.com*`|Bloque le domaine, les sous-domaines et les chemins d’accès. Par exemple, `https://www.contoso.com` , `https://sub.contoso.com` et `https://contoso.com/abc` sont bloqués.|
 |`https://contoso.com/a`|Bloque `https://contoso.com/a` , mais pas les sous-chemins supplémentaires comme `https://contoso.com/a/b` .|
 |`https://contoso.com/a*`|Blocs `https://contoso.com/a` et sous-chemins supplémentaires comme `https://contoso.com/a/b` .|
 |`https://toys.contoso.com*`|Bloque un sous-domaine ( `toys` dans cet exemple) tout en autorisant les clics sur d’autres URL de domaine (par exemple `https://contoso.com` `https://home.contoso.com` , ou).|
@@ -289,11 +289,11 @@ Chaque stratégie de liens fiables contient une liste **ne pas réécrire les UR
 
 Pour ajouter des entrées à la liste dans des stratégies de liens fiables nouvelles ou existantes, consultez la rubrique [créer](set-up-atp-safe-links-policies.md#use-the-security--compliance-center-to-create-safe-links-policies) des stratégies de liens fiables ou [modifier des stratégies de liens fiables](set-up-atp-safe-links-policies.md#use-the-security--compliance-center-to-modify-safe-links-policies).
 
-**Remarques**  :
+**Remarques** :
 
 - Les clients suivants ne reconnaissent pas les listes **ne pas réécrire les URL suivantes dans les** stratégies de liens fiables. Les utilisateurs inclus dans les stratégies ne peuvent pas accéder aux URL en fonction des résultats de l’analyse des liens fiables dans ces clients :
 
-  - Microsoft Teams
+  - Microsoft Teams
   - Office Web Apps
 
   Pour obtenir une liste véritablement universelle des URL autorisées partout, consultez [la rubrique gérer les URL dans la liste des clients autorisés/bloqués](tenant-allow-block-list.md).
@@ -313,7 +313,7 @@ Des exemples de valeurs que vous pouvez entrer et leurs résultats sont décrits
 |Valeur|Résultat|
 |---|---|
 |`contoso.com`|Autorise l’accès à des `https://contoso.com` sous-domaines ou des chemins d’accès.|
-|`*.contoso.com/*`|Permet d’accéder à un domaine, à des sous-domaines et à des chemins d’accès (par exemple,,, `https://www.contoso.com` `https://www.contoso.com` `https://maps.contoso.com` ou `https://www.contoso.com/a` ). <br/><br/> Cette entrée est fondamentalement plus efficace que `*contoso.com*` , car elle n’autorise pas les sites potentiellement frauduleux, comme `https://www.falsecontoso.com` ou `https://www.false.contoso.completelyfalse.com`|
+|`*.contoso.com/*`|Permet d’accéder à un domaine, à des sous-domaines et à des chemins d’accès (par exemple,,, `https://www.contoso.com` `https://www.contoso.com` `https://maps.contoso.com` ou `https://www.contoso.com/a` ). <p> Cette entrée est fondamentalement plus efficace que `*contoso.com*` , car elle n’autorise pas les sites potentiellement frauduleux, comme `https://www.falsecontoso.com` ou `https://www.false.contoso.completelyfalse.com`|
 |`https://contoso.com/a`|Autorise l’accès à `https://contoso.com/a` , mais pas aux sous-chemins comme `https://contoso.com/a/b`|
 |`https://contoso.com/a/*`|Autorise l’accès `https://contoso.com/a` et les sous-chemins comme `https://contoso.com/a/b`|
 |

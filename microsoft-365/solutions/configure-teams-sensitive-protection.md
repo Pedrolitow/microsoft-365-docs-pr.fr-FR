@@ -3,7 +3,7 @@ title: Configurer les équipes avec la protection des données sensibles
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Découvrez comment déployer des équipes avec la protection des données sensibles.
-ms.openlocfilehash: 3c68e6690d9fdab28a5dd1369876bec5b3fd9bc7
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: ad1cf437bdbe3bd7b25347bb49698314097462ab
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46528193"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49612951"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>Configurer les équipes avec la protection des données sensibles
 
@@ -117,7 +117,7 @@ Pour mettre à jour les paramètres du site
 2. Sous **Sites**, cliquez sur **Sites actifs**.
 3. Cliquez sur le site associé à l’équipe.
 4. Sous l’onglet **Stratégies**, sous **Partage externe**, cliquez sur **Modifier**.
-5. Si vous avez autorisé le partage d’invités lorsque vous avez créé l’étiquette de confidentialité, assurez-vous de sélectionner**Invités nouveaux et existants**. Si vous n’avez pas autorisé le partage lors de la création de l’étiquette, sélectionnez **Uniquement les membres de votre organisation**.
+5. Si vous avez autorisé le partage d’invités lorsque vous avez créé l’étiquette de confidentialité, assurez-vous de sélectionner **Invités nouveaux et existants**. Si vous n’avez pas autorisé le partage lors de la création de l’étiquette, sélectionnez **Uniquement les membres de votre organisation**.
 6. Sous Type de lien de partage par défaut, désactivez la case à cocher **Identique au paramètre de niveau organisation**, puis sélectionnez **Personnes spécifiques (uniquement les membres spécifiés par l’utilisateur)**.
 7. Cliquez sur **Enregistrer**.
 

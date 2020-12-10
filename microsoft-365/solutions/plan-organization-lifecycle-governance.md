@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Les options de gouvernance du cycle de vie des outils de collaboration dans Microsoft 365
-ms.openlocfilehash: 706f1aaecf22c4088d4539c208fef68320c5e710
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 4d779701d241fc7178ab759063be1b8cdf2e960c
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377186"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613019"
 ---
 # <a name="plan-organization-and-lifecycle-governance-for-microsoft-365-groups-and-microsoft-teams"></a>Planification de la gouvernance d’organisation et du cycle de vie pour les groupes Microsoft 365 et Microsoft teams
 
@@ -74,3 +74,9 @@ Une fois que vous avez défini les groupes pour qu’ils expirent :
 - Tous les groupes qui sont supprimés peuvent être restaurés dans les 30 jours par les propriétaires du groupe ou l’administrateur.
 
 Les stratégies d’expiration constituent un bon moyen de limiter la prolifération des groupes en s’assurant que les groupes qui ne sont plus utilisés sont supprimés. Si vous souhaitez créer une stratégie d’expiration de groupe, consultez la rubrique [Microsoft 365 Group expiration Policy](microsoft-365-groups-expiration-policy.md).
+
+## <a name="related-topics"></a>Voir aussi
+
+[Planification de la gouvernance de collaboration étape par étape](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[Création de votre plan de gouvernance de collaboration](collaboration-governance-first.md)

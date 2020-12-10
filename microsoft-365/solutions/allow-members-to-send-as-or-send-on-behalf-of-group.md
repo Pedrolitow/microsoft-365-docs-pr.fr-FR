@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 description: Découvrez comment autoriser les membres à envoyer des messages électroniques en tant que groupe Microsoft 365 ou envoyer des courriers électroniques de la part d’un groupe Microsoft 365.
-ms.openlocfilehash: 9ccaeff49914dd5b510beb80f40a3a3b790ce831
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 2abf0668411ccd08db5bbd8408605dcd0aa2d832
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377592"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613571"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>Autoriser les membres à envoyer en tant que ou envoyer de la part d’un groupe
 
@@ -42,7 +42,7 @@ L’autorisation **Envoyer de la part** de permet à un utilisateur d’envoyer 
 
 Cette section explique comment autoriser les utilisateurs à envoyer des courriers électroniques en tant que groupe dans le [Centre d’administration Exchange](https://go.microsoft.com/fwlink/p/?linkid=2059104) dans Exchange Online.
   
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange</a>, accédez à groupes de **destinataires** \> **Groups**.
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange</a>, accédez à groupes de **destinataires** \> .
     
 2. Sélectionnez **modifier** ![ l’icône modifier ](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) le groupe dans le groupe que vous souhaitez autoriser les utilisateurs à envoyer en tant que.   
     
@@ -60,7 +60,7 @@ Cette section explique comment autoriser les utilisateurs à envoyer des courrie
 
 Cette section explique comment autoriser les utilisateurs à envoyer des courriers électroniques de la part d’un groupe dans le centre d’administration Exchange dans Exchange Online.
   
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange</a>, accédez à groupes de **destinataires** \> **Groups**.
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange</a>, accédez à groupes de **destinataires** \> .
     
 2. Sélectionnez **modifier** ![ l’icône modifier ](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) le groupe dans le groupe que vous souhaitez autoriser les utilisateurs à envoyer en tant que. 
     
@@ -75,6 +75,10 @@ Cette section explique comment autoriser les utilisateurs à envoyer des courrie
     ![Type de recherche ou de sélection d’un utilisateur dans la liste](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
 
 ## <a name="related-articles"></a>Articles connexes
+
+[Planification de la gouvernance de collaboration étape par étape](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[Création de votre plan de gouvernance de collaboration](collaboration-governance-first.md)
 
 [En savoir plus sur les groupes Microsoft 365](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 

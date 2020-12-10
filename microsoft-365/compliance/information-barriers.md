@@ -1,5 +1,5 @@
 ---
-title: En savoir plus sur les barrières relatives aux informations
+title: En savoir plus sur les barrières relatives aux informations dans Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -16,14 +16,14 @@ ms.collection:
 localization_priority: None
 description: Utilisez les barrières relatives aux informations pour garantir la conformité de la communication à l’aide de Microsoft teams au sein de votre organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0630dc607d6993598f356a7090a6be5890028499
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 08ec3b01258220a71ac02e5333143fb11b66655f
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48636961"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613096"
 ---
-# <a name="information-barriers"></a>Obstacles aux informations
+# <a name="learn-about-information-barriers-in-microsoft-365"></a>En savoir plus sur les barrières relatives aux informations dans Microsoft 365
 
 Les services de Cloud Computing Microsoft incluent de puissantes fonctionnalités de communication et de collaboration. Mais supposons que vous souhaitiez restreindre la communication et la collaboration entre deux groupes afin d’éviter un conflit d’intérêts au sein de votre organisation. Ou peut-être souhaitez-vous restreindre la communication et la collaboration entre certaines personnes au sein de votre organisation afin de protéger les informations internes. Microsoft 365 permet la communication et la collaboration entre les groupes et les organisations, de sorte qu’y a-t-il un moyen de restreindre la communication et la collaboration entre des groupes d’utilisateurs spécifiques lorsque cela est nécessaire ? Avec des barrières d’informations, vous pouvez le faire ! 
 
@@ -35,7 +35,7 @@ Les barrières d’informations sont désormais prises en charge dans Microsoft 
 - Une équipe de recherche doit uniquement appeler ou converser en ligne avec une équipe de développement de produit
 
 > [!IMPORTANT]
-> Barrières relatives aux informations ***ne prend en charge que**les restrictions de deux façons. Les restrictions d’une seule manière, telles que marketing, peuvent communiquer avec les commerçants, mais les jours où le service marketing ne peut pas communiquer ne_sont pas pris en charge_* *.
+> Barrières relatives aux informations ***ne prend en charge que** les restrictions de deux façons. Les restrictions d’une seule manière, telles que marketing, peuvent communiquer avec les commerçants, mais les jours où le service marketing ne peut pas communiquer ne _sont pas pris en charge_* *.
 
 Pour tous ces exemples de scénarios (et plus), des stratégies de barrière des informations peuvent être définies pour empêcher ou autoriser les communications dans Microsoft Teams. De telles stratégies peuvent empêcher les personnes d’appeler ou de converser avec celles qu’ils ne doivent pas utiliser, ou d’autoriser les utilisateurs à communiquer uniquement avec des groupes spécifiques dans Microsoft Teams. Avec des stratégies de barrière des informations en vigueur, chaque fois que des utilisateurs couverts par ces stratégies tentent de communiquer avec d’autres personnes dans Microsoft Teams, des vérifications sont effectuées pour empêcher (ou autoriser) la communication (comme défini par les stratégies de barrière des informations). Pour en savoir plus sur l’expérience utilisateur avec des barrières d’informations, consultez la rubrique [barrières relatives aux informations dans Microsoft teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams).
 

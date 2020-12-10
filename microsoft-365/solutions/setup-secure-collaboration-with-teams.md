@@ -2,7 +2,7 @@
 title: Configurer la collaboration sécurisée avec Microsoft 365
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-jun2020
 f1.keywords: NOCSH
 description: Découvrez comment configurer la collaboration de contenu sécurisé dans teams pour protéger vos données en fonction de leur sensibilité.
-ms.openlocfilehash: 4f2e157025f00660e77ba3377221368e37e45445
-ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
+ms.openlocfilehash: f65657125fef8b8cf7e4e229d70d8fe211153392
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49602072"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613583"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365"></a>Configurer la collaboration sécurisée avec Microsoft 365
 
@@ -80,7 +80,7 @@ Ces niveaux de *ligne de base*, *sensibles* et *hautement sensibles* , augmenten
 
 |-|**Niveau de référence**|**Niveau sensible**|**Niveau hautement sensible**|
 |:--|:-----------|:------------|:-------------------|
-|Équipe publique ou privée|Les deux|Private|Private|
+|Équipe publique ou privée|Les deux|Privé|Privé|
 |Partage non authentifié|Blocked|Blocked|Blocked|
 |Partage de fichiers|Autorisé|Autorisé|Seuls les propriétaires d’équipe peuvent partager.|
 |Membres de l’équipe|Tout le monde peut rejoindre des équipes publiques.<br>Approbation du propriétaire de l’équipe requise pour rejoindre des équipes privées.|Approbation du propriétaire de l’équipe requise pour rejoindre le groupe.|Approbation du propriétaire de l’équipe requise pour rejoindre le groupe.|

@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez comment utiliser les fonctionnalités d’analyse et de réponse aux menaces pour rechercher et examiner des courriers électroniques malveillants.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a411e221d49a30a103de6e0f169588d13c387443
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: f3fd2e5c0f75de9a1b942e8f0baa8e9d44843de4
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561327"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616523"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-office-365"></a>Enquête sur le courrier électronique malveillant remis dans Office 365
 
@@ -62,7 +62,7 @@ Pour effectuer certaines actions, telles que l’affichage des en-têtes de mess
 |
 
 > [!NOTE]
-> L' *Aperçu* est un rôle et non un groupe de rôles ; le rôle aperçu doit être ajouté à un groupe de rôles existant pour Office 365. Le rôle administrateur général est affecté au centre d’administration Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) ), et les rôles Administrateur de sécurité et lecteur de sécurité sont affectés dans le centre de sécurité & conformité ( [https://protection.office.com](https://protection.office.com) ). Pour en savoir plus sur les rôles et les autorisations, consultez [la rubrique autorisations dans le centre de sécurité & conformité](permissions-in-the-security-and-compliance-center.md).
+> L' *Aperçu* est un rôle et non un groupe de rôles ; le rôle aperçu doit être ajouté à un groupe de rôles existant pour Office 365. Le rôle administrateur général est affecté au centre d’administration Microsoft 365 ( <https://admin.microsoft.com> ), et les rôles Administrateur de sécurité et lecteur de sécurité sont affectés dans le centre de sécurité & conformité ( <https://protection.office.com> ). Pour en savoir plus sur les rôles et les autorisations, consultez [la rubrique autorisations dans le centre de sécurité & conformité](permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="find-suspicious-email-that-was-delivered"></a>Détecter les e-mails suspects qui ont été remis
 
@@ -71,9 +71,9 @@ L’Explorateur de menaces est un rapport puissant qui peut servir plusieurs obj
 > [!NOTE]
 > Les recherches par défaut dans l’explorateur n’incluent actuellement pas les éléments zapped.  Cela s’applique à tous les affichages, par exemple les affichages de programmes malveillants ou de hameçonnage. Pour inclure les éléments zapped, vous devez ajouter une « action de remise » définie sur inclure « supprimé par ZAP ». Si vous incluez toutes les options, vous verrez tous les résultats d’action de remise, y compris les éléments zapped.
 
-1. **Accédez à l’Explorateur de menaces**: accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous à l’aide de votre compte professionnel ou scolaire pour Office 365. Vous accédez au centre de sécurité & conformité.
+1. **Accédez à l’Explorateur de menaces**: accédez à <https://protection.office.com> et connectez-vous à l’aide de votre compte professionnel ou scolaire pour Office 365. Vous accédez au centre de sécurité & conformité.
 
-2. Dans le lancement rapide de navigation de gauche, choisissez Explorateur de **gestion des menaces** \> **Explorer**.
+2. Dans le lancement rapide de navigation de gauche, choisissez Explorateur de **gestion des menaces** \> .
 
     ![Explorateur avec les champs d’action de remise et d’emplacement de remise.](../../media/ThreatExFields.PNG)
 
@@ -200,7 +200,7 @@ La **chronologie par courrier électronique** est un champ dans l’Explorateur 
 
 [Correction des courriers électroniques malveillants remis dans Office 365](remediate-malicious-email-delivered-office-365.md)
 
-[Microsoft Defender pour Office 365](office-365-ti.md)
+[Microsoft Defender pour Office 365](office-365-ti.md)
 
 [Se protéger contre les menaces dans Office 365](protect-against-threats.md)
 
