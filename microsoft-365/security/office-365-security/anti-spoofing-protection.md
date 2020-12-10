@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: Les administrateurs peuvent découvrir les fonctionnalités d’usurpation d’identité disponibles dans Exchange Online Protection (EOP), qui peuvent vous aider à atténuer les attaques par hameçonnage d’expéditeurs et de domaines usurpés.
-ms.openlocfilehash: 57d6dc8d9c1935578db15abdbb3e17e72bb64257
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: cae99cce070e6dc362dc678c153074fee53ca6a6
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49130828"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616715"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Protection contre l’usurpation d’identité dans EOP
 
@@ -84,13 +84,13 @@ Microsoft distingue deux types de messages usurpant une identité :
 - **Usurpation intra-organisationnelle** : également connue sous le nom d’usurpation d’identité _self-to-self_. Par exemple :
 
   - L’expéditeur et le destinataire figurent dans le même domaine :
-    > De : chris@contoso.com <br/> À : michelle@contoso.com
+    > De : chris@contoso.com <br> À : michelle@contoso.com
 
   - L'expéditeur et le destinataire figurent dans des sous-domaines du même domaine :
-    > De : laura@marketing.fabrikam.com <br/> À : julia@engineering.fabrikam.com
+    > De : laura@marketing.fabrikam.com <br> À : julia@engineering.fabrikam.com
 
   - L’expéditeur et le destinataire figurent dans différents domaines appartenant à la même organisation (autrement dit, les deux domaines sont configurés comme des [domaines acceptés](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) au sein d’une même organisation) :
-    > De: expéditeur @ microsoft.com <br/> À : destinataire @ bing.com
+    > De: expéditeur @ microsoft.com <br> À : destinataire @ bing.com
 
     Les espaces sont utilisés dans les adresses de messagerie électronique pour empêcher la récolte spambots.
 
@@ -105,7 +105,7 @@ Microsoft distingue deux types de messages usurpant une identité :
   - SFTY est le niveau de sécurité du message. 9 indique un hameçonnage, .11 indique une usurpation intra-organisationnelle.
 
 - **Usurpation inter-domaines** : les domaines de l’expéditeur et du destinataire sont différents et n’ont aucune relation entre eux (également appelés domaines externes). Par exemple :
-    > De : chris@contoso.com <br/> À : michelle@tailspintoys.com
+    > De : chris@contoso.com <br> À : michelle@tailspintoys.com
 
   Les messages qui échouent à l’[authentification composite](email-validation-and-authentication.md#composite-authentication) en raison d’une usurpation inter-domaines contiennent les valeurs d’en-têtes suivantes :
 
@@ -133,11 +133,11 @@ Les listes de diffusion (également connues sous le nom de listes de discussion)
 
 Par exemple, Gabriela Laureano (glaureano@contoso.com) s'intéresse à l'observation des oiseaux. Elle s'inscrit à la liste de diffusion birdwatchers@fabrikam.com et envoie le message suivant à la liste :
 
-> **De :** « Denise Bourgeois » \<glaureano@contoso.com\> <br/> **À :** liste de discussion des Ornithologues\<birdwatchers@fabrikam.com\> <br/> **Objet :** Superbe observation de geais bleus au sommet du Mont Rainier. Rainier cette semaine <p> Quelqu’un veut-il voir l’observation de cette semaine au Mont Rainier. Rainier ?
+> **De :** « Denise Bourgeois » \<glaureano@contoso.com\> <br> **À :** liste de discussion des Ornithologues\<birdwatchers@fabrikam.com\> <br> **Objet :** Superbe observation de geais bleus au sommet du Mont Rainier. Rainier cette semaine <p> Quelqu’un veut-il voir l’observation de cette semaine au Mont Rainier. Rainier ?
 
 Le serveur de liste de diffusion reçoit le message, modifie son contenu et le rediffuse aux membres de la liste. Le message rediffusé a la même adresse De (glaureano@contoso.com), mais une balise est ajoutée à la ligne d’objet, et un pied de page est ajouté au bas du message. Ce type de modification est courant dans les listes de diffusion et peut entraîner des faux positifs en matière d’usurpation d'identité.
 
-> **De :** « Denise Bourgeois » \<glaureano@contoso.com\> <br/> **À :** liste de discussion des Ornithologues\<birdwatchers@fabrikam.com\> <br/> **Objet :** [ORNITHOLOGUES] Superbe observation de geais bleus au sommet du Mont Rainier cette semaine. Rainier cette semaine <p> Quelqu’un veut-il voir l’observation de cette semaine au Mont Rainier. Rainier ? <p> Ce message a été envoyé à la liste de discussion Ornithologues. Vous pouvez vous désabonner à tout moment.
+> **De :** « Denise Bourgeois » \<glaureano@contoso.com\> <br> **À :** liste de discussion des Ornithologues\<birdwatchers@fabrikam.com\> <br> **Objet :** [ORNITHOLOGUES] Superbe observation de geais bleus au sommet du Mont Rainier cette semaine. Rainier cette semaine <p> Quelqu’un veut-il voir l’observation de cette semaine au Mont Rainier. Rainier ? <p> Ce message a été envoyé à la liste de discussion Ornithologues. Vous pouvez vous désabonner à tout moment.
 
 Pour aider les messages de la liste de diffusion à passer les vérifications d’usurpation d’identité, procédez comme suit selon que vous contrôlez ou non la liste de diffusion :
 

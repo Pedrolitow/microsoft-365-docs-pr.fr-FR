@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-jun2020
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: Découvrez comment configurer Teams pour améliorer la sécurité du partage de fichiers à l’aide de trois niveaux de protection, en équilibrant la sécurité grâce à la facilité de collaboration.
-ms.openlocfilehash: 5a3449294c6e64355961d10d84750c53715366ef
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: cb49c35cc1c485d45656b1716d385cf626322ce8
+ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906882"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49602006"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>Configurer Teams avec trois niveaux de protection
 
@@ -49,7 +49,7 @@ Pour plus d’informations sur ces niveaux et les fonctionnalités recommandées
 
 Le tableau suivant récapitule les configurations pour chaque niveau. Utilisez ces recommandations comme point de départ et ajustez les configurations pour répondre aux besoins de votre organisation. Il est possible que vous n’ayez pas besoin de chaque niveau.
 
-||Base de référence (public)|Base de référence (privé)|Sensible|Hautement sensible|
+|-|Base de référence (public)|Base de référence (privé)|Sensible|Hautement sensible|
 |:-----|:-----|:-----|:-----|:-----|
 |Équipe privé ou publique|Public|Private|Private|Private|
 |Qui a accès ?|Tous les membres de l’organisation, y compris les utilisateurs B2B.|Uniquement les membres de l’équipe. D’autres personnes peuvent demander l’accès au site associé.|Uniquement les membres de l’équipe.|Uniquement les membres de l’équipe.|

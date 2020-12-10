@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez un verrou de conservation avec les stratégies de rétention et les stratégies d’étiquette de conservation pour vous aider à respecter les exigences réglementaires et à vous protéger des administrateurs malveillants.
-ms.openlocfilehash: 6f6cfc5bef9b93af08fcc9b703b29facb9a7c576
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 9890c73495bd14ea7264f3314f6313254ef1bf6b
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920698"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49612986"
 ---
 # <a name="use-preservation-lock-to-restrict-changes-to-retention-policies-and-retention-label-policies"></a>Utiliser le verrouillage de conservation pour restreindre les modifications apportées aux stratégies de rétention et d’étiquettes de rétention
 
@@ -30,16 +30,25 @@ Le verrouillage de la conservation verrouille une stratégie de rétention ou un
 
 Lorsqu’une stratégie de rétention est verrouillée :
 
-- Personne ne peut la désactiver
+- Personne ne peut désactiver ou supprimer la stratégie
 - Vous pouvez ajouter des emplacements, mais pas les supprimer
-- Vous pouvez prolonger une période de rétention, mais pas la réduire
+- Vous pouvez prolonger la période de rétention, mais pas la réduire
 
-En bref, une stratégie verrouillée peut être augmentée ou prolongée, mais elle ne peut pas être réduite ou désactivée.
-  
+Lorsqu’une stratégie d’étiquette de rétention est verrouillée :
+
+- Personne ne peut désactiver ou supprimer la stratégie
+- Vous pouvez ajouter des emplacements, mais pas les supprimer
+- Vous pouvez ajouter des étiquettes, mais pas les supprimer
+
+En bref, vous pouvez augmenter ou prolonger une stratégie verrouillée, mais vous ne pouvez pas la réduire ou la désactiver.
+
 > [!IMPORTANT]
 > Avant de verrouiller une stratégie de rétention ou d’étiquette de rétention, il est essentiel de comprendre l’impact et de confirmer qu’il est exigé de votre organisation qu’elle respecte des exigences réglementaires. Par exemple, il peut être nécessaire de répondre à des exigences réglementaires. Les administrateurs ne pourront pas désactiver ou supprimer ces stratégies une fois le verrouillage de conservation appliqué.
 
 Configurez un verrou de conservation une fois que vous avez créé une [stratégie de rétention](create-retention-policies.md) ou une stratégie d’étiquette de rétention que vous [publiez](create-apply-retention-labels.md) ou que vous [appliquez automatiquement](apply-retention-labels-automatically.md). 
+
+> [!NOTE]
+> Le verrouillage d’une stratégie d’étiquette n’empêche pas un administrateur de réduire la période de rétention dans une étiquette incluse dans la stratégie verrouillée. Vous pouvez répondre à cette exigence, avec d’autres restrictions, lorsque vous configurez une étiquette pour marquer des éléments comme [enregistrements réglementaires](records-management.md#records).
 
 ## <a name="how-to-lock-a-retention-policy-or-retention-label-policy"></a>Verrouillage d’une stratégie de rétention ou d’étiquette de rétention
 
@@ -63,7 +72,7 @@ Toutes les stratégies de rétention et de prise en charge de la configuration v
     
     ![Paramètre RestrictiveRetention dans PowerShell](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
     
-     Lorsque vous y êtes invité, lisez et accusez réception des restrictions incluses dans cette configuration en entrant **Y** :
+     Lorsque vous y êtes invité, lisez et accusez réception des restrictions incluses dans cette configuration en entrant **Y**:
     
    ![Invite à confirmer que vous souhaitez verrouiller une stratégie de rétention dans PowerShell](../media/retention-policy-preservation-lock-confirmation-prompt.PNG)
 
