@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de confidentialité pour protéger le contenu des sites SharePoint et Microsoft Teams, ainsi que des Groupes Microsoft 365.
-ms.openlocfilehash: 927b85a5c2ef14313acd5c1637f561342d71ccc0
-ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
+ms.openlocfilehash: c1232e8e839837fc5564909322c90f634f1c6fa9
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49527569"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49614928"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint
 
@@ -79,7 +79,7 @@ En activant les étiquettes de confidentialité pour les conteneurs, vous pouvez
     
     Lorsque seule l’étendue est sélectionnée pour l’étiquette, celle-ci ne s’affiche pas dans les applications Office qui prennent en charge les étiquettes de confidentialité et ne peuvent pas être appliquées aux fichiers et e-mails. La séparation des étiquettes peut être utile pour les utilisateurs et les administrateurs, mais peut également s’ajouter à la complexité de votre déploiement d’étiquettes.
     
-    Par exemple, vous devez examiner soigneusement votre [classement d’étiquettes](sensitivity-labels.md#label-priority-order-matters), car SharePoint détecte quand un document étiqueté est chargé vers un site étiqueté. Dans ce scénario, un événement d’audit et un e-mail sont générés automatiquement lorsque l’étiquette de confidentialité présente une priorité supérieure à celle du site. Pour plus d’informations, voir la section [Audit des activités d’étiquettes de confidentialité](#auditing-sensitivity-label-activities) sur cette page. 
+    Par exemple, vous devez examiner soigneusement votre [classement d’étiquettes](sensitivity-labels.md#label-priority-order-matters), car SharePoint détecte tout document étiqueté chargé vers un site étiqueté. Dans ce scénario, nous générons automatiquement un événement d’audit et un e-mail lorsque l’étiquette de confidentialité présente une priorité supérieure à celle du site. Si vous souhaitez en savoir plus, veuillez consulter la section [Audit des activités d’étiquettes de confidentialité](#auditing-sensitivity-label-activities) sur cette page. 
 
 2. Ensuite, sur la page **Définir les paramètres de protection pour les groupes et sites**, sélectionnez l’une des options suivantes ou les deux :
     

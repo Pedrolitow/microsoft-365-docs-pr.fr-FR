@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Découvrez trois outils qui permettent de surveiller les fuites de données personnelles.
-ms.openlocfilehash: 67cce80435aa0f01f496ec67d617f0a2dfff8ec8
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: a212067d75ab3d9e195e3d869e0a6ae7d1ed4d01
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202698"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616379"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Surveillance des fuites de données personnelles
 
@@ -117,7 +117,6 @@ La seconde stratégie bloque les téléchargements de fichiers sur des appareils
 Les types d’attribut suivants seront bientôt disponibles dans Cloud App Security :
 
 - Types d’informations sensibles
-
 - Étiquettes unifiées dans Microsoft 365 et Azure information protection
 
 ### <a name="cloud-app-security-dashboard"></a>Tableau de bord Cloud App Security
@@ -142,69 +141,24 @@ Plus d’informations :
 
 Alerte lorsqu’un fichier contenant un numéro de carte de crédit est partagé à partir d’une application cloud approuvée.
 
-<table>
-<thead>
-<tr class="header">
-<th align="left"><strong>Contrôle</strong></th>
-<th align="left"><strong>Paramètres</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Type de stratégie</td>
-<td align="left">Stratégie de fichier</td>
-</tr>
-<tr class="even">
-<td align="left">Modèle de stratégie</td>
-<td align="left">Aucun modèle</td>
-</tr>
-<tr class="odd">
-<td align="left">Gravité de la stratégie</td>
-<td align="left">Importante</td>
-</tr>
-<tr class="even">
-<td align="left">Catégorie</td>
-<td align="left">DLP</td>
-</tr>
-<tr class="odd">
-<td align="left">Paramètres de filtre</td>
-<td align="left"><p>Niveau d’accès = Public (Internet), Public, Externe</p>
-<p>Application = &lt;sélectionner les applications&gt; (utiliser ce paramètre pour limiter la surveillance à des applications SaaS spécifiques)</p></td>
-</tr>
-<tr class="even">
-<td align="left">Appliquer à</td>
-<td align="left">Tous les fichiers, tous les propriétaires</td>
-</tr>
-<tr class="odd">
-<td align="left">Inspection du contenu</td>
-<td align="left"><p>Inclut les fichiers qui correspondent à une expression présente : Tous les pays: Finance: Numéro de carte de crédit</p>
-<p>N’exige pas de contexte approprié : désactivé (ceci correspondra aux mots-clés et aux expressions régulières)</p>
-<p>Inclut les fichiers avec au moins 1 correspondance</p>
-<p>Annuler le masquage des 4 derniers caractères de la violation : activé</p></td>
-</tr>
-<tr class="even">
-<td align="left">Alertes</td>
-<td align="left"><p>Crée une alerte pour chaque fichier correspondant : activé</p>
-<p>Limite quotidienne d’alertes : 1 000</p>
-<p>Sélectionner une alerte en tant qu’e-mail : activé</p>
-<p>À : infosec@contoso.com</p></td>
-</tr>
-<tr class="odd">
-<td align="left">Gouvernance</td>
-<td align="left"><p>Microsoft OneDrive Entreprise</p>
-<p>Donner un caractère privé : sélectionner Supprimer les utilisateurs externes</p>
-<p>Tous les autres paramètres : désactivé</p>
-<p>Microsoft SharePoint Online</p>
-<p>Donner un caractère privé : sélectionner Supprimer les utilisateurs externes</p>
-<p>Tous les autres paramètres : désactivé</p></td>
-</tr>
-</tbody>
-</table>
+****
+
+|Contrôle|Paramètres|
+|---|---|
+|Type de stratégie|Stratégie de fichier|
+|Modèle de stratégie|Aucun modèle|
+|Gravité de la stratégie|Importante|
+|Catégorie|DLP|
+|Paramètres de filtre|Niveau d’accès = Public (Internet), Public, Externe <p> Application = \<select apps\> (utiliser ce paramètre pour limiter la surveillance à des applications SaaS spécifiques)|
+|Appliquer à|Tous les fichiers, tous les propriétaires|
+|Inspection du contenu|Inclut les fichiers qui correspondent à une expression présente : Tous les pays: Finance: Numéro de carte de crédit <p> N’exige pas de contexte approprié : désactivé (ceci correspondra aux mots-clés et aux expressions régulières) <p> Inclut les fichiers avec au moins 1 correspondance <p> Annuler le masquage des 4 derniers caractères de la violation : activé|
+|Alertes|Crée une alerte pour chaque fichier correspondant : activé <p> Limite quotidienne d’alertes : 1 000 <p> Sélectionner une alerte en tant qu’e-mail : activé <p> À : infosec@contoso.com|
+|Gouvernance|Microsoft OneDrive Entreprise <p> Donner un caractère privé : sélectionner Supprimer les utilisateurs externes <p> Tous les autres paramètres : désactivé <p> Microsoft SharePoint Online <p> Donner un caractère privé : sélectionner Supprimer les utilisateurs externes <p> Tous les autres paramètres : désactivé|
+|
 
 Stratégies similaires :
 
 - Détection du partage de fichiers contenant des informations PII : adresse e-mail
-
 - Détection du partage de fichiers contenant des informations PII : numéro de passeport
 
 ### <a name="detect-customer-or-hr-data-in-box-or-onedrive-for-business"></a>Détection des données client ou RH dans Box ou OneDrive Entreprise
@@ -214,64 +168,23 @@ Alerte lorsqu’un fichier étiqueté en tant que Données client ou Données RH
 Remarques :
 
 - La surveillance de Box requiert un connecteur configuré à l’aide du kit de développement logiciel (SDK) du connecteur de l’API.
-
 - Cette stratégie exige des fonctionnalités qui sont actuellement en Private Preview.
 
-<table>
-<thead>
-<tr class="header">
-<th align="left"><strong>Contrôle</strong></th>
-<th align="left"><strong>Paramètres</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Type de stratégie</td>
-<td align="left">Stratégie d’activité</td>
-</tr>
-<tr class="even">
-<td align="left">Modèle de stratégie</td>
-<td align="left">Aucun modèle</td>
-</tr>
-<tr class="odd">
-<td align="left">Gravité de la stratégie</td>
-<td align="left">Importante</td>
-</tr>
-<tr class="even">
-<td align="left">Catégorie</td>
-<td align="left">Contrôle partagé</td>
-</tr>
-<tr class="odd">
-<td align="left">Agir sur</td>
-<td align="left">Activité unique</td>
-</tr>
-<tr class="even">
-<td align="left">Paramètres de filtre</td>
-<td align="left"><p>Type d’activité = Charger un fichier</p>
-<p>Application = Microsoft OneDrive Entreprise et Box</p>
-<p>Étiquette de classification (actuellement en Private Preview) : Azure Information Protection = données sur les clients, ressources humaines - données sur le salaire, ressources humaines - données sur les employés</p></td>
-</tr>
-<tr class="odd">
-<td align="left">Alertes</td>
-<td align="left"><p>Créer une alerte : activé</p>
-<p>Limite quotidienne d’alertes : 1 000</p>
-<p>Sélectionner une alerte en tant qu’e-mail : activé</p>
-<p>À : infosec@contoso.com</p></td>
-</tr>
-<tr class="even">
-<td align="left">Gouvernance</td>
-<td align="left"><p>Toutes les applications</p>
-<p>Mettre l’utilisateur en quarantaine : activé</p>
-<p>Tous les autres paramètres : désactivé</p>
-<p>Office 365</p>
-<p>Mettre l’utilisateur en quarantaine : activé</p>
-<p>Tous les autres paramètres : désactivé</p></td>
-</tr>
-</tbody>
-</table>
+****
+
+|Contrôle|Paramètres|
+|---|---|
+|Type de stratégie|Stratégie d’activité|
+|Modèle de stratégie|Aucun modèle|
+|Gravité de la stratégie|Importante|
+|Catégorie|Contrôle partagé|
+|Agir sur|Activité unique|
+|Paramètres de filtre|Type d’activité = Charger un fichier <p> Application = Microsoft OneDrive Entreprise et Box <p> Étiquette de classification (actuellement en Private Preview) : Azure Information Protection = données sur les clients, ressources humaines - données sur le salaire, ressources humaines - données sur les employés|
+|Alertes|Créer une alerte : activé <p> Limite quotidienne d’alertes : 1 000 <p> Sélectionner une alerte en tant qu’e-mail : activé <p> À : infosec@contoso.com|
+|Gouvernance|Toutes les applications <p> Mettre l’utilisateur en quarantaine : activé <p> Tous les autres paramètres : désactivé <p> Office 365 <p> Mettre l’utilisateur en quarantaine : activé <p> Tous les autres paramètres : désactivé|
+|
 
 Stratégies similaires :
 
 - Détection de téléchargements volumineux de données client ou de données RH : alerte lorsqu’un grand nombre de fichiers contenant des données client ou des données RH ont été téléchargés par un utilisateur unique dans un court délai.
-
 - Détection du partage de données clients et de données RH : alerte lorsque des fichiers contenant des données clients ou des données RH sont partagés.

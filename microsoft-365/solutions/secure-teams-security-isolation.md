@@ -3,7 +3,7 @@ title: Configurer une équipe avec l’isolation de sécurité
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 localization_priority: Priority
@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Découvrez comment créer une équipe avec une étiquette de confidentialité unique pour la sécurité.
-ms.openlocfilehash: 46bc63bab52bf75dc7c215510d49b4d985ff07c3
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: c7230f23a21804530863f125003e4db0eaeeeb60
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487481"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616295"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>Configurer une équipe avec l’isolation de sécurité
 
@@ -50,7 +50,7 @@ Regardez cette vidéo de présentation du processus de déploiement.
 
 [![Microsoft Teams avec l’isolation de sécurité](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf)
 
-Vous pouvez également télécharger cette affiche au format [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf) et l’imprimer sur du papier au format lettre, légal ou tabloïd (11 x 17).
+Vous pouvez également télécharger cette affiche au format [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf) ou [PowerPoint](https://download.microsoft.com/download/8/0/5/8057fc16-c044-40b6-a652-7ed555ba2895/team-security-isolation-poster.pptx) et l’imprimer sur du papier au format lettre, légal ou tabloïd (11 x 17).
 
 ## <a name="initial-protections"></a>Protections initiales
 
@@ -180,7 +180,7 @@ Pour mettre à jour les paramètres du site
 2. Sous **Sites**, cliquez sur **Sites actifs**.
 3. Cliquez sur le site associé à l’équipe.
 4. Sous l’onglet **Stratégies**, sous **Partage externe**, cliquez sur **Modifier**.
-5. Si vous avez autorisé le partage d’invités lorsque vous avez créé l’étiquette de confidentialité, assurez-vous de sélectionner**Invités nouveaux et existants**. Si vous n’avez pas autorisé le partage lors de la création de l’étiquette, sélectionnez **Uniquement les membres de votre organisation**.
+5. Si vous avez autorisé le partage d’invités lorsque vous avez créé l’étiquette de confidentialité, assurez-vous de sélectionner **Invités nouveaux et existants**. Si vous n’avez pas autorisé le partage lors de la création de l’étiquette, sélectionnez **Uniquement les membres de votre organisation**.
 6. Sous Type de lien de partage par défaut, désactivez la case à cocher **Identique au paramètre de niveau organisation**, puis sélectionnez **Personnes disposant d’un accès existant**.
 7. Cliquez sur **Enregistrer**.
 
@@ -221,7 +221,7 @@ Pour ajouter des utilisateurs au site, procédez comme suit :
 
 Microsoft 365 offre d’autres méthodes pour la sécurisation de votre contenu. Envisagez d’utiliser les options suivantes pour renforcer la sécurité au sein de votre organisation.
 
-- Demandez à vos utilisateurs invités d’accepter les [conditions d’utilisation](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use).
+- Demandez à vos invités d’accepter les [conditions d’utilisation](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use).
 - Configurez une [stratégie de délai d’expiration de session](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime) pour les invités.
 - Créez les [Types d’informations sensibles](https://docs.microsoft.com/microsoft-365/compliance/custom-sensitive-info-types) et utilisez [Protection contre la perte de données](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) pour définir des stratégies autour de l’accès aux informations sensibles.
 - Utilisez révisions d’[Accès Azure Active Directory](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview) pour examiner régulièrement les membres de l’équipe.

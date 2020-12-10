@@ -3,7 +3,7 @@ title: Configurer les équipes avec la protection de référence
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Découvrez comment déployer des équipes à l’aide d’un niveau de protection de référence.
-ms.openlocfilehash: 76b60a61812c4d30884825b41ee7220d6686b58b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 16f37175c3aa7b420745e6126de1aa96368d618a
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845299"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613441"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>Configurer les équipes avec la protection de référence
 
@@ -94,7 +94,7 @@ Pour mettre à jour les paramètres de partage de site, procédez comme suit :
 
 Microsoft 365 offre d’autres méthodes pour la sécurisation de votre contenu. Envisagez d’utiliser les options suivantes pour renforcer la sécurité au sein de votre organisation.
 
-- Demandez à vos utilisateurs invités d’accepter les [conditions d’utilisation](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use).
+- Demandez aux invités d’accepter les [conditions d’utilisation](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use).
 - Configurez une [stratégie de délai d’expiration de session](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime) pour les invités.
 - Créez les [Types d’informations sensibles](https://docs.microsoft.com/microsoft-365/compliance/custom-sensitive-info-types) et utilisez [Protection contre la perte de données](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) pour définir des stratégies autour de l’accès aux informations sensibles.
 

@@ -3,7 +3,7 @@ title: Configurer des équipes avec la protection des données hautement sensibl
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Découvrez comment déployer des équipes avec la protection des données hautement sensibles.
-ms.openlocfilehash: 92defdf5d06788f4a4cbefeb5e81308611966bec
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 77ec469776bf263bbd3d667a28f1f9b1bc3284b5
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527813"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49612963"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>Configurer des équipes avec la protection des données hautement sensibles
 
@@ -68,7 +68,7 @@ Pour créer une étiquette de confidentialité
 6. Sur la page **Chiffrement**, dans le menu déroulant **Chiffrement**, sélectionnez **Appliquer**.
 7. Sous **Attribuer des autorisations à des utilisateurs et à des groupes spécifiques**, cliquez sur **Attribuer des autorisations**.
 8. Cliquez sur **Ajouter tous les utilisateurs et les groupes de votre organisation**.
-9. Si des utilisateurs invités doivent avoir l’autorisation de déchiffrer des fichiers, cliquez sur **Ajouter des utilisateurs ou des groupes**, puis ajoutez-les.
+9. Si des invités doivent avoir l’autorisation de déchiffrer des fichiers, cliquez sur **Ajouter des utilisateurs ou des groupes**, puis ajoutez-les.
 10.  Cliquez sur **Enregistrer**, puis sur **Suivant**.
 11. Dans la page **Marquage de contenu**, activez l’option marquage de contenu si vous souhaitez ajouter automatiquement un en-tête, un pied de page ou un filigrane aux fichiers classés avec cette étiquette.
 12. Dans la page **Paramètres de site et de groupe**, configurez **Paramètres de site et de groupe** sur **Activé**.
@@ -126,7 +126,7 @@ Pour mettre à jour les paramètres du site
 2. Sous **Sites**, cliquez sur **Sites actifs**.
 3. Cliquez sur le site associé à l’équipe.
 4. Sous l’onglet **Stratégies**, sous **Partage externe**, cliquez sur **Modifier**.
-5. Si vous avez autorisé le partage d’invités lorsque vous avez créé l’étiquette de haute confidentialité, assurez-vous de sélectionner**Invités nouveaux et existants**. Si vous n’avez pas autorisé le partage lors de la création de l’étiquette, sélectionnez **Uniquement les membres de votre organisation**.
+5. Si vous avez autorisé le partage d’invités lorsque vous avez créé l’étiquette de haute confidentialité, assurez-vous de sélectionner **Invités nouveaux et existants**. Si vous n’avez pas autorisé le partage lors de la création de l’étiquette, sélectionnez **Uniquement les membres de votre organisation**.
 6. Sous Type de lien de partage par défaut, désactivez la case à cocher **Identique au paramètre de niveau organisation**, puis sélectionnez **Personnes disposant d’un accès existant**.
 7. Cliquez sur **Enregistrer**.
 
