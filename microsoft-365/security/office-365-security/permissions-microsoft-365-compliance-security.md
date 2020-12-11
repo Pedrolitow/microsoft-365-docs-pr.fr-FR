@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: En utilisant le Centre de sécurité Microsoft 365 ou le Centre de conformité Microsoft 365, vous pouvez gérer les autorisations de façon centralisée pour toutes les tâches liées à la sécurité ou à la conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5322a972a93ee603ef31754288e9ab9b7eb401a9
-ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
+ms.openlocfilehash: 266d8184db5ebc79609c0a5f27c7511087ea42d0
+ms.sourcegitcommit: 21b0ea5715e20b4ab13719eb18c97fadb49b563d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49604283"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49624719"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center-and-microsoft-365-security-center"></a>Autorisations dans le Centre de conformité Microsoft 365 et le Centre de sécurité Microsoft 365
 
@@ -85,7 +85,7 @@ En attribuant un utilisateur à l’un des rôles d’administrateur de conformi
 |Microsoft Defender pour l’identité|[Groupes de rôles dans Microsoft Defender pour Identity](https://docs.microsoft.com/azure-advanced-threat-protection/atp-role-groups)|
 |Azure Information Protection|[Rôles d’administrateur Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |Gestionnaire de conformité|[Gestionnaire de conformité](https://docs.microsoft.com/microsoft-365/compliance/compliance-manager-setup#set-user-permissions-and-assign-roles)|
-|Exchange Online|[Contrôle d’accès en fonction du rôle Exchange](https://docs.microsoft.com/exchange/understanding-role-based-access-control-exchange-2013-help)|
+|Exchange Online|[Contrôle d’accès en fonction du rôle Exchange](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)|
 |Intune|[Contrôle d’accès en fonction du rôle Intune](https://docs.microsoft.com/intune/role-based-access-control)|
 |Ordinateur de bureau managé|[Rôles d’administrateur Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |Microsoft Cloud App Security|[Contrôle d’accès en fonction du rôle](https://docs.microsoft.com/cloud-app-security/manage-admins)|

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez une stratégie de rétention pour garder un contrôle efficace sur le contenu que les utilisateurs génèrent par courriers électroniques, documents et conversations. Conservez ce que vous voulez et supprimez le reste.
-ms.openlocfilehash: 4479731af4787a6ef77dc48d27e5dfb60834d9c5
-ms.sourcegitcommit: 26b35012c42fef935d6c4a6509dde6c22a9b922a
+ms.openlocfilehash: 6816905155feb321ae9821c2f0dd47a271a382c9
+ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "49385250"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49604246"
 ---
 # <a name="create-and-configure-retention-policies"></a>Créer et configurer des stratégies de rétention
 
@@ -53,7 +53,7 @@ Bien qu’une stratégie de rétention puisse prendre en charge plusieurs emplac
 - Messages communautaires Yammer
 - Messages privés Yammer
 
-Lorsque vous sélectionnez l’emplacement Teams ou Yammer lors de la création d’une stratégie de rétention, les autres emplacements sont automatiquement exclus. Par conséquent, l’emplacement à inclure (Teams ou Yammer) détermine les instructions à suivre :
+Lorsque vous sélectionnez l’emplacement Teams ou Yammer lors de la création d’une stratégie de rétention, les autres emplacements sont automatiquement exclus. Par conséquent, l’emplacement à inclure (Teams ou Yammer) détermine les instructions à suivre:
 
 - [Instructions relatives à une stratégie de rétention pour les emplacements Teams](#retention-policy-for-teams-locations)
 - [Instructions relatives à une stratégie de rétention pour les emplacements Yammer](#retention-policy-for-yammer-locations)
@@ -75,7 +75,7 @@ Lorsque vous avez plusieurs stratégies de rétention et que vous utilisez égal
 
 4. Sur la page **Indiquez si vous souhaitez conserver le contenu et/ou le supprimer** de l’assistant, spécifiez les options de configuration pour la conservation et la suppression du contenu.
 
-   Vous pouvez créer une stratégie de rétention qui conserve uniquement le contenu sans le supprimer, conserve puis supprime le contenu après une période donnée, ou supprime simplement le contenu après une période donnée. Si vous souhaitez en savoir plus, consultez [Paramètres pour la conservation et la suppression du contenu](#settings-for-retaining-and-deleting-content) sur cette page.
+   Vous pouvez créer une stratégie de rétention qui conserve uniquement le contenu sans le supprimer, conserve puis supprime le contenu après une période donnée, ou supprime simplement le contenu après une période donnée. Si vous souhaitez en savoir plus, voir [Paramètres pour la conservation et la suppression du contenu](#settings-for-retaining-and-deleting-content) sur cette page.
 
 5. Terminez l’assistant pour enregistrer vos paramètres.
 
@@ -109,7 +109,7 @@ Il est possible qu’une stratégie de conservation appliquée aux groupes Micro
 
 3. Sur la page **Indiquez si vous souhaitez conserver le contenu et/ou le supprimer** de l’assistant, spécifiez les options de configuration pour la conservation et la suppression du contenu. 
     
-    Vous pouvez créer une stratégie de rétention qui conserve uniquement le contenu sans le supprimer, conserve puis supprime le contenu après une période donnée, ou supprime simplement le contenu après une période donnée. Si vous souhaitez en savoir plus, consultez [Paramètres pour la conservation et la suppression du contenu](#settings-for-retaining-and-deleting-content) sur cette page.
+    Vous pouvez créer une stratégie de rétention qui conserve uniquement le contenu sans le supprimer, conserve puis supprime le contenu après une période donnée, ou supprime simplement le contenu après une période donnée. Si vous souhaitez en savoir plus, voir [Paramètres pour la conservation et la suppression du contenu](#settings-for-retaining-and-deleting-content) sur cette page.
     
     Ne sélectionnez pas **Utiliser les paramètres de rétention avancée**, car cette option n’est pas prise en charge pour les emplacements Yammer. 
 
@@ -135,7 +135,7 @@ Pour retenir et supprimer les fichiers qui sont stockés dans Yammer, vous avez 
 
 - Les fichiers chargés dans les communautés sont stockés sur le site SharePoint pour la communauté Yammer.
 
-Il est possible qu’une stratégie de conservation appliquée aux sites SharePoint ou comptes OneDrive supprime un fichier référencé dans un message Yammer avant la suppression de ces messages. Dans ce scénario, le fichier s’affiche encore dans le message Yammer, mais lorsque les utilisateurs sélectionnent le fichier, un message d’erreur « fichier introuvable » s’affiche. Ce comportement n’est pas spécifique aux stratégies de rétention et peut également se produire si un utilisateur supprime manuellement un fichier à partir de SharePoint ou de OneDrive.
+Il est possible qu’une stratégie de rétention appliquée à des comptes SharePoint ou OneDrive supprime un fichier référencé dans un message Yammer avant la suppression de ces messages. Dans ce scénario, le fichier s’affiche encore dans le message Yammer, mais lorsque les utilisateurs sélectionnent le fichier, un message d’erreur « fichier introuvable » s’affiche. Ce comportement n’est pas spécifique aux stratégies de rétention et peut également se produire si un utilisateur supprime manuellement un fichier à partir de SharePoint ou de OneDrive.
 
 ### <a name="retention-policy-for-locations-other-than-teams-and-yammer"></a>Stratégie de rétention pour les emplacements autres que Teams et Yammer
 
@@ -151,7 +151,7 @@ Utilisez les instructions suivantes pour les stratégies de rétention qui s’a
 
 2. Sélectionnez **Nouvelle stratégie de rétention** pour démarrer l’assistant de création de stratégie de rétention, puis nommez votre nouvelle stratégie de rétention.
 
-3. Pour la page **Choisir les emplacements**, activez ou désactivez les emplacements, à l’exception des emplacements de Teams. Pour chaque emplacement, vous pouvez la laisser par défaut à [appliquer la stratégie à l’intégralité de l’emplacement](#a-policy-that-applies-to-entire-locations), ou [spécifier inclut et exclut](#a-policy-with-specific-inclusions-or-exclusions).
+3. Pour la page **Choisir les emplacements**, activez ou désactivez les emplacements, à l’exception des emplacements de Teams. Vous pouvez laisser pour chaque emplacement la valeur par défaut [Appliquer la stratégie à l’intégralité de l’emplacement](#a-policy-that-applies-to-entire-locations) ou [Spécifier des inclusions et des exclusions](#a-policy-with-specific-inclusions-or-exclusions).
 
     Informations spécifiques aux emplacements :
     - [Messagerie Exchange et dossiers publics Exchange](#configuration-information-for-exchange-email-and-exchange-public-folders)
@@ -161,25 +161,25 @@ Utilisez les instructions suivantes pour les stratégies de rétention qui s’a
 
 4. Sur la page **Indiquez si vous souhaitez conserver le contenu et/ou le supprimer** de l’assistant, spécifiez les options de configuration pour la conservation et la suppression du contenu.
 
-    Vous pouvez créer une stratégie de rétention qui conserve uniquement le contenu sans le supprimer, conserve puis supprime le contenu après une période donnée, ou supprime simplement le contenu après une période donnée. Si vous souhaitez en savoir plus, consultez [Paramètres pour la conservation et la suppression du contenu](#settings-for-retaining-and-deleting-content) sur cette page.
+    Vous pouvez créer une stratégie de rétention qui conserve uniquement le contenu sans le supprimer, conserve puis supprime le contenu après une période donnée, ou supprime simplement le contenu après une période donnée. Si vous souhaitez en savoir plus, voir [Paramètres pour la conservation et la suppression du contenu](#settings-for-retaining-and-deleting-content) sur cette page.
 
 5. Terminez l’assistant pour enregistrer vos paramètres.
 
 #### <a name="configuration-information-for-exchange-email-and-exchange-public-folders"></a>Informations de configuration pour la messagerie Exchange et les dossiers publics Exchange
 
-L’emplacement **Courrier Exchange** prend en charge la rétention des e-mails, du calendrier et d’autres éléments de boîte aux lettres des utilisateurs en appliquant des paramètres de rétention au niveau d’une boîte aux lettres.
+L’emplacement **Courrier Exchange** prend en charge la rétention du courrier électronique, du calendrier et d’autres éléments de boîte aux lettres des utilisateurs en appliquant des paramètres de rétention au niveau d’une boîte aux lettres.
 
 Si vous souhaitez en savoir plus sur les éléments inclus et exclus lors de la configuration des paramètres de rétention d’Exchange, veuillez consulter la rubrique [Éléments composant la rétention et la suppression](retention-policies-exchange.md#whats-included-for-retention-and-deletion).
 
-Notez que,même si un groupe Microsoft 365 a une boîte aux lettres Exchange, une stratégie de rétention qui inclut l’emplacement **Exchange** entier n’inclut pas du contenu dans les boîtes aux lettres de groupe Microsoft 365. Pour conserver le contenu pour un groupe Microsoft 365, vous devez utiliser l’emplacement de **Groupes Microsoft 365**.
+Notez que même si un groupe Microsoft 365 possède une boîte aux lettres Exchange, une stratégie de rétention qui inclut l’ensemble de l’emplacement **Courrier Exchange** n’inclut pas le contenu des boîtes aux lettres du groupe Microsoft 365. Pour conserver le contenu de ces boîtes aux lettres, sélectionnez l’emplacement **Groupes Microsoft 365**.
 
 L’emplacement **Dossiers publics Exchange** applique les paramètres de rétention à tous les dossiers publics et ne peut pas être appliqué au niveau d’un dossier ou d’une boîte aux lettres.
 
 #### <a name="configuration-information-for-sharepoint-sites-and-onedrive-accounts"></a>Informations de configuration pour les sites SharePoint et les comptes OneDrive
 
-Lorsque vous choisissez l’emplacement **Sites SharePoint**, la stratégie de rétention peut conserver et supprimer les documents des sites de communication SharePoint, des sites d’équipe qui ne sont pas connectés par des groupes Microsoft 365 ainsi que des sites classiques. Les sites d'équipe connectés par des **groupes Microsoft 365** ne sont pas pris en charge par cette option et utilisent plutôt l'emplacement des groupes Microsoft 365 qui s'applique au contenu de la boîte aux lettres, du site et des fichiers du groupe.
+Lorsque vous choisissez l’emplacement **Sites SharePoint**, la stratégie de rétention peut conserver et supprimer les documents des sites de communication SharePoint, des sites d’équipe qui ne sont pas connectés par des groupes Microsoft 365 ainsi que des sites classiques. Cette option ne prend pas en charge les sites d’équipe connectés par des groupes Microsoft 365. Utilisez plutôt des emplacements de **groupes Microsoft 365** qui s’appliquent au contenu de la boîte aux lettres, du site et des fichiers du groupe.
 
-Bien que la stratégie de rétention soit appliquée au niveau du site, seuls les documents ont des paramètres de rétention qui leur sont appliqués. Si vous souhaitez en savoir plus sur les éléments inclus et exclus lors de la configuration des paramètres de rétention de SharePoint et OneDrive, veuillez consulter la rubrique [Éléments composant la rétention et la suppression](retention-policies-sharepoint.md#whats-included-for-retention-and-deletion). 
+Bien que la stratégie de rétention s’applique au niveau du site, seuls les documents ont des paramètres de rétention qui leur sont appliqués. Si vous souhaitez en savoir plus sur les éléments inclus et exclus lors de la configuration des paramètres de rétention de SharePoint et OneDrive, veuillez consulter la rubrique [Éléments composant la rétention et la suppression](retention-policies-sharepoint.md#whats-included-for-retention-and-deletion). 
 
 Lorsque vous spécifiez vos emplacements pour les sites SharePoint ou comptes OneDrive, aucune autorisation n’est nécessaire pour accéder au site, et aucune validation n’intervient au moment où vous spécifiez l’URL sur la page **Modifier les emplacements**. Toutefois, les sites SharePoint que vous spécifiez est vérifiée à la fin de l’assistant. Si cette vérification échoue, un message apparaît pour vous informer que la validation de l’URL entrée a échoué, et que l’Assistant ne créera pas la stratégie de rétention tant que la vérification de validation n’aura pas abouti. Si ce message apparaît, revenez à l’assistant pour modifier l’URL ou supprimer le site de la stratégie de rétention.
 
@@ -191,9 +191,9 @@ Pour vérifier la syntaxe de votre client et identifier les URL des utilisateurs
 
 ### <a name="configuration-information-for-microsoft-365-groups"></a>Informations de configuration pour les Groupes Microsoft 365
 
-Pour conserver ou supprimer le contenu d’un groupe Microsoft 365 (anciennement groupe Office 365), utilisez l’emplacement **Groupes Microsoft 365**. Même si un groupe Microsoft 365 dispose d'une boîte aux lettres Exchange, une politique de conservation qui inclut l'ensemble de l'emplacement du **courrier électronique Exchange** n'inclura pas le contenu des boîtes aux lettres du groupe Microsoft 365. En outre, bien que l'emplacement du **courrier électronique Exchange** vous permette initialement de spécifier une boîte aux lettres de groupe à inclure ou à exclure, lorsque vous essayez d'enregistrer la stratégie de rétention, vous recevez une erreur indiquant que « RemoteGroupMailbox » n'est pas une sélection valable pour l'emplacement Exchange.
+Pour conserver ou supprimer le contenu d’un groupe Microsoft 365 (anciennement groupe Office 365), utilisez l’emplacement **Groupes Microsoft 365**. Même si un groupe Microsoft 365 possède une boîte aux lettres Exchange, une stratégie de rétention qui inclut l’ensemble de l’emplacement de la **messagerie Exchange** n’inclut pas le contenu des boîtes aux lettres du groupe Microsoft 365. De plus, bien que l’emplacement de la **messagerie Exchange** vous permette initialement de spécifier une boîte aux lettres de groupe à inclure ou à exclure, vous recevez une erreur indiquant que « RemoteGroupMailbox » n’est pas une sélection valide pour l’emplacement Exchange, lorsque vous essayez d’enregistrer la stratégie de rétention.
 
-Une stratégie de rétention appliquée à un groupe Microsoft 365 inclut la boîte aux lettres de groupe et le site d’équipe SharePoint. Les fichiers stockés sur le site d’équipe SharePoint sont couverts par cet emplacement, mais pas les messages de conversations ou de canal Teams ayant leur propre emplacement de stratégie de rétention.
+La stratégie de rétention d’un groupe Microsoft 365 comprend la boîte aux lettres du groupe et le site d’équipes SharePoint.. Les fichiers stockés sur le site d’équipes SharePoint sont couverts par cet emplacement, à la différence des conversations Teams ou des messages de canal Teams qui ont leur propre emplacements de stratégie de rétention.
 
 ### <a name="configuration-information-for-skype-for-business"></a>Informations de configuration de Skype Entreprise
 
@@ -201,9 +201,9 @@ Au contraire de Courrier Exchange, il est impossible de basculer l’état de l�
 
 ![Choisir l’emplacement Skype pour les stratégies de rétention](../media/skype-location-retention-policies.png)
 
-En sélectionnant **Choisir un utilisateur**, vous pouvez facilement inclure tous les utilisateurs en sélectionnant le champ **Tout sélectionner**. Toutefois, il est important de comprendre que chaque utilisateur compte comme une inclusion spécifique dans la stratégie. Ainsi, si vous incluez 1 000 utilisateurs en sélectionnant la case **Sélectionner tout**, c'est la même chose que si vous aviez sélectionné manuellement 1 000 utilisateurs à inclure, ce qui est le maximum pris en charge par Skype® Entreprise.
+En sélectionnant **Choisir un utilisateur**, vous pouvez facilement inclure tous les utilisateurs en sélectionnant le champ **Tout sélectionner**. Toutefois, il est important de comprendre que chaque utilisateur compte comme une inclusion particulière dans la stratégie. Ainsi, inclure 1 000 utilisateurs par le biais du champ **Tout sélectionner** équivaut à sélectionner manuellement ces 1 000 utilisateurs, ce qui est la quantité maximale prise en charge par Skype Entreprise.
 
-Notez que **Historique des conversations**, un dossier dans Outlook, est une fonctionnalité qui n’a rien à voir avec l’archivage Skype. La fonctionnalité **Historique des conversations** peut être désactivée par l’utilisateur final, mais l’archivage pour Skype s’effectue en stockant une copie des conversations Skype dans un dossier masqué inaccessible à l’utilisateur, mais disponible pour eDiscovery.
+Notez que le dossier Outlook **Historique des conversations** est un composant qui n’a rien à voir avec l’archivage de Skype. L’**historique des conversations** peut être désactivé par l’utilisateur final, mais l’archivage de Skype s’effectue par le stockage d’une copie des conversations Skype dans un dossier masqué qui n’est pas accessible par l’utilisateur mais est visible par eDiscovery.
 
 ## <a name="settings-for-retaining-and-deleting-content"></a>Paramètres pour la conservation et la suppression de contenu
 
@@ -211,7 +211,7 @@ Votre stratégie de rétention aura l’une des configurations suivantes pendant
 
 - Conserver uniquement
 
-    Pour cette configuration, choisissez **Conserver les éléments sur une période spécifique** et **À la fin de la période : ne rien faire** sélectionnez **Conserver les éléments à l’infini**.
+    Pour cette configuration, choisissez **Conserver les éléments sur une période spécifique** et **À la fin de la période : ne rien faire**. Ou bien sélectionnez **Conserver les éléments indéfiniment**.
 
 - Conserver puis supprimer
 
@@ -253,7 +253,7 @@ Lorsque vous choisissez des emplacements, à l’exception de Skype Entreprise, 
 
 Quand une stratégie de rétention s’applique sur une combinaison d’emplacements entiers, le nombre de destinataires, sites, comptes, groupes, etc., que la stratégie peut inclure n’est pas limité.
 
-Par exemple, si la stratégie inclut tous les courriers électroniques sur Exchange et tous les sites sur SharePoint, tous les sites et destinataires seront inclus, quel qu’en soit le nombre. Pour Exchange, toute nouvelle boîte aux lettres créée après l’application de la stratégie hérite automatiquement de la stratégie.
+Par exemple, si la stratégie inclut tous les courriers électroniques sur Exchange et tous les sites sur SharePoint, tous les sites et destinataires seront inclus, quel qu’en soit le nombre. Et dans le cas d’Exchange, une boîte aux lettres créée après l’application de la stratégie héritera automatiquement de la stratégie.
 
 ### <a name="a-policy-with-specific-inclusions-or-exclusions"></a>Une stratégie avec des inclusions ou des exclusions spécifiques
 
@@ -265,7 +265,7 @@ Ce n'est que si vous utilisez la configuration optionnelle pour étendre vos par
   - 1 000 utilisateurs pour conversations privées Teams
   - 100 sites (OneDrive et SharePoint)
 
-Il existe également un nombre maximum de politiques qui sont soutenues pour un locataire : 10,000. Ces éléments incluent les stratégies de rétention, les stratégies d’étiquette de rétention et les stratégies de rétention appliquées automatiquement.
+Il existe également un nombre maximum de politiques qui sont soutenues pour un locataire : 10 000. Toutefois, pour Exchange Online, le nombre maximal est de 1 800. Le nombre maximal inclut les stratégies de rétention, les stratégies d’étiquette de rétention et les stratégies de rétention d’application automatique.
 
 Si vos politiques de conservation sont susceptibles d'être soumises à ces limitations, utilisez la configuration par défaut qui s'applique à l'ensemble du site car ces politiques n'ont aucune limitation.
 
