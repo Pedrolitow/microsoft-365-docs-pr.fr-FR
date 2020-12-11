@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données de l’outil de conversation ICE dans Microsoft 365. Cela vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 de sorte que vous puissiez utiliser les fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: cd56e98aadc2b7328b733939ecc8951413309ba5
-ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
+ms.openlocfilehash: 590f9b3b119ee261ec2ff6c4b5196bd9fea42697
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48408764"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49620401"
 ---
 # <a name="set-up-a-connector-to-archive-ice-chat-data"></a>Configuration d’un connecteur pour l’archivage des données de conversation ICE
 
@@ -45,8 +45,6 @@ La vue d’ensemble suivante décrit le processus d’utilisation d’un connect
 
 Certaines étapes de mise en œuvre requises pour archiver les données de conversation ICE sont externes à Microsoft 365 et doivent être terminées avant de pouvoir créer le connecteur dans le centre de conformité.
 
-- Votre organisation doit consentir à autoriser le service d’importation Office 365 à accéder aux données de boîte aux lettres dans votre organisation. Pour accepter cette demande, accédez à [cette page](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), connectez-vous à l’aide des informations d’identification d’un administrateur général Office 365, puis acceptez la demande. Vous devez effectuer cette étape avant de pouvoir créer le connecteur de conversation ICE à l’étape 3.
-
 - La conversation ICE facture à ses clients une redevance pour la conformité externe. Votre organisation doit contacter le groupe de ventes ICE chat pour discuter et signer le contrat de services de conversation de ICE, que vous pouvez obtenir à l’adresse [https://www.theice.com/publicdocs/agreements/ICE\_Data\_Services\_Agreement.pdf](https://www.theice.com/publicdocs/agreements/ICE\_Data\_Services\_Agreement.pdf) . Le présent contrat se trouve entre ICE chat et votre organisation et n’implique pas Microsoft. Une fois que vous avez configuré un site SFTP chat SFTP à l’étape 2, ICE chat fournit les informations d’identification FTP directement à votre organisation. Ensuite, vous fournissez ces informations d’identification à Microsoft lors de la configuration du connecteur à l’étape 3.
 
 - Vous devez configurer un site SFTP de conversation ICE avant de créer le connecteur à l’étape 3. Après avoir travaillé avec ICE chat pour configurer le site SFTP, les données de la conversation ICE sont chargées sur le site SFTP tous les jours. Le connecteur que vous créez à l’étape 3 se connecte à ce site SFTP et transfère les données de conversation vers des boîtes aux lettres Microsoft 365. SFTP chiffre également les données de conversation ICE qui sont envoyées aux boîtes aux lettres pendant le processus de transfert.
@@ -65,7 +63,7 @@ La première étape consiste à obtenir une copie des clés publiques pour le pr
 
 4. Sur la page **conditions de service** , cliquez sur **accepter**.
 
-5. Sur la page **Ajouter des informations d’identification pour le site SFTP de conversation Ice** sous étape 1, cliquez sur les liens **Télécharger la clé SSH**, **Télécharger la clé PGP**et **Télécharger l’adresse IP** pour enregistrer une copie de chaque fichier sur votre ordinateur local. Ces fichiers contiennent les éléments suivants qui sont utilisés pour configurer le site SFTP chat SFTP à l’étape 2 :
+5. Sur la page **Ajouter des informations d’identification pour le site SFTP de conversation Ice** sous étape 1, cliquez sur les liens **Télécharger la clé SSH**, **Télécharger la clé PGP** et **Télécharger l’adresse IP** pour enregistrer une copie de chaque fichier sur votre ordinateur local. Ces fichiers contiennent les éléments suivants qui sont utilisés pour configurer le site SFTP chat SFTP à l’étape 2 :
 
    - Clé publique SSH : cette clé permet de configurer SSH sécurisé pour activer une connexion à distance sécurisée lorsque le connecteur se connecte au site SFTP de conversation ICE.
 

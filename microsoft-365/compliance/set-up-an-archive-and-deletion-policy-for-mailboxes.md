@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 ms.custom: seo-marvel-apr2020
 description: Découvrez comment créer une stratégie d’archivage et de suppression dans Microsoft 365 qui déplace automatiquement les éléments vers la boîte aux lettres d’archivage d’un utilisateur.
-ms.openlocfilehash: 7bbd4a2f4a5b9c35695b5e0630020a0f39224324
-ms.sourcegitcommit: f941495e9257a0013b4a6a099b66c649e24ce8a1
+ms.openlocfilehash: 5e8675c1cc6e1df4c22e55648e1655798bae5e5b
+ms.sourcegitcommit: 21b0ea5715e20b4ab13719eb18c97fadb49b563d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "48993364"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49624776"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>Configurer une stratégie d’archivage et de suppression pour les boîtes aux lettres de votre organisation
 
@@ -67,7 +67,7 @@ La première étape consiste à activer la boîte aux lettres d’archivage pour
 
 2. Connectez-vous à l’aide de votre compte d’administrateur général.
     
-3. Dans le centre de sécurité & conformité, accédez à Archives de **gouvernance des informations** \> **Archive**.
+3. Dans le centre de sécurité & conformité, accédez à Archives de **gouvernance des informations** \> .
 
     Une liste des boîtes aux lettres de votre organisation s’affiche et indique si la boîte aux lettres d’archivage correspondante est activée ou désactivée.
 
@@ -76,7 +76,7 @@ La première étape consiste à activer la boîte aux lettres d’archivage pour
     > [!TIP]
     > Cette étape part du principe qu’aucune boîte aux lettres d’archivage n’est activée. Si vous avez des boîtes aux lettres pour lesquelles l’archivage est activé, maintenez la touche **CTRL** enfoncée et cliquez sur chaque boîte aux lettres contenant une boîte aux lettres d’archivage désactivée. Vous pouvez aussi cliquer sur l’en-tête de colonne **boîte aux lettres d’archivage** pour trier les lignes selon que la boîte aux lettres d’archivage est activée ou désactivée pour faciliter la sélection des boîtes aux lettres.
   
-5. Dans le volet d’informations, sous **modification en bloc** , cliquez sur **activer**.
+5. Dans le volet d’informations, sous **modification en bloc**, cliquez sur **activer**.
 
     Un avertissement s’affiche indiquant que les éléments datant de plus de deux ans seront déplacés vers la nouvelle boîte aux lettres d’archivage. Cela est dû au fait que la stratégie de rétention par défaut qui est affectée à une nouvelle boîte aux lettres utilisateur lors de sa création comporte une balise de stratégie d’archivage par défaut dont l’âge de rétention est de 2 ans. La balise de stratégie d’archivage par défaut personnalisée que vous allez créer à l’étape 2 a une durée de rétention de 3 ans. Cela signifie que les éléments de 3 ans ou plus seront déplacés vers la boîte aux lettres d’archivage.
 
@@ -120,7 +120,7 @@ Tout d’abord, vous allez créer une balise de stratégie d’archivage par dé
 
    2. **Action de rétention** Sélectionnez **déplacer vers l’archive** pour déplacer des éléments vers la boîte aux lettres d’archivage à l’expiration de la période de rétention.
 
-   3. **Période de rétention** Sélectionnez **quand l’élément atteint l’âge suivant (en jours)** , puis entrez la durée de la période de rétention. Dans ce scénario, les éléments seront déplacés vers la boîte aux lettres d’archivage après 1095 jours (3 ans).
+   3. **Période de rétention** Sélectionnez **quand l’élément atteint l’âge suivant (en jours)**, puis entrez la durée de la période de rétention. Dans ce scénario, les éléments seront déplacés vers la boîte aux lettres d’archivage après 1095 jours (3 ans).
 
    4. **Commentaire** (facultatif) tapez un commentaire qui explique l’objectif de la balise de rétention personnalisée.
 
@@ -142,7 +142,7 @@ Ensuite, vous allez créer un autre DPT personnalisé, mais celui-ci sera une st
 
    2. **Action de rétention** Sélectionnez **Supprimer définitivement** pour purger les éléments de la boîte aux lettres à l’expiration de la période de rétention.
 
-   3. **Période de rétention** Sélectionnez **quand l’élément atteint l’âge suivant (en jours)** , puis entrez la durée de la période de rétention. Pour ce scénario, les éléments seront purgés après 2555 jours (7 ans).
+   3. **Période de rétention** Sélectionnez **quand l’élément atteint l’âge suivant (en jours)**, puis entrez la durée de la période de rétention. Pour ce scénario, les éléments seront purgés après 2555 jours (7 ans).
 
    4. **Commentaire** (facultatif) tapez un commentaire qui explique l’objectif de la balise de rétention personnalisée. 
 
@@ -166,7 +166,7 @@ La dernière balise de rétention que vous allez créer est une balise de strat�
 
    3. **Action de rétention** Sélectionnez **supprimer et autoriser la récupération** pour supprimer des éléments à l’expiration de la période de rétention, mais autoriser les utilisateurs à récupérer un élément supprimé pendant la période de rétention des éléments supprimés (la valeur par défaut est 14 jours).
 
-   4. **Période de rétention** Sélectionnez **quand l’élément atteint l’âge suivant (en jours)** , puis entrez la durée de la période de rétention. Pour ce scénario, les éléments seront supprimés après 1825 jours (5 ans).
+   4. **Période de rétention** Sélectionnez **quand l’élément atteint l’âge suivant (en jours)**, puis entrez la durée de la période de rétention. Pour ce scénario, les éléments seront supprimés après 1825 jours (5 ans).
 
    5. **Commentaire** (facultatif) tapez un commentaire qui explique l’objectif de la balise de rétention personnalisée. 
 
@@ -184,7 +184,7 @@ Une fois que vous avez créé les balises de rétention personnalisées, l’ét
 
 3. Dans la zone **nom** , tapez un nom pour la nouvelle stratégie de rétention ; par exemple, **stratégie d’archivage et de suppression Alpine House**.
 
-4. Sous **balises de rétention** , cliquez sur **Ajouter** une ![ nouvelle icône ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) .
+4. Sous **balises de rétention**, cliquez sur **Ajouter** une ![ nouvelle icône ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) .
 
     Une liste des balises de rétention de votre organisation s’affiche. Remarque les balises personnalisées que vous avez créées à l’étape 2 sont affichées.
 
@@ -213,9 +213,9 @@ Lorsqu’une nouvelle boîte aux lettres est créée, une stratégie de rétenti
 
 2. Sélectionnez toutes les boîtes aux lettres en cliquant sur le premier de la liste, en maintenant enfoncée la touche **MAJ** , puis en cliquant sur la dernière de la liste. 
 
-3. Dans le volet d’informations sur le côté droit du centre d’administration Exchange, sous **modification en bloc** , cliquez sur **plus d’options**.
+3. Dans le volet d’informations sur le côté droit du centre d’administration Exchange, sous **modification en bloc**, cliquez sur **plus d’options**.
 
-4. Sous **Stratégie de rétention** , cliquez sur **Mettre à jour**.
+4. Sous **Stratégie de rétention**, cliquez sur **Mettre à jour**.
 
 5. Dans la page **affecter une stratégie** de rétention en bloc, dans la liste déroulante sélectionnez la stratégie de **rétention** , sélectionnez la stratégie de rétention que vous avez créée à l’étape 3 ; par exemple, **stratégie d’archivage et de rétention Alpine House**.
 
@@ -252,7 +252,7 @@ Voici les étapes à suivre pour vous connecter à Exchange Online PowerShell, p
 Voilà ! Vous avez configuré une stratégie d’archivage et de suppression pour l’organisation Alpine House.
 
 > [!NOTE]
-> Comme indiqué précédemment, l’Assistant dossier géré traite les boîtes aux lettres au moins une fois tous les 7 jours. Il est donc possible qu’une boîte aux lettres puisse être traitée par l’Assistant dossier géré plus fréquemment. En outre, les administrateurs ne peuvent pas prédire la prochaine fois qu’une boîte aux lettres est traitée par l’Assistant dossier géré, ce qui est une des raisons pour lesquelles vous souhaiterez peut-être l’exécuter manuellement. Toutefois, si vous souhaitez empêcher temporairement l’Assistant dossier géré d’appliquer les nouveaux paramètres de rétention à une boîte aux lettres, vous pouvez exécuter la `Set-Mailbox -ElcProcessingDisabled $true` commande pour désactiver temporairement l’Assistant dossier géré pour le traitement d’une boîte aux lettres. Pour réactiver l’Assistant dossier géré pour une boîte aux lettres, exécutez la `Set-Mailbox -ElcProcessingDisabled $false` commande.
+> Comme indiqué précédemment, l’Assistant dossier géré traite les boîtes aux lettres au moins une fois tous les 7 jours. Il est donc possible qu’une boîte aux lettres puisse être traitée par l’Assistant dossier géré plus fréquemment. En outre, les administrateurs ne peuvent pas prédire la prochaine fois qu’une boîte aux lettres est traitée par l’Assistant dossier géré, ce qui est une des raisons pour lesquelles vous souhaiterez peut-être l’exécuter manuellement. Toutefois, si vous souhaitez empêcher temporairement l’Assistant dossier géré d’appliquer les nouveaux paramètres de rétention à une boîte aux lettres, vous pouvez exécuter la `Set-Mailbox -ElcProcessingDisabled $true` commande pour désactiver temporairement l’Assistant dossier géré pour le traitement d’une boîte aux lettres. Pour réactiver l’Assistant dossier géré pour une boîte aux lettres, exécutez la `Set-Mailbox -ElcProcessingDisabled $false` commande. Enfin, si un utilisateur de boîte aux lettres a un compte désactivé, nous ne traiterons pas l’action déplacer les éléments vers l’Archive pour cette boîte aux lettres.
   
 ## <a name="optional-step-6-make-the-new-retention-policy-the-default-for-your-organization"></a>Module Étape 6 : définir la nouvelle stratégie de rétention comme stratégie par défaut pour votre organisation
 
@@ -268,7 +268,7 @@ Voilà ! Vous avez configuré une stratégie d’archivage et de suppression po
 
     Notez le plan de boîte aux lettres défini par défaut.
 
-3. Exécutez la commande suivante pour affecter la nouvelle stratégie de rétention que vous avez créée à l’étape 3 (par exemple, **stratégie d’archivage et de rétention Alpine House** ) au plan de boîte aux lettres par défaut. Cet exemple suppose que le nom du plan de boîte aux lettres par défaut est **ExchangeOnlineEnterprise**.
+3. Exécutez la commande suivante pour affecter la nouvelle stratégie de rétention que vous avez créée à l’étape 3 (par exemple, **stratégie d’archivage et de rétention Alpine House**) au plan de boîte aux lettres par défaut. Cet exemple suppose que le nom du plan de boîte aux lettres par défaut est **ExchangeOnlineEnterprise**.
 
     ```powershell
     Set-MailboxPlan "ExchangeOnlineEnterprise" -RetentionPolicy "Alpine House Archive and Retention Policy"
@@ -276,7 +276,7 @@ Voilà ! Vous avez configuré une stratégie d’archivage et de suppression po
 
 4. Vous pouvez réexécuter la commande à l’étape 2 pour vérifier que la stratégie de rétention attribuée au plan de boîte aux lettres par défaut a été modifiée.
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
 - Comment l’âge de rétention est-il calculé ? L’âge de rétention des éléments de boîte aux lettres est calculé à partir de la date de livraison ou de la date de création des éléments, tels que les messages brouillons qui ne sont pas envoyés, mais qui sont créés par l’utilisateur. Quand l'Assistant Dossier géré traite les éléments d'une boîte aux lettres, il appose une date de début et une date d'expiration pour tous les éléments présentant des balises de rétention avec l'action de rétention Supprimer et autoriser la récupération ou Supprimer définitivement. Les éléments associés à une balise Archive sont marqués avec une date de déplacement. 
 

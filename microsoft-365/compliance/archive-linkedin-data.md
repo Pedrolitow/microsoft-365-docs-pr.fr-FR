@@ -15,22 +15,20 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Découvrez comment les administrateurs peuvent configurer & utiliser un connecteur natif pour importer des données à partir d’une page de la société LinkedIn vers Microsoft 365.
-ms.openlocfilehash: 00e4d233efa6ee86111e3497063ad1276b5df041
-ms.sourcegitcommit: 195172dd836e8a793e8e0c2db3323b7391bc51ac
+ms.openlocfilehash: 42183be3663fbf4b55eadde2173b492feeae5373
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47255811"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49619980"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data"></a>Configurer un connecteur pour archiver des données LinkedIn
 
 Utilisez un connecteur dans le centre de conformité Microsoft 365 pour importer et archiver des données à partir des pages de la société LinkedIn. Une fois que vous avez configuré et configuré un connecteur, celui-ci se connecte au compte de la page de la société LinkedIn spécifique une fois toutes les 24 heures. Le connecteur convertit les messages publiés sur la page de l’entreprise en message électronique, puis importe ces éléments dans une boîte aux lettres dans Microsoft 365.
 
-Une fois que les données de la page de la société LinkedIn sont stockées dans une boîte aux lettres, vous pouvez appliquer les fonctionnalités de conformité de Microsoft 365 telles que la conservation pour litige, la recherche de contenu, l’archivage inaltérable, l’audit et les stratégies de rétention 365 Microsoft dans les données LinkedIn. Par exemple, vous pouvez rechercher ces éléments à l’aide de la recherche de contenu ou associer la boîte aux lettres de stockage à un dépositaire dans un cas avancé de découverte électronique. La création d’un connecteur pour importer et archiver des données LinkedIn dans Microsoft 365 peut aider votre organisation à respecter les stratégies gouvernementales et réglementaires.
+Une fois que les données de la page de la société LinkedIn sont stockées dans une boîte aux lettres, vous pouvez appliquer les fonctionnalités de conformité de Microsoft 365 telles que les stratégies de conservation pour litige, de recherche de contenu In-Place d’archivage, d’audit et de rétention Microsoft 365 aux données LinkedIn. Par exemple, vous pouvez rechercher ces éléments à l’aide de la recherche de contenu ou associer la boîte aux lettres de stockage à un dépositaire dans un cas avancé de découverte électronique. La création d’un connecteur pour importer et archiver des données LinkedIn dans Microsoft 365 peut aider votre organisation à respecter les stratégies gouvernementales et réglementaires.
 
-## <a name="give-consent-assign-roles-and-verify-credentials"></a>Accorder le consentement, attribuer des rôles et vérifier les informations d’identification
-
-- Votre organisation doit consentir à autoriser le service d’importation Office 365 à accéder aux données de boîte aux lettres dans votre organisation. Pour accepter cette demande, accédez à [cette page](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), connectez-vous à l’aide des informations d’identification d’un administrateur général Microsoft 365, puis acceptez la demande.
+## <a name="assign-roles-and-verify-credentials"></a>Attribuer des rôles et vérifier les informations d’identification
 
 - L’utilisateur qui crée un connecteur de page de société LinkedIn doit disposer du rôle d’exportation d’importation de boîte aux lettres dans Exchange Online. Cela est nécessaire pour ajouter des connecteurs dans la page **connecteurs de données** dans le centre de conformité Microsoft 365. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle exportation d’importation de boîte aux lettres au groupe de rôles gestion de l’organisation dans Exchange Online. Vous pouvez aussi créer un groupe de rôles, attribuer le rôle d’exportation d’importation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, reportez-vous aux sections [créer des groupes de rôles](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) ou modifier des [groupes](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) de rôles dans l’article « gérer des groupes de rôles dans Exchange Online ».
 
@@ -60,9 +58,7 @@ Une fois que les données de la page de la société LinkedIn sont stockées dan
 
 7. Dans la page **choisir l’emplacement de stockage** , cliquez dans la zone, sélectionnez l’adresse de messagerie d’une boîte aux lettres Microsoft 365 dans laquelle les éléments LinkedIn seront importés, puis cliquez sur **suivant**. Les éléments sont importés dans le dossier boîte de réception de cette boîte aux lettres.
 
-8. Sur l' **autorisation fournir un administrateur**, cliquez sur **accorder le consentement** , puis suivez les étapes. Vous devez être un administrateur général pour accorder le consentement du service d’importation Office 365 pour accéder aux données de votre organisation.
-
-9. Cliquez sur **suivant** pour passer en revue les paramètres du connecteur, puis cliquez sur **Terminer** pour terminer l’installation du connecteur.
+8. Cliquez sur **suivant** pour passer en revue les paramètres du connecteur, puis cliquez sur **Terminer** pour terminer l’installation du connecteur.
 
 Après avoir créé le connecteur, vous pouvez revenir à la page **connecteurs de données** pour voir la progression du processus d’importation pour le nouveau connecteur (sélectionnez **Actualiser** si nécessaire pour mettre à jour la liste des connecteurs). La valeur dans la colonne d' **État** est en **attente de démarrage**. Le processus initial d’importation doit prendre jusqu’à 24 heures. Après la première exécution du connecteur et l’importation des éléments LinkedIn, le connecteur s’exécute une fois toutes les 24 heures et importe les nouveaux éléments créés sur la page de la société LinkedIn dans les 24 heures qui précèdent.
 

@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur de télémessage pour importer et archiver des données SMS et MMS à partir du réseau Verizon dans Microsoft 365. Cela vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 de sorte que vous puissiez utiliser les fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: 8d3d23a4383f15b9390db3fb84b20a5566a28b8d
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 2628a373a0232d5cadbb54db7253e56e35596b04
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196553"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49619770"
 ---
 # <a name="set-up-a-connector-to-archive-verizon-network-data"></a>Configuration d’un connecteur pour l’archivage des données réseau Verizon
 
@@ -53,15 +53,13 @@ Certaines des étapes d’implémentation requises pour archiver les données de
 
 - Vos employés doivent disposer de téléphones mobiles appartenant à une entreprise et appartenant à une entreprise sur le réseau mobile Verizon. Les messages d’archivage dans Microsoft 365 ne sont pas disponibles pour les appareils appartenant à un employé ou ne disposez pas de vos propres appareils (BYOD).
 
-- Votre organisation doit consentir à autoriser le service d’importation Office 365 à accéder aux données de boîte aux lettres dans votre organisation. Vous devrez fournir ce consentement lors de la création du connecteur. Pour accepter cette demande, accédez à [cette page](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), connectez-vous à l’aide des informations d’identification de l’administrateur général Microsoft 365, puis acceptez la demande. Vous devez effectuer cette étape avant de pouvoir créer un connecteur réseau Verizon.
-
 - L’utilisateur qui crée un connecteur réseau Verizon doit disposer du rôle d’exportation d’importation de boîte aux lettres dans Exchange Online. Cela est nécessaire pour ajouter des connecteurs dans la page **connecteurs de données** dans le centre de conformité Microsoft 365. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle exportation d’importation de boîte aux lettres au groupe de rôles gestion de l’organisation dans Exchange Online. Vous pouvez aussi créer un groupe de rôles, attribuer le rôle d’exportation d’importation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, reportez-vous aux sections [créer des groupes de rôles](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) ou modifier des [groupes](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) de rôles dans l’article « gérer des groupes de rôles dans Exchange Online ».
 
 ## <a name="create-a-verizon-network-connector"></a>Création d’un connecteur réseau Verizon
 
 Une fois que vous avez terminé les conditions préalables décrites dans la section précédente, vous pouvez créer le connecteur réseau Verizon dans le centre de conformité Microsoft 365. Le connecteur utilise les informations que vous fournissez pour vous connecter au site de Télémessage et transférer les messages SMS et MMS vers les boîtes aux lettres utilisateur correspondantes dans Microsoft 365.
 
-1. Accédez à [https://compliance.microsoft.com](https://compliance.microsoft.com) , puis cliquez **Data connectors**sur  >  **réseau Verizon**Data Connectors.
+1. Accédez à [https://compliance.microsoft.com](https://compliance.microsoft.com) , puis cliquez sur  >  **réseau Verizon** Data Connectors.
 
 2. Sur la page Description du produit **Verizon Network** , cliquez sur **Ajouter un connecteur** .
 
@@ -77,13 +75,9 @@ Une fois que vous avez terminé les conditions préalables décrites dans la sec
 
 6. Sur la page mappage de l' **utilisateur** , activez mappage utilisateur automatique, puis cliquez sur **suivant**. Si vous avez besoin d’un mappage personnalisé, téléchargez un fichier CSV, puis cliquez sur **suivant**.
 
-7. Fournissez le consentement de l’administrateur, puis cliquez sur **suivant**.
+7. Vérifiez vos paramètres, puis cliquez sur **Terminer** pour créer le connecteur.
 
-   Pour fournir le consentement de l’administrateur, vous devez être connecté avec les informations d’identification d’un administrateur général Office 365, puis accepter la demande de consentement. Si vous n’êtes pas connecté en tant qu’administrateur général, vous pouvez accéder à [cette page](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) et vous connecter à l’aide des informations d’identification d’administrateur général pour accepter la demande.
-
-8. Vérifiez vos paramètres, puis cliquez sur **Terminer** pour créer le connecteur.
-
-9. Accédez à l’onglet Connecteurs de la page **connecteurs de données** pour voir la progression du processus d’importation pour le nouveau connecteur.
+8. Accédez à l’onglet Connecteurs de la page **connecteurs de données** pour voir la progression du processus d’importation pour le nouveau connecteur.
 
 ## <a name="known-issues"></a>Problèmes connus
 

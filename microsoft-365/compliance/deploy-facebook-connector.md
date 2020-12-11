@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Les administrateurs peuvent configurer un connecteur natif pour importer et archiver des pages Facebook dans Microsoft 365. Une fois ces données importées dans Microsoft 365, vous pouvez utiliser les fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer la gouvernance des données Facebook de votre organisation.
-ms.openlocfilehash: 065a5c6a1276c1ce37aa48137caf6627e76c8db0
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: b771c50eb5c2eb5f99269f1f399d27043ebee6bb
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200859"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49619950"
 ---
 # <a name="deploy-a-connector-to-archive-facebook-business-pages-data"></a>Déploiement d’un connecteur pour l’archivage des données de pages d’entreprise Facebook
 
@@ -116,7 +116,7 @@ Cet article contient le processus étape par étape pour déployer un connecteur
 
    ![Fin de la section démarrage rapide](../media/FBCimage30.png)
 
-7. Dans le volet de navigation de gauche sous **connexion Facebook**, cliquez sur **paramètres**, puis ajoutez l’URI de redirection OAuth dans la zone **URI de redirection OAuth valide** . Utilisez le format ** \<connectorserviceuri> /views/FacebookOAuth**, où la valeur de CONNECTORSERVICEURI est l’URL de service d’application Azure pour votre organisation ; par exemple, `https://fbconnector.azurewebsites.net` .
+7. Dans le volet de navigation de gauche sous **connexion Facebook**, cliquez sur **paramètres**, puis ajoutez l’URI de redirection OAuth dans la zone **URI de redirection OAuth valide** . Utilisez le format **\<connectorserviceuri> /views/FacebookOAuth**, où la valeur de CONNECTORSERVICEURI est l’URL de service d’application Azure pour votre organisation ; par exemple, `https://fbconnector.azurewebsites.net` .
 
    ![Ajouter l’URI de redirection OAuth à la zone URI de redirection OAuth valide](../media/FBCimage31.png)
 
@@ -124,7 +124,7 @@ Cet article contient le processus étape par étape pour déployer un connecteur
 
    ![Cliquez sur Ajouter des produits, puis cliquez sur * * webhooks](../media/FBCimage32.png)
 
-9. Ajoutez l’URL de rappel des webhooks et ajoutez un jeton de vérification. Le format de l’URL de rappel, utilisez le format ** <connectorserviceuri> /API/FbPageWebhook**, où la valeur de CONNECTORSERVICEURI est l’URL de service d’application Azure pour votre organisation ; par exemple `https://fbconnector.azurewebsites.net` .
+9. Ajoutez l’URL de rappel des webhooks et ajoutez un jeton de vérification. Le format de l’URL de rappel, utilisez le format **<connectorserviceuri> /API/FbPageWebhook**, où la valeur de CONNECTORSERVICEURI est l’URL de service d’application Azure pour votre organisation ; par exemple `https://fbconnector.azurewebsites.net` .
 
    Le jeton Verify doit ressembler à un mot de passe fort. Copiez le jeton de vérification dans un fichier texte ou un autre emplacement de stockage.
 
@@ -226,8 +226,6 @@ Cet article contient le processus étape par étape pour déployer un connecteur
 
 12. Dans la page **choisir l’emplacement de stockage** , tapez l’adresse de messagerie de la boîte aux lettres Microsoft 365 dans laquelle les éléments Facebook seront importés, puis cliquez sur **suivant**.
 
-13. Sur l' **autorisation fournir un administrateur**, cliquez sur **accorder le consentement** , puis suivez les étapes. Vous devez être un administrateur général pour accorder le consentement du service d’importation Office 365 pour accéder aux données de votre organisation.
+13. Cliquez sur **suivant** pour passer en revue les paramètres du connecteur, puis cliquez sur **Terminer** pour terminer l’installation du connecteur.
 
-14. Cliquez sur **suivant** pour passer en revue les paramètres du connecteur, puis cliquez sur **Terminer** pour terminer l’installation du connecteur.
-
-15. Dans le centre de conformité, accédez à la page **connecteurs de données** , puis cliquez sur l’onglet **connecteurs** pour voir la progression du processus d’importation.
+14. Dans le centre de conformité, accédez à la page **connecteurs de données** , puis cliquez sur l’onglet **connecteurs** pour voir la progression du processus d’importation.
