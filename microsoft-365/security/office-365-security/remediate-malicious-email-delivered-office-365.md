@@ -14,12 +14,12 @@ search.appverid: MET150
 description: Correction des menaces
 appliesto:
 - Microsoft 365 Defender
-ms.openlocfilehash: 742f19c4051b2cab3311562f688da51975bd3c48
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 67b27102ff9319e334b5ff1e006fe49f14d3f1ed
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615887"
+ms.locfileid: "49620574"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Correction des courriers électroniques malveillants remis dans Office 365
 
@@ -33,7 +33,7 @@ La correction consiste à prendre une mesure déterminée contre une menace. Les
 
 ## <a name="what-you-need-to-know-before-you-begin"></a>Ce qu’il faut savoir avant de commencer
 
-Les administrateurs peuvent effectuer une action obligatoire sur les courriers électroniques, mais pour qu’ils soient approuvés, le rôle de *recherche et de purge* doit leur être attribué via **Security &** les autorisations du centre de conformité \> . Si le rôle de recherche et de vidage n’est pas ajouté à l’un des groupes de rôles, il ne peut pas exécuter l’action.
+Les administrateurs peuvent effectuer une action obligatoire sur les courriers électroniques, mais pour qu’ils soient approuvés, le rôle de *recherche et de purge* doit leur être attribué via **Security &** les autorisations du centre de conformité \> . Si le rôle de recherche et de vidage n’est pas ajouté à l’un des groupes de rôles, il ne pourra pas exécuter l’action.
 
 ## <a name="manual-and-automated-remediation"></a>Correction manuelle et automatique
 
