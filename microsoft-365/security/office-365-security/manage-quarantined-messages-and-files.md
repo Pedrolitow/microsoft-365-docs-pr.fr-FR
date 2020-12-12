@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à afficher et à gérer les messages mis en quarantaine pour tous les utilisateurs dans Exchange Online Protection (EOP). Les administrateurs dans les organisations disposant de Microsoft Defender pour Office 365 peuvent également gérer les fichiers mis en quarantaine dans SharePoint Online, OneDrive entreprise et Microsoft Teams.
-ms.openlocfilehash: 8f4ca5caef9bf244315db2271011126ad4d7976e
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 5f4d63576e57ac50abe1ec1eb378221c4d457280
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616775"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659985"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Gérer les messages et fichiers mis en quarantaine en tant qu’administrateur dans Exchange Online PowerShell
 
@@ -44,14 +44,21 @@ Vous pouvez afficher et gérer les messages mis en quarantaine dans le centre de
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Vous devez disposer d’autorisations pour pouvoir gérer la mise en quarantaine en tant qu’administrateur. Les autorisations sont contrôlées par le rôle de **mise en quarantaine** dans le centre de sécurité & conformité. Par défaut, ce rôle est affecté aux groupes de rôles gestion de l' **organisation** (administrateurs globaux), administrateur de **mise en quarantaine** et administrateur de **sécurité** dans le centre de sécurité & conformité. Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
+- Pour pouvoir utiliser ce cmdlet, vous devez disposer des autorisations dans le centre de sécurité et conformité Office 365.
+  - Pour effectuer une action sur les messages mis en quarantaine pour tous les utilisateurs, vous devez être membre des groupes de rôles gestion de l' **organisation**, **administrateur** de la sécurité ou administrateur de **mise en quarantaine** <sup>\*</sup> .
+  - Pour un accès en lecture seule aux messages mis en quarantaine pour tous les utilisateurs, vous devez être membre des groupes de rôles **lecteur global** ou **lecteur de sécurité** .
+
+  Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
+
+  **Remarques** :
+
+  - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux utilisateurs les autorisations requises dans le centre de sécurité et de conformité _et_ les autorisations pour les autres fonctionnalités de Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Le groupe de rôles **Gestion de l’organisation en affichage seul** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) permet également d’accéder en lecture seule à la fonctionnalité.
+  - <sup>\*</sup> Les membres du groupe de rôles **administrateur de quarantaine** doivent également être membres du groupe de rôles de gestion de l' **hygiène** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) pour effectuer des procédures de mise en quarantaine dans Exchange Online PowerShell.
 
 - Les messages mis en quarantaine sont conservés pendant une période de temps par défaut avant d’être supprimés automatiquement :
-
   - 30 jours pour les messages mis en quarantaine par les stratégies de blocage du courrier indésirable (courrier indésirable, hameçonnage et courrier en nombre). Il s’agit de la valeur par défaut et la valeur maximale. Pour configurer (inférieure) cette valeur, consultez la rubrique [configure anti-spam Policies](configure-your-spam-filter-policies.md).
-
   - 15 jours pour les messages contenant des programmes malveillants.
-
   - 15 jours pour les fichiers mis en quarantaine par la protection avancée contre les menaces pour SharePoint, OneDrive et Microsoft teams dans Defender pour Office 365.
 
   Lorsqu’un message arrive à expiration en quarantaine, vous ne pouvez pas le récupérer.
@@ -99,11 +106,11 @@ Vous pouvez afficher et gérer les messages mis en quarantaine dans le centre de
      - **Courrier indésirable**
      - **Hameçonnage à niveau de confiance élevé**
 
-   - **Type de stratégie**: filtrer les messages par type de stratégie :
+   - **Type de stratégie** : filtrer les messages par type de stratégie :
      - **Stratégie anti-programme malveillant**
      - **Stratégie de pièces jointes fiables**
      - **Stratégie anti-hameçonnage**
-     - **Stratégie de filtrage de contenu hébergé** (stratégie de blocage du courrier indésirable)
+     - **Stratégie de filtrage de contenu hébergé** (stratégie anti-courrier indésirable)
      - **Règle de transport**
 
    - **Destinataire du message**: tous les utilisateurs ou seulement les messages qui vous sont envoyés. Les utilisateurs finaux peuvent gérer uniquement les messages mis en quarantaine qui leur sont envoyés.
@@ -118,7 +125,7 @@ Vous pouvez afficher et gérer les messages mis en quarantaine dans le centre de
 
    - **Adresse e-mail de l'expéditeur** : adresse e-mail d'un seul expéditeur.
 
-   - **Nom** de la stratégie : utilisez le nom de la stratégie complète du message. La recherche n’est pas sensible à la casse.
+   - **Nom de la stratégie** : utilisez le nom de stratégie complet indiqué dans le message. La recherche n’est pas sensible à la casse.
 
    - **Adresse e-mail du destinataire** : adresse e-mail d'un seul destinataire.
 
@@ -142,7 +149,7 @@ Lorsque vous sélectionnez un message électronique dans la liste, les détails 
 
 - **Subject**
 
-- **Raison** de la mise en quarantaine : indique si un message a été identifié **Bulk** comme **courrier indésirable**, **hameçon, hameçon**, correspond à une règle de flux de messagerie (**règle de transport**) ou a été identifié comme contenant un **programme malveillant**.
+- **Raison** de la mise en quarantaine : indique si un message a été identifié comme **courrier indésirable**, **hameçon, hameçon**, correspond à une règle de flux de messagerie (**règle de transport**) ou a été identifié comme contenant un **programme malveillant**.
 
 - **Nombre de destinataires**
 

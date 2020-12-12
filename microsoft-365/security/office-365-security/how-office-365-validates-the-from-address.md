@@ -18,23 +18,23 @@ ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent en savoir plus sur les types d’adresses de messagerie qui sont acceptés ou refusés par Exchange Online Protection (EOP) et Outlook.com afin d’empêcher le hameçonnage.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e0afd05c80bb4de665d23b17c7089631dad93c78
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 25fbca8fa5d264a212ac25e2035bffde0819383d
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196058"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659653"
 ---
 # <a name="how-eop-validates-the-from-address-to-prevent-phishing"></a>Comment EOP valide l’adresse de pour empêcher le hameçonnage
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Les attaques par hameçonnage représentent une menace constante pour toute organisation de messagerie. En plus des [adresses de messagerie d’expéditeur usurpées (falsifiées)](anti-spoofing-protection.md), les agresseurs utilisent souvent des valeurs de l’adresse de provenance qui enfreignent les normes Internet. Pour éviter ce type de hameçonnage, Exchange Online Protection (EOP) et Outlook.com requièrent désormais que les messages entrants incluent une adresse d’adresse conforme à la RFC, comme décrit dans cette rubrique. Cette mise en œuvre a été activée en novembre 2017.
+Les attaques par hameçonnage représentent une menace constante pour toute organisation de messagerie. En plus des [adresses de messagerie d’expéditeur usurpées (falsifiées)](anti-spoofing-protection.md), les agresseurs utilisent souvent des valeurs de l’adresse de provenance qui enfreignent les normes Internet. Pour éviter ce type de hameçonnage, Exchange Online Protection (EOP) et Outlook.com requièrent désormais que les messages entrants incluent une adresse à partir de la RFC, comme décrit dans cet article. Cette mise en œuvre a été activée en novembre 2017.
 
 **Remarques** :
 
-- Si vous recevez régulièrement du courrier électronique d’organisations qui ont des adresses de provenance incorrectes, comme décrit dans cette rubrique, encouragez ces organisations à mettre à jour leurs serveurs de messagerie afin de se conformer aux normes de sécurité modernes.
+- Si vous recevez régulièrement du courrier électronique d’organisations dont les adresses sont incorrectes, comme décrit dans cet article, encouragez ces organisations à mettre à jour leurs serveurs de messagerie afin de se conformer aux normes de sécurité modernes.
 
 - Le champ expéditeur associé (utilisé par envoyer de la part de et des listes de publipostage) n’est pas affecté par ces exigences. Pour plus d’informations, consultez le billet de blog suivant : qu’est- [ce que nous voulons dire lorsque nous faisons référence à l’expéditeur d’un message électronique ?](https://blogs.msdn.microsoft.com/tzink/2017/06/22/what-do-we-mean-when-we-refer-to-the-sender-of-an-email/).
 
@@ -44,7 +44,7 @@ Un message électronique SMTP standard est constitué d’une *enveloppe de mes
 
 - L' `5321.MailFrom` adresse (également appelée adresse **de messagerie de** l’expéditeur, expéditeur P1 ou expéditeur de l’enveloppe) est l’adresse de messagerie utilisée dans la transmission SMTP du message. Cette adresse de messagerie est généralement enregistrée dans le champ d’en-tête de **retour** de l’en-tête du message (bien que l’expéditeur ait la possibilité de désigner une autre adresse de messagerie de **chemin d’accès** ).
 
-- Le `5322.From` (également appelé l’adresse de l’expéditeur ou l’expéditeur P2) est l’adresse de messagerie dans le champ de l’en-tête **de** , et est l’adresse de messagerie de l’expéditeur affichée dans les clients de messagerie. L’adresse de provenance est l’élément de la configuration requise dans cette rubrique.
+- Le `5322.From` (également appelé l’adresse de l’expéditeur ou l’expéditeur P2) est l’adresse de messagerie dans le champ de l’en-tête **de** , et est l’adresse de messagerie de l’expéditeur affichée dans les clients de messagerie. L’adresse de provenance est l’élément de la configuration requise dans cet article.
 
 L’adresse de l’adresse est définie en détail dans plusieurs RFC (par exemple, les sections de la norme RFC 5322 3.2.3, 3,4 et 3.4.1, et la [norme rfc 3696](https://tools.ietf.org/html/rfc3696)). Il existe de nombreuses variantes de l’adressage et ce qui est considéré comme valide ou non valide. Pour simplifier, nous vous recommandons de suivre le format et les définitions suivants :
 

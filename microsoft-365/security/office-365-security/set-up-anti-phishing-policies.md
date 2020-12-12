@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur les stratégies anti-hameçonnage disponibles dans Exchange Online Protection (EOP) et Microsoft Defender pour Office 365.
-ms.openlocfilehash: 9d3c8c0bf2b1c440892a1099d3d0812d95027156
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 34c66d8ab39af443462e8c5ac99009b4170be21e
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615767"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659855"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Stratégies anti-hameçonnage dans Microsoft 365
 
@@ -84,7 +84,7 @@ Les paramètres de stratégie suivants sont disponibles dans les stratégies de 
     - **Le domaine du destinataire est**
 
   > [!NOTE]
-  > Le paramètre **appliqué à** est requis dans les stratégies anti-hameçonnage personnalisées pour identifier les **destinataires** <u>de messages auxquels la stratégie s’applique</u>. Les stratégies anti-hameçonnage dans Microsoft Defender pour Office 365 ont également des [paramètres d’emprunt d’identité](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) dans lesquels vous pouvez spécifier des adresses de messagerie d’expéditeur ou des domaines d’expéditeur <u>qui recevront une protection contre l’emprunt d’identité</u> , comme décrit plus loin dans cette rubrique.
+  > Le paramètre **appliqué à** est requis dans les stratégies anti-hameçonnage personnalisées pour identifier les **destinataires** <u>de messages auxquels la stratégie s’applique</u>. Les stratégies anti-hameçonnage dans Microsoft Defender pour Office 365 ont également des [paramètres d’emprunt d’identité](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) dans lesquels vous pouvez spécifier des adresses de messagerie d’expéditeur ou des domaines d’expéditeur <u>qui recevront une protection contre l’emprunt d’identité</u> , comme décrit plus loin dans cet article.
 
 ## <a name="spoof-settings"></a>Paramètres d’usurpation
 

@@ -18,21 +18,21 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à configurer le filtrage des connexions dans Exchange Online Protection (EOP) pour autoriser ou bloquer les messages électroniques provenant de serveurs de messagerie.
-ms.openlocfilehash: a2a755516f029f5d72016e9ea8fcb87a997d5065
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: 844b1d8d17a99bbb0c441be511c64a009b8dafcb
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572824"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659812"
 ---
-# <a name="configure-connection-filtering"></a>Configuration du filtrage des connexions
+# <a name="configure-connection-filtering"></a>Configurer le filtrage des connexions
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
 Si vous êtes un client Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou un client Exchange Online Protection (EOP) autonome sans boîtes aux lettres Exchange Online, vous utilisez le filtrage des connexions dans EOP (en particulier la stratégie de filtrage des connexions par défaut) pour identifier les serveurs de messagerie source valides par leurs adresses IP. Les principaux composants de la stratégie de filtrage des connexions par défaut sont les suivants :
 
-- **Liste d’adresses IP autorisées**: ignorez le filtrage du courrier indésirable pour tous les messages entrants provenant des serveurs de messagerie source que vous spécifiez par adresse IP ou plage d’adresses IP. Pour les scénarios dans lesquels le filtrage du courrier indésirable peut toujours se produire sur les messages provenant de ces sources, consultez la section [scénarios dans lesquels les messages provenant de sources dans la liste d’adresses IP autorisées sont toujours filtrés](#scenarios-where-messages-from-sources-in-the-ip-allow-list-are-still-filtered) plus loin dans cette rubrique. Pour plus d’informations sur la façon dont la liste d’adresses IP autorisées doit tenir dans votre stratégie d’expéditeurs approuvés globale, consultez la rubrique [créer des listes d’expéditeurs approuvés dans EOP](create-safe-sender-lists-in-office-365.md).
+- **Liste d’adresses IP autorisées**: ignorez le filtrage du courrier indésirable pour tous les messages entrants provenant des serveurs de messagerie source que vous spécifiez par adresse IP ou plage d’adresses IP. Pour les scénarios dans lesquels le filtrage du courrier indésirable peut toujours se produire sur les messages provenant de ces sources, consultez la section [scénarios dans lesquels les messages provenant de sources dans la liste d’adresses IP autorisées sont toujours filtrés](#scenarios-where-messages-from-sources-in-the-ip-allow-list-are-still-filtered) plus loin dans cet article. Pour plus d’informations sur la façon dont la liste d’adresses IP autorisées doit tenir dans votre stratégie d’expéditeurs approuvés globale, consultez la rubrique [créer des listes d’expéditeurs approuvés dans EOP](create-safe-sender-lists-in-office-365.md).
 
 - **Liste d’adresses IP bloquées**: bloquer tous les messages entrants provenant des serveurs de messagerie source que vous spécifiez par adresse IP ou plage d’adresses IP. Les messages entrants sont rejetés, ne sont pas marqués comme courrier indésirable et aucun filtrage supplémentaire n’est effectué. Pour plus d’informations sur la façon dont la liste d’adresses IP bloquées doit tenir dans votre stratégie d’expéditeurs bloqués global, voir [Create Block sender Lists in EOP](create-block-sender-lists-in-office-365.md).
 
@@ -49,16 +49,16 @@ Cette rubrique décrit comment configurer la stratégie de filtrage des connexio
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Avant de pouvoir effectuer les procédures décrites dans cet article, vous devez disposer d’autorisations dans le centre de sécurité & Compliance Center :
+- Pour pouvoir utiliser ce cmdlet, vous devez disposer des autorisations dans le centre de sécurité et conformité Office 365.
   - Pour modifier la stratégie de filtrage des connexions par défaut, vous devez être membre des groupes de rôles gestion de l' **organisation** ou **administrateur de sécurité** .
   - Pour un accès en lecture seule à la stratégie de filtrage des connexions par défaut, vous devez être membre des groupes de rôles **lecteur global** ou **lecteur de sécurité** .
 
   Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
 
-  **Remarques**:
+  **Remarques** :
 
-  - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le centre d’administration 365 de Microsoft donne aux utilisateurs les autorisations requises dans le centre de sécurité & conformité _et_ des autorisations pour d’autres fonctionnalités de Microsoft 365. Si vous souhaitez en savoir plus, veuillez consulter la page [À propos des rôles d’administrateur](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
-  - Le groupe de rôles gestion de l' **Organisation en affichage seul** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) offre également un accès en lecture seule à la fonctionnalité.
+  - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux utilisateurs les autorisations requises dans le centre de sécurité et de conformité _et_ les autorisations pour les autres fonctionnalités de Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Le groupe de rôles **Gestion de l’organisation en affichage seul** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) permet également d’accéder en lecture seule à la fonctionnalité.
 
 - Pour rechercher les adresses IP sources des serveurs de messagerie (expéditeurs) que vous souhaitez autoriser ou bloquer, vous pouvez vérifier le champ d’en-**tête de connexion** IP dans l’en-tête du message. Pour afficher un en-tête de message dans différents clients de messagerie, consultez la rubrique [afficher les en-têtes de message Internet dans Outlook](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c).
 
@@ -68,7 +68,7 @@ Cette rubrique décrit comment configurer la stratégie de filtrage des connexio
 
 ## <a name="use-the-security--compliance-center-to-modify-the-default-connection-filter-policy"></a>Utiliser le centre de sécurité & conformité pour modifier la stratégie de filtrage des connexions par défaut
 
-1. Dans le centre de sécurité & conformité et accédez **Threat management** à \> **Policy** \> **protection contre le courrier indésirable** de la stratégie de gestion des menaces.
+1. Dans le centre de sécurité & conformité et accédez  à \>  \> **protection contre le courrier indésirable** de la stratégie de gestion des menaces.
 
 2. Sur la page **paramètres de blocage du courrier indésirable** , développez **stratégie de filtrage des connexions** en cliquant sur ![ développer, puis ](../../media/scc-expand-icon.png) sur modifier la **stratégie**.
 
@@ -82,7 +82,7 @@ Cette rubrique décrit comment configurer la stratégie de filtrage des connexio
 
      - Plage d’adresses IP : par exemple, 192.168.0.1-192.168.0.254.
 
-     - Adresse IP CIDR : par exemple, 192.168.0.1/25. Les valeurs valides du masque réseau sont de/24 à 32. Pour ignorer le filtrage du courrier indésirable pour les valeurs de masque IP CIDR/1 à/23, consultez la section [ignorer le filtrage du courrier indésirable pour une adresse IP CIDR en dehors de la plage disponible](#skip-spam-filtering-for-a-cidr-ip-outside-of-the-available-range) plus loin dans cette rubrique.
+     - Adresse IP CIDR : par exemple, 192.168.0.1/25. Les valeurs valides du masque réseau sont de/24 à 32. Pour ignorer le filtrage du courrier indésirable pour les valeurs de masque IP CIDR/1 à/23, consultez la section [ignorer le filtrage du courrier indésirable pour une adresse IP CIDR en dehors de la plage disponible](#skip-spam-filtering-for-a-cidr-ip-outside-of-the-available-range) plus loin dans cet article.
 
      Pour ajouter l’adresse IP ou la plage d’adresses, cliquez sur **Ajouter** une ![ icône Ajouter ](../../media/ITPro-EAC-AddIcon.png) . Pour supprimer une entrée, sélectionnez-la dans **adresse IP autorisée** , puis cliquez sur **supprimer** ![ ](../../media/scc-remove-icon.png) . Lorsque vous avez terminé, cliquez sur **Enregistrer**.
 
@@ -96,7 +96,7 @@ Cette rubrique décrit comment configurer la stratégie de filtrage des connexio
 
 ## <a name="use-the-security--compliance-center-to-view-the-default-connection-filter-policy"></a>Utiliser le centre de sécurité & conformité pour afficher la stratégie de filtrage des connexions par défaut
 
-1. Dans le centre de sécurité & conformité et accédez **Threat management** à \> **Policy** \> **protection contre le courrier indésirable** de la stratégie de gestion des menaces.
+1. Dans le centre de sécurité & conformité et accédez  à \>  \> **protection contre le courrier indésirable** de la stratégie de gestion des menaces.
 
 2. Dans la page **paramètres du blocage du courrier indésirable** , cliquez sur le menu déroulant en regard de la stratégie par défaut nommée **stratégie de filtrage des connexions**.
 
@@ -110,7 +110,7 @@ Utilisez la syntaxe suivante :
 Set-HostedConnectionFilterPolicy -Identity Default [-AdminDisplayName <"Optional Comment">] [-EnableSafeList <$true | $false>] [-IPAllowList <IPAddressOrRange1,IPAddressOrRange2...>] [-IPBlockList <IPAddressOrRange1,IPAddressOrRange2...>]
 ```
 
-**Remarques**:
+**Remarques** :
 
 - Les valeurs d’adresse IP ou de plage d’adresses valides sont les suivantes :
 
@@ -144,7 +144,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 Pour vérifier que vous avez bien modifié la stratégie de filtrage des connexions par défaut, effectuez l’une des opérations suivantes :
 
-- Dans le centre de sécurité & conformité, accédez **Threat management** à \> **Policy** \> **protection contre le courrier indésirable** de la stratégie de gestion des menaces \> cliquez sur le menu déroulant en regard de **stratégie de filtrage des connexions (Always on**) et vérifiez les paramètres.
+- Dans le centre de sécurité & conformité, accédez  à \>  \> **protection contre le courrier indésirable** de la stratégie de gestion des menaces \> cliquez sur le menu déroulant en regard de **stratégie de filtrage des connexions (Always on**) et vérifiez les paramètres.
 
 - Dans Exchange Online PowerShell ou dans le PowerShell autonome EOP, exécutez la commande suivante et vérifiez les paramètres :
 
@@ -160,7 +160,7 @@ Les sections suivantes identifient les éléments supplémentaires que vous deve
 
 ### <a name="skip-spam-filtering-for-a-cidr-ip-outside-of-the-available-range"></a>Ignorer le filtrage du courrier indésirable pour une adresse IP CIDR en dehors de la plage disponible
 
-Comme décrit précédemment dans cette rubrique, vous ne pouvez utiliser qu’une adresse IP CIDR avec le masque réseau/24/32 dans la liste d’adresses IP autorisées. Pour ignorer le filtrage du courrier indésirable sur les messages provenant de serveurs de messagerie source dans la plage/1/23, vous devez utiliser des règles de flux de messagerie Exchange (également appelées règles de transport). Toutefois, nous vous recommandons de ne pas faire cela si cela est possible, car les messages seront bloqués si une adresse IP figurant dans la plage IP/1 à/23 CIDR apparaît sur l’une des listes de blocage propriétaires ou tierces de Microsoft.
+Comme décrit plus haut dans cet article, vous ne pouvez utiliser qu’une adresse IP CIDR avec le masque réseau/24/32 dans la liste d’adresses IP autorisées. Pour ignorer le filtrage du courrier indésirable sur les messages provenant de serveurs de messagerie source dans la plage/1/23, vous devez utiliser des règles de flux de messagerie Exchange (également appelées règles de transport). Toutefois, nous vous recommandons de ne pas faire cela si cela est possible, car les messages seront bloqués si une adresse IP figurant dans la plage IP/1 à/23 CIDR apparaît sur l’une des listes de blocage propriétaires ou tierces de Microsoft.
 
 Maintenant que vous avez pris connaissance des problèmes potentiels, vous pouvez créer une règle de flux de messagerie avec les paramètres suivants (au minimum) pour vous assurer que les messages provenant de ces adresses IP ignorent le filtrage du courrier indésirable :
 

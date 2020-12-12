@@ -8,12 +8,12 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 2cca4850227716fe5f7d7d21f3220b46e9761420
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: e858ae1fc564fdcacbe181930ae1489d131965e7
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561182"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659677"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Appareils de bureau gérés Microsoft 
 
@@ -69,9 +69,7 @@ Les liens vers les appareils sont fournis à des fins de référence uniquement.
 | [Surface Book 3](https://www.microsoft.com/p/surface-book-3-for-business/93h0mb2gqd5b?activetab=pivot%3aoverviewtab) | 256 Go/Intel i5/8 Go de RAM | Aucune | 21 mai 2022 | 21 mai 2027 |
 | [Surface Go 2](https://www.microsoft.com/p/surface-go-2-for-business/8wzd6dhzj7kv?activetab=pivot%3aoverviewtab) | 128 Go/Intel Core m3/8 Go de RAM | Aucune | 21 mai 2022 | 21 mai 2027 |
 | [Surface de l’ordinateur portable](https://www.microsoft.com/surface/business/surface-laptop-go) | 128 Go/Intel i5/8 Go de RAM | Aucune | 12 octobre 2022 | 12 octobre 2025 |
-| [Ordinateur portable de surface 2](https://www.microsoft.com/p/surface-laptop-2-for-business/8xlk0g60tlb6/hkq9?cid=msft_web_collection&CustomerIntent=Consumer) | 128 Go/Intel i5/8 Go de RAM | Aucune | 16 octobre 2020 | 16 octobre 2023 |
 | [Portable surface 3](https://www.microsoft.com/surface/business/surface-laptop-3) | 128 Go/Intel i5/8 Go de RAM | Aucune | 22 octobre 2021 | 22 octobre 2024 |
-| [Surface Pro 6](https://www.microsoft.com/p/surface-pro-6-for-business/8xjq3d3lrp0r/grf9?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 Go/Intel i5/8 Go de RAM | Aucune | 16 octobre 2020 | 16 octobre 2023 |
 | [Surface Pro 7](https://www.microsoft.com/surface/business/surface-pro-7) | 128 Go/Intel i5/8 Go de RAM | Aucune | 22 octobre 2021 | 22 octobre 2024 |
 
 En outre, l’appareil doit également répondre aux critères suivants :     

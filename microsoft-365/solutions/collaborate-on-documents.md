@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Dans cet article, vous allez apprendre à collaborer avec des invités sur un document dans SharePoint et OneDrive.
-ms.openlocfilehash: bb97beaacf6a433e4fc5c38a897327d1e359ffb1
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 1b2fe003902b69e4c0c58852af67862ce6f2eb34
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613513"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663510"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>Collaborer avec des invités sur un document
 
@@ -34,15 +34,13 @@ Cette vidéo présente les étapes de configuration décrites dans ce document.<
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE450Vt?autoplay=false]
 
-## <a name="azure-organizational-relationships-settings"></a>Paramètres Azure de relations organisationnelles
+## <a name="azure-external-collaboration-settings"></a>Paramètres de collaboration externe Azure
 
-Le partage dans Microsoft 365 est régi par les [paramètres de relations organisationnelles dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations). Si le partage d’invités est désactivé ou restreint dans Azure AD, ce paramètre remplace tous les paramètres de partage que vous configurez dans Microsoft 365.
+Le partage dans Microsoft 365 est régi au niveau le plus élevé par les [paramètres de collaboration externe B2B dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations). Si le partage d’invités est désactivé ou restreint dans Azure AD, ce paramètre remplace tous les paramètres de partage que vous configurez dans Microsoft 365.
 
-Vérifiez les paramètres de relations organisationnelles pour vous assurer que le partage avec des invités n’est pas bloqué.
+Vérifiez les paramètres de collaboration externe B2B pour vous assurer que le partage avec des invités n’est pas bloqué.
 
 ![Capture d’écran de la page des paramètres de relations organisationnelles d’Azure Active Directory](../media/azure-ad-organizational-relationships-settings.png)
-
-Pour définir les paramètres de relation organisationnelle
 
 Pour définir les paramètres de collaboration externe
 
@@ -109,11 +107,11 @@ Pour définir des autorisations pour les liens qui permettent le partage avec d�
 
 1. Sous le **lien ces liens peuvent donner les autorisations suivantes :** sous-volet, 
     1. Dans la liste déroulante **fichiers** , 
-        1. Sélectionnez **afficher et modifier** si vous souhaitez autoriser les utilisateurs non authentifiés à apporter des modifications aux fichiers.
-        2. Sélectionnez **affichage** si vous ne souhaitez pas que les utilisateurs non authentifiés puissent modifier les fichiers.
+        - Sélectionnez **afficher et modifier** si vous souhaitez autoriser les utilisateurs non authentifiés à apporter des modifications aux fichiers.
+        - Sélectionnez **affichage** si vous ne souhaitez pas que les utilisateurs non authentifiés puissent modifier les fichiers.
     2. Dans la liste déroulante **dossiers** ,
-        1. Sélectionnez **afficher, modifier et charger** si vous voulez autoriser les utilisateurs non authentifiés à apporter des modifications aux dossiers.
-        2. Sélectionnez **affichage** si vous ne souhaitez pas que les utilisateurs non authentifiés puissent modifier les dossiers.
+        - Sélectionnez **afficher, modifier et charger** si vous voulez autoriser les utilisateurs non authentifiés à apporter des modifications aux dossiers.
+        - Sélectionnez **affichage** si vous ne souhaitez pas que les utilisateurs non authentifiés puissent modifier les dossiers.
 
 ## <a name="sharepoint-site-level-sharing-settings"></a>Paramètres de partage au niveau du site SharePoint
 

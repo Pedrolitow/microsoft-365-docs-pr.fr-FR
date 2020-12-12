@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez comment créer des règles de flux de messagerie (règles de transport) pour identifier les messages et définir le seuil de probabilité de courrier indésirable (SCL) des messages dans Exchange Online Protection.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 791e6747e1ffa92d54e7d4f4a6c257c3aad4c0d9
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 447333eb968ba7d91a1673c57b11afdb16b90469
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195854"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659836"
 ---
 # <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages-in-eop"></a>Utiliser des règles de flux de messagerie pour définir le seuil de probabilité de courrier indésirable (SCL) dans les messages dans EOP
 
@@ -35,11 +35,19 @@ Si vous souhaitez marquer des messages spécifiques comme courrier indésirable 
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Pour pouvoir effectuer ces procédures, vous devez disposer d’autorisations dans Exchange Online. Plus précisément, vous devez disposer du rôle **de règles de transport** , qui est affecté aux rôles de gestion de l' **organisation**, de gestion de **la conformité**et de **gestion des enregistrements** par défaut. Pour plus d’informations, voir [Gérer les groupes de rôles dans Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
+- Pour pouvoir effectuer les procédures décrites dans cet article, vous devez disposer d’autorisations dans Exchange Online ou Exchange Online Protection. Plus précisément, vous avez besoin du rôle **règles de transport** , qui est affecté aux groupes de rôles gestion de l' **organisation**, **gestion de la conformité** (administrateurs globaux) et **gestion des enregistrements** par défaut.
 
-- Pour ouvrir le centre d’administration Exchange dans Exchange Online, consultez la rubrique [Exchange Admin Center in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center).
+  Pour plus d’informations, voir les rubriques suivantes :
 
-- Pour plus d’informations sur les règles de flux de messagerie dans Exchange Online, consultez la rubrique [mail Flow Rules (règles de transport) dans Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) .
+  - [Autorisations dans Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)
+  - [Autorisations dans EOP autonome](feature-permissions-in-eop.md)
+  - [Utiliser le centre d’administration Exchange modifier la liste des membres dans les groupes de rôles](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)
+
+- Pour ouvrir le centre d’administration Exchange dans Exchange Online, consultez la rubrique [Exchange Admin Center in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center). Pour ouvrir le centre d’administration Exchange en mode autonome EOP, consultez la rubrique [Exchange Admin Center in standalone EOP](exchange-admin-center-in-exchange-online-protection-eop.md).
+
+- Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
+
+- Pour plus d’informations sur les règles de flux de messagerie dans Exchange Online et Exchange Online Protection, consultez la rubrique [mail Flow Rules (règles de transport) dans Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) .
 
 ## <a name="use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message"></a>Utiliser le centre d’administration Exchange pour créer une règle de flux de messagerie qui définit la valeur SCL d’un message
 
@@ -72,4 +80,4 @@ Si vous souhaitez marquer des messages spécifiques comme courrier indésirable 
 
 ## <a name="how-do-you-know-this-worked"></a>Comment savoir si cela a fonctionné ?
 
-Pour vous assurer que cette procédure fonctionne correctement, envoyez un message électronique à un membre de votre organisation et vérifiez que l'action effectuée sur le message correspond à celle prévue. Par exemple, si vous avez **défini le seuil de probabilité de courrier indésirable (SCL)** sur **Contourner le filtrage du courrier indésirable**, le message doit être envoyé vers la boîte de réception du destinataire spécifié. Toutefois, si vous **Définissez le seuil de probabilité de courrier indésirable (SCL)** sur **9**et que l’action de courrier indésirable à **haut niveau de fiabilité** pour vos stratégies de blocage du courrier indésirable est de déplacer le message vers le dossier courrier indésirable, le message doit être envoyé vers le dossier de courrier indésirable du destinataire spécifié.
+Pour vous assurer que cette procédure fonctionne correctement, envoyez un message électronique à un membre de votre organisation et vérifiez que l'action effectuée sur le message correspond à celle prévue. Par exemple, si vous avez **défini le seuil de probabilité de courrier indésirable (SCL)** sur **Contourner le filtrage du courrier indésirable**, le message doit être envoyé vers la boîte de réception du destinataire spécifié. Toutefois, si vous **Définissez le seuil de probabilité de courrier indésirable (SCL)** sur **9** et que l’action de courrier indésirable à **haut niveau de fiabilité** pour vos stratégies de blocage du courrier indésirable est de déplacer le message vers le dossier courrier indésirable, le message doit être envoyé vers le dossier de courrier indésirable du destinataire spécifié.

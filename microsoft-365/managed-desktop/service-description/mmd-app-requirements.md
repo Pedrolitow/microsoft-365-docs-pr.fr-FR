@@ -1,7 +1,7 @@
 ---
 title: Configuration requise pour les applications de bureau géré Microsoft
 description: ''
-keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
@@ -9,12 +9,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: bd775e201f5fec556941ae0e8e7b025744da0419
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 322a46ce48cce4d080e51f482178462934d5c8f2
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529432"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659713"
 ---
 # <a name="microsoft-managed-desktop-app-requirements"></a>Configuration requise pour les applications de bureau géré Microsoft
 
@@ -22,7 +22,7 @@ ms.locfileid: "46529432"
 
 <!--Application addendum -->
  
-Microsoft Managed Desktop exige que nous administrions les appareils à l’aide d’une approche spécifique pour garantir les performances, la fiabilité et la facilité de service des appareils. Si vous êtes sûr que l’approche adoptée par le bureau géré Microsoft pour les domaines ci-dessous ne fonctionne pas, vous pouvez demander une [exception au plan de service](customizing.md).
+Microsoft Managed Desktop exige que nous administrions les appareils à l’aide d’une approche spécifique pour garantir les performances, la fiabilité et la facilité de service des appareils.
 
 
 |Zone de gestion  |Approche de bureau géré Microsoft  |
@@ -34,13 +34,11 @@ Microsoft Managed Desktop exige que nous administrions les appareils à l’aide
 |Gestion des identités et des accès     | Voir [gestion des identités et des accès](security.md#identity-and-access-management)        |
 |Sécurité réseau     | Voir [sécurité réseau](security.md#network-security)        |
 |Sécurité des informations     |  Voir [sécurité des informations](security.md#information-security)       |
-|Récupération de données     | OneDrive Entreprise        |
-|Productivité de base     | Microsoft 365 Apps for enterprise    |
-|Navigateur     | Microsoft Edge        |
+|Récupération de données     | OneDrive Entreprise        |
+|Productivité de base     | Applications Microsoft 365 for entreprise    |
+|Navigateur     | Microsoft Edge        |
 
 
 
 
-Microsoft Managed Desktop peut surveiller d’autres logiciels s’exécutant sur des appareils gérés. Si elle a un impact négatif sur la sécurité, les performances ou la fiabilité du système, vous devrez peut-être demander une exception au plan de service.
-
-
+Microsoft Managed Desktop peut surveiller d’autres logiciels s’exécutant sur des appareils gérés. Si elle a un impact négatif sur la gestion des appareils, la sécurité des appareils, les performances ou la fiabilité, vous devrez peut-être demander une [exception au plan de service](customizing.md).

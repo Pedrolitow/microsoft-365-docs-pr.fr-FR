@@ -16,12 +16,12 @@ ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
 description: Découvrez l’interface de gestion Web dans Exchange Online Protection (EOP).
-ms.openlocfilehash: 732991befa9084b62c152295d10a2bbf94bc36ec
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: fc76ecd6dafcf9453a0c6de14917c96c950f8370
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202950"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659665"
 ---
 # <a name="exchange-admin-center-in-standalone-eop"></a>Centre d’administration Exchange dans EOP autonome
 
@@ -54,7 +54,7 @@ Les clients EOP autonomes peuvent accéder au centre d’administration Exchange
 
 Cette section décrit les éléments d'interface utilisateur disponibles dans le CAE.
 
-![EOP-AdminCenter](../../media/EOP-AdminCenter.png)
+![Centre d’administration Exchange dans Exchange Online Protection](../../media/EOP-AdminCenter.png)
 
 ### <a name="feature-pane"></a>Volet des fonctionnalités
 
@@ -64,7 +64,7 @@ Il s'agit du premier niveau de navigation pour la plupart des tâches que vous e
 
 - **Autorisations**: ce qui vous permet de gérer les rôles d’administrateur.
 
-- **Gestion**de la conformité : c’est ici que vous trouverez le rapport de groupe de rôles d’administrateur et le rapport du journal d’audit de l’administrateur.
+- **Gestion** de la conformité : c’est ici que vous trouverez le rapport de groupe de rôles d’administrateur et le rapport du journal d’audit de l’administrateur.
 
 - **Protection**: c’est ici que vous pouvez gérer les stratégies de protection contre les programmes malveillants, la stratégie de filtrage des connexions par défaut et DKIM.
 
@@ -107,16 +107,12 @@ Quand vous sélectionnez un objet de l'affichage Liste, les informations relativ
 
 ### <a name="me-tile-and-help"></a>Vignette de l'utilisateur en cours et Aide
 
-La vignette **Moi** vous permet de fermer votre session du Centre d'administration Exchange (CAE) pour ouvrir ensuite une session en tant qu'utilisateur différent. Dans le menu déroulant **Aide**![Icône d'aide](../../media/ITPro-EAC-HelpIcon.gif), vous pouvez effectuer les actions suivantes :
+La vignette **Moi** vous permet de fermer votre session du Centre d'administration Exchange (CAE) pour ouvrir ensuite une session en tant qu'utilisateur différent. Dans le menu déroulant de l’icône aide à **l’aide** ![ ](../../media/ITPro-EAC-HelpIcon.gif) , vous pouvez effectuer les actions suivantes :
 
 - **Aide**: cliquez sur l' ![ icône aide ](../../media/ITPro-EAC-HelpIcon.gif) pour afficher le contenu de l’aide en ligne.
-
 - **Commentaires**: laisser une évaluation.
-
 - **Communauté**: Publiez une question pour trouver des réponses dans les forums de la communauté.
-
 - **Désactiver la bulle d'** aide : la bulle d’aide affiche une aide contextuelle pour les champs lorsque vous créez ou modifiez un objet. Vous pouvez activer ou désactiver la bulle d'aide.
-
 - **Afficher la journalisation des commandes**: une nouvelle fenêtre s’ouvre et affiche les commandes PowerShell équivalentes en fonction des informations que vous avez configurées dans le centre d’administration Exchange.
 
 ## <a name="supported-browsers"></a>Navigateurs pris en charge
