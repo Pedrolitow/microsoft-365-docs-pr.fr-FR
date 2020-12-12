@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur le serveur DNS Windows pour Microsoft.
-ms.openlocfilehash: 471aa0323bd59b09c672431ef39bb33f5c89b555
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 8202ffe10b4a0ff9c94d863d92fc55c47ebb38d3
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645574"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49656842"
 ---
 # <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>Créer des enregistrements DNS pour Microsoft à l’aide du DNS basé sur Windows
 
- **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.md)** si vous ne trouvez pas ce que vous recherchez. 
+ **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez. 
    
 Si vous hébergez vos propres enregistrements DNS à l'aide du DNS Windows, suivez les étapes décrites dans cet article pour configurer vos enregistrements associés au courrier, à Skype Entreprise Online, etc.
   
@@ -39,7 +39,7 @@ Pour commencer, vous devez [Rechercher vos enregistrements DNS dans le DNS Windo
 Problèmes de flux de messagerie ou autres problèmes après avoir ajouté des enregistrements DNS, consultez [la rubrique résolution des problèmes après avoir modifié votre nom de domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="find-your-dns-records-in-windows-based-dns"></a>Rechercher vos enregistrements DNS dans un DNS Windows
-<a name="BKMK_find_your_dns_1"> </a> Accédez à la page qui contient les enregistrements DNS pour votre domaine. Si vous utilisez Windows Server 2008, accédez à démarrer l' **Start**  >  **exécution**. Si vous utilisez Windows Server 2012, appuyez sur la touche Windows et sur **r**. Tapez **dnsmgmnt. msc**, puis cliquez sur **OK**. Dans le Gestionnaire DNS, développez ** \<DNS server name\> \> zones de recherche directes  **. Sélectionnez votre domaine. Vous pouvez à présent créer les enregistrements DNS.
+<a name="BKMK_find_your_dns_1"></a> Accédez à la page qui contient les enregistrements DNS pour votre domaine. Si vous utilisez Windows Server 2008, accédez à démarrer l'   >  **exécution**. Si vous utilisez Windows Server 2012, appuyez sur la touche Windows et sur **r**. Tapez **dnsmgmnt. msc**, puis cliquez sur **OK**. Dans le Gestionnaire DNS, développez **\<DNS server name\> \> zones de recherche directes**. Sélectionnez votre domaine. Vous pouvez à présent créer les enregistrements DNS.
    
 ## <a name="add-mx-record"></a>Ajouter l'enregistrement MX
 <a name="BKMK_add_MX"> </a>
@@ -68,7 +68,7 @@ Ajoutez les enregistrements CNAMe requis pour Microsoft. Si d’autres enregistr
     - Nom de l’hôte : découverte automatique
     - Type : 
     - Cnameadresse : autodiscover.outlook.com
-- Sélectionnez **O**K.
+- Sélectionnez **O** K.
 
 Ajoutez l'enregistrement CNAME SIP. 
 - Sur la page du Gestionnaire DNS du domaine, accédez à l' **action** \> **CNAME (CNAME)**. 
@@ -184,14 +184,14 @@ Ajoutez un enregistrement TXT.
 - Nom de l’hôte : @
 - Type : TXT
 - Adresse : collez la valeur adresse de destination ou de pointage que vous venez de copier à partir de Microsoft ici.  
-- Sélectionnez **OK**  >  **Done**.
+- Sélectionnez **OK**  >  .
 
 Vérifiez votre domaine dans Microsoft.  
 > [!IMPORTANT]
 > Patientez environ 15 minutes avant de le faire, afin que l’enregistrement que vous venez de créer puisse être mis à jour sur Internet.       
 
 - Revenez à Microsoft et suivez les étapes ci-dessous pour demander un contrôle de vérification. La vérification recherche l'enregistrement TXT que vous avez ajouté à l'étape précédente. Lorsqu'elle trouve l'enregistrement TXT correct, le domaine est vérifié.  
-1. Dans le centre d’administration, accédez à la page domaines **d’installation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> .
+1. Dans le centre d’administration, accédez à la page domaines **d’installation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank"></a> .
 2. Dans la page **domaines** , dans la colonne **action** du domaine que vous vérifiez, sélectionnez Démarrer la **configuration**. 
 3. Dans la page **confirmer que vous êtes le propriétaire de votre domaine** , sélectionnez **terminé, vérifier maintenant**, puis, dans la boîte de dialogue de confirmation, sélectionnez **Terminer**. 
    

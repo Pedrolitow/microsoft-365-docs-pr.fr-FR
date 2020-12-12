@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 7712b6af-329c-43a0-af7b-c4e4c1befb0e
 description: 'Découvrez comment configurer Microsoft pour gérer vos enregistrements DNS sur Bluehost. '
-ms.openlocfilehash: c15ba11e0df57deaef61309f5bc6d1b2a60645b8
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 78b138a501054a573c2b36cc486dda833be7ae35
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646462"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658007"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-with-bluehost"></a>Modifier les serveurs de noms pour configurer Microsoft avec Bluehost
 
- **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.md)** si vous ne trouvez pas ce que vous recherchez. 
+ **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez. 
   
 Suivez ces instructions si vous voulez que Microsoft gère vos enregistrements DNS pour vous. (Si vous préférez, vous pouvez [gérer tous vos enregistrements DNS sur Bluehost](create-dns-records-at-bluehost.md).)
   
@@ -129,7 +129,7 @@ Pour terminer la configuration de votre domaine avec Microsoft, vous devez modif
   
 4. Pour ajouter le quatrième enregistrement de serveur de noms, sélectionnez de nouveau **Ajouter une ligne** , puis créez un enregistrement à l’aide des valeurs de la dernière ligne du tableau ci-dessus. 
     
-5. Sélectionnez **enregistrer les paramètres**serveur de noms.
+5. Sélectionnez **enregistrer les paramètres** serveur de noms.
     
     ![Bluehost-BP-Redelegate-1-4](../../media/b24a4cfd-924b-4b6d-ad3d-2dea148fc77f.png)
   
@@ -139,7 +139,7 @@ Pour terminer la configuration de votre domaine avec Microsoft, vous devez modif
 ### <a name="if-there-are-nameservers-already-listed"></a>Si DES serveurs de noms sont déjà répertoriés
 
 > [!CAUTION]
-> Follow these steps only if you have existing nameservers other than the four correct nameservers. (Autrement dit, supprimez uniquement les serveurs de noms en cours qui  *ne sont pas*  nommés **NS1.BDM.microsoftonline.com**, **ns2.BDM.microsoftonline.com**, **NS3.BDM.microsoftonline.com**ou **NS4.BDM.microsoftonline.com**.) 
+> Follow these steps only if you have existing nameservers other than the four correct nameservers. (Autrement dit, supprimez uniquement les serveurs de noms en cours qui  *ne sont pas*  nommés **NS1.BDM.microsoftonline.com**, **ns2.BDM.microsoftonline.com**, **NS3.BDM.microsoftonline.com** ou **NS4.BDM.microsoftonline.com**.) 
   
 1. Si d'autres serveurs de noms sont répertoriés, supprimez-les individuellement en les sélectionnant et en appuyant sur la touche **Suppr** du clavier. 
     
@@ -169,7 +169,7 @@ Pour terminer la configuration de votre domaine avec Microsoft, vous devez modif
   
 5. Pour ajouter le quatrième enregistrement de serveur de noms, sélectionnez de nouveau **Ajouter une ligne** , puis créez un enregistrement à l’aide des valeurs de la dernière ligne du tableau ci-dessus. 
     
-6. Sélectionnez **enregistrer les paramètres**serveur de noms.
+6. Sélectionnez **enregistrer les paramètres** serveur de noms.
     
     ![Bluehost-BP-Redelegate-1-4](../../media/b24a4cfd-924b-4b6d-ad3d-2dea148fc77f.png)
   

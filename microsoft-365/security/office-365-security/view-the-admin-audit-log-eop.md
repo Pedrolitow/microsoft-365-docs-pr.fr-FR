@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 003d7a74-3e16-4453-ae0c-9dbae51f66d1
 description: Les administrateurs peuvent apprendre à afficher et effectuer des recherches dans le journal d’audit de l’administrateur dans Exchange Online Protection (EOP) autonome.
-ms.openlocfilehash: 9fe2c742083cde1ca36f6a04cd357a473a10aeac
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: c65c09efa0f90fc9b63d635dae598b24d93ea714
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196542"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659440"
 ---
 # <a name="view-the-admin-audit-log-in-standalone-eop"></a>Afficher le journal d’audit de l’administrateur dans EOP autonome
 
@@ -32,7 +32,7 @@ Le journal d’audit de l’administrateur enregistre des actions spécifiques, 
 >
 > - La journalisation d’audit de l’administrateur est activée par défaut et vous ne pouvez pas la désactiver.
 >
-> - Le journal d’audit de l’administrateur n’enregistre pas les actions basées sur les cmdlets qui commencent par les verbes **Get**, **Search**ou **test**.
+> - Le journal d’audit de l’administrateur n’enregistre pas les actions basées sur les cmdlets qui commencent par les verbes **Get**, **Search** ou **test**.
 >
 > - Les entrées du journal d'audit sont conservées pendant 90 jours. Lorsqu’une entrée est antérieure à 90 jours, elle est supprimée.
 
@@ -42,16 +42,16 @@ Le journal d’audit de l’administrateur enregistre des actions spécifiques, 
 
 - Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Des autorisations doivent vous être attribuées avant de pouvoir exécuter ces procédures. Plus précisément, vous avez besoin du rôle journaux d’audit ou journaux d’audit en affichage seul, qui sont attribués aux groupes de rôles ComplianceManagement, OrganizationManagement (administrateurs globaux) et SecurityAdministrator par défaut. Pour plus d’informations, consultez la rubrique [autorisations dans EOP autonome](feature-permissions-in-eop.md) et utiliser le centre d’administration Exchange pour [modifier la liste des membres dans les groupes de rôles](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
+- Pour pouvoir effectuer les procédures décrites dans cet article, vous devez disposer d’autorisations dans Exchange Online Protection. Plus précisément, vous avez besoin du rôle journaux **d’audit** ou **journaux d’audit en affichage seul** , qui sont attribués par défaut aux groupes de rôles gestion de l' **organisation**, **gestion de la conformité** et administrateur de la **sécurité** . Pour plus d’informations, consultez la rubrique [autorisations dans EOP autonome](feature-permissions-in-eop.md) et utiliser le centre d’administration Exchange pour [modifier la liste des membres dans les groupes de rôles](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
-- Pour plus d’informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir [raccourcis clavier pour le centre d’administration Exchange dans Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
+- Pour plus d’informations sur les raccourcis clavier applicables aux procédures décrites dans cet article, reportez-vous à [la rubrique raccourcis clavier du centre d’administration Exchange dans Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
 > Vous rencontrez des difficultés ? Demandez de l’aide dans le Forum [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) .
 
 ## <a name="use-the-eac-to-view-the-admin-audit-log"></a>Utiliser le centre d’administration Exchange pour afficher le journal d’audit de l’administrateur
 
-1. Dans le centre d’administration Exchange, accédez à audit de **gestion de la conformité** \> **Auditing**, puis choisissez **exécuter le rapport du journal d’audit de l’administrateur**.
+1. Dans le centre d’administration Exchange, accédez à audit de **gestion de la conformité** \> , puis choisissez **exécuter le rapport du journal d’audit de l’administrateur**.
 
 2. Dans la page **Rechercher les modifications apportées aux groupes de rôles d’administrateur** qui s’ouvre, choisissez une **Date de début** et une date de **fin** (la plage par défaut est les deux dernières semaines), puis choisissez **recherche**. Toutes les modifications de configuration effectuées pendant la période spécifiée sont affichées et peuvent être triées, avec les informations suivantes :
 
@@ -112,7 +112,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 ### <a name="view-details-of-audit-log-entries"></a>Afficher le détail des entrées du journal d’audit
 
-L’applet de commande **Search-AdminAuditLog** renvoie les champs décrits dans la section [contenu du journal d’audit](#audit-log-contents) , plus loin dans cette rubrique. Parmi les champs renvoyés par l’applet de commande, deux champs, **CmdletParameters** et **ModifiedProperties**, contiennent des informations supplémentaires qui ne sont pas renvoyées par défaut.
+L’applet de commande **Search-AdminAuditLog** renvoie les champs décrits dans la section [contenu du journal d’audit](#audit-log-contents) plus loin dans cet article. Parmi les champs renvoyés par l’applet de commande, deux champs, **CmdletParameters** et **ModifiedProperties**, contiennent des informations supplémentaires qui ne sont pas renvoyées par défaut.
 
 Pour afficher le contenu des champs **CmdletParameters** et **ModifiedProperties**, suivez la procédure ci-après.
 

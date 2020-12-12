@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Recherchez et utilisez des rapports pour Microsoft Defender pour Office 365 dans le centre de sécurité & conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2818362eea4071430bb2c784ceb0ce0eeb970a79
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 82c003478538274be1dd1d2e04816de80d1eae6d
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615575"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659452"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-reports-dashboard-in-the-security--compliance-center"></a>Afficher les rapports de Defender pour Office 365 dans le tableau de bord rapports du centre de sécurité & conformité
 
@@ -35,7 +35,7 @@ Microsoft Defender pour les organisations Office 365 (par exemple, les abonnemen
 
 ![Tableau de bord des rapports dans le centre de sécurité & conformité](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
-## <a name="defender-for-office-365-file-types-report"></a>Rapport de types de fichiers Defender 365 pour Office
+## <a name="defender-for-office-365-file-types-report"></a>Rapport sur les types de fichiers de Defender pour Office 365
 
 Le rapport de **rapports sur les types de fichiers Office 365 Defender** indique le type de fichiers détectés comme malveillants par des [pièces jointes fiables](atp-safe-attachments.md).
 
@@ -119,7 +119,7 @@ Si vous cliquez sur **afficher les détails table**, le rapport fournit une vue 
 
 Pour revenir à l’affichage rapports, cliquez sur **afficher le rapport**.
 
-## <a name="defender-for-office-365-message-disposition-report"></a>Rapport de disposition de messages pour Defender pour Office 365
+## <a name="defender-for-office-365-message-disposition-report"></a>Rapport d’actions sur les messages de Defender pour Office 365
 
 Le rapport de **disposition des messages ATP** indique les actions qui ont été effectuées pour les messages électroniques détectés comme présentant du contenu malveillant.
 
@@ -322,7 +322,7 @@ Pour revenir à l’affichage rapports, cliquez sur **afficher le rapport**.
 
 ## <a name="additional-reports-to-view"></a>Rapports supplémentaires à afficher
 
-Outre les rapports décrits dans cette rubrique, plusieurs autres rapports sont disponibles, comme décrit dans le tableau suivant :
+Outre les rapports décrits dans cet article, plusieurs autres rapports sont disponibles, comme décrit dans le tableau suivant :
 
 ****
 
@@ -338,12 +338,12 @@ Outre les rapports décrits dans cette rubrique, plusieurs autres rapports sont 
 
 ## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>Quelles sont les autorisations nécessaires pour afficher les rapports Defender pour Office 365 ?
 
-Pour afficher et utiliser les rapports décrits dans cette rubrique, vous devez être membre de l’un des groupes de rôles suivants dans le centre de sécurité & conformité :
+Pour afficher et utiliser les rapports décrits dans cet article, vous devez être membre de l’un des groupes de rôles suivants dans le centre de sécurité & conformité :
 
 - **Gestion de l'organisation**
 - **Administrateur de la sécurité**
 - **Lecteur de sécurité**
-- **Lecteur général**
+- **Lecteur global**
 
 Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
 

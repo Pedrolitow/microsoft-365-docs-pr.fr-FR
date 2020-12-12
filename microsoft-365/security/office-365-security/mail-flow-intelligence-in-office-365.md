@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Les administrateurs peuvent en savoir plus sur les codes d’erreur associés à la remise des messages à l’aide de connecteurs (également appelés intelligence de flux de messagerie).
-ms.openlocfilehash: 461d9bfa91d88b8bbec52d5aad6ec7a2e534bc96
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: 5339bf2117a87cd940c4b96b3d00b7b8ba78a1da
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877800"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658856"
 ---
 # <a name="mail-flow-intelligence-in-eop"></a>Renseignements sur le flux de courriers dans EOP
 
@@ -27,7 +27,7 @@ ms.locfileid: "48877800"
 
 Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection (EOP) autonomes sans boîtes aux lettres Exchange Online, vous utilisez généralement un connecteur pour acheminer les messages électroniques d’EOP vers votre environnement de messagerie local. Vous pouvez également utiliser un connecteur pour router les messages de Microsoft 365 vers une organisation partenaire. Lorsque Microsoft 365 ne peut pas fournir ces messages via le connecteur, ils sont mis en file d’attente dans Microsoft 365. Microsoft 365 continue de relancer la remise de chaque message pendant 24 heures. Au bout de 24 heures, le message en file d’attente expire et le message est renvoyé à l’expéditeur d’origine dans une notification d’échec de remise (également appelée notification de non-remise).
 
-Microsoft 365 génère une erreur lorsqu’un message ne peut pas être remis à l’aide d’un connecteur. Les erreurs les plus courantes et leurs solutions sont décrites dans cette rubrique. Les erreurs de notification et de mise en file d’attente pour les messages non remis envoyés via des connecteurs sont appelées _intelligence de flux de messagerie_.
+Microsoft 365 génère une erreur lorsqu’un message ne peut pas être remis à l’aide d’un connecteur. Les erreurs les plus courantes et leurs solutions sont décrites dans cet article. Les erreurs de notification et de mise en file d’attente pour les messages non remis envoyés via des connecteurs sont appelées _intelligence de flux de messagerie_.
 
 ## <a name="error-code-450-44312-dns-query-failed"></a>Code d’erreur : 450 4.4.312 Échec de la requête DNS
 
@@ -71,7 +71,7 @@ En règle générale, cette erreur signifie que Microsoft 365 a rencontré une e
 
   - Dans le [Centre d’administration Exchange](https://docs.microsoft.com/Exchange/exchange-admin-center), désactivez ou supprimez le connecteur qui remet le courrier électronique de Microsoft 365 à votre environnement de messagerie local :
 
-    1. Dans le centre d’administration Exchange, accédez à connecteurs de **flux de messagerie** \> **Connectors**.
+    1. Dans le centre d’administration Exchange, accédez à connecteurs de **flux de messagerie** \> .
 
     2. Sélectionnez le connecteur avec la valeur **à partir d'** **Office 365** et la valeur **pour** le **serveur de messagerie de votre organisation** , puis effectuez l’une des opérations suivantes :
 
@@ -81,7 +81,7 @@ En règle générale, cette erreur signifie que Microsoft 365 a rencontré une e
 
   - Modifiez le domaine accepté dans Microsoft 365 qui est associé à votre environnement de messagerie local de **relais interne** à **faisant autorité**. Pour obtenir des instructions, consultez la rubrique [gestion des domaines acceptés dans Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
-  **Remarque** : en règle générale, ces modifications prennent entre 30 minutes et une heure pour prendre effet. Après une heure, vérifiez que vous ne recevez plus l’erreur.
+  **Remarque**: en règle générale, ces modifications prennent entre 30 minutes et une heure pour prendre effet. Après une heure, vérifiez que vous ne recevez plus l’erreur.
 
 - Si votre organisation partenaire (par exemple, un fournisseur de services cloud tiers) est à l’origine de l’erreur, vous devez contacter votre partenaire afin de résoudre le problème.
 

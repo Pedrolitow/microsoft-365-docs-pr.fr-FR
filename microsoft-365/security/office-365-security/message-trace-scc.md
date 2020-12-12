@@ -13,12 +13,12 @@ ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent utiliser le suivi des messages dans le centre de sécurité & conformité afin de déterminer ce qui s’est passé aux messages.
-ms.openlocfilehash: 46aa454ff709e9b17c3b18992757a9a4c3a51247
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 455a1e22ff67ec47e1a6292c962d2a276ec54a64
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616751"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658987"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Suivi des messages dans le Centre de sécurité et de conformité
 
@@ -85,7 +85,7 @@ La valeur par défaut est **2 jours**, mais vous pouvez spécifier des plages de
 
   Pendant 10 jours ou moins, les résultats sont disponibles instantanément sous la forme d’un rapport de **synthèse** . Si vous spécifiez un intervalle de temps qui est encore légèrement supérieur à 10 jours, les résultats seront retardés, car ils ne seront disponibles que sous forme de fichier CSV téléchargeable ( **Résumé amélioré** ou rapports **étendus** ).
 
-  Pour plus d’informations sur les différents types de rapport, reportez-vous à la section [choisir un type de rapport](#choose-report-type) dans cette rubrique.
+  Pour plus d’informations sur les différents types de rapport, reportez-vous à la section [choisir un type de rapport](#choose-report-type) dans cet article.
 
   **Remarque**: le résumé amélioré et les rapports étendus sont préparés à l’aide des données de suivi des messages archivés, et peuvent prendre jusqu’à plusieurs heures avant que le rapport ne soit disponible pour téléchargement. En fonction du nombre d’autres administrateurs ayant également envoyé des demandes de rapports en même temps, vous pouvez également remarquer un délai avant le début du traitement de votre demande en file d’attente.
 
@@ -185,7 +185,7 @@ Les enregistrements de message associés sont des enregistrements qui ont partag
 
 Une fois que vous avez activé la case à cocher d’une ligne, vous pouvez trouver des enregistrements correspondants pour le message en cliquant sur le bouton **Rechercher connexe** qui s’affiche, ou en sélectionnant **plus** ![ ](../../media/1ea52bbf-9d00-48ce-9362-307f7f6fb7fe.png) \> **d’options pour ce message**.
 
-Pour plus d’informations sur l’ID de message, consultez la section ID de message plus haut dans cette rubrique.
+Pour plus d’informations sur l’ID de message, consultez la section ID de message plus haut dans cet article.
 
 #### <a name="message-trace-details"></a>Détails du suivi des messages
 
@@ -225,7 +225,7 @@ Les détails de suivi des messages contiennent les informations supplémentaires
 
 - **Informations supplémentaires**: cette section contient les informations suivantes :
 
-  - **ID du message**: cette valeur est décrite dans la section [ID du message](#message-id) , plus haut dans cette rubrique. Par exemple, `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`.
+  - **ID du message**: cette valeur est décrite dans la section [ID du message](#message-id) plus haut dans cet article. Par exemple, `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`.
 
   - **Taille du message**
 
@@ -253,7 +253,7 @@ Les rapports de synthèse (terminé) disponibles sont disponibles dans la sectio
 
 - **total_bytes**: taille du message en octets, pièces jointes comprises.
 
-- **message_id**: cette valeur est décrite dans la section [ID du message](#message-id) , plus haut dans cette rubrique. Par exemple, `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`.
+- **message_id**: cette valeur est décrite dans la section [ID de message](#message-id) plus haut dans cet article. Par exemple, `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`.
 
 - **network_message_id**: une valeur unique d’ID de message qui persiste sur toutes les copies du message pouvant être créées suite à une bifurcation ou à une expansion du groupe de distribution. Par exemple, la valeur est `1341ac7b13fb42ab4d4408cf7f55890f` .
 

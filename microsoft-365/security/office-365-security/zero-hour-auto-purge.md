@@ -21,12 +21,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent découvrir comment la suppression automatique des heures zéro peut déplacer rétroactivement les messages remis dans une boîte aux lettres Exchange Online vers le dossier de courrier indésirable ou la mise en quarantaine qui se trouve rétroactivement comme courrier indésirable ou hameçonnage.
-ms.openlocfilehash: fd5186bc40d2d80097e6292d86ea113a41e0dd52
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 7b43fb46adacfe1e9f1e7e622122df90e747ff44
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49131143"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659428"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>Purge automatique avec zéro heure (ZAP) dans Exchange Online
 
@@ -97,7 +97,7 @@ Vous devez suivre le processus de création de rapports normal pour les [faux po
 
 ### <a name="what-if-i-use-the-quarantine-folder-instead-of-the-junk-mail-folder"></a>Que se passe-t-il si j’utilise le dossier de quarantaine au lieu du dossier courrier indésirable ?
 
-ZAP effectue une action sur un message en fonction de la configuration de vos stratégies anti-courrier indésirable, comme décrit plus haut dans cette rubrique.
+ZAP effectue une action sur un message en fonction de la configuration de vos stratégies anti-courrier indésirable, comme décrit plus haut dans cet article.
 
 ### <a name="what-if-im-using-safe-senders-mail-flow-rules-or-allowedblocked-sender-lists"></a>Que se passe-t-il si j’utilise des expéditeurs approuvés, des règles de flux de messagerie ou des listes d’expéditeurs autorisés/bloqués ?
 

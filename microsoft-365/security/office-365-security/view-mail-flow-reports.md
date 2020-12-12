@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent en savoir plus sur les rapports de flux de messagerie disponibles dans le tableau de bord des rapports dans le centre de sécurité & conformité.
 ms.custom: ''
-ms.openlocfilehash: 701735374e03f2afb91323ceb4b3fbf30988bdcd
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: 1ededf2d0d693c537c159c52d00deb03f278b4b2
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572800"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659464"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Afficher les rapports de flux de messagerie dans le tableau de bord rapports du centre de sécurité & conformité
 
@@ -32,7 +32,7 @@ ms.locfileid: "49572800"
 
 En plus des rapports de flux de messagerie disponibles dans le [tableau de bord de flux de messagerie](mail-flow-insights-v2.md) dans le centre de sécurité & conformité, un grand nombre de rapports de flux de messagerie supplémentaires sont disponibles dans le tableau de bord rapports pour vous aider à surveiller votre organisation Microsoft 365.
 
-Si vous disposez des [autorisations nécessaires](#what-permissions-are-needed-to-view-these-reports), vous pouvez afficher ces rapports dans le [Centre de sécurité & conformité](https://office.protection.com) en accédant au tableau de **Reports** \> **bord** rapports. Pour accéder directement au tableau de bord rapports, ouvrez <https://protection.office.com/insightdashboard> .
+Si vous disposez des [autorisations nécessaires](#what-permissions-are-needed-to-view-these-reports), vous pouvez afficher ces rapports dans le [Centre de sécurité & conformité](https://office.protection.com) en accédant au tableau de  \> **bord** rapports. Pour accéder directement au tableau de bord rapports, ouvrez <https://protection.office.com/insightdashboard> .
 
 ![Tableau de bord des rapports dans le centre de sécurité & conformité](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
@@ -40,7 +40,7 @@ Si vous disposez des [autorisations nécessaires](#what-permissions-are-needed-t
 
 Le **rapport de connecteur** affiche l’activité de flux de messagerie sur les connecteurs entrants [et sortants](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) configurés pour votre organisation.
 
-Pour afficher le rapport, ouvrez le [Centre de sécurité & conformité](https://protection.office.com), accédez **Reports** au \> **tableau de bord** rapports et sélectionnez rapport de **connecteur**. Pour accéder directement au rapport, ouvrez <https://protection.office.com/reportv2?id=ConnectorReport> .
+Pour afficher le rapport, ouvrez le [Centre de sécurité & conformité](https://protection.office.com), accédez  au \> **tableau de bord** rapports et sélectionnez rapport de **connecteur**. Pour accéder directement au rapport, ouvrez <https://protection.office.com/reportv2?id=ConnectorReport> .
 
 ![Widget rapport de connecteur dans le tableau de bord rapports](../../media/connector-report-widget.png)
 
@@ -94,7 +94,7 @@ Pour revenir à l’affichage de rapport, cliquez sur **afficher le rapport**.
 
 Le rapport des règles de **transport Exchange** affiche l’effet des règles de flux de messagerie (également appelées règles de transport) sur les messages entrants et sortants dans votre organisation.
 
-Pour afficher le rapport, ouvrez le [Centre de sécurité & conformité](https://protection.office.com), accédez **Reports** au \> **tableau de bord** rapports et sélectionnez **règle de transport Exchange**. Pour accéder directement au rapport, ouvrez <https://protection.office.com/reportv2?id=ETRRuleReport> .
+Pour afficher le rapport, ouvrez le [Centre de sécurité & conformité](https://protection.office.com), accédez  au \> **tableau de bord** rapports et sélectionnez **règle de transport Exchange**. Pour accéder directement au rapport, ouvrez <https://protection.office.com/reportv2?id=ETRRuleReport> .
 
 ![Widget règle de transport Exchange dans le tableau de bord rapports](../../media/transport-rule-report-widget.png)
 
@@ -210,7 +210,7 @@ Pour revenir à l’affichage rapports, cliquez sur **afficher le rapport**.
 ## <a name="mailflow-status-report"></a>Rapport d’état de flux de flux
 
 Le **rapport d’état de flux** de messagerie est similaire au [rapport de courrier électronique envoyé et reçu](#sent-and-received-email-report), avec des informations supplémentaires sur le courrier électronique autorisé ou bloqué sur le serveur Edge. Il s’agit du seul rapport qui contient les informations de protection du serveur Edge et indique le nombre de messages bloqués avant d’être autorisés dans le service pour l’évaluation par Exchange Online Protection (EOP). Il est important de comprendre que si un message est envoyé à cinq destinataires, nous le dénombrez cinq messages différents et pas un message.
-Pour afficher le rapport, ouvrez le [Centre de sécurité & conformité](https://protection.office.com), accédez **Reports** au \> **tableau de bord** rapports et sélectionnez rapport d’État du **flux de flux**. Pour accéder directement au **rapport d’État du flux de messagerie**, ouvrez <https://protection.office.com/mailflowStatusReport> .
+Pour afficher le rapport, ouvrez le [Centre de sécurité & conformité](https://protection.office.com), accédez  au \> **tableau de bord** rapports et sélectionnez rapport d’État du **flux de flux**. Pour accéder directement au **rapport d’État du flux de messagerie**, ouvrez <https://protection.office.com/mailflowStatusReport> .
 
 ![Widget rapport d’état de flux de notification dans le tableau de bord rapports](../../media/mail-flow-status-report-widget.png)
 
@@ -309,7 +309,7 @@ Ce graphique indique le nombre de messages organisés par :
 - **Courrier électronique après hameçonnage, réputation de l’URL, emprunt d’identité de marque, anti-usurpation**
 - **Courrier électronique après blocage du courrier indésirable et filtrage du courrier en nombre**
 - **Courrier électronique après l’emprunt d’identité d’utilisateur et de domaine**<sup>1</sup>
-- **Courrier électronique après la détonation 1 du fichier et de l’URL**<sup>1</sup>
+- **Courrier électronique après la détonation 1 du fichier et de l’URL**<sup></sup>
 - **Courrier électronique détecté comme étant Bénin après une protection post-remise (URL-clic sur la protection du temps de clic)**
 
 <sup>1</sup> Defender pour Office 365 uniquement
@@ -420,7 +420,7 @@ Le rapport de **courrier électronique envoyé et reçu** est un rapport intelli
 
 L’affichage Aggregate et l’affichage détaillé du rapport autorisent 90 jours de filtrage.
 
-Pour afficher le rapport, ouvrez le [Centre de sécurité & conformité](https://protection.office.com), accédez **Reports** au \> **tableau de bord** rapports et sélectionnez **Envoyer et recevoir un message**. Pour accéder directement au rapport, ouvrez <https://protection.office.com/reportv2?id=SentAndReceivedMailATP> .
+Pour afficher le rapport, ouvrez le [Centre de sécurité & conformité](https://protection.office.com), accédez  au \> **tableau de bord** rapports et sélectionnez **Envoyer et recevoir un message**. Pour accéder directement au rapport, ouvrez <https://protection.office.com/reportv2?id=SentAndReceivedMailATP> .
 
 ![Widget courrier électronique envoyé et reçu dans le tableau de bord rapports](../../media/sent-and-received-email-report-widget.png)
 
@@ -478,7 +478,7 @@ Pour revenir à l’affichage de rapport, cliquez sur **afficher le rapport**.
 
 Le rapport des **expéditeurs et des destinataires principaux** est un graphique en secteurs illustrant les principaux expéditeurs et destinataires de votre courrier électronique.
 
-Pour afficher le rapport, ouvrez le [Centre de sécurité & conformité](https://protection.office.com), accédez à **rapports** \> **Dashboard** et sélectionnez **principaux expéditeurs et destinataires**. Pour accéder directement au rapport, ouvrez <https://protection.office.com/reportv2?id=TopSenderRecipientsATP> .
+Pour afficher le rapport, ouvrez le [Centre de sécurité & conformité](https://protection.office.com), accédez à **rapports** \>  et sélectionnez **principaux expéditeurs et destinataires**. Pour accéder directement au rapport, ouvrez <https://protection.office.com/reportv2?id=TopSenderRecipientsATP> .
 
 ![Widget principaux expéditeurs et destinataires dans le tableau de bord rapports](../../media/top-senders-and-recipients-widget.png)
 
@@ -535,18 +535,18 @@ Pour revenir à l’affichage de rapport, cliquez sur **afficher le rapport**.
 
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>Quelles sont les autorisations nécessaires pour afficher ces rapports ?
 
-Pour afficher et utiliser les rapports décrits dans cette rubrique, vous devez être membre de l’un des groupes de rôles suivants dans le centre de sécurité & conformité :
+Pour afficher et utiliser les rapports décrits dans cet article, vous devez être membre de l’un des groupes de rôles suivants dans le centre de sécurité & conformité :
 
 - **Gestion de l'organisation**
 - **Administrateur de la sécurité**
 - **Lecteur de sécurité**
-- **Lecteur général**
+- **Lecteur global**
 
 Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
 
-**Remarque**: l’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le centre d’administration 365 de Microsoft donne aux utilisateurs les autorisations requises dans le centre de sécurité & conformité _et_ des autorisations pour d’autres fonctionnalités de Microsoft 365. Si vous souhaitez en savoir plus, veuillez consulter la page [À propos des rôles d’administrateur](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+**Remarque**: l’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le centre d’administration 365 de Microsoft donne aux utilisateurs les autorisations requises dans le centre de sécurité & conformité _et_ des autorisations pour d’autres fonctionnalités de Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Rapports intelligents et aperçus dans le Centre de sécurité et conformité](reports-and-insights-in-security-and-compliance.md)
 

@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Découvrez les étapes de configuration de Microsoft 365 nécessaires pour configurer une équipe de collaboration pour les tâches, les conversations et la documentation avec des invités dans Teams.
-ms.openlocfilehash: 7f00acb7b7b58169d6a66bfa4cabdc5a3035f67f
-ms.sourcegitcommit: 8a726ed7ec19a8728c079780fa4d343a5f759fbb
+ms.openlocfilehash: cc962e22bde70220e07f805b0a7a83c111886369
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49030028"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659605"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Collaborer avec des invités au sein d’une équipe
 
@@ -36,15 +36,15 @@ Cette vidéo présente les étapes de configuration décrites dans ce document.<
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE44NTr?autoplay=false]
 
-## <a name="azure-organizational-relationships-settings"></a>Paramètres Azure de relations organisationnelles
+## <a name="azure-external-collaboration-settings"></a>Paramètres de collaboration externe Azure
 
-Le partage dans Microsoft 365 est régi par les [paramètres de relations organisationnelles dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations). Si le partage d’invités est désactivé ou restreint dans Azure AD, ce paramètre remplace tous les paramètres de partage que vous configurez dans Microsoft 365.
+Le partage dans Microsoft 365 est régi au niveau le plus élevé par les [paramètres de collaboration externe B2B dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations). Si le partage d’invités est désactivé ou restreint dans Azure AD, ce paramètre remplace tous les paramètres de partage que vous configurez dans Microsoft 365.
 
-Vérifiez les paramètres de relations organisationnelles pour vous assurer que le partage avec des invités n’est pas bloqué.
+Vérifiez les paramètres des paramètres de collaboration externe B2B pour vous assurer que le partage avec des invités n’est pas bloqué.
 
 ![Capture d’écran de la page des paramètres de relations organisationnelles d’Azure Active Directory](../media/azure-ad-organizational-relationships-settings.png)
 
-Pour définir les paramètres de relation organisationnelle
+Pour définir les paramètres de collaboration externe
 
 1. Connectez-vous à Azure Active Directory à l’adresse [https://aad.portal.azure.com](https://aad.portal.azure.com) .
 2. Dans le volet de navigation de gauche, cliquez sur **Azure Active Directory**.
@@ -55,7 +55,7 @@ Pour définir les paramètres de relation organisationnelle
 
 Notez les paramètres dans la section **restrictions de collaboration** . Assurez-vous que les domaines des invités avec lesquels vous souhaitez collaborer ne sont pas bloqués.
 
-Si vous travaillez avec des invités de plusieurs organisations, vous souhaiterez peut-être limiter leur capacité à accéder aux données d’annuaire. Cela les empêchera de voir qui d’autre est un invité dans l’annuaire. Pour ce faire, sous **restrictions d’accès des utilisateurs invités** , sélectionnez **les utilisateurs invités ont un accès limité aux propriétés et l’appartenance aux paramètres d’objets d’annuaire** ou **l’accès des utilisateurs invités est limité aux propriétés et aux appartenances de leurs propres objets d’annuaire**.
+Si vous travaillez avec des invités de plusieurs organisations, vous souhaiterez peut-être limiter leur capacité à accéder aux données d’annuaire. Cela les empêchera de voir qui d’autre est un invité dans l’annuaire. Pour ce faire, sous **restrictions d’accès des utilisateurs invités**, sélectionnez **les utilisateurs invités ont un accès limité aux propriétés et l’appartenance aux paramètres d’objets d’annuaire** ou **l’accès des utilisateurs invités est limité aux propriétés et aux appartenances de leurs propres objets d’annuaire**.
 
 ## <a name="teams-guest-access-settings"></a>Paramètres d’accès invité de teams
 
@@ -69,10 +69,12 @@ Pour déterminer les paramètres d’accès invité Teams, procédez comme suit�
 
 1. Connectez-vous au Centre d’administration Microsoft 365 sur[https://admin.microsoft.com](https://admin.microsoft.com).
 2. Dans le volet de navigation de gauche, cliquez sur **Afficher tout**.
-3. Sous **Centres d’administration** , cliquez sur **Teams**.
+3. Sous **Centres d’administration**, cliquez sur **Teams**.
 4. Dans le centre d’administration Teams, dans le volet de navigation de gauche, développez Paramètres à l’échelle de l' **organisation** , puis cliquez sur **accès invité**.
 5. Assurez-vous que **Autoriser l’accès invité dans Teams** est défini sur **Activé**.
 6. Apportez les modifications souhaitées aux autres paramètres invités, puis cliquez sur **Enregistrer**.
+
+Une fois que l’accès invité de teams est activé, vous pouvez contrôler l’accès invité à des équipes individuelles et à leurs sites SharePoint associés à l’aide d’étiquettes de confidentialité. Pour plus d’informations, consultez la rubrique [utiliser des étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les groupes microsoft 365 et les sites SharePoint](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
 
 > [!NOTE]
 > La mise à niveau des paramètres invités de teams peut prendre jusqu’à vingt-quatre heures après son activation.
@@ -105,7 +107,7 @@ Si vous souhaitez autoriser le partage de fichiers et de dossiers avec des perso
 
 Pour définir les paramètres de partage au niveau de l’organisation SharePoint
 
-1. Dans le centre d’administration 365 de Microsoft, dans le volet de navigation de gauche, sous **centres d’administration** , cliquez sur **SharePoint**.
+1. Dans le centre d’administration 365 de Microsoft, dans le volet de navigation de gauche, sous **centres d’administration**, cliquez sur **SharePoint**.
 2. Dans le centre d’administration SharePoint, dans le volet de navigation de gauche, développez **stratégies** , puis cliquez sur **partage**.
 3. Assurez-vous que le partage externe pour SharePoint est défini sur **tout le monde** ou sur **des invités nouveaux et existants**.
 4. Si vous avez effectué des modifications, cliquez sur **Enregistrer**.
@@ -129,7 +131,7 @@ Choisissez l’un des types de liaison suivants, qui sera sélectionné par déf
 Pour définir les paramètres de lien par défaut au niveau de l’organisation SharePoint
 
 1. Accédez à la page de partage dans le centre d’administration SharePoint.
-2. Sous **liens de fichiers et de dossiers** , sélectionnez le lien de partage par défaut à utiliser.
+2. Sous **liens de fichiers et de dossiers**, sélectionnez le lien de partage par défaut à utiliser.
 3. Si vous avez effectué des modifications, cliquez sur **Enregistrer**.
 
 ## <a name="create-a-team"></a>Créer une équipe
@@ -148,10 +150,9 @@ Nous allons inviter les utilisateurs ultérieurement. Ensuite, il est important 
 
 ## <a name="sharepoint-site-level-sharing-settings"></a>Paramètres de partage au niveau du site SharePoint
 
-Vérifiez les paramètres de partage au niveau du site pour vous assurer qu’ils autorisent le type d’accès que vous souhaitez pour cette équipe. Par exemple, si vous définissez les paramètres au niveau de l’organisation sur tous les **utilisateurs** , mais que vous souhaitez que tous les invités s’authentifient pour cette équipe, assurez-vous que les paramètres de partage au niveau du site sont définis sur **nouveaux et invités existants**.
+Vérifiez les paramètres de partage au niveau du site pour vous assurer qu’ils autorisent le type d’accès que vous souhaitez pour cette équipe. Par exemple, si vous définissez les paramètres au niveau de l’organisation sur tous les **utilisateurs**, mais que vous souhaitez que tous les invités s’authentifient pour cette équipe, assurez-vous que les paramètres de partage au niveau du site sont définis sur **nouveaux et invités existants**.
 
 ![Capture d’écran des paramètres de partage externe de site SharePoint](../media/sharepoint-site-external-sharing-settings.png)
-
 
 Pour définir les paramètres de partage au niveau du site
 1. Dans le centre d’administration SharePoint, dans le volet de navigation de gauche, développez **sites** , puis cliquez sur **sites actifs**.
@@ -167,14 +168,14 @@ Les paramètres de partage des invités sont désormais configurés, de sorte qu
 Pour inviter des utilisateurs internes à une équipe
 1. Dans l’équipe, cliquez sur **plus d’options** ( **\*\*\*** ), puis sur **Ajouter un membre**.
 2. Tapez le nom de la personne que vous souhaitez inviter.
-3. Cliquez sur **Ajouter** , puis sur **Fermer**.
+3. Cliquez sur **Ajouter**, puis sur **Fermer**.
 
 Pour inviter des invités à une équipe
 1. Dans l’équipe, cliquez sur **plus d’options** ( **\*\*\*** ), puis sur **Ajouter un membre**.
 2. Tapez l’adresse de messagerie de l’invité que vous souhaitez inviter.
 3. Cliquez sur **modifier les informations invité**.
 4. Tapez le nom complet de l’invité et cliquez sur la coche.
-5. Cliquez sur **Ajouter** , puis sur **Fermer**.
+5. Cliquez sur **Ajouter**, puis sur **Fermer**.
 
 ## <a name="see-also"></a>Voir aussi
 

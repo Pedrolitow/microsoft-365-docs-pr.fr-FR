@@ -22,16 +22,16 @@ search.appverid:
 - MOE150
 ms.assetid: ec6f4bd8-5996-4505-ba68-afaf8a141fb9
 description: Découvrez comment travailler avec les bureaux d’accès de Domain Connect activés et ajouter votre domaine à Microsoft 365.
-ms.openlocfilehash: e907317ec5b606c2fe73232a73c9abdfce26feea
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 109255d82100e636e3472242866a519ff64a9e54
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645346"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49655611"
 ---
 # <a name="using-domain-connect"></a>Utilisation de la connexion au domaine
 
- **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.md)** si vous ne trouvez pas ce que vous recherchez.
+ **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez.
   
 Les bureaux d’accès activés pour la [connexion au domaine](https://www.domainconnect.org/) vous permettent d’ajouter votre domaine à Microsoft 365 dans un processus en trois étapes qui prend quelques minutes. 
   

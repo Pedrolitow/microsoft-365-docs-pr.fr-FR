@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: d8ff45a2-19e3-413d-aa64-a9982bd6633c
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur Freenom pour Microsoft.
-ms.openlocfilehash: 2fc2407193d41d6e0526aacad0b2b558f1b21bdb
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: b958a69d1dad9a0b56cf954d12cd42e40d6d4fea
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646186"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657874"
 ---
 # <a name="create-dns-records-at-freenom-for-microsoft"></a>Créer des enregistrements DNS sur Freenom pour Microsoft
 
-[Consultez le Forum aux questions sur les domaines ](../setup/domains-faq.md) si vous ne trouvez pas ce que vous recherchez. 
+[Consultez le Forum aux questions sur les domaines ](../setup/domains-faq.yml) si vous ne trouvez pas ce que vous recherchez. 
   
 > [!CAUTION]
 > Le site Web Freenom ne prend pas en charge les enregistrements SRV, ce qui signifie que plusieurs fonctionnalités de Skype entreprise Online et d’Outlook Web App ne fonctionneront pas. Quelle que soit la planification Microsoft que vous utilisez, il existe des limitations de service importantes, et vous pouvez choisir d’utiliser un autre fournisseur d’hébergement DNS. 

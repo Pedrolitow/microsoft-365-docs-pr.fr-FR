@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: Les administrateurs peuvent apprendre à utiliser le widget files d’attente dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité pour surveiller les flux de messages infructueux vers leurs organisations locales ou partenaires sur des connecteurs sortants.
-ms.openlocfilehash: c582a7f459d89fa1515713c4f55dea14b619a6ec
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: a1563c61620ef9f1ae97739681f426fd0ea38bd8
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616391"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659248"
 ---
 # <a name="queues-insight-in-the-security--compliance-center"></a>Files d’attente Insight dans le centre de conformité & Security
 
@@ -32,7 +32,7 @@ Microsoft 365 continuera à nouvelle tentative de remise pendant 24 heures. Au b
 
 Si le volume de messagerie en file d’attente dépasse le seuil prédéfini (la valeur par défaut est 200 messages), les informations sont disponibles aux emplacements suivants :
 
-- La vue **files d’attente** du [tableau de bord de flux de messagerie](mail-flow-insights-v2.md) dans le centre de [sécurité & conformité](https://protection.office.com). Pour plus d’informations, reportez-vous à la section [files d’attente du tableau de bord du flux de messagerie](#queues-insight-in-the-mail-flow-dashboard) de cette rubrique.
+- La vue **files d’attente** du [tableau de bord de flux de messagerie](mail-flow-insights-v2.md) dans le centre de [sécurité & conformité](https://protection.office.com). Pour plus d’informations, reportez-vous à la section [files d’attente du tableau de bord du flux de messagerie](#queues-insight-in-the-mail-flow-dashboard) de cet article.
 
 - Une alerte est affichée dans les **alertes récentes** le tableau de bord des alertes dans le [Centre de sécurité & conformité](https://protection.office.com) (tableau de bord des **alertes** \>  ou <https://protection.office.com/alertsdashboard> ).
 

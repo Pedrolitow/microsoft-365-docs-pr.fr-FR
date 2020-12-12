@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: Les administrateurs peuvent apprendre à attribuer ou supprimer des autorisations dans le centre d’administration Exchange dans Exchange Online Protection.
-ms.openlocfilehash: fb1e0979b77c38d852f35817e01135af888eac68
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 4a1353963e5e3eadc1a07f8b4aa3a765b06c86ec
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201900"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659296"
 ---
 # <a name="manage-role-groups-in-standalone-eop"></a>Gérer les groupes de rôles dans une application EOP autonome
 
@@ -34,9 +34,9 @@ Pour plus d’informations sur les rôles et les groupes de rôles, voir [Permis
 
 - Pour ouvrir la version PowerShell d’EOP autonome, consultez la rubrique [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Des autorisations doivent vous être attribuées avant de pouvoir exécuter ces procédures. Plus précisément, vous avez besoin du rôle de gestion des rôles, qui est affecté par défaut au groupe de rôles OrganizationManagement (administrateurs globaux). Pour plus d’informations, consultez la rubrique [autorisations dans EOP autonome](feature-permissions-in-eop.md) et utiliser le centre d’administration Exchange pour [modifier la liste des membres dans les groupes de rôles](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
+- Pour pouvoir effectuer les procédures décrites dans cet article, vous devez disposer d’autorisations dans Exchange Online Protection. Plus précisément, vous avez besoin du rôle de **gestion des rôles** , qui est affecté par défaut au groupe de rôles gestion de l' **organisation** . Pour plus d’informations, consultez la rubrique [autorisations dans EOP autonome](feature-permissions-in-eop.md) et utiliser le centre d’administration Exchange pour [modifier la liste des membres dans les groupes de rôles](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
-- Pour plus d’informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir [raccourcis clavier pour le centre d’administration Exchange dans Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
+- Pour plus d’informations sur les raccourcis clavier applicables aux procédures décrites dans cet article, reportez-vous à [la rubrique raccourcis clavier du centre d’administration Exchange dans Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
 > Vous rencontrez des difficultés ? Demandez de l’aide dans le Forum [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) .
@@ -45,15 +45,15 @@ Pour plus d’informations sur les rôles et les groupes de rôles, voir [Permis
 
 ### <a name="use-the-eac-to-view-role-groups"></a>Utiliser le centre d’administration Exchange pour afficher les groupes de rôles
 
-1. Dans le centre d’administration Exchange, accédez à rôles d’administrateur des **autorisations** \> **Admin roles**. Tous les groupes de rôles de votre organisation sont répertoriés ici.
+1. Dans le centre d’administration Exchange, accédez à rôles d’administrateur des **autorisations** \> . Tous les groupes de rôles de votre organisation sont répertoriés ici.
 
-2. Sélectionnez un groupe de rôles. Le volet d’informations affiche le **nom**, la **Description**, les **rôles attribués**et **gérés par** le groupe de rôles. Vous pouvez également afficher ces informations en cliquant sur **modifier** l' ![ icône modifier ](../../media/ITPro-EAC-EditIcon.png) .
+2. Sélectionnez un groupe de rôles. Le volet d’informations affiche le **nom**, la **Description**, les **rôles attribués** et **gérés par** le groupe de rôles. Vous pouvez également afficher ces informations en cliquant sur **modifier** l' ![ icône modifier ](../../media/ITPro-EAC-EditIcon.png) .
 
 ### <a name="use-the-eac-to-create-role-groups"></a>Utiliser le centre d’administration Exchange pour créer des groupes de rôles
 
 Lorsque vous créez un nouveau groupe de rôles, vous pouvez configurer tous les paramètres vous-même (lors de la création du groupe ou après). Sinon, vous pouvez copier un groupe de rôles existant et le modifier.
 
-1. Dans le centre d’administration Exchange, accédez à rôles d’administrateur des **autorisations** \> **Admin roles**, puis effectuez l’une des opérations suivantes :
+1. Dans le centre d’administration Exchange, accédez à rôles d’administrateur des **autorisations** \> , puis effectuez l’une des opérations suivantes :
 
    - **Créez manuellement un nouveau groupe de rôles**: cliquez sur **Ajouter** une ![ icône Ajouter ](../../media/ITPro-EAC-AddIcon.png) .
 
@@ -65,15 +65,15 @@ Lorsque vous créez un nouveau groupe de rôles, vous pouvez configurer tous les
 
     - **Description**: entrez une description facultative pour le groupe de rôles.
 
-    - **Rôles**: cliquez sur **Ajouter** une ![ icône Ajouter ](../../media/ITPro-EAC-AddIcon.png) ou **supprimer** ![ITPro-EAC-RemoveIcon.gif](../../media/ITPro-EAC-RemoveIcon.gif) pour sélectionner ou modifier les rôles affectés au groupe de rôles.
+    - **Rôles**: cliquez sur **Ajouter** une ![ icône Ajouter ](../../media/ITPro-EAC-AddIcon.png) ou **supprimer** une ![ icône ](../../media/ITPro-EAC-RemoveIcon.gif) pour sélectionner ou modifier les rôles affectés au groupe de rôles.
 
-    - **Membres**: cliquez sur **Ajouter** une ![ icône Ajouter ](../../media/ITPro-EAC-AddIcon.png) ou **supprimer** ![ITPro-EAC-RemoveIcon.gif](../../media/ITPro-EAC-RemoveIcon.gif) pour modifier l’appartenance au groupe de rôles.
+    - **Membres**: cliquez sur **Ajouter** une ![ icône Ajouter ](../../media/ITPro-EAC-AddIcon.png) ou **supprimer** ![ l’icône Supprimer ](../../media/ITPro-EAC-RemoveIcon.gif) pour modifier l’appartenance au groupe de rôles.
 
 3. Lorsque vous avez terminé, cliquez sur **Enregistrer** pour créer le groupe de rôles.
 
 ### <a name="use-the-eac-to-modify-role-groups"></a>Utiliser le centre d’administration Exchange pour modifier des groupes de rôles
 
-Dans le centre d’administration Exchange, accédez à rôles d’administrateur des **autorisations** \> **Admin roles**, sélectionnez le groupe de rôles que vous souhaitez modifier, puis cliquez sur **modifier** l' ![ icône d’édition ](../../media/ITPro-EAC-EditIcon.png) .
+Dans le centre d’administration Exchange, accédez à rôles d’administrateur des **autorisations** \> , sélectionnez le groupe de rôles que vous souhaitez modifier, puis cliquez sur **modifier** l' ![ icône d’édition ](../../media/ITPro-EAC-EditIcon.png) .
 
 Les mêmes options sont disponibles lorsque vous modifiez des groupes de rôles, comme lorsque vous créez des groupes de rôles. Vous pouvez :
 
@@ -87,7 +87,7 @@ Les mêmes options sont disponibles lorsque vous modifiez des groupes de rôles,
 
 #### <a name="use-the-eac-modify-the-list-of-members-in-role-groups"></a>Utiliser le centre d’administration Exchange modifier la liste des membres dans les groupes de rôles
 
-1. Dans le centre d’administration Exchange, accédez à rôles d’administrateur des **autorisations** \> **Admin roles**, sélectionnez le groupe de rôles que vous souhaitez modifier, puis cliquez sur **modifier** l' ![ icône d’édition ](../../media/ITPro-EAC-EditIcon.png) .
+1. Dans le centre d’administration Exchange, accédez à rôles d’administrateur des **autorisations** \> , sélectionnez le groupe de rôles que vous souhaitez modifier, puis cliquez sur **modifier** l' ![ icône d’édition ](../../media/ITPro-EAC-EditIcon.png) .
 
 2. Dans la page des propriétés du groupe de rôles qui s’ouvre, dans la section **membres** , effectuez l’une des opérations suivantes :
 
@@ -104,7 +104,7 @@ Les mêmes options sont disponibles lorsque vous modifiez des groupes de rôles,
 
 Vous ne pouvez pas supprimer les groupes de rôles intégrés, mais vous pouvez supprimer les groupes de rôles personnalisés que vous avez créés.
 
-1. Dans le centre d’administration Exchange, accédez à rôles d’administrateur des **autorisations** \> **Admin roles**.
+1. Dans le centre d’administration Exchange, accédez à rôles d’administrateur des **autorisations** \> .
 
 2. Sélectionnez le groupe de rôles que vous souhaitez supprimer, puis cliquez sur **supprimer** l' ![ icône Supprimer ](../../media/ITPro-EAC-DeleteIcon.png) .
 
@@ -241,7 +241,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Pour vérifier que vous avez bien copié un groupe de rôles, effectuez l’une des opérations suivantes :
 
-- Dans le centre d’administration Exchange, accédez à rôles d’administrateur des **autorisations** \> **Admin roles**et vérifiez que le groupe de rôles est affiché (ou non). Sélectionnez le groupe de rôles et vérifiez les paramètres dans le volet d’informations ou cliquez sur **modifier** ![ l’icône modifier ](../../media/ITPro-EAC-EditIcon.png) pour vérifier les paramètres.
+- Dans le centre d’administration Exchange, accédez à rôles d’administrateur des **autorisations** \> et vérifiez que le groupe de rôles est affiché (ou non). Sélectionnez le groupe de rôles et vérifiez les paramètres dans le volet d’informations ou cliquez sur **modifier** ![ l’icône modifier ](../../media/ITPro-EAC-EditIcon.png) pour vérifier les paramètres.
 
 - Dans Exchange Online PowerShell, remplacez \<Role Group Name\> par le nom du groupe de rôles et exécutez la commande suivante pour vérifier que le groupe de rôles existe (ou n’existe pas) et vérifiez les paramètres :
 

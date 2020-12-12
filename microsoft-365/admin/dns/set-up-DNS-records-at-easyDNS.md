@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: 446babfe-2e08-4cc2-bbfb-c05b854933ac
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur easyDNS pour Microsoft.
-ms.openlocfilehash: 4909a02ec56fc9720a2636e822da0339e89bccf8
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: a971a722f071ef5df9ce0fba387cfacfeb409f5b
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645550"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49656818"
 ---
 # <a name="create-dns-records-at-easydns-for-microsoft"></a>Créer des enregistrements DNS sur easyDNS pour Microsoft
 
-[Consultez le Forum aux questions sur les domaines ](../setup/domains-faq.md) si vous ne trouvez pas ce que vous recherchez. 
+[Consultez le Forum aux questions sur les domaines ](../setup/domains-faq.yml) si vous ne trouvez pas ce que vous recherchez. 
   
 Vous devrez ajouter tous les enregistrements DNS suivants sur le site Web de votre registraire pour acheminer le courrier vers Microsoft, utiliser votre domaine pour teams et Skype entreprise, et ainsi de suite.
   
@@ -45,7 +45,7 @@ Remarque : les enregistrements SRV ne sont actuellement pas disponibles dans to
     
 4. Entrez les enregistrements suivants dans les champs de texte :
     
-    |**Host**|**Text**|
+    |**Host**|**Texte**|
     |:-----|:-----|
     |@  <br/> |MS = msXXXXXXXX (utilisez la valeur fournie dans la page domaines du centre d’administration)  <br/> |
    
@@ -118,7 +118,7 @@ Remarque : les enregistrements SRV ne sont actuellement pas disponibles dans to
     
 4. Entrez les enregistrements suivants dans les champs de texte :
     
-    |**Host**|**Text**|
+    |**Host**|**Texte**|
     |:-----|:-----|
     |@  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> |
    
@@ -140,8 +140,8 @@ Remarque : les enregistrements SRV ne sont actuellement pas disponibles dans ea
     
     |**SERVICE**|**DEST**|**HOST (HÔTE)**|**PRI**|**WGT**|**PORT**|**CIBLE (doit se terminer par un « . »)**|**TTL (Durée de vie)**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |TLS  <br/> |@  <br/> |100  <br/> |0,1  <br/> |443  <br/> |sipdir.online.lync.com.  <br/> |1800  <br/> |
-    |_sipfederationtls  <br/> |TCP  <br/> |@  <br/> |100  <br/> |0,1  <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> |1800  <br/> |
+    |_sip  <br/> |TLS  <br/> |@  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com.  <br/> |1800  <br/> |
+    |_sipfederationtls  <br/> |TCP  <br/> |@  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> |1800  <br/> |
    
 5. Sélectionnez **suivant**. 
     

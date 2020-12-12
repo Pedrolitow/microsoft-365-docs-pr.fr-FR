@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: Découvrez comment supprimer un ancien domaine de Microsoft 365 et déplacer des utilisateurs et des groupes vers un autre domaine.
-ms.openlocfilehash: 4eb44914daf500ac48f140bd999a2cf783a9bf83
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: cddbb0ef9cf48147e33b93a4a8def15576edfab5
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645286"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49655529"
 ---
 # <a name="remove-a-domain"></a>Supprimer un domaine
 
@@ -38,7 +38,7 @@ ms.locfileid: "48645286"
 
 ::: moniker-end
   
- **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.md)** si vous ne trouvez pas ce que vous recherchez. 
+ **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez. 
   
 Êtes-vous en train de supprimer votre domaine car vous souhaitez l’ajouter à un autre plan d’abonnement Microsoft 365 ? Ou souhaitez-vous annuler votre abonnement ? Vous pouvez [modifier votre plan ou abonnement](../../commerce/subscriptions/switch-to-a-different-plan.md) ou [annuler votre abonnement](../../commerce/subscriptions/cancel-your-subscription.md).
   
@@ -192,13 +192,13 @@ Vous pouvez également utiliser PowerShell pour déplacer des utilisateurs vers 
 
 ::: moniker range="o365-germany"
 
-1. Dans le centre d’administration, accédez à la page domaines **d’installation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> .
+1. Dans le centre d’administration, accédez à la page domaines **d’installation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank"></a> .
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le centre d’administration, accédez à la page domaines **d’installation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> .
+1. Dans le centre d’administration, accédez à la page domaines **d’installation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank"></a> .
 
 ::: moniker-end
   
@@ -227,7 +227,7 @@ Cela ne fonctionne toujours pas ? Vous devez peut-être supprimer votre domaine 
 
 ## <a name="related-articles"></a>Articles connexes
 
-[Foire aux questions domaines](../setup/domains-faq.md)
+[Foire aux questions domaines](../setup/domains-faq.yml)
 
 [Basculer vers une autre offre Microsoft 365 pour les entreprises](../../commerce/subscriptions/switch-to-a-different-plan.md)
 

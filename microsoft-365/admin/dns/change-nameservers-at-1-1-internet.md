@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 31efc571-c8b9-46fb-b42d-203c2fb25289
 description: Découvrez comment configurer Office 365 géré par 21Vianet pour gérer vos enregistrements DNS, quand 1&1 Internet est le fournisseur d’hébergement DNS.
-ms.openlocfilehash: 8a783be20d2f8dbdb26e9826018f911289b35235
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: b363718c7d1d1845117f44317ae9e6b24e9a2e28
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646558"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658031"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-11-ionos"></a>Modifier les serveurs de noms pour configurer Microsoft 365 avec 1&1 IONOS
 
- **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.md)** si vous ne trouvez pas ce que vous recherchez. 
+ **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez. 
   
 Suivez ces instructions si vous voulez que Microsoft 365 gère vos enregistrements DNS Microsoft 365. (Si vous préférez, vous pouvez [gérer tous vos enregistrements DNS Microsoft 365 à 1&1 Ionos](create-dns-records-at-1-1-internet.md).) 
   

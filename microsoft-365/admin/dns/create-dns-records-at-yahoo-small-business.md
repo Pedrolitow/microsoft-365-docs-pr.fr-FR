@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 034bd7bc-b098-4c4d-8a93-4d74ff24532a
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour le courrier électronique, Skype entreprise Online et d’autres services sur Yahoo ! Petite entreprise pour Microsoft.
-ms.openlocfilehash: 3c6bc44baef4924133ea2308189662dd53399689
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 47b3b1f3a6e889d067d0166f872725aa3812a7b4
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645598"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49656902"
 ---
 # <a name="create-dns-records-at-yahoo-small-business-for-microsoft"></a>Créer des enregistrements DNS auprès de Yahoo! Petite entreprise pour Microsoft
 
- **[Consultez les Forums aux questions des domaines](../setup/domains-faq.md)** si vous ne trouvez pas ce que vous recherchez. 
+ **[Consultez les Forums aux questions des domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez. 
   
 Si Yahoo! Small Business était votre fournisseur d'hébergement DNS, vous devriez savoir que votre fournisseur est désormais Aabaco Small Business.
   

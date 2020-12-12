@@ -22,16 +22,16 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: En savoir davantage sur les domaines et les enregistrements DNS associés pour vous aider à gérer vos domaines.
-ms.openlocfilehash: 3f913a96395424e86d0d88dbb29bcb58a076ebb8
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 1f5d49eb588a7c4245751360fa3309bf20496512
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645358"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658530"
 ---
 # <a name="dns-basics"></a>Principes de base
 
- **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.md)** si vous ne trouvez pas ce que vous recherchez. 
+ **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez. 
   
 ::: moniker range="o365-worldwide"
 

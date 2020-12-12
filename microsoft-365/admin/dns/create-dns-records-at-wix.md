@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 7173c635-58b3-400f-95e0-97abe915565e
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services chez WiX pour Microsoft.
-ms.openlocfilehash: ee236a9178092bb8fd14a9615c2ac5911b1ecc87
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 01317f7e2da87b532c93f12269fd65b7d4fe2dd6
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645658"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49656878"
 ---
 # <a name="create-dns-records-at-wix-for-microsoft"></a>Créer des enregistrements DNS auprès de WiX pour Microsoft
 
-**[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.md)** si vous ne trouvez pas ce que vous recherchez. 
+**[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez. 
   
 Si WiX est votre fournisseur d’hébergement DNS, suivez la procédure décrite dans cet article pour vérifier votre domaine et configurer les enregistrements DNS pour le courrier électronique, Skype entreprise Online, etc.
 
@@ -180,8 +180,8 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     
    | Service | Protocole | Nom | Pondération | Port | Target | Priority (Priorité) | TTL (Durée de vie) |
    |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-   |sip  |tls  |Rempli automatiquement |0,1  |443   |sipdir.online.lync.com |100 |1 Hour |
-   |sipfed|tcp |Rempli automatiquement|0,1 |5061 |sipfed.online.lync.com|100 | 1 Hour |
+   |sip  |tls  |Rempli automatiquement |1   |443   |sipdir.online.lync.com |100 |1 Hour |
+   |sipfed|tcp |Rempli automatiquement|1  |5061 |sipfed.online.lync.com|100 | 1 Hour |
    
 5. Sélectionnez le bouton **enregistrer le DNS** en haut de l’éditeur DNS. 
     

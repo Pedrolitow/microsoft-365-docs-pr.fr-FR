@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 55bd8c38-3316-48ae-a368-4959b2c1684e
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur Register.com pour Microsoft.
-ms.openlocfilehash: 96ec44875d5bc86f46e4945d4021deb0ca427fed
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: dd2f3d516b5309fee85dd572470fe610ff277a68
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645802"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657591"
 ---
 # <a name="create-dns-records-at-registercom-for-microsoft"></a>Créer des enregistrements DNS sur Register.com pour Microsoft
 
- **[Consultez les Forums aux questions des domaines](../setup/domains-faq.md)** si vous ne trouvez pas ce que vous recherchez. 
+ **[Consultez les Forums aux questions des domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez. 
   
 Si Register.com est votre fournisseur d'hébergement DNS, suivez les étapes décrites dans cet article pour vérifier votre domaine et configurer les enregistrements DNS pour le courrier, Skype Entreprise Online, etc.
   
@@ -244,8 +244,8 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
     
     |****Service (Service)****|****Proto (Protocole)****|****Name (Nom)****|****Priority (Priorité)****|****Weight (Poids)****|****Port (Port)****|****Target (Cible)****|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |_tls  <br/> |@  <br/> |High  <br/> |0,1  <br/> |443  <br/> |sipdir.online.lync.com  <br/>  <br/> |
-    |_sipfederationtls  <br/> |_tcp  <br/> |@  <br/> |High  <br/> |0,1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/>  <br/> |
+    |_sip  <br/> |_tls  <br/> |@  <br/> |High  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/>  <br/> |
+    |_sipfederationtls  <br/> |_tcp  <br/> |@  <br/> |High  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/>  <br/> |
    
     ![Copiez et collez les valeurs de la table.](../../media/71304c81-5845-4a8f-b969-d9efc8721184.png)
   

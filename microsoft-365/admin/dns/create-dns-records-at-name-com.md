@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 9ddcc2fc-9433-4335-8192-6ffb1f541087
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur name.com pour Microsoft.
-ms.openlocfilehash: ce465e06b3bc18c824d741ee4cba4b9f4f410d90
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 2330755412abfe262ac79c4acbfc12e33af76fe2
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645886"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657826"
 ---
 # <a name="create-dns-records-at-namecom-for-microsoft"></a>Créer des enregistrements DNS sur name.com pour Microsoft
 
- **[Consultez les Forums aux questions des domaines](../setup/domains-faq.md)** si vous ne trouvez pas ce que vous recherchez. 
+ **[Consultez les Forums aux questions des domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez. 
   
 Si name.com est votre fournisseur d'hébergement DNS, suivez les étapes décrites dans cet article pour vérifier votre domaine et configurer les enregistrements DNS pour le courrier, Skype Entreprise Online, etc.
   
@@ -235,8 +235,8 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     
     |**Type**|**Service**|**Weight (Poids)**|**TTL (Durée de vie)**|**Prio (Priorité)**|**Protocol (Protocole)**|**Port**|**Target (Cible)**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV|sip|0,1|Utilisez la valeur par défaut (300).|100|tls|443|sipdir.online.lync.com <br> **Remarque :** nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte.           |
-    |SRV|sipfederationtls|0,1|Utilisez la valeur par défaut (300).|100|tcp|5061|sipfed.online.lync.com <br>**Remarque :** nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte.           |
+    |SRV|sip|1 |Utilisez la valeur par défaut (300).|100|tls|443|sipdir.online.lync.com <br> **Remarque :** nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte.           |
+    |SRV|sipfederationtls|1 |Utilisez la valeur par défaut (300).|100|tcp|5061|sipfed.online.lync.com <br>**Remarque :** nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte.           |
    
    ![Nom-BP-configure-5-1](../../media/d9a885fd-7300-45b6-ad4c-0b4bf1067560.png)
   

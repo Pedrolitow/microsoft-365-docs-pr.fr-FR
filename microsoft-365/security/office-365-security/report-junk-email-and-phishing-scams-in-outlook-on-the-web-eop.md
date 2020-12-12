@@ -16,12 +16,12 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent découvrir les options de notification de courrier indésirable, non légitime et de hameçonnage dans Outlook sur le Web (Outlook Web App) dans Exchange Online et comment désactiver ces options de création de rapports pour les utilisateurs.
-ms.openlocfilehash: ebf266f3bb825a5ef81a3cd2b5d2bceb270fc260
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: 0032e807961aed60128d6863899ae0de32d1a627
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877372"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659308"
 ---
 # <a name="report-junk-and-phishing-email-in-outlook-on-the-web-in-exchange-online"></a>Signaler le courrier indésirable et de hameçonnage dans Outlook sur le Web dans Exchange Online
 
@@ -34,7 +34,7 @@ Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange 
 
 - Si vous êtes administrateur d’une organisation avec des boîtes aux lettres Exchange Online, nous vous recommandons d’utiliser le portail d’envoi du centre de sécurité & conformité. Pour plus d’informations, consultez la rubrique [utiliser la soumission de l’administrateur pour envoyer des courriers indésirables, des hameçons, des URL et des fichiers à Microsoft](admin-submission.md).
 
-- Les administrateurs peuvent désactiver ou activer la possibilité pour les utilisateurs de signaler des messages à Microsoft dans Outlook sur le Web. Pour plus d’informations, consultez la section [désactiver ou activer la création de rapports de courrier indésirable dans Outlook sur le Web](#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) plus loin dans cette rubrique.
+- Les administrateurs peuvent désactiver ou activer la possibilité pour les utilisateurs de signaler des messages à Microsoft dans Outlook sur le Web. Pour plus d’informations, consultez la section [désactiver ou activer la création de rapports de courrier indésirable dans Outlook sur le Web](#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) plus loin dans cet article.
 
 - Vous pouvez configurer la copie ou la redirection des messages signalés vers une boîte aux lettres que vous spécifiez. Pour plus d’informations, consultez la rubrique [User submissions Policies](user-submission.md).
 
@@ -64,7 +64,7 @@ Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange 
 
    - Sélectionnez le message, cliquez sur **légitime** dans la barre d’outils, puis sélectionnez **pas de courrier indésirable** ou de **hameçonnage**.
 
-     ![Signaler le courrier indésirable ou de hameçonnage à partir du ruban](../../media/owa-report-not-junk.png)
+     ![Signaler le courrier indésirable ou ne pas faire de hameçonnage à partir du ruban](../../media/owa-report-not-junk.png)
 
    - Sélectionnez un ou plusieurs messages, cliquez dessus avec le bouton droit, puis sélectionnez **marquer comme légitime**.
 
@@ -84,11 +84,11 @@ Par défaut, les utilisateurs peuvent signaler des faux positifs de courrier ind
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Des autorisations doivent vous être attribuées avant de pouvoir exécuter ces procédures. Vous avez spécifiquement besoin des rôles **stratégies de destinataire** ou **destinataires de messagerie** dans Exchange Online, qui sont attribués par défaut aux groupes de rôles gestion de l' **organisation** et **gestion des destinataires** . Pour plus d’informations sur les groupes de rôles dans Exchange Online, consultez la rubrique [modifier des groupes de rôles dans Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups).
+- Pour pouvoir effectuer les procédures décrites dans cet article, vous devez disposer d’autorisations dans Exchange Online. Vous avez spécifiquement besoin des rôles **stratégies de destinataire** ou **destinataires de messagerie** , qui sont affectés par défaut aux groupes de rôles gestion de l' **organisation** et **gestion des destinataires** . Pour plus d’informations sur les groupes de rôles dans Exchange Online, consultez la rubrique [autorisations dans Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) et [modifier les groupes de rôles dans Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups).
 
 - Chaque organisation a une stratégie par défaut nommée OwaMailboxPolicy-default, mais vous pouvez créer des stratégies personnalisées. Les stratégies personnalisées sont appliquées aux utilisateurs délimités avant la stratégie par défaut. Pour plus d’informations sur les stratégies de boîte aux lettres Outlook sur le Web, consultez [la rubrique relative aux stratégies de boîte aux lettres Outlook sur le Web dans Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/outlook-web-app-mailbox-policies).
 
-- La désactivation de la création de rapports de courrier indésirable ne supprime pas la possibilité de marquer un message comme indésirable ou légitime dans Outlook sur le Web. Si vous sélectionnez un message dans le dossier courrier indésirable et que vous cliquez sur **légitime** , le \> **Not junk** message est renvoyé dans la boîte de réception. Le fait de sélectionner un message dans un autre dossier de messagerie et **de cliquer sur courrier** indésirable \> **Junk** déplace le message dans le dossier courrier indésirable. Ce qui n’est plus disponible est la possibilité de signaler le message à Microsoft.
+- La désactivation de la création de rapports de courrier indésirable ne supprime pas la possibilité de marquer un message comme indésirable ou légitime dans Outlook sur le Web. Si vous sélectionnez un message dans le dossier courrier indésirable et que vous cliquez sur **légitime** , le \>  message est renvoyé dans la boîte de réception. Le fait de sélectionner un message dans un autre dossier de messagerie et **de cliquer sur courrier** indésirable \>  déplace le message dans le dossier courrier indésirable. Ce qui n’est plus disponible est la possibilité de signaler le message à Microsoft.
 
 ### <a name="use-exchange-online-powershell-to-disable-or-enable-junk-email-reporting-in-outlook-on-the-web"></a>Utiliser Exchange Online PowerShell pour désactiver ou activer la création de rapports de courrier indésirable dans Outlook sur le Web
 
@@ -128,9 +128,9 @@ Pour vérifier que vous avez bien activé ou désactivé la création de rapport
   Get-OwaMailboxPolicy | Format-Table Name,ReportJunkEmailEnabled
   ```
 
-- Ouvrez la boîte aux lettres d’un utilisateur concerné dans Outlook sur le Web, sélectionnez un message dans la boîte de réception **, cliquez sur** \> **courrier indésirable** et vérifiez que l’invite de signalement du message à Microsoft est ou non affichée. <sup>\*</sup>
+- Ouvrez la boîte aux lettres d’un utilisateur concerné dans Outlook sur le Web, sélectionnez un message dans la boîte de réception **, cliquez sur** \> **courrier indésirable** et vérifiez que l’invite de signalement du message à Microsoft est ou non affichée.<sup>\*</sup>
 
-- Ouvrez la boîte aux lettres d’un utilisateur concerné dans Outlook sur le Web, sélectionnez un message dans le dossier courrier indésirable **, cliquez sur courrier indésirable** \> **Junk** et vérifiez que l’invite de signalement du message à Microsoft est ou non affichée. <sup>\*</sup>
+- Ouvrez la boîte aux lettres d’un utilisateur concerné dans Outlook sur le Web, sélectionnez un message dans le dossier courrier indésirable **, cliquez sur courrier indésirable** \>  et vérifiez que l’invite de signalement du message à Microsoft est ou non affichée.<sup>\*</sup>
 
 <sup>\*</sup> Les utilisateurs peuvent masquer l’invite de signalement du message tout en continuant à signaler le message. Pour vérifier ce paramètre dans Outlook sur le Web, procédez comme suit :
 

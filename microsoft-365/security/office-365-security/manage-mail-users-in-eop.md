@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: Découvrez comment gérer les utilisateurs de messagerie dans Exchange Online Protection (EOP), notamment à l’aide de la synchronisation d’annuaires, du centre d’administration Exchange et de PowerShell pour gérer les utilisateurs.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3c3e69def731a85c0dccffdcb5620560dcf00052
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: a8258a63fe0fbf4a6b5641fbdef213f25de2e4dd
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49356726"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658832"
 ---
 # <a name="manage-mail-users-in-standalone-eop"></a>Gérer les utilisateurs d’e-mail dans EOP autonome
 
@@ -30,9 +30,9 @@ Dans les organisations Exchange Online Protection (EOP) autonomes sans boîtes a
 > [!NOTE]
 > Lorsque vous créez un utilisateur de messagerie, le compte d’utilisateur correspondant est disponible dans le centre d’administration 365 de Microsoft. Lorsque vous créez un compte d’utilisateur dans le centre d’administration 365 de Microsoft, vous ne pouvez pas utiliser ce compte pour créer un utilisateur de messagerie.
 
-La méthode recommandée pour créer et gérer des utilisateurs de messagerie en mode autonome EOP consiste à utiliser la synchronisation d’annuaires comme décrit dans la section [utilisation de la synchronisation d’annuaires pour gérer les utilisateurs de messagerie](#use-directory-synchronization-to-manage-mail-users) plus loin dans cette rubrique.
+La méthode recommandée pour créer et gérer des utilisateurs de messagerie en mode autonome EOP consiste à utiliser la synchronisation d’annuaires, comme décrit dans la section [utiliser la synchronisation d’annuaires pour gérer les utilisateurs de messagerie](#use-directory-synchronization-to-manage-mail-users) plus loin dans cet article.
 
-Pour les organisations EOP autonomes avec un petit nombre d’utilisateurs, vous pouvez ajouter et gérer des utilisateurs de messagerie dans le centre d’administration Exchange ou dans une version PowerShell d’EOP autonome comme décrit dans cette rubrique.
+Pour les organisations EOP autonomes avec un petit nombre d’utilisateurs, vous pouvez ajouter et gérer des utilisateurs de messagerie dans le centre d’administration Exchange ou dans une version PowerShell d’EOP autonome comme décrit dans cet article.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
@@ -42,9 +42,9 @@ Pour les organisations EOP autonomes avec un petit nombre d’utilisateurs, vous
 
 - Lorsque vous créez des utilisateurs de messagerie dans EOP PowerShell, il se peut que vous rencontriez une limitation. En outre, les cmdlets PowerShell d’EOP utilisent une méthode de traitement par lots qui entraîne un délai de propagation de quelques minutes avant que les résultats des commandes soient visibles.
 
-- Des autorisations doivent vous être attribuées avant de pouvoir exécuter ces procédures. Plus précisément, vous avez besoin des rôles création du destinataire de messagerie (création) et destinataires (modifier), qui sont attribués aux groupes de rôles OrganizationManagement (administrateurs globaux) et RecipientManagement par défaut. Pour plus d’informations, consultez la rubrique [autorisations dans EOP autonome](feature-permissions-in-eop.md) et utiliser le centre d’administration Exchange pour [modifier la liste des membres dans les groupes de rôles](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
+- Pour pouvoir effectuer les procédures décrites dans cet article, vous devez disposer d’autorisations dans Exchange Online Protection. Plus précisément, vous avez besoin des rôles **création du destinataire de messagerie** (création) et **destinataires** (modifier), qui sont attribués aux groupes de rôles gestion de l' **organisation** (administrateurs globaux) et **gestion des destinataires** par défaut. Pour plus d’informations, consultez la rubrique [autorisations dans EOP autonome](feature-permissions-in-eop.md) et utiliser le centre d’administration Exchange pour [modifier la liste des membres dans les groupes de rôles](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
-- Pour plus d’informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir [raccourcis clavier pour le centre d’administration Exchange dans Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
+- Pour plus d’informations sur les raccourcis clavier applicables aux procédures décrites dans cet article, reportez-vous à [la rubrique raccourcis clavier du centre d’administration Exchange dans Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
 > Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez le forum [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) .
@@ -53,7 +53,7 @@ Pour les organisations EOP autonomes avec un petit nombre d’utilisateurs, vous
 
 ### <a name="use-the-eac-to-create-mail-users"></a>Utiliser le centre d’administration Exchange pour créer des utilisateurs de messagerie
 
-1. Dans le centre d’administration Exchange, accédez à contacts des **destinataires** \> **Contacts**
+1. Dans le centre d’administration Exchange, accédez à contacts des **destinataires** \> 
 
 2. Cliquez sur **nouvelle** ![ icône ](../../media/ITPro-EAC-AddIcon.png) . Dans la page **nouvel utilisateur de messagerie** qui s’ouvre, configurez les paramètres suivants. Les paramètres marqués par un <sup>\*</sup> sont obligatoires.
 
@@ -79,7 +79,7 @@ Pour les organisations EOP autonomes avec un petit nombre d’utilisateurs, vous
 
 1. Dans le CAE, accédez à **Destinataires** \> **Contacts**.
 
-2. Sélectionnez l’utilisateur de messagerie à modifier, puis cliquez sur modifier l' **Edit** ![ icône modifier ](../../media/ITPro-EAC-AddIcon.png) .
+2. Sélectionnez l’utilisateur de messagerie à modifier, puis cliquez sur modifier l'  ![ icône modifier ](../../media/ITPro-EAC-AddIcon.png) .
 
 3. Sur la page Propriétés de l’utilisateur de messagerie qui s’ouvre, cliquez sur l’un des onglets suivants pour afficher ou modifier les propriétés.
 
@@ -130,7 +130,7 @@ L’onglet **organisation** permet d’enregistrer des informations détaillées
 
 1. Dans le CAE, accédez à **Destinataires** \> **Contacts**.
 
-2. Sélectionnez l’utilisateur de messagerie à supprimer, puis cliquez sur supprimer l' **Remove** ![ icône Supprimer ](../../media/ITPro-EAC-RemoveIcon.gif) .
+2. Sélectionnez l’utilisateur de messagerie à supprimer, puis cliquez sur supprimer l'  ![ icône Supprimer ](../../media/ITPro-EAC-RemoveIcon.gif) .
 
 ## <a name="use-powershell-to-manage-mail-users"></a>Utiliser PowerShell pour gérer les utilisateurs de messagerie
 

@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: Découvrez comment acheter un nom de domaine dans Microsoft 365.
-ms.openlocfilehash: f636b9e6afc1e910a6b0c01a58a4e69127c80772
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: d8c0bac5921b5cb3efacffdfee3ab948857b8a1f
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645514"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658610"
 ---
 # <a name="buy-a-domain-name"></a>Acheter un nom de domaine
 
@@ -42,7 +42,7 @@ ms.locfileid: "48645514"
 
  *Pour ajouter, modifier ou supprimer des domaines, vous **devez** être **administrateur général** d’un [plan d’entreprise ou d’entreprise](https://products.office.com/business/office). Ces modifications affectent l’ensemble du client, les *administrateurs personnalisés* ou *les utilisateurs réguliers* ne peuvent pas effectuer ces modifications.*  
 
- **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.md)** si vous ne trouvez pas ce que vous recherchez. 
+ **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez. 
   
 ### <a name="sign-in-and-go-to-settings--domains--buy-a-domain"></a>Se connecter et accéder aux paramètres \> domaines \> acheter un domaine
 
@@ -128,6 +128,6 @@ Après avoir enregistré votre domaine (au niveau d’un bureau d’enregistreme
 
 [Ajouter un domaine à Microsoft 365](../setup/add-domain.md)
 
-[Foire aux questions domaines](../setup/domains-faq.md)
+[Foire aux questions domaines](../setup/domains-faq.yml)
 
 [Mettez à jour les enregistrements DNS pour conserver votre site Web avec votre fournisseur d’hébergement actuel](https://docs.microsoft.com/microsoft-365/admin/dns/update-dns-records-to-retain-current-hosting-provider).

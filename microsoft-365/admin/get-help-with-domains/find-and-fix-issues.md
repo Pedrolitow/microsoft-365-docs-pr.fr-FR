@@ -22,21 +22,21 @@ search.appverid:
 - GEA150
 ms.assetid: 40398b0b-bdd0-4afd-ab5e-b5ae6b7990bf
 description: Découvrez comment détecter les problèmes que vous rencontrez lors de la configuration d’un domaine personnalisé en vous assurant que les enregistrements DNS sont correctement configurés.
-ms.openlocfilehash: ce5aa65601a4fac763616cb67c6a4c466083a4c0
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: d2935a7fcc134f7f6d2dd06a5b4e0e0a8761ad8a
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645334"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658518"
 ---
 # <a name="find-and-fix-issues-after-adding-your-domain-or-dns-records"></a>Rechercher et corriger des problèmes après avoir ajouté votre domaine ou des enregistrements DNS
 
- **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.md)** si vous ne trouvez pas ce que vous recherchez. 
+ **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez. 
   
 L’obtention de votre domaine configuré pour fonctionner avec Microsoft 365 peut être complexe. Le système DNS est exigeant et la configuration DNS pour votre domaine a une incidence sur les activités professionnelles importantes, comme le courrier.
 
 > [!NOTE]
-> Vous pouvez vérifier les problèmes liés à votre domaine en vérifiant son état. Accédez à **configurer**  >  les**domaines** et affichez les notifications dans la colonne **État** . Si vous voyez un problème, sélectionnez autres actions (trois points), puis sélectionnez **vérifier l’intégrité**. Le volet qui s’ouvre décrit tous les problèmes liés à votre domaine.
+> Vous pouvez vérifier les problèmes liés à votre domaine en vérifiant son état. Accédez à **configurer**  >  les **domaines** et affichez les notifications dans la colonne **État** . Si vous voyez un problème, sélectionnez autres actions (trois points), puis sélectionnez **vérifier l’intégrité**. Le volet qui s’ouvre décrit tous les problèmes liés à votre domaine.
   
 ## <a name="whats-going-on"></a>Que se passe-t-il ?
 

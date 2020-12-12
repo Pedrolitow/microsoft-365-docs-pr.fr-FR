@@ -22,16 +22,16 @@ search.appverid:
 - BEA160
 ms.assetid: 48e09394-2287-4b3c-9853-21eadf61277e
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur NetRegistry pour Microsoft.
-ms.openlocfilehash: 016df6c61fd6934c1bc46b55c7e110d8442cf1d5
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 857645c685cce946b39a7c3dcadb0a45b43686cf
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645970"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657802"
 ---
 # <a name="create-dns-records-at-netregistry-for-microsoft"></a>Créer des enregistrements DNS sur NetRegistry pour Microsoft
 
-[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.md) si vous ne trouvez pas ce que vous recherchez. 
+[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.yml) si vous ne trouvez pas ce que vous recherchez. 
   
 Si NetRegistry est votre fournisseur d’hébergement DNS, suivez la procédure décrite dans cet article pour vérifier votre domaine et configurer les enregistrements DNS pour le courrier électronique, Skype entreprise Online, etc.
   
@@ -248,8 +248,8 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
   
     |**Type**|**Nom**|**DURÉE DE VIE (S)**|**Priority (Priorité)**|**Weight (Poids)**|**Port (Port)**|**Target (Cible)**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV (service)  <br/> |_sip._tls  <br/> |3600 (secondes)  <br/> |100  <br/> |0,1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |SRV (service)  <br/> |_sipfederationtls._tcp  <br/> |3600 (secondes)  <br/> |100  <br/> |0,1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |SRV (service)  <br/> |_sip._tls  <br/> |3600 (secondes)  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |SRV (service)  <br/> |_sipfederationtls._tcp  <br/> |3600 (secondes)  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
        
     ![Netregistry_SRV_values](../../media/49292846-1598-4b8c-9940-db6e10675753.png)
   

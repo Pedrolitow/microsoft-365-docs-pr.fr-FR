@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: a6626053-a9c8-445b-81ee-eeb6672fae77
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur auprès enomcentral pour Microsoft.
-ms.openlocfilehash: c60c33f4be94e2f7719fdfc583500c6d1164991d
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: e6e05b987a893da582ea7fb062eafe421861b970
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646162"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658110"
 ---
 # <a name="create-dns-records-at-enomcentral-for-microsoft"></a>Créer des enregistrements DNS sur auprès enomcentral pour Microsoft
 
- **[Consultez les Forums aux questions des domaines](../setup/domains-faq.md)** si vous ne trouvez pas ce que vous recherchez.
+ **[Consultez les Forums aux questions des domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez.
 
 Si eNomCentral est votre fournisseur d'hébergement DNS, suivez les étapes décrites dans cet article pour vérifier votre domaine et configurer les enregistrements DNS pour le courrier, Skype Entreprise Online, etc.
 
@@ -231,8 +231,8 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
 
    |Service|Protocole|Priorité|Pondération|Port|Cible (nom d’hôte)|
    |---|---|---|---|---|---|
-   |_sip|_tls|100|0,1|443|sipdir.online.lync.com.  <br/> **Cette valeur DOIT se terminer par un point (.)**|
-   |_sipfederationtls|_tcp|100|0,1|5061|sipfed.online.lync.com.  <br/> **Cette valeur DOIT se terminer par un point (.)**|
+   |_sip|_tls|100|1 |443|sipdir.online.lync.com.  <br/> **Cette valeur DOIT se terminer par un point (.)**|
+   |_sipfederationtls|_tcp|100|1 |5061|sipfed.online.lync.com.  <br/> **Cette valeur DOIT se terminer par un point (.)**|
 
    ![eNom-BP-configure-5-2](../../media/4d478f40-780f-43b9-940b-712b09da8c63.png)
 

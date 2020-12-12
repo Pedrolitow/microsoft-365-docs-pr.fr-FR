@@ -24,40 +24,40 @@ search.appverid:
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
 description: 'Découvrez comment trouver les valeurs/informations dont vous avez besoin pour créer des enregistrements DNS pour Microsoft 365. '
-ms.openlocfilehash: eca9dbe4e40193f76538b639624b827177ff7772
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: db9aff1fdcd9fa52c90cc96b1a32cd3908c30edb
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645310"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658506"
 ---
 # <a name="gather-the-information-you-need-to-create-dns-records"></a>Collecter les informations nécessaires pour créer des enregistrements DNS
 
- **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.md)** si vous ne trouvez pas ce que vous recherchez. 
+ **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez. 
   
 ### <a name="step-1-find-the-txt-record-value-and-verify"></a>Étape 1 : Rechercher la valeur de l’enregistrement TXT et vérifier
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration Microsoft 365, accédez à la page domaines **d’installation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> .
+1. Dans le centre d’administration Microsoft 365, accédez à la page domaines **d’installation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank"></a> .
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Dans le centre d’administration, accédez à la page domaines **d’installation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> .
+1. Dans le centre d’administration, accédez à la page domaines **d’installation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank"></a> .
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le centre d’administration, accédez à la page domaines **d’installation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> .
+1. Dans le centre d’administration, accédez à la page domaines **d’installation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank"></a> .
 
 ::: moniker-end
     
 2. Sur la page **domaines** , sélectionnez votre domaine, puis **Démarrer le programme d’installation**. Revenez à l'Assistant de configuration de domaines pour afficher la valeur spécifique que vous devez ajouter.
     
-3. Sur la page **vérifier le domaine** , sélectionnez **Ajouter un enregistrement txt**à la place, puis sélectionnez **suivant**.
+3. Sur la page **vérifier le domaine** , sélectionnez **Ajouter un enregistrement txt** à la place, puis sélectionnez **suivant**.
     
 4. Copiez la **valeur txt** affichée. Il se présente comme ceci : **MS = msXXXXXXXX**. 
     
@@ -71,19 +71,19 @@ ms.locfileid: "48645310"
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration Microsoft 365, accédez à la page domaines **d’installation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> .
+1. Dans le centre d’administration Microsoft 365, accédez à la page domaines **d’installation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank"></a> .
 
 ::: moniker-end
     
 ::: moniker range="o365-germany"
 
-1. Dans le centre d’administration, accédez à la page domaines **d’installation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> .
+1. Dans le centre d’administration, accédez à la page domaines **d’installation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank"></a> .
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le centre d’administration, accédez à la page domaines **d’installation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> .
+1. Dans le centre d’administration, accédez à la page domaines **d’installation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank"></a> .
 
 ::: moniker-end
     

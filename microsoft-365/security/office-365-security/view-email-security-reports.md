@@ -18,19 +18,19 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez comment rechercher et utiliser des rapports de sécurité de messagerie pour votre organisation. Les rapports de sécurité de messagerie sont disponibles dans le centre de sécurité & conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1ab78f17cd5689f9110227762c149d3691433179
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: e98e59d39744d67427a272f456a03fc123034aa7
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572560"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659476"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Afficher les rapports de sécurité de courrier dans le centre de sécurité et conformité
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Un grand nombre de rapports sont disponibles dans le [Centre de conformité security &](https://protection.office.com) pour vous aider à découvrir comment les fonctionnalités de sécurité de messagerie, telles que le blocage du courrier indésirable, les programmes malveillants et les fonctionnalités de chiffrement de Microsoft 365 protègent votre organisation. Si vous disposez des [autorisations nécessaires](#what-permissions-are-needed-to-view-these-reports), vous pouvez afficher ces rapports dans le centre de sécurité & conformité en accédant au **Reports** \> **tableau de bord** rapports. Pour accéder directement au tableau de bord rapports, ouvrez <https://protection.office.com/insightdashboard> .
+Un grand nombre de rapports sont disponibles dans le [Centre de conformité security &](https://protection.office.com) pour vous aider à découvrir comment les fonctionnalités de sécurité de messagerie, telles que le blocage du courrier indésirable, les programmes malveillants et les fonctionnalités de chiffrement de Microsoft 365 protègent votre organisation. Si vous disposez des [autorisations nécessaires](#what-permissions-are-needed-to-view-these-reports), vous pouvez afficher ces rapports dans le centre de sécurité & conformité en accédant au  \> **tableau de bord** rapports. Pour accéder directement au tableau de bord rapports, ouvrez <https://protection.office.com/insightdashboard> .
 
 ![Tableau de bord des rapports dans le centre de sécurité & conformité](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
@@ -45,7 +45,7 @@ Le rapport **utilisateurs compromis** indique le nombre de comptes d’utilisate
 
 L’affichage d’agrégat affiche les données des 90 derniers jours et affiche les données des 30 derniers jours.
 
-Pour afficher le rapport, ouvrez le [Centre de sécurité & conformité](https://protection.office.com), accédez **Reports** au \> **tableau de bord** rapports et sélectionnez **utilisateurs compromis**. Pour accéder directement au rapport, ouvrez <https://protection.office.com/reportv2?id=CompromisedUsers> .
+Pour afficher le rapport, ouvrez le [Centre de sécurité & conformité](https://protection.office.com), accédez  au \> **tableau de bord** rapports et sélectionnez **utilisateurs compromis**. Pour accéder directement au rapport, ouvrez <https://protection.office.com/reportv2?id=CompromisedUsers> .
 
 Vous pouvez filtrer le graphique et le tableau détails en cliquant sur **filtres** et en sélectionnant une ou plusieurs des valeurs suivantes :
 
@@ -75,7 +75,7 @@ Le **rapport de chiffrement** est disponible dans EOP (abonnements avec boîtes 
 
 L’affichage d’agrégation autorise le filtrage pendant les 90 derniers jours, tandis que l’affichage des détails autorise le filtrage pendant 10 jours.
 
-Pour afficher le rapport, ouvrez le [Centre de sécurité & conformité](https://protection.office.com), accédez **Reports** au \> **tableau de bord** rapports et sélectionnez **rapport de chiffrement**. Pour accéder directement au rapport, ouvrez <https://protection.office.com/reportv2?id=EncryptionReport> .
+Pour afficher le rapport, ouvrez le [Centre de sécurité & conformité](https://protection.office.com), accédez  au \> **tableau de bord** rapports et sélectionnez **rapport de chiffrement**. Pour accéder directement au rapport, ouvrez <https://protection.office.com/reportv2?id=EncryptionReport> .
 
 Pour en savoir plus sur le chiffrement, consultez la rubrique [chiffrement des messages électroniques dans Microsoft 365](../../compliance/email-encryption.md).
 
@@ -148,7 +148,7 @@ Le rapport **détections de programmes malveillants dans le courrier électroniq
 
  Le filtre d’affichage global autorise 90 jours, tandis que le filtre de table des détails autorise uniquement 10 jours.
 
-Pour afficher le rapport, ouvrez le [Centre de sécurité & conformité](https://protection.office.com), accédez **Reports** au \> **tableau de bord** rapports et sélectionnez **détections de programmes malveillants dans le courrier électronique**. Pour accéder directement au rapport, ouvrez <https://protection.office.com/reportv2?id=MalwareDetections> .
+Pour afficher le rapport, ouvrez le [Centre de sécurité & conformité](https://protection.office.com), accédez  au \> **tableau de bord** rapports et sélectionnez **détections de programmes malveillants dans le courrier électronique**. Pour accéder directement au rapport, ouvrez <https://protection.office.com/reportv2?id=MalwareDetections> .
 
 ![Détections de programmes malveillants dans le widget courrier dans le tableau de bord rapports](../../media/malware-detections-widget.png)
 
@@ -186,7 +186,7 @@ Le rapport **détections du courrier** indésirable affiche les messages électr
 
 L’affichage agrégat autorise un filtrage de 90 jours, tandis que le tableau des détails autorise un filtrage de 10 jours.
 
-Pour afficher le rapport, ouvrez le [Centre de sécurité & conformité](https://protection.office.com), accédez à **rapports** \> **Dashboard** et sélectionnez **détections de courrier indésirable**. Pour accéder directement au rapport, ouvrez <https://protection.office.com/reportv2?id=SpamDetections> .
+Pour afficher le rapport, ouvrez le [Centre de sécurité & conformité](https://protection.office.com), accédez à **rapports** \>  et sélectionnez **détections de courrier indésirable**. Pour accéder directement au rapport, ouvrez <https://protection.office.com/reportv2?id=SpamDetections> .
 
 ![Widget détections de courrier indésirable dans le tableau de bord rapports](../../media/spam-detections-report-widget.png)
 
@@ -245,7 +245,7 @@ Le rapport des **détections d’usurpation** indique le nombre de messages d’
 
 La vue agrégée du rapport autorise 90 jours de filtrage, tandis que l’affichage détaillé autorise uniquement les 10 jours de filtrage.
 
-Pour afficher le rapport, ouvrez le [Centre de sécurité & conformité](https://protection.office.com), accédez à **rapports** \> **Dashboard** et sélectionnez **détections d’usurpation d’identité**. Pour accéder directement au rapport, ouvrez <https://protection.office.com/reportv2?id=SpoofMailReport> .
+Pour afficher le rapport, ouvrez le [Centre de sécurité & conformité](https://protection.office.com), accédez à **rapports** \>  et sélectionnez **détections d’usurpation d’identité**. Pour accéder directement au rapport, ouvrez <https://protection.office.com/reportv2?id=SpoofMailReport> .
 
 ![Widget détections d’usurpation dans le tableau de bord rapports](../../media/spoof-detections-widget.png)
 
@@ -458,7 +458,7 @@ Si vous cliquez sur **afficher les détails table**, les informations affichées
 
 Le rapport des **principaux programmes malveillants** indique les différents types de programmes malveillants détectés par la [protection contre les programmes malveillants dans EOP](anti-malware-protection.md).
 
-Pour afficher le rapport, ouvrez le [Centre de sécurité & conformité](https://protection.office.com), accédez à **rapports** \> **Dashboard** et sélectionnez les **principaux programmes malveillants**. Pour accéder directement au rapport, ouvrez <https://protection.office.com/reportv2?id=TopMalware> .
+Pour afficher le rapport, ouvrez le [Centre de sécurité & conformité](https://protection.office.com), accédez à **rapports** \>  et sélectionnez les **principaux programmes malveillants**. Pour accéder directement au rapport, ouvrez <https://protection.office.com/reportv2?id=TopMalware> .
 
 ![Widget principaux de programmes malveillants dans le tableau de bord rapports](../../media/top-malware-report-widget.png)
 
@@ -487,9 +487,9 @@ Des détails sont disponibles pour chaque message, notamment la raison de remise
 
 Pour afficher ce rapport, dans le [Centre de sécurité & conformité](https://protection.office.com), effectuez l’une des opérations suivantes :
 
-- Accédez au **Threat management** \> **tableau de bord** gestion \> **des menaces-messages signalés par l’utilisateur**.
+- Accédez au  \> **tableau de bord** gestion \> **des menaces-messages signalés par l’utilisateur**.
 
-- Accédez à **Threat management** \> **examen** \> **des menaces-messages signalés par l’utilisateur**.
+- Accédez à  \> **examen** \> **des menaces-messages signalés par l’utilisateur**.
 
 ![Dans le centre de sécurité & conformité, choisissez gestion des menaces- \> vérifier \> les messages signalés par l’utilisateur](../../media/e372c57c-1414-4616-957b-bc933b8c8711.png)
 
@@ -498,22 +498,22 @@ Pour afficher ce rapport, dans le [Centre de sécurité & conformité](https://p
 
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>Quelles sont les autorisations nécessaires pour afficher ces rapports ?
 
-Pour afficher et utiliser les rapports décrits dans cette rubrique, vous devez être membre de l’un des groupes de rôles suivants dans le centre de sécurité & conformité :
+Pour afficher et utiliser les rapports décrits dans cet article, vous devez être membre de l’un des groupes de rôles suivants dans le centre de sécurité & conformité :
 
 - **Gestion de l'organisation**
 - **Administrateur de la sécurité**
 - **Lecteur de sécurité**
-- **Lecteur général**
+- **Lecteur global**
 
 Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
 
-**Remarque**: l’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le centre d’administration 365 de Microsoft donne aux utilisateurs les autorisations requises dans le centre de sécurité & conformité _et_ des autorisations pour d’autres fonctionnalités de Microsoft 365. Si vous souhaitez en savoir plus, veuillez consulter la page [À propos des rôles d’administrateur](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+**Remarque**: l’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le centre d’administration 365 de Microsoft donne aux utilisateurs les autorisations requises dans le centre de sécurité & conformité _et_ des autorisations pour d’autres fonctionnalités de Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>Qu’en est-il si les rapports n’affichent pas de données ?
 
 Si vous ne voyez pas de données dans vos rapports, vérifiez que vos stratégies sont correctement configurées. Pour en savoir plus, consultez la rubrique se [protéger contre les menaces](protect-against-threats.md).
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Protection contre le courrier indésirable et les programmes malveillants dans EOP](anti-spam-and-anti-malware-protection.md)
 

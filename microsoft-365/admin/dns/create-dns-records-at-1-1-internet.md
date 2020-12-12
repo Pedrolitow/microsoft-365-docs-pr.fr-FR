@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 5762c3ca-1de2-4999-bfe5-4c5e25a8957e
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour le courrier électronique, Skype entreprise Online et d’autres services sur 1&1 IONOS pour Microsoft.
-ms.openlocfilehash: b88fa4f14104f60f22857bb9cfdc9e6366d2c303
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 8e2deab05b5ef8d8f22993d2bfdd032999ed9c39
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646390"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657995"
 ---
 # <a name="create-dns-records-at-11-ionos-for-microsoft"></a>Créer des enregistrements DNS à 1&IONOS 1 pour Microsoft
 
- **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.md)** si vous ne trouvez pas ce que vous recherchez. 
+ **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez. 
   
 > [!CAUTION]
 > Notez que 1&1 IONOS ne permet pas à un domaine d’avoir à la fois un enregistrement MX et un enregistrement CNAMe de découverte automatique de niveau supérieur. Cela limite les moyens de configurer Exchange Online pour Microsoft. Il existe une solution de contournement, mais nous vous recommandons de l’utiliser **uniquement** si vous avez déjà des expériences en matière de création de sous-domaines à 1&1 Ionos. > si en dépit de cette [limitation de service](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) vous choisissez de gérer vos propres enregistrements DNS Microsoft à 1&1 Ionos, suivez les étapes décrites dans cet article pour vérifier votre domaine et configurer les enregistrements DNS pour le courrier électronique, Skype entreprise Online, etc. 
@@ -248,7 +248,7 @@ Les enregistrements CNAME supplémentaires créés au cours de la procédure sui
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajoutez un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
 
 > [!IMPORTANT]
-> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. Si vous avez déjà un enregistrement SPF pour votre domaine, il n’est pas nécessaire d’en créer un nouveau pour Microsoft. Ajoutez plutôt les valeurs Microsoft requises à l’enregistrement actuel afin de disposer d’un  *seul*  enregistrement SPF qui inclut les deux ensembles de valeurs. Voici quelques exemples. Consultez ces [Enregistrements DNS externes pour Microsoft](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records). Pour valider votre enregistrement SPF, vous pouvez utiliser l’un de ces[outils de validation SPF](../setup/domains-faq.md). 
+> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. Si vous avez déjà un enregistrement SPF pour votre domaine, il n’est pas nécessaire d’en créer un nouveau pour Microsoft. Ajoutez plutôt les valeurs Microsoft requises à l’enregistrement actuel afin de disposer d’un  *seul*  enregistrement SPF qui inclut les deux ensembles de valeurs. Voici quelques exemples. Consultez ces [Enregistrements DNS externes pour Microsoft](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records). Pour valider votre enregistrement SPF, vous pouvez utiliser l’un de ces[outils de validation SPF](../setup/domains-faq.yml). 
   
 Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lecture à 5:09)](https://docs.microsoft.com/microsoft-365/admin/dns/create-dns-records-at-1-1-internet).
   
@@ -300,8 +300,8 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
     
     |**Type**|**Service**|**Protocol (Protocole)**|**Name (Nom)**|**Host (Hôte)**|**Priority (Priorité)**|**Weight (Poids)**|**Port (Port)**|**TTL (Durée de vie)**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV  <br/> |sip  <br/> |tls  <br/> |(Laissez ce champ vide.)  <br/> |sipdir.online.lync.com  <br/> |100  <br/> |0,1  <br/> |443  <br/> |3600 (1 h)  <br/> |
-    |SRV  <br/> |sipfederationtls  <br/> |tcp  <br/> |(Laissez ce champ vide.)  <br/> |sipfed.online.lync.com  <br/> |100  <br/> |0,1  <br/> |5061  <br/> |3600 (1 h)  <br/> |  
+    |SRV  <br/> |sip  <br/> |tls  <br/> |(Laissez ce champ vide.)  <br/> |sipdir.online.lync.com  <br/> |100  <br/> |1   <br/> |443  <br/> |3600 (1 h)  <br/> |
+    |SRV  <br/> |sipfederationtls  <br/> |tcp  <br/> |(Laissez ce champ vide.)  <br/> |sipfed.online.lync.com  <br/> |100  <br/> |1   <br/> |5061  <br/> |3600 (1 h)  <br/> |  
     
     ![1 &amp; -BP-configurer-5-1](../../media/087e337d-926b-42ff-b11d-b449cfaed76c.png)
   
@@ -311,7 +311,7 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
   
 9. Dans la boîte de dialogue **modifier les paramètres DNS** , sélectionnez **Oui**. <br/>![Sélection de Oui dans la boîte de dialogue Modifier les paramètres DNS](../../media/920cc95f-fedf-4da2-94a4-9cb41ed49bcf.png)
   
-10. Ajoutez l’autre enregistrement SRV. <br/>Dans la section **txt and SRV Records (enregistrements TXT** ), sélectionnez **Add record (ajouter un enregistrement**). <br/>Dans la zone **Ajouter un enregistrement** , créez un enregistrement à l’aide des valeurs de l’autre ligne du tableau, puis sélectionnez à nouveau **Ajouter**, **Enregistrer**et **Oui** pour terminer l’enregistrement. 
+10. Ajoutez l’autre enregistrement SRV. <br/>Dans la section **txt and SRV Records (enregistrements TXT** ), sélectionnez **Add record (ajouter un enregistrement**). <br/>Dans la zone **Ajouter un enregistrement** , créez un enregistrement à l’aide des valeurs de l’autre ligne du tableau, puis sélectionnez à nouveau **Ajouter**, **Enregistrer** et **Oui** pour terminer l’enregistrement. 
     
 > [!NOTE]
 > Généralement, les modifications DNS sont appliquées dans les 15 minutes. Il peut toutefois arriver que la répercussion d’une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des difficultés avec le flux de courrier ou d’autres problèmes suite à l’ajout des enregistrements DNS, consultez la page [Rechercher et corriger les problèmes suite à l’ajout de votre domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md). 

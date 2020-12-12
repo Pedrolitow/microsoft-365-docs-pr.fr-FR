@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
 description: Découvrez comment vérifier la propriété de votre messagerie et de votre domaine pour prendre le relais d’un locataire non géré dans Microsoft 365
-ms.openlocfilehash: 9ae09a4b88887664a0615128bcddc48ad6f57118
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 28359908576260218459d13b8c1c1b662b9a2c8f
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645058"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658062"
 ---
 # <a name="perform-an-internal-admin-takeover"></a>Effectuer un rachat administratif interne
 
- **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.md)** si vous ne trouvez pas ce que vous recherchez. 
+ **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez. 
 
 Si vous êtes un administrateur et que vous souhaitez prendre le relais d’un client non géré créé par un abonnement d’utilisateur libre-service, vous pouvez effectuer cette opération avec un test administratif interne.
 
@@ -41,7 +41,7 @@ Si vous êtes un administrateur et que vous souhaitez prendre le relais d’un c
 > [!NOTE]
 > Si le self-service est activé dans votre client, les utilisateurs peuvent s’abonner à des services gratuits, comme Power BI, de leur côté. Ces étapes supposent qu’un abonnement d’utilisateur libre-service a créé le locataire non géré que vous souhaitez prendre en compte en tant qu’administrateur. La première étape consiste à créer un contexte utilisateur dans le locataire non géré à l’aide de Power BI pour illustrer le chemin de la prise en compte de l’administrateur.
 
-1. Pour vous inscrire à Power bi, accédez au [site Power bi](https://powerbi.com) et sélectionnez **Démarrer**la  >  **version d’évaluation** gratuite de démarrage gratuit (dans la zone partager avec Power bi Pro). 
+1. Pour vous inscrire à Power bi, accédez au [site Power bi](https://powerbi.com) et sélectionnez **Démarrer** la  >  **version d’évaluation** gratuite de démarrage gratuit (dans la zone partager avec Power bi Pro). 
 
 2. Inscrivez-vous à l’aide d’un compte d’utilisateur qui utilise le nom de domaine de votre organisation (par exemple `powerbiadmin@contoso.com` ). Si votre compte est déjà utilisé, connectez-vous à l’aide de votre mot de passe actuel.
 

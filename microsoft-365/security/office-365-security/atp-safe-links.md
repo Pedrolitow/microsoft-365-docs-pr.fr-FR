@@ -26,19 +26,19 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Dans cet article, les administrateurs peuvent en savoir plus sur la protection des liens fiables dans Defender pour Office 365 afin de protéger leur organisation contre le hameçonnage et les autres attaques qui utilisent des URL malveillantes.
-ms.openlocfilehash: f2a747b0776a16ac981158ab866f28699583a06b
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 066732e2f1a886e303fea86730baeb78c8152990
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616319"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659488"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Liens fiables dans Microsoft Defender pour Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 > [!IMPORTANT]
-> Cet article est destiné aux clients professionnels qui disposent [de Microsoft Defender pour Office 365](office-365-atp.md). Si vous utilisez Outlook.com, la famille Microsoft 365 ou Microsoft 365 personnel, et que vous recherchez des informations sur Safelinks dans Outlook, consultez la rubrique [Advanced Outlook.com Security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Cet article est destiné aux entreprises qui ont [Microsoft Defender pour Office 365](office-365-atp.md). Si vous utilisez Outlook.com, la famille Microsoft 365 ou Microsoft 365 personnel, et que vous recherchez des informations sur Safelinks dans Outlook, consultez la rubrique [Advanced Outlook.com Security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 La fonctionnalité liens fiables est une fonctionnalité de [Defender pour Office 365](office-365-atp.md) qui permet l’analyse des URL et la réécriture des messages électroniques entrants dans le flux de messagerie et la vérification des URL et des liens dans les messages électroniques et les autres emplacements. L’analyse des liens fiables se produit en plus de la protection anti- [courrier indésirable et anti-programme malveillant](anti-spam-and-anti-malware-protection.md) dans les messages électroniques entrants dans Exchange Online Protection (EoP). L’analyse des liens fiables permet de protéger votre organisation contre les liens malveillants utilisés dans le hameçonnage et les autres attaques.
 
@@ -50,7 +50,7 @@ La protection des liens fiables est disponible aux emplacements suivants :
 
 - **Microsoft teams** (actuellement en mode Aperçu) : la protection des liens fiables pour les liens dans les conversations de teams, les conversations de groupe ou les canaux est également contrôlée par les stratégies de liens fiables. Il n’existe pas de stratégie de liens approuvés par défaut, pour **obtenir la protection des liens fiables dans Teams, vous devez créer une ou plusieurs stratégies de liens fiables**.
 
-  Pour plus d’informations sur la protection des liens fiables dans Teams, consultez la section [paramètres de liens approuvés pour Microsoft teams](#safe-links-settings-for-microsoft-teams) plus loin dans cette rubrique.
+  Pour plus d’informations sur la protection des liens fiables dans Teams, consultez la section [paramètres de liens approuvés pour Microsoft teams](#safe-links-settings-for-microsoft-teams) plus loin dans cet article.
 
 - **Applications office 365**: la protection des liens fiables pour les applications Office 365 est disponible dans les APS de bureau, mobiles et Web pris en charge. Vous **configurez** la protection des liens fiables pour les applications Office 365 dans le paramètre global qui se trouvent **en dehors** des stratégies de liens fiables. Pour obtenir des instructions, consultez la rubrique [configure Global Settings for Safe Links Settings in Microsoft Defender for Office 365](configure-global-settings-for-safe-links.md).
 
@@ -80,8 +80,8 @@ Le tableau suivant décrit les scénarios de liens fiables dans les organisation
 |Jean est membre du service marketing. La protection des liens fiables pour les applications Office 365 est activée dans les paramètres globaux pour les liens fiables et une stratégie de liens fiables qui s’applique aux membres du service marketing existe. Jean ouvre une présentation PowerPoint dans un message électronique, puis clique sur une URL dans la présentation.|Jean est protégé par les liens fiables. <p> Jean est inclus dans une stratégie de liens fiables, et la protection des liens fiables pour les applications Office 365 est activée. <p> Pour plus d’informations sur la configuration requise pour la protection des liens fiables dans les applications Office 365, voir la section [paramètres de liens approuvés pour les applications office 365](#safe-links-settings-for-office-365-apps) plus loin dans cet article.|
 |Aucune stratégie de liens fiables n’est configurée pour l’organisation Microsoft 365 E5 de Chris. Chris reçoit un courrier électronique d’un expéditeur externe contenant une URL vers un site Web malveillant qu’il clique finalement.|Chris n’est pas protégé par les liens fiables. <p> Un administrateur doit créer au moins une stratégie de liens fiables pour obtenir une protection des liens fiables dans les messages électroniques entrants. Chris doit être inclus dans les conditions de la stratégie pour obtenir une protection des liens fiables.|
 |Dans l’organisation de Pat, aucun administrateur n’a créé de stratégies de liens fiables, mais la protection des liens fiables pour les applications Office 365 est activée. Pat ouvre un document Word et clique sur une URL dans le fichier.|Pat n’est pas protégé par les liens fiables. <p> Bien que la protection des liens fiables pour les applications Office 365 est activée globalement, Pat n’est pas inclus dans les stratégies de liens fiables actives, de sorte que la protection ne peut pas être appliquée.|
-|Dans l’organisation de Lee, `https://tailspintoys.com` est configuré dans la liste **bloquer les URL suivantes** dans les paramètres globaux pour les liens fiables. Une stratégie de liens fiables qui inclut Lee existe déjà. Lee reçoit un message électronique qui contient l’URL `https://tailspintoys.com/aboutus/trythispage` . Lee clique sur l’URL.|L’URL peut être automatiquement bloquée pour Lee ; Cela dépend de l’entrée URL de la liste et du client de messagerie Lee utilisé. Pour plus d’informations, consultez la section [« bloquer les URL suivantes » pour les liens fiables](#block-the-following-urls-list-for-safe-links) plus loin dans cette rubrique.|
-|Marie et Julia fonctionnent pour contoso.com. Il y a longtemps, les administrateurs ont configuré des stratégies de liens fiables qui s’appliquent à Marie et Julia. Marie envoie un message électronique à Julia, pas de savoir que le courrier électronique contient une URL malveillante.|Julia est protégé par les liens fiables **si** la stratégie de liens fiables qui s’applique à elle est configurée pour s’appliquer aux messages entre les destinataires internes. Pour plus d’informations, consultez la section [paramètres de liens approuvés pour les messages électroniques](#safe-links-settings-for-email-messages) plus loin dans cette rubrique.|
+|Dans l’organisation de Lee, `https://tailspintoys.com` est configuré dans la liste **bloquer les URL suivantes** dans les paramètres globaux pour les liens fiables. Une stratégie de liens fiables qui inclut Lee existe déjà. Lee reçoit un message électronique qui contient l’URL `https://tailspintoys.com/aboutus/trythispage` . Lee clique sur l’URL.|L’URL peut être automatiquement bloquée pour Lee ; Cela dépend de l’entrée URL de la liste et du client de messagerie Lee utilisé. Pour plus d’informations, consultez la section [« bloquer les URL suivantes » pour les liens fiables](#block-the-following-urls-list-for-safe-links) plus loin dans cet article.|
+|Marie et Julia fonctionnent pour contoso.com. Il y a longtemps, les administrateurs ont configuré des stratégies de liens fiables qui s’appliquent à Marie et Julia. Marie envoie un message électronique à Julia, pas de savoir que le courrier électronique contient une URL malveillante.|Julia est protégé par les liens fiables **si** la stratégie de liens fiables qui s’applique à elle est configurée pour s’appliquer aux messages entre les destinataires internes. Pour plus d’informations, consultez la section [paramètres de liens approuvés pour les messages électroniques](#safe-links-settings-for-email-messages) plus loin dans cet article.|
 
 ## <a name="safe-links-settings-for-email-messages"></a>Paramètres de liens fiables pour les messages électroniques
 

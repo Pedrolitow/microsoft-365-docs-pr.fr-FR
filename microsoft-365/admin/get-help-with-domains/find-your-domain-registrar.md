@@ -22,23 +22,23 @@ search.appverid:
 - GEA150
 ms.assetid: b5b633ba-1e56-4a98-8ff5-2acaac63a5c8
 description: Découvrez comment rechercher votre bureau d’enregistrement de domaines et votre fournisseur d’hébergement DNS à l’aide de la recherche InterNIC.
-ms.openlocfilehash: 8fa75800125179f046f3af76eea490d760b9f6cd
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 434e30709b112cf591159a1692540b8ef2b6bb65
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645322"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49655541"
 ---
 # <a name="find-your-domain-registrar"></a>Rechercher votre bureau d’enregistrement de domaine
 
- **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.md)** si vous ne trouvez pas ce que vous recherchez. 
+ **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez. 
   
 ## <a name="domain-registrar"></a>Bureau d'enregistrement de domaines
   
 ### <a name="find-your-domain-name-registrar"></a>Rechercher votre bureau d’enregistrement de noms de domaine
 
 >[!NOTE]
-> Seuls les domaines se terminant par *. COM*, *.NET*et *.EDU* sont compatibles avec cet outil.
+> Seuls les domaines se terminant par *. COM*, *.NET* et *.EDU* sont compatibles avec cet outil.
   
 1. Tapez votre domaine dans la [page de recherche InterNIC](https://go.microsoft.com/fwlink/p/?LinkId=402770), dans la zone **Whois Search**. Par exemple, *contoso.com*. 
     
@@ -51,7 +51,7 @@ ms.locfileid: "48645322"
 ### <a name="find-your-dns-hosting-provider"></a>Rechercher votre fournisseur d’hébergement DNS
 
 >[!NOTE]
-> Seuls les domaines se terminant par *. COM*, *.NET*et *.EDU* sont compatibles avec cet outil.
+> Seuls les domaines se terminant par *. COM*, *.NET* et *.EDU* sont compatibles avec cet outil.
   
 1. Tapez votre domaine dans la [page de recherche InterNIC]( https://go.microsoft.com/fwlink/p/?LinkId=402770), dans la zone **Whois Search**. Par exemple, contoso.com. 
     

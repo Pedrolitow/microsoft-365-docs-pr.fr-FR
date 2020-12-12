@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Ajoutez votre domaine à Microsoft 365 dans le centre d’administration Microsoft 365 en ajoutant un enregistrement DNS au niveau de votre hôte DNS. L’Assistant installation vous guide tout au long du processus.
-ms.openlocfilehash: 3a4cd31a37eb01570f58e9cdb83940640768a273
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 3e7463bd4cf6b7836a9770421e0b8ce597524a67
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644614"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658050"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Ajouter un domaine à Microsoft 365
 
@@ -42,7 +42,7 @@ ms.locfileid: "48644614"
 
 ::: moniker-end
 
- **[Consultez les Forums aux questions sur les domaines](domains-faq.md)** si vous ne trouvez pas ce que vous recherchez. 
+ **[Consultez les Forums aux questions sur les domaines](domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez. 
   
  *Pour ajouter, modifier ou supprimer des domaines, vous **devez** être **administrateur général** d’un [plan d’entreprise ou d’entreprise](https://products.office.com/business/office). Ces modifications affectent l’ensemble du client, les *administrateurs personnalisés* ou *les utilisateurs réguliers* ne peuvent pas effectuer ces modifications.*  
 
@@ -75,7 +75,7 @@ ms.locfileid: "48644614"
 
 ::: moniker-end
     
-2. Accédez à la page **paramètres**des  >  **domaines** . 
+2. Accédez à la page **paramètres** des  >  **domaines** . 
 
 3. Sélectionnez **Ajouter un domaine**.
     
@@ -110,7 +110,7 @@ Suivez les étapes ci-dessous pour ajouter un enregistrement personnalisé pour 
 
 1. Connectez-vous au centre d’administration Microsoft à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> .
 
-2. Accédez à la page **paramètres**des   >  **domaines** .
+2. Accédez à la page **paramètres** des   >  **domaines** .
 
 3. Dans la page **Domaines**, sélectionnez un domaine. 
     
@@ -151,7 +151,7 @@ Si vous avez un site web que vous utilisez dans le cadre de votre activité, il 
 
 ## <a name="related-articles"></a>Articles connexes
 
-[Foire aux questions domaines](domains-faq.md)
+[Foire aux questions domaines](domains-faq.yml)
 
 [Qu’est-ce qu’un domaine ?](../get-help-with-domains/what-is-a-domain.md)
 

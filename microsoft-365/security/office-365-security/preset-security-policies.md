@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à appliquer des paramètres de stratégie standard et stricte dans les fonctionnalités de protection d’Exchange Online Protection (EOP) et de Microsoft Defender pour Office 365
-ms.openlocfilehash: fb613916ec375214b33b8b842c6817561920715d
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: a77201835652fb36822fbc603f5211c1f7a9521b
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616043"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659231"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Stratégies de sécurité prédéfinies dans EOP et Microsoft Defender pour Office 365
 
@@ -100,19 +100,21 @@ En d’autres termes, les paramètres de la stratégie de **protection stricte**
 
 ### <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Vous ouvrez le Centre de sécurité et conformité sur <https://protection.office.com/>. Pour accéder directement à la page **paramètres prédéfinis des stratégies de sécurité** , utilisez <https://protection.office.com/presetSecurityPolicies> .
+- Vous ouvrez le Centre de conformité et sécurité sur <https://protection.office.com/>. Pour accéder directement à la page **paramètres prédéfinis des stratégies de sécurité** , utilisez <https://protection.office.com/presetSecurityPolicies> .
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Avant de pouvoir effectuer les procédures décrites dans cet article, vous devez disposer des autorisations suivantes :
+- Pour pouvoir utiliser ce cmdlet, vous devez disposer des autorisations dans le centre de sécurité et conformité Office 365.
+  - Pour configurer des stratégies de sécurité prédéfinies, vous devez être membre des groupes de rôles gestion de l' **organisation** ou **administrateur de sécurité** .
+  - Pour un accès en lecture seule aux stratégies de sécurité prédéfinies, vous devez être membre du groupe de rôles **lecteur global** .
 
-  - Pour configurer des stratégies de sécurité prédéfinies, vous devez être membre des rôles de gestion de l' **organisation** ou de l' **administrateur de sécurité** dans le centre de [sécurité & conformité](permissions-in-the-security-and-compliance-center.md).
+  Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
 
-  - Pour un accès en lecture seule aux stratégies de sécurité prédéfinies, vous devez être membre du groupe de rôles **lecteur global** dans le [centre de sécurité & conformité](permissions-in-the-security-and-compliance-center.md).
+  **Remarque**: l’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le centre d’administration 365 de Microsoft donne aux utilisateurs les autorisations requises dans le centre de sécurité & conformité _et_ des autorisations pour d’autres fonctionnalités de Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
 
 ### <a name="use-the-security--compliance-center-to-assign-preset-security-policies-to-users"></a>Utiliser le centre de sécurité & conformité pour affecter des stratégies de sécurité prédéfinies aux utilisateurs
 
-1. Dans le centre de sécurité & conformité, accédez **Threat management** aux stratégies de \> **Policy** \> **sécurité prédéfinies** stratégie de gestion des menaces.
+1. Dans le centre de sécurité & conformité, accédez  aux stratégies de \>  \> **sécurité prédéfinies** stratégie de gestion des menaces.
 
 2. Sous **protection standard** ou **protection stricte**, cliquez sur **modifier**.
 

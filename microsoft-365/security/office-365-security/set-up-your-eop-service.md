@@ -14,12 +14,12 @@ ms.custom:
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: Les administrateurs peuvent apprendre à configurer Exchange Online Protection (EOP) autonome pour protéger les environnements de messagerie locaux.
-ms.openlocfilehash: ab34d715bd8196bb2376926402f6a88018d1d7ae
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 2d63057e77e6965616e19452de824a94ba0ccda8
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615671"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659416"
 ---
 # <a name="set-up-your-standalone-eop-service"></a>Configurer votre service EOP autonome
 
@@ -29,7 +29,7 @@ ms.locfileid: "49615671"
 Cette rubrique explique comment configurer Exchange Online Protection (EOP) en mode autonome. Si vous avez été redirigé depuis l'Assistant Domaines Office 365, revenez à l'Assistant Domaines Office 365 si vous ne souhaitez pas utiliser Exchange Online Protection. Si vous recherchez plus d'informations sur la configuration des connecteurs, consultez la rubrique [Configure mail flow using connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
 
 > [!NOTE]
-> Elle suppose que vous disposez de boîtes aux lettres locales et que vous voulez les protéger avec EOP (scénario dit « autonome »). Si vous voulez héberger toutes vos boîtes aux lettres dans le nuage avec Exchange Online, il n'est pas nécessaire de réaliser toutes les étapes décrites dans cette rubrique. Consultez la [comparaison des plans Exchange Online](https://products.office.com/exchange/compare-microsoft-exchange-online-plans) pour vous inscrire et acheter des boîtes aux lettres Cloud.
+> Elle suppose que vous disposez de boîtes aux lettres locales et que vous voulez les protéger avec EOP (scénario dit « autonome »). Si vous souhaitez héberger toutes vos boîtes aux lettres dans le Cloud avec Exchange Online, vous n’avez pas à effectuer toutes les étapes décrites dans cet article. Consultez la [comparaison des plans Exchange Online](https://products.office.com/exchange/compare-microsoft-exchange-online-plans) pour vous inscrire et acheter des boîtes aux lettres Cloud.
 >
 > Si vous voulez héberger certaines de vos boîtes aux lettres localement et d'autres dans le nuage, il s'agit d'un scénario hybride. Des paramètres de flux de messagerie plus avancés sont requis. [Déploiements hybrides Exchange Server](https://docs.microsoft.com/exchange/exchange-hybrid) explique le flux de messagerie hybride et comporte des liens vers des ressources qui expliquent comment le configurer.
 
@@ -37,11 +37,11 @@ Cette rubrique explique comment configurer Exchange Online Protection (EOP) en m
 
 - Durée d'exécution estimée de cette tâche : 1 heure
 
-- Des autorisations doivent vous être attribuées avant de pouvoir exécuter ces procédures. Plus précisément, vous avez besoin du rôle domaines approuvés et distants, qui est affecté aux groupes de rôles MailFlowAdministrator et OrganizationManagement (administrateurs globaux) par défaut. Pour plus d’informations, consultez la rubrique [autorisations dans EOP autonome](feature-permissions-in-eop.md) et utiliser le centre d’administration Exchange pour [modifier la liste des membres dans les groupes de rôles](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
+- Pour pouvoir effectuer les procédures décrites dans cet article, vous devez disposer d’autorisations dans Exchange Online Protection. Plus précisément, vous avez besoin du rôle **domaines approuvés et distants** , qui est affecté aux groupes de rôles gestion de l' **organisation** (administrateurs globaux) et **administrateur du flux de messagerie** par défaut. Pour plus d’informations, consultez la rubrique [autorisations dans EOP autonome](feature-permissions-in-eop.md) et utiliser le centre d’administration Exchange pour [modifier la liste des membres dans les groupes de rôles](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
 - Si vous ne vous êtes pas inscrit à EOP, consultez la page [Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection), et choisissez d'acheter ou d'essayer le service.
 
-- Pour plus d’informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir [raccourcis clavier pour le centre d’administration Exchange dans Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
+- Pour plus d’informations sur les raccourcis clavier applicables aux procédures décrites dans cet article, reportez-vous à [la rubrique raccourcis clavier du centre d’administration Exchange dans Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
 > Vous rencontrez des difficultés ? Demandez de l’aide dans le Forum [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) .

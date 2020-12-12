@@ -22,16 +22,16 @@ description: Découvrez ce qu’est un domaine et comment vous pouvez acheter un
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-ms.openlocfilehash: 0c59fb6bc5f9a7796c84a0370c771bf90102dec0
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 9afc38aeda32870a248212f7b67f2fb4af8fd960
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645118"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658074"
 ---
 # <a name="what-is-a-domain"></a>Qu’est-ce qu’un domaine ?
 
- **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.md)** si vous ne trouvez pas ce que vous recherchez. 
+ **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez. 
   
 [] Un domaine est un nom unique qui apparaît après le signe **@** dans les adresses de messagerie et après **www.** dans les adresses web. Il prend généralement la forme du nom de votre organisation et d’un suffixe Internet standard, tel que *yourbusiness. <span> com* ou *stateuniversity. <span> edu*. 
   
