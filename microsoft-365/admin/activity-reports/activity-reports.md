@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenez un rapport régulier sur la façon dont les membres de votre organisation utilisent les services Microsoft 365. Le tableau de bord Vue d’ensemble de l’utilisation vous permet d’explorer chaque graphique pour obtenir d'autres informations.
-ms.openlocfilehash: 9c3416f415c43377669b2c032e10696343c4416f
-ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
+ms.openlocfilehash: d2c5b4f67d93500f7341463a01313271d182dc38
+ms.sourcegitcommit: 039205fdaaa2a233ff7e95cd91bace474b84b68c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48988457"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49611348"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Rapports Microsoft 365 dans le centre d'administration
 
@@ -90,9 +90,13 @@ En fonction de votre abonnement, les rapports suivants sont disponibles.
     
 - [Utilisation des boîtes aux lettres](mailbox-usage.md)
     
-- [Activations d’Office](microsoft-office-activations.md)
+- [Activations d’Office](microsoft-office-activations-ww.md)
 
-- [Utilisateurs actifs](active-users.md)
+- [Activations d’Office pour le secteur public américain](microsoft-office-activations.md)
+
+- [Utilisateurs actifs](active-users-ww.md)
+
+- [Utilisateurs actifs pour le secteur public américain](active-users.md)
   
 - [Utilisation des applications de messagerie](email-apps-usage.md)
 
@@ -104,7 +108,9 @@ En fonction de votre abonnement, les rapports suivants sont disponibles.
   
 - [Activité vocale pour le gouvernement américain Dynamics 365](forms-pro-activity.md)
 
-- [Groupes Microsoft 365](office-365-groups.md)
+- [Groupes Microsoft 365](office-365-groups-ww.md)
+
+- [Groupes Microsoft 365 pour le secteur public américain](office-365-groups.md)
   
 - [Activité des utilisateurs de OneDrive Entreprise](onedrive-for-business-activity-ww.md)
 
@@ -114,7 +120,9 @@ En fonction de votre abonnement, les rapports suivants sont disponibles.
 
 - [Utilisation de OneDrive Entreprise pour le gouvernement américain](onedrive-for-business-usage.md)
 
-- [Utilisation des applications Microsoft 365](microsoft365-apps-usage.md)
+- [Utilisation de Microsoft 365 Apps](microsoft365-apps-usage-ww.md)
+
+- [Utilisation de Microsoft 365 Apps pour le secteur public américain](microsoft365-apps-usage.md)
   
 - [Utilisation du site SharePoint](sharepoint-site-usage-ww.md)
 
@@ -203,6 +211,8 @@ En fonction de votre abonnement, les rapports suivants sont disponibles.
 Utilisez les rapports de service pour déterminer le niveau d’utilisation du service par un utilisateur spécifique. Par exemple, pour déterminer la quantité de stockage de boîte aux lettres consommée par un utilisateur spécifique, ouvrez le rapport Utilisation des boîtes aux lettres et triez les utilisateurs par nom. Si vous avez des milliers d’utilisateurs, exportez le rapport vers Excel pour filtrer la liste rapidement.
   
 Vous ne pouvez pas générer de rapport pour un compte d’utilisateur afin d’obtenir la liste des services associés et le niveau d’utilisation.
+
+Dans certains cas, les nouveaux utilisateurs s’affichent en tant que **Inconnu**. Ceci est généralement dû à des retards dans la création de profils utilisateur.  
   
 ## <a name="hide-user-details-in-the-reports"></a>Masquer les détails des utilisateurs dans les rapports
 
@@ -212,7 +222,7 @@ Si vous voulez masquer les informations concernant les utilisateurs individuels 
 
 2. Sélectionnez **Rapports**. 
   
-3. Dans le volet **Rapports** , sélectionnez les options souhaitées, puis enregistrez vos modifications.
+3. Dans le volet **Rapports**, sélectionnez les options souhaitées, puis enregistrez vos modifications.
   
 Votre liste d’utilisateurs se présente comme suit :
   
