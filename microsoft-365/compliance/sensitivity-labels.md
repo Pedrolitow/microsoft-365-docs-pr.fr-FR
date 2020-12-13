@@ -22,12 +22,12 @@ description: Utilisez les étiquettes de confidentialité de Microsoft Informati
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: c012b422e5c1452bf6ccd58e0743509a2cf07f32
-ms.sourcegitcommit: 21b0ea5715e20b4ab13719eb18c97fadb49b563d
+ms.openlocfilehash: 61bb7afedbbafb1272c3dfdbbecd0ede9777effe
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/11/2020
-ms.locfileid: "49624786"
+ms.locfileid: "49655576"
 ---
 # <a name="learn-about-sensitivity-labels"></a>En savoir plus sur les étiquettes de niveau de confidentialité
 
@@ -109,11 +109,11 @@ Une fois qu’une étiquette de confidentialité est appliquée à un e-mail ou 
     
     Vous ne pouvez pas configurer les paramètres de protection pour les groupes et les sites tant que vous n’activez pas cette fonctionnalité. Cette configuration d’étiquettes ne permet pas aux documents ni aux e-mails d’être automatiquement étiquetés. En lieu et place, les paramètres d’étiquette protègent le contenu en contrôlant l’accès au conteneur dans lequel le contenu est stocké. Ces paramètres incluent les paramètres de confidentialité, l’accès des utilisateurs externes et le partage externe, ainsi que l’accès à partir d’appareils non gérés.
 
-- **Appliquez automatiquement l’étiquette dans des applications Office ou recommandez une étiquette.** Vous pouvez choisir le type d’informations sensibles que vous voulez étiqueter. L'étiquette peut être appliquée automatiquement, ou vous pouvez inviter les utilisateurs à appliquer l’étiquette que vous recommandez. Si vous recommandez une étiquette, l’invite affiche le texte de votre choix. Par exemple :
+- **Appliquer automatiquement l’étiquette aux fichiers et e-mails ou recommandez une étiquette.** Choisissez comment identifier les informations sensibles que vous voulez étiqueter. L'étiquette peut être appliquée automatiquement, ou vous pouvez inviter les utilisateurs à appliquer l’étiquette que vous recommandez. Si vous recommandez une étiquette, l’invite affiche le texte de votre choix. Par exemple :
     
     ![Invitation de mise à attribuer une étiquette requise](../media/Sensitivity-label-Prompt-for-required-label.png)
     
-    Pour plus d’informations sur les paramètres d' **Étiquetage automatique pour les applications Office** lorsque vous créez ou modifiez une étiquette de confidentialité, voir [Appliquer automatiquement une étiquette de confidentialité à du contenu](apply-sensitivity-label-automatically.md).
+    Pour plus d’informations sur les paramètres d' **Étiquetage automatique pour les fichiers et e-mails** lorsque vous créez ou modifiez une étiquette de confidentialité, consultez [Appliquer automatiquement une étiquette de confidentialité à du contenu](apply-sensitivity-label-automatically.md) pour les applications Office et [Étiqueter automatiquement vos données dans Azure Preview](https://docs.microsoft.com/azure/purview/create-sensitivity-label).
 
 ### <a name="label-scopes"></a>Étendues des étiquettes
 
@@ -274,4 +274,3 @@ Vous pouvez également en savoir plus sur les [solutions de partenaires intégr�
 ## <a name="deployment-guidance"></a>Instructions de déploiement
 
 Pour la planification et des instructions relatives au déploiement qui incluent les informations relatives aux licences, les autorisations, la stratégie de déploiement, une liste de ressources pour les scénarios pris en charge et la documentation de l’utilisateur final, voir [Prise en main des étiquettes de confidentialité](get-started-with-sensitivity-labels.md).
-
