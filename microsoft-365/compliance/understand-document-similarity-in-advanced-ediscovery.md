@@ -2,8 +2,8 @@
 title: Comprendre la similarité des documents dans Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 09/14/2017
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 4d4cb381-4c9a-4165-a455-609d525c7a88
 description: Examinez la valeur similarité des documents, le niveau de ressemblance minimal entre deux fichiers à considérer comme des doublons, fonctionne dans Advanced eDiscovery.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 939e9ad6cb193e2019fe84f1e0d3482eebac721c
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 22eb27e7afdc6ad37ea6fdcba9b64298906f1c35
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936639"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663313"
 ---
 # <a name="understand-document-similarity-in-advanced-ediscovery-classic"></a>Comprendre la similarité des documents dans Advanced eDiscovery (classique)
 
@@ -58,7 +58,7 @@ Une fois les ensembles fusionnés, le document croisé dynamique peut changer lo
   
 ## <a name="related-topics"></a>Voir aussi
 
-[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
   
 [Définition des options d’analyse](set-analyze-options-in-advanced-ediscovery.md)
   

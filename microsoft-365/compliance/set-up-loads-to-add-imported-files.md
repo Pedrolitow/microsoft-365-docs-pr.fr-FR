@@ -2,8 +2,8 @@
 title: Configurer les charges pour ajouter des fichiers importés dans Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 9/14/2017
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0e0a9d04-294f-4f54-8bf1-b32d81345126
 description: Passez en revue les étapes nécessaires pour ajouter des fichiers importés à la dernière charge ou un lot de fichiers défini avant de procéder à la formation pertinente dans Advanced eDiscovery.
-ms.openlocfilehash: fc05111d9193a935158b4b00a14717877ae148a7
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 7cd244ba1ba516c2b7376b71e809b4c01ff5df8b
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936815"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663479"
 ---
 # <a name="set-up-loads-to-add-imported-files-in-advanced-ediscovery-classic"></a>Configurer les charges pour ajouter des fichiers importés dans Advanced eDiscovery (classique)
 
@@ -116,7 +116,7 @@ Les charges de roulement et les fonctionnalités de rattrapage varient comme sui
     
     Vous pouvez ensuite baliser les fichiers et exécuter une opération Calculate. Le balisage permet de déterminer si les charges sont similaires ou distinctes et vous permet de continuer à travailler sur le nouveau jeu de fichiers.
     
-7. Une fois le jeu de rattrapage révisé, affichez le ** \> suivi de pertinence** pour les résultats de rattrapage. 
+7. Une fois le jeu de rattrapage révisé, affichez le **\> suivi de pertinence** pour les résultats de rattrapage. 
     
 1. Si le nouveau chargement de fichier a été ajouté au cours de la formation à la pertinence (ce qui signifie que le problème n’a pas encore été effectué par le calcul par lot), **poursuivez la formation** à l’étape suivante, quels que soient les résultats de rattrapage. 
     

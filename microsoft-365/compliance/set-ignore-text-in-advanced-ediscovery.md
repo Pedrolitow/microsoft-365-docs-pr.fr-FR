@@ -2,8 +2,8 @@
 title: Définir l’option ignorer le texte pour l’analyse dans Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 9/14/2017
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 44055727-56e8-42d7-9dc3-fb942f3901cc
 description: Découvrez comment définir la règle pour ignorer le texte spécifique lors de l’utilisation des modules Analyze et process dans Advanced eDiscovery.
-ms.openlocfilehash: e167cc2877ca6e1ecb2b4ac896e2000b0441be59
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+ms.openlocfilehash: f61724e3964ff4ba7f099dbfb4411e19db258adc
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48285850"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663469"
 ---
 # <a name="set-ignore-text-option-for-analyze-in-advanced-ediscovery-classic"></a>Définir l’option ignorer le texte pour l’analyse dans Advanced eDiscovery (classique)
 
@@ -102,7 +102,7 @@ Les expressions régulières sont prises en charge pour une utilisation lors de 
   
 ## <a name="define-ignore-text-rule"></a>Définir la règle de texte ignorer
 
-1. Dans l’onglet gérer l’analyse et les ** \> \> options** , dans la section **ignorer le texte** , cliquez sur l' **+** icône pour ajouter une règle. 
+1. Dans l’onglet gérer l’analyse et les **\> \> options** , dans la section **ignorer le texte** , cliquez sur l' **+** icône pour ajouter une règle. 
     
 2. Dans la boîte de dialogue **Ajouter le texte ignorer** , dans le champ **nom** , tapez un nom pour la règle ignorer le texte. 
     

@@ -19,28 +19,26 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: Dans cet article, vous apprendrez à créer, tester et régler une stratégie DLP en fonction des besoins de votre organisation.
-ms.openlocfilehash: ef88da90d8e009d3ea634c9142d7d917fbfd288a
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 9b43899969ab0fdc5d67b051db36c0b245f7811e
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546934"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663191"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Création, test et réglage d’une stratégie DLP
 
-La protection contre la perte de données (DLP) est une fonctionnalité de conformité conçue pour aider votre organisation à empêcher toute exposition involontaire ou accidentelle d’informations sensibles à des parties indésirables. DLP a ses racines dans Exchange Server et Exchange Online, et est également applicable dans SharePoint Online et OneDrive entreprise.
+La protection contre la perte de données (DLP) vous permet d’empêcher le partage involontaire ou accidentel d’informations sensibles.
 
-DLP utilise un moteur d’analyse de contenu pour examiner le contenu des messages électroniques et des fichiers, en recherchant des informations sensibles telles que des numéros de carte de crédit et des informations d’identification personnelle. Les informations sensibles ne doivent généralement pas être envoyées par courrier électronique, ni être incluses dans des documents, sans effectuer d’étapes supplémentaires, telles que le chiffrement des messages électroniques ou des fichiers. À l’aide de DLP, vous pouvez détecter des informations sensibles et effectuer les actions suivantes :
+DLP examine les messages électroniques et les fichiers pour obtenir des informations sensibles, comme un numéro de carte de crédit. À l’aide de DLP, vous pouvez détecter des informations sensibles et effectuer les actions suivantes :
 
 - Consigner l’événement à des fins d’audit
 - Afficher un avertissement à l’utilisateur final qui envoie le courrier électronique ou partage le fichier
 - Bloquer activement le courrier électronique ou le partage de fichiers
 
-Parfois, les clients font disparaître DLP car ils ne tiennent pas compte du type de données à protéger. Il est supposé que les données sensibles, telles que les enregistrements médicaux ou les informations financières, existent uniquement pour les industries comme les soins de santé ou pour les entreprises qui exécutent des magasins en ligne. Toutefois, toute entreprise peut gérer les informations sensibles de manière régulière, même si elles ne le savent pas. Une feuille de calcul des noms d’employés et des dates de naissance est aussi sensible qu’une feuille de calcul des noms des clients et des informations de carte de crédit. En d’autres termes, ce type d’informations a tendance à flotter plus que prévu, car les employés se déplacent en silence sur leurs tâches quotidiennes, ne pensent rien de l’exportation d’un fichier CSV à partir d’un système et de son envoi à une personne. Vous pouvez également être surpris de savoir si les employés envoient des courriers électroniques contenant des informations sur la carte bancaire ou bancaire sans prendre en compte les conséquences.
-
 ## <a name="permissions"></a>Autorisations
 
-Les membres de votre équipe de mise en conformité qui créeront des stratégies DLP ont besoin des autorisations d’accès au Centre de conformité et de sécurité. Par défaut, votre administrateur de client a accès à cet emplacement et peut autoriser des agents de conformité et d’autres personnes à accéder au Centre de sécurité et conformité, sans pour autant leur octroyer toutes les autorisations d’un administrateur de client. Pour cela, nous vous recommandons de :
+Les membres de votre équipe de mise en conformité qui créeront des stratégies DLP ont besoin des autorisations d’accès au Centre de conformité. Par défaut, votre administrateur client peut accéder à des responsables de la mise en conformité et d’autres personnes. Procédez comme suit :
   
 1. Créer un groupe dans Microsoft 365 et d’y ajouter des responsables de la mise en conformité.
     
@@ -50,34 +48,34 @@ Les membres de votre équipe de mise en conformité qui créeront des stratégie
     
 4. Utilisez la section **Choisir des membres** pour ajouter le groupe Microsoft 365 que vous avez créé précédemment au groupe de rôles.
 
-Vous pouvez également créer un groupe de rôles avec des privilèges en affichage seul vers les stratégies DLP et les rapports DLP en accordant au rôle **Gestion de la conformité DLP en affichage seul**.
+Utilisez le rôle de **gestion de conformité de DLP en affichage seul** pour créer un groupe de rôles avec des privilèges en lecture seule sur les rapports DLP et stratégies DLP.
 
 Pour plus d’informations, voir [Give users access to the Office 365 Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
   
-Ces autorisations sont requises uniquement pour créer et appliquer une stratégie DLP. L’application d’une stratégie ne nécessite pas d’accès au contenu.
+Ces autorisations sont requises pour créer et appliquer une stratégie DLP afin de ne pas appliquer les stratégies.
 
 ## <a name="how-sensitive-information-is-detected-by-dlp"></a>Détection des informations sensibles par DLP
 
-Les informations sensibles sont identifiées par une correspondance de modèle d’expression régulière (RegEx), en combinaison avec d’autres indicateurs, tels que la proximité de certains mots clés aux modèles de correspondance. Par exemple, il s’agit de numéros de carte de crédit. Un numéro de carte de crédit VISA comporte 16 chiffres. Toutefois, ces chiffres peuvent être écrits de différentes manières, par exemple 1111-1111-1111-1111, 1111 1111 1111 1111 ou 1111111111111111.
+DLP trouve des informations sensibles par correspondance de modèle d’expression régulière (RegEx), en combinaison avec d’autres indicateurs, tels que la proximité de certains mots clés aux modèles de correspondance. Par exemple, un numéro de carte de crédit VISA comporte 16 chiffres. Toutefois, ces chiffres peuvent être écrits de différentes manières, par exemple 1111-1111-1111-1111, 1111 1111 1111 1111 ou 1111111111111111.
 
 N’importe quelle chaîne de 16 chiffres n’est pas nécessairement un numéro de carte de crédit, il peut s’agir d’un numéro de ticket provenant d’un système de support technique ou d’un numéro de série d’une partie de matériel. Pour connaître la différence entre le numéro de carte de crédit et une chaîne inoffensive de 16 chiffres, un calcul est effectué (checksum) pour confirmer que les numéros correspondent à un modèle connu des différentes marques de carte de crédit.
 
-Par ailleurs, la proximité des mots-clés tels que « VISA » ou « AMEX », ainsi que la proximité des valeurs de date qui peuvent correspondre à la date d’expiration de la carte de crédit, est également considérée comme une décision concernant le numéro de carte de crédit ou non.
+Si DLP trouve des mots-clés tels que « VISA » ou « AMEX », des valeurs de date proche pouvant correspondre à la date d’expiration de la carte de crédit, DLP utilise également ces données pour déterminer si la chaîne est un numéro de carte de crédit ou non.
 
-En d’autres termes, DLP est généralement assez intelligent pour reconnaître la différence entre ces deux textes dans un e-mail :
+En d’autres termes, DLP est assez intelligent pour reconnaître la différence entre ces deux chaînes de texte dans un message électronique :
 
 - «Pouvez-vous commander un nouvel ordinateur portable. Utilisez mon numéro de VISA 1111-1111-1111-1111, expiration 11/22, et m’envoyer la date de livraison estimée lorsque vous l’avez. "
 - «Mon numéro de série d’ordinateur portable est 2222-2222-2222-2222 et il a été acheté le 11/2010. À propos, est-ce que mon visa de voyage est encore approuvé ?»
 
-Une référence intéressante pour conserver les signets est une [définition d’entité de type informations sensibles](sensitive-information-type-entity-definitions.md) qui explique comment chaque type d’informations est détecté.
+Consultez la rubrique [informations sensibles sur les définitions d’entités](sensitive-information-type-entity-definitions.md) qui expliquent comment chaque type d’informations est détecté.
 
 ## <a name="where-to-start-with-data-loss-prevention"></a>Où commencer avec la protection contre la perte de données
 
 Lorsque les risques de fuites de données ne sont pas totalement évidents, il est difficile de déterminer exactement où commencer à mettre en œuvre DLP. Heureusement, les stratégies DLP peuvent être exécutées en « mode test », ce qui vous permet d’évaluer leur efficacité et leur exactitude avant de les activer.
 
-Les stratégies DLP pour Exchange Online peuvent être gérées via le centre d’administration Exchange. Toutefois, vous pouvez configurer des stratégies DLP pour toutes les charges de travail via le centre de sécurité & conformité, ce que nous allons utiliser pour les démonstrations de cet article. Dans le centre de sécurité & conformité, vous trouverez les stratégies DLP sous stratégie de **protection contre la perte de données**  >  **Policy**. Cliquez sur **créer une stratégie** à démarrer.
+Les stratégies DLP pour Exchange Online peuvent être gérées via le centre d’administration Exchange. Toutefois, vous pouvez configurer des stratégies DLP pour toutes les charges de travail via le centre de sécurité & conformité, ce que nous allons utiliser pour les démonstrations de cet article. Dans le centre de sécurité & conformité, vous trouverez les stratégies DLP sous stratégie de **protection contre la perte de données**  >  . Choisissez **créer une stratégie** à démarrer.
 
-Microsoft 365 fournit une gamme de [modèles de stratégie DLP](what-the-dlp-policy-templates-include.md) que vous pouvez utiliser pour créer des stratégies DLP. Imaginons que vous êtes une entreprise australienne. Vous pouvez filtrer les modèles de stratégie pour n’afficher que ceux qui sont pertinents pour l’Australie, qui entrent dans les catégories générales de finances, médecine et santé, ainsi que la confidentialité.
+Microsoft 365 fournit une gamme de [modèles de stratégie DLP](what-the-dlp-policy-templates-include.md) que vous pouvez utiliser pour créer des stratégies. Imaginons que vous êtes une entreprise australienne. Vous pouvez filtrer les modèles sur l’Australie, puis choisir finance, médical, Health et privacy.
 
 ![Option permettant de choisir un pays ou une région](../media/DLP-create-test-tune-choose-country.png)
 
@@ -93,11 +91,11 @@ Choisissez les emplacements auxquels la stratégie s’applique. Les stratégies
 
 ![Option permettant de choisir tous les emplacements](../media/DLP-create-test-tune-choose-locations.png)
 
-À la première étape des **paramètres de stratégie** , acceptez les valeurs par défaut pour le moment. Il existe un grand nombre de personnalisations que vous pouvez effectuer dans les stratégies DLP, mais les valeurs par défaut sont un bon point de départ.
+À la première étape des **paramètres de stratégie** , acceptez les valeurs par défaut pour le moment. Vous pouvez personnaliser les stratégies DLP, mais les valeurs par défaut sont un bon point de départ.
 
 ![Options de personnalisation du type de contenu à protéger](../media/DLP-create-test-tune-default-customization-settings.png)
 
-Après avoir cliqué sur **suivant** , une page Paramètres de **stratégie** supplémentaires s’affiche avec davantage d’options de personnalisation. Pour une stratégie que vous venez de tester, c’est ici que vous pouvez commencer à effectuer quelques ajustements.
+Après avoir cliqué sur suivant, * * vous verrez apparaître une page **paramètres de stratégie** supplémentaires avec davantage d’options de personnalisation. Pour une stratégie que vous venez de tester, c’est ici que vous pouvez commencer à effectuer quelques ajustements.
 
 - J’ai désactivé les conseils de stratégie pour l’instant, ce qui est une étape raisonnable à effectuer si vous testez les éléments et que vous ne souhaitez pas encore afficher quoi que ce soit pour les utilisateurs. Les conseils de stratégie indiquent aux utilisateurs qu’ils sont sur le point de violer une stratégie DLP. Par exemple, un utilisateur Outlook verra un avertissement indiquant que le fichier auquel il est attaché contient des numéros de carte de crédit et que son courrier sera rejeté. L’objectif des conseils de stratégie est d’arrêter le comportement non conforme avant qu’il ne se produise.
 - J’ai également réduit le nombre d’instances de 10 à 1, de sorte que cette stratégie détecte le partage des données PII australiennes, et pas simplement le partage des données en bloc.
@@ -210,7 +208,7 @@ Une autre solution consiste à augmenter simplement le nombre d’instances, de 
 
 En plus de modifier le nombre d’instances, vous pouvez également ajuster la précision de la correspondance (ou le niveau de confiance). Si votre type d’informations sensibles comporte plusieurs modèles, vous pouvez ajuster la précision des correspondances dans votre règle, afin que votre règle corresponde uniquement à des modèles spécifiques. Par exemple, pour réduire les faux positifs, vous pouvez définir la précision de la règle de sorte qu’elle corresponde uniquement au modèle ayant le niveau de confiance le plus élevé. Comprendre comment le niveau de confiance est calculé est un peu délicat (et au-delà de l’étendue de cette publication), mais voici une bonne explication de [l’utilisation du niveau de confiance pour régler vos règles](data-loss-prevention-policies.md#match-accuracy).
 
-Enfin, si vous souhaitez obtenir un peu plus de détails, vous pouvez personnaliser tout type d’informations sensibles, par exemple, vous pouvez supprimer « Sydney NSW » de la liste des mots-clés du [numéro de permis de conduire Australie](sensitive-information-type-entity-definitions.md#australia-drivers-license-number), afin d’éliminer le faux positif déclenché ci-dessus. Pour savoir comment effectuer cette opération à l’aide de XML et de PowerShell, consultez cette rubrique relative à la [Personnalisation d’un type d’informations sensibles intégré](customize-a-built-in-sensitive-information-type.md).
+Enfin, si vous souhaitez obtenir un peu plus de détails, vous pouvez personnaliser tout type d’informations sensibles, par exemple, vous pouvez supprimer « Sydney NSW » de la liste des mots-clés du [numéro de permis de conduire Australie](sensitive-information-type-entity-definitions.md#australia-drivers-license-number), afin d’éliminer le faux positif déclenché ci-dessus. Pour savoir comment effectuer cette opération à l’aide de XML et de PowerShell, consultez la rubrique [Customizing a Built-in sensibles information type](customize-a-built-in-sensitive-information-type.md).
 
 ## <a name="turn-on-a-dlp-policy"></a>Activer une stratégie DLP
 

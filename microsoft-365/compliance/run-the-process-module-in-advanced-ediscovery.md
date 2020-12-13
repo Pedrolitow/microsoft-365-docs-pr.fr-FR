@@ -2,8 +2,8 @@
 title: Exécuter le module de processus dans Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 9/14/2017
@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: dbc1e251-0596-443b-ac9b-f398ba955b73
 description: Découvrez les instructions relatives à la préparation de fichiers de cas de données pour analyse avec Advanced eDiscovery.
-ms.openlocfilehash: 5130bea7da8922fd7e98d07696ffde3930d2ce41
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 3773833d9d0af993b4ccb35bcd18276800c4081f
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936197"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49662809"
 ---
 # <a name="run-the-process-module-in-advanced-ediscovery-classic"></a>Exécuter le module de processus dans Advanced eDiscovery (classique)
 
-Les fichiers case sont chargés dans la découverte électronique avancée lors de la **préparation** \> **Process**. 
+Les fichiers case sont chargés dans la découverte électronique avancée lors de la **préparation** \> . 
   
 > [!NOTE]
 > Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -74,7 +74,7 @@ Une étiquette définie par l’utilisateur peut être associée à un ensemble 
   
 ## <a name="see-also"></a>Voir aussi
 
-[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
   
 [Exécution du module de processus et chargement des données](run-the-process-module-and-load-data-in-advanced-ediscovery.md)
   

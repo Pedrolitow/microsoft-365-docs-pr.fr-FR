@@ -2,8 +2,8 @@
 title: Afficher les résultats du module de processus dans Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 9/14/2017
@@ -16,23 +16,23 @@ search.appverid:
 - MET150
 ms.assetid: c6f016cb-409f-4ae9-911c-1395cf0c86ea
 description: Découvrez comment trouver les résultats d’un module de processus exécuté dans Advanced eDiscovery, y compris l’état de la tâche et le résumé des processus.
-ms.openlocfilehash: 26ef87c762fc5c77f2374978bf4a425940dd5f37
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 73699d77e305055f6c2dc444fff00fb714b458cd
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936167"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663258"
 ---
 # <a name="view-process-module-results-in-advanced-ediscovery-classic"></a>Afficher les résultats du module de processus dans Advanced eDiscovery (classique)
 
-Une **Prepare** fois le \> **processus** de préparation initié, vous pouvez afficher l’avancement et les résultats. 
+Une  fois le \> **processus** de préparation initié, vous pouvez afficher l’avancement et les résultats. 
   
 > [!NOTE]
 > Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 ## <a name="process-task-status"></a>État de tâche de processus
 
-Dans **préparer** les \> **Process** \> **résultats**du processus, la page affiche l’état actuel (si le processus est en cours d’exécution) ou l’état de la dernière tâche d’État du processus, comme illustré dans l’exemple suivant.
+Dans **préparer** les \>  \> **résultats** du processus, la page affiche l’état actuel (si le processus est en cours d’exécution) ou l’état de la dernière tâche d’État du processus, comme illustré dans l’exemple suivant.
   
 ![État de tâche du module de processus](../media/9430f9e7-a4dd-47c7-ac2e-2c6a60fc948b.png)
   
@@ -46,7 +46,7 @@ Les tâches affichées peuvent varier en fonction des options de processus séle
     
 - **Synchronisation de la base de données**: processus de base de données interne.
     
-- **Copie**de fichiers : copie les fichiers du processus. Cette tâche est toujours affichée, même lorsque l’option copie avancée des fichiers est sélectionnée.
+- **Copie** de fichiers : copie les fichiers du processus. Cette tâche est toujours affichée, même lorsque l’option copie avancée des fichiers est sélectionnée.
     
 - **Extraction de texte**: lorsqu’il existe des fichiers natifs, Advanced eDiscovery extrait le texte de ces fichiers à l’aide de DTSearch. Le texte extrait de ces fichiers est stocké sous forme de fichiers texte dans le dossier case.
     
@@ -68,11 +68,11 @@ Dans \> \> \> la synthèse du processus de préparation des résultats du proces
   
 Les volets présentent un affichage graphique des statistiques sur les fichiers importés, comme suit :
   
-- Le **Résumé des processus accumule**d : tous les fichiers dans le cas.
+- Le **Résumé des processus accumule** d : tous les fichiers dans le cas.
     
 - **Dernier processus-Résumé**: fichiers chargés à partir de la dernière session ou action. 
     
-- **Famille : informations**sur la famille dans le cas (le cas échéant).
+- **Famille : informations** sur la famille dans le cas (le cas échéant).
     
 - Si des fichiers de **départ** ont été ajoutés, le nombre de fichiers de départ est indiqué par problème qui a été défini pour les fichiers. 
     
@@ -100,7 +100,7 @@ La barre de droite, traitée, inclut les éléments suivants :
     
   - **Non-texte**: fichiers texte vides, fichiers texte natif vides, fichiers non-texte natifs. 
     
-  - **Duplicate**s : fichiers en double avec texte.
+  - **Duplicate** s : fichiers en double avec texte.
     
 ## <a name="last-process-errors"></a>Erreurs du dernier processus
 
@@ -110,7 +110,7 @@ Dans prepare \> process \> results \> Last process Errors, les détails des erre
   
 ## <a name="see-also"></a>Voir aussi
 
-[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
   
 [Exécution du module de processus et chargement des données](run-the-process-module-and-load-data-in-advanced-ediscovery.md)
 

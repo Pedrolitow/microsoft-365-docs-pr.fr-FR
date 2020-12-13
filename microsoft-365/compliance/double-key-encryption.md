@@ -12,12 +12,12 @@ ms.reviewer: esaggese
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 39d7933014f1dc71f8c94e467954d36ede4fb451
-ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
+ms.openlocfilehash: 9607b095ba073229edae43c1d2f0e893db07c634
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48277538"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663089"
 ---
 # <a name="double-key-encryption-for-microsoft-365"></a>Chiffrement à double clé pour Microsoft 365
 
@@ -57,7 +57,7 @@ Si votre organisation dispose de l’une des conditions suivantes, vous pouvez u
 
 ## <a name="system-and-licensing-requirements-for-dke"></a>Exigences en matière de système et de licence pour DKE
 
-Le **chiffrement à double clé pour microsoft 365** est fourni avec Microsoft 365 E5 et Office 365 E5. Si vous n’avez pas de licence Microsoft 365 E5, vous pouvez vous inscrire pour obtenir une [version d’évaluation](https://aka.ms/M365E5ComplianceTrial). Pour plus d’informations sur ces licences, consultez [la rubrique Microsoft 365 Licensing Guidance for security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+Le **chiffrement à double clé pour microsoft 365** est fourni avec Microsoft 365 E5. Si vous n’avez pas de licence Microsoft 365 E5, vous pouvez vous inscrire pour obtenir une [version d’évaluation](https://aka.ms/M365E5ComplianceTrial). Pour plus d’informations sur ces licences, consultez [la rubrique Microsoft 365 Licensing Guidance for security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 **Azure information protection**. DKE fonctionne avec les étiquettes de confidentialité et nécessite Azure information protection.
 
@@ -246,7 +246,7 @@ Les paramètres de client et de clé DKE se trouvent dans le fichier **appsettin
 Localisez le `JwtAudience` . Remplacez `<yourhostname>` par le nom d’hôte de l’ordinateur sur lequel le service DKE s’exécutera. Par exemple :
 
   > [!IMPORTANT]
-  > La valeur de `JwtAudience` doit correspondre *exactement*au nom de votre hôte. Vous pouvez utiliser **localhost : 5001** lors du débogage. Toutefois, lorsque vous avez fini de déboguer, veillez à mettre à jour cette valeur sur le nom d’hôte du serveur.
+  > La valeur de `JwtAudience` doit correspondre *exactement* au nom de votre hôte. Vous pouvez utiliser **localhost : 5001** lors du débogage. Toutefois, lorsque vous avez fini de déboguer, veillez à mettre à jour cette valeur sur le nom d’hôte du serveur.
 
 - `TestKeys:Name`. Entrez un nom pour votre clé. Par exemple : `TestKey1`
 - `TestKeys:Id`. Créez un GUID et entrez-le en tant que `TestKeys:ID` valeur. Par exemple, `DCE1CC21-FF9B-4424-8FF4-9914BD19A1BE`. Vous pouvez utiliser un site comme le [Générateur de GUID en ligne](https://guidgenerator.com/) pour générer un GUID de manière aléatoire.
@@ -378,7 +378,7 @@ Pour publier le magasin de clés, vous allez créer une instance de service d’
 
     - Entrez le nom d’hôte de l’ordinateur sur lequel vous souhaitez installer le service DKE. Assurez-vous qu’il s’agit du même nom que celui défini pour le paramètre JwtAudience dans le fichier [**appsettings.js**](#tenant-and-key-settings) . La valeur que vous fournissez pour le nom est également WebAppInstanceName.
 
-    - Pour **publier**, sélectionner le **code**et pour la **pile Runtime**, sélectionnez **.net Core 3,1**.
+    - Pour **publier**, sélectionner le **code** et pour la **pile Runtime**, sélectionnez **.net Core 3,1**.
 
     Par exemple :
 
@@ -416,7 +416,7 @@ DKE est déployé et vous pouvez accéder aux clés de test que vous avez créé
 
 1. Connectez-vous au service d’application que vous avez créé [ci-dessus](#deploy-the-dke-service-and-publish-the-key-store).
 
-    Dans votre navigateur, accédez à : **Azure portal**  >  **App Service**  >  **Centre de déploiement**de  >  **déploiement manuel**  >  **FTP**  >  **Dashboard**du centre de déploiement Azure Portal App.
+    Dans votre navigateur, accédez à :   >    >  **Centre de déploiement** de  >  **déploiement manuel**  >    >  du centre de déploiement Azure Portal App.
 
 2. Copiez les chaînes de connexion affichées dans un fichier local. Vous utiliserez ces chaînes pour vous connecter au service d’application Web et télécharger des fichiers via FTP.
 
@@ -460,7 +460,7 @@ Les étapes suivantes vous permettent d’enregistrer votre service DKE. L’ins
 
 Pour enregistrer le service DKE :
 
-1. Dans votre navigateur, ouvrez le [portail Microsoft Azure](https://ms.portal.azure.com/), puis accédez à **toutes les** \> **Identity** \> **inscriptions des applications d'** identité des services.
+1. Dans votre navigateur, ouvrez le [portail Microsoft Azure](https://ms.portal.azure.com/), puis accédez à **toutes les** \>  \> **inscriptions des applications d'** identité des services.
 
 2. Sélectionnez **nouvelle inscription**, puis entrez un nom explicite.
 

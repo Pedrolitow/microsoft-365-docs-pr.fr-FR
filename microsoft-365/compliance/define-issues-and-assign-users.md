@@ -2,8 +2,8 @@
 title: Définition des problèmes et affectation des utilisateurs dans Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 48d37ee7-05bd-4cb8-9723-a8959ad23fbe
 description: Découvrez comment ajouter ou modifier un problème, y compris lui affecter des utilisateurs ou supprimer un problème pour un cas eDiscovery dans Advanced eDiscovery.
-ms.openlocfilehash: 3e1366962393b6e1bb3605472b4f635fbcf6e4bd
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 1bdcb6f6562b0a431f1645d4006b3392d90a9f87
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630657"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663069"
 ---
 # <a name="define-issues-and-assign-users-in-advanced-ediscovery-classic"></a>Définition des problèmes et affectation des utilisateurs dans Advanced eDiscovery (classique)
 
@@ -31,7 +31,7 @@ Dans Advanced eDiscovery, un ou plusieurs problèmes peuvent être définis dans
   
 ## <a name="adding-or-editing-an-issue-and-assigning-users"></a>Ajout ou modification d’un problème et affectation d’utilisateurs
 
-1. Dans \> l' ** \> onglet Configuration** de pertinence pertinence, sélectionnez **problèmes**.
+1. Dans l' **onglet \> configuration** de pertinence pertinence, \> sélectionnez **problèmes**.
     
     ![Problèmes de configuration de pertinence](../media/dfd8f9ef-b167-4ed9-980e-00ae98a97169.png)
   
@@ -66,7 +66,7 @@ Dans Advanced eDiscovery, un ou plusieurs problèmes peuvent être définis dans
 
 Des problèmes peuvent être supprimés (c’est-à-dire supprimés de la base de données) uniquement immédiatement après qu’ils ont été définis et qu’aucun travail réel n’a été effectué pour ce problème. 
   
-1. Dans l' ** \> onglet Configuration** de pertinence de pertinence, sélectionnez **problèmes**.
+1. Dans l' **onglet \> configuration** de pertinence de pertinence, sélectionnez **problèmes**.
     
 2. Sélectionnez le problème à supprimer de la base de données, puis cliquez sur **supprimer**.
     

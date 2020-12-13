@@ -2,8 +2,8 @@
 title: Utiliser le module de pertinence dans Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 9/14/2017
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 5d671821-d188-42da-a9ce-9cfe92beedfd
 description: Découvrez le module de pertinence dans Advanced eDiscovery, notamment un flux de travail et des instructions, ainsi que les étapes de formation et de révision de fichiers.
-ms.openlocfilehash: 8d5cbfff2b205ba785cda269bb09560b2a813f3c
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 0319ac378fb891d96437f53931213429b111d61d
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936607"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663283"
 ---
 # <a name="use-the-relevance-module-in-advanced-ediscovery-classic"></a>Utiliser le module de pertinence dans Advanced eDiscovery (classique)
 
@@ -133,7 +133,7 @@ Il est possible d’accepter ou de remplacer les choix avancés de traitement de
   
 ## <a name="see-also"></a>Voir aussi
 
-[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
   
 [Présentation de l’évaluation en matière de pertinence](assessment-in-relevance-in-advanced-ediscovery.md)
   

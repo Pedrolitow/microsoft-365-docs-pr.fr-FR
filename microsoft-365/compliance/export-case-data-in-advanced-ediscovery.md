@@ -2,8 +2,8 @@
 title: Exporter des données de cas dans Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: c3198d1c-51b4-4280-87c5-269b47246d33
 description: Comprendre les instructions relatives à l’exportation des données de cas eDiscovery et des résultats à consulter à l’aide du processus d’exportation dans Advanced eDiscovery.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ef717ca82962417856c65cae605c445971b27256
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 52546e9107e0a1524a32c4c85c896a47dd66b35c
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936411"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49662859"
 ---
 # <a name="export-case-data-in-advanced-ediscovery-classic"></a>Exporter des données de cas dans Advanced eDiscovery (classique)
 
@@ -40,9 +40,9 @@ Le processus d’exportation dans Advanced eDiscovery permet l’exportation de 
     
 ## <a name="related-topics"></a>Voir aussi
 
-[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
   
-[Exportation des résultats](export-results-in-advanced-ediscovery.md)
+[Exportation des résultats ](export-results-in-advanced-ediscovery.md)
   
 [Affichage de l’historique des lots et exportation des résultats](view-batch-history-and-export-past-results.md)
 

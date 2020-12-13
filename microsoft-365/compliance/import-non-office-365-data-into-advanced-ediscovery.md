@@ -2,8 +2,8 @@
 title: Importer du contenu non-Microsoft 365 pour une analyse avancée de la découverte électronique
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 audience: ITPro
@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: 0ee60763-a30b-495b-8543-971c3384a801
 description: Procédure d’importation du contenu qui n’est pas stocké dans Microsoft 365 dans un objet BLOB Azure afin qu’il puisse être analysé avec AeD
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: be30daa35770247a9dd342b88093872083075547
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 03220e6baf16662ad8dfa970ef4d7077d08b0826
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48636951"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49662899"
 ---
 # <a name="import-non-microsoft-365-content-for-advanced-ediscovery-classic-analysis"></a>Importer du contenu non-Microsoft 365 pour l’analyse avancée eDiscovery (classique)
 
@@ -52,7 +52,7 @@ L’utilisation de la fonctionnalité Télécharger non-Office 365 comme décrit
 ## <a name="upload-non-office-365-content-into-advanced-ediscovery"></a>Chargement de contenu non-Office 365 dans Advanced eDiscovery
 
 
-1. En tant que gestionnaire eDiscovery ou administrateur eDiscovery, ouvrez **eDiscovery**et ouvrez le cas où les données non Office 365 seront téléchargées vers. Si vous devez créer un cas, voir [Manage eDiscovery cases dans le centre de sécurité &amp; conformité](ediscovery-cases.md).
+1. En tant que gestionnaire eDiscovery ou administrateur eDiscovery, ouvrez **eDiscovery** et ouvrez le cas où les données non Office 365 seront téléchargées vers. Si vous devez créer un cas, voir [Manage eDiscovery cases dans le centre de sécurité &amp; conformité](ediscovery-cases.md).
     
 2. Cliquez sur **basculer vers Advanced eDiscovery**.
 

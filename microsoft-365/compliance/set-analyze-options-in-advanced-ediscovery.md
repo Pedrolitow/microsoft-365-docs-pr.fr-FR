@@ -2,8 +2,8 @@
 title: Définir les options d’analyse dans Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 9/14/2017
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: f6cd6588-f6b6-424a-a9ab-3782b842faee
 description: Passez en revue les étapes de configuration des options pour le processus d’analyse dans Advanced eDiscovery, y compris les thèmes de quasi-duplication, les threads de messagerie et les thèmes.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d622e06cdfe9a46f470be46d1a5b9df98347cc0a
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 1ff51402cd79f2966730677a982fa5173b7e9b98
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936881"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663499"
 ---
 # <a name="set-analyze-options-in-advanced-ediscovery-classic"></a>Définir les options d’analyse dans Advanced eDiscovery (classique)
 
@@ -33,7 +33,7 @@ Dans Advanced eDiscovery, définissez les options d’analyse avant d’exécute
   
 ## <a name="set-analyze-options"></a>Définir les options d’analyse
 
-Ouvrez **Prepare prepare prepare \> ** \> **Setup**. La fenêtre suivante s’affiche.
+Ouvrez **Prepare prepare prepare \>** \> **Setup**. La fenêtre suivante s’affiche.
   
 ![Options Définir l’analyse](../media/c3ec7a92-8484-4812-b98c-aa3eb740e5b7.png)
   
@@ -79,11 +79,11 @@ Après avoir défini ces options, cliquez sur **analyser** pour exécuter. [Affi
   
 ## <a name="related-topics"></a>Voir aussi
 
-[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
   
 [Présentation de la similarité des documents](understand-document-similarity-in-advanced-ediscovery.md)
   
-[Définir le texte ignoré](set-ignore-text-in-advanced-ediscovery.md)
+[Définir le texte ignoré ](set-ignore-text-in-advanced-ediscovery.md)
   
 [Paramètres avancés Définir l’analyse](set-analyze-advanced-settings-in-advanced-ediscovery.md)
   

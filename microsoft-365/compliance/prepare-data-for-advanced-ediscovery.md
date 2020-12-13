@@ -2,8 +2,8 @@
 title: Préparation des données pour Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 9/14/2017
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 2fb94c23-1846-4a0e-994d-da6d02445f15
 description: Découvrez comment utiliser le centre de sécurité &amp; conformité pour préparer les données à analyser avec Advanced eDiscovery.
-ms.openlocfilehash: 3c9d237a3a9c04a443730143998324a7831f2998
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 43253a3908925bc188568f020f48c62a94552403
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936329"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49662879"
 ---
 # <a name="prepare-data-for-advanced-ediscovery-classic"></a>Préparation des données pour Advanced eDiscovery (classique)
 
@@ -67,7 +67,7 @@ Une fois que les résultats de la recherche du centre de sécurité &amp; confor
   
 ## <a name="see-also"></a>Voir aussi
 
-[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
   
 [Configurer des utilisateurs et des cas](set-up-users-and-cases-in-advanced-ediscovery.md)
   

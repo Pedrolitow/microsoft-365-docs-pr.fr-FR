@@ -2,8 +2,8 @@
 title: Affichage de l’historique des lots et exportation des résultats passés dans Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 9/14/2017
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 35d52b41-75ab-4144-9edf-31e11453bd5d
 description: Découvrez comment afficher des informations détaillées pour les sessions de lots d’exportation sélectionnées et comment annuler la dernière session d’exportation dans Advanced eDiscovery.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b142c5d582b9a7bb84dd518325369e4b1adccf69
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 054fa4a88d8c61751b4064b3535de66881655631
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936187"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663273"
 ---
 # <a name="view-batch-history-and-export-past-results-in-advanced-ediscovery-classic"></a>Affichage de l’historique des lots et exportation des résultats passés dans Advanced eDiscovery (classique)
 
@@ -49,7 +49,7 @@ La boîte de dialogue Exporter l’historique fournit des informations détaill�
     
 4. Si vous souhaitez télécharger des données à tout moment à partir d’une session d’exportation exécutée précédemment, cliquez sur l’icône de **Téléchargement** ![ exporter l’icône téléchargement de l’historique par lots en ](../media/de69b920-a6ac-4ddb-b93e-e1cc5888e6c4.gif) regard du lot d’export à exporter. 
     
-5. Lorsque la boîte de dialogue **signature d’accès partagé** s’affiche, cliquez sur **copier dans le presse-papiers** pour copier les données de session d’exportation vers l’ordinateur local, puis cliquez sur **Fermer**. La boîte de dialogue de l’outil d’exportation EDiscovery du centre de sécurité et de sécurité &amp; s’affiche. **eDiscovery Export Tool** 
+5. Lorsque la boîte de dialogue **signature d’accès partagé** s’affiche, cliquez sur **copier dans le presse-papiers** pour copier les données de session d’exportation vers l’ordinateur local, puis cliquez sur **Fermer**. La boîte de dialogue de l’outil d’exportation EDiscovery du centre de sécurité et de sécurité &amp; s’affiche.  
     
     ![Boîte de dialogue Exporter la découverte électronique](../media/01f79d2d-6da0-45e6-9c6f-ab12347572cb.gif)
   
@@ -63,9 +63,9 @@ La boîte de dialogue Exporter l’historique fournit des informations détaill�
     
 ## <a name="related-topics"></a>Voir aussi
 
-[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
   
-[Exportation des résultats](export-results-in-advanced-ediscovery.md)
+[Exportation des résultats ](export-results-in-advanced-ediscovery.md)
 
 [Exportation des champs d’un rapport](export-report-fields-in-advanced-ediscovery.md)
 

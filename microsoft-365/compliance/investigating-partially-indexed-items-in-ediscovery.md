@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 1/26/2018
+ms.date: ''
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -17,13 +17,13 @@ search.appverid:
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
-description: Découvrez comment gérer des éléments partiellement indexés (ou non indexés) à partir d’Exchange, SharePoint et OneDrive entreprise au sein de votre organisation.
-ms.openlocfilehash: 94dc568aa889e76241ef7bd48e3dedaba9b92f2f
-ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
+description: Découvrez comment gérer les éléments partiellement indexés (également appelés éléments non indexés) à partir d’Exchange, SharePoint et OneDrive entreprise au sein de votre organisation.
+ms.openlocfilehash: 6a2a1d042c52a445538903fd7db9fc54305e6c13
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49602061"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49655448"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>Étude des éléments partiellement indexés dans eDiscovery
 
@@ -45,7 +45,7 @@ Une fois que vous avez exécuté une recherche de découverte électronique, le 
   
 - Si un élément est partiellement indexé et correspond à la requête de recherche, il est inclus dans le nombre (et la taille) des éléments de résultat de recherche et des éléments partiellement indexés. Toutefois, lorsque les résultats de cette même recherche sont exportés, l’élément est inclus uniquement avec le jeu de résultats de recherche ; elle n’est pas incluse en tant qu’élément partiellement indexé.
 
-- Si vous spécifiez une plage de dates pour une requête de recherche (en l’incluant dans la requête de mot clé ou à l’aide d’une condition), tout élément partiellement indexé ne correspondant pas à la plage de dates n’est pas inclus dans le nombre d’éléments partiellement indexés. Seuls les éléments partiellement indexés qui appartiennent à la plage de dates sont inclus dans le nombre d’éléments indexés.
+- Si vous spécifiez une plage de dates pour une requête de recherche (en l’incluant dans la requête de mot clé ou à l’aide d’une condition), tout élément partiellement indexé ne correspondant pas à la plage de dates n’est pas inclus dans le nombre d’éléments partiellement indexés. Les éléments partiellement indexés compris dans la plage de dates sont inclus dans le nombre d’éléments indexés.
 
   > [!NOTE]
   > Les éléments partiellement indexés situés dans les sites SharePoint et OneDrive ne *sont pas* inclus dans l’estimation des éléments partiellement indexés affichés dans les statistiques détaillées de la recherche. Toutefois, les éléments partiellement indexés peuvent être exportés lorsque vous exportez les résultats d’une recherche de découverte électronique. Par exemple, si vous recherchez uniquement les sites de recherche, le nombre estimé des éléments partiellement indexés est égal à zéro.
@@ -167,7 +167,7 @@ Les étapes suivantes montrent comment exécuter un script PowerShell qui recher
      }
    ```
 
-2. [Connectez-vous au Centre de conformité et sécurité PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627084).
+2. [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](https://go.microsoft.com/fwlink/p/?linkid=627084).
 
 3. Dans la sécurité & Centre de conformité PowerShell, accédez au dossier dans lequel vous avez enregistré le script à l’étape 1, puis exécutez le script. par exemple :
 

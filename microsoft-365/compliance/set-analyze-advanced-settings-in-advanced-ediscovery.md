@@ -2,8 +2,8 @@
 title: Définir l’analyse des paramètres avancés dans Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 9/14/2017
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: a797682f-ad85-4c08-a354-3850ba2237ee
 description: Découvrez comment configurer les paramètres avancés, notamment les doublons, les threads de messagerie et les thèmes, pour le processus d’analyse dans Advanced eDiscovery.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 39d99609cfff92dcd6e6d2f4483076b8bfe808be
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: ac1300eb26338691722d9ccd15269ccf7f964f58
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936751"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663489"
 ---
 # <a name="set-analyze-advanced-settings-in-advanced-ediscovery"></a>Définir l’analyse des paramètres avancés dans Advanced eDiscovery
 
@@ -31,7 +31,7 @@ ms.locfileid: "44936751"
   
 Advanced eDiscovery fournit des paramètres avancés par défaut pour les paramètres d’analyse de module. La procédure suivante décrit les paramètres qui peuvent être spécifiés.
   
-1. Dans l’onglet **préparer l' \> analyse \> ** , cliquez sur **Paramètres avancés** (au bas de la page). Le panneau suivant s’affiche. 
+1. Dans l’onglet **préparer l' \> analyse \>** , cliquez sur **Paramètres avancés** (au bas de la page). Le panneau suivant s’affiche. 
     
     ![Paramètres avancés Définir l’analyse](../media/c9ea3017-e19a-456b-a742-c3d07121a3f6.png)
   
@@ -49,7 +49,7 @@ Advanced eDiscovery fournit des paramètres avancés par défaut pour les param�
     
 ## <a name="related-topics"></a>Voir aussi
 
-[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
   
 [Présentation de la similarité des documents](understand-document-similarity-in-advanced-ediscovery.md)
   

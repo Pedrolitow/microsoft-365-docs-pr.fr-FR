@@ -2,8 +2,8 @@
 title: Afficher les résultats de l’analyse dans Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 9/14/2017
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 5974f3c2-89fe-4c5f-ac7b-57f214437f7e
 description: Comprendre où afficher les résultats du processus d’analyse dans Advanced eDiscovery, y compris les définitions des options de tâche affichées.
-ms.openlocfilehash: 24a4b0685ec5dc82aff0b1f0de81080a62e49776
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 64c91cb5929a7a74e53d653faff98d5792d3f131
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936947"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663254"
 ---
 # <a name="view-analyze-results-in-advanced-ediscovery-classic"></a>Afficher les résultats de l’analyse dans Advanced eDiscovery (classique)
 
@@ -50,7 +50,7 @@ Les tâches affichées peuvent varier en fonction des options sélectionnées.
     
 - **Themes : calculation des thèmes**: exécute l’analyse des thèmes. (Affiché uniquement s’il est sélectionné.)
     
-- **État**de la tâche : cette ligne s’affiche une fois la tâche terminée. Pendant l’exécution des tâches, la durée de l’exécution s’affiche.
+- **État** de la tâche : cette ligne s’affiche une fois la tâche terminée. Pendant l’exécution des tâches, la durée de l’exécution s’affiche.
     
 > [!NOTE]
 > Les résultats d’analyse des doublons et des threads de messagerie (ND et ED) s’appliquent au nombre de documents à traiter. Il n’inclut pas les fichiers en double exact. 
@@ -77,7 +77,7 @@ Les résultats des **pièces jointes** affichent le nombre de pièces jointes, e
   
 ## <a name="see-also"></a>Voir aussi
 
-[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
   
 [Présentation de la similarité des documents](understand-document-similarity-in-advanced-ediscovery.md)
   

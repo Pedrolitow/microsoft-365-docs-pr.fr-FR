@@ -2,8 +2,8 @@
 title: Exécuter des rapports dans Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 9/14/2017
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: b270243e-99a0-4c34-9b21-acb1512d56c6
 description: Découvrez comment exécuter un rapport pour votre processus sélectionné, puis télécharger son fichier. csv dans Advanced eDiscovery.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9672f8567cdebba357649833187664c2fa8402ab
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: c9681b4766c5f33b992f50cf646e6c3612287abf
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818914"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49662832"
 ---
 # <a name="run-reports-in-advanced-ediscovery-classic"></a>Exécuter des rapports dans Advanced eDiscovery (classique)
 
@@ -45,4 +45,4 @@ Vous pouvez télécharger un fichier. csv avec un rapport pour le processus sél
     
 ## <a name="related-topics"></a>Voir aussi
 
-[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)

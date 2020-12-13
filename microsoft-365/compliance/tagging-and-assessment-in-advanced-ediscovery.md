@@ -2,8 +2,8 @@
 title: Balisage et évaluation dans Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 09/14/2017
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: b5c82de7-ed2f-4cc6-becd-db403faf4d18
 description: Examinez les étapes pour effectuer une formation à l’évaluation, notamment des fichiers de marquage, et en examinant les résultats de l’évaluation dans Advanced eDiscovery.
-ms.openlocfilehash: 57e4e8da0dbeec5e1dba384ae0e62ffb6b3bb03a
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: c8c6f82e7cfb3e2eddcc482039582ea27a702494
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936691"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663459"
 ---
 # <a name="tagging-and-assessment-in-advanced-ediscovery-classic"></a>Balisage et évaluation dans Advanced eDiscovery (classique)
 
@@ -88,7 +88,7 @@ Cette section décrit la procédure pour le module d’évaluation de la pertine
     
     **Nombre prévu de fichiers pertinents lors de l’évaluation**: étant donné les valeurs mises à jour, le nombre prévu de fichiers pertinents dans l’intégralité de l’évaluation une fois que tous les fichiers d’évaluation supplémentaires sont examinés.
     
-4. Cliquez sur **recalculer les valeurs**si les paramètres sont modifiés. Lorsque vous avez terminé, cliquez sur **OK** pour enregistrer les modifications (ou **suivant** lorsqu’il y a plusieurs problèmes à consulter ou modifier, puis **Terminer**). 
+4. Cliquez sur **recalculer les valeurs** si les paramètres sont modifiés. Lorsque vous avez terminé, cliquez sur **OK** pour enregistrer les modifications (ou **suivant** lorsqu’il y a plusieurs problèmes à consulter ou modifier, puis **Terminer**). 
     
     Lorsqu’il existe plusieurs problèmes, une fois que tous les problèmes ont été vérifiés ou ajustés, un **niveau d’évaluation : Résumé** s’affiche, comme illustré dans l’exemple suivant. 
     
@@ -125,7 +125,7 @@ En l’absence de stabilisation statistiquement basée statistiquement, les rés
   
 ## <a name="see-also"></a>Voir aussi
 
-[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
   
 [Présentation de l’évaluation en matière de pertinence](assessment-in-relevance-in-advanced-ediscovery.md)
   

@@ -20,12 +20,12 @@ description: Apprenez à vérifier votre domaine et à créer des enregistrement
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-ms.openlocfilehash: bc22dbd3a050516f518c9ddc9ccf5a3af9c76f12
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: 01fd78033afb6add41975826ed8daddf052826b2
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519292"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49655599"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>Ajouter des enregistrements DNS pour connecter votre domaine
 
@@ -35,7 +35,7 @@ Si vous avez acheté un domaine auprès d’un fournisseur d’hébergement tier
 
 Si vous n’ajoutez pas de domaine, les membres de votre organisation utiliseront le domaine onmicrosoft.com pour leur adresse de messagerie jusqu’à ce que vous le fassiez. Il est important d’ajouter votre domaine avant d’ajouter des utilisateurs, de sorte que vous n’ayez pas à les reconfigurer.
 
-[Consultez la FAQ dédiée aux domaines](../setup/domains-faq.md) si vous ne trouvez pas ci-dessous ce que vous recherchez .
+[Consultez la FAQ dédiée aux domaines](../setup/domains-faq.yml) si vous ne trouvez pas ci-dessous ce que vous recherchez .
 
 ## <a name="step-1-add-a-txt-or-mx-record-to-verify-you-own-the-domain"></a>Étape 1 : Ajouter un enregistrement TXT ou MX pour vérifier que vous êtes propriétaire du domaine
 

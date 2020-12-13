@@ -2,8 +2,8 @@
 title: Utiliser l’analyse expresse dans Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 9/14/2017
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 50580099-3dc0-44a1-a9b6-5ca6d396316b
 description: Découvrez comment exécuter le mode d’analyse rapide d’Advanced eDiscovery, puis exporter les résultats.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ccc81ccf4446af3d6e5584924883a1c8049ed962
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: de637df426d38da2863a65eea67c65a3f66953a7
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034306"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663323"
 ---
 # <a name="use-express-analysis-in-advanced-ediscovery-classic"></a>Utiliser l’analyse rapide dans Advanced eDiscovery (classique) 
 
@@ -45,7 +45,7 @@ Vous pouvez utiliser l’analyse rapide pour calculer des doublons et des fils d
     
   - Cochez **calculer les thèmes** pour traiter tous les fichiers et leur affecter des thèmes. Elle est sélectionnée par défaut. 
     
-3. Sous **destination**de l’exportation :
+3. Sous **destination** de l’exportation :
     
   - Cochez la case **Télécharger sur** l’ordinateur local pour télécharger sur votre ordinateur local. 
     
@@ -105,20 +105,20 @@ Vous pouvez éventuellement définir des **Paramètres avancés** pour modifier 
     
   - Pour exporter les résultats pour les nouveaux fichiers que vous avez ajoutés à un cas existant, continuez avec votre lot actuel. Pour créer une session dans le lot, sélectionnez le même numéro de lot, puis cliquez sur **créer une session d’exportation** vous pouvez utiliser cette option pour exporter les mêmes paramètres que le lot précédent, de manière incrémentielle. 
     
-  - Pour exporter vers un nouveau lot, cliquez sur **Ajouter** ![une](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) icône Ajouter et entrez un nouveau nom dans le **champ nom du lot** (ou acceptez la valeur par défaut) et une description dans **Description du lot**. Cliquez sur **OK**.
+  - Pour exporter vers un nouveau lot, cliquez sur **Ajouter** ![ une icône Ajouter ](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) et entrez un nouveau nom dans le **champ nom du lot** (ou acceptez la valeur par défaut) et une description dans **Description du lot**. Cliquez sur **OK**.
     
-  - Pour modifier un nom de lot ou une description, sélectionnez le nom dans **Exporter le lot**, cliquez](../media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png)sur **modifier** ![l’icône d’édition, puis modifiez les champs.
+  - Pour modifier un nom de lot ou une description, sélectionnez le nom dans **Exporter le lot**, cliquez sur **modifier** ![ l’icône d’édition ](../media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png) , puis modifiez les champs.
     
     > [!NOTE]
     > Une fois que vous avez exécuté des sessions pour un lot d’exportation, il est impossible de les supprimer. De plus, seuls certains paramètres peuvent être modifiés une fois la première session exécutée. 
   
-  - Pour créer un lot d’exportation en double, sélectionnez **dupliquer un lot** ![d’exportation en](../media/3f6d5f59-e842-4946-a493-473528af0119.jpg) double créez un lot d’exportation en double et entrez un nom et une description pour le lot dupliqué dans le panneau. 
+  - Pour créer un lot d’exportation en double, sélectionnez **dupliquer un lot d’exportation** en double ![ créez un lot d’exportation en double ](../media/3f6d5f59-e842-4946-a493-473528af0119.jpg) et entrez un nom et une description pour le lot dupliqué dans le panneau. 
     
-  - Pour supprimer un lot d’exportation, sélectionnez **supprimer** ![supprimer une icône](../media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg)exporter un lot.
+  - Pour supprimer un lot d’exportation, sélectionnez **supprimer** ![ supprimer une icône exporter un lot ](../media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg) .
     
-  - Pour afficher l’historique d’un lot, sélectionnez **Batch history** ![l’icône](../media/a80cc320-d96c-4d91-8884-75fe2cb147e2.jpg)historique du lot-afficher l’historique.
+  - Pour afficher l’historique d’un lot, sélectionnez l’icône historique du **lot** - ![ afficher l’historique ](../media/a80cc320-d96c-4d91-8884-75fe2cb147e2.jpg) .
     
-2. Sous define p **opulation :** sélectionnez **inclure uniquement les fichiers au-dessus du score de découpage de pertinence** et/ou **affiner l’exportation** pour affiner les paramètres de votre lot d’exportation. Si vous sélectionnez **inclure uniquement les fichiers au-dessus du score de découpage de pertinence**, si le **problème** est activé et si le score de pertinence du fichier est supérieur au score de découpage du problème sélectionné, le fichier est exporté. Le fichier est exporté sauf s’il est exclu par le filtre « **pour révision** ». Si vous sélectionnez **affiner l’exportation**, les cases d’option **de déduplication** et de **filtrage par « pour révision »** sont activées. Si vous choisissez la **déduplication**, les fichiers dupliqués sont filtrés en fonction de la stratégie définie : [level case (Default) : à partir de chaque ensemble de fichiers en double dans le cas entier, tous les fichiers sauf un seront de duped. Niveau des dépositaires : à partir de chaque ensemble de fichiers en double du même dépositaire, tous les fichiers sauf un seront de duped. Un enregistrement de tous les fichiers en double est disponible lors de l’exportation de la sortie. Si vous choisissez **Filtrer par champ de révision** , sélectionnez **modifier sous métadonnées** pour entrer les paramètres de champ **« pour révision »**. Sélectionnez **inclure les fichiers d’entrée**pour inclure les fichiers sources dans le contenu du package. Vous pouvez désactiver cette option pour accélérer le processus d’exportation. Notez que les fichiers natifs seront exportés dans tous les cas.
+2. Sous define p **opulation :** sélectionnez **inclure uniquement les fichiers au-dessus du score de découpage de pertinence** et/ou **affiner l’exportation** pour affiner les paramètres de votre lot d’exportation. Si vous sélectionnez **inclure uniquement les fichiers au-dessus du score de découpage de pertinence**, si le **problème** est activé et si le score de pertinence du fichier est supérieur au score de découpage du problème sélectionné, le fichier est exporté. Le fichier est exporté sauf s’il est exclu par le filtre « **pour révision** ». Si vous sélectionnez **affiner l’exportation**, les cases d’option **de déduplication** et de **filtrage par « pour révision »** sont activées. Si vous choisissez la **déduplication**, les fichiers dupliqués sont filtrés en fonction de la stratégie définie : [level case (Default) : à partir de chaque ensemble de fichiers en double dans le cas entier, tous les fichiers sauf un seront de duped. Niveau des dépositaires : à partir de chaque ensemble de fichiers en double du même dépositaire, tous les fichiers sauf un seront de duped. Un enregistrement de tous les fichiers en double est disponible lors de l’exportation de la sortie. Si vous choisissez **Filtrer par champ de révision** , sélectionnez **modifier sous métadonnées** pour entrer les paramètres de champ **« pour révision »**. Sélectionnez **inclure les fichiers d’entrée** pour inclure les fichiers sources dans le contenu du package. Vous pouvez désactiver cette option pour accélérer le processus d’exportation. Notez que les fichiers natifs seront exportés dans tous les cas.
     
 3. Sous **définir les métadonnées**, sélectionnez l’une des options suivantes dans la liste **Exporter le modèle** (une fois par session). 
     
@@ -128,7 +128,7 @@ Vous pouvez éventuellement définir des **Paramètres avancés** pour modifier 
     
   - **Problèmes**: sélectionnez **tous les problèmes** ou sélectionnez un problème particulier que vous avez créé. 
     
-Choisissez **OK**pour enregistrer les paramètres avancés, **restaurer** les paramètres par défaut pour utiliser les valeurs par défaut ou **Annuler** pour annuler la définition des paramètres avancés. 
+Choisissez **OK** pour enregistrer les paramètres avancés, **restaurer** les paramètres par défaut pour utiliser les valeurs par défaut ou **Annuler** pour annuler la définition des paramètres avancés. 
   
 ## <a name="see-also"></a>Voir aussi
 <a name="BK_AdvancedSettings"> </a>

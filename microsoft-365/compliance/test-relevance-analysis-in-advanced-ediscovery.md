@@ -2,8 +2,8 @@
 title: Tester l’analyse de pertinence dans Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 09/14/2017
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
 description: Découvrez comment utiliser l’onglet test après le calcul par lot dans Advanced eDiscovery pour tester, comparer et valider la qualité globale du traitement.
-ms.openlocfilehash: c5a885b3483b9ce319fffefa55037c0c2c8f3c85
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: e408d79aac8015da210f983b7b388ace84fc383a
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936207"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663417"
 ---
 # <a name="test-relevance-analysis-in-advanced-ediscovery-classic"></a>Tester l’analyse de pertinence dans Advanced eDiscovery (classique)
 
@@ -48,7 +48,7 @@ Ce test fournit des statistiques et une comparaison entre l’ensemble de révis
     
     ![Résultats de pertinence du test Tester les éléments restants](../media/46e6898a-f929-4fd0-88d9-6f91d04b6ce2.png)
   
-3. Dans **nom du test**et **Description**, tapez le nom et la description.
+3. Dans **nom du test** et **Description**, tapez le nom et la description.
     
 4. Dans la liste **type de test** , sélectionnez **tester le reste**
     
@@ -62,7 +62,7 @@ Ce test fournit des statistiques et une comparaison entre l’ensemble de révis
     
 9. Cliquez sur **Démarrer le balisage**. Un échantillon de test est généré.
     
-10. Examinez et marquez chacun des fichiers dans l’onglet de la ** \> balise de pertinence** et, lorsque vous avez fini, cliquez sur **calculer**.
+10. Examinez et marquez chacun des fichiers dans l’onglet de la **\> balise de pertinence** et, lorsque vous avez fini, cliquez sur **calculer**.
     
 11. Sous l’onglet test, vous pouvez cliquer sur **afficher les résultats** pour afficher les résultats des tests. Un exemple est illustré dans la figure suivante. 
     
@@ -90,7 +90,7 @@ Le test « test the Slice » effectue un test semblable au test « test the R
     
 2. Dans l’onglet **test** , cliquez sur **nouveau test**. La boîte de dialogue **créer un test** s’affiche. 
     
-3. Dans **nom** et **Description**du test, entrez les informations.
+3. Dans **nom** et **Description** du test, entrez les informations.
     
 4. Dans la liste **type de test** , sélectionnez **tester la section**.
     
@@ -106,13 +106,13 @@ Le test « test the Slice » effectue un test semblable au test « test the R
     
 9. Cliquez sur **Démarrer le balisage**. Un échantillon de test est généré.
     
-10. Examinez et marquez chacun des fichiers dans l’onglet de la ** \> balise de pertinence** et, lorsque vous avez fini, cliquez sur **calculer**. 
+10. Examinez et marquez chacun des fichiers dans l’onglet de la **\> balise de pertinence** et, lorsque vous avez fini, cliquez sur **calculer**. 
     
 11. Sous l’onglet test, vous pouvez cliquer sur **afficher les résultats** pour afficher les résultats des tests. 
     
 ## <a name="see-also"></a>Voir aussi
 
-[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
   
 [Présentation de l’évaluation en matière de pertinence](assessment-in-relevance-in-advanced-ediscovery.md)
   

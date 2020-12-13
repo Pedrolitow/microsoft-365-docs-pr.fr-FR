@@ -2,8 +2,8 @@
 title: Étiquetage et formation à la pertinence dans Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 09/14/2017
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
 description: Découvrez les étapes à suivre pour marquer, puis utiliser un exemple de formation de 40 fichiers pendant la phase de formation pertinente de la découverte électronique avancée.
-ms.openlocfilehash: 56ce30754e04d4a2adcf854093e603f93be5ae36
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: d576b0a907a4c12eabe4f3cba9846de670b0ee12
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936670"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663449"
 ---
 # <a name="tagging-and-relevance-training-in-advanced-ediscovery-classic"></a>Étiquetage et formation à la pertinence dans Advanced eDiscovery (classique)
 
@@ -76,7 +76,7 @@ Une fois l’évaluation terminée dans Advanced eDiscovery et que vous entrez l
     
 ## <a name="working-with-the-sample-files-list"></a>Utilisation de la liste des exemples de fichiers
 
-La liste exemple de fichiers vous permet d’afficher la liste des fichiers dans un exemple de formation et d’effectuer diverses actions sur un ou plusieurs fichiers. Dans l' **Relevance** onglet de la \> **balise** de pertinence, le volet de gauche **fichiers d’exemple** affiche une liste d’exemples de fichiers à traiter avec les processus d’évaluation, de formation, de rattrapage et d’incohérence. 
+La liste exemple de fichiers vous permet d’afficher la liste des fichiers dans un exemple de formation et d’effectuer diverses actions sur un ou plusieurs fichiers. Dans l'  onglet de la \> **balise** de pertinence, le volet de gauche **fichiers d’exemple** affiche une liste d’exemples de fichiers à traiter avec les processus d’évaluation, de formation, de rattrapage et d’incohérence. 
   
 1. Dans l' **onglet \> balise de pertinence** , sélectionnez les fichiers de l’exemple dans la liste déroulante du volet de gauche. Les fichiers de l’exemple sont répertoriés dans le volet de gauche. 
     
@@ -90,17 +90,17 @@ La liste exemple de fichiers vous permet d’afficher la liste des fichiers dans
     
   - Naviguer entre les fichiers dans l’exemple actuel à l’aide des options de la barre de menus inférieure. Les raccourcis clavier de navigation sont également disponibles :
     
-    Pour accéder au premier fichier de l’exemple : Maj + Ctrl +\<
+    Pour accéder au premier fichier de l’exemple : Maj + Ctrl + \<
     
-    Pour accéder au fichier précédent dans l’exemple : Maj +\<
+    Pour accéder au fichier précédent dans l’exemple : Maj + \<
     
-    Pour accéder au fichier suivant dans l’exemple : Maj +\>
+    Pour accéder au fichier suivant dans l’exemple : Maj + \>
     
-    Pour accéder au dernier fichier de l’exemple : Maj + Ctrl +\>
+    Pour accéder au dernier fichier de l’exemple : Maj + Ctrl + \>
     
 ## <a name="see-also"></a>Voir aussi
 
-[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
   
 [Présentation de l’évaluation en matière de pertinence](assessment-in-relevance-in-advanced-ediscovery.md)
   

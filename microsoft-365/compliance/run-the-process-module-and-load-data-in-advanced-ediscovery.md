@@ -2,8 +2,8 @@
 title: Exécuter le module de processus et charger des données dans Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 9/14/2017
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: c87bb0e5-301c-4d1d-958e-aabeb7990f44
 description: Découvrez comment utiliser le centre de sécurité &amp; conformité pour accéder à Advanced eDiscovery et exécuter le module de processus pour un cas.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 011a8448c36ac9f4726f13471c548b7bb2427000
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 64172c0198418dbb0ba4d01a5adbd5aaef4c3a3b
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936157"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49662833"
 ---
 # <a name="run-the-process-module-and-load-data-in-advanced-ediscovery-classic"></a>Exécuter le module de processus et charger des données dans Advanced eDiscovery (classique)
 
@@ -44,11 +44,11 @@ Procédez comme suit pour exécuter le processus.
   
 1. [Ouvrir la sécurité &amp; Centre de conformité](go-to-the-securitycompliance-center.md) . 
     
-2. Accédez à la découverte électronique de l' ** &amp; enquête** \> **eDiscovery** , puis cliquez sur **accéder à Advanced eDiscovery**.
+2. Accédez à la découverte électronique de l' **&amp; enquête** \>  , puis cliquez sur **accéder à Advanced eDiscovery**.
     
 3. Dans Advanced eDiscovery, sélectionnez la casse appropriée dans la page **incidents** affichés et cliquez sur **atteindre la casse**.
     
-4. Dans **préparer** \> **le processus** de préparation \> **Setup**, sélectionnez un conteneur dans la liste des conteneurs disponibles.
+4. Dans **préparer** \> **le processus** de préparation \> , sélectionnez un conteneur dans la liste des conteneurs disponibles.
     
     ![Cliquez sur traiter pour ajouter les résultats de la recherche à la demande de devis](../media/50bdc55c-d378-4881-b302-31ef785fa359.png)
   
@@ -84,7 +84,7 @@ Si vous ajoutez au cas, vous pouvez de nouveau traiter.
   
 ## <a name="related-topics"></a>Voir aussi
 
-[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
   
 [Affichage des résultats de module de processus](view-process-module-results-in-advanced-ediscovery.md)
 

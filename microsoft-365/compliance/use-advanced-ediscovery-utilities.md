@@ -2,8 +2,8 @@
 title: Utilisation des utilitaires Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 9/14/2017
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 66ca9993-75f4-4724-aea2-5a0719b660c1
 description: Découvrez les utilitaires de Advanced eDiscovery, notamment le journal des cas, les données claires, les erreurs de processus, la pertinence et l’analyse de la transparence.
-ms.openlocfilehash: 4283bc7bea509c8a01fb45c433964230a5256f8a
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 745b81609d73ec88525c3348cc4d582c7d5d7b30
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936617"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663293"
 ---
 # <a name="use-advanced-ediscovery-classic-utilities"></a>Utilisation des utilitaires Advanced eDiscovery (classique)
 
@@ -38,7 +38,7 @@ Le fichier journal peut également être téléchargé sur l’ordinateur du cli
   
 1. Dans la barre de menus, cliquez sur l’icône **cogwheel** . 
     
-2. Dans l’onglet **paramètres et \> ** utilitaires, sélectionnez ** \> configuration du journal des incidents**.
+2. Dans l’onglet **paramètres et \>** utilitaires, sélectionnez **\> configuration du journal des incidents**.
     
 3. Sélectionnez le **niveau de journalisation** comme suit : 
     
@@ -57,7 +57,7 @@ S’il est nécessaire de supprimer ou de réinitialiser les données de cas, l�
   
 1. Dans la barre de menus, cliquez sur l’icône **cogwheel** . 
     
-2. Dans l’onglet **paramètres et \> ** utilitaires, sélectionnez Effacer la ** \> Configuration des données**.
+2. Dans l’onglet **paramètres et \>** utilitaires, sélectionnez Effacer la **\> Configuration des données**.
     
 3. Sélectionnez une option pour l’initialisation des informations :
     
@@ -77,7 +77,7 @@ Cette section décrit comment ignorer ou restaurer un exemple de pertinence.
   
 1. Dans la barre de menus, cliquez sur l’icône **cogwheel** . 
     
-2. Dans l’onglet **paramètres et \> ** utilitaires, sélectionnez **modifier la pertinence**.
+2. Dans l’onglet **paramètres et \>** utilitaires, sélectionnez **modifier la pertinence**.
     
 3. Sélectionnez l’une des options suivantes : 
     
@@ -99,7 +99,7 @@ Dans un scénario de cas à plusieurs problèmes, un rapport d’analyse de tran
   
 1. Dans la barre de menus, cliquez sur l’icône **cogwheel** . 
     
-2. Dans l’onglet **paramètres et \> ** utilitaires, sélectionnez Configuration de l' **analyse de transparence \> **.
+2. Dans l’onglet **paramètres et \>** utilitaires, sélectionnez Configuration de l' **analyse de transparence \>**.
     
 3. Dans * * ID de fichier * *, entrez l’ID de fichier du fichier à traiter.
     
@@ -109,7 +109,7 @@ Dans un scénario de cas à plusieurs problèmes, un rapport d’analyse de tran
     
 ## <a name="see-also"></a>Voir aussi
 
-[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
   
 [Définition des paramètres de cas et de client](define-case-and-tenant-settings-in-advanced-ediscovery.md)
 
