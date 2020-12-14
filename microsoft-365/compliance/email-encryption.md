@@ -18,17 +18,17 @@ ms.collection:
 - M365-security-compliance
 - m365solution-mip
 - m365initiative-compliance
-description: Comparez les options de chiffrement Microsoft 365, notamment la fonctionnalité de chiffrement des messages Office (OME), S/MIME, la gestion des droits relatifs à l’information (IRM), et présente le protocole TLS.
-ms.openlocfilehash: 4b18110664c602b5b09e60cbd791559069297be4
-ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
+description: Comparez les options de chiffrement Microsoft 365, notamment la fonctionnalité de chiffrement des messages Office 365 (OME), S/MIME, la gestion des droits relatifs à l’information (IRM) et découvrez le protocole TLS.
+ms.openlocfilehash: 25568d4e39c2fe7ca2dea214276be5d7f6986518
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49580707"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663019"
 ---
 # <a name="email-encryption"></a>Chiffrement de l’e-mail
 
-Cet article compare les options de chiffrement dans Microsoft 365, notamment la fonctionnalité de chiffrement des messages Office 365 (OME), S/MIME, la gestion des droits relatifs à l’information (IRM), et présente le protocole TLS.
+Cet article compare les options de chiffrement dans Microsoft 365, notamment la fonctionnalité de chiffrement des messages Microsoft (OME), S/MIME, la gestion des droits relatifs à l’information (IRM), et présente le protocole TLS.
   
 Microsoft 365 propose plusieurs options de chiffrement pour vous aider à répondre aux besoins de votre entreprise pour la sécurité des messages électroniques. Cet article présente les trois méthodes de chiffrement de courrier électronique dans Office 365. Si vous voulez en savoir plus sur toutes les fonctionnalités de sécurité dans Office 365, visitez le [centre de gestion de la confidentialité Office 365](https://go.microsoft.com/fwlink/p/?LinkID=282470). Cet article présente les trois types de chiffrement disponibles pour aider les administrateurs Microsoft 365 à sécuriser les messages électroniques dans Microsoft 365 :
   
@@ -38,7 +38,7 @@ Microsoft 365 propose plusieurs options de chiffrement pour vous aider à répo
 
 - Gestion des droits relatifs à l’information (IRM).
 
-## <a name="email-encryption-and-how-microsoft-365-uses-it"></a>Chiffrement du courrier électronique et comment Microsoft 365 l’utilise
+## <a name="what-is-email-encryption-and-how-does-microsoft-365-use-it"></a>Qu’est-ce que le chiffrement des messages électroniques et comment Microsoft 365 l’utilise-t-il ?
 
 Le chiffrement est le processus par lequel les informations sont encodées afin que seul un destinataire autorisé puisse les décoder et les utiliser. Microsoft 365 utilise le chiffrement de deux manières : dans le service et sous la forme d’un contrôle client. Dans le service, le chiffrement est utilisé par défaut dans Microsoft 365. Vous n’êtes pas obligé de configurer quoi que ce soit. Par exemple, Microsoft 365 utilise le protocole TLS (Transport Layer Security) pour chiffrer la connexion ou la session entre deux serveurs. 
   
@@ -68,16 +68,11 @@ Regardez cette vidéo pour obtenir une présentation [du chiffrement dans Office
 |Recommandations et exemples de scénarios|Nous vous recommandons d’utiliser OME lorsque vous souhaitez envoyer des informations professionnelles sensibles à des personnes extérieures à votre organisation, qu’il s’agisse de clients ou d’autres entreprises. Par exemple :  <br/>  Quand un employé de banque envoie des relevés de carte de crédit aux clients ;  <br/>  Quand un cabinet médical envoie un dossier médical à un patient   <br/>  Quand un avocat envoie des informations juridiques à caractère confidentiel à un autre avocat.|Nous vous recommandons d’utiliser la gestion des droits relatifs à l’information (IRM) lorsque vous souhaitez appliquer des restrictions d’utilisation et le chiffrement. Par exemple :  <br/>  Un responsable qui envoie des données confidentielles à son équipe sur un nouveau produit applique l’option « Ne pas transférer ».  <br/>  Un dirigeant doit envoyer une proposition d’appel d’offres à une autre société ; elle contient une pièce jointe d’un partenaire qui utilise Office 365 ; le message électronique et la pièce jointe doivent tous deux être protégés.|Nous vous recommandons d’utiliser S/MIME lorsque votre organisation ou l’organisation du destinataire requiert un véritable chiffrement de pair à pair.  <br/>  S/MIME est la solution utilisée le plus couramment dans les scénarios suivants :  <br/>  Des agences gouvernementales communiquant avec des agences gouvernementales  <br/>  Une entreprise communiquant avec une agence gouvernementale|
 ||
 
-Si vous utilisez [Azure Information Protection](https://docs.microsoft.com/microsoft-365/compliance/protect-information) et le chiffrement de messagerie pour protéger les données, procédez comme suit :
-- Vous pouvez utiliser des étiquettes de confidentialité avec le chiffrement OME et IRM. Pour plus d’informations, reportez-vous à [Restreindre l'accès au contenu grâce à la mise en place d'un chiffrement par les étiquettes de confidentialité](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide#what-happens-to-existing-encryption-when-a-labels-applied).
-- Vous pouvez appliquer des étiquettes de confidentialité aux courriers électroniques signés numériquement à l’aide de S/MIME.
-- Il n’est pas possible d’appliquer des étiquettes de confidentialité aux courriers électroniques chiffrés à l’aide de S/MIME, car les messages protégés par le chiffrement de bout en bout ne sont pas traités par les stratégies.
-
-## <a name="encryption-options-available-for-my-microsoft-365-subscription"></a>Options de chiffrement disponibles pour mon abonnement Microsoft 365
+## <a name="what-encryption-options-are-available-for-my-microsoft-365-subscription"></a>Quelles options de chiffrement sont disponibles pour mon abonnement Microsoft 365 ?
 
 Pour plus d’informations sur les options de chiffrement de courrier pour votre abonnement Microsoft 365, voir la [description du service Exchange Online](https://technet.microsoft.com/library/exchange-online-service-description.aspx). Vous y trouverez des informations sur les fonctionnalités de chiffrement suivantes :
-
-- Azure RMS, y compris les fonctionnalités de gestion des droits relatifs à l’information et les nouvelles fonctionnalités OME
+  
+- Azure RMS, y compris les fonctionnalités IRM et OME
 
 - S/MIME
 
