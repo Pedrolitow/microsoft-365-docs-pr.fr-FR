@@ -47,7 +47,7 @@ Suivez une visite guidée par vidéo sur nos fonctionnalités de classification 
 
 La classification de données analyse votre contenu sensible et le contenu étiqueté avant votre création de stratégies. Cette opération est appelée **zéro gestion des modifications**. Cela vous permet de voir l’impact de toutes les étiquettes de rétention et de confidentialité sur votre environnement, et de vous aider à évaluer vos besoins en matière de protection et de stratégie de gouvernance.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Configuration requise
 
 Un certain nombre d’abonnements différents prennent en charge le DLP du Point de Terminaison. Pour afficher les options d’acquisition de la licence du DLP du Point de Terminaison, consultez [ Acquisition de la licence de Protection de l’Information à titre indicatif](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection). 
 

@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 description: Les administrateurs peuvent en savoir plus sur la protection contre les menaces dans Microsoft 365 et configurer la façon de l’utiliser pour votre organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 646fff4550de2e07342c0fef04952846db65a8eb
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 3eec37f01bb39dda9f767ad32be96bbff43a2ee0
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615119"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683246"
 ---
 # <a name="protect-against-threats"></a>Protéger contre les menaces
 
@@ -179,9 +179,9 @@ Pour configurer des [liens fiables](atp-safe-links.md), vérifiez et modifiez vo
 
 1. Dans le [Centre de sécurité & conformité](https://protection.office.com), sélectionnez **gestion des menaces** - \>  \> **liens approuvés ATP**, puis cliquez sur **paramètres globaux**, puis configurez les paramètres suivants :
 
-   - Vérifier **l’utilisation des liens fiables dans : les applications Office 365** sont activées : ![ activer/désactiver ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
+   - Vérifier **l’utilisation des liens fiables dans : les applications Office 365** sont activées : ![ activer/désactiver ](../../media/scc-toggle-on.png) .
    - **Ne pas effectuer le suivi lorsque les utilisateurs cliquent sur liens fiables**: désactiver ce paramètre pour effectuer le suivi des clics des utilisateurs : désactiver ![ ](../../media/scc-toggle-off.png) .
-   - **Ne pas autoriser les utilisateurs à cliquer sur les liens fiables vers l’URL d’origine**: Vérifiez que ce paramètre est activé : ![ activer/désactiver ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
+   - **Ne pas autoriser les utilisateurs à cliquer sur les liens fiables vers l’URL d’origine**: Vérifiez que ce paramètre est activé : ![ activer/désactiver ](../../media/scc-toggle-on.png) .
 
    Lorsque vous avez terminé, cliquez sur **Enregistrer**.
 
@@ -216,7 +216,7 @@ Les charges de travail telles que SharePoint, OneDrive et teams sont conçues po
 
 1. Dans le [Centre de sécurité & conformité](https://protection.office.com),  choisissez pièces jointes fiables pour la stratégie de gestion des menaces \>  \> , puis cliquez sur **paramètres globaux**.
 
-2. Vérifiez que l’option Activer la protection avancée contre les menaces **pour SharePoint, OneDrive et Microsoft teams** est activée : ![ activer/désactiver ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) , puis cliquez sur **Enregistrer**.
+2. Vérifiez que l’option Activer la protection avancée contre les menaces **pour SharePoint, OneDrive et Microsoft teams** est activée : ![ activer/désactiver ](../../media/scc-toggle-on.png) , puis cliquez sur **Enregistrer**.
 
 3. Vérifiez (et, le cas échéant, modifiez) les stratégies de [pièces jointes](set-up-atp-safe-attachments-policies.md) approuvées et les [stratégies de liens fiables](set-up-atp-safe-links-policies.md)de votre organisation.
 

@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: 55a84fa8ba31cfd4f981f2820811b541ae340a27
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: c2c01278831433c02e5c869dba83f223eea57d27
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357622"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683234"
 ---
 # <a name="policies-for-allowing-guest-and-external-b2b-access"></a>Stratégies d’autorisation d’accès B2B invité et externe
 
@@ -42,7 +42,7 @@ Pour protéger les accès invités et externes aux comptes B2B Azure AD, le diag
 
 Le tableau suivant répertorie les stratégies que vous devez créer et mettre à jour. Les stratégies courantes lient aux instructions de configuration associées dans l’article [Common Identity and Device Access Policies](identity-access-policies.md) .
 
-|Niveau de protection|Stratégies|Plus d’informations|
+|Niveau de protection|Stratégies|Informations supplémentaires|
 |---|---|---|
 |**Baseline**|[Exiger MFA pour les utilisateurs invités et externes](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Créez cette nouvelle stratégie et configurez les éléments suivants : <ul><li> Pour les **affectations > utilisateurs et groupes > inclure**, sélectionnez **Sélectionner des utilisateurs et des groupes**, puis sélectionnez **tous les utilisateurs invités et externes**. </li><li> Pour les **affectations > Conditions > de connexion**, laissez toutes les options désactivées pour toujours appliquer l’authentification multifacteur (MFA).</li>|
 ||[Exiger l’authentification multifacteur lorsque le risque de connexion est *moyen* ou *élevé*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Modifiez cette stratégie pour exclure les utilisateurs invités et externes.|
@@ -52,7 +52,7 @@ Pour inclure ou exclure les utilisateurs invités et externes dans les stratégi
 
 ![capture d’écran des contrôles pour exclure les utilisateurs invités et externes](../../media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png)
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
 ### <a name="guest-and-external-access-with-microsoft-teams"></a>Accès invité et externe à Microsoft teams
 
@@ -63,8 +63,6 @@ Microsoft teams définit les éléments suivants :
 - **L’accès externe** est destiné à un utilisateur externe qui n’a pas de compte B2B. L’accès externe peut inclure des invitations et la participation à des appels, des conversations et des réunions, mais n’inclut pas l’appartenance aux ressources de l’équipe et l’accès aux ressources de l’équipe.
 
 Pour plus d’informations, reportez-vous à la [comparaison entre invité et accès externe pour teams](https://docs.microsoft.com/microsoftteams/communicate-with-users-from-other-organizations#compare-external-and-guest-access).
-
-Les stratégies d’accès conditionnel ne s’appliquent qu’à l’accès invité dans Teams, car il existe un compte Azure AD B2B correspondant.
 
 Pour plus d’informations sur la sécurisation des stratégies d’accès aux identités et aux appareils pour teams [, voir recommandations de stratégie pour la sécurisation des conversations, des groupes et des fichiers teams](teams-access-policies.md) .
 

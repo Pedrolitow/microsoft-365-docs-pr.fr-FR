@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
-ms.openlocfilehash: 3c8477ce16249cb4d21c736da60d619774175041
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: 12f71011e28d5c8c8287146670282a86a77781ff
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123606"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682980"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>Configurer les fonctionnalités d’analyse et de réponse automatisées dans Microsoft 365 Defender
 
@@ -60,7 +60,6 @@ Si les analyses automatisées sont exécutées et si les actions de correction s
 3. Passez en revue les stratégies de groupes d’appareils. Examinez en particulier la colonne **niveau de correction** . Nous vous recommandons d’utiliser **automatiquement les menaces de correction complète**.  Vous devrez peut-être créer ou modifier vos groupes d’appareils pour obtenir le niveau d’automatisation souhaité. Pour obtenir de l’aide sur cette tâche, consultez les articles suivants :
 
    - [Comment les menaces sont corrigées](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations#how-threats-are-remediated)
-   
    - [Créer et gérer des groupes d’appareils](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/machine-groups) 
 
 ## <a name="review-your-security-and-alert-policies-in-office-365"></a>Consulter vos stratégies de sécurité et d’alerte dans Office 365
@@ -101,10 +100,10 @@ Les paramètres de sécurité d’Office 365 aident à protéger la messagerie e
 
 3. Dans le volet de navigation, choisissez **paramètres**  >  **Microsoft 365 Defender**. Vérifiez que Microsoft 365 Defender est activé. 
 
-   Vous avez besoin d’aide ? Voir [activer Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable).
+   Besoin d’aide ? Voir [activer Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable).
 
 ## <a name="review-pending-and-completed-actions-in-the-action-center"></a>Vérifier les actions en attente et terminées dans le centre de notifications
 
-Une fois que vous avez configuré l’analyse et la réponse automatisées dans Microsoft 365 Defender, l’étape suivante consiste à visiter le centre de notifications ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ). Vous pouvez ainsi passer en revue et approuver les actions en attente et consulter les actions correctives qui ont été effectuées automatiquement. 
+Une fois que vous avez configuré l’analyse et la réponse automatisées dans Microsoft 365 Defender, l’étape suivante consiste à visiter le centre de notifications ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ). Dans ce cas, vous pouvez passer en revue et approuver les actions en attente et consulter les actions correctives qui ont été effectuées automatiquement ou manuellement. 
 
 [Visitez le centre de notifications](mtp-action-center.md).

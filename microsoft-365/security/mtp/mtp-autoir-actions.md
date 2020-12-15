@@ -20,13 +20,13 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.date: 09/16/2020
-ms.openlocfilehash: ed0b9afa576f65d33cd9a49dfacd96ffaf173d28
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.date: 12/09/2020
+ms.openlocfilehash: b34f4a532571d6215500ab2bec022489fd462d0f
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846531"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683359"
 ---
 # <a name="approve-or-reject-pending-actions-following-an-automated-investigation"></a>Approuver ou rejeter les actions en attente à la suite d’une enquête automatisée
 
@@ -34,7 +34,7 @@ ms.locfileid: "48846531"
 
 
 **S’applique à :**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Lorsqu’une enquête automatisée s’exécute, elle peut engendrer une ou plusieurs [actions de correction](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions) nécessitant une approbation pour continuer. Par exemple, il peut être nécessaire de supprimer un cluster d’e-mails ou un fichier mis en quarantaine. Il est important d’approuver (ou de refuser) les actions en attente dès que possible de sorte que vos enquêtes automatisées puissent se poursuivre et se terminer dans un délai raisonnable. 
 
@@ -44,7 +44,7 @@ Lorsqu’une enquête automatisée s’exécute, elle peut engendrer une ou plus
 Les actions en attente peuvent être révisées et approuvées à l’aide du [Centre de maintenance](#review-a-pending-action-in-the-action-center) ou de l' [Affichage détails](#review-a-pending-action-in-the-investigation-details-view)de l’enquête.
 
 > [!NOTE]
-> Vous devez disposer des [autorisations appropriées](mtp-action-center.md#required-permissions-for-action-center-tasks) pour approuver ou rejeter les actions de correction.
+> Vous devez disposer des [autorisations appropriées](mtp-action-center.md#required-permissions-for-action-center-tasks) pour approuver ou rejeter les actions de correction. Pour plus d’informations, reportez-vous à [Prerequisites for Automated Investigation and Response in Microsoft 365 Defender](mtp-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender).
 
 ## <a name="review-a-pending-action-in-the-action-center"></a>Examiner une action en attente dans le centre de notifications
 
@@ -52,9 +52,9 @@ Les actions en attente peuvent être révisées et approuvées à l’aide du [C
 
 2. Dans le volet de navigation, choisissez **Centre de notifications**. 
 
-3. Dans le centre de notifications, dans l’onglet **En attente** , sélectionnez un élément dans la liste. 
+3. Dans le centre de notifications, dans l’onglet **En attente**, sélectionnez un élément dans la liste. 
 
-    - Si vous sélectionnez un élément dans la colonne **Numéro de l’enquête** , la page Détails de l’enquête s’ouvre. Là, vous pouvez afficher les résultats de l’enquête, puis approuver ou rejeter l’action recommandée.
+    - Si vous sélectionnez un élément dans la colonne **Numéro de l’enquête**, la page Détails de l’enquête s’ouvre. Là, vous pouvez afficher les résultats de l’enquête, puis approuver ou rejeter l’action recommandée.
  
     - Si vous sélectionnez une ligne dans la liste, un menu volant affiche des informations relatives à cet élément. <br/>![Approuver ou rejeter une action](../../media/air-actioncenter-itemselected.png)<br/>Utilisez les liens pour afficher une alerte ou une enquête associée, puis approuvez ou refusez l’action.
 
@@ -62,7 +62,7 @@ Les actions en attente peuvent être révisées et approuvées à l’aide du [C
 
 ![Détails de l’enquête](../../media/mtp-air-investdetails.png)
 
-1. Sur une page de [détails de l’enquête](mtp-autoir-results.md), sélectionnez l’onglet **Actions en attente** (ou **Actions** ). Les éléments en attente d’approbation sont répertoriés ici.
+1. Sur une page de [détails de l’enquête](mtp-autoir-results.md), sélectionnez l’onglet **Actions en attente** (ou **Actions**). Les éléments en attente d’approbation sont répertoriés ici.
 
 2. Sélectionnez un élément dans la liste, puis choisissez **Approuver** ou **Rejeter**.
 

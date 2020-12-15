@@ -19,12 +19,12 @@ ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 ms.custom:
 - seo-marvel-apr2020
 description: Créez des stratégies d’alerte dans le centre de sécurité et conformité dans Office 365 et Microsoft 365 pour surveiller les menaces potentielles, les pertes de données et les problèmes d’autorisations.
-ms.openlocfilehash: b6a1689ab475b9518c290bf3db03d2144610bf8b
-ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
+ms.openlocfilehash: 5749b38ca9b72c859e9c553ccbb4fe6a44be9754
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367177"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682957"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>Stratégies d’alerte dans le Centre de sécurité et de conformité
 
@@ -56,7 +56,7 @@ Voici un aperçu rapide du fonctionnement des stratégies d’alerte et des aler
 
 Une stratégie d’alerte est constituée d’un ensemble de règles et de conditions qui définissent l’activité de l’utilisateur ou de l’administrateur qui génère une alerte, la liste des utilisateurs qui déclenchent l’alerte si elles effectuent l’activité, ainsi qu’un seuil qui définit le nombre de fois que l’activité doit avoir lieu avant le déclenchement d’une alerte. Vous pouvez également catégoriser la stratégie et lui attribuer un niveau de gravité. Ces deux paramètres vous aident à gérer les stratégies d’alerte (et les alertes déclenchées lorsque les conditions de la stratégie sont respectées), car vous pouvez filtrer ces paramètres lors de la gestion des stratégies et de l’affichage des alertes dans le centre de sécurité et de conformité. Par exemple, vous pouvez afficher les alertes qui répondent aux conditions de la même catégorie ou afficher les alertes ayant le même niveau de gravité.
 
-Pour afficher et créer des stratégies d’alerte, accédez à, [https://protection.office.com](https://protection.office.com) puis sélectionnez alertes d’alerte des **alertes** \> **Alert policies**.
+Pour afficher et créer des stratégies d’alerte, accédez à, [https://protection.office.com](https://protection.office.com) puis sélectionnez alertes d’alerte des **alertes** \> .
 
 ![Dans le centre de sécurité et de conformité, sélectionnez alertes, puis sélectionnez stratégies d’alerte pour afficher et créer des stratégies d’alerte.](../media/09ebd451-8e84-44e1-aefc-63e70bba4d97.png)
 
@@ -217,33 +217,33 @@ Pour voir la catégorie affectée à une stratégie d’alerte par défaut, cons
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |Journaux d’audit|||||||
 |Gestion des cas|||||||
-|Administrateur de conformité|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Administrateur de conformité|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||![Coche](../media/checkmark.png)||![Coche](../media/checkmark.png)|
 |Recherche de conformité|||||||
 |Gestion des appareils|||||||
 |Gestion des destructions|||||||
-|Gestion de la conformité DLP||![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||||
+|Gestion de la conformité DLP||![Coche](../media/checkmark.png)|||||
 |Exporter|||||||
 |Suspension|||||||
-|Gérer les alertes||||||![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Configuration de l’Organisation||||||![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Gérer les alertes||||||![Coche](../media/checkmark.png)|
+|Configuration de l’Organisation||||||![Coche](../media/checkmark.png)|
 |Aperçu|||||||
-|Gestion des enregistrements|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
-|Gestion de la rétention|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
+|Gestion des enregistrements|![Coche](../media/checkmark.png)||||||
+|Gestion de la rétention|![Coche](../media/checkmark.png)||||||
 |Révision|||||||
 |Déchiffrement RMS|||||||
-|Gestion des rôles||||![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
+|Gestion des rôles||||![Coche](../media/checkmark.png)|||
 |Recherche et purge|||||||
-|Administrateur de sécurité||![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Lecteur de sécurité||![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)
+|Administrateur de sécurité||![Coche](../media/checkmark.png)||![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|
+|Lecteur de sécurité||![Coche](../media/checkmark.png)||![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)
 |Vue de service assurance|||||||
 |Administrateur de la vérification de surveillance|||||||
 |Journaux d'audit en affichage seul|||||||
 |Gestion des appareils View-Only|||||||
-|Gestion de la conformité View-Only DLP||![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||||
-|View-Only gérer les alertes||||||![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Afficher uniquement les destinataires|||  ![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||
-|Gestion des enregistrements de View-Only|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
-|Gestion de la rétention View-Only|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
+|Gestion de la conformité View-Only DLP||![Coche](../media/checkmark.png)|||||
+|View-Only gérer les alertes||||||![Coche](../media/checkmark.png)|
+|Afficher uniquement les destinataires|||![Coche](../media/checkmark.png)||||
+|Gestion des enregistrements de View-Only|![Coche](../media/checkmark.png)||||||
+|Gestion de la rétention View-Only|![Coche](../media/checkmark.png)||||||
 |||||||
 
 > [!TIP]

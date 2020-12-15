@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.date: 09/16/2020
-ms.openlocfilehash: 183435596706855479c49abc34358c85dccb0da4
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 39f6be70ad7a611f9919bb0529e8c8ed7f9dc339
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846507"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683356"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>Détails et résultats d’une enquête automatisée
 
@@ -34,7 +34,7 @@ ms.locfileid: "48846507"
 
 
 **S’applique à :**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Lorsqu’une enquête automatisée se produit dans Microsoft 365 Defender, des informations détaillées sur cette enquête sont disponibles pendant et après le processus d’enquête automatisé. Si vous disposez des [autorisations nécessaires](mtp-action-center.md#required-permissions-for-action-center-tasks), vous pouvez afficher ces détails dans une vue Détails de l'examen. La vue Détails de l’examen vous fournit l’État à jour et la possibilité d’approuver les actions en attente. 
 
@@ -48,13 +48,13 @@ Vous pouvez ouvrir une vue Détails de l’examen avant impression comme suit :
 
 ### <a name="select-an-item-in-the-action-center"></a>Sélectionnez un élément dans le centre de notifications
 
-Utilisez le centre de notifications pour afficher les actions en attente d’approbation (sous l’onglet **En attente** ) ou qui ont déjà été approuvées (sous l’onglet **Historique** ). 
+Utilisez le centre de notifications pour afficher les actions en attente d’approbation (sous l’onglet **En attente**) ou qui ont déjà été approuvées (sous l’onglet **Historique**). 
 
 1. Accédez à [https://security.microsoft.com](https://security.microsoft.com) et connectez-vous. 
 
 2. Dans le volet de navigation, choisissez **Centre de notifications**. 
 
-3. Sous l’onglet **En attente** ou **Historique** , sélectionnez un élément. Si vous disposez des [autorisations nécessaires](mtp-action-center.md#required-permissions-for-action-center-tasks), vous pouvez approuver (ou refuser) les actions en attente.
+3. Sous l’onglet **En attente** ou **Historique**, sélectionnez un élément. Si vous disposez des [autorisations nécessaires](mtp-action-center.md#required-permissions-for-action-center-tasks), vous pouvez approuver (ou refuser) les actions en attente.
 
 ### <a name="open-an-investigation-from-an-incident-details-page"></a>Ouvrez un examen dans une page de détails d’incident
 
@@ -66,7 +66,7 @@ La page Détails de l’incident permet d’afficher des informations détaillé
 
 3. Sélectionnez un élément dans la liste pour ouvrir la vue Détails de l’événement.<br/>![Détails de l’incident](../../media/mtp-incidentdetails-tabs.png)
 
-4. Sous l’onglet **Examen** , sélectionnez un examen dans la liste.
+4. Sous l’onglet **Examen**, sélectionnez un examen dans la liste.
 
 ## <a name="investigation-details"></a>Détails de l’examen
 
@@ -74,19 +74,19 @@ Utilisez la vue Détails de l’examen pour afficher les activités passées, ac
 
 ![Détails de l’examen](../../media/mtp-air-investdetails.png)
 
-Dans la vue Détails de l’examen, vous pouvez consulter des informations sur les onglets **Graphique de l'examen** , **Alertes** , **Appareils** , **Identités** , **Principales conclusions** , **Entités** , **Journal** et **Actions en attente** , comme décrit dans le tableau suivant.
+Dans la vue Détails de l’examen, vous pouvez consulter des informations sur les onglets **Graphique de l'examen**, **Alertes**, **Appareils**, **Identités**, **Principales conclusions**, **Entités**, **Journal** et **Actions en attente**, comme décrit dans le tableau suivant.
 
-|Tab    |Description |
+| Tab | Description |
 |--------|--------|
-|Graphique de l'examen    |Fournit une représentation visuelle de l’examen. Décrit les entités et répertorie de menaces détectées, ainsi que les alertes et l’attente d’une approbation.<br/>Vous pouvez cliquer sur un élément sur le graphique pour afficher plus de détails. Par exemple, en cliquant sur l’icône **Menaces détectées** , vous accédez à l'onglet **Principales conclusions**. |
-|Alertes |Répertorie les alertes associées à l’examen. Les alertes peuvent provenir de fonctionnalités de protection contre les menaces sur l’ordinateur d’un utilisateur, dans les applications Office, dans le Cloud App Security et d’autres fonctionnalités de Protection 365 Microsoft contre les menaces.|
-|Appareils|Répertorie les ordinateurs inclus dans l’examen et le niveau de correction.|
-|Principales conclusions   |Répertorie les résultats de l’examen, ainsi que l’État et les actions effectuées ou en attente. Vous pouvez approuver les actions en attente pour les appareils et les identités dans sous cet onglet.|
-|Entités   |Répertorie les activités des utilisateurs, les fichiers, les processus, les services, les pilotes, les adresses IP et les méthodes de persistance associées à l’examen, ainsi que l’État et les actions prises.|
-|Journal    |Fournit une vue détaillée de toutes les étapes effectuées pendant l’examen, ainsi que de l’État.|
-|Actions en attente    |Répertorie les éléments qui nécessitent une approbation pour continuer.|
+| **Graphique de l'examen**   | Fournit une représentation visuelle de l’examen. Décrit les entités et répertorie de menaces détectées, ainsi que les alertes et l’attente d’une approbation.<br/>Vous pouvez cliquer sur un élément sur le graphique pour afficher plus de détails. Par exemple, en cliquant sur l’icône **Menaces détectées**, vous accédez à l'onglet **Principales conclusions**. |
+| **Alertes**    | Répertorie les alertes associées à l’examen. Les alertes peuvent provenir des fonctionnalités de protection contre les menaces sur l’ordinateur d’un utilisateur, dans les applications Office, la sécurité des applications Cloud et d’autres fonctionnalités de Microsoft 365 Defender.|
+| **Appareils** | Répertorie les ordinateurs inclus dans l’examen et le niveau de correction.|
+| **Principales conclusions**  | Répertorie les résultats de l’examen, ainsi que l’État et les actions effectuées ou en attente. Vous pouvez approuver les actions en attente pour les appareils et les identités dans sous cet onglet.|
+| **Entities**  | Répertorie les activités des utilisateurs, les fichiers, les processus, les services, les pilotes, les adresses IP et les méthodes de persistance associées à l’examen, ainsi que l’État et les actions prises.|
+|**Log**    | Fournit une vue détaillée de toutes les étapes effectuées pendant l’examen, ainsi que de l’État.|
+| **Actions en attente** | Répertorie les éléments qui nécessitent une approbation pour continuer.|
 
 ## <a name="next-steps"></a>Étapes suivantes
 
 - [Approuver ou refuser les actions liées à un examen et réponse automatisées](mtp-autoir-actions.md)
-
+- [Examiner les actions de correction](mtp-remediation-actions.md)

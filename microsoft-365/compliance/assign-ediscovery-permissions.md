@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: Affecter les autorisations requises pour effectuer des tâches liées à la découverte électronique à l’aide du centre de sécurité & conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f81ac5a87fad99689f7cfa36c044d3de765f4520
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: f4271d7cc7a9c9239aadb8ca2357e000f4f45e80
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920308"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682605"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>Attribuer des autorisations eDiscovery dans le centre de sécurité & conformité
 
@@ -33,7 +33,7 @@ Le groupe de rôles de découverte électronique principal dans le centre de sé
   
 - **gestionnaires eDiscovery** : un gestionnaire eDiscovery peut utiliser l’outil de recherche de contenu dans le centre de sécurité & Compliance Center pour rechercher des emplacements de contenu dans l’organisation et effectuer diverses actions liées à la recherche, telles que l’aperçu et l’exportation des résultats de recherche. Les membres peuvent également créer et gérer des cas dans la découverte électronique de base et la découverte électronique avancée, ajouter et supprimer des membres à un cas, créer des suspensions de cas, exécuter des recherches associées à un cas et accéder à des données de cas. Les gestionnaires eDiscovery peuvent uniquement consulter et gérer les incidents qu’ils créent. Ils ne peuvent pas accéder aux cas créés par d’autres gestionnaires eDiscovery, ni les gérer.
   
-- **Administrateurs eDiscovery**  : ils sont membre du groupe de rôles Gestionnaire eDiscovery et peuvent effectuer la même recherche de contenu et les mêmes tâches liées à la gestion des cas que les gestionnaires eDiscovery. De plus, un administrateur de découverte électronique peut :
+- **Administrateurs eDiscovery** : ils sont membre du groupe de rôles Gestionnaire eDiscovery et peuvent effectuer la même recherche de contenu et les mêmes tâches liées à la gestion des cas que les gestionnaires eDiscovery. De plus, un administrateur de découverte électronique peut :
   
   - Accédez à tous les cas répertoriés sur les pages **eDiscovery** et **eDiscovery avancées** dans le centre de conformité & Compliance Center.
 
@@ -58,13 +58,13 @@ Le groupe de rôles de découverte électronique principal dans le centre de sé
   
 2. Connectez-vous à l’aide de votre compte scolaire ou professionnel.
   
-3. Dans le volet gauche du centre de sécurité et de conformité, sélectionnez **autorisations** , puis sélectionnez la case à cocher en regard de **Gestionnaire eDiscovery**.
+3. Dans le volet gauche du centre de sécurité et de conformité, sélectionnez **autorisations**, puis sélectionnez la case à cocher en regard de **Gestionnaire eDiscovery**.
   
 4. Sur la page de menu volant du **Gestionnaire eDiscovery** , effectuez l’une des opérations suivantes en fonction des autorisations de découverte électronique que vous souhaitez attribuer.
   
-    **Pour faire d’un utilisateur un gestionnaire eDiscovery :** En regard de **Gestionnaire eDiscovery** , sélectionnez **modifier**. Dans la section **choisir un gestionnaire eDiscovery** , sélectionnez le lien hypertexte **choisir le gestionnaire eDiscovery** , puis ajouter une ![ icône ](../media/ITPro-EAC-AddIcon.gif) **Ajouter**. Sélectionnez l’utilisateur (ou les utilisateurs) que vous souhaitez ajouter en tant que gestionnaire eDiscovery, puis sélectionnez **Ajouter**. Lorsque vous avez terminé d’ajouter des utilisateurs, sélectionnez **terminé**. Ensuite, dans la page d’édition choisir le menu volant du **Gestionnaire eDiscovery** , sélectionnez **Enregistrer** pour enregistrer les modifications apportées à l’appartenance au gestionnaire eDiscovery.
+    **Pour faire d’un utilisateur un gestionnaire eDiscovery :** En regard de **Gestionnaire eDiscovery**, sélectionnez **modifier**. Dans la section **choisir un gestionnaire eDiscovery** , sélectionnez le lien hypertexte **choisir le gestionnaire eDiscovery** , puis ajouter une ![ icône ](../media/ITPro-EAC-AddIcon.gif) **Ajouter**. Sélectionnez l’utilisateur (ou les utilisateurs) que vous souhaitez ajouter en tant que gestionnaire eDiscovery, puis sélectionnez **Ajouter**. Lorsque vous avez terminé d’ajouter des utilisateurs, sélectionnez **terminé**. Ensuite, dans la page d’édition choisir le menu volant du **Gestionnaire eDiscovery** , sélectionnez **Enregistrer** pour enregistrer les modifications apportées à l’appartenance au gestionnaire eDiscovery.
   
-    **Pour faire d’un utilisateur un administrateur de découverte électronique :** En regard de **Gestionnaire eDiscovery** , sélectionnez **modifier**. Dans la section **choisir un administrateur** eDiscovery, sous administrateurs de la **découverte électronique** , sélectionnez **choisir un administrateur eDiscovery** , sélectionnez **modifier** , puis ajouter une ![ icône ](../media/ITPro-EAC-AddIcon.gif) **Ajouter**. Sélectionnez l’utilisateur (ou les utilisateurs) que vous souhaitez ajouter en tant qu' **administrateur de découverte électronique** , puis  **Ajoutez**. Lorsque vous avez terminé d’ajouter des utilisateurs, sélectionnez **terminé**. Ensuite, dans la page d’édition choisir le menu volant **administrateur eDiscovery** , sélectionnez **Enregistrer** pour enregistrer les modifications apportées à l’appartenance de l’administrateur de découverte électronique.
+    **Pour faire d’un utilisateur un administrateur de découverte électronique :** En regard de **Gestionnaire eDiscovery**, sélectionnez **modifier**. Dans la section **choisir un administrateur** eDiscovery, sous administrateurs de la **découverte électronique**, sélectionnez **choisir un administrateur eDiscovery**, sélectionnez **modifier**, puis ajouter une ![ icône ](../media/ITPro-EAC-AddIcon.gif) **Ajouter**. Sélectionnez l’utilisateur (ou les utilisateurs) que vous souhaitez ajouter en tant qu' **administrateur de découverte électronique**, puis  **Ajoutez**. Lorsque vous avez terminé d’ajouter des utilisateurs, sélectionnez **terminé**. Ensuite, dans la page d’édition choisir le menu volant **administrateur eDiscovery** , sélectionnez **Enregistrer** pour enregistrer les modifications apportées à l’appartenance de l’administrateur de découverte électronique.
   
 > [!NOTE]
 > Vous pouvez également utiliser l’applet de commande **Add-eDiscoveryCaseAdmin** pour faire d’un utilisateur un administrateur de découverte électronique. Toutefois, l’utilisateur doit se voir attribuer le rôle de gestion des cas avant de pouvoir utiliser cette applet de commande pour en faire un administrateur eDiscovery. Pour plus d’informations, voir [Add-eDiscoveryCaseAdmin](https://go.microsoft.com/fwlink/p/?LinkID=798217). 
@@ -77,16 +77,16 @@ Le tableau suivant répertorie les rôles RBAC liés à la découverte électron
   
 |**Role**|**Administrateur de conformité**|**Administrateur de & du gestionnaire eDiscovery**|**Gestion de l'organisation**|**Relecteur**|
 |:-----|:-----:|:-----:|:-----:|:-----:|
-|Gestion des cas <br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
-|Communication <br/> | <br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
-|Recherche de conformité <br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
-|Custodian <br/> | <br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
-|Exporter <br/> | <br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
-|Suspension <br/>  |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
-|Aperçu <br/>  | <br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
-|Révision <br/>  | <br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |
-|Déchiffrement RMS <br/>  ||![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |||
-|Recherche et purge <br/> | <br/> | <br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> | <br/> |
+|Gestion des cas <br/> |![Coche](../media/checkmark.png) <br/> |![Coche](../media/checkmark.png) <br/> |![Coche](../media/checkmark.png) <br/> | <br/> |
+|Communication <br/> | <br/> |![Coche](../media/checkmark.png) <br/> | <br/> | <br/> |
+|Recherche de conformité <br/> |![Coche](../media/checkmark.png) <br/> |![Coche](../media/checkmark.png) <br/> |![Coche](../media/checkmark.png) <br/> | <br/> |
+|Custodian <br/> | <br/> |![Coche](../media/checkmark.png) <br/> | <br/> | <br/> |
+|Exporter <br/> | <br/> |![Coche](../media/checkmark.png) <br/> | <br/> | <br/> |
+|Suspension <br/>  |![Coche](../media/checkmark.png) <br/> |![Coche](../media/checkmark.png) <br/> |![Coche](../media/checkmark.png) <br/> | <br/> |
+|Aperçu <br/>  | <br/> |![Coche](../media/checkmark.png) <br/> | <br/> | <br/> |
+|Révision <br/>  | <br/> |![Coche](../media/checkmark.png) <br/> | <br/> |![Coche](../media/checkmark.png) <br/> |
+|Déchiffrement RMS <br/>  ||![Coche](../media/checkmark.png) <br/> |||
+|Recherche et purge <br/> | <br/> | <br/> |![Coche](../media/checkmark.png)           <br/> | <br/> |
 ||||
   
 Les sections suivantes décrivent chacun des rôles RBAC liés à la découverte électronique figurant dans le tableau précédent.
@@ -145,10 +145,10 @@ Ce rôle permet aux utilisateurs d’afficher la liste des éléments renvoyés 
 
 ### <a name="review"></a>Révision
 
-Ce rôle permet aux utilisateurs d’accéder aux données de cas dans [Advanced eDiscovery (standard)](office-365-advanced-ediscovery.md) (également appelé *Advanced eDiscovery v1* ). Le principal objectif de ce rôle est de permettre aux utilisateurs d’accéder à Advanced eDiscovery (classique). Les utilisateurs auxquels ce rôle est attribué peuvent afficher et ouvrir la liste des incidents sur la page de **découverte électronique** dans le centre de sécurité & conformité dont ils sont membres. Une fois que l’utilisateur accède à un cas dans le centre de sécurité & conformité, il peut sélectionner **basculer vers Advanced eDiscovery** pour accéder aux données de cas et les analyser dans Advanced eDiscovery (classique). Ce rôle ne permet pas à l’utilisateur d’afficher un aperçu des résultats d’une recherche de contenu associée au cas ou d’effectuer d’autres tâches de recherche de contenu ou de gestion de cas.
+Ce rôle permet aux utilisateurs d’accéder aux données de cas dans [Advanced eDiscovery (standard)](office-365-advanced-ediscovery.md) (également appelé *Advanced eDiscovery v1*). Le principal objectif de ce rôle est de permettre aux utilisateurs d’accéder à Advanced eDiscovery (classique). Les utilisateurs auxquels ce rôle est attribué peuvent afficher et ouvrir la liste des incidents sur la page de **découverte électronique** dans le centre de sécurité & conformité dont ils sont membres. Une fois que l’utilisateur accède à un cas dans le centre de sécurité & conformité, il peut sélectionner **basculer vers Advanced eDiscovery** pour accéder aux données de cas et les analyser dans Advanced eDiscovery (classique). Ce rôle ne permet pas à l’utilisateur d’afficher un aperçu des résultats d’une recherche de contenu associée au cas ou d’effectuer d’autres tâches de recherche de contenu ou de gestion de cas.
 
 > [!NOTE]
-> Pour l’instant, les utilisateurs auxquels le rôle de révision (ou membre du groupe de rôles réviseur) est affecté ne peuvent pas accéder aux données dans [Advanced eDiscovery dans Microsoft 365](overview-ediscovery-20.md) (également appelé *Advanced eDiscovery v 2.0* ). Pour ajouter des membres à un cas dans Advanced eDiscovery v 2.0 afin qu’ils puissent consulter les données des cas, un utilisateur doit être membre du groupe de rôles gestionnaire eDiscovery.
+> Pour l’instant, les utilisateurs auxquels le rôle de révision (ou membre du groupe de rôles réviseur) est affecté ne peuvent pas accéder aux données dans [Advanced eDiscovery dans Microsoft 365](overview-ediscovery-20.md) (également appelé *Advanced eDiscovery v 2.0*). Pour ajouter des membres à un cas dans Advanced eDiscovery v 2.0 afin qu’ils puissent consulter les données des cas, un utilisateur doit être membre du groupe de rôles gestionnaire eDiscovery.
 
 ### <a name="rms-decrypt"></a>Déchiffrement RMS
 

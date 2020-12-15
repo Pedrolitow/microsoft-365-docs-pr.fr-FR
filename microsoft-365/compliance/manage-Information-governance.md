@@ -29,7 +29,7 @@ Utilisez les fonctionnalités de gouvernance des informations de Microsoft (parf
 
 ![Gérez vos données : gouvernance des informations et gestion des enregistrements](../media/information-governance-records-management.png)
 
-Vous cherchez à protéger vos données ? Consultez [Microsoft Information Protection dans Microsoft 365](information-protection.md).
+Vous souhaitez protéger vos données ? Consultez l’article [Découvrir Microsoft Information Protection dans Microsoft 365](information-protection.md).
 
 ## <a name="information-governance"></a>Gouvernance des informations
 

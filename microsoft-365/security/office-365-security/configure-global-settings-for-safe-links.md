@@ -17,19 +17,19 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à afficher et à configurer les paramètres globaux (la liste des URL de blocage et la liste 365 des URL suivantes) pour les liens fiables dans Microsoft Defender pour Office 365.
-ms.openlocfilehash: 2793985e6289b26baad268925cbf9c5e9a89dce9
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: bc44432d4d9478e4c6a2414a70acc785c5b2c005
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572428"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682904"
 ---
 # <a name="configure-global-settings-for-safe-links-in-microsoft-defender-for-office-365"></a>Configurer les paramètres globaux pour les liens fiables dans Microsoft Defender pour Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 > [!IMPORTANT]
-> Cet article est destiné aux clients professionnels qui disposent [de Microsoft Defender pour Office 365](office-365-atp.md). Si vous êtes un utilisateur à domicile et que vous recherchez des informations sur Safelinks dans Outlook, consultez la rubrique [Advanced Outlook.com Security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Cet article est destiné aux entreprises qui ont [Microsoft Defender pour Office 365](office-365-atp.md). Si vous êtes un utilisateur à domicile et que vous recherchez des informations sur Safelinks dans Outlook, consultez la rubrique [Advanced Outlook.com Security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 La fonctionnalité liens fiables est une fonctionnalité de [Microsoft Defender pour Office 365](office-365-atp.md) qui permet d’analyser les messages électroniques entrants dans le flux de messagerie et de cliquer sur vérification des URL et des liens dans les messages électroniques et à d’autres emplacements. Pour plus d’informations, reportez-vous à [liens fiables dans Microsoft Defender pour Office 365](atp-safe-links.md).
 
@@ -50,16 +50,16 @@ Vous pouvez configurer les paramètres de liens de sécurité globaux dans le ce
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Avant de pouvoir effectuer les procédures décrites dans cet article, vous devez disposer d’autorisations dans le centre de sécurité & Compliance Center :
+- Pour pouvoir utiliser ce cmdlet, vous devez disposer des autorisations dans le centre de sécurité et conformité Office 365.
   - Pour configurer les paramètres globaux pour les liens fiables, vous devez être membre des groupes de rôles gestion de l' **organisation** ou **administrateur de sécurité** .
   - Pour un accès en lecture seule aux paramètres globaux pour les liens fiables, vous devez être membre des groupes de rôles **lecteur global** ou **lecteur de sécurité** .
 
   Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
 
-  **Remarques**:
+  **Remarques** :
 
-  - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le centre d’administration 365 de Microsoft donne aux utilisateurs les autorisations requises dans le centre de sécurité & conformité _et_ des autorisations pour d’autres fonctionnalités de Microsoft 365. Si vous souhaitez en savoir plus, veuillez consulter la page [À propos des rôles d’administrateur](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
-  - Le groupe de rôles gestion de l' **Organisation en affichage seul** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) offre également un accès en lecture seule à la fonctionnalité.
+  - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux utilisateurs les autorisations requises dans le centre de sécurité et de conformité _et_ les autorisations pour les autres fonctionnalités de Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Le groupe de rôles **Gestion de l’organisation en affichage seul** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) permet également d’accéder en lecture seule à la fonctionnalité.
 
 - Pour connaître les valeurs recommandées pour les paramètres globaux des liens fiables, consultez la rubrique [Safe Links Settings](recommended-settings-for-eop-and-office365-atp.md#safe-links-settings).
 
@@ -71,7 +71,7 @@ Vous pouvez configurer les paramètres de liens de sécurité globaux dans le ce
 
 La liste **bloquer les URL suivantes** identifie les liens qui doivent toujours être bloqués par l’analyse des liens fiables dans les applications prises en charge. Pour plus d’informations, reportez-vous à [la section « bloquer les URL suivantes » pour les liens fiables](atp-safe-links.md#block-the-following-urls-list-for-safe-links).
 
-1. Dans le centre de sécurité & conformité, accédez à la stratégie de **gestion des menaces** - \> **Policy** \> **liens approuvés ATP**, puis cliquez sur **paramètres globaux**.
+1. Dans le centre de sécurité & conformité, accédez à la stratégie de **gestion des menaces** - \>  \> **liens approuvés ATP**, puis cliquez sur **paramètres globaux**.
 
 2. Dans la **stratégie de liens fiables pour votre organisation** , passez à la zone **bloquer les URL suivantes** .
 
@@ -116,15 +116,15 @@ Vous pouvez utiliser la cmdlet **Get-AtpPolicyForO365** pour afficher les entré
 
 La protection des liens fiables pour les applications Office 365 s’applique aux documents dans les applications de bureau, mobiles et Web Office prises en charge. Pour plus d’informations, consultez la rubrique [paramètres de liens approuvés pour les applications Office 365](atp-safe-links.md#safe-links-settings-for-office-365-apps).
 
-1. Dans le centre de sécurité & conformité, accédez à la stratégie de **gestion des menaces** - \> **Policy** \> **liens approuvés ATP**, puis cliquez sur **paramètres globaux**.
+1. Dans le centre de sécurité & conformité, accédez à la stratégie de **gestion des menaces** - \>  \> **liens approuvés ATP**, puis cliquez sur **paramètres globaux**.
 
 2. Dans la **stratégie de liens fiables pour votre organisation** , la fonctionnalité de survol qui s’affiche, configurez les paramètres suivants dans la section **paramètres qui s’appliquent au contenu à l’exception de la messagerie** :
 
-   - **Applications office 365**: Vérifiez que le bouton bascule est sur la droite pour activer les liens fiables pour les applications Office 365 prises en charge : ![ activer/désactiver ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
+   - **Applications office 365**: Vérifiez que le bouton bascule est sur la droite pour activer les liens fiables pour les applications Office 365 prises en charge : ![ activer/désactiver ](../../media/scc-toggle-on.png) .
 
    - **Ne pas suivre lorsque les utilisateurs cliquent sur les liens fiables**: déplacer le bouton bascule vers la gauche pour suivre les clics d’utilisateur liés aux URL bloquées dans les applications Office 365 prises en charge : désactiver ![ ](../../media/scc-toggle-off.png) .
 
-   - **Ne laissez pas les utilisateurs cliquer via les liens fiables à l’URL d’origine**: Vérifiez que le bouton bascule est sur la droite pour empêcher les utilisateurs de cliquer sur l’URL bloquée d’origine dans les applications Office 365 prises en charge : ![ activer/désactiver ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
+   - **Ne laissez pas les utilisateurs cliquer via les liens fiables à l’URL d’origine**: Vérifiez que le bouton bascule est sur la droite pour empêcher les utilisateurs de cliquer sur l’URL bloquée d’origine dans les applications Office 365 prises en charge : ![ activer/désactiver ](../../media/scc-toggle-on.png) .
 
    Lorsque vous avez terminé, cliquez sur **Enregistrer**.
 
@@ -152,7 +152,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 Pour vérifier que vous avez bien configuré les paramètres globaux pour les liens fiables (la liste **bloquer les URL suivantes** et les paramètres protection des applications Office 365), effectuez l’une des opérations suivantes :
 
-- Dans le centre de sécurité & conformité, accédez à la stratégie de **gestion des menaces** - \> **Policy** \> **liens approuvés ATP**, cliquez sur **paramètres globaux** et vérifiez les paramètres dans le survol qui s’affiche.
+- Dans le centre de sécurité & conformité, accédez à la stratégie de **gestion des menaces** - \>  \> **liens approuvés ATP**, cliquez sur **paramètres globaux** et vérifiez les paramètres dans le survol qui s’affiche.
 
 - Dans Exchange Online PowerShell ou Exchange Online Protection PowerShell, exécutez la commande suivante et vérifiez les paramètres :
 

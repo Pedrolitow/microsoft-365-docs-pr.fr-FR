@@ -20,13 +20,13 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.date: 09/16/2020
-ms.openlocfilehash: 3ec17204903f3e83f3fbfd126d57d0b9ca5d56f7
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.date: 12/09/2020
+ms.openlocfilehash: aa9f433bc60949aa625d9346421b025121347a2c
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843791"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683318"
 ---
 # <a name="the-action-center"></a>Le Centre de notifications
 
@@ -34,9 +34,9 @@ ms.locfileid: "48843791"
 
 
 **S’applique à :**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
-Utilisez le centre de notifications pour afficher les résultats des enquêtes actuelles et antérieures sur les appareils et les boîtes aux lettres de votre organisation. Selon le type de menace et le verdict résultant, les [actions de correction](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions) se produisent automatiquement ou après approbation de l’équipe des opérations de sécurité de votre organisation. Toutes les actions de correction, qu’elles soient en attente d’approbation ou qu’elles aient déjà été approuvées, sont regroupées dans le centre de notifications. 
+Utilisez le centre de maintenance ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ) pour afficher les résultats des enquêtes actuelles et antérieures sur les appareils et les boîtes aux lettres de votre organisation. Selon le type de menace et le verdict résultant, des [actions de correction](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions) peuvent se produire automatiquement ou après approbation de l’équipe des opérations de sécurité de votre organisation. Toutes les actions de correction, qu’elles soient en attente d’approbation ou qu’elles aient déjà été approuvées, sont regroupées dans le centre de notifications. 
 
 ![Centre de notifications](../../media/air-actioncenter.png)
 
@@ -74,7 +74,7 @@ Votre équipe des opérations de sécurité peut fonctionner de manière plus ef
 
 ## <a name="available-actions"></a>Actions disponibles
 
-Les actions de correction étant prises, elles sont répertoriées sous l’onglet historique dans le centre de maintenance. Ces actions sont les suivantes :
+Les actions de correction étant prises, elles sont répertoriées sous l’onglet **historique** dans le centre de maintenance. Ces actions sont les suivantes :
 
 - Collecter un package d’enquête 
 - Isoler l’appareil (cette action peut être inachevée) 
@@ -86,6 +86,26 @@ Les actions de correction étant prises, elles sont répertoriées sous l’ongl
 - Exécuter l’analyse antivirus 
 - Arrêter et mettre en quarantaine 
 
+> [!NOTE]
+> En plus des actions correctives prises automatiquement, votre équipe des opérations de sécurité peut prendre des mesures manuelles pour résoudre les menaces détectées. Pour plus d’informations sur les actions de correction automatique et manuelle, consultez la rubrique [mesures correctives](mtp-remediation-actions.md).
+
+## <a name="action-source"></a>Source de l’action
+
+(**Nouveau !**) Comme vous le sachiez, Microsoft 365 Defender rassemble des fonctionnalités d’enquête et de réponse automatisées entre plusieurs services, tels que [Microsoft Defender pour le point de terminaison](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) et [Microsoft defender pour Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp). Le nouveau centre de notifications et amélioré inclut désormais une colonne **source d’action** qui vous indique l’origine de chaque action de correction. 
+
+Le tableau suivant décrit les valeurs possibles de la **source d’action** :
+
+| Valeur source de l’action | Description |
+|:-----|:---|
+| **Action de périphérique manuelle** | Action manuelle effectuée sur un appareil. Les exemples incluent l' [isolation des appareils](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network) ou la mise en [quarantaine des fichiers](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-file-alerts#stop-and-quarantine-files). |
+| **Action de messagerie manuelle** | Action manuelle effectuée sur le courrier électronique. Un exemple inclut les messages électroniques de suppression de courriers électroniques ou la [Correction d’un message électronique](https://docs.microsoft.com/microsoft-365/security/office-365-security/remediate-malicious-email-delivered-office-365). |
+| **Action d’appareil automatisée** | Action automatisée effectuée sur une entité, telle qu’un fichier ou un processus. Les exemples d’actions automatisées incluent l’envoi d’un fichier en quarantaine, l’arrêt d’un processus et la suppression d’une clé de registre. (Consultez la rubrique [actions de correction dans Microsoft Defender pour le point de terminaison](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-auto-investigation#remediation-actions).) |
+| **Action de messagerie automatisée** | Action automatisée effectuée sur le contenu du courrier électronique, par exemple un message électronique, une pièce jointe ou une URL. Parmi les exemples d’actions automatisées, citons la suppression logicielle de messages électroniques, le blocage des URL et la désactivation du transfert de courrier externe. (Consultez la rubrique [actions de correction dans Microsoft Defender pour Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-remediation-actions).) |
+| **Action de chasse avancée** | Actions effectuées sur des appareils ou des messages électroniques avec la [chasse avancée](https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-overview). |
+| **Action Explorer** | Actions effectuées sur le contenu du courrier électronique avec l' [Explorateur](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer). |
+| **Action de réponse directe manuelle** | Actions effectuées sur un appareil avec une [réponse directe](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response). Les exemples incluent la suppression d’un fichier, l’arrêt d’un processus et la suppression d’une tâche planifiée. |
+| **Action de réponse en direct** | Actions effectuées sur un appareil avec [Microsoft Defender pour les API de point de terminaison](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/management-apis#microsoft-defender-for-endpoint-apis). Voici quelques exemples d’actions : isoler un appareil, exécuter une analyse antivirus et obtenir des informations sur un fichier. |
+
 ## <a name="required-permissions-for-action-center-tasks"></a>Autorisations requises pour les tâches du centre de notifications
 
 Pour approuver ou rejeter des actions en attente dans le centre de notifications, vous devez disposer des autorisations définies dans le tableau suivant :
@@ -93,7 +113,7 @@ Pour approuver ou rejeter des actions en attente dans le centre de notifications
 |Action de correction |Rôles et des autorisations requis |
 |--|----|
 |Microsoft Defender pour les corrections de point de terminaison (périphériques) |Rôle Administrateur de la sécurité attribué dans Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) ou dans le Centre d’administration Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- ou ---<br/>Rôle actions de correction actif affecté dans Microsoft Defender pour le point de terminaison <br/> <br/> Pour en savoir plus, consultez les ressources suivantes : <br/>- [Autorisations des rôles d’administrateur dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Créer et gérer des rôles pour le contrôle d’accès basé sur un rôle (Microsoft Defender pour le point de terminaison)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles)  |
-|Correctif Microsoft Defender pour Office 365 (contenu Office et courrier électronique)  |Rôle Administrateur de la sécurité attribué dans Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) ou dans le Centre d’administration Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- et --- <br/>Recherche et purger le rôle auquel est attribué le centre de sécurité & conformité ( [https://protection.office.com](https://protection.office.com) ) <br/><br/>**Important** : si le rôle administrateur de sécurité est affecté uniquement dans le centre de sécurité & conformité, vous ne pourrez pas accéder au centre de maintenance ni aux fonctionnalités de Microsoft 365 Defender. Vous devez avoir le rôle Administrateur de la sécurité attribué dans Azure Active Directory ou dans le Centre d’administration Microsoft 365. <br/><br/>Pour en savoir plus, consultez les ressources suivantes : <br/>- [Autorisations des rôles d’administrateur dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Autorisations dans le centre de sécurité & conformité](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
+|Correctif Microsoft Defender pour Office 365 (contenu Office et courrier électronique)  |Rôle Administrateur de la sécurité attribué dans Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) ou dans le Centre d’administration Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- et --- <br/>Recherche et purger le rôle auquel est attribué le centre de sécurité & conformité ( [https://protection.office.com](https://protection.office.com) ) <br/><br/>**Important**: si le rôle administrateur de sécurité est affecté uniquement dans le centre de sécurité & conformité, vous ne pourrez pas accéder au centre de maintenance ni aux fonctionnalités de Microsoft 365 Defender. Vous devez avoir le rôle Administrateur de la sécurité attribué dans Azure Active Directory ou dans le Centre d’administration Microsoft 365. <br/><br/>Pour en savoir plus, consultez les ressources suivantes : <br/>- [Autorisations des rôles d’administrateur dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Autorisations dans le centre de sécurité & conformité](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
 
 > [!NOTE]
 > Les utilisateurs qui ont le rôle Administrateur général attribué dans Azure Active Directory peuvent approuver ou rejeter toute action en attente dans le centre de notifications. Toutefois, il est recommandé à votre organisation de limiter le nombre de personnes auxquelles le rôle Administrateur général est attribué. Nous vous recommandons d’utiliser les rôles Administrateur de la sécurité, Actions de correction actives et Rechercher et purger répertoriés ci-dessus pour les autorisations du centre de notifications.

@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.custom: autoir
-ms.date: 09/16/2020
+ms.date: 12/09/2020
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 2b8872288291adc0b9fc5e1c1541f885711df230
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 7c28b7f3ac797f7402cfdb1f604fcef1e142a31b
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49356702"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683306"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Recherche et réponse automatisées dans Microsoft 365 Defender
 
@@ -39,21 +39,20 @@ ms.locfileid: "49356702"
 > Vous souhaitez découvrir Microsoft 365 Defender ? Vous pouvez l' [évaluer dans un environnement de laboratoire](https://aka.ms/mtp-trial-lab) ou [exécuter votre projet pilote en production](https://aka.ms/m365d-pilotplaybook).
 >
 
+## <a name="how-automated-investigation-and-self-healing-works"></a>Fonctionnement de l’enquête automatisée et de l’auto-réparation
+
 À mesure que des alertes de sécurité sont déclenchées, c’est à votre équipe chargée des opérations de sécurité d’examiner ces alertes et de prendre des mesures pour protéger votre organisation. La hiérarchisation et l’examen des alertes peuvent prendre beaucoup de temps, en particulier lorsque de nouvelles alertes continuent d’arriver pendant qu’un examen est en cours. Les équipes en charge des opérations de sécurité peuvent être submergées par le volume des menaces qu’elles doivent gérer. Les fonctionnalités d’analyse et de réponse automatisées, avec autoréparation, dans Microsoft 365 Defender peuvent vous aider.
 
 Regardez la vidéo suivante pour voir le fonctionnement de la réparation automatique :
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4BzwB]
 
-Dans Microsoft 365 Defender, l’analyse et la réponse automatisées avec des fonctionnalités d’auto-réparation fonctionnent sur vos appareils, le contenu & le courrier électronique et les identités. Microsoft 365 Defender rassemble les fonctionnalités des éléments suivants : 
-- [Recherche et correction automatisées dans Microsoft Defender pour le point de terminaison](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
-- [Recherche et réponse automatisées dans Microsoft Defender pour Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)
-- [Détection de menaces avancées Azure](https://docs.microsoft.com/azure/security/fundamentals/threat-detection)
-- [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)
+Dans Microsoft 365 Defender, l’analyse et la réponse automatisées avec des fonctionnalités d’auto-réparation fonctionnent sur vos appareils, le contenu & le courrier électronique et les identités.
  
-Cet article décrit le fonctionnement de l’instruction et de la réponse automatisées. Pour configurer ces fonctionnalités, consultez la rubrique [configure Automated State and Response Capabilities in Microsoft 365 Defender](mtp-configure-auto-investigation-response.md).
+> [!TIP]
+> Cet article décrit le fonctionnement de l’instruction et de la réponse automatisées. Pour configurer ces fonctionnalités, consultez la rubrique [configure Automated State and Response Capabilities in Microsoft 365 Defender](mtp-configure-auto-investigation-response.md).
 
-## <a name="your-virtual-analyst"></a>Votre analyste virtuel
+## <a name="your-own-virtual-analyst"></a>Votre propre analyste virtuel
 
 Imaginez un analyste virtuel au sein de votre équipe de sécurité de niveau 1/2. L’analyste virtuel est fidèle aux étapes recommandées par les opérations de sécurité pour examiner et corriger les menaces. L’assistant virtuel peut fonctionner 24h/24, 7j/7, avec une capacité illimitée et une charge considérable d’examens et de correction des menaces. Un assistant virtuel pourrait considérablement réduire le temps de réponse, libérant ainsi l’équipe en charge des opérations de sécurité pour d’autres projets stratégiques importants. Si ce scénario ressemble à science fiction, ce n’est pas le cas. Un tel analyste virtuel fait partie de votre suite Microsoft 365 Defender, et son nom est l’analyse *et la réponse automatiques*.
 
@@ -72,7 +71,7 @@ Une alerte déclenchée crée un incident, qui peut lancer une enquête automati
 
 |Entités |Services de protection contre les menaces  |
 |---------|---------|
-|Appareils (également appelés points de terminaison)     |[Microsoft Defender pour point de terminaison](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)<br/>[Microsoft Defender pour identité](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) |      
+|Appareils (également appelés points de terminaison)     |[Microsoft Defender pour point de terminaison](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)<br/>[Microsoft Defender pour l’identité](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) |      
 |Contenu de l’e-mail (fichiers et messages dans les boîtes aux lettres)     |[Microsoft Defender pour Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)         |
 
 Chaque enquête génère des verdicts (*malveillants*, *suspects* ou *aucune menace détectée*) pour chaque preuve examinée. Selon le type de menace et le verdict résultant, les actions de correction se produisent automatiquement ou après approbation de l’équipe des opérations de sécurité de votre organisation. Les actions en attente et achevées sont répertoriées dans le [Centre de notifications](mtp-action-center.md).

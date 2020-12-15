@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à configurer les entrées d’URL dans la liste des clients autorisés/bloqués du centre de sécurité & Compliance Center.
-ms.openlocfilehash: 4bf5e2e29a9f48c434be527a2447ca4bf98c4208
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: f60e2f29bf9b880e9d2247fa59554300ae348a03
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659997"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683210"
 ---
 # <a name="manage-urls-in-the-tenant-allowblock-list"></a>Gérer les URL dans la liste Autoriser/Bloquer du client
 
@@ -83,7 +83,7 @@ Pour plus d’informations sur la syntaxe des entrées d’URL, voir la syntaxe 
 
      ou
 
-     - Déplacez le bouton bascule vers la droite pour configurer les entrées de sorte qu’elles n’expirent jamais : ![Activer](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png).
+     - Déplacez le bouton bascule vers la droite pour configurer les entrées de sorte qu’elles n’expirent jamais : ![Activer](../../media/scc-toggle-on.png).
 
    - **Facultatif Remarque**: entrez un texte descriptif pour les entrées.
 
@@ -111,7 +111,7 @@ Cliquez sur **filtre**. Dans le menu volant **filtre** qui s’affiche, configur
 
 - **Action**: sélectionnez **autoriser**, **bloquer** ou les deux.
 
-- **N’expire jamais**: sélectionnez désactivé (désactiver ![ ](../../media/scc-toggle-off.png) ) ou activé ( ![ bascule ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) ).
+- **N’expire jamais**: sélectionnez Désactivé : ![ activer/désactiver ](../../media/scc-toggle-off.png) : ![ bascule ](../../media/scc-toggle-on.png) .
 
 - **Dernière mise à jour**: sélectionnez une date **de** début (de), une date de fin (**à**) ou les deux.
 
@@ -141,7 +141,7 @@ Vous ne pouvez pas modifier la valeur de l’URL proprement dite. Au lieu de cel
 
      ou
 
-     - Déplacez le bouton bascule vers la droite pour configurer l’entrée de sorte qu’elle n’expire jamais : ![Activer](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png).
+     - Déplacez le bouton bascule vers la droite pour configurer l’entrée de sorte qu’elle n’expire jamais : ![Activer](../../media/scc-toggle-on.png).
 
    - **Facultatif Remarque**: entrez un texte descriptif pour l’entrée.
 

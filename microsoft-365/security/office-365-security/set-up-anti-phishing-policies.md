@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur les stratégies anti-hameçonnage disponibles dans Exchange Online Protection (EOP) et Microsoft Defender pour Office 365.
-ms.openlocfilehash: 34c66d8ab39af443462e8c5ac99009b4170be21e
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 43736fbd42949a084804825ec7f12d19b7fd1818
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659855"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683048"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Stratégies anti-hameçonnage dans Microsoft 365
 
@@ -43,12 +43,12 @@ Les principales différences entre les stratégies de détection d’hameçonnag
 
 |Fonctionnalité|Stratégies de détection d’hameçonnage dans EOP|Stratégies anti-hameçonnage dans Microsoft Defender pour Office 365|
 |---|:---:|:---:|
-|Stratégie par défaut créée automatiquement|![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Créer des stratégies personnalisées|![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Paramètres de stratégie<sup>\*</sup>|![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Paramètres d’emprunt d’identité||![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Paramètres d’usurpation|![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Seuils de hameçonnage avancés||![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Stratégie par défaut créée automatiquement|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|
+|Créer des stratégies personnalisées|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|
+|Paramètres de stratégie<sup>\*</sup>|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|
+|Paramètres d’emprunt d’identité||![Coche](../../media/checkmark.png)|
+|Paramètres d’usurpation|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|
+|Seuils de hameçonnage avancés||![Coche](../../media/checkmark.png)|
 |
 
 <sup>\*</sup> Dans la stratégie par défaut, le nom et la description de la stratégie sont en lecture seule (la description est vide), et vous ne pouvez pas spécifier à qui la stratégie s’applique (la stratégie par défaut s’applique à tous les destinataires).

@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX
 description: Les administrateurs peuvent apprendre à utiliser les balises de mise en quarantaine pour contrôler ce que les utilisateurs peuvent faire à leurs messages mis en quarantaine.
-ms.openlocfilehash: 498a5f45fa62481f7f4f8dfe5ece8a51a038f99a
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 167f147d7c74b78b1a1661b5444625fbf1cf3d41
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616007"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683066"
 ---
 # <a name="quarantine-tags"></a>Balises de mise en quarantaine
 
@@ -44,12 +44,12 @@ Les autorisations individuelles disponibles et ce qui est inclus ou non dans les
 
 |Autorisation|Pas d’accès|Accès limité|Accès total|
 |---|:---:|:---:|:---:|
-|**Autoriser l’expéditeur** (_PermissionToAllowSender_)|||![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Bloquer l’expéditeur** (_PermissionToBlockSender_)||![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Supprimer** (_PermissionToDelete_)||![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Aperçu** (_PermissionToPreview_)||![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Autoriser les destinataires à libérer un message en quarantaine** (_PermissionToRelease_)|||![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Autoriser les destinataires à demander la libération d’un message en quarantaine** (_PermissionToRequestRelease_)||![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+|**Autoriser l’expéditeur** (_PermissionToAllowSender_)|||![Coche](../../media/checkmark.png)|
+|**Bloquer l’expéditeur** (_PermissionToBlockSender_)||![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|
+|**Supprimer** (_PermissionToDelete_)||![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|
+|**Aperçu** (_PermissionToPreview_)||![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|
+|**Autoriser les destinataires à libérer un message en quarantaine** (_PermissionToRelease_)|||![Coche](../../media/checkmark.png)|
+|**Autoriser les destinataires à demander la libération d’un message en quarantaine** (_PermissionToRequestRelease_)||![Coche](../../media/checkmark.png)||
 |
 
 Si vous n’aimez pas les autorisations par défaut dans les groupes d’autorisations prédéfinis, vous pouvez utiliser des autorisations personnalisées lors de la création ou de la modification de balises de mise en quarantaine personnalisées. Pour plus d’informations sur ce que fait chaque autorisation, voir la section Détails de l' [autorisation de mise en quarantaine](#quarantine-tag-permission-details) plus loin dans cet article.
@@ -58,7 +58,7 @@ Vous créez et attribuez des balises de mise en quarantaine dans le centre de s�
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Vous ouvrez le Centre de sécurité et conformité sur <https://protection.office.com/>. Pour accéder directement à la page **balises de quarantaine** , ouvrez <https://protection.office.com/quarantineTags> .
+- Vous ouvrez le Centre de conformité et sécurité sur <https://protection.office.com/>. Pour accéder directement à la page **balises de quarantaine** , ouvrez <https://protection.office.com/quarantineTags> .
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 

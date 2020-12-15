@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à afficher, créer, modifier et supprimer des stratégies de courrier indésirable sortant dans Exchange Online Protection (EOP).
-ms.openlocfilehash: 0deafe2817c3e10371b02349aca2612af090af65
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 1e25d687ea22c70ba36f7c183b1fd8e578f7fa13
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659701"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683330"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Configurer le filtrage du courrier indésirable sortant dans EOP
 
@@ -230,7 +230,7 @@ Pour activer ou désactiver une stratégie, définir l’ordre de priorité de l
 
    Déplacez le bouton bascule vers la gauche pour désactiver la stratégie : ![Désactiver](../../media/scc-toggle-off.png)
 
-   Déplacez le bouton bascule vers la droite pour activer la stratégie : ![Activer](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png)
+   Déplacez le bouton bascule vers la droite pour activer la stratégie : ![Activer](../../media/scc-toggle-on.png)
 
 Vous ne pouvez pas désactiver la stratégie de courrier indésirable sortant par défaut.
 

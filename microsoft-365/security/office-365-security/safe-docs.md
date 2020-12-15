@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Découvrez les documents sûrs dans Microsoft 365 E5 ou Microsoft 365 E5 sécurité.
-ms.openlocfilehash: 0acb5d4ee0c80deebc4d0b040b046d63037037a7
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 1bf802422dc05babaf5e2616468f8326b7007dc8
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659872"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682936"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Documents sécurisés dans Microsoft 365 E5
 
@@ -62,7 +62,7 @@ Les fichiers envoyés par des documents approuvés ne sont pas conservés dans D
 
 2. Dans les **paramètres globaux** , effectuer un survol qui s’affiche, configurez les paramètres suivants :
 
-   - **Activer les documents approuvés pour les clients Office**: déplacez le bouton bascule vers la droite pour activer la fonctionnalité : ![ activer/désactiver ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
+   - **Activer les documents approuvés pour les clients Office**: déplacez le bouton bascule vers la droite pour activer la fonctionnalité : ![ activer/désactiver ](../../media/scc-toggle-on.png) .
 
    - **Autoriser les utilisateurs à cliquer en mode protégé même si les documents approuvés identifient le fichier comme malveillant**: nous vous recommandons de laisser cette option désactivée (laissez le bouton bascule vers la gauche : ![ désactiver ](../../media/scc-toggle-off.png) ).
 

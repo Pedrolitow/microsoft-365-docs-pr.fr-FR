@@ -20,21 +20,20 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: a41e05f54a8ba94752c6df91628a2200367ac0f3
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 7fe5be065ee45700a1f08a39c8050757c3843f7b
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843839"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682570"
 ---
 # <a name="microsoft-secure-score"></a>Degré de sécurisation Microsoft
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 Microsoft Secure score est une mesure de la position de sécurité d’une organisation, avec un nombre supérieur indiquant d’autres actions d’amélioration. Vous pouvez https://security.microsoft.com/securescore le trouver dans le [Centre de sécurité Microsoft 365](overview-security-center.md).
 
-Le suivi des recommandations de score de sécurité peut protéger votre organisation contre les menaces. À partir d’un tableau de bord centralisé dans le centre de sécurité Microsoft 365, les organisations peuvent surveiller et gérer la sécurité des identités, des données, des applications, des périphériques et de l’infrastructure de Microsoft 365.
+Le suivi des recommandations de score de sécurité peut protéger votre organisation contre les menaces. À partir d’un tableau de bord centralisé dans le centre de sécurité Microsoft 365, les organisations peuvent surveiller et gérer la sécurité des identités, des applications et des appareils Microsoft 365.
 
 Le score de sécurité aide les organisations :  
 
@@ -112,7 +111,7 @@ Avec un accès en lecture seule, vous ne pouvez pas modifier le statut ou les no
 * Administrateur du support technique
 * Administrateur d’utilisateurs
 * Administrateur de service
-* Lecteur Sécurité
+* Lecteur de sécurité
 * Opérateur de sécurité
 * Lecteur général
 
@@ -120,7 +119,7 @@ Avec un accès en lecture seule, vous ne pouvez pas modifier le statut ou les no
 
 Microsoft Secure score est un résumé numérique de votre position de sécurité basée sur les configurations système, le comportement de l’utilisateur et d’autres mesures liées à la sécurité. Il ne s’agit pas d’une mesure absolue de la probabilité de violation de votre système ou de vos données. Il représente plutôt la mesure dans laquelle vous avez adopté des contrôles de sécurité dans votre environnement Microsoft afin de compenser le risque d’être compromis. Aucun service en ligne n’est totalement immunisé contre les violations de sécurité et le score sécurisé ne doit pas être interprété comme une garantie d’une violation de sécurité.
 
-## <a name="we-want-to-hear-from-you"></a>Nous souhaitons être informés
+## <a name="we-want-to-hear-from-you"></a>Votre avis nous intéresse
 
 Si vous rencontrez des problèmes, informez-le en publiant dans la communauté [Security, Privacy & Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) . Nous Surveillez la communauté et vous fournirons de l’aide.
 

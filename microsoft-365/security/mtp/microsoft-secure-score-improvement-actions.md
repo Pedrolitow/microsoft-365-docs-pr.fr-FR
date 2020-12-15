@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 02c79edaa05e7903a8797cdf83c18a4ce69716dc
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 8ebfe5746a69cc0161c38f0467954fabb3839240
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920535"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683342"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Évaluer votre niveau de sécurité avec le score de sécurité Microsoft
 
@@ -36,10 +36,8 @@ Microsoft Secure score est une mesure de la position de sécurité d’une organ
 Pour vous aider à trouver plus rapidement les informations dont vous avez besoin, les actions d’amélioration de Microsoft sont organisées en groupes :
 
 * Identity (comptes Azure Active Directory & rôles)
-* Données (aucune action d’amélioration pour l’instant)
 * Appareil (Microsoft Defender pour le point de terminaison, connu sous le nom [de Microsoft Secure score for Devices](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
 * Application (applications de messagerie et de Cloud, y compris Office 365 et Microsoft Cloud App Security)
-* Infrastructure (aucune action d’amélioration pour l’instant)
 
 >[!NOTE]
 >Dans la version récente de Microsoft Secure score, un modèle de notation amélioré a été publié, ce qui rendait le score de sécurité Microsoft temporairement incompatible avec le score de sécurité d’identité et l’API Graph. [Afficher les détails](microsoft-secure-score-whats-new.md)
@@ -56,8 +54,8 @@ En outre, si vous sélectionnez le bouton **inclure** en regard de votre score, 
 
 Voici les scores que vous pouvez ajouter à votre vue de votre score global afin de vous donner une image plus complète de votre score global :
 
-- **Score planifié** : afficher le score projeté lorsque les actions planifiées sont terminées
-- **Score de licence actuel** : affiche le score qui peut être obtenu avec votre licence Microsoft actuelle
+- **Score planifié**: afficher le score projeté lorsque les actions planifiées sont terminées
+- **Score de licence actuel**: affiche le score qui peut être obtenu avec votre licence Microsoft actuelle
 - **Score** possible : afficher le score qui peut être obtenu avec vos licences Microsoft et acceptation actuelle des risques
 
 Cet affichage est ce qu’il ressemblera si vous avez inclus tous les affichages de score possibles :
@@ -114,7 +112,7 @@ La section **implémentation** présente les conditions préalables, étape par 
 
 Les conditions préalables incluent toutes les licences qui doivent être obtenues ou les actions qui doivent être effectuées avant l’exécution de l’action d’amélioration. Assurez-vous que votre licence comporte suffisamment de sièges pour effectuer l’action d’amélioration et que ces licences sont appliquées aux utilisateurs nécessaires.  
 
-## <a name="we-want-to-hear-from-you"></a>Nous souhaitons être informés
+## <a name="we-want-to-hear-from-you"></a>Votre avis nous intéresse
 
 Si vous rencontrez des problèmes, informez-le en publiant dans la communauté [Security, Privacy & Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) . Nous Surveillez la communauté et vous fournirons de l’aide.
 

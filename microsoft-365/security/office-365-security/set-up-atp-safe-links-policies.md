@@ -17,12 +17,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à afficher, créer, modifier et supprimer des stratégies de liens fiables et des paramètres globaux de liens fiables dans Microsoft Defender pour Office 365.
-ms.openlocfilehash: 8a6d8a7ad567b658f04cb0b28800d4edbc33ec67
-ms.sourcegitcommit: f81ca61f74f11a7436a6172538c3bda81b484d62
+ms.openlocfilehash: 7a00b73855302f5046afa0605fd7188007394ed7
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/15/2020
-ms.locfileid: "49675240"
+ms.locfileid: "49683162"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Configurer des stratégies de liens fiables dans Microsoft Defender pour Office 365
 
@@ -178,7 +178,7 @@ Pour activer ou désactiver une stratégie ou définir l’ordre de priorité de
 
    - Déplacez le bouton bascule vers la gauche pour désactiver la stratégie : ![Désactiver la stratégie](../../media/scc-toggle-off.png).
 
-   - Déplacez le bouton bascule vers la droite pour activer la stratégie : ![Activer la stratégie](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png).
+   - Déplacez le bouton bascule vers la droite pour activer la stratégie : ![Activer la stratégie](../../media/scc-toggle-on.png).
 
 ### <a name="set-the-priority-of-safe-links-policies"></a>Définir la priorité des stratégies de liens fiables
 

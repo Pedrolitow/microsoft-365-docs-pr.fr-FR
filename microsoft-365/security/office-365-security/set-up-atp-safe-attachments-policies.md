@@ -17,19 +17,19 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez comment définir des stratégies de pièces jointes fiables afin de protéger votre organisation contre les fichiers malveillants par courrier électronique.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a14f5a22795fc08b76165466d8e44ee38d8a2d81
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: 9105e7ed9e9bc376b3d86cd846d8c1d6eae8deea
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572636"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682905"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Configurer des stratégies de pièces jointes fiables dans Microsoft Defender pour Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 > [!IMPORTANT]
-> Cet article est destiné aux clients professionnels qui disposent [de Microsoft Defender pour Office 365](office-365-atp.md). Si vous êtes un utilisateur à domicile et que vous recherchez des informations sur l’analyse des pièces jointes dans Outlook, consultez la rubrique [Advanced Outlook.com Security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Cet article est destiné aux entreprises qui ont [Microsoft Defender pour Office 365](office-365-atp.md). Si vous êtes un utilisateur à domicile et que vous recherchez des informations sur l’analyse des pièces jointes dans Outlook, consultez la rubrique [Advanced Outlook.com Security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 La fonctionnalité pièces jointes fiables est une fonctionnalité de [Microsoft Defender pour Office 365](office-365-atp.md) qui utilise un environnement virtuel pour vérifier les pièces jointes dans les messages électroniques entrants après qu’ils ont été analysés par la protection contre les [programmes malveillants dans Exchange Online Protection (EoP)](anti-malware-protection.md), mais avant remise aux destinataires. Pour plus d’informations, consultez la rubrique [pièces jointes fiables dans Microsoft Defender pour Office 365](atp-safe-attachments.md).
 
@@ -59,16 +59,16 @@ Dans Exchange Online PowerShell ou EOP PowerShell autonome, vous gérez la strat
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Avant de pouvoir effectuer les procédures décrites dans cet article, vous devez disposer d’autorisations dans le centre de sécurité & Compliance Center :
+- Pour pouvoir utiliser ce cmdlet, vous devez disposer des autorisations dans le centre de sécurité et conformité Office 365.
   - Pour créer, modifier et supprimer des stratégies de pièces jointes approuvées, vous devez être membre des groupes de rôles gestion de l' **organisation** ou **administrateur de sécurité** .
   - Pour un accès en lecture seule aux stratégies de pièces jointes approuvées, vous devez être membre des groupes de rôles **lecteur global** ou **lecteur de sécurité** .
 
   Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
 
-  **Remarques**:
+  **Remarques** :
 
-  - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le centre d’administration 365 de Microsoft donne aux utilisateurs les autorisations requises dans le centre de sécurité & conformité _et_ des autorisations pour d’autres fonctionnalités de Microsoft 365. Si vous souhaitez en savoir plus, veuillez consulter la page [À propos des rôles d’administrateur](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
-  - Le groupe de rôles gestion de l' **Organisation en affichage seul** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) offre également un accès en lecture seule à la fonctionnalité.
+  - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux utilisateurs les autorisations requises dans le centre de sécurité et de conformité _et_ les autorisations pour les autres fonctionnalités de Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Le groupe de rôles **Gestion de l’organisation en affichage seul** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) permet également d’accéder en lecture seule à la fonctionnalité.
 
 - Pour connaître les paramètres recommandés pour les stratégies de pièces jointes approuvées, consultez la rubrique [Safe Attachments Settings](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-settings).
 
@@ -78,7 +78,7 @@ Dans Exchange Online PowerShell ou EOP PowerShell autonome, vous gérez la strat
 
 La création d’une stratégie de pièces jointes fiables personnalisée dans le centre de sécurité & conformité crée la règle de pièce jointe fiable et la stratégie de pièces jointes fiables associée en utilisant le même nom pour les deux.
 
-1. Dans le centre de sécurité & conformité, accédez à la stratégie de **gestion des menaces** - \> **Policy** \> **pièces jointes ATP**.
+1. Dans le centre de sécurité & conformité, accédez à la stratégie de **gestion des menaces** - \>  \> **pièces jointes ATP**.
 
 2. Dans la page **pièces jointes approuvées** , cliquez sur **créer**.
 
@@ -140,7 +140,7 @@ La création d’une stratégie de pièces jointes fiables personnalisée dans l
 
 ## <a name="use-the-security--compliance-center-to-view-safe-attachments-policies"></a>Utiliser le centre de sécurité & conformité pour afficher les stratégies de pièces jointes fiables
 
-1. Dans le centre de sécurité & conformité, accédez à la stratégie de **gestion des menaces** - \> **Policy** \> **pièces jointes ATP**.
+1. Dans le centre de sécurité & conformité, accédez à la stratégie de **gestion des menaces** - \>  \> **pièces jointes ATP**.
 
 2. Dans la page **pièces jointes approuvées** , sélectionnez une stratégie dans la liste et cliquez dessus (ne cochez pas la case).
 
@@ -148,7 +148,7 @@ La création d’une stratégie de pièces jointes fiables personnalisée dans l
 
 ## <a name="use-the-security--compliance-center-to-modify-safe-attachments-policies"></a>Utiliser le centre de sécurité & conformité pour modifier les stratégies de pièces jointes fiables
 
-1. Dans le centre de sécurité & conformité, accédez à la stratégie de **gestion des menaces** - \> **Policy** \> **pièces jointes ATP**.
+1. Dans le centre de sécurité & conformité, accédez à la stratégie de **gestion des menaces** - \>  \> **pièces jointes ATP**.
 
 2. Dans la page **pièces jointes approuvées** , sélectionnez une stratégie dans la liste et cliquez dessus (ne cochez pas la case).
 
@@ -160,13 +160,13 @@ Pour activer ou désactiver une stratégie ou définir l’ordre de priorité de
 
 ### <a name="enable-or-disable-safe-attachments-policies"></a>Activer ou désactiver les stratégies de pièces jointes approuvées
 
-1. Dans le centre de sécurité & conformité, accédez à la stratégie de **gestion des menaces** - \> **Policy** \> **pièces jointes ATP**.
+1. Dans le centre de sécurité & conformité, accédez à la stratégie de **gestion des menaces** - \>  \> **pièces jointes ATP**.
 
 2. Notez la valeur dans la colonne **État** :
 
    - Déplacer le bouton bascule vers la gauche ![Désactiver la stratégie](../../media/scc-toggle-off.png) pour désactiver la stratégie.
 
-   - Déplacer le bouton bascule vers la droite ![Activer la stratégie](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) pour activer la stratégie.
+   - Déplacer le bouton bascule vers la droite ![Activer la stratégie](../../media/scc-toggle-on.png) pour activer la stratégie.
 
 ### <a name="set-the-priority-of-safe-attachments-policies"></a>Définir la priorité des stratégies de pièces jointes approuvées
 
@@ -180,7 +180,7 @@ Les stratégies de pièces jointes approuvées sont affichées dans l’ordre da
 
 Pour modifier la priorité d’une stratégie, déplacez-la vers le haut ou vers le bas de la liste (vous ne pouvez pas modifier directement le numéro de **priorité** dans le Centre de sécurité & conformité).
 
-1. Dans le centre de sécurité & conformité, accédez à la stratégie de **gestion des menaces** - \> **Policy** \> **pièces jointes ATP**.
+1. Dans le centre de sécurité & conformité, accédez à la stratégie de **gestion des menaces** - \>  \> **pièces jointes ATP**.
 
 2. Dans la page **pièces jointes approuvées** , sélectionnez une stratégie dans la liste et cliquez dessus (ne cochez pas la case).
 
@@ -198,7 +198,7 @@ Pour modifier la priorité d’une stratégie, déplacez-la vers le haut ou vers
 
 ## <a name="use-the-security--compliance-center-to-remove-safe-attachments-policies"></a>Utiliser le centre de sécurité & conformité pour supprimer des stratégies de pièces jointes fiables
 
-1. Dans le centre de sécurité & conformité, accédez à la stratégie de **gestion des menaces** - \> **Policy** \> **pièces jointes ATP**.
+1. Dans le centre de sécurité & conformité, accédez à la stratégie de **gestion des menaces** - \>  \> **pièces jointes ATP**.
 
 2. Dans la page **pièces jointes approuvées** , sélectionnez une stratégie dans la liste et cliquez dessus (ne cochez pas la case).
 
@@ -221,7 +221,7 @@ La création d’une stratégie de pièces jointes fiables dans PowerShell est u
 1. Créez la stratégie de pièces jointes fiables.
 2. Créer la règle de pièce jointe fiable qui spécifie la stratégie de pièces jointes fiables à laquelle la règle s’applique.
 
- **Remarques**:
+ **Remarques** :
 
 - Vous pouvez créer une règle de pièce jointe fiable et lui affecter une stratégie de pièces jointes fiables existante non associée. Une règle de pièce jointe fiable ne peut pas être associée à plusieurs stratégies de pièces jointes fiables.
 
@@ -438,7 +438,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 Pour vérifier que vous avez bien créé, modifié ou supprimé des stratégies de pièces jointes fiables, effectuez l’une des opérations suivantes :
 
-- Dans le centre de sécurité & conformité, accédez à la stratégie de **gestion des menaces** - \> **Policy** \> **pièces jointes ATP**. Vérifiez la liste des stratégies, leurs valeurs d' **État** et leurs valeurs de **priorité** . Pour afficher plus de détails, sélectionnez la stratégie dans la liste, puis affichez les détails dans le survol.
+- Dans le centre de sécurité & conformité, accédez à la stratégie de **gestion des menaces** - \>  \> **pièces jointes ATP**. Vérifiez la liste des stratégies, leurs valeurs d' **État** et leurs valeurs de **priorité** . Pour afficher plus de détails, sélectionnez la stratégie dans la liste, puis affichez les détails dans le survol.
 
 - Dans Exchange Online PowerShell ou Exchange Online Protection PowerShell, remplacez \<Name\> par le nom de la stratégie ou de la règle, exécutez la commande suivante et vérifiez les paramètres :
 

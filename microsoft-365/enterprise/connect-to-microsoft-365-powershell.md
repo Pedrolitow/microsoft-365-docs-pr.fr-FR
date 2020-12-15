@@ -37,7 +37,7 @@ Il existe deux versions du module PowerShell que vous utilisez pour vous connect
 
 À l’heure actuelle, le module Azure Active Directory PowerShell pour Graph ne remplace pas complètement la fonctionnalité du Module Microsoft Azure Active Directory pour Windows PowerShell pour l’administration des utilisateurs, des groupes et des licences. Dans certains cas, vous devez utiliser les deux versions. Vous pouvez installer en toute sécurité les deux versions sur le même ordinateur.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu’il faut savoir avant de commencer
 
 
 **Système d’exploitation**
@@ -60,7 +60,7 @@ Vous pouvez utiliser les versions de Windows suivantes :
 - Vous devez utiliser PowerShell version 5.1 ou ultérieure jusqu’à PowerShell version 6 pour le Module Microsoft Azure Active Directory pour Windows PowerShell. Vous ne pouvez pas utiliser PowerShell version 7.
        
 >[!Note]
->Ces procédures sont destinées aux utilisateurs qui sont membres d’un groupe de rôles d'administrateur Microsoft 365. Si vous souhaitez en savoir plus, veuillez consulter la page [À propos des rôles d’administrateur](https://go.microsoft.com/fwlink/p/?LinkId=532367).
+>Ces procédures sont destinées aux utilisateurs qui sont membres d’un groupe de rôles d'administrateur Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](https://go.microsoft.com/fwlink/p/?LinkId=532367).
 
 
 ## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>Se connecter avec le module PowerShell Azure Active Directory pour Graph
@@ -98,7 +98,7 @@ Pour vous connecter à Azure AD de votre abonnement Microsoft 365 avec un nom e
 | Office 365 U.S. Government DoD et Office 365 U.S. Government GCC High | `Connect-AzureAD -AzureEnvironmentName AzureUSGovernment` |
 |||
 
-Dans la boîte de dialogue **Connectez-vous à votre compte** , tapez le nom d’utilisateur et le mot de passe de votre compte professionnel ou scolaire Microsoft 365, puis sélectionnez **OK**.
+Dans la boîte de dialogue **Connectez-vous à votre compte**, tapez le nom d’utilisateur et le mot de passe de votre compte professionnel ou scolaire Microsoft 365, puis sélectionnez **OK**.
 
 Si vous utilisez une authentification multifacteur, suivez les instructions pour fournir des informations d’authentification supplémentaires telles que le code de vérification.
 
@@ -123,8 +123,8 @@ Ces étapes ne sont requises qu’une fois sur votre ordinateur. Mais vous devre
     
    1. Ouvrez une invite de commandes Windows PowerShell avec élévation de privilèges (exécutez Windows PowerShell en tant qu’administrateur).
    1.  Exécutez la commande **Install-Module MSOnline**.
-   1. Si vous êtes invité à installer le fournisseur NuGet, tapez **Y** , puis appuyez sur Entrée.
-   1. Si vous êtes invité à installer le module à partir de PSGallery, tapez **Y** , puis appuyez sur Entrée.
+   1. Si vous êtes invité à installer le fournisseur NuGet, tapez **Y**, puis appuyez sur Entrée.
+   1. Si vous êtes invité à installer le module à partir de PSGallery, tapez **Y**, puis appuyez sur Entrée.
     
 ### <a name="step-2-connect-to-azure-ad-for-your-microsoft-365-subscription"></a>Étape 2 : connectez-vous à Azure AD avec votre abonnement Microsoft 365
 
@@ -138,13 +138,13 @@ Pour vous connecter à Azure AD de votre abonnement Microsoft 365 avec un nom e
 | Office 365 U.S. Government DoD et Office 365 U.S. Government GCC High | `Connect-MsolService -AzureEnvironment USGovernment` |
 |||
 
-Dans la boîte de dialogue **Connectez-vous à votre compte** , tapez le nom d’utilisateur et le mot de passe de votre compte professionnel ou scolaire Microsoft 365, puis sélectionnez **OK**.
+Dans la boîte de dialogue **Connectez-vous à votre compte**, tapez le nom d’utilisateur et le mot de passe de votre compte professionnel ou scolaire Microsoft 365, puis sélectionnez **OK**.
 
 Si vous utilisez une authentification multifacteur, suivez les instructions pour fournir des informations d’authentification supplémentaires telles que le code de vérification.
 
 ### <a name="how-do-you-know-it-worked"></a>Vérification du bon fonctionnement
 
-Si vous ne recevez pas de message d’erreur, alors vous vous êtes connecté. Pour effectuer un test rapide, exécutez une cmdlet Microsoft 365 telle que, **Get-MsolUser** , et consultez les résultats.
+Si vous ne recevez pas de message d’erreur, alors vous vous êtes connecté. Pour effectuer un test rapide, exécutez une cmdlet Microsoft 365 telle que, **Get-MsolUser**, et consultez les résultats.
   
 Si vous recevez un message d’erreur, vérifiez les problèmes suivants:
   
@@ -165,11 +165,11 @@ Si vous recevez un message d’erreur, vérifiez les problèmes suivants:
   (Get-Item C:\Windows\System32\WindowsPowerShell\v1.0\Modules\MSOnline\Microsoft.Online.Administration.Automation.PSModule.dll).VersionInfo.FileVersion
   ```
 
-    Si le numéro de version renvoyé est inférieur à la valeur *1.0.8070.2* , désinstallez le Module Microsoft Azure Active Directory pour Windows PowerShell, puis installez-le à partir de [l’Etape 1](#step-1-install-the-required-software) ci-dessus.
+    Si le numéro de version renvoyé est inférieur à la valeur *1.0.8070.2*, désinstallez le Module Microsoft Azure Active Directory pour Windows PowerShell, puis installez-le à partir de [l’Etape 1](#step-1-install-the-required-software) ci-dessus.
 
-- **Si un message d’erreur de connexion s’affiche** , consultez [Erreur « Connect-MsolService: Une exception de type a été levée »](https://go.microsoft.com/fwlink/p/?LinkId=532377).
+- **Si un message d’erreur de connexion s’affiche**, consultez [Erreur « Connect-MsolService: Une exception de type a été levée »](https://go.microsoft.com/fwlink/p/?LinkId=532377).
     
-- **Si vous recevez un message d’erreur «Get-Item : Chemin introuvable»** , exécutez cette commande:
+- **Si vous recevez un message d’erreur «Get-Item : Chemin introuvable»**, exécutez cette commande:
 
 
    ```powershell

@@ -19,12 +19,12 @@ ms.collection:
 - SPO_Content
 description: Découvrez comment activer la protection avancée contre les menaces pour SharePoint, OneDrive et Teams, y compris comment définir des alertes pour les fichiers détectés.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 69cb7ffcfb06d5ccda915004a512e7eefc6eb56e
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 44d487810156d5de5ae152e08040e8dccd2a4ee0
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844271"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682591"
 ---
 # <a name="turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Activer la Protection avancée contre les menaces pour SharePoint, OneDrive et Microsoft Teams.
 
@@ -48,9 +48,9 @@ Cet article décrit la procédure d’activation et de configuration de la prote
 
 ## <a name="step-1-use-the-security--compliance-center-to-turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Étape 1 : utiliser le centre de sécurité & conformité pour activer la protection avancée contre les menaces pour SharePoint, OneDrive et Microsoft teams
 
-1. Dans le centre de sécurité & conformité, accédez à la stratégie de **gestion des menaces** - \> **Policy** \> **pièces jointes ATP** et cliquez sur **paramètres globaux**.
+1. Dans le centre de sécurité & conformité, accédez à la stratégie de **gestion des menaces** - \>  \> **pièces jointes ATP** et cliquez sur **paramètres globaux**.
 
-2. Dans les **paramètres globaux** , sélectionnez le passage à la sortie qui s’affiche, puis cliquez sur le paramètre Activer la protection avancée contre les menaces **pour SharePoint, OneDrive et Microsoft teams** . Déplacez le bouton bascule vers la droite sur Activer pour activer la protection avancée contre les menaces ![ ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) pour SharePoint, OneDrive et Microsoft Teams.
+2. Dans les **paramètres globaux** , sélectionnez le passage à la sortie qui s’affiche, puis cliquez sur le paramètre Activer la protection avancée contre les menaces **pour SharePoint, OneDrive et Microsoft teams** . Déplacez le bouton bascule vers la droite sur Activer pour activer la protection avancée contre les menaces ![ ](../../media/scc-toggle-on.png) pour SharePoint, OneDrive et Microsoft Teams.
 
    Lorsque vous avez terminé, cliquez sur **Enregistrer**.
 
@@ -74,7 +74,7 @@ Pour empêcher les utilisateurs de télécharger des fichiers malveillants, [Con
 Set-SPOTenant -DisallowInfectedFileDownload $true
 ```
 
-**Remarques**  :
+**Remarques** :
 
 - Ce paramètre affecte les utilisateurs et les administrateurs.
 - Les utilisateurs peuvent toujours supprimer des fichiers malveillants.
@@ -91,24 +91,24 @@ Vous pouvez créer une stratégie d’alerte qui vous avertit, ainsi que d’aut
 
 3. L’Assistant **nouvelle stratégie d’alerte** s’ouvre en un passage. Sur la page **nommer votre alerte** , configurez les paramètres suivants :
 
-   - **Nom** : tapez un nom unique et descriptif. Par exemple, des fichiers malveillants dans les bibliothèques.
-   - **Description** : tapez une description facultative. Par exemple, avertir les administrateurs lorsque des fichiers malveillants sont détectés dans SharePoint Online, OneDrive ou Microsoft Teams.
-   - **Gravité** : laissez la valeur par défaut **faible** sélectionnée ou sélectionnez **moyenne** ou **élevée**.
-   - **Sélectionnez une catégorie** : sélectionnez **gestion des menaces**.
+   - **Nom**: tapez un nom unique et descriptif. Par exemple, des fichiers malveillants dans les bibliothèques.
+   - **Description**: tapez une description facultative. Par exemple, avertir les administrateurs lorsque des fichiers malveillants sont détectés dans SharePoint Online, OneDrive ou Microsoft Teams.
+   - **Gravité**: laissez la valeur par défaut **faible** sélectionnée ou sélectionnez **moyenne** ou **élevée**.
+   - **Sélectionnez une catégorie**: sélectionnez **gestion des menaces**.
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
 4. Sur la page **créer des paramètres d’alerte** , configurez les paramètres suivants :
 
-   - **Sur quoi souhaitez-vous alerter ?: activité** : sélectionnez **programmes malveillants détectés dans le fichier**.
-   - **Comment voulez-vous que l’alerte soit déclenchée ?** : conservez la valeur par défaut **chaque fois qu’une activité correspond à la règle** sélectionnée.
+   - **Sur quoi souhaitez-vous alerter ?: activité**: sélectionnez **programmes malveillants détectés dans le fichier**.
+   - **Comment voulez-vous que l’alerte soit déclenchée ?**: conservez la valeur par défaut **chaque fois qu’une activité correspond à la règle** sélectionnée.
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
 5. Sur la page **définir vos destinataires** , configurez les paramètres suivants :
 
-   - **Envoyer des notifications par courrier électronique** : Vérifiez que ce paramètre est sélectionné. Dans la zone **destinataires du message** , sélectionnez un ou plusieurs administrateurs globaux, administrateurs de sécurité ou lecteurs de sécurité qui doivent recevoir une notification lorsqu’un fichier malveillant est détecté.
-   - **Limite quotidienne des notifications** : laissez la valeur par défaut **aucune limite** sélectionnée.
+   - **Envoyer des notifications par courrier électronique**: Vérifiez que ce paramètre est sélectionné. Dans la zone **destinataires du message** , sélectionnez un ou plusieurs administrateurs globaux, administrateurs de sécurité ou lecteurs de sécurité qui doivent recevoir une notification lorsqu’un fichier malveillant est détecté.
+   - **Limite quotidienne des notifications**: laissez la valeur par défaut **aucune limite** sélectionnée.
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
@@ -126,7 +126,7 @@ Si vous préférez utiliser PowerShell pour créer la même stratégie d’alert
 New-ActivityAlert -Name "Malicious Files in Libraries" -Description "Notifies admins when malicious files are detected in SharePoint Online, OneDrive, or Microsoft Teams" -Category ThreatManagement -Operation FileMalwareDetected -NotifyUser "admin1@contoso.com","admin2@contoso.com"
 ```
 
-**Remarque** : la valeur de _gravité_ par défaut est faible. Pour spécifier une valeur moyenne ou élevée, incluez le paramètre de _gravité_ et la valeur dans la commande.
+**Remarque**: la valeur de _gravité_ par défaut est faible. Pour spécifier une valeur moyenne ou élevée, incluez le paramètre de _gravité_ et la valeur dans la commande.
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [New-ActivityAlert](https://docs.microsoft.com/powershell/module/exchange/new-activityalert).
 
@@ -134,7 +134,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 - Pour vérifier que vous avez bien activé la protection avancée contre les menaces pour SharePoint, OneDrive et Microsoft Teams, procédez comme suit :
 
-  - Dans le [Centre de sécurité & conformité](https://protection.office.com), accédez à la stratégie de **gestion des menaces** \> **Policy** \> **pièces jointes approuvées ATP** , sélectionnez **paramètres globaux** et vérifiez la valeur du paramètre **activer l’ATP pour SharePoint, OneDrive et Microsoft teams** .
+  - Dans le [Centre de sécurité & conformité](https://protection.office.com), accédez à la stratégie de **gestion des menaces** \>  \> **pièces jointes approuvées ATP**, sélectionnez **paramètres globaux** et vérifiez la valeur du paramètre **activer l’ATP pour SharePoint, OneDrive et Microsoft teams** .
 
   - Dans Exchange Online PowerShell, exécutez la commande suivante pour vérifier le paramètre de la propriété :
 

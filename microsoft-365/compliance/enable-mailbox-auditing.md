@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 ms.custom: seo-marvel-apr2020
 description: La journalisation d’audit de boîte aux lettres est activée par défaut dans Microsoft 365 (également appelée audit de boîte aux lettres par défaut ou audit de boîte aux lettres par défaut). En d’autres termes, certaines actions effectuées par les propriétaires de boîtes aux lettres, les délégués et les administrateurs sont automatiquement enregistrées dans un journal d’audit de boîte aux lettres, dans lequel vous pouvez rechercher des activités effectuées sur la boîte aux lettres.
-ms.openlocfilehash: 8d91936f82070848dc65d1b160d4df0165875213
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 8b199f2fe63f0304e705f32bab8191a966e63fce
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48649623"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682551"
 ---
 # <a name="manage-mailbox-auditing"></a>Gérer l’audit de boîte aux lettres
 
@@ -64,11 +64,11 @@ Le tableau suivant indique les types de boîtes aux lettres actuellement pris en
 
 |**Type de boîte aux lettres**|**Pris en charge**|**Non pris en charge**|
 |:---------|:---------:|:---------:|
-|Boîtes aux lettres utilisateur|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-|Boîtes aux lettres partagées|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-|Boîtes aux lettres de groupe Microsoft 365|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-|Boîtes aux lettres de ressources||![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Boîtes aux lettres de dossiers publics||![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Boîtes aux lettres utilisateur|![Coche](../media/checkmark.png)||
+|Boîtes aux lettres partagées|![Coche](../media/checkmark.png)||
+|Boîtes aux lettres de groupe Microsoft 365|![Coche](../media/checkmark.png)||
+|Boîtes aux lettres de ressources||![Coche](../media/checkmark.png)|
+|Boîtes aux lettres de dossiers publics||![Coche](../media/checkmark.png)|
 
 ## <a name="logon-types-and-mailbox-actions"></a>Types d’ouverture de session et actions de boîte aux lettres
 
@@ -98,7 +98,7 @@ Les types d’ouverture de session classent l’utilisateur qui a effectué les 
 
 Le tableau suivant décrit les actions de boîte aux lettres disponibles dans l’enregistrement d’audit de boîte aux lettres pour les boîtes aux lettres d’utilisateur et les boîtes aux lettres partagées.
 
-- Une coche ( ![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)) indique que l’action de boîte aux lettres peut être enregistrée pour le type d’ouverture de session (toutes les actions ne sont pas disponibles pour tous les types d’ouverture de session).
+- Une coche ( ![Coche](../media/checkmark.png)) indique que l’action de boîte aux lettres peut être enregistrée pour le type d’ouverture de session (toutes les actions ne sont pas disponibles pour tous les types d’ouverture de session).
 
 - Un astérisque ( <sup>\*</sup> ) après la coche indique que l’action de boîte aux lettres est enregistrée par défaut pour le type d’ouverture de session.
 
@@ -107,28 +107,28 @@ Le tableau suivant décrit les actions de boîte aux lettres disponibles dans l�
 |**Action de boîte aux lettres**|**Description**|**Administrateur**|**Délégué**|**Owner**|
 |:---------|:---------|:---------:|:---------:|:---------:|
 |**AddFolderPermissions**|**Remarque**: bien que cette valeur soit acceptée en tant qu’action de boîte aux lettres, elle est déjà incluse dans l’action **UpdateFolderPermissions** et n’est pas auditée séparément. En d’autres termes, n’utilisez pas cette valeur.||||
-|**ApplyRecord**|Un élément est étiqueté en tant qu’enregistrement.|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Copier**|Un message a été copié dans un autre dossier.|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
-|**Create**|Un élément a été créé dans le dossier calendrier, contacts, notes ou tâches dans la boîte aux lettres (par exemple, une nouvelle demande de réunion est créée). Notez que la création, l’envoi ou la réception d’un message ne sont pas audités. De même, la création d’un dossier de boîte aux lettres n’est pas auditée.|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Par défaut**||![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**FolderBind**|Un utilisateur a accédé au dossier de boîte aux lettres. Cette action est également enregistrée lorsque l’administrateur ou un délégué ouvre la boîte aux lettres.<br/><br/> **Remarque**: les enregistrements d’audit pour les actions de liaison de dossiers effectuées par des délégués sont consolidés. Un enregistrement d’audit est généré pour un accès individuel aux dossiers au cours d’une période de 24 heures.|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-|**HardDelete**|Un message a été purgé du dossier Éléments récupérables.|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
-|**MailItemsAccessed**|Les données de messagerie sont accessibles par les clients et les protocoles de messagerie. Cette valeur est disponible uniquement pour les utilisateurs d’abonnement de complément de conformité E5 ou E5. Pour plus d’informations, consultez la rubrique [accès aux événements cruciaux pour les enquêtes](advanced-audit.md#access-to-crucial-events-for-investigations).|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
-|**MailboxLogin**|L’utilisateur est connecté à sa boîte aux lettres. |||![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**MessageBind**|Un message a été affiché dans le volet de visualisation ou ouvert par un administrateur. **Remarque**: bien que cette valeur soit acceptée en tant qu’action de boîte aux lettres, ces actions ne sont plus enregistrées.|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
+|**ApplyRecord**|Un élément est étiqueté en tant qu’enregistrement.|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|
+|**Copier**|Un message a été copié dans un autre dossier.|![Coche](../media/checkmark.png)|||
+|**Create**|Un élément a été créé dans le dossier calendrier, contacts, notes ou tâches dans la boîte aux lettres (par exemple, une nouvelle demande de réunion est créée). Notez que la création, l’envoi ou la réception d’un message ne sont pas audités. De même, la création d’un dossier de boîte aux lettres n’est pas auditée.|![Coche](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)|
+|**Par défaut**||![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|
+|**FolderBind**|Un utilisateur a accédé au dossier de boîte aux lettres. Cette action est également enregistrée lorsque l’administrateur ou un délégué ouvre la boîte aux lettres.<br/><br/> **Remarque**: les enregistrements d’audit pour les actions de liaison de dossiers effectuées par des délégués sont consolidés. Un enregistrement d’audit est généré pour un accès individuel aux dossiers au cours d’une période de 24 heures.|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|**HardDelete**|Un message a été purgé du dossier Éléments récupérables.|![Coche](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|
+|**MailItemsAccessed**|Les données de messagerie sont accessibles par les clients et les protocoles de messagerie. Cette valeur est disponible uniquement pour les utilisateurs d’abonnement de complément de conformité E5 ou E5. Pour plus d’informations, consultez la rubrique [accès aux événements cruciaux pour les enquêtes](advanced-audit.md#access-to-crucial-events-for-investigations).|![Coche](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|
+|**MailboxLogin**|L’utilisateur est connecté à sa boîte aux lettres. |||![Coche](../media/checkmark.png)|
+|**MessageBind**|Un message a été affiché dans le volet de visualisation ou ouvert par un administrateur. **Remarque**: bien que cette valeur soit acceptée en tant qu’action de boîte aux lettres, ces actions ne sont plus enregistrées.|![Coche](../media/checkmark.png)|||
 |**ModifyFolderPermissions**|**Remarque**: bien que cette valeur soit acceptée en tant qu’action de boîte aux lettres, elle est déjà incluse dans l’action **UpdateFolderPermissions** et n’est pas auditée séparément. En d’autres termes, n’utilisez pas cette valeur.||||
-|**Déplacer**|Un message a été déplacé vers un autre dossier.|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**MoveToDeletedItems**|Un message a été supprimé et déplacé vers le dossier Éléments supprimés.|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
-|**RecordDelete**|Un élément étiqueté comme enregistrement a été supprimé de manière récupérable (déplacé vers le dossier éléments récupérables). Les éléments étiquetés comme enregistrements ne peuvent pas être supprimés définitivement (purgés du dossier éléments récupérables).|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|**Déplacer**|Un message a été déplacé vers un autre dossier.|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|
+|**MoveToDeletedItems**|Un message a été supprimé et déplacé vers le dossier Éléments supprimés.|![Coche](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|
+|**RecordDelete**|Un élément étiqueté comme enregistrement a été supprimé de manière récupérable (déplacé vers le dossier éléments récupérables). Les éléments étiquetés comme enregistrements ne peuvent pas être supprimés définitivement (purgés du dossier éléments récupérables).|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|
 |**RemoveFolderPermissions**|**Remarque**: bien que cette valeur soit acceptée en tant qu’action de boîte aux lettres, elle est déjà incluse dans l’action **UpdateFolderPermissions** et n’est pas auditée séparément. En d’autres termes, n’utilisez pas cette valeur.||||
-|**SendAs**|Un message a été envoyé à l’aide de l’autorisation SendAs. Cela signifie qu’un autre utilisateur a envoyé le message comme s’il provenait du propriétaire de la boîte aux lettres.|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
-|**SendOnBehalf**|Un message a été envoyé à l’aide de l’autorisation SendOnBehalf. Cela signifie qu’un autre utilisateur a envoyé le message de la part du propriétaire de la boîte aux lettres. Le message indique au destinataire de la part de qui le message a été envoyé et qui a envoyé réellement le message.|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
-|**SoftDelete**|Un message a été définitivement supprimé ou supprimé (récupérable) du dossier Éléments supprimés. Les éléments supprimés récupérables sont déplacés vers le dossier Éléments récupérables.|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
-|**Update**|Un message ou ses propriétés ont été modifiés.|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
-|**UpdateCalendarDelegation**|Une délégation de calendrier a été affectée à une boîte aux lettres. La délégation de calendrier donne à une autre personne les mêmes autorisations d’organisation pour gérer le calendrier du propriétaire de la boîte aux lettres.|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
-|**UpdateComplianceTag**|Une étiquette de rétention différente est appliquée à un élément de courrier (un élément ne peut avoir qu’une seule étiquette de rétention affectée).|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**UpdateFolderPermissions**|Une autorisation de dossier a été modifiée. Les autorisations de dossier contrôlent quels utilisateurs de votre organisation peuvent accéder aux dossiers dans une boîte aux lettres et aux messages situés dans ces dossiers.|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
-|**UpdateInboxRules**|Une règle de boîte de réception a été ajoutée, supprimée ou modifiée. Les règles de boîte de réception sont utilisées pour traiter les messages dans la boîte de réception de l’utilisateur en fonction des conditions spécifiées et prendre des mesures lorsque les conditions d’une règle sont remplies, telles que le transfert d’un message vers un dossier spécifié ou la suppression d’un message.|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
+|**SendAs**|Un message a été envoyé à l’aide de l’autorisation SendAs. Cela signifie qu’un autre utilisateur a envoyé le message comme s’il provenait du propriétaire de la boîte aux lettres.|![Coche](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>||
+|**SendOnBehalf**|Un message a été envoyé à l’aide de l’autorisation SendOnBehalf. Cela signifie qu’un autre utilisateur a envoyé le message de la part du propriétaire de la boîte aux lettres. Le message indique au destinataire de la part de qui le message a été envoyé et qui a envoyé réellement le message.|![Coche](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>||
+|**SoftDelete**|Un message a été définitivement supprimé ou supprimé (récupérable) du dossier Éléments supprimés. Les éléments supprimés récupérables sont déplacés vers le dossier Éléments récupérables.|![Coche](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|
+|**Mise à jour**|Un message ou ses propriétés ont été modifiés.|![Coche](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|
+|**UpdateCalendarDelegation**|Une délégation de calendrier a été affectée à une boîte aux lettres. La délégation de calendrier donne à une autre personne les mêmes autorisations d’organisation pour gérer le calendrier du propriétaire de la boîte aux lettres.|![Coche](../media/checkmark.png)<sup>\*</sup>||![Coche](../media/checkmark.png)<sup>\*</sup>|
+|**UpdateComplianceTag**|Une étiquette de rétention différente est appliquée à un élément de courrier (un élément ne peut avoir qu’une seule étiquette de rétention affectée).|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|
+|**UpdateFolderPermissions**|Une autorisation de dossier a été modifiée. Les autorisations de dossier contrôlent quels utilisateurs de votre organisation peuvent accéder aux dossiers dans une boîte aux lettres et aux messages situés dans ces dossiers.|![Coche](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|
+|**UpdateInboxRules**|Une règle de boîte de réception a été ajoutée, supprimée ou modifiée. Les règles de boîte de réception sont utilisées pour traiter les messages dans la boîte de réception de l’utilisateur en fonction des conditions spécifiées et prendre des mesures lorsque les conditions d’une règle sont remplies, telles que le transfert d’un message vers un dossier spécifié ou la suppression d’un message.|![Coche](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|
 
 > [!IMPORTANT]
 > Si vous avez personnalisé les actions de boîte aux lettres à auditer pour tout type d’ouverture de session *avant* l’activation de l’audit de boîte aux lettres par défaut dans votre organisation, les paramètres personnalisés sont conservés dans la boîte aux lettres et ne sont pas remplacés par les actions de boîte aux lettres par défaut comme décrit dans cette section. Pour rétablir les valeurs par défaut des actions de boîte aux lettres d’audit (que vous pouvez effectuer à tout moment), consultez la section [restaurer les actions de boîte aux lettres par défaut](#restore-the-default-mailbox-actions) plus loin dans cette rubrique.
@@ -143,13 +143,13 @@ N’oubliez pas qu’un administrateur disposant d’une autorisation d’accès
 
 |**Action de boîte aux lettres**|**Description**|**Administrateur**|**Délégué**|**Owner**|
 |:---------|:---------|:---------:|:---------:|:---------:|
-|**Create**|Création d’un élément de calendrier. Notez que la création, l’envoi ou la réception d’un message ne sont pas audités.|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
-|**HardDelete**|Un message a été purgé du dossier Éléments récupérables.|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
-|**MoveToDeletedItems**|Un message a été supprimé et déplacé vers le dossier Éléments supprimés.|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
-|**SendAs**|Un message a été envoyé à l’aide de l’autorisation Envoyer en tant que.|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
-|**SendOnBehalf**|Un message a été envoyé à l’aide de l’autorisation Envoyer de la part de. |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
-|**SoftDelete**|Un message a été définitivement supprimé ou supprimé (récupérable) du dossier Éléments supprimés. Les éléments supprimés récupérables sont déplacés vers le dossier Éléments récupérables.|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
-|**Update**|Un message ou ses propriétés ont été modifiés.|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
+|**Create**|Création d’un élément de calendrier. Notez que la création, l’envoi ou la réception d’un message ne sont pas audités.|![Coche](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>||
+|**HardDelete**|Un message a été purgé du dossier Éléments récupérables.|![Coche](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|
+|**MoveToDeletedItems**|Un message a été supprimé et déplacé vers le dossier Éléments supprimés.|![Coche](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|
+|**SendAs**|Un message a été envoyé à l’aide de l’autorisation Envoyer en tant que.|![Coche](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>||
+|**SendOnBehalf**|Un message a été envoyé à l’aide de l’autorisation Envoyer de la part de. |![Coche](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>||
+|**SoftDelete**|Un message a été définitivement supprimé ou supprimé (récupérable) du dossier Éléments supprimés. Les éléments supprimés récupérables sont déplacés vers le dossier Éléments récupérables.|![Coche](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|
+|**Mise à jour**|Un message ou ses propriétés ont été modifiés.|![Coche](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|
 
 ### <a name="verify-that-default-mailbox-actions-are-being-logged-for-each-logon-type"></a>Vérifier que les actions de boîte aux lettres par défaut sont journalisées pour chaque type d’ouverture de session
 
@@ -173,7 +173,7 @@ La valeur `Admin, Delegate, Owner` indique :
 
 - Un administrateur n' *a pas* modifié les actions de boîte aux lettres auditées pour tout type d’ouverture de session sur une boîte aux lettres d’utilisateur ou une boîte aux lettres partagée. Remarque Il s’agit de l’État par défaut après activation initiale de l’audit des boîtes aux lettres dans votre organisation.
 
-Si un administrateur a déjà modifié les actions de boîte aux lettres qui sont auditées pour un type d’ouverture de session (à l’aide des paramètres *AuditAdmin*, *AuditDelegate*ou *AuditOwner* sur la cmdlet **Set-Mailbox** ), la valeur de la propriété sera différente.
+Si un administrateur a déjà modifié les actions de boîte aux lettres qui sont auditées pour un type d’ouverture de session (à l’aide des paramètres *AuditAdmin*, *AuditDelegate* ou *AuditOwner* sur la cmdlet **Set-Mailbox** ), la valeur de la propriété sera différente.
 
 Par exemple, la valeur `Owner` de la propriété *DefaultAuditSet* sur une boîte aux lettres d’utilisateur ou une boîte aux lettres partagée indique :
 
@@ -221,7 +221,7 @@ Toutefois, votre organisation peut être amenée à auditer un autre ensemble d�
 
 ### <a name="change-the-mailbox-actions-to-audit"></a>Modifier les actions de boîte aux lettres en audit
 
-Vous pouvez utiliser les paramètres *AuditAdmin*, *AuditDelegate*ou *AuditOwner* sur la cmdlet **Set-Mailbox** pour modifier les actions de boîte aux lettres qui sont auditées pour les boîtes aux lettres d’utilisateur et les boîtes aux lettres partagées (les actions auditées pour les boîtes aux lettres de groupe Microsoft 365 ne peuvent pas être personnalisées).
+Vous pouvez utiliser les paramètres *AuditAdmin*, *AuditDelegate* ou *AuditOwner* sur la cmdlet **Set-Mailbox** pour modifier les actions de boîte aux lettres qui sont auditées pour les boîtes aux lettres d’utilisateur et les boîtes aux lettres partagées (les actions auditées pour les boîtes aux lettres de groupe Microsoft 365 ne peuvent pas être personnalisées).
 
 Vous pouvez utiliser deux méthodes différentes pour spécifier les actions de boîte aux lettres :
 
