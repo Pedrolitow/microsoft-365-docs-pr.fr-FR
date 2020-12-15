@@ -46,7 +46,7 @@ Les fonctionnalités suivantes permettent la prise en charge votre solution de g
 
 - **Vérifier et valider la destruction** en effectuant une [révision avant destruction](disposition.md#disposition-reviews) et la preuve de la [suppression d’enregistrements](disposition.md#disposition-of-records).
 
-- **Exporter des informations sur tous les éléments supprimés** avec l’ [option exporter](disposition.md#filter-and-export-the-views).
+- **Exporter des informations sur tous les éléments supprimés** avec l’[option exporter](disposition.md#filter-and-export-the-views).
 
 - **Définir des autorisations spécifiques** afin que les fonctions de gestionnaire d’enregistrements au sein de votre organisation [disposent du droit d’accès](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
 
@@ -64,7 +64,7 @@ Lorsque le contenu est déclaré comme enregistrement:
 
 - Vous avez une preuve de destruction lorsque les éléments sont supprimés à la fin de la période de rétention.
 
-Vous utilisez les [étiquettes de rétention](retention.md#retention-labels) pour marquer le contenu comme **enregistrement** , ou **enregistrement réglementaire**. La différence entre les deux est expliquée dans la section suivante. Vous pouvez soit publier ces étiquettes pour permettre aux utilisateurs et aux administrateurs de les appliquer manuellement au contenu, ou appliquer automatiquement ces étiquettes au contenu que vous voulez marquer comme enregistrement ou enregistrement réglementaire.
+Vous utilisez les [étiquettes de rétention](retention.md#retention-labels) pour marquer le contenu comme **enregistrement**, ou **enregistrement réglementaire**. La différence entre ces deux éléments est expliquée dans la section suivante. Vous pouvez soit publier ces étiquettes pour permettre aux utilisateurs et aux administrateurs de les appliquer manuellement au contenu, ou appliquer automatiquement ces étiquettes au contenu que vous voulez marquer comme enregistrement ou enregistrement réglementaire.
 
 En utilisant des étiquettes de rétention pour marquer du contenu en tant qu’enregistrement, vous pouvez implémenter une stratégie unique et cohérente pour la gestion des enregistrements dans votre environnement Microsoft 365.
 
@@ -75,7 +75,7 @@ Utilisez le tableau suivant pour identifier les restrictions placées sur du con
 Une étiquette de rétention standard comporte des paramètres et des actions de rétention mais ne marque pas du contenu comme enregistrement ou enregistrement réglementation.
 
 >[!NOTE] 
-> Pour couvrir tous les cas de figure, le tableau inclut les colonnes d’un enregistrement verrouillé et déverrouillé, applicable à SharePoint et OneDrive, mais pas à Exchange. La possibilité de verrouiller et de déverrouiller un enregistrement utilise le [contrôle de version](record-versioning.md) qui n’est pas pris en charge pour les éléments Exchange. Par conséquent, pour tous les éléments Exchange marqués en tant qu’enregistrement, le comportement mappe vers l’ **Enregistrement – colonne verrouillée** , et l’ **Enregistrement – colonne déverrouillée** n’est pas pertinent.
+> Pour couvrir tous les cas de figure, le tableau inclut les colonnes d’un enregistrement verrouillé et déverrouillé, applicable à SharePoint et OneDrive, mais pas à Exchange. La possibilité de verrouiller et de déverrouiller un enregistrement utilise le [contrôle de version](record-versioning.md) qui n’est pas pris en charge pour les éléments Exchange. Par conséquent, pour tous les éléments Exchange marqués en tant qu’enregistrement, le comportement mappe vers l’**Enregistrement – colonne verrouillée**, et l’**Enregistrement – colonne déverrouillée** n’est pas pertinent.
 
 
 |Action| Étiquette de rétention |Enregistrement – colonne verrouillée| Enregistrement – colonne déverrouillée| Enregistrement réglementaire |

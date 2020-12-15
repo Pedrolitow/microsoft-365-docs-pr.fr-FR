@@ -117,11 +117,11 @@ Ce n’est pas le cas des étiquettes de rétention lorsque le contenu n’est p
 
 ## <a name="when-a-user-leaves-the-organization"></a>Lorsqu’un utilisateur quitte l’organisation
 
-**SharePoint**  :
+**SharePoint** :
 
 Lorsqu’un utilisateur quitte votre organisation, le contenu qu’il a créé n’est pas affecté car SharePoint est considéré comme un environnement collaboratif, contrairement à la boîte aux lettres ou au compte OneDrive de l’utilisateur.
 
-**OneDrive**  :
+**OneDrive** :
 
 Si un utilisateur quitte votre organisation, tous les fichiers soumis à une stratégie de rétention ou contenant des étiquettes de rétention sont conservés pendant toute la durée de la stratégie ou de l’étiquette. Pendant cette période, tous les accès partagés continuent de fonctionner. À expiration de la période de rétention, le contenu est placé dans la Corbeille de collections de sites et n’est accessible à personne, à l’exception de l’administrateur. Si un document est marqué en tant qu’enregistrement par une étiquette de rétention, il est conservé jusqu’à la fin de la période de rétention, après quoi le contenu est définitivement supprimé.
 
