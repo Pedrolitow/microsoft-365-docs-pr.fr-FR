@@ -1,7 +1,7 @@
 ---
-title: Simuler une attaque de hameçonnage avec Microsoft Defender pour
-ms.author: daniha
-author: danihalfin
+title: Simulation d’une attaque par hameçonnage avec Microsoft Defender pour Office 365
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
@@ -10,23 +10,23 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-description: Découvrez comment simuler les attaques par hameçonnage et former vos utilisateurs à la prévention du hameçonnage avec la formation à la simulation d’attaque de Microsoft Defender pour Office 365.
-ms.openlocfilehash: 8f5f457f60c81fe961282f33bb8c37f4d9e27aab
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+description: Les administrateurs peuvent apprendre à simuler des attaques par hameçonnage et former leurs utilisateurs à la prévention du hameçonnage à l’aide de la formation à la simulation d’attaque de Microsoft Defender pour Office 365.
+ms.openlocfilehash: 3707041067fd76ee9535d0dccf5cdfcb9d74fbd7
+ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616103"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49667556"
 ---
 # <a name="simulate-a-phishing-attack"></a>Simulation d’une attaque par hameçonnage
 
-La formation de simulation d’attaque via Microsoft Defender pour Office 365 vous permet d’exécuter des simulations d’attaques informatiques bénignes sur votre organisation afin de tester vos stratégies et pratiques de sécurité, ainsi que de former les employés de votre organisation à améliorer leur sensibilisation et à réduire leur susceptibilité aux attaques. Ce qui suit vous guide tout au long de la simulation d’une attaque par hameçonnage à l’aide de la formation à simulateur d’attaques.
+La formation sur la simulation d’attaque de Microsoft Defender pour Office 365 vous permet d’exécuter des simulations Cyber inoffensives sur votre organisation afin de tester vos stratégies et pratiques de sécurité, ainsi que de former vos employés à améliorer leur sensibilisation et à réduire leur susceptibilité aux attaques. Cet article vous guide tout au long de la création d’une attaque par hameçonnage simulée à l’aide d’une formation sur une simulation d’attaque.
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-Pour lancer une attaque par hameçonnage simulée, accédez au [Centre de sécurité Microsoft 365](https://security.microsoft.com/). Sous **messagerie & collaboration** , cliquez sur **simulateur d’attaque** et sélectionnez l’onglet [**simulations**](https://security.microsoft.com/attacksimulator?viewid=simulations) .
+Pour lancer une attaque par hameçonnage simulée, ouvrez le [Centre de sécurité Microsoft 365](https://security.microsoft.com/), accédez à **messagerie &** \> **simulateur d’attaque** de collaboration et basculez vers l’onglet [**simulations**](https://security.microsoft.com/attacksimulator?viewid=simulations) .
 
-Sous **simulations** , sélectionnez **+ lancer une simulation**.
+Sous **simulations**, sélectionnez **+ lancer une simulation**.
 
 ![Lancer un bouton de simulation dans le centre de sécurité Microsoft 365](../../media/attack-sim-preview-launch.png)
 
@@ -35,19 +35,19 @@ Sous **simulations** , sélectionnez **+ lancer une simulation**.
 
 ## <a name="selecting-a-social-engineering-technique"></a>Sélection d’une technique d’ingénierie sociale
 
-Vous avez le choix entre 4 techniques différentes, organisée à partir de la [Mitre ATT&CK® Framework](https://attack.mitre.org/techniques/enterprise/). Différentes charges utiles sont disponibles pour différentes techniques.
+Vous avez le choix entre 4 techniques différentes, organisée à partir de la [Mitre ATT&CK® Framework](https://attack.mitre.org/techniques/enterprise/). Différentes charges utiles sont disponibles pour différentes techniques :
 
-- La collecte des **informations d’identification** tente de collecter des informations d’identification auprès des employés en les déplaçant vers un site Web de présentation bien connu avec des zones de saisie pour envoyer un nom d’utilisateur et un mot de passe.
-- Une **pièce jointe malveillante** ajoute une pièce jointe malveillante à un message. Une fois ouvert, cette pièce jointe exécute un code arbitraire qui aidera l’agresseur à compromettre l’appareil de la cible.
+- La collecte des **informations d’identification** tente de collecter les informations d’identification en mettant les utilisateurs à un site Web de présentation bien connu avec des zones de saisie pour envoyer un nom d’utilisateur et un mot de passe.
+- Une **pièce jointe malveillante** ajoute une pièce jointe malveillante à un message. Lorsque l’utilisateur ouvre la pièce jointe, du code arbitraire est exécuté, ce qui permet à l’agresseur de compromettre l’appareil de la cible.
 - Le **lien dans la pièce jointe** est un type hybride de collecte des informations d’identification. Un agresseur insère une URL dans une pièce jointe de courrier électronique. L’URL dans la pièce jointe suit la même technique que la collecte des informations d’identification.
-- Un **lien vers un programme malveillant** exécute un code arbitraire à partir d’un fichier hébergé sur un site de partage de fichiers connu. Un lien vers ce fichier malveillant est ajouté au message envoyé à la cible et cliquez dessus pour exécuter le fichier et aider l’agresseur à compromettre l’appareil de la cible.
+- Un **lien vers un programme malveillant** exécute un code arbitraire à partir d’un fichier hébergé sur un service de partage de fichiers connu. Le message envoyé à l’utilisateur contient un lien vers ce fichier malveillant. Ouvrir le fichier et aider l’agresseur à compromettre l’appareil de la cible.
 
 > [!TIP]
-> Le fait de cliquer sur **afficher les détails** dans la description de chaque technique affiche des informations supplémentaires sur la technique, ainsi que les étapes de simulation de cette technique.
+> En cliquant sur **afficher les détails** dans la description de chaque technique, vous affichez des informations supplémentaires et les étapes de simulation de la technique.
 >
 > ![Étapes de simulation pour la collecte des informations d’identification dans le centre de sécurité de Microsoft 365](../../media/attack-sim-preview-sim-steps.png)
 
-Une fois que vous avez sélectionné la technique et cliqué sur **suivant** , donnez un nom et éventuellement une description à votre simulation.
+Une fois que vous avez sélectionné la technique et cliqué sur **suivant**, donnez un nom à votre simulation et éventuellement une description.
 
 ## <a name="selecting-a-payload"></a>Sélection d’une charge utile
 
@@ -56,7 +56,7 @@ Ensuite, vous devez sélectionner une charge utile dans le catalogue de charge u
 Les charges utiles comportent un certain nombre de points de données pour vous aider à choisir :
 
 - **Cliquer sur** le nombre de taux indique combien de personnes ont cliqué sur cette charge utile.
-- **Taux d’endommagement prévu** : prévoit le pourcentage de personnes qui seront compromises par cette charge utile en fonction des données historiques de cette charge utile parmi les clients Microsoft Defender pour Office 365.
+- **Taux de compromissions prévues** prédit le pourcentage de personnes qui seront compromises par cette charge utile en fonction des données historiques de la charge utile pour les clients de Microsoft Defender pour Office 365.
 - **Simulations lancées** compte le nombre de fois que cette charge utile a été utilisée dans d’autres simulations.
 - La **complexité**, disponible par le biais de **filtres**, est calculée en fonction du nombre d’indicateurs au sein de la charge utile qui permettent aux cibles de l’informatique d’être une attaque. Un plus grand nombre d’indicateurs entraîne une complexité moindre.
 - **Source**, disponible par le biais de **filtres**, indique si la charge utile a été créée sur votre client ou fait partie du catalogue de charge utile préexistant de Microsoft (Global).

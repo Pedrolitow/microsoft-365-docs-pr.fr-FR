@@ -17,23 +17,26 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à afficher, créer, modifier et supprimer des stratégies de liens fiables et des paramètres globaux de liens fiables dans Microsoft Defender pour Office 365.
-ms.openlocfilehash: 550be48d5f1cae490c53c8f4a9fcedb0b9f21f73
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: 8a6d8a7ad567b658f04cb0b28800d4edbc33ec67
+ms.sourcegitcommit: f81ca61f74f11a7436a6172538c3bda81b484d62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572716"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49675240"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Configurer des stratégies de liens fiables dans Microsoft Defender pour Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 > [!IMPORTANT]
-> Cet article est destiné aux clients professionnels qui disposent [de Microsoft Defender pour Office 365](office-365-atp.md). Si vous êtes un utilisateur à domicile et que vous recherchez des informations sur Safelinks dans Outlook, consultez la rubrique [Advanced Outlook.com Security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Cet article est destiné aux entreprises qui ont [Microsoft Defender pour Office 365](office-365-atp.md). Si vous êtes un utilisateur à domicile et que vous recherchez des informations sur Safelinks dans Outlook, consultez la rubrique [Advanced Outlook.com Security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 La fonctionnalité liens fiables est une fonctionnalité de [Microsoft Defender pour Office 365](office-365-atp.md) qui permet d’analyser les messages électroniques entrants dans le flux de messagerie et de cliquer sur vérification des URL et des liens dans les messages électroniques et à d’autres emplacements. Pour plus d’informations, reportez-vous à [liens fiables dans Microsoft Defender pour Office 365](atp-safe-links.md).
 
 Il n’existe pas de stratégie de liens de sécurité intégrée ou par défaut. Pour obtenir des liens fiables sur l’analyse des URL, vous devez créer une ou plusieurs stratégies de liens fiables, comme décrit dans cet article.
+
+> [!NOTE]
+> Vous configurez les paramètres globaux pour la protection des liens fiables **en dehors** des stratégies de liens fiables. Pour obtenir des instructions, consultez la rubrique [configure Global Settings for Safe Links in Microsoft Defender for Office 365](configure-global-settings-for-safe-links.md).
 
 Vous pouvez configurer des stratégies de liens fiables dans le centre de sécurité & conformité ou dans PowerShell (Exchange Online PowerShell pour les organisations Microsoft 365 éligibles avec des boîtes aux lettres dans Exchange Online ; environnement de ligne de commande Exchange autonome EOP pour les organisations sans boîtes aux lettres Exchange Online, mais avec Microsoft Defender for Office 365 compléments d’abonnement).
 
@@ -50,25 +53,22 @@ La différence entre ces deux éléments n’est pas évidente lorsque vous gér
 
 Dans Exchange Online PowerShell ou EOP PowerShell autonome, vous gérez la stratégie et la règle séparément. Pour plus d’informations, reportez-vous à la section [utiliser Exchange Online PowerShell or standalone EOP PowerShell pour configurer les stratégies de liens fiables](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-links-policies) plus loin dans cet article.
 
-> [!NOTE]
-> Vous configurez les paramètres globaux pour la protection des liens fiables **en dehors** des stratégies de liens fiables. Pour obtenir des instructions, consultez la rubrique [configure Global Settings for Safe Links in Microsoft Defender for Office 365](configure-global-settings-for-safe-links.md).
-
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
 - Vous ouvrez le Centre de conformité et sécurité sur <https://protection.office.com/>. Pour accéder directement à la page **liens approuvés** , utilisez <https://protection.office.com/safelinksv2> .
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Avant de pouvoir effectuer les procédures décrites dans cet article, vous devez disposer d’autorisations dans le centre de sécurité & Compliance Center :
+- Pour pouvoir utiliser ce cmdlet, vous devez disposer des autorisations dans le centre de sécurité et conformité Office 365.
   - Pour créer, modifier et supprimer des stratégies de liens approuvés, vous devez être membre des groupes de rôles gestion de l' **organisation** ou **administrateur de sécurité** .
   - Pour un accès en lecture seule aux stratégies de liens fiables, vous devez être membre des groupes de rôles **lecteur global** ou **lecteur de sécurité** .
 
   Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
 
-  **Remarques**:
+  **Remarques** :
 
-  - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le centre d’administration 365 de Microsoft donne aux utilisateurs les autorisations requises dans le centre de sécurité & conformité _et_ des autorisations pour d’autres fonctionnalités de Microsoft 365. Si vous souhaitez en savoir plus, veuillez consulter la page [À propos des rôles d’administrateur](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
-  - Le groupe de rôles gestion de l' **Organisation en affichage seul** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) offre également un accès en lecture seule à la fonctionnalité.
+  - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux utilisateurs les autorisations requises dans le centre de sécurité et de conformité _et_ les autorisations pour les autres fonctionnalités de Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Le groupe de rôles **Gestion de l’organisation en affichage seul** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) permet également d’accéder en lecture seule à la fonctionnalité.
 
 - Pour connaître les paramètres recommandés pour les stratégies de liens fiables, consultez la rubrique [Safe Links Policy Settings](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings).
 
@@ -80,7 +80,7 @@ Dans Exchange Online PowerShell ou EOP PowerShell autonome, vous gérez la strat
 
 La création d’une stratégie de liens fiables personnalisée dans le centre de sécurité & conformité crée simultanément la règle de liens fiables et la stratégie de liens approuvés associée en utilisant le même nom pour les deux.
 
-1. Dans le centre de sécurité & conformité, accédez à la stratégie de **gestion des menaces** - \> **Policy** \> **liens fiables ATP**.
+1. Dans le centre de sécurité & conformité, accédez à la stratégie de **gestion des menaces** - \>  \> **liens fiables ATP**.
 
 2. Sur la page **liens approuvés** , cliquez sur **créer**.
 
@@ -152,7 +152,7 @@ La création d’une stratégie de liens fiables personnalisée dans le centre d
 
 ## <a name="use-the-security--compliance-center-to-view-safe-links-policies"></a>Utiliser le centre de sécurité & conformité pour afficher les stratégies de liens fiables
 
-1. Dans le centre de sécurité & conformité, accédez à la stratégie de **gestion des menaces** - \> **Policy** \> **liens fiables ATP**.
+1. Dans le centre de sécurité & conformité, accédez à la stratégie de **gestion des menaces** - \>  \> **liens fiables ATP**.
 
 2. Sur la page **liens approuvés** , sélectionnez une stratégie dans la liste et cliquez dessus (ne cochez pas la case).
 
@@ -160,7 +160,7 @@ La création d’une stratégie de liens fiables personnalisée dans le centre d
 
 ## <a name="use-the-security--compliance-center-to-modify-safe-links-policies"></a>Utiliser le centre de sécurité & conformité pour modifier les stratégies de liens fiables
 
-1. Dans le centre de sécurité & conformité, accédez à la stratégie de **gestion des menaces** - \> **Policy** \> **liens fiables ATP**.
+1. Dans le centre de sécurité & conformité, accédez à la stratégie de **gestion des menaces** - \>  \> **liens fiables ATP**.
 
 2. Sur la page **liens approuvés** , sélectionnez une stratégie dans la liste et cliquez dessus (ne cochez pas la case).
 
@@ -172,7 +172,7 @@ Pour activer ou désactiver une stratégie ou définir l’ordre de priorité de
 
 ### <a name="enable-or-disable-safe-links-policies"></a>Activer ou désactiver les stratégies de liens fiables
 
-1. Dans le centre de sécurité & conformité, accédez à la stratégie de **gestion des menaces** - \> **Policy** \> **liens fiables ATP**.
+1. Dans le centre de sécurité & conformité, accédez à la stratégie de **gestion des menaces** - \>  \> **liens fiables ATP**.
 
 2. Notez la valeur dans la colonne **État** :
 
@@ -192,7 +192,7 @@ Les stratégies de liens fiables sont affichées dans l’ordre dans lequel elle
 
 Pour modifier la priorité d’une stratégie, déplacez-la vers le haut ou vers le bas de la liste (vous ne pouvez pas modifier directement le numéro de **priorité** dans le Centre de sécurité & conformité).
 
-1. Dans le centre de sécurité & conformité, accédez à la stratégie de **gestion des menaces** - \> **Policy** \> **liens fiables ATP**.
+1. Dans le centre de sécurité & conformité, accédez à la stratégie de **gestion des menaces** - \>  \> **liens fiables ATP**.
 
 2. Sur la page **liens approuvés** , sélectionnez une stratégie dans la liste et cliquez dessus (ne cochez pas la case).
 
@@ -210,7 +210,7 @@ Pour modifier la priorité d’une stratégie, déplacez-la vers le haut ou vers
 
 ## <a name="use-the-security--compliance-center-to-remove-safe-links-policies"></a>Utiliser le centre de sécurité & conformité pour supprimer des stratégies de liens fiables
 
-1. Dans le centre de sécurité & conformité, accédez à la stratégie de **gestion des menaces** - \> **Policy** \> **liens fiables ATP**.
+1. Dans le centre de sécurité & conformité, accédez à la stratégie de **gestion des menaces** - \>  \> **liens fiables ATP**.
 
 2. Sur la page **liens approuvés** , sélectionnez une stratégie dans la liste et cliquez dessus (ne cochez pas la case).
 
@@ -233,7 +233,7 @@ La création d’une stratégie de liens fiables dans PowerShell est un processu
 1. Créez la stratégie de liens fiables.
 2. Créer la règle de liens fiables qui spécifie la stratégie de liens approuvés à laquelle la règle s’applique.
 
- **Remarques**:
+ **Remarques** :
 
 - Vous pouvez créer une règle de liens fiables et lui affecter une stratégie de liens approuvés existante non associée. Une règle de liens fiables ne peut pas être associée à plusieurs stratégies de liens fiables.
 
@@ -252,7 +252,7 @@ Pour créer une stratégie de liens fiables, utilisez la syntaxe suivante :
 New-SafeLinksPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-IsEnabled <$true | $false>] [-EnableSafeLinksForTeams <$true | $false>] [-ScanUrls <$true | $false>] [-DeliverMessageAfterScan <$true | $false>] [-EnableForInternalSenders <$true | $false>] [-DoNotAllowClickThrough <$true | $false>] [-DoNotTrackUserClicks <$true | $false>] [-DoNotRewriteUrls "Entry1","Entry2",..."EntryN"]
 ```
 
-**Remarques**:
+**Remarques** :
 
 - Pour plus d’informations sur la syntaxe d’entrée à utiliser pour le paramètre _DoNotRewriteUrls_ , voir [entrée Syntax pour la liste « ne pas réécrire les URL suivantes »](atp-safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list).
 
@@ -468,7 +468,7 @@ Pour vérifier que les liens fiables analysent les messages, consultez les rappo
 
 Pour vérifier que vous avez bien créé, modifié ou supprimé des stratégies de liens fiables, effectuez l’une des opérations suivantes :
 
-- Dans le centre de sécurité & conformité, accédez à la stratégie de **gestion des menaces** - \> **Policy** \> **liens fiables ATP**. Vérifiez la liste des stratégies, leurs valeurs d' **État** et leurs valeurs de **priorité** . Pour afficher plus de détails, sélectionnez la stratégie dans la liste, puis affichez les détails dans le survol.
+- Dans le centre de sécurité & conformité, accédez à la stratégie de **gestion des menaces** - \>  \> **liens fiables ATP**. Vérifiez la liste des stratégies, leurs valeurs d' **État** et leurs valeurs de **priorité** . Pour afficher plus de détails, sélectionnez la stratégie dans la liste, puis affichez les détails dans le survol.
 
 - Dans Exchange Online PowerShell ou Exchange Online Protection PowerShell, remplacez \<Name\> par le nom de la stratégie ou de la règle, exécutez la commande suivante et vérifiez les paramètres :
 

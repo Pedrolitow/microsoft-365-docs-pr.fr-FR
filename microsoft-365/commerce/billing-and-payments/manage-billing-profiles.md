@@ -1,5 +1,5 @@
 ---
-title: Gérer les profils de facturation
+title: Comprendre les profils de facturation
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -12,25 +12,27 @@ f1_keywords:
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
-- commerce
-ms.custom: AdminSurgePortfolio
+- M365-subscription-management
+- Adm_O365
+ms.custom:
+- AdminSurgePortfolio
+- Commerce
 search.appverid:
 - MET150
 description: Découvrez comment les profils de facturation prennent en charge les factures.
-keywords: Profil de facturation, factures, frais, charges gérées
-ms.openlocfilehash: de6d6cd65d9e83e7211bcdc33f1774aaec3d1729
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 708096b624caa9c23a40df4842ccfce856db048d
+ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638446"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49667774"
 ---
-# <a name="manage-billing-profiles"></a>Gérer les profils de facturation
+# <a name="understand-billing-profiles"></a>Comprendre les profils de facturation
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
 
 ::: moniker-end
 

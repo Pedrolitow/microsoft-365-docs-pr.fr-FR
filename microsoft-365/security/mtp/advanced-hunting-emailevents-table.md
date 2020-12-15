@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 86cc32cf395f2216eb3e167e372d1225734c4c28
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 00fcc6514679868066ef88b0c9bc4a485d032528
+ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842631"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49667636"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -32,7 +32,7 @@ ms.locfileid: "48842631"
 
 
 **S’applique à :**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 
 
@@ -71,11 +71,22 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `AttachmentCount` | int | Nombre de pièces jointes dans l’e-mail. |
 | `UrlCount` | int | Nombre d’URL incorporées dans l’e-mail |
 | `EmailLanguage` | chaîne | Langue détectée du contenu de l’e-mail |
+| `OrgLevelAction` | string | Action effectuée sur le courrier électronique en réponse aux correspondances à une stratégie définie au niveau de l’Organisation |
+| `OrgLevelPolicy` | string | Stratégie d’organisation qui a déclenché l’action effectuée sur le courrier électronique |
+| `UserLevelAction` | string | Action effectuée sur le courrier électronique en réponse aux correspondances avec une stratégie de boîte aux lettres définie par le destinataire |
+| `UserLevelPolicy` | string | Stratégie de boîte aux lettres de l’utilisateur final qui a déclenché l’action effectuée sur le courrier électronique |
+| `Connectors` | string | Instructions personnalisées qui définissent le flux de messagerie de l’organisation et la façon dont le courrier électronique a été acheminé |
+| `SenderDisplayName` | string | Nom de l’expéditeur affiché dans le carnet d’adresses, généralement une combinaison d’un prénom, d’une initiale de deuxième prénom et d’un nom de famille ou nom. |
+| `SenderObjectId` | string |Identificateur unique du compte de l’expéditeur dans Azure AD |
+| `ThreatTypes` | string | Verdict de la pile de filtrage du courrier électronique indiquant si l’e-mail contient des programmes malveillants, le hameçonnage ou d’autres menaces |
+| `ThreatNames` | string |Nom de détection pour les programmes malveillants ou autres menaces détectées |
+| `DetectionMethods` | string | Méthodes utilisées pour détecter les programmes malveillants, le hameçonnage ou d’autres menaces détectées dans le courrier électronique |
 
-## <a name="related-topics"></a>Sujets associés
+
+## <a name="related-topics"></a>Voir aussi
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)
-- [Rechercher sur les appareils, les emails, les applications et les identités](advanced-hunting-query-emails-devices.md)
+- [Repérer des menaces sur les appareils, les e-mails, les applications et les identités](advanced-hunting-query-emails-devices.md)
 - [Comprendre le schéma](advanced-hunting-schema-tables.md)
 - [Appliquer les meilleures pratiques de requête](advanced-hunting-best-practices.md)

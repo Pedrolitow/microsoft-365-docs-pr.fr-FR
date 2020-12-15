@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: Exportez les résultats de la recherche à partir d’une recherche de contenu dans le centre de conformité Microsoft 365 vers un ordinateur local. Les résultats par courrier électronique sont exportés en tant que fichiers PST. Le contenu de sites SharePoint et OneDrive entreprise est exporté sous forme de documents Office natifs.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a697f5cf81022bf8d8122d0dd57c07ba8a578f0a
-ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
+ms.openlocfilehash: 3250690d6699e5d39f7fa5ae01a2733595340ca1
+ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49602051"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49667787"
 ---
 # <a name="export-content-search-results"></a>Exporter les résultats de la recherche de contenu
 
@@ -90,7 +90,7 @@ Vous devez préparer les résultats de recherche pour l’exportation. Lorsque v
   
 2. Connectez-vous à l’aide de votre compte scolaire ou professionnel.
   
-3. Dans le volet gauche du centre de sécurité & conformité, cliquez sur recherche de contenu de **recherche** \> **Content search**.
+3. Dans le volet gauche du centre de sécurité & conformité, cliquez sur recherche de contenu de **recherche** \> .
   
 4. Sur la page **recherche de contenu** , sélectionnez une recherche. 
   
@@ -165,7 +165,7 @@ L’étape suivante consiste à télécharger les résultats de la recherche à 
   
     L’**outil d’exportation de découverte électronique** affiche l’état du processus d’exportation, ainsi qu’une estimation du nombre (et de la taille) d’éléments qui doivent encore être téléchargés. Une fois le processus d’exportation terminé, vous pouvez accéder aux fichiers à l’emplacement où ils ont été téléchargés.
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
 Voici plus d’informations sur l’exportation des résultats de la recherche.
   
@@ -191,7 +191,7 @@ Voici plus d’informations sur l’exportation des résultats de la recherche.
 
   - Vous pouvez exporter un maximum de 2 to de données à partir d’une seule recherche de contenu. Si les résultats de la recherche sont supérieurs à 2 to, envisagez d’utiliser des plages de dates ou d’autres types de filtres pour réduire la taille totale des résultats de la recherche.
   
-  - Votre organisation peut exporter un maximum de 2 to de données pendant un seul jour.
+  - Votre organisation peut exporter un maximum de 2 to de données pendant un seul jour. Le quota sera réinitialisé tous les jours à 12:00:00 UTC.
   
   - 10 exportations maximum peuvent être exécutées simultanément au sein de votre organisation.
 

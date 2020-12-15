@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: Télécharger des audits tiers, Découvrez comment Microsoft conserve les données client sûres et comment vous pouvez vous conformer aux normes ISO, HIPAA, FINRA et FedRAMP lorsque vous utilisez Office 365.
-ms.openlocfilehash: 915f9040fe5320c905de420f08efa17087987ac3
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 33ec05512d36ae09d9d31821bf1d49e38aad6de7
+ms.sourcegitcommit: 8252377f63de188d32ed1ccd37540d92cba3cb65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49655518"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49671005"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>Certification de service dans le Centre de sécurité et conformité
 
@@ -43,12 +43,9 @@ Vous pouvez également découvrir comment Office 365 peut aider les clients à s
     
 ## <a name="who-can-access-office-365-service-assurance-and-how"></a>Qui peut accéder à l’assurance de service Office 365 et comment ?
 
- Les **nouveaux clients et les clients qui évaluent Microsoft Online Services** peuvent accéder à la garantie de service incluse dans les plans Office 365 entreprise E3 et E5 (abonnements d’évaluation et payants). Si vous n’avez pas l’un de ces plans et que vous souhaitez essayer le service assurance, vous pouvez vous [inscrire pour obtenir une version d’évaluation d’Office 365 entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
-  
- **Les clients existants de Microsoft 365 pour les entreprises** peuvent accéder à l’assurance de service. Si vous êtes l’administrateur général (parfois appelé administrateur d’entreprise) de votre organisation, vous avez déjà accès à l’assurance de service et vous pouvez y intégrer d’autres personnes. Si vous n’êtes pas l’administrateur général de votre organisation et que vous avez besoin d’accéder à la garantie de service, demandez à votre administrateur de vous ajouter au groupe de rôles d’utilisateur service assurance. 
+ Les **nouveaux clients et les clients qui évaluent Microsoft Online Services** peuvent accéder à la garantie de service incluse dans les plans Office 365 entreprise E3 et E5 (abonnements d’évaluation et payants). Si vous n’avez pas l’un de ces plans et que vous souhaitez essayer le service assurance, vous pouvez vous [inscrire pour obtenir une version d’évaluation d’Office 365 entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
   
  Les membres de l' **abonnement O365** peuvent accéder à la section assurance de service dans le centre de Protection Office 365 par défaut. Service assurance fournit des rapports et des documents qui décrivent les pratiques de sécurité Microsoft pour les données client stockées dans Office 365. Il fournit également des rapports d’audit tiers indépendants sur Office 365.
-  
  
 ## <a name="choose-your-industry-and-regional-settings"></a>Choisir vos paramètres régionaux et de votre secteur d’activité
 <a name="Chooseyourindustryregional"> </a>

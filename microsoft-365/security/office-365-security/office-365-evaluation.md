@@ -17,12 +17,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b5b095a1d75ead0f963a71d816e7d879b7cd3697
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 54acf9d21e3dd935f8b87c6ee4a13ab30e7bc59e
+ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49614797"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49668072"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Évaluation de Microsoft Defender pour Office 365
 
@@ -62,8 +62,8 @@ Avec l’expérience de configuration simplifiée, vous pouvez vous concentrer s
 
 Pour accéder à l’évaluation, vous devez répondre aux exigences en matière de licences. Les licences suivantes fonctionneront :
 
-- Microsoft Defender pour Office 365 plan 1
-- Microsoft Defender pour Office 365 plan 2
+- Microsoft Defender pour Office 365 Plan 1
+- Microsoft Defender pour Office 365 Plan 2
 - Microsoft 365 E5, Microsoft 365 E5 sécurité
 - Office 365 E5
 
