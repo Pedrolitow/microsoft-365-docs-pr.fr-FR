@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent découvrir comment supprimer des utilisateurs du portail des utilisateurs restreints dans Office 365. Les utilisateurs sont ajoutés au portail Utilisateurs restreints pour avoir envoyé du courrier indésirable sortant, généralement en raison de la compromission d’un compte.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f464a2c02ae6b6290e79cc9aff7d3a37bc08a6ff
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: bca9366fdb8cacdc58c12757e870c8ead8f1fa7a
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572440"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683045"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-office-365"></a>Retirer les utilisateurs bloqués du portail Utilisateurs restreints dans Office 365
 
@@ -86,7 +86,7 @@ La stratégie d’alerte par défaut nommée **Utilisateur pour lequel l’envoi
 
 3. Dans le menu volant qui apparaît, vérifiez ou configurez les paramètres suivants :
 
-   - **État** : vérifiez que l’alerte est activée ![Activer](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png).
+   - **État** : vérifiez que l’alerte est activée ![Activer](../../media/scc-toggle-on.png).
 
    - **Destinataires de courrier** : cliquez sur **Modifier** et vérifiez ou configurez les paramètres suivants dans le menu volant **Modifier les destinataires** qui apparaît :
 

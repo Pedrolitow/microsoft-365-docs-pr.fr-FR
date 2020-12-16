@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment effectuer la transition de fichiers hérités vers le chiffrement de messages Office 365 (OME) pour votre organisation.
-ms.openlocfilehash: ecf4723df9afdf09d63150a3ec7564df44dd9808
-ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
+ms.openlocfilehash: 23f287fd01949d710c5cc5c65f0c36c6055d3a57
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48408992"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688431"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Informations héritées pour le chiffrement de messages Office 365
 
@@ -75,7 +75,7 @@ Pour plus d’informations sur la création de règles de flux de messagerie Exc
 
 3. Dans le centre d’administration 365 de Microsoft, sélectionnez **centres** d’administration \> **Exchange**.
 
-4. Dans le centre d’administration Exchange, accédez à règles de **flux de messagerie** \> **Rules** et sélectionnez **nouvelle** ![ icône ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **créer une nouvelle règle**. Pour plus d’informations sur l’utilisation du centre d’administration Exchange, consultez la rubrique [Exchange Admin Center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
+4. Dans le centre d’administration Exchange, accédez à règles de **flux de messagerie** \>  et sélectionnez **nouvelle** ![ icône ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **créer une nouvelle règle**. Pour plus d’informations sur l’utilisation du centre d’administration Exchange, consultez la rubrique [Exchange Admin Center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
 
 5. Dans **nom**, tapez un nom pour la règle, tel que chiffrer le courrier pour DrToniRamos@hotmail.com.
 
@@ -91,7 +91,7 @@ Pour plus d’informations sur la création de règles de flux de messagerie Exc
 
 7. Pour ajouter d’autres conditions, sélectionnez **plus d’options** , puis ajouter une **condition** et sélectionnez-la dans la liste.
 
-   Par exemple, pour appliquer la règle uniquement si le destinataire se trouve en dehors de votre organisation, sélectionnez **Ajouter une condition** , puis sélectionnez **le destinataire est externe/interne** à \> **l’extérieur de l’organisation** \> **OK**.
+   Par exemple, pour appliquer la règle uniquement si le destinataire se trouve en dehors de votre organisation, sélectionnez **Ajouter une condition** , puis sélectionnez **le destinataire est externe/interne** à \> **l’extérieur de l’organisation** \> .
 
 8. Pour activer le chiffrement sans utiliser les nouvelles fonctionnalités de OME, dans **effectuer les opérations suivantes**, sélectionnez **modifier la sécurité** \> **des messages appliquer la version précédente de OME**, puis choisissez **Enregistrer**.
 
@@ -131,7 +131,7 @@ Lorsque vos utilisateurs de messagerie envoient des messages chiffrés, les dest
 
 3. Dans le centre d’administration 365 de Microsoft, sélectionnez **centres** d’administration \> **Exchange**.
 
-4. Dans le centre d’administration Exchange, accédez à règles de **flux de messagerie** \> **Rules** et sélectionnez **nouvelle** ![ icône ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **créer une nouvelle règle**. Pour plus d’informations sur l’utilisation du centre d’administration Exchange, consultez la rubrique [Exchange Admin Center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
+4. Dans le centre d’administration Exchange, accédez à règles de **flux de messagerie** \>  et sélectionnez **nouvelle** ![ icône ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **créer une nouvelle règle**. Pour plus d’informations sur l’utilisation du centre d’administration Exchange, consultez la rubrique [Exchange Admin Center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
 
 5. Dans **nom**, tapez le nom de la règle, par exemple supprimer le chiffrement du courrier entrant.
 
@@ -250,7 +250,7 @@ Non, les messages chiffrés sont conservés sur le système de courrier du desti
   
  **Q. Puis-je personnaliser les messages chiffrés avec ma marque ?**
   
-Oui. Vous pouvez utiliser les cmdlets Windows PowerShell pour personnaliser le texte par défaut qui apparaît en haut des messages électroniques chiffrés, la clause d’exclusion de responsabilité et le logo que vous souhaitez utiliser pour le message électronique et le portail de chiffrement. Pour plus d’informations, voir [Add branding to encrypted messages](add-your-organization-brand-to-encrypted-messages.md).
+Oui. Vous pouvez utiliser les cmdlets Windows PowerShell pour personnaliser le texte par défaut qui apparaît en haut des messages électroniques chiffrés, la clause d’exclusion de responsabilité et le logo que vous souhaitez utiliser pour le message électronique et le portail de chiffrement. Cette fonctionnalité est désormais disponible dans OMEv2. Pour plus d’informations, voir [Add branding to encrypted messages](add-your-organization-brand-to-encrypted-messages.md).
   
  **Q. Le service exige-t-il une licence pour chaque utilisateur de mon organisation ?**
   

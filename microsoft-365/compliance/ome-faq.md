@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Vous avez une question sur la façon dont les nouvelles fonctionnalités de protection des messages fonctionnent ? Recherchez une réponse ici.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: efccbdf2be33fb771e7e68ba5a0b3dafa82d9ce8
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: a83e8b05f59ff05d22422431683e26b11bb8a780
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546058"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688605"
 ---
 # <a name="message-encryption-faq"></a>FAQ sur le chiffrement de messages
 
@@ -56,7 +56,7 @@ Pour utiliser les nouvelles fonctionnalités de OME, vous avez besoin de l’un 
 
 ## <a name="can-i-use-exchange-online-with-bring-your-own-key-byok-in-azure-information-protection"></a>Puis-je utiliser Exchange Online avec votre propre clé (BYOK) dans Azure information protection ?
 
-OK! Microsoft vous recommande d’effectuer les étapes de configuration de BYOK avant de configurer OME.
+Oui. Microsoft vous recommande d’effectuer les étapes de configuration de BYOK avant de configurer OME.
   
 Pour plus d’informations sur BYOK, consultez [la rubrique planification et implémentation de votre clé de client Azure information protection](https://docs.microsoft.com/information-protection/plan-design/plan-implement-tenant-key).
   
@@ -96,15 +96,19 @@ Les utilisateurs locaux peuvent envoyer des messages chiffrés à l’aide de r�
   
 ## <a name="what-email-client-do-i-need-to-use-in-order-to-create-an-ome-encrypted-message-what-applications-are-supported-for-sending-protected-messages"></a>Quel client de messagerie dois-je utiliser pour créer un message chiffré OME ? Quelles sont les applications prises en charge pour l’envoi de messages protégés ?
 
-Vous pouvez créer des messages protégés à partir d’Outlook 2016 et Outlook 2013 pour Windows et Mac, et à partir d’Outlook sur le Web.
+Vous pouvez créer des messages protégés à partir d’Outlook 2016, Outlook 2013 pour Windows et Mac, et à partir d’Outlook sur le Web. Pour plus d’informations sur l’envoi de messages chiffrés, consultez la rubrique [Envoyer, afficher et répondre à des messages chiffrés dans Outlook pour PC](https://support.microsoft.com/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980?ui=en-us&rs=en-us&ad=us).
   
 ## <a name="what-email-clients-are-supported-to-read-and-reply-to-protected-emails"></a>Quels sont les clients de messagerie pris en charge pour lire et répondre aux messages électroniques protégés ?
 
 Les utilisateurs de Microsoft 365 peuvent lire et répondre à Outlook pour Windows et Mac (2013 et 2016), Outlook sur le Web et Outlook Mobile (Android et iOS). Vous pouvez également utiliser le client de messagerie natif iOS si votre organisation l’autorise. Si vous n’êtes pas un utilisateur de Microsoft 365, vous pouvez lire et répondre à des messages chiffrés sur le Web via votre navigateur Web.
-  
+
+## <a name="what-email-clients-support-the-encrypt-only-protected-emails"></a>Quels sont les clients de messagerie qui prennent en charge les messages électroniques protégés contre le chiffrement uniquement ?
+
+Les utilisateurs de Microsoft 365 peuvent utiliser Outlook pour les versions de PC 2019 et Microsoft 365 pour créer des messages protégés avec la stratégie de chiffrement uniquement.  Cela signifie que les messages pour lesquels la nouvelle stratégie de chiffrement uniquement est appliquée peuvent être lus directement dans Outlook sur le Web, dans Outlook pour iOS et Android, et à présent Outlook pour les versions 2019 et Microsoft 365.
+
 ## <a name="is-there-a-size-limit-for-messages-you-can-send-with-ome"></a>Existe-t-il une limite de taille pour les messages que vous pouvez envoyer avec OME ?
 
-Oui. La taille maximale des messages que vous pouvez envoyer avec OME, y compris les pièces jointes, est de 30 Mo.
+Oui. La taille maximale des messages que vous pouvez envoyer avec OME, y compris les pièces jointes, est de 25 Mo. Pour plus d’informations, consultez la rubrique [limites des messages](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits-1).
 
 ## <a name="what-file-types-are-supported-as-attachments-in-protected-emails-do-attachments-inherit-the-protection-policies-associated-with-protected-emails"></a>Quels types de fichiers sont pris en charge en tant que pièces jointes dans les courriels protégés ? Les pièces jointes héritent-elles des stratégies de protection associées aux courriers électroniques protégés ?
 
@@ -139,6 +143,11 @@ Not yet. Les pièces jointes OneDrive entreprise ne sont pas prises en charge et
 
 Lorsque les pièces jointes sont protégées par un courrier électronique protégé, les clients Outlook fournissent la possibilité de prévisualiser directement le document. Outlook prend en charge la préversion des documents Office (docx, xlsx, pptx, doc, xls, PPT). Outlook sur le Web prend en charge l’aperçu des documents Office (docx, xlsx, pptx) et PDF.  
 
+## <a name="what-email-clients-support-revocation-of-protected-emails"></a>Quels sont les clients de messagerie qui prennent en charge la révocation des courriers électroniques protégés ?
+
+Outlook sur le Web prend en charge la révocation du courrier protégé.  Découvrez [Comment révoquer un message chiffré que vous avez envoyé](https://docs.microsoft.com/microsoft-365/compliance/revoke-ome-encrypted-mail?view=o365-worldwide#how-to-revoke-an-encrypted-message-that-you-sent) pour plus de détails.
+
+
 ## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies"></a>Puis-je chiffrer automatiquement les messages en configurant des stratégies ?
 
 Oui. Utilisez des règles de flux de messagerie dans Exchange Online pour chiffrer automatiquement un message en fonction de certaines conditions. Par exemple, vous pouvez créer des stratégies basées sur l’ID de destinataire, le domaine du destinataire ou le contenu dans le corps ou l’objet du message. Consultez la rubrique [définir des règles de flux de messagerie pour chiffrer les messages électroniques dans Office 365](define-mail-flow-rules-to-encrypt-email.md).
@@ -149,11 +158,11 @@ Les administrateurs peuvent configurer une règle de flux de messagerie pour sup
 
 ## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies-in-data-loss-prevention-dlp-through-the-security-amp-compliance-center"></a>Puis-je chiffrer automatiquement les messages en configurant des stratégies de protection contre la perte de données (DLP) via le centre de sécurité &amp; conformité ?
 
-OK! Vous pouvez configurer des règles de flux de messagerie dans Exchange Online ou à l’aide de DLP dans le centre de sécurité &amp; conformité.
+Oui. Vous pouvez configurer des règles de flux de messagerie dans Exchange Online ou à l’aide de DLP dans le centre de sécurité &amp; conformité.
   
 ## <a name="can-i-customize-encrypted-messages-with-my-company-branding"></a>Puis-je personnaliser les messages chiffrés avec mon entreprise ?
 
-OK! Pour plus d’informations sur la personnalisation des messages électroniques et sur le portail OME, reportez-vous à la rubrique ajouter la marque de votre organisation à vos messages chiffrés. Consultez la rubrique [Ajouter la marque de votre organisation à vos messages chiffrés](add-your-organization-brand-to-encrypted-messages.md).
+Oui. Pour plus d’informations sur la personnalisation des messages électroniques et sur le portail OME, reportez-vous à la rubrique ajouter la marque de votre organisation à vos messages chiffrés. Consultez la rubrique [Ajouter la marque de votre organisation à vos messages chiffrés](add-your-organization-brand-to-encrypted-messages.md).
   
 ## <a name="are-there-any-reporting-capabilities-or-insights-for-encrypted-emails"></a>Existe-t-il des fonctionnalités de création de rapports ou des informations pour les messages électroniques chiffrés ?
 
@@ -173,7 +182,7 @@ Pas pour le moment.
 
 ## <a name="can-i-open-encrypted-messages-sent-to-a-shared-mailbox"></a>Puis-je ouvrir des messages chiffrés envoyés à une boîte aux lettres partagée ?
 
-OK! Les messages chiffrés sont pris en charge pour une boîte aux lettres partagée.
+Oui. Les messages chiffrés sont pris en charge pour une boîte aux lettres partagée.
 
 - Les utilisateurs peuvent ouvrir des messages protégés dans une boîte aux lettres partagée dans laquelle la boîte aux lettres partagée a reçu un message protégé dans le cadre d’un groupe de distribution.
 

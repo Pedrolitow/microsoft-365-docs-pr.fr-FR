@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: Découvrez comment ajouter et configurer votre domaine dans Microsoft 365 afin que vos services de messagerie électronique et Skype entreprise Online utilisent votre propre nom de domaine.
-ms.openlocfilehash: a4218b03e3f23ba8bc39c5eb84b42f87a71b9a65
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 492bc5d2a5f3fd9810f045e7effda1ea20fa15ed
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658598"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688248"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>Modifier les serveurs de noms pour configurer Microsoft 365 avec n’importe quel bureau d’enregistrement de domaines
 
@@ -166,7 +166,7 @@ Voici, par exemple, quelques étapes supplémentaires qui peuvent être nécessa
 
 2. Dans la page **domaines** , sélectionnez le domaine, puis sélectionnez **enregistrements DNS**.
 
-3. Sous **paramètres DNS**, sélectionnez **enregistrements personnalisés**, puis **nouvel enregistrement personnalisé**.
+3. Sous **gérer le DNS**, sélectionnez **enregistrements personnalisés**, puis **nouvel enregistrement personnalisé**.
 
 4. Sélectionnez le type d’enregistrement DNS que vous souhaitez ajouter, puis tapez les informations pour le nouvel enregistrement.
 

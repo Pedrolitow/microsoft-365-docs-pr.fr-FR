@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: Découvrez comment accéder à des ressources locales telles que des applications métier, des partages de fichiers et des imprimantes à partir d’un appareil Azure Active Directory joint à Windows 10.
-ms.openlocfilehash: 2144268f5cbab67c39d5902622c61c0c35e6481c
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 22edf0c23d6318e1f70bcb21b2cd697ea0a75da4
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295307"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688230"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business-premium"></a>Accéder aux ressources locales à partir d’un appareil joint à Azure AD dans Microsoft 365 Business Premium
 
@@ -63,4 +63,4 @@ Si le périphérique Windows auquel vous participez à Azure-AD a été précéd
 
 - Les utilisateurs ne peuvent pas s’authentifier aux applications qui dépendent de l’authentification Active Directory. Évaluez l’application héritée et envisagez d’effectuer une mise à jour vers une application qui utilise l’authentification moderne, si possible.
 
-- La découverte des imprimantes Active Directory ne fonctionne pas. Vous pouvez fournir des chemins d’accès directs aux imprimantes pour tous les utilisateurs ou utiliser l’impression sur le [Cloud hybride](https://docs.microsoft.com/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-deploy).
+- La découverte des imprimantes Active Directory ne fonctionne pas. Vous pouvez fournir des chemins d’accès directs aux imprimantes pour tous les utilisateurs ou utiliser l' [impression universelle](https://aka.ms/UPDocs).

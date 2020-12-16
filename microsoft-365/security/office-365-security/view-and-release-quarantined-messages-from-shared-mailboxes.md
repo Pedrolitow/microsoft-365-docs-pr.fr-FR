@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX
 description: Les utilisateurs peuvent apprendre à afficher et agir sur les messages mis en quarantaine qui ont été envoyés aux boîtes aux lettres partagées auxquelles ils ont des autorisations.
-ms.openlocfilehash: 0c165395edc3a3032ece603cb8d9aac875443d7d
-ms.sourcegitcommit: 26c2f01d6f88f6c288b04f9f08062d68dd1e67e1
+ms.openlocfilehash: 34a401d3bff66926acd3e04d7144ce465dfa3dbb
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49570941"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688028"
 ---
 # <a name="view-and-release-quarantined-messages-from-shared-mailboxes"></a>Afficher et débloquer les messages mis en quarantaine à partir de boîtes aux lettres partagées
 
@@ -47,16 +47,6 @@ Quelle que soit la méthode, les utilisateurs peuvent éviter toute confusion en
 ## <a name="things-to-keep-in-mind"></a>Éléments à garder à l’esprit
 
 - Le premier utilisateur qui agira sur le message en quarantaine décide le devenir du message pour toutes les personnes qui utilisent la boîte aux lettres partagée. Par exemple, si 10 utilisateurs accèdent à une boîte aux lettres partagée et qu’un utilisateur décide de supprimer le message de mise en quarantaine, le message est supprimé pour les 10 utilisateurs. De même, si un utilisateur décide de libérer le message, il est publié dans la boîte aux lettres partagée et accessible par tous les autres utilisateurs de la boîte aux lettres partagée.
-
-- Actuellement, si un utilisateur sélectionne plusieurs messages mis en quarantaine qui ont été envoyés à la boîte aux lettres partagée, les erreurs de confusion suivantes sont renvoyées lorsque l’utilisateur clique sur **libérer les messages** ou **supprimer des messages** dans le menu volant **actions en bloc** :
-
-  > Vous n’êtes pas autorisé à libérer tous les messages mis en quarantaine sélectionnés.
-  >
-  > Vous n’êtes pas autorisé à supprimer tous les messages mis en quarantaine sélectionnés.
-
-  Quelle que soit l’erreur, l’action est effectuée sur les messages et l’erreur peut être ignorée.
-
-  ![Erreur false lors de la libération ou de la suppression en bloc des messages en quarantaine envoyés à une boîte aux lettres partagée.](../../media/quarantine-bulk-action-error.png)
 
 - Actuellement, le bouton **bloquer l’expéditeur** n’est pas disponible dans la fenêtre mobile des **Détails** pour les messages mis en quarantaine qui ont été envoyés à la boîte aux lettres partagée.
 

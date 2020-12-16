@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Récapitulatif : comprendre la migration de Microsoft Cloud Allemagne (Microsoft Cloud Deutschland) vers les services Office 365 dans les nouvelles régions de centre de données allemandes.'
-ms.openlocfilehash: 37bf052739bf15c1a0d3712539779e9dff31d9e8
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: 16e57eff5556d31d2d13ab6ce0d284719d63c44c
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551533"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688640"
 ---
 # <a name="migration-from-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Migration de Microsoft Cloud Deutschland vers Office 365 services dans les nouvelles régions de centre de connaissances allemand
 
@@ -46,10 +46,10 @@ Cet article fournit une vue d’ensemble de l’approche basée sur Microsoft po
 Les services suivants seront migrés dans le cadre de l’approche dirigée par Microsoft :
 
 - Azure Active Directory (Azure AD)
-- Exchange Online
+- Exchange Online
 - Exchange Online Protection
 - SharePoint Online
-- OneDrive Entreprise
+- OneDrive Entreprise
 
 - Skype entreprise Online\*\*
 - Groupes Office 365
@@ -71,7 +71,7 @@ La migration est exécutée dans les phases qui commencent lorsque vous [optez p
 
 La migration ne commence pas immédiatement lorsque l’abonnement est exécuté. Votre organisation est ajoutée à la liste des clients qui sont planifiés pour une migration ultérieure. Vous pouvez commencer les phases de pré-travail dès que celles-ci sont essentielles pour garantir la réussite de la migration et de l’utilisation :
 
-- [Actions et impacts sur les phases de migration](ms-cloud-germany-transition-phases.md)
+- [Actions et impacts des phases de migration](ms-cloud-germany-transition-phases.md)
 - [Pré-travail supplémentaire](ms-cloud-germany-transition-add-pre-work.md)
 
 Une semaine avant le début de la migration client, vous recevrez une notification dans le service du centre de messages comme un avertissement final indiquant que tous les éléments prérequis doivent être terminés.
@@ -138,7 +138,7 @@ Les 15 services suivants sont disponibles dans l’offre de service Cloud Deutsc
 3. Groupes (groupes modernes)
 4. Profil Delve
 5. Exchange Online Protection
-6. Defender pour Office 365
+6. Defender pour Office 365
 7. Advanced eDiscovery
 8. Gouvernance des données avancée
 9. SharePoint Online
@@ -158,7 +158,7 @@ Nous avons actuellement 29 services dans le cadre des services Office 365 dans
 5. MyAnalytics
 6. Workplace Analytics
 7. Exchange Online Protection
-8. Defender pour Office 365
+8. Defender pour Office 365
 9. Advanced eDiscovery
 10. Gestion de la sécurité avancée
 11. Gestion des droits relatifs à l’information
@@ -278,7 +278,7 @@ Si vous avez des questions, vous pouvez nous contacter ou votre partenaire :
 
 [Opter pour une migration](ms-cloud-germany-migration-opt-in.md)
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
 Mise en route :
 
@@ -288,9 +288,9 @@ Mise en route :
 
 Navigation par le biais de la transition :
 
-- [Actions et impacts sur les phases de migration](ms-cloud-germany-transition-phases.md)
+- [Actions et impacts des phases de migration](ms-cloud-germany-transition-phases.md)
 - [Pré-travail supplémentaire](ms-cloud-germany-transition-add-pre-work.md)
-- Informations supplémentaires pour les [services](ms-cloud-germany-transition-add-general.md), les [appareils](ms-cloud-germany-transition-add-devices.md), les [expériences](ms-cloud-germany-transition-add-experience.md)et [AD FS](ms-cloud-germany-transition-add-adfs.md).
+- Informations supplémentaires pour [Azure ad](ms-cloud-germany-transition-azure-ad.md), [appareils](ms-cloud-germany-transition-add-devices.md), [expériences](ms-cloud-germany-transition-add-experience.md)et [AD FS](ms-cloud-germany-transition-add-adfs.md).
 
 Applications Cloud :
 

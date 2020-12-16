@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment configurer la clé client pour les fichiers Microsoft 365 pour Exchange Online, Skype entreprise, SharePoint Online, OneDrive entreprise et Teams.
-ms.openlocfilehash: 69e12d46ae4106a399a8eeff49ebbe0f2a3055e2
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+ms.openlocfilehash: fed181649696c7f5a92850943e1dd980b42aa819
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841285"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688421"
 ---
 # <a name="set-up-customer-key"></a>Configurer la clé client
 
@@ -27,13 +27,13 @@ Avec la clé client, vous contrôlez les clés de chiffrement de votre organisat
 Vous devez configurer Azure avant de pouvoir utiliser la clé client pour Office 365. Cette rubrique décrit les étapes à suivre pour créer et configurer les ressources Azure requises, puis fournit la procédure de configuration de la clé client dans Office 365. Une fois que vous avez terminé la configuration d’Azure, vous déterminez la stratégie et, par conséquent, les clés, à affecter aux boîtes aux lettres et aux fichiers de votre organisation. Les boîtes aux lettres et les fichiers pour lesquels vous n’affectez pas de stratégie utilisent des stratégies de chiffrement qui sont contrôlées et gérées par Microsoft. Pour plus d’informations sur la clé client ou pour obtenir une vue d’ensemble, consultez la rubrique [service Encryption with Customer Key in Office 365](customer-key-overview.md).
   
 > [!IMPORTANT]
-> Nous vous recommandons vivement de suivre les meilleures pratiques de cette rubrique. Ces éléments sont appelés « **Conseil** » et « **important** ». La clé client vous permet de contrôler les clés de chiffrement racines dont l’étendue peut être aussi importante que l’ensemble de votre organisation. Cela signifie que les erreurs comprises avec ces clés peuvent avoir un impact général et peuvent entraîner des interruptions de service ou une perte irrévocable de vos données.
+> Nous vous recommandons vivement de suivre les meilleures pratiques de cette rubrique. Ces éléments sont appelés « **Conseil** » et « **important**». La clé client vous permet de contrôler les clés de chiffrement racines dont l’étendue peut être aussi importante que l’ensemble de votre organisation. Cela signifie que les erreurs comprises avec ces clés peuvent avoir un impact général et peuvent entraîner des interruptions de service ou une perte irrévocable de vos données.
   
 ## <a name="before-you-set-up-customer-key"></a>Avant de configurer la clé client
 
-Avant de commencer, assurez-vous que vous disposez de la licence appropriée pour votre organisation. À partir du 1er avril 2020, la clé client dans Office 365 est proposée dans Office 365 E5, M365 E5, M365 E5 conformité et M365 E5 information protection & gouvernance. Office 365 Advanced Compliance SKU n’est plus disponible pour la création de nouvelles licences. Les licences Office 365 Advanced Compliance existantes continueront à être prises en charge.
+Avant de commencer, assurez-vous que vous disposez de la licence appropriée pour votre organisation. Utilisez un abonnement Azure payant facturé à l’aide d’un contrat Enterprise ou d’un fournisseur de services Cloud. Les abonnements Azure achetés à l’aide de l’offre de paiement ou d’une carte de crédit ne sont pas pris en charge pour la clé client. À partir du 1er avril 2020, la clé client dans Office 365 est proposée dans Office 365 E5, M365 E5, M365 E5 conformité et M365 E5 information protection & gouvernance. Office 365 Advanced Compliance SKU n’est plus disponible pour la création de nouvelles licences. Les licences Office 365 Advanced Compliance existantes continueront à être prises en charge.
 
-Avant de commencer, assurez-vous que vous disposez de la licence appropriée pour votre organisation et que votre compte est facturé et qu’il n’est pas payé avec une carte de crédit. Pour comprendre les concepts et procédures présentés dans cette rubrique, consultez la documentation sur le [coffre-fort des clés Azure](https://docs.microsoft.com/azure/key-vault/) . De même, familiarisez-vous avec les termes utilisés dans Azure, par exemple, le [client Azure ad](https://docs.microsoft.com/previous-versions/azure/azure-services/jj573650(v=azure.100)#what-is-an-azure-ad-tenant).
+Pour comprendre les concepts et procédures présentés dans cette rubrique, consultez la documentation sur le [coffre-fort des clés Azure](https://docs.microsoft.com/azure/key-vault/) . De même, familiarisez-vous avec les termes utilisés dans Azure, par exemple, le [client Azure ad](https://docs.microsoft.com/previous-versions/azure/azure-services/jj573650(v=azure.100)#what-is-an-azure-ad-tenant).
 
 FastTrack est utilisé uniquement pour collecter les informations de configuration de service et de client requises utilisées pour s’inscrire à la clé client. Les offres de clés de client sont publiées via FastTrack pour que vous et nos partenaires pouvez envoyer les informations requises à l’aide de la même méthode. FastTrack facilite également l’archivage des données que vous fournissez dans l’offre.
   
@@ -141,9 +141,9 @@ Avant de contacter l’équipe Microsoft 365, vous devez effectuer les étapes s
 
 3. Contactez Microsoft pour finaliser le processus. Pour l’équipe SharePoint et OneDrive entreprise, contactez [Spock@microsoft.com](mailto:spock@microsoft.com). Pour Exchange Online et Skype entreprise, contactez [exock@microsoft.com](mailto:exock@microsoft.com). Incluez les éléments suivants dans votre courrier :
 
-   **Objet** : clé client pour \<*Your tenant's fully-qualified domain name*\>
+   **Objet**: clé client pour \<*Your tenant's fully-qualified domain name*\>
 
-   **Body** : ID d’abonnement pour lesquels vous souhaitez que la période de rétention obligatoire soit finalisée.
+   **Body**: ID d’abonnement pour lesquels vous souhaitez que la période de rétention obligatoire soit finalisée.
    La sortie de Get-AzProviderFeature pour chaque abonnement.
 
    Le contrat de niveau de service (SLA) pour la fin de ce processus est de cinq jours ouvrés une fois que Microsoft a été informé (et vérifié) que vous avez enregistré vos abonnements afin d’utiliser une période de rétention obligatoire.
@@ -254,7 +254,7 @@ Pour activer la suppression logicielle sur vos coffres-forts principaux, procéd
    Set-AzResource -ResourceId $r.ResourceId -Properties $r.Properties
    ```
 
-3. Vérifiez que la suppression logicielle est configurée pour le coffre-fort de clés en exécutant la cmdlet **Get-AzKeyVault** . Si la suppression logicielle est correctement configurée pour le coffre-fort de clés, la propriété de _suppression logicielle activée_ renvoie la valeur **true** :
+3. Vérifiez que la suppression logicielle est configurée pour le coffre-fort de clés en exécutant la cmdlet **Get-AzKeyVault** . Si la suppression logicielle est correctement configurée pour le coffre-fort de clés, la propriété de _suppression logicielle activée_ renvoie la valeur **true**:
 
    ```powershell
    Get-AzKeyVault -VaultName <vault name> | fl
@@ -307,7 +307,7 @@ Pour vérifier le niveau de récupération d’une clé, dans Azure PowerShell, 
 (Get-AzKeyVaultKey -VaultName <vault name> -Name <key name>).Attributes
 ```
 
-Si la propriété de _niveau de récupération_ renvoie une valeur autre que **récupérable + ProtectedSubscription** , vous devez consulter cette rubrique et vous assurer que vous avez suivi toutes les étapes pour placer l’abonnement dans la liste ne pas annuler et que la suppression logicielle est activée sur chaque coffre-fort de clés.
+Si la propriété de _niveau de récupération_ renvoie une valeur autre que **récupérable + ProtectedSubscription**, vous devez consulter cette rubrique et vous assurer que vous avez suivi toutes les étapes pour placer l’abonnement dans la liste ne pas annuler et que la suppression logicielle est activée sur chaque coffre-fort de clés.
   
 ### <a name="back-up-azure-key-vault"></a>Sauvegarder le coffre de clés Azure
 
@@ -501,7 +501,7 @@ Register-SPODataEncryptionPolicy -PrimaryKeyVaultName 'stageRG3vault' -PrimaryKe
 
 ## <a name="related-articles"></a>Articles connexes
 
-- [Chiffrement de service avec clé client](customer-key-overview.md)
+- [Chiffrement du service avec la clé client](customer-key-overview.md)
 
 - [Gérer la clé client](customer-key-manage.md)
 

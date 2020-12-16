@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 97af2932-0868-4ccf-8f6b-21a94946c58a
 description: Apprenez à gérer les messages du centre de messages pour faciliter la gestion des modifications.
-ms.openlocfilehash: c415120a86b0c095df8ba9cbb4130abda1f6596b
-ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
+ms.openlocfilehash: 9f64be8396900db3377505fea3e144fffbb3b096
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45005821"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688273"
 ---
 # <a name="manage-messages-in-message-center"></a>Gérer les messages dans le centre de messages
 
@@ -33,7 +33,7 @@ Les publications du centre de messages sont des annonces importantes sur les fon
   
 ## <a name="read-a-message"></a>Lire un message
 
-Pour accéder au centre de messages, accédez au [Centre d’administration](https://go.microsoft.com/fwlink/p/?linkid=2024339), puis sélectionnez **Health**  >  **Centre de messages**d’intégrité. 
+Pour accéder au centre de messages, accédez au [Centre d’administration](https://go.microsoft.com/fwlink/p/?linkid=2024339), puis sélectionnez   >  **Centre de messages** d’intégrité. 
 
 Sélectionnez le titre d’un message pour l’ouvrir dans le volet de lecture. Chaque message contient un résumé de la modification, une indication de la façon dont la modification peut vous affecter, des informations sur la façon dont vous pouvez préparer votre organisation pour la modification, et (dans la plupart des cas) d’un lien d’informations supplémentaire dans lequel vous pouvez en savoir plus. Les informations supplémentaires continuent d’être disponibles, même après l’expiration d’un message.
 
@@ -171,7 +171,7 @@ Vous avez besoin de récupérer un message archivé ? Pas de problème.
   
 1. Sélectionnez l’onglet **messages archivés** en haut du centre de messages. La liste des messages archivés s’affiche. 
 
-2. Sélectionnez le message, sélectionnez **restaurer**et le message est restauré aux messages actifs.
+2. Sélectionnez le message, sélectionnez **restaurer** et le message est restauré aux messages actifs.
 
 ::: moniker-end
 
@@ -206,6 +206,11 @@ Vous avez besoin de récupérer un message archivé ? Pas de problème.
 2. Sélectionnez **restaurer** à droite de l’ID du message, et le message est restauré aux messages actifs.
 
 ::: moniker-end
+
+## <a name="track-your-message-center-tasks-in-planner"></a>Suivez les tâches de votre centre de messagerie dans Planner
+
+De nombreuses informations utiles sur les changements apportés aux services Microsoft 365 arrivent dans le centre de messages Microsoft 365. Il peut être difficile d’effectuer le suivi des modifications qui nécessitent des tâches, quand, et par qui, et pour effectuer le suivi de chaque tâche. Vous pouvez également noter quelque chose et l'étiqueter pour le vérifier plus tard. Vous pouvez effectuer toutes ces actions et plus encore lorsque vous synchronisez vos messages à partir du centre d’administration Microsoft 365 vers le planificateur Microsoft. Pour plus d’informations, consultez [la rubrique suivre vos tâches du centre de messages dans le planificateur](https://docs.microsoft.comoffice365/planner/track-message-center-tasks-planner).
+
 
 Pour une vue d’ensemble du centre de messages, consultez la rubrique [Centre de messages dans Microsoft 365](message-center.md). Ou, pour en savoir plus sur la façon de définir vos préférences linguistiques afin d’activer la traduction automatique pour les publications du centre de messages, consultez la rubrique [Langue traduction pour les publications du centre de messages](language-translation-for-message-center-posts.md). Si vous souhaitez programmer un autre moyen d’obtenir des informations sur l’état du service en temps réel et des communications du centre de messages, reportez-vous à [Microsoft 365 service communications API Overview](https://go.microsoft.com/fwlink/p/?linkid=848507).
   

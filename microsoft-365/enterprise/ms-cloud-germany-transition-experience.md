@@ -1,9 +1,9 @@
 ---
-title: Expérience client pendant la migration vers les services Office 365 dans les nouvelles régions de centre de données allemandes
+title: Éléments modifiés pour la migration vers les services Office 365 dans les nouvelles régions de centre de données allemand
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 12/01/2020
+ms.date: 12/11/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -18,15 +18,15 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
-description: 'Résumé : Découvrez l’expérience de passage de Microsoft Cloud Germany (Microsoft Cloud Deutschland) aux services Office 365 dans la nouvelle région de centre de connaissances allemande.'
-ms.openlocfilehash: a44fbe504a9a710856deeb3baf258feb124ce7ae
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+description: 'Résumé : comprendre ce qui a changé pour passer de Microsoft Cloud Germany (Microsoft Cloud Deutschland) vers Office 365 services dans la nouvelle région de centre de données allemande.'
+ms.openlocfilehash: 0415f7b95cb9a9f2625798311946dac0f1f7c2c0
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551694"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688611"
 ---
-# <a name="customer-experience-during-the-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>Expérience client pendant la migration vers les services Office 365 dans les nouvelles régions de centre de données allemandes
+# <a name="what-has-changed-for-the-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>Éléments modifiés pour la migration vers les services Office 365 dans les nouvelles régions de centre de données allemand
 
 Les migrations client sont conçues pour avoir un impact minimal sur les administrateurs et les utilisateurs. Toutefois, il existe des facteurs à prendre en compte pour chaque charge de travail. Consultez les sections suivantes pour mieux comprendre l’expérience de migration pour les charges de travail.
 
@@ -68,7 +68,7 @@ Considérations à noter :
 
 - Après la migration des charges de travail individuelles, des fonctionnalités supplémentaires sont mises à disposition via les services Office 365 (tels que le planificateur Microsoft et Microsoft Flow) en raison des nouveaux abonnements aux services Office 365. Si cela est approprié pour votre organisation, l’administrateur du client ou de la gestion des licences peut désactiver les nouveaux plans de service lorsque vous planifiez la gestion des modifications afin de présenter les nouveaux services. Pour obtenir des instructions sur la désactivation des plans de service attribués aux licences des utilisateurs, consultez la rubrique [désactiver l’accès aux services Microsoft 365 lors de l’affectation de licences utilisateur](https://docs.microsoft.com/office365/enterprise/powershell/disable-access-to-services-while-assigning-user-licenses).
 
-## <a name="exchange-online"></a>Exchange Online
+## <a name="exchange-online"></a>Exchange Online
 
 - Les URL de ressource Exchange passent du point de terminaison d’Allemagne hérité `outlook.office.de` au point de terminaison des services Office 365 `outlook.office365.com` après la migration. Vos utilisateurs peuvent accéder à leur boîte aux lettres migrée à l’aide de l’URL héritée jusqu’à ce que la migration soit terminée. Les clients doivent faire passer les utilisateurs à la nouvelle URL dès que possible après que la migration Exchange commence à éviter de gêner le retrait de l’environnement de l’Allemagne. Les URL des services Office 365 pour Outlook services deviennent disponibles uniquement après le début de la migration Exchange.
 
@@ -97,7 +97,7 @@ La vidéo Office 365 est supprimée le 1er mars, 2021 et la vidéo Office 365 ne
 
 [Comprendre les actions et les impacts des phases de migration](ms-cloud-germany-transition-phases.md)
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
 Mise en route :
 
@@ -107,9 +107,9 @@ Mise en route :
 
 Navigation par le biais de la transition :
 
-- [Actions et impacts sur les phases de migration](ms-cloud-germany-transition-phases.md)
+- [Actions et impacts des phases de migration](ms-cloud-germany-transition-phases.md)
 - [Pré-travail supplémentaire](ms-cloud-germany-transition-add-pre-work.md)
-- Informations supplémentaires pour les [services](ms-cloud-germany-transition-add-general.md), les [appareils](ms-cloud-germany-transition-add-devices.md), les [expériences](ms-cloud-germany-transition-add-experience.md)et [AD FS](ms-cloud-germany-transition-add-adfs.md).
+- Informations supplémentaires pour [Azure ad](ms-cloud-germany-transition-azure-ad.md), [appareils](ms-cloud-germany-transition-add-devices.md), [expériences](ms-cloud-germany-transition-add-experience.md)et [AD FS](ms-cloud-germany-transition-add-adfs.md).
 
 Applications Cloud :
 

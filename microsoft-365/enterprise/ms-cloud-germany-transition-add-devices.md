@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Résumé : informations supplémentaires sur les services lors du passage de Microsoft Cloud Germany (Microsoft Cloud Deutschland) vers les services Office 365 dans la nouvelle région de centre de données allemande.'
-ms.openlocfilehash: 941b836871f4ffb7f39f6e144675e9ee15510270
-ms.sourcegitcommit: ff1f0a97e9d43bc786f04d2ea7e01695531b9f28
+ms.openlocfilehash: 1bbb4bf39db61a93844c21cd6062a70699b5d6d7
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49560855"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688652"
 ---
 # <a name="additional-device-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Informations supplémentaires sur l’appareil pour la migration à partir de Microsoft Cloud Deutschland
 
@@ -247,7 +247,7 @@ Pour annuler l’inscription et ré-enregistrer l’appareil sur Android à part
 3.  Dans le menu points de suspension (trois points), sélectionnez **Supprimer l’appareil**, puis terminez la suppression en procédant à la confirmation dans la boîte de dialogue.
 4.  Vous devez maintenant être déconnecté de l’application portail d’entreprise. Sélectionnez **se connecter** pour réenregistrer l’appareil.
 
-Pour plus d’informations sur les actions requises pendant la phase de migration de cette charge de travail, ou sur l’impact de l’administration ou de l’utilisation, consultez les informations relatives à Azure Active Directory dans [la rubrique informations générales supplémentaires pour la migration à partir de Microsoft Cloud Deutschland](ms-cloud-germany-transition-add-general.md#azure-active-directory).
+Pour plus d’informations sur les actions requises pendant la phase de migration de cette charge de travail, ou sur l’impact de l’administration ou de l’utilisation, consultez les informations sur Azure Active Directory (Azure AD) dans des [informations Azure ad supplémentaires pour la migration à partir de Microsoft Cloud Deutschland](ms-cloud-germany-transition-azure-ad.md).
 
 ## <a name="ios"></a>iOS
 
@@ -270,7 +270,7 @@ Sur les appareils iOS, un utilisateur doit supprimer manuellement les comptes mi
 
 Les utilisateurs peuvent accéder à des applications individuelles telles qu’Outlook, teams et OneDrive, et supprimer des comptes de ces applications.
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
 Mise en route :
 
@@ -283,7 +283,7 @@ Navigation par le biais de la transition :
 
 - [Actions et impacts des phases de migration](ms-cloud-germany-transition-phases.md)
 - [Pré-travail supplémentaire](ms-cloud-germany-transition-add-pre-work.md)
-- Informations supplémentaires pour les [services](ms-cloud-germany-transition-add-general.md), les [appareils](ms-cloud-germany-transition-add-devices.md), les [expériences](ms-cloud-germany-transition-add-experience.md)et [AD FS](ms-cloud-germany-transition-add-adfs.md).
+- Informations supplémentaires pour [Azure ad](ms-cloud-germany-transition-azure-ad.md), [appareils](ms-cloud-germany-transition-add-devices.md), [expériences](ms-cloud-germany-transition-add-experience.md)et [AD FS](ms-cloud-germany-transition-add-adfs.md).
 
 Applications Cloud :
 

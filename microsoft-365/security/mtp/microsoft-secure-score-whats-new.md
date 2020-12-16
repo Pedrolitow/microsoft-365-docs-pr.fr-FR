@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 4b25f701aca24563dc4f1a15f78a80e1e2064367
-ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
+ms.openlocfilehash: 253e85da7bb85a0722831851f00051a50a96153e
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49604382"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688410"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Nouveautés de Microsoft Secure score
 
@@ -35,7 +35,18 @@ Pour faire en sorte que Microsoft Secure score un meilleur représentant de votr
 
 Vous pouvez trouver https://security.microsoft.com/securescore le score de sécurité Microsoft à l’adresse dans le [Centre de sécurité Microsoft 365](overview-security-center.md).
 
-## <a name="november-2020"></a>Novembre 2020
+## <a name="december-2020"></a>Décembre 2020
+
+### <a name="added-6-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>Ajout des six actions d’amélioration relatives aux comptes pour Microsoft Defender pour le point de terminaison (précédemment Microsoft Defender ATP) :
+
+- Définir « longueur minimale du mot de passe » sur « 14 caractères ou plus »
+- Définir « conserver l’historique des mots de passe » à « 24 ou plusieurs mots de passe »
+- Définissez « âge maximal du mot de passe » sur « 60 » ou « moins de jours », mais pas sur « 0 »
+- Définir « âge minimal du mot de passe » sur « 1 ou plusieurs jours »
+- Désactivation du compte administrateur intégré
+- Désactiver le compte invité intégré
+
+## <a name="november-2020"></a>Novembre 2020
 
 ### <a name="removed-the-ability-to-create-servicenow-tickets-through-secure-score"></a>Suppression de la possibilité de créer des tickets ServiceNow via Secure score 
 
@@ -47,7 +58,7 @@ La possibilité de créer des tickets ServiceNow via le score de sécurité en a
 - Modifier le chemin d’accès exécutable de service en un emplacement protégé courant
 - Modifier le compte de service pour éviter le mot de passe mis en cache dans le Registre Windows
 
-## <a name="october-2020"></a>Octobre 2020
+## <a name="october-2020"></a>Octobre 2020
 
 ### <a name="remove-improvement-action-related-to-microsoft-defender-for-endpoint"></a>Supprimer l’action d’amélioration liée à Microsoft Defender pour le point de terminaison
 
