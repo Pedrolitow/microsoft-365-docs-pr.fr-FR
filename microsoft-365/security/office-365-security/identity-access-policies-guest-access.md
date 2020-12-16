@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: c2c01278831433c02e5c869dba83f223eea57d27
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 376845d8e3657b91b9efe0357e94f4bec3a84078
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683234"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688277"
 ---
 # <a name="policies-for-allowing-guest-and-external-b2b-access"></a>Stratégies d’autorisation d’accès B2B invité et externe
 
@@ -44,7 +44,7 @@ Le tableau suivant répertorie les stratégies que vous devez créer et mettre �
 
 |Niveau de protection|Stratégies|Informations supplémentaires|
 |---|---|---|
-|**Baseline**|[Exiger MFA pour les utilisateurs invités et externes](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Créez cette nouvelle stratégie et configurez les éléments suivants : <ul><li> Pour les **affectations > utilisateurs et groupes > inclure**, sélectionnez **Sélectionner des utilisateurs et des groupes**, puis sélectionnez **tous les utilisateurs invités et externes**. </li><li> Pour les **affectations > Conditions > de connexion**, laissez toutes les options désactivées pour toujours appliquer l’authentification multifacteur (MFA).</li>|
+|**Baseline**|[Exiger MFA pour les utilisateurs invités et externes](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Créez cette nouvelle stratégie et configurez les éléments suivants : <ul><li>Pour les **affectations > utilisateurs et groupes > inclure**, sélectionnez **Sélectionner des utilisateurs et des groupes**, puis sélectionnez **tous les utilisateurs invités et externes**.</li><li>Pour les **affectations > Conditions > de connexion**, laissez toutes les options désactivées pour toujours appliquer l’authentification multifacteur (MFA).</li></ul>|
 ||[Exiger l’authentification multifacteur lorsque le risque de connexion est *moyen* ou *élevé*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Modifiez cette stratégie pour exclure les utilisateurs invités et externes.|
 ||[Exiger des PC conformes](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Modifiez cette stratégie pour exclure les utilisateurs invités et externes.|
 
