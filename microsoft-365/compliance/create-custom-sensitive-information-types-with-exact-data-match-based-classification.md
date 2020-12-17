@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Découvrez comment créer des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a5fa261f1e0db5c8ed66dfdebdca764976fe3130
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 68546f7ad9f4b97f43611d49054200db4fdd4bbd
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658671"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698395"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Créez des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
 
@@ -107,6 +107,11 @@ La configuration de la classification basée sur EDM inclut les étapes suivante
 3. Prêtez attention au format des champs de données sensibles. En particulier, les champs qui contiennent des virgules dans le contenu (par exemple, une adresse postale contenant la valeur "Seattle,WA") sera analysée en tant que deux champs distincts lors de l’analyse par l’outil EDM. Pour éviter cela, vous devez vous assurer que de tels champs sont entourés de guillemets simples ou doubles dans les tableaux de données sensibles. Si des champs avec virgules contiennent également des espaces, vous devez créer un type d’informations sensibles personnalisé correspondant au format (par exemple, une chaîne de mots multiples incluant des virgules et des espaces) pour vous assurer que la chaîne correspond exactement lorsque le document est analysé.
 
 #### <a name="define-the-schema-for-your-database-of-sensitive-information"></a>Définir le schéma de votre base de données d’informations sensibles
+
+Si, pour des raisons commerciales ou techniques, vous préférez ne pas utiliser PowerShell ou la ligne de commande pour créer votre schéma et votre modèle de type d’informations sensibles EDM (package de règles). vous pouvez utiliser l’[Assistant de correspondance exacte de données et de type d’informations sensibles](sit-edm-wizard.md) pour les créer. Lorsque vous avez terminé de créer le schéma et le modèle de type d’informations sensibles EDM, revenez à la procédure afin d’effectuer toutes les étapes nécessaires pour que votre type d’informations sensibles EDM soit disponible.
+
+> [!NOTE]
+> L’Assistant de schéma de correspondance exacte des données et de type d’informations sensibles est disponible uniquement pour les nuages mondiaux et GCC.
 
 1. Définissez le schéma pour la base de données d’informations sensibles dans un fichier XML (comme dans l’exemple ci-dessous). Nommez ce fichier de schéma **edm.xml** et configurez-le de telle sorte que pour chaque colonne de la base de données, une ligne utilise la syntaxe : 
 
@@ -253,7 +258,7 @@ Dans cet exemple, où `caseInsensitive` et `ignoredDelimiters` sont utilisés en
       </RulePackage>
       ```
 
-1. Téléchargez le package de règles en exécutant les cmdlets PowerShell suivantes, l’une après l’autre :
+2. Téléchargez le package de règles en exécutant les cmdlets PowerShell suivantes, l’une après l’autre :
 
       ```powershell
       $rulepack=Get-Content .\\rulepack.xml -Encoding Byte -ReadCount 0
@@ -361,7 +366,10 @@ L’opération de hachage et de chargement peut être effectuée à l’aide d�
 
 Si vous voulez hacher et charger à partir d’un ordinateur, vous devez le faire à partir d’un ordinateur qui peut se connecter directement à votre client Microsoft 365. Vos fichiers de données sensibles en texte clair doivent se trouver sur cet ordinateur pour le hachage.
 
-Si vous ne souhaitez pas exposer votre fichier de données sensibles en texte clair, vous pouvez le hacher sur un ordinateur dans un emplacement sécurisé, puis copier le fichier de hachage et le fichier salt sur un ordinateur qui peut se connecter directement à votre client Microsoft 365 pour le chargement. Dans ce scénario, vous aurez besoin d’EDMUploadAgent sur les deux ordinateurs. 
+Si vous ne souhaitez pas exposer votre fichier de données sensibles en texte clair, vous pouvez le hacher sur un ordinateur dans un emplacement sécurisé, puis copier le fichier de hachage et le fichier salt sur un ordinateur qui peut se connecter directement à votre client Microsoft 365 pour le chargement. Dans ce scénario, vous aurez besoin d’EDMUploadAgent sur les deux ordinateurs.
+
+> [!IMPORTANT]
+> Si vous avez utilisé l’Assistant de schéma de correspondance exacte des données et de type d’informations sensibles pour créer vos fichiers de schéma et de modèle, vous **_devez_* télécharger le schéma pour cette procédure.
 
 #### <a name="prerequisites"></a>Configuration requise
 
@@ -372,10 +380,11 @@ Si vous ne souhaitez pas exposer votre fichier de données sensibles en texte cl
     - Votre fichier d’élément sensible au format CSV, **PatientRecords.csv** dans nos exemples
     -  Les fichiers de hachage et salt générés
     - Le nom du magasin de données provenant du fichier **edm.xml**, ici `PatientRecords`
+- Si vous avez utilisé l’[Assistant de schéma de correspondance exacte des données et de type d’informations sensibles](sit-edm-wizard.md), vous **_devez_* _ le télécharger.
 
-#### <a name="set-up-the-security-group-and-user-account"></a>Configurer les groupe de sécurité personnalisé et compte d’utilisateur
+#### <a name="set-up-the-security-group-and-user-account"></a>Configurer le groupe de sécurité et le compte d’utilisateur
 
-1. En tant qu’administrateur général, accédez au centre d’administration à l’aide du [lien approprié pour votre abonnement](#portal-links-for-your-subscription) et [créez un groupe de sécurité](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide) nommé **EDM\_DataUploaders**.
+1. En tant qu’administrateur général, accédez au centre d’administration à l’aide du [lien approprié pour votre abonnement](#portal-links-for-your-subscription) et [créez un groupe de sécurité](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide) nommé _*EDM\_DataUploaders**.
 
 2. Ajoutez un ou plusieurs utilisateurs au groupe de sécurité **EDM\_DataUploaders**. (ces utilisateurs peuvent gérer la base de données d’informations sensibles).
 
@@ -420,6 +429,10 @@ Cet ordinateur doit avoir accès directement à votre client Microsoft 365.
 
 3. Connectez-vous à l’aide de votre compte professionnel ou scolaire pour Microsoft 365 qui a été ajouté au groupe de sécurité EDM_DataUploaders. Vos informations de client sont extraites du compte d’utilisateur pour établir la connexion.
 
+FACULTATIF : si vous avez utilisé l’Assistant de schéma de correspondance exacte des données et de type d’informations sensibles pour créer vos fichiers de schéma et de modèle, exécutez la commande suivante dans une fenêtre Invite de commandes :
+
+`EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>`
+
 4. Pour hacher et charger les données sensibles, exécutez la commande suivante dans l’invite de commandes Windows :
 
 `EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file]`
@@ -439,6 +452,10 @@ Vous verrez l’état **ProcessingInProgress**. Vérifiez à quelques minutes d�
 #### <a name="separate-hash-and-upload"></a>Séparer le hachage et le chargement
 
 Effectuez le hachage sur un ordinateur dans un environnement sécurisé.
+
+FACULTATIF : si vous avez utilisé l’Assistant de schéma de correspondance exacte des données et de type d’informations sensibles pour créer vos fichiers de schéma et de modèle, exécutez la commande suivante dans une fenêtre Invite de commandes :
+
+`EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>`
 
 1. À l’invite de commandes, exécutez la commande suivante :
 
