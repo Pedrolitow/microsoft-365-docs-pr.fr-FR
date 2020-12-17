@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Vue d’ensemble de niveau de productivité Microsoft.
-ms.openlocfilehash: cd22c4381f1fe3f6b37338636797157bdbaa7752
-ms.sourcegitcommit: 26c2f01d6f88f6c288b04f9f08062d68dd1e67e1
+ms.openlocfilehash: e052d1189379bb00a05b574e6568e9e718285d50
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49569974"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688330"
 ---
 # <a name="microsoft-productivity-score"></a>Niveau de productivité Microsoft 
 
@@ -141,6 +141,10 @@ Ce rapport permet aux organisations de comprendre les éléments suivants :
 [En savoir plus sur le rapport sur la continuité de l’activité](https://aka.ms/bcrps)
 
 [En savoir plus sur Microsoft Graph](https://docs.microsoft.com/graph/)
+
+> [!NOTE]
+> Les utilisateurs ont également l’option d’obtenir des analyses de la productivité à partir du [tableau de bord MyAnalytics](https://docs.microsoft.com/workplace-analytics/myanalytics/use/dashboard-2).
+
 
 ## <a name="we-want-to-hear-from-you"></a>Votre avis nous intéresse
 

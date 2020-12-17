@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La prévention des pertes de données du Point de terminaison Microsoft 365 étend la surveillance des activités des fichiers et des actions de protection de ces aux points de terminaison. Les fichiers sont rendus visibles dans les solutions de conformité Microsoft 365 '
-ms.openlocfilehash: 457701a514159e54e932db3e4ad04a7428165fdc
-ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
+ms.openlocfilehash: 1dac32505144c3966ad2219cc69a33ba29f194dc
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49604314"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682625"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>En savoir plus sur la protection contre la perte de données de point de terminaison Microsoft 365
 
@@ -34,18 +34,19 @@ Vous pouvez utiliser la protection contre la perte de données (DLP) de Microsof
 
 ## <a name="endpoint-activities-you-can-monitor-and-take-action-on"></a>Activités de point de terminaison que vous pouvez surveiller et sur lesquels vous pouvez agir
 
-Les points de terminaison Microsoft DLP vous permet d’auditer et de gérer les types d’activités suivants que les utilisateurs prennent sur les appareils exécutant Windows 10. Cela inclut les opérations suivantes :
+Les points de terminaison Microsoft DLP vous permet d’auditer et de gérer les types d’activités suivants que les utilisateurs prennent sur les appareils exécutant Windows 10.
 
 
-|activité sur l’élément |auditable/restreint  |
-|---------|---------|
-|créé    | auditable      |
-|renommé    |  auditable       |
-|copié sur un support amovible ou créé sur celui-ci     |     auditable/restreint|
-|copié sur le partage réseau, par exemple, \\My-server\fileshare   |     auditable/restreint    |
-|imprimé |    auditable/restreint       |
-|copier vers le Cloud via Chromium Edge    |   auditable/restreint        |
-|consulté par une application ou navigateur non autorisé    |  auditable/restreint       |
+|activité |description  | auditable/restreint|
+|---------|---------|---------|
+|téléchargement vers un service en ligne, ou accès par des navigateurs non autorisés    | Détecte lorsqu'un utilisateur tente de télécharger un article dans un domaine de service restreint ou d'accéder à un article par le biais d'un navigateur.  S'ils utilisent un navigateur qui est répertorié dans DLP comme étant un navigateur non autorisé, l'activité de téléchargement sera bloquée et l'utilisateur sera redirigé pour utiliser Edge Chromium. Edge Chromium autorisera ou bloquera alors le téléchargement ou l'accès en fonction de la configuration de la politique DLP         |auditable et restreint|
+|copie vers une autre application    |Détecte lorsqu'un utilisateur tente de copier des informations d'un élément protégé et de les coller ensuite dans une autre application, un autre processus ou un autre élément. Copier et coller des informations dans la même application, le même processus ou le même élément n'est pas détecté par cette activité.         | auditable et restreint|
+|copie sur support USB amovible |Détecte lorsqu'un utilisateur tente de copier un élément ou une information sur un support amovible ou un périphérique USB.         | auditable et restreint|
+|copier vers un partage réseau    |Détecte lorsqu'un utilisateur tente de copier un élément vers un partage réseau ou un disque réseau mappé         |auditable et restreint|
+|imprimer un document    |Détecte lorsqu'un utilisateur tente d'imprimer un élément protégé sur une imprimante locale ou réseau.| auditable et restreint         |
+|créer un élément|Détecte lorsqu'un utilisateur crée un article| vérifiable|
+|renommer un article|Détecte lorsqu'un utilisateur renomme un article| vérifiable|
+
 
 ## <a name="whats-different-in-endpoint-dlp"></a>Différences avec Endpoint DLP
 

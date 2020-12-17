@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment piloter la fonctionnalité de messagerie depuis mon domaine personnalisé vers une boîte aux lettres Microsoft 365 à l’aide de deux comptes de test uniquement.
-ms.openlocfilehash: 8bb04edc9a7879edc2094f1fed667d5956174ea3
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 6cc5b1163f666af4bd13047ab3b1fda7fd747b5f
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295033"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688216"
 ---
 # <a name="pilot-microsoft-365-from-my-custom-domain"></a>Piloter Microsoft 365 depuis mon domaine personnalisé
 
@@ -39,6 +39,8 @@ Vous pouvez piloter Microsoft 365 avec les conditions et limitations suivantes�
 - Les administrateurs ne peuvent pas administrer tous les comptes d’utilisateurs depuis un seul emplacement.
 
 - Les utilisateurs risquent de ne pas pouvoir utiliser le filtrage du courrier indésirable Microsoft 365.
+
+- C’est recommandé pour un très petit nombre d’utilisateurs et ne s’applique qu’à l’utilisation d’un e-mail pour un pilote.
 
 ## <a name="set-up-a-microsoft-365-pilot"></a>Configurer un pilote Microsoft 365
 
@@ -87,7 +89,7 @@ Microsoft 365 utilise Exchange Online Protection (EOP) pour la protection contr
 
 ### <a name="step-5-create-user-accounts-and-set-the-primary-reply-to-address"></a>Étape 5 : créez des comptes d’utilisateurs et définissez l’adresse de réponse principale
 
-1. Dans le volet de navigation gauche du Centre d’administration Microsoft 365, sélectionnez **Utilisateurs** > ** Utilisateurs actifs**.
+1. Dans le volet de navigation gauche du Centre d’administration Microsoft 365, sélectionnez **Utilisateurs** > **Utilisateurs actifs**.
 
 2. Créez deux comptes de test en ajoutant deux utilisateurs existants.
 
@@ -189,4 +191,3 @@ Une fois cette étape terminée, tous les messages envoyés à usera@yourcompany
 
 Une fois que vous les avez importés aux emplacements appropriés dans la boîte aux lettres Microsoft 365, ces éléments sont accessibles à partir de n’importe quel appareil, où que vous soyez.
 
-Lorsque d’autres boîtes aux lettres sont concernées, ou si les employés n’utilisent pas Outlook, vous pouvez utiliser les outils de migration disponibles dans le centre d’administration Exchange. Pour commencer, accédez au centre d’administration Exchange, puis suivez les instructions de la rubrique [Migrer du courrier électronique depuis un serveur IMAP vers des boîtes aux lettres Exchange Online](https://docs.microsoft.com/exchange/mailbox-migration/migrating-imap-mailboxes/migrating-imap-mailboxes).

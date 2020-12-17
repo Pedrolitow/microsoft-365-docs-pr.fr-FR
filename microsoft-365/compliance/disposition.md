@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Surveiller et gérer la suppression de contenu, que vous utilisiez une révision de destruction ou que le contenu soit automatiquement supprimé selon les paramètres que vous avez configurés.
-ms.openlocfilehash: 9900bbc58818a98ad41f4f796184ccf21041bbfe
-ms.sourcegitcommit: a9486f9dc51f0908393000ec3c211e3430c26abd
+ms.openlocfilehash: 9c2e9055d0468270df4e46fe39115708762052f3
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "49409211"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682667"
 ---
 # <a name="disposition-of-content"></a>Destruction de contenu
 
@@ -35,16 +35,16 @@ Pour gérer les révisions de destruction et vérifier que les enregistrements o
 
 ### <a name="permissions-for-disposition"></a>Autorisations pour la destruction
 
-Pour accéder à l’onglet **Destruction** dans le Centre de conformité Microsoft 365, les utilisateurs doivent avoir le rôle d’administrateur de **Gestion des suppressions** . Ce rôle est inclus dans les groupes de rôles d’administrateur par défaut, **Administrateur de conformité** et **Administrateur de données de conformité**.
-
-Pour attribuer le rôle de gestion de destruction aux utilisateurs, ajoutez-les à l’un de ces groupes de rôles par défaut ou créez un groupe de rôles personnalisé (par exemple, nommez « Réviseurs de destruction ») et accordez à ce groupe le rôle de gestion de la destruction.  
+Pour accéder à l’onglet **Destruction** dans le Centre de conformité Microsoft 365, les utilisateurs doivent avoir le rôle d’administrateur de **Gestion des suppressions** . A partir de décembre 2020, ce rôle est désormais inclus dans le groupe de rôle administrateur par défaut de **Gestion des enregistrements**.
 
 > [!NOTE]
-> Même un administrateur général doit avoir accès au rôle **Gestion des suppressions** . 
+> Par défaut, un administrateur général ne se voit pas attribuer le rôle de **Gestion des suppressions** . 
+
+Pour accorder aux utilisateurs uniquement les autorisations dont ils ont besoin pour les révisions de disposition sans leur permettre d'afficher et de configurer d'autres fonctionnalités pour la conservation et la gestion des documents, créez un groupe de rôles personnalisé (par exemple, appelé « Réviseurs de disposition ») et attribuez à ce groupe le rôle de Gestion de suppressions.
 
 De plus, pour afficher le contenu des éléments pendant le processus de destruction, ajoutez des utilisateurs aux deux groupes de rôles suivants : **la visionneuse de contenu de l’Explorateur de contenu** et **visionneuse de liste de l’Explorateur de contenu**. Si les utilisateurs n’ont pas les autorisations de ces groupes de rôles, ils peuvent toujours sélectionner une action de révision de destruction pour achever la révision de destruction, mais vous devez le faire sans avoir la possibilité d’afficher le contenu de l’élément à partir du centre de conformité.
 
-Pour obtenir des instructions, reportez-vous à la rubrique [Octroi de l’accès au Centre de sécurité et conformité Office 365 aux utilisateurs](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+Pour obtenir des instructions pour configurer ces autorisations, reportez-vous à la rubrique [Octroi de l’accès au Centre de sécurité et conformité Office 365 aux utilisateurs](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 
 ### <a name="enable-auditing"></a>Activer l’audit
 
