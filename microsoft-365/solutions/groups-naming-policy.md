@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 description: Découvrez comment créer une stratégie d’attribution de noms pour les groupes Microsoft 365.
-ms.openlocfilehash: 15fcbace737398c6edd2062e72622e8551ebd222
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 9bc0a4c7e1ae6ad532c97b442a2bc50880a942fc
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613501"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698674"
 ---
 # <a name="microsoft-365-groups-naming-policy"></a>Stratégie de noms de groupes Microsoft 365
 
@@ -108,15 +108,13 @@ Aucune recherche de sous-chaîne n’est effectuée ; plus précisément, une c
 
 Certains administrateurs sont exemptés de ces stratégies, pour toutes les charges de travail et les points de terminaison de groupe, afin qu’ils puissent créer des groupes avec ces mots bloqués et avec les conventions d’affectation de noms de votre choix. Voici la liste des rôles d’administrateur exemptés de la stratégie de noms de groupes.
 
-- Administrateur général
+- Administrateur global
 
 - Prise en charge du niveau 1 du partenaire
 
 - Prise en charge du niveau 2 du partenaire
 
 - Administrateur de compte d’utilisateur
-
-- Writers d’annuaire
 
 ## <a name="how-to-set-up-the-naming-policy"></a>Procédure de configuration de la stratégie de noms
 

@@ -10,12 +10,12 @@ search.appverid: ''
 ms.collection: enabler-strategic
 localization_priority: Priority
 description: Obtenez une vue d’ensemble de la compréhension des documents dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: b26ed9a9ed9b8d1f332ccf14377660e634349b3d
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 5dd44a119dff6f5d194861c381fa28f76a6f0da7
+ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087366"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49701106"
 ---
 # <a name="document-understanding-overview"></a>Présentation de la compréhension de document
 
@@ -33,6 +33,9 @@ La compréhension de document utilise les modèles de renseignements artificiels
 
 Les modèles de compréhension de document sont créés et gérés dans un site de type SharePoint appelé un *centre de contenu* . Lorsqu’il est appliqué à une bibliothèque de documents SharePoint, le modèle associé à un type de contenu inclut des colonnes pour stocker les informations extraites. Le type de contenu que vous créez est stocké dans la Galerie de types de contenu SharePoint. Vous pouvez également choisir d’utiliser des types de contenu existants pour utiliser leur schéma.
 
+> [!NOTE]
+> Les types de contenus scellés ou en lecture seule ne peuvent pas être mis à jour. Ils ne peuvent donc pas être utilisés dans un modèle.
+
 Ajoutez des *classificateurs* et des *extracteurs* à votre document présentation des modèles pour effectuer les opérations suivantes : 
 
 - Les classificateurs sont utilisés pour identifier et classer les documents téléchargés vers la bibliothèque de documents. Par exemple, un classifieur peut être « exercé » pour identifier tous les documents *renouvellement de contrat* qui sont chargés dans la bibliothèque. Le type de contenu renouvellement contrat est défini par vous lorsque vous créez votre classifieur.
@@ -41,9 +44,10 @@ Ajoutez des *classificateurs* et des *extracteurs* à votre document présentati
 
 Vous pouvez utiliser des fichiers d’exemple pour former et tester vos classificateurs et extracteurs de votre modèle. Les exemples de fichiers fournissent vos exemples de modèles à rechercher lorsque vous essayez d’identifier et d’extraire des données de fichiers. Par exemple, vous devez former vos classificateurs et extracteurs de renouvellement de contrat avec des exemples de documents de renouvellement de contrat que votre entreprise utilise. Vous pouvez également utiliser des exemples de fichiers pour tester l’efficacité de votre modèle.
 
+> [!NOTE]
+> Si vous utilisez la technologie de reconnaissance optique des caractères (OCR) pour numériser des documents, Syntex possède une limite de 15 pages pour la formation sur le modèle.
+
 Une fois que vous avez publié votre modèle, utilisez le centre de contenu pour l’appliquer à toute bibliothèque de documents SharePoint à laquelle vous avez accès.  
-
-
 
 ## <a name="see-also"></a>Voir aussi
 [Créer un classificateur](create-a-classifier.md)

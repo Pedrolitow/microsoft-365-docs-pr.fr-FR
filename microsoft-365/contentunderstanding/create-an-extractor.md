@@ -10,12 +10,12 @@ search.appverid: ''
 ms.collection: enabler-strategic
 localization_priority: Priority
 description: Découvrez comment créer un extracteur dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: 99d2a4602c03d8a7207736ea17ed500626ce43ac
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: b957d905f3807f6007ebeb742d9b56d81ea38ac2
+ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087462"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49701128"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>Créer un extracteur dans Microsoft SharePoint Syntex
 
@@ -37,7 +37,9 @@ Vous devez créer un extracteur pour chaque entité dans le document à extraire
 
 1. Depuis la page d’accueil du modèle, dans la mosaïque **Créer et entraîner des extracteurs**, cliquez sur **Entraîner un extracteur**.
 2. À l’écran **Nouvel extracteur d’entités**, tapez le nom de votre extracteur dans le champ **Nom du nouvel extracteur**. Par exemple, nommez-le **Date de démarrage du service** si vous souhaitez extraire la date de démarrage du service à partir de chaque document Renouvellement de contrat. Vous pouvez également choisir de réutiliser une colonne précédemment créée (par exemple, une colonne de métadonnées gérées).
-3. Cliquez sur **Créer**.
+> [!NOTE]
+> Si vous créez un nouvel extracteur, sélectionnez **Nouveau type de colonne**, puis sélectionnez **Une seule ligne de texte**, la limite de caractères maximale est 255. Les caractères que vous tapez au-delà de la limite sont tronqués. 
+3. Une fois que vous avez terminé, cliquez sur **Créer**.
 
 ## <a name="add-a-label"></a>Ajouter une étiquette
 

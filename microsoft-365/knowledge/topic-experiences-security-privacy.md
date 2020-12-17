@@ -11,12 +11,12 @@ search.appverid: MET150
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Découvrez comment planifier une rubrique relative à la sécurité et à la confidentialité dans Microsoft 365
-ms.openlocfilehash: 7b88e5bbc8158ebd7dea65b2ecbf77085651b439
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: b3c33a49b8273c5f7830f08de17af9757a858413
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49668165"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698496"
 ---
 # <a name="topic-experiences-security-and-privacy"></a>La rubrique présente la sécurité et la confidentialité
 
@@ -26,7 +26,7 @@ La configuration du réseau de connaissances ne modifie pas les contrôles d’a
 
 Cet article décrit la façon dont les expériences de rubrique fonctionnent du point de vue de la sécurité et les options dont les administrateurs de connaissances et les gestionnaires de connaissances ont besoin pour contrôler la visibilité des rubriques. Lisez cet article dans le cadre de votre [planification des expériences de rubrique](plan-topic-experiences.md).
 
-Vous devez être familiarisé avec les [expériences de rubrique](knowledge-management-overview.md), le centre de [rubriques](topic-center-overview.md)et comment [utiliser les rubriques dans le centre de rubrique](work-with-topics.md) avant de lire cet article.
+Vous devez être familiarisé avec les [expériences de rubrique](topic-experiences-overview.md), le centre de [rubriques](topic-center-overview.md)et comment [utiliser les rubriques dans le centre de rubrique](manage-topics.md) avant de lire cet article.
 
 ## <a name="what-users-can-see-in-topics"></a>Ce que les utilisateurs peuvent voir dans les rubriques
 

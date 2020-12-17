@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Découvrez comment les utilisateurs utilisent les étiquettes de confidentialité dans les applications Office pour ordinateur de bureau, mobile et le Web, et quelles applications prennent en charge les étiquettes de sensibilité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 36e00158c56eb83f8d2c2272295defb12363e314
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 2f2e28bc9321f8a9f3de8cb622eff3317be572b9
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49655426"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698417"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Utiliser les étiquettes de confidentialité dans les applications Office
 
@@ -39,20 +39,22 @@ Pour utiliser les étiquettes de confidentialité avec ces éditions autonomes d
 
 ## <a name="support-for-sensitivity-label-capabilities-in-apps"></a>Prise en charge des fonctionnalités d’étiquette de sensibilité dans les applications
 
-Pour chaque fonctionnalité, les tableaux suivants répertorient la version minimale d’Office dont vous avez besoin pour cette application afin de prendre en charge les étiquettes de sensibilité à l’aide d’étiquettes intégrées. Ou, si la fonctionnalité étiquette est en préversion publique ou en révision pour une version ultérieure. Pour plus d’informations sur les versions ultérieures, consultez la feuille de [route Microsoft 365](https://aka.ms/MIPC/Roadmap) .
+Pour chaque fonctionnalité, les tableaux suivants répertorient la version minimale d’Office dont vous avez besoin pour prendre en charge les étiquettes de sensibilité à l’aide d’étiquettes intégrées. Ou, si la fonctionnalité étiquette est en préversion publique ou en révision pour une version ultérieure. Pour plus d’informations sur les versions ultérieures, consultez la feuille de [route Microsoft 365](https://aka.ms/MIPC/Roadmap) .
 
 De nouvelles versions des applications Office sont disponibles à différents moments pour différents canaux de mise à jour. Pour plus d’informations, notamment sur la configuration de votre canal de mise à jour afin de pouvoir tester une nouvelle fonctionnalité d’étiquetage qui vous intéresse, reportez-vous à la rubrique [vue d’ensemble des canaux de mise à jour pour les applications Microsoft 365](https://docs.microsoft.com/DeployOffice/overview-update-channels). Les nouvelles fonctionnalités de la préversion privée ne sont pas incluses dans le tableau, mais vous pouvez participer à ces aperçus en décrivant votre organisation pour le [programme d’évaluation privée de la protection des informations Microsoft](https://aka.ms/mip-preview).
 
 > [!NOTE]
 > Les noms des canaux de mise à jour pour les applications Office ont récemment changé. Par exemple, le canal mensuel est désormais le canal actuel et Office Insider est désormais un canal bêta. Pour plus d’informations, consultez la rubrique [modifications apportées aux canaux de mise à jour pour les applications Microsoft 365](https://docs.microsoft.com/deployoffice/update-channels-changes).
 
+Office pour iOS et Office pour Android : les étiquettes de sensibilité sont intégrées dans l' [application Office](https://www.microsoft.com/en-us/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/).
+
 Des fonctionnalités supplémentaires sont disponibles lorsque vous installez le client d’étiquetage unifié Azure information protection, qui s’exécute sur des ordinateurs Windows uniquement. Pour plus d’informations, reportez-vous à [la rubrique comparer les clients d’étiquetage pour les ordinateurs Windows](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers).
 
 ### <a name="sensitivity-label-capabilities-in-word-excel-and-powerpoint"></a>Fonctionnalités d’étiquette de sensibilité dans Word, Excel et PowerPoint
 
-Pour iOS et Android : lorsqu’une version minimale est indiquée, la fonctionnalité d’étiquette de sensibilité est également prise en charge avec l' [application Office](https://www.microsoft.com/en-us/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/).
+Les numéros répertoriés sont la version minimale de l’application Office requise pour chaque fonctionnalité.
 
-|Fonctionnalité                                                                                                        |Bureau Windows |Bureau Mac |iOS    |Android      |Web                                                         |
+|Fonctionnalité                                                                                                        |Windows |Mac |iOS    |Android      |Web                                                         |
 |------------------------------------------------------------------------------------------------------------------|----------------|------------|-------|-------------|------------------------------------------------------------|
 |[Appliquer, modifier ou supprimer manuellement une étiquette](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Oui-opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Appliquer une étiquette par défaut](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Oui-opt-in](sensitivity-labels-sharepoint-onedrive-files.md)                                                        |
@@ -74,7 +76,9 @@ Pour iOS et Android : lorsqu’une version minimale est indiquée, la fonctionn
 
 ### <a name="sensitivity-label-capabilities-in-outlook"></a>Fonctionnalités d’étiquette de confidentialité dans Outlook
 
-|Fonctionnalité                                                                                                        |Outlook sur le bureau Windows |Outlook sur le bureau Mac  |Outlook sur iOS |Outlook sur Android |Outlook sur le web |
+Les numéros répertoriés sont la version minimale de l’application Office requise pour chaque fonctionnalité.
+
+|Fonctionnalité                                                                                                        |Outlook pour Windows |Outlook pour Mac |Outlook sur iOS |Outlook sur Android |Outlook sur le web |
 |------------------------------------------------------------------------------------------------------------------|---------------------------|------------------------|---------------|-------------------|-------------------|
 |[Appliquer, modifier ou supprimer manuellement une étiquette](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | Oui               |
 |[Appliquer une étiquette par défaut](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | Oui               |
@@ -159,8 +163,9 @@ Pour une étiquette plus cohérente avec un rapport significatif, fournissez des
     - **Confidentiel \ tous les employés**
     - **Confidentiel \ tout le monde (pas de chiffrement)**
 
-> [!NOTE]
-> Si les utilisateurs suppriment manuellement le chiffrement d’un document étiqueté qui est stocké dans SharePoint ou OneDrive, et que vous avez [activé les étiquettes de confidentialité pour les fichiers Office dans SharePoint et onedrive](sensitivity-labels-sharepoint-onedrive-files.md), le chiffrement des étiquettes est automatiquement restauré lors de l’accès ou du téléchargement suivant du document. 
+  > [!NOTE]
+  > Si les utilisateurs suppriment manuellement le chiffrement d’un document étiqueté qui est stocké dans SharePoint ou OneDrive, et que vous avez [activé les étiquettes de confidentialité pour les fichiers Office dans SharePoint et onedrive](sensitivity-labels-sharepoint-onedrive-files.md), le chiffrement des étiquettes est automatiquement restauré lors de l’accès ou du téléchargement suivant du document. 
+
 
 ## <a name="apply-sensitivity-labels-to-files-emails-and-attachments"></a>Appliquer des étiquettes de confidentialité à des fichiers, des e-mails et des pièces jointes
 

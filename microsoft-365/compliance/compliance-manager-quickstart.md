@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez le Guide de démarrage rapide du gestionnaire de conformité pour vous aider tout au long de votre compréhension, de la mise en place et de l’utilisation du gestionnaire de conformité.
-ms.openlocfilehash: 9f24a0495b7d453b70a28ad54d76ccf835000ed6
-ms.sourcegitcommit: d333d82fd5e4f3265e8b9372094e85875bee6fe5
+ms.openlocfilehash: c5159e1e6faa293ba3bd49d82bb06898ec9e0bdd
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49071969"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698427"
 ---
 # <a name="compliance-manager-quickstart"></a>Gestionnaire de conformité Quickstart
 
 **Dans cet article :** Utilisez ce guide de démarrage rapide pour vous aider dans votre transition avec le gestionnaire de conformité Microsoft afin de gérer la conformité de votre organisation avec les réglementations, les stratégies et les normes.
 
-Le gestionnaire de conformité fournit des données intelligentes et actionnables lors de votre première visite. Le gestionnaire de conformité dispose également de fonctionnalités avancées pour la mise à l’échelle de votre conformité lorsque vous êtes prêt. Tous les clients peuvent utiliser l’évaluation de la [base de données de protection des données](compliance-manager-assessments.md#data-protection-baseline-default-assessment) pour garantir la protection des données critiques. Avec Microsoft 365 E5, vous pouvez utiliser plus de 150 évaluations prédéfinies pour vous aider à vous conformer aux réglementations de votre secteur et de votre région, et à utiliser des évaluations personnalisées pour étendre le gestionnaire de conformité à tous vos biens.
+Le gestionnaire de conformité fournit des données intelligentes et actionnables lors de votre première visite. Le gestionnaire de conformité dispose également de fonctionnalités avancées pour la mise à l’échelle de votre conformité lorsque vous êtes prêt. Les évaluations disponibles dépendent de votre contrat de licence ; [en savoir plus](https://go.microsoft.com/fwlink/?linkid=2132371).
 
 Que vous utilisiez le gestionnaire de conformité pour la première fois ou que vous soyez prêt à utiliser certaines fonctionnalités avancées, ce guide vous aide à vous accompagner tout au long de votre parcours.
 

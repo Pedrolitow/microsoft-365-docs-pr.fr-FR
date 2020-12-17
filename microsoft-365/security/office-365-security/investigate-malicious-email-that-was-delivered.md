@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 07/09/2020
+ms.date: 12/16/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez comment utiliser les fonctionnalités d’analyse et de réponse aux menaces pour rechercher et examiner des courriers électroniques malveillants.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f3fd2e5c0f75de9a1b942e8f0baa8e9d44843de4
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 8a068f4502a286b8782e03a9a6f61e61fa96ed72
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616523"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698578"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-office-365"></a>Enquête sur le courrier électronique malveillant remis dans Office 365
 
@@ -58,18 +58,21 @@ Pour effectuer certaines actions, telles que l’affichage des en-têtes de mess
 |---|---|---|
 |Utilisation de l’Explorateur de menaces (et des détections en temps réel) pour analyser les menaces |Administrateur général <p> Administrateur de sécurité <p> Lecteur de sécurité|Non|
 |Utiliser l’Explorateur de menaces (et les détections en temps réel) pour afficher les en-têtes des messages électroniques, ainsi que pour afficher un aperçu et télécharger des messages électroniques mis en quarantaine|Administrateur général <p> Administrateur de sécurité <p> Lecteur de sécurité|Non|
-|Utiliser l’Explorateur de menaces pour afficher les en-têtes et télécharger les messages électroniques remis aux boîtes aux lettres|Administrateur général <p> Administrateur de sécurité <p> Lecteur de sécurité <p> Aperçu|Oui|
+|Utiliser l’Explorateur de menaces pour afficher des en-têtes, afficher un aperçu du courrier électronique (uniquement dans la page entité courrier électronique) et télécharger les messages électroniques remis aux boîtes aux lettres|Administrateur général <p> Administrateur de sécurité <p> Lecteur de sécurité <p> Aperçu|Oui|
 |
 
 > [!NOTE]
-> L' *Aperçu* est un rôle et non un groupe de rôles ; le rôle aperçu doit être ajouté à un groupe de rôles existant pour Office 365. Le rôle administrateur général est affecté au centre d’administration Microsoft 365 ( <https://admin.microsoft.com> ), et les rôles Administrateur de sécurité et lecteur de sécurité sont affectés dans le centre de sécurité & conformité ( <https://protection.office.com> ). Pour en savoir plus sur les rôles et les autorisations, consultez [la rubrique autorisations dans le centre de sécurité & conformité](permissions-in-the-security-and-compliance-center.md).
+> L' *Aperçu* est un rôle et non un groupe de rôles ; le rôle aperçu doit être ajouté à un groupe de rôles existant pour Office 365 (at [https://protection.office.com](https://protection.office.com) ). Accédez à **autorisations**, puis modifiez un groupe de rôles existant ou ajoutez un nouveau groupe de rôles avec le rôle **Aperçu** affecté.
+> Le rôle administrateur général est affecté au centre d’administration Microsoft 365 ( <https://admin.microsoft.com> ), et les rôles Administrateur de sécurité et lecteur de sécurité sont affectés dans le centre de sécurité & conformité ( <https://protection.office.com> ). Pour en savoir plus sur les rôles et les autorisations, consultez [la rubrique autorisations dans le centre de sécurité & conformité](permissions-in-the-security-and-compliance-center.md).
+
+Étant donné que la prévisualisation et le téléchargement du courrier électronique sont des activités sensibles, l’audit est activé pour ces éléments. Une fois que l’administrateur effectue ces activités sur les e-mails, les journaux d’audit sont générés pour le même et peuvent être vus dans le centre de conformité Office 365 Security & ( [https://protection.office.com](https://protection.office.com) ). Accédez à **recherche** dans  >  le **Journal d’audit** de la recherche et filtrez dans la section recherche du nom de l’administrateur. Les résultats filtrés affichent l’activité **AdminMailAccess**. Sélectionnez une ligne pour afficher les détails dans la section **plus d’informations** sur l’aperçu ou le téléchargement du courrier électronique.
 
 ## <a name="find-suspicious-email-that-was-delivered"></a>Détecter les e-mails suspects qui ont été remis
 
 L’Explorateur de menaces est un rapport puissant qui peut servir plusieurs objectifs, tels que la recherche et la suppression de messages, l’identification de l’adresse IP d’un expéditeur de courrier malveillant ou le démarrage d’un incident en vue d’une nouvelle enquête. La procédure suivante décrit l’utilisation de l’Explorateur pour rechercher et supprimer les messages malveillants des boîtes aux lettres du destinataire.
 
 > [!NOTE]
-> Les recherches par défaut dans l’explorateur n’incluent actuellement pas les éléments zapped.  Cela s’applique à tous les affichages, par exemple les affichages de programmes malveillants ou de hameçonnage. Pour inclure les éléments zapped, vous devez ajouter une « action de remise » définie sur inclure « supprimé par ZAP ». Si vous incluez toutes les options, vous verrez tous les résultats d’action de remise, y compris les éléments zapped.
+> Les recherches par défaut dans l’explorateur n’incluent actuellement pas les éléments zapped.  Cela s’applique à tous les affichages, par exemple les affichages de programmes malveillants ou de hameçonnage. Pour inclure les éléments zapped, vous devez ajouter une **action de remise** définie sur include **supprimée par zap**. Si vous incluez toutes les options, vous verrez tous les résultats d’action de remise, y compris les éléments zapped.
 
 1. **Accédez à l’Explorateur de menaces**: accédez à <https://protection.office.com> et connectez-vous à l’aide de votre compte professionnel ou scolaire pour Office 365. Vous accédez au centre de sécurité & conformité.
 

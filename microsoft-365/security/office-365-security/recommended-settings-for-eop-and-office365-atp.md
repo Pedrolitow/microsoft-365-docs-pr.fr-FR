@@ -1,5 +1,6 @@
 ---
-title: Recommandations de Microsoft pour les paramètres de sécurité EOP et Defender pour Office 365 recommandations, Sender Policy Framework, rapport de message basé sur un domaine, Conformance, DomainKeys Identified de la messagerie identifiée, étapes, fonctionnement, bases de sécurité, configurations de base pour EOP, configurations de base pour Defender pour Office 365, set up Defender for Office 365, set up EOP, configure Defender for Office 365, configure EOP, Security Configuration
+title: Recommandations de Microsoft pour les paramètres de sécurité EOP et Defender pour Office 365
+keywords: Recommandations pour la sécurité d’Office 365, Sender Policy Framework, rapport de message basé sur un domaine, Conformance, DomainKeys Identified, étapes, fonctionnement, bases de sécurité, configurations de base pour EOP, bases for Defender for Office 365, set up Defender for Office 365, set up EOP, configure Defender for Office 365, configure EOP, Security Configuration
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -17,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Quelles sont les meilleures pratiques pour les paramètres de sécurité Exchange Online Protection (EOP) et Defender pour Office 365 ? Quelles sont les recommandations actuelles pour la protection standard ? Qu’est-ce qui doit être utilisé si vous voulez être plus strict ? Quels sont les autres éléments que vous obtenez si vous utilisez également Defender pour Office 365 ?
-ms.openlocfilehash: 192e37a1a9a373f7b6712600bc3c81189f7c51ad
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: d731b75e05dcecc513c72b390b106491f7601c71
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615959"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698686"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Paramètres recommandés pour EOP et Microsoft Defender pour Office 365 sécurité
 

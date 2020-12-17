@@ -16,12 +16,12 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur les options disponibles et préférées pour autoriser les messages entrants dans Exchange Online Protection (EOP).
-ms.openlocfilehash: 38f1ab2451191dd63d5738075dbf42f8201a34ca
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 6e33d2b75429453602615bf98b8269ab160c7749
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659903"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698698"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Créer des listes d’expéditeurs approuvés dans EOP
 
@@ -97,6 +97,9 @@ L’exemple suivant suppose que vous avez besoin d’un courrier électronique d
 
 ## <a name="use-outlook-safe-senders"></a>Utiliser des expéditeurs approuvés Outlook
 
+> [!CAUTION]
+> Cette méthode crée un risque élevé de remise des messages électroniques à la boîte de réception qui seraient normalement filtrés. Toutefois, les listes des expéditeurs approuvés ou des domaines fiables de l’utilisateur n’empêchent pas le filtrage des programmes malveillants ou des messages de hameçonnage à haute fiabilité.
+
 Au lieu d’un paramètre organisationnel, les utilisateurs ou les administrateurs peuvent ajouter les adresses de messagerie de l’expéditeur à la liste des expéditeurs approuvés dans la boîte aux lettres. Pour obtenir des instructions, consultez la rubrique [configurer les paramètres de courrier indésirable sur les boîtes aux lettres Exchange Online dans Office 365](configure-junk-email-settings-on-exo-mailboxes.md). Cette opération n’est pas recommandée dans la plupart des situations puisque les expéditeurs contournent des parties de la pile de filtrage. Bien que vous approuviez l’expéditeur, l’expéditeur peut toujours être compromis et envoyer du contenu malveillant. Il est préférable de laisser nos filtres faire ce qui est nécessaire pour vérifier chaque message, puis [signaler le faux positif/négatif à Microsoft](report-junk-email-messages-to-microsoft.md) si nos filtres ne sont pas corrects. Le contournement de la pile de filtrage interfère également avec [zap](zero-hour-auto-purge.md).
 
 Lorsque les messages ignorent le filtrage du courrier indésirable en raison de la liste des expéditeurs approuvés d’un utilisateur, le champ d’en-tête **X-Forefront-antispam-Report** contient la valeur `SFV:SFE` indiquant que le filtrage du courrier indésirable, de l’usurpation et de l’hameçonnage a été contourné.
@@ -114,7 +117,7 @@ Si vous ne pouvez pas utiliser les règles de flux de messagerie comme décrit p
 - Examinez régulièrement les entrées de la liste d’adresses IP autorisées et supprimez les entrées dont vous n’avez plus besoin.
 
 > [!CAUTION]
-> Sans une vérification supplémentaire comme les règles de flux de messagerie, les messages provenant de sources dans la liste d’adresses IP autorisées ignorent les vérifications de filtrage du courrier indésirable et d’authentification de l’expéditeur (SPF, DKIM, DMARC). Cela crée un risque élevé que des attaquants délivrent des courriers électroniques à la boîte de réception qui seraient normalement filtrés.
+> Sans une vérification supplémentaire comme les règles de flux de messagerie, les messages provenant de sources dans la liste d’adresses IP autorisées ignorent les vérifications de filtrage du courrier indésirable et d’authentification de l’expéditeur (SPF, DKIM, DMARC). Cela crée un risque élevé que des attaquants délivrent correctement les messages électroniques à la boîte de réception qui serait normalement filtrée ; Toutefois, la liste d’adresses IP autorisées n’empêche pas le filtrage des programmes malveillants ou des messages de hameçonnage à haute fiabilité.
 
 ## <a name="use-allowed-sender-lists-or-allowed-domain-lists"></a>Utiliser des listes d’expéditeurs autorisés ou des listes de domaines autorisés
 
@@ -124,7 +127,7 @@ La limite maximale de ces listes est d’environ 1000 entrées ; Bien que vous 
 
 > [!CAUTION]
 >
-> - Cette méthode crée un risque élevé de remise des messages électroniques à la boîte de réception qui seraient normalement filtrés.
+> - Cette méthode crée un risque élevé de remise des messages électroniques à la boîte de réception qui seraient normalement filtrés. Toutefois, les listes des expéditeurs autorisés ou des domaines autorisés n’empêchent pas le filtrage des programmes malveillants ou des classent à haut niveau de fiabilité.
 >
 > - N’utilisez pas les domaines que vous possédez (également appelés domaines acceptés) ou les domaines populaires (par exemple, microsoft.com) dans les listes de domaines autorisés.
 

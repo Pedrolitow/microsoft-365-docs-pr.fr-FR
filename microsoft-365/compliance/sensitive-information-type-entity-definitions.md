@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: La protection contre la perte de données (DLP) dans le centre de sécurité &amp; conformité inclut 80 types d’informations sensibles que vous pouvez utiliser dans vos stratégies DLP. Cette rubrique répertorie tous ces types d'informations sensibles et indique ce qu'une stratégie DLP recherche pour chaque type.
-ms.openlocfilehash: 498ff1482bd0109903968d1c8fe250311e37a51f
-ms.sourcegitcommit: 2810d1347e5016412074b2dd18e654aee7e593de
+ms.openlocfilehash: cb45d613da95c977f56b82e64ad3332434e08cd8
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "48819114"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698507"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Définitions d’entités des types d’informations sensibles
 
@@ -656,7 +656,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - tfn
 
 ## <a name="austria-drivers-license-number"></a>Numéro de permis de conduire autrichien
-Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du pilote de l’UE.
 
 ### <a name="format"></a>Format
 
@@ -1602,7 +1601,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 ## <a name="belgium-drivers-license-number"></a>Numéro de permis de conduire belge
-Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du pilote de l’UE.
 
 ### <a name="format"></a>Format
 
@@ -1783,7 +1781,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 ### <a name="pattern"></a>Modèle
 
 11 chiffres plus des délimiteurs :
-- six chiffres et deux points facultatifs au format YY. M. DD pour la date de naissance 
+- six chiffres et deux points facultatifs au format YY. MM.DD pour la date de naissance 
 - Délimiteur facultatif : point, tiret, espace 
 - trois chiffres séquentiels (impairs pour les hommes, pairs pour les femelles) 
 - Délimiteur facultatif : point, tiret, espace 
@@ -2272,7 +2270,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 
 ## <a name="bulgaria-drivers-license-number"></a>Numéro de permis de conduire de la Bulgarie
-Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du pilote de l’UE.
 
 ### <a name="format"></a>Format
 
@@ -3594,7 +3591,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 
 ## <a name="croatia-drivers-license-number"></a>Numéro de permis de conduire de la Croatie
-Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du pilote de l’UE.
 
 ### <a name="format"></a>Format
 
@@ -4013,7 +4009,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
    
 ## <a name="cyprus-drivers-license-number"></a>Numéro de permis de conduire Chypre
-Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du pilote de l’UE.
 
 ### <a name="format"></a>Format
 
@@ -4365,7 +4360,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 
 ## <a name="czech-drivers-license-number"></a>Numéro de permis de conduire tchèque
-Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du pilote de l’UE.
 
 ### <a name="format"></a>Format
 
@@ -4755,7 +4749,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 
 ## <a name="denmark-drivers-license-number"></a>Numéro de permis de conduire Danemark
-Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du pilote de l’UE.
 
 ### <a name="format"></a>Format
 
@@ -5207,7 +5200,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 
 ## <a name="estonia-drivers-license-number"></a>Numéro de permis de conduire Estonie
-Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du pilote de l’UE.
 
 ### <a name="format"></a>Format
 
@@ -6019,7 +6011,6 @@ Ces entités sont dans le type d’informations sensibles du numéro d’identif
 
 
 ## <a name="finland-drivers-license-number"></a>Numéro de permis de conduire Finlande
-Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du pilote de l’UE.
 
 ### <a name="format"></a>Format
 
@@ -6479,7 +6470,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 
 ## <a name="france-drivers-license-number"></a>Numéro de permis de conduire France
-Cette entité de type d’informations sensibles est disponible dans le type d’informations sensibles du numéro de permis de conduire de l’UE et est disponible en tant qu’entité de type d’informations sensibles autonome.
 
 ### <a name="format"></a>Format
 
@@ -7015,7 +7005,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 
 ## <a name="germany-drivers-license-number"></a>Numéro de permis de conduire Allemagne
-Cette entité de type d’informations sensibles est incluse dans le type d’informations sensibles du pilote de l’UE et est disponible en tant qu’entité de type d’informations sensibles autonome.
 
 ### <a name="format"></a>Format
 
@@ -7456,7 +7445,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 
 ## <a name="greece-drivers-license-number"></a>Numéro de permis de conduire Grèce
-Cette entité de type d’informations sensibles est incluse dans le type d’informations sensibles du pilote de l’UE et est disponible en tant qu’entité de type d’informations sensibles autonome.
 
 ### <a name="format"></a>Format
 
@@ -7890,8 +7878,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
    
 ## <a name="hungary-drivers-license-number"></a>Numéro de permis de conduire hongrois
-
-Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du pilote de l’UE.
 
 ### <a name="format"></a>Format
 
@@ -8580,7 +8566,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-Néant
+Aucune
 
    
 ## <a name="international-classification-of-diseases-icd-10-cm"></a>Classification internationale des maladies (ICD-10-CM)
@@ -8731,8 +8717,6 @@ Pour IPv6, le pourcentage de confiance d’une stratégie DLP ayant détecté c
 - IP-כתובת ה 
 
 ## <a name="ireland-drivers-license-number"></a>Numéro de permis de conduire Ireland
-
-Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du pilote de l’UE.
 
 ### <a name="format"></a>Format
 
@@ -9164,7 +9148,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
    
 ## <a name="italy-drivers-license-number"></a>Numéro de permis de conduire Italie
-Cette entité de type d’informations sensibles est incluse dans le type d’informations sensibles du pilote de l’UE et est disponible en tant qu’entité de type d’informations sensibles autonome.
 
 ### <a name="format"></a>Format
 
@@ -9923,7 +9906,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 
 ## <a name="latvia-drivers-license-number"></a>Numéro de permis de conduire de la Lettonie
-Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du pilote de l’UE.
 
 ### <a name="format"></a>Format
 
@@ -10282,7 +10264,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - n ° du passeport
 
 ## <a name="lithuania-drivers-license-number"></a>Numéro de permis de conduire de la Lituanie
-Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du pilote de l’UE.
 
 ### <a name="format"></a>Format
 
@@ -10589,7 +10570,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Paso Nr
 
 ## <a name="luxemburg-drivers-license-number"></a>Numéro de permis de conduire du Luxembourg
-Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du pilote de l’UE.
 
 ### <a name="format"></a>Format
 
@@ -11025,7 +11005,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - carte d’identification personnelle
 
 ## <a name="malta-drivers-license-number"></a>Numéro de permis de conduire Malte
-Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du pilote de l’UE.
 
 ### <a name="format"></a>Format
 
@@ -11466,7 +11445,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - uniqueidentityno #
 
 ## <a name="netherlands-drivers-license-number"></a>Numéro de permis de conduire néerlandais
-Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du pilote de l’UE.
 
 ### <a name="format"></a>Format
 
@@ -12272,7 +12250,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Pinag-isang Multi-Layunin ID
 
 ## <a name="poland-drivers-license-number"></a>Numéro de permis de conduire polonais
-Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du pilote de l’UE.
 
 ### <a name="format"></a>Format
 
@@ -12770,7 +12747,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 
 ## <a name="portugal-drivers-license-number"></a>Numéro de permis de conduire du fabricant Portugal
-Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du pilote de l’UE.
 
 ### <a name="format"></a>Format
 
@@ -13087,7 +13063,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 
 ## <a name="romania-drivers-license-number"></a>Numéro de permis de conduire roumain
-Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du pilote de l’UE.
 
 ### <a name="format"></a>Format
 
@@ -13625,7 +13600,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - 身份證 
 
 ## <a name="slovakia-drivers-license-number"></a>Numéro de permis de conduire Slovaquie
-Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du pilote de l’UE.
 
 ### <a name="format"></a>Format
 
@@ -13945,7 +13919,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - n ° passeport
 
 ## <a name="slovenia-drivers-license-number"></a>Numéro de permis de conduire Slovénie
-Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du pilote de l’UE.
 
 ### <a name="format"></a>Format
 
@@ -14419,7 +14392,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - 주민등록번호
 
 ## <a name="spain-drivers-license-number"></a>Numéro de permis de conduire Espagne
-Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du pilote de l’UE.
 
 ### <a name="format"></a>Format
 
@@ -14796,7 +14768,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-Néant
+Aucune
 
 ## <a name="spain-tax-identification-number"></a>Numéro d’identification fiscale Espagne
 Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
@@ -14985,7 +14957,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - s-int.<!--no-hyperlink-->NET
 
 ## <a name="sweden-drivers-license-number"></a>Numéro de permis de conduire Suède
-Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du pilote de l’UE.
 
 ### <a name="format"></a>Format
 

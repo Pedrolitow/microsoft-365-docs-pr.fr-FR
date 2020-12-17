@@ -11,16 +11,16 @@ search.appverid: MET150
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Découvrez comment configurer des expériences de rubrique dans Microsoft 365
-ms.openlocfilehash: cc157463c8c85f25ba232c344294ef3e0fabba23
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: e11f0b75556a4a8ac0ffa40269d7166258128daf
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49667966"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698554"
 ---
 # <a name="set-up-topic-experiences-in-microsoft-365"></a>Configuration des expériences de rubrique dans Microsoft 365
 
-Vous pouvez utiliser le centre d’administration Microsoft 365 pour installer et configurer des [expériences de rubrique](knowledge-management-overview.md). 
+Vous pouvez utiliser le centre d’administration Microsoft 365 pour installer et configurer des [expériences de rubrique](topic-experiences-overview.md). 
 
 Il est important de planifier la meilleure façon de configurer et de configurer des rubriques dans votre environnement. Avant de commencer les procédures décrites dans cet article, lisez [plan topic Experiences](plan-topic-experiences.md) .
 
@@ -144,4 +144,4 @@ Une fois que vous avez configuré les expériences de rubrique, vous pouvez modi
 
 ## <a name="see-also"></a>Voir aussi
 
-[Vue d’ensemble de la gestion des connaissances](knowledge-management-overview.md)
+[Présentation des expériences](topic-experiences-overview.md)

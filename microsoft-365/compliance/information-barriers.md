@@ -16,12 +16,12 @@ ms.collection:
 localization_priority: None
 description: Utilisez les barrières relatives aux informations pour garantir la conformité de la communication à l’aide de Microsoft teams au sein de votre organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 08ec3b01258220a71ac02e5333143fb11b66655f
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 73a76e67fdb96f89dbd11daf4b2ef12f6590f92a
+ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613096"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49701003"
 ---
 # <a name="learn-about-information-barriers-in-microsoft-365"></a>En savoir plus sur les barrières relatives aux informations dans Microsoft 365
 
@@ -72,7 +72,7 @@ Les barrières de l’information se dérouleront maintenant et sont incluses da
 - Conformité Microsoft 365 E5/a5
 - Gestion des risques Microsoft 365 Insider
 
-Pour plus d’informations, consultez [la rubrique solutions de conformité](https://products.office.com/business/security-and-compliance/compliance-solutions).
+Pour plus d’informations, reportez-vous à [la rubrique Microsoft 365 Licensing Guidance for security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
 
 Pour [définir ou modifier des stratégies de barrière des informations](information-barriers-policies.md), vous devez disposer de l’un des rôles suivants :
 
@@ -81,7 +81,7 @@ Pour [définir ou modifier des stratégies de barrière des informations](inform
 - Administrateur de conformité
 - IB gestion de la conformité (il s’agit d’un nouveau rôle !)
 
-(Pour en savoir plus sur les rôles et les autorisations, consultez [la rubrique autorisations dans le centre de conformité des & de sécurité Office 365](../security/office-365-security/protect-against-threats.md).)
+(Pour en savoir plus sur les rôles et les autorisations, consultez [la rubrique autorisations dans le centre de conformité des & de sécurité Office 365](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).)
 
 Vous devez être familiarisé avec les applets de commande PowerShell pour définir, valider ou modifier des stratégies de barrière des informations. Bien que nous fournissons plusieurs exemples d’applets de commande PowerShell dans l' [article de procédure](information-barriers-policies.md), vous devez connaître les détails supplémentaires, tels que les paramètres, pour votre organisation.
 

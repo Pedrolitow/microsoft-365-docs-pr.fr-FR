@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: 'Découvrez comment convertir une boîte aux lettres privée en boîte aux lettres partagée accessible par plusieurs utilisateurs. '
-ms.openlocfilehash: bc867c9b43656e40149eb7cd7a7e5ce186c10798
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: fa8e37b5e924f1b38755a953f40d8b70011213d0
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445686"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698278"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>Convertir une boîte aux lettres utilisateur en boîte aux lettres partagée
 
@@ -45,7 +45,7 @@ Lorsque vous convertissez la boîte aux lettres d’un utilisateur en boîte aux
  
 1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange</a>.
 
-2. Sélectionnez **Recipients** \> **boîtes aux lettres**de destinataires.
+2. Sélectionnez  \> **boîtes aux lettres** de destinataires.
 
 3. Sélectionnez la boîte aux lettres utilisateur. Sous **convertir en boîte aux lettres partagée**, sélectionnez **convertir**.
 
@@ -93,13 +93,17 @@ Imaginons que vous ayez supprimé un compte d’utilisateur et que vous vouliez 
 
 ## <a name="convert-a-users-mailbox-in-a-hybrid-environment"></a>Convertir la boîte aux lettres d’un utilisateur dans un environnement hybride
 
-Si cette boîte aux lettres partagée se trouve dans un environnement hybride, nous **vous recommandons vivement** (presque nécessaire !) de déplacer la boîte aux lettres utilisateur vers l’organisation locale, de convertir la boîte aux lettres d’utilisateur en boîte aux lettres partagée, puis de replacer la boîte aux lettres partagée dans le Cloud. 
+> [!NOTE] 
+> À partir du 11 octobre 2018, le déploiement d’Exchange hybride prend en charge la création de boîtes aux lettres partagées distantes à partir de la mise à jour cumulative 21 pour Exchange Server 2013 et la mise à jour cumulative 10 pour Exchange Server 2016 dans un environnement Exchange Server local. Vous pouvez créer ou modifier directement une boîte aux lettres partagée à distance à l’aide du paramètre New _-Shared_ . Pour plus d’informations, visitez les [cmdlets pour créer ou modifier une boîte aux lettres partagée distante dans un environnement Exchange local](https://support.microsoft.com/help/4133605/cmdlets-to-create-modify-remote-shared-mailbox-in-on-premises-exchange).
+
+Si cette boîte aux lettres partagée se trouve dans un environnement hybride et qu’elle ne tombe pas dans le scénario ci-dessus, nous **vous recommandons vivement** (presque requis !) de déplacer la boîte aux lettres de l’utilisateur vers l’organisation locale, de convertir la boîte aux lettres utilisateur en boîte aux lettres partagée, puis de replacer la boîte aux lettres partagée dans le Cloud. 
 
 Voici pourquoi : Si vous convertissez la boîte aux lettres dans le Cloud, elle peut être convertie, mais en local, la boîte aux lettres est toujours la boîte aux lettres de l’utilisateur, car la nouvelle réalité n’est pas synchronisée en local.
 
 En règle générale, il ne s’agit pas d’un problème, mais il existe des scénarios dans lesquels les attributs locaux (ce qui signifie que la boîte aux lettres est la boîte aux lettres de l’utilisateur) peuvent remplacer les nouvelles versions Cloud de ces attributs et, par conséquent, la boîte aux lettres peut être reconvertie. Il s’agit d’un problème car les boîtes aux lettres des utilisateurs nécessitent **des licences ou sont supprimées de manière récupérable au bout de 30 jours**!
 
 Nous avons résolu la plupart des raisons de ce problème, mais cela peut toujours se produire, bien que rarement. Il est préférable d’être sûr et de déplacer la boîte aux lettres vers l’ordinateur local, de la convertir, puis de la redéplacer vers le Cloud. Cette solution recommandée n’est pas conforme au contrat de licence pour les environnements hybrides, car l’existence de la boîte aux lettres utilisateur sur site est temporaire. Vous serez en violation de votre licence si vous avez conservé la boîte aux lettres utilisateur ou la boîte aux lettres partagée dans votre organisation locale et que vous ne l’avez pas replacée dans le Cloud.
+
 
 > [!NOTE]
 > Si vous êtes membre du groupe de rôles gestion de l’organisation ou gestion des destinataires, vous pouvez utiliser l’environnement de commande Exchange Management Shell pour modifier une boîte aux lettres utilisateur en boîte aux lettres partagée locale. Par exemple, `Set-Mailbox -Identity mailbox1@contoso.onmicrosoft.com -Type Shared`.

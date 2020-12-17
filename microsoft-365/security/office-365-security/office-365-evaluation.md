@@ -17,12 +17,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 54acf9d21e3dd935f8b87c6ee4a13ab30e7bc59e
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: abb33b85717e63cb78a2b1edfd86584fd165a71f
+ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49668072"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49701014"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Évaluation de Microsoft Defender pour Office 365
 
@@ -43,11 +43,11 @@ Defender for Office 365 en mode d’évaluation crée des stratégies de message
 
 Avec le mode d’évaluation, [les pièces jointes fiables, les](atp-safe-attachments.md) [liens fiables](atp-safe-links.md)et les [stratégies d’usurpation d’identité anti-hameçonnage](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) sont configurés en votre nom. Toutes les stratégies Defender pour Office 365 sont créées en mode non-application en arrière-plan et ne sont pas visibles pour vous.
 
-Dans le cadre de la configuration, le mode d’évaluation configure également le [filtrage amélioré pour les connecteurs](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors). Elle améliore la précision de filtrage en conservant les informations d’adresse IP et d’expéditeur, qui sont perdues lorsque le courrier passe par une passerelle de sécurité de messagerie (ESG) devant de l’Office 365. Cela améliore également la précision de filtrage pour vos stratégies de blocage du courrier indésirable et anti-hameçonnage Exchange Online Protection (EOP).
+Dans le cadre de la configuration, le mode d’évaluation configure également le [filtrage amélioré pour les connecteurs](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors). Elle améliore la précision de filtrage en conservant les informations d’adresse IP et d’expéditeur, qui sont perdues lorsque le courrier passe par une passerelle de sécurité de messagerie (ESG) devant de l’Office 365. Le filtrage amélioré améliore également la précision de filtrage pour vos stratégies de protection contre le courrier indésirable et anti-hameçonnage Exchange Online (EOP).
 
 Pour limiter l’impact potentiel de la production sur certains scénarios non pris en charge, vous pouvez contourner tout le filtrage EOP en créant une règle de transport pour définir le seuil de probabilité de courrier indésirable sur-1. Pour plus d’informations, consultez [la rubrique utiliser le centre d’administration Exchange pour créer une règle de flux de messagerie qui définit la valeur SCL d’un message](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message)   .
 
-Lors de la configuration du mode d’évaluation, un rapport est mis à jour quotidiennement avec un maximum de 90 jours de quantification des messages qui auraient été bloqués si les stratégies ont été appliquées et mises en œuvre (par exemple, supprimer, envoyer à courrier indésirable, quarantaine). Les rapports sont générés pour tous les virus Defender pour Office 365 et EOP. Ils sont regroupés par technologie de détection (par exemple, emprunt d’identité) et peuvent être filtrés par intervalle de temps. En outre, des rapports de message peuvent être créés à la demande pour créer des tableaux croisés dynamiques personnalisés ou des messages de plongée en profondeur à l’aide de l’Explorateur de menaces.
+Lors de la configuration du mode d’évaluation, un rapport est mis à jour quotidiennement avec un maximum de 90 jours de quantification des messages qui auraient été bloqués si les stratégies étaient implémentées (par exemple, supprimer, envoyer à courrier indésirable, mise en quarantaine). Les rapports sont générés pour tous les virus Defender pour Office 365 et EOP. Ils sont regroupés par technologie de détection (par exemple, emprunt d’identité) et peuvent être filtrés par intervalle de temps. En outre, des rapports de message peuvent être créés à la demande pour créer des tableaux croisés dynamiques personnalisés ou des messages de plongée en profondeur à l’aide de l’Explorateur de menaces.
 
 Avec l’expérience de configuration simplifiée, vous pouvez vous concentrer sur les éléments suivants :
 
@@ -79,7 +79,12 @@ Vous disposerez d’une fenêtre de 30 jours avec l’évaluation pour surveille
 
 ### <a name="roles"></a>Rôles
 
-Les rôles Exchange Online sont requis pour configurer Defender pour Office 365 en mode d’évaluation. Les rôles suivants sont nécessaires :
+Les rôles Exchange Online sont requis pour configurer Defender pour Office 365 en mode d’évaluation.
+
+- [En savoir plus sur les autorisations dans Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)
+- [En savoir plus sur l’attribution de rôles d’administrateur](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles)
+
+Les rôles suivants sont nécessaires :
 
 |Tâche|Role|
 |---|---|
@@ -90,9 +95,10 @@ Les rôles Exchange Online sont requis pour configurer Defender pour Office 365 
 |Afficher le rapport d’évaluation|Rôle d’administrateur de sécurité ou rôle de lecteur de sécurité|
 |
 
+
 ### <a name="enhanced-filtering"></a>Filtrage amélioré
 
-Vos stratégies Exchange Online Protection, telles que la protection en bloc et le courrier indésirable, resteront les mêmes. La remise des messages restera également identique. Toutefois, l’évaluation active le filtrage amélioré pour les connecteurs, ce qui aura un impact sur vos stratégies de flux de flux et de protection Exchange Online sauf si elles sont ignorées.
+Vos stratégies Exchange Online Protection, telles que la protection en bloc et le courrier indésirable, resteront les mêmes. La remise des messages restera également identique. Toutefois, l’évaluation active le filtrage amélioré pour les connecteurs, ce qui aura un impact sur vos stratégies de flux de messagerie et de protection Exchange Online sauf si elles sont ignorées.
 
 Le filtrage amélioré pour les connecteurs permettra aux clients d’utiliser la protection contre l’usurpation d’identité. La détection d’usurpation d’identité n’est pas prise en charge si vous utilisez une passerelle de sécurité de messagerie (ESG) sans avoir activé le filtrage amélioré pour les connecteurs.
 
@@ -104,7 +110,7 @@ Les liens URL dans les corps des messages électroniques ne sont pas renvoyés, 
 
 ### <a name="email-routing"></a>Routage du courrier électronique
 
-Vous devez préparer les détails correspondants dont vous aurez besoin pour configurer la façon dont votre courrier électronique est actuellement routé, y compris le nom du connecteur entrant qui route votre courrier. Si vous utilisez Exchange Online Protection, vous n’aurez pas de connecteur.  [En savoir plus sur le flux de messagerie et le routage](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/mail-flow) du courrier électronique
+Préparez les détails correspondants dont vous aurez besoin pour configurer la façon dont votre courrier électronique est actuellement routé, y compris le nom du connecteur entrant qui route votre courrier électronique. Si vous utilisez Exchange Online Protection, vous n’aurez pas de connecteur.  [En savoir plus sur le flux de messagerie et le routage](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/mail-flow) du courrier électronique
 
 Les scénarios de routage de messagerie pris en charge sont les suivants :
 
