@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: L’Explorateur de contenu vous permet d’afficher des éléments étiquetés en mode natif.
-ms.openlocfilehash: 7977d30881a4229f99f4c5976d4c41377573a6ca
-ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
+ms.openlocfilehash: 9beeab0c0b00ac1ac37c9df53e14a2f3f2914422
+ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48379215"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49701151"
 ---
 # <a name="get-started-with-content-explorer"></a>Prise en main de l’explorateur de contenu
 
@@ -39,6 +39,9 @@ Chaque compte qui accède et utilise la classification de données doit posséde
 - Office 365 (E5)
 - Complément Conformité avancée (E5)
 - Complément Threat Intelligence avancé (E5)
+- Microsoft 365 E5/A5, Protection des informations et gouvernance
+- Conformité Microsoft 365 E5/A5
+
 
 ### <a name="permissions"></a>Autorisations
 
