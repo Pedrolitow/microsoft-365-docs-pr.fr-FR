@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Découvrez les options disponibles pour créer un environnement de partage d’invités sécurisé dans Microsoft 365, offrant un accès invité pour une collaboration améliorée.
-ms.openlocfilehash: 4e2045113a6c98e2b3839a3a2cdd83105be94023
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: c52feeb8e5c85d38dfa1623ecdd7c2ee2a381fbd
+ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558187"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49667704"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Créer un environnement de partage d’invités sécurisé
 
@@ -162,7 +162,7 @@ Vous pouvez réduire votre surface d'attaque et simplifier l'administration en d
 
 Pour les groupes et équipes Microsoft 365, cette opération s’effectue à l’aide d’une stratégie d’accès conditionnel Azure AD. Pour SharePoint, celui-ci est configuré dans le centre d’administration SharePoint. (Vous pouvez également [utiliser des étiquettes de confidentialité pour restreindre l’accès web uniquement aux invités](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).)
 
-Pour limiter l'accès web uniquement aux invités pour les groupes et les équipes
+Pour restreindre l'accès des invités au web uniquement pour les groupes et Microsoft Teams :
 
 1. Accédez à [Stratégies d’accès conditionnel Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade).
 2. Dans le panneau **Accès conditionnel – Stratégies**, cliquez sur **Nouvelle stratégie**.
