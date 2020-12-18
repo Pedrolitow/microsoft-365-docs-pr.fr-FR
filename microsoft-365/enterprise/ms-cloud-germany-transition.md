@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Récapitulatif : comprendre la migration de Microsoft Cloud Allemagne (Microsoft Cloud Deutschland) vers les services Office 365 dans les nouvelles régions de centre de données allemandes.'
-ms.openlocfilehash: 16e57eff5556d31d2d13ab6ce0d284719d63c44c
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: 3587979c61434b77c38758e70903ee7028d70b9e
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688640"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709691"
 ---
 # <a name="migration-from-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Migration de Microsoft Cloud Deutschland vers Office 365 services dans les nouvelles régions de centre de connaissances allemand
 
@@ -35,7 +35,7 @@ En août 2018, Microsoft a annoncé notre intention de livrer la gamme Microsoft
 
 Les nouvelles régions sont conçues pour répondre aux besoins évolutifs des clients allemands avec une plus grande flexibilité, les services Cloud intelligents les plus récents et une connectivité complète à notre réseau Cloud des services Microsoft 365, ainsi qu’à la résidence des données du client en Allemagne.
 
-## <a name="how-to-migrate-to-the-new-german-regions"></a>Procédure de migration vers les nouvelles régions allemandes
+## <a name="how-to-migrate-to-the-new-german-datacenter-regions"></a>Procédure de migration vers les nouvelles régions de centre de l’Allemagne
 
 Les clients de Microsoft Cloud Deutschland existants peuvent désormais migrer leur engagement client Office 365, Dynamics 365 et les clients Power Platform. La première étape consiste à [opter pour une migration dirigée par Microsoft](https://aka.ms/office365germanymoveoptin) vers nos nouvelles régions de centre de données allemandes.
 
@@ -46,10 +46,10 @@ Cet article fournit une vue d’ensemble de l’approche basée sur Microsoft po
 Les services suivants seront migrés dans le cadre de l’approche dirigée par Microsoft :
 
 - Azure Active Directory (Azure AD)
-- Exchange Online
+- Exchange Online
 - Exchange Online Protection
 - SharePoint Online
-- OneDrive Entreprise
+- OneDrive Entreprise
 
 - Skype entreprise Online\*\*
 - Groupes Office 365
@@ -78,9 +78,9 @@ Une semaine avant le début de la migration client, vous recevrez une notificati
 
 La migration va déplacer votre client Azure AD du service d’Office Azure Allemagne vers l’instance de services Office 365 d’Azure AD dans la région de l’UE.
 
-La phase suivante est la migration de vos abonnements et licences utilisateur&#39;s de client à partir de produits spécifiques en Allemagne.
+La phase suivante est la migration de vos abonnements et licences utilisateur&#39;s de client depuis des produits spécifiques en Allemagne vers des produits globaux.
 
-Une fois toutes les étapes terminées, y compris la migration Azure client, votre client est finalisé dans le service Office 365 services et la migration est marquée comme étant terminée. À ce stade, la mise à jour finale du centre de messages vous est fournie. Le client n’est désormais pas une organisation Office 365 complète.
+Une fois toutes les étapes terminées, y compris la migration Azure client, votre client est finalisé dans le service Office 365 services et la migration est marquée comme étant terminée. À ce stade, la mise à jour finale du centre de messages vous est fournie. Le client est désormais une organisation Office 365 complète.
 
 Vous êtes informé de la progression de la migration avec les publications du centre de messages. Les publications se produisent à des échéances spécifiques et fournissent des instructions sur la progression d’une étape ainsi que des informations importantes que les clients peuvent utiliser en fonction des exigences de processus. Les notifications du centre de messages sont fournies aux étapes suivantes :
 
@@ -94,11 +94,11 @@ Vous êtes informé de la progression de la migration avec les publications du c
 - Power BI terminé
 - Le basculement final des services est terminé.
 
-## <a name="moving-to-the-new-german-regions"></a>Transition vers les nouvelles régions allemandes
+## <a name="moving-to-the-new-german-datacenter-regions"></a>Passage aux nouvelles régions de centre de l’Allemagne
 
-Les clients Microsoft Cloud Germany (Microsoft Cloud Deutschland) existants peuvent désormais migrer leur engagement client Office 365, Dynamics 365 et les clients Power Platform. La première étape consiste à [opter pour une migration dirigée par Microsoft](https://aka.ms/office365germanymoveoptin) vers nos nouvelles régions de centre de données allemandes. Lorsque vous renouvelez votre abonnement, vous vous abonnez automatiquement à une migration assistée par Microsoft. Lorsque cela s’est produit, Microsoft communique aux administrateurs clients client les courriers électroniques et le centre de messages du centre d’administration Microsoft 365. Toutefois, si vous préférez démarrer le processus maintenant, vous pouvez vous [inscrire](https://aka.ms/office365germanymoveoptin) directement dans le centre d’administration Microsoft 365 dès aujourd’hui. Les migrations sont censées commencer en début de 2021 et seront effectuées au plus tard le 29 octobre 2021. 
+Les clients Microsoft Cloud Deutschland existants peuvent désormais migrer leur engagement client Office 365, Dynamics 365 et Power Platform Services. La première étape consiste à [opter pour une migration dirigée par Microsoft](https://aka.ms/office365germanymoveoptin) vers nos nouvelles régions de centre de données allemandes. Lorsque vous renouvelez votre abonnement, vous vous abonnez automatiquement à une migration assistée par Microsoft. Lorsque cela s’est produit, Microsoft communique aux administrateurs clients client les courriers électroniques et le centre de messages du centre d’administration Microsoft 365. Toutefois, si vous préférez démarrer le processus maintenant, vous pouvez vous [inscrire](https://aka.ms/office365germanymoveoptin) directement dans le centre d’administration Microsoft 365 dès aujourd’hui. Les migrations sont censées commencer en début de 2021 et seront effectuées au plus tard le 29 octobre 2021. 
 
-Suite à la migration, les données client principales et les abonnements sont transférés vers les nouvelles régions allemandes.
+À la suite de la migration, les données client principales et les abonnements sont déplacés vers les nouvelles régions de centre de données allemand.
 
 ## <a name="how-to-prepare-for-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>Comment préparer la migration vers les services Office 365 dans les nouvelles régions de centre de données allemandes
 
@@ -149,7 +149,7 @@ Les 15 services suivants sont disponibles dans l’offre de service Cloud Deutsc
 14. Office 365 Pro Plus
 15. Outlook Mobile
 
-Nous avons actuellement 29 services dans le cadre des services Office 365 dans les nouvelles régions de centres de données allemands. De nouvelles fonctionnalités et de nouveaux services sont régulièrement disponibles avec les services Office 365 globaux.
+Il y a actuellement 39 services disponibles dans le cadre des services 365 Office dans les nouvelles régions de centre de temps allemand. De nouvelles fonctionnalités et de nouveaux services sont régulièrement disponibles avec les services Office 365 globaux.
 
 1. Exchange Online
 2. Référentiel sécurisé du client pour Exchange Online
@@ -161,7 +161,7 @@ Nous avons actuellement 29 services dans le cadre des services Office 365 dans
 8. Defender pour Office 365
 9. Advanced eDiscovery
 10. Gestion de la sécurité avancée
-11. Gestion des droits relatifs à l’information
+11. Protection des informations pour Office 365 
 12. Gouvernance des données avancée
 13. SharePoint Online
 14. Référentiel sécurisé du client pour SharePoint Online
@@ -173,13 +173,23 @@ Nous avons actuellement 29 services dans le cadre des services Office 365 dans
 20. Appel sur réseau téléphonique commuté
 21. Microsoft Teams
 22. Rapports d’administration/rapports d’utilisation
-23. Word Online, Excel Online, PowerPoint, OneNote et Visio Online
+23. Office pour le web
 24. Planificateur
 25. Sway
 26. Microsoft 365 Apps
 27. Outlook Mobile
 28. Enterprise Mobility + Security (EMS) E3 (Azure AD Premium P1, Intune et le service RMS)
-29. Yammer Online
+29. Yammer Entreprise
+30. Microsoft Forms
+31. Automate d’alimentation pour Office 365
+32. Agents virtuels de puissance pour Office 365
+33. PowerApps pour Office 365
+34. Microsoft Bookings
+35. À faire
+36. Tableau blanc collaboratif
+37. Microsoft StuffHub
+38. Microsoft Kaizala Pro
+39. Listes
 
 ### <a name="when-will-migration-happen"></a>Quand la migration aura-t-elle lieu ?
 
@@ -278,7 +288,7 @@ Si vous avez des questions, vous pouvez nous contacter ou votre partenaire :
 
 [Opter pour une migration](ms-cloud-germany-migration-opt-in.md)
 
-## <a name="more-information"></a>Informations supplémentaires
+## <a name="more-information"></a>Plus d’informations
 
 Mise en route :
 

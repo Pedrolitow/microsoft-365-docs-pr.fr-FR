@@ -19,16 +19,26 @@ search.appverid:
 - MET150
 - MOE150
 description: Détails du score de productivité des réunions-personnes.
-ms.openlocfilehash: b9dfd59643d38531d1eb4ff9fdc24fdc2a54f382
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: 09b0682593c0e5a623e9b17712754c4bea2a6672
+ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561646"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49712542"
 ---
 # <a name="meetings--people-experiences"></a>Réunions – expériences de personnes
 
 Le score de productivité fournit des informations sur la transformation numérique de votre organisation, grâce à son utilisation de Microsoft 365 et aux technologies qui la prennent en charge. Le score de votre organisation reflète les évaluations des personnes et de la technologie et peut être comparé aux tests d’évaluation provenant d’organisations semblables aux vôtres. La catégorie réunions fait partie des mesures des personnes qui rencontrent des personnes. Pour en savoir plus, consultez la [rubrique vue d’ensemble du score de productivité](productivity-score.md) et lisez la [déclaration de confidentialité de Microsoft](https://privacy.microsoft.com/privacystatement).
+
+## <a name="prerequisites"></a>Conditions préalables
+
+Pour commencer à utiliser les réunions, les personnes de votre organisation doivent disposer d’une licence pour :
+
+- Microsoft Teams
+
+Pour plus d’informations, consultez la rubrique [attribuer des licences aux utilisateurs](../manage/assign-licenses-to-users.md).
+
+Une fois que les utilisateurs ont été actifs dans teams au moins une fois au cours des 28 derniers jours, vous verrez les idées.
 
 ## <a name="why-your-organizations-meetings-score-matters"></a>Importance des résultats des réunions de votre organisation
 

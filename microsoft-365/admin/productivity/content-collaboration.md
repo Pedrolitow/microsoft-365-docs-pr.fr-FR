@@ -19,16 +19,28 @@ search.appverid:
 - MET150
 - MOE150
 description: Détails de la collaboration de contenu-score de productivité des personnes.
-ms.openlocfilehash: 2637debe41cd32093c378a4665af6dc5185b0e5e
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: 62486511be7e085401e4a2934ce3742a15729e1f
+ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561658"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49712590"
 ---
 # <a name="content-collaboration--people-experiences"></a>Collaboration de contenu : expériences de personnes
 
 Le score de productivité fournit des informations sur la transformation numérique de votre organisation, grâce à son utilisation de Microsoft 365 et aux technologies qui la prennent en charge. Le score de votre organisation reflète les évaluations des personnes et de la technologie et peut être comparé aux tests d’évaluation provenant d’organisations semblables aux vôtres. La catégorie de collaboration de contenu fait partie des mesures des personnes à mesurer. Pour en savoir plus, consultez la [rubrique vue d’ensemble du score de productivité](productivity-score.md) et lisez la [déclaration de confidentialité de Microsoft](https://privacy.microsoft.com/privacystatement).
+
+## <a name="prerequisites"></a>Conditions préalables
+
+Pour commencer à utiliser le contenu collaboratif, les personnes de votre organisation doivent disposer d’une licence pour :
+
+- OneDrive Entreprise
+- SharePoint
+- Exchange Online
+
+Pour plus d’informations, consultez la rubrique [attribuer des licences aux utilisateurs](../manage/assign-licenses-to-users.md).
+
+ Une fois que les utilisateurs ont été actifs dans les produits ci-dessus au moins une fois au cours des 28 derniers jours, vous commencerez à consulter les informations.
 
 ## <a name="why-your-organization39s-content-collaboration-score-matters"></a>Pourquoi les résultats de la collaboration de contenu de votre organisation&#39;s.
 

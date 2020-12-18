@@ -19,16 +19,28 @@ search.appverid:
 - MET150
 - MOE150
 description: Détails du score de productivité de l’expérience de communication.
-ms.openlocfilehash: de73957ffad27ddac9b5e18cd6da7becd2239a59
-ms.sourcegitcommit: 98146c67a1d99db5510fa130340d3b7be8d81b21
+ms.openlocfilehash: b688063c10749d15fc5b00b629ee18afedba927e
+ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "49585315"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49712578"
 ---
 # <a name="communication--people-experiences"></a>Communication – expériences de personnes
 
 La fonction de score de productivité prend en charge le passage à la transformation numérique avec des informations sur la façon dont votre organisation utilise Microsoft 365 et les expériences technologiques qui la prennent en charge. Le score de votre organisation reflète les évaluations de l’expérience des personnes et technologies et peut être comparé aux benchmarks d’organisations d’une taille semblable à la vôtre. La catégorie communication fait partie des mesures prises par les personnes. Pour en savoir plus, consultez la [rubrique vue d’ensemble du score de productivité](productivity-score.md) et lisez la [déclaration de confidentialité de Microsoft](https://privacy.microsoft.com/privacystatement).
+
+## <a name="prerequisites"></a>Conditions préalables
+
+Pour commencer à utiliser les informations de communication, les personnes de votre organisation doivent disposer d’une licence pour :
+
+- Microsoft Teams
+- Yammer
+- Exchange Online
+
+Pour plus d’informations, consultez la rubrique [attribuer des licences aux utilisateurs](../manage/assign-licenses-to-users.md).
+
+Une fois que les utilisateurs ont été actifs dans les produits ci-dessus au moins une fois au cours des 28 derniers jours, vous commencerez à consulter les informations.
 
 ## <a name="why-your-organizations-communication-score-matters"></a>Importance de la note de communication de votre organisation 
 

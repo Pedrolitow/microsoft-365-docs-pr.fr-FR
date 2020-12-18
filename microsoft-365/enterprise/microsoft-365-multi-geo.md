@@ -13,12 +13,12 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: Dans cet article, découvrez comment développer votre présence Microsoft 365 dans plusieurs régions géographiques avec Microsoft 365 Multigéographie.
-ms.openlocfilehash: cf5f655e2b205001c6c16ed05abc33d68324ff15
-ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
-ms.translationtype: HT
+ms.openlocfilehash: 6d16d222a97f309eafdd79a2b107978ce7b4f242
+ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49580696"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49712496"
 ---
 # <a name="microsoft-365-multi-geo"></a>Microsoft 365 Multi-Geo
 
@@ -50,7 +50,7 @@ Voici les principaux termes utilisés dans la description de Microsoft 365 Multi
 
 ## <a name="licensing"></a>Licence
 
-Microsoft 365 multi-Geo est disponible sous la forme d’un composant additionnel aux offres d’abonnement Microsoft 365 suivantes pour les clients EA ayant au moins 250 places de Microsoft 365 au sein de leur client, et 5% au minimum de ces sièges utilisant plusieurs Geo. Pour plus d’informations, contactez l’équipe de votre compte Microsoft.
+Microsoft 365 multi-géo est disponible sous la forme d’un module complémentaire aux plans d’abonnement Microsoft 365 suivants pour les clients accord entreprise avec un minimum de 250 sièges Microsoft 365 dans leur client, et 5% au minimum de ces sièges utilisant multi-géo. Les licences d’abonnement utilisateur doivent être sur la même entente entreprise que les licences de services multigéographiques. Pour plus d’informations, contactez l’équipe de votre compte Microsoft.
 
 - Microsoft 365 F1, F3, E3 ou E5
 - Office 365 F3, E1, E3 ou E5
@@ -70,7 +70,7 @@ Pour commencer à utiliser la fonctionnalité multigéographique, procédez comm
 
 1. Travailler avec votre équipe de compte pour ajouter le plan de services des _fonctionnalités multigéographiques dans Microsoft 365_. Ils vous guident pour ajouter le nombre de licences nécessaires. La fonctionnalité Multi-Geo est actuellement disponible pour les clients Contrat Entreprise avec au moins 250 abonnements Microsoft 365.
 
-   Avant que vous puissiez commencer à utiliser Microsoft 365 Multi-Geo, Microsoft doit configurer votre client Exchange Online afin qu’il bénéficie d’une prise en charge multigéographique. Ce processus de configuration est déclenché lorsque vous commandez le plan de services des *fonctionnalités multigéographiques de Microsoft 365* et que les licences apparaissent dans votre client. Vous recevrez des notifications spécifiques à la charge de travail dans le [Centre de messages de Microsoft 365](https://support.office.com/article/38FB3333-BFCC-4340-A37B-DEDA509C2093) une fois que votre client a terminé le processus de configuration pour chaque charge de travail. Vous pouvez ensuite commencer à configurer et à utiliser vos fonctionnalités Microsoft 365 Multigéographie. Le temps nécessaire à la configuration d’un client pour la prise en charge multigéographique varie d’un client à l’autre, mais la plupart des clients finissent dans le mois suivant la réception des licences de fonctionnalités. Les clients plus grands ou plus complexes peuvent avoir besoin de davantage de temps pour terminer le processus de configuration. Si vous avez besoin de plus d’informations sur votre client, contactez l’équipe en charge de votre compte.
+   Avant que vous puissiez commencer à utiliser Microsoft 365 Multi-Geo, Microsoft doit configurer votre client Exchange Online afin qu’il bénéficie d’une prise en charge multigéographique. Ce processus de configuration est déclenché lorsque vous commandez le plan de services des *fonctionnalités multigéographiques de Microsoft 365* et que les licences apparaissent dans votre client. Vous recevrez des notifications spécifiques à la charge de travail dans le [Centre de messages Microsoft 365](https://support.office.com/article/38FB3333-BFCC-4340-A37B-DEDA509C2093) une fois que votre client aura terminé le processus de configuration pour chaque charge de travail, et vous pouvez commencer à configurer et à utiliser vos fonctionnalités multigéographiques Microsoft 365. Le temps nécessaire à la configuration d’un client pour la prise en charge multigéographique varie d’un client à l’autre, mais la plupart des clients finissent dans le mois suivant la réception des licences de fonctionnalités. Les clients plus grands ou plus complexes peuvent avoir besoin de davantage de temps pour terminer le processus de configuration. Si vous avez besoin de plus d’informations sur votre client, contactez l’équipe en charge de votre compte.
 
 2. Lisez [Planifier votre environnement multigéographique](plan-for-multi-geo.md).
 

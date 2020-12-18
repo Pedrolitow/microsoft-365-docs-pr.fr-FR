@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur les stratégies anti-hameçonnage disponibles dans Exchange Online Protection (EOP) et Microsoft Defender pour Office 365.
-ms.openlocfilehash: 43736fbd42949a084804825ec7f12d19b7fd1818
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 7660516e60c77a7f31f711f78b6fd28d3ad179fd
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683048"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709703"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Stratégies anti-hameçonnage dans Microsoft 365
 
@@ -99,6 +99,8 @@ Les paramètres d’usurpation suivants sont disponibles dans les stratégies de
   > - La protection contre l’usurpation d’identité est activée par défaut dans la stratégie anti-hameçonnage par défaut et dans toute nouvelle stratégie anti-hameçonnage personnalisée que vous créez.
   >
   > - Vous n’avez pas besoin de désactiver la protection contre l’usurpation d’identité si votre enregistrement MX ne pointe pas vers Microsoft 365 ; vous activez le filtrage amélioré pour les connecteurs à la place. Pour obtenir des instructions, voir [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+  >
+  > - La désactivation de la protection contre l’usurpation d’identité désactive uniquement la protection contre l’usurpation implicite des vérifications [d’authentification composite](email-validation-and-authentication.md#composite-authentication) . Si l’expéditeur échoue explicitement [DMARC](use-dmarc-to-validate-email.md) vérifie si la stratégie est configurée pour être mise en quarantaine ou rejetée, le message est toujours mis en quarantaine ou rejeté.
 
   Pour les messages provenant d’expéditeurs usurpés bloqués, vous pouvez également spécifier l’action à effectuer sur les messages :
 
