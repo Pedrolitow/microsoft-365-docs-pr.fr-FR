@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: Avec Office 365, votre contenu est chiffré au repos et en transit avec le chiffrement, les protocoles et les technologies les plus puissants disponibles. Obtenez une vue d’ensemble du chiffrement dans Office 365.
-ms.openlocfilehash: 0cd440549cd038ec9b5f69233e7faa18d9bcee1e
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: 1aee9d401891e807f572c1eed2bc22a54f39e534
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663009"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709567"
 ---
 # <a name="encryption"></a>Chiffrement
 
@@ -89,6 +89,6 @@ Pour en savoir plus, consultez les ressources suivantes :
 
 [Planifier les fonctionnalités de protection des informations et de sécurité de Microsoft 365](plan-for-security-and-compliance.md)
 
-[10 façons de sécuriser les offres Microsoft 365 pour les entreprises](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data?view=o365-worldwide)
+[10 façons de sécuriser les offres Microsoft 365 pour les entreprises](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data)
 
 [Flux de lecture et de chiffrement de niveau vidéo Microsoft Stream](https://docs.microsoft.com/stream/network-overview#video-level-encryption-and-playback-flow)

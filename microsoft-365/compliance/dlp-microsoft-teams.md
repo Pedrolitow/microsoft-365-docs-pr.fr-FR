@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Vous pouvez désormais appliquer des stratégies DLP aux conversations et canaux Microsoft Teams. Lisez cet article pour en savoir plus sur son fonctionnement.
-ms.openlocfilehash: 4903056a9a7e7ae74a8ada52bd491f2b8efe771e
-ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
+ms.openlocfilehash: 3d55c447b2e808af2ac35f04b67a002304e3e9eb
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49604358"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709536"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Protection contre la perte de données et Microsoft teams
 
@@ -28,6 +28,9 @@ ms.locfileid: "49604358"
 > Les fonctionnalités de protection contre la perte de données ont été récemment ajoutées à la conversation Microsoft teams et aux messages de canal pour les utilisateurs titulaires d’une licence pour Office 365 E5/a5, Microsoft 365 E5/a5, Microsoft 365 information protection et gouvernance ou Office 365 Advanced Compliance. Office 365 et Microsoft 365 E3 incluent la protection DLP pour SharePoint Online, OneDrive et Exchange Online. Cela inclut également les fichiers partagés par teams car teams utilise SharePoint Online et OneDrive pour partager des fichiers.
 La prise en charge de la protection DLP dans Team Chat nécessite E5.
 Pour en savoir plus sur les conditions d’octroi de licences, consultez [Conseils sur la gestion des licences des services de niveau client de Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
+
+> [!IMPORTANT]
+> DLP pour teams est uniquement pris en charge lorsque l’utilisateur dispose d’une boîte aux lettres dans Exchange Online.
 
 ## <a name="overview-of-dlp-for-microsoft-teams"></a>Vue d’ensemble de DLP pour Microsoft teams
 
@@ -67,7 +70,7 @@ Pour effectuer cette tâche, vous devez disposer d’un rôle disposant d’auto
 
 1. Accédez au centre de sécurité & conformité ( [https://protection.office.com](https://protection.office.com) ) et connectez-vous.
 
-2. Choisissez stratégie de **protection contre la perte de données**  >  **Policy**.
+2. Choisissez stratégie de **protection contre la perte de données**  >  .
 
 3. Sélectionnez une stratégie, puis en regard de **paramètres de stratégie**, sélectionnez **modifier**.
 
@@ -87,7 +90,7 @@ Pour effectuer cette tâche, vous devez disposer d’un rôle disposant d’auto
 
 1. Accédez au centre de sécurité & conformité ( [https://protection.office.com](https://protection.office.com) ) et connectez-vous.
 
-2. Choisissez stratégie de **protection contre la perte de données**  >  **Policy**.
+2. Choisissez stratégie de **protection contre la perte de données**  >  .
 
 3. Sélectionnez une stratégie, puis examinez les valeurs figurant dans la zone **emplacements**. Si vous voyez la **conversation teams et les messages de canal**, tous sont définis. Si ce n’est pas le cas, cliquez sur **modifier**.<br/>![Emplacements pour la stratégie existante](../media/dlp-teams-editexistingpolicy.png)<br/>
 
@@ -105,7 +108,7 @@ Pour effectuer cette tâche, vous devez disposer d’un rôle disposant d’auto
 
 1. Accédez au centre de sécurité & conformité ( [https://protection.office.com](https://protection.office.com) ) et connectez-vous.
 
-2. Choisir une stratégie de **protection contre la perte**  >  **Policy**  >  **de données + créer une stratégie**.
+2. Choisir une stratégie de **protection contre la perte**  >    >  **de données + créer une stratégie**.
 
 3. Choisissez un [modèle](data-loss-prevention-policies.md#dlp-policy-templates), puis cliquez sur **suivant**.<br/>Dans notre exemple, nous avons choisi le modèle de données des informations d’identification personnelle aux États-Unis.<br/>![Modèle de confidentialité pour la stratégie DLP](../media/dlp-teams-createnewpolicy-template.png)<br/>
 

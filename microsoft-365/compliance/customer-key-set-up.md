@@ -1,5 +1,5 @@
 ---
-title: Configurer la clé client
+title: Configuration de la clé client au niveau de l’application
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -13,14 +13,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment configurer la clé client pour les fichiers Microsoft 365 pour Exchange Online, Skype entreprise, SharePoint Online, OneDrive entreprise et Teams.
-ms.openlocfilehash: fed181649696c7f5a92850943e1dd980b42aa819
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: b6ead2f92475dcfe230fc13d8ab1137365238755
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688421"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709516"
 ---
-# <a name="set-up-customer-key"></a>Configurer la clé client
+# <a name="set-up-customer-key-at-the-application-level"></a>Configuration de la clé client au niveau de l’application
 
 Avec la clé client, vous contrôlez les clés de chiffrement de votre organisation, puis vous configurez Microsoft 365 afin de les utiliser pour chiffrer vos données au repos dans les centres de données de Microsoft. En d’autres termes, la clé client permet aux clients d’ajouter une couche de chiffrement qui leur appartient, avec leurs clés. Les données au repos incluent les données issues d’Exchange Online et de Skype Entreprise qui sont enregistrées dans des boîtes aux lettres et des fichiers stockés dans SharePoint Online et OneDrive Entreprise.
 
@@ -98,9 +98,10 @@ Effectuez ces tâches dans le coffre-fort des clés Azure. Vous devez effectuer 
 La clé client nécessite deux abonnements Azure. Pour une meilleure pratique, Microsoft vous recommande de créer de nouveaux abonnements Azure à utiliser avec la clé client. Les clés Azure Key Vault peuvent uniquement être autorisées pour les applications dans le même client Azure Active Directory (Microsoft Azure Active Directory), vous devez créer les nouveaux abonnements à l’aide du même client Azure AD que celui utilisé avec votre organisation où le DEPs sera affecté. Par exemple, à l’aide de votre compte professionnel ou scolaire disposant de privilèges d’administrateur général dans votre organisation. Pour obtenir la procédure détaillée, consultez la rubrique [Inscrivez-vous à Azure en tant qu’organisation](https://azure.microsoft.com/documentation/articles/sign-up-organization/).
   
 > [!IMPORTANT]
-> La clé client nécessite deux clés pour chaque stratégie de chiffrement de données (DEP). Pour ce faire, vous devez créer deux abonnements Azure. En guise de meilleure pratique, Microsoft recommande que les membres distincts de votre organisation configurent une clé dans chaque abonnement. En outre, ces abonnements Azure ne doivent être utilisés que pour administrer les clés de chiffrement pour Office 365. Cela protège votre organisation si l’un de vos opérateurs supprime accidentellement, intentionnellement ou de manière malveillante ou non des clés dont il est responsable.
-> 
-> Nous vous recommandons de configurer de nouveaux abonnements Azure uniquement utilisés pour gérer les ressources Azure Key Vault à utiliser avec la clé client. Il n’existe pas de limite pratique au nombre d’abonnements Azure que vous pouvez créer pour votre organisation. Le suivi de ces meilleures pratiques réduira l’impact de l’erreur humaine tout en aidant à gérer les ressources utilisées par la clé client.
+> La clé client nécessite deux clés pour chaque stratégie de chiffrement de données (DEP). Pour ce faire, vous devez créer deux abonnements Azure. En guise de meilleure pratique, Microsoft recommande que les membres distincts de votre organisation configurent une clé dans chaque abonnement. Vous devez uniquement utiliser ces abonnements Azure pour administrer les clés de chiffrement pour Office 365. Cela protège votre organisation si l’un de vos opérateurs supprime accidentellement, intentionnellement ou de manière malveillante ou non des clés dont il est responsable.
+>
+
+Il n’existe pas de limite pratique au nombre d’abonnements Azure que vous pouvez créer pour votre organisation. Le suivi de ces meilleures pratiques réduira l’impact de l’erreur humaine tout en aidant à gérer les ressources utilisées par la clé client.
   
 ### <a name="submit-a-request-to-activate-customer-key-for-office-365"></a>Soumettre une demande d’activation de la clé client pour Office 365
 
@@ -279,12 +280,12 @@ Où :
   > [!TIP]
   > Clés de nom à l’aide d’une convention d’affectation de noms similaire à celle décrite ci-dessus pour les coffres clés. De cette manière, dans les outils qui affichent uniquement le nom de la clé, la chaîne est auto-descriptive.
   
-- Si vous avez l’intention de protéger la clé avec un HSM, vérifiez que vous spécifiez **HSM** comme valeur du paramètre _destination_ , sinon, spécifiez **Software**.
+Si vous avez l’intention de protéger la clé avec un HSM, vérifiez que vous spécifiez **HSM** comme valeur du paramètre _destination_ , sinon, spécifiez **Software**.
 
 Par exemple :
   
 ```powershell
-Add-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-NA-VaultA1-Key001 -Destination Software -KeyOps wrapKey,unwrapKey
+Add-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-NA-VaultA1-Key001 -Destination HSM -KeyOps wrapKey,unwrapKey
 ```
 
 Pour importer directement une clé dans votre coffre-fort de clés, vous devez disposer d’un module de sécurité matérielle nCipher nShield.
@@ -307,7 +308,7 @@ Pour vérifier le niveau de récupération d’une clé, dans Azure PowerShell, 
 (Get-AzKeyVaultKey -VaultName <vault name> -Name <key name>).Attributes
 ```
 
-Si la propriété de _niveau de récupération_ renvoie une valeur autre que **récupérable + ProtectedSubscription**, vous devez consulter cette rubrique et vous assurer que vous avez suivi toutes les étapes pour placer l’abonnement dans la liste ne pas annuler et que la suppression logicielle est activée sur chaque coffre-fort de clés.
+Si la propriété de _niveau de récupération_ renvoie une valeur autre que **récupérable + ProtectedSubscription**, vous devez passer en revue cet article et vous assurer que vous avez suivi toutes les étapes pour placer l’abonnement dans la liste ne pas annuler et que la suppression logicielle est activée sur chaque coffre-fort de vos clés.
   
 ### <a name="back-up-azure-key-vault"></a>Sauvegarder le coffre de clés Azure
 
@@ -480,7 +481,7 @@ Pensez! Lorsque vous créez une DEP, vous spécifiez deux clés qui résident da
   
 Pour créer une DEP, vous devez vous connecter à distance à SharePoint Online à l’aide de Windows PowerShell.
   
-1. Sur votre ordinateur local, à l’aide d’un compte professionnel ou scolaire disposant d’autorisations d’administrateur général dans votre organisation, [Connectez-vous à SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps).
+1. Sur votre ordinateur local, à l’aide d’un compte professionnel ou scolaire disposant d’autorisations d’administrateur général dans votre organisation, [Connectez-vous à SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps&preserve-view=true).
 
 2. Dans Microsoft SharePoint Online Management Shell, exécutez l’applet de commande Register-SPODataEncryptionPolicy comme suit :
 
@@ -493,7 +494,7 @@ Pour créer une DEP, vous devez vous connecter à distance à SharePoint Online 
 Register-SPODataEncryptionPolicy -PrimaryKeyVaultName 'stageRG3vault' -PrimaryKeyName 'SPKey3' -PrimaryKeyVersion 'f635a23bd4a44b9996ff6aadd88d42ba' -SecondaryKeyVaultName 'stageRG5vault' -SecondaryKeyName 'SPKey5' -SecondaryKeyVersion '2b3e8f1d754f438dacdec1f0945f251a’
 ```
 
-   Lorsque vous enregistrez la DEP, le chiffrement commence sur les données de la région géographique. Cela peut prendre un certain temps. Pour plus d’informations sur l’utilisation de ce paramètre, consultez la rubrique [Register-SPODataEncryptionPolicy](https://docs.microsoft.com/powershell/module/sharepoint-online/register-spodataencryptionpolicy?view=sharepoint-ps).
+   Lorsque vous enregistrez la DEP, le chiffrement commence sur les données de la région géographique. Cela peut prendre un certain temps. Pour plus d’informations sur l’utilisation de ce paramètre, consultez la rubrique [Register-SPODataEncryptionPolicy](https://docs.microsoft.com/powershell/module/sharepoint-online/register-spodataencryptionpolicy?view=sharepoint-ps&preserve-view=true).
 
 ### <a name="validate-file-encryption"></a>Valider le chiffrement de fichiers
 

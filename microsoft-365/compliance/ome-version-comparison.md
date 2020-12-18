@@ -17,27 +17,23 @@ search.appverid:
 - MET150
 description: Cet article explique les différences entre les différentes versions d’Office 365 le chiffrement de messages.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a52d0c0164dfddb9f678bffa088760a271bc28e3
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: f8052272cfa4951cae132f0f66b0d9f84e05b168
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754128"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709661"
 ---
 # <a name="compare-versions-of-ome"></a>Comparez les versions de OME
 
 Cet article compare le chiffrement de messages Office 365 hérité (OME) aux nouvelles fonctionnalités OME et au chiffrement de messages avancé Office 365. Les nouvelles fonctionnalités sont une fusion et une version plus récente de OME et de la gestion des droits relatifs à l’information (IRM). Les caractéristiques uniques du déploiement dans GCC High sont également décrites. Les deux peuvent coexister dans votre organisation. Pour plus d’informations sur le fonctionnement des nouvelles fonctionnalités, consultez la rubrique [Office 365 message Encryption (OME)](ome.md).
 
-||
-|:-----|
-|Cet article fait partie d’une série d’articles plus large sur le chiffrement de messages Office 365. Cet article est destiné aux administrateurs et ITPros. Si vous recherchez simplement des informations sur l’envoi ou la réception d’un message chiffré, consultez la liste des articles dans [Office 365 message Encryption (OME)](ome.md) et recherchez l’article qui répond le mieux à vos besoins. |
-||
+Cet article fait partie d’une série d’articles plus large sur le chiffrement de messages Office 365. Cet article est destiné aux administrateurs et ITPros. Si vous recherchez simplement des informations sur l’envoi ou la réception d’un message chiffré, consultez la liste des articles dans [Office 365 message Encryption (OME)](ome.md) et recherchez l’article qui répond le mieux à vos besoins.
 
 ## <a name="side-by-side-comparison-of-features-and-capabilities"></a>Comparaison côte à côte des fonctionnalités et des fonctionnalités
 
-|                                   |Anciennes fonctionnalités       |                   |Nouvelles fonctionnalités              |
+|           **Situation**           | **Legacy OME**    | **IRM**           | **Nouvelles fonctionnalités OME** |
 |-----------------------------------|-------------------|-------------------|--------------------------|
-|**Fonctionnalité**                     | **Legacy OME**    | **IRM**           | **Nouvelles fonctionnalités OME** |
 |*Envoi d’un message chiffré*        |À l’aide des règles de flux de messagerie Exchange|L’utilisateur final a initié à partir d’Outlook Desktop ou Outlook sur le Web ; ou via les règles de flux de messagerie Exchange|L’utilisateur final a initié à partir d’Outlook Desktop, Outlook pour Mac ou Outlook sur le Web ; via les règles de flux de messagerie Exchange (également appelées règles de transport) et la protection contre la perte de données (DLP)|
 |*Modèle de gestion des droits*       |   S/O      |Option ne pas transférer et modèles personnalisés|Option ne pas transférer, option Encrypt-Only et modèles personnalisés|
 |*Type de destinataire*                   |Destinataires internes et externes|Destinataires internes uniquement         |Destinataires internes et externes|

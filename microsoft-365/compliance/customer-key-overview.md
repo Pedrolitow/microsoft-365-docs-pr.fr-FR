@@ -1,5 +1,5 @@
 ---
-title: Chiffrement de service avec clé client
+title: Chiffrement du service avec la clé client
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -16,20 +16,20 @@ ms.collection:
 - m365initiative-compliance
 ms.custom: seo-marvel-apr2020
 description: Dans cet article, vous allez découvrir le fonctionnement du chiffrement de service avec la clé client dans Microsoft 365.
-ms.openlocfilehash: fd00b910a9a33fb792c41c7f64f9721e2b5bd20f
-ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
+ms.openlocfilehash: 0008d145db81d5d6c4eb9ab89ca194b7e426d2e4
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48408982"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709526"
 ---
-# <a name="service-encryption-with-customer-key"></a>Chiffrement de service avec clé client
+# <a name="service-encryption-with-customer-key"></a>Chiffrement du service avec la clé client
 
-Microsoft 365 offre une planification, un chiffrement au niveau du volume activé via BitLocker et le gestionnaire de clés distribuées (DKM). Microsoft 365 offre une couche de chiffrement supplémentaire au niveau de l’application pour votre contenu. Ce contenu inclut des données provenant de fichiers Exchange Online, Skype entreprise, SharePoint Online, OneDrive entreprise et Teams. Cette couche de chiffrement ajoutée est appelée chiffrement de service.
+Microsoft 365 offre une planification, un chiffrement au niveau du volume activé via BitLocker et le gestionnaire de clés distribuées (DKM). Microsoft 365 offre un niveau de chiffrement supplémentaire au niveau de la couche d’application pour votre contenu. Ce contenu inclut des données provenant de fichiers Exchange Online, Skype entreprise, SharePoint Online, OneDrive entreprise et Teams. Cette couche de chiffrement ajoutée est appelée chiffrement de service.
 
 ## <a name="how-service-encryption-bitlocker-and-customer-key-work-together"></a>Fonctionnement conjoint du chiffrement de service, de BitLocker et de la clé client
 
-Le chiffrement de service garantit que le contenu au repos est chiffré au niveau de la couche d’application. **Vos données sont toujours chiffrées au repos dans le service Microsoft 365 avec BitLocker et DKM**. Pour plus d’informations, consultez les informations relatives à la sécurité, à la confidentialité et à la conformité, ainsi qu’à la [manière dont Exchange Online sécurise vos secrets de messagerie](exchange-online-secures-email-secrets.md). La clé client offre une protection supplémentaire contre l’affichage des données par des systèmes ou du personnel non autorisés et complète le chiffrement de disque BitLocker dans les centres de données Microsoft. Le chiffrement de service n’est pas destiné à empêcher le personnel Microsoft d’accéder aux données client. L’objectif principal est d’aider les clients à respecter les obligations réglementaires ou de conformité pour le contrôle des clés racines. Les clients autorisent explicitement les services O365 à utiliser leurs clés de chiffrement pour fournir des services Cloud à valeur ajoutée, tels que eDiscovery, anti-programme malveillant, le blocage du courrier indésirable, l’indexation de la recherche, etc.
+Le chiffrement de service garantit que le contenu sur REST est chiffré au niveau de la couche de service. **Vos données sont toujours chiffrées au repos dans le service Microsoft 365 avec BitLocker et DKM**. Pour plus d’informations, consultez les informations relatives à la sécurité, à la confidentialité et à la conformité, ainsi qu’à la [manière dont Exchange Online sécurise vos secrets de messagerie](exchange-online-secures-email-secrets.md). La clé client offre une protection supplémentaire contre l’affichage des données par des systèmes ou du personnel non autorisés et complète le chiffrement de disque BitLocker dans les centres de données Microsoft. Le chiffrement de service n’est pas destiné à empêcher le personnel Microsoft d’accéder aux données client. L’objectif principal est d’aider les clients à respecter les obligations réglementaires ou de conformité pour le contrôle des clés racines. Les clients autorisent explicitement les services O365 à utiliser leurs clés de chiffrement pour fournir des services Cloud à valeur ajoutée, tels que eDiscovery, anti-programme malveillant, le blocage du courrier indésirable, l’indexation de la recherche, etc.
 
 La clé client est basée sur le chiffrement de service et vous permet de fournir et de contrôler des clés de chiffrement. Microsoft 365 utilise ensuite ces clés pour chiffrer vos données au repos, comme décrit dans les [services en ligne (OST)](https://www.microsoft.com/licensing/product-licensing/products.aspx). La clé client vous permet de respecter les obligations de conformité, car vous contrôlez les clés de chiffrement utilisées par Microsoft 365 pour chiffrer et déchiffrer les données.
   

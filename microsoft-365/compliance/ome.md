@@ -19,12 +19,12 @@ ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment envoyer et recevoir des messages électroniques chiffrés entre des personnes à l’intérieur et à l’extérieur de votre organisation.
-ms.openlocfilehash: 542b540bb06998c1b90ef74485a4096ebc9ee0dc
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: f601618c3ad44361794720852b391949901122f2
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45429930"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709620"
 ---
 # <a name="message-encryption"></a>Chiffrement des messages
 
@@ -82,11 +82,10 @@ Avec le chiffrement de messages Office 365, les utilisateurs peuvent envoyer des
 
 Les destinataires des messages chiffrés qui se trouvent dans les organisations pourront lire ces messages de façon transparente dans n’importe quelle version d’Outlook, notamment Outlook pour PC, Outlook pour Mac, Outlook sur le Web, Outlook pour iOS et Outlook pour Android. Les utilisateurs qui reçoivent des messages chiffrés sur d’autres clients de messagerie peuvent afficher les messages dans le portail OME.
 
-Pour obtenir des conseils détaillés sur la façon d’envoyer et d’afficher des messages chiffrés, consultez les articles suivants :
+Pour obtenir des instructions détaillées sur la façon d’envoyer et d’afficher des messages chiffrés, consultez les articles suivants.
 
-|||
-|:-----|:-----|
 |Lisez cet article...|Si vous êtes...|
+|:-----|:-----|
 |[En savoir plus sur les messages protégés dans Office 365](https://support.office.com/article/2baf3ac7-12db-40a4-8af7-1852204b4b67.aspx)|Utilisateur final qui souhaite en savoir plus sur le fonctionnement des messages chiffrés et sur les options disponibles.|
 |[Comment ouvrir un message protégé ?](https://support.office.com/article/1157a286-8ecc-4b1e-ac43-2a608fbf3098.aspx)|Utilisateur final souhaitant lire un message protégé qui vous a été envoyé. Cet article contient des informations sur la lecture des messages dans plusieurs versions d’Outlook et de différents comptes de messagerie, y compris les comptes en dehors de Microsoft 365 tels que Gmail et Yahoo ! compte.|
 |[Envoyer, afficher et répondre à des messages chiffrés dans Outlook](https://support.microsoft.com/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)|Un utilisateur final qui souhaite envoyer, afficher ou répondre à un message chiffré à partir d’Outlook. Même si vous n’êtes pas membre d’une organisation, vous recevez toujours une notification de messages chiffrés qui vous sont envoyés dans Outlook. Utilisez cet article pour obtenir des instructions sur la manière d’afficher et de répondre aux messages chiffrés envoyés à partir d’Office 365.|
