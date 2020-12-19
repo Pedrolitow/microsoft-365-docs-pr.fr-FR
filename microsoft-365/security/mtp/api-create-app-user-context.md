@@ -1,6 +1,6 @@
 ---
-title: Accéder aux API Microsoft 365 Defender à l’aide de pour le compte de l’utilisateur
-description: Découvrez comment accéder aux API Microsoft 365 Defender à l’aide de pour le compte de l’utilisateur
+title: Créer une application pour accéder aux API Microsoft 365 Defender au nom d’un utilisateur
+description: Découvrez comment accéder aux API Microsoft 365 Defender au nom d’un utilisateur.
 keywords: accès, de la part de l’utilisateur, de l’API, de l’application, de l’utilisateur, du jeton d’accès, du jeton
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -19,112 +19,142 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: a72bc7648045e5cc37a1d899f9e15237ce29ed37
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: f1c0caea9ff7810f79026c789241a4f250ec5303
+ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847355"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719415"
 ---
-# <a name="access-microsoft-365-defender-apis-on-behalf-of-user"></a>Accéder aux API Microsoft 365 Defender pour le compte de l’utilisateur
+# <a name="create-an-app-to-access-microsoft-365-defender-apis-on-behalf-of-a-user"></a>Créer une application pour accéder aux API Microsoft 365 Defender au nom d’un utilisateur
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 **S’applique à :**
-- Microsoft 365 Defender
 
->[!IMPORTANT] 
->Certaines informations se rapportent à des produits précommercialisés susceptibles d’être modifiés de manière substantielle avant leur publication commerciale. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+- Microsoft 365 Defender
 
+> [!IMPORTANT]
+> Certaines informations se rapportent à des produits précommercialisés susceptibles d’être modifiés de manière substantielle avant leur publication commerciale. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-Cette page explique comment créer une application pour accéder par programme à Microsoft 365 Defender au nom d’un utilisateur.
+Cette page explique comment créer une application pour accéder par programme à Microsoft 365 Defender au nom d’un utilisateur unique.
 
-Si vous avez besoin d’un accès par programme à Microsoft 365 Defender sans utilisateur, reportez-vous à la rubrique [créer une application pour accéder à microsoft 365 Defender sans utilisateur](api-create-app-web.md).
+Si vous avez besoin d’un accès par programme à Microsoft 365 Defender sans utilisateur défini (par exemple, si vous écrivez une application ou un démon en arrière-plan), consultez la rubrique [créer une application pour accéder à Microsoft 365 Defender sans utilisateur](api-create-app-web.md). Si vous devez fournir un accès à plusieurs clients (par exemple, si vous utilisez une grande organisation ou un groupe de clients), voir [créer une application avec un accès partenaire aux API Microsoft 365 Defender](api-partner-access.md). Si vous n’êtes pas certain du type d’accès dont vous avez besoin, consultez la rubrique [prise en main](api-access.md).
 
-Si vous n’êtes pas certain de l’accès dont vous avez besoin, consultez l' [accès aux API Microsoft 365 Defender](api-access.md).
+Microsoft 365 Defender expose une grande partie de ses données et actions via un ensemble d’API de programmation. Ces API vous aident à automatiser les flux de travail et à utiliser les fonctionnalités de Microsoft 365 Defender. Cet accès à l’API nécessite l’authentification OAuth 2.0. Pour plus d’informations, reportez-vous au [flux de code d’autorisation OAuth 2,0](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
-Microsoft 365 Defender expose une grande partie de ses données et actions via un ensemble d’API de programmation. Ces API vous permettront d’automatiser les flux de travail et d’innover en fonction des fonctionnalités de Microsoft 365 Defender. L’accès à l’API nécessite l’authentification OAuth 2.0. Pour plus d’informations, reportez-vous au [flux de code d’autorisation OAuth 2,0](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+En règle générale, vous devez effectuer les étapes suivantes pour utiliser ces API :
 
-En règle générale, vous devez effectuer les étapes suivantes pour utiliser les API :
-- Créer une application AAD
-- Obtenir un jeton d’accès à l’aide de cette application
-- Utiliser le jeton pour accéder à l’API Microsoft 365 Defender
+- Créez une application Azure Active Directory (Azure AD).
+- Obtenir un jeton d’accès à l’aide de cette application.
+- Utilisez le jeton pour accéder à l’API Microsoft 365 Defender.
 
-Cette page explique comment créer une application AAD, obtenir un jeton d’accès à Microsoft 365 Defender et valider le jeton.
+Cet article explique comment :
 
->[!NOTE]
-> Lors de l’accès à l’API Microsoft 365 Defender au nom d’un utilisateur, vous aurez besoin de l’autorisation d’application et de l’autorisation utilisateur appropriées.
+- Créer une application Azure AD
+- Obtenir un jeton d’accès à Microsoft 365 Defender
+- Valider le jeton
 
+> [!NOTE]
+> Lors de l’accès à l’API Microsoft 365 Defender au nom d’un utilisateur, vous devez disposer des autorisations d’application et des autorisations utilisateur correctes.
 
->[!TIP]
+> [!TIP]
 > Si vous disposez de l’autorisation pour effectuer une action dans le portail, vous disposez de l’autorisation pour effectuer l’action dans l’API.
 
 ## <a name="create-an-app"></a>Créer une application
 
-1. Connectez-vous à [Azure](https://portal.azure.com) avec un utilisateur disposant du rôle **administrateur général** .
+1. Connectez-vous à [Azure](https://portal.azure.com) en tant qu’utilisateur doté du rôle d' **administrateur général** .
 
-2. Accédez à **Azure Active Directory**  >  **app Registrations**  >  **New Registration**. 
+2. Accédez à **Azure Active Directory**  >  **app Registrations**  >  **New Registration**.
 
    ![Image de Microsoft Azure et navigation de l’application](../../media/atp-azure-new-app2.png)
 
-3. Dans l’inscription de, entrez les informations suivantes, puis cliquez sur **Enregistrer**.
+3. Dans le formulaire, choisissez un nom pour votre application et entrez les informations suivantes pour l’URI de redirection, puis sélectionnez **Enregistrer**.
 
    ![Image de la fenêtre créer une application](../../media/nativeapp-create2.PNG)
 
-   - **Nom :** Nom de votre application
    - **Type d’application :** Client public
    - **URI de redirection :**https://portal.azure.com
 
-4. Pour permettre à votre application d’accéder à Microsoft 365 Defender et de lui attribuer des autorisations, dans la page de votre application, sélectionnez autorisations de l' **API**  >  **Ajouter** une  >  **API mon organisation utilise** >, tapez **Microsoft 365 Defender** , puis sélectionnez **Microsoft 365 Defender**.
+4. Sur la page de votre application, sélectionnez **autorisations d’API**  >  **Ajouter une**  >  **API mon organisation utilise** des >, tapez **Microsoft Threat Protection**, puis sélectionnez **Microsoft Threat Protection**. Votre application peut maintenant accéder à Microsoft 365 Defender.
 
-    >[!NOTE]
-    > Microsoft 365 Defender n’apparaît pas dans la liste d’origine. Vous devez commencer à écrire son nom dans la zone de texte pour l’afficher.
+   > [!TIP]
+   > *Microsoft Threat Protection* est un ancien nom pour Microsoft 365 Defender et n’apparaît pas dans la liste d’origine. Vous devez commencer à écrire son nom dans la zone de texte pour l’afficher.
 
-      ![Image de l’accès à l’API et de la sélection de l’API](../../media/apis-in-my-org-tab.PNG)
+   ![Image de la sélection des autorisations de l’API](../../media/apis-in-my-org-tab.PNG)
 
-    - Sélectionnez **autorisations déléguées** > choisissez les autorisations appropriées pour votre scénario, par exemple, **incident. Read** , puis sélectionnez **Ajouter des autorisations**.
+   - Sélectionnez **autorisations déléguées**. Choisissez les autorisations appropriées pour votre scénario (par exemple, **incident. Read**), puis sélectionnez **Ajouter des autorisations**.
 
-      ![Image de l’accès à l’API et de la sélection de l’API](../../media/request-api-permissions-delegated.PNG)
+   ![Image de l’accès à l’API et de la sélection de l’API](../../media/request-api-permissions-delegated.PNG)
 
-     >[!IMPORTANT]
-     >Vous devez sélectionner les autorisations appropriées. 
+    > [!NOTE]
+    > Vous devez sélectionner les autorisations appropriées pour votre scénario. *Read All incidents* n’est qu’un exemple. Pour déterminer les autorisations qui vous sont nécessaires, consultez la section **autorisations** dans l’API que vous souhaitez appeler.
+    >
+    > Par exemple, pour [exécuter des requêtes avancées](api-advanced-hunting.md), sélectionnez l’autorisation « exécuter des requêtes avancées »; pour [isoler un appareil](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/isolate-machine), sélectionnez l’autorisation « isoler l’ordinateur ».
 
-    -  Pour déterminer les autorisations qui vous sont nécessaires, consultez la section **autorisations** dans l’API que vous souhaitez appeler.
+5. Sélectionnez **accorder le consentement** de l’administrateur. Chaque fois que vous ajoutez une autorisation, vous devez sélectionner **accorder le consentement** de l’administrateur pour qu’elle prenne effet.
 
-    - Cliquez sur **accorder le consentement**
+   ![Image des autorisations accorder](../../media/grant-consent-delegated.PNG)
 
-      >[!NOTE]
-      >Chaque fois que vous ajoutez une autorisation, vous devez cliquer sur **accorder le consentement** pour que la nouvelle autorisation prenne effet.
-
-      ![Image des autorisations accorder](../../media/grant-consent-delegated.PNG)
-
-6. Notez l’ID de votre application et votre ID de client :
-
-   - Sur la page de votre application, accédez à **vue d’ensemble** et copiez les éléments suivants :
+6. Enregistrez votre ID d’application et votre ID de client dans un endroit sûr. Elles sont indiquées sous **vue d’ensemble** sur votre application.
 
    ![Image de l’ID d’application créé](../../media/app-and-tenant-ids.png)
 
+## <a name="get-an-access-token"></a>Obtenir un jeton d’accès
 
-## <a name="get-an-access-token-using-powershell"></a>Obtenir un jeton d’accès à l’aide de PowerShell
+Pour plus d’informations sur les jetons Azure Active Directory, consultez le [didacticiel Azure ad](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
 
-```
-#Install the ADAL.PS package if it's not installed.
-if(!(Get-Package adal.ps)) { Install-Package -Name adal.ps }
+### <a name="get-an-access-token-using-powershell"></a>Obtenir un jeton d’accès à l’aide de PowerShell
 
-$authority = "https://login.windows.net/{tenant-id}" # replace {tenant-id} with your tenant ID.
+```PowerShell
+if(!(Get-Package adal.ps)) { Install-Package -Name adal.ps } # Install the ADAL.PS package in case it's not already present
 
-$clientId = "{application-id}" #replace {application-id} with your application ID.
+$tenantId = '' # Paste your directory (tenant) ID here.
+$clientId = '' # Paste your application (client) ID here.
+$redirectUri = '' # Paste your app's redirection URI
 
-$redirectUri = "{redirect-uri}" # replace {redirect-uri} with your application redirect URI.
+$authority = "https://login.windows.net/$tenantId"
+$resourceUrl = 'https://api.security.microsoft.com'
 
-$resourceUrl = "https://api.security.microsoft.com"
-
-$response = Get-ADALToken -Resource $resourceUrl -ClientId $clientId -RedirectUri $redirectUri -Authority $authority -PromptBehavior:Always
+$response = Get-ADALToken -Resource $resourceUrl -ClientId $cleintId -RedirectUri $redirectUri -Authority $authority -PromptBehavior:Always
 $response.AccessToken | clip
+
 $response.AccessToken
 ```
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="validate-the-token"></a>Valider le jeton
+
+1. Copiez et collez le jeton dans [JWT](https://jwt.ms) pour le décoder.
+1. Assurez-vous que la revendication de *rôles* dans le jeton décodé contient les autorisations souhaitées.
+
+Dans l’image suivante, vous pouvez voir un jeton décodé acquis à partir d’une application, avec ```Incidents.Read.All``` , ```Incidents.ReadWrite.All``` et des ```AdvancedHunting.Read.All``` autorisations :
+
+![Image de la validation du jeton](../../media/webapp-decoded-token.png)
+
+## <a name="use-the-token-to-access-the-microsoft-365-defender-api"></a>Utiliser le jeton pour accéder à l’API Microsoft 365 Defender
+
+1. Choisissez l’API que vous souhaitez utiliser (incidents ou chasse avancée). Pour plus d’informations, consultez la rubrique [API Microsoft 365 Defender prises en charge](api-supported.md).
+2. Dans la requête HTTP que vous allez envoyer, définissez l’en-tête d’autorisation sur `"Bearer" <token>` , le *porteur* étant le modèle d’autorisation et le *jeton* comme jeton validé.
+3. Le jeton expire dans une heure. Vous pouvez envoyer plusieurs demandes pendant ce temps avec le même jeton.
+
+L’exemple suivant montre comment envoyer une demande pour obtenir une liste d’incidents **à l’aide de C#**.
+
+```C#
+    var httpClient = new HttpClient();
+    var request = new HttpRequestMessage(HttpMethod.Get, "https://api.security.microsoft.com/api/incidents");
+
+    request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
+
+    var response = httpClient.SendAsync(request).GetAwaiter().GetResult();
+```
+
+## <a name="related-articles"></a>Articles connexes
+
+- [Vue d’ensemble des API Microsoft 365 Defender](api-overview.md)
 - [Accéder aux API Microsoft 365 Defender](api-access.md)
-- [Accéder à Microsoft 365 Defender avec le contexte d’application](api-create-app-web.md)
+- [Créer une application « Hello World »](api-hello-world.md)
+- [Créer une application pour accéder à Microsoft 365 Defender sans utilisateur](api-create-app-web.md)
+- [Créer une application avec un accès partenaire mutualisée aux API Microsoft 365 Defender](api-partner-access.md)
+- [En savoir plus sur les limites d’API et la gestion des licences](api-terms.md)
+- [Comprendre les codes d’erreur](api-error-codes.md)
+- [Autorisation 2,0 OAuth pour l’authentification de l’utilisateur et l’accès à l’API](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)

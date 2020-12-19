@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 63eab8c44651bfc2865e9bf6c577c1ebe13381fc
-ms.sourcegitcommit: 21b0ea5715e20b4ab13719eb18c97fadb49b563d
+ms.openlocfilehash: f151f02af695eb54eaf8f4f97936f4985fc7f8c0
+ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49624765"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719201"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migration de boîtes aux lettres entre clients (aperçu)
 
@@ -99,9 +99,9 @@ Préparez le client source :
 
     | Paramètre | Valeur | Obligatoire ou facultatif
     |---------------------------------------------|-----------------|--------------|
-    | -ResourceTenantDomain                       | Domaine client source, tel que fabrikam.onmicrosoft.com. | Obligatoire |
+    | -TargetTenantDomain                         | Domaine client cible, tel que contoso \. onmicrosoft.com. | Obligatoire |
+    | -ResourceTenantDomain                       | Domaine client source, tel que Fabrikam \. onmicrosoft.com. | Obligatoire |
     | -ResourceTenantAdminEmail                   | Adresse de messagerie de l’administrateur client source. Il s’agit de l’administrateur client source qui sera envoyé à l’utilisation de l’application de migration de boîtes aux lettres envoyée par l’administrateur cible. Il s’agit de l’administrateur qui recevra l’invitation par courrier électronique pour l’application. | Obligatoire |
-    | -TargetTenantDomain                         | Domaine client cible, tel que contoso.onmicrosoft.com. | Obligatoire |
     | -ResourceTenantId                           | ID de l’organisation cliente source (GUID). | Obligatoire |
     | -SubscriptionId                             | Abonnement Azure à utiliser pour créer des ressources. | Obligatoire |
     | -N                              | Nom du groupe de ressources Azure qui contient ou contiendra le coffre-fort de clés. | Obligatoire |
@@ -187,10 +187,10 @@ L’installation de l’administration cible est maintenant terminée.
     | Paramètre | Valeur |
     |-----|------|
     | -SourceMailboxMovePublishedScopes | Groupe de sécurité à extension messagerie créé par le client source pour les identités/boîtes aux lettres qui sont dans l’étendue de la migration. |
-    | -ResourceTenantDomain | Nom de domaine client source, par exemple fabrikam.onmicrosoft.com. |
-    | -TargetTenantDomain | Nom de domaine client cible, tel que contoso.onmicrosoft.com. |
+    | -ResourceTenantDomain | Nom de domaine client source, tel que Fabrikam \. onmicrosoft.com. |
     | -ApplicationId | ID d’application Azure (GUID) de l’application utilisée pour la migration. ID d’application disponible via votre portail Azure (Azure AD, applications d’entreprise, nom de l’application, ID de l’application) ou inclus dans votre courrier électronique d’invitation.  |
-    | -TargetTenantId | ID de client du client cible. Par exemple, l’ID de client Azure AD du client contoso.onmicrosoft.com. |
+    | -TargetTenantDomain | Nom de domaine client cible, tel que contoso \. onmicrosoft.com. |
+    | -TargetTenantId | ID de client du client cible. Par exemple, l’ID de client Azure AD du \. client contoso onmicrosoft.com. |
     |||
 
     Voici un exemple.
@@ -284,6 +284,7 @@ Les utilisateurs qui migrent doivent être présents dans le client cible et le 
 Vous devez vous assurer que les objets et attributs suivants sont définis dans l’organisation cible.  
 
 1. Pour les boîtes aux lettres déplacées à partir d’une organisation source, vous devez mettre en service un objet MailUser dans l’organisation cible : 
+
    - Le MailUser cible doit avoir les attributs suivants de la boîte aux lettres source ou être affecté au nouvel objet User :
       - ExchangeGUID (transit direct depuis la source vers la cible) : le GUID de la boîte aux lettres doit correspondre. Le processus de déplacement ne se poursuit pas s’il n’est pas présent sur l’objet cible. 
       - ArchiveGUID (transit direct depuis la source vers la cible) : le GUID d’archivage doit correspondre. Le processus de déplacement ne se poursuit pas s’il n’est pas présent sur l’objet cible. (Ceci est uniquement requis si l’archivage de la boîte aux lettres source est activé). 
@@ -293,40 +294,40 @@ Vous devez vous assurer que les objets et attributs suivants sont définis dans 
       - TargetAddress/ExternalEmailAddress – MailUser fait référence à la boîte aux lettres actuelle de l’utilisateur, hébergée dans le client source (par exemple, user@contoso.onmicrosoft.com). Lors de l’affectation de cette valeur, vérifiez que vous avez ou que vous affectez également la propriété PrimarySMTPAddress ou que cette valeur définit la propriété PrimarySMTPAddress qui provoque des échecs de déplacement. 
       - Vous ne pouvez pas ajouter d’adresses proxy SMTP héritées de la boîte aux lettres source pour cibler MailUser. Par exemple, vous ne pouvez pas gérer contoso.com sur l’unité MEU dans les objets client fabrikam.onmicrosoft.com). Les domaines sont associés à un seul client Azure AD ou Exchange Online.
  
-    Exemple d’objet MailUser **cible** :
+     Exemple d’objet MailUser **cible** :
  
-    | Attribut             | Valeur                                                                                                                    |
-    |-----------------------|--------------------------------------------------------------------------------------------------------------------------|
-    | Alias                 | LaraN                                                                                                                    |
-    | RecipientType         | MailUser                                                                                                                 |
-    | RecipientTypeDetails  | MailUser                                                                                                                 |
-    | UserPrincipalName     | LaraN@northwintraders.onmicrosoft.com                                                                                    |
-    | PrimarySmtpAddress    | Lara.Newton@northwind.com                                                                                                |
-    | ExternalEmailAddress  | SMTP:LaraN@contoso.onmicrosoft.com                                                                                       |
-    | ExchangeGuid          | 1ec059c7-8396-4d0b-af4e-d6bd4c12a8d8                                                                                     |
-    | LegacyExchangeDN      | /o = First Organization/ou = groupe d’administration Exchange                                                                   |
-    |                       | (FYDIBOHF23SPDLT)/CN = RECIPIENTS/CN = 74e5385fce4b46d19006876949855035Lara                                                  |
-    | EmailAddresses        | x500:/o = First Organization/ou = Exchange administrative Group (FYDIBOHF23SPDLT)/CN = RECIPIENTS/CN = d11ec1a2cacd4f81858c8190  |
-    |                       | 7273f1f9-Lara                                                                                                            |
-    |                       | smtp:LaraN@northwindtraders.onmicrosoft.com                                                                              |
-    |                       | SMTP:Lara.Newton@northwind.com                                                                                           |
-    |||
+     | Attribut             | Valeur                                                                                                                    |
+     |-----------------------|--------------------------------------------------------------------------------------------------------------------------|
+     | Alias                 | LaraN                                                                                                                    |
+     | RecipientType         | MailUser                                                                                                                 |
+     | RecipientTypeDetails  | MailUser                                                                                                                 |
+     | UserPrincipalName     | LaraN@northwintraders.onmicrosoft.com                                                                                    |
+     | PrimarySmtpAddress    | Lara.Newton@northwind.com                                                                                                |
+     | ExternalEmailAddress  | SMTP:LaraN@contoso.onmicrosoft.com                                                                                       |
+     | ExchangeGuid          | 1ec059c7-8396-4d0b-af4e-d6bd4c12a8d8                                                                                     |
+     | LegacyExchangeDN      | /o = First Organization/ou = groupe d’administration Exchange                                                                   |
+     |                       | (FYDIBOHF23SPDLT)/CN = RECIPIENTS/CN = 74e5385fce4b46d19006876949855035Lara                                                  |
+     | EmailAddresses        | x500:/o = First Organization/ou = Exchange administrative Group (FYDIBOHF23SPDLT)/CN = RECIPIENTS/CN = d11ec1a2cacd4f81858c8190  |
+     |                       | 7273f1f9-Lara                                                                                                            |
+     |                       | smtp:LaraN@northwindtraders.onmicrosoft.com                                                                              |
+     |                       | SMTP:Lara.Newton@northwind.com                                                                                           |
+     |||
 
-   Exemple d’objet de boîte aux lettres **source** :
+     Exemple d’objet de boîte aux lettres **source** :
 
-   | Attribut             | Valeur                                                                    |
-   |-----------------------|--------------------------------------------------------------------------|
-   | Alias                 | LaraN                                                                    |
-   | RecipientType         | UserMailbox                                                              |
-   | RecipientTypeDetails  | UserMailbox                                                              |
-   | UserPrincipalName     | LaraN@contoso.onmicrosoft.com                                            |
-   | PrimarySmtpAddress    | Lara.Newton@contoso.com                                                  |
-   | ExchangeGuid          | 1ec059c7-8396-4d0b-af4e-d6bd4c12a8d8                                     |
-   | LegacyExchangeDN      | /o = First Organization/ou = groupe d’administration Exchange                   |
-   |                       | (FYDIBOHF23SPDLT)/CN = RECIPIENTS/CN = d11ec1a2cacd4f81858c81907273f1f9Lara  |
-   | EmailAddresses        | smtp:LaraN@contoso.onmicrosoft.com 
-   |                       | SMTP:Lara.Newton@contoso.com          |
-   |||
+     | Attribut             | Valeur                                                                    |
+     |-----------------------|--------------------------------------------------------------------------|
+     | Alias                 | LaraN                                                                    |
+     | RecipientType         | UserMailbox                                                              |
+     | RecipientTypeDetails  | UserMailbox                                                              |
+     | UserPrincipalName     | LaraN@contoso.onmicrosoft.com                                            |
+     | PrimarySmtpAddress    | Lara.Newton@contoso.com                                                  |
+     | ExchangeGuid          | 1ec059c7-8396-4d0b-af4e-d6bd4c12a8d8                                     |
+     | LegacyExchangeDN      | /o = First Organization/ou = groupe d’administration Exchange                   |
+     |                       | (FYDIBOHF23SPDLT)/CN = RECIPIENTS/CN = d11ec1a2cacd4f81858c81907273f1f9Lara  |
+     | EmailAddresses        | smtp:LaraN@contoso.onmicrosoft.com 
+     |                       | SMTP:Lara.Newton@contoso.com          |
+     |||
 
    - Des attributs supplémentaires peuvent être inclus dans la réécriture d’Exchange hybride. Si ce n’est pas le cas, ils doivent être inclus. 
    - msExchBlockedSendersHash – réécrit des données d’expéditeurs bloqués et bloqués en ligne à partir de clients vers Active Directory en local.
@@ -350,7 +351,7 @@ Vous devez vous assurer que les objets et attributs suivants sont définis dans 
     > [!Note]
     > Lorsque vous appliquez une licence sur une boîte aux lettres ou un objet MailUser, tous les types SMTP proxyAddresses sont nettoyés afin de s’assurer que seuls les domaines vérifiés sont inclus dans le groupe Exchange EmailAddresses. 
 
-5. Vous devez vous assurer que la MailUser cible n’a pas de ExchangeGuid précédent qui ne correspond pas à la source ExchangeGuid. Cela peut se produire si l’unité MEU cible était précédemment sous licence pour Exchange Online et qu’une boîte aux lettres a été configurée. Si la MailUser cible était déjà sous licence ou avait un ExchangeGuid qui ne correspond pas à la source ExchangeGuid, vous devez effectuer un nettoyage de l’unité MEU Cloud. Pour ces extension messagerie de Cloud, vous pouvez exécuter la `Set-User <identity> -PermanentlyClearPreviousMailboxInfo` commande.  
+5. Vous devez vous assurer que la MailUser cible n’a pas de ExchangeGuid précédent qui ne correspond pas à la source ExchangeGuid. Cela peut se produire si l’unité MEU cible était précédemment sous licence pour Exchange Online et qu’une boîte aux lettres a été configurée. Si la MailUser cible était déjà sous licence ou avait un ExchangeGuid qui ne correspond pas à la source ExchangeGuid, vous devez effectuer un nettoyage de l’unité MEU Cloud. Pour ces extension messagerie de Cloud, vous pouvez exécuter `Set-User <identity> -PermanentlyClearPreviousMailboxInfo` .  
 
     > [!Caution]
     > Ce processus est irréversible. Si l’objet dispose d’une boîte aux lettres softDeleted, il ne peut pas être restauré après cette étape. Une fois l’effacement activé, vous pouvez synchroniser le ExchangeGuid correct vers l’objet cible et Mme connecter la boîte aux lettres source à la boîte aux lettres cible nouvellement créée. (Faites référence à un blog EHLO sur le nouveau paramètre.)  
@@ -413,7 +414,7 @@ L’envoi de lots de migration est également pris en charge à partir du nouvea
 
 Une fois que la boîte aux lettres passe de la source à la cible, vous devez vous assurer que les utilisateurs de messagerie locaux, source et cible, sont mis à jour avec le nouvel targetAddress. Dans les exemples, le targetDeliveryDomain utilisé dans le déplacement est **contoso.onmicrosoft.com**. Mettez à jour les utilisateurs de messagerie à l’aide de ce targetAddress.
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 **Faut-il mettre à jour RemoteMailboxes dans la source en local après le déplacement ?**
 
@@ -508,7 +509,7 @@ La boîte aux lettres Exchange se déplace à l’aide de la fonction targetAddr
 
 Les autorisations de boîte aux lettres incluent l’accès envoyer de la part de et de la boîte aux lettres : 
 
-- Envoyer de la part de (AD : publicDelegates) stocke le DN des destinataires ayant accès à la boîte aux lettres d’un utilisateur en tant que délégué. Cette valeur est stockée dans Active Directory et ne se déplace actuellement pas dans le cadre de la transition de boîte aux lettres. Si la boîte aux lettres source a publicDelegates définie, vous devez remarquer le publicDelegates sur la boîte aux lettres cible une fois que la conversion de l’unité MEU vers la boîte aux lettres est terminée dans l’environnement cible à l’aide de la `Set-Mailbox <principle> -GrantSendOnBehalfTo <delegate>` commande. 
+- Envoyer de la part de (AD : publicDelegates) stocke le DN des destinataires ayant accès à la boîte aux lettres d’un utilisateur en tant que délégué. Cette valeur est stockée dans Active Directory et ne se déplace actuellement pas dans le cadre de la transition de boîte aux lettres. Si la boîte aux lettres source a publicDelegates définie, vous devez remarquer le publicDelegates sur la boîte aux lettres cible une fois que la conversion de l’unité MEU vers la boîte aux lettres est terminée dans l’environnement cible en cours d’exécution `Set-Mailbox <principle> -GrantSendOnBehalfTo <delegate>` . 
  
 - Les autorisations de boîte aux lettres qui sont stockées dans la boîte aux lettres seront déplacées avec la boîte aux lettres lorsque le principal et le délégué seront déplacés vers le système cible. Par exemple, l’utilisateur TestUser_7 bénéficie de l’autorisation FullAccess sur la boîte aux lettres TestUser_8 dans le client SourceCompany.onmicrosoft.com. Une fois le déplacement de la boîte aux lettres terminé vers TargetCompany.onmicrosoft.com, les mêmes autorisations sont configurées dans l’annuaire cible. Vous trouverez ci-dessous des exemples d’utilisation de *Get-MailboxPermission* pour les TestUser_7 dans les clients source et cible. Les cmdlets Exchange sont précédées de source et cible en conséquence. 
  

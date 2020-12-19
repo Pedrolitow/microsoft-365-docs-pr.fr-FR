@@ -3,7 +3,7 @@ title: Pré-travail pour la migration à partir de Microsoft Cloud Deutschland
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 12/11/2020
+ms.date: 12/18/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Résumé : Soyez opérationnel lors du passage de Microsoft Cloud Germany (Microsoft Cloud Deutschland) vers les services Office 365 dans la nouvelle région de centre de connaissances allemande.'
-ms.openlocfilehash: 1bb6a1b80da462da2218f32fbbc2899ae651a3ec
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: 107447226b9b75f371e23f8dd06ec29860571c63
+ms.sourcegitcommit: 86f75cf77a7a446a79226ca530bd7b5eb39189cb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688454"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49717030"
 ---
 # <a name="pre-work-for-the-migration-from-microsoft-cloud-deutschland"></a>Pré-travail pour la migration à partir de Microsoft Cloud Deutschland
 
@@ -42,7 +42,7 @@ ms.locfileid: "49688454"
 | [Sauvegarde de la batterie de serveurs AD FS (Active Directory Federation Services)](ms-cloud-germany-transition-add-adfs.md#backup) pour les scénarios de récupération d’urgence. | Les clients doivent sauvegarder la batterie AD FS de manière appropriée afin de garantir que les approbations de la partie de confiance pour les points de terminaison & Germany peuvent être restaurées sans toucher à l’URI de l’émetteur des domaines. Microsoft recommande d’utiliser la restauration rapide AD FS pour une sauvegarde de la batterie de serveurs et la restauration correspondante, si nécessaire. | Organisations d’authentification fédérée | Action requise. L’inaction entraînera un impact sur le service pendant la migration si la batterie de serveurs AD FS du client échoue. |
 
 
-## <a name="exchange-online"></a>Exchange Online
+## <a name="exchange-online"></a>Exchange Online
 
 | Étape (s) | Description | S’applique à | Impact |
 |:-------|:-----|:-------|:-------|
@@ -115,6 +115,7 @@ Si vous utilisez un service tiers ou des applications métier (LOB) qui sont int
 
 | Étape (s) | Description | S’applique à | Impact |
 |:-------|:-----|:-------|:-------|
+| Ajoutez un identificateur pour l’authentification unique (SSO) à une approbation de partie de confiance existante et désactivez les mises à jour automatiques des métadonnées AD FS. | Un ID doit être ajouté à l’approbation de partie de confiance AD FS avant de commencer la migration. Pour éviter la suppression accidentelle de l’identificateur de partie de confiance, désactivez la mise à jour automatique des mises à jour de métadonnées. <br><br> Exécutez cette commande sur le serveur AD FS : <br> `Set-AdfsRelyingPartyTrust -TargetIdentifier urn:federation:microsoftonline.de -Identifier @('urn:federation:microsoftonline.de','https://login.microsoftonline.de/extSTS.srf','https://login.microsoftonline.de') -AutoUpdate $False` | Organisations d’authentification fédérée | Action requise. L’inaction entraînera un impact sur le service pendant la migration.  |
 | Générez une approbation de partie de confiance pour les points de terminaison Azure AD globaux. | Les clients doivent créer manuellement une approbation de partie de confiance (RPT) sur des points de terminaison [globaux](https://nexus.microsoftonline-p.com/federationmetadata/2007-06/federationmetadata.xml) . Pour ce faire, vous devez ajouter une nouvelle arborescence RPT via l’interface utilisateur en tirant parti de l’URL des métadonnées de Fédération globale, puis en utilisant les [règles de revendication RPT](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator#:~:text=%20Azure%20AD%20RPT%20Claim%20Rules%20%201,Azure%20AD.%20This%20will%20be%20what...%20More%20) (dans l’aide d’AD FS) pour générer les règles de revendication et les importer dans l’arborescence RPT. | Organisations d’authentification fédérée | Action requise. L’inaction entraînera un impact sur le service pendant la migration. |
 |||||
 

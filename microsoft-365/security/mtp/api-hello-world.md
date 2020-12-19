@@ -1,7 +1,7 @@
 ---
 title: Hello World pour l’API REST Microsoft 365 Defender
 description: Découvrez comment créer une application et utiliser un jeton pour accéder aux API Microsoft 365 Defender
-keywords: application, jeton, Access, AAD, app, inscription de l’application, PowerShell, script, administrateur global, autorisation
+keywords: application, jeton, Access, AAD, app, inscription de l’application, PowerShell, script, administrateur global, autorisation, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -19,175 +19,162 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: bd4f7e5485d67cf74477900ae2cc5c77f1a6ee41
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: b36a6acca5880a455a66b03b5355cdf1fb85b29b
+ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844043"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719309"
 ---
-# <a name="hello-world-for-microsoft-365-defender-rest-api"></a>Hello World pour l’API REST Microsoft 365 Defender 
+# <a name="hello-world-for-microsoft-365-defender-rest-api"></a>Hello World pour l’API REST Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 **S’applique à :**
-- Microsoft 365 Defender
 
->[!IMPORTANT] 
->Certaines informations se rapportent à des produits précommercialisés susceptibles d’être modifiés de manière substantielle avant leur publication commerciale. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+- Microsoft 365 Defender
 
+> [!IMPORTANT]
+> Certaines informations se rapportent à des produits précommercialisés susceptibles d’être modifiés de manière substantielle avant leur publication commerciale. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 ## <a name="get-incidents-using-a-simple-powershell-script"></a>Obtenir des incidents à l’aide d’un script PowerShell simple
 
-### <a name="how-long-it-takes-to-go-through-this-example"></a>Combien de temps faut-il pour suivre cet exemple ?
-Il faut seulement 5 minutes en deux étapes :
-- Inscription de l’application
-- Utiliser des exemples : nécessite uniquement une opération copier/coller d’un court script PowerShell
+Cette opération doit prendre entre 5 et 10 minutes. Cette estimation de la durée inclut l’inscription de l’application et l’application du code à partir de l’exemple de script PowerShell.
 
-### <a name="do-i-need-a-permission-to-connect"></a>Ai-je besoin d’une autorisation pour se connecter ?
-Pour l’étape d’inscription de l’application, vous devez disposer d’un rôle d' **administrateur général** dans votre client Azure Active Directory (Azure AD).
+### <a name="register-an-app-in-azure-active-directory"></a>Inscrire une application dans Azure Active Directory
 
-### <a name="step-1---create-an-app-in-azure-active-directory"></a>Étape 1 : créer une application dans Azure Active Directory
+1. Connectez-vous à [Azure](https://portal.azure.com) en tant qu’utilisateur doté du rôle d' **administrateur général** .
 
-1. Connectez-vous à [Azure](https://portal.azure.com) avec votre utilisateur d' **administrateur général** .
-
-2. Accédez à **Azure Active Directory**  >  **app Registrations**  >  **New Registration**. 
+2. Accédez à **Azure Active Directory**  >  **app Registrations**  >  **New Registration**.
 
    ![Image de Microsoft Azure et navigation de l’application](../../media/atp-azure-new-app2.png)
 
-3. Dans le formulaire d’inscription, choisissez un nom pour votre application, puis sélectionnez **Enregistrer**.
+3. Dans le formulaire d’inscription, choisissez un nom pour votre application, puis sélectionnez **Enregistrer**. La sélection d’un URI de redirection est facultative. Vous n’en aurez pas besoin pour terminer cet exemple.
 
-4. Autorisez votre application à accéder à Microsoft Defender pour le point de terminaison et attribuez-lui l’autorisation **lire tous les incidents** :
+4. Sur la page de votre application, sélectionnez **autorisations d’API**  >  **Ajouter une**  >  **API mon organisation utilise** des >, tapez **Microsoft Threat Protection**, puis sélectionnez **Microsoft Threat Protection**. Votre application peut maintenant accéder à Microsoft 365 Defender.
 
-   - Sur la page de votre application, sélectionnez **autorisations d’API**  >  **Ajouter une**  >  **API mon organisation utilise** > tapez **Microsoft 365 Defender** et sélectionnez sur **Microsoft 365 Defender**.
+   > [!TIP]
+   > *Microsoft Threat Protection* est un ancien nom pour Microsoft 365 Defender et n’apparaît pas dans la liste d’origine. Vous devez commencer à écrire son nom dans la zone de texte pour l’afficher.
+   ![Image de la sélection des autorisations de l’API](../../media/apis-in-my-org-tab.PNG)
 
-   >[!NOTE]
-   >Microsoft 365 Defender n’apparaît pas dans la liste d’origine. Vous devez commencer à écrire son nom dans la zone de texte pour l’afficher.
-
-   ![Image de l’accès à l’API et de la sélection de l’API](../../media/apis-in-my-org-tab.PNG)
-
-   - Choose **application permissions**  >  **incident. Read. All** > Select on **Add permissions**
+   - Sélectionnez **autorisations d’application**-  >  **incident. Read. All** et sélectionnez **Ajouter des autorisations**.
 
    ![Image de l’accès à l’API et de la sélection de l’API](../../media/request-api-permissions.PNG)
 
-   >[!IMPORTANT]
-   >Vous devez sélectionner les autorisations appropriées. 
-
-     Par exemple,
-
-     - Pour déterminer les autorisations qui vous sont nécessaires, consultez la section **autorisations** dans l’API que vous souhaitez appeler.
-
-5. Sélectionnez **accorder le consentement** de l’administrateur
-
-    - >[!NOTE]
-      > Chaque fois que vous ajoutez une autorisation, vous devez sélectionner sur **accorder le consentement** pour que la nouvelle autorisation prenne effet.
+5. Sélectionnez **accorder le consentement** de l’administrateur. Chaque fois que vous ajoutez une autorisation, vous devez sélectionner **accorder le consentement** de l’administrateur pour qu’elle prenne effet.
 
     ![Image des autorisations accorder](../../media/grant-consent.PNG)
 
-6. Ajoutez un secret à l’application.
+6. Ajoutez un secret à l’application. Sélectionnez **certificats & secrets**, ajoutez une description à la clé secrète, puis sélectionnez **Ajouter**.
 
-    - Sélectionnez **certificats & secrets** , ajoutez une description à la clé secrète et sélectionnez **Ajouter**.
-
-    >[!IMPORTANT]
-    > Après avoir sélectionné **Ajouter** , **Copiez la valeur secrète générée**. Vous ne pourrez pas récupérer une fois que vous aurez quitté !
+    > [!TIP]
+    > Une fois que vous avez sélectionné **Ajouter**, sélectionnez **copier la valeur secrète générée**. Vous ne pourrez pas récupérer la valeur secrète une fois que vous aurez quitté.
 
     ![Image de la clé créer une application](../../media/webapp-create-key2.png)
 
-7. Notez l’ID de votre application et votre ID de client :
-
-   - Sur la page de votre application, accédez à **vue d’ensemble** et copiez les éléments suivants :
+7. Enregistrez votre ID d’application et votre ID de client dans un endroit sûr. Elles sont indiquées sous **vue d’ensemble** sur votre application.
 
    ![Image de l’ID d’application créé](../../media/app-and-tenant-ids.png)
 
+### <a name="get-a-token-using-the-app-and-use-the-token-to-access-the-api"></a>Obtenir un jeton à l’aide de l’application et utiliser le jeton pour accéder à l’API
 
-Terminé! Vous avez correctement inscrit une application.
+Pour plus d’informations sur les jetons Azure Active Directory, consultez le [didacticiel Azure ad](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
 
-### <a name="step-2---get-a-token-using-the-app-and-use-this-token-to-access-the-api"></a>Étape 2 : obtenir un jeton à l’aide de l’application et utiliser ce jeton pour accéder à l’API.
+> [!IMPORTANT]
+> Bien que l’exemple de cette application de démonstration vous encourage à coller votre valeur secrète à des fins de test, vous ne devez **jamais coder les secrets** dans une application exécutée en production. Un tiers peut utiliser votre clé secrète pour accéder aux ressources. Vous pouvez protéger les secrets de votre application en utilisant [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/general/about-keys-secrets-certificates). Pour obtenir un exemple pratique de la façon dont vous pouvez protéger votre application, voir [Manage secrets in your Server Apps with Azure Key Vault](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/).
 
--   Copiez le script ci-dessous dans PowerShell ISE ou dans un éditeur de texte, et enregistrez-le sous le **Get-Token.ps1**
--   L’exécution de ce script générera un jeton et l’enregistrera dans le dossier de travail sous le nom « **Latest-token.txt** ».
+1. Copiez le script ci-dessous et collez-le dans votre éditeur de texte favori. Enregistrer en tant que **Get-Token.ps1**. Vous pouvez également exécuter le code en l’occurrence dans PowerShell ISE, mais vous devez l’enregistrer, car nous aurons besoin de l’exécuter à nouveau lorsque nous utilisons le script de récupération des incidents dans la section suivante.
 
-```
-# That code gets the App Context Token and save it to a file named "Latest-token.txt" under the current directory
-# Paste below your Tenant ID, App ID and App Secret (App key).
+    Ce script génère un jeton et l’enregistre dans le dossier de travail sous le nom, *Latest-token.txt*.
 
-$tenantId = '' ### Paste your tenant ID here
-$appId = '' ### Paste your Application ID here
-$appSecret = '' ### Paste your Application secret here
+    ```PowerShell
+    # This script gets the app context token and saves it to a file named "Latest-token.txt" under the current directory.
+    # Paste in your tenant ID, client ID and app secret (App key).
 
-$resourceAppIdUri = 'https://api.security.microsoft.com'
-$oAuthUri = "https://login.windows.net/$TenantId/oauth2/token"
-$authBody = [Ordered] @{
-    resource = "$resourceAppIdUri"
-    client_id = "$appId"
-    client_secret = "$appSecret"
-    grant_type = 'client_credentials'
-}
-$authResponse = Invoke-RestMethod -Method Post -Uri $oAuthUri -Body $authBody -ErrorAction Stop
-$token = $authResponse.access_token
-Out-File -FilePath "./Latest-token.txt" -InputObject $token
-return $token
-```
+    $tenantId = '' # Paste your directory (tenant) ID here
+    $clientId = '' # Paste your application (client) ID here
+    $appSecret = '' # # Paste your own app secret here to test, then store it in a safe place!
 
--   Vérification de la validité :<br>
-Exécutez le script.<br>
-Dans votre navigateur, accédez à : https://jwt.ms/ <br>
-Copiez le jeton (contenu du fichier Latest-token.txt).<br>
-Colle dans la zone supérieure.<br>
-Recherchez la section « rôles ». Recherchez le ```Incidents.Read.All``` rôle.<br>
-L’exemple ci-dessous provient d’une application qui possède ```Incidents.Read.All``` ```Incidents.ReadWrite.All``` les ```AdvancedHunting.Read.All``` autorisations et.
+    $resourceAppIdUri = 'https://api.security.microsoft.com'
+    $oAuthUri = "https://login.windows.net/$tenantId/oauth2/token"
+    $authBody = [Ordered] @{
+      resource = $resourceAppIdUri
+      client_id = $clientId
+      client_secret = $appSecret
+      grant_type = 'client_credentials'
+    }
+    $authResponse = Invoke-RestMethod -Method Post -Uri $oAuthUri -Body $authBody -ErrorAction Stop
+    $token = $authResponse.access_token
+    Out-File -FilePath "./Latest-token.txt" -InputObject $token
+    return $token
+    ```
 
-![Image jwt.ms](../../media/api-jwt-ms.png)
+#### <a name="validate-the-token"></a>Valider le jeton
 
-### <a name="lets-get-the-incidents"></a>Permet d’obtenir les incidents.
+1. Copiez et collez le jeton que vous avez reçu dans [JWT](https://jwt.ms) pour le décoder.
+1. *JWT* représente le *jeton Web JSON*. Le jeton décodé contient un certain nombre d’éléments ou de revendications au format JSON. Assurez-vous que la revendication de *rôles* dans le jeton décodé contient les autorisations souhaitées.
 
--   Le script ci-dessous utilisera **Get-Token.ps1** pour accéder à l’API et obtiendra la dernière mise à jour des incidents au cours des 48 dernières heures.
--   Enregistrez ce script dans le dossier dans lequel vous avez enregistré le script précédent **Get-Token.ps1**. 
--   Le script d’un fichier JSON avec les données dans le même dossier que les scripts.
+    Dans l’image suivante, vous pouvez voir un jeton décodé acquis à partir d’une application, avec ```Incidents.Read.All``` , ```Incidents.ReadWrite.All``` et des ```AdvancedHunting.Read.All``` autorisations :
 
-```
-# Returns Incidents last updated in the past 48 hours.
+    ![Image jwt.ms](../../media/api-jwt-ms.png)
 
-$token = ./Get-Token.ps1       #run the script Get-Token.ps1  - make sure you are running this script from the same folder of Get-Token.ps1
+### <a name="get-a-list-of-recent-incidents"></a>Obtenir la liste des incidents récents
 
-# Get Incidents from the last 48 hours. Make sure you have incidents in that time frame.
+Le script ci-dessous utilise **Get-Token.ps1** pour accéder à l’API. Il récupère ensuite une liste d’incidents qui ont été mis à jour au cours des 48 dernières heures et enregistre la liste sous la forme d’un fichier JSON.
+
+> [!IMPORTANT]
+> Enregistrez ce script dans le dossier que vous avez enregistré **Get-Token.ps1**.
+
+```PowerShell
+# This script returns incidents last updated within the past 48 hours.
+
+$token = ./Get-Token.ps1
+
+# Get incidents from the past 48 hours.
+# The script may appear to fail if you don't have any incidents in that time frame.
 $dateTime = (Get-Date).ToUniversalTime().AddHours(-48).ToString("o")
 
-# The URL contains the type of query and the time filter we created above
+# This URL contains the type of query and the time filter we created above.
+# Note that `$filter` does not refer to a local variable in our script --
+# it's actually an OData operator and part of the API's syntax.
 $url = "https://api.security.microsoft.com/api/incidents?$filter=lastUpdateTime+ge+$dateTime"
 
-# Set the WebRequest headers
-$headers = @{ 
+# Set the webrequest headers
+$headers = @{
     'Content-Type' = 'application/json'
     'Accept' = 'application/json'
     'Authorization' = "Bearer $token"
 }
 
-# Send the webrequest and get the results. 
+# Send the request and get the results.
 $response = Invoke-WebRequest -Method Get -Uri $url -Headers $headers -ErrorAction Stop
 
-# Extract the incidents from the results. 
+# Extract the incidents from the results.
 $incidents =  ($response | ConvertFrom-Json).value | ConvertTo-Json -Depth 99
 
-# Get string with the execution time. We concatenate that string to the output file to avoid overwrite the file
-$dateTimeForFileName = Get-Date -Format o | foreach {$_ -replace ":", "."}    
+# Get a string containing the execution time. We concatenate that string to the name 
+# of the output file to avoid overwriting the file on consecutive runs of the script.
+$dateTimeForFileName = Get-Date -Format o | foreach {$_ -replace ":", "."}
 
 # Save the result as json
-$outputJsonPath = "./Latest Incidents $dateTimeForFileName.json"     
+$outputJsonPath = "./Latest Incidents $dateTimeForFileName.json"
 
-Out-File -FilePath $outputJsonPath -InputObject $incidents 
+Out-File -FilePath $outputJsonPath -InputObject $incidents
 ```
 
-Vous avez tous fini ! Vous venez d’effectuer les opérations suivantes :
--   Créé et inscrit et application
--   Autorisation accordée à cette application pour lire les alertes
--   Connexion de l’API
--   Utilisation d’un script PowerShell pour renvoyer des incidents créés au cours des 48 dernières heures
+Vous avez tous fini ! Vous avez effectué les opérations suivantes :
 
+- Création et inscription d’une application.
+- Autorisation accordée à cette application pour lire les alertes.
+- Connecté à l’API.
+- Utilisation d’un script PowerShell pour renvoyer des incidents mis à jour au cours des 48 dernières heures.
 
+## <a name="related-articles"></a>Articles connexes
 
-## <a name="related-topic"></a>Voir aussi
+- [Vue d’ensemble des API Microsoft 365 Defender](api-overview.md)
 - [Accéder aux API Microsoft 365 Defender](api-access.md)
-- [Accéder à Microsoft 365 Defender avec le contexte d’application](api-create-app-web.md)
-- [Accéder à Microsoft 365 Defender avec le contexte utilisateur](api-create-app-user-context.md)
+- [Créer une application pour accéder à Microsoft 365 Defender sans utilisateur](api-create-app-web.md)
+- [Créer une application pour accéder aux API Microsoft 365 Defender au nom d’un utilisateur](api-create-app-user-context.md)
+- [Créer une application avec un accès partenaire mutualisée aux API Microsoft 365 Defender](api-partner-access.md)
+- [Gérer les secrets dans vos applications serveur avec le coffre de clés Azure](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/)
+- [Autorisation 2,0 OAuth pour l’authentification de l’utilisateur et l’accès à l’API](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)

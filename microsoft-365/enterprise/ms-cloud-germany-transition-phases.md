@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Résumé : Découvrez les actions et les impacts des phases de migration de Microsoft Cloud Germany (Microsoft Cloud Deutschland) vers les services Office 365 dans la nouvelle région de centre de connaissances allemande.'
-ms.openlocfilehash: 4a032ab88704cfb46b3f451d939a784d222cbb40
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: 4a54fed8a109c3d03b735a5db3cb48060f5c438f
+ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688617"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719391"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-general"></a>Actions et impacts sur les phases de migration de la migration à partir de Microsoft Cloud Deutschland (général)
 
@@ -31,11 +31,11 @@ Les migrations client de Microsoft Cloud Deutschland vers la région de l’Alle
 
 Les sections suivantes contiennent les actions et les effets des charges de travail au fur et à mesure des différentes phases de la migration. Passez en revue les tableaux et déterminez les actions ou les effets qui s’appliquent à votre organisation. Assurez-vous que vous êtes prêt à exécuter les étapes dans les phases correspondantes, le cas échéant. L’échec de l’exécution des étapes nécessaires peut entraîner une panne de service et retarder la migration vers les services Office 365.
 
-## <a name="exchange-online"></a>Exchange Online
+## <a name="exchange-online"></a>Exchange Online
 
 | Étape (s) | Description | S’applique à | Impact |
 |:-------|:-----|:-------|:-------|
-| La nouvelle région Germany est ajoutée à la configuration existante de l’organisation, et les boîtes aux lettres sont déplacées vers les services Office 365. | La configuration d’Exchange Online ajoute la nouvelle région locale allemande à l’organisation de transition. Cette région des services Office 365 est définie par défaut, ce qui permet au service d’équilibrage de charge interne de redistribuer des boîtes aux lettres à la région par défaut appropriée dans les services Office 365. Dans cette transition, les utilisateurs des deux côtés (Allemagne ou services Office 365) se trouvent dans la même organisation et peuvent utiliser le point de terminaison de l’URL. | Exchange Online | -Faire migrer les utilisateurs et les services des URL d’Allemagne vers les URL des services Office 365 ( `https://outlook.office365.com` ). <br><br> -Les utilisateurs continueront à accéder au service via les URL d’Allemagne héritées lors de la migration. Aucune action immédiate n’est nécessaire. <br><br> -Les utilisateurs doivent commencer à utiliser le portail office.com pour les fonctionnalités d’Office Online (calendrier, courrier, personnes). La navigation vers les services qui ne sont pas encore migrés vers les services Office 365 ne fonctionne pas tant qu’elles n’ont pas été migrées. <br><br> -Outlook Web App ne fournit pas d’expérience de dossier public pendant la migration. |
+| La nouvelle région Germany est ajoutée à la configuration existante de l’organisation, et les boîtes aux lettres sont déplacées vers les services Office 365. | La configuration d’Exchange Online ajoute la nouvelle région locale allemande à l’organisation de transition. Cette région des services Office 365 est définie par défaut, ce qui permet au service d’équilibrage de charge interne de redistribuer des boîtes aux lettres à la région par défaut appropriée dans les services Office 365. Dans cette transition, les utilisateurs des deux côtés (Allemagne ou services Office 365) se trouvent dans la même organisation et peuvent utiliser le point de terminaison de l’URL. | Exchange Online | -Faire migrer les utilisateurs et les services des URL d’Allemagne vers les URL des services Office 365 ( `https://outlook.office365.com` ). <br><br> -Les utilisateurs continueront à accéder au service via les URL d’Allemagne héritées lors de la migration. Aucune action immédiate n’est nécessaire. <br><br> -Les utilisateurs doivent commencer à utiliser le portail office.com pour les fonctionnalités d’Office Online (calendrier, courrier, personnes). La navigation vers les services qui ne sont pas encore migrés vers les services Office 365 ne fonctionne pas tant qu’elles n’ont pas été migrées. <br><br> -Outlook Web App ne fournit pas d’expérience de dossier public pendant la migration. |
 |||||
 
 Considérations supplémentaires :
@@ -83,7 +83,7 @@ Considérations supplémentaires :
 
 | Étape (s) | Description | S’applique à | Impact |
 |:-------|:-----|:-------|:-------|
-| Migration de Skype entreprise vers Teams. | Les clients Skype entreprise existants sont migrés vers les services Office 365 en Europe, puis transférés vers Microsoft teams dans la région d’Allemagne des services Office 365. | Clients Skype entreprise | -Les utilisateurs ne peuvent pas se connecter à Skype entreprise à la date de la migration. 10 jours avant la migration, nous allons informer les utilisateurs finaux via intrabande sur le client Skype entreprise qu’ils seront mis à niveau vers Teams. Nous publierons également dans le centre d’administration que ces modifications auront lieu après 10 jours. <br><br> -La configuration de la stratégie est migrée. <br><br> -Les utilisateurs sont migrés vers teams et ne disposent plus de Skype entreprise après la migration. <br><br> -Le client de bureau teams doit être installé sur les utilisateurs. L’installation aura lieu au cours des 10 jours suivant la stratégie sur l’infrastructure Skype entreprise, mais si cette opération échoue, les utilisateurs devront toujours télécharger le client ou se connecter avec un navigateur pris en charge. <br><br> -Les contacts et les réunions sont migrés vers Teams. <br><br> -Les utilisateurs ne peuvent pas se connecter à Skype entreprise entre les transitions de service de temps et les services Office 365, et non jusqu’à ce que les entrées DNS du client soient terminées. <br><br> -Les contacts et les réunions existantes continueront de fonctionner en tant que réunions Skype entreprise. |
+| Migration de Skype entreprise vers Teams. | Les clients Skype entreprise existants sont migrés vers les services Office 365 en Europe, puis transférés vers Microsoft teams dans la région d’Allemagne des services Office 365. | Clients Skype entreprise | -Les utilisateurs ne peuvent pas se connecter à Skype entreprise à la date de la migration. 10 jours avant la migration, nous allons publier dans le centre d’administration pour vous informer du moment où la migration aura lieu, et à nouveau lors du début de la migration. <br><br> -La configuration de la stratégie est migrée. <br><br> -Les utilisateurs sont migrés vers teams et ne disposent plus de Skype entreprise après la migration. <br><br> -Le client de bureau teams doit être installé sur les utilisateurs. L’installation aura lieu au cours des 10 jours suivant la stratégie sur l’infrastructure Skype entreprise, mais si cette opération échoue, les utilisateurs devront toujours télécharger le client ou se connecter avec un navigateur pris en charge. <br><br> -Les contacts et les réunions sont migrés vers Teams. <br><br> -Les utilisateurs ne peuvent pas se connecter à Skype entreprise entre les transitions de service de temps et les services Office 365, et non jusqu’à ce que les entrées DNS du client soient terminées. <br><br> -Les contacts et les réunions existantes continueront de fonctionner en tant que réunions Skype entreprise. |
 |||||
 
 ## <a name="office-services"></a>Services Office

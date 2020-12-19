@@ -12,12 +12,12 @@ ms.collection: enabler-strategic
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: db54ff053dcb1c9c1c608608ab1a37da8090cdb3
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 18bc5d8d0f80f7cee024f4d6358361509879bd11
+ms.sourcegitcommit: 86f75cf77a7a446a79226ca530bd7b5eb39189cb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087510"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49717018"
 ---
 # <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Microsoft SharePoint Syntex adoption : prise en main
 
@@ -32,8 +32,8 @@ Avec de nouveaux services et fonctionnalités AI, vous pouvez créer des applica
 |Entrée manuelle| Traitement des formulaires | Présentation des documents |
 |:-------|:--------|:--------|
 | Saisie de données et main-d’œuvre intensive sur tout le contenu | Traiter le contenu numérique : photos, analyses, reçus, cartes de visite, vidéos avec OCR & texte |  Capturer les types de contenu et les métadonnées des contrats, curriculum vitae et autres documents structurés |
-| Interactives   | Prédéfini, automatisé   | Personnalisé, assisté   | Personnalisé, conforme |
-| Personnes qui effectuent le travail | Enseigné par vos experts techniques (PME). Capturez les types de contenu et les métadonnées des contrats, curriculum vitae et autres documents non structurés. | Les PME sont moins impliquées. à partir de bons de commande, d’applications, d’autres documents structurés et semi-structurés |
+| Interactives   | Prédéfini, automatisé   | Personnalisé, assisté  |
+| Personnes qui effectuent le travail | Enseigné par vos experts techniques (PME). Capturez les types de contenu et les métadonnées des contrats, curriculum vitae et autres documents structurés. | Les PME sont moins impliquées. à partir de bons de commande, d’applications, d’autres documents structurés et semi-structurés |
 
 Le tableau suivant explique ce que vous obtenez lorsque vous utilisez SharePoint Syntex :
 
