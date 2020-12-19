@@ -12,12 +12,12 @@ ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
 ROBOTS: NOINDEX
-ms.openlocfilehash: 9709bec9b6e59ef05903f9c04909c796eb4127f4
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 45469e17870a58966a42a13116b6ba645071722c
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683432"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698530"
 ---
 # <a name="get-started-driving-adoption-of-topic-experiences-preview"></a>Prise en main de l’adoption d’expériences de rubrique (aperçu)
 
@@ -33,7 +33,7 @@ Avant de commencer à adopter, vous devez comprendre les concepts impliqués dan
 - **Identification**: grâce à Microsoft Graph and artificiel Intelligence (ai) Knowledge and People (rubriques, compétences, etc.) sont identifiés et automatiquement organisés en rubriques connexes. Le contenu SharePoint est indexé avec le contenu de sécurité.
 - **Poste**: grâce aux connecteurs de contenu Microsoft Graph (bientôt disponible), vous pouvez vous conformer à des services externes et des référentiels de données.
 
-Pour plus d’informations, vous pouvez consulter la [vue d’ensemble](knowledge-management-overview.md) d’une introduction.
+Pour plus d’informations, vous pouvez consulter la [vue d’ensemble](topic-experiences-overview.md) d’une introduction.
 
 Gardez à l’esprit que :
 
