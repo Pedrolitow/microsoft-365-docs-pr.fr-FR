@@ -16,11 +16,11 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
-description: Découvrez comment lire et comprendre votre facture pour les produits Microsoft Business.
+description: Découvrez comment lire et comprendre votre facture pour les produits de productivité Microsoft.
 keywords: comptes de facturation, informations sur l’organisation, factures
 ms.openlocfilehash: 80b7e4f14390e2f695dc753358f9e5bebe055bd0
 ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48638410"
@@ -34,125 +34,125 @@ ms.locfileid: "48638410"
 
 ::: moniker-end
 
-La facture fournit un résumé de vos frais et des instructions de paiement. Vous pouvez [afficher votre facture en ligne](#view-your-online-invoice) dans le centre d’administration 365 de Microsoft. Vous pouvez également le télécharger au format. pdf (portable document format) pour l’envoyer par courrier électronique.
+La facture fournit un résumé de vos frais et des instructions de paiement. Vous pouvez [afficher votre facture en ligne](#view-your-online-invoice) dans le centre d’administration Microsoft 365. Vous pouvez également le télécharger au format Portable Document Format (pdf) pour l’envoyer par e-mail.
 
-Si vous avez un abonnement Microsoft 365 uniquement, consultez [la rubrique comprendre votre facture pour microsoft 365 pour les entreprises](understand-your-invoice2.md).
+Si vous avez un abonnement Microsoft 365 uniquement, consultez [Comprendre votre facture pour la productivité Microsoft 365](understand-your-invoice2.md).
 
-## <a name="understand-the-invoice-header"></a>Comprendre l’en-tête de facture
+## <a name="understand-the-invoice-header"></a>Comprendre l’en-tête de la facture
 
-Le haut de la première page identifie la personne responsable du paiement, le lieu d’envoi de la facture et un résumé des frais.
+La partie supérieure de la première page indique qui est responsable du paiement, où la facture est envoyée et un résumé des frais.
 
 | Term | Description |
 | --- | --- |
-| Vendu à |Le compte de facturation qui identifie le nom et l’adresse de l’entité juridique chargée du paiement. Ces informations peuvent être gérées sur la page <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">comptes de facturation</a> , dans laquelle vous pouvez trouver le contrat de compte et gérer les rôles et les autorisations. |
-| Facturer à |Identifie la personne qui reçoit la facture. Ces informations peuvent être gérées sur la page <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">profils de facturation</a> . Le profil de facturation est également affiché sur la page facture en ligne, dans la section Résumé de la **facture** . Pour en savoir plus sur les profils de facturation et sur la façon dont vous pouvez les utiliser pour créer des options de facturation plus flexibles pour votre organisation, consultez la rubrique [Manage Billing Profiles](manage-billing-profiles.md). |
-| Profil de facturation |Nom du profil de facturation utilisé pour définir les propriétés de facture telles que facture, **numéro de bon de commande**et conditions **de**paiement. Ces informations peuvent être gérées sur la page <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">profils de facturation</a> . Pour plus d’informations sur les profils de facturation et sur la façon dont vous pouvez les utiliser pour créer des options de facturation plus flexibles pour votre organisation, consultez la rubrique [Manage Billing Profiles](manage-billing-profiles.md). |
+| Vendu à |Compte de facturation qui identifie le nom et l’adresse de l’entité juridique responsable du paiement. Ces informations peuvent être gérées sur la page <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Comptes de facturation</a>, où vous pouvez trouver le contrat de compte et gérer les rôles et les autorisations. |
+| Destinataire de la facture |Identifie le destinataire de la facture. Ces informations peuvent être gérées sur la page <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">Profils de facturation</a>. Le profil de facturation est également affiché sur la page de facture en ligne, dans la section **Résumé de la facture**. Pour en savoir plus sur les profils de facturation et leur utilisation pour créer des options de facturation plus souples pour votre organisation, consultez [Gérer les profils de facturation](manage-billing-profiles.md). |
+| Profil de facturation |Le nom du profil de facturation utilisé pour définir les propriétés de la facture, telles que **Destinataire de la facture**, **Numéro de bon de commande** et les conditions de paiement. Ces informations peuvent être gérées sur la page <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">Profils de facturation</a>. Pour en savoir plus sur les profils de facturation et leur utilisation pour créer des options de facturation plus souples pour votre organisation, consultez [Gérer les profils de facturation](manage-billing-profiles.md). |
 | Numéro de facture |Numéro de facture unique généré par Microsoft utilisé à des fins de suivi. |
-| Date de facturation |Date à laquelle la facture est générée, généralement entre cinq et 12 jours après la fin du cycle de facturation. Vous pouvez vérifier la date de votre facture sur la page Détails du profil de facturation. Les frais qui se produisent entre la fin de la période de facturation et la date de facturation sont inclus dans la facture du mois suivant, car ils se trouvent dans la période de facturation suivante. Les dates de début et de fin de la période de facturation de chaque facture sont répertoriées dans le fichier PDF de facture au-dessus de la **synthèse de facturation**.|
-| Conditions de paiement |Le mode de paiement de votre facture Microsoft. *Net 30 jours* signifie que vous payez en suivant les instructions figurant sur votre facture, dans les 30 jours suivant la date de facturation. |
+| Date de facturation |Date de création de la facture, en général de cinq à 12 jours après la fin du cycle de facturation. Vous pouvez consulter votre date de facturation sur la page des détails du profil de facturation. Les frais générés entre la fin de la période de facturation et la date de facturation sont inclus dans la facture du mois suivant, car ils se trouvent dans la période de facturation suivante. Les dates de début et de fin de facturation de chaque facture sont répertoriées dans le fichier PDF de la facture au-dessus de **Résumé de facturation**.|
+| Conditions de paiement |Paiement de la facture Microsoft. *30 jours net* signifie que vous payez dans les instructions suivantes sur votre facture, dans les 30 jours suivant la date de facturation. |
 
-## <a name="understand-the-billing-summary"></a>Comprendre le résumé de la facturation
+## <a name="understand-the-billing-summary"></a>Le résumé de facturation
 
-Le **récapitulatif de facturation** affiche le résumé des frais depuis la période de facturation précédente, les crédits appliqués, les taxes et le montant total dû.
+Le **Résumé de facturation** affiche le résumé des frais depuis la période de facturation précédente, les crédits qui ont été imputés, les taxes et le montant total dû.
 
 | Term | Description |
 | --- | --- |
-| Frais|Nombre total de produits achetés pour cette période de facturation, ainsi que leurs frais et taxes connexes. Les achats sont regroupés pour fournir un aperçu concis de votre facture. |
-| Crédits |Crédits reçus à partir de retours |
-| Crédits Azure appliqués |Vos crédits Azure appliqués automatiquement à Azure facturent chaque période de facturation. Si vous n’avez aucun crédit Azure, ce champ est masqué. Pour plus d’informations sur les crédits Azure, consultez la rubrique [Track Microsoft Customer Agreement credit Balance](https://docs.microsoft.com/azure/billing/billing-mca-check-azure-credits-balance). |
-| Subtotal |Montant des impôts impayés |
-| Taxes |Type et montant de la taxe que vous payez, en fonction du pays de votre profil de facturation. Si vous n’avez pas besoin de payer les taxes, aucune taxe n’est indiquée sur votre facture. |
+| Frais|Nombre total de produits achetés pour cette période de facturation, ainsi que les frais et taxes correspondants. Les achats sont agrégés pour offrir un affichage concis de votre facture. |
+| Crédits |Crédits reçus de retours |
+| Crédits Azure appliqués |Vos crédits Azure qui sont automatiquement appliqués à Azure génèrent des frais pour chaque période de facturation. Si vous n’avez pas de crédit Azure, ce champ est masqué. Pour plus d’informations sur les crédits Azure, consultez [Suivre le solde du crédit Azure du contrat client Microsoft](https://docs.microsoft.com/azure/billing/billing-mca-check-azure-credits-balance). |
+| Sous-total |Montant avant impôt dû |
+| Taxe |Le type et le montant des taxes payées, selon le pays de votre profil de facturation. Si vous n’avez pas besoin de payer les taxes, aucune taxe n’est affichée sur votre facture. |
 
-### <a name="understand-your-charges"></a>Comprendre vos frais
+### <a name="understand-your-charges"></a>Les frais
 
-Les pages de frais indiquent le coût réparti par produit. Pour les clients Azure, les frais peuvent être organisés par section facture. Pour plus d’informations sur la façon dont les sections de facturation sont utilisées avec les produits Azure, consultez la rubrique relative aux [factures](https://docs.microsoft.com/azure/billing/billing-mca-overview#invoice-sections) dans la rubrique [prise en main de votre compte de facturation Microsoft Customer Agreement](https://docs.microsoft.com/azure/billing/billing-mca-overview). Dans chaque commande de produit, le coût est réparti par famille de services.
+Les pages de frais indiquent le coût divisé par produit. Pour les clients Azure, les frais peuvent être organisés par section de facture. Pour plus d’informations sur l’utilisation des sections de facture avec les produits Azure, consultez [Sections de facture](https://docs.microsoft.com/azure/billing/billing-mca-overview#invoice-sections) dans [Prise en main de votre compte de facturation du contrat client Microsoft](https://docs.microsoft.com/azure/billing/billing-mca-overview). Au sein de chaque commande de produit, le coût est divisé par la famille de service.
 
 | Term |Description |
 | --- | --- |
-| Prix unitaire | Prix unitaire effectif du service (en devise de tarification) utilisé pour calculer les frais. Ce prix est unique pour un produit, une famille de services, un compteur et une offre. |
-| Compt | Quantité achetée ou consommée pendant la période de facturation |
-| Frais/crédits | Montant net des frais après l’application des crédits/remboursements |
+| Prix unitaire | Le prix unitaire réel du service (dans la devise de tarification) utilisé pour calculer les frais. Ce prix est unique pour un produit, une famille de services, un compteur et une offre. |
+| Qté | Quantité achetée ou consommée pendant la période de facturation |
+| Frais/crédits | Montant net des frais après les crédits/remboursements |
 | Crédit Azure | Montant des crédits Azure appliqués aux frais/crédits |
-| Taux de taxation | Taux de taxation, en fonction du pays |
-| Montant de la taxe | Montant de la taxe appliquée à l’achat en fonction du taux de taxation |
+| Taux d’imposition | Taux d’imposition, selon le pays |
+| Montant de l’impôt  | Montant de l’impôt appliqué à l’achat sur la base du taux d’imposition |
 | Total | Montant total dû pour l’achat |
 
-Les détails des lignes varient en fonction du type de produit facturé. Par exemple, pour les produits Azure, la quantité de crédits Azure appliqués est affichée. Les produits basés sur le siège indiquent un prix unitaire et une quantité. Les détails de la facture indiquent les produits achetés, l’escompte ou les crédits qui ont été appliqués, le taux et le montant de la taxe, ainsi que les totaux des lignes.
+Les détails des éléments de ligne varient en fonction du type de produit facturé. Par exemple, pour les produits Azure, la quantité de crédits Azure appliqués est affichée. Les produits basés sur un poste affichent un prix unitaire et une quantité. Les détails de la facture affichent les produits achetés, les remises ou les crédits qui ont été appliqués, le taux et le montant de l’impôt, ainsi que les totaux des éléments de la ligne.
 
-> Total = charges-crédit Azure + taxe
+> Total = frais - crédit Azure + impôt
 
-Le montant total dû pour chaque famille de services est calculé en soustrayant les crédits Azure des crédits/frais et en ajoutant la taxe :
+Le montant total dû pour chaque famille de service est calculé en soustrayant les crédits Azure des crédits/frais et en ajoutant les taxes :
 
-> Total = charges/crédits-crédit Azure + taxe
+> Total = frais/crédits - crédit Azure + impôt
 
-S’il existe des frais Azure sur votre facture pour lesquels vous souhaitez plus d’informations, consultez [la rubrique consulter votre facture de contrat de client Microsoft](https://docs.microsoft.com/azure/cost-management-billing/understand/review-customer-agreement-bill).
+Si vous souhaitez obtenir des informations supplémentaires sur des frais Azure de votre facture , consultez [Réviser la facture du contrat client Microsoft](https://docs.microsoft.com/azure/cost-management-billing/understand/review-customer-agreement-bill).
 
-## <a name="understand-the-last-invoice-page"></a>Présentation de la dernière page de facturation
+## <a name="understand-the-last-invoice-page"></a>La dernière page de la facture
 
 ### <a name="payment-instructions"></a>Instructions de paiement
 
-Au bas de la facture, vous trouverez des instructions sur le paiement de votre facture. Vous pouvez payer par câble, chèque ou en ligne.
+En bas de la facture figurent des instructions sur le mode de paiement de votre facture. Vous pouvez payer par virement, par chèque ou en ligne.
 
 ### <a name="publisher-information"></a>Informations sur l’éditeur
 
-Si votre facture comporte des services tiers, le nom et l’adresse de chaque éditeur figurent en bas de votre facture.
+Si vous avez des services tiers dans votre facture, le nom et l’adresse de chaque éditeur est noté au bas de votre facture.
 
-## <a name="view-your-online-invoice"></a>Afficher votre facture en ligne
+## <a name="view-your-online-invoice"></a>Consulter votre facture en ligne
 
-Les factures sont disponibles en ligne. Un lien vers votre facture en ligne est disponible à partir de votre facture PDF, ainsi qu’à partir d’une notification par courrier électronique. La facture en ligne est extensible afin que vous puissiez voir les frais sur votre facture et obtenir plus de détails pour chaque élément. La facture en ligne comprend les éléments suivants :
+Les factures sont disponibles en ligne. Un lien vers votre facture en ligne est disponible à partir de votre facture PDF et d’une notification par e-mail. La facture en ligne est extensible de sorte que vous puissiez afficher les frais sur votre facture et consulter plus de détails pour chaque article. La facture en ligne inclut :
 
-- Détails de la **tarification** &mdash; Informations supplémentaires, notamment des détails sur les remises et la tarification des produits.
+- **Détails de la tarification**&mdash;Informations supplémentaires, notamment des détails sur les remises et les prix des produits.
 
-- **Paiement** &mdash; en ligne Vous pouvez choisir d’effectuer un paiement en ligne à partir de la facture.
+- **Paiement en ligne**&mdash;Vous pouvez choisir de faire un paiement en ligne à partir de la facture.
 
-- Gestion des coûts **Azure** &mdash; Pour les clients Azure, les factures en ligne incluent un lien vers la gestion des coûts Azure.
+- **Azure Cost Management**&mdash;Pour les clients Azure, les factures en ligne incluent un lien vers Azure Cost Management.
 
-### <a name="to-view-your-online-invoice"></a>Pour afficher votre facture en ligne
+### <a name="to-view-your-online-invoice"></a>Affichage de la facture en ligne
 
 1. Dans le Centre d’administration, accédez à la page **Factures** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Factures & paiements</a>.
 
-2. Pour télécharger la version. pdf de votre facture, sélectionnez **Télécharger le fichier PDF** de la facture dans la ligne correspondant à la facture que vous souhaitez voir.
+2. Pour télécharger la version. pdf de votre facture, sélectionnez **Télécharger la facture PDF** dans la ligne de la facture que vous voulez consulter.
 
-3. Pour afficher votre facture en ligne, choisissez une facture dans la liste. Vous pouvez également télécharger le fichier. pdf à partir de la page Détails de la facture.
+3. Pour afficher votre facture en ligne, choisissez une facture de la liste. Vous pouvez également télécharger le fichier .pdf à partir de la page des détails de la facture.
 
-## <a name="invoice-faq"></a>FAQ sur les factures
+## <a name="invoice-faq"></a>FAQ des factures
 
 ### <a name="when-is-my-invoice-available"></a>Quand ma facture est-elle disponible ?
 
-Certaines factures sont générées dans les 24 heures suivant l’achat. D’autres factures sont générées à la fin de la période de facturation et incluent tous les éléments de cette période.
+Certaines factures sont générées dans les 24 heures qui suivent l’achat. D’autres factures sont générées à la fin de la période de facturation et comprennent tous les éléments de cette période.
 
-### <a name="how-do-i-pay-the-amount-due-on-my-invoice"></a>Comment puis-je payer le montant dû sur ma facture ?
+### <a name="how-do-i-pay-the-amount-due-on-my-invoice"></a>Comment puis-je régler le montant dû sur ma facture ?
 
-Les instructions de paiement dépendent de votre mode de paiement et sont fournies en bas du document PDF de la facture. Si votre mode de paiement est une carte de crédit, elle est automatiquement facturée dans les 10 jours suivant la date de facturation. Si votre mode de paiement est vérifié ou virement bancaire, reportez-vous aux informations figurant sous **instructions de paiement** dans le fichier PDF.
+Les instructions de paiement dépendent de votre mode de paiement et sont disponibles en bas du fichier PDF de la facture. Si votre mode de paiement est une carte de crédit, elle est automatiquement débitée dans les 10 jours suivant la date de facturation. Si votre mode de paiement est par chèque ou par virement bancaire, consultez les informations sous **Instructions de paiement** dans le fichier PDF.
 
-### <a name="whats-the-difference-between-sold-to-and-bill-to-addresses"></a>Quelle est la différence entre les adresses « vendu à » et « facturation » ?
+### <a name="whats-the-difference-between-sold-to-and-bill-to-addresses"></a>Quelle est la différence entre les adresses « Vendu à » et « Destinataire de la facture » ?
 
-- **Vendu à :** Entité juridique chargée du paiement et identifiée sur la facture. L’adresse fournie ici est utilisée pour déterminer votre taux de t.v.a. à moins que vous n’ayez choisi de fournir une adresse de livraison alternative pendant votre achat. Pour plus d’informations, consultez la rubrique [Tax information](tax-information.md).
-- **Facturation :** Adresse à laquelle la facture physique est envoyée, le cas échéant. Il peut y avoir plusieurs adresses **de facturation** par entité juridique, mais une seule adresse de facturation par profil **de** facturation.
+- **Vendu à :** L’entité juridique responsable du paiement et identifiée sur la facture. L’adresse fournie ici permet de déterminer votre taux d’imposition, sauf si vous choisissez de fournir une adresse d’expédition alternative pendant votre achat. Si vous souhaitez en savoir plus, consultez l’article [Information sur les taxes](tax-information.md).
+- **Destinataire de la facture :** L’adresse à laquelle la facture physique est envoyée, le cas échéant. Il peut y avoir plusieurs adresses de **Destinataire de la facture** par entité juridique, mais une seule adresse de **Destinataire de la facture** par profil de facturation.
 
-### <a name="what-are-billed-amount-and-amount-due"></a>Qu’est-ce que le « montant facturé » et le « montant dû » ?
+### <a name="what-are-billed-amount-and-amount-due"></a>Que signifient « montant facturé » et « montant dû ? »
 
-- **Montant facturé :** Montant total de l’achat que vous avez effectué.
-- **Montant dû :** Solde restant de ce que vous devez.
+- **Montant facturé :** Le montant total de l’achat que vous avez effectué.
+- **Montant dû :** Le solde restant pour ce que vous devez.
 
-### <a name="what-is-the-difference-between-service-period-and-billing-period"></a>Quelle est la différence entre « période de service » et « période de facturation » ?
+### <a name="what-is-the-difference-between-service-period-and-billing-period"></a>Quelle est la différence entre « période de service » et « période de facturation ? »
 
-- **Période de service :** La période de temps pendant laquelle vous serez facturé à utiliser le service.
-- **Période de facturation :** Période depuis la dernière date de facturation.
+- **La période de service :** La période pendant laquelle l'utilisation du service vous est facturée.
+- **La période de facturation :** La période écoulée depuis la date de la dernière facture.
 
-### <a name="how-do-i-view-and-print-my-bill"></a>Comment afficher et imprimer mon facture ?
+### <a name="how-do-i-view-and-print-my-bill"></a>Comment afficher et imprimer ma facture ?
 
-1. Dans la **Billing**  >  page<a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">factures & paiements</a> , sélectionnez une plage de dates de facturation.
-2. Pour imprimer ou enregistrer une copie PDF de la facture, sélectionnez **Télécharger le fichier PDF**de la facture, puis imprimez le PDF.
+1. Sur la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Factures & paiements</a>, sélectionnez une plage de dates de factures.
+2. Pour imprimer ou enregistrer une copie PDF de la facture, sélectionnez **Télécharger le fichier PDF de la facture**, puis imprimez le fichier PDF.
 
-Pour en savoir plus, consultez [la rubrique consulter votre](view-your-bill-or-invoice.md)facture.
+Pour plus d’informations, consultez[Afficher votre facture](view-your-bill-or-invoice.md).
 
-### <a name="why-dont-i-see-azure-prepayment-as-a-payment-method"></a>Pourquoi ne puis-je pas voir paiement anticipé Azure comme mode de paiement ?
+### <a name="why-dont-i-see-azure-prepayment-as-a-payment-method"></a>Pourquoi ne puis-je pas voir l’acompte Azure comme mode de paiement ?
 
-Azure acompte est disponible comme mode de paiement uniquement pour les produits et services Azure éligibles.
+L’acompte Azure est disponible comme mode de paiement uniquement pour les produits et services Azure éligibles.
 
-## <a name="need-help-contact-support"></a>Besoin d’aide ? Contactez le support technique.
+## <a name="need-help-contact-support"></a>Besoin d'aide ? Contactez le support technique.
 
-Si vous avez des questions ou si vous avez besoin d’aide pour vos crédits Azure, <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">créez une demande de support technique avec Azure</a>.
+Si vous avez des questions ou si vous avez besoin d’aide relativement à vos crédits Azure, <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">créer une demande de support avec support Azure</a>.
 
-Si vous avez des questions ou si vous avez besoin d’aide pour votre facture dans le centre d’administration Microsoft 365, [Contactez le support technique pour les produits professionnels](../../admin/contact-support-for-business-products.md).
+Si vous avez des questions ou si vous avez besoin d’aide relativement à votre facture dans le centre d’administration Microsoft 365, [contacter le support technique pour les produits professionnels](../../admin/contact-support-for-business-products.md).
