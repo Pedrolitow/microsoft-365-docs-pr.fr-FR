@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: Implémentez Microsoft Information Protection (MIP) pour vous permettre de protéger les informations sensibles où qu’elles se trouvent.
-ms.openlocfilehash: 59f57c920f2b753994f2335a6f2ed9ac5b7b77d1
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 2a1ec47ce888dc6d31868d65f9c4c113fa9b968c
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613086"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709506"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft Information Protection dans Microsoft 365.
 
@@ -59,7 +59,7 @@ Pour appliquer des actions de protection flexibles qui incluent le chiffrement, 
 
 |Fonctionnalité|Utilité|Prise en main|
 |:------|:------------|---------------------|:----------------------------|
-|[Étiquettes de confidentialité](sensitivity-labels.md)| Une solution unique pour les applications, les services et les appareils qui permet d’étiqueter et de protéger vos données lors de leur déplacement à l’intérieur et à l’extérieur de votre organisation <br /><br />Exemple de scénario : [appliquer et afficher les étiquettes de confidentialité dans Power BI et protéger les données lorsqu’elles sont exportées](https://docs.microsoft.com/power-bi/admin/service-security-apply-data-sensitivity-labels)|[Prise en main des étiquettes de confidentialité](get-started-with-sensitivity-labels.md) |
+|[Étiquettes de confidentialité](sensitivity-labels.md)| Une solution unique pour les applications, les services et les appareils qui permet d’étiqueter et de protéger vos données lors de leur déplacement à l’intérieur et à l’extérieur de votre organisation <br /><br />Exemple de scénario : [Appliquer et afficher les étiquettes dans Power BI et protéger les données lorsqu’elles sont enregistrées hors du service](https://docs.microsoft.com/power-bi/admin/service-security-apply-data-sensitivity-labels)|[Prise en main des étiquettes de confidentialité](get-started-with-sensitivity-labels.md) |
 |[Client d’étiquetage unifié Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)| Étend les étiquettes de confidentialité pour des fonctionnalités supplémentaires, qui incluent l’étiquetage et la protection de tous les types de fichiers depuis l’Explorateur de fichiers et PowerShell, pour les ordinateurs Windows<br /><br /> Exemples de fonctionnalités supplémentaires : [configurations personnalisées pour le client d’étiquetage unifié Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations)| [Guide de l’utilisateur pour l’étiquetage unifié d’Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide)|
 |[Chiffrement à double clé](double-key-encryption.md)| Dans tous les cas, vous seul pouvez déchiffrer le contenu protégé. Pour respecter les obligations réglementaires, vous devez conserver les clés de chiffrement dans la limite géographique définie | [Déployer le chiffrement à double clé](double-key-encryption.md#deploy-dke)|
 |[Chiffrement de messages Office 365 (OME)](ome.md)| Chiffre les e-mails et les documents joints envoyés à tous les utilisateurs sur tous les appareils, afin que seuls les destinataires autorisés puissent lire les informations envoyées par e-mail  <br /><br />Exemple de scénario : [révoquer les e-mails chiffrés avec le Chiffrement avancé des messages](revoke-ome-encrypted-mail.md) | [Configurer les nouvelles fonctionnalités de chiffrement de messages](set-up-new-message-encryption-capabilities.md)|

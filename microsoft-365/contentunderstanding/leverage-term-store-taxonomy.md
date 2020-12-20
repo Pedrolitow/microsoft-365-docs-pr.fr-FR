@@ -10,12 +10,12 @@ search.appverid: ''
 ms.collection: enabler-strategic
 localization_priority: Priority
 description: Utilisez la taxonomie du magasin de termes lors de la création d’un extracteur dans votre modèle de compréhension de document via Microsoft SharePoint Syntex.
-ms.openlocfilehash: a8078e6ff2d2ecd0f98c22b602a54675f7d62816
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: cf396d14a497981389cc336c5efd121f36392181
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701094"
+ms.locfileid: "49709547"
 ---
 # <a name="leverage-term-store-taxonomy-when-creating-an-extractor"></a>Utiliser la taxonomie du magasin de termes lors de la création d’un extracteur
 
@@ -25,7 +25,7 @@ ms.locfileid: "49701094"
 
 </br>
 
-Lorsque vous créez un extracteur dans votre modèle de compréhension de document via SharePoint Syntex, vous pouvez tirer parti de la taxonomie du magasin de termes [Services de métadonnées gérées](https://docs.microsoft.com/sharepoint/managed-metadata#terms) pour afficher les termes recommandés concernant les données extraites.  
+Lorsque vous créez un extracteur dans votre modèle de compréhension de document via SharePoint Syntex, vous pouvez tirer parti des ensembles de termes globaux [Services de métadonnées gérées](https://docs.microsoft.com/sharepoint/managed-metadata) pour afficher les termes recommandés concernant les données extraites.  
 
 Par exemple, votre modèle identifie et classe tous les documents **Contrat** chargés dans la bibliothèque de documents.  De plus, le modèle extrait également une valeur de **service de contrat** de chaque contrat et l’affiche dans une colonne de la vue de la bibliothèque. Les diverses valeurs de services des contrats incluent plusieurs éléments plus anciens, à présent inutilisés par votre société et renommés. Par exemple, toutes les références aux termes *Conception*, *Graphiques* ou *Topographie* (services de contrat) doivent à présent recevoir l’appellation *Créatif*. Chaque fois que votre modèle extrait l’un des termes obsolètes d’un document contractuel, il doit afficher le terme à jour, à savoir Créatif, dans la vue de la bibliothèque. Dans l’exemple ci-après, lors de la formation du modèle, nous constatons qu’un exemple de document contient le terme obsolète *Conception*.
 
@@ -36,9 +36,6 @@ Par exemple, votre modèle identifie et classe tous les documents **Contrat** ch
 Les ensembles de termes sont configurés dans le magasin de termes Services de métadonnées gérées (MMS) dans le Centre d’administration SharePoint. Dans l’exemple ci-dessous, *l’ensemble de termes* [Services de contrat](https://docs.microsoft.com/sharepoint/managed-metadata#term-set) est configuré pour inclure un certain nombre de termes, y compris *Créatif*.  Les détails indiquent que le terme a trois synonymes (*Conception*, *Graphiques* et *Topographie*). Il convient de les renommer *Créatif*. 
 
    ![Ensemble de termes](../media/content-understanding/term-store.png)</br>
-
-> [!NOTE]
->  Les ensembles de termes sont configurés comme globaux dans le champ MMS du centre de contenu.
 
 Plusieurs raisons peuvent expliquer le désir d’utiliser un synonyme de votre ensemble de termes. Par exemple, cet ensemble peut inclure des termes obsolètes, des termes renommés ou des termes différents en fonction des services de votre organisation.
 
