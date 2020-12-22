@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En savoir plus sur les stratégies de rétention et les étiquettes de rétention, qui permettent de conserver les éléments dont vous avez besoin et de supprimer ceux qui ne vous servent pas.
-ms.openlocfilehash: c405f2bf8d9700c9a0874ba9d921a290ae63de16
-ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
+ms.openlocfilehash: 9745a93139f591185e7457f5ba5c0b9b2fd56348
+ms.sourcegitcommit: 16e018f8b6eef5dad48eabf179691ead3cebe533
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719344"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "49725175"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>En savoir plus sur les stratégies et les étiquettes de rétention
 
@@ -282,7 +282,7 @@ Par exemple, un élément peut être soumis à une stratégie de rétention conf
 
 Plusieurs facteurs déterminent la suppression d’un élément, notamment l’action de suppression d’une étiquette de rétention a la priorité sur l’action de suppression d’une stratégie de rétention.
 
-Utilisez ce flux pour comprendre les résultats de la rétention et de la suppression d’un seul élément, où chaque niveau agit comme l’élément décisif de haut en bas.
+Utilisez ce flux pour comprendre les résultats de la rétention et de la suppression d’un seul élément, où chaque niveau agit comme l’élément décisif pour les conflits, de haut en bas. Si le résultat est déterminé par le premier niveau, car il n’y a plus de conflits, il n’est pas nécessaire de passer au niveau supérieur, et ainsi de suite.
 
 > [!IMPORTANT]
 > Si vous utilisez des étiquettes de rétention : avant d’utiliser ce flux pour déterminer le résultat de plusieurs paramètres de rétention sur le même élément, assurez-vous de [ l’étiquette de rétention qui est appliquée](#only-one-retention-label-at-a-time).
@@ -341,7 +341,7 @@ Exemples plus complexes qui combinent les actions de conservation et de suppress
     
     **Résultat**: l’élément est conservé pendant sept ans, car la rétention a la priorité sur la suppression et la période de rétention la plus longue est de sept ans. À la fin de cette période de rétention, l’élément est supprimé en raison de l’action de suppression des stratégies de rétention qui a été différée pendant la conservation de l’élément.
     
-    Bien que les deux stratégies de rétention aient des dates différentes pour les actions de suppression, l’élément ne peut être supprimé qu’à la fin de la période de rétention la plus longue, de sorte qu’il n’y a pas de conflit à résoudre.
+    Bien que les deux stratégies de rétention aient des dates différentes pour les actions de suppression, l’élément le plus ancien possible peut être supprimé à la fin de la période de rétention la plus longue, qui dépasse les deux dates de suppression. Dans cet exemple, il n’y a pas de conflit à résoudre pour les dates de suppression de sorte que tous les conflits soient résolus par le deuxième niveau.
 
 2.  Ces paramètres de rétention sont appliqués à un élément :
     
@@ -349,7 +349,7 @@ Exemples plus complexes qui combinent les actions de conservation et de suppress
     - Une stratégie de rétention étendue qui conserve pendant cinq ans, puis supprime
     - Une étiquette de rétention qui conserve pendant trois ans, puis supprime
     
-    **Résultat**: l’élément est conservé pendant cinq ans parce qu’il s’agit de la période de rétention la plus longue. À la fin de cette période de rétention, l’élément est supprimé en raison de l’action de suppression de trois ans de l’étiquette de rétention qui a été différée pendant la conservation de l’élément. La suppression des étiquettes de rétention a la priorité sur la suppression de toutes les stratégies de rétention.
+    **Résultat**: l’élément est conservé pendant cinq ans parce qu’il s’agit de la période de rétention la plus longue. À la fin de cette période de rétention, l’élément est supprimé en raison de l’action de suppression de trois ans de l’étiquette de rétention qui a été différée pendant la conservation de l’élément. La suppression des étiquettes de rétention a la priorité sur la suppression de toutes les stratégies de rétention. Dans cet exemple, tous les conflits sont résolus au troisième niveau.
 
 ## <a name="use-preservation-lock-to-restrict-changes-to-policies"></a>Utiliser le verrouillage de conservation pour restreindre les modifications aux stratégies
 
