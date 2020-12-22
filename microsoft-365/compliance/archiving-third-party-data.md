@@ -22,12 +22,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment importer des données tierces à partir de plateformes de médias sociaux, de plateformes de messagerie instantanée et de plateformes de collaboration sur des documents vers des boîtes aux lettres Microsoft 365.
-ms.openlocfilehash: 42835d103e027bd63687151554f811dc0945d46f
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 18fb9c757652cbebb456da18285444272766167f
+ms.sourcegitcommit: a3215cc22faa47e935d22300c481e47ab2680b44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682615"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "49722857"
 ---
 # <a name="archive-third-party-data"></a>Archiver des données tierces
 
@@ -61,9 +61,12 @@ Le tableau suivant répertorie les connecteurs de données tiers disponibles dan
 |[O2 réseau <sup>1</sup>](archive-o2-network-data.md)     |![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
 |[Badges physique](import-physical-badging-data.md) ||||||![Coche](../media/checkmark.png)|
 |[Tableau croisé dynamique <sup>2</sup>](archive-pivot-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[Redtail Speak <sup>2</sup>](archive-redtailspeak-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
 |[Vente Reuters <sup>2</sup>](archive-reutersdealing-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
 |[Reuters Eikon <sup>2</sup>](archive-reuterseikon-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
 |[Reuters FX <sup>2</sup>](archive-reutersfx-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[Salesforce chat <sup>2</sup>](archive-salesforcechatter-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|||
+|[ServiceNow <sup>2</sup>](archive-servicenow-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|||
 |[Marge eDiscovery <sup>2</sup>](archive-slack-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
 |[Symphony <sup>2</sup>](archive-symphony-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
 |[Réseau TELUS <sup>1</sup>](archive-telus-network-data.md)    |![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
@@ -76,6 +79,7 @@ Le tableau suivant répertorie les connecteurs de données tiers disponibles dan
 |[Espace de travail à partir de Facebook <sup>2</sup>](archive-workplacefromfacebook-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
 |[XIP <sup>2</sup>](archive-xip-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
 |[XSLT/XML <sup>2</sup>](archive-xslt-xml-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|||
+|[Yieldbroker <sup>2</sup>](archive-yieldbroker-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
 |[Faire un zoom sur les réunions <sup>2</sup>](archive-zoommeetings-data.md)     |![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
 ||||||||
 

@@ -12,16 +12,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données CellTrust à partir de Globanet vers Microsoft 365. Ce connecteur vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365. Une fois que vous avez archivé ces données, vous pouvez utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces.
-ms.openlocfilehash: 990f52eb48fcf031bda3c9f17884ff3d384afc55
-ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
+ms.openlocfilehash: 5870e823562f86b8b984e81fd03eeebd1b01f0ff
+ms.sourcegitcommit: a3215cc22faa47e935d22300c481e47ab2680b44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49620485"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "49722911"
 ---
 # <a name="set-up-a-connector-to-archive-celltrust-data"></a>Configuration d’un connecteur pour l’archivage des données CellTrust
 
-Utilisez un connecteur Globanet dans le centre de conformité Microsoft 365 pour importer et archiver des données à partir de la plateforme CellTrust vers des boîtes aux lettres utilisateur dans votre organisation 365 Microsoft. Globanet fournit un connecteur [CellTrust](https://globanet.com/celltrust/) qui est configuré pour capturer des éléments à partir de la source de données tierce (de manière régulière) et les importer dans Microsoft 365. Le connecteur convertit le contenu des messages SMS des comptes CellTrust en format de message électronique, puis importe ces éléments dans la boîte aux lettres de l’utilisateur dans Microsoft 365.
+Utilisez un connecteur Globanet dans le centre de conformité Microsoft 365 pour importer et archiver des données à partir de la plateforme CellTrust vers des boîtes aux lettres utilisateur dans votre organisation 365 Microsoft. Globanet fournit un connecteur [CellTrust](https://globanet.com/celltrust/) qui capture les éléments de la source de données tierce et importe ces éléments dans Microsoft 365. Le connecteur convertit le contenu des messages SMS des comptes CellTrust en format de message électronique, puis importe ces éléments dans la boîte aux lettres de l’utilisateur dans Microsoft 365.
 
 Une fois les données CellTrust stockées dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer les fonctionnalités de conformité de Microsoft 365 telles que la conservation pour litige, eDiscovery, les stratégies de rétention et les étiquettes de rétention, ainsi que la conformité des communications L’utilisation d’un connecteur CellTrust pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à respecter les stratégies gouvernementales et réglementaires.
 
