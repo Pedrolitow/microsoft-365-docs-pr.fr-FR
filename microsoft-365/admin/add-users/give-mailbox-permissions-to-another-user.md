@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: "Découvrez comment accorder le droit à un utilisateur d'accéder à la boîte aux lettres d'un autre utilisateur. Cela permet à l’utilisateur de lire et d’envoyer des messages électroniques à partir de la boîte aux lettres d'un autre utilisateur. "
-ms.openlocfilehash: 0b6977efbd6041a11c67ed66c9b7ecc72a38bde4
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: af12cfe3acad9e12ca3983c9fa13f52b72f0a467
+ms.sourcegitcommit: 16e018f8b6eef5dad48eabf179691ead3cebe533
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560374"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "49725152"
 ---
 # <a name="give-mailbox-permissions-to-another-user---admin-help"></a>Accorder des autorisations de boîte aux lettres à un autre utilisateur – Aide de l’administrateur
 
@@ -121,6 +121,10 @@ Lorsque vous avez reçu l’accès à une boîte aux lettres, plusieurs méthode
 5. Sélectionnez **Ajouter des autorisations**, puis entrez le nom de l’utilisateur ou des utilisateurs que vous souhaitez autoriser à lire du courrier à partir de cette boîte aux lettres.
 
 6. Cliquez sur **Enregistrer**.
+
+
+> [!NOTE]
+> Les autorisations **Lecture** et **Gestion** sont appelées autorisations **Accès complet** lorsqu’elles sont accordées dans le centre d’administration Exchange. L’autorisation Accès complet n’octroie pas les autorisations **Envoyer en tant que** ou **Envoyer de la part de**.
 
 ::: moniker-end
 
