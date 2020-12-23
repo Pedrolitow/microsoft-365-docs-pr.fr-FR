@@ -14,18 +14,18 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: .
-ms.openlocfilehash: 76cd560c3b97bb67d25d2e4ff2c219669c3d4f0d
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: f75504941e8481d35458ad2ae6b5e8a72c5e8c8c
+ms.sourcegitcommit: a49338bde6923b13132c7b9e4c6bb75c14163c72
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658880"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "49728187"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>Contrôler le transfert automatique du courrier électronique externe dans Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-En tant qu’administrateur, vous pouvez être amené à limiter ou contrôler automatiquement les messages transférés à des destinataires externes (destinataires extérieurs à votre organisation). Le transfert du courrier peut être utile, mais peut également poser un risque de sécurité en raison de la divulgation potentielle des informations. Les agresseurs peuvent utiliser ces informations pour attaquer votre organisation ou vos partenaires.
+En tant qu’administrateur, vous pouvez être amené à limiter ou contrôler automatiquement les messages transférés à des destinataires externes (destinataires extérieurs à votre organisation). Le transfert du courrier peut être une fonctionnalité utile, mais peut également présenter un risque de sécurité en raison de la divulgation potentielle des informations. Les agresseurs peuvent utiliser ces informations pour attaquer votre organisation ou vos partenaires.
 
 Les types de transferts automatiques suivants sont disponibles dans Microsoft 365 :
 
