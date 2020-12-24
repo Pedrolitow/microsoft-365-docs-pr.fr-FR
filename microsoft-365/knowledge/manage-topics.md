@@ -11,17 +11,24 @@ search.appverid: ''
 ms.collection: enabler-strategic
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: 832067d157ed9ffcba1ed9ad514c375cbbdd752b
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: 92cf9c860ddbf199c70a7c2d89a7daba3dfe0fe7
+ms.sourcegitcommit: 18f95c4b7f74881b4a6ce71ad2ffa78a6ead5584
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698837"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "49731325"
 ---
 # <a name="manage-topics-in-the-topic-center-preview"></a>Gérer les rubriques dans le centre de la rubrique (aperçu)
 
 > [!Note] 
 > Le contenu de cet article est destiné à Project cortex privé preview. [En savoir plus sur le Projet cortex](https://aka.ms/projectcortex).
+
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LxDx]  
+
+</br>
+
 
 Dans le Centre des rubriques, un gestionnaire de connaissances peut afficher la page **gérer les rubriques** pour examiner les rubriques qui ont été identifiées dans les emplacements sources SharePoint, comme indiqué par votre administrateur de connaissances.  
 
@@ -38,7 +45,7 @@ Les gestionnaires de connaissances aident à orienter les rubriques découvertes
 
    ![Graphique de cycle de vie des rubriques](../media/knowledge-management/topic-lifecycle.png) </br> 
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Conditions requises
 
 Pour gérer les rubriques dans le Centre des rubriques, vous devez :
 - Disposer d’une licence pour une rubrique.

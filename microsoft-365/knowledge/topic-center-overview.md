@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: enabler-strategic
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: ea0e3ba186956e35a7c7b619b1cd032726f7952f
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: 3e6a0e8e6917b62c1789ebcd689ba7dc1e64e9e0
+ms.sourcegitcommit: 18f95c4b7f74881b4a6ce71ad2ffa78a6ead5584
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698620"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "49731378"
 ---
 # <a name="topic-center-overview-preview"></a>Présentation du centre de rubriques (aperçu)
 
@@ -46,6 +46,13 @@ Le centre de rubrique est créé lors de l’installation de la rubrique. Une fo
 
 
 ## <a name="home-page"></a>Page d’accueil
+
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LAhZ]  
+
+</br>
+
 
 Sur la page d’accueil du centre de la rubrique, vous pouvez voir les rubriques de votre organisation sur lesquelles vous disposez d’une connexion.
 

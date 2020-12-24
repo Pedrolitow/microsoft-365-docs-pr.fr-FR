@@ -12,12 +12,12 @@ ms.collection: enabler-strategic
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Vue d’ensemble des expériences de rubrique.
-ms.openlocfilehash: 9321f349056c1c4df36b6bd725214f3c6758cf6a
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: 8b06dd016295c8b0712a7c18c2296a318cd826ba
+ms.sourcegitcommit: 18f95c4b7f74881b4a6ce71ad2ffa78a6ead5584
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698848"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "49731320"
 ---
 # <a name="topic-experiences-overview-preview"></a>Vue d’ensemble de la rubrique (aperçu)
 
@@ -26,7 +26,11 @@ ms.locfileid: "49698848"
 
 Les expériences de rubrique utilisent la technologie Microsoft AI, Microsoft 365, Delve, Microsoft Graph, Search, ainsi que d’autres composants et services pour créer un réseau de connaissances dans votre environnement Microsoft 365. 
 
-   ![Flux de gestion des connaissances](../media/knowledge-management/knowledge-management-flowchart.png) </br> 
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LhZP]  
+
+</br>
 
 Son objectif est de convertir les informations en connaissances et de les transmettre à vos utilisateurs dans les applications qu’ils utilisent quotidiennement, telles que les pages modernes SharePoint et Microsoft Search.
 

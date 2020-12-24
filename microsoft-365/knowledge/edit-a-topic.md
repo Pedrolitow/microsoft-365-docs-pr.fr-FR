@@ -11,21 +11,27 @@ ms.collection: enabler-strategic
 ms.service: ''
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9bce380e9e1380f2b2560762d2df37352251bf2b
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: 809d3936ed27275873f63526e7dfc8f91a15a0cc
+ms.sourcegitcommit: 18f95c4b7f74881b4a6ce71ad2ffa78a6ead5584
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698829"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "49731354"
 ---
 # <a name="edit-an-existing-topic-preview"></a>Modifier une rubrique existante (aperçu)
 
 > [!Note] 
 > Le contenu de cet article est destiné à Project cortex privé preview. [En savoir plus sur le Projet cortex](https://aka.ms/projectcortex).
 
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LA4n]  
+
+</br>
+
 Dans les expériences de rubrique, vous pouvez modifier une rubrique existante. Vous devrez peut-être procéder ainsi si vous voulez corriger ou ajouter des informations supplémentaires à une page de rubrique existante. 
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Conditions requises
 
 Pour modifier une rubrique existante, vous devez :
 - Disposer d’une licence pour une rubrique.

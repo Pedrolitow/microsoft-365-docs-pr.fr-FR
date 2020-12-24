@@ -11,14 +11,20 @@ search.appverid: MET150
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Découvrez comment configurer des expériences de rubrique dans Microsoft 365
-ms.openlocfilehash: e11f0b75556a4a8ac0ffa40269d7166258128daf
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: df4dccead4b627a215ec7ebd11932aa0f2b6ac08
+ms.sourcegitcommit: 18f95c4b7f74881b4a6ce71ad2ffa78a6ead5584
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698554"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "49731366"
 ---
 # <a name="set-up-topic-experiences-in-microsoft-365"></a>Configuration des expériences de rubrique dans Microsoft 365
+
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LBp7]  
+
+</br>
 
 Vous pouvez utiliser le centre d’administration Microsoft 365 pour installer et configurer des [expériences de rubrique](topic-experiences-overview.md). 
 
@@ -26,7 +32,7 @@ Il est important de planifier la meilleure façon de configurer et de configurer
 
 Vous devez être un administrateur général ou un administrateur SharePoint pour accéder au centre d’administration Microsoft 365 et configurer des expériences de rubrique.
 
-## <a name="set-up-topic-experiences"></a>Configurer des expériences de rubrique
+## <a name="set-up-topic-experiences"></a>Configurer les expériences de sujets
 
 Pour configurer des expériences de rubrique dans Microsoft 365
 
