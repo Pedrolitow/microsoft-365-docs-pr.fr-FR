@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Créez des étiquettes de rétention et des stratégies d’étiquetage automatique afin de pouvoir appliquer les étiquettes de manière automatique pour conserver les éléments utiles et supprimer les éléments inutiles.
-ms.openlocfilehash: 766106e9c650047e37c9fa341bd2e78b390d814d
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: b4e1afbc520b7ec046b4af399e7c1c0cd094e8f9
+ms.sourcegitcommit: 5756896ad87e28fac20f7981eaaeacfb0c098254
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519452"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "49730155"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Application automatique d’une étiquette de rétention pour conserver ou supprimer du contenu
 
@@ -31,7 +31,7 @@ ms.locfileid: "49519452"
 > [!NOTE]
 > Ce scénario n’est pas pris en charge pour les [enregistrements réglementaires](records-management.md#records).
 
-L’une des fonctionnalités les plus puissantes des [étiquettes de rétention](retention.md) est la possibilité de les appliquer automatiquement au contenu qui remplit certaines conditions. Dans ce cas, les membres de votre organisation n’ont pas besoin d’appliquer les étiquettes de rétention. Microsoft 365 s’en charge à leur place.
+L’une des fonctionnalités les plus puissantes des [étiquettes de rétention](retention.md) est la possibilité d’appliquer celles-ci automatiquement à tout contenu correspondant à certaines conditions spécifiques. Dans ce cas, les personnes au sein de votre organisation ne doivent pas appliquer les étiquettes de rétention. Microsoft 365 s’en charge à leur place.
   
 Les étiquettes de rétention appliquées automatiquement sont puissantes pour les raisons suivantes :
   
@@ -53,22 +53,23 @@ Les processus d’application automatique d’une étiquette de rétention sont 
 Utilisez les instructions suivantes pour les deux étapes d’administration.
 
 > [!NOTE]
-> Les polices automatiques utilisent l'étiquetage côté service avec des conditions pour appliquer automatiquement des étiquettes de conservation. Vous pouvez également appliquer automatiquement un label de conservation avec une politique d'étiquetage lorsque vous faites ce qui suit : 
+> Les stratégies automatiques utilisent l’étiquetage côté service avec des conditions pour appliquer automatiquement des étiquettes de rétention. Vous pouvez également appliquer automatiquement une étiquette de rétention avec une stratégie d’étiquette lorsque vous procédez comme suit : 
 >
-> - Appliquer un label de conservation par défaut pour sharePoint et Outlook, de sorte que les contenus non étiquetés soient automatiquement étiquetés
->- Appliquer automatiquement un label de conservation au e-mail en utilisant des règles
+> - Application d’une étiquette de rétention à un modèle de compréhension de document dans SharePoint Syntex.
+> - Application d’une étiquette de rétention par défaut pour SharePoint et Outlook
+>- Application d’une étiquette de rétention pour les e-mails à l’aide de règles Outlook
 >
 > Pour ces scénarios, voir [Créer des étiquettes de rétention et les appliquer dans les applications](create-apply-retention-labels.md).
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-L’administrateur général de votre organisation dispose de toutes les autorisations pour créer et modifier les étiquettes de rétention ainsi que leurs stratégies. Si vous ne vous connectez pas en tant qu’administrateur général, consultez [Autorisations nécessaires pour créer et gérer des stratégies et des étiquettes de rétention](get-started-with-retention.md#permissions-required-to-create-and-manage-retention-policies-and-retention-labels).
+L’administrateur général de votre organisation dispose de toutes les autorisations pour créer et gérer les étiquettes de rétention et leurs stratégies. Si vous ne vous connectez pas en tant qu’administrateur général, voir [Autorisations nécessaires pour créer et gérer des stratégies et des étiquettes de confidentialité](get-started-with-retention.md#permissions-required-to-create-and-manage-retention-policies-and-retention-labels).
 
 ## <a name="how-to-auto-apply-a-retention-label"></a>Application automatique d’étiquettes de rétention
 
-Tout d’abord, créez votre étiquette de rétention. Puis créez une stratégie automatique pour appliquer cette étiquette. Si vous avez déjà créé votre étiquette de rétention, passez à [création d’une stratégie automatique](#step-2-create-an-auto-apply-policy).
+Tout d’abord, créez votre étiquette de rétention. Créez ensuite une stratégie automatique pour appliquer l’étiquette. Si vous avez déjà créé votre étiquette de rétention, passez à [Création d’une stratégie automatique](#step-2-create-an-auto-apply-policy).
 
-Les instructions de navigation varient selon que vous utilisez la [gestion des enregistrements](records-management.md) ou non. Il existe des instructions pour les deux scénarios. 
+Les instructions de navigation varient selon que vous utilisez la [gestion des enregistrements](records-management.md) ou non. Des instructions sont fournies pour les deux scénarios.
 
 ### <a name="step-1-create-a-retention-label"></a>Étape 1 : créer une étiquette de rétention
 
@@ -80,13 +81,13 @@ Les instructions de navigation varient selon que vous utilisez la [gestion des e
     - Si vous n’utilisez pas la gestion des enregistrements :
        - **Solutions** > **Gouvernance d’informations** > **Étiquettes** onglet > + **Créer une étiquette**
     
-    Si vous ne voyez pas immédiatement votre option, sélectionnez d’abord **Tout afficher**. 
+    Votre option ne s’affiche pas immédiatement ? Sélectionnez tout d’abord **Afficher tout**. 
 
 2. Suivez les invites de l’Assistant. Si vous utilisez la gestion des enregistrements :
     
     - Pour plus d’informations sur les descripteurs de plan de fichier, consultez [Utiliser le plan de gestion des fichiers pour gérer les étiquettes de rétention](file-plan-manager.md)
     
-    - Pour utiliser l’étiquette de rétention pour déclarer des enregistrements, sélectionnez **Marquer les éléments comme enregistrements**, ou **Marquer les éléments comme enregistrements réglementaires**. Pour plus d’informations, consultez [Configuration des étiquettes de rétention pour déclarer les enregistrements](declare-records.md#configuring-retention-labels-to-declare-records)
+    - Pour utiliser l’étiquette de rétention pour déclarer des enregistrements, sélectionnez **Marquer les éléments comme enregistrements**, ou **Marquer les éléments comme enregistrements réglementaires**. Pour plus d’information, voir [Configuration d’étiquettes de rétention pour déclarer des enregistrements](declare-records.md#configuring-retention-labels-to-declare-records).
 
 3. Une fois l’étiquette créée, les options permettant de la publier s’affichent. Appliquez automatiquement l’étiquette, ou enregistrez-la simplement : sélectionnez **Appliquer automatiquement cette étiquette à un type spécifique de contenu**, puis sélectionnez **Terminé** pour démarrer l’assistant à la création d’attribution automatique d’étiquettes qui vous conduit directement à l’étape 2 de la procédure suivante.
 
@@ -104,7 +105,7 @@ Lorsque vous créez une stratégie d’application automatique, vous sélectionn
     - Si vous n’utilisez pas la gestion des enregistrements :
         - **Solutions** > **Gouvernance d’informations** > **Stratégies des étiquettes** onglet > **Auto-appliquer une étiquette**
     
-    Si vous ne voyez pas immédiatement votre option, sélectionnez d’abord **Tout afficher**. 
+    Votre option ne s’affiche pas immédiatement ? Sélectionnez tout d’abord **Afficher tout**. 
 
 2. Suivez les invites de l’assistant à la création d’attribution automatique d’étiquettes.
     
@@ -112,11 +113,11 @@ Lorsque vous créez une stratégie d’application automatique, vous sélectionn
     
     Pour plus d’informations sur la prise en charge des emplacements par des étiquettes de rétention, voir la section [Étiquettes de rétention et emplacements](retention.md#retention-label-policies-and-locations).
 
-Pour modifier une politique d'application automatique existante, sélectionnez-la pour lancer l'assistant Modifier la politique de conservation qui vous permet de modifier l'étiquette de conservation sélectionnée et tous[les paramètres admissibles](#updating-retention-labels-and-their-policies)à partir de l'étape 2.
+Pour modifier une stratégie d’application automatique d’étiquettes existante, sélectionnez-la pour démarrer l’assistant à la modification de stratégie de rétention qui vous permet de modifier l’étiquette de rétention sélectionnée et les [paramètres éligibles](#updating-retention-labels-and-their-policies) à partir de l’étape 2.
 
 Une fois que le contenu est étiqueté au moyen d'une politique d'étiquetage automatique, l'étiquette appliquée ne peut pas être automatiquement retirée ou modifiée en changeant le contenu ou la politique, ou par une nouvelle politique d'étiquetage automatique. Pour plus d'informations, voir [Une seule étiquette de conservation à la fois](retention.md#only-one-retention-label-at-a-time).
 
-### <a name="configuring-conditions-for-auto-apply-retention-labels"></a>Configurer les conditions d'application automatique des étiquettes de conservation
+### <a name="configuring-conditions-for-auto-apply-retention-labels"></a>Configuration des conditions d’application automatique des étiquettes de rétention
 
 Vous pouvez appliquer automatiquement des étiquettes de rétention au contenu quand celui-ci inclut :
 
@@ -128,17 +129,17 @@ Vous pouvez appliquer automatiquement des étiquettes de rétention au contenu q
 
 #### <a name="auto-apply-labels-to-content-with-specific-types-of-sensitive-information"></a>Application automatique d’étiquettes au contenu incluant des types spécifiques d’informations sensibles
 
-Lorsque vous créez des stratégies d’étiquettes de rétention à appliquer automatiquement pour des informations sensibles, vous observez la même liste de modèles de stratégies que lorsque vous créez une stratégie de prévention contre la perte de données (DLP). Chaque modèle de stratégie est préconfiguré pour rechercher des types spécifiques d’informations sensibles. Par exemple, le modèle présenté ici recherche les numéros d’identification fiscale individuels américains (ITIN), les numéros de sécurité sociale et les numéros de passeport à partir de la catégorie **Confidentialité** et **du modèle de données relatives aux Informations personnelles américain** :
+Lorsque vous créez des étiquettes de rétention d’application automatique pour des informations sensibles, vous voyez s’afficher la même liste de modèles de stratégie que lorsque vous créez une stratégie de protection contre la perte de données. Chaque modèle est préconfiguré pour rechercher des types spécifiques d’informations sensibles. Par exemple, le modèle présenté ici recherche les numéros américains d’identification fiscale (ITIN), de sécurité sociale (SSN) et de passeports depuis la catégorie **Confidentialité**, ainsi que le **modèle de données d’informations d’identification personnelle (PII) américaines** :
 
 ![Modèles de stratégies avec des types d’informations sensibles](../media/dafd87d4-c7bb-439a-ac7b-193c018f98a5.png)
 
 Pour plus d’informations sur les types d’informations sensibles, voir les [définitions d’entités de types d’informations sensibles](sensitive-information-type-entity-definitions.md).
 
-Après avoir sélectionné un modèle de stratégie, vous pouvez ajouter ou supprimer tout type d’informations sensibles, et vous pouvez modifier le nombre d’instances et  la précision de correspondance. Dans l’exemple de capture d’écran présenté ici, une étiquette de rétention sera appliquée automatiquement uniquement dans les cas suivants :
+Après avoir sélectionné un modèle de stratégie, vous pouvez ajouter ou supprimer tout type d’informations sensibles, ainsi que modifier le nombre d’instances et la précision de correspondance. Sur la capture d’écran d’exemple présentée ensuite, une étiquette de rétention est appliquée automatiquement uniquement lorsque :
   
-- Le type d’informations sensibles détecté a une précision de correspondance (ou niveau de confiance) minimale de 75. De nombreux types d’informations sensibles sont définis avec plusieurs modèles. Tandis qu’un modèle avec une précision de correspondance plus élevée nécessite un nombre de preuves plus important (par exemple, des mots clés, des dates ou des adresses), un modèle avec une précision de correspondance inférieure nécessite moins de preuves. En d’autres termes, plus la précision de correspondance **min** est faible, plus il est facile de faire correspondre le contenu à la condition de correspondance
+- Le type d’information sensible est détecté avec une précision de correspondance (ou niveau de confiance) minimale de 75. De nombreux types d’informations sensibles sont définis avec plusieurs modèles. Un modèle définissant une précision de correspondance élevée impose davantage de critères (par exemple, mots clés, dates ou adresses) qu’un modèle définissant une précision de correspondance moindre. Plus la valeur de précision de correspondance **min** est faible, plus il y a de contenu correspondant à la condition.
 
-- Le contenu comprend entre 1 et 9 instances de chacun des trois types d’informations sensibles. Vous pouvez supprimer la valeur **à** pour la définir sur **Tous**.
+- Le contenu comprend entre 1 et 9 instances de n’importe quel de ces trois types d’informations sensibles. Vous pouvez supprimer la valeur **jusqu’à** de façon à ce qu’elle soit remplacée par **Tout**.
 
 Pour plus d’informations sur ces options, reportez-vous aux instructions suivantes de la documentation DLP : [Affiner les réglages pour rendre la correspondance plus ou moins précise](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
     
@@ -235,7 +236,7 @@ ProgID:Media AND ProgID:Meeting
 La plupart du temps, les enregistrements de réunion sont enregistrés dans OneDrive. Mais les réunions de canal sont enregistrés dans SharePoint.
 
 
-#### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>Appliquer automatiquement des étiquettes au contenu à l’aide de classificateurs entraînables
+#### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>Appliquer automatiquement des étiquettes au contenu à l’aide de classifieurs entraînables
 
 Lorsque vous choisissez l’option de classifieur entraînable, vous pouvez sélectionner un classifieur intégré ou un classifieur personnalisé. Les classifieurs intégrés incluent : **CV**, **SourceCode**, **Harcèlement ciblé**, **Blasphème** et la **Menace** :
 
@@ -281,7 +282,7 @@ Certains paramètres ne peuvent pas être modifiés une fois l’étiquette ou l
 
 ## <a name="locking-the-policy-to-prevent-changes"></a>Verrouillage de la stratégie pour empêcher toute modification
 
-Si vous voulez vous assurer que personne ne peut désactiver la stratégie, supprimer la stratégie ou la rendre moins restrictive, consultez [Utiliser le Verrou de Conservation pour restreindre les modifications apportées aux stratégies de rétention et aux stratégies d’étiquette de rétention](retention-preservation-lock.md).
+Si vous avez besoin de vérifier que personne ne peut désactiver la stratégie, supprimer la stratégie ou la rendre moins restrictive, veuillez consulter la rubrique [Utiliser le Verrou de Conservation pour restreindre les modifications apportées aux stratégies de rétention et aux stratégies d’étiquette de rétention](retention-preservation-lock.md).
 
 ## <a name="next-steps"></a>Prochaines étapes
 

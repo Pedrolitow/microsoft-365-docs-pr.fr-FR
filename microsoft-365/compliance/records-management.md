@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: La gestion des enregistrements dans Microsoft 365 vous permet d’appliquer des planifications de rétention dans un plan de gestion de fichiers afin de gérer la rétention, la déclaration d’enregistrements et la destruction de ceux-ci.
-ms.openlocfilehash: 6648a3a671e40dd5218eba1a1e8bafe42120f0de
-ms.sourcegitcommit: 9d1351ea6d9942550b52132817f9f9693ddef2fd
+ms.openlocfilehash: 883fd65e3fba716018a1ed35cc457c2eb8f06c52
+ms.sourcegitcommit: 5756896ad87e28fac20f7981eaaeacfb0c098254
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "48830525"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "49730165"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>Découvrez la gestion des enregistrements dans Microsoft 365
 
@@ -109,7 +109,7 @@ Message qu’un utilisateur voit s’il essaie de supprimer un document étiquet
 > 
 > En raison de ces actions irréversibles, assurez-vous que vous devez vraiment utiliser les enregistrements réglementaires avant de sélectionner cette option pour les étiquettes de rétention. Pour empêcher la configuration accidentelle, cette option n’est pas disponible par défaut, mais doit d’abord être activée à l’aide de PowerShell. Des instructions sont incluses dans [Déclarer les enregistrements à l’aide d’étiquettes de rétention](declare-records.md).
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="configuration-guidance"></a>Instructions de configuration
 
 Veuillez consulter la page [Prise en main de la gestion des enregistrements](get-started-with-records-management.md).
 
