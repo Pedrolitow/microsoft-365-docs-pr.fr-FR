@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 description: Découvrez comment attribuer des licences aux utilisateurs.
 ms.date: 08/14/2020
-ms.openlocfilehash: ec2f9ae2e580987266c636343a66d7c21138e4c3
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: fc5f9112a22d56abb9c11d61f4108586487b4986
+ms.sourcegitcommit: 806536f859ac864228797f1f2f23b8f41040a6b4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645130"
+ms.lasthandoff: 12/28/2020
+ms.locfileid: "49735797"
 ---
 # <a name="assign-licenses-to-users"></a>Attribuer des licences aux utilisateurs
 
@@ -90,7 +90,7 @@ Lorsque vous utilisez la page **Utilisateurs actifs** pour attribuer des licence
 2. Sélectionnez les cercles en regard des noms d'utilisateurs auxquels vous voulez attribuer des licences.
 3. Dans la partie supérieure, sélectionnez **Plus d'options (...)**, puis choisissez **Gérer les licences de produits**.
 4. Dans le volet **Attribuer des licences de produits**, sélectionnez **Ajouter aux attributions de licence de produit existantes** \> **Suivant**.
-5. Dans le volet **Ajouter aux produits existants**, positionnez le bouton bascule sur **Actif**correspondant à la licence que vous voulez attribuer aux utilisateurs sélectionnés.\
+5. Dans le volet **Ajouter aux produits existants**, positionnez le bouton bascule sur **Actif** correspondant à la licence que vous voulez attribuer aux utilisateurs sélectionnés.\
     Par défaut, tous les services associés à ces licences sont automatiquement attribués aux utilisateurs. Vous pouvez limiter les services mis à disposition des utilisateurs. Positionnez le bouton bascule sur **Inactif** pour les services que vous ne souhaitez pas attribuer aux utilisateurs.
 6. Dans la partie inférieure du volet, sélectionnez **Ajouter** \> **Fermer**.  
 
@@ -163,7 +163,7 @@ Lorsque vous utilisez la page **Utilisateurs actifs** pour attribuer des licence
 
 ## <a name="assign-a-license-to-a-guest-user"></a>Attribuer une licence à un utilisateur invité
 
-Vous pouvez inviter des utilisateurs invités à collaborer avec votre organisation dans le Centre d’administration Azure Active Directory. Pour en savoir plus sur l’estimation des utilisateurs, consultez[Qu’est-ce que l’accès utilisateur invité dans Azure Active Directory B2B ?](https://docs.microsoft.com/azure/active-directory/external-identities/what-is-b2b) Si vous n’avez pas d’utilisateurs invités, consultez [Démarrage rapide : ajouter des utilisateurs invités à votre annuaire dans le portail Azure](https://docs.microsoft.com/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal).
+Vous pouvez inviter des utilisateurs invités à collaborer avec votre organisation dans le Centre d’administration Azure Active Directory. Pour en savoir plus sur l’estimation des utilisateurs, consultez[Qu’est-ce que l’accès utilisateur invité dans Azure Active Directory B2B ?](https://docs.microsoft.com/azure/active-directory/external-identities/what-is-b2b). Si vous n’avez pas d’utilisateurs invités, consultez [Démarrage rapide : ajouter des utilisateurs invités à votre annuaire dans le portail Azure](https://docs.microsoft.com/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal).
 
 > [!IMPORTANT]
 > Vous devez être un administrateur général pour effectuer ces étapes.
