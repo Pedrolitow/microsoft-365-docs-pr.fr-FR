@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 7fe5be065ee45700a1f08a39c8050757c3843f7b
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 6e9dd214e53e3fdd601fe51e5522a3a24a7fd3d0
+ms.sourcegitcommit: a8f3c633714e934f9ad026c3bc72157ed535dcfc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682570"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "49737998"
 ---
 # <a name="microsoft-secure-score"></a>Degré de sécurisation Microsoft
 
@@ -50,7 +50,7 @@ Les organisations ont accès à des visualisations robustes de mesures et tendan
 Vous disposez de points pour les actions suivantes :
 
 - Configuration des fonctionnalités de sécurité recommandées
-- Exécution de tâches liées à la sécurité
+- Tâches liées à la sécurité
 - Gestion de l’action d’amélioration avec une application ou un logiciel tiers, ou une autre limitation
 
 Certaines actions d’amélioration ne donnent de points qu’une fois complètement terminé. Certains fournissent des points partiels s’ils sont terminés pour certains appareils ou utilisateurs. Si vous ne pouvez pas ou ne souhaitez pas arrêter une des actions d’amélioration, vous pouvez choisir d’accepter le risque ou le risque restant.
@@ -65,7 +65,6 @@ Votre score est mis à jour en temps réel afin de refléter les informations pr
 - [Comparez votre score aux organisations comme la vôtre](microsoft-secure-score-history-metrics-trends.md#compare-your-score-to-organizations-like-yours)
 - [Afficher les actions d’amélioration et décider d’un plan d’action](microsoft-secure-score-improvement-actions.md#take-action-to-improve-your-score)
 - [Initier des flux de travail pour enquêter ou implémenter](microsoft-secure-score-improvement-actions.md#view-improvement-action-details)
-    - [Centre de sécurité Microsoft 365 et intégration ServiceNow](tickets-security-center.md)
 
 ### <a name="how-improvement-actions-are-scored"></a>Comment les actions d’amélioration sont évaluées
 
@@ -75,11 +74,19 @@ Par exemple, une action d’amélioration vous indique 10 points en protégeant 
 
 ### <a name="products-included-in-secure-score"></a>Produits inclus dans le score de sécurité
 
-Il existe actuellement des recommandations pour Microsoft 365 (y compris Exchange Online), Azure Active Directory, Microsoft Defender for Endpoint, Microsoft Defender for Identity et Cloud App Security. Des recommandations pour d’autres produits de sécurité seront bientôt disponibles. Les recommandations ne couvrent pas toutes les surfaces d’attaque associées à chaque produit, mais elles sont de bonnes bases. Vous pouvez également marquer les actions d’amélioration telles qu’elles sont couvertes par une atténuation tierce ou alternative.
+Actuellement, il existe des recommandations pour les produits suivants :
+
+- Microsoft 365 (y compris Exchange Online)
+- Azure Active Directory
+- Microsoft Defender pour point de terminaison
+- Microsoft Defender pour Identity
+- Cloud App Security
+
+Des recommandations pour d’autres produits de sécurité seront bientôt disponibles. Les recommandations ne couvrent pas toutes les surfaces d’attaque associées à chaque produit, mais elles sont de bonnes bases. Vous pouvez également marquer les actions d’amélioration telles qu’elles sont couvertes par une atténuation tierce ou alternative.
 
 ### <a name="security-defaults"></a>Paramètres de sécurité par défaut
 
-Microsoft Secure score a mis à jour les actions d’amélioration afin de prendre en charge les paramètres de [sécurité par défaut dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults), ce qui facilite la protection de votre organisation avec des paramètres de sécurité préconfigurés pour les attaques courantes.
+Microsoft Secure score a mis à jour les actions d’amélioration afin de prendre en charge les paramètres de [sécurité par défaut dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults), ce qui facilite la protection de votre organisation avec les paramètres de sécurité préconfigurés pour les attaques courantes.
 
 Si vous activez les paramètres de sécurité par défaut, vous recevrez des points complets pour les actions d’amélioration suivantes :
 
@@ -117,7 +124,7 @@ Avec un accès en lecture seule, vous ne pouvez pas modifier le statut ou les no
 
 ## <a name="risk-awareness"></a>Sensibilisation aux risques
 
-Microsoft Secure score est un résumé numérique de votre position de sécurité basée sur les configurations système, le comportement de l’utilisateur et d’autres mesures liées à la sécurité. Il ne s’agit pas d’une mesure absolue de la probabilité de violation de votre système ou de vos données. Il représente plutôt la mesure dans laquelle vous avez adopté des contrôles de sécurité dans votre environnement Microsoft afin de compenser le risque d’être compromis. Aucun service en ligne n’est totalement immunisé contre les violations de sécurité et le score sécurisé ne doit pas être interprété comme une garantie d’une violation de sécurité.
+Microsoft Secure score est un résumé numérique de votre position de sécurité basée sur les configurations système, le comportement de l’utilisateur et d’autres mesures liées à la sécurité. Il ne s’agit pas d’une mesure absolue de la probabilité de violation de votre système ou de vos données. Il représente plutôt la mesure dans laquelle vous avez adopté des contrôles de sécurité dans votre environnement Microsoft afin de compenser le risque d’être compromis. Aucun service en ligne n’est protégé contre les violations de sécurité, et le score sécurisé ne doit pas être interprété comme une garantie contre les failles de sécurité d’une façon ou d’une autre.
 
 ## <a name="we-want-to-hear-from-you"></a>Votre avis nous intéresse
 

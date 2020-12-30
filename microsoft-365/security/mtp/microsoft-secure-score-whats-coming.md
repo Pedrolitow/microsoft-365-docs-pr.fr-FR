@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: d668aa8f0588ecc5ca24086d060cda32cdf1dbc6
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: 0693e70cdd5636ce655a400a48aac65197327291
+ms.sourcegitcommit: a8f3c633714e934f9ad026c3bc72157ed535dcfc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688040"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "49737952"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Fonctionnalités du score de sécurité Microsoft
 
@@ -35,6 +35,8 @@ Vous pouvez trouver https://security.microsoft.com/securescore le score de sécu
 Nous apportons des modifications à l’avenir proche pour faire en sorte que [Microsoft Secure](microsoft-secure-score.md) évalue un meilleur représentant de votre position de sécurité et améliore l’utilisation. Votre score et le score maximal possible peuvent varier.
 
 ### <a name="no-planned-changes"></a>Aucune modification planifiée
+
+Il n’y a pas de modifications prévues pour le moment.
 
 ## <a name="related-resources"></a>Ressources connexes
 

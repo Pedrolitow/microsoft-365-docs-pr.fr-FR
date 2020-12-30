@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 253e85da7bb85a0722831851f00051a50a96153e
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: 61ac8c627dd701ac354a5d60d4774a6443b4d41e
+ms.sourcegitcommit: a8f3c633714e934f9ad026c3bc72157ed535dcfc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688410"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "49737986"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Nouveautés de Microsoft Secure score
 
@@ -37,7 +37,7 @@ Vous pouvez trouver https://security.microsoft.com/securescore le score de sécu
 
 ## <a name="december-2020"></a>Décembre 2020
 
-### <a name="added-6-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>Ajout des six actions d’amélioration relatives aux comptes pour Microsoft Defender pour le point de terminaison (précédemment Microsoft Defender ATP) :
+### <a name="added-six-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>Ajout de six actions d’amélioration relatives aux comptes pour Microsoft Defender pour le point de terminaison (précédemment Microsoft Defender ATP) :
 
 - Définir « longueur minimale du mot de passe » sur « 14 caractères ou plus »
 - Définir « conserver l’historique des mots de passe » à « 24 ou plusieurs mots de passe »
@@ -52,7 +52,7 @@ Vous pouvez trouver https://security.microsoft.com/securescore le score de sécu
 
 La possibilité de créer des tickets ServiceNow via le score de sécurité en accédant à **Share > ServiceNow** n’est plus disponible. Nous vous remercions pour vos commentaires et le support technique pendant que nous déterminons les étapes suivantes.
 
-### <a name="added-3-services-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>Ajout des trois actions d’amélioration liées aux services pour Microsoft Defender pour le point de terminaison (précédemment Microsoft Defender ATP) :
+### <a name="added-three-services-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>Ajout de trois actions d’amélioration liées aux services pour Microsoft Defender pour le point de terminaison (précédemment Microsoft Defender ATP) :
 
 - Corriger le chemin d’accès non quoted service pour les services Windows
 - Modifier le chemin d’accès exécutable de service en un emplacement protégé courant

@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 8ebfe5746a69cc0161c38f0467954fabb3839240
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: c463e375594b3581486cb8d4bdd380412e195b2e
+ms.sourcegitcommit: a8f3c633714e934f9ad026c3bc72157ed535dcfc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683342"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "49738010"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Évaluer votre niveau de sécurité avec le score de sécurité Microsoft
 
@@ -42,13 +42,13 @@ Pour vous aider à trouver plus rapidement les informations dont vous avez besoi
 >[!NOTE]
 >Dans la version récente de Microsoft Secure score, un modèle de notation amélioré a été publié, ce qui rendait le score de sécurité Microsoft temporairement incompatible avec le score de sécurité d’identité et l’API Graph. [Afficher les détails](microsoft-secure-score-whats-new.md)
 
-Dans la page de vue d’ensemble des scores sécurisés de Microsoft, consultez la rubrique How points Split entre ces groupes et les points disponibles. Vous pouvez également obtenir une vue complète du score total, de la tendance historique de votre score de sécurité avec comparaisons de référence et des actions d’amélioration hiérarchisée qui peuvent être prises pour améliorer votre score.
+Dans la page de présentation de Microsoft Secure score, affichez la répartition des points entre ces groupes et les points disponibles. Vous pouvez également obtenir une vue complète du score total, de la tendance historique de votre score de sécurité avec comparaisons de référence et des actions d’amélioration hiérarchisée qui peuvent être prises pour améliorer votre score.
 
 ![Page d’accueil du score sécurisé](../../media/secure-score/secure-score-homepage-new.png)
 
 ## <a name="check-your-current-score"></a>Vérifier votre score actuel
 
-Pour vérifier votre score actuel, accédez à la page de présentation de Microsoft Secure score et recherchez la vignette indiquant **votre score de sécurité**. Votre score est affiché sous forme de pourcentage, ainsi que le nombre de points que vous avez obtenus sur un total de points possibles.
+Pour vérifier votre score actuel, accédez à la page de présentation de Microsoft Secure score et recherchez la vignette indiquant **votre score de sécurité**. Votre score est affiché sous forme de pourcentage, ainsi que le nombre de points que vous avez obtenus du total des points possibles.
 
 En outre, si vous sélectionnez le bouton **inclure** en regard de votre score, vous pouvez choisir différentes vues de votre score. Ces différentes vues de score s’affichent dans le graphique sur la vignette de score et le graphique de répartition par points.
 
@@ -74,14 +74,15 @@ Le classement est basé sur le nombre de points restants à atteindre, la diffic
 
 Lorsque vous sélectionnez une action d’amélioration spécifique, un menu volant de page entière s’affiche.  
 
-![Exemple de menu contextuel d’action d’amélioration ](../../media/secure-score/secure-score-improvement-action-details.png)
- *figure 2 : exemple de menu contextuel d’action d’amélioration*
+![Exemple de menu contextuel d’action d’amélioration](../../media/secure-score/secure-score-improvement-action-details.png)
 
 Pour terminer l’action, vous disposez de plusieurs options :
 
-* Sélectionnez **gérer** pour accéder à l’écran de configuration et effectuer la modification. Vous obtiendrez ensuite les points que l’action vaut, visible dans le survol. Les points prennent généralement environ 24 heures à mettre à jour.
+- Sélectionnez **gérer** pour accéder à l’écran de configuration et effectuer la modification. Vous obtiendrez ensuite les points que l’action vaut, visible dans le survol. Les points prennent généralement environ 24 heures à mettre à jour.
 
-* Sélectionnez **partager** pour copier le lien direct vers l’action d’amélioration. Vous pouvez également choisir la plateforme sur laquelle partager le lien, comme le courrier électronique, Microsoft Teams, le planificateur Microsoft ou ServiceNow. En sélectionnant ServiceNow, vous pouvez créer un ticket de modification qui sera visible dans ServiceNow et le centre de sécurité Microsoft 365. Pour en savoir plus, consultez la rubrique [Microsoft 365 Security Center and ServiceNow Integration](tickets-security-center.md).
+- Sélectionnez **partager** pour copier le lien direct vers l’action d’amélioration. Vous pouvez également choisir la plateforme sur laquelle partager le lien, comme le courrier électronique, Microsoft Teams, le planificateur Microsoft ou ServiceNow. En sélectionnant ServiceNow, vous pouvez créer un ticket de modification qui sera visible dans ServiceNow et le centre de sécurité Microsoft 365. Pour en savoir plus, consultez la rubrique [Microsoft 365 Security Center and ServiceNow Integration](tickets-security-center.md).
+
+Ajoutez des **Notes** pour effectuer le suivi de la progression ou de tout autre élément sur lequel vous souhaitez ajouter des commentaires. Si vous ajoutez vos propres **balises** à l’action d’amélioration, vous pouvez filtrer selon ces balises.
 
 ### <a name="choose-an-improvement-action-status"></a>Choisir un état d’action d’amélioration
 
@@ -94,7 +95,7 @@ Choisissez les États et les notes d’enregistrement spécifiques à l’action
 
 #### <a name="threat--vulnerability-management-improvement-actions"></a>Actions d’amélioration de la gestion des vulnérabilités & des menaces
 
-Pour les actions d’amélioration dans la catégorie « périphérique », vous ne pouvez pas choisir les statuts. Au lieu de cela, vous serez redirigé vers la [& menace de gestion des vulnérabilités (TVM)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) dans le [Centre de sécurité Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use) afin de prendre des mesures. L’exception que vous choisissez et la justification que vous écrivez seront spécifiques à ce portail. Il ne figurera pas dans le portail de score de sécurité Microsoft.
+Pour les actions d’amélioration dans la catégorie « appareil », vous ne pouvez pas choisir les statuts. Au lieu de cela, vous serez redirigé vers la recommandation de sécurité associée de [gestion des menaces et des vulnérabilités](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) dans le [Centre de sécurité Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use) pour agir. L’exception que vous choisissez et la justification que vous écrivez seront spécifiques à ce portail. Il ne figurera pas dans le portail de score de sécurité Microsoft.
 
 #### <a name="completed-improvement-actions"></a>Actions d’amélioration terminées
 
@@ -104,13 +105,13 @@ Les actions d’amélioration ont un état « terminé » une fois que tous le
 
 La section appelée **d’un coup d’œil** vous indique la catégorie, les attaques contre lesquelles elle peut protéger et le produit.
 
-L' **impact** de l’utilisateur indique ce que les utilisateurs peuvent faire si l’action d’amélioration est effectuée et que les **utilisateurs concernés** affichent les personnes qui l’exécuteront.
+**Il s’agit de** ce que les utilisateurs peuvent faire si l’action d’amélioration est effectuée et que les utilisateurs concernés sont les personnes qui seront **affectées** .
 
 ### <a name="implement-the-improvement-action"></a>Implémenter l’action d’amélioration
 
 La section **implémentation** présente les conditions préalables, étape par étape, à suivre pour effectuer l’action d’amélioration, l’état actuel de l’implémentation de l’action d’amélioration, ainsi que d’autres liens en savoir plus.
 
-Les conditions préalables incluent toutes les licences qui doivent être obtenues ou les actions qui doivent être effectuées avant l’exécution de l’action d’amélioration. Assurez-vous que votre licence comporte suffisamment de sièges pour effectuer l’action d’amélioration et que ces licences sont appliquées aux utilisateurs nécessaires.  
+Les conditions préalables incluent toutes les licences nécessaires ou les actions à effectuer avant que l’action d’amélioration ne soit traitée. Assurez-vous que votre licence comporte suffisamment de sièges pour effectuer l’action d’amélioration et que ces licences sont appliquées aux utilisateurs nécessaires.  
 
 ## <a name="we-want-to-hear-from-you"></a>Votre avis nous intéresse
 

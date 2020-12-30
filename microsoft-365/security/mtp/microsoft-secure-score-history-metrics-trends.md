@@ -20,17 +20,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 4dfe1c9595db869a59474a030a5dd8673cf7db24
-ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
+ms.openlocfilehash: ed937c90bbc6875ee3d72f710d5ac11d4069cbb6
+ms.sourcegitcommit: a8f3c633714e934f9ad026c3bc72157ed535dcfc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48769243"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "49738042"
 ---
 # <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>Suivi de votre historique de score sécurisé Microsoft et atteindre les objectifs
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
 
 [Microsoft Secure score](microsoft-secure-score.md) est une mesure de la position de sécurité d’une organisation, avec un nombre supérieur indiquant d’autres actions d’amélioration. Vous pouvez https://security.microsoft.com/securescore le trouver dans le [Centre de sécurité Microsoft 365](overview-security-center.md).
 
@@ -56,7 +55,7 @@ Dans l’onglet **mesures & tendances** , il existe plusieurs graphiques et grap
 * **Tendance de régression** : chronologie de points qui ont régressé en raison de modifications de configuration, d’utilisateur ou d’appareil.  
 * **Tendance de comparaison** : le score de sécurité de votre organisation est comparé à d’autres utilisateurs. Cet affichage peut inclure des lignes représentant le score moyen des organisations avec un nombre de sièges similaires et un affichage de comparaison personnalisé que vous pouvez définir.
 * **Tendance d’acceptation des risques** -chronologie des actions d’amélioration marquées comme « risque accepté ».
-* **Variations de score** : nombre de points obtenus, points régressés, ainsi que le changement de score suivant, dans la plage de dates spécifiée.
+* **Noter les modifications** : le nombre de points obtenus, le régression et les modifications apportées à votre score dans la plage de dates spécifiée.
 
 ### <a name="compare-your-score-to-organizations-like-yours"></a>Comparez votre score aux organisations comme la vôtre
 
@@ -64,18 +63,18 @@ Il existe deux endroits pour voir comment votre score est comparé aux organisat
 
 #### <a name="comparison-bar-chart"></a>Graphique à barres de comparaison
 
-Le graphique à barres de comparaison est l’onglet **vue d’ensemble** . Pointez sur le graphique pour afficher l’opportunité de score et de score. Les données de comparaison sont anonymes afin que nous ne sachions pas exactement quels autres clients sont dans le mix.
+Le graphique à barres de comparaison est l’onglet **vue d’ensemble** . Pointez sur le graphique pour afficher l’opportunité de score et de score. Les données de comparaison sont anonymes afin que nous ne sachions pas exactement quels sont les autres locataires dans le mix.
 
 ![Graphique à barres des notes d’une organisation similaire](../../media/secure-score/secure-score-comparison-bar.png)
 
-- **Organisations comme la vôtre** : nous vous offrons un score moyen d’autres clients (à condition que nous ayons au moins 5 locataires à comparer) qui répondent aux critères suivants :
+- **Organisations comme la vôtre**: le score moyen des autres clients (à condition que nous ayons au moins cinq locataires à comparer) qui répondent aux critères suivants :
     1. Même industrie
     2. Taille de l’Organisation
     3. Toutes les régions
     4. Les produits Microsoft utilisés sont des 80% similaires
     5. Opportunité (score maximal pouvant être atteint par la licence actuelle) dans une plage de 20% de votre client
 
-- **Comparaison personnalisée** : doit d’abord être configuré en sélectionnant **Manage Comparison** (seulement si nous trouvons au moins 5 locataires) en fonction des critères suivants :
+- **Comparaison personnalisée**: doit être configurée en sélectionnant **gérer la comparaison** en fonction des critères suivants :
     1. Secteur (s) sélectionné (s)
     2. Taille (s) de l’organisation sélectionnée
     3. Région (s) sélectionnée (s)
@@ -83,7 +82,7 @@ Le graphique à barres de comparaison est l’onglet **vue d’ensemble** . Poin
     5. Les produits Microsoft utilisés sont des 80% similaires
     6. Opportunité (score maximal pouvant être atteint par la licence actuelle) dans une plage de 20% de votre client
 
-Si vous n’avez pas effectué de sélection pour la sélection personnalisée du résultat de la sélection lors de l’obtention de moins de 5 autres clients avec lesquels nous pouvons comparer, vous verrez « non disponible en raison de données limitées ».
+Si vous avez effectué une sélection personnalisée, mais que les résultats comportent moins de cinq autres clients avec lesquels nous pouvons comparer, vous verrez « non disponible en raison de données limitées ».
 
 #### <a name="comparison-trend"></a>Tendance de comparaison
 
@@ -91,7 +90,7 @@ Dans l’onglet **mesures & les tendances** , Découvrez comment le score de sé
 
 ![Graphique linéaire des scores d’une organisation similaire au fil du temps](../../media/secure-score/secure-score-comparison-trend.png)
 
-## <a name="we-want-to-hear-from-you"></a>Nous souhaitons être informés
+## <a name="we-want-to-hear-from-you"></a>Votre avis nous intéresse
 
 Si vous rencontrez des problèmes, informez-le en publiant dans la communauté [Security, Privacy & Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) . Nous Surveillez la communauté et vous fournirons de l’aide.
 
