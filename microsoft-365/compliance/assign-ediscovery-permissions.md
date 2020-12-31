@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: Affecter les autorisations requises pour effectuer des tâches liées à la découverte électronique à l’aide du centre de sécurité & conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f4271d7cc7a9c9239aadb8ca2357e000f4f45e80
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 4b95d81114e60c9d805b90b007d40d4c1a2e62b1
+ms.sourcegitcommit: 555b200b618085706dabf8648d27fb6d6427cfce
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682605"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "49739787"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>Attribuer des autorisations eDiscovery dans le centre de sécurité & conformité
 
@@ -41,7 +41,7 @@ Le groupe de rôles de découverte électronique principal dans le centre de sé
   
   - Gérer tous les cas eDiscovery après s’être ajouté en tant que membre du cas.
   
-  Consultez la section [plus d’informations](#more-information) pour connaître les raisons pour lesquelles vous pouvez souhaiter des administrateurs de découverte électronique dans votre organisation.
+  Pour connaître les raisons pour lesquelles vous pouvez souhaiter des administrateurs de découverte électronique dans votre organisation, consultez la rubrique [more information](#more-information).
 
 > [!NOTE]
 > Pour analyser les données d’un utilisateur à l’aide de Advanced eDiscovery, l’utilisateur (le dépositaire des données) doit disposer d’une licence Office 365 E5 ou Microsoft 365 E5. Par ailleurs, les utilisateurs disposant d’une licence Office 365 E1 ou Office 365 ou Microsoft 365 E3 peuvent se voir attribuer une conformité Microsoft 365 E5 ou une licence de module complémentaire de découverte électronique et d’audit Microsoft 365. Les administrateurs, les responsables de la mise en conformité ou le personnel juridique qui sont affectés à des cas en tant que membres et utilisent Advanced eDiscovery pour collecter, afficher et analyser des données n’ont pas besoin d’une licence E5. Pour plus d’informations sur la gestion des licences eDiscovery avancée, consultez la rubrique [prise en main de Advanced eDiscovery](get-started-with-advanced-ediscovery.md).
@@ -50,7 +50,7 @@ Le groupe de rôles de découverte électronique principal dans le centre de sé
 
 - Vous devez être membre du groupe de rôles gestion de l’organisation ou disposer du rôle de gestion des rôles pour attribuer des autorisations eDiscovery dans le centre de sécurité & conformité.
 
-- Vous pouvez utiliser la cmdlet [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Add-RoleGroupMember) dans Security & Compliance Center PowerShell pour ajouter un groupe de sécurité à extension messagerie en tant que membre du sous-groupe gestionnaires eDiscovery dans le groupe de rôles gestionnaire de découverte électronique. Toutefois, vous ne pouvez pas ajouter un groupe de sécurité à extension messagerie au sous-groupe administrateurs eDiscovery. Pour plus d’informations, reportez-vous à la section [more information](#more-information) . 
+- Vous pouvez utiliser la cmdlet [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Add-RoleGroupMember) dans Security & Compliance Center PowerShell pour ajouter un groupe de sécurité à extension messagerie en tant que membre du sous-groupe gestionnaires eDiscovery dans le groupe de rôles gestionnaire de découverte électronique. Toutefois, vous ne pouvez pas ajouter un groupe de sécurité à extension messagerie au sous-groupe administrateurs eDiscovery. Pour plus d’informations, consultez la rubrique [more information](#more-information). 
   
 ## <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>Attribuer des autorisations eDiscovery dans le centre de sécurité & conformité
 
@@ -69,13 +69,13 @@ Le groupe de rôles de découverte électronique principal dans le centre de sé
 > [!NOTE]
 > Vous pouvez également utiliser l’applet de commande **Add-eDiscoveryCaseAdmin** pour faire d’un utilisateur un administrateur de découverte électronique. Toutefois, l’utilisateur doit se voir attribuer le rôle de gestion des cas avant de pouvoir utiliser cette applet de commande pour en faire un administrateur eDiscovery. Pour plus d’informations, voir [Add-eDiscoveryCaseAdmin](https://go.microsoft.com/fwlink/p/?LinkID=798217). 
   
-Sur la page **autorisations** du centre de sécurité & conformité, vous pouvez également attribuer des autorisations liées à la découverte électronique aux utilisateurs en les ajoutant aux groupes de rôles Administrateur de conformité, gestion de l’organisation et réviseur. Pour obtenir une description des rôles RBAC liés à la découverte électronique affectés à chacun de ces groupes de rôles, consultez la section [rôles RBAC liés à eDiscovery](#rbac-roles-related-to-ediscovery) .
+Sur la page **autorisations** du centre de sécurité & conformité, vous pouvez également attribuer des autorisations liées à la découverte électronique aux utilisateurs en les ajoutant aux groupes de rôles Administrateur de conformité, gestion de l’organisation et réviseur. Pour obtenir une description des rôles RBAC liés à la découverte électronique affectés à chacun de ces groupes de rôles, consultez la rubrique [rôles RBAC liés à eDiscovery](#rbac-roles-related-to-ediscovery).
 
 ## <a name="rbac-roles-related-to-ediscovery"></a>Rôles RBAC liés à eDiscovery
 
 Le tableau suivant répertorie les rôles RBAC liés à la découverte électronique dans le centre de sécurité & conformité et indique les groupes de rôles intégrés auxquels chaque rôle est affecté par défaut.
   
-|**Role**|**Administrateur de conformité**|**Administrateur de & du gestionnaire eDiscovery**|**Gestion de l'organisation**|**Relecteur**|
+| Role | Administrateur de conformité | Administrateur de & du gestionnaire eDiscovery | Gestion de l’organisation | Relecteur |
 |:-----|:-----:|:-----:|:-----:|:-----:|
 |Gestion des cas <br/> |![Coche](../media/checkmark.png) <br/> |![Coche](../media/checkmark.png) <br/> |![Coche](../media/checkmark.png) <br/> | <br/> |
 |Communication <br/> | <br/> |![Coche](../media/checkmark.png) <br/> | <br/> | <br/> |
@@ -137,7 +137,7 @@ Pour plus d’informations sur les suspensions, voir :
 
 - [Créer une conservation dans la découverte électronique centrale](create-ediscovery-holds.md) 
 
-- [Création d’une conservation dans Advanced eDiscovery](add-custodians-to-case.md#step-4-place-custodians-on-hold)
+- [Création d’une conservation dans Advanced eDiscovery](add-custodians-to-case.md)
 
 ### <a name="preview"></a>Aperçu
 
@@ -172,7 +172,7 @@ Ce rôle permet aux utilisateurs de procéder à la suppression en bloc des donn
   Add-RoleGroupMember "eDiscovery Manager" -Member <name of security group>
   ```
 
-    Les groupes de distribution Exchange et les groupes Microsoft 365 ne sont pas pris en charge. Vous devez utiliser un groupe de sécurité à extension messagerie, que vous pouvez créer dans Exchange Online PowerShell à l’aide de la `New-DistributionGroup -Type Security` commande. Vous pouvez également créer un groupe de sécurité à extension messagerie (et ajouter des membres) dans le centre d’administration Exchange ou dans le centre d’administration Microsoft 365. La création d’une nouvelle sécurité à extension messagerie peut prendre jusqu’à 60 minutes après sa création pour pouvoir être ajoutée au groupe de rôles gestionnaires eDiscovery. 
+    Les groupes de distribution Exchange et les groupes Microsoft 365 ne sont pas pris en charge. Vous devez utiliser un groupe de sécurité à extension messagerie, que vous pouvez créer dans Exchange Online PowerShell en exécutant `New-DistributionGroup -Type Security` . Vous pouvez également créer un groupe de sécurité à extension messagerie (et ajouter des membres) dans le centre d’administration Exchange ou dans le centre d’administration Microsoft 365. La création d’une nouvelle sécurité à extension messagerie peut prendre jusqu’à 60 minutes après sa création pour pouvoir être ajoutée au groupe de rôles gestionnaires eDiscovery. 
 
     Comme indiqué précédemment, vous ne pouvez pas faire d’un groupe de sécurité à extension messagerie un administrateur de découverte électronique à l’aide de la cmdlet **Add-eDiscoveryCaseAdmin** dans la sécurité & Centre de conformité PowerShell. Vous pouvez uniquement ajouter des utilisateurs individuels en tant qu’administrateurs eDiscovery.
 

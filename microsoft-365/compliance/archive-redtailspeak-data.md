@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données Redtail Speak à partir de Globanet vers Microsoft 365. Ce connecteur vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365. Une fois que vous avez archivé ces données, vous pouvez utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces.
-ms.openlocfilehash: 546298288e69746856a1250cc4b87643dd479c91
-ms.sourcegitcommit: a3215cc22faa47e935d22300c481e47ab2680b44
+ms.openlocfilehash: ee1e5c63d8990d5847241dc0ab4a88ed19e3215f
+ms.sourcegitcommit: 36d12e02f6fda199ae7f2fb72fe52d7e2b5b4efd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "49722962"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "49740291"
 ---
-# <a name="set-up-a-connector-to-archive-redtail-speak-data-preview"></a>Configuration d’un connecteur pour l’archivage des données Redtail Speak (aperçu)
+# <a name="set-up-a-connector-to-archive-redtail-speak-data"></a>Configuration d’un connecteur pour l’archivage des données Redtail Speak
 
 Utilisez un connecteur Globanet dans le centre de conformité Microsoft 365 pour importer et archiver des données à partir de la Redtail parler aux boîtes aux lettres utilisateur de votre organisation Microsoft 365. Globanet fournit un connecteur [Redtail Speak](https://globanet.com/redtail/) qui est configuré pour capturer des éléments à partir du serveur SFTP de votre organisation où les éléments sont reçus de Redtail. Le connecteur convertit le contenu de Redtail parler en format de message électronique, puis importe ces éléments dans la boîte aux lettres de l’utilisateur dans Microsoft 365.
 
@@ -31,7 +31,7 @@ La vue d’ensemble suivante décrit le processus d’utilisation d’un connect
 
 ![Flux de travail d’archivage pour les données de parole Redtail](../media/RedtailSpeakConnectorWorkflow.png)
 
-1. Votre organisation fonctionne avec Redtail parler pour installer et configurer une passerelle SMTP où les messages quotidiens sont transférés de Redtail parler à votre serveur SFTP.
+1. Votre organisation fonctionne avec Redtail parler pour installer et configurer une passerelle SMTP où les messages sont transférés à partir de Redtail parlez sur le serveur SFTP de votre organisation quotidiennement.
 
 2. Une fois toutes les 24 heures, les éléments de parole Redtail sont copiés sur le site Globanet Merge1. Le connecteur convertit également les éléments de parole Redtail au format d’un message électronique.
 
@@ -43,7 +43,7 @@ La vue d’ensemble suivante décrit le processus d’utilisation d’un connect
 
 - Créez un compte Globanet Merge1 pour Microsoft Connectors. Pour créer un compte, contactez le [support client Globanet](https://globanet.com/contact-us/). Vous devez vous connecter à ce compte lorsque vous créez le connecteur à l’étape 1.
 
-- À l’étape, vous devez spécifier le serveur SFTP de votre organisation. Cela est nécessaire pour que Globanet Merge1 puisse le contacter pour collecter des données de parole Redtail via SFTP.
+- À l’étape 2, vous devez spécifier le serveur SFTP de votre organisation. Cela est nécessaire pour que Globanet Merge1 puisse le contacter pour collecter des données de parole Redtail via SFTP.
 
 - L’utilisateur qui crée le connecteur Redtail Speak importateur à l’étape 1 (et le termine à l’étape 3) doit être affecté au rôle d’exportation d’importation de boîte aux lettres dans Exchange Online. Ce rôle est nécessaire pour ajouter des connecteurs sur la page connecteurs de données dans le centre de conformité Microsoft 365. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle exportation d’importation de boîte aux lettres au groupe de rôles gestion de l’organisation dans Exchange Online. Vous pouvez aussi créer un groupe de rôles, attribuer le rôle d’exportation d’importation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, reportez-vous aux sections [créer des groupes de rôles](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) ou modifier des [groupes](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) de rôles dans l’article « gérer des groupes de rôles dans Exchange Online ».
 

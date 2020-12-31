@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment afficher les détails, modifier et modifier en bloc la liste des dépositaires dans un cas avancé de découverte électronique.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 95b7a7dbec5656a1ac0692ed465eb5a99d7ca11a
-ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
+ms.openlocfilehash: a1e9e9d481073c8bb2827d5d65537dbf2b63ef1f
+ms.sourcegitcommit: 555b200b618085706dabf8648d27fb6d6427cfce
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45024804"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "49739867"
 ---
 # <a name="manage-custodians-in-an-advanced-ediscovery-case"></a>Gestion des dépositaires dans un cas avancé eDiscovery
 
@@ -56,11 +56,11 @@ Pour afficher les détails relatifs à un dépositaire, cliquez sur celui-ci dan
 
   - **Office** : l’emplacement de l’Office dans le lieu d’activité du dépositaire.
 
-- Informations sur les cas
+- Informations de cas
 
   - **Hold Status** : indique si le dépositaire a été mis en attente. 
 
-  - **Statut**de la communication : indique si un avis de mise en attente a été émis pour le dépositaire. Si le dépositaire a reçu une notification, la valeur de cette propriété est **publiée**. Si le dépositaire n’a pas reçu de notification, son statut est non **publié**. 
+  - **Statut** de la communication : indique si un avis de mise en attente a été émis pour le dépositaire. Si le dépositaire a reçu une notification, la valeur de cette propriété est **publiée**. Si le dépositaire n’a pas reçu de notification, son statut est non **publié**. 
 
   - **Status** : état du dépositaire dans le cas. L’état **actif** indique que le dépositaire fait partie de l’affaire. Si un dépositaire est émis à partir d’un incident, le statut passe à **lancé**. 
 
@@ -77,7 +77,7 @@ Lors de l’évolution de votre cas, vous pouvez découvrir qu’il peut y avoir
 
 Pour mettre à jour les sources de données associées à un dépositaire, procédez comme suit :
 
-1. Accédez à **ediscovery > Advanced eDiscovery** et ouvrez le cas.
+1. Accédez à  **ediscovery > Advanced eDiscovery** et ouvrez le cas.
   
 2. Cliquez sur l’onglet **sources** .
   
@@ -89,7 +89,7 @@ Pour mettre à jour les sources de données associées à un dépositaire, proc�
   
 5. Cliquez sur l’onglet **Sélectionner des sources de données supplémentaires** pour ajouter ou supprimer des équipes, des groupes SharePoint ou des boîtes aux lettres Exchange associées au dépositaire. 
 
-    Pour plus d’informations sur les sources de données associées à un dépositaire, voir « étape 3 : associer des sources de données supplémentaires à un dépositaire » dans [Ajouter des dépositaires à un cas](add-custodians-to-case.md#step-3-associate-additional-data-sources-to-a-custodian). 
+    Pour plus d’informations sur les sources de données associées à un dépositaire, voir [Ajouter des dépositaires à un cas](add-custodians-to-case.md). 
   
 6. Cliquez sur **placer des conservations privatives** pour activer ou désactiver la conservation pour le dépositaire.
 
@@ -101,7 +101,7 @@ Lorsqu’un dépositaire est ajouté à un cas, les données situées dans les s
 
 Pour déclencher le processus de réindexation afin d’adresser des éléments partiellement indexés :
 
-1. Accédez à **ediscovery > Advanced eDiscovery** et ouvrez le cas.
+1. Accédez à  **ediscovery > Advanced eDiscovery** et ouvrez le cas.
 
 2. Cliquez sur l’onglet **sources** .
 
@@ -127,7 +127,7 @@ Si vous libérez un dépositaire après la publication d’une notification de m
 
 Pour libérer un dépositaire : 
 
-1. Accédez à **ediscovery > Advanced eDiscovery** et ouvrez le cas.
+1. Accédez à  **ediscovery > Advanced eDiscovery** et ouvrez le cas.
 
 2. Cliquez sur l’onglet **sources** .
 

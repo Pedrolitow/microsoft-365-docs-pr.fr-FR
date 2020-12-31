@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données de la mise en conversation de Salesforce à partir de Globanet vers Microsoft 365. Ce connecteur vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365. Une fois que vous avez archivé ces données, vous pouvez utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces.
-ms.openlocfilehash: 60d86cd01ef8da3a02839d4a3f815be02dc1ee01
-ms.sourcegitcommit: a3215cc22faa47e935d22300c481e47ab2680b44
+ms.openlocfilehash: 518eb38756d86812a8b3d41e4bc2cd46d5a23386
+ms.sourcegitcommit: 36d12e02f6fda199ae7f2fb72fe52d7e2b5b4efd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "49722973"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "49740311"
 ---
-# <a name="set-up-a-connector-to-archive-salesforce-chatter-data-preview"></a>Configuration d’un connecteur pour l’archivage des données de la mise en conversation de Salesforce (aperçu)
+# <a name="set-up-a-connector-to-archive-salesforce-chatter-data"></a>Configuration d’un connecteur pour l’archivage des données de la mise en conversation de Salesforce
 
 Utilisez un connecteur Globanet dans le centre de conformité Microsoft 365 pour importer et archiver des données à partir de la plateforme de la Salesforce chatter vers des boîtes aux lettres utilisateur dans votre organisation 365 Microsoft. Globanet fournit un connecteur [Salesforce chatter](http://globanet.com/chatter/) qui capture les éléments de la source de données tierce et importe ces éléments dans Microsoft 365. Le connecteur convertit le contenu tel que les conversations, les pièces jointes et les publications de Salesforce chatter en un format de message électronique, puis importe ces éléments dans la boîte aux lettres de l’utilisateur dans Microsoft 365.
 
