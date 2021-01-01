@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 4c731869d1ec1740f8c9173705f9af72b0e2fe53
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 15f599f425e20540f5f7889efa632f5a9f11a4e8
+ms.sourcegitcommit: 25ac2736a66bb72c0d574c3fbde7472ac98d5321
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844751"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "49741056"
 ---
 # <a name="microsoft-365-defender-preview-features"></a>Fonctionnalités d’aperçu de Microsoft 365 Defender
 
@@ -34,7 +34,7 @@ ms.locfileid: "48844751"
 >Les versions préliminaires sont fournies sans contrat de niveau de service et ne sont pas recommandées pour les charges de travail de production. Certaines fonctionnalités peuvent ne pas être prises en charge ou avoir des capacités limitées.
 
 **S’applique à :**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Le service Microsoft 365 Defender est constamment mis à jour pour inclure de nouvelles améliorations et fonctionnalités de fonctionnalités.
 
@@ -62,6 +62,8 @@ Vous savez que vous avez activé les fonctionnalités d’aperçu lorsque la cas
 Les fonctionnalités et améliorations suivantes sont actuellement disponibles en mode aperçu :
 
 - **[API microsoft 365 Defender](api-overview.md)** : les api Microsoft 365 Defender de niveau Lop vous permettent d’automatiser les flux de travail en fonction des tables incident partagé et chasse avancée. 
-- **[Effectuer des actions dans la chasse avancée](advanced-hunting-take-action.md)** — il doit rapidement contenir des menaces ou des ressources compromises que vous trouvez dans la [chasse avancée](advanced-hunting-overview.md).
-- **[Guide de référence de schéma dans le portail](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** : Obtenez des informations sur les tables de schéma de chasse avancées directement dans le centre de sécurité. Outre les descriptions de table et de colonne, cette référence inclut des types d’événements pris en charge ( `ActionType` valeurs) et des exemples de requêtes.
+- **[Effectuer des actions dans la chasse avancée](advanced-hunting-take-action.md)**— il doit rapidement contenir des menaces ou des ressources compromises que vous trouvez dans la [chasse avancée](advanced-hunting-overview.md).
+- **[Guide de référence de schéma dans le portail](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**: Obtenez des informations sur les tables de schéma de chasse avancées directement dans le centre de sécurité. Outre les descriptions de table et de colonne, cette référence inclut des types d’événements pris en charge ( `ActionType` valeurs) et des exemples de requêtes.
+- **[Fonction DeviceFromIP ()](advanced-hunting-devicefromip-function.md)**: obtenir des informations sur les appareils auxquels une ou plusieurs adresses IP spécifiques ont été affectées à un intervalle donné.
+
 
