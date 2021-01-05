@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Découvrez comment déployer des équipes avec la protection des données hautement sensibles.
-ms.openlocfilehash: 77ec469776bf263bbd3d667a28f1f9b1bc3284b5
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 6354de5a37547d14b16a4d6a0857ddc390d531e6
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49612963"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49750808"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>Configurer des équipes avec la protection des données hautement sensibles
 
@@ -63,21 +63,26 @@ Pour créer une étiquette de confidentialité
 1. Ouvrez [Centre de conformité Microsoft 365](https://compliance.microsoft.com).
 2. Sous **Solutions**, cliquez sur **Protection des informations**.
 3. Cliquez sur **Créer une étiquette**.
-4. Donnez un nom à l’étiquette. Nous vous suggérons le terme **Hautement sensible**, mais vous pouvez choisir un autre nom si celui-ci est déjà utilisé.
-5. Ajoutez une info-bulle, puis cliquez sur **Suivant**.
-6. Sur la page **Chiffrement**, dans le menu déroulant **Chiffrement**, sélectionnez **Appliquer**.
-7. Sous **Attribuer des autorisations à des utilisateurs et à des groupes spécifiques**, cliquez sur **Attribuer des autorisations**.
-8. Cliquez sur **Ajouter tous les utilisateurs et les groupes de votre organisation**.
-9. Si des invités doivent avoir l’autorisation de déchiffrer des fichiers, cliquez sur **Ajouter des utilisateurs ou des groupes**, puis ajoutez-les.
-10.  Cliquez sur **Enregistrer**, puis sur **Suivant**.
-11. Dans la page **Marquage de contenu**, activez l’option marquage de contenu si vous souhaitez ajouter automatiquement un en-tête, un pied de page ou un filigrane aux fichiers classés avec cette étiquette.
-12. Dans la page **Paramètres de site et de groupe**, configurez **Paramètres de site et de groupe** sur **Activé**.
-13. Dans la liste déroulante **Confidentialité de sites d’équipe Office 365 connectés à un groupe**, sélectionnez **Privé : seuls les membres peuvent accéder au site**.
-14. Si vous souhaitez autoriser l’accès invité, sélectionnez la case à cocher **Permettre aux propriétaires du groupe Office 365 d’ajouter au groupe des personnes en dehors de l’organisation**. 
-15. Sous **Appareils non gérés**, sélectionnez **Bloquer l’accès**.
-16. Cliquez sur **Suivant**.
-17. Dans la page **Étiquetage automatique pour les applications Office**, cliquez sur **Suivant**.
-18. Cliquez sur **Envoyer**, puis sur **Terminé**.
+4. Donnez un nom à l’étiquette. Nous vous suggérons le terme **Sensible**, mais vous pouvez choisir un autre nom si celui-ci est déjà utilisé.
+5. Tapez un nom et une description, puis cliquez sur **Suivant**.
+6. Dans la page **Définir l’étendue de cette page d’étiquettes**, sélectionnez **Fichiers et courriers électroniques** et **Groupes et sites**, puis cliquez sur **Suivant**.
+7. Sur la page **Choisir les paramètres de protection pour les fichiers et les e-mails**, sélectionnez **Chiffrer les fichiers et les e-mails**, puis cliquez sur **Suivant**.
+8. Sur la page **Chiffrement**, sélectionnez **Configurer les paramètres de chiffrement**.
+9. Sous **Attribuer des autorisations à des utilisateurs et à des groupes spécifiques**, cliquez sur **Attribuer des autorisations**.
+10. Cliquez sur **Ajouter tous les utilisateurs et les groupes de votre organisation**.
+11. Si des invités doivent avoir l’autorisation de déchiffrer des fichiers, cliquez sur **Ajouter des utilisateurs ou des groupes**, puis ajoutez-les.
+12.  Cliquez sur **Enregistrer**, puis sur **Suivant**.
+13. Dans la page *Étiquetage automatique des fichiers et messages électroniques**, cliquez sur **Suivant**.
+14. Dans la page **Définir les paramètres de protection pour les groupes et sites**, sélectionnez **Paramètres de confidentialité et d’accès des utilisateurs externes**, et **Accès appareil et paramètres de partage externe**, puis cliquez sur **Suivant**.
+15. Dans la page **Définir les paramètres de confidentialité et d’accès des utilisateurs externes**, sous **Confidentialité**, sélectionnez l’option **Privé** .
+16. Si vous souhaitez autoriser l’accès invité, sous **Accès des utilisateurs externes**, sélectionnez **Autoriser les propriétaires de groupe Microsoft 365 à ajouter des personnes externes à votre organisation au groupe comme invités**.
+17. Cliquez sur **Suivant**.
+18. Dans la page **Définir les paramètres de partage externe et d’accès aux appareils**, sélectionnez **Contrôler le partage externe dans les sites étiquetés SharePoint**.
+19. Sous **Le contenu peut être partagé avec**, sélectionnez **Invités nouveaux et existants** si vous autorisez l’accès invité ou **Uniquement les membres de votre organisation** si ce n’est pas le cas.
+20. Sous **Accès à partir d’appareils non gérés**, sélectionnez **Bloquer l’accès**.
+21. Cliquez sur **Suivant**.
+22. Dans la page **Étiquetage automatique pour les colonnes de base de données** , cliquez sur **Suivant**.
+23. Cliquez sur **Créer une étiquette**, puis sur **Terminé**.
 
 Une fois que vous avez créé l’étiquette, vous devez la publier aux utilisateurs qui l’utiliseront. Pour une protection sensible, nous allons mettre l’étiquette à la disposition de tous les utilisateurs. Vous publiez l’étiquette dans le Centre de conformité Microsoft 365, sur l’onglet **Stratégies d’étiquette** de la page **Protection des informations**. Si vous avez une stratégie existante qui s’applique à tous les utilisateurs, ajoutez cette étiquette à cette stratégie. Si vous avez besoin de créer une stratégie, consultez [Publier des étiquettes de confidentialité en créant une stratégie d’étiquette](https://docs.microsoft.com/microsoft-365/compliance/create-sensitivity-labels#publish-sensitivity-labels-by-creating-a-label-policy).
 

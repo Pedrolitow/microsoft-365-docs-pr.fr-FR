@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Découvrez comment créer une équipe avec une étiquette de confidentialité unique pour la sécurité.
-ms.openlocfilehash: c7230f23a21804530863f125003e4db0eaeeeb60
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 03252cad8449ee83cd757fac3ae74db6df68bcfe
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616295"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751142"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>Configurer une équipe avec l’isolation de sécurité
 
@@ -101,33 +101,36 @@ Pour configurer une équipe pour l’isolation de la sécurité, nous allons uti
 
 Si vous avez un partenaire interne ou un groupe des parties prenantes devant pouvoir afficher les documents chiffrés, mais pas les modifier, vous pouvez les ajouter à l’étiquette avec les autorisations d’affichage seul. Vous pouvez ensuite ajouter ces personnes au site SharePoint de l’équipe avec des autorisations de lecture, et accéder en lecture seule au site où sont conservées les documents, mais pas à l’équipe elle-même.
 
+
 Pour créer une étiquette de confidentialité
 1. Ouvrez [Centre de conformité Microsoft 365](https://compliance.microsoft.com).
 2. Sous **Solutions**, cliquez sur **Protection des informations**.
 3. Cliquez sur **Créer une étiquette**.
-4. Tapez un nom pour l’étiquette semblable au nom de votre équipe. Par exemple, **Projet hautement sensible (Saturn)**.
-5. Ajoutez une info-bulle, puis cliquez sur **Suivant**.
-6. Sur la page **Chiffrement**, dans le menu déroulant **Chiffrement**, sélectionnez **Appliquer**.
-7. Pour ajouter des autorisations d’équipe :<br>
-  a. Cliquez sur **Attribuer des autorisations**.<br>
-  b. Cliquez sur **Ajouter des utilisateurs ou des groupes**, sélectionnez l’équipe que vous avez créée, puis cliquez sur **Ajouter**<br>
-  c. Cliquez sur **Choisir les autorisations**.<br>
-  d. Sélectionnez **Co-auteur** dans la liste déroulante, puis cliquez sur **Enregistrer**.<br>
-8. Si vous voulez inclure des utilisateurs ou des groupes qui ont accès en lecture seule aux fichiers avec l’étiquette :<br>
-  a. Cliquez sur **Attribuer des autorisations**.<br>
-  b. Cliquez sur **Ajouter des utilisateurs ou des groupes**, sélectionnez les utilisateurs ou les groupes que vous voulez ajouter, puis cliquez sur **Ajouter**.<br>
-  c. Cliquez sur **Choisir les autorisations**.<br>
-  d. Sélectionnez **Visionneuse** dans la liste déroulante, puis cliquez sur **Enregistrer**.<br>
-  e. Cliquez sur **Enregistrer**.
-9. Cliquez sur **Suivant**.
-10. Dans la page **Marquage de contenu**, activez l’option marquage de contenu si vous souhaitez ajouter automatiquement un en-tête, un pied de page ou un filigrane aux fichiers classés avec cette étiquette.
-11. Dans la page **Paramètres de site et de groupe**, configurez **Paramètres de site et de groupe** sur **Activé**.
-12. Dans la liste déroulante **Confidentialité de sites d’équipe Office 365 connectés à un groupe**, sélectionnez **Privé : seuls les membres peuvent accéder au site**.
-13. Si vous souhaitez autoriser l’accès invité, sélectionnez la case à cocher **Permettre aux propriétaires du groupe Office 365 d’ajouter au groupe des personnes en dehors de l’organisation**. 
-14. Sous **Appareils non gérés**, sélectionnez **Bloquer l’accès**.
-15. Cliquez sur **Suivant**.
-16. Dans la page **Étiquetage automatique pour les applications Office**, cliquez sur **Suivant**.
-17. Cliquez sur **Envoyer**, puis sur **Terminé**.
+4. Donnez un nom à l’étiquette. Nous vous suggérons le terme **Sensible**, mais vous pouvez choisir un autre nom si celui-ci est déjà utilisé.
+5. Tapez un nom et une description pour le complément, puis cliquez sur **Suivant**.
+6. Dans la page **Définir l’étendue de cette page d’étiquettes**, sélectionnez **Fichiers et courriers électroniques** et **Groupes et sites**, puis cliquez sur **Suivant**.
+7. Sur la page **Choisir les paramètres de protection pour les fichiers et les e-mails**, sélectionnez **Chiffrer les fichiers et les e-mails**, puis cliquez sur **Suivant**.
+8. Sur la page **Chiffrement**, sélectionnez **Configurer les paramètres de chiffrement**.
+9. Cliquez sur **Ajouter des utilisateurs ou des groupes**, sélectionnez l’équipe que vous avez créée, puis cliquez sur **Ajouter**
+10. Cliquez sur **Choisir les autorisations**.
+11. Sélectionnez **Co-auteur** dans la liste déroulante, puis cliquez sur **Enregistrer**.
+12. Si vous voulez inclure des utilisateurs ou des groupes qui ont accès en lecture seule aux fichiers avec l’étiquette :
+    1. Cliquez sur **Attribuer des autorisations**.
+    1. Cliquez sur **Ajouter des utilisateurs ou des groupes**, sélectionnez les utilisateurs ou les groupes que vous voulez ajouter, puis cliquez sur **Ajouter**.
+    1. Cliquez sur **Choisir les autorisations**.
+    1. Sélectionnez **Visionneuse** dans la liste déroulante, puis cliquez sur **Enregistrer**.
+13.  Cliquez sur **Enregistrer**, puis sur **Suivant**.
+14. Dans la page *Étiquetage automatique des fichiers et messages électroniques**, cliquez sur **Suivant**.
+15. Dans la page **Définir les paramètres de protection pour les groupes et sites**, sélectionnez **Paramètres de confidentialité et d’accès des utilisateurs externes**, et **Accès appareil et paramètres de partage externe**, puis cliquez sur **Suivant**.
+16. Dans la page **Définir les paramètres de confidentialité et d’accès des utilisateurs externes**, sous **Confidentialité**, sélectionnez l’option **Privé**.
+17. Si vous souhaitez autoriser l’accès invité, sous **Accès des utilisateurs externes**, sélectionnez **Autoriser les propriétaires de groupe Microsoft 365 à ajouter des personnes externes à votre organisation au groupe comme invités**.
+18. Cliquez sur **Suivant**.
+19. Dans la page **Définir les paramètres de partage externe et d’accès aux appareils**, sélectionnez **Contrôler le partage externe dans les sites étiquetés SharePoint**.
+20. Sous **Le contenu peut être partagé avec**, sélectionnez **Invités nouveaux et existants** si vous autorisez l’accès invité ou **Uniquement les membres de votre organisation** si ce n’est pas le cas.
+21. Sous **Accès à partir d’appareils non gérés**, sélectionnez **Bloquer l’accès**.
+22. Cliquez sur **Suivant**.
+23. Dans la page **Étiquetage automatique pour les colonnes de base de données**, cliquez sur **Suivant**.
+24. Cliquez sur **Créer une étiquette**, puis sur **Terminé**.
 
 Une fois que vous avez créé l’étiquette, vous devez la publier aux utilisateurs qui l’utiliseront. Dans ce cas, l’étiquette est disponible uniquement pour les membres de l’équipe.
 

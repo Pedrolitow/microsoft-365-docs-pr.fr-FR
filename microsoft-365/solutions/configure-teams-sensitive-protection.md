@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Découvrez comment déployer des équipes avec la protection des données sensibles.
-ms.openlocfilehash: ad1cf437bdbe3bd7b25347bb49698314097462ab
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 16c4ceedcafee02ca5d168cc70fc61bb8d01fc72
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49612951"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49750786"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>Configurer les équipes avec la protection des données sensibles
 
@@ -58,17 +58,21 @@ Pour créer une étiquette de confidentialité
 1. Ouvrez [Centre de conformité Microsoft 365](https://compliance.microsoft.com).
 2. Sous **Solutions**, cliquez sur **Protection des informations**.
 3. Cliquez sur **Créer une étiquette**.
-4. Donnez un nom à l’étiquette. Nous vous suggérons le terme **sensible**, mais vous pouvez choisir un autre nom si celui-ci est déjà utilisé.
-5. Ajoutez une info-bulle, puis cliquez sur **Suivant**.
-6. Dans la page **Chiffrement**, cliquez sur **Suivant**.
-7. Dans la page **Marquage de contenu**, activez l’option marquage de contenu si vous souhaitez ajouter automatiquement un en-tête, un pied de page ou un filigrane aux fichiers classés avec cette étiquette.
-8. Dans la page **Paramètres de site et de groupe**, configurez **Paramètres de site et de groupe** sur **Activé**.
-9. Dans la liste déroulante **Confidentialité de sites d’équipe Office 365 connectés à un groupe**, sélectionnez **Privé : seuls les membres peuvent accéder au site**.
-10. Si vous souhaitez autoriser l’accès invité, sélectionnez la case à cocher **Permettre aux propriétaires du groupe Office 365 d’ajouter au groupe des personnes en dehors de l’organisation**. 
-11. Sous **Appareils non gérés**, sélectionnez **Autoriser un accès limité, web uniquement**.
+4. Donnez un nom à l’étiquette. Nous vous suggérons le terme **Sensible**, mais vous pouvez choisir un autre nom si celui-ci est déjà utilisé.
+5. Tapez un nom et une description, puis cliquez sur **Suivant**.
+6. Dans la page **Définir l’étendue de cette page d’étiquettes**, sélectionnez **Fichiers et courriers électroniques** et **Groupes et sites**, puis cliquez sur **Suivant**.
+7. Dans la page **Sélectionner les paramètres de protection pour les fichiers et les messages électroniques**, cliquez sur **Suivant**.
+8. Dans la page *Étiquetage automatique des fichiers et messages électroniques**, cliquez sur **Suivant**.
+9. Dans la page **Définir les paramètres de protection pour les groupes et sites**, sélectionnez **Paramètres de confidentialité et d’accès des utilisateurs externes**, et **Accès appareil et paramètres de partage externe**, puis cliquez sur **Suivant**.
+10. Dans la page **Définir les paramètres de confidentialité et d’accès des utilisateurs externes**, sous **Confidentialité**, sélectionnez l’option **Privé** .
+11. Si vous souhaitez autoriser l’accès invité, sous **Accès des utilisateurs externes**, sélectionnez **Autoriser les propriétaires de groupe Microsoft 365 à ajouter des personnes externes à votre organisation au groupe comme invités**.
 12. Cliquez sur **Suivant**.
-13. Dans la page **Étiquetage automatique pour les applications Office**, cliquez sur **Suivant**.
-14. Cliquez sur **Envoyer**, puis sur **Terminé**.
+13. Dans la page **Définir les paramètres de partage externe et d’accès aux appareils**, sélectionnez **Contrôler le partage externe dans les sites étiquetés SharePoint**.
+14. Sous **Le contenu peut être partagé avec**, sélectionnez **Invités nouveaux et existants** si vous autorisez l’accès invité ou **Uniquement les membres de votre organisation** si ce n’est pas le cas.
+15. Sous **Accès à partir d’appareils non gérés**, sélectionnez **Autoriser l’accès limité au Web uniquement**.
+16. Cliquez sur **Suivant**.
+17. Dans la page **Étiquetage automatique pour les colonnes de base de données**, cliquez sur **Suivant**.
+18. Cliquez sur **Envoyer**, puis sur **Terminé**.
 
 Une fois que vous avez créé l’étiquette, vous devez la publier aux utilisateurs qui l’utiliseront. Pour une protection sensible, nous allons mettre l’étiquette à la disposition de tous les utilisateurs. Vous publiez l’étiquette dans le Centre de conformité Microsoft 365, sur l’onglet **Stratégies d’étiquette** de la page **Protection des informations**. Si vous avez une stratégie existante qui s’applique à tous les utilisateurs, ajoutez cette étiquette à cette stratégie. Si vous avez besoin de créer une stratégie, consultez [Publier des étiquettes de confidentialité en créant une stratégie d’étiquette](https://docs.microsoft.com/microsoft-365/compliance/create-sensitivity-labels#publish-sensitivity-labels-by-creating-a-label-policy).
 

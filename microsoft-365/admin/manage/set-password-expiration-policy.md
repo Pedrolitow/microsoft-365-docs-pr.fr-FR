@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: Découvrez comment configurer une stratégie d'expiration des mots de passe pour votre organisation dans le Centre d'administration Microsoft 365.
-ms.openlocfilehash: 39726846d591b2d1f72a89a7dc59038c726a8e80
-ms.sourcegitcommit: 21c3e44862854c74e4008cfb661840f069c6b709
+ms.openlocfilehash: 96e9159f3228fb6b7725f2f0d6eb515b108bc32e
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48787521"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751500"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>Définir la stratégie d’expiration des mots de passe pour votre organisation
 
@@ -56,18 +56,18 @@ Si vous voulez que les mots de passe utilisateur expirent après un certain temp
 > [!IMPORTANT]
 > Seuls les [administrateurs généraux](../add-users/about-admin-roles.md) peuvent effectuer ces étapes.
   
-1. Dans le centre d’administration, cliquez sur la page **Paramètres** \> **Paramètres de l’organisation** .
+1. Dans le centre d’administration, cliquez sur la page **Paramètres** \> **Paramètres de l’organisation**.
 
 2. Accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">Sécurité & confidentialité</a>.
  Si vous n’êtes pas un administrateur général, l’option Sécurité et confidentialité n’est pas visible.
   
-3. Sélectionnez **Stratégie d’expiration du mot de passe** .
+3. Sélectionnez **Stratégie d’expiration du mot de passe**.
   
-4. Si vous ne souhaitez pas que les utilisateurs soient contraints de changer leur mot de passe, activez la case à cocher près de **Configurer les mots de passe utilisateur pour qu’ils expirent après un certain nombre de jours** .
+4. Si vous ne voulez pas que les utilisateurs soient contraints de changer de mot de passe, décochez la case à côté de **Définir l’expiration des mots de passe d’utilisateur après un certain nombre de jours**.
   
 5. Tapez la fréquence à laquelle les mots de passe doivent expirer. Choisissez un nombre de jours compris entre 14 et 730.
   
-6. Dans la seconde zone, indiquez à quel moment les utilisateurs doivent être avisés de l'expiration prochaine du mot de passe, puis sélectionnez **Enregistrer** . Choisissez un nombre de jours compris entre 1 et 30.
+6. Dans la seconde zone, indiquez à quel moment les utilisateurs doivent être avisés de l'expiration prochaine du mot de passe, puis sélectionnez **Enregistrer**. Choisissez un nombre de jours compris entre 1 et 30.
 
 7. Lorsque le mot de passe de l’utilisateur expire, ce dernier reçoit une notification qui s’affiche dans le coin inférieur droit de l’écran.
   
