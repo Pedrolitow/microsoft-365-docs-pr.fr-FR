@@ -17,26 +17,26 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez les outils disponibles pour organiser des ensembles de documents lors de l’analyse d’un cas avancé eDiscovery.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 87788e444a5ef671586567510448dab8b9deddcd
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 7c63e7eca2e032bfa11c4d4e6f961bb7a7700a4e
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033818"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751369"
 ---
 # <a name="analyze-data-in-a-review-set-in-advanced-ediscovery"></a>Analyser les données d’un ensemble de vérification dans Advanced eDiscovery
 
 Lorsque le nombre de documents collectés est important, il peut s’avérer difficile de les examiner tous. Advanced eDiscovery fournit un certain nombre d’outils pour analyser les documents afin de réduire le volume des documents à examiner sans perte de données et pour vous aider à organiser les documents de manière cohérente. Pour en savoir plus sur ces fonctionnalités, consultez les éléments suivants :
 
-- [Détecter des quasi-duplicatas](near-duplicates.md)
+- [Détecter des quasi-duplicatas](near-duplicate-detection-in-advanced-ediscovery.md)
 
-- [Threading de messagerie](email-threading.md)
+- [Threading de messagerie](email-threading-in-advanced-ediscovery.md)
 
-- [Thèmes](themes.md)
+- [Thèmes](themes-in-advanced-ediscovery.md)
 
 Pour analyser les données d’un ensemble de révision :
 
-1. Configurez les paramètres d’analyse pour votre cas. Pour plus d’informations, consultez la rubrique [configurer les paramètres de recherche et d’analyse](configure-search-analytics-settings.md).
+1. Configurez les paramètres d’analyse pour votre cas. Pour plus d’informations, consultez la rubrique [configurer les paramètres de recherche et d’analyse](configure-search-and-analytics-settings-in-advanced-ediscovery.md).
 
 2. Ouvrez l’ensemble de révision à analyser.
 

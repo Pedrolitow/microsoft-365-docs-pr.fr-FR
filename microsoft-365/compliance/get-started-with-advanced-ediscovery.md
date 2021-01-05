@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cet article explique comment commencer à utiliser Advanced eDiscovery dans Microsoft 365. Une fois que vous avez effectué quelques étapes rapides, l’outil eDiscovery avancé est prêt à être utilisé. La première étape consiste à créer un cas, puis à commencer à utiliser les fonctionnalités avancées de découverte électronique.
-ms.openlocfilehash: dd3ddb3e5ef3a46fc0b7b4925b639975167c15d2
-ms.sourcegitcommit: 5480982967a90ca3060a59676a6b29155f2de861
+ms.openlocfilehash: 45443620f294489c3afb4392376c9fe999fa098b
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49350722"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751091"
 ---
 # <a name="get-started-with-advanced-ediscovery"></a>Prise en main Advanced eDiscovery
 
@@ -153,7 +153,7 @@ Pour commencer à utiliser Advanced eDiscovery, voici un flux de travail simple 
 
 2. **[Recherchez des sources de données privatives de Troie pour les données pertinentes pour le cas](collecting-data-for-ediscovery.md)**. Une fois que vous avez ajouté des dépositaires à un cas, utilisez l’outil de recherche intégré pour rechercher des données susceptibles de concerner les emplacements de données des dépositaires. Vous utilisez des mots clés, des propriétés et des conditions pour [créer des requêtes de recherche](building-search-queries.md) qui renvoient des résultats de recherche avec les données les plus pertinentes pour le cas. Vous pouvez également :
 
-   - Afficher les [statistiques de recherche](search-statistics.md) qui peuvent vous aider à affiner une requête de recherche pour affiner les résultats.
+   - Afficher les [statistiques de recherche](search-statistics-in-advanced-ediscovery.md) qui peuvent vous aider à affiner une requête de recherche pour affiner les résultats.
 
    - Affichez un aperçu des résultats de la recherche pour vérifier rapidement si les données pertinentes sont trouvées.
 

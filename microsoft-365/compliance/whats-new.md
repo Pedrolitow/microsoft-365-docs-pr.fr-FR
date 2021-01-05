@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Qu’il s’agisse d’ajouter de nouvelles solutions au centre de conformité, de mettre à jour des fonctionnalités existantes en fonction de vos commentaires ou de déployer une documentation actualisée et actualisée, Microsoft 365 vous aide à rester informé de la mise en conformité en perpétuelle évolution. Découvrez ce que nous avons fait dans ce mois-ci.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 1d4583e5216a369801c48a47b488a35fc4e62b37
-ms.sourcegitcommit: 95b85a1fdf43e3f0839483fa22e279262703f15f
+ms.openlocfilehash: 3688ee7390b7cadf701e8dbefd8b12c82cf6d89c
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "49407338"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751591"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Nouveautés dans la conformité Microsoft 365
 
@@ -34,8 +34,40 @@ Qu’il s’agisse d’ajouter de nouvelles solutions au [Centre de conformité 
 
 
 > [!TIP]
-> Que se passe-t-il dans d’autres centres d’administration ? Consultez les articles suivants :<br>[Nouveautés du centre d’administration Microsoft 365](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[Nouveautés du centre d’administration SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br>[Nouveautés de Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)<br><br>
+> Que se passe-t-il dans d’autres centres d’administration ? Consultez les articles suivants :<br>[Nouveautés du centre d’administration Microsoft 365](https://docs.microsoft.com/office365/admin/whats-new-in-preview)<br>[Nouveautés du centre d’administration SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br>[Nouveautés de Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)<br><br>
 Consultez la feuille de [route de microsoft 365](https://www.microsoft.com/en-us/microsoft-365/roadmap) pour en savoir plus sur les fonctionnalités de Microsoft 365 qui ont été lancées, qui sont déployées, qui sont en cours de développement, qui ont été annulées ou qui ont déjà été publiées.
+
+## <a name="november--december-2020"></a>Novembre & décembre 2020
+Nous vous rappelons que nous publions souvent des fonctionnalités nouvelles et mises à jour dans un état d’aperçu pour découvrir comment elles sont utilisées afin que nous puissions les améliorer et les améliorer avant de procéder à la mise à disposition générale. Vos commentaires sont critiques lors de la préversion (et au-delà), donc n’oubliez pas de nous faire part de vos suggestions en ouvrant la carte de commentaires en bas à droite du centre de conformité.
+
+![commentaires](../media/Feedback_card_MCC.JPG)
+
+### <a name="spotlight-endpoint-data-loss-prevention-dlp-released"></a>Spotlight : sortie de la protection contre la perte de données (DLP)
+
+Le [point de terminaison DLP](endpoint-dlp-learn-about.md) étend les capacités de surveillance et de protection des activités de DLP aux informations sensibles sur les appareils Windows 10. Une fois que les appareils sont [intégrés](dlp-configure-endpoints.md) au centre de conformité Microsoft 365, vous pouvez configurer des stratégies DLP afin de protéger les informations sensibles de ces appareils.
+
+### <a name="advanced-ediscovery"></a>Advanced eDiscovery
+
+Pour faciliter la gestion du contenu chiffré dans le flux de travail de découverte électronique, les outils eDiscovery de Microsoft 365 incorporent désormais le [déchiffrement des fichiers chiffrés](ediscovery-decryption.md) joints aux messages électroniques et envoyés dans Exchange. En outre, les documents chiffrés stockés dans SharePoint et OneDrive sont déchiffrés dans Advanced eDiscovery.
+
+### <a name="compliance-manager"></a>Gestionnaire de conformité
+
+- [Prise en charge des abonnements gouvernementaux Microsoft 365](compliance-manager.md). Le gestionnaire de conformité est désormais disponible pour les clients de la communauté gouvernementale américaine (GCC).
+- [Analyseur de configuration de conformité Microsoft pour le gestionnaire de conformité](compliance-manager-mcca.md). Nouvel outil basé sur PowerShell qui vous permet de commencer à utiliser le gestionnaire de conformité en analysant les configurations actuelles de votre organisation et en les validant par rapport aux meilleures pratiques recommandées de Microsoft 365.
+- [Nouveaux modèles](compliance-manager-templates-list.md). Ajout de nouveaux modèles 56, grâce à la remise des modèles total du gestionnaire de conformité à plus de 230.
+
+### <a name="data-connectors"></a>Connecteurs de données
+
+[Cinq nouveaux connecteurs Globanet en aperçu](archiving-third-party-data.md#third-party-data-connectors). Les nouveaux connecteurs incluent les données de vente Reuters, Reuters FX, CellTrust, XIP, Generic MS SQL Database.
+
+### <a name="retention-labels-disposition-review"></a>Étiquettes de rétention (révision en destruction)
+
+Pour afficher les éléments lors d’une révision de destruction, les utilisateurs doivent maintenant être membres des groupes de rôles de l’afficheur de contenu de l’Explorateur de contenu et de l' [Explorateur de contenu](disposition.md#permissions-for-disposition). Bien que cela soit nécessaire pour examiner des éléments, ces groupes de rôles ne sont pas nécessaires pour terminer la révision de la disposition.
+
+### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
+
+- [(Prévisualisation) paramètres de partage externe pour les sites SharePoint](sensitivity-labels-teams-groups-sites.md#how-to-configure-groups-and-site-settings). Lors de la création d’une étiquette qui sera utilisée pour les groupes et les sites, vous verrez une option permettant de contrôler le partage externe pour les sites SharePoint sur lesquels l’étiquette est appliquée. Vous pouvez spécifier que le partage est autorisé pour tout utilisateur, les invités, les invités existants uniquement ou uniquement les utilisateurs de votre organisation. Lorsque l’étiquette est appliquée, les paramètres d’étiquette remplacent tous les paramètres [de partage externe configurés dans le centre d’administration SharePoint](https://docs.microsoft.com/sharepoint/change-external-sharing-site).
+- [Supprimer l’étiquette et le chiffrement d’un document étiqueté](sensitivity-labels-sharepoint-onedrive-files.md#remove-encryption-for-a-labeled-document). Pour supprimer une étiquette et le chiffrement qu’elle applique à partir d’un document étiqueté dans SharePoint, les administrateurs globaux et les administrateurs SharePoint peuvent exécuter la nouvelle `Unlock-SPOSensitivityLabelEncryptedFile` cmdlet. Cette applet de commande s’exécute même si l’administrateur n’a pas les autorisations d’accès au site ou au fichier, ou si le service Azure Rights Management n’est pas disponible.
 
 ## <a name="october-2020"></a>Octobre 2020
 
@@ -171,7 +203,7 @@ L’activité d’administration liée à la rétention est désormais enregistr
 
 Pour vous aider à comprendre quelles solutions de conformité sont utilisées pour protéger et régir les données sensibles de votre organisation, nous avons créé deux nouvelles pages d’accueil présentant la façon dont les solutions fonctionnent ensemble pour atteindre ces objectifs, notamment des liens vers des documents connexes afin que vous puissiez approfondir votre travail.
 
-[Microsoft information protection dans Microsoft 365](information-protection.md)<br>
+[Microsoft Information Protection dans Microsoft 365.](information-protection.md)<br>
 [Gouvernance des informations dans Microsoft 365](manage-Information-governance.md)
 
 ### <a name="advanced-ediscovery-add-non-custodial-data-sources-to-your-cases"></a>Découverte électronique avancée : ajout de sources de données non-privatives à vos cas
@@ -315,9 +347,6 @@ Lors de la configuration et de la validation de ces connecteurs, n’hésitez pa
 
 L’attente est terminée. Nous sommes heureux de vous annoncer que le centre de conformité Microsoft 365 est disponible pour tous les clients avec les plans Microsoft 365, Office 365, Enterprise Mobility + Security (EMS) et Windows 10 entreprise. Toutes les données ou stratégies gérées dans le centre de sécurité & conformité sont disponibles dans le centre de conformité, il n’est donc pas nécessaire de passer à la rubrique.
 
-> [!TIP]
-> Découvrez de nouveau la mise à jour du mois dernier pour un actualisateur sur certaines des [nouvelles solutions](#new-compliance-solutions) que nous avons consultées récemment, ainsi qu’une feuille de [route](#updated-compliance-solutions) illustrant l’emplacement des fonctionnalités de conformité du centre de sécurité & conformité dans Microsoft 365.
-
 Créer un signet et des en-têtes maintenant pour parcourir [https://compliance.microsoft.com](https://compliance.microsoft.com) votre atelier pour gérer la conformité dans votre organisation... ou [Lisez cet article](microsoft-365-compliance-center.md) pour approfondir vos recherches.
 
 ![Page d’accueil du centre de conformité Microsoft 365](../media/mcc-home-ga.png)
@@ -370,62 +399,3 @@ Toujours opérationnel pour vous aider à anticiper le contexte de conformité e
 - SOC 1 type 2 et SOC 2 type 2
 
 [En savoir plus sur les modèles de score de conformité](compliance-score.md#templates)
-
-## <a name="november--december-2019"></a>Novembre & décembre 2019
-
-Pendant les congés, nous avons commencé à déployer toutes les solutions de conformité de qualité qui étaient à l’allumage. La plupart sont dans un état d’aperçu, donc testez-les et n’hésitez pas à nous faire part de vos suggestions en ouvrant la carte de commentaires en bas à droite du centre de conformité.
-
-![commentaires](../media/Feedback_card_MCC.JPG)
-
-### <a name="get-to-know-the-new-neighborhood"></a>Familiarisation avec le nouveau voisinage
-
-Le nouveau centre de conformité Microsoft 365 comprend de nouvelles solutions, ainsi que les fonctionnalités de conformité que vous avez connues et apprécier du centre de sécurité & de la sécurité Office 365. Examinons un peu plus...
-
-#### <a name="new-compliance-solutions"></a>Nouvelles solutions de conformité
-
-Vous pouvez vous demander ce qu’est une *solution* . Dans la mesure où le Cloud a révolutionné le mode d’activité, il a également ouvert le volet des nouvelles méthodes de vol de données et de fraude et de nouvelles réglementations. Nos solutions de conformité sont des collections de fonctionnalités intégrées qui peuvent vous aider à gérer ces exigences de conformité évolutives. Les fonctionnalités d’une solution peuvent inclure une combinaison de stratégies, d’alertes, de rapports et bien plus encore.
-
-Voici un résumé des nouvelles solutions que vous trouverez. Restez un oeil pour les autres personnes bientôt disponibles.
-
-> [!NOTE]
-> Ces solutions se trouvent uniquement dans le centre de conformité Microsoft 365. Elles ne peuvent pas être gérées dans le centre de conformité Office 365 Security &.
-<br/>
-
-|**Nouvelle solution**|**Description**|**En savoir plus**|
-|:-----|:-----|:-----|
-|Score de conformité Microsoft (aperçu) <br/>|Créé à partir du [Gestionnaire de conformité](compliance-manager-overview.md), le score de conformité est une fonctionnalité autonome avec une conception plus conviviale et plus conviviale qui vous aide à comprendre et à améliorer la position de conformité de votre organisation. Il calcule un score basé sur les risques mesurant votre progression dans la réalisation d’actions qui contribuent à réduire les risques liés à la protection des données et aux normes réglementaires. <br/>|[Vue d’ensemble du score de conformité Microsoft (aperçu)](compliance-score.md)|
-|Catalogue de solutions (aperçu) <br/>|Le catalogue de solutions vous permet de découvrir et de vous familiariser rapidement avec nos solutions de conformité et de gestion des risques. Le catalogue est organisé en trois catégories de conformité, chacune contenant des détails sur les solutions qui composent cette catégorie. Les catégories incluent la protection des informations & la gouvernance, la gestion des risques initiés et la détection & réponse <br/>|[Vue d’ensemble du catalogue de solutions (aperçu)](microsoft-365-solution-catalog.md)|
-|Conformité de la communication (aperçu) <br/>|La conformité des communications fait partie de la nouvelle catégorie de gestion des risques Insider qui permet de réduire les risques de communication en vous aidant à détecter, capturer et prendre des mesures correctives pour les messages inappropriés dans votre organisation. La solution étend les fonctionnalités des stratégies de surveillance dans Office 365 en introduisant plusieurs nouvelles améliorations, telles que des modèles intelligents, des flux de travail de correction flexibles et des informations exploitables. <br/>|[Conformité de la communication dans Microsoft 365 (version d’évaluation)](communication-compliance.md)|
-|Classification des données (aperçu) <br/>|Notre nouvelle page classification des données contient des informations puissantes et des outils qui vous permettent de découvrir et d’évaluer la façon dont les informations et les étiquettes sensibles (rétention et sensibilité) sont utilisées dans le contenu au sein de votre organisation. Passer en revue le contenu qui contient des informations sensibles ou des étiquettes appliquées, explorer l’activité des étiquettes dans les emplacements Microsoft 365, créer des types d’informations sensibles personnalisés et bien plus encore.<br/>|[Vue d’ensemble de la classification des données (aperçu)](data-classification-overview.md)|
-|Classifieurs entraînables (préversion) <br/>|Ce nouvel outil puissant utilise notre moteur d’apprentissage automatique pour identifier des catégories de contenu dans votre organisation, telles que des documents réglementaires ou des contrats d’employés. Une fois créés, les classifieurs peuvent être utilisés dans plusieurs solutions de conformité pour détecter le contenu associé et le classer, le protéger, le conserver et bien plus encore.<br/>|[Découvrez les classificateurs de formation (préversion)](classifier-learn-about.md)|
-
-#### <a name="updated-compliance-solutions"></a>Mise à jour des solutions de conformité
-
-Si vous avez utilisé le centre de sécurité & conformité d’Office 365 pour répondre à vos besoins en matière de conformité, vous pouvez vous demander où certaines fonctionnalités se trouvent désormais dans le nouveau centre de conformité Microsoft 365. Voici une feuille de route rapide permettant de trouver ses nouvelles maisons.
-
-> [!NOTE]
-> Certaines fonctionnalités ne sont toujours disponibles que dans le centre de sécurité & Office 365 Security (en anglais), comme indiqué ci-dessous. Mais nous travaillons difficilement pour les préversions dans le centre de conformité Microsoft 365, donc restez informé des mises à jour. 
-<br/>
-
-|**Fonctionnalité**|**Centre de sécurité et conformité Office 365**|**Centre de conformité Microsoft 365**|**En savoir plus**|
-|:-----|:-----|:-----|:-----|
-|Advanced eDiscovery|eDiscovery > Advanced eDiscovery <br/> https://protection.office.com/advancedediscoverycases |Découverte électronique > avancée <br/> https://compliance.microsoft.com/advancedediscovery | [Vue d’ensemble de la solution avancée eDiscovery dans Microsoft 365](overview-ediscovery-20.md) |
-|Stratégies d’alerte|Alertes > les stratégies d’alerte <br/> https://protection.office.com/alertpolicies |Pour l’instant, les stratégies d’alerte sont gérées uniquement dans le centre de conformité & Office 365 Security. |[Stratégies d’alerte dans le Centre de sécurité et de conformité](alert-policies.md) |
-|Alertes|Alertes > afficher les alertes <br/> https://protection.office.com/viewalerts |Alertes <br/> https://compliance.microsoft.com/compliancealerts |[Affichage des alertes](alert-policies.md#viewing-alerts)|
-|Archiver|Archive de > de gouvernance des informations <br/> https://protection.office.com/archiving |Onglet Archive de > de gouvernance des informations <br/> https://compliance.microsoft.com/informationgovernance?viewid=archive |[Activer des boîtes aux lettres d’archivage](enable-archive-mailboxes.md)|
-|Recherche de journal d’audit|Recherche dans le journal d’audit > <br/> https://protection.office.com/unifiedauditlog |Audit <br/> https://compliance.microsoft.com/auditlogsearch | [Effectuer des recherches dans le journal d’audit depuis le Centre de sécurité et conformité](search-the-audit-log-in-security-and-compliance.md)|
-|Recherche de contenu|Recherche > recherche de contenu <br/> https://protection.office.com/contentsearchbeta?ContentOnly=1 | Recherche de contenu <br/> https://compliance.microsoft.com/contentsearch |[Rechercher du contenu dans Office 365](search-for-content.md) |
-|Connecteurs de données|Gestion des informations > archivage des données tierces <br/> https://protection.office.com/nativeconnector | Connecteurs de données <br/> https://compliance.microsoft.com/connectorlanding |[Archiver des données tierces](archiving-third-party-data.md)|
-|Protection contre la perte de données|Protection contre la perte de données <br/> https://protection.office.com/datalossprevention |Protection contre la perte de données <br/> https://compliance.microsoft.com/datalossprevention |[Vue d’ensemble de la protection contre la perte de données](data-loss-prevention-policies.md)|
-|Demandes des personnes concernées |Confidentialité des données > demandes des personnes concernées <br/> https://protection.office.com/dsrcases |Demandes des personnes concernées <br/> https://compliance.microsoft.com/datasubjectrequest |[Gérer les demandes des personnes associées aux données RGPD avec l’outil de cas DSR](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)|
-|eDiscovery|découverte électronique > eDiscovery <br/> https://protection.office.com/ediscoveryv1 |> de découverte électronique <br/> https://compliance.microsoft.com/classicediscovery |[Gérer des cas eDiscovery](ediscovery-cases.md) |
-|Événements|Événements de > de la gestion des enregistrements <br/> https://protection.office.com/events |Onglet > des événements de gestion des enregistrements <br/> https://compliance.microsoft.com/recordsmanagement?viewid=events |[Débuter la rétention lorsqu’un événement se produit](event-driven-retention.md)|
-|Plan de gestion de fichiers|Gestion des enregistrements > plan de gestion des fichiers <br/> https://protection.office.com/fileplan |Onglet gestion des enregistrements > plan de fichiers <br/> https://compliance.microsoft.com/recordsmanagement?viewid=fileplan |[Utiliser le plan de gestion de fichiers pour gérer les étiquettes de rétention](file-plan-manager.md)|
-|Importer des fichiers PST|Gouvernance des informations > importer des fichiers PST <br/> https://protection.office.com/importV2 |Onglet > d’importation de la gouvernance des informations <br/> https://compliance.microsoft.com/informationgovernance?viewid=import |[Vue d’ensemble de l’importation des fichiers PST de votre organisation](importing-pst-files-to-office-365.md)|
-|Explorateur d’activité des étiquettes|Explorateur d’informations > d’activité des étiquettes <br/> https://protection.office.com/labelexplorer |Onglet Explorateur d’activités > classification des données <br/> https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer |[Afficher l’activité sur votre contenu étiqueté (aperçu)](data-classification-activity-explorer.md)|
-|Étiquettes de rétention et stratégies d’étiquette |Étiquettes de rétention > étiquettes de rétention > des étiquettes et des stratégies d’étiquette <br/> https://protection.office.com/retentionlabels |Onglets de gouvernance des informations > des étiquettes et des stratégies d’étiquette <br/> https://compliance.microsoft.com/informationgovernance?viewid=labels <br/> https://compliance.microsoft.com/informationgovernance?viewid=labelpolicies | [Vue d’ensemble des étiquettes de rétention](retention.md)|
-|Stratégies de rétention|Conservation des > de gouvernance des informations <br/> https://protection.office.com/retention |Onglet rétention > de gouvernance des informations <br/> https://compliance.microsoft.com/informationgovernance?viewid=retention |[En savoir plus sur les stratégies et les balises de rétention](retention.md)|
-|Types d’informations sensibles|Classification > types d’informations sensibles <br/> https://protection.office.com/sensitivetypes |Classification des données > onglet types d’informations sensibles <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[Définitions d’entités des types d’informations sensibles](sensitive-information-type-entity-definitions.md)|
-|Étiquettes de confidentialité et stratégies d’étiquette|Étiquettes de sensibilité > de classification > les étiquettes et les onglets stratégies d’étiquette <br/> https://protection.office.com/sensitivity |Onglets de protection des informations > des étiquettes et des stratégies d’étiquette <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies |[En savoir plus sur les étiquettes de niveau de confidentialité](sensitivity-labels.md) |
-|Certification de service|Certification de service <br/> https://protection.office.com/serviceassurance/dashboard |Pour l’instant, les ressources de service assurance ne sont accessibles que dans le centre de conformité & Office 365 Security. |[Certification de service dans le Centre de sécurité et conformité](service-assurance.md)|
-|Surveillance|Surveillance <br/> https://protection.office.com/supervisoryreviewv2 |Conformité des communications <br/> https://compliance.microsoft.com/supervisoryreview |[Conformité de la communication dans Microsoft 365 (version d’évaluation)](communication-compliance.md) |

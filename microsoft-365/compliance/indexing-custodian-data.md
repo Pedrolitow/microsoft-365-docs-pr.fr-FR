@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Lorsqu’un dépositaire est ajouté à un cas avancé de découverte électronique, tout contenu considéré comme partiellement indexé est retraité afin de le faire entièrement chercher.
-ms.openlocfilehash: 95e087884b65628565e596dc8ae9f33aadc4cd9f
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 908d01cacc103639e1f9efe965240c33a5296ba9
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527554"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49750755"
 ---
 # <a name="advanced-indexing-of-custodian-data"></a>Indexation avancée des données des consignataires
 
@@ -41,9 +41,9 @@ Pour en savoir plus sur le traitement de la prise en charge et des éléments pa
 
 Une fois le processus d’indexation avancé terminé, vous pouvez comprendre l’efficacité du retraitement.  Dans l’affichage des résultats d’indexation avancés, sous l’onglet **traitement** d’un cas, le graphique indique le nombre d’éléments ajoutés à l' *index hybride*.  L’index hybride est l’emplacement où la découverte électronique avancée stocke le contenu retraité.
 
-Cette vue inclut également le nombre d’éléments nécessitant une correction et un autre graphique d’erreurs par type de fichier. Si vous souhaitez plus d’informations, reportez-vous aux rubriques suivantes :
+Cette vue inclut également le nombre d’éléments nécessitant une correction et un autre graphique d’erreurs par type de fichier. Pour plus d’informations, voir :
 
-- [Correction d’erreur lors du traitement des données](error-remediation.md)
+- [Correction d’erreur lors du traitement des données](error-remediation-when-processing-data-in-advanced-ediscovery.md)
 
 - [Correction d’erreur sur élément unique](single-item-error-remediation.md)
 

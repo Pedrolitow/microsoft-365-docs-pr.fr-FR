@@ -17,12 +17,12 @@ search.appverid:
 ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-mar2020
 description: Installez et utilisez l’Explorateur de stockage Azure pour télécharger des documents qui ont été exportés à partir d’un jeu de vérification dans Advanced eDiscovery.
-ms.openlocfilehash: 4b09521b4a72fc8fda68f5892c899fe76a066809
-ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
+ms.openlocfilehash: 094dcb4ecc8b1ca73a7ec0238ed20b27d4c16e72
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47399161"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751291"
 ---
 # <a name="download-export-jobs-in-an-advanced-ediscovery-case"></a>Télécharger des travaux d’exportation dans un cas avancé eDiscovery
 
@@ -88,7 +88,7 @@ La dernière étape consiste à utiliser l’Explorateur de stockage Azure et l�
 
    Le dossier exporter le travail contient les éléments suivants. Les éléments réels dans le dossier d’exportation sont déterminés par les options d’exportation configurées lors de la création du travail d’exportation. Pour plus d’informations, consultez [la rubrique exporter des documents à partir d’un jeu de révision](export-documents-from-review-set.md).
 
-    - Export_load_file.csv : ce fichier CSV est un rapport d’exportation détaillé qui contient des informations sur chaque document exporté. Le fichier se compose d’une colonne pour chaque propriété de métadonnées d’un document. Pour obtenir la liste et la description des métadonnées incluses dans ce rapport, reportez-vous à la colonne **nom du champ exporté** du tableau dans les [champs de métadonnées de document dans Advanced eDiscovery](document-metadata-fields.md).
+    - Export_load_file.csv : ce fichier CSV est un rapport d’exportation détaillé qui contient des informations sur chaque document exporté. Le fichier se compose d’une colonne pour chaque propriété de métadonnées d’un document. Pour obtenir la liste et la description des métadonnées incluses dans ce rapport, reportez-vous à la colonne **nom du champ exporté** du tableau dans les [champs de métadonnées de document dans Advanced eDiscovery](document-metadata-fields-in-advanced-ediscovery.md).
     
     - Summary.txt : un fichier texte qui contient un résumé de l’exportation, y compris les statistiques d’exportation.
     
@@ -102,7 +102,7 @@ La dernière étape consiste à utiliser l’Explorateur de stockage Azure et l�
         
       - ProcessingError : ce dossier contient des documents contenant des erreurs de traitement. Ce contenu se trouve au niveau de l’élément, ce qui signifie qu’en cas d’erreur de traitement d’une pièce jointe, le document contenant la pièce jointe est également inclus dans ce dossier.
  
-8. Pour exporter tous les contenus de l'exportation, sélectionnez le dossier d'exportation, puis cliquez sur**Télécharger**.
+8. Pour exporter tous les contenus de l'exportation, sélectionnez le dossier d'exportation, puis cliquez sur **Télécharger**.
 
 9. Indiquez l'endroit où vous souhaitez télécharger les fichiers exportés, puis cliquez sur Sélectionnez le dossier.
 

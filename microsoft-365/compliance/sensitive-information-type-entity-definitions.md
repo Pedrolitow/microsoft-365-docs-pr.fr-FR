@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: La protection contre la perte de données (DLP) dans le centre de sécurité &amp; conformité inclut 80 types d’informations sensibles que vous pouvez utiliser dans vos stratégies DLP. Cette rubrique répertorie tous ces types d'informations sensibles et indique ce qu'une stratégie DLP recherche pour chaque type.
-ms.openlocfilehash: cb45d613da95c977f56b82e64ad3332434e08cd8
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: 10f45403703130c191f4cbb26d1c0cba168b05ae
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698507"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751281"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Définitions d’entités des types d’informations sensibles
 
@@ -871,7 +871,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - personalausweis republik österreich
 
 ## <a name="austria-passport-number"></a>Numéro de passeport autrichien
-Cette entité de type d’informations sensibles est uniquement disponible dans le type sensitiveinformation de numéro de passeport UE.
 
 ### <a name="format"></a>Format
 
@@ -891,26 +890,42 @@ non applicable
   
 ### <a name="definition"></a>Définition
 
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
+- L’expression régulière  `Regex_austria_eu_passport_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé depuis  `Keywords_eu_passport_number` ou `Keywords_austria_eu_passport_number` est trouvé. 
+- L’expression régulière `Regex_eu_passport_date1` recherche une date au format jj. mm. yyyy ou un mot clé `Keywords_eu_passport_date` from est trouvé.
+
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - L’expression régulière  `Regex_austria_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from  `Keywords_austria_eu_passport_number` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_passport_number` ou `Keywords_austria_eu_passport_number` est trouvé. 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Austria Passport Number -->
+      <Entity id="1c96ae4e-303b-447d-86c7-77113ac266bf" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_austria_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_austria_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date1" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_austria_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_austria_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
 - tel #
 - tel #
@@ -933,8 +948,8 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Passnummer
 - reisepässe
 
-## <a name="austria-social-security-number-or-equivalent-identification"></a>Numéro de sécurité sociale autrichien ou identification équivalente
-Cette entité de type d’informations sensibles est uniquement disponible dans le type d’information de numéro de sécurité sociale ou d’ID équivalent.
+
+## <a name="austria-social-security-number"></a>Numéro de sécurité sociale Autriche
 
 ### <a name="format"></a>Format
 
@@ -955,43 +970,56 @@ Oui
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
-- La fonction’Func_austria_eu_
-- _or_equivalent’trouve le contenu qui correspond au modèle. 
+- La fonction  `Func_austria_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
 - un mot clé from  `Keywords_austria_eu_ssn_or_equivalent` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - La fonction  `Func_austria_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
     
 ```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
+      <!-- Austria Social Security Number -->
+      <Entity id="6896a906-86c9-4d19-a2da-6e43ccd19b7b" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_austria_eu_ssn_or_equivalent" />
           <Match idRef="Keywords_austria_eu_ssn_or_equivalent" />
         </Pattern>
-<Pattern confidenceLevel="75">
-            <IdMatch idRef="Func_austria_eu_ssn_or_equivalent" />
-          </Pattern>
-</Entity>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_austria_eu_ssn_or_equivalent" />
+          <Any minMatches="0" maxMatches="0">
+            <Match idRef="Keywords_austria_eu_telephone_number" />
+            <Match idRef="Keywords_austria_eu_mobile_number" />
+          </Any>
+        </Pattern>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
 #### <a name="keywords_austria_eu_ssn_or_equivalent"></a>Keywords_austria_eu_ssn_or_equivalent
 
+- Numéro de sécurité sociale autrichien
+- numéro EHIC
+- EHIC non
+- code d’assurance
+- insurancecode #
+- Numéro d’assurance
+- Numéro d’assurance
+- krankenkassennummer
+- krankenversicherung
+- socialsecurityno
+- socialsecurityno #
 - Numéro de sécurité sociale
 - numéro de sécurité sociale
 - code de sécurité sociale
-- Numéro d’assurance
-- Numéro de sécurité sociale autrichien
+- sozialversicherungsnummer
+- sozialversicherungsnummer #
+- soziale sicherheit kein
+- sozialesicherheitkein #
 - SSN #
 - SSN
-- code d’assurance
-- code d’assurance #
-- socialsecurityno #
-- sozialversicherungsnummer
-- soziale sicherheit kein
+- versicherungscode
 - versicherungsnummer
+- zdravstveno zavarovanje
 
 ## <a name="austria-tax-identification-number"></a>Numéro d’identification fiscale autrichienne
 
@@ -1877,7 +1905,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Etain #
 
 ## <a name="belgium-passport-number"></a>Numéro de passeport belge
-Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro de passeport de l’UE.
 
 ### <a name="format"></a>Format
 
@@ -1893,26 +1920,44 @@ non applicable
   
 ### <a name="definition"></a>Définition
 
+ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
+- L’expression régulière  `Regex_belgium_eu_passport_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé depuis  `Keywords_eu_passport_number` ou `Keywords_belgium_eu_passport_number` est trouvé. 
+- L’expression régulière `Regex_eu_passport_date2` recherche une date au format jj mm yy ou un mot clé à partir de `Keywords_eu_passport_date` ou `Keywords_belgium_eu_passport_number` est trouvé
+
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - L’expression régulière  `Regex_belgium_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from  `Keywords_belgium_eu_passport_number` est trouvé.
+- Un mot clé depuis  `Keywords_eu_passport_number` ou `Keywords_belgium_eu_passport_number` est trouvé. 
 
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Belgium Passport Number -->
+      <Entity id="d7b1315b-21ca-4774-a32a-596010ff78fd" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_belgium_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_belgium_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date2" />
+            <Match idRef="Keywords_eu_passport_date" />
+            <Match idRef="Keywords_belgium_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_belgium_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_belgium_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
+
 ```
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
 - tel #
 - tel #
@@ -1937,66 +1982,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Pass-Nr
 - Passnummer
 - reisepass kein
-
-## <a name="belgium-social-security-number-or-equivalent-identification"></a>Numéro de sécurité sociale belge ou identification équivalente
-Cette entité de type d’informations sensibles est uniquement disponible dans le type d’information de numéro de sécurité sociale ou d’ID équivalent.
-
-### <a name="format"></a>Format
-
-11 chiffres sans espaces ni délimiteurs
-  
-### <a name="pattern"></a>Modèle
-
-11 chiffres
-  
-### <a name="checksum"></a>Somme de contrôle
-
-Oui
-  
-### <a name="definition"></a>Définition
-
-Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
-  
-- La fonction  `Func_belgium_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
-- Un mot clé from  `Keywords_belgium_eu_ssn_or_equivalent` est trouvé. 
-    
-Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-- La fonction  `Func_belgium_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
-    
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_belgium_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_belgium_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_belgium_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### <a name="keywords"></a>Mots clés
-
-#### <a name="keywords_belgium_eu_ssn_or_equivalent"></a>Keywords_belgium_eu_ssn_or_equivalent
-
-- numéro national belge
-- numéro national
-- numéro de sécurité sociale
-- nationalnumber #
-- SSN #
-- SSN
-- nationalnumber
-- bnn #
-- bnn
-- Numéro d’identification personnel
-- personalidnumber #
-- numéro national
-- numéro de sécurité
-- numéro d’assuré
-- identifiant national
-- identifiantnational #
-- numéronational #
 
 
 ## <a name="belgium-value-added-tax-number"></a>Valeur belge-valeur ajoutée de la taxe
@@ -2121,7 +2106,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 - CPF
 - Identificateur
-- Registration
+- Enregistrement
 - Parts
 - Cadastro de Pessoas Físicas 
 - Imposto 
@@ -2534,7 +2519,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 
 ## <a name="bulgaria-passport-number"></a>Numéro de passeport pour la Bulgarie
-Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro de passeport de l’UE.
 
 ### <a name="format"></a>Format
 
@@ -2550,25 +2534,41 @@ Non
   
 ### <a name="definition"></a>Définition
 
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
+- L’expression régulière  `Regex_bulgaria_eu_passport_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé depuis  `Keywords_eu_passport_number` ou `Keywords_bulgaria_eu_passport_number` est trouvé. 
+- L’expression régulière `Regex_eu_passport_date1` recherche une date au format jj. mm. yyyy ou un mot clé `Keywords_eu_passport_date` from est trouvé.
+
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - L’expression régulière  `Regex_bulgaria_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé depuis  `Keywords_bulgaria_eu_passport_number` ou `Keywords_eu_passport_number_common` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_passport_number` ou `Keywords_bulgaria_eu_passport_number` est trouvé. 
 
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Bulgaria Passport Number -->
+      <Entity id="f7172b82-c588-4216-845e-4e54e397f29a" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_bulgaria_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_bulgaria_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date1" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_bulgaria_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_bulgaria_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
 - tel #
 - tel #
@@ -2586,6 +2586,11 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - номер на паспорта
 - номер на паспорт
 - паспорт non
+
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- Date de publication
+- Date d’expiration
 
 ## <a name="canada-bank-account-number"></a>Numéro de compte bancaire canadien
 
@@ -3820,7 +3825,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 
 ## <a name="croatia-passport-number"></a>Numéro de passeport croate
-Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro de passeport de l’UE.
 
 ### <a name="format"></a>Format
 
@@ -3836,21 +3840,37 @@ Non
   
 ### <a name="definition"></a>Définition
 
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
+- L’expression régulière  `Regex_croatia_eu_passport_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé depuis  `Keywords_eu_passport_number` ou `Keywords_croatia_eu_passport_number` est trouvé. 
+- L’expression régulière `Regex_eu_passport_date1` recherche une date au format jj. mm. yyyy ou un mot clé `Keywords_eu_passport_date` from est trouvé.
+
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - L’expression régulière  `Regex_croatia_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé depuis  `Keywords_eu_passport_number_common` ou `Keywords_croatia_eu_passport_number` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_passport_number` ou `Keywords_croatia_eu_passport_number` est trouvé. 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Croatia Passport Number -->
+      <Entity id="7d7a729d-32d8-4204-8d01-d5e6a6c25581" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_croatia_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_croatia_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date1" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_croatia_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_croatia_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 ### <a name="keywords"></a>Mots clés
 
@@ -3946,68 +3966,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - n ° d’étain
 - Etain #
 
-## <a name="croatia-social-security-number-or-equivalent-identification"></a>Numéro de sécurité sociale ou identification équivalent de la Croatie
-Cette entité de type d’informations sensibles est uniquement disponible dans le type d’information de numéro de sécurité sociale ou d’ID équivalent.
 
-### <a name="format"></a>Format
-
-11 chiffres sans espaces ni délimiteurs
-  
-### <a name="pattern"></a>Modèle
-
-11 chiffres :
-  
-- dix chiffres
-- un chiffre de contrôle
-    
-### <a name="checksum"></a>Somme de contrôle
-
-Oui
-  
-### <a name="definition"></a>Définition
-
-Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
-  
-- La fonction  `Func_croatia_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
-- Un mot clé from  `Keywords_croatia_eu_ssn_or_equivalent` est trouvé. 
-    
-Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
-- La fonction  `Func_croatia_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
-    
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_croatia_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_croatia_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_croatia_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### <a name="keywords"></a>Mots clés
-
-#### <a name="keywords_croatia_eu_ssn_or_equivalent"></a>Keywords_croatia_eu_ssn_or_equivalent
-
-- Numéro d’identification personnel
-- Numéro de citoyen principal
-- numéro d’identification nationale
-- numéro de sécurité sociale
-- nationalnumber #
-- SSN #
-- SSN
-- nationalnumber
-- bnn #
-- bnn
-- Numéro d’identification personnel
-- personalidnumber #
-- OIB
-- osobni identifikacijski broj
-
-   
 ## <a name="cyprus-drivers-license-number"></a>Numéro de permis de conduire Chypre
 
 ### <a name="format"></a>Format
@@ -4220,7 +4179,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 
 ## <a name="cyprus-passport-number"></a>Numéro de passeport de Chypre
-Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro de passeport de l’UE.
 
 ### <a name="format"></a>Format
 
@@ -4236,21 +4194,37 @@ Non
   
 ### <a name="definition"></a>Définition
 
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
+- L’expression régulière  `Regex_cyprus_eu_passport_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé depuis  `Keywords_eu_passport_number` ou `Keywords_cyprus_eu_passport_number` est trouvé. 
+- L’expression régulière `Regex_cyprus_eu_passport_date` recherche une date au format jj/mm/aaaa ou un mot clé à partir de `Keywords_cyprus_eu_passport_date` est trouvé
+
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_cyprus_eu_passport_number` trouve le contenu qui correspond au modèle.
-- Un mot clé depuis  `Keywords_eu_passport_number_common` ou `Keywords_cyprus_eu_passport_number` est trouvé. 
+- L’expression régulière  `Regex_cyprus_eu_passport_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé depuis  `Keywords_eu_passport_number` ou `Keywords_cyprus_eu_passport_number` est trouvé.  
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Cyprus Passport Number -->
+      <Entity id="9193e2e8-7f8c-43c1-a274-ac40d651936f" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_cyprus_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_cyprus_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_cyprus_eu_passport_date" />
+            <Match idRef="Keywords_cyprus_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_cyprus_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_cyprus_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
@@ -4281,6 +4255,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - pasaport numarası
 - N ° Pasaport
 - Αρ. Διαβατηρίου
+
+#### <a name="keywords_cyprus_eu_passport_date"></a>Keywords_cyprus_eu_passport_date
+
+- expire le
+- émis le
+
 
 ## <a name="cyprus-tax-identification-number"></a>Numéro d’identification fiscale de Chypre
 Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
@@ -4529,7 +4509,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 
 ## <a name="czech-passport-number"></a>Numéro de passeport tchèque
-Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro de passeport de l’UE.
 
 ### <a name="format"></a>Format
 
@@ -4545,21 +4524,37 @@ Non
   
 ### <a name="definition"></a>Définition
 
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
+- L’expression régulière  `Regex_czech_republic_eu_passport_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé depuis  `Keywords_eu_passport_number` ou `Keywords_czech_republic_eu_passport_number` est trouvé. 
+- L’expression régulière `Regex_eu_passport_date1` recherche une date au format jj. mm. yyyy ou un mot clé `Keywords_eu_passport_date` from est trouvé.
+
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - L’expression régulière  `Regex_czech_republic_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé depuis  `Keywords_eu_passport_number_common` ou `Keywords_czech_republic_eu_passport_number` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_passport_number` ou `Keywords_czech_republic_eu_passport_number` est trouvé. 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Czech Republic Passport Number -->
+      <Entity id="7bcd8ce8-5e92-4bbe-bc92-fa669f0369fa" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_czech_republic_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_czech_republic_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date1" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_czech_republic_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_czech_republic_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
@@ -4584,6 +4579,11 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - cestovní pasu
 - passeport non
 - čísla pasu
+
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- Date de publication
+- Date d’expiration
 
 
 ## <a name="czech-personal-identity-number"></a>Numéro d’identité personnelle tchèque
@@ -4684,68 +4684,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - n ° d’étain
 - Etain #
 - Numéro d’identification unique
-
-
-## <a name="czech-social-security-number-or-equivalent-identification"></a>Numéro de sécurité sociale tchèque ou identification équivalente
-
-Cette entité de type d’informations sensibles est uniquement disponible dans le type d’information de numéro de sécurité sociale ou d’ID équivalent.
-
-### <a name="format"></a>Format
-
-10 chiffres et une barre oblique inverse dans le modèle spécifié
-  
-### <a name="pattern"></a>Modèle
-
-dix chiffres et une barre oblique inverse :
-  
-- six chiffres correspondant à la date de naissance (AAMMJJ) : 
-- une barre oblique inverse
-- trois chiffres correspondant à un numéro de série qui sépare les personnes nés à la même date
-- un chiffre de contrôle
-    
-### <a name="checksum"></a>Somme de contrôle
-
-Oui
-  
-### <a name="definition"></a>Définition
-
-Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
-- La fonction  `Func_czech_republic_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
-- Un mot clé from  `Keywords_czech_republic_eu_ssn_or_equivalent` est trouvé. 
-    
-Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-- La fonction  `Func_czech_republic_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
-
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_czech_republic_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_czech_republic_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_czech_republic_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### <a name="keywords"></a>Mots clés
-
-#### <a name="keywords_czech_republic_eu_ssn_or_equivalent"></a>Keywords_czech_republic_eu_ssn_or_equivalent
-
-- Numéro de naissance
-- numéro d’identification nationale
-- Numéro d’identification personnel
-- numéro de sécurité sociale
-- nationalnumber #
-- SSN #
-- SSN
-- numéro national
-- Numéro d’identification personnel
-- personalidnumber #
-- rč
-- rodné číslo
-- rodne cislo
 
 
 ## <a name="denmark-drivers-license-number"></a>Numéro de permis de conduire Danemark
@@ -4911,7 +4849,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 
 ## <a name="denmark-passport-number"></a>Numéro de passeport Danemark
-Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro de passeport de l’UE.
 
 ### <a name="format"></a>Format
 
@@ -4927,21 +4864,38 @@ Non
   
 ### <a name="definition"></a>Définition
 
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
+- L’expression régulière  `Regex_denmark_eu_passport_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé depuis  `Keywords_eu_passport_number` ou `Keywords_denmark_eu_passport_number` est trouvé. 
+- L’expression régulière `Regex_eu_passport_date2` recherche une date au format jj mm yy ou un mot clé à partir de `Keywords_eu_passport_date` est trouvé
+
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - L’expression régulière  `Regex_denmark_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé depuis  `Keywords_eu_passport_number_common` ou `Keywords_denmark_eu_passport_number` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_passport_number` ou `Keywords_denmark_eu_passport_number` est trouvé. 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Denmark Passport Number -->
+      <Entity id="25e8c47e-e6fe-4884-a211-74898f8c0196" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_denmark_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_denmark_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date2" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_denmark_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_denmark_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
+
 ```
 
 ### <a name="keywords"></a>Mots clés
@@ -4964,6 +4918,11 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - pasnummer
 - Passeport n °
 - pasnumre
+
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- Date de publication
+- Date d’expiration
 
 
 ## <a name="denmark-personal-identification-number"></a>Numéro d’identification personnel Danemark
@@ -5081,64 +5040,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - sygesikringskortnummer
 - sygesikringsnr
 - sygesikringsnummer
-
-
-## <a name="denmark-social-security-number-or-equivalent-identification"></a>Numéro de sécurité sociale ou identification équivalente Danemark
-Cette entité de type d’informations sensibles n’est disponible que pour le type d’informations sensibles de l’UE ou ID équivalent.
-
-### <a name="format"></a>Format
-
-10 chiffres et un trait d’Union dans le modèle spécifié
-  
-### <a name="pattern"></a>Modèle
-
-dix chiffres et un trait d’Union :
-  
-- six chiffres correspondant à la date de naissance (JJMMAA) 
-- un trait d’Union
-- quatre chiffres correspondant à un numéro de séquence
-
-### <a name="checksum"></a>Somme de contrôle
-
-Oui
-  
-### <a name="definition"></a>Définition
-
-Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
-- La fonction  `Func_denmark_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
-- Un mot clé from  `Keywords_denmark_eu_ssn_or_equivalent` est trouvé. 
-    
-Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-- La fonction  `Func_denmark_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
-    
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_denmark_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_denmark_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_denmark_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### <a name="keywords"></a>Mots clés
-
-#### <a name="keywords_denmark_eu_ssn_or_equivalent"></a>Keywords_denmark_eu_ssn_or_equivalent
-
-- Numéro d’identification personnel
-- numéro d’identification nationale
-- numéro de sécurité sociale
-- nationalnumber #
-- SSN #
-- SSN
-- numéro national
-- Numéro d’identification personnel
-- personalidnumber #
-- CPR-nummer
-- personnummer
 
 
 ## <a name="drug-enforcement-agency-dea-number"></a>Numéro de la Loi sur la mise en œuvre du médicament (DEA)
@@ -5454,7 +5355,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 
 ## <a name="estonia-passport-number"></a>Numéro de passeport Estonie
-Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro de passeport de l’UE.
 
 ### <a name="format"></a>Format
 
@@ -5470,21 +5370,37 @@ Non
   
 ### <a name="definition"></a>Définition
 
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
+- L’expression régulière  `Regex_estonia_eu_passport_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé depuis  `Keywords_eu_passport_number` ou `Keywords_estonia_eu_passport_number` est trouvé. 
+- L’expression régulière `Regex_eu_passport_date1` recherche une date au format jj. mm. yyyy ou un mot clé `Keywords_eu_passport_date` from est trouvé.
+
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - L’expression régulière  `Regex_estonia_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé depuis  `Keywords_eu_passport_number_common` ou `Keywords_estonia_eu_passport_number` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_passport_number` ou `Keywords_estonia_eu_passport_number` est trouvé. 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Estonia Passport Number -->
+      <Entity id="61f7073a-509e-425b-a754-bc01bb5d5b8c" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_estonia_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_estonia_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date1" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_estonia_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_estonia_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
@@ -5505,6 +5421,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 #### <a name="keywords_estonia_eu_passport_number"></a>Keywords_estonia_eu_passport_number
 
 Eesti kodaniku numéro de passe Passei passinumbrid document numéro de document n ° dokumendi Nr
+
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- Date de publication
+- Date d’expiration
+
 
 ## <a name="eu-debit-card-number"></a>Numéro de carte de crédit de l'UE
 
@@ -5961,19 +5883,19 @@ Il s’agit des entités dans le numéro de passeport UE typeThese sont les enti
 
 Il s’agit des entités qui sont dans le type d’information de numéro de sécurité sociale ou d’identification équivalent.
 
-- [Autriche](#austria-social-security-number-or-equivalent-identification)
-- [Belgique](#belgium-social-security-number-or-equivalent-identification)
-- [Croatie](#croatia-social-security-number-or-equivalent-identification)
-- [Tchèque](#czech-social-security-number-or-equivalent-identification)
-- [Danemark](#denmark-social-security-number-or-equivalent-identification)
-- [Finlande](#finland-social-security-number-or-equivalent-identification)
+- [Autriche](#austria-social-security-number)
+- [Belgique](#belgium-national-number)
+- [Croatie](#croatia-personal-identification-oib-number)
+- [Tchèque](#czech-personal-identity-number)
+- [Danemark](#denmark-personal-identification-number)
+- [Finlande](#finland-national-id)
 - [France](#france-social-security-number-insee-or-equivalent-identification)
 - [Allemagne](#germany-identity-card-number)
 - [Grèce](#greece-national-id-card)
-- [Hongrie](#hungary-social-security-number-or-equivalent-identification)
+- [Hongrie](#hungary-social-security-number-taj)
 - [Portugal](#portugal-citizen-card-number)
 - [Espagne](#spain-social-security-number-ssn)
-- [Suède](#sweden-social-security-number-or-equivalent-identification)
+- [Suède](#sweden-national-id)
 
 
 ## <a name="eu-tax-identification-number"></a>Numéro d’identification fiscale de l’UE
@@ -6339,7 +6261,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 
 ## <a name="finland-passport-number"></a>Numéro de passeport de Finlande
-Cette entité de type d’informations sensibles est disponible dans le type d’informations sensibles du numéro de passeport de l’UE et est disponible en tant qu’entité de type d’informations sensibles autonome.
 
 ### <a name="format"></a>Format
 combinaison de neuf lettres et chiffres
@@ -6395,78 +6316,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Numéro de transfert.
 - transfert #
 - Numéro de transfert
-
-
-## <a name="finland-social-security-number-or-equivalent-identification"></a>Numéro de sécurité sociale Finlande ou identification équivalente
-Cette entité de type d’informations sensibles est uniquement disponible dans le type d’information de numéro de sécurité sociale ou d’ID équivalent.
-
-### <a name="format"></a>Format
-
-Combinaison de 11 caractères au format spécifié
-  
-### <a name="pattern"></a>Modèle
-
-combinaison de 11 caractères au format spécifié :
-  
-- six chiffres 
-- une instance de l’un des éléments suivants :
-  - symbole plus
-  - symbole moins
-  - la lettre « A » (ne respecte pas la casse)
-- trois chiffres
-- une lettre ou un chiffre
-    
-### <a name="checksum"></a>Somme de contrôle
-
-Oui
-  
-### <a name="definition"></a>Définition
-
-Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
-- La fonction  `Func_finland_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
-- Un mot clé from  `Keywords_finland_eu_ssn_or_equivalent` est trouvé. 
-    
-Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-- La fonction  `Func_finland_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
-    
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_finland_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_finland_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_finland_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### <a name="keywords"></a>Mots clés
-
-#### <a name="keywords_finland_eu_ssn_or_equivalent"></a>Keywords_finland_eu_ssn_or_equivalent
-
-- numéro d’identification
-- ID personnel
-- Numéro d’identité
-- Numéro d’identification national finnois
-- personalidnumber #
-- numéro d’identification nationale
-- Numéro d’identification
-- Numéro d’identification nationale
-- Numéro d’identification national
-- n ° ID
-- tunnistenumero
-- henkilötunnus
-- yksilöllinen henkilökohtainen tunnistenumero
-- ainutlaatuinen henkilökohtainen tunnus
-- identiteetti numérique
-- suomen kansallinen henkilötunnus
-- henkilötunnusnumero #
-- kansallisen tunnistenumero
-- tunnusnumero
-- Kansallinen tunnus numérique
-- hetu
 
 
 ## <a name="france-drivers-license-number"></a>Numéro de permis de conduire France
@@ -7249,7 +7098,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 
 ## <a name="germany-passport-number"></a>Numéro de passeport allemand
-Cette entité de type d’informations sensibles est incluse dans le type d’informations sensibles du numéro de passeport de l’UE et est disponible en tant qu’entité de type d’informations sensibles autonome.
 
 ### <a name="format"></a>Format
 
@@ -7271,12 +7119,12 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
 - La fonction Func_german_passport trouve un contenu qui correspond au modèle.
-- Un mot clé from `Keyword_german_passport` est trouvé.
+- Un mot clé depuis `Keyword_german_passport` ou `Keywords_eu_passport_number_common` est trouvé.
 - La somme de contrôle est correcte.
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - La fonction Func_german_passport_data trouve un contenu qui correspond au modèle.
-- Un mot clé from `Keyword_german_passport` est trouvé.
+- Un mot clé depuis `Keyword_german_passport` ou `Keywords_eu_passport_number_common` est trouvé.
 - La somme de contrôle est correcte.
 
 ```xml
@@ -7284,11 +7132,17 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
     <Entity id="2e3da144-d42b-47ed-b123-fbf78604e52c" patternsProximity="300" recommendedConfidence="75">
       <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_german_passport" />
-        <Match idRef="Keyword_german_passport" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_german_passport" />
+          <Match idRef="Keywords_eu_passport_number_common" />
+        </Any>
       </Pattern>
       <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_german_passport_data" />
-        <Match idRef="Keyword_german_passport" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_german_passport" />
+          <Match idRef="Keywords_eu_passport_number_common" />
+        </Any>
       </Pattern>
     </Entity>
 ```
@@ -7306,6 +7160,20 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - reisepässe
 - n ° passeport
 - passeport non
+
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- tel #
+- tel #
+- passportid
+- passeports
+- n ° passeport
+- Numéro de passeport
+- passportnumber
+- numéro de passeport
+- passportnumbers
+- numéros de passeport
+
 
 ## <a name="germany-tax-identification-number"></a>Numéro d’identification fiscale de l’Allemagne
 
@@ -7669,8 +7537,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ## <a name="greece-passport-number"></a>Numéro de passeport Grèce
 
-Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro de passeport de l’UE.
-
 ### <a name="format"></a>Format
 
 Deux lettres suivies de sept chiffres, sans espaces ni délimiteurs
@@ -7685,27 +7551,42 @@ Non
   
 ### <a name="definition"></a>Définition
 
-Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
 - L’expression régulière  `Regex_greece_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé depuis  `Keywords_eu_passport_number_common` ou `Keywords_greece_eu_passport_number` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_passport_number` ou `Keywords_greece_eu_passport_number` est trouvé. 
+- L’expression régulière `Regex_greece_eu_passport_date` recherche la date au format jj mmm AA (exemple-28 août 19) ou un mot clé from `Keywords_greece_eu_passport_date` est trouvé.
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
+- L’expression régulière  `Regex_greece_eu_passport_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé depuis  `Keywords_eu_passport_number` ou `Keywords_greece_eu_passport_number` est trouvé. 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Greece Passport Number -->
+      <Entity id="7e65eb47-cdf9-4f52-8f90-2a27d5ee67e3" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_greece_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_greece_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_greece_eu_passport_date" />
+            <Match idRef="Keywords_greece_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_greece_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_greece_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
 - tel #
 - tel #
@@ -7723,6 +7604,65 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - αριθμός διαβατηρίου
 - αριθμούς διαβατηρίου
 - αριθμός διαβατηριο
+
+
+## <a name="greece-social-security-number-amka"></a>Numéro de sécurité sociale Grèce (AMKA)
+Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
+- stratégies de protection contre la perte de données
+- stratégies de conformité des communications
+- gouvernance des informations
+- gestion des enregistrements
+- Sécurité des applications Cloud Microsoft
+
+### <a name="format"></a>Format
+
+Onze chiffres sans espaces ni délimiteurs
+  
+### <a name="pattern"></a>Modèle
+
+- 6 chiffres en tant que date de naissance AAMMJJ
+- 4 chiffres
+- un chiffre de contrôle
+  
+### <a name="checksum"></a>Somme de contrôle
+
+Oui
+  
+### <a name="definition"></a>Définition
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
+- La fonction  `Func_greece_eu_ssn` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_greece_eu_ssn_or_equivalent` est trouvé. 
+    
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
+- La fonction  `Func_greece_eu_ssn` trouve le contenu qui correspond au modèle. 
+
+```xml
+      <!-- Greece Social Security Number (AMKA) -->
+      <Entity id="e39b03f4-50ea-41ae-af7a-a4b9539596ad" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_greece_eu_ssn" />
+          <Match idRef="Keywords_greece_eu_ssn_or_equivalent" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_greece_eu_ssn" />
+        </Pattern>
+      </Entity>
+```
+
+### <a name="keywords"></a>Mots clés
+
+#### <a name="keywords_greece_eu_ssn_or_equivalent"></a>Keywords_greece_eu_ssn_or_equivalent
+
+- SSN
+- SSN #
+- Numéro de sécurité sociale
+- socialsecurityno #
+- numéro de sécurité sociale
+- amka
+- a.m.k.a.
+- Αριθμού Μητρώου Κοινωνικής Ασφάλισης
+
 
 ## <a name="greece-tax-identification-number"></a>Numéro d’identification de taxe Grèce
 Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
@@ -8112,8 +8052,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ## <a name="hungary-passport-number"></a>Numéro de passeport Hongrie
 
-Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro de passeport de l’UE.
-
 ### <a name="format"></a>Format
 
 Deux lettres suivies de six ou sept chiffres sans espaces ni délimiteurs
@@ -8128,26 +8066,41 @@ Non
   
 ### <a name="definition"></a>Définition
 
-Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
 - L’expression régulière  `Regex_hungary_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé depuis  `Keywords_eu_passport_number_common` ou `Keywords_hungary_eu_passport_number` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_passport_number` ou `Keywords_hungary_eu_passport_number` est trouvé. 
+- L’expression régulière `Regex_hungary_eu_passport_date` recherche la date au format jj mmm/MMM YY (exemple-01 MÁR/Mar 12) ou un mot clé from `Keywords_eu_passport_date` est trouvé.
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
+- L’expression régulière  `Regex_hungary_eu_passport_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé depuis  `Keywords_eu_passport_number` ou `Keywords_hungary_eu_passport_number` est trouvé. 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Hungary Passport Number -->
+      <Entity id="5b483910-9aa7-4c99-9917-f4001464bda7" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_hungary_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_hungary_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_hungary_eu_passport_date" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_hungary_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_hungary_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
 - tel #
 - tel #
@@ -8166,9 +8119,8 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Útlevelek száma
 - útlevél szám
 
-## <a name="hungary-social-security-number-or-equivalent-identification"></a>Numéro de sécurité sociale ou identification équivalente Hongrie
 
-Cette entité de type d’informations sensibles est uniquement disponible dans le type d’information de numéro de sécurité sociale ou d’ID équivalent.
+## <a name="hungary-social-security-number-taj"></a>Numéro de sécurité sociale Hongrie (TAJ)
 
 ### <a name="format"></a>Format
 
@@ -8194,16 +8146,16 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - La fonction  `Func_hungary_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
     
 ```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
+      <!-- Hungarian Social Security Number (TAJ) -->
+      <Entity id="0de78315-9537-47f5-95ab-b3e77eba3993" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_hungary_eu_ssn_or_equivalent" />
           <Match idRef="Keywords_hungary_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
+        </Pattern>
+        <Pattern confidenceLevel="75">
           <IdMatch idRef="Func_hungary_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
+        </Pattern>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
@@ -8566,7 +8518,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-Aucune
+Aucun
 
    
 ## <a name="international-classification-of-diseases-icd-10-cm"></a>Classification internationale des maladies (ICD-10-CM)
@@ -8884,8 +8836,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ## <a name="ireland-passport-number"></a>Numéro de passeport Irlande
 
-Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro de passeport de l’UE.
-
 ### <a name="format"></a>Format
 
 Deux lettres ou chiffres suivis de sept chiffres sans espaces ni délimiteurs
@@ -8903,22 +8853,37 @@ Non
   
 ### <a name="definition"></a>Définition
 
-Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-  
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
 - L’expression régulière  `Regex_ireland_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé depuis  `Keywords_eu_passport_number_common` ou `Keywords_ireland_eu_passport_number` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_passport_number` ou `Keywords_ireland_eu_passport_number` est trouvé. 
+- L’expression régulière `Regex_ireland_eu_passport_date` recherche la date au format jj mmm/MMM yyyy (exemple-01 Bea/mai 1988) ou un mot clé from `Keywords_eu_passport_date` est trouvé.
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
+- L’expression régulière  `Regex_ireland_eu_passport_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé depuis  `Keywords_eu_passport_number` ou `Keywords_ireland_eu_passport_number` est trouvé.
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Ireland Passport Number -->
+      <Entity id="a2130f27-9ee2-4103-84f9-a6b1ee7d0cbf" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_ireland_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_ireland_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_ireland_eu_passport_date" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_ireland_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_ireland_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
@@ -8945,6 +8910,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - uimhreacha pas
 - uimhir cárta
 - uimhir chárta
+
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- Date de publication
+- Date d’expiration
+
 
 ## <a name="ireland-personal-public-service-pps-number"></a>Numéro PPS (Personal public service) pour l’Irlande
 
@@ -9281,7 +9252,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 
 ## <a name="italy-passport-number"></a>Numéro de passeport Italie
-Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro de passeport de l’UE.
 
 ### <a name="format"></a>Format
 
@@ -9300,21 +9270,37 @@ non applicable
   
 ### <a name="definition"></a>Définition
 
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
+- L’expression régulière  `Regex_italy_eu_passport_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé depuis  `Keywords_eu_passport_number` ou `Keywords_italy_eu_passport_number` est trouvé. 
+- L’expression régulière `Regex_italy_eu_passport_date` recherche la date au format jj mmm/MMM yyyy (exemple-01 GEN/JAN 1988) ou un mot clé from `Keywords_eu_passport_date` est trouvé.
+
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - L’expression régulière  `Regex_italy_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé depuis  `Keywords_eu_passport_number_common` ou `Keywords_italy_eu_passport_number` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_passport_number` ou `Keywords_italy_eu_passport_number` est trouvé. 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Italy Passport Number -->
+      <Entity id="39811019-4750-445f-b26d-4c0e6c431544" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_italy_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_italy_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_italy_eu_passport_date" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_italy_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_italy_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
@@ -9341,6 +9327,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - numération di passaporto
 - chiffresi del passaporto
 - passeport italien
+
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- Date de publication
+- Date d’expiration
+
 
 ## <a name="italy-value-added-tax-number"></a>Numéro de TVA Italie valeur ajoutée
 Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
@@ -10203,7 +10195,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Numéro de l’électeur
 
 ## <a name="latvia-passport-number"></a>Numéro de passeport Lettonie
-Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro de passeport de l’UE.
 
 ### <a name="format"></a>Format
 
@@ -10222,21 +10213,37 @@ Non
   
 ### <a name="definition"></a>Définition
 
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
+- L’expression régulière  `Regex_latvia_eu_passport_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé depuis  `Keywords_eu_passport_number` ou `Keywords_latvia_eu_passport_number` est trouvé. 
+- L’expression régulière `Regex_eu_passport_date1` recherche une date au format jj. mm. yyyy ou un mot clé `Keywords_eu_passport_date` from est trouvé.
+
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - L’expression régulière  `Regex_latvia_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé depuis  `Keywords_eu_passport_number_common` ou `Keywords_latvia_eu_passport_number` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_passport_number` ou `Keywords_latvia_eu_passport_number` est trouvé. 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Latvia Passport Number -->
+      <Entity id="23ae25ec-cc28-421b-b77a-3054eadf1ede" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_latvia_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_latvia_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date1" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_latvia_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_latvia_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
@@ -10262,6 +10269,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Pases Nr
 - passeport non
 - n ° du passeport
+
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- Date de publication
+- Date d’expiration
+
 
 ## <a name="lithuania-drivers-license-number"></a>Numéro de permis de conduire de la Lituanie
 
@@ -10515,7 +10528,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - uniqueidentityno #
 
 ## <a name="lithuania-passport-number"></a>Numéro de passeport Lituanie
-Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro de passeport de l’UE.
 
 ### <a name="format"></a>Format
 
@@ -10531,26 +10543,42 @@ non applicable
   
 ### <a name="definition"></a>Définition
 
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
+- L’expression régulière  `Regex_lithuania_eu_passport_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé depuis  `Keywords_eu_passport_number` ou `Keywords_lithuania_eu_passport_number` est trouvé. 
+- L’expression régulière `Regex_eu_passport_date3` recherche une date au format jj mm aaaa ou un mot clé à partir de `Keywords_eu_passport_date` est trouvé
+
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - L’expression régulière  `Regex_lithuania_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé depuis  `Keywords_eu_passport_number_common` ou `Keywords_lithuania_eu_passport_number` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_passport_number` ou `Keywords_lithuania_eu_passport_number` est trouvé. 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Lithuania Passport Number -->
+      <Entity id="1b79900f-047b-4c3f-846f-7d73b5534bce" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_lithuania_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_lithuania_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date3" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_lithuania_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_lithuania_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
 - tel #
 - tel #
@@ -10568,6 +10596,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Paso chiffres
 - paso numeriai
 - Paso Nr
+
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- Date de publication
+- Date d’expiration
+
 
 ## <a name="luxemburg-drivers-license-number"></a>Numéro de permis de conduire du Luxembourg
 
@@ -10807,7 +10841,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - uniqueidkey #
 
 ## <a name="luxemburg-passport-number"></a>Numéro de passeport Luxembourg
-Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro de passeport de l’UE.
 
 ### <a name="format"></a>Format
 
@@ -10823,28 +10856,76 @@ Non
   
 ### <a name="definition"></a>Définition
 
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
+- L’expression régulière  `Regex_luxemburg_eu_passport_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé depuis  `Keywords_eu_passport_number` ou `Keywords_luxemburg_eu_passport_number` est trouvé. 
+- L’expression régulière `Regex_eu_passport_date3` recherche une date au format jj mm aaaa ou un mot clé à partir de `Keywords_eu_passport_date` est trouvé
+
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-- L’expression régulière  `Regex_nation_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from  `Keywords_nation_eu_passport_number` est trouvé. 
+- L’expression régulière  `Regex_luxemburg_eu_passport_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé depuis  `Keywords_eu_passport_number` ou `Keywords_luxemburg_eu_passport_number` est trouvé. 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="75">
-          <IdMatch idRef="Regex_nation_eu_passport_number" />
-          <Match idRef="Keywords_nation_eu_passport_number" />
+      <!-- Luxemburg Passport Number -->
+      <Entity id="81d5c027-bed9-4421-91a0-3b2e55b3eb85" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_luxemburg_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_luxemburg_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date3" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
         </Pattern>
-</Entity>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_luxemburg_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_luxemburg_eu_passport_number" />
+          </Any>
+        </Pattern>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywords_nation_eu_passport_number"></a>Keywords_nation_eu_passport_number
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- numéro de passeport
-- Numéro de passeport letton
+- tel #
+- tel #
+- passportid
+- passeports
+- n ° passeport
 - Numéro de passeport
+- passportnumber
+- numéro de passeport
+- passportnumbers
+- numéros de passeport
+
+#### <a name="keywords_luxemburg_eu_passport_number"></a>Keywords_luxemburg_eu_passport_number
+- ausweisnummer
+- passe luxembourgeoise
+- Luxembourg passeport
+- Passeport luxembourgeois
+- non de passeport
+- non-Reisepass
+- Nr-Reisepass
+- Numéro de passeport
+- transmission réseau
+- transmettre le Nr
 - passnummer
+- nombre passeport
+- reisepässe
+- Reisepass-Nr
+- reisepassnummer
+
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- Date de publication
+- Date d’expiration
+
 
 ## <a name="luxemburg-national-identification-number-non-natural-persons"></a>Numéro d’identification nationale du Luxembourg (personnes non physiques)
 
@@ -11239,7 +11320,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 
 ## <a name="malta-passport-number"></a>Numéro de passeport de Malte
-Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro de passeport de l’UE.
 
 ### <a name="format"></a>Format
 
@@ -11255,26 +11335,39 @@ Non
   
 ### <a name="definition"></a>Définition
 
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
+- L’expression régulière  `Regex_malta_eu_passport_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé depuis  `Keywords_eu_passport_number` ou `Keywords_malta_eu_passport_number` est trouvé. 
+- Un mot clé from `Keywords_eu_passport_date` est trouvé
+
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - L’expression régulière  `Regex_malta_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé depuis  `Keywords_eu_passport_number_common` ou `Keywords_malta_eu_passport_number` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_passport_number` ou `Keywords_malta_eu_passport_number` est trouvé. 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Malta Passport Number -->
+      <Entity id="b2b21198-48f9-4d13-b2a5-03969bff0fb8" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_malta_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_malta_eu_passport_number" />
+          </Any>
+          <Match idRef="Keywords_eu_passport_date" />
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_malta_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_malta_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
 - tel #
 - tel #
@@ -11292,6 +11385,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - numru tal-passaport
 - numri tal-passaport
 - NRU Tal-Passaport
+
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- Date de publication
+- Date d’expiration
+
 
 ## <a name="malta-tax-identification-number"></a>Numéro d’identification fiscale Malte
 
@@ -11612,7 +11711,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 
 ## <a name="netherlands-passport-number"></a>Numéro de passeport néerlandais
-Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro de passeport de l’UE.
 
 ### <a name="format"></a>Format
 
@@ -11628,31 +11726,57 @@ non applicable
   
 ### <a name="definition"></a>Définition
 
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
+- L’expression régulière  `Regex_netherlands_eu_passport_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé depuis  `Keywords_eu_passport_number` ou `Keywords_netherlands_eu_passport_number` est trouvé. 
+- L’expression régulière `Regex_netherlands_eu_passport_date` recherche la date au format jj mmm/MMM yyyy (exemple-26 Maa/MAR 2012)
+
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - L’expression régulière  `Regex_netherlands_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from  `Keywords_netherlands_eu_passport_number` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_passport_number` ou `Keywords_netherlands_eu_passport_number` est trouvé. 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Netherlands Passport Number -->
+      <Entity id="61786727-bafd-45f6-94d9-888d815e228e" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_netherlands_eu_passport_number" />
+          <Match idRef="Regex_netherlands_eu_passport_date" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_netherlands_eu_passport_number" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_netherlands_eu_passport_number" />
-          <Match idRef="Keywords_netherlands_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_netherlands_eu_passport_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
+
+- tel #
+- tel #
+- passportid
+- passeports
+- n ° passeport
+- Numéro de passeport
+- passportnumber
+- numéro de passeport
+- passportnumbers
+- numéros de passeport
+
 #### <a name="keywords_netherlands_eu_passport_number"></a>Keywords_netherlands_eu_passport_number
 
-- Numéro de passeport néerlandais
-- numéro de passeport
-- Numéro de passeport néerlandais
-- nederlanden paspoort nummer
-- paspoort
-- nederlanden paspoortnummer
+- paspoort nummer
+- paspoortnummers
 - paspoortnummer
+- paspoort Nr
 
 ## <a name="netherlands-tax-identification-number"></a>Numéro d’identification fiscale néerlandaise
 Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
@@ -12930,7 +13054,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Carta de condução
 
 ## <a name="portugal-passport-number"></a>Numéro de passeport Portugal
-Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro de passeport de l’UE.
 
 ### <a name="format"></a>Format
 
@@ -12949,26 +13072,42 @@ Non
   
 ### <a name="definition"></a>Définition
 
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
+- L’expression régulière  `Regex_portugal_eu_passport_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé depuis  `Keywords_eu_passport_number` ou `Keywords_portugal_eu_passport_number` est trouvé. 
+- L’expression régulière `Regex_eu_passport_date1` recherche une date au format jj. mm. yyyy ou un mot clé `Keywords_eu_passport_date` from est trouvé.
+
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - L’expression régulière  `Regex_portugal_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé depuis  `Keywords_eu_passport_number_common` ou `Keywords_portugal_eu_passport_number` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_passport_number` ou `Keywords_portugal_eu_passport_number` est trouvé.
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Portugal Passport Number -->
+      <Entity id="080a52fd-a7bc-431e-b54d-51f08f59db11" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_portugal_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_portugal_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date1" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_portugal_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_portugal_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
 - tel #
 - tel #
@@ -12993,6 +13132,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - passeports Portugais
 - número passaporte
 - números passaporte
+
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- Date de publication
+- Date d’expiration
+
 
 ## <a name="portugal-tax-identification-number"></a>Numéro d’identification fiscale du Portugal
 
@@ -13329,7 +13474,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - uniqueidentityno
 
 ## <a name="romania-passport-number"></a>Numéro de passeport roumain
-Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro de passeport de l’UE.
 
 ### <a name="format"></a>Format
 
@@ -13345,26 +13489,42 @@ Non
   
 ### <a name="definition"></a>Définition
 
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
+- L’expression régulière  `Regex_romania_eu_passport_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé depuis  `Keywords_eu_passport_number` ou `Keywords_romania_eu_passport_number` est trouvé. 
+- L’expression régulière `Regex_romania_eu_passport_date` recherche la date au format jj mmm/MMM YY (exemple-01 fév/fév 10) ou un mot clé from `Keywords_eu_passport_date` est trouvé.
+
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - L’expression régulière  `Regex_romania_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé depuis  `Keywords_eu_passport_number_common` ou `Keywords_romania_eu_passport_number` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_passport_number` ou `Keywords_romania_eu_passport_number` est trouvé. 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Romania Passport Number -->
+      <Entity id="5d31b90c-7fe2-4a76-a14b-767b8fd19d6c" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_romania_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_romania_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_romania_eu_passport_date" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_romania_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_romania_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
 - tel #
 - tel #
@@ -13380,6 +13540,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 #### <a name="keywords_romania_eu_passport_number"></a>Keywords_romania_eu_passport_number
 
 numărul pașaportului numarul pasaportului numerele pașaportului Pașaport Nr
+
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- Date de publication
+- Date d’expiration
+
 
 ## <a name="russia-passport-number-domestic"></a>Numéro de passeport russe-Suisse
 Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
@@ -13862,7 +14028,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Etain #
 
 ## <a name="slovakia-passport-number"></a>Numéro de passeport slovaque
-Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro de passeport de l’UE.
 
 ### <a name="format"></a>Format
 
@@ -13878,26 +14043,42 @@ Non
   
 ### <a name="definition"></a>Définition
 
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
+- L’expression régulière  `Regex_slovakia_eu_passport_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé depuis  `Keywords_eu_passport_number` ou `Keywords_slovakia_eu_passport_number` est trouvé. 
+- L’expression régulière `Regex_eu_passport_date1` recherche une date au format jj. mm. yyyy ou un mot clé `Keywords_eu_passport_date` from est trouvé.
+
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - L’expression régulière  `Regex_slovakia_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé depuis  `Keywords_eu_passport_number_common` ou `Keywords_slovakia_eu_passport_number` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_passport_number` ou `Keywords_slovakia_eu_passport_number` est trouvé. 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Slovakia Passport Number -->
+      <Entity id="238e1f08-d80e-4793-af33-9b57918335b7" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_slovakia_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_slovakia_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date1" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_slovakia_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_slovakia_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
 - tel #
 - tel #
@@ -13917,6 +14098,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - pas de č.
 - Passeport n °
 - n ° passeport
+
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- Date de publication
+- Date d’expiration
+
 
 ## <a name="slovenia-drivers-license-number"></a>Numéro de permis de conduire Slovénie
 
@@ -14161,7 +14348,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - uniqueidentityno #
 
 ## <a name="slovenia-passport-number"></a>Numéro de passeport Slovénie
-Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro de passeport de l’UE.
 
 ### <a name="format"></a>Format
 
@@ -14181,26 +14367,42 @@ Non
   
 ### <a name="definition"></a>Définition
 
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
+- L’expression régulière  `Regex_slovenia_eu_passport_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé depuis  `Keywords_eu_passport_number` ou `Keywords_slovenia_eu_passport_number` est trouvé. 
+- L’expression régulière `Regex_eu_passport_date1` recherche une date au format jj. mm. yyyy ou un mot clé `Keywords_eu_passport_date` from est trouvé.
+
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - L’expression régulière  `Regex_slovenia_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé depuis  `Keywords_eu_passport_number_common` ou `Keywords_slovenia_eu_passport_number` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_passport_number` ou `Keywords_slovenia_eu_passport_number` est trouvé. 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Slovenia Passport Number -->
+      <Entity id="235b7976-7bbe-4df5-bb40-08678e749d1a" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_slovenia_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_slovenia_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date1" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_slovenia_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_slovenia_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
 - tel #
 - tel #
@@ -14221,6 +14423,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Référence rojstva
 - liste potni
 - številke potnih listov
+
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- Date de publication
+- Date d’expiration
+
 
 ## <a name="slovenia-tax-identification-number"></a>Numéro d’identification fiscale de la Slovénie
 Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
@@ -14663,7 +14871,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - quei #
 
 ## <a name="spain-passport-number"></a>Numéro de passeport Espagne
-Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro de passeport de l’UE.
 
 ### <a name="format"></a>Format
 
@@ -14683,26 +14890,42 @@ Non applicable
   
 ### <a name="definition"></a>Définition
 
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
+- L’expression régulière  `Regex_spain_eu_passport_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé depuis  `Keywords_eu_passport_number` ou `Keywords_spain_eu_passport_number` est trouvé. 
+- L’expression régulière `Regex_spain_eu_passport_date` recherche une date au format jj-mm-aaaa ou un mot clé à partir de `Keywords_eu_passport_date` est trouvé
+
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
 - L’expression régulière  `Regex_spain_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé depuis  `Keywords_eu_passport_number_common` ou `Keywords_spain_eu_passport_number` est trouvé. 
+- Un mot clé depuis  `Keywords_eu_passport_number` ou `Keywords_spain_eu_passport_number` est trouvé.
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Spain Passport Number -->
+      <Entity id="d17a57de-9fa5-4e9f-85d3-85c26d89686e" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_spain_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_spain_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_spain_eu_passport_date" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_spain_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_spain_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
 - tel #
 - tel #
@@ -14730,9 +14953,13 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - pasaporte n °
 - Passport Espagne
 
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- Date de publication
+- Date d’expiration
+
 
 ## <a name="spain-social-security-number-ssn"></a>Numéro de sécurité sociale (SSN) Espagne
-Cette entité de type d’informations sensibles est incluse dans le type d’informations sensibles du numéro de sécurité sociale de l’UE ou d’un ID équivalent et est disponible en tant qu’entité de type d’informations sensibles autonome.
 
 ### <a name="format"></a>Format
 
@@ -14768,7 +14995,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-Aucune
+Aucun
 
 ## <a name="spain-tax-identification-number"></a>Numéro d’identification fiscale Espagne
 Ce type d’informations sensibles est disponible uniquement dans les cas suivants :
@@ -15266,66 +15493,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - PasseportNon 
 - Passeportn ° 
 
-## <a name="sweden-social-security-number-or-equivalent-identification"></a>Numéro de sécurité sociale de la Suède ou identification équivalente
-Cette entité de type d’informations sensibles est uniquement disponible dans le type d’information de numéro de sécurité sociale ou d’ID équivalent.
-
-### <a name="format"></a>Format
-
-12 chiffres sans espaces ni délimiteurs
-  
-### <a name="pattern"></a>Modèle
-
-12 chiffres :
-  
-- huit chiffres correspondant à la date de naissance (AAAAMMJJ) 
-- trois chiffres correspondant à un numéro de série où : 
-  - le dernier chiffre du numéro de série indique sexe par l’affectation d’un nombre impair pour le mâle et d’un nombre pair pour femelle.
-  - jusqu’à 1990, l’affectation du numéro de série correspond au comté où le porteur du numéro est né ou (en naissance avant 1947) où il a été vivant, en fonction des enregistrements fiscaux, le 1er janvier 1947, avec un code spécial (généralement 9 comme le 7 chiffres) pour immigrants 
-- un chiffre de contrôle
-    
-### <a name="checksum"></a>Somme de contrôle
-
-Oui
-  
-### <a name="definition"></a>Définition
-
-Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
-- La fonction  `Func_sweden_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
-- Un mot clé from  `Keywords_sweden_eu_ssn_or_equivalent` est trouvé. 
-    
-Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-- La fonction  `Func_sweden_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
-    
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_sweden_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_sweden_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_sweden_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### <a name="keywords"></a>Mots clés
-
-#### <a name="keywords_sweden_eu_ssn_or_equivalent"></a>Keywords_sweden_eu_ssn_or_equivalent
-
-- Numéro d’identification personnel
-- numéro d’identification
-- Numéro d’identification personnel
-- n ° d’identité
-- Numéro d’identification
-- Numéro d’identification personnel
-- ID personnummer
-- ID personligt-Nummer
-- ID unikt-Nummer
-- personnummer
-- identifikationsnumret
-- personnummer #
-- identifikationsnumret #
 
 ## <a name="sweden-tax-identification-number"></a>Numéro d’identification de taxe Suède
 Ce type d’informations sensibles est disponible uniquement dans les cas suivants :

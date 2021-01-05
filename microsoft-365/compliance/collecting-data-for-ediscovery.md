@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment identifier un ensemble de documents à consulter lors d’une enquête à l’aide de l’outil de recherche dans Advanced eDiscovery.
 ms.custom: seo-marvel-2020
-ms.openlocfilehash: 725c289324a8e4d5bd4d7a7b9ddd9e091b6d6241
-ms.sourcegitcommit: a3c2c737995088c1bad3b12ab401a7ef242b0272
+ms.openlocfilehash: b69127f1a372a9b843b9c7dac1b2909dd80b2988
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47956197"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751265"
 ---
 # <a name="collect-data-for-a-case-in-advanced-ediscovery"></a>Collecter des données pour un cas dans Advanced eDiscovery
 
@@ -46,7 +46,7 @@ Une fois l’estimation de la recherche terminée, sélectionnez la recherche po
 - Emplacements les plus fréquents
 - Requêtes
 
-Pour plus d’informations sur les statistiques de recherche, voir statistiques de la [recherche](search-statistics.md).
+Pour plus d’informations sur les statistiques de recherche, voir statistiques de la [recherche](search-statistics-in-advanced-ediscovery.md).
 
 Une fois l’aperçu terminé, le bouton **Aperçu** est actif. Sélectionnez-le pour afficher un aperçu d’un sous-ensemble de résultats.
 

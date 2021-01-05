@@ -1,5 +1,5 @@
 ---
-title: Prise en main des classificateurs de formation (préversion)
+title: Prise en main des classifieurs entraînables
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -18,22 +18,22 @@ search.appverid:
 - MOE150
 - MET150
 description: Un classificateur Microsoft 365 est un outil que vous pouvez former afin de reconnaître différents types de contenu en leur donnant des exemples à consulter. Cet article vous explique comment créer et former un classifieur personnalisé et comment le former pour améliorer la précision.
-ms.openlocfilehash: 9fe50f7faada77492fd93a86d0c3549cc8e1d361
-ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
+ms.openlocfilehash: bca1de5edc3efd38f943b02091c3f47d832e6a19
+ms.sourcegitcommit: 54d1a2f363b2d5b63aae258c3cec0573a08f2866
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49072963"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49752658"
 ---
-# <a name="get-started-with-trainable-classifiers-preview"></a>Prise en main des classificateurs de formation (préversion)
+# <a name="get-started-with-trainable-classifiers"></a>Prise en main des classifieurs entraînables
 
 Un classificateur Microsoft 365 pouvant être formé est un outil que vous pouvez former afin de reconnaître différents types de contenu en leur donnant des exemples à consulter. Une fois l’apprentissage effectué, vous pouvez l’utiliser pour identifier un élément pour l’application des étiquettes de sensibilité d’Office, des stratégies de conformité des communications et des stratégies d’étiquette de rétention.
 
 La création d’un classificateur de formation personnalisée implique d’abord de donner aux échantillons prélevés par des personnes et correspondant à la catégorie. Ensuite, une fois qu’il les a traités, vous testez la capacité des classifieurs à les prédire en leur donnant un mélange d’échantillons positifs et négatifs. Cet article vous explique comment créer et former un classificateur personnalisé et comment améliorer les performances des classifieurs de formation personnalisée et des classifieurs préformés pendant leur durée de formation.
 
-Pour en savoir plus sur les différents types de classifieurs, voir [en savoir plus sur les classifieurs de formation (aperçu)](classifier-learn-about.md).
+Pour en savoir plus sur les différents types de classifieurs, reportez-vous à la rubrique [en savoir plus sur les classifieurs de formation](classifier-learn-about.md).
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Configuration requise
 
 ### <a name="licensing-requirements"></a>Critères de licence
 
@@ -44,7 +44,7 @@ Les classifieurs sont une fonctionnalité de conformité de Microsoft 365 E5 ou 
 Pour accéder aux classifieurs dans l’interface utilisateur : 
 
 - l’administrateur global doit s’abonner au client pour créer des classifieurs personnalisés.
-- L’administrateur de conformité ou le rôle d’enquête de données est nécessaire pour former un classifieur.
+- Le rôle administrateur de conformité est nécessaire pour former un classifieur.
 
 Vous aurez besoin de comptes dotés des autorisations suivantes pour utiliser les classifieurs dans les scénarios suivants :
 
@@ -101,7 +101,7 @@ Une fois que le classifieur peut traiter suffisamment d’échantillons positifs
    > [!TIP]
    > Si vous créez un nouveau site et dossier pour vos données de départ, autorisez au moins une heure pour cet emplacement à indexer avant de créer le classifieur qui utilisera ces données de départ.
 
-3. Connectez-vous au centre de conformité Microsoft 365 avec l’accès administrateur de conformité ou au rôle d’administrateur de sécurité, puis ouvrez le **Centre de conformité Microsoft 365 ou la** classification des données du centre de **sécurité Microsoft 365**  >  **Data classification**.
+3. Connectez-vous au centre de conformité Microsoft 365 avec l’accès administrateur de conformité ou au rôle d’administrateur de sécurité, puis ouvrez le **Centre de conformité Microsoft 365 ou la** classification des données du centre de **sécurité Microsoft 365**  >  .
 
 4. Sélectionnez l’onglet **classeurs de formation** .
 

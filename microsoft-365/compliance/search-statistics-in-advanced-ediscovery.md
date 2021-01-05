@@ -3,7 +3,7 @@ title: Statistiques de recherche dans la découverte électronique avancée
 f1.keywords:
 - NOCSH
 ms.author: markjjo
-author: esclee
+author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Valider les résultats de la recherche en affichant les statistiques générées après l’exécution d’une recherche de collection dans Advanced eDiscovery.
-ms.openlocfilehash: ef5653a76d94272ba5f608149648f1421198929a
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+ms.openlocfilehash: 5b6cfdaffc7851a00035a4edcc9d490b229c455d
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48286080"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49750775"
 ---
 # <a name="search-statistics-in-advanced-ediscovery"></a>Statistiques de recherche dans Advanced eDiscovery
 

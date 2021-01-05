@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment utiliser la correction des erreurs pour corriger les problèmes de données dans Advanced eDiscovery, qui peut empêcher le traitement approprié du contenu.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 8ada53dd6339541fc39b37903a0f58fd4ad84c8c
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: c6ef1076e44fca0d060d766fc85a435550c40059
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035908"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49750797"
 ---
 # <a name="error-remediation-when-processing-data"></a>Correction d’erreur lors du traitement des données
 
@@ -35,7 +35,7 @@ Utilisez le flux de travail suivant pour corriger les fichiers avec des erreurs 
 >[!NOTE]
 >Si l’Assistant de correction d’erreur est fermé à tout moment au cours de la procédure suivante, vous pouvez revenir à la session de correction d’erreur à partir de l’onglet **traitement** en sélectionnant **corrections** dans le menu déroulant **vue** .
 
-1. Sous l’onglet **traitement** dans le cas avancé eDiscovery, sélectionnez **Erreurs** dans le menu déroulant **affichage** , puis sélectionnez un jeu de révision ou l’ensemble de la casse dans le menu déroulant **étendue** . Cette section affiche toutes les erreurs provenant du cas ou de l’erreur d’un jeu de réexamen spécifique.
+1. Sous l’onglet **traitement** dans le cas avancé eDiscovery, sélectionnez **Erreurs** dans le menu déroulant **affichage** , puis sélectionnez un jeu de révision ou l’ensemble de la casse dans le menu déroulant **étendue** . Cette section affiche toutes les erreurs provenant du cas ou de l’erreur d’un jeu à réviser spécifique.
 
    ![Correction des erreurs](../media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
 
@@ -51,11 +51,11 @@ Utilisez le flux de travail suivant pour corriger les fichiers avec des erreurs 
 
     ![Télécharger des fichiers](../media/6ac04b09-8e13-414a-9e24-7c75ba586363.png)
 
-5. Pour télécharger des fichiers, spécifiez le **chemin de destination pour le téléchargement**. Il s’agit d’un chemin d’accès au dossier parent sur votre ordinateur local où le fichier sera téléchargé.  Le chemin d’accès par défaut,%USERPROFILE%\Downloads\errors, pointe vers le dossier downloads de l’utilisateur connecté. Vous pouvez modifier ce chemin si vous le souhaitez. Si vous le modifiez, nous vous recommandons d’utiliser un chemin d’accès local pour obtenir les meilleures performances. N’utilisez pas de chemin d’accès réseau distant. Par exemple, vous pouvez utiliser le chemin d’accès **C:\Remediation**. 
+5. Pour télécharger des fichiers, spécifiez le **Chemin d’accès destination pour le téléchargement**. Il s'agit d'un chemin d'accès au dossier parent sur votre ordinateur local où le fichier sera téléchargé.  Le chemin d’accès par défaut,%USERPROFILE%\Downloads\errors, pointe vers le dossier downloads de l’utilisateur connecté. Vous pouvez modifier ce chemin si vous le souhaitez. Si vous le modifiez, nous vous recommandons d’utiliser un chemin d’accès local pour obtenir les meilleures performances. N’utilisez pas de chemin d’accès réseau distant. Par exemple, vous pouvez utiliser le chemin d’accès **C:\Remediation**. 
 
    Le chemin d’accès au dossier parent est automatiquement ajouté à la commande AzCopy (en tant que valeur du paramètre **/dest** ).
 
-6. Copiez la commande prédéfinie en cliquant sur **copier dans le presse-papiers**. Ouvrez une invite de commandes Windows, collez la commande AzCopy, puis appuyez sur **entrée**.  
+6. Copiez la commande prédéfinie en cliquant sur **Copier dans le presse-papiers**. Ouvrez une invite de commandes Windows, collez la commande AzCopy, puis appuyez sur **entrée**.  
 
     ![Préparer la correction des erreurs](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)    
 
@@ -66,11 +66,11 @@ Utilisez le flux de travail suivant pour corriger les fichiers avec des erreurs 
 
     `<Parent folder>\Subfolder 1\Subfolder 2\<file>`
 
-    - Le *sous-dossier 1* est nommé avec l’ID du cas ou de l’ensemble de révision, en fonction de l’étendue que vous avez sélectionnée à l’étape 1.
+    - *Le sous-dossier 1* est nommé avec l’ID du cas ou du jeu à réviser, en fonction de l’étendue que vous avez sélectionnée à l’étape 1.
 
-    - Le *sous-dossier 2* est nommé avec l’ID de fichier du fichier téléchargé
+    - *Sous-dossier 2* se nomme avec l’ID de fichier du fichier téléchargé.
 
-    - Le fichier téléchargé se trouve dans le *sous-dossier 2* et est également nommé avec l’ID de fichier.
+    - Le fichier téléchargé se trouve dans *Sous-dossier 2* et est également nommé avec l’ID de fichier.
 
     Voici un exemple de chemin d’accès de dossier et de nom de fichier d’erreur qui est créé lorsque des éléments sont téléchargés dans le dossier parent **C:\Remediation** :
 
@@ -79,21 +79,21 @@ Utilisez le flux de travail suivant pour corriger les fichiers avec des erreurs 
     Si plusieurs fichiers sont téléchargés, chacun d’entre eux est téléchargé dans un sous-dossier nommé avec l’ID de fichier.
 
     > [!IMPORTANT]
-    > Lorsque vous chargez des fichiers à l’étape 9 et à l’étape 10, les fichiers corrigés doivent avoir le même nom de fichier et se trouver dans la même structure de sous-dossiers. Les noms de fichier et de sous-dossier sont utilisés pour associer le fichier corrigé au fichier d’erreur d’origine. Si la structure de dossiers ou les noms de fichiers sont modifiés, vous recevez l’erreur `Cannot apply Error Remediation to the current Workingset`suivante :. Pour éviter tout problème, nous vous recommandons de conserver les fichiers corrigés dans le même dossier parent et la même structure de sous-dossiers.
+    > Lorsque vous chargez des fichiers à l’étape 9 et à l’étape 10, les fichiers corrigés doivent avoir le même nom de fichier et se trouver dans la même structure de sous-dossiers. Les noms de fichier et de sous-dossier sont utilisés pour associer le fichier corrigé au fichier d’erreur d’origine. Si la structure de dossiers ou les noms de fichiers sont modifiés, vous recevez l’erreur suivante : `Cannot apply Error Remediation to the current Workingset` . Pour éviter tout problème, nous vous recommandons de conserver les fichiers corrigés dans le même dossier parent et la même structure de sous-dossiers.
 
 7. Après avoir téléchargé les fichiers, vous pouvez les corriger à l’aide d’un outil approprié. Pour les fichiers protégés par mot de passe, il existe plusieurs outils de craquage de mot de passe que vous pouvez utiliser. Si vous connaissiez les mots de passe des fichiers, vous pouvez les ouvrir et supprimer la protection par mot de passe.
 
-8. Revenez à Advanced eDiscovery et à l’Assistant de correction des erreurs, puis cliquez sur **suivant : charger les fichiers**.  Cette action passe à la page suivante, dans laquelle vous pouvez à présent télécharger les fichiers.
+8. Revenez à Advanced eDiscovery et à l’Assistant de correction des erreurs, puis cliquez sur **suivant : charger les fichiers**.  Cette opération vous permet de passer à la page suivante dans laquelle vous pouvez maintenant télécharger les fichiers.
 
     ![Charger des fichiers](../media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
 
-9. Spécifiez le dossier parent dans lequel se trouvent les fichiers corrigés dans la zone **de texte chemin d’accès à l’emplacement des fichiers** . Une fois encore, le dossier parent doit avoir la même structure de sous-dossiers que celle qui a été créée lorsque vous avez téléchargé les fichiers.
+9. Spécifiez le dossier parent où se trouvent les fichiers corrigés dans la zone de texte **Chemin d’accès à l’emplacement des fichiers**. Une fois encore, le dossier parent doit avoir la même structure de sous-dossiers que celle qui a été créée lorsque vous avez téléchargé les fichiers.
 
     Le chemin d’accès au dossier parent est automatiquement ajouté à la commande AzCopy (en tant que valeur du paramètre **/source** ).
 
-10. Copiez la commande prédéfinie en cliquant sur **copier dans le presse-papiers**. Ouvrez une invite de commandes Windows, collez la commande AzCopy, puis appuyez sur **entrée**. Téléchargez les fichiers.
+10. Copiez la commande prédéfinie en cliquant sur **Copier dans le presse-papiers**. Ouvrez une invite de commandes Windows, collez la commande AzCopy, puis appuyez sur **entrée**. Téléchargez les fichiers.
 
-    ![ff2ff691-629f-4065-9b37-5333f937daf6. png](../media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
+    ![Résultats du chargement réussi des fichiers résolus dans Azcopy](../media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
 
 11. Après avoir exécuté la commande AzCopy, cliquez sur **suivant : process files**.
 
@@ -105,7 +105,7 @@ Lorsque le contenu d’un fichier de conteneur (par exemple, un fichier. zip) ne
 
 ## <a name="remediating-errors-by-uploading-the-extracted-text"></a>Correction des erreurs en chargeant le texte extrait
 
-Parfois, il n’est pas possible de convertir un fichier au format natif que Advanced eDiscovery peut interpréter. Toutefois, vous pouvez remplacer le fichier d’origine par un fichier texte qui contient le texte d’origine du fichier natif (dans un processus appelé *superposition de texte*). Pour ce faire, suivez les étapes décrites dans cet article, mais au lieu de corriger le fichier d’origine au format natif, créez un fichier texte contenant le texte extrait du fichier d’origine, puis téléchargez le fichier texte à l’aide du nom de fichier d’origine ajouté avec un suffixe. txt. Par exemple, vous téléchargez un fichier lors de la correction des erreurs avec le nom de fichier 335850cc-6602-4AF0-ACFA-1d14d9128ca2. ABC. Ouvrez le fichier dans l’application native, copiez le texte, puis collez-le dans un nouveau fichier nommé 335850cc-6602-4AF0-ACFA-1d14d9128ca2. ABC. txt. Lorsque vous effectuez cette opération, veillez à supprimer le fichier d’origine dans le format natif de l’emplacement des fichiers corrigé sur votre ordinateur local avant de télécharger le fichier texte corrigé vers Advanced eDiscovery.
+Parfois, il n’est pas possible de convertir un fichier au format natif que Advanced eDiscovery peut interpréter. Toutefois, vous pouvez remplacer le fichier d’origine par un fichier texte qui contient le texte d’origine du fichier natif (dans un processus appelé *superposition de texte*). Pour ce faire, suivez les étapes décrites dans cet article, mais au lieu de corriger le fichier d’origine au format natif, créez un fichier texte contenant le texte extrait du fichier d’origine, puis téléchargez le fichier texte à l’aide du nom de fichier d’origine ajouté avec un suffixe. txt. Par exemple, vous téléchargez un fichier lors de la correction des erreurs avec le nom de fichier 335850cc-6602-4AF0-ACFA-1d14d9128ca2. ABC. Ouvrez le fichier dans l’application native, copiez le texte, puis collez-le dans un nouveau fichier nommé 335850cc-6602-4af0-acfa-1d14d9128ca2.abc.txt. Lorsque vous effectuez cette opération, veillez à supprimer le fichier d’origine dans le format natif de l’emplacement des fichiers corrigé sur votre ordinateur local avant de télécharger le fichier texte corrigé vers Advanced eDiscovery.
 
 ## <a name="what-happens-when-files-are-remediated"></a>Que se passe-t-il lorsque les fichiers sont convertis ?
 
@@ -121,4 +121,4 @@ Lorsque les fichiers résolus sont téléchargés, les métadonnées d’origine
 - WordCount
 - WorkingsetId
 
-Pour obtenir une définition de tous les champs de métadonnées dans Advanced eDiscovery, consultez la rubrique [document Metadata Fields](document-metadata-fields.md).
+Pour obtenir une définition de tous les champs de métadonnées dans Advanced eDiscovery, consultez la rubrique [document Metadata Fields](document-metadata-fields-in-advanced-ediscovery.md).

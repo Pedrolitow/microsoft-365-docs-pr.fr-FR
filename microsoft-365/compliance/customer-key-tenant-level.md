@@ -1,5 +1,5 @@
 ---
-title: Clé client pour Microsoft 365 au niveau du client (préversion publique)
+title: Clé client pour Microsoft 365 au niveau du client (préversion publique)
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -15,12 +15,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: Découvrez comment configurer la clé client pour toutes les données de votre client Microsoft 365.
-ms.openlocfilehash: eedf0e8c9d56131016bc798af8ae471df3005bdc
-ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
+ms.openlocfilehash: f14bbc0cb6dd29883efa4c8d294d8d65cae98641
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49712523"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751264"
 ---
 # <a name="overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview"></a>Vue d’ensemble de la clé client pour Microsoft 365 au niveau du client (préversion publique)
 
@@ -59,7 +59,7 @@ Vous effectuerez la plupart de ces tâches en vous connectant à distance à Azu
 Avant de commencer, vérifiez les points suivants :
 
 - Vous devez utiliser un compte professionnel ou scolaire qui dispose du rôle d’administrateur de conformité pour configurer la clé client au niveau du client.
-- Assurez-vous que vous disposez de la licence appropriée pour votre organisation. Utilisez un abonnement Azure payant facturé à l’aide d’un contrat Enterprise ou d’un fournisseur de services Cloud. Les abonnements Azure achetés à l’aide de l’offre de paiement ou d’une carte de crédit ne sont pas pris en charge pour la clé client. À partir du 1er avril 2020, la clé client dans Office 365 est proposée dans Office 365 E5, M365 E5, M365 E5 conformité et M365 E5 information protection & gouvernance. Office 365 Advanced Compliance SKU n’est plus disponible pour la création de nouvelles licences. Les licences Office 365 Advanced Compliance existantes continueront à être prises en charge. Bien que le service puisse être activé avec au moins une licence sous le client disposant de la licence appropriée, vous devez vous assurer que tous les utilisateurs qui bénéficient du service disposent des licences appropriées. Vous aurez besoin d’une des licences suivantes :
+- Assurez-vous que vous disposez de la licence appropriée pour votre organisation. Utilisez un abonnement Azure payant facturé à l’aide d’un contrat Enterprise ou d’un fournisseur de services Cloud. Les abonnements Azure achetés à l’aide de l’offre de paiement ou d’une carte de crédit ne sont pas pris en charge pour la clé client. À partir du 1er avril 2020, la clé client dans Office 365 est proposée dans Office 365 E5, M365 E5, M365 E5 conformité et M365 E5 information protection & gouvernance. Office 365 Advanced Compliance SKU n’est plus disponible pour la création de nouvelles licences. Les licences Office 365 Advanced Compliance existantes continueront à être prises en charge. Bien que le service puisse être activé avec au moins une licence sous le client disposant de la licence appropriée, vous devez vous assurer que tous les utilisateurs qui bénéficient du service disposent des licences appropriées.
 
 ### <a name="create-two-new-azure-subscriptions"></a>Créer deux nouveaux abonnements Azure
 

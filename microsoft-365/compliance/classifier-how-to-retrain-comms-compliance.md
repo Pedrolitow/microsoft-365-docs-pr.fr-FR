@@ -1,5 +1,5 @@
 ---
-title: Procédure de recyclage d’un classifieur dans conformité des communications (aperçu)
+title: Procédure de recyclage d’un classifieur dans la conformité des communications
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,20 +15,20 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment fournir des commentaires à un classificateur de formation dans le respect des communications.
-ms.openlocfilehash: 1466c211e3a4958f58a7c1f1a6a5a77bed881d60
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: cdb8787715c3e022dfa0aa17cd83cc405aeef955
+ms.sourcegitcommit: 54d1a2f363b2d5b63aae258c3cec0573a08f2866
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48132323"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49752648"
 ---
-# <a name="how-to-retrain-a-classifier-in-communications-compliance-preview"></a>Procédure de recyclage d’un classifieur dans conformité des communications (aperçu)
+# <a name="how-to-retrain-a-classifier-in-communications-compliance"></a>Procédure de recyclage d’un classifieur dans la conformité des communications
 
 Un classificateur Microsoft 365 pouvant être formé est un outil que vous pouvez former afin de reconnaître différents types de contenu en leur donnant des exemples à consulter. Une fois l’apprentissage effectué, vous pouvez l’utiliser pour identifier un élément pour l’application des étiquettes de sensibilité d’Office, des stratégies de conformité des communications et des stratégies d’étiquette de rétention.
 
 Cet article vous explique comment améliorer les performances des classifieurs de formation personnalisée et de certains classifieurs pré-formés en leur fournissant des commentaires supplémentaires.
 
-Pour en savoir plus sur les différents types de classifieurs, voir [en savoir plus sur les classifieurs de formation (aperçu)](classifier-learn-about.md).
+Pour en savoir plus sur les différents types de classifieurs, reportez-vous à la rubrique [en savoir plus sur les classifieurs de formation](classifier-learn-about.md).
 
 ## <a name="permissions"></a>Autorisations
 
@@ -52,7 +52,7 @@ Pour en savoir plus sur le flux de travail global de recyclage d’un classifieu
 > [!NOTE]
 > Un classifieur doit déjà être publié et en cours d’utilisation avant de pouvoir être reformé.
 
-## <a name="how-to-retrain-a-classifier-in-communication-compliance-policies-preview"></a>Procédure de recyclage d’un classifieur dans les stratégies de conformité de communication (aperçu)
+## <a name="how-to-retrain-a-classifier-in-communication-compliance-policies"></a>Procédure de recyclage d’un classifieur dans les stratégies de conformité de communication
 
 1. Ouvrez la stratégie de conformité de communication qui utilise un classifieur comme condition et choisissez l’un des éléments identifiés dans la liste **en attente** .
 2. Choisissez les points de suspension et **améliorer la classification**.
@@ -68,7 +68,7 @@ Pour en savoir plus sur le flux de travail global de recyclage d’un classifieu
 > Ces informations sont dirigées vers le classificateur de votre client, **qui ne revient pas à Microsoft**.
 
 6.  Ouvrez la page **classification des données** dans le centre de **conformité Microsoft 365**.
-7. Ouvrez les **classifieurs avec formation (aperçu)**.
+7. Ouvrez les **classifieurs avec apprentissage**.
 8. Le classifieur qui a été utilisé dans votre stratégie de conformité des communications apparaît sous le titre **nouvelle formation** .
 
 ![classifieur dans l’état de la reformation](../media/classifier-retraining.png)
@@ -94,5 +94,5 @@ Nous comparons les numéros de performances des deux ensembles d’éléments po
 
 ## <a name="see-also"></a>Voir aussi
 
-- [En savoir plus sur les classifieurs de formation (aperçu)](classifier-learn-about.md)
+- [En savoir plus sur les classifieurs de formation](classifier-learn-about.md)
 - [Extensions de nom de fichier et types de fichier analysés par défaut dans SharePoint Server](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)

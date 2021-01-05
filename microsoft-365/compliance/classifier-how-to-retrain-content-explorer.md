@@ -1,5 +1,5 @@
 ---
-title: Procédure de recyclage d’un classifieur dans l’Explorateur de contenu (aperçu)
+title: Procédure de recyclage d’un classifieur dans l’Explorateur de contenu
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,20 +15,20 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment fournir des commentaires à un classifieur de formation dans l’Explorateur de contenu.
-ms.openlocfilehash: 0fbce595894cbbf2a017fc1bf657b14a5b812e29
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: 786ebb682e9cdd96c0c6503294bd4f316f777f68
+ms.sourcegitcommit: 54d1a2f363b2d5b63aae258c3cec0573a08f2866
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48132328"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49752621"
 ---
-# <a name="how-to-retrain-a-classifier-in-content-explorer-preview"></a>Procédure de recyclage d’un classifieur dans l’Explorateur de contenu (aperçu)
+# <a name="how-to-retrain-a-classifier-in-content-explorer"></a>Procédure de recyclage d’un classifieur dans l’Explorateur de contenu
 
 Un classificateur Microsoft 365 pouvant être formé est un outil que vous pouvez former afin de reconnaître différents types de contenu en leur donnant des exemples à consulter. Une fois l’apprentissage effectué, vous pouvez l’utiliser pour identifier un élément pour l’application des étiquettes de sensibilité d’Office, des stratégies de conformité des communications et des stratégies d’étiquette de rétention.
 
 Cet article vous explique comment améliorer les performances des classifieurs de formation personnalisée et de certains classifieurs pré-formés en leur fournissant des commentaires supplémentaires.
 
-Pour en savoir plus sur les différents types de classifieurs, voir [en savoir plus sur les classifieurs de formation (aperçu)](classifier-learn-about.md).
+Pour en savoir plus sur les différents types de classifieurs, reportez-vous à la rubrique [en savoir plus sur les classifieurs de formation](classifier-learn-about.md).
 
 ## <a name="permissions"></a>Autorisations
 
@@ -52,9 +52,9 @@ Pour en savoir plus sur le flux de travail global de recyclage d’un classifieu
 > [!NOTE]
 > Un classifieur doit déjà être publié et en cours d’utilisation avant de pouvoir être reformé.
 
-## <a name="how-to-retrain-a-classifier-in-content-explorer-preview"></a>Procédure de recyclage d’un classifieur dans l’Explorateur de contenu (aperçu)
+## <a name="how-to-retrain-a-classifier-in-content-explorer"></a>Procédure de recyclage d’un classifieur dans l’Explorateur de contenu
 
-1. Connectez-vous au centre de conformité Microsoft 365 avec l’administrateur de conformité ou l’accès au rôle d’administrateur de sécurité et ouvrez l’Explorateur de contenu classification des données du **Centre de conformité Microsoft 365**  >  **Data classification**  >  **Content explorer**. 
+1. Connectez-vous au centre de conformité Microsoft 365 avec l’administrateur de conformité ou l’accès au rôle d’administrateur de sécurité et ouvrez l’Explorateur de contenu classification des données du **Centre de conformité Microsoft 365**  >    >  . 
 2. Sous la liste **filtre sur les étiquettes, les types d’informations ou les catégories** , développez **classifieurs de formation**.
 
 > [!IMPORTANT]
@@ -78,7 +78,7 @@ Pour en savoir plus sur le flux de travail global de recyclage d’un classifieu
 > [!IMPORTANT]
 > Ces informations sont dirigées vers le classificateur de votre client, **qui ne revient pas à Microsoft**.
 
-9. Ouvrez les **classifieurs avec formation (aperçu)**.
+9. Ouvrez les **classifieurs avec apprentissage**.
 10. Le classifieur qui a été utilisé dans votre stratégie de conformité des communications apparaît sous le titre **nouvelle formation** .
 
 ![classifieur dans l’état de la reformation](../media/classifier-retraining.png)
@@ -104,5 +104,5 @@ Nous comparons les numéros de performances des deux ensembles d’éléments po
 
 ## <a name="see-also"></a>Voir aussi
 
-- [En savoir plus sur les classifieurs de formation (aperçu)](classifier-learn-about.md)
+- [En savoir plus sur les classifieurs de formation](classifier-learn-about.md)
 - [Extensions de nom de fichier et types de fichier analysés par défaut dans SharePoint Server](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)

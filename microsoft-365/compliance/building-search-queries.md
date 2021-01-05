@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-mar2020
 description: Utilisez des mots clés et des conditions pour limiter l’étendue de la recherche lors de la recherche de données à l’aide de Advanced eDiscovery dans Microsoft 365.
-ms.openlocfilehash: 38322963f04ad67d8675247bdd754ffb1d2f13e8
-ms.sourcegitcommit: 490a65d32b6d656c661c36a2cc8dda03bf6cba77
+ms.openlocfilehash: 8ec1e099625bb081f8a915f08ac818fddcc2b60d
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49588551"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751111"
 ---
 # <a name="build-search-collection-queries-in-advanced-ediscovery"></a>Créer des requêtes de collection de recherche dans Advanced eDiscovery
 
@@ -39,7 +39,7 @@ Vous pouvez également activer la case à cocher **afficher la liste des mots cl
 
 ![Utiliser la liste de mots clés pour obtenir des statistiques sur chaque mot clé dans la requête](../media/KeywordListSearch.png)
 
-Pourquoi utiliser la liste de mots clés ? Vous pouvez obtenir des statistiques qui indiquent le nombre d’éléments qui correspondent à chaque mot clé dans la liste de mots clés. Cela peut vous aider à identifier rapidement les mots clés qui sont les plus efficaces (et les moins). Vous pouvez également utiliser une phrase de mots clés (entourée de parenthèses) dans une ligne de la liste des mots-clés. Pour plus d’informations sur les statistiques de recherche, voir statistiques de la [recherche](search-statistics.md).
+Pourquoi utiliser la liste de mots clés ? Vous pouvez obtenir des statistiques qui indiquent le nombre d’éléments qui correspondent à chaque mot clé dans la liste de mots clés. Cela peut vous aider à identifier rapidement les mots clés qui sont les plus efficaces (et les moins). Vous pouvez également utiliser une phrase de mots clés (entourée de parenthèses) dans une ligne de la liste des mots-clés. Pour plus d’informations sur les statistiques de recherche, voir statistiques de la [recherche](search-statistics-in-advanced-ediscovery.md).
 
 ## <a name="conditions"></a>Conditions
 

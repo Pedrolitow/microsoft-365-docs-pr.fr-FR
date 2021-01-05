@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ms.custom: seo-marvel-mar2020
 description: Configurez des paramètres eDiscovery avancés qui s’appliquent à tous les jeux de révision dans un cas. Cela inclut les paramètres d’analyse et de reconnaissance optique de caractères.
-ms.openlocfilehash: dfacab79f635a817b127614f524d00b0297981fb
-ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
+ms.openlocfilehash: 11932d2172d797ae1913cf28e713d57805ace122
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48277088"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751301"
 ---
 # <a name="configure-search-and-analytics-settings-in-advanced-ediscovery"></a>Configurer les paramètres de recherche et d’analyse dans Advanced eDiscovery
 
@@ -50,7 +50,7 @@ Pour configurer les paramètres de recherche et d’analyse d’un cas :
 
 ## <a name="near-duplicates-and-email-threading"></a>Quasi-doublons et thread de courrier
 
-Dans cette section, vous pouvez définir des paramètres pour la détection des doublons, la détection des doublons et le Threading de messagerie. Pour plus d’informations, consultez la rubrique [near Detection Detection](near-duplicates.md) and [email Threading](email-threading.md).
+Dans cette section, vous pouvez définir des paramètres pour la détection des doublons, la détection des doublons et le Threading de messagerie. Pour plus d’informations, consultez la rubrique [near Detection Detection](near-duplicate-detection-in-advanced-ediscovery.md) and [email Threading](email-threading-in-advanced-ediscovery.md).
 
 - **Presque en double/Threading de courrier électronique :** Lorsque ce paramètre est activé, la détection des doublons, la détection quasi des doublons et le Threading de messagerie sont inclus dans le flux de travail lorsque vous exécutez Analytics sur les données d’un jeu de révision.
 
@@ -90,7 +90,7 @@ Lorsque ce paramètre est activé, le traitement de la reconnaissance optique de
 
 - Lorsque le contenu d’autres sources de données (qui ne sont pas associées à un dépositaire et ajouté à l’incident dans une source de données non-privatives de cœur) est ajouté à un jeu de révision.
 
-Une fois les données ajoutées à un ensemble de révision, le texte de l’image peut être révisé, recherché, balisé et analysé. Vous pouvez afficher le texte extrait dans la visionneuse de texte du fichier image sélectionné dans l’ensemble de révision. Si vous souhaitez en savoir plus, voir : 
+Une fois les données ajoutées à un ensemble de révision, le texte de l’image peut être révisé, recherché, balisé et analysé. Vous pouvez afficher le texte extrait dans la visionneuse de texte du fichier image sélectionné dans l’ensemble de révision. Pour plus d’informations, voir :
 
 - [Indexation avancée des données des consignataires](indexing-custodian-data.md)
 
