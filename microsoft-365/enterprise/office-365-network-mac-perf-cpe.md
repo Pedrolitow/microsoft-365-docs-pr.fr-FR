@@ -3,7 +3,7 @@ title: Routage réseau Microsoft 365 informé
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 1/21/2020
+ms.date: 12/22/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Routage réseau Microsoft 365 informé
-ms.openlocfilehash: 40b4345ca80c5e90a07583b83b82368d4a35535a
-ms.sourcegitcommit: 039205fdaaa2a233ff7e95cd91bace474b84b68c
+ms.openlocfilehash: 367f83684a4a200e3ddd630e1412c756d7093da1
+ms.sourcegitcommit: ae646779d84e993cf80b1207e76b856a21be5790
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49611435"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "49749550"
 ---
 # <a name="microsoft-365-informed-network-routing-preview"></a>Routage réseau Microsoft 365 informé (préversion)
 
@@ -41,7 +41,7 @@ Le canal de partage de données est également utilisé pour recevoir régulièr
 >[!NOTE]
 >Le routage réseau informé de Microsoft 365 prend en charge les clients dans le nuage commercial WW, mais pas dans les nuages de GCC modérés, GCC High, DoD, Germany ou China.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Conditions requises
 
 ### <a name="integrated-sd-wan-solutions"></a>Solutions SD-WAN intégrées
 

@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Les administrateurs et les utilisateurs finaux peuvent apprendre à envoyer des messages électroniques (courrier marqué comme faux ou courrier incorrect) à Microsoft pour analyse.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 68a0921f85e5b916cd53ebe84e4ea7d35e39967e
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: fe8e3c5ed44c7578764ed0bf19408f4db16e3740
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877704"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751558"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>Envoi manuel de messages à Microsoft pour analyse
 
@@ -48,9 +48,9 @@ Si vous recevez un message transmis par le biais du filtrage du courrier indési
 
 1. Créez un message électronique vide avec l’un des destinataires suivants :
 
-   - **Courrier indésirable** : `junk@office365.microsoft.com`
+   - **Courrier indésirable**: `junk@office365.microsoft.com`
 
-   - **Hameçonnage** : `phish@office365.microsoft.com`
+   - **Hameçonnage**: `phish@office365.microsoft.com`
 
 2. Faites glisser et déposez le message de courrier indésirable dans le nouveau message. Cette opération permet d’enregistrer le message de courrier indésirable ou de hameçonnage en tant que pièce jointe dans le nouveau message. Ne copiez pas et ne collez pas le contenu du message ou transférez le message (nous avons besoin du message d’origine pour pouvoir inspecter les en-têtes des messages).
 
@@ -90,6 +90,10 @@ Si un message a été identifié de manière incorrecte comme courrier indésira
 
 > [!TIP]
 > Les administrateurs disposent de différentes manières d’autoriser des messages spécifiques à ignorer le filtrage du courrier indésirable. Pour plus d’informations, consultez la rubrique [créer des listes d’expéditeurs approuvés dans EOP](create-safe-sender-lists-in-office-365.md).
+
+## <a name="where-is-the-data-from-submissions-to-microsoft-stored"></a>Où sont stockées les données des envois vers Microsoft ?
+
+Les données résident dans la limite de conformité d’Office 365 dans les centres de données en Amérique du Nord. Les données sont révisées par des analystes de l’équipe d’ingénierie pour améliorer l’efficacité des filtres.
 
 ## <a name="create-a-mail-flow-rule-to-receive-copies-of-messages-that-are-reported-to-microsoft"></a>Créer une règle de flux de messagerie pour recevoir des copies des messages signalés à Microsoft
 

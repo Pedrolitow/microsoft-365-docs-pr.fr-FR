@@ -15,12 +15,12 @@ ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
 description: La feuille de route pour configurer la gestion des appareils pour Microsoft 365.
-ms.openlocfilehash: d359cae62fbd1bf2468ad753670ff8e385d6f25b
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 79be47d6bc83c124f2203866986e06181a1f7f3d
+ms.sourcegitcommit: ae646779d84e993cf80b1207e76b856a21be5790
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398960"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "49749538"
 ---
 # <a name="device-management-roadmap-for-microsoft-365"></a>Feuille de route de gestion des appareils pour Microsoft 365
 
@@ -29,7 +29,7 @@ Microsoft 365 for Enterprise inclut des fonctionnalités qui permettent de gére
 Il existe deux options pour la gestion des appareils :
 
 - [Microsoft Intune](#microsoft-intune)
-- [Mobilité et sécurité de base](#basic-mobility-and-security)
+- [Mobility + Security de Base](#basic-mobility-and-security)
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 
@@ -39,7 +39,7 @@ Les utilisateurs disposant de leurs propres appareils personnels peuvent ne pas 
 
 Vous allez également déterminer la manière dont vous allez gérer les appareils personnels et les appareils appartenant à l’organisation. Vous souhaiterez peut-être traiter les appareils différemment en fonction de leur utilisation.
 
-## <a name="basic-mobility-and-security"></a>Mobilité et sécurité de base
+## <a name="basic-mobility-and-security"></a>Mobility + Security de Base
 
 Il est intégré à Microsoft 365 et vous aide à sécuriser et gérer les appareils mobiles de vos utilisateurs, tels que les iPhone, les iPad, les Android et les téléphones Windows. Vous pouvez créer et gérer des stratégies de sécurité des appareils, réinitialiser un appareil à distance et afficher des rapports détaillés sur les appareils.
 
@@ -49,8 +49,8 @@ Pour vous aider à mieux évaluer l’option de gestion des appareils qui vous c
 
 En fonction de votre évaluation, commencez à gérer vos appareils avec :
 
-- [Intune](https://docs.microsoft.com/mem/intune/fundamentals/planning-guide).
-- [Sécurité et mobilité de base](https://support.microsoft.com/office/set-up-basic-mobility-and-security-dd892318-bc44-4eb1-af00-9db5430be3cd).
+- [Intune](https://docs.microsoft.com/mem/intune/fundamentals/planning-guide)
+- [Mobility + Security de Base](https://support.microsoft.com/office/set-up-basic-mobility-and-security-dd892318-bc44-4eb1-af00-9db5430be3cd)
  
 ## <a name="identity-and-device-access-recommendations"></a>Recommandations en matière d’identité et d’accès aux appareils
 

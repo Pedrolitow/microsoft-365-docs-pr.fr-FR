@@ -21,21 +21,21 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment la liste des utilisateurs invités est renseignée dans le centre d’administration 365 de Microsoft.
-ms.openlocfilehash: c698332351d525c12659849826d9e822351a347d
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: 338b86d7f32eb2a2ecbacc3d7d1e00124c3804e4
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48463977"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751435"
 ---
 # <a name="guest-users-in-microsoft-365-admin-center"></a>Utilisateurs invités dans le centre d’administration Microsoft 365
 
-Lorsque vous ajoutez des invités à votre Microsoft teams ou à SharePoint, ces utilisateurs sont ajoutés à la liste des utilisateurs invités dans le centre d’administration. Vous pouvez également ajouter des utilisateurs invités dans Azure Active Directory afin qu’ils puissent collaborer avec les utilisateurs de votre organisation. Les utilisateurs invités peuvent participer à des réunions, afficher des documents et discuter dans des équipes auxquelles ils sont invités.
-Une fois qu’un utilisateur est ajouté à la liste des utilisateurs invités, vous pouvez supprimer son accès à cet emplacement.
+Tous les invités que vous ajoutez à votre Microsoft Teams, SharePoint ou Azure Active Directory sont également ajoutés à la liste des **utilisateurs invités** dans le centre d’administration Microsoft. Les invités peuvent participer à des réunions, afficher des documents et discuter dans des équipes auxquelles ils sont invités.
+Une fois qu’un utilisateur s’affiche dans la liste des **utilisateurs invités** , vous pouvez supprimer son accès à cet emplacement.
 
 Pour afficher les utilisateurs invités, dans le centre d’administration 365 de Microsoft, dans le volet de navigation de gauche, développez **utilisateurs**, puis sélectionnez **utilisateurs invités**.
 
-## <a name="add-guest-users-to-teams"></a>Ajouter des utilisateurs invités à teams
+## <a name="add-guests-to-teams"></a>Ajouter des invités à teams
 
 Pour savoir comment ajouter un invité à Teams, consultez la vidéo suivante : <br><br>
 
@@ -47,19 +47,17 @@ Pour rejoindre une équipe en tant qu’invité, consultez la vidéo suivante :
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4tyys]
 
-## <a name="add-guest-users-in-azure-active-directory"></a>Ajouter des utilisateurs invités dans Azure Active Directory
+## <a name="add-guests-in-azure-active-directory"></a>Ajouter des invités dans Azure Active Directory
 
-Pour ajouter des utilisateurs invités dans Azure Active Directory, consultez la rubrique [Ajouter des utilisateurs invités](https://docs.microsoft.com/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal).
+Pour ajouter des invités dans Azure Active Directory, reportez-vous à la rubrique [Ajouter des utilisateurs invités](https://docs.microsoft.com/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal).
 
-Lorsque vous ajoutez un utilisateur, vous pouvez également l’affecter à un groupe ou lui accorder l’accès à une application dans votre organisation. Une fois que vous avez ajouté un utilisateur dans le portail Azure AD, cet utilisateur est également affiché sur la page utilisateurs invités dans le centre d’administration 365 de Microsoft.
-Une fois qu’un utilisateur est ajouté à la liste des utilisateurs invités, il peut être [ajouté à des groupes](../create-groups/manage-guest-access-in-groups.md#add-guests-to-a-microsoft-365-group-from-the-admin-center) dans le centre d’administration 365 de Microsoft.
+Une fois que vous avez ajouté un utilisateur, vous pouvez également l’affecter à un groupe ou lui accorder l’accès à une application dans votre organisation. Une fois que vous avez ajouté un utilisateur dans le portail Azure AD, cet utilisateur est également affiché sur la page **utilisateurs invités** dans le centre d’administration 365 de Microsoft.
+Une fois qu’un utilisateur est ajouté à la liste des **utilisateurs invités** , il peut être [ajouté à des groupes](../create-groups/manage-guest-access-in-groups.md#add-guests-to-a-microsoft-365-group-from-the-admin-center) dans le centre d’administration 365 de Microsoft.
 
-Consultez la rubrique [Ajouter des utilisateurs invités en bloc](https://docs.microsoft.com/azure/active-directory/b2b/tutorial-bulk-invite) pour inviter plusieurs invités à collaborer avec votre organisation.
+Consultez la rubrique [Ajouter des invités en bloc](https://docs.microsoft.com/azure/active-directory/b2b/tutorial-bulk-invite) pour inviter plusieurs invités à collaborer avec votre organisation.
 
 
-## <a name="remove-a-guest-user"></a>Supprimer un utilisateur invité
-
-Pour supprimer un utilisateur invité :
+## <a name="remove-a-guest"></a>Supprimer un invité
 
 1. Dans le centre d’administration 365 de Microsoft, développez **utilisateurs** , puis sélectionnez **utilisateurs invités**.
 1. Sur la page **utilisateurs invités** , sélectionnez l’utilisateur que vous souhaitez supprimer, puis **supprimer un utilisateur**. 
