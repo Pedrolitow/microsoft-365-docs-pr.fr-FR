@@ -1,5 +1,5 @@
 ---
-title: Corriger les problèmes détectés par l’outil d’évaluation de la disponibilité
+title: Résoudre les problèmes détectés par l’outil de préparation et d’évaluation
 description: Actions détaillées à effectuer pour chaque problème rencontré par l’outil
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
@@ -9,14 +9,14 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: f23209568fcfc2db4a22dbb034890c5a25e21bf7
-ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
+ms.openlocfilehash: 3c3c0d21ca93c0d93d17cefbc6ce630d00a16d09
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49527732"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760123"
 ---
-# <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Corriger les problèmes détectés par l’outil d’évaluation de la disponibilité
+# <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Résoudre les problèmes détectés par l’outil de préparation et d’évaluation
 
 Pour chaque vérification, l’outil signale l’un des quatre résultats possibles :
 
@@ -27,6 +27,9 @@ Pour chaque vérification, l’outil signale l’un des quatre résultats possib
 |OpenSSL    | Suivez les étapes décrites dans l’outil ou dans cet article pour obtenir une expérience optimale avec l’enregistrement et pour les utilisateurs. Vous *pouvez* effectuer l’opération d’enregistrement, mais vous devez résoudre ces problèmes avant de déployer votre premier périphérique.        |
 |Non prêt | *L’enregistrement échoue si vous ne résolvez pas ces problèmes.* Suivez les étapes décrites dans l’outil ou dans cet article pour les résoudre.        |
 |Erreur | Le rôle Azure active Director (AD) que vous utilisez ne dispose pas des autorisations suffisantes pour effectuer cette vérification. |
+
+> [!NOTE]
+> Les résultats signalés par cet outil reflètent l’état de vos paramètres uniquement à un moment précis dans le temps que vous avez exécuté. Si, par la suite, vous modifiez des stratégies dans Microsoft Intune, Azure Active Directory ou Microsoft 365, les éléments « prêts » peuvent devenir « prêts ». Pour éviter les problèmes liés aux opérations de bureau géré Microsoft, vérifiez les paramètres spécifiques décrits dans cet article avant de modifier des stratégies.
 
 ## <a name="microsoft-intune-settings"></a>Paramètres Microsoft Intune
 

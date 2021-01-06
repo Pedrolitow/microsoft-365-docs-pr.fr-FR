@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Résumé : Découvrez les actions et les impacts des phases de migration de Microsoft Cloud Germany (Microsoft Cloud Deutschland) vers les services Office 365 dans la nouvelle région de centre de connaissances allemande.'
-ms.openlocfilehash: 4a54fed8a109c3d03b735a5db3cb48060f5c438f
-ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
+ms.openlocfilehash: 940ad0799aca7ead20d226cfcf3cc4b7b21c6cdb
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719391"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760197"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-general"></a>Actions et impacts sur les phases de migration de la migration à partir de Microsoft Cloud Deutschland (général)
 
@@ -78,8 +78,12 @@ Considérations supplémentaires :
 
 - Une fois la migration OneDrive terminée vers la région allemande, les index de données sont recréés. Les fonctionnalités qui dépendent des index de recherche peuvent être affectées lors de la réindexation en cours.
 
+- Les clients Microsoft Cloud Deutschland dont l’instance SharePoint Online n’est pas encore migrée doivent rester sur le module SharePoint Online PowerShell/Microsoft. SharePointOnline. CSOM version 16.0.20616.12000 ou en dessous. Dans le cas contraire, les connexions à SharePoint Online via PowerShell ou le modèle objet côté client échoueront.
 
-## <a name="skype-for-business-online"></a>Skype Entreprise Online
+- Les clients Microsoft Cloud Deutschland dont l’instance SharePoint Online est migrée doivent mettre à jour le module PowerShell SharePoint Online/Microsoft. SharePointOnline. CSOM vers la version 16.0.20717.12000 ou supérieure. Dans le cas contraire, les connexions à SharePoint Online via PowerShell ou le modèle objet côté client échoueront.
+
+
+## <a name="skype-for-business-online"></a>Skype Entreprise Online
 
 | Étape (s) | Description | S’applique à | Impact |
 |:-------|:-----|:-------|:-------|

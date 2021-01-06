@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Cet article explique comment exporter et télécharger du contenu à partir d’un cas de découverte électronique de base.
-ms.openlocfilehash: e0d4315c48a0d0878b8052265ff8663cd1987169
-ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
+ms.openlocfilehash: 30fc30943bd570cf4d79ce88b5bef5836b3dfe14
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43551386"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760298"
 ---
 # <a name="export-content-from-a-core-ediscovery-case"></a>Exportation de contenu à partir d’un cas de découverte électronique principale
 
-Une fois la recherche exécutée, vous pouvez exporter les résultats de la recherche. Lorsque vous exportez des résultats de recherche, les éléments de boîte aux lettres sont téléchargés dans des fichiers PST ou des messages individuels. Lorsque vous exportez du contenu à partir de sites SharePoint et OneDrive entreprise, des copies de documents Office natifs et d’autres documents sont exportées. Un fichier results. csv contenant des informations sur chaque élément exporté et un fichier manifeste (au format XML) contenant des informations sur chaque résultat de recherche sont également exportés.
+Une fois la recherche exécutée, vous pouvez exporter les résultats de la recherche. Lorsque vous exportez des résultats de recherche, les éléments de boîte aux lettres sont téléchargés dans des fichiers PST ou des messages individuels. Lorsque vous exportez du contenu à partir de sites SharePoint et OneDrive entreprise, des copies de documents Office natifs et d’autres documents sont exportées. Un fichier de Results.csv qui contient des informations sur chaque élément exporté et un fichier manifeste (au format XML) contenant des informations sur chaque résultat de recherche est également exporté.
   
 Vous pouvez exporter les résultats d’une [seule recherche associée à un cas](#export-the-results-of-a-single-search) ou vous pouvez exporter les résultats de [plusieurs recherches associées à un cas](#export-the-results-of-multiple-searches).
   
@@ -105,5 +105,3 @@ En guise d’alternative à l’exportation des résultats d’une recherche uni
 - Si vous redémarrez l’exportation, toute modification apportée aux requêtes des recherches qui composent la tâche d’exportation n’affecte pas les résultats de la recherche qui sont extraits. Lorsque vous redémarrez une exportation, le même travail de requête de recherche combiné qui a été exécuté lors de la création du travail d’exportation sera réexécuté.
 
 - En outre, si vous redémarrez une exportation, les résultats de la recherche copiés dans l’emplacement de stockage Azure remplacent les résultats précédents. Les résultats précédents qui ont été copiés ne peuvent pas être téléchargés.
-
-- La préparation des résultats de plusieurs recherches pour analyse dans Advanced eDiscovery (classique) n’est pas disponible. Vous pouvez uniquement préparer les résultats d’une recherche unique pour l’analyse dans Advanced eDiscovery (classique).

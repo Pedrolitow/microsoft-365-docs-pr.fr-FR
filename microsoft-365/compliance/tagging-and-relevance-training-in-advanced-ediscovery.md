@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
+ROBOTS: NOINDEX, NOFOLLOW
 description: Découvrez les étapes à suivre pour marquer, puis utiliser un exemple de formation de 40 fichiers pendant la phase de formation pertinente de la découverte électronique avancée.
-ms.openlocfilehash: d576b0a907a4c12eabe4f3cba9846de670b0ee12
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: cedac19ee04053e19b5dac1537b57d576e2e0354
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663449"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760364"
 ---
 # <a name="tagging-and-relevance-training-in-advanced-ediscovery-classic"></a>Étiquetage et formation à la pertinence dans Advanced eDiscovery (classique)
 
@@ -98,17 +99,3 @@ La liste exemple de fichiers vous permet d’afficher la liste des fichiers dans
     
     Pour accéder au dernier fichier de l’exemple : Maj + Ctrl + \>
     
-## <a name="see-also"></a>Voir aussi
-
-[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
-  
-[Présentation de l’évaluation en matière de pertinence](assessment-in-relevance-in-advanced-ediscovery.md)
-  
-[Balisage et évaluation](tagging-and-assessment-in-advanced-ediscovery.md)
-  
-[Analyse de la pertinence](track-relevance-analysis-in-advanced-ediscovery.md)
-  
-[Choix en fonction des résultats](decision-based-on-the-results-in-advanced-ediscovery.md)
-  
-[Évaluation de l’analyse de pertinence](test-relevance-analysis-in-advanced-ediscovery.md)
-

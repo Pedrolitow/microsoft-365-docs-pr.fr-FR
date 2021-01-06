@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 description: Les administrateurs peuvent en savoir plus sur l’utilisation de S/MIME (Secure/Multipurpose Internet Mail Extensions) dans Exchange Online pour chiffrer les messages électroniques et les signer numériquement.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8dce3e3fa3d24e1773f51f96e19a58d8a3b2efce
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 01de52bb1d8e946ead0d8b39e34b13e34741259e
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200606"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760553"
 ---
 # <a name="smime-for-message-signing-and-encryption-in-exchange-online"></a>S/MIME pour la signature et le chiffrement des messages dans Exchange Online
 
@@ -60,7 +60,7 @@ Les étapes à suivre pour configurer S/MIME avec chacun de ces points de termin
 > [!NOTE]
 > Vous ne pouvez pas installer le contrôle S/MIME dans Outlook sur le Web sur Mac, iOS, Android ou d’autres appareils non-Windows. Pour plus d’informations, consultez [la rubrique chiffrer les messages à l’aide de S/MIME dans Outlook sur le Web](https://support.microsoft.com/office/878c79fc-7088-4b39-966f-14512658f480).
 
-## <a name="setup-smime-with-outlook-on-the-web"></a>Configuration de S/MIME avec Outlook sur le Web
+## <a name="set-up-smime-with-outlook-on-the-web"></a>Configuration de S/MIME avec Outlook sur le web
 
 La configuration de S/MIME pour Exchange Online avec Outlook sur le Web implique les étapes clés suivantes :
 
@@ -82,8 +82,8 @@ Lorsque la sécurité des messages devient plus importante, les administrateurs 
 
 S/MIME requiert un certificat et une infrastructure de publication qui est souvent utilisée dans les situations entreprise-entreprise et entreprise-client. L'utilisateur contrôle les clés de chiffrement dans S/MIME et peut choisir de les utiliser ou non pour chaque message qu'il envoie. Les programmes de messagerie (par exemple, Outlook) recherchent un emplacement de certification racine approuvée pour effectuer la signature numérique et vérifier la signature. Le chiffrement de messages Office 365 est un service de chiffrement basé sur une stratégie qui peut être configuré par un administrateur, et non par un utilisateur, afin de chiffrer les messages envoyés à des personnes à l’intérieur ou à l’extérieur de l’organisation. Il s’agit d’un service en ligne basé sur Azure Rights Management (RMS) et qui ne repose pas sur une infrastructure de clé publique. Le chiffrement de messages Office 365 fournit également des fonctionnalités supplémentaires, telles que la fonctionnalité de personnalisation du courrier électronique avec la marque de l’organisation. Pour plus d’informations sur le chiffrement de messages Office 365, consultez la rubrique [chiffrement dans office 365](https://docs.microsoft.com/microsoft-365/compliance/encryption).
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
-[Outlook sur le web](https://docs.microsoft.com/exchange/exchange-admin-center)
+[Outlook sur le Web](https://docs.microsoft.com/exchange/exchange-admin-center)
 
 [Messagerie sécurisée (2000)](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-2000-server/cc962043(v=technet.10))

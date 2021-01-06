@@ -17,18 +17,18 @@ search.appverid:
 - MET150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 description: Découvrez comment créer une stratégie d’attribution de noms pour les groupes Microsoft 365.
-ms.openlocfilehash: 9bc0a4c7e1ae6ad532c97b442a2bc50880a942fc
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: acf660375508760bd2e9874a07454709849929b0
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698674"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49759823"
 ---
 # <a name="microsoft-365-groups-naming-policy"></a>Stratégie de noms de groupes Microsoft 365
 
 Vous pouvez utiliser une stratégie de noms de groupes pour appliquer une stratégie d’attribution de noms cohérente pour les groupes créés par les utilisateurs au sein de votre organisation. Une stratégie de noms peut vous aider, ainsi que vos utilisateurs, à identifier la fonction du groupe, de l’appartenance, de la région géographique ou de la personne qui a créé le groupe. La stratégie d’attribution de noms peut également aider à catégoriser les groupes dans le carnet d’adresses. Vous pouvez utiliser la stratégie pour empêcher l’utilisation de mots spécifiques dans les alias et les noms de groupes.
 
-La stratégie de noms est appliquée aux groupes qui sont créés dans toutes les charges de travail de groupe (comme Outlook, Microsoft Teams, SharePoint, Planner, Yammer, etc.). Elle est appliquée à la fois au nom de groupe et à l’alias de groupe. Elle est appliquée lorsqu’un utilisateur crée un groupe et lorsque le nom ou l’alias du groupe est modifié pour un groupe existant.
+La stratégie de noms est appliquée aux groupes qui sont créés dans toutes les charges de travail de groupe (comme Outlook, Microsoft Teams, SharePoint, Planner, Yammer, etc.). Elle est appliquée à la fois au nom de groupe et à l’alias de groupe. Elle est également appliquée lorsqu’un utilisateur crée un groupe et lorsque le nom du groupe, l’alias, la description ou l’avatar est modifié pour un groupe existant.
 
 > [!TIP]
 > Une stratégie de noms de groupes Microsoft 365 s’applique uniquement aux groupes Microsoft 365. Elle ne s’applique pas aux groupes de distribution créés dans Exchange Online. Pour créer une stratégie de noms pour les groupes de distribution, consultez [la rubrique Create a distribution Group Naming Policy](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy).
@@ -108,7 +108,7 @@ Aucune recherche de sous-chaîne n’est effectuée ; plus précisément, une c
 
 Certains administrateurs sont exemptés de ces stratégies, pour toutes les charges de travail et les points de terminaison de groupe, afin qu’ils puissent créer des groupes avec ces mots bloqués et avec les conventions d’affectation de noms de votre choix. Voici la liste des rôles d’administrateur exemptés de la stratégie de noms de groupes.
 
-- Administrateur global
+- Administrateur général
 
 - Prise en charge du niveau 1 du partenaire
 

@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur l’usurpation d’identité dans Exchange Online Protection (EOP), où vous pouvez autoriser ou bloquer des expéditeurs usurpés spécifiques.
-ms.openlocfilehash: bc8ae2664acf96ea6cd4c20c2f9195db9b75b3da
-ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
+ms.openlocfilehash: 603aeb35241f9808561593afa69b3b9ce7193fb0
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49602120"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760529"
 ---
 # <a name="configure-spoof-intelligence-in-eop"></a>Configurer l’intelligence des usurpations d’identité dans EOP
 
@@ -57,13 +57,13 @@ Vous pouvez gérer l’aide à la décision dans le centre de sécurité & confo
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Avant de pouvoir effectuer les procédures décrites dans cet article, vous devez disposer d’autorisations dans le centre de sécurité & Compliance Center :
+- Pour pouvoir utiliser ce cmdlet, vous devez disposer des autorisations dans le centre de sécurité et conformité Office 365.
   - Pour modifier la stratégie d’aide à la décision d’usurpation d’identité ou activer ou désactiver l’intelligence d’usurpation d’identité, vous devez être membre des groupes de rôles gestion de l' **organisation** ou **administrateur de sécurité** .
   - Pour un accès en lecture seule à la stratégie d’aide à la décision, vous devez être membre des groupes de rôles **lecteur global** ou **lecteur de sécurité** .
 
   Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
 
-  **Remarques**:
+  **Remarques** :
 
   - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux utilisateurs les autorisations requises dans le centre de sécurité et de conformité _et_ les autorisations pour les autres fonctionnalités de Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
   - Le groupe de rôles **Gestion de l’organisation en affichage seul** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) permet également d’accéder en lecture seule à la fonctionnalité.
@@ -182,7 +182,7 @@ Vous pouvez configurer les paramètres d’aide à la décision d’usurpation d
 
 Pour vérifier que vous avez configuré l’intelligence des usurpations d’identité avec des expéditeurs autorisés et non autorisés à usurper, et que vous avez configuré les paramètres d’aide à la décision, suivez l’une des étapes suivantes :
 
-- Dans le centre de sécurité & conformité, accédez **Threat management** à \> **Policy** \> **protection contre les menaces-courrier indésirable** \> développer la **stratégie d’intelligence frauduleux** \> : sélectionner Afficher les **expéditeurs que j’ai déjà consultés** \> Sélectionnez l’onglet **domaines** ou **domaines externes** , et vérifier la valeur **autorisé à usurper ?** pour l’expéditeur.
+- Dans le centre de sécurité & conformité, accédez  à \>  \> **protection contre les menaces-courrier indésirable** \> développer la **stratégie d’intelligence frauduleux** \> : sélectionner Afficher les **expéditeurs que j’ai déjà consultés** \> Sélectionnez l’onglet **domaines** ou **domaines externes** , et vérifier la valeur **autorisé à usurper ?** pour l’expéditeur.
 
 - Dans PowerShell, exécutez les commandes suivantes pour afficher les expéditeurs autorisés et non autorisés à usurper les conditions suivantes :
 
@@ -199,7 +199,7 @@ Pour vérifier que vous avez configuré l’intelligence des usurpations d’ide
    Get-PhishFilterPolicy -Detailed | Export-CSV "C:\My Documents\Spoofed Senders.csv"
    ```
 
-- Dans le centre de sécurité & conformité, accédez à anti-hameçonnage de la stratégie de **gestion des menaces** \> **Policy** \> **Anti-phishing** et effectuez l’une des opérations suivantes : **ATP anti-phishing**  
+- Dans le centre de sécurité & conformité, accédez à anti-hameçonnage de la stratégie de **gestion des menaces** \>  \>  et effectuez l’une des opérations suivantes :   
 
   - Sélectionnez une stratégie dans la liste. Dans le menu volant qui s’affiche, vérifiez les valeurs de la section **usurpation** .
   - Cliquez sur **stratégie par défaut**. Dans le menu volant qui s’affiche, vérifiez les valeurs de la section **usurpation** .
@@ -207,7 +207,7 @@ Pour vérifier que vous avez configuré l’intelligence des usurpations d’ide
 - Dans Exchange Online PowerShell, remplacez par \<Name\> la valeur par défaut Office 365 antiphishing ou par le nom d’une stratégie personnalisée, puis exécutez la commande suivante pour vérifier les paramètres :
 
   ```PowerShell
-  Get-AntiPhishPolicy -Identity "<Name>" | Format-List EnableAntiSpoofEnforcement,EnableUnauthenticatedSender,AuthenticationFailAction
+  Get-AntiPhishPolicy -Identity "<Name>" | Format-List EnableSpoofIntelligence,EnableUnauthenticatedSender,AuthenticationFailAction
   ```
 
 ## <a name="other-ways-to-manage-spoofing-and-phishing"></a>Autres façons de gérer l’usurpation d’identité et le hameçonnage

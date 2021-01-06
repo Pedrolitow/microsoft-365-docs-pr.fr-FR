@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
+ROBOTS: NOINDEX, NOFOLLOW
 description: Découvrez comment utiliser l’onglet test après le calcul par lot dans Advanced eDiscovery pour tester, comparer et valider la qualité globale du traitement.
-ms.openlocfilehash: e408d79aac8015da210f983b7b388ace84fc383a
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: 52198dc5218c49598403c3f1ece201fc4f00dd47
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663417"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760320"
 ---
 # <a name="test-relevance-analysis-in-advanced-ediscovery-classic"></a>Tester l’analyse de pertinence dans Advanced eDiscovery (classique)
 
@@ -109,18 +110,3 @@ Le test « test the Slice » effectue un test semblable au test « test the R
 10. Examinez et marquez chacun des fichiers dans l’onglet de la **\> balise de pertinence** et, lorsque vous avez fini, cliquez sur **calculer**. 
     
 11. Sous l’onglet test, vous pouvez cliquer sur **afficher les résultats** pour afficher les résultats des tests. 
-    
-## <a name="see-also"></a>Voir aussi
-
-[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
-  
-[Présentation de l’évaluation en matière de pertinence](assessment-in-relevance-in-advanced-ediscovery.md)
-  
-[Balisage et évaluation](tagging-and-assessment-in-advanced-ediscovery.md)
-  
-[Étiquetage et formation à la pertinence](tagging-and-relevance-training-in-advanced-ediscovery.md)
-  
-[Analyse de la pertinence](track-relevance-analysis-in-advanced-ediscovery.md)
-  
-[Choix en fonction des résultats](decision-based-on-the-results-in-advanced-ediscovery.md)
-

@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Cet article fournit des informations sur la résolution des problèmes liés à l’envoi de messages électroniques à des boîtes de réception dans Microsoft 365 & meilleures pratiques pour le publipostage vers les clients Microsoft 365.
-ms.openlocfilehash: 8b7c008f827a579e234d8a8feab008d36ecfe064
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 3504d7518073826f3979c3c837c58d4406886b41
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615407"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760481"
 ---
 # <a name="troubleshooting-mail-sent-to-microsoft-365"></a>Résolution des problèmes d’e-mails envoyés à Microsoft 365
 
@@ -128,7 +128,7 @@ La façon dont les e-mails sont envoyés est aussi importante que leur contenu. 
 
 - Les redirections incluses dans le corps du message doivent être similaires et cohérentes et non multiples et variées. Une redirection dans ce contexte est tout élément qui pointe en dehors du message, comme des liens et des documents. Si vous avez de très nombreux liens Se désabonner ou Mettre à jour le profil, ils doivent tous pointer vers le même domaine. Par exemple :
 
-  Correct :
+  Correct (tous les domaines sont identiques) :
 
   `unsubscribe.bulkmailer.com`
 
@@ -136,7 +136,7 @@ La façon dont les e-mails sont envoyés est aussi importante que leur contenu. 
 
   `options.bulkmailer.com`
 
-  Incorrect :
+  Incorrect (tous les domaines sont différents) :
 
   `unsubscribe.bulkmailer.com`
 

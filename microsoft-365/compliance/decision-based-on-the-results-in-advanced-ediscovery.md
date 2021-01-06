@@ -15,13 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
 description: Découvrez comment l’onglet décider dans Advanced eDiscovery fournit des données qui peuvent vous aider à déterminer la taille correcte de l’ensemble de révision des fichiers de cas.
+ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 60213226bef1c04767d4be17a09b58d6940ac223
-ms.sourcegitcommit: a566ef236c85edfd566c8c3f859b80f9e5ce0473
+ms.openlocfilehash: 0423a21520375f1d9de8e2eaeca142b979ff1883
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49562965"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49759866"
 ---
 # <a name="decision-based-on-the-results-in-advanced-ediscovery-classic"></a>Décision basée sur les résultats dans Advanced eDiscovery (classique)
 
@@ -54,17 +55,3 @@ Cet onglet comprend les composants suivants :
     
 Le volet de détails étendu affiche des détails supplémentaires. Les fichiers dans les figures de collection n’incluent pas les fichiers vides ou nebulous. Les figures des fichiers de famille représentent des fichiers qui ne sont pas chargés en pertinence, mais qui sont toujours comptés dans le cadre de la famille.
   
-## <a name="related-topics"></a>Voir aussi
-
-[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
-  
-[Présentation de l’évaluation en matière de pertinence](assessment-in-relevance-in-advanced-ediscovery.md)
-  
-[Balisage et évaluation](tagging-and-relevance-training-in-advanced-ediscovery.md)
-  
-[Formation à la pertinence](tagging-and-assessment-in-advanced-ediscovery.md)
-  
-[Analyse de la pertinence](track-relevance-analysis-in-advanced-ediscovery.md)
-  
-[Évaluation de l’analyse de pertinence](test-relevance-analysis-in-advanced-ediscovery.md)
-

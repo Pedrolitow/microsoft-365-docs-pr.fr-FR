@@ -1,5 +1,5 @@
 ---
-title: En savoir plus sur les classifieurs de formation
+title: En savoir plus sur les classifieurs avec capacité d’apprentissage
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -18,14 +18,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Un classificateur Microsoft 365 pouvant être formé est un outil que vous pouvez former afin de reconnaître différents types de contenu en lui donnant des échantillons positifs et négatifs. Une fois que le classifieur est formé, vous confirmez que ses résultats sont précis. Vous l’utilisez ensuite pour effectuer une recherche dans le contenu de votre organisation et le classifier pour appliquer des étiquettes de rétention ou de sensibilité ou l’inclure dans la protection contre la perte de données (DLP) ou les stratégies de rétention.
-ms.openlocfilehash: d5e7eb891e4cff2fc220d1e9264839d05ed11bd2
-ms.sourcegitcommit: 54d1a2f363b2d5b63aae258c3cec0573a08f2866
+ms.openlocfilehash: 0e5f712b76af2fba3d456997a47352773d92d766
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49752638"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49759898"
 ---
-# <a name="learn-about-classifiers"></a>En savoir plus sur les classifieurs
+# <a name="learn-about-trainable-classifiers"></a>En savoir plus sur les classifieurs avec capacité d’apprentissage
 
 La classification et l’étiquetage du contenu de sorte qu’il puisse être protégé et géré correctement est le point de départ de la discipline de protection des informations. Microsoft 365 propose trois façons de classer le contenu.
 

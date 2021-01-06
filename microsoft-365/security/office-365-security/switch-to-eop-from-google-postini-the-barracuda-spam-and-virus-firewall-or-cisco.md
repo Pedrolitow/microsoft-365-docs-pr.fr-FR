@@ -14,14 +14,14 @@ ms.assetid: 81b75194-3b04-48da-8b81-951afbabedde
 ms.custom:
 - seo-marvel-apr2020
 description: Dans cet article, vous découvrirez comment basculer vers Exchange Online Protection (EOP) à partir d’un équipement d’hygiène de messagerie local ou d’un service de protection en nuage.
-ms.openlocfilehash: 25669982c06127331369fdb595c6614733681047
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: a007bb94c35f7712b69ad5eef4152455c114ca24
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202124"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760385"
 ---
-# <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>Basculement vers EOP à partir de Google Postini, Barracuda Spam and Virus Firewall, ou Cisco IronPort
+# <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>Basculer vers EOP depuis Google Postini, Barracuda Spam and Virus Firewall, ou Cisco IronPort
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -44,7 +44,7 @@ Si vous hébergez actuellement vos boîtes aux lettres localement et utilisez un
 
 ## <a name="switch-to-exchange-online"></a>Passage à Exchange Online
 
-Vous avez peut-être des boîtes aux lettres locales protégées par une appliance locale, et vous souhaitez accéder à la protection EOP et aux boîtes aux lettres hébergées dans le Cloud Exchange Online afin de tirer parti des fonctionnalités de protection et de messagerie Cloud de Microsoft 365. Pour commencer, vous pouvez vous inscrire à Microsoft 365 et ajouter votre domaine. Ce scénario ne requiert aucune configuration de connecteurs, car il n'y a aucun routage vers des boîtes aux lettres locales. Commencez par [obtenir les dernières fonctionnalités avancées avec Microsoft 365](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans) pour vous inscrire et vous familiariser avec ses fonctionnalités.
+Vous avez peut-être des boîtes aux lettres locales protégées par une appliance locale, et vous souhaitez accéder à la protection EOP et aux boîtes aux lettres hébergées dans le Cloud Exchange Online afin de tirer parti des fonctionnalités de protection et de messagerie Cloud de Microsoft 365. Pour commencer, vous pouvez vous inscrire à Microsoft 365 et ajouter votre domaine. Ce scénario n’exige pas que vous configurez des connecteurs, car il n’existe aucun routage vers des boîtes aux lettres locales. Commencez par [obtenir les dernières fonctionnalités avancées avec Microsoft 365](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans) pour vous inscrire et vous familiariser avec ses fonctionnalités.
 
 Pendant le processus de configuration de Microsoft 365, vous allez créer vos utilisateurs de boîtes aux lettres en nuage.
 

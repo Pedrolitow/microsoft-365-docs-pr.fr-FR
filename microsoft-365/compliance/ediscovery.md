@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 143b3ab8-8cb0-4036-a5fc-6536d837bfce
 description: Microsoft 365 offre un certain nombre d’outils eDiscovery que vous pouvez utiliser pour rechercher et conserver du contenu se trouvant dans différents emplacements, comme des boîtes aux lettres Exchange, des sites SharePoint et OneDrive entreprise, des groupes Microsoft 365 et des conversations Skype entreprise.
-ms.openlocfilehash: 2f18d3a9559293e071b7060f0e4a01a7352097c1
-ms.sourcegitcommit: 94f2f8e3e6bc3946d8b3cf798b3eb77a49ffd12a
+ms.openlocfilehash: a6708bdf012d2cfbb182d624c8c889de5fb51c7f
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "45148124"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760218"
 ---
 # <a name="ediscovery-in-microsoft-365"></a>eDiscovery dans Microsoft 365
 
@@ -34,9 +34,6 @@ Microsoft 365 fournit les outils eDiscovery suivants :
 - [Core eDiscovery](#core-ediscovery)
 
 - [eDiscovery (découverte électronique) avancée](#advanced-ediscovery)
-
-> [!NOTE]
-> Advanced eDiscovery (Classic) (également appelé *Advanced eDiscovery v 1.0*), qui est la version de Advanced eDiscovery disponible dans un cas de découverte électronique essentielle en cliquant sur **basculer vers Advanced eDiscovery**, est en cours de retrait. Ses fonctionnalités ont été remplacées par la solution eDiscovery avancée dans Microsoft 365. Pour plus d’informations sur le retrait de Advanced eDiscovery v 1.0, consultez la rubrique [déclassement des outils eDiscovery hérités](legacy-ediscovery-retirement.md#advanced-ediscovery-v10).
 
 ## <a name="content-search"></a>Recherche de contenu
 
@@ -52,7 +49,7 @@ Le tableau suivant contient des liens vers des rubriques qui vous aideront à ut
 |[Exporter un rapport de recherche de contenu](export-a-content-search-report.md) <br/> |Découvrez comment télécharger le rapport d’exportation sans avoir à exporter les résultats de la recherche.  <br/> |
 |[Limites de la recherche de contenu](limits-for-content-search.md) <br/> |Découvrez les limites de l’outil de recherche de contenu, telles que le nombre maximal de recherches que vous pouvez exécuter simultanément.  <br/> |
 |[Éléments non indexés dans la recherche de contenu](partially-indexed-items-in-content-search.md) <br/> |Découvrez les éléments non indexés dans Exchange et SharePoint que vous pouvez inclure dans les statistiques estimées des résultats de la recherche lors de l’exécution d’une recherche. Vous pouvez également inclure des éléments non indexés lorsque vous exportez des résultats de recherche.  <br/> |
-|[Rechercher et supprimer des messages électroniques](search-for-and-delete-messages-in-your-organization.md) <br/> |Découvrez comment utiliser la recherche de contenu pour rechercher et supprimer un message électronique de *toutes les* boîtes aux lettres de votre organisation. Cela peut vous aider à rechercher et supprimer les messages potentiellement dangereux ou à haut risque.  <br/> |
+|[Rechercher et supprimer des messages électroniques](search-for-and-delete-messages-in-your-organization.md) <br/> |Découvrez comment utiliser la recherche de contenu pour rechercher et supprimer un message électronique de  *toutes les*  boîtes aux lettres de votre organisation. Cela peut vous aider à rechercher et supprimer les messages potentiellement dangereux ou à haut risque.  <br/> |
 |[Utiliser la recherche de contenu pour rechercher une liste d’utilisateurs dans la boîte aux lettres et les comptes OneDrive](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md) <br/> |Découvrez comment utiliser un script pour effectuer des recherches dans la boîte aux lettres et un lecteur pour un site d’entreprise pour un groupe d’utilisateurs. Reportez-vous à la rubrique [créer une liste de tous les emplacements OneDrive](https://docs.microsoft.com/onedrive/list-onedrive-urls) pour obtenir la procédure à suivre pour générer rapidement une liste des adresses de messagerie que vous pouvez utiliser pour les emplacements de contenu source lorsque vous créez et exécutez des recherches de contenu.  <br/> |
 |[Utiliser la recherche de contenu pour les regroupements ciblés](use-content-search-for-targeted-collections.md) <br/> |Découvrez comment utiliser le script Windows PowerShell dans cet article pour effectuer des collections ciblées à l’aide de la recherche de contenu. Une collection ciblée signifie que vous souhaitez effectuer une recherche dans un dossier spécifique, car vous êtes sûr que les éléments réactifs à un cas (ou des éléments privilégiés) se trouvent dans ce dossier. Utilisez le script de cet article pour obtenir l’ID de dossier ou le chemin d’accès de la boîte aux lettres ou des dossiers de site spécifiques sur lesquels vous souhaitez effectuer une recherche.  <br/> |
 |||

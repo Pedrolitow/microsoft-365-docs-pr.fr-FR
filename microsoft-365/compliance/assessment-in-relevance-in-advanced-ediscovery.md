@@ -16,13 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 1d33d4fb-91ed-41c0-b72e-5a26eca3a2a7
 description: Obtenez une vue d’ensemble de la phase d’évaluation et de son rôle dans la détermination de la richesse des problèmes lors de la formation à la pertinence dans Microsoft 365 Advanced eDiscovery.
+ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 28bbe15a6e3f5611041cf446bd053f59de395d54
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: d9ce400af87af36dfc9e0d51caba90b952edec9c
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663079"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49759920"
 ---
 # <a name="understand-assessment-in-relevance-in-advanced-ediscovery-classic"></a>Comprendre l’évaluation en matière de pertinence dans Advanced eDiscovery (classique)
 
@@ -52,19 +53,4 @@ Chaque problème a sa propre richesse, sa marge d’erreur actuelle et, par cons
 Vous pouvez accepter les recommandations de pertinence ou ajuster la marge actuelle d’erreur en fonction de vos besoins. La marge d’erreur actuelle par défaut est déterminée pour rappel à une valeur égale ou supérieure à 75%.
   
 > [!NOTE]
-> La phase d’évaluation peut être ignorée, sous l’onglet de **\> suivi de pertinence** de l’affichage développé d’un problème, en désactivant la case à cocher **évaluation** par problème, puis « tous les problèmes ». Toutefois, il n’y aura pas de statistiques pour ce problème. > la désactivation de la case à cocher **évaluation** ne peut être effectuée qu’avant l’évaluation. Dans le cas où plusieurs problèmes existent, l’évaluation est ignorée uniquement si la case à cocher est désactivée pour chaque problème. 
-  
-## <a name="related-topics"></a>Voir aussi
-
-[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
-  
-[Balisage et évaluation](tagging-and-assessment-in-advanced-ediscovery.md)
-  
-[Étiquetage et formation à la pertinence](tagging-and-relevance-training-in-advanced-ediscovery.md)
-  
-[Analyse de la pertinence](track-relevance-analysis-in-advanced-ediscovery.md)
-  
-[Choix en fonction des résultats](decision-based-on-the-results-in-advanced-ediscovery.md)
-  
-[Évaluation de l’analyse de pertinence](test-relevance-analysis-in-advanced-ediscovery.md)
-
+> La phase d’évaluation peut être ignorée, sous l’onglet de **\> suivi de pertinence** de l’affichage développé d’un problème, en désactivant la case à cocher **évaluation** par problème, puis « tous les problèmes ». Toutefois, il n’y aura pas de statistiques pour ce problème. > la désactivation de la case à cocher **évaluation** ne peut être effectuée qu’avant l’évaluation. Dans le cas où plusieurs problèmes existent, l’évaluation est ignorée uniquement si la case à cocher est désactivée pour chaque problème.

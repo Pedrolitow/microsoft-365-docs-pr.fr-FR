@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: b5c82de7-ed2f-4cc6-becd-db403faf4d18
+ROBOTS: NOINDEX, NOFOLLOW
 description: Examinez les étapes pour effectuer une formation à l’évaluation, notamment des fichiers de marquage, et en examinant les résultats de l’évaluation dans Advanced eDiscovery.
-ms.openlocfilehash: c8c6f82e7cfb3e2eddcc482039582ea27a702494
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: 9f826c836337ecf7a8479e7d824ff8ad9e737e97
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663459"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760374"
 ---
 # <a name="tagging-and-assessment-in-advanced-ediscovery-classic"></a>Balisage et évaluation dans Advanced eDiscovery (classique)
 
@@ -123,17 +124,3 @@ En l’absence de stabilisation statistiquement basée statistiquement, les rés
 > [!TIP]
 > Dans l' **onglet \> suivi de pertinence** , affichage des problèmes étendus, les options d’affichage suivantes sont disponibles : > l’étape suivante recommandée, telle que l' **étape suivante : le marquage** peut être contourné (par problème) en cliquant sur le bouton **modifier** à sa droite, puis en sélectionnant une autre étape dans l' **étape suivante**. Lorsque l’indicateur de progression de l’évaluation n’est pas terminé, l’option évaluation est recommandée suivant, pour baliser les fichiers d’évaluation et augmenter la précision des statistiques. > vous pouvez modifier la marge d’erreur et évaluer son impact, en cliquant sur **modifier**, puis dans la **boîte de dialogue niveau d’évaluation**, en modifiant la **marge d’erreur cible pour les estimations de rappel**, puis en cliquant sur **mettre à jour les valeurs**. De plus, dans cette boîte de dialogue, vous pouvez afficher les options avancées en cliquant sur **avancé**. > vous pouvez afficher des statistiques supplémentaires sur le niveau d’évaluation et leur impact en cliquant sur **affichage**. Dans la boîte de dialogue résultats détaillés affichés, les statistiques sont disponibles par problème, lorsqu’il y a au moins 500 fichiers d’évaluation marqués et que 18 fichiers sont balisés comme pertinents pour le problème. 
   
-## <a name="see-also"></a>Voir aussi
-
-[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
-  
-[Présentation de l’évaluation en matière de pertinence](assessment-in-relevance-in-advanced-ediscovery.md)
-  
-[Étiquetage et formation à la pertinence](tagging-and-relevance-training-in-advanced-ediscovery.md)
-  
-[Analyse de la pertinence](track-relevance-analysis-in-advanced-ediscovery.md)
-  
-[Choix en fonction des résultats](decision-based-on-the-results-in-advanced-ediscovery.md)
-  
-[Évaluation de l’analyse de pertinence](test-relevance-analysis-in-advanced-ediscovery.md)
-

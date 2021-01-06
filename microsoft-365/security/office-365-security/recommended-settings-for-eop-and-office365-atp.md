@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Quelles sont les meilleures pratiques pour les paramètres de sécurité Exchange Online Protection (EOP) et Defender pour Office 365 ? Quelles sont les recommandations actuelles pour la protection standard ? Qu’est-ce qui doit être utilisé si vous voulez être plus strict ? Quels sont les autres éléments que vous obtenez si vous utilisez également Defender pour Office 365 ?
-ms.openlocfilehash: d731b75e05dcecc513c72b390b106491f7601c71
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: c9a9774e0866b009965eeb574384095c26fa780e
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698686"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760229"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Paramètres recommandés pour EOP et Microsoft Defender pour Office 365 sécurité
 
@@ -60,7 +60,7 @@ Pour créer et configurer des stratégies de blocage du courrier indésirable, c
 |Action de détection de **courrier d’hameçonnage** <p> _PhishSpamAction_|**Déplacer le message dans le dossier Courrier indésirable** <p> `MoveToJmf`|**Mettre en quarantaine le message** <p> `Quarantine`|**Mettre en quarantaine le message** <p> `Quarantine`||
 |Action de détection de **courrier d’hameçonnage à haut niveau de fiabilité** <p> _HighConfidencePhishAction_|**Mettre en quarantaine le message** <p> `Quarantine`|**Mettre en quarantaine le message** <p> `Quarantine`|**Mettre en quarantaine le message** <p> `Quarantine`||
 |Action de détection de **courrier en nombre** <p> _BulkSpamAction_|**Déplacer le message dans le dossier Courrier indésirable** <p> `MoveToJmf`|**Déplacer le message dans le dossier Courrier indésirable** <p> `MoveToJmf`|**Mettre en quarantaine le message** <p> `Quarantine`||
-|Seuil de courrier électronique en masse <p> _BulkThreshold_|7 |6 |4 |Pour plus d’informations, reportez-vous à [Bulk Complaint Level (BCL) in Office 365](bulk-complaint-level-values.md).|
+|Seuil de courrier électronique en masse <p> _BulkThreshold_|7 |6 |4 |Pour plus d’informations, reportez-vous à [Bulk Complaint Level (BCL) in Office 365](bulk-complaint-level-values.md).|
 |Période de rétention de quarantaine <p> _QuarantineRetentionPeriod_|15 jours|30 jours|30 jours||
 |**Conseils de sécurité** <p> _InlineSafetyTipsEnabled_|Activé <p> `$true`|Activé <p> `$true`|Activé <p> `$true`||
 |Expéditeurs autorisés <p> _AllowedSenders_|Aucun|Aucun|Aucun||
@@ -138,7 +138,7 @@ Pour plus d’informations sur ces paramètres, reportez-vous à la rubrique [us
 
 |Nom de la fonctionnalité de sécurité|Par défaut|Standard|Empêcher|Commentaire|
 |---|:---:|:---:|:---:|---|
-|**Activer la protection contre l’usurpation d’identité** <p> _EnableAntispoofEnforcement_|Activé <p> `$true`|Activé <p> `$true`|Activé <p> `$true`||
+|**Activer la protection contre l’usurpation d’identité** <p> _EnableSpoofIntelligence_|Activé <p> `$true`|Activé <p> `$true`|Activé <p> `$true`||
 |**Activer l’expéditeur non authentifié** <p> _EnableUnauthenticatedSender_|Activé <p> `$true`|Activé <p> `$true`|Activé <p> `$true`|Ajoute un point d’interrogation ( ?) à la photo de l’expéditeur dans Outlook pour les expéditeurs usurpés non identifiés. Pour plus d’informations, reportez-vous à la rubrique [usurpation des paramètres dans les stratégies anti-hameçonnage](set-up-anti-phishing-policies.md).|
 |**Si un message électronique est envoyé par une personne qui n’est pas autorisé à usurper votre domaine** <p> _AuthenticationFailAction_|**Déplacer le message vers les dossiers de courrier indésirable des destinataires** <p> `MoveToJmf`|**Déplacer le message vers les dossiers de courrier indésirable des destinataires** <p> `MoveToJmf`|**Mettre en quarantaine le message** <p> `Quarantine`|Ce paramètre s’applique aux expéditeurs bloqués dans l' [intelligence d’usurpation d’identité](learn-about-spoof-intelligence.md).|
 |
@@ -192,7 +192,7 @@ Notez qu’il s’agit des mêmes paramètres que ceux disponibles dans les [par
 
 |Nom de la fonctionnalité de sécurité|Par défaut|Standard|Empêcher|Commentaire|
 |---|---|---|---|---|
-|**Activer la protection contre l’usurpation d’identité** <p> _EnableAntispoofEnforcement_|Activé <p> `$true`|Activé <p> `$true`|Activé <p> `$true`||
+|**Activer la protection contre l’usurpation d’identité** <p> _EnableSpoofIntelligence_|Activé <p> `$true`|Activé <p> `$true`|Activé <p> `$true`||
 |**Activer l’expéditeur non authentifié** <p> _EnableUnauthenticatedSender_|Activé <p> `$true`|Activé <p> `$true`|Activé <p> `$true`|Ajoute un point d’interrogation ( ?) à la photo de l’expéditeur dans Outlook pour les expéditeurs usurpés non identifiés. Pour plus d’informations, reportez-vous à la rubrique [usurpation des paramètres dans les stratégies anti-hameçonnage](set-up-anti-phishing-policies.md).|
 |**Si un message électronique est envoyé par une personne qui n’est pas autorisé à usurper votre domaine** <p> _AuthenticationFailAction_|**Déplacer le message vers les dossiers de courrier indésirable des destinataires** <p> `MoveToJmf`|**Déplacer le message vers les dossiers de courrier indésirable des destinataires** <p> `MoveToJmf`|**Mettre en quarantaine le message** <p> `Quarantine`|Ce paramètre s’applique aux expéditeurs bloqués dans l' [intelligence d’usurpation d’identité](learn-about-spoof-intelligence.md).|
 |

@@ -1,5 +1,5 @@
 ---
-title: Ajuster les paramètres après l’enregistrement
+title: Ajuster les paramètres après l’inscription
 description: Procédure d’exclusion de certains comptes Microsoft
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
@@ -9,16 +9,20 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 76a73372cc7517c3241390e58c28b0b02bffd664
-ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
+ms.openlocfilehash: d7fe410f114d43d4f6c983aaf23d949298635318
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49527696"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760102"
 ---
-# <a name="adjust-settings-after-enrollment"></a>Ajuster les paramètres après l’enregistrement
+# <a name="adjust-settings-after-enrollment"></a>Ajuster les paramètres après l’inscription
 
 Une fois que vous avez terminé l’enregistrement dans le bureau géré Microsoft, vous devez ajuster certains paramètres Microsoft Intune et Azure Active Directory (Azure AD) pour permettre la gestion et assurer la sécurité. Définissez les paramètres suivants pour exclure les groupes Azure AD qui contiennent des utilisateurs et des appareils de bureau gérés Microsoft. Pour connaître les étapes à suivre pour exclure des groupes, consultez la rubrique [accès conditionnel : utilisateurs et groupes](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-users-groups#exclude-users).
+
+> [!NOTE]
+> Si vous effectuez des modifications après l’enregistrement des stratégies dans Microsoft Intune, Azure Active Directory ou Microsoft 365, il est possible que Microsoft Managed Desktop puisse cesser de fonctionner correctement. Pour éviter les problèmes liés aux opérations de bureau géré Microsoft, vérifiez les paramètres spécifiques décrits dans [corriger les problèmes détectés par l’outil d’évaluation de la disponibilité](../get-ready/readiness-assessment-fix.md) avant de modifier des stratégies.
+
 
 ## <a name="microsoft-intune-settings"></a>Paramètres Microsoft Intune
 

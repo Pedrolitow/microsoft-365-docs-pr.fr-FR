@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à créer, modifier et supprimer les stratégies anti-hameçonnage disponibles dans les organisations Exchange Online Protection (EOP) avec ou sans boîte aux lettres Exchange Online.
-ms.openlocfilehash: 69ab17263ab8c0cc03d3bc4aed6bdf39b251b9fb
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: 03c1ce8e940491607fe04988d41c927f92479d96
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572524"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760331"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>Configurer des stratégies anti-hameçonnage dans EOP
 
@@ -57,21 +57,21 @@ Pour accroître l’efficacité de la protection anti-hameçonnage, vous pouvez 
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Vous ouvrez le Centre de conformité et sécurité sur <https://protection.office.com/>. Pour accéder directement à la page **anti-hameçonnage** , utilisez <https://protection.office.com/antiphishing> .
+- Vous ouvrez le Centre de sécurité et conformité sur <https://protection.office.com/>. Pour accéder directement à la page **anti-hameçonnage** , utilisez <https://protection.office.com/antiphishing> .
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
   Vous ne pouvez pas gérer les stratégies de détection d’hameçonnage dans une version autonome d’EOP PowerShell.
 
-- Avant de pouvoir effectuer les procédures décrites dans cet article, vous devez disposer d’autorisations dans le centre de sécurité & Compliance Center :
+- Des autorisations doivent vous avoir été attribuées dans le Centre de sécurité et de conformité pour que vous puissiez effectuer les procédures décrites dans cet article.
   - Pour ajouter, modifier et supprimer des stratégies de détection d’hameçonnage, vous devez être membre des groupes de rôles de gestion de l' **organisation** ou d' **administrateur de sécurité** .
   - Pour un accès en lecture seule aux stratégies de détection d’hameçonnage, vous devez être membre des groupes de rôles **lecteur global** ou **lecteur** de sécurité <sup>\*</sup> .
 
   Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
 
-  **Remarques**:
+  **Remarques** :
 
-  - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le centre d’administration 365 de Microsoft donne aux utilisateurs les autorisations requises dans le centre de sécurité & conformité _et_ des autorisations pour d’autres fonctionnalités de Microsoft 365. Si vous souhaitez en savoir plus, veuillez consulter la page [À propos des rôles d’administrateur](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux utilisateurs les autorisations requises dans le centre de sécurité et de conformité _et_ les autorisations pour les autres fonctionnalités de Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
   - Le groupe de rôles gestion de l' **Organisation en affichage seul** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) offre également un accès en lecture seule à la fonctionnalité <sup>\*</sup> .
   - <sup>\*</sup> Dans le centre de sécurité & conformité, l’accès en lecture seule permet aux utilisateurs d’afficher les paramètres des stratégies anti-hameçonnage personnalisées. Les utilisateurs en lecture seule ne peuvent pas voir les paramètres dans la stratégie anti-hameçonnage par défaut.
 
@@ -89,7 +89,7 @@ La création d’une stratégie anti-hameçonnage personnalisée dans le centre 
 
 Lorsque vous créez une stratégie anti-hameçonnage, vous pouvez uniquement spécifier le nom de la stratégie, sa description et le filtre de destinataire qui identifie la personne à laquelle la stratégie s’applique. Après avoir créé la stratégie, vous pouvez modifier la stratégie pour modifier ou consulter les paramètres anti-hameçonnage par défaut.
 
-1. Dans le centre de sécurité & conformité, accédez **Threat management** à \> **Policy** \> **protection anti-hameçonnage** de la stratégie de gestion des menaces.
+1. Dans le centre de sécurité & conformité, accédez  à \>  \> **protection anti-hameçonnage** de la stratégie de gestion des menaces.
 
 2. Sur la page **anti-hameçonnage** , cliquez sur **créer**.
 
@@ -137,7 +137,7 @@ Après avoir créé la stratégie anti-hameçonnage avec ces paramètres génér
 
 Utilisez les procédures suivantes pour modifier les stratégies de détection d’hameçonnage : une nouvelle stratégie que vous avez créée ou des stratégies existantes que vous avez déjà personnalisées.
 
-1. Si vous ne l’avez pas encore fait, ouvrez le centre de sécurité & conformité, puis **accédez à** \> **Policy** \> **protection contre le hameçonnage**.
+1. Si vous ne l’avez pas encore fait, ouvrez le centre de sécurité & conformité, puis **accédez à** \>  \> **protection contre le hameçonnage**.
 
 2. Sélectionnez la stratégie anti-hameçonnage personnalisée que vous souhaitez modifier. Si elle est déjà sélectionnée, désactivez-la et sélectionnez-la à nouveau.
 
@@ -190,7 +190,7 @@ Utilisez les procédures suivantes pour modifier les stratégies de détection d
 
 La stratégie anti-hameçonnage par défaut est nommée Office antiphishing par défaut et n’apparaît pas dans la liste des stratégies. Pour modifier la stratégie anti-hameçonnage par défaut, procédez comme suit :
 
-1. Dans le centre de sécurité & conformité, accédez **Threat management** à \> **Policy** \> **protection anti-hameçonnage** de la stratégie de gestion des menaces.
+1. Dans le centre de sécurité & conformité, accédez  à \>  \> **protection anti-hameçonnage** de la stratégie de gestion des menaces.
 
 2. Sur la page **anti-hameçonnage** , cliquez sur **stratégie par défaut**.
 
@@ -210,7 +210,7 @@ La stratégie anti-hameçonnage par défaut est nommée Office antiphishing par 
 
 ### <a name="enable-or-disable-custom-anti-phishing-policies"></a>Activer ou désactiver les stratégies anti-hameçonnage personnalisées
 
-1. Dans le centre de sécurité & conformité, accédez **Threat management** à \> **Policy** \> **protection anti-hameçonnage** de la stratégie de gestion des menaces.
+1. Dans le centre de sécurité & conformité, accédez  à \>  \> **protection anti-hameçonnage** de la stratégie de gestion des menaces.
 
 2. Notez la valeur dans la colonne **État** :
 
@@ -232,13 +232,13 @@ Les stratégies anti-hameçonnage personnalisées sont affichées dans l’ordre
 
 Pour modifier la priorité d’une stratégie, cliquez sur **augmenter la priorité** ou sur **diminuer la priorité** dans les propriétés de la stratégie (vous ne pouvez pas modifier directement le numéro de **priorité** dans le centre de sécurité & conformité). La modification de la priorité d’une stratégie n’a de sens que si vous disposez de plusieurs stratégies.
 
-1. Dans le centre de sécurité & conformité, accédez à la stratégie de **gestion des menaces** pour \> **Policy** \> **le hameçonnage**.
+1. Dans le centre de sécurité & conformité, accédez à la stratégie de **gestion des menaces** pour \>  \> **le hameçonnage**.
 
 2. Sélectionnez la stratégie que vous souhaitez modifier. Si elle est déjà sélectionnée, désactivez-la et sélectionnez-la à nouveau.
 
 3. Le menu volant **modifier \<name\> votre stratégie** apparaît.
 
-   - La stratégie anti-hameçonnage personnalisée avec la valeur **Priority** de priorité **0** a uniquement le bouton **diminuer la priorité** disponible.
+   - La stratégie anti-hameçonnage personnalisée avec la valeur  de priorité **0** a uniquement le bouton **diminuer la priorité** disponible.
 
    - La stratégie anti-hameçonnage personnalisée avec la valeur de **priorité** la plus faible (par exemple, **3**) a uniquement le bouton **augmenter la priorité** disponible.
 
@@ -250,7 +250,7 @@ Pour modifier la priorité d’une stratégie, cliquez sur **augmenter la priori
 
 ## <a name="use-the-security--compliance-center-to-view-anti-phishing-policies"></a>Utiliser le centre de sécurité & conformité pour afficher les stratégies de protection contre le hameçonnage
 
-1. Dans le centre de sécurité & conformité, puis accédez **à** \> **Policy** \> **protection contre le hameçonnage**.
+1. Dans le centre de sécurité & conformité, puis accédez **à** \>  \> **protection contre le hameçonnage**.
 
 2. Effectuez l’une des étapes suivantes :
 
@@ -262,7 +262,7 @@ Pour modifier la priorité d’une stratégie, cliquez sur **augmenter la priori
 
 ## <a name="use-the-security--compliance-center-to-remove-anti-phishing-policies"></a>Utiliser le centre de sécurité & conformité pour supprimer les stratégies de protection contre le hameçonnage
 
-1. Dans le centre de sécurité & conformité, accédez **Threat management** à \> **Policy** \> **protection anti-hameçonnage** de la stratégie de gestion des menaces.
+1. Dans le centre de sécurité & conformité, accédez  à \>  \> **protection anti-hameçonnage** de la stratégie de gestion des menaces.
 
 2. Sélectionnez la stratégie que vous souhaitez supprimer. Si elle est déjà sélectionnée, désactivez-la et sélectionnez-la à nouveau.
 
@@ -290,7 +290,7 @@ La création d’une stratégie anti-hameçonnage dans PowerShell est un process
 1. Créez la stratégie anti-hameçonnage.
 2. Créez la règle anti-hameçonnage qui spécifie la stratégie anti-hameçonnage à laquelle la règle s’applique.
 
- **Remarques**:
+ **Remarques** :
 
 - Vous pouvez créer une nouvelle règle anti-hameçonnage et lui affecter une stratégie anti-hameçonnage existante non associée. Une règle anti-hameçonnage ne peut pas être associée à plusieurs stratégies anti-hameçonnage.
 
@@ -306,7 +306,7 @@ La création d’une stratégie anti-hameçonnage dans PowerShell est un process
 Pour créer une stratégie anti-hameçonnage, utilisez la syntaxe suivante :
 
 ```PowerShell
-New-AntiPhishPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-EnableAntiSpoofEnforcement <$true | $false>] [-AuthenticationFailAction <MoveToJmf | Quarantine>] [-EnableUnauthenticatedSender <$true | $false>]
+New-AntiPhishPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-EnableSpoofIntelligence <$true | $false>] [-AuthenticationFailAction <MoveToJmf | Quarantine>] [-EnableUnauthenticatedSender <$true | $false>]
 ```
 
 Cet exemple crée une stratégie anti-hameçonnage nommée Research Quarantine avec les paramètres suivants :
@@ -510,7 +510,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 Pour vérifier que vous avez bien configuré les stratégies anti-hameçonnage dans Microsoft Defender pour Office 365, effectuez l’une des opérations suivantes :
 
-- Dans le centre de sécurité & conformité, accédez **Threat management** à \> **Policy** \> **protection anti-hameçonnage** de la stratégie de gestion des menaces. Vérifiez la liste des stratégies, leurs valeurs d' **État** et leurs valeurs de **priorité** . Pour afficher plus de détails, effectuez l’une des opérations suivantes :
+- Dans le centre de sécurité & conformité, accédez  à \>  \> **protection anti-hameçonnage** de la stratégie de gestion des menaces. Vérifiez la liste des stratégies, leurs valeurs d' **État** et leurs valeurs de **priorité** . Pour afficher plus de détails, effectuez l’une des opérations suivantes :
 
   - Sélectionnez la stratégie dans la liste, puis affichez les détails dans le menu volant.
   - Cliquez sur **stratégie par défaut** et affichez les détails dans le menu volant.
