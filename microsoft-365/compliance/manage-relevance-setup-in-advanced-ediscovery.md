@@ -14,13 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: fd6be6d3-2e8d-449d-9851-03ab7546e6aa
+ROBOTS: NOINDEX, NOFOLLOW
 description: Lisez les recommandations pour configurer l’entraînement Pertinence dans Advanced eDiscovery pour qu’il note les fichiers selon leur pertinence et génère des résultats.
-ms.openlocfilehash: a6bec149e11fa80fb57cb811120218fa7f2cc45b
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: 8ba09babc91f233514cd0195c3e1da08b07ccb3c
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49662869"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760208"
 ---
 # <a name="manage-relevance-setup-in-advanced-ediscovery-classic"></a>Gestion de la configuration de Pertinence dans Advanced eDiscovery (classique)
 
@@ -69,15 +70,4 @@ Les paramètres décrits dans cette section sont disponibles dans Advanced eDis
 
 - Définissez et organisez les sujets attentivement, car cela peut influer sur les résultats de l’entraînement Pertinence.
 
-Une fois les paramètres définis, le réviseur-expert peut commencer à entraîner les fichiers dans l’onglet **Pertinence**. 
-  
-## <a name="see-also"></a>Voir aussi
-
-[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
-  
-[Définition des sujets et affectation des utilisateurs](define-issues-and-assign-users.md)
-  
-[Configuration des chargements pour ajouter des fichiers importés](set-up-loads-to-add-imported-files.md)
-  
-[Définition des mots clés surlignés et des options avancées](define-highlighted-keywords-and-advanced-options.md)
-
+Une fois les paramètres définis, le réviseur-expert peut commencer à entraîner les fichiers dans l’onglet **Pertinence**.
