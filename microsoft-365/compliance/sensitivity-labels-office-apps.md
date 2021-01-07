@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Découvrez comment les utilisateurs utilisent les étiquettes de confidentialité dans les applications Office pour ordinateur de bureau, mobile et le Web, et quelles applications prennent en charge les étiquettes de sensibilité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2f2e28bc9321f8a9f3de8cb622eff3317be572b9
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: ebf4626a6106a9bebc62c8bca1be825c645d60fd
+ms.sourcegitcommit: 3bf4f1c0d3a8515cca651b2a520217195f89457f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698417"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49777077"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Utiliser les étiquettes de confidentialité dans les applications Office
 
@@ -64,10 +64,10 @@ Les numéros répertoriés sont la version minimale de l’application Office re
 |[Marquages dynamiques avec des variables](#dynamic-markings-with-variables)                                              | 2010 +           | 16.42 +     | 2.42 + | 16.0.13328 + | En cours de révision |
 |[Attribuer des autorisations maintenant](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Oui-opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Permettre aux utilisateurs d’attribuer des autorisations](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004 + | 16.35 +   | En cours de révision   | En cours de révision         | En cours de révision                                                        |
-|[Afficher l’utilisation des étiquettes avec l’analyse d’étiquette et l'](label-analytics.md) envoi de données pour les administrateurs                      | En cours de révision            | En cours de révision        | En cours de révision   | En cours de révision         | OK <sup>\*</sup>                                                        |
-|[Demander aux utilisateurs d’appliquer une étiquette à leurs courriers électroniques et documents](sensitivity-labels.md#what-label-policies-can-do)   | Aperçu : [canal bêta](https://office.com/insider)             | Aperçu : [canal bêta](https://office.com/insider)         | Aperçu : [canal bêta](https://office.com/insider)   | En cours de révision         | En cours de révision                                            
+|[Afficher l’utilisation des étiquettes avec l’analyse d’étiquette et l'](label-analytics.md) envoi de données pour les administrateurs                      | Aperçu : [canal actuel (aperçu)](https://office.com/insider)            | Aperçu : [canal actuel (aperçu)](https://office.com/insider)        | En cours de révision   | En cours de révision         | OK <sup>\*</sup>                                                        |
+|[Demander aux utilisateurs d’appliquer une étiquette à leurs courriers électroniques et documents](sensitivity-labels.md#what-label-policies-can-do)   | Aperçu : déploiement vers le [canal actuel (aperçu)](https://office.com/insider)             | Aperçu : déploiement vers le [canal actuel (aperçu)](https://office.com/insider)         | En cours de révision   | Aperçu : [canal bêta](https://office.com/insider)         | En cours de révision                                            
 |[Appliquer automatiquement une étiquette de confidentialité à du contenu](apply-sensitivity-label-automatically.md)                    | 2009 +                                  | Aperçu pour Word et PowerPoint : déploiement vers le [canal actuel (aperçu)](https://office.com/insider) | En cours de révision | En cours de révision | [Oui-opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
-|Prise en charge de l' [enregistrement automatique](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) et de la [co-création](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) sur des documents étiquetés et protégés | En cours de révision | En cours de révision | En cours de révision | En cours de révision | [Oui-opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
+|Prise en charge de l' [enregistrement automatique](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) et de la [co-création](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) sur des documents étiquetés et chiffrés | En cours de révision | En cours de révision | En cours de révision | En cours de révision | [Oui-opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
 
 **Bas**
@@ -88,8 +88,8 @@ Les numéros répertoriés sont la version minimale de l’application Office re
 |[Marquages dynamiques avec des variables](#dynamic-markings-with-variables)                                              | En cours de révision                     | En cours de révision                 | En cours de révision         | En cours de révision           | En cours de révision               |
 |[Attribuer des autorisations maintenant](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | Oui               |
 |[Permettre aux utilisateurs d’attribuer des autorisations](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | Oui               |
-|[Demander aux utilisateurs d’appliquer une étiquette à leurs courriers électroniques et documents](#require-users-to-apply-a-label-to-their-email-and-documents)   | Aperçu : [canal bêta](https://office.com/insider)                        | 16.43 +                     | 4.57.0 +            | 4.2037.4 +                | Oui                |
-|[Afficher l’utilisation des étiquettes avec l’analyse d’étiquette et l'](label-analytics.md) envoi de données pour les administrateurs                      | En cours de révision                       | En cours de révision                    | En cours de révision           | En cours de révision               | Oui               |
+|[Demander aux utilisateurs d’appliquer une étiquette à leurs courriers électroniques et documents](#require-users-to-apply-a-label-to-their-email-and-documents)   | Aperçu : [canal actuel (aperçu)](https://office.com/insider))                        | 16.43 +                     | 4.57.0 +            | 4.2037.4 +                | Oui                |
+|[Afficher l’utilisation des étiquettes avec l’analyse d’étiquette et l'](label-analytics.md) envoi de données pour les administrateurs                      | Aperçu : [canal actuel (aperçu)](https://office.com/insider)                       | Aperçu : [canal actuel (aperçu)](https://office.com/insider)                    | En cours de révision           | En cours de révision               | Oui               |
 |[Appliquer automatiquement une étiquette de confidentialité à du contenu](apply-sensitivity-label-automatically.md)                    | 2009 +                      | En cours de révision                    | En cours de révision           | En cours de révision               | Oui |
 |
 

@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 6e6ad80697d332d0bccb248071b8deadf09fe8de
-ms.sourcegitcommit: 8252377f63de188d32ed1ccd37540d92cba3cb65
+ms.openlocfilehash: 9f2f6667066a1704ceb98179b677e7de7895cef2
+ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49671015"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49769265"
 ---
 # <a name="insider-risk-solutions-in-microsoft-365"></a>Solutions de risque interne dans Microsoft 365
 
@@ -30,7 +30,7 @@ Les risques initiés sont l’une des principales préoccupations des profession
 
 Les fonctionnalités de prévention des risques de Microsoft 365 sont conçues et intégrées à nos produits et solutions à risque d’intérieur. Ces solutions fonctionnent ensemble et utilisent des indicateurs de service et tiers pour vous aider à identifier rapidement, à trier et à agir sur l’activité des risques. La plupart des solutions offrent un flux de travail de détection, d’alerte et de correction complet pour vos analystes de données et vos investigateurs afin de les traiter rapidement et de les minimiser.
 
-| | Danger | Conformité des communications | Gestion des risques internes | Obstacles aux informations | Gestion des accès privilégiés |
+| Icône risque | Danger | Conformité des communications | Gestion des risques internes | Obstacles aux informations | Gestion des accès privilégiés |
 | :---- | :-------- | :--------------------------- | :-------------------------- |:-------------------------| :--------------------------------|
 | ![Icône de fuite de données](../media/ir-risk-data-spillage.png)| Fuite de données | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) |  |  |
 | ![Icône violations de confidentialité](../media/ir-risk-confidentiality-violations.png)| Violations de confidentialité | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) | ![Pris en charge](../media/check-mark.png) |  |
@@ -51,10 +51,10 @@ Pour vous aider à protéger votre organisation contre les risques initiés, uti
 
 | Solution/fonctionnalités | Description | Licence |
 | :------------------------ | :-------------- | :------------ |
-| Conformité des communications | La conformité de la communication permet de réduire les risques de communication en vous aidant à détecter, capturer et agir sur des messages inappropriés dans votre organisation. | Abonnement Microsoft 365 E5 (payant ou version d’évaluation) <br> Microsoft 365 E3 subscription + le complément de conformité Microsoft 365 E5 <br> Microsoft 365 E3 subscription + le complément de gestion des risques de Microsoft 365 E5 Insider <br> Abonnement Microsoft 365 a5 (payant ou version d’évaluation) <br> Abonnement Microsoft 365 a3 + complément Microsoft 365 a5 Compliance <br> Abonnement Microsoft 365 a3 + complément de gestion des risques Microsoft 365 a5 Insider <br> Abonnement Microsoft 365 G5 (payant ou version d’évaluation) <br> Abonnement Microsoft 365 G5 + le complément de conformité Microsoft 365 G5 <br> Abonnement Microsoft 365 G5 + le complément de gestion des risques Microsoft 365 G5 Insider <br> Office 365 entreprise E5 abonnement (payant ou version d’évaluation) <br> Abonnement Office 365 a5 (payant ou version d’évaluation) <br> Office 365 entreprise E3 abonnement + le complément Office 365 Advanced Compliance (non disponible pour les nouveaux abonnements) |
-| Gestion des risques internes | La gestion des risques initiés permet de réduire les risques internes en vous permettant de détecter, d’examiner et d’agir sur les activités malveillantes et involontaires dans votre organisation. | Abonnement Microsoft 365 E5 (payant ou version d’évaluation) abonnement Microsoft 365 E3 + le complément de conformité Microsoft 365 E5 <br> Microsoft 365 E3 subscription + le complément de gestion des risques de Microsoft 365 E5 Insider <br> Abonnement Microsoft 365 a5 (payant ou version d’évaluation) <br> Abonnement Microsoft 365 a3 + complément Microsoft 365 a5 Compliance <br> Abonnement Microsoft 365 a3 + complément de gestion des risques Microsoft 365 a5 Insider |
-| Obstacles aux informations | Les barrières d’informations vous permettent de restreindre la communication et la collaboration entre deux groupes internes afin d’éviter un conflit d’intérêts au sein de votre organisation.  | Microsoft 365 E5/a5 <br> Office 365 E5/a5 <br> Conformité avancée Office 365 <br> Conformité Microsoft 365 E5/a5 <br> Gestion des risques Microsoft 365 Insider |
-| Gestion des accès privilégiés | La gestion des accès privilégiés permet un contrôle d’accès granulaire via des tâches d’administration Exchange Online privilégiées dans Office 365. Elle peut faciliter la protection de votre organisation contre des violations utilisant les comptes d’administration privilégiés existants avec un accès permanent aux données sensibles ou un accès aux paramètres de configuration critiques. | Microsoft 365 E5/a5 <br> Office 365 E5/a5 <br> Microsoft 365 E5/a5 conformité <br> Microsoft 365 E5/a5 protection des informations et gouvernance |
+| Conformité des communications | La conformité de la communication permet de réduire les risques de communication en vous aidant à détecter, capturer et agir sur des messages inappropriés dans votre organisation. | Abonnement Microsoft 365 E5 (payant ou version d’évaluation) <br><br> Microsoft 365 E3 subscription + le complément de conformité Microsoft 365 E5 <br><br> Microsoft 365 E3 subscription + le complément de gestion des risques de Microsoft 365 E5 Insider <br><br> Abonnement Microsoft 365 a5 (payant ou version d’évaluation) <br><br> Abonnement Microsoft 365 a3 + complément Microsoft 365 a5 Compliance <br><br> Abonnement Microsoft 365 a3 + complément de gestion des risques Microsoft 365 a5 Insider <br><br> Abonnement Microsoft 365 G5 (payant ou version d’évaluation) <br><br> Abonnement Microsoft 365 G5 + le complément de conformité Microsoft 365 G5 <br> Abonnement Microsoft 365 G5 + le complément de gestion des risques Microsoft 365 G5 Insider <br><br> Office 365 entreprise E5 abonnement (payant ou version d’évaluation) <br><br> Abonnement Office 365 a5 (payant ou version d’évaluation) <br><br> Office 365 entreprise E3 abonnement + le complément Office 365 Advanced Compliance (non disponible pour les nouveaux abonnements) |
+| Gestion des risques internes | La gestion des risques initiés permet de réduire les risques internes en vous permettant de détecter, d’examiner et d’agir sur les activités malveillantes et involontaires dans votre organisation. | Abonnement Microsoft 365 E5 (payant ou version d’évaluation) <br><br> Microsoft 365 E3 subscription + le complément de conformité Microsoft 365 E5 <br><br> Microsoft 365 E3 subscription + le complément de gestion des risques de Microsoft 365 E5 Insider <br><br> Abonnement Microsoft 365 a5 (payant ou version d’évaluation) <br><br> Abonnement Microsoft 365 a3 + complément Microsoft 365 a5 Compliance <br><br> Abonnement Microsoft 365 a3 + complément de gestion des risques Microsoft 365 a5 Insider |
+| Obstacles aux informations | Les barrières d’informations vous permettent de restreindre la communication et la collaboration entre deux groupes internes afin d’éviter un conflit d’intérêts au sein de votre organisation.  | Microsoft 365 E5/a5 <br><br> Office 365 E5/a5 <br><br> Conformité avancée Office 365 <br><br> Conformité Microsoft 365 E5/a5 <br><br> Gestion des risques Microsoft 365 Insider |
+| Gestion des accès privilégiés | La gestion des accès privilégiés permet un contrôle d’accès granulaire via des tâches d’administration Exchange Online privilégiées dans Office 365. Elle peut faciliter la protection de votre organisation contre des violations utilisant les comptes d’administration privilégiés existants avec un accès permanent aux données sensibles ou un accès aux paramètres de configuration critiques. | Microsoft 365 E5/a5 <br><br> Office 365 E5/a5 <br><br> Conformité Microsoft 365 E5/A5 <br><br> Microsoft 365 E5/a5 protection des informations et gouvernance |
 
 ## <a name="deploy-microsoft-365-insider-risk-solutions"></a>Déployer Microsoft 365 Insider Risk solutions
 
@@ -69,7 +69,7 @@ Pour vous aider à protéger votre organisation contre les risques d’Insider, 
 
 ## <a name="illustrations-with-examples"></a>Illustrations avec des exemples
 
-Pour vous aider à planifier une stratégie intégrée pour l’implémentation des fonctionnalités de risque de Microsoft 365 Insider, téléchargez le jeu d’illustrations des *fonctionnalités de protection et de conformité des informations de microsoft 365* . Pour les fonctionnalités de risque pour les initiés, voir les rubriques d’illustration 5-7. N’hésitez pas à les adapter à votre usage personnel.
+Pour vous aider à planifier une stratégie intégrée pour l’implémentation des fonctionnalités de risque de Microsoft 365 Insider, téléchargez le jeu d’illustrations des *fonctionnalités de protection et de conformité des informations de microsoft 365* . Pour les fonctionnalités de risque pour les initiés, consultez les pages d’illustration de l’architecture 5-7. N’hésitez pas à les adapter à votre usage personnel.
 
 | Item | Description |
 |:-----|:------------|

@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 titleSuffix: Office 365
-ms.date: 09/14/2017
+ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -18,17 +18,14 @@ ms.assetid: 1d33d4fb-91ed-41c0-b72e-5a26eca3a2a7
 description: Obtenez une vue d’ensemble de la phase d’évaluation et de son rôle dans la détermination de la richesse des problèmes lors de la formation à la pertinence dans Microsoft 365 Advanced eDiscovery.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d9ce400af87af36dfc9e0d51caba90b952edec9c
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+ms.openlocfilehash: 8930f362d217ed87fc0e16b88b7588ab781164e8
+ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 01/06/2021
-ms.locfileid: "49759920"
+ms.locfileid: "49769275"
 ---
-# <a name="understand-assessment-in-relevance-in-advanced-ediscovery-classic"></a>Comprendre l’évaluation en matière de pertinence dans Advanced eDiscovery (classique)
-
-> [!NOTE]
-> Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+# <a name="assessment-in-the-relevance-module-in-advanced-ediscovery"></a>Évaluation dans le module de pertinence dans Advanced eDiscovery
   
 Advanced eDiscovery permet une évaluation anticipée, par exemple, pour les problèmes définis et les données importées pour un cas. Advanced eDiscovery permet à l’expert de prendre des décisions sur une approche adoptée et d’appliquer ces décisions au projet de révision de document.
   
@@ -43,14 +40,14 @@ Les statistiques, présentées dans les onglets suivi et décision lors de la fo
 Une fois que l’expert a examiné un ensemble d’évaluation initiale de 500 fichiers, la pertinence peut déterminer la marge d’erreur actuelle des valeurs de rappel. La pertinence recommande également une marge d’erreur par défaut à atteindre pour optimiser l’ensemble d’évaluation. Voici quelques exemples :
   
 - Si l’ensemble d’évaluation a déjà généré une marge d’erreur de plus ou moins 10%, la pertinence recommande de passer à la formation (aucune révision d’évaluation supplémentaire n’est nécessaire). 
-    
+
 - Si l’ensemble d’évaluation a généré une marge d’erreur de plus ou moins 13%, la pertinence peut recommander la révision d’un autre ensemble de fichiers d’évaluation pour atteindre une marge plus petite. 
-    
+
 - Si la richesse est extrêmement faible, la pertinence peut recommander d’arrêter l’évaluation même si la marge d’erreur est importante (rendant les statistiques incommodes), car l’ensemble d’évaluation nécessaire pour atteindre une marge d’erreur utile est trop important.
-    
+
 Chaque problème a sa propre richesse, sa marge d’erreur actuelle et, par conséquent, le nombre estimé de fichiers d’évaluation supplémentaires. Le prochain ensemble d’évaluation est créé en fonction du nombre maximal de fichiers (jusqu’à 1 000 dans un seul ensemble).
   
 Vous pouvez accepter les recommandations de pertinence ou ajuster la marge actuelle d’erreur en fonction de vos besoins. La marge d’erreur actuelle par défaut est déterminée pour rappel à une valeur égale ou supérieure à 75%.
   
 > [!NOTE]
-> La phase d’évaluation peut être ignorée, sous l’onglet de **\> suivi de pertinence** de l’affichage développé d’un problème, en désactivant la case à cocher **évaluation** par problème, puis « tous les problèmes ». Toutefois, il n’y aura pas de statistiques pour ce problème. > la désactivation de la case à cocher **évaluation** ne peut être effectuée qu’avant l’évaluation. Dans le cas où plusieurs problèmes existent, l’évaluation est ignorée uniquement si la case à cocher est désactivée pour chaque problème.
+> La phase d’évaluation peut être ignorée, sous l’onglet de **\> suivi de pertinence** de l’affichage développé d’un problème, en désactivant la case à cocher **évaluation** par problème, puis « tous les problèmes ». Par conséquent, il n’y aura pas de statistiques pour ce problème. La désactivation de la case à cocher **évaluation** ne peut être effectuée qu’avant l’évaluation. Dans le cas où plusieurs problèmes existent, l’évaluation est ignorée uniquement si la case à cocher est désactivée pour chaque problème.

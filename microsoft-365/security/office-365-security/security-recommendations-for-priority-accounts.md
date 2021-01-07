@@ -17,12 +17,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à élever les paramètres de sécurité et à utiliser des rapports, des alertes et des analyses pour les comptes prioritaires dans leurs organisations Microsoft 365.
-ms.openlocfilehash: aee238d2fb58d2772881d8d77f98959906943290
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: 9788131ea881a1cb3c36a60dfaac01ed5daf0901
+ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49668152"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49769244"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Recommandations en matière de sécurité pour les comptes prioritaires dans Microsoft 365
 
@@ -31,6 +31,8 @@ Que faire si vous avez reçu un message urgent d’un exécutif de votre organis
 Pour les attaquants, les attaques par hameçonnage ordinaires qui effectuent un net aléatoire pour obtenir les informations d’identification des utilisateurs inconnus ou aléatoires sont inefficaces. D’autre part, les attaques de _Spear Phishing_ ou de _baleine_ qui ciblent les utilisateurs dans des positions de puissance ou d’autorité sont bien plus satisfaisantes pour les attaquants. Si ces comptes de priorité sont compromis, l’agresseur peut accéder à des comptes dotés de fonctionnalités d’administration, financières, de produit ou même d’accès physique au sein de l’organisation.
 
 Microsoft 365 et Microsoft Defender pour Office 365 contiennent de nombreuses fonctionnalités différentes qui peuvent vous aider à fournir des couches de sécurité supplémentaires pour vos comptes prioritaires. Les fonctionnalités disponibles et leur utilisation sont présentées dans cet article.
+
+![Résumé des recommandations en matière de sécurité sous forme d’icône](../../media/security-recommendations-for-priority-users.png)
 
 ## <a name="increase-sign-in-security-for-priority-accounts"></a>Augmenter la sécurité de connexion pour les comptes prioritaires
 
@@ -60,7 +62,7 @@ Les stratégies de sécurité prédéfinies constituent un emplacement pratique 
 
 Pour plus d’informations sur la différence entre les paramètres de stratégie stricts et les paramètres de stratégie par défaut et standard, voir [Recommended Settings for EOP and Microsoft Defender for Office 365 Security](recommended-settings-for-eop-and-office365-atp.md).
 
-## <a name="user-tags"></a>Balises utilisateur
+## <a name="apply-user-tags-to-priority-accounts"></a>Appliquer les balises utilisateur aux comptes prioritaires
 
 Les balises utilisateur de Microsoft Defender pour Office 365 plan 2 (dans le cadre de Microsoft 365 E5 ou d’un abonnement de complément) constituent un moyen d’identifier et de classer rapidement des utilisateurs ou des groupes d’utilisateurs spécifiques dans des rapports et des recherches d’incidents.
 
@@ -68,7 +70,11 @@ La fonctionnalité **comptes de priorité** est un type de balise utilisateur in
 
 Vous pouvez également créer des balises personnalisées pour identifier et classer vos comptes prioritaires. Pour plus d’informations, consultez la rubrique [User Tags](user-tags.md). Notez que vous pouvez gérer les **comptes de priorité** (balises système) dans la même interface que les balises utilisateur personnalisées.
 
-## <a name="priority-accounts-in-reports-and-investigations-in-microsoft-365"></a>Comptes prioritaires dans les rapports et les enquêtes dans Microsoft 365
+## <a name="monitor-priority-accounts-in-alerts-reports-and-detections"></a>Surveiller les comptes prioritaires dans les alertes, les rapports et les détections
+
+Une fois que vous avez sécurisé et identifié vos utilisateurs prioritaires, vous pouvez utiliser les rapports, alertes et enquêtes disponibles dans EOP et Defender pour Office 365 pour identifier rapidement les incidents ou les détections qui impliquent des comptes prioritaires. Les fonctionnalités qui prennent en charge les balises utilisateur sont décrites dans le tableau suivant.
+
+<br>
 
 ****
 

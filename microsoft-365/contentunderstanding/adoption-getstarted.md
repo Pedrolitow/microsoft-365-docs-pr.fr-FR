@@ -12,12 +12,12 @@ ms.collection: enabler-strategic
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 95e1ad15a62762c8b28203e178d4d4ae7906e38a
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+ms.openlocfilehash: 441f28e36ced25b2e5af3f71235995c8b021f779
+ms.sourcegitcommit: ddfb4f3e34deb733e8625e845e4dfd1fcc066ceb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 01/06/2021
-ms.locfileid: "49760241"
+ms.locfileid: "49771870"
 ---
 # <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Microsoft SharePoint Syntex adoption : prise en main
 
@@ -27,13 +27,16 @@ Les services de contenu intelligents disponibles dans SharePoint Syntex se compo
 - **Traitement de contenu :** Automatisez la capture, l’ingestion et la catégorisation du contenu et rationalisez les processus orientés contenu à l’aide de Power Automated. En savoir plus sur le [traitement du contenu](form-processing-overview.md).
 - **Conformité du contenu :** Contrôlez et gérez le contenu pour améliorer la sécurité et la gouvernance grâce à l’intégration à la protection des informations Microsoft.
 
-Avec de nouveaux services et fonctionnalités AI, vous pouvez créer des applications de présentation et de classification de contenu directement dans le flux de gestion de contenu à l’aide de SharePoint Syntex :
+Avec de nouveaux services et fonctionnalités AI, vous pouvez créer des applications de présentation et de classification de contenu directement dans le flux de gestion de contenu à l’aide de SharePoint Syntex. Il existe deux manières différentes de comprendre votre contenu. Le type de modèle que vous utilisez est basé sur le format de fichier et le cas d’utilisation :
 
-|Entrée manuelle| Traitement des formulaires | Présentation des documents |
-|:-------|:--------|:--------|
-| Saisie de données et main-d’œuvre intensive sur tout le contenu. | Identifier des fichiers et extraire des données de documents structurés ou semi-structurés, tels que des formulaires ou des factures. |  Identifier et extraire les données à partir de documents non structurés, tels que des lettres ou des contrats, où les entités de texte que vous souhaitez extraire résident dans des phrases ou des régions spécifiques du document. |
-| Actif.   |  Personnalisé, assisté.  | Prédéfinis, automatisés. |
-| Personnes qui effectuent le travail. | Enseigné par vos experts techniques (PME). | Les PME sont moins impliquées. |
+| Traitement des formulaires | Présentation des documents |
+|:-------|:-------|
+| Créé à partir de la bibliothèque de documents. | Créé dans le centre de contenu, partie de SharePoint Syntex. |
+| Modèle créé dans le générateur AI. | Modèle créé dans l’interface native. |
+| Utilisé pour les formats de fichier semi-structurés. | Utilisé pour les formats de fichiers non structurés. |
+| Classifieur définissable. | Classificateur de formation avec extracteurs facultatifs. |
+| Limité à une seule bibliothèque. | Peut être appliqué à plusieurs bibliothèques. |
+| Formation sur PDF, JPG, format PNG, total de 50 Mo/500 pp. | Formation sur des fichiers PDF, Office ou de messagerie 5-10, y compris des exemples négatifs. |
 
 Le tableau suivant décrit la disponibilité et la gestion des licences pour SharePoint Syntex :
 
@@ -44,17 +47,6 @@ Le tableau suivant décrit la disponibilité et la gestion des licences pour Sha
 | Mise en service par rapport à l’environnement de service de données commun par défaut. | Ne dispose pas de restrictions de capacité. |
 
 Pour plus d’informations sur les crédits et les unités des générateurs AI, consultez la rubrique [precréation Licensing](https://docs.microsoft.com/ai-builder/administer-licensing).
-
-Il existe deux manières différentes de comprendre votre contenu. Le type de modèle que vous utilisez est basé sur le format de fichier et le cas d’utilisation :
-
-| Traitement des formulaires | Présentation des documents |
-|:-------|:-------|
-| Créé à partir de la bibliothèque de documents. | Créé dans le centre de contenu, partie de SharePoint Syntex. |
-| Modèle créé dans le générateur AI. | Modèle créé dans l’interface native. |
-| Utilisé pour les formats de fichier semi-structurés. | Utilisé pour les formats de fichiers non structurés. |
-| Classifieur définissable. | Classificateur de formation avec extracteurs facultatifs. |
-| Limité à une seule bibliothèque. | Peut être appliqué à plusieurs bibliothèques. |
-| Formation sur PDF, JPG, format PNG, total de 50 Mo/500 pp. | Formation sur des fichiers PDF, Office ou de messagerie 5-10, y compris des exemples négatifs. |
 
 SharePoint Syntex s’intègre aux fonctionnalités de conformité de Microsoft 365 telles que :
 

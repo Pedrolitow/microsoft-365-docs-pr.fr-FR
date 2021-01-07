@@ -1,6 +1,6 @@
 ---
 title: Configurer un accès sécurisé aux services Microsoft 365
-description: Description.
+description: Recherchez des instructions pour l’implémentation de l’authentification multifacteur, l’accès conditionnel et les stratégies associées pour trois niveaux de protection, sensibles et hautement sensibles.
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -12,12 +12,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: eff5e7701f0278654dd0e56f09428ba44748b1b1
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 00d6c1dd842cd906547f0d450a41052aaa466d35
+ms.sourcegitcommit: ddfb4f3e34deb733e8625e845e4dfd1fcc066ceb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46521788"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49771798"
 ---
 # <a name="configure-secure-access-to-microsoft-365-services"></a>Configurer un accès sécurisé aux services Microsoft 365
 

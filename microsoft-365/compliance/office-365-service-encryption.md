@@ -14,40 +14,40 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 'Résumé : comprendre la résilience des données dans Microsoft Office 365.'
-ms.openlocfilehash: 4759cfda13ab5044ddf5980d7e61004e9e7626fa
-ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
+ms.openlocfilehash: fbd2672986046a4f6d25c47b011eaef0a87d90e1
+ms.sourcegitcommit: 3bf4f1c0d3a8515cca651b2a520217195f89457f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45024774"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49777048"
 ---
 # <a name="service-encryption"></a>Chiffrement de service
 
 En plus de l’utilisation du chiffrement au niveau du volume, Exchange Online, Skype entreprise, SharePoint Online et OneDrive entreprise utilisent également le chiffrement de service pour chiffrer les données client. Le chiffrement de service autorise deux options de gestion clés :
 
-## <a name="microsoft-managed-keys"></a>Clés gérées Microsoft
-Microsoft gère toutes les clés de chiffrement, y compris les clés racines pour le chiffrement de service. Cette option est actuellement disponible dans SharePoint Online et OneDrive Entreprise. Cette option est actuellement déployée pour Exchange Online. Les clés gérées Microsoft fournissent le chiffrement de service par défaut, sauf si vous décidez d’utiliser la clé client. Si, par la suite, vous décidez de cesser d’utiliser la clé client sans suivre le chemin de purge des données, vos données resteront chiffrées à l’aide des clés gérées Microsoft. Vos données sont toujours chiffrées à ce niveau par défaut au minimum. 
+## <a name="microsoft-managed-keys"></a>Clés gérées par Microsoft
+Microsoft gère toutes les clés de chiffrement, y compris les clés racines pour le chiffrement de service. Cette option est actuellement activée par défaut pour Exchange Online, SharePoint Online, OneDrive entreprise. Les clés gérées par Microsoft fournissent le chiffrement de service par défaut, sauf si vous décidez d’utiliser la clé client. Si, par la suite, vous décidez de cesser d’utiliser la clé client sans suivre le chemin de purge des données, vos données resteront chiffrées à l’aide des clés gérées par Microsoft. Vos données sont toujours chiffrées à ce niveau par défaut au minimum. 
 
 ## <a name="customer-key"></a>Clé client
 Vous fournissez des clés racines utilisées avec le chiffrement de service et vous gérez ces clés à l’aide du coffre de clés Azure. Microsoft gère toutes les autres clés. Cette option est appelée clé client et elle est actuellement disponible pour Exchange Online, SharePoint Online et OneDrive entreprise. (Précédemment appelé chiffrement avancé avec BYOK. Consultez la rubrique amélioration de la [transparence et du contrôle pour les clients Office 365](https://blogs.office.com/2015/04/21/enhancing-transparency-and-control-for-office-365-customers/) pour l’annonce d’origine.)
 
-Le chiffrement de service offre plusieurs avantages. Par exemple, clé client :
+Le chiffrement de service offre plusieurs avantages :
 
-- Fournit des fonctionnalités de protection et de gestion des droits en plus de la protection de chiffrement élevée.
+- Fournit une couche de protection supplémentaire sur BitLocker.
+
+- Permet de séparer les administrateurs du système d’exploitation Windows de l’accès aux données d’application stockées ou traitées par le système d’exploitation.
 
 - Inclut une option de clé de client qui permet aux services mutualisés de fournir une gestion des clés par client.
 
-- Permet de séparer les administrateurs du système d’exploitation Windows de l’accès aux données client stockées ou traitées par le système d’exploitation.
-
-- Améliore la capacité de Microsoft 365 à répondre aux exigences des clients qui ont des exigences de conformité concernant le chiffrement.
+- Améliore la capacité de Microsoft 365 à répondre aux exigences des clients qui ont des exigences de conformité spécifiques en matière de chiffrement.
 
 À l’aide de la clé client, vous pouvez générer vos propres clés de chiffrement à l’aide d’un module de service matériel (HSM) local ou d’un coffre-fort de clés Azure (AKV). Quelle que soit la façon dont vous générez la clé, vous utilisez AKV pour contrôler et gérer les clés de chiffrement utilisées par Office 365. Une fois que vos clés sont stockées dans AKV, elles peuvent être utilisées comme racine de l’une des clés qui chiffre les données ou les fichiers de votre boîte aux lettres.
 
-Un autre avantage de la clé client est le contrôle dont vous disposez sur la capacité de Microsoft à traiter vos données. Si vous souhaitez supprimer des données d’Office 365, par exemple si vous souhaitez terminer le service auprès de Microsoft ou supprimer une partie de vos données stockées dans le Cloud, vous pouvez le faire et utiliser la clé client comme un contrôle technique. Cela permet de s’assurer que personne, y compris Microsoft, ne peut accéder aux données ou les traiter. La clé client est en outre et complémentaire du référentiel sécurisé du client que vous utilisez pour contrôler l’accès à vos données par le personnel de Microsoft.
+Un autre avantage de la clé client est le contrôle dont vous disposez sur la capacité de Microsoft à traiter vos données. Si vous souhaitez supprimer des données d’Office 365, par exemple si vous souhaitez terminer le service auprès de Microsoft ou supprimer une partie de vos données stockées dans le Cloud, vous pouvez le faire et utiliser la clé client comme un contrôle technique. La suppression des données garantit que personne, y compris Microsoft, ne peut accéder aux données ou les traiter. La clé client est en outre et complémentaire du référentiel sécurisé du client que vous utilisez pour contrôler l’accès à vos données par le personnel de Microsoft.
 
 Pour en savoir plus sur la configuration de la clé client pour Microsoft 365 pour Exchange Online, Skype entreprise, SharePoint Online, y compris les sites d’équipe et OneDrive entreprise, consultez les articles suivants :
 
-- [Chiffrement de service avec clé client](customer-key-overview.md)
+- [Chiffrement du service avec la clé client](customer-key-overview.md)
 
 - [Configurer la clé client](customer-key-set-up.md)
 

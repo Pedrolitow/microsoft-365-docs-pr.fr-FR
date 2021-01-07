@@ -17,33 +17,34 @@ search.appverid:
 ms.assetid: ''
 description: Utilisez l’éditeur de communications pour modifier le texte et fusionner les variables de champ lors de la mise en forme de votre contenu.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 0cb415da9aa09452176bd8aa9be4575cfc827582
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 6dcfb58dff3a3acf99340895872bb2da9795d9c8
+ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034476"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49769159"
 ---
 # <a name="use-the-communications-editor"></a>Utiliser l’éditeur de communications
 
-Lorsque vous définissez le contenu de votre contenu de portail, des notifications de conservation légale et des rappels associés, vous pouvez utiliser l’éditeur de communications pour formater et personnaliser dynamiquement votre contenu.
+Lorsque vous définissez le contenu de votre contenu de portail, les notifications de conservation légale et les rappels associés, vous pouvez utiliser l’éditeur de communications pour formater et personnaliser dynamiquement votre contenu.
 
-## <a name="rich-text-editor"></a>Éditeur de texte enrichi 
+## <a name="rich-text-editor"></a>Éditeur de texte enrichi
 
-L’éditeur de communications permet à l’utilisateur de personnaliser le texte à l’aide des options de l’éditeur. Par exemple, les utilisateurs peuvent modifier les types de police, créer des listes à puces, mettre en surbrillance le contenu, etc. 
+L’éditeur de communications permet à l’utilisateur de personnaliser le texte à l’aide des options de l’éditeur. Par exemple, les utilisateurs peuvent modifier les types de police, créer des listes à puces, mettre en surbrillance le contenu, etc.
 
 ## <a name="merge-field-variables"></a>Fusionner des variables de champ
 
-Vous pouvez utiliser des variables de fusion et publipostage à partir de l’éditeur de communications pour incorporer des attributs de dépositaire personnalisés dans le corps d’une communication. Lors de l’envoi au dépositaire, le champ de fusion est renseigné avec le champ correspondant. Par exemple, lorsqu’il est envoyé au dépositaire John Smith, le champ de fusion [nom du dépositaire] est traduit par le nom correspondant. 
+Vous pouvez utiliser des variables de fusion et publipostage à partir de l’éditeur de communications pour incorporer des attributs de dépositaire personnalisés dans le corps d’une communication. Lors de l’envoi au dépositaire, le champ de fusion est renseigné avec le champ correspondant. Par exemple, lorsqu’il est envoyé au dépositaire John Smith, le champ de fusion [nom du dépositaire] est traduit par le nom correspondant.
 
-Vous pouvez utiliser les champs de fusion de messagerie en sélectionnant les icônes de **champ de fusion** en haut du contrôle d’éditeur de texte enrichi. L’espace réservé est ajouté en fonction de l’emplacement du curseur de l’utilisateur. 
+Vous pouvez utiliser les champs de fusion de messagerie en sélectionnant les icônes de **champ de fusion** en haut du contrôle d’éditeur de texte enrichi. L’espace réservé est ajouté en fonction de l’emplacement du curseur de l’utilisateur.
 
 ### <a name="list-of-merge-field-variables"></a>Liste des variables de champ de fusion
 
-| Nom du champ                  | Détails du champ | 
+| Nom du champ                  | Détails du champ |
 | :------------------- | :------------------- |
 | Nom d’affichage  | Prénom et nom du dépositaire. | 
 | Lien d’accusé de réception | Lien personnalisé permettant d’enregistrer l’accusé de réception de chaque dépositaire.|                 |
 | Lien du portail     | Un lien personnalisé pour le portail de conformité du dépositaire.|                |
 | Officier émetteur                   | Adresse de messagerie du responsable émetteur spécifié.|                   |
 | Date d’émission                   | Date à laquelle l’avis a été émis (UTC).              |
+|||

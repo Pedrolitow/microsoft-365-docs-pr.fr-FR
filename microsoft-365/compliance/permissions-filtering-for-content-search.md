@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
 description: Utilisez le filtrage des autorisations de recherche de contenu pour permettre à un gestionnaire eDiscovery de rechercher uniquement un sous-ensemble de boîtes aux lettres et de sites dans votre organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 28afbf65678e74e087365518bd07ceaae0e40e8a
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 5abf50988f40a3de833583543beb3b1c49e4e520
+ms.sourcegitcommit: 3bf4f1c0d3a8515cca651b2a520217195f89457f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358546"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49777087"
 ---
 # <a name="configure-permissions-filtering-for-content-search"></a>Configuration du filtrage des autorisations pour la recherche de contenu
 
@@ -46,58 +46,48 @@ Le filtrage des autorisations de recherche est pris en charge par la fonctionnal
 ## <a name="requirements-to-configure-permissions-filtering"></a>Conditions requises pour configurer le filtrage des autorisations
 
 - Pour exécuter les cmdlets du filtre de sécurité de conformité, vous devez être membre du groupe de rôles gestion de l’organisation dans le centre de sécurité & conformité. Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
-    
-- Vous devez connecter Windows PowerShell au centre de sécurité & au centre de conformité et à votre organisation Exchange Online pour utiliser les cmdlets de filtrage de sécurité de conformité. Cette opération est nécessaire car ces cmdlets requièrent l’accès aux propriétés de boîte aux lettres, c’est pourquoi vous devez vous connecter à ExchangeOnline. Consultez les étapes décrites dans la section suivante. 
-    
-- Consultez la section [More information](#more-information) pour plus d’informations sur les filtres d’autorisations de recherche. 
-    
-- Le filtrage des autorisations de recherche s’applique aux boîtes aux lettres inactives, ce qui signifie que vous pouvez utiliser le filtrage du contenu des boîtes aux lettres et des boîtes aux lettres pour limiter la recherche d’une boîte aux lettres inactive. Consultez la section [plus d’informations](#more-information) pour obtenir des informations supplémentaires sur le filtrage des autorisations et les boîtes aux lettres inactives. 
-    
--  Le filtrage des autorisations de recherche ne peut pas être utilisé pour limiter les personnes pouvant effectuer des recherches dans des dossiers publics dans Exchange. 
-    
-- Il n’y a pas de limite au nombre de filtres d’autorisations de recherche pouvant être créés dans une organisation. Toutefois, les performances de recherche seront affectées lorsqu’il y aura plus de 100 filtres d’autorisations de recherche. Pour conserver le plus petit nombre de filtres d’autorisations de recherche dans votre organisation, créez des filtres qui combinent les règles pour Exchange, SharePoint et OneDrive dans un seul filtre chaque fois que cela est possible.
-    
-## <a name="connect-to-the-security--compliance-center-and-exchange-online-in-a-single-remote-powershell-session"></a>Se connecter au centre de sécurité & conformité et à Exchange Online en une seule session PowerShell distante
 
-1. Enregistrez le texte suivant dans un fichier de script Windows PowerShell à l’aide d’un suffixe de nom de fichier **. ps1**. Par exemple, vous pouvez l’enregistrer dans un fichier nommé **ConnectEXO-CC.ps1**.
-    
+- Vous devez vous connecter à Exchange Online et à la sécurité & Centre de conformité PowerShell pour utiliser les cmdlets de filtrage de sécurité de conformité. Cela est nécessaire, car ces applets de commande nécessitent un accès aux propriétés de boîte aux lettres, ce qui explique pourquoi vous devez vous connecter à Exchange Online PowerShell. Consultez les étapes décrites dans la section suivante.
+
+- Consultez la section [More information](#more-information) pour plus d’informations sur les filtres d’autorisations de recherche.
+
+- Le filtrage des autorisations de recherche s’applique aux boîtes aux lettres inactives, ce qui signifie que vous pouvez utiliser le filtrage du contenu des boîtes aux lettres et des boîtes aux lettres pour limiter la recherche d’une boîte aux lettres inactive. Consultez la section [plus d’informations](#more-information) pour obtenir des informations supplémentaires sur le filtrage des autorisations et les boîtes aux lettres inactives.
+
+- Le filtrage des autorisations de recherche ne peut pas être utilisé pour limiter les personnes pouvant effectuer des recherches dans des dossiers publics dans Exchange.
+
+- Il n’y a pas de limite au nombre de filtres d’autorisations de recherche pouvant être créés dans une organisation. Toutefois, les performances de recherche seront affectées lorsqu’il y aura plus de 100 filtres d’autorisations de recherche. Pour conserver le plus petit nombre de filtres d’autorisations de recherche dans votre organisation, créez des filtres qui combinent les règles pour Exchange, SharePoint et OneDrive dans un seul filtre chaque fois que cela est possible.
+
+## <a name="connect-to-exchange-online-and-security--compliance-center-powershell-in-a-single-session"></a>Se connecter à Exchange Online et Security & Compliance Center PowerShell dans une session unique
+
+Avant de pouvoir exécuter le script de cette section, vous devez télécharger et installer le module Exchange Online PowerShell v2. Pour plus d’informations, reportez-vous [à la rubrique à propos du module Exchange Online PowerShell v2](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module).
+
+1. Enregistrez le texte suivant dans un fichier de script Windows PowerShell à l’aide d’un suffixe de nom de fichier **. ps1**. Par exemple, vous pouvez l’enregistrer dans un fichier nommé **ConnectEXO-SCC.ps1**.
+
     ```powershell
+    Import-Module ExchangeOnlineManagement
     $UserCredential = Get-Credential
-    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection
-    Import-PSSession $Session -DisableNameChecking
-    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection
-    Import-PSSession $Session -AllowClobber -DisableNameChecking
+    Connect-ExchangeOnline -Credential $UserCredential
+    Connect-IPPSSession -Credential $UserCredential
     $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Exchange Online + Compliance Center)"
     ```
 
 2. Sur votre ordinateur local, ouvrez Windows PowerShell, accédez au dossier dans lequel se trouve le script que vous avez créé à l’étape précédente, puis exécutez le script ; par exemple :
-    
-    ```powershell
-    .\ConnectEXO-CC.ps1
-    ```
-
-Comment savoir si cela a fonctionné ? Après avoir exécuté le script, les cmdlets du centre de conformité & de sécurité et d’Exchange Online sont importées dans votre session Windows PowerShell locale. Si vous ne recevez aucune erreur, la connexion est établie. Un test rapide consiste à exécuter une cmdlet Security & Compliance Center et une cmdlet Exchange Online. Par exemple, vous pouvez exécuter **install-UnifiedCompliancePrerequisite** et **Get-Mailbox**. 
-  
-Si vous recevez des erreurs, vérifiez les conditions requises suivantes :
-  
-- Un mot de passe incorrect est un problème courant. Exécutez à nouveau les deux étapes et portez une attention particulière au nom d’utilisateur et au mot de passe que vous entrez à l’étape 1.
-    
-- Vérifiez que votre compte dispose de l’autorisation d’accès au centre de sécurité & conformité. Pour plus d’informations, consultez [la rubrique accorder aux utilisateurs l’accès au centre de sécurité & conformité](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
-    
-- Pour éviter les attaques par déni de service (DoS), vous êtes limité à trois connexions PowerShell à distance vers le centre de sécurité & Compliance Center.
-    
-- Windows PowerShell doit être configuré pour exécuter des scripts. Ceci ne doit être réalisé qu’une seule fois, pas à chaque fois que vous vous connectez. Pour activer l'exécution de scripts signés dans Windows PowerShell, exécutez la commande suivante dans une fenêtre Windows PowerShell élevée (fenêtre Windows PowerShell ouverte en sélectionnant **Exécuter en tant qu'administrateur**).
 
     ```powershell
-    Set-ExecutionPolicy RemoteSigned
+    .\ConnectEXO-SCC.ps1
     ```
 
-- Le trafic du port TCP 80 doit être ouvert entre votre ordinateur local et Office 365. Il est probablement ouvert, mais vous devez y penser si votre organisation a une stratégie restrictive d’accès à Internet.
+Comment savoir si cela a fonctionné ? Une fois le script exécuté, les applets de commande d’Exchange Online et de la sécurité & la conformité PowerShell sont importées dans votre session Windows PowerShell locale. Si vous ne recevez aucune erreur, la connexion est établie. Un test rapide consiste à exécuter une cmdlet Exchange Online et Security & Compliance Center. Par exemple, vous pouvez exécuter et **obtenir-Mailbox** et **Get-ComplianceSearch**.
 
-  
+Pour résoudre les erreurs de connexion PowerShell, consultez les éléments suivants :
+
+- [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell#how-do-you-know-this-worked)
+
+- [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell#how-do-you-know-this-worked)
+
 ## <a name="new-compliancesecurityfilter"></a>New-ComplianceSecurityFilter
 
-La **ComplianceSecurityFilter** est utilisée pour créer un filtre d’autorisations de recherche. Le tableau suivant décrit les paramètres de cette cmdlet. Tous les paramètres sont obligatoires pour créer un filtre de sécurité de conformité. 
+La **ComplianceSecurityFilter** est utilisée pour créer un filtre d’autorisations de recherche. Le tableau suivant décrit les paramètres de cette cmdlet. Tous les paramètres sont obligatoires pour créer un filtre de sécurité de conformité.
   
 |**Paramètre**|**Description**|
 |:-----|:-----|
@@ -144,7 +134,7 @@ Cet exemple montre comment autoriser l’utilisateur annb@contoso.com à effectu
 New-ComplianceSecurityFilter -FilterName CountryFilter  -Users annb@contoso.com -Filters "Mailbox_CountryCode  -eq '124'" -Action All
 ```
 
-Cet exemple permet aux utilisateurs donh et suzanf de rechercher uniquement les boîtes aux lettres ayant la valeur « marketing » pour la propriété de boîte aux lettres CustomAttribute1.
+Cet exemple permet aux utilisateurs donh et suzanf de rechercher uniquement les boîtes aux lettres possédant la valeur « Marketing » pour la propriété de boîte aux lettres CustomAttribute1.
 
 ```powershell
 New-ComplianceSecurityFilter -FilterName MarketingFilter  -Users donh,suzanf -Filters "Mailbox_CustomAttribute1  -eq 'Marketing'" -Action Search
@@ -227,7 +217,7 @@ La **ComplianceSecurityFilter** est utilisée pour renvoyer une liste de filtres
 |:-----|:-----|
 | _Action_| Le paramètre  _action_ spécifie le type d’action de recherche auquel le filtre est appliqué. Les actions de recherche de contenu possibles sont les suivantes : <br/><br/> **Exportation :** Le filtre est appliqué lors de l’exportation des résultats de la recherche.  <br/> **Aperçu :** Le filtre est appliqué lors de l’aperçu des résultats de la recherche.  <br/> **Purge :** Le filtre est appliqué lors de la purge des résultats de la recherche.  <br/> **Recherche :** Le filtre est appliqué lors de l’exécution d’une recherche.  <br/> **Tout :** Le filtre est appliqué à toutes les actions de recherche.  <br/> |
 | _FilterName_|Le paramètre  _FilterName_ spécifie le nom du filtre d’autorisations. |
-| _Filters_| Le paramètre  _Filters_ spécifie les critères de recherche pour le filtre de sécurité de conformité. Vous pouvez créer deux types de filtres différents : <br/><br/>**Filtrage des boîtes aux lettres :** Ce type de filtre spécifie les boîtes aux lettres que les utilisateurs affectés (spécifiés par le paramètre  _Users_ ) peuvent rechercher. La syntaxe de ce type de filtre est **Mailbox_** _MailboxPropertyName_, où  _MailboxPropertyName_ spécifie une propriété de boîte aux lettres utilisée pour étendre les boîtes aux lettres pouvant faire l’objet d’une recherche. Par exemple, le filtre de boîte aux lettres  `"Mailbox_CustomAttribute10 -eq 'OttawaUsers'"` permet à l’utilisateur qui a affecté ce filtre de rechercher uniquement les boîtes aux lettres ayant la valeur « OttawaUsers » dans la propriété CustomAttribute10.  Toutes les propriétés de destinataire filtrables prises en charge peuvent être utilisées pour la propriété  _MailboxPropertyName_ . Pour obtenir la liste des propriétés prises en charge, consultez [la rubrique Filterable Properties for the-RecipientFilter Parameter](https://go.microsoft.com/fwlink/p/?LinkId=784903). <br/><br/>**Filtrage du contenu de la boîte aux lettres :** Ce type de filtre est appliqué sur le contenu qui peut faire l’objet d’une recherche. Il spécifie le contenu de la boîte aux lettres que les utilisateurs affectés peuvent rechercher. La syntaxe de ce type de filtre est **MailboxContent_** _SearchablePropertyName : value_, où  _SEARCHABLEPROPERTYNAME_ spécifie une propriété KQL (Keyword Query Language) qui peut être spécifiée dans une recherche de contenu. Par exemple, le filtre de contenu de boîte aux lettres  `MailboxContent_recipients:contoso.com` permet à l’utilisateur qui a affecté ce filtre de rechercher uniquement les messages envoyés à des destinataires dans le domaine contoso.com.  Pour obtenir la liste des propriétés de message pouvant faire l’objet d’une recherche, voir [Keyword Queries for Content Search](keyword-queries-and-search-conditions.md). <br/><br/>**Filtrage du site et du contenu du site :** Il existe deux filtres de site SharePoint et OneDrive entreprise que vous pouvez utiliser pour spécifier le site ou le contenu de site que les utilisateurs affectés peuvent rechercher : <br/><br/>- **Site_** *SearchableSiteProperty* <br/>- **SiteContent**_*SearchableSiteProperty*<br/><br/>Ces deux filtres sont interchangeables. Par exemple,  `"Site_Path -like 'https://contoso.spoppe.com/sites/doctors*'"` et  `"SiteContent_Path -like 'https://contoso.spoppe.com/sites/doctors*'"` renvoie les mêmes résultats. Toutefois, pour vous aider à identifier ce que fait un filtre, vous pouvez utiliser  `Site_` pour spécifier des propriétés liées au site (telles qu’une URL de site) et  `SiteContent_` pour spécifier des propriétés liées au contenu (telles que les types de documents. Par exemple, le filtre  `"Site_Path -like 'https://contoso.spoppe.com/sites/doctors*'"` permet à l’utilisateur qui a affecté ce filtre de rechercher uniquement le contenu de la https://contoso.spoppe.com/sites/doctors collection de sites. Le filtre  `"SiteContent_FileExtension -eq 'docx'"` permet à l’utilisateur qui a affecté ce filtre de rechercher uniquement des documents Word (word 2007 et versions ultérieures).  <br/><br/>Pour obtenir la liste des propriétés de site pouvant faire l’objet d’une recherche, voir [vue d’ensemble des propriétés analysées et gérées dans SharePoint](https://go.microsoft.com/fwlink/p/?LinkId=331599). Les propriétés marquées par **Oui** dans la colonne **Queryable** peuvent être utilisées pour créer un filtre de site ou de contenu de site. <br/><br/>          |
+| _Filters_| Le paramètre  _Filters_ spécifie les critères de recherche pour le filtre de sécurité de conformité. Vous pouvez créer deux types de filtres différents : <br/><br/>**Filtrage des boîtes aux lettres :** Ce type de filtre spécifie les boîtes aux lettres que les utilisateurs affectés (spécifiés par le paramètre  _Users_ ) peuvent rechercher. La syntaxe de ce type de filtre est **Mailbox_** _MailboxPropertyName_, où  _MailboxPropertyName_ spécifie une propriété de boîte aux lettres utilisée pour étendre les boîtes aux lettres pouvant faire l’objet d’une recherche. Par exemple, le filtre de boîte aux lettres  `"Mailbox_CustomAttribute10 -eq 'OttawaUsers'"` permet à l’utilisateur qui a affecté ce filtre de rechercher uniquement les boîtes aux lettres ayant la valeur « OttawaUsers » dans la propriété CustomAttribute10.  Toutes les propriétés de destinataire filtrables prises en charge peuvent être utilisées pour la propriété  _MailboxPropertyName_ . Pour obtenir la liste des propriétés prises en charge, consultez [la rubrique Filterable Properties for the-RecipientFilter Parameter](https://go.microsoft.com/fwlink/p/?LinkId=784903). <br/><br/>**Filtrage du contenu de la boîte aux lettres :** Ce type de filtre est appliqué sur le contenu qui peut faire l’objet d’une recherche. Il spécifie le contenu de la boîte aux lettres que les utilisateurs affectés peuvent rechercher. La syntaxe de ce type de filtre est **MailboxContent_** _SearchablePropertyName : value_, où  _SEARCHABLEPROPERTYNAME_ spécifie une propriété KQL (Keyword Query Language) qui peut être spécifiée dans une recherche de contenu. Par exemple, le filtre de contenu de boîte aux lettres  `MailboxContent_recipients:contoso.com` permet à l’utilisateur qui a affecté ce filtre de rechercher uniquement les messages envoyés à des destinataires dans le domaine contoso.com.  Pour obtenir la liste des propriétés de message pouvant faire l’objet d’une recherche, voir [Keyword Queries for Content Search](keyword-queries-and-search-conditions.md). <br/><br/>**Filtrage du site et du contenu du site :** Il existe deux filtres de site SharePoint et OneDrive entreprise que vous pouvez utiliser pour spécifier le site ou le contenu de site que les utilisateurs affectés peuvent rechercher : <br/><br/>- **Site_** *SearchableSiteProperty* <br/>- **SiteContent** _ *SearchableSiteProperty*<br/><br/>Ces deux filtres sont interchangeables. Par exemple,  `"Site_Path -like 'https://contoso.spoppe.com/sites/doctors*'"` et  `"SiteContent_Path -like 'https://contoso.spoppe.com/sites/doctors*'"` renvoie les mêmes résultats. Toutefois, pour vous aider à identifier ce que fait un filtre, vous pouvez utiliser  `Site_` pour spécifier des propriétés liées au site (telles qu’une URL de site) et  `SiteContent_` pour spécifier des propriétés liées au contenu (telles que les types de documents. Par exemple, le filtre  `"Site_Path -like 'https://contoso.spoppe.com/sites/doctors*'"` permet à l’utilisateur qui a affecté ce filtre de rechercher uniquement le contenu de la https://contoso.spoppe.com/sites/doctors collection de sites. Le filtre  `"SiteContent_FileExtension -eq 'docx'"` permet à l’utilisateur qui a affecté ce filtre de rechercher uniquement des documents Word (word 2007 et versions ultérieures).  <br/><br/>Pour obtenir la liste des propriétés de site pouvant faire l’objet d’une recherche, voir [vue d’ensemble des propriétés analysées et gérées dans SharePoint](https://go.microsoft.com/fwlink/p/?LinkId=331599). Les propriétés marquées par **Oui** dans la colonne **Queryable** peuvent être utilisées pour créer un filtre de site ou de contenu de site. <br/><br/>          |
 | _Utilisateurs_|Le paramètre  _Users_ spécifie les utilisateurs qui reçoivent ce filtre appliqué à leurs recherches de contenu. Étant donné qu’il s’agit d’une propriété à valeurs multiples, la spécification d’un utilisateur ou d’un groupe d’utilisateurs à l’aide de ce paramètre remplace la liste d’utilisateurs existante. Consultez les exemples suivants pour la syntaxe permettant d’ajouter et de supprimer des utilisateurs sélectionnés. <br/><br/>Vous pouvez également utiliser le paramètre  _Users_ pour spécifier un groupe de rôles Security & Compliance Center. Cela vous permet de créer un groupe de rôles personnalisé, puis d’attribuer à ce groupe de rôles un filtre d’autorisations de recherche. Par exemple, supposons que vous disposez d’un groupe de rôles personnalisé pour les gestionnaires de découverte électronique de la filiale américaine d’une multinationale. Vous pouvez utiliser le paramètre  _Users_ pour spécifier ce groupe de rôles (à l’aide de la propriété Name du groupe de rôles), puis utiliser le paramètre  _Filter_ pour autoriser la recherche uniquement dans les boîtes aux lettres des États-Unis. <br/><br/>Vous ne pouvez pas spécifier de groupes de distribution avec ce paramètre. |
 
 ## <a name="examples-of-changing-search-permissions-filters"></a>Exemples de modification des filtres d’autorisations de recherche
