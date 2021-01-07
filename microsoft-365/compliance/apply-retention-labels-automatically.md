@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Créez des étiquettes de rétention et des stratégies d’étiquetage automatique afin de pouvoir appliquer les étiquettes de manière automatique pour conserver les éléments utiles et supprimer les éléments inutiles.
-ms.openlocfilehash: a79e7a96cc02957b0bac4dba31b24c5727f0483b
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: 2b06188a5990c7de81fca0afd21f05ef346807ba
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49751178"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49759964"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Application automatique d’une étiquette de rétention pour conserver ou supprimer du contenu
 
@@ -247,10 +247,10 @@ Lorsque vous choisissez l’option de classifieur entraînable, vous pouvez sél
 
 Pour appliquer automatiquement une étiquette à l’aide de cette option, les sites et boîtes aux lettres SharePoint doivent avoir au moins 10 Mo de données.
 
-Pour plus d’informations sur les classifieurs de formation, consultez [Découvrez les classifieurs de formation (préversion)](classifier-learn-about.md).
+Pour plus d’informations sur les classifieurs avec capacité de formation, consultez [Découvrez les classifieurs avec capacité de formation](classifier-learn-about.md).
 
 > [!TIP]
-> Si vous utilisez des classifieurs entraînables pour Exchange, voir le récent article [Comment recycler un classifieur dans l’Explorateur de contenu (préversion)](classifier-how-to-retrain-content-explorer.md).
+> Si vous utilisez des classifieurs avec capacité de formation pour Exchange, consultez [Comment recycler un classifieur dans l’explorateur de contenu](classifier-how-to-retrain-content-explorer.md).
 
 Lorsque vous utilisez des classificateurs pouvant apprendre pour appliquer automatiquement des étiquettes de rétention :
 
