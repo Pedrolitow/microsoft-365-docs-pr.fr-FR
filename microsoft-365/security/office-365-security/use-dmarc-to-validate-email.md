@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Découvrez comment configurer DMARC (Domain-based Message Authentication, Reporting, and Conformance) pour valider les messages envoyés à partir de votre organisation.
-ms.openlocfilehash: 9dd97b1fc60f0b6198bb6c55af291c7dd103ac5d
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: bcf1c0b3dc0a1a8dd8a679af815fbdc2173cabb7
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615335"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49759855"
 ---
 # <a name="use-dmarc-to-validate-email"></a>Utiliser DMARC pour valider les e-mails
 
@@ -192,15 +192,15 @@ Vous pouvez implémenter DMARC progressivement sans que cela n’ait de répercu
 
     L'étape finale consiste à mettre en œuvre une stratégie de rejet. Une stratégie de rejet est un enregistrement TXT DMARC dont la stratégie est définie de manière à effectuer un rejet (p=reject). Lorsque vous effectuez cette opération, vous demandez aux récepteurs DMARC ne pas accepter les messages qui échouent aux tests DMARC.
 
-4. Comment configurer DMARC pour le sous-domaine?
+4. Comment configurer DMARC pour le sous-domaine ?
 
-DMARC est exécuté en publiant une stratégie sous la forme d’un enregistrement TXT dans DNS et est hiérarchique (par exemple, une stratégie publiée pour contoso.com s’appliquera au sous-domaine.contonos.com, sauf si une stratégie différente est définie de manière explicite pour le sous-domaine). Cela est utile car les organisations peuvent spécifier un plus petit nombre d’enregistrements DMARC de haut niveau pour une couverture plus large. Veillez à configurer avec attention les enregistrements DMARC de sous-domaines explicites où vous ne voulez pas que les sous-domaines héritent de l’enregistrement DMARC du domaine de niveau supérieur.
+   DMARC est exécuté en publiant une stratégie sous la forme d’un enregistrement TXT dans DNS et est hiérarchique (par exemple, une stratégie publiée pour contoso.com s’appliquera au sous-domaine.contonos.com, sauf si une stratégie différente est définie de manière explicite pour le sous-domaine). Cela est utile car les organisations peuvent spécifier un plus petit nombre d’enregistrements DMARC de haut niveau pour une couverture plus large. Veillez à configurer avec attention les enregistrements DMARC de sous-domaines explicites où vous ne voulez pas que les sous-domaines héritent de l’enregistrement DMARC du domaine de niveau supérieur.
 
-Aussi pouvez-vous ajouter une stratégie de type générique pour DMARC lorsque les sous-domaines ne doivent pas envoyer de courrier électronique, en ajoutant la `sp=reject` valeur. Par exemple:
+   Aussi pouvez-vous ajouter une stratégie de type générique pour DMARC lorsque les sous-domaines ne doivent pas envoyer de courrier électronique, en ajoutant la `sp=reject` valeur. Par exemple:
 
-```console
-_dmarc.contoso.com. TXT "v=DMARC1; p=reject; sp=reject; ruf=mailto:authfail@contoso.com; rua=mailto:aggrep@contoso.com"
-```
+   ```text
+   _dmarc.contoso.com. TXT "v=DMARC1; p=reject; sp=reject; ruf=mailto:authfail@contoso.com; rua=mailto:aggrep@contoso.com"
+   ```
 
 ## <a name="how-microsoft-365-handles-outbound-email-that-fails-dmarc"></a>Gestion des messages électroniques sortants qui échouent aux vérifications de DMARC dans Microsoft 365
 

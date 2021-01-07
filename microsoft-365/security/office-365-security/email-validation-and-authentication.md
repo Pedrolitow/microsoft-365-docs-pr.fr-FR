@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: Les administrateurs peuvent découvrir comment EOP utilise l’authentification de messagerie électronique (SPF, DKIM et DMARC) pour empêcher l’usurpation d’identité, le hameçonnage et les courriers indésirables.
-ms.openlocfilehash: 7c196b68d88187da2890cc886f646c5416ef9a11
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 6a0bf6fd7958f44a9cfbe7ae0600aeb064170437
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49131072"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760517"
 ---
 # <a name="email-authentication-in-eop"></a>Authentification de messagerie électronique dans EOP
 
@@ -145,7 +145,7 @@ Vous pouvez utiliser cette méthode pour résoudre l’usurpation d’identité 
 
 - [Pensez à configurer des enregistrements DMARC](use-dmarc-to-validate-email.md) pour votre domaine afin de déterminer qui sont vos expéditeurs légitimes.
 
-Microsoft Corporation ne fournit pas de directives d’implémentation détaillées pour les enregistrements SPF, DKIM et DMARC. Cependant, de nombreuses informations sont disponibles en ligne. Il existe également des sociétés tierces spécialisées dans l’aide à la configuration d’enregistrements d’authentification de messagerie électronique.
+Microsoft Corporation ne fournit pas de directives d’implémentation détaillées pour les enregistrements SPF, DKIM et DMARC. Cependant, de nombreuses informations sont disponibles en ligne. Il existe également des sociétés tierces spécialisées dans l’aide à la configuration d’enregistrements d’authentification de courrier électronique.
 
 #### <a name="you-dont-know-all-sources-for-your-email"></a>Vous ne connaissez pas toutes les sources de votre courrier électronique
 

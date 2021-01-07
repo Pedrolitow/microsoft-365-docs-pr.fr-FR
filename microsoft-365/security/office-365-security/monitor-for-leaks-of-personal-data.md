@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Découvrez trois outils qui permettent de surveiller les fuites de données personnelles.
-ms.openlocfilehash: a212067d75ab3d9e195e3d869e0a6ae7d1ed4d01
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 2a00d639be3b43fb56e26dca2725f2c3dac54b39
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616379"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760541"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Surveillance des fuites de données personnelles
 
@@ -36,7 +36,7 @@ Il existe de nombreux outils qui peuvent être utilisés pour surveiller l’uti
 
 Dans cette illustration :
 
-- Commencez par les rapports sur la protection contre la perte de données Microsoft 365 pour surveiller les données personnelles dans SharePoint Online, OneDrive Entreprise et le courrier électronique en transit. Ils offrent le meilleur niveau de détail pour surveiller les données personnelles. Toutefois, ces rapports n’incluent pas tous les services dans Office 365.
+- Commencez par les rapports sur la protection contre la perte de données Microsoft 365 pour surveiller les données personnelles dans SharePoint Online, OneDrive Entreprise et le courrier électronique en transit. Ces rapports offrent le meilleur niveau de détail pour surveiller les données personnelles. Toutefois, ces rapports n’incluent pas tous les services dans Office 365.
 
 - Utilisez ensuite les stratégies d’alerte et le journal d’audit pour surveiller l’activité des services. Configurez la surveillance continue ou faites des recherches dans le journal d’audit pour identifier un incident. Le journal d’audit fonctionne sur tous les services (Sway, PowerBI, eDiscovery, Dynamics 365, Microsoft Flow, Microsoft Teams, l’activité d’administration, OneDrive Entreprise, SharePoint Online, le courrier électronique en transit et les boîtes aux lettres au repos). Les conversations Skype sont incluses dans les boîtes aux lettres au repos.
 
@@ -44,7 +44,7 @@ Dans cette illustration :
 
 ## <a name="data-loss-prevention-reports"></a>Rapports de protection contre la perte de données
 
-Après avoir créé des stratégies de protection contre la perte de données, vous voulez vérifier qu’elles fonctionnent comme prévu et vous aident à maintenir la conformité. Avec les rapports DLP d’Office 365, vous pouvez rapidement visualiser le nombre de correspondances de stratégie DLP, de remplacements et de faux positifs, savoir si ce nombre augmente ou diminue dans le temps, filtrer le rapport de différentes manières et afficher des détails supplémentaires en sélectionnant un point sur une ligne du graphique.
+Après avoir créé des stratégies de protection contre la perte de données, vous voulez vérifier qu’elles fonctionnent comme prévu et vous aident à maintenir la conformité. Avec les rapports DLP d’Office 365, vous pouvez rapidement visualiser le nombre de correspondances de stratégie DLP, de remplacements et de faux positifs, savoir si ce nombre augmente ou diminue dans le temps, filtrer le rapport de différentes manières et afficher plus de détails en sélectionnant un point sur une ligne du graphique.
 
 Vous pouvez utiliser les rapports DLP pour :
 
@@ -151,7 +151,7 @@ Alerte lorsqu’un fichier contenant un numéro de carte de crédit est partagé
 |Catégorie|DLP|
 |Paramètres de filtre|Niveau d’accès = Public (Internet), Public, Externe <p> Application = \<select apps\> (utiliser ce paramètre pour limiter la surveillance à des applications SaaS spécifiques)|
 |Appliquer à|Tous les fichiers, tous les propriétaires|
-|Inspection du contenu|Inclut les fichiers qui correspondent à une expression présente : Tous les pays: Finance: Numéro de carte de crédit <p> N’exige pas de contexte approprié : désactivé (ceci correspondra aux mots-clés et aux expressions régulières) <p> Inclut les fichiers avec au moins 1 correspondance <p> Annuler le masquage des 4 derniers caractères de la violation : activé|
+|Inspection du contenu|Inclut les fichiers qui correspondent à une expression présente : Tous les pays: Finance: Numéro de carte de crédit <p> N’exige pas de contexte approprié : désactivé (ce paramètre correspondra aux mots-clés et aux expressions régulières) <p> Inclut les fichiers avec au moins 1 correspondance <p> Annuler le masquage des 4 derniers caractères de la violation : activé|
 |Alertes|Crée une alerte pour chaque fichier correspondant : activé <p> Limite quotidienne d’alertes : 1 000 <p> Sélectionner une alerte en tant qu’e-mail : activé <p> À : infosec@contoso.com|
 |Gouvernance|Microsoft OneDrive Entreprise <p> Donner un caractère privé : sélectionner Supprimer les utilisateurs externes <p> Tous les autres paramètres : désactivé <p> Microsoft SharePoint Online <p> Donner un caractère privé : sélectionner Supprimer les utilisateurs externes <p> Tous les autres paramètres : désactivé|
 |
