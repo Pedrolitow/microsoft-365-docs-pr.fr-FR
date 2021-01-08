@@ -1,9 +1,9 @@
 ---
-title: Calculatrice d’espace d’adressage pour les sous-réseaux de la passerelle Azure
+title: Calculateur d’espace d’adressan pour les sous-réseaux de passerelle Azure
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/01/2020
+ms.date: 01/07/2021
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
@@ -15,24 +15,24 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 - seo-marvel-apr2020
-description: 'Résumé : calculez l’espace d’adressage d’un sous-réseau de passerelle Azure avec C3, Python ou PowerShell.'
-ms.openlocfilehash: 5e119f1ddefb5877886042b835ffdd093a34f0f8
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+description: 'Résumé : Calculez l’espace d’adressare d’un sous-réseau de passerelle Azure avec C3, Python ou PowerShell.'
+ms.openlocfilehash: d92bea5c36fde6277154d19365ed0bdaa5df4254
+ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332788"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49780567"
 ---
-# <a name="address-space-calculator-for-azure-gateway-subnets"></a>Calculatrice d’espace d’adressage pour les sous-réseaux de la passerelle Azure
+# <a name="address-space-calculator-for-azure-gateway-subnets"></a>Calculateur d’espace d’adressan pour les sous-réseaux de passerelle Azure
 
-Un réseau virtuel (VNet) dans les services d’infrastructure Azure qui est connecté à d’autres réseaux doit disposer d’un sous-réseau de passerelle. Les meilleures pratiques pour la définition de ce sous-réseau sont les suivantes :
+Un réseau virtuel (VNet) dans les services d’infrastructure Azure connectés à d’autres réseaux doit avoir un sous-réseau de passerelle. Les meilleures pratiques pour définir le sous-réseau de passerelle sont les :
 
-- La longueur du préfixe du sous-réseau de passerelle peut avoir une longueur de préfixe de 29 (par exemple, 10.119.255.248/29), mais la recommandation actuelle consiste à utiliser une longueur de préfixe de 27 (par exemple, 10.119.255.224/27).
-- Lors de la définition de l’espace d’adressage du sous-réseau de passerelle, utilisez la toute dernière partie de l’espace d’adressage de réseau virtuel.
+- La longueur du préfixe du sous-réseau de passerelle peut avoir une longueur maximale de préfixe de 29 (par exemple, 10.119.255.248/29), mais il est recommandé d’utiliser une longueur de préfixe de 27 (par exemple, 10.119.255.224/27).
+- Lors de la définition de l’espace d’adressare du sous-réseau de passerelle, utilisez la dernière partie de l’espace d’adressare du réseau VNet.
 
-Pour la deuxième recommandation, vous pouvez déterminer l’espace d’adressage du sous-réseau de passerelle en définissant le bit utilisé pour le sous-réseau de passerelle sur 0 et les bits de variable restants dans l’espace d’adressage de réseau virtuel sur 1. Pour calculer rapidement l’espace d’adressage de sous-réseau de passerelle sans avoir à convertir au format binaire et revenir au format décimal, vous pouvez utiliser une application de console écrite en C# ou python ou avec un bloc de commandes PowerShell.
+Pour la deuxième recommandation, vous pouvez déterminer l’espace d’adressare du sous-réseau de passerelle en fixant les bits utilisés pour le sous-réseau de passerelle sur 0 et les autres bits de l’espace d’adressare du réseau VNet sur 1. Pour calculer rapidement l’espace d’adressare du sous-réseau de passerelle sans avoir à le convertir en binaire et à revenir au nombre décimal, vous pouvez utiliser une application console écrite en C# ou Python ou avec un bloc de commandes PowerShell.
 
-Cet article contient des blocs de code C#, Python et PowerShell qui recueillent cinq entiers (les valeurs de w.x.y. z/n pour le préfixe d’adresse de réseau virtuel et la longueur de préfixe de sous-réseau de passerelle) et calcule l’espace d’adressage de sous-réseau de passerelle.
+Cet article contient des blocs de code C#, Python et PowerShell qui calculent l’espace d’adressare du sous-réseau de passerelle en fonction des valeurs de w.x.y.z/n pour le préfixe d’adresse du réseau VNet et la longueur du préfixe de sous-réseau de passerelle.
 
 ## <a name="c-code-block"></a>Bloc de code C#
 
@@ -62,8 +62,8 @@ namespace ConsoleApplication1
  
             // Get the five values needed from the keyboard. 
             Console.WriteLine("**************************************************************************"); 
-            Console.WriteLine("*** Gateway subnet address space calculator for Azure virtual networks ***");             
-            Console.WriteLine("**************************************************************************");  
+            Console.WriteLine("**_ Gateway subnet address space calculator for Azure virtual networks _*_");             
+            Console.WriteLine("_*************************************************************************");  
             Console.WriteLine(); 
             Console.WriteLine("Please supply your virtual network address space in the form of w.x.y.z/n."); 
             Console.WriteLine(); 
@@ -108,7 +108,7 @@ namespace ConsoleApplication1
 } 
 ```
 
-## <a name="python-code-block"></a>Bloc de code python
+## <a name="python-code-block"></a>Bloc de code Python
 
 Utilisez ce bloc de code pour créer une application console dans Python.
 
@@ -116,8 +116,8 @@ Utilisez ce bloc de code pour créer une application console dans Python.
 import math 
 # Collect the values of w.x.y.z/n for your VNet address space and g, the prefix length of your gateway subnet 
 print("**************************************************************************")  
-print("*** Gateway subnet address space calculator for Azure virtual networks ***")  
-print("**************************************************************************\n")   
+print("**_ Gateway subnet address space calculator for Azure virtual networks _*_")  
+print("_*************************************************************************\n")   
 print("Please supply your virtual network address space in the form of w.x.y.z/n.");  
 w=int(input("w = ")) 
 x=int(input("x = ")) 
@@ -149,7 +149,7 @@ print(gwAddrPref)
 
 ## <a name="powershell-command-block"></a>Bloc de commandes PowerShell
 
-Renseignez les valeurs et exécutez le bloc de commandes résultant dans une fenêtre PowerShell ou dans PowerShell ISE.
+Remplissez les valeurs et exécutez le bloc de commandes résultant dans une fenêtre PowerShell ou dans l’environnement de script intégré à PowerShell (ISE).
 
 ```powershell
 # Specify the values of w.x.y.z/n for your VNet address space and g, the prefix length of your gateway subnet: 
@@ -180,4 +180,3 @@ Write-Host "Your gateway address prefix is: " $dx
 ## <a name="related-topics"></a>Voir aussi
 
 [Gestion de Microsoft 365 à l’aide de PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
-

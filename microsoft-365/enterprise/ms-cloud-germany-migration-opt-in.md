@@ -19,69 +19,70 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Résumé : '
-ms.openlocfilehash: 35d11825148af883299aed1bcb2346d26d52408c
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: bcec542ad285dcabaf71af1ea8efc28f3f7d6b5a
+ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688676"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49780319"
 ---
 # <a name="how-to-opt-in-for-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Comment opter pour la migration de Microsoft Cloud Allemagne (Microsoft Cloud Deutschland) vers les services Office 365 dans les nouvelles régions de centres de données allemandes
 
 >[!Note]
->Cet article s’applique uniquement aux clients Microsoft Cloud Germany (Microsoft Cloud Deutschland).
+>Cet article s’applique uniquement aux clients Microsoft Cloud Allemagne (Microsoft Cloud Deutschland).
 >
 
 ## <a name="how-to-request-migration"></a>Comment demander une migration
 
-Les clients éligibles avec service mis en service dans Microsoft Cloud Germany (Microsoft Cloud Deutschland) verront une page dans le centre d’administration 365 de Microsoft qui permettra à un administrateur client du client d’opter pour la migration.
+Si vous êtes un client éligible avec votre service provisioné dans Microsoft Cloud Germany (Microsoft Cloud Deutschland) et que vous vous êtes inscrit en tant qu’administrateur client (global), une page dans le Centre d’administration Microsoft 365 vous permet d’opter pour la migration.
 
-Pour accéder à la page dans le Centre d'administration Microsoft 365, dans le volet de navigation de gauche, développez **Paramètres**, puis cliquez sur **Profil de l'organisation**.
+Pour accéder à la page, développez **Paramètres** dans le volet de navigation sur la gauche, puis cliquez sur **Profil de l’organisation.**
 
 Sur la page **Profil de l’organisation**, faites défiler vers le bas jusqu’à **Migrer de Microsoft Cloud Allemagne (Microsoft Cloud Deutschland) vers les services Office 365 dans la nouvelle section de centres de données allemands**.
 
-Si votre organisation souhaite migrer votre service de Microsoft Cloud Allemagne (Microsoft Cloud Deutschland) vers les services Office 365 dans les nouvelles régions de centres de données allemands, cliquez sur **Participation**.
+Si vous souhaitez migrer votre service de Microsoft Cloud Germany (Microsoft Cloud Deutschland) vers les services Office 365 dans les nouvelles régions de centres de données allemandes, cliquez sur **Opt-in**.
  
 ![Présentation de la participation](../media/ms-cloud-germany-migration-opt-in/tenant-migration.png)
 
-Une nouvelle section s’affiche sur le côté droit de l’écran pour accepter votre confirmation. Sélectionnez le bouton bascule sur **Oui**, puis cliquez sur **Enregistrer**.
+Une nouvelle section s’affiche sur le côté droit de votre écran pour accepter votre confirmation. Sélectionnez **Oui,** puis cliquez sur **Enregistrer.**
  
 ![Acceptation d’adhésion](../media/ms-cloud-germany-migration-opt-in/tenant-migration-new-regions.png)
 
-Une fois qu’un administrateur a choisi de participer pour votre client, tous les administrateurs verront la confirmation dans **Migrer de Microsoft Cloud Allemagne (Microsoft Cloud Deutschland) vers les services Office 365 dans la nouvelle section de centres de données allemands**, y compris la date d’adhésion. Les administrateurs reçoivent également une confirmation dans le Centre de messages du centre d’administration Microsoft 365. 
+Une fois que vous avez choisi de vous rendre au nom de votre client, tous les administrateurs voient la confirmation dans Migrer de Microsoft Cloud Germany (Microsoft Cloud Deutschland) vers les **services Office 365** dans la nouvelle section régions de centre de données allemandes, y compris la date d’opt-in. Les administrateurs recevront également une confirmation dans le Centre de messages du Centre d’administration Microsoft 365. 
  
 ![Confirmation d’adhésion](../media/ms-cloud-germany-migration-opt-in/tenant-migration2.png)
 
-## <a name="what-happens-after-opting-in-for-migration"></a>Que se passe-t-il après avoir opté pour la migration ?
+## <a name="what-happens-after-opting-in-for-migration"></a>Que se passe-t-il après la migration ?
 
-Les migrations débuteront en début de 2021 pour les organisations qui s’abonnent à l’approche Microsoft et seront terminées avant la date de retraite de Microsoft Cloud Germany (Microsoft Cloud Deutschland) le 29 octobre 2021.  Suite à la migration, les données client principales et les abonnements sont transférés vers les nouvelles régions allemandes.  Microsoft enverra les mises à jour tout au long du processus de migration dans le Centre de messages.  Consultez les articles ci-dessous pour en savoir plus.
+Les migrations commenceront au début de 2021 pour les organisations qui optent pour l’approche pilotée par Microsoft et seront terminées avant la date de retrait de Microsoft Cloud Allemagne (Microsoft Cloud Deutschland) le 29 octobre 2021.  Suite à la migration, les données client principales et les abonnements sont transférés vers les nouvelles régions allemandes.  Microsoft publiera des mises à jour tout au long du processus de migration dans le Centre de messages. Consultez [ces articles](#more-information) pour en savoir plus.
 
-## <a name="what-happens-if-the-customer-tenant-administrator-does-not-opt-in-for-migration-in-admin-center"></a>Que se passe-t-il si l’administrateur client de client n’opte pas pour la migration dans le centre d’administration ?
+## <a name="what-happens-if-you-do-not-opt-in-for-migration-in-admin-center"></a>Que se passe-t-il si vous n’optez pas pour la migration dans le Centre d’administration ?
 
-Les conditions des services en ligne ont été modifiées de manière à inclure des termes permettant à Microsoft de migrer vos données et abonnements Microsoft 365, Dynamics 365 et Power BI à partir de Microsoft Cloud Deutschland vers un nouveau centre de données. Ces termes prennent effet sur un abonnement Microsoft Cloud Germany (Microsoft Cloud Deutschland) renouvelé depuis le 1er mai 2020.  L’administrateur client client reçoit une notification dans le centre de messages et de messagerie Conseil pour signaler que l’option de migration est automatiquement exécutée pour une migration assistée par Microsoft. Cette notification sera envoyée au moins 30 jours avant l’inscription automatique.  Après la migration, toutes les communications et les mises à jour d’État sont envoyées aux administrateurs clients client dans le centre de messages.
+Les conditions des services en ligne ont été modifiées pour inclure les termes qui permettront à Microsoft de migrer vos données et abonnements Microsoft 365, Dynamics 365 et Power BI de Microsoft Cloud Deutschland vers un nouveau centre de données. Ces conditions prennent effet sur tout abonnement Microsoft Cloud Allemagne (Microsoft Cloud Deutschland) renouvelé depuis le 1er mai 2020. 
 
-Les administrateurs clients client et partenaire sont encouragés à opter pour la migration dans le centre d’administration afin que le processus de migration puisse commencer dès que possible.
+L’administrateur client du client reçoit une notification par courrier électronique et le Centre de messages vous informant que l’opt-in pour la migration aura lieu automatiquement pour une migration assisté par Microsoft. Cet avis sera envoyé au moins 30 jours avant l’autorisation automatique. Après l’option de migration, toutes les communications et mises à jour d’état sont envoyées aux administrateurs du client client dans le centre de messages.
 
+Les administrateurs client et client partenaire sont encouragés à opter pour la migration dans le Centre d’administration Microsoft 365 afin que le processus de migration puisse commencer dès que possible.
 
 ## <a name="next-step"></a>Étape suivante
 
-[Comprendre l’expérience client lors de la migration](ms-cloud-germany-transition-experience.md)
+[Comprendre l’expérience client pendant la migration](ms-cloud-germany-transition-experience.md)
 
 ## <a name="more-information"></a>Informations supplémentaires
 
-Mise en route :
+Mise en place :
 
-- [Migration de Microsoft Cloud Deutschland vers Office 365 services dans les nouvelles régions de centre de connaissances allemand](ms-cloud-germany-transition.md)
+- [Migration de Microsoft Cloud Deutschland vers les services Office 365 dans les nouvelles régions de centres de données allemandes](ms-cloud-germany-transition.md)
 - [Aide à la migration de Microsoft Cloud Deutschland : ](https://aka.ms/germanymigrateassist)
-- [Expérience client lors de la migration](ms-cloud-germany-transition-experience.md)
+- [Expérience client pendant la migration](ms-cloud-germany-transition-experience.md)
 
-Navigation par le biais de la transition :
+Transition :
 
 - [Actions et impacts des phases de migration](ms-cloud-germany-transition-phases.md)
 - [Pré-travail supplémentaire](ms-cloud-germany-transition-add-pre-work.md)
-- Informations supplémentaires pour [Azure ad](ms-cloud-germany-transition-azure-ad.md), [appareils](ms-cloud-germany-transition-add-devices.md), [expériences](ms-cloud-germany-transition-add-experience.md)et [AD FS](ms-cloud-germany-transition-add-adfs.md).
+- Informations supplémentaires pour [Azure AD,](ms-cloud-germany-transition-azure-ad.md) [les appareils,](ms-cloud-germany-transition-add-devices.md) [les expériences](ms-cloud-germany-transition-add-experience.md)et [AD FS](ms-cloud-germany-transition-add-adfs.md).
 
-Applications Cloud :
+Applications cloud :
 
 - [Informations sur le programme de migration Dynamics 365](https://aka.ms/d365ceoptin)
 - [Informations sur le programme de migration Power BI](https://aka.ms/pbioptin)

@@ -1,5 +1,5 @@
 ---
-title: Kit de laboratoire de déploiement de Windows et d’Office
+title: Kit de laboratoire de déploiement Windows et Office
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -15,28 +15,28 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: En savoir plus sur le point et où pour accéder au Kit laboratoire de déploiement Windows et Office.
-ms.openlocfilehash: 4ee3663e326dc5a7fbefce06a696cca6a4b060a9
-ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
+ms.openlocfilehash: f7f6dcaa9c1e007f6b83f897539bdabe9faa0b96
+ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49527454"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49780555"
 ---
-# <a name="windows-and-office-deployment-lab-kit"></a>Kit de laboratoire de déploiement de Windows et d’Office
+# <a name="windows-and-office-deployment-lab-kit"></a>Kit de laboratoire de déploiement Windows et Office
 
-Ces ateliers sont conçus pour vous aider à planifier, tester et valider votre déploiement et la gestion des ordinateurs exécutant Windows 10 Enterprise et Microsoft 365 apps pour les entreprises. Le centre d’aide à la recherche de Microsoft Endpoint Configuration Manager, de l’analyse de bureau, de l’outil de personnalisation Office, de OneDrive, de Windows AutoPilot et bien plus encore.
+Le kit de laboratoire de déploiement Windows et Office est conçu pour vous aider à planifier, tester et valider votre déploiement et votre gestion des bureaux exécutant Windows 10 Entreprise et Microsoft 365 Apps pour entreprise. Les ateliers du kit couvrent l’utilisation de Microsoft Endpoint Configuration Manager, Desktop Analytics, l’outil de personnalisation Office, OneDrive, Windows Autopilot, etc.
 
-Ce kit est fortement recommandé pour les organisations qui préparent les mises à niveau Windows 8, et s’applique si vous utilisez actuellement Windows 10, les applications Microsoft 365 pour entreprise (anciennement Office 365 ProPlus) ou Office 2019. De plus, en tant qu'environnement isolé, le laboratoire est idéal pour explorer les mises à jour des outils de déploiement et tester l'automatisation liée au déploiement.
+Ce kit est vivement recommandé pour les organisations qui se préparent aux mises à niveau de Windows 8.1 vers Windows 10. Elle s’applique également si vous utilisez actuellement Windows 10, Microsoft 365 Apps pour entreprise (anciennement Office 365 ProPlus) ou Office 2019. En tant qu’environnement isolé, l’atelier qui en résulte est idéal pour explorer les mises à jour des outils de déploiement et tester l’automatisation liée au déploiement.
 
 [Télécharger le Kit laboratoire de déploiement Windows et Office](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
 ## <a name="a-complete-lab-environment"></a>Un environnement de laboratoire complet
 
-Le laboratoire offre un environnement de laboratoire virtuel automatiquement configuré, constitué de clients de bureau associés au domaine, d’un contrôleur de domaine, d’une passerelle Internet et d’une instance Configuration Manager entièrement configurée. L’atelier contient les versions d’évaluation les plus récentes des produits suivants :
+Le kit vous fournit un environnement de laboratoire virtuel configuré automatiquement, y compris les clients de bureau joints au domaine, un contrôleur de domaine, une passerelle Internet et une instance configuration manager entièrement configurée. Le kit contient les dernières versions d’évaluation des produits suivants :
 
-  - NOUVEAUTÉ ! Windows 10 entreprise, version 20H2
+  - NOUVEAUTÉ ! Windows 10 Entreprise, version 20H2
   - Windows 7 Entreprise
-  - Gestionnaire de configuration de point de terminaison Microsoft, version 2010 *
+  - Microsoft Endpoint Configuration Manager, version 2010*
   - Kit de déploiement et d’évaluation Windows pour Windows 10
   - Microsoft Deployment Toolkit
   - Microsoft Application Virtualization (App-V)
@@ -44,10 +44,10 @@ Le laboratoire offre un environnement de laboratoire virtuel automatiquement con
   - Windows Server 
   - Microsoft SQL Server 
 
-ET le laboratoire est conçu pour être connecté aux versions d’évaluation pour : 
+L’atelier qui en résulte est conçu pour être connecté aux essais pour : 
 
   - Microsoft 365 E5
-  - Office 365 entreprise E5 avec Enterprise Mobility + Security (EMS)
+  - Office 365 E5 avec Enterprise Mobility + Security (EMS)
 
 ## <a name="step-by-step-labs"></a>Laboratoires détaillés
 
@@ -55,46 +55,51 @@ Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de 
 
 ### <a name="plan-and-prepare-infrastructure"></a>Planifier et préparer l’infrastructure 
 - Analyses du bureau 
-- Passerelle de gestion du Cloud & point de distribution dans le Cloud 
-- Liaison de client, co-gestion et basculement de charges de travail  
+- Cloud Management Gateway & Cloud Distribution Point 
+- Attachement des locataires, cogestion et changement de charges de travail 
 - Accès à distance (VPN) 
 
-### <a name="prepare-configuration"></a>Préparation de la configuration   
-- Optimiser la remise de mise à jour de Windows 10   
-- Maintenance de Windows 10 à l’aide de la stratégie de groupe
+### <a name="prepare-configuration"></a>Préparer la configuration   
+
+- Optimiser la distribution des mises à jour Windows 10   
+- Maintenance de Windows 10 à l’aide d’une stratégie de groupe
 - Maintenance de Windows 10 à l’aide de Microsoft Intune   
-- Maintenance de Windows 10 avec le gestionnaire de configuration   
-- Maintenance des applications Microsoft 365 pour Enterprise à l’aide du gestionnaire de configuration   
-- Maintenance des applications Microsoft 365 pour Enterprise à l’aide d’Intune  
+- Maintenance de Windows 10 avec Configuration Manager   
+- Maintenance des applications Microsoft 365 pour les entreprises à l’aide de Configuration Manager   
+- Maintenance des applications Microsoft 365 pour les entreprises à l’aide d’Intune  
 - Sécurité et conformité   
 
 ### <a name="prepare-applications"></a>Préparer les applications    
-- Boîte à outils de préparation pour Office  
-- Empaquetage et conversion MSIX d’applications Win32   
+
+- Préparation Shared Computer Toolkit pour Office  
+- Empaquetage MSIX et conversion d’applications Win32   
 
 ### <a name="deploy-windows-10"></a>Déployer Windows 10   
-- Séquences de tâches de déploiement du système d’exploitation dans le gestionnaire de configuration
-- Séquences de tâches de déploiement du système d’exploitation dans MDT   
-- Windows Autopilot
+
+- Séquences de tâches de déploiement du système d’exploitation dans Configuration Manager
+- Séquences de tâches de déploiement du système d’exploitation dans microsoft Deployment Shared Computer Toolkit (MDT)
+- Windows Autopilot
 - Déployer et gérer le nouveau Microsoft Edge  
 
 ### <a name="deploy-microsoft-365-apps-for-enterprise"></a>Déployer les Applications Microsoft 365 pour les grandes entreprises    
-- Déploiement géré dans le Cloud  
+
+- Déploiement géré dans le cloud  
 - Déploiement géré localement    
-- Applications Microsoft 365 pour le déploiement d’entreprise sur des appareils non liés à AD 
-- Déploiement géré d’entreprise à l’aide du gestionnaire de configuration
-- Déploiement géré d’entreprise à l’aide de Microsoft Intune  
-- Gestion et déploiement métier avec Microsoft Intune
-- Déployer Microsoft teams
+- Déploiement des applications Microsoft 365 pour entreprise sur des appareils non joints à AD 
+- Déploiement géré dans l’entreprise à l’aide de Configuration Manager
+- Déploiement géré par l’entreprise à l’aide de Microsoft Intune  
+- Déploiement et gestion des objets LOB avec Microsoft Intune
+- Déployer Microsoft Teams
 
 ### <a name="deploy-windows-virtual-desktop"></a>Déployer Windows Virtual Desktop  
+
 - Préparer, déployer, optimiser
  
-## <a name="download-the-windows-and-office-deployment-lab-kit"></a>Télécharger le Kit laboratoire de déploiement Windows et Office
+## <a name="where-to-find-the-windows-and-office-deployment-lab-kit"></a>Où trouver le Kit de laboratoire de déploiement Windows et Office
 
 [Télécharger le Kit laboratoire de déploiement Windows et Office](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
-* La version de référence 2002 installée peut être mise à jour vers la version 2010 à l’aide de la mise à jour de la console. Utilisez une large bande passante pour télécharger ce contenu afin d’améliorer votre expérience de téléchargement et d’autoriser 30-45 minutes pour la mise en service automatique. L’environnement de laboratoire nécessite un minimum de 16 Go de mémoire disponible et 150 Go d’espace disque disponible. Pour des performances optimales, il est recommandé de disposer de 32 Go de mémoire disponible et de 300 Go d’espace libre. L’atelier expire le 7 février 2021. Une nouvelle version sera publiée avant l’expiration.
+* La version de référence 2002 installée peut être mise à jour vers la version 2010 à l’aide de la mise à jour dans la console. Utilisez une connexion Internet à large bande passante pour télécharger ce contenu et autorisez 30 à 45 minutes pour l’approvisionnement automatique. L’environnement de laboratoire nécessite au moins 16 Go de mémoire disponible et 150 Go d’espace disque libre. Pour des performances optimales, 32 Go de mémoire disponible et 300 Go d’espace libre sont recommandés. Le kit expire le 7 février 2021. Une nouvelle version sera publiée avant expiration.
 
 ## <a name="additional-guidance"></a>Conseils supplémentaires
 
@@ -102,20 +107,20 @@ Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de 
 
   - [Déploiement du système d’exploitation Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/osd/understand/introduction-to-operating-system-deployment)
 
-  - [<span class="underline">Plan de déploiement de Windows 10</span>](https://docs.microsoft.com/windows/deployment/planning/index)
+  - [Plan de déploiement de Windows 10](https://docs.microsoft.com/windows/deployment/planning/index)
 
-  - [<span class="underline">Guide de déploiement des applications Microsoft 365</span>](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
+  - [Guide de déploiement des Applications Microsoft 365](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
 
-  - [<span class="underline">Mise en route d’Intune</span>](https://docs.microsoft.com/intune/get-started-evaluation)
+  - [Mise en route d’Intune](https://docs.microsoft.com/intune/get-started-evaluation)
 
 ## <a name="related-resources"></a>Ressources connexes
 
-  - [<span class="underline">Présentation de Microsoft 365</span>](https://www.microsoft.com/microsoft-365/default.aspx)
+  - [Présentation de Microsoft 365](https://www.microsoft.com/microsoft-365/default.aspx)
 
-  - [<span class="underline">Office 365 pour les entreprises</span>](https://products.office.com/business/office)
+  - [Office 365 pour les entreprises](https://products.office.com/business/office)
 
-  - [<span class="underline">Présentation de la suite Enterprise Mobility + Security</span>](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
+  - [Présentation de la suite Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
 
-  - [<span class="underline">Windows 10 Entreprise</span>](https://www.microsoft.com/WindowsForBusiness/windows-for-enterprise)
+  - [Windows 10 Entreprise](https://www.microsoft.com/WindowsForBusiness/windows-for-enterprise)
 
-  - [<span class="underline">Windows 10 pour les petites et moyennes entreprises</span>](https://www.microsoft.com/WindowsForBusiness/windows-for-small-business)
+  - [Windows 10 pour les petites et moyennes entreprises](https://www.microsoft.com/WindowsForBusiness/windows-for-small-business)
