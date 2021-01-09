@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En savoir plus sur les stratégies de rétention et les étiquettes de rétention, qui permettent de conserver les éléments dont vous avez besoin et de supprimer ceux qui ne vous servent pas.
-ms.openlocfilehash: 8d50e03827026100689d9b380570fa59c93e6d08
-ms.sourcegitcommit: 5756896ad87e28fac20f7981eaaeacfb0c098254
+ms.openlocfilehash: 307687a277ade03f3ba40852eff15378928465e6
+ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "49730175"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49787989"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>En savoir plus sur les stratégies et les étiquettes de rétention
 
@@ -166,19 +166,15 @@ Pour plus d’informations, consultez [Utilisation d’une étiquette de rétent
 
 #### <a name="retention-labels-and-policies-that-apply-them"></a>Étiquettes de rétention et stratégies qui les appliquent
 
-Les étiquettes de rétention sont des blocs de construction indépendants et réutilisables. L’objectif principal d’une stratégie de rétention d’étiquette est de regrouper un ensemble d’étiquettes de rétention et de spécifier les emplacements où vous souhaitez voir apparaître ces étiquettes. Les administrateurs et les utilisateurs peuvent ensuite appliquer ces étiquettes au contenu de ces emplacements.
-  
-![Diagramme des étiquettes, des stratégies d’étiquette et des emplacements](../media/eee42516-adf0-4664-b5ab-76727a9a3511.png)
-  
-Lorsque vous publiez des étiquettes de rétention, celles-ci sont incluses dans une stratégie d’étiquette de rétention qui les rend disponibles pour les administrateurs et les utilisateurs à sélectionner :
+Lorsque vous publiez des étiquettes de rétention, celles-ci sont incluses dans une **stratégie d’étiquette de rétention** qui les rend disponibles à l’application à du contenu par les administrateurs et les utilisateurs. Comme le montre ce diagramme :
 
-- Une étiquette de conservation peut être incluse dans de nombreuses stratégies d’étiquette de rétention.
+1. Une étiquette de conservation peut être incluse dans de multiples stratégies d’étiquette de rétention.
 
-- Les stratégies d’étiquette de rétention définissent les emplacements où publier les étiquettes de rétention.
+2. Les stratégies d’étiquette de rétention définissent les emplacements où publier les étiquettes de rétention. Le même emplacement peut être inclus dans de multiples stratégies d’étiquette de rétention.
 
-- Un seul emplacement peut être inclus dans de nombreuses stratégies d’étiquette de rétention.
+![Comment les étiquettes de rétention peuvent être ajoutées à des stratégies d’étiquettes spécifiant des emplacements](../media/retention-labels-and-policies.png)
 
-Outre les stratégies d’étiquette de rétention, vous pouvez également créer une ou plusieurs stratégies à application automatique, chacune avec une seule étiquette de rétention. Avec cette stratégie, une étiquette de rétention est appliquée automatiquement lorsque les conditions que vous spécifiez dans la stratégie sont réunies.
+Vous pouvez également créer une ou plusieurs **stratégies à application automatique**, chacune avec une seule étiquette de rétention. Avec cette stratégie, une étiquette de rétention est appliquée automatiquement lorsque les conditions que vous spécifiez dans la stratégie sont réunies.
 
 #### <a name="retention-label-policies-and-locations"></a>Stratégies d’étiquette de rétention et emplacements
 
@@ -190,7 +186,7 @@ Différents types d’étiquettes de rétention peuvent être publiés dans diff
 |Appliquée automatiquement en fonction des types d’informations sensibles ou des classifieurs entraînables  <br/> |Exchange (toutes les boîtes aux lettres uniquement), SharePoint, OneDrive  <br/> |
 |Appliquée automatiquement en fonction d’une requête  <br/> |Exchange, SharePoint, OneDrive et Groupes Microsoft 365  <br/> |
    
-Dans Exchange, les étiquettes de rétention à application automatique sont appliquées uniquement aux nouveaux messages envoyés (données en transit) et pas à tous les éléments présents dans la boîte aux lettres (données au repos). Par ailleurs, les étiquettes de rétention à application automatique pour les types d’informations sensibles et les classifieurs entraînables s’appliquent à toutes les boîtes aux lettres. Vous ne pouvez pas sélectionner de boîtes aux lettres spécifiques.
+Dans Exchange, les étiquettes de rétention que vous appliquez automatiquement sont le sont uniquement aux nouveaux messages envoyés (données en transit) et pas à tous les éléments présents dans la boîte aux lettres (données au repos). Par ailleurs, les étiquettes de rétention à application automatique pour les types d’informations sensibles et les classifieurs entraînables s’appliquent à toutes les boîtes aux lettres. Vous ne pouvez pas sélectionner de boîtes aux lettres spécifiques.
   
 Les dossiers publics Exchange, les messages Skype, Teams et Yammer ne prennent pas en charge les étiquettes de rétention. Pour conserver et supprimer du contenu stocké sur ces emplacements, utilisez plutôt les stratégies de rétention.
 
@@ -287,7 +283,7 @@ Utilisez ce flux pour comprendre les résultats de la rétention et de la suppre
 > [!IMPORTANT]
 > Si vous utilisez des étiquettes de rétention : avant d’utiliser ce flux pour déterminer le résultat de plusieurs paramètres de rétention sur le même élément, assurez-vous de [ l’étiquette de rétention qui est appliquée](#only-one-retention-label-at-a-time).
 
-![Diagramme des principes de rétention](../media/1693d6ec-b340-4805-9da3-89aa41bc6afb.png)
+![Diagramme des principes de rétention](../media/principles-of-retention.png)
   
 Explication pour les quatre niveaux :
   

@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: La gestion des enregistrements dans Microsoft 365 vous permet d’appliquer des planifications de rétention dans un plan de gestion de fichiers afin de gérer la rétention, la déclaration d’enregistrements et la destruction de ceux-ci.
-ms.openlocfilehash: 883fd65e3fba716018a1ed35cc457c2eb8f06c52
-ms.sourcegitcommit: 5756896ad87e28fac20f7981eaaeacfb0c098254
+ms.openlocfilehash: 0057be98c79ec07018d86f3130d7e03d68c74446
+ms.sourcegitcommit: 7d4aa58ae9fc893825b6e648fa3f072c3ac59628
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "49730165"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "49790200"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>Découvrez la gestion des enregistrements dans Microsoft 365
 
@@ -103,11 +103,13 @@ Message qu’un utilisateur voit s’il essaie de supprimer un document étiquet
 >[!IMPORTANT] 
 > La principale différence pour un enregistrement réglementaire est qu’une fois qu’il est appliqué au contenu, personne, pas même un administrateur général, peut supprimer l’étiquette. 
 >
-> De plus, les étiquettes de rétention configurées pour les enregistrements réglementaires ont les restrictions d’administrateur suivantes:
+> Les étiquettes de rétention configurées pour les enregistrements réglementaires ont également les restrictions d’administrateur suivantes :
 > - La période de rétention ne peut pas être plus courte une fois l’étiquette enregistrée, mais seulement prolongée.
 > - Ces étiquettes ne sont pas prises en charge par les stratégies d’attribution automatique d’étiquette, et doivent être appliquées à l’aide des [stratégies d’étiquette de rétention](create-apply-retention-labels.md). 
+>
+> De plus, une étiquette réglementaire ne peut être appliquée à un document extrait dans SharePoint.
 > 
-> En raison de ces actions irréversibles, assurez-vous que vous devez vraiment utiliser les enregistrements réglementaires avant de sélectionner cette option pour les étiquettes de rétention. Pour empêcher la configuration accidentelle, cette option n’est pas disponible par défaut, mais doit d’abord être activée à l’aide de PowerShell. Des instructions sont incluses dans [Déclarer les enregistrements à l’aide d’étiquettes de rétention](declare-records.md).
+> En raison de ces restrictions et de l’irréversibilité de ces actions, assurez-vous que vous devez vraiment utiliser les enregistrements réglementaires avant de sélectionner cette option pour les étiquettes de rétention. Pour empêcher la configuration accidentelle, cette option n’est pas disponible par défaut, mais doit d’abord être activée à l’aide de PowerShell. Des instructions sont incluses dans [Déclarer les enregistrements à l’aide d’étiquettes de rétention](declare-records.md).
 
 ## <a name="configuration-guidance"></a>Instructions de configuration
 

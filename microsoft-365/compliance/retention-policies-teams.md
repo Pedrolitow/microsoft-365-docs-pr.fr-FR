@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir les stratégies de rétention qui s’appliquent à Microsoft Teams.
-ms.openlocfilehash: 12338c1679a8e0c5921ec3f4f05df85989413ccd
-ms.sourcegitcommit: 4482c174e0e68e0fbbc7ad9ef6b0e78dc34ac85a
+ms.openlocfilehash: 8cd67c9c188c97256ddddcdd57479f519bd33929
+ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 01/08/2021
-ms.locfileid: "49784309"
+ms.locfileid: "49787961"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>En savoir plus sur la rétention dans Microsoft Teams
 
@@ -46,9 +46,9 @@ Les messages électroniques et les fichiers que vous utilisez avec Teams ne sont
 
 ## <a name="how-retention-works-with-microsoft-teams"></a>Fonctionnement de la rétention avec Microsoft Teams
 
-Vous pouvez utiliser une stratégie de rétention pour conserver des conversations et des messages de canal dans Teams. Les conversations Teams sont stockées dans un dossier masqué de la boîte aux lettres de chaque utilisateur participant à la conversation. Les messages de canal Teams sont stockés dans un dossier masqué similaire dans la boîte aux lettres de groupe de l’équipe.
+Vous pouvez utiliser une stratégie de rétention pour conserver les données de conversations et de messages de canal dans Teams. Les données de conversations Teams sont stockées dans un dossier masqué de la boîte aux lettres de chaque utilisateur participant à la conversation. Les données de messages de canal Teams sont stockés dans un dossier masqué similaire dans la boîte aux lettres de groupe de l’équipe.
 
-Il est important de comprendre que Teams utilise un service de conversation Azure qui stocke également ces données. Par défaut, ce service stocke les données sans limite de durée. C’est pour cette raison qu’il est recommandé de créer une stratégie de rétention qui utilise les emplacements Teams pour conserver et supprimer ces données Teams. Cette stratégie de rétention peut supprimer les données de manière définitive dans les boîtes aux lettres Exchange et le service de conversation Azure sous-jacent. Si vous souhaitez en savoir plus, consultez la page [ Sécurité et conformité dans Microsoft Teams](https://go.microsoft.com/fwlink/?linkid=871258) et plus précisément, la section [Architecture de protection des informations](https://docs.microsoft.com/MicrosoftTeams/security-compliance-overview#information-protection-architecture).
+Il est important de comprendre que Teams utilise un service de conversation Azure qui stocke également ces données. Par défaut, ce service stocke les données sans limite de durée. C’est pour cette raison qu’il est recommandé de créer une stratégie de rétention qui utilise les emplacements Teams pour conserver et supprimer ces données Teams. Cette stratégie de rétention peut supprimer ces données de manière définitive dans les boîtes aux lettres Exchange et le service de conversation Azure sous-jacent. Si vous souhaitez en savoir plus, consultez la page [ Sécurité et conformité dans Microsoft Teams](https://go.microsoft.com/fwlink/?linkid=871258) et plus précisément, la section [Architecture de protection des informations](https://docs.microsoft.com/MicrosoftTeams/security-compliance-overview#information-protection-architecture).
 
 Les conversations et les messages de canal Teams ne sont pas affectés par les stratégies de rétention configurées pour les boîtes aux lettres des utilisateurs et des groupes. Même si les conversations et les messages de canal Teams sont stockés dans Exchange, ces données Teams sont incluses uniquement par une stratégie de rétention configurée pour les **messages de canal Teams** et les emplacements des **conversations Teams**.
 
