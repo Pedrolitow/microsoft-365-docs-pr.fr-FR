@@ -1,5 +1,5 @@
 ---
-title: Gérer plusieurs clients
+title: Gérer plusieurs locataires
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -18,58 +18,66 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Découvrez comment utiliser le sélecteur de client et les vues mutualisées.
-ms.openlocfilehash: 2c96a80a0095e909eff19c9172eb0709ecece942
-ms.sourcegitcommit: 705915f8bf9b7c082d12a009523d8aa0670a74a1
+description: Découvrez comment utiliser le s switcher client et les affichages multi-locataires.
+ms.openlocfilehash: 0b73665159fbc6ce2d1aa99ba1518dc257d88ec8
+ms.sourcegitcommit: 7d4aa58ae9fc893825b6e648fa3f072c3ac59628
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48495859"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "49790137"
 ---
-# <a name="multi-tenant-management"></a>Gestion mutualisée
+# <a name="multi-tenant-management"></a>Gestion multi-locataires
 
-La gestion mutualisée offre une forme de gestion unifiée qui permet aux administrateurs d’administrer tous les clients qu’ils gèrent à partir d’un seul et même emplacement. Si vous gérez plusieurs clients, vous pouvez :
+La gestion multi-client offre une forme unifiée de gestion qui permet aux administrateurs d’administrer tous les locataires qu’ils gèrent à partir d’un seul emplacement. Si vous gérez plusieurs locataires, vous pouvez :
 
-- Passer rapidement d’un client à l’autre.
+- Passer rapidement d’un client à l’autre que vous gérez.
 - Évaluer l’état du service, les produits et la facturation sur plusieurs clients.
-- Sur la page **tous les clients** , vous pouvez rapidement voir l’état de tous les services de vos clients, les demandes de service ouvertes, vos produits et la facturation, ainsi que le nombre d’utilisateurs de ce client.
+- Dans **la** page Tous les clients, vous pouvez voir rapidement l’état de tous les services de vos clients, les demandes de service ouvertes, vos produits et facturation, ainsi que le nombre d’utilisateurs de ce client.
 
 
-## <a name="move-between-tenants"></a>Se déplacer entre les clients
+## <a name="move-between-tenants"></a>Passer d’un client à l’autre
 
-1. Dans le centre d’administration Microsoft 365, sélectionnez le nom de l’organisation.
+1. Dans le Centre d’administration Microsoft 365, sélectionnez le nom de l’organisation.
 
-    :::image type="content" source="../../media/macorgswitcher.png" alt-text="Mélangeur mutualisée.":::
+    :::image type="content" source="../../media/macorgswitcher.png" alt-text="S’il s’est multi-locataire.":::
 
-- À partir du **Sélecteur de client** , vous pouvez passer rapidement d’un client à l’autre que vous gérez.
+- À partir **du s switcher client,** vous pouvez passer rapidement d’un client à l’autre que vous gérez.
 
-    :::image type="content" source="../../media/yourtenantslist.png" alt-text="Mélangeur mutualisée.":::
+    :::image type="content" source="../../media/yourtenantslist.png" alt-text="Liste de vos locataires avec fonctionnalité de recherche.":::
 
-## <a name="view-all-tenants-page"></a>Page Afficher tous les clients
+## <a name="view-all-tenants-page"></a>Page Afficher tous les locataires
 
-1. Dans le centre d’administration 365 de Microsoft, dans le volet de navigation de gauche, sélectionnez **tous les clients**.
-- Sur la page **tous les clients** , vous pouvez
+1. Dans le Centre d’administration Microsoft 365, dans le navigation de gauche, **sélectionnez Tous les clients.**
+- Dans la page **Tous les locataires,** vous pouvez
   - Évaluer l’état du service
-  - Examen de l’utilisation des licences
-  - Recherchez ou sélectionnez le client que vous souhaitez gérer.
+  - Passer en revue l’utilisation des licences
+  - Rechercher ou sélectionner le client que vous souhaitez gérer
   - Vous pouvez également épingler votre client le plus souvent visité en haut de la liste.
 
 
-Si vous avez marqué un client comme favori, il est automatiquement développé afin que vous puissiez immédiatement afficher les détails de l’État.
+Si vous avez marqué un client comme favori, il est automatiquement développé afin que vous pouvez immédiatement afficher les détails de l’état.
 
 ## <a name="view-service-health-for-all-accounts"></a>Afficher l’état du service pour tous les comptes
 
-La vue État du service indique si un incident ou un avis affecte les clients. Elle vous indiquera également le nombre de clients gérés affectés.
+L’affichage d’état du service vous indique si des incidents ou des conseils affectent les clients. Il vous indiquera même combien de vos locataires gérés sont affectés.
 
-1. Dans le centre d’administration 365 de Microsoft, dans la vue mutualisée, sélectionnez **service Health**.
-2. Sur la page **État du service** , vous pouvez passer en revue les problèmes sous **tous les** onglets services ou **tous les problèmes** .
-3. Sélectionnez un incident sous l’onglet **tous les services** ou **tous les problèmes** pour obtenir plus d’informations sur les incidents sous l’onglet **vue d’ensemble** . Sélectionnez l’onglet **locataires affectées** pour obtenir la liste des clients affectés.
+1. Dans le Centre d’administration Microsoft 365, dans l’affichage multi-clients, sélectionnez **État du service.**
+2. Dans l’affichage agrégé de la **page** État du service, vous pouvez également voir le nombre total d’incidents, le nombre total d’avis affectant l’un des clients gérés et le nombre de services avec des incidents actifs. Vous pouvez également voir combien de vos locataires sont affectés par les incidents et les avis.
+    
+    - Vous pouvez utiliser l’option de filtrage pour afficher les problèmes par type de problème ou par service
 
-    :::image type="content" source="../../media/tenantsaffected.png" alt-text="Mélangeur mutualisée.":::
+    - Vous pouvez passer en revue les problèmes sous **tous les services** ou tous les **onglets** problèmes.
 
-## <a name="view-a-single-tenant-in-the-microsoft-365-admin-center"></a>Afficher un seul client dans le centre d’administration Microsoft 365
+    :::image type="content" source="../../media/multitenant-servicehealth.png" alt-text="Page d’état du service multi-client.":::
+1. Sélectionnez un incident sous  l’onglet Tous les **services** ou Tous les problèmes pour obtenir plus d’informations sur tout incident sous l’onglet **Vue d’ensemble.** Sélectionnez **l’onglet Locataires affectés** pour obtenir la liste des locataires concernés.
 
-Vous pouvez revenir au centre d’administration Microsoft 365 pour tous les clients à partir de la page **tous les clients** .
+    :::image type="content" source="../../media/tenantsaffected.png" alt-text="Liste des clients affectés par un problème d’état du service.":::
 
-1. Dans la page **tous les clients** , cliquez sur le nom du client pour lequel vous souhaitez afficher le centre d’administration.
-2. Vous êtes dirigé vers le centre d’administration de ce client.
+La liste des locataires concernés peut être exportée au format CSV afin que les administrateurs peuvent la partager avec les équipes de support technique.
+
+## <a name="view-a-single-tenant-in-the-microsoft-365-admin-center"></a>Afficher un seul client dans le Centre d’administration Microsoft 365
+
+Vous pouvez revenir au Centre d’administration Microsoft 365 pour n’importe quel client à partir de la page **Tous les** clients.
+
+1. Dans la page **Tous les locataires,** sélectionnez le nom du client pour lequel vous souhaitez afficher le Centre d’administration.
+2. Vous êtes dirigé vers le Centre d’administration pour ce client.

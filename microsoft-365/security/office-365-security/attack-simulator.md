@@ -1,5 +1,5 @@
 ---
-title: Simulateur d’attaque dans Microsoft Defender pour Office 365
+title: Simulateur d’attaques dans Microsoft Defender pour Office 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -18,32 +18,31 @@ ms.collection:
 - m365initiative-m365-defender
 ms.custom:
 - seo-marvel-apr2020
-description: Les administrateurs peuvent apprendre à utiliser un simulateur d’attaque pour exécuter des organisations de hameçonnage et de mot de passe simulées dans les organisations Microsoft 365 E5 ou Microsoft Defender pour Office 365 plan 2.
-ms.openlocfilehash: b1c2ad265c4812f67aee66f0f59664480b4db229
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+description: Les administrateurs peuvent apprendre à utiliser le Simulateur d’attaques pour exécuter des attaques par hameçonnage simulé et par mot de passe dans leurs organisations Microsoft 365 E5 ou Microsoft Defender pour Office 365 Plan 2.
+ms.openlocfilehash: a53ffee29ce928910b8c4add245c002ae6eb03da
+ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615203"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49788110"
 ---
-# <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Simulateur d’attaque dans Microsoft Defender pour Office 365
+# <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Simulateur d’attaques dans Microsoft Defender pour Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-
-Si votre organisation a Microsoft Defender pour Office 365 plan 2, qui inclut les [fonctionnalités d’enquête et de réponse aux menaces](office-365-ti.md), vous pouvez utiliser un simulateur d’attaque dans le centre de sécurité & conformité pour exécuter des scénarios d’attaque réaliste dans votre organisation. Ces attaques simulées peuvent vous aider à identifier et à trouver des utilisateurs vulnérables avant qu’une véritable attaque n’influe sur votre ligne de base. Pour en savoir plus, lisez cet article.
+Si votre organisation dispose de Microsoft Defender pour Office [](office-365-ti.md)365 Plan 2, qui inclut des fonctionnalités d’investigation et de réponse aux menaces, vous pouvez utiliser le Simulateur d’attaques dans le Centre de sécurité & conformité pour exécuter des scénarios d’attaque réalistes dans votre organisation. Ces attaques simulées peuvent vous aider à identifier et à trouver des utilisateurs vulnérables avant qu’une attaque réelle n’impacte votre ligne de bas de page. Pour en savoir plus, lisez cet article.
 
 > [!NOTE]
-> Les données de formation et de simulation d’attaque sont stockées avec d’autres données client pour les services Microsoft 365. Pour plus d’informations, consultez la rubrique [emplacements des données Microsoft 365](/microsoft-365/enterprise/o365-data-locations).
+> Les données associées à la simulation d’attaque et à la formation sont stockées avec d’autres données client pour les services Microsoft 365. Pour plus d’informations, voir emplacements de données [Microsoft 365.](/microsoft-365/enterprise/o365-data-locations)
 
 > [!TIP]
-> La formation à la simulation d’attaque est disponible pour la version préliminaire publique dans le centre de sécurité Microsoft 365. Pour en savoir plus, consultez [simulation d’une attaque par hameçonnage avec Microsoft Defender pour Office 365](attack-simulation-training.md) .
+> Une formation sur la simulation d’attaques est disponible pour la prévisualisation publique dans le Centre de sécurité Microsoft 365. Pour en savoir plus, consultez Simuler une attaque par hameçonnage avec Microsoft Defender pour [Office 365.](attack-simulation-training.md)
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Pour ouvrir le Centre de conformité et sécurité, consultez <https://protection.office.com/>. Le Simulateur d’attaques est disponible dans **Gestion des menaces** \> **Simulateur d’attaques**. Accédez directement à simulateur d’attaque, ouvrez <https://protection.office.com/attacksimulator> .
+- Pour ouvrir le Centre de conformité et sécurité, consultez <https://protection.office.com/>. Le Simulateur d’attaques est disponible dans **Gestion des menaces** \> **Simulateur d’attaques**. Go go directly to attack simulator, open <https://protection.office.com/attacksimulator> .
 
-- Pour plus d’informations sur la disponibilité d’un simulateur d’attaque sur différents abonnements Microsoft 365, consultez la rubrique [Description du service Microsoft Defender pour Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+- Pour plus d’informations sur la disponibilité du Simulateur d’attaques dans différents abonnements Microsoft 365, voir la description du service Microsoft Defender pour [Office 365.](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
 
 - Vous devez être membre des groupes de rôles **Management de l’organisation** ou **Administrateur de sécurité**. Pour des informations supplémentaires sur les groupes de rôles dans le Centre de sécurité et conformité, voir [Autorisations dans le Centre de sécurité et conformité](permissions-in-the-security-and-compliance-center.md).
 
@@ -55,19 +54,19 @@ Si votre organisation a Microsoft Defender pour Office 365 plan 2, qui inclut le
 
 ## <a name="spear-phishing-campaigns"></a>Campagnes de Harponnage
 
-Le *Hameçonnage* est un terme générique qui décrit les attaques par courrier électronique tentant d’accéder à des informations sensibles par le biais de messages qui paraissent provenir d’expéditeurs légitimes ou approuvés. Le *Spear Phishing* est une attaque par hameçonnage ciblée qui utilise du contenu ciblé et personnalisé qui est spécifiquement adapté aux destinataires ciblés (en général, après la reconnaissance des destinataires par l’agresseur).
+Le *Hameçonnage* est un terme générique qui décrit les attaques par courrier électronique tentant d’accéder à des informations sensibles par le biais de messages qui paraissent provenir d’expéditeurs légitimes ou approuvés. *Le harponnage* est une attaque ciblée par hameçonnage qui utilise du contenu ciblé et personnalisé spécifiquement adapté aux destinataires ciblés (généralement, après la reconnaissance des destinataires par l’attaquant).
 
 Dans le Simulateur d’attaques, deux types différents de campagnes de harponnage sont disponibles :
 
-- **Spear Phishing (informations d’identification)**: l’attaque tente de convaincre les destinataires de cliquer sur une URL dans le message. S’ils cliquent sur le lien, ils sont invités à entrer leurs informations d’identification. Si c’est le cas, ils sont dirigés vers l’un des emplacements suivants :
+- **Harponnage (données d’identification)**: l’attaque tente de convaincre les destinataires de cliquer sur une URL dans le message. S’ils cliquent sur le lien, ils sont invités à entrer leurs informations d’identification. Si c’est le cas, ils sont conduits à l’un des emplacements suivants :
 
-  - Page par défaut qui explique qu’il s’agissait d’un simple test et fournit des conseils pour la reconnaissance des messages de hameçonnage.
+  - Page par défaut qui explique qu’il s’agit d’un simple test et donne des conseils pour reconnaître les messages d’hameçonnage.
 
     ![Ce que l’utilisateur voit s’il clique sur le lien de hameçonnage, puis entre ses informations d’identification](../../media/attack-simulator-phishing-result.png)
 
   - Une page personnalisée (URL) que vous spécifiez.
 
-- **Harponnage (pièce jointe)**  : l’attaque tente de convaincre le destinataire d’ouvrir une pièce jointe .docx ou .pdf contenue dans le message. La pièce jointe contient le même contenu que le lien de hameçonnage par défaut, mais la première phrase commence par " \<Display Name\> , vous voyez ce message en tant que message récent que vous avez ouvert...".
+- **Harponnage (pièce jointe)**  : l’attaque tente de convaincre le destinataire d’ouvrir une pièce jointe .docx ou .pdf contenue dans le message. La pièce jointe contient le même contenu à partir du lien de hameçonnage par défaut, mais la première phrase commence par « , vous voyez ce message comme un message électronique récent que vous avez \<Display Name\> ouvert... ».
 
 > [!NOTE]
 > Les campagnes de harponnage dans le Simulateur d’attaques n’arrivent pas à expiration pour le moment.
@@ -119,9 +118,7 @@ Si vous allez utiliser l’un des modèles intégrés ou créer le message direc
 
      > [!NOTE]
      >
-     > - Toutes les URL sont intentionnellement HTTP et non HTTPS.
-     >
-     > - Un service de réputation d’URL peut identifier une ou plusieurs de ces URL comme étant non sécurisées. Vérifiez la disponibilité de l’URL dans vos navigateurs web pris en charge avant d’utiliser l’URL dans une campagne d’hameçonnage.
+     > Un service de réputation d’URL peut identifier une ou plusieurs de ces URL comme étant non sécurisées. Vérifiez la disponibilité de l’URL dans vos navigateurs web pris en charge avant d’utiliser l’URL dans une campagne d’hameçonnage.
 
    - **URL de la page de destination personnalisée** : entrez une page de destination facultative vers laquelle les utilisateurs sont dirigés s’ils cliquent sur le lien d’hameçonnage et entrent leurs informations d’identification. Ce lien remplace la page de destination par défaut. Par exemple, si vous avez une formation interne de sensibilisation, vous pouvez spécifier cette URL ici.
 

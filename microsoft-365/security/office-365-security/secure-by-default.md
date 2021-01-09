@@ -1,5 +1,5 @@
 ---
-title: Sécurité par défaut dans Office 365
+title: Sécurisé par défaut dans Office 365
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -16,56 +16,56 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: En savoir plus sur le paramètre sécurisé par défaut dans Exchange Online Protection (EOP)
-ms.openlocfilehash: 758d2169d80630a38c0b498e8c1848568e5ec941
-ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
+ms.openlocfilehash: 8db8e7af569114e5829d24d65b8eee89c9dce8c3
+ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49602030"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49787972"
 ---
-# <a name="secure-by-default-in-office-365"></a>Sécurité par défaut dans Office 365
+# <a name="secure-by-default-in-office-365"></a>Sécurisé par défaut dans Office 365
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-« Sécurisé par défaut » est un terme utilisé pour définir les paramètres par défaut les plus sécurisés.
+« Sécurisé par défaut » est un terme utilisé pour définir les paramètres par défaut les plus sécurisés possible.
 
-Toutefois, la sécurité doit être équilibrée en termes de productivité. Cela peut inclure l’équilibrage entre :
+Toutefois, la sécurité doit être équilibrée avec la productivité. Cela peut inclure l’équilibrage entre :
 
-- **Convivialité**: les paramètres ne doivent pas bénéficier du mode de productivité de l’utilisateur.
-- **Risque**: la sécurité peut bloquer des activités importantes.
-- **Paramètres hérités**: il est possible que certaines configurations pour des produits et des fonctionnalités plus anciens doivent être conservées pour des raisons professionnelles, même si les nouveaux paramètres modernes sont améliorés.
+- **Convivialité :** les paramètres ne doivent pas être contre la productivité des utilisateurs.
+- **Risque :** la sécurité peut bloquer les activités importantes.
+- **Paramètres hérités**: certaines configurations pour les anciens produits et fonctionnalités peuvent avoir besoin d’être conservées pour des raisons professionnelles, même si les nouveaux paramètres modernes sont améliorés.
 
-Les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online sont protégées par Exchange Online Protection (EOP). Cette protection inclut :
+Les organisations Microsoft 365 avec boîtes aux lettres dans Exchange Online sont protégées par Exchange Online Protection (EOP). Cette protection inclut :
 
-- Les messages électroniques avec un programme malveillant suspectés seront automatiquement mis en quarantaine et les destinataires seront avertis. Consultez la rubrique [configure anti-malware Policies in EOP](configure-anti-malware-policies.md).
-- Courrier électronique identifié comme un hameçonnage à niveau de confiance élevé sera géré en fonction de l’action de stratégie de blocage du courrier indésirable. Consultez la rubrique [configurer des stratégies anti-courrier indésirable dans EOP](configure-your-spam-filter-policies.md).
+- Les messages électroniques avec des programmes malveillants suspectés sont automatiquement mis en quarantaine et les destinataires sont avertis. Voir [Configurer des stratégies anti-programme malveillant dans EOP.](configure-anti-malware-policies.md)
+- Les messages électroniques identifiés comme étant du hameçonnage à haut niveau de confiance seront gérés en fonction de l’action de stratégie anti-courrier indésirable. Voir [Configurer des stratégies anti-courrier indésirable dans EOP.](configure-your-spam-filter-policies.md)
 
-Pour plus d’informations sur EOP, consultez la rubrique [Exchange Online Protection Overview](exchange-online-protection-overview.md).
+Pour plus d’informations sur EOP, voir [vue d’ensemble d’Exchange Online Protection.](exchange-online-protection-overview.md)
 
-Étant donné que Microsoft souhaite assurer la sécurité de nos clients par défaut, certains remplacements de locataire ne sont pas appliqués pour les programmes malveillants ou le hameçonnage à haut niveau de confiance. Ces substitutions sont les suivantes :
+Étant donné que Microsoft souhaite sécuriser nos clients par défaut, certaines substitutions de clients ne sont pas appliquées pour les programmes malveillants ou le hameçonnage à haut niveau de confiance. Ces substitutions sont les suivantes :
 
 - Listes d’expéditeurs autorisés ou listes de domaines autorisés (stratégies anti-courrier indésirable)
-- Expéditeurs approuvés Outlook
-- Liste d’adresses IP autorisées (filtrage des connexions)
+- Expéditeurs sûrs Outlook
+- Liste d’adresses IP permises (filtrage des connexions)
 
-Vous trouverez plus d’informations sur ces substitutions dans la [liste créer des listes d’expéditeurs approuvés](create-safe-sender-lists-in-office-365.md).
+Pour plus d’informations sur ces remplacements, voir [Créer des listes d’expéditeurs sûrs.](create-safe-sender-lists-in-office-365.md)
 
-La sécurité par défaut n’est pas un paramètre qui peut être activé ou désactivé, mais c’est le mode de fonctionnement de notre filtrage qui permet de conserver les messages potentiellement dangereux ou indésirables dans vos boîtes aux lettres. Les messages hameçons et de confiance élevée doivent être mis en quarantaine. Seuls les administrateurs peuvent gérer les messages mis en quarantaine en tant que programmes malveillants ou hameçonnage à haute fiabilité, et ils peuvent également signaler des faux positifs à Microsoft à partir de là. Pour plus d’informations, consultez la rubrique [gestion des messages et des fichiers mis en quarantaine en tant qu’administrateur dans EOP](manage-quarantined-messages-and-files.md) .
+La sécurité par défaut n’est pas un paramètre qui peut être allumé ou désactivé, mais la façon dont notre filtrage est prêt à l’emploi pour empêcher les messages potentiellement dangereux ou indésirables de sortir de vos boîtes aux lettres. Les programmes malveillants et les messages de hameçonnage à haut niveau de confiance doivent être mis en quarantaine. Seuls les administrateurs peuvent gérer les messages mis en quarantaine en tant que programmes malveillants ou hameçonnage à haut niveau de confiance, et ils peuvent également signaler des faux positifs à Microsoft à partir de là. Pour plus d’informations, voir Gérer les fichiers et les messages mis en quarantaine en tant [qu’administrateur dans EOP](manage-quarantined-messages-and-files.md)
 
-## <a name="more-on-why-were-doing-this"></a>En savoir plus sur les raisons de cette opération
+## <a name="more-on-why-were-doing-this"></a>En savoir plus sur la raison de cette situation
 
-L’esprit de sécurité par défaut est le suivant : nous effectuons la même action sur le message que vous devez prendre si vous saviez que le message était malveillant, même si une autorisation était autorisée. Il s’agit de la même approche que celle utilisée pour les programmes malveillants et que nous étendons maintenant ce même comportement aux messages de hameçonnage à haute fiabilité. Nos données indiquent que le taux de faux positifs pour les messages de hameçonnage à haut niveau de confiance est très faible et que les administrateurs peuvent résoudre les faux positifs avec des soumissions de l’administrateur. Nos données indiquent également que les listes d’expéditeurs autorisés et les listes de domaines autorisés dans les stratégies de blocage du courrier indésirable et les expéditeurs approuvés dans Outlook étaient trop larges et de plus en plus nuisibles.
+L’objectif de la sécurité par défaut est le suivant : nous prenons la même action sur le message que si vous connaissiez le message malveillant, même s’il y avait un permis en place. Il s’agit de la même approche que nous avons utilisée pour les programmes malveillants, et nous étendons maintenant ce comportement aux messages de hameçonnage à haut niveau de confiance. Nos données indiquent que le taux de faux positifs pour les messages de hameçonnage à niveau de confiance élevé est très faible et que les administrateurs peuvent résoudre les faux positifs avec des envois d’administrateur. Nos données indiquent également que les listes d’expéditeurs autorisés et les listes de domaines autorisés dans les stratégies anti-courrier indésirable et les expéditeurs autorisés dans Outlook étaient trop larges et causaient plus de dommages que de bien.
 
-Pour en faire une autre : en tant que service de sécurité, nous faisons en sorte que vos utilisateurs ne soient pas compromis. Par ailleurs, la sécurisation par défaut ne constitue pas une prise en charge complète des options disponibles pour les messages de hameçonnage à haute fiabilité dans les stratégies de blocage du courrier indésirable. Bien que la mise en quarantaine soit recommandée, les autres actions toujours disponibles sont toujours disponibles (déplacer vers le dossier courrier indésirable ou rediriger vers une adresse de messagerie).
+Autrement dit : en tant que service de sécurité, nous agissant en votre nom pour empêcher la compromissions vos utilisateurs. En outre, la sécurité par défaut n’est pas une prise de contrôle complète de vos options disponibles pour les messages de hameçonnage à haut niveau de confiance dans les stratégies anti-courrier indésirable. Bien que nous recommandons la mise en quarantaine, les autres actions qui ont toujours été disponibles sont toujours disponibles (déplacer vers le dossier Courrier indésirable ou Rediriger vers une adresse e-mail).
 
 ## <a name="exceptions"></a>Exceptions
 
-La seule substitution qui permet de contourner le message de hameçonnage pour contourner le filtrage est celle des règles de flux de messagerie Exchange (également appelées règles de transport). Pour utiliser des règles de flux de messagerie pour contourner le filtrage, consultez [la rubrique use mail Flow Rules to Set the SCL in messages](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md).
+La seule substitution permettant aux messages de hameçonnage à haut niveau de confiance de contourner le filtrage est les règles de flux de messagerie Exchange (également appelées règles de transport). Pour utiliser des règles de flux de messagerie pour contourner le filtrage, voir Utiliser des règles de flux de messagerie pour définir le [SCL dans les messages.](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
 
-Vous devez envisager d’utiliser des remplacements uniquement dans les scénarios suivants :
+Vous ne devez envisager d’utiliser des substitutions que dans les scénarios suivants :
 
-- Simulations d’hameçonnage : les attaques simulées peuvent vous aider à identifier les utilisateurs vulnérables avant qu’une attaque réelle n’influe sur votre organisation.
-- Boîtes aux lettres de sécurité/COP : boîtes aux lettres dédiées utilisées par les équipes de sécurité pour obtenir des messages non filtrés (à la fois bon et mauvais). Teams peut ensuite vérifier s’il contient du contenu malveillant.
-- Filtres tiers : certains fournisseurs tiers vont recommander de désactiver EOP (SCL =-1) car le filtre tiers gérera le filtrage du courrier. Microsoft ne recommande pas de désactiver EOP au fur et à mesure que EOP est requis pour [Microsoft Defender pour Office 365](office-365-atp.md). Au lieu de cela, nous vous recommandons d’activer le [filtrage amélioré pour les connecteurs](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
-- Faux positifs : vous pouvez autoriser temporairement certains messages qui sont toujours analysés par Microsoft [via des soumissions d’administration](admin-submission.md). Comme pour toutes les substitutions, il est recommandé qu’elles soient temporaires.
+- Simulations de hameçonnage : les attaques simulées peuvent vous aider à identifier les utilisateurs vulnérables avant qu’une attaque réelle n’impacte votre organisation.
+- Boîtes aux lettres De sécurité/SecOps : boîtes aux lettres dédiées utilisées par les équipes de sécurité pour obtenir des messages non filtrés (bonnes et mauvaises). Les équipes peuvent ensuite examiner s’ils contiennent du contenu malveillant.
+- Filtres tiers : la sécurité par défaut ne s’applique pas lorsque l’enregistrement MX du domaine ne pointe pas vers Office 365.
+- Faux positifs : vous souhaitez peut-être autoriser temporairement certains messages en cours d’analyse par Microsoft [via des envois d’administrateur.](admin-submission.md) Comme pour toutes les substitutions, il est recommandé qu’elles soient temporaires.

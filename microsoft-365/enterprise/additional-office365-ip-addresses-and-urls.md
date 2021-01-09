@@ -1,7 +1,7 @@
 ---
 title: Points de terminaison supplémentaires non inclus dans le service web pour URL et adresses IP Office 365
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 04/29/2020
 audience: Admin
@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: ''
 description: 'Résumé : Le nouveau service web de point de terminaison n’inclut pas certains points de terminaison pour des scénarios spécifiques.'
 hideEdit: true
-ms.openlocfilehash: d5c97fa2399392b03e00644f270e8726570aefb5
-ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
+ms.openlocfilehash: f81a3b622bb7cc6eb82d9ed7f450762cfc7711ff
+ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49780579"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49787938"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Points de terminaison supplémentaires non inclus dans le service web pour URL et adresses IP Office 365
 
