@@ -9,18 +9,18 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365initiative-defender-office365
 description: Les administrateurs peuvent apprendre à simuler des attaques par hameçonnage et à former leurs utilisateurs à la prévention du hameçonnage à l’aide de la formation sur la simulation d’attaque dans Microsoft Defender pour Office 365.
-ms.openlocfilehash: 41a5a503fbc8aa5e41760c1cf420d5e3c6047d86
-ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
+ms.openlocfilehash: e7582b1f74266d988ecdf8f6dac49019699e2bc1
+ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49788050"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "49794255"
 ---
 # <a name="simulate-a-phishing-attack"></a>Simuler une attaque par hameçonnage
 
-La formation sur la simulation d’attaques dans Microsoft Defender pour Office 365 vous permet d’exécuter des simulations de cyberattaque anodins sur votre organisation pour tester vos stratégies et pratiques de sécurité, ainsi que pour former vos employés afin qu’ils augmentent leur sensibilisation et diminuent leur tendance aux attaques. Cet article vous explique la création d’une attaque par hameçonnage simulée à l’aide d’une formation à la simulation d’attaque.
+La formation sur la simulation d’attaques dans Microsoft Defender pour Office 365 vous permet d’exécuter des simulations de cyberattaque anodins sur votre organisation pour tester vos stratégies et pratiques de sécurité, ainsi que pour former vos employés afin qu’ils augmentent leur sensibilisation et diminuent leur tendance aux attaques. Cet article vous explique la création d’une attaque par hameçonnage simulée à l’aide d’une formation à la simulation d’attaques.
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
@@ -58,7 +58,7 @@ Les charges utiles ont un certain nombre de points de données pour vous aider �
 - **Le taux de** clics compte le nombre de personnes qui ont cliqué sur cette charge utile.
 - **Le taux de compromission** prévu prévoit le pourcentage de personnes qui seront compromises par cette charge utile en fonction des données historiques de la charge utile pour les clients Microsoft Defender pour Office 365.
 - **Les simulations lancées** comptent le nombre de fois que cette charge utile a été utilisée dans d’autres simulations.
-- **La** complexité, disponible par le biais **de filtres,** est calculée en fonction du nombre d’indicateurs au sein de la charge utile ciblée par des indices en tant qu’attaque. Plus il y a d’indicateurs, plus la complexité est faible.
+- **La** complexité, disponible par le biais **de filtres,** est calculée en fonction du nombre d’indicateurs au sein de la charge utile qui ciblent une attaque. Plus il y a d’indicateurs, plus la complexité est faible.
 - **La source,** disponible **via** des filtres, indique si la charge utile a été créée sur votre client ou fait partie du catalogue de charge utile pré-existant de Microsoft (global).
 
 ![Charge utile sélectionnée dans la formation à la simulation d’attaques dans le Centre de sécurité Microsoft 365](../../media/attack-sim-preview-select-payload.png)
@@ -75,7 +75,7 @@ Lorsque vous choisissez **d’inclure uniquement des utilisateurs et des groupes
 
 - Ajoutez des utilisateurs, ce qui vous permet de tirer parti de la recherche pour votre client, ainsi que des fonctionnalités avancées de recherche et de filtrage, telles que le ciblage d’utilisateurs qui n’ont pas été ciblés par une simulation au cours des 3 derniers mois.
   ![Filtrage des utilisateurs lors d’une formation sur la simulation d’attaques sur le Centre de sécurité Microsoft 365](../../media/attack-sim-preview-user-targeting.png)
-- **L’importation à partir de CSV** vous permet d’importer un ensemble prédéféré d’utilisateurs pour cette simulation.
+- **L’importation à** partir de CSV vous permet d’importer un ensemble prédéféré d’utilisateurs pour cette simulation.
 
 ## <a name="assigning-training"></a>Affectation d’une formation
 

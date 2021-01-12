@@ -16,14 +16,14 @@ search.appverid:
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365initiative-defender-office365
 description: Découvrez les affichages de campagne dans Microsoft Defender pour Office 365.
-ms.openlocfilehash: 8e5c49c9a45d1578da1eea33a560da611fb74155
-ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
+ms.openlocfilehash: 20cb50a4b304e148df24e54fac3a05c484cfa4f0
+ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49788014"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "49794363"
 ---
 # <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Affichages des campagnes dans Microsoft Defender pour Office 365
 
@@ -49,11 +49,11 @@ Microsoft tire parti des grandes quantités de données anti-hameçonnage, anti-
 - **Destinataires du message**: lien entre les destinataires. Par exemple, les domaines des destinataires, les fonctions de travail des destinataires (administrateurs, cadres, etc.), les types d’entreprise (grandes, petites, publiques, privées, etc.) et les secteurs d’activité.
 - **Charge utile d’attaque**: liens malveillants, pièces jointes ou autres charges utiles dans les messages.
 
-Une campagne peut avoir une durée de vie courte ou s’étendre sur plusieurs jours, semaines ou mois avec des périodes actives et inactives. Une campagne peut être lancée contre votre organisation spécifique, ou votre organisation peut faire partie d’une campagne plus importante au sein de plusieurs entreprises.
+Une campagne peut avoir une durée de vie courte ou s’étendre sur plusieurs jours, semaines ou mois avec des périodes actives et inactives. Une campagne peut être lancée sur votre organisation spécifique, ou votre organisation peut faire partie d’une campagne plus importante au sein de plusieurs entreprises.
 
 ## <a name="campaign-views-in-the-security--compliance-center"></a>Affichages des campagnes dans le Centre de sécurité & conformité
 
-Les affichages de campagne sont disponibles dans le [Centre de sécurité & conformité](https://protection.office.com) sur **les** campagnes de gestion des \> menaces, ou directement dans <https://protection.office.com/campaigns> .
+Les affichages de campagne sont disponibles dans le [Centre de sécurité & conformité](https://protection.office.com) sur les campagnes de gestion des  \> menaces, ou directement dans <https://protection.office.com/campaigns> .
 
 ![Vue d’ensemble des campagnes dans la Centre de sécurité et conformité](../../media/campaigns-overview.png)
 
@@ -70,7 +70,7 @@ Pour accéder aux affichages campagne, vous devez être membre  des groupes de r
 
 La page vue d’ensemble affiche des informations sur toutes les campagnes.
 
-Sous l’onglet **Campagne** par défaut, la zone **Type** de campagne affiche un graphique à barres qui indique le nombre de destinataires par jour. Par défaut, le graphique affiche les données **de** hameçonnage **et de programmes** malveillants.
+Sous l’onglet **Campagne** par défaut, la zone **Type** de campagne affiche un graphique à barres qui indique le nombre de destinataires par jour. Par défaut, le graphique affiche les données **de** hameçonnage et **de programmes** malveillants.
 
 > [!TIP]
 > Si vous ne voyez pas de données de campagne, essayez de modifier la plage de dates ou les [filtres.](#filters-and-settings)
@@ -103,7 +103,7 @@ Le reste de la page de vue d’ensemble affiche les informations suivantes sous 
 
 - **Visité :** nombre d’utilisateurs qui ont réellement effectué l’accès au site web de charge utile. S’il existe **des valeurs Clicked,** mais que les liens sécurisés bloquent l’accès au site web, cette valeur est zéro.
 
-**L’onglet Origine de** la campagne affiche les sources des messages sur une carte du monde.
+**L’onglet Origine** de la campagne affiche les sources des messages sur une carte du monde.
 
 ### <a name="filters-and-settings"></a>Filtres et paramètres
 
@@ -127,7 +127,7 @@ Les propriétés filtrables de campagne disponibles dans le bouton **Type** de c
   - **Subject**
   - **Nom de fichier des pièces jointes**
   - **Famille de programmes malveillants**
-  - **Balises**: utilisateurs ou groupes pour lesquels la balise utilisateur spécifiée a été appliquée (y compris les comptes de priorité). Pour plus d’informations sur les balises utilisateur, voir [Balises utilisateur.](user-tags.md)
+  - **Balises**: utilisateurs ou groupes sur lesquels la balise utilisateur spécifiée a été appliquée (y compris les comptes de priorité). Pour plus d’informations sur les balises utilisateur, voir [Balises utilisateur.](user-tags.md)
   - **Remplacements système**
   - **Action de remise**
   - **Action supplémentaire**
@@ -157,11 +157,11 @@ Pour un filtrage plus avancé, y compris le  filtrage par plusieurs propriétés
 
 - Vous pouvez cliquer **sur Ajouter une condition pour** sélectionner plusieurs conditions.
 - Vous pouvez choisir l’opérateur **And** ou **Or** entre les conditions.
-- Vous pouvez sélectionner **l’élément de groupe Condition** en bas de la liste des conditions pour former des conditions composées complexes.
+- Vous pouvez sélectionner l’élément **de groupe Condition** en bas de la liste des conditions pour former des conditions composées complexes.
 
 Lorsque vous avez terminé, cliquez sur **le bouton Requête.**
 
-Après avoir créé un filtre de base ou  avancé, vous pouvez l’enregistrer à l’aide de la requête Enregistrer ou enregistrer **la requête sous**. Plus tard, lorsque vous revenirz aux Affichages campagne, vous pouvez charger un filtre enregistré en cliquant sur **Paramètres de requête enregistrés.**
+Après avoir créé un filtre de base ou  avancé, vous pouvez l’enregistrer à l’aide de la requête Enregistrer ou enregistrer **la requête sous**. Plus tard, lorsque vous revenirz aux Affichages campagne, vous pouvez charger un filtre enregistré en cliquant sur **Paramètres de requête enregistrée.**
 
 Pour exporter le graphique ou la liste des campagnes, cliquez sur **Exporter** et sélectionnez Exporter les données **du graphique** ou Exporter la liste **des campagnes.**
 
@@ -181,7 +181,7 @@ En haut de l’affichage Détails de la campagne, les informations de campagne s
 
 - **Impact**: cette section contient les données suivantes pour le filtre de plage de dates que vous avez sélectionné (ou que vous sélectionnez dans la chronologie) :
   - Nombre total de destinataires.
-  - Nombre de messages « Boîte de réception » (c’est-à-dire remis dans la boîte de réception, et non dans le dossier Courrier indésirable).
+  - Nombre de messages « Boîte de réception » (c’est-à-dire remis à la boîte de réception, et non au dossier Courrier indésirable).
   - Nombre d’utilisateurs qui ont cliqué sur la charge utile de l’URL dans le message d’hameçonnage.
   - Nombre d’utilisateurs qui ont visité l’URL.
 
@@ -250,7 +250,7 @@ Le diagramme contient les informations suivantes :
 
 Lorsqu’un message de hameçonnage est remis dans la boîte de réception ou le dossier Courrier indésirable d’un destinataire, il est toujours possible que l’utilisateur clique sur l’URL de la charge utile. Ne pas cliquer sur l’URL est une petite mesure de réussite, mais vous devez déterminer pourquoi le message de hameçonnage a même été remis à la boîte aux lettres.
 
-Si un utilisateur a cliqué sur l’URL de la charge utile dans le message de hameçonnage, les actions s’affichent dans la zone **clics de l’URL** du diagramme dans l’affichage Détails de la campagne.
+Si un utilisateur a cliqué sur l’URL de la charge utile dans le message de hameçonnage, les actions s’affichent dans la zone de **clics de l’URL** du diagramme dans l’affichage Détails de la campagne.
 
 - **Autorisé**
 - **BlockPage**: le destinataire [a](atp-safe-links.md) cliqué sur l’URL de la charge utile, mais son accès au site web malveillant a été bloqué par une stratégie de liens sécurisés dans votre organisation.
@@ -284,7 +284,7 @@ Les onglets de l’affichage Détails de la campagne vous permettent d’examine
   - **Boîte de réception**
   - **Non boîte de réception**
   - **DKIM transmis**: l’expéditeur a été authentifié par [DKIM (Domain Keys Identified Mail).](support-for-validation-of-dkim-signed-messages.md) Un expéditeur qui ne passe pas la validation DKIM indique un expéditeur non authentifié ou le message usurpe un expéditeur légitime.
-  - **DMARC transmis**: l’expéditeur a été authentifié par l’authentification de message basée sur le domaine, la rapports et la [conformité (DMARC).](use-dmarc-to-validate-email.md) Un expéditeur qui ne passe pas la validation DMARC indique un expéditeur non authentifié ou le message usurpe un expéditeur légitime.
+  - **DMARC transmis**: L’expéditeur a été authentifié par l’authentification de message basée sur le domaine, la rapport et [la conformité (DMARC)](use-dmarc-to-validate-email.md). Un expéditeur qui ne passe pas la validation DMARC indique un expéditeur non authentifié ou le message usurpe un expéditeur légitime.
 
 - **Attachments**
   - **Filename**

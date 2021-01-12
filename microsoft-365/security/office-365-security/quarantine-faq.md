@@ -15,73 +15,73 @@ search.appverid:
 ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
-description: Les administrateurs peuvent consulter les réponses et les questions fréquemment posées sur les messages mis en quarantaine dans Exchange Online Protection (EOP).
+- m365initiative-defender-office365
+description: Les administrateurs peuvent afficher les questions fréquemment posées et les réponses sur les messages mis en quarantaine dans Exchange Online Protection (EOP).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9cf1281338de66f54a6c4546b047259d647cc3ea
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 58ddb5847706aef3d2c3b8ea8cd9a96fd65a9b3d
+ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615995"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "49794411"
 ---
 # <a name="quarantined-messages-faq"></a>FAQ sur les messages mis en quarantaine
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Cette rubrique fournit des questions fréquemment posées et des réponses sur les messages électroniques mis en quarantaine pour les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online (EOP) autonomes sans boîte aux lettres Exchange Online.
+Cette rubrique fournit des questions fréquemment posées et des réponses sur les messages électroniques mis en quarantaine pour les organisations Microsoft 365 ayant des boîtes aux lettres dans Exchange Online ou les organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online.
 
-Pour obtenir des questions et des réponses sur la protection contre le courrier indésirable, consultez la rubrique [protection contre le courrier indésirable](anti-spam-protection-faq.md).
+Pour obtenir des questions et des réponses sur la protection anti-courrier indésirable, consultez la faq sur la [protection anti-courrier indésirable.](anti-spam-protection-faq.md)
 
-Pour obtenir des questions et des réponses sur la protection contre les programmes malveillants, consultez la rubrique [anti-malware protection FAQ](anti-malware-protection-faq-eop.md).
+Pour obtenir des questions et des réponses sur la protection anti-programme malveillant, consultez la [faq sur la protection anti-programme malveillant.](anti-malware-protection-faq-eop.md)
 
-Pour obtenir des questions et des réponses sur la protection contre l’usurpation d’identité, consultez la rubrique [anti-spoofing protection FAQ](anti-spoofing-protection-faq.md).
+Pour obtenir des questions et des réponses sur la protection contre l’usurpation d’informations, consultez la faq sur la protection contre l’usurpation [d’informations.](anti-spoofing-protection-faq.md)
 
-## <a name="how-do-i-manage-messages-that-were-quarantined-for-malware"></a>Comment puis-je gérer les messages qui ont été mis en quarantaine pour les programmes malveillants ?
+## <a name="how-do-i-manage-messages-that-were-quarantined-for-malware"></a>Comment gérer les messages mis en quarantaine pour les programmes malveillants ?
 
-Seuls les administrateurs peuvent gérer les messages mis en quarantaine pour les programmes malveillants. Pour plus d’informations, consultez la rubrique [gestion des messages et des fichiers mis en quarantaine en tant qu’administrateur](manage-quarantined-messages-and-files.md).
+Seuls les administrateurs peuvent gérer les messages mis en quarantaine pour les programmes malveillants. Pour plus d’informations, voir Gérer les messages et fichiers mis en [quarantaine en tant qu’administrateur.](manage-quarantined-messages-and-files.md)
 
-## <a name="how-do-i-quarantine-spam"></a>Comment mettre en quarantaine le courrier indésirable ?
+## <a name="how-do-i-quarantine-spam"></a>Comment mettre en quarantaine le courrier indésirable ?
 
-Par défaut, les messages classés comme courriers indésirables ou en masse par filtrage du courrier indésirable sont remis à la boîte aux lettres de l’utilisateur et sont déplacés vers le dossier courrier indésirable. Toutefois, vous pouvez créer et configurer des stratégies de blocage du courrier indésirable pour mettre en quarantaine les messages électroniques en masse ou le courrier indésirable. Si vous souhaitez en savoir plus, consultez l’article [Configurer les stratégies anti-courrier indésirable dans EOP](configure-your-spam-filter-policies.md).
+Par défaut, les messages classés comme courrier indésirable ou courrier en masse par filtrage du courrier indésirable sont remis à la boîte aux lettres de l’utilisateur et déplacés vers le dossier Courrier indésirable. Toutefois, vous pouvez créer et configurer des stratégies anti-courrier indésirable pour mettre en quarantaine le courrier indésirable ou les messages électroniques en masse à la place. Si vous souhaitez en savoir plus, consultez l’article [Configurer les stratégies anti-courrier indésirable dans EOP](configure-your-spam-filter-policies.md).
 
-## <a name="how-do-i-give-users-access-to-the-quarantine"></a>Comment accorder aux utilisateurs l’accès à la mise en quarantaine ?
+## <a name="how-do-i-give-users-access-to-the-quarantine"></a>Comment accorder aux utilisateurs l’accès à la mise en quarantaine ?
 
-Un utilisateur doit disposer d’un compte valide pour accéder à ses propres messages en quarantaine. La fonctionnalité EOP autonome nécessite que les utilisateurs soient représentés en tant qu’utilisateurs de messagerie dans EOP (création manuelle ou création via la synchronisation d’annuaires). Pour plus d’informations sur la gestion des utilisateurs dans les environnements autonomes EOP, consultez la rubrique [gestion des utilisateurs de messagerie dans EOP](manage-mail-users-in-eop.md).
+Un utilisateur doit avoir un compte valide pour accéder à ses propres messages en quarantaine. EOP autonome exige que les utilisateurs soient représentés en tant qu’utilisateurs de messagerie dans EOP (créés ou créés manuellement via la synchronisation d’annuaires). Pour plus d’informations sur la gestion des utilisateurs dans des environnements EOP autonomes, voir Gérer les utilisateurs [de messagerie dans EOP.](manage-mail-users-in-eop.md)
 
-## <a name="what-messages-can-end-users-access-in-quarantine"></a>Quels messages les utilisateurs finaux peuvent-ils accéder en quarantaine ?
+## <a name="what-messages-can-end-users-access-in-quarantine"></a>Quels messages les utilisateurs finaux peuvent-ils accéder en quarantaine ?
 
-Les utilisateurs peuvent accéder aux messages de courrier indésirable, de courrier en nombre et (à partir d’avril 2020) lorsqu’ils sont destinataires. Les utilisateurs finaux ne peuvent pas accéder aux programmes malveillants mis en quarantaine, à la confiance élevée ou aux messages mis en quarantaine en raison de la **remise du message à l’action de mise en quarantaine hébergée dans les** règles de flux de messagerie (également appelées règles de transport). Pour plus d’informations sur les utilisateurs qui accèdent aux messages mis en quarantaine, consultez [la rubrique Rechercher et débloquer les messages mis en quarantaine en tant qu’utilisateur](find-and-release-quarantined-messages-as-a-user.md).
+Les utilisateurs peuvent accéder aux courriers indésirables, aux courriers électroniques en masse et (depuis avril 2020) aux messages de hameçonnage dont ils sont destinataires. Les utilisateurs finaux ne peuvent pas accéder aux programmes malveillants mis en quarantaine, au hameçonnage à haut niveau de confiance ou aux messages mis en quarantaine en raison de l’action Remettre le **message** à l’action de mise en quarantaine hébergée dans les règles de flux de messagerie (également appelées règles de transport). Pour plus d’informations sur l’accès des utilisateurs aux messages mis en quarantaine, voir Rechercher et libérer les messages mis en quarantaine [en tant qu’utilisateur.](find-and-release-quarantined-messages-as-a-user.md)
 
-## <a name="how-long-are-messages-kept-in-the-quarantine"></a>Combien de temps les messages sont-ils conservés en quarantaine ?
+## <a name="how-long-are-messages-kept-in-the-quarantine"></a>Pendant combien de temps les messages sont-ils mis en quarantaine ?
 
-Vous configurez la durée pendant laquelle les courriers indésirables, les messages hameçons et les messages électroniques en masse sont conservés en quarantaine à l’aide de stratégies de blocage du courrier indésirable. La valeur par défaut est 30 jours, ce qui est également le maximum. Pour plus d’informations, consultez la rubrique [configurer des stratégies anti-courrier indésirable dans EOP](configure-your-spam-filter-policies.md)
+Vous configurez la durée pendant combien de temps le courrier indésirable, le hameçonnage et les messages électroniques en nombre sont mis en quarantaine à l’aide de stratégies anti-courrier indésirable. La valeur par défaut est 30 jours, ce qui est également la valeur maximale. Pour plus d’informations, voir [Configurer des stratégies anti-courrier indésirable dans EOP](configure-your-spam-filter-policies.md)
 
-Pour les messages mis en quarantaine par l’action de règle de flux de messagerie, **remet le message à la quarantaine hébergée**, les messages sont conservés en quarantaine pendant 30 jours. Vous ne pouvez pas configurer cette durée.
+Pour les messages mis en quarantaine par l’action de règle de flux de messagerie Remettre le **message** en quarantaine hébergé, les messages sont conservés en quarantaine pendant 30 jours. Vous ne pouvez pas configurer cette durée.
 
 Une fois la période expirée, les messages sont supprimés et ne sont pas récupérables.
 
 ## <a name="can-i-release-or-report-more-than-one-quarantined-message-at-a-time"></a>Est-ce que je peux libérer ou signaler plusieurs messages mis en quarantaine à la fois ?
 
-Dans le centre de sécurité & conformité, vous pouvez sélectionner et publier jusqu’à 100 messages à la fois.
+Dans le Centre de sécurité & conformité, vous pouvez sélectionner et publier jusqu’à 100 messages à la fois.
 
-Les administrateurs peuvent utiliser les cmdlets [Get-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/get-quarantinemessage) et [Release-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/release-quarantinemessage) dans Exchange Online PowerShell ou autonome EOP PowerShell pour rechercher et débloquer les messages mis en quarantaine en bloc, et pour signaler les faux positifs en bloc.
+Les administrateurs peuvent utiliser les cmdlets [Get-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/get-quarantinemessage) et [Release-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/release-quarantinemessage) dans Exchange Online PowerShell ou EOP PowerShell autonome pour rechercher et libérer les messages mis en quarantaine en bloc et signaler les faux positifs en bloc.
 
 ## <a name="are-wildcards-supported-when-searching-for-quarantined-messages-can-i-search-for-quarantined-messages-for-a-specific-domain"></a>Les caractères génériques sont-ils pris en charge lors de la recherche de messages mis en quarantaine ? Puis-je rechercher des messages mis en quarantaine pour un domaine spécifique ?
 
-Les caractères génériques ne sont pas pris en charge dans le centre de sécurité & conformité. Par exemple, lors de la recherche d’un expéditeur, vous devez spécifier l’adresse de messagerie complète. Toutefois, vous pouvez utiliser des caractères génériques dans Exchange Online PowerShell ou autonome EOP PowerShell.
+Les caractères génériques ne sont pas pris en charge dans le Centre de sécurité & conformité. Par exemple, lorsque vous recherchez un expéditeur, vous devez spécifier l’adresse de messagerie complète. Toutefois, vous pouvez utiliser des caractères génériques dans Exchange Online PowerShell ou EOP PowerShell autonome.
 
-Par exemple, exécutez la commande suivante pour rechercher les messages de courrier indésirable mis en quarantaine à partir de tous les expéditeurs dans le domaine contoso.com :
+Par exemple, exécutez la commande suivante pour rechercher les messages de courrier indésirable mis en quarantaine de tous les expéditeurs dans le domaine contoso.com :
 
 ```powershell
 $CQ = Get-QuarantineMessage -Type Spam | where {$_.SenderAddress -like "*@contoso.com"}
 ```
 
-Ensuite, exécutez la commande suivante pour libérer ces messages à tous les destinataires d’origine :
+Ensuite, exécutez la commande suivante pour libérer ces messages à tous les destinataires d’origine :
 
 ```powershell
 $CQ | foreach {Release-QuarantineMessage -Identity $_.Identity -ReleaseToAll}
 ```
 
-Une fois que vous avez publié un message, vous ne pouvez plus le libérer.
+Après avoir publié un message, vous ne pouvez plus le libérer.
