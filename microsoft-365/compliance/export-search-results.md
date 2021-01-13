@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: Exporter les résultats de recherche d’une recherche de contenu dans le Centre de conformité Microsoft 365 vers un ordinateur local. Les résultats des e-mails sont exportés en tant que fichiers PST. Le contenu des sites SharePoint et OneDrive Entreprise est exporté en tant que documents Office natifs.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 09f3ed5684338616ef20036e4fded400bd106c44
-ms.sourcegitcommit: f40378013757d560d5566a11ad4e6f527c018cc4
+ms.openlocfilehash: 12c8755d4ca8b5ff97582b879c07fe103c996ecf
+ms.sourcegitcommit: 495b66b77d6dbe6d69e5b06b304089e4e476e568
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796182"
+ms.locfileid: "49799701"
 ---
 # <a name="export-content-search-results"></a>Exporter les résultats de la recherche de contenu
 
@@ -187,20 +187,7 @@ Voici plus d’informations sur l’exportation des résultats de recherche.
   
 ### <a name="export-limits"></a>Limites d’exportation
 
-Ces limites s’appliquent également lors de l’exportation des résultats de recherche dans un cas core eDiscovery.
-
-|Description de la limite|Limite|
-|:-----|:-----|
-|Quantité maximale de données exportables à partir d’une seule recherche de contenu  <br/><br/> **Remarque :** Si les résultats de la recherche sont supérieurs à 2 To, envisagez d’utiliser des plages de dates ou d’autres types de filtres pour réduire la taille totale des résultats de la recherche. <br/>  |2 To  <br/> | 
-|Maximum qu’une organisation peut exporter en une seule journée <br/><br/> **Remarque :** Cette limite est réinitialisée quotidiennement à 00:00 UTC <br/> |2 To <br/> |
-|Nombre maximal d’exportations simultanées qui peuvent être exécuter en même temps au sein de votre organisation <br/><br/> **Remarque :** L’exécution **d’une exportation** de rapport uniquement est comptabilisée par rapport au nombre total d’exportations simultanées pour votre organisation. Si trois utilisateurs effectuent 3 exportations chacune, une seule autre exportation peut être effectuée. Qu’il s’agit d’exporter un rapport ou des résultats de recherche, aucune autre exportation ne peut être effectuée tant qu’une exportation n’est pas terminée.   <br/> |10  <br/> |
-|Nombre maximal d’exportations qu’un seul utilisateur peut exécuter <br/> |3  <br/> |
-|Le nombre maximal de résultats de recherche de boîtes aux lettres peut être téléchargé à l’aide de l’outil d’exportation eDiscovery dans le Centre de conformité Microsoft 365  <br/><br/> **Remarque :** Pour télécharger les résultats de la recherche à partir de plus de 100 000 boîtes aux lettres, vous devez utiliser le Centre de sécurité & conformité PowerShell. Pour obtenir des instructions, voir Exporter les résultats de plus [de 100 000 boîtes aux lettres.](#exporting-results-from-more-than-100000-mailboxes) <br/> | 100 000 <br/>|
-|Taille maximale du fichier PST qui peut être exporté <br/><br/> **Remarque :** Si les résultats de recherche de la boîte aux lettres d’un utilisateur sont supérieurs à 10 Go, les résultats de la recherche pour la boîte aux lettres sont exportés dans deux (ou plusieurs) fichiers PST distincts. Si vous choisissez d’exporter tous les résultats de la recherche dans un seul fichier PST, le fichier PST sera déposé dans des fichiers PST supplémentaires si la taille totale des résultats de la recherche est supérieure à 10 Go. Si vous souhaitez modifier cette taille par défaut, vous pouvez modifier le Registre Windows sur l’ordinateur que vous utilisez pour exporter les résultats de la recherche. Voir [Modifier la taille des fichiers PST lors de l’exportation des résultats de recherche eDiscovery.](change-the-size-of-pst-files-when-exporting-results.md) Les résultats de la recherche provenant d’une boîte aux lettres spécifique ne sont pas répartis entre plusieurs fichiers PST, sauf si le contenu d’une seule boîte aux lettres est supérieur à 10 Go. Si vous avez choisi d’exporter les résultats de la recherche dans un fichier PST contenant tous les messages d’un même dossier et que les résultats de la recherche sont supérieurs à 10 Go, les éléments sont toujours organisés dans l’ordre chronologique, de sorte qu’ils seront ajoutés dans des fichiers PST supplémentaires en fonction de la date d’envoi.<br/> | 10 Go <br/> |
-|Évaluer à quel niveau les résultats de recherche provenant de boîtes aux lettres et de sites sont téléchargés vers un emplacement de stockage Azure fourni par Microsoft. |Maximum de 2 Go par heure|
-|||
-
-Pour plus d’informations sur les autres limites, voir [Limites pour la recherche de contenu.](limits-for-content-search.md) 
+Pour plus d’informations sur les limites lors de l’exportation des résultats de recherche de contenu, voir la section « Limites d’exportation » dans [Limites pour la recherche de contenu.](limits-for-content-search.md#export-limits)
 
 ### <a name="export-reports"></a>Exporter des rapports
   

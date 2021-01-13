@@ -1,6 +1,6 @@
 ---
 title: Technologies associées de Bureau géré Microsoft
-description: Cette rubrique répertorie les technologies et les applications utilisées dans le bureau géré Microsoft.
+description: Cet article répertorie les technologies et applications utilisées dans bureau géré Microsoft.
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
@@ -9,45 +9,45 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 9ec6f73996b2626ef62d33435ed88fb08dfc1a16
-ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
+ms.openlocfilehash: cb368939e87ddbbfc8f5386c6fc5d6bff110a7ec
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49126578"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840900"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Technologies associées de Bureau géré Microsoft
 
-Cette rubrique répertorie les technologies et les applications utilisées dans le bureau géré Microsoft.
+Cet article répertorie les technologies et applications utilisées dans bureau géré Microsoft.
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- in O365 table, standard suite, removed this sentence "Please see the Installation of Project/Visio 64bit Click to Run Addendum for important deployment instructions. -->
 
-La licence Microsoft 365 Enterprise est requise pour tous les utilisateurs du bureau géré Microsoft. Pour plus d’informations sur les exigences en matière de licences pour le service, reportez-vous à [Prerequisites for Microsoft Managed Desktop](../get-ready/prerequisites.md).
+La gestion des licences Microsoft 365 Entreprise est requise pour tous les utilisateurs du Bureau géré Microsoft. Pour plus d’informations sur les conditions requises en matière de licences pour le service, voir [Prerequisites for Microsoft Managed Desktop](../get-ready/prerequisites.md).
 
-Cette rubrique résume les composants inclus dans les licences d’entreprise requises, ainsi qu’une description de la manière dont le service utilise chaque composant avec les appareils de bureau gérés Microsoft. Les rôles et responsabilités spécifiques de chaque domaine sont détaillés dans la documentation du bureau géré Microsoft. 
+Cet article récapitule les composants inclus dans les licences d’entreprise requises, avec une description de la façon dont le service utilise chaque composant avec les appareils bureau géré Microsoft. Les rôles et responsabilités spécifiques pour chaque domaine sont détaillés dans la documentation du Bureau géré Microsoft. 
 
 ## <a name="office-365-e3-or-e5"></a>Office 365 E3 ou E5
  |
  --- | ---
-Applications Microsoft 365 pour les entreprises (64 bits) | Ces applications Office seront livrées avec le périphérique : Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype entreprise, OneNote.<br><br>Les versions 64 bits complètes de Microsoft Project et Microsoft Visio ne sont pas incluses. Toutefois, étant donné que l’installation de ces applications dépend de l’installation des applications Microsoft 365 pour Enterprise, le bureau géré Microsoft a créé des déploiements Microsoft Intune et des groupes de sécurité par défaut, que vous pouvez ensuite utiliser pour déployer ces applications auprès des utilisateurs titulaires d’une licence. Pour plus d’informations, consultez la rubrique [installer Microsoft Project ou Microsoft Visio sur des appareils de bureau gérés Microsoft](../get-started/project-visio.md).
-OneDrive |L’authentification unique Azure Active Directory est activée pour les utilisateurs lors de la première connexion à OneDrive.<br><br>La redirection de dossiers connue pour les dossiers « bureau », « document » et « images » est incluse ; activé et configuré par le bureau géré Microsoft.
-Store Apps |    Microsoft Sway et Power BI ne sont pas fournis avec l’appareil. Ces applications peuvent être téléchargées à partir du Microsoft Store.
-Applications Win32 |    Teams n’est pas fourni avec le périphérique, mais il est empaqueté et fourni par Microsoft pour les appareils de bureau gérés par Microsoft. Le client Azure information protection n’est pas livré avec l’appareil, mais vous pouvez en faire un package pour le déploiement.
-Applications Web |  Yammer, Office dans un navigateur, Delve, Flow, StaffHub, PowerApps et Planner ne sont pas fournis avec l’appareil. Les utilisateurs peuvent accéder à la version Web de ces applications à l’aide d’un navigateur.
+Applications Microsoft 365 pour les entreprises (64 bits) | Ces applications Office seront livrées avec l’appareil : Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype Entreprise, OneNote.<br><br>Les versions complètes 64 bits de Microsoft Project et Microsoft Visio ne sont pas incluses. Toutefois, étant donné que l’installation de ces applications dépend de l’installation des applications Microsoft 365 pour les entreprises, Bureau géré Microsoft a créé des déploiements et des groupes de sécurité Microsoft Intune par défaut que vous pouvez ensuite utiliser pour déployer ces applications pour les utilisateurs sous licence. Pour plus d’informations, voir [Installer Microsoft Project ou Microsoft Visio sur les appareils de bureau géré Microsoft.](../get-started/project-visio.md)
+OneDrive |L’ion unique Azure Active Directory est activée pour les utilisateurs lorsqu’ils se connectent pour la première fois à OneDrive.<br><br>La redirection de dossiers connue pour les dossiers « Bureau », « Document » et « Images » est incluse ; activé et configuré par Bureau géré Microsoft.
+Store Apps |    Microsoft Sway et Power BI ne sont pas livrés avec l’appareil. Ces applications sont disponibles en téléchargement à partir du Microsoft Store.
+Win32 Applications |    Teams n’est pas fourni avec l’appareil, mais il est empaqueté et fourni par Microsoft pour les appareils bureau géré Microsoft. Le client Azure Information Protection n’est pas livré avec l’appareil, mais vous pouvez le faire empaqueté pour le déploiement.
+Applications Web |  Yammer, Office dans un navigateur, Delve, Flow, StaffHub, PowerApps et planner ne sont pas livrés avec l’appareil. Les utilisateurs peuvent accéder à la version web de ces applications avec un navigateur.
 
 
-## <a name="windows-10-enterprise-e5-or-e3-with-microsoft-defender-for-endpoint"></a>Windows 10 entreprise E5 ou E3 avec Microsoft Defender pour le point de terminaison
+## <a name="windows-10-enterprise-e5-or-e3-with-microsoft-defender-for-endpoint"></a>Windows 10 Entreprise E5 ou E3 avec Microsoft Defender pour Point de terminaison
 
  |
  --- | ---
-Virtualisation d’application (App-V) |    Les clients peuvent déployer des packages App-V à l’aide du client de gestion des applications Win32 Intune.
-Microsoft Defender pour point de terminaison |    Microsoft Managed Desktop utilise cette fonctionnalité pour surveiller la sécurité des appareils. 
+Application Virtualization (App-V) |    Les clients peuvent déployer des packages App-V à l’aide du client de gestion des applications Intune Win32.
+Microsoft Defender pour point de terminaison |    Bureau géré Microsoft utilise ce produit pour surveiller la sécurité des appareils. 
 
 ## <a name="enterprise-mobility--security-e5"></a>Enterprise Mobility + Security E5
 
  |
  --- | ---
-Enterprise Mobility + Security E3<br>Azure Active Directory Premium P2 |    Vous pouvez utiliser toutes les fonctionnalités de Enterprise Mobility + Security E3 et Azure Active Directory Premium P2 pour gérer les appareils MDM.
-Microsoft Cloud App Security |  Vous pouvez utiliser cette fonctionnalité facultative avec le bureau géré Microsoft.
-Azure information protection P2  | Vous pouvez utiliser cette fonctionnalité facultative avec le bureau géré Microsoft.
+Enterprise Mobility + Security E3<br>Azure Active Directory Premium P2 |    Vous pouvez utiliser toutes les fonctionnalités d’Enterprise Mobility + Security E3 et Azure Active Directory Premium P2 pour gérer les appareils GDM.
+Microsoft Cloud App Security |  Vous pouvez utiliser cette fonctionnalité facultative avec Bureau géré Microsoft.
+Azure Information Protection P2  | Vous pouvez utiliser cette fonctionnalité facultative avec Bureau géré Microsoft.

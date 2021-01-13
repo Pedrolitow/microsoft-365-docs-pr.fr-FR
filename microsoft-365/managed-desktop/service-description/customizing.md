@@ -1,7 +1,7 @@
 ---
 title: Exceptions au plan de service
-description: ''
-keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
+description: Comment demander des exceptions au plan de service standard
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -9,72 +9,72 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 0785d7ac12c7b027322338d9949a10ea30168b3b
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 97fe3fe1734908c46dcfff4acd76ce9ae5b8b1a5
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289060"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841266"
 ---
 # <a name="exceptions-to-the-service-plan"></a>Exceptions au plan de service
 
-Microsoft Managed Desktop fournit une liste d’appareils organisée, des [paramètres standard des appareils](device-policies.md), des applications requises et certains [paramètres configurables](../working-with-managed-desktop/config-setting-overview.md), tous conçus pour offrir une expérience sécurisée, productive et agréable pour les utilisateurs. Il est préférable de toujours conserver le service tel qu’il est fourni. Toutefois, nous reconnaissons que certains détails du service ne correspondent pas exactement aux besoins de votre organisation. Si vous pensez que vous devez modifier le service d’une certaine façon, il est important de suivre les processus suivants pour demander ces modifications.
+Bureau géré Microsoft fournit une liste d’appareils organisés, des [paramètres](device-policies.md)d’appareil standard, des exigences d’applications et certains [paramètres configurables, conçus](../working-with-managed-desktop/config-setting-overview.md)pour offrir une expérience sécurisée, productive et agréable aux utilisateurs. Il est préférable de toujours rester avec le service tel que fourni. Toutefois, nous savons que certains détails du service peuvent ne pas répondre exactement aux besoins de votre organisation. Si vous pensez avoir besoin de modifier le service d’une certaine manière, il est important que vous suiviez les processus suivants pour demander ces modifications.
  
 ## <a name="types-of-exceptions"></a>Types d’exceptions
 
-Une exception est l’ajout ou la modification de la configuration de base du bureau géré Microsoft ; des exemples vont de la configuration des ports USB au déploiement d’un nouveau pilote de périphérique. Nous regroupons différentes exceptions comme suit :
+Une exception est tout ajout ou toute modification à la configuration de base du Bureau géré Microsoft ; Les exemples vont de la configuration des ports USB au déploiement d’un nouveau pilote de périphérique. Nous groupons différentes exceptions comme suit :
 
 |Type  |Description  |
 |---------|---------|
-|Logiciels de productivité     |  Logiciels de premier plan requis par les utilisateurs, limités par les exigences de l' [application](mmd-app-requirements.md)       |
-|Agents de sécurité & VPN     |  Logiciel utilisé pour sécuriser, surveiller ou modifier le comportement du périphérique ou du réseau       |
-|Surveillance de l’expérience numérique     |  Logiciel utilisé pour effectuer le suivi des données sur l’appareil d’un utilisateur pour lui faire rapport.       |
-|Pilotes matériels ou logiciels     |   Pilotes de périphériques, restreints par les exigences de l' [application](mmd-app-requirements.md)      |
-|Stratégies     | Applications Windows 10 ou Microsoft 365 pour les paramètres d’entreprise sur un appareil géré        |
-|Appareils     | Appareils qui ne figurent pas dans la [liste](device-list.md) des appareils de bureau géré Microsoft        |
-|Autre     |  Tout ce qui n’est pas couvert par les autres zones       |
+|Logiciels de productivité     |  Logiciels de premier plan requis par les utilisateurs, restreints par les exigences [de l’application](mmd-app-requirements.md)       |
+|Agents de sécurité & VPN     |  Logiciels utilisés pour sécuriser, surveiller ou modifier le comportement de l’appareil ou du réseau       |
+|Surveillance de l’expérience numérique     |  Logiciel utilisé pour suivre les données sur l’appareil d’un utilisateur afin de les signaler à l’informatique       |
+|Pilotes matériels ou logiciels     |   Pilotes de périphérique, restreints par les exigences de [l’application](mmd-app-requirements.md)      |
+|Stratégies     | Paramètres Windows 10 ou Microsoft 365 Apps pour entreprise sur un appareil géré        |
+|Appareils     | Appareils qui ne se sont pas répertoriés dans la liste des appareils bureau [géré](device-list.md) Microsoft        |
+|Autres     |  Tout ce qui n’est pas couvert par les autres domaines       |
  
 ## <a name="request-an-exception"></a>Demander une exception
 
-Soumettez des demandes via le portail d’administration de bureau géré Microsoft en créant une demande de modification. N’oubliez pas d’inclure les détails suivants :
+Envoyez des demandes via le portail d’administration du bureau géré Microsoft en créant une demande de modification. N’oubliez pas d’inclure les détails suivants :
 
--   Type d’exemption : quelle catégorie d’exception est-elle ? (reportez-vous au tableau précédent)
--   Exigence : Quelles sont les exigences métiers spécifiques pour l’exception ?
--   Proposition : quelle solution votre entreprise demande-t-elle ?
--   Chronologie : combien de temps souhaitez-vous que cette exception dure ? 
+-   Type d’exemption : quelle catégorie d’exception s’agit-il ? (voir le tableau précédent)
+-   Exigence : quelle est la condition professionnelle spécifique pour l’exception ?
+-   Proposition : quelle solution votre entreprise demande-t-elle ?
+-   Chronologie : pendant combien de temps voulez-vous que cette exception dure ? 
 
-## <a name="how-we-assess-an-exception-request"></a>Comment nous évaluons une demande d’exception
+## <a name="how-we-assess-an-exception-request"></a>Évaluation d’une demande d’exception
 
-Lorsque nous examinez les demandes d’exception, nous évaluons ces facteurs dans cet ordre :
+Lorsque nous examinerons les demandes d’exception, nous évaluons ces facteurs dans cet ordre :
  
-1.  Certaines applications et stratégies déployées par Microsoft Managed Desktop sur tous les appareils ne sont pas négociables, de sorte que votre requête ne doit pas les affecter. Pour plus d’informations, voir Configuration de l' [appareil](device-policies.md) .
-2.  Les logiciels de productivité restreints requis par un utilisateur pour effectuer leur travail seront vraisemblablement approuvés. 
-3.  Si nous pouvons répondre à vos besoins à l’aide de la technologie Microsoft, nous approuverons probablement votre demande pour une période de migration des exceptions de trois à douze mois (en fonction de l’étendue du projet).
-4.  Si nous ne pouvons pas répondre à vos besoins à l’aide de la technologie Microsoft, nous approuvons probablement votre demande, sauf si elle viole l’une des conditions ci-dessous.  
+1.  Certaines applications et stratégies déployées par Le Bureau géré Microsoft sur tous les appareils ne sont pasgociables. Votre demande ne doit donc pas les affecter. Pour plus [d’informations,](device-policies.md) voir Configuration de l’appareil.
+2.  Les logiciels de productivité restreints requis par un utilisateur pour faire leur travail seront probablement approuvés. 
+3.  Si nous pouvons répondre à vos exigences à l’aide de la technologie Microsoft, nous approuverons probablement votre demande pour une période de migration d’exception de trois à 12 mois (selon l’étendue du projet).
+4.  Si nous ne pouvons pas répondre à vos exigences à l’aide de la technologie Microsoft, nous approuverons probablement votre demande, sauf si elle enfreint l’une des conditions ci-dessous.  
 
-Ces principes permettent de s’assurer que le bureau géré Microsoft peut toujours répondre à vos besoins lors du suivi des écarts par rapport à notre modèle standard. 
+Ces principes garantissent que Bureau géré Microsoft peut toujours répondre à vos besoins tout en suivant les écarts par rapport à notre modèle standard. 
 
 ## <a name="key-conditions"></a>Conditions clés
 
-Nous allons passer en revue les exceptions afin de s’assurer qu’elles n’enfreignent aucune des conditions suivantes :
+Nous examinerons les exceptions pour nous assurer qu’elles ne violent pas l’une des conditions ci-après :
 
 -   Une exception ne doit pas avoir d’impact négatif sur la sécurité du système. 
--   La gestion de l’exception ne doit pas occasionner de coûts significatifs pour les opérations ou la prise en charge de Microsoft Managed Desktop.
--   Une exception ne doit pas affecter la stabilité du système, par exemple, en provoquant un blocage ou un blocage du mode noyau.
--   Le changement ne doit pas nous empêcher d’utiliser le service ou le conflit avec la technologie principale de bureau géré Microsoft.
+-   La maintenance de l’exception ne doit pas avoir de coût significatif pour les opérations de Bureau géré Microsoft ou la prise en charge.
+-   Une exception ne doit pas affecter la stabilité du système, par exemple en provoquant des incidents ou des incidents en mode noyau.
+-   La modification ne doit pas nous empêcher d’exploiter le service ou d’être en conflit avec la technologie principale du Bureau géré Microsoft.
 
-Ces conditions peuvent être modifiées à l’avenir. Si nous faisons ces modifications, nous vous fournirons un préavis de 30 jours avant que ces conditions entrent en vigueur.  Si Microsoft Managed Desktop offre un autre moyen de répondre à une exception approuvée, le bureau géré Microsoft avertit le client si le bureau géré par Microsoft a modifié la manière de prendre en charge l’exception. 
+Ces conditions peuvent changer à l’avenir. Si nous arons apporté de telles modifications, nous fournirons un préavis de 30 jours avant que ces conditions entrent en vigueur.  Si Bureau géré Microsoft offre une autre façon de répondre à une exception approuvée, Bureau géré Microsoft informe le client si bureau géré Microsoft modifie la façon de prendre en charge l’exception. 
 
-## <a name="revoking-approval-for-an-exception"></a>Révocation de l’approbation pour une exception
+## <a name="revoking-approval-for-an-exception"></a>Révocation de l’approbation d’une exception
 
-Une fois qu’une exception demandée est approuvée et déployée, il est possible que nous découvrons des problèmes qui enfreignent les conditions clés qui n’étaient pas évidentes lorsque nous avons approuvé la modification à la première place. Dans ce cas, nous pouvons être amenés à révoquer l’approbation pour l’exception.
+Après l’approbation et le déploiement d’une exception demandée, il est possible que nous découvrons des problèmes qui ne respectent pas les conditions clés qui n’étaient pas évidentes lorsque nous avons approuvé la modification en premier lieu. Dans ce cas, il se peut que nous deions révoquer l’approbation de l’exception.
  
-Dans ce cas, nous vous en informerons à l’aide du portail d’administration de bureau géré Microsoft. À partir de la première fois que nous vous avertissons, vous disposez de 90 jours pour supprimer l’exception avant que les appareils avec l’exception ne soient plus liés par les contrats de niveau de service de bureau géré Microsoft. Nous vous enverrons plusieurs notifications en fonction d’une chronologie stricte : Toutefois, un incident ou une menace grave pourrait nécessiter de modifier la chronologie ou nos décisions concernant une exception. Nous ne *supprimerons* pas d’exception sans votre consentement, mais tous les appareils avec une exception révoquée ne seront plus liés par notre contrat de niveau de service. Voici la chronologie des notifications que nous vous enverrons :
+Si cela se produit, nous vous en informerons à l’aide du portail d’administration bureau géré Microsoft. À partir de la première notification, vous avez 90 jours pour supprimer l’exception avant que les appareils à l’exception ne soient plus liés par les contrats de niveau de service Bureau géré Microsoft. Nous vous enverrons plusieurs notifications en fonction d’une chronologie stricte. Toutefois, un incident grave ou une menace peut nous obliger à modifier la chronologie ou nos décisions concernant une exception. Nous ne *supprimerons* pas une exception sans votre consentement, mais tout appareil avec une exception révoquée ne sera plus lié par notre contrat de niveau de service. Voici la chronologie des notifications que nous vous envoyons :
 
-- **Première notification :** Nous fournissons le premier avis de notre décision de révoquer l’approbation, notamment des informations sur la raison de la révocation, les actions que nous vous recommandons de prendre, la date d’échéance de ces actions et les étapes à suivre pour contester la décision. Il s’agit de 90 jours avant la suppression de l’exception de tous les appareils. 
-- **Deuxième notification (30 jours plus tard) :** Nous fournissons une deuxième notification, incluant les mêmes informations que dans le premier avis. 
-- **Troisième mention (60 jours après la première notification) :** Nous fournissons une troisième notification, incluant les mêmes informations que dans le premier avis. 
-- **Dernière mention (1 semaine avant le délai d' 90 jours) :** Nous fournissons une quatrième notification, notamment les mêmes informations que dans le premier avis.
-- **90 jours après la première notification :** Les contrats de niveau de service de bureau géré Microsoft ne s’appliquent plus à tous les appareils qui ont l’exception révoquée. À tout moment, vous pouvez contester la décision et fournir des informations supplémentaires à prendre en compte, notamment la mise à niveau, les modifications apportées à la configuration ou le changement de logiciel. 
+- **Première remarque :** Nous fournissons le premier avis de notre décision de révoquer l’approbation, notamment des informations sur la raison de sa révocation, les actions que nous vous conseillons de prendre, l’échéance de ces actions et les étapes à suivre si vous souhaitez faire appel de la décision. Cet avis se produit 90 jours à l’avance avant que l’exception ne soit supprimée de tous les appareils. 
+- **Deuxième avis (30 jours plus tard) :** Nous fournissons un deuxième avis, y compris les mêmes informations que celles fournies dans le premier avis. 
+- **Troisième avis (60 jours après le premier avis) :** Nous fournissons un troisième avis, y compris les mêmes informations que celles fournies dans le premier avis. 
+- **Notification finale (une semaine avant l’échéance de 90 jours) :** Nous fournissons un quatrième avis, y compris les mêmes informations que celles fournies dans le premier avis.
+- **90 jours après la première notification :** Les contrats de niveau de service Bureau géré Microsoft ne s’appliquent plus aux appareils qui ont l’exception révoquée. À tout moment, vous pouvez défier la décision et fournir des informations supplémentaires à prendre en compte, notamment la mise à niveau, les modifications de configuration ou la modification des logiciels. 
 
 

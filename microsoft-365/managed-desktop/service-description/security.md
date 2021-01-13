@@ -1,6 +1,6 @@
 ---
-title: Technologies de sécurité dans le bureau géré Microsoft
-description: ''
+title: Technologies de sécurité dans bureau géré Microsoft
+description: Technologies utilisées pour la sécurité des appareils, la gestion des identités et des accès, la sécurité du réseau et la sécurité des informations
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
@@ -8,51 +8,51 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: e69656e13cd9a300cd56bdd5db7703f2387d23d4
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 5076ddca6053adc7cebb9599c8d82a42c7ab5a63
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846203"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840912"
 ---
-# <a name="security-technologies-in-microsoft-managed-desktop"></a>Technologies de sécurité dans le bureau géré Microsoft
+# <a name="security-technologies-in-microsoft-managed-desktop"></a>Technologies de sécurité dans bureau géré Microsoft
 
 <!--Security, also Onboarding doc: data handling/store, privileged account access -->
 
-Microsoft Managed Desktop utilise plusieurs technologies Microsoft pour sécuriser les appareils et les données gérés. En outre, le centre d’opérations de sécurité de bureau géré Microsoft utilise un grand nombre de [processus](security-operations.md) en association avec ces technologies.
+Bureau géré Microsoft utilise plusieurs technologies Microsoft pour sécuriser les appareils gérés et les données. En outre, le Centre d’opérations de sécurité bureau géré Microsoft utilise différents [processus](security-operations.md) conjointement avec ces technologies.
 
 Notamment : 
 
-- [Sécurité des appareils](#device-security) – sécurité et protection sur les appareils de bureau gérés Microsoft
-- [Gestion des identités et des accès](#identity-and-access-management) : gestion de l’utilisation sécurisée des appareils via les services d’identité Azure Active Directory
-- [Sécurité réseau](#network-security) – informations VPN et solution et paramètres recommandés pour Microsoft Managed Desktop
-- [Sécurité des informations](#information-security) – services disponibles en option pour protéger davantage les informations sensibles 
+- [Sécurité des appareils](#device-security) : sécurité et protection sur les appareils de bureau géré Microsoft
+- [Gestion des identités et des accès :](#identity-and-access-management) gestion de l’utilisation sécurisée des appareils via les services d’identité Azure Active Directory
+- [Sécurité réseau](#network-security) : informations VPN et solution et paramètres recommandés du Bureau géré Microsoft
+- [Sécurité des informations](#information-security) : services disponibles facultatifs pour protéger davantage les informations sensibles 
 
-Pour plus d’informations sur le stockage de données, l’utilisation et les pratiques de sécurité utilisées par le bureau géré Microsoft, consultez notre livre blanc sur [https://aka.ms/mmd-data](https://aka.ms/mmd-data) .
+Pour plus d’informations sur les pratiques de stockage, d’utilisation et de sécurité des données utilisées par Le Bureau géré Microsoft, consultez notre livre blanc sur [https://aka.ms/mmd-data](https://aka.ms/mmd-data) .
 
 
 ## <a name="device-security"></a>Sécurité de l’appareil
 
-Microsoft Managed Desktop garantit que tous les appareils gérés sont sécurisés et protégés, et détecte les menaces dès que possible à l’aide des services suivants :
+Bureau géré Microsoft garantit que tous les appareils gérés sont sécurisés et protégés, et détecte les menaces dès que possible à l’aide des services suivants :
 
 Service | Description
 --- | ---
-Antivirus | Microsoft Defender AV est installé et configuré<br>Les définitions d’antivirus Microsoft Defender sont à jour
-Chiffrement de volume complet |    Windows BitLocker est la solution de chiffrement de volume pour les appareils de bureau gérés par Microsoft.<br><br>Une fois qu’une organisation est intégrée au service, les appareils sont chiffrés à l’aide de Windows BitLocker avec le module de plateforme d’approbation intégré (TPM) pour empêcher l’accès non autorisé aux données locales lorsque l’appareil est en mode veille ou inversement. 
-Surveillance |    Microsoft Defender for Endpoint est utilisé pour la surveillance des menaces de sécurité sur tous les appareils de bureau gérés par Microsoft. Defender for Endpoint permet aux clients d’entreprise de détecter, d’examiner et de répondre aux menaces avancées dans leur réseau d’entreprise. Pour plus d’informations, reportez-vous à [Microsoft Defender for Endpoint.](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) 
-Mises à jour du système d’exploitation |  Les périphériques de bureau gérés Microsoft sont toujours sécurisés avec les dernières mises à jour de sécurité.
-Configuration d’appareil sécurisée |   Microsoft Managed Desktop implémente la base de sécurité Microsoft. Pour plus d’informations, consultez la rubrique [Windows Security baselines.](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines)
+Antivirus | L’Antivirus Microsoft Defender est installé et configuré<br>Les définitions de Microsoft Defender AV sont à jour
+Chiffrement de volume complet |    Windows BitLocker est la solution de chiffrement de volume pour les appareils bureau géré Microsoft.<br><br>Une fois qu’une organisation est intégrée au service, les appareils sont chiffrés à l’aide de Windows BitLocker avec le module de plateforme de gestion de la plateforme de confiance (TPM) intégré pour empêcher l’accès non autorisé aux données locales lorsque l’appareil est en mode veille ou hors service. 
+Surveillance |    Microsoft Defender for Endpoint est utilisé pour la surveillance des menaces de sécurité sur tous les appareils de bureau géré Microsoft. Defender pour le point de terminaison permet aux clients d’entreprise de détecter, d’examiner et de répondre aux menaces avancées dans leur réseau d’entreprise. Pour plus d’informations, [voir Microsoft Defender pour le point de terminaison.](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) 
+Mises à jour du système d’exploitation |  Les appareils bureau géré Microsoft sont toujours sécurisés avec les dernières mises à jour de sécurité.
+Configuration de l’appareil sécurisé |   Bureau géré Microsoft implémente la ligne de base de sécurité Microsoft. Pour plus d’informations, voir [les lignes de base de sécurité Windows.](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines)
 
 
 
 ## <a name="identity-and-access-management"></a>Gestion des identités et des accès
 
-La gestion des identités et des accès protège les ressources d’entreprise et les données critiques. Microsoft Managed Desktop configure les appareils pour garantir une utilisation sécurisée avec les identités gérées Azure Active Directory (Azure AD). Il incombe au client de maintenir des informations précises dans son client Azure AD. 
+La gestion des identités et des accès protège les biens d’entreprise et les données stratégiques de l’entreprise. Bureau géré Microsoft configure les appareils pour garantir une utilisation sécurisée avec les identités gérées Azure Active Directory (Azure AD). Il incombe au client de conserver des informations précises dans son client Azure AD. 
 
 Service | Description
 --- | ---
-Authentification biométrique |  Windows Hello permet aux utilisateurs de se connecter à l’aide de leur face ou d’un code confidentiel, ce qui rend les mots de passe plus difficiles à oublier ou à voler. Les clients sont responsables de la mise en œuvre des conditions préalables requises pour l’utilisation d’Active Directory sur site pour l’utilisation de ce service dans une configuration hybride. Pour plus d’informations, consultez la rubrique [Windows Hello.](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello) 
-Autorisation utilisateur standard |  Pour protéger le système et le sécuriser, l’utilisateur reçoit des autorisations d’utilisateur standard. Cela est affecté dans le cadre de l’expérience utilisateur Windows AutoPilot.
+Authentification biométrique |  Windows Hello permet aux utilisateurs de se connecter à l’aide de leur visage ou d’un code confidentiel, rendant les mots de passe plus difficiles à oublier ou à voler. Les clients sont chargés d’implémenter les conditions préalables nécessaires à leur active directory local pour l’utilisation de ce service dans une configuration hybride. Pour plus d’informations, [voir Windows Hello.](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello) 
+Autorisation utilisateur standard |  Pour protéger le système et le sécuriser, l’utilisateur se voit attribuer des autorisations d’utilisateur standard. Cette autorisation est attribuée dans le cadre de l’expérience Windows Autopilot out-of-box.
 
 
 
@@ -62,15 +62,15 @@ Les clients sont responsables de la sécurité du réseau.
 
 Service | Description
 --- | ---
-VPN | Les clients possèdent leur infrastructure VPN, afin de s’assurer que les ressources d’entreprise limitées peuvent être exposées à l’extérieur de l’intranet.<br><br>Configuration minimale requise : Microsoft Managed Desktop requiert une solution VPN compatible et prise en charge Windows 10. Si votre organisation a besoin d’une solution VPN, elle doit prendre en charge Windows 10 et être empaquetée et déployée via Intune. Pour plus d’informations, contactez votre éditeur de logiciel.<br><br>Conseille<br>-Microsoft recommande une solution VPN moderne pouvant être déployée facilement via Intune pour envoyer des profils VPN. Cela permet d’accéder aux réseaux d’entreprise de manière permanente, fiable et sécurisée. Pour plus d’informations, reportez-vous à [[VPN Settings in Intune]](https://docs.microsoft.com/intune/vpn-settings-configure).<br>-Les clients VPN épais, ou les clients VPN hérités, ne sont pas recommandés par Microsoft lors de l’utilisation de Microsoft Managed Desktop car cela peut avoir un impact sur l’environnement de l’utilisateur.<br>-Microsoft recommande que le trafic Web sortant accède directement à Internet sans passer par le VPN pour éviter les problèmes de performances.<br>Pour l’idéal, Microsoft recommande l’utilisation du proxy d’application Azure Active Directory au lieu d’un VPN.
+VPN | Les clients possèdent leur infrastructure VPN, pour s’assurer que des ressources limitées de l’entreprise peuvent être exposées en dehors de l’intranet.<br><br>Exigence minimale : Bureau géré Microsoft nécessite une solution VPN compatible avec Windows 10 et prise en charge. Si votre organisation a besoin d’une solution VPN, elle doit prendre en charge Windows 10 et être empaqueté et déployable via Intune. Pour plus d’informations, contactez votre éditeur de logiciels.<br><br>Recommandation :<br>- Microsoft recommande une solution VPN moderne qui pourrait être facilement déployée via Intune pour pousser les profils VPN. Cette approche offre un moyen toujours continu, transparent, fiable et sécurisé d’accéder au réseau d’entreprise. Pour plus d’informations, [voir [Paramètres VPN dans Intune]](https://docs.microsoft.com/intune/vpn-settings-configure).<br>- Les clients VPN épais, ou les clients VPN plus anciens, ne sont pas recommandés par Microsoft lors de l’utilisation du Bureau géré Microsoft, car cela peut avoir un impact sur l’environnement utilisateur.<br>- Microsoft recommande que le trafic web sortant soit directement vers Internet sans passer par le VPN afin d’éviter tout problème de performances.<br>- Dans l’idéal, Microsoft recommande l’utilisation du proxy d’application Azure Active Directory au lieu d’un VPN.
 
 
 ## <a name="information-security"></a>Sécurité des informations
 
-Vous pouvez configurer ces services facultatifs afin de protéger les biens d’entreprise à valeur élevée. 
+Vous pouvez configurer ces services facultatifs pour protéger les biens à valeur élevée de l’entreprise. 
 
 Service | Description
 --- | ---
-Récupération de données  | Les informations stockées dans les dossiers clés sur l’appareil sont sauvegardées dans OneDrive entreprise. Le bureau géré Microsoft n’est pas responsable des données qui ne sont pas synchronisées avec OneDrive entreprise. 
-Protection des informations Windows |    Pour les entreprises qui nécessitent des niveaux élevés de sécurité des informations, nous recommandons la protection des informations [Windows](https://docs.microsoft.com/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip) et [Azure information protection.](https://www.microsoft.com/cloud-platform/azure-information-protection). 
+Récupération des données  | Les informations stockées dans les dossiers clés de l’appareil sont enregistrées dans OneDrive Entreprise. Bureau géré Microsoft n’est pas responsable des données qui ne sont pas synchronisées avec OneDrive Entreprise. 
+Protection des informations Windows |    Pour les entreprises qui requièrent des niveaux élevés de sécurité des informations, nous recommandons [la Protection](https://docs.microsoft.com/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip) des informations Windows et Azure [Information Protection.](https://www.microsoft.com/cloud-platform/azure-information-protection) 
 

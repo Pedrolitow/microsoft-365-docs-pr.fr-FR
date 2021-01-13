@@ -1,83 +1,83 @@
 ---
 title: Inscrivez vous-même les appareils existant
-description: Enregistrer les appareils réutilisés vous avez peut-être déjà des utilisateurs pour qu’ils puissent être gérés par le bureau géré Microsoft
+description: Inscrire les appareils réutilisés que vous avez peut-être déjà vous-même afin qu’ils soient gérés par Bureau géré Microsoft
 ms.prod: w10
 author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 1ad83dbf323e431e1694b408e09e581ff5b76348
-ms.sourcegitcommit: e9f32675061cd1cf4a3e2dada393e10d7c552efe
+ms.openlocfilehash: c2ba687b38f1de4d2ed09b0bd690e02b43f15f8d
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48279561"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840514"
 ---
 # <a name="register-existing-devices-yourself"></a>Inscrivez vous-même les appareils existant
 
 >[!NOTE]
->Cette rubrique décrit la procédure à suivre pour réutiliser les appareils dont vous disposez déjà et les enregistrer dans le bureau géré Microsoft. Si vous travaillez avec des appareils de marque, suivez plutôt les étapes de la procédure [inscrire de nouveaux appareils dans Microsoft Managed Desktop](register-devices-self.md) .
+>Cette rubrique décrit les étapes à suivre pour réutiliser les appareils que vous avez déjà et les inscrire dans Bureau géré Microsoft. Si vous travaillez avec de nouveaux appareils, suivez les étapes de l’enregistrement des nouveaux appareils dans Bureau géré [Microsoft](register-devices-self.md) vous-même.
 
-Le processus pour les partenaires est documenté dans la [procédure permettant aux partenaires d’inscrire des appareils](register-devices-partner.md).
+Le processus pour les partenaires est documenté dans la procédure [d’inscription](register-devices-partner.md)des appareils par les partenaires.
 
-Microsoft Managed Desktop peut fonctionner avec les nouveaux appareils ou vous pouvez réutiliser des appareils que vous avez peut-être déjà (ce qui vous obligera à les réimager). Vous pouvez enregistrer des appareils avec le bureau géré Microsoft dans le portail du gestionnaire de points de terminaison Microsoft.
+Bureau géré Microsoft peut fonctionner avec de nouveaux appareils ou vous pouvez réutiliser les appareils que vous avez peut-être déjà (ce qui nécessitera de les réimager). Vous pouvez inscrire des appareils avec Bureau géré Microsoft dans le portail Microsoft Endpoint Manager.
 
-## <a name="prepare-to-register-existing-devices"></a>Préparation à l’enregistrement des appareils existants
+## <a name="prepare-to-register-existing-devices"></a>Préparer l’inscription des appareils existants
 
 
-Pour enregistrer des appareils existants, procédez comme suit :
+Pour inscrire des appareils existants, suivez les étapes suivantes :
 
-1. [Obtenez le hachage matériel de chaque périphérique.](#obtain-the-hardware-hash)
+1. [Obtenez le hachage matériel pour chaque appareil.](#obtain-the-hardware-hash)
 2. [Fusionner les données de hachage](#merge-hash-data)
-3. [Inscrivez les appareils dans le bureau géré Microsoft](#register-devices-by-using-the-admin-portal).
+3. [Enregistrez les appareils dans Bureau géré Microsoft](#register-devices-by-using-the-admin-portal).
 4. [Vérifiez que l’image est correcte.](#check-the-image)
-5. [Remise de l’appareil](#deliver-the-device)
+5. [Remettre l’appareil](#deliver-the-device)
 
 ### <a name="obtain-the-hardware-hash"></a>Obtenir le hachage matériel
 
-Microsoft Managed Desktop identifie chaque appareil de manière unique en référençant son hachage matériel. Vous disposez de quatre options pour obtenir ces informations à partir d’appareils que vous utilisez déjà :
+Bureau géré Microsoft identifie chaque appareil de manière unique en référant son hachage matériel. Vous avez quatre options pour obtenir ces informations à partir des appareils que vous utilisez déjà :
 
-- Demandez à votre fournisseur OEM le fichier d’enregistrement automatique du pilote automatique, qui inclut les hachages matériels.
-- Collectez des informations dans le [Gestionnaire de configuration de point de terminaison Microsoft](#microsoft-endpoint-configuration-manager).
-- Exécutez un script Windows PowerShell, soit à l’aide d' [Active Directory](#active-directory-powershell-script-method) , soit [manuellement](#manual-powershell-script-method) sur chaque appareil, et recueillez les résultats dans un fichier.
-- Démarrez chaque périphérique--mais ne terminez pas l’expérience d’installation Windows--et [collectez les hachages sur un lecteur flash amovible](#flash-drive-method).
+- Demandez à votre fournisseur OEM le fichier d’inscription AutoPilot, qui inclut les h biens matériels.
+- Collectez des informations [dans Microsoft Endpoint Configuration Manager.](#microsoft-endpoint-configuration-manager)
+- Exécutez un Windows PowerShell script (à l’aide [](#manual-powershell-script-method) [d’Active Directory](#active-directory-powershell-script-method) ou manuellement sur chaque appareil) et collectez les résultats dans un fichier.
+- Démarrez chaque appareil(mais ne terminez pas l’expérience d’installation de Windows) et collectez les [hages](#flash-drive-method)sur un lecteur flash amovible.
 
 #### <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
 
-Vous pouvez utiliser le gestionnaire de configuration de point de terminaison Microsoft pour collecter les hachages matériels à partir des appareils existants que vous souhaitez enregistrer avec le bureau géré Microsoft.
+Vous pouvez utiliser Microsoft Endpoint Configuration Manager pour collecter les hages matériels à partir d’appareils existants que vous souhaitez inscrire auprès de Bureau géré Microsoft.
 
 > [!IMPORTANT]
-> Tous les appareils pour lesquels vous souhaitez obtenir ces informations doivent exécuter Windows 10, version 1703 ou ultérieure. 
+> Tous les appareils pour qui vous souhaitez obtenir ces informations doivent être exécutant Windows 10, version 1703 ou ultérieure. 
 
-Si vous avez rempli toutes ces conditions préalables, vous êtes prêt à collecter les informations en procédant comme suit :
+Si vous avez satisfait à toutes ces conditions préalables, vous êtes prêt à collecter les informations en suivant les étapes suivantes :
 
-1. Dans la console Configuration Manager, sélectionnez **analyse**. 
-2. Dans l’espace de travail analyse, développez le nœud **rapports** , développez **rapports**, puis sélectionnez le nœud **général matériel** . 
-3. Exécutez le rapport, les **informations du périphérique Windows AutoPilot**et affichez les résultats.
-4. Dans la visionneuse de rapports, sélectionnez l’icône **Exporter** , puis choisissez l’option **CSV (valeurs séparées par des virgules)** .
-5. Après avoir enregistré le fichier, vous devez filtrer les résultats sur les appareils que vous prévoyez de vous inscrire auprès du bureau géré Microsoft et charger les données sur le bureau géré Microsoft. Ouvrez le gestionnaire de points de terminaison Microsoft et accédez au menu **périphériques** , puis recherchez la section bureau géré Microsoft et sélectionnez **appareils**. Sélectionnez **+ inscrire les appareils** qui ouvrent un survol pour enregistrer de nouveaux appareils.
+1. Dans la console Configuration Manager, sélectionnez **Analyse.** 
+2. Dans l’espace de  travail Surveillance, développez le nœud Rapports, développez **Rapports** et sélectionnez le nœud Matériel **-** Général. 
+3. Exécutez le rapport, **Windows Autopilot Device Information** et affichez les résultats.
+4. Dans la visionneuse  de rapports, sélectionnez l’icône Exporter, puis choisissez l’option **CSV (délimitée** par des virgules).
+5. Après avoir enregistré le fichier, vous devez filtrer les résultats sur les appareils que vous prévoyez d’inscrire auprès du Bureau géré Microsoft et de charger les données sur bureau géré Microsoft. Ouvrez Microsoft Endpoint Manager et accédez au menu **Appareils,** puis recherchez la section Bureau géré Microsoft et sélectionnez **Appareils.** Sélectionnez **+ Inscrivez les** appareils, ce qui ouvre un fly-in pour inscrire de nouveaux appareils.
 
 
-Pour plus d’informations, reportez-vous à [la rubrique inscrire des appareils à l’aide du portail d’administration](#register-devices-by-using-the-admin-portal) .
+Pour plus [d’informations, voir Inscrire](#register-devices-by-using-the-admin-portal) des appareils à l’aide du portail d’administration.
 
 
 #### <a name="active-directory-powershell-script-method"></a>Méthode de script PowerShell Active Directory
 
-Dans un environnement Active Directory, vous pouvez utiliser l' `Get-WindowsAutoPilotInfo` applet de commande PowerShell pour collecter les informations à distance à partir de périphériques dans des groupes Active Directory à l’aide de WinRM. Vous pouvez également utiliser l' `Get-AD Computer` applet de commande et obtenir des résultats filtrés pour les noms de modèle de matériel spécifiques inclus dans le catalogue. Pour ce faire, vérifiez d’abord ces conditions préalables, puis passez aux étapes suivantes :
+Dans un environnement Active Directory, vous pouvez utiliser l’applet de commande PowerShell pour collecter à distance les informations des appareils des groupes Active Directory à l’aide de `Get-WindowsAutoPilotInfo` WinRM. Vous pouvez également utiliser la cmdlet et obtenir des résultats filtrés pour un nom de modèle matériel spécifique `Get-AD Computer` inclus dans le catalogue. Avant de poursuivre, confirmez d’abord ces conditions préalables, puis procédez comme vous le souhaitez :
 
 - WinRM est activé.
-- Les appareils que vous souhaitez enregistrer sont actifs sur le réseau (c’est-à-dire qu’ils ne sont pas déconnectés ou désactivés).
-- Assurez-vous que vous disposez d’un paramètre d’informations d’identification de domaine qui a l’autorisation de s’exécuter à distance sur les appareils.
-- Assurez-vous que le pare-feu Windows autorise l’accès à WMI. Pour ce faire, procédez comme suit :
+- Les appareils que vous souhaitez inscrire sont actifs sur le réseau (c’est-à-dire qu’ils ne sont pas déconnectés ou désactivés).
+- Assurez-vous que vous disposez d’un paramètre d’informations d’identification de domaine autorisé à s’exécuter à distance sur les appareils.
+- Assurez-vous que le Pare-feu Windows autorise l’accès à WMI. Pour ce faire, suivez les étapes suivantes :
 
-    1. Ouvrez le panneau de configuration du **pare-feu Windows Defender** et sélectionnez **autoriser une application ou une fonctionnalité via le pare-feu Windows Defender**.
+    1. Ouvrez le **panneau de Windows Defender pare-feu** et sélectionnez Autoriser une application ou une fonctionnalité **via Windows Defender pare-feu.**
     
-    2. Recherchez **Windows Management Instrumentation (WMI)** dans la liste, activez à la fois **privé et public**, puis cliquez sur **OK**.
+    2. Recherchez **Windows Management Instrumentation (WMI)** dans la liste, activez pour privé et **public,** puis sélectionnez **OK**.
 
 1.  Ouvrez une invite PowerShell avec des droits d’administration.
 
-2.  Exécutez l' *un* des scripts suivants :
+2.  Exécutez *l’un* de ces scripts :
 
     ```powershell
     Install-script -name Get-WindowsAutoPilotInfo 
@@ -90,51 +90,51 @@ Dans un environnement Active Directory, vous pouvez utiliser l' `Get-WindowsAuto
     Set-ExecutionPolicy powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo.ps1 -credential Domainname\<accountname> -Name Machine1,Machine2,Machine3
     ```
 
-3. Accéder à tous les répertoires où se trouvent des entrées pour les appareils. Supprimez les entrées de chaque périphérique de *tous les* répertoires, y compris les services de domaine Active Directory Windows Server et Azure Active Directory. N’oubliez pas que cette suppression peut prendre quelques heures.
+3. Accéder aux répertoires où il peut y avoir des entrées pour les appareils. Supprimez les entrées de chaque appareil de *tous* les répertoires, y compris windows Server Active Directory Domain Services et Azure Active Directory. N’ignorez pas que le processus de suppression peut prendre quelques heures.
 
-4. Services de gestion d’accès où il peut y avoir des entrées pour les périphériques. Supprimez les entrées de chaque périphérique de *tous les* services de gestion, y compris le gestionnaire de configuration de point de terminaison Microsoft, Microsoft Intune et Windows AutoPilot. N’oubliez pas que cette suppression peut prendre quelques heures.
+4. Accéder aux services de gestion où il peut y avoir des entrées pour les appareils. Supprimez les entrées de chaque appareil de tous les services de gestion, y compris Microsoft Endpoint Configuration Manager, Microsoft Intune et Windows Autopilot.  N’ignorez pas que le processus de suppression peut prendre quelques heures.
 
-À présent, vous pouvez procéder à l' [inscription des appareils](#register-devices-by-using-the-admin-portal).
+Vous pouvez désormais inscrire [des appareils.](#register-devices-by-using-the-admin-portal)
 
-#### <a name="manual-powershell-script-method"></a>Méthode de script PowerShell manuel
+#### <a name="manual-powershell-script-method"></a>Méthode de script PowerShell manuelle
 
 1.  Ouvrez une invite PowerShell avec des droits d’administration.
-2.  Générer `Install-Script -Name Get-WindowsAutoPilotInfo`
-3.  Générer `powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
+2.  Exécuter `Install-Script -Name Get-WindowsAutoPilotInfo`
+3.  Exécuter `powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
 4. [Fusionnez les données de hachage.](#merge-hash-data)
 
-#### <a name="flash-drive-method"></a>Flash Drive, méthode
+#### <a name="flash-drive-method"></a>Méthode de lecteur Flash
 
-1. Sur un appareil autre que celui que vous enregistrez, insérez un lecteur USB.
+1. Sur un appareil autre que celui que vous inscrivez, insérez un lecteur USB.
 2. Ouvrez une invite PowerShell avec des droits d’administration.
-3. Générer `Save-Script -Name Get-WindowsAutoPilotInfo -Path <pathToUsb>`
-4. Activez l’appareil que vous enregistrez, mais *ne démarrez pas l’installation*. Si vous démarrez accidentellement le programme d’installation, vous devrez réinitialiser ou recréer l’image de l’appareil.
-5. Insérez le lecteur USB, puis appuyez sur MAJ + F10.
+3. Exécuter `Save-Script -Name Get-WindowsAutoPilotInfo -Path <pathToUsb>`
+4. Activer l’appareil que vous inscrivez, mais *ne démarrez pas l’expérience de configuration.* Si vous démarrez accidentellement l’installation, vous devez réinitialiser ou réinitialiser l’appareil.
+5. Insérez le lecteur USB, puis appuyez sur Shift + F10.
 6. Ouvrez une invite PowerShell avec des droits d’administration, puis exécutez `cd <pathToUsb>` .
-7. Générer `Set-ExecutionPolicy -ExecutionPolicy Unrestricted`
-8. Générer `.\Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
-9. Supprimez le lecteur USB, puis arrêtez l’appareil en exécutant `shutdown -s -t 0`
+7. Exécuter `Set-ExecutionPolicy -ExecutionPolicy Unrestricted`
+8. Exécuter `.\Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
+9. Supprimez le lecteur USB, puis fermez l’appareil en exécutant `shutdown -s -t 0`
 10. [Fusionnez les données de hachage.](#merge-hash-data)
 
 >[!IMPORTANT]
->Ne mettez pas sous tension le périphérique que vous enregistrez jusqu’à ce que vous ayez terminé son inscription. 
+>N’alimentation sur l’appareil que vous inscrivez à nouveau tant que vous n’avez pas terminé l’inscription pour celui-ci. 
 
 
 
 ### <a name="merge-hash-data"></a>Fusionner les données de hachage
 
-Si vous avez collecté les données de hachage du matériel à l’aide de la méthode manuelle PowerShell ou Flash Drive, il vous faut maintenant que les données des fichiers CSV soient combinées en un seul fichier pour terminer l’inscription. Voici un exemple de script PowerShell pour faciliter cette tâche :
+Si vous avez collecté les données de hachage matériel par le manuel PowerShell ou les méthodes de disque mémoire flash, vous devez maintenant combiner les données dans les fichiers CSV en un seul fichier pour terminer l’inscription. Voici un exemple de script PowerShell pour faciliter l’accès :
 
 ```powershell
 Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformation | % {$_.Replace('"', '')} | Out-File .\aggregatedDevices.csv
 ```
 
-Une fois les données hachées fusionnées dans un fichier CSV, vous pouvez maintenant [enregistrer les appareils](#register-devices-by-using-the-admin-portal).
+Une fois les données de hachage fusionnées dans un fichier CSV, vous pouvez désormais enregistrer [les appareils.](#register-devices-by-using-the-admin-portal)
 
 
 #### <a name="register-devices-by-using-the-admin-portal"></a>Inscrire des appareils à l’aide du portail d’administration
 
-Dans le [Gestionnaire de points de terminaison Microsoft](https://endpoint.microsoft.com/), sélectionnez **périphériques** dans le volet de navigation de gauche. Recherchez la section bureau géré Microsoft du menu et sélectionnez **appareils**. Dans l’espace de travail périphériques de bureau gérés Microsoft, sélectionnez **+ inscrire les appareils** qui ouvrent un survol pour enregistrer de nouveaux appareils.
+Dans [Microsoft Endpoint Manager,](https://endpoint.microsoft.com/)sélectionnez **Appareils** dans le volet de navigation gauche. Recherchez la section Bureau géré Microsoft du menu et sélectionnez **Appareils.** Dans l’espace de travail Appareils de bureau gérés Microsoft, sélectionnez **+** Inscrivez les appareils, qui ouvre un fly-in pour inscrire de nouveaux appareils.
 
 <!-- Update with new picture [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
 
@@ -144,43 +144,43 @@ Dans le [Gestionnaire de points de terminaison Microsoft](https://endpoint.micro
 
 Procédez comme suit :
 
-1. Dans **chargement du fichier**, indiquez le chemin d’accès au fichier CSV que vous avez créé précédemment.
+1. Dans **le chargement de** fichier, fournissez un chemin d’accès au fichier CSV que vous avez créé précédemment.
 
-1. Sélectionnez **inscrire les appareils**. Le système ajoute les périphériques à votre liste d’appareils sur le panneau des **appareils**, marqué comme **inscription en attente**. L’inscription prend généralement moins de 10 minutes et, lorsque le périphérique s’affiche comme **prêt pour l’utilisateur** , ce qui signifie qu’il est prêt et qu’il attend qu’un utilisateur commence à utiliser.
+1. Sélectionnez **Enregistrer les appareils.** Le système ajoute les appareils à votre liste d’appareils sur le blade **Devices**, marqué comme **Étant en attente d’inscription.** L’inscription prend généralement moins de 10 minutes et, en cas de réussite, l’appareil s’affiche comme prêt pour l’utilisateur, ce qui signifie qu’il est prêt et attend qu’un utilisateur commence à l’utiliser. 
 
 
-Vous pouvez surveiller la progression de l’enregistrement de l’appareil sur la page principale. Les États possibles sont les suivants :
+Vous pouvez surveiller la progression de l’inscription de l’appareil sur la page principale. Les états possibles signalés sont les suivants :
 
 | État | Description |
 |---------------|-------------|
-| Inscription en attente | L’inscription n’est pas encore terminée. Réactivez-vous plus tard. |
-| Échec de l’inscription | L’inscription n’a pas pu aboutir. Pour plus d’informations, consultez la rubrique [Troubleshooting Device Registration](#troubleshooting-device-registration) . |
-| Prêt pour l’utilisateur | L’inscription a réussi et l’appareil est maintenant prêt à être remis à l’utilisateur. Microsoft Managed Desktop les guide tout au long du paramétrage, il n’est donc pas nécessaire d’effectuer d’autres préparatifs. |
-| Actif | L’appareil a été remis à l’utilisateur et il a été enregistré auprès de votre client. Cela indique également qu’ils utilisent régulièrement l’appareil. |
-| Inactive | L’appareil a été remis à l’utilisateur et il a été enregistré auprès de votre client. Toutefois, ils n’ont pas utilisé le périphérique récemment (au cours des 7 derniers jours).  | 
+| Inscription en attente | L’inscription n’est pas encore terminée. Revenir plus tard. |
+| Échec de l’inscription | L’inscription n’a pas pu être terminée. Pour plus [d’informations, voir](#troubleshooting-device-registration) Résolution des problèmes d’inscription de l’appareil. |
+| Prêt pour l’utilisateur | L’inscription a réussi et l’appareil est maintenant prêt à être remis à l’utilisateur. Le Bureau géré Microsoft les guide tout au long de la première phase de mise en place. Vous n’avez donc pas besoin d’autres préparations. |
+| Actif | L’appareil a été remis à l’utilisateur et il s’est inscrit auprès de votre client. Cela indique également qu’ils utilisent régulièrement l’appareil. |
+| Inactif | L’appareil a été remis à l’utilisateur et il s’est inscrit auprès de votre client. Toutefois, ils n’ont pas utilisé l’appareil récemment (au cours des 7 derniers jours).  | 
 
-#### <a name="troubleshooting-device-registration"></a>Dépannage de l’inscription de l’appareil
+#### <a name="troubleshooting-device-registration"></a>Résolution des problèmes d’inscription de l’appareil
 
 | Message d’erreur | Détails |
 |---------------|-------------|
-| Appareil introuvable | Nous n’avons pas pu inscrire cet appareil, car nous n’avons pas pu trouver de correspondance pour le fabricant, le modèle ou le numéro de série fourni. Vérifiez ces valeurs auprès de votre fournisseur d’appareils. |
-| Hachage matériel non valide | Le hachage matériel que vous avez fourni pour cet appareil n’a pas été correctement mis en forme. Vérifiez le hachage matériel, puis renvoyez-le. |
-| L’appareil est déjà enregistré | Ce périphérique est déjà enregistré dans votre organisation. Aucune autre action n’est requise. |
-| Appareil revendiqué par une autre organisation | Ce périphérique a déjà été revendiqué par une autre organisation. Vérifiez auprès de votre fournisseur d’appareils. |
-| Erreur inattendue | Votre demande n’a pas pu être traitée automatiquement. Contactez le support technique et indiquez l’ID de la demande : <requestId> |
+| Appareil in trouvé | Nous n’avons pas pu enregistrer cet appareil car nous n’avons pas pu trouver de correspondance pour le fabricant, le modèle ou le numéro de série fourni. Confirmez ces valeurs auprès de votre fournisseur d’appareils. |
+| Hachage matériel non valide | Le hachage matériel que vous avez fourni pour cet appareil n’a pas été mis en forme correctement. Vérifiez à nouveau le hachage matériel, puis resoumettre. |
+| Appareil déjà inscrit | Cet appareil est déjà inscrit dans votre organisation. Aucune action supplémentaire n’est requise. |
+| Appareil revendiqué par une autre organisation | Cet appareil a déjà été revendiqué par une autre organisation. Vérifiez auprès de votre fournisseur d’appareils. |
+| Erreur inattendue | Votre demande n’a pas pu être traitée automatiquement. Contactez le support technique et fournissez l’ID de demande : <requestId> |
 
 ### <a name="check-the-image"></a>Vérifier l’image
 
-Si votre appareil vient d’un fournisseur de partenaires de bureau géré Microsoft, l’image doit être correcte.
+Si votre appareil est issu d’un fournisseur de partenaire Bureau géré Microsoft, l’image doit être correcte.
 
-Si vous le souhaitez, vous pouvez également appliquer l’image par vous-même. Pour commencer, contactez le représentant Microsoft avec lequel vous travaillez et ils vous fourniront l’emplacement et les étapes à suivre pour appliquer l’image.
+Vous pouvez également appliquer l’image vous-même si vous préférez. To get started, contact the Microsoft representative you’re working with and they will provide you the location and steps for applying the image.
 
-### <a name="deliver-the-device"></a>Remise de l’appareil
+### <a name="deliver-the-device"></a>Remettre l’appareil
 
 > [!IMPORTANT]
-> Avant de remettre l’appareil à votre utilisateur, vérifiez que vous avez obtenu et appliqué les [licences appropriées](../get-ready/prerequisites.md) pour cet utilisateur.
+> Avant de remettre l’appareil à votre utilisateur, assurez-vous que vous avez obtenu et appliqué les [licences](../get-ready/prerequisites.md) appropriées pour cet utilisateur.
 
-Si toutes les licences sont appliquées, vous pouvez [faire en sorte que vos utilisateurs soient prêts à utiliser les appareils](get-started-devices.md), puis votre utilisateur peut démarrer l’appareil et poursuivre l’installation de Windows.
+Si toutes les licences sont appliquées, vous pouvez préparer vos utilisateurs à utiliser des [appareils,](get-started-devices.md)puis démarrer l’appareil et passer à l’expérience d’installation de Windows.
 
 
 

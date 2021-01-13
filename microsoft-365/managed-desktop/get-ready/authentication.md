@@ -1,7 +1,7 @@
 ---
 title: Préparer l’accès aux ressources locales pour le Bureau géré Microsoft
-description: Étapes importantes pour vous assurer qu’un Azure AD peut communiquer avec AD sur site pour fournir l’authentification
-keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
+description: Étapes importantes pour s’assurer qu’azure AD peut communiquer avec AD local pour fournir l’authentification
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -9,71 +9,71 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 7181e81a2db94ce26fb8601f8b9156c65084c439
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: c1732dc17188427f9a181d1c47abe71bb8f39584
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289578"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841410"
 ---
 #  <a name="prepare-on-premises-resources-access-for-microsoft-managed-desktop"></a>Préparer l’accès aux ressources locales pour le Bureau géré Microsoft
 
-Dans le bureau géré Microsoft, les appareils sont automatiquement joints à Azure Active Directory (Azure AD). Cela signifie que si vous utilisez un annuaire Active Directory local, vous devrez vérifier certaines choses pour vous assurer que les appareils joints à Azure AD peuvent communiquer avec votre Active Directory local. 
+Dans bureau géré Microsoft, les appareils sont automatiquement joints à Azure Active Directory (Azure AD). Pour cette raison, si vous utilisez un active directory local, vous devez vérifier certains éléments pour vous assurer que les appareils joints à Azure AD peuvent communiquer avec votre active Directory local. 
 
 > [!NOTE]  
-> *Hybride* La participation à Azure AD n’est pas prise en charge par le bureau géré Microsoft.
+> *Hybride* Azure AD join is not supported by Microsoft Managed Desktop.
 
-Azure Active Directory permet à vos utilisateurs de tirer parti de l’authentification unique (SSO), ce qui signifie qu’ils ne devront généralement pas fournir d’informations d’identification à chaque fois qu’ils utilisent des ressources.
+Azure Active Directory permet à vos utilisateurs de tirer parti de l' mono-Sign-On (SSO), ce qui signifie qu’ils n’ont généralement pas à fournir d’informations d’identification chaque fois qu’ils utilisent des ressources.
 
-Pour plus d’informations sur la jonction d’Azure Active Directory, consultez [la rubrique How to : plan Your Azure ad Join Implementation](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan). Pour obtenir des informations générales sur l’authentification unique (SSO) sur les appareils joints à Azure AD, consultez la rubrique relative [à l’authentification unique des ressources locales sur des appareils Azure ad joints](https://docs.microsoft.com/azure/active-directory/devices/azuread-join-sso#how-it-works).
-
-
-Cette rubrique décrit les éléments que vous devez vérifier afin de vous assurer que les applications et autres ressources qui dépendent de la connectivité Active Directory locale fonctionnent correctement avec Microsoft Managed Desktop.
+Pour plus d’informations sur l’adhésion à Azure Active Directory, reportez-vous à La façon de : Planifier votre implémentation de jointage [Azure AD.](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan) Pour obtenir des informations d’arrière-plan sur l'Sign-On unique (SSO) sur les appareils joints à Azure AD, voir comment fonctionne l' sso aux ressources sur site sur les appareils joints à [Azure AD.](https://docs.microsoft.com/azure/active-directory/devices/azuread-join-sso#how-it-works)
 
 
-## <a name="single-sign-on-for-on-premises-resources"></a>Authentification unique pour les ressources locales
+Cet article explique les éléments que vous devez vérifier afin de vous assurer que les applications et autres ressources qui dépendent de la connectivité Active Directory locale fonctionneront sans problème avec bureau géré Microsoft.
 
-L’authentification unique (SSO) à l’aide de l’UPN et du mot de passe est activée par défaut sur les appareils de bureau géré Microsoft. Toutefois, vos utilisateurs peuvent également utiliser Windows Hello entreprise, ce qui nécessite des étapes de configuration supplémentaires. 
 
-### <a name="single-sign-on-by-using-upn-and-password"></a>Authentification unique à l’aide de l’UPN et du mot de passe
+## <a name="single-sign-on-for-on-premises-resources"></a>Une Sign-On pour les ressources sur site
 
-Dans la plupart des organisations, vos utilisateurs peuvent utiliser l’authentification unique pour s’authentifier par nom d’utilisateur et mot de passe sur les appareils de bureau gérés Microsoft. Toutefois, pour vous assurer que cela fonctionne, vous devez vérifier les points suivants :
+LSign-On (SSO) à l’aide de l’UPN et du mot de passe est activé par défaut sur les appareils de bureau gérés Microsoft. Toutefois, vos utilisateurs peuvent également utiliser Windows Hello Entreprise, ce qui nécessite des étapes de configuration supplémentaires. 
 
-- Vérifiez qu’Azure AD Connect est configuré et qu’il utilise un serveur Active Directory local exécutant Windows Server 2008 R2 ou une version ultérieure.
-- Vérifiez qu’Azure AD Connect exécute une version prise en charge et qu’il est configuré pour synchroniser ces trois attributs avec Azure AD : 
+### <a name="single-sign-on-by-using-upn-and-password"></a>Un seul Sign-On à l’aide de l’UPN et du mot de passe
+
+Dans la plupart des organisations, vos utilisateurs peuvent utiliser l’authentification unique pour s’authentifier par upn et mot de passe sur les appareils de bureau gérés Microsoft. Toutefois, pour vous assurer que cette fonction fonctionne, vérifiez les points suivants :
+
+- Confirmez qu’Azure AD Connect est installé et utilise un serveur Active Directory local exécutant Windows Server 2008 R2 ou une ultérieure.
+- Confirmez qu’Azure AD Connect exécute une version prise en charge et est définie pour synchroniser ces trois attributs avec Azure AD : 
     - Nom de domaine DNS de l’annuaire Active Directory local (où se trouvent les utilisateurs)
-    - NetBIOS de votre Active Directory local (où se trouvent les utilisateurs)
+    - NetBIOS de votre annuaire Active Directory local (où se trouvent les utilisateurs)
     - Nom de compte SAM de l’utilisateur
 
 
-### <a name="single-sign-on-by-using-windows-hello-for-business"></a>Authentification unique à l’aide de Windows Hello entreprise
+### <a name="single-sign-on-by-using-windows-hello-for-business"></a>Un seul Sign-On à l’aide de Windows Hello Entreprise
 
-Les appareils de bureau gérés par Microsoft offrent également à vos utilisateurs une expérience rapide et avec mot de passe en utilisant Windows Hello entreprise. Pour vous assurer que Windows Hello entreprise fonctionnera sans que vos utilisateurs aient à fournir un nom d’utilisateur principal et un mot de passe respectifs, rendez-vous [sur configurer des appareils joints Azure AD pour l’authentification unique locale à l’aide de Windows Hello entreprise](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base) pour vérifier la configuration requise, puis suivez les étapes fournies.
+Les appareils de bureau géré Microsoft offrent également à vos utilisateurs une expérience rapide et sans mot de passe en employant Windows Hello Entreprise. Pour vous assurer que Windows Hello Entreprise fonctionne sans que vos utilisateurs n’ont à fournir respectivement upn et mot de passe, visitez Configurer les appareils [joints à Azure AD](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base) pour les Single-Sign Sur l’utilisation de Windows Hello Entreprise pour vérifier les conditions requises, puis suivez les étapes fournies ici.
 
 
 ## <a name="apps-and-resources-that-use-authentication"></a>Applications et ressources qui utilisent l’authentification
 
-Reportez-vous à la rubrique [comprendre les considérations relatives aux applications et aux ressources](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan#understand-considerations-for-applications-and-resources) dans l’ensemble de contenu Azure pour obtenir des instructions complètes sur la configuration des applications pour qu’elles fonctionnent avec Azure Active Directory. En Résumé :
+Reportez-vous à Comprendre les considérations concernant les applications et les ressources dans l’ensemble de contenu Azure pour obtenir des [instructions complètes](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan#understand-considerations-for-applications-and-resources) sur la configuration des applications pour qu’ils fonctionnent avec Azure Active Directory. En Résumé :
 
 
-- Si vous utilisez des **applications en nuage**, telles que celles ajoutées à la Galerie d’applications Azure ad, la plupart n’ont pas besoin d’une préparation supplémentaire pour fonctionner avec Microsoft Managed Desktop. Toutefois, les applications Win32 qui n’utilisent pas le gestionnaire de comptes Web (WAM) peuvent toujours inviter les utilisateurs à s’authentifier.
+- Si vous utilisez des applications basées sur le **cloud,** telles que celles ajoutées à la galerie d’applications Azure AD, la plupart d’entre elles ne nécessitent aucune préparation supplémentaire pour fonctionner avec le Bureau géré Microsoft. Toutefois, toutes les applications Win32 qui n’utilisent pas le Gestionnaire de comptes Web (WAM) peuvent toujours inviter les utilisateurs à s’authentifier.
 
-- Pour les applications **hébergées en local**, veillez à ajouter ces applications à la liste des sites de confiance dans vos navigateurs. Cela permet à l’authentification Windows de fonctionner de manière transparente, sans que les utilisateurs ne soient invités à entrer des informations d’identification. Pour ce faire, reportez-vous à la rubrique [sites de confiance](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/config-setting-ref#trusted-sites) dans la [référence des paramètres configurables](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/config-setting-ref).
+- Pour les applications **hébergées** en local, n’oubliez pas d’ajouter ces applications à la liste des sites de confiance dans vos navigateurs. Cette étape permet à l’authentification Windows de fonctionner en toute transparence, sans que les utilisateurs ne sont invités à obtenir d’informations d’identification. Pour ajouter des applications, reportez-vous [aux sites](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/config-setting-ref#trusted-sites) de confiance dans la référence [des paramètres configurables.](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/config-setting-ref)
 
-- Si vous utilisez les services fédérés Active Directory, vérifiez que l’authentification unique est activée à l’aide des étapes décrites dans [Verify and Manage Single Sign-On with AD FS](https://docs.microsoft.com/previous-versions/azure/azure-services/jj151809(v=azure.100)). 
+- Si vous utilisez les services fédérés Active Directory, vérifiez que l' utilisateur unique est activé à l’aide des étapes de la procédure de vérification et de gestion de l' sign-on unique avec [AD FS](https://docs.microsoft.com/previous-versions/azure/azure-services/jj151809(v=azure.100)). 
 
-- Pour les applications **locales et utilisant des protocoles plus anciens**, aucune configuration supplémentaire n’est requise, à condition que les périphériques aient accès à un contrôleur de domaine local pour s’authentifier. Toutefois, pour fournir un accès sécurisé à ces applications, vous devez déployer le proxy d’application Azure AD. Pour plus d’informations, reportez-vous à [accès distant aux applications locales via le proxy d’application Azure Active Directory](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
+- Pour les applications qui sont sur site et utilisent des **protocoles** plus anciens, aucune configuration supplémentaire n’est requise, tant que les appareils ont accès à un contrôleur de domaine local pour s’authentifier. Toutefois, pour fournir un accès sécurisé à ces applications, vous devez déployer le proxy d’application Azure AD. Pour plus d’informations, voir Accès à distance aux applications sur site via le [proxy d’application d’Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy)
 
-- Les applications qui s’exécutent **sur site et s’appuyant sur l’authentification de l’ordinateur** ne sont pas prises en charge ; vous devez donc envisager de les remplacer par des versions plus récentes.
+- Les applications qui **s’exécutent** en local et reposent sur l’authentification de l’ordinateur ne sont pas pris en charge. Vous devez donc envisager de les remplacer par des versions plus récentes.
 
 ### <a name="network-shares-that-use-authentication"></a>Partages réseau qui utilisent l’authentification
 
-Aucune configuration supplémentaire n’est requise pour que les utilisateurs accèdent aux partages réseau, tant que les appareils ont accès à un contrôleur de domaine local à l’aide d’un chemin d’accès UNC.
+Aucune configuration supplémentaire n’est requise pour que les utilisateurs accèdent aux partages réseau, tant que les appareils ont accès à un contrôleur de domaine local à l’aide d’un chemin UNC.
 
 ### <a name="printers"></a>Imprimantes
 
-Les appareils de bureau gérés Microsoft ne peuvent pas se connecter aux imprimantes qui sont publiées sur votre environnement Active Directory local, sauf si vous avez configuré l’impression dans le [Cloud hybride](https://docs.microsoft.com/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-deploy).
+Les appareils Bureau géré Microsoft ne peuvent pas se connecter aux imprimantes publiées sur votre environnement Active Directory local, sauf si vous avez configuré l’impression [cloud hybride.](https://docs.microsoft.com/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-deploy)
 
-Bien que les imprimantes ne puissent pas être automatiquement découvertes dans un environnement Cloud uniquement, vos utilisateurs peuvent utiliser des imprimantes locales à l’aide du chemin d’accès de l’imprimante ou de la file d’attente de l’imprimante, à condition que les périphériques aient accès à un contrôleur de domaine local.
+Bien que les imprimantes ne peuvent pas être découvertes automatiquement dans un environnement cloud uniquement, vos utilisateurs peuvent utiliser des imprimantes locales à l’aide du chemin d’accès de l’imprimante ou de la file d’attente de l’imprimante, tant que les appareils ont accès à un contrôleur de domaine local.
 
 <!--add fuller material on printers when available-->

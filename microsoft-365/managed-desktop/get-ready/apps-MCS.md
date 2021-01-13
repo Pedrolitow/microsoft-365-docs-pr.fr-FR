@@ -1,7 +1,7 @@
 ---
 title: Utilisation de Microsoft Consulting Services
-description: préparation et étapes à suivre pour utiliser MCS pour empaqueter vos applications
-keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, applications, MCS, Packaging
+description: préparation et étapes à suivre pour travailler avec MCS afin de mettre en package vos applications
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation, applications, MCS, empaquetage
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -9,51 +9,51 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: d2a6c09e1bcb84885e607d133c14e26e08e3c621
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: f8c4e427c536577ea2fc768d4930b9d4db6ac697
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46530162"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841422"
 ---
 # <a name="working-with-microsoft-consulting-services"></a>Utilisation de Microsoft Consulting Services
 
-Vous pouvez vous exercer avec Microsoft Consulting Services (MCS) pour obtenir les applications à utiliser avec le bureau géré Microsoft. Pour obtenir des informations exactes, collaborez avec votre représentant commercial pour contacter MCS et étendre votre projet d’empaquetage d’application spécifique.
+Vous pouvez interagir avec Microsoft Consulting Services (MCS) pour obtenir vos applications empaquetées pour une utilisation avec Bureau géré Microsoft. Pour plus d’informations, contactez votre représentant de compte pour contacter MCS et déterminer l’étendue de votre projet d’empaquetage d’application spécifique.
 
 ## <a name="roles-and-responsibilities"></a>Rôles et responsabilités
 
-Pour utiliser l’empaquetage d’applications MCS, **vous devez fournir les éléments**suivants :
+Pour travailler avec l’empaquetage d’application MCS, **vous devez fournir les éléments ci-après**:
 
-- Fichiers du programme d’installation source (par exemple, setup.exe ou. msi).
-- Les instructions d’installation, spécifiant des détails sur la façon dont l’installation finale doit ressembler. Par exemple, un raccourci Bureau doit-il exister vers l’application ? Quelle doit être la visibilité de l’application ? L’application doit-elle se connecter à un serveur et, le cas échéant, laquelle ? Pour plus d’informations, consultez le [modèle de demande d’empaquetage d’application](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/app-packaging-template.docx).
+- Fichiers du programme d’installation source (par exemple, setup.exe ou .msi).
+- Instructions d’installation spécifiant l’apparence de l’installation finale. Par exemple, doit-il y avoir un raccourci bureau vers l’application ? Quelle doit être la visibilité de l’application ? L’application doit-elle se connecter à un serveur et, si c’est le cas, laquelle ? Pour plus d’informations, voir le modèle de demande [d’empaquetage d’application.](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/app-packaging-template.docx)
 - Vous devez effectuer vos propres tests d’acceptation pour vérifier que l’application fonctionne comme vous le souhaitez dans votre environnement.
 
-**MCS se chargera des actions suivantes :**
+**MCS s’occupe des actions ci-après :**
 
-- Vérifier si l’application est interdite ou restreinte dans l’environnement de bureau géré Microsoft.
-- Test de l’installation, du démarrage et de la désinstallation de l’application pour garantir la compatibilité avec Windows 10. Si MCS identifie un problème de compatibilité, il remet l’application à l' [application de bureau pour garantir](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure) le programme de correction.
-- Empaquetez l’application dans votre spécification, puis testez le déploiement de l’application à l’aide de Microsoft Intune.
+- Vérification de l’interdiction ou de la restriction de l’application dans l’environnement Bureau géré Microsoft.
+- Test de l’installation, du démarrage et de la désinstallation de l’application pour garantir la compatibilité avec Windows 10. Si MCS découvre un problème de compatibilité, l’application est remise au programme [Desktop App Assure](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure) pour correction.
+- Empaquetage de l’application selon vos spécifications, puis test du déploiement de l’application à l’aide de Microsoft Intune.
 
-## <a name="app-delivery-schedule"></a>Calendrier de remise d’application
+## <a name="app-delivery-schedule"></a>Planification de remise des applications
 
-Démarrez le processus d’empaquetage en téléchargeant les informations de l’application dans le portail de bureau géré Microsoft. L’équipe de Packaging examine les nouvelles soumissions tous les jeudis. Après la révision et l’empaquetage, les applications empaquetées sont fournies le vendredi suivant. Jusqu’à cinq applications par semaine peuvent être empaquetées pour démarrer, mais le service peut évoluer pour répondre à vos besoins.
+Démarrez le processus d’empaquetage en téléchargeant les informations de l’application sur le portail Bureau géré Microsoft. L’équipe de packaging examine les nouvelles soumissions tous les jeudis. Après révision et empaquetage, les applications empaquetées sont livrées le vendredi suivant. Jusqu’à cinq applications par semaine peuvent être empaquetées pour démarrer, mais le service peut être mis à l’échelle en fonction de vos besoins.
 
-![calendrier illustrant le flux d’applications sur un jeudi (21 dans cet exemple), la validation du contenu multimédia le lendemain, la mise en package le lundi suivant (le 25) et la remise de l’application le vendredi (29)](../../media/MCS-cal.png)
+![calendrier montrant l’entrée entrante de l’application un jeudi (le 21 dans cet exemple), la validation multimédia le jour suivant, l’empaquetage le lundi suivant (le 25) et la remise de l’application le vendredi suivant (le 29)](../../media/MCS-cal.png)
 
-Vous serez informé une fois que l’application aura été livrée. À ce stade, vous disposez de 21 jours pour effectuer des tests d’acceptation et vous déconnecter du travail dans le portail de bureau géré Microsoft. Si vous rencontrez un problème avec l’application pendant le test d’acceptation, rejetez l’application dans le portail de bureau géré Microsoft et vous serez connecté par courrier électronique avec un gestionnaire de package MCS pour comprendre et résoudre le problème.
+Une fois l’application livrée, vous en serez informé. À ce stade, vous avez 21 jours pour effectuer des tests d’acceptation et approuver le travail dans le portail Bureau géré Microsoft. Si vous découvrez un problème avec l’application lors de vos tests d’acceptation, rejetez l’application dans le portail Bureau géré Microsoft et vous serez connecté par courrier électronique à un packageur MCS pour comprendre et résoudre le problème.
 
 ## <a name="testing-accounts-and-environment"></a>Test des comptes et de l’environnement
 
-Pour que l’équipe de Packaging termine la migration vers Microsoft Intune, nous vous recommandons de fournir certaines autorisations :
+Pour que l’équipe de packaging termine la migration vers Microsoft Intune, nous vous recommandons de fournir certaines autorisations :
  
--   Accès aux fonctionnalités de déploiement d’applications de Microsoft Intune pour le gestionnaire de package afin d’ajouter et d’affecter l’application 
--   Les groupes de test, les comptes d’utilisateur et les licences pour les logiciels d’empaquetage pour pouvoir tester les applications
+-   Accès aux fonctionnalités de déploiement d’application de Microsoft Intune pour le packager afin d’ajouter et d’affecter l’application 
+-   Tester les groupes, les comptes d’utilisateur et les licences des packageurs pour pouvoir tester les applications
 
-MCS utilise ces autorisations pour effectuer les actions suivantes :
+MCS utilisera ces autorisations pour effectuer les actions suivantes :
  
--   S’assurer que l’application fonctionne sur l’ordinateur virtuel configuré pour Microsoft Managed Desktop
+-   S’assurer que l’application fonctionne sur une machine virtuelle configurée pour le Bureau géré Microsoft
 -   Téléchargement de l’application vers Microsoft Intune pour le déploiement vers vos utilisateurs
 
-Sans ces autorisations, il est possible que MCS se déplace vers l’avant, mais il ne pourra pas télécharger les applications dans votre environnement.
+Sans ces autorisations, mcS peut avancer, mais il ne pourra pas télécharger les applications vers votre environnement.
 
 

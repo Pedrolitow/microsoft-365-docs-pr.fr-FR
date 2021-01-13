@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez les limites de cas, d’indexation et de recherche en vigueur pour la solution Advanced eDiscovery dans Microsoft 365.
-ms.openlocfilehash: 051c1ce916fcb59ade19120bc25496101d501138
-ms.sourcegitcommit: f40378013757d560d5566a11ad4e6f527c018cc4
+ms.openlocfilehash: 8238a86df2d4e6b487571a3c0f9a380d90607729
+ms.sourcegitcommit: 495b66b77d6dbe6d69e5b06b304089e4e476e568
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796172"
+ms.locfileid: "49799681"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>Limites définies dans Advanced eDiscovery
 
@@ -31,7 +31,7 @@ Cet article décrit les limites de la solution Advanced eDiscovery dans Microsof
 
 Le tableau suivant répertorie les limites pour les cas et les ensembles de révision dans Advanced eDiscovery.
 
-|**Description de la limite**|**Limite**|
+| Description de la limite | Limite |
 |:-----|:-----|
 |Nombre total de documents qui peuvent être ajoutés à un cas (pour tous les ensembles de révision dans un cas).  <br/> |3 millions <br/> |
 |Taille totale de fichier par jeu de chargement. Cela inclut le chargement de non-Office 365 dans un jeu à réviser.  <br/> |300 Go <br/> |
@@ -46,7 +46,7 @@ Le tableau suivant répertorie les limites pour les cas et les ensembles de rév
 
 Le tableau suivant répertorie les limites d’indexation dans Advanced eDiscovery.
 
-|**Description de la limite**|**Limite**|
+| Description de la limite | Limite |
   |:-----|:-----|
   |Nombre maximal de caractères extraits d’un seul fichier.  <br/> |10 millions<sup>1</sup> <br/> |
   |Taille maximale d’un fichier unique.   <br/> |100 Mo<sup>1</sup> <br/> |
@@ -59,13 +59,13 @@ Le tableau suivant répertorie les limites d’indexation dans Advanced eDiscove
 
 Les limites décrites dans cette section sont liées à l’utilisation de l’outil de recherche sous l’onglet **Recherches** pour collecter des données pour un cas. Pour plus d’informations, [voir Collecter des données pour un cas dans Advanced eDiscovery](collecting-data-for-ediscovery.md).
 
-|**Description de la limite**|**Limite**|
+| Description de la limite | Limite |
 |:-----|:-----|
 |Nombre maximal de boîtes aux lettres ou de sites qui peuvent être recherchés en une seule recherche.  <br/> |Sans limite  <br/> |
 |Nombre maximal de recherches qui peuvent s’exécuter en même temps.  <br/> |Sans limite  <br/> | 
 |Nombre maximal de recherches qu’un seul utilisateur peut démarrer en même temps.  <br/> |10   <br/> | 
 |Nombre maximal de caractères pour une requête de recherche (y compris les opérateurs et les conditions).  <br/> |**Boîtes aux** lettres : 10 000<br/>**Sites**: 4 000 lors de la recherche sur tous les sites ou 2 000 lorsque vous recherchez jusqu’à 20 sites <sup>2</sup> <br/> |
-|Nombre minimal de caractères alpha pour les caractères génériques de préfixe ; par exemple **un \** _ ou _*définir \**_. <br/> |3   <br/> |  
+|Nombre minimal de caractères alpha pour les caractères génériques de préfixe ; par exemple, **un \** _ ou _*définir \**_. <br/> |3   <br/> |  
 |Variantes maximales renvoyées lors de l’utilisation de caractères génériques préfixés pour rechercher une expression exacte ou lorsque vous utilisez un caractère générique de préfixe et l’opérateur booléen _ *NEAR** .  <br/> |10 000 <sup>3</sup> <br/> |
 |Nombre maximal d’éléments par boîte aux lettres d’utilisateur qui sont affichés sur la page d’aperçu pour les recherches. Les éléments les plus récents sont affichés.   <br/> |100  <br/> |
 |Nombre maximal d’éléments de toutes les boîtes aux lettres affichés sur la page d’aperçu pour les recherches.  <br/> |1 000  <br/> |
@@ -79,14 +79,14 @@ Les limites décrites dans cette section sont liées à l’utilisation de l’o
 
 ## <a name="viewer-limits"></a>Limites de la visionneuse
 
-|**Description de la limite**|**Limite**|
+| Description de la limite | Limite |
 |:-----|:-----|
 |Taille maximale du fichier Excel qui peut être visualisateur dans la visionneuse native.  <br/> |4 Mo  <br/> |
 |||
 
 ## <a name="export-limits"></a>Limites d’exportation
 
-|**Description de la limite**|**Limite**|
+| Description de la limite | Limite |
 |:-----|:-----|
 |Taille maximale d’une exportation unique.|3 millions de documents ou 100 Go, selon la taille la plus petite|
 |Quantité maximale de données en une seule journée. | 2 To |
@@ -98,7 +98,7 @@ Les limites décrites dans cette section sont liées à l’utilisation de l’o
 
 ## <a name="review-set-download-limits"></a>Examiner les limites de téléchargement définies
 
-|**Description de la limite**|**Limite**|
+| Description de la limite | Limite |
 |:-----|:-----|
 |Taille totale du fichier ou nombre maximal de documents téléchargés à partir d’un jeu à réviser.  <br/> |3 Mo ou 50 documents <sup>5</sup>|
 |||
@@ -107,10 +107,14 @@ Les limites décrites dans cette section sont liées à l’utilisation de l’o
 <br/>
 
 > [!NOTE]
-> <sup>1</sup> Tout élément qui dépasse une limite de fichier unique s’affiche comme une erreur de traitement.<br/>
-> <sup>2 Lorsque</sup> vous recherchez des emplacements SharePoint et OneDrive Entreprise, les caractères dans les URL des sites recherchés comptent par rapport à cette limite.<br/>
-> <sup>3 Pour</sup> les requêtes sans expression (valeur de mot clé qui n’utilise pas de guillemets doubles), nous utilisons un index de préfixe spécial. Cela nous indique qu’un mot se trouve dans un document, mais pas là où il se trouve dans le document. Pour faire une requête d’expression (valeur de mot clé avec des guillemets doubles), nous devons comparer la position des mots dans l’expression dans le document. Cela signifie que nous ne pouvons pas utiliser l’index de préfixe pour les requêtes d’expressions. Dans ce cas, nous développeons la requête en interne avec tous les mots possibles que le préfixe développe ; par exemple, **time _ peut se développer vers \* *_*« time OR timer OR times OR timex OR timeboxed OR ... »**. La limite de 10 000 correspond au nombre maximal de variantes que le mot peut développer, et non au nombre de documents correspondant à la requête. Il n’existe aucune limite supérieure pour les termes autres que des expressions.<br/>
-> <sup>4</sup> Cette limite est partagée entre tous les outils eDiscovery. Cela signifie que les exportations simultanées dans la recherche de contenu, la découverte électronique principale et advanced eDiscovery sont appliquées par rapport à cette limite. <br/>
-> <sup>5</sup> Cette limite s’applique au téléchargement de documents sélectionnés à partir d’un jeu à réviser. Elle ne s’applique pas à l’exportation de documents à partir d’un jeu à réviser. Pour plus d’informations sur le téléchargement et l’exportation de documents, voir Exporter des données de [cas dans Advanced eDiscovery](exporting-data-ediscover20.md). <br/>
-> <sup>6</sup> limites d’indexation par organisation et par jour. Pour contourner ce besoin, vous pouvez sélectionner plusieurs dépositaires, puis cliquer sur Mettre à jour **l’index** pour éviter de créer un travail d’index distinct pour chaque dépositaire. <br/>
-
+> <sup>1</sup> Tout élément qui dépasse une limite de fichier unique s’affiche comme une erreur de traitement.
+>
+> <sup>2 Lorsque</sup> vous recherchez des emplacements SharePoint et OneDrive Entreprise, les caractères dans les URL des sites recherchés comptent par rapport à cette limite.
+>
+> <sup>3 Pour</sup> les requêtes sans expression (valeur de mot clé qui n’utilise pas de guillemets doubles), nous utilisons un index de préfixe spécial. Cela nous indique qu’un mot se trouve dans un document, mais pas là où il se trouve dans le document. Pour faire une requête d’expression (valeur de mot clé avec des guillemets doubles), nous devons comparer la position des mots dans l’expression dans le document. Cela signifie que nous ne pouvons pas utiliser l’index de préfixe pour les requêtes d’expressions. Dans ce cas, nous développeons la requête en interne avec tous les mots possibles que le préfixe développe ; par exemple, **time _ peut se développer vers \* *_*« time OR timer OR times OR timex OR timeboxed OR ... »**. La limite de 10 000 correspond au nombre maximal de variantes que le mot peut développer, et non au nombre de documents correspondant à la requête. Il n’existe aucune limite supérieure pour les termes autres que des expressions.
+>
+> <sup>4</sup> Cette limite est partagée entre tous les outils eDiscovery. Cela signifie que les exportations simultanées dans la recherche de contenu, la découverte électronique principale et advanced eDiscovery sont appliquées par rapport à cette limite.
+>
+> <sup>5</sup> Cette limite s’applique au téléchargement de documents sélectionnés à partir d’un jeu à réviser. Elle ne s’applique pas à l’exportation de documents à partir d’un jeu à réviser. Pour plus d’informations sur le téléchargement et l’exportation de documents, voir Exporter des données de [cas dans Advanced eDiscovery](exporting-data-ediscover20.md).
+>
+> <sup>6</sup> limites d’indexation par organisation et par jour. Pour contourner ce cas, vous pouvez sélectionner plusieurs dépositaires sous l’onglet **Sources** de données dans un cas, puis cliquer sur Mettre à jour **l’index** pour éviter de créer une tâche d’index distincte pour chaque dépositaire. 
