@@ -1,5 +1,5 @@
 ---
-title: Affecter et effectuer des actions d’amélioration dans le gestionnaire de conformité Microsoft
+title: Affecter et effectuer des actions d’amélioration dans le Gestionnaire de conformité Microsoft
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -13,143 +13,160 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Découvrez comment effectuer une implémentation et des tests sur les contrôles dans le gestionnaire de conformité Microsoft. Affecter le travail, stocker la documentation et exporter des rapports.
-ms.openlocfilehash: 4b7ece89752a2c3e54a0a69bade2f489feacd0c3
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+description: Découvrez comment effectuer l’implémentation et les tests sur les contrôles dans le Gestionnaire de conformité Microsoft. Affecter des rapports de travail, stocker de la documentation et exporter des rapports.
+ms.openlocfilehash: c465a574ed9c1a8ad8ef9e2bfc7f864545ae28d9
+ms.sourcegitcommit: 00d231bf0100e843a5a93161695e87ceff9e1349
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376525"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49849591"
 ---
-# <a name="assign-and-complete-improvement-actions-in-compliance-manager"></a>Affecter et effectuer des actions d’amélioration dans le gestionnaire de conformité
+# <a name="assign-and-complete-improvement-actions-in-compliance-manager"></a>Affecter et effectuer des actions d’amélioration dans le Gestionnaire de conformité
 
-**Dans cet article :** Cet article explique comment **gérer votre flux de travail de conformité** avec des actions d’amélioration. Découvrez comment **attribuer des actions d’amélioration** pour l’implémentation et le test, gérer les **mises à jour** et exporter des **rapports**.
+**Dans cet article :** Cet article explique comment gérer votre flux **de travail de conformité** avec des actions d’amélioration. Découvrez comment affecter des **actions d’amélioration pour** l’implémentation et le test, gérer les **mises à jour** et exporter des **rapports.**
 
 ## <a name="manage-compliance-workflows-with-improvement-actions"></a>Gérer les flux de travail de conformité avec des actions d’amélioration
 
-Les actions d’amélioration centralisent vos activités de conformité. Chaque action d’amélioration fournit des conseils détaillés sur la mise en œuvre pour vous aider à vous aligner sur les normes et réglementations sur la protection des données. Des actions peuvent être attribuées à des utilisateurs de votre organisation pour effectuer le travail d’implémentation et de test. Vous pouvez également stocker la documentation, les notes et les mises à jour de l’état des enregistrements au sein de l’action.
+Les actions d’amélioration centralisent vos activités de conformité. Chaque action d’amélioration fournit des instructions de mise en œuvre détaillées pour vous aider à vous aligner sur les réglementations et normes en matière de protection des données. Des actions peuvent être affectées aux utilisateurs de votre organisation pour effectuer des tâches d’implémentation et de test. Vous pouvez également stocker de la documentation, des notes et enregistrer des mises à jour d’état au sein de l’action.
 
-Toutes vos actions d’amélioration sont répertoriées dans la page actions d’amélioration. En savoir plus sur [l’affichage de vos actions d’amélioration](compliance-manager-setup.md#improvement-actions-page).
+Toutes vos actions d’amélioration sont répertoriées sur la page Actions d’amélioration. En savoir plus sur [l’affichage de vos actions d’amélioration.](compliance-manager-setup.md#improvement-actions-page)
 
-## <a name="improvement-actions-details-page"></a>Page des détails des actions d’amélioration
+## <a name="improvement-actions-details-page"></a>Page détails des actions d’amélioration
 
-Chaque action d’amélioration dispose d’une page de détails indiquant son état actuel, les normes associées et les exigences réglementaires, ainsi que les conseils en matière d’implémentation recommandés. Les [actions techniques](compliance-score-calculation.md#technical-and-non-technical-actions) incluent un lien **lancer maintenant** qui vous permet d’accéder à la solution appropriée pour l’implémentation. Vous pouvez attacher la documentation d’implémentation et de test directement à la page de détails d’une action d’amélioration.
+Chaque action d’amélioration possède une page de détails indiquant son état actuel, les normes et exigences réglementaires associées, ainsi que les recommandations d’implémentation recommandées. [Les actions techniques](compliance-score-calculation.md#technical-and-non-technical-actions) incluent un **lien Lancer maintenant** qui vous permet d’obtenir la solution appropriée pour l’implémentation. Vous pouvez joindre la documentation d’implémentation et de test directement dans la page de détails d’une action d’amélioration.
 
-Pour afficher la page de détails d’une action d’amélioration :
+Pour afficher la page de détails d’une action d’amélioration :
 
-1. Accédez à votre page actions d’amélioration.
+1. Go to your improvement actions page.
 2. Sélectionnez la ligne de l’action d’amélioration prévue, qui ouvre sa page de détails.
 
-Vous pouvez facilement afficher l’action d’amélioration suivante ou précédente dans la liste en sélectionnant la flèche vers le haut ou vers le bas dans le coin supérieur droit de l’écran. Si vous avez filtré votre liste dans la page actions d’amélioration, le fait de remonter ou de descendre vous amène à l’élément suivant dans cette liste filtrée.
+Vous pouvez facilement afficher l’action d’amélioration suivante ou précédente dans la liste en sélectionnant la flèche vers le haut ou vers le bas dans le coin supérieur droit de l’écran. Si vous avez filtré votre liste sur la page Actions d’amélioration, le déplacement vers le haut ou vers le bas vous permet d’passer à l’élément suivant dans cette liste filtrée.
 
 ## <a name="assign-improvement-actions"></a>Affecter des actions d’amélioration
 
-Pour commencer la mise en œuvre d’une action d’amélioration, vous pouvez effectuer le travail vous-même ou l’affecter à un autre utilisateur. La personne affectée peut être :
+Pour commencer le travail d’implémentation d’une action d’amélioration, vous pouvez le faire vous-même ou l’affecter à un autre utilisateur. La personne affectée peut être :
 
 - Le propriétaire d’une stratégie d’entreprise
 - Un ingénieur informatique
-- Un autre employé responsable de l’exécution de la tâche
+- Un autre employé chargé d’effectuer la tâche
 
-Une fois que vous avez identifié le cessionnaire approprié, assurez-vous qu’il détient un [rôle de gestionnaire de conformité](compliance-manager-setup.md#set-user-permissions-and-assign-roles) suffisant pour effectuer le travail. Ensuite, suivez les étapes ci-dessous pour affecter l’action d’amélioration :
+Une fois que vous avez identifié la personne appropriée, assurez-vous qu’elle a un rôle de Gestionnaire de conformité suffisant [pour](compliance-manager-setup.md#set-user-permissions-and-assign-roles) effectuer le travail. Suivez ensuite les étapes ci-dessous pour affecter l’action d’amélioration :
 
-1. Dans la page Détails des actions d’amélioration, sélectionnez **modifier l’État** près de la section supérieure gauche de l’écran.
+1. Dans la page détails des actions d’amélioration, sélectionnez **Modifier l’état** dans la section supérieure gauche de l’écran.
 
-2. Dans le volet flyout état de modification, activez la case à cocher **affecté à** pour afficher une liste de **personnes suggérées** pour les utilisateurs. Vous pouvez sélectionner l’utilisateur dans la liste ou taper l’adresse de messagerie de la personne à laquelle vous souhaitez l’attribuer.
+2. Dans le volet volant Modifier l’état, sélectionnez  la zone Affecté à pour afficher une liste de personnes suggérées d’utilisateurs.  Vous pouvez sélectionner l’utilisateur dans la liste ou taper l’adresse de messagerie de la personne à qui vous souhaitez l’affecter.
 
-3. Sélectionnez **enregistrer et fermer**. L’utilisateur affecté reçoit un message électronique expliquant que l’action d’amélioration lui a été affectée, avec un lien direct vers l’action d’amélioration. (Remarque : la communauté du gouvernement américain (GCC) ne reçoit pas de courrier électronique lorsque des actions leur sont attribuées.)
+3. Sélectionnez **Enregistrer et fermer.** L’utilisateur affecté reçoit un e-mail expliquant que l’action d’amélioration lui a été affectée, avec un lien direct vers l’action d’amélioration. (Remarque : GCC (US Government Community) Les clients élevés ne reçoivent pas de courrier électronique lorsque des actions leur sont affectées.)
 
 L’utilisateur affecté peut ensuite effectuer les actions recommandées.
 
-## <a name="perform-work-and-store-documentation"></a>Effectuer une documentation de travail et de magasin
+#### <a name="assign-multiple-improvement-actions-to-a-single-user"></a>Affecter plusieurs actions d’amélioration à un seul utilisateur
 
-Vous pouvez télécharger des fichiers et des notes relatifs à l’implémentation et au test directement dans la section **Notes et documentation** . Cet environnement est un référentiel centralisé sécurisé qui vous permet de démontrer la satisfaction des contrôles pour répondre aux normes et réglementations en matière de conformité. Tout utilisateur disposant d’un accès en lecture seule peut lire le contenu de cette section. Seuls les utilisateurs disposant de droits de modification peuvent télécharger et télécharger des fichiers et entrer ou modifier des notes.
+Vous pouvez affecter plusieurs actions d’amélioration à un utilisateur en suivant les étapes suivantes :
 
-La section **Notes et documentation** contient des champs pour les documents téléchargés, des notes de mise en œuvre, des notes de test et des notes supplémentaires.
+1. Go to your Improvement actions page.
+2. Sélectionnez la zone à gauche du nom de l’action d’amélioration. Une icône de vérification arrondie s’affiche indiquant que vous avez sélectionné cette action. Vérifiez toutes les actions que vous souhaitez affecter.
+3. Sélectionnez le **lien Affecter à l’utilisateur** en haut du tableau des actions d’amélioration.
+4. Une fenêtre contextuelle apparaît. Dans le **champ Affecter à,** commencez à taper le nom de la personne à qui vous souhaitez affecter les actions. Vous pouvez également choisir dans la liste des personnes suggérées.
+5. Une fois que vous avez rempli le **champ Affecter à** avec le nom de la personne assignée, sélectionnez **Affecter**.
+6. Vous verrez ensuite votre page d’actions d’amélioration avec la nouvelle personne affectée répertoriée pour les actions que vous avez affectées.
+
+## <a name="perform-work-and-store-documentation"></a>Effectuer des travaux et stocker de la documentation
+
+Vous pouvez télécharger des fichiers et des notes relatifs à l’implémentation et au test de travail directement dans la section **Notes et documentation.** Cet environnement est un référentiel sécurisé et centralisé pour vous aider à démontrer la satisfaction des contrôles pour répondre aux normes et réglementations de conformité. Tout utilisateur ayant un accès en lecture seule peut lire le contenu de cette section. Seuls les utilisateurs ayant des droits d’édition peuvent télécharger des fichiers et entrer ou modifier des notes.
+
+La section **Notes et documentation** contient des champs pour les documents téléchargés, les notes d’implémentation, les notes de test et les notes supplémentaires.
 
 #### <a name="uploaded-documents"></a>Documents téléchargés
 
-- Sélectionnez **gérer les documents** pour télécharger les fichiers appropriés.
-- Lorsque le volet de menu contextuel gérer les documents s’ouvre, sélectionnez **Ajouter un document**, puis sélectionnez votre fichier dans votre système. Types de fichiers acceptés :
-    - Documents (. doc,. xls,. ppt,. txt,. pdf)
-    - Images (. jpg,. png)
-    - Vidéo (. mkv)
-    - Fichiers compressés (. zip,. rar)
-- Une fois que votre fichier est résolu dans le volet, sélectionnez **Fermer**, ce qui enregistre automatiquement le fichier en pièce jointe. Vous verrez ensuite le fichier indiqué sous **documents téléchargés**.
-- Pour télécharger ou supprimer le document, sélectionnez **gérer les documents** sous la liste des documents. Dans le volet flyout, sélectionnez la ligne document pour la mettre en surbrillance, puis sélectionnez **Télécharger** ou **supprimer**.
+- Sélectionnez **Gérer les documents** pour télécharger les fichiers appropriés.
+- Lorsque le volet volant Gérer les documents s’ouvre, sélectionnez Ajouter **un document,** puis sélectionnez votre fichier à partir de votre système. Types de fichiers acceptés :
+    - Documents (.doc, .xls, .ppt, .txt, .pdf)
+    - Images (.jpg, .png)
+    - Vidéo (.mkv)
+    - Fichiers compressés (.zip, .rar)
+- Une fois votre fichier résolu dans le volet, sélectionnez **Fermer,** qui enregistre automatiquement la pièce jointe du fichier. Vous verrez ensuite le fichier répertorié sous **les documents téléchargés.**
+- Pour télécharger ou supprimer le document, sélectionnez Gérer les **documents** sous la liste des documents. Dans le volet volant, sélectionnez la ligne du document pour la mettre en surbrillon, puis sélectionnez **Télécharger** ou **Supprimer.**
 
-#### <a name="implementation-notes-test-notes-and-additional-notes"></a>Notes de mise en œuvre, notes de test et notes supplémentaires
+#### <a name="implementation-notes-test-notes-and-additional-notes"></a>Notes d’implémentation, notes de test et notes supplémentaires
 
-- Pour ajouter des notes dans l’un de ces champs, sélectionnez **modifier les notes de mise en œuvre** sous l’un de ces champs.
-- Lorsque le volet flyout s’ouvre, entrez des notes dans le champ texte, puis sélectionnez **enregistrer et fermer**.
-- Pour modifier des notes, sélectionnez **modifier les notes d’implémentation**, apporter vos modifications, puis cliquez sur **enregistrer et fermer**.
+- Pour ajouter des notes dans l’un de ces trois champs, sélectionnez Modifier les **notes** d’implémentation sous l’un de ces champs.
+- Lorsque le volet volant s’ouvre, entrez des notes dans le champ de texte, puis **sélectionnez Enregistrer et fermer.**
+- Pour modifier des notes, **sélectionnez Modifier les notes** d’implémentation, a apporter vos modifications, puis **sélectionnez Enregistrer et fermer.**
 
-Il n’y a pas de limite de caractères dans les champs Notes. Nous vous recommandons de conserver des notes résumées afin de pouvoir les afficher et les modifier facilement à partir de la page Détails des actions d’amélioration.
+Il n’existe aucune limite de caractères dans les champs de notes. Nous vous recommandons de garder les notes brèves afin de pouvoir facilement les afficher et les modifier à partir de la page de détails des actions d’amélioration.
 
-## <a name="change-improvement-action-status"></a>Modifier l’état de l’action d’amélioration
+## <a name="change-improvement-action-status"></a>État de l’action d’amélioration des changements
 
-Vous pouvez enregistrer l’État et la date d’implémentation, ainsi que l’État et la date du test pour chaque action d’amélioration. Les champs d' **État** de **mise en œuvre** et de test peuvent être modifiés par tout utilisateur disposant d’autorisations de modification, et non simplement par la personne affectée.
+Vous pouvez enregistrer l’état et la date d’implémentation, ainsi que l’état et la date du test pour chaque action d’amélioration. Les **champs d’implémentation** **et d’état** de test peuvent être modifiés par n’importe quel utilisateur ayant des autorisations de modification, pas seulement par la personne affectée.
 
-Pour modifier l’état d’une action d’amélioration, sélectionnez **modifier l’État** dans la section supérieure gauche de la page de détails. Vous trouverez ci-dessous les champs et les options d’état disponibles :
+Pour modifier l’état d’une action d’amélioration, sélectionnez **Modifier l’état** dans la section supérieure gauche de la page de détails. Vous trouverez ci-dessous les champs disponibles et les options d’état :
 
 - **État de l’implémentation**
-    - **Non implémenté** -action pas encore implémentée
-    - **Implemented** -action implémentée
-    - **Autre implémentation** : sélectionnez cette option si vous avez utilisé d’autres outils tiers ou si vous avez effectué d’autres actions qui ne sont pas incluses dans les recommandations de Microsoft.
-    - L’action **planifiée** est planifiée pour l’implémentation
+    - **Non implémenté** - action pas encore implémentée
+    - **Implémenté** - action implémentée
+    - **Implémentation alternative** : sélectionnez cette option si vous avez utilisé d’autres outils tiers ou pris d’autres actions non incluses dans les recommandations de Microsoft
+    - **Planifié** : l’action est planifiée pour l’implémentation
     - **Hors de portée** : l’action n’est pas pertinente pour votre organisation et ne contribue pas à votre score
-- **Date d’implémentation**: disponible pour sélection lorsque l’état de mise en œuvre est « implémenté » ou « autre implémentation »
-- **État du test**: disponible pour sélection lorsque l’état de mise en œuvre est « implémenté » ou « autre implémentation » :
-    - **Non évalué** : l’action n’a pas été testée
-    - L’implémentation **passée** a été vérifiée par un évaluateur
-    - Échec du test à **faible risque** pour les tests, risque faible
-    - **Risque moyen échoué** -test ayant échoué, risque moyen
-    - **Échec à haut risque** – tests échoués, à risque élevé
-    - **Hors de portée** – l’action est hors de portée pour l’évaluation et ne contribue pas à votre score
-- **Date du test**: afficher la fenêtre contextuelle du calendrier pour sélectionner la date
+- **Date d’implémentation**: disponible pour sélectionner le moment où l’état d’implémentation est « implémenté » ou « implémentation alternative »
+- **État du** test : disponible pour sélectionner le moment où l’état d’implémentation est « implémenté » ou « implémentation alternative » :
+    - **Non évalué :** l’action n’a pas été testée
+    - **Réussi** : l’implémentation a été vérifiée par un évaluateur
+    - **Échec du risque faible :** échec du test, faible risque
+    - **Échec du risque moyen :** échec du test, risque moyen
+    - **Échec d’un risque élevé** : échec du test, risque élevé
+    - **Hors de portée :** l’action n’est pas étendue pour l’évaluation et ne contribue pas à votre score
+- **Date de test**: basculez dans la fenêtre pop-up du calendrier pour sélectionner la date
 
-Les actions courantes sont synchronisées entre les groupes. Lorsque deux évaluations différentes dans le même groupe partagent des actions d’amélioration gérées par vous-même, toutes les mises à jour apportées aux détails de l’implémentation ou à l’état d’une action sont automatiquement synchronisées avec la même action dans toute autre évaluation du groupe. Cette synchronisation vous permet d’implémenter une action d’amélioration et de répondre à plusieurs exigences dans plusieurs réglementations.
+Les actions courantes sont synchronisées entre les groupes. Lorsque deux évaluations différentes dans le même groupe partagent des actions d’amélioration qui sont gérées par vous, les mises à jour apportées aux détails ou à l’état d’implémentation d’une action se synchronisent automatiquement avec la même action dans toute autre évaluation du groupe. Cette synchronisation vous permet d’implémenter une action d’amélioration et de répondre à plusieurs exigences dans plusieurs réglementations.
 
-## <a name="assign-improvement-action-to-assessor-for-completion"></a>Affecter une action d’amélioration à l’évaluateur pour achèvement
+## <a name="assign-improvement-action-to-assessor-for-completion"></a>Affecter une action d’amélioration à l’évaluateur pour l’achèvement
 
-Une fois le travail terminé, de tester et de charger des preuves, l’étape suivante consiste à affecter l’action d’amélioration à un évaluateur pour validation. L’évaluateur valide le travail et examine la documentation, puis sélectionne l’état de test approprié.
+Une fois que vous avez terminé le travail, effectué des tests et chargé des preuves, l’étape suivante consiste à affecter l’action d’amélioration à un évaluateur pour validation. L’évaluateur valide le travail, examine la documentation et sélectionne l’état de test approprié.
 
-**Si le statut du test est défini sur « passé »**: l’action est terminée et les points obtenus indiquent le nombre maximal de points atteints. Les points sont ensuite pris en compte dans le score de conformité global.
+**Si l’état du test est « Réussi**» : l’action est terminée et les points obtenus indiquent le nombre maximal de points obtenus. Les points sont ensuite comptabilisés dans votre score de conformité global.
 
-**Si le statut du test est défini sur « échec »**: l’action ne répond pas à la configuration requise et l’évaluateur peut l’attribuer à nouveau à l’utilisateur approprié pour un travail supplémentaire.
+**Si l’état** du test est « Échec » : l’action ne répond pas aux exigences et l’évaluateur peut l’affecter à l’utilisateur approprié pour un travail supplémentaire.
 
-## <a name="accepting-updates-to-improvement-actions"></a>Acceptation de mises à jour pour les actions d’amélioration
+## <a name="accepting-updates-to-improvement-actions"></a>Acceptation des mises à jour pour les actions d’amélioration
 
-Lorsqu’une mise à jour est disponible pour une action d’amélioration, une notification s’affiche en regard de son nom. Vous pouvez accepter la mise à jour ou la reporter pour une date ultérieure.
+Lorsqu’une mise à jour est disponible pour une action d’amélioration, vous verrez une notification en regard de son nom. Vous pouvez accepter la mise à jour ou la différer pour une période ultérieure.
 
-#### <a name="what-causes-an-update"></a>Qu’est-ce qui provoque une mise à jour ?
+#### <a name="what-causes-an-update"></a>Causes d’une mise à jour
 
-Une mise à jour est effectuée lorsqu’il y a des modifications liées au score, à l’automatisation ou à l’étendue. Les modifications peuvent impliquer de nouvelles instructions pour les actions d’amélioration en fonction des changements de réglementation, ou peuvent être liées à des modifications de produit. Seules les actions d’amélioration gérées par vos organisations reçoivent des notifications de mise à jour.
+Une mise à jour se produit lorsqu’il existe des modifications liées à l’score, à l’automatisation ou à l’étendue. Les modifications peuvent impliquer de nouvelles instructions pour les actions d’amélioration basées sur les modifications réglementaires, ou peuvent être dues à des modifications apportées aux produits. Seules les actions d’amélioration gérées par vos organisations reçoivent des notifications de mise à jour.
 
-#### <a name="where-youll-see-assessment-update-notifications"></a>Où se trouvent les notifications de mise à jour de l’évaluation
+#### <a name="where-youll-see-assessment-update-notifications"></a>Où vous verrez les notifications de mise à jour de l’évaluation
 
-Lorsqu’une action d’amélioration est mise à jour, une étiquette **mise à jour en attente** apparaît en regard de son nom dans la page actions d’amélioration, puis sur la page Détails de ses évaluations connexes.
+Lorsqu’une action d’amélioration est mise  à jour, vous verrez une étiquette de mise à jour en attente en regard de son nom sur la page actions d’amélioration et sur la page de détails de ses évaluations connexes.
 
-Accédez à la page des détails de l’action d’amélioration, puis sélectionnez le bouton **examiner la mise à jour** dans la bannière supérieure pour examiner les détails des modifications et accepter ou différer la mise à jour.
+Go to the improvement action’s details page, and select the **Review update** button in the top banner to review details about the changes and accept or defer the update.
 
-#### <a name="review-update-to-accept-or-defer"></a>Examiner la mise à jour pour accepter ou reporter
+#### <a name="review-update-to-accept-or-defer"></a>Passer en revue la mise à jour pour accepter ou différer
 
-Après avoir sélectionné **examiner la mise à jour** à partir de la page Détails de l’action d’amélioration, un volet flyout apparaît sur le côté droit de l’écran. Le volet flyout fournit des détails clés sur la mise à jour, tels que les évaluations impactées et les modifications du score et de l’étendue.
+Après avoir sélectionné la mise à **jour de** révision dans la page détails de l’action d’amélioration, un volet volant s’affiche sur le côté droit de votre écran. Le volet volant fournit des détails clés sur la mise à jour, tels que les évaluations impactées et les modifications apportées au score et à l’étendue.
 
-Sélectionnez **accepter la mise à jour** pour accepter toutes les modifications apportées à l’action d’amélioration. **Les modifications acceptées sont permanentes**.
+Sélectionnez **Accepter la mise à** jour pour accepter toutes les modifications apportées à l’action d’amélioration. **Les modifications acceptées sont permanentes.**
 
 > [!NOTE]
-> Lorsque vous acceptez une mise à jour d’une action, vous acceptez également les mises à jour de toutes les autres versions ou instances de cette action. Les mises à jour vont propager les actions techniques à l’échelle du client et vont propager les groupes pour les actions non techniques.
+> Lorsque vous acceptez une mise à jour d’une action, vous acceptez également les mises à jour d’autres versions ou instances de cette action. Les mises à jour propagent les actions techniques à l’échelle du client et se propagent à l’échelle du groupe pour les actions non techniques.
 
-Si vous sélectionnez **Annuler**, la mise à jour ne sera pas appliquée à l’action d’amélioration. Toutefois, vous continuerez de voir la notification de **mise à jour en attente** jusqu’à ce que vous acceptiez la mise à jour.
+Si vous **sélectionnez Annuler,** la mise à jour ne sera pas appliquée à l’action d’amélioration. Toutefois, vous continuerez à voir la notification de mise à jour **en** attente jusqu’à ce que vous acceptiez la mise à jour.
 
-**Pourquoi est-il recommandé d’accepter les mises à jour ?**
+**Pourquoi nous vous recommandons d’accepter les mises à jour ?**
 
-En acceptant les mises à jour, vous disposez des instructions les plus à jour sur l’utilisation des solutions et l’exécution des actions d’amélioration appropriées pour vous aider à répondre aux exigences de la certification à la main.
+L’acceptation des mises à jour vous permet de vous assurer que vous avez les conseils les plus mis à jour sur l’utilisation des solutions et la prise d’actions d’amélioration appropriées pour vous aider à répondre aux exigences de la certification.
 
-**Pourquoi reporter une mise à jour ?**
+**Pourquoi différer une mise à jour ?**
 
-Si vous êtes en train d’effectuer une évaluation qui inclut l’action d’amélioration, vous souhaiterez peut-être vous assurer que vous avez terminé de travailler dessus avant d’accepter la mise à jour. Vous pouvez reporter la mise à jour ultérieurement en sélectionnant **Annuler** dans le volet de sélection de mise à jour de révision.
+Si vous êtes en train d’effectuer une évaluation qui inclut l’action d’amélioration, vous voudrez peut-être vous assurer que vous avez terminé de travailler dessus avant d’accepter la mise à jour. Vous pouvez différer la mise à jour ultérieurement en sélectionnant **Annuler** dans le volet volant de révision de la mise à jour.
+
+#### <a name="accept-all-updates-at-once"></a>Accepter toutes les mises à jour en même temps
+
+Si vous avez plusieurs mises à jour et que  vous souhaitez les accepter toutes en même temps, sélectionnez le lien Accepter toutes les mises à jour en haut du tableau des actions d’amélioration. Un volet volant s’affiche, qui répertorie le nombre d’actions à mettre à jour. Sélectionnez le **bouton Accepter les mises à** jour pour appliquer toutes les mises à jour.
+
+Notez que lorsque vous revenirz à votre page d’actions d’amélioration, vous pouvez voir un message en haut de la page vous demandant d’actualiser la page pour que les mises à jour soient terminées.
 
 ## <a name="export-a-report"></a>Exporter un rapport
 
-Sélectionnez **Exporter** dans le coin supérieur gauche de votre écran pour télécharger une feuille de calcul Excel contenant toutes vos actions d’amélioration et les catégories de filtre affichées dans la page actions d’amélioration.
+Sélectionnez **Exporter** dans le coin supérieur gauche de votre écran pour télécharger une feuille de calcul Excel contenant toutes vos actions d’amélioration et les catégories de filtre affichées sur la page Actions d’amélioration.
