@@ -21,12 +21,12 @@ description: Commencer à utiliser les fonctionnalités d’investigation et de 
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: 6ccefb5c435f08fcef4dcc872af676fba70668ee
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: 570fb3c9d180d3167cfc5a4e3c3825102875b74f
+ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794543"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49865007"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Examen et réponse automatisés (AIR) dans Microsoft Defender pour Office 365
 
@@ -107,7 +107,7 @@ Microsoft 365 fournit de nombreuses stratégies d’alerte intégrées qui perme
 |Alerte|Severity|Comment l’alerte est générée|
 |---|---|---|
 |Un clic d’URL potentiellement malveillant a été détecté|**High**|Cette alerte est générée lorsque l’une des alertes suivantes se produit : <ul><li>Un utilisateur protégé par des [liens sécurisés](atp-safe-links.md) dans votre organisation clique sur un lien malveillant</li><li>Les modifications de verdict pour les URL sont identifiées par Microsoft Defender pour Office 365</li><li>Les utilisateurs remplacent les pages d’avertissement de liens sécurisés (en fonction de la stratégie de liens sécurisés de [votre organisation).](set-up-atp-safe-links-policies.md)</li></ul> <p> Pour plus d’informations sur les événements qui déclenchent cette alerte, voir [Configurer des stratégies de liens sécurisés.](set-up-atp-safe-links-policies.md)|
-|Un message électronique est signalé par un utilisateur comme programme malveillant ou hameçonnage|**Informationnel**|Cette alerte est générée lorsque les utilisateurs de votre organisation signalent des messages comme courrier de hameçonnage à l’aide du [add-in Signaler un message.](enable-the-report-message-add-in.md)|
+|Un message électronique est signalé par un utilisateur comme programme malveillant ou hameçonnage|**Informationnel**|Cette alerte est générée lorsque les utilisateurs de votre organisation signalent des messages en tant que courrier de hameçonnage à l’aide du module de signalement du [message](enable-the-report-message-add-in.md) ou du [module de signalement du hameçonnage.](enable-the-report-phish-add-in.md)|
 |Les messages électroniques contenant des programmes malveillants sont supprimés après la remise|**Informationnel**|Cette alerte est générée lorsqu’un message électronique contenant un programme malveillant est remis aux boîtes aux lettres de votre organisation. Si cet événement se produit, Microsoft supprime les messages infectés des boîtes aux lettres Exchange Online à l’aide de la [purge automatique zéro heure](zero-hour-auto-purge.md).|
 |Les messages électroniques contenant des URL de hameçonnage sont supprimés après la remise|**Informationnel**|Cette alerte est générée lorsqu’un message contenant du hameçonnage est remis aux boîtes aux lettres de votre organisation. Si cet événement se produit, Microsoft supprime les messages infectés des boîtes aux lettres Exchange Online à l’aide de la [purge automatique zéro heure](zero-hour-auto-purge.md).|
 |Des modèles d’envoi de courrier suspects sont détectés|**Medium**|Cette alerte est générée lorsqu’une personne de votre organisation a envoyé des messages suspects et risque d’être limitée à l’envoi de courriers électroniques. Il s’agit d’un avertissement précoce pour un comportement qui peut indiquer que le compte est compromis, mais pas assez grave pour restreindre l’utilisateur. <p> Bien que cela soit rare, une alerte générée par cette stratégie peut être une anomalie. Toutefois, il est bon de vérifier si le compte [d’utilisateur est compromis.](responding-to-a-compromised-email-account.md)|

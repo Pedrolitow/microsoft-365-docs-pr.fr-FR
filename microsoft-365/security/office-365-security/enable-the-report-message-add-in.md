@@ -15,13 +15,13 @@ search.appverid:
 ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
-description: Découvrez comment activer le complément de message de rapport pour Outlook et Outlook sur le Web, pour des utilisateurs individuels ou l’ensemble de votre organisation.
-ms.openlocfilehash: baed46e500e58702b7031db5aa5ff376a4eafcb5
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+description: Découvrez comment activer le add-in Message de rapport pour Outlook et Outlook sur le web, pour des utilisateurs individuels ou pour l’ensemble de votre organisation.
+ms.openlocfilehash: 13721317c33cf207f27cd8b98fb6d32864651847
+ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877752"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49864995"
 ---
 # <a name="enable-the-report-message-add-in"></a>Activez le complément Signaler un message
 
@@ -29,140 +29,140 @@ ms.locfileid: "48877752"
 
 
 > [!NOTE]
-> Si vous êtes administrateur dans une organisation Microsoft 365 avec des boîtes aux lettres Exchange Online, nous vous recommandons d’utiliser le portail d’envoi dans le centre de sécurité & conformité. Pour plus d’informations, consultez la rubrique [utiliser la soumission de l’administrateur pour envoyer des courriers indésirables, des hameçons, des URL et des fichiers à Microsoft](admin-submission.md).
+> Si vous êtes un administrateur d’une organisation Microsoft 365 avec des boîtes aux lettres Exchange Online, nous vous recommandons d’utiliser le portail soumissions dans le Centre de sécurité & conformité. Pour plus d’informations, voir Utiliser la soumission d’administrateur pour soumettre des messages suspects de courrier indésirable, d’hameçonnage, d’URL et [de fichiers à Microsoft.](admin-submission.md)
 
-Le complément de message de rapport pour Outlook et Outlook sur le Web (anciennement appelé Outlook Web App) permet aux utilisateurs de signaler facilement les faux positifs (courrier électronique marqué comme incorrect) ou les faux négatifs (courrier incorrect autorisé) à Microsoft et à ses filiales pour analyse. Microsoft utilise ces soumissions pour améliorer l’efficacité des technologies de protection de la messagerie.
+Les add-ins Signaler le message et Signaler le hameçonnage pour Outlook et Outlook sur le web (anciennement Outlook Web App) permettent aux utilisateurs de signaler facilement les faux positifs (messages électroniques de qualité marqués comme faux) ou les faux négatifs (courrier électronique non autorisé) à Microsoft et à ses affiliés pour analyse.
 
-Par exemple, supposons que des personnes signalent un grand nombre de messages comme hameçonnage. Ces informations sont représentées dans le [tableau de bord de sécurité](security-dashboard.md) et d’autres rapports. L’équipe de sécurité de votre organisation peut utiliser ces informations pour indiquer que les stratégies de détection d’hameçonnage doivent être mises à jour. Ou bien, si des personnes signalent un grand nombre de messages marqués comme légitimes comme légitimes à l’aide du complément de message de rapport, il se peut que l’équipe de sécurité de votre organisation doive ajuster les [stratégies de blocage du courrier](configure-your-spam-filter-policies.md)indésirable.
+Microsoft utilise ces soumissions pour améliorer l’efficacité des technologies de protection de la messagerie. Par exemple, si des personnes signalent un grand nombre de messages marqués comme courrier indésirable à l’aide du add-in Signaler un message, l’équipe de sécurité de votre organisation devra peut-être ajuster les stratégies [anti-courrier](configure-your-spam-filter-policies.md)indésirable.
 
-En outre, si votre organisation utilise [Microsoft Defender pour Office 365 plan 1](office-365-atp.md) ou [plan 2](office-365-ti.md), le complément Report message fournit à l’équipe de sécurité de votre organisation des informations utiles pour examiner et mettre à jour les stratégies de sécurité.
+Vous pouvez installer le module de rapport de message ou de signalement du hameçonnage. Si vous souhaitez que vos utilisateurs signalent uniquement les messages de hameçonnage, déployez le module de signalement du hameçonnage dans votre organisation. Pour plus d’informations, [voir Enable the Report Phishing add-in](enable-the-report-phish-add-in.md).
 
-Les administrateurs peuvent activer le complément de message de rapport pour l’organisation, et les utilisateurs individuels peuvent l’installer pour eux-mêmes.
+Le add-in Report Message offre la possibilité de signaler les messages de courrier indésirable et de hameçonnage. Les administrateurs peuvent activer le add-in Message de rapport pour l’organisation, et les utilisateurs individuels peuvent l’installer eux-mêmes.
 
-Si vous êtes un utilisateur individuel, vous pouvez [activer le complément de rapport de message pour vous-même](#get-the-report-message-add-in-for-yourself).
+Si vous êtes un utilisateur individuel, vous pouvez activer le module de rapport de [message pour vous-même.](#get-the-report-message-add-in-for-yourself)
 
-Si vous êtes un administrateur général ou un administrateur Exchange Online et qu’Exchange est configuré pour utiliser l’authentification OAuth, vous pouvez [activer le complément de message de rapport pour votre organisation](#get-and-enable-the-report-message-add-in-for-your-organization). Le message de rapport Add-In est désormais disponible via un [déploiement centralisé](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins).
+Si vous êtes un administrateur général ou un administrateur Exchange Online et qu’Exchange est configuré pour utiliser l’authentification OAuth, vous pouvez activer le [add-in](#get-and-enable-the-report-message-add-in-for-your-organization)Message de rapport pour votre organisation. Le message de Add-In est désormais disponible via [le déploiement centralisé.](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins)
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Le complément de message de rapport fonctionne avec la plupart des abonnements Microsoft 365 et les produits suivants :
+- Le add-in Message de rapport fonctionne avec la plupart des abonnements Microsoft 365 et les produits suivants :
 
   - Outlook sur le web
-  - Outlook 2013 SP1 ou version ultérieure
+  - Outlook 2013 SP1 ou une édition ultérieure
   - Outlook 2016 pour Mac
-  - Outlook inclus avec les applications Microsoft 365 pour les entreprises
+  - Outlook inclus dans les applications Microsoft 365 pour Entreprise
 
-- Le complément de message de rapport n’est pas disponible pour les boîtes aux lettres dans les organisations Exchange locales.
+- Le module de rapport de message n’est pas disponible pour les boîtes aux lettres dans les organisations Exchange locales.
 
-- Vous pouvez configurer la copie ou la redirection des messages signalés vers une boîte aux lettres que vous spécifiez. Pour plus d’informations, consultez la rubrique [User submissions Policies](user-submission.md).
+- Vous pouvez configurer la copie ou la redirection des messages signalés vers une boîte aux lettres que vous spécifiez. Pour plus d’informations, voir [Stratégies d’envoi des utilisateurs.](user-submission.md)
 
-- Votre navigateur Web existant doit fonctionner avec le complément de message de rapport. Toutefois, si vous remarquez que le complément n’est pas disponible ou ne fonctionne pas comme prévu, essayez un autre navigateur.
+- Votre navigateur web existant doit fonctionner avec le add-in Message de rapport. Toutefois, si vous remarquez que le module n’est pas disponible ou ne fonctionne pas comme prévu, essayez un autre navigateur.
 
-- Pour les installations organisationnelles, l’organisation doit être configurée pour utiliser l’authentification OAuth. Pour plus d’informations, reportez-vous à [la rubrique déterminer si un déploiement centralisé de compléments fonctionne pour votre organisation](../../admin/manage/centralized-deployment-of-add-ins.md).
+- Pour les installation organisationnelles, l’organisation doit être configurée pour utiliser l’authentification OAuth. Pour plus d’informations, [voir Determine if Centralized Deployment of add-ins works for your organization](../../admin/manage/centralized-deployment-of-add-ins.md).
 
-- Les administrateurs doivent être membres du groupe de rôles global admins. Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
+- Les administrateurs doivent être membres du groupe de rôles Administrateurs globaux. Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
 
-## <a name="get-the-report-message-add-in-for-yourself"></a>Obtenir le complément de message de rapport pour vous-même
+## <a name="get-the-report-message-add-in-for-yourself"></a>Obtenir le add-in Message de rapport pour vous-même
 
-1. Accédez au site Microsoft AppSource à l’adresse <https://appsource.microsoft.com/marketplace/apps> et recherchez le complément de message de rapport. Pour accéder directement au complément de message de rapport, accédez à <https://appsource.microsoft.com/product/office/wa104381180> .
+1. Go to the Microsoft AppSource at <https://appsource.microsoft.com/marketplace/apps> and search for the Report Message add-in. To go directly to the Report Message add-in, go to <https://appsource.microsoft.com/product/office/wa104381180> .
 
-2. Cliquez sur **obtenir maintenant**.
+2. Cliquez **sur GET IT NOW**.
 
-   ![Message de rapport-Get it](../../media/ReportMessageGETITNOW.png)
+   ![Message de rapport : l’obtenir maintenant](../../media/ReportMessageGETITNOW.png)
 
-3. Dans la boîte de dialogue qui s’affiche, passez en revue les conditions d’utilisation et la politique de confidentialité, puis cliquez sur **Continuer**.
+3. Dans la boîte de dialogue qui s’affiche, examinez les conditions d’utilisation et la politique de confidentialité, puis cliquez sur **Continuer**.
 
-4. Connectez-vous à l’aide de votre compte professionnel ou scolaire (pour une utilisation professionnelle) ou de votre compte Microsoft (pour une utilisation personnelle).
+4. Connectez-vous à l’aide de votre compte scolaire ou scolaire (pour une utilisation professionnelle) ou de votre compte Microsoft (pour un usage personnel).
 
-Une fois le complément installé et activé, les icônes suivantes s’affichent :
+Une fois que le module est installé et activé, les icônes suivantes s’offrent à vous :
 
-- Dans Outlook, l’icône se présente comme suit :
+- Dans Outlook, l’icône ressemble à ceci :
 
-  ![Icône de complément de rapport de message pour Outlook](../../media/OutlookReportMessageIcon.png)
+  ![Icône signaler le add-in Message pour Outlook](../../media/OutlookReportMessageIcon.png)
 
-- Dans Outlook sur le Web, l’icône se présente comme suit :
+- Dans Outlook sur le web, l’icône ressemble à ceci :
 
-  ![Icône de complément de message de rapport Web Outlook sur le Web](../../media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)
+  ![Icône du add-in Message de rapport Outlook sur le web](../../media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)
 
-Pour savoir comment utiliser le complément, voir [use the Report message Add-in](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
+Pour savoir comment utiliser le add-in, voir Utiliser le [add-in Message de rapport.](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
 
-## <a name="get-and-enable-the-report-message-add-in-for-your-organization"></a>Obtenir et activer le complément de message de rapport pour votre organisation
+## <a name="get-and-enable-the-report-message-add-in-for-your-organization"></a>Obtenir et activer le add-in Message de rapport pour votre organisation
 
 > [!NOTE]
-> Le complément peut prendre jusqu’à 12 heures pour apparaître dans votre organisation.
+> L’apparition du module dans votre organisation peut prendre jusqu’à 12 heures.
 
-1. Dans le centre d’administration Microsoft 365, accédez à la page **paramètres, applications intégrées & des compléments** à l’adresse <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> , puis cliquez sur **déployer un complément**.
+1. Dans le Centre d’administration Microsoft 365, consultez la page **Paramètres,** Applications intégrées & Les applications et les applications à l’adresse , puis cliquez sur Déployer <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> un **application.**
 
-   ![Page services et compléments dans le centre d’administration Microsoft 365](../../media/ServicesAddInsPageNewM365AdminCenter.png)
+   ![Page Services et modules dans le Centre d’administration Microsoft 365](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
-2. Dans le menu **déroulant déployer un nouveau complément** qui s’affiche, passez en revue les informations, puis cliquez sur **suivant**.
+2. Dans le **volant Déployer un** nouveau module complémentaire qui s’affiche, examinez les informations, puis cliquez sur **Suivant**.
 
-3. Sur la page suivante, cliquez sur **choisir dans le Store**.
+3. Sur la page suivante, cliquez sur **Choisir dans le Store.**
 
-   ![Déployer une nouvelle page de complément](../../media/NewAddInScreen2.png)
+   ![Déployer une nouvelle page de modules](../../media/NewAddInScreen2.png)
 
-4. Dans la page **Sélectionner un complément** qui s’affiche, cliquez sur dans la zone de **recherche** , entrez **message de rapport** , **puis cliquez sur** ![ icône de recherche de recherche ](../../media/search-icon.png) . Dans la liste des résultats, recherchez **message de rapport** , puis cliquez sur **Ajouter**.
+4. Dans la page **Sélectionner un add-in** qui s’affiche, cliquez dans la zone De recherche, entrez Message de rapport, puis cliquez sur **Icône**   ![ ](../../media/search-icon.png) Rechercher. Dans la liste des résultats, recherchez Message de **rapport,** puis cliquez sur **Ajouter.**
 
-   ![Sélectionner les résultats de la recherche de complément](../../media/NewAddInScreen3.png)
+   ![Sélectionner les résultats de la recherche de add-in](../../media/NewAddInScreen3.png)
 
-5. Dans la boîte de dialogue qui s’affiche, vérifiez les informations de licence et de confidentialité, puis cliquez sur **Continuer**.
+5. Dans la boîte de dialogue qui s’affiche, examinez les informations de licence et de confidentialité, puis cliquez sur **Continuer**.
 
-6. Dans la page **configurer le complément** qui s’affiche, configurez les paramètres suivants :
+6. Dans la page **Configurer le add-in** qui s’affiche, configurez les paramètres suivants :
 
-   - **Utilisateurs affectés** : sélectionnez l’une des valeurs suivantes :
+   - **Utilisateurs affectés**: sélectionnez l’une des valeurs suivantes :
 
      - **Tout le monde** (par défaut)
      - **Utilisateurs/groupes spécifiques**
      - **Juste moi**
 
-   - **Méthode de déploiement** : sélectionnez l’une des valeurs suivantes :
+   - **Méthode de déploiement**: sélectionnez l’une des valeurs suivantes :
 
-     - **Fixed (valeur par défaut)** : le complément est déployé automatiquement sur les utilisateurs spécifiés et ils ne peuvent pas le supprimer.
-     - **Disponible** : les utilisateurs peuvent installer le complément à **leur domicile** \> **obtenir des compléments** \> **gérés par l’administrateur**.
-     - **Facultatif** : le complément est déployé automatiquement sur les utilisateurs spécifiés, mais ils peuvent choisir de le supprimer.
+     - **Fixe (par défaut)**: le add-in est automatiquement déployé pour les utilisateurs spécifiés et ils ne peuvent pas le supprimer.
+     - **Disponible**: les utilisateurs peuvent installer le add-in sur **home** \> **get add-ins** \> **admin-managed**.
+     - **Facultatif**: le add-in est automatiquement déployé pour les utilisateurs spécifiés, mais ils peuvent choisir de le supprimer.
 
-   ![Page Configurer le complément](../../media/configure-add-in.png)
+   ![Configurer la page de l’ajout](../../media/configure-add-in.png)
 
-   Lorsque vous avez terminé, cliquez sur **déployer**.
+   Lorsque vous avez terminé, cliquez sur **Déployer.**
 
-7. Dans la page **déployer un message de rapport** qui s’affiche, vous verrez un rapport d’avancement suivi d’une confirmation de déploiement du complément. Une fois que vous avez lu les informations, cliquez sur **suivant**.
+7. Dans la page Déployer le **message** de rapport qui s’affiche, vous verrez un rapport d’avancement suivi d’une confirmation du déploiement du module. Après avoir lu les informations, cliquez sur **Suivant**.
 
-   ![Page déployer un message de rapport](../../media/deploy-report-message-page.png)
+   ![Page Déployer le message de rapport](../../media/deploy-report-message-page.png)
 
-8. Sur la page **complément annonce** , vérifiez les informations, puis cliquez sur **Fermer**.
+8. Dans la page **Annoncer le add-in** qui s’affiche, examinez les informations, puis cliquez sur **Fermer**.
 
-   ![Annoncer la page de complément](../../media/announce-add-in-page.png)
+   ![Page d’annonce du add-in](../../media/announce-add-in-page.png)
 
-## <a name="learn-how-to-use-the-report-message-add-in"></a>En savoir plus sur l’utilisation du complément de message de rapport
+## <a name="learn-how-to-use-the-report-message-add-in"></a>Découvrez comment utiliser le add-in Report Message
 
-Les personnes auxquelles le complément est attribué voient les icônes suivantes :
+Les personnes à qui le add-in est affecté voient les icônes suivantes :
 
-- Dans Outlook, l’icône se présente comme suit :
+- Dans Outlook, l’icône ressemble à ceci :
 
-  ![Icône de complément de rapport de message pour Outlook](../../media/OutlookReportMessageIcon.png)
+  ![Icône Signaler le add-in de message pour Outlook](../../media/OutlookReportMessageIcon.png)
 
-- Dans Outlook sur le Web, l’icône se présente comme suit :
+- Dans Outlook sur le web, l’icône ressemble à ceci :
 
-  ![Icône de complément de message de rapport Web Outlook sur le Web](../../media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)
+  ![Icône De message Outlook sur le web](../../media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)
 
-Lorsque vous informez les utilisateurs du complément Report message, incluez un lien permettant d' [utiliser le complément Report message](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
+Lorsque vous informez les utilisateurs du add-in Message de rapport, incluez un lien pour utiliser le [add-in Message de rapport.](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
 
-## <a name="review-or-edit-settings-for-the-report-message-add-in"></a>Vérifier ou modifier les paramètres du complément de message de rapport
+## <a name="review-or-edit-settings-for-the-report-message-add-in"></a>Passer en revue ou modifier les paramètres du add-in Message de rapport
 
-1. Dans le centre d’administration Microsoft 365, accédez à la page des **compléments de Services &** à l’adresse <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns> .
+1. In the Microsoft 365 admin center, go to the **Services & add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns> .
 
-   ![Page services et Add-Ins dans le nouveau centre d’administration Microsoft 365](../../media/ServicesAddInsPageNewM365AdminCenter.png)
+   ![Page Services et Add-Ins dans le nouveau Centre d’administration Microsoft 365](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
-2. Recherchez et sélectionnez le complément **Report message** .
+2. Recherchez et sélectionnez le add-in **Message** de rapport.
 
-3. Dans la fenêtre mobile **modifier un message** qui s’affiche, vérifiez et modifiez les paramètres en fonction de votre organisation. Lorsque vous avez terminé, cliquez sur **Enregistrer**.
+3. Dans le **volant Modifier le message** de rapport qui s’affiche, examinez et modifiez les paramètres selon le cas pour votre organisation. Lorsque vous avez terminé, cliquez sur **Enregistrer**.
 
-   ![Paramètres du complément de message de rapport](../../media/EditReportMessageAddIn.png)
+   ![Paramètres du add-in Message de rapport](../../media/EditReportMessageAddIn.png)
 
-## <a name="view-and-review-reported-messages"></a>Afficher et consulter les messages signalés
+## <a name="view-and-review-reported-messages"></a>Afficher et examiner les messages signalés
 
-Pour passer en revue les messages que les utilisateurs signalent à Microsoft, vous disposez des options suivantes :
+Pour passer en revue les messages que les utilisateurs signalent à Microsoft, vous avez les options ci-après :
 
-- Utiliser le portail de soumission des administrateurs. Pour plus d’informations, consultez la rubrique [afficher les soumissions des utilisateurs à Microsoft](admin-submission.md#view-user-submissions-to-microsoft).
+- Utilisez le portail Soumissions d’administrateur. Pour plus d’informations, voir [Afficher les soumissions d’utilisateurs à Microsoft.](admin-submission.md#view-user-submissions-to-microsoft)
 
-- Créer une règle de flux de messagerie (également appelée règle de transport) pour envoyer des copies des messages signalés. Pour obtenir des instructions, consultez [la rubrique utiliser des règles de flux de messagerie pour voir ce que vos utilisateurs signalent à Microsoft](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md).
+- Créez une règle de flux de messagerie (également appelée règle de transport) pour envoyer des copies des messages signalés. Pour obtenir des instructions, voir Utiliser des règles de flux de messagerie pour voir ce [que vos utilisateurs rapportent à Microsoft.](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)
