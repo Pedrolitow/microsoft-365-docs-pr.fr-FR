@@ -1,6 +1,6 @@
 ---
-title: Bureau géré Microsoft est-il fait pour vous ?
-description: ''
+title: Microsoft Managed Desktop est-il fait pour vous ?
+description: Orientation du service et raccourcis vers les articles pour les différents publics
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: b877a35133be13cd6783659f1e5d981633338be8
-ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
+ms.openlocfilehash: 8e95eb0fd0e03dc718affa7e7cf044beb654bb56
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48269372"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840934"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Qu’est-ce que le bureau géré Microsoft ?
 
@@ -37,7 +37,7 @@ Vos utilisateurs apprécieront les versions les plus récentes des applications 
 
 ## <a name="unique-to-microsoft-managed-desktop"></a>Caractéristiques uniques au Bureau géré Microsoft
 
-Bien entendu, rien ne vous empêche d'obtenir et de gérer vous-même vos propres appareils et les déploiements de Microsoft 365. Qu'offre donc Bureau géré Microsoft en complément ?
+Bien entendu, rien ne vous empêche d'obtenir et de gérer vous-même vos propres appareils et les déploiements de Microsoft 365. Qu'offre donc Microsoft Managed Desktop en complément ?
 
 Nos stratégies et notre base de référence en matière de sécurité offrent aux utilisateurs les avantages suivants :
 
@@ -71,9 +71,9 @@ Nous surveillons également l'intégrité des appareils et vous fournissons des 
 ## <a name="need-more-details"></a>Vous avez besoin d’informations complémentaires ?
 Pour en savoir plus sur la valeur de Bureau géré Microsoft, y compris les témoignages de clients, consultez la rubrique [Bureau géré Microsoft](https://aka.ms/mmd). La [feuille de route](https://aka.ms/AA6jiam) est une [enquête de cas d’impact économique Total](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/intro/downloads/forrester-tei-study.pdf)et une [synthèse d’une seule page](https://aka.ms/AA6ob3h), et téléchargeable un résumé de la page. Vous pouvez trouver les dernières informations sur le [blog](https://aka.ms/AA6l2dd) Bureau géré Microsoft.
 
-Si Bureau géré Microsoft semble convenir à votre entreprise, vous pouvez consulter des documents supplémentaires qui expliquent plus en détail le service, la manière de préparer votre entreprise à l'adhésion, la manière de démarrer le service et les opérations en cours par la suite, y compris la manière dont vous et vos utilisateurs pouvez facilement obtenir de l'aide si nécessaire. Dès que vous êtes prêt à embarquer, commencez par contacter votre [équipe de compte locale](https://pages.email.office.com/contactmmd/).
+Si Microsoft Managed Desktop semble convenir à votre organisation, vous pouvez consulter des documents supplémentaires qui fournissent plus de détails sur le service, la manière de préparer votre organisation à l'adhésion, la manière de démarrer le service et les opérations en cours par la suite, y compris la manière dont vous et vos utilisateurs pouvez facilement obtenir de l'aide si nécessaire. Dès que vous êtes prêt à embarquer, commencez par contacter votre [équipe de compte locale](https://pages.email.office.com/contactmmd/).
 
-**Pus de vue d'ensemble et de contexte** (principalement pour les décideurs techniques et commerciaux) : ces sujets détaillent la répartition des rôles et des responsabilités entre votre organisation et Microsoft, pour en savoir plus sur les technologies utilisées dans Bureau géré Microsoft et sur la manière dont le service s'inscrit dans une stratégie plus large dans le cadre d'ITIL.
+**Pus de vue d'ensemble et d’arrière-plan** Principalement pour les décideurs techniques et commerciaux, ces articles détaillent la répartition des rôles et des responsabilités entre votre organisation et Microsoft, plus d’informations sur les technologies utilisées dans Microsoft Managed Desktop, et comment le service s’adapte à une stratégie plus large dans le cadre ITIL.
 
 - [Rôles et responsabilités de Bureau géré Microsoft](roles-and-responsibilities.md)
 - [Technologies associées de Bureau géré Microsoft](technologies.md)
