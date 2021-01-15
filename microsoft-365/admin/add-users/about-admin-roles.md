@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Les rôles d’administrateur correspondent à des fonctions professionnelles et accordent l'autorisation d'effectuer des tâches spécifiques dans le centre d’administration. Par exemple, l’administrateur du service peut ouvrir les tickets de support via le centre d’administration.
-ms.openlocfilehash: 774edf1a024bd7aab7f35d5635c84b355fc0ef5a
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: ddea8a06af2b529a369ea045913b639b84c6f9d4
+ms.sourcegitcommit: c1f9a1b2a34146c51c9e33c4119a388b249ce7a9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682656"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49867981"
 ---
 # <a name="about-admin-roles"></a>À propos des rôles d’administrateur
 
@@ -88,9 +88,9 @@ Si vous travaillez avec un partenaire Microsoft, vous pouvez lui attribuer un r�
   
 Un partenaire peut attribuer ces rôles : 
   
-- **Administration totale**, dont les privilèges sont équivalents à ceux d’un administrateur général, sauf en matière de gestion de l’authentification multifacteur via l'Espace partenaires.
+- **Agent d’administration**, dont les privilèges sont équivalents à ceux d’un administrateur général, sauf en matière de gestion de l’authentification multifacteur via l'Espace partenaires.
 
-- **Administration limitée**, dont les privilèges sont équivalents à ceux d’un administrateur du support technique.
+- **Agent de support technique**, dont les privilèges sont équivalents à ceux d’un administrateur du support technique.
 
 Pour que le partenaire puisse attribuer ces rôles à des utilisateurs, vous devez ajouter le partenaire en tant qu’administrateur délégué de votre compte. Ce processus est initié par un partenaire autorisé. Le partenaire vous envoie un e-mail pour vous demander l’autorisation d’agir en tant qu’administrateur délégué. Pour consulter des instructions, voir [Autoriser ou supprimer des relations de partenaire](https://docs.microsoft.com/microsoft-365/admin/misc/add-partner).
   

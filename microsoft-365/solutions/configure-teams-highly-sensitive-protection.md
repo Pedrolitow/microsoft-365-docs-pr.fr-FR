@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Découvrez comment déployer des équipes avec la protection des données hautement sensibles.
-ms.openlocfilehash: 6354de5a37547d14b16a4d6a0857ddc390d531e6
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: 045f1b1d1ebf03eb70554dc5964acb0a12e0060f
+ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49750808"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49870850"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>Configurer des équipes avec la protection des données hautement sensibles
 
@@ -33,7 +33,7 @@ Pour ce niveau de protection, nous créons une étiquette de confidentialité qu
 
 Le niveau hautement sensible offre les protections supplémentaires suivantes sur le niveau de référence :
 
-- Une étiquette de confidentialité pour l’équipe qui vous permet d’activer ou de désactiver le partage d’invités et de limiter l’accès au contenu SharePoint au web uniquement pour les appareils non gérés. Cette étiquette peut également être utilisée pour classifier et chiffrer des fichiers.
+- Une étiquette de confidentialité pour l’équipe qui vous permet d’activer ou de désactiver le partage d’invités et de bloquer l’accès au contenu SharePoint pour les appareils non gérés. Cette étiquette peut également être utilisée pour classifier et chiffrer des fichiers.
 - Type de lien de partage par défaut plus restrictif
 - Seuls les propriétaires d’équipe peuvent créer des canaux privés.
 - Les demandes d’accès au site SharePoint associé sont désactivées.
@@ -63,7 +63,7 @@ Pour créer une étiquette de confidentialité
 1. Ouvrez [Centre de conformité Microsoft 365](https://compliance.microsoft.com).
 2. Sous **Solutions**, cliquez sur **Protection des informations**.
 3. Cliquez sur **Créer une étiquette**.
-4. Donnez un nom à l’étiquette. Nous vous suggérons le terme **Sensible**, mais vous pouvez choisir un autre nom si celui-ci est déjà utilisé.
+4. Donnez un nom à l’étiquette. Nous vous suggérons le terme **Hautement sensible**, mais vous pouvez choisir un autre nom si celui-ci est déjà utilisé.
 5. Tapez un nom et une description, puis cliquez sur **Suivant**.
 6. Dans la page **Définir l’étendue de cette page d’étiquettes**, sélectionnez **Fichiers et courriers électroniques** et **Groupes et sites**, puis cliquez sur **Suivant**.
 7. Sur la page **Choisir les paramètres de protection pour les fichiers et les e-mails**, sélectionnez **Chiffrer les fichiers et les e-mails**, puis cliquez sur **Suivant**.
