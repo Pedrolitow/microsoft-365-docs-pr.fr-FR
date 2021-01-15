@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Les administrateurs peuvent apprendre à créer des charges utiles personnalisées pour la formation à la simulation d’attaques dans Microsoft Defender pour Office 365.
-ms.openlocfilehash: fbab4825625c33d027ceaa9aa9272c06e286ed61
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: e3285b99d5b64255b9fdbda8c76b6f133aa013b2
+ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794219"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49870862"
 ---
 # <a name="create-a-custom-payload-for-attack-simulation-training"></a>Créer une charge personnalisée pour une formation à la simulation d’attaque
 
@@ -64,3 +64,11 @@ Vous avez terminé de créer votre charge utile. Il est maintenant temps de pass
 
 > [!IMPORTANT]
 > Les charges utiles que vous avez créées auront **le client** comme source. Lorsque vous sélectionnez des charges utiles, veillez à ne pas filtrer le **client.**
+
+## <a name="related-links"></a>Liens associés
+
+[Commencer à utiliser l’entraînement de simulation d’attaque](attack-simulation-training-get-started.md)
+
+[Créer une simulation d’attaque par hameçonnage](attack-simulation-training.md)
+
+[Découvrez les formations à la simulation d’attaque](attack-simulation-training-insights.md)

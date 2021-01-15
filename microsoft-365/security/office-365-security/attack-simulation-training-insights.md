@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Les administrateurs peuvent découvrir comment la formation sur la simulation d’attaques dans le Centre de sécurité Microsoft 365 affecte les employés et peut obtenir des informations sur les résultats de la simulation et de la formation.
-ms.openlocfilehash: 54855a4ce8e64f4d58b9ff2697395ed684be2773
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: c283819550872691d8dd23d3921c22cb23637633
+ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794555"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49870954"
 ---
 # <a name="gain-insights-through-attack-simulation-training"></a>Découvrez les formations à la simulation d’attaque
 
@@ -53,4 +53,8 @@ La section Actions recommandées détaille les recommandations telles que dispon
 
 ## <a name="related-links"></a>Liens connexes
 
-**Simulateur d’attaques** [Créer une simulation d’attaque par](attack-simulation-training.md) hameçonnage et créer une charge utile pour former vos [personnes](attack-simulation-training-payloads.md)
+[Commencer à utiliser l’entraînement de simulation d’attaque](attack-simulation-training-get-started.md)
+
+[Créer une simulation d’attaque par hameçonnage](attack-simulation-training.md)
+
+[créer une charge utile pour former vos employés](attack-simulation-training-payloads.md)
