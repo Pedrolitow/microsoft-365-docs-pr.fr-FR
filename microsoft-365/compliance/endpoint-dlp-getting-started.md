@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Configurez les points de terminaison contre la protection contre la perte de données Microsoft 365 pour surveiller les activités des fichiers et implémenter des actions de protection pour ces fichiers aux points de terminaison.
-ms.openlocfilehash: 7dbceb97b7ccb542a0a4933f3e3cccf5a38026ea
-ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
+ms.openlocfilehash: 5a5c8e77679b55f20269b135da52bc0498fd7c11
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49604257"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840923"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>Prise en main de la protection contre la perte de données de point de terminaison
 
@@ -98,6 +98,8 @@ Assurez-vous que les appareils Windows 10 pour lesquels vous envisagez de déplo
 5. Installez le navigateur Microsoft Chromium Edge sur l’appareil de point de terminaison afin d’appliquer des actions de stratégie pour l’activité de téléchargement vers le Cloud. [Télécharger le nouveau Microsoft Edge sur la base de chrome](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
 
 6. Si vous utilisez le Canal Entreprise mensuel de Microsoft 365 Apps versions 2004-2008, un problème connu concerne la protection contre la perte de données de point de terminaison qui classe le contenu Office. Vous devez effectuer une mise à jour vers la version 2009 ou une version ultérieure. Si vous souhaitez en savoir plus, veuillez consulter la rubrique [Historique des mises à jour de Microsoft 365 Apps (répertoriées par date)](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date). Si vous souhaitez en savoir plus sur ce problème, veuillez consultez la section Suite Office, dans les [Notes de publication pour les publications du Canal actuel dans 2020](https://docs.microsoft.com/officeupdates/current-channel#version-2010-october-27).
+
+7. Si vous avez des terminaux qui utilisent un proxy de périphérique pour se connecter à l'internet, suivez les procédures de la section [Configurer le proxy de périphérique et les paramètres de connexion à l'internet pour le DLP de terminal](endpoint-dlp-configure-proxy.md).
 
 ## <a name="onboarding-devices-into-device-management"></a>Dispositifs d’intégration dans la gestion des appareils
 

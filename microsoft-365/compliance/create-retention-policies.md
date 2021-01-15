@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez une stratégie de rétention pour garder un contrôle efficace sur le contenu que les utilisateurs génèrent par courriers électroniques, documents et conversations. Conservez ce que vous voulez et supprimez le reste.
-ms.openlocfilehash: 6816905155feb321ae9821c2f0dd47a271a382c9
-ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
+ms.openlocfilehash: d79a505731eea8b48e19507ff6ae9558cb9a78b2
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49604246"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840867"
 ---
 # <a name="create-and-configure-retention-policies"></a>Créer et configurer des stratégies de rétention
 
@@ -53,7 +53,7 @@ Bien qu’une stratégie de rétention puisse prendre en charge plusieurs emplac
 - Messages communautaires Yammer
 - Messages privés Yammer
 
-Lorsque vous sélectionnez l’emplacement Teams ou Yammer lors de la création d’une stratégie de rétention, les autres emplacements sont automatiquement exclus. Par conséquent, l’emplacement à inclure (Teams ou Yammer) détermine les instructions à suivre:
+Lorsque vous sélectionnez l’emplacement Teams ou Yammer lors de la création d’une stratégie de rétention, les autres emplacements sont automatiquement exclus. Par conséquent, les instructions à suivre dépendent de la nécessité d'inclure les équipes ou les lieux de Yammer :
 
 - [Instructions relatives à une stratégie de rétention pour les emplacements Teams](#retention-policy-for-teams-locations)
 - [Instructions relatives à une stratégie de rétention pour les emplacements Yammer](#retention-policy-for-yammer-locations)
@@ -257,17 +257,20 @@ Par exemple, si la stratégie inclut tous les courriers électroniques sur Excha
 
 ### <a name="a-policy-with-specific-inclusions-or-exclusions"></a>Une stratégie avec des inclusions ou des exclusions spécifiques
 
-Ce n'est que si vous utilisez la configuration optionnelle pour étendre vos paramètres de conservation à des utilisateurs spécifiques, à des groupes spécifiques de Microsoft 365 ou à des sites spécifiques, qu'il y a certaines limites à respecter : 
+Ce n'est que si vous utilisez la configuration optionnelle pour étendre vos paramètres de conservation à des utilisateurs spécifiques, des groupes Microsoft 365 spécifiques ou des sites spécifiques qu'il faut tenir compte de certaines limites par politique : 
 
 - Nombre maximum pour une politique de rétention :
-  - 1 000 boîtes aux lettres
+  - 1 000 boîtes aux lettres (boîtes aux lettres des utilisateurs ou boîtes aux lettres de groupe)
   - 1 000 groupes Microsoft 365
   - 1 000 utilisateurs pour conversations privées Teams
   - 100 sites (OneDrive et SharePoint)
 
-Il existe également un nombre maximum de politiques qui sont soutenues pour un locataire : 10 000. Toutefois, pour Exchange Online, le nombre maximal est de 1 800. Le nombre maximal inclut les stratégies de rétention, les stratégies d’étiquette de rétention et les stratégies de rétention d’application automatique.
+Ces limitations s'appliquent à chaque police, donc si vous devez utiliser des inclusions ou des exclusions spécifiques qui entraînent un dépassement de ces chiffres, vous pouvez créer des politiques de rétention supplémentaires qui ont les mêmes paramètres de rétention. Voir la section suivante pour quelques[exemples de scénarios et de solutions](#examples-of-using-inclusions-and-exclusions) qui utilisent plusieurs politiques de rétention pour cette raison. Les politiques de rétention multiples entraînent des frais administratifs plus élevés. Il faut donc toujours se demander si vous avez vraiment besoin d'inclusions et d'exclusions. Rappelez-vous que la configuration par défaut qui s'applique à l'ensemble du site n'a pas de limites, et que ce choix de configuration peut être une meilleure solution que la création et la maintenance de plusieurs politiques.
 
-Si vos politiques de conservation sont susceptibles d'être soumises à ces limitations, utilisez la configuration par défaut qui s'applique à l'ensemble du site car ces politiques n'ont aucune limitation.
+> [!TIP]
+> Si vous devez créer et maintenir plusieurs politiques de rétention pour ce scénario, pensez à utiliser [PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels) pour une configuration plus efficace.
+
+Il existe également un nombre maximum de politiques qui sont soutenues pour un locataire : 10 000. Toutefois, pour Exchange Online, le nombre maximal est de 1 800. Le nombre maximal inclut les stratégies de rétention, les stratégies d’étiquette de rétention et les stratégies de rétention d’application automatique.
 
 Pour utiliser la configuration optionnelle afin de définir vos paramètres de conservation, assurez-vous que **le statut** de ce lieu est **activé**, puis utilisez les liens pour inclure ou exclure des utilisateurs, des groupes Microsoft 365 ou des sites spécifiques.
 
@@ -277,6 +280,28 @@ Pour utiliser la configuration optionnelle afin de définir vos paramètres de c
 > Par exemple, si vous spécifiez un site SharePoint à inclure dans votre stratégie de rétention qui est configurée pour supprimer les données, puis supprimez le site, par défaut, tous les sites SharePoint sont soumis à la stratégie de rétention qui supprime définitivement les données. Il en va de même pour les destinataires Exchange, les comptes OneDrive, les utilisateurs de la conversation Teams, etc.
 >
 > Dans ce scénario, désactivez le paramètre emplacement si vous ne souhaitez pas que le paramètre **Tout** pour l’emplacement soit soumis à la stratégie de rétention. Vous pouvez également spécifier les exclusions à exempter de la stratégie.
+
+#### <a name="examples-of-using-inclusions-and-exclusions"></a>Exemples d'utilisation des inclusions et des exclusions
+
+Les exemples suivants fournissent quelques solutions de conception pour les cas où vous ne pouvez pas spécifier uniquement l'emplacement d'une politique de conservation, et doivent tenir compte des limites documentées dans la section précédente.
+
+Exemple d'échange :
+
+- **Exigence** : Dans une organisation qui compte plus de 40 000 boîtes aux lettres, la plupart des utilisateurs doivent conserver leur courrier électronique pendant 7 ans, mais un sous-ensemble d'utilisateurs identifiés (425) ne doivent conserver leur courrier électronique que pendant 5 ans.
+
+- **Solution** : Créer une politique de conservation pour le courrier électronique d'échange avec une période de conservation de 7 ans et exclure le sous-ensemble des utilisateurs. Ensuite, créez une deuxième politique de conservation pour le courrier électronique d 'echange avec une période de conservation de 5 ans et incluez le sous-ensemble des utilisateurs. 
+    
+    Dans les deux cas, le nombre de boîtes aux lettres incluses et exclues est inférieur au nombre maximum de boîtes aux lettres spécifiées pour une seule politique, et le sous-ensemble d'utilisateurs doit être explicitement exclu de la première politique parce qu'il a une[ période de conservation plus longue](retention.md#the-principles-of-retention-or-what-takes-precedence)que la deuxième stratégie. Si le sous-ensemble d'utilisateurs nécessitait une politique de conservation plus longue, vous n'auriez pas besoin de les exclure de la première stratégie.
+     
+    Avec cette solution, si une nouvelle personne rejoint l'organisation, sa boîte aux lettres est automatiquement incluse dans la première politique pendant 7 ans et il n'y a aucun impact sur le nombre maximum de personnes prises en charge. Cependant, les nouveaux utilisateurs qui ont besoin de la période de conservation de 5 ans s'ajoutent aux numéros d'inclusion et d'exclusion, et cette limite serait atteinte à 1 000.
+
+Exemple de SharePoint :
+
+- **Exigence**: Une organisation possède plusieurs milliers de sites SharePoint, mais seuls 2 000 sites nécessitent une période de conservation de 10 ans, et 8 000 sites nécessitent une période de conservation de 4 ans.
+
+- **Solution**:Créer 20 politiques de conservation pour SharePoint avec une période de conservation de 10 ans qui inclut 100 sites spécifiques, et créer 80 politiques de conservation pour SharePoint avec une période de conservation de 4 ans qui inclut 100 sites spécifiques.
+    
+    Comme il n'est pas nécessaire de conserver tous les sites SharePoint, vous devez créer des politiques de conservation qui spécifient les sites spécifiques. Comme une stratégie de conservation ne prend pas en charge plus de 100 sites spécifiques, vous devez créer plusieurs stratégies pour les deux périodes de conservation. Ces stratégies de rétention ont le nombre maximum de sites inclus, de sorte que le prochain nouveau site à conserver nécessiterait une nouvelle stratégie de rétention, quelle que soit la période de rétention.
 
 ## <a name="updating-retention-policies"></a>Mise à jour des stratégies de rétention
 
