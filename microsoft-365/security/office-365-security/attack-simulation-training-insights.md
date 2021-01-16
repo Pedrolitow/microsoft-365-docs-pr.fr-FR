@@ -11,18 +11,16 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Les administrateurs peuvent découvrir comment la formation sur la simulation d’attaques dans le Centre de sécurité Microsoft 365 affecte les employés et peut obtenir des informations sur les résultats de la simulation et de la formation.
-ms.openlocfilehash: c283819550872691d8dd23d3921c22cb23637633
-ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
+ms.openlocfilehash: baff6032f295b2b49b4f2ec9280fb465d47b8dc3
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 01/15/2021
-ms.locfileid: "49870954"
+ms.locfileid: "49877139"
 ---
 # <a name="gain-insights-through-attack-simulation-training"></a>Découvrez les formations à la simulation d’attaque
 
 Dans le cadre d’une formation sur la simulation d’attaques, Microsoft vous fournit des informations sur les résultats des simulations et des formations que les employés ont réalisées. Ces informations vous aideront à vous tenir informé de la progression de la préparation aux menaces de vos employés, ainsi que les étapes suivantes pour mieux préparer vos employés et votre environnement aux attaques.
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 Nous travaillons en permanence sur l’extension des informations disponibles. L’impact sur le comportement et les actions recommandées sont actuellement disponibles. Pour commencer, commencez par vous lancer dans une formation sur la simulation d’attaques dans le Centre de sécurité [Microsoft 365.](https://security.microsoft.com/attacksimulator?viewid=overview)
 
@@ -33,9 +31,9 @@ Sous **l’onglet Vue d’ensemble** de la formation sur la simulation d’attaq
 Dans le graphique, vous pouvez voir :
 
 - **Taux de compromission** prévu qui reflète le taux moyen de compromission pour les simulations utilisant le même type de charge utile pour d’autres clients Microsoft 365 qui utilisent la formation sur la simulation d’attaques.
-- **Le taux de compromission** réel reflète le pourcentage d’employés qui ont diminué pour la simulation.
+- **Le taux de compromission** réel reflète le pourcentage d’employés qui ont été perdus pour la simulation.
 
-En outre, reflète la différence entre le nombre réel d’employés compromis par l’attaque et le `<number> less susceptible to phishing` taux de compromission prévu. Ce nombre d’employés est moins susceptible d’être compromis par des attaques similaires à l’avenir, tout en indique la façon dont les employés ont globalement fait, contrairement au taux de `<percent%> better than predicted rate` compromission prévu.
+En outre, reflète la différence entre le nombre réel d’employés compromis par l’attaque et le `<number> less susceptible to phishing` taux de compromission prévu. Ce nombre d’employés est moins susceptible d’être compromis par des attaques similaires à l’avenir, tout en indique la façon dont les employés ont globalement fait, contrairement au taux de `<percent%> better than predicted rate` compromis prévu.
 
 > [!div class="mx-imgBorder"]
 > ![Vue d’ensemble de la carte d’impact sur le comportement sur la formation de simulation d’attaque](../../media/attack-sim-preview-behavior-impact-card.png)
@@ -46,15 +44,15 @@ Pour afficher un rapport plus détaillé, cliquez sur **Afficher les simulations
 
 Sous [ **l’onglet Simulations,**](https://security.microsoft.com/attacksimulator?viewid=simulations)la sélection d’une simulation vous permet d’obtenir les détails de la simulation, où se trouve la section **Actions recommandées.**
 
-La section Actions recommandées détaille les recommandations telles que disponibles dans [Le Score de sécurité Microsoft.](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score) Ces recommandations sont basées sur la charge utile utilisée dans la simulation et vous aideront à protéger vos employés et votre environnement. Le fait de cliquer sur chaque action d’amélioration vous permet d’obtenir ses détails.
+La section actions recommandées détaille les recommandations telles que disponibles dans [Le Score de sécurisation Microsoft.](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score) Ces recommandations sont basées sur la charge utile utilisée dans la simulation et vous aideront à protéger vos employés et votre environnement. Le fait de cliquer sur chaque action d’amélioration vous permet d’obtenir ses détails.
 
 > [!div class="mx-imgBorder"]
 > ![Section Actions de recommandation sur la formation à la simulation d’attaque](../../media/attack-sim-preview-recommended-actions.png)
 
 ## <a name="related-links"></a>Liens connexes
 
-[Commencer à utiliser l’entraînement de simulation d’attaque](attack-simulation-training-get-started.md)
+[Commencer à utiliser la formation à la simulation d’attaque](attack-simulation-training-get-started.md)
 
 [Créer une simulation d’attaque par hameçonnage](attack-simulation-training.md)
 
-[créer une charge utile pour former vos employés](attack-simulation-training-payloads.md)
+[créer une charge utile pour former vos personnes](attack-simulation-training-payloads.md)

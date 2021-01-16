@@ -1,5 +1,5 @@
 ---
-title: Résoudre les problèmes de sécurité et de mobilité de base
+title: Résoudre les problèmes de mobilité et de sécurité de base
 f1.keywords: NOCSH
 ms.author: kwekua
 author: kwekua
@@ -13,62 +13,62 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
-description: Suivez ces étapes pour suivre les problèmes de sécurité et de mobilité de base
-ms.openlocfilehash: 43e7533e598f769dd5f2bcae28c4252f96a9be76
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+description: Suivez ces étapes pour suivre les problèmes de mobilité et de sécurité de base
+ms.openlocfilehash: b8df8c17f3a2fc5b7b6cce21769ca20742dbd397
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47430155"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49876851"
 ---
-# <a name="troubleshoot-basic-mobility-and-security"></a>Résoudre les problèmes de sécurité et de mobilité de base
+# <a name="troubleshoot-basic-mobility-and-security"></a>Résoudre les problèmes de mobilité et de sécurité de base
 
-Si vous rencontrez des problèmes lorsque vous essayez d’inscrire un appareil dans le cadre de la sécurité et de la mobilité de base, essayez les étapes suivantes pour suivre le problème. Si la procédure générale ne résout pas le problème, reportez-vous à l’une des sections suivantes avec des étapes spécifiques pour votre type d’appareil.
+Si vous êtes face à des problèmes lorsque vous essayez d’inscrire un appareil dans Basic Mobility and Security, suivez les étapes ci-après pour le suivre. Si les étapes générales ne corrigent pas le problème, consultez l’une des sections suivantes avec des étapes spécifiques pour votre type d’appareil.
 
-## <a name="steps-to-try-first"></a>Étapes à essayer en premier lieu
+## <a name="steps-to-try-first"></a>Étapes à suivre pour essayer en premier
 
-Pour commencer, vérifiez les points suivants :
+Pour commencer, vérifiez ce qui suit :
 
-- Assurez-vous que l’appareil n’est pas déjà associé à un autre fournisseur de gestion des appareils mobiles, comme Intune.
-    
-- Assurez-vous que l’appareil est défini sur la date et l’heure correctes.
-    
-- Basculez vers un autre réseau Wi-Fi ou cellulaire sur l’appareil.
-    
-- Pour les appareils Android ou iOS, désinstallez et réinstallez l’application portail d’entreprise Intune sur l’appareil. 
+- Assurez-vous que l’appareil n’est pas déjà inscrit auprès d’un autre fournisseur de gestion des appareils mobiles, tel qu’Intune.
 
-## <a name="ios-phone-or-tablet"></a>téléphone ou tablette iOS
+- Assurez-vous que la date et l’heure de l’appareil sont correctes.
 
-- Assurez-vous que vous avez configuré un certificat APNs. Pour plus d’informations, consultez la rubrique [créer un certificat APNs pour les appareils iOS](create-an-apns-certificate-for-ios-devices.md).
-    
-- Dans **paramètres**   >  **généraux**   >  **profil (ou gestion des appareils)**, assurez-vous qu’aucun profil de gestion n’est déjà installé. Si c’est le cas, supprimez-le.
-    
-- Si vous voyez le message d’erreur « Échec de l’inscription de l’appareil », connectez-vous à Microsoft 365 et assurez-vous qu’une licence qui inclut Exchange Online a été affectée à l’utilisateur connecté à l’appareil.
-    
-- Si vous voyez le message d’erreur « Échec de l’installation du profil », effectuez l’une des opérations suivantes :
-    
+- Basculez vers un autre réseau WIFI ou cellulaire sur l’appareil.
+
+- Pour les appareils Android ou iOS, désinstallez et réinstallez l’application Portail d’entreprise Intune sur l’appareil. 
+
+## <a name="ios-phone-or-tablet"></a>Téléphone ou tablette iOS
+
+- Assurez-vous que vous avez bien installé un certificat APNs. Pour plus d’informations, voir [Créer un certificat APNs pour les appareils iOS.](create-an-apns-certificate-for-ios-devices.md)
+
+- Dans **le profil général** des paramètres (ou gestion des appareils), assurez-vous qu’un profil de   >  ****   >  **** gestion n’est pas déjà installé. Si c’est le cas, supprimez-le.
+
+- Si le message d’erreur « L’appareil n’a pas pu s’inscrire », connectez-vous à Microsoft 365 et assurez-vous qu’une licence incluant Exchange Online a été attribuée à l’utilisateur connecté à l’appareil.
+
+- Si vous voyez le message d’erreur « Échec de l’installation du profil », essayez l’une des procédures suivantes :
+
     - Assurez-vous que Safari est le navigateur par défaut sur l’appareil et que les cookies ne sont pas désactivés.
-    
-    - Redémarrez l’appareil, puis accédez à portal.manage.microsoft.com. Connectez-vous avec votre ID d’utilisateur et votre mot de passe Microsoft 365, puis essayez d’installer le profil manuellement.    
 
-## <a name="windows-rt"></a>Windows RT
+    - Redémarrez l’appareil, puis accédez à portal.manage.microsoft.com. Connectez-vous avec votre ID d’utilisateur et votre mot de passe Microsoft 365, puis essayez d’installer le profil manuellement.
 
-- Assurez-vous que votre domaine est configuré dans Microsoft 365 pour fonctionner avec la sécurité et la mobilité de base. Pour plus d’informations, consultez la rubrique [Set Up Basic Mobility and Security](set-up.md).
-    
-- Assurez-vous que l’utilisateur choisit **activer**   plutôt que de **joindre**.    
+## <a name="windows-rt"></a>Windows RT
 
-## <a name="windows-10-pc"></a>PC Windows 10
+- Assurez-vous que votre domaine est installé dans Microsoft 365 pour fonctionner avec Basic Mobility and Security. Pour plus d’informations, voir [Configurer la mobilité et la sécurité de base.](set-up.md)
+    
+- Assurez-vous que l’utilisateur **choisit** Activer   plutôt que de participer. ****
 
-- Assurez-vous que votre domaine est configuré dans Microsoft 365 pour fonctionner avec la sécurité et la mobilité de base. Pour plus d’informations, consultez la rubrique [Set Up Basic Mobility and Security](set-up.md).
-    
-- À moins d’avoir Azure Active Directory Premium, assurez-vous que l’utilisateur choisit **inscrire dans la gestion des appareils uniquement**   plutôt que de choisir **connecter**.
+## <a name="windows-10-pc"></a>Windows 10 PC
 
-## <a name="android-phone-or-tablet"></a>Téléphone Android ou tablette
+- Assurez-vous que votre domaine est installé dans Microsoft 365 pour fonctionner avec Basic Mobility and Security. Pour plus d’informations, voir [Configurer la mobilité et la sécurité de base.](set-up.md)
+    
+- Sauf si vous avez Azure Active Directory Premium, **** assurez-vous que l’utilisateur choisit l’inscription à la gestion des appareils uniquement au lieu de   choisir Se **connecter.**
 
-- Assurez-vous que l’appareil exécute Android 4,4 ou une version ultérieure.
-    
-- Assurez-vous que Chrome est à jour et qu’il est défini en tant que navigateur par défaut.
-    
-- Si vous voyez le message d’erreur « nous n’avons pas pu inscrire ce périphérique », connectez-vous à Microsoft 365 et assurez-vous qu’une licence qui inclut Exchange Online a été affectée à l’utilisateur connecté à l’appareil.
-    
-- Vérifiez la zone de notification sur l’appareil pour voir si des actions de l’utilisateur final requises sont en attente et, le cas échéant, effectuez les actions.
+## <a name="android-phone-or-tablet"></a>Téléphone ou tablette Android
+
+- Assurez-vous que l’appareil exécute Android 4.4 ou version ultérieure.
+
+- Assurez-vous que Chrome est à jour et qu’il est le navigateur par défaut.
+
+- Si le message d’erreur « Nous n’avons pas pu inscrire cet appareil » s’affiche, connectez-vous à Microsoft 365 et assurez-vous qu’une licence incluant Exchange Online a été attribuée à l’utilisateur connecté à l’appareil.
+
+- Vérifiez la zone de notification sur l’appareil pour voir si des actions de l’utilisateur final requises sont en attente et, si c’est le cas, effectuer les actions.

@@ -8,12 +8,12 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: fff44098e3da17c68e4347fb14690945154edfdb
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 6e904eee5a132d271ec32ee99a19380463e53193
+ms.sourcegitcommit: 31be333178b934c519f419656f4c3a53e1beffdc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841186"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49881772"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Appareils de bureau géré Microsoft 
 
@@ -52,12 +52,12 @@ Les liens vers les appareils ici sont uniquement pour votre référence. Si vous
 
 | Modèle    | Spécifications minimales  | Autres conditions requises    | Date d’archivage   | Date de retrait   |
 |----------|----------------|---------------------------|----------------|--------------------|
-| [PC portable HP EliteBook 830 / 840 / 850 G7](https://store.hp.com/us/en/pdp/hp-elitebook-830-g7-notebook-pc-customizable-8pv71av-mb) | 256 Go / Intel i5 / 8 Go de RAM | Référence (SKU) avec 9MZ21AV | 30 novembre 2021 | 30 novembre 2024 |
+| [ORDINATEUR portable HP EliteBook 830 / 840 / 850 G7](https://store.hp.com/us/en/pdp/hp-elitebook-830-g7-notebook-pc-customizable-8pv71av-mb) | 256 Go / Intel i5 / 8 Go de RAM | Référence (SKU) avec 9MZ21AV | 30 novembre 2021 | 30 novembre 2024 |
 | [PC portable HP EliteBook x360 830 G7](https://store.hp.com/us/en/pdp/hp-elitebook-x360-830-g7-notebook-pc-p-1f6c0ut-aba-1) | 256 Go / Intel i5 / 8 Go de RAM | Référence (SKU) avec 9MZ21AV | 30 novembre 2021 | 30 novembre 2024 |
 | [HP Elite x2 G4 Tablet](https://store.hp.com/us/en/mdp/laptops/hp-elite-x2-3074457345617405170--1) | 256 Go / Intel i5 / 8 Go de RAM | Référence (SKU) avec 5VS03AV | 31 juillet 2021 | 31 juillet 2024 |
 | [PC portable HP EliteBook x360 1030 / 1040 G7](https://store.hp.com/us/en/pdp/hp-elitebook-x360-1030-g7-notebook-pc-customizable-8vs68av-mb#!) | 256 Go / Intel i5 / 8 Go de RAM | Référence (SKU) avec 8XW08AV | 31 août 2021 | 31 août 2024 |
 | [HP EliteFly](https://www8.hp.com/us/en/laptops/2-in-1s/elite-dragonfly-convertible.html) | 256 Go / Intel i5 / 8 Go de RAM | Référence (SKU) avec 9MZ21AV | 31 mars 2021 | 31 mars 2024 |
-| **\*[PC tout-en-un HP EliteOne 800 G6 24/27](https://store.hp.com/us/en/pdp/hp-eliteone-800-g6-all-in-one-touch-pc)** | 256 / Intel i5 / 8 Go de RAM | Référence (SKU) avec 9XM14AV | 30 juin 2022 | 30 juin 2025 |
+| **\*[PC tout en un HP EliteOne 800 G6 24/27](https://store.hp.com/us/en/pdp/hp-eliteone-800-g6-all-in-one-touch-pc)** | 256 / Intel i5 / 8 Go de RAM | Référence (SKU) avec 9XM14AV | 30 juin 2022 | 30 juin 2025 |
 | **\*[HP EliteDesk 800 G6 Desktop Mini PC](https://store.hp.com/us/en/pdp/hp-elitedesk-800-g6-desktop-mini-pc#!)** | 256 / Intel i5 / 8 Go de RAM | Référence (SKU) avec 9XM14AV | 30 juin 2022 | 30 juin 2025 |
 | [Station de travail HP Z2 Mini G5](https://store.hp.com/us/en/pdp/hp-z2-mini-g5-workstation-customizable-9jd39av-mb) | 256 Go / Intel i5 / 8 Go de RAM | Référence (SKU) avec 8QR48AV| 31 décembre 2021 | 31 décembre 2024 |
 | **\*[Station de travail mobile HP ZBook Firefly 14/15 G7](https://store.hp.com/us/en/mdp/laptops/hp-zbook-14u-mobile-workstation)** | 256 Go / Intel i5 / 8 Go de RAM | Référence (SKU) avec 9MZ22AV, caméra IR requise | 30 novembre 2021 | 30 novembre 2024 |
@@ -71,6 +71,7 @@ Les liens vers les appareils ici sont uniquement pour votre référence. Si vous
 | [Surface Laptop Go](https://www.microsoft.com/surface/business/surface-laptop-go) | 128 Go / Intel i5 / 8 Go de RAM | Aucun | 12 octobre 2022 | 12 octobre 2025 |
 | [Surface Laptop 3](https://www.microsoft.com/surface/business/surface-laptop-3) | 128 Go / Intel i5 / 8 Go de RAM | Aucun | 22 octobre 2021 | 22 octobre 2024 |
 | [Surface Pro 7](https://www.microsoft.com/surface/business/surface-pro-7) | 128 Go / Intel i5 / 8 Go de RAM | Aucun | 22 octobre 2021 | 22 octobre 2024 |
+| **\*[Surface Pro 7+](https://www.microsoft.com/p/surface-pro-7-for-business/8p43n3k93409?activetab=pivot%3aoverviewtab)** | 128 Go / Intel i5 / 8 Go de RAM | Aucun | 15 janvier 2022 | 15 janvier 2025 |
 
 En outre, l’appareil doit également répondre aux critères suivants :     
 

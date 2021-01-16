@@ -1,5 +1,5 @@
 ---
-title: Gérer les paramètres d’accès aux appareils dans la sécurité et la mobilité de base
+title: Gérer les paramètres d’accès aux appareils dans Basic Mobility and Security
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -17,33 +17,33 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: La sécurité et la mobilité de base peuvent vous aider à sécuriser et gérer les appareils mobiles.
-ms.openlocfilehash: e66465d312c4268aca82677fa4e517aaeb822ce3
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+description: La mobilité et la sécurité de base peuvent vous aider à sécuriser et à gérer les appareils mobiles.
+ms.openlocfilehash: dd9d777798c2c96776a8f9b40a3c4dfe0b95702a
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47430152"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49876947"
 ---
-# <a name="manage-device-access-settings-in-basic-mobility-and-security"></a>Gérer les paramètres d’accès aux appareils dans la sécurité et la mobilité de base
+# <a name="manage-device-access-settings-in-basic-mobility-and-security"></a>Gérer les paramètres d’accès aux appareils dans Basic Mobility and Security
 
-Si vous utilisez la mobilité et la sécurité de base, il est possible que vous ne puissiez pas gérer les appareils avec la sécurité et la mobilité de base. Si c’est le cas, vous devez bloquer l’accès de l’application Exchange ActiveSync aux courriers électroniques Microsoft 365 pour les appareils mobiles qui ne sont pas pris en charge par la sécurité et la mobilité de base. Cela permet de sécuriser les informations de votre organisation sur plusieurs appareils.
+Si vous utilisez Basic Mobility and Security, il se peut que vous ne soyez pas en mesure de gérer certains appareils avec Basic Mobility and Security. Si c’est le cas, vous devez bloquer Exchange ActiveSync’accès de l’application à la messagerie Microsoft 365 pour les appareils mobiles qui ne sont pas pris en charge par Basic Mobility and Security. Cela permet de sécuriser les informations de votre organisation sur davantage d’appareils.
 
-Procédez comme suit :
+Utilisez les étapes suivantes :
 
-1. Connectez-vous à Microsoft 365 avec votre compte d’administrateur général.
-    
-2. Dans votre navigateur, tapez :  [https://protection.office.com](https://protection.office.com/) .    
+1. Connectez-vous à Microsoft 365 avec votre compte d’administrateur global.
+
+2. Dans votre navigateur, tapez :  [https://protection.office.com](https://protection.office.com/) .    
 
     >[!IMPORTANT]
-    >S’il s’agit de la première fois que vous utilisez MDM pour Microsoft 365 Business standard, activez-la ici : [activer la gestion des appareils mobiles](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx). Une fois que vous l’avez activé, gérez vos appareils avec [Office 365 Security & Compliance](https://protection.office.com/).
+    >Si c’est la première fois que vous utilisez Basic Mobility and Security pour Microsoft 365 Business Standard, activez-le ici : [Activate Basic Security and Mobility](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx). Une fois que vous l’avez activé, gérez vos appareils avec la conformité et la [sécurité Office 365 &.](https://protection.office.com/)
 
-3. Accédez à protection contre la perte de données >stratégies d’appareil de  **gestion des appareils**   >  **Device policies**et sélectionnez **gérer les paramètres d’accès aux appareils à l’échelle de l’organisation**.
-    
-4. Sélectionnez **bloquer**.
+3. Accédez à Protection contre  **** la perte de >stratégies d’appareil de gestion des appareils, puis sélectionnez Gérer les paramètres d’accès des appareils à   >  **** l’échelle **de l’organisation.**
 
-    :::image type="content" source="../../media/basic-mobility-security/bms-5-block-access.png" alt-text="Case à cocher accès aux blocs de sécurité et de mobilité de base":::
+4. Sélectionnez **Bloquer**.
 
-5. Sélectionnez **Enregistrer**. 
+    :::image type="content" source="../../media/basic-mobility-security/bms-5-block-access.png" alt-text="Case à cocher d’accès de blocage de la mobilité et de la sécurité de base":::
 
-Pour connaître les appareils pris en charge par la mobilité et la sécurité de base, reportez-vous à la rubrique [fonctionnalités de base et de sécurité](capabilities.md).
+5. Sélectionnez **Enregistrer.**
+
+Pour découvrir les appareils que Basic Mobility and Security prend en charge, voir [Fonctionnalités de la mobilité et de la sécurité de base.](capabilities.md)

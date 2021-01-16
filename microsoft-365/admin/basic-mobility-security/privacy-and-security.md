@@ -1,5 +1,5 @@
 ---
-title: Confidentialité et sécurité dans la sécurité et la mobilité de base
+title: Confidentialité et sécurité dans Basic Mobility and Security
 f1.keywords: NOCSH
 ms.author: kwekua
 author: kwekua
@@ -13,16 +13,16 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
-description: Une fois que vous avez activé la mobilité et la sécurité de base, vous pouvez créer des stratégies de gestion des appareils mobiles.
-ms.openlocfilehash: 31966f81833d6c90c48cdc4c40eee2f94d785fd8
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+description: Après avoir activé la mobilité et la sécurité de base, vous pouvez créer des stratégies de gestion des appareils mobiles.
+ms.openlocfilehash: a5e813219407b105f9196a4532914326a94f429a
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47430151"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49876911"
 ---
-# <a name="privacy-and-security-in-basic-mobility-and-security"></a>Confidentialité et sécurité dans la sécurité et la mobilité de base
+# <a name="privacy-and-security-in-basic-mobility-and-security"></a>Confidentialité et sécurité dans Basic Mobility and Security
 
-La sécurité et la mobilité de base est un service en nuage développé par Microsoft Intune, qui vous permet de gérer et de sécuriser les appareils mobiles utilisés dans votre organisation. Une fois que vous avez activé la mobilité et la sécurité de base, vous pouvez créer des stratégies de gestion des appareils mobiles. Ces stratégies peuvent ensuite être déployées sur des appareils mobiles qui ont été mis en œuvre par les utilisateurs de Microsoft 365 sous licence dans votre organisation.
+Basic Mobility and Security est un service basé sur le cloud optimisé par Microsoft Intune qui vous permet de gérer et de sécuriser les appareils mobiles au sein de votre organisation. Après avoir activé la mobilité et la sécurité de base, vous pouvez créer des stratégies de gestion des appareils mobiles. Ces stratégies peuvent ensuite être déployées sur des appareils mobiles qui ont été inscrits par des utilisateurs sous licence Microsoft 365 dans votre organisation.
 
-Microsoft Intune envoie des informations à Microsoft 365 sur l’état de conformité de chaque appareil géré, puis vous pouvez générer des rapports qui indiquent si les appareils gérés de votre organisation sont conformes en fonction des stratégies définies. Pour en savoir plus sur l’engagement de Microsoft en matière de confidentialité et de sécurité, consultez le centre de gestion de la confidentialité [Microsoft](https://www.microsoft.com/trust-center).
+Microsoft Intune envoie des informations à Microsoft 365 sur l’état de conformité de chaque appareil géré, puis vous pouvez générer des rapports qui indiquent si les appareils gérés dans votre organisation sont conformes en fonction des stratégies définies. Pour en savoir plus sur l’engagement de Microsoft en matière de confidentialité et de sécurité, consultez le Centre de confidentialité [Microsoft.](https://www.microsoft.com/trust-center)
