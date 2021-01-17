@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Utilisez l’action d’audit de boîte aux lettres MailItemsAccessed pour effectuer des enquêtes légales sur des comptes d'utilisateur compromis.
-ms.openlocfilehash: 908c2a22b05d7daef8d55c7e0aac61f25489692a
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 15379a5c24ee222cf097e94d46dc46de0e385820
+ms.sourcegitcommit: c1f9a1b2a34146c51c9e33c4119a388b249ce7a9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546290"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49868002"
 ---
 # <a name="use-advanced-audit-to-investigate-compromised-accounts"></a>Utiliser l’audit avancé pour analyser des comptes compromis
 
@@ -84,7 +84,7 @@ Search-MailboxAuditLog -Identity <user> -StartDate 01/06/2020 -EndDate 01/20/202
 ```
 
 > [!TIP]
-> La principale différence entre ces deux applets de commande est que vous pouvez utiliser l’applet de commande **Search-UnifiedAuditLog** pour rechercher des enregistrements d’audit pour l’activité effectuée par un ou plusieurs utilisateurs. La raison est que *UserIds* est un paramètre à valeurs multiples. L’applet de commande **Search-MailboxAuditLog**fait une recherche dans le journal d’audit de boîtes aux lettres d'un utilisateur unique.
+> La principale différence entre ces deux applets de commande est que vous pouvez utiliser l’applet de commande **Search-UnifiedAuditLog** pour rechercher des enregistrements d’audit pour l’activité effectuée par un ou plusieurs utilisateurs. La raison est que *UserIds* est un paramètre à valeurs multiples. L’applet de commande **Search-MailboxAuditLog** fait une recherche dans le journal d’audit de boîtes aux lettres d'un utilisateur unique.
 
 Voici les étapes à suivre pour utiliser les enregistrements d’audit MailItemsAccessed afin d'enquêter sur l'attaque d'un utilisateur compromis. Chacune de ces étapes présente la syntaxe de commande pour les applets de commande **Search-UnifiedAuditLog** ou **MailboxAuditLog**.
 
@@ -178,8 +178,8 @@ Il est fréquent qu’un attaquant puisse accéder à une boîte aux lettres en 
 
 |Enregistrement d’audit 1  |Enregistrement d’audit 2  |Enregistrement d’audit 3|
 |---------|---------|---------|
-|ClientIPAddress**1**<br/>SessionId**2**|ClientIPAddress**2**<br/>SessionId**2**|ClientIPAddress**1**<br/>SessionId**3**|
-|InternetMessageId**A**<br/>InternetMessageId**D**<br/>InternetMessageId**E**<br/>InternetMessageId**F**<br/>|InternetMessageId**A**<br/>InternetMessageId**C**|InternetMessageId**B** |
+|ClientIPAddress **1**<br/>SessionId **2**|ClientIPAddress **2**<br/>SessionId **2**|ClientIPAddress **1**<br/>SessionId **3**|
+|InternetMessageId **A**<br/>InternetMessageId **D**<br/>InternetMessageId **E**<br/>InternetMessageId **F**<br/>|InternetMessageId **A**<br/>InternetMessageId **C**|InternetMessageId **B** |
 ||||
 
 Si l’une des propriétés répertoriées dans le tableau de la [section précédente](#filtering-of-duplicate-audit-records) est différente, un enregistrement d’audit séparé est créé pour suivre le nouveau contexte. Les accès sont triés dans des enregistrements d’audit distincts en fonction du contexte dans lequel l’activité a eu lieu.
@@ -187,3 +187,9 @@ Si l’une des propriétés répertoriées dans le tableau de la [section préc�
 Par exemple, dans les enregistrements d’audit présentés dans la capture d’écran suivante, même si l'accès au courrier de EWSEditor et OWA est simultané, l’activité d’accès est compilée dans différents enregistrements d’audit en fonction du contexte dans lequel l’accès a eu lieu. Dans ce cas, le contexte est défini par différentes valeurs de la propriété ClientInfoString.
 
 ![Enregistrements d’audit différents basés sur le contexte](../media/MailItemsAccessed4.png)
+
+Voici la syntaxe de la commande présentée dans la capture d'écran précédente :
+
+```powershell
+Search-MailboxAuditLog -Identity admin -ShowDetails -Operations MailItemsAccessed -ResultSize 2000 | Select LastAccessed,Operation,AuditOperationsCountInAggregatedRecord,ClientInfoString
+``` 
