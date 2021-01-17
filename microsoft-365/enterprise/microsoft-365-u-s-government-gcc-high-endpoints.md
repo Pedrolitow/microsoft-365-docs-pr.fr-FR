@@ -3,7 +3,7 @@ title: Points de terminaison Office 365 pour le gouvernement américain GCC High
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 01/04/2021
+ms.date: 01/15/2021
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -20,26 +20,26 @@ search.appverid: MET150
 ms.assetid: cbd2369c-fd96-464c-bf48-c99826b459ee
 description: Dans cet article, vous trouverez des points de terminaison accessibles pour les clients qui utilisent les plans Office 365 pour le gouvernement américain GCC High.
 hideEdit: true
-ms.openlocfilehash: 7a9cc33f93ac1a887ecce24689858b283f992cde
-ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
+ms.openlocfilehash: cf483f06d3802bc617855cafc6f3410af9372e41
+ms.sourcegitcommit: a92b150da1e11d4a204c556ab98a4776727dbc22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49787786"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49883350"
 ---
 # <a name="office-365-us-government-gcc-high-endpoints"></a>Points de terminaison Office 365 pour le gouvernement américain GCC High
 
  *S’applique à : Administrateur Office 365*
 
-Office 365 nécessite une connectivité à Internet. Les points de terminaison ci-dessous doivent être accessibles aux clients qui utilisent office 365 pour le gouvernement américain GCC High uniquement.
+Office 365 nécessite une connectivité à Internet. Les points de terminaison ci-dessous doivent être accessibles aux clients qui utilisent les plans Office 365 pour le gouvernement américain GCC High uniquement.
   
  **Points de terminaison Office 365:**[Dans le monde ( GCC inclus)](urls-and-ip-address-ranges.md) | [Office 365 géré par 21Vianet](urls-and-ip-address-ranges-21vianet.md)  | [Office 365 Germany](microsoft-365-germany-endpoints.md)  | [Office 365 U.S. Government DoD](microsoft-365-u-s-government-dod-endpoints.md) | *Office 365 U.S. Government GCC High* |
   
 |||
 |:-----|:-----|
-|**Dernière mise à jour :** 04/01/2021 : ![RSS](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Modifier l'abonnement au journal](https://endpoints.office.com/version/USGOVGCCHigh?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**Télécharger :** la liste complète au [format JSON](https://endpoints.office.com/endpoints/USGOVGCCHigh?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
+|**Last updated:** 15/01/2021 - ![ RSS Change Log ](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [subscription](https://endpoints.office.com/version/USGOVGCCHigh?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**Télécharger :** la liste complète au [format JSON](https://endpoints.office.com/endpoints/USGOVGCCHigh?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
 
- Commencez par gérer les points [de terminaison Office 365](managing-office-365-endpoints.md) pour comprendre nos recommandations en matière de gestion de la connectivité réseau à l’aide de ces données. Les données des points de terminaison sont mises à jour au début de chaque mois avec de nouvelles adresses IP et url publiées 30 jours avant d’être actives. Cela permet aux clients qui n’ont pas encore de mises à jour automatisées d’effectuer leurs processus avant qu’une nouvelle connectivité ne soit requise. Les points de terminaison peuvent également être mis à jour au cours du mois si nécessaire pour répondre aux escalades de prise en charge, aux incidents de sécurité ou à d’autres exigences opérationnelles immédiates. Les données affichées sur cette page ci-dessous sont toutes générées à partir des services web REST. Si vous utilisez un script ou un périphérique réseau pour accéder à ces données, vous devez accéder directement au [service Web.](microsoft-365-ip-web-service.md)
+ Commencez par gérer les points [de terminaison Office 365](managing-office-365-endpoints.md) pour comprendre nos recommandations en matière de gestion de la connectivité réseau à l’aide de ces données. Les données des points de terminaison sont mises à jour au début de chaque mois avec de nouvelles adresses IP et URL publiées 30 jours avant d’être actives. Cela permet aux clients qui n’ont pas encore de mises à jour automatisées d’effectuer leurs processus avant qu’une nouvelle connectivité soit nécessaire. Les points de terminaison peuvent également être mis à jour au cours du mois si nécessaire pour répondre aux escalades de prise en charge, aux incidents de sécurité ou à d’autres exigences opérationnelles immédiates. Les données affichées sur cette page ci-dessous sont toutes générées à partir des services web REST. Si vous utilisez un script ou un périphérique réseau pour accéder à ces données, vous devez accéder directement au [service Web.](microsoft-365-ip-web-service.md)
 
 Les données de point de terminaison ci-dessous répertorient les exigences de connectivité à partir de l’ordinateur d’un utilisateur vers Office 365. Elles n’incluent pas les connexions réseau de Microsoft vers un réseau client, parfois appelées connexions réseau entrantes ou hybrides.
 
@@ -61,7 +61,7 @@ Les colonnes de données affichées sont :
 
 Remarques à propos de ce tableau :
 
-- Le Centre de sécurité et conformité (SCC) fournit la prise en charge d’Azure ExpressRoute pour Office 365. Il en va de même pour de nombreuses fonctionnalités exposées via le SCC, telles que la rapport, l’audit, advanced eDiscovery, la DLP unifiée et la gouvernance des données. Deux fonctionnalités spécifiques, importation PST et exportation eDiscovery, ne permettent actuellement pas de prendre en charge Azure ExpressRoute avec uniquement des filtres d’itinéraire Office 365 en raison de leur dépendance sur le stockage d’objets blob Azure. Pour utiliser ces fonctionnalités, vous avez besoin d’une connectivité distincte au stockage Blob Azure à l’aide de n’importe quelle option de connectivité Azure prise en charge, qui inclut la connectivité Internet ou Azure ExpressRoute avec des filtres d’itinéraire public Azure. Vous devez évaluer l’établissement d’une telle connectivité pour ces deux fonctionnalités. L’équipe De protection des informations Office 365 connaît cette limitation et travaille activement pour prendre en charge Azure ExpressRoute pour Office 365 comme limité aux filtres d’itinéraire Office 365 pour ces deux fonctionnalités.
+- Le Centre de sécurité et conformité (SCC) fournit la prise en charge d’Azure ExpressRoute pour Office 365. Il en va de même pour de nombreuses fonctionnalités exposées via le SCC, telles que la rapport, l’audit, advanced eDiscovery, la DLP unifiée et la gouvernance des données. Deux fonctionnalités spécifiques, importation PST et exportation eDiscovery, ne permettent actuellement pas de prendre en charge Azure ExpressRoute avec uniquement des filtres d’itinéraire Office 365 en raison de leur dépendance sur le stockage d’objets blob Azure. Pour utiliser ces fonctionnalités, vous avez besoin d’une connectivité distincte au stockage d’objets blob Azure à l’aide de toutes les options de connectivité Azure supportables, qui incluent la connectivité Internet ou Azure ExpressRoute avec des filtres d’itinéraire public Azure. Vous devez évaluer l’établissement d’une telle connectivité pour ces deux fonctionnalités. L’équipe Office 365 Information Protection connaît cette limitation et travaille activement pour prendre en charge Azure ExpressRoute pour Office 365 comme limité aux filtres d’itinéraire Office 365 pour ces deux fonctionnalités.
 
-- D’autres points de terminaison facultatifs pour Microsoft 365 Apps for enterprise ne sont pas répertoriés et ne sont pas requis pour que les utilisateurs lancent les applications Microsoft 365 Apps for enterprise et modifient des documents. Les points de terminaison facultatifs sont hébergés dans des centres de données Microsoft et ne traiter, ne transmettent pas ou ne stockent pas de données client. Nous recommandons que les connexions utilisateur à ces points de terminaison soient dirigées vers le périmètre de sortie Internet par défaut.
+- D’autres points de terminaison facultatifs pour Microsoft 365 Apps for enterprise ne sont pas répertoriés et ne sont pas requis pour que les utilisateurs lancent les applications Microsoft 365 Apps for enterprise et modifient des documents. Les points de terminaison facultatifs sont hébergés dans les centres de données Microsoft et ne traiter, ne transmettent pas ou ne stockent pas de données client. Nous recommandons que les connexions utilisateur à ces points de terminaison soient dirigées vers le périmètre de sortie Internet par défaut.
 
