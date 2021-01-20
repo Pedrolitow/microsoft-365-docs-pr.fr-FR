@@ -18,12 +18,12 @@ ms.custom:
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Découvrez comment gérer les points de terminaison Office 365 afin qu’ils fonctionnent avec l’architecture réseau de votre organisation d’entreprise.
-ms.openlocfilehash: a616e5f45fee77a02e7b4df7e19ed9e1b0d31d22
-ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
+ms.openlocfilehash: 41dceae78d80a78b023517e8b6c5c5c0d73da2ef
+ms.sourcegitcommit: 64262f6f42dcce6a4608b2e3c7ca6190b7009093
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49787950"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "49905284"
 ---
 # <a name="managing-office-365-endpoints"></a>Gestion des points de terminaison Office 365
 
@@ -161,14 +161,14 @@ Ces redirections CNAME constituent une partie normale du DNS et sont transparent
 
 Un serveur proxy valide l’URL initiale, qui dans l’exemple ci-dessus est serviceA.office.com, et cette URL serait incluse dans la publication Office 365. Le serveur proxy demande la résolution DNS de cette URL à une adresse IP et recevra IP_1. Il ne valide pas les enregistrements de redirection intermédiaires CNAME.
 
-Les configurations codées en dur ou l’autoriser sur la base de FQDN Office 365 indirects n’est pas recommandé, n’est pas pris en charge par Microsoft et est connu pour provoquer des problèmes de connectivité client. Les solutions DNS qui bloquent la redirection CNAME, ou qui ne résolvent pas correctement les entrées DNS Office 365, peuvent être résolues via le transfert conditionnel DNS (étendu à l’utilisation directe des noms de domaine complets Office 365) avec la récursivité DNS activée. De nombreux produits de périmètre de réseau tiers intègrent en natif le trafic de point de terminaison Office 365 recommandé dans leur configuration à l’aide de l’adresse IP Office 365 et du [service Web d’URL.](microsoft-365-ip-web-service.md)
+Les configurations codées en dur ou la liste blanche basée sur des FQDN Office 365 indirects ne sont pas recommandées, ne sont pas pris en charge par Microsoft et sont connues pour provoquer des problèmes de connectivité client. Les solutions DNS qui bloquent la redirection CNAME ou qui résolvent de manière incorrecte les entrées DNS Office 365 peuvent être résolues via des redirecteurs DNS avec la récursion DNS activée ou à l’aide d’indications racine DNS. De nombreux produits de périmètre de réseau tiers intègrent en natif la liste blanche recommandée des points de terminaison Office 365 dans leur configuration à l’aide de l’adresse IP Office 365 et du [service Web d’URL.](microsoft-365-ip-web-service.md)
 
 <a name="bkmk_akamai"> </a>
 ### <a name="why-do-i-see-names-such-as-nsatcnet-or-akadnsnet-in-the-microsoft-domain-names"></a>Pourquoi des noms tels que nsatc.net ou akadns.net figurent-ils parmi les noms de domaine de Microsoft ?
 
 Office 365 et d’autres services Microsoft utilisent des services tiers tels que MarkMonitor et Akamai pour améliorer votre expérience d’Office 365. Pour continuer de vous offrir la meilleure expérience possible, il se peut que vous changions ces services à l’avenir. Les domaines tiers peuvent héberger du contenu, tel qu’un CDN, ou héberger un service, tel qu’un service de gestion du trafic géographique. Voici quelques-uns des services actuellement utilisés :
   
-[MarkMonitor](https://www.markmonitor.com/) est utilisé lorsque vous voyez des demandes qui incluent *\* .nsatc.net*. Ce service fournit une protection de nom de domaine et une surveillance pour protéger contre des comportements malveillants.
+[MarkMonitor](https://www.markmonitor.com/) est utilisé lorsque vous voyez des requêtes qui incluent *\* .nsatc.net*. Ce service fournit une protection de nom de domaine et une surveillance pour protéger contre des comportements malveillants.
   
 [ExactTarget est](https://www.marketingcloud.com/) utilisé lorsque vous voyez des demandes à *\* .exacttarget.com*. Ce service fournit une gestion des liens de messagerie électronique et une surveillance pour protéger contre des comportements malveillants.
   
@@ -191,7 +191,7 @@ Office 365 et d’autres services Microsoft utilisent des services tiers tels q
 
 Office 365 est une suite de services conçue pour fonctionner sur Internet. Les promesses de fiabilité et de disponibilité sont basées sur l’accès à de nombreux services Internet standard. Par exemple, des services Internet standard tels que DNS, CRL et CDN doivent être accessibles pour utiliser Office 365, tout comme ils doivent l’être pour utiliser les services Internet les plus modernes.
 
-La suite Office 365 est divisée en zones de service majeures. Celles-ci peuvent être activées de manière sélective pour la connectivité et il existe une zone commune, qui est une dépendance pour tout et est toujours requise.
+La suite Office 365 est divisée en zones de service majeures. Celles-ci peuvent être activées de manière sélective pour la connectivité et il existe une zone commune, qui est une dépendance pour tout et est toujours nécessaire.
 
 | Zone de service | Description |
 |:-----|:-----|
@@ -216,7 +216,7 @@ N’oubliez pas que le blocage de l’accès aux services grand public de Micros
 
 Office 365 ne fournit aucune adresse IP de tous les points de terminaison réseau requis. Certaines sont proposées sous forme d’URL uniquement et sont classées par défaut. Les URL de la catégorie par défaut qui sont requises doivent être autorisées via un serveur proxy. Si vous n’avez pas de serveur proxy, regardez comment vous avez configuré les demandes web pour les URL que les utilisateurs tapent dans la barre d’adresses d’un navigateur web . l’utilisateur ne fournit pas non plus d’adresse IP. Les URL de catégorie Office 365 par défaut qui ne fournissent pas d’adresses IP doivent être configurées de la même manière.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques associées
 
 [Service web d’URL et d’adresses IP Office 365](microsoft-365-ip-web-service.md)
 
