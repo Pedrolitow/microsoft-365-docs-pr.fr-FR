@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment la rétention fonctionne pour SharePoint et OneDrive.
-ms.openlocfilehash: 995f657778d3326a4d58d46f760539639f1fe7fe
-ms.sourcegitcommit: 3bf4f1c0d3a8515cca651b2a520217195f89457f
+ms.openlocfilehash: 0ce3a95754bcffd118d78b7919eb6773d3f14b54
+ms.sourcegitcommit: 9e4b3df05eff94fe1be4ef8618a7ce6f2fca3658
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49777067"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "49903989"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Découvrir la rétention pour SharePoint et OneDrive
 
@@ -59,7 +59,7 @@ Pour les stratégies de rétention et les stratégies d’application automatiqu
 
 Pour la prise en charge de la rétention, SharePoint et OneDrive créent une bibliothèque de conservation et de préservation des documents, en cas de besoin. Vous pouvez afficher cette bibliothèque sur la page **Site.contents** dans le site de niveau supérieur de la collection de sites. La plupart des utilisateurs ne peuvent pas visualiser la bibliothèque de conservation et de préservation car elle est visible uniquement pour les administrateurs de collection de sites.
   
-Si une personne tente de modifier ou de supprimer un document soumis à des paramètres de rétention, une vérification indique si le contenu a été modifié depuis l’application des paramètres de rétention. S’il s’agit du premier changement depuis l’application des paramètres de rétention, le contenu est copié dans la bibliothèque de conservation et de préservation des documents, ce qui permet ensuite à la personne de modifier ou de supprimer le contenu d’origine. Tout le contenu d’une collection de sites peut être copié dans la bibliothèque de conservation et de préservation des documents, indépendamment des paramètres de rétention.
+Si une personne tente de modifier ou de supprimer un document soumis à une rétention du contenu, une vérification indique si le contenu a été modifié depuis l’application des paramètres de rétention. S’il s’agit du premier changement depuis l’application des paramètres de rétention, le contenu est copié dans la bibliothèque de conservation et de préservation des documents, ce qui permet ensuite à la personne de modifier ou de supprimer le contenu d’origine. Tout le contenu d’une collection de sites peut être copié dans la bibliothèque de conservation et de préservation des documents, indépendamment des paramètres de rétention.
   
 Un travail du minuteur nettoie périodiquement la bibliothèque de conservation et de préservation des documents. Ce travail compare tout le contenu de la bibliothèque de conservation et de préservation des documents à toutes les requêtes utilisées par les paramètres de rétention pour ce contenu. Le contenu antérieur à la période de rétention configurée est supprimé de la bibliothèque de conservation et de préservation des documents et de l’emplacement d’origine si celui-ci existe toujours. Ce travail du minuteur s’exécute tous les sept jours, ce qui signifie que l’opération peut prendre jusqu’à sept jours pour que le contenu soit supprimé.
   
@@ -73,7 +73,7 @@ Lorsque les paramètres de la stratégie de rétention consistent à conserver e
 
 ![Diagramme de cycle de vie de contenu dans SharePoint et OneDrive](../media/Retention_Diagram_of_retention_flow_in_sites.png)
   
-1. **Si le contenu est modifié ou supprimé** pendant la période de rétention, une copie du contenu d’origine tel qu’il existait lors de l’attribution de la stratégie de rétention est créée dans la bibliothèque de conservation et de préservation des documents. Là, le travail du minuteur identifie les éléments dont la période de rétention a expiré. Ces éléments sont déplacés vers la corbeille de second niveau, où ils sont définitivement supprimés au bout de 93 jours. La corbeille second niveau n’est pas visible par les utilisateurs finaux (seule le premier niveau de la corbeille l’est), mais les administrateurs de collection de sites peuvent afficher et restaurer du contenu à partir de cet emplacement.
+1. **Si le contenu est modifié ou supprimé** pendant la période de rétention, une copie du contenu d’origine tel qu’il existait lors de l’attribution des paramètres de rétention est créée dans la bibliothèque de conservation et de préservation des documents. Là, le travail du minuteur identifie les éléments dont la période de rétention a expiré. Ces éléments sont déplacés vers la corbeille de second niveau, où ils sont définitivement supprimés au bout de 93 jours. La corbeille second niveau n’est pas visible par les utilisateurs finaux (seule le premier niveau de la corbeille l’est), mais les administrateurs de collection de sites peuvent afficher et restaurer du contenu à partir de cet emplacement.
 
     > [!NOTE]
     > Pour éviter toute perte de données par inadvertance, nous ne supprimons plus définitivement le contenu de la bibliothèque de conservation. Au lieu de cela, nous ne supprimons définitivement que le contenu de la corbeille de façon à ce que tout le contenu de la bibliothèque de conservation et de préservation passe transmis par la corbeille second niveau .
