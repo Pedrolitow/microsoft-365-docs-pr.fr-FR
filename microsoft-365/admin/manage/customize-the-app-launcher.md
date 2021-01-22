@@ -13,20 +13,22 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
-description: 'Créez des liens rapides vers vos courriers électroniques, vos documents, vos applications, vos sites SharePoint, vos sites externes et d’autres ressources en ajoutant des vignettes personnalisées au lanceur d’applications. '
-ms.openlocfilehash: cebb4385e40f2cef68d3ee26dca1cb905c8d91c5
-ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
+description: 'Créez des liens rapides vers vos e-mails, documents, applications, sites SharePoint, sites externes et autres ressources en ajoutant des vignettes personnalisées au lanceur d’applications. '
+ms.openlocfilehash: 2bbcf64b807754aed199c441f6df028d5fe20a97
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46552493"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926233"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>Ajouter des vignettes personnalisées au lanceur d'applications
 
@@ -37,7 +39,7 @@ ms.locfileid: "46552493"
 
 ::: moniker-end
 
-Dans Microsoft 365, vous pouvez rapidement et facilement accéder à vos courriers électroniques, calendriers, documents et applications à l’aide du lanceur d’applications ([en savoir plus](https://support.microsoft.com/office/79f12104-6fed-442f-96a0-eb089a3f476a)). Il s’agit des applications que vous obtenez avec Microsoft 365, ainsi que des applications personnalisées que vous ajoutez à partir de [SharePoint Store](https://support.microsoft.com/office/dd98e50e-d3db-4ecb-9bb7-82b189822d43) ou [Azure ad](https://msdn.microsoft.com/office/office365/howto/connect-your-app-to-o365-app-launcher).
+Dans Microsoft 365, vous pouvez rapidement et facilement vous rendre sur votre messagerie, vos calendriers, vos documents et vos applications à l’aide du lanceur d’applications (en savoir[plus).](https://support.microsoft.com/office/79f12104-6fed-442f-96a0-eb089a3f476a) Il s’agit des applications que vous obtenez avec Microsoft 365, ainsi que des applications personnalisées que vous ajoutez à partir du [SharePoint Store](https://support.microsoft.com/office/dd98e50e-d3db-4ecb-9bb7-82b189822d43) ou [d’Azure AD.](https://msdn.microsoft.com/office/office365/howto/connect-your-app-to-o365-app-launcher)
   
 Vous pouvez ajouter vos propres vignettes au lanceur d'applications pointant vers des sites SharePoint, des sites externes, des applications existantes, etc. La vignette personnalisée apparaît dans l'onglet **Toutes** les applications du lanceur d'applications. Vous pouvez également l'épingler aux applications de l'onglet **Accueil** et inviter vos utilisateurs à faire de même. Il sera ainsi plus facile de repérer les sites, les applications et les ressources dont vous avez besoin pour effectuer votre travail. Dans l'exemple ci-dessous, une vignette personnalisée nommée « Portail Contoso » permet d'accéder au site intranet SharePoint d'une organisation. 
   
@@ -45,29 +47,29 @@ Vous pouvez ajouter vos propres vignettes au lanceur d'applications pointant ver
   
 ## <a name="add-a-custom-tile-to-the-app-launcher"></a>Ajouter une vignette personnalisée au lanceur d'applications
 
-1. Connectez-vous au centre d’administration en tant qu’administrateur général, accédez à **paramètres**  >  **organisationnelle**, puis cliquez sur l’onglet **profil d’organisation** .
+1. Connectez-vous au Centre d’administration en tant qu’administrateur général, sélectionnez **Paramètres** de l’organisation paramètres et choisissez l’onglet  >  Profil **de l’organisation.**
     
-2. Sous l’onglet Profil de l' **organisation** , choisissez les **vignettes du lanceur d’applications personnalisé**.
+2. Sous **l’onglet Profil de** l’organisation, choisissez **Vignettes de lancement d’application personnalisées.**
   
-3. Sélectionnez **Ajouter une vignette personnalisée**. 
+3. Sélectionnez **Ajouter une vignette personnalisée.** 
   
 4. Attribuez un **nom** à la nouvelle vignette. Le nom s'affiche alors dans la vignette. 
     
-5. Entrez une **URL de site Web** pour la vignette. Il s’agit de l’emplacement où les utilisateurs doivent accéder lorsqu’ils sélectionnent la vignette sur le lanceur d’applications. Utilisez le protocole HTTPs dans l’URL.<br/>Conseil : Si vous créez une vignette pour un site SharePoint, accédez à ce site, copiez l’URL et collez-la ici. L’URL de votre site d’équipe par défaut se présente comme suit :`https://<company_name>.sharepoint.com` 
+5. Entrez **l’URL du site web** pour la vignette. Il s’agit de l’emplacement où vous souhaitez que vos utilisateurs se lancent lorsqu’ils sélectionnent la vignette dans le lanceur d’applications. Utilisez HTTPS dans l’URL.<br/>CONSEIL : si vous créez une vignette pour un site SharePoint, accédez à ce site, copiez l’URL et collez-la ici. L’URL de votre site d’équipe par défaut ressemble à ceci : `https://<company_name>.sharepoint.com` 
   
-6. Entrez l' **URL de l’image** de la vignette. Cette image apparaît sur la page Mes applications et le lanceur d'applications.<br/>Conseil : l’image doit être 60x60 pixels et être disponible pour tous les membres de votre organisation sans nécessiter une authentification.
+6. Entrez une **URL de l’image** pour la vignette. Cette image apparaît sur la page Mes applications et le lanceur d'applications.<br/>CONSEIL : l’image doit être de 60 x 60 pixels et être disponible pour tous les membres de votre organisation sans nécessiter d’authentification.
 
-7. Entrez la **description** de la vignette. Cette option apparaît lorsque vous sélectionnez la vignette sur la page mes applications et que vous sélectionnez Détails de l' **application**. 
+7. Entrez la **description** de la vignette. Cela s’affiche lorsque vous sélectionnez la vignette dans la page Mes applications et que vous sélectionnez **Détails de l’application.** 
   
-8. Sélectionnez **enregistrer les modifications** pour créer la vignette personnalisée. 
+8. Sélectionnez **Enregistrer les modifications** pour créer la vignette personnalisée. 
     
 Celle-ci apparaît désormais dans l'onglet **Toutes** du lanceur d'applications pour vous et vos utilisateurs. 
   
-## <a name="promote-the-tile-to-app-launcher"></a>Promouvoir la vignette sur le lanceur d’applications
+## <a name="promote-the-tile-to-app-launcher"></a>Promouvoir la vignette au Lanceur
 
-1. Sélectionnez l’icône du lanceur d’applications et sélectionnez **toutes les applications**. 
+1. Sélectionnez l’icône du lanceur d’applications et sélectionnez **Toutes les applications.** 
     
-2. Localisez la nouvelle vignette de votre application, sélectionnez les points de suspension, puis choisissez **code confidentiel pour le lanceur**.
+2. Recherchez la nouvelle vignette de votre application, sélectionnez les ellipses, puis **choisissez Épingler au lanceur.**
   
     > [!NOTE]
     > Si la vignette personnalisée créée aux étapes précédente n'apparaît pas, vérifiez qu'une boîte aux lettres Exchange Online vous est affectée et que vous vous y êtes connecté au moins une fois. Ces étapes sont requises pour les vignettes personnalisées dans Microsoft 365. 
@@ -77,17 +79,17 @@ Celle-ci apparaît désormais dans l'onglet **Toutes** du lanceur d'applications
   
 ## <a name="edit-or-delete-a-custom-tile"></a>Edit or delete a custom tile
 
-1. Dans le centre d’administration, accédez à **Settings**l'  >  **Org Settings**  >  onglet Profil d’organisation des paramètres d'**organisation** des paramètres </a> .
+1. Dans le Centre d’administration, allez dans **l’onglet** De profil d’organisation  >  paramètres de l’organisation **paramètres.**  >   </a>
     
-2. Sur la page profil de l' **organisation** , en regard de **Ajouter des vignettes personnalisées pour votre organisation**, sélectionnez **modifier**.
+2. Dans la page **Profil de l’organisation,** en plus d’ajouter des   **vignettes personnalisées pour votre organisation,** sélectionnez **Modifier**.
 
 3. Mettez à jour les champs **Nom de la vignette**, **URL**, **Description** ou **URL de l'image** de la vignette personnalisée (voir la [Ajouter une vignette personnalisée au lanceur d'applications](#add-a-custom-tile-to-the-app-launcher)).
     
-4. Sélectionnez Fermer la **mise à jour** \> **Close**. 
+4. Sélectionnez **Mettre à** \> **jour fermer**. 
     
-Pour supprimer une vignette personnalisée, dans la fenêtre **mosaïques personnalisées** , sélectionnez la vignette, sélectionnez Supprimer la suppression de **mosaïque**  >  **Delete**. 
+Pour supprimer une vignette  personnalisée, dans la fenêtre Vignettes personnalisées, sélectionnez la vignette, **sélectionnez Supprimer la vignette**  >  **Supprimer.** 
   
 ## <a name="whats-next"></a>Étape suivante
 
-En plus d’ajouter des vignettes au lanceur d’applications, vous pouvez ajouter des vignettes du lanceur d’applications dans la barre de navigation ([en savoir plus](https://support.microsoft.com/office/eb34a21b-52fa-4fbf-a8d5-146132242985)). Pour personnaliser l’apparence de Microsoft 365 en fonction de la marque de votre organisation, consultez [la rubrique Customize the microsoft 365 Theme](../setup/customize-your-organization-theme.md).
+En plus d’ajouter des vignettes au lanceur d’applications, vous pouvez ajouter des vignettes de lanceur d’applications à la barre de navigation[(en savoir plus).](https://support.microsoft.com/office/eb34a21b-52fa-4fbf-a8d5-146132242985) Pour personnaliser l’apparence de Microsoft 365 afin qu’elle corresponde à la marque de votre organisation, voir Personnaliser le [thème Microsoft 365.](../setup/customize-your-organization-theme.md)
   

@@ -12,19 +12,21 @@ localization_priority: Priority
 ms.collection:
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Découvrez comment renforcer la sécurité de votre organisation contre les attaques par mot de passe et la raison pour laquelle vous devez interdire les mots de passe courants et activer l’authentification multifacteur basée sur le risque.
-ms.openlocfilehash: 0bfbeac6fb8069e846ddad3c5b618687ba3c2260
-ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
+ms.openlocfilehash: 66a4048ac1add3a0d47f256dc29519a91ae6cb11
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48456322"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926713"
 ---
 # <a name="password-policy-recommendations"></a>Recommandations en matière de stratégie de mot de passe
 
@@ -68,7 +70,7 @@ Voici quelques conseils sur les mots de passe destinés aux utilisateurs de votr
   
 - N’utilisez pas de mot de passe identique ou similaire à celui utilisé sur d’autres sites web
 
-- N’utilisez pas de mot unique (par exemple, **code**ou une expression couramment utilisée de type**jetaime)**
+- N’utilisez pas de mot unique (par exemple, **code** ou une expression couramment utilisée de type **jetaime)**
 
 - Veillez à ce que les mots de passe soient difficiles à deviner, même par des personnes qui vous connaissent bien, telles que les noms et les anniversaires de vos amis et de votre famille, vos groupes préférés et les phrases que vous aimez utiliser
 

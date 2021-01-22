@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez comment rejoindre une équipe en tant qu’invité dans Microsoft Teams.
-ms.openlocfilehash: 85ad752c3b54dcd64020771b097026c964e6fac5
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 31d5acb1a0294a54bcb5b5c7c74d76dbba7124f7
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702105"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925025"
 ---
 # <a name="join-a-team-as-a-guest"></a>Rejoindre une équipe en tant qu’invité
 
@@ -34,18 +35,18 @@ ms.locfileid: "49702105"
 
 ## <a name="try-it"></a>Essayez !
 
-Si vous recevez une invitation Microsoft teams pour rejoindre une équipe, il existe quelques étapes pour accepter l’invitation.
+Si vous recevez une invitation Microsoft Teams à rejoindre une équipe, vous devez suivre deux étapes pour accepter l’invitation.
 
-1. Ouvrez l’invitation par courrier électronique, puis sélectionnez  **Ouvrir Microsoft teams**. Si vous ne voyez pas l’invitation, vérifiez votre dossier de courrier indésirable.
-  1. Si votre adresse de messagerie n’a pas encore été utilisée pour créer un compte Microsoft, vous devez en créer une.
+1. Ouvrez l’invitation par courrier électronique, puis **sélectionnez Ouvrir Microsoft Teams.** Si vous ne voyez pas l’invitation, vérifiez votre dossier de courrier indésirable ou de courrier indésirable.
+  1. Si votre adresse de messagerie n’a pas été utilisée précédemment pour créer un compte Microsoft, vous devez en créer un.
 
-     Dans la boîte de dialogue  **créer un compte**  , sélectionnez  **suivant** , créer un mot de passe, puis cliquez sur  **suivant**.
-  1. Pour vérifier votre adresse de messagerie, ouvrez le message électronique de vérification, puis copiez le code de sécurité.
-  1. Entrez votre code de sécurité dans la boîte de dialogue  **vérifier l’adresse de messagerie**  , sélectionnez  **suivant** , entrez le captcha dans la ligne  **Entrez les caractères que vous voyez**  , sélectionnez  **suivant** , puis  **accepter**.
-1. Si vous ne souhaitez pas télécharger l’application Microsoft Teams, sélectionnez  **utiliser l’application Web à la place**.
-1. Dans Team Web App, vous pouvez afficher ou répondre à des billets, ou créer vos propres billets, et sélectionner l’onglet  **fichiers**  pour afficher ou modifier des documents d’équipe.
+     Dans la **boîte de dialogue** Créer un compte, **sélectionnez Suivant,** créez un mot de passe, puis sélectionnez **Suivant.**
+  1. Pour vérifier votre adresse e-mail, ouvrez l’e-mail de vérification et copiez le code de sécurité.
+  1. Entrez votre code  de sécurité dans la boîte de dialogue  Vérifier l’e-mail, sélectionnez **Suivant,** entrez la CAPTCHA dans la ligne Entrez les caractères que vous voyez, sélectionnez **Suivant,** puis **Acceptez**.
+1. Si vous ne souhaitez pas télécharger l’application Microsoft Teams, sélectionnez **Utiliser l’application web à la place.**
+1. Dans l’application web Teams, vous pouvez afficher ou répondre  à des billets, ou créer vos propres billets, et sélectionner l’onglet Fichiers pour afficher ou modifier des documents d’équipe.
 
-    Si vous utilisez déjà l’application teams dans votre organisation pour rejoindre une équipe en tant qu’invité, c’est beaucoup plus simple.
+    Si vous utilisez déjà l’application Teams dans votre organisation, rejoindre une équipe en tant qu’invité est beaucoup plus simple.
 
-1. Il vous suffit d’ouvrir l’application Microsoft teams et de choisir  **Oui**  pour accéder à l’équipe à laquelle vous êtes invité.  Vous pouvez désormais collaborer sur le projet dans Teams.
-2. Pour revenir à l’équipe de votre entreprise, sélectionnez-la dans la liste déroulante  **organisation**  .
+1. Ouvrez simplement l’application Microsoft Teams et choisissez  **Oui**  pour basculer vers l’équipe à qui vous êtes invité.  Vous pouvez désormais collaborer sur le projet dans Teams.
+2. Pour revenir à l’équipe de votre  entreprise, sélectionnez-la dans la baisse de l’organisation.

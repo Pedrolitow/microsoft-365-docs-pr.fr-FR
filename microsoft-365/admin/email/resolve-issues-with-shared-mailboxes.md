@@ -16,38 +16,39 @@ ms.collection:
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Essayez ces solutions si vous rencontrez des problèmes avec les boîtes aux lettres partagées.
-ms.openlocfilehash: c889d3aa2fab8c2dce4cc2a8a00ef49a905363a1
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+description: Essayez ces solutions si vous avez des problèmes avec les boîtes aux lettres partagées.
+ms.openlocfilehash: ba62db76edff6e4ab3d738ed0af8db2a40c18394
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445506"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926485"
 ---
 # <a name="resolve-issues-with-shared-mailboxes"></a>Résoudre les problèmes liés aux boîtes aux lettres partagées
 
-Si des messages d’erreur s’affichent lors de la création ou de l’utilisation d’une boîte aux lettres partagée, essayez ces solutions possibles. 
+Si vous voyez des messages d’erreur lors de la création ou de l’utilisation d’une boîte aux lettres partagée, essayez ces solutions possibles. 
 
 ## <a name="error-when-creating-shared-mailboxes"></a>Erreur lors de la création de boîtes aux lettres partagées
 <a name="bkmk_Fix"> </a>
 
-Si le message d’erreur s’affiche, **l’adresse proxy « SMTP : nom de la boîte aux lettres partagée <\> » est déjà utilisée par les adresses proxy ou legacyExchangeDN de « \<name> ». Veuillez choisir une autre adresse proxy**, ce qui signifie que vous essayez de donner à la boîte aux lettres partagée un nom qui est déjà utilisé. Par exemple, imaginons que vous vouliez donner les noms info@domaine1 et info@domaine2 à des boîtes aux lettres partagées. Vous pouvez procéder de deux manières :
+Si vous voyez le message d’erreur, l’adresse proxy « smtp:<nom de boîte aux lettres partagée » est déjà utilisée par les adresses proxy ou **\> LegacyExchangeDN de « \<name> ». Veuillez choisir une autre adresse proxy,** ce qui signifie que vous essayez de donner à la boîte aux lettres partagée un nom déjà utilisé. Par exemple, imaginons que vous vouliez donner les noms info@domaine1 et info@domaine2 à des boîtes aux lettres partagées. Vous pouvez procéder de deux manières :
 
-  - Utiliser Windows PowerShell. Consultez ce billet de blog pour obtenir des instructions : [créer des boîtes aux lettres partagées avec le même alias sur des domaines différents](https://www.cogmotive.com/blog/office-365-tips/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365)
+  - Utiliser Windows PowerShell. Consultez ce billet de blog pour obtenir des instructions : Créer des boîtes aux lettres partagées [avec le même alias sur différents domaines](https://www.cogmotive.com/blog/office-365-tips/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365)
     
-  - Nommez la deuxième boîte aux lettres partagée quelque part du début pour contourner l’erreur. Ensuite, dans le centre d’administration, renommez la boîte aux lettres partagée comme vous le souhaitez.
+  - Nommez la deuxième boîte aux lettres partagée différemment du début pour contourner l’erreur. Ensuite, dans le Centre d’administration, renommez la boîte aux lettres partagée comme vous le souhaitez.
 
-## <a name="error-about-not-having-send-permissions-when-using-a-shared-mailbox"></a>Erreur de n’avoir pas les autorisations d’envoi lors de l’utilisation d’une boîte aux lettres partagée
+## <a name="error-about-not-having-send-permissions-when-using-a-shared-mailbox"></a>Erreur de non-envoi d’autorisations lors de l’utilisation d’une boîte aux lettres partagée
 
-Si vous avez créé une boîte aux lettres partagée et essayez d’envoyer un message à partir de celle-ci, vous pouvez obtenir ce qui suit :
+Si vous avez créé une boîte aux lettres partagée, puis que vous essayez d’envoyer un message à partir de celle-ci, vous pouvez obtenir ceci :
 
 **Ce message n’a pas pu être envoyé. Vous n’êtes pas autorisé à envoyer le message au nom de l’utilisateur spécifié.**
 
-Ce message s’affiche lorsque Microsoft 365 rencontre un problème de latence de réplication. Elle doit disparaître au bout d’une heure, lorsque les informations sur votre nouvelle boîte aux lettres partagée (ou utilisateur ajouté) sont répliquées sur l’ensemble de nos centres de données. Patientez une heure, puis réessayez d’envoyer un message.
+Ce message s’affiche lorsque Microsoft 365 rencontre un problème de latence de réplication. Il devrait disparaître dans une heure ou deux, lorsque les informations sur votre nouvelle boîte aux lettres partagée (ou utilisateur ajouté) sont répliquées dans tous nos centres de données. Patientez une heure, puis tentez à nouveau d’envoyer un message.
 
 ## <a name="related-articles"></a>Articles connexes
 

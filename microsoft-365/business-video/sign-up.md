@@ -1,5 +1,5 @@
 ---
-title: Inscrivez-vous à l’abonnement Microsoft 365 Business Premium
+title: S’inscrire à l’abonnement Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,34 +16,35 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Découvrez comment s’inscrire à Microsoft 365 Business Premium.
-ms.openlocfilehash: 8026213b630d444e3611808082cdce4b084136d5
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Découvrez comment vous inscrire à Microsoft 365 Business Premium.
+ms.openlocfilehash: a2b632d0adfa0cfaf0ae2cebc20ec2642a3ceb48
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702024"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925897"
 ---
-# <a name="sign-up-for-microsoft-365-business-premium-subscription"></a>Inscrivez-vous à l’abonnement Microsoft 365 Business Premium
+# <a name="sign-up-for-microsoft-365-business-premium-subscription"></a>S’inscrire à l’abonnement Microsoft 365 Business Premium
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3znhX?autoplay=false]
 
 ## <a name="try-it"></a>Essayez !
 
-Suivez les étapes ci-dessous pour vous inscrire à Microsoft 365 Business Premium (précédemment appelé Microsoft 365 entreprise) :
+Suivez ces étapes pour vous inscrire à Microsoft 365 Business Premium (précédemment appelé Microsoft 365 Business) :
 
 1. Pour vous inscrire à Microsoft 365 Business Premium, recherchez-le en ligne et sélectionnez-le.
-2. Choisissez  **pour les entreprises** , puis  **Achetez maintenant**.
-3. Entrez votre adresse de messagerie personnelle, sélectionnez  **suivant** , puis  **configurez le compte**.
-4. Entrez votre nom, votre numéro de téléphone et le nom de votre société. Si vous&#39;d comme aide auprès d’un partenaire Microsoft, activez la case à cocher en regard de  **j’aimerais que Microsoft partage mes informations**. Sélectionnez  **suivant**.
-5. Pour vérifier votre numéro de téléphone, sélectionnez  **Envoyer un code de vérification**. Entrez le code que vous avez reçu sur votre téléphone, puis sélectionnez  **vérifier**.
-6. Si vous disposez déjà d’un domaine, choisissez  **obtenir un domaine Microsoft pour le moment**, puis entrez le nom de votre société. Il s’agit de votre adresse de messagerie temporaire. Il devient également une partie de vos URL SharePoint et OneDrive permanentes. Sélectionnez  **Vérifier la disponibilité** , puis  **suivant**.
-7. Entrez votre nom d’utilisateur, un mot de passe, confirmez votre mot de passe, puis sélectionnez s'  **inscrire**  pour créer votre compte.
-8. Entrez le nombre d’utilisateurs, choisissez un plan de facturation, puis cliquez sur  **suivant**.
-9.  Entrez l’adresse de&#39;de votre entreprise, puis cliquez sur  **suivant**.
-10. Entrez les informations de votre carte de crédit, puis  **passez la commande**. Après quelques instants, votre compte sera créé.
-11. À ce stade, vous pouvez sélectionner  **continuer pour configurer le compte** , ou vous pouvez vous connecter au centre d’administration Microsoft 365 et terminer l’installation plus tard.
+2. Choose  **For business,** and then  **Buy now**.
+3. Entrez votre adresse e-mail personnelle, **sélectionnez Suivant,** puis **Configurer le compte.**
+4. Entrez votre nom, votre numéro de téléphone et votre nom de société. Si vous&#39;souhaitez obtenir de l’aide d’un partenaire Microsoft, cochez la case en regard de je souhaite que **Microsoft partage mes informations.** Sélectionnez  **Suivant**.
+5. Pour vérifier votre numéro de téléphone, sélectionnez **Le code de vérification d’envoi.** Entrez le code que vous avez reçu sur votre téléphone, puis sélectionnez **Vérifier.**
+6. Si vous avez déjà un domaine, sélectionnez Obtenir un domaine  **Microsoft pour** le moment, puis entrez le nom de votre société. Cela devient votre adresse e-mail temporaire. Il fait également partie de vos URL SharePoint et OneDrive permanentes. Sélectionnez  **Vérifier la disponibilité,** puis  **Suivant**.
+7. Entrez votre nom d’utilisateur, un mot de passe, confirmez votre mot de passe, puis sélectionnez  **S’inscrire**  pour créer votre compte.
+8. Entrez le nombre d’utilisateurs, choisissez un plan de facturation, puis sélectionnez  **Suivant**.
+9.  Entrez l'&#39;de votre entreprise, puis  **Suivant**.
+10. Entrez les informations de votre carte de crédit, puis **commandez.** Après quelques instants, votre compte sera créé.
+11. À ce stade, vous pouvez sélectionner  **Continuer** à configurer le compte ou vous pouvez vous inscrire au Centre d’administration Microsoft 365 et terminer l’installation ultérieurement.

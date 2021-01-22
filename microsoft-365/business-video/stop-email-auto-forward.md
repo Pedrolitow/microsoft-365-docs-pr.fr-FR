@@ -1,5 +1,5 @@
 ---
-title: Arrêter les messages électroniques de transfert automatique
+title: Arrêter le transfert automatique d’e-mails
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,35 +16,36 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Découvrez comment arrêter le transfert automatique des courriers électroniques.
-ms.openlocfilehash: 0683e133f6c261dc19cc098b13be298cd8086001
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Découvrez comment arrêter le forwarding automatique des e-mails.
+ms.openlocfilehash: ebbe37ab5c4a60c6ac4b6ebf8877247199460fa1
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702019"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925885"
 ---
-# <a name="stop-email-auto-forward"></a>Arrêter l’envoi automatique de messages électroniques
+# <a name="stop-email-auto-forward"></a>Arrêter le courrier électronique à l’avance automatique
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2W6kS?autoplay=false]
 
-Si un pirate accède à la boîte aux lettres d’un utilisateur, il peut transférer automatiquement le courrier électronique de l’utilisateur vers une adresse externe et voler des informations propriétaires. Vous pouvez l’arrêter en créant une règle de flux de messagerie.
+Si un pirate informatique accède à la boîte aux lettres d’un utilisateur, il peut automatiquement le faire accéder à une adresse extérieure et voler des informations confidentielles. Vous pouvez arrêter cela en créant une règle de flux de messagerie.
 
 ## <a name="try-it"></a>Essayez !
 
-1. Dans le centre d’administration 365 de Microsoft, sélectionnez **Exchange**, **flux de messagerie**, puis sous l’onglet **règles** , sélectionnez le signe plus et choisissez **créer une nouvelle règle**.
-1. Sélectionnez **plus d’options**. Nommez votre nouvelle règle.
-1. Ensuite, ouvrez la liste déroulante pour **appliquer cette règle si**, sélectionnez **l’expéditeur**, puis **externe interne**.
-1. Sélectionnez **dans l’organisation**, puis cliquez sur **OK**.
-1. Choisissez **Ajouter une condition**, ouvrez la liste déroulante, sélectionnez **les propriétés du message**, puis **le type de message**.
-1. Ouvrez la liste déroulante **Sélectionner un type de message** , choisissez **transfert automatique**, puis **OK**.
-1. Ouvrez la liste déroulante **effectuer les opérations suivantes** , sélectionnez **bloquer le message**, puis **rejeter le message et inclure une explication**.
-1. Entrez le texte du message correspondant à votre explication, puis sélectionnez **OK**.
-1. Faites défiler vers le bas, puis sélectionnez **Enregistrer**.
+1. Dans le Centre d’administration Microsoft 365, sélectionnez **Exchange,** flux de messagerie **et,** sous l’onglet Règles, sélectionnez le signe plus et choisissez créer **une règle.** 
+1. Sélectionnez **plus d’options.** Nommez votre nouvelle règle.
+1. Ensuite, ouvrez la drop-down pour **appliquer cette règle si**, sélectionnez **l’expéditeur,** puis **est interne externe**.
+1. Sélectionnez **À l’intérieur de** l’organisation, puis **OK**.
+1. Choose **add condition**, open the drop-down, select The message **properties**, then include the **message type**.
+1. Ouvrez la drop-down sélectionner le type de **message,** sélectionnez **Auto-forward**, puis **OK**.
+1. Ouvrez **la liste suivante,** sélectionnez Bloquer le **message,** puis **rejetez le message et incluez une explication.**
+1. Entrez le texte du message pour votre explication, puis sélectionnez **OK.**
+1. Faites défiler jusqu’au bas et sélectionnez **Enregistrer.**
 
-    Votre règle a été créée et les pirates ne seront plus en mesure de transférer automatiquement les messages.
+    Votre règle a été créée et les pirates informatiques ne pourront plus envoyer automatiquement des messages.

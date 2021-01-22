@@ -13,19 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
-description: Découvrez comment déployer des compléments pour les utilisateurs et les groupes de votre organisation à l’aide du déploiement centralisé dans le centre d’administration.
-ms.openlocfilehash: 37fac34449ee39366778e29c0eeddf1fc7bfdd37
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+description: Découvrez comment déployer des modules pour les utilisateurs et les groupes de votre organisation à l’aide du déploiement centralisé dans le Centre d’administration.
+ms.openlocfilehash: ef7237f20780cb67bc84561ad8617dd8da6f8b82
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698288"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926353"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>Déployer des compléments dans le centre d’administration
 
@@ -36,43 +38,43 @@ ms.locfileid: "49698288"
 
 ::: moniker-end
 
-[] Les compléments Office vous aident à personnaliser vos documents et à accéder plus simplement aux informations sur le web (voir [Commencer à utiliser votre complément Office](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)). En tant qu’administrateur, vous pouvez déployer des compléments Office pour les utilisateurs de votre organisation à l’aide de la fonctionnalité de déploiement centralisé dans le centre d’administration 365 de Microsoft. Le déploiement centralisé est la méthode recommandée et la plus riche en fonctionnalités permettant à la plupart des administrateurs de déployer des compléments pour les utilisateurs et les groupes au sein d’une organisation. 
+[] Les compléments Office vous aident à personnaliser vos documents et à accéder plus simplement aux informations sur le web (voir [Commencer à utiliser votre complément Office](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)). En tant qu’administrateur, vous pouvez déployer des add-ins Office pour les utilisateurs de votre organisation à l’aide de la fonctionnalité Déploiement centralisé dans le Centre d’administration Microsoft 365. Le déploiement centralisé est le moyen recommandé et le plus riche en fonctionnalités pour la plupart des administrateurs de déployer des modules pour les utilisateurs et les groupes au sein d’une organisation. 
 
-Pour plus d’informations sur la façon de déterminer si votre organisation peut prendre en charge le déploiement centralisé, reportez-vous à la rubrique [déterminer si un déploiement centralisé de compléments fonctionne pour votre organisation](centralized-deployment-of-add-ins.md).
+Pour plus d’informations sur la façon de déterminer si votre organisation peut prendre en charge le déploiement centralisé, voir [Determine if Centralized Deployment of add-ins works for your organization](centralized-deployment-of-add-ins.md).
 
-Pour en savoir plus sur la gestion des compléments après le déploiement, consultez [la rubrique gestion des compléments dans le centre d’administration](manage-addins-in-the-admin-center.md) .
+Pour en savoir plus sur la gestion des add-ins après le déploiement, voir Gérer les [add-ins dans le Centre d’administration](manage-addins-in-the-admin-center.md)
   
 > [!NOTE]
->  Pour Word, Excel et PowerPoint utilisent un [catalogue d’applications SharePoint](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog) pour déployer des compléments pour les utilisateurs dans un environnement local sans connexion à Microsoft 365 et/ou prise en charge des compléments SharePoint requis. Pour Outlook, utilisez le panneau de configuration Exchange pour déployer dans un environnement local sans connexion à Microsoft 365.
+>  Pour Word, Excel et PowerPoint, utilisez un catalogue d’applications [SharePoint](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog) pour déployer des applications pour les utilisateurs dans un environnement local sans connexion à Microsoft 365 et/ou prise en charge des applications SharePoint requises. Pour Outlook, utilisez le panneau de contrôle Exchange pour déployer dans un environnement local sans connexion à Microsoft 365.
   
 ## <a name="recommended-approach-for-deploying-office-add-ins"></a>Approche recommandée pour le déploiement de compléments Office
 
-Pour déployer des compléments à l’aide d’une approche progressive, nous vous recommandons d’effectuer les opérations suivantes :
+Pour déployer des add-ins à l’aide d’une approche par phases, nous vous recommandons les étapes suivantes :
   
-1. Déployez le complément vers un petit groupe de parties intéressées et de membres du service informatique. Si le déploiement réussit, passez à l’étape 2.
+1. Déployez le complément vers un petit groupe de parties intéressées et de membres du service informatique. Si le déploiement réussit, passer à l’étape 2.
     
-2. Déployez le complément à d’autres personnes au sein de l’entreprise. Une fois encore, évaluez les résultats et, si elle réussit, poursuivez le déploiement complet.
+2. Déployer le add-in à d’autres personnes au sein de l’entreprise. Là encore, évaluez les résultats et, en cas de réussite, poursuivez le déploiement complet.
     
 3. Effectuer un déploiement complet pour tous les utilisateurs.
     
-En fonction de la taille de l’audience cible, vous pouvez ajouter ou supprimer des étapes de déploiement.
+Selon la taille de l’audience cible, vous pouvez ajouter ou supprimer des étapes de déploiement.
   
 ## <a name="deploy-an-office-add-in-using-the-admin-center"></a>Déploiement d’un complément Office à l’aide du centre d’administration
 
-Avant de commencer, consultez [la rubrique déterminer si un déploiement centralisé de compléments fonctionne pour votre organisation](centralized-deployment-of-add-ins.md).
+Avant de commencer, voir Déterminer si le déploiement centralisé des modules est efficace [pour votre organisation.](centralized-deployment-of-add-ins.md)
   
-1. Dans le centre d’administration, accédez à  la \> page **compléments** de paramètres. Si vous ne voyez pas la page **de complément** , accédez à la page **paramètres** \> **intégrés applications intégrées** \>  .
+1. Dans le Centre d’administration, allez à la page  \> **Paramètres des add-ins.** Si la **page** Des applications intégrées aux **paramètres** n’est pas consultez, consultez la page Des applications intégrées aux \>  \> **paramètres.**
     
-2. Sélectionnez **déployer un complément** en haut de la page, puis cliquez sur **suivant**.
+2. Sélectionnez **Déployer le add-in** en haut de la page, puis sélectionnez **Suivant**.
  
     > [!NOTE]
-    > Le centre d’administration est mis à jour vers l’expérience de déploiement avec des applications intégrées. Si vous ne voyez pas les étapes ci-dessus, accédez à la section déploiement centralisé en accédant à **paramètres**  >  **intégrés** dans les applications. En haut de la page **applications intégrées** , choisissez **compléments**.
+    > Le Centre d’administration est mis à jour vers l’expérience de déploiement avec les applications intégrées. Si vous ne voyez pas les étapes ci-dessus, consultez la section Déploiement centralisé en allant dans **Applications intégrées**  >  **paramètres.** En haut de la page **Applications intégrées,** choisissez **Les applications.**
     
 3. Sélectionnez une option et suivez les instructions.
   
-4. Si vous avez sélectionné l’option d’ajout d’un complément à partir de l’Office Store, effectuez votre sélection de complément. </br>
+4. Si vous avez sélectionné l’option d’ajout d’un add-in à partir de l’Office Store, faites votre choix. </br>
 
-    Vous pouvez afficher les compléments disponibles par catégories : **suggestions pour vous**, **évaluation** ou **nom**. Seuls les compléments gratuits sont disponibles dans l’Office Store. Les compléments payants ne sont pas pris en charge pour le moment. Une fois que vous avez sélectionné un complément, acceptez les conditions requises pour continuer. <br/> 
+    Vous pouvez afficher les add-ins disponibles par catégories : Suggéré pour **vous,** **Évaluation** ou **Nom**. Seuls les add-ins gratuits sont disponibles à partir de l’Office Store. Les compléments payants ne sont pas pris en charge pour le moment. Une fois que vous avez sélectionné un module, acceptez les conditions générales pour continuer. <br/> 
 
     > [!NOTE] 
     > Avec l’option Office Store, les mises à jour et les améliorations sont automatiquement déployées pour les utilisateurs.
@@ -80,36 +82,36 @@ Avant de commencer, consultez [la rubrique déterminer si un déploiement centra
 5. Sur la page suivante, sélectionnez **Tout le monde**, **Utilisateurs/groupes spécifiques** ou **Moi uniquement** pour spécifier les personnes vers lesquelles le complément est déployé. Utilisez la zone de recherche pour rechercher des utilisateurs ou des groupes spécifiques. <br/>
 
     > [!NOTE] 
-    > Pour en savoir plus sur les autres États qui s’appliquent à un complément, consultez la rubrique [États des compléments](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center.md).
+    > Pour en savoir plus sur les autres états qui s’appliquent à un add-in, consultez [États de l’application.](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center.md)
   
 6. Sélectionnez **Déployer**.
   
-7. Une coche verte apparaît lorsque le complément est déployé. Suivez les instructions sur la page pour tester le complément.
+7. Une coche verte s’affiche lorsque le add-in est déployé. Suivez les instructions de la page pour tester le add-in.
 
     > [!NOTE]
-    > Il se peut que les utilisateurs doivent relancer Office pour afficher l’icône du complément sur le ruban de l’application. Les compléments Outlook peuvent prendre jusqu’à 24 heures pour apparaître sur les rubans des applications.
+    > Il se peut que les utilisateurs doivent redémarrer Office pour afficher l’icône de l’application sur le ruban de l’application. L’apparition des applications dans les rubans d’application peut prendre jusqu’à 24 heures.
     
-8. Lorsque vous avez terminé, sélectionnez **suivant**. Si vous avez déjà déployé, vous pouvez sélectionner Modifier les utilisateurs **qui ont accès au complément** pour le déployer sur un plus grand nombre d’utilisateurs.
+8. Lorsque vous avez terminé, sélectionnez **Suivant**. Si vous avez déployé votre déploiement uniquement sur vous-même, vous pouvez sélectionner Modifier qui a accès au **add-in** pour le déployer pour d’autres utilisateurs.
 
-    Si vous avez déployé le complément auprès d’autres membres de votre organisation, suivez les instructions pour annoncer le déploiement du complément. <br/>
+    Si vous avez déployé le add-in vers d’autres membres de votre organisation, suivez les instructions pour annoncer le déploiement du module. <br/>
   
-    Il est recommandé d’informer les utilisateurs et les groupes que le complément déployé est disponible. Envisagez d’envoyer un courrier électronique qui décrit quand et comment utiliser le complément. Inclure ou créer un lien vers du contenu d’aide ou des FAQ susceptibles d’aider les utilisateurs s’ils ont des problèmes avec le complément.
+    Il est bon d’informer les utilisateurs et les groupes que le add-in déployé est disponible. Envisagez d’envoyer un e-mail qui décrit quand et comment utiliser le add-in. Inclure ou lier du contenu d’aide ou des FAQ qui peuvent aider les utilisateurs s’ils ont des problèmes avec le add-in.
   
 ### <a name="considerations-when-assigning-an-add-in-to-users-and-groups"></a>Points à considérer lors de l'affectation d'un complément à des utilisateurs et groupes
 
 Les administrateurs peuvent affecter un complément à tout le monde ou à des utilisateurs et groupes spécifiques. Chaque option a des conséquences spécifiques :
   
-- **Tout le monde** Cette option affecte le complément à tous les utilisateurs de l’organisation. Utilisez-la avec parcimonie et uniquement pour les compléments qui sont réellement universels pour l'ensemble de votre organisation. 
+- **Tout le monde** Cette option affecte le add-in à tous les utilisateurs de l’organisation. Utilisez-la avec parcimonie et uniquement pour les compléments qui sont réellement universels pour l'ensemble de votre organisation. 
     
-- **Les utilisateurs** Si vous affectez un complément à un utilisateur individuel, puis que vous déployez le complément sur un nouvel utilisateur, vous devez d’abord ajouter le nouvel utilisateur.
+- **Utilisateurs** Si vous affectez un add-in à un utilisateur individuel, puis déployez le module sur un nouvel utilisateur, vous devez d’abord ajouter le nouvel utilisateur.
     
-- **Groupes** Si vous affectez un complément à un groupe, le complément est automatiquement affecté aux utilisateurs qui sont ajoutés au groupe. Lorsqu’un utilisateur est supprimé d’un groupe, il perd l’accès au complément. Dans les deux cas, aucune action supplémentaire n’est requise de l’administrateur. 
+- **Groupes** Si vous affectez un add-in à un groupe, le module est automatiquement attribué aux utilisateurs ajoutés au groupe. Lorsqu’un utilisateur est supprimé d’un groupe, il perd l’accès au module. Dans les deux cas, aucune action supplémentaire n’est requise de la part de l’administrateur. 
 
-- **Moi-même** Si vous affectez un complément à vous-même, le complément est affecté uniquement à votre compte, ce qui est idéal pour tester le complément.
+- **Moi uniquement** Si vous affectez un add-in à vous-même, il est affecté uniquement à votre compte, ce qui est idéal pour tester le module.
     
-L’option appropriée pour votre organisation dépend de votre configuration. Toutefois, nous vous recommandons d’utiliser des groupes. En tant qu’administrateur, vous pouvez trouver plus facile de gérer les compléments à l’aide de groupes et de contrôler l’appartenance à ces groupes plutôt que d’affecter des utilisateurs individuels à chaque fois. Dans certains cas, vous souhaiterez peut-être limiter l’accès à un petit ensemble d’utilisateurs en effectuant des affectations à des utilisateurs spécifiques en affectant manuellement les utilisateurs.
+L’option la plus efficace pour votre organisation dépend de votre configuration. Toutefois, nous vous recommandons d’effectuer des affectations à l’aide de groupes. En tant qu’administrateur, il peut être plus facile de gérer les modules en utilisant des groupes et en contrôlant l’appartenance à ces groupes plutôt que d’affecter des utilisateurs individuels à chaque fois. Dans certains cas, vous pouvez restreindre l’accès à un petit groupe d’utilisateurs en attribuant des affectations à des utilisateurs spécifiques en leur attribuant manuellement des utilisateurs.
   
-## <a name="more-about-office-add-ins-security"></a>En savoir plus sur la sécurité des compléments Office
+## <a name="more-about-office-add-ins-security"></a>En savoir plus sur la sécurité des add-ins Office
 
 Les compléments Office combinent un fichier manifeste XML qui inclut certaines métadonnées sur le complément, mais surtout qui pointe vers une application web contenant tout le code et la logique. Les fonctionnalités des compléments peuvent varier. Par exemple, les compléments peuvent :
   
@@ -130,7 +132,7 @@ Les mises à jour des compléments se produisent comme suit :
 - **Complément métier :** dans ce cas, lorsqu'un administrateur a chargé explicitement un manifeste, le complément nécessite que l'administrateur charge un nouveau fichier manifeste pour prendre en charge la modification des métadonnées. Le complément est mis à jour au démarrage suivant des applications Office concernées. L'application web peut changer à tout moment. 
 
     > [!NOTE]
-    > L’administrateur n’a pas besoin de supprimer un complément LOB pour effectuer une mise à jour.   Dans la section compléments, l’administrateur peut simplement cliquer sur le complément LOB et cliquer sur le **bouton mettre à jour** dans le coin inférieur droit. La mise à jour ne fonctionnera que si la version du nouveau complément est supérieure à celle du complément existant.   
+    > L’administrateur n’a pas besoin de supprimer un add-in LOB pour faire une mise à jour.   Dans la section Des add-ins, l’administrateur peut simplement  cliquer sur le add-in LOB et choisir le bouton Mettre à jour dans le coin inférieur droit. La mise à jour ne fonctionne que si la version du nouveau module est supérieure à celle du nouveau.   
     
 - **Complément de l'Office Store :** lorsqu'un administrateur a sélectionné un complément à partir de l'Office Store, si un complément est mis à jour dans l'Office Store, le complément sera mis à jour plus tard dans le déploiement centralisé. Le complément est mis à jour au démarrage suivant des applications Office concernées. L'application web peut changer à tout moment. 
   
@@ -138,10 +140,10 @@ Les mises à jour des compléments se produisent comme suit :
 
 [Gérer des compléments dans le centre d’administration](manage-addins-in-the-admin-center.md)
 
-[Créez votre premier complément de volet de tâches Word](https://docs.microsoft.com/office/dev/add-ins/quickstarts/word-quickstart?tabs=yeomangenerator).
+[Créez votre premier add-in](https://docs.microsoft.com/office/dev/add-ins/quickstarts/word-quickstart?tabs=yeomangenerator)de volet de tâches Word.
 
-[Mineurs et acquisition de compléments à partir du magasin](minors-and-acquiring-addins-from-the-store.md)
+[Mineurs et acquisition de modules dans le Store](minors-and-acquiring-addins-from-the-store.md)
   
-[Utiliser les cmdlets PowerShell de déploiement centralisé pour gérer les compléments](https://docs.microsoft.com/microsoft-365/enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins)
+[Utiliser les cmdlets PowerShell de déploiement centralisé pour gérer les add-ins](https://docs.microsoft.com/microsoft-365/enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins)
   
-[Résolution des problèmes : l’utilisateur ne voit pas les compléments](https://docs.microsoft.com/office365/troubleshoot/access-management/user-not-seeing-add-ins)
+[Résolution des problèmes : l’utilisateur ne voit pas les modules](https://docs.microsoft.com/office365/troubleshoot/access-management/user-not-seeing-add-ins)

@@ -16,38 +16,39 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Découvrez comment gérer les pièces jointes fiables.
-ms.openlocfilehash: ea1dc20b8e9e51701730a72b8e8194d2abbfac99
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Découvrez comment gérer les pièces jointes sécurisées.
+ms.openlocfilehash: 75146a05a091cf91a77ee3bc9bb63c813d84dce3
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701935"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926101"
 ---
 # <a name="manage-safe-attachments"></a>Gérer les pièces jointes fiables
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtn3I?autoplay=false]
 
-Microsoft Defender pour Office 365, anciennement Microsoft 365 ATP, ou Advanced Threat Protection, permet de protéger votre entreprise contre les fichiers qui contiennent du contenu malveillant dans Outlook, OneDrive, SharePoint et Teams.
+Microsoft Defender pour Office 365, anciennement appelé Microsoft 365 - Protection avancée contre les menaces, permet de protéger votre entreprise contre les fichiers qui contiennent du contenu malveillant dans Outlook, OneDrive, SharePoint et Teams.
 
 ## <a name="try-it"></a>Essayez !
 
-1. Accédez au [Centre d’administration](https://admin.microsoft.com), puis sélectionnez **configuration**.
-1. Faites défiler vers le bas pour **augmenter la protection contre les menaces avancées**. Sélectionnez **Afficher**, **gérer**, puis **ATP (pièces jointes approuvées**).
-1. Sélectionnez votre règle de pièces jointes approuvées, puis cliquez sur l’icône **modifier** .
-1. Sélectionnez **paramètres**, puis vérifiez que l’option Bloquer est sélectionnée.
-1. Faites défiler vers le bas. Choisissez **activer la redirection**, puis entrez votre adresse de messagerie ou l’adresse de la personne dont vous souhaitez consulter les pièces jointes bloquées.
-1. Sélectionnez **appliqué à**, puis sélectionnez votre nom de domaine.
-1. Choisissez les domaines supplémentaires que vous possédez (par exemple, votre domaine onmicrosoft.com) auquel vous souhaitez que la règle s’applique. Sélectionnez **Ajouter**, puis **OK**.
+1. Go to the [admin center](https://admin.microsoft.com), and select **Setup**.
+1. Faites défiler vers le bas **pour renforcer la protection contre les menaces avancées.** Sélectionnez **Afficher,** **Gérer,** puis **Pièces jointes sécurisées ATP.**
+1. Sélectionnez votre règle de pièces jointes sécurisées, puis sélectionnez **l’icône** Modifier.
+1. Sélectionnez **les paramètres,** puis vérifiez que Bloquer est sélectionné.
+1. Faites défiler vers le bas. Sélectionnez **Activer la redirection,** puis entrez votre adresse e-mail ou l’adresse de la personne que vous souhaitez consulter les pièces jointes bloquées.
+1. Sélectionnez **Appliqué à,** puis sélectionnez votre nom de domaine.
+1. Choisissez les domaines supplémentaires que vous possédez (tels que onmicrosoft.com domaine) que vous souhaitez que la règle s’applique. Sélectionnez **Ajouter,** puis **OK**.
 1. Sélectionnez **Enregistrer**.
 
-Votre règle de pièces jointes approuvées ATP a été mise à jour.
+Votre règle de pièces jointes sécurisées ATP a été mise à jour.
 
-Maintenant que la protection est en place, vous ne pourrez pas ouvrir un fichier malveillant à partir d’Outlook, de OneDrive, de SharePoint ou de teams. Les fichiers concernés comportent des boucliers rouges en regard de ces derniers. Si un utilisateur tente d’ouvrir un fichier bloqué, il reçoit un message d’avertissement.
+Maintenant que la protection est en place, vous ne pourrez pas ouvrir un fichier malveillant à partir d’Outlook, OneDrive, SharePoint ou Teams. Les fichiers affectés auront des boucliers rouges à côté d’eux. Si une personne tente d’ouvrir un fichier bloqué, elle reçoit un message d’avertissement.
 
-Une fois que votre stratégie a été mise en place pendant un certain temps, accédez à la page des rapports pour voir ce qui a été analysé.
+Une fois votre stratégie en place pendant un certain temps, visitez la page Rapports pour voir ce qui a été analysé.

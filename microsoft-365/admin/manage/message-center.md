@@ -13,19 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: Obtenez une vue d’ensemble du Centre de messages Microsoft 365 et de son rôle dans la gestion des changements.
-ms.openlocfilehash: 6686fb8fe97cd38b432708c095b8d9545c33b6dd
-ms.sourcegitcommit: 31be333178b934c519f419656f4c3a53e1beffdc
+ms.openlocfilehash: 58dec5676e7f2fd0ef590761dfa1e745cbb6814d
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49881692"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926365"
 ---
 # <a name="message-center"></a>Centre de messages
 

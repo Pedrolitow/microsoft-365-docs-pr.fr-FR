@@ -1,5 +1,5 @@
 ---
-title: Créer une adresse de messagerie de groupe
+title: Créer une adresse e-mail de groupe
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,30 +16,31 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez comment créer une adresse de messagerie de groupe.
-ms.openlocfilehash: 4a0716d4289fc937e90f660cabe4b34b1540600d
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 8ebbd311e77b509b1d4c2b00ed59012a2e08399d
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702246"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927119"
 ---
-# <a name="create-a-group-email-address"></a>Créer une adresse de messagerie de groupe
+# <a name="create-a-group-email-address"></a>Créer une adresse e-mail de groupe
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2GCG3?autoplay=false]
 
-Lorsque vous créez un groupe, vous créez une adresse de messagerie centrale et un emplacement pour collaborer. Vous pouvez utiliser cette commande pour fournir une adresse de messagerie comme ventes ou informations que tout le monde peut voir et recevoir des courriers électroniques.
+Lorsque vous créez un groupe, vous créez une adresse de messagerie centrale et un lieu de collaboration. Vous pouvez l’utiliser pour fournir une adresse e-mail telle que des ventes ou des informations que tout le monde peut voir et à partir des e-mails.
 
 ## <a name="try-it"></a>Essayez !
 
-1. Dans Outlook, sous l’onglet  **Accueil** , sélectionnez  **nouveau groupe**.
-2. Dans la zone  **créer un groupe**  , entrez un nom de groupe, une adresse de messagerie plus courte, ainsi qu’une description.
-3. Ouvrez la liste déroulante confidentialité et choisissez  **privé**.
-4. Activez la case à cocher  **Envoyer le courrier électronique du groupe et les événements dans les boîtes de réception des membres**  .
-5. Sous  **Ajouter des membres** , sélectionnez les employés qui doivent recevoir les courriers électroniques, puis choisissez  **Ajouter des membres**.
-6. Sous l’onglet  **Accueil**  dans Outlook, sélectionnez  **paramètres de groupe**, puis **modifier le groupe**.
-7. Dans la zone  **modifier le groupe**  , activez la case à cocher Autoriser les  **utilisateurs extérieurs à l’organisation à envoyer un message électronique au groupe**  , puis choisissez  **OK**.
+1. Dans Outlook, sous **l’onglet Accueil,** choisissez **Nouveau groupe.**
+2. Dans la  **zone Créer un**  groupe, entrez un nom de groupe, une adresse de messagerie plus courte comme des informations et une description.
+3. Ouvrez la baisse de confidentialité et choisissez  **Privé**.
+4. Cochez la case Envoyer  **tous les e-mails et événements**  de groupe dans les boîtes de réception des membres.
+5. Sous **Ajouter des** membres, sélectionnez les employés que vous souhaitez recevoir les e-mails, puis choisissez Ajouter des **membres.**
+6. Sous **l’onglet** Accueil dans Outlook, sélectionnez **Paramètres du groupe,** puis **Modifier le groupe.**
+7. Dans la zone Modifier  **le groupe,** sélectionnez La case à cocher Laisser les personnes extérieures à l’organisation envoyer un e-mail à la case à cocher du groupe, puis choisissez **OK.**

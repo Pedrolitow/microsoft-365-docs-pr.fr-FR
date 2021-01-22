@@ -1,5 +1,5 @@
 ---
-title: Déplacer vos fichiers vers OneDrive
+title: Déplacer vos fichiers sur OneDrive
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,35 +16,36 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez comment déplacer vos fichiers vers OneDrive.
-ms.openlocfilehash: 8fa6439472389ad851dca3961a515ebfb967f402
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 5a708ba797dbb735c71f181fc287fb831004112b
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702138"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927213"
 ---
 # <a name="move-files-to-onedrive"></a>Déplacer des fichiers vers OneDrive
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/d74b083c-1f44-43ea-8a14-2e1fc600b341?autoplay=false]
 
-Une fois que vous vous êtes inscrit à Microsoft 365 Business Premium, vous&#39;n’avez pas besoin de copier vos fichiers de travail existants vers OneDrive entreprise. OneDrive est un emplacement idéal pour stocker des fichiers de travail personnels ou des fichiers professionnels sensibles dont vous souhaitez contrôler l’accès.
+Une fois que vous êtes abonné à Microsoft 365 Business Premium, vous&#39;copier vos fichiers de travail existants dans OneDrive Entreprise. OneDrive est un bon endroit pour stocker des fichiers de travail personnels ou des fichiers d’entreprise sensibles à qui vous souhaitez contrôler l’accès.
 
 ## <a name="try-it"></a>Essayez !
 
-1. Dans Windows, cliquez sur le bouton  **Démarrer** .
+1. À partir de Windows, sélectionnez  **le bouton** Démarrer.
 2. Recherchez OneDrive, puis sélectionnez-le.
-3. Entrez votre adresse de messagerie professionnelle.
-4. Sélectionnez  **connexion** , puis  **suivant**.
-5. Suivez le bref didacticiel, puis sélectionnez  **ouvrir mon dossier OneDrive**. Si vous utilisez également la version personnelle de OneDrive, vous&#39;ll la vois ici.
-6. Dans l’Explorateur de fichiers, accédez aux fichiers que vous souhaitez copier.
-7. Sélectionnez les fichiers, puis faites-les glisser dans votre dossier OneDrive. Des flèches circulaires bleues en regard de vos fichiers signifient qu’ils&#39;resynchroniser dans le Cloud. Lorsqu’ils&#39;réexécuter la synchronisation, les coches vertes sont affichées.
+3. Entrez votre adresse e-mail de travail.
+4. Sélectionnez **Se connectez,** puis sélectionnez **Suivant.**
+5. Allez dans le didacticiel court, puis **sélectionnez Ouvrir mon dossier OneDrive.** Si vous utilisez également la version personnelle de OneDrive,&#39;la verrez ici.
+6. Dans l’Explorateur de fichiers, allez aux fichiers que vous souhaitez copier.
+7. Sélectionnez les fichiers, puis faites-les glisser et déposez-les dans votre dossier OneDrive. Les flèches circulaires bleues en dehors de vos fichiers signifient qu'&#39;synchronisées avec le cloud. Lorsqu'&#39;ont terminé la synchronisation, des coches vertes s’affichent.
 
-En plus de travailler sur vos fichiers OneDrive en local, vous pouvez y accéder à partir de votre navigateur Web :
+En plus d’utiliser vos fichiers OneDrive localement, vous pouvez y accéder à partir de votre navigateur web :
 
-1. Dans votre navigateur Web, connectez-vous à office.com avec votre courrier électronique professionnel.
-2. Choisissez  **OneDrive**. Tous vos fichiers sont répertoriés et vous pouvez les utiliser dans le navigateur à partir de n’importe quel ordinateur.
+1. Dans votre navigateur web, connectez-vous office.com votre courrier électronique de travail.
+2. Choisissez **OneDrive.** Tous vos fichiers sont répertoriés et vous pouvez les utiliser dans le navigateur à partir de n’importe quel ordinateur.

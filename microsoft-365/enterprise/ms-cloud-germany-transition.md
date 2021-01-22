@@ -1,5 +1,5 @@
 ---
-title: Migration de Microsoft Cloud Deutschland vers Office 365 services dans les nouvelles régions de centre de connaissances allemand
+title: Migration de Microsoft Cloud Deutschland vers les services Office 365 dans les nouvelles régions de centres de données allemandes
 ms.author: andyber
 author: andybergen
 manager: laurawi
@@ -19,119 +19,119 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Récapitulatif : comprendre la migration de Microsoft Cloud Allemagne (Microsoft Cloud Deutschland) vers les services Office 365 dans les nouvelles régions de centre de données allemandes.'
-ms.openlocfilehash: 3587979c61434b77c38758e70903ee7028d70b9e
-ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
+ms.openlocfilehash: 28344f1249e4f51bb9802bf19ca7561182610a7c
+ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49709691"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49921588"
 ---
-# <a name="migration-from-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Migration de Microsoft Cloud Deutschland vers Office 365 services dans les nouvelles régions de centre de connaissances allemand
+# <a name="migration-from-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Migration de Microsoft Cloud Deutschland vers les services Office 365 dans les nouvelles régions de centres de données allemandes
 
 > [!NOTE]
-> Cet article s’applique uniquement aux clients Deutschland de Microsoft Cloud éligibles.
+> Cet article s’applique uniquement aux clients Microsoft Cloud Deutschland éligibles.
 
-En août 2018, Microsoft a annoncé notre intention de livrer la gamme Microsoft Cloud – Azure, Office 365, Dynamics 365 et Power Platform, des nouvelles régions de Cloud en Allemagne afin de mieux activer la transformation numérique de nos clients. En août 2019, nous avons annoncé que nous sommes désormais en train d’ouvrir les nouvelles régions dans le Cloud en Allemagne. Depuis, nous avons annoncé la disponibilité d’Azure, Office 365, Dynamics 365 et Power Platform.
+En août 2018, Microsoft a annoncé son intention de fournir le cloud Microsoft complet (Azure, Office 365, Dynamics 365 et Power Platform) à partir de nouvelles régions cloud en Allemagne afin de mieux activer la transformation numérique de nos clients. En août 2019, nous avons annoncé que nous sommes désormais en train d’ouvrir les nouvelles régions dans le Cloud en Allemagne. Nous avons depuis annoncé la disponibilité d’Azure, d’Office 365, de Dynamics 365 et de Power Platform.
 
-Les nouvelles régions sont conçues pour répondre aux besoins évolutifs des clients allemands avec une plus grande flexibilité, les services Cloud intelligents les plus récents et une connectivité complète à notre réseau Cloud des services Microsoft 365, ainsi qu’à la résidence des données du client en Allemagne.
+Les nouvelles régions sont conçues pour répondre aux besoins en constante évolution des clients allemands avec plus de souplesse, les derniers services cloud intelligents et une connectivité complète à notre réseau cloud de services Microsoft 365, ainsi qu’à la résidence des données client en Allemagne.
 
-## <a name="how-to-migrate-to-the-new-german-datacenter-regions"></a>Procédure de migration vers les nouvelles régions de centre de l’Allemagne
+## <a name="how-to-migrate-to-the-new-german-datacenter-regions"></a>Comment migrer vers les nouvelles régions de centres de données allemandes
 
-Les clients de Microsoft Cloud Deutschland existants peuvent désormais migrer leur engagement client Office 365, Dynamics 365 et les clients Power Platform. La première étape consiste à [opter pour une migration dirigée par Microsoft](https://aka.ms/office365germanymoveoptin) vers nos nouvelles régions de centre de données allemandes.
+Les clients Microsoft Cloud Deutschland existants peuvent désormais commencer à migrer leurs clients Office 365, Dynamics 365 Customer Engagement et Power Platform. La première étape consiste à [opter pour une migration dirigée par Microsoft](https://aka.ms/office365germanymoveoptin) vers nos nouvelles régions de centre de données allemandes.
 
-Pour les organisations qui optent pour l’approche basée sur Microsoft, les migrations sont censées commencer en début de 2021 et seront effectuées au plus tard le 29 octobre 2021. Suite à la migration, les données client principales et les abonnements sont transférés vers les nouvelles régions allemandes.
+Pour les organisations qui optent pour l’approche pilotée par Microsoft, les migrations doivent commencer au début de l’année 2021 et se terminer le 29 octobre 2021. Suite à la migration, les données client principales et les abonnements sont transférés vers les nouvelles régions allemandes.
 
-Cet article fournit une vue d’ensemble de l’approche basée sur Microsoft pour la migration, de la clarté sur les expériences pour les utilisateurs et les administrateurs pendant et après la migration, ainsi que les actions qui peuvent être requises pour les clients en fonction des charges de travail que vous utilisez.
+Cet article fournit une vue d’ensemble de l’approche pilotée par Microsoft pour la migration, de la clarté sur les expériences des utilisateurs et des administrateurs pendant et après la migration, et des actions qui peuvent être requises pour les clients en fonction des charges de travail que vous utilisez.
 
 Les services suivants seront migrés dans le cadre de l’approche dirigée par Microsoft :
 
 - Azure Active Directory (Azure AD)
-- Exchange Online
+- Exchange Online
 - Exchange Online Protection
 - SharePoint Online
 - OneDrive Entreprise
 
-- Skype entreprise Online\*\*
+- Skype Entreprise Online\*\*
 - Groupes Office 365
-- Dynamics 365/Power Platform\*\*\*
+- Dynamics 365 / Power Platform\*\*\*
 
-\*\*Lors de la migration de Microsoft Cloud Deutschland vers les régions de centre de développement allemand, les clients Skype entreprise Online sont transférés vers Microsoft Teams. Voir [Prise en main de votre mise à niveau de Microsoft Teams](https://aka.ms/SkypeToTeams-Home) pour plus d’informations.
+\*\*Pendant la migration de Microsoft Cloud Deutschland vers les régions de centres de données allemandes, les clients Skype Entreprise Online existants passeront à Microsoft Teams. Voir [Prise en main de votre mise à niveau de Microsoft Teams](https://aka.ms/SkypeToTeams-Home) pour plus d’informations.
 
-\*\*\*Les conditions préalables et l’impact de la migration de ces services sont décrits dans l’article de l' [engagement client Dynamics 365](https://aka.ms/d365ceoptin) .
+\*\*\*Les conditions préalables et l’impact de la migration pour ces services sont décrits dans l’article Dynamics [365 Customer engagement.](https://aka.ms/d365ceoptin)
 
-Office 365 Video va être mise hors services le 1er mars 2021. Si vous décidez de migrer votre client Office 365 vers les nouvelles régions du centre de données allemand, Office 365 Video ne sera plus prise en charge une fois la migration SharePoint Online terminée. Pour plus d’informations, consultez la rubrique [Microsoft Cloud Deutschland Timeline](https://docs.microsoft.com/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline).
+Office 365 Video va être mise hors services le 1er mars 2021. Si vous décidez de migrer votre client Office 365 vers les nouvelles régions du centre de données allemand, Office 365 Video ne sera plus prise en charge une fois la migration SharePoint Online terminée. Pour plus d’informations, consultez [la chronologie Microsoft Cloud Deutschland.](https://docs.microsoft.com/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline)
 
-## <a name="how-is-the-migration-organized"></a>Comment la migration est-elle organisée ?
+## <a name="how-is-the-migration-organized"></a>Comment la migration est-elle organisée ?
 
-Cette illustration représente les différents composants d’Office 365 et Dynamics 365 lors de la migration vers les nouveaux centres de calcul allemands.
+Cette figure montre les neuf phases de migration vers les nouveaux centres de données allemands.
 
-![Composants d’Office 365 et Dynamics 365 lors de la migration vers les nouveaux centres de centre d’Allemagne](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
+![Les neuf phases de migration vers les nouveaux centres de données allemands](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
 
-La migration est exécutée dans les phases qui commencent lorsque vous [optez pour la migration](https://aka.ms/office365germanymoveoptin). La plupart des phases de migration sont exécutées en tant qu’opérations de service principal avec une interaction client minimale requise et sont exécutées une phase après l’autre. Le centre de messages du centre d’administration 365 de Microsoft pour le processus de migration indique le début des tâches supplémentaires dirigées par le client et l’état de la migration globale. Exemple de tâches : mises à jour DNS gérées par le client, reconfiguration de l’installation hybride pour les clients hybrides Exchange ou migration Azure.
+Ces phases démarrent lorsque [vous optez pour la migration.](https://aka.ms/office365germanymoveoptin) La plupart des phases de migration sont exécutées en tant qu’opérations de service back end avec une interaction client minimale requise et sont exécutées une phase après l’autre. Le début des tâches supplémentaires dirigées par le client et l’état de migration global seront communiqués via le centre de messages du Centre d’administration Microsoft 365 pendant le processus de migration. Exemple de tâches : mises à jour DNS gérées par le client, reconfiguration de la configuration hybride pour les clients hybrides Exchange ou migration Azure.
 
-La migration ne commence pas immédiatement lorsque l’abonnement est exécuté. Votre organisation est ajoutée à la liste des clients qui sont planifiés pour une migration ultérieure. Vous pouvez commencer les phases de pré-travail dès que celles-ci sont essentielles pour garantir la réussite de la migration et de l’utilisation :
+La migration ne commence pas immédiatement lorsque l’option d’opt-in se produit. Votre organisation est ajoutée à la liste des locataires qui sont programmés pour une migration ultérieure. Vous pouvez commencer les phases préalables au travail dès maintenant, car elles sont essentielles pour garantir la réussite de la migration et de l’utilisation une fois l’opération terminée :
 
 - [Actions et impacts des phases de migration](ms-cloud-germany-transition-phases.md)
 - [Pré-travail supplémentaire](ms-cloud-germany-transition-add-pre-work.md)
 
-Une semaine avant le début de la migration client, vous recevrez une notification dans le service du centre de messages comme un avertissement final indiquant que tous les éléments prérequis doivent être terminés.
+Une semaine avant le début de la migration des clients, vous recevrez un avertissement final dans le service centre de messages vous avertissant que toutes les conditions préalables doivent être terminées.
 
-La migration va déplacer votre client Azure AD du service d’Office Azure Allemagne vers l’instance de services Office 365 d’Azure AD dans la région de l’UE.
+La migration déplace votre client Azure AD du service Azure AD allemand souverain vers l’instance des services Office 365 d’Azure AD dans la région de l’UE.
 
-La phase suivante est la migration de vos abonnements et licences utilisateur&#39;s de client depuis des produits spécifiques en Allemagne vers des produits globaux.
+La phase suivante consiste à migrer vos abonnements&#39;client et les licences utilisateur des produits propres à l’Allemagne vers des produits globaux.
 
-Une fois toutes les étapes terminées, y compris la migration Azure client, votre client est finalisé dans le service Office 365 services et la migration est marquée comme étant terminée. À ce stade, la mise à jour finale du centre de messages vous est fournie. Le client est désormais une organisation Office 365 complète.
+Une fois toutes les étapes terminées, y compris la migration azure du client, votre client est finalisé dans le service de services Office 365 et la migration est marquée comme terminée. À ce stade, la mise à jour finale du centre de messages vous est fournie. Le client est désormais une organisation Office 365 entièrement globale.
 
-Vous êtes informé de la progression de la migration avec les publications du centre de messages. Les publications se produisent à des échéances spécifiques et fournissent des instructions sur la progression d’une étape ainsi que des informations importantes que les clients peuvent utiliser en fonction des exigences de processus. Les notifications du centre de messages sont fournies aux étapes suivantes :
+Vous êtes informé de l’avancement de la migration avec les publications du Centre de messages. Les publications auront lieu à des jalons spécifiques et fourniront des conseils sur la progression d’une étape, ainsi que des informations importantes sur les clients sur la base des exigences de processus. Les notifications du centre de messages sont fournies aux jalons suivants :
 
-- Début de la migration (5 jours ouvrés avant le début de la migration Azure AD)
-- Migration Azure AD terminée
+- Début de la migration (5 jours ou jours ou moins avant le début de la migration Azure AD)
+- Migration d’Azure AD terminée
 - Migration des abonnements et des licences terminée
 - Migration SharePoint terminée
 - Migration Exchange terminée
-- Skype entreprise achevé
-- Dynamics terminée
+- Skype Entreprise terminé
+- Dynamics complete
 - Power BI terminé
-- Le basculement final des services est terminé.
+- Le cutover final des services est terminé
 
-## <a name="moving-to-the-new-german-datacenter-regions"></a>Passage aux nouvelles régions de centre de l’Allemagne
+## <a name="moving-to-the-new-german-datacenter-regions"></a>Déplacement vers les nouvelles régions de centres de données allemandes
 
-Les clients Microsoft Cloud Deutschland existants peuvent désormais migrer leur engagement client Office 365, Dynamics 365 et Power Platform Services. La première étape consiste à [opter pour une migration dirigée par Microsoft](https://aka.ms/office365germanymoveoptin) vers nos nouvelles régions de centre de données allemandes. Lorsque vous renouvelez votre abonnement, vous vous abonnez automatiquement à une migration assistée par Microsoft. Lorsque cela s’est produit, Microsoft communique aux administrateurs clients client les courriers électroniques et le centre de messages du centre d’administration Microsoft 365. Toutefois, si vous préférez démarrer le processus maintenant, vous pouvez vous [inscrire](https://aka.ms/office365germanymoveoptin) directement dans le centre d’administration Microsoft 365 dès aujourd’hui. Les migrations sont censées commencer en début de 2021 et seront effectuées au plus tard le 29 octobre 2021. 
+Les clients Microsoft Cloud Deutschland existants peuvent désormais commencer à migrer leurs services Office 365, Dynamics 365 Customer Engagement et Power Platform. La première étape consiste à [opter pour une migration dirigée par Microsoft](https://aka.ms/office365germanymoveoptin) vers nos nouvelles régions de centre de données allemandes. Lorsque vous renouvelez votre abonnement, vous optez automatiquement pour une migration assisté par Microsoft. Microsoft informera les administrateurs clients par courrier électronique et dans le centre de messages du Centre d’administration Microsoft 365 lorsque cela s’est produit. Toutefois, si vous préférez démarrer [](https://aka.ms/office365germanymoveoptin) le processus maintenant, vous pouvez vous y rendre directement dès aujourd’hui dans le Centre d’administration Microsoft 365. Les migrations doivent commencer au début de 2021 et se terminer le 29 octobre 2021. 
 
-À la suite de la migration, les données client principales et les abonnements sont déplacés vers les nouvelles régions de centre de données allemand.
+Suite à la migration, les données client essentielles et les abonnements sont déplacés vers les nouvelles régions de centres de données allemandes.
 
 ## <a name="how-to-prepare-for-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>Comment préparer la migration vers les services Office 365 dans les nouvelles régions de centre de données allemandes
 
-La première étape consiste à informer Microsoft afin de pouvoir migrer votre abonnement et vos données à partir de Microsoft Cloud Deutschland vers les services Office 365 dans les nouvelles régions de centre de données allemand. Consultez le processus d' [abonnement](https://aka.ms/office365germanymoveoptin) pour obtenir des instructions et notez les éléments suivants :
+La première étape consiste à avertir Microsoft afin que nous ions votre autorisation pour migrer votre abonnement et vos données de Microsoft Cloud Deutschland vers les services Office 365 dans les nouvelles régions de centres de données allemandes. Pour obtenir des [instructions, reportez-vous](https://aka.ms/office365germanymoveoptin) au processus d’opt-in et notez que :
 
-- Tous les clients qui migrent doivent vérifier la connectivité aux [URL et aux adresses IP office 365](urls-and-ip-address-ranges.md)des Services Office 365, qui incluent les nouvelles régions de centre de l’Allemagne. Inaction peut entraîner une défaillance du service et du client.
-- Passez en revue la liste des activités [préprofessionnelles](ms-cloud-germany-transition-add-pre-work.md) pour vous assurer que votre organisation est informée et prête aux modifications.
-- Vous devez passer en revue la description du service de plateforme Office 365 afin de comprendre les fonctionnalités et services qui seront mis à la disposition de votre organisation suite à la migration vers la région allemande.
-- Les abonnements à la version d’évaluation ne seront pas migrés et bloqueront la migration de tous les abonnements payants. Avant de commencer la migration, vous devez annuler tous les essais ou les convertir en abonnements payants.
+- Tous les clients en migration doivent vérifier la connectivité aux URL et [adresses IP Office 365 Services Office 365,](urls-and-ip-address-ranges.md)qui incluent les nouvelles régions de centres de données allemandes. L’inaction peut entraîner une défaillance du service et du client.
+- Examinez la liste des [activités](ms-cloud-germany-transition-add-pre-work.md) préalables au travail pour vous assurer que votre organisation est informée et préparée pour les modifications.
+- Vous devez consulter la description du service de la plateforme Office 365 pour comprendre les fonctionnalités et services qui seront disponibles pour votre organisation après la migration vers la région allemande.
+- Les abonnements d’essai ne seront pas migrés et bloqueront la migration de tous les abonnements payants. Vous devez annuler les essais ou les convertir en abonnements payants avant le début de la migration.
 
-## <a name="where-do-i-go-from-here"></a>Où puis-je aller ?
+## <a name="where-do-i-go-from-here"></a>Où puis-je aller à partir d’ici ?
 
-Consultez la section questions fréquemment posées ci-dessous.
+Examinez la section Questions fréquemment posées ci-après.
 
 ## <a name="frequently-asked-questions"></a>Foire aux questions
 
 ### <a name="is-migration-required"></a>La migration est-elle obligatoire ?
 
-Microsoft propose la migration client Office 365 de Microsoft Cloud Deutschland vers Office 365 services dans les nouvelles régions de centre de connaissances allemand sans frais supplémentaires. Bien que nous vous recommandons vivement d’opter pour une migration vers les nouvelles régions de centre de contenu allemand, nous continuerons à fournir les mises à jour de sécurité nécessaires à la région Deutschland du Cloud Microsoft.
+Microsoft offre la migration du client Office 365 de Microsoft Cloud Deutschland vers les services Office 365 dans les nouvelles régions de centres de données allemandes sans frais supplémentaires. Même si nous vous recommandons vivement d’opter pour la migration vers les nouvelles régions de centres de données allemandes, nous continuerons à fournir les mises à jour de sécurité nécessaires à la région Microsoft Cloud Deutschland.
 
-Services Office 365 dans les nouvelles régions de centre de connaissances allemand :
+Services Office 365 dans les nouvelles régions de centres de données allemandes :
 
 - Ils offrent des tarifs compétitifs pour [Azure](https://azure.microsoft.com/pricing/calculator/), [Office 365](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans), [Dynamics 365 Customer engagement](https://dynamics.microsoft.com/pricing/)et [Power BI](https://powerbi.microsoft.com/pricing/).
-- Sont connectés au réseau mondial de Microsoft&#39;, qui offrent des centaines de sites Edge réseau, des emplacements d’homologation et des points de sortie pour offrir une expérience utilisateur robuste n’importe où dans le monde.
+- Sont connectés au réseau global de Microsoft&#39;, offrant des centaines de sites edge réseau, d’emplacements d’homologue et de points de sortie pour offrir une expérience utilisateur robuste partout dans le monde.
 - Ils vous aident à répondre aux exigences de résidence des données client en Allemagne.
-- Offrir notre offre de Cloud internationale complète avec les versions les plus récentes de nos services et de nouvelles fonctionnalités, notamment Microsoft teams et multi-géo dans Office 365. Ils permettent de comparer les produits par région pour [Azure](https://azure.microsoft.com/global-infrastructure/services/?products=all&amp;regions=germany-non-regional,germany-central,germany-north,germany-northeast,germany-west-central), [Office 365](o365-data-locations.md) et [Dynamics 365](https://docs.microsoft.com/dynamics365/get-started/availability).
+- Proposez notre offre cloud globale complète avec les dernières versions de nos services et les nouvelles fonctionnalités, notamment Microsoft Teams et Multi-Géo dans Office 365. Ils permettent de comparer les produits par région pour [Azure](https://azure.microsoft.com/global-infrastructure/services/?products=all&amp;regions=germany-non-regional,germany-central,germany-north,germany-northeast,germany-west-central), [Office 365](o365-data-locations.md) et [Dynamics 365](https://docs.microsoft.com/dynamics365/get-started/availability).
 - Ils offrent toutes les fonctionnalités, une sécurité de qualité professionnelle et des fonctionnalités complètes pour aider les clients à respecter les exigences de conformité et de réglementation.
 - Ils sont accessibles via les contrats de services en ligne existants.
 
 ### <a name="what-is-the-service-availability-between-the-different-office-365-cloud-service-offerings"></a>Quelle est la disponibilité du service entre les différentes offres de service Cloud d’Office 365 ?
 <h2 id="serv-avail"></h2>
 
-Les 15 services suivants sont disponibles dans l’offre de service Cloud Deutschland Cloud de Microsoft Cloud. Nous n’ajoutons pas de nouveaux services à Microsoft Cloud Deutschland.
+Les 15 services suivants sont disponibles dans l’offre de services cloud Microsoft Cloud Deutschland. Nous n’ajoutons pas de nouveaux services à Microsoft Cloud Deutschland.
 
 1. Exchange Online
 2. Customer Lockbox (Exchange Online)
@@ -149,10 +149,10 @@ Les 15 services suivants sont disponibles dans l’offre de service Cloud Deutsc
 14. Office 365 Pro Plus
 15. Outlook Mobile
 
-Il y a actuellement 39 services disponibles dans le cadre des services 365 Office dans les nouvelles régions de centre de temps allemand. De nouvelles fonctionnalités et de nouveaux services sont régulièrement disponibles avec les services Office 365 globaux.
+Il existe actuellement 39 services disponibles dans le cadre des services Office 365 dans les nouvelles régions de centres de données allemandes. De nouvelles fonctionnalités et de nouveaux services sont régulièrement disponibles avec les services Office 365 globaux.
 
 1. Exchange Online
-2. Référentiel sécurisé du client pour Exchange Online
+2. Customer Lockbox pour Exchange Online
 3. Groupes Microsoft 365
 4. Profil Delve
 5. MyAnalytics
@@ -164,10 +164,10 @@ Il y a actuellement 39 services disponibles dans le cadre des services 365 Offic
 11. Protection des informations pour Office 365 
 12. Gouvernance des données avancée
 13. SharePoint Online
-14. Référentiel sécurisé du client pour SharePoint Online
+14. Customer Lockbox pour SharePoint Online
 15. OneDrive Entreprise
 16. Microsoft Stream
-17. Skype entreprise (migration vers Microsoft teams pendant la migration)
+17. Skype Entreprise (migre vers Microsoft Teams pendant la migration)
 18. PBX cloud
 19. Conférence sur réseau téléphonique commuté
 20. Appel sur réseau téléphonique commuté
@@ -178,11 +178,11 @@ Il y a actuellement 39 services disponibles dans le cadre des services 365 Offic
 25. Sway
 26. Microsoft 365 Apps
 27. Outlook Mobile
-28. Enterprise Mobility + Security (EMS) E3 (Azure AD Premium P1, Intune et le service RMS)
+28. Enterprise Mobility + Security (EMS) E3 (Azure AD Premium P1, Intune et Rights Management Service)
 29. Yammer Entreprise
 30. Microsoft Forms
-31. Automate d’alimentation pour Office 365
-32. Agents virtuels de puissance pour Office 365
+31. Power Automate pour Office 365
+32. Agents power virtual pour Office 365
 33. PowerApps pour Office 365
 34. Microsoft Bookings
 35. À faire
@@ -195,114 +195,114 @@ Il y a actuellement 39 services disponibles dans le cadre des services 365 Offic
 
 **Azure**
 
-Si vous êtes un client Azure uniquement, vous pouvez commencer à [migrer](https://docs.microsoft.com/azure/germany/germany-migration-main) vos ressources Azure vers une autre région dès aujourd’hui. 
+Si vous êtes un client Azure [](https://docs.microsoft.com/azure/germany/germany-migration-main) uniquement, vous pouvez commencer à migrer vos ressources Azure vers une autre région dès aujourd’hui. 
 
-Si vous disposez d’Azure avec Office 365, Dynamics 365 ou Power BI, vous devez suivre le processus de migration pour garantir la réussite de la migration AzureAD avant de commencer la migration Azure auto-dirigée. Vous devez terminer la migration Azure avant la fermeture du service afin de maintenir vos charges de travail Azure avec votre AzureAD et l’organisation Office 365.
+Si vous avez Azure avec Office 365, Dynamics 365 ou Power BI, vous devez suivre le processus de migration pour garantir la réussite de la migration AzureAD avant de commencer la migration Azure auto-dirigée. Vous devez effectuer la migration Azure avant la fermeture du service afin de maintenir vos charges de travail Azure avec votre organisation AzureAD et Office 365.
 
 **Office 365**
 
-[Optez](https://aka.ms/office365germanymoveoptin) pour la migration dirigée par Microsoft aujourd’hui. Lorsque nous sommes prêts à démarrer votre migration, nous vous informerons via le centre de messages dans le centre d’administration 365 de Microsoft.
+[Optez](https://aka.ms/office365germanymoveoptin) pour la migration dirigée par Microsoft aujourd’hui. Lorsque nous sommes prêts à commencer votre migration, nous vous en informons via le Centre de messages dans le Centre d’administration Microsoft 365.
 
 **Dynamics 365 et Power BI**
 
-Abonnez-vous à la migration orientée Microsoft pour l' [engagement client de Dynamics 365](https://aka.ms/D365ceOptIn) et [Power bi](https://aka.ms/PBIOptIn) dès aujourd’hui. Lorsque nous serons prêts à démarrer votre migration, nous vous informerons via le centre de messages dans le Centre d’administration Microsoft 365.
+Optez pour la migration pilotée par Microsoft pour [Dynamics 365 Customer Engagement](https://aka.ms/D365ceOptIn) et Power [BI](https://aka.ms/PBIOptIn) aujourd’hui. Lorsque nous serons prêts à démarrer votre migration, nous vous informerons via le centre de messages dans le Centre d’administration Microsoft 365.
 
-### <a name="will-the-price-change-for-the-office-365-services-that-i-use"></a>Le tarif sera-t-il modifié pour les services Office 365 que j’utilise ?
+### <a name="will-the-price-change-for-the-office-365-services-that-i-use"></a>Le prix change-t-il pour les services Office 365 que j’utilise ?
 
-Oui. Les tarifs dans les régions de nuage globales de Microsoft&#39;(y compris les nouvelles régions de centres de informations) sont généralement moins élevés.
+Oui. Les tarifs dans les&#39;cloud mondial de Microsoft (y compris les nouvelles régions de centres de données) sont généralement plus bas.
 
-### <a name="during-the-subscription-migration-what-skus-and-licenses-will-be-applied-to-my-organization-and-users"></a>Lors de la migration des abonnements, quelles références et licences seront appliquées à mon organisation et à ses utilisateurs ?
+### <a name="during-the-subscription-migration-what-skus-and-licenses-will-be-applied-to-my-organization-and-users"></a>Pendant la migration de l’abonnement, quelles sont les SSO et les licences qui seront appliquées à mon organisation et aux utilisateurs ?
 
-Lors de la migration de Microsoft Cloud Deutschland vers les services Office 365, les références SKU propres au service d’Allemagne sont remplacées par des versions globales du même SKU ou similaires. Dans la plupart des cas, le SKU dans Office 365 services est le même, cependant, il n’y a pas assez de remplacements lorsque le SKU en Allemagne n’est plus disponible dans les services Office 365. Si vous souhaitez mettre à jour le SKU affecté à votre organisation une fois la migration terminée, contactez votre vendeur pour ajouter ou modifier les services affectés.
+Pendant la migration de Microsoft Cloud Deutschland vers les services Office 365, les références SKU spécifiques au service allemand sont remplacées par des versions globales de la même référence SKU ou d’une référence similaire. Dans la plupart des cas, la référence (SKU) dans les services Office 365 est identique, mais il existe peu de remplacements où la référence (SKU) en Allemagne n’est plus disponible dans les services Office 365. Si vous souhaitez mettre à jour la référence (SKU) attribuée à votre organisation une fois la migration terminée, contactez votre vendeur pour ajouter ou modifier les services affectés.
 
-| Microsoft Cloud Deutschland-SKU du produit (DE) | Microsoft Cloud global-produit SKU (WW) |
+| Microsoft Cloud Deutschland - Product SKU (DE) | Microsoft Cloud Global - Référence du produit (WW) |
 | --- | --- |
-| Client Lockbox \_ de (Lockbox \_ de) | Référentiel sécurisé (LOCKBOX) |
-| Dynamics 365 Enterprise Edition-stockage de base de données supplémentaire \_ (CRMSTORAGE \_ de) | Dynamics 365 Enterprise Edition-stockage de base de données supplémentaire (CRMSTORAGE) |
-| Dynamics 365 Enterprise Edition-instance de non-production supplémentaire \_ de (CRMTESTINSTANCE \_ de) | Dynamics 365 Enterprise Edition-instance de non-production supplémentaire (CRMTESTINSTANCE) |
-| Dynamics 365 pour le service clientèle Enterprise Edition \_ de (DYN365 \_ Enterprise \_ client \_ service \_ de) | Dynamics 365 pour le service clientèle Enterprise Edition ( \_ \_ service client entreprise DYN365 \_ ) |
-| Dynamics 365 pour Sales Enterprise Edition \_ de (DYN365 \_ Enterprise \_ Sales \_ de) | Dynamics 365 pour Sales Enterprise Edition (DYN365 \_ Enterprise \_ Sales) |
-| Dynamics 365 pour les membres de l’équipe Enterprise Edition \_ de (DYN365 \_ entreprise \_ \_ membres de l’équipe \_ de) | Dynamics 365 pour les membres de l’équipe Enterprise Edition (membres de l' \_ équipe DYN365 entreprise \_ \_ ) |
-| Dynamics 365 plan 1 Enterprise Edition \_ de (DYN365 \_ Enterprise \_ PLAN1 \_ de) | Dynamics 365 plan 1 Enterprise Edition (DYN365 \_ Enterprise \_ PLAN1) |
-| Services ECAL (EOA, EOP, DLP) \_ de (ECAL \_ services \_ de) | Services ECAL (EOA, EOP, DLP) (ECAL \_ Services) |
-| Enterprise Mobility + Security E3 \_ de (EMS \_ de) | Enterprise Mobility + Security E3 (EMS) |
-| Exchange Online (plan 1) \_ de (EXCHANGESTANDARD \_ de) | Exchange Online (plan 1) (EXCHANGESTANDARD) |
-| Exchange Online (plan 2) \_ de (EXCHANGEENTERPRISE \_ de) | Exchange Online (plan 2) (EXCHANGEENTERPRISE) |
-| Archivage Exchange Online pour Exchange Online \_ de (EXCHANGEARCHIVE \_ addon \_ de) | Archivage Exchange Online pour Exchange Online (EXCHANGEARCHIVE \_ addon) |
-| Archivage Exchange Online pour Exchange Server \_ de (EXCHANGEARCHIVE \_ de) | Archivage Exchange Online pour Exchange Server (EXCHANGEARCHIVE) |
-| Exchange Online Essentials \_ de (Exchange \_ S \_ Essentials \_ de) | Exchange Online Essentials (EXCHANGE \_ S \_ Essentials) |
-| Exchange Online Kiosk \_ de (EXCHANGEDESKLESS \_ de) | Borne Exchange Online (EXCHANGEDESKLESS) |
-| Exchange Online Protection \_ de (EOP \_ entreprise \_ de) | Exchange Online Protection (EOP \_ Enterprise) |
-| Microsoft 365 Business standard (Office 365 \_ Business \_ Premium) | Microsoft 365 Business standard (Office 365 \_ Business \_ Premium) |
-| Instance de Microsoft Dynamics CRM Online \_ de (CRMINSTANCE \_ de) | Instance de Microsoft Dynamics CRM Online (CRMINSTANCE) |
-| Office 365 a1 pour Université \_ de (STANDARDWOFFPACK \_ universitaire \_ de) | Office 365 a1 pour facultés (STANDARDWOFFPACK \_ universitaire) |
-| Office 365 a1 pour étudiants \_ de (STANDARDWOFFPACK \_ Student \_ de) | Office 365 a1 pour étudiants (STANDARDWOFFPACK \_ Student) |
-| Office 365 Advanced Compliance \_ de (EQUIVIO \_ Analytics \_ de) | Microsoft 365 E5 conformité ( \_ conformité de la protection des informations \_ ) |
-|Microsoft Defender pour Office 365 (plan 1) \_ de (ATP \_ Enterprise \_ de) |Microsoft Defender pour Office 365 (plan 1) (ATP \_ ) |
-| Office 365 Business Essentials \_ de (O365 \_ Business \_ Essentials \_ de) | Microsoft 365 Business Basic (O365 \_ Business \_ Essentials) |
-| Office 365 Business Premium \_ de (O365 \_ Business \_ Premium \_ de) | Microsoft 365 Business standard (Office 365 \_ Business \_ Premium) |
-| Office 365 Business \_ de (O365 \_ Business \_ de) | Microsoft 365 apps pour les entreprises (Office 365 \_ entreprise) |
-| Office 365 E1 \_ de (STANDARDPACK \_ de) | Office 365 E1 (STANDARDPACK) |
-| Office 365 E3 sans ProPlus \_ de (ENTERPRISEPACKWITHOUTPROPLUS \_ de) | Office 365 E3 sans ProPlus (ENTERPRISEPACKWITHOUTPROPLUS) |
-| Office 365 E3 \_ de (ENTERPRISEPACK \_ de) | Office 365 E3 (ENTERPRISEPACK) |
-| Office 365 entreprise E1 \_ de (STANDARDPACK \_ de) | Office 365 entreprise E1 (STANDARDPACK) |
-| Office 365 entreprise E3 \_ de (ENTERPRISEPACK \_ de) | Office 365 entreprise E3 (ENTERPRISEPACK) |
-| Office 365 extra File Storage of \_ (SHAREPOINTSTORAGE \_ de) | Stockage de fichiers supplémentaire Office 365 (SHAREPOINTSTORAGE) |
-| Office 365 F1 \_ de (DESKLESSPACK \_ de) | Office 365 F1 (DESKLESSPACK) |
-| Office 365 ProPlus pour Université \_ de (OFFICESUBSCRIPTION \_ universitaire \_ de) | Office 365 ProPlus pour les enseignants (OFFICESUBSCRIPTION \_ universitaire) |
-| Office 365 ProPlus pour étudiants \_ de (OFFICESUBSCRIPTION \_ Student \_ de) | Office 365 ProPlus pour étudiants (OFFICESUBSCRIPTION \_ Student) |
-| Office 365 ProPlus \_ de (OFFICESUBSCRIPTION \_ de) | Office 365 ProPlus (OFFICESUBSCRIPTION) |
-| OneDrive entreprise (plan 1) \_ de (WACONEDRIVESTANDARD \_ de) | OneDrive entreprise (plan 1) (WACONEDRIVESTANDARD) |
-| OneDrive entreprise (plan 2) \_ de (WACONEDRIVEENTERPRISE \_ de) | OneDrive entreprise (plan 2) (WACONEDRIVEENTERPRISE) |
-| Power BI Pro for Université \_ de (Power \_ bi \_ Pro \_ Faculté \_ de) | Power BI Pro for Université (Université de POWER \_ bi \_ Pro \_ ) |
-| Power BI Pro \_ de (Power \_ bi \_ Pro \_ de) | Power BI Pro (POWER \_ bi \_ Pro) |
-| Project Online Essentials \_ de (PROJECTESSENTIALS \_ de) | Project Online Essentials (PROJECTESSENTIALS) |
-| Project Online Premium \_ de (PROJECTPREMIUM \_ de) | Project Online Premium (PROJECTPREMIUM) |
-| Project Online professionnel \_ de (PROJECTPROFESSIONAL \_ de) | Project Online professionnel (PROJECTPROFESSIONAL) |
-| Plan de projet 3 \_ de (PROJECTPROFESSIONAL \_ de) | Plan de projet 3 (PROJECTPROFESSIONAL) |
-| Office 365 E4 \_ de (ENTERPRISEWITHSCAL \_ de) | Office 365 E3 (ENTERPRISEPACK) |
-| SharePoint Online (plan 1) \_ de (SHAREPOINTSTANDARD \_ de) | SharePoint Online (plan 1) (SHAREPOINTSTANDARD) |
-| SharePoint Online (plan 2) \_ de (SHAREPOINTENTERPRISE \_ de) | SharePoint Online (plan 2) (SHAREPOINTENTERPRISE) |
-| Skype entreprise Online (plan 1) \_ de (MCOIMP \_ de) | Office 365 E1 (STANDARDPACK) |
-| Skype entreprise Online (plan 1) \_ de (MCOIMP \_ de) | Skype entreprise Online (plan 1) (MCOIMP) |
-| Skype entreprise Online (plan 2) \_ de (MCOSTANDARD \_ de) | Skype entreprise Online (plan 2) (MCOSTANDARD) |
-| Skype entreprise plus licence d’accès client \_ de (MCOPLUSCAL \_ de) | Skype entreprise plus CAL (MCOPLUSCAL) |
-| Visio Online plan 1 pour Université \_ de (VISIOONLINE \_ PLAN1 \_ FAC \_ de) | Visio Online plan 1 pour facultés (VISIOONLINE \_ PLAN1 \_ FAC) |
-| Visio Online plan 1 \_ de (VISIOONLINE \_ PLAN1 \_ de) | Visio Online plan 1 (VISIOONLINE \_ PLAN1) |
-| Visio Online plan 2 pour Université \_ de (VISIOCLIENT \_ universitaire \_ de) | Visio Online plan 2 pour les enseignants (VISIOCLIENT \_ universitaire) |
-| Visio Online plan 2 \_ de (VISIOCLIENT \_ de) | Visio Online plan 2 (VISIOCLIENT) |
-| Visio plan 1 \_ de (VISIOONLINE \_ PLAN1 \_ de) | Visio plan 1 (VISIOONLINE \_ PLAN1) |
-| Visio plan 2 \_ de (VISIOCLIENT \_ de) | Visio plan 2 (VISIOCLIENT) |
+| Customer Lockbox \_ DE (LOCKBOX \_ DE) | Customer Lockbox (LOCKBOX) |
+| Dynamics 365 Enterprise Edition - Stockage de \_ base de données supplémentaire (CRMSTORAGE \_ DE) | Dynamics 365 Enterprise Edition - Stockage de base de données supplémentaire (CRMSTORAGE) |
+| Dynamics 365 Enterprise Edition - Instance de non-production \_ supplémentaire DE (CRMTESTINSTANCE \_ DE) | Dynamics 365 Enterprise Edition - Instance de non-production supplémentaire (CRMTESTINSTANCE) |
+| Dynamics 365 for Customer Service Enterprise Edition \_ DE (DYN365 \_ ENTERPRISE \_ CUSTOMER \_ SERVICE \_ DE) | Dynamics 365 for Customer Service Enterprise Edition (DYN365 \_ ENTERPRISE \_ CUSTOMER \_ SERVICE) |
+| Dynamics 365 for Sales Enterprise Edition \_ DE (DYN365 \_ ENTERPRISE \_ SALES \_ DE) | Dynamics 365 for Sales Enterprise Edition (DYN365 \_ ENTERPRISE \_ SALES) |
+| Dynamics 365 for Team Members Enterprise Edition \_ DE (DYN365 \_ ENTERPRISE \_ TEAM \_ MEMBERS \_ DE) | Dynamics 365 for Team Members Enterprise Edition (DYN365 \_ ENTERPRISE \_ TEAM \_ MEMBERS) |
+| Dynamics 365 Plan 1 Enterprise Edition \_ DE (DYN365 \_ ENTERPRISE \_ PLAN1 \_ DE) | Dynamics 365 Plan 1 Enterprise Edition (DYN365 \_ ENTERPRISE \_ PLAN1) |
+| ECAL Services (EOA, EOP, DLP) \_ DE (ECAL \_ SERVICES \_ DE) | ECAL Services (EOA, EOP, DLP) (ECAL \_ SERVICES) |
+| Enterprise Mobility + Security E3 \_ DE (EMS \_ DE) | Enterprise Mobility + Security E3 (EMS) |
+| Exchange Online (Plan 1) \_ DE (EXCHANGESTANDARD \_ DE) | Exchange Online (Plan 1) (EXCHANGESTANDARD) |
+| Exchange Online (Plan 2) \_ DE (EXCHANGEENTERPRISE \_ DE) | Exchange Online (Plan 2) (EXCHANGEENTERPRISE) |
+| Archivage Exchange Online pour Exchange Online \_ DE (EXCHANGEARCHIVE \_ ADDON \_ DE) | Archivage Exchange Online exchange online (EXCHANGEARCHIVE \_ ADDON) |
+| Archivage Exchange Online for Exchange Server \_ DE (EXCHANGEARCHIVE \_ DE) | Archivage Exchange Online for Exchange Server (EXCHANGEARCHIVE) |
+| Exchange Online Essentials \_ DE (EXCHANGE \_ S \_ ESSENTIALS \_ DE) | Exchange Online Essentials (EXCHANGE \_ S \_ ESSENTIALS) |
+| Exchange Online Kiosk \_ DE (EXCHANGEDESKLESS \_ DE) | Exchange Online Kiosk (EXCHANGEDESKLESS) |
+| Exchange Online Protection \_ DE (EOP \_ ENTERPRISE \_ DE) | Exchange Online Protection (EOP \_ ENTERPRISE) |
+| Microsoft 365 Business Standard (O365 \_ BUSINESS \_ PREMIUM) | Microsoft 365 Business Standard (O365 \_ BUSINESS \_ PREMIUM) |
+| Microsoft Dynamics CRM Online Instance \_ DE (CRMINSTANCE \_ DE) | Microsoft Dynamics CRM Online Instance (CRMINSTANCE) |
+| Office 365 A1 pour les enseignants \_ DE (STANDARDWOFFPACK \_ FACULTY \_ DE) | Office 365 A1 pour les enseignants (STANDARDWOFFPACK \_ FACULTY) |
+| Office 365 A1 pour les étudiants \_ DE (STANDARDWOFFPACK \_ STUDENT \_ DE) | Office 365 A1 pour les étudiants (STANDARDWOFFPACK \_ STUDENT) |
+| Office 365 Advanced Compliance \_ DE (EQUIVIO \_ ANALYTICS \_ DE) | Conformité Microsoft 365 E5 (CONFORMITÉ \_ DE LA PROTECTION DES \_ INFORMATIONS) |
+|Microsoft Defender pour Office 365 (Plan 1) \_ DE (ATP \_ ENTERPRISE \_ DE) |Microsoft Defender pour Office 365 (Plan 1) (ATP \_ ENTREPRISE) |
+| Office 365 Business Essentials \_ DE (O365 \_ BUSINESS \_ ESSENTIALS \_ DE) | Microsoft 365 Business Basic (O365 \_ BUSINESS \_ ESSENTIALS) |
+| Office 365 Business Premium \_ DE (O365 \_ BUSINESS \_ PREMIUM \_ DE) | Microsoft 365 Business Standard (O365 \_ BUSINESS \_ PREMIUM) |
+| Office 365 Business \_ DE (O365 \_ BUSINESS \_ DE) | Applications Microsoft 365 pour les entreprises (O365 \_ BUSINESS) |
+| Office 365 E1 \_ DE (STANDARDPACK \_ DE) | Office 365 E1 (STANDARDPACK) |
+| Office 365 E3 sans ProPlus \_ DE (ENTERPRISEPACKWITHOUTPROPLUS \_ DE) | Office 365 E3 sans ProPlus (ENTERPRISEPACKWITHOUTPROPLUS) |
+| Office 365 E3 \_ DE (ENTERPRISEPACK \_ DE) | Office 365 E3 (ENTERPRISEPACK) |
+| Office 365 Entreprise E1 \_ DE (STANDARDPACK \_ DE) | Office 365 Entreprise E1 (STANDARDPACK) |
+| Office 365 Entreprise E3 \_ DE (ENTERPRISEPACK \_ DE) | Office 365 Entreprise E3 (ENTERPRISEPACK) |
+| Stockage de fichiers supplémentaire Office 365 \_ DE (SHAREPOINTSTORAGE \_ DE) | Stockage de fichiers supplémentaire Office 365 (SHAREPOINTSTORAGE) |
+| Office 365 F1 \_ DE (DESKLESSPACK \_ DE) | Office 365 F1 (DESKLESSPACK) |
+| Office 365 ProPlus pour faculty \_ DE (OFFICESUBSCRIPTION \_ FACULTY \_ DE) | Office 365 ProPlus pour les enseignants (OFFICESUBSCRIPTION \_ FACULTY) |
+| Office 365 ProPlus pour étudiants \_ DE (OFFICESUBSCRIPTION \_ STUDENT \_ DE) | Office 365 ProPlus pour les étudiants (OFFICESUBSCRIPTION \_ STUDENT) |
+| Office 365 ProPlus \_ DE (OFFICESUBSCRIPTION \_ DE) | Office 365 ProPlus (OFFICESUBSCRIPTION) |
+| OneDrive Entreprise (Plan 1) \_ DE (WACONEDRIVESTANDARD \_ DE) | OneDrive Entreprise (Plan 1) (WACONEDRIVESTANDARD) |
+| OneDrive Entreprise (Plan 2) \_ DE (WACONEDRIVEENTERPRISE \_ DE) | OneDrive Entreprise (Plan 2) (WACONEDRIVEENTERPRISE) |
+| Power BI Pro pour les enseignants \_ DE (POWER \_ BI PRO \_ \_ FACULTY \_ DE) | Power BI Pro pour les enseignants (CORPS ENSEIGNANT POWER \_ BI \_ \_ PRO) |
+| Power BI Pro \_ DE (POWER \_ BI \_ PRO \_ DE) | Power BI Pro (POWER \_ BI \_ PRO) |
+| Project Online Essentials \_ DE (PROJECTESSENTIALS \_ DE) | Project Online Essentials (PROJECTESSENTIALS) |
+| Project Online Premium \_ DE (PROJECTPREMIUM \_ DE) | Project Online Premium (PROJECTPREMIUM) |
+| Project Online Professional \_ DE (PROJECTPROFESSIONAL \_ DE) | Project Online Professional (PROJECTPROFESSIONAL) |
+| Project Plan 3 \_ DE (PROJECTPROFESSIONAL \_ DE) | Project Plan 3 (PROJECTPROFESSIONAL) |
+| Office 365 E4 \_ DE (ENTERPRISEWITHSCAL \_ DE) | Office 365 E3 (ENTERPRISEPACK) |
+| SharePoint Online (Plan 1) \_ DE (SHAREPOINTSTANDARD \_ DE) | SharePoint Online (Plan 1) (SHAREPOINTSTANDARD) |
+| SharePoint Online (Plan 2) \_ DE (SHAREPOINTENTERPRISE \_ DE) | SharePoint Online (Plan 2) (SHAREPOINTENTERPRISE) |
+| Skype Entreprise Online (Plan 1) \_ DE (MCOIMP \_ DE) | Office 365 E1 (STANDARDPACK) |
+| Skype Entreprise Online (Plan 1) \_ DE (MCOIMP \_ DE) | Skype Entreprise Online (Plan 1) (MCOIMP) |
+| Skype Entreprise Online (Plan 2) \_ DE (MCOSTANDARD \_ DE) | Skype Entreprise Online (Plan 2) (MCOSTANDARD) |
+| Skype Entreprise Plus CAL \_ DE (MCOPLUSCAL \_ DE) | Skype Entreprise Plus CAL (MCOPLUSCAL) |
+| Visio Online Plan 1 for faculty \_ DE (VISIOONLINE \_ PLAN1 \_ FAC \_ DE) | Visio Online Plan 1 pour les enseignants (VISIOONLINE \_ PLAN1 \_ FAC) |
+| Visio Online Plan 1 \_ DE (VISIOONLINE \_ PLAN1 \_ DE) | Visio Online Plan 1 (VISIOONLINE \_ PLAN1) |
+| Visio Online Plan 2 for faculty \_ DE (VISIOCLIENT \_ FACULTY \_ DE) | Visio Online Plan 2 pour les enseignants (VISIOCLIENT \_ FACULTY) |
+| Visio Online Plan 2 \_ DE (VISIOCLIENT \_ DE) | Visio Online Plan 2 (VISIOCLIENT) |
+| Visio Plan 1 \_ DE (VISIOONLINE \_ PLAN1 \_ DE) | Visio Plan 1 (VISIOONLINE \_ PLAN1) |
+| Visio Plan 2 \_ DE (VISIOCLIENT \_ DE) | Visio Plan 2 (VISIOCLIENT) |
 |||
 
 ### <a name="how-do-i-get-help-from-microsoft-to-migrate-to-a-new-region-or-answer-support-questions"></a>Comment obtenir de l’aide de la part de Microsoft pour effectuer la migration vers une nouvelle région ou répondre à des questions de support ?
 
-Si vous avez des questions, vous pouvez nous contacter ou votre partenaire :
+Si vous avez des questions, vous pouvez nous contacter ou contacter votre partenaire :
 
 - Pour Azure, vous pouvez envoyer de [nouvelles demandes de support](https://portal.microsoftazure.de/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest) dans le portail Azure.
-- Pour Office 365, vous pouvez envoyer des questions à l’aide du &quot; lien besoin d’aide ? &quot; du [Centre d’administration Microsoft 365](https://portal.office.de/).
-- Si vous êtes un client Dynamics 365 engagement client et Power BI et que vous avez également Office 365, vous pouvez soumettre des questions à l’aide du &quot; lien vous avez besoin d’aide ? &quot; du [Centre d’administration Microsoft 365](https://portal.office.de/). Les options de support de Dynamics 365 Customer Engagement se trouvent [ici](https://docs.microsoft.com/dynamics365/get-started/support/). Les options de support de Power BI se trouvent [ici](https://powerbi.microsoft.com/support/).
+- Pour Office 365, vous pouvez soumettre des questions à l’aide du lien Besoin d’aide du Centre d’administration &quot; &quot; Microsoft [365.](https://portal.office.de/)
+- Si vous êtes client Dynamics 365 Customer Engagement et Power BI et que vous avez également Office 365, vous pouvez soumettre des questions à l’aide du lien Besoin d’aide ? du Centre d’administration &quot; &quot; Microsoft [365.](https://portal.office.de/) Les options de support de Dynamics 365 Customer Engagement se trouvent [ici](https://docs.microsoft.com/dynamics365/get-started/support/). Les options de support de Power BI se trouvent [ici](https://powerbi.microsoft.com/support/).
 
 
 ## <a name="next-step"></a>Étape suivante
 
 [Opter pour une migration](ms-cloud-germany-migration-opt-in.md)
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
-Mise en route :
+Mise en place :
 
 - [Aide à la migration de Microsoft Cloud Deutschland : ](https://aka.ms/germanymigrateassist)
 - [Comment opter pour une migration](ms-cloud-germany-migration-opt-in.md)
-- [Expérience client lors de la migration](ms-cloud-germany-transition-experience.md)
+- [Expérience client pendant la migration](ms-cloud-germany-transition-experience.md)
 
-Navigation par le biais de la transition :
+Transition :
 
 - [Actions et impacts des phases de migration](ms-cloud-germany-transition-phases.md)
 - [Pré-travail supplémentaire](ms-cloud-germany-transition-add-pre-work.md)
-- Informations supplémentaires pour [Azure ad](ms-cloud-germany-transition-azure-ad.md), [appareils](ms-cloud-germany-transition-add-devices.md), [expériences](ms-cloud-germany-transition-add-experience.md)et [AD FS](ms-cloud-germany-transition-add-adfs.md).
+- Informations supplémentaires pour [Azure AD,](ms-cloud-germany-transition-azure-ad.md) [les appareils,](ms-cloud-germany-transition-add-devices.md) [les expériences](ms-cloud-germany-transition-add-experience.md)et [AD FS](ms-cloud-germany-transition-add-adfs.md).
 
-Applications Cloud :
+Applications cloud :
 
 - [Informations sur le programme de migration Dynamics 365](https://aka.ms/d365ceoptin)
 - [Informations sur le programme de migration Power BI](https://aka.ms/pbioptin)

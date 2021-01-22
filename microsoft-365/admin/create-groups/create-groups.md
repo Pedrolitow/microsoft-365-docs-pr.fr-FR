@@ -1,5 +1,5 @@
 ---
-title: Créer un groupe dans le centre d’administration
+title: Créer un groupe dans le Centre d’administration
 ms.reviewer: arvaradh
 f1.keywords: CSH
 ms.author: mikeplum
@@ -13,42 +13,44 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
-description: Découvrez comment créer et supprimer des groupes Microsoft 365, ajouter et supprimer des membres d’un groupe, et personnaliser le fonctionnement du groupe.
-ms.openlocfilehash: 9d836e8bb3af297e972c4f252808c551b349fb67
-ms.sourcegitcommit: 3cdb670f10519f7af4015731e7910954ba9f70dc
+description: Découvrez comment créer et supprimer des groupes Microsoft 365, ajouter et supprimer des membres du groupe et personnaliser le fonctionnement du groupe.
+ms.openlocfilehash: 620b9389efabdba14322961bee87cd05da99ee57
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48753288"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925505"
 ---
-# <a name="create-a-group-in-the-microsoft-365-admin-center"></a>Créer un groupe dans le centre d’administration Microsoft 365
+# <a name="create-a-group-in-the-microsoft-365-admin-center"></a>Créer un groupe dans le Centre d’administration Microsoft 365
   
-Bien que les utilisateurs puissent créer un groupe Microsoft 365 à partir d’Outlook ou d’autres applications, en tant qu’administrateur, il se peut que vous deviez créer ou supprimer des groupes, ajouter ou supprimer des membres et personnaliser leur fonctionnement. Le centre d’administration Microsoft 365 est l’endroit où vous devez effectuer cette opération. 
+Bien que les utilisateurs peuvent créer un groupe Microsoft 365 à partir d’Outlook ou d’autres applications, en tant qu’administrateur, vous devrez peut-être créer ou supprimer des groupes, ajouter ou supprimer des membres et personnaliser leur fonctionnement. Le Centre d’administration Microsoft 365 est l’endroit où vous pouvez le faire. 
 
 > [!TIP]
-> Les groupes Yammer connectés à Microsoft 365 doivent être créés dans Yammer, mais ils peuvent être gérés dans le centre d’administration Microsoft 365 comme les autres groupes Microsoft 365. Pour en savoir plus, consultez la rubrique [groupes Yammer et Microsoft 365](https://docs.microsoft.com/yammer/manage-yammer-groups/yammer-and-office-365-groups). 
+> Les groupes Yammer connectés Microsoft 365 doivent être créés dans Yammer, mais peuvent être gérés dans le Centre d’administration Microsoft 365 comme les autres groupes Microsoft 365. Pour en savoir plus, [voir Yammer groupes Microsoft 365.](https://docs.microsoft.com/yammer/manage-yammer-groups/yammer-and-office-365-groups) 
 
 ## <a name="create-a-microsoft-365-group"></a>Créer un groupe Microsoft 365
 
-1. Dans le centre d’administration, développez **groupes**, puis cliquez sur **groupes**.
+1. Dans le Centre d’administration, développez **Groupes,** puis cliquez sur **Groupes.**
 
-2. Sélectionnez **Ajouter un groupe**.
+2. Sélectionnez **Ajouter un groupe.**
   
-3. Dans la page **choisir un type de groupe** , sélectionnez **Office 365**, puis cliquez sur **suivant**.
+3. Dans la page **Choisir un type de groupe,** **sélectionnez Office 365,** puis sélectionnez **Suivant**.
 
-4. Sur la page **notions de base** , entrez un nom pour le groupe et, éventuellement, une description. Sélectionnez **Suivant**.
+4. Dans la page **Informations de** base, tapez un nom pour le groupe et, éventuellement, une description. Sélectionnez **Suivant**.
     
-5. Sur la page **modifier les paramètres** , tapez une adresse de messagerie unique pour le groupe, choisissez une option de confidentialité et indiquez si vous souhaitez ajouter Microsoft Teams, puis cliquez sur**suivant**.
+5. Dans la page **Modifier les paramètres,** tapez une adresse e-mail unique pour le groupe, choisissez une option de confidentialité et si vous souhaitez ajouter Microsoft Teams, puis sélectionnez **Suivant**.
     
-6. Dans les **propriétaires** , choisissez le nom d’une ou de plusieurs personnes qui seront désignées pour gérer le groupe. Toute personne qui est un propriétaire de groupe peut supprimer un courrier de la boîte aux lettres du groupe. Les autres membres ne peuvent pas supprimer de courrier de la boîte aux lettres du groupe. Sélectionnez **Suivant**.
+6. Sur les **propriétaires,** choisissez le nom d’une ou de plusieurs personnes qui seront désignées pour gérer le groupe. Toute personne qui est un propriétaire de groupe peut supprimer un courrier de la boîte aux lettres du groupe. Les autres membres ne peuvent pas supprimer de courrier de la boîte aux lettres du groupe. Sélectionnez **Suivant**.
     
-7. Après avoir examiné vos paramètres et apporté les modifications nécessaires, sélectionnez **créer un groupe**.
+7. Après avoir passé en revue vos paramètres et apporté des modifications, **sélectionnez Créer un groupe.**
 
 8. Sélectionnez **Fermer**.
     
@@ -58,65 +60,65 @@ Une fois le groupe créé, vous pouvez ajouter des membres et configurer des par
 
 ::: moniker range="o365-worldwide"
 
-Les utilisateurs peuvent s' [Ajouter eux-mêmes ou demander une approbation](https://support.microsoft.com/office/2e59e19c-b872-44c8-ae84-0acc4b79c45d), ou vous pouvez les ajouter maintenant.
+Les utilisateurs [peuvent s’ajouter eux-mêmes ou demander une](https://support.microsoft.com/office/2e59e19c-b872-44c8-ae84-0acc4b79c45d)approbation, ou vous pouvez les ajouter maintenant.
 
-1. Dans le centre d’administration, actualisez la page de sorte que votre nouveau groupe s’affiche, puis sélectionnez le nom du groupe auquel vous souhaitez ajouter des membres.
+1. Dans le Centre d’administration, actualisez la page afin que votre nouveau groupe apparaisse, puis sélectionnez le nom du groupe à ajouter.
     
-2. Sous l’onglet **membres** , sélectionnez **Afficher tout et gérer les membres**.
+2. Sous **l’onglet Membres,** **sélectionnez Afficher tout et gérer les membres.**
 
 3. Sélectionnez **Ajouter des membres**.
     
-4. Sélectionnez les utilisateurs que vous souhaitez ajouter, puis sélectionnez **Enregistrer**.
+4. Sélectionnez les utilisateurs que vous souhaitez ajouter, puis sélectionnez **Enregistrer.**
     
 5. Sélectionnez **Fermer** à trois reprises. 
     
-Le groupe apparaît dans Outlook et des membres lui sont attribués.
+Le groupe s’affiche dans Outlook avec des membres qui lui sont affectés.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-Les utilisateurs peuvent s' [Ajouter eux-mêmes ou demander une approbation](https://support.microsoft.com/office/2e59e19c-b872-44c8-ae84-0acc4b79c45d), ou vous pouvez les ajouter maintenant.
-1. Dans le centre d’administration, actualisez la page de sorte que votre nouveau groupe s’affiche **, sélectionnez groupes groupes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a>, puis sélectionnez le groupe auquel vous souhaitez ajouter des membres.
+Les utilisateurs [peuvent s’ajouter eux-mêmes ou demander une](https://support.microsoft.com/office/2e59e19c-b872-44c8-ae84-0acc4b79c45d)approbation, ou vous pouvez les ajouter maintenant.
+1. Dans le Centre d’administration, actualisez  la page afin que votre nouveau groupe apparaisse, sélectionnez Groupes, puis sélectionnez le groupe à \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank"></a>ajouter.
     
-2. En regard de **membres**, sélectionnez **modifier**.
+2. En de **côté des membres,** sélectionnez **Modifier.**
 3. Sélectionnez **Ajouter des membres**.
     
-4. Sélectionnez les utilisateurs que vous souhaitez ajouter, puis sélectionnez **Enregistrer**.
+4. Sélectionnez les utilisateurs que vous souhaitez ajouter, puis sélectionnez **Enregistrer.**
     
 5. Sélectionnez **Fermer** à trois reprises. 
     
-Le groupe apparaît dans Outlook et des membres lui sont attribués.
+Le groupe s’affiche dans Outlook avec des membres qui lui sont affectés.
   
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-Les utilisateurs peuvent s' [Ajouter eux-mêmes ou demander une approbation](https://support.microsoft.com/office/2e59e19c-b872-44c8-ae84-0acc4b79c45d), ou vous pouvez les ajouter maintenant.
-1. Dans le centre d’administration, actualisez la page de sorte que votre nouveau groupe s’affiche **, sélectionnez groupes groupes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a>, puis sélectionnez le groupe auquel vous souhaitez ajouter des membres.
+Les utilisateurs [peuvent s’ajouter eux-mêmes ou demander une](https://support.microsoft.com/office/2e59e19c-b872-44c8-ae84-0acc4b79c45d)approbation, ou vous pouvez les ajouter maintenant.
+1. Dans le Centre d’administration, actualisez  la page afin que votre nouveau groupe apparaisse, sélectionnez Groupes, puis sélectionnez le groupe à \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank"></a>ajouter.
     
-2. En regard de **membres**, sélectionnez **modifier**.
+2. En de **côté des membres,** sélectionnez **Modifier.**
 3. Sélectionnez **Ajouter des membres**.
     
-4. Sélectionnez les utilisateurs que vous souhaitez ajouter, puis sélectionnez **Enregistrer**.
+4. Sélectionnez les utilisateurs que vous souhaitez ajouter, puis sélectionnez **Enregistrer.**
     
 5. Sélectionnez **Fermer** à trois reprises. 
     
-Le groupe apparaît dans Outlook et des membres lui sont attribués.
+Le groupe s’affiche dans Outlook avec des membres qui lui sont affectés.
   
 ::: moniker-end
 
-## <a name="who-can-delete-email-from-the-group-inbox"></a>Qui peut supprimer le courrier électronique de la boîte de réception du groupe ?
+## <a name="who-can-delete-email-from-the-group-inbox"></a>Qui peut supprimer le courrier électronique de la boîte de réception du groupe ?
 
 Le propriétaire du groupe peut supprimer les messages électroniques à partir de la boîte de réception du groupe, peut importe l'auteur initial.
   
-Un membre peut supprimer une conversation par courrier électronique de la boîte de réception du groupe si elle l’a initiée, et uniquement en utilisant Outlook sur le Web (cliquez avec le bouton droit sur le courrier électronique, puis choisissez **supprimer**). Cette opération est impossible à partir de l'application Outlook (Outlook 2016).
+Un membre peut supprimer une conversation par courrier électronique de la boîte de réception du groupe s’il l’a initiée, et uniquement à l’aide d’Outlook sur le web (cliquez avec le bouton droit sur l’e-mail, puis choisissez **Supprimer).** Cette opération est impossible à partir de l'application Outlook (Outlook 2016).
   
-Lorsqu’un courrier électronique est supprimé de la boîte aux lettres de groupe, il n’est pas supprimé des boîtes aux lettres personnelles des membres du groupe.
+Lorsqu’un message électronique est supprimé de la boîte aux lettres de groupe, il n’est supprimé d’aucune des boîtes aux lettres personnelles des membres du groupe.
 
-## <a name="next-step-manage-your-group"></a>Étape suivante : gérer votre groupe
+## <a name="next-step-manage-your-group"></a>Étape suivante : gérer votre groupe
 
-Après avoir créé un groupe et ajouté des membres, vous pouvez configurer votre groupe, comme modifier le nom ou la description du groupe, modifier les propriétaires ou les membres, et indiquer si les expéditeurs externes peuvent envoyer un message électronique au groupe et s’il faut envoyer des copies des conversations de groupe aux membres. Pour plus d’informations, consultez [la rubrique manage a Microsoft 365 Group](manage-groups.md) .
+Après avoir créé un groupe et ajouté des membres, vous pouvez configurer davantage votre groupe, par exemple en modifiant le nom ou la description du groupe, en modifiant les propriétaires ou les membres, et en spécifiant si les expéditeurs externes peuvent envoyer par e-mail le groupe et s’il faut envoyer des copies des conversations de groupe aux membres. Pour plus d’informations, voir Gérer un groupe [Microsoft 365.](manage-groups.md)
 
 ## <a name="related-articles"></a>Articles connexes
 
@@ -124,4 +126,4 @@ Après avoir créé un groupe et ajouté des membres, vous pouvez configurer vot
 
 [Choisir le domaine à utiliser lors de la création de groupes Microsoft 365](choose-domain-to-create-groups.md)
 
-[Mettre à niveau les listes de distribution vers des groupes Microsoft 365](../manage/upgrade-distribution-lists.md)
+[Mettre à niveau les listes de distribution vers les groupes Microsoft 365](../manage/upgrade-distribution-lists.md)

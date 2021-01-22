@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez comment configurer Microsoft 365 Business Premium.
-ms.openlocfilehash: 79f089e38979990c29156ea07201c8d902a51e80
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: bda1326ebd905dece382c1513296739a39887976
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702360"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925945"
 ---
 # <a name="set-up-microsoft-365-business-premium"></a>Configurer Microsoft 365 Business Premium
 
@@ -34,18 +35,18 @@ ms.locfileid: "49702360"
 
 ## <a name="try-it"></a>Essayez !
 
-1. Connectez-vous au centre d’administration Microsoft 365, puis sélectionnez  **accéder à la configuration**. L’Assistant installation démarre.
-2.  Sur la page  **installer vos applications Office**  , vous pouvez choisir d’installer les applications Office sur votre ordinateur ou sélectionner  **Continuer**.
-3.  Sur la page  **votre identité de votre entreprise**  , entrez le nom de domaine de votre entreprise, puis sélectionnez  **utiliser ce domaine**. Si vous utilisez un serveur d’inscriptions commun comme WordPress ou GoDaddy, vos enregistrements seront ajoutés automatiquement sur cette page.
-4. Sur la page  **vérifier votre domaine**  , sélectionnez  **vérifier** pour vérifier la propriété de votre domaine, puis connectez-vous à votre compte de serveur d’inscriptions de domaine. Pour autoriser Microsoft à ajouter un enregistrement TXT pour la vérification de compte, sélectionnez  **confirmer**.
-5. Sur la page  **Ajouter des utilisateurs et attribuer des licences**  , entrez les noms d’utilisateur, les noms et les noms d’utilisateur. Ensuite, sélectionnez  **Ajouter des utilisateurs et attribuer des licences**.
-6. Sur la page  **partager des informations de connexion**  , entrez des adresses de messagerie de secours pour vos utilisateurs, puis sélectionnez Envoyer un  **courrier électronique et continuer**.
-7.  Sur la page  **activer les enregistrements**  , cliquez sur  **Continuer**.
-8.  Sur la page  **Ajouter des enregistrements DNS**  , nous vous recommandons de laisser les services activés pour la messagerie, les équipes et la sécurité des appareils mobiles. Sélectionnez  **configurer** , puis cliquez sur  **connecter** pour confirmer les modifications apportées à votre bureau d’enregistrement de domaines.
-9.  Sur la page **augmenter la protection des menaces de la cyber-protection avancée** , laissez **Office Advanced Threat Protection** activé, vérifiez ce qui sera analysé, puis sélectionnez créer des **stratégies** de **protection avancée contre les menaces**.   
-10.  Si vous le souhaitez, vous pouvez installer Outlook sur vos appareils mobiles. Sélectionnez  **Continuer**.
-11. Dans la page aider les utilisateurs à  **utiliser Microsoft teams**  , choisissez si vous souhaitez envoyer des courriers électroniques au sein de votre organisation à propos de teams, puis sélectionnez  **Continuer**.
-12. Sur la page  **protéger les données dans Office pour les appareils mobiles**  , conservez la gestion des applications mobiles activée, développez les paramètres et examinez-les, puis sélectionnez  **créer une stratégie de gestion des applications mobiles**.
-13. Une fois l’installation terminée, revenez au centre d’administration Microsoft. Dans le centre d’administration, vous pouvez continuer à configurer des fonctionnalités telles que stratégies Windows 10, DLP, etc., dans la page de  **configuration**  .
+1. Connectez-vous au Centre d’administration Microsoft 365, puis **sélectionnez Aller à la configuration.** L’Assistant Installation démarre.
+2.  Dans la page  **Installer vos applications Office,**  vous pouvez choisir d’installer les applications Office sur votre ordinateur, ou sélectionner  **Continuer**.
+3.  Dans la page **Votre domaine se trouve l’identité** de votre entreprise, entrez le nom de domaine de votre entreprise, puis **sélectionnez Utiliser ce domaine.** Si vous utilisez un bureau d’enregistrement commun comme WordPress ou GoDaddy, vos enregistrements seront ajoutés automatiquement sur cette page.
+4. Dans la page  **Vérifier votre domaine,**  sélectionnez  **Vérifier** la propriété de votre domaine, puis connectez-vous à votre compte de bureau d’enregistrement de domaines. Pour laisser Microsoft ajouter un enregistrement TXT pour la vérification de compte, sélectionnez  **Confirmer**.
+5. Dans la page Ajouter des utilisateurs et attribuer  **des licences,**  entrez les prénoms, les noms d’utilisateur et les noms d’utilisateur. Ensuite, **sélectionnez Ajouter des utilisateurs et attribuez des licences.**
+6. Dans la page **d’informations de** la signature de partage, entrez d’autres adresses de messagerie pour vos utilisateurs, puis **sélectionnez Envoyer un courrier électronique et continuer.**
+7.  Dans la page **Activer les enregistrements,** cliquez sur **Continuer.**
+8.  Dans la page Ajouter des enregistrements  **DNS,**  nous vous recommandons de laisser les services désactivés pour la sécurité de la messagerie, de Teams et des appareils mobiles. Sélectionnez  **Configurer,** puis  **connectez-vous** pour confirmer les modifications auprès de votre bureau d’enregistrement de domaines.
+9.  Dans la page Renforcer **la protection** contre les cybermenaces avancées, laissez **Office -** Protection avancée contre les menaces en place, examinez ce qui sera analysé, puis sélectionnez Créer des stratégies de protection avancée **contre** les **menaces.**   
+10.  Si vous le souhaitez, vous pouvez éventuellement installer Outlook sur vos appareils mobiles. Sélectionnez  **Continuer**.
+11. Dans la page  **Aider les utilisateurs à utiliser Microsoft Teams,**  choisissez si vous souhaitez envoyer un e-mail aux utilisateurs de votre organisation à propos de Teams, puis sélectionnez  **Continuer**.
+12. Dans la page Protéger les données dans Office pour **appareils mobiles,** laissez la gestion des applications mobiles en place, développez les paramètres et examinez-les, puis sélectionnez Créer une stratégie de gestion des applications **mobiles.**
+13. Une fois l’installation terminée, revenir au Centre d’administration Microsoft. Dans le Centre d’administration, vous pouvez continuer à configurer des fonctionnalités telles que les stratégies Windows 10, DLP, etc. sur la page **d’installation.**
 
 Votre configuration est terminée.

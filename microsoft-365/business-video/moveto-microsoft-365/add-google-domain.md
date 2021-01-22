@@ -15,18 +15,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez comment déplacer votre domaine de Google Workspace vers Microsoft 365 pour les entreprises.
-ms.openlocfilehash: 1abc05867147d2b52e26804918e8247053b5e1d5
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: 23ca451cfdcb67898a10935101efedcdf360ef91
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794676"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925001"
 ---
 # <a name="add-your-google-workspace-domain-to-microsoft-365"></a>Ajouter votre domaine Google Workspace à Microsoft 365
 
@@ -40,13 +41,13 @@ Ajoutez votre domaine Google Workspace à Microsoft 365 pour les entreprises afi
 1. In the Microsoft 365 Admin Center, in the left nav, select **Show all**, **Settings** and then **Domains**.
 1. Choisissez **Ajouter un domaine,** entrez votre nom de domaine, puis **sélectionnez Utiliser ce domaine.** 
 1. Choose, **Add a TXT record to the domains DNS records,** select **Continue**, and copy the TXT value. 
-1. Revenir à la [console d’administration Google,](https://admin.google.com)choisissez **Domaines,** Gérer les domaines, Afficher les **détails,** Gérer le domaine, **DNS,** puis faites défiler vers le bas jusqu’aux enregistrements de ressources **personnalisés.**   
-1. Ouvrez la drop-down du type d’enregistrement, choisissez **TXT**, collez la valeur TXT que vous avez copiée, puis sélectionnez **Ajouter**. 
+1. Revenir à la [console d’administration Google,](https://admin.google.com)choisissez **Domaines,** Gérer les domaines, Afficher les **détails,** **Gérer** le domaine, **DNS,** puis faites défiler vers le bas jusqu’aux enregistrements de ressources **personnalisés.**  
+1. Ouvrez la drop-down du type d’enregistrement, choisissez **TXT,** collez la valeur TXT que vous avez copiée, puis sélectionnez **Ajouter**. 
 
     La mise à jour prend généralement quelques minutes, mais peut prendre jusqu’à 48 heures. 
-1. Revenir au Centre d’administration Microsoft 365, **sélectionnez Vérifier,** puis **Fermez.** 
+1. Revenir au Centre d’administration Microsoft 365, **sélectionnez Vérifier,** puis **Fermez**. 
 1. Pour définir votre domaine comme courrier électronique principal pour vos utilisateurs, dans le navigation de gauche, sélectionnez **Utilisateurs**  >  **actifs.** 
 1. Choisissez un utilisateur, sélectionnez Gérer le nom **d’utilisateur** et le courrier électronique, **Modifier,** sélectionner votre domaine dans la liste modifiable, puis sélectionner Terminé **et** enregistrer **les modifications.** 
 1. Répétez ce processus pour chaque utilisateur. 
 
-    Lorsque vous avez terminé, vous êtes prêt à installer les applications Office et à migrer vos éléments de courrier et de calendrier vers Microsoft 365. 
+    Lorsque vous avez terminé, vous serez prêt à installer les applications Office et à migrer vos éléments de courrier électronique et de calendrier vers Microsoft 365. 

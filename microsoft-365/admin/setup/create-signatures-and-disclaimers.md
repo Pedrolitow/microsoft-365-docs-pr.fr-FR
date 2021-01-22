@@ -1,5 +1,5 @@
 ---
-title: Créer des signatures à l’échelle de l’organisation et des clauses d’exclusion de responsabilité
+title: Créer des signatures et des clauses d’exclusion de responsabilité à l’échelle de l’organisation
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -18,22 +18,23 @@ ms.custom:
 - OKR_SMB_Videos
 - seo-marvel-may2020
 - AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
-description: Apprenez à gérer les signatures électroniques, y compris les dédits de responsabilité juridiques ou les informations de divulgation pour tous les messages électroniques qui entrent ou sortent de votre organisation.
-ms.openlocfilehash: 9e438b42eb95dced4c3b99d21c66011365b180c9
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+description: Découvrez comment gérer les signatures électroniques, y compris les clauses d’exclusion de responsabilité juridiques ou les déclarations de divulgation pour tous les messages électroniques entrants ou qui quittent votre organisation.
+ms.openlocfilehash: c8d63a11a75b9b53de9cabdf1f4baabc61cc3e42
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906500"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926917"
 ---
-# <a name="create-organization-wide-signatures-and-disclaimers"></a>Créer des signatures à l’échelle de l’organisation et des clauses d’exclusion de responsabilité
+# <a name="create-organization-wide-signatures-and-disclaimers"></a>Créer des signatures et des clauses d’exclusion de responsabilité à l’échelle de l’organisation
 
- Vous pouvez gérer les signatures électroniques en ajoutant une signature électronique, une clause d’exclusion de responsabilité ou une déclaration de confidentialité aux messages électroniques qui entrent ou sortent de votre organisation. Vous pouvez configurer celle-ci pour qu'elle s'applique à tous les messages entrants et sortants, comme illustré ci-dessous. Ou vous pouvez l'appliquer à certains messages, comme ceux contenant des mots ou des modèles de texte spécifiques.
+ Vous pouvez gérer les signatures électroniques en ajoutant une signature électronique, une clause d’exclusion de responsabilité juridique ou une déclaration de divulgation aux messages électroniques qui entrent dans votre organisation ou en quittent. Vous pouvez configurer celle-ci pour qu'elle s'applique à tous les messages entrants et sortants, comme illustré ci-dessous. Ou vous pouvez l'appliquer à certains messages, comme ceux contenant des mots ou des modèles de texte spécifiques.
 
  Regardez une courte vidéo sur la création d’une signature électronique à l’échelle de l’entreprise. <br><br>
   
@@ -44,7 +45,7 @@ Si vous avez trouvé cette vidéo utile, consultez les [séries de formations co
 ## <a name="create-a-signature-that-applies-to-all-messages"></a>Créer une signature qui s'applique à tous les messages
 
 > [!TIP]
-> Les signatures à l’échelle de l’organisation sont appelées « clauses d’exclusion de responsabilité », indépendamment de ce qu’elles incluent. Par exemple, il peut s’agir d’une signature ou de votre adresse, de la clause d’exclusion de responsabilité ou d’autres informations que vous souhaitez.
+> Les signatures à l’échelle de l’organisation sont appelées « clauses d’exclusion de responsabilité », indépendamment de ce qu’elles incluent. Par exemple, il peut s’agir simplement d’une signature ou inclure votre adresse, une clause d’exclusion de responsabilité juridique ou d’autres informations de votre part.
     
 ::: moniker range="o365-worldwide"
 
@@ -64,33 +65,33 @@ Accédez au Centre d’administration à l’adresse <a href="https://go.microso
 
 ::: moniker-end
 
-1. Sélectionnez le lanceur d’applications ![ icône du lanceur d’applications ](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) , puis sélectionnez **administrateur**.
+1. Sélectionnez le lanceur d’applications ![ L’icône du lanceur d’applications, ](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) puis sélectionnez **Administrateur.**
    
-    Vous ne trouvez pas l'application que vous cherchez ? Dans le lanceur d’applications, sélectionnez **toutes les applications** pour afficher une liste alphabétique des applications disponibles. À partir de là, vous pouvez rechercher une application spécifique. 
+    Vous ne trouvez pas l'application que vous cherchez ? Dans le lanceur d’applications, sélectionnez Toutes les **applications** pour voir une liste alphabétique des applications à votre disposition. À partir de là, vous pouvez rechercher une application spécifique. 
     
-2. Sélectionnez **centres d’administration** , puis **Exchange**.
+2. Sélectionnez **Centres d’administration,** puis choisissez **Exchange.**
     
-3. Sous flux de messagerie, sélectionnez **règles**.
+3. Sous Flux de messagerie, sélectionnez **Règles.**
     
-4. Sélectionnez l' **+** icône (ajouter), puis **appliquer les clauses d’exclusion de responsabilité**.
+4. Sélectionnez **+** l’icône (Ajouter) et choisissez **Appliquer les clauses d’exclusion de responsabilité.**
     
 5. Attribuez un nom à la règle.
     
-6. Sous **appliquer cette règle** , sélectionnez **[appliquer à tous les messages]**.
+6. Sous **Appliquer cette règle,** **sélectionnez [Appliquer à tous les messages]**.
     
     > [!TIP]
-    > [Découvrez-en plus](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping) sur l'application de conditions si vous ne souhaitez pas appliquer l'exclusion de responsabilité à tous les messages. (Cet article de portée est destiné à Exchange Server, mais il s’applique également à Microsoft 365.) 
+    > [Découvrez-en plus](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping) sur l'application de conditions si vous ne souhaitez pas appliquer l'exclusion de responsabilité à tous les messages. (Cet article s’applique Exchange Server, mais il s’applique également à Microsoft 365.) 
   
 7. Sous Effectuer les opérations suivantes, laissez **Ajouter l'exclusion de responsabilité** sélectionné. 
     
-8.  Sélectionnez **entrer le texte** et tapez votre clause d’exclusion de responsabilité. 
+8.  Sélectionnez **Entrer du texte** et tapez votre clause d’exclusion de responsabilité. 
     
     > [!TIP]
-    > [Découvrez-en plus](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#FormatDisclaimer) sur la mise en forme des exclusions de responsabilité. (Cet article de mise en forme est destiné à Exchange Server, mais il s’applique également à Microsoft 365.) 
+    > [Découvrez-en plus](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#FormatDisclaimer) sur la mise en forme des exclusions de responsabilité. (Cet article de mise en forme est Exchange Server, mais il s’applique également à Microsoft 365.) 
 
-9. Sélectionnez **Sélectionner un** et sélectionnez **renvoyer** en tant qu’option de secours. Sélectionnez **OK**. Ainsi, si l'exclusion de responsabilité ne peut pas être ajoutée parce que le chiffrement ou un autre paramètre de courrier est activé, elle sera encapsulée dans une enveloppe du message.
+9. **Sélectionnez-en un** et **choisissez Wrap** en tant qu’option de retour. Sélectionnez **OK**. Ainsi, si l'exclusion de responsabilité ne peut pas être ajoutée parce que le chiffrement ou un autre paramètre de courrier est activé, elle sera encapsulée dans une enveloppe du message.
     
-10. Laissez **Auditer cette règle avec un niveau de gravité** sélectionné. Puis sélectionnez le niveau à utiliser dans le journal des messages : **Faible** , **Moyen** ou **Élevé**. 
+10. Laissez **Auditer cette règle avec un niveau de gravité** sélectionné. Puis sélectionnez le niveau à utiliser dans le journal des messages : **Faible**, **Moyen** ou **Élevé**. 
     
 11. Sélectionnez **Appliquer** pour activer immédiatement l'exclusion de responsabilité, sauf si vous souhaitez la tester au préalable. 
     
@@ -98,20 +99,20 @@ Accédez au Centre d’administration à l’adresse <a href="https://go.microso
     
 13. Sélectionnez **Enregistrer** lorsque vous avez terminé. 
     
-## <a name="limitations-of-organization-wide-signatures"></a>Limitations des signatures à l’échelle de l’Organisation
+## <a name="limitations-of-organization-wide-signatures"></a>Limitations des signatures à l’échelle de l’organisation
 
-Vous ne pouvez pas effectuer ce qui suit lors de la gestion des signatures de courrier électronique dans Microsoft 365 :
+Vous ne pouvez pas faire les choses suivantes lors de la gestion des signatures électroniques dans Microsoft 365 :
   
-- Insérer la signature directement sous la dernière adresse de courrier ou de transfert
+- Insérer la signature directement sous la dernière réponse ou envoi d’e-mail
     
-- Afficher les signatures électroniques côté serveur dans les dossiers éléments envoyés des utilisateurs
+- Afficher les signatures de courrier côté serveur dans les dossiers Éléments envoyés des utilisateurs
     
-- Incorporer des images dans les signatures de courrier électronique
+- Incorporer des images dans des signatures électroniques
     
 - Ignorer les lignes qui contiennent des variables qui n’ont pas pu être mises à jour (par exemple, parce que la valeur n’a pas été fournie pour un utilisateur)
     
-Pour obtenir ces fonctionnalités et d’autres fonctionnalités de gestion des signatures électroniques, utilisez un outil tiers. Veuillez effectuer une recherche sur Internet pour le **logiciel de signature électronique**. Un certain nombre de ces fournisseurs sont des partenaires Microsoft Gold et leurs logiciels fournissent ces fonctionnalités. 
+Pour obtenir ces fonctionnalités et d’autres pour gérer les signatures électroniques, utilisez un outil tiers. Veuillez effectuer une recherche sur Internet pour le logiciel **de signature électronique.** Un certain nombre de ces fournisseurs sont des partenaires Microsoft Gold et leurs logiciels fournissent ces fonctionnalités. 
   
 ## <a name="more-resources"></a>Autres ressources
 
-- Pour plus d’informations sur l’utilisation de PowerShell, consultez la rubrique relative aux [clauses d’exclusion de responsabilité, signatures, pieds de page ou en-têtes de message à l’échelle de l’organisation dans Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers) .
+- Pour plus d’informations sur l’utilisation de PowerShell, voir les clauses d’exclusion de responsabilité, les signatures, les pieds de ligne ou les [en-têtes](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers) des messages à l’échelle de l’organisation dans Exchange Online.

@@ -1,9 +1,9 @@
 ---
-title: Faire part de vos commentaires sur Microsoft 365 Defender
-description: Fournir des commentaires sur le produit sur Microsoft 365 Defender
-keywords: Commentaires, sécurité M365, sécurité, 365, fonctionnalités
+title: Fournir des commentaires sur Microsoft 365 Defender
+description: Fournir des commentaires sur les produits sur Microsoft 365 Defender
+keywords: commentaires, sécurité m365, sécurité, 365, fonctionnalités
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,27 +19,28 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 56f8bd0ff303ff38f8b3a577f6bc7aa58f21a745
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: a06f7254a892b8fd9942940946699ecb23707387
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846727"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926737"
 ---
-# <a name="provide-feedback-on-microsoft-365-defender"></a>Faire part de vos commentaires sur Microsoft 365 Defender
+# <a name="provide-feedback-on-microsoft-365-defender"></a>Fournir des commentaires sur Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **S’applique à :**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
-Vos commentaires nous aident à mieux protéger votre environnement contre les attaques avancées. Partagez votre expérience, vos impressions et vos demandes en vous donnant des commentaires.
+Vos commentaires nous aident à mieux protéger votre environnement contre les attaques avancées. Partagez votre expérience, vos impressions et vos demandes en fournissant des commentaires.
 
-1. Dans n’importe quelle partie du portail, sélectionnez **Envoyer des commentaires**. 
+1. Dans n’importe quelle partie du portail, **sélectionnez Faire part de vos commentaires.** 
 
-    ![Image du bouton commentaires](../../media/feedback.png)
+    ![Image du bouton de commentaires](../../media/feedback.png)
 
-2. Évaluez votre expérience et fournissez des informations sur ce que vous aimez ou des améliorations possibles. Vous pouvez également choisir d’être contacté pour les commentaires. 
+2. Évaluer votre expérience et fournir des détails sur ce que vous avez aimé ou sur les améliorations qui peuvent être apportées. Vous pouvez également choisir d’être contacté à propos des commentaires. 
 
 3. Sélectionnez **Envoyer**.

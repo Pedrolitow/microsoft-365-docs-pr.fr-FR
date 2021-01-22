@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - MET150
 description: Obtenir un support technique et de facturation à l’aide de numéros de téléphone répertoriés pour votre pays ou région ou en envoyant votre demande de service en ligne.
 feedback_system: None
 ms.date: 7/28/2020
-ms.openlocfilehash: f508607bb19a15fa089cf13eecfd7047f2e6f7bf
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 06f78d50901f279bf27f55f1b8f7ad867682d784
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307360"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925577"
 ---
 # <a name="ways-to-contact-support-for-business-products---admin-help"></a>Comment contacter le support relatif aux produits d’entreprises - Aide de l’administrateur
 
@@ -158,7 +159,7 @@ La Gravité B/c : 9:00 ~ 24:00 (heure de Pékin,Beijing) un jour 365 jours.
 
 ### <a name="open-an-online-request"></a>Ouvrir une demande en ligne
 
-Gagnez du temps en créant votre demande de service en ligne. Dans le Centre d’Administration Microsoft 365, choisissez**Support** \>**Nouvelle demande de service**.
+Gagnez du temps en créant votre demande de service en ligne. Dans le Centre d’Administration Microsoft 365, choisissez **Support** \>**Nouvelle demande de service**.
 
 ### <a name="call-support"></a>Appeler le support technique
 
@@ -239,7 +240,7 @@ Les options d’assistance ne concernent que les administrateurs des organisatio
 
 - **Ouvrir une demande en ligne.** Gagnez du temps en créant votre demande de service en ligne. Dans le Centre d’administration, sélectionnez **Support** \> **Nouvelle demande de service**. Nous vous aiderons à trouver une solution, ou nous vous mettrons en relation avec un spécialiste qui vous contactera par e-mail ou téléphone.
 
-- **Appelez l’assistance. ** Nous sommes ici pour vous aider. En tant qu’administrateur, vous devez avoir vos informations de compte prêtes lorsque vous appelez l’assistance.
+- **Appelez l’assistance.** Nous sommes ici pour vous aider. En tant qu’administrateur, vous devez avoir vos informations de compte prêtes lorsque vous appelez l’assistance.
 
 | Région | Numéro de téléphone | Heures |
 |-----------------------------------------------------|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

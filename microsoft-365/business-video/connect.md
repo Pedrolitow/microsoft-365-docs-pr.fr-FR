@@ -16,47 +16,48 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez comment connecter votre PC à Microsoft 365 Business.
-ms.openlocfilehash: 715f20ecd8f10d3d21fbdfac2953369504f02dec
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 61adae68541233ffb7b7087174c4633995b28fdd
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702300"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927309"
 ---
 # <a name="connect-your-pc-to-microsoft-365-business-premium"></a>Connecter votre PC à Microsoft 365 Business Premium
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3yXh3?autoplay=false]
 
 ## <a name="try-it"></a>Essayez !
-Une fois que vous avez configuré Microsoft 365 Business Premium (anciennement connu sous le nom de Microsoft 365 Business), vous et vos employés devez effectuer quelques étapes pour tirer pleinement parti de ses fonctionnalités de sécurité et de gestion. Ici&#39;s.
+Après avoir installé Microsoft 365 Business Premium (anciennement Microsoft 365 Business), vous et vos employés devez effectuer quelques étapes pour tirer pleinement parti de ses fonctionnalités de sécurité et de gestion. Voici&#39;comment faire.
 
-Tout d’abord, vérifiez que Windows 10 professionnel est installé :
+Tout d’abord, vérifiez que Windows 10 Professionnel est installé :
 
-1. Sélectionnez  **Démarrer** , Rechercher dans  **le panneau de configuration** , puis sélectionnez-le.
-2. Choisissez **système et**   >   **système** de sécurité, puis confirmez votre édition de Windows.
+1. Choisissez  **Démarrer,** recherchez  **le Panneau de** contrôle et sélectionnez-le.
+2. Choisissez **Système et système de**   >   **sécurité** et confirmez votre édition de Windows.
 
-Ensuite, connectez-vous à Microsoft 365 entreprise :
+Ensuite, connectez-vous à Microsoft 365 Business :
 
-1. Sélectionnez  **Démarrer** , puis sélectionnez l’icône  **paramètres** .
-2. Sélectionnez **comptes**  >   **accès professionnel ou établissement scolaire**   >   .
-3. Sélectionnez  **joindre cet appareil à Azure Active Directory**.
-4. Entrez l’adresse de messagerie de votre compte Microsoft 365, puis cliquez sur  **suivant**.
-5. Entrez votre mot de passe, sélectionnez  **connexion** , puis vérifiez que vous rejoignez la bonne organisation.
-6. Sélectionnez  **rejoindre** , puis sélectionnez  **Terminer**.
+1. Sélectionnez **Démarrer,** puis **l’icône Paramètres.**
+2. Select **Accounts**  >   **Access work or school**   >   **Connect**.
+3. Sélectionnez **Joindre cet appareil à Azure Active Directory.**
+4. Entrez l’adresse e-mail de votre compte Microsoft 365, puis sélectionnez  **Suivant**.
+5. Entrez votre mot de passe,  **sélectionnez Se connectez,** puis vérifiez que vous rejoignez l’organisation correcte.
+6. Sélectionnez  **Rejoindre,** puis  **Terminé**.
 
-En fonction de la configuration de Microsoft 365 entreprise, votre entreprise peut afficher une notification pour chiffrer votre PC. Pour chiffrer votre PC :
+Selon la façon dont votre entreprise a installé Microsoft 365 Business, vous pouvez voir une notification pour chiffrer votre PC. Pour chiffrer votre PC :
 
-1. Sélectionnez le message de  **chiffrement nécessaire**  .
-2. Sélectionnez  **je ne peux pas&#39;un autre logiciel de chiffrement de disque est installé, chiffrez tous mes disques** , puis sélectionnez  **Oui**. Vous verrez une fenêtre  **BitLocker de démarrage**  avec une barre de progression.
-3. Dans la fenêtre  **choisir comment déverrouiller votre lecteur au démarrage**  , sélectionnez **entrer un code confidentiel (recommandé)**.
-4. Entrez votre code confidentiel, puis entrez-le à nouveau pour le vérifier. Sélectionnez  **définir le code confidentiel**.
-5. Choisissez une méthode pour enregistrer une clé de récupération de chiffrement, puis cliquez sur  **suivant**.
-6. Sélectionnez le pourcentage de votre lecteur à chiffrer, puis cliquez sur  **suivant**.
-7. Choisissez un mode de chiffrement, sélectionnez  **suivant** , puis cliquez sur  **Continuer**. Votre lecteur sera maintenant chiffré. Vous pouvez continuer à travailler pendant le processus de chiffrement.
+1. Sélectionnez le message  **de chiffrement**  nécessaire.
+2. Sélectionnez  **I don&#39;'aucun** autre logiciel de chiffrement de disque n’est installé, chiffrez tous mes disques, puis sélectionnez  **Oui**. Vous verrez une fenêtre  **BitLocker de démarrage**  avec une barre de progression.
+3. Dans la **fenêtre Choisir comment déverrouiller votre lecteur au** démarrage, sélectionnez Entrer un code confidentiel **(recommandé).**
+4. Entrez votre code confidentiel, puis entrez-le à nouveau pour le vérifier. Sélectionnez  **Définir le code confidentiel**.
+5. Choisissez une méthode pour enregistrer une clé de récupération de chiffrement, puis sélectionnez  **Suivant**.
+6. Choisissez la quantité de votre lecteur à chiffrer, puis sélectionnez **Suivant.**
+7. Choisissez un mode de chiffrement, **sélectionnez Suivant,** puis **continuez.** Votre lecteur sera désormais chiffré. Vous pouvez continuer à travailler pendant le processus de chiffrement.
 
 Votre PC est désormais protégé et géré par Microsoft 365 Business.

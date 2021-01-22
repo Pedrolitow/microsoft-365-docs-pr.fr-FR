@@ -16,34 +16,35 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Découvrez comment planifier une réunion teams avec des invités.
-ms.openlocfilehash: 3efe87e93bc70adba4c99be3f2791e464cbfbc83
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Découvrez comment planifier une réunion Teams avec des invités.
+ms.openlocfilehash: 2da05fdd4bc10bb1cc0dea5cd769c4630787820c
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701929"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926089"
 ---
 # <a name="schedule-a-teams-meeting-with-guests"></a>Planifier une réunion Teams avec des invités
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOhP?autoplay=false]
 
-Vous pouvez inviter des personnes en dehors de votre organisation à une réunion sans les ajouter à Microsoft Teams. Voici comment cela fonctionne pour vos clients ou partenaires lorsqu’ils [rejoignent une réunion sans compte teams](https://support.microsoft.com/office/c6efc38f-4e03-4e79-b28f-e65a4c039508).
+Vous pouvez inviter des personnes extérieures à votre organisation à une réunion sans avoir à les ajouter à Microsoft Teams. Voici comment cela fonctionne pour vos clients ou partenaires lorsqu’ils rejoignent une [réunion sans compte Teams.](https://support.microsoft.com/office/c6efc38f-4e03-4e79-b28f-e65a4c039508)
 
 ## <a name="try-it"></a>Essayez !
 
-Avec Microsoft Teams, vous pouvez créer de nouvelles équipes au fur et à mesure que vous démarrez de nouveaux projets ou ajoutez des clients.
+Avec Microsoft Teams, vous pouvez créer de nouvelles équipes lorsque vous démarrez de nouveaux projets ou ajoutez des clients.
 
-1. Dans l'  **onglet teams** , sélectionnez **rejoindre ou créer une équipe**, **créer** une équipe, créer **une équipe de toutes pièces**, puis **privé**.
-2. Entrez un nom pour votre équipe, une description, puis sélectionnez  **créer**.
-3. Sur la page  **Ajouter des membres**  , ajoutez des membres internes en les recherchant et en les sélectionnant, puis ajoutez des membres invités en entrant leur adresse de messagerie, puis sélectionnez  **Ajouter**.
+1. Sous  **l’onglet Teams,** sélectionnez **Rejoindre** ou créer une **équipe,** créer une équipe, créer une équipe à partir de **zéro,** puis **Privé**.
+2. Entrez un nom pour votre équipe, une description, puis sélectionnez **Créer.**
+3. Dans la page  **Ajouter**  des membres, ajoutez des membres internes en les recherchant et en les sélectionnant, puis ajoutez des membres invités en entrant leur adresse e-mail, puis sélectionnez  **Ajouter**.
 
-    Si vous voyez s’afficher  **des correspondances** , vous devez activer le partage d’invités. Accédez au centre d’administration Microsoft 365, choisissez le centre d’administration Teams, choisissez  **paramètres** à l’échelle de l’organisation,  **accès invité** , puis activez  **autoriser l’accès invité dans teams**. Cette modification peut prendre jusqu’à 24 heures.
+    Si vous voyez  **que nous n’avons trouvé aucune correspondance,** vous devez activer le partage d’invités. Go to the Microsoft 365 admin center, choose the Teams admin center, choose  **Org-wide settings**,  **Guest access** , and turn on Allow guest access  **in Teams**. Cette modification peut prendre jusqu’à 24 heures.
 
-1. Sélectionnez  **Fermer**. Vos invités et membres recevront des invitations à l’équipe.
-2. Sur le canal général, entrez un message d’accueil pour tout le monde et sélectionnez  **Envoyer**.
-3. Dans l’onglet  **fichiers** , ajoutez des documents que vous souhaitez utiliser ensemble. Vous pouvez les créer ici ou les glisser-déplacer à partir de votre ordinateur.
+1. Sélectionnez **Fermer.** Vos invités et membres recevront des invitations à l’équipe.
+2. Sur le canal général, entrez un message d’accueil pour tout le monde et sélectionnez **Envoyer.**
+3. Sous  **l’onglet** Fichiers, ajoutez les documents sur qui vous souhaitez travailler ensemble. Vous pouvez les créer ici ou glisser-déposer des fichiers à partir de votre ordinateur.

@@ -15,18 +15,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez comment déplacer vos données et utilisateurs de Google Workspace vers Microsoft 365 pour les entreprises.
-ms.openlocfilehash: 70a90883d1edb0c87522174562a7f39006b732b6
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: 49fc163821f74ca42a07353e59ed4439b6d52023
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794632"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49924989"
 ---
 # <a name="switch-from-google-workspace---overview"></a>Basculer à partir de Google Workspace - Vue d’ensemble
 

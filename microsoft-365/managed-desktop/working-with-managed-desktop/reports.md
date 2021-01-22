@@ -9,41 +9,45 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: bfd8305d23e0e6d761c629ee3048c6204f702d37
-ms.sourcegitcommit: 98146c67a1d99db5510fa130340d3b7be8d81b21
+ms.openlocfilehash: a80616b58298ba544b9eab1d19ffb77f0e6825d4
+ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "49585327"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49921349"
 ---
 # <a name="work-with-reports"></a>Utiliser les rapports
 
-Microsoft Managed Desktop fournit plusieurs rapports et tableaux de bord que les administrateurs informatiques de votre organisation peuvent utiliser pour comprendre différents aspects de la population des appareils.Vous trouverez des rapports à deux emplacements : dans le [Gestionnaire de points de terminaison Microsoft](https://endpoint.microsoft.com) et dans le [centre d’administration 365 de Microsoft](https://admin.microsoft.com/adminportal/home?previewoff=false#/microsoftmanageddesktop). 
+Bureau géré Microsoft fournit plusieurs rapports et tableaux de bord que les administrateurs informatiques de votre organisation peuvent utiliser pour comprendre différents aspects de la population d’appareils.Vous trouverez des rapports à deux emplacements : dans [Microsoft Endpoint Manager](https://endpoint.microsoft.com) et dans le Centre d’administration [Microsoft 365.](https://admin.microsoft.com/adminportal/home?previewoff=false#/microsoftmanageddesktop) 
 
-## <a name="reports-in-microsoft-endpoint-manager"></a>Rapports dans le gestionnaire de points de terminaison Microsoft
+## <a name="reports-in-microsoft-endpoint-manager"></a>Rapports dans Microsoft Endpoint Manager
 
-La console du gestionnaire de point de terminaison Microsoft rassemble des rapports à partir de plusieurs produits dans un même emplacement pour vous aider à surveiller et à étudier les problèmes liés à la configuration et aux périphériques de votre organisation Azure AD (« client »). Le bureau géré Microsoft comporte une section sous **rapports** dans le menu principal, dans laquelle vous pouvez trouver des rapports spécifiques à la gestion du bureau géré Microsoft des appareils que vous avez enregistrés.
+La console Microsoft Endpoint Manager regroupe les rapports de plusieurs produits dans un emplacement unique pour vous aider à surveiller et à examiner les problèmes de configuration et d’appareils de votre organisation Azure AD (« client »). Bureau géré Microsoft comprend une section sous **Rapports** dans le menu principal où vous trouverez des rapports spécifiques à la gestion par Microsoft Managed Desktop des appareils que vous avez enregistrés.
 
-En outre, dans plusieurs emplacements de Microsoft Endpoint Manager, vous pouvez filtrer les rapports d’autres groupes de produits pour inclure ou exclure spécifiquement vos appareils gérés par le bureau géré Microsoft. Ces rapports ont intégré cette fonctionnalité de filtrage :
+Ces rapports sont les suivants :
+- **Appareils gérés**  >  **Mises à jour de fonctionnalités**: cet affichage affiche l’état global des mises à jour de fonctionnalités sur vos appareils de bureau géré Microsoft.
+- **Appareils gérés**  >  **Mises à jour Office**: cet affichage affiche l’état global des mises à jour d’Office sur vos appareils de bureau géré Microsoft.
 
-- **Tous les appareils**
-- **Conformité des appareils**
-- **Appareils non conformes**
+En outre, dans plusieurs emplacements de Microsoft Endpoint Manager, vous pouvez filtrer les rapports provenant d’autres groupes de produits afin d’inclure ou d’exclure spécifiquement vos appareils gérés par Bureau géré Microsoft. Ces rapports ont intégré cette fonctionnalité de filtrage :
+
+- [Tous les appareils](https://docs.microsoft.com/mem/intune/remote-actions/device-management#get-to-your-devices)
+- [Conformité des appareils](https://docs.microsoft.com/mem/intune/fundamentals/reports#device-compliance-report-organizational)
+- [Appareils non conformes](https://docs.microsoft.com/mem/intune/fundamentals/reports#noncompliant-devices-report-operational)
 
 > [!NOTE]
-> Les rôles de bureau géré Microsoft personnalisés garantissent l’accès uniquement aux rapports de bureau géré Microsoft. Pour accéder à d’autres parties du gestionnaire de points de terminaison Microsoft, telles que **tous les appareils**, consultez la rubrique [contrôle d’accès basé sur un rôle avec Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control). 
+> Les rôles Bureau géré Microsoft personnalisés garantissent l’accès uniquement aux rapports Bureau géré Microsoft. Pour accéder à d’autres parties de Microsoft Endpoint Manager, telles que tous les **appareils,** voir Contrôle d’accès basé sur un rôle [avec Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control). 
 
-## <a name="reports-in-microsoft-365-admin-center"></a>Rapports dans le centre d’administration Microsoft 365
+## <a name="reports-in-microsoft-365-admin-center"></a>Rapports dans le Centre d’administration Microsoft 365
 
-Vous trouverez des rapports Microsoft Managed Desktop Insights en ouvrant le [Centre d’administration microsoft 365](https://admin.microsoft.com/adminportal/home?previewoff=false#/microsoftmanageddesktop), puis en accédant à **rapports** et en sélectionnant **Microsoft Managed Desktop**. Vous pouvez également suivre le lien direct vers ces rapports à partir de l’onglet **bureau géré Microsoft** de la page d’accueil du [Gestionnaire de points de terminaison Microsoft](https://endpoint.microsoft.com). 
+Vous pouvez trouver des rapports d’informations sur le Bureau géré Microsoft en  ouvrant le Centre d’administration [Microsoft 365,](https://admin.microsoft.com/adminportal/home?previewoff=false#/microsoftmanageddesktop)puis en naviguant vers rapports et en sélectionnant **Bureau géré Microsoft.** Vous pouvez également suivre le lien direct vers ces rapports à partir de **l’onglet Bureau** géré Microsoft sur la page d’accueil [Microsoft Endpoint Manager](https://endpoint.microsoft.com). 
 
-Ces rapports sont les suivants : 
+Ces rapports sont les suivants : 
 
-- [Perspectives sur l’utilisation](usage-insights.md) : cette vue fournit des mesures d’utilisation pour vos appareils de bureau gérés par Microsoft.
-- [Perspectives de fiabilité](reliability-insights.md) : cette vue vous fournit un résumé de l’intégrité de vos appareils gérés.
-- Informations sur la [batterie](battery-insights.md) : cette vue affiche des informations sur la consommation d’énergie des applications et la durée de vie de la batterie pour les périphériques de votre environnement.
-- [Perspectives sur la mise à jour de sécurité Windows](security-update-insights.md) : cette vue vous montre des informations sur l’état des mises à jour de sécurité pour vos appareils de bureau gérés par Microsoft.
+- [Informations sur l’utilisation](usage-insights.md) : cet affichage fournit des mesures d’utilisation pour vos appareils bureau géré Microsoft.
+- [Informations de fiabilité](reliability-insights.md) : cet affichage vous fournit un résumé d’état de vos appareils gérés.
+- [Informations sur la batterie](battery-insights.md) : cet affichage vous présente des informations sur la consommation d’énergie des applications et l’autonomie de la batterie projetée pour les appareils de votre environnement.
+- [Informations sur les mises à](security-update-insights.md) jour de sécurité Windows : cet affichage affiche des informations sur l’état des mises à jour de sécurité pour vos appareils bureau géré Microsoft.
 
  ## <a name="inventory-data"></a>Données d’inventaire
 
-Outre les autres rapports, vous pouvez exporter des informations sur les appareils gérés par le bureau géré Microsoft. Dans l’affichage **périphériques** de la zone **périphériques** du gestionnaire de points de terminaison Microsoft, utilisez l’onglet **Exporter tout** pour [Télécharger un rapport d’inventaire détaillé](device-inventory-report.md).
+Outre les autres rapports, vous pouvez exporter des informations sur les appareils gérés par Bureau géré Microsoft. Dans la vue **Appareils** de la zone **Appareils**  de Microsoft Endpoint Manager, utilisez l’onglet Exporter tout pour télécharger un [rapport d’inventaire détaillé.](device-inventory-report.md)
