@@ -1,9 +1,9 @@
 ---
-title: Gérer l’accès aux données Microsoft 365 Defender dans le centre de sécurité Microsoft 365
+title: Gérer l’accès aux données Microsoft 365 Defender dans le Centre de sécurité Microsoft 365
 description: Découvrez comment gérer les autorisations d’accès aux données dans Microsoft 365 Defender
 keywords: accès, autorisations, MTP, Protection Microsoft contre les menaces, M365, sécurité, MCAS, MDATP, Cloud App Security, Microsoft Defender – Protection avancée contre les menaces, étendue, contrôle, RBAC
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 55b7b8c5755b773a4d53c95017a0a17a85495dee
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: 6f042b0c6314e8e5f80d40d76159712bc817a01c
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847247"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930137"
 ---
 # <a name="manage-access-to-microsoft-365-defender"></a>Gérer l’accès à Microsoft 365 Defender
 
@@ -32,9 +33,9 @@ ms.locfileid: "48847247"
 
 
 **S’applique à :**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
-Comptes affectés les rôles Azure Active Directory (AD) suivants peuvent accéder aux fonctionnalités et aux données de Microsoft 365 Defender :
+Les comptes affectés aux rôles Azure Active Directory (AD) suivants peuvent accéder aux fonctionnalités et données de Microsoft 365 Defender :
 - Administrateur général
 - Administrateur de sécurité
 - Opérateur de sécurité
@@ -50,15 +51,15 @@ L’accès à des fonctionnalités spécifiques est déterminé par votre[rôle 
 [Un examen et correction automatisés](mtp-autoir-actions.md) peuvent prendre une action sur les e-mails, les règles de transfert, les fichiers, les mécanismes de persistance et d’autres artefacts détectés lors des examens. Pour approuver ou refuser les actions en attente qui nécessitent une autorisation explicite, vous devez avoir certains rôles affectés dans Microsoft 365. Si vous souhaitez en savoir plus, veuillez consulter[Autorisation du centre de notification](mtp-action-center.md#required-permissions-for-action-center-tasks).
 
 ## <a name="access-to-data"></a>Accès aux données
-L’accès aux données Microsoft 365 Defender peut être contrôlé à l’aide de l’étendue affectée aux groupes d’utilisateurs dans Microsoft Defender pour le contrôle d’accès basé sur un rôle de point de terminaison (RBAC). Si votre accès n’est pas inclus dans l’étendue d’un ensemble spécifique d’appareils dans l’application Defender pour le point de terminaison, vous aurez un accès complet aux données dans Microsoft 365 Defender. Cependant, une fois votre compte étendu, vous verrez uniquement les données relatives aux appareils dans votre étendue.
+L’accès aux données de Microsoft 365 Defender peut être contrôlé à l’aide de l’étendue affectée aux groupes d’utilisateurs dans Microsoft Defender pour le contrôle d’accès basé sur les rôles de point de terminaison (RBAC). Si votre accès n’a pas été limité à un ensemble spécifique d’appareils dans Defender pour le point de terminaison, vous aurez un accès total aux données dans Microsoft 365 Defender. Cependant, une fois votre compte étendu, vous verrez uniquement les données relatives aux appareils dans votre étendue.
 
-Par exemple, si vous appartenez à un seul groupe d’utilisateurs avec un rôle Microsoft Defender pour le point de terminaison et que ce groupe d’utilisateurs a été autorisé à accéder uniquement aux appareils de vente, vous verrez uniquement les données sur les périphériques de vente dans Microsoft 365 Defender. [En savoir plus sur les paramètres RBAC dans Microsoft Defender pour le point de terminaison](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/rbac)
+Par exemple, si vous n’appartenez qu’à un seul groupe d’utilisateurs avec un rôle Microsoft Defender pour point de terminaison et que ce groupe d’utilisateurs n’a accès qu’aux appareils commerciaux, vous ne verrez que les données relatives aux appareils de vente dans Microsoft 365 Defender. [En savoir plus sur les paramètres RBAC dans Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/rbac)
 
 ### <a name="microsoft-cloud-app-security-access-controls"></a>Contrôles d'accès Microsoft Cloud App Security (MCAS)
-Pendant l’aperçu, Microsoft 365 Defender n’applique pas les contrôles d’accès basés sur les paramètres de sécurité de l’application Cloud. L’accès aux données Microsoft 365 Defender n’est pas affecté par ces paramètres.
+Pendant la prévisualisation, Microsoft 365 Defender n’applique pas les contrôles d’accès basés sur les paramètres Cloud App Security. L’accès aux données de Microsoft 365 Defender n’est pas affecté par ces paramètres.
 
 ## <a name="related-topics"></a>Sujets associés
 
 - [Rôles Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
-- [Microsoft Defender pour le RBAC de point de terminaison](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/rbac)
+- [Microsoft Defender pour point de terminaison RBAC](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/rbac)
 - [Rôles des sécurité de l’application cloud](https://docs.microsoft.com/cloud-app-security/manage-admins)

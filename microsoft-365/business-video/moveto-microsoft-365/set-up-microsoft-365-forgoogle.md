@@ -1,5 +1,5 @@
 ---
-title: Configurer Microsoft 365 pour la migration de Google Workspace
+title: Configurer Microsoft 365 pour la migration d’espace de travail Google
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -15,20 +15,21 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez comment configurer Microsoft 365 afin qu’il soit prêt pour la migration à partir de Google Workspace.
-ms.openlocfilehash: ec8813f62febbd1c4ee2afa6877e4be505a75a81
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: 42b8cd86ec03c4d4b43a4d32a1cee56e94bb7147
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794633"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928185"
 ---
-# <a name="set-up-microsoft-365-for-google-workspace-migration"></a>Configurer Microsoft 365 pour la migration de Google Workspace
+# <a name="set-up-microsoft-365-for-google-workspace-migration"></a>Configurer Microsoft 365 pour la migration d’espace de travail Google
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4JD2Y?autoplay=false]
 
@@ -44,7 +45,7 @@ Pour migrer le courrier électronique, le calendrier et les contacts à partir d
 1. Entrez les adresses de messagerie où vos utilisateurs recevront leurs nouvelles informations d’identification, **sélectionnez Envoyer un e-mail et continuer.**
 1. **Continuez** ensuite pour connecter votre domaine temporaire. 
 1. Si vous le souhaitez, choisissez d’informer les utilisateurs de votre organisation sur Teams, puis sélectionnez **Continuer.**
-1. Développez et examinez vos paramètres Android et **iOS,** puis sélectionnez Créer une stratégie de gestion **des applications mobiles.**
+1. Développez et examinez vos paramètres Android et **iOS,** puis sélectionnez Créer une stratégie **de gestion des applications mobiles.**
 1. Fournissez des commentaires, si vous le souhaitez, et choisissez **Go to admin center**.
 
-L’étape suivante du processus consistera à configurer des protections pour votre organisation.
+L’étape suivante du processus consiste à configurer des protections pour votre organisation.

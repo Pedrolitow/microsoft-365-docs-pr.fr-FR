@@ -1,10 +1,10 @@
 ---
-title: Obtenir des informations pertinentes sur une entité avec la recherche de Go
-description: Découvrez comment utiliser l’outil « aller-retour » pour demander rapidement des informations pertinentes sur une entité ou un événement à l’aide de la chasse avancée.
-keywords: recherche avancée, incident, tableau croisé dynamique, entité, recherche de contenu, événements pertinents, recherche de menace, recherche sur les menaces informatiques, recherche, requête, télémétrie, Microsoft 365, protection contre les menaces Microsoft
+title: Obtenir des informations pertinentes sur une entité avec go hunt
+description: Découvrez comment utiliser l’outil de recherche pour rapidement interroger des informations pertinentes sur une entité ou un événement à l’aide d’un recherche avancée.
+keywords: advanced hunting, incident, pivot, entity, go hunt, relevant events, threat hunting, cyber threat hunting, search, query, telemetry, Microsoft 365, Microsoft Threat Protection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,44 +19,45 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 9ddad74d179ac16a25640e2bdf4ed4906f920102
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: 9e707fe8b3dff40d0698630cd0592b297042e5fb
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846879"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49929504"
 ---
-# <a name="quickly-hunt-for-entity-or-event-information-with-go-hunt"></a>Recherche rapide d’informations sur les entités ou les événements avec la recherche de Go
+# <a name="quickly-hunt-for-entity-or-event-information-with-go-hunt"></a>Recherche rapide des informations sur l’entité ou les événements avec la recherche de go
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **S’applique à :**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
-L’action de *recherche aller-retour* vous permet d’examiner rapidement les événements et différents types d’entité à l’aide de puissantes fonctionnalités de recherche [avancée](advanced-hunting-overview.md) basées sur les requêtes. Cette action exécute automatiquement une requête de chasse avancée pour trouver des informations pertinentes sur l’événement ou l’entité sélectionné.
+Avec *l’action de recherche* go, vous pouvez rapidement examiner les événements et différents types d’entités à l’aide de puissantes fonctionnalités de recherche avancée [basées](advanced-hunting-overview.md) sur des requêtes. Cette action exécute automatiquement une requête de recherche avancée pour rechercher des informations pertinentes sur l’événement ou l’entité sélectionné.
 
-L’action aller à la *recherche* est disponible dans les différentes sections du centre de sécurité chaque fois que des détails d’événements ou d’entités sont affichés. Par exemple, vous pouvez utiliser la *recherche aller* à partir des sections suivantes :
+*L’action de recherche* est disponible dans différentes sections du centre de sécurité chaque fois que les détails de l’événement ou de l’entité sont affichés. Par exemple, vous pouvez utiliser *la recherche dans* les sections suivantes :
 
-- Dans la [page incident](investigate-incidents.md#incident-overview), vous pouvez consulter les détails relatifs aux utilisateurs, aux appareils et à de nombreuses autres entités associées à un incident. Lorsque vous sélectionnez une entité, vous obtenez des informations supplémentaires, ainsi que diverses actions que vous pouvez effectuer sur cette entitity. Dans l’exemple ci-dessous, une boîte aux lettres est sélectionnée, affichant des détails sur la boîte aux lettres, ainsi que la recherche d’informations supplémentaires sur la boîte aux lettres.
+- Dans la [page Incident,](investigate-incidents.md#incident-overview)vous pouvez consulter les détails sur les utilisateurs, les appareils et de nombreuses autres entités associées à un incident. Lorsque vous sélectionnez une entité, vous obtenez des informations supplémentaires ainsi que diverses actions que vous pouvez prendre sur cette entité. Dans l’exemple ci-dessous, une boîte aux lettres est sélectionnée, affichant des détails sur la boîte aux lettres, ainsi que l’option de recherche pour plus d’informations sur la boîte aux lettres.
 
-    ![Image illustrant les détails de la boîte aux lettres avec l’option aller à la recherche](../../media/mtp-ah/go-hunt-email.png)
+    ![Image montrant les détails de la boîte aux lettres avec l’option aller à la recherche](../../media/mtp-ah/go-hunt-email.png)
 
-- Dans la page incident, vous pouvez également accéder à une liste d’entités sous l’onglet preuve. La sélection de l’une de ces entités offre une option permettant de rechercher rapidement des informations sur cette entité.
+- Dans la page incident, vous pouvez également accéder à une liste d’entités sous l’onglet Preuve. La sélection de l’une de ces entités permet de trouver rapidement des informations sur cette entité.
 
-    ![Image illustrant le fichier sélectionné avec l’option aller à la recherche dans l’onglet preuve](../../media/mtp-ah/go-hunt-evidence-file.png)
+    ![Image montrant le fichier sélectionné avec l’option Aller à la recherche dans l’onglet Preuves](../../media/mtp-ah/go-hunt-evidence-file.png)
 
 
-- Lors de l’affichage de la chronologie d’un appareil, vous pouvez sélectionner un événement dans la chronologie pour afficher des informations supplémentaires sur cet événement. Une fois qu’un événement est sélectionné, vous avez la possibilité de rechercher d’autres événements pertinents dans la recherche avancée.
+- Lorsque vous affichez la chronologie d’un appareil, vous pouvez sélectionner un événement dans la chronologie pour afficher des informations supplémentaires sur cet événement. Une fois qu’un événement est sélectionné, vous avez la possibilité de chercher d’autres événements pertinents dans le hunting avancé.
 
     ![Image montrant les détails de l’événement avec l’option aller à la recherche](../../media/mtp-ah/go-hunt-event.png)
 
-La sélection de l’option **aller-retour** ou **Hunt pour les événements associés** transmet des requêtes différentes, selon que vous avez sélectionné une entité ou un événement.
+La sélection **de la** fonction De recherche ou de recherche pour les événements connexes transmet différentes requêtes, selon que vous avez sélectionné une entité ou un événement. 
 
-## <a name="query-for-entity-information"></a>Requête d’informations d’entité
-Lors de l’utilisation de la *recherche aller-retour* pour obtenir des informations sur un utilisateur, un appareil ou tout autre type d’entité, la requête vérifie toutes les tables de schéma pertinentes pour les événements impliquant cette entité. Pour que les résultats soient gérables, la requête est étendue à environ la même période que l’activité la plus ancienne au cours des 30 derniers jours qui implique l’entité et qui est associée à l’incident.
+## <a name="query-for-entity-information"></a>Requête d’informations sur l’entité
+Lorsque vous utilisez *go hunt* to query for information about a user, device, or any other type of entity, the query checks all relevant schema tables for any events involving that entity. Pour que les résultats restent gérables, la requête est limitée à la même période que l’activité la plus tôt au cours des 30 derniers jours qui implique l’entité et est associée à l’incident.
 
-Voici un exemple de la requête Go Hunt pour un appareil :
+Voici un exemple de requête go hunt pour un appareil :
 
 ```kusto
 let selectedTimestamp = datetime(2020-06-02T02:06:47.1167157Z);
@@ -70,7 +71,7 @@ and DeviceName == deviceName
 | take 100
 ```
 ### <a name="supported-entity-types"></a>Types d’entités pris en charge
-Vous pouvez utiliser la *recherche aller-retour* après avoir sélectionné l’un de ces types d’entité :
+Vous pouvez utiliser *la recherche après* avoir sélectionné l’un des types d’entités ci-après :
 
 - Fichiers
 - Messages électroniques
@@ -81,8 +82,8 @@ Vous pouvez utiliser la *recherche aller-retour* après avoir sélectionné l’
 - Adresses IP
 - URL
 
-## <a name="query-for-event-information"></a>Requête d’informations sur l’événement
-Lors de l’utilisation de la *recherche aller-retour* pour obtenir des informations sur un événement de chronologie, la requête vérifie toutes les tables de schéma pertinentes pour les autres événements autour de l’heure de l’événement sélectionné. Par exemple, la requête suivante répertorie les événements de différentes tables de schéma qui se sont produites sur la même période sur le même appareil :
+## <a name="query-for-event-information"></a>Requête d’informations sur les événements
+Lorsque vous *utilisez go hunt* to query pour obtenir des informations sur un événement de chronologie, la requête vérifie toutes les tables de schéma pertinentes pour les autres événements à l’heure de l’événement sélectionné. Par exemple, la requête suivante répertorie les événements dans différentes tables de schéma qui se sont produits autour de la même période sur le même appareil :
 
 ```kusto
 // List relevant events 30 minutes before and after selected LogonAttempted event
@@ -96,17 +97,17 @@ search in (DeviceFileEvents, DeviceProcessEvents, DeviceEvents, DeviceRegistryEv
 ```
 
 ## <a name="adjust-the-query"></a>Ajuster la requête
-Avec certaines connaissances du [langage de requête](advanced-hunting-query-language.md), vous pouvez ajuster la requête à vos préférences. Par exemple, vous pouvez ajuster cette ligne, ce qui détermine la taille de la fenêtre de temps :
+Avec une certaine connaissance du langage [de requête,](advanced-hunting-query-language.md)vous pouvez ajuster la requête à votre préférence. Par exemple, vous pouvez ajuster cette ligne, qui détermine la taille de la fenêtre de temps :
 
 ```kusto
 Timestamp between ((selectedTimestamp - 1h) .. (selectedTimestamp + 1h))
 ```
 
-En plus de modifier la requête pour obtenir des résultats plus pertinents, vous pouvez également effectuer les opérations suivantes :
-- [Afficher les résultats sous forme de graphiques](advanced-hunting-query-results.md#view-query-results-as-a-table-or-chart)
+En plus de modifier la requête pour obtenir des résultats plus pertinents, vous pouvez également :
+- [Afficher les résultats en tant que graphiques](advanced-hunting-query-results.md#view-query-results-as-a-table-or-chart)
 - [Créer une règle de détection personnalisée](custom-detection-rules.md)
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques associées
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Travailler avec les résultats de la requête](advanced-hunting-query-results.md)

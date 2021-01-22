@@ -1,10 +1,10 @@
 ---
-title: Synthèse des résultats du projet pilote Microsoft 365 Defender
-description: Concluez votre projet pilote de Microsoft 365 Defender en remplissant votre carte de performance, en analysant les résultats de vos rapports et en choisissant le mode de déplacement vers l’avant.
-keywords: Microsoft Threat Protection Pilot, déterminer ce qu’il faut faire immédiatement après le projet pilote de protection contre les menaces Microsoft, ce qu’il faut faire après avoir évalué Microsoft Threat Protection en production, passer de Microsoft Threat Protection Pilot au déploiement, Cyber Security, Advanced persistent, Enterprise Security, périphériques, Device, Identity, Users, Data, applications, incidents, analyse et correction automatisées
+title: Synthèse des résultats de votre projet Microsoft 365 Defender pilote
+description: Terminez votre projet Pilote Microsoft 365 Defender en complétant votre carte de performance, en analysant les résultats de votre rapport et en déterminant comment aller de l’avant.
+keywords: Pilote de la Protection Microsoft contre les menaces, décidez de ce qu’il faut faire après le projet pilote de Protection Microsoft contre les menaces, ce qu’il faut faire après avoir évalué la Protection Microsoft contre les menaces en production, passer du pilote de la Protection Microsoft contre les menaces au déploiement, à la cybersécurité, aux menaces avancées persistantes, à la sécurité d’entreprise, aux appareils, aux appareils, à l’identité, aux utilisateurs, aux données, aux applications, aux incidents, à l’examen et à la correction automatisés, à la recherche avancée
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,12 +20,13 @@ ms.collection:
 - m365solution-scenario
 - m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: 3fe5bfdec566b0988d9f565595624fc8dd597788
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.technology: m365d
+ms.openlocfilehash: c8608568301f11a20c940a5ff9f1c205ce6e48f1
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49130922"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930161"
 ---
 # <a name="closing-and-summarizing-your-microsoft-365-defender-pilot"></a>Fermeture et synthèse de votre pilote Microsoft 365 Defender  
 
@@ -39,28 +40,28 @@ ms.locfileid: "49130922"
 
 |[![Planification](../../media/phase-diagrams/1-planning.png)](mtp-pilot-plan.md)<br/>[Planification](mtp-pilot-plan.md) |[![Préparation](../../media/phase-diagrams/2-prepare.png)](prepare-mtpeval.md)<br/>[Préparation](prepare-mtpeval.md) | [![Simuler une attaque](../../media/phase-diagrams/3-simluate.png)](mtp-pilot-simulate.md)<br/>[Simuler une attaque](mtp-pilot-simulate.md) | ![Fermer et synthétiser](../../media/phase-diagrams/4-summary.png)<br/>Fermer et synthétiser|
 |--|--|--|--|
-|| | |*Vous êtes là !*|
+|| | |*Vous êtes là !*|
 
 
-Vous êtes actuellement à la fin de la phase de clôture et de synthèse.
+Vous êtes actuellement en phase de fermeture et de synthèse.
 
-Vous venez d’exécuter une simulation d’attaque de mémoire avancée uniquement qui a exécuté le code à distance sur un contrôleur de domaine. Vous avez vu comment Microsoft Defender for Endpoint and Microsoft Defender for Identity Detect et créer des alertes sur les activités malveillantes Stealthy. Vous avez également vu comment les alertes provenant de sources différentes sont fournies, ainsi que d’autres informations contextuelles en un seul incident dans le portail du centre de sécurité Microsoft 365. Cette intégration permet à des analystes SOC d’examiner et de prendre les mesures nécessaires. Vous avez également créé une requête de chasse avancée qui identifie les messages électroniques entrants à l’endroit où l’utilisateur a ouvert ou enregistré la pièce jointe et a créé une détection basée sur cette requête.
+Vous viennent d’exécuter une simulation d’attaque mémoire uniquement avancée qui exécutait le code à distance sur un contrôleur de domaine. Vous avez vu comment Microsoft Defender pour le point de terminaison et Microsoft Defender pour l’identité détectent et créent des alertes sur les activités malveillantes. Vous avez également vu comment les alertes provenant de différentes sources sont remis avec d’autres informations contextuelles dans un incident unique dans le portail centre de sécurité Microsoft 365. L’expérience d’une telle intégration permet aux analystes SOC d’examiner et de prendre les mesures nécessaires. Vous avez également créé une requête de repérage avancé qui identifiera les e-mails entrants dans lequel l’utilisateur a ouvert ou enregistré la pièce jointe et créé la détection en fonction de cette requête.
 
 Vous avez atteint la fin du processus une fois tous les tests terminés.
 
-La sortie finale doit être :
+Le résultat final doit être :
 
 - Une carte de performance terminée
-- Un rapport détaillé sur les résultats du projet pilote
-- Une décision concernant le déplacement vers l’avant
+- Un rapport détaillé des résultats du projet pilote
+- Décision sur la marche à suivre
 
-Présenter les rapports de votre production finale aux parties prenantes internes (que vous avez identifiées pendant la phase de [préparation](https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval) ) et les contacts Microsoft. Un tel effort garantit que les commentaires peuvent être utilisés pour améliorer les produits et la documentation.
+Présentez les rapports de votre sortie finale aux parties prenantes internes (que vous avez identifiées pendant la phase [de](https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval) préparation) et aux contacts Microsoft. Un tel effort garantit que tous les commentaires peuvent être utilisés pour améliorer les produits et la documentation.
 
-Nous espérons que vous avez apprécié cette simulation. Commencez à implémenter ce que vous avez appris à une plus grande échelle dans votre organisation pour tirer le meilleur parti de la solution de sécurité intégrée.
+Nous espérons que vous avez aimé cette simulation. Commencez à implémenter ce que vous avez appris à une plus grande échelle dans votre organisation pour tirer le meilleur partie de la solution de sécurité intégrée.
 
 ## <a name="next-step"></a>Étape suivante
-Pour plus d’informations sur les piliers de Microsoft 365 Defender, consultez les guides interactifs suivants :
+En savoir plus sur les piliers de Microsoft 365 Defender via les guides interactifs suivants :
 - [Protéger votre organisation avec Microsoft Defender pour Office 365](https://aka.ms/O365ATP-Interactive-Guide)
-- [Détecter les activités suspectes et les attaques potentielles avec Microsoft Defender pour l’identité](https://aka.ms/AATP-Interactive-Guide)
-- [Détecter les menaces et gérer les alertes à l’aide de Microsoft Cloud App Security](https://aka.ms/DetectThreatsAndAlertsMCAS-InteractiveGuide)
-- [Examiner et résoudre les menaces avec Microsoft Defender pour le point de terminaison](https://aka.ms/MDATP-IR-Interactive-Guide)
+- [Détecter des activités suspectes et des attaques potentielles à l’aide de Microsoft Defender pour l’identité](https://aka.ms/AATP-Interactive-Guide)
+- [Détecter les menaces et gérer les alertes avec Microsoft Cloud App Security](https://aka.ms/DetectThreatsAndAlertsMCAS-InteractiveGuide)
+- [Examiner et corriger les menaces avec Microsoft Defender pour le point de terminaison](https://aka.ms/MDATP-IR-Interactive-Guide)

@@ -1,5 +1,5 @@
 ---
-title: Centre d’administration Microsoft 365-vue d’ensemble
+title: Centre d’administration Microsoft 365 - Vue d’ensemble
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,39 +16,40 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: En savoir plus sur le centre d’administration Microsoft 365.
-ms.openlocfilehash: 9d3b8c83429eec924e23ae1a63e57d6ed36f76b3
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: En savoir plus sur le Centre d’administration Microsoft 365.
+ms.openlocfilehash: 3070d6e9ce035786291fab4557648ab6bc520540
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702420"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927585"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Vue d’ensemble du centre d’administration Microsoft 365
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWfvDL?autoplay=false]
 
-Le centre d’administration Microsoft 365 est l’endroit où vous gérez votre entreprise dans le Cloud. Vous pouvez effectuer des tâches telles que l’ajout et la suppression d’utilisateurs, la modification des licences et la réinitialisation des mots de passe. 
+Le Centre d’administration Microsoft 365 est l’endroit où vous gérez votre entreprise dans le cloud. Vous pouvez effectuer des tâches telles que l’ajout et la suppression d’utilisateurs, la modification des licences et la réinitialisation des mots de passe. 
 
-Pour accéder au centre d’administration Microsoft 365, accédez à [admin.Microsoft.com](https://admin.microsoft.com) ou, si vous êtes déjà connecté, sélectionnez le lanceur d’applications, puis choisissez **administrateur**.
+To get to the Microsoft 365 admin center, go to [admin.microsoft.com](https://admin.microsoft.com) or, if you’re already signed in, select the app launcher, and choose **Admin**.
 
-Sur la page d’accueil, vous pouvez créer des cartes pour les tâches que vous effectuez fréquemment. Pour ajouter une nouvelle carte, sélectionnez **Ajouter une carte**, puis sélectionnez le signe plus en regard de la carte que vous souhaitez ajouter. Lorsque vous avez terminé, fermez la fenêtre. Vous pouvez réorganiser les cartes en les sélectionnant et en les faisant glisser vers l’emplacement de votre choix. Pour supprimer une carte, sélectionnez **actions supplémentaires**, puis **supprimer**.
+Dans la page d’accueil, vous pouvez créer des cartes pour les tâches que vous effectuez fréquemment. Pour ajouter une nouvelle carte, sélectionnez **Ajouter une carte,** puis sélectionnez le signe plus à côté de la carte que vous souhaitez ajouter. Lorsque vous avez terminé, fermez la fenêtre. Vous pouvez réorganiser les cartes en les sélectionnant, puis en les faisant glisser vers l’endroit de votre choix. Pour supprimer une carte, sélectionnez **Plus d’actions,** puis choisissez **Supprimer.**
 
 Pour afficher d’autres tâches d’administration, développez le menu de navigation. Vous trouverez des paramètres de configuration avancés dans les centres d’administration supplémentaires en bas.
 
-L’ajout d’un utilisateur est une tâche courante que vous pouvez effectuer dans le centre d’administration. Pour ce faire, sélectionnez **utilisateurs**, **utilisateurs actifs**, puis **Ajouter un utilisateur**. Entrez le nom de l’utilisateur et d’autres informations, puis cliquez sur **suivant**. Suivez les invites pour terminer l’ajout de l’utilisateur. Lorsque vous avez terminé, sélectionnez **terminer l’ajout**, puis cliquez sur **Fermer**.
+Une tâche courante que vous pouvez effectuer dans le Centre d’administration consiste à ajouter un utilisateur. Pour ce faire, sélectionnez **Utilisateurs,** **Utilisateurs actifs,** puis **Ajouter un utilisateur.** Entrez le nom de l’utilisateur et d’autres informations, puis sélectionnez **Suivant**. Suivez les invites pour terminer l’ajout de l’utilisateur. Lorsque vous avez terminé, **sélectionnez Terminer l’ajout,** puis **fermez**.
 
-Vous pouvez trier vos utilisateurs actifs par colonnes, comme le **nom complet** ou les **licences**. Pour ajouter d’autres colonnes, sélectionnez **choisir les colonnes**, sélectionnez les colonnes à ajouter, puis **Enregistrer**.
+Vous pouvez trier vos utilisateurs actifs par colonnes, telles que le nom **d’affichage** ou **les licences.** Pour ajouter d’autres colonnes, **sélectionnez Choisir** des colonnes, sélectionnez les colonnes que vous souhaitez ajouter, puis sélectionnez **Enregistrer.**
 
-Sélectionnez un utilisateur pour afficher d’autres options, telles que la gestion de ses licences de produit.
+Sélectionnez un utilisateur pour voir d’autres options, telles que la gestion de ses licences de produit.
 
-Pour activer les fonctionnalités supplémentaires fournies avec votre abonnement, sélectionnez **configuration**. Ici, vous pouvez activer la sécurité de connexion, la protection d’application mobile, DLP et d’autres fonctionnalités incluses avec votre abonnement.
+Pour activer d’autres fonctionnalités qui s’offrent à vous avec votre abonnement, sélectionnez **Installation.** Vous pouvez activer la sécurité de la signature, la protection des applications mobiles, la protection contre la DLP et d’autres fonctionnalités incluses dans votre abonnement.
 
-Si vous avez besoin d’une assistance à tout moment, choisissez une **aide**. Entrez votre question, puis consultez les liens qui s’affichent. Si vous n’obtenez pas votre réponse ici, sélectionnez **contacter le support** pour ouvrir une demande de service. 
+Si vous avez besoin d’aide à tout moment, sélectionnez **Besoin d’aide.** Entrez votre question, puis consultez les liens qui s’affichent. Si vous n’obtenez pas votre réponse ici, sélectionnez **Contacter le support** technique pour ouvrir une demande de service. 
 
 Pour plus d’informations sur la gestion de la facturation, des mots de passe, des utilisateurs et des administrateurs, consultez les autres leçons de ce cours.

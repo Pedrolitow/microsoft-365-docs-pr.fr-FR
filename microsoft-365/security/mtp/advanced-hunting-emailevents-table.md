@@ -4,7 +4,7 @@ description: En savoir plus sur les événements associés aux e-mails Microsoft
 keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, EmailEvents, network message id, sender, recipient, attachment id, attachment id, attachment name, malware verdict, phishing verdict, attachment count, link count, url count
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 6dbd7473074212c6bc257e683288040056426048
-ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
+ms.technology: m365d
+ms.openlocfilehash: 48a0fe53cb92214d616887741c0c260edf1653c2
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49780271"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928985"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -63,27 +64,27 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `DeliveryLocation` | chaîne | Emplacement de remise du courrier électronique : boîte de réception/dossier, local/externe, courrier indésirable, quarantaine, échec, supprimé, éléments supprimés |
 | `PhishFilterVerdict` | chaîne | Verdict de la pile de filtrage d’e-mails selon que l’e-mail is est phish : Phish ou non Phish |
 | `PhishDetectionMethod` | chaîne | Méthode utilisée pour détecter l’e-mail comme un hameçonnage : réputation d’URL malveillante, détonation d’URL de liens sûrs, filtre de hameçonnage avancé, filtre anti-hameçonnage général, anti-usurpation d’identité : intra-organisation, usurpation d’identité : domaine externe, emprunt d’identité de domaine, emprunt d’identité d’utilisateur, emprunt d’identité de marque |
-| `MalwareFilterVerdict` | chaîne | Verdict de la pile de filtrage d’e-mails selon que l’e-mail contient des programmes malveillants : programme malveillant, programme non malveillant |
-| `MalwareDetectionMethod` | chaîne | Méthode utilisée pour détecter les programmes malveillants dans le courrier électronique : moteur anti-programme malveillant, réputation du fichier, pièces jointes sécurisées |
+| `MalwareFilterVerdict` | string | Verdict de la pile de filtrage d’e-mails selon que l’e-mail contient des programmes malveillants : programme malveillant, programme non malveillant |
+| `MalwareDetectionMethod` | string | Méthode utilisée pour détecter les programmes malveillants dans le courrier électronique : moteur anti-programme malveillant, réputation du fichier, pièces jointes sécurisées |
 | `EmailAction` | chaîne | Action finale effectuée sur l’e-mail sur la base du verdict du filtre, des stratégies et des actions des utilisateurs : déplacer le message vers le dossier courrier indésirable, ajouter l’en-tête X, modifier l’objet, rediriger le message, supprimer le message, envoyer à la quarantaine, aucune action entreprise |
 | `EmailActionPolicy` | chaîne | Stratégie d’action appliquée : antispam hautement fiable, anti-courrier indésirable, antispam, courrier indésirable de courrier indésirable, emprunt d’identité de domaine anti-hameçonnage, emprunt d’identité d’utilisateur anti-hameçonnage, usurpation d’identité anti-hameçonnage, emprunt d’identité de graphe anti-hameçonnage, anti-programme malveillant, sécurité pièces jointes, règles de transport d’entreprise (ETR) |
 | `EmailActionPolicyGuid` | chaîne | Identificateur unique de la stratégie qui a déterminé l’action de courrier finale |
 | `AttachmentCount` | int | Nombre de pièces jointes dans l’e-mail. |
 | `UrlCount` | int | Nombre d’URL incorporées dans l’e-mail |
 | `EmailLanguage` | chaîne | Langue détectée du contenu de l’e-mail |
-| `OrgLevelAction` | chaîne | Action entreprise sur le courrier électronique en réponse à des correspondances à une stratégie définie au niveau de l’organisation |
-| `OrgLevelPolicy` | chaîne | Stratégie organisationnelle qui a déclenché l’action entreprise sur le courrier électronique |
-| `UserLevelAction` | chaîne | Action prise sur le courrier électronique en réponse à des correspondances à une stratégie de boîte aux lettres définie par le destinataire |
-| `UserLevelPolicy` | chaîne | Stratégie de boîte aux lettres d’utilisateur final qui a déclenché l’action sur le courrier électronique |
-| `Connectors` | chaîne | Instructions personnalisées qui définissent le flux de messagerie de l’organisation et la façon dont le courrier a été acheminé |
-| `SenderDisplayName` | chaîne | Nom de l’expéditeur affiché dans le carnet d’adresses, généralement une combinaison d’un prénom ou d’un prénom donné, d’une initiale du deuxième prénom et d’un nom ou d’un nom de famille |
-| `SenderObjectId` | chaîne |Identificateur unique du compte de l’expéditeur dans Azure AD |
-| `ThreatTypes` | chaîne | Verdict de la pile de filtrage du courrier électronique selon que l’e-mail contient des programmes malveillants, du hameçonnage ou d’autres menaces |
-| `ThreatNames` | chaîne |Nom de détection des programmes malveillants ou autres menaces détectées |
-| `DetectionMethods` | chaîne | Méthodes utilisées pour détecter les programmes malveillants, le hameçonnage ou d’autres menaces détectées dans l’e-mail |
+| `OrgLevelAction` | string | Action entreprise sur le courrier électronique en réponse à des correspondances à une stratégie définie au niveau de l’organisation |
+| `OrgLevelPolicy` | string | Stratégie organisationnelle qui a déclenché l’action entreprise sur le courrier électronique |
+| `UserLevelAction` | string | Action prise sur le courrier électronique en réponse à des correspondances à une stratégie de boîte aux lettres définie par le destinataire |
+| `UserLevelPolicy` | string | Stratégie de boîte aux lettres d’utilisateur final qui a déclenché l’action sur le courrier électronique |
+| `Connectors` | string | Instructions personnalisées qui définissent le flux de messagerie de l’organisation et la façon dont le courrier a été acheminé |
+| `SenderDisplayName` | string | Nom de l’expéditeur affiché dans le carnet d’adresses, généralement une combinaison d’un prénom ou d’un prénom donné, d’une initiale du deuxième prénom et d’un nom ou d’un nom de famille |
+| `SenderObjectId` | string |Identificateur unique du compte de l’expéditeur dans Azure AD |
+| `ThreatTypes` | string | Verdict de la pile de filtrage du courrier électronique selon que l’e-mail contient des programmes malveillants, du hameçonnage ou d’autres menaces |
+| `ThreatNames` | string |Nom de détection des programmes malveillants ou autres menaces détectées |
+| `DetectionMethods` | string | Méthodes utilisées pour détecter les programmes malveillants, le hameçonnage ou d’autres menaces détectées dans l’e-mail |
 
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques associées
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)

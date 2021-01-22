@@ -5,34 +5,35 @@ author: danihalfin
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Les administrateurs peuvent apprendre à créer des charges utiles personnalisées pour la formation à la simulation d’attaques dans Microsoft Defender pour Office 365.
-ms.openlocfilehash: 86a962dc3117708ac71195b9efc336fa30c573dd
-ms.sourcegitcommit: 99a7354e6a6b4d9d5202674ef57852d52a43fef6
+ms.technology: mdo
+ms.openlocfilehash: 6cc5dd4a48ab89193133cfaf823d0a1b1868fa79
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49908340"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49929189"
 ---
 # <a name="create-a-custom-payload-for-attack-simulation-training"></a>Créer une charge personnalisée pour une formation à la simulation d’attaque
 
-Microsoft offre un catalogue de charges utiles robuste pour diverses techniques d’ingénierie sociale à jumeler avec votre formation à la simulation d’attaques. Toutefois, vous pouvez créer des charges utiles personnalisées qui fonctionneront mieux pour votre organisation. Cet article explique comment créer une charge utile dans la formation sur la simulation d’attaques dans Microsoft Defender pour Office 365.
+Microsoft offre un catalogue de charges utiles robuste pour diverses techniques d’ingénierie sociale à jumeler avec votre formation à la simulation d’attaques. Toutefois, vous pouvez créer des charges utiles personnalisées qui fonctionneront mieux pour votre organisation. Cet article explique comment créer une charge utile dans une formation sur la simulation d’attaques dans Microsoft Defender pour Office 365.
 
 Vous pouvez créer une charge  utile en cliquant sur Créer une charge utile dans l’onglet [ **Charge utile**](https://security.microsoft.com/attacksimulator?viewid=payload) dédiée ou dans l’Assistant création [de simulation.](attack-simulation-training.md#selecting-a-payload)
 
-La première étape de l’Assistant vous permettra de sélectionner un type de charge utile. **Actuellement, seul le courrier électronique est disponible.**
+La première étape de l’Assistant consiste à sélectionner un type de charge utile. **Actuellement, seul le courrier électronique est disponible.**
 
-Ensuite, sélectionnez une technique associée. Pour plus d’informations sur les techniques, voir [la sélection d’une technique d’ingénierie sociale.](attack-simulation-training.md#selecting-a-social-engineering-technique)
+Ensuite, sélectionnez une technique associée. Pour plus d’informations sur les techniques, voir la sélection [d’une technique d’ingénierie sociale.](attack-simulation-training.md#selecting-a-social-engineering-technique)
 
-À l’étape suivante, nommez votre charge utile. Si vous le souhaitez, vous pouvez lui donner une description.
+Dans l’étape suivante, nommez votre charge utile. Si vous le souhaitez, vous pouvez lui donner une description.
 
 ## <a name="configure-payload"></a>Configurer la charge utile
 
-Il est maintenant temps de créer votre charge utile. Dans la section Détails de l’expéditeur, entrer le nom de l’expéditeur, l’adresse e-mail et l’objet **de l’e-mail.** Sélectionnez une URL de hameçonnage dans la liste fournie. Cette URL sera incorporée ultérieurement dans le corps du message.
+Il est maintenant temps de créer votre charge utile. Dans la section **Détails** de l’expéditeur, entrer le nom, l’adresse e-mail et l’objet de l’e-mail de l’expéditeur. Sélectionnez une URL de hameçonnage dans la liste fournie. Cette URL sera incorporée ultérieurement dans le corps du message.
 
 > [!TIP]
 > Vous pouvez choisir un courrier électronique interne pour l’expéditeur de votre charge utile, ce qui fait apparaître la charge utile comme provenant d’un autre employé de l’entreprise. Cela augmente la sensibilité à la charge utile et aide à informer les employés sur les risques de menaces internes.
@@ -58,7 +59,7 @@ Ajoutez une description personnalisée pour décrire l’indicateur et cliquez d
 
 ## <a name="review-payload"></a>Examiner la charge utile
 
-Vous avez terminé de créer votre charge utile. Il est maintenant temps de passer en revue les détails et d’afficher un aperçu de votre charge utile. La prévisualisation inclut tous les indicateurs que vous avez créés. Vous pouvez modifier chaque partie de la charge utile à partir de cette étape. Une fois satisfait, vous pouvez **soumettre votre** charge utile.
+Vous avez terminé de créer votre charge utile. Il est maintenant temps de passer en revue les détails et d’afficher un aperçu de votre charge utile. L’aperçu inclut tous les indicateurs que vous avez créés. Vous pouvez modifier chaque partie de la charge utile à partir de cette étape. Une fois satisfait, vous pouvez **soumettre** votre charge utile.
 
 > [!IMPORTANT]
 > Les charges utiles que vous avez créées auront **le client** comme source. Lorsque vous sélectionnez des charges utiles, veillez à ne pas filtrer le **client.**

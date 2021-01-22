@@ -1,10 +1,10 @@
 ---
-title: Table IdentityInfo dans le schéma de chasse avancé
-description: En savoir plus sur les informations de compte d’utilisateur dans la table IdentityInfo du schéma de chasse avancé
-keywords: chasse de menace, recherche de menace, recherche de menace informatique, protection contre les menaces Microsoft, Microsoft 365, MTP, M365, recherche, requête, télémétrie, référence de schéma, Kusto, table, colonne, type de données, description, AccountInfo, IdentityInfo, compte
+title: Table IdentityInfo dans le schéma de recherche avancé
+description: En savoir plus sur les informations de compte d’utilisateur dans la table IdentityInfo du schéma de recherche avancé
+keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, AccountInfo, IdentityInfo, account
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 0b21d23cfc97576304e949c597301716c72e6871
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: 6604e6d48e277e840b87ddc461580bcb69dd1bc7
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847439"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49929909"
 ---
 # <a name="identityinfo"></a>IdentityInfo
 
@@ -32,12 +33,12 @@ ms.locfileid: "48847439"
 
 
 **S’applique à :**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
-Le `IdentityInfo` tableau du schéma de [chasse avancé](advanced-hunting-overview.md) contient des informations sur les comptes d’utilisateur obtenus à partir de différents services, notamment Azure Active Directory. Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
+Le tableau du schéma de recherche avancée contient des informations sur les comptes d’utilisateurs obtenus à partir de différents services, y compris `IdentityInfo` Azure Active [](advanced-hunting-overview.md) Directory. Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
 
 >[!NOTE]
->Cette table a été renommée de `AccountInfo` . Lors du changement de nom, toutes les requêtes enregistrées dans le portail sont automatiquement mises à jour. Vérifier les requêtes que vous avez enregistrées ailleurs.
+>Cette table a été renommée à partir `AccountInfo` de . Pendant les changements de nom, toutes les requêtes enregistrées dans le portail sont automatiquement mises à jour. Vérifiez les requêtes que vous avez enregistrées ailleurs.
 
 Pour plus d’informations sur les autres tables du schéma de repérage avancé, [consultez la référence de repérage avancé](advanced-hunting-schema-tables.md).
 
@@ -45,12 +46,12 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 |-------------|-----------|-------------|
 | `AccountObjectId` | string | Identificateur unique du compte dans Azure AD |
 | `AccountUpn` | string | Nom d’utilisateur principal (UPN) du compte |
-| `OnPremSid` | string | Identificateur de sécurité (SID) sur site du compte |
-| `CloudSid` | string | Identificateur de sécurité du Cloud du compte |
-| `GivenName` | string | Prénom ou prénom de l’utilisateur du compte |
-| `Surname` | string | Nom, nom de famille ou nom de famille de l’utilisateur du compte |
-| `AccountDisplayName` | string | Nom de l’utilisateur du compte affiché dans le carnet d’adresses. Il s’agit généralement d’une combinaison d’un nom donné, d’une initiation au milieu et d’un nom de famille ou nom. |
-| `Department` | string | Nom du service auquel appartient l’utilisateur du compte |
+| `OnPremSid` | string | Identificateur de sécurité local (SID) du compte |
+| `CloudSid` | string | Identificateur de sécurité cloud du compte |
+| `GivenName` | string | Prénom ou nom de l’utilisateur du compte |
+| `Surname` | string | Nom de famille, nom de famille ou nom de l’utilisateur du compte |
+| `AccountDisplayName` | string | Nom de l’utilisateur du compte affiché dans le carnet d’adresses. En règle générale, une combinaison d’un prénom ou d’un prénom donné, d’une initiation intermédiaire et d’un nom ou d’un nom de famille. |
+| `Department` | string | Nom du service à qui appartient l’utilisateur du compte |
 | `JobTitle` | string | Fonction de l’utilisateur du compte |
 | `AccountName` | string | Nom d’utilisateur du compte |
 | `AccountDomain` | string | Domaine du compte |
@@ -58,12 +59,12 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `SipProxyAddress` | string | Adresse SIP (Session Initiation Protocol) VOIP (Voice over IP) du compte |
 | `City` | string | Ville où se trouve l’utilisateur du compte |
 | `Country` | string | Pays/région où se trouve l’utilisateur du compte |
-| `IsAccountEnabled` | valeur booléenne | Indique si le compte est activé ou non. |
+| `IsAccountEnabled` | valeur booléenne | Indique si le compte est activé ou non |
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques associées
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)
-- [Rechercher sur les appareils, les emails, les applications et les identités](advanced-hunting-query-emails-devices.md)
+- [Repérer des menaces sur les appareils, les e-mails, les applications et les identités](advanced-hunting-query-emails-devices.md)
 - [Comprendre le schéma](advanced-hunting-schema-tables.md)
 - [Appliquer les meilleures pratiques de requête](advanced-hunting-best-practices.md)

@@ -1,9 +1,9 @@
 ---
-title: Hiérarchisation des incidents dans Microsoft 365 Defender
+title: Hiérarchiser les incidents dans Microsoft 365 Defender
 description: Découvrez comment filtrer les incidents à partir de la file d’attente des incidents dans Microsoft 365 Defender
 keywords: incident, file d’attente, vue d’ensemble, appareils, identités, utilisateurs, boîte aux lettres, e-mail, incidents
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -21,14 +21,15 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: e587004fbb3bc6defab985cea9b427f64b3aab35
-ms.sourcegitcommit: a9486f9dc51f0908393000ec3c211e3430c26abd
+ms.technology: m365d
+ms.openlocfilehash: e01fce970b806bc425db2cd4886e82f79434656f
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "49409254"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49929293"
 ---
-# <a name="prioritize-incidents-in-microsoft-365-defender"></a>Hiérarchisation des incidents dans Microsoft 365 Defender
+# <a name="prioritize-incidents-in-microsoft-365-defender"></a>Hiérarchiser les incidents dans Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -38,7 +39,7 @@ ms.locfileid: "49409254"
 
 
 
-Microsoft 365 Defender applique une analyse de corrélation et agrège toutes les alertes et les analyses associées de différents produits en un seul incident. Microsoft 365 Defender déclenche également des alertes uniques sur des activités qui peuvent uniquement être identifiées comme malveillantes en fonction de la visibilité de bout en bout que Microsoft 365 Defender a sur l’ensemble du parc et de la suite de produits. Cet affichage donne à votre analyste en matière de sécurité un récit d’attaque plus large, qui les aide à mieux comprendre et à gérer les menaces complexes au sein de l’organisation.
+Microsoft 365 Defender applique l’analyse de corrélation et regroupe toutes les alertes et enquêtes associées de différents produits en un seul incident. Microsoft 365 Defender déclenche également des alertes uniques sur les activités qui peuvent uniquement être identifiées comme malveillantes en raison de la visibilité de bout en bout de Microsoft 365 Defender sur l’ensemble du patrimoine et de la suite de produits. Cette vue donne à votre analyste des opérations de sécurité une vue d’ensemble des attaques, ce qui lui permet de mieux comprendre et de gérer les menaces complexes au sein de l’organisation.
 
 
 La **file d’attente des incidents** affiche un ensemble d’incidents qui ont été signalés par plusieurs appareils, utilisateurs et boîtes aux lettres. Elle vous aide à trier les incidents afin de hiérarchiser et de créer une décision de réponse cyber-sécurité.
@@ -46,29 +47,29 @@ La **file d’attente des incidents** affiche un ensemble d’incidents qui ont 
 
 ![Image de la file d’attente des incidents](../../media/incidents-queue.png) 
 
-Par défaut, la file d’attente dans le centre de sécurité Microsoft 365 affiche les incidents détectés au cours des 30 derniers jours. Le dernier incident se trouve en haut de la liste, ce qui vous permet de le voir en premier.
+Par défaut, la file d’attente dans le Centre de sécurité Microsoft 365 affiche les incidents observés au cours des 30 derniers jours. L’incident le plus récent se trouve en haut de la liste pour que vous le voyez en premier.
 
-La file d’attente des incidents expose des colonnes personnalisables qui vous donnent une visibilité sur différentes caractéristiques de l’incident ou des entités qu’il contient. Cela vous permet de prendre une décision informée concernant la définition des priorités des incidents à gérer.
+La file d’attente des incidents expose des colonnes personnalisables qui vous donnent une visibilité sur les différentes caractéristiques de l’incident ou les entités contenues. Cela vous permet de prendre une décision éclairée concernant la hiér donc des incidents à gérer.
 
-Pour une visibilité supplémentaire en un coup d’œil, le nom automatique des incidents génère des noms d’incidents en fonction des attributs d’alerte, tels que le nombre de points de terminaison affectés, les utilisateurs affectés, les sources de détection ou les catégories. Cela vous permet de comprendre rapidement l’étendue de l’incident.
+Pour une visibilité supplémentaire en un coup d’œil, l’appellation automatique des incidents génère des noms d’incident basés sur des attributs d’alerte tels que le nombre de points de terminaison affectés, les utilisateurs affectés, les sources de détection ou les catégories. Cela vous permet de comprendre rapidement l’étendue de l’incident.
 
-Par exemple : plusieurs *étapes incident sur plusieurs points de terminaison signalés par plusieurs sources.*
+Par exemple : *incident en plusieurs étapes sur plusieurs points de terminaison signalés par plusieurs sources.*
 
 > [!NOTE]
-> Les incidents qui existaient avant le déploiement de la dénomination automatique des incidents ne verront pas leur nom modifié.
+> Les incidents qui existaient avant le déploiement de la dénomination automatique des incidents ne seront pas modifiés.
 
-La file d’attente d’incidents expose également plusieurs options de filtrage, qui, lorsqu’elles sont appliquées, vous permettent d’effectuer un balayage général de tous les incidents existants dans votre environnement, ou de vous concentrer sur un scénario ou une menace spécifique. L’application de filtres dans la file d’attente des incidents permet de déterminer le type d’incident nécessitant une attention immédiate. 
+La file d’attente des incidents expose également plusieurs options de filtrage qui, lorsqu’elles sont appliquées, vous permettent d’effectuer un large éventail de tous les incidents existants dans votre environnement ou de décider de vous concentrer sur un scénario ou une menace spécifique. L’application de filtres dans la file d’attente des incidents permet de déterminer le type d’incident nécessitant une attention immédiate. 
 
 ## <a name="available-filters"></a>Filtres disponibles
 
 ### <a name="assigned-to"></a>Affectée à
-Vous pouvez choisir d’afficher les alertes qui vous sont affectées ou gérées par Automation.
+Vous pouvez choisir d’afficher les alertes qui vous sont affectées ou celles gérées par l’automatisation.
 
 ### <a name="categories"></a>Catégories
-Choisissez des catégories pour vous concentrer sur des tactiques, des techniques ou des composants d’attaque spécifiques vus. 
+Choisissez des catégories pour vous concentrer sur des tactiques, des techniques ou des composants d’attaque spécifiques. 
 
 ### <a name="classification"></a>Classification
-Filtrer les incidents en fonction des classifications des alertes associées. Les valeurs incluent les alertes vraies, les fausses alertes ou non définies.
+Filtrer les incidents en fonction des classifications définies des alertes associées. Les valeurs incluent des alertes vraies, des alertes fausses ou non définies.
 
 ### <a name="data-sensitivity"></a>Confidentialité des données
 Certaines attaques se concentrent sur le ciblage de données sensibles ou précieuses. En appliquant un filtre pour déterminer si des données confidentielles sont impliquées dans l’incident, vous pouvez rapidement déterminer si des informations sensibles ont été compromises et hiérarchiser les problèmes.
@@ -79,23 +80,23 @@ Certaines attaques se concentrent sur le ciblage de données sensibles ou préci
 ### <a name="device-group"></a>Groupe d’appareils
 Filtrer par groupes d’appareils définis.
 
-### <a name="investigation-state"></a>État de l’enquête
-Filtrer les incidents selon l’état de l’analyse automatisée. 
+### <a name="investigation-state"></a>État de l’examen
+Filtrer les incidents selon l’état de l’examen automatisé. 
 
 ### <a name="multiple-categories"></a>Plusieurs catégories 
-Vous pouvez choisir d’afficher uniquement les incidents qui ont été mappés à plusieurs catégories et peuvent donc causer des dégâts plus importants. 
+Vous pouvez choisir de ne voir que les incidents qui ont été mappés à plusieurs catégories et qui peuvent donc potentiellement causer davantage de dommages. 
 
 ### <a name="multiple-service-sources"></a>Plusieurs sources de service 
-Filtre pour afficher uniquement les incidents qui contiennent des alertes de sources différentes (Microsoft Defender pour les points de terminaison, sécurité des applications Cloud Microsoft, Microsoft Defender pour l’identité, Microsoft Defender pour Office 365).
+Filtrez pour voir uniquement les incidents qui contiennent des alertes provenant de différentes sources (Microsoft Defender pour endpoint, Microsoft Cloud App Security, Microsoft Defender pour l’identité, Microsoft Defender pour Office 365).
 
-### <a name="os-platform"></a>Plateforme de système d’exploitation
+### <a name="os-platform"></a>Plateforme du système d’exploitation
 Limitez l’affichage de la file d’attente des incidents par système d’exploitation.
 
 ### <a name="service-sources"></a>Sources de service
 En sélectionnant une source spécifique, vous pouvez vous concentrer sur les incidents qui contiennent au moins une alerte de la source choisie. 
 
 ### <a name="severity"></a>Severity
-La gravité d’un incident est l’impact qu’il peut avoir sur vos biens. Plus la gravité est élevée, plus l’impact est important et nécessite une attention immédiate. 
+La gravité d’un incident indique l’impact qu’il peut avoir sur vos ressources. Plus la gravité est élevée, plus l’impact est important et nécessite généralement l’attention la plus immédiate. 
 
 ### <a name="status"></a>Statut
 Vous pouvez choisir de limiter la liste des incidents affichés en fonction de leur état pour identifier ceux qui sont actifs ou résolus.

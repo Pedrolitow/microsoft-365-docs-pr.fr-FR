@@ -15,18 +15,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez comment migrer le courrier électronique, les contacts et le calendrier de Google Workspace vers Microsoft 365 pour les entreprises.
-ms.openlocfilehash: ab70a43fb7c26c23ebc9024b1cd2803c164a0aa4
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: cb751b1d2f18b226021bb6f218b62f3ae426f6a4
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794648"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928245"
 ---
 # <a name="migrate-business-email-and-calendar-from-google-workspace"></a>Migrer le courrier électronique et le calendrier d’entreprise à partir de Google Workspace
 
@@ -45,7 +46,7 @@ Le processus de migration prend plusieurs étapes et peut prendre de plusieurs h
 1. Sélectionnez **Créer un** projet, nommez le projet et choisissez **Créer.** 
 1. Sélectionnez **Créer un compte de service,** entrez un nom, choisissez **Créer,** puis **Terminé**. 
 1. Ouvrez le menu **Actions,** **sélectionnez Modifier** et prenez note de l’ID unique. Vous aurez besoin de cet ID plus tard dans le processus. 
-1. Ouvrez la section Afficher la délégation **à l’échelle du** domaine. 
+1. Ouvrez la section **Afficher la délégation à l’échelle du** domaine. 
 1. Sélectionnez Activer la délégation à l’échelle du domaine **G Suite,** entrez un nom de produit pour l’écran de consentement, puis sélectionnez **Enregistrer.** 
 
     > [!NOTE]
@@ -77,7 +78,7 @@ Le processus de migration prend plusieurs étapes et peut prendre de plusieurs h
  
 1. Choose **Authorize**. 
 
-### <a name="create-a-sub-domain-for-mail-going-to-microsoft-365"></a>Créer un sous-domaine pour le courrier vers Microsoft 365
+### <a name="create-a-sub-domain-for-mail-going-to-microsoft-365"></a>Créer un sous-domaine pour le courrier électronique envoyé à Microsoft 365
 
 1. Revenir à la console **d’administration Google Workspace.**
 1. Select **Domains**, **Manage domains**, then, **Add a domain alias**. 
@@ -87,13 +88,13 @@ Le processus de migration prend plusieurs étapes et peut prendre de plusieurs h
     La vérification de domaine ne prend généralement que quelques minutes, mais elle peut prendre jusqu’à 48 heures.
 
 1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com).
-1. Dans le **Centre d’administration Microsoft 365,** dans le navigation de gauche, sélectionnez Afficher **tout,** **Paramètres,** **Domaines,** puis Ajouter **un domaine.** 
+1. Dans le **Centre d’administration Microsoft 365,** dans le navigation de gauche, sélectionnez Afficher **tout,** **Paramètres,** **Domaines,** puis **Ajouter un domaine.** 
 1. Entrez le sous-domaine que vous avez créé précédemment, puis **sélectionnez Utiliser ce domaine.** 
 1. Pour connecter le domaine, sélectionnez **Continuer.** 
 1. Faites défiler vers le bas et prenez note des enregistrements MX, CNAME et TXT. 
 1. Revenir à la **console d’administration Google.**
 1. Select **Domains**, select **Manage domains**, **Verify Details** and then, **Manage domain**. 
-1. Dans le navigation de gauche, choisissez **DNS et** faites défiler vers le bas **jusqu’aux enregistrements de ressources personnalisés.** 
+1. Dans le navigation de gauche, choisissez **DNS et** faites défiler vers le bas **jusqu’aux enregistrements de ressource personnalisés.** 
 1. Ouvrez la dropdown du type d’enregistrement et sélectionnez **MX,** entrez ou copiez-collez les informations d’enregistrement MX que vous avez précédemment notées, puis choisissez **Ajouter**. 
 1. Répétez le processus pour l’enregistrement CNAME et l’enregistrement TXT. 
 
@@ -110,7 +111,7 @@ Avant de commencer la migration, vous devez créer des alias de messagerie pour 
 1. Pour commencer l’étape  suivante, dans l’Assistant Ajouter des domaines dans le Centre d’administration Microsoft 365, sélectionnez Go **to Active users**. 
 1. Sélectionnez un utilisateur, puis **gérez le nom d’utilisateur et le courrier électronique.** 
 1. Dans ladown **Domains (Domaines),** sélectionnez le sous-domaine que vous avez précédemment créé. 
-1. Entrez un nom d’utilisateur, **sélectionnez Ajouter,** **Enregistrer les modifications** et fermer la fenêtre. 
+1. Entrez un nom d’utilisateur, **sélectionnez Ajouter,** **Enregistrer les modifications** et fermez la fenêtre. 
 
     Répétez ce processus pour chaque utilisateur. 
 
@@ -132,7 +133,7 @@ Une fois que vous avez terminé, vous êtes prêt à migrer.
 
 1. Sélectionnez **Choisir** un fichier, accédez au fichier CSV, choisissez-le, sélectionnez **Ouvrir,** puis **Suivant**. 
 1. Vérifiez l’adresse de messagerie de l’administrateur que vous souhaitez utiliser pour le test. 
-1. Sélectionnez **Choisir** un fichier, accédez au fichier JSON que vous avez créé précédemment (généralement dans le dossier Téléchargements de votre ordinateur), choisissez-le, sélectionnez **Ouvrir,** puis **Suivant**. 
+1. Sélectionnez **Choisir** un fichier, accédez au fichier JSON que vous avez créé précédemment (généralement dans le dossier Téléchargements sur votre ordinateur), choisissez-le, sélectionnez **Ouvrir,** puis **Suivant**. 
 1. Entrez un nom dans le **champ Nouveau nom de lot de migration.**
 1. Entrez le sous-domaine que vous avez créé dans le champ de domaine de **remise** cible, sélectionnez **Suivant,** puis **Nouveau**. 
 1. Une fois les informations enregistrées, sélectionnez **OK.** 

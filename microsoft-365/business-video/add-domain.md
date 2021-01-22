@@ -16,41 +16,42 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez comment ajouter un autre domaine à votre abonnement.
-ms.openlocfilehash: 16f6c4e416ede560d69014e320eb32c4453fd3f5
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: a5df440f3b7e28c2bdbc69f9383a8399ef193ed0
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702169"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927609"
 ---
 # <a name="add-another-domain"></a>Ajouter un autre domaine
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4dN8c?autoplay=false]
 
-Il se peut que votre société ait besoin de plusieurs noms de domaine à des fins différentes. Par exemple, vous pouvez ajouter une orthographe différente du nom de votre société car les clients l’utilisent déjà et leurs communications n’ont pas pu vous joindre.
+Votre entreprise peut avoir besoin de plusieurs noms de domaine à des fins différentes. Par exemple, vous souhaitez peut-être ajouter une orthographe différente du nom de votre société, car les clients l’utilisent déjà et leurs communications n’ont pas pu vous joindre.
 
 ## <a name="try-it"></a>Essayez !
 
-1. Dans le centre d’administration Microsoft 365, sélectionnez **configuration**.
-1. Sous **obtenir votre configuration de domaine personnalisé**, sélectionnez **Afficher**.
-1. Cliquez sur **gérer**, puis sur **Ajouter un domaine**.
-1. Entrez le nouveau nom de domaine que vous souhaitez ajouter, puis cliquez sur **suivant**.
-1. Connectez-vous à votre bureau d’enregistrement de domaines, dans ce cas GoDaddy, puis cliquez sur **suivant**.
-1. Si vous y êtes invité, connectez-vous à votre bureau d’enregistrement, puis choisissez **autoriser**.
-1. Choisissez **Ajouter les enregistrements DNS pour moi**, puis cliquez sur **suivant**.
-1. Choisissez les services pour votre nouveau domaine et désactivez les cases à cocher des services qui seront gérés par un autre domaine. Par exemple, si vous souhaitez simplement utiliser le nouveau domaine pour le courrier électronique, choisissez **Exchange**, puis désactivez les cases à cocher de la gestion des appareils **Skype entreprise** et de la **gestion des appareils mobiles pour Office 365**.
-1. Sélectionnez **suivant**, **autoriser**, **suivant**, puis **Terminer**. Votre nouveau domaine a été ajouté.
+1. Dans le Centre d’administration Microsoft 365, choisissez **Installation.**
+1. Sous **Obtenir votre domaine personnalisé, sélectionnez** **Afficher.**
+1. Sélectionnez **Gérer,** puis **Ajouter un domaine.**
+1. Entrez le nouveau nom de domaine à ajouter, puis sélectionnez **Suivant.**
+1. Connectez-vous à votre bureau d’enregistrement de domaines, dans ce cas GoDaddy, puis sélectionnez **Suivant**.
+1. Si vous y êtes invité, connectez-vous à votre bureau d’enregistrement, puis choisissez **Autoriser.**
+1. Sélectionnez **Ajouter les enregistrements DNS** pour moi, puis sélectionnez **Suivant.**
+1. Choisissez les services pour votre nouveau domaine et cochez les cases pour tous les services qui seront gérés par un autre domaine. Par exemple, si vous souhaitez simplement utiliser le nouveau domaine pour la messagerie, sélectionnez **Exchange** et cochez les cases pour **Skype** Entreprise et Gestion des périphériques mobiles pour **Office 365.**
+1. Sélectionnez **Suivant**, **Autoriser**, **Suivant,** puis **Terminer**. Votre nouveau domaine a été ajouté.
 
-Pour recevoir des courriers électroniques dans votre nouveau domaine, vous devez ajouter un nouvel alias de messagerie pour chaque utilisateur :
+Pour recevoir des messages électroniques sur votre nouveau domaine, vous devez ajouter un nouvel alias de messagerie pour chaque utilisateur :
 
-1. Sélectionnez **utilisateurs**, **utilisateurs actifs**, puis sélectionnez l’utilisateur auquel le nouvel alias sera affecté.
-1. Choisissez **gérer les alias de messagerie**, puis **Ajoutez un alias**.
-1. Entrez le nom d’utilisateur, puis choisissez le nouveau domaine dans la liste déroulante.
-1. Sélectionnez **enregistrer les modifications**, puis fermez la fenêtre.
-1. Répétez ces étapes pour chaque utilisateur qui doit recevoir des courriers électroniques sur le nouveau domaine.
+1. Sélectionnez **Utilisateurs,** **Utilisateurs** actifs, puis sélectionnez l’utilisateur qui se voit attribuer le nouvel alias.
+1. Choisissez **Gérer les alias de messagerie,** puis **ajoutez un alias.**
+1. Entrez le nom d’utilisateur, puis choisissez le nouveau domaine dans la liste liste.
+1. Sélectionnez **Enregistrer les modifications,** puis fermez la fenêtre.
+1. Répétez ces étapes pour chaque utilisateur qui doit recevoir des messages électroniques sur le nouveau domaine.

@@ -16,35 +16,36 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez comment ajouter des utilisateurs dans Microsoft 365 pour les entreprises.
-ms.openlocfilehash: e897714e2ff80b2980bd2eb7ca98366d953ed96c
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: f9e00312883adcc1771fae809614b6fc88bc0269
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702161"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927573"
 ---
 # <a name="add-a-new-user"></a>Ajouter un nouvel utilisateur
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfN?autoplay=false]
 
-Lorsqu’une nouvelle personne rejoint votre société, vous devez l’ajouter à votre abonnement Microsoft 365 Business Premium en tant que nouvel utilisateur.
+Lorsqu’une nouvelle personne rejoint votre entreprise, vous devez l’ajouter à votre abonnement Microsoft 365 Business Premium en tant que nouvel utilisateur.
 
 ## <a name="try-it"></a>Essayez !
 
-1. Dans le centre d’administration Microsoft 365, accédez à **gestion des utilisateurs**, puis sélectionnez Ajouter un utilisateur.
-1. Entrez le **prénom** et le **nom** du nouvel utilisateur. Le **nom complet** est renseigné automatiquement, mais vous pouvez le modifier.
-1. Entrez un **nom d’utilisateur**. Il s’agit de l’adresse de messagerie du nouvel utilisateur. Si vous avez plusieurs domaines, sélectionnez le domaine approprié dans la liste déroulante.
-1. Pour créer automatiquement un mot de passe, sélectionnez **auto-générer le mot de passe**.
-1. Pour demander à l’utilisateur de modifier son mot de passe, activez la case à cocher **demander à cet utilisateur de modifier son mot de passe lors de sa première connexion** .
-1. Si vous souhaitez que les détails du compte soient envoyés par courrier électronique, activez la case à cocher **Envoyer le mot de passe à l’adresse de messagerie** à la fin du message. Le nom de votre courrier électronique est ajouté automatiquement, mais vous pouvez ajouter l’adresse de messagerie de secours du nouvel utilisateur pour qu’il reçoive également les détails du compte. Sélectionnez **Suivant**.
-1. Sélectionnez votre emplacement dans la liste déroulante, puis activez la case à cocher en regard de l’abonnement que vous souhaitez que l’utilisateur utilise. Sélectionnez **l'** option de la même façon.
-1. Si vous souhaitez que l’utilisateur soit un administrateur, développez le **rôle** s, désactivez la case à cocher **utilisateur (pas accès administrateur)** , puis sélectionnez un rôle d’administrateur dans la liste. Pour plus d’informations sur les rôles d’administrateur et sur la façon de les configurer, consultez [qu’est-ce qu’un administrateur](what-is-admin.md)?
-1. Sous **informations** sur le profil, entrez les détails sur le travail, le service, le Bureau de l’utilisateur, etc. (Vous ou le nouvel utilisateur pouvez toujours ajouter ces informations ultérieurement.) Sélectionnez **suivant**.
-1. Examinez les détails de l’utilisateur. Si vous devez acheter une licence supplémentaire pour cet utilisateur, une notification s’affichera sur la page révision. Sélectionnez **terminer l’ajout**, puis **Fermer**.
-1. Vérifiez que l’utilisateur a bien été créé : dans le centre d’administration 365 de Microsoft, dans le volet de navigation de gauche, sélectionnez **utilisateurs**, puis **utilisateurs actifs**. Le nouvel utilisateur doit être mentionné, ainsi que la licence qui lui est attribuée.
+1. Dans le Centre d’administration Microsoft 365, allez à Gestion des utilisateurs, puis sélectionnez Ajouter un utilisateur.
+1. Entrez le prénom  et le nom du nouvel **utilisateur.** Le **nom complet** est rempli automatiquement, mais vous pouvez le modifier.
+1. Entrez un nom **d’utilisateur**. Il s’agit de l’adresse e-mail du nouvel utilisateur. Si vous avez plusieurs domaines, sélectionnez le domaine correct dans la liste liste.
+1. Pour créer automatiquement un mot de passe, sélectionnez **Générer automatiquement le mot de passe.**
+1. Pour obliger l’utilisateur à modifier son mot de passe, cochez la case Exiger de cet utilisateur qu’il modifie son mot de passe lors de sa **première** inscription.
+1. Si vous souhaitez que les détails du compte sont envoyés par courrier électronique, cochez la case Envoyer le mot de passe par courrier **électronique** à la fin de l’envoi. Votre nom de courrier sera ajouté automatiquement, mais vous pouvez ajouter l’adresse de messagerie de remplacement du nouvel utilisateur afin qu’il reçoie également les détails du compte. Sélectionnez **Suivant**.
+1. Sélectionnez votre emplacement dans la liste, puis cochez la case en regard de l’abonnement que l’utilisateur doit utiliser. Sélectionnez **Nex** t.
+1. Si vous souhaitez que l’utilisateur soit administrateur, développez les **rôles,** cochez la case Utilisateur (pas d’accès **administrateur)** et sélectionnez un rôle d’administrateur dans la liste. Pour plus d’informations sur les rôles d’administrateur et sur la façon de les configurer, voir [Qu’est-ce qu’un administrateur](what-is-admin.md)?
+1. Sous **Informations de profil,** entrez des détails sur le travail, le service, le bureau, etc. de l’utilisateur. (Vous ou le nouvel utilisateur pouvez toujours ajouter ces informations ultérieurement.) Sélectionnez **Suivant**.
+1. Examinez les détails de l’utilisateur. Si vous devez acheter une licence supplémentaire pour cet utilisateur, vous verrez une notification sur la page de révision. Sélectionnez **Terminer l’ajout,** puis **fermez.**
+1. Vérifiez que l’utilisateur a été créé avec succès : dans le Centre d’administration Microsoft 365, dans le volet de navigation de gauche, sélectionnez **Utilisateurs,** puis **Utilisateurs actifs.** Le nouvel utilisateur doit être répertorié avec sa licence attribuée.

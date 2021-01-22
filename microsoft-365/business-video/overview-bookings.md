@@ -1,5 +1,5 @@
 ---
-title: Microsoft bookings-présentation
+title: 'Microsoft Bookings : vue d’ensemble'
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,39 +16,40 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: En savoir plus sur Microsoft bookings.
-ms.openlocfilehash: a325dbb12d7442317ef5c3657ba4ab249d10ffe1
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: En savoir plus sur Microsoft Bookings.
+ms.openlocfilehash: 67ed948793b4d43f92b376d7e299564f5d734550
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702098"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928125"
 ---
-# <a name="overview-of-microsoft-bookings"></a>Vue d’ensemble des ouvrages Microsoft
+# <a name="overview-of-microsoft-bookings"></a>Vue d’ensemble de Microsoft Bookings
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE26B1q?autoplay=false]
 
-Microsoft bookings est une application mobile et en ligne pour les petites entreprises qui fournissent des services aux clients sur la base d’un rendez-vous. Parmi les exemples d’entreprises, citons les coiffures, les bureaux dentaires, les sociétés de droit, les fournisseurs de services financiers, les consultants et les magasins automatiques.
+Microsoft Bookings est une application mobile et en ligne pour les petites entreprises qui fournissent des services aux clients sur la base d’un rendez-vous. Exemples d’entreprises : les salons de santé, les bureaux de soins, les spas, les cabinets d’avocats, les fournisseurs de services financiers, les consultants et les auto-boutiques.
 
-## <a name="get-started-with-bookings"></a>Prise en main des réservations
+## <a name="get-started-with-bookings"></a>Mise en place de Bookings
 
-1. Pour commencer, connectez-vous à Microsoft 365 et sélectionnez **bookings** from the App Launcher.
-1. Choisissez **obtenir maintenant** sur la page **réservations** .
-1. Ajoutez vos informations professionnelles et vous êtes prêt à utiliser bookings.
+1. Pour commencer, connectez-vous à Microsoft 365 et sélectionnez **Bookings** dans le lanceur d’applications.
+1. Sélectionnez **Obtenir maintenant** sur la page **Réservations.**
+1. Ajoutez vos informations professionnelles et vous êtes prêt à commencer à utiliser Bookings.
 
-    Pour gérer vos livres sur votre appareil mobile, téléchargez des livres à partir de votre magasin d’applications.
+    Pour gérer vos réservations sur votre appareil mobile, téléchargez Bookings à partir de votre app store.
 
-## <a name="use-bookings"></a>Utilisation des réservations
+## <a name="use-bookings"></a>Utiliser Bookings
 
-- Dans le tableau de bord **bookings** , vérifiez votre adresse professionnelle, vos heures et d’autres informations professionnelles, et mettez à jour si nécessaire.
-- Sur la page **calendrier** , vous et votre équipe pouvez ajouter ou mettre à jour les rendez-vous du client. Vous pouvez afficher votre calendrier par jour, semaine ou mois.
-- Sur la page **clients** , de nouveaux clients peuvent être ajoutés ou importés à partir d’autres comptes tels que Gmail ou un appareil.
-- La page **personnel** vous permet d’ajouter et de gérer votre personnel. Il est important d’ajouter leurs adresses de messagerie afin qu’elles puissent recevoir des notifications immédiates de nouveaux rendez-vous.
-- La page **services** vous permet d’ajouter ou de gérer les services choisis par les clients lors de la réservation d’un rendez-vous.
-- Enfin, sur la page **bookings** , vous trouverez de nombreux paramètres tels que votre stratégie de planification, vos notifications par courrier électronique, vos paramètres de fuseau horaire et bien plus encore.
+- Dans le tableau **de bord Bookings,** examinez votre adresse professionnelle, vos heures et d’autres informations professionnelles, et mettez à jour si nécessaire.
+- Dans la page **Calendrier,** vous et votre personnel pouvez ajouter ou mettre à jour des rendez-vous client. Vous pouvez afficher votre calendrier par jour, semaine ou mois.
+- Dans la page **Clients,** les nouveaux clients peuvent être ajoutés ou importés à partir d’autres comptes tels que Gmail ou un appareil.
+- La page **Personnel** vous permet d’ajouter et de gérer votre personnel. Il est important d’ajouter leurs adresses de messagerie pour qu’ils reçoivent des notifications immédiates de nouveaux rendez-vous.
+- La page **Services** vous permet d’ajouter ou de gérer les services que les clients choisissent lors de la réservation d’un rendez-vous.
+- Enfin, dans la page **Réservations,** vous trouverez de nombreux paramètres tels que votre stratégie de planification, les notifications par courrier électronique, les paramètres de fuseau horaire, etc.
 
-Une fois que vous avez enregistré et publié votre calendrier bookings, il peut être intégré sur la page Web ou Facebook de votre entreprise.
+Une fois que vous avez enregistré et publié votre calendrier Bookings, il peut être incorporé sur le site web ou la page Facebook de votre entreprise.

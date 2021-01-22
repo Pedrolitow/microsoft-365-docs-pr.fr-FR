@@ -1,5 +1,5 @@
 ---
-title: Partager vos fichiers professionnels-vue d’ensemble
+title: 'Partager vos fichiers d’entreprise : vue d’ensemble'
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,60 +16,61 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Vue d’ensemble de la façon de partager vos fichiers professionnels.
-ms.openlocfilehash: 9b051fb0df324eff74a4b91ab780070bfdcf3a70
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Vue d’ensemble du partage de vos fichiers métiers.
+ms.openlocfilehash: 333954c92039d124c83cf03b6e1f6637183a4f25
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701946"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928149"
 ---
-# <a name="overview-of-sharing-business-files"></a>Vue d’ensemble du partage de fichiers professionnels
+# <a name="overview-of-sharing-business-files"></a>Vue d’ensemble du partage de fichiers métiers
 
-Vous devez partager des fichiers avec des clients, des clients, des partenaires, des fournisseurs et d’autres personnes de votre entreprise. Comment partagez-vous des fichiers afin que tout le monde puisse les trouver, les ouvrir et les modifier ?
+Vous devez partager des fichiers avec des clients, des clients, des partenaires, des fournisseurs et d’autres personnes de votre entreprise. Comment partager des fichiers afin que tout le monde puisse les trouver, les ouvrir et les modifier ?
 
-|![Partager en toute sécurité](../media/securely-share-file.png)<br/>[Partager un fichier avec une personne extérieure à votre entreprise](#share-a-file-with-someone-outside-of-your-company)|![Collaborer avec un client](../media/share-and-collab-with-partner.png) <br/>[Partager et collaborer avec un client ou un partenaire commercial](#share-and-collaborate-with-a-client-or-business-partner) | ![Partager à l’intérieur de votre organisation](../media/share-inside-your-org.png) <br/>[Partager votre entreprise](#share-inside-your-business) |
+|![Partage sécurisé](../media/securely-share-file.png)<br/>[Partager un fichier avec une personne extérieure à votre entreprise](#share-a-file-with-someone-outside-of-your-company)|![Collaborer avec un client](../media/share-and-collab-with-partner.png) <br/>[Partager et collaborer avec un client ou un partenaire commercial](#share-and-collaborate-with-a-client-or-business-partner) | ![Partager au sein de votre organisation](../media/share-inside-your-org.png) <br/>[Partager au sein de votre entreprise](#share-inside-your-business) |
 |--|--|--|
 
 ## <a name="share-a-file-with-someone-outside-of-your-company"></a>Partager un fichier avec une personne extérieure à votre entreprise
 
-- Partagez un fichier avec une personne extérieure à votre société (par exemple, un client ou un client) par courrier électronique si vous n’en avez besoin qu’une seule méthode.
-- Si vous avez besoin d’une réponse, ou si vous souhaitez qu’ils remplissent des informations et les renvoient, vous pouvez utiliser SharePoint ou Microsoft teams pour les partager avec un lien de modification.
+- Partagez un fichier avec une personne extérieure à votre entreprise (par exemple, un client ou un client) par courrier électronique si vous n’en avez besoin que dans un sens.
+- Si vous avez besoin d’une réponse ou si vous souhaitez qu’ils remplissent des informations et les renvoient, vous pouvez utiliser SharePoint ou Microsoft Teams pour les partager avec un lien d’édition.
 
-En savoir plus sur la façon de [partager des fichiers en dehors de votre organisation](securely-share-files-externally.md) avec des liens sécurisés et de [partager des fichiers avec un lien tout le monde](share-files-externally.md).
+En savoir plus sur le partage de [fichiers en dehors](securely-share-files-externally.md) de votre organisation avec des liens sécurisés et sur le partage de fichiers [avec un lien tout le monde.](share-files-externally.md)
 
 ## <a name="share-and-collaborate-with-a-client-or-business-partner"></a>Partager et collaborer avec un client ou un partenaire commercial
 
-Partage dans le cadre d’un projet ? Ou dans le cadre d’une relation continue avec un partenaire commercial ou un fournisseur ? Vous pouvez mettre un peu plus de temps et configurer une équipe dans Microsoft teams et disposer d’un emplacement continu pour partager et collaborer. Il est facile de travailler avec des personnes extérieures à votre entreprise, et vous pouvez même configurer des canaux distincts pour les autres fournisseurs ou partenaires afin de les conserver en toute simplicité.
+Partage dans le cadre d’un projet ? Ou dans le cadre d’une relation continue avec un partenaire commercial ou un fournisseur ? Vous pouvez vous donner un peu plus de temps et configurer une équipe dans Microsoft Teams et avoir un endroit permanent pour partager et collaborer. Il est facile de travailler avec des personnes extérieures à votre entreprise, et vous pouvez même configurer des canaux distincts pour que d’autres fournisseurs ou partenaires restent au même niveau.
 
 1. Créez l’équipe.
-1. Téléchargez vos fichiers.
-1. Invitez vos partenaires ou fournisseurs à l’équipe en tant qu’utilisateurs « invités » pour leur accorder l’accès.
+1. Chargez vos fichiers.
+1. Invitez vos partenaires ou fournisseurs à accéder à l’équipe en tant qu’utilisateurs « invités » pour leur donner accès.
 
-En savoir plus sur le [partage de fichiers à l’extérieur de votre organisation avec les liens](https://support.microsoft.com/office/7266f44e-3e06-4736-b9d3-0580c24bba34)s.
+En savoir plus sur le partage [de fichiers en dehors](https://support.microsoft.com/office/7266f44e-3e06-4736-b9d3-0580c24bba34)de votre organisation avec des liens sécurisés.
 
-## <a name="share-inside-your-business"></a>Partager votre entreprise
+## <a name="share-inside-your-business"></a>Partager au sein de votre entreprise
 
-Si vous utilisez des fichiers que vous partagez au sein de votre entreprise, il est également recommandé de configurer une équipe dans Microsoft Teams. Partagez vos fichiers et tous les membres de votre entreprise peuvent facilement les trouver et les modifier, et vous savez que vous travaillez sur la même page.
+Si vous travaillez avec des fichiers que vous partagez au sein de votre entreprise, il est également bon de configurer une équipe dans Microsoft Teams. Partagez vos fichiers à cet endroit et tous les personnes de votre entreprise peuvent facilement les trouver et les modifier, et vous savez que vous travaillez tous sur la même page.
 
-1. Créez l’équipe et invitez votre équipe à y faire.
-1. Téléchargez vos fichiers.
+1. Créez l’équipe et invitez votre équipe à l’y faire.
+1. Chargez vos fichiers.
 
-En savoir plus sur le [stockage de fichiers d’entreprise](https://support.microsoft.com/office/e4d98e10-3532-4eed-85d6-92728454e32b) et le stockage de fichiers d' [employés](https://support.microsoft.com/office/12dbe3e4-dbef-48f8-a90e-87f1bc607073).
+En savoir plus sur [le stockage de fichiers d’entreprise](https://support.microsoft.com/office/e4d98e10-3532-4eed-85d6-92728454e32b) et le stockage de fichiers des [employés.](https://support.microsoft.com/office/12dbe3e4-dbef-48f8-a90e-87f1bc607073)
 
-## <a name="how-to-get-it-done"></a>Comment le faire
+## <a name="how-to-get-it-done"></a>Comment y arriver
 
-Vous avez besoin d’aide ? Découvrez comment :
+Vous avez besoin d’aide ? Découvrez comment :
 
 - [Envoyer et recevoir des pièces jointes](https://support.microsoft.com/en-us/office/sending-and-receiving-attachments-d32cd5ad-c7c5-49df-814d-4c17a5d3beb0)
 - [Partager des fichiers et des dossiers avec OneDrive](https://support.microsoft.com/en-us/office/share-files-and-folders-with-microsoft-365-business-72f26d6c-bf9e-432c-8b96-e3c2437f5b65)
 - [Créer une équipe à l’échelle de l’entreprise](https://support.microsoft.com/en-us/office/create-an-org-wide-team-037bb27a-bcc9-48fe-8d72-44d9482420a3)
 - [Ajouter des invités à une équipe](https://support.microsoft.com/en-us/office/add-guests-to-a-team-in-teams-fccb4fa6-f864-4508-bdde-256e7384a14f)
 
-Téléchargez un infographie pour obtenir une vue d’ensemble rapide des moyens de partager vos fichiers professionnels. 
+Téléchargez une infographie pour obtenir une vue d’ensemble rapide des méthodes de partage de vos fichiers métiers. 
 
 [PDF](https://go.microsoft.com/fwlink/?linkid=2079435)  |  [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438)

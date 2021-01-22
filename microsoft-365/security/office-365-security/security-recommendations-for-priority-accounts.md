@@ -8,7 +8,6 @@ manager: dansimp
 audience: Admin
 ms.topic: conceptual
 ms.date: ''
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -19,12 +18,14 @@ ms.collection:
 - m365solution-overview
 - m365solution-protecthve
 description: Les administrateurs peuvent apprendre à élever les paramètres de sécurité et à utiliser des rapports, des alertes et des enquêtes pour les comptes prioritaires dans leurs organisations Microsoft 365.
-ms.openlocfilehash: 8a1d92ef12070a722a1b618bf51ab6d8130f49c0
-ms.sourcegitcommit: 31be333178b934c519f419656f4c3a53e1beffdc
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 10890a5fe797439de0bfc28bf28a216318016908
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49881798"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49929305"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Recommandations en matière de sécurité pour les comptes prioritaires dans Microsoft 365
 
@@ -53,7 +54,7 @@ Les comptes prioritaires nécessitent une sécurité accrue de la signature. Vou
 
 Pour obtenir des instructions, [consultez l’étape 1. Renforcer la sécurité de la sign-in pour les travailleurs à distance avec l’fa MFA](https://docs.microsoft.com/microsoft-365/solutions/empower-people-to-work-remotely-secure-sign-in). Bien que cet article porte sur les travailleurs à distance, les mêmes concepts s’appliquent aux utilisateurs prioritaires.
 
-**Remarque**: nous vous recommandons vivement de désactiver globalement les protocoles d’authentification hérités pour tous les utilisateurs prioritaires, comme décrit dans l’article précédent. Si vos besoins commerciaux vous en empêchent, Exchange Online propose les contrôles suivants pour limiter l’étendue des protocoles d’authentification hérités :
+**Remarque**: nous vous recommandons vivement de désactiver globalement les protocoles d’authentification hérités pour tous les utilisateurs prioritaires, comme décrit dans l’article précédent. Si les besoins de votre entreprise vous en empêchent, Exchange Online propose les contrôles suivants pour limiter l’étendue des protocoles d’authentification hérités :
 
 - Vous pouvez [](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online) utiliser [](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules) des stratégies d’authentification et des règles d’accès client dans Exchange Online pour bloquer ou autoriser l’authentification de base et les protocoles d’authentification hérités tels que POP3, IMAP4 et SMTP authentifié pour des utilisateurs spécifiques.
 
@@ -77,7 +78,7 @@ Pour plus d’informations sur la différence entre les paramètres de stratégi
 
 ## <a name="apply-user-tags-to-priority-accounts"></a>Appliquer des balises utilisateur à des comptes prioritaires
 
-Les balises utilisateur dans Microsoft Defender pour Office 365 Plan 2 (dans le cadre de Microsoft 365 E5 ou d’un abonnement à un module add-on) sont un moyen d’identifier et de classer rapidement des utilisateurs ou des groupes d’utilisateurs spécifiques dans des rapports et des enquêtes d’incident.
+Les balises utilisateur dans Microsoft Defender pour Office 365 Plan 2 (dans le cadre de Microsoft 365 E5 ou d’un abonnement de modules supplémentaires) sont un moyen d’identifier et de classer rapidement des utilisateurs ou des groupes d’utilisateurs spécifiques dans des rapports et des enquêtes d’incident.
 
 **Les comptes de priorité** sont un type de balise utilisateur intégrée (appelée balise _système)_ que vous pouvez utiliser pour identifier les incidents et les alertes impliquant des comptes prioritaires. Pour plus d’informations **sur les comptes prioritaires,** voir [Gérer et surveiller les comptes de priorité.](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts)
 
@@ -102,7 +103,7 @@ Après avoir sécurisé et identifié vos utilisateurs prioritaires, vous pouvez
 
 ## <a name="train-users"></a>Former les utilisateurs
 
-La formation des utilisateurs avec des comptes prioritaires peut aider à gagner beaucoup de temps et de frustration à ces utilisateurs et à votre équipe des opérations de sécurité. Les utilisateurs expérimentés sont moins susceptibles d’ouvrir des pièces jointes ou de cliquer sur des liens dans des messages électroniques douteux, et sont plus susceptibles d’éviter les sites web suspects.
+La formation des utilisateurs avec des comptes prioritaires peut aider à gagner beaucoup de temps et de frustration à ces utilisateurs et à votre équipe des opérations de sécurité. Les utilisateurs expérimentés sont moins susceptibles d’ouvrir des pièces jointes ou de cliquer sur des liens dans des messages électroniques douteux, et ils sont plus susceptibles d’éviter les sites web suspects.
 
 Le manuel de campagne de [cyber-sécurité](https://www.belfercenter.org/CyberPlaybook) de l’établissement d’enseignement de l’établissement d’une culture forte de sensibilisation à la sécurité au sein de votre organisation, y compris la formation des utilisateurs pour identifier les attaques par hameçonnage.
 

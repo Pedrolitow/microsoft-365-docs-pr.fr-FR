@@ -1,5 +1,5 @@
 ---
-title: Réinitialiser les mots de passe utilisateur
+title: Réinitialiser les mots de passe des utilisateurs
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,33 +16,34 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez comment réinitialiser les mots de passe utilisateur dans Microsoft 365 pour les entreprises.
-ms.openlocfilehash: ea6ff03a75c68c13ae27befd0f4eb2ac6c4e4a3e
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 07752229e30c2a15ad1ece120a07b947bbe9c895
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702074"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928094"
 ---
-# <a name="reset-passwords-for-your-users"></a>Réinitialiser les mots de passe pour vos utilisateurs
+# <a name="reset-passwords-for-your-users"></a>Réinitialiser les mots de passe de vos utilisateurs
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FVVP?autoplay=false]
 
-Dans Microsoft 365 pour les entreprises, vous pouvez réinitialiser les mots de passe pour les utilisateurs. Vous pouvez également permettre aux employés de réinitialiser leur mot de passe. Pour plus d’informations, consultez la rubrique [configurer la réinitialisation du mot de passe libre-service](set-up-self-serve-password-reset.md) .
+Dans Microsoft 365 pour les entreprises, vous pouvez réinitialiser les mots de passe des utilisateurs. Vous pouvez également laisser les employés réinitialiser leur mot de passe. Pour plus d’informations, voir Configurer la [réinitialisation](set-up-self-serve-password-reset.md) du mot de passe en libre-service.
 
 ## <a name="try-it"></a>Essayez !
 
-1. Lorsqu’un utilisateur demande un nouveau mot de passe, vous recevez une demande de réinitialisation de mot de passe dans un message électronique. Pour réinitialiser le mot de passe, ouvrez le lanceur d’applications et sélectionnez **administrateur**.
-1. Dans le centre d’administration 365 de Microsoft, sélectionnez **utilisateurs**,  **utilisateurs actifs**, puis sélectionnez l’icône en regard de l’utilisateur qui a demandé la réinitialisation.
-1. Sélectionnez **génération automatique du mot de passe** pour créer automatiquement un mot de passe aléatoire.
-1. Sélectionnez **Réinitialiser**.
-1. Activez la case à cocher **Envoyer le mot de passe dans un message électronique** .
-1. Votre adresse e-mail apparaît dans la zone **Envoyer un nouveau mot de passe aux destinataires suivants** . Ajoutez l’adresse de messagerie de secours de l’utilisateur ou toute adresse de votre choix.
-1. Sélectionnez **Envoyer un courrier électronique et fermer**.
+1. Lorsqu’un utilisateur demande un nouveau mot de passe, vous recevez une demande de réinitialisation de mot de passe par courrier électronique. Pour réinitialiser le mot de passe, ouvrez le lanceur d’applications et sélectionnez **Admin**.
+1. Dans le Centre d’administration Microsoft 365, sélectionnez Utilisateurs, Utilisateurs **actifs,** puis sélectionnez l’icône de clé en face de l’utilisateur qui a demandé la réinitialisation.
+1. Sélectionnez **Générer automatiquement le mot de passe** pour qu’un mot de passe aléatoire soit créé automatiquement.
+1. Sélectionnez **Réinitialiser.**
+1. Cochez la **case Envoyer le mot** de passe.
+1. Votre adresse de messagerie s’insérez dans la zone Envoyer le nouveau mot de **passe aux destinataires suivants.** Ajoutez l’adresse e-mail de remplacement de l’utilisateur ou n’importe quelle adresse de votre choix.
+1. Choose **Send email and close**.
 
-    L’utilisateur recevra un message électronique avec les instructions de réinitialisation du mot de passe.
+    L’utilisateur reçoit un e-mail avec les instructions de réinitialisation du mot de passe.

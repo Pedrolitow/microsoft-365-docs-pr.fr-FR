@@ -16,63 +16,64 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Découvrez l’abonnement Microsoft 365 approprié pour votre organisation.
-ms.openlocfilehash: 34a7da132004cc73b66d9244f143dfc80a0e5f86
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Découvrez quel abonnement Microsoft 365 est le bon pour votre organisation.
+ms.openlocfilehash: 81ec93f5295fe9eb39538e74fc82b41b26641302
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702317"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927369"
 ---
 # <a name="choose-a-microsoft-365-subscription"></a>Choisir un abonnement Microsoft 365
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWfzL9?autoplay=false]
 
-Le choix de l’abonnement Microsoft 365 approprié est essentiel pour tirer le meilleur parti du service. Ici&#39;s comment comparer les options et choisir un plan qui&#39;s pour votre entreprise.
+Il est essentiel de choisir l’abonnement Microsoft 365 qui vous sera le plus à même de vous servir du service. Voici&#39;comment comparer les options et choisir une offre qui&#39;pour votre entreprise.
 
 ## <a name="try-it"></a>Essayez !
 
-1. Dans un navigateur, recherchez  **Microsoft 365 Business Premium**.
-2. Ouvrez la page  **Microsoft 365 Business Premium**  , puis choisissez  **consulter les offres et les tarifs**. Ici, vous pouvez voir les abonnements adaptés aux petites entreprises.
+1. Dans un navigateur, recherchez **Microsoft 365 Business Premium.**
+2. Ouvrez la page **Microsoft 365 Business Premium,** puis choisissez Voir **les plans et les tarifs.** Vous pouvez voir ici quels abonnements sont adaptés aux petites entreprises.
 3. Faites défiler vers le bas pour afficher les fonctionnalités disponibles avec chaque option.
-4. Si votre entreprise est plus grande ou si elle a des besoins informatiques complexes, faites défiler la liste vers le bas et sélectionnez  **Microsoft 365 entreprise**.
-5. Sélectionnez  **afficher les produits et les plans** , puis passez en revue les abonnements d’entreprise et leurs fonctionnalités.
-6. Une fois que vous avez&#39;décidé sur un abonnement, sélectionnez  **acheter maintenant** , puis suivez le processus d’inscription.
+4. Si vous avez une grande entreprise ou si vous avez des besoins informatiques complexes, faites défiler vers le bas et sélectionnez **Microsoft 365 Entreprise.**
+5. Sélectionnez  **Voir les produits et plans,** puis examinez les abonnements Entreprise et leurs fonctionnalités.
+6. Une fois que&#39;avez choisi un abonnement, choisissez Acheter maintenant  **et** traversez le processus d’inscription.
 
 ## <a name="compare-plans"></a>Comparer les offres
 
 | **Zone de service** | **Fonctionnalité** | **Microsoft 365 Business Standard** | **Microsoft 365 Business Premium** | **Office 365 Entreprise E3** |
 | --- | --- | --- | --- | --- |
 | **Licences disponibles** | Nombre maximal d’utilisateurs | 300 | 300 | Illimité |
-| **Applications Office** | Installer Office sur un maximum de 5 PC/Mac + 5 smartphones par utilisateur (Word, Excel, PowerPoint, OneNote, Access), Office Online | Professionnel | Professionnel | ProPlus |
-| **Calendrier de messagerie &amp;** | Outlook, Exchange Online | 50 Go | 50 Go | 100 Go |
-| **Hub pour le travail d’équipe** | Espace de travail de conversation, réunions en ligne et plus encore dans Microsoft teams | Oui | Oui | Oui |
-| **Stockage de fichiers** | OneDrive Entreprise | 1 to par utilisateur | 1 to par utilisateur | Illimité |
-| **Réseaux sociaux, vidéo, sites** | Flux, Yammer, planificateur, SharePoint Online \* , powerapps \* , Microsoft Flow\* | Oui | Oui | Oui |
-| **Applications métiers** | Planification d’applications-Réservations\*\* | Oui | Oui | Oui |
+| **Applications Office** | Installer Office sur jusqu’à 5 PC/Mac + 5 smartphones par utilisateur (Word, Excel, PowerPoint, OneNote, Access), Office Online | Professionnel | Professionnel | ProPlus |
+| **Calendrier de &amp; messagerie** | Outlook, Exchange Online | 50 Go | 50 Go | 100 Go |
+| **Hub pour le travail d’équipe** | Espace de travail basé sur la conversation, réunions en ligne et bien plus encore dans Microsoft Teams | Oui | Oui | Oui |
+| **Stockage de fichiers** | OneDrive Entreprise | 1 To par utilisateur | 1 To par utilisateur | Illimité |
+| **Réseaux sociaux, vidéo, sites** | Stream, Yammer, Planner, SharePoint \* Online, PowerApps, \* Microsoft Flow\* | Oui | Oui | Oui |
+| **Applications professionnelles** | Planification d’applications - Réservations\*\* | Oui | Oui | Oui |
 |
- | Applications métiers-MileIQ\*\* | Oui | Oui | Non |
+ | Applications professionnelles - MileIQ\*\* | Oui | Oui | Non |
 | **Protection contre les menaces** | Office 365 – Protection avancée contre les menaces | Non | Oui | Non |
- | Application Windows exploit Guard | Non | Oui | Non |
-| **Gestion des identités** | Réinitialisation du mot de passe en libre-service pour les comptes hybrides Azure Active Directory | Non | Oui | Non |
- | Authentification multifacteur Azure, stratégies d’accès conditionnel | Non | Oui | Non |
-| **Gestion des applications d’appareil &amp;** | Microsoft Intune, Windows AutoPilot, Windows Pro Management | Non | Oui | Non |
+ | Application de Windows Exploit Guard | Non | Oui | Non |
+| **Gestion des identités** | Réinitialisation du mot de passe en libre-service pour les comptes Azure Active Directory hybrides | Non | Oui | Non |
+ | Azure Multi-Factor Authentication, stratégies d’accès conditionnel | Non | Oui | Non |
+| **Gestion des &amp; applications d’appareil** | Microsoft Intune, Windows AutoPilot, Windows Pro Management | Non | Oui | Non |
  | Activation d'ordinateurs partagés | Non | Oui | Oui |
- | Droits de mise à niveau vers les licences Windows 10 Pro pour Win 7/8.1 Pro | Non | Oui | Non |
+ | Mettre à niveau les droits vers Windows 10 Professionnel pour les licences Win 7/8.1 Professionnel | Non | Oui | Non |
  | Windows Virtual Desktop | Non | Oui | Non |
 | **Protection des informations** | Protection contre la perte de données Office 365 | Non | Oui | Oui |
- | Azure information Protection Plan 1, application BitLocker | Non | Oui | Non |
-| **Droits de licence d’accès client sur site** | Suite ECAL (Exchange, SharePoint, Skype) | Non | Non | Oui |
-| **Conformité** | Archivage de courrier électronique illimité\*\*\* | Non | Oui | Oui |
+ | Azure Information Protection Plan 1, application de BitLocker | Non | Oui | Non |
+| **Droits de cal local** | ECAL Suite (Exchange, SharePoint, Skype) | Non | Non | Oui |
+| **Conformité** | Archivage illimité du courrier électronique\*\*\* | Non | Oui | Oui |
 
-\* Indique que Microsoft 365 Business standard a le plan 1 de la fonctionnalité et Office 365 entreprise E3 offre le plan 2.
+\* Indique que Microsoft 365 Business Standard dispose du plan 1 des fonctionnalités et qu’Office 365 Entreprise E3 dispose du plan 2.
 
 \*\* Disponible aux États-Unis, au Royaume-Uni, au Canada.
 
-\*\*\* Archivage illimité lorsque l’extension automatique est activée.
+\*\*\* Archivage illimité lorsque l’extension automatique est allumée.
 
-Pour comparer Microsoft 365 Business Premium avec d’autres produits, y compris d’autres plans Microsoft 365, consultez la rubrique [licences microsoft 365 pour petites et moyennes entreprises](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb).
+Pour comparer Microsoft 365 Business Premium avec d’autres produits, y compris d’autres plans Microsoft 365, voir Gestion des licences [Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb)pour les petites et moyennes entreprises.

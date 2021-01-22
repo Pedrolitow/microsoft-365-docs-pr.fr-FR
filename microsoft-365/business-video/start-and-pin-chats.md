@@ -1,5 +1,5 @@
 ---
-title: Démarrer et épingler des conversations dans Microsoft teams
+title: Démarrer et épingler des conversations dans Microsoft Teams
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,33 +16,34 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez comment démarrer et épingler des conversations dans Microsoft Teams.
-ms.openlocfilehash: 9cc3c3b3cc287955a733a20047a0dd8973ef644a
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 22a24a533f4d3627ac66ab8e0472071ff88eb516
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702353"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927813"
 ---
 # <a name="chat-with-employees-and-customers"></a>Discutez avec vos employés et vos clients
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWedV6?autoplay=false]
 
-Vous pouvez discuter en interne avec vos collègues ou discuter avec un utilisateur invité, tel qu’un client ou un partenaire. Si l' [accès invité est activé](https://docs.microsoft.com/microsoftteams/set-up-guests) pour votre entreprise, vous pouvez simplement taper une adresse de messagerie pour ajouter un invité à une conversation.
+Vous pouvez discuter en interne avec vos collègues ou avec un utilisateur invité, tel qu’un client ou un partenaire. Si [l’accès invité est désactivé](https://docs.microsoft.com/microsoftteams/set-up-guests) pour votre entreprise, vous pouvez simplement taper une adresse de messagerie pour ajouter un invité à une conversation.
 
 ## <a name="try-it"></a>Essayez !
 
-Démarrez 1:1 ou des conversations de groupe pour collaborer avec un groupe plus petit ou pour parler en privé, et épingler des conversations pour un accès rapide.
+Démarrez des conversations en tête à tête ou en groupe pour collaborer avec un petit groupe ou parler en privé, et épinglez des conversations pour un accès rapide.
 
-1. Dans les  **conversations** , vous pouvez avoir 1:1 ou des conversations de groupe avec des personnes.
-2. Sélectionnez **nouvelle conversation** :::image type="icon" source="../media/new-chat-icon.png" border="false"::: .  
-3. Tapez le nom de la personne ou des personnes que vous voulez contacter.
+1. Dans  **les conversations,** vous pouvez avoir des conversations en tête à tête ou en groupe avec des personnes.
+2. Sélectionnez **Nouvelle conversation.** :::image type="icon" source="../media/new-chat-icon.png" border="false":::  
+3. Tapez le nom de la personne ou des personnes que vous souhaitez contacter.
 4. Sélectionnez la flèche vers le bas pour ajouter un nom à votre groupe de conversation.
 
 Pour effectuer un appel vidéo ou audio à partir d’une conversation
 
-- Sélectionnez  **appel vidéo** :::image type="icon" source="../media/video-call-icon.png" border="false"::: ou **appel audio** :::image type="icon" source="../media/audio-call-icon.png" border="false"::: pour appeler une personne directement à partir d’une conversation.
+- Sélectionnez  **appel vidéo** :::image type="icon" source="../media/video-call-icon.png" border="false"::: ou audio **pour** appeler une personne directement à :::image type="icon" source="../media/audio-call-icon.png" border="false"::: partir d’une conversation.

@@ -16,32 +16,33 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Découvrez comment configurer les stratégies de protection Windows 10 avec Microsoft 365 Business Premium.
-ms.openlocfilehash: e2ef5c3c3d1dbc07e1c3705389eb757e720c9182
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Découvrez comment configurer des stratégies de protection Windows 10 avec Microsoft 365 Business Premium.
+ms.openlocfilehash: dadb24c5de46ef13ea64c4e164cf6edfd4592b35
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702043"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928005"
 ---
-# <a name="secure-windows-10-pcs"></a>Sécurisation des PC Windows 10
+# <a name="secure-windows-10-pcs"></a>Sécuriser les PC Windows 10
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4kcAF?autoplay=false]
  
 ## <a name="try-it"></a>Essayez !  
 
-Une fois que vous avez configuré la protection des appareils dans Microsoft 365 entreprise, procédez comme suit pour protéger vos ordinateurs Windows 10.
+Après avoir installé la protection des appareils dans Microsoft 365 Business, suivez ces étapes pour protéger vos ordinateurs Windows 10.
 
-1. Dans le centre d’administration Microsoft 365, sélectionnez  **configuration**.
-2. Sous  **sécuriser vos ordinateurs Windows** , sélectionnez  **Afficher**.
-3. Passez en revue les informations de la page  **sécuriser vos ordinateurs Windows 10**  afin de comprendre les stratégies et leur impact sur vos utilisateurs.
-4. Sélectionnez  **prise en main**.
-5. Dans le volet  **paramètres de Windows 10**  , passez en revue les options et ajustez-les si nécessaire. Pointez sur l’info-bulle pour en savoir plus sur une stratégie.
-6. Sous  **qui doit s’appliquer la stratégie ?** , indiquez si vos sélections seront appliquées à tous les membres de votre organisation ou à des groupes de sécurité spécifiques.
-7. Sélectionnez  **enregistrer les modifications**.
+1. Dans le Centre d’administration Microsoft 365, choisissez **Installation.**
+2. Sous **Sécuriser vos ordinateurs Windows,** sélectionnez **Afficher.**
+3. Examinez les informations de la page Sécuriser vos ordinateurs  **Windows 10**  afin de comprendre les stratégies et leur impact sur vos utilisateurs.
+4. Sélectionnez **Commencer.**
+5. Dans le  **volet Des paramètres de Windows 10,**  examinez les options et ajustez si nécessaire. Pointez sur l’aide de l’outil pour en savoir plus sur une stratégie.
+6. Sous  **À qui la stratégie doit-elle s’appliquer ?** , choisissez si vos sélections seront appliquées à tous les membres de votre organisation ou à des groupes de sécurité spécifiques.
+7. Sélectionnez **Enregistrer les modifications.**
 
-Microsoft 365 Business contribue désormais à la protection de vos ordinateurs Windows 10.
+Microsoft 365 Business contribue désormais à protéger vos ordinateurs Windows 10.

@@ -1,5 +1,5 @@
 ---
-title: Planifier un événement avec le planificateur Microsoft
+title: Planifier un événement avec le Planificateur Microsoft
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,53 +16,54 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Découvrez comment planifier un événement à l’aide du planificateur Microsoft.
-ms.openlocfilehash: f5ee4e63579c2c5f6493e16d27b7102d3b99b6d1
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Découvrez comment planifier un événement avec le planificateur Microsoft.
+ms.openlocfilehash: d978232dffaede882e81a491b4d927183781aa0f
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702081"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928093"
 ---
-# <a name="use-microsoft-planner-to-plan-an-event"></a>Utiliser le planificateur Microsoft pour planifier un événement
+# <a name="use-microsoft-planner-to-plan-an-event"></a>Utiliser le Planificateur Microsoft pour planifier un événement
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c8a41e1a-c30d-4adb-ab32-6eac922d0ec0?autoplay=false]
 
 ## <a name="try-it"></a>Essayez !
 
-Utiliser le planificateur Microsoft pour planifier un événement, comme suivre le lancement d’un produit.
+Utilisez le Planificateur Microsoft pour planifier un événement, tel que le suivi d’un lancement de produit.
 
-### <a name="work-with-buckets"></a>Utiliser des compartiments
+### <a name="work-with-buckets"></a>Travailler avec des compartiments
 
-Utilisez des compartiments pour trier les tâches par type, par exemple, planification des événements, marketing et brochures publicitaires, et PR.
+Utilisez des compartiments pour trier les tâches par type, telles que la planification d’événements, les garanties marketing et publicitaires et les relations publiques.
 
-1. Sélectionnez  **Ajouter un nouveau compartiment**  et tapez une nouvelle catégorie de tâche.
+1. Sélectionnez  **Ajouter un nouveau compartiment**  et tapez une nouvelle catégorie de tâches.
 2. Sélectionnez  **+**  pour ajouter des tâches à un compartiment, puis tapez un nom.
-3. Sélectionnez  **Ajouter une tâche**.
+3. Sélectionnez **Ajouter une tâche.**
 
-### <a name="work-with-labels"></a>Utiliser des étiquettes
+### <a name="work-with-labels"></a>Travailler avec des étiquettes
 
-Utilisez des étiquettes pour voir quelles tâches nécessitent votre attention.
+Utilisez des étiquettes pour voir les tâches qui ont besoin de votre attention.
 
 1. Tapez les noms de vos étiquettes.
-2. Sélectionnez une zone colorée pour supprimer ou ajouter une étiquette à une tâche.
+2. Sélectionnez une zone de couleur pour supprimer ou ajouter une étiquette à une tâche.
 
 ## <a name="add-a-comment"></a>Ajouter un commentaire
 
-Publiez un commentaire pour discuter d’une tâche avec les personnes auxquelles il est affecté.
+Publiez un commentaire pour discuter d’une tâche avec les personnes à qui elle est affectée.
 
-1. Tapez un message dans la zone  **Commentaires**  .
+1. Tapez un message dans **la zone Commentaires.**
 2. Sélectionnez  **Envoyer**.
 
 ### <a name="keep-track-of-tasks"></a>Effectuer le suivi des tâches
 
-Utiliser les  **graphiques**  et le mode  **Conseil**  pour surveiller la progression de chaque membre de l’équipe et du projet global, ou pour trier et organiser les tâches.
+Utilisez  **l’affichage**  **Graphiques**  et Tableau pour surveiller l’avancement de chaque membre de l’équipe et du projet global, ou pour trier et organiser les tâches.
 
-- Sélectionnez les  **graphiques**, puis **regrouper par** et date d' **échéance**  pour voir l’échéance de la tâche suivante.
-- Sélectionnez  **carte**, puis **regrouper par** et **progression**  pour trier les tâches par progression.
+- Sélectionnez  **Graphiques,** **puis Regroupement par** et enfin Date **d’échéance**  pour voir quelle tâche est due à la suite.
+- Sélectionnez  **Le** tableau, puis **Groupez par** et enfin **progression pour**  trier les tâches par progression.
 
-**Remarque :**  Les tâches sont classées par  **non démarré**,  **en cours** et  **terminé**  , afin que vous sachiez quand vous êtes prêt à lancer votre produit.
+**Remarque :**  Les tâches sont organisées par  **Non**  **démarré,** En cours et  **Terminé**  pour vous faire savoir quand vous êtes prêt à lancer votre produit.

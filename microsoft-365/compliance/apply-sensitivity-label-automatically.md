@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de confidentialité, vous pouvez attribuer automatiquement une étiquette aux fichiers et aux courriers électroniques, ou vous pouvez inviter les utilisateurs à sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: aa6b3ce2da8166cc2b33ae2b6056b54d76a0c634
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+ms.openlocfilehash: 40cb270ee7084b50ed9ef58b9598f16e76dffa36
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49759954"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49929490"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette de confidentialité au contenu
 
@@ -210,7 +210,7 @@ N’oubliez pas de connaître les conditions préalables avant de configurer les
     - Vous avez [activé les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
     - Lors de l’exécution de la stratégie d’étiquetage automatique, le fichier ne doit pas être ouvert par un autre processus ni un autre utilisateur. Un fichier examiné pour la modification est inclus dans cette catégorie.
 
-- Si vous envisagez d’utiliser des [types d’informations sensibles personnalisés](custom-sensitive-info-types.md) plutôt que les types de sensibilité prédéfinis : 
+- Si vous envisagez d’utiliser des [types d’informations sensibles personnalisés](sensitive-information-type-learn-about.md) plutôt que les types de sensibilité prédéfinis : 
     - Les types d’informations de confidentialité personnalisés sont évalués pour le contenu ajouté à SharePoint ou OneDrive après l’enregistrement des types d’informations de confidentialité personnalisés. 
     - Pour tester de nouveaux types d’informations sensibles personnalisés, créez-les avant de créer votre stratégie d’étiquetage automatique, puis créez de nouveaux documents avec des exemples de données pour pouvoir les tester.
 

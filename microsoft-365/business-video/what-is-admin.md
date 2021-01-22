@@ -1,5 +1,5 @@
 ---
-title: Qu’est-ce qu’un administrateur dans Microsoft 365 pour les entreprises
+title: Qu’est-ce qu’un administrateur dans Microsoft 365 pour les entreprises ?
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,51 +16,52 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez les rôles d’administrateur dans Microsoft 365 pour les entreprises.
-ms.openlocfilehash: 417a8af4c367e8abbef2c15da86fd07e0d8fd72c
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 3f532080dfa8b492700e258ab109a04962820557
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702209"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927741"
 ---
-# <a name="what-is-a-microsoft-365-admin"></a>Qu’est-ce qu’un administrateur Microsoft 365 ?
+# <a name="what-is-a-microsoft-365-admin"></a>Qu’est-ce qu’un administrateur Microsoft 365 ?
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SRc0?autoplay=false]
 
-Dans chaque abonnement professionnel Microsoft 365, il doit y avoir au moins un compte administrateur. L’administrateur gère le service, les comptes d’utilisateur et les appareils. Si vous êtes inscrit à l’abonnement, c’est que vous êtes l’administrateur général de votre abonnement. Vous pouvez également devenir administrateur si un autre administrateur vous en apporte un.
+Dans chaque abonnement Microsoft 365 Business, il doit y avoir au moins un compte d’administrateur. L’administrateur gère le service, les comptes d’utilisateur et les appareils. Si vous êtes celui qui s’est inscrit à l’abonnement, vous êtes l’administrateur global de votre abonnement. Vous pouvez également devenir administrateur si un autre administrateur vous en fait un.
 
-Même si vous avez toujours besoin d’au moins un rôle d’administrateur pour votre abonnement, il peut s’agir d’un risque de sécurité si le compte administrateur est compromis par un tiers. Nous vous recommandons de n’attribuer le rôle d’administrateur qu’aux personnes qui en ont réellement besoin et d’attribuer le rôle d’utilisateur à la plupart des utilisateurs.
+Bien que vous avez toujours besoin d’au moins un rôle d’administrateur pour votre abonnement, il peut s’agit d’un risque de sécurité si le compte d’administrateur est compromis par un tiers. Nous vous recommandons d’attribuer le rôle d’administrateur uniquement à ceux qui en ont réellement besoin et d’attribuer le rôle d’utilisateur à la plupart des personnes.
 
 ## <a name="try-it"></a>Essayez !
 
-### <a name="change-a-user-role-to-an-admin-role"></a>Modifier un rôle d’utilisateur pour un rôle d’administrateur
+### <a name="change-a-user-role-to-an-admin-role"></a>Modifier un rôle d’utilisateur en rôle d’administrateur
 
-Voici comment modifier un rôle d’utilisateur pour un rôle d’administrateur :
+Voici comment modifier un rôle d’utilisateur en rôle d’administrateur :
 
-1. Lorsque vous êtes connecté à Microsoft 365, sélectionnez le lanceur d’applications. Si vous voyez le bouton admin, c’est qu’il s’agit d’un administrateur.
-1. Sélectionnez **administrateur** pour accéder au centre d’administration Microsoft 365.
-1. Dans le volet de navigation de gauche, sélectionnez **utilisateurs**, puis **utilisateurs actifs**.
-1. Sélectionnez la personne pour laquelle vous souhaitez créer un administrateur. Les détails de l’utilisateur s’affichent dans la boîte de dialogue droite.
-1. Choisissez **gérer les rôles**.
-1. Désactivez la case à cocher **utilisateur (pas d’accès administrateur)** , puis sélectionnez l’un des rôles d’administrateur. Pour en savoir plus sur un rôle, placez le pointeur de la souris sur le point d’exclamation ( !) et lisez l’info-bulle. Pour donner à l’utilisateur le même rôle que le vôtre, sélectionnez **administrateur général**.
+1. Lors de la signature de Microsoft 365, sélectionnez le lanceur d’applications. Si vous voyez le bouton Administrateur, vous êtes un administrateur.
+1. Sélectionnez **Administrateur** pour aller au Centre d’administration Microsoft 365.
+1. Dans le volet de navigation de gauche, sélectionnez **Utilisateurs,** puis **Utilisateurs actifs.**
+1. Sélectionnez la personne qui doit être administrateur. Les détails de l’utilisateur apparaissent dans la boîte de dialogue de droite.
+1. Choisissez **Gérer les rôles.**
+1. Cochez **la case Utilisateur (pas d’accès administrateur),** puis sélectionnez l’un des rôles d’administrateur. Pour en savoir plus sur un rôle, pointez sur le point d’exclamation (!) et lisez l’info-conseil. Pour donner à l’utilisateur le même rôle que le vôtre, sélectionnez **Administrateur général.**
 1. Sélectionnez **Enregistrer les modifications**.
 
 ### <a name="create-an-admin-account"></a>Créer un compte d’administrateur 
 
-Vous pouvez également créer un compte d’administrateur dédié pour une personne ou un service informatique :
+Vous pouvez également créer un compte d’administrateur dédié pour une personne ou un service informatique :
 
-1. Lorsque vous êtes connecté à Microsoft 365, sélectionnez le lanceur d’applications.
-1. Sélectionnez **administrateur** pour accéder au centre d’administration Microsoft 365.
-1. Dans le volet de navigation de gauche, sélectionnez **utilisateurs**, puis **utilisateurs actifs**.
-1. Sélectionnez **Ajouter un utilisateur**.
-1. Entrez le **prénom** et le nom de **l’utilisateur, le** nom d' **affichage** et le nom **d’utilisateur**, puis cliquez sur **suivant**.
-1. Sélectionnez **créer un utilisateur sans licence de produit**. Cette méthode ajoute un nouvel utilisateur, mais vous n’avez pas besoin de payer un abonnement mensuel. Sélectionnez **Suivant**.
-1. Ouvrez **rôles**.
-1. Désactivez la case à cocher, puis sélectionnez l’un des rôles d’administrateur. Sélectionnez **Suivant**.
-1. Passez en revue les informations, puis sélectionnez **terminer l’ajout**.
+1. Lors de la signature de Microsoft 365, sélectionnez le lanceur d’applications.
+1. Sélectionnez **Administrateur** pour aller au Centre d’administration Microsoft 365.
+1. Dans le volet de navigation de gauche, sélectionnez **Utilisateurs,** puis **Utilisateurs actifs.**
+1. Sélectionnez **Ajouter un utilisateur.**
+1. Entrez le prénom  et le nom de l’utilisateur, le nom d’affichage **et** le nom d’utilisateur, puis sélectionnez **Suivant**.
+1. Choisissez **Créer un utilisateur sans licence de produit.** Cela ajoute un nouvel utilisateur, mais vous n’avez pas besoin de payer pour un abonnement mensuel. Sélectionnez **Suivant**.
+1. Ouvrez **les rôles.**
+1. Cochez la case, puis sélectionnez l’un des rôles d’administrateur. Sélectionnez **Suivant**.
+1. Examinez les informations, puis sélectionnez **Terminer l’ajout.**
 1. Sélectionnez **Fermer**.

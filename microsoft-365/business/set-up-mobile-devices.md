@@ -1,5 +1,5 @@
 ---
-title: Configurer des appareils mobiles pour Microsoft 365 pour les utilisateurs professionnels
+title: Configurer des appareils mobiles pour les utilisateurs de Microsoft 365 pour les entreprises
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -20,21 +20,22 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
-description: Installez Office sur un iPhone ou un téléphone Android, et vos fichiers professionnels dans les applications Office seront protégés par Microsoft 365 pour les entreprises.
-ms.openlocfilehash: e847a794d34731c22f7a0fca87d246151a6f80a5
-ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
+description: Installez Office sur un iPhone ou un téléphone Android, et vos fichiers de travail dans les applications Office seront protégés par Microsoft 365 pour les entreprises.
+ms.openlocfilehash: ef18fcce851b8fa1573fd5134bd25fb7d4a3d8f9
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44785869"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928741"
 ---
-# <a name="set-up-mobile-devices-for-microsoft-365-for-business-users"></a>Configurer des appareils mobiles pour Microsoft 365 pour les utilisateurs professionnels
+# <a name="set-up-mobile-devices-for-microsoft-365-for-business-users"></a>Configurer des appareils mobiles pour les utilisateurs de Microsoft 365 pour les entreprises
 
-Suivez les instructions des onglets pour installer Office sur un iPhone ou un téléphone Android. Après avoir suivi ces étapes, vos fichiers professionnels créés dans les applications Office seront protégés par Microsoft 365 pour les entreprises.
+Suivez les instructions des onglets pour installer Office sur un iPhone ou un téléphone Android. Après avoir suivi ces étapes, vos fichiers de travail créés dans les applications Office sont protégés par Microsoft 365 pour les entreprises.
 
 L'exemple s'applique à Outlook, mais également à toute autre application Office que vous souhaiteriez installer.
   
@@ -48,7 +49,7 @@ Regardez une courte vidéo sur la façon de configurer des applications Office s
 
 Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
-Accédez à **App store**et tapez Microsoft Outlook dans le champ de recherche.
+Accédez à **App store** et tapez Microsoft Outlook dans le champ de recherche.
   
 ![Go to the iPhone App Store](../media/886913de-76e5-4883-8ed0-4eb3ec06188f.png)
   
@@ -60,35 +61,35 @@ Lorsque l'installation est terminée, appuyez sur le bouton **Ouvrir** pour ouvr
   
 ![Screenshot of Outlook with Get Started button](../media/005bedec-ae50-4d75-b3bb-e7cef9e2561c.png)
   
-Entrez votre adresse de messagerie professionnelle sur l’écran Ajouter un compte de **courrier** \> **Add Account**, puis entrez vos informations d’identification Microsoft 365 pour les entreprises \> **Sign in**.
+Entrez votre adresse e-mail professionnelle dans l’écran Ajouter un compte de messagerie, puis entrez vos informations d’identification Microsoft  \> 365 pour les \> **entreprises.**
   
 ![Sign in to your work account](../media/3cef1fb5-7bec-4d3d-8542-872b731ce19f.png)
   
-Si votre organisation protège les fichiers dans les applications, vous verrez une boîte de dialogue indiquant que votre organisation protège désormais les données de l’application et vous devez redémarrer l’application pour continuer à l’utiliser. Appuyez sur **OK** et fermez Outlook. 
+Si votre organisation protège les fichiers dans les applications, vous verrez une boîte de dialogue indiquant que votre organisation protège désormais les données dans l’application et que vous devez redémarrer l’application pour continuer à l’utiliser. Appuyez sur **OK** et fermez Outlook. 
   
-![Capture d’écran montrant que votre organisation est en train de protéger votre application Outlook](../media/fb4c1c84-b1e9-42e1-8070-c13dcf79fb09.png)
+![Capture d’écran shows your organization is now protecting your Outlook app](../media/fb4c1c84-b1e9-42e1-8070-c13dcf79fb09.png)
   
-Localisez l'application Outlook sur l'iPhone, puis redémarrez-la. Lorsque vous y êtes invité, entrez un code confidentiel et vérifiez-le. Outlook sur votre iPhone est maintenant prêt à être utilisé.
+Localisez l'application Outlook sur l'iPhone, puis redémarrez-la. Lorsque vous y invitez, entrez un code confidentiel et vérifiez-le. Outlook sur votre iPhone est maintenant prêt à être utilisé.
   
 ![Set a PIN to access your organization's data](../media/64f2630b-3164-47a4-9dd6-ca0c29ed5fb3.png)
   
 ## <a name="android"></a>[Android](#tab/Android)
   
-Regardez une vidéo sur l’installation d’Outlook et d’Office sur les appareils Android.<br><br>
+Regardez une vidéo sur l’installation d’Outlook et d’Office sur des appareils Android.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/ecc2e9c0-bc7e-4f26-8b14-91d84dbcfef0] 
 
 Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
-Pour commencer l’installation sur votre téléphone Android, accédez à la boutique en lecture.
+Pour commencer l’installation sur votre téléphone Android, allez dans le Play Store.
   
 ![On the Android home screen, tap Play Store](../media/93df88e7-c778-40e1-b35e-868ca6e97f6c.png)
   
-Entrez Microsoft Outlook dans la zone de recherche Google Play, puis appuyez sur **installer**. Une fois l’installation d’Outlook terminée, appuyez sur **ouvrir**.
+Entrez Microsoft Outlook dans la zone de recherche Google Play et appuyez sur **Installer.** Une fois l’installation d’Outlook effectuée, appuyez sur **Ouvrir.**
   
 ![Tap Open to open Outlook app](../media/8b4c5937-8875-4b5a-a5b6-b8c6c9cd6240.png)
   
-Dans l’application Outlook, appuyez sur **prise en main**, puis ajoutez votre compte de messagerie Microsoft 365 pour les entreprises \> **Continue**et connectez-vous avec vos informations d’identification de votre organisation.
+Dans l’application Outlook, appuyez sur **Commencer,** puis ajoutez votre compte de messagerie Microsoft 365 pour les entreprises Continuer et connectez-vous avec les informations d’identification \> de votre organisation.
   
 ![Sign in to your organizational account in Outlook](../media/18f67c66-4bab-4b99-94bd-080839312e29.png)
   
@@ -96,7 +97,7 @@ Dans la boîte de dialogue indiquant que vous devez installer l'application Port
   
 ![Tap on Go to store to get Intune Company Portal app](../media/a702d712-5622-45dd-a511-b1adaee63071.png)
   
-Dans la boutique en lecture, installez le portail d’entreprise Intune.
+Dans Play Store, installez le portail d’entreprise Intune.
   
 ![Screenshot that shows the install button for Intune Company Portal in Google Play Store](../media/5e0408f2-3f37-44dd-80ed-13ca2ac6df0c.png)
   

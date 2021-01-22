@@ -1,10 +1,10 @@
 ---
-title: Fonction FileProfile () dans la chasse avancée pour Microsoft 365 Defender
-description: Découvrez comment utiliser le FileProfile () pour enrichir les informations sur les fichiers dans les résultats de la recherche avancée de la chasse
-keywords: chasse aux menaces, recherche de menace, recherche de menace informatique, protection contre les menaces Microsoft, Microsoft 365, MTP, M365, recherche, requête, télémétrie, référence de schéma, Kusto, FileProfile, profil de fichier, fonction, enrichissement
+title: Fonction FileProfile() dans le recherche avancée pour Microsoft 365 Defender
+description: Découvrez comment utiliser FileProfile() pour enrichir des informations sur les fichiers dans vos résultats de requête de recherche avancée
+keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, FileProfile, file profile, function, enrichment
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 31959ed146df52aa6568f7aa60617b74ab8dd4db
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: 68196f126ac470088d7ba5e2923accc492d8764c
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847451"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49929549"
 ---
 # <a name="fileprofile"></a>FileProfile()
 
@@ -32,26 +33,26 @@ ms.locfileid: "48847451"
 
 
 **S’applique à :**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
-La `FileProfile()` fonction est une fonction d’enrichissement dans la [chasse avancée](advanced-hunting-overview.md) qui ajoute les données suivantes aux fichiers trouvés par la requête.
+La fonction est une fonction d’enrichissement dans le recherche avancée qui ajoute les données suivantes aux `FileProfile()` fichiers trouvés par la requête. [](advanced-hunting-overview.md)
 
 | Colonne | Type de données | Description |
 |------------|-------------|-------------|
-| Algorithm | string | SHA-1 du fichier auquel l’action enregistrée a été appliquée |
-| SHA256 | string | SHA-256 du fichier auquel l’action enregistrée a été appliquée |
-| MD5 | string | Hachage MD5 du fichier auquel l’action enregistrée a été appliquée |
+| SHA1 | string | SHA-1 du fichier auquel l’action enregistrée a été appliquée |
+| SHA256 | string | SHA-256 du fichier à qui l’action enregistrée a été appliquée |
+| MD5 | string | Hachage MD5 du fichier à l’application de l’action enregistrée |
 | FileSize | int | Taille du fichier en octets |
-| GlobalPrevalence | int | Nombre d’instances de l’entité observées par Microsoft globalement |
-| GlobalFirstSeen | DateHeure | Date et heure auxquelles l’entité a été observée pour la première fois par Microsoft de manière globale |
-| GlobalLastSeen | DateHeure | Date et heure auxquelles l’entité a été observée pour la dernière fois par Microsoft globalement |
+| GlobalPrevalence | int | Nombre d’instances de l’entité observées globalement par Microsoft |
+| GlobalFirstSeen | DateHeure | Date et heure à laquelle l’entité a été observée pour la première fois par Microsoft globalement |
+| GlobalLastSeen | DateHeure | Date et heure de la dernière observation de l’entité par Microsoft au niveau global |
 | Signataire | string | Informations sur le signataire du fichier |
 | Issuer | string | Informations sur l’autorité de certification émettrice |
 | SignerHash | string | Valeur de hachage unique identifiant le signataire |
 | IsCertificateValid | valeur booléenne | Si le certificat utilisé pour signer le fichier est valide |
 | IsRootSignerMicrosoft | valeur booléenne | Indique si le signataire du certificat racine est Microsoft |
-| IsExecutable | valeur booléenne | Indique si le fichier est un fichier exécutable portable (PE) |
-| ThreatName | string | Nom de détection pour tout programme malveillant ou autre menace détectée |
+| IsExecutable | valeur booléenne | Si le fichier est un fichier Exécutable portable (PE) |
+| ThreatName | string | Nom de détection des programmes malveillants ou autres menaces détectés |
 | Éditeur | string | Nom de l’organisation qui a publié le fichier |
 | SoftwareName | string | Nom du produit logiciel |
 
@@ -63,12 +64,12 @@ invoke FileProfile(x,y)
 
 ## <a name="arguments"></a>Arguments
 
-- **x** — colonne d’ID de fichier à utiliser : `SHA1` , `SHA256` , `InitiatingProcessSHA1` , ou `InitiatingProcessSHA256` ; la fonction est utilisée `SHA1` si elle n’est pas spécifiée
-- **y** : limiter le nombre d’enregistrements à enrichir, 1-1000 ; la fonction utilise 100 si elle n’est pas spécifiée
+- **x**— colonne d’ID de fichier à utiliser : `SHA1` , , ou ; fonction utilise si non `SHA256` `InitiatingProcessSHA1` `InitiatingProcessSHA256` `SHA1` spécifié
+- **y**— limite au nombre d’enregistrements à enrichir, de 1 à 1 000 ; utilise 100 si non spécifié
 
 ## <a name="examples"></a>範例
 
-### <a name="project-only-the-sha1-column-and-enrich-it"></a>Projet uniquement la colonne SHA1 et enrichir celle-ci
+### <a name="project-only-the-sha1-column-and-enrich-it"></a>Projeter uniquement la colonne SHA1 et l’enrichir
 
 ```kusto
 DeviceFileEvents
@@ -78,7 +79,7 @@ DeviceFileEvents
 | invoke FileProfile()
 ```
 
-### <a name="enrich-the-first-500-records-and-list-low-prevalence-files"></a>Enrichir les premiers 500 enregistrements et répertorier les fichiers à faible prévalence
+### <a name="enrich-the-first-500-records-and-list-low-prevalence-files"></a>Enrichir les 500 premiers enregistrements et lister les fichiers à faible prévalence
 
 ```kusto
 DeviceFileEvents
@@ -88,8 +89,8 @@ DeviceFileEvents
 | where GlobalPrevalence < 15
 ```
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques associées
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Comprendre le schéma](advanced-hunting-schema-tables.md)
-- [Obtenir d’autres exemples de requêtes](advanced-hunting-shared-queries.md)
+- [Obtenir d’autres exemples de requête](advanced-hunting-shared-queries.md)
