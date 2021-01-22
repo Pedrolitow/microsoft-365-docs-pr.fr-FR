@@ -4,7 +4,7 @@ description: Suivre et passer en revue les tables et les colonnes des modificati
 keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, data, naming changes, rename, Microsoft Threat Protection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 0bef5f4abcaf0d57af9c160ff31f859c2536ccd2
-ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
+ms.technology: m365d
+ms.openlocfilehash: 483fedd1fb152e3df5311c981b305e621ec2aec3
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49780785"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49932201"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>Schéma de recherche avancé : modifications d’attribution de noms
 
@@ -50,6 +51,6 @@ Les modifications d’attribution de noms sont automatiquement appliquées aux r
 | [EmailEvents](advanced-hunting-emailevents-table.md) | FinalEmailActionPolicy | EmailActionPolicy | Commentaires des clients. |
 | [EmailEvents](advanced-hunting-emailevents-table.md) | FinalEmailActionPolicyGuid | EmailActionPolicyGuid | Commentaires des clients. |
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques associées
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Comprendre le schéma](advanced-hunting-schema-tables.md)

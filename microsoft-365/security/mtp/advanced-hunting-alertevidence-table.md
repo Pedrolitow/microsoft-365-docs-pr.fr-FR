@@ -1,10 +1,10 @@
 ---
-title: Table AlertEvidence dans le schéma de chasse avancé
-description: En savoir plus sur les informations associées aux alertes dans la table AlertEvidence du schéma de chasse avancé
-keywords: chasse de menace, recherche de menace, recherche de menace informatique, protection contre les menaces Microsoft, Microsoft 365, MTP, M365, recherche, requête, télémétrie, référence de schéma, Kusto, table, colonne, type de données, description, AlertInfo, alerte, entités, preuve, fichier, adresse IP, appareil, ordinateur, utilisateur, compte
+title: Table AlertEvidence dans le schéma de recherche avancé
+description: En savoir plus sur les informations associées aux alertes dans la table AlertEvidence du schéma de recherche avancé
+keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, AlertInfo, alert, entities, evidence, file, IP address, device, machine, user, account
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 549eed005e06a7d52ce2f881820ae9fdeffdfea7
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: c01b0aae1eff3d9b4add632aff0f13cb56941a30
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847679"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49932303"
 ---
 # <a name="alertevidence"></a>AlertEvidence
 
@@ -32,9 +33,9 @@ ms.locfileid: "48847679"
 
 
 **S’applique à :**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
-Le `AlertEvidence` tableau du schéma de [chasse avancé](advanced-hunting-overview.md) contient des informations sur les différentes entités (fichiers, adresses IP, URL, utilisateurs ou périphériques) associées aux alertes de Microsoft Defender pour le point de terminaison, de Microsoft defender pour Office 365, de la sécurité de l’application Cloud Microsoft et de Microsoft Defender for Identity. Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
+Le tableau du schéma de recherche avancée contient des informations sur différentes `AlertEvidence` entités (fichiers, adresses IP, URL, utilisateurs ou appareils) associées aux alertes de Microsoft Defender pour endpoint, Microsoft Defender pour Office 365, Microsoft Cloud App Security et Microsoft Defender pour l’identité. [](advanced-hunting-overview.md) Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
 
 Pour plus d’informations sur les autres tables du schéma de repérage avancé, [consultez la référence de repérage avancé](advanced-hunting-schema-tables.md).
 
@@ -43,15 +44,15 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `Timestamp` | DateHeure | Date et heure d’enregistrement de l’événement |
 | `AlertId` | string | Identificateur unique de l’alerte |
 | `ServiceSource` | string | Produit ou service qui a fourni les informations d’alerte |
-| `EntityType` | string | Type d’objet, tel qu’un fichier, un processus, un périphérique ou un utilisateur |
-| `EvidenceRole` | string | La manière dont l’entité est impliquée dans une alerte, indiquant si elle est affectée ou si elle est simplement liée |
-| `EvidenceDirection` | string | Indique si l’entité est la source ou la destination d’une connexion réseau. |
+| `EntityType` | string | Type d’objet, tel qu’un fichier, un processus, un appareil ou un utilisateur |
+| `EvidenceRole` | string | Comment l’entité est impliquée dans une alerte, indiquant si elle est concernée ou simplement liée |
+| `EvidenceDirection` | string | Indique si l’entité est la source ou la destination d’une connexion réseau |
 | `FileName` | string | Nom du fichier auquel l’action enregistrée a été appliquée |
-| `FolderPath` | string | Dossier contenant le fichier auquel l’action enregistrée a été appliquée |
+| `FolderPath` | string | Dossier contenant le fichier à lequel l’action enregistrée a été appliquée |
 | `SHA1` | string | SHA-1 du fichier auquel l’action enregistrée a été appliquée |
-| `SHA256` | string | SHA-256 du fichier auquel l’action enregistrée a été appliquée. Ce champ n’est généralement pas rempli : utilisez la colonne SHA1 quand elle est disponible. |
+| `SHA256` | string | SHA-256 du fichier auquel l’action enregistrée a été appliquée. Ce champ n’est généralement pas rempli ; utilisez la colonne SHA1 lorsqu’elle est disponible. |
 | `FileSize` | int | Taille du fichier en octets |
-| `ThreatFamily` | string | Famille de programmes malveillants dans laquelle le fichier ou le processus suspect ou malveillant a été classé sous |
+| `ThreatFamily` | string | Famille de programmes malveillants sous qui le fichier ou processus suspect ou malveillant a été classé |
 | `RemoteIP` | string | Adresse IP à laquelle la connexion était en cours |
 | `RemoteUrl` | string | URL ou nom de domaine complet (FQDN) à laquelle/auquel la connexion était en cours |
 | `AccountName` | string | Nom d’utilisateur du compte |
@@ -60,7 +61,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `AccountObjectId` | string | Identificateur unique du compte dans Azure Active Directory |
 | `DeviceId` | string | Identificateur unique de l’appareil dans le service |
 | `DeviceName` | string | Nom de domaine complet (FQDN) de la machine |
-| `LocalIP` | string | Adresse IP affectée au périphérique local utilisé pendant la communication |
+| `LocalIP` | string | Adresse IP attribuée à l’appareil local utilisé lors de la communication |
 | `NetworkMessageId` | string | Identificateur unique d’e-mail, généré par Office 365 |
 | `EmailSubject` | chaîne | Objet de l’e-mail |
 | `ApplicationId` | chaîne | Identificateur unique de l’application |
@@ -68,10 +69,10 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `ProcessCommandLine` | string | Ligne de commande utilisée pour créer le nouveau processus |
 | `AdditionalFields` | string | Informations supplémentaires sur l’événement au format de tableau JSON |
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques associées
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)
-- [Rechercher sur les appareils, les emails, les applications et les identités](advanced-hunting-query-emails-devices.md)
+- [Repérer des menaces sur les appareils, les e-mails, les applications et les identités](advanced-hunting-query-emails-devices.md)
 - [Comprendre le schéma](advanced-hunting-schema-tables.md)
 - [Appliquer les meilleures pratiques de requête](advanced-hunting-best-practices.md)

@@ -1,9 +1,9 @@
 ---
 title: Obtenir des notifications d’incident dans Microsoft 365 Defender
 description: Découvrez comment créer des règles pour obtenir des notifications par courrier électronique pour les incidents dans Microsoft 365 Defender
-keywords: incident, courrier électronique, notfications de courrier électronique, configurer, utilisateurs, boîte aux lettres, courrier électronique, incidents
+keywords: incident, e-mail, notfications de courrier électronique, configurer, utilisateurs, boîte aux lettres, courrier électronique, incidents
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -21,12 +21,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f25be4de3f25db869957474c3cb32b20e9f7aa53
-ms.sourcegitcommit: 88d358d778804b26d5e41c53b4f725d01a78112b
+ms.technology: m365d
+ms.openlocfilehash: 9db025818fdd5eb2635a9a676e4a10e20f3036b6
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49848890"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930977"
 ---
 # <a name="get-incident-notifications-by-email"></a>Obtenir des notifications d’incident par courrier électronique
 
@@ -52,7 +53,7 @@ De même, si votre organisation utilise le contrôle d’accès basé sur un rô
 
 Pour configurer votre première notification par courrier électronique pour les incidents, créez une règle et personnalisez les paramètres de notification par courrier électronique.
 
-1. Dans le volet de navigation, sélectionnez **Notifications** par  >  **courrier électronique d’incident des paramètres.**
+1. Dans le volet de navigation, sélectionnez **Notifications par**  >  **courrier électronique d’incident des paramètres.**
 2. Sélectionnez **Ajouter un élément.**
 3. Donnez un nom à la règle dans **Nom** et fournissez une **description.**
 
@@ -64,12 +65,12 @@ Pour configurer votre première notification par courrier électronique pour les
     - **Inclure le nom de l’organisation** : indique si le nom du client apparaît ou non dans la notification par courrier électronique.
     - **Inclure un lien portail propre au client** : ajoute un lien avec l’ID de client pour autoriser l’accès à un client spécifique.
     
-    ![Fenêtre des paramètres Notif pour les notifs de courrier électronique d’incident](../../media/incidentemailnotif2.png)
+    ![Fenêtre des paramètres Notif pour les notifs de messages électroniques d’incident](../../media/incidentemailnotif2.png)
 5. Sélectionnez **Suivant** pour aller à la section **Destinataires.** Ici, vous pouvez spécifier les adresses de messagerie qui recevront les notifications d’incident par courrier électronique. Sélectionnez **Ajouter un destinataire après** avoir tapé chaque adresse de messagerie.
 
     ![Fenêtre Ajouter des destinataires pour les notifs de courrier d’incident](../../media/incidentemailnotif3.png) 
 
-6. Enfin, **sélectionnez Suivant** pour passer **à la** règle de révision afin de voir tous les paramètres associés à votre nouvelle règle. Les destinataires commenceront à recevoir des notifications d’incident par courrier électronique en fonction des paramètres.
+6. Enfin, **sélectionnez Suivant** pour passer **à la** règle de révision afin que vous pouvez voir tous les paramètres associés à votre nouvelle règle. Les destinataires commenceront à recevoir des notifications d’incident par courrier électronique en fonction des paramètres.
 
 ## <a name="see-also"></a>Voir aussi
 - [Vue d’ensemble des incidents dans Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/incidents-overview)

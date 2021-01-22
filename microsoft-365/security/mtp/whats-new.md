@@ -1,10 +1,10 @@
 ---
-title: Nouveautés de Microsoft 365 Defender
+title: Nouveautés de Microsoft 365 Defender
 description: Répertorie les nouvelles fonctionnalités de Microsoft 365 Defender
-keywords: Nouveautés de Microsoft Threat Protection, GA, généralement disponible, fonctionnalités, disponibles, nouvelles
+keywords: nouveautés de la protection microsoft contre les menaces, ga, généralement disponibles, fonctionnalités, disponibles, nouvelles
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.pagetype: security
@@ -17,52 +17,53 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: conceptual
-ms.openlocfilehash: ade93bf8c89077c117ada764478cc74f4a5f14cc
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.technology: m365d
+ms.openlocfilehash: 8e66c734151e7476d7c54bd050891a1bffb17b3c
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357318"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49932021"
 ---
-# <a name="whats-new-in-microsoft-365-defender"></a>Nouveautés de Microsoft 365 Defender
+# <a name="whats-new-in-microsoft-365-defender"></a>Nouveautés de Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-> Vous souhaitez découvrir Microsoft 365 Defender ? Vous pouvez l' [évaluer dans un environnement de laboratoire](https://aka.ms/mtp-trial-lab) ou [exécuter votre projet pilote en production](https://aka.ms/m365d-pilotplaybook).
+> Vous souhaitez découvrir Microsoft 365 Defender ? Vous pouvez [l’évaluer dans un environnement de laboratoire](https://aka.ms/mtp-trial-lab) ou exécuter votre projet pilote en [production.](https://aka.ms/m365d-pilotplaybook)
 >
 
-Les fonctionnalités suivantes sont généralement disponibles (GA) dans la dernière version de Microsoft 365 Defender.
+Les fonctionnalités suivantes sont généralement disponibles dans la dernière version de Microsoft 365 Defender.
 
-Flux RSS : recevez une notification lorsque cette page est mise à jour en copiant et en collant l’URL suivante dans votre lecteur de flux :
+Flux RSS : recevez une notification lorsque cette page est mise à jour en copiant et en coller l’URL suivante dans votre lecteur de flux :
 ```http
 https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+Threat+Protection%22&locale=en-us
 ```
-> Vous souhaitez découvrir Microsoft 365 Defender ? Vous pouvez l' [évaluer dans un environnement de laboratoire](https://aka.ms/mtp-trial-lab) ou [exécuter votre projet pilote en production](https://aka.ms/m365d-pilotplaybook)
+> Vous souhaitez découvrir Microsoft 365 Defender ? Vous pouvez [l’évaluer dans un environnement de laboratoire](https://aka.ms/mtp-trial-lab) ou exécuter votre projet pilote en [production](https://aka.ms/m365d-pilotplaybook)
 >
 
 ## <a name="september-2020"></a>Septembre 2020
-- [Table IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md) <br> Recherchez des événements impliquant un contrôleur de domaine sur site exécutant Active Directory (AD). Cette table de schéma de [chasse avancée](advanced-hunting-overview.md) couvre une plage d’événements liés à l’identité et de système sur le contrôleur de domaine.
-- [Fonction AssignedIPAddresses ()](advanced-hunting-assignedipaddresses-function.md) <br> Utilisez cette fonction dans vos requêtes de chasse avancée pour obtenir rapidement les dernières adresses IP affectées à un appareil ou les adresses IP les plus récentes à partir d’un moment spécifique.
+- [Table IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md) <br> Rechercher les événements impliquant un contrôleur de domaine local exécutant Active Directory (AD). Ce [tableau de schéma de](advanced-hunting-overview.md) recherche avancée couvre une plage d’événements liés à l’identité et d’événements système sur le contrôleur de domaine.
+- [Fonction AssignedIPAddresses()](advanced-hunting-assignedipaddresses-function.md) <br> Utilisez cette fonction dans vos requêtes de recherche avancées pour obtenir rapidement les dernières adresses IP attribuées à un appareil ou les adresses IP les plus récentes à partir d’une heure spécifique.
 
 ## <a name="july-2020"></a>Juillet 2020
-- [Fonction FileProfile ()](advanced-hunting-fileprofile-function.md) <br> Utilisez cette fonction dans vos requêtes de chasse avancée pour enrichir les résultats avec des informations complètes sur les fichiers.
-- [Tables d’identité et d’application](advanced-hunting-schema-tables.md)<br> Bénéficiez d’une visibilité sur les événements d’authentification, les requêtes Active Directory et l’activité liée aux applications avec les tables [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md), [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)et [AppFileEvents](advanced-hunting-appfileevents-table.md) dans le schéma de chasse avancé.
-- [Accédez à la recherche](advanced-hunting-go-hunt.md)<br> Pivoter rapidement de l’examen d’un incident à l’examen d’un événement spécifique, d’un utilisateur, d’un appareil ou d’autres types d’entité sur la chasse avancée.
+- [Fonction FileProfile()](advanced-hunting-fileprofile-function.md) <br> Utilisez cette fonction dans vos requêtes de recherche avancées pour enrichir les résultats avec des informations complètes sur les fichiers.
+- [Tables d’identité et d’application](advanced-hunting-schema-tables.md)<br> Obtenez une visibilité sur les événements d’authentification, les requêtes Active Directory et l’activité liée aux applications avec les tables [IdentityLogonEvents,](advanced-hunting-identitylogonevents-table.md) [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)et [AppFileEvents](advanced-hunting-appfileevents-table.md) dans le schéma de recherche avancé.
+- [Accédez à la recherche](advanced-hunting-go-hunt.md)<br> Faites rapidement pivoter de l’investigation d’un incident à l’inspection d’un événement spécifique, d’un utilisateur, d’un appareil ou d’autres types d’entités sur le chasse avancée.
 
 ## <a name="june-2020"></a>Juin 2020
-- Flux Twitter <br> Bénéficiez de la dernière enquête sur la sécurité, de l’intelligence des menaces, des informations sur les produits et plus-directement à l’intérieur du tableau de bord.
-- [Table de schéma EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md) <br> Incorporer des informations sur les opérations postérieures à la livraison effectuées sur les messages électroniques dans vos requêtes de chasse avancées.
-- [Inspecter les enregistrements dans la recherche avancée](advanced-hunting-query-results.md#drill-down-from-query-results) <br> Inspectez rapidement les enregistrements de vos résultats de requête avec le nouveau panneau de détails.
+- Flux Twitter <br> Obtenez les dernières recherches sur la sécurité, l’intelligence des menaces, les actualités sur les produits, etc. directement dans le tableau de bord.
+- [Table de schéma EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md) <br> Incorporez des informations sur les actions de post-remise prises sur les messages électroniques dans vos requêtes de recherche avancées.
+- [Inspecter les enregistrements dans le hunting avancé](advanced-hunting-query-results.md#drill-down-from-query-results) <br> Examinez rapidement les enregistrements dans les résultats de votre requête avec le nouveau panneau d’informations.
 
 ## <a name="may-2020"></a>Mai 2020
-- [Détections personnalisées](custom-detections-overview.md) <br> Utilisez des requêtes de chasse avancées pour créer des règles de détection personnalisées qui surveillent et répondent automatiquement aux événements de sécurité et aux États du système.
+- [Détections personnalisées](custom-detections-overview.md) <br> Utilisez des requêtes de repérage avancé pour créer des règles de détection personnalisées qui surveillent automatiquement les événements de sécurité et les états système et y répondent.
 
 ## <a name="february-2020"></a>Février 2020
-- [Incidents](incidents-overview.md) <br> Savoir exactement où une attaque a commencé et d’autres informations pour vous aider à déterminer l’étendue de l’attaque.
+- [Incidents](incidents-overview.md) <br> Connaissez exactement l’endroit où une attaque a commencé et d’autres détails pour vous aider à voir l’étendue de l’attaque.
 - [Examen et réponse automatisés](mtp-autoir.md) <br> AIR permet à l’équipe en charge des opérations de sécurité d’augmenter considérablement la capacité de votre organisation à gérer les alertes et incidents de sécurité.
-- [Améliorations de la chasse avancée](advanced-hunting-overview.md) <br> Recherche proactive de menaces au sein de l’espace de travail moderne avec le langage de requête Kusto et un schéma de sécurité optimisé.
+- [Améliorations avancées du chasse](advanced-hunting-overview.md) <br> Recherchez de manière proactive les menaces dans l’espace de travail moderne avec kusto query Language et un schéma optimisé pour la sécurité.
 
 ## <a name="march-2019"></a>Mars 2019
-- Repérage avancé <br> Page d’accueil vers différentes fonctionnalités de recherche qui vous permettent de trouver de façon proactive des menaces affectant le courrier électronique, les données, les appareils et les identités.
-- [Niveau de sécurité Microsoft](microsoft-secure-score.md) <br> Mesure de la position de sécurité d’une organisation, avec un nombre supérieur indiquant d’autres actions d’amélioration. Le suivi des recommandations de score de sécurité peut protéger votre organisation contre les menaces. 
-- [Rapports](monitoring-and-reporting.md) <br>  Dispose d’un hôte de cartes couvrant un grand nombre de domaines suivis par les analystes et administrateurs de la sécurité dans le cadre de leurs opérations quotidiennes.
+- Repérage avancé <br> Page d’accueil de différentes fonctionnalités de recherche qui vous permet de rechercher de manière proactive les menaces qui affectent le courrier électronique, les données, les appareils et les identités.
+- [Niveau de sécurité Microsoft](microsoft-secure-score.md) <br> Mesure de la posture de sécurité d’une organisation, avec un nombre plus élevé indiquant d’autres actions d’amélioration prises. Le fait de suivre les recommandations du Score de sécurité peut protéger votre organisation contre les menaces. 
+- [Rapports](monitoring-and-reporting.md) <br>  Propose une série de cartes couvrant différents domaines que les analystes et les administrateurs de sécurité s’en sentent dans le cadre de leurs opérations quotidiennes.

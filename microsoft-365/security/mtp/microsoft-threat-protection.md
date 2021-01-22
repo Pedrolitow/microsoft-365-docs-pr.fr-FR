@@ -4,7 +4,7 @@ description: Microsoft 365 Defender est une solution de protection contre les me
 keywords: introduction à la Protection Microsoft contre les menaces, à la cybersécurité, aux menaces avancées persistantes, à la sécurité d’entreprise, aux appareils, aux appareils, à l’identité, aux utilisateurs, aux données, aux applications, aux incidents, à l’examen et à la correction automatisés, au hunting avancé
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: conceptual
-ms.openlocfilehash: 1884f0dae87bf068d134430ada78e44d713fd4d9
-ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
+ms.technology: m365d
+ms.openlocfilehash: e80a3d094ac8f5724bbe7daf72a0ded7d30091ba
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49780519"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930569"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 

@@ -1,9 +1,9 @@
 ---
 title: Vue d’ensemble des API Microsoft 365 Defender
 description: En savoir plus sur les API disponibles dans Microsoft 365 Defender
-keywords: API, API, vue d’ensemble, incident, incidents, chasse aux menaces, Microsoft 365 Defender
+keywords: api, api, vue d’ensemble, incident, incidents, recherche de menace, microsoft 365 defender
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 1a75a561e60c05208e8ea302505f9644ac0bc044
-ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
+ms.technology: m365d
+ms.openlocfilehash: 8e06d4b4f7c895b532091c73e8269411fb38bf21
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719189"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49931001"
 ---
 # <a name="overview-of--microsoft-365-defender-apis"></a>Vue d’ensemble des API Microsoft 365 Defender
 
@@ -35,30 +36,30 @@ ms.locfileid: "49719189"
 - Microsoft 365 Defender
 
 > [!IMPORTANT]
-> Certaines informations se rapportent à des produits précommercialisés susceptibles d’être modifiés de manière substantielle avant leur publication commerciale. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+> Certaines informations concernent des produits pré-publiés qui peuvent être considérablement modifiés avant leur commercialisation. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-Microsoft 365 Defender est basé sur une plateforme compatible avec l’intégration.
+Microsoft 365 Defender repose sur une plateforme prête à l’intégration.
 
-Utilisez les API Microsoft 365 Defender pour automatiser les flux de travail en fonction de l’incident partagé et des tableaux de la chasse avancée.
+Utilisez les API Microsoft 365 Defender pour automatiser les flux de travail en fonction de l’incident partagé et des tables de recherche avancées.
 
-- Mise en **[file d’attente des incidents combinés](api-incident.md)** : focalisation sur ce qui est essentiel en regroupant l’étendue d’attaque complète et tous les actifs affectés ensemble sous l’API incidente.
+- **[File d’attente d’incidents combinés](api-incident.md)** : concentrez-vous sur les éléments critiques en groupant l’étendue d’attaque complète et tous les biens touchés ensemble sous l’API d’incident.
 
-- Recherche des **[menaces entre les produits](api-advanced-hunting.md)** : Tirez parti des connaissances de l’organisation de votre équipe de sécurité pour rechercher des signes de compromission, en créant vos propres requêtes personnalisées pour passer en revue les données brutes collectées sur plusieurs produits de protection.
+- Recherche de menaces entre produits : tirez parti des connaissances organisationnelles de votre équipe de sécurité pour chercher des signes de compromission, en créant vos propres requêtes personnalisées pour passer en **[arrière-plan](api-advanced-hunting.md)** les données brutes collectées dans plusieurs produits de protection.
 
-Outre ces API propres à Microsoft 365 Defender, chacun de nos autres produits de sécurité expose des [API supplémentaires](api-articles.md) pour vous aider à tirer parti de leurs fonctionnalités uniques.
+En plus de ces API propres à Microsoft 365 [](api-articles.md) Defender, chacun de nos autres produits de sécurité expose des API supplémentaires pour vous aider à tirer parti de leurs fonctionnalités uniques.
 
 ## <a name="learn-more"></a>En savoir plus
 
 | **Comprendre comment accéder aux API** |
 |-|
-| [En savoir plus sur les quotas d’API et la gestion des licences](api-terms.md) |
+| [En savoir plus sur les quotas d’API et les licences](api-terms.md) |
 | [Accéder aux API Microsoft 365 Defender](api-access.md) |
 | **Créer des applications** |
-| [Créer une application « Hello World »](api-hello-world.md) |
+| [Créer une application « Hello World »](api-hello-world.md) |
 | [Créer une application pour accéder aux API Microsoft 365 Defender au nom d’un utilisateur](api-create-app-user-context.md) |
 | [Créer une application pour accéder à Microsoft 365 Defender sans utilisateur](api-create-app-web.md) |
-| [Créer une application avec un accès partenaire mutualisée aux API Microsoft 365 Defender](api-partner-access.md) |
-| **Dépanner et gérer vos applications** |
-| [Comprendre les codes d’erreur d’API](api-error-codes.md) |
+| [Créer une application avec un accès partenaire multi-locataire aux API Microsoft 365 Defender](api-partner-access.md) |
+| **Résoudre les problèmes et gérer vos applications** |
+| [Comprendre les codes d’erreur de l’API](api-error-codes.md) |
 | [Gérer les secrets dans vos applications avec Azure Key Vault](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/) |
-| [Implémentation de l’autorisation OAuth 2,0 pour la connexion de l’utilisateur](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code) |
+| [Implémenter l’autorisation OAuth 2.0 pour la signature utilisateur](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code) |

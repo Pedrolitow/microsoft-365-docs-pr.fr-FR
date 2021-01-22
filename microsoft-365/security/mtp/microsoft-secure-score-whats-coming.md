@@ -1,8 +1,8 @@
 ---
-title: Fonctionnalités du score de sécurité Microsoft
-description: Décrit les nouvelles modifications apportées à Microsoft Secure score dans le centre de sécurité Microsoft 365.
-keywords: score de sécurité Microsoft, score de sécurisation, score de sécurité Office 365, score de sécurité Microsoft, centre de sécurité Microsoft 365, actions d’amélioration
-ms.prod: microsoft-365-enterprise
+title: Qu’arrive-t-il à Microsoft Secure Score ?
+description: Décrit les nouvelles modifications apportées au Niveau de sécurité Microsoft dans le Centre de sécurité Microsoft 365.
+keywords: score de sécurité Microsoft, score de sécurité, score de sécurité Office 365, score de sécurité Microsoft, centre de sécurité Microsoft 365, actions d’amélioration
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -17,30 +17,31 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 0693e70cdd5636ce655a400a48aac65197327291
-ms.sourcegitcommit: a8f3c633714e934f9ad026c3bc72157ed535dcfc
+ms.technology: m365d
+ms.openlocfilehash: f7a0dfa3e95321ddd85a56fc32f2d36e72c6b80b
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "49737952"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930605"
 ---
-# <a name="whats-coming-to-microsoft-secure-score"></a>Fonctionnalités du score de sécurité Microsoft
+# <a name="whats-coming-to-microsoft-secure-score"></a>Qu’arrive-t-il à Microsoft Secure Score ?
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Vous pouvez trouver https://security.microsoft.com/securescore le score de sécurité Microsoft à l’adresse dans le [Centre de sécurité Microsoft 365](overview-security-center.md).
+Microsoft Secure Score se trouve dans le Centre de sécurité https://security.microsoft.com/securescore [Microsoft 365.](overview-security-center.md)
 
 ## <a name="proposed-changes"></a>Proposed changes
 
-Nous apportons des modifications à l’avenir proche pour faire en sorte que [Microsoft Secure](microsoft-secure-score.md) évalue un meilleur représentant de votre position de sécurité et améliore l’utilisation. Votre score et le score maximal possible peuvent varier.
+Nous apporterons prochainement des modifications pour faire de [Microsoft Secure Score](microsoft-secure-score.md) un meilleur représentant de votre posture de sécurité et améliorer l’utilisation. Votre score et le score maximal possible peuvent changer.
 
 ### <a name="no-planned-changes"></a>Aucune modification planifiée
 
-Il n’y a pas de modifications prévues pour le moment.
+Aucune modification n’est planifiée pour le moment.
 
 ## <a name="related-resources"></a>Ressources connexes
 
-- [Présentation de Microsoft Secure score](microsoft-secure-score.md)
+- [Vue d’ensemble du score de sécurisation Microsoft](microsoft-secure-score.md)
 - [Évaluez votre posture de sécurité](microsoft-secure-score-improvement-actions.md)
-- [Suivi de votre historique de score sécurisé Microsoft et atteindre les objectifs](microsoft-secure-score-history-metrics-trends.md)
+- [Suivre votre historique du Score de sécurité Microsoft et atteindre les objectifs](microsoft-secure-score-history-metrics-trends.md)
 - [Nouveautés](microsoft-secure-score-whats-new.md)

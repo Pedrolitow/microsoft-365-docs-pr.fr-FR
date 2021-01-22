@@ -1,10 +1,10 @@
 ---
-title: Utiliser les résultats de la recherche avancée dans Microsoft 365 Defender
-description: Tirer le meilleur parti des résultats de la requête retournés par la chasse avancée dans Microsoft 365 Defender
-keywords: chasse de menace, recherche de menace, recherche de menace informatique, protection contre les menaces Microsoft, Microsoft 365, MTP, M365, recherche, requête, télémétrie, détections personnalisées, schéma, Kusto, Microsoft 365, protection contre les menaces Microsoft, visualisation, graphique, filtres, exploration
+title: Travailler avec les résultats de requête de recherche avancée dans Microsoft 365 Defender
+description: Exploitation des résultats de requête renvoyés par le recherche avancée dans Microsoft 365 Defender
+keywords: repérage avancé, repérage de menace, repérage de cybermenace, protection microsoft contre les menaces, microsoft 365, mtp, m365, recherche, requête, télémétrie, détections personnalisées, schéma, kusto, microsoft 365, Protection Microsoft contre les menaces, visualisation, graphique, filtres, drill-down
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,63 +19,64 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: de26989b9092b783a45d27ad2a529720d21169f8
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: 462ba35f584b45bbfeb0d8a3de3b118ba1c9e17c
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844127"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49932321"
 ---
-# <a name="work-with-advanced-hunting-query-results"></a>Utiliser les résultats de la recherche avancée de la chasse
+# <a name="work-with-advanced-hunting-query-results"></a>Travailler avec les résultats de requête de recherche avancée
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **S’applique à :**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-Bien que vous puissiez construire vos requêtes de [chasse avancées](advanced-hunting-overview.md) pour renvoyer des informations très précises, vous pouvez également utiliser les résultats de la requête pour mieux comprendre et examiner des activités et des indicateurs spécifiques. Vous pouvez effectuer les actions suivantes sur les résultats de votre requête :
+Bien que vous [](advanced-hunting-overview.md) pouvez construire vos requêtes de recherche avancées pour renvoyer des informations très précises, vous pouvez également travailler avec les résultats de la requête pour obtenir des informations supplémentaires et examiner des activités et des indicateurs spécifiques. Vous pouvez prendre les mesures suivantes sur les résultats de votre requête :
 
-- Afficher les résultats sous la forme d’un tableau ou d’un graphique
+- Afficher les résultats sous la mesure d’un tableau ou d’un graphique
 - Exporter des tableaux et des graphiques
-- Explorer les informations détaillées de l’entité
-- Affiner vos requêtes directement à partir des résultats ou appliquer des filtres
+- Accès aux informations détaillées sur l’entité
+- Ajustez vos requêtes directement à partir des résultats ou appliquez des filtres
 
-## <a name="view-query-results-as-a-table-or-chart"></a>Afficher les résultats de la requête sous la forme d’un tableau ou d’un graphique
-Par défaut, la chasse avancée affiche les résultats de la requête sous forme de données tabulaires. Vous pouvez également afficher les mêmes données sous la forme d’un graphique. La chasse avancée prend en charge les affichages suivants :
+## <a name="view-query-results-as-a-table-or-chart"></a>Afficher les résultats d’une requête sous la mesure d’un tableau ou d’un graphique
+Par défaut, le recherche avancée affiche les résultats de la requête sous la mesure de données tabulaires. Vous pouvez également afficher les mêmes données qu’un graphique. Le recherche avancée prend en charge les affichages suivants :
 
 | Type d’affichage | Description |
 | -- | -- |
-| **Table** | Affiche les résultats de la requête sous forme de tableau |
-| **Histogramme** | Affiche une série d’éléments uniques sur l’axe des x sous forme de barres verticales dont les hauteurs représentent les valeurs numériques d’un autre champ |
-| **Histogramme empilé** | Affiche une série d’éléments uniques sur l’axe des x sous forme de barres verticales empilées dont les hauteurs représentent les valeurs numériques d’un ou plusieurs autres champs |
-| **Graphique en secteurs** | Affiche les secteurs de section représentant des éléments uniques. La taille de chaque graphique représente les valeurs numériques d’un autre champ. |
-| **Graphique en bouée** | Affiche les arcs de section représentant des éléments uniques. La longueur de chaque arc représente les valeurs numériques d’un autre champ. |
-| **Graphique en courbes** | Trace les valeurs numériques d’une série d’éléments uniques et connecte les valeurs tracées |
-| **Nuages de points** | Trace les valeurs numériques d’une série d’éléments uniques |
-| **Graphique en aires** | Trace les valeurs numériques d’une série d’éléments uniques et remplit les sections sous les valeurs tracées. |
+| **Table** | Affiche les résultats de la requête au format tabulaire |
+| **Graphique en colonnes** | Restituer une série d’éléments uniques sur l’axe des x sous forme de barres verticales dont les hauteurs représentent des valeurs numériques d’un autre champ |
+| **Graphique en colonnes empilées** | Restituer une série d’éléments uniques sur l’axe des X sous forme de barres verticales empilées dont les hauteurs représentent des valeurs numériques d’un ou plusieurs autres champs |
+| **Graphique en secteurs** | Restituer les secteurs de section représentant des éléments uniques. La taille de chaque secteur représente les valeurs numériques d’un autre champ. |
+| **Graphique de donut** | Restituer les arcs sectionnels représentant des éléments uniques. La longueur de chaque arc représente les valeurs numériques d’un autre champ. |
+| **Graphique en lignes** | Trace les valeurs numériques d’une série d’éléments uniques et connecte les valeurs tracées |
+| **Graphique en nuages de points** | Trace les valeurs numériques d’une série d’éléments uniques |
+| **Graphique en zone** | Trace les valeurs numériques d’une série d’éléments uniques et remplit les sections sous les valeurs tracées |
 
 ### <a name="construct-queries-for-effective-charts"></a>Créer des requêtes pour des graphiques efficaces
-Lors du rendu des graphiques, la chasse avancée identifie automatiquement les colonnes d’intérêt et les valeurs numériques à agréger. Pour obtenir des graphiques significatifs, construisez vos requêtes pour renvoyer les valeurs spécifiques que vous souhaitez voir visibles. Voici quelques exemples de requêtes et les graphiques qui en résultent.
+Lors du rendu des graphiques, le recherche avancée identifie automatiquement les colonnes d’intérêt et les valeurs numériques à agréger. Pour obtenir des graphiques significatifs, construisez vos requêtes pour renvoyer les valeurs spécifiques que vous souhaitez visualiser. Voici quelques exemples de requêtes et les graphiques qui en résultent.
 
 #### <a name="alerts-by-severity"></a>Alertes par gravité
-Utilisez l' `summarize` opérateur pour obtenir le nombre de chiffres des valeurs que vous souhaitez graphiquer. La requête ci-dessous utilise l' `summarize` opérateur pour obtenir le nombre d’alertes par gravité.
+Utilisez `summarize` l’opérateur pour obtenir un nombre numérique des valeurs que vous souhaitez graphiquer. La requête ci-dessous utilise `summarize` l’opérateur pour obtenir le nombre d’alertes par gravité.
 
 ```kusto
 AlertInfo
 | summarize Total = count() by Severity
 ```
-Lors du rendu des résultats, un histogramme affiche chaque valeur de gravité sous la forme d’une colonne distincte :
+Lors de l’affichage des résultats, un graphique en colonnes affiche chaque valeur de gravité en tant que colonne distincte :
 
-![Image des résultats de la recherche avancée de la chasse affichés sous la forme d’un graphique en histogramme ](../../media/advanced-hunting-column-chart.jpg)
- *résultats de la requête pour les alertes par gravité affichée sous forme de graphique en histogrammes*
+![Image des résultats de requête de recherche avancée affichés en tant que résultats d’une requête dans un graphique en colonnes pour les alertes par gravité affichée sous la direction ](../../media/advanced-hunting-column-chart.jpg)
+ *d’un graphique en colonnes*
 
 #### <a name="alert-severity-by-operating-system"></a>Gravité des alertes par système d’exploitation
-Vous pouvez également utiliser l' `summarize` opérateur pour préparer les résultats pour les valeurs de graphique de plusieurs champs. Par exemple, vous souhaiterez peut-être comprendre comment les niveaux d’alerte sont distribués entre les systèmes d’exploitation (OS). 
+Vous pouvez également utiliser l’opérateur pour préparer les résultats pour la graphique `summarize` des valeurs de plusieurs champs. Par exemple, vous souhaitez peut-être comprendre comment les gravités des alertes sont distribuées entre les systèmes d’exploitation. 
 
-La requête ci-dessous utilise un `join` opérateur pour extraire les informations du système d’exploitation à partir de la `DeviceInfo` table, puis utilise `summarize` pour compter les valeurs dans les `OSPlatform` `Severity` colonnes et :
+La requête ci-dessous utilise un opérateur pour tirer les informations du système d’exploitation du tableau, puis pour compter les valeurs dans les colonnes `join` `DeviceInfo` et les `summarize` `OSPlatform` `Severity` colonnes :
 
 ```kusto
 AlertInfo
@@ -83,13 +84,13 @@ AlertInfo
 | join DeviceInfo on DeviceId
 | summarize Count = count() by OSPlatform, Severity 
 ```
-Ces résultats sont optimisés à l’aide d’un histogramme empilé :
+Ces résultats sont mieux visualisés à l’aide d’un graphique en colonnes empilées :
 
-![Image des résultats de la recherche avancée de la chasse affichés sous la forme d’un graphique empilé ](../../media/advanced-hunting-stacked-chart.jpg)
- *de résultats de requête pour les alertes par système d’exploitation et gravité affichées sous la forme d’un graphique empilé*
+![Image des résultats de requête de recherche avancée affichés sous la mesure de résultats de requête de graphique empilé pour les alertes par système d’exploitation et la gravité affichées sous la mesure ](../../media/advanced-hunting-stacked-chart.jpg)
+ *d’un graphique empilé*
 
-#### <a name="phishing-emails-across-top-ten-sender-domains"></a>Courriers électroniques de hameçonnage sur les dix principaux domaines d’expéditeur
-Si vous avez affaire à une liste de valeurs qui n’est pas finie, vous pouvez utiliser l' `Top` opérateur pour graphiquer uniquement les valeurs avec le plus d’instances. Par exemple, pour obtenir les dix principaux domaines d’expéditeur avec le plus de courriers électroniques de hameçonnage, utilisez la requête ci-dessous :
+#### <a name="phishing-emails-across-top-ten-sender-domains"></a>Courriers électroniques de hameçonnage parmi les dix principaux domaines d’expéditeurs
+Si vous avez affaire à une liste de valeurs qui n’est pas finie, vous pouvez utiliser l’opérateur pour graphiquer uniquement les valeurs avec le plus grand nombre `Top` d’instances. Par exemple, pour obtenir les dix principaux domaines d’expéditeurs avec le plus de messages de hameçonnage, utilisez la requête ci-dessous :
 
 ```kusto
 EmailEvents
@@ -97,13 +98,13 @@ EmailEvents
 | summarize Count = count() by SenderFromDomain
 | top 10 by Count
 ```
-Utilisez la vue de graphique à secteurs pour afficher efficacement la distribution dans les domaines principaux :
+Utilisez l’affichage graphique en secteurs pour afficher efficacement la distribution dans les principaux domaines :
 
-![Image des résultats de la recherche avancée de la chasse affichée sous la forme d’un graphique en secteurs ](../../media/advanced-hunting-pie-chart.jpg)
- *illustrant la répartition des courriers électroniques de hameçonnage sur les domaines d’expéditeurs les plus fréquents*
+![Image des résultats de requête de recherche avancée affichés sous la mesure d’un graphique en secteurs de graphique en secteurs montrant la distribution des e-mails de hameçonnage sur les principaux ](../../media/advanced-hunting-pie-chart.jpg)
+ *domaines des expéditeurs*
 
-#### <a name="file-activities-over-time"></a>Activités des fichiers dans le temps
-À l’aide de l' `summarize` opérateur avec la `bin()` fonction, vous pouvez rechercher des événements impliquant un indicateur particulier dans le temps. La requête ci-dessous compte les événements impliquant le fichier `invoice.doc` à des intervalles de 30 minutes pour afficher les pics d’activité liés à ce fichier :
+#### <a name="file-activities-over-time"></a>Activités de fichier au fil du temps
+À `summarize` l’aide de l’opérateur avec la fonction, vous pouvez vérifier les événements `bin()` impliquant un indicateur particulier au fil du temps. La requête ci-dessous compte les événements impliquant le fichier à intervalles de 30 minutes pour afficher les pics d’activité `invoice.doc` liés à ce fichier :
 
 ```kusto
 AppFileEvents
@@ -111,28 +112,28 @@ AppFileEvents
 | where FileName == "invoice.doc"
 | summarize FileCount = count() by bin(Timestamp, 30m)
 ```
-Le graphique en courbes ci-dessous met clairement en évidence les périodes d’activité impliquant `invoice.doc` : 
+Le graphique en lignes ci-dessous met clairement en évidence les périodes avec une activité plus importante impliquant `invoice.doc` : 
 
-![Image des résultats de la recherche avancée de la chasse affichée sous la forme d’un graphique en courbes ](../../media/advanced-hunting-line-chart.jpg)
- *illustrant le nombre d’événements impliquant un fichier dans le temps*
+![Image des résultats de requête de recherche avancée affichés sous la la mesure d’un graphique en lignes montrant le nombre d’événements impliquant ](../../media/advanced-hunting-line-chart.jpg)
+ *un fichier au fil du temps*
 
 
 ## <a name="export-tables-and-charts"></a>Exporter des tableaux et des graphiques
-Après avoir exécuté une requête, sélectionnez **Exporter** pour enregistrer les résultats dans un fichier local. L’affichage choisi détermine la façon dont les résultats sont exportés :
+Après avoir exécute une requête, **sélectionnez Exporter** pour enregistrer les résultats dans le fichier local. L’affichage choisi détermine la façon dont les résultats sont exportés :
 
-- **Affichage tableau** : les résultats de la requête sont exportés sous forme de tableau sous forme de classeur Microsoft Excel
-- **N’importe quel graphique** : les résultats de la requête sont exportés sous la forme d’une image JPEG du graphique affiché
+- **Mode Tableau** : les résultats de la requête sont exportés sous forme tabulaire en tant que workbook Microsoft Excel
+- **N’importe** quel graphique : les résultats de la requête sont exportés en tant qu’image JPEG du graphique rendu
 
-## <a name="drill-down-from-query-results"></a>Explorer les résultats de la requête
-Pour inspecter rapidement un enregistrement dans les résultats de votre requête, sélectionnez la ligne correspondante pour ouvrir le panneau **inspecter les enregistrements** . Le panneau fournit les informations suivantes en fonction de l’enregistrement sélectionné :
+## <a name="drill-down-from-query-results"></a>Descendre des résultats de requête
+Pour inspecter rapidement un enregistrement dans les résultats de votre requête, sélectionnez la ligne correspondante pour ouvrir le panneau Inspecter **l’enregistrement.** Le panneau fournit les informations suivantes en fonction de l’enregistrement sélectionné :
 
-- **Ressources** : vue résumée des ressources principales (boîtes aux lettres, appareils et utilisateurs) figurant dans l’enregistrement, enrichie d’informations disponibles, telles que les niveaux de risque et d’exposition.
-- **Arborescence de processus** : générée pour des enregistrements avec des informations de processus et enrichie à l’aide des informations contextuelles disponibles ; en règle générale, les requêtes qui renvoient plus de colonnes peuvent entraîner des arborescences de processus plus riches.
+- Ressources : vue récapitulée des principaux biens (boîtes aux lettres, appareils et **utilisateurs)** trouvés dans l’enregistrement, enrichis d’informations disponibles, telles que les niveaux de risque et d’exposition
+- **Arborescence de processus** : générée pour les enregistrements avec des informations de processus et enrichie à l’aide des informations contextuelles disponibles ; en règle générale, les requêtes qui retournent plus de colonnes peuvent entraîner des arbre de processus plus riches.
 - **Tous les détails** : toutes les valeurs des colonnes de l’enregistrement  
 
-![Image de l’enregistrement sélectionné avec le panneau pour inspecter l’enregistrement](../../media/mtp-ah/inspect-record.png)
+![Image de l’enregistrement sélectionné avec panneau pour l’inspection de l’enregistrement](../../media/mtp-ah/inspect-record.png)
 
-Pour afficher plus d’informations sur une entité spécifique dans vos résultats de requête, comme une machine, un fichier, un utilisateur, une adresse IP ou une URL, sélectionnez l’identificateur d’entité pour ouvrir une page de profil détaillée pour cette entité.
+Pour afficher plus d’informations sur une entité spécifique dans les résultats de votre requête, telles qu’un ordinateur, un fichier, un utilisateur, une adresse IP ou une URL, sélectionnez l’identificateur d’entité pour ouvrir une page de profil détaillée pour cette entité.
 
 ## <a name="tweak-your-queries-from-the-results"></a>Adaptez vos requêtes à partir des résultats
 Cliquez avec le bouton droit de la souris sur une valeur du jeu de résultats pour améliorer rapidement votre requête. Vous pouvez utiliser les options suivantes pour :
@@ -141,12 +142,12 @@ Cliquez avec le bouton droit de la souris sur une valeur du jeu de résultats po
 - Exclure la valeur sélectionnée de la requête (`!=`)
 - Obtenez des opérateurs plus avancés pour ajouter la valeur à votre requête (par exemple, `contains`, `starts with` et `ends with`) 
 
-![Image du jeu de résultats de la chasse avancée](../../media/advanced-hunting-results-filter.png)
+![Image du jeu de résultats de recherche avancé](../../media/advanced-hunting-results-filter.png)
 
 ## <a name="filter-the-query-results"></a>Filtrer les résultats de la requête
 Les filtres de droite fournissent un résumé du jeu de résultats. Chaque colonne possède sa propre section qui répertorie les valeurs distinctes trouvées pour cette colonne et le nombre d’instances.
 
-Affinez votre requête en sélectionnant `+` les `-` boutons ou sur les valeurs que vous souhaitez inclure ou exclure, puis en sélectionnant **exécuter la requête**.
+Affinez votre requête en sélectionnant le ou les boutons sur les valeurs que vous souhaitez inclure ou exclure, puis en sélectionnant `+` `-` Exécuter la **requête**.
 
 ![Image du filtre de repérage avancé](../../media/advanced-hunting-filter.png)
 
@@ -156,7 +157,7 @@ Une fois le filtre appliqué pour modifier la requête, puis exécuter la requê
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)
-- [Rechercher sur les appareils, les emails, les applications et les identités](advanced-hunting-query-emails-devices.md)
+- [Repérer des menaces sur les appareils, les e-mails, les applications et les identités](advanced-hunting-query-emails-devices.md)
 - [Comprendre le schéma](advanced-hunting-schema-tables.md)
 - [Appliquer les meilleures pratiques de requête](advanced-hunting-best-practices.md)
 - [Vue d’ensemble des détections personnalisées](custom-detections-overview.md)

@@ -1,8 +1,8 @@
 ---
-title: Rapports d' & de surveillance des applications-Centre de sécurité
-description: Découvrez comment mieux comprendre l’utilisation des applications Cloud dans votre organisation. Inclut différents types d’applications, leur niveau de risque et des alertes.
-keywords: sécurité, programmes malveillants, Microsoft 365, M365, centre de sécurité, moniteur, rapport, applications
-ms.prod: microsoft-365-enterprise
+title: Analyse des applications & rapports - Centre de sécurité
+description: Découvrez comment obtenir plus d’informations sur l’utilisation des applications cloud dans votre organisation. Inclut différents types d’applications, leur niveau de risque et les alertes.
+keywords: sécurité, programmes malveillants, Microsoft 365, M365, centre de sécurité, surveiller, signaler, applications
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -17,58 +17,59 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f73c6b010677cdc481655d1d5310872fd1a99126
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.technology: m365d
+ms.openlocfilehash: ed5fcfc16c08272a6a1d55af210ab48528538048
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920513"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930521"
 ---
-# <a name="app-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Surveillance et création de rapports sur les applications dans le centre de sécurité Microsoft 365
+# <a name="app-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Surveillance des applications et rapports dans le Centre de sécurité Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-Ces rapports fournissent plus d’informations sur la façon dont les applications Cloud sont utilisées dans votre organisation. Inclut différents types d’applications, leur niveau de risque et des alertes.
+Ces rapports fournissent plus d’informations sur la façon dont les applications cloud sont utilisées dans votre organisation. Inclut différents types d’applications, leur niveau de risque et les alertes.
 
 ## <a name="monitor-email-accounts-at-risk"></a>Surveiller les comptes de messagerie à risque
 
-La protection de la **messagerie** affiche les comptes de messagerie à risque. Vous pouvez sélectionner un compte pour approfondir vos recherches dans le centre de sécurité Microsoft Defender.
+**La protection de la** messagerie affiche les comptes de messagerie à risque. Vous pouvez sélectionner un compte à examiner plus en détail dans le Centre de sécurité Microsoft Defender.
 
-![Carte de protection de la messagerie](../../media/email-protection.png)
+![Carte de protection du courrier électronique](../../media/email-protection.png)
 
 ## <a name="monitor-app-permissions-granted-by-users"></a>Surveiller les autorisations d’application accordées par les utilisateurs
 
-**Sécurité des applications Cloud : applications OAuth** répertorie les applications découvertes par la sécurité des applications Cloud auxquelles des autorisations ont été accordées par les utilisateurs. Le catalogue des risques de la sécurité des applications Cloud inclut plus de 16 000 applications évaluées à l’aide de plus de 70 facteurs de risque.
+Sécurité des applications cloud : les applications **OAuth** répertorient les applications découvertes par Cloud App Security qui ont obtenu des autorisations par les utilisateurs. Le catalogue de risques de Cloud App Security inclut plus de 16 000 applications évaluées à l’aide de plus de 70 facteurs de risque.
 
-Les facteurs de risque commencent à partir d’informations générales, telles que l’éditeur de l’application. Il passe ensuite aux mesures et contrôles de sécurité, par exemple si l’application prend en charge le chiffrement au repos ou fournit un journal d’audit de l’activité de l’utilisateur.
+Les facteurs de risque commencent par des informations générales, telles que l’éditeur d’application. Il passe ensuite aux mesures et contrôles de sécurité, par exemple si l’application prend en charge le chiffrement au repos ou fournit un journal d’audit de l’activité des utilisateurs.
 
-![Carte d’applications OAuth de sécurité d’application Cloud](../../media/cloud-app-security-oauth-apps.png)
+![Carte d’application OAuth Cloud App Security](../../media/cloud-app-security-oauth-apps.png)
 
-## <a name="monitor-cloud-app-user-accounts"></a>Surveiller les comptes d’utilisateur d’application Cloud
+## <a name="monitor-cloud-app-user-accounts"></a>Surveiller les comptes d’utilisateur d’application cloud
 
-**Comptes d’application Cloud pour vérifier les** comptes qui peuvent nécessiter votre attention.
+**Les comptes d’application cloud pour la révision** répertorient les comptes qui peuvent nécessiter une attention particulière.
 
-![Carte de révision des comptes d’application Cloud](../../media/cloud-app-accounts-for-review.png)
+![Comptes d’application cloud pour la carte de révision](../../media/cloud-app-accounts-for-review.png)
 
-## <a name="understand-which-cloud-apps-are-used"></a>Comprendre les applications Cloud utilisées
+## <a name="understand-which-cloud-apps-are-used"></a>Comprendre quelles applications cloud sont utilisées
 
-Les **applications Cloud découvertes (catégories)** montrent quels types d’applications sont utilisées dans votre organisation. Il se lie au tableau de bord de découverte dans le Cloud dans la sécurité des applications Cloud. Pour plus d’informations, consultez la rubrique [QuickStart : utiliser des applications découvertes](https://docs.microsoft.com/cloud-app-security/discovered-apps).  
+**Les applications cloud découvertes (catégories)** indiquent les types d’applications utilisés dans votre organisation. Il est lié au tableau de bord de découverte cloud dans Cloud App Security. Pour plus d’informations, [voir Démarrage rapide : Travailler avec les applications découvertes.](https://docs.microsoft.com/cloud-app-security/discovered-apps)  
 
-![Carte des catégories d’applications Cloud découvertes](../../media/discovered-cloud-apps-categories.png)
+![Carte des catégories d’applications cloud découvertes](../../media/discovered-cloud-apps-categories.png)
 
-## <a name="monitor-where-users-access-cloud-apps"></a>Surveiller l’emplacement où les utilisateurs accèdent aux applications Cloud
+## <a name="monitor-where-users-access-cloud-apps"></a>Surveiller l’endroit où les utilisateurs accèdent aux applications cloud
 
-Les emplacements des activités de l' **application Cloud** indiquent où les utilisateurs accèdent aux applications Cloud.
+**Les emplacements d’activité des applications cloud** indiquent où les utilisateurs accèdent aux applications cloud.
 
-![Fiche des emplacements des activités de l’application Cloud](../../media/cloud-app-activity-locations.png)
+![Carte d’emplacements d’activité de l’application cloud](../../media/cloud-app-activity-locations.png)
 
-## <a name="monitor-health-for-infrastructure-workloads"></a>Surveiller l’intégrité des charges de travail d’infrastructure
+## <a name="monitor-health-for-infrastructure-workloads"></a>Surveiller l’état des charges de travail d’infrastructure
 
-L’intégrité de l' **infrastructure** indique des alertes d’état d’intégrité pour les charges de travail d’infrastructure dans Azure Defender.
+**L’état de l’infrastructure** affiche des alertes d’état pour les charges de travail d’infrastructure dans Azure Defender.
 
-Azure Defender offre une gestion de la sécurité unifiée et un Defender pour Office 365 sur les charges de travail locales et de Cloud. Vous pouvez collecter, Rechercher et analyser des données de sécurité à partir de différentes sources, notamment des pare-feu et d’autres solutions partenaires.
+Azure Defender fournit une gestion unifiée de la sécurité et Defender pour Office 365 sur les charges de travail sur site et dans le cloud. Vous pouvez collecter, rechercher et analyser des données de sécurité à partir de différentes sources, y compris des pare-feux et d’autres solutions partenaires.
 
-Pour plus d’informations, reportez-vous à [la documentation Azure Defender](https://docs.microsoft.com/azure/security-center/).
+Pour plus d’informations, [voir la documentation d’Azure Defender.](https://docs.microsoft.com/azure/security-center/)
 
-![Carte d’intégrité de l’infrastructure](../../media/infrastructure-health.png)
+![Carte d’état de l’infrastructure](../../media/infrastructure-health.png)

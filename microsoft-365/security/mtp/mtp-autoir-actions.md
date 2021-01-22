@@ -1,9 +1,9 @@
 ---
-title: Approuver ou rejeter les actions en attente à la suite d’une enquête automatisée
+title: Approuver ou rejeter les actions en attente à la suite d’un examen automatisé
 description: Utiliser le centre d’actions pour gérer les actions liées à une enquête et une réponse automatisées
 keywords: action, center, autoair, automated, investigation, response, remediation
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -21,14 +21,15 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.date: 12/09/2020
-ms.openlocfilehash: b34f4a532571d6215500ab2bec022489fd462d0f
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.technology: m365d
+ms.openlocfilehash: 3776dea4a5a24f4695a5c617325af14f1f03494f
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683359"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930377"
 ---
-# <a name="approve-or-reject-pending-actions-following-an-automated-investigation"></a>Approuver ou rejeter les actions en attente à la suite d’une enquête automatisée
+# <a name="approve-or-reject-pending-actions-following-an-automated-investigation"></a>Approuver ou rejeter les actions en attente à la suite d’un examen automatisé
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -39,12 +40,12 @@ ms.locfileid: "49683359"
 Lorsqu’une enquête automatisée s’exécute, elle peut engendrer une ou plusieurs [actions de correction](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions) nécessitant une approbation pour continuer. Par exemple, il peut être nécessaire de supprimer un cluster d’e-mails ou un fichier mis en quarantaine. Il est important d’approuver (ou de refuser) les actions en attente dès que possible de sorte que vos enquêtes automatisées puissent se poursuivre et se terminer dans un délai raisonnable. 
 
 > [!TIP]
-> Si vous pensez qu’un message a été manqué ou incorrectement détecté par les fonctionnalités d’analyse et de réponse automatiques dans Microsoft 365 Defender, faites-le nous savoir ! Découvrez [Comment signaler les faux positifs/négatifs dans les fonctionnalités d’analyse et de réponse automatiques de Microsoft 365 Defender](mtp-autoir-report-false-positives-negatives.md).
+> Si vous pensez que quelque chose a été manqué ou détecté à tort par les fonctionnalités d’investigation et de réponse automatisées dans Microsoft 365 Defender, faites-le nous savoir ! Découvrez comment signaler les faux positifs/négatifs dans les fonctionnalités d’investigation et de réponse [automatisées (AIR) dans Microsoft 365 Defender.](mtp-autoir-report-false-positives-negatives.md)
 
-Les actions en attente peuvent être révisées et approuvées à l’aide du [Centre de maintenance](#review-a-pending-action-in-the-action-center) ou de l' [Affichage détails](#review-a-pending-action-in-the-investigation-details-view)de l’enquête.
+Les actions en attente peuvent être examinées et approuvées à l’aide du centre [de](#review-a-pending-action-in-the-action-center) actions ou de l’affichage [détails de l’enquête.](#review-a-pending-action-in-the-investigation-details-view)
 
 > [!NOTE]
-> Vous devez disposer des [autorisations appropriées](mtp-action-center.md#required-permissions-for-action-center-tasks) pour approuver ou rejeter les actions de correction. Pour plus d’informations, reportez-vous à [Prerequisites for Automated Investigation and Response in Microsoft 365 Defender](mtp-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender).
+> Vous devez disposer des [autorisations appropriées](mtp-action-center.md#required-permissions-for-action-center-tasks) pour approuver ou rejeter les actions de correction. Pour plus d’informations, voir [Conditions préalables à l’examen et à la réponse automatisés dans Microsoft 365 Defender.](mtp-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender)
 
 ## <a name="review-a-pending-action-in-the-action-center"></a>Examiner une action en attente dans le centre de notifications
 
@@ -66,7 +67,31 @@ Les actions en attente peuvent être révisées et approuvées à l’aide du [C
 
 2. Sélectionnez un élément dans la liste, puis choisissez **Approuver** ou **Rejeter**.
 
+## <a name="undo-completed-actions"></a>Annuler les actions terminées
+
+Si vous avez déterminé qu’un appareil ou un fichier n’est pas une menace, vous pouvez annuler les actions de correction qui ont été prises, que ces actions soient prises automatiquement ou manuellement. Dans le centre de actions, sous **l’onglet** Historique, vous pouvez annuler l’une des actions suivantes :  
+
+| Source d’action | Actions prises en charge |
+|:---|:---|
+| - Examen automatisé <br/>- Antivirus Microsoft Defender <br/>- Actions de réponse manuelles | - Isoler l’appareil <br/>- Restreindre l’exécution du code <br/>- Mettre en quarantaine un fichier <br/>- Supprimer une clé de Registre <br/>- Arrêter un service <br/>- Désactiver un pilote <br/>- Supprimer une tâche programmée |
+
+### <a name="to-undo-a-remediation-action"></a>Pour annuler une action de correction
+
+1. Go to the Action center ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ) and sign in.
+
+2. Sous **l’onglet** Historique, sélectionnez une action à annuler.
+
+3. Dans le volet sur le côté droit de l’écran, sélectionnez **Annuler**.
+
+### <a name="to-remove-a-file-from-quarantine-across-multiple-devices"></a>Pour supprimer un fichier de la quarantaine sur plusieurs appareils 
+
+1. Go to the Action center ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ) and sign in.
+
+2. Sous **l’onglet** Historique, sélectionnez un fichier dont le fichier de mise en quarantaine du type d’action **est sélectionné.**
+
+3. Dans le volet sur le côté droit de l’écran, sélectionnez Appliquer à **X plus d’instances** de ce fichier, puis **sélectionnez Annuler**.
+
 ## <a name="next-steps"></a>Étapes suivantes
 
 - [Consulter les détails et les résultats d'un examen automatisé](mtp-autoir-results.md)
-- [Gérer les faux positifs/négatifs dans les fonctionnalités d’analyse et de réponse automatisées](mtp-autoir-report-false-positives-negatives.md)
+- [Gérer les faux positifs/négatifs dans les fonctionnalités automatisées d’examen et de réponse](mtp-autoir-report-false-positives-negatives.md)

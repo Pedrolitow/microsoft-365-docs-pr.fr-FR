@@ -3,7 +3,7 @@ title: Détails et résultats d’une enquête automatisée
 description: Pendant et après un examen automatisé, vous pouvez afficher les résultats et les principales conclusions
 keywords: automatisé, examen, résultats, analyse, détails, correction, autoair
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -21,12 +21,13 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.date: 09/16/2020
-ms.openlocfilehash: 39f6be70ad7a611f9919bb0529e8c8ed7f9dc339
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.technology: m365d
+ms.openlocfilehash: c050683bb3ed052ae4752ffdee66fe51fb99b88b
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683356"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930365"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>Détails et résultats d’une enquête automatisée
 
@@ -36,7 +37,7 @@ ms.locfileid: "49683356"
 **S’applique à :**
 - Microsoft 365 Defender
 
-Lorsqu’une enquête automatisée se produit dans Microsoft 365 Defender, des informations détaillées sur cette enquête sont disponibles pendant et après le processus d’enquête automatisé. Si vous disposez des [autorisations nécessaires](mtp-action-center.md#required-permissions-for-action-center-tasks), vous pouvez afficher ces détails dans une vue Détails de l'examen. La vue Détails de l’examen vous fournit l’État à jour et la possibilité d’approuver les actions en attente. 
+Lorsqu’un examen automatisé se produit dans Microsoft 365 Defender, des détails sur cet examen sont disponibles pendant et après le processus d’examen automatisé. Si vous disposez des [autorisations nécessaires](mtp-action-center.md#required-permissions-for-action-center-tasks), vous pouvez afficher ces détails dans une vue Détails de l'examen. La vue Détails de l’examen vous fournit l’État à jour et la possibilité d’approuver les actions en attente. 
 
 ![Détails de l’examen](../../media/mtp-air-investdetails.png)
 
@@ -79,7 +80,7 @@ Dans la vue Détails de l’examen, vous pouvez consulter des informations sur l
 | Tab | Description |
 |--------|--------|
 | **Graphique de l'examen**   | Fournit une représentation visuelle de l’examen. Décrit les entités et répertorie de menaces détectées, ainsi que les alertes et l’attente d’une approbation.<br/>Vous pouvez cliquer sur un élément sur le graphique pour afficher plus de détails. Par exemple, en cliquant sur l’icône **Menaces détectées**, vous accédez à l'onglet **Principales conclusions**. |
-| **Alertes**    | Répertorie les alertes associées à l’examen. Les alertes peuvent provenir des fonctionnalités de protection contre les menaces sur l’ordinateur d’un utilisateur, dans les applications Office, la sécurité des applications Cloud et d’autres fonctionnalités de Microsoft 365 Defender.|
+| **Alertes**    | Répertorie les alertes associées à l’examen. Les alertes peuvent être dues aux fonctionnalités de protection contre les menaces sur l’ordinateur d’un utilisateur, dans les applications Office, cloud app security et autres fonctionnalités de Microsoft 365 Defender.|
 | **Appareils** | Répertorie les ordinateurs inclus dans l’examen et le niveau de correction.|
 | **Principales conclusions**  | Répertorie les résultats de l’examen, ainsi que l’État et les actions effectuées ou en attente. Vous pouvez approuver les actions en attente pour les appareils et les identités dans sous cet onglet.|
 | **Entities**  | Répertorie les activités des utilisateurs, les fichiers, les processus, les services, les pilotes, les adresses IP et les méthodes de persistance associées à l’examen, ainsi que l’État et les actions prises.|

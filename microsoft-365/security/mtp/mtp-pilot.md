@@ -1,10 +1,10 @@
 ---
-title: Exécuter votre projet pilote Microsoft 365 Defender
-description: Exécutez votre projet pilote Microsoft 365 Defender en production pour déterminer efficacement les avantages et l’adoption de Microsoft 365 Defender.
-keywords: Microsoft Threat Protection Pilot, exécuter le projet pilote de protection contre les menaces Microsoft, évaluer la protection de Microsoft contre les menaces en production, projet pilote de protection contre les menaces Microsoft, protection contre la vulnérabilité, protection avancée contre les menaces, sécurité des entreprises, périphériques, appareil, identité, utilisateurs, données, applications, incidents, recherche et correction automatiques, chasse avancée
+title: Exécuter votre projet Pilote Microsoft 365 Defender
+description: Exécutez votre projet Pilote Microsoft 365 Defender en production pour déterminer efficacement les avantages et l’adoption de Microsoft 365 Defender.
+keywords: Pilote de la Protection Microsoft contre les menaces, exécutez le projet pilote Protection Microsoft contre les menaces, évaluez la Protection Microsoft contre les menaces en production, projet pilote de protection Microsoft contre les menaces, cybersécurité, menace avancée persistante, sécurité d’entreprise, appareils, appareils, identité, utilisateurs, données, applications, incidents, examen et correction automatisés, recherche avancée
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,14 +20,15 @@ ms.collection:
 - m365solution-overview
 - m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: f01e918d35ce77d9239c200355c7b4c48c9e2b84
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.technology: m365d
+ms.openlocfilehash: 9c0635058539e464a76f1720f041c205a05fa9b2
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659315"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49933029"
 ---
-# <a name="run-your-pilot-microsoft-365-defender-project"></a>Exécuter votre projet pilote Microsoft 365 Defender 
+# <a name="run-your-pilot-microsoft-365-defender-project"></a>Exécuter votre projet Pilote Microsoft 365 Defender 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -36,49 +37,49 @@ ms.locfileid: "49659315"
 - Microsoft 365 Defender
 
 
-Ce guide vous permet d’exécuter un projet pilote en fournissant des pointeurs afin de vous assurer que vous disposez d’un plan bien structuré, de vous guider à l’aide de la fonctionnalité de simulation d’attaque et de conclure enfin le projet pilote avec des points importants pour vous permettre de réfléchir et de documenter les résultats.
+Ce guide vous aide à exécuter un projet pilote en fournissant des pointeurs pour vous assurer que vous disposez d’un plan bien structuré, en vous guidant à l’aide de la fonctionnalité de simulation d’attaque et en terminant le projet pilote avec des éléments clés à prendre en compte et documenter les résultats.
 
-![Phases de l’exécution d’un pilote Microsoft 365 Defender](../../media/pilotphases.png)
+![Phases d’exécution d’un pilote Microsoft 365 Defender](../../media/pilotphases.png)
 
 
-L’exécution d’un projet pilote vous permet de déterminer efficacement le bénéfice de adoptiing Microsoft 365 Defender. Avant d’activer Microsoft 365 Defender dans votre environnement de production et de démarrer vos cas d’utilisation, il est préférable de planifier les tâches à accomplir pour votre projet pilote et de définir les critères de réussite. 
+L’exécution d’un pilote vous permet de déterminer efficacement les avantages de l’adoption de Microsoft 365 Defender. Avant d’activer Microsoft 365 Defender dans votre environnement de production et de commencer vos cas d’utilisation, il est préférable de planifier les tâches à accomplir pour votre projet pilote et de définir les critères de réussite. 
 
 
 ## <a name="how-to-use-this-pilot-playbook"></a>Utilisation de ce manuel pilote
 
-Ce guide fournit une vue d’ensemble de Microsoft 365 Defender et des instructions détaillées sur la configuration de votre projet pilote. 
+Ce guide fournit une vue d’ensemble de Microsoft 365 Defender et des instructions détaillées sur la façon de configurer votre projet pilote. 
 
-Microsoft 365 Defender est une suite de défense d’entreprise pré-et post-faille unifiée qui coordonne de manière native la protection, la détection, la prévention, l’enquête et la réponse au-delà des points de terminaison, des identités, de la messagerie et des applications, afin de fournir une protection intégrée contre les attaques sophistiquées. Pour ce faire, il combine et orchestre les fonctionnalités suivantes dans une solution de sécurité unique :
-  - Microsoft Defender pour le point de terminaison, le nouveau nom de la protection avancée contre les menaces Microsoft Defender (points de terminaison)
-  - Microsoft Defender pour Office 365, le nouveau nom pour Office 365 ATP (courrier électronique) 
-  - Microsoft Defender for Identity, le nouveau nom pour Azure ATP (Identity) 
-  - Sécurité des applications Cloud Microsoft (applications)
+Microsoft 365 Defender est une suite unifiée de défense d’entreprise avant et après la violation qui coordonne en natif la protection, la détection, la prévention, l’examen et la réponse entre les points de terminaison, les identités, le courrier électronique et les applications afin de fournir une protection intégrée contre les attaques sophistiquées. Pour ce faire, elle combine et orchestre les fonctionnalités suivantes dans une solution de sécurité unique :
+  - Microsoft Defender pour le point de terminaison, nouveau nom de Microsoft Defender - Protection avancée contre les menaces (points de terminaison)
+  - Microsoft Defender pour Office 365, nouveau nom d’Office 365 ATP (courrier électronique) 
+  - Microsoft Defender pour l’identité, le nouveau nom d’Azure ATP (identité) 
+  - Microsoft Cloud App Security (applications)
 
-![Image of_Microsoft 365 Defender solution for Users, Microsoft Defender for Identity, for Endpoints Microsoft Defender for Endpoint, for Cloud Apps, Microsoft Cloud App Security, and for Data, Microsoft Defender for Office 365](../../media/mtp/m365pillars.png)
+![Image of_Microsoft solution 365 Defender pour les utilisateurs, Microsoft Defender pour l’identité, pour les points de terminaison Microsoft Defender pour endpoint, pour les applications cloud, Microsoft Cloud App Security et pour les données, Microsoft Defender pour Office 365](../../media/mtp/m365pillars.png)
 
-Avec la solution Microsoft 365 Defender intégrée, les professionnels de la sécurité peuvent assembler les signaux de menace que Microsoft Defender pour le point de terminaison, Microsoft Defender pour Office 365, Microsoft Defender pour les identités et recevoir la sécurité de l’application Cloud Microsoft, et déterminer l’étendue et l’impact de la menace, la façon dont elle entre dans l’environnement, ce qu’elle affecte, et comment elle Microsoft 365 Defender effectue une action automatique pour empêcher ou bloquer les boîtes aux lettres affectées, les points de terminaison et les identités des utilisateurs concernés. Pour plus d’informations, consultez la [vue d’ensemble de Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) .
+Avec la solution Microsoft 365 Defender intégrée, les professionnels de la sécurité peuvent assembler les signaux de menace que Microsoft Defender pour le point de terminaison, Microsoft Defender pour Office 365, Microsoft Defender pour identité et Microsoft Cloud App Security reçoivent, et déterminer l’étendue et l’impact complets de la menace, la façon dont il est entré dans l’environnement, ce qu’il est affecté et son impact actuel sur l’organisation. Microsoft 365 Defender prend des mesures automatiques pour empêcher ou arrêter l’attaque et auto-panser les boîtes aux lettres, les points de terminaison et les identités des utilisateurs affectés. Pour plus d’informations, voir la vue d’ensemble de [Microsoft 365 Defender.](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)
 
 
 
-L’exemple de chronologie suivant varie en fonction de l’utilisation des ressources appropriées dans votre environnement. Certains éléments détectés et les flux de travail peuvent nécessiter plus de temps d’apprentissage que les autres.
+L’exemple de chronologie suivant varie selon que vous disposez des ressources appropriées dans votre environnement. Certaines détections et flux de travail peuvent avoir besoin de plus de temps d’apprentissage que les autres.
 
-![Exemple de chronologie dans l’exécution d’un pilote Microsoft 365 Defender](../../media/phase-diagrams/pilot-phases.png)
+![Exemple de chronologie lors de l’exécution d’un pilote Microsoft 365 Defender](../../media/phase-diagrams/pilot-phases.png)
 
 >[!IMPORTANT]
->Pour obtenir des résultats optimaux, suivez les instructions de pilote aussi étroitement que possible.
+>Pour obtenir des résultats optimaux, suivez les instructions pilotes aussi étroitement que possible.
 
 
-### <a name="pilot-playbook-phases"></a>Phases du projet pilote 
+### <a name="pilot-playbook-phases"></a>Phases de lecture pilote 
 
-L’exécution d’un projet pilote Microsoft 365 Defender s’effectue en quatre étapes :
+L’exécution d’un pilote Microsoft 365 Defender se fait en quatre phases :
 
 |Phase | Description | 
 |:-------|:-----|
-| [Planification](mtp-pilot-plan.md)<br> ~ 1 jour| Découvrez ce que vous devez prendre en compte avant d’exécuter votre projet pilote Microsoft 365 Defender : <br><br>-Étendue <br> Cas d’utilisation <br>- Conditions requises : <br>-Plan de test <br> -Critères de réussite <br> -Scorecard 
-| [Préparation](mtp-evaluation.md) <br>~ 2 jours|  Accédez au centre de sécurité Microsoft 365 pour configurer votre environnement pilote Microsoft 365 Defender. Vous serez guidé pour :<br><br>-Identifier les parties prenantes et se déconnecter pour votre projet pilote <br> -Considérations sur l’environnement <br>-Accès <br>-Installation d’Azure Active Directory <br> -Ordre de configuration <br> -Inscrivez-vous à la version d’évaluation de Microsoft 365 E5 <br> -Configurer le domaine <br>-Affecter les licences Microsoft 365 E5 <br> -Exécutez l’Assistant Installation dans le portail.|
-| [Simulation d’attaque](mtp-pilot-simulate.md) <br>~ 2 jours| Pour simuler une attaque, vous serez guidé pour :<br><br>-Vérifier les conditions requises pour l’environnement de test <br>-Exécuter la simulation <br>-Enquêter sur un incident <br>-résoudre l’incident 
-| [Fermeture et résumé](mtp-pilot-close.md) <br>~ 1 jour| Une fois que vous avez atteint la fin de ce processus, vous serez guidé pour :<br><br>-Passer par le résultat final<br>-Présenter votre sortie à vos parties prenantes <br>-Fournir des commentaires <br>-Suivre les étapes suivantes 
+| [Planification](mtp-pilot-plan.md)<br> ~ 1 jour| Découvrez ce que vous devez prendre en compte avant d’exécutez votre projet pilote Microsoft 365 Defender : <br><br>- Étendue <br> - Cas d’utilisation <br>- Conditions requises : <br>- Plan de test <br> - Critères de réussite <br> - Carte de performance 
+| [Préparation](mtp-evaluation.md) <br>~2 jours|  Accédez au Centre de sécurité Microsoft 365 pour configurer votre environnement pilote Microsoft 365 Defender. Vous serez guidé vers :<br><br>- Identifier les parties prenantes et demander la signature de votre projet pilote <br> - Considérations sur l’environnement <br>- Access <br>- Configuration d’Azure Active Directory <br> - Ordre de configuration <br> - S’inscrire à la version d’essai de Microsoft 365 E5 <br> - Configurer un domaine <br>- Attribuer des licences Microsoft 365 E5 <br> - Terminer l’Assistant Installation dans le portail|
+| [Simulation d’attaque](mtp-pilot-simulate.md) <br>~2 jours| Pour simuler une attaque, vous serez guidé vers :<br><br>- Vérifier les conditions requises pour l’environnement de test <br>- Exécuter la simulation <br>- Examiner un incident <br>- résoudre l’incident 
+| [Fermeture et résumé](mtp-pilot-close.md) <br>~ 1 jour| Lorsque vous aurez atteint la fin du processus, vous serez guidé vers :<br><br>- Passer par votre résultat final<br>- Présenter votre résultat à vos parties prenantes <br>- Fournir des commentaires <br>- Prendre les étapes suivantes 
 
 ## <a name="next-step"></a>Étape suivante
-|[Phase de planification](mtp-pilot-plan.md) | Planification de votre projet pilote Microsoft 365 Defender 
+|[Phase de planification](mtp-pilot-plan.md) | Planifier votre projet pilote Microsoft 365 Defender 
 |:-------|:-----|

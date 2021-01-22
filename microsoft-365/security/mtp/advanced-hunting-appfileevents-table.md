@@ -1,10 +1,10 @@
 ---
-title: Table AppFileEvents dans le schéma de chasse avancé
-description: En savoir plus sur les événements liés aux fichiers associés aux applications et services Cloud dans le tableau AppFileEvents du schéma de chasse avancé
-keywords: chasse de menace, recherche de menace, recherche de menace informatique, protection contre les menaces Microsoft, Microsoft 365, MTP, M365, recherche, requête, télémétrie, référence de schéma, Kusto, table, colonne, type de données, description, AppFileEvents, sécurité des applications Cloud, MCAS
+title: Table AppFileEvents dans le schéma de recherche avancé
+description: En savoir plus sur les événements liés aux fichiers associés aux applications et services cloud dans la table AppFileEvents du schéma de recherche avancé
+keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, AppFileEvents, Cloud App Security, MCAS
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 1a7f523e96c0a46c29098f7e5bb2fbb83a4db4bb
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: 59e9affc53398f2a1b06fbab9774e4b53e146425
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847655"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49932873"
 ---
 # <a name="appfileevents"></a>AppFileEvents
 
@@ -32,45 +33,45 @@ ms.locfileid: "48847655"
 
 
 **S’applique à :**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
-Le `AppFileEvents` tableau du schéma de [chasse avancé](advanced-hunting-overview.md) contient des informations sur les activités liées aux fichiers dans les applications et les services Cloud surveillés par la sécurité des applications Cloud de Microsoft. Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
+Le tableau du schéma de recherche avancée contient des informations sur les activités liées aux fichiers dans les applications et services cloud surveillés par `AppFileEvents` Microsoft Cloud App Security. [](advanced-hunting-overview.md) Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
 
 >[!TIP]
-> Pour plus d’informations sur les types d’événements ( `ActionType` valeurs) pris en charge par un tableau, utilisez la [référence de schéma intégrée](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) disponible dans le centre de sécurité.
+> Pour plus d’informations sur les types d’événements (valeurs) pris en charge par une table, utilisez la référence de schéma intégrée disponible `ActionType` dans le centre de sécurité. [](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center)
 
 Pour plus d’informations sur les autres tables du schéma de repérage avancé, [consultez la référence de repérage avancé](advanced-hunting-schema-tables.md).
 
 | Nom de colonne | Type de données | Description |
 |-------------|-----------|-------------|
 | `Timestamp` | DateHeure | Date et heure d’enregistrement de l’événement |
-| `ActionType` | string | Type d’activité qui a déclenché l’événement. Pour plus d’informations, consultez la [référence de schéma dans le portail](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) . |
+| `ActionType` | string | Type d’activité qui a déclenché l’événement. Pour plus [d’informations, voir](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) la référence du schéma dans le portail |
 | `Application` | string | Application qui a effectué l’action enregistrée |
 | `FileName` | string | Nom du fichier auquel l’action enregistrée a été appliquée |
-| `FolderPath` | string | Dossier contenant le fichier auquel l’action enregistrée a été appliquée |
-| `PreviousFileName` | string | Nom d’origine du fichier qui a été renommé suite à l’action |
-| `PreviousFolderPath` | string | Dossier d’origine contenant le fichier avant l’application de l’action enregistrer |
+| `FolderPath` | string | Dossier contenant le fichier à lequel l’action enregistrée a été appliquée |
+| `PreviousFileName` | string | Nom d’origine du fichier qui a été renommé à la suite de l’action |
+| `PreviousFolderPath` | string | Dossier d’origine contenant le fichier avant l’application de l’action enregistrée |
 | `Protocol` | string | Protocole réseau utilisé |
 | `AccountName` | string | Nom d’utilisateur du compte |
 | `AccountDomain` | string | Domaine du compte |
 | `AccountUpn` | string | Nom d’utilisateur principal (UPN) du compte |
 | `AccountObjectId` | string | Identificateur unique du compte dans Azure AD |
-| `AccountDisplayName` | string | Nom de l’utilisateur du compte affiché dans le carnet d’adresses. Il s’agit généralement d’une combinaison d’un nom donné, d’une initiation au milieu et d’un nom de famille ou nom. |
-| `DeviceName` | string | Nom de domaine complet (FQDN) du périphérique |
-| `DeviceType` | string | Type de périphérique | 
-| `OSPlatform` | string | Plateforme du système d’exploitation s’exécutant sur l’appareil. Cela indique des systèmes d’exploitation spécifiques, y compris des variantes au sein d’une même famille, telles que Windows 10 et Windows 7. |
-| `IPAddress` | string | Adresse IP affectée au point de terminaison et utilisée pendant les communications réseau associées |
-| `DestinationDeviceName` | string | Nom de l’appareil exécutant l’application serveur qui a traité l’action enregistrée. |
-| `DestinationIPAddress` | string | Adresse IP de l’appareil exécutant l’application serveur qui a traité l’action enregistrée |
+| `AccountDisplayName` | string | Nom de l’utilisateur du compte affiché dans le carnet d’adresses. En règle générale, une combinaison d’un prénom ou d’un prénom donné, d’une initiation intermédiaire et d’un nom ou d’un nom de famille. |
+| `DeviceName` | string | Nom de domaine complet (FQDN) de l’appareil |
+| `DeviceType` | string | Type d’appareil | 
+| `OSPlatform` | string | Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Cela indique des systèmes d’exploitation spécifiques, y compris des variantes au sein d’une même famille, telles que Windows 10 et Windows 7. |
+| `IPAddress` | string | Adresse IP attribuée au point de terminaison et utilisée lors des communications réseau associées |
+| `DestinationDeviceName` | string | Nom de l’appareil exécutant l’application serveur qui a traitée l’action enregistrée |
+| `DestinationIPAddress` | string | Adresse IP du périphérique exécutant l’application serveur qui a traitée l’action enregistrée |
 | `Location` | string | Ville, pays ou autre emplacement géographique associé à l’événement |
-| `Isp` | string | Fournisseur de services Internet associé à l’adresse IP du point de terminaison |
+| `Isp` | string | Fournisseur de services Internet (ISP) associé à l’adresse IP du point de terminaison |
 | `ReportId` | long | Identificateur unique de l’événement |
 | `AdditionalFields` | string | Informations supplémentaires sur l’entité ou l’événement |
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques associées
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)
-- [Rechercher sur les appareils, les emails, les applications et les identités](advanced-hunting-query-emails-devices.md)
+- [Repérer des menaces sur les appareils, les e-mails, les applications et les identités](advanced-hunting-query-emails-devices.md)
 - [Comprendre le schéma](advanced-hunting-schema-tables.md)
 - [Appliquer les meilleures pratiques de requête](advanced-hunting-best-practices.md)

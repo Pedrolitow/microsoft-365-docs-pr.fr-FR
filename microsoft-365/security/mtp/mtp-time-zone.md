@@ -3,7 +3,7 @@ title: Définir le fuseau horaire pour les fonctionnalités de Microsoft 365 Def
 description: Découvrez comment choisir le fuseau horaire pour les informations de date et d’heure associées aux incidents, aux enquêtes et corrections automatiques, et au repérage avancé
 keywords: fuseau horaire, date, heure, MTP, protection Microsoft contre les menaces, M365, sécurité, incidents, enquête et réponse automatiques, AIR, repérage avancé
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 81a744c3f5ebace445a8a944c0fa152ae6b5a09e
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: 619da1402eadaa78dc14fdad58cb62aa1ffbbcab
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841913"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49932837"
 ---
 # <a name="set-the-time-zone-for-microsoft-365-defender"></a>Définir le fuseau horaire pour Microsoft 365 Defender
 
@@ -32,7 +33,7 @@ ms.locfileid: "48841913"
 
 
 **S’applique à :**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 
 
@@ -41,4 +42,4 @@ Microsoft 365 Defender peut afficher les informations de date et d’heure à l�
 - Enquête et correction automatiques, y compris le centre de notifications
 - Repérage avancé
 
-Pour définir le fuseau horaire de ces fonctionnalités, accédez à **paramètres** du  >  fuseau horaire de **Microsoft 365 Defender**  >  **Time zone**.
+Pour définir le fuseau horaire de ces **fonctionnalités,** go to Settings  >  **Microsoft 365 Defender**  >  **Time zone**.

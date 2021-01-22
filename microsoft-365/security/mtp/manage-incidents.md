@@ -3,7 +3,7 @@ title: Gérer les incidents dans Microsoft 365 Defender
 description: Découvrez comment attribuer, mettre à jour l’état,
 keywords: incident, incidents, alertes, alertes corrélées, attribuer, mettre à jour, état, gérer, classification, microsoft, 365, m365
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -21,12 +21,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 29f55d99dd3acd26ae305c03b533e2ca9bb61f2a
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: 90d9d397b8baf0ffdb9844a0f068f142a5c7fd48
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846651"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930629"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Gérer les incidents dans Microsoft 365 Defender
 
@@ -34,7 +35,7 @@ ms.locfileid: "48846651"
 
 
 **S’applique à :**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 
 
@@ -48,14 +49,14 @@ Vous pouvez modifier le nom d’un incident, le résoudre, déterminer sa classi
 Si, lors d’une investigation, vous devez déplacer des alertes d’un incident à un autre, vous pouvez également le faire à partir de l’onglet Alertes, ce qui permet de créer un incident plus important ou plus petit qui inclut toutes les alertes appropriées.
 
 ## <a name="edit-incident-name"></a>Modifier le nom de l’incident
-Les incidents reçoivent automatiquement un nom basé sur les attributs d’alerte, tels que le nombre de points de terminaison affectés, les utilisateurs affectés, les sources de détection ou les catégories. Cela vous permet de comprendre rapidement l’étendue de l’incident.
+Un nom est automatiquement attribué aux incidents en fonction des attributs d’alerte tels que le nombre de points de terminaison affectés, les utilisateurs affectés, les sources de détection ou les catégories. Cela vous permet de comprendre rapidement l’étendue de l’incident.
 
-Par exemple : plusieurs *étapes incident sur plusieurs points de terminaison signalés par plusieurs sources.*
+Par exemple : *incident en plusieurs étapes sur plusieurs points de terminaison signalés par plusieurs sources.*
 
 Vous pouvez modifier le nom de l’incident afin de mieux l’aligner avec votre convention d’affectation de noms préférée.
 
 > [!NOTE]
-> Les incidents qui existaient avant le déploiement de la fonctionnalité de dénomination automatique des incidents conserveront leur nom.
+> Les incidents qui existaient avant le déploiement de la fonctionnalité de nommage automatique des incidents conserveront leur nom.
 
 
 
@@ -64,7 +65,7 @@ Si aucun incident n’a encore été affecté, vous pouvez sélectionner **À mo
 
 ## <a name="set-status-and-classification"></a>Définir l’état et la classification
 ### <a name="incident-status"></a>État de l’incident
-Vous pouvez classer les incidents (comme **actifs** ou **résolus** ) en modifiant leur état au fur et à mesure de l’avancement de votre enquête. Cela vous permet d’organiser et de gérer la manière dont votre équipe peut réagir aux incidents.
+Vous pouvez classer les incidents (comme **actifs** ou **résolus**) en modifiant leur état au fur et à mesure de l’avancement de votre enquête. Cela vous permet d’organiser et de gérer la manière dont votre équipe peut réagir aux incidents.
 
 Par exemple, votre analyste SOC peut passer en revue les incidents **actifs** urgents pour la journée et décider de se les attribuer pour enquête.
 
