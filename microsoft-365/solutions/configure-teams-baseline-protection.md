@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Découvrez comment déployer des équipes à l’aide d’un niveau de protection de référence.
-ms.openlocfilehash: 16f37175c3aa7b420745e6126de1aa96368d618a
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 11554dbd7e33a77c9f6397ae9c5e91669f537081
+ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613441"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49921869"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>Configurer les équipes avec la protection de référence
 
@@ -87,7 +87,7 @@ Pour mettre à jour les paramètres de partage de site, procédez comme suit :
 1. Dans la barre d’outils de l’équipe, cliquez sur **Fichiers**.
 2. Cliquez sur **Ouvrir dans SharePoint**.
 3. Dans la barre d’outils du site SharePoint, cliquez sur l’icône Paramètres, puis cliquez sur **Autorisations du site**.
-4. Dans le volet **Autorisations de site**, sous **Paramètres de partage**, cliquez sur **Modifier les paramètres de partage**.
+4. Dans le volet **Autorisations de site**, sous **Partage de site**, cliquez sur **Modifier les modalités de partage par les membres**.
 5. Sous **Autorisations de partage**, sélectionnez **Propriétaires et membres du site. les personnes disposant des autorisations de modification peuvent partager des fichiers et des dossiers, mais seuls les propriétaires de site peuvent partager le site**, puis cliquer sur **Enregistrer**.
 
 ## <a name="additional-protections"></a>Autres protections

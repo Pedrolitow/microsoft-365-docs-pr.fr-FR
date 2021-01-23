@@ -1,5 +1,5 @@
 ---
-title: Créer un type d’informations sensibles personnalisé dans le Centre de Conformité et Sécurité
+title: Commencer à travailler avec des types d’informations sensibles personnalisées
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,22 +17,112 @@ search.appverid:
 - MET150
 description: Apprenez à créer, modifier, supprimer et tester des types d’informations sensibles personnalisés pour la protection contre la perte de données dans l’interface utilisateur graphique du Centre de sécurité et conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 59d16ed662ff1b577bbb6c8388c5d27836832c1f
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: 94f0f6b68e9f952e0d52ce7cb71ccf03913584f4
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681720"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49929350"
 ---
-<!-- rename md file to match the display name -->
-# <a name="create-a-custom-sensitive-information-type-in-the-security--compliance-center"></a>Créer un type d’informations sensibles personnalisé dans le Centre de Conformité et Sécurité
+# <a name="get-started-with-custom-sensitive-information-types"></a>Commencer à travailler avec des types d’informations sensibles personnalisées
 
-Lisez cet article pour créer un type d’informations sensibles personnalisé dans le Centre de Conformité et Sécurité ([https://protection.office.com](https://protection.office.com)). Les types d’informations sensibles personnalisés que vous créez en utilisant cette méthode sont ajoutés au package de règles nommé `Microsoft.SCCManaged.CustomRulePack`.
+Si les types d’informations sensibles pré configurés ne répondent pas à vos besoins, vous pouvez créer vos propres types d’informations sensibles personnalisés que vous définissez entièrement, ou vous pouvez copier un des types pré configurés et le modifier.
+
+Les types d’informations sensibles personnalisés que vous créez en utilisant cette méthode sont ajoutés au package de règles nommé `Microsoft.SCCManaged.CustomRulePack`.
+
+Il existe deux façons de créer un type d’informations sensibles :
+
+- [à partir de zéro pour la définition entière de tous les éléments](#create-a-custom-sensitive-information-type)
+- [Copier et modifier un type d’informations sensibles existant](#copy-and-modify-a-sensitive-information-type)
+
+
+## <a name="before-you-begin"></a>Avant de commencer
+
+- Vous devez être familiarisé avec les types d’informations sensibles et leur composition. Consultez [En savoir plus sur les types d’informations sensibles](sensitive-information-type-learn-about.md). Il est essentiel de comprendre les rôles des :
+    - [Expressions régulières](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/) - les types d’informations sensibles Microsoft 365 utilisent le moteur Boost.RegEx 5.1.3
+    - listes de mots clés : vous pouvez créer vos propres listes de mots clés lorsque vous définissez votre type d’informations sensibles ou faites votre choix parmi des listes de mots clés existantes.
+    - [Dictionnaire de mots clés](create-a-keyword-dictionary.md)
+    - [Fonctions](what-the-dlp-functions-look-for.md)
+    - [Niveaux de confiance](sensitive-information-type-learn-about.md#more-on-confidence-levels)
+ 
+- Vous devez avoir une autorisation d’administrateur général ou d’administrateur de conformité pour créer, tester et déployer un type d’informations sensibles personnalisé via l’interface utilisateur. Consulter [À propos des rôles d’administration](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles?view=o365-worldwide) dans Office 365.
+
+- Votre organisation doit disposer d’un abonnement, par exemple, Office 365 Entreprise, qui inclut la protection contre la perte de données (DLP). Voir [Description du service Stratégie et conformité de messagerie](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/messaging-policy-and-compliance-servicedesc). 
+
+
+> [!IMPORTANT]
+> La division Support technique et Service clientèle Microsoft ne peut pas vous aider à créer des classifications personnalisées ou des modèles d’expressions régulières. Les ingénieurs du support technique peuvent offrir un support limité pour la fonctionnalité, comme vous fournir des exemples de modèles d’expressions régulières à des fins de test, ou vous aider à résoudre un problème avec un modèle d’expression régulière existant qui n’opère pas de déclenchement comme prévu. En revanche, ils ne peuvent pas garantir que le développement correspondant à du contenu personnalisé répondra à vos exigences ou obligations.
+
+## <a name="create-a-custom-sensitive-information-type"></a>Créer un type d’informations sensibles personnalisé
+
+Utilisez cette procédure pour créer un type d’informations sensibles que vous définissez entièrement. 
+
+1. Dans le Centre de conformité, accédez à **Classification des données** \> **Types d’informations sensibles** puis sélectionnez **Créer un type d’informations**.
+2. Remplissez les valeurs du **Nom** et de la **Description** puis sélectionnez **Suivant**.
+3. Choisissez **Créer un motif**. Vous pouvez créer plusieurs motifs, chacun avec des éléments et des niveaux de confiance différents, lorsque vous définissez votre nouveau type d’informations sensibles.
+4. Choisissez le niveau de confiance par défaut pour le motif. Les valeurs sont **Confiance faible,**, **Confiance moyenne,** et **Confiance élevé**.
+5. Choisissez et définissez **L’élément principal**. L’élément principal peut être une **Expression régulière** avec un validateur facultatif, une **Liste de mots clés**, un **Dictionnaire de mots clés**, ou l’une des **Fonctions** pré-configurées. Pour obtenir plus d’informations sur les fonctions DLP, consultez l’article [Éléments recherchés par les fonctions DLP](what-the-dlp-functions-look-for.md).
+6. Remplissez une valeur pour la **Proximité de caractère**.
+7. (Facultatif) Ajoutez des éléments de prise en charge si vous en avez. Les éléments de prise en charge peuvent être une expression régulière avec un validateur facultatif, une liste de mots clés, un dictionnaire de mots clés ou l’une des fonctions prédéfinies. 
+8.  (Facultatif) Ajouter des vérifications supplémentaires à partir de la liste des vérifications disponibles
+9. Sélectionnez **Créer**.
+10. Cliquez sur **Suivant**.
+11. Choisissez le **Niveau de confiance recommandé** pour ce type d’informations sensibles.
+12. Vérifiez votre paramètre, puis sélectionnez **Soumettre**.
+
+> [!IMPORTANT]
+> Microsoft 365 utilise le robot de recherche pour identifier et classer des informations sensibles sur les sites SharePoint Online et OneDrive Entreprise. Pour identifier votre nouveau type d’informations sensibles personnalisé dans du contenu existant, celui-ci doit être ré-analysé. Le contenu est analysé sur la base d’un planning, mais vous pouvez le réanalyser manuellement pour une collection de sites, une liste ou une bibliothèque. Pour plus d’informations, voir [Demander manuellement l’analyse et la réindexation d’un site, d’une bibliothèque ou d’une liste](https://docs.microsoft.com/sharepoint/crawl-site-content).
+
+13. Tous les types d’informations sensibles s’affichent sur la page **Classification des données**. Sélectionnez **Actualiser**, puis recherchez ou utilisez l’outil de recherche pour trouver le type d’informations sensibles que vous avez créé.
+
+## <a name="test-a-sensitive-information-type"></a>Tester un type d’informations sensibles
+
+Vous pouvez tester n’importe quel type d’informations sensibles dans la liste. Nous vous suggérons de tester chaque type d’informations sensibles que vous créez avant de l’utiliser dans une stratégie.
+
+1. Préparez deux fichiers, comme un document Word. Un fichier avec un contenu qui correspond aux éléments que vous avez spécifiés dans votre type d’informations sensibles et un autre qui ne correspond pas.
+2. Dans le Centre de conformité, accédez à **Classification de données** \> **Types d’informations sensibles**, puis sélectionnez le type d’informations sensibles dans la liste pour ouvrir le volet des détails, puis sélectionnez **Tester**.
+3. Téléchargez un fichier, puis sélectionnez **Tester**.
+4. Sur la page **Résultats de correspondances**, examinez les résultats et sélectionnez **Terminer**.
+
+## <a name="modify-custom-sensitive-information-types-in-the-compliance-center"></a>Modifier des types d’informations sensibles personnalisés dans le centre de conformité
+
+1. Dans le centre de conformité, accédez à **Classification de données** \> **Types d’informations sensibles**, puis sélectionnez le type d’informations sensibles dans la liste que vous voulez modifier, puis sélectionnez **Modifier**.
+2. Vous pouvez ajouter d’autres motifs, avec des éléments principaux et de prise en charge uniques, des niveaux de confiance, la proximité des caractères et des vérifications supplémentaires, ou modifier/supprimer les éléments existants. Pour en savoir plus, consultez [Créer un type d’informations sensibles personnalisé](#create-a-custom-sensitive-information-type).
+
+## <a name="remove-custom-sensitive-information-types-in-the-compliance-center"></a>Supprimer des types d’informations sensibles personnalisés dans le centre de Conformité 
+
+> [!NOTE]
+> Vous pouvez uniquement supprimer des types d’informations sensibles personnalisés ; vous ne pouvez pas supprimer des types d’informations sensibles intégrés.
+
+> [!IMPORTANT]
+> Avant de supprimer un type d’informations sensibles personnalisé, vérifiez qu’aucune stratégie DLP ou règle de flux de courrier Exchange (également appelées règles de transport) ne référence toujours le type d’informations sensibles.
+
+1. Dans le centre de conformité, accédez à **Classification des données** \> **Types d’informations sensibles** puis choisissez le type d’informations sensibles dans la liste que vous voulez supprimer.
+2. Dans le lanceur qui s’ouvre, sélectionnez **Supprimer**.
+
+## <a name="copy-and-modify-a-sensitive-information-type"></a>Copier et modifier un type d’informations sensibles
+
+Utilisez cette procédure pour créer un type d’informations sensibles basé sur un type d’informations sensibles existant. 
+
+1. Dans le centre de conformité, accédez à **Classifications des données** \> **Types d’informations sensibles**, puis sélectionnez le type d’informations sensibles que vous voulez copier.
+2. Dans le lanceur, sélectionnez **Copier**.
+3. Sélectionnez **Actualiser** dans la liste des types d’informations sensibles, puis recherchez la copie que vous avez faite. La recherche partielle cherche le travail de sorte à limiter votre recherche à `copy`rendant tous les types d’informations sensibles ayant le mot `copy` dans le nom. 
+4. Remplissez les valeurs du **Nom** et de la **Description** puis sélectionnez **Suivant**.
+5. Sélectionnez la copie du type d’informations sensibles, puis sélectionnez **Modifier**. 
+6. Donnez un **Nom** et une **Description** à votre nouveau type d’informations sensibles.
+7. Vous pouvez choisir de modifier ou de supprimer les motifs existants et d’en ajouter de nouveaux. Choisissez le niveau de confiance par défaut pour le nouveau motif. Les valeurs sont **Confiance faible,**, **Confiance moyenne,** et **Confiance élevé**.
+8. Choisissez et définissez **L’élément principal**. L’élément principal peut être une **Expression régulière**, une **Liste de mots clés**, un **Dictionnaire de mots clés**, ou l’une des **Fonctions** pré-configurées. Consultez, [Éléments recherchés par les fonctions DLP ](what-the-dlp-functions-look-for.md).
+9. Remplissez une valeur pour la **Proximité de caractère**.
+10. (Facultatif) Si vous avez des **Éléments de prise en charge** ou des **Contrôles supplémentaires**, ajoutez les. Si nécessaire, vous pouvez grouper vos **Éléments de prise en charge**.
+11. Sélectionnez **Créer**.
+12. Cliquez sur **Suivant**.
+13. Choisissez le **Niveau de confiance recommandé** pour ce type d’informations sensibles.
+14. Vérifiez votre paramètre, puis sélectionnez **Soumettre**.
 
 Vous pouvez également créer des types d’informations sensibles personnalisés à l’aide de PowerShell et de fonctionnalités de correspondance exacte des données. Pour en savoir plus sur ces méthodes, consultez :
 - [Créer un type d’informations sensibles personnalisé dans l’interface PowerShell du Centre de sécurité et conformité](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 - [Créer un type d’informations sensibles personnalisé pour DLP à l’aide d’une correspondance exacte des données](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
-
+ 
 > [!NOTE]
 > Microsoft 365 Information Protection prend désormais en charge, en préversion, les langues de jeu de caractères à double octets pour :
 > - Chinois (simplifié)
@@ -41,150 +131,3 @@ Vous pouvez également créer des types d’informations sensibles personnalisé
 > - Japanese
 >
 >Cette prise en charge est disponible pour les types d’informations sensibles. Si vous souhaitez en savoir plus, consultez l’article [Prise en charge de la protection des informations pour les jeux de caractères à double octets (préversion)](mip-dbcs-relnotes.md).
-
-## <a name="before-you-begin"></a>Avant de commencer
-
-> [!NOTE]
-> Vous devez avoir une autorisation en tant qu’administrateur général ou d’administrateur de conformité pour créer, tester et déployer un type d’informations sensibles personnalisé via l’interface utilisateur. Consulter [À propos des rôles d’administration](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles?view=o365-worldwide) dans Office 365.
-
-- Votre organisation doit disposer d’un abonnement, par exemple, Office 365 Entreprise, qui inclut la protection contre la perte de données (DLP). Voir [Description du service Stratégie et conformité de messagerie](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/messaging-policy-and-compliance-servicedesc). 
-
-- Les types d’informations sensibles personnalisés exigent des connaissances relatives aux expressions régulières (RegEx). Pour plus d’informations sur le moteur Boost.RegEx (anciennement appelé RegEx++) utilisé pour le traitement du texte, consultez l’article [Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/).
-
-  La division Support technique et Service clientèle Microsoft ne peut pas vous aider à créer des classifications personnalisées ou des modèles d’expressions régulières. Les ingénieurs du support technique peuvent offrir un support limité pour la fonctionnalité, comme vous fournir des exemples de modèles d’expressions régulières à des fins de test, ou vous aider à résoudre un problème avec un modèle d’expression régulière existant qui n’opère pas de déclenchement comme prévu. En revanche, ils ne peuvent pas garantir que le développement correspondant à du contenu personnalisé répondra à vos exigences ou obligations.
-
-- La protection contre la perte de données DLP utilise le robot de recherche pour identifier et classer des informations sensibles dans des sites SharePoint Online et OneDrive Entreprise. Pour identifier votre nouveau type d’informations sensibles personnalisé dans du contenu existant, celui-ci doit être ré-analysé. Le contenu est analysé sur la base d’un planning, mais vous pouvez le réanalyser manuellement pour une collection de sites, une liste ou une bibliothèque. Pour plus d’informations, voir [Demander manuellement l’analyse et la réindexation d’un site, d’une bibliothèque ou d’une liste](https://docs.microsoft.com/sharepoint/crawl-site-content).
-
-## <a name="create-custom-sensitive-information-types-in-the-security--compliance-center"></a>Créer un type d’informations sensibles personnalisé dans le Centre de Conformité et Sécurité
-
-Dans le Centre de Conformité et Sécurité, accédez à **Classifications** \> **Types d’informations sensibles** et cliquez sur **Créer**.
-
-Les paramètres sont relativement évidents. Ils sont décrits sur la page associée de l’Assistant :
-
-- **Nom**
-
-- **Description**
-
-- **Proximité**
-
-- **Niveau de confiance**
-
-- **Élément de modèle principal** (mots clés, expression régulière ou dictionnaire)
-
-- Facultatif **Éléments de modèle pris en charge** (mots clés, expression régulière ou dictionnaire) et une valeur de **Coût minimum** correspondante.
-
-Voici un scénario : vous souhaitez créer un type d’informations sensibles personnalisé qui détecte les numéros d’identification d’employé à 9 chiffres dans un contenu, ainsi que les mots clés « employé », « ID » et « badge ». Pour créer ce type d’informations sensibles personnalisé, procédez comme suit :
-
-1. Dans le Centre de conformité et sécurité, accédez à **Classifications** \> **Types d’informations sensibles** et cliquez sur **Créer**.
-
-    ![Emplacement des types d’informations sensibles et bouton Créer](../media/scc-cust-sens-info-type-new.png)
-
-2. Sur la page **Choisir un nom et une description** qui s’ouvre, entrez les valeurs suivantes :
-
-  - **Nom** : ID d’employé.
-
-  - **Description** : détecte les numéros d’identification d’employé Contoso à neuf chiffres.
-
-    ![Nom et page de description](../media/scc-cust-sens-info-type-new-name-desc.png)
-
-    Lorsque vous avez terminé, cliquez sur **Suivant**.
-
-3. Sur la page **Conditions requises pour la correspondance** qui s’ouvre, cliquez sur **Ajouter un élément** et configurez les paramètres suivants :
-
-    - **Détecter le contenu contenant** :
- 
-      a. Cliquez sur **L’un de ces éléments** et sélectionnez **Expression régulière**.
-
-      b. Dans la zone de l’expression régulière, entrez `(\s)(\d{9})(\s)` (numéros à neuf chiffres encadrés d’un espace blanc)
-  
-    - **Éléments de prise en charge** : cliquez sur **Ajouter des éléments de prise en charge** et sélectionnez **Contient cette liste de mots clés**.
-
-    - Dans la zone **Contient cette liste de mots clés** qui s’affiche, configurez les paramètres suivants :
-
-      - **Liste de mots clés** : saisissez la valeur suivante : employé, ID, badge.
-
-      - **Nombre minimal** : conservez la valeur par défaut 1.
-
-    - Conservez la valeur par défaut **Niveau de confiance** 60. 
-
-    - Conservez la valeur par défaut **Caractère de proximité** 300.
-
-    ![Configuration requise pour la page correspondante](../media/scc-cust-sens-info-type-new-reqs.png)
-
-    Lorsque vous avez terminé, cliquez sur **Suivant**.
-
-4. Sur la page **Revoir et finaliser** qui s’affiche, passez en revue les paramètres, puis cliquez sur **Terminer**.
-
-    ![Examen et finalisation de la page](../media/scc-cust-sens-info-type-new-review.png)
-
-5. La page suivante vous encourage à tester le nouveau type d’informations sensibles personnalisés en cliquant sur **Oui**. Pour plus d’informations, reportez-vous à l’article [Tester des types d’informations sensibles personnalisés dans le Centre de conformité et sécurité](#test-custom-sensitive-information-types-in-the-security--compliance-center). Sinon, cliquez sur **Non**.
-
-    ![Page de recommandation de test](../media/scc-cust-sens-info-type-new-test.png)
-
-### <a name="how-do-you-know-this-worked"></a>Comment savoir si cela a fonctionné ?
-
-Pour vérifier que vous avez correctement créé un nouveau type d’informations sensibles, effectuez l’une des opérations suivantes :
-
-  - Accédez à **Classifications** \> **Types d’informations sensibles** et vérifiez que le nouveau type d’informations sensibles personnalisé apparaît.
-
-  - Testez le nouveau type d’informations sensibles personnalisés. Pour plus d’informations, reportez-vous à la rubrique [Tester des types d’informations sensibles personnalisés dans le Centre de Conformité et Sécurité](#test-custom-sensitive-information-types-in-the-security--compliance-center).
-
-## <a name="modify-custom-sensitive-information-types-in-the-security--compliance-center"></a>Modifier des types d’informations sensibles personnalisés dans le Centre de conformité et sécurité
-
-**Remarques** :
-<!-- check to see if this note contradicts the guidance in "customize a built in sensitive information type customize-a-built-in-sensitive-information-type it sure seems like it does-->
-- Vous pouvez modifier uniquement les types d’informations sensibles personnalisés ; vous ne pouvez pas modifier les types d’informations sensibles intégrés. Cependant, vous pouvez utiliser PowerShell pour exporter des types d’informations sensibles personnalisés intégrés, les personnaliser et les importer comme types d’informations sensibles personnalisés. Pour plus d’informations, consultez la rubrique [Personnaliser un type d’informations sensibles intégré](customize-a-built-in-sensitive-information-type.md).
-
-- Vous pouvez uniquement modifier les types d’informations sensibles personnalisés que vous avez créés dans l’interface utilisateur. Si vous avez utilisé la [procédure PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md) pour importer un package de règles pour les types d’informations sensibles personnalisés, vous recevrez une erreur.
-
-Dans le Centre de conformité et sécurité, accédez à **Classifications** \> **Types d’informations sensibles**, sélectionnez le type d’informations sensibles personnalisé à modifier, puis cliquez sur **Modifier**.
-
-  ![Emplacement des types d’informations sensibles et bouton Modifier](../media/scc-cust-sens-info-type-edit.png)
-
-Les mêmes options sont disponibles ici comme lorsque vous avez créé le type d’informations sensibles personnalisé dans le Centre de Conformité et Sécurité. Pour plus d’informations, consultez la rubrique [Créer un type d’informations sensibles personnalisé dans le Centre de Conformité et Sécurité](#create-custom-sensitive-information-types-in-the-security--compliance-center).
-
-### <a name="how-do-you-know-this-worked"></a>Comment savoir si cela a fonctionné ?
-
-Pour vérifier que vous avez correctement modifié un type d’informations sensibles, effectuez l’une des opérations suivantes :
-
-  - Accédez à **Classifications** \> **Types d’informations sensibles** pour vérifier les propriétés du type d’informations sensibles personnalisé modifié. 
-
-  - Testez le type d’informations sensibles personnalisés modifié. Pour plus d’informations, reportez-vous à la rubrique [Tester des types d’informations sensibles personnalisés dans le Centre de Conformité et Sécurité](#test-custom-sensitive-information-types-in-the-security--compliance-center).
-
-## <a name="remove-custom-sensitive-information-types-in-the-security--compliance-center"></a>Supprimer des types d’informations sensibles personnalisés dans le Centre de Conformité et Sécurité 
-
-**Remarques** :
-
-- Vous pouvez uniquement supprimer des types d’informations sensibles personnalisés ; vous ne pouvez pas supprimer des types d’informations sensibles intégrés.
-
-- Avant de supprimer un type d’informations sensibles personnalisé, vérifiez qu’aucune stratégie DLP ou règle de flux de courrier Exchange (également appelées règles de transport) ne référence toujours le type d’informations sensibles.
-
-1. Dans le Centre de Conformité et Sécurité, accédez à **Classifications** \> **Types d’informations sensibles** et sélectionnez un ou plusieurs types d’informations sensibles personnalisés à supprimer.
-
-2. Dans la boîte de dialogue qui s’ouvre, cliquez sur **Supprimer** (ou **Supprimer des types d’informations sensibles** si vous en avez sélectionnés plusieurs).
-
-    ![Emplacement des types d’informations sensibles et bouton Supprimer](../media/scc-cust-sens-info-type-delete.png)
-
-3. Cliquez sur **Oui** lorsque le message d’avertissement s’affiche.
-
-### <a name="how-do-you-know-this-worked"></a>Comment savoir si cela a fonctionné ?
-
-Pour vérifier que vous avez supprimé correctement un type d’informations sensibles personnalisé, accédez à **Classifications** \> **Types d’informations sensibles** pour vérifier que le type d’informations sensibles personnalisé n’est plus répertorié.
-
-## <a name="test-custom-sensitive-information-types-in-the-security--compliance-center"></a>Tester des types d’informations sensibles personnalisés dans le Centre de Conformité et Sécurité
-
-1. Dans le Centre de Conformité et Sécurité, accédez à **Classifications** \> **Types d’informations sensibles**.
-
-2. Sélectionnez un ou plusieurs types d’informations sensibles personnalisés à tester. Dans la boîte de dialogue qui s’ouvre, cliquez sur **Type de test** (ou **Tester des types d’informations sensibles** si vous en avez sélectionnés plusieurs).
-
-    ![Emplacement des types d’informations sensibles et bouton Tester le type](../media/scc-cust-sens-info-type-test.png)
-
-3. Dans la page **Télécharger le fichier à tester** qui s’ouvre, chargez un document à tester en faisant glisser un fichier ou en cliquant sur **Parcourir** et en sélectionnant un fichier.
-
-    ![Charger le fichier sur la page de test](../media/scc-cust-sens-info-type-test-upload.png)
-
-4. Cliquez sur le bouton **Tester** pour rechercher des modèles dans le fichier.
-
-5. Sur la page **Mettre en correspondance les résultats**, cliquez sur **Terminer**.
-
-    ![Mettre en correspondance les résultats](../media/scc-cust-sens-info-type-test-results.png)
