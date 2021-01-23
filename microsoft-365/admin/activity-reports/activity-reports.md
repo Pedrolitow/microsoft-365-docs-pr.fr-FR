@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenez un rapport régulier sur la façon dont les membres de votre organisation utilisent les services Microsoft 365. Le tableau de bord Vue d’ensemble de l’utilisation vous permet d’explorer chaque graphique pour obtenir d'autres informations.
-ms.openlocfilehash: d2c5b4f67d93500f7341463a01313271d182dc38
-ms.sourcegitcommit: 039205fdaaa2a233ff7e95cd91bace474b84b68c
+ms.openlocfilehash: 4ec7690e5300b2ac08a98fbec3f4c253e970738c
+ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49611348"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49921169"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Rapports Microsoft 365 dans le centre d'administration
 
@@ -86,7 +86,9 @@ Pour plus d'informations, voir [À propos des rôles d'administrateur](../add-us
 
 En fonction de votre abonnement, les rapports suivants sont disponibles.
   
-- [Activité de messagerie](email-activity.md)
+- [Activité de messagerie](email-activity-ww.md)
+
+- [Utilisation de l’e-mail pour le secteur public américain](email-activity.md)
     
 - [Utilisation des boîtes aux lettres](mailbox-usage.md)
     
@@ -98,7 +100,9 @@ En fonction de votre abonnement, les rapports suivants sont disponibles.
 
 - [Utilisateurs actifs pour le secteur public américain](active-users.md)
   
-- [Utilisation des applications de messagerie](email-apps-usage.md)
+- [Utilisation des applications de messagerie](email-apps-usage-ww.md)
+
+- [Utilisation des applications d’e-mail pour le secteur public américain](email-apps-usage.md)
 
 - [Utilisation des formulaires](forms-activity-ww.md)
 

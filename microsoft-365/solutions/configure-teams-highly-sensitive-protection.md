@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Découvrez comment déployer des équipes avec la protection des données hautement sensibles.
-ms.openlocfilehash: 045f1b1d1ebf03eb70554dc5964acb0a12e0060f
-ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
+ms.openlocfilehash: 2679a8a0bd8cf5cc3d35d517e8a44921fc4fdbc1
+ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49870850"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49921133"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>Configurer des équipes avec la protection des données hautement sensibles
 
@@ -153,7 +153,7 @@ Pour configurer le partage de sites propriétaires uniquement
 2. Dans la barre d’outils de l’équipe, cliquez sur **Fichiers**.
 3. Cliquez sur les points de suspension, puis sur **Ouvrir dans SharePoint**.
 4. Dans la barre d’outils du site SharePoint sous-jacent, cliquez sur l’icône Paramètres, puis cliquez sur **Autorisations du site**.
-5. Dans le volet Autorisations de site, sous **Paramètres de partage**, cliquez sur **Modifier les paramètres de partage**.
+5. Dans le volet **Autorisations de site**, sous **Partage de site**, cliquez sur **Modifier les modalités de partage par les membres**.
 6. Sous **Autorisations de partage**, sélectionnez **Seuls les propriétaires du site peuvent partager des fichiers, des dossiers et le site**.
 7. Définissez **Autoriser les demandes d’accès** sur **Activé**, puis cliquez sur **Enregistrer**.
 
