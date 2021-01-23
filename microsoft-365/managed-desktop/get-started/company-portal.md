@@ -1,7 +1,7 @@
 ---
 title: Installer le portail d’entreprise Intune sur les appareils
-description: Informations sur l’installation de l’application portail d’entreprise sur les appareils de bureau gérés Microsoft
-keywords: Microsoft Managed Desktop, Microsoft 365, portail d’entreprise
+description: Informations sur l’installation de l’application portail d’entreprise sur les appareils de bureau géré Microsoft
+keywords: Bureau géré Microsoft, Microsoft 365, Portail d’entreprise
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -9,45 +9,43 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: d457c4b96e47485eee041b72a1cf24e96a13bf18
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: bddf46e451408e4f17e58cc62186b7cd6cefb382
+ms.sourcegitcommit: ba830e85899f247e5a1e117d63e09e4d5b8a8020
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430186"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49939283"
 ---
 # <a name="install-intune-company-portal-on-devices"></a>Installer le portail d’entreprise Intune sur les appareils
 
-Microsoft Managed Desktop exige que les administrateurs informatiques installent le portail d’entreprise Intune pour leurs utilisateurs avec des appareils de bureau gérés Microsoft. Voici quelques avantages pour votre organisation :
-- Les utilisateurs disposent d’un emplacement unique pour parcourir et installer les applications disponibles. 
-- Les administrateurs informatiques peuvent organiser les applications par catégorie pour leurs utilisateurs.  
-- Certaines applications (telles que Microsoft Project et Microsoft Visio) ont besoin d’un portail d’entreprise pour déployer avec Microsoft Managed Desktop.
-- Les administrateurs informatiques peuvent personnaliser le portail d’entreprise pour leur organisation. Il s’agit notamment de la création d’images de marque, l’ajout de contacts de support local et bien plus encore. Pour plus d’informations, consultez [la rubrique How to configure the Microsoft Intune Company Portal App](https://docs.microsoft.com/intune/company-portal-app).   
+Bureau géré Microsoft nécessite que les administrateurs informatiques installent le portail d’entreprise Intune pour leurs utilisateurs avec les appareils bureau géré Microsoft. Voici quelques avantages pour votre organisation :
+- Les utilisateurs disposent d’un seul endroit pour parcourir et installer les applications disponibles. 
+- Les administrateurs informatiques peuvent organiser les applications par catégories pour leurs utilisateurs.  
+- Certaines applications (telles que Microsoft Project et Microsoft Visio) nécessitent le déploiement du Portail d’entreprise avec Bureau géré Microsoft.
+- Les administrateurs informatiques peuvent personnaliser le portail d’entreprise pour leur organisation. Cela inclut la création d’images de marque, l’ajout de contacts de support local, etc. Pour plus d’informations, [voir Comment configurer l’application Portail d’entreprise Microsoft Intune.](https://docs.microsoft.com/intune/company-portal-app)   
 
-Cette rubrique décrit le processus de déploiement du portail d’entreprise Intune sur les utilisateurs de bureau gérés Microsoft. Le processus global se présente comme suit :
-1. Acheter un portail d’entreprise à partir de Microsoft Store pour les entreprises et synchroniser avec Intune
-2. Affecter un portail d’entreprise à vos utilisateurs
-3. Communiquer les modifications à vos utilisateurs
+Cette rubrique documente le processus de déploiement du portail d’entreprise Intune sur vos utilisateurs de bureau géré Microsoft. Le processus global ressemble à ceci :
+1. Acheter le portail d’entreprise à partir du Microsoft Store pour Entreprises et synchroniser avec Intune
+2. Affecter le portail d’entreprise à vos utilisateurs
+3. Communiquer les changements à vos utilisateurs
 
-## <a name="step-1---purchase-company-portal-from-microsoft-store-for-business-and-sync-with-intune"></a>Étape 1 : acheter un portail d’entreprise à partir de Microsoft Store pour les entreprises et synchroniser avec Intune
-Pour plus d’informations sur l’achat des applications et sur la synchronisation avec Intune, voir [Microsoft Store for Business Apps](deploy-apps.md#msfb-apps) dans *Deploy Apps to Microsoft Managed Desktop Devices*.
+## <a name="step-1---purchase-company-portal-from-microsoft-store-for-business-and-sync-with-intune"></a>Étape 1 : acheter le portail d’entreprise à partir du Microsoft Store pour Entreprises et synchroniser avec Intune
+Pour plus d’informations sur l’achat des applications et la synchronisation avec Intune, voir [applications du Microsoft Store](deploy-apps.md#msfb-apps) pour Entreprises dans Déployer des applications sur des appareils de bureau géré *Microsoft.*
 
-Cette rubrique fournit des informations sur les opérations suivantes : 
-- Acheter un portail d’entreprise à partir de Microsoft Store pour les entreprises 
-- Forcer la synchronisation entre Intune et Microsoft Store pour les entreprises
-- Vérifier la synchronisation active entre Intune et Microsoft Store pour les entreprises 
+Cette rubrique fournit des informations sur la façon de : 
+- Acheter le portail d’entreprise à partir du Microsoft Store pour Entreprises 
+- Forcer la synchronisation entre Intune et Microsoft Store pour Entreprises
+- Vérifier la synchronisation active entre Intune et Microsoft Store pour Entreprises 
 
-## <a name="step-2---assign-company-portal-to-your-users"></a>Étape 2 : affecter un portail d’entreprise à vos utilisateurs
-Soumettez une demande de support aux opérations de bureau géré Microsoft via le portail d’administration de bureau géré Microsoft. Dans la demande de support, demandez au portail de l’entreprise d’être affecté à vos utilisateurs. Le bureau géré Microsoft déploie le portail d’entreprise vers votre client et installe l’application sur des appareils de bureau gérés Microsoft dans votre organisation.
+## <a name="step-2---assign-company-portal-to-your-users"></a>Étape 2 : affecter le portail d’entreprise à vos utilisateurs
+Après votre inscription au Bureau géré Microsoft, les opérations bureau géré Microsoft déploient automatiquement le portail d’entreprise sur votre client et installent l’application sur les appareils bureau géré Microsoft de votre organisation.
 
-Pour plus d’informations sur l’envoi de demandes de prise en charge avec le bureau géré Microsoft, consultez la rubrique [administrateur pris en charge pour Microsoft Managed Desktop](../working-with-managed-desktop/admin-support.md).
+## <a name="step-3---communicate-change-to-your-users"></a>Étape 3 : communiquer les changements à vos utilisateurs
+En tant qu’administrateur informatique de votre organisation, il est important de faire savoir à vos utilisateurs comment utiliser le portail d’entreprise dans votre organisation. Bureau géré Microsoft recommande :
+- Étapes d’installation des applications à partir du portail d’entreprise. Pour plus d’informations, voir [Installer et partager des applications sur votre appareil.](https://docs.microsoft.com/intune-user-help/install-apps-cpapp-windows)
+- Comment envoyer des demandes aux administrateurs informatiques pour les applications qui ne sont pas actuellement disponibles. Pour plus d’informations, voir [Demander une application pour le travail ou l’école.](https://docs.microsoft.com/intune-user-help/install-apps-cpapp-windows#request-an-app-for-work-or-school)  
 
-## <a name="step-3---communicate-change-to-your-users"></a>Étape 3-communiquer les modifications à vos utilisateurs
-En tant qu’administrateur informatique de votre organisation, il est important de permettre à vos utilisateurs de savoir comment utiliser le portail d’entreprise dans votre organisation. Microsoft Managed Desktop recommande :
-- Étapes d’installation des applications à partir du portail de l’entreprise. Pour plus d’informations, consultez [la rubrique installer et partager des applications sur votre appareil](https://docs.microsoft.com/intune-user-help/install-apps-cpapp-windows).
-- Comment envoyer des demandes aux administrateurs informatiques pour les applications qui ne sont pas disponibles actuellement. Pour plus d’informations, reportez-vous à la rubrique [demander une application pour les professionnels ou l’école](https://docs.microsoft.com/intune-user-help/install-apps-cpapp-windows#request-an-app-for-work-or-school).  
-
-## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Étapes de prise en main de Microsoft Managed Desktop
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Étapes de mise en place du Bureau géré Microsoft
 
 1. [Ajouter et vérifier des contacts d’administrateur dans le portail d’administration](add-admin-contacts.md)
 2. [Ajuster l’accès conditionnel](conditional-access.md)

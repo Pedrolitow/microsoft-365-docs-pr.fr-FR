@@ -1,7 +1,7 @@
 ---
 title: Degré de sécurisation Microsoft
 description: Décrit le niveau de sécurité Microsoft dans le Centre de sécurité Microsoft 365, comment améliorer votre posture de sécurité et ce à quoi les administrateurs de sécurité peuvent s’attendre.
-keywords: score de sécurité Microsoft, score de sécurité, score de sécurité Office 365, score de sécurité Microsoft, centre de sécurité Microsoft 365, actions d’amélioration
+keywords: score de sécurité Microsoft, score sécurisé, score de sécurité Office 365, score de sécurité Microsoft, centre de sécurité Microsoft 365, actions d’amélioration
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: a0f4307cc0ed42a8ed53cdeefdb0a7b32eb36d35
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 39abcbde82c2902b091b42db3dbc8e1ee2cbd924
+ms.sourcegitcommit: 8b3ff6e9f8931327b6f0541fd882107687cd123e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49930581"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49942789"
 ---
 # <a name="microsoft-secure-score"></a>Degré de sécurisation Microsoft
 
@@ -71,7 +71,7 @@ Votre score est mis à jour en temps réel pour refléter les informations prés
 
 Chaque action d’amélioration vaut 10 points ou moins, et la plupart d’entre eux sont marqués de manière binaire. Si vous implémentez l’action d’amélioration, comme créer une stratégie ou activer un paramètre spécifique, vous obtenez 100 % des points. Pour les autres actions d’amélioration, les points sont donnés sous forme de pourcentage de la configuration totale.
 
-Par exemple, une action d’amélioration indique que vous obtenez 10 points en protégeant tous vos utilisateurs avec l’authentification multifacteur. Vous n’avez que 50 utilisateurs sur 100 au total protégés. Vous obtenez donc un score partiel de 5 points (50 protégé / 100 au total * 10 pts max = 5 pts).
+Par exemple, une action d’amélioration indique que vous obtenez 10 points en protégeant tous vos utilisateurs avec l’authentification multifacteur. Vous n’avez que 50 utilisateurs sur 100 au total protégés, donc vous obtenez un score partiel de 5 points (50 protégé / 100 au total * 10 pts max = 5 pts).
 
 ### <a name="products-included-in-secure-score"></a>Produits inclus dans secure score
 
@@ -82,6 +82,7 @@ Il existe actuellement des recommandations pour les produits suivants :
 - Microsoft Defender pour point de terminaison
 - Microsoft Defender pour Identity
 - Cloud App Security
+- Microsoft Teams
 
 Des recommandations pour d’autres produits de sécurité seront bientôt ajoutées. Les recommandations ne couvrent pas toutes les surfaces d’attaque associées à chaque produit, mais elles sont une bonne base de référence. Vous pouvez également marquer les actions d’amélioration comme couvertes par une solution tierce ou autre.
 

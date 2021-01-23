@@ -2,83 +2,84 @@
 title: Utiliser Microsoft Defender pour Office 365 avec Microsoft Defender pour le point de terminaison
 f1.keywords:
 - NOCSH
-keywords: intégration, Microsoft Defender, ATP
+keywords: integrate, Microsoft Defender, ATP
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 09/29/2020
+ms.date: 01/21/2021
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.collection:
 - M365-security-compliance
-description: Utilisez Microsoft Defender pour Office 365 avec Microsoft Defender for Endpoint pour obtenir des informations plus détaillées sur les menaces pesant sur vos appareils et votre contenu de messagerie.
+description: Utilisez Microsoft Defender pour Office 365 avec Microsoft Defender pour le point de terminaison pour obtenir des informations plus détaillées sur les menaces contre vos appareils et le contenu de votre courrier électronique.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8cc78e7d674facb371ea98125b6857502031d26e
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 24b81bb4c445c44d7c0228fa1c4440faff642816
+ms.sourcegitcommit: ba830e85899f247e5a1e117d63e09e4d5b8a8020
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616511"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49939331"
 ---
 # <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>Utiliser Microsoft Defender pour Office 365 avec Microsoft Defender pour le point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-[Microsoft Defender pour Office 365](office-365-atp.md) peut être configuré pour fonctionner avec [Microsoft Defender pour le point de terminaison](https://docs.microsoft.com/windows/security/threat-protection).
+[Microsoft Defender pour Office 365](office-365-atp.md) peut être configuré pour fonctionner avec [Microsoft Defender pour point de terminaison.](https://docs.microsoft.com/windows/security/threat-protection)
 
-L’intégration de Microsoft Defender pour Office 365 avec Microsoft Defender for Endpoint peut aider votre surveillance d’équipe en matière de sécurité et prendre des mesures rapidement si les appareils des utilisateurs sont menacés. Par exemple, une fois l’intégration activée, votre équipe d’opérations de sécurité pourra voir les appareils potentiellement affectés par un message électronique détecté, ainsi que le nombre d’alertes récentes générées pour ces appareils dans Microsoft Defender pour le point de terminaison.
+L’intégration de Microsoft Defender pour Office 365 à Microsoft Defender pour endpoint peut aider votre équipe en charge des opérations de sécurité à surveiller et à prendre des mesures rapidement si les appareils des utilisateurs sont exposés. Par exemple, une fois l’intégration activée, votre équipe des opérations de sécurité pourra voir les appareils potentiellement affectés par un message électronique détecté, ainsi que le nombre d’alertes récentes générées pour ces appareils dans Microsoft Defender pour Endpoint.
 
-L’image suivante montre à quoi ressemble l’onglet **appareils** comme qui est activé pour l’intégration de Microsoft Defender pour les points de terminaison :
+L’image suivante illustre à quoi ressemble l’onglet **Appareils** pour que l’intégration de Microsoft Defender for Endpoint soit activée :
 
-![Lorsque Microsoft Defender pour le point de terminaison est activé, vous pouvez voir une liste de périphériques avec des alertes.](../../media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG)
+![Lorsque Microsoft Defender pour le point de terminaison est activé, vous pouvez voir une liste d’appareils avec des alertes.](../../media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG)
 
-Dans cet exemple, vous pouvez voir que les destinataires du message électronique détecté ont quatre appareils et que l’un d’entre eux comporte une alerte. Si vous cliquez sur le lien d’un appareil, celui-ci s’ouvre dans le centre de sécurité Microsoft Defender ( <https://securitycenter.windows.com> ).
+Dans cet exemple, vous pouvez voir que les destinataires du message électronique détecté ont quatre appareils et un a une alerte. Le fait de cliquer sur le lien d’un appareil ouvre sa page dans le Centre de sécurité Microsoft Defender ( <https://securitycenter.windows.com> ).
 
 > [!TIP]
-> **[En savoir plus sur le centre de sécurité Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use)** (également appelé portail Microsoft Defender pour les points de terminaison).
+> **[En savoir plus sur le Centre de](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use)** sécurité Microsoft Defender (également appelé portail Microsoft Defender pour points de terminaison).)
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Conditions requises
 
-- Votre organisation doit avoir Microsoft Defender pour Office 365 (ou Office 365 E5) et Microsoft Defender pour le point de terminaison.
+- Votre organisation doit avoir Microsoft Defender pour Office 365 (ou Office 365 E5) et Microsoft Defender pour point de terminaison.
 
-- Vous devez être un administrateur général ou disposer d’un rôle d’administrateur de sécurité (tel que administrateur de sécurité) affecté dans le [Centre de sécurité & conformité](https://protection.office.com). (Consultez [la rubrique autorisations dans le centre de sécurité & conformité](permissions-in-the-security-and-compliance-center.md))
+- Vous devez être un administrateur général ou avoir un rôle d’administrateur de sécurité (par exemple, Administrateur de la sécurité) affecté dans le Centre de sécurité [& conformité.](https://protection.office.com) (Voir [autorisations dans le Centre de sécurité & conformité)](permissions-in-the-security-and-compliance-center.md)
 
-- Vous devez avoir accès à l' [Explorateur (ou aux détections en temps réel)](threat-explorer.md) dans le centre de sécurité & conformité et au centre de sécurité Microsoft Defender.
+- Vous devez avoir accès à [l’Explorateur (ou](threat-explorer.md) aux détections en temps réel) dans le Centre de sécurité & conformité et le Centre de sécurité Microsoft Defender.
 
-## <a name="to-integrate-microsoft-defender-for-office-365-with-microsoft-defender-for-endpoint"></a>Pour intégrer Microsoft Defender pour Office 365 à Microsoft Defender pour le point de terminaison
+## <a name="to-integrate-microsoft-defender-for-office-365-with-microsoft-defender-for-endpoint"></a>Pour intégrer Microsoft Defender pour Office 365 à Microsoft Defender pour point de terminaison
 
-L’intégration de Microsoft Defender pour Office 365 avec Microsoft Defender pour le point de terminaison est configurée à l’aide du centre de sécurité & de la sécurité et du centre de sécurité Microsoft Defender.
+L’intégration de Microsoft Defender pour Office 365 à Microsoft Defender pour endpoint est définie à l’aide du Centre de sécurité & conformité et du Centre de sécurité Microsoft Defender.
 
-1. En tant qu’administrateur général ou administrateur de sécurité, accédez à <https://protection.office.com> et connectez-vous. (Vous accédez au centre de sécurité & conformité d’Office 365.)
+1. En tant qu’administrateur général ou administrateur de sécurité, <https://protection.office.com> connectez-vous. (Cette action vous place dans le Centre de sécurité et conformité Office 365&.)
 
-2. Dans le volet de navigation, sélectionnez Explorateur de **gestion des menaces** \> .
+2. Dans le volet de navigation, choisissez **l’Explorateur de gestion** \> **des menaces.**
 
-   ![Explorateur dans le menu gestion des menaces](../../media/ThreatMgmt-Explorer-nav.png)
+   ![Explorateur dans le menu Gestion des menaces](../../media/ThreatMgmt-Explorer-nav.png)
 
-3. Dans le coin supérieur droit de l’écran, choisissez **Defender pour les paramètres de point de terminaison**.
+3. Dans le coin supérieur droit de l’écran, choisissez Defender pour les paramètres de point de terminaison **(paramètres MDE).**
 
-4. Dans la boîte de dialogue Microsoft Defender pour la connexion au point de terminaison, activez **connexion à Microsoft Defender pour le point de terminaison**.
+4. Dans la boîte de dialogue connexion Microsoft Defender pour point de terminaison, activer la connexion **à Microsoft Defender pour le point de terminaison.**
 
-   ![Microsoft Defender pour la connexion au point de terminaison](../../media/Explorer-WDATPConnection-dialog.png)
+   ![Connexion microsoft Defender pour point de terminaison](../../media/Explorer-WDATPConnection-dialog.png)
 
-5. Accédez au centre de sécurité Microsoft Defender ( <https://securitycenter.windows.com> ).
+5. Go to the Microsoft Defender Security Center ( <https://securitycenter.windows.com> ).
 
-6. Dans la barre de navigation, sélectionnez **paramètres**. Ensuite, sous **général**, choisissez **fonctionnalités avancées**.
+6. Dans la barre de navigation, choisissez **Paramètres.** Ensuite, sous **Général,** choisissez **Fonctionnalités avancées.**
 
-7. Faites défiler vers le bas jusqu’à **Office 365 Threat Intelligence Connection** et activez la connexion.
+7. Faites défiler vers le bas jusqu’à la connexion **Office 365 Threat Intelligence** et allumez la connexion.
 
-   ![Connexion d’aide à la décision Office 365](../../media/mdatp-oatptoggle.png)
+   ![Connexion à l’intelligence des menaces Office 365](../../media/mdatp-oatptoggle.png)
 
 ## <a name="related-articles"></a>Articles connexes
 
-[Fonctionnalités d’enquête et de réponse aux menaces dans Office 365](office-365-ti.md)
+[Fonctionnalités d’examen et de réponse aux menaces dans Office 365](office-365-ti.md)
 
 [Microsoft Defender pour Office 365](office-365-atp.md)
 
-[Microsoft Defender pour point de terminaison](https://docs.microsoft.com/windows/security/threat-protection)
+[Microsoft Defender pour point de terminaison](https://docs.microsoft.com/windows/security/threat-protection)

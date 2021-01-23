@@ -7,7 +7,6 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -19,12 +18,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à utiliser le Simulateur d’attaques pour exécuter des attaques par hameçonnage simulé et par mot de passe dans leurs organisations Microsoft 365 E5 ou Microsoft Defender pour Office 365 Plan 2.
-ms.openlocfilehash: f07cbbdac5d9b988301e9dfc3cb4446f7b44fca6
-ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: a9abca803c21baa7fcb5f0ab7b3d4c497c4473b8
+ms.sourcegitcommit: ba830e85899f247e5a1e117d63e09e4d5b8a8020
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49871096"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49939319"
 ---
 # <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Simulateur d’attaques dans Microsoft Defender pour Office 365
 
@@ -33,7 +34,7 @@ ms.locfileid: "49871096"
 Si votre organisation dispose de Microsoft Defender pour Office [](office-365-ti.md)365 Plan 2, qui inclut des fonctionnalités d’investigation et de réponse aux menaces, vous pouvez utiliser le Simulateur d’attaques dans le Centre de sécurité & conformité pour exécuter des scénarios d’attaque réalistes dans votre organisation. Ces attaques simulées peuvent vous aider à identifier et à trouver des utilisateurs vulnérables avant qu’une attaque réelle n’impacte votre ligne de bas de page. Pour en savoir plus, lisez cet article.
 
 > [!TIP]
-> Une formation sur la simulation d’attaques est disponible pour la prévisualisation publique dans le Centre de sécurité Microsoft 365. Pour en savoir plus, consultez Simuler une attaque par hameçonnage avec Microsoft Defender pour [Office 365.](attack-simulation-training.md)
+> Une formation sur la simulation d’attaques est disponible pour la prévisualisation publique dans le Centre de sécurité Microsoft 365. Pour en savoir plus, consultez Simuler une attaque par hameçonnage avec [Microsoft Defender pour Office 365.](attack-simulation-training.md)
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
@@ -155,7 +156,8 @@ Si vous allez utiliser l’un des modèles intégrés ou créer le message direc
 
    - Cliquez sur **Utiliser le modèle**, puis sélectionnez un modèle de courrier prédéfini ou personnalisé. Après avoir sélectionné le modèle, la boîte de dialogue **Nom** est automatiquement remplie en fonction du modèle, mais il vous est possible de modifier le nom.
 
-   ![Page de démarrage du hameçonnage](../../media/5e93b3cc-5981-462f-8b45-bdf85d97f1b8.jpg)
+   > [!div class="mx-imgBorder"]
+   > ![Page de démarrage du hameçonnage](../../media/5e93b3cc-5981-462f-8b45-bdf85d97f1b8.jpg)
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
@@ -218,7 +220,8 @@ Si vous allez utiliser l’un des modèles intégrés ou créer le message direc
 
    Pour les campagnes d’**Harponnage (pièce jointe)**, il est recommandé de supprimer le lien du corps du message (sinon, le message contient un lien **et** une pièce jointe et les clics sur un lien ne sont pas suivis dans une campagne de pièce jointe).
 
-   ![Composer un message](../../media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
+   > [!div class="mx-imgBorder"]
+   > ![Composer un message](../../media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 

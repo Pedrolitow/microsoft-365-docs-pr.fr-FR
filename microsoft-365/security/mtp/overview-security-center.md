@@ -18,12 +18,12 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 831b205d0839f6347ac887db0d3c3f0b1d9a4f3d
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: b47ec915bc9f5f51df8ed425e7bfd76966bb989e
+ms.sourcegitcommit: 8b3ff6e9f8931327b6f0541fd882107687cd123e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932825"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49942777"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Présentation du Centre de sécurité Microsoft 365
 
@@ -44,12 +44,20 @@ Visitez le Centre de sécurité Microsoft 365 sur [https://security.microsoft.co
 > [!NOTE]
 > Vous devez avoir un rôle approprié, tel qu’administrateur général, administrateur de sécurité, opérateur de sécurité ou lecteur sécurité dans Azure Active Directory pour accéder au Centre de sécurité Microsoft 365.
 
+## <a name="at-a-glance-view-of-your-microsoft-365-environment"></a>Vue d’un coup d’œil de votre environnement Microsoft 365
 
-## <a name="lets-take-a-closer-look"></a>Examinons de plus près
-
-La page **d’accueil** affiche la plupart des cartes courantes dont les équipes de sécurité ont besoin. La composition des cartes et des données dépend du rôle d’utilisateur. Étant donné que le Centre de sécurité Microsoft 365 utilise le contrôle d’accès basé sur les rôles, différents rôles voient des cartes plus significatives pour leur travail quotidien.  
+La page **d’accueil** affiche la plupart des cartes courantes dont les équipes de sécurité ont besoin. La composition des cartes et des données dépend du rôle utilisateur. Étant donné que le Centre de sécurité Microsoft 365 utilise le contrôle d’accès basé sur les rôles, différents rôles voient des cartes plus significatives pour leur travail quotidien.  
 
 Ces informations rapides vous permettent de suivre les dernières activités de votre organisation. Le Centre de sécurité Microsoft 365 regroupe les signaux provenant de différentes sources pour présenter une vue globale de votre environnement Microsoft 365.
+
+Les cartes relèvent des catégories suivantes :
+
+- **Identités**: surveillez les identités de votre organisation et suivez les comportements suspects ou risqués. [En savoir plus sur la protection des identités](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)
+- **Données :** suivez l’activité de l’utilisateur qui peut entraîner une divulgation non autorisée des données.
+- **Appareils** : obtenez des informations à jour sur les alertes, l’activité de violation et d’autres menaces sur vos appareils.
+- **Applications** : obtenir des informations sur la façon dont les applications cloud sont utilisées dans votre organisation. [En savoir plus sur les applications découvertes dans Cloud App Security](https://docs.microsoft.com/cloud-app-security/discovered-apps)
+
+## <a name="explore-what-the-security-center-has-to-offer"></a>Explorer ce que le centre de sécurité a à offrir
 
 Le Centre de sécurité Microsoft 365 inclut les éléments suivants :
 
