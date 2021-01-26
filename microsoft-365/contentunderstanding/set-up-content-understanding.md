@@ -7,16 +7,18 @@ manager: serdars
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-ms.collection: enabler-strategic
+ms.collection:
+- enabler-strategic
+- m365initiative-syntex
 search.appverid: MET150
 localization_priority: Priority
 description: Configurer la compréhension de contenu dans Projet Cortex
-ms.openlocfilehash: 1abcc71200642de3f74a92e83299e079ffffb038
-ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
+ms.openlocfilehash: a9713f1d28cf863ab827d2975e84042026105b3f
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49604263"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49976385"
 ---
 # <a name="set-up-sharepoint-syntex"></a>Configurer SharePoint Online
 
@@ -24,15 +26,15 @@ Les administrateurs peuvent utiliser le Centre d’administration Microsoft 365 
 
 Tenez compte des informations suivantes avant de démarrer :
 
-- Pour quels sites SharePoint allez-vous activer le traitement des formulaires ? Tous les sites, certains sites ou des sites sélectionnés ?
+- Dans quels sites SharePoint allez-vous activer le traitement des formulaires ? Tous les sites, certains sites ou des sites sélectionnés ?
 - Comment allez-vous nommer votre centre de contenu par défaut ?
 
 Vous pouvez modifier vos paramètres après la configuration initiale dans le Centre d’administration Microsoft 365.
 
-Avant la configuration, veillez à planifier la meilleure manière d’installer et de configurer la compréhension de contenu dans votre environnement. Par exemple, vous devez prendre en compte les noms suivants :
+Avant la configuration, veillez à planifier la meilleure manière d’installer et de configurer la compréhension de contenu dans votre environnement. Par exemple, vous devez prendre les décisions suivantes :
 
-- Sites SharePoint pour lesquels vous souhaitez activer le traitement des formulaires : tous les sites, certains sites ou des sites sélectionnés
-- Votre centre de contenu et le nom de l’administrateur de site principal
+- Sites SharePoint dans lesquels vous souhaitez activer le traitement des formulaires : tous les sites, certains sites ou des sites sélectionnés
+- Nom et administrateurs ou votre centre de contenu
 
 ## <a name="requirements"></a>Configuration requise 
 
@@ -55,8 +57,8 @@ En tant qu’administrateur, vous pouvez également modifier vos paramètres sé
 4. Sur la page **Configurer le traitement des formulaires**, vous pouvez choisir d’autoriser ou non les utilisateurs à créer des modèles de traitement de formulaire dans des bibliothèques de documents SharePoint spécifiques. Une option de menu **Créer un modèle de traitement de formulaire** sera disponible dans les rubans des bibliothèques de documents SharePoint où le traitement des formulaires est activé.
  
      Concernant les **bibliothèques SharePoint qui doivent afficher l’option de création d’un modèle de traitement de formulaire**, vous pouvez sélectionner les éléments suivants :</br>
-      - **Toutes les bibliothèques SharePoint** pour rendre cette option disponible dans toutes les bibliothèques SharePoint au sein de votre organisation.</br>
-      - **Seules les bibliothèques de sites sélectionnés**. Sélectionnez ensuite les sites dans lesquels vous souhaitez rendre cette option disponible ou chargez une liste de 50 sites maximum.</br>
+      - **Les bibliothèques dans les sites SharePoint** pour rendre cette option disponible dans toutes les bibliothèques SharePoint au sein de votre organisation.</br>
+      - **Ls bibliothèques dans les sites SharePoint sélectionnés**. Sélectionnez ensuite les sites dans lesquels vous souhaitez rendre cette option disponible ou chargez une liste de 50 sites maximum.</br>
       - **Aucune bibliothèque SharePoint** si cette option ne doit être disponible sur aucun site (vous pouvez modifier ce paramètre après la configuration).
 
    > [!div class="mx-imgBorder"]
@@ -114,4 +116,3 @@ Accédez au [centre d’administration Power Platform](https://admin.powerplatfo
 [Vue d’ensemble du modèle de traitement de formulaire](https://docs.microsoft.com/ai-builder/form-processing-model-overview)
 
 [Étape par étape : créer un modèle de compréhension de document (vidéo)](https://www.youtube.com/watch?v=DymSHObD-bg)
-
