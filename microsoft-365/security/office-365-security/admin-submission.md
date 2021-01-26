@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -18,12 +17,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à utiliser le portail Soumissions dans le Centre de sécurité & conformité pour soumettre des messages suspects, des messages de hameçonnage suspects, du courrier indésirable et d’autres messages potentiellement dangereux, des URL et des fichiers à Microsoft pour analyse.
-ms.openlocfilehash: 432a245530d7906ae8babbc54176480d36315351
-ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 879a13e7c059495e653b79c424b227fe9f35a498
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49864947"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49976602"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Utilisez la soumission de l’administrateur pour soumettre des courriers indésirables, l’hameçonnage, des URL et des fichiers à Microsoft
 
@@ -32,7 +33,15 @@ ms.locfileid: "49864947"
 
 Dans les organisations Microsoft 365 ayant des boîtes aux lettres dans Exchange Online, les administrateurs peuvent utiliser le portail Soumissions dans le Centre de sécurité & conformité pour envoyer des messages électroniques, des URL et des pièces jointes à Microsoft à des titres d’analyse.
 
-Lorsque vous envoyez un e-mail, vous obtenez des informations sur les stratégies qui ont autorisé le courrier entrant dans votre client, ainsi que l’examen des URL et pièces jointes dans le courrier électronique. Les stratégies qui ont autorisé un courrier incluent la liste des expéditeurs autorisés d’un utilisateur individuel, ainsi que les stratégies au niveau du client telles que les règles de flux de messagerie Exchange (également appelées règles de transport).
+Lorsque vous envoyez un message électronique, vous recevez les messages suivants :
+
+1. **Vérification de l’authentification du** courrier électronique : détails sur la réussi ou l’échec de l’authentification de messagerie lors de sa livraison.
+2. **Accès aux** stratégies : informations sur les stratégies qui ont autorisé ou bloqué le courrier entrant dans votre client, en remplacement de nos verdicts de filtre de service.
+3. **Réputation/détonation de la charge utile**: examen des URL et pièces jointes du message.
+4. **Analyse de l’analyse du** gradeur : révision effectuée par des élèves afin de confirmer si les messages sont malveillants ou non.
+
+> [!IMPORTANT]
+> L’analyse de réputation/détonation et de grader de la charge utile n’est pas effectuée dans tous les locataires. Les informations ne peuvent pas sortir de l’organisation lorsque les données ne sont pas supposées quitter la limite du client à des fins de conformité.
 
 Pour d’autres façons de soumettre des messages électroniques, des URL et des pièces jointes à Microsoft, voir [Signaler des messages et des fichiers à Microsoft.](report-junk-email-messages-to-microsoft.md)
 
@@ -77,7 +86,7 @@ Pour d’autres façons de soumettre des messages électroniques, des URL et des
 
 4. Lorsque vous avez terminé, cliquez sur le **bouton** Envoyer.
 
-![Exemple de soumission d’URL](../../media/submission-flyout-email.PNG)
+   ![Exemple de soumission d’URL](../../media/submission-flyout-email.PNG)
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>Envoyer une URL suspecte à Microsoft
 
@@ -91,7 +100,7 @@ Pour d’autres façons de soumettre des messages électroniques, des URL et des
 
 3. Lorsque vous avez terminé, cliquez sur le **bouton** Envoyer.
 
-![Exemple d’envoi de courrier électronique](../../media/submission-url-flyout.png)
+   ![Exemple d’envoi de courrier électronique](../../media/submission-url-flyout.png)
 
 ### <a name="submit-a-suspected-file-to-microsoft"></a>Soumettre un fichier suspect à Microsoft
 
@@ -107,11 +116,11 @@ Pour d’autres façons de soumettre des messages électroniques, des URL et des
 
 4. Lorsque vous avez terminé, cliquez sur le **bouton** Envoyer.
 
-![Exemple d’envoi de pièce jointe](../../media/submission-file-flyout.PNG)
+   ![Exemple d’envoi de pièce jointe](../../media/submission-file-flyout.PNG)
 
 ## <a name="view-admin-submissions"></a>Afficher les soumissions d’administrateur
 
-Dans le Centre de sécurité &  conformité, allez aux soumissions de gestion des menaces, vérifiez que vous êtes sous \> l’onglet **Soumissions** d’administrateur, puis cliquez sur **Nouvelle soumission.**
+Dans le Centre de sécurité &  conformité, allez à Soumissions de gestion des menaces, vérifiez que vous êtes sous \> l’onglet **Soumissions** d’administrateur, puis cliquez sur **Nouvelle soumission.**
 
 Dans la partie supérieure de la page, vous pouvez entrer une date de début, une date de fin et (par défaut) vous pouvez filtrer par **ID** de soumission (une valeur GUID affectée à chaque soumission) en entrant une valeur dans la zone et en cliquant sur le bouton ![ ](../../media/scc-quarantine-refresh.png) Actualiser. Update
 
@@ -127,7 +136,7 @@ Pour modifier les critères de filtre, cliquez sur le bouton **ID** de soumissio
 
 Pour exporter les résultats, cliquez sur **Exporter** en haut de la page et sélectionnez **Données du graphique** ou **Tableau.** Dans la boîte de dialogue qui s’affiche, enregistrez le fichier .csv.
 
-Sous le graphique, il y a trois onglets : **e-mail** (par défaut), **URL** et **pièce jointe.**
+Sous le graphique, il y a trois onglets : **e-mail** (par défaut), **URL** et **pièce jointe**.
 
 ### <a name="view-admin-email-submissions"></a>Afficher les envois de courriers électroniques d’administrateur
 
@@ -207,7 +216,7 @@ Vous pouvez cliquer sur le **bouton Options** de colonne en bas de la page pour 
 
 <sup>\*</sup> Si vous cliquez sur cette valeur, des informations détaillées s’affichent dans un volant.
 
-Dans la zone supérieure de la page, vous pouvez entrer une date de  début, une date de fin et (par défaut) vous pouvez filtrer par expéditeur en entrant une valeur dans la zone et en cliquant sur le bouton ![ ](../../media/scc-quarantine-refresh.png) Actualiser. Update
+En haut de la page, vous pouvez entrer une date de début, une  date de fin et (par défaut) vous pouvez filtrer par expéditeur en entrant une valeur dans la zone et en cliquant sur le bouton ![ ](../../media/scc-quarantine-refresh.png) Actualiser. Update
 
 Pour modifier les critères de filtre, cliquez sur le bouton **Expéditeur** et choisissez l’une des valeurs suivantes :
 

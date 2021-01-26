@@ -1,6 +1,6 @@
 ---
-title: 'Présentation du centre de rubriques (aperçu) '
-description: En savoir plus sur le Centre des rubriques.
+title: 'Vue d’ensemble du centre de rubriques (aperçu) '
+description: En savoir plus sur le Centre de rubriques.
 author: efrene
 ms.author: efrene
 manager: pamgreen
@@ -8,40 +8,42 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-ms.collection: enabler-strategic
+ms.collection:
+- enabler-strategic
+- m365initiative-topics
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: 3e6a0e8e6917b62c1789ebcd689ba7dc1e64e9e0
-ms.sourcegitcommit: 18f95c4b7f74881b4a6ce71ad2ffa78a6ead5584
+ms.openlocfilehash: 03ecae794a0aee3297e305771452a6e5ce70015d
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "49731378"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49975966"
 ---
-# <a name="topic-center-overview-preview"></a>Présentation du centre de rubriques (aperçu)
+# <a name="topic-center-overview-preview"></a>Vue d’ensemble du centre de rubriques (aperçu)
 
 > [!Note] 
-> Le contenu de cet article est destiné à Project cortex privé preview. [En savoir plus sur le Projet cortex](https://aka.ms/projectcortex).
+> Le contenu de cet article est pour la prévisualisation privée Project Private Preview. [En savoir plus sur le Projet cortex](https://aka.ms/projectcortex).
 
-Le centre de rubrique est un site SharePoint moderne qui sert de centre de connaissances pour votre organisation. Il est créé lors de l’installation de la rubrique dans le centre [d'](set-up-topic-experiences.md) administration 365 de Microsoft.
+Le centre de rubriques est un site SharePoint moderne qui sert de centre de connaissances pour votre organisation. Il est créé lors de la [configuration d’Expériences](set-up-topic-experiences.md) de rubrique dans le Centre d’administration Microsoft 365.
 
-Le centre de la rubrique dispose d’une page d’accueil par défaut (mes rubriques) où tous les utilisateurs de rubrique peuvent voir les rubriques auxquelles ils ont une connexion. 
+Le centre de rubriques dispose d’une page d’accueil par défaut (Mes rubriques) dans laquelle tous les utilisateurs de l’expérience de rubrique peuvent voir les rubriques à laquelle ils ont une connexion. 
 
-Tandis que tous les utilisateurs sous licence pouvant consulter les rubriques auront accès au centre des rubriques, les responsables des connaissances pourront également gérer les rubriques via la page **gérer les rubriques** . L’onglet gérer les rubriques s’affiche uniquement pour les utilisateurs qui disposent des autorisations de **gestion des rubriques** . 
+Bien que tous les utilisateurs sous licence qui peuvent afficher des rubriques puissent accéder au centre de rubriques, les gestionnaires de connaissances pourront également gérer les rubriques via la page Gérer **les rubriques.** L’onglet Gérer les rubriques s’affiche uniquement pour les utilisateurs qui ont les **autorisations Gérer les** rubriques. 
 
 ## <a name="where-is-my-topic-center"></a>Où se trouve mon centre de rubriques
 
-Le centre de rubrique est créé lors de l’installation de la rubrique. Une fois l’installation terminée, un administrateur peut trouver l’URL dans la [page de gestion du Centre des rubriques](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-administration#to-access-topics-management-settings).
+Le centre de rubriques est créé lors de la configuration des expériences de rubrique. Une fois l’installation terminée, un administrateur peut trouver l’URL sur la page de gestion [du centre de rubriques.](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-administration#to-access-topics-management-settings)
 
 
-1. Dans le centre d’administration Microsoft 365, cliquez sur **paramètres**, puis sur paramètres de l' **organisation**.
-2. Sous l’onglet **services** , cliquez sur le **réseau de connaissances**.
+1. Dans le Centre d’administration Microsoft 365, cliquez sur **Paramètres,** puis **Paramètres de l’organisation.**
+2. Sous **l’onglet Services,** cliquez **sur Réseau de connaissances.**
 
-    ![Connecter des personnes aux connaissances](../media/admin-org-knowledge-options-completed.png) </br>
+    ![Connecter les personnes aux connaissances](../media/admin-org-knowledge-options-completed.png) </br>
 
-3. Sélectionnez l’onglet **Centre des rubriques** . Sous **adresse du site** est un lien vers votre centre de rubriques.
+3. Sélectionnez **l’onglet Centre des** rubriques. Sous **Adresse du site** se trouve un lien vers votre centre de rubriques.
 
-    ![connaissances-réseau-paramètres](../media/knowledge-network-settings-topic-center.png) </br>
+    ![knowledge-network-settings](../media/knowledge-network-settings-topic-center.png) </br>
 
 
 
@@ -54,37 +56,37 @@ Le centre de rubrique est créé lors de l’installation de la rubrique. Une fo
 </br>
 
 
-Sur la page d’accueil du centre de la rubrique, vous pouvez voir les rubriques de votre organisation sur lesquelles vous disposez d’une connexion.
+Dans la page d’accueil du centre de rubriques, vous pouvez voir les rubriques de votre organisation avec lesquelles vous êtes en relation.
 
-- Connexions suggérées : vous verrez des rubriques suggérées répertoriées sous **nous avons répertorié dans ces rubriques. Est-ce que nous obtenons le droit ?**. Voici des rubriques où votre connexion à la rubrique a été suggérée via AI. Par exemple, vous pouvez être le propriétaire d’un fichier ou d’un site connexe. Les rubriques suggérées vous demanderont de confirmer la connexion à la rubrique.
+- Connexions suggérées : vous verrez des rubriques suggérées répertoriées sous Nous vous avons **répertoriés dans ces rubriques. Avons-nous bien fait ?**. Voici des rubriques dans laquelle votre connexion à la rubrique a été suggérée par le biais de l’IA. Par exemple, vous pouvez être propriétaire d’un fichier ou d’un site associé. Les rubriques suggérées vous demanderont de confirmer votre connexion à la rubrique.
 
    ![Connexions suggérées](../media/knowledge-management/my-topics.png) </br>
  
-- Connexions confirmées : ce sont des rubriques dans lesquelles vous êtes épinglé sur le sujet par un autre utilisateur ou vous avez confirmé votre connexion à la rubrique. Les rubriques seront déplacées de la section suggestion vers confirmée lorsque vous confirmerez une connexion suggérée.
+- Connexions confirmées : il s’y trouve des rubriques où vous êtes épinglé sur la rubrique par un autre utilisateur ou où vous avez confirmé votre connexion à la rubrique. Les rubriques passeront de la section suggérée à la section confirmée lorsque vous confirmez une connexion suggérée.
  
    ![Rubriques confirmées](../media/knowledge-management/my-topics-confirmed.png) </br>
 
-Une fois qu’un utilisateur confirme sa connexion à une rubrique, il peut apporter des modifications à la page de rubrique pour qu’il organise sa connexion. Par exemple, ils peuvent fournir des informations supplémentaires sur leur connexion à la rubrique.
+Une fois qu’un utilisateur a confirmé sa connexion à une rubrique, il peut apporter des modifications à la page de rubrique pour organiser sa connexion. Par exemple, ils peuvent fournir plus d’informations sur leur connexion à la rubrique.
 
 
-## <a name="manage-topics-page"></a>Page gérer les rubriques
+## <a name="manage-topics-page"></a>Page Gérer les rubriques
 
-Pour travailler dans la section **gérer les rubriques** du Centre des rubriques, vous devez disposer des autorisations gérer les *rubriques* requises pour le rôle gestionnaire de connaissances. Votre administrateur peut attribuer ces autorisations aux utilisateurs lors de la configuration de la [gestion des connaissances](set-up-topic-experiences.md), ou les nouveaux utilisateurs peuvent être ajoutés par la [suite](topic-experiences-knowledge-rules.md) par un administrateur via le centre d’administration Microsoft 365.
+Pour travailler dans la section Gérer les rubriques du Centre de **rubriques,** vous devez avoir les autorisations Gérer les *rubriques requises* pour le rôle de gestionnaire de connaissances. Votre administrateur peut attribuer ces autorisations aux utilisateurs lors de la configuration de la gestion des [connaissances,](set-up-topic-experiences.md)ou les nouveaux utilisateurs peuvent être [ajoutés](topic-experiences-knowledge-rules.md) par la suite par un administrateur via le Centre d’administration Microsoft 365.
 
-Dans la page gérer les rubriques, le tableau de bord de rubrique affiche des rubriques identifiées à partir des emplacements source spécifiés. Chaque rubrique indique la date à laquelle la rubrique a été découverte et, si des commentaires y ont été fournis. Un utilisateur qui a été affecté les autorisations **gérer les rubriques** peut consulter les rubriques non confirmées et choisir de :
-- Confirmez la rubrique : met en surbrillance la rubrique pour les utilisateurs qui ont accès et leur permet de voir la page de rubrique et de rubrique associée.
-- Rejeter la rubrique : rend le sujet non disponible pour les utilisateurs. La rubrique est déplacée vers l’onglet **rejeté** et peut être confirmée ultérieurement si nécessaire. Guide de gestion des connaissances 
+Dans la page Gérer les rubriques, le tableau de bord de rubrique affiche les rubriques qui ont été identifiées à partir de vos emplacements source spécifiés. Chaque rubrique indique la date à laquelle la rubrique a été découverte et si des commentaires lui ont été fournis. Un utilisateur qui s’est vu attribuer **des autorisations** Gérer les rubriques peut passer en revue les rubriques non confirmées et choisir :
+- Confirmez la rubrique : met en évidence la rubrique pour les utilisateurs qui y ont accès et leur permet d’accéder à la carte de rubrique et à la page de rubriques associées.
+- Rejet de la rubrique : rend la rubrique non disponible pour les utilisateurs. La rubrique est déplacée vers **l’onglet** Rejeté et peut être confirmée ultérieurement si nécessaire.Un gestionnaire de connaissances peut vous guider 
 
 > [!Note] 
-> Pour plus d’informations sur la gestion des rubriques de la page gérer les rubriques, voir [Manage topics](manage-topics.md) .
+> Pour [plus d’informations](manage-topics.md) sur la gestion des rubriques, voir Gérer les rubriques dans la page Gérer les rubriques.
 
 
-## <a name="create-or-edit-a-topic"></a>Création ou modification d’une rubrique
+## <a name="create-or-edit-a-topic"></a>Créer ou modifier une rubrique
 
-Si vous disposez des autorisations **créer et modifier des rubriques** , vous pourrez :
+Si vous avez **des autorisations créer et modifier des rubriques,** vous pourrez :
 
-- [Modifier des rubriques existantes](edit-a-topic.md): vous pouvez apporter des modifications aux pages de rubrique existantes qui ont été créées par le biais de la découverte.
-- [Créer des rubriques](create-a-topic.md): vous pouvez créer de nouvelles rubriques pour celles qui n’ont pas été trouvées par le biais de la découverte ou si les outils ai n’ont pas trouvé suffisamment de preuves pour créer une rubrique.
+- [Modifier des rubriques existantes](edit-a-topic.md): vous pouvez apporter des modifications aux pages de rubriques existantes qui ont été créées via la découverte.
+- [Créez de nouvelles rubriques](create-a-topic.md): vous pouvez créer de nouvelles rubriques pour les rubriques qui n’ont pas été trouvées lors de la découverte, ou si les outils d’IA n’ont pas trouvé suffisamment de preuves pour créer une rubrique.
 
 
 

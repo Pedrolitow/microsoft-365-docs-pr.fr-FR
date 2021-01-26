@@ -1,217 +1,215 @@
 ---
 title: Résolution des problèmes d’obstacles aux informations
-f1.keywords:
-- NOCSH
-ms.author: chrfox
-author: chrfox
+description: Utilisez cet article comme guide pour résoudre les problèmes d’obstacles aux informations.
+ms.author: robmazz
+author: robmazz
 manager: laurawi
-ms.date: 07/08/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: None
-description: Utilisez cet article pour résoudre les problèmes liés aux barrières relatives aux informations.
+f1.keywords:
+- NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e19c7d22e2b34d3f8083bcf5b8fb7297dbf86229
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 39ac5c2f12b8947bce26d426cac83e57cd4c87ae
+ms.sourcegitcommit: c10eb675da725830e9776d2a0566ba3622eb361c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47545668"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49980037"
 ---
 # <a name="troubleshooting-information-barriers"></a>Résolution des problèmes d’obstacles aux informations
 
-Les [barrières d’informations](information-barriers.md) peuvent aider votre organisation à rester conforme aux exigences légales et aux réglementations sectorielles. Par exemple, avec des barrières d’informations, vous pouvez restreindre la communication entre des groupes spécifiques d’utilisateurs afin d’éviter un conflit d’intérêt ou d’autres problèmes. (Pour en savoir plus sur la configuration des barrières d’informations, consultez la rubrique [define Policies for information barrières](information-barriers-policies.md).)
+[Les obstacles à l’information](information-barriers.md) peuvent aider votre organisation à rester conforme aux exigences légales et aux réglementations du secteur. Par exemple, avec les obstacles à l’information, vous pouvez restreindre la communication entre des groupes spécifiques d’utilisateurs afin d’éviter un conflit d’intérêts ou d’autres problèmes. (Pour en savoir plus sur la façon de configurer les obstacles à l’information, voir [Définir des stratégies pour les obstacles à l’information.)](information-barriers-policies.md)
 
-Au cas où des personnes rencontreraient des problèmes inattendus après la mise en place de barrières d’informations, vous pouvez suivre certaines étapes pour résoudre ces problèmes. Utilisez cet article comme guide.
+Si des personnes rencontrent des problèmes inattendus après que des obstacles à l’information sont en place, vous pouvez prendre certaines mesures pour résoudre ces problèmes. Utilisez cet article comme guide.
 
 > [!IMPORTANT]
-> Pour effectuer les tâches décrites dans cet article, vous devez disposer d’un rôle approprié, par exemple :<br/>-Administrateur général de Microsoft 365 entreprise<br/>-administrateur général<br/>-Administrateur de conformité<br/>-IB gestion de la conformité (il s’agit d’un nouveau rôle !)<p>Pour en savoir plus sur les conditions préalables pour les barrières d’informations, reportez-vous à la rubrique [conditions préalables (pour les stratégies de barrière des informations)](information-barriers-policies.md#prerequisites).<p>Veillez à [vous connecter au centre de sécurité & PowerShell Center](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
+> Pour effectuer les tâches décrites dans cet article, vous devez avoir un rôle approprié, tel que l’un des suivants :<br/>- Administrateur général Microsoft 365 Entreprise<br/>- Administrateur général<br/>- Administrateur de conformité<br/>- Gestion de la conformité DE LAS (il s’agit d’un nouveau rôle !)<p>Pour en savoir plus sur les conditions préalables pour les obstacles à l’information, voir [Conditions préalables (pour les stratégies de obstacle à l’information).](information-barriers-policies.md#prerequisites)<p>Veillez à [vous connecter au Centre de sécurité & conformité PowerShell.](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
 
-## <a name="issue-users-are-unexpectedly-blocked-from-communicating-with-others-in-microsoft-teams"></a>Problème : les utilisateurs sont bloqués de manière inattendue pour communiquer avec d’autres personnes dans Microsoft teams 
+## <a name="issue-users-are-unexpectedly-blocked-from-communicating-with-others-in-microsoft-teams"></a>Problème : les utilisateurs ne peuvent pas communiquer de façon inattendue avec d’autres personnes dans Microsoft Teams 
 
-Dans ce cas, les personnes signalent des problèmes inattendants à la communication avec d’autres personnes dans Microsoft Teams. Exemples :
-- Un utilisateur recherche, mais il ne peut pas trouver, un autre utilisateur de Microsoft Teams.
+Dans ce cas, les personnes rapportent des problèmes inattendus lors de la communication avec d’autres personnes dans Microsoft Teams. En voici quelques exemples :
+
+- Un utilisateur recherche, mais n’est pas en mesure de le trouver, un autre utilisateur dans Microsoft Teams.
 - Un utilisateur peut trouver, mais ne peut pas sélectionner, un autre utilisateur dans Microsoft Teams.
-- Un utilisateur peut afficher un autre utilisateur, mais ne peut pas envoyer de messages à cet autre utilisateur dans Microsoft Teams.
+- Un utilisateur peut voir un autre utilisateur, mais ne peut pas lui envoyer de messages dans Microsoft Teams.
 
 ### <a name="what-to-do"></a>Procédure
 
-Déterminez si les utilisateurs sont affectés par une stratégie de barrière des informations. En fonction de la configuration des stratégies, les barrières d’informations peuvent fonctionner comme prévu. Sinon, vous devrez peut-être affiner les stratégies de votre organisation.
+Déterminez si les utilisateurs sont affectés par une stratégie d’obstacle à l’information. Selon la façon dont les stratégies sont configurées, les obstacles à l’information peuvent fonctionner comme prévu. Vous pouvez également être dans l’devoir d’affiner les stratégies de votre organisation.
 
 1. Utilisez la cmdlet **Get-InformationBarrierRecipientStatus** avec le paramètre Identity. 
 
-    |Syntaxe  |Exemple  |
-    |---------|---------|
-    | `Get-InformationBarrierRecipientStatus -Identity` <p>Vous pouvez utiliser n’importe quelle valeur d’identité qui identifie de façon unique chaque destinataire, comme le nom, l’alias, le nom unique (DN), le DN canonique, l’adresse de messagerie ou le GUID.     |`Get-InformationBarrierRecipientStatus -Identity meganb` <p>Dans cet exemple, nous utilisons un alias (*meganb*) pour le paramètre Identity. Cette applet de commande renvoie des informations qui indiquent si l’utilisateur est concerné par une stratégie de barrière des informations. (Recherchez * ExoPolicyId : \<GUID> .)         |
+    |**Syntaxe**|**Exemple**|
+    |:---------|:----------|
+    | `Get-InformationBarrierRecipientStatus -Identity` <p> Vous pouvez utiliser n’importe quelle valeur d’identité qui identifie de manière unique chaque destinataire, telle que le nom, l’alias, le nom unique (DN), le nom unique canonique, l’adresse e-mail ou le GUID. |`Get-InformationBarrierRecipientStatus -Identity meganb` <p> Dans cet exemple, nous utilisons un alias (*meganb*) pour le paramètre Identity. Cette cmdlet retourne des informations qui indiquent si l’utilisateur est affecté par une stratégie d’obstacle à l’information. (Recherchez *ExoPolicyId : \<GUID> .) |
 
-    **Si les utilisateurs ne sont pas inclus dans les stratégies de barrière des informations, contactez le support technique**. Sinon, passez à l’étape suivante.
+    **Si les utilisateurs ne sont pas inclus dans les stratégies d’obstacle à l’information, contactez le support technique.** Sinon, passez à l’étape suivante.
 
-2. Découvrez quels segments sont inclus dans une stratégie de barrière des informations. Pour ce faire, utilisez l' `Get-InformationBarrierPolicy` applet de commande avec le paramètre Identity. 
+2. Découvrez les segments inclus dans une stratégie d’obstacle à l’information. Pour ce faire, utilisez la `Get-InformationBarrierPolicy` cmdlet avec le paramètre Identity. 
 
-    |Syntaxe  |Exemple  |
-    |---------|---------|
-    |`Get-InformationBarrierPolicy` <p>Utilisez des détails, tels que le GUID de stratégie (ExoPolicyId) que vous avez reçu au cours de l’étape précédente, en tant que valeur d’identité.     | `Get-InformationBarrierPolicy -Identity b42c3d0f-49e9-4506-a0a5-bf2853b5df6f` <p>Dans cet exemple, nous obtenons des informations détaillées sur la stratégie de barrière des informations qui comporte ExoPolicyId *b42c3d0f-49e9-4506-a0a5-bf2853b5df6f*.         |
+    |**Syntaxe**|**Exemple**|
+    |:---------|:----------|
+    | `Get-InformationBarrierPolicy` <p> Utilisez des détails, tels que le GUID de stratégie (ExoPolicyId) que vous avez reçu à l’étape précédente, en tant que valeur d’identité. | `Get-InformationBarrierPolicy -Identity b42c3d0f-49e9-4506-a0a5-bf2853b5df6f` <p> Dans cet exemple, nous allons obtenir des informations détaillées sur la stratégie d’obstacle aux informations qui possède ExoPolicyId *b42c3d0f-49e9-4506-a0a5-bf2853b5df6f*. |
 
-    Une fois que vous avez exécuté l’applet de commande, recherchez les valeurs **AssignedSegment**, **SegmentsAllowed**et **SegmentsBlocked** dans les résultats.
+    Après avoir exécuté l’cmdlet, dans les résultats, recherchez les valeurs **AssignedSegment,** **SegmentsAllowed** et **SegmentsBlocked.**
 
-    Par exemple, après avoir exécuté l' `Get-InformationBarrierPolicy` applet de commande, nous avons vu les éléments suivants dans notre liste de résultats :
+    Par exemple, après l’exécution de la cmdlet, nous avons vu ce qui suit `Get-InformationBarrierPolicy` dans notre liste de résultats :
 
     ```powershell
-        AssignedSegment      : Sales
-        SegmentsAllowed      : {}
-        SegmentsBlocked      : {Research}
+    AssignedSegment : Sales
+    SegmentsAllowed : {}
+    SegmentsBlocked : {Research}
     ```
-    Dans ce cas, nous pouvons voir qu’une stratégie de barrière des informations affecte les personnes qui se trouvent dans les segments de ventes et de recherche. Dans ce cas, les personnes dans les ventes ne peuvent pas communiquer avec les personnes de la recherche. 
-    
-    Si cela semble correct, les barrières de l’information fonctionnent comme prévu. Si ce n’est pas le cas, passez à l’étape suivante.
 
-4. Assurez-vous que vos segments sont correctement définis. Pour ce faire, utilisez l' `Get-OrganizationSegment` applet de commande et passez en revue la liste des résultats. 
+    Dans ce cas, nous pouvons voir qu’une stratégie d’obstacle à l’information affecte les personnes qui font partie des segments Ventes et Recherche. Dans ce cas, les employés de Sales ne peuvent pas communiquer avec des personnes de recherche.
 
-    |Syntaxe  |Exemple  |
-    |---------|---------|
-    |`Get-OrganizationSegment`<p>Utilisez cette applet de commande avec un paramètre Identity.     |`Get-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd` <p>Dans cet exemple, nous obtenons des informations sur le segment qui a le GUID *c96e0837-C232-4A8A-841e-ef45787d8fcd*.         |
+    Si cela semble correct, les obstacles aux informations fonctionnent comme prévu. Si ce n’est pas le cas, passez à l’étape suivante.
 
-    Passez en revue les détails du segment. Si nécessaire, [modifiez un segment](information-barriers-edit-segments-policies.md#edit-a-segment), puis réutilisez l’applet de commande `Start-InformationBarrierPoliciesApplication` .
+3. Assurez-vous que vos segments sont définis correctement. Pour ce faire, utilisez la `Get-OrganizationSegment` cmdlet et examinez la liste des résultats.
 
-    **Si vous rencontrez toujours des problèmes avec votre stratégie de barrière des informations, contactez le support technique**.
+    |**Syntaxe**|**Exemple**|
+    |:---------|:----------|
+    | `Get-OrganizationSegment`<p> Utilisez cette cmdlet avec un paramètre Identity. | `Get-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd` <p> Dans cet exemple, nous allons obtenir des informations sur le segment dont le GUID *est c96e0837-c232-4a8a-841e-ef45787d8fcd*. |
 
-## <a name="issue-communications-are-allowed-between-users-who-should-be-blocked-in-microsoft-teams"></a>Problème : les communications sont autorisées entre les utilisateurs qui doivent être bloqués dans Microsoft teams
+    Examinez les détails du segment. Si nécessaire, [modifiez un segment,](information-barriers-edit-segments-policies.md#edit-a-segment)puis ré-utilisez l’cmdlet. `Start-InformationBarrierPoliciesApplication`
 
-Dans ce cas, bien que les barrières d’informations soient définies, actives et appliquées, les personnes qui ne doivent pas pouvoir communiquer entre elles sont en mesure de converser les unes avec les autres dans Microsoft Teams.
+    Si vous avez encore des problèmes avec votre stratégie d’obstacle **à l’information, contactez le support technique.**
+
+## <a name="issue-communications-are-allowed-between-users-who-should-be-blocked-in-microsoft-teams"></a>Problème : les communications sont autorisées entre les utilisateurs qui doivent être bloqués dans Microsoft Teams
+
+Dans ce cas, bien que les obstacles à l’information soient définis, actifs et appliqués, les personnes qui doivent être empêchées de communiquer entre elles sont en quelque sorte en mesure de discuter et de s’appeler mutuellement dans Microsoft Teams.
 
 ### <a name="what-to-do"></a>Procédure
 
-Vérifiez que les utilisateurs en question sont inclus dans une stratégie de barrière des informations. 
+Vérifiez que les utilisateurs en question sont inclus dans une stratégie d’obstacle aux informations. 
 
-1. Utilisez la cmdlet **Get-InformationBarrierRecipientStatus** avec les paramètres d’identité.
+1. Utilisez la cmdlet **Get-InformationBarrierRecipientStatus** avec les paramètres Identity.
 
-    |Syntaxe  |Exemple  |
-    |---------|---------|
-    |`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>Vous pouvez utiliser n’importe quelle valeur qui identifie de façon unique chaque utilisateur, comme le nom, l’alias, le nom unique, le nom de domaine canonique, l’adresse de messagerie ou le GUID.     |`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p>Dans cet exemple, nous faisons référence à deux comptes d’utilisateur dans Office 365 : *meganb* pour *Megan*, et *Alexw* pour *Alex*.          |
+    |**Syntaxe** _|_ *Exemple**|
+    |:----------|:----------|
+    | `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> Vous pouvez utiliser n’importe quelle valeur qui identifie chaque utilisateur de manière unique, telle que le nom, l’alias, le nom unique, le nom de domaine canonique, l’adresse e-mail ou le GUID. |`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> Dans cet exemple, nous faisons référence à deux comptes d’utilisateurs dans Office 365 : *meganb* pour *Megan* et *alexw* pour *Alex*. |
 
-    
     > [!TIP]
-    > Vous pouvez également utiliser cette applet de commande pour un seul utilisateur : `Get-InformationBarrierRecipientStatus -Identity <value>`
-    
-2. Passez en revue les résultats. L’applet de commande **Get-InformationBarrierRecipientStatus** retourne des informations sur les utilisateurs, telles que les valeurs d’attribut et les stratégies de barrière des informations qui sont appliquées. 
+    > Vous pouvez également utiliser cette cmdlet pour un seul utilisateur : `Get-InformationBarrierRecipientStatus -Identity <value>`
 
-    Passez en revue les résultats, puis effectuez les étapes suivantes, comme décrit dans le tableau suivant :
-    
-    |Résultats  |Étape suivante  |
-    |---------|---------|
-    |Aucun segment n’est répertorié pour le ou les utilisateurs sélectionnés     |Effectuez l'une des opérations suivantes :<br/>-Affecter des utilisateurs à un segment existant en modifiant leurs profils utilisateur dans Azure Active Directory. (Consultez la rubrique [configure User Account Properties with Office 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell).)<br/>-Définissez un segment à l’aide [d’un attribut pris en charge pour les barrières d’information](information-barriers-attributes.md). Ensuite, [définissez une nouvelle stratégie](information-barriers-policies.md#part-2-define-information-barrier-policies) ou [modifiez une stratégie existante](information-barriers-edit-segments-policies.md#edit-a-policy) pour inclure ce segment.  |
-    |Les segments sont répertoriés, mais aucune stratégie de barrière des informations n’est affectée à ces segments     |Effectuez l'une des opérations suivantes :<br/>- [Définir une nouvelle stratégie de barrière des informations](information-barriers-policies.md#part-2-define-information-barrier-policies) pour chaque segment en question<br/>- [Modifier une stratégie de barrière des informations existante](information-barriers-edit-segments-policies.md#edit-a-policy) pour l’affecter au segment correct         |
-    |Les segments sont répertoriés et chacun est inclus dans une stratégie de barrière des informations     |-Exécutez l' `Get-InformationBarrierPolicy` applet de commande pour vérifier que les stratégies de barrière des informations sont actives.<br/>-Exécutez l' `Get-InformationBarrierPoliciesApplicationStatus` applet de commande pour vérifier que les stratégies sont appliquées.<br/>-Exécutez l' `Start-InformationBarrierPoliciesApplication` applet de commande pour appliquer toutes les stratégies de barrière des informations actives.          |
-    
+2. Examinez les résultats. La cmdlet **Get-InformationBarrierRecipientStatus** renvoie des informations sur les utilisateurs, telles que les valeurs d’attribut et les stratégies de obstacle aux informations appliquées.
 
-## <a name="issue-i-need-to-remove-a-single-user-from-an-information-barrier-policy"></a>Problème : je dois supprimer un seul utilisateur d’une stratégie de barrière des informations
+    Examinez les résultats, puis prenez les étapes suivantes, comme décrit dans le tableau suivant :
 
-Dans ce cas, les stratégies de barrière des informations sont en vigueur et un ou plusieurs utilisateurs sont bloqués de manière inattendue avec d’autres personnes dans Microsoft Teams. Au lieu de supprimer toutes les stratégies de barrière des informations, vous pouvez supprimer un ou plusieurs utilisateurs individuels des stratégies de barrière des informations. 
+    |**Results**|**Que faire ensuite**|
+    |:----------|:------------------|
+    | Aucun segment n’est répertorié pour les utilisateurs sélectionnés | Effectuez l’une des opérations suivantes :<br/>- Affecter des utilisateurs à un segment existant en éditant leurs profils utilisateur dans Azure Active Directory. (Voir [Configurer les propriétés de compte d’utilisateur avec Office 365 PowerShell.)](https://docs.microsoft.com/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)<br/>- Définissez un segment à l’aide [d’un attribut pris en charge pour les obstacles aux informations.](information-barriers-attributes.md) Ensuite, [définissez une nouvelle stratégie ou](information-barriers-policies.md#part-2-define-information-barrier-policies) [modifiez une stratégie existante](information-barriers-edit-segments-policies.md#edit-a-policy) pour inclure ce segment. |
+    | Les segments sont répertoriés, mais aucune stratégie d’obstacle à l’information n’est affectée à ces segments | Effectuez l’une des opérations suivantes :<br/>- [Définir une nouvelle stratégie de obstacle aux informations](information-barriers-policies.md#part-2-define-information-barrier-policies) pour chaque segment en question <br/>- [Modifier une stratégie d’obstacle aux informations existante pour](information-barriers-edit-segments-policies.md#edit-a-policy) l’affecter au segment correct |
+    | Les segments sont répertoriés et chacun d’eux est inclus dans une stratégie d’obstacle à l’information | - Exécutez `Get-InformationBarrierPolicy` l’cmdlet pour vérifier que les stratégies de obstacle aux informations sont actives<br/>- Exécutez la `Get-InformationBarrierPoliciesApplicationStatus` cmdlet pour confirmer que les stratégies sont appliquées<br/>- Exécutez la `Start-InformationBarrierPoliciesApplication` cmdlet pour appliquer toutes les stratégies actives d’obstacle aux informations |
 
-### <a name="what-to-do"></a>Procédure
+## <a name="issue-i-need-to-remove-a-single-user-from-an-information-barrier-policy"></a>Problème : je dois supprimer un seul utilisateur d’une stratégie d’obstacle à l’information
 
-Les stratégies de barrière des informations sont affectées à des segments d’utilisateurs. Les segments sont définis à l’aide [de certains attributs dans les profils de comptes d’utilisateur](information-barriers-attributes.md). Si vous devez supprimer une stratégie d’un seul utilisateur, vous pouvez modifier le profil de cet utilisateur dans Azure Active Directory de sorte que l’utilisateur ne soit plus inclus dans un segment affecté par les barrières d’information.
-
-1. Utilisez la cmdlet **Get-InformationBarrierRecipientStatus** avec les paramètres d’identité. Cette applet de commande retourne des informations sur les utilisateurs, telles que les valeurs d’attribut et les stratégies de barrière des informations qui sont appliquées.
-
-    |Syntaxe  |Exemple  |
-    |---------|---------|
-    |`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>`<p>Vous pouvez utiliser n’importe quelle valeur qui identifie de façon unique chaque utilisateur, comme le nom, l’alias, le nom unique, le nom de domaine canonique, l’adresse de messagerie ou le GUID.     |`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p>Dans cet exemple, nous faisons référence à deux comptes d’utilisateur dans Office 365 : *meganb* pour *Megan*, et *Alexw* pour *Alex*.          |
-    |`Get-InformationBarrierRecipientStatus -Identity <value>` <p>Vous pouvez utiliser n’importe quelle valeur qui identifie l’utilisateur de manière unique, par exemple le nom, l’alias, le nom unique, le nom de domaine canonique, l’adresse de messagerie ou le GUID.|`Get-InformationBarrierRecipientStatus -Identity jeanp`<p>Dans cet exemple, nous faisons référence à un compte unique dans Office 365 : *jeanp*. |
-
-2. Passez en revue les résultats pour voir si des stratégies de barrière des informations sont affectées et pour quels segments appartiennent à des utilisateurs. 
-
-3. Pour supprimer un utilisateur d’un segment affecté par les barrières d’informations, [Mettez à jour les informations de profil de l’utilisateur dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
-
-4. Patientez environ 30 minutes avant que FwdSync se produise. `Start-InformationBarrierPoliciesApplication`Vous pouvez également exécuter l’applet de commande pour appliquer toutes les stratégies de barrière des informations actives.
-
-## <a name="issue-the-information-barrier-application-process-is-taking-too-long"></a>Problème : le processus de l’application de barrière des informations prend trop de temps
-
-Après avoir exécuté l’applet de commande **Start-InformationBarrierPoliciesApplication** , le processus prend beaucoup de temps.
+Dans ce cas, les stratégies de blocage de l’information sont en vigueur et un ou plusieurs utilisateurs ne peuvent pas communiquer avec d’autres personnes dans Microsoft Teams. Au lieu de supprimer complètement les stratégies d’obstacle à l’information, vous pouvez supprimer un ou plusieurs utilisateurs individuels des stratégies d’obstacle à l’information.
 
 ### <a name="what-to-do"></a>Procédure
 
-Gardez à l’esprit que lorsque vous exécutez la cmdlet application de stratégie, les stratégies de barrière des informations sont appliquées (ou supprimées), utilisateur par utilisateur, pour tous les comptes de votre organisation. Si vous avez un grand nombre d’utilisateurs, le traitement peut prendre un certain temps. (En règle générale, il faut environ une heure pour traiter les comptes d’utilisateur 5 000.)
+Les stratégies d’obstacle à l’information sont affectées à des segments d’utilisateurs. Les segments sont définis à l’aide de certains [attributs dans les profils de compte d’utilisateur.](information-barriers-attributes.md) Si vous devez supprimer une stratégie d’un seul utilisateur, envisagez de modifier le profil de cet utilisateur dans Azure Active Directory afin que l’utilisateur ne soit plus inclus dans un segment affecté par les obstacles à l’information.
 
-1. Utilisez la cmdlet **Get-InformationBarrierPoliciesApplicationStatus** pour vérifier l’état de l’application de stratégie la plus récente.
+1. Utilisez la cmdlet **Get-InformationBarrierRecipientStatus** avec les paramètres Identity. Cette cmdlet renvoie des informations sur les utilisateurs, telles que les valeurs d’attribut et les stratégies de obstacle aux informations appliquées.
 
-    |Pour afficher l’application de stratégie la plus récente  |Pour afficher l’état de toutes les applications de stratégie  |
-    |---------|---------|
-    |`Get-InformationBarrierPoliciesApplicationStatus`     |`Get-InformationBarrierPoliciesApplicationStatus -All $true`         |
+    |**Syntaxe**|**Exemple**|
+    |:---------|:----------|
+    | `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> Vous pouvez utiliser n’importe quelle valeur qui identifie chaque utilisateur de manière unique, telle que le nom, l’alias, le nom unique, le nom de domaine canonique, l’adresse e-mail ou le GUID. | `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> Dans cet exemple, nous faisons référence à deux comptes d’utilisateurs dans Office 365 : *meganb* pour *Megan* et *alexw* pour *Alex*.          |
+    | `Get-InformationBarrierRecipientStatus -Identity <value>` <p> Vous pouvez utiliser n’importe quelle valeur qui identifie l’utilisateur de manière unique, telle que le nom, l’alias, le nom unique, le nom de domaine canonique, l’adresse e-mail ou le GUID.|`Get-InformationBarrierRecipientStatus -Identity jeanp`<p> Dans cet exemple, nous faisons référence à un seul compte dans Office 365 : *jeanp*. |
 
+2. Examinez les résultats pour voir si des stratégies d’obstacle aux informations sont affectées et à quels segments le ou les utilisateurs appartiennent.
 
-    Cela permet d’afficher des informations indiquant si l’application de stratégie a été exécutée, si elle a échoué ou est en cours d’exécution.
+3. Pour supprimer un utilisateur d’un segment affecté par les obstacles à l’information, mettez à jour les informations de profil de [l’utilisateur dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
 
-2. En fonction des résultats de l’étape précédente, effectuez l’une des opérations suivantes :
+4. Attendez environ 30 minutes que FwdSync se produise. Vous pouvez également exécuter la `Start-InformationBarrierPoliciesApplication` cmdlet pour appliquer toutes les stratégies actives d’obstacle aux informations.
+
+## <a name="issue-the-information-barrier-application-process-is-taking-too-long"></a>Problème : le processus d’application de obstacles à l’information prend trop de temps
+
+Après l’exécution de la cmdlet **Start-InformationBarrierPoliciesApplication,** la fin du processus prend beaucoup de temps.
+
+### <a name="what-to-do"></a>Procédure
+
+N’oubliez pas que lorsque vous exécutez la cmdlet d’application de stratégie, des stratégies d’obstacle à l’information sont appliquées (ou supprimées), utilisateur par utilisateur, pour tous les comptes de votre organisation. Si vous avez un grand nombre d’utilisateurs, le processus prendra un certain temps. (En règle générale, le traitement de 5 000 comptes d’utilisateur prend environ une heure.)
+
+1. La cmdlet **Get-InformationBarrierPoliciesApplicationStatus** permet de vérifier l’état de l’application de stratégie la plus récente.
+
+    |**Pour afficher l’application de stratégie la plus récente**|**Pour afficher l’état de toutes les applications de stratégie**|
+    |:---------------------------------------------|:---------------------------------------------|
+    | `Get-InformationBarrierPoliciesApplicationStatus` | `Get-InformationBarrierPoliciesApplicationStatus -All $true` |
+
+    Cela permet d’afficher des informations sur la fin, l’échec ou l’avancement de l’application de stratégie.
+
+2. En fonction des résultats de l’étape précédente, prenez l’une des étapes suivantes :
   
-    |Statut  |Étape suivante  |
-    |---------|---------|
-    |**Non commencée**     |S’il a été plus de 45 minutes depuis l’exécution de la cmdlet **Start-InformationBarrierPoliciesApplication** , passez en revue votre journal d’audit pour voir s’il existe des erreurs dans les définitions de stratégie, ou pour toute autre raison pour laquelle l’application n’a pas démarré. |
-    |**Échec**     |Si l’application a échoué, consultez votre journal d’audit. Consultez également vos segments et stratégies. Les utilisateurs sont-ils affectés à plusieurs segments ? Est-ce qu’un segment est affecté à plusieurs poliicy ? Si nécessaire, [modifiez des segments](information-barriers-edit-segments-policies.md#edit-a-segment) et/ou [modifiez des stratégies](information-barriers-edit-segments-policies.md#edit-a-policy), puis exécutez à nouveau l’applet de commande **Start-InformationBarrierPoliciesApplication** .  |
-    |**En cours**     |Si l’application est toujours en cours d’exécution, patientez plus de temps pour qu’elle se termine. S’il y a eu plusieurs jours, rassemblez vos journaux d’audit, puis contactez le support technique. |
+    |**État**|**Étape suivante**|
+    |:---------|:------------|
+    | **Non commencée** | Si cela fait plus de 45 minutes que la cmdlet **Start-InformationBarrierPoliciesApplication** a été exécuté, consultez votre journal d’audit pour voir s’il existe des erreurs dans les définitions de stratégie ou une autre raison pour laquelle l’application n’a pas démarré. |
+    | **Échec** | Si l’application a échoué, examinez votre journal d’audit. Examinez également vos segments et stratégies. Des utilisateurs sont-ils affectés à plusieurs segments ? Des segments sont-ils affectés à plusieurs segments ? Si nécessaire, [modifiez des segments](information-barriers-edit-segments-policies.md#edit-a-segment) et/ou [](information-barriers-edit-segments-policies.md#edit-a-policy)modifiez des stratégies, puis ré-exécutez l’cmdlet **Start-InformationBarrierPoliciesApplication.** |
+    | **En cours** | Si l’application est toujours en cours, laissez plus de temps pour qu’elle se termine. Si cela fait plusieurs jours, collectez vos journaux d’audit, puis contactez le support technique. |
 
-## <a name="issue-information-barrier-policies-are-not-being-applied-at-all"></a>Problème : les stratégies de barrière des informations ne sont pas appliquées du tout
+## <a name="issue-information-barrier-policies-are-not-being-applied-at-all"></a>Problème : les stratégies de obstacle à l’information ne sont pas appliquées du tout
 
-Dans ce cas, vous avez défini des segments, défini des stratégies de barrière des informations, et vous avez tenté d’appliquer ces stratégies. Toutefois, lorsque vous exécutez l' `Get-InformationBarrierPoliciesApplicationStatus` applet de commande, vous pouvez constater que l’application de stratégie a échoué.
+Dans ce cas, vous avez défini des segments, défini des stratégies d’obstacle aux informations et tenté d’appliquer ces stratégies. Toutefois, lorsque vous exécutez la cmdlet, vous pouvez voir que `Get-InformationBarrierPoliciesApplicationStatus` l’application de stratégie a échoué.
 
 ### <a name="what-to-do"></a>Procédure
 
-Assurez-vous que votre organisation ne dispose pas des [stratégies de carnet d’adresses Exchange](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies) en place. De telles stratégies empêchent l’application de stratégies de barrière des informations.
+Assurez-vous que votre organisation n’a pas de stratégies de [carnet d’adresses Exchange](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies) en place. De telles stratégies empêcheront l’application de stratégies de obstacle à l’information.
 
-1. Connectez-vous à [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). 
+1. Connectez-vous à [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Exécutez la cmdlet [Get-AddressBookPolicy](https://docs.microsoft.com/powershell/module/exchange/get-addressbookpolicy) et examinez les résultats.
 
-    |Résultats  |Étape suivante  |
-    |---------|---------|
-    |Les stratégies de carnet d’adresses Exchange sont répertoriées     |[Supprimer des stratégies de carnet d’adresses](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy)         |
-    |Aucune stratégie de carnet d’adresses n’existe |Consultez vos journaux d’audit pour savoir pourquoi l’application de stratégie est défectueuse. |
+    |**Results**|**Étape suivante**|
+    |:----------|:------------|
+    | Les stratégies de carnet d’adresses Exchange sont répertoriées | [Supprimer des stratégies de carnet d’adresses](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) |
+    | Aucune stratégie de carnet d’adresses n’existe |Consulter vos journaux d’audit pour savoir pourquoi l’application de stratégie échoue |
 
-3. [Afficher l’état des comptes d’utilisateur, des segments, des stratégies ou de l’application de stratégie](information-barriers-policies.md#view-status-of-user-accounts-segments-policies-or-policy-application).
+3. [Afficher l’état des comptes d’utilisateur, des segments, des stratégies ou de l’application de stratégie.](information-barriers-policies.md#view-status-of-user-accounts-segments-policies-or-policy-application)
 
-## <a name="issue-information-barrier-policy-not-applied-to-all-designated-users"></a>Problème : la stratégie de barrière des informations n’est pas appliquée à tous les utilisateurs désignés
+## <a name="issue-information-barrier-policy-not-applied-to-all-designated-users"></a>Problème : la stratégie de obstacle à l’information n’est pas appliquée à tous les utilisateurs désignés
 
-Une fois que vous avez défini des segments, défini des stratégies de barrière des informations et que vous avez tenté d’appliquer ces stratégies, vous pouvez constater que la stratégie s’applique à certains destinataires, mais pas à d’autres.
-Lorsque vous exécutez l' `Get-InformationBarrierPoliciesApplicationStatus` applet de commande, recherchez dans la sortie le texte suivant.
+Après avoir défini des segments, défini des stratégies d’obstacle à l’information et tenté d’appliquer ces stratégies, il se peut que vous trouviez que la stratégie s’applique à certains destinataires, mais pas à d’autres.
+Lorsque vous exécutez la `Get-InformationBarrierPoliciesApplicationStatus` cmdlet, recherchez du texte comme celui-ci dans la sortie.
 
-> Identification `<application guid>`
+> Identité : `<application guid>`
 >
-> Nombre total de destinataires : 81527
+> Nombre total de destinataires : 81527
 >
-> Destinataires ayant échoué : 2
+> Destinataires en échec : 2
 >
-> Catégorie d’échec : aucun
+> Catégorie d’échec : Aucune
 >
-> État : terminé
+> Status: Complete
 
 ### <a name="what-to-do"></a>Procédure
 
-1. Recherchez dans le journal d’audit `<application guid>` . Vous pouvez copier ce code PowerShell et le modifier pour vos variables.
+1. Recherchez . `<application guid>` Vous pouvez copier ce code PowerShell et modifier vos variables.
 
 ```powershell
 $DetailedLogs = Search-UnifiedAuditLog -EndDate <yyyy-mm-ddThh:mm:ss>  -StartDate <yyyy-mm-ddThh:mm:ss> -RecordType InformationBarrierPolicyApplication -ResultSize 1000 |?{$_.AuditData.Contains(<application guid>)} 
 ```
 
-2. Consultez la sortie détaillée du journal d’audit pour connaître les valeurs des `"UserId"` `"ErrorDetails"` champs et. Cela vous permettra d’obtenir la raison de l’échec. Vous pouvez copier ce code PowerShell et le modifier pour vos variables.
+2. Vérifiez la sortie détaillée du journal d’audit pour les valeurs des champs `"UserId"` et des `"ErrorDetails"` champs. Cela vous donnera la raison de l’échec. Vous pouvez copier ce code PowerShell et modifier vos variables.
 
 ```powershell
    $DetailedLogs[1] |fl
 ```
- Par exemple :
 
-> « UserId » : utilisateur1
-> 
->« ErrorDetails » : «Status : IBPolicyConflict. Erreur : le segment IB "segment ID1" et IB segment "segment ID2" a un conflit et ne peut pas être affecté au destinataire. 
+Par exemple :
 
-3. En règle générale, vous constaterez qu’un utilisateur a été inclus dans plusieurs segments. Vous pouvez résoudre ce problème en mettant à jour la `-UserGroupFilter` valeur dans `OrganizationSegments` .
+> « UserId » : User1
+>
+>« ErrorDetails »:"Status:TROPPolicyConflict. Erreur : le segment DE LATS « id1 » et le segment « id2 de segment 2 » sont en conflit et ne peuvent pas être affectés au destinataire.
 
-4. Réappliquer les stratégies de barrière des informations à l’aide de ces procédures : [informations sur les stratégies de barrières](information-barriers-policies.md#part-3-apply-information-barrier-policies).
+3. En règle générale, vous constatez qu’un utilisateur a été inclus dans plusieurs segments. Vous pouvez résoudre ce problème en mettant à jour `-UserGroupFilter` la valeur dans `OrganizationSegments` .
 
-## <a name="related-topics"></a>Voir aussi
+4. Ré-appliquez les stratégies d’obstacle à l’information à l’aide de ces [procédures stratégies de obstacles à l’information.](information-barriers-policies.md#part-3-apply-information-barrier-policies)
 
-[Définir des stratégies pour les barrières d’informations dans Microsoft teams](information-barriers-policies.md)
+## <a name="resources"></a>Ressources
 
-[Obstacles aux informations](information-barriers.md)
+- [Définir des stratégies pour les obstacles aux informations dans Microsoft Teams](information-barriers-policies.md)
+- [Obstacles aux informations](information-barriers.md)

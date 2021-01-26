@@ -1,9 +1,8 @@
 ---
-title: En savoir plus sur les barrières relatives aux informations dans Microsoft 365
-f1.keywords:
-- NOCSH
-ms.author: chrfox
-author: chrfox
+title: En savoir plus sur les obstacles aux informations dans Microsoft 365
+description: Utilisez les obstacles aux informations pour assurer la conformité des communications à l’aide de Microsoft Teams au sein de votre organisation.
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: ITPro
@@ -14,39 +13,40 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 localization_priority: None
-description: Utilisez les barrières relatives aux informations pour garantir la conformité de la communication à l’aide de Microsoft teams au sein de votre organisation.
+f1.keywords:
+- NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 73a76e67fdb96f89dbd11daf4b2ef12f6590f92a
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 6ca1502c16accc0d9d9c0453e407eadaeb4c12e5
+ms.sourcegitcommit: c10eb675da725830e9776d2a0566ba3622eb361c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701003"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49980067"
 ---
-# <a name="learn-about-information-barriers-in-microsoft-365"></a>En savoir plus sur les barrières relatives aux informations dans Microsoft 365
+# <a name="learn-about-information-barriers-in-microsoft-365"></a>En savoir plus sur les obstacles aux informations dans Microsoft 365
 
-Les services de Cloud Computing Microsoft incluent de puissantes fonctionnalités de communication et de collaboration. Mais supposons que vous souhaitiez restreindre la communication et la collaboration entre deux groupes afin d’éviter un conflit d’intérêts au sein de votre organisation. Ou peut-être souhaitez-vous restreindre la communication et la collaboration entre certaines personnes au sein de votre organisation afin de protéger les informations internes. Microsoft 365 permet la communication et la collaboration entre les groupes et les organisations, de sorte qu’y a-t-il un moyen de restreindre la communication et la collaboration entre des groupes d’utilisateurs spécifiques lorsque cela est nécessaire ? Avec des barrières d’informations, vous pouvez le faire ! 
+Les services cloud de Microsoft incluent de puissantes fonctionnalités de communication et de collaboration. Toutefois, supposons que vous vouliez restreindre la communication et la collaboration entre deux groupes pour éviter qu’un conflit d’intérêts ne se produise dans votre organisation. Ou, peut-être souhaitez-vous restreindre la communication et la collaboration entre certaines personnes au sein de votre organisation afin de protéger les informations internes. Microsoft 365 permet la communication et la collaboration entre les groupes et les organisations. Existe-t-il donc un moyen de restreindre la communication et la collaboration entre des groupes d’utilisateurs spécifiques si nécessaire ? Avec les obstacles à l’information, vous pouvez !
 
-Les barrières d’informations sont désormais prises en charge dans Microsoft Teams, SharePoint Online et OneDrive entreprise. Si votre [abonnement](#required-licenses-and-permissions) inclut des barrières d’informations, un administrateur de conformité ou un administrateur des barrières de l’information peut définir des stratégies pour autoriser ou empêcher les communications entre les groupes d’utilisateurs dans Microsoft Teams. Les stratégies de barrière des informations peuvent être utilisées pour des situations comme celles-ci :
+Microsoft Teams, SharePoint Online et OneDrive Entreprise supportent les obstacles aux informations. En supposant que [votre](#required-licenses-and-permissions) abonnement inclut des obstacles à l’information, un administrateur de conformité ou un administrateur des obstacles à l’information peut définir des stratégies pour autoriser ou empêcher les communications entre des groupes d’utilisateurs dans Microsoft Teams. Les stratégies de obstacle à l’information peuvent être utilisées dans des situations comme celles-ci :
 
-- L’utilisateur dans le groupe de la journée du commerçant ne doit pas communiquer ou partager des fichiers avec l’équipe marketing
-- Le personnel financier travaillant sur les informations confidentielles de l’entreprise ne doit pas communiquer ou partager des fichiers avec certains groupes au sein de son organisation
-- Une équipe interne avec des éléments secrets commerciaux ne doit pas appeler ou converser en ligne avec des personnes appartenant à certains groupes au sein de leur organisation
-- Une équipe de recherche doit uniquement appeler ou converser en ligne avec une équipe de développement de produit
-
-> [!IMPORTANT]
-> Barrières relatives aux informations ***ne prend en charge que** les restrictions de deux façons. Les restrictions d’une seule manière, telles que marketing, peuvent communiquer avec les commerçants, mais les jours où le service marketing ne peut pas communiquer ne _sont pas pris en charge_* *.
-
-Pour tous ces exemples de scénarios (et plus), des stratégies de barrière des informations peuvent être définies pour empêcher ou autoriser les communications dans Microsoft Teams. De telles stratégies peuvent empêcher les personnes d’appeler ou de converser avec celles qu’ils ne doivent pas utiliser, ou d’autoriser les utilisateurs à communiquer uniquement avec des groupes spécifiques dans Microsoft Teams. Avec des stratégies de barrière des informations en vigueur, chaque fois que des utilisateurs couverts par ces stratégies tentent de communiquer avec d’autres personnes dans Microsoft Teams, des vérifications sont effectuées pour empêcher (ou autoriser) la communication (comme défini par les stratégies de barrière des informations). Pour en savoir plus sur l’expérience utilisateur avec des barrières d’informations, consultez la rubrique [barrières relatives aux informations dans Microsoft teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams).
+- L’utilisateur du jour ne doit pas communiquer ou partager des fichiers avec l’équipe marketing
+- Le personnel financier travaillant sur des informations confidentielles sur l’entreprise ne doit pas communiquer ou partager des fichiers avec certains groupes au sein de leur organisation
+- Une équipe interne avec du matériel de secret commercial ne doit pas appeler ou discuter en ligne avec des personnes de certains groupes au sein de leur organisation
+- Une équipe de recherche doit uniquement appeler ou discuter en ligne avec une équipe de développement de produits
 
 > [!IMPORTANT]
-> Actuellement, les barrières d’informations ne s’appliquent pas aux communications par courrier électronique. En outre, les barrières de l’information sont indépendantes des [limites de conformité](set-up-compliance-boundaries.md).<p>Avant de définir et d’appliquer des stratégies de barrière des informations, assurez-vous que votre organisation ne dispose pas des [stratégies de carnet d’adresses Exchange](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies) en vigueur. (Les barrières d’informations sont basées sur les stratégies de carnet d’adresses.) 
+> Obstacles à l’information ***prend uniquement en charge** les restrictions _ à double sens. Les restrictions à sens seul, telles que le marketing, peuvent communiquer avec les courtiers du jour, mais les opérateurs ne peuvent pas communiquer avec marketing _* n’est pas pris _en_ charge **.
 
-## <a name="what-happens-with-information-barriers"></a>Qu’en est-il des barrières de l’information ?
+Pour tous ces exemples de scénarios (et bien plus encore), des stratégies d’obstacle aux informations peuvent être définies pour empêcher ou autoriser les communications dans Microsoft Teams. De telles stratégies peuvent empêcher les utilisateurs d’appeler ou de discuter avec les personnes qu’ils ne devraient pas, ou permettre aux utilisateurs de communiquer uniquement avec des groupes spécifiques dans Microsoft Teams. Avec les stratégies de obstacle à l’information en vigueur, chaque fois que les utilisateurs couverts par ces stratégies tentent de communiquer avec d’autres personnes dans Microsoft Teams, des vérifications sont réalisées pour empêcher (ou autoriser) la communication (telle que définie par les stratégies de obstacle à l’information). Pour en savoir plus sur l’expérience utilisateur avec les obstacles à l’information, consultez les [obstacles aux informations dans Microsoft Teams.](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)
 
-Lorsque des stratégies de barrière des informations sont en place, les personnes qui ne doivent pas communiquer ou partager des fichiers avec d’autres utilisateurs spécifiques ne peuvent pas trouver, sélectionner, converser ou appeler ces utilisateurs. Grâce aux obstacles aux informations, des vérifications sont en place pour empêcher toute communication non autorisée.
+> [!IMPORTANT]
+> Actuellement, les obstacles à l’information ne s’appliquent pas aux communications par courrier électronique. En outre, les obstacles aux informations sont indépendants des [limites de conformité.](set-up-compliance-boundaries.md)<p> Avant de définir et d’appliquer des stratégies d’obstacle à l’information, assurez-vous que votre organisation n’a pas de stratégies de carnet d’adresses [Exchange](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies) en vigueur. (Les obstacles aux informations sont basés sur des stratégies de carnet d’adresses.)
 
-Initialement, les barrières relatives aux informations s’appliquent aux conversations et canaux Microsoft teams uniquement. Dans Microsoft Teams, les stratégies de cloisonnement de l’information déterminent et bloquent les types suivants de communications non autorisées :
+## <a name="what-happens-with-information-barriers"></a>Que se passe-t-il avec les obstacles à l’information ?
+
+Lorsque des stratégies de obstacle à l’information sont en place, les personnes qui ne doivent pas communiquer ou partager des fichiers avec d’autres utilisateurs spécifiques ne pourront pas trouver, sélectionner, discuter ou appeler ces utilisateurs. Grâce aux obstacles aux informations, des vérifications sont en place pour empêcher toute communication non autorisée.
+
+Initialement, les obstacles aux informations s’appliquent uniquement aux conversations et canaux Microsoft Teams. Dans Microsoft Teams, les stratégies de cloisonnement de l’information déterminent et bloquent les types suivants de communications non autorisées :
 
 - Recherche d’un utilisateur
 - Ajout d’un membre à une équipe
@@ -56,40 +56,40 @@ Initialement, les barrières relatives aux informations s’appliquent aux conve
 - Partage d’un écran
 - Passer un appel
 - Partage d’un fichier avec un autre utilisateur
-- Accès au fichier via le lien de partage 
+- Accès au fichier via un lien de partage
 
 Si les personnes impliquées sont incluses dans une stratégie de cloisonnement de l’information pour empêcher l’activité, elles ne pourront pas continuer. De plus, il est possible que les personnes incluses dans une stratégie de barrière des informations ne puissent pas communiquer avec d’autres personnes dans Microsoft Teams. Lorsque des personnes concernées par une stratégie de cloisonnement de l’information font partie de la même conversation de groupe ou d’équipe, il est possible qu’elles soient supprimées de ces sessions de conversation et que la communication avec le groupe ne soit pas autorisée.
 
-Pour en savoir plus sur l’expérience utilisateur avec des barrières d’informations, consultez la rubrique [barrières relatives aux informations dans Microsoft teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams).
+Pour en savoir plus sur l’expérience utilisateur avec les obstacles à l’information, consultez les [obstacles aux informations dans Microsoft Teams.](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)
 
 ## <a name="required-licenses-and-permissions"></a>Licences et autorisations requises
 
-Les barrières de l’information se dérouleront maintenant et sont incluses dans les abonnements, telles que :
+Les obstacles à l’information sont en cours de déploiement et sont inclus dans les abonnements, tels que :
 
-- Microsoft 365 E5/a5
-- Office 365 E5/a5
+- Microsoft 365 E5/A5
+- Office 365 E5/A5
 - Conformité avancée Office 365
-- Conformité Microsoft 365 E5/a5
-- Gestion des risques Microsoft 365 Insider
+- Conformité Microsoft 365 E5/A5
+- Microsoft 365 Insider Risk Management
 
-Pour plus d’informations, reportez-vous à [la rubrique Microsoft 365 Licensing Guidance for security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
+Pour plus d’informations, consultez les conseils de gestion des licences [Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)pour la sécurité & conformité.
 
-Pour [définir ou modifier des stratégies de barrière des informations](information-barriers-policies.md), vous devez disposer de l’un des rôles suivants :
+Pour [définir ou modifier des stratégies de obstacle aux](information-barriers-policies.md)informations, vous devez avoir l’un des rôles suivants :
 
 - Administrateur général Microsoft 365
 - Administrateur général Office 365
 - Administrateur de conformité
-- IB gestion de la conformité (il s’agit d’un nouveau rôle !)
+- Gestion de la conformité IB
 
-(Pour en savoir plus sur les rôles et les autorisations, consultez [la rubrique autorisations dans le centre de conformité des & de sécurité Office 365](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).)
+(Pour en savoir plus sur les rôles et les autorisations, voir Autorisations dans le Centre de sécurité [& conformité Office 365.)](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)
 
-Vous devez être familiarisé avec les applets de commande PowerShell pour définir, valider ou modifier des stratégies de barrière des informations. Bien que nous fournissons plusieurs exemples d’applets de commande PowerShell dans l' [article de procédure](information-barriers-policies.md), vous devez connaître les détails supplémentaires, tels que les paramètres, pour votre organisation.
+Vous devez être familiarisé avec les cmdlets PowerShell pour définir, valider ou modifier des stratégies d’obstacle aux informations. Bien que nous fournissions plusieurs exemples d’cmdlets PowerShell dans [l’article](information-barriers-policies.md), vous devez connaître d’autres détails, tels que des paramètres, pour votre organisation.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-- [En savoir plus sur les barrières d’informations dans Microsoft teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)
-- [Voir les attributs pouvant être utilisés pour les stratégies de barrière des informations](information-barriers-attributes.md)
-- [Définir des stratégies pour les barrières des informations](information-barriers-policies.md)
+- [En savoir plus sur les obstacles aux informations dans Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)
+- [Voir les attributs qui peuvent être utilisés pour les stratégies de obstacle à l’information](information-barriers-attributes.md)
+- [Définir des stratégies pour les obstacles à l’information](information-barriers-policies.md)
 - [Modifier (ou supprimer) des stratégies de cloisonnement de l’information](information-barriers-edit-segments-policies.md)
-- [En savoir plus sur les barrières relatives aux informations dans SharePoint Online](https://docs.microsoft.com/sharepoint/information-barriers)
-- [En savoir plus sur les barrières d’informations dans OneDrive entreprise](https://docs.microsoft.com/onedrive/information-barriers)
+- [En savoir plus sur les obstacles à l’information dans SharePoint Online](https://docs.microsoft.com/sharepoint/information-barriers)
+- [En savoir plus sur les obstacles aux informations dans OneDrive Entreprise](https://docs.microsoft.com/onedrive/information-barriers)

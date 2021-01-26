@@ -1,27 +1,29 @@
 ---
-title: 'Modifier une rubrique existante dans la rubrique expériences (aperçu) '
-description: Comment modifier une rubrique existante dans les expériences.
+title: 'Modifier une rubrique existante dans Expériences de rubrique (aperçu) '
+description: Modification d’une rubrique existante dans Expériences des rubriques.
 author: efrene
 ms.author: efrene
 manager: pamgreen
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-ms.collection: enabler-strategic
+ms.collection:
+- enabler-strategic
+- m365initiative-topics
 ms.service: ''
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 809d3936ed27275873f63526e7dfc8f91a15a0cc
-ms.sourcegitcommit: 18f95c4b7f74881b4a6ce71ad2ffa78a6ead5584
+ms.openlocfilehash: 79321ce7fc661fd95090c280eae0bcecd332221a
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "49731354"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49976292"
 ---
 # <a name="edit-an-existing-topic-preview"></a>Modifier une rubrique existante (aperçu)
 
 > [!Note] 
-> Le contenu de cet article est destiné à Project cortex privé preview. [En savoir plus sur le Projet cortex](https://aka.ms/projectcortex).
+> Le contenu de cet article est pour Project Private Preview. [En savoir plus sur le Projet cortex](https://aka.ms/projectcortex).
 
 </br>
 
@@ -29,36 +31,36 @@ ms.locfileid: "49731354"
 
 </br>
 
-Dans les expériences de rubrique, vous pouvez modifier une rubrique existante. Vous devrez peut-être procéder ainsi si vous voulez corriger ou ajouter des informations supplémentaires à une page de rubrique existante. 
+Dans expériences de rubrique, vous pouvez modifier une rubrique existante. Vous devrez peut-être le faire si vous souhaitez corriger ou ajouter des informations supplémentaires à une page de rubriques existante. 
 
 ## <a name="requirements"></a>Conditions requises
 
-Pour modifier une rubrique existante, vous devez :
-- Disposer d’une licence pour une rubrique.
-- Disposer des autorisations permettant de [**créer ou de modifier des rubriques**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions). Knowledge admins peut donner aux utilisateurs cette autorisation dans la rubrique Knowledge Network topic Permissions. 
+Pour modifier une rubrique existante, vous devez :
+- Avoir une licence Expériences de rubrique.
+- Avoir des autorisations [**sur Qui peut créer ou modifier des rubriques**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions). Les administrateurs du savoir peuvent accorder cette autorisation aux utilisateurs dans les paramètres d’autorisation de la rubrique Réseau de connaissances. 
 
 > [!Note] 
-> Les utilisateurs qui disposent de l’autorisation de gérer les rubriques dans le Centre des rubriques (gestionnaires de connaissances) disposent déjà des autorisations nécessaires pour créer et modifier des rubriques.
+> Les utilisateurs qui sont autorisés à gérer des rubriques dans le centre de rubriques (gestionnaires de connaissances) sont déjà autorisés à créer et modifier des rubriques.
 
 ## <a name="edit-a-topic-page"></a>Modifier une page de rubrique
 
-Si vous disposez des autorisations nécessaires pour modifier une page de rubrique, après avoir ouvert la rubrique, vous pourrez voir **modifier** en haut à droite de la page.
+Si vous êtes autorisé à modifier une page de rubrique, après l’avoir ouverte, vous pouvez voir **Modifier** en haut à droite de la page.
 
    ![Contrôle d’édition](../media/knowledge-management/topic-page-edit.png) </br> 
 
-1. Sur la page de la rubrique, sélectionnez **modifier**.
+1. Dans la page de rubrique, sélectionnez **Modifier.**
 
-2. Effectuez les modifications nécessaires sur la page. Cela inclut les mises à jour des champs suivants :
+2. A apporté les modifications dont vous avez besoin à la page. Cela inclut les mises à jour des champs suivants :
 
     -  Autres noms
     -  Description
-    -  Personnes en attente
+    -  Personnes épinglées
     -  Fichiers et pages
     -  Sites
 
-    Vous pouvez également ajouter des éléments statiques à la page, tels que du texte, des images ou des liens, en sélectionnant l’icône zone de dessin.
+    Vous pouvez également ajouter des éléments statiques à la page, tels que du texte, des images ou des liens, en sélectionnant l’icône de zone de dessin.
 
-3. Sélectionnez **republier** pour enregistrer vos modifications.
+3. Sélectionnez **Republish** pour enregistrer vos modifications.
 
 
 ## <a name="see-also"></a>Voir aussi

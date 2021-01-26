@@ -1,6 +1,6 @@
 ---
-title: Déployer la protection contre les menaces de sécurité réseau dans Microsoft 365
-description: Découvrez comment déployer les services de protection contre les menaces et les fonctionnalités de sécurité du réseau informatique dans Microsoft 365 E5.
+title: Déployer des fonctionnalités de protection contre les menaces dans Microsoft 365
+description: Découvrez comment déployer des services de protection contre les menaces et des fonctionnalités de sécurité dans Microsoft 365 E5.
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -15,18 +15,18 @@ ms.collection:
 - m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 79352aca2012e6615f41b19f4a77fc5cf125f4c4
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 2da2ace96b731baedea9142e211e9301db69000d
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926749"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49976571"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365"></a>Déployer des fonctionnalités de protection contre les menaces dans Microsoft 365
 
-[Les programmes](https://docs.microsoft.com/windows/security/threat-protection/intelligence/understanding-malware)malveillants et les cyberattaques sophistiquées, telles que les menaces sans [fichier,](https://docs.microsoft.com/windows/security/threat-protection/intelligence/fileless-threats)sont une occurrence courante. Les entreprises doivent se protéger elles-mêmes et leurs clients avec des fonctionnalités efficaces de sécurité du réseau informatique. De telles attaques peuvent entraîner des problèmes majeurs pour votre organisation, allant d’une perte de confiance à des difficultés financières, à des temps d’arrêt de l’activité et bien plus encore. La protection contre les menaces est importante, mais il peut être difficile de déterminer où concentrer le temps, les efforts et les ressources de votre organisation. 
+[Les programmes](https://docs.microsoft.com/windows/security/threat-protection/intelligence/understanding-malware)malveillants et les cyberattaques sophistiquées, telles que les menaces sans [fichier,](https://docs.microsoft.com/windows/security/threat-protection/intelligence/fileless-threats)sont une occurrence courante. Les entreprises doivent se protéger elles-mêmes et leurs clients avec des fonctionnalités de sécurité informatique efficaces. Les cyberattaques peuvent entraîner des problèmes majeurs pour votre organisation, allant d’une perte de confiance à des difficultés financières, à des temps d’arrêt de l’activité et bien plus encore. La protection contre les menaces est importante, mais il peut être difficile de déterminer où concentrer le temps, les efforts et les ressources de votre organisation. 
 
-Les solutions de sécurité Microsoft sont intégrées à nos produits et services. Les fonctionnalités d’automatisation et d’apprentissage automatique réduisent la charge sur vos équipes de sécurité pour vous assurer que les éléments qui vous sont nécessaires sont traités. Et la force des solutions de sécurité réseau Microsoft repose sur des nombres de signaux que nous traiterons tous les jours dans [notre graphique de sécurité intelligent.](https://cloud-platform-assets.azurewebsites.net/intelligent-security-graph) Microsoft 365 security solutions include [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection), a solution that brings together signals across your email, data, devices, and identities to paint a picture of advanced threats against your organization.
+Les solutions de sécurité Microsoft sont intégrées à nos produits et services. Les fonctionnalités d’automatisation et d’apprentissage automatique réduisent la charge sur vos équipes de sécurité pour vous assurer que les éléments qui vous sont nécessaires sont traités. Et la force des solutions de sécurité Microsoft repose sur des nombres de signaux que nous traiterons tous les jours dans [notre graphique de sécurité intelligent.](https://cloud-platform-assets.azurewebsites.net/intelligent-security-graph) Microsoft 365 security solutions include [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection), a solution that brings together signals across your email, data, devices, and identities to paint a picture of advanced threats against your organization.
 
 
 Regardez cette vidéo de présentation du processus de déploiement.
