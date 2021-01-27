@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir les stratégies de rétention qui s’appliquent à Microsoft Teams.
-ms.openlocfilehash: e3cd36fe6a7f075516d7778094ff5dd29480bfd9
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: ec5085b2d0a828300cb90fb260cb293eda4b9433
+ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794126"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49988180"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>En savoir plus sur la rétention dans Microsoft Teams
 
@@ -38,7 +38,10 @@ Pour les autres charges de travail, consultez:
 
 ## <a name="whats-included-for-retention-and-deletion"></a>Éléments composant la rétention et la suppression
 
-Les éléments suivants peuvent être conservés et supprimés à l’aide de stratégies de rétention pour les équipes : messages de conversation et messages de canal, y compris les images incorporées, les tableaux, les liens hypertexte et les liens vers les messages et fichiers d’autres équipes. Les messages de conversation incluent tous les noms des personnes dans la conversation, et les messages de canal incluent le nom de l’équipe et le titre du message (le cas indiqué). 
+Les éléments suivants de Teams peuvent être conservés et supprimés en utilisant les politiques de conservation pour les Teams : Messages de chat et messages de canal, y compris les images intégrées, les tableaux, les liens hypertextes et les liens vers d'autres messages et fichiers des équipes, et le [contenu des cartes](https://docs.microsoft.com/microsoftteams/platform/task-modules-and-cards/what-are-cards). Les messages de conversation incluent tous les noms des personnes dans la conversation, et les messages de canal incluent le nom de l’équipe et le titre du message (le cas indiqué). 
+
+> [!NOTE]
+> L'inclusion du contenu de la carte est un ajout récent et est actuellement proposée aux locataires. Pour plus d'informations, voir [les capacités de conformité de Microsoft 365 pour le contenu des cartes adaptatives par le biais d'applications dans Teams maintenant disponibles](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-365-compliance-capabilities-for-adaptive-card-content/ba-p/2095869).
 
 Les messages Teams dans les canaux privés ne sont pas inclus et les réactions des autres personnes sous la forme d’émoticônes ne sont pas incluses.
 

@@ -20,63 +20,55 @@ search.appverid:
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 ms.custom:
 - seo-marvel-apr2020
-description: Utilisez l’outil Recherche de contenu dans le Centre de conformité dans Office 365 ou Microsoft 365 pour rechercher du contenu dans différents services Office 365.
-ms.openlocfilehash: b2120ed131af48defb87af80e8b38c55dc0a0422
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+description: Utilisez l'outil de recherche de contenu dans le centre de conformité Microsoft pour rechercher du contenu dans différents services Microsoft 365.
+ms.openlocfilehash: b497c584dce02279e0d2a0e68a8f5ada415164e5
+ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166105"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49988208"
 ---
 # <a name="content-search"></a>Recherche de contenu
 
-Vous pouvez utiliser l’outil eDiscovery de la recherche de contenu dans le centre de conformité dans Office 365 ou Microsoft 365 pour rechercher des éléments sur place, tels que des messages électroniques, des documents et des conversations par messagerie instantanée dans votre organisation. Utilisez cet outil pour rechercher des éléments dans ces services :
+Vous pouvez utiliser l'outil de recherche de contenu eDiscovery dans le centre de conformité d'Office 365 ou de Microsoft 365 pour rechercher des éléments en place tels que des e-mails, des documents et des conversations de messagerie instantanée dans votre organisation. Utilisez cet outil pour rechercher des articles dans ces services :
   
-- Boîtes aux lettres et dossiers publics Exchange Online
-    
-- Sites SharePoint Online et comptes OneDrive Entreprise
-    
-- Conversations Skype Entreprise
-    
-- Microsoft Teams 
+- Echange de boîtes aux lettres en ligne
+
+- Sites SharePoint Online et comptes OneDrive entreprises
+
+- Microsoft Teams
 
 - Groupes Microsoft 365
 
-- Groupes Yammer 
-    
-Après avoir exécuté une recherche de contenu, le nombre d’emplacements de contenu et l’estimation du nombre de résultats de recherche sont affichés dans les statistiques de recherche. Vous pouvez également afficher rapidement des statistiques, telles que les emplacements de contenu qui ont le plus grand nombre d’éléments qui correspondent à la requête de recherche. Une fois que vous avez effectué une recherche, vous pouvez afficher un aperçu des résultats ou les exporter sur un ordinateur local.
+- Groupes Yammer
+
+- Conversations Skype Entreprise
+
+Après avoir lancé une recherche de contenu, le nombre d'emplacements de contenu et un nombre estimé de résultats de recherche sont affichés dans les statistiques de recherche. Vous pouvez également afficher rapidement des statistiques, telles que les emplacements de contenu qui ont le plus grand nombre d’éléments qui correspondent à la requête de recherche. Une fois que vous avez effectué une recherche, vous pouvez afficher un aperçu des résultats ou les exporter sur un ordinateur local.
 
 ## <a name="create-a-search"></a>Créer une recherche
 
 Pour accéder à la page **recherche de contenu** pour effectuer des recherches et afficher un aperçu et exporter les résultats de la recherche, un administrateur, un officier de conformité ou un gestionnaire d’eDiscovery doit être membre du groupe de rôles gestionnaire eDiscovery dans le Centre de conformité & de sécurité. Pour plus d'informations, voir [Attribution d'autorisations eDiscovery](assign-ediscovery-permissions.md).
   
-1. Allez à [https://protection.office.com](https://protection.office.com) et entrez vos adresse de courrier et mot de passe Microsoft.
+1. Allez à [https://compliance.microsoft.com](https://compliance.microsoft.com) et entrez vos adresse de courrier et mot de passe Microsoft.
+
+2. Dans le volet de navigation gauche du centre de conformité Microsoft 365, cliquez sur **Afficher tout** , puis sur **Recherche de contenu**.
     
-2. Cliquez sur**Recherche** \> **Recherche de contenu**.
-    
-3. Sur la page de**recherche**, cliquez sur la flèche en regard de ![ajouter une icône](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **nouvelle recherche**. 
-    
-    ![Liste déroulante Nouvelle recherche](../media/76b25861-55c5-4f50-9d48-9e2be2d0d078.png)
+3. Sur la **page de recherche** de contenu, cliquez **sur Nouvelle recherche**.
   
-    Vous pouvez choisir l’une des options suivantes :
+    Vous pouvez également choisir l'une des autres options de recherche :
     
-    - **Recherche guidée :** cette option démarre un assistant qui vous guide dans la création de la recherche. L’interface utilisateur permettant de sélectionner des emplacements de contenu et de créer la requête de recherche est identique à l’option **nouvelle recherche**. 
+    - **Recherche guidée :** cette option démarre un assistant qui vous guide dans la création de la recherche. L’interface utilisateur permettant de sélectionner des emplacements de contenu et de créer la requête de recherche est identique à l’option **nouvelle recherche**.
     
-    - **Nouvelle recherche:** cette option affiche une interface utilisateur mise à jour pour créer une recherche. Il s’agit de l’option par défaut si vous cliquez sur**nouvelle recherche**.
+    - **Recherche par liste d'identification :** Cette option vous permet de rechercher des messages électroniques spécifiques et d'autres éléments de la boîte aux lettres à l'aide d'une liste d'ID Exchange. Pour créer une recherche de liste d'identification, vous soumettez un fichier CSV (valeur séparée par des virgules) qui identifie les éléments spécifiques de la boîte aux lettres à rechercher. Pour obtenir des instructions, voir [Préparer un fichier CSV pour une recherche de liste d'identification](csv-file-for-an-id-list-content-search.md). 
     
-    - **Rechercher par liste d’ID** : cette option vous permet de rechercher des messages électroniques spécifiques et d’autres éléments de boîte aux lettres à l’aide d’une liste d’ID Exchange. Pour créer une recherche de liste d’ID (anciennement appelée recherche ciblée), vous devez envoyer un fichier de valeurs séparées par des virgules (CSV) qui identifie les éléments de boîte aux lettres spécifiques à rechercher. Pour consulter les instructions, voir[Préparer un fichier CSV pour une recherche de contenu de liste d’ID dans Office 365](csv-file-for-an-id-list-content-search.md).
-    
-    Le reste des étapes de cette procédure s’applique au nouveau flux de travail de recherche par défaut.
-    
-4. Cliquez sur **nouvelle recherche** dans la liste déroulante. 
-    
-5. Sous **requête de recherche**, spécifiez les éléments suivants :
+4. Sous **requête de recherche**, spécifiez les éléments suivants :
     
     ![Spécifier les mots clés, les conditions et les emplacements à rechercher](../media/1e6de9dd-eac9-4e2a-819d-9740cf6c9106.png)
   
-   - **Mots clés à Rechercher :** tapez une requête de recherche dans la zone**Mots clés**. Vous pouvez spécifier des mots clés, des propriétés de message telles que les dates d’envoi et de réception, ou des propriétés de document telles que les noms de fichier ou la date de dernière modification d’un document. Vous pouvez utiliser des requêtes plus complexes qui utilisent un opérateur booléen, tels que **ET**, **OU**, **PAS**, et **PRÈS**. Vous pouvez également rechercher des informations sensibles (des numéros de sécurité sociale, par exemple) dans des documents ou rechercher des documents qui ont été partagés en externe. Si vous laissez la zone du mot clé vide, tout le contenu se trouvant dans les emplacements de contenu spécifiés sera inclus dans les résultats de recherche.
-    
-      Vous pouvez également cliquer sur la case à cocher **Afficher la liste de mots clés **puis taper un mot clé dans chaque ligne. Si vous procédez ainsi, les mots clés sur chaque ligne sont connectés à l’aide d'un opérateur logique (**c:s**) qui présente les mêmes fonctionnalités que l’opérateur **OU** de la requête de recherche créée. 
+   - **Mots clés à Rechercher :** tapez une requête de recherche dans la zone **Mots clés**. Vous pouvez spécifier des mots clés, des propriétés de message telles que les dates d’envoi et de réception, ou des propriétés de document telles que les noms de fichier ou la date de dernière modification d’un document. Vous pouvez utiliser des requêtes plus complexes qui utilisent un opérateur booléen, tels que **ET**, **OU**, **PAS**, et **PRÈS**. Vous pouvez également rechercher des informations sensibles (des numéros de sécurité sociale, par exemple) dans des documents ou rechercher des documents qui ont été partagés en externe. Si vous laissez la zone du mot clé vide, tout le contenu se trouvant dans les emplacements de contenu spécifiés sera inclus dans les résultats de recherche.
+
+      Vous pouvez également cliquer sur la case à cocher **Afficher la liste de mots clés** puis taper un mot clé dans chaque ligne. Si vous procédez ainsi, les mots clés sur chaque ligne sont connectés à l’aide d'un opérateur logique (**c:s**) qui présente les mêmes fonctionnalités que l’opérateur **OU** de la requête de recherche créée. 
     
       Pourquoi utiliser la liste de mots clés ? Vous pouvez obtenir des statistiques qui indiquent le nombre d’éléments qui correspondent à chaque mot clé. Cela peut vous aider à identifier rapidement les mots clés les plus importants (et les moins). Vous pouvez également utiliser une expression de mot clé (entre parenthèses) dans une ligne. Pour plus d’informations sur les statistiques de recherche, voir [afficher les statistiques des mots clés pour les résultats de recherche de contenu](view-keyword-statistics-for-content-search.md).
 
@@ -98,17 +90,17 @@ Pour accéder à la page **recherche de contenu** pour effectuer des recherches 
        > [!NOTE]
        > Lorsque vous effectuez une recherche dans tous les emplacements de boîtes aux lettres ou uniquement des boîtes aux lettres spécifiques, les données d’autres applications Office 365 qui sont enregistrées dans les boîtes aux lettres d’utilisateur sont incluses lorsque vous exportez les résultats d’une recherche de contenu. Ces données ne sont pas incluses dans les résultats de recherche estimés et ne sont pas disponibles pour en aperçu. Elles sont incluses lorsque vous exportez et téléchargez les résultats de recherche. Pour plus d'informations, consultez la rubrique [Contenu stocké dans les boîtes aux lettres Exchange Online](what-is-stored-in-exo-mailbox.md).
    
-6. Une fois que vous avez configuré votre requête de recherche, cliquez sur**enregistrer & exécuter**.
+5. Une fois que vous avez configuré votre requête de recherche, cliquez sur **enregistrer & exécuter**.
     
-7. Dans la page **enregistrer la recherche**, tapez un nom pour la recherche, puis une description facultative qui vous permet d’identifier la recherche. Le nom de la recherche doit être unique dans toute votre organisation. 
+6. Dans la page **enregistrer la recherche**, tapez un nom pour la recherche, puis une description facultative qui vous permet d’identifier la recherche. Le nom de la recherche doit être unique dans toute votre organisation. 
     
-8. Cliquez ensuite sur **Enregistrer** pour démarrer la recherche. 
+7. Cliquez ensuite sur **Enregistrer** pour démarrer la recherche. 
     
     Une fois que vous avez enregistré et exécuté la recherche, les résultats renvoyés par la recherche sont affichés dans le volet résultats. Selon la manière dont le paramètre d’aperçu est configuré, les résultats de la recherche s’affichent ou vous devez cliquer sur **Aperçu des résultats** pour les afficher. Pour plus d’informations, voir la section suivante. 
     
 Pour accéder de nouveau à la recherche de contenu ou accéder aux recherches de contenu répertoriées sur la page **recherche de contenu**, sélectionnez la recherche, puis cliquez sur **Ouvrir**. 
   
-Pour effacer les résultats ou créer une autre recherche, cliquez sur ![ajouter une icône](../media/O365-MDM-CreatePolicy-AddIcon.gif)**nouvelle recherche**. 
+Pour effacer les résultats ou créer une autre recherche, cliquez sur ![ajouter une icône](../media/O365-MDM-CreatePolicy-AddIcon.gif)**nouvelle recherche**.
   
 ## <a name="preview-search-results"></a>Aperçu des résultats de la recherche
 
@@ -116,7 +108,7 @@ Il y a deux paramètres de configuration pour afficher un aperçu des résultats
   
 ![Paramètres aperçu des résultats de la recherche](../media/83519477-1c85-4442-8886-481f186fd758.png)
   
-1. **Aperçu des résultats automatique** : ce paramètre affiche les résultats de la recherche après l’exécution d’une recherche.
+1. **Prévisualisation automatique des résultats :** Ce paramètre affiche les résultats de la recherche après que vous ayez lancé une recherche.
     
 2. **Aperçu des résultats manuel** : ce paramètre affiche les espaces réservés dans le volet résultats de la recherche , et affiche le bouton **Aperçu des résultats** sur lequel vous devez cliquer pour afficher les résultats de la recherche. Il s’agit du paramètre par défaut. Il permet d’améliorer les performances de la recherche en n’affichant pas automatiquement les résultats de la recherche lorsque vous ouvrez une recherche existante. 
     
@@ -134,22 +126,21 @@ Vous pouvez également télécharger les statistiques de recherche et les statis
   
 Pour afficher les statistiques de recherche :
   
-1. Dans la **page recherche de contenu**, cliquez sur **Ouvrir**, puis cliquez sur la recherche pour laquelle vous voulez afficher les statistiques. 
-    
+1. Dans la **page recherche de contenu**, cliquez sur **Ouvrir**, puis cliquez sur la recherche pour laquelle vous voulez afficher les statistiques.
+  
 2. Sur la page volante, cliquez sur **Ouvrir la requête**. 
-    
+  
 3. Dans la liste déroulante **Résultats individuels**, cliquez sur **Statistiques de recherche**.
-    
+  
 4. Dans la liste déroulante **Type**, cliquez sur l’une des options suivantes selon les statistiques de recherche que vous voulez afficher :
-    
+  
     - **Résumé :** affiche des statistiques pour chaque type d’emplacement de contenu recherché. Ce contenu représente le nombre d’emplacements de contenu contenant des éléments qui correspondaient à la requête de recherche, ainsi que le nombre total et la taille des éléments de résultats de recherche. Il s’agit du paramètre par défaut.
 
     - **Requêtes :** affiche les statistiques relatives à la requête de recherche. Il s’agit du type d’emplacement de contenu auquel les statistiques de requête s’appliquent, qui fait partie de la requête de recherche pour laquelle les statistiques sont applicables (Notez que **Primary** indique la requête de recherche entière), le nombre d’emplacements de contenu qui contiennent des éléments qui correspondent à la requête de recherche, ainsi que le nombre total et la taille des éléments trouvés (à l’emplacement de contenu spécifié) qui correspondent à la requête de recherche. Les statistiques relatives aux éléments non indexés ( également appelés *éléments partiellement indexés*) s’affichent également. Toutefois, seuls les éléments partiellement indexés des boîtes aux lettres sont inclus dans les statistiques. Les éléments partiellement indexés de SharePoint et OneDrive ne sont pas inclus dans les statistiques.
 
     - **Emplacements principaux :** affiche des statistiques sur le nombre d’éléments qui correspondent à la requête de recherche dans chaque emplacement de contenu. Les 1 000 principaux emplacements sont affichés.
-    
+
 Pour plus d’informations sur les statistiques de recherche, voir [afficher les statistiques des mots clés pour les résultats de recherche de contenu](view-keyword-statistics-for-content-search.md).
-  
   
 ## <a name="export-search-results"></a>Exporter les résultats de la recherche
 
@@ -158,21 +149,20 @@ Après avoir effectué une recherche, vous pouvez exporter les résultats de la 
 Exporter les résultats de la recherche :
   
 1. Sur la page **Recherche de contenu**, cliquer sur la recherche dont les résultats doivent être exportés. 
-    
-2. Dans la page flyout, cliquez sur l’icône![exporter les résultats de la recherche](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png), ** plus**, puis cliquez sur **Exporter les résultats**. Vous pouvez également exporter un rapport des résultats de la recherche.
-    
-3. Complétez les sections sur la page de passage des **résultats à l’exportation**. Veillez à utiliser la barre de défilement pour afficher toutes les options d’exportation. 
-    
+
+2. Sur la page de présentation, cliquez sur **Exporter les résultats**. Vous pouvez également exporter un rapport des résultats de la recherche.
+
+3. Complétez les sections sur la page de passage des **résultats à l’exportation**. Veillez à utiliser la barre de défilement pour afficher toutes les options d’exportation.
+
 Pour obtenir des instructions détaillées et des conseils de dépannage, voir :
   
 - [Exporter les résultats de la recherche de contenu](export-search-results.md)
-    
-- [Exporter un rapport de recherche de contenu](export-a-content-search-report.md)
-    
-  
-## <a name="more-information-about-content-search"></a>Plus d'informations sur le service de recherche de contenu
 
-Pour plus d’informations sur les recherches de contenu, voir les sections suivantes.
+- [Exporter un rapport de recherche de contenu](export-a-content-search-report.md)
+
+## <a name="more-information-about-content-search"></a>Plus d'informations sur la recherche de contenu
+
+Voir les sections suivantes pour plus d'informations sur les recherches de contenu.
   
 [Limites de la recherche de contenu](#content-search-limits)
   
@@ -196,18 +186,19 @@ Pour plus d’informations sur les recherches de contenu, voir les sections suiv
   
 ### <a name="content-search-limits"></a>Limites de la recherche de contenu
 
-- Pour obtenir une description des limites appliquées à la fonctionnalité de recherche de contenu, consultez la rubrique [Limites de la recherche de contenu](limits-for-content-search.md).
-    
-- Microsoft collecte les informations de performance pour les recherches de contenu effectuées par toutes les organisations. Bien que la complexité de la requête de recherche puisse avoir un impact sur les heures de recherche, le facteur le plus important qui détermine la durée de la recherche est le nombre de boîtes aux lettres recherchées. Bien que Microsoft ne fournisse pas d’accord de niveau de service pour les horaires de recherche, le tableau suivant répertorie les durées de recherche moyennes d’une recherche de contenu sur la base du nombre de boîtes aux lettres incluses dans la recherche.
-    
-|**Nombre de boîtes aux lettres**|**Temps moyen de recherche**|
-|:-----|:-----|
-|100  <br/> |30 secondes  <br/> |
-|1 000  <br/> |45 secondes  <br/> |
-|10 000  <br/> |4 minutes  <br/> |
-|25 000  <br/> |10 minutes  <br/> |
-|50 000  <br/> |20 minutes  <br/> |
-|100 000  <br/> |25 minutes  <br/> |
+- Pour une description des limites qui sont appliquées à la recherche de contenu, [voir Limites pour la recherche de contenu](limits-for-content-search.md).
+  
+- Microsoft recueille des informations sur les performances pour les recherches de contenu effectuées par toutes les organisations. Bien que la complexité de la requête de recherche puisse avoir un impact sur les heures de recherche, le facteur le plus important qui détermine la durée de la recherche est le nombre de boîtes aux lettres recherchées. Bien que Microsoft ne fournisse pas d’accord de niveau de service pour les horaires de recherche, le tableau suivant répertorie les durées de recherche moyennes d’une recherche de contenu sur la base du nombre de boîtes aux lettres incluses dans la recherche.
+  
+  |**Nombre de boîtes aux lettres**|**Temps moyen de recherche**|
+  |:-----|:-----|
+  |100  <br/> |30 secondes  <br/> |
+  |1 000  <br/> |45 secondes  <br/> |
+  |10 000  <br/> |4 minutes  <br/> |
+  |25 000  <br/> |10 minutes  <br/> |
+  |50 000  <br/> |20 minutes  <br/> |
+  |100 000  <br/> |25 minutes  <br/> |
+  |||
   
 ### <a name="building-a-search-query"></a>Exécuter une requête de recherche
 
@@ -243,7 +234,7 @@ Gardez les points suivants à l’esprit lorsque vous utilisez la liste de mots 
   
 ### <a name="searching-microsoft-teams-and-microsoft-365-groups"></a>Recherche dans Microsoft Teams et les Groupes Microsoft 365
 
-Vous pouvez effectuer une recherche dans la boîte aux lettres associée à un groupe Microsoft 365 ou Microsoft Team. Étant donné que Microsoft Teams est basé sur les Groupes Microsoft 365, la recherche est similaire. Dans les deux cas, la recherche porte uniquement sur la boîte aux lettres de groupe ou d’équipe. Les boîtes aux lettres des membres du groupe ou de l’équipe ne sont pas recherchées. Pour effectuer une recherche, vous devez les ajouter spécifiquement à la recherche.
+Vous pouvez rechercher la boîte aux lettres associée à une équipe Microsoft ou à un groupe Microsoft 365. Étant donné que Microsoft Teams est basé sur les Groupes Microsoft 365, la recherche est similaire. Dans les deux cas, la recherche porte uniquement sur la boîte aux lettres de groupe ou d’équipe. Les boîtes aux lettres des membres du groupe ou de l’équipe ne sont pas recherchées. Pour effectuer une recherche, vous devez les ajouter spécifiquement à la recherche.
   
 Gardez les points suivants à l’esprit lors de la recherche de contenu dans les Groupes Microsoft Teams et Microsoft 365.
   
@@ -251,7 +242,7 @@ Gardez les points suivants à l’esprit lors de la recherche de contenu dans le
 
 - Le contenu provenant de canaux privés est stocké dans la boîte aux lettres de chaque utilisateur, et non dans celle de l’équipe. Pour rechercher du contenu dans des canaux privés, voir [Découverte automatique des canaux privés](https://docs.microsoft.com/microsoftteams/ediscovery-investigation#ediscovery-of-private-channels).
     
-- Exécutez l’applet de commande **Get-UnifiedGroup** dans Exchange Online pour afficher les propriétés d’une équipe ou d’un groupe Microsoft 365. Il s’agit d’un bon moyen pour obtenir l’URL du site associé à une équipe ou à un groupe. Par exemple, la commande suivante affiche les propriétés sélectionnées d’un groupe Microsoft 365 nommé Senior Leadership Team : 
+- Lancez le **cmdlet Get-UnifiedGroup** dans Exchange Online pour afficher les propriétés d'une équipe ou d'un groupe Microsoft 365. C'est un bon moyen d'obtenir l'URL du site qui est associé à une équipe ou à un groupe. Par exemple, la commande suivante affiche les propriétés sélectionnées pour un groupe Microsoft 365 nommé Senior Leadership Team : 
     
   ```text
   Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl
@@ -264,12 +255,12 @@ Gardez les points suivants à l’esprit lors de la recherche de contenu dans le
     > [!NOTE]
     > Pour exécuter l'applet de commande **Get-UnifiedGroup**, vous devez avoir le rôle de destinataires en affichage seul dans Exchange Online ou être membre d’un groupe de rôles affecté du rôle de destinataires en affichage seul. 
   
-- Lorsque vous effectuez une recherche dans la boîte aux lettres d’un utilisateur, aucun des Groupes Microsoft 365 ou équipe dont l’utilisateur est membre n’est inclus dans la recherche. De même, lorsque vous effectuez une recherche dans une équipe ou un groupe Microsoft 365, seules les boîtes aux lettres de groupe et les sites de groupe que vous spécifiez sont recherchés. Les boîtes aux lettres et les comptes OneDrive Entreprise des membres du groupe ne sont pas recherchés, sauf si vous les ajoutez explicitement à la recherche.
-    
-- Pour obtenir la liste des membres d’une équipe ou d’un groupe Microsoft 365, vous pouvez afficher les propriétés sur la page **Accueil \> Groupes** dans le Centre d’administration Microsoft 365. Vous pouvez également exécuter la commande suivante dans Exchange Online PowerShell : 
-    
+- Lorsque vous effectuez une recherche dans la boîte aux lettres d’un utilisateur, aucun des Groupes Microsoft 365 ou équipe dont l’utilisateur est membre n’est inclus dans la recherche. De même, lorsque vous effectuez une recherche sur une équipe ou un groupe Microsoft 365, seules la boîte aux lettres et le site du groupe que vous spécifiez sont recherchés. Les boîtes aux lettres et les comptes OneDrive entreprises des membres du groupe ne sont pas recherchés, sauf si vous les ajoutez explicitement à la recherche.
+
+- Pour obtenir la liste des membres d'une équipe ou d'un groupe Microsoft 365, vous pouvez consulter les propriétés sur la **page\> Groupes** d'accueil dans le centre d'administration de Microsoft 365. Vous pouvez également exécuter la commande suivante dans Exchange Online PowerShell : 
+
   ```powershell
-  Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress 
+  Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress
   ```
 
     > [!NOTE]
@@ -280,14 +271,14 @@ Gardez les points suivants à l’esprit lors de la recherche de contenu dans le
 - De même, les conversations faisant partie de la liste de conversations dans Teams sont stockées dans la boîte aux lettres Exchange Online des utilisateurs qui participent à la conversation. Les fichiers partagés par un utilisateur dans les conversations Chat sont stockés dans le compte OneDrive Entreprise de l’utilisateur qui partage le fichier. Par conséquent, vous devez ajouter les boîtes aux lettres d’utilisateur individuelles et les comptes OneDrive Entreprise comme emplacements de contenu pour rechercher des conversations et des fichiers dans la liste de conversations.
     
     > [!NOTE]
-    > Dans un déploiement Exchange hybride, les utilisateurs disposant d’une boîte aux lettres locale peuvent participer aux conversations qui font partie de la liste de Conversations dans Teams. Dans ce cas, le contenu de ces conversations peut également faire l’objet d’une recherche, car il est enregistré dans une zone de stockage basée sur le Cloud (appelée *boîte aux lettres basée sur le Cloud pour les utilisateurs locaux*) pour les utilisateurs disposant d’une boîte aux lettres locale. Pour plus d’informations, voir[recherche de boîtes aux lettres dans le Cloud pour les utilisateurs locaux dans Office 365](search-cloud-based-mailboxes-for-on-premises-users.md).
+    > Dans un déploiement Exchange hybride, les utilisateurs disposant d’une boîte aux lettres locale peuvent participer aux conversations qui font partie de la liste de Conversations dans Teams. Dans ce cas, le contenu de ces conversations peut également faire l’objet d’une recherche, car il est enregistré dans une zone de stockage basée sur le Cloud (appelée *boîte aux lettres basée sur le Cloud pour les utilisateurs locaux*) pour les utilisateurs disposant d’une boîte aux lettres locale. Pour plus d'informations, voir [Recherche de données de conversation des équipes pour les utilisateurs sur site](search-cloud-based-mailboxes-for-on-premises-users.md).
   
-- Toutes les équipes ou canaux d’équipe contiennent un site wiki pour la prise de notes et la collaboration. Le contenu wiki est automatiquement enregistré dans un fichier au format .mht. Ce fichier est stocké dans la bibliothèque de documents wiki Teams sur le site SharePoint de l’équipe. Vous pouvez utiliser l’outil recherche de contenu pour effectuer une recherche sur le site wiki en spécifiant le site SharePoint de l’équipe comme emplacement de contenu à rechercher. 
-    
+- Toutes les équipes ou canaux d’équipe contiennent un site wiki pour la prise de notes et la collaboration. Le contenu wiki est automatiquement enregistré dans un fichier au format .mht. Ce fichier est stocké dans la bibliothèque de documents wiki Teams sur le site SharePoint de l’équipe. Vous pouvez utiliser l’outil recherche de contenu pour effectuer une recherche sur le site wiki en spécifiant le site SharePoint de l’équipe comme emplacement de contenu à rechercher.
+
     > [!NOTE]
-    > La fonctionnalité de recherche d’une équipe ou d’un canal sur le site wiki (lorsque vous effectuez une recherche sur le site SharePoint de l’équipe) a été publiée le 22 juin 2017. Les pages wiki qui ont été enregistrées ou mises à jour à cette date ou après peuvent être recherchées. Les pages wiki enregistrées ou mises à jour avant cette date ne sont pas disponibles pour la recherche. 
- 
-- Les informations de synthèse pour les réunions et les appels dans un canal Teams sont également stockées dans les boîtes aux lettres des utilisateurs qui composent la réunion ou l’appel. Cela signifie que vous pouvez utiliser la recherche de contenu pour rechercher ces enregistrements de synthèse. Ces informations de résumé sont les suivantes : 
+    > La fonctionnalité de recherche d’une équipe ou d’un canal sur le site wiki (lorsque vous effectuez une recherche sur le site SharePoint de l’équipe) a été publiée le 22 juin 2017. Les pages wiki qui ont été enregistrées ou mises à jour à cette date ou après peuvent être recherchées. Les pages wiki enregistrées ou mises à jour avant cette date ne sont pas disponibles pour la recherche.
+
+- Les informations de synthèse pour les réunions et les appels dans un canal Teams sont également stockées dans les boîtes aux lettres des utilisateurs qui composent la réunion ou l’appel. Cela signifie que vous pouvez utiliser la recherche de contenu pour rechercher ces enregistrements de synthèse. Ces informations de résumé sont les suivantes :
   
   - Date, heure de début, heure de fin et durée d’une réunion ou d’un appel
 
@@ -301,27 +292,46 @@ Gardez les points suivants à l’esprit lors de la recherche de contenu dans le
 
   La possibilité d’effectuer une recherche dans les enregistrements de synthèse des réunions et des appels peut prendre jusqu’à 8 heures.
 
-  Dans les résultats de la recherche, les résumés de la réunion sont identifiés en tant que **réunion** dans le**champ type** et les résumés d’appels sont identifiés en tant qu’**appel**. De plus, les conversations qui font partie d’une chaîne de Teams et de conversations 1xN sont identifiées en tant que **messages instantanés** dans le **champ type**.
+  Dans les résultats de la recherche, les résumés de la réunion sont identifiés en tant que **réunion** dans le **champ type** et les résumés d’appels sont identifiés en tant qu’**appel**. De plus, les conversations qui font partie d’une chaîne de Teams et de conversations 1xN sont identifiées en tant que **messages instantanés** dans le **champ type**.
   
   ![Les réunions, les appels et les conversations 1xN de Teams sont identifiés dans le champ type.](../media/O365-ContentSearch-Teams-MessageKind.png)
 
    Pour plus d’informations, voir [Microsoft Teams lance l’eDiscovery pour les appels et les réunions](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-teams-launches-ediscovery-for-calling-and-meetings/ba-p/210947).
 
-- Vous pouvez utiliser la propriété**type de courrier**ou la condition de recherche **type de message** pour rechercher spécifiquement du contenu dans Teams. 
+- Le contenu des cartes généré par les applications des canaux Teams, des chats 1:1 et des chats 1xN est stocké dans les boîtes aux lettres et peut être recherché. Une *carte* est un conteneur de l'assurance-chômage pour de petits morceaux de contenu. Les cartes peuvent avoir de multiples propriétés et pièces jointes, et peuvent inclure des boutons qui peuvent déclencher des actions de la carte. Pour plus d'informations, voir [Cartes](https://docs.microsoft.com/microsoftteams/platform/task-modules-and-cards/what-are-cards) 
+
+  Comme pour le contenu des autres Teams, le lieu de stockage du contenu de la carte est basé sur l'endroit où la carte a été utilisée. Le contenu des cartes utilisées dans un canal Teams est stocké dans la boîte aux lettres du groupe Teams. Le contenu des cartes pour les chats 1:1 et 1xN est stocké dans les boîtes aux lettres des participants au conversation.
+
+  Pour rechercher le contenu d'une carte, vous pouvez utiliser les`kind:microsoftteams` conditions`itemclass:IPM.SkypeTeams.Message` de recherche. Lors de l'examen des résultats de recherche, le contenu de la carte généré par les robots dans un canal Teams a la propriété **Sender/Author** email comme `<appname>@teams.microsoft.com` , où `appname`est le nom de l'application qui a généré le contenu de la carte. Si le contenu de la carte a été généré par un utilisateur, la valeur **d'Expéditeur/Autorisateur** permet d'identifier l'utilisateur.
+
+  Lorsque vous consultez le contenu de la carte dans les résultats de la recherche de contenu, le contenu apparaît comme une pièce jointe au message. La pièce jointe est nommée `appname.html`, où`appname` se trouve le nom de l'application qui a généré le contenu de la carte. Les captures d'écran suivantes montrent comment le contenu des cartes (pour une application nommée Asana) apparaît dans les équipes et dans les résultats d'une recherche.
+
+  **Contenu de la carte dans Teams**
+
+  ![Contenu de la carte dans le message de la chaîne Teams](../media/CardContentTeams.png)
+
+  **Contenu de la carte dans les résultats de recherche**
   
-  - Pour utiliser la propriété**Type** dans le cadre de la requête de recherche par mot clé, dans la zone **Mots clés** d'une requête de recherche, tapez`kind:microsoftteams`.
+  ![Même contenu de carte dans les résultats d'une recherche de contenu](../media/CardContentEdiscoverySearchResults.png)
+
+  > [!NOTE]
+  > Pour afficher les images du contenu de la carte dans les résultats de recherche à ce moment (comme les cases cochées dans la capture d'écran précédente), vous devez être connecté à Teams (danshttps://teams.microsoft.com) un onglet différent dans la même session de navigateur que celle que vous utilisez pour voir les résultats de recherche. Dans le cas contraire, des emplacements pour les images sont affichés.
+
+- Vous pouvez utiliser la propriété **type de courrier** ou la condition de recherche **type de message** pour rechercher spécifiquement du contenu dans Teams.
+  
+  - Pour utiliser la propriété **Type** dans le cadre de la requête de recherche par mot clé, dans la zone **Mots clés** d'une requête de recherche, tapez`kind:microsoftteams`.
 
     ![Utilisez type:microsoftteams dans la zone Mots clés](../media/O365-ContentSearch-Teams-Keywords.png)
   
-  - Pour utiliser une condition de recherche, ajoutez la condition **type de message** et utilisez la valeur`microsoftteams`. 
+  - Pour utiliser une condition de recherche, ajoutez la condition **type de message** et utilisez la valeur`microsoftteams`.
 
     ![Utilisez la condition type de message avec la valeur microsoftteams.](../media/O365-ContentSearch-Teams-MessageKindCondition.png)
 
-Les conditions sont logiquement connectées à la requête de mot clé par l’opérateur **et**. Cela signifie qu’un élément doit correspondre à la requête de mot clé et à la condition de recherche à renvoyer dans les résultats de la recherche. Pour obtenir plus d’informations, reportez-vous à la rubrique «Guide des conditions d’utilisation» dans[Requêtes par mots-clés et conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md#guidelines-for-using-conditions).
+   Les conditions sont logiquement connectées à la requête de mot clé par l’opérateur **et**. Cela signifie qu’un élément doit correspondre à la requête de mot clé et à la condition de recherche à renvoyer dans les résultats de la recherche. Pour obtenir plus d’informations, reportez-vous à la rubrique «Guide des conditions d’utilisation» dans[Requêtes par mots-clés et conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md#guidelines-for-using-conditions).
   
 ### <a name="searching-yammer-groups"></a>Recherche de groupes Yammer
 
-Vous pouvez utiliser la propriété d’e-mail **ItemClass** ou la condition de recherche **Type ** pour rechercher spécifiquement les éléments de conversation dans les groupes Yammer.
+Vous pouvez utiliser la propriété d’e-mail **ItemClass** ou la condition de recherche **Type** pour rechercher spécifiquement les éléments de conversation dans les groupes Yammer.
 
   - Pour utiliser la propriété **ItemClass** dans le cadre d'une requête de recherche par mot-clé, dans la zone **Mots-clés** d'une requête de recherche, vous pouvez saisir une (ou toutes) des paires property:value suivantes :
 
@@ -345,21 +355,21 @@ Vous pouvez effectuer une recherche dans les boîtes aux lettres inactives dans 
 Voici quelques éléments à prendre en considération lors de la recherche de boîtes aux lettres inactives.
 
 - Si une recherche de contenu existante inclut une boîte aux lettres utilisateur et que cette boîte aux lettres devient ensuite inactive, la recherche de contenu se poursuit dans la boîte aux lettres inactive lorsque vous relancez cette recherche.
-    
+
 - Un utilisateur peut parfois avoir une boîte aux lettres active et une boîte aux lettres inactive portant la même adresse SMTP. Dans ce cas, la recherche porte sur la boîte aux lettres que vous sélectionnez en tant qu’emplacement à des fins de recherche de contenu. En d’autres termes, si vous ajoutez la boîte aux lettres d’un utilisateur à une recherche, vous ne pouvez pas supposer que les boîtes aux lettres actives et inactives sont recherchées. Seules les boîtes aux lettres que vous ajoutez explicitement à la recherche font l’objet d’une recherche.
-    
+
 - Vous pouvez utiliser le centre de sécurité et de conformité PowerShell pour créer une recherche de contenu pour effectuer une recherche dans une boîte aux lettres inactive. Pour ce faire, vous devez préalablement ajouter un point (. ) à l’adresse de messagerie du propriétaire de boîte aux lettres inactive. Par exemple, la commande suivante crée une recherche de contenu qui recherche dans une boîte aux lettres inactive l’adresse de courrier pavelb@contoso.onmicrosoft.com:
 
-   ``` 
+   ```powershell
    New-ComplianceSearch -Name InactiveMailboxSearch -ExchangeLocation .pavelb@contoso.onmicrosoft.com -AllowNotFoundExchangeLocationsEnabled $true
    ```
 
 - Nous vous déconseillons vivement d’utiliser une boîte aux lettres active et une boîte aux lettres inactive portant la même adresse SMTP. Si vous devez réutiliser l’adresse SMTP attribuée à une boîte aux lettres inactive, nous vous recommandons de récupérer la boîte aux lettres inactive ou de restaurer le contenu d’une boîte aux lettres inactive dans une boîte aux lettres active (ou l’archive d’une boîte aux lettres active), puis de supprimer la boîte aux lettres inactive. Pour plus d'informations, consultez l'une des rubriques suivantes :
-    
+
   - [Récupérer une boîte aux lettres inactive dans Office 365](recover-an-inactive-mailbox.md)
-    
+
   - [Restaurer une boîte aux lettres inactive dans Office 365](restore-an-inactive-mailbox.md)
-    
+
   - [Supprimer une boîte aux lettres inactive dans Office 365](delete-an-inactive-mailbox.md)
 
 ### <a name="searching-disconnected-or-de-licensed-mailboxes"></a>Recherche de boîtes aux lettres déconnectées ou sans licence
@@ -391,28 +401,27 @@ Vous pouvez afficher un aperçu des types de fichiers pris en charge dans le vol
 De plus, les types de conteneur de fichier suivants sont pris en charge. Vous pouvez afficher la liste des fichiers dans le conteneur dans le volet de visualisation.
   
 - .zip
-    
+
 - .gzip
-    
+
 ### <a name="partially-indexed-items"></a>Éléments partiellement indexés
 
-- Comme indiqué précédemment, les éléments partiellement indexés dans les boîtes aux lettres sont inclus dans les résultats de recherche estimés. Les éléments partiellement indexés de SharePoint et OneDrive ne sont pas inclus dans les résultats de recherche estimés. 
-    
+- Comme indiqué précédemment, les éléments partiellement indexés dans les boîtes aux lettres sont inclus dans les résultats de recherche estimés. Les éléments partiellement indexés de SharePoint et OneDrive ne sont pas inclus dans les résultats de recherche estimés.
+
 - Si un élément partiellement non indexé correspond à la requête de la recherche (car d’autres propriétés de document ou de message répondent aux critères de recherche), il ne sera pas inclus dans l’estimation du nombre d’éléments non indexés. Si un élément partiellement indexé est exclu des critères de recherche, il n’est pas inclus dans le nombre estimé d’éléments non indexés. Si vous souhaitez en savoir plus, veuillez consulter l’article [Éléments partiellement indexés dans la recherche de contenu dans Office 365](partially-indexed-items-in-content-search.md).
 
 ### <a name="searching-for-content-in-a-sharepoint-multi-geo-environment"></a>Recherche de contenu dans un environnement SharePoint multigéographique
 
 Si une personne dotée du rôle Gestionnaire eDiscovery doit rechercher du contenu dans SharePoint et OneDrive à travers différentes régions dans un [environnement SharePoint multigéographique](https://go.microsoft.com/fwlink/?linkid=860840), vous devez effectuer les opérations suivantes :
-   
+
 1. Créez un compte d’utilisateur distinct pour chaque position géographique de satellite où le Gestionnaire eDiscovery doit effectuer une recherche. Pour rechercher du contenu dans les sites dans cette position géographique, le Gestionnaire eDiscovery doit se connecter au compte que vous avez créé pour cette position, puis exécuter une recherche de contenu.
 
 2. Créez un filtre d’autorisation de recherche pour chaque position géographique de satellite (et le compte d’utilisateur correspondant) où le Gestionnaire eDiscovery doit effectuer une recherche. Chacun de ces filtres d’autorisations de recherche limite l’étendue de la recherche de contenu à une position géographique spécifique lorsque le Gestionnaire eDiscovery est connecté au compte d’utilisateur associé à cette position.
- 
+
 > [!TIP]
-> Vous n’êtes pas obligé d’utiliser cette stratégie lorsque vous utilisez l'outil de recherche dans [Advanced eDiscovery](overview-ediscovery-20.md). En effet, lorsque vous effectuez des recherches dans les sites SharePoint et les comptes OneDrive dans Advanced eDiscovery, elles s’effectuent sur tous les centres de données. Vous devez uniquement utiliser cette stratégie de comptes d’utilisateurs et de filtres d’autorisations propres aux zones de recherche lorsque vous utilisez l’outil de recherche de contenu et que vous exécutez des recherches associées à des [cas eDiscovery](ediscovery-cases.md). 
+> Vous n’êtes pas obligé d’utiliser cette stratégie lorsque vous utilisez l'outil de recherche dans [Advanced eDiscovery](overview-ediscovery-20.md). En effet, lorsque vous effectuez des recherches dans les sites SharePoint et les comptes OneDrive dans Advanced eDiscovery, elles s’effectuent sur tous les centres de données. Vous devez uniquement utiliser cette stratégie de comptes d’utilisateurs et de filtres d’autorisations propres aux zones de recherche lorsque vous utilisez l’outil de recherche de contenu et que vous exécutez des recherches associées à des [cas eDiscovery](ediscovery-cases.md).
 
-
-Prenons l’exemple d’un gestionnaire eDiscovery devant rechercher du contenu SharePoint et OneDrive dans des emplacements satellites positionnés en Amérique du Nord, en Europe et en Asie Pacifique. La première étape consiste à créer trois comptes d’utilisateurs : un pour chaque emplacement. L’étape suivante consiste à créer trois filtres d’autorisations de recherche, un pour chaque emplacement *et* compte d’utilisateur correspondant. Voici quelques exemples des trois filtres d’autorisations de recherche pour ce scénario. Dans chacun de ces exemples, le paramètre **Région** spécifie la position du centre de données SharePoint pour cette zone géographique et le paramètre **Utilisateurs** spécifie le compte d’utilisateur correspondant. 
+Prenons l’exemple d’un gestionnaire eDiscovery devant rechercher du contenu SharePoint et OneDrive dans des emplacements satellites positionnés en Amérique du Nord, en Europe et en Asie Pacifique. La première étape consiste à créer trois comptes d’utilisateurs : un pour chaque emplacement. L’étape suivante consiste à créer trois filtres d’autorisations de recherche, un pour chaque emplacement *et* compte d’utilisateur correspondant. Voici quelques exemples des trois filtres d’autorisations de recherche pour ce scénario. Dans chacun de ces exemples, le paramètre **Région** spécifie la position du centre de données SharePoint pour cette zone géographique et le paramètre **Utilisateurs** spécifie le compte d’utilisateur correspondant.
 
 **Amérique du Nord**
 
@@ -436,6 +445,6 @@ Lorsque vous utilisez des filtres d’autorisation de recherche pour rechercher 
 
 - Le paramètre **Région** dirige les recherches vers la position de satellite spécifiée. La recherche ne retourne aucun résultat lorsqu’un Gestionnaire eDiscovery recherche uniquement des sites SharePoint et OneDrive en dehors de la position spécifiée dans le filtre des autorisations de recherche. 
 
-- Le paramètre **Région** ne contrôle pas les recherches dans les boîtes aux lettres Exchange. Lorsque vous effectuez des recherches dans des boîtes aux lettres, elles s’appliquent à tous les centres de données. 
-    
+- Le paramètre **Région** ne contrôle pas les recherches dans les boîtes aux lettres Exchange. Lorsque vous effectuez des recherches dans des boîtes aux lettres, elles s’appliquent à tous les centres de données.
+
 Si vous souhaitez en savoir plus sur l’utilisation des filtres d’autorisation de recherche dans un environnement multigéographique, veuillez consulter la section « Recherche et exportation de contenu dans des environnements multigéographiques » de l’article [Configurer les limites de conformité pour les enquêtes eDiscovery](set-up-compliance-boundaries.md#searching-and-exporting-content-in-multi-geo-environments).
