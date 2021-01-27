@@ -7,7 +7,6 @@ author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -17,12 +16,14 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez comment définir des stratégies de pièces jointes sécurisées pour protéger votre organisation contre les fichiers malveillants dans le courrier électronique.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8dfdcc0779fb8b8438ee7a63d2f0e180cbb12ac9
-ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 5a26d214fe99d0053bf178d7d85a0b526d64f887
+ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49780507"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49988079"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Configurer des stratégies de pièces jointes sécurisées dans Microsoft Defender pour Office 365
 
@@ -51,7 +52,7 @@ La différence entre ces deux éléments n’est pas évidente lorsque vous gér
 Dans Exchange Online PowerShell ou EOP PowerShell autonome, vous gérez la stratégie et la règle séparément. Pour plus d’informations, voir la section Utiliser Exchange Online PowerShell ou EOP PowerShell autonome pour configurer des stratégies de pièces [jointes sécurisées](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies) plus loin dans cet article.
 
 > [!NOTE]
-> Dans la zone des paramètres globaux des paramètres de pièces jointes sécurisées, vous configurez les fonctionnalités qui ne dépendent pas des stratégies de pièces jointes sécurisées. Pour obtenir des instructions, voir Activer LAP pour [SharePoint, OneDrive et Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md) et documents sécurisés dans Microsoft [365 E5.](safe-docs.md)
+> Dans la zone des paramètres globaux des paramètres de pièces jointes sécurisées, vous configurez les fonctionnalités qui ne dépendent pas des stratégies de pièces jointes sécurisées. Pour obtenir des instructions, voir Activer les pièces [jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md) et les documents sécurisés dans Microsoft [365 E5.](safe-docs.md)
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
@@ -102,11 +103,11 @@ La création d’une stratégie de pièces jointes sécurisées personnalisée d
 
      Ces valeurs sont expliquées dans les paramètres de stratégie de pièces [jointes sécurisées.](atp-safe-attachments.md#safe-attachments-policy-settings)
 
-   - Envoyez la pièce jointe à l’adresse de messagerie suivante : Pour les valeurs d’action **Bloquer,** Surveiller ou **Remplacer,** vous pouvez sélectionner Activer la **redirection** pour envoyer des messages contenant des pièces jointes contenant des programmes malveillants à l’adresse de messagerie interne ou externe spécifiée pour analyse et examen.
+   - Envoyez la pièce jointe à l’adresse de messagerie suivante : Pour les valeurs d’action **Bloquer,** Surveiller ou **Remplacer,** vous pouvez sélectionner Activer la **redirection** pour envoyer des messages contenant des pièces jointes de programmes malveillants à l’adresse de messagerie interne ou externe spécifiée pour analyse et examen.
 
      La recommandation pour les paramètres de stratégie Standard et Strict consiste à activer la redirection. Pour plus d’informations, [voir Paramètres des pièces jointes sécurisées.](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-settings)
 
-   - Appliquez la sélection ci-dessus si l’analyse des programmes **malveillants** pour les pièces jointes arrive à arriver ou si une erreur se produit : l’action spécifiée par la réponse de programmes malveillants inconnus de pièces **jointes sécurisées** est appliquée aux messages même lorsque l’analyse des pièces jointes sécurisées ne peut pas se terminer. Sélectionnez toujours cette option si vous sélectionnez **Redirection activée.** Dans le cas contraire, les messages peuvent être perdus.
+   - Appliquez la sélection ci-dessus si l’analyse des programmes **malveillants** pour les pièces jointes arrive à arriver ou si une erreur se produit : l’action spécifiée par la réponse de programmes malveillants inconnus de pièces **jointes sécurisées** est appliquée aux messages même lorsque l’analyse des pièces jointes sécurisées ne peut pas se terminer. Si vous avez sélectionné cette option, sélectionnez toujours **Redirection activée.** Dans le cas contraire, les messages peuvent être perdus.
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
@@ -130,7 +131,7 @@ La création d’une stratégie de pièces jointes sécurisées personnalisée d
 
    Pour ajouter une condition supplémentaire, cliquez sur **Ajouter une condition** et sélectionnez une valeur restante sous Appliqué **si**.
 
-   Pour ajouter des exceptions, cliquez **sur Ajouter une condition** et sélectionnez une exception sous Sauf **si**. Les paramètres et le comportement sont exactement comme les conditions.
+   Pour ajouter des exceptions, cliquez sur **Ajouter une condition** et sélectionnez une exception sous Sauf **si**. Les paramètres et le comportement sont exactement comme les conditions.
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
@@ -174,7 +175,7 @@ Par défaut, les stratégies de pièces jointes sécurisées ont une priorité q
 
 Pour plus d’informations sur l’ordre de priorité et l’évaluation et l’application de plusieurs stratégies, consultez [Ordre et la priorité de la protection de la messagerie](how-policies-and-protections-are-combined.md).
 
-Les stratégies de pièces jointes sécurisées sont affichées dans l’ordre de traitement (la première stratégie a la valeur de **priorité** 0).
+Les stratégies de pièces jointes sécurisées sont affichées dans  l’ordre de traitement (la première stratégie a la valeur priority 0).
 
 **Remarque**: dans le Centre de sécurité & conformité, vous ne pouvez modifier la priorité de la stratégie de pièces jointes sécurisées qu’une fois que vous l’avez créé. Dans PowerShell, vous pouvez remplacer la priorité par défaut lorsque vous créez la règle de pièce jointe sécurisée (ce qui peut affecter la priorité des règles existantes).
 
@@ -190,7 +191,7 @@ Pour modifier la priorité d’une stratégie, déplacez-la vers le haut ou vers
 
    - La stratégie pièces jointes sécurisées dont la valeur **de** priorité est la plus faible **(par** exemple, 3 ) ne dispose que du bouton **Augmenter** la priorité.
 
-   - Si vous avez au moins trois stratégies de pièces jointes sécurisées,  les stratégies entre les valeurs de priorité les plus élevées et les plus faibles ont les boutons Augmenter la priorité et Diminuer la priorité disponibles. 
+   - Si vous avez au moins trois stratégies de pièces jointes sécurisées,  les stratégies entre les valeurs de priorité les plus élevées et les plus faibles disposent des boutons Augmenter la priorité et Diminuer la priorité. 
 
 4. Cliquez **sur Augmenter la priorité** ou Diminuer la **priorité** pour modifier la **valeur** Priorité.
 
@@ -229,7 +230,7 @@ La création d’une stratégie de pièces jointes sécurisées dans PowerShell 
   - Créez la stratégie comme _désactivée_ ( activée sur la `$false` cmdlet **New-SafeAttachmentRule).**
   - Définissez la priorité de la stratégie lors de la création (_Priorité_ ) sur la _\<Number\>_ cmdlet **New-SafeAttachmentRule).**
 
-- Une nouvelle stratégie de pièces jointes sécurisées que vous créez dans PowerShell n’est pas visible dans le Centre de sécurité & conformité tant que vous n’avez pas attribué la stratégie à une règle de pièce jointe sécurisée.
+- Une nouvelle stratégie de pièces jointes sécurisées que vous créez dans PowerShell n’est pas visible dans le Centre de sécurité & conformité tant que vous n’avez pas attribué la stratégie à une règle de pièces jointes sécurisées.
 
 #### <a name="step-1-use-powershell-to-create-a-safe-attachment-policy"></a>Étape 1 : Utiliser PowerShell pour créer une stratégie de pièces jointes sécurisées
 
@@ -450,4 +451,4 @@ Pour vérifier que vous avez correctement créé, modifié ou supprimé des stra
   Get-SafeAttachmentRule -Identity "<Name>" | Format-List
   ```
 
-Pour vérifier que les pièces jointes sécurisées analysent les messages, consultez les rapports Defender pour Office 365 disponibles. Pour plus d’informations, voir Afficher les rapports pour Defender pour [Office 365](view-reports-for-atp.md) et Utiliser l’Explorateur dans le Centre de sécurité [& conformité.](threat-explorer.md)
+Pour vérifier que les pièces jointes sécurisées analysent les messages, vérifiez les rapports Defender pour Office 365 disponibles. Pour plus d’informations, voir Afficher les rapports pour Defender pour [Office 365](view-reports-for-atp.md) et Utiliser l’Explorateur dans le Centre de sécurité [& conformité.](threat-explorer.md)

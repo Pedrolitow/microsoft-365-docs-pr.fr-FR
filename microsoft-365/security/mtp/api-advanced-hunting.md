@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 4213773c3305c28f0913013d8f7634c083811f52
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 99f39a10de6231a72220c5c2a90ec915b1a4e44a
+ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932081"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49988115"
 ---
 # <a name="microsoft-365-defender-advanced-hunting-api"></a>API de recherche avancée Microsoft 365 Defender
 
@@ -46,11 +46,14 @@ Les conditions suivantes concernent toutes les requêtes.
 
 1. Les requêtes explorent et retournent des données des 30 derniers jours.
 2. Les résultats peuvent renvoyer jusqu’à 100 000 lignes.
-3. Vous pouvez effectuer jusqu’à 10 appels par minute et par client.
+3. Vous pouvez effectuer jusqu’à 15 appels par minute et par client.
 4. Vous avez 10 minutes d’exécution par heure et par client.
-5. Vous avez quatre heures d’exécution par client.
+5. Vous avez quatre heures d’exécution par jour et par client.
 6. Si une seule demande s’exécute pendant plus de 10 minutes, elle prend du temps et retourne une erreur.
-7. Un code de réponse HTTP indique que vous avez atteint un quota, soit par nombre de demandes envoyées, soit par temps `429` d’exécution alloué. Le corps de la réponse inclut la durée jusqu’à ce que le quota que vous avez atteint soit réinitialisé.
+7. Un code de réponse HTTP indique que vous avez atteint un quota, soit par nombre de demandes envoyées, soit par temps `429` d’exécution alloué. Lisez le corps de la réponse pour comprendre la limite que vous avez atteinte. 
+
+> [!NOTE]
+> Tous les quotas répertoriés ci-dessus (par exemple, 15 appels par minute) sont de taille par client. Ces quotas sont au minimum.
 
 ## <a name="permissions"></a>Autorisations
 
@@ -77,7 +80,7 @@ POST https://api.security.microsoft.com/api/advancedhunting/run
 
 En-tête | Valeur
 -|-
-Authorization | Remarque {token} du porteur **: obligatoire**
+Autorisation | Remarque {token} du porteur **: obligatoire**
 Content-Type | application/json
 
 ## <a name="request-body"></a>Corps de la demande
@@ -96,7 +99,7 @@ L’objet de réponse contient trois propriétés de niveau supérieur :
 
 1. Statistiques : dictionnaire des statistiques de performances des requêtes.
 2. Schéma : schéma de la réponse, liste des Name-Type pour chaque colonne.
-3. Résultats : liste des événements de recherche avancés.
+3. Résultats : liste des événements de recherche avancée.
 
 ## <a name="example"></a>Exemple
 

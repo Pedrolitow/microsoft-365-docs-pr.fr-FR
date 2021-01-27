@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -16,12 +15,14 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Les administrateurs peuvent apprendre à configurer une boîte aux lettres pour collecter le courrier indésirable et le hameçonnage signalés par les utilisateurs.
-ms.openlocfilehash: 8f9da620643d46bf21a18eccc2047ad4361832cc
-ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 9759bbae1dc49b80859198e11e6f85383cdf2f66
+ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49865060"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49988127"
 ---
 # <a name="user-submissions-policy"></a>Stratégie de soumissions d’utilisateurs
 
@@ -41,7 +42,7 @@ Dans les organisations Microsoft 365 spécifiant des boîtes aux lettres Exchang
   > [!NOTE]
   > Si la création de rapports a été désactivée dans Outlook sur le [web,](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)l’activation des soumissions d’utilisateurs ici remplace ce paramètre et permet aux utilisateurs de signaler à nouveau les messages dans Outlook sur le web.
 
-Vous pouvez également configurer des outils de rapports de messages tiers pour transmettre des messages à la boîte aux lettres que vous spécifiez.
+Vous pouvez également configurer des outils de rapport de messages tiers pour transmettre des messages à la boîte aux lettres que vous spécifiez.
 
 La livraison des messages signalés par l’utilisateur à une boîte aux lettres personnalisée au lieu de directement à Microsoft permet à vos administrateurs de signaler de manière sélective et manuelle des messages à Microsoft à l’aide de la soumission [d’administrateur.](admin-submission.md)
 
@@ -51,9 +52,9 @@ Utilisez les articles suivants pour configurer les conditions préalables requis
 
 - Ignorez le filtrage du courrier indésirable sur la boîte aux lettres personnalisée en créant une règle de flux de messagerie Exchange pour définir le niveau de confiance du courrier indésirable. Voir [Utiliser le EAC](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) pour créer une règle de flux de messagerie qui définit le SCL d’un message pour définir le SCL sur **-1**.
 
-- Désactiver l’analyse des pièces jointes pour les programmes malveillants dans la boîte aux lettres personnalisée. Utilisez configurer des stratégies de pièces jointes sécurisées dans Defender pour [Office 365](set-up-atp-safe-attachments-policies.md) pour créer une stratégie de pièces jointes sécurisées avec le paramètre **Off** for **Safe Attachments unknown malware response**.
+- Désactiver l’analyse des pièces jointes pour les programmes malveillants dans la boîte aux lettres personnalisée. Utilisez configurer des stratégies de pièces jointes sécurisées dans Defender pour [Office 365](set-up-atp-safe-attachments-policies.md) pour créer une stratégie de pièces jointes sécurisées avec le paramètre **Off** pour les pièces **jointes sécurisées réponse anti-programme** malveillant inconnue.
 
-- Désactiver l’analyse des URL sur les messages dans la boîte aux lettres personnalisée. Utilisez configurer des stratégies de liens sûrs dans Defender pour [Office 365](set-up-atp-safe-links-policies.md) pour créer une stratégie de liens sécurisés avec le paramètre **Off** pour sélectionner l’action pour les URL potentiellement malveillantes inconnues dans les **messages.**
+- Désactiver l’analyse des URL sur les messages dans la boîte aux lettres personnalisée. Utilisez configurer des stratégies de liens sécurisés dans Defender pour [Office 365](set-up-atp-safe-links-policies.md) pour créer une stratégie de liens sécurisés avec le paramètre **« Sélectionner** l’action pour les URL potentiellement malveillantes **inconnues** dans les messages ».
 
 - Créez une stratégie anti-programme malveillant pour désactiver la purge automatique sans heure de programmes malveillants. Voir Utiliser le Centre de sécurité & conformité pour créer des stratégies [anti-programme](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies) malveillant afin de définir la **purge** automatique sans heure de programmes **malveillants sur Hors service.**
 
@@ -65,12 +66,21 @@ Une fois que vous avez vérifié que votre boîte aux lettres répond à toutes 
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Vous ouvrez le Centre de sécurité et conformité sur <https://protection.office.com/>. Pour aller directement à la page **soumissions de l’utilisateur,** utilisez <https://protection.office.com/userSubmissionsReportMessage> .
+- Vous ouvrez le Centre de sécurité et conformité sur <https://protection.office.com/>. Pour aller directement à la page **Soumissions de l’utilisateur,** utilisez <https://protection.office.com/userSubmissionsReportMessage> .
 
 - Pour modifier la configuration des soumissions d’utilisateurs, vous devez être membre de l’un des groupes de rôles suivants :
 
   - **Gestion de l’organisation** ou **Administrateur de sécurité** dans le [Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
   - **Gestion de l’organisation** [dans Exchange Online.](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)
+
+- Vous devez accéder à Exchange Online PowerShell. Si le compte que vous essayez d’utiliser n’a pas accès à Exchange Online PowerShell, vous recevrez une erreur qui ressemble à ceci lorsque vous spécifiez la boîte aux lettres de soumission :
+
+  > Spécifier une adresse de messagerie dans votre domaine
+
+  Pour plus d’informations sur l’activation ou la désactivation de l’accès à Exchange Online PowerShell, consultez les rubriques suivantes :
+
+  - [Activer ou désactiver l’accès à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell) 
+  - [Règles d’accès client dans Exchange Online](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
 
 ## <a name="use-the-security--compliance-center-to-configure-the-user-submissions-mailbox"></a>Utiliser le Centre de sécurité & conformité pour configurer la boîte aux lettres d’envoi des utilisateurs
 
@@ -88,7 +98,7 @@ Une fois que vous avez vérifié que votre boîte aux lettres répond à toutes 
 
         > Votre courrier électronique sera envoyé tel qu’il est à Microsoft pour analyse. Certains e-mails peuvent contenir des informations personnelles ou sensibles.
 
-      - **Après l’envoi**: cliquez ![ sur Développer ](../../media/scc-expand-icon.png) l’icône . Dans **les** zones De titre et de **confirmation,** entrez le texte descriptif que les utilisateurs voient après qu’ils ont publié un message à l’aide du module de signalement du message ou du module de signalement du hameçonnage. Vous pouvez utiliser la variable %type% pour inclure le type d’envoi.
+      - **Après l’envoi**: cliquez ![ sur Développer ](../../media/scc-expand-icon.png) l’icône . Dans  les zones De titre et de **confirmation,** entrez le texte descriptif que les utilisateurs voient après qu’ils ont publié un message à l’aide du add-in Signaler un message ou du module de signalement du hameçonnage. Vous pouvez utiliser la variable %type% pour inclure le type d’envoi.
 
       Lorsque vous avez terminé, cliquez sur **Enregistrer**. Pour effacer ces valeurs, cliquez sur **Restaurer** sur la page **Soumissions de l’utilisateur.**
 
@@ -124,7 +134,7 @@ où SafetyAPIAction est l’une des valeurs d’un nombre integer suivantes :
 
 - 1 : Courrier indésirable
 - 2 : ne pas être indésirable
-- 3 : Hameçonnage
+- 3 : hameçonnage
 
 Dans l’exemple suivant :
 
