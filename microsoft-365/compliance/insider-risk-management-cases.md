@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: feabf3083b0ff1d182884c66fc2b2fd890275a0a
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: c128f9e0c5754305e8b4d785c6a88931bc3ea976
+ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976211"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49988170"
 ---
 # <a name="insider-risk-management-cases"></a>Cas de gestion des risques internes
 
@@ -35,7 +35,7 @@ Après avoir ouvert une enquête sur les détails d’un cas, vous pouvez prendr
 Le tableau de bord Cas **de** gestion des risques internes vous permet d’afficher les cas et d’agir sur ces cas. Chaque widget de rapport du tableau de bord affiche des informations pour les 30 derniers jours.
 
 - **Cas actifs**: nombre total de cas actifs en cours d’examen.
-- **Cas au cours des 30 derniers** jours : nombre total de cas créés, triés par *état Actif* *et* Fermé.
+- **Cas au cours des 30 derniers** jours : nombre total de cas créés, triés par *état actif* *et* fermé.
 - **Statistiques**: durée moyenne des cas actifs, répertoriée en heures, jours ou mois.
 
 La file d’attente répertorie tous les cas actifs et fermés pour votre organisation, en plus de l’état actuel des attributs de cas suivants :
@@ -81,10 +81,10 @@ L’onglet **Vue d’ensemble de cas** résume l'activité d'alerte et l'histori
 Le **volet Détails du cas** est disponible sous tous les onglets de gestion des cas et récapitule les détails des cas pour les analystes et enquêteurs de risque. Il inclut les domaines suivants :
 
 - **Nom de** cas : nom du cas, préfixé d’un numéro de séquence de cas créé automatiquement et du nom du risque associé au modèle de stratégie qui correspond à la première alerte confirmée. 
-- **État de** la cas : l’état actuel du cas, *actif* ou *fermé*.
+- **État de** la cas : l’état actuel du cas, *actif* ou *fermé.*
 - **Score de risque de l’utilisateur**: niveau de risque calculé actuel de l’utilisateur pour le cas. Ce score est calculé toutes les 24 heures et utilise les scores de risque d’alerte de toutes les alertes actives associées à l’utilisateur.
 - **Alertes confirmées**: liste des alertes pour l’utilisateur confirmées pour le cas.
-- **Contenu connexe**: liste de contenu, triée par types et sources de contenu. Par exemple, pour le contenu d’une alerte de cas dans SharePoint Online, il est possible de voir la liste des noms de dossiers ou de fichiers qui sont associés à l'activité à risque pour les alertes dans le cas.
+- **Contenu connexe**: liste de contenu, triée par sources et types de contenu. Par exemple, pour le contenu d’une alerte de cas dans SharePoint Online, il est possible de voir la liste des noms de dossiers ou de fichiers qui sont associés à l'activité à risque pour les alertes dans le cas.
 
 ![Détails du cas de gestion des risques internes](../media/insider-risk-case-details.png)
 
@@ -155,45 +155,43 @@ Pour ajouter une note à un cas :
 1. Dans le Centre de conformité [Microsoft 365,](https://compliance.microsoft.com)allez à **La** gestion des risques internes et sélectionnez **l’onglet Cas.**
 2. Sélectionnez un cas, puis **l’onglet Notes** de cas.
 3. Sélectionnez **Ajouter une note de cas.**
-4. Dans la **boîte de dialogue Ajouter une note** de cas, tapez votre note pour le cas. Sélectionnez **Enregistrer** pour ajouter la note au cas ou **sélectionnez Annuler** fermer sans enregistrer la note dans le cas.
+4. Dans la **boîte de dialogue Ajouter une note** de cas, tapez votre note pour le cas. Sélectionnez **Enregistrer** pour ajouter la note au cas ou sélectionnez **Annuler** fermer sans enregistrer la note dans le cas.
 
 ### <a name="contributors"></a>Contributeurs
 
-L’onglet **Contributeurs** dans le cas est l’endroit où les analystes et les enquêteurs peuvent ajouter d’autres réviseurs au cas. Par défaut, tous les utilisateurs **affectés** aux rôles **Analystes** de gestion des risques internes et Enquêteurs de la gestion des risques internes sont répertoriés en tant que contributeurs pour chaque cas actif et fermé.
+L’onglet **Contributeurs** dans le cas est l’endroit où les analystes et les enquêteurs peuvent ajouter d’autres réviseurs au cas. Par défaut, tous les utilisateurs affectés aux rôles **Analystes** de gestion des risques internes et Enquêteurs de la gestion des risques internes sont **répertoriés** en tant que contributeurs pour chaque cas actif et fermé. Seuls les **utilisateurs affectés au** rôle Enquêteurs de gestion des risques internes sont autorisés à afficher des fichiers et des messages dans l’Explorateur de contenu.
 
-Toutes les situations de gestion des risques internes doivent être gérées avec des contrôles d’accès appropriés en place pour assurer la confidentialité et l’intégrité de l’examen. Pour assurer le contrôle d’accès des cas, l’un des deux types d’accès est attribué aux utilisateurs :
+L’accès temporaire à un cas peut être accordé en ajoutant un utilisateur en tant que collaborateur. Les collaborateurs ont tout le contrôle de gestion des cas sur le cas spécifique, sauf :
 
-- **Accès permanent**: l’accès permanent est automatiquement accordé aux utilisateurs ayant les rôles **Analystes** de gestion des risques internes et **Enquêteurs** de gestion des risques internes lorsque le cas est créé à partir d’une alerte. L'accès permanent permet un contrôle total du cas pendant toute sa durée de vie et donne la possibilité d'ajouter d'autres contributeurs au cas.
-- **Accès temporaire :** l’accès temporaire est accordé uniquement aux utilisateurs par les collaborateurs qui ont un accès permanent au cas. En règle générale, ce niveau d’accès est accordé à l’utilisateur qui doit ajouter des notes à un cas. Les collaborateurs disposant d’un accès temporaire ont accès à tous les contrôles de gestion des cas, sauf :
-    - Autorisation de confirmer ou d’ignorer les alertes
-    - Autorisation de modifier les contributeurs pour les cas
-    - Autorisation d’afficher les fichiers et messages dans l’Explorateur de contenu
+- Autorisation de confirmer ou d’ignorer les alertes
+- Autorisation de modifier les contributeurs pour les cas
+- Autorisation d’afficher les fichiers et messages dans l’Explorateur de contenu
 
 Pour ajouter un collaborateur à un cas :
 
 1. Dans le Centre [de conformité Microsoft 365,](https://compliance.microsoft.com)allez à **La** gestion des risques internes et sélectionnez **l’onglet Cas.**
 2. Sélectionnez un cas, puis **l’onglet Collaborateurs.**
 3. Sélectionnez **Ajouter un collaborateur.**
-4. Dans la **boîte de** dialogue Ajouter un collaborateur, commencez à taper le nom de l’utilisateur que vous souhaitez ajouter, puis sélectionnez l’utilisateur dans la liste d’utilisateurs suggérée. Cette liste est générée à partir d’Azure Active Directory de votre abonnement client.
+4. Dans la **boîte de dialogue** Ajouter un collaborateur, commencez à taper le nom de l’utilisateur que vous souhaitez ajouter, puis sélectionnez l’utilisateur dans la liste d’utilisateurs suggérée. Cette liste est générée à partir d’Azure Active Directory de votre abonnement client.
 5. Sélectionnez **Ajouter** pour ajouter l’utilisateur en tant que collaborateur ou sélectionnez **Annuler** fermer la boîte de dialogue sans ajouter l’utilisateur en tant que collaborateur.
 
 ## <a name="case-actions"></a>Actions de cas
 
-Les analystes et enquêteurs de risque peuvent prendre des mesures sur un cas dans l’une des méthodes suivantes, en fonction de la gravité du cas, de l’historique des risques de l’utilisateur et des recommandations en matière de risques de votre organisation. Dans certains cas, vous devrez peut-être transformer un cas en examen d’utilisateur ou de données pour collaborer avec d’autres zones de votre organisation et approfondir les activités à risque. La gestion des risques internes est étroitement intégrée aux autres solutions de conformité Microsoft 365 pour vous aider à gérer la résolution de bout en bout.
+Les analystes et enquêteurs de risque peuvent agir sur un cas dans l’une des méthodes suivantes, selon la gravité du cas, l’historique des risques de l’utilisateur et les directives de risque de votre organisation. Dans certains cas, vous devrez peut-être transformer un cas en examen d’utilisateur ou de données pour collaborer avec d’autres zones de votre organisation et approfondir les activités à risque. La gestion des risques internes est étroitement intégrée aux autres solutions de conformité Microsoft 365 pour vous aider à gérer la résolution de bout en bout.
 
 ### <a name="send-email-notice"></a>Envoyer une notification par courrier électronique
 
-Dans la plupart des cas, les actions de l’utilisateur qui créent des alertes de risque internes sont accidentelles ou accidentelles. L’envoi d’une notification de rappel à l’utilisateur par courrier électronique est une méthode efficace pour documenter la révision et l’action des cas, et permet de rappeler aux utilisateurs les stratégies d’entreprise ou de les faire pointer vers une formation d’actualisation. Les avis sont générés à partir de [modèles d’avis](insider-risk-management-notices.md) que vous créez pour votre infrastructure de gestion des risques internes.
+Dans la plupart des cas, les actions de l’utilisateur qui créent des alertes de risque internes sont accidentelles ou accidentelles. L’envoi d’une notification de rappel à l’utilisateur par courrier électronique est une méthode efficace pour documenter la révision et l’action des cas, et une méthode pour rappeler aux utilisateurs les stratégies d’entreprise ou les faire pointer vers une formation d’actualisation. Les avis sont générés à partir de [modèles d’avis](insider-risk-management-notices.md) que vous créez pour votre infrastructure de gestion des risques internes.
 
 Il est important de se souvenir que l’envoi d’une notification par courrier électronique à un utilisateur *_*_* ne résout pas le cas comme _Closed*. Dans certains cas, vous pouvez laisser un cas ouvert après avoir envoyé une notification à un utilisateur pour rechercher d’autres activités à risque sans ouvrir de nouveau cas. Si vous voulez résoudre un cas après l’envoi d’une notification, vous devez sélectionner le **Résoudre un cas** sous la forme d’une étape de suivi après l’envoi d’une notification.
 
 Pour envoyer une notification à l’utilisateur affecté à un cas :
 
-1. Dans le Centre de conformité [Microsoft 365,](https://compliance.microsoft.com)allez à **La** gestion des risques internes et sélectionnez **l’onglet Cas.**
-2. Sélectionnez un cas, puis sélectionnez le bouton Envoyer une notification par **courrier** électronique dans la barre d’outils d’action de cas.
+1. Dans le Centre [de conformité Microsoft 365,](https://compliance.microsoft.com)allez à **La** gestion des risques internes et sélectionnez **l’onglet Cas.**
+2. Sélectionnez un cas, puis sélectionnez le bouton Envoyer une notification par **courrier** électronique dans la barre d’outils de l’action de cas.
 3. Dans la boîte de dialogue Envoyer  un **avis** par courrier électronique, sélectionnez le contrôle de liste de listes des modèles d’avis pour sélectionner le modèle d’avis pour l’avis. Cette sélection pré-remplit les autres champs de l’avis.
 4. Examinez les champs d’avis et mettez à jour le cas échéant. Les valeurs entrées ici remplacent les valeurs du modèle.
-5. Sélectionnez **Envoyer** pour envoyer l’avis à l’utilisateur ou **sélectionnez Annuler** fermer la boîte de dialogue sans l’envoyer à l’utilisateur. Toutes les notifications envoyées sont ajoutées à la file d’attente des notes de cas dans le tableau **de bord Des notes de** cas.
+5. Sélectionnez **Envoyer** pour envoyer l’avis à l’utilisateur ou **sélectionnez Annuler** fermer la boîte de dialogue sans envoyer l’avis à l’utilisateur. Toutes les notifications envoyées sont ajoutées à la file d’attente des notes de cas dans le tableau **de bord des notes de** cas.
 
 ### <a name="escalate-for-investigation"></a>Faire remonter le dossier pour enquête
 
@@ -201,9 +199,9 @@ Faire passer le cas pour l’examen de l’utilisateur dans les situations où u
 
 Pour faire recaler un cas à un examen par un utilisateur :
 
-1. Dans le Centre de conformité [Microsoft 365,](https://compliance.microsoft.com)allez à **La** gestion des risques internes et sélectionnez **l’onglet Cas.**
-2. Sélectionnez un cas, puis sélectionnez le bouton Escalader pour **l’examen** dans la barre d’outils d’action de cas.
-3. Dans la **boîte de dialogue Escalader pour l’examen,** entrez un nom pour le nouvel examen utilisateur. Si nécessaire, entrez des notes sur le cas et sélectionnez **Escalate**.
+1. Dans le Centre [de conformité Microsoft 365,](https://compliance.microsoft.com)allez à **La** gestion des risques internes et sélectionnez **l’onglet Cas.**
+2. Sélectionnez un cas, puis sélectionnez le bouton Escalader pour **l’examen** dans la barre d’outils de l’action de cas.
+3. Dans la boîte **de dialogue Escalader pour l’examen,** entrez un nom pour le nouvel examen utilisateur. Si nécessaire, entrez des notes sur le cas et sélectionnez **Escalate**.
 4. Examinez les champs d’avis et mettez à jour le cas échéant. Les valeurs entrées ici remplacent les valeurs du modèle.
 5. Sélectionnez **Confirmer** pour créer le cas d’enquête de l’utilisateur ou **sélectionnez Annuler** pour fermer la boîte de dialogue sans créer de nouveau cas d’enquête utilisateur.
 
@@ -230,7 +228,7 @@ Pour en savoir plus sur les flux Power Automate pour la gestion des risques inte
 
 Lorsque l’intégration de Microsoft Teams pour la gestion des risques internes est activée dans les paramètres, une équipe Microsoft Teams est automatiquement créée chaque fois qu’une alerte est confirmée et qu’un cas est créé. Les enquêteurs et analystes de risque peuvent rapidement ouvrir Microsoft Teams et accéder directement à l’équipe pour un cas en sélectionnant Afficher l’équipe **Microsoft Teams** dans la barre d’outils d’action du cas.
 
-Pour les cas ouverts avant d’activer l’intégration de Microsoft Team, les enquêteurs et analystes de risque peuvent créer une équipe Microsoft Teams pour un cas en sélectionnant Créer une équipe **Microsoft Teams** dans la barre d’outils d’action du cas.
+Pour les cas ouverts avant d’activer l’intégration de Microsoft Team, les enquêteurs et analystes de risque peuvent créer une équipe Microsoft Teams pour un cas en sélectionnant Créer une équipe **Microsoft Teams** dans la barre d’outils d’action de cas.
 
 Lorsqu’un cas est résolu, l’équipe Microsoft associée est automatiquement archivée (masquée et en lecture seule).
 
@@ -245,11 +243,11 @@ Le partage d’un cas de gestion des risques internes permet aux enquêteurs et 
 
 Les options de partage suivantes sont disponibles :
 
-- **ServiceNow :** après avoir configuré le connecteur Microsoft 365 ServiceNow pour votre organisation Microsoft 365, vous pouvez facilement partager un lien vers le cas, ouvrir un incident ou demander une modification avec votre organisation ServiceNow. Pour partager le cas avec ServiceNow, **sélectionnez Share**  >  **ServiceNow** dans l’action de cas. L’intégration de ServiceNow avec la prise en charge de la gestion des risques internes inclut les informations et actions de cas suivantes :
+- **ServiceNow :** après avoir configuré le connecteur Microsoft 365 ServiceNow pour votre organisation Microsoft 365, vous pouvez facilement partager un lien vers le cas, ouvrir un incident ou demander une modification avec votre organisation ServiceNow. Pour partager le cas avec ServiceNow, sélectionnez **Share**  >  **ServiceNow** dans l’action de cas. L’intégration de ServiceNow avec la prise en charge de la gestion des risques internes inclut les informations et actions de cas suivantes :
     - **Nom de la** tâche : nom de la nouvelle tâche ServiceNow.
     - **Description de** la tâche : description de la nouvelle tâche ServiceNow. Ce champ de description modifiable inclut automatiquement un lien vers le cas de gestion des risques internes.
     - **Type de tâche**: type de tâche pour la nouvelle tâche ServiceNow, soit *demande d’incident* ou *de modification.*
-    - **Priorité**: priorité pour la nouvelle tâche ServiceNow, *planification,* *faible,* *modéré,* élevé *ou* *critique*.
+    - **Priorité**: priorité de la nouvelle tâche ServiceNow, *planification,* *faible,* *modéré,* élevé *ou* *critique*.
     - **Date d’échéance**: date demandée pour l’exécution de la tâche ServiceNow.
 
 ![Partage de gestion des risques internes avec ServiceNow](../media/insider-risk-share-servicenow.png)
@@ -266,8 +264,8 @@ Une fois que les analystes et enquêteurs de risque ont terminé leur examen et 
 
 Pour résoudre un cas :
 
-1. Dans le Centre de conformité [Microsoft 365,](https://compliance.microsoft.com)allez à **La** gestion des risques internes et sélectionnez **l’onglet Cas.**
+1. Dans le Centre [de conformité Microsoft 365,](https://compliance.microsoft.com)allez à **La** gestion des risques internes et sélectionnez **l’onglet Cas.**
 2. Sélectionnez un cas, puis sélectionnez le **bouton Résoudre** le cas dans la barre d’outils d’action de cas.
-3. Dans la **boîte de dialogue Résoudre le cas,** sélectionnez le contrôle **Résoudre** en tant que la boîte de dialogue pour sélectionner la classification de résolution pour le cas. Les options possibles sont une violation **de** la stratégie anodin **ou confirmée.**
+3. Dans la **boîte de dialogue Résoudre le cas,** sélectionnez **résoudre** en tant que contrôle de la boîte de dialogue pour sélectionner la classification de résolution pour le cas. Les options possibles sont une violation **de** la stratégie anodin **ou confirmée.**
 4. Dans la **boîte de dialogue Résoudre le cas,** entrez les raisons de la classification de résolution dans le champ de texte **Action** prise.
-5. Sélectionnez **Résoudre** pour fermer le cas ou annuler **la** fermeture de la boîte de dialogue sans résoudre le cas.
+5. Sélectionnez **Résoudre** pour fermer le cas ou **annuler** la fermeture de la boîte de dialogue sans résoudre le cas.

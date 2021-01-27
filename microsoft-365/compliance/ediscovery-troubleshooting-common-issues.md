@@ -1,5 +1,5 @@
 ---
-title: Dépannage des problèmes eDiscovery courants
+title: Résolution des problèmes eDiscovery courants
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,103 +16,103 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Découvrez les étapes de résolution de base que vous pouvez suivre pour résoudre les problèmes courants dans Office 365 eDiscovery.
+description: Découvrez les étapes de résolution des problèmes de base que vous pouvez suivre pour résoudre les problèmes courants dans la découverte électronique Office 365.
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4f1bad23705729c15976959a3902501f05da7600
-ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
+ms.openlocfilehash: e1fbda23b730956db42d8e7a92218fb9837868b8
+ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49602035"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49988138"
 ---
-# <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>Examiner, dépanner et résoudre les problèmes eDiscovery courants
+# <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>Examiner, résoudre et résoudre les problèmes eDiscovery courants
 
-Cette rubrique décrit les étapes de résolution des problèmes que vous pouvez effectuer pour identifier et résoudre les problèmes que vous pouvez rencontrer lors d’une recherche de découverte électronique ou ailleurs dans le processus de découverte électronique. La résolution de certains de ces scénarios nécessite de l’aide du support Microsoft. Vous trouverez des informations sur le moment auquel contacter le support Microsoft dans la procédure de résolution.
+Cette rubrique traite des étapes de résolution des problèmes de base que vous pouvez effectuer pour identifier et résoudre les problèmes que vous pouvez rencontrer lors d’une recherche de découverte électronique ou ailleurs dans le processus eDiscovery. La résolution de certains de ces scénarios nécessite l’aide du Support Microsoft. Les informations sur le moment où contacter le Support Microsoft sont incluses dans les étapes de résolution.
 
-## <a name="errorissue-ambiguous-location"></a>Erreur/problème : emplacement ambigu
+## <a name="errorissue-ambiguous-location"></a>Erreur/problème : emplacement ambigu
 
-Si vous essayez d’ajouter l’emplacement de la boîte aux lettres d’un utilisateur à la recherche et qu’il existe des objets en double ou en conflit avec le même ID utilisateur dans le répertoire Exchange Online Protection (EOP), vous recevez le message d’erreur suivant : `The compliance search contains the following invalid location(s):useralias@contoso.com. The location "useralias@contoso.com" is ambiguous` .
+Si vous essayez d’ajouter l’emplacement de boîte aux lettres de l’utilisateur à rechercher et qu’il existe des objets en double ou en conflit avec le même userID dans l’annuaire Exchange Online Protection (EOP), vous recevez cette erreur : `The compliance search contains the following invalid location(s):useralias@contoso.com. The location "useralias@contoso.com" is ambiguous`
 
 ### <a name="resolution"></a>Résolution
 
-Recherchez les utilisateurs en double ou la liste de distribution avec le même ID d’utilisateur.
+Recherchez des utilisateurs en double ou une liste de distribution avec le même ID d’utilisateur.
 
-1. Connectez-vous à [la sécurité & Centre de conformité PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
+1. Connectez-vous [au Centre de sécurité & conformité PowerShell.](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
 
-2. Exécutez la commande suivante pour récupérer toutes les instances du nom d’utilisateur :
+2. Exécutez la commande suivante pour récupérer toutes les instances du nom d’utilisateur :
 
     ```powershell
     Get-Recipient <username>
     ```
 
-   La sortie de « useralias@contoso.com » est semblable à ce qui suit :
+   La sortie de « useralias@contoso.com » serait similaire à ce qui suit :
 
    > 
    > |Nom|RecipientType|
    > |---|---|
-   > |Alias, User|MailUser|
-   > |Alias, User|Utilisateur|
+   > |Alias, Utilisateur|MailUser|
+   > |Alias, Utilisateur|Utilisateur|
 
 3. Si plusieurs utilisateurs sont renvoyés, recherchez et corrigez l’objet en conflit.
 
-## <a name="errorissue-search-fails-on-specific-locations"></a>Erreur/problème : la recherche échoue sur des emplacements spécifiques
+## <a name="errorissue-search-fails-on-specific-locations"></a>Erreur/problème : la recherche échoue sur des emplacements spécifiques
 
-Une recherche de contenu ou eDiscovery peut produire l’erreur suivante : `This search completed with (#) errors.  Would you like to retry the search on the failed locations?`
+Une recherche de contenu ou eDiscovery peut produire l’erreur suivante : `This search completed with (#) errors.  Would you like to retry the search on the failed locations?`
 
-![Capture d’écran des erreurs d’emplacement spécifique à la recherche](../media/edisc-tshoot-specific-location-search-fails.png)
+![Capture d’écran d’erreur d’erreur d’un emplacement spécifique à la recherche](../media/edisc-tshoot-specific-location-search-fails.png)
 
 ### <a name="resolution"></a>Résolution
 
-Si vous recevez cette erreur, nous vous recommandons de vérifier les emplacements qui ont échoué dans la recherche, puis de réexécuter la recherche uniquement sur les emplacements ayant échoué.
+Si vous recevez cette erreur, nous vous recommandons de vérifier les emplacements qui ont échoué dans la recherche, puis de réexécuter la recherche uniquement sur les emplacements qui ont échoué.
 
-1. Connectez-vous au [Centre de sécurité & de conformité PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) , puis exécutez la commande suivante :
+1. Connectez-vous [au Centre de & conformité PowerShell,](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) puis exécutez la commande suivante :
 
    ```powershell
    Get-ComplianceSearch <searchname> | FL
    ```
 
-2. À partir de la sortie PowerShell, affichez les emplacements en échec dans le champ erreurs ou à partir des informations d’État dans l’erreur du résultat de la recherche.
+2. À partir de la sortie PowerShell, affichez les emplacements qui ont échoué dans le champ erreurs ou à partir des détails d’état dans l’erreur à partir de la sortie de recherche.
 
-3. Renouvelez la recherche de découverte électronique aux emplacements ayant échoué uniquement.
+3. Réessayez la recherche eDiscovery sur les emplacements qui ont échoué uniquement.
 
-4. Si vous continuez à recevoir ces erreurs, reportez-vous à la rubrique [Retry failed locations](https://docs.microsoft.com/Office365/SecurityCompliance/retry-failed-content-search) pour obtenir d’autres étapes de dépannage.
+4. Si vous continuez à recevoir ces erreurs, consultez Réessayer les emplacements d’échec [pour](https://docs.microsoft.com/Office365/SecurityCompliance/retry-failed-content-search) plus d’étapes de résolution des problèmes.
 
-## <a name="errorissue-file-not-found"></a>Erreur/problème : fichier introuvable
+## <a name="errorissue-file-not-found"></a>Erreur/problème : fichier in trouvé
 
-Lors de l’exécution d’une recherche de découverte électronique incluant SharePoint Online et un lecteur pour les emplacements d’entreprise, vous pouvez recevoir le message d’erreur `File Not Found` même si le fichier se trouve sur le site. Cette erreur se produira dans les avertissements et les errors.csv d’exportation ou items.csv ignoré. Cela peut se produire si le fichier est introuvable sur le site ou si l’index est obsolète. Voici le texte d’une erreur réelle (avec mise en relief ajoutée).
+Lors de l’exécution d’une recherche de découverte électronique qui inclut des emplacements SharePoint Online et One Drive For Business, vous pouvez recevoir l’erreur même si le fichier se trouve `File Not Found` sur le site. Cette erreur sera dans les avertissements d’exportation et errors.csv ou ignorée items.csv. Cela peut se produire si le fichier n’est pas trouvé sur le site ou si l’index n’est pas à jour. Voici le texte d’une erreur réelle (avec une accentuation ajoutée).
 
-> 28.06.2019 10:02:19_FailedToExportItem_Failed pour télécharger du contenu. Informations de diagnostic supplémentaires : Microsoft. Office. Compliance. EDiscovery. ExportWorker. exceptions. ContentDownloadTemporaryFailure : échec de téléchargement à partir du contenu 6ea52149-91cd-4965-b5bb-82ca6a3ec9be de type document. ID de corrélation : 3bd84722-937b-4c23-B61B-08d6fba9ec32. ServerErrorCode :-2147024894---> Microsoft. SharePoint. client. ServerException : ***fichier introuvable***. at Microsoft. SharePoint. client. ClientRequest. ProcessResponseStream (Stream responseStream) à Microsoft. SharePoint. client. ClientRequest. ProcessResponse ()---fin de la trace de la pile d’exception interne---
+> 28.06.2019 10:02:19_FailedToExportItem_Failed télécharger du contenu. Informations de diagnostic supplémentaires : Microsoft.Office.Compliance.EDiscovery.ExportWorker.Exceptions.ContentDownloadTemporaryFailure : Échec de téléchargement à partir du contenu 6ea52149-91cd-4965-b5bb-82ca6a3ec9be de type Document. ID de corrélation : 3bd84722-937b-4c23-b61b-08d6fba9ec32. ServerErrorCode: -2147024894 ---> Microsoft.SharePoint.Client.ServerException: ***File Not Found***. at Microsoft.SharePoint.Client.ClientRequest.ProcessResponseStream(Stream responseStream) at Microsoft.SharePoint.Client.ClientRequest.ProcessResponse() --- End of inner exception stack trace ---
 
 ### <a name="resolution"></a>Résolution
 
 1. Vérifiez l’emplacement identifié dans la recherche pour vous assurer que l’emplacement du fichier est correct et ajouté aux emplacements de recherche.
 
-2. Utilisez les procédures pour [demander manuellement l’analyse et la réindexation d’un site, d’une bibliothèque ou d’une liste](https://docs.microsoft.com/sharepoint/crawl-site-content) pour réindexer le site.
+2. Utilisez les procédures de demande manuelle d’analyse et [de réindexation](https://docs.microsoft.com/sharepoint/crawl-site-content) d’un site, d’une bibliothèque ou d’une liste pour réindexer le site.
 
-## <a name="errorissue-search-fails-because-recipient-is-not-found"></a>Erreur/problème : la recherche échoue, car le destinataire est introuvable
+## <a name="errorissue-search-fails-because-recipient-is-not-found"></a>Erreur/problème : la recherche échoue car le destinataire est in trouvé
 
-Une recherche de découverte électronique échoue avec l’erreur `recipient not found` . Cette erreur peut se produire si l’objet utilisateur est introuvable dans Exchange Online Protection (EOP) car l’objet n’a pas été synchronisé.
+Une recherche eDiscovery échoue avec l’erreur « `recipient not found` . Cette erreur peut se produire si l’objet utilisateur est in trouver dans Exchange Online Protection (EOP) car l’objet n’a pas été synchronisé.
 
 ### <a name="resolution"></a>Résolution
 
 1. Connectez-vous à [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-2. Exécutez la commande suivante pour vérifier si l’utilisateur est synchronisé avec Exchange Online Protection :
+2. Exécutez la commande suivante pour vérifier si l’utilisateur est synchronisé avec Exchange Online Protection :
 
    ```powershell
    Get-Recipient <userId> | FL
    ```
 
-3. Il doit y avoir un objet utilisateur de messagerie pour la question de l’utilisateur. Si aucune valeur n’est renvoyée, examinez l’objet User. Contactez le support Microsoft si l’objet ne peut pas être synchronisé.
+3. Il doit y avoir un objet utilisateur de messagerie pour la question de l’utilisateur. Si rien n’est renvoyé, examinez l’objet utilisateur. Contactez le Support Microsoft si l’objet ne peut pas être synchronisé.
 
-## <a name="errorissue-exporting-search-results-is-slow"></a>Erreur/problème : l’exportation des résultats de la recherche est lente
+## <a name="errorissue-exporting-search-results-is-slow"></a>Erreur/problème : l’exportation des résultats de recherche est lente
 
-Lors de l’exportation des résultats de recherche à partir de eDiscovery ou de la recherche de contenu dans le centre de sécurité et conformité, le téléchargement prend plus de temps que prévu.  Vous pouvez vérifier la quantité de données à télécharger et augmenter éventuellement la vitesse d’exportation.
+Lors de l’exportation des résultats de recherche à partir d’eDiscovery ou de recherche de contenu dans le Centre de sécurité et conformité, le téléchargement prend plus de temps que prévu.  Vous pouvez vérifier la quantité de données à télécharger et éventuellement augmenter la vitesse d’exportation.
 
 ### <a name="resolution"></a>Résolution
 
-1. Connectez-vous au [Centre de sécurité & de conformité PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) , puis exécutez la commande suivante :
+1. Connectez-vous au Centre de & de sécurité [PowerShell,](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) puis exécutez la commande suivante :
 
    ```powershell
    Get-ComplianceSearch <searchname> | FL
@@ -128,21 +128,21 @@ Lors de l’exportation des résultats de recherche à partir de eDiscovery ou d
 
 4. Dans le champ résultats, recherchez les données qui ont été exportées et affichez les erreurs rencontrées.
 
-5. Vérifiez le fichier trace. log situé dans le répertoire dans lequel vous avez exporté le contenu pour détecter d’éventuelles erreurs.
+5. Recherchez les erreurs éventuelles dans le fichier trace.log situé dans le répertoire vers qui vous avez exporté le contenu.
 
-6. Si vous rencontrez toujours des problèmes, envisagez de diviser les recherches qui renvoient un grand ensemble de résultats en recherches plus petites. Par exemple, vous pouvez utiliser des plages de dates dans les requêtes de recherche pour renvoyer un plus petit ensemble de résultats pouvant être téléchargés plus rapidement.
+6. Si vous avez encore des problèmes, envisagez de diviser les recherches qui retournent un grand ensemble de résultats en recherches plus petites. Par exemple, vous pouvez utiliser des plages de dates dans les requêtes de recherche pour renvoyer un ensemble de résultats plus petit qui peut être téléchargé plus rapidement.
 
-## <a name="errorissue-internal-server-error-500-occurred"></a>Erreur/problème : « erreur interne du serveur (500) » s’est produite»
+## <a name="errorissue-internal-server-error-500-occurred"></a>Erreur/problème : « Une erreur de serveur interne (500) s’est produite »
 
-Lors de l’exécution d’une recherche de découverte électronique, si la recherche continue de se produire avec une erreur semblable à « erreur interne du serveur (500) », vous pouvez être amené à relancer la recherche uniquement sur des emplacements de boîte aux lettres spécifiques.
+Lors de l’exécution d’une recherche de découverte électronique, si la recherche échoue continuellement avec une erreur semblable à « Erreur interne du serveur (500) s’est produite », vous devrez peut-être réexécuter la recherche uniquement sur des emplacements de boîtes aux lettres spécifiques.
 
-![Capture d’écran de l’erreur de serveur interne 500](../media/edisc-tshoot-error-500.png)
+![Capture d’écran de l’erreur du serveur interne 500](../media/edisc-tshoot-error-500.png)
 
 ### <a name="resolution"></a>Résolution
 
-1. Fractionnez la recherche en petites recherches et réexécutez la recherche.  Essayez d’utiliser une plage de dates plus petite ou limitez le nombre d’emplacements recherchés.
+1. Décomposez la recherche en recherches plus petites et exécutez à nouveau la recherche.  Essayez d’utiliser une plage de dates plus petite ou limitez le nombre d’emplacements recherchés.
 
-2. Connectez-vous au [Centre de sécurité & de conformité PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) , puis exécutez la commande suivante :
+2. Connectez-vous [au Centre de & conformité PowerShell,](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) puis exécutez la commande suivante :
 
    ```powershell Set-CaseHoldPolicy <policyname> -RetryDistribution
    Get-ComplianceSearch <searchname> | FL
@@ -150,43 +150,43 @@ Lors de l’exécution d’une recherche de découverte électronique, si la rec
 
 3. Examinez la sortie pour les résultats et les erreurs.
 
-4. Examinez le fichier trace. log. Il se trouve dans le dossier dans lequel vous avez exporté les résultats de la recherche.
+4. Examinez le fichier trace.log. Il se trouve dans le même dossier que celui vers qui vous avez exporté les résultats de la recherche.
 
 5. Contactez le support technique Microsoft.
 
-## <a name="errorissue-holds-dont-sync"></a>Erreur/problème : conservation ne pas synchroniser
+## <a name="errorissue-holds-dont-sync"></a>Erreur/problème : les holds ne sont pas synchronisés
 
-erreur de distribution de la stratégie de conservation de cas eDiscovery. L’erreur indique :
+Erreur de distribution de synchronisation de stratégie de la stratégie de prise en main eDiscovery. L’erreur se lit comme ci-après :
 
-> «Ressources : le déploiement de la stratégie prend plus de temps que prévu. La mise à jour de l’état final du déploiement peut prendre 2 heures supplémentaires, donc revenez en quelques heures.
+> « Ressources : le déploiement de la stratégie prend plus de temps que prévu. La mise à jour de l’état de déploiement final peut prendre 2 heures supplémentaires, donc vérifiez-la dans quelques heures. »
 
 ### <a name="resolution"></a>Résolution
 
-1. Connectez-vous à la [sécurité & Centre de conformité PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) , puis exécutez la commande suivante pour une conservation de cas eDiscovery :
+1. [Connectez-vous au Centre de sécurité & conformité PowerShell,](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) puis exécutez la commande suivante pour une mise en attente de cas eDiscovery :
 
    ```powershell
    Get-CaseHoldPolicy <policyname> - DistributionDetail | FL
    ```
 
-    Pour une stratégie de rétention, exécutez la commande suivante :
+    Pour une stratégie de rétention, exécutez la commande suivante :
 
    ```powershell
    Get-RetentionCompliancePolicy <policyname> - DistributionDetail | FL
    ```
 
-2. Examinez la valeur du paramètre DistributionDetail pour rechercher les erreurs suivantes :
+2. Examinez la valeur dans le paramètre DistributionDetail pour les erreurs suivantes :
 
-   > Erreur : ressources : le déploiement de la stratégie prend plus de temps que prévu. La mise à jour de l’état final du déploiement peut prendre 2 heures supplémentaires, donc revenez en quelques heures.
+   > Erreur : Ressources : le déploiement de la stratégie prend plus de temps que prévu. La mise à jour de l’état de déploiement final peut prendre 2 heures supplémentaires, donc vérifiez-la dans quelques heures. »
 
-3. Essayez d’exécuter le paramètre RetryDistribution sur la stratégie en question :
+3. Essayez d’exécutez le paramètre RetryDistribution sur la stratégie en question :
 
-   Pour les conservations de cas eDiscovery :
+   Pour les cas eDiscovery :
 
    ```powershell
    Set-CaseHoldPolicy <policyname> -RetryDistribution
    ```
 
-   Pour les stratégies de rétention :
+   Pour les stratégies de rétention :
 
    ```powershell
    Set-RetentionCompliancePolicy <policyname> -RetryDistribution
@@ -194,14 +194,30 @@ erreur de distribution de la stratégie de conservation de cas eDiscovery. L’e
 
 4. Contactez le support technique Microsoft.
 
-## <a name="error-the-condition-specified-using-http-conditional-headers-is-not-met"></a>Erreur : "la condition spécifiée à l’aide d’en-tête (s) conditionnel HTTP n’est pas remplie"
+## <a name="error-the-condition-specified-using-http-conditional-headers-is-not-met"></a>Erreur : « La condition spécifiée à l’aide d’en-têtes conditionnels HTTP n’est pas remplie »
 
-Lors du téléchargement des résultats de recherche à l’aide de l’outil d’exportation de découverte électronique, il est possible que vous receviez l’erreur suivante : `System.Net.WebException: The remote server returned an error: (412) The condition specified using HTTP conditional header(s) is not met.` il s’agit d’une erreur passagère, qui se produit généralement dans l’emplacement de stockage Azure.
+Lorsque vous téléchargez des résultats de recherche à l’aide de l’outil d’exportation eDiscovery, il est possible que vous receviez l’erreur suivante : Il s’agit d’une erreur temporaire, qui se produit généralement dans l’emplacement de stockage `System.Net.WebException: The remote server returned an error: (412) The condition specified using HTTP conditional header(s) is not met.` Azure.
 
 ### <a name="resolution"></a>Résolution
 
-Pour résoudre ce problème, essayez de nouveau de [Télécharger les résultats](export-search-results.md#step-2-download-the-search-results)de la recherche, ce qui redémarrera l’outil d’exportation de découverte électronique.
+Pour résoudre ce problème, réessayez de [télécharger](export-search-results.md#step-2-download-the-search-results)les résultats de la recherche, ce qui redémarrera l’outil d’exportation eDiscovery.
 
-## <a name="see-also"></a>Voir aussi
+## <a name="errorissue-downloaded-export-shows-no-results"></a>Erreur/problème : l’exportation téléchargée n’affiche aucun résultat
 
-- [Conseils pour éviter les erreurs d’emplacement de contenu](retry-failed-content-search.md#tips-to-avoid-content-location-errors)
+Une fois l’exportation réussie, le téléchargement terminé via l’outil d’exportation affiche zéro fichier dans les résultats.
+
+### <a name="resolution"></a>Résolution
+
+Il s’agit d’un problème côté client et, pour y remédier, essayez les étapes suivantes :
+
+1. Essayez d’utiliser un autre client/ordinateur pour télécharger.
+
+2. Veillez à effectuer le téléchargement sur un lecteur local.
+
+3. Assurez-vous que le scanneur antivirus n’est pas en cours d’exécution.
+
+4. Assurez-vous qu’aucune autre exportation n’est téléchargée vers le même dossier ou n’importe quel dossier parent.
+
+5. Si les étapes précédentes ne fonctionnent pas, désactivez la fermeture à la fermeture de la fermeture et la déplication.
+
+6. Si cela fonctionne, le problème est dû à un scanneur antivirus local ou à un problème de disque.
